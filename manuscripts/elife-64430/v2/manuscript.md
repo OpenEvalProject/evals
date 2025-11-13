@@ -23,19 +23,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Medical Scientist Training Program, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Cell and Molecular Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-3. https://ror.org/00b30xv10 Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-4. https://ror.org/00b30xv10 Institute for Regenerative Medicine, University of Pennsylvania Philadelphia United States
-5. https://ror.org/00b30xv10 Department of Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-6. https://ror.org/00b30xv10 Department of Pathology and Laboratory Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-7. https://ror.org/00b30xv10 College of Arts and Sciences and Vagelos Scholars Program, University of Pennsylvania Philadelphia United States
-8. https://ror.org/00b30xv10 Penn Genomic Analysis Core, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-9. https://ror.org/00b30xv10 Penn Cardiovascular Institute, University of Pennsylvania Philadelphia United States
-10. https://ror.org/00b30xv10 Penn-CHOP Lung Biology Institute, University of Pennsylvania Philadelphia United States
-11. https://ror.org/01z7r7q48 Division of Pediatric Cardiology, Department of Pediatrics, Children's Hospital of Philadelphia Philadelphia United States
-12. https://ror.org/00b30xv10 Department of Biomedical Sciences, School of Veterinary Medicine, University of Pennsylvania Philadelphia United States
-13. https://ror.org/00b30xv10 Institute on Aging, University of Pennsylvania Philadelphia United States
+1. Medical Scientist Training Program, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Cell and Molecular Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Institute for Regenerative Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Department of Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+6. Department of Pathology and Laboratory Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+7. College of Arts and Sciences and Vagelos Scholars Program, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+8. Penn Genomic Analysis Core, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+9. Penn Cardiovascular Institute, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+10. Penn-CHOP Lung Biology Institute, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+11. Division of Pediatric Cardiology, Department of Pediatrics, Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+12. Department of Biomedical Sciences, School of Veterinary Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+13. Institute on Aging, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
@@ -55,31 +55,87 @@ By comparing iAT2s that are isogenic except for an introduced mutation in the ge
 
 ## Results
 
-## Engineering a DKC1 mutation into iPS cells
+### Engineering a DKC1 mutation into iPS cells
 
 To model the AT2 cells from DC patients, we engineered a well-characterized, causal DC mutation in DKC1 (DKC1 A386T) (Agarwal et al., 2010; Batista et al., 2011; Woo et al., 2016) into the BU3 NKX2.1::GFP SFTPC::TdTomato (NGST) human iPS cell line (Jacob et al., 2017). We established an isogenic pair of cell lines: an introduced mutant line and a corresponding unedited wild-type (WT) line (Figure 1—figure supplement 1A-C). Both iPS lines maintained markers of pluripotency and normal karyotypes after the introduction of the DKC1 A386T mutation (Figure 1—figure supplement 1D).
 
 Previous work (Agarwal et al., 2010; Batista et al., 2011; Woo et al., 2016) established that iPS cells with the DKC1 A386T mutation exhibit decreased telomerase activity resulting in telomere shortening with passage. We confirmed that telomerase activity was reduced, and telomeres shortened with successive passages, in the BU3 NGST DKC1 A386T iPS cell line when compared to its WT control (Figure 1—figure supplement 2A-C).
 
-## iAT2 cells with short telomeres fail to form alveolospheres and grow in size
+### iAT2 cells with short telomeres fail to form alveolospheres and grow in size
 
 We next differentiated these paired iPS cell lines into iAT2 cells using the protocol developed by Jacob et al. (see Figure 1A for differentiation strategy, Figure 1—figure supplement 3A, B for representative sorting strategies). Using iPSCs 35 passages after the introduction of the mutation yielded iAT2s that initially grew in a similar fashion to WT, but which over time developed a growth defect characterized by lower alveolosphere formation efficiency as well as smaller alveolospheres. The phenotype became apparent by 50 days of culture (D50) and was dramatic by D70 (Figure 1A–C). In contrast, using iPSCs only five passages after the introduction of the mutation yielded iAT2s with less dramatic defects in alveolosphere growth and size at D70 (Figure 1—figure supplement 4A-C). These data indicate that the defects observed were due to progressive telomere shortening after introducing the DKC1 mutation, and not the immediate effects of telomerase deficiency (or other potential deficiencies) caused by the DKC1 A386T mutation per se.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig1-v2.jpg)
+
+**Figure 1.:** (A) Differentiation protocol used to probe the effects of the DKC1 A386T mutation on iAT2 cells. D.E., definitive endoderm specification; Ant., anteriorization. (B) Representative images of differentiating wild type and DKC1 A386T mutant bearing iAT2 alveolospheres (scale bars, 100 µm as indicated for iPS and NKX2.1+ progenitors; 1 mm for all alveolosphere images). (C) Quantifications of alveolosphere area and formation efficiency on D70 (n = 4; ** p<0.01, **** p<0.0001, and Student’s t-test). (D) Quantification of the percentage SFTPC+ cells and the number of SFTPC+ cells produced with passage of the iAT2 cells shows DKC1 A386T iAT2 alveolospheres accumulate fewer SFTPC+ cells (n = 4; ** p<0.01, and Student’s t-test). (E) RNA-seq of sorted SFTPC+ iAT2 cells at different passages shows AT2 cell genes are not grossly affected by the DKC1 A386T mutation (n = 4, W = wild type, M = mutant).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CRISPR-based editing strategy for introducing the DKC1 A386T mutation into the BU3 NSGT iPS cell line. (B) Genotyping by RFLP of DKC1 A386T clonal cell lines and their wild-type (WT) counterparts that also were exposed to the CRISPR reagents using the introduced NdeI site. (C) Sanger sequence verification of the introduction of the mutation yielding 1156G>A. Note the WT sequence is marked in red. (D) Paired iPS cell clones maintain high expression of NANOG, a marker of pluripotency (scale bars, 100 µm). (E) Paired iPS cell clones show normal karyotypes after the introduction of the DKC1 A386T mutation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Quantitative telomeric repeat amplification protocol assay for telomerase activity in iPS cells shows a reduction in relative telomerase activity in DKC1 A386T introduced line (n = 3). AG04646 is an iPSC line derived from a dyskeratosis congenita patient with the A386T mutation, and the wild-type (WT) line is an unedited clone derived along with the A386T-introduced clone from the BU3 parental iPSC line. (B) Telomeric repeat amplification protocol assay for telomerase activity in iPS cells using a fivefold dilution series of the cellular extracts shows a reduction in relative telomerase activity in DKC1 A386T introduced lines. (C) Terminal restriction fragment telomere length analyses in the WT and DKC1 A386T paired iPS cells compared to the parental iPS line (BU3 NGST) and the patient derived iPS line (AG04646). Above each lane is the number of passages from the introduction of the mutation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative sorting strategy for NKX2.1+ progenitors. (B) Representative sorting strategy for SFTPC+ cells from iAT2 alveolospheres.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Differentiation protocol used to probe the effects of the DKC1 A386T mutation on iAT2 cells. D.E., definitive endoderm specification; Ant., anteriorization. (B) Representative images of differentiating wild type (WT) and DKC1 A386T mutant bearing iAT2 alveolospheres derived from iPS cells that have undergone five passages after introduction of the mutation. (scale bars, 1 mm). (C) Quantifications of the formation efficiency on D70 of iAT2 alveolospheres derived from iPS cells that have undergone five passages after introduction of the mutation (n=3, p=0.81, and Student’s t-test).
+
 Surfactant protein C (SFTPC) is a highly specific marker of AT2 cells (Kalina et al., 1992), and the yield of SFTPC::TdTomato+ (SFTPC+) cells was reduced significantly at D70 in DKC1 mutant cultures, while the percentage of SFTPC+ cells generated at each time point was not different, suggesting that there is a defect in AT2 cell proliferation or survival (Figure 1D). Sorted SFTPC+ cells from iAT2 cell alveolospheres maintained expression of multiple AT2 specific genes suggesting that the introduced mutation did not affect lineage specification (Figure 1E). Thus, DC iPS cells can generate iAT2 cell alveolospheres; however, these alveolospheres lose the capacity to self-renew with successive passaging.
 
-## DC iAT2 cells derived from iPS cells 35 passages after introduction of the mutation develop hallmarks of senescence at late passage (D70)
+### DC iAT2 cells derived from iPS cells 35 passages after introduction of the mutation develop hallmarks of senescence at late passage (D70)
 
 To better understand the AT2 cell defects, we further compared the WT and mutant iAT2 alveolospheres at different passages. RNA-seq-based gene expression analyses over successive passages of sorted SFTPC+ cells from iAT2 alveolospheres showed decreases in proliferation markers (MKI67 and MCM2) as well as an increase in expression of the cell cycle inhibitor CDKN1A (p21), and these changes were most pronounced in mutant alveolospheres (Figure 2A). Immunofluorescence microscopy based analyses of D70 mutant iAT2 alveolospheres showed an increase in DNA damage marked by 53BP1 foci (Figure 2B), and an increased fraction of cells expressing p21 protein (Figure 2C), but no increase in apoptosis (Figure 2—figure supplement 1A-C). Measuring telomere length using qPCR, DC, and WT iAT2 cells showed no significant change in average telomere length with passage, although average telomere lengths in mutants trended shorter than in WT (Figure 2—figure supplement 2A). However, measuring telomere lengths using TeSLA (Lai et al., 2017), which is more sensitive for the detection of short telomeres than most other techniques, revealed that DC iAT2 cells had a preponderance of short telomeres at D70 (Figure 2E–F). Consistent with this, DC iAT2 alveolospheres showed an increased number of telomere dysfunction induced foci (TIFs), a hallmark of uncapped telomeres (i.e., telomeres that signal DNA damage responses and cell cycle checkpoint arrest Takai et al., 2003; Figure 2D). These findings indicate that the short and uncapped telomeres that accumulate with passage of DC iAT2 cells lead them to senesce.
 
-## RNA-seq reveals pathways differentially expressed in DC iAT2 cells, including those related to Wnt signaling
+![Figure 2.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig2-v2.jpg)
+
+**Figure 2.:** (A) Gene expression profiling of iAT2 cells at D28 and D50 shows no difference between wild type and DKC1 A386T in expression of markers of proliferation and a cell cycle inhibitor, while at D70 cells, there is a significant decrease in MCM2 and MKI67 as well as a significant increase in CDKN1A (p21) (n = 4, **** p<0.0001, DEseq2 pairwise contrast statistics). (B) At D70, DKC1 A386T mutant iAT2 cells have a higher fraction of cells with 53BP1 foci (n = 4, * p<0.05, and Student’s t-test; scale bars, 10 µm; insets highlight cells with 53BP1 foci as noted by the white arrowheads). (C) At D70, DKC1 A386T mutant iAT2s have a higher fraction of cells positive for p21 (n = 4, * p<0.05, and student’s t-test; scale bars, 10 µm). (D) At D70, DKC1 A386T mutant iAT2s have a higher fraction of cells with telomere dysfunction induced foci (TIFs) (n = 4, * p<0.05, and Student’s t-test; scale bars, 10 µm; insets highlight cells with TIFs, each one noted by a white arrowhead). (E) Representative TeSLA of DKC1 A386T iAT2 alveolospheres shows telomeres shorten with passage. (F) Quantification of DKC1 A386T iAT2 cell telomere lengths shows a preponderance of short telomeres appears as the iAT2 cells approach D70, red colored data points highlight telomeres under the 1.6 kb threshold (n = 2, ‘shortest 20%’ reports the 20th percentile of telomere length, in Kb).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images and quantification of CC3 staining at D70 show no significant difference between wild type (WT) and DKC1 A386T mutant iAT2 alveolospheres. (B) Quantification of CC3+ cells in D70 iAT2 alveolospheres (n = 4, no difference, p=0.96, student’s t-test; scale bars, 10 µm). (C) CC3 positive control: day 0 postnatal lung from a mouse exposed to hyperoxia (panel on right) served as a positive control for CC3 staining.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Average telomere length as measured by telomere qPCR of wild type (WT) and DC iAT2 cells with passage (n = 2, p-values listed on the figure, Student’s t-test).
+
+### RNA-seq reveals pathways differentially expressed in DC iAT2 cells, including those related to Wnt signaling
 
 To further understand changes in the DC iAT2 cells, we more broadly evaluated RNA-seq-based gene expression changes of sorted SFTPC+ iAT2 cells. (Figure 3A). We found very few significantly differentially expressed genes when comparing WT and mutant cells at D28 and D50, but a large number of differentially expressed genes at D70 (Figure 3B), arguing that the gene expression changes seen at D70 are likely driven by uncapped telomeres. Gene set enrichment analyses (GSEA) revealed an upregulation of the DNA damage response, the unfolded protein response (UPR), mitochondrial related functions (oxidative phosphorylation, the respiratory electron chain), a downregulation of hypoxia related signaling, and hedgehog signaling along with other changes (see Supplementary file 1 for a full list). Ingenuity pathway analysis (IPA) revealed similar changes as well as defects in multiple pathways controlled by inflammatory cytokines like IL1β, IL6, IL17, and others (see Supplementary file 2 for the full lists). We found a marked upregulation in DC iAT2 cells of many pathways associated with PF (see Supplementary file 3 for curated list of PF related pathways, see Supplementary files 1 and 2 for the unedited analyses). These included the UPR (Lawson et al., 2008; Mulugeta et al., 2005), thyroid hormone metabolism (Yu et al., 2018), p53 signaling (Shetty et al., 2017), mitochondrial dysfunction and mitophagy (Chung et al., 2019; Yu et al., 2018), and caveolin function (Wang et al., 2006). This analysis also showed an upregulation of non-canonical Wnt signaling (Figure 3C), which correlated with a significant upregulation in WNT5A and WNT11, known non-canonical Wnt ligands (Figure 3D). Furthermore, almost every FZD gene, encoding co-receptors for canonical Wnt signaling, was downregulated in DC iAT2 cells (Figure 3E). Also, GSEA found genes with TCF7 targets in their promoters are downregulated in DC iAT2 cells at D70 (Figure 3F). IPA of master regulators at D70 revealed a decrease in genes controlled by lithium chloride (which can potentiate Wnt signaling by inhibiting GSK3) and TCF7 along with an upregulation of genes usually stimulated by Wnt pathway inhibitors (Figure 3G). GSEA also revealed a significant downregulation of targets of miR34a, a miRNA that we previously demonstrated negatively regulates many components of the Wnt pathway in response to uncapped telomeres (Figure 3H; Yang et al., 2017). The genes encoding four of the six shelterins, proteins that bind and help maintain normal telomere function, are direct targets of the canonical Wnt transcriptional effector β-catenin, and two of these, TINF2 and POT1, were downregulated in D70 DC iAT2 cells, which may contribute to telomere uncapping beyond simple telomere shortening (Figure 3I; Yang et al., 2017). These genes were confirmed to be downregulated by ddPCR, and furthermore, DC iAT2 cells expressed lower levels of both TERT and TERC (Figure 3—figure supplement 1). These data indicate that Wnt signaling in AT2 cells is greatly affected by shortened telomeres and that non-canonical Wnt signaling may be elevated while canonical (β-catenin-dependent) signaling may be diminished.
 
-## GSK3 inhibitors rescue the growth of DC iAT2 alveolospheres
+![Figure 3.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig3-v2.jpg)
+
+**Figure 3.:** (A) A schematic to show how cells were prepared for RNA-seq. (B) Volcano plots at D28, D50, and D70 show how the number of differentially expressed genes increases at D70. (C) Gene set enrichment analyses (GSEA) at D70 comparing DKC1 A386T iAT2 cells reveal an upregulation of non-canonical Wnt signaling and the planar cell polarity (PCP) pathway. (D) RNA-seq analysis shows upregulation of WNT5A and WNT11, non-canonical WNTs associated with pulmonary fibrosis (* p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, DEseq2 pairwise contrast statistics). (E) RNA-seq analysis shows broad downregulation of many FZD receptors (* p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, DEseq2 pairwise contrast statistics). (F) GSEA at D70 comparing DKC1 A386T iAT2 cells reveals a downregulation of genes with TCF7 bindings sites in their promoters. (G) Ingenuity pathway analysis reveals master regulators at D70 including downregulation of regulation associated with lithium chloride and TCF7, and upregulation of regulation associated with multiple Wnt inhibitors. (H) GSEA at D70 comparing DKC1 A386T iAT2 cells reveals a downregulation of genes with miR34A binding sites. TINF2 and POT1 are downregulated in DKC1 A386T iAT2 cells at D70 (* p<0.05, ** p<0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ddPCR of TINF2, POT1, TERT, and TERC (normalized to ACTB) showing significant decreases in the expression of these genes in DC iAT2 cells (n = 2). The organoids used were equivalent to those tested in the main panels of Figure 3 except that they were cultured for an additional 7 days in K + DCI + TZV.
+
+### GSK3 inhibitors rescue the growth of DC iAT2 alveolospheres
 
 Given our previous work showing that GSK3 inhibition reverses telomere dysfunction and associated defects in intestinal models of DC (Woo et al., 2016; Yang et al., 2017), we attempted to rescue the DC iAT2 alveolosphere formation defect by treatment with CHIR99021, a well-characterized GSK3 inhibitor, which thus stabilizes β-catenin and upregulates canonical Wnt target genes (Figure 4A). CHIR99021 partially rescued the alveolosphere growth defect of iAT2 cells in a dose dependent fashion (Figure 4B–C). Furthermore, if alveolospheres were cultured continuously prior to D70 with CHIR99021, this prevented the growth defect from emerging (Figure 4—figure supplement 1A-B). We also tested another GSK3 inhibitor, CHIR98014, which similarly rescued growth of the mutant iAT2 cells (Figure 4—figure supplement 2A-B). These findings suggest that GSK3 inhibition rescued the growth of DC iAT2 alveolospheres.
 
-## CHIR99021 downregulates senescence markers and resolves TIFs in DC iAT2 alveolospheres
+![Figure 4.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig4-v2.jpg)
+
+**Figure 4.:** (A) Differentiation protocol used to test how CHIR99021 affects growth of DC iAT2s. (B) Representative images of differentiating wild type (WT) and DKC1 A386T mutant bearing cells with increasing amounts of CHIR99021 (scale bars, 1 mm for all alveolosphere images). (C) Quantifications of alveolosphere formation efficiency after treatment with differing concentrations of CHIR99021 (n = 4, * p<0.05, **** p<0.0001, Student’s t-test). (D) When D70 alveolospheres are cultured with 3 µM CHIR99021, DKC1 A386T mutant iAT2 cells have a lower fraction of cells with 53 BP1 foci. Note, data for no CHIR99021 bars are from Figure 2 (n = 3, * p<0.05, Student’s t-test; scale bars, 10 µm). (E) When D70 alveolospheres are cultured with 3 µM CHIR99021, DKC1 A386T mutant iAT2 cells have a lower fraction of p21 positive cells. Note, data for no CHIR99021 bars are from Figure 2 (n = 3, * p<0.05, Student’s t-test; scale bars, 10 µm). (F) When D70 alveolospheres are cultured with 3 µM CHIR99021, DKC1 A386T mutant iAT2 cells have a lower fraction of telomere dysfunction induced foci (TIF) positive cells. Note, data for no CHIR99021 bars are from Figure 2 (n = 3, * p<0.05, Student’s t-test; scale bars, 10 µm; insets highlight cells with TIFs, each one noted by the white arrowheads). (G) Telomeric repeat amplification protocol assay for telomerase activity in iAT2 cells using fivefold extract dilutions (n = 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Differentiation protocol used to test how withdrawal of CHIR99021 at D56 affects growth of DC iAT2s at D70. (B) Representative images of iAT2 alveolospheres at D70 when CHIR99021 (present up to D56) was either continued or removed after D56 and the cells analyzed at D70. If CHIR99021 is maintained, the growth defect is suppressed, while if CHIR99021 is removed the growth defect emerges (scale bars, 1 mm).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Differentiation protocol used to test whether CHIR98014 can affect the growth of DC iAT2s at D70. (B) Rescue of DC iAT2 alveolosphere growth with CHIR98014. These alveolospheres grew from cells plated at 400 cells/µL (scale bars, 1 mm).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64430/elife-64430-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Differentiation protocol used to test how CHIR99021 affects growth of dyakeratosis congenita induced pluripotent stem cell-derived type II alveolar epithelial cells (iAT2s), same as in Figure 4. (B) TeSLA of DKC1 A386T iAT2 alveolospheres treated with 3 µM CHIR99021 as per differentiation protocol in A. (C) Quantification of TeSLA blot of DKC1 A386T iAT2 alveolospheres (n = 1, ‘shortest 20%’ reports the 20th percentile of telomere length, in Kb).
+
+### CHIR99021 downregulates senescence markers and resolves TIFs in DC iAT2 alveolospheres
 
 We ultimately investigated how CHIR99021 affects the telomere status of DC iAT2s. CHIR treated iAT2 cells showed fewer cells with 53BP1 foci, fewer p21+ cells, and fewer TIF+ cells (Figure 4D–F). TeSLA revealed a modest increase in average telomere length but no apparent decrease in the frequency of shortest detectable telomeres (Figure 4—figure supplement 3A-C). iAT2 cell telomerase activity was restored in mutant cells treated with CHIR99021 to levels similar to those seen in WT cells (Figure 4G). Together, these data argue that GSK3 inhibition not only rescues the growth of DC iAT2 cells, but it also rescues telomere defects, most likely through upregulation of telomerase activity that could extend telomeres that are shorter than those that can be detected by TeSLA; it is also possible that telomerase is contributing to telomere capping via lengthening-independent mechanisms (Perera et al., 2019). Of note, withdrawal of CHIR99021 during only 14 days prior to D70 was sufficient to elicit the growth defect (Figure 4—figure supplement 1A-B), consistent with an only modest increase in telomere length associated with the increased telomerase activity.
 
@@ -103,45 +159,45 @@ Recent work, using mouse AT2 cell organoids, has elucidated a developmental traj
 
 See Appendix 1 for Key Resources Table.
 
-## iPSC line generation and maintenance
+### iPSC line generation and maintenance
 
 The BU3 NGST line was a generous gift from Dr. Darrell Kotton at Boston University. iPS cells used for differentiation were maintained on growth factor reduced Matrigel (Corning) coated plates in StemMACS iPS-Brew XF medium (Miltenyi Biotec). Cells were cultured in clusters and passaged every 4–5 days using StemMACS Dissociation reagent (Miltenyi Biotec). All iPS lines were genotyped using an RFLP at the relevant important loci, and the sequence was confirmed by Sanger sequencing. All cells were routinely screened for mycoplasma contamination using a PCR-based assay (Uphoff and Drexler, 2014).
 
-## CRISPR editing for generating paired DKC1 mutant cell lines in BU3 NGST
+### CRISPR editing for generating paired DKC1 mutant cell lines in BU3 NGST
 
 To generate the introduced BU3 NGST line harboring the DKC1 mutation, we used the CRISPR track on the UCSC genome browser to select candidate guideRNAs (gRNAs) that targeted as close to the individual mutation as possible, had easily mutable PAM sites and would introduce a new restriction site to make screening easier (see the Key Resources Table for exact sequences and Figure S1 for details). gRNAs were ordered as oligos from IDT and cloned into pX458, a gift from Dr. Feng Zhang’s lab (Addgene # 48138). The candidate guides were tested for cutting efficiency by transfecting them into HEK293T cells and assaying cutting efficiency using T7E1 digestion of the PCR amplified locus. The most efficient guides were chosen and ssODN HDR templates were designed to eliminate the PAM. iPS cells were then nucleofected with the Amaxa Nucleofection system using the following program (P3, CA-137) (Lonza). The cells were allowed to recover for 36–48 hr at high density in the presence of ROCK inhibitor and then isolated by FACS for GFPhi cells. They were plated at low density (2500 cells/10 cm plate) and allowed to form single colonies. After 7–10 days, individual clones were selected and transferred to 96 well plates and screened for introduction of the restriction site for each mutation. Restriction enzyme positive clones were expanded and then subjected to sanger sequencing for identification of correctly edited clones. Successfully edited clones were checked for normal karyotype by G-banding (Cell Line Genetics), mycoplasma contamination, and pluripotency marker expression by immunofluorescence and were subsequently passaged for at least five passages before being re-genotyped to ensure that the clones were not mixed. During differentiations, all iAT2 cells were genotyped by restriction digest to ensure that the mutation was not lost with passage.
 
-## Directed differentiation into NKX2.1+ lung progenitors and SFTPC+ iPS-derived AT2 cells
+### Directed differentiation into NKX2.1+ lung progenitors and SFTPC+ iPS-derived AT2 cells
 
 A modified version of the protocol described in Jacob et al., 2017 was used to generate SFTPC expressing iAT2 cells. In brief, iPS cells were seeded at 500,000 cells per well on a six-well plate with ROCK inhibitor for 24 hr and incubated at 5% O2 | 5% CO2 | 90% N2. Definitive endoderm was induced using the StemDiff Definitive Endoderm kit for 3 days. Next, the cells were split at a ratio of 1:3 onto fresh Matrigel plates and anteriorized using dorsomorphin (2 µM) and SB431542 (10 µM) in complete serum-free differentiation media (cSFDM) for 3 days. Cells were then differentiated into NKX2.1+ progenitors by incubating in CBRa media (cSFDM containing CHIR99021 [3 µM], BMP4 [10 ng/mL], and retinoic acid [100 nM]) for 7 days changing media every 2 days at first and then increasing to every day media changes when the media became more acidic. On day 15 or 16, NKX2.1+ progenitors were isolated using a FACSJazz sorter using the endogenous NKX2.1::GFP reporter.
 
 NKX2.1+ sorted cells were re-plated at a density of 400,000 cells/mL in 90% Matrigel supplemented with 10% of CK + DCI + TZV media (cSFDM containing 3 µM CHIR99021, 10 ng/mL KGF, 100 nM dexamethasone, 100 µM 8Br-cAMP and 100 µM IBMX, and 2 µM TZV) (from now on referred to as 90/10 Matrigel). The Matrigel droplets were allowed to cure at 37°C for 20–30 min and then overlaid with an appropriate amount of CK + DCI + TZV media. These alveolosphere containing Matrigel droplets were incubated at 37°C at 20% O2 | 5% CO2 | 75% N2 (room air) for 14 days changing with fresh media every other day. Per Hurely et al., CHIR99021 was withdrawn from the media on day 17 for 4 days and re-added back on day 21 to optimize generation and specification of SFTPC+ cells. On day 28, the iAT2 containing alveolospheres were sorted on a FACSJazz sorter for SFTPC+ cells using the endogenous SFTPC::TdTomato reporter. These sorted SFTPC+ cells were replated at a concentration of 65,000 cells/mL in 90/10 Matrigel drops and grown in K + DCI + TZV at 37°C in an ambient air incubator supplemented to 5% CO2 for 3 weeks changing media every other day.
 
-## Alveolosphere counting and formation efficiency calculations
+### Alveolosphere counting and formation efficiency calculations
 
 Alveolosphere images were taken on a Leica Thunder widefield microscope using a 1.25× objective. Z-stacks were maximum projected and then thresholded using ImageJ to create a binary file. Binary files were eroded and dilated to ensure maximum determination of the alveolosphere size. Finally, the binary images were separated by watershedding, and alveolospheres were counted using Analyze Particles in ImageJ.
 
-## Immunofluorescence microscopy of iAT2 alveolospheres
+### Immunofluorescence microscopy of iAT2 alveolospheres
 
 Alveolospheres were washed with PBS and then fixed in place using 2% paraformaldehyde (PFA) at room temperature for 30 min and then dehydrated and paraffin embedded and sectioned. Once cut, slides were de-paraffinized, rehydrated, permeabilized, and antigens were retrieved by steaming for 15 min in a citrate buffer (Vector Labs). After blocking, each slide was incubated with a primary antibody using the concentrations listed in the Key Resource Table. Slides were incubated with primary antibody at 37°C for 2 hr. After washing, slides were incubated with appropriate fluorochrome conjugated secondary antibodies (see Key Resources Table for antibody details). Slides were then washed, counterstained with DAPI, and mounted. Images were acquired using a Leica Thunder widefield microscope.
 
 TIFs were stained as described in Suram et al., 2012. In brief, cut slides were de-paraffinized, rehydrated, permeabilized, and antigens were retrieved as for other immunofluoresence stains. Slides were blocked and stained for 53BP1 and then stained with an appropriate fluorochrome conjugated secondary antibody. Slides were then re-fixed with PFA, quenched with glycine, re-dehydrated in an ethanol series, and air dried. The slides were then stained with the PNA probe. The slides were washed, rehydrated in an ethanol series, and stained with a tertiary fluorochrome conjugated antibody. Slides were then washed, counterstained with DAPI, and mounted. TIF images were acquired using a Leica SP8 confocal microscope. Quantification of nuclei was carried out in ImageJ in a blinded fashion.
 
-## Measurement of telomerase activity with TRAP
+### Measurement of telomerase activity with TRAP
 
 iPS cells or iAT2 cells were cultured as indicated in each figure legend. 100,000 cells were harvested using methods described and lysed using NP-40 lysis buffer and processed as described in Herbert et al., 2006. In brief, lysates were incubated with a telomerase substrate and incubated at 30°C for telomerase to add telomere repeats. The reactions were then PCR amplified. Telomere repeats were resolved on a 4–20% TBE polyacrylamide gel and visualized by staining with SYBR Green nucleic acid gel stain. Relative telomerase activity was quantified using ImageJ focusing on the first six amplicons averaged across the dilutions.
 
-## Measurement of telomere lengths by TRF and TeSLA
+### Measurement of telomere lengths by TRF and TeSLA
 
 Telomere lengths were measured as described in Lai et al., 2016; Lai et al., 2017. DNA was isolated from cells using a Gentra Puregene kit (Qiagen). DNA was quantified by fluorometry using Qubit 2.0 (Invitrogen). For terminal restriction fragment (TRF) analysis in brief, 500 ng of DNA was digested with CviAII overnight followed by digestion with a mixture of BfaI, MseI, and NdeI overnight. For TeSLA in brief, 50 ng of DNA was ligated to telorette adapters, then digested with CviAII, then digested with a combination of BfaI, MseI, and NdeI, dephosphorylated, and TeSLA adapters (AT/TA Adapters) were ligated on. These TeSLA libraries were PCR amplified using Lucigen’s FailSafe polymerase kit with Pre-Mix H.
 
 Southern blotting was carried out using previously established protocols with some modification (Kimura et al., 2010; Lai et al., 2017). TRFs and TeSLA PCR reactions were separated on a 0.7% agarose gel at 0.833 V/cm for 24 hr. The gel was depurinated and denatured and then transferred to a Hybond XL membrane (Cytiva) by capillary transfer using denaturation buffer. The Hybond membrane was hybridized using a DIG-labeled telomere probe overnight. The blot was then washed and exposed using CDP-Star on an LAS-4000 Image Quant imager (Cytiva). TRFs were analyzed using ImageQuant while TeSLAs were analyzed using the MatLab software developed previously (Lai et al., 2017).
 
-## Measurement of telomere lengths by qPCR
+### Measurement of telomere lengths by qPCR
 
 Average telomere length was measured by qPCR as described in Cawthon, 2002; Joglekar et al., 2020 with some modifications. In brief, isolated genomic DNA was quantified by Qubit fluorometry (Invitrogen) and diluted to within the range of a standard curve constructed from a mixture of all samples analyzed. Triplicate qPCR reactions of the telomeric (T) product and the single copy gene (S) (HBB) were amplified using a Roche LightCycler 480 II (Roche) using the following programs: T PCR program 95°C for 10 min, 40 cycles of 95°C for 15 s, 56°C for 1 min; S PCR program 95°C for 10 min, 40 cycles of 95°C for 15 s, 58°C for 1 min. Cq values were computed using the second derivative method, and T/S ratios were calculated using the 2-∆∆Ct method.
 
-## RNA-sequencing and data analysis
+### RNA-sequencing and data analysis
 
 SFTPC + sorted cells from the indicated times during, counted and harvested in TRIzol and stored at –80°C until further processing. The RNA was isolated using a Direct-Zol kit (Zymo Research). RNA concentration was obtained by Qubit fluorometry (Invitrogen), and the integrity was checked by tape station analysis (Agilent Technologies). All samples had RINs >8, and the libraries were prepared by poly-A selection and sequenced by GeneWiz, LLC.
 
@@ -155,10 +211,10 @@ GSEA (Subramanian et al., 2005) was carried out in R (v4.0.2) (R Development Cor
 
 Genes that differed in expression >twofold and were associated with an adjusted p-value <0.05 from the D70 time point were also analyzed through the use of IPA (Ingenuity Systems, https://www.ingenuity.com) (Krämer et al., 2014) through the University of Pennsylvania Molecular Profiling Facility.
 
-## ddPCR
+### ddPCR
 
 RNA was isolated as listed above for the RNA-sequencing. 140 ng of RNA was first treated with ezDNAse (Invitrogen) and converted to cDNA using the SuperScript IV First-Strand Synthesis System (Invitrogen). The equivalent of 12.5 ng of original RNA was used as template in the reactions, and the ddPCR assays as well as the ddPCR supermix used are listed in the Key Resources Table (Bio-Rad). ddPCR was performed according to manufacturer’s instructions using QX200 AutoDG Droplet Digital PCR System (Bio-Rad). Results were analyzed using Quanta-Soft Version 1.7.4.0917 (Bio-Rad). Copies/µL were used and normalized to ACTB.
 
-## Statistical methods
+### Statistical methods
 
 Statistical methods are outlined in each of the figure legends. Each replicate ‘n’ represents an entirely separate differentiation from the pluripotent stem cell stage. For experiments with iPS cells, ‘n’ represents separate wells of the same iPS line (specifically for Figure S1 and S2). Quantitative data is represented as the mean with error bars representing the standard error of the mean. Student’s t-tests (unpaired and two-tailed) were used for determining statistical significance for all comparisons unless otherwise noted.

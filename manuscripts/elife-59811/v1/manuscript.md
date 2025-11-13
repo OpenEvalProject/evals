@@ -92,9 +92,9 @@ In the present study, we implemented tools of multilayer network analysis and GS
 
 ## Materials and methods
 
-## Sample and clinical instruments
+### Sample and clinical instruments
 
-## Primary cohort of individuals with 22q11DS
+#### Primary cohort of individuals with 22q11DS
 
 Individuals with 22q11DS were part of a prospective longitudinal study that has been described in several previous publications (Sandini et al., 2018; Schaer et al., 2009). Recruitment was performed through patient associations and word of mouth in French and English-speaking European countries. Inclusion criteria for the overall longitudinal study were the presence of a genetically confirmed 22q11.2 deletion and willingness of the participant and caregiver to participate in the study. Exclusion criteria for the overall longitudinal study were the inability of the participant to follow the procedures described in the project due to sensory issues (e.g., blindness) or too severe cognitive impairments. In particular, participants should have sufficient verbal skills to comprehend and answer to oral questions (i.e., during clinical interviews). For the present study, specific inclusion criteria were the availability of two longitudinal clinical assessments, including a first baseline assessment during adolescence, defined between 11 and 19 years of age. Presence of a psychotic disorder at baseline according to DSM-IV-TR criteria was an exclusion criterion. This yielded a total of 57 individuals (M/F=26/31), for whom a first psychiatric assessment was available during adolescence (age range at baseline 11.6–18.4, mean 14.4±1.8) along with a second longitudinal assessment on average 3.8±1 years later (age range at follow-up 14.2–24.27, mean 18.25±2.0).
 
@@ -104,7 +104,7 @@ To assess sub-threshold positive, negative, disorganized, and generalized psycho
 
 For the primary construction of multilayer symptom networks, we initially considered items of the SIPS and BPRS instruments measured at baseline and longitudinal follow-up. We removed symptoms that had a non-zero score in less than 1% of the sample leading to the exclusion of SIPS grandiosity and BPRS grandiosity scales. This yielded a total of 41 clinical measures available at both baseline and follow-up. All clinical variables were available for all subjects included in the study and we did not exclude any outliers.
 
-## Replication in individuals at Clinical Ultra High Risk for Psychosis in NEURAPRO cohort
+### Replication in individuals at Clinical Ultra High Risk for Psychosis in NEURAPRO cohort
 
 The second cohort of individuals, without a confirmed 22q11.2 Deletion, but meeting criteria for Clinical Ultra High Risk for Psychosis, was recruited in the context of the NEURAPRO clinical trial, designed to test effects of ω−3 PUFA therapy (McGorry et al., 2017; Nelson et al., 2018). Individuals were recruited among help-seeking populations in Australia, Singapore, Italy, Germany, Hong Kong, Denmark, and Switzerland. Inclusion criteria have been described in detail in previous publications and yielded a total of 304 subjects with a clinical UHR status at baseline. Once included in the study, individuals were randomized to a double-blind 6-month treatment with either ω−3 PUFA or placebo, and were then followed up for further 6 months, yielding a total follow-up period of 12 months (McGorry et al., 2017; Nelson et al., 2018). Specific inclusion and exclusion criteria are detailed in previous publications (Cruz et al., 2017) and yielded an overall sample of 304 individuals.
 
@@ -114,11 +114,134 @@ Psychiatric diagnoses were determined with the Structured Clinical Interview for
 
 Directly comparing network structure across 22q11DS and NEURAPRO cohorts was complicated by the use of different SIPS and CAARMS semi-structured clinical interviews across the two samples. Both interviews are designed to assess clinical high risk for developing psychosis, with similar operationalized diagnostic criteria and comparable predictive value (Fusar-Poli et al., 2016). Still, there is no one-to-one correspondence between each item of the two scales. We hence referred to the two manuals to define items that had sufficiently high correspondence across the two instruments. Based on this assessment, we excluded three symptoms that were considered as specific on the SIPS in the 22q11DS and 13 symptoms that were considered as specific on the CAARMS in the NEURAPRO sample. This yielded a total of 37 shared items across the two populations considering both SIPS/CAARMS and BPRS instruments. These items were used to construct longitudinal symptom networks (see Table 1).
 
-## Statistical analysis pipeline
+**Table 1.**
+ Correspondence of items of SIPS and CAARMS clinical interviews.
 
-## Multilayer symptom networks to define clinical pathways of vulnerability
 
-## Construction of multilayer symptom networks
+<table>
+  <thead>
+    <tr>
+      <th>Corresponding items of SIPS</th>
+      <th>Corresponding items of CAARMS</th>
+      <th>Missing items of SIPS</th>
+      <th>Missing items of CAARMS</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1 Unusual thought</td>
+      <td>1.1 Unusual thought content</td>
+      <td>D2 Bizarre thinking</td>
+      <td>3.3 Inadequate affect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P2 Persecutory ideas</td>
+      <td>1.2 Non-bizarre ideas</td>
+      <td>D4 Personal hygiene</td>
+      <td>4.1 Alogia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P4 Pperceptual abnormalities</td>
+      <td>1.3 Perceptual abnormalities</td>
+      <td>G1 Sleep disturbances</td>
+      <td>5.1 Social isolation'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P5 Disorganized communication</td>
+      <td>1.4 Disorganized speech</td>
+      <td></td>
+      <td>5.4 Aggressive behavior</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N1 Social anhedonia</td>
+      <td>4.3 Anhedonia</td>
+      <td></td>
+      <td>6.2 Objective motor functioning</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N2 Avolition</td>
+      <td>4.2 Avolition/apathy</td>
+      <td></td>
+      <td>6.3 Subjective bodily sensation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N3 Expression emotion</td>
+      <td>3.2 Blunted affect</td>
+      <td></td>
+      <td>6.4 Subjective autonomic functioning</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N4 Experience emotion</td>
+      <td>3.1 Subjective emotional disturbance</td>
+      <td></td>
+      <td>7.1 Mania</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N5 Ideational richness</td>
+      <td>2.2 Objective cognitive change</td>
+      <td></td>
+      <td>7.3 Suicidality/self-harm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N6 Occupational functioning</td>
+      <td>5.2 Impaired role functioning</td>
+      <td></td>
+      <td>7.4 Affective instability</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D1 Odd behavior</td>
+      <td>5.3 Disorganized behavior</td>
+      <td></td>
+      <td>7.5 Anxiety</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2 Dysphoric mood</td>
+      <td>7.2 Depression</td>
+      <td></td>
+      <td>7.6 OCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G3 Motor disturbances</td>
+      <td>6.1 Subjective motor functioning</td>
+      <td></td>
+      <td>7.7 Dissociative symptoms'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G4 Impaired tolerance to stress</td>
+      <td>7.8 Impaired subjective tolerance to normal stress</td>
+      <td></td>
+      <td>BPRS grandiosity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D3 Trouble attention</td>
+      <td>2.1 Subjective cognitive change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis pipeline
+
+#### Multilayer symptom networks to define clinical pathways of vulnerability
+
+##### Construction of multilayer symptom networks
 
 Prior to constructing networks, we accounted for the effects of age and sex with linear regression. We then constructed a single multilayer symptom network for each sample, in which each node represented a symptom, and the connecting edge between symptoms was weighted by the Pearson correlation between the two corresponding symptoms across subjects. Graph edges (i.e., correlations between symptoms) were initially computed cross-sectionally at both baseline and follow-up, composing two separate temporal layers. Such separate temporal layers were connected by longitudinal edges estimated from the correlations between symptoms at baseline and symptoms at follow-up, producing a single multilayer temporal network. Such multilayer network can be expressed in a single adjacency matrix composed of both cross-sectional and longitudinal correlations (see Figure 1).
 
@@ -126,7 +249,7 @@ We thresholded the network by considering only correlations survived correction 
 
 Networks were constructed considering both significant positive and negative correlations. However, in order to facilitate interpretability of differences in connectivity strength among different network edges, networks represented in the main text include only significant positive correlations. Significant negative correlations (one correlation in 22q11DS sample and eight correlations in NEURAPRO sample) are represented separately in Appendix 1—figures 6 and 7.
 
-## Network topological embedding
+### Network topological embedding
 
 Arguably one of the main challenges of current network models relates to intuitiveness and interpretability of results. Our objective was hence to provide a low-dimensional, easily interpretable, visual representation of the multilayer network that still reflected main patterns of correlations between symptoms, both within and across time.
 
@@ -138,7 +261,7 @@ The procedure employed to choose the appropriate number of network components is
 
 To test whether spatial embedding of symptoms according to the first two principal network dimensions provided a meaningful representation of network structure we correlated the strength of correlations between symptoms with their Euclidean distance in two-dimensional space. We expected to observe an overall negative correlation between Euclidean distance and correlation strength, indicating that symptoms there were strongly correlated, both with and across time points, tended to cluster together in space. We verified that negative association between Euclidean distance and correlation strength, was present for both correlations and longitudinal correlation, which would indicate that spatial embedding reflected the structure of both the cross-sectional and longitudinal relationship between symptoms. Moreover, we correlated topological embedding of symptoms according to the two main network dimensions across samples, in order to have an estimate of the degree of similarity of network structure across samples.
 
-## Graph theory analysis of longitudinal clinical pathways
+### Graph theory analysis of longitudinal clinical pathways
 
 Spatial embedding of symptoms provided an intuitive representation of the major patterns of relationships between symptoms. We were then interested in complementing this representation with a quantitative characterization of longitudinal pathways of interactions between symptoms across time.
 
@@ -150,7 +273,7 @@ We were then interested in focusing on pathways of longitudinal interaction betw
 
 First, this approach identified symptoms at baseline that over-proportionately mediated effects on symptoms at follow-up. Such longitudinal network hubs at baseline can be conceptualized as gateways of psychopathology. Second, our approach identified symptoms at follow-up that were over-proportionately affected and mediated the effects of symptoms at baseline. Such longitudinal network hubs at follow-up can be conceptualized as funnels of psychopathology.
 
-## Graph diffusion approach to predict patterns of clinical evolution
+### Graph diffusion approach to predict patterns of clinical evolution
 
 Current network approaches to psychopathology have focused on studying the architecture of interactions between psychiatric symptoms mostly by employing techniques of graph theory (Borsboom, 2017; Borsboom and Cramer, 2013). It should however be noted that, in a graph theory framework, symptoms are characterized purely in terms of their connectivity profile with other nodes/symptoms. For network approaches to inform clinical practice at the level of individual patients, symptoms would need to be characterized not only in terms of how they interact with each other, but also in terms of their severity. Indeed, an ideal framework would exploit knowledge of network interactions between symptoms to help predict the evolution of symptom severity across time.
 
@@ -162,9 +285,17 @@ Our methodological approach, described schematically in Figure 1, began by const
 
 To predict the spread of symptom severity from baseline to follow-up symptom we employed an iterative finite-difference graph diffusion approach. Compared to simple regression analysis, this approach considers both longitudinal correlations across time points and cross-sectional correlations between symptoms at follow-up, leading to a progressive evolution and refinement in the predicted symptom pattern. In the example of heat diffusion, the temperature distribution at Time 1 is considered fixed (and therefore re-imposed at each iteration of the algorithm), while the distribution at Time 2 evolves by the diffusion process. For both temperature and psychopathology, the diffusion algorithm will evolve the predicted signal until the system converges toward an equilibrium that minimizes signal change across time, at which point the iterative diffusion will be stopped. The graph diffusion converges to a steady-state solution upon reaching a minimal signal change between iterations that is less than 1e−9. Once such threshold was achieved, the clinical prediction for symptom severity at follow-up was considered to be stable, and the diffusion process was stopped. This process was repeated to predict symptom severity at follow-up for each subject included in the cohort, in a leave-one-out cross-validation loop.
 
-In mathematical terms, the diffusion equation follows a linear differential equation given as follows:∂xt∂t=-γLxt
+In mathematical terms, the diffusion equation follows a linear differential equation given as follows:
 
-If we approximate the solution to this differential equation through numerical methods, a finite-difference approach is employed, wherein in this case, the Laplacian matrix acts as a difference operator. One can therefore iteratively apply the Laplacian operator to the signal at each time point t until we reach a stable solution x(tf inal). Algebraically, this approach can be implemented by solving the differential equation directly in order to arrive at a closed-form solution in terms of matrix exponential given as follows:x=exp(−γLt)x0
+$$
+\frac{\partialxt}{\partialt}=-\gammaLxt
+$$
+
+If we approximate the solution to this differential equation through numerical methods, a finite-difference approach is employed, wherein in this case, the Laplacian matrix acts as a difference operator. One can therefore iteratively apply the Laplacian operator to the signal at each time point t until we reach a stable solution x(tf inal). Algebraically, this approach can be implemented by solving the differential equation directly in order to arrive at a closed-form solution in terms of matrix exponential given as follows:
+
+$$
+x=exp(−\gammaLt)x_{0}
+$$
 
 This solution is a negative exponential term, which decays for large values of t. Therefore, the solution is guaranteed to reach a stable form, and hence the convergence of the algorithm is guaranteed.
 
@@ -172,7 +303,7 @@ The procedure employed to evaluate the algorithm’s accuracy in predicting clin
 
 ## Results
 
-## Structure of multilayer symptom networks and longitudinal clinical pathways of vulnerability in 22q11DS
+### Structure of multilayer symptom networks and longitudinal clinical pathways of vulnerability in 22q11DS
 
 Topological embedding of symptoms yielded a strong negative correlation between the Euclidean distance separating symptoms and the empirically observed correlation strength (R=−0.465, p<0.0001), observed not only for cross-sectional associations between symptoms at baseline (R=−0.354, p<0.0001) or at follow-up (R=−0.473, p<0.0001), but also for longitudinal associations between symptoms at baseline and at follow-up (R=−0.365, p<0.0001; see Figure 2C). As shown in Appendix 1—figure 10A, such associations between Euclidean distance and correlation strength remained significant even after restricting data-range by excluding negative correlations. These results suggest that an easily interpretable low-dimensional embedding can offer a good approximation of the structure of the multilayer symptoms network.
 
@@ -188,13 +319,13 @@ Subsequently, we were interested in highlighting clinical pathways involving ind
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59811/elife-59811-fig3-v1.jpg)
 
-**Figure 3.:** C, D) and funnel symptoms at follow-up (A, B) in the 22q11DS sample.(A) Impaired tolerance to daily stress at follow-up acts as a funnel by broadly mediating the effects of baseline of thought disturbances on follow-up affective symptoms and of baseline affective symptoms on follow-up thought disturbances. (B) Reduced occupational functioning at follow-up, acted as a funnel by broadly mediating the effects of negative, disorganized symptoms and ADHD symptoms at baseline on the persistence of negative and disorganized symptoms at follow-up. (C) BPRS guilt at baseline acts as a gateway by mediating the effects of affective symptoms at baseline on both affective and thought disturbance symptoms at follow-up. (D) SIPS Odd Behavior acted as a gateway by broadly mediating the effects of negative symptoms at baseline on both disorganized and negative symptoms at follow-up.
+**Figure 3.:** (A) Impaired tolerance to daily stress at follow-up acts as a funnel by broadly mediating the effects of baseline of thought disturbances on follow-up affective symptoms and of baseline affective symptoms on follow-up thought disturbances. (B) Reduced occupational functioning at follow-up, acted as a funnel by broadly mediating the effects of negative, disorganized symptoms and ADHD symptoms at baseline on the persistence of negative and disorganized symptoms at follow-up. (C) BPRS guilt at baseline acts as a gateway by mediating the effects of affective symptoms at baseline on both affective and thought disturbance symptoms at follow-up. (D) SIPS Odd Behavior acted as a gateway by broadly mediating the effects of negative symptoms at baseline on both disorganized and negative symptoms at follow-up.
 
 Our approach also identified six symptoms at follow-up, that were broadly affected by psychopathology at baseline, and that can hence be conceptualized as funnels of psychopathology. Two of these funnel symptoms were captured disorganization and were represented by bizarre behavior and conceptual disorganization, and mostly mediated the effects of prior disorganization symptoms. Two more were represented by negative symptoms such as BPRS blunted effect and SIPS occupational functioning, which were located on the right side of the graph and appeared to importantly mediated the effects of negative and disorganized symptoms and ADHD symptoms at baseline on the persistence of negative and disorganized symptoms at follow-up (see Figure 3B). A final funnel was represented by SIPS reduced tolerance to normal stress, which located left side of the graph appeared important in mediating the effects of baseline of thought disturbances on follow-up affective symptoms and of baseline affective symptoms on follow-up thought disturbances (see Figure 3A).
 
 As a confirmatory analysis, we also constructed multilayer temporal networks, employing Spearman’s rank correlations, which are displayed in Appendix 1—figure 3. Results pointed to a strong similarity of networks reconstructed from Pearson versus Spearman correlations, both in terms of the loading of symptoms across the two main network dimensions and in terms of longitudinal centrality of individual symptoms. Still, while most symptoms were identified as longitudinal hubs in both networks, conceptual disorganization at follow-up was identified as a significant longitudinal Hub, after correction for multiple comparisons, only in the Pearson correlation network. Baseline symptoms of suspiciousness and impaired tolerance and follow-up symptoms of somatic disturbance and mannerisms were significant only in Spearman networks.
 
-## Structure of multilayer symptom networks and longitudinal clinical pathways of vulnerability in NEURAPRO sample
+### Structure of multilayer symptom networks and longitudinal clinical pathways of vulnerability in NEURAPRO sample
 
 While the variance explained by the first two dimensions was lower in the NEURAPRO sample, we still observed a significant negative correlation between the Euclidean distance separating symptoms and the empirically observed correlation strength (R=−0.249, p<0.000; see Figure 2D), observed for both cross-sectional associations between symptoms at baseline (R=−0.249, p<0.0001) or at follow-up (R=−0.238, p<0.0001), and for longitudinal associations between symptoms at baseline and at follow-up (R=−0.135, p<0.0001). As shown in Appendix 1—figure 10B, such associations between Euclidean distance and correlation strength remained significant even after restricting data range by excluding negative correlations. This suggests that spatial embedding of symptoms according to the two main eigenvectors still offered a meaningful characterization of the interaction between individual symptoms.
 
@@ -206,15 +337,15 @@ Our approach identified three baseline symptoms that presented disproportionatel
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59811/elife-59811-fig4-v1.jpg)
 
-**Figure 4.:** B, D) and funnel symptoms at follow-up (A) in the NEURAPRO sample.(A) Avolition-apathy at follow-up was also highlighted as a key funnel symptom that broadly mediated the effects of baseline avolition and affective disturbances on subsequent psychopathology. (B) Avolition-apathy was located on the left side of the graph and was directly associated with subsequent affective symptoms and indirectly associated with negative and disorganized symptoms, through the mediating role of persistent avolition-apathy at follow-up. (C) BPRS hostility was also located in proximity to negative and disorganized symptoms at baseline and appeared central in mediating their effects on subsequent symptoms of mood disturbance. (D) BPRS bizarre behavior was located on the right side of the graph and appeared to broadly affect negative and disorganized symptoms at follow-up. Moreover, bizarre behavior indirectly affected subsequent affective disturbances p through the mediating role of emotional withdrawal at follow-up.
+**Figure 4.:** (A) Avolition-apathy at follow-up was also highlighted as a key funnel symptom that broadly mediated the effects of baseline avolition and affective disturbances on subsequent psychopathology. (B) Avolition-apathy was located on the left side of the graph and was directly associated with subsequent affective symptoms and indirectly associated with negative and disorganized symptoms, through the mediating role of persistent avolition-apathy at follow-up. (C) BPRS hostility was also located in proximity to negative and disorganized symptoms at baseline and appeared central in mediating their effects on subsequent symptoms of mood disturbance. (D) BPRS bizarre behavior was located on the right side of the graph and appeared to broadly affect negative and disorganized symptoms at follow-up. Moreover, bizarre behavior indirectly affected subsequent affective disturbances p through the mediating role of emotional withdrawal at follow-up.
 
 As a confirmatory analysis, we constructed multilayer temporal networks in the NEURAPRO sample, employing Spearman’s rank correlations, which are displayed in Appendix 1—figure 2. Similar to what observed in 22q11DS, results pointed to a strong similarity of networks reconstructed from Pearson versus Spearman correlations, both in terms of the loading of symptoms across the two main network dimensions and in terms of longitudinal centrality of individual symptoms. Minor discrepancies across Spearman versus Pearson correlation networks included the fact that BPRS symptoms of Hostility at baseline and Emotional Withdrawal at follow-up were identified as hubs only in the Pearson network whereas centrality of BPRS Uncooperativeness was significant only in the Spearman network, after FDR correction for multiple comparisons.
 
 Despite an overall similar network structure appeared similar in 22q11DS and NEURAPRO cohorts, we did not observe a significant association in measures of longitudinal betweenness centrality (R=−0.03, p=0.77). These results suggest that specificities exist in the role of individual symptoms in contributing to the evolution of psychopathology, across the two samples.
 
-## Graph diffusion approach to predict patterns of clinical evolution
+### Graph diffusion approach to predict patterns of clinical evolution
 
-## Evaluation of prediction accuracy in 22q11DS and NEURAPRO cohorts
+#### Evaluation of prediction accuracy in 22q11DS and NEURAPRO cohorts
 
 Our primary objective was to predict the multivariate patterns of symptoms included in the SIPS and CAARMS clinical interviews, designed to assess vulnerability to psychosis. We started by predicting the severity of SIPS and CAARMS items at follow-up using items of SIPS and CAARMS at baseline. Subsequently, we estimated the added benefit of considering additional clinical instruments at baseline.
 
@@ -230,7 +361,7 @@ Simply correlating severity at baseline against severity at follow-up for each s
 
 A perhaps less intuitive observation was that change in symptom severity between baseline and follow-up was strongly negatively correlated with symptom severity at baseline for all symptoms being tested in both the 22q11DS (R=−0.65±0.17) and NEURAPRO cohorts (R=−0.63±0.25), suggesting the existence of a phenomenon of regression to the mean (see Figures 5B and 6B, respectively).
 
-## Performance of prediction in 22q11DS sample
+### Performance of prediction in 22q11DS sample
 
 Considering only the SIPS subscale at baseline yielded a significant prediction of SIPS symptom severity at follow-up, as revealed by a strongly significant correlation between actual and predicted symptom severity (R=0.40, p<0.00001) across all items and individuals, that remained significant when averaging mean and predicted symptom severity in each subject (R=0.64, p<0.00001; see Figures 5C and 4E). Interestingly, the correlation between empirical and predictive values was even stronger when considering symptom change across the two time points for all symptoms and individuals (R=0.57, p<0.00001). However, when averaging symptom change in each subject, we did not observe a significant correlation between observed and predicted values (R=−0,22, p=0.08). In other terms, the algorithm predicted both mean and specific symptoms severity at follow-up and specific change in symptom severity, while it failed to predict the mean change in symptom severity (see Figure 5F).
 
@@ -240,7 +371,7 @@ Next, we were interested in assessing the added value of considering additional 
 
 These results point to a synergism of BPRS and CBCL in predicting clinical patterns of the SIPS at follow-up. Interestingly, this synergism was visually apparent from the position of the items of the two instruments within the structure of the longitudinal symptom graph. Indeed, while items of the CBCL clustered on the left side of the graph in proximity to affective and ADHD symptoms, most items of the BPRS were located on the right side of the graph in proximity to thought disorder and negative symptoms.
 
-## Performance of prediction in NEURAPRO sample
+### Performance of prediction in NEURAPRO sample
 
 Similarly, to what was observed in the 22q11DS, the graph diffusion approach yielded a significant prediction of patterns of symptom severity at follow-up, with an average correlation between real and predicted symptom severity across all individuals (R=0.26, p<0.0001; see Figure 6C). Correlation was stronger between real and predicted symptom change between baseline and follow-up (R=0.54, p<0.0001; see Figure 6D). When averaging severity across symptoms for each individual we observed a significant correlation between mean and predicted symptoms severity (R=0.51, p<0.0001) but not between mean and predicted change in symptom severity (R=0.04, p=0.56), similar to what was observed in the 22q11DS cohort (see Figure 6E and F). We hence compared the prediction accuracy of the graph diffusion approach against that of simply considering clinical stability across time. As in 22q11DS, this analysis revealed that MSE of the graph diffusion approach was significantly lower than simply considering clinical stability (MSE of clinical stability=0.871±0.79, MSE of graph diffusion=0.734±0.67, p<0.00001; see Figure 6G). Indeed, accuracy of prediction was higher for all items of the CAARMS except inadequate effect, objective motor functioning, and mannerism (see Figure 6H).
 
@@ -256,7 +387,7 @@ The second main limitation is that current network approaches characterize sympt
 
 We test our approach in two independent samples of individuals at risk for developing psychosis.
 
-## Temporal multilayer symptom network approach to characterize clinical pathways of vulnerability to psychopathology
+### Temporal multilayer symptom network approach to characterize clinical pathways of vulnerability to psychopathology
 
 A prerequisite for interpreting the role of specific symptoms is having a broad characterization of the overall structure of psychopathology, similar to seeing the outline of the forest before focusing on the trees. In both samples, the first network component captured to the overall cross-sectional structure of relationships between symptoms, largely reflected a distinction between affective versus negative-disorganized psychopathology. Such cross-sectional structure was conserved both across longitudinal visits and across samples and is consistent with results of classical factorial analysis in both high-risk populations and schizophrenia (McGrath et al., 2004; Stefanovics et al., 2014; Lançon et al., 1998; Wallwork et al., 2012). This would suggest that overall network architecture reflects broad clinical patterns observed in clinical practice, and confirms the previously hypothesized distinction between affective and negative/disorganized dimensions of vulnerability to psychosis (van Os and Kapur, 2009; van Os et al., 2010). It is worth noting, however, that compared to our approach, factorial analysis separates symptoms that are considered to be the expression of distinct underlying latent variables. Therefore, by design, factorial analysis sacrifices information residing in the structure of correlations observed within and a cross large-scale dimensions (Borsboom and Cramer, 2013). By comparison, spatial embedding of individual symptoms captures the relationship between large-scale symptoms, such as the relative proximity of negative and disorganized dimensions, as well as the potential existence of relevant sub-clusters within large-scale dimensions. For instance, in both samples, avolition was located closer to affective and depressive symptoms compared to symptoms of reduced emotional expressiveness, which is in agreement with evidence of the existence of sub-dimensions within negative symptoms (Kaiser et al., 2017).
 
@@ -266,7 +397,7 @@ One of the main challenges in developmental and early intervention psychiatry i
 
 Altogether results both in 22q11DS and NEURAPRO cohorts highlight the potentialities of an approach based on multilayer temporal network analysis to provide an intuitive and quantitative characterization of clinical pathways contributing to heterogenous clinical evolutions in the early stages of psychopathology.
 
-## Predicting clinical evolution of individual patients through multilayer graph diffusion
+### Predicting clinical evolution of individual patients through multilayer graph diffusion
 
 Aside from shedding light on underlying disease mechanisms, a major appeal of understanding pathways of interaction between symptoms is in assisting in establishing prognosis. Still, current network approaches to psychopathology characterize symptoms exclusively in terms of their reciprocal connectivity profile, sacrificing information regarding symptom severity in individual participants. The unique feature of GSP is that network nodes are characterized not only in terms of connectivity, but can also be assigned a value or signal. For instance, in our GSP approach baseline symptoms were assigned a signal that corresponded to their observed severity in a particular individual. For each individual, we then predicted the evolution of psychopathology by modeling the diffusion of symptom severity from baseline to follow-up symptoms, as function of the structure of the multilayer temporal symptom network (see Figure 2).
 
@@ -276,7 +407,7 @@ Aside from flexibility in terms of considering clinical outcomes, the network-ba
 
 According to the model proposed by Van Os et al., these findings could imply that synergism between CBCL and BPRS is related to the fact that two instruments aid in prediction of two independent ‘affective’ and ‘negative/disorganized’ clinical pathways of vulnerability to psychosis (Myin-Germeys and van Os, 2007).
 
-## Limitations and future directions
+### Limitations and future directions
 
 The present study should be considered as an exploratory attempt to address some of the significant challenges that are hindering the translation of network techniques approaches to the clinical setting. As such, results of this study should be considered in light of multiple significant limitations which remain to be addressed in future work.
 

@@ -35,7 +35,7 @@ The goal of the present study is to examine the role of cortico-collicular proje
 
 ## Results
 
-## Activating direct cortico-collicular feedback modulates activity in the inferior colliculus
+### Activating direct cortico-collicular feedback modulates activity in the inferior colliculus
 
 Our first goal was to characterize the effects of activating the direct cortico-collicular projections on tone-evoked responses in IC. A combination of cortical anterograde and collicular retrograde viral transfections was used in order to achieve specific viral transfection of cortico-collicular neurons. We delivered either an excitatory opsin, ChannelRhodopsin2 (ChR2) or an inhibitory opsin, ArchaerhodopsinT (ArchT), bilaterally, specifically to the neurons in the auditory cortex which project to the inferior colliculus (Figure 1A). To achieve such specificity, we injected a retrograde virus that encoded Cre recombinase (Retro2 AAV.Cre) in IC (Figure 1B). This retrograde viral construct ensured that neurons projecting to IC expressed Cre recombinase a few weeks later. At the same time, we injected a virus that encoded ChR2 or ArchT in reversed fashion under the FLEX cassette in AC (AAV.Flex.ChR2, AAV.Flex.ArchT) (Figure 1C). This strategy ensured that only neurons expressing Cre recombinase in the auditory cortex would express ChR2 or ArchT in AC. Therefore, opsin was expressed exclusively in AC-IC projecting neurons, which terminate across all regions of IC, including central nucleus (CNIC) and dorsal cortex of IC (DCIC), from which we recorded (Figure 1D). Shining light over AC of these mice would therefore directly activate or suppress only these cortico-collicular feedback projections to IC.
 
@@ -59,6 +59,18 @@ We also tested whether the effects of cortico-collicular modulation differed acr
 
 We found that activating cortico-collicular feedback using ChR2 increased spontaneous activity of IC neurons (Figure 3A, left; −100 ms: p=0.022, ON = 4.3 ± 0.47 Hz; OFF = 3.6 ± 0.38; −20 ms: p=8.6e-6, ON = 5.6 ± 0.63, OFF = 3.7 ± 0.47). However, overall the feedback decreased tone-evoked response magnitude in IC, which we defined as the difference between spontaneous and tone-evoked response, at all laser onsets (Figure 3A, right; −100 ms: p=3.2e-5, ON = 14.2 ± 0.98 Hz; OFF = 15.5 ± 1.04 Hz; −20 ms: p=1.4e-6, ON = 11.8 ± 1.08 Hz, OFF = 13.9 ± 1 Hz; +8 ms: p=0.0034, ON = 13.03 ± 1.03, OFF = 13.7 ± 1.03). This suggests that the broad activation of feedback upregulates the baseline activity of IC neurons, but decreases tone-evoked response (Figure 6C, −100 ms: p=0.018, ON = 19.01 ± 1.2 Hz, OFF = 18.5 ± 1.2 Hz; +8 ms: p=0.007, ON = 17.3 ± 1.2 Hz; OFF = 16.9 ± 1.2 Hz). By contrast, suppressing the feedback using ArchT had no effect on either spontaneous activity or tone-evoked response magnitude (Figure 3B), suggesting that at baseline AC does not provide strong modulation of IC activity, as removing it does not affect sound-evoked effects in IC.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig3-v2.jpg)
+
+**Figure 3.:** Left panels: neuronal activity (spontaneous, left or tone-evoked, right) on laser ON versus laser OFF trials. Right panels: Box plots of neuronal activity (spontaneous, left or tone-evoked, right) for laser ON and laser OFF trials. Magenta circles indicate single units. On box plots, red line indicates median, white ◆ indicates mean. (A) Activating feedback using ChR2 increased IC spontaneous activity (left; −100 ms: p=0.022, ON = 4.3 ± 0.47 Hz; OFF = 3.6 ± 0.38; −20 ms: p=8.6e-6, ON = 5.6 ± 0.63, OFF = 3.7 ± 0.47) and decreased tone-evoked response magnitude (right; −100 ms: p=3.2e-5, ON = 14.2 ± 0.98 Hz; OFF = 15.5 ± 1.04 Hz; −20 ms: p=1.4e-6, ON = 11.8 ± 1.08 Hz, OFF = 13.9 ± 1 Hz; +8 ms: p=0.0034, ON = 13.03 ± 1.03, OFF = 13.7 ± 1.03). (B) Suppressing feedback using ChR2 had no effect on IC spontaneous activity or tone-evoked response magnitude.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) TOP: Distribution of noise correlations of IC tone response for laser OFF (gray) condition (mean = 0.069) and laser ON (blue, activation with ChR2) condition (mean = 0.057) BOTTOM: Distribution of change in correlation between laser ON and laser OFF conditions (mean = −0.017). (B) TOP: Distribution of noise correlations of spontaneous activity for laser OFF (gray) condition (mean = 0.021) and laser ON (blue) condition (mean = 0.012) BOTTOM: Distribution of change in correlation between laser ON and laser OFF conditions (mean = −0.008).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Example unit with increased spontaneous and tone-evoked activity in AC with activation of cortico-collicular feedback using ChR2 in AC averaged across all frequencies. (B) Example unit with decreased spontaneous and tone-evoked activity in AC with suppression of cortico-collicular feedback using ArchT in AC averaged across all frequencies.
+
 We then examined the effect of feedback on frequency tuning of IC units. Activation of feedback using ChR2 decreased frequency selectivity in the subsets of IC units that exhibited a decrease in tone-evoked response magnitude or increase in spontaneous activity (Figure 4A), but not in units that exhibited an increase in tone-evoked response magnitude or decrease in spontaneous activity (Figure 4B, mag decrease: −20 ms, p=0.00031, sparse ON = 0.49 ± 0.027, sparse OFF = 0.55 ± 0.025; +8 ms, p=0.00029, sparse ON = 0.46 ± 0.027, sparse OFF = 0.55 ± 0.024; spont increase: −100 ms, p=0.011, sparse ON = 0.49 ± 0.032, sparse OFF = 0.56 ± 0.031; −20 ms, p=0.00018, sparse ON = 0.46 ± 0.034, sparse OFF = 0.56 ± 0.029; +8 ms, p=2.2e-6, sparse ON = 0.41 ± 0.032, sparse OFF = 0.55 ± 0.029).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig4-v2.jpg)
@@ -69,7 +81,7 @@ Interestingly, these changes were observed almost exclusively in cells located i
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig5-v2.jpg)
 
-**Figure 5.:** A,C) and DCIC (B,D) recording sites.On box plots, red line indicates median, white ◆ indicates mean. (A) Increase in spontaneous activity (left; −100 ms: p=0.0204, ON = 3.5 ± 0.5 Hz, OFF = 2.5 ± 0.3 Hz; −20 ms: p=2.8e-7, ON = 5.2 ± 0.7 Hz, OFF = 2.3 ± 0.3 Hz) and decrease in tone-evoked response magnitude (right, −100 ms: p=3.3e-6, ON = 14.8 ± 1.4 Hz, OFF = 16.5 ± 1.5 Hz; −20 ms: p=6.3e-7, ON = 11.8 ± 1.6 Hz, OFF = 14.7 ± 1.4 Hz) for cells in DCIC with activation of cortico-collicular feedback using ChR2. Left panels: neuronal activity (spontaneous, left or tone-evoked, right) on laser ON versus laser off trials. Right panels: Average neuronal activity (spontaneous, left or tone-evoked, right) for laser on and laser off trials. (B) Little change in spontaneous activity or tone-evoked response magnitude (right; +8 ms: p=0.0027, ON = 13 ± 1.2 Hz, OFF = 13.6 ± 1.2 Hz) for cells in CNIC with activation of cortico-collicular feedback using ChR2. Panels as in A. (C) Activating feedback with ChR2 decreases frequency selectivity in a subset of units (mag decrease: −20 ms, p=6.3e-4, sparse ON = 0.46 ± 0.03, sparse OFF = 0.53 ± 0.03; +8 ms, p=4.7e-5, sparse ON = 0.41 ± 0.03, sparse OFF = 0.53 ± 0.03; spont increase: −100 ms, p=0.0044, sparse ON = 0.43 ± 0.04, sparse OFF = 0.52 ± 0.04; −20 ms, p=0.00013, sparse ON = 0.39 ± 0.04, sparse OFF = 0.53 ± 0.04; +8 ms, p=5.2e-6, sparse ON = 0.33 ± 0.03, OFF = 0.53 ± 0.04) for cells in DCIC. Left panels: Sparseness for laser ON versus laser OFF trials. Right panels: Average sparseness for laser on and laser off trials. (D) Activating feedback has no effect on frequency selectivity of cells in CNIC. Panels as in C.
+**Figure 5.:** On box plots, red line indicates median, white ◆ indicates mean. (A) Increase in spontaneous activity (left; −100 ms: p=0.0204, ON = 3.5 ± 0.5 Hz, OFF = 2.5 ± 0.3 Hz; −20 ms: p=2.8e-7, ON = 5.2 ± 0.7 Hz, OFF = 2.3 ± 0.3 Hz) and decrease in tone-evoked response magnitude (right, −100 ms: p=3.3e-6, ON = 14.8 ± 1.4 Hz, OFF = 16.5 ± 1.5 Hz; −20 ms: p=6.3e-7, ON = 11.8 ± 1.6 Hz, OFF = 14.7 ± 1.4 Hz) for cells in DCIC with activation of cortico-collicular feedback using ChR2. Left panels: neuronal activity (spontaneous, left or tone-evoked, right) on laser ON versus laser off trials. Right panels: Average neuronal activity (spontaneous, left or tone-evoked, right) for laser on and laser off trials. (B) Little change in spontaneous activity or tone-evoked response magnitude (right; +8 ms: p=0.0027, ON = 13 ± 1.2 Hz, OFF = 13.6 ± 1.2 Hz) for cells in CNIC with activation of cortico-collicular feedback using ChR2. Panels as in A. (C) Activating feedback with ChR2 decreases frequency selectivity in a subset of units (mag decrease: −20 ms, p=6.3e-4, sparse ON = 0.46 ± 0.03, sparse OFF = 0.53 ± 0.03; +8 ms, p=4.7e-5, sparse ON = 0.41 ± 0.03, sparse OFF = 0.53 ± 0.03; spont increase: −100 ms, p=0.0044, sparse ON = 0.43 ± 0.04, sparse OFF = 0.52 ± 0.04; −20 ms, p=0.00013, sparse ON = 0.39 ± 0.04, sparse OFF = 0.53 ± 0.04; +8 ms, p=5.2e-6, sparse ON = 0.33 ± 0.03, OFF = 0.53 ± 0.04) for cells in DCIC. Left panels: Sparseness for laser ON versus laser OFF trials. Right panels: Average sparseness for laser on and laser off trials. (D) Activating feedback has no effect on frequency selectivity of cells in CNIC. Panels as in C.
 
 To elucidate changes in the shape of the frequency response functions in IC with activation of cortico-cortical feedback beyond the general changes in selectivity we observed with changes in sparseness, we fitted linear regressions to light off versus light on firing rates. This analysis can reveal whether changes in frequency selectivity are linear/subtractive, multiplicative/divisive, or some combination of these transformations. For example, a slope of 1 and a positive y-intercept would represent a linear increase in frequency response (equal increase in response across all frequencies). Over the population of IC neurons with decreased tone-evoked response magnitude and/or increased spontaneous activity, the median slopes and y-intercepts of ranked linear fits to frequency responses are less than 1 and above zero, respectively (Figure 6A). These results, in combination with the decreased tone-evoked activity observed (Figure 6A; Figure 6B; Figure 6C, −100 ms: p=0.018, ON = 19.01 ± 1.2 Hz, OFF = 18.5 ± 1.2 Hz; +8 ms: p=0.007, ON = 17.3 ± 1.2 Hz; OFF = 16.9 ± 1.2 Hz), indicate that the decrease in frequency selectivity was due to a decrease in response to tones at preferred frequencies, not non-preferred frequencies. This result suggests that the suppressive effect of the cortico-collicular feedback is preferential for higher firing responses. Suppressing feedback resulted in very small (<0.04%) change in sparseness, therefore it did not affect frequency selectivity in IC (Figure 4B).
 
@@ -85,9 +97,17 @@ To better understand the effect of modulation of cortical activity on spectro-te
 
 **Figure 7.:** (A) Example STRF with and without activation of feedback for IC units that increase firing rate (left) and decrease firing rate (right) in response to cortico-collicular feedback activation using ChR2. (B) Number of positive and negative lobes that persisted with laser (stable). (C) Changes in STRF parameters of stable positive and negative lobes. Left panels: STRF parameter for laser OFF versus laser ON trials. Center panels: Average positive lobe STRF parameter for laser ON and laser off trials. Right panels: Average negative lobe STRF parameter for laser on and laser off trials. On box plots, red line indicates median, white ◆ indicates mean. For units with an increase in firing rate we observed a decrease in temporal width (p=0.00098, ON = 0.0303 ± 0.0018 s, OFF = 0.037 ± 0.0023 s), frequency width (p=0.00042, ON = 6.7 ± 1.1 Hz, OFF = 9.6 ± 1.8 Hz), and overall size (p=0.00036, ON = 46.05 ± 6.9 pixels, OFF = 77.5 ± 12.04 pixels) of positive lobes. For units with a decrease in firing rate we observed only a small increase in temporal width for both positive (p=0.026, ON = 0.034 ± 0.0025 s, OFF = 0.032 ± 0.0025 s) and negative (p=0.02, ON = 0.037 ± 0.0028 s, OFF = 0.032 ± 0.0024 s) lobes.
 
-## Modulating inhibitory neuronal activity in AC does not affect collicular sound responses
+### Modulating inhibitory neuronal activity in AC does not affect collicular sound responses
 
 Auditory responses in AC are shaped by interactions between excitatory and inhibitory neurons (Wood et al., 2017). To determine how modulating frequency selectivity in AC might affect tone-evoked responses in IC in a frequency-selective fashion, we perturbed the excitatory-inhibitory interactions by modulating two different classes of inhibitory interneuron known to contribute to sound responses in AC: PV and SST inhibitory interneurons (Figure 8A). We found that modulating PV interneuron activity in AC had no significant effects on spontaneous and tone-evoked activity or frequency selectivity in IC (Figure 8B–E) despite modulating frequency selectivity, spontaneous activity, and tone-evoked response magnitude in AC. Specifically, in AC, activating PVs decreased spontaneous activity and tone-evoked response magnitude (Figure 8F; spontaneous activity: p=2.2e-9, ON = 0.88 ± 0.16 Hz, OFF = 2.7 ± 0.34 Hz; tone-evoked response magnitude: p=8.02e-7, ON = 6.9 ± 1.06 Hz, OFF = 11.5 ± 1.3 Hz) and increased frequency selectivity (Figure 8G; p=3.3e-12, ON = 0.59 ± 0.022, OFF = 0.42 ± 0.02), while suppressing PVs increased spontaneous activity (Figure 8I; p=5.2e-5, ON = 4.08 ± 0.54 Hz, OFF = 3.06 ± 0.55 Hz) and decreased frequency selectivity (Figure 8J; p=3.8e-5, ON = 0.34 ± 0.027, OFF = 0.41 ± 0.031). This suggests that the changes in cortical activity driven by manipulation of PV activity does not propagate to the inferior colliculus.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig8-v2.jpg)
+
+**Figure 8.:** On box plots, red line indicates median, white ◆ indicates mean. (A) Stain for PV (center) and opsin-GFP (left). Scale bar: 50 um. (B) Activating PVs had no effect on spontaneous activity or tone-evoked response magnitude in IC. Magenta circles indicate single units. (C) Activating PVs had no effect on frequency selectivity in IC. (D) Suppressing PVs had no effect on spontaneous activity or tone-evoked response magnitude in IC. Magenta circles indicate single units. (E) Suppressing PVs had weak effects on frequency selectivity in IC (mag decrease: p=0.0068, ON = 0.57 ± 0.092, OFF = 0.5 ± 0.087). (F) Activating PVs decreased spontaneous activity (p=2.2e-9, ON = 0.88 ± 0.16 Hz, OFF = 2.7 ± 0.34 Hz) and tone-evoked response magnitude (p=8.02e-7, ON = 6.9 ± 1.06 Hz, OFF = 11.5 ± 1.3 Hz) in AC. (G) Activating PVs increased frequency selectivity in putative excitatory units in AC (p=3.3e-12, ON = 0.59 ± 0.022, OFF = 0.42 ± 0.02). (H) Activating PVs affected putative excitatory units across all layers of AC. (I) Suppressing PVs increased spontaneous activity (p=5.2e-5, ON = 4.08 ± 0.54 Hz, OFF = 3.06 ± 0.55 Hz) but did not affect tone-evoked response magnitude in AC. (J) Suppressing PVs decreased frequency selectivity in AC (p=3.8e-5, ON = 0.34 ± 0.027, OFF = 0.41 ± 0.031). (K) Suppressing PVs affected putative excitatory units across all layers of AC. B,D,F,I Left panels: neuronal activity (spontaneous, left or tone-evoked, right) on laser ON versus laser OFF trials. Right panels: Average neuronal activity (spontaneous, left or tone-evoked, right) for laser ON and laser OFF trials. C,E,G,J Left panels: Sparseness for laser ON versus laser off trials. Right panels: Average sparseness for laser on and laser off trials. (H,K) Change in spontaneous activity (laser ON trials – laser off trials), left panels: for units at each tetrode; right panels: separated into supragranular: tetrodes 1–3; granular: tetrodes 5,6; infragranular: tetrodes 7–10.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/51890/elife-51890-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** TOP: Activation of PV interneurons in AC had no effect on spontaneous activity in IC for either awake (N = 57 units, ON = 7.4 ± 1.4 Hz, OFF = 7.2 ± 1.3 Hz) or anesthetized (N = 138, ON = 10.5 ± 0.92 Hz, OFF = 10.6 ± 0.9 Hz) recordings. BOTTOM: Activation of PV interneurons in AC decreased spontaneous activity in AC for both awake (N = 14, p=8.5e-4, ON = 0.93 ± 0.24 Hz, OFF = 3.3 ± 0.87 Hz) and anesthetized (N = 53, p=2.2e-7, ON = 0.87 ± 0.19, OFF = 2.6 ± 0.36) recordings.
 
 Different interneuron classes may function in distinct networks, so we also tested the effects of modulating SST interneurons in AC. Modulating SST interneurons had no effect on tone-evoked activity (Figure 9B,D, right) or frequency selectivity (Figure 9C,E), but suppressing SST interneurons increased spontaneous activity in IC (Figure 9D, left; p=0.029, ON = 6.9 ± 0.66 Hz, OFF = 6.7 ± 0.63 Hz), a change that we also observed with activation of the direct feedback projections (Figure 2A, left). Similar to PV interneurons, activating SST interneurons decreased spontaneous activity and tone-evoked response magnitude in AC (Figure 9F; spontaneous activity: p=1.4e-12, ON = 0.97 ± 0.25 Hz, OFF = 2.9 ± 0.37 Hz; tone-evoked response magnitude: p=1.3e-15, ON = 3.3 ± 0.59 Hz, OFF = 11.4 ± 1.2 Hz) and increased frequency selectivity (Figure 9G; p=1.6e-13, ON = 0.69 ± 0.024, OFF = 0.47 ± 0.019). In AC, suppressing SSTs reduced spontaneous activity, but had no significant effect on tone-evoked response magnitude or frequency selectivity (Figure 9I,J; p=8.1e-4, ON = 3.6 ± 0.41 Hz, OFF = 2.2 ± 0.38 Hz). This lack of effect was not due to the relatively small effect of light penetrating to the deep layers. In fact, to confirm that modulating PV and SST activity in AC affected activity of units in L5/6 where the feedback projections we computed changes in spontaneous activity at each tetrode which spanned the entire auditory cortex. We found that activity was modulated across the layers (Figures 8–9 H,K). Whereas modulating PVs did not have an effect on IC activity, SST suppression resulted in an increase in spontaneous, but not tone-evoked activity in IC, which suggests that inhibitory modulation of sound responses in AC does not propagate to IC.
 
@@ -115,55 +135,262 @@ We observed little effect of modulating AC inhibitory interneurons on activity i
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pvalb-Cre mice</td>
+      <td>Jackson Laboratories</td>
+      <td>B6;129P2-Pvalbtm1(cre)Arbr/J RRID:IMSR_JAX:008069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sst-Cre mice</td>
+      <td>Jackson Laboratories</td>
+      <td>Ssttm2.1(cre)Zjh/J RRID:IMSR_JAX:013044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild type</td>
+      <td>Jackson Laboratories</td>
+      <td>C57BL/6J RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cdh23 mice</td>
+      <td>Jackson Laboratories</td>
+      <td>Cdh23tm2.1Kjn/J RRID:IMSR_JAX:018399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CAG-FLEX-ChR2-tdTomato</td>
+      <td>Penn VectorCore</td>
+      <td>Addgene 18917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CAG-FLEX-ArchT-GFP</td>
+      <td>UNC Vector Core</td>
+      <td>Addgene 99039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CAG-FLEX-ArchT-tdTomato</td>
+      <td>UNC Vector Core</td>
+      <td>Addgene 28305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RetroAAV2 hSyn Cre-GFP</td>
+      <td>In house</td>
+      <td></td>
+      <td>Vector generated and maintained in the di Biasi lab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>Mathworks.com RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were performed in adult male and female mice (supplier: Jackson Laboratories; age, 12–15 wk; weight, 22–32 g; wild-type C57BL/6J RRID:IMSR_JAX:000664; Pvalb-Cre mice, strain: B6;129P2-Pvalbtm1(cre)Arbr/J RRID:IMSR_JAX:008069; Sst-Cre mice, strain: Ssttm2.1(cre)Zjh/J RRID:IMSR_JAX:013044; Cdh23 mice, strain: Cdh23tm2.1Kjn/J RRID:IMSR_JAX:018399, or Pvalb-Cre x Cdh23 or Sst-Cre x Cdh23 crosses). Mice were housed at 28°C on a 12 hr light–dark cycle with water and food provided ad libitum, less than five animals per cage. In Pvalb-Cre mice Cre recombinase (Cre) was expressed in parvalbumin-positive interneurons, and in Sst-Cre, Cre was expressed in somatostatin-positive interneurons. All animal work was conducted according to the guidelines of University of Pennsylvanian IACUC (protocol number 803266) and the AALAC Guide on Animal Research. Anesthesia by isoflurane and ketamine and euthanasia by CO2 were used. All means were taken to minimize the pain or discomfort of the animals during and following the experiments. All experiments were performed during the animals' dark cycle. Original spike data and code are available on Dryad (http://doi.org/10.5061/dryad.1t61c80).
 
-## Viral vectors
+### Viral vectors
 
 Modified AAVs encoding ArchT (AAV9-CAG-FLEX-ArchT-GFP or AAV9-CAG-FLEX-ArchT-tdTomato; UNC Vector Core) or ChR2 (AAV9-CAG-FLEX-ChR2-tdTomato; Penn Vector Core) were used for selective suppression or excitation, respectively. Retrograde AAV virus encoding Cre (retro AAV-hSyn-Cre-GFP) was custom made in our laboratory. Briefly, RetroAAV2 hSyn Cre-GFP was packaged using the Helper-Free system (Agilent) and the retrograde trafficking plasmid, Retro2, which bears capsid mutations in serotype 2.
 
-## Surgery and virus injection
+### Surgery and virus injection
 
 At least 21 days prior to electrophysiological recordings, mice were anesthetized with isoflurane to a surgical plane. The head was secured in a stereotactic holder. The mouse was subjected to a small craniotomy (2 × 2 mm) over AC under aseptic conditions. Viral particles were injected (750 nl) bilaterally using a syringe pump (Pump 11 Elite, Harvard Apparatus) targeted to AC (coordinates relative to bregma: −2.6 mm anterior,±4.3 mm lateral, +1 mm ventral). Fiber-optic cannulas (Thorlabs, Ø200 μm Core, 0.22 NA) were implanted bilaterally over the injection site at depth of 0.5 mm from the skull surface. For a subset of mice, to target direct feedback, the mouse was also subjected to a craniotomy over IC (1 × 4 mm). Retro AAV viral construct was injected (3 × 200 nl) via glass syringe (30–50 um diameter) using a syringe pump (Pump 11 Elite, Harvard Apparatus) bilaterally in IC. Craniotomies were covered with a removable silicon plug. A small headpost was secured to the skull with dental cement (C and B Metabond) and acrylic (Lang Dental). For postoperative analgesia, slow release Buprenex (0.1 mg/kg) and Bupivicane (2 mg/kg) were injected subcutaneously. An antibiotic (5 mg/kg Baytril) was injected subcutaneously daily (for 4 days) at the surgical site during recovery. Virus spread was confirmed in all mice postmortem by visualization of the fluorescent protein expression in fixed brain tissue, and its colocalization with PV or SST or, for feedback cohort, expression in AC layer 5/6, following immuno-histochemical processing with the appropriate antibody.
 
-## Confocal imaging
+### Confocal imaging
 
 To confirm the location of viral injection sites, tissue sections containing the IC or AC were cut at 40 μm using a cryostat. Sections were mounted onto glass slides and imaged using Zeiss LSM 800 confocal microscope. 20X images were taken throughout the entire IC or AC, and tiles were stitched together to form a composite image using Zen software. Masks were drawn around the edge of the tissue to hide the embedding medium using Photoshop.
 
-## Acoustic stimuli
+### Acoustic stimuli
 
 Stimuli were delivered via a magnetic speaker (Tucker-Davis Technologies) directed toward the mouse’s head. Speakers were calibrated prior to the experiments to ± 3 dB over frequencies between 3 and 70 kHz by placing a microphone (Brüel and Kjaer) in the location of the ear contralateral to the recorded AC hemisphere, recording speaker output and filtering stimuli to compensate for acoustic aberrations (Carruthers et al., 2013). Free-standing speaker was used to approximate the conditions under which the mouse typically experiences sounds in awake state.
 
-## Clicks
+### Clicks
 
 To obtain a quick assessment of auditory onset responses we used click trains. Click trains were composed of six 50 ms clicks at 70 dB sound pressure level relative to 20 microPascals (SPL) with a 50 ms ISI. Click trains were repeated 120 times with a 450 ms ISI between trains. Alternating click trains were also paired with 1 s laser stimulation beginning 250 ms prior to click train onset.
 
-## Frequency tuning stimuli
+### Frequency tuning stimuli
 
 To measure tuning for direct feedback cohorts, a train of 50 pure tones of frequencies spaced logarithmically between 3 and 70 kHz, at 70 dB SPL in pseudo-random order was presented 20 times. Each tone was 50 ms duration (5 ms cosine squared ramp up and down) with an inter-stimulus interval (ISI) of 450 ms. Alternating tones were paired with continuous 250 ms laser pulse at either −100 ms, −20 ms, or +8 ms onset relative to tone onset.
 
 For Sst-Cre and Pvalb-Cre cohorts, a train of pure tones of 35 frequencies spaced logarithmically between 3 and 70 kHz and 8 uniformly spaced intensities from 0 to 70 dB SPL were presented 10 times in a pseudo-random order. Alternating tones were paired with continuous 250 ms laser pulse at −100 ms relative to tone onset.
 
-## Dynamic Random Chords (DRCs)
+### Dynamic Random Chords (DRCs)
 
 To measure spectro-temporal receptive fields (STRFs) we constructed DRCs from 20 ms chords (with 1 ms ramp) of 50 frequencies spaced logarithmically between 5 and 40 kHz with average intensity of 50 dB SPL and 20 dB SPL standard deviation selected from a uniform distribution for each chord. Total duration was 40 min with a 250 ms continuous laser pulse presented every 1 s.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 All recordings were carried out inside a double-walled acoustic isolation booth (Industrial Acoustics). Mice were placed in the recording chamber, and a headpost was secured to a custom base, immobilizing the head. Activity of neurons in AC were recorded via a custom silicon multi-channel probe (Neuronexus), lowered in the area targeting AC via a stereotactic instrument following a craniotomy at a 35-degree angle. The electrode tips were arranged in a vertical fashion that permits recording the activity of neurons across the depth of the auditory cortex and the inferior colliculus. Activity of neurons in IC were recorded via the same custom probes, lowered in the area targeting IC via a stereotactic instrument following either a craniotomy (Sst-Cre and Pvalb-Cre cohorts) or removal of the silicon plug, vertically. Recording sites in IC were identified based on anatomical markers and stereotaxic coordinates as dorsal cortex (<0.5 mm of midline) or central nucleus of IC (center of central nucleus of IC ~1 mm lateral of midline). Recordings were made in multiple locations across IC. Electro-physiological data from 32 channels were filtered between 600 and 6000 Hz (spike responses), digitized at 32 kHz and stored for offline analysis (Neuralynx). Spikes belonging to single neurons and multi-units were detected using commercial software (Plexon). Original spike data and code are available on Dryad (http://doi.org/10.5061/dryad.1t61c80). We examined the experimental groups described in Table 1 (note: we do not distinguish here between Sst-Cre/Pvalb Cre and Sst-Cre x Cdh23 and Pvalb-Cre x Cdh23). Initial experiments were performed under anesthesia to control for stability or recordings. For cohorts with awake and anesthetized recordings data were analyzed separately, but we observed no difference in our results so data were combined (Figure 8—figure supplement 1). We used power analysis for effect size of 25% and expected variance in firing rate (50%) to determine the minimum total number of units for each experimental group at N = 44. All groups included a greater number of units (single- and multi-units were combined in analysis). The number of units in measuring tone-evoked responses are specified in Table 1. Mice that did not show effect of laser activation or suppression in auditory cortex were excluded. We recorded from AC in Cdh23+ChR2 mice and Cdh23+ArchT mice to verify an effect in AC (Figure 3—figure supplement 2) in all mice used in our analysis.
 
-## Photostimulation of neuronal activity
+**Table 1.**
+ Number of recorded units and mice used in our analyses for each experimental group and condition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Recording area</th>
+      <th>Single units</th>
+      <th>Multi units</th>
+      <th>Awake total mice</th>
+      <th>Awake total units</th>
+      <th>Anesthetized total mice</th>
+      <th>Anesthetized total units</th>
+      <th>Total units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cdh23-ChR2</td>
+      <td>IC</td>
+      <td>4</td>
+      <td>187</td>
+      <td>5 Male</td>
+      <td>191</td>
+      <td>-</td>
+      <td>-</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>Cdh23-ArchT</td>
+      <td>IC</td>
+      <td>24</td>
+      <td>181</td>
+      <td>4 Male</td>
+      <td>205</td>
+      <td>-</td>
+      <td>-</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PV-ChR2</td>
+      <td>IC</td>
+      <td>25</td>
+      <td>198</td>
+      <td rowspan="2">4 Male</td>
+      <td>85</td>
+      <td rowspan="2">12 Male</td>
+      <td>138</td>
+      <td>223</td>
+    </tr>
+    <tr>
+      <td>AC</td>
+      <td>3</td>
+      <td>64</td>
+      <td>14</td>
+      <td>53</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PV-ArchT</td>
+      <td>IC</td>
+      <td>6</td>
+      <td>40</td>
+      <td rowspan="2">4 Male</td>
+      <td>46</td>
+      <td rowspan="2">-</td>
+      <td>-</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>AC</td>
+      <td>3</td>
+      <td>56</td>
+      <td>59</td>
+      <td>-</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SST-ChR2</td>
+      <td>IC</td>
+      <td>15</td>
+      <td>90</td>
+      <td rowspan="2">7 Male</td>
+      <td>76</td>
+      <td rowspan="2">8 Male</td>
+      <td>29</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>AC</td>
+      <td>9</td>
+      <td>90</td>
+      <td>49</td>
+      <td>50</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SST-ArchT</td>
+      <td>IC</td>
+      <td>16</td>
+      <td>161</td>
+      <td rowspan="2">2 Male 2 Female</td>
+      <td>140</td>
+      <td rowspan="2">4 Male 2 Female</td>
+      <td>37</td>
+      <td>177</td>
+    </tr>
+    <tr>
+      <td>AC</td>
+      <td>4</td>
+      <td>155</td>
+      <td>123</td>
+      <td>36</td>
+      <td>159</td>
+    </tr>
+  </tbody>
+</table>
+
+### Photostimulation of neuronal activity
 
 Neurons were stimulated by application of continuous light pulse delivered from either blue (473 nm, BL473T3-150, used for ChR2 stimulation) or green DPSS laser (532 nm, GL532T3-300, Slocs lasers, used for ArchT stimulation) through implanted cannulas. Laser power measured through cannulas was 3 mW. Timing of the light pulse was controlled with microsecond precision via a custom control shutter system, synchronized to the acoustic stimulus delivery.
 
-## Neural response analysis
+### Neural response analysis
 
-## Unit selection
+#### Unit selection
 
 Units were selected based on pure-tone responsiveness. For each unit we identified the 7 frequencies that elicited the highest response and averaged activity across these trials (and the highest 3 amplitudes for stimulus with multiple amplitudes). Units with tone-evoked activity (75 ms window after tone onset) less than two standard deviations above the spontaneous activity (50 ms window prior to tone onset) in no laser condition were excluded from the analysis. Both single units and high quality multi-units (multi-units with <1% of spikes with <1 ms inter-spike-interval) were used.
 
-## Spontaneous activity and tone-evoked response magnitude
+#### Spontaneous activity and tone-evoked response magnitude
 
 Feedback cohort: Spontaneous activity was the average firing rate in a 20 ms window (to allow for equivalent comparison between −100 ms and −20 ms laser onset conditions) prior to tone onset of top 7 preferred frequencies.
 
@@ -171,24 +398,30 @@ Sst-Cre/Pvalb-Cre cohorts: Spontaneous activity was the average firing rate in a
 
 All mice: Tone-evoked response magnitude was calculated as the difference between the average tone-evoked response in a 75 ms window after tone onset and the spontaneous activity.
 
-Sparseness. To examine frequency selectivity of neurons, sparseness of frequency tuning was computed as:Sparseness=1− (∑i=1i=nFRin )2∑i=1i=nFRi2nwhere FRi is tone-evoked firing rate response to tone at frequency i, and n is number of frequencies used (Weliky et al., 2003). Subgroups of neurons used in sparseness analyses were separated based on changes in spontaneous activity or tone-evoked response magnitude in response to cortico-collicular activation or suppression. Units were selected if > 1 standard deviation change in spontaneous activity or tone-evoked response magnitude based on the -100 ms laser onset trials.
+Sparseness. To examine frequency selectivity of neurons, sparseness of frequency tuning was computed as:
 
-## Linear fits across frequencies
+$$
+Sparseness=1− \frac{(\sumi=1i=n\frac{FR_{i}}{n} )^{2}}{\sumi=1i=n\frac{FR_{i}^{2}}{n}}
+$$
+
+where FRi is tone-evoked firing rate response to tone at frequency i, and n is number of frequencies used (Weliky et al., 2003). Subgroups of neurons used in sparseness analyses were separated based on changes in spontaneous activity or tone-evoked response magnitude in response to cortico-collicular activation or suppression. Units were selected if > 1 standard deviation change in spontaneous activity or tone-evoked response magnitude based on the -100 ms laser onset trials.
+
+#### Linear fits across frequencies
 
 Linear fits were calculated using linear regression (fitlm.m; MATLAB) over 50 data points, one for each of the 50 frequencies tested (Natan et al., 2017a). The 50 data points were separately calculated as the mean FR over all repeats of each frequency.
 
-## Best Frequency
+#### Best Frequency
 
 Best frequency was defined as the frequency that elicited the maximum response.
 
-## STRF Analysis
+#### STRF Analysis
 
 To calculate the STRF we separated the stimulus into 1 s chunks, concatenating the 250 ms laser ON chunks and the 250 ms laser OFF chunks immediately preceding laser onset. These data were then used to calculate the average spectrogram preceding a spike. To allow for finer temporal resolution of the STRFs we upsampled the DRCs using nearest neighbor interpolation. Subsequently we averaged the STRF across the eight stimulus files. To determine the significance of the lobes, the z-score of pixels was computed relative to the baseline values from an STRF generated with scrambled spike trains, using Stat4ci toolbox (Chauvin et al., 2005; Natan et al., 2017b). We ran this significance test 100 times and any pixel identified as significant more than 90 times was considered significant. Lobes were matched between laser ON and laser OFF trials by comparing the overlap of the lobes, requiring a 50% overlap of the smallest lobe size to be a match. From the STRF, the peak time, temporal width, peak frequency, and frequency width of the positive and negative lobes were measured (Schneider and Woolley, 2010; Shechter and Depireux, 2007; Woolley et al., 2006).
 
-## Noise correlation
+### Noise correlation
 
 Noise correlations were calculated as the pairwise Pearson correlation coefficient between the spike counts of units recorded simultaneously. For spontaneous activity spikes were counted in a window 20 ms before tone onset and for tone response spikes were counted in a window 75 ms after tone onset.
 
-## Statistical analyses
+### Statistical analyses
 
 Significant differences and P values were calculated using paired Wilcoxon sign-rank test (unless noted otherwise) with standard MATLAB routine. For the laser alone data, to compare distributions to standard normal distribution data were normalized by mean and standard deviation and then significant differences and P values were calculated by Kolmogorov-Smirnoff test with standard MATLAB routine. Mean ± standard error of the mean was reported unless stated otherwise. * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001.

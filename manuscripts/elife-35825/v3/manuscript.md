@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.35825.001 Biological systems are organized into well-ordered structures and can evolve new patterns when perturbed. To identify principles underlying biological order, we turned to C. elegans for its simple anatomy and powerful genetics. We developed a method to quantify the arrangement of three dendrites in the main sensory nerve bundle, and found that they exhibit a stereotyped arrangement throughout larval growth. Dendrite order does not require prominent features including sensory cilia and glial junctions. In contrast, loss of the cell adhesion molecule (CAM) CDH-4/Fat-like cadherin causes dendrites to be ordered randomly, despite remaining bundled. Loss of the CAMs PTP-3/LAR or SAX-7/L1CAM causes dendrites to adopt an altered order, which becomes increasingly random as animals grow. Misexpression of SAX-7 leads to subtle but reproducible changes in dendrite order. Our results suggest that combinations of CAMs allow dendrites to self-organize into a stereotyped arrangement and can produce altered patterns when perturbed.
+Biological systems are organized into well-ordered structures and can evolve new patterns when perturbed. To identify principles underlying biological order, we turned to C. elegans for its simple anatomy and powerful genetics. We developed a method to quantify the arrangement of three dendrites in the main sensory nerve bundle, and found that they exhibit a stereotyped arrangement throughout larval growth. Dendrite order does not require prominent features including sensory cilia and glial junctions. In contrast, loss of the cell adhesion molecule (CAM) CDH-4/Fat-like cadherin causes dendrites to be ordered randomly, despite remaining bundled. Loss of the CAMs PTP-3/LAR or SAX-7/L1CAM causes dendrites to adopt an altered order, which becomes increasingly random as animals grow. Misexpression of SAX-7 leads to subtle but reproducible changes in dendrite order. Our results suggest that combinations of CAMs allow dendrites to self-organize into a stereotyped arrangement and can produce altered patterns when perturbed.
 
 ## Introduction
 
@@ -28,13 +28,13 @@ In addition to the evidence from these EM studies, we chose to study dendrite or
 
 ## Results
 
-## Development of a semi-automated method to quantify dendrite order
+### Development of a semi-automated method to quantify dendrite order
 
 To study the cellular and molecular mechanisms underlying dendrite order in the amphid, we first sought to develop methods to measure, quantify, and compare dendrite order in populations of animals. Ideally, we would label each of the 12 amphid dendrites with a unique fluorescent marker, examine cross sections of the dendrite bundle, and determine how dendrites are ordered across individuals. However, we lacked the technical ability to generate 12 differently colored cell-specific markers and, even if we could uniquely mark each neuron, quantifying the degree of stereotypy of 12 dendrites is a mathematically complex problem. Thus, we decided to simplify the problem by labeling only three dendrites and examining their relative order as a proxy for overall bundle order. We reasoned that, if the overall bundle were well-ordered, then any three dendrites would be similarly well-ordered. Our method can be broken down into three parts: imaging, quantification, and statistical analysis (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig1-v3.jpg)
 
-**Figure 1.:** Our analysis pipeline can be divided into three parts: (A) imaging, (B) quantification, and (C) statistics. (A) Schematic showing position of amphid neurons in head and maximum-intensity projection of a fourth larval stage (L4) animal expressing YFP, CFP, and mCherry in AWA, AFD, and ASE, respectively. Nose tip is at top. Arrowheads indicate approximate extent of bundle used for analysis in all experiments. (B) (i) To quantify dendrite order, a brightest-path algorithm first extracts the 3D coordinates of each dendrite. (ii) In cross-section, the dendrites define a triangle (A, AWA; D, AFD; E, ASE). The pairwise distances between dendrites are determined (d). The longest distance is taken as a proxy for bundle width (d1, d2, d31 in the schematic). The dendrite opposite the longest side is defined as the dendrite ‘in the middle’ of the others (AFD in the schematic). (iii) For visualization, bundle width is plotted at each position along the bundle. The dendrite in the middle is plotted as a color bar (yellow, AWA; blue, AFD; red, ASE). Color bars from age- and genotype-matched individuals are arranged side-by-side to visualize patterns of dendrite order in a population. For simplicity, only n = 6 bundles are illustrated, yielding a distribution at the boxed position of 5 red, 1 blue, 0 yellow; for a typical sample size of n = 18, these would correspond to 15 red, 3 blue, 0 yellow. (C) (i) For statistical testing, the observed distribution (e.g. 15, 3, 0) is compared to a test distribution using Fisher’s 3 × 2 exact test as a test statistic to obtain a nominal ‘true’ p-value. Permutation testing is carried out by merging observed and test distributions and resampling 500 times, to obtain representative p-values for distributions with the same composition that differ only by sampling error. The ‘true’ p-value is ranked relative to these resampled p-values, with lower rankings (1/501) indicating the true distributions differ more than would be expected by sampling error. Rankings below 25/501 or 5/501 represent a corrected p-value of p<0.05 or p<0.01 respectively. (ii) This comparison is carried out at every position along the bundle and the p-value rankings are represented as a log-scale color bar. Pairwise distances, triangles, and p-value rankings at every position along each bundle in this study can be explored at http://heimanlab.com/ibb.
+**Figure 1.:** Our analysis pipeline can be divided into three parts: (A) imaging, (B) quantification, and (C) statistics. (A) Schematic showing position of amphid neurons in head and maximum-intensity projection of a fourth larval stage (L4) animal expressing YFP, CFP, and mCherry in AWA, AFD, and ASE, respectively. Nose tip is at top. Arrowheads indicate approximate extent of bundle used for analysis in all experiments. (B) (i) To quantify dendrite order, a brightest-path algorithm first extracts the 3D coordinates of each dendrite. (ii) In cross-section, the dendrites define a triangle (A, AWA; D, AFD; E, ASE). The pairwise distances between dendrites are determined (d1, d2, d3). The longest distance is taken as a proxy for bundle width (d1 in the schematic). The dendrite opposite the longest side is defined as the dendrite ‘in the middle’ of the others (AFD in the schematic). (iii) For visualization, bundle width is plotted at each position along the bundle. The dendrite in the middle is plotted as a color bar (yellow, AWA; blue, AFD; red, ASE). Color bars from age- and genotype-matched individuals are arranged side-by-side to visualize patterns of dendrite order in a population. For simplicity, only n = 6 bundles are illustrated, yielding a distribution at the boxed position of 5 red, 1 blue, 0 yellow; for a typical sample size of n = 18, these would correspond to 15 red, 3 blue, 0 yellow. (C) (i) For statistical testing, the observed distribution (e.g. 15, 3, 0) is compared to a test distribution using Fisher’s 3 × 2 exact test as a test statistic to obtain a nominal ‘true’ p-value. Permutation testing is carried out by merging observed and test distributions and resampling 500 times, to obtain representative p-values for distributions with the same composition that differ only by sampling error. The ‘true’ p-value is ranked relative to these resampled p-values, with lower rankings (1/501) indicating the true distributions differ more than would be expected by sampling error. Rankings below 25/501 or 5/501 represent a corrected p-value of p<0.05 or p<0.01 respectively. (ii) This comparison is carried out at every position along the bundle and the p-value rankings are represented as a log-scale color bar. Pairwise distances, triangles, and p-value rankings at every position along each bundle in this study can be explored at http://heimanlab.com/ibb.
 
 First, we generated a strain to label three amphid neurons in different colors (AWA:YFP, AFD:CFP, ASE:mCherry) by combining two separately integrated transgenes (one with AWA:YFP, the second with AFD:CFP and ASE:mCherry) (Figure 1A). We used this YFP + CFP/mCherry approach because we consistently observed recombination artifacts when CFP and YFP were introduced on the same transgene. Using traditional widefield deconvolution microscopy, we found that dendrites in newly hatched larvae were too close together to be reliably resolved (Figure 2—figure supplement 1A) but dendrites in older larvae and adults were readily discerned despite each dendrite being only about 0.5 μm in diameter, close to our effective resolution limit (Figure 1A and Figure 2—figure supplement 1A) (Doroquez et al., 2014; Ward et al., 1975).
 
@@ -48,9 +48,17 @@ The pairwise distances, dendrite triangles, and p-value ranks for all positions 
 
 To summarize, we have developed a robust and semi-automated pipeline to detect, quantify, and compare dendrite order, which now allows us to determine dendrite order in a wild-type population and to ask whether it is altered by various manipulations.
 
-## Amphid dendrites are fasciculated and ordered
+### Amphid dendrites are fasciculated and ordered
 
 To determine wild-type dendrite order, we imaged animals expressing CFP, YFP, and mCherry in AFD, AWA, and ASE respectively. Animals were synchronized at the first larval stage (L1) and then collected and imaged at three time points (24 hr, early larval stage (L2/3); 48 hr, late larval stage (L4); 72 hr, one-day adult). We found that dendrites are tightly fasciculated throughout larval growth (Figure 2A) (average longest pairwise distance ± standard deviation: 24 hr, 0.88 ± 0.09 μm; 48 hr, 1.11 ± 0.22 μm; 72 hr, 1.51 ± 0.25 μm). The approximate doubling in bundle width may reflect an increased diameter of each dendrite and thus the entire bundle, and roughly corresponds to the overall doubling in length of the head during these stages.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig2-v3.jpg)
+
+**Figure 2.:** (A) Maximum distances between AWA, AFD, and ASE dendrites for early stage larvae (24 hr, L2/L3), late stage larvae (48 hr, L4), and young adults (72 hr, one-day adults). Light gray bars, 2 µm width; entire box, 6 µm width. (B) Summary plots showing the fraction of animals with AWA (yellow), AFD (blue), or ASE (red) dendrites in the middle at each position along the bundle for 24 hr, 48 hr, and 72 hr time points. Blue color bars show statistical difference from a random distribution (ranked p-values, shading as in Figure 1Cii); darker shades represent greater difference from random. See Figure 2—figure supplement 1B for comparison with chi-squared test p-values. (C) Population plots showing dendrite ‘in the middle’ for 24 hr, 48 hr, and 72 hr time points (AWA, yellow; AFD, blue; ASE, red); same data as in (B). Each column represents one animal. n = 20 at each time point.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean pairwise distances between dendrites in 0 hr (L1), 24 hr (L2/L3), 48 hr (L4), and 72 hr (adult) animals. For comparison, the theoretical resolution limit under our imaging conditions is ~0.2 µm and the practical limit when imaging live intact animals is greater. At each position along the bundle, n = 20 animals with three labeled dendrites (i.e. 60 sets of pairwise measurements) per timepoint. (B) Comparison of chi-squared (green) and ranked p-value (blue) methods for quantifying statistical differences between wild-type and random populations (see Methods). Data represent wild-type animals at 24 hr, 48 hr, and 72 hr time points (same dataset as Figure 2). For each method, the minimum (least similar to random) and maximum (most similar to random) scores along the bundle are indicated. (C) Dendrite bundle width, dendrite order population plot, and summary plot for wild-type 48 hr (L4 stage) animals obtained using a different set of three neurons: green, AWA:YFP; purple, AWC:CFP; red, ASG:mCherry. n = 19. (D, E) Electron micrographs from ‘Slideable Worm’ (SW) (Altun and Hall, 2005) showing sections from an adult animal close to the nose (D, SW slice 18) and farther along the bundle (E, SW slice 50). Amphid dendrites are traced in gray except AFD (blue), AWA (yellow), ASE (red). The overall shape of the amphid bundle is traced in orange (approximately 6 µm across in both images). The switch from AFD (blue) to ASE (red) as the middle dendrite can be compared to the change in overall compactness of the bundle. (F) Swarmplot of measurements from wild-type L4 animals showing distances from the dendrite endings to the switch point (left column), from the nose tip to the end of AUA (middle column), and from the dendrite endings to the position where the amphid socket (AMso) joins the amphid bundle (right column).
 
 Next, we looked at dendrite order across the population (Figure 2B,C). We visualized dendrite order using population plots as described above (Figure 2C) as well as summary plots that represent the fraction of animals with the ASE, AWA, or AFD dendrite in the middle at every point along the bundle (Figure 2B). The summary plot provides a compact way to visualize how well-ordered dendrites are in a population. If all of the lines converge at 0.33 then it indicates that dendrite order is random for that population, whereas if any of the lines approach 1 or 0 then it suggests that dendrites are arranged in a consistent, non-random order.
 
@@ -60,9 +68,17 @@ The cause of the switch point is unclear. Similar discontinuities were observed 
 
 To summarize, we used our imaging pipeline to show that amphid dendrites are well-ordered in young animals and that this order is maintained – albeit imperfectly – during larval growth, despite an approximately two-fold increase in the length and width of the bundle and despite ongoing mechanical perturbations caused by locomotion and pharyngeal pumping of the animal.
 
-## Structures at the dendrite endings are not required for dendrite order
+### Structures at the dendrite endings are not required for dendrite order
 
 Our data show that amphid dendrites exhibit the most consistent order in the distal region of the dendrite bundle, closest to the nose. This region is especially interesting because it is rich in cell biological structures, including dendritic cilia used to detect signals from the environment and cell-cell junctions between each dendrite and the amphid sheath glial cell (Figure 3A). By contrast, the remainder of the dendrites are comparatively featureless, lacking gap junctions, synapses, or any other obvious cell biological specializations. We therefore wanted to test whether cilia or interactions with the sheath glial cell contribute to amphid dendrite order.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig3-v3.jpg)
+
+**Figure 3.:** (A) Schematic of wild-type amphid neurons (dark pink) and glial cells (gray). Inset: Amphid dendrites protrude into the sheath glial cell and terminate in cilia. (B–D) Dendrite order summary plots for 48 hr (L4) animals with (B) no cilia (daf-19(m86);daf-12(sa204), n = 19); (C) divergent cilia (mec-8(u74), n = 19) or (D) no sheath glia (AMsh:DTX, transgene consisting of diphtheria toxin A under control of amphid sheath glial specific promoter, n = 18). Color bars, p-value rankings as indicated in key. Blue bars show statistical difference from random (darker shading, less random); red bars show statistical difference from wild type (darker shading, less like wild type).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Bundle width plots for 48 hr (L4) animals with no cilia (daf-19(m86);daf-12(sa204), n = 20); divergent cilia (mec-8(u74), n = 19) or no sheath glia (AMsh:DTX, transgene consisting of diphtheria toxin A under control of amphid sheath glial specific promoter, n = 20). Same animals as Figure 3.
 
 We first looked at amphid cilia as a potential source of dendrite order. Early EM reconstructions showed that the order of amphid cilia is also stereotyped, albeit different from that of amphid dendrites (Ward et al., 1975). To test the hypothesis that amphid cilia are required for dendrite order, we crossed our markers into a mutant lacking the RFX transcription factor DAF-19, which is required to activate the genetic program for ciliogenesis (Figure 3B) (Swoboda et al., 2000). Because daf-19 mutants constitutively enter a non-reproductive developmental state called dauer, we also introduced a mutation in daf-12, which encodes a receptor required for dauer entry (Antebi et al., 2000). daf-19; daf-12 animals lack cilia but do not enter dauer, allowing the strain to be maintained as a homozygous stock (Senti and Swoboda, 2008). We found that lack of cilia had no effect on fasciculation or dendrite order (Figure 3B, Figure 3—figure supplement 1). To statistically quantify this observation, we performed permutation tests comparing daf-19; daf-12 with simulated random distributions (Figure 3B, blue column) or with our observed wild-type population (Figure 3B, red column). Darker blues indicate that daf-19 dendrite order is non-random, while the absence of darker reds indicates that daf-19 dendrite order does not differ from wild type. These tests are consistent with the qualitative impression that dendrite order is unaffected. As cilia are required for normal neuronal activity, this result also implies that dendrite order does not depend on normal patterns of activity.
 
@@ -70,17 +86,175 @@ To further test the role of dendrite endings in establishing dendrite order, we 
 
 We next tested whether interactions with the amphid glial cell are required for dendrite order. Amphid dendrites form cell junctions with the sheath glial cell, and the sheath glial cell secretes factors that promote the normal development and function of the dendrite sensory endings (Bacaj et al., 2008). To test the possibility that the sheath glial cell might impose order on the dendrites, we genetically ablated sheath glia using diphtheria toxin expressed under the control of a late embryonic-stage amphid sheath promoter (Figure 3D) (Bacaj et al., 2008). We were not able to ablate the sheath glia in earlier embryonic stages, as that causes amphid dendrites to fail to extend (Singhal and Shaham, 2017). Our strain also carried a fluorescent marker for the amphid sheath glial cell, allowing us to identify and exclude rare animals in which ablation failed. In glia-ablated animals, we found dendrites to remain well-ordered (blue color bar) and mostly unchanged from wild type (red color bar), suggesting that sheath glia are not required to maintain dendrite order after the amphid bundle initially develops (Figure 3D, Figure 3—figure supplement 1). Together, our data suggest that the conspicuous cell biological features of amphid dendrites – their cilia and cell-cell junctions – are not required for dendrite fasciculation or order.
 
-## The cell adhesion molecules cdh-4, sax-7, and ptp-3 are required for dendrite fasciculation
+### The cell adhesion molecules cdh-4, sax-7, and ptp-3 are required for dendrite fasciculation
 
 Next, we considered the possibility that cell adhesion molecules (CAMs) along the lengths of the dendrites might be required for fasciculation and dendrite order. Previous studies in C. elegans and other organisms have shown that cell adhesion molecules such as SAX-7/L1CAM and the large extracellular matrix molecule DIG-1 are required for dendrite and axon fasciculation (Burket et al., 2006; Bénard et al., 2006; Sasakura et al., 2005). However, few studies in any system have explored how CAMs affect the ordering of axons or dendrites within a bundle (Lin et al., 1994; Schwabe et al., 2014). We wanted to identify CAMs that affect amphid dendrite fasciculation and order. Since it is technically unfeasible to conduct a large-scale forward genetic screen for dendrite order defects using our imaging pipeline, we decided to focus first on a small number of candidate CAMs.
 
 To this end, we began by generating a list of 20 CAMs that are known to play roles in axon fasciculation, that have highly enriched expression in amphid neurons, or that interact with CAMs known to affect fasciculation in other areas of the C. elegans nervous system or in other organisms (Table 1). To further prioritize this list, we reasoned that disrupting CAMs that are important for amphid dendrite fasciculation might cause large-scale dendrite disorganization at some frequency, and that we would be able to detect even infrequent defects by using a dye-filling method to label the amphid neurons. Briefly, animals are soaked in 2 mg/ml of the lipophilic fluorescent dye DiI for 45 min, which for unknown reasons leads to bright and highly specific labeling of six amphid neurons, thus providing a fast and marker-independent method to visualize the overall structure of the amphid bundle. Altered amphid structure can reflect loss of adhesion between dendrites or pleiotropic defects in morphogenesis. We used dye-filling to screen mutations in the 20 candidate CAMs using late larval stage (L4) animals. As a positive control, we found that dig-1 mutants exhibited readily apparent defasciculation defects in this assay (24% of animals, Table 1).
 
+**Table 1.**
+ Candidate screen to identify factors required for amphid dendrite fasciculation.Candidate genes were selected from the literature based on known roles in axon fasciculation/guidance, enrichment in amphid neurons (aenriched in AWB or AFD, [Colosimo et al., 2004]), or physical interaction with SAX-7, as shown. Animals bearing the designated alleles were subjected to dye-filling, which brightly labels six amphid neurons (AWB, ASH, ASI, ASJ, ASK, ADL), and scored with a fluorescence stereomicroscope for defasciculated amphid bundles. Two mutants exhibited gross head morphology defects concomitant with defasciculation and were not pursued further (bgross head morphology defects).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Candidate gene</th>
+      <th>Protein information and references</th>
+      <th>Allele(s)</th>
+      <th>Animals with defasciculated amphid bundles (percent, n = 50)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Mutants with known axon fasciculation/guidance defects</td>
+    </tr>
+    <tr>
+      <td>dig-1</td>
+      <td>Immunoglobulin (Ig) superfamily; among largest secreted proteins in any animal (~1300 kDa) (Burket et al., 2006; Bénard et al., 2006)</td>
+      <td>n1321</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ptp-3</td>
+      <td rowspan="2">LAR family protein tyrosine phosphatase (Ackley et al., 2005; Ch'ng et al., 2003)</td>
+      <td>mu256</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>ok244</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>sax-7a</td>
+      <td>L1 family/Neuroglian (Sasakura et al., 2005; Wang et al., 2005; Zallen et al., 1999)</td>
+      <td>ky146</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>vab-1</td>
+      <td>sole Eph receptor in C. elegans (George et al., 1998; Mohamed and Chin-Sang, 2006; Zallen et al., 1999)</td>
+      <td>dx31</td>
+      <td>10b</td>
+    </tr>
+    <tr>
+      <td>sax-3</td>
+      <td>Robo (Slit receptor) (Zallen et al., 1998; Zallen et al., 1999)</td>
+      <td>ky123</td>
+      <td>8 b</td>
+    </tr>
+    <tr>
+      <td>cdh-4 a</td>
+      <td>Fat-like cadherin (Schmitz et al., 2008)</td>
+      <td>rh310</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>unc-40 a</td>
+      <td>DCC (Netrin receptor) (Hedgecock et al., 1990)</td>
+      <td>e271</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>fmi-1 a</td>
+      <td>Cadherin family (Najarro et al., 2012; Steimel et al., 2010)</td>
+      <td>rh308</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dgn-1 a</td>
+      <td>Dystroglycan family (Johnson et al., 2006; Johnson and Kramer, 2012)</td>
+      <td>cg121</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>syg-1 a</td>
+      <td>IrreC/IRRE family (Shen and Bargmann, 2003)</td>
+      <td>ky652</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>casy-1</td>
+      <td>Calsyntenin family (Kim and Emmons, 2017)</td>
+      <td>ok739</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Other adhesion molecules enriched in amphid neurons</td>
+    </tr>
+    <tr>
+      <td>nrx-1 a</td>
+      <td>Neurexin family (Haklai-Topper et al., 2011)</td>
+      <td>wy778</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>plx-2 a</td>
+      <td>Plexin (Semaphorin receptor) (Ikegami et al., 2004; Nakao et al., 2007)</td>
+      <td>ev773</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>nlr-1 a</td>
+      <td>Neurexin/Caspr family (Haklai-Topper et al., 2011)</td>
+      <td>tm2050</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ptp-4 a</td>
+      <td>protein tyrosine phosphatase (Thompson et al., 2013)</td>
+      <td>gk715362</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>rig-3 a</td>
+      <td>Ig superfamily (C. elegans Deletion Mutant Consortium, 2012)</td>
+      <td>ok2156</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>scd-2 a</td>
+      <td>Receptor tyrosine kinase (C. elegans Deletion Mutant Consortium, 2012)</td>
+      <td>ok565</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>igcm-1 a</td>
+      <td>Ig superfamily (C. elegans Deletion Mutant Consortium, 2012)</td>
+      <td>ok711</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Factors that physically interact with SAX-7</td>
+    </tr>
+    <tr>
+      <td>dma-1 a</td>
+      <td>Leucine-rich repeat family (Liu and Shen, 2011)</td>
+      <td>wy686</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>mnr-1</td>
+      <td>Fam151 family (Dong et al., 2013; Salzberg et al., 2013)</td>
+      <td>wy758</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Using this approach, we identified seven additional CAM mutants that cause defasciculation defects (ptp-3, sax-7, vab-1, sax-3, cdh-4, unc-40 and nrx-1; Table 1). Interestingly, even the most pronounced defects among these are weakly penetrant (<25%) suggesting that a redundant system of CAMs contributes to dendrite fasciculation. Loss of sax-7 was previously observed to cause ‘loosening’ of amphid dendrites in some animals, along with other defects, but this aspect of its phenotype has not been pursued (Sasakura et al., 2005). Because two mutants (vab-1, sax-3) exhibited gross head morphology defects and two mutants (unc-40, nrx-1) exhibited only very rare defasciculation defects (1 in 50 animals), we chose to focus our initial characterization on the remaining three mutants – cdh-4, ptp-3/LAR, and sax-7/L1CAM.
 
-## Amphid dendrites are randomly ordered in cdh-4 mutants
+### Amphid dendrites are randomly ordered in cdh-4 mutants
 
 From our candidate screen, we found cdh-4 to be required for dendrite fasciculation. cdh-4 encodes a Fat-like cadherin characterized by the large number of cadherin repeats in its extracellular domain (Figure 4A). In C. elegans, cdh-4 has been implicated in axon fasciculation in the dorsal and ventral nerve cords (Schmitz et al., 2007; Schmitz et al., 2008). We used the rh310 allele, which introduces a premature stop codon in the extracellular domain (Figure 4A)(Schmitz et al., 2008).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig4-v3.jpg)
+
+**Figure 4.:** (A) Schematic CDH-4 protein structure. TM, transmembrane segment; EGF-like, epidermal growth factor-like domain. (B) Maximum-intensity projection of 48 hr (L4) animal showing tightly-fasciculated dendrites with an altered order, compare to Figure 1A. (C) Bundle width plots for cdh-4 (48 hr, L4; n = 21). Five individuals with defasciculated dendrites (see Figure 4—figure supplement 1A) are overlaid in pink and were excluded from further analysis. All other animals (n = 16) are overlaid in blue. (D) Population plots and summary plots showing dendrite order for these animals (n = 16). p-value rankings as in Figure 3: blue, cdh-4 vs. random; red, cdh-4 vs. wild type; darker shading represents greater differences between the populations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Maximum-intensity projection of 48 hr (L4) animal showing grossly defasciculated dendrites near the nose, compare to Figures 1A and 4B. (B) Cell body positions of AFD (blue), AWA (yellow), and ASE (red) neurons in wild-type (left) and cdh-4 (right) animals shortly after hatching (L1 stage). n = 5 per genotype. (C) Bundle width (n = 17) and population and summary plots of dendrite order (n = 14) in 24 hr (L2/L3) cdh-4 animals. Bundle widths of three animals with defasciculated dendrites are overlaid in pink. p-value rankings as in Figure 3: blue, cdh-4 vs. random; red, cdh-4 vs. wild type; darker shading represents greater differences between the populations.
 
 Since only a small number of cdh-4 mutant animals had dendrite fasciculation defects (6%, Table 1), we wanted to ask whether dendrites are still ordered in cdh-4 individuals that had normally fasciculated dendrite bundles. To do this, we crossed our markers into cdh-4 animals. Consistent with our dye-filling results, we observed grossly defasciculated amphid dendrites in only 1/21 animals examined (Figure 4—figure supplement 1A). Quantification of dendrite distances identified four additional animals in which a portion of the bundle significantly exceeded the average width of wild-type bundles (z-score >3.5, see Methods) and which were therefore also classified as defasciculated. These defasciculated bundles are shown in pink in Figure 4C and were excluded from further analysis. In the remaining 16/21 animals, we found that dendrite order was lost despite the bundle remaining intact and well-fasciculated (Figure 4B), with the ASE, AFD, and AWA dendrites occupying the middle position with approximately equal frequency along the entire length of the bundle (Figure 4D). Permutation tests confirmed that dendrite order in this population is not significantly different from random (light shading in blue color bar) and is significantly different from wild type (dark shading in red color bar).
 
@@ -88,11 +262,23 @@ We found that dendrite order defects are also present in younger animals (24 hr,
 
 Our results show that, although cdh-4 mutants exhibit only partially penetrant defects in fasciculation, they show nearly complete loss of dendrite order within the bundle, suggesting CDH-4 plays an essential role in specifying dendrite order despite having a more redundant role in overall fasciculation.
 
-## Amphid dendrites in ptp-3/LAR and sax-7/L1CAM mutants exhibit altered order in young animals and random order in adults
+### Amphid dendrites in ptp-3/LAR and sax-7/L1CAM mutants exhibit altered order in young animals and random order in adults
 
 We next examined how ptp-3 and sax-7 contribute to amphid dendrite fasciculation and order. ptp-3 encodes a receptor-like protein tyrosine phosphatase that is part of the leukocyte antigen related (LAR) family of proteins that play important roles in nervous system development, including axon guidance and fasciculation (Ackley et al., 2005; Clandinin et al., 2001; Dunah et al., 2005; Harrington et al., 2002; Krueger et al., 1996; Maurel-Zaffran et al., 2001; Wills et al., 1999). sax-7 encodes a homolog of the L1 cell adhesion molecule that is also widely involved in neurodevelopment, including axon guidance and fasciculation, and is disrupted in a human neurological disorder called L1 syndrome (Bénard et al., 2012; Chen and Zhou, 2010; Kim and Emmons, 2017; Sakurai, 2012; Sasakura et al., 2005).
 
 To examine dendrite defects, we crossed our markers to ptp-3 and sax-7 mutants. There are short and long isoforms of ptp-3 (ptp-3a and ptp-3b; Figure 5A), and we made use of ptp-3(mu256), which disrupts both isoforms, as well as ptp-3(ok244), which disrupts only the longer ptp-3a isoform (Figure 5A). There are also short and long isoforms of sax-7 (sax-7S and sax-7L respectively (Bénard et al., 2012; Pocock et al., 2008; Sasakura et al., 2005; Wang et al., 2005), (Figure 5B). We made use of two alleles that disrupt both isoforms – sax-7(ky146) was used for most of our analyses, and we confirmed our results using sax-7(eq1) (Wang et al., 2005; Zallen et al., 1999) – as well as sax-7(nj53) which prevents expression of sax-7L (Sasakura et al., 2005).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig5-v3.jpg)
+
+**Figure 5.:** (A–B) Schematic protein structures for isoforms of (A) PTP-3 and (B) SAX-7. TM, transmembrane segment; FNIII, Fibronectin Type III domain; Ig, immunoglobulin-like domain; PTP, protein tyrosine phosphatase domain. (C, D, F, G) Bundle width plots and dendrite order summary plots for (C, D) ptp-3(mu256) and (F, G) sax-7(ky146) at the developmental stages indicated. Animals with defasciculated dendrites are overlaid in pink on bundle width plots and were excluded from further analysis. (E, H) Expression patterns of (E) ptp-3b promoter and (H) sax-7S promoter driving nuclear mCherry (red). Dye-filling (green) was used to label six defined neurons as anatomical landmarks, and remaining neurons were identified by nuclei positions. Maximum-intensity projection images of L1-stage animals, top; schematic showing defined relative positions of amphid nuclei, bottom. A, AWA; B, AWB; C, AWC; D, AFD; E, ASE; F, ADF; G, ASG; H, ASH; I, ASI; J, ASJ; K, ASK; L, ADL.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A, D) Maximum-intensity projection images showing examples of defasciculation in (A) ptp-3(mu256) and (D) sax-7(ky146). Blue, AFD; yellow, AWA; red, ASE. (B, E) Cell body positions of AFD (blue), AWA (yellow), and ASE (red) neurons in (B) ptp-3(mu256) and (E) sax-7(ky146) animals shortly after hatching (L1 stage). n = 5 per genotype. AFD cell body is mispositioned in some sax-7 animals as previously reported (Sasakura et al., 2005) but the relative order of cell bodies is normal, compare to Figure 4—figure supplement 1B. (C, F, G) Bundle width plots and dendrite order summary plots for (C) ptp-3(ok244) which is predicted to disrupt only the PTP-3A isoform; (F) sax-7(eq1) which is predicted to disrupt both SAX-7 isoforms, similar to sax-7(ky146); and (G) sax-7(nj53) which is predicted to disrupt only SAX-7L and may lead to increased expression of SAX-7S (Sasakura et al., 2005). For each strain, p-value rankings are shown as in Figure 3: blue, indicated strain vs. random; red, indicated strain vs. wild type; darker shading represents greater differences between the populations. (H) Bundle width and (I) dendrite order summary plots comparing ptp-3(mu256) and sax-7(ky146) mutants with the ptp-3(mu256); sax-7(ky146) double mutant. For bundle width plots, individuals with defasciculated dendrites are overlaid in pink and were excluded from further analysis. For each strain, p-value rankings are shown as described above (blue, strain vs. random; red, strain vs. wild type) except the double mutant is also compared to the sax-7 (red, s) and ptp-3 (red, p) single mutants. All data are from 48 hr (L4) stage animals.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35825/elife-35825-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Bundle width and dendrite order summary plots for mutants disrupting factors that interact physically or genetically with SAX-7 or its homologs in other contexts (A) dma-1(wy686), (B) clr-1(e1745), (C) igcm-1(ok711). For bundle width plots, individuals with defasciculated dendrites are overlaid in pink and were excluded from further analysis. For each strain, p-value rankings are shown as described above (blue, mutant vs. random; red, mutant vs. wild type). All data are from 48 hr (L4) stage animals.
 
 As expected from our dye-filling assays, ptp-3(mu256) and sax-7(ky146) exhibit amphid defasciculation defects with low penetrance (pink traces in Figure 5C,F and representative images in Figure 5—figure supplement 1A,D). Fasciculation defects were not observed in ptp-3(ok244), suggesting that the shorter PTP-3B isoform is sufficient for fasciculation (Figure 5—figure supplement 1C). In both ptp-3(mu256) and sax-7(ky146), fasciculation defects become progressively more severe throughout larval development (Figure 5C,F), consistent with previous observations that SAX-7 is required for the maintenance of nervous system architecture (Bénard et al., 2012; Sasakura et al., 2005).
 
@@ -106,7 +292,7 @@ Recent work has shown that cell-specific differences in the expression level of 
 
 To summarize, we found that loss of either sax-7 or ptp-3 causes amphid dendrites to initially take on a non-random arrangement that is distinct from wild type. In both sax-7 and ptp-3 mutants, this order becomes increasingly random over time, and correlates with increased defasciculation. We also found that sax-7 and ptp-3 were expressed in a subset of amphid neurons, suggesting that these adhesion molecules are not uniformly expressed. Taken together, our data suggest that sax-7 and ptp-3 are required for ordering dendrites within the amphid bundle, such that loss of either CAM causes a weakly-penetrant defasciculation phenotype and a highly-penetrant change in dendrite order.
 
-## Misexpression of SAX-7 alters amphid dendrite order
+### Misexpression of SAX-7 alters amphid dendrite order
 
 We considered two models to explain how CAMs promote dendrite order. In the first model, dendrite order is determined during development through a CAM-independent mechanism, for example cell lineage. CAMs would then act like concrete poured over this pre-existing structure to secure it in place such that, without appropriate CAMs, dendrite order would be labile and deteriorate over time. In the second model, dendrite order is determined by differential expression of the CAMs themselves acting as adhesion molecules, signaling receptors, or both. In this model, experimentally misexpressing a single CAM might alter dendrite order (see concept model, Figure 6A).
 
@@ -118,7 +304,7 @@ To test this idea, we misexpressed SAX-7 using promoters that are expressed in o
 
 ## Discussion
 
-## Principles of nerve bundle organization
+### Principles of nerve bundle organization
 
 In this study, we took advantage of the simple nervous system of C. elegans to quantitatively assess the arrangement of individual dendrites within a nerve bundle. We found that amphid dendrites are ordered within the bundle, and this order is maintained over time. Dendrite order does not seem to depend on the conspicuous cell biological structures at the dendrite endings (sensory cilia and dendrite-glia junctions) but is instead imposed by multiple CAMs expressed by the neurons. Loss of the Fat-like cadherin CDH-4 leads to randomized arrangement of dendrites, whereas loss of PTP-3/LAR or SAX-7/L1CAM, or misexpression of SAX-7, can cause dendrites to take on an altered non-random order. Taken together, our results suggest that the arrangement of dendrites within the bundle is determined by multiple CAMs, and altering their relative expression can lead to novel arrangements.
 
@@ -128,7 +314,7 @@ Two previous sets of studies using invertebrate models are especially helpful to
 
 These studies led to two major principles, which are further supported by the work described here: first, that neurites can exhibit stereotyped neighbor relationships within a bundle and, second, that these relationships can arise from differential adhesion. Importantly, our study introduces a third principle – that multiple adhesion molecules can act in concert to specify distinct relationships among many neurites, in a pattern that is more complex than the 1:1 pairing of G and P axons or the inside:outside relationship of L and R neurites.
 
-## Functional consequences of ordered bundles
+### Functional consequences of ordered bundles
 
 Why might nerve bundles be ordered? One trivial explanation would be that bundle order reflects the developmental order of neurite outgrowth, with the oldest neurite – typically the pioneer axon or dendrite – in the center, and the youngest neurites on the periphery. However, this is not the case in C. elegans, the only organism in which the birth order and neurite position of every neuron is known. As an example, the VD motor neurons are born post-embryonically and extend axons along the ventral nerve cord after the nerve cord is established, yet their axons insinuate deeply into the ventral nerve cord to adhere closely to the DD motor neurons, a functionally similar set of motoneurons that are born much earlier and lie at the center of the ventral nerve cord (White et al., 1976; White et al., 1986). This and similar examples suggest that neurites ‘choose’ their neighbors within a bundle, possibly with functional consequences.
 
@@ -138,7 +324,7 @@ There are at least three ways in which neighboring neurites could influence each
 
 In light of these observations of ephaptic coupling, our finding that dendrites assume stereotyped neighbor relationships could have important implications for how sensory information is processed. Recently developed methods for whole-brain calcium imaging in C. elegans make it an ideal system for asking whether the neighbor relationships we describe here are mirrored by patterns of correlated neuronal activity and, if so, whether such correlations are disrupted by the mutants we found to alter dendrite order (Nguyen et al., 2016; Prevedel et al., 2014; Schrödel et al., 2013).
 
-## How simple rules generate complex patterns
+### How simple rules generate complex patterns
 
 As Warren Lewis, a pioneer in cell biology, put it in 1922: 'Were the various types of cells to lose their stickiness for one another and for the supporting extracellular white fibers, reticuli, etc., our bodies would at once disintegrate and flow off into the ground in a mixed stream of ectodermal, muscle, mesenchyme, endothelial, liver, pancreatic, and many other types of cells’ (Lewis, 1922). Yet, it is not enough just to stick. Cells care about their neighbors, and arrange themselves into elaborate patterns as they assemble complex organs like the brain. Although it is important to note that CAMs also play major roles in signaling, our work points to the possibility that differential adhesion between cells might contribute to the emergence of biological order. In this model, the arrangement of cells in a tissue is optimized for adhesive strength between them – cells would thermodynamically ‘fold’ into their final arrangement in a manner comparable to protein folding. Importantly, if a single adhesion molecule is absent or misexpressed, the system would reorder itself to maximize adhesion, thus producing a new stable order.
 
@@ -146,33 +332,33 @@ Evolutionarily, this ‘optimize adhesion’ rule provides a general strategy to
 
 ## Materials and methods
 
-## Strains and maintenance
+### Strains and maintenance
 
 Strains were constructed in the N2 background and cultured under standard conditions (Brenner, 1974; Stiernagle, 2006). In addition to the wild-type strain N2, the transgenes and strains used in this study are described in Supplementary files 1–3. Unless otherwise specified, all animals were imaged in the L4 stage, corresponding with ~48 hr after bleach synchronization (see ‘Time point analyses’ below).
 
-## cdh-4 strain construction
+### cdh-4 strain construction
 
 To examine dendrite order in cdh-4 mutant animals, we crossed cdh-4(rh310) animals into a strain expressing a three-neuron marker (CHB2646). Because cdh-4 is located on the same chromosome as one of our integrated fluorescent markers (hmnIs23, AWA:YFP), we created a strain (CHB2770) carrying AWA:YFP on an extrachromosomal array (hmnEx1486) and crossed that array into a strain containing hmnIs17 (AFD:CFP, ASE:mCherry) for all cdh-4 analyses. For the permutation test comparing cdh-4 to wild-type dendrite order, we used CHB2646 instead of CHB1963 as the wild-type control.
 
-## Time point analyses
+### Time point analyses
 
 Animals were bleach-synchronized (20% bleach, 250 mM NaOH in dH2O for 5 min, then hatched overnight in M9 medium), plated onto agar plates containing food, and cultured under standard conditions. We imaged animals at three different time points: second larval stage (L2 stage; 24 hr after plating), fourth larval stage (L4 stage; 48 hr after plating), and 1 day adult (72 hr after plating).
 
-## Microscopy
+### Microscopy
 
 Image stacks were collected on a DeltaVision Core imaging system (Applied Precision) with a UApo 40×/1.35 NA oil-immersion objective (72 hr animals) or a PlanApo 60×/1.42 NA oil-immersion objective (24 hr and 48 hr animals) and a Photometrics CoolSnap HQ2 camera (Roper Scientific). Animals were mounted on an agarose pad with 20–40 mM sodium azide and imaged in yellow (excitation [EX] 513 nm/emission [EM] 559 nm), red (EX 575 nm/EM 632 nm), blue (EX 438 nm/EM 470 nm), and/or green (EX 475 nm/EM 525 nm) channels. To avoid possible complications due to left-right asymmetry, animals were selected for dendrite bundle imaging such that their right-hand side faced the coverslip and only this bundle was imaged.
 
 Deconvolution and analysis of images were performed with Softworx (Applied Precision) and ImageJ (NIH, Bethesda, MD). Maximum-intensity projections were obtained using contiguous optical sections.
 
-## Notes on image processing
+### Notes on image processing
 
 Projections were adjusted for brightness, contrast, and were pseudo-colored in Photoshop (Adobe). Merged color images were assembled using the Screen layer mode in Photoshop. Figures were assembled using Photoshop CS5.1 and Illustrator CS5.1.
 
-## Image analysis
+### Image analysis
 
 Image analysis for each animal was done in three parts. First, we imaged three amphid neurons using our three-neuron marker (ASE:mCherry, AWA:YFP, AFD:CFP). We then input this image stack into a custom-made Matlab script that detected the 3D coordinates of each dendrite and generated files containing the distances between each pair of dendrites (AWA-ASE, AWA-AFD, and AFD-ASE) at every point along the dendrite bundle (see Section I: generating 3D coordinates and pairwise distances). Second, we manually inspected and corrected the computer-generated dendrite traces (see Section II: manual inspection and selection of dendrite traces). Finally, we pooled animals belonging to the same population and wrote scripts in Python to generate figures to visualize the data as well as conduct statistical tests to compare populations (see Section III: data visualization, resampling methods, and statistical analysis). Scripts for all the analysis in this paper are available for download at http://github.com/zcandiceyip/dendrite_fasciculation (Yip, 2018; copy archived at https://github.com/elifesciences/dendrite_fasciculation).
 
-## Section I: Generating 3d coordinates and pairwise distances
+#### Section I: Generating 3d coordinates and pairwise distances
 
 The first step in our image-processing pipeline was to obtain 3D coordinates for the ASE, AWA, and AFD dendrites in each animal. To do this, we wrote a script in Matlab that takes an image stack containing three amphid dendrites imaged in three different channels as input and returns several files. One file contains pairwise distances between the three dendrites along the length of the dendrite bundle starting at the dendrite tip. Another set of files contains the digitized dendrite traces superimposed on maximum-intensity projections for manual inspection of the trace accuracy. First, we will describe how the pairwise distances between dendrites are generated.
 
@@ -182,7 +368,7 @@ After applying Dijkstra’s algorithm to obtain digital traces of the three amph
 
 These planes, or cross-sections, yield triangles where each vertex of the triangle is a point along one of the three dendrite traces and the sides of the triangle give the pairwise distances between amphid dendrites in a single cross-section. We then calculated each of these pairwise distances by finding the Euclidean distance between two vertices, and saved them in a comma-delimited (‘.csv’) spreadsheet. In addition, we obtained 2D projections of the computerized traces of each dendrite and superimposed them onto maximum-intensity projections of each image stack to manually confirm that the dendrite trace followed the actual dendrite in the image.
 
-## Section II: Manual inspection and selection of dendrite traces
+#### Section II: Manual inspection and selection of dendrite traces
 
 To confirm that the computer-generated dendrite traces and resulting pairwise distances for each animal were accurate, we manually inspected maximum-intensity projections of each image stack projected in XY- and YZ-planes and superimposed the computer-generated dendrite trace onto the projections. If the computer-generated dendrite trace did not follow the dendrite in the maximum-intensity projections, we excluded that animal in further analyses.
 
@@ -190,32 +376,32 @@ In general, the computer-generated dendrite traces followed the dendrites with h
 
 To correct for variations in animal size within a population, we measured the length of an anatomical feature of the head of each animal (distance from the anterior bulb of the pharynx to the nose tip) and used that distance to normalize the lengths of the dendrite traces. Because we are making point-by-point comparisons along the dendrite bundle across animals, we further segmented each dendrite bundle into 100 equally-sized bins and took the mean pairwise distance within each bin for further analysis. For example, if an animal had pairwise distance measurements for 200 positions along the dendrite bundle, then we would segment the bundle into 100 bins, with each bin containing pairwise distance measurements from two adjacent positions, and we would assign the mean of those two pairwise distance measurements to that bin. The purpose of binning is to normalize dendrite bundle positions relative to head size; thus, in each individual, bin 50 is at the same position relative to anatomical landmarks but at a different physical distance from the nose (in µm) depending on head size.
 
-## Section III: Data visualization, resampling methods, and statistical analysis
+#### Section III: Data visualization, resampling methods, and statistical analysis
 
-## Maximum pairwise distance plots and defasciculation
+##### Maximum pairwise distance plots and defasciculation
 
 For each animal, we plotted the maximum pairwise distance (bundle width) at each position along the dendrite bundle. We defined a dendrite bundle to be defasciculated by comparing its bundle width at each position to the distribution of bundle widths observed at that position in age-matched wild-type animals. If the bundle width exceeded the wild-type average by more than 3.5 standard deviations for at least 10 consecutive positions, then that bundle was considered defasciculated. For reference, in a normally distributed dataset, approximately 1 in 2000 data points exceeds the mean by at least 3.5 standard deviations, and our bundle width dataset consists of 526 dendrite bundles with their widths measured at 100 positions each (52,600 data points). Independently, each bundle was also inspected visually and subjectively classified as fasciculated or defaciculated; these manual calls differed from the automated classification in <10% of cases (46 of 526 bundles). Animals with defasciculated dendrite bundles are overlaid in pink on the bundle width plots and were excluded from further dendrite order analysis.
 
-## Population plots and summary plots
+##### Population plots and summary plots
 
 Each column in the population plot represents the middle dendrite (ASE in red, AWA in yellow, AFD in blue) at each of the 100 bins of the bundle of a single animal. To create summary plots, we calculated and plotted three fractions – the counts of ASE, AFD, and AWA as a fraction of the total for each bin along the dendrite bundle. For populations with ordered dendrite bundles, one of those three fractions should be close to 1 while the other two fractions should be close to 0, whereas populations with highly disordered bundles have all three fractions closer to 0.33.
 
-## Statistical analyses
+### Statistical analyses
 
-We used two approaches to test whether the dendrite order for a population is significantly different from random. First, we used a chi-squared test to test for the independence of two populations (genotype vs. random). We chose the chi-squared test because our data is categorical (at each position, the middle dendrite is either AWA, ASE, or AFD) and, for our typical sample sizes (~20), counts of >5 are expected in each category for a random distribution. We calculated the chi-squared values (chi-squared test statistic: ∑(observed−expected)2expected) and associated p-values at each point along the dendrite bundle, where the observed values are the middle dendrite counts of ASE, AWA, and AFD for a given genotype and the expected values are n/3, where n is the number of dendrite bundles analyzed for the given genotype. For example, if n = 21 then we would expect a random distribution to yield 7 counts each of ASE in the middle, AWA in the middle, and AFD in the middle, and these would be compared to our observed values using the formula above.
+We used two approaches to test whether the dendrite order for a population is significantly different from random. First, we used a chi-squared test to test for the independence of two populations (genotype vs. random). We chose the chi-squared test because our data is categorical (at each position, the middle dendrite is either AWA, ASE, or AFD) and, for our typical sample sizes (~20), counts of >5 are expected in each category for a random distribution. We calculated the chi-squared values (chi-squared test statistic: $\sum\frac{(observed−expected)^{2}}{expected}$) and associated p-values at each point along the dendrite bundle, where the observed values are the middle dendrite counts of ASE, AWA, and AFD for a given genotype and the expected values are n/3, where n is the number of dendrite bundles analyzed for the given genotype. For example, if n = 21 then we would expect a random distribution to yield 7 counts each of ASE in the middle, AWA in the middle, and AFD in the middle, and these would be compared to our observed values using the formula above.
 
 When comparing a mutant genotype to wild type, we could not use the chi-squared test because the expected value at some positions would be <5 (for example, at the nose tip in 48h L4 animals, both ASE and AWA values are zero, leading to a division by zero error when attempting to use the chi-squared formula; the chi-squared test is also not suitable for comparisons where expected values are <5 in any category). Therefore, we adopted a second approach based on a permutation test using Fisher’s exact test (3 × 2) as the test statistic. In this case, the null hypothesis is that the two populations (for example, mutant genotype vs. wild type) are drawn from the same distribution and differ only by sampling error. We first calculated a nominal p-value at each position along the bundle by comparing the counts of AWA, ASE, and AFD of each population using Fisher’s exact test. Then, for 500 iterations, we merged the two populations of middle dendrite values, randomly split the mixed populations into two equally-sized groups, and calculated p-values comparing these resampled mock populations to each other using Fisher’s exact test. This approach yields 501 p-values (1 true p-value+500 p-values from resampling) for each point along the length of the dendrite bundle. Finally, we determined the percentile rank of the true p-value and plotted that rank using a red log-scale color bar. Darker reds on the color bar indicate that the true p-value is much lower than would be expected if the samples were drawn from the same population; that is, the populations are more different than one would expect from sampling error alone.
 
 We also used this approach to compare each genotype to a random population (Figures 2–6, Figure 2—figure supplement 1, Figure 4—figure supplement 1, Figure 5—figure supplements 1–2 blue bars). In all figures, rather than presenting a mixture of chi-squared and permutation tests, permutation test results are shown for comparison to random (Figures 2–6, Figure 2—figure supplement 1, Figure 4—figure supplement 1, Figure 5—figure supplements 1–2 blue bars) and comparison to wild type (Figures 3–6, Figure 4—figure supplement 1, Figure 5—figure supplements 1–2, red bars). A comparison of chi-squared and permutation tests is shown in Figure 2—figure supplement 1B (green vs. blue bars respectively).
 
-## Switch point swarmplot
+### Switch point swarmplot
 
 To create this swarmplot (Figure 2—figure supplement 1F), we measured three different lengths in wild-type L4 animals. First, we measured the distance from the switch point to the nose tip. To do this, we defined the switch point to be the point where the middle dendrite changes from one dendrite to another for more than one bin (for definition of a bin, see Section II under ‘Image analysis’ methods section). Second, we measured the distance from the nose tip to the dendrite tip of AUA. Finally, we measured the length of the amphid socket that is fasciculated with the amphid; we used the amphid dendrite AFD (blue) as a proxy for the amphid bundle. We created the figure using the swarmplot function in the Python Seaborn package. To determine the difference between populations, we used a two-sample Kolmogorov-Smirnov test because the measurements for the switch point were not normally distributed.
 
-## Candidate screen of cell adhesion molecules
+### Candidate screen of cell adhesion molecules
 
 For each mutant, we used DiO (Sigma, D4292) to dye-fill six amphid neurons and scored 50 L4 animals for amphid defasciculation phenotypes using a fluorescence dissecting microscope (Altun et al., 2002).
 
-## Expression pattern analysis
+### Expression pattern analysis
 
 To determine the identity of the amphid neurons that express sax-7 or ptp-3 we used DiI (Sigma, 468495) to dye-fill L1 animals expressing a nuclear-localized mCherry (NLS-mCherry-NLS) under the control of sax-7 or ptp-3 promoters (CHB1687 and CHB1840 respectively, see Supp. File 1). We then collected image stacks for these animals in the red and green channels as L1-stage animals as well as positions of all nuclei, visualized using Nomarski optics. Because the identity and positions of the dye-filled amphid neuron cell bodies are known for L1 animals (Sulston et al., 1983), we used the position of the dye-filled amphid cell bodies to infer the identity of the other amphid neurons based on their relative nuclei positioning.

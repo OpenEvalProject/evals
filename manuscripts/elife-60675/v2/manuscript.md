@@ -195,7 +195,7 @@ Alongside routine SARS-CoV-2 PCR testing of symptomatic staff, Oxford University
 
 ## Results
 
-## Oxford University Hospitals Covid-19 context
+### Oxford University Hospitals Covid-19 context
 
 From mid-March 2020 OUH saw daily admissions of patients with Covid-19. By 8th June, 636 patients had been admitted within a week of a confirmed Covid-19 diagnosis. Weekly incidence of new Covid-19 diagnoses in these patients peaked during the week beginning 30th March (n = 136/week, Figure 1A). Routine SARS-CoV-2 PCR testing of symptomatic staff (with fever or new persistent cough) began on 27th March; weekly incidence of new staff diagnoses peaked the week beginning 6th April (n = 98/week, Figure 1B). Up to and including the 8th June, 348/1498 (23%) symptomatic staff tested were PCR-positive (2.5% of all 13,800 staff employed at OUH). Ten staff were admitted to hospital with Covid-19 (0.07%); four died (0.03%).
 
@@ -203,11 +203,11 @@ From mid-March 2020 OUH saw daily admissions of patients with Covid-19. By 8th J
 
 **Figure 1.:** Each patient admitted to hospital with a diagnosis of Covid-19 within ±7 days of any day during their admission is plotted based on the date of their positive PCR test. Testing for symptomatic staff was made available from 27th March 2020; staff were asked to attend on days 2–4 of symptoms and are plotted in the week of their positive test. Of 1128 staff positive by PCR or serology at the asymptomatic staff clinic, 192 had been previously diagnosed at the symptomatic staff clinic. Of the remaining 936 positive staff, 449 (48%) reported a date when they believed a Covid-19 illness had begun, these are plotted in yellow above, many with symptoms before the availability of staff testing. As 487 (52%) of staff did not provide a date of symptom onset the true values for the yellow bars on the y-axis are likely to be around two times higher. Panel C shows the week asymptomatic staff were tested, those testing SARS-CoV-2 PCR-positive and/or IgG-positive are shown in black and those with negative tests in grey. The overall percentage of staff tested each week with positive PCR and/or antibody results is shown above each bar. The bar for 01 June also includes 31 staff tested on 08 June.
 
-## Asymptomatic staff testing
+### Asymptomatic staff testing
 
 A voluntary asymptomatic screening programme offering SARS-CoV-2 PCR and antibody testing to all staff working anywhere on site commenced on 23rd April 2020. Between 23rd April and 8th June, 10,610 of the 13,800 (77%) staff employed by OUH registered for asymptomatic testing and 10,034 (73%) were tested at least once, 9926 by PCR and 9958 by serology. The majority of testing was undertaken in the first three weeks of May 2020 (Figure 1C). 288/9926 (2.9%) staff were PCR-positive on their first asymptomatic screen; 145 were permitted to remain at work: 61 (21%) had tested PCR-positive >7 days previously while symptomatic and had since recovered and 84 (29%) had a history suggestive of previous Covid-19 (in most, prior to the availability of symptomatic staff testing). The remainder, 130/288 (45%), were assessed to have a new infection and self-isolated. Documentation was incomplete for six staff and seven could not be contacted.
 
-## Duration of PCR positivity
+### Duration of PCR positivity
 
 Having observed asymptomatic staff who were PCR-positive following symptomatic recovery, we investigated the duration of PCR positivity using data from staff and patients with consecutive tests. Repeat testing of patients was guided by individual clinician request, in conjunction with the infection consult service. Repeat testing of staff was available in those attending asymptomatic screening who had previously been tested by the symptomatic testing service and was also undertaken up to weekly in the cohort of staff who attended the asymptomatic testing service during the first week of testing. Fewer staff than patients were persistently positive at 7–13 days (exact p=0.003), but results were similar by 14–20 days, 68/159 (43% [95% CI 35–51%]) overall. 34/141 (24% [17–32%]) samples taken after ≥42 days were positive (Figure 2).
 
@@ -215,15 +215,244 @@ Having observed asymptomatic staff who were PCR-positive following symptomatic r
 
 **Figure 2.:** Panel A shows pooled data and Panel B data separately for staff and patients. The number of individuals with a repeat test in each time interval is shown below each bar and 95% exact binomial confidence intervals are plotted. All tests following a first positive sample are included up until the first negative sample per patient. The number of tests positive after a repeat swab on the same day is indicative of the sensitivity of a single swab, 15/16 of these swabs were obtained from patients on wards by any available staff member, whereas staff sampling was undertaken by specially trained teams.
 
-## Combined serology and PCR results in asymptomatic staff
+### Combined serology and PCR results in asymptomatic staff
 
 Considering the first asymptomatic clinic PCR and serology samples from each staff member, 1128/10,034 (11.2%) staff attending for asymptomatic screening were positive by PCR or serology, indicating a composite primary outcome of ‘Covid-19 at some time’, including 192 previously diagnosed via symptomatic staff testing. 1069/9958 (10.7%) staff with an immunoassay result were IgG-positive (see Supplementary file 1A for a comparison of results by the two assays). In staff providing questionnaire data prior to asymptomatic testing, 552/1126 (49.0%) staff subsequently testing positive thought they had already had Covid-19, compared to 1106/8906 (12.4%) testing negative.
 
-## Symptoms predictive of Covid-19
+### Symptoms predictive of Covid-19
 
 We asked all staff attending asymptomatic screening about possible Covid-19-related symptoms since 1st February 2020 (Table 1). In a multivariable model containing all symptoms, anosmia or loss of taste was most strongly predictive of Covid-19 (aOR 17.7 [95%CI 14.1–22.2], p<0.001). Other independent predictors included myalgia, fever and cough. Adjusting for other symptoms, sore throat was a negative predictor for Covid-19.
 
-## Risk factors for Covid-19 in healthcare workers
+**Table 1.**
+ Association of self-reported symptoms and Covid-19 in hospital staff.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Symptom</th>
+      <th colspan="4">Symptom reported</th>
+      <th colspan="4">Symptom not reported</th>
+      <th colspan="2">Univariable</th>
+      <th colspan="2">Multivariable</th>
+    </tr>
+    <tr>
+      <th>n</th>
+      <th>Covid-19 positive</th>
+      <th>Covid-19 negative</th>
+      <th>% positive</th>
+      <th>N</th>
+      <th>Covid-19 positive</th>
+      <th>Covid-19 negative</th>
+      <th>% positive</th>
+      <th>Or (95% CI)</th>
+      <th>P value</th>
+      <th>Or (95% CI)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anosmia or loss of taste</td>
+      <td>858</td>
+      <td>489</td>
+      <td>369</td>
+      <td>57.0</td>
+      <td>9174</td>
+      <td>637</td>
+      <td>8537</td>
+      <td>6.9</td>
+      <td>17.7 (15.1–20.8)</td>
+      <td>&lt;0.001</td>
+      <td>17.7 (14.1–22.2)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Myalgia</td>
+      <td>1796</td>
+      <td>501</td>
+      <td>1295</td>
+      <td>27.9</td>
+      <td>8236</td>
+      <td>625</td>
+      <td>7611</td>
+      <td>7.6</td>
+      <td>4.7 (4.1–5.4)</td>
+      <td>&lt;0.001</td>
+      <td>2.1 (1.7–2.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Fever</td>
+      <td>1465</td>
+      <td>406</td>
+      <td>1059</td>
+      <td>27.7</td>
+      <td>8567</td>
+      <td>720</td>
+      <td>7847</td>
+      <td>8.4</td>
+      <td>4.2 (3.6–4.8)</td>
+      <td>&lt;0.001</td>
+      <td>1.5 (1.2–1.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Nausea or vomiting</td>
+      <td>417</td>
+      <td>130</td>
+      <td>287</td>
+      <td>31.2</td>
+      <td>9615</td>
+      <td>996</td>
+      <td>8619</td>
+      <td>10.4</td>
+      <td>3.9 (3.1–4.9)</td>
+      <td>&lt;0.001</td>
+      <td>1.2 (0.9–1.6)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Fatigue</td>
+      <td>2718</td>
+      <td>591</td>
+      <td>2127</td>
+      <td>21.7</td>
+      <td>7314</td>
+      <td>535</td>
+      <td>6779</td>
+      <td>7.3</td>
+      <td>3.5 (3.1–4)</td>
+      <td>&lt;0.001</td>
+      <td>1.0 (0.8–1.2)</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>Cough</td>
+      <td>1813</td>
+      <td>403</td>
+      <td>1410</td>
+      <td>22.2</td>
+      <td>8219</td>
+      <td>723</td>
+      <td>7496</td>
+      <td>8.8</td>
+      <td>3 (2.6–3.4)</td>
+      <td>&lt;0.001</td>
+      <td>1.2 (1.0–1.5)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Shortness of breath</td>
+      <td>1022</td>
+      <td>245</td>
+      <td>777</td>
+      <td>24.0</td>
+      <td>9010</td>
+      <td>881</td>
+      <td>8129</td>
+      <td>9.8</td>
+      <td>2.9 (2.5–3.4)</td>
+      <td>&lt;0.001</td>
+      <td>1.2 (0.9–1.5)</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Diarrhoea</td>
+      <td>607</td>
+      <td>147</td>
+      <td>460</td>
+      <td>24.2</td>
+      <td>9425</td>
+      <td>979</td>
+      <td>8446</td>
+      <td>10.4</td>
+      <td>2.8 (2.2–3.4)</td>
+      <td>&lt;0.001</td>
+      <td>1.1 (0.9–1.5)</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Hoarseness</td>
+      <td>645</td>
+      <td>136</td>
+      <td>509</td>
+      <td>21.1</td>
+      <td>9387</td>
+      <td>990</td>
+      <td>8397</td>
+      <td>10.5</td>
+      <td>2.3 (1.8–2.8)</td>
+      <td>&lt;0.001</td>
+      <td>1.2 (0.9–1.7)</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Nasal congestion</td>
+      <td>1871</td>
+      <td>355</td>
+      <td>1516</td>
+      <td>19.0</td>
+      <td>8161</td>
+      <td>771</td>
+      <td>7390</td>
+      <td>9.4</td>
+      <td>2.2 (2–2.6)</td>
+      <td>&lt;0.001</td>
+      <td>1.0 (0.8–1.2)</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Sore throat</td>
+      <td>2248</td>
+      <td>356</td>
+      <td>1892</td>
+      <td>15.8</td>
+      <td>7784</td>
+      <td>770</td>
+      <td>7014</td>
+      <td>9.9</td>
+      <td>1.7 (1.5–2)</td>
+      <td>&lt;0.001</td>
+      <td>0.6 (0.5–0.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>*Hoarseness + Anosmia or loss of taste</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.5 (0.3–0.8)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>*Shortness of breath + Anosmia or loss of taste</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.5 (0.3–0.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All interactions with an interaction Wald p values < 0.01 are shown._
+
+### Risk factors for Covid-19 in healthcare workers
 
 We used pre-test questionnaire data provided by 10,032 asymptomatic staff to estimate risk factors for Covid-19 (two staff tested did not provide questionnaire data). Staff diagnosed via the symptomatic testing clinic alone were not included as no detailed questionnaire data were collected from these staff. However, the 192/348 (55%) staff diagnosed by the symptomatic testing service who subsequently attended the asymptomatic clinic were included.
 
@@ -255,7 +484,7 @@ There was limited evidence that male staff were more at risk of infection than f
 
 **Figure 7.:** The number of staff tested within each group is shown within each bar. The error bar indicates the 95% confidence interval.
 
-## Risk factors: multivariable analysis
+### Risk factors: multivariable analysis
 
 In multivariable analysis (Figure 3B, Supplementary file 1B), controlling for factors including hospital-based Covid-19 exposure, role, specialty and ethnicity, household contact with known (adjusted OR [aOR] 4.82, 95% CI 3.45–6.72, p<0.001) or suspected (1.75, 1.37–2.24, p<0.001) cases remained important risk factors. Working in Covid-19 facing areas (2.47, 1.99–3.08, p<0.001) or throughout the hospital (1.39, 1.04–1.85, p=0.02) was associated with increased risk compared to non-Covid-19 areas, as was workplace-based exposure to a suspected or known Covid-19-positive patient without PPE (1.44, 1.24–1.67, p<0.001). The latter could not be entirely accounted for by recall-bias as the association persisted restricting to staff who did not think they had had Covid-19 (1.30, 1.06–1.59, p=0.01).
 
@@ -263,7 +492,7 @@ Risk of Covid-19 infection varied by speciality, even after accounting for worki
 
 Risk factors for presence of SARS-CoV-2 IgG antibodies were very similar to the main model with a composite point including PCR results. The same factors were selected in the multivariable model (Supplementary file 1C), with the addition of gender: male healthcare workers had increased risk of SARS-CoV-2 seropositivity (aOR 1.19, 95% CI 1.01–1.40, p=0.03).
 
-## Heterogeneity in risk of Covid-19 in healthcare workers between hospitals and wards
+### Heterogeneity in risk of Covid-19 in healthcare workers between hospitals and wards
 
 We investigated the relationship between infectious pressure from patients and the proportion of staff infected by considering each admitted patient infectious from −2 to +7 days around their first positive SARS-CoV-2 PCR. At a hospital building level (Figure 8A), the two buildings admitting most patients with Covid-19 had higher levels of staff infection (14.1%, 15.3%) than the majority of other buildings (5.4–8.6%). However, one site with low rates of patient infection and another, non-clinical site without patients had rates of 13.5% and 19.7% respectively. At a ward level (Figure 8B), there was only a weak positive correlation between Covid-19 pressure from patients and staff infection rates (R2 = 0.09, p=0.02). ICUs and the HDU had lower rates of staff infection for a given Covid-19 pressure than general Covid-19 facing wards (adjusted linear regression coefficient −29% [95% CI −46%, −12%; p=0.002]). While dedicated Covid-19 cohort wards had similar rates of staff Covid-19 to general wards overall (Supplementary file 1D), several general wards had much higher rates (Figure 8B).
 
@@ -271,7 +500,7 @@ We investigated the relationship between infectious pressure from patients and t
 
 **Figure 8.:** Covid-19 infectious pressure was calculated by considering each patient infectious from −2 to +7 days around the date of their first positive SARS-CoV-2 PCR test. Only staff working in a single hospital or ward are included in the plot. Wards with fewer than 10 staff tested are not plotted. Covid-19 cohort wards admitted only patients with suspected or known Covid-19, whereas Covid-19 general wards were acute medical wards receiving new admissions and acute medical patients initially believed not to have Covid-19. Non Covid-19 areas did not admit suspected Covid-19 patients and any suspected or confirmed Covid-19 patients were transferred off these wards as soon as possible.
 
-## Contact tracing
+### Contact tracing
 
 PCR-positive asymptomatic staff who had not previously had Covid-19 were asked to name all colleagues with whom they had had >5 min of face-to-face conversation or been within 2 m for >15 min, within the past 48 hr, without a face mask. During the first 2 weeks of asymptomatic screening, 130 contacts were tested 7 days after contact with their index case, and 62 re-attended at day 14. Only one contact tested positive. As this rate of detection was below the background rate, contact tracing was discontinued for asymptomatic staff.
 
@@ -282,6 +511,62 @@ We present the results of a large and comprehensive Covid-19 staff testing progr
 We observed varying risk to our hospital staff associated with working location, occupational role and demographic factors. The greatest risk was associated with Covid-19 infected household contacts (although only 38.5% of staff with a contact became infected) and with working in Covid-19-facing areas (22.6% vs. 8.6% elsewhere) where there was one additional SARS-CoV-2 infection per ~7 staff compared to elsewhere. On univariable analysis staff with most direct patient contact were at increased risk including porters, cleaners, nurses, healthcare-assistants, therapists and junior doctors. Adjusting for working in a Covid-19 area captured much of this risk, except for porters and cleaners who had the highest adjusted risk of any staff group, and who typically operate across the hospital.
 
 A heterogenous pattern also emerged across different Covid-19-facing areas. Risk seen on acute medical wards was greater than in the emergency department which was often bypassed by Covid-19 patients, whilst working on a Covid-19 facing ICU was relatively protective. One key difference across these areas was the type of PPE worn and the time periods over which it was mandated. Level-2 PPE (full length gown, gloves, correctly fitted FFP3/N99 mask and full face visor) was mandatory on ICU and HDU throughout, whereas policies changed over time on other wards (Table 2). Moreover, staff on ICU and HDU received extensive training in donning and doffing and had dedicated space and supervision for this whereas ward staff did not. Prior to 1st April 2020, in line with national guidance, in acute medical areas outside of Covid-19 cohort wards level-1 PPE (fluid resistant surgical mask, gloves, apron and optional eye protection) was only worn for contact with patients with known or suspected Covid-19, potentially leading to unprotected exposure to patients in whom Covid-19 was not suspected, such as afebrile elderly patients with delirium, functional decline or diarrhoea. This likely explains the greater number of staff infected in several acute medical wards (shown in green near the top of Figure 8B), compared to Covid-19 cohort wards (shown in red).
+
+**Table 2.**
+ Local recommendations for PPE and testing, based on contemporaneous national Public Health England guidance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PPE</th>
+      <th>Testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Until 25th February 2020</td>
+      <td>Full length gown, gloves, correctly fitted FFP3 mask and full face visor (level-2 PPE) Side room isolation</td>
+      <td>Clinical syndrome with relevant travel history</td>
+    </tr>
+    <tr>
+      <td>25th February</td>
+      <td>As above for suspected cases with travel history For severe community acquired pneumonia without travel history: gown/apron, gloves, and fluid repellent mask (FFP3 for aerosol generating procedures); no need to isolate pending test</td>
+      <td>Clinical syndrome with relevant travel history Severe community acquired pneumonia</td>
+    </tr>
+    <tr>
+      <td>8th March</td>
+      <td>Fluid resistant surgical masks, gloves, apron and optional eye protection for symptomatic but unconfirmed inpatients (level-1 PPE). Eye protection to be worn if risk of eye contamination. Full level-2 PPE for confirmed cases and Aerosol Generating Procedures (AGPs).</td>
+      <td>Clinical syndrome with relevant travel history Severe community acquired pneumonia</td>
+    </tr>
+    <tr>
+      <td>13th March</td>
+      <td>Fluid resistant surgical masks, gloves, apron and risk assessment for eye protection for suspected and confirmed Covid-19 inpatients (level-1 PPE) Surgical masks on entry to Covid-19 cohort wards Apron, gloves and FFP3 mask on intensive care FFP3 mask, disposable gown, eye protection and gloves for AGPs</td>
+      <td>Any respiratory illness requiring admission to hospital and either radiological evidence of pneumonia or ARDS or influenza-like illness with fever &gt; 37.8C</td>
+    </tr>
+    <tr>
+      <td>14-16th March</td>
+      <td>As above All suspected Covid-19 patients admitted directly via acute medicine (bypassing the emergency department)</td>
+      <td>Any influenza like illness</td>
+    </tr>
+    <tr>
+      <td>1st April</td>
+      <td>Universal minimum level-1 PPE across all wards Level-2 PPE for AGPs as above</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6th April</td>
+      <td>AGPs: gloves, disposable gown, FFP3 mask, eye protection Working in higher risk area (ICU/High Dependency Unit) with confirmed cases: gloves, apron, gown, FFP3 mask and eye protection Level-1 PPE elsewhere</td>
+      <td>Diagnosis based on either positive swab or ‘Covid-19 syndrome’ (influenza like illness and compatible radiology and no alternative explanation)</td>
+    </tr>
+    <tr>
+      <td>24th April</td>
+      <td></td>
+      <td>Universal admission testing for all patients irrespective of clinical syndrome</td>
+    </tr>
+  </tbody>
+</table>
 
 The reported rates of exposure without PPE were similar among medical and ICU staff (42% and 38%, Supplementary file 1E), likely reflecting exposures to ICU staff visiting wards to assess critically ill patients. Universal admission testing was only introduced on 24th April 2020, and the limited availability and speed of testing in the early phase of the pandemic likely delayed identification of some Covid-19 cases.
 
@@ -307,7 +592,7 @@ Our study suggests that an earlier move to universal level-1 PPE may have preven
 
 ## Materials and methods
 
-## Setting and data collection
+### Setting and data collection
 
 OUH spans four teaching hospitals with 1000 beds and 13,800 staff, serving a population of 680,000 and acting as a regional referral centre. The first patients with Covid-19 were admitted to OUH in mid-March 2020. SARS-CoV-2 testing, initially reserved for inpatients, was extended to symptomatic staff and staff household contacts with fever (≥37.8°C) or new-onset cough from 27th March. Testing for symptomatic staff and symptomatic staff household contacts was offered by the hospital’s Occupational Health department between days 2 and 4 of symptoms, only PCR results from staff are presented. Staff awaiting a test or test result were asked to self-isolate at home. From 18th May 2020 onwards, testing criteria were expanded to include staff with new onset anosmia. In line with national guidance, staff without these specific symptoms (fever, cough, anosmia) were considered unlikely to have Covid-19 and permitted to remain at work.
 
@@ -315,17 +600,17 @@ A voluntary asymptomatic screening programme for all staff working anywhere on s
 
 Automated reporting of results was followed-up with a phone call for positive PCR results to distinguish contemporaneous from previous infection (>7 days ago). The former were asked to self-isolate for seven days, and their household contacts for 14 days.
 
-## Infection control
+### Infection control
 
 From 1st February 2020, ‘level-2 PPE’ (full length gown, gloves, correctly fitted FFP3/N99 mask and full face visor) was mandated for any contact with a confirmed or suspected case. From 8th March this was downgraded to ‘level-1 PPE’ (fluid resistant surgical mask, gloves, apron and optional eye protection), except for aerosol generating procedures.(Aerosol Generating Procedures, 2020) From 1st April a minimum of level-1 PPE was mandated for all patient care, regardless of Covid-19 status (Table 2).
 
-## Laboratory assays
+### Laboratory assays
 
 RT-PCR was performed at OUH using the PHE SARS-CoV-2 assay (targeting the RdRp gene), or one of two commercial assays: Abbott RealTime (targeting RdRp and N genes; Abbott, Maidenhead, UK), Altona RealStar (targeting E and S genes; Altona Diagnostics, Liverpool, UK), or using the ABI 7500 platform (Thermo Fisher, Abingdon, UK) with the US Centers for Disease Control and Prevention Diagnostic Panel of two probes targeting the N gene. Samples from 2 days of testing were processed by the UK Lighthouse Labs network (Milton Keynes) using the Thermo Fisher TaqPath assay (targeting S and N genes, and ORF1ab; Thermo Fisher, Abingdon, UK).
 
 Serological investigations were performed by chemiluminescent microparticle immunoassay (CMIA) for IgG to nucleocapsid protein on Abbott Architect (Abbott, Maidenhead, UK) with a manufacturer’s signal-to-cut-off index of 1.4, and an enzyme-linked immunosorbent assay (ELISA) platform developed at the Target Discovery Institute (University of Oxford) detecting IgG to trimeric spike antigen, using net-normalised signal cut-off of 8 million (The National SARS-CoV-2 Serology Assay Evaluation Group, 2020; Adams et al., 2020).
 
-## Statistical analysis
+### Statistical analysis
 
 Univariable and multivariable logistic regression was performed to assess risk factors for infection using a composite endpoint of ‘Covid-19 at any time’, based on a positive RT-PCR test or the detection of IgG by ELISA and/or CMIA. Natural cubic splines were used to account for non-linear relationships with continuous variables. Given the number of potential predictors fitted, backwards model selection was undertaken using AIC values. We screened for first-order interactions between main effects using a Wald p-value threshold of <0.01. We analysed risk factors for detection of SARS-CoV-2 IgG antibodies using the same approach.
 

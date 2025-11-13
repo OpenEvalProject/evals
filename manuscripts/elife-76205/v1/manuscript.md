@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02y3ad647 Division of Rheumatology, Allergy, & Clinical Immunology, University of Florida Gainesville United States
+1. Division of Rheumatology, Allergy, & Clinical Immunology, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
 
 † Corresponding author
 
 ## Abstract
 
-Pristane causes chronic peritoneal inflammation resulting in lupus, which in C57BL/6 mice is complicated by lung microvascular injury and diffuse alveolar hemorrhage (DAH). Mineral oil (MO) also causes inflammation, but not lupus or DAH. Since monocyte depletion prevents DAH, we examined the role of monocytes in the disease. Impaired bone marrow (BM) monocyte egress in Ccr2− /− mice abolished DAH, confirming the importance of monocyte recruitment to the lung. Circulating Ly6C hi monocytes from pristane-treated mice exhibited increased annexin-V staining in comparison with MO-treated controls without evidence of apoptosis, suggesting that pristane alters the distribution of phosphatidylserine in the plasma membrane before or shortly after monocyte egress from the BM. Plasma membrane asymmetry also was impaired in Nr4a1-regulated Ly6C lo/− ‘patrolling’ monocytes, which are derived from Ly6C hi precursors. Patrolling Ly6C lo/− monocytes normally promote endothelial repair, but their phenotype was altered in pristane-treated mice. In contrast to MO-treated controls, Nr4a1-regulated Ly6C lo/− monocytes from pristane-treated mice were CD138 + , expressed more TremL4, a protein that amplifies TLR7 signaling, and exuberantly produced TNFα in response to TLR7 stimulation. TremL4 expression on these novel CD138 + monocytes was regulated by Nr4a1. Thus, monocyte CD138, high TremL4 expression, and annexin-V staining may define an activated/inflammatory subtype of patrolling monocytes associated with DAH susceptibility. By altering monocyte development, pristane exposure may generate activated Ly6C hi and Ly6C lo/− monocytes, contributing to lung microvascular endothelial injury and DAH susceptibility.
+Pristane causes chronic peritoneal inflammation resulting in lupus, which in C57BL/6 mice is complicated by lung microvascular injury and diffuse alveolar hemorrhage (DAH). Mineral oil (MO) also causes inflammation, but not lupus or DAH. Since monocyte depletion prevents DAH, we examined the role of monocytes in the disease. Impaired bone marrow (BM) monocyte egress in Ccr2−/− mice abolished DAH, confirming the importance of monocyte recruitment to the lung. Circulating Ly6Chi monocytes from pristane-treated mice exhibited increased annexin-V staining in comparison with MO-treated controls without evidence of apoptosis, suggesting that pristane alters the distribution of phosphatidylserine in the plasma membrane before or shortly after monocyte egress from the BM. Plasma membrane asymmetry also was impaired in Nr4a1-regulated Ly6Clo/− ‘patrolling’ monocytes, which are derived from Ly6Chi precursors. Patrolling Ly6Clo/− monocytes normally promote endothelial repair, but their phenotype was altered in pristane-treated mice. In contrast to MO-treated controls, Nr4a1-regulated Ly6Clo/− monocytes from pristane-treated mice were CD138+, expressed more TremL4, a protein that amplifies TLR7 signaling, and exuberantly produced TNFα in response to TLR7 stimulation. TremL4 expression on these novel CD138+ monocytes was regulated by Nr4a1. Thus, monocyte CD138, high TremL4 expression, and annexin-V staining may define an activated/inflammatory subtype of patrolling monocytes associated with DAH susceptibility. By altering monocyte development, pristane exposure may generate activated Ly6Chi and Ly6Clo/− monocytes, contributing to lung microvascular endothelial injury and DAH susceptibility.
 
 ## Introduction
 
@@ -35,13 +35,13 @@ Peritoneal Ly6CloCD138+ and Ly6CloCD138− Mϕ both were Nr4a1 independent and C
 
 Although i.p. pristane injection induces lupus autoantibodies and renal disease in both B6 and BALB/c mice, only B6 mice develop DAH (Reeves et al., 2009). MO causes peritoneal inflammation in both strains, but lupus does not develop. Pristane-induced DAH is abolished by depleting monocytes and Mϕ with clodronate liposomes, whereas neutrophil depletion has little effect (Zhuang et al., 2017), suggesting that it is mediated at least partly by monocytes and/or Mϕ. There is little information about monocytes in pristane-treated mice and their relationship to disease pathogenesis. Pristane-induced Ly6Chi monocyte recruitment from the BM to the peritoneum is Ccr2 dependent (Lee et al., 2009). A population of highly phagocytic peritoneal Ly6C−CD138+ Mϕ with an anti-inflammatory phenotype is more abundant in MO- vs. pristane-treated mice, whereas Ly6ChiCD138− Mϕ are more abundant in pristane-treated mice (Han et al., 2017). We examined the origin of these peritoneal Ly6C−CD138+ Mϕ.
 
-## Circulating CD138+ monocytes
+### Circulating CD138+ monocytes
 
 Ly6Chi monocytes recruited to the inflamed peritoneum become Ly6Chi Mϕ, which subsequently can downregulate Ly6C and develop into Ly6C−/lo Mϕ (Lee et al., 2009). Ly6Chi monocytes also give rise to Ly6C−/lo monocytes in the circulation (Sunderkötter et al., 2004; Mildner et al., 2017), raising the question of whether peritoneal Ly6C−/loCD138+ Mϕ are derived from circulating Ly6C−/lo monocytes or from peritoneal Ly6Chi Mϕ. CD138+CD11b+ cells were found in the blood of both pristane- and MO-treated B6 mice at 14 days, but were considerably more abundant in pristane-treated mice (Figure 1A). In contrast, peritoneal CD138+CD11b+ Mϕ were more abundant in MO-treated mice than pristane-treated mice. BALB/c mice and B6 mice lacking B cells (μMT) do not develop pristane-induced DAH (Zhuang et al., 2017; Barker et al., 2011). Like MO-treated B6 mice, both B6 μMT and BALB/c mice generally had fewer circulating CD138+CD11b+ cells and more peritoneal CD138+CD11b+ Mϕ than wild-type B6 mice (Figure 1B). These observations suggested that circulating CD138+CD11b+ myeloid cells were recruited to the peritoneum and developed into CD138+CD11b+ Mϕ or alternatively, that CD138+CD11b+ Mϕ were generated locally in the peritoneum. As an initial step to distinguish between these possibilities, we carried out more extensive phenotyping of the circulating and peritoneal populations.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76205/elife-76205-fig1-v1.jpg)
 
-**Figure 1.:** +CD11b+ cells in the circulation and peritoneum.(A) B6 mice were injected with either pristane or mineral oil (MO). CD138 and CD11b surface expression on peripheral blood leukocytes and peritoneal exudate cells (PECs) was analyzed by flow cytometry at day 14. (B) Comparison of the percentages of CD138+ cells in blood and PECs from B6, B6 μMT (B cell deficient), and BALB/c mice. ***p < 0.001; ****p < 0.0001 (Student’s t-test).
+**Figure 1.:** (A) B6 mice were injected with either pristane or mineral oil (MO). CD138 and CD11b surface expression on peripheral blood leukocytes and peritoneal exudate cells (PECs) was analyzed by flow cytometry at day 14. (B) Comparison of the percentages of CD138+ cells in blood and PECs from B6, B6 μMT (B cell deficient), and BALB/c mice. ***p < 0.001; ****p < 0.0001 (Student’s t-test).
 
 Flow cytometry revealed three subsets of CD11b+Ly6G− cells from pristane-treated B6 mice in both the blood and the peritoneum (Figure 2A): CD11b+Ly6ChiCD138− (R1); CD11b+Ly6C−/loCD138− (R2); and CD11b+Ly6C−/loCD138+ (R3). Ly6C staining was higher on the peritoneal R2/R3 cells (Ly6Clo) vs. blood R2/R3 (Ly6C−) cells. In the blood of pristane-treated mice, all three subsets were CD43+ and TremL4+, consistent with a monocyte phenotype (Figure 2B,C). The blood R3 and R2 subsets expressed higher levels of CD43 and TremL4 than R1; R3 expressed higher levels than R2. In the blood CD115 was expressed at low levels, mainly on R3 cells (Figure 2D). Interestingly, CD43, TremL4, and CD115 were highly expressed by the peritoneal R3, and to a lesser extent R2, subsets from MO-treated, but not pristane-treated, mice (Figure 2B–D). As expected, surface staining for CD62L, which is expressed by Ly6Chi monocytes that have recently migrated out of the BM and not on Ly6Clo monocytes (Jakubzick et al., 2017), was stronger in R1 vs. R3 or R2 (Figure 2E). Expression was highest in the circulating R1 subset. As classical monocytes are CD115+Ly6C+CD43lo whereas non-classical monocytes are CD115+Ly6C−CD43hiTremL4+ (Jakubzick et al., 2017), we concluded that the circulating R1 cells were classical (Ly6Chi) monocytes and the circulating R2 and R3 cells were subsets of non-classical monocytes. Circulating R3 cells also were CX3CR1+CCR2− (Figure 2F,G).
 
@@ -51,7 +51,7 @@ Flow cytometry revealed three subsets of CD11b+Ly6G− cells from pristane-treat
 
 Murine non-classical monocytes differentiate in the circulation from Ly6Chi precursors, have a Ly6C−CD43+CX3CR1hi phenotype and may represent terminally differentiated blood-resident Mϕ rather than true monocytes (Ginhoux and Jung, 2014). Consistent with that possibility, circulating R3 monocytes from pristane-treated mice expressed higher levels of the Mϕ marker F4/80 than R1 or R2 monocytes (Figure 2H). However, another Mϕ marker (CD64, FcγR1a) was expressed at lower levels on R3 (and R2) vs. R1 (Figure 2I). Peritoneal R3 Mϕ stained more intensely for F4/80, CD64, CCR2, and CX3CR1 than circulating R3 monocytes, and with the exception of CX3CR1, exhibited stronger staining than peritoneal R2 Mϕ. Together the data suggest that blood of pristane-treated mice contains classical monocytes along with two subtypes of non-classical monocytes distinguished by the presence (R3) or absence (R2) of CD138 staining. Peritoneal Mϕ also consisted of R1, R2, and R3 populations. Circulating R3 cells had a phenotype compatible with that of ‘patrolling’ monocytes but also had higher F4/80 staining than circulating R1 or R2 cells, consistent with early Mϕ differentiation. To further characterize the origin of this unusual monocyte subset, we examined CD138 monocyte development in Ccr2−/− and Nr4a1−/− mice.
 
-## CD138+ monocytes in Ccr2−/− mice
+### CD138+ monocytes in Ccr2−/− mice
 
 Monocyte egress from the BM is defective in Ccr2-deficient mice (Serbina and Pamer, 2006) and Ccr2 is necessary for Ly6Chi monocytes to migrate to the peritoneum in pristane-treated mice (Lee et al., 2009). After Ly6Chi (R1) monocytes migrate to the peritoneum, they can downregulate Ly6C. It is not known whether both Ly6Clo peritoneal subsets (CD138+, R3 and CD138−, R2) are generated from Ly6Chi precursors or if the peritoneal R3 subset is derived from circulating CD138+ monocytes. Circulating Ly6Chi (R1) monocytes were strongly Ccr2+, whereas Ly6C−CD138− (R2) and Ly6C−CD138+ (R3) monocytes expressed low levels (Figure 2F). In contrast, Ccr2 was expressed by all peritoneal subsets in pristane-treated mice, most strongly by R3. Ccr2 also was expressed by R1, R2, and R3 from MO-treated mice, but at lower levels (Figure 2F). Staining of circulating monocytes for Cx3Cr1, which is expressed at high levels on Ly6C− monocytes but is involved in homing of both Ly6Chi and Ly6C− monocytes (Tacke et al., 2007; Landsman et al., 2009), was weak in pristane-treated mice, whereas peritoneal cells (both R2 and R3) expressed higher levels (Figure 2G). Expression was higher on peritoneal Mϕ from pristane- vs. MO-treated mice.
 
@@ -63,7 +63,7 @@ Circulating monocyte subsets varied with time after pristane treatment (Figure 3
 
 As expected, circulating R1 monocytes were greatly reduced (but not absent) in pristane-treated Ccr2−/− mice (Figure 3B). R3 monocytes also were greatly reduced in Ccr2−/− mice, suggesting that, like R1 monocytes, their migration from the BM to the circulation was Ccr2 dependent. In contrast to R1 and R3, the percentages of circulating R2 cells were similar in Ccr2−/− vs. wild-type mice. In PECs, R1 and R3 cells were absent and R2 cells were present at lower levels in Ccr2−/− mice vs. wild-type (Figure 3B). Thus, the egress of R1 (Ly6Chi) monocytes from the BM and the appearance of R3 (Ly6C−CD138+) monocytes in the circulation was Ccr2 dependent, whereas the circulating R2 monocyte subset (Ly6C−CD138−) was unaffected by the absence of Ccr2. R1 and R3 monocytes appeared in the circulation with different kinetics and all three peritoneal Mϕ subsets were reduced in Ccr2−/− mice, consistent with the possibility that they were derived from CCR2+ R1 monocytes.
 
-## Nr4a1−/− mice lack CD138+ monocytes but not CD138+ peritoneal Mϕ
+### Nr4a1−/− mice lack CD138+ monocytes but not CD138+ peritoneal Mϕ
 
 Nr4a1 (Nur77) controls the differentiation of Ly6C− monocytes (Hanna et al., 2011) and regulates inflammatory responses in Mϕ (Hanna et al., 2012). Peripheral blood cells and PECs from wild-type and Nr4a1−/− mice were analyzed by flow cytometry 14 days after pristane or MO treatment, gating on forward/side scatter and surface staining characteristics (Figure 4A). As expected (Han et al., 2017), most peritoneal CD11b+Ly6G− cells in MO-treated mice were Ly6Clo and many were CD138+ (Figure 4A). After pristane treatment, percentages of Ly6Chi (R1), Ly6CloCD138− (R2), and Ly6CloCD138+ (R3) peritoneal Mϕ were similar in Nr4a1−/− and wild-type mice (Figure 4A,B). In contrast, although the percentages of circulating R1 and R2 monocytes were similar, Nr4a1−/− mice had a markedly lower percentage of circulating CD138+ (R3) monocytes than wild-type mice (Figure 4C).
 
@@ -73,11 +73,11 @@ Nr4a1 (Nur77) controls the differentiation of Ly6C− monocytes (Hanna et al., 2
 
 Along with CD11b+Tim4+ resident (yolk sac-derived) ‘large peritoneal macrophages’ (LPMs) (Ghosn et al., 2010), the uninflamed peritoneum contains CD11b+Tim4−CD138+ cells, which are probably ‘small peritoneal macrophages’ (SPMs) (Ghosn et al., 2010). The percentages of resident LPM in untreated wild-type vs. Nr4a1−/− mice were similar, whereas the percentage was higher in Ccr2−/− mice (Figure 4D), probably reflecting the absence of BM-derived cells. The CD138+ SPM subset was increased in Nr4a1−/− mice vs. wild-type and Ccr2−/− mice, suggesting that they originated from circulating BM-derived (Nr4a1-independent) Ly6C+ monocytes rather than Nr4a1-dependent CD138+ monocytes.
 
-## Pristane-induced DAH is unaffected by the absence of Nr4a1
+### Pristane-induced DAH is unaffected by the absence of Nr4a1
 
 Induction of DAH by pristane requires monocytes and/or Mϕ (Zhuang et al., 2017). Pristane-treated Nr4a1−/− mice developed DAH at a frequency comparable to wild-type controls (Figure 4E), suggesting that circulating CD138+ (R3) monocytes were not essential for the induction of DAH or were only needed in small numbers. In contrast, DAH was abolished in Ccr2−/− mice suggesting that, as in the inflamed peritoneum, migration of Ly6Chi monocytes from the BM to the lung is involved in the pathogenesis of DAH.
 
-## Phenotypes of circulating Ly6Clo monocytes
+### Phenotypes of circulating Ly6Clo monocytes
 
 Although non-classical monocytes are characteristically Ly6C−, CD138 expression has not been reported. We carried out more extensive phenotyping to better define the unusual (CD138+) R3 subset. Gating on CD11b+Ly6G− (non-neutrophil) peripheral blood cells (mainly monocytes), R2 and R3 could be divided into Ly6Clo and Ly6C− subsets. Five groups of circulating myeloid (non-neutrophil) cells could be distinguished: Ly6ChiCD138− (R1), Ly6CloCD138− (R2A), Ly6C−CD138− (R2B), Ly6CloCD138+ (R3A), and Ly6C−CD138+ (R3B) (Figure 5A). All five subsets were present in pristane-treated B6 mice, whereas only R1, R2A, and R2B were present in phosphate-buffered saline (PBS)- or MO-treated mice. Pristane-treated Nr4a1−/− mice showed a pattern similar to that of MO-treated wild-type mice, though R3A and R3B cells were somewhat more abundant (Figure 5A). CD138 was not expressed on CD11b+Ly6G− cells from PBS- or MO-treated mice (Figure 5A), so Ly6C−/lo cells in pristane-treated mice consisted of R2A, R2B, R3A, and R3B, whereas those from PBS- or MO-treated mice were almost exclusively R2A and R2B (Figure 5B). Nr4a1−/− mice had low percentages of circulating CD138+ R3A and R3B monocytes vs. wild-type mice, but the percentages were higher than those in MO- or PBS-treated mice (Figure 5B, right).
 
@@ -93,17 +93,183 @@ Further characterization of circulating monocytes from pristane-treated mice rev
 
 **Figure 6.:** Circulating monocytes are gated as in Figure 5 and the staining intensity (MFI) of various markers was ascertained by flow cytometry. (A) CD62L, (B) Nr4a1, (C) Cx3Cr1, (D) LFA-1, and (E) CD11c. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 (Student’s t-test).
 
-## TLR7 ligand-stimulated TNFα production by Ly6C−CD138+ monocytes
+**Table 1.**
+ Phenotypes of monocyte subsets and pristane- and mineral oil-treated mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ly6C</th>
+      <th>CD138</th>
+      <th>CD11b</th>
+      <th>Nr4a1</th>
+      <th>CCR2</th>
+      <th>Cx3Cr1</th>
+      <th>CD62L</th>
+      <th>CD11c</th>
+      <th>LFA1</th>
+      <th>Treml4</th>
+      <th>TLR7</th>
+      <th>TNFa</th>
+      <th>CD43</th>
+      <th>CD115</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1 (P)*</td>
+      <td>++</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>R2A (P)</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>R2B (P)</td>
+      <td>(−)</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>R3A (P)</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>R3B (P)</td>
+      <td>(−)</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>++</td>
+      <td>(−)</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>R1 (MO)*</td>
+      <td>++</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>(−)</td>
+      <td>n.d.</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>R3A (MO)</td>
+      <td>+</td>
+      <td>(−)</td>
+      <td>++</td>
+      <td>++</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>R3B (MO)</td>
+      <td>(−)</td>
+      <td>(−)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.d.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*P, pristane; MO, mineral oil; n.d., not determined._
+
+### TLR7 ligand-stimulated TNFα production by Ly6C−CD138+ monocytes
 
 Phenotypic analysis suggested that the Ly6C−CD138+ subset may be a variant of patrolling monocytes, which encounter damaged endothelial cells respond to danger signals via TLR7 and then migrate into tissues where they undergo cMaf/MafB-regulated Mϕ differentiation and produce TNFα (Auffray et al., 2007; Ginhoux and Jung, 2014). Ly6C− cells are thought to promote focal endothelial necrosis followed by repair. We hypothesized that Ly6C−CD138+ monocytes might respond more aggressively to endothelial injury, potentially exacerbating damage rather than promoting resolution/repair. Along with their acquisition of the dendritic cell marker CD11c (Figure 6E), the R3A/R3B (and R6A/R6B) subsets from pristane-treated B6 mice expressed considerably higher levels of TLR7 than other circulating monocyte subsets (Figure 7A). These cells also expressed high levels of Treml4 (Figure 7B), a protein that amplifies TLR7 signaling (Ramirez-Ortiz et al., 2015). As shown in Figure 7C, TLR7 ligand (R848)-stimulated intracellular TNFα staining was comparable in R3 monocytes vs. ‘inflammatory’ Ly6Chi monocytes. Moreover, TNFα staining was significantly higher in Ly6C−CD138+ (R3) monocytes vs. Ly6C−CD138− (R2) monocytes (Figure 7C, right).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76205/elife-76205-fig7-v1.jpg)
 
-**Figure 7.:** + monocytes.Circulating monocytes from pristane-treated B6 mice were gated as in Figure 5 and the staining intensity (MFI) of TLR7 (A) and TremL4 (B) was ascertained by flow cytometry. (C) R848-stimulated TNFα production in R1, R2, and R3 monocytes from pristane-treated mice (14 days). Circulating leukocytes were incubated 5 hr with R848 or PBS and then surface stained with anti-CD11b, Ly6G, Ly6C, and CD138 antibodies and intracellularly stained with anti-TNFα. Left, histograms of intracellular TNFα staining (R1 and R3 subsets). Right, TNFα staining of blood cells cultured 5 hr with R848 or PBS. (D) Annexin-V staining (left, mean fluorescence intensity; right, representative histograms) of circulating CD11b+ monocyte subsets (Ly6ChiLy6G− and Ly6Clo/−Ly6G−) and CD11b+Ly6G+ neutrophils (Neut) from pristane- or mineral oil (MO)-treated mice cultured for 20 hr with R848 or PBS. Red arrows, annexin-Vhi apoptotic neutrophils. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 (Student’s t-test); ns, not significant.
+**Figure 7.:** Circulating monocytes from pristane-treated B6 mice were gated as in Figure 5 and the staining intensity (MFI) of TLR7 (A) and TremL4 (B) was ascertained by flow cytometry. (C) R848-stimulated TNFα production in R1, R2, and R3 monocytes from pristane-treated mice (14 days). Circulating leukocytes were incubated 5 hr with R848 or PBS and then surface stained with anti-CD11b, Ly6G, Ly6C, and CD138 antibodies and intracellularly stained with anti-TNFα. Left, histograms of intracellular TNFα staining (R1 and R3 subsets). Right, TNFα staining of blood cells cultured 5 hr with R848 or PBS. (D) Annexin-V staining (left, mean fluorescence intensity; right, representative histograms) of circulating CD11b+ monocyte subsets (Ly6ChiLy6G− and Ly6Clo/−Ly6G−) and CD11b+Ly6G+ neutrophils (Neut) from pristane- or mineral oil (MO)-treated mice cultured for 20 hr with R848 or PBS. Red arrows, annexin-Vhi apoptotic neutrophils. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 (Student’s t-test); ns, not significant.
 
 To investigate whether monocytes from pristane-treated mice were more prone to undergo apoptosis in response to TLR7 signaling, blood from 14-day pristane- or MO-treated mice was incubated for 20 hr with R848 (1 μg/ml) or PBS and then stained with anti-CD11b, Ly6C, and Ly6G antibodies plus PE-conjugated annexin-V. As shown in Figure 7D (left), the MFI of annexin-V staining was higher on Ly6Chi and Ly6Clo/− monocytes from pristane- vs. MO-treated mice. The MFI of neutrophils from pristane- vs. MO-treated mice was similar. Addition of R848 to the cultures did not significantly change the intensity of annexin-V staining. Histograms revealed that monocyte annexin-V staining was uniformly shifted to the right in pristane- vs. MO-treated mice, but there was only a single peak. In contrast, in neutrophils a second peak with more intense staining, most likely representing apoptotic cells, was seen, more prominently in pristane- vs. MO-treated mice (Figure 7D, right, arrows). Monocytes did not exhibit this second peak. Annexin-V staining also was shifted to the right in freshly isolated monocytes (without in vitro culture) from pristane- vs. MO-treated mice (not shown). Intracellular staining of freshly isolated cells with anti-activated caspase-3 antibodies was negative (not shown), suggesting that the annexin-V+ monocytes from pristane-treated mice were not apoptotic.
 
-## Low TremL4 expression in Nr4a1−/− mice
+### Low TremL4 expression in Nr4a1−/− mice
 
 TremL4 amplifies proinflammatory signaling through TLR7 by regulating the recruitment of MyD88 (Hemmi et al., 2009; Ramirez-Ortiz et al., 2015; Nedeva et al., 2020; Gonzalez-Cotto et al., 2020). It is expressed by Ly6C− monocytes and Nr4a1+Ly6Chi monocytes committed to differentiate into Ly6C− monocytes (Briseño et al., 2016). Circulating CD11b+Treml4+ monocytes increased in pristane-treated wild-type mice, and to a lesser degree in untreated wild-type mice vs. pristane-treated Nr4a1−/− mice (Figure 8A). In both wild-type and Nr4a1−/− mice Treml4 staining intensity was highest in circulating CD138+Ly6C− monocytes (R3) and was lower in CD138−Ly6C−/lo (R2A/R2B) monocytes (Figure 8B). R1 cells were only weakly positive and neutrophils did not stain for TremL4.
 
@@ -113,19 +279,19 @@ TremL4 amplifies proinflammatory signaling through TLR7 by regulating the recrui
 
 Nearly all circulating CD138+ (R3) cells were TremL4+ (Figure 8C, boxes). There was a suggestion that Ly6Chi (R1) cells may acquire Treml4 surface staining concomitantly with downregulation of Ly6C and upregulation of CD138 (Figure 8C, arrows, lower right). The acquisition of TremL4 and CD138 staining was attenuated in Nr4a1−/− mice. In contrast, although signaling through the type I interferon receptor (Ifnar1) blocks the downregulation of Ly6C in peritoneal Mϕ, Ifnar1−/− and wild-type mice had similar numbers of circulating CD138+TremL4+ monocytes (Figure 8C). Mean Nr4a1 staining intensity in total CD11b+Ly6G− cells from pristane- and PBS-treated mice correlated with the percentage of circulating TremL4+CD11b+Ly6G− cells (Figure 8D), suggesting that Nr4a1 might regulate TremL4. Consistent with that possibility, pristane and MO treatment both increased the fluorescence intensity of Nr4a1 and TremL4 in circulating CD11b+Ly6G− cells (Figure 8E).
 
-## Ly6C−CD138+ monocytes are associated with DAH
+### Ly6C−CD138+ monocytes are associated with DAH
 
 Circulating (Nr4a1-dependent) Ly6C−CD138+ monocytes were present in pristane-treated mice with DAH, but not MO-treated mice without DAH. However, Nr4a1−/− mice were susceptible to the induction of DAH by pristane (Figure 4E). Circulating Ly6C-CD138+ monocytes were substantially lower in BALB/c (resistant to DAH) vs. B6 (DAH-susceptible) mice and there was a similar trend in pristane-treated B-cell-deficient (μMT) B6 mice, which also fail to develop DAH (Zhuang et al., 2017; Figure 1B). Intracellular Nr4a1 staining (flow cytometry) was lower in circulating Ly6Chi and Ly6Clo monocytes from untreated BALB/c vs. B6 mice (Figure 9A). Thus, increased numbers of circulating, Nr4a1-dependent, Ly6CloCD138+ monocytes and a high level of monocyte Nr4a1 protein expression were associated with susceptibility to DAH.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/76205/elife-76205-fig9-v1.jpg)
 
-**Figure 9.:** loCD138+ monocytes are increased in mice that develop diffuse alveolar hemorrhage (DAH).(A) Intracellular Nr4a1 staining in the CD11b+Ly6Chi and CD11b+Ly6C−/lo monocytes from untreated B6 and BALB/c mice. (B) CD11b and Ly6C staining of circulating Ly6G- cells in mineral oil (MO)-treated mice. Gated as in Figure 5A. (C) Percentages of R4, R5A, R5B, R6A, and R6B monocytes in wild-type B6 (WT) vs. B6 Nr4a1−/− mice treated with MO. (D) TremL4 staining of circulating R4, R5A, R5B, R6A, and R6B monocytes and neutrophils (Neut) from MO-treated mice. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 (Student’s t-test).
+**Figure 9.:** (A) Intracellular Nr4a1 staining in the CD11b+Ly6Chi and CD11b+Ly6C−/lo monocytes from untreated B6 and BALB/c mice. (B) CD11b and Ly6C staining of circulating Ly6G- cells in mineral oil (MO)-treated mice. Gated as in Figure 5A. (C) Percentages of R4, R5A, R5B, R6A, and R6B monocytes in wild-type B6 (WT) vs. B6 Nr4a1−/− mice treated with MO. (D) TremL4 staining of circulating R4, R5A, R5B, R6A, and R6B monocytes and neutrophils (Neut) from MO-treated mice. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 (Student’s t-test).
 
 Although Nr4a1-dependent Ly6C− patrolling monocytes are present in untreated B6 mice, they did not express CD138 in RNA-Seq studies (Mildner et al., 2017). There were few CD138+Ly6C− monocytes in either untreated or MO-treated mice (Figures 1 and 5A). In MO-treated mice, CD138−Ly6C− monocytes were present in the circulation (Figure 5A), but they were not reduced in Nr4a1−/− mice (Figures 4C and 5A). We hypothesized that MO-treated mice may have Nr4a1-dependent Ly6C−/loCD138− (R2) monocytes equivalent to the R3 subset in pristane-treated mice. In view of the extremely low number of Ly6C−/loCD138+ cells in MO-treated or Nr4a1−/− mice (Figure 4 and Figure 5), we examined Ly6C−/loCD11bhi monocytes (Figure 5C,D), which are likely to be similar to the Ly6C−/loCD138+ subset (Figure 6). Significant numbers of circulating Ly6C−/loCD11bhi (R6A/R6B) monocytes were seen in MO-treated wild-type mice and Nr4a1−/− mice (Figure 9B,C). R6A cells were higher in Nr4a1−/− mice vs. wild type, whereas R6B cells were significantly lower in Nr4a1−/− mice. R5B cells also were reduced in Nr4a1−/− mice (Figure 9C). Thus, the development in MO-treated mice of Ly6C−CD11bhi (R6B) and Ly6C−CD11b+ (R5B) monocytes, like the development of Ly6C−CD138+ (R3B) monocytes in pristane-treated mice, was Nr4a1 dependent. Together, the data suggest the following: (1) Nr4a1-dependent Ly6C− monocytes express CD138 in pristane-treated mice that develop DAH, but not in mice that are resistant to pristane-induced DAH (MO-treated B6, B6 μMT, and BALB/c) and (2) the R5B and R6B subsets in MO-treated mice are Nr4a1 regulated.
 
 Surface staining of blood cells from MO-treated mice showed high levels of TremL4 expression in the R5B, R6A, and R6B subsets (Figure 9D). The expression of TremL4 was reduced substantially in Nr4a1−/− mice, further suggesting that TremL4 might be Nr4a1 regulated. This possibility was examined in a murine Mϕ cell line (RAW264.7).
 
-## Nr4a1 regulates TremL4 expression
+### Nr4a1 regulates TremL4 expression
 
 The TLR7 ligand R848 activated RAW264.7 cells, resulting in increased CD86, Nr4a1, and TremL4 staining (Figure 10A). lipopolysaccharide (LPS), a TLR4 ligand, had a similar effect (not shown). Nr4a1 mRNA expression increased rapidly after adding R848, peaking at 1 hr (Figure 10B). Treml4 and Tnfa mRNA peaked later on at ~3 hr. TremL4 surface staining also was enhanced by culturing RAW264.7 cells with pristane (12.5–200 ng/ml emulsified in bovine serum albumin [BSA]) (Figure 10C). The effect was dose dependent and specific for pristane, as culture with MO did not enhance TremL4 staining (Figure 10D).
 
@@ -139,7 +305,7 @@ To further examine Nr4a1 regulation of Treml4 expression, RAW264.7 cells were cu
 
 Transcriptional profiling of circulating monocytes from uninflamed B6 mice shows a single population of Nr4a1-regulated Ly6C− monocytes (Mildner et al., 2017). These cells mostly remain within the blood vessels where they patrol the vascular endothelium and promote TLR7-dependent repair of damaged endothelial cells (Auffray et al., 2007; Carlin et al., 2013). Previous studies have not fully addressed whether inflammation alters Ly6C− monocytes. We show that Ly6C− monocytes are more heterogeneous during inflammation than in the resting state. Pristane-induced lupus with DAH and small vessel vasculitis is a monocyte/Mϕ-dependent disorder involving lung microvascular endothelial injury (Zhuang et al., 2017; H Zhuang et al., In Revision). Like pristane, MO causes a chronic inflammatory response, but it is not associated with DAH, pulmonary vasculitis, or endothelial damage. We found that Nr4a1-regulated patrolling (Ly6C−) monocytes had different phenotypes in mice treated with pristane (CD138+) vs. MO (CD138−). Pristane directly affected cells of the monocyte/Mϕ lineage, increasing the expression of TremL4, a protein that amplifies TLR7 signaling and altering the normal plasma membrane asymmetry, as shown by increased annexin-V binding to phosphatidylserine on the plasma membrane’s outer leaflet. Ly6C− monocytes from pristane-treated mice produced large amounts of TNFα in response to TLR7 ligand, but despite their high annexin-V staining, did not appear to be more susceptible to apoptosis than Ly6C− monocytes from MO-treated mice. The data suggest that pristane alters the activation state of Ly6C− patrolling monocytes, potentially influencing whether endothelial damage persists or is repaired.
 
-## Phenotypes of Ly6C− monocytes in pristane vs. MO-treated mice
+### Phenotypes of Ly6C− monocytes in pristane vs. MO-treated mice
 
 Ly6C− monocytes developing from BM-derived Ly6Chi precursors are thought to be a single-cell population (Sunderkötter et al., 2004; Mildner et al., 2017) that monitors the vascular endothelium and promotes the TLR7-dependent removal of damaged cells (Auffray et al., 2007; Carlin et al., 2013). Development of this lineage requires Nr4a1 (Hanna et al., 2011) and C/EBPβ (Mildner et al., 2017). Circulating monocytes in pristane-treated mice included classical Ly6Chi inflammatory monocytes (R1) and two subsets of Ly6C− monocytes distinguished by the expression of CD138 and CD11b: Nr4a1-independent CD138−CD11b+ monocytes (R2/R5) and Nr4a1-regulated CD138+CD11bhi monocytes (R3/R6) (Figure 11). The Nr4a1-independent R2/R5 subset was strongly positive for the monocyte markers CD43 and Treml4 (Figure 2), suggesting that these Ly6Clo cells are monocytes. Nr4a1-independent Ly6C− monocytes have been encountered before but their function is unclear (Carlin et al., 2013).
 
@@ -151,7 +317,7 @@ Ly6C−CD138− (R2B) Ly6C−CD138+ (R3B) monocytes were clearly distinguishable
 
 Between days 5 and 9 after pristane treatment, circulating R3 monocytes increased significantly while R2 was unchanged (Figure 3A). In MO-treated mice, the opposite pattern was seen: R3 monocytes remained unchanged, whereas R2 increased from days 5 to 9. In pristane-treated Nr4a1−/− mice, the Ly6C−/loCD138+ (R3A/R3B) populations were substantially lower than in wild-type controls, but higher than in PBS- or MO-treated mice (Figure 5B and Figure 11). Due to the low expression of CD138 on monocytes from MO-treated mice, we used an alternative gating strategy to identify subsets of Ly6C−/lo cells. Ly6C−CD11bhi (R6) and Ly6C−CD11b+ (R5) monocytes were phenotypically similar to R3 and R2, respectively (Figure 5D and Figure 6). Ly6C− cells (R5B, R6B) in MO-treated mice were Nr4a1 dependent (Figure 9B,C), suggesting that in MO-treated mice, the Nr4a1-dependent Ly6C−CD11bhi subset was CD138−, whereas in pristane-treated mice it was largely CD138+ (Figure 11). Thus, CD138 staining of Ly6C− monocytes was related to the type of inflammatory stimulus (pristane vs. MO).
 
-## Monocytes in mice with pristane-induced DAH
+### Monocytes in mice with pristane-induced DAH
 
 Pristane-induced lupus in B6 mice is complicated by severe lung disease closely resembling SLE-associated DAH with pulmonary vasculitis in humans (Zhuang et al., 2017; Zamora et al., 1997). DAH and ANCA-negative small vessel vasculitis are abolished by depleting monocytes/Mϕ with clodronate liposomes and are absent in mice lacking immunoglobulin or C3, suggesting the involvement of immune complexes (Zhuang et al., 2017). DAH in SLE patients also shows evidence of an immune complex pathogenesis (Hughson et al., 2001; Al-Adhoubi and Bystrom, 2020). DAH in pristane-induced lupus is associated with lung microvascular injury (Zhuang et al., 2017, in revision) and monocyte recruitment (Lee et al., 2019). We confirmed the importance of Ccr2 in DAH (Figure 4E), underscoring the central role of Ly6Chi monocyte recruitment (Lee et al., 2019). R2 monocytes were unaffected by the absence of Ccr2, suggesting that they were dispensable for the induction of DAH (Figure 3B and Figure 11). In contrast, R1 monocytes (deficient but not absent in Ccr2−/− mice) appeared to be required. R3 monocytes also were deficient in Ccr2−/− mice (Figure 3B), but are derived from Ly6Chi precursors (Sunderkötter et al., 2004; Mildner et al., 2017). Nr4a1−/− mice had normal numbers of R1 monocytes and were susceptible to pristane-induced DAH (Figure 4C, E and Figure 5A). R3 monocytes were greatly reduced (but not absent) in Nr4a1−/− mice (Figure 4C), suggesting that they are not involved in DAH or are needed in only small numbers (Figure 11).
 
@@ -159,17 +325,17 @@ Interestingly, circulating R1 monocytes were numerous in MO-treated B6 mice and 
 
 Plasma membrane asymmetry is maintained by flippases, such as ATP11C, and phospholipid scramblases, such as ANO6 (TMEM16F) and XKR8, which help retain PtdSer in the inner leaflet (Segawa and Nagata, 2015). In apoptotic cells, cleavage by caspases irreversibly inactivates ATP11C flippase and activates XKR8 scramblase, resulting in increased PtdSer exposure on the cell surface. However, in activated cells, increased intracellular Ca2+ can reversibly activate TMEM16F and inactivate ATP11C, resulting in transiently increased concentrations of PtdSer in the outer leaflet without apoptosis (Segawa and Nagata, 2015; Doktorova et al., 2020). Loss of plasma membrane asymmetry plays a role in immune signaling, including the release of cytokine-loaded microvesicles from monocytes (MacKenzie et al., 2001). We conclude that pristane may selectively alter the activation state of monocytes, leading to a reversible loss of plasma membrane asymmetry. Increased CD138 expression may be marker for this activated state, which is associated with increased production of inflammatory cytokines (Figure 7C), possibly via a mechanism similar to that reported for IL-1β (MacKenzie et al., 2001).
 
-## CD138+ monocytes are not precursors of peritoneal CD138+ Mϕ
+### CD138+ monocytes are not precursors of peritoneal CD138+ Mϕ
 
 Studies in Ccr2−/− and Nr4a1−/− mice strongly suggested that Ly6C−CD138+ peritoneal Mϕ were not derived from Ly6C−CD138+ monocytes. Migration of Ly6Chi monocytes to the peritoneum in pristane-treated mice requires Ccr2 (Lee et al., 2009). Consistent with a previous report (Carlin et al., 2013), circulating Ly6Chi monocytes were reduced by about 50% in pristane-treated Ccr2−/− mice but in the peritoneum, both Ly6Chi (R1) and Ly6C−CD138+ (R3) Mϕ were nearly absent (Figure 3B). The inability of the remaining circulating Ly6Chi monocytes to enter the peritoneum suggests that both BM egress and migration to the peritoneum were Ccr2 dependent. Following monocyte/Mϕ depletion with clodronate liposomes, the peritoneum is repopulated by Ly6Chi monocytes, which differentiate into Ly6C− Mϕ (Lee et al., 2009). The absence of both Ly6Chi and CD138+ Mϕ in the peritoneum of Ccr2−/− mice suggests that CD138+ Mϕ are derived from Ly6Chi monocyte precursors. Moreover, although Ly6C−CD138+ monocytes were reduced in Nr4a1−/− mice, percentages of Ly6C−CD138+ Mϕ were similar (Figure 4B,C), confirming that peritoneal CD138+ Mϕ were not likely to be derived from circulating CD138+ monocytes.
 
-## What is the role of CD138?
+### What is the role of CD138?
 
 The function of CD138 (syndecan-1, Sdc1) in myeloid cells is uncertain. Although the protein is expressed by a subset of Ly6C− monocytes and Mϕ, Sdc1 is not among the genes differentially expressed in Ly6Chi vs. Ly6C− monocytes from non-pristane-treated-mice (Mildner et al., 2017). There are several plausible explanations. First, the antibody we used might cross-react with another target in myeloid cells. However, clone 281-2 is a standard antibody for flow cytometry of mouse CD138 that recognizes the extracellular domain of CD138 on plasma cells, epithelial cells, and early B cells (Jalkanen et al., 1985). Although transcriptional profiling of Ly6C−CD138+ monocytes was not done, flow-sorted CD138+ Mϕ express high levels of Sdc1 mRNA (Han et al., 2020) and others also have reported CD138 mRNA and protein expression in peritoneal Mϕ (Yeaman and Rapraeger, 1993). A more likely possibility is that Sdc1 is not normally expressed in monocytes, but is induced directly or indirectly by pristane.
 
 CD138 is a heparan sulfate-containing membrane proteoglycan that binds extracellular matrix proteins and promotes integrin activation, wound healing, cell adhesion/migration, endocytosis, and fibrosis (Stepp et al., 2015). The extracellular domain binds type IV collagen and laminins (Stepp et al., 2015; San Antonio et al., 1994; Salmivirta et al., 1994; Jung et al., 2009), which are components of the basement membrane separating the alveolar capillary endothelium and the epithelium (Loscertales et al., 2016). In chronic inflammation, monocytes attach to the vascular endothelium via LFA-1, CX3CR1, and CD11b (Auffray et al., 2007; Gao et al., 2012), all of which were highly expressed by Ly6C−CD138+ monocytes (Figure 5C and Figure 6C,D). They then migrate to the subendothelial space, and reversibly attach to basement membrane laminin via integrins (Kostidou et al., 2009a; Kostidou et al., 2009b). It will be of interest to investigate whether CD138 expression promotes monocyte migration and/or attachment to the basement membranes of damaged blood vessels.
 
-## Treml4 is transcriptionally regulated by Nr4a1
+### Treml4 is transcriptionally regulated by Nr4a1
 
 Nr4a1 (Nur77) is a member of the nuclear receptor 4A subfamily that regulates monocyte and Mϕ differentiation (McEvoy et al., 2017). It is highly expressed in Ly6C− monocytes, which are deficient in Nr4a1−/− mice (Hanna et al., 2011; Thomas et al., 2016). Our data suggest that Treml4 is regulated by Nr4a1. Treml4 mRNA and protein levels correlated with Nr4a1 expression in pristane-treated mice and in TLR ligand- or pristane-treated RAW264.7 cells (Figures 8 and 10). Conversely, Nr4a1 knockdown decreased Treml4 expression in RAW264.7 cells and Treml4 expression was lower in adherent Mϕ from Nr4a1−/− mice vs. controls (Figure 10). Although Nr4a1 appears to transcriptionally regulate Treml4, additional factors are likely to be involved, since low levels of Treml4 were expressed in Ly6C−CD138+ and Ly6C−CD138− monocytes and Mϕ from Nr4a1−/− mice (Figure 8). Relevant to the role of Ly6C− monocytes in monitoring endothelial damage, TremL4 binds late apoptotic and necrotic cells and sensitizes myeloid cells to TLR7 signaling by recruiting MyD88 to endosomes (Hemmi et al., 2009; Ramirez-Ortiz et al., 2015). Thus, high levels of TremL4 may promote inflammatory cytokine production by monocytes infiltrating the lung in mice with DAH. TremL4 also may play a role in lupus nephritis. Treml4−/− MRL/lpr mice have lower autoantibody and interferon-α production and improved survival vs. Treml4+/+ controls (Ramirez-Ortiz et al., 2015), suggesting that Treml4 plays a causal role in lupus nephritis by upregulating TLR7-driven interferon production. Since patrolling monocytes play a role in glomerular inflammation in murine lupus nephritis (Kuriakose et al., 2019), Treml4 expression may enhance the inflammatory response to injured glomerular endothelial cells.
 
@@ -179,21 +345,134 @@ In summary, DAH, a manifestation of pristane-induced lupus mediated by monocytes
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 C57BL/6 (B6), B6.129S4-Ccr2tm1Ifc/J (Ccr2−/−), B6.129S2-Nr4a1tm1Jmi/J (Nr4a1−/−), B6(Cg)-Ifnar1tm1.2Ees/J (Ifnar1−/−), B6.129S2-Ighmtm1Cgn/J (μMT), and BALB/cJ mice (Jackson Laboratory, Bar Harbor, ME) maintained under specific pathogen-free conditions were injected i.p. with 0.5 ml of pristane (Sigma-Aldrich, St. Louis, MO) or MO (E.R. Squibb & Sons, New Brunswick, NJ) as described (Zhuang et al., 2017). There were 5–15 mice female mice age 8–12 weeks per group unless otherwise noted. Experiments were repeated at least twice. Peritoneal exudate cells (PECs) were collected by lavage 14 days later and heparinized blood was collected from the heart 3–14 days after pristane injection. DAH was assessed as described (Zhuang et al., 2017). This study followed the recommendations of the Animal Welfare Act and US Government Principles for the Utilization and Care of Vertebrate Animals and was approved by the UF IACUC.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry of peritoneal cells was performed using anti-mouse CD16/32 (Fc Block, BD Biosciences, San Jose, CA) before staining with primary antibody or isotype controls. Peripheral blood (100 µl) was incubated 30 min in the dark with monoclonal antibodies specific for surface markers. After surface staining, cells were fixed/permeabilized for 5 min (Fix-Perm buffer, eBioscience, San Diego, CA), washed and stained intracellularly for 20 min with anti-Nr4a1 monoclonal antibodies. The cells were washed and resuspended in PBS for flow cytometry. Monoclonal antibodies are listed in Table 2.
 
-## R848 stimulation of murine monocytes
+**Table 2.**
+ Murine monoclonal antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specificity (clone)</th>
+      <th>Fluorochrome*</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD138 (281-2)</td>
+      <td>PE; APC; APC-Cy7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11b (M1/70)</td>
+      <td>BV421, Pacific Blue</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly6C (HK1.4)</td>
+      <td>APC-Cy7; Alexa Fluor 488</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly6G (1A8)</td>
+      <td>APC-Cy7; PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD43</td>
+      <td>FITC</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>TREML4</td>
+      <td>PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD115</td>
+      <td>APC-Cy7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>F4/80</td>
+      <td>PE, BV421</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD62L</td>
+      <td>PE</td>
+      <td>BD Pharmingen</td>
+    </tr>
+    <tr>
+      <td>CD64</td>
+      <td>PE</td>
+      <td>BD Pharmingen</td>
+    </tr>
+    <tr>
+      <td>CCR2</td>
+      <td>FITC</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Tim4</td>
+      <td>APC, PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11c</td>
+      <td>PE</td>
+      <td>BD Pharmingen</td>
+    </tr>
+    <tr>
+      <td>CX3CR1 (SA011F11)</td>
+      <td>FITC</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>LFA-1</td>
+      <td>PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NR4A1</td>
+      <td>PE</td>
+      <td>Miltenyi</td>
+    </tr>
+    <tr>
+      <td>TLR7</td>
+      <td>PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD86</td>
+      <td>APC-Cy7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>TNFα</td>
+      <td>APC, PE</td>
+      <td>BioLegend</td>
+    </tr>
+  </tbody>
+</table>
+
+_*PE, phycoerythrin; APC, allophycocyanin; FITC, fluorescein isothiocyanate; BV, brilliant violet; APC-Cy7, APC/cyanine 7._
+
+### R848 stimulation of murine monocytes
 
 Blood was collected by cardiac puncture from B6 mice 14 days after pristane treatment. Erythrocytes were lysed with erythrocyte lysis buffer (Qiagen) and washed with PBS. Leukocytes were resuspended in complete Dulbecco’s modified Eagle medium (DMEM) + 10% fetal bovine serum in the presence or absence of R848 (1 µg/ml, Sigma-Aldrich) and cultured in a 5% CO2 atmosphere at 37°C for 5 hr. The cells were prepared for flow cytometry as above using anti- Ly6C-FITC, Ly6G-APC-Cy7, CD138-PE, and CD11b-BV-421 (surface staining) followed by intracellular staining with anti-TNFα-APC antibodies. Ly6G+ cells were gated out and intracellular TNFα staining was measured in CD11b+Ly6ChiCD138−, CD11b+Ly6CloCD138−, and CD11b+Ly6ChiCD138+ cells (R1, R2, and R3, respectively).
 
 In other experiments, B6 mice were treated with either pristane or MO and 14 days later, blood was collected by cardiac puncture. Erythrocytes were lysed and leukocytes were cultured for 20 hr in low attachment tissue culture plates containing complete DMEM + 10% fetal bovine serum plus R848 (1 µg/ml) or vehicle. Cells were stained with FITC-conjugated anti-Ly6C, APC-conjugated anti-CD138, Bv-421-conjugated anti-CD11b, and APC-Cy7-conjugated anti-Ly6G antibodies followed by staining with PE-conjugated annexin-V (PE Annexin V Apoptosis Detection Kit, BioLegend), using the manufacturer’s recommended buffer and protocol.
 
-## RAW264.7 cell culture with TLR ligands
+### RAW264.7 cell culture with TLR ligands
 
 RAW264.7 cells (murine Mϕ cell line, ATCC, Manassas, VA) were seeded in 24-well non-attachment plates (5 × 105 cells/well) and cultured for 24 hr in complete DMEM + 10% fetal bovine serum with or without LPS (1 µg/ml) or R848 (1 µg/ml). The cells were washed with PBS and analyzed by flow cytometry. Cells were surface stained for TremL4 and CD86 and intracellularly stained for Nr4a1.
 
@@ -201,18 +480,18 @@ For qPCR analysis, RAW264.7 cells were seeded in 6-well plates (3 × 105 cells/w
 
 Primer sequences were as follows: Nr4a1 forward: AGCTTGGGTGTTGATGTTCC; Nr4a1 reverse: ATGCGATTCTGCAGCTCTT; Treml4 forward: CTGGAGGTACTCACAACTGCT; Treml4 reverse: GGCTCTGTCCTACCATTCTATGA; Tnfa forward: AGGAGGAGTCTGCGAAGAAGA; Tnfa reverse: GGCAGTGGACCATCTAACTCG; 18S rRNA forward: TGCCATCACTGCCATTAAGG; reverse: TGCTTTCCTCAACACCACATG.
 
-## RAW264.7 cell culture with pristane
+### RAW264.7 cell culture with pristane
 
 Pristane or MO (1 ml) was added to PBS (9 ml) containing 100 mg/ml BSA in a 15 ml polypropylene tube and rotated for 48 hr at 4°C. The surface layer of unincorporated hydrocarbon oil was aspirated at the end of the incubation. The amount of pristane incorporated using this method was calculated as described (Zhuang et al., 2017) and adjusted to approximately 1 µg/ml. RAW264.7 cells were seeded in 24-well non-attachment plates (3 × 105 cells/well) and cultured for 24 hr in complete DMEM + 10% FBS with/without hydrocarbon oils at concentrations ranging from 12.5 to 200 ng/ml. Then cells were washed with PBS and analyzed by flow cytometry for surface TremL4 and intracellular Nr4a1.
 
-## Nr4a1 gene silencing
+### Nr4a1 gene silencing
 
 RAW264.7 cells were seeded in 6-well plates (2 × 105 cells/well) and cultured overnight in antibiotic-free complete DMEM + 10% FBS. On the following day the cells were transfected with Nr4a1 (Nur77) siRNA (sc-36110 from Santa Cruz Biotechnology) or control siRNA-A (sc-37007, Santa Cruz Biotechnology, Dallas RX). siRNA (40 pmol from a 10 µM stock in sterile water) was added to 100 µl of Opti-MEM medium and transfected using siRNA transfection reagent (sc-29528, Santa Cruz Biotechnology) following the manufacturer’s instructions. Transfected cells were incubated at 37°C for 48 hr, and then stimulated with LPS (1 µg/ml) for 1, 3, or 6 hr. Total RNA was collected from the cells using the QIAamp RNA blood Mini Kit (Qiagen) and cDNA was synthesized using the Superscript II First-Strand Synthesis kit (Invitrogen). SYBR Green qPCR analysis was performed using the CFX Connect Real-Time system (Bio-Rad). Gene expression was normalized to 18S RNA and the expression level was calculated using the 2−ΔΔCt method. Primer sequences were as above.
 
-## Peritoneal cell culture with TLR ligands
+### Peritoneal cell culture with TLR ligands
 
 PECs were harvested from untreated wild-type B6 and Nr4a1−/− mice and allowed to adhere to plastic wells (6-well plates, 2 × 106 cells/well) for 1 hr in AIM V serum free medium (Thermo Fisher Scientific, Waltham, MA). Non-adherent cells were washed off with PBS and the adherent cells were cultured for 3 hr in complete DMEM + 10% FBS medium containing LPS (1 µg/ml in PBS) or PBS alone. Nr4a1 and Treml4 expression was quantified by qPCR as above.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism 6.0 (GraphPad Software, San Diego, CA). Differences between groups were analyzed by two-sided unpaired Student’s t-test unless otherwise indicated. Data were expressed as mean ± standard deviation. p < 0.05 was considered significant. Experiments were repeated at least twice.

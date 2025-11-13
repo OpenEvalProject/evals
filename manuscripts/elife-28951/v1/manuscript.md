@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.28951.001 How left-right patterning drives asymmetric morphogenesis is unclear. Here, we have quantified shape changes during mouse heart looping, from 3D reconstructions by HREM. In combination with cell labelling and computer simulations, we propose a novel model of heart looping. Buckling, when the cardiac tube grows between fixed poles, is modulated by the progressive breakdown of the dorsal mesocardium. We have identified sequential left-right asymmetries at the poles, which bias the buckling in opposite directions, thus leading to a helical shape. Our predictive model is useful to explore the parameter space generating shape variations. The role of the dorsal mesocardium was validated in Shh mutants, which recapitulate heart shape changes expected from a persistent dorsal mesocardium. Our computer and quantitative tools provide novel insight into the mechanism of heart looping and the contribution of different factors, beyond the simple description of looping direction. This is relevant to congenital heart defects. -/-
+How left-right patterning drives asymmetric morphogenesis is unclear. Here, we have quantified shape changes during mouse heart looping, from 3D reconstructions by HREM. In combination with cell labelling and computer simulations, we propose a novel model of heart looping. Buckling, when the cardiac tube grows between fixed poles, is modulated by the progressive breakdown of the dorsal mesocardium. We have identified sequential left-right asymmetries at the poles, which bias the buckling in opposite directions, thus leading to a helical shape. Our predictive model is useful to explore the parameter space generating shape variations. The role of the dorsal mesocardium was validated in Shh-/- mutants, which recapitulate heart shape changes expected from a persistent dorsal mesocardium. Our computer and quantitative tools provide novel insight into the mechanism of heart looping and the contribution of different factors, beyond the simple description of looping direction. This is relevant to congenital heart defects.
 
 ## Introduction
 
@@ -43,13 +43,13 @@ Here, we explore further the buckling mechanism and test whether it is sufficien
 
 ## Results
 
-## 3D reconstruction of the sequence of heart looping in the mouse embryo
+### 3D reconstruction of the sequence of heart looping in the mouse embryo
 
 We investigated the process of heart looping in the mouse embryo, whereas it had been previously mainly studied in the chick. In litters dissected at E8.5, we observed a spectrum of heart shapes, which suggests that heart looping is a rapid process. Theiler stages, which report general embryonic landmarks over the whole gestation, fail to account for the rapid progression of heart looping. We grouped the embryos according to heart shapes (Figure 1A). To order them, we used two criteria. The heart tube is known to elongate by ingression of heart precursors at both the cranial, arterial, pole and the caudal, venous, pole (Domínguez et al., 2012; Zaffran et al., 2004). Thus, the addition of novel heart regions was taken as an indication of later stages. The cranial addition of the right ventricle and the extension of the outflow tract were particularly striking. Heart looping is also known to correspond to a repositioning of the right ventricle, from an initial cranial to a final right position (de la Cruz, 1998). Thus, the position of the right ventricle relative to the left ventricle was taken as another sign of the progression of heart looping. The resulting sequence parallels the addition of somites. However, we found, as others previously (Kaufman and Navaratnam, 1981), that heart development was not strictly synchronous with somitogenesis. We propose a novel staging system of early heart development, based on the shape of the heart tube. At E8.5c, the cardiac crescent is visible but the bilateral heart fields have not fused. At E8.5d, the right and left heart fields, adjacent at the midline, bulge separately within the cardiac crescent. At E8.5e, the bilateral heart fields have fused, with a visible midline furrow. They form a primitive left ventricle, which bulges ventrally, with the venous and arterial poles caudal and cranial respectively. This corresponds to the initial cardiac tube, taking the shape of an inverted Y, as the venous pole remains bilateral. At E8.5f, a right ventricular region appears cranially and the tube still appears bilaterally symmetrical. At E8.5g, the first external sign of left-right asymmetry occurs, with the tilting of the tube axis. At E8.5h, the outflow region starts to extend, resulting in a more variable curved heart shape. At E8.5i, the looped tube is clearly detectable; however, the right ventricle has not yet reached its right position. The right ventricle-left ventricle axis does not parallel the embryonic right-left axis. At E8.5j, the right ventricle has reached its final position such that the right ventricle-left ventricle axis tends to be perpendicular to the cranio-caudal axis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic representation of shape changes during the formation and looping of the heart tube (orange) in the E8.5 mouse embryo. Until E8.5f, the mouse embryo appears bilaterally symmetrical, and the heart tube is straight. The staging scale goes from E8.5c to E8.5j (previous E8.5a-b stages are not shown). This scale, focused on the heart, is finer than Theiler stages, and not fully synchronous with the addition of somites. Somite numbers (nb) were counted in a collection of 40 embryos imaged by HREM between E8.5e and E8.5j and of 48 embryos between E8.5c and E8.5d observed under the microscope. (B). 3D reconstructions of heart shapes from HREM images at each stage of heart looping. All the reconstructions are aligned with the notochord vertical (green), the arterial and venous poles up and down, respectively. L, left; LA, left atrium; LV, left ventricle; OFT, outflow tract; R, right; RA, right atrium; RV, right ventricle. Scale bar: 100 μm.10.7554/eLife.28951.004Figure 1—source data 1.3D visualisation of the heart, as reconstructed from HREM images, at the six stages shown in Figure 1. This file should be opened with Adobe Acrobat Reader. Click on the image to activate the manual rotation of the reconstruction. Each image may be rotated at will with the mouse (hold left click). Zoom in and out with the mouse wheel. Shortcuts at the top align all images in a ventral or dorsal view, with the notochord vertical.
+**Figure 1.:** (A) Schematic representation of shape changes during the formation and looping of the heart tube (orange) in the E8.5 mouse embryo. Until E8.5f, the mouse embryo appears bilaterally symmetrical, and the heart tube is straight. The staging scale goes from E8.5c to E8.5j (previous E8.5a-b stages are not shown). This scale, focused on the heart, is finer than Theiler stages, and not fully synchronous with the addition of somites. Somite numbers (nb) were counted in a collection of 40 embryos imaged by HREM between E8.5e and E8.5j and of 48 embryos between E8.5c and E8.5d observed under the microscope. (B). 3D reconstructions of heart shapes from HREM images at each stage of heart looping. All the reconstructions are aligned with the notochord vertical (green), the arterial and venous poles up and down, respectively. L, left; LA, left atrium; LV, left ventricle; OFT, outflow tract; R, right; RA, right atrium; RV, right ventricle. Scale bar: 100 μm.
 
 To further characterise the shape changes during heart looping, we acquired 3D images (Video 1) by HREM (Weninger et al., 2006) and, after image segmentation, reconstructed the 3D shape of the myocardium from E8.5e to E8.5j (Figure 1B, and Figure 1—source data 1). These 3D reconstructions are essential to extract and quantify geometrical parameters. By plotting the centroid of myocardial sections (Figure 2A), we extracted the axis of the cardiac tube (Figure 2B). We quantified the increase in the length of the cardiac tube from 183 ± 42 µm (n = 3) at E8.5e to 800 ± 56 µm (n = 3) at E8.5j (Figure 2C). We also quantified the repositioning of the right ventricle, by measuring the right ventricle-left ventricle axis relative to the cranio-caudal axis (Figure 2D), from 7°±7 (n = 3) at E8.5f to 72°±1 (n = 3) at E8.5j (Figure 2E). These measures validate the ordering of stages and provide quantitative references for the evaluation of the progression of heart looping.
 
@@ -57,13 +57,17 @@ To further characterise the shape changes during heart looping, we acquired 3D i
 
 **Figure 2.:** (A) HREM image of an embryo section at E8.5f, with the notochord (green dot) and the centroid (red dot) of the myocardial tube (pale red) outlined. (B) Ventral view of a 3D reconstruction of the heart tube at E8.5i, aligned with the notochord vertical (green), showing the axis of the myocardial tube (red) used for the measurement of its length, and the distance between its poles (blue double-arrow). The measures were taken between the top of the arterial pole and the bifurcation between the two atrial regions at the venous pole. The distance between the poles was measured after projection onto the notochord. (C) Comparison between the tube length (red) and the distance between the poles (blue) during heart development. (D) Ventral view of a 3D reconstruction of the heart tube at E8.5h, aligned with the notochord vertical (green), showing the measurement of the orientation of the right ventricle (RV)-left ventricle (LV) axis. The perpendicular (red arrow) to the section of the interventricular sulcus (dotted circle) was drawn and its angle with the notochord (green arrow) was calculated. The measure was taken after projection onto the frontal plane. (E) Inclination of the right ventricle (RV)-left ventricle (LV) axis when looping progresses from a cranio-caudal (0°) towards a left-right orientation (90°). (F) Computer simulation of shape changes, in 3D, with a Finite Element model, seen from ventral (left) and cranial (right) views at step 100. Starting from a straight tube (t = 0), the simulation was run under the hypothesis of a tube growing homogenously between fixed poles, in the absence of any asymmetry. (G) Similar computer simulation, but with a small (5%) left-right asymmetry at one pole, mimicking stochastic, naturally occurring, left-right variations. The coloured scale of longitudinal growth used in the simulations is indicated on the right. Means and standard deviations are shown, with n = 3 for each point. Scale bar: 50 μm (A,B), 100 µm (D).
 
-## Parameters and simulation of a simple buckling mechanism of heart looping
+![Video 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-video1.mp4.jpg)
+
+**Video 1.:** Video showing the successive sections of an E8.5h embryo, at the level of the heart. Images were acquired by HREM every 2 µm.
+
+### Parameters and simulation of a simple buckling mechanism of heart looping
 
 We analysed the existence of mechanical constraints that have been proposed to influence heart looping, such as the distance between the heart poles. We found that, while the length of the cardiac tube increases 4.4-fold in average between E8.5e and E8.5j, the distance between the arterial and venous poles is constant (p=0.26, Student test between E8.5e and E8.5j) with a value of 146 ± 29 µm in average (Figure 2C). These measures are consistent with the buckling mechanism initially proposed by Patten (1922).
 
 To evaluate the shapes that can be generated by a buckling mechanism, we designed a finite element computer model, based on the GPT framework previously used to model flower shapes (Green et al., 2010; Kennaway et al., 2011). The model, in which the growing tissue is simulated as a continuous sheet of material, can capture tissue deformations at a large scale with a reduced number of arbitrary parameters, compared to cell-based simulations (Osborne et al., 2017). Tissue deformation depends on the regional growth patterns, modulated in rate and orientation, which are the input parameters of the model. It also depends on the mechanical constraint of maintaining a continuous sheet of tissue elements. In the absence of any asymmetry, the simulation of a tube growing between fixed poles did not lead to buckling, but to a wider tube (Figure 2F). When we introduced a small left-right bias (burst of 5% increase in growth at one pole), which would correspond to stochastic, naturally occurring, left-right variations, the tube was able to curve (Figure 2G). The buckling mechanism is thus able to generate asymmetric morphogenesis by amplifying small left-right variations. However, in this minimal hypothesis, the tube acquired a C-shape. Therefore, a buckling mechanism is insufficient to account for the biological helical shape of the looped heart tube. This prompted us to further analyse mouse hearts, to quantify left-right asymmetries, as well as additional mechanical constraints.
 
-## Dynamics of the mechanical constraint from the dorsal mesocardium
+### Dynamics of the mechanical constraint from the dorsal mesocardium
 
 The heart tube is initially attached dorsally to the body via the dorsal mesocardium. From a mechanical point of view, this may hinder heart looping. We analysed the dynamics of the dorsal mesocardium in our 3D reconstructions. We observed it in serial embryonic sections acquired by HREM and found variations in its lateral thickness along the cranio-caudal axis and between stages (Figure 3A–C). Thus, we quantified the thickness of the dorsal mesocardium from the arterial to the venous pole at different stages (Figure 3D). The dorsal mesocardium was at least 94 ± 50 µm (n = 3) thick at E8.5e and got thinner to a minimum of 28 ± 13 µm (n = 3 per stage) between E8.5f and E8.5h, corresponding to about two cells. Breakdown of the dorsal mesocardium was detectable from E8.5i, in the arterial half of the tube and progressed towards the venous pole at E8.5j (see thick lines below Figure 3D). Before breaking down, the dorsal mesocardium appeared elongated on the dorsal/ventral axis, at E8.5g and E8.5h (Figure 3E–F), suggesting stretching of the tissue. The distance to the foregut was higher in the arterial half of the tube, where breakdown of the dorsal mesocardium was initiated. In contrast, the dorsal mesocardium displayed homogenous characteristics in the venous half between E8.5f and E8.5i. Thus, a clear boundary was apparent between the arterial and venous halves of the tube (position 90, Figure 3D,F). Our observations show that breakdown of the dorsal mesocardium and heart looping are simultaneous, and we have quantified for the first time the associated spatio-temporal sequence.
 
@@ -71,9 +75,17 @@ The heart tube is initially attached dorsally to the body via the dorsal mesocar
 
 **Figure 3.:** (A) Transverse section from an HREM image of an embryo at E8.5f showing the attachment of the heart tube to the body via the dorsal mesocardium (lateral thickness between red arrowheads). The position, along the notochord, of the section is indicated in brackets, as the distance to the bifurcation between the two atrial regions. (B) At equidistance between the poles at E8.5g, the dorsal mesocardium is thinner (red arrowheads). (C) In the arterial half of the tube at E8.5i, the dorsal mesocardium is broken down (open arrowhead). (D) Measure of the lateral thickness of the dorsal mesocardium, in serial positions along the notochord, from the arterial pole (left) to the venous pole (right), at successive developmental stages (colour coded). Thick lines below indicate positions where at least one sample had dorsal mesocardium breakdown. The boundary between the arterial and venous halves of the tube is shown by a vertical dashed line. (E) Schematic representation of a transverse section, showing the dorso-ventral elongation of the dorsal mesocardium (red double arrow), measured as the distance to the ventral fold of the foregut. (F) Measure of the elongation of the dorsal mesocardium, in serial positions along the notochord at successive developmental stages (colour coded). A significant elongation of the dorsal mesocardium, compared to the initial heart tube at E8.5f, is indicated by asterisks (*p-value<0.05 and **p-value<0.01, two-tailed Student test). When the dorsal mesocardium has broken down, the elongation value is set to 0. Means and standard deviations are shown (n = 3 for each stage). Scale bars: 50 μm.
 
-## Initial left-right asymmetries during mouse heart looping
+### Initial left-right asymmetries during mouse heart looping
 
 Heart looping is a directional event, which depends on left-right patterning. Thus, we examined early left-right asymmetries during the formation of the heart tube. The E8.5f stage, corresponding to the straight heart tube, had always been considered as a stage of bilateral symmetry, as seen externally (Figure 1), whereas the chick heart tube undergoes a rightward rotation between stages HH10 and 12 (de la Cruz et al., 1977; de la Cruz, 1998). We found on HREM sections, that the mouse heart tube at E8.5f was not bilaterally symmetrical, but rather rotated towards the right side (Figure 4A–B). We quantified this asymmetry, by measuring the right and left angles between the heart tube and the dorsal pericardial wall (Figure 4C). We found that this rotation was not present at the previous stage E8.5e. At E8.5f, this asymmetry was specific to the arterial pole (Student test, p<0.001) and not significant in the venous half of the tube (p>0.40). We estimated, at E8.5f in the mouse, that the rotation is in the order of 25° (inset Figure 4C). To further follow the rotation of the heart tube, we mapped the position of the limits of the dorsal mesocardium (Figure 4D–F). From a ventral view, the ventral aspect of the dorsal mesocardium was shifted to the right compared to the dorsal aspect. This was visible at E8.5f, and amplified at E8.5g, in agreement with the dorso-ventral elongation of the dorsal mesocardium. However, this was specific to the arterial pole and barely visible at the venous pole.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig4-v1.jpg)
+
+**Figure 4.:** (A) Transverse section from an HREM image of an embryo at E8.5f, in which the angles (right and left) between the heart tube and the dorsal pericardial wall, at the dorsal mesocardium, are shown. The position of the section is indicated in brackets, as a distance to the bifurcation between the two atrial regions. (B) Section of the same heart at the arterial pole, showing the asymmetry of the tube relative to the dorsal-ventral axis of the embryo (white dashed line). (C) Quantification of the left-right difference between the angles at the dorsal mesocardium, taken at successive positions along the axis of the notochord. A significant difference (***p-value<0.001, paired Student test) at the arterial pole at E8.5f is indicated in grey. From the maximum value of the angular difference, we can estimate the angle of rotation (ρ) of the tube relative to the dorsal-ventral axis (see inset). Means and standard deviations are shown (n = 3 for each stage). (D–E) Transverse embryo sections at E8.5f, at the arterial pole (D) and venous pole (E), with the notochord (green) and the dorsal (red) and ventral (blue) aspects of the dorsal mesocardium outlined. (F) In representative embryos, ventral views, aligned with the notochord, of the position of the dorsal mesocardium along the arterial (top) - venous (down) axis of the tube. The position of the sections in (D) and (E) is indicated. Scale bars: 50 µm (A, B, D, E), 20 µm (F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Transverse embryo section at E8.5g, in which the width of the dorsal pericardial wall on either sides of the dorsal mesocardium is shown. The position of the section is indicated in brackets, as the distance to the bifurcation between the two atrial regions. (B) Quantification of the left-right difference between the widths, in serial positions along the notochord and at successive developmental stages (colour coded). No significant difference between the left and right is detected (Student paired test, p>0.27 at E8.5f, >0.12 at E8.5g, >0.23 at E8.5h and p>0.09 at E8.5i). Means and standard deviations are shown, with n = 3 at E8.5f-h, 4 at E8.5i.
 
 We then analysed potential left-right asymmetries at the venous pole. Whereas the arterial pole was displaced to the right of the midline (notochord), the dorsal mesocardium at the venous pole appeared displaced in an opposite direction, to the left of the midline (Figure 4F), in agreement with previous reports of a leftward displacement of the venous pole, both in mouse (Biben and Harvey, 1997) and fish (Chen et al., 1997). This is not due to an underlying asymmetry in the dorsal pericardial wall: the width of the pericardial wall was found symmetrical throughout the looping process, with a maximum left-sided deviation of 37 µm ± 30 at E8.5i, which is not significant (Student paired test, p>0.09) (Figure 4—figure supplement 1). We quantified the position of the venous pole of the heart relative to the notochord and found it significantly left-sided from E8.5g, with a minimum 47 µm ± 22 (E8.5g) and maximum 87 µm ± 10 (E8.5i) deviation (Figure 5A–B). We analysed further left-right asymmetries, by addressing cell ingression from the posterior second heart field. Symmetrical dye injections were performed with different colours on the right and left sides (Figure 5C1–D1), and the relative contributions to the heart tube were observed (Figure 5C2–D2). We evaluated whether there are instances when precursors on one side had been recruited to the heart tube and not that on the other side (Figure 5E). This was observed transiently, at stage E8.5g, with a significant higher number of cases when right cells only had been recruited to the heart tube. At a cellular level, left-right differences in cell proliferation have been reported in the sinus venosus at the 7-somite stage (Galli et al., 2008), but not in precursor cells. To investigate this further, we analysed cell proliferation with a higher spatio-temporal resolution, using 3D images and our staging system (Figure 5F–G). A significant increase in mitotic cells was observed in right precursors of the second heart field at E8.5g, but we did not detect any difference between the anterior and posterior domains.
 
@@ -83,13 +95,23 @@ We then analysed potential left-right asymmetries at the venous pole. Whereas th
 
 Our dye injections, proliferation assay and measures of the venous pole position are consistent. We show that there is a leftward displacement and a transient asymmetric cell ingression at the venous pole, which takes place at E8.5g, i.e. one stage after the rotation of the arterial pole at E8.5f. The faster ingression and proliferation of cells on the right side of the venous pole would generate a leftward deformation, opposite and subsequent to the rightward rotation of the arterial pole.
 
-## A novel, predictive, computer model of asymmetric heart morphogenesis
+### A novel, predictive, computer model of asymmetric heart morphogenesis
 
 To test how the mechanical constraints and left-right asymmetries that we have observed in the mouse can affect the shape of the cardiac tube, we performed computer simulations. The model was initiated as a hollow cylinder of 1800 finite elements, represented by pentahedra (Figure 6 and Figure 6—figure supplement 1A–D). The initial stage represented E8.5f but did not take into account the atrial region which is bifid. To account for the mechanical constraints observed in biological samples, the poles of the cylinder were fixed in the cranio-caudal (z) axis. In addition, the dorsal mesocardium was simulated by constraints along two vertical lines dorsally, restricting displacement in the dorso-ventral (y) and cranio-caudal (z) axes. The breakdown of the dorsal mesocardium was simulated by a progressive release of this constraint, starting from the nodes at mid-length of the tube and progressing towards the poles. The orientation of growth was defined relative to the tube, accompanying its deformation, and not relative to embryonic axes. Longitudinal growth parallels the axis of the tube, whereas circumferential growth is perpendicular. Longitudinal growth was implemented with a baseline value accounting for the observed lengthening of the tube (see Figure 2C) and with an initial ventral increase to reproduce the ventral bulge of the cardiac tube. Circumferential growth was added to account for the expansion of each ventricle. The simulation ends after 90 steps, corresponding to stage E8.5i.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig6-v1.jpg)
+
+**Figure 6.:** (A) Timeline of the simulations, with the successive events reflecting experimental observations. (B) Simulation of heart shape changes in 3D with a Finite Element model of a straight tube, seen from left (top) and right (down) views. The arterial pole asymmetry is modelled as a circumferential contraction (negative circumferential growth) on the right side and an expansion (positive circumferential growth) on the left side, both in a gradient towards the mid-length of the tube. The asymmetry at the arterial pole is calibrated to generate a 25° rotation. Simultaneously, the inflation of the ventricular chambers and the breakdown of the dorsal mesocardium (black bars), from the mid-length of the tube, are initiated. Where the dorsal mesocardium is present, the tube is free to move only along the x direction (f(x)). Where it has broken down, the tube is free to move along all the three directions (f(x,y,z)). (C) The venous pole asymmetry is modelled as a difference (2.8-fold) in longitudinal growth between the right and the left side. At this stage, breakdown of the dorsal mesocardium has progressed towards the poles, and thus, the tube is free along half of its length. (D) 3D shape of the cardiac tube at the end of the simulation showing the typical helix of the looped heart tube. The right (RV) and left (LV) ventricles are in darker and lighter blue, respectively. (E–H) Comparison of biological and simulated shapes. (E) Ventral views of 3D reconstructions of the heart tube at E8.5g, when looping begins. On the right, the myocardial layer (yellow) is made transparent, revealing the tube axis (red), and the notochord behind (green). (F) Ventral view of a simulated heart tube at step 60. The axis of the tube is shown as a red line. (G) Ventral views of 3D reconstructions of the heart tube at E8.5i, when looping has progressed to a counter-clockwise helix (as seen from the arterial pole). (H) Ventral view of a simulated heart tube at step 90.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Hollow-cylinder model of the heart tube, made of 1800 finite elements. (B) Mechanical constraints due to the attachment of the heart tube to the rest of the body: the arterial pole extremities of the dorsal mesocardium (red circles) are used as reference points and are fixed in all three directions; the dorsal mesocardium is modelled as two parallel vertical lines (red), initially fixed along the dorsal-ventral (y) and the anterior-posterior (z) directions, and progressively released from the mid-length of the tube; the tube extremities are only constrained in z, reflecting the fact that the distance between them remains constant. (C–D) Each finite element may either grow parallel (C, longitudinal growth) or perpendicular (D, circumferential growth) to the direction defined by the gradient of a morphogen assumed to be diffusing from the venous pole towards the arterial pole (polarizer). Initially the tube bends ventrally as longitudinal growth is increased on the ventral side at mid-length (C), and it is bent rightward at the arterial pole, as circumferential growth is positive on the left side and negative (contraction) on the right side (D). (E) Computer simulation of heart looping using a variant model, when the venous pole is free to move. (F) Computer simulation of heart looping in conditions when there is no dorsal mesocardium. Simulated shapes are shown at step 90 in ventral (left) and cranial (right) views, with the right (RV) and left (LV) ventricles in darker and lighter blue respectively and the cranio-caudal axis as a green dotted line.
 
 To this basal framework, we added growth patterns to simulate left-right asymmetries. The clockwise rotation of the arterial pole was simulated with a left-right difference in circumferential growth, in a tube which is constrained dorsally (Figure 6B). It was calibrated to simulate a 25° rotation, which decreases along the tube from the pole down to mid-length, in agreement with biological observations (Figure 4C). The asymmetric ingression at the venous pole is simulated with a burst of longitudinal growth on the right (Figure 6C). The sequence of growth patterns, which are used as inputs of the model and reflect biological observations, is summarised in Figure 6A. There are six input parameters of growth, of which two (the basic longitudinal growth and the circumferential growth at the arterial pole) are set to match observed morphological measurements, three (the initial ventral longitudinal growth, the left and right ventricle circumferential growth) are set to match qualitative shape observations, and one (the longitudinal growth asymmetry at the venous pole) is set arbitrarily to obtain at the end of the simulation a helical shape similar to that observed at stage E8.5i.
 
 Simulations ran with this model showed that, in the context of a tube growing between fixed poles, two left-right asymmetries, generating opposite deformations at the poles, together with the progressive breakdown of the dorsal mesocardium, were sufficient to generate a helical shape (Figure 6D), and thus a looped heart tube. The sequence of deformations was compatible with the biological sequence (Figure 6E–H, Video 2).
+
+![Video 2.](https://cdn.elifesciences.org/articles/28951/elife-28951-video2.mp4.jpg)
 
 We tested whether parameters of the model are required for the acquisition of a helical shape. If the constraint of a fixed distance between the poles was released, simulations led to a C-shape heart tube (Figure 6—figure supplement 1E), which is reminiscent of that observed in explant experiments (Manning and McLachlan, 1990). If the dorsal mesocardium was not taken into account, simulations also produced a C-shape heart tube (Figure 6—figure supplement 1F). If there was no left-right asymmetry, the simulated tube remained straight in a frontal plane, with only the ventral bulge (Figure 7B abscissa = 0 and ordinate = 0). If there was a single asymmetry at one pole, again the simulated tube acquired a C-shape (Figure 7B abscissa = 0 or ordinate = 0). This indicates that all parameters of the model are required together for generating a helical shape.
 
@@ -99,17 +121,47 @@ We tested whether parameters of the model are required for the acquisition of a 
 
 Thus, we provide a novel predictive model of heart looping, based on the buckling of the tube, when growing between fixed poles. Buckling is modulated by the progressive breakdown of the dorsal mesocardium and biased by a precise combination of left-right asymmetries at the poles, thus generating a helical shape.
 
-## Exploring the parameter space of the computer model, when left-right asymmetries vary
+### Exploring the parameter space of the computer model, when left-right asymmetries vary
 
 We explored how variations in initial left-right asymmetries affect the tube shape. The burst of growth at the venous pole may vary in its position or intensity (Figure 7A). Computer simulations show that there is a narrow window, in which a helical tube shape can be generated. This corresponds to a burst of longitudinal growth located on the right side, that is generating an opposite deformation to the arterial pole, and a burst intensity defined by the ratio of right over left growth around 2.8-fold. Outside this window, the tube has a flat S shape (in case of a burst on the same position, but with a higher fold difference), or most frequently a C shape. Reversal of the rotation at the arterial pole (leftward), combined with a reversed position of the burst at the venous pole, creates mirror images. We also tested how the intensities of asymmetries at the arterial and venous poles are combined to shape the heart tube (Figure 7B). Computer simulations indicate that the intensities of asymmetries at the arterial and venous poles have to be proportional to generate a helical shape. The helix becomes flatter, that is S-shape, when the intensity of asymmetry increases (red dotted diagonal). Such flat S-shapes are also generated close to the window of parameter space corresponding to the helix, whereas C-shapes are observed otherwise. These analyses show that the regulation of the position and intensity of left-right asymmetries at the poles of the heart can greatly influence the shape of the looped heart tube.
 
-## Experimental validation of the rotation of the arterial pole
+### Experimental validation of the rotation of the arterial pole
 
 Computer simulations indicate that acquisition of a helical heart tube requires opposite deformations from the arterial and venous poles. However, mechanistically, computer simulations of heart looping are compatible with either a rightward rotation of the arterial pole, or a burst of growth on the left side, similar (but opposite) to that observed at the venous pole. The computer model can be used to raise predictions and distinguish these cases. In case of a burst of growth at the arterial pole, the model predicts that the initial ventral line of the tube would remain ventral at the end of the simulations (Figure 8A), whereas it would shift to the right in case of a rotation (Figure 8B). To test these predictions experimentally, we injected DiI at the most cranial ventral midline, at E8.5e (Figure 8C–D) and E8.5f (Figure 8E–F), that is, before or during the stage when we first observed left-right asymmetry at the arterial pole. After 24 hr of culture, in the looped heart, the label was clearly located on the right side. In addition, we performed time-lapse imaging of mouse embryos at the beginning of heart looping, using inducible reporter lines to better track cell movement in a mosaic tissue. We generated two independent movies, in which a cell could be tracked at the arterial pole between E8.5e/f and E8.5g. In comparison with cells of the headfolds which mainly move caudally, cells of the arterial pole were found to move as much (Figure 8—figure supplement 1A–C, Video 3) or more (Figure 8—figure supplement 1D–E) to the lateral right side. These observations reinforce our morphological measurements (Figure 4A–C) and together demonstrate rightward rotation of the arterial pole in the mouse.
 
-## Simulation and experimental validation of the role of the dorsal mesocardium
+![Figure 8.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig8-v1.jpg)
+
+**Figure 8.:** (A–B) Computer simulations of heart looping with the fate of the initial ventral line shown in blue. The simulated shape is shown at step 90 in ventral (left) and right-lateral (right) views. When the asymmetry at the arterial pole is simulated by differential longitudinal growth between the left and right, the blue line remains ventral throughout the simulation (A). When the asymmetry at the arterial pole is simulated by a rightward rotation (25°), as in Figure 6, the blue line is displaced to the right (B). (C–D) An example of a heart at E8.5e is shown on the left in C, just after DiI labelling at the most cranial ventral midline (white arrow). This is schematised on the left in D. Fluorescent signal on brightfield images of hearts, after 24 hr culture are shown on the right. The initial ventral line has been displaced to the right (n = 2/2). (E–F) Similar images of hearts, after 24 hr culture of an E8.5f embryo, labelled by DiI at the most cranial ventral midline (see scheme). The initial ventral line has been displaced to the right (n = 4/5). Scale bars: 100 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Polr2aCreERT2/+; R26Rtdtomato/YFP embryos, are shown, after injection of a low dose of tamoxifen generating fluorescent cell mosaicism. (A–B) Initial and final images of a time-lapse movie between E8.5f and E8.5g, showing the tracks of reference headfold cells (arrowheads) and a cell at the arterial pole of the heart (arrow). (C) A close-up of the cell tracks is shown, with measurements of the cranio-caudal (vertical) and lateral (horizontal) displacements. (D–E) Initial and final images of an independent time-lapse movie, between E8.5e and E8.5g, showing the track of a cell at the arterial pole of the heart (arrow). Insets are 3D projections of the heart shape, from a ventral view (red) and right lateral view (white), with the position of the tracked cell in green. ap, arterial pole; hf, headfold; L, left; LV, left ventricle; l-vp, left venous pole; R, right; r-vp, right venous pole. Scale bars: 50 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/28951/elife-28951-video3.mp4.jpg)
+
+**Video 3.:** Video related to Figure 8—figure supplement 1A–C.
+
+### Simulation and experimental validation of the role of the dorsal mesocardium
 
 Our morphological observations showed that breakdown of the dorsal mesocardium and heart looping are simultaneous. To further explore how the dorsal mesocardium influences heart shape, we used the computer model to raise predictions. If the dorsal mesocardium is persistent, computer simulations indicate that looping of the heart tube is severely affected (Figure 9A, Video 4). The right ventricle fails to reach a right position relative to the left ventricle and the curvature of the tube is abnormal. This is reminiscent of Shh-/- mutants, in which heart looping was reported to be incomplete and the dorsal mesocardium persistent (Hildreth et al., 2009). Thus, to validate experimentally the prediction of our model, we analysed in more detail the heart tube of Shh-/- mutants, and compared them to our simulations. Qualitatively, the shape observed in Shh-/- mutants was similar to the shape predicted by the computer model (Figure 9A–B). Reconstruction of the axis of the heart tube from HREM images showed that Shh-/- mutant hearts fail to acquire a helical shape, at a stage when control hearts are looped (Figure 9C and Figure 9—source data 1). This is associated with a persistent dorsal mesocardium (Figure 9D–E and Figure 9—figure supplement 1). Between 10 and 12 somite stages, whereas all control embryos displayed a broken down dorsal mesocardium, this concerned only 2/5 mutants (Figure 9—figure supplement 1A,C). This was not a delay, as at E9.5, 2/6 mutants had no sign of dorsal mesocardium breakdown, and in the other 4/6 mutants, dorsal mesocardium breakdown was detected over a maximum length of 30 µm, which is much less than a breakdown over a minimum of 124 µm in control littermates (Figure 9—figure supplement 2). At E8.5, the dorsal mesocardium of mutant embryos was elongated in the dorso-ventral axis, specifically in the arterial half of the tube, however, with higher values in mutant compared to control samples (Figure 9—figure supplement 1C,D). These data indicate that the dorsal mesocardium is regionalised properly in Shh-/- mutants, and potentially able to stretch, but fails to largely break down.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig9-v1.jpg)
+
+**Figure 9.:** (A) Computer simulations of heart looping in control conditions (left), as in Figure 6, and when the dorsal mesocardium is persistent (right, simulated mutant). Simulated shapes are shown at step 90 in a ventral view, with the right (RV) and left (LV) ventricles in darker and lighter blue, respectively. The right ventricle-left ventricle axis (red dotted line) remains closer to the cranio-caudal axis (green dotted line) in the simulated mutant compared to control. (B) 3D visualisation of HREM images of a control (left) and Shh-/- mutant (right) embryo at E8.5, seen in a ventral view. (C) 3D reconstructions of the hearts shown in B, aligned with the notochord vertical (green). The axis of the myocardial tube is highlighted in red. (D) HREM section of a control embryo (left, E8.5j, 11 somites) showing the broken down dorsal mesocardium (red open arrowhead), and of a Shh-/- mutant embryo (right, 12 somites), showing persistence of the dorsal mesocardium (red arrowhead) for a myocardial tube of similar length (549 µm in the control and 535 µm in the mutant). The position of the section along the notochord is indicated in brackets. (E) 3D reconstructions from HREM images of a control (left) and a Shh-/- mutant (right) heart in ventral (top) and dorsal (bottom) views. The extent of the dorsal mesocardium is shown as a red bar on the side. (F) Graph showing the orientation of the right ventricle-left ventricle axis in control (n = 8) and Shh-/- mutants (n = 5) at 10 to 12 somite stages. (G) Graph showing the increase in the length of the myocardial tube as a function of the somite number, in control (blue) and Shh-/- mutant (red) embryos. The least-square linear regression lines and the Pearson coefficient R2 are shown for both the controls (continuous line, n = 22) and mutants (dotted line, n = 5). The two slopes are not significantly different, but the y-intercepts are (ANCOVA, p-value=0.001), indicating that the mutants have a significantly shorter tube length. (H) Validation of quantitative predictions raised by computer simulations for four geometrical parameters. (I) Cranial views of simulated hearts (left, control, right, mutant), showing the tube axis in red and the transverse sector in which it is inscribed in white. (J) 3D reconstructions from HREM images of a control (left) and Shh-/- mutant (right) heart, shown in a cranial view. The axis of the myocardial tube is in red, and the transverse sector in which it is inscribed is shown as red dotted lines. (K) Quantification of the angles of these transverse sectors in controls (blue, n = 8) and Shh-/- mutants (red, n = 5). The heart tube helix is significantly wider in control samples (*p-value<0.05, Mann-Whitney U test). Means and standard deviations are shown. Scale bars: 100 µm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A, C) Lateral thickness of the dorsal mesocardium, measured as in Figure 3D, in five controls (A) and 5 Shh-/- mutant hearts (C) at E8.5. Samples are identified with a number (S), and the somite number (So) of the embryo is indicated in brackets. The boundary between the arterial and venous halves of the tube is shown by a vertical dashed line. (B, D) Ventral elongation of the dorsal mesocardium, measured as in Figure 3F, in the same controls (B) and Shh-/- mutant hearts (D). The maximum value observed in controls is shown with an horizontal thick dashed line.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) 3D visualisation of HREM images of a control (left) and Shh-/- mutant (right) embryos, seen in a ventral view. The presence of the pericardium (S55) provides a rough appearance to the heart. (B, D) HREM section of a control embryo (B) showing the broken down dorsal mesocardium (red open arrowhead), and of a Shh-/- mutant embryo (D), showing persistence of the dorsal mesocardium (red arrowhead). Samples are identified with a number (S), and the position of the section is indicated in brackets. (C, E) Lateral thickness of the dorsal mesocardium, measured as in Figure 3D, in four controls (C) and 6 Shh-/- mutants (E). The somite number (So) of embryos is indicated in brackets. Scale bars: 100 µm.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/28951/elife-28951-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** Comparison between quantitative predictions for four geometrical parameters raised by two types of computer simulations and biological measures in Shh-/-mutant hearts at E8.5. Simulation with 50% left-right asymmetries correspond to a 12° rotation at the arterial pole and a 1.4-fold asymmetric ingression at the venous pole.
+
+![Video 4.](https://cdn.elifesciences.org/articles/28951/elife-28951-video4.mp4.jpg)
 
 As the tube of Shh-/- mutants is not straight, it suggests that some looping has occurred. The direction of the loop was found normally rightward (n = 5/5 at E8.5, 6/6 at E9.5) (Figure 9—source data 1 and Figure 9—figure supplement 2). However, heart looping was severely impaired in Shh-/- mutants (Figure 9F). When we measured the tube length, we found that Shh-/- mutants have a significantly shorter heart tube, compared to control samples (Figure 9G). Lengthening of the tube is not arrested, as the increase in the length of the heart tube relative to the number of somites follows a linear regression, with a slope not significantly different from that of control samples. This suggests that defects in heart looping in Shh-/- mutants are not the result of overall reduced growth. In contrast, our computer simulations show that persistence of the dorsal mesocardium constrains the longitudinal growth of the heart tube, such that enlargement of the tube is observed to account for the same amount of overall tissue growth. Thus, we measured the perimeter of the heart tube in Shh-/- mutants and found a significant 1.2-fold increase compared to controls (Figure 9H, Student test, p=0.03). The overall area of the heart tube did not change significantly between mutants and controls (0.56 ± 0.12 mm2 and 0.55 ± 1.0 mm2, respectively, n = 5 and 5, Student test, p=0.75), further showing that there is no overall growth defects in Shh-/- mutant hearts. We also confirmed that the distance between the poles is not significantly changed in Shh-/- mutant hearts (121 ± 15 µm, compared to 132 ± 17 µm in controls, n = 5 and 5, p=0.31, Student test). Finally, computer simulations predict that persistence of the dorsal mesocardium constrains the curvature of the tube axis in the transverse plane. This prediction is validated in Shh-/- mutant hearts, in which we observed a narrower curvature of the tube axis in the transverse plane (Figure 9H–J). Alternatively, we tested whether the shape of Shh-/- mutant hearts could be explained by impairment of left-right signalling: a reduction by 50% of left-right asymmetries would account for the malposition of the right ventricle, but not for the changes in length and the narrow helix (see transverse sector) of the heart tube (Figure 9—figure supplement 3). In summary, there is a discrepancy between the real shape of Shh-/- mutant hearts and the simulated shape in case of reduced left-right signalling. In contrast, there is a good match between the shape of Shh-/- mutant hearts and the simulated shape in case of persistent dorsal mesocardium, both qualitatively and quantitatively for the change of values of four geometrical parameters.
 
@@ -137,15 +189,151 @@ The looping mechanism that we propose for the heart tube shares similarities wit
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>wild-type, Swiss background</td>
+      <td>Janvier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>wild-type, C57Bl6 background</td>
+      <td>Janvier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>T4nLacZ, Swiss background</td>
+      <td>Biben et al. (1996) doi:10.1006/dbio.1996.0017</td>
+      <td>PMID 8575622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>Shh+/-, C57Bl6J background</td>
+      <td>Gonzalez-Reyes et al. (2012) doi:10.1016/j.neuron.2012.05.018</td>
+      <td>MGI:5440762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Polr2aCreERT2/+, C57Bl6 background</td>
+      <td>Guerra et al. (2003) PMID:12957286</td>
+      <td>MGI:3772332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>R26YFP/+, C57Bl6 background</td>
+      <td>Srinivas et al. (2001) PMID:11299042</td>
+      <td>MGI:2449038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>R26Rtdtomato/+ (Ai14), C57Bl6 background</td>
+      <td>Madisen et al. (2010) doi:10.1038/nn.2467</td>
+      <td>MGI:3809524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PH3 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab32107</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Isl1 (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: 39.4D5</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MMP2 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Santa Cuz: sc13594</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG Alexa Fluor 546</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A11035</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG2b Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A21141</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG1 Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A21121</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JB-4 embedding kit</td>
+      <td>Polysciences</td>
+      <td>Polysciences: 00226–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GM6001 (Ilomast)</td>
+      <td>Millipore</td>
+      <td>Millipore: CC1000</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gftbox</td>
+      <td>Kennaway et al. (2011) doi:10.1371/journal.pcbi.1002071</td>
+      <td></td>
+      <td>Matlab Finite Element Analysis package simulating biological growth</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ICY</td>
+      <td>de Chaumont et al. 2012 doi:10.1038/nmeth.2075</td>
+      <td></td>
+      <td>Open platform for bioimage informatics</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 Control embryos (Figure 1) were from a mixed genetic background. The Shh+/- mouse line (Gonzalez-Reyes et al., 2012) was maintained in a C57Bl6J genetic background. Shh+/+ and Shh+/- were indistinguishable and used together as control embryos. Animal procedures were approved by the ethical committee of the Institut Pasteur and the French Ministry of Research. For imaging, embryos were dissected, incubated in cold 250 mM KCl (at E9.5), fixed in 4% paraformaldehyde or Bouin’s fluid, dehydrated and embedded in methacrylate resin, as previously described (Weninger et al., 2006). The number of somites was evaluated from the HREM images.
 
-## HREM imaging
+### HREM imaging
 
 HREM acquires images of the surface of the resin block, in which the embryo is embedded, to produce perfectly registered digital image stacks capturing the 3D tissue architecture at high resolution. Resulting datasets comprise 1000–2000 images of 1 × 1 µm resolution produced by repeated removal of 1–2 µm sections. HREM was performed on E8.5 or E9.5 embryos as described previously (Mohun and Weninger, 2012), using the optical high-resolution episcopic microscope (Indigo Scientific).
 
-## 3D reconstruction and quantification
+### 3D reconstruction and quantification
 
 Hearts were segmented from HREM images using the Imaris software (Bitplane). The contour of the myocardium was manually outlined at regular Z intervals, and the Create Surface function was used to reconstruct the 3D surface. The notochord was similarly segmented to serve as a reference longitudinal axis. 3D visualisation was produced with ICY (Institut Pasteur, Paris) for raw images, and with Blender (Blender Foundation, Netherlands) or DAZ Studio (Daz Productions Inc.) for segmented images. 3D PDF files were built with Acrobat Pro (Adobe Systems Inc.) after exporting the Imaris file in WRL format, and conversion into a U3D format with Meshlab (Visual Computing Lab).
 
@@ -155,23 +343,23 @@ The orientation of the right ventricle–left ventricle axis was similarly obtai
 
 The thickness and the dorso-ventral elongation of the dorsal mesocardium, the positions of its ventral and dorsal aspects, as well as the angle between the heart tube and the dorsal pericardial wall, were measured in transverse sections, after aligning the HREM cubic images on the notochord axis with the ICY software (StackRotationByAngle plugin).
 
-## Mouse embryo culture
+### Mouse embryo culture
 
 E8.5 embryos from wild-type [Swiss] mice, or from the T4-nlacZ [Swiss] transgenic line (Biben et al., 1996) were collected, transferred to Hank’s solution and labelled by injection of a lipophilic carbocyanine (Interchim, France) as described previously (Domínguez et al., 2012). Symmetrical dye injections were done at the right and left venous pole of the embryo using DiO and DiI to distinguish them. Injections at the most cranial midline of the heart tube were performed using DiI. Injected embryos were photographed using a Nikon Digital Sight DS-L1 camera system and a Nikon C-DSS230 stereomicroscope and, then, cultured for 24 hr in 75% rat serum, 25% T6 medium (Whittingham, 1971), with 5% CO2, 5% O2, 90% N2 in rolling bottles in a precision incubator (BTC Engineering, Milton, Cambridge, UK). Two embryos were cultured per bottle, with one identified by an injection of DiI into the left headfold. At the end of the culture, embryos were washed in PBS, fixed 15 min in 4% paraformaldehyde in PBS, washed in PBS and kept at 4°C until examination with a Leica MZ16F fluorescence stereomicroscope. Embryos that showed widespread background heart fluorescence or appeared morphologically abnormal at the end of the culture, were excluded from the analysis.
 
 For drug treatment, E8.5 embryos from wild-type [C57Bl6J] mice were collected. 10 µM of GM6001 (Ilomast - Millipore), or an equivalent volume of the adjuvant (DMSO), were added to the culture medium, in a 5% CO2-5% O2 atmosphere, and rinsed in PBS after 10 hr. Embryos were processed for HREM imaging or further incubated in culture medium, in a 5% CO2-20% O2 atmosphere, and harvested after 24 hr. Brightfield images were acquired with a Zeiss AxioCamICc5 Camera and a Zeiss StereoDiscovery V20 stereomicroscope.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence on 10-µm cryostat sections was performed with a standard protocol, including permeabilisation in 0.75% Triton, blocking in 10% inactivated goat serum and 0.5% Triton, quenching of aldehydes in 2.6 mg/ml NH4Cl, and using primary antibodies to MMP2 (1/50, sc-13594), Alexa Fluor conjugated secondary antibodies (1/500) and Hoechst nuclear staining. Multi-channel 16-bit images were acquired with a Zeiss LSM 700 confocal microscope and 20X/0.75 or 40X/1.3 oil objectives.
 
 Immunofluorescence on whole mount E8.5 embryos was performed using CUBIC clearing adapted from (Susaki et al., 2015). Samples were incubated overnight in the lipid-removing Reagent-1, then 48 hr with primary antibodies to PH3 (1/100, ab32107) and Isl1 (1/50, 39.4D5 DSHB), and 48 hr Alexa Fluor conjugated secondary antibodies (1/500, Molecular probes) and Hoechst nuclear staining in TSA Blocking Reagent (Perkin Elmer). Samples were finally incubated 48 hr in Reagent-2 for adjustment of the refractive index and mounted in 0.4% agarose in Reagent-2. Multi-channel 16-bit images were acquired with a Z.1 lightsheet microscope (Zeiss) and a 20X/1.0 objective. Automatic detection of mitotic cells was performed with the Spots plugin of Imaris and co-localisation with Isl1 staining was evaluated manually.
 
-## Live-imaging
+### Live-imaging
 
 Live-imaging was performed as described by Ivanovitch et al., 2017. For labelling isolated cells, hydroxy-tamoxifen was administered by oral gavage (2–4 mg/ml) in Polr2aCreERT2/+ (Guerra et al., 2003); R26Rtdtomato/YFP ([Srinivas et al., 2001]; Ai14 line [Madisen et al., 2010]) mouse embryos at E7. Embryos were cultured under an upright LSM780 two-photon microscope equipped with a 5% CO2 incubator and a 37°C heated chamber, in 50% fresh rat serum, 48% DMEM without phenol red, 1% N-2 neuronal growth supplement and 1% B-27 supplement, covered with mineral oil. Custom plastic holders were used to immobilise embryos during time-lapse acquisition, with the ventral side facing the objective. Multi-channel multi-section eight-bit images were acquired with a 20X/1 objective and MaiTai laser line at 1000 nm, every minute over 4 hr. The size of a scan was 512 × 512 × 19 voxels, with a resolution of 0.83 × 0.83 × 4 µm.
 
-## FEA simulations
+### FEA simulations
 
 This model is based on the GFtbox software, a MATLAB (The Mathworks, Inc., USA) application developed for the simulation of a growing continuous sheet of tissue (Kennaway et al., 2011). The heart tube is represented as a cylindrical mesh, made of 938 nodes and 1800 finite elements, with two outside and inside surfaces and a thickness (Figure 6, Figure 6—figure supplement 1A). At each successive step during a simulation, each element is deformed according to a growth tensor field specified from the hypotheses of the model. The constraint of continuity of the tissue implies that the resulting growth is different from the input growth, this difference giving rise to residual strain. The output shape of the simulations is computed by minimising the energy derived from this residual strain, under the assumption of linear elasticity (see [Kennaway et al., 2011] for a detailed presentation and discussion of this modeling framework and its numerical implementation).
 
@@ -193,6 +381,6 @@ The simulation for Figure 8A replaced the rotation at the arterial pole by a bur
 
 In simulations of a persistent dorsal mesocardium in Figure 9, the only change relative to the basic model was the absence of breakdown of the dorsal attachment, which thus was fixed in yz and free in x throughout the simulation. The MATLAB code used to generate the shapes is provided in Source code 5.
 
-## Statistics
+### Statistics
 
 Sample size was checked post-hoc, using the PS software, in order to ensure a power of at least 0.8, with a type I error probability of 0.05, with an effect size of 100% (Figures 2C, 3F and 4C, Figure 4—figure supplement 1B), 50% (Figure 5E) or 25% (Figures 5G and 9F,G and K). All sample numbers indicated in the text refer to biological replicates, i.e. different embryos. No outlier was excluded from the data analysis. Comparisons of two centre-values were done on the average, using a Student two-tailed test. A paired Student test was used for comparing left and right angles or lengths at successive positions (Figure 4C, Figure 4—figure supplement 1B). A Mann-Whitney test was used when a normal distribution could not be assumed. A chi-squared goodness-of-fit test, with Yates’s correction for small sample size, was used to compare observed with expected distributions. An ANCOVA (analysis of covariance) was used to compare linear regressions. Tests were performed with either Excel or R statistical packages. When assessing whether a distance was significantly different from zero, confidence intervals were calculated assuming a normal distribution of measurements (Figure 5B). The experiments were not randomised and the investigators were not blinded to allocation during experiments and outcome assessment.

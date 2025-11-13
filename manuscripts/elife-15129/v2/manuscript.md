@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.15129.001 The cell achieves DNA double-strand break (DSB) repair in the context of chromatin structure. However, the mechanisms used to expose DSBs to the repair machinery and to restore the chromatin organization after repair remain elusive. Here we show that induction of a DSB in human cells causes local nucleosome disassembly, apparently independently from DNA end resection. This efficient removal of histone H3 from the genome during non-homologous end joining was promoted by both ATM and the ATP-dependent nucleosome remodeler INO80. Chromatin reassembly during DSB repair was dependent on the HIRA histone chaperone that is specific to the replication-independent histone variant H3.3 and on CAF-1 that is specific to the replication-dependent canonical histones H3.1/H3.2. Our data suggest that the epigenetic information is re-established after DSB repair by the concerted and interdependent action of replication-independent and replication-dependent chromatin assembly pathways. DOI: http://dx.doi.org/10.7554/eLife.15129.001
+The cell achieves DNA double-strand break (DSB) repair in the context of chromatin structure. However, the mechanisms used to expose DSBs to the repair machinery and to restore the chromatin organization after repair remain elusive. Here we show that induction of a DSB in human cells causes local nucleosome disassembly, apparently independently from DNA end resection. This efficient removal of histone H3 from the genome during non-homologous end joining was promoted by both ATM and the ATP-dependent nucleosome remodeler INO80. Chromatin reassembly during DSB repair was dependent on the HIRA histone chaperone that is specific to the replication-independent histone variant H3.3 and on CAF-1 that is specific to the replication-dependent canonical histones H3.1/H3.2. Our data suggest that the epigenetic information is re-established after DSB repair by the concerted and interdependent action of replication-independent and replication-dependent chromatin assembly pathways.
 
 ## Introduction
 
@@ -33,95 +33,89 @@ In this study, we set out to delineate nucleosome dynamics during DSB repair in 
 
 ## Results
 
-## Histone disassembly and reassembly around DSBs in human cells
+### Histone disassembly and reassembly around DSBs in human cells
 
-To investigate the dynamics of nucleosomes during DSB repair in mammalian cells, we deployed an I-PpoI homing endonuclease inducible system, as previously described (
+To investigate the dynamics of nucleosomes during DSB repair in mammalian cells, we deployed an I-PpoI homing endonuclease inducible system, as previously described (Pankotai et al., 2012) (Figure 1A). Addition of 4-hydroxytamoxifen (4-OHT) induces nuclear localization of I-PpoI that was fused to the estrogen receptor nuclear localization domain. At 3 hr after addition of tamoxifen to HEK-293 cells to stimulate nuclear localization, the I-PpoI site within the SLCO5A1 gene was about 50% cleaved in the cell population, as determined by PCR over the I-PpoI site using flanking primers (Figure 1A,B). The DNA level at the I-PpoI site was restored back to over 95% at 6–8 hr, indicating that most of the DSBs had been repaired. The kinetics and efficiency of DNA cutting was confirmed by southern blotting analysis (Figure 1C). The fairly synchronous cutting and rapid repair was similar to that observed previously with the same I-PpoI system (Pankotai et al., 2012).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic demonstrating primer pairs spanning the I-PpoI site that were used to measure cutting and repair by quantitative PCR, while ChIP analysis was performed on the chromatin to the 5’ and 3’ of the I-PpoI site. (B) The kinetics of generation and repair of the DSB induced in the SLCO5A1 gene by the I-PpoI endonuclease. Shown is the average +/- SEM from three independent experiments. (C) Southern analysis of the kinetics of generation and repair of the DSB induced in the SLCO5A1 gene by the I-PpoI endonuclease from an independent time course from that shown in (B). (D) Quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200, 500, 750 and 1000 bps (from left to right panels) away from the I-PpoI site within the SLCO5A1 gene. Shown is the average +/- SEM from three independent experiments. (E) (from top to bottom) DNA cutting analysis at the I-PpoI site within the RYR2 gene, input and H3 occupancy from H3 ChIP analysis 200bp from the I-PpoI site within the RYR2 gene. Shown is the average +/- SEM from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15129.003
+**Figure 1.:** (A) Schematic demonstrating primer pairs spanning the I-PpoI site that were used to measure cutting and repair by quantitative PCR, while ChIP analysis was performed on the chromatin to the 5’ and 3’ of the I-PpoI site. (B) The kinetics of generation and repair of the DSB induced in the SLCO5A1 gene by the I-PpoI endonuclease. Shown is the average +/- SEM from three independent experiments. (C) Southern analysis of the kinetics of generation and repair of the DSB induced in the SLCO5A1 gene by the I-PpoI endonuclease from an independent time course from that shown in (B). (D) Quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200, 500, 750 and 1000 bps (from left to right panels) away from the I-PpoI site within the SLCO5A1 gene. Shown is the average +/- SEM from three independent experiments. (E) (from top to bottom) DNA cutting analysis at the I-PpoI site within the RYR2 gene, input and H3 occupancy from H3 ChIP analysis 200bp from the I-PpoI site within the RYR2 gene. Shown is the average +/- SEM from three independent experiments.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Input and histone H3 occupancy from the H3 ChIP assayed at 3000 bp from the I-PpoI site at SLCO5A1. This is from the same experiment shown in Figure 1, but using primer pairs at a greater distance. (B) Quantitation of cutting and repair analysis at the INTS4 gene.DOI: http://dx.doi.org/10.7554/eLife.15129.004
+**Figure 1—figure supplement 1.:** (A) Input and histone H3 occupancy from the H3 ChIP assayed at 3000 bp from the I-PpoI site at SLCO5A1. This is from the same experiment shown in Figure 1, but using primer pairs at a greater distance. (B) Quantitation of cutting and repair analysis at the INTS4 gene.
 
 Complete local nucleosome disassembly and reassembly occurred during DSB repair, as indicated by ChIP analysis of H3 around the I-PpoI break sites within the SLCO5A1 gene (Figure 1D). The H3 occupancy closely followed the kinetics of the cutting and repair using PCR products centered 200bp to the 5’ and 3’ of the I-PpoI site (Figure 1D and 1B). All data was normalized to histone occupancy at the GAPDH gene at each time point, which is not near any I-PpoI sites. Furthermore, it appears that nucleosomes adjacent to the break were disassembled completely from around all the DSBs in the population, because histone occupancy dropped to 50% at the three-hour time point at which 50% of the DNA was cleaved. Histone occupancy returned to the pre-damage levels at the 6–8 hr time point, which is the same time point at which the DNA lesion is approximately 100% repaired, indicating that chromatin reassembly occurs concomitant with DSB repair (Figure 1D and 1B). The histone H3 disassembly around the DSB progressively diminished at 500bp and 750bp from the break as compared to 200bp from the I-PpoI site (Figure 1D), while no conspicuous histone H3 loss was observed at either 1000bp (Figure 1D) or 3000bp (Figure 1—figure supplement 1A) from the break. This corresponds to a region of approximately 8 nucleosomes being disassembled during DSB repair in human cells. Importantly the observed histone H3 disassembly around a DSB does not appear to be a consequence of persistent DNA end resection, because the DNA level (ChIP input) around the I-PpoI-induced DNA breaks was not significantly affected by induction of DSBs (Figure 1D).
 
 This situation is not unique to the SLCO5A1 gene, because we observed similar kinetics of DSB induction and repair for I-PpoI sites within the RYR2 gene (Figure 1E, top panel) and the INTS4 gene (Figure 1—figure supplement 1B). These data show that the I-PpoI system generates site-specific DSBs in human cells efficiently that are effectively repaired somewhat synchronously. Furthermore, these data show that chromatin disassembly and reassembly accompany cutting and repair of I-PpoI sites within the human genome.
 
-## Chromatin disassembly and reassembly occur during NHEJ, independent of DNA end-resection
+### Chromatin disassembly and reassembly occur during NHEJ, independent of DNA end-resection
 
-To determine whether the observed nucleosome disassembly and reassembly around DSBs occurred during HR or NHEJ, we knocked-down essential components of each repair pathway. Knockdown of RAD51, the recombinase in HR, had no detectable effect on the kinetics of DSB cutting and repair compared to knockdown with a scrambled RNA, indicating that efficient repair of the I-PpoI site occurs in the absence of HR (
+To determine whether the observed nucleosome disassembly and reassembly around DSBs occurred during HR or NHEJ, we knocked-down essential components of each repair pathway. Knockdown of RAD51, the recombinase in HR, had no detectable effect on the kinetics of DSB cutting and repair compared to knockdown with a scrambled RNA, indicating that efficient repair of the I-PpoI site occurs in the absence of HR (Figure 2A). By contrast, knockdown of KU80, a key factor in NHEJ, led to the more rapid accumulation of breaks and no detectable repair (Figure 2A). This result indicates that NHEJ is the major pathway involved in the repair of this I-PpoI site in asynchronous cells, and is consistent with the failure to observe a DNA repair defect upon RAD51 knockdown. The NHEJ pathway is the preferential DSB repair pathway used in G1 phase of the cell cycle. That repair of the I-PpoI break requires KU80 but not RAD51 is not a consequence of effects of the knockdowns on the cell cycle because flow cytometry analysis detected no apparent change in the cell cycle phase distribution (Figure 2—figure supplement 1). As additional evidence that chromatin disassembly and reassembly around the DSB was occurring during NHEJ, we observed efficient chromatin disassembly and reassembly during RAD51 knockdown (Figure 2A). Furthermore, chromatin disassembly still occurs in the KU80 knockdown (Figure 2A, Figure 2—figure supplement 2), indicating that chromatin disassembly occurs prior to recruitment of the core NHEJ machinery.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig2-v2.jpg)
 
-**Figure 2.:** (A) The repair of the I-PpoI sites is by NHEJ not HR. At the top is shown western-blotting of the RAD51 and KU80 knockdowns; below is shown the kinetics of generation and repair of the DSBs at SLCO5A1 I-PpoI sites in scramble shRNA knockdown (left), sh-hKU80 (center) and sh-hRAD51 (right) knockdown cells respectively. At the bottom is shown quantitation of the proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in the scrambled shRNA knockdown (left panels), the KU80 knockdown (center panels) and RAD51 knockdown (right panels) knockdown cells. Shown is the average +/- SEM from three independent experiments. Asterisks indicate significant changes from the scramble shRNA knockdown, p = 0.005, as determined by the Student’s t-test. (B) Inhibition of MRE11 has no effect on repair or chromatin disassembly / reassembly around the I-PpoI site. The panels on the left are experiments performed with cells grown with the MRE11 exonuclease inhibitor PFM39, while those on the right were from experiments performed with cells grown with the MRE11 endonuclease inhibitor PFM03. At the top is shown the kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites; below is the quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 and 500 bps from the I-PpoI site within the SLCO5A1 gene.DOI: http://dx.doi.org/10.7554/eLife.15129.005
+**Figure 2.:** (A) The repair of the I-PpoI sites is by NHEJ not HR. At the top is shown western-blotting of the RAD51 and KU80 knockdowns; below is shown the kinetics of generation and repair of the DSBs at SLCO5A1 I-PpoI sites in scramble shRNA knockdown (left), sh-hKU80 (center) and sh-hRAD51 (right) knockdown cells respectively. At the bottom is shown quantitation of the proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in the scrambled shRNA knockdown (left panels), the KU80 knockdown (center panels) and RAD51 knockdown (right panels) knockdown cells. Shown is the average +/- SEM from three independent experiments. Asterisks indicate significant changes from the scramble shRNA knockdown, p = 0.005, as determined by the Student’s t-test. (B) Inhibition of MRE11 has no effect on repair or chromatin disassembly / reassembly around the I-PpoI site. The panels on the left are experiments performed with cells grown with the MRE11 exonuclease inhibitor PFM39, while those on the right were from experiments performed with cells grown with the MRE11 endonuclease inhibitor PFM03. At the top is shown the kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites; below is the quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 and 500 bps from the I-PpoI site within the SLCO5A1 gene.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.15129.006
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Input and histone H3 occupancy from the H3 ChIP assayed in KU80 knockdown cells at 500bp from the I-PpoI site at SLCO5A1. This is from the same experiment shown in Figure 2, but using primer pairs at a greater distance.DOI: http://dx.doi.org/10.7554/eLife.15129.007
+**Figure 2—figure supplement 2.:** (A) Input and histone H3 occupancy from the H3 ChIP assayed in KU80 knockdown cells at 500bp from the I-PpoI site at SLCO5A1. This is from the same experiment shown in Figure 2, but using primer pairs at a greater distance.
 
 The MRN complex plays a critical role in detecting, signing and protecting DSBs (Wyman and Kanaar, 2006). The nuclease activity of MRE11 regulates the initiation of DNA end-resection and licensing HR (Shibata et al., 2014). To investigate if DNA end-resection is required for histone loss, we used two inhibitors of MRE11, PFM39 (a MRE11 exonuclease inhibitor) and PFM03 (a MRE11 endonuclease inhibitor). Addition of either inhibitor had no effect on histone H3 disassembly and reassembly during DSB repair (Figure 2B). This is in agreement with the result above that RAD51 knockdown does not disrupt either DNA repair or local chromatin disassembly. Taken together these results indicate that DNA end resection and HR are not required for histone H3 disassembly around DSBs in human cells. Given that local chromatin disassembly around DSBs is unlikely to be driven by the DNA resection machinery physically plowing through nucleosomes, nor requires KU80 recruitment, we sought to identify the trigger for nucleosome disassembly at DSBs.
 
-## ATM, but not ATR, promotes nucleosome disassembly around DSBs
+### ATM, but not ATR, promotes nucleosome disassembly around DSBs
 
-ATM (ataxia-telangiectasia-mutated) and ATR (ATM- and Rad3-related) are the central sensor kinases in the DNA damage checkpoint. Whereas ATM is primarily activated by blunt-ended DSBs, activation of ATR is mostly triggered by ssDNA lesions (
+ATM (ataxia-telangiectasia-mutated) and ATR (ATM- and Rad3-related) are the central sensor kinases in the DNA damage checkpoint. Whereas ATM is primarily activated by blunt-ended DSBs, activation of ATR is mostly triggered by ssDNA lesions (Rhind, 2009). To determine whether activation of the DNA damage checkpoint via ATM or ATR signaling initiates chromatin assembly, we applied ATM (KU55933) and ATR (VE-821) inhibitors to the I-PpoI repair assay. Inhibition of ATR did not disrupt the histone H3 disassembly and reassembly around the DSB (Figure 3A). Upon ATM inhibition, DNA repair was less efficient, as would be expected given the many roles of the DNA damage checkpoint in promoting DNA repair events (Figure 3B). Upon ATM inhibition, chromatin disassembly was delayed by about 2 hr as compared to the DNA cutting, where the time point of maximal DNA cutting (3 hrs) showed no significant chromatin disassembly (Figure 3B). In addition, the maximal loss of histones was less pronounced around the DSB upon ATM inhibition. Specifically, histone occupancy dropped to only about 75% at the time points where DNA was 50% cut during ATM inhibition (Figure 3B), in comparison to the drop of histone occupancy to about 50% at the time points where DNA was 50% cut in the absence of inhibitor. As such, ATM promotes timely and efficient nucleosome disassembly around a DSB.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig3-v2.jpg)
 
-**Figure 3.:** (A) The kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites is shown at the top; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in cells treated with ATR inhibitor VE-821 is shown below. Shown is the average +/- SEM from three independent experiments. (B) As in A, but with treatment with ATR inhibitor KU55933. Asterisks indicate significant changes from no inhibitor, p=0.005, as determined by the Student’s t-test.DOI: http://dx.doi.org/10.7554/eLife.15129.008
+**Figure 3.:** (A) The kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites is shown at the top; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in cells treated with ATR inhibitor VE-821 is shown below. Shown is the average +/- SEM from three independent experiments. (B) As in A, but with treatment with ATR inhibitor KU55933. Asterisks indicate significant changes from no inhibitor, p=0.005, as determined by the Student’s t-test.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** The same inhibitors shown in Figure 3 were used in combination, and no additional affect beyond ATM inhibition alone was noted.DOI: http://dx.doi.org/10.7554/eLife.15129.009
+**Figure 3—figure supplement 1.:** The same inhibitors shown in Figure 3 were used in combination, and no additional affect beyond ATM inhibition alone was noted.
 
 To determine whether ATR may have a role in triggering chromatin disassembly that is only revealed in the absence of ATM, we inhibited both ATM and ATR (Figure 3—figure supplement 1). The results of inhibition of both ATM and ATR were not significantly different from those obtained from ATM inhibition alone. Given that ATR is activated by single-strand DNA, these results provide further evidence that DNA end resection is not involved in chromatin disassembly around a DSB in human cells.
 
-## INO80, but not SMARCAD1, promotes nucleosome disassembly around DSBs in human cells
+### INO80, but not SMARCAD1, promotes nucleosome disassembly around DSBs in human cells
 
-Nucleosome disassembly is mediated by histone chaperones in concert with ATP-dependent nucleosome remodelers. All our efforts to identify histone chaperones involved in chromatin disassembly during DSB repair to date have failed to find the responsible histone chaperones (data not shown). Therefore, we turned our attention to the ATP-dependent remodelers, especially the ones that are known to be phosphorylated by ATM in response to DSBs. Budding yeast Fun30 promotes DNA end resection and chromatin disassembly around DSBs (
+Nucleosome disassembly is mediated by histone chaperones in concert with ATP-dependent nucleosome remodelers. All our efforts to identify histone chaperones involved in chromatin disassembly during DSB repair to date have failed to find the responsible histone chaperones (data not shown). Therefore, we turned our attention to the ATP-dependent remodelers, especially the ones that are known to be phosphorylated by ATM in response to DSBs. Budding yeast Fun30 promotes DNA end resection and chromatin disassembly around DSBs (Costelloe et al., 2012; Chen et al., 2012). Its mammalian counterpart SMARCAD1 promotes end resection, presumably in a similar way (Rowbotham et al., 2011) (Costelloe et al., 2012; Chen et al., 2012). Therefore, we examined whether SMARCAD1 also drives chromatin disassembly around DNA break ends in mammalian cells. Consistent with SMARCAD1 playing a role in chromatin disassembly, there was a pronounced delay in the chromatin disassembly around the DSB, upon SMARCAD1 knockdown (Figure 4A lower panel) as compared to scrambled RNA knockdown (Figure 4A, and data not shown). However, the kinetics of induction of the DSB was also similarly delayed (Figure 4A top panel), indicating that the delayed chromatin disassembly was a consequence of the delayed DNA cutting and that SMARCAD1 played no role in promoting chromatin disassembly in the inducible DSB system that we were using. We sought to discover whether SMARCAD1 led to a chromatin structure that was less accessible to the I-PpoI endonuclease and found no evidence for this (data not shown). However, we found that the induction of the I-PpoI endonuclease itself was markedly reduced upon SMARCAD1 knockdown (Figure 4B), which was presumably due to a role of SMARCAD1 directly or indirectly in its expression. These results highlight the need to be careful not to over interpret the role of ATP-dependent chromatin remodelers, which are often involved in many genomic processes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig4-v2.jpg)
 
-**Figure 4.:** (A) Western-blotting of SMARCAD1 knockdown is shown at the top. The kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites is shown below; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in SMRACAD1 knockdown cells is shown at the bottom. Shown is the average +/- SEM from three independent experiments. Efficient cutting and repair was seen in control knockdown cells performed in parallel (data not shown). Asterisks indicate significant changes from the scramble shRNA knockdown, p = 0.005, as determined by the Student’s t-test. (B) Kinetics of I-PpoI expression in Scrambled shRNA treated and SMARCAD1 knockdown cells respectively. (C) As in A, but for INO80 knockdown.DOI: http://dx.doi.org/10.7554/eLife.15129.010
+**Figure 4.:** (A) Western-blotting of SMARCAD1 knockdown is shown at the top. The kinetics of generation and repair of the DBSs at SLCO5A1 I-PpoI sites is shown below; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis at 200 bps from the I-PpoI site within the SLCO5A1 gene in SMRACAD1 knockdown cells is shown at the bottom. Shown is the average +/- SEM from three independent experiments. Efficient cutting and repair was seen in control knockdown cells performed in parallel (data not shown). Asterisks indicate significant changes from the scramble shRNA knockdown, p = 0.005, as determined by the Student’s t-test. (B) Kinetics of I-PpoI expression in Scrambled shRNA treated and SMARCAD1 knockdown cells respectively. (C) As in A, but for INO80 knockdown.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig4-figsupp1-v2.jpg)
-
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.15129.011
 
 The remodeling complex INO80 (Inositol requiring 80) was previously shown to bind DSBs and assist DSB repair in yeast (Morrison and Shen, 2009). In addition, INO80 is phosphorylated by ATM in response to DSBs in yeast (Morrison et al., 2007). Therefore, we tested whether INO80 was involved in nucleosome disassembly around a DSB in human cells. Upon INO80 knockdown, the DNA breaks accumulated faster than normal (Figure 4C), which is characteristic of conditions in which DSB repair is blocked, such as the KU80 knockdown (Figure 2A). Indeed, DNA repair did not occur upon INO80 knockdown (Figure 4C). Compared to DNA cutting, chromatin disassembly was markedly delayed upon INO80 knockdown. These results indicate that the ATP-dependent chromatin remodeler INO80 is required for timely chromatin disassembly around a DSB in human cells.
 
 Given that ATM phosphorylates INO80 (Morrison et al., 2007), we were interested to see if ATM and INO80 had an epistatic relationship during chromatin disassembly. Consistent with this prediction, we found that combined inhibition of ATM in cells with IN080 knockdown, led to the same degree of defect in chromatin disassembly as single INO80 knockdown (Figure 4—figure supplement 1).
 
-## ASF1A, CAF-1 and HIRA promote chromatin assembly after DSB repair
+### ASF1A, CAF-1 and HIRA promote chromatin assembly after DSB repair
 
-Our previous work in yeast indicated that the histone chaperone ASF1 is required for chromatin assembly after DSB repair via HR (
+Our previous work in yeast indicated that the histone chaperone ASF1 is required for chromatin assembly after DSB repair via HR (Chen et al., 2008). We knocked down the mammalian paralogs ASF1A and ASF1B to determine whether chromatin reassembly after NHEJ in human cells also required ASF1. ASF1A knockdown led to a complete block in chromatin reassembly after DSB repair (Figure 5A, compare lower panel to top panel). Meanwhile, knockdown of ASF1B led to a subtle delay in chromatin reassembly compared to the kinetics of DSB repair (Figure 5B). ASF1A/B functions together with the HIRA chaperone in the assembly of the replication-independent variant of H3, H3.3, while ASF1A/B also functions with CAF-1 in the assembly of replication-dependent histone H3.1 and H3.2. To determine which chromatin assembly pathway functions after DSB repair in humans, we knocked down CAF-1 and HIRA. Knockdown of CAF-1 led to a major defect in chromatin reassembly after DSB repair (Figure 5C), suggesting that the CAF-1-dependent chromatin assembly pathway is utilized during DSB repair in human cells, even in the absence of significant DNA resection or DNA synthesis. These results were obtained with two independent shRNAs. We observed that knockdown of HIRA led to a complete block in chromatin reassembly after DSB repair with two independent shRNAs (Figure 5D), demonstrating that replication-independent chromatin assembly is also important for restoring the chromatin structure after DSB repair in human cells. Because there is very little chromatin assembly after DSB repair in the absence of CAF-1 and virtually no chromatin assembly after DSB repair in the absence of HIRA, it would appear that the replication-dependent and replication-independent chromatin assembly pathways are interdependent for restoring the chromatin structure following DSB repair (Figure 6).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig5-v2.jpg)
 
-**Figure 5.:** (A) Western-blotting of ASF1A knockdown is shown at the top. The kinetics of generation and repair of the DBSs at the SLCO5A1 I-PpoI site is shown below; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis 200 bps from the I-PpoI site within the SLCO5A1 gene in ASF1A knockdown cells is shown at the bottom. Shown is the average +/- SEM from three independent experiments. Asterisks indicate significant changes from the scramble shRNA knockdown, p=0.005, as determined by the Student’s t-test. (B) As in A, but for ASF1B. (C) As in A, but for CAF-1. Data on the left and right are from two independent shRNAs as indicated. (D) As in C, but for HIRA.DOI: http://dx.doi.org/10.7554/eLife.15129.012
+**Figure 5.:** (A) Western-blotting of ASF1A knockdown is shown at the top. The kinetics of generation and repair of the DBSs at the SLCO5A1 I-PpoI site is shown below; and quantitation of proportion of input DNA and H3 occupancy from ChIP analysis 200 bps from the I-PpoI site within the SLCO5A1 gene in ASF1A knockdown cells is shown at the bottom. Shown is the average +/- SEM from three independent experiments. Asterisks indicate significant changes from the scramble shRNA knockdown, p=0.005, as determined by the Student’s t-test. (B) As in A, but for ASF1B. (C) As in A, but for CAF-1. Data on the left and right are from two independent shRNAs as indicated. (D) As in C, but for HIRA.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15129/elife-15129-fig6-v2.jpg)
-
-**Figure 6.:** DOI: http://dx.doi.org/10.7554/eLife.15129.013
 
 ## Discussion
 
 Here we have shown that nucleosome disassembly and reassembly around DSBs is a highly regulated and coordinated part of the cellular response to DSB damage in mammalian cells, even during repair pathways that do not involve DNA resection. Repair of DSBs by NHEJ was accompanied by the apparent complete disassembly of nucleosomes adjacent to the break, spanning up to 1500 bp around the break. We found that chromatin disassembly around the DSB is a checkpoint-stimulated response to breaks involving an ATP-dependent chromatin remodeler. Meanwhile, HIRA-mediated assembly of H3.3 and CAF-1 mediated assembly of H3.1 occur after DSB repair in an interdependent manner, suggesting that coordinated mechanisms exist to accurately reestablish the epigenetic information carried by the chromatin structure after DNA repair (Figure 6).
 
-## Chromatin disassembly and reassembly during NHEJ in mammalian cells
+### Chromatin disassembly and reassembly during NHEJ in mammalian cells
 
 In agreement with our findings, previous work has shown that histone H3 loss occurs around a DSB in asynchronous human cells (Goldstein et al., 2013). However, in that study histone H3 loss was not detected during G1 phase when NHEJ is the predominant form of repair for the non-nucleolar regions of the genome (Goldstein et al., 2013). The authors attributed the observed H3 loss around a DSB within the rDNA locus in asynchronous cells to be accompanying HR (Goldstein et al., 2013). Notably, their H3-H4 loss reached over 7 kb away from the break ends with no clear decrease at this distance from the break, suggesting it could be a lot more extensive (Goldstein et al., 2013). By contrast, in our analyses, histone H3 was disassembled during NHEJ and the histone H3 disassembly was a local event, restricted to within 0.75 kb away from DSBs. One explanation for the difference in results could be due to the fact that the previous analysis of chromatin disassembly examined I-PpoI sites within the rDNA in the nucleolus. In humans, the rDNA is present in approximately 300 copies of tandem repeats and has a specialized chromatin structure, generally being heterochromatic. Furthermore, the rDNA has a unique nucleolar DNA damage response, enabling HR-mediated repair of I-PpoI-induced DSBs within the rDNA at any phase of the cell cycle, including G1, presumably templated by rDNA repeats in cis (van Sluis and McStay, 2015). As such, the chromatin disassembly study from the Kastan group was likely examining chromatin disassembly at the rDNA during homologous recombination (Goldstein et al., 2013), while we examined chromatin disassembly from euchromatin during NHEJ, which could explain the difference in size of the domain of chromatin disassembly. The failure to observe complete nucleosome disassembly around a DSB within the rDNA in G1 phase by Kastan’s group may reflect the unique chromatin structure of the rDNA repeats and their region-specific DNA damage response (van Sluis and McStay, 2015). While we have not completely ruled out all types of end-resection in our study, many lines of evidence indicate that the I-PpoI sites we examined are being repaired by an NHEJ mechanism that does not involve much end resection including: (i) the failure to see loss of the DNA signal around the break in the ChIP input, (ii) the lack of involvement of ATR, (iii) the lack of need for the nuclease activities of MRE11 for repair, (iv) no requirement for the single-stranded binding protein RAD51 for repair, (v) the complete dependency on KU80 for DNA repair, and (vi) no requirement for SMARCAD1 in chromatin disassembly, which only plays a role during DNA resection (Rowbotham et al., 2011) (Costelloe et al., 2012; Chen et al., 2012). As such, all the available evidence points to the chromatin disassembly and reassembly around the DSBs induced within the euchromatic genes that we examined, occurring during NHEJ repair.
 
-## Mechanism and function of chromatin disassembly during NHEJ
+### Mechanism and function of chromatin disassembly during NHEJ
 
 Given that the molecular events during NHEJ repair occur at the DNA ends, it was somewhat unexpected to find complete disassembly of up to 8 nucleosomes around a DSB during NHEJ. One possibility is that the local histone disassembly may facilitate efficient recruitment of the NHEJ repair machinery to DSBs, while avoiding the loss of epigenetic information that would occur due to extensive histone disassembly. In agreement with a role for chromatin disassembly in efficient NHEJ, knockdown of INO80 or inhibition of ATM, both of which compromise chromatin disassembly around a break, lead to DNA repair defects (Figures 3 and 4), although this could also be due to additional roles of ATM and INO80 in the DNA damage response. INO80 has been shown previously to be recruited to DSBs in mammalian cells (Kashiwaba et al., 2010), although its exact function there was not clear. It was interesting to find a role for INO80 in promoting chromatin disassembly around a DSB, because in yeast, the role of INO80 in chromatin disassembly around a DSB is dependent on INO80’s role in promoting DNA resection (Tsukuda et al., 2005; van Attikum et al., 2004). However, in our studies in mammalian cells, INO80 promotes chromatin disassembly in the absence of apparent DNA resection, suggesting that it can directly modify chromatin structure during DSB repair. In agreement, INO80 is required to promote accessibility of the NER machinery to UV lesions in mammalian cells (Jiang et al., 2010). Given that ATM phosphorylates INO80 (Morrison et al., 2007), it will be interesting to determine whether the involvement of ATM in stimulating chromatin disassembly during NHEJ is mediated via it phosphorylating, and potentially activating, INO80. Consistent with this prediction, we found that combined inhibition of ATM in cells with IN080 knockdown, led to the same degree of defect in chromatin disassembly as INO80 knockdown alone. The function of INO80 in chromatin disassembly at a DSB presumably depends on its histone eviction activity and its ATPase activity, although further study is needed to characterize the detailed molecular mechanism. It is plausible that histone disassembly during DSB repair is mediated by the collaboration between a variety of nucleosome remodelers and chaperones, as well as other factors besides INO80. On the other hand, different nucleosome remodelers may play distinct, but non-redundant roles in chromatin disassembly during DSB repair, as we showed that SMARCAD1 is dispensable for this function (Figure 4A).
 
-## Mechanism and function of chromatin reassembly after NHEJ
+### Mechanism and function of chromatin reassembly after NHEJ
 
 Chromatin reassembly occurs after DSB repair and is not required for DSB repair per se (Figure 5). We found that the histone chaperones ASF1A and ASF1B play non-redundant roles in histone H3 reassembly during DSB repair, with ASF1A playing an essential role in regulating histone reassembly around a DSB, while ASF1B is dispensable for this function (Figure 5). ASF1A/B donates histones to the H3.3 HIRA histone chaperone, and in agreement, HIRA was required for chromatin assembly after DSB repair. ASF1A/B also donates histones H3.1 and H3.2 to CAF-1, and CAF-1 knockdown also led to a major defect in chromatin reassembly after DSB repair (Figure 5C). In agreement, both HIRA and CAF-1 are recruited to sites of NER, and HIRA deposits H3.3 in response to UV irradiation (Adam et al., 2013). However, this previous study was not able to quantitate chromatin assembly during NER repair due to the random nature of the UV induced DNA damage. Given that we were inducing DSBs at known locations, we were able to measure the local histone occupancy. We saw a complete defect in chromatin assembly when we knocked down HIRA. The involvement of HIRA is consistent with the repair being via NHEJ, which does not involve significant DNA synthesis. Indeed, HIRA has been shown to mediate a gap-filling mechanism of H3.3 deposition without the need for transcription or any sequence specificity, given the non-specific DNA binding ability of HIRA (Ray-Gallet et al., 2011).
 
@@ -131,19 +125,19 @@ In conclusion, we propose that immediately following the induction of DSBs in ma
 
 ## Materials and methods
 
-## DNA repair assays
+### DNA repair assays
 
 HEK293T cell lines were maintained in DMEM containing 10% FBS. The cell lines were obtained from ATCC and were tested regularly for mycoplasma contamination. The procedure for induction of DSBs by I-PpoI was as described (Pankotai et al., 2012). Briefly, 3 μg of plasmid expressing I-PpoI fused to the ER nuclear localization domain was transfected into 30 million cells using lipofectamine-2000. After 16 hr, a final concentration of 1 μM of doxcycline was added to induce expression of I-PpoI, and 12 hr later, 4 μM of tamoxifen was added. The ATM inhibitor Ku55933 (Selleckchem) and ATR inhibitor VE-821 (Selleckchem) were used at 10 μM final concentration, and they were added 1 hr prior to the addition of 4-Hydroxytamoxifen (4-OHT, Sigma). PFM03 (MRE11 endo-inhibitor) and PFM39 (MRE11 exo-inhibitor) (generous gifts from Dr. John Tainer) were used at 100 nM final concentration, and they were added 2 hr prior the addition of 4-OHT (Shibata et al., 2014). DNA repair was assayed by real time PCR using the primers (listed below), and the data obtained were normalized to the PCR signal obtained at the GAPDH gene, which is distant from all I-PpoI sites. All experiments were performed independently three times and the average data from three independent experiments are shown +/- SEM.
 
-## shRNA knockdown
+### shRNA knockdown
 
 GIPZ Lentiviral shRNA constructs (Thermo scientific) corresponding for each target gene were used to generate stable knockdown cells. Production of lentivirus and transfection of HEK293T cell were carried out according to the manufacturer's instructions (Thermo scientific). The efficiency of knockdown for each target gene was confirmed by western blotting. The antibodies used were: RAD51 (abcam), KU70 (cell signaling), SMARCAD1 (abcam), HIRA (active motif), INO80 (abcam), ASF1A (abcam), ASF1B (abcam), CAF1-p150 (abcam), hGAPDH (cell signaling), β-actin (abcam).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Histone H3 Chromatin immunoprecipitation (ChIP) was performed as previously described (Berkovich et al., 2007). In addition, ChIP protocol was adapted for use with magnetic bead (Dynabeads® Protein A) for increased efficiency and specificity of immunoprecipitation. The antibody used for histone H3 ChIP was ab1791 (Abcam, Cambridge, MA). The information for primer sequences used in real-time PCR is listed below. Relative occupancy was calculated based on the Cycle threshold (Ct) values. The H3 occupancy and input of the I-PpoI sites were normalized to that at GAPDH at each time point which is distant from any I-PpoI sites and showed no change in histone occupancy and all data were subsequently normalized to the H3 occupancy at time 0 as 1. ChIP data are shown as mean ± SEM of three independent experiments.
 
-## Southern and western analyses
+### Southern and western analyses
 
 Extracted genomic DNA from HEK293T cell was digested with PstI-EcoRV. DNA samples were resolved by a 1% agarose gel, and transferred to a nylon membrane. The uncut and cut SLCO5a1 fragments were detected using a radiolabelled SLCO5a1 probe (primer sequences used for amplifying this probe are listed below).
 
@@ -151,4 +145,173 @@ Western analysis of I-PpoI was performed using an antibody against HA-tag (BioLe
 
 Primers used for ChIP, PCR and southern probes:
 
-Primer nameSequenceSLCO5a1F-CutCCCAGTGCTCTGAATGTCAASLCO5a1R-CutCCATTCATGCGCGTCACTASLCO5a1F-Right (200 bp)CAAACCATTCATCTCCTTGCATCSLCO5a1R-Right (200 bp)CATTCACATCGCGTCAACACSLCO5a1F-Left (200 bp)GCATGAATGGATGAACGAGATSLCO5a1R-Left (200 bp)CAAGCTCAACAGGGTCTTCTSLCO5a1F-Right (500 bp)GGGTTTGTGACTTGAGCTACTSLCO5a1R-Right (500 bp)AATCATCCTGTCCAACAGTCTCSLCO5a1F-Left (500 bp)ACTACAAGCCTACAGTAACCAAASLCO5a1R-Left (500 bp)AGTTGTAGATATGCGGCGTTATSLCO5a1F-Right (750 bp)CCATTGTGTAATGTGAGTTATTGCSLCO5a1R-Right (750 bp)GTACTAAGTGATTCATCAGCACATSLCO5a1F-Left (750 bp)TGAAACTGGATCCCTTCCTTACSLCO5a1R-Left (750 bp)CCCATGGCTATGTCCTGAATSLCO5a1F-Right (1000 bp)AGCTCTAGGGATCTGGTGTTSLCO5a1R-Right (1000 bp)CGGTGGTTAGAATACCTAACATGASLCO5a1F-Left (1000 bp)AGAGCTTCTGCACAGCAAASLCO5a1R-Left (1000 bp)ATTAGCCCTTTGTCAGATGAGTSLCO5a1F-Right (3000 bp)AGTCACCTAAGTGCCTGAGASLCO5a1R-Right (3000 bp)ACCACTAATAACACATCAGGTTCASLCO5a1F-Left (3000 bp)GTCTTACTCTCCTTCGTGTAGTCSLCO5a1R-Left (3000 bp)GTTTCAGGCCTGCCATTTAGRYR2F-CutGTGCTCTGAATGTCAAAGTGAAGRYR2R-CutAGGTAGGGACAGTGGGAATRYR2F-Right (200 bp)TAGAGCCATGGAAGTCAGAATGRYR2R-Right (200 bp)CACTGGGCAGAAATCACATCRYR2F-Left (200 bp)GATGAACGAGATTCCCACTGTCRYR2R-Left (200 bp)AGCTCAACAGGGTCTTCTTTCDAB1F-CutCTCCATTTCAGAGCTGAGCADAB1R-CutGCTGAGATCCCCAAGATTCADAB1F-Right (200 bp)CCAACTCCTTCACCAGCADAB1R-Right (200 bp)GCTCAGCTCTGAAATGGAGATDAB1F-Left (200 bp)CATACCACAGTGGAAAGAGCADAB1R-Left (200 bp)GGGCATAGGAAGGTGAAGTTTAINTS4F-CutGACAGTGGGAATCTCGTTCATINTS4R-CutATTCAATGAAGCACGGGTAAACProbe-SLCO5A1FAGCTCTAGGGATCTGGTGTTProbe-SLCO5A1RGTACTAAGTGATTCATCAGCACATGAPDH-FTCAGCCAGTCCCAGCCCAAGGAPDH-RGAGAAAGTAGGGCCCGGCTAC
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SLCO5a1F-Cut</td>
+      <td>CCCAGTGCTCTGAATGTCAA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Cut</td>
+      <td>CCATTCATGCGCGTCACTA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Right (200 bp)</td>
+      <td>CAAACCATTCATCTCCTTGCATC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Right (200 bp)</td>
+      <td>CATTCACATCGCGTCAACAC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Left (200 bp)</td>
+      <td>GCATGAATGGATGAACGAGAT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Left (200 bp)</td>
+      <td>CAAGCTCAACAGGGTCTTCT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Right (500 bp)</td>
+      <td>GGGTTTGTGACTTGAGCTACT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Right (500 bp)</td>
+      <td>AATCATCCTGTCCAACAGTCTC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Left (500 bp)</td>
+      <td>ACTACAAGCCTACAGTAACCAAA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Left (500 bp)</td>
+      <td>AGTTGTAGATATGCGGCGTTAT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Right (750 bp)</td>
+      <td>CCATTGTGTAATGTGAGTTATTGC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Right (750 bp)</td>
+      <td>GTACTAAGTGATTCATCAGCACAT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Left (750 bp)</td>
+      <td>TGAAACTGGATCCCTTCCTTAC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Left (750 bp)</td>
+      <td>CCCATGGCTATGTCCTGAAT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Right (1000 bp)</td>
+      <td>AGCTCTAGGGATCTGGTGTT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Right (1000 bp)</td>
+      <td>CGGTGGTTAGAATACCTAACATGA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Left (1000 bp)</td>
+      <td>AGAGCTTCTGCACAGCAAA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Left (1000 bp)</td>
+      <td>ATTAGCCCTTTGTCAGATGAGT</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Right (3000 bp)</td>
+      <td>AGTCACCTAAGTGCCTGAGA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Right (3000 bp)</td>
+      <td>ACCACTAATAACACATCAGGTTCA</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1F-Left (3000 bp)</td>
+      <td>GTCTTACTCTCCTTCGTGTAGTC</td>
+    </tr>
+    <tr>
+      <td>SLCO5a1R-Left (3000 bp)</td>
+      <td>GTTTCAGGCCTGCCATTTAG</td>
+    </tr>
+    <tr>
+      <td>RYR2F-Cut</td>
+      <td>GTGCTCTGAATGTCAAAGTGAAG</td>
+    </tr>
+    <tr>
+      <td>RYR2R-Cut</td>
+      <td>AGGTAGGGACAGTGGGAAT</td>
+    </tr>
+    <tr>
+      <td>RYR2F-Right (200 bp)</td>
+      <td>TAGAGCCATGGAAGTCAGAATG</td>
+    </tr>
+    <tr>
+      <td>RYR2R-Right (200 bp)</td>
+      <td>CACTGGGCAGAAATCACATC</td>
+    </tr>
+    <tr>
+      <td>RYR2F-Left (200 bp)</td>
+      <td>GATGAACGAGATTCCCACTGTC</td>
+    </tr>
+    <tr>
+      <td>RYR2R-Left (200 bp)</td>
+      <td>AGCTCAACAGGGTCTTCTTTC</td>
+    </tr>
+    <tr>
+      <td>DAB1F-Cut</td>
+      <td>CTCCATTTCAGAGCTGAGCA</td>
+    </tr>
+    <tr>
+      <td>DAB1R-Cut</td>
+      <td>GCTGAGATCCCCAAGATTCA</td>
+    </tr>
+    <tr>
+      <td>DAB1F-Right (200 bp)</td>
+      <td>CCAACTCCTTCACCAGCA</td>
+    </tr>
+    <tr>
+      <td>DAB1R-Right (200 bp)</td>
+      <td>GCTCAGCTCTGAAATGGAGAT</td>
+    </tr>
+    <tr>
+      <td>DAB1F-Left (200 bp)</td>
+      <td>CATACCACAGTGGAAAGAGCA</td>
+    </tr>
+    <tr>
+      <td>DAB1R-Left (200 bp)</td>
+      <td>GGGCATAGGAAGGTGAAGTTTA</td>
+    </tr>
+    <tr>
+      <td>INTS4F-Cut</td>
+      <td>GACAGTGGGAATCTCGTTCAT</td>
+    </tr>
+    <tr>
+      <td>INTS4R-Cut</td>
+      <td>ATTCAATGAAGCACGGGTAAAC</td>
+    </tr>
+    <tr>
+      <td>Probe-SLCO5A1F</td>
+      <td>AGCTCTAGGGATCTGGTGTT</td>
+    </tr>
+    <tr>
+      <td>Probe-SLCO5A1R</td>
+      <td>GTACTAAGTGATTCATCAGCACAT</td>
+    </tr>
+    <tr>
+      <td>GAPDH-F</td>
+      <td>TCAGCCAGTCCCAGCCCAAG</td>
+    </tr>
+    <tr>
+      <td>GAPDH-R</td>
+      <td>GAGAAAGTAGGGCCCGGCTAC</td>
+    </tr>
+  </tbody>
+</table>

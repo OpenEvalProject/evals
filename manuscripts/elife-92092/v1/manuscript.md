@@ -32,7 +32,7 @@ We developed a series of mathematical models that consider 121 age-related trait
 
 ## Results
 
-## Physiological traits that change with age
+### Physiological traits that change with age
 
 To identify age-dependent traits, we conducted linear regression analysis on every UKBB parameter relative to the age of the participants (see Supplementary file 1 and Supplementary file 2) and recorded the list of those with a non-zero slope and adjusted statistical significance better than 10–3 (see Supplementary file 3 and Supplementary file 4). Examples include systolic blood pressure (shown in Figure 1), which increases with age, and hand-grip strength (shown in Figure 1B), which decreases with age.
 
@@ -42,7 +42,7 @@ To identify age-dependent traits, we conducted linear regression analysis on eve
 
 Most large human databases and datasets, including UKBB, have certain limitations, such as incomplete or missing data points. Therefore, before proceeding to modeling aging, we needed to address the following three issues:
 
-## Age-dependent physiological traits fall into clusters
+### Age-dependent physiological traits fall into clusters
 
 The phenotypes we selected for our age prediction model were often correlated to one another, e.g., left-hand and right-hand grip strength. To assess the degree and pattern of correlations among the age-dependent traits (see Supplementary file 1), we first normalized each phenotype by its mean and standard deviation. For phenotypes represented as multiple-choice questions (e.g. do you take naps - often, sometimes, rarely, never?), we encoded each answer option as a binary vector (one or zero), and these vectors were also normalized. Correlations were computed for each pair of phenotypes and visualized as dendrograms (Figure 2A and B). As expected, highly correlated phenotypes grouped together, such as ‘BMI’-‘weight’-‘waist circumference’ or ‘cholesterol’-‘LDL’. Surprisingly, this analysis uncovered strong correlations that were not obvious, such as ‘I drive faster than the speed limit most of the time (id# 1100)’ with ‘I like my drinks very hot (id# 1518)’ (Figure 2A and B; marked with yellow shadows). Notably, most of the clusters appeared to be enriched for phenotypes associated with a specific organ or physiological system. For example, the cluster that contains ‘creatinine’, ‘urea’, ‘cystatin-C’, and ‘phosphate’ likely reflects kidney function, whereas the cluster that contains ‘systolic blood pressure’ and ‘diastolic blood pressure’ likely reflects cardiovascular function (Figure 2A and B). That said, upon close examination, it is not intuitively obvious why some physiological traits do or do not cluster with one another. Thus, this dendrogram might be a valuable data source for future hypothesis generation and exploration.
 
@@ -50,7 +50,7 @@ The phenotypes we selected for our age prediction model were often correlated to
 
 **Figure 2.:** Dendrogram plots of age-dependent female (A) and male (B) phenotypes selected for age prediction. Numbers in the name of ‘rays’ represent United Kingdom BioBank (UKBB) ID numbers for multiple-choice questions (see Supplementary file 1 or the UKBB website), followed by the answer. Major clusters were colored and subjectively assigned a name that reflects a possible biological function of the cluster. The number of principal components included in the PLS (projection to latent structures) model to predict age vs root mean square error of the predictions is plotted for females (C) and (D) males. (E) The top phenotypes with the highest weights in the age-predicting PLS model are listed for (E) females and (F) males. Phenotypes shaded in green are shared between sexes, red are specific to females, and blue are specific to males. All phenotypes were used for both sexes, and this shading reflects only the position in the list of top 13 traits. (G) List of phenotypes used to predict age of females and (H) males projected on 2D space using correlation as the distance measure. The degree of correlation is also depicted by gray lines. The darker the shade, the stronger the correlation. Note that the distortion in positioning is an inevitable consequence of projecting high-dimensional data into 2D space. As before, groups of related phenotypes were subjectively assigned a name that likely depicts their physiology, and phenotypes with the highest weight in the PLS model were depicted by red dots.
 
-## A mathematical model to predict age
+### A mathematical model to predict age
 
 To develop a model that predicts age, we experimented with several algorithms, including simple linear regression, gradient boosting machine (GBM), and partial least squares (PLS) regression. Different approaches have different advantages and limitations; however, we decided to choose one approach and not develop and analyze several independent models in parallel in order to not artificially inflate the false discovery rate (FDR). We ultimately selected PLS regression because it enabled us to determine the number and composition of components required to predict age optimally from the data, which provides additional insights into the biology of human aging. But before making this selection, we compared the performance of the three approaches. The outcomes of PLS and linear regression were almost identical (R-squared between ∆Age values derived by these two methods was 0.99, meaning that if one model were to predict an individual was 62 years of age, the other model would have the same prediction). This similarity is likely due to the small number of predictors (121 phenotypes) and comparatively large number of participants (over 400,000). The correlation between GBM model outcomes and PLS (and linear regression) was slightly smaller (R-squared=0.87). The reason for the lower correlation is likely the need for imputation in PLS and linear regression models. The GBM model tolerates missing data, whereas linear regression and PLS methods require imputation or removal of individuals with too many data points missing, an approach we describe in more detail below.
 
@@ -60,21 +60,29 @@ Next, we determined how many PLS components (each derived from UKBB phenotypes) 
 
 It was interesting to determine which individual age-sensitive phenotypes were most useful for age prediction. Since many phenotypes contribute to multiple PLS components, we deconstructed each PLS component and calculated the sum of the absolute values for phenotype coefficients across all components. This provided a weight metric for each phenotype used to predict age. The top 13 phenotypes with the highest weights are presented in Figure 2E and F. Most were shared between males and females and were associated with different physiological systems, e.g., systolic blood pressure (which likely correlates with cardiovascular health), forced expiratory volume (FEV) (pulmonary and cartilage/bone health), urea and cystatin-C levels (kidney health), and mean time to correctly identify matches (cognitive health). Moreover, if we deleted one of these selected traits, the model substituted a close correlate; specifically, it substituted 1 s FEV for FEV, systolic blood pressure for diastolic blood pressure, and hand-grip strength (right) for hand-grip strength (left). The fact that the model best predicted chronological age when it received input from a wide range of physiological systems underscores the global, systemic nature of the aging process. Similar conclusions were drawn from high-dimensional analysis of aging mice (Chen et al., 2022).
 
-## Inferred (biological) age predicts all-cause mortality better than chronological age
+### Inferred (biological) age predicts all-cause mortality better than chronological age
 
 We utilized the physiological phenotypes listed in Supplementary file 3 and Supplementary file 4 and the PLS modeling described above to predict female age with a root mean square error of 4.8 years, R2~0.63, and predict male age with a root mean square error of 5.1 years, R2~0.6. Several factors may contribute to discrepancies between predicted biological age and chronological age, including statistical noise, variations in life histories among UKBB participants, limited accuracy of certain measurements, and inadequate numbers of relevant measurements. However, some of this discrepancy may arise because certain individuals are aging more slowly or rapidly than the mean for that age. Consistent with this interpretation, we observed a significant correlation of residuals between two assessments for a small number of UKBB participants who were evaluated longitudinally (twice) with intervals of up to 12 years (R2~0.56, p<10–255).
 
 To estimate biological age from this cross-sectional data, we computed a value termed ∆Age for each participant. We define ∆Age as the individual’s chronological age subtracted from their predicted age and normalized such that the average ∆Age for the entire population at each age is zero. ∆Age is negative if an individual is predicted to be younger than they are and positive if an individual is predicted to be older. The ∆Age parameter carries no information about the person’s actual chronological age, as it is equally distributed across zero at any age (Figure 3A). Comparable approaches have been employed previously, such as using DNA methylation patterns (Marioni et al., 2015) or facial images and computer vision (Chen et al., 2015) to predict age and identify potentially ‘fast agers’ and ‘slow agers’.
 
-## One year of ∆Age carries approximately the same mortality risk as 1 year of chronological age
+![Figure 3.](https://cdn.elifesciences.org/articles/92092/elife-92092-fig3-v1.jpg)
+
+**Figure 3.:** (A) Delta-age (∆Age, predicted biological age minus chronological age) is plotted against chronological age for a random subset of 10,000 United Kingdom BioBank (UKBB) participants. Note that there is no correlation between age and ∆Age. (B) Histogram of age distribution (blue) and death distribution (red, right y-axis) is presented for UKBB males. (C) Mortality of UKBB male participants vs their age is plotted; note the classical exponential (Gompertzian) shape. Blue dots are actual data, the red line is an exponential fit, and the black dash line is 95% confidence interval. (D) Histogram of the ∆Age distribution (blue) and death distribution (red, right y-axis) is presented for UKBB males of 62 years of age only. (E) Mortality of 62-year-old males is plotted against their ∆Age. Blue dots are actual data, the red line is an exponential fit, and the black dashed line is 95% confidence interval. Once again, note the classical exponential (Gompertzian) shape with ∆Age, even though all the subjects are the same age chronologically. (F) Distribution of ∆Age for all the people in UKBB (all ages and all genders, green shape). The distribution of ∆Age for people who died within 5 years after enrolling in the UKBB (red line) is shown for comparison; note a shift of the deceased distribution to the right toward larger ∆Age (predicted older on average). The mortality penalty due to ∆Age is plotted as blue dots (left y-axis), the exponential fit of these data is presented as a blue line, and the 99% confidence interval as a gray shade. (G) Average ∆Age is plotted for UKBB males (G) and females (H) against their highest education (qualification) level achieved. (I) The fraction of people who play computer games ‘sometimes’ (yellow dots), never (red dots), and people who play computer games ‘often’ (green dots). (J) Average ∆Age of people at different ages separated by their computer gaming habits (see I). As a group, people who play computer games ‘often’ are biologically younger than people who play computer games ‘sometimes’ or ‘never’.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92092/elife-92092-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This association is much stronger in men and holds true after age, education, and income are considered in the regression. (a) ∆Age (youthfulness) of males is plotted against age. Three subpopulations are presented - men who play computer games ‘often‘ (green dots), men who play computer games ’sometimes‘ (yellow dots), and men who ‘never‘ play computer games (red dots). Shaded lines denote 99% confidence intervals. (b) The fraction of men who play computer games ‘sometimes‘, ‘never‘, or ‘often’ is plotted against age. (c, d) The same graphs as (a) and (b), except for women. Note that observation is not identical between men and women and is reversed for younger (under the age of 55) women.
+
+### One year of ∆Age carries approximately the same mortality risk as 1 year of chronological age
 
 The classical paradigm of aging described by Gompertz stipulates that mortality rates increase exponentially with time, doubling roughly every 8 years (Kirkwood, 2015). In the UKBB dataset that we analyzed, a small number of participants (8883 males and 5668 females, Figure 3B) passed away within 5 years of their initial test-center attendance. The distribution of these deaths among UKBB participants has a typical ‘Gompertzian’ shape, with mortality rates exponentially doubling every 7.7 years for both males and females (Figure 3C). In Gompertz’ model, where mortality depends only on age, everyone of the same age has an equal likelihood of dying. However, by incorporating ∆Age, we were able to further forecast death among individuals of the same age. To illustrate this point, consider males who are 62 years of age and group them based on their ∆Age (as shown in Figure 3D). Individuals on the left side (with negative ∆Age values) were predicted by the model to be younger than 62, while those on the right were predicted to be older. In this UKBB sub-cohort, several hundred subjects died within 5 years following their enrollment. Plotting the average mortality for each ∆Age bin in this stratification of 62-year-olds resulted in a Gompertz-like mortality distribution (Figure 3E). Notably, the effect of 1 year of ∆Age on the mortality rate was almost identical to that of 1 year of chronological age. It is important to emphasize that death data were not considered during the development of the model of biological age or derivation of ∆Age, and that ∆Age does not exhibit any correlation with chronological age (as illustrated in Figure 3A). The ability of ∆Age to predict mortality has a similar level of accuracy as chronological age. This ability is consistent across genders and ages and can even be observed when individuals of all ages are combined (Figure 3F). We consider this progressive increase in mortality rates with progressively larger ∆Age to be a powerful validation of this modeling strategy for assessing biological age. The fact that combining chronological age with ∆Age leads to a more precise prediction of mortality risk than relying on chronological age alone might be of interest to actuaries.
 
-## ∆Age correlates with parental lifespan
+### ∆Age correlates with parental lifespan
 
 Remarkably, we observed a robust correlation of ∆Age with the age at death of the participant’s father (p-value=1.9*10–43 for females and p-value=3.9*10–31 for males) and mother (p-value=1.1*10–68 for females and p-value=1.3*10–32 for males). Individuals predicted to be biologically younger had parents who lived longer. Previous studies have reported that the lifespans of parents and offspring are correlated (Ruby et al., 2018; Milman and Barzilai, 2015). These findings, too, provide strong validation for the model, reinforcing the idea that ∆Age is not simply noise, but rather carries significant information about the aging process and its variability in the population.
 
-## Environmental factors that influence biological age
+### Environmental factors that influence biological age
 
 Previous studies have shown that personal wealth is positively associated with human lifespan (Chetty et al., 2016; Wang and Geng, 2019), whereas smoking and excessive drinking are negatively associated with lifespan. To investigate whether this measure of physiological ∆Age has similar associations, and possibly to identify new environmental factors that influence aging, we calculated the correlation of ∆Age with every parameter available from UKBB (Supplementary file 5 and Supplementary file 6). Correlations with p-values lower than 10–5 (calculated to correct for multiple testing) were considered statistically significant. Interestingly, we observed a strong association of ∆Age with age-dependent biological phenotypes that were not included in the model to predict ∆Age due to the low number of people who underwent the assessment. For example, heel bone density (UKBB field #3148) and thalamus volume (UKBB field #25011) both had strong associations with ∆Age (p-values were ~10–11 and 10–10, respectively). These and other phenotypes with strong ∆Age correlations again help to validate the model and might be useful parameters to consider when building biological clocks in the future.
 
@@ -84,7 +92,7 @@ The single most significant non-biological parameter that correlated with ∆Age
 
 Certain leisure and social activities were also correlated with ∆Age. The amount of TV watching (UKBB filed# 1070) was positively correlated with ∆Age in both males and females, whereas time spent outdoors (UKBB filed# 1050) for males and DIY projects (UKBB filed# 2624) for females were correlated with younger ∆Age. Intriguingly, the second strongest behavioral trait that was associated with ∆Age was the ‘frequency with which people play computer games’. This is a novel association, and one that is less likely to reflect socioeconomic status, as access to computer gaming is inexpensive and widely available. Playing computer games associated with youthfulness (Figure 3I and J, Figure 3—figure supplement 1), with a size effect of –2.2 and p-value of 4*10–8. This association was equally strong if ‘age’ was factored out from the regression, indicating that generational changes in leisure activities do not explain this association.
 
-## Genetic loci associated with biological age
+### Genetic loci associated with biological age
 
 To identify potential genetic determinants of physiological ∆Age, we carried out a genome-wide association study (GWAS), using linear models separately on males and females (Methods). Manhattan plots for male and female GWAS models are presented in Figure 4A–D (summary statistics is deposited to and available from https://www.ebi.ac.uk/gwas/, accession numbers: GCST90566392 [for females] and GCST90566393 [for males]). The inflation factor in our analysis was λgc=1.2005 for males and λgc = 1.2531 for females. Linkage disequilibrium (LD) regression intercepts were 1.0213±0.0083 and 1.0285±0.0119 for males and females, respectively.
 
@@ -100,7 +108,7 @@ Using a stringent multiple testing correction for GWAS (Chen et al., 2021) with 
 
 Additionally, we compared our ∆Age GWAS association results with similar GWASs that were performed for other biological clocks. For example, McCartney et al., 2021, used DNA methylation data on 40,000 individuals to compute biological age called GrimAge. After that, they calculated an intrinsic epigenetic age acceleration (a value similar to ∆Age, which measured a deviation of biological age from chronological age) and performed GWAS.
 
-## A healthy sub-cohort distinguishes genes that affect aging vs age-related disease
+### A healthy sub-cohort distinguishes genes that affect aging vs age-related disease
 
 Some genes that are associated with ∆Age in our analysis are known disease risk factors. For example, the HNF1A (hepatocyte nuclear factor 1 homeobox A) locus (top SNP - rs1169284, ∆Age association p-value=3.0*10–23) is associated with diabetes (Shepherd et al., 2009) and cancer (Abel et al., 2018). The APOE (apolipoprotein E) locus (top SNP - rs7412, ∆Age association p-value=4.4*10–33) is associated with Alzheimer’s disease and coronary heart disease (Xu et al., 2016).
 
@@ -108,11 +116,11 @@ It is possible that people who carry risk alleles for age-related disease have a
 
 Nonetheless, caution should be exercised when interpreting the analysis of this smaller, ‘healthier’ subpopulation. It is possible that certain hits disappeared not due to disease but because of decreased statistical power resulting in false negatives. Conversely, some individuals may have had undiagnosed or subclinical disease, leading to false positives. Additionally, some of the associations may be false positives due to collider bias. Thus, we favor the interpretation that among the GWAS hits that disappeared in the healthy sub-cohort were disease-susceptibility genes, while those that persisted likely influence the aging process more generally. Future longitudinal and other studies in humans and potentially animals could lend support to this interpretation.
 
-## Heritability of ∆Age
+### Heritability of ∆Age
 
 To estimate heritability, we performed LD score regression analysis (Zheng et al., 2017). The analysis involved 1,293,150 unique SNPs with an allele frequency higher than 0.01. We found that total genetic heritability (H2) of ∆Age was ~11% (0.108±0.009) for females and ~10% (0.096±0.008) for males, which is similar to the genetic heritability estimated previously for human longevity (Ruby et al., 2018; Melzer et al., 2020). This may be because the variation in genetic diversity is not substantial or because existing alleles of critical longevity genes do not have significant effect sizes in this human population.
 
-## GWAS signatures that correlate with the ∆Age GWAS
+### GWAS signatures that correlate with the ∆Age GWAS
 
 Another way to infer the biological meaning of ∆Age is to compare the GWAS signatures (Manhattan plots) of ∆Age to GWAS signatures of other traits in public databases (Zheng et al., 2017). We found that the genetic signatures of some of the components used to calculate ∆Age were correlated with the genetic signature of ∆Age itself (Figure 4E). For example, GWAS of forced vital capacity (FVC) had a correlation with ∆Age GWAS of 0.49±0.02 (p-value=5*10–65). In fact, remarkably, the most similar GWASs together spanned multiple organ systems (pulmonary, cardiovascular, musculature, cognition), arguing that this ‘aging’ GWAS integrates the health of multiple organ systems.
 
@@ -120,13 +128,88 @@ In contrast, GWAS signatures of certain physiological parameters, such as blood 
 
 It is interesting to note that the genetic signature of ∆Age has a strong similarity to the genetic signature obtained through GWAS for ‘father’s age at death’ and ‘mother’s age at death’ (Figure 4E). This correlation was present even though the mortalities of subjects or parents were not part of the model and were not considered throughout the analysis. The genetic correlation of GWAS for parent’s age mortality with GWAS for offspring’s ∆Age was 0.39±0.03, p-value=1*10–7 for females and 0.2±0.05, p-value=3*10–5 for males. These GWAS correlations further demonstrate that ∆Age carries information about aging and longevity, despite its values being derived from cross-sectional physiological data and being independent of lifespan.
 
-## GO highlights a neuronal influence on biological age
+### GO highlights a neuronal influence on biological age
 
 To investigate whether specific pathways or systems have an influence on biological age, we performed gene ontology (GO) analysis of extended GWAS hits (combined male and female genetic loci identified by the closest ORF). Five enriched pathways were identified in this analysis (Table 1). Unexpectedly, the top enriched category (GO:98815) was modulation of excitatory postsynaptic potential, enriched ~18-fold over the expected by-chance reference, with a multiple-testing-adjusted p-value of 0.046. This category was exceptional (~18-fold enrichment), as the second-best enrichment category was enriched only ~3-fold (response to oxygen-containing compounds). This GO category comprised multiple genes influencing synaptic function (Table 1), suggesting that the nervous system plays a particularly important role in aging systemically. Like the vasculature, the sympathetic nervous system impacts the function of many peripheral organs, and synapse function plays a critical role in the function and the maintenance of the CNS. Hints of such an association have come from genetics studies of worms (Apfeld and Kenyon, 1999; Li et al., 2016), flies (Libert et al., 2007), and laboratory rodents (Garratt et al., 2022; Zullo et al., 2019).
 
+**Table 1.**
+ Top gene ontology (GO) association of ∆Age genome-wide association study (GWAS) hits performed using an ontology resource previously described (Mi et al., 2019) using an online engine available at http://geneontology.org/ identifies synaptic category as the most overrepresented.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GO biological process complete</th>
+      <th>Homo sapiens - genome</th>
+      <th>GWAS hits</th>
+      <th>Fold enrichment</th>
+      <th>Raw p-value</th>
+      <th>Corrected p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modulation of excitatory postsynaptic potential (GO:0098815)</td>
+      <td>43</td>
+      <td>5</td>
+      <td>17.74</td>
+      <td>1.49E-05</td>
+      <td>4.68E-02</td>
+    </tr>
+    <tr>
+      <td>Regulation of cellular process (GO:0050794)</td>
+      <td>11067</td>
+      <td>98</td>
+      <td>1.35</td>
+      <td>8.47E-06</td>
+      <td>6.67E-02</td>
+    </tr>
+    <tr>
+      <td>Regulation of biological process (GO:0050789)</td>
+      <td>11522</td>
+      <td>100</td>
+      <td>1.32</td>
+      <td>1.70E-05</td>
+      <td>4.47E-02</td>
+    </tr>
+    <tr>
+      <td>Response to oxygen-containing compound (GO:1901700)</td>
+      <td>1566</td>
+      <td>28</td>
+      <td>2.73</td>
+      <td>1.14E-06</td>
+      <td>1.79E-02</td>
+    </tr>
+    <tr>
+      <td>Negative regulation of cellular metabolic process (GO:0031324)</td>
+      <td>2545</td>
+      <td>35</td>
+      <td>2.1</td>
+      <td>1.82E-05</td>
+      <td>4.10E-02</td>
+    </tr>
+    <tr>
+      <td>Cell communication (GO:0007154)</td>
+      <td>5160</td>
+      <td>57</td>
+      <td>1.69</td>
+      <td>1.46E-05</td>
+      <td>7.68E-02</td>
+    </tr>
+    <tr>
+      <td>Cellular response to stimulus (GO:0051716)</td>
+      <td>6376</td>
+      <td>66</td>
+      <td>1.58</td>
+      <td>1.48E-05</td>
+      <td>5.84E-02</td>
+    </tr>
+  </tbody>
+</table>
+
 GO association was performed using an ontology resource previously described (Mi et al., 2019) using an online engine available at http://geneontology.org/.
 
-## Cluster-dropout analysis enriches for GWAS hits that influence aging globally
+### Cluster-dropout analysis enriches for GWAS hits that influence aging globally
 
 If a GWAS hit influences aging itself, reflecting the function of all the organs and physiological systems, the association between the SNP and ∆Age should not disappear if any one measurement is omitted from the model. Thus, we investigated the robustness of the GWAS hits in a systematic way, using what we term ‘cluster-dropout models’. Specifically, we constructed a series of male and female models to predict ∆Age by systematically excluding small sets of highly correlated phenotypic clusters. We built 10 models, in which phenotypic clusters related to muscle (dropout model 1), body composition (2), kidney health (3), cardio health (4), blood cell composition (5), blood biochemistry (6), neuropsychiatric phenotypes (7), lipid metabolism (8), physical attributes (9), or general health (10) were excluded. The list of phenotypes belonging to each cluster is reported in Supplementary file 3 and Supplementary file 4 (for females and males) and was guided by the clustering presented in Figure 2. As expected, the ∆Age values remained consistent among all the dropout models (Figure 5A). This means that if a person was predicted to be ~x years younger or older than their chronological age, this prediction was approximately the same regardless of the phenotypic clusters omitted.
 
@@ -146,11 +229,11 @@ One must keep in mind the caveats and complexity of comparing correlations of di
 
 ## Discussion
 
-## General caveats
+### General caveats
 
 Our study has several caveats. We used a cross-sectional dataset, where different ages are presented by people born at different times. Therefore, there is likely a ‘cohort effect’ in some or all predictors we use. Additionally, our model assumes that the rate of aging is constant for each individual, which is not always true. For example, a person’s aging rate may change if they stop smoking. Despite these modeling assumptions, we believe that the final results are valid and generalizable and allow us to suggest new methods to measure physiological aging in humans and identify new targets to slow down human aging. The robustness of our modeling can also be assessed by considering a small number of UKBB participants (~13,000 out of ~500,000), who have been assessed twice, with the follow-up intervals ranging from 4 to 12 years. We observed a significant correlation (R2~0.6, p-value<10–255) between biological-chronological age measures for these individuals between their two assessments. This suggests that variation due to noise is not large. We also found that there is a significant correlation between longitudinally calculated rates of aging (change in biological age divided by assessment interval) and the values calculated using cross-sectional approach. Furthermore, to minimize the cohort effect in our genetic analysis, we used the year of birth as a covariate. Together with the correlations we observed between ∆Age and mortality, parent’s mortality, previous GWAS longevity hits, and GWAS Manhattan plot comparisons, these findings suggest that the method we describe is a feasible approach to measure an individual’s rate of aging and to identify genetic and environmental factors that may influence it.
 
-## Broader implications of the model for physiological aging
+### Broader implications of the model for physiological aging
 
 How a general term like ‘aging’ maps onto age-dependent physiological traits is a deep question that may never be answered with great precision. In general, biological clocks can be used to identify new genes and environmental factors that influence aging, as we did here using this physiological clock. In addition, one can ‘look into the clock’ itself to gain additional insights. For example, we found that this mathematical model could best predict chronological age when all the different organ and physiological systems were sampled, emphasizing the systemic nature of aging. If the phenotypes associated with chronological age resulted from the decline of only one or a few organs, this would not be the case. Second, the model showed how different physiological traits covary and cluster in the population. Some correlations, such as vitamin D and sleep duration, are not immediately clear. However, a post hoc examination of such an association can be explained in the light of previous medical research. We anticipate that exploring analogous nonintuitive clusters that cannot be explained currently may provide a new understanding of causal relationships. Third, the use of cluster-dropout models provided a powerful tool for distinguishing between individual genes and environmental factors that impact a specific physiological function from those that might affect all aspects of aging.
 
@@ -170,11 +253,11 @@ Finally, from a practical perspective, we suggest that measuring human biologica
 
 ## Methods
 
-## Phenotype data vector normalization
+### Phenotype data vector normalization
 
 Before inclusion in the model or correlation analysis, each phenotype was first normalized to the mean and divided by its standard deviation. If the phenotype was encoded as a multiple-choice question (e.g. do you take naps - often, sometimes, rarely, never?), each answer option was encoded as binary vector (one or zero), and such vectors were normalized the same way. Euclidean distances and Pearson correlations were calculated for each pair of phenotypes.
 
-## Correlation computation
+### Correlation computation
 
 For evaluation of the correlation between any two vectors, linear regression was performed using the ‘lm’ R function (stats package version 3.6.2). Adjusted R2 and p-value had been extracted from such linear models using the ‘summary(lm())’ method. Where applicable, the significance threshold had been adjusted to account for multiple testing using Bonferroni correction.
 
@@ -184,7 +267,105 @@ PLS models were built in R using the package ‘pls, version 2.7-2’, function 
 
 For females:
 
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>(Intercept)</th>
+      <th>1 comps</th>
+      <th>2 comps</th>
+      <th>3 comps</th>
+      <th>4 comps</th>
+      <th>5 comps</th>
+      <th>6 comps</th>
+      <th>7 comps</th>
+      <th>8 comps</th>
+      <th>9 comps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CV</td>
+      <td>7.917</td>
+      <td>5.75</td>
+      <td>5.344</td>
+      <td>5.052</td>
+      <td>4.942</td>
+      <td>4.881</td>
+      <td>4.847</td>
+      <td>4.828</td>
+      <td>4.819</td>
+      <td>4.815</td>
+    </tr>
+    <tr>
+      <td>adjCV</td>
+      <td>7.917</td>
+      <td>5.75</td>
+      <td>5.344</td>
+      <td>5.052</td>
+      <td>4.942</td>
+      <td>4.881</td>
+      <td>4.846</td>
+      <td>4.828</td>
+      <td>4.819</td>
+      <td>4.814</td>
+    </tr>
+  </tbody>
+</table>
+
 For males:
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>(Intercept)</th>
+      <th>1 comps</th>
+      <th>2 comps</th>
+      <th>3 comps</th>
+      <th>4 comps</th>
+      <th>5 comps</th>
+      <th>6 comps</th>
+      <th>7 comps</th>
+      <th>8 comps</th>
+      <th>9 comps</th>
+      <th>10 comps</th>
+      <th>11 comps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CV</td>
+      <td>8.086</td>
+      <td>5.959</td>
+      <td>5.341</td>
+      <td>5.341</td>
+      <td>5.271</td>
+      <td>5.202</td>
+      <td>5.164</td>
+      <td>5.142</td>
+      <td>5.130</td>
+      <td>5.121</td>
+      <td>5.114</td>
+      <td>5.109</td>
+    </tr>
+    <tr>
+      <td>adjCV</td>
+      <td>8.086</td>
+      <td>5.959</td>
+      <td>5.542</td>
+      <td>5.340</td>
+      <td>5.271</td>
+      <td>5.202</td>
+      <td>5.163</td>
+      <td>5.141</td>
+      <td>5.129</td>
+      <td>5.120</td>
+      <td>5.113</td>
+      <td>5.108</td>
+    </tr>
+  </tbody>
+</table>
 
 AdjCV is bias-adjusted cross-validation of the error of prediction.
 

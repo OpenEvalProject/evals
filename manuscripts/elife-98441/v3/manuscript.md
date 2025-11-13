@@ -14,15 +14,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01swzsf04 Department of Microbiology and Molecular Medicine, University of Geneva Geneva Switzerland
-2. https://ror.org/02s376052 Interschool Institute of Bioengineering (SV), School of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland
-3. https://ror.org/02s376052 Global Health Institute, School of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland
+1. Department of Microbiology and Molecular Medicine, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+2. Interschool Institute of Bioengineering (SV), School of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+3. Global Health Institute, School of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
 
 † Corresponding author
 
 ## Abstract
 
-Because of high mutation rates, viruses constantly adapt to new environments. When propagated in cell lines, certain viruses acquire positively charged amino acids on their surface proteins, enabling them to utilize negatively charged heparan sulfate (HS) as an attachment receptor. In this study, we used enterovirus A71 (EV-A71) as the model and demonstrated that, unlike the parental MP4 variant, the cell-adapted strong HS-binder MP4-97R/167 G does not require acidification for uncoating and releases its genome in the neutral or weakly acidic environment of early endosomes. We experimentally confirmed that this pH-independent entry is not associated with the use of HS as an attachment receptor but rather with compromised capsid stability. We then extended these findings to another HS-dependent strain. In summary, our data indicate that the acquisition of capsid mutations conferring affinity for HS comes together with decreased capsid stability and allows EV-A71 to enter the cell via a pH-independent pathway. This pH-independent entry mechanism boosts viral replication in cell lines but may prove deleterious in vivo , especially for enteric viruses crossing the acidic gastric environment before reaching their primary replication site, the intestine. Our study thus provides new insight into the mechanisms underlying the in vivo attenuation of HS-binding EV-A71 strains. Not only are these viruses hindered in tissues rich in HS due to viral trapping, as generally accepted, but our research reveals that their diminished capsid stability further contributes to attenuation in vivo . This underscores the complex relationship between HS-binding, capsid stability, and viral fitness, where increased replication in cell lines coincides with attenuation in harsh in vivo environments like the gastrointestinal tract.
+Because of high mutation rates, viruses constantly adapt to new environments. When propagated in cell lines, certain viruses acquire positively charged amino acids on their surface proteins, enabling them to utilize negatively charged heparan sulfate (HS) as an attachment receptor. In this study, we used enterovirus A71 (EV-A71) as the model and demonstrated that, unlike the parental MP4 variant, the cell-adapted strong HS-binder MP4-97R/167 G does not require acidification for uncoating and releases its genome in the neutral or weakly acidic environment of early endosomes. We experimentally confirmed that this pH-independent entry is not associated with the use of HS as an attachment receptor but rather with compromised capsid stability. We then extended these findings to another HS-dependent strain. In summary, our data indicate that the acquisition of capsid mutations conferring affinity for HS comes together with decreased capsid stability and allows EV-A71 to enter the cell via a pH-independent pathway. This pH-independent entry mechanism boosts viral replication in cell lines but may prove deleterious in vivo, especially for enteric viruses crossing the acidic gastric environment before reaching their primary replication site, the intestine. Our study thus provides new insight into the mechanisms underlying the in vivo attenuation of HS-binding EV-A71 strains. Not only are these viruses hindered in tissues rich in HS due to viral trapping, as generally accepted, but our research reveals that their diminished capsid stability further contributes to attenuation in vivo. This underscores the complex relationship between HS-binding, capsid stability, and viral fitness, where increased replication in cell lines coincides with attenuation in harsh in vivo environments like the gastrointestinal tract.
 
 ## Introduction
 
@@ -34,45 +34,93 @@ We previously isolated cell-adapted EV-A71 mutants with strong affinity for HS w
 
 ## Results
 
-## Lysosomotropic drugs reduce the infectivity of the HS-independent MP4 but enhance the infectivity of the strong HS-binder MP4-97R/167G
+### Lysosomotropic drugs reduce the infectivity of the HS-independent MP4 but enhance the infectivity of the strong HS-binder MP4-97R/167G
 
 First, we sought to assess whether viruses displaying different dependence on HS exploit different growth cycle pathways. We compared the effect of lysosomotropic drugs, namely hydroxychloroquine (HCQ) and bafilomycin A1 (BAF-A1) on MP4 and MP4-97R/167G double mutant. As presented in Figure 1A, Vero cells were pre-treated for 1 hr with each drug before infection. These drugs showed no cytotoxic effect at the concentrations used in the assay (Figure 1—figure supplement 1A). Inoculation was then performed for 1 hr in the presence of the drug and inoculum was removed and replaced with fresh drug-free media. To confirm the inhibition of endosomal acidification by the drugs, the presence or absence of acidic lysosomes was assessed by immunostaining of lysosomal-associated membrane protein 1 (LAMP-1) and by staining with LysoTracker, a dye specific for acidic compartments. The signal intensity of LysoTracker decreased drastically following treatment with the drugs, confirming the inhibition of endosomal acidification (Figure 1—figure supplement 1B and C). The effect of the drugs on viral replication was then compared for the two variants (Figure 1B and Figure 1—figure supplement 1D). MP4 infectivity was significantly reduced by both drugs in a dose-dependent manner, while MP4-97R/167G infectivity was in contrast enhanced. These results were confirmed by viral load quantification with real-time RT-PCR (Figure 1—figure supplement 1E). Similar results were obtained in RD cells (Figure 1—figure supplement 1F and G), indicating that drug effects are not cell type-dependent. The different sensitivity of the two variants to acidification inhibitors was more pronounced with HCQ, so we performed a detailed examination of the mechanism of action with this drug.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the virus inhibitory assay workflow. Cells were pre-treated with lysosomotropic drugs and infected (MOI 0.1) in presence of the drug. After inoculum removal, infected cells were cultured in drug-free media and infected cells were stained by immunofluorescence (IF) with anti-VP2 Ab. Figure 1A was created with BioRender.com. (B) Hydroxychloquine (HCQ) and Bafilomycin A1 (BAF-A1) dose response assay in infected Vero cells. (C) HCQ effect in Vero cells pre-treated or not with heparinase III (hepIII) or sodium chlorate (NaClO3) as in A. Mean and S.E.M of biological triplicates are shown. Results are shown as % of virus-positive cells relative to nontreated control. In B, statistical significance (one-way ANOVA) between treated and untreated virus or between treated MP4 and MP4-97R/167G was calculated based on the area under curve (AUC). In C, statistical significance (two-way ANOVA) was calculated for each virus between each condition. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The cytotoxic effect of lysosomotropic drugs was evaluated with LDH and MTT assays. Vero cells were treated with a range of different concentrations of hydroxychloroquine (HCQ) or bafilomycin A1 (BAF-A1) for 2 hr. At 24 hr post-treatment, cell supernatants and lysates were collected for LDH assay and MTT assay, respectively, to determine cytotoxicity effect (n=2 biological replicates). (B) Inhibition of endosomal acidification confirmed with LysoTracker staining (red). Lysosomes are stained in green with an anti-LAMP-1 Ab and nuclei in blue (DAPI). Representative immunofluorescence (IF) images are shown (scale bar, 10 µm). (C) Quantified LysoTracker signal intensities calculated from nontreated, HCQ and BAF-A1-treated conditions are shown relative to lysosomal-associated membrane protein 1 (LAMP-1) intensity (n=3 biological replicates). Statistical significance was calculated with one-way ANOVA. (D) Representative IF staining of EV-A71 (anti-VP2 in green) 24 hpi of Vero cells in presence of 25 µM HCQ or 250 nM BAF-A1 (scale bar, 300 µm). (E) Viral RNA load quantification by real-time RT-qPCR of infected Vero cells with and without drug treatment at 24 hpi. (F) Cytotoxic effect of HCQ and BAF-A1 were evaluated using LDH and MTT assays in Rhabdomyosarcoma (RD) cells. (G) Dose response assay with HCQ and BAF-A1 on RD cells were performed exactly like in Vero cells (Figure 1). Infected cells (stained with anti-VP2 Ab) were quantitated at 24 hpi after treatment with increasing drug concentrations. Results are shown as % of virus-positive cells relative to nontreated control. Area under curve (AUC) was calculated and statistical significance (one-way ANOVA) between treated and untreated virus or between treated MP4 and MP4-97R/167 G are shown. Mean and S.E.M of biological duplicates are shown. **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Virus infection was performed on Rhabdomyosarcoma (RD) WT and RD ΔSCARB2 cells. Cells were lysed, and viral RNA copy numbers were quantitated at 24 hpi using RT-qPCR. Results are expressed as % Virus RNA copy number relative to RD WT cells (set to 100%). Mean and S.E.M of biological triplicates are shown.****p<0.0001.
+
 To determine whether the effect of HCQ was related to the usage of HS as an attachment receptor, we repeated the virus inhibitory assay using cells depleted of HS by either heparinase digestion or treatment with sodium chlorate (Figure 1C). The distinct sensitivity to HCQ was reproduced regardless of the presence or absence of HS on the cell surface. Of note, we confirmed that as for the human strain (Tseligka et al., 2018), the HS-independent and HS-dependent MP4- derivatives both need SCARB2 to infect cells and cannot replicate in SCARB2 CRISPR-Cas9 knock-out cells (Figure 1—figure supplement 2). Altogether, these data indicate that the capsid mutations change the sensitivity to HCQ, independent of the attachment receptor used.
 
-## MP4 enters via SCARB2-mediated and pH-dependent endocytosis, while MP4-97R/167G utilizes an alternative SCARB2-dependent pathway
+### MP4 enters via SCARB2-mediated and pH-dependent endocytosis, while MP4-97R/167G utilizes an alternative SCARB2-dependent pathway
 
 We showed that the MP4 virus uses SCARB2 as an entry receptor and that it is inhibited by HCQ. This strongly suggests that MP4 uses SCARB2-mediated pH-dependent endocytosis for entry as demonstrated for many other EV-A71 variants (Dang et al., 2014; Chen et al., 2012). We then evaluated whether HCQ could inhibit viral binding. As anticipated, due to its affinity for HS, MP4-97R/167G showed higher cell binding compared to MP4. However, HCQ and no effect on this binding (Figure 2A). We next conducted a single-cycle infection assay and observed that the differential effect of HCQ on MP4 and MP4-97R/167G became prominent from 4 hpi onward (Figure 2B). To further dissect which step of the viral growth cycle was differentially affected by the treatment, we performed a time-of-addition assay. As shown in Figure 2C, HCQ significantly lost its effect when administered later than 1 hpi, confirming that the effect occurs during the early phase of the viral cycle. To more specifically assess whether the drug affects viral entry, we transfected in vitro transcribed genomic RNA containing the nanoluciferase (Nluc) gene as the reporter (Figure 2D and E). RNA transfection allows to bypass receptor-mediated entry. In these conditions, no difference was observed for both variants, whether HCQ was present or not (Figure 2E). This observation also indicates that the drug does not impact genome replication. In contrast, infection with infectious Nluc reporter virus (Figure 2D and F) reproduced the differential HCQ inhibition as observed in the original non-modified viruses (Figure 1D). Taken together, these data indicate that MP4 enters via pH-dependent endocytosis, while MP4-97R/167G entry pathway is independent on endosomal acidification.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig2-v3.jpg)
 
-**Figure 2.:** (A) Virus binding assay in Vero cells in presence of 25 µM HCQ. (B) Single-cycle replication kinetic in nontreated and HCQ-treated Vero cells. At each timepoint, cell lysates were collected, and viral RNA copy numbers were quantitated using RT-qPCR (C) Time-of-addition assay in Vero cells treated with HCQ starting at different timepoints. Infected cells (MOI 0.1) were quantitated 24 hpi by immunofluorescence (IF). (D) Schematic diagram of Vero cells pre-treated with HCQ and subsequently subjected to transfection of in vitro RNA transcript or infection with EV-A71 nanoluciferase (Nluc) reporter viruses. At the indicated timepoints, cell supernatants were collected, and luciferase activity was measured. Figure 2D was created with BioRender.com.(E & F) Results are expressed in % relative light unit (RLU) of treated versus nontreated virus at indicated timepoints. The mean and S.E.M from biological triplicates are shown. Statistical significance was calculated using two-way ANOVA, comparing treated and untreated control. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 2—source data 1.Figure 2A.Figure 2—source data 2.Figure 2B.Figure 2—source data 3.Figure 2C.Figure 2—source data 4.Figure 2E.Figure 2—source data 5.Figure 2F.
+**Figure 2.:** (A) Virus binding assay in Vero cells in presence of 25 µM HCQ. (B) Single-cycle replication kinetic in nontreated and HCQ-treated Vero cells. At each timepoint, cell lysates were collected, and viral RNA copy numbers were quantitated using RT-qPCR (C) Time-of-addition assay in Vero cells treated with HCQ starting at different timepoints. Infected cells (MOI 0.1) were quantitated 24 hpi by immunofluorescence (IF). (D) Schematic diagram of Vero cells pre-treated with HCQ and subsequently subjected to transfection of in vitro RNA transcript or infection with EV-A71 nanoluciferase (Nluc) reporter viruses. At the indicated timepoints, cell supernatants were collected, and luciferase activity was measured. Figure 2D was created with BioRender.com.(E & F) Results are expressed in % relative light unit (RLU) of treated versus nontreated virus at indicated timepoints. The mean and S.E.M from biological triplicates are shown. Statistical significance was calculated using two-way ANOVA, comparing treated and untreated control. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## HCQ differentially impacts MP4 and MP4-97R/167G uncoating
+### HCQ differentially impacts MP4 and MP4-97R/167G uncoating
 
 To further dissect the mechanism of action of HCQ on the entry of each variant, we next examined the effect of the drug on viral uncoating. We generated virus stocks labeled with neutral red and performed a neutral red uncoating assay, as previously described (Brandenburg et al., 2007). Briefly, viral stocks were produced in the dark in the presence of neutral red to allow co-encapsidation of the viral genome and the dye within the viral particles. Photoactivation of neutral red causes the dye to cross-link viral genomes to the capsid and block viral uncoating (Brandenburg et al., 2007). Thus, upon infection with neutral red-labeled viruses, light exposure only inactivates viruses that have not yet completed uncoating, while viral genomes already released in the cytoplasm remain unaffected. This technique precisely determines the timepoint of viral uncoating. Cells were pre-treated with HCQ and then incubated with neutral red-labeled viruses for 1 hr at 37 °C for infection. Light inactivation was performed at selected timepoints post-infection, and infected cells were quantified 24 hr later by immunostaining (Figure 3A). In the absence of HCQ, most viruses had undergone uncoating between 2 and 4 hpi for both variants (30–80% of uncoated viruses for MP4 and 45–90% for MP4-97R/167G, respectively) (Figure 3B). In the presence of HCQ, MP4 uncoating was greatly inhibited, even when photoactivation was performed at 4 hpi (Figure 3B, left panel). In contrast, the uncoating rate was not inhibited in the presence of HCQ for MP4-97R/167 G (Figure 3B, right panel), and the final viral yield was even increased as already observed in Figure 1B and C.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig3-v3.jpg)
 
-**Figure 3.:** (A) Schematic illustration of the neutral red assay workflow. Vero cells were pre-treated with or without HCQ for 1 hr. Neutral red-labeled viruses were allowed for cell infection at 37 °C for 1 hr (MOI 0.1). The inoculum was then removed and replaced with fresh media. Infected cells were exposed to light for 30 min at different timepoints and further incubated up to 24 hpi for immunofluorescence (IF) staining. Figure 3A was created with BioRender.com. (B) Effect of light inactivation on replication of neutral red-labeled MP4 (left panel) or MP4-97R/167G (right panel). Results are plotted as % of virus-positive cells relative to non-treated dark control. Mean and S.E.M of biological triplicates are shown. Statistical significances (two-way ANOVA) were calculated between treated and nontreated conditions. (C) Schematic illustration of virus uncoating monitored with the combinational use of RNA-FISH to detect EV-A71 RNA (red) and IF with anti-VP2 Ab to detect the viral capsid (green). Co-staining highlights intact viruses in yellow while empty capsids and free RNA are in green and red, respectively. (C, right panel) Representative images (scale, 20 µm) of MP4 and MP4-97R/167G binding after 1 hr at 4 °C with virus genomic RNA (vRNA) (red) and capsids (green). Figure 3C was created with BioRender.com. (D) Co-localization of capsid and vRNA in individual cells at 2 hpi and 4 hpi analyzed using Mander’s overlap coefficient (n=32 individual cells from two independent experiments). Statistical comparison (unpaired t-test) of untreated and treated groups. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (E) Representative images of the 4 hr time point. Arrows: empty capsid.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3D.
+**Figure 3.:** (A) Schematic illustration of the neutral red assay workflow. Vero cells were pre-treated with or without HCQ for 1 hr. Neutral red-labeled viruses were allowed for cell infection at 37 °C for 1 hr (MOI 0.1). The inoculum was then removed and replaced with fresh media. Infected cells were exposed to light for 30 min at different timepoints and further incubated up to 24 hpi for immunofluorescence (IF) staining. Figure 3A was created with BioRender.com. (B) Effect of light inactivation on replication of neutral red-labeled MP4 (left panel) or MP4-97R/167G (right panel). Results are plotted as % of virus-positive cells relative to non-treated dark control. Mean and S.E.M of biological triplicates are shown. Statistical significances (two-way ANOVA) were calculated between treated and nontreated conditions. (C) Schematic illustration of virus uncoating monitored with the combinational use of RNA-FISH to detect EV-A71 RNA (red) and IF with anti-VP2 Ab to detect the viral capsid (green). Co-staining highlights intact viruses in yellow while empty capsids and free RNA are in green and red, respectively. (C, right panel) Representative images (scale, 20 µm) of MP4 and MP4-97R/167G binding after 1 hr at 4 °C with virus genomic RNA (vRNA) (red) and capsids (green). Figure 3C was created with BioRender.com. (D) Co-localization of capsid and vRNA in individual cells at 2 hpi and 4 hpi analyzed using Mander’s overlap coefficient (n=32 individual cells from two independent experiments). Statistical comparison (unpaired t-test) of untreated and treated groups. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (E) Representative images of the 4 hr time point. Arrows: empty capsid.
 
 To further validate these results, we then combined fluorescent in situ hybridization (FISH) of viral genomic RNA and immunofluorescence staining of viral capsid at early timepoints. Full particles are characterized by colocalization of virus genomic RNA (vRNA) and viral capsid (as shown in 1 hpi at 4 °C), while the colocalization is lost following the uncoating process (Figure 3C). Quantification of vRNA and capsid colocalization highlighted no significant difference between the two variants at 2 hpi in presence or absence of HCQ (Figure 3D). However, at 4 hpi (prior to the initiation of replication, see Figure 3B), MP4 uncoating appeared to be inhibited by HCQ, as highlighted by a decrease of empty capsids and an increase of capsid/RNA colocalization in presence of the drug (Figure 3D and E). An opposite effect was observed for MP4-97R/167G, with a reduced capsid/RNA colocalization in the presence of HCQ, indicating that more viruses had undergone uncoating in the presence of HCQ at this time point. Altogether these data indicate that MP4-97R/167G can uncoat at neutral pH and that acidification is instead increasing its replication capacity, while MP4 needs acidic pH to uncoat.
 
-## MP4 relies on late endosomes for uncoating, whereas MP4-97R/167G undergoes uncoating in early endosomes
+### MP4 relies on late endosomes for uncoating, whereas MP4-97R/167G undergoes uncoating in early endosomes
 
 HCQ is known to inhibit endosomal acidification by accumulating in endosomes in a protonated form. This accumulation leads to endosomal swelling and inhibition of fusion between endosomes and lysosomes within cells, as previously described (Baradaran Eftekhari et al., 2020; Mauthe et al., 2018) and as shown in Figure 4A. We thus hypothesized that the two variants could exploit different entry routes, which could explain the different sensitivity to HCQ. We showed that MP4 needs acidic pH to uncoat and is thus expected to release its RNA in late endosomes/lysosomes. In contrast, MP4-97R/167G can uncoat in the absence of pH acidification and accordingly in a non-acidic environment. To test this hypothesis, we infected Vero cells transiently expressing a variant of small GTPase Rab5a, a protein involved in the maturation of early endosomes (EE) into late endosomes (LE). This Rab5a-Q79L mutant is constitutively active (CA) and blocks LE maturation (Figure 4B). Viral capsids of MP4 and MP4-97R/167G were observed within EE in both Rab5a WT and CA-expressing cells at 0.5 hpi (Figure 4—figure supplement 1A) and 2 hpi (Figure 4C). However, at 7 hpi, the percentage of cells stained for double-stranded RNA (dsRNA), a marker of virus replication, was significantly reduced for MP4 in Rab5a CA-expressing cells but not for MP4-97R/167G (Figure 4D and Figure 4—figure supplement 1B). This indicates that MP4-97R/167G genomes were successfully released in the cytoplasm to undergo translation and replication, even in the absence of EE fusion to LE. Conversely, a transition from EE to LE with a gradual pH decrease is necessary for MP4 to release its genome.
 
-## VP1-L97R/E167G substitutions confer affinity for HS but decrease capsid stability
+![Figure 4.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig4-v3.jpg)
+
+**Figure 4.:** (A) Nontreated and hydroxychloroquine (HCQ)-treated Vero cells were stained with anti-EEA-1 antibody (green) to label early endosomes, and DAPI (blue) to label cell nuclei. (B) Schematic representation of endosomal route upon overexpression of Rab5a WT or constitutively active (CA) mutant. In C and D, Vero cells transiently expressing Rab5a-eGFP WT or CA were fluorescence-activated flow cytometry (FACS)-sorted and infected with the two viral variants. Infections were compared at different time post-infection. Figure 4B was created with BioRender.com. In (C) viral capsids (anti-VP2 Ab, in red) localize in early endosomes at 2 hpi in cells expressing Rab5a WT or CA. In (D) the proportion of cells containing replicating viruses (stained with the anti-dsRNA J2 Ab, see Fig.S3B for representative images) is calculated at 7 hpi. Results and statistical significance (two-way ANOVA) are expressed relative to cells with Rab5a WT. Mean and S.E.M from triplicates are shown. ***p<0.001. In B and C, white boxes are enlarged in the right panel. Scale bar: 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Vero cells infected with MP4 and MP4-97R/167G were fixed at 0.5 hpi. Viral capsid localization was imaged with an anti-VP2 Ab (in red). Magnified areas are highlighted in white box and displayed at left bottom of merged image. Scale bar: 20 µm. (B) Vero cells infected with MP4 and MP4-97R/167G were fixed at 7 hpi and stained with anti-dsRNA J2 Ab to highlight viral replication. The images shown are representative examples of those used for the quantifications presented in Figure 4D. Scale bar: 400 µm.
+
+### VP1-L97R/E167G substitutions confer affinity for HS but decrease capsid stability
 
 Our data highlighted that both MP4 and MP4-97R/167G enter via a SCARB2-dependent pathway, and localize in early endosomes at early times post-infection but exhibit distinct sensitivities to HCQ, a feature independent of their differential use of HS as an attachment receptor. We therefore speculated that the varying pH-dependency may be attributed to differences in virion stability. We analyzed the impact of VP1-97R and VP1-167G mutations on their respective local environments at pH 5 and pH 7 with the Adaptive Poisson-Boltzmann Solver (APBS) (Bank and Holst, 2003; Jurrus et al., 2018). As displayed in Figure 5—figure supplement 1, both L97R and E167G mutations are inducing electrostatic changes at the surface of the capsid within the region of interest and the changes are particularly significant at pH 5. Furthermore, analysis with DynaMut server (Rodrigues et al., 2018) reveals that the two mutations affect interaction networks (Figure 5—figure supplement 2). The VP1-L97R mutation is predicted to reduce hydrophobic interactions between amino acid 97 and its neighbors VP1-245Y and VP1-246P while the VP1-E167G mutation causes a loss in hydrogen bonding capacity to VP1-165S and reduces the net negative charge. This is consistent with analyses of vibrational entropy change (Figure 5—figure supplement 3), indicating that the presence of two mutations results in enhanced local dynamics, which has previously been correlated with reduced capsid stability (Panja et al., 2020; Chand et al., 2020). Consistently, the predictions of Gibbs free energy change (ΔΔG) induced by these mutations further support that both mutations induce destabilization of the capsid structure, regardless of pH and temperature (Figure 5—figure supplement 1).
 
 These computational predictions led us to speculate that the MP4-97R/167G mutant may feature a lower stability and may be able to bypass the need for acidic pH for uncoating. To experimentally test this hypothesis, we subjected these variants to neutral and acidic conditions and assessed their virion structure using negative staining electron microscopy (nsEM) (Figure 5A and B). At acidic pH, there was no notable alteration in the capsid morphology of MP4, which maintained a stable particle diameter of ~31–33 nm across both pH conditions. On the other hand, for MP4-97R/167G, both 2D images and 3D reconstructions highlighted a loss of density at the center of the viral particles, as well as an expansion in size for a subset of particles (diameter ranging from 31 to 41 nm at pH5 versus 31 to 33 nm at pH7), indicating partial virus uncoating. We then performed a temperature sensitivity assay by heating viruses at different temperatures for 1 hr before inoculation on cells. Quantification of infected cells at 24 hpi further confirmed that MP4 capsid is more resistant to higher temperature as 80% of the MP4 population survived a 50 °C thermal stress compared to only 50% for MP4-97R/167G (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig5-v3.jpg)
+
+**Figure 5.:** (A) Negative staining electron microscopy (nsEM) analysis of MP4 and MP4-97R/167G incubated at pH 7 and pH 5. Representative raw micrographs are shown in each case. (B) Representative 2D class averages generated from datasets shown in panel A (box size = 54 nm; left) and the overlay of the corresponding 3D maps (right). Gray and orange shade indicates virus particle reconstructions at pH 7 and pH 5, respectively. (C) Temperature sensitivity assay. Infected Vero cells (MOI 0.5) were quantitated by immunostaining with an anti-VP2 Ab at 24 hpi after 1 hr incubation at increasing temperatures. Results are shown as % of virus-positive cells relative to 4 °C treated control. Error bars indicate mean and S.E.M from biological triplicates. (D) For sSCARB2 inhibition assay, viruses (MOI 0.5) were incubated 1 hr at 37 °C with 1 µg of soluble scavenger receptor class B member 2 (SCARB2) (sSCARB2) before infection of Vero cells. Infected Vero cells were quantitated by immunostaining with an anti-VP2 Ab at 24 hpi. Results are shown as % of virus-positive cells relative to nontreated controls. Statistically significance was calculated with two-way ANOVA. ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Electrostatic surface potential calculated by Adaptive Poisson–Boltzmann Solver (APBS) from −5 kT/e (red) to +5 kT/e (blue).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Interatomic interactions displayed and compared between WT and mutant capsid structures. VP1-97 and VP1-167 residues are labeled in light green and represented as sticks together with the surrounding interaction residues. Changes in interactions are highlighted on both WT and mutant structures with red asterisks (*).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Computation of the vibrational entropy change (ΔΔSVib) between WT and mutants. Amino acids in red indicate an increase in molecule flexibility.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** Raw micrographs and 2D classes of MP4 and MP4-97R/167G incubated at neutral pH with and without sSCARB2. Representative 2D classes are shown in each case to recapitulate overall diversity in electron microscopy (EM) images (box size = 61 nm). Red squares indicate 2D class averages with strong staining in the middle of the particle indicating partially open capsids with low density of protein and genome components, which is consistent with empty capsids.
+
 As MP4-97R/167G is less stable, we hypothesized that binding to SCARB2 may be sufficient to trigger its capsid opening. We conducted a competitive experiment and compared the infectivity of the two variants after incubation with soluble SCARB2 (sSCARB2) at neutral pH for 1 hr at 37 °C. We observed that MP4-97R/167G but not the MP4 variant lost infectivity upon pre-exposure to sSCARB2 (Figure 5D). We further tested the impact of the uncoating receptor binding by nsEM. MP4 and MP4-97R/167G were incubated with sSCARB2 at pH7.5 for 1 hr and imaged. Based on the inspection of EM images and 2D class-averages of MP4, the percentage of empty capsid particles did not change significantly before and after the incubation with sSCARB2 (<1% in both cases). However, the double mutant exhibited a ~ fivefold increase in empty capsid percentage after treatment with sSCARB2 (Figure 5—figure supplement 4), consistent with the functional data above. Altogether, our results confirmed that the MP4-97R/167G mutant is less stable and more sensitive to thermal and acidic stresses as well as receptor binding, which are sufficient triggers to initiate virus capsid disruption and subsequent viral uncoating.
 
-## Resistance to HCQ and reduced capsid stability extend to other strong heparan sulfate-binding strains
+### Resistance to HCQ and reduced capsid stability extend to other strong heparan sulfate-binding strains
 
 To determine if our observations are applicable to human strains, we examined the sensitivity of a closely related clinical strain. This strain was isolated from the respiratory tract of an immunosuppressed patient with a disseminated EV-A71 infection (Cordey et al., 2012). Additionally, we tested a strong HS-binding derivative that harbors the same VP1-L97R and E167G mutations as our MP4 double mutant. Notably, this human clinical strain shares 98.3% amino acid similarity with the MP4 variant used in this study and exhibits similar HS-binding phenotypes (Weng et al., 2023). As shown in Figure 6—figure supplement 1, the original human strain was inhibited by HCQ, whereas the double mutant exhibited insensitivity to the drug. We next checked whether our findings could extend to other mutations conferring HS-binding ability. To this end, we used the human EV-A71 strain 41 (5865/SIN/000009, GenBank accession no. AF316321; subgenogroup B4), with or without a mutation at position VP1-145, a residue known to play a key role in modulating viral HS-binding capacity and in vivo virulence. The variant with VP1-145E is a weak HS binder and is virulent in mice while the cell-adapted VP1-145Q variant is a strong HS-binder and attenuated in mice (Tee et al., 2019). As shown in Figure 6A, HCQ enhanced the infectivity of the VP1-145Q variant but reduced the infectivity of the VP1-145E variant, aligning with our findings for the MP4-97R/167 G and its human-related strain (Fig. S6). We also investigated the effects of temperature and preincubation with sSCARB2, and confirmed the increased temperature sensitivity (Figure 6B) and sSCARB2 inhibition (Figure 6C) of the HS-binding VP1 145Q. In contrast, the VP1-145E variant’s capsid proved to be much more stable. These experimental results are consistent with the free energy change prediction shown in Figure 5—figure supplement 1, further supporting the observation that the HS-binding phenotype is inversely correlated with virus capsid stability.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig6-v3.jpg)
+
+**Figure 6.:** (A) Virus inhibitory assay with VP1-145 variants were performed with 25 µg HCQ on Vero cells (MOI 0.1). (B) For temperature sensitivity assays, VP1-145 variants were incubated at increasing temperature for 1 hr before inoculated onto Vero cells (MOI 0.5). (C) For sSCARB2 inhibition assay, VP1-145 variants were incubated 1 hr at 37 °C with 1 µg of soluble SCARB2 (sSCARB2) before infection of Vero cells (MOI 0.5). Infected cells were quantitated by immunostaining with anti-VP2 Ab at 24 hpi. Results are shown as % of virus-positive cells relative to nontreated control (A & C) or 4 °C treated control (B). Mean and S.E.M of biological triplicates are shown. Statistically significant differences (two-way ANOVA) are shown. **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Virus inhibitory assay with human clinical strain variant carries VP1-97L residue (EV71-97L) and VP1-97R/167G mutations (EV71-97R/167G) were treated with 25 µM HCQ on Vero cells (MOI 0.1). Infected cells were quantitated by immunostaining with anti-VP2 Ab at 24 hpi. Results are shown as % of virus-positive cells relative to nontreated control. Mean and S.E.M of biological triplicates are shown. Statistically significant differences (two-way ANOVA) are shown. *p<0.05, ****p<0.0001.
 
 ## Discussion
 
@@ -86,74 +134,441 @@ In the light of these published studies and our data, we propose the following m
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/98441/elife-98441-fig7-v3.jpg)
 
-**Figure 7.:** in vitro and in vivo settings.Viruses undergo continuous mutations to optimize fitness across diverse environments. In cell culture, they adapt to attain an ‘in vitro advantage’ by decreasing capsid stability while acquiring HS-binding capacity, consequently enhancing their infectivity. Conversely, during human infection, viruses adapt to secure an ‘in vivo advantage’ by bolstering capsid stability, relinquishing heparan sulfate (HS)-binding capacity, and thereby evading viral trapping and resisting environmental stresses. Figure 7 was created with BioRender.com.
+**Figure 7.:** Viruses undergo continuous mutations to optimize fitness across diverse environments. In cell culture, they adapt to attain an ‘in vitro advantage’ by decreasing capsid stability while acquiring HS-binding capacity, consequently enhancing their infectivity. Conversely, during human infection, viruses adapt to secure an ‘in vivo advantage’ by bolstering capsid stability, relinquishing heparan sulfate (HS)-binding capacity, and thereby evading viral trapping and resisting environmental stresses. Figure 7 was created with BioRender.com.
 
 Of note, although strong HS-binder is clearly attenuated in mice, the situation in humans is more puzzling as strains with Q or G at position VP1-145 have been associated with severe neurological cases, and the methodology used in those studies excluded the emergence of mutation during cell culture (Chang et al., 2012; Liu et al., 2014). Experimental work in human-relevant tissue culture models also suggests that binding to HS provides an advantage to the virus (Aknouch et al., 2023; van der Sanden et al., 2018; Tseligka et al., 2018). Furthermore, we previously showed that intermediate HS-binding affinity can result in increased virulence even in mouse models (Weng et al., 2023). We are currently investigating if there is a lack of trapping and/or limited impact on viral stability under these conditions. To conclude, to reach optimal fitness in vitro and in vivo, the virus needs to find the correct balance between HS binding and capsid stability (Figure 7). Our study improves the current knowledge of the mechanism behind the in vivo attenuation of cell culture-adapted viruses. It also opens the doors to new antiviral strategies targeting endosomal acidification as well new principles for vaccine design based on attenuated-acid-independent variants to help combat EV-A71.
 
 ## Materials and methods
 
-## Chemical reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-enterovirus 71 Ab(mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>MAB979; RRID:AB_95300</td>
+      <td>IF (1:1000)RNAscope (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRNA monoclonal antibody J2(mouse monoclonal)</td>
+      <td>Scicons</td>
+      <td>RRID:AB_2651015</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-LAMP1 antibody(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>D2D11, RRID:AB_2687579</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EEA1 antibody(goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-6414, RRID:AB_640035</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11029; RRID:A-11029</td>
+      <td>IF (1:2000)RNAscope (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 594 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11032; RRID:AB_2534091</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>MP4</td>
+      <td>Cagno et al., 2019</td>
+      <td>GenBank: JN544419</td>
+      <td>Mouse-adapted virus</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>HU-97L</td>
+      <td>Tee et al., 2021</td>
+      <td>GenBank: EU414331</td>
+      <td>Clinical strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>IEQ</td>
+      <td>Kobayashi and Koike, 2020</td>
+      <td>GenBank: AF316321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>IEE</td>
+      <td>Kobayashi and Koike, 2020</td>
+      <td>GenBank: AF316321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxychloroquine</td>
+      <td>Tocris</td>
+      <td>747-36-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>InvivoGen</td>
+      <td>88899-55-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chlorate</td>
+      <td>Sigma</td>
+      <td>7775-09-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neutral red</td>
+      <td>Sigma Aldrich</td>
+      <td>553-24-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparinase III</td>
+      <td>Amsbio</td>
+      <td>37290-86-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>InvivoGen</td>
+      <td>58-58-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysoTracker Deep Red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LysoTracker Deep Red</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR green II RNA gel stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>SYBR green II RNA gel stain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant Human LIMPII/SR-B2 Fc Chimera Protein, CF</td>
+      <td>Bio-Techne</td>
+      <td>1966-LM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>RNAscope V-EV71-C1 probe</td>
+      <td>Biotechne</td>
+      <td>1087481-C1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>RNase P housekeeping gene</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>4316861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Superscript II reverse transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18064022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Random hexamer primers</td>
+      <td>Roche</td>
+      <td>11034731001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Platinum Taq DNA Polymerase, DNA-free</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15966025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>TSA Vivid 570 kit</td>
+      <td>Tocris</td>
+      <td>7526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>E.Z.N.A. Viral RNA kit</td>
+      <td>Omega Bio-Tek</td>
+      <td>R6874-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>RNAscope Multiplex Fluorescent V2</td>
+      <td>Biotechne</td>
+      <td>323270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>RNA-Protein Co-detection Ancillary Kit</td>
+      <td>Biotechne</td>
+      <td>323180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>KAPA SYBR FAST One-Step qRT-PCR Kits</td>
+      <td>Kapa Biosystems</td>
+      <td>KK4650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Nano-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>N1110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>Thiazolyl Blue Tetrazolium Bromide (MTT)</td>
+      <td>Merck</td>
+      <td>M5655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit or assay</td>
+      <td>CyQUANT LDH Cytotoxicity Assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C20300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero cells</td>
+      <td>ATCC, USA</td>
+      <td>RRID:CVCL_0059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Rhabdomyosarcoma (RD) cells</td>
+      <td>ATCC, USA</td>
+      <td>RRID:CVCL_1649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>RD-SCARB2-KO</td>
+      <td>Caroline Tapparel Yamayoshi et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>RD-ΔEXT1+hSCARB2</td>
+      <td>Satoshi Koike Kuronita et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR assay primer/for (Entero/Ge/08 assay)</td>
+      <td>Nishimura et al., 2024</td>
+      <td>PCR primers</td>
+      <td>5’-GCTGCGYTGGCGGCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR assay primer/Rev (Entero/Ge/08 assay)</td>
+      <td>Nishimura et al., 2024</td>
+      <td>PCR primers</td>
+      <td>5’-GAAACACGGACACCCAAAGTAGT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR assay primer/probe (Entero/Ge/08 assay)</td>
+      <td>Nishimura et al., 2024</td>
+      <td>PCR primers</td>
+      <td>5’-CTCCGGCCCCTGAATGYGGCTAA-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EV-A71/MP4 (Genbank accession number: JN544419; subgenogroup C2)</td>
+      <td>Jen-Reng Wang Guo et al., 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IEQ (Genbank accession number: JN544419: AF316321; subgenogroup B4)</td>
+      <td>Jen-Reng Wang Kobayashi and Koike, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IEE (Genbank accession number: JN544419: AF316321; subgenogroup B4)</td>
+      <td>Jen-Reng Wang Kobayashi and Koike, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eGFP-Rab5a WT</td>
+      <td>Pierre-Yves Lozach Dang et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eGFP-Rab5a S34N</td>
+      <td>Pierre-Yves Lozach Dang et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eGFP-Rab5a Q79L</td>
+      <td>Pierre-Yves Lozach Dang et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Geneious 10.2.16</td>
+      <td>https://www.geneious.com</td>
+      <td>https://www.geneious.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageXpress Micro XL</td>
+      <td>Molecular Devices</td>
+      <td>Molecular Devices</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism 9</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>UCSF Chimera (version 1.13.1)</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical reagents
 
 Chemical reagents used in this study were listed as follows: hydroxychloroquine (Tocris), bafilomycin-A1 (InvivoGen), sodium chlorate (NaClO3, Sigma-Aldrich), neutral red (Sigma Aldrich), and LysoTracker Deep Red (Thermo Fisher Scientific).
 
-## Cell lines and virus
+### Cell lines and virus
 
 Vero (monkey kidney; ATCC CCL-81) and human rhabdomyosarcoma cells (RD; ATCC no.: CCL-136) were propagated in Dulbecco’s Modified Eagle Medium (DMEM) and GlutaMAX (31966021, Thermo Fisher Scientific) containing 10% fetal bovine serum (FBS). RD-SCARB2-KO (Tseligka et al., 2018) and RD-ΔEXT1+hSCARB2 (Kobayashi et al., 2020) cells were maintained in DMEM supplemented with 10 µg/ml puromycin (58-58-2, InvivoGen). All infected cells were maintained in media supplemented with 2.5% FBS. All cells were maintained at 37 °C in 5% CO2. Viruses used in this study including MP4, MP4-97R/167 G (Genbank accession number: JN544419; subgenogroup C2), IEQ (EV-A71 VP1-145Q variant; Genbank accession number: AF316321; subgenogroup B4), IEE (EV-A71 VP1-145E variant), HU-97L (Genbank accession number: EU414331) and HU-97R/167 G strains were prepared as previously described (Tee et al., 2019; Cordey et al., 2012; Tseligka et al., 2018; Weng et al., 2023). For the Nluc reporter virus, the Nluc gene was inserted between 5’ UTR and VP4 of the virus as previously described (Tan et al., 2016). Viruses were generated in RD-ΔEXT1+hSCARB2 cells (Kobayashi et al., 2020), propagated for an additional passage, and used as working stocks. All virus stocks were sequenced for confirmation (Fasteris) prior to experiments.
 
-## Plasmids
+### Plasmids
 
 Plasmids encoding eGFP-Rab5a and eGFP-Rab5a Q79L are kind gifts from Pierre-Yves Lozach (University Claude Bernard Lyon 1). Both IEQ and IEE plasmids (Genbank accession number: JN544419: AF316321; subgenogroup B4) strains are kind gifts from Yoke Fun Chan (University of Malaya).
 
-## Virus inhibitory assay and time-of-addition assay
+### Virus inhibitory assay and time-of-addition assay
 
 For virus inhibitory assay, cells were pre-treated either with drugs for 1 hr at 37 °C. Viruses (MOI 0.1) were inoculated onto cells in the presence of drugs for 1 hr at 37 °C. Upon infection, inocula were removed and cells were rinsed thoroughly with phosphate-buffered saline buffer (PBS) before being incubated with fresh media up to 24 hpi. For the time-of-addition assay, HCQ was either pretreated (–1 hpi), introduced during virus infection (0hpi) or introduced onto cells at post-infection (1, 2, and 3 hpi) for 1 hr. After incubation, cells were rinsed with PBS before being loaded with maintenance media and incubate for up to 24 hpi. For both assays, infected cells were fixed for immunofluorescence staining for virus-positive cell detection.
 
-## Virus binding and replication assay
+### Virus binding and replication assay
 
 All the experiments were done on Vero cells seeded in 96-wells plates. For virus binding assay, cells were incubated with 1×108 RNA copy number/ml virus for 1 hr at 4 °C. The inocula were removed and rinsed with cold PBS twice, and then subjected to cell lysis for RNA extraction and qRT-PCR quantitation. For the virus replication assay, cell monolayers were incubated with the virus for 1 hr at 37 °C. The inocula were removed, rinsed with PBS, and then further incubated up to 24 hpi at 37 °C. Infected cells were lysed and viral RNA was quantified by qRT-PCR.
 
-## RNA extraction and real-time quantitative polymerase chain reaction
+### RNA extraction and real-time quantitative polymerase chain reaction
 
 Viral RNA was extracted using the OMEGA E.Z.N.A. Viral RNA kit (R6874-02) according to the manufacturer’s instructions. In brief, 100 µl of lysis buffer was added directly onto infected cells with supernatant, and 50 µl out of 200 µl lysate was collected to proceed for RNA extraction. RT-qPCR was performed based on quantitative Entero/Ge/08 assay (forward primer GCTGCGYTGGCGGCC, reverse primer GAAACACGGACACCCAAAGTAGT, and probe CTCCGGCCCCTGAATGYGGCTAA) as previously described (Filipe et al., 2022) using the QuantiTect Probe RT-PCR Kit (Qiagen, Switzerland) in 7500 Real-Time PCR System (Applied Biosystems).
 
-## Heparan sulfate removal
+### Heparan sulfate removal
 
 Both enzymatic and chemical methods, heparinase assay and sodium chlorate (NaClO3) treatment respectively, were used to cleave HS from the cell surface. For the heparinase assay, the cells were first rinsed with PBS and then incubated with 3.5 mIU/ml of heparinase III (AmsBio) diluted in 0.1 M sodium acetate pH 7.0, 1 mM calcium acetate, and 0.2% BSA for 1 hr at 37 °C. Meanwhile, mock-treated cells were incubated with heparinase buffer. Upon incubation, cells were washed twice prior to virus infection. For NaClO3 treatment, cells were propagated in the presence of 30 mM NaClO3 at least one passage before the experiment. The cells were also pre-seeded in media supplemented with NaClO3 and incubated overnight before the experiment.
 
-## Immunofluorescence and confocal imaging
+### Immunofluorescence and confocal imaging
 
 To detect infected cells, cells were fixed with absolute methanol (Sigma Aldrich) at room temperature for 10 min and then incubated with a blocking buffer consisting of 5% BSA (PanReac Applichem) and 0.05% TritonX-100 (PanReac Applichem) for 20 min. Fixed cells were first incubated with anti-EV-A71 capsid monoclonal antibody MAB979 (1:1000; Sigma) for 1 hr at 37 °C and then with Alexa Fluor 488-conjugated secondary antibodies (1:2000; Thermo Fisher Scientific) dissolved in DAPI solution for 1 hr at 37 °C. To detect dsRNA, infected cells were fixed with 4% paraformaldehyde (Santa Cruz) and incubated with a blocking buffer, cells were incubated with anti-dsRNA monoclonal antibody J2 (1:500; Scicons) for 1 hr at 37 °C and then with Alexa Fluor 594-conjugated secondary antibodies (1:2000; Thermo Fisher Scientific) dissolved in DAPI solution for 1 hr at 37 °C. Stained cells were acquired using ImageXpress Pico (Molecular Devices) and percentages of positive cells were determined using CellReporterXpress software. Images acquired were also processed using Imaris software and displayed as double-positive cells. For confocal imaging, immunofluorescence staining was performed with EE and lysosomes were stained using anti-EEA1 (1:100; Santa Cruz) and anti-LAMP1 (1:100; Cell Signalling), respectively, for 1 hr at 37 °C and then with Alexa Fluor 488-conjugated secondary antibodies (1:200) dissolved in DAPI solution for 1 hr at 37 °C. The stained slides were mounted under a coverslip (Hecht Assistent) with Fluoromount G mounting medium (Southern Biotech) and analyzed using Zeiss LSM 800 confocal microscopy.
 
-## RNAscope FISH detection and colocalization experiments
+### RNAscope FISH detection and colocalization experiments
 
 For FISH, cells were seeded on Nunc LabTek II chamber slides (Thermo Fisher Scientific) and fixed with 4% paraformaldehyde. To detect viral RNA in infected cells, fixed cells were processed for RNAscope FISH using RNAscope Multiplex Fluorescent V2 assay (Biotechne) according to the manufacturer’s protocol. In brief, the cells were hybridized with a V-EV71-C1 probe (Biotechne) at 40 °C for 2 hr and then the signals were revealed using TSA Vivid 570 kit (Tocris). The slides were then incubated with blocking buffer and incubated with MAB979 (1:100) at 4 °C overnight, followed by incubation with Alexa Fluor 488-conjugated secondary antibodies (1:200) at room temperature for 30 min. After incubating with DAPI for 30 s, the stained slides were mounted under a coverslip with mounting medium and analyzed using Zeiss LSM 800 confocal microscopy. Images were acquired and analyzed using ZEN 3.2 software.
 
-## Luciferase assay
+### Luciferase assay
 
 Enterovirus-A71 nanoluciferase (Nluc) reporter particles were used to study virus replication bypassing cell entry in presence and absence of the drug. Briefly, the reporter virus plasmid was linearized and in vitro transcribed to generate RNA using the T7 RiboMax Express Large Scale RNA Production System (Promega). Transcribed RNA was purified using RNeasy Mini Kit (Qiagen) and then transfected in RD cells using Lipofectamine 2000 (Thermo Fisher Scientific). At certain timepoints, cell supernatants were harvested for luciferase activity detection using the Nano-Glo Luciferase Assay System kit (Promega) on the Glomax Multi-Detection System (Promega).
 
-## Neutral red uncoating assay
+### Neutral red uncoating assay
 
 To generate neutral red (NR)-labeled viruses, virus stocks were propagated in cells in presence of 5 µg/ml neutral red (Aldrich). The virus stocks were harvested at 3 dpi and titered. For uncoating assay, NR-labeled viruses were infected at 37 °C for 1 hr in the dark then washed twice with PBS and loaded with FluoroBrite DMEM (Thermo Fisher Scientific) supplemented with 2.5% FBS. At certain timepoints, infected cells were exposed to light for 30 min and then allowed to incubate for up to 24 hpi. Infected cells were analyzed using immunofluorescence as stated earlier.
 
-## Virus infection in Rab5a-transfected cells
+### Virus infection in Rab5a-transfected cells
 
 Vero cells (1.5×106) were transfected with 25 µg of Rab5a-eGFP plasmids using Lipofectamine 3000 (Thermo Fisher Scientific). The next day, transfected cells were harvested, resuspended in buffer (PBS, 2 nM EDTA, 1% BSA), and subjected to fluorescence-activated flow cytometry (FACS) on S3 Cell Sorter (Biorad). EGFP-positive cells were sorted, collected, and then further propagated at least 1 d before virus infection. For virus infection, cells were infected with virus (MOI 1.5) for 1 hr at 37 °C. The inocula were removed, rinsed with PBS, and cells were further incubated up to 7 hpi at 37 °C. Cells were then stained with anti-dsRNA as described above.
 
-## Temperature sensitivity assay and shSCARB2 inhibition assay
+### Temperature sensitivity assay and shSCARB2 inhibition assay
 
 Viruses (MOI 0.5) were incubated at different temperatures (4 °C, 37 °C, 45 °C, 50°C, and 55°C) for 1 hr. Upon incubation, viruses were immediately transferred onto ice for cooling down before inoculated onto cells for 1 hr at 37 °C. Cells were washed and allowed to incubate in maintenance media up to 24 hpi before virus-positive cell detection using immunofluorescence. For SCARB2 inhibition assay, viruses were incubated with 1 µg of soluble recombinant human SCARB2-FC chimera protein (bio-techne) at 37 °C for 1 hr. The mixture was then inoculated onto cells at 37 °C for 1 hr. Upon incubation, cells were washed, and allowed to incubate in maintenance media up to 7 hpi before lysing the cells for viral RNA quantitation.
 
-## Electron microscopy (EM)
+### Electron microscopy (EM)
 
 For structural analyses, virus stocks were first inactivated by formaldehyde treatment. Formaldehyde at 100 µg/ml final concentration was added to the virus stock and incubated at 37 °C for 3 d. Inactivated viruses were purified through a 30% sucrose cushion at 32,000 rpm in SW32 Ti rotor (Beckman Coulter) for 14 hr at 4 °C, followed by sedimentation through a discontinuous 20–45% (w/v) sucrose at SW41 Ti rotor (Beckman Coulter) for 12 hr at 4 °C. The purified stocks were then subjected to HiPrep 16/60 Sephacryl S-500 HR column (Sigma Aldrich) with 25 mM Tris-HCl +150 mM NaCl (pH 7.5) as the running buffer. Fractions corresponding to EV A71 particles were pooled and concentrated to 0.3–1.1 mg/mL using Amicon Ultra centrifugal filter units with 100 kDa cutoff (Millipore Sigma). For pH-based assays we prepared Tris-Acetate-based buffers at pH 5 and pH 7.5. The buffers comprised 150 mM NaCl and a 100 mM mix of Tris base and acetic acid at the ratio necessary to reach the desired pH. Each EV A71 variant was diluted to 100 µg/ml in the two buffer and incubated for 30 min. Following incubation, the samples were applied onto negative stain EM grids (Cat # CF300-Cu-50, Electron Microscopy Sciences). Prior to sample application the grids were glow discharged for 30 s. 2% solution of uranyl formate was used for staining. The grids were imaged on a Talos L120C G2 microscope (Thermo Fisher Scientific) running at 120 kV and featuring the CETA 4 k camera. EPU software from Thermo Fisher Scientific was used for data acquisition, and all data processing was performed in the cryoSPARC package (Punjani et al., 2017). Each dataset comprised 100–200 micrographs, and 2000–10,000 virus-corresponding particles. Particles were extracted from micrographs and subjected to 2D classification. 3D reconstruction was performed using Ab initio algorithm with icosahedral symmetry imposed. For experiments at pH 5 where the expanded viral particles were observed, the Ab initio reconstruction was performed without the imposition of symmetry (i.e. C1). For imaging the virus in complex with SCARB2, the virus was combined with 1:1 molar ratio of SCARB2 to the viral P1 protomer and diluted to 100 µg/ml with Tris-Acetate-based buffer at pH 5 or pH 7.5 as mentioned earlier. Upon incubation, 5% glycerol was added to each sample to minimize aggregation. The samples were then applied to glow discharged grids and stained with 2% uranyl acetate, The imaging and analysis were carried out as mentioned above. Empty capsid quantification was performed on the level of 2D class-averages using the degree of staining in the center of viral particle as the main discriminatory factor.
 
-## Computational analysis of virus capsid protein structure stability
+### Computational analysis of virus capsid protein structure stability
 
 To assess the virus capsid protein structure stability, EV-A71 crystal structures with PDB ID of 3J22 and 4AED were used for MP4 and VP1-145 variants, respectively. I-mutant 2.0 server (Capriotti et al., 2005) was used to predict the free energy stability change upon introduction of mutation into virus capsid VP1 protein. Visualization of mutational effects on interatomic interactions and prediction of molecule flexibility were performed on DynaMut server (Rodrigues et al., 2018).
 
 The electrostatics changes towards mutations, and the visualization of their effect on the capsid surface were studied using the Adaptive Poisson–Boltzmann Solver (APBS) (Bank and Holst, 2003; Jurrus et al., 2018). We used a linear Poisson-Boltzmann equation with a ‘Single Debye-Hueckel’ boundary condition. Protein and solvent dielectric constants were set to 2.0 and 78.0, respectively, with a cubic B-spline discretization for charge distribution and a smoothed molecular surface for dielectric and ion-accessibility coefficients. We included monovalent ions at a concentration of 0.15 M, with radii of 2.0 Å for positive ions and 1.8 Å for negative ions. The analysis was performed and the potential maps were generated using the APBS PyMol (Schrodinger LLC, 2010) plugin.
 
-## Schematic diagram and statistical analysis
+### Schematic diagram and statistical analysis
 
 All experiments were performed in biological triplicate, unless otherwise stated. All schematic diagrams and illustrations were created via BioRender.com. All data and statistical analyses were generated using GraphPad Prism 9. All drug treatment experiments were analyzed with one-way and two-way ANOVA. For dose-dependent inhibitory assay, area under curve (AUC) was calculated and analyzed using one-way ANOVA. Degree of colocalization of virus capsid and vRNA in individual cells was measured using Mander’s overlap coefficient calculation in ZEN 3.2 software. Data were presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. and not significant (n.s.).

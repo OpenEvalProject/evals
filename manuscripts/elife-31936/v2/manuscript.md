@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.31936.001 Natural signaling circuits could be rewired to reprogram cells with pre-determined procedures. However, it is difficult to link cellular signals at will. Here, we describe signal-connectors — a series of RNA devices — that connect one signal to another signal at the translational level. We use them to either repress or enhance the translation of target genes in response to signals. Application of these devices allows us to construct various logic gates and to incorporate feedback loops into gene networks. They have also been used to rewire a native signaling pathway and even to create novel pathways. Furthermore, logical AND gates based on these devices and integration of multiple signals have been used successfully for identification and redirection of the state of cancer cells. Eventually, the malignant phenotypes of cancers have been reversed by rewiring the oncogenic signaling from promoting to suppressing tumorigenesis. We provide a novel platform for redirecting cellular information.
+Natural signaling circuits could be rewired to reprogram cells with pre-determined procedures. However, it is difficult to link cellular signals at will. Here, we describe signal-connectors—a series of RNA devices—that connect one signal to another signal at the translational level. We use them to either repress or enhance the translation of target genes in response to signals. Application of these devices allows us to construct various logic gates and to incorporate feedback loops into gene networks. They have also been used to rewire a native signaling pathway and even to create novel pathways. Furthermore, logical AND gates based on these devices and integration of multiple signals have been used successfully for identification and redirection of the state of cancer cells. Eventually, the malignant phenotypes of cancers have been reversed by rewiring the oncogenic signaling from promoting to suppressing tumorigenesis. We provide a novel platform for redirecting cellular information.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ In this work, we describe the multiple uses of ‘RNA-based signal connectors’
 
 ## Results
 
-## Design and construction of RNA-based signal-connectors
+### Design and construction of RNA-based signal-connectors
 
 Previous studies have demonstrated that insertion of an RNA aptamer into the 5ʹ untranslated region (5ʹ-UTR) of the messenger RNA (mRNA) can reduce the rate of translation initiation through blocking ribosome scanning in the presence of ligand (Werstuck and Green, 1998; Blount and Breaker, 2006). We hypothesized that a designed external complementary sequence can be used to hybridize to the target mRNA and to guide RNA aptamers for trans-regulation of cellular mRNA translation when a specific signal is present. To test this, we engineered RNA devices which use the antisense domain (a 20 nt antisense RNA) to recognize the mRNA of interest and the previously developed aptamer domain to control translation (Figure 1A). We used the signal-connector to tether a translational activation domain to enhance translation, or the aptamer domain alone to repress the translation. In principle, these modular devices which we called ‘signal-connectors’, can be designed to control the translation of any target mRNA in response to a signal-molecule of interest (Figure 1B) and thus link desired endogenous signals (input) to specific cellular signals (output) (Figure 1C).
 
@@ -36,9 +36,53 @@ Previous studies have demonstrated that insertion of an RNA aptamer into the 5ʹ
 
 **Figure 1.:** (A) Domain composition of a signal-connector. The device uses the antisense domain to recognize the mRNA of a target gene and the aptamer domain to respond to different signals to control the translation of the target gene. (B) Connectors that control the expression of cellular genes in response to specific exogenous signals can be engineered through this modular approach. (C) The signal-connectors can be used to direct the linkages between cellular inputs and outputs.
 
-## Signal-connectors effectively repress target gene expression
+### Signal-connectors effectively repress target gene expression
 
 To test whether this approach could cause efficient repression of translation initiation (Figure 2A) and elongation (Figure 2B), we designed signal-connectors complementary to 12 different regions of the mRNA sequence of the Renilla luciferase reporter gene, either binding to the 5ʹ-UTR or to the coding sequence (Figure 2C and Supplementary file 1). Each of these signal-connectors contained two segments: a 20 nt antisense RNA sequence designed to be complementary to the targeted mRNA sequence and two theophylline aptamer copies (Jenison et al., 1994). Of these 12 constructs, 11 induced significant decreases in Renilla luciferase expression in the presence of 1000 µM theophylline when they were stably transfected into HEK293 cells expressing Renilla luciferase (Figure 2D). The levels of luciferase activity did not change substantially in cells harboring signal-connectors grown in the absence of theophylline. Nuclear and cytoplasmic fractionation analysis showed that these constructs mainly located in the cytoplasm (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-v2.jpg)
+
+**Figure 2.:** (A) Design of the signal-connector to block translation of the targeted gene. The device is designed to bind the 5ʹ-UTR of the targeted mRNA. In the absence of the ligand, scanning of the 40S ribosome subunit proceeds until the AUG start codon is reached and translation is initiated. In the presence of the ligand, the ligand-aptamer complex disturbs ribosome scanning and blocks translation initiation. (B) When the binding occurs on the protein-coding region of target mRNA, it blocks ribosome and translation elongation. (C) Various signal-connectors were designed to target different regions of Renilla luciferase mRNA. (D) Renilla luciferase activity was suppressed by the signal-connectors only in the presence of 1 mM theophylline. Empty pGPU6/GFP/Puro vector as used as mock control. (E) Cells stably transfected with the signal-connectors (R1, R2 and R3) were grown in the presence of 0, 250, 500, 750, or 1000 µM theophylline. Addition of theophylline inhibited in vitro translation of the Renilla luciferase mRNA in a dose-dependent manner. (F) Suppression of Renilla luciferase in HEK293 cells by four different signal-connectors that bind to 100 µM tetracycline. (G) Design of the signal-connector for enhancing translation of a targeted gene. The activation of translation by a signal-connector is due to the activation of formation of initiation factor complexes involving eIF4G. In the absence of theophylline/tetracycline, the antisense domain is unable to bind to the mRNA of its target gene. In the presence of theophylline/tetracycline, the aptamer stem is formed and the antisense domain will bind to its target. (H) Renilla luciferase activity was increased by the signal-connector. (I) Addition of theophylline/tetracycline increased translation of the Renilla luciferase mRNA. Empty pGPU6/GFP/Puro vector as used as mock control. NC, negative control vector with two repeated elements not having targets in the human genome. Reported data are mean ± SD from at least three experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The levels of signal-connectors in puriﬁed nuclear or cytoplasmic RNAs were detected using real-time qPCR. U6 and GAPDH were used as nuclear and cytoplasmic control, respectively. Data are shown as mean ± SD based on three independent experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** While 2 × devices and 3 × devices induced strong inhibitory effects on luciferase expression in the presence of 1 mM theophylline, the 1 × devices only caused minimal changes in luciferase expression. Fold change values are luciferase expression levels (mean ± SD) from three measurements, relative to negative control cell lines.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The RNA ‘signal-connector’ (R1 used in Figure 2C of main text) resulted in decreased translation of the Renilla luciferase only in the presence of theophylline, as measured by luciferase activity. In addition, the 2 × signal connector (2 copies of aptamer) induced a higher reduction in translation of reporter gene than that of the 1 × signal connector (only one aptamer). The 2 × signal connector containing mutant theophylline aptamers could not reduce luciferase translation regardless of whether theophylline was present. Reported values are presented as mean ± SD and the experiments were repeated three times. *p<0.01.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The properties of the ‘OFF’ switch are explained by the above model, where y is the output, x is the concentration of the input signal, k is the number of the aptamers, n represents inhibitory parameter which is negatively correlated with the target distance from the 5’UTR, s is the normal expression rate of y in physiological status and –y represents the degradation rate of y in cell.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Four signal-connectors were designed to target different regions of human VEGF mRNA. Empty pGPU6/GFP/Puro vector as used as mock control. Reported values are presented as mean ± SD and the experiments were repeated three times.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Quantitative real-time PCR was performed to determine the expression level of VEGF mRNA. GAPDH was used as the internal control. Relative levels of VEGF mRNA did not change between cells harboring signal-connectors grown in the absence or presence of tetracycline. Reported values are presented as mean ± SD and the experiments were repeated at least three times. Mock, empty pGPU6/GFP/Puro vector.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** While 2 × device and 3 × device caused high activation fold changes on luciferase expression in the presence of 1 mM theophylline, the 1 × devices only induced minimal increase in luciferase expression. Fold change values are luciferase expression levels relative to negative control cell lines. Values are mean ± SD from three independent measurements.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** Neither the single eIF4G aptamer nor the antisense domain alone induced in vitro luciferase translation regardless of whether eIF4G was present. Instead, the RNA ‘signal-connector’ (R21 used in Figure 2G of main text) resulted in translation of the Renilla luciferase in the presence of eIF4G, as measured by luciferase activity. In addition, the 2 × signal connector (2 copies of aptamer) induced a higher activation in translation of reporter gene than that of the 1 × signal connector (only 1 aptamer). The 2 × signal connector containing mutant eIF4G aptamers could not induce luciferase translation regardless of whether eIF4G was present. Reported values are presented as mean ± SD and the experiments were repeated three times.*p<0.01.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** The properties of the ‘ON’ switch are explained by the above model, where y is the output, x is the concentration of the input signal (eIF4G), k is the number of the aptamers, n represents activation parameter which is negatively correlated with the target distance from the 5’UTR, s is the normal expression rate of y in physiological status and –y represents the degradation rate of y in cell.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** Empty pGPU6/GFP/Puro vector as used as mock control. NC, negative control vector with two repeated elements not having targets in the human genome. Reported data are mean ± SD from at least three experiments.
 
 In addition, the repression activity seemed to be inversely correlated with the target distance from the 5ʹ cap of mRNA, perhaps indicating that the expression of a target gene could be repressed more effectively at the early stage of translation. We then observed that addition of theophylline inhibited luciferase activity in a dose-dependent fashion (Figure 2E). We speculated that the effects of the signal-connectors should also be affected by the valency of ligands recruited to each mRNA target. To test this possibility, we then introduced one or three theophylline aptamers to the 3ʹ end of signal connectors, constructed stably transfected HEK293 cells, detected the luciferase expression level and compared their effects with those of the 2 × signal connectors (Figure 2—figure supplement 2). Devices with three aptamers produced repression effects on luciferase expression that were little stronger relative to the analogous 2 × devices, perhaps due to saturation effects. Devices containing only one aptamer, however, only induced a very weak reduction in reporter gene expression.
 
@@ -50,7 +94,7 @@ To demonstrate the modularity of this approach, we constructed several other sig
 
 These results demonstrated that the signal-connectors could be used as gene switches to down-regulate the expression of a target gene.
 
-## Signal-connectors effectively activate target gene expression
+### Signal-connectors effectively activate target gene expression
 
 Using the RNA aptamers (Miyakawa et al., 2006) for eukaryotic translation initiation factor 4G (eIF4G), we then determined whether signal-connectors could also enhance translation of a target gene by promoting the formation of initiation factor complexes (Figure 2G and Supplementary file 4). eIF4G recruits the ribosome 40S subunit and activates mRNA translation (Moore, 2005). We chose the Renilla luciferase gene as the target gene and the results of luciferase reporter assay indicated that the specific signal-connector with two eIF4G aptamers induced a 15-fold increase in activity of luciferase protein relative to controls when they were stably transfected into HEK293 cells (Figure 2H). Elimination of one aptamer copy from the construct dramatically decreased the induced activation efficiency, whereas the fold change value increased minimally with the addition of another copy of aptamer (Figure 2—figure supplement 7). Nuclear and cytoplasmic fractionation analysis also showed that this construct mainly located in the cytoplasm (Figure 2—figure supplement 1). We also performed an in vitro translation reaction using the macromolecular components (ribosomes, tRNAs, aminoacyl-tRNA synthetases, initiation, elongation and termination factors except for eIF4G), the purified eIF4G protein, in vitro transcribed uncapped mRNA of Renilla luciferase (the ORF encoding Rluc was placed downstream of a primary ORF), as well as in vitro transcribed RNA ‘signal-connector’ or the negative controls. The data suggest that the observed activating effects for signal-connectors were indeed induced by the eIF4G-aptamer complex (Figure 2—figure supplement 8), indicating a recruitment mechanism. We also constructed a simple mathematical model to clarify the relationship between the various input parameters and the output and the equation revealed that the relationship is nonlinear and saturable (Figure 2—figure supplement 9). Based on the predictions of the new equation for gene activation and the observed results, we carried out gene activation experiments with designed 2× signal connectors in the presence of sufficient amounts of ligand.
 
@@ -58,7 +102,7 @@ To achieve dynamic regulation of translation initiation, we used a combination o
 
 These results demonstrated that the signal-connectors could be used as gene switches to up-regulate the expression of a target gene.
 
-## Construction of all the basic types of logic gates using the signal-connectors
+### Construction of all the basic types of logic gates using the signal-connectors
 
 In the construction of electronic circuits, logical calculations and digital systems can be practically implemented by using logic gates, including NOT, AND, NAND, OR, NOR, XOR and XNOR gates. Many aspects of information processing by biological cells are similar to signal integration of electronic circuits. We then asked the question whether the signal-connectors could be used to construct complex programmable logic gates and circuits. The excellent gene regulatory ability of the signal-connectors inspired us to construct various logic gates that produced output signals in response to multiple input signals through stably transfecting these devices (Figure 3A). We built all the basic types of two-input Boolean logic gates in HEK293 cells stably expressing the 5’ capped or uncapped Renilla luciferase mRNA construct by using the aptamer recognizing exogenous theophylline or tetracycline signal. In the construct expressing uncapped Renilla luciferase mRNA, an open-reading frame (ORF) encoding Renilla luciferase was placed downstream of a primary ORF. The primary ORF contained a stop codon at the end.
 
@@ -82,9 +126,15 @@ Finally, we constructed an XNOR gate that exhibited a low output if either, but 
 
 These results indicated that the signal-connectors could logically link input signals to a desired cellular output signal.
 
-## Signal-connectors effectively rewire signaling pathways and create feedback loops
+### Signal-connectors effectively rewire signaling pathways and create feedback loops
 
 In eukaryotic cells, signaling proteins often activate transcription factors to initiate transcription of downstream genes. Because in theory the signal-connectors can link transcription factors to suppression of downstream gene translation, we set out to develop modifiers of a molecular network to rewire the native signaling pathway (Figure 4A). β-catenin is a multifunctional protein and usually accumulates in the nucleus of cancer cells, where it activates the transcription of the oncogenic c-Myc gene (He et al., 1998). We synthesized a signal-connector containing β-catenin aptamers (Culler et al., 2010) to target the region within the 5ʹ-UTR of c-Myc mRNA (Supplementary file 7). We investigated the effect of stimulating the β-catenin pathway with leukotriene D4 (LTD4) on the HEK-293 cells stably expressing either the signal-connector or the negative control. Both cell lines exhibited increased expression of c-Myc mRNA (Figure 4B), whereas the cells stably expressing the signal-connector showed a strong decrease in expression of c-Myc protein compared with the cells transfected with negative control (Figure 4C and Figure 4—figure supplement 1). These results demonstrated that our signal-connector could effectively rewire the signaling pathway by establishing a negative connection between the transcription factor and the mRNA of a downstream gene.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mechanisms of the signal-connectors designed to rewire the signaling pathway. (B) The relative expression levels of c-Myc mRNA were evaluated using real-time qPCR in HEK293 cells. The level of c-Myc mRNA was increased in cells that respond to LTD4 stimulation. (C) Histogram of c-Myc. The values were normalized to GAPDH for each sample. The negative control was defined as 1.0. (D) Mechanisms of the signal-connectors designed to create the signaling pathway. (E) Design of the signal-connector that responds to β-catenin. This device frees the antisense region and targets the mRNA only in the presence of β-catenin. (F) The activity of Renilla luciferase was evaluated in HEK293 cells that respond to LTD4 stimulation. (G) Designed models and experimental results illustrating the putative roles of the signal-connectors in constructing the OPN–VEGF positive feedback loop. (H) Designed models and experimental results illustrating the putative roles of the signal-connectors in constructing the OPN–VEGF negative feedback loop. NC, negative control vector with two repeated elements not having targets in the human genome. Reported values are presented as mean ± SD and the experiments were repeated at least three times.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig4-figsupp1-v2.jpg)
 
 We also tested whether the signal-connector could create a novel signaling pathway by linking a regulatory factor to the activation of translation of a selected downstream gene (Figure 4D). The specific signal-connector used one aptamer domain to recognize β-catenin signal and the other two aptamer domains to form the initiation factor complexes. In the absence of β-catenin signal, the antisense domain was sequestered by the stem of the β-catenin aptamer. In the presence of β-catenin signal, this signal-connector could interact with the target Renilla luciferase mRNA (Figure 4E and Supplementary file 8). The effect of leukotriene D4 (LTD4) was investigated by stably transfecting HEK-293 cells with either the signal-connector or the negative control. The results of luciferase assay indicated that the activity of Renilla luciferase in cells expressing the signal-connector was obviously elevated by LTD treatment (Figure 4F), while its activity was not affected by LTD in cells expressing the negative control. These results demonstrated that β-catenin signal could effectively activate the expression of Renilla luciferase with the help of the designed signal-connector.
 
@@ -92,15 +142,37 @@ Next, we tested the ability of the signal-connectors to incorporate feedback loo
 
 These results demonstrated that the signal-connectors were effective tools for constructing regulatory loops and gene–gene networks.
 
-## Signal-connectors specifically silence survival gene expression and inhibit cancer cell growth
+### Signal-connectors specifically silence survival gene expression and inhibit cancer cell growth
 
 To examine whether these devices could be used to identify cell state and to reprogram cellular behavior, we used the human telomerase reverse transcriptase (hTERT) promoter to drive the expression of ribozyme-flanked signal-connectors (Gao and Zhao, 2014) that silence survival genes, and chose bladder cancer cells as the target cells (Figure 5A and Figure 5—figure supplement 1). The hTERT promoter (hTERTp) is highly active in over 85% of human cancers, but inactive in most normal cells (Takakura et al., 1999). We therefore constructed device-ligand complexes to form a logical AND gate in which the activated hTERTp and the ligand must be combined to suppress the survival gene (Figure 5B). Signal-connectors suppressing the human c-Myc gene (Sardi et al., 1998) and the BCL2 gene (Kunze et al., 2012) were generated as before and stably transfected into either bladder cancer cells or normal dermal fibroblasts (Figure 5C, Supplementary file 12 and 13). In either bladder cancer cell line, the corresponding device was able to display significant decreases in gene expression in the presence of theophylline compared with that in the absence of ligand (Figure 5D and Figure 5—figure supplement 2). The devices did not lead to inhibitory effects in fibroblasts grown in the absence or presence of theophylline (Figure 5E and Figure 5—figure supplement 3). The growth curves of these cell lines also demonstrated that the circuit effectively inhibited proliferation of targeted bladder cancer cells without affecting the fibroblasts (Figure 5F). In addition, we then examined whether apoptosis of cancer cells can be induced by these devices. Bladder cancer cells treated with the signal connectors exhibited stronger blue fluorescence, revealing typical apoptotic characteristics. In contrast, the signal connectors had no such effects in the normal cells (Figure 5G). These results indicated that the AND gate circuit based on the signal-connectors could specifically suppress gene expression in the targeted cell lines.
 
-## Redirection of oncogenic signaling to an anti-oncogenic pathway via the signal-connector
+![Figure 5.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig5-v2.jpg)
+
+**Figure 5.:** (A) Mechanisms of the signal-connectors designed to selectively kill cancer cells, which control cell survival in response to the presence of activated TERTp and ligand. (B) A schematic representation of the genetic AND gate. hTERT promoter and ligand (1000 µM theophylline) are the two inputs of the circuit. (C) Two different signal-connectors were designed to target the 5ʹ-UTRs of human c-Myc mRNA and BCL2 mRNA. (D and E) Quantitative western blot analysis of targeted protein expression in bladder cancer cells (T24 and 5637) and normal fibroblast cells. NC, negative control vector with two repeated elements not having targets in the human genome. Blank, cells that were not transfected with vector. (F) Cell growth was measured by CCK-8 assay at different time intervals. ANOVA was used for the comparison of cell growth curves. Reported values are mean ± SD from three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The designed signal-connector sequence is inserted between the two ribozyme sequences. The two cleavage sites are indicated (red small arrows).The sequence of signal-connector can be released from the primary RNA transcript due to action of the ribozymes and therefore be free of potentially interfering ﬂanking sequences.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig5-figsupp3-v2.jpg)
+
+### Redirection of oncogenic signaling to an anti-oncogenic pathway via the signal-connector
 
 The successful application of signal-connector-mediated translational control in human cells opens the way toward a simultaneous ON/OFF multigene translational program in which some genes are activated and others are suppressed. We hypothesized that these devices should have the potential to redirect oncogenic pathway outputs and to control cancer cell fates through simultaneous activation and repression of endogenous genes.
 
 NF-kB is an oncogenic signal that is known to be involved in the signaling pathways in cancer development. NF-kB controls cell proliferation by activating several downstream target genes such as cyclin D1, c-Fos and c-Jun (Li et al., 2015). We therefore sought to rewire NF-kB signaling from proliferation pathways to quiescence/death by using the signal-connector. We constructed four signal-connectors (Supplementary file 14, 15, 16 and 17) recognizing NF-kB (p65) (ursterWurster and Maher, 2008) to activate two tumor suppressors, Bax (R37) and p21 (R38), and to repress two tumor promoters, Bcl2 (R39) and c-myc (R40), in human bladder cancer T24 cells which normally expressed high levels of NF-kB signals (Figure 6A). In detail, two copies of eIF4G aptamer were inserted into the 3’end of NF-kB riboswitch to construct signal-connector activating Bax or p21, while two copies of NF-kB aptamer were linked with the 3’end of antisense RNA to construct the signal-connector suppressing Bcl2 or c-myc. The results of western blotting showed that the signal-connectors stably transfected in T24 cells could simultaneously enhanced the protein expression levels of Bax and p21 and decreased Bcl2 and c-myc (Figure 6B and Figure 6—figure supplement 1). Finally, we determined whether the signal-connectors could simultaneously inhibit tumor growth in vivo, since T24 cells stably transfected with these devices showed a slower in vitro growth rate (Figure 6—figure supplement 2). The cells were then inoculated into male nude mice. Twenty days after injection, we found that the tumors formed in the signal-connectors group were dramatically smaller than those in the negative control group (Figure 6C–E). In addition, the average tumor weight was markedly lower in the signal-connectors group compared to the negative control group at the end of the experiment (Figure 6F). These results indicate that signal-connectors could inhibit tumor growth in vivo by redirecting oncogenic signaling pathways.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig6-v2.jpg)
+
+**Figure 6.:** (A) The oncogenic signal NF-kB was redirected to activate two tumor suppressors, Bax and p21, and to suppress two oncogenes, BCL2 and c-Myc, by the signal-connector in the cancer cells. (B) The relative expression levels of BAX, BCL2, c-Myc and p21 were determined in T24 cells by quantitative western blot at 48 hr after cell seeding. Reported values are mean ± SD from three independent experiments. (C and D) 20 days after injection, tumors formed in the signal-connector group were dramatically smaller relative to negative control. (E) The tumor volume was calculated once every 5 days after injection of T24 cells stably transfected with signal-connector or negative control. Bars indicate SD. (F) Tumor weights are shown as means of tumor weight ± SD. **p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31936/elife-31936-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Proliferations of the transfected T24 cells were measured by CCK-8 assay at different time intervals. The curves of cell proliferation were compared using ANOVA. Result at each time point is shown as mean ±S.D.
 
 ## Discussion
 
@@ -116,15 +188,15 @@ Although conceptually simple, these devices may be included in the biology toolb
 
 ## Materials and methods
 
-## Designing principle of RNA-based signal-connectors
+### Designing principle of RNA-based signal-connectors
 
 We first analyzed the sequences of well-known RNA aptamers in mammalian cells, such as theophylline aptamer (Jenison et al., 1994), tetracycline aptamer (Müller et al., 2006), eIF4G aptamer (Miyakawa et al., 2006), β-catenin aptamer (Culler et al., 2010), VEGF aptamer (Ng et al., 2006), OPN aptamer (Mi et al., 2009) and NF-kB (p65) aptamer (urster et al., 2008). Then, we truncated and coupled them to the mRNA base pairing regions (antisense domains). Each mRNA base pairing region was perfectly complementary with the 5’ –UTR or the coding region of the target mRNA. Next, the secondary structures of these recombinant RNAs were predicted by MFOLD program. The RNAs which showed exposed antisense domains and maintained the natural secondary structures of aptamers were selected and used in this study.
 
-## Plasmids construction
+### Plasmids construction
 
 The cDNA sequences for signal-connectors targeting Renilla luciferase/c-Myc/OPN/VEGF/ BCL2/Bax/p21 mRNA were synthesized and inserted into pGPU6/GFP/Puro vector at restriction site of Bam HI/Bbs I, respectively. Using similar approach, the cDNA sequences for ribozyme-flanked signal-connectors targeting c-Myc/BCL2 mRNA were designed, synthesized, and inserted into hTERT-NEO-BAM vector at the restriction site of Sal I/BamH I, respectively. To construct plasmids pcDNA3.0-VEGF and pcDNA3.0-OPN, cDNA sequences expressing truncated forms of OPN/VEGF that lack the N-terminal signal peptide were inserted into pcDNA3.0 digested with BamHI/EcoRI, respectively. To construct plasmids shRNA-NC and shRNA-VEGF, the synthesized shRNA sequences were inserted into pGPU6/GFP/Neo digested with Bam HI/Bbs I, respectively.
 
-## Cell lines and cell culture
+### Cell lines and cell culture
 
 T24, 5637, and HEK-293 cells were purchased from American Type Culture Collection (ATCC) by our laboratory and were grown in DMEM medium supplemented with 10% foetal bovine serum (Invitrogen, Carlsbad, CA) in the presence of 5% CO2. Normal human primary fibroblasts derived from the epidermis were primary cultured in the same medium. T24, 5637, and HEK-293 cells have been previously authenticated by ATCC with STR profiling and no further authentication was done for these studies. Stable cell lines we re generated from these cell lines as described below. All cell lines used were validated as mycoplasma-free.
 
@@ -132,42 +204,42 @@ HEK-293 cells stably expressing Renilla luciferase were obtained by transfecting
 
 HEK-293 cells stably expressing either the signal-connector or the negative control were selected after transfection of the pGPU6/GFP/Puro vectors. HEK 293/T24 cells co-expressing multiple signal-connectors were constructed by stably transfecting a single pGPU6/GFP/ Puro vector which simultaneously generated these devices driven by a single U6 promoter. In details, cells were seeded in six-well plates and 2 µg of the linearized plasmids were transfected using Lipofectamine 2000 Transfection Reagent (Invitrogen) according to the manufacturer's instructions. After transfection, the cells were grown in the medium supplemented with puromycin at 4 μg/mL for approximately 14 days to select for a mixed population of stable cell lines. Then the multiclonal cells were verified by GFP expression. An inverted fluorescence microscope was used for direct observation of fluorescent cells in the culture plate.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 HEK-293 cells stably expressing the Renilla luciferase reporter system were seeded in six-well plates (5 × 105/ well). Forty-eight hours after transfection, the medium was removed and cells were lysed in 500 μl of lysate buffer (Analytical Luminescence Laboratories). Renilla luciferase activity was measured by the Renilla Luciferase Reporter Assay System (Promega, Madison, WI) according to manufacturer’s instructions. Renilla luciferase activities were corrected for variation in protein concentrations of the cell extracts (Bio-Rad). The assays were performed in duplicate and the experiments were repeated three times.
 
-## Nuclear and cytoplasmic RNA fractionation analysis
+### Nuclear and cytoplasmic RNA fractionation analysis
 
 Nuclear and cytoplasmic RNA were isolated using the Cytoplasmic and Nuclear RNA Puriﬁcation Kit (Norgen, Belmont, CA) according to the provider’s instructions.
 
-## In vitro translation reaction
+### In vitro translation reaction
 
 Purified ligand (theophylline or eIF4G) was incubated with 1 µg signal connector and 1 µg Renilla luciferase mRNA and then the mixture was further incubated with the components of the Thermo Scientific 1-Step Human Coupled IVT Kit (Waltham, MA, USA) according to the manufacturer’s instructions. The activity of in vitro translated Renilla luciferase was calculated as described above.
 
-## ELISA assay of VEGF/OPN concentration
+### ELISA assay of VEGF/OPN concentration
 
 HEK293 cells were stably transfected with signal-connectors or the control. The concentration of VEGFA/OPN protein was then measured by ELISA assay, which was employed according to the manufacturer's instructions. Briefly, 106/sample cells were harvested and resuspended in 200 μl of lysis buffer. The supernatants of lysates were collected through centrifugation and used for the following procedures. The OD values were then measured by a microplate reader (Bio-Rad, Hercules, CA) and converted to protein concentrations using standard calibration curves.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were washed in PBS and lysed in RIPA buffer (50 mM Tris-HCl pH 7.2, 150 mM NaCl, 1% NP40, 0.1% SDS, 0.5% DOC, 1 mM PMSF, 25 mM MgCl2, and supplemented with a phosphatase inhibitor cocktail). The protein concentration was determined using the BCA protein assay. Equal amounts of whole protein extract were electrophoresed onto SDS–polyacrylamide gels and then transferred to PVDF membranes (Millipore, Billerica, MA). Samples were blocked in 5% dry milk and incubated over-night with the primary antibodies (Abcam, Cambridge, MA). Then, the samples was incubated with horseradish peroxidase–conjugated secondary antibody (Amersham, Piscataway,NJ) and immunoblots were developed with Super Signal chemiluminescence reagents (Pierce Chemical Co.). The protein bands were quantified using Image J analysis software (National Institutes of Health, USA). Histograms were generated by normalizing the amount of each protein to the GAPDH level detected in the same extracted sample. Each experiment was repeated three times.
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 Cell numbers were calculated by treating the cells with 0.25% trypsin (15 min, 37°C), followed by analysis on an electronic cell counter (Beckman Coulter) at 0, 24, 48 and 72 hr. The assay was repeated at least three times independently.
 
-## Cell apoptosis assay
+### Cell apoptosis assay
 
 The Hoechst 33258 staining kit (Life, Eugene, OR) was used to observe the apoptotic cells induced by signal-connectors. Briefly, the treated cells were fixed in 4% paraformaldehyde for 10 min and washed twice in PBS. Then, the cells were stained with 0.5 ml of Hoechst 33258 staining for 5 min and photos were taken under a fluorescence microscope at a wavelength of 350 nm. Each assay was repeated three times.
 
-## RNA extraction and real-time quantitative PCR
+### RNA extraction and real-time quantitative PCR
 
 Total RNA was isolated from cells by using TRIzol (Invitrogen, Carlsbad, CA) according to the suggested protocol. The cDNA strand was synthesized from total RNA with RevertAidTM First Strand cDNA Synthesis Kit (Fermentas, Hanover, MD) in a 25 μl volume. Real time quantitative PCR was performed with the All-in-OneTM qPCR Mix (GeneCopoiea Inc, Rockville, MD) in a 20 μl reaction volume on an ABI PRISM 7000 Fluorescent Quantitative PCR System (Applied Biosystems, Foster City, CA). The PCR cycling parameters were: 95°C for 15 min, followed by 40 cycles of 94°C for 15 s, 55°C for 30 s and 72°C for 30 s. Relative expression fold changes were determined by the 2-ΔΔCt method.
 
-## Tumor formation assay in nude mouse model
+### Tumor formation assay in nude mouse model
 
 All experiments involving animals were approved by Institutional Review Board. Four- week-old female BALB/c nude mice were obtained from Animals Center of the Academy of Sciences. In detail, 107 T24 cells stably expressing signal-connector or negative control were suspended in 100 μl PBS and injected subcutaneously into left or right armpits of three 4-week-old female BALB/c nude mice. Tumor growth was examined every 5 days, and tumor volumes were also calculated using the formula: 0.5 × length × width2. 20 days after injection, mice were euthanized, and the subcutaneous weight of each tumor was measured.
 
-## Statistical analyses
+### Statistical analyses
 
 No statistical methods were used to pre-determine sample size. The investigators were blinded to allocation during experiments and outcome assessment. Statistical analysis was conducted using Student’s t-test or ANOVA and p<0.05 was considered statistically significant. All statistical tests were performed by using SPSS version 17.0 software (SPSS, Chicago, IL).

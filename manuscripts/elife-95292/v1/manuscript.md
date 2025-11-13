@@ -32,26 +32,26 @@
 ### Affiliations
 
 1. Centro de Salud Las Gabias, Distrito Granada-Metropolitano Granada Spain
-2. https://ror.org/026yy9j15 Instituto de Investigación Biosanitaria de Granada (ibs.GRANADA) Granada Spain
-3. https://ror.org/04njjy449 Department of Pharmacology, Center for Biomedical Research (CIBM), University of Granada Granada Spain
+2. Instituto de Investigación Biosanitaria de Granada (ibs.GRANADA) Granada Spain ([ROR:026yy9j15](https://ror.org/026yy9j15))
+3. Department of Pharmacology, Center for Biomedical Research (CIBM), University of Granada Granada Spain ([ROR:04njjy449](https://ror.org/04njjy449))
 4. Servicio Microbiología, Hospital Universitario Clínico San Cecilio Granada Spain
 5. Centro de Salud “Salvador Caballero”, Distrito Granada-Metropolitano Granada Spain
-6. https://ror.org/02f01mz90 Servicio Microbiología, Hospital Universitario Virgen de las Nieves Granada Spain
-7. https://ror.org/026yy9j15 Instituto de Investigación Biosanitaria Granada Spain
-8. https://ror.org/00ca2c886 CIBER de Enfermedades Infecciosas (CIBER-Infecc), Instituto de Salud Carlos III Madrid Spain
-9. https://ror.org/02f01mz90 Respiratory Medicine Department, Hospital Universitario Virgen de las Nieves Granada Spain
+6. Servicio Microbiología, Hospital Universitario Virgen de las Nieves Granada Spain ([ROR:02f01mz90](https://ror.org/02f01mz90))
+7. Instituto de Investigación Biosanitaria Granada Spain ([ROR:026yy9j15](https://ror.org/026yy9j15))
+8. CIBER de Enfermedades Infecciosas (CIBER-Infecc), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+9. Respiratory Medicine Department, Hospital Universitario Virgen de las Nieves Granada Spain ([ROR:02f01mz90](https://ror.org/02f01mz90))
 10. Servicio de Medicina Intensiva, Hospital Universitario Clínico San Cecilio Granada Spain
 11. Servicio de Enfermedades Infecciosas, Hospital Universitario Clínico San Cecilio Granada Spain
 12. Servicio Farmacia Hospitalaria, Hospital Universitario Clínico San Cecilio Granada Spain
-13. https://ror.org/00ca2c886 CIBER de Epidemiología y Salud Pública (CIBER-ESP), Instituto de Salud Carlos III Madrid Spain
-14. https://ror.org/05ncvzk72 Department of Cell Biology and Immunology, Institute of Parasitology and Biomedicine López-Neyra, CSIC Granada Spain
-15. https://ror.org/00ca2c886 CIBER de Enfermedades Hepáticas y Digestivas (CIBER-EHD), Instituto de Salud Carlos III Madrid Spain
+13. CIBER de Epidemiología y Salud Pública (CIBER-ESP), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+14. Department of Cell Biology and Immunology, Institute of Parasitology and Biomedicine López-Neyra, CSIC Granada Spain ([ROR:05ncvzk72](https://ror.org/05ncvzk72))
+15. CIBER de Enfermedades Hepáticas y Digestivas (CIBER-EHD), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 
 ## Abstract
 
-Coronavirus disease 2019 (COVID-19) is a respiratory illness caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) that displays great variability in clinical phenotype. Many factors have been described to be correlated with its severity, and microbiota could play a key role in the infection, progression, and outcome of the disease. SARS-CoV-2 infection has been associated with nasopharyngeal and gut dysbiosis and higher abundance of opportunistic pathogens. To identify new prognostic markers for the disease, a multicentre prospective observational cohort study was carried out in COVID-19 patients divided into three cohorts based on symptomatology: mild (n = 24), moderate (n = 51), and severe/critical (n = 31). Faecal and nasopharyngeal samples were taken, and the microbiota was analysed. Linear discriminant analysis identified Mycoplasma salivarium , Prevotella dentalis , and Haemophilus parainfluenzae as biomarkers of severe COVID-19 in nasopharyngeal microbiota, while Prevotella bivia and Prevotella timonensis were defined in faecal microbiota. Additionally, a connection between faecal and nasopharyngeal microbiota was identified, with a significant ratio between P. timonensis (faeces) and P. dentalis and M. salivarium (nasopharyngeal) abundances found in critically ill patients. This ratio could serve as a novel prognostic tool for identifying severe COVID-19 cases.
+Coronavirus disease 2019 (COVID-19) is a respiratory illness caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) that displays great variability in clinical phenotype. Many factors have been described to be correlated with its severity, and microbiota could play a key role in the infection, progression, and outcome of the disease. SARS-CoV-2 infection has been associated with nasopharyngeal and gut dysbiosis and higher abundance of opportunistic pathogens. To identify new prognostic markers for the disease, a multicentre prospective observational cohort study was carried out in COVID-19 patients divided into three cohorts based on symptomatology: mild (n = 24), moderate (n = 51), and severe/critical (n = 31). Faecal and nasopharyngeal samples were taken, and the microbiota was analysed. Linear discriminant analysis identified Mycoplasma salivarium, Prevotella dentalis, and Haemophilus parainfluenzae as biomarkers of severe COVID-19 in nasopharyngeal microbiota, while Prevotella bivia and Prevotella timonensis were defined in faecal microbiota. Additionally, a connection between faecal and nasopharyngeal microbiota was identified, with a significant ratio between P. timonensis (faeces) and P. dentalis and M. salivarium (nasopharyngeal) abundances found in critically ill patients. This ratio could serve as a novel prognostic tool for identifying severe COVID-19 cases.
 
 ## Introduction
 
@@ -65,11 +65,192 @@ Considering that the efficacy of the COVID-19 vaccines and antiviral drugs again
 
 ## Results
 
-## Study patients characteristics
+### Study patients characteristics
 
 A total of 106 patients who had laboratory confirmation of SARS-CoV-2 infection were included in the present study. Of note, none of these patients reported another viral infection at the time of enrolment. Based on the clinical spectrum criteria reported in the COVID-19 treatment guidelines, patients were categorized into three groups: mild (24 patients), moderate illness that needed hospitalization in Respiratory Unit (51 patients), and severe symptomatology and admitted in the intensive care unit (ICU) (31 patients) (Table 1). The age of the patients significantly increased with the severity of the symptoms. Patients included in the severe group were significantly older than those with mild or moderate symptoms (p<0.05; ANOVA). Patient inclusion was carried out evenly in terms of gender as 52 women and 54 men were recruited; nevertheless, a gender-related impact on the clinical course of these patients was observed since males were predominantly in the group of patients with severe symptoms when compared with the mild illness group (p<0.05; Fisher’s test). Regarding the symptomatology, mild patients showed symptoms of a mild respiratory infection, including fever, cough, and headache. Also, 33% of mild patients displayed dyspnoea and low oxygen saturation, 26% reported gastrointestinal complaints (including stomach ache, digestive discomfort, and diarrhoea); and 4% reported high respiratory and heart rates. In contrast, moderate and severe patients showed higher frequencies of dyspnoea, low oxygen saturation, and increased respiratory or heart rates (p<0.05; Fisher’s test). When the different comorbidities were considered, patients in the group with severe symptoms showed a higher percentage of cardiomyopathy compared to those from the mild or moderate cohorts (42% vs 3% and 6%, respectively; p<0.05; Fisher’s test). However, no significant differences were found in the prevalence of the other pathologies among groups. Regarding blood-based biomarkers, platelets (p<0.05; ANOVA), D-dimer, ferritin, and C reactive protein (CRP) (p<0.05; Kruskal–Wallis) correlated with the severity of the symptoms, being the severe group significantly different.
 
-## Bacterial composition differs between sample type and severity index in SARS-CoV-2-infected patients
+**Table 1.**
+ Clinical data description of enrolled patients.Differences were displayed as: ap<0.05 severe vs. mild; bp<0.05 moderate vs. mild; cp<0.05 severe vs. moderate. ANOVA or Kruskal were employed for numerical variables and Fisher’s test for categorical variables.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mild(n = 24)</th>
+      <th>Moderate(n = 51)</th>
+      <th>Severe(n = 31)</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clinical variables</td>
+      <td colspan="3"></td>
+      <td>p-Valuea</td>
+      <td>p-Valueb</td>
+      <td>p-Valuec</td>
+    </tr>
+    <tr>
+      <td>Mean age (SD), years</td>
+      <td>43±12</td>
+      <td>54±14b</td>
+      <td>62±11a,c,</td>
+      <td>0.000001</td>
+      <td>0.0041</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Male, n (%)</td>
+      <td>8 (33)</td>
+      <td>24 (47)b</td>
+      <td>22 (71)a,c,</td>
+      <td>0.0071</td>
+      <td>0.032</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Symptoms, n (%)</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Presence of dyspnoea</td>
+      <td>6 (33)</td>
+      <td>38 (75)b</td>
+      <td>26 (84)a</td>
+      <td>0.00018</td>
+      <td>0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Presence of gastrointestinal alteration</td>
+      <td>5 (26)</td>
+      <td>17 (33)</td>
+      <td>10 (33)</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>High respiratory rate</td>
+      <td>1 (4)</td>
+      <td>11 (22)</td>
+      <td>19 (63),a,c</td>
+      <td>0.00018</td>
+      <td>-</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Low sPO2</td>
+      <td>6 (33)</td>
+      <td>22 (43)</td>
+      <td>22 (71)a,c,</td>
+      <td>0.001</td>
+      <td>-</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>High heart rate</td>
+      <td>1 (4)</td>
+      <td>14 (27)b</td>
+      <td>17 (55)a,c,</td>
+      <td>0.0008</td>
+      <td>0.02</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Comorbidities, n (%)</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Obesity</td>
+      <td>5 (26)</td>
+      <td>14 (27)</td>
+      <td>10 (32)</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>4 (20)</td>
+      <td>9 (18)</td>
+      <td>8 (26)</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>Asthma</td>
+      <td>3 (3)</td>
+      <td>3 (6)</td>
+      <td>2 (7)</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>Cardiomyopathy</td>
+      <td>3 (3)</td>
+      <td>3 (6)</td>
+      <td>13 (42)a,c,</td>
+      <td>0.02</td>
+      <td>0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Plasma determinations</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Mean lymphocytes (SD), 103/µL</td>
+      <td>1.1±0.6</td>
+      <td>1.4±0.6</td>
+      <td>1.2±2.7</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>Median neutrophils (IQR), 103/µL</td>
+      <td>6 [5.5;6.6]</td>
+      <td>6.4 [4.2;8.6]</td>
+      <td>7.9 [5.4;10.9]</td>
+      <td colspan="3">-</td>
+    </tr>
+    <tr>
+      <td>Mean platelets (SD), 103/µL</td>
+      <td>329.6±8.5</td>
+      <td>257.4±115b</td>
+      <td>276.4 ± 93a</td>
+      <td>0.031</td>
+      <td>0.018</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Median D-dimer (IQR), mg/L</td>
+      <td>0.39 [0.2;0.8]</td>
+      <td>0.6 [0.3;1]</td>
+      <td>1.6 [0.9;4.3]a,c,</td>
+      <td>0.0001</td>
+      <td>-</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>Median ferritin (IQR), ng/L</td>
+      <td>157 [126;179]</td>
+      <td>487 [274;1027]b</td>
+      <td>829 [488;1376]a</td>
+      <td>0.0001</td>
+      <td>0.0001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Median C reactive protein (IQR), mg/L</td>
+      <td>3.4 [2.6;4]</td>
+      <td>18.2 [7.8;41.9]b</td>
+      <td>162 [65;210]a,c,</td>
+      <td>0.0001</td>
+      <td>0.0002</td>
+      <td>0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial composition differs between sample type and severity index in SARS-CoV-2-infected patients
 
 Nasopharyngeal swabs and faeces were obtained from all the patients included in the study within 7 days of symptom onset and used for characterization of the microbiota composition. In the nasopharyngeal microbiota, α-diversity was reduced in the moderate and severe groups compared to the mild group (p<0.05 and p=0.07, respectively; ANOVA) (Figure 1A). Conversely, when α-diversity was examined in stool samples, no significant modifications were observed among groups (Figure 1B). On the other hand, ß-diversity analysis through the Bray–Curtis index revealed statistical differences between groups for both nasopharyngeal swabs and stools samples (p<0.001; PERMANOVA) (Figure 1C and D). As a result, microbiota is grouped in three separate clusters depending on the severity of the symptoms, which indicates that microbiota differences are based on changes in bacterial composition.
 
@@ -89,7 +270,7 @@ At genus level, the nasopharyngeal microbiome composition revealed that symptom 
 
 Relative abundance levels for genera identified bacteria and exact p-values can be found in Supplementary files 2 and 3.
 
-## Differences in bacteria composition could be used as biomarkers to predict disease severity and outcome in SARS-CoV-2 infection
+### Differences in bacteria composition could be used as biomarkers to predict disease severity and outcome in SARS-CoV-2 infection
 
 We investigated whether some specific taxa could be associated with the severity of the symptoms. Amplicon sequence variants (ASVs) were evaluated to determine core taxa along with the specific bacteria of each group of patients and samples (Figure 3A and B). Core taxa were identified using a detection threshold of 0.1 and a prevalence threshold of 0.1. In nasopharyngeal swabs, Venn diagram revealed that the three cohorts shared 51 core taxa. In total, 60 specific bacteria were identified in patients with mild symptoms while 32 were observed in patients with moderate symptoms and eight in patients with severe symptoms. When stools were considered, the three cohorts shared 159 core taxa. Here, 27 were specific of mild patients, another 33 of patients with moderate symptoms, and 27 of the severe patients (for more details, see Supplementary file 4).
 
@@ -105,7 +286,7 @@ To further assess the role of these potential biomarkers in the prediction of CO
 
 **Figure 4.:** (A) Correlation plot of nasopharyngeal swab biomarkers and clinical variables. (B) Correlation plot of stool samples biomarkers and clinical variables. RR: respiratory rate; HR: heart rate; GI: gastrointestinal alterations. Correlation was calculated by taking into account abundance levels of each bacteria against the clinical variable of severe ill patients. Red asterisks stand for p-values<0.05 and correlations ≥0.3 or ≤–0.25.
 
-## Identification of a novel microbiome-based COVID-19 prognosis approach
+### Identification of a novel microbiome-based COVID-19 prognosis approach
 
 Considering the possible identified biomarkers and their relationship towards clinical variables, we proposed a new approach to predict disease severity in patients suffering SARS-CoV-2 infection by evaluating correlation among specific bacteria abundance from nasopharyngeal and stool samples. The analysis revealed no important associations between nasopharyngeal and faecal microbiota in mild and moderate patients (Figure 5A and B). Nonetheless, in patients with severe symptoms the Spearman’s rho coefficient showed a significant positive correlation between P. timonensis towards P. dentalis and M. salivarium (Figure 5C). Consequently, the ratios P. timonensis/M. salivarium and P. timonensis/P. dentalis were calculated to determine whether they could be used as a predictor of COVID-19 severity. Both seemed to be significantly increased in patients with severe symptoms compared to those with mild or moderate symptomatology (p<0.05; Kruskal–Wallis) (Figure 5D and E). As a result, the ratio between the abundance of these bacteria could serve as reliable predictors of severity of COVID-19.
 
@@ -141,27 +322,27 @@ Of note, the use of these bacteria as biomarkers of severity in SARS-CoV-2 infec
 
 Finally, although the composition of the nasal and faecal microbiota in COVID-19 patients has been previously studied (Li et al., 2023), the interaction between these microbiotas has not been extensively evaluated. In this study, we analysed the relationship between specific bacteria from nasopharyngeal and stool samples, confirming a correlation between the abundances of species in these different sample types. Concretely, a strong positive correlation between P. timonensis (in stool samples) towards P. dentalis and M. salivarium (in nasopharyngeal samples) was found in severe patients. To maximize the potential use of these biomarkers, the ratio of the abundance of these species was also significantly increased within the highest severity of this condition. As a result, the ratio proposed in this study could be used as a novel predictor to identify critically ill COVID-19 patients as the ratio Bacillota and Bacteroidetes has been used as a marker of dysbiosis (Ley et al., 2006). In this case, the ratio P. timonensis/P. dentalis and P. timonensis/M. Salivarium could be a prognostic tool for severe SARS-CoV-2, and its increase could be associated with a higher risk COVID-19 severity development.
 
-## Conclusion
+### Conclusion
 
 This inter-individual variability between the COVID-19 patients could contribute to the different symptomatology observed. This study has identified a correlation between changes in the nasopharyngeal and stool microbiota with COVID-19 severity. A novel biomarker linked to severity of COVID-19 infection has been described based on changes in the abundance of bacterial species in nasopharyngeal and faecal samples. This knowledge can support the development of biomarkers to gauge disease severity and, also, the design of novel therapeutic strategies to mitigate adverse outcomes. Further investigations are imperative to explore how the association between nasopharyngeal and faecal microbiota can be modulated to uncover its role in enhancing immune health, preventing or treating SARS-CoV-2 infections, and fostering immunity.
 
 ## Materials and methods
 
-## Subject recruitment and sample collection
+### Subject recruitment and sample collection
 
 A multicentre prospective observational cohort study was carried out between September 2020 and July 2021. Patients with SARS-CoV-2 infection were recruited from the University Hospital San Cecilio, the University Hospital Virgen de las Nieves, and the Primary Care centres, Salvador Caballero and Las Gabias in Granada (Spain). These patients were Caucasian and laboratory-confirmed SARS-CoV-2 positive by quantitative reverse transcription PCR (RT-qPCR) performed on nasopharyngeal swabs collected by healthcare practitioners. No confounding factors such as other viral infections were present. Patients were classified into three groups based on severity profile following the described guidelines (covid19treatmentguidelines, 2019); mild (n = 24), moderate (n = 51), and severe/critical (n = 31). Mild illness includes individuals who have any of the various signs and symptoms of COVID-19 (e.g. fever, cough, sore throat, malaise, headache, muscle pain, nausea, vomiting, diarrhoea, loss of taste and smell) but do not have shortness of breath, dyspnoea, or abnormal chest imaging. Moderate illness includes patients that show fever and respiratory symptoms with radiological findings of pneumonia. Severe/critical illness includes patients with any of the following criteria: respiratory distress (≥30 breaths/min), oxygen saturation ≤93% at rest, arterial partial pressure of oxygen (PaO2)/fraction of inspired oxygen (FiO2) ≤ 300 mmHg, respiratory failure and requiring mechanical ventilation, shock, and with other organ failures that required ICU care.
 
 Nasopharyngeal swabs and stools samples from patients were collected by healthcare staff in the moderate and severe/critical cohorts, while the patients of the mild cohort provided stools self-sampled at home. Stools and nasopharyngeal swabs were collected in collection tubes containing preservative media (OMNIgene•GUT, DNAGENOTEK, Ottawa, Ontario, Canada) and stored at −80°C until processing.
 
-## Microbial DNA extraction, library preparation, and next-generation sequencing
+### Microbial DNA extraction, library preparation, and next-generation sequencing
 
 For all faecal and nasopharyngeal samples, DNA was isolated according to the modified protocol reported by Rodríguez-Nogales et al., 2017 using QIAGEN Allprep PowerFecal DNA kit (QIAGEN, Germany). DNA was quantified using Qubit dsDNA HS assay kit (12640ES60, Yeason Biotechnology, Shanghai, China) and total DNA was amplified by targeting variable regions V3-V4 of the bacterial 16S rRNA gene. Quality control of amplified products was achieved by running a high-throughput Invitrogen 96-well-E-gel (Thermo Fisher Scientific, Waltham, MA). PCR products from the same samples were pooled in one plate and normalized with the high-throughput Invitrogen SequalPrep 96-well Plate kit. Pool samples were sequenced using an Illumina MiSeq.
 
-## Bioinformatic tools
+### Bioinformatic tools
 
 Paired end reads quality was checked with FastQC software (Bittencourt, 2010). Trimming of adapters and filtering of low-quality sequences was performed with Trimmomatic (Bolger et al., 2014). Filtered reads were further processed with QIIME2 software (open access, Northern Arizona University, Flagstaff, AZ) by employing DADA2 software (Callahan et al., 2016) to carry out denoising steps to obtain ASVs. SILVA reference database (138 99% full length) was used for taxonomic assignment (Kaehler et al., 2019). Microbiota results were further analyse with the help of different R packages. Alpha and beta diversity as well as relative abundance were appraised with the Phyloseq package (Love et al., 2014). Beta diversity differences were obtained with a Permutational Multivariate Analysis of Variance (PERMANOVA) included in the Vegan package Eulerr along with microbiomeutilities package [Sudarshan and Shetty, ., 2020] was utilized for constructing Venn diagrams [R Development Core Team, 2013]. Meanwhile, microbial package was employed to perform linear discriminant analysis (LDA) effect size (LEfSe) with an LDA score of 3 (R Development Core Team, 2013).
 
-## Statistical analysis
+### Statistical analysis
 
 All data presented were analysed and visualized using R software. For numerical clinical variables, normality and homoscedasticity were assessed using the shapiro.test and leveneTest functions from the stats and car package, respectively. Data were displayed as mean ± SD for normally distributed variables, whereas median and interquartile range (IQR) were used for variables with non-normal distributions.
 

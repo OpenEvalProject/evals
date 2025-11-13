@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Otolaryngology, Neuroscience & Physiology, and the Neuroscience Institute, NYU Grossman School of Medicine New York United States
-2. https://ror.org/0190ak572 Center for Neural Science, New York University New York United States
+1. Department of Otolaryngology, Neuroscience & Physiology, and the Neuroscience Institute, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Center for Neural Science, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -30,13 +30,25 @@ Developing sensorimotor reflex circuits must precisely connect functional subtyp
 
 The sensorimotor circuit for vertical gaze stabilization offers a simple framework to evaluate whether and how motor neurons shape pre-motor circuit fate and connectivity. The vertebrate vestibulo-ocular reflex circuit consists of three neuron types – peripheral sensory, central projection, and extraocular motor neurons – that stabilize gaze after head/body tilts (Figure 1A; Szentágothai, 1964). Subtype fate, anatomical connectivity, and function are inextricably linked: directionally-tuned sensory neurons innervate nose-up/nose-down subtypes of projection neurons, which in turn innervate specific motor neurons that selectively control either eyes-down or eyes-up muscles (Straka et al., 2001; Diaz et al., 2003; Glover, 2003; Bianco et al., 2012; Schoppik et al., 2017; Bagnall and Schoppik, 2018; Diaz and Puelles, 2019; Liu et al., 2022; Goldblatt et al., 2023). As both the recipients and origin of directional information, projection neuron fate specification is paramount to proper circuit assembly. Recent work has established the vertical vestibulo-ocular reflex circuit in zebrafish as a model to uncover determinants of fate and connectivity (Bianco et al., 2012, Schoppik et al., 2017, Bagnall and Schoppik, 2018, Goldblatt et al., 2023) given the ease of optical imaging, abundant tools for genetic perturbations, rapid development, and robust evolutionary conservation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig1-v1.jpg)
+
+**Figure 1.:** Associated with Figure 1—figure supplement 2. (A) Schematic of vestibulo-ocular reflex circuitry and the genetic loss-of-function approach used to perturb motor-derived signals. (B) Fluorescent in situ hybridization showing phox2a transcript expression in statoacoustic ganglion sensory afferents (left), central projection neurons in the tangential nucleus (middle), or nIII/nIV extraocular motor neurons (right) at 5 days post-fertilization (dpf). Top: probe only, nuclei outlined with dashed lines. Bottom: probe (green) merged with somata, labeled by Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (sensory, central) or Tg(isl1:GFP) (motor). (C) Schematic of CRISPR/Cas9 mutagenesis approach. Top: Red star shows location of guides against phox2a DNA. Bottom: RNA sequence in wildtype and phox2ad22 alleles. Red dashed lines show deleted sequence; ‘STOP’ box shows predicted premature stop codon due to deletion. Right shows predicted protein sequence. (D) Transmitted light image of a 5 dpf wildtype (top) and phox2a null mutant (bottom). White arrows point to a normally inflated (top) or absent (bottom) swim bladder. (E) Images of nIII/nIV motor neurons in one hemisphere, labeled by Tg(isl1:GFP), in wildtype siblings (left) and phox2a null mutants (right) at 5 dpf. Scale bar, 20 µm. (F) Quantification of the number of Tg(isl1:GFP)+neurons in nIII/nIV from N=6 wildtype siblings and N=10 phox2a null mutants.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescent in situ hybridization images of nIII/nIV motor neurons, labeled by Tg(isl1:GFP), in wildtype larvae at 2 dpf. Panels from left to right show: (1) isl1+ motor neurons, (2) mRNA for vachta, a marker for cholinergic motor neurons, (3) DAPI, and (4) merge. White dashed lines show the extent of nIII/nIV. (B) Loss of both isl1 and vachta identity in nIII/nIV motor neurons in phox2a mutants at 2 dpf. All scale bars, 20 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Images of nIII/nIV motor neurons, labeled in Tg(isl1:GFP), in wildtype siblings (left) and phox2a heterozygotes (middle) at 5 dpf. Wildtype image same as in Figure 1E. One hemisphere shown. White dashed lines outline the dorsal extent of nIII, which contains inferior rectus and medial rectus neurons (Greaney et al., 2017). Scale bar, 20 µm. (B) Location of the earliest-born neurons in nIII/nIV (left, magenta) against all nIII/nIV neurons labeled in Tg(isl1:Kaede) (right, grey). Larvae birthdated at 34 hpf (Materials and methods). One hemisphere shown. White dashed lines outline the dorsal extent of nIII. Scale bar, 20 µm. (C) Quantification of the number of Tg(isl1:GFP)+ neurons in nIII/nIV from N=6 wildtype siblings (grey) and N=8 phox2a heterozygotes (teal). Wildtype data same as Figure 1F. (D) Distributions showing probability of nIII/nIV soma location across each spatial axis in wildtype (black) and heterozygous (teal) phox2a larvae. Solid and shaded lines show mean and standard deviation, respectively, from bootstrapped data. Data from same fish quantified in C. ns, not significant; star, significant at the p<0.001 level.
+
 The current model for vestibulo-ocular reflex circuit development was motivated by pioneering work in chick (Glover, 2000, Glover, 2003) and formalized by Hans Straka: “[circuit assembly] is accomplished by a specification process that retrogradely transmits post-synaptic target identities to pre-synaptic neurons.” (Straka, 2010). In its strongest form, this ‘retrograde’ model posits a causal role for extraocular motor neurons in specifying the fate (sensory selectivity) of central projection neurons. This key prediction – that loss of motor neurons would disrupt sensory selectivity in pre-synaptic projection neurons – remains untested. In zebrafish, extraocular motor neurons are temporally poised for such a role. Motor neurons are organized into spatial pools, and though synaptogenesis at ocular muscle targets begins late in development (Clark et al., 2013), motor neuron fate (muscle target and pool location) is determined early (Greaney et al., 2017). Projection neurons are born at roughly the same time as motor neurons and extend axons shortly afterwards, poising them to receive deterministic signals that could retrogradely specify their sensory selectivity (Goldblatt et al., 2023).
 
 Here, we adopted a loss-of-function approach to determine whether motor partner populations specify identity or instruct connectivity across an entire vestibular reflex circuit in zebrafish. We generated a new mutant allele for the phox2a gene to eliminate the extraocular motor neurons used for vertical gaze stabilization. Combining functional, anatomical, and sequencing approaches, we then demonstrated that motor neurons are dispensable for three aspects of pre-motor reflex circuit assembly: (i) directionally-appropriate connectivity between sensory and projection neurons, (ii) assembly of projection neurons with motor partners, and (iii) the transcriptional profiles of projection neurons. The current model of vestibulo-ocular reflex circuit development must therefore be revised: up/down projection neuron subtype fate cannot be retrogradely established by a motor partner-derived signal. Instead, the signals that specify fate must lie elsewhere. More broadly, our work argues against a deterministic role of motor neurons in specifying the fate and sensory connectivity of pre-motor circuit components.
 
 ## Results
 
-## Constitutive loss of phox2a prevents extraocular motor neuron specification and impairs vertical gaze stabilization behavior
+### Constitutive loss of phox2a prevents extraocular motor neuron specification and impairs vertical gaze stabilization behavior
 
 Extraocular motor neurons for vertical/torsional gaze stabilization are located in cranial nuclei III (nIII) and IV (nIV). To eliminate nIII/nIV motor neurons and by extension, any secreted signals, we used a genetic loss-of-function approach (Figure 1A). A single highly-conserved transcription factor, phoxa, specifies nIII/nIV fate (Guo et al., 1999; Coppola et al., 2005; Hasan et al., 2010; Nakano et al., 2001). In the vestibulo-ocular reflex circuit, phox2a is exclusively expressed in nIII/nIV motor neurons but not its upstream partners (Figure 1B). Therefore, phox2a is an ideal genetic target to eliminate motor-derived signals without compromising evaluations of upstream functional development.
 
@@ -46,7 +58,7 @@ To validate phox2a loss-of-function, we leveraged a downstream transcription fac
 
 Together, these observations validate our phox2a loss of function alleles as a selective means to disrupt nIII/nIV motor neuron fate specification and vertical eye rotation behavior.
 
-## Peripheral-to-central circuit assembly does not require motor partners
+### Peripheral-to-central circuit assembly does not require motor partners
 
 Vertical gaze stabilization requires that (1) peripheral VIIIth nerve sensory afferents relay tilt sensation (nose-up/nose-down) directly to projection neurons in the tangential nucleus, and (2) projection neurons innervate appropriate nIII/nIV pools (eyes-up/eyes-down). For proper circuit function, appropriate connectivity must first develop across up/down circuit subtypes. The ‘retrograde’ model predicts that motor partners specify circuit assembly. Therefore, in the absence of motor neurons, projection neurons should fail to respond selectively to directional tilt sensations – either due to loss of their fate, the fate of upstream sensory afferents, or sensory-to-central connectivity.
 
@@ -57,6 +69,852 @@ To evaluate upstream circuit formation, we measured tilt-evoked responses in pro
 **Figure 2.:** Associated with Table 1. (A) Schematic of pitch vestibulo-ocular reflex circuitry. Dashed lines outline projection neurons as calcium imaging target. Nose-down/eyes-up channel represented with blue; orange, nose-up/eyes-down. (B) Schematic of tonic pitch-tilt stimulus delivered with Tilt-In-Place Microscopy (TIPM). Shaded regions show calcium imaging windows when fish were oriented horizontally immediately following tilts. Inset shows timecourse of the rapid step to restore horizontal position after tilts. Imaging experiments used larvae from the Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:GCaMP6s) line. (C) Proportion of subtypes observed in sibling controls and phox2a null mutants. Blue: nose-down. Orange: nose-up. Grey: Neurons without directional tuning (criteria in Materials and methods). (D, E) Soma position of nose-down (blue) and nose-up (orange) neurons in sibling controls (left) and phox2a null mutants (right). Soma size scaled by strength of directional selectivity (min = 0; max = 1; see Materials and methods). (F/I) Heatmaps showing example tilt responses from nose-down (F) or nose-up (I) neurons in sibling controls (top) and phox2a null mutants (bottom). n=10 neurons with strongest ΔF/F responses to tilts shown. Each row shows an individual neuron. Shaded bars show calcium imaging window immediately following restoration from eccentric position. Black arrow points to first second of tilt response used for analyses. (G/J) Distributions of maximum ΔF/F responses to tilts for nose-down (G) or nose-up (J) neurons in sibling controls (black) and phox2a null mutants (red). Solid and shaded lines show mean and standard deviation, respectively, of bootstrapped data (Materials and methods). (H/K) Distributions of directional tuning score to tilts for nose-down (H) or nose-up (K) neurons in sibling controls (black) and phox2a null mutants (red). Tuning score ranges from 0 (equal responses to both tilt directions, no tuning) to 1 (responses to one tilt direction only); criteria detailed in Materials and methods. Solid and shaded lines show mean and standard deviation, respectively, of bootstrapped data.
 
 Projection neuron responses and topography were strikingly unchanged in phox2a mutants compared to controls. There was no change in the number of projection neurons observed across N=5 sibling controls and phox2a mutants (mean control number: 42 ± 4 neurons per hemisphere; mean in phox2a mutants: 39 ± 3 neurons; two-tailed Wilcoxon rank sum test, p=0.22). We next recorded the activity of n=297 neurons from N=16 phox2a mutants and n=440 neurons from N=21 sibling controls (Materials and methods and Table 1 split by genotype). We observed comparable ratios of projection neuron subtypes (sib: 46% nose-down, 47% nose-up, 7% untuned; phox2a: 49% nose-down, 44% nose-up, 7% untuned; Figure 2C). Next, we evaluated their topography (Figure 2D, E). Projection neurons are topographically organized along the dorso-ventral axis by their directional selectivity (Goldblatt et al., 2023). Global spatial separation between subtypes remained significant in phox2a mutants (one-way multivariate ANOVA, p=0.004). We also compared the topography of nose-up and nose-down neurons separately across phox2a genotypes (Materials and methods and Table 2 split by genotype). Nose-down neurons were comparably distributed between null and control larvae (one-way multivariate ANOVA, p=0.15). We observed a minor lateral shift to nose-up neurons in null mutants (median mediolateral position, sib: 15.2 µm from medial edge; phox2a, 13.2 µm; two-tailed, two-sample KS test, p=3.0 × 10–4) but no changes in other spatial axes (dorsoventral: p=0.16; rostrocaudal: p=0.56). The small medial deviation (2 µm across a 40 µm space) is within the limits of our registration error. We conclude that projection neuron topography is established independently of motor partners.
+
+**Table 1.**
+ Statistical comparisons of tilt responses across genotypes.WT (sampled) refers to an n=125 neuron subset, sampled with replacement from a reference dataset of wildtype projection neurons. Data shown is mean/standard deviation unless otherwise noted. p val generated from a one-way ANOVA with multiple comparisons. Associated with Figure 2 and Figure 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT (all)</th>
+      <th>WT (sampled)</th>
+      <th>phox2a+/+</th>
+      <th>phox2a+/-</th>
+      <th>phox2a-/-</th>
+      <th>p val</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tonic tilt stimuli</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n (neurons/fish)</td>
+      <td>255/10</td>
+      <td>125 /x</td>
+      <td>76/5</td>
+      <td>109/6</td>
+      <td>297/16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>% observed (nose-up/nose-down/untuned)</td>
+      <td>50/44/7</td>
+      <td>37/54/9</td>
+      <td>40/54/7</td>
+      <td>56/37/7</td>
+      <td>44/50/6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ΔF/F, nose-up</td>
+      <td>1.28 ± 1.23</td>
+      <td>1.27 ± 1.19</td>
+      <td>1.09 ± 1.03</td>
+      <td>1.12 ± 0.90</td>
+      <td>1.02 ± 0.82</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>ΔF/F, nose-down</td>
+      <td>2.01±1.66</td>
+      <td>1.99 ± 1.69</td>
+      <td>1.38 ± 0.91</td>
+      <td>1.98 ± 1.61</td>
+      <td>2.07±1.48</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>directional tuning strength, nose-up</td>
+      <td>0.84 ± 0.28</td>
+      <td>0.83 ± 0.30</td>
+      <td>0.87 ± 0.26</td>
+      <td>0.81 ± 0.28</td>
+      <td>0.81 ± 0.29</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>directional tuning strength, nose-down</td>
+      <td>0.72 ± 0.30</td>
+      <td>0.72 ± 0.31</td>
+      <td>0.73 ± 0.31</td>
+      <td>0.77 ± 0.30</td>
+      <td>0.68 ± 0.29</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Impulse stimuli</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n (neurons/fish)</td>
+      <td>255/10</td>
+      <td>125 /x</td>
+      <td>76/5</td>
+      <td>109/6</td>
+      <td>297/16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>% observed (responsive/unresponsive)</td>
+      <td>58/42</td>
+      <td>57/43</td>
+      <td>57/43</td>
+      <td>60/39</td>
+      <td>70/30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ΔF/F</td>
+      <td>0.41 ± 0.46</td>
+      <td>0.33 ± 0.28</td>
+      <td>0.29 ± 0.29</td>
+      <td>0.22 ± 0.16</td>
+      <td>0.32 ± 0.28</td>
+      <td>1.0E-05</td>
+    </tr>
+    <tr>
+      <td>directional tuning strength</td>
+      <td>0.08 ± 0.36</td>
+      <td>0.10 ± 0.38</td>
+      <td>0.003 ± 0.41</td>
+      <td>0.07 ± 0.48</td>
+      <td>0.07 ± 0.41</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>genotype</td>
+      <td></td>
+      <td>p val</td>
+      <td>Cohen’s d</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ΔF/F to impulses</td>
+      <td>WT to sampled</td>
+      <td></td>
+      <td>p=0.13</td>
+      <td>0.21</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/+</td>
+      <td></td>
+      <td>p=0.04</td>
+      <td>0.27</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/-</td>
+      <td></td>
+      <td>p=3.8E-06</td>
+      <td>0.48</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to -/-</td>
+      <td></td>
+      <td>p=0.006</td>
+      <td>0.24</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to +/-</td>
+      <td></td>
+      <td>p=0.47</td>
+      <td>0.34</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to -/-</td>
+      <td></td>
+      <td>p=0.89</td>
+      <td>0.11</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/-to -/-</td>
+      <td></td>
+      <td>p=0.02</td>
+      <td>0.49</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Statistical comparisons of projection neuron topography across genotypes.WT (sampled) refers to an n=125 neuron subset, sampled with replacement from a reference dataset of wildtype projection neurons. Data shown is the median/standard deviation distance from the ventro-lateral and rostral edges of the tangential nucleus (total size: 40 µm across each spatial axis). p val from one-way ANOVA (individual spatial axes) or multivariate ANOVA (global organization), respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT (all)</th>
+      <th>WT (sampled)</th>
+      <th>phox2a+/+</th>
+      <th>phox2a+/-</th>
+      <th>phox2a-/-</th>
+      <th>p val</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tonic tilt stimuli</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nose-down</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n (cells/fish)</td>
+      <td>111/10</td>
+      <td>51 /x</td>
+      <td>41/5</td>
+      <td>40/6</td>
+      <td>147/16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dorsoventral</td>
+      <td>20.0 ± 8.4</td>
+      <td>25.0 ± 8.4</td>
+      <td>15.0 ± 9.0</td>
+      <td>25.0 ± 8.7</td>
+      <td>20.0 ± 9.1</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>mediolateral</td>
+      <td>17.4 ± 6.0</td>
+      <td>17.6 ± 6.5</td>
+      <td>19.3 ± 6.6</td>
+      <td>15.3 ± 5.6</td>
+      <td>16.8 ± 6.6</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>rostrocaudal</td>
+      <td>16.8 ± 9.6</td>
+      <td>16.5 ± 9.6</td>
+      <td>19.5 ± 9.6</td>
+      <td>16.1 ± 10.4</td>
+      <td>18.2 ± 9.6</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>global organization</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>nose-up</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n (cells/fish)</td>
+      <td>111/10</td>
+      <td>51 /x</td>
+      <td>41/5</td>
+      <td>40/6</td>
+      <td>147/16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dorsoventral</td>
+      <td>30.0 ± 10.3</td>
+      <td>25.0 ± 10.8</td>
+      <td>27.5 ± 10.9</td>
+      <td>25.0 ± 10.4</td>
+      <td>30.0 ± 10.5</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>mediolateral</td>
+      <td>14.9 ± 7.1</td>
+      <td>15.1 ± 5.9</td>
+      <td>16.7 ± 7.0</td>
+      <td>18.6 ± 9.8</td>
+      <td>13.2 ± 7.2</td>
+      <td>9.6E-06</td>
+    </tr>
+    <tr>
+      <td>rostrocaudal</td>
+      <td>16.1 ± 9.8</td>
+      <td>16.7 ± 10.4</td>
+      <td>12.5 ± 10.7</td>
+      <td>14.8 ± 10.4</td>
+      <td>14.8 ± 10.7</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>global organization</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.7E-07</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>genotype</td>
+      <td></td>
+      <td>p val</td>
+      <td>Cohen’s d</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dorsoventral, nose-down</td>
+      <td>WT to sampled</td>
+      <td></td>
+      <td>0.86</td>
+      <td>0.17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/+</td>
+      <td></td>
+      <td>0.54</td>
+      <td>0.29</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/-</td>
+      <td></td>
+      <td>0.96</td>
+      <td>0.13</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to -/-</td>
+      <td></td>
+      <td>0.08</td>
+      <td>0.34</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to +/-</td>
+      <td></td>
+      <td>0.35</td>
+      <td>0.41</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to -/-</td>
+      <td></td>
+      <td>0.99</td>
+      <td>0.05</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/-to -/-</td>
+      <td></td>
+      <td>0.07</td>
+      <td>0.45</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mediolateral, nose-up</td>
+      <td>WT to sampled</td>
+      <td></td>
+      <td>0.91</td>
+      <td>0.03</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/+</td>
+      <td></td>
+      <td>0.57</td>
+      <td>0.35</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/-</td>
+      <td></td>
+      <td>0.006</td>
+      <td>0.57</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to -/-</td>
+      <td></td>
+      <td>0.69</td>
+      <td>0.20</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to +/-</td>
+      <td></td>
+      <td>0.74</td>
+      <td>0.23</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to -/-</td>
+      <td></td>
+      <td>0.09</td>
+      <td>0.55</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/-to -/-</td>
+      <td></td>
+      <td>5.4E-06</td>
+      <td>0.74</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Impulse stimuli</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n (responsive)</td>
+      <td>148/10</td>
+      <td>138 /n</td>
+      <td>43/5</td>
+      <td>55/5</td>
+      <td>214/16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dorsoventral</td>
+      <td>20.0 ± 9.8</td>
+      <td>20.0 ± 10.1</td>
+      <td>20.0 ± 10.7</td>
+      <td>20.0 ± 10.9</td>
+      <td>20.0 ± 10.3</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>mediolateral</td>
+      <td>19.0 ± 5.9</td>
+      <td>16.1 ± 6.8</td>
+      <td>16.7 ± 8.6</td>
+      <td>20.4 ± 7.2</td>
+      <td>19.8 ± 5.8</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>rostrocaudal</td>
+      <td>21.9 ± 9.9</td>
+      <td>17.3 ± 9.8</td>
+      <td>15.4 ± 9.1</td>
+      <td>13.0 ± 9.9</td>
+      <td>22.0 ± 9.5</td>
+      <td>2.9E-05</td>
+    </tr>
+    <tr>
+      <td>global organization</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.2E-0.9</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>genotype</td>
+      <td></td>
+      <td>p val</td>
+      <td>Cohen’s d</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mediolateral, responsive</td>
+      <td>WT to sampled</td>
+      <td></td>
+      <td>0.99</td>
+      <td>0.002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/+</td>
+      <td></td>
+      <td>0.32</td>
+      <td>0.37</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/-</td>
+      <td></td>
+      <td>9.82</td>
+      <td>0.17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to -/-</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.23</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to +/-</td>
+      <td></td>
+      <td>0.91</td>
+      <td>0.14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to -/-</td>
+      <td></td>
+      <td>0.007</td>
+      <td>0.55</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/-to -/-</td>
+      <td></td>
+      <td>0.05</td>
+      <td>0.37</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rostrocaudal, responsive</td>
+      <td>WT to sampled</td>
+      <td></td>
+      <td>0.98</td>
+      <td>0.37</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/+</td>
+      <td></td>
+      <td>0.12</td>
+      <td>0.29</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to +/-</td>
+      <td></td>
+      <td>0.001</td>
+      <td>0.53</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT to -/-</td>
+      <td></td>
+      <td>0.07</td>
+      <td>0.10</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to +/-</td>
+      <td></td>
+      <td>0.90</td>
+      <td>0.72</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+to -/-</td>
+      <td></td>
+      <td>0.95</td>
+      <td>0.33</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/-to -/-</td>
+      <td></td>
+      <td>0.23</td>
+      <td>0.21</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Differentially expressed genes in projection neurons.Star indicates a gene was evaluated using fluorescent in situ hybridization. # symbol indicates a gene was also differentially expressed in adjacent phox2a-expressing medial vestibular neurons (see Figure 5—figure supplement 5). ”% of projection neurons with expression” refers to detection in a filtered subset of projection neurons from a single-cell reference atlas of neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (Materials and methods, Figure 5—figure supplement 2). Genes sorted by p adjusted value. Data associated with Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>% of projection neurons with expression</th>
+      <th>Log2 fold change</th>
+      <th>p adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>* # itga9</td>
+      <td>1.9</td>
+      <td>23.0</td>
+      <td>3.9E-06</td>
+    </tr>
+    <tr>
+      <td>si:dkey-54n8.2</td>
+      <td>1.3</td>
+      <td>9.6</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>myof</td>
+      <td>1.3</td>
+      <td>–8.3</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>gbe1a</td>
+      <td>1.9</td>
+      <td>7.0</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td># dysf</td>
+      <td>1.9</td>
+      <td>6.9</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>* # twf1b</td>
+      <td>2.5</td>
+      <td>5.9</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>cers3a</td>
+      <td>2.5</td>
+      <td>9.2</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>asip2b</td>
+      <td>1.3</td>
+      <td>8.7</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td># pole</td>
+      <td>1.3</td>
+      <td>7.3</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>abtb2a</td>
+      <td>3.1</td>
+      <td>4.7</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>* # p4hb</td>
+      <td>6.3</td>
+      <td>5.1</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>postnb</td>
+      <td>3.8</td>
+      <td>10.1</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>fhdc3</td>
+      <td>2.5</td>
+      <td>4.5</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>Downregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msmo1</td>
+      <td>1.3</td>
+      <td>–8.3</td>
+      <td>8.4E-06</td>
+    </tr>
+    <tr>
+      <td>*rxfp2a</td>
+      <td>4.4</td>
+      <td>–8.5</td>
+      <td>1.1E-05</td>
+    </tr>
+    <tr>
+      <td>si:ch73-204p21.2</td>
+      <td>1.3</td>
+      <td>–9.9</td>
+      <td>2.2E-04</td>
+    </tr>
+    <tr>
+      <td>tsta3</td>
+      <td>0.0</td>
+      <td>–6.6</td>
+      <td>6.8E-04</td>
+    </tr>
+    <tr>
+      <td>* # satb1a</td>
+      <td>8.2</td>
+      <td>–3.0</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td># polrmt</td>
+      <td>1.9</td>
+      <td>–8.7</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td># znf975</td>
+      <td>1.3</td>
+      <td>–5.0</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td># phldb1a</td>
+      <td>3.1</td>
+      <td>–5.8</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>asns</td>
+      <td>2.5</td>
+      <td>–7.8</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>nr1i2</td>
+      <td>1.9</td>
+      <td>–5.5</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>evx2</td>
+      <td>36.4</td>
+      <td>0.46</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>myt1la</td>
+      <td>80.5</td>
+      <td>2.6</td>
+      <td>0.44</td>
+    </tr>
+  </tbody>
+</table>
 
 Projection neuron sensitivity and selectivity also developed comparably between phox2a mutants and siblings (Figure 2F–K). Projection neurons responded to tilt sensations with comparable magnitudes (Figure 2G–J) (nose-down mean ΔF/F, sib: 1.86±1.69; phox2a: 2.07±1.48; two-tailed Wilcoxon rank sum test, p=0.98; nose-up mean ΔF/F, sib: 1.24±1.23; phox2a: 1.02±0.89; p=0.18). Previously, we defined a metric to describe a neuron’s selectivity for one tilt direction (0=equal responses to up/down; 1=maximally selective) Goldblatt et al., 2023. Directional selectivity remained unchanged in phox2a mutants (Figure 2H–K) (nose-down mean index, sib: 0.73±0.29; phox2a: 0.68±0.29; two-tailed Wilcoxon rank sum test, p=0.85; nose-up mean index, sib: 0.85±0.26; phox2a: 0.81±0.29; p=0.12). Collectively, this demonstrates that the functional responses of projection neurons and, by inference, connectivity with utricular afferents are not shaped by motor partners.
 
@@ -70,7 +928,7 @@ Lastly, we considered whether loss of one subtype of nIII/nIV neurons might alte
 
 Taken together, these experiments demonstrate intact directional selectivity for two peripheral sensory inputs – utricular and semicircular canal VIIIth nerve afferents – and appropriate connectivity with projection neurons. We conclude that functional sensory-to-central circuit formation is established independently of motor partners.
 
-## Projection neurons remain competent to assemble with appropriate motor targets
+### Projection neurons remain competent to assemble with appropriate motor targets
 
 Motor partners could secrete signals that initiate pre-motor axon outgrowth, target arriving axons to specific motor pools, or trigger synaptogenesis (Glover, 2003). Motor pool topography in nIII/nIV reflects ocular muscle targets: dorsal pools innervate downward-rotating muscles (superior oblique and inferior rectus), while ventral pools target the converse (eyes-up, superior rectus and inferior oblique; Evinger, 1988, Greaney et al., 2017). In turn, projection neuron somatic and axonal organization mirrors motor pool topography (Liu et al., 2022, Goldblatt et al., 2023), which could facilitate directionally-selective circuit assembly. We reasoned that projection neurons may fail to initiate axon outgrowth, target spatially-appropriate motor pools, and/or form synapses in phox2a mutants. To test this hypothesis, we measured changes in projection neuron anatomy at 5 dpf, when axonal arbors are established and stable (Schoppik et al., 2017).
 
@@ -78,7 +936,7 @@ To test whether projection neurons establish gross, long-range (hindbrain to mid
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig4-v1.jpg)
 
-**Figure 4.:** phox2a mutants.(A) Schematic of retrograde photofill experiments. Projection neuron axons expressing the photolabile protein Kaede are targeted at the midbrain-hindbrain boundary with ultraviolet light. Converted protein (magenta) retrogradely diffuses to the soma, while the unconverted nucleus remains green. (B) Projection neuron somata in sibling controls (left) and phox2a null mutants (right) after retrograde photolabeling. Experiments performed at 5 dpf. Neurons visualized in Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). (C) Top two panels: Projection neuron axons at the hindbrain (inset) and midbrain-hindbrain boundary in sibling controls (top) and phox2a null mutants (bottom). Axons visualized using Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). White dashed outline (circle) shows arborization fields in nIII/nIV. Dashed box over axons shows location of two bottom panels. MHB and yellow dashed line, midbrain-hindbrain boundary. nucMLF: nucleus of the longitudinal fasciculus. Bottom two panels: Zoom of axons (dashed rectangle above). Spatial segregation between early-born (magenta +green) and late-born (green only) axons. White dashed line reflects separation between dorsal (nose-up, early-born) and ventral (nose-down, late-born) axon bundles. Image at 5 dpf in sagittal view. (D) Projection neuron axon bundle in a phox2a null mutant at 3 dpf. White arrows point to single collateral to two nIII/nIV neurons that were not eliminated following phox2a knockout. (E) Fluorescent in situ hybridization against RNA for three pre-synaptic markers: synaptophysin a (sypa; left), synaptic vesicle glycoprotein 2 (sv2, middle), and synapsin I (syn1, right). Top row, sibling controls. Bottom row, phox2a null mutants. For each panel set, left images show in situ probe expression (green) and right images show merge with projection neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). Dashed lines outline the projection nucleus. Cell and transcript expression outside the projection nucleus is removed for visual clarity. Images taken at 5 dpf in sagittal mount. All scale bars, 20 µm.
+**Figure 4.:** (A) Schematic of retrograde photofill experiments. Projection neuron axons expressing the photolabile protein Kaede are targeted at the midbrain-hindbrain boundary with ultraviolet light. Converted protein (magenta) retrogradely diffuses to the soma, while the unconverted nucleus remains green. (B) Projection neuron somata in sibling controls (left) and phox2a null mutants (right) after retrograde photolabeling. Experiments performed at 5 dpf. Neurons visualized in Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). (C) Top two panels: Projection neuron axons at the hindbrain (inset) and midbrain-hindbrain boundary in sibling controls (top) and phox2a null mutants (bottom). Axons visualized using Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). White dashed outline (circle) shows arborization fields in nIII/nIV. Dashed box over axons shows location of two bottom panels. MHB and yellow dashed line, midbrain-hindbrain boundary. nucMLF: nucleus of the longitudinal fasciculus. Bottom two panels: Zoom of axons (dashed rectangle above). Spatial segregation between early-born (magenta +green) and late-born (green only) axons. White dashed line reflects separation between dorsal (nose-up, early-born) and ventral (nose-down, late-born) axon bundles. Image at 5 dpf in sagittal view. (D) Projection neuron axon bundle in a phox2a null mutant at 3 dpf. White arrows point to single collateral to two nIII/nIV neurons that were not eliminated following phox2a knockout. (E) Fluorescent in situ hybridization against RNA for three pre-synaptic markers: synaptophysin a (sypa; left), synaptic vesicle glycoprotein 2 (sv2, middle), and synapsin I (syn1, right). Top row, sibling controls. Bottom row, phox2a null mutants. For each panel set, left images show in situ probe expression (green) and right images show merge with projection neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). Dashed lines outline the projection nucleus. Cell and transcript expression outside the projection nucleus is removed for visual clarity. Images taken at 5 dpf in sagittal mount. All scale bars, 20 µm.
 
 Next, we evaluated whether projection neuron axons remain capable of wiring with spatially-appropriate motor partners. Projection neuron axons segregate along the dorsal (nose-up) and ventral (nose-down) axes according to their birth order (early/late born, respectively; Liu et al., 2022, Goldblatt et al., 2023) and the pool topography of their motor targets (Greaney et al., 2017). To test whether projection neurons retain this topography, we optically labeled the axons of early-born (before 30 hpf) projection neurons (Goldblatt et al., 2023). In phox2a mutants, axons remained dorsoventrally segregated at midbrain targets (Figure 4C, inset). Typically, projection neurons robustly collateralize to nIII/nIV targets at the midbrain-hindbrain boundary. We did not observe collaterals to nIII/nIV in phox2a mutants (Figure 4C). However, projection neurons still robustly arborized to more rostral, spinal-projecting targets in the nucleus of the medial longitudinal fasciculus, suggesting they retain the machinery necessary to collateralize. Consistent with this hypothesis, we observed that projection neurons formed occasional, small collaterals in phox2a mutants with few (1–5%) nIII/nIV neurons remaining (Figure 4D). We conclude that projection neurons remain competent to assemble with spatially-appropriate targets.
 
@@ -86,15 +944,864 @@ If motor neurons are required to initiate synaptogenesis, then projection neuron
 
 Although motor neurons may play later roles in selecting and/or refining pre-motor input specificity, our data supports that projection neurons remain anatomically and molecularly poised to assemble with appropriate targets. We predict that absent collaterals and synapses reflect a lack of adhesive contact necessary to stabilize (Dalva et al., 2007, Moreland and Poulain, 2022), but not instruct the formation of nascent structures.
 
-## The transcriptional profiles of projection neurons are intact in the absence of motor partners
+### The transcriptional profiles of projection neurons are intact in the absence of motor partners
 
 We found that functional and anatomical connectivity, from peripheral sensors to motor targets, develop independently of motor partners. Fate in the vestibulo-ocular reflex circuit follows from connectivity (Szentágothai, 1964), but neuronal fate can also be defined with respect to unique transcriptional signatures. Previously, we developed a sequencing pipeline to discover transcription factors that specify functional subtypes of spinal motor neurons and evaluate the consequences of perturbations on transcriptional fate (D’Elia et al., 2023). We adapted this approach to determine if loss of motor-derived signals changed the transcriptional profiles of projection neurons.
 
 We compared the transcriptional profiles of projection neurons in phox2a mutants and sibling controls (Figure 5A) using bulk RNA sequencing. Sibling controls included both wildtype and heterozygous phox2a larvae (Figure 1—figure supplement 2). We performed sequencing experiments at 72 hr post-fertilization (hpf), after projection neuron differentiation is complete and synaptogenesis to motor targets has peaked (Goldblatt et al., 2023). We sequenced projection neurons labeled by Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (Scott et al., 2007; Lacoste et al., 2015; Bianco et al., 2012; Schoppik et al., 2017; Materials and methods, Figure 5B, Figure 5—figure supplement 1). Neurons labeled in this line include, but are not exclusive to the projection neurons in the tangential nucleus used for vertical gaze stabilization. Therefore, we evaluated our bulk RNA sequencing dataset in the context of a single-cell reference atlas derived from the same transgenic line (Materials and methods, Figure 5—figure supplement 2) to minimize noise from other labeled populations. We used evx2 (Sugioka et al., 2023) as a reference, as it was expressed in all projection neurons (Figure 5—figure supplement 2) and highly detected (36%) in singly-profiled projection neurons.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-v1.jpg)
+
+**Figure 5.:** Associated with Figure 5—figure supplement 1, Figure 5—figure supplement 4, Table 3. (A) Schematic of sequencing approach. Central projection neurons (Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede)) are harvested from 3 dpf larvae. Flow cytometry is used to exclude neurons not labelled by Tg(–6.7Tru.Hcrtr2:GAL4-VP16). Bulk RNA sequencing is performed to compare the profiles of projection neurons in siblings and phox2a null mutants. (B) Example of projection neurons before (left) and after (right) harvesting. Neurons visualized with Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:E1b-Kaede). Dashed lines outline projection neurons in the tangential nucleus; dotted lines, medial vestibular nucleus. Yellow region shows margin of harvesting error: non-projection neurons that may be included in bulk sequencing dataset. (C) Number of differentially expressed genes in projection neurons at 3 dpf after applying progressive filters based on gene expression in a reference single-cell dataset. Data shown on logarithmic scale. Solid, dashed, and dotted lines represent differentially-expressed gene with p adjusted<0.5, p adjusted<0.01, or p adjusted<0.001 significance, respectively. (D) Volcano plot showing differentially expressed genes in projection neurons between control and phox2a null larvae at 3 dpf. Dashed lines represent significance cutoffs: horizontal line, p >0.05; vertical line, Log2 Fold Change >2.0. Each circle is a gene. Genes to the left and right of 0 on the horizontal axis show downregulated and upregulated genes, respectively. Colors indicate percent of reference cells that express a given gene. Grey-colored genes are below both significance thresholds. (E) Same data as Figure 5D. Colored genes show eight candidates evaluated with fluorescent in situ hybridization: red, upregulated; blue, downregulated; yellow, highly-expressed controls (evx2). (F) Fluorescent in situ hybridization against candidate genes that met projection neuron filter criteria. Top row shows sibling controls; bottom row, phox2a null mutants. For each gene, left panels show RNA probe (green) and right panels show merge with projection neurons labeled by Tg(–6.7Tru.Hcrtr2:GAL4-VP16) (grey). Dashed lines outline the projection nucleus. Cell and transcript expression outside the projection nucleus is masked for visual clarity. Arrows denote whether genes are upregulated (red), downregulated (blue), or not significantly changed (yellow). Percentage refers to fraction of cells in a single-cell RNA sequencing reference atlas (Materials and methods) with detected transcript. Candidates: itga9 (log2 fold change = 23.0, p adj.=3.9 × 10–6), twf1b (log2 fold change = 5.9, p adj.=0.024), p4hb (log2 fold change = 5.1, p adj.=0.04), mapk6 (log2 fold change = 5.1, p adj.=0.06), rxfp2a (log2 fold change = −8.5, p adj.=1.1 × 10–5), satb1a (log2 fold change = −3.0, p adj.=0.001), evx2 (log2 fold change = 0.46, p adj.=0.99), myt1la (log2 fold change = 2.6, p adj.=0.44). All scale bars, 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sequential gates used to sort fluorescent neurons labeled with Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede);Tg(isl1:GFP). Gate A excluded presumptive debris (small cells). Gate B isolated single cells and excluded large cells and doublets. Gate C excluded DAPI+ (dead or unhealthy) neurons. Gate D isolated fluorescent (GFP or Kaede+) neurons; neurons in this gate were sorted. Gates were set using negative controls (not shown; Materials and methods). Gates shown for one of four experimental repeats.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) UMAP visualization of a single-cell RNA sequencing atlas of n=1,468 neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede), generated with 10 x Genomics (Materials and methods). Each circle is a single neuron. Neurons are clustered (colors) according to their transcriptional identity. Annotations are based on validated marker genes (data not shown). TAN, tangential nucleus; MVN, medial vestibular nucleus; r, rhombomere; DON, dorsal octavolateral nucleus. Note: Cluster 2 is broadly inclusive of lateral, excitatory vestibular projection neurons near the ventral base of the otic capsule. It includes, but is not exclusive to, the tangential nucleus. (B) Heatmap showing genes unique to each annotated cluster. Each row is a gene; names unlisted for clarity. Columns show distinct clusters. Color bar on top reflects clusters in A. Yellow and purple reflect stronger or weaker gene expression, respectively. Black outlines show two populations of interest: tangential nucleus neurons and medial vestibular nucleus neurons. (C) Fluorescent in situ hybridization against three markers (pou4f1, penkb, chrna2b) that are negative for tangential nucleus projection neurons and positive for medial vestibular nucleus neurons. Top row shows RNA expression (green); bottom row, merge with neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede). Dashed lines outline the tangential nucleus (TAN) and medial vestibular nucleus (MVN). Data from 72 hpf larvae. Images shown in an axial view. (D) Fluorescent in situ hybridization against a positive marker (evx2) for both tangential nucleus and medial vestibular nucleus neurons. All scale bars, 20 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A-A’) Fluorescent in situ hybridization against itga9 for three sibling (A) or phox2a null mutant (A’) larvae (72 hpf), imaged with identical conditions. Left column shows RNA (green); right column, merge with projection neurons visualized with Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (grey). Dashed lines outline the projection nucleus. Cell and transcript expression outside the projection nucleus is removed for visual clarity. Percentage (1.9%) refers to fraction of cells in a single-cell RNA sequencing reference atlas (Materials and methods) with detected transcript. All scale bars, 20 µm. (B-B’) Fluorescent in situ hybridization against htt for three sibling (B) and phox2a mutant (B’) larvae (72 hpf). (C-C’) Fluorescent in situ hybridization against evx2 for three sibling (C) and phox2a mutant (C’) larvae (72 hpf).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Volcano plot showing differentially expressed genes across an unfiltered bulk RNA sequencing dataset. Dashed lines represent significance cutoffs: horizontal line, p adjusted>0.05; vertical line, Log2 Fold Change >2.0. Each circle is a gene. Genes to the left and right of 0 on the horizontal axis show downregulated and upregulated genes, respectively. Red color shows genes that are differentially expressed in a filtered subset of projection neurons (Figure 5). Grey-colored genes are below both significance thresholds. (B) Same data as A, now highlighting candidate genes evaluated by fluorescent in situ (Figure 5) with red. Two candidates (yellow) that did not meet projection neuron filter criteria (Materials and methods) are shown in D; remaining candidates (included in filtered data) shown in Figure 5F. (C) Same data as A-B, showing the number of differentially expressed genes at progressive significance thresholds (p adjusted). Red and blue lines show the number of significantly upregulated and downregulated genes, respectively. (D) Fluorescent in situ hybridization against two differentially expressed genes, slc22a7a (log2 fold change = 10.2, p adj.=1.6 × 10–4) and bckdhbl (log2 fold change = −9.1, p adj.=0.001), that did not meet projection neuron filter criteria. Percentage refers to fraction of all singly-profiled hindbrain vestibular neurons with expression (Materials and methods). Left columns show RNA (green); right columns, merge with projection neurons labeled with Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (grey). Dashed lines outline the projection nucleus. Cell and transcript expression outside the projection nucleus is removed for visual clarity. All scale bars, 20 µm.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/96893/elife-96893-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Fluorescent in situ hybridization against phox2a in a 5 dpf larvae (axial view). Top panel shows phox2a RNA (green); bottom panel, merge with neurons visualized with Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (grey). White dashed lines outline three nuclei of interest: projection neurons in the tangential nucleus (TAN), the medial vestibular nucleus (MVN), and the facial nucleus (nVII). All scale bars, 20 µm. (B) Volanco plot showing differentially expressed genes in phox2a-expressing medial vestibular nucleus neurons between control and phox2a null larvae at 3 dpf. Dashed lines represent significance cutoffs: horizontal line, p>0.05; vertical line, Log2 Fold Change > 2.0. Each circle is a gene. Genes to the left and right of 0 on the horizontal axis show downregulated and upregulated genes, respectively. Colors indicate percent of reference phox2a-expressing medial vestibular neurons (Materials and methods, Figure 5—figure supplement 2A, B) that express a given gene. Grey-colored genes are below both significance thresholds. Data for all differentially expressed candidates in medial vestibular neurons shown in Table 6. (C) Same data as B. Color shows genes that are differentially expressed in both medial vestibular nucleus neurons and projection neurons.
+
 There were strikingly few differentially-expressed genes in projection neurons between phox2a siblings and null mutants (Figure 5C, Table 3). All candidate differentially-expressed genes were lowly-expressed (detected in <10% of reference projection neurons, Figure 5D). To determine if any candidates were differentially expressed in projection neurons, we used a fluorescent in situ hybridization method Choi et al., 2018 in which fluorescence intensity correlates with detected transcript expression reliably across individual larvae (Figure 5—figure supplement 3). We evaluated eight candidate genes (Figure 5E, F); four with the highest detection levels in projection neurons (satb1a, rxfp2a, mapk6, and p4hb), two with high significance and fold change thresholds (itga9, twf1b), and two highly-detected controls (evx2, myt1la). Qualitatively, we observed no differences in expression patterns between phox2a mutants and siblings.
 
 We considered that our inability to detect differentially-expressed genes could arise from our exclusion of candidates based on their expression in our reference single-cell atlas. Therefore, we repeated our analyses in unfiltered bulk sequencing data. The top 50 highest-expressed genes in phox2a siblings were highly detected in singly-profiled neurons labeled by Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede), including projection neurons (Table 4) (mean detection in projection neurons: 55%±21%, min = 0%, max = 87%). This suggests that our dissections adequately captured our target population. However, we again identified few differentially-expressed genes in our unfiltered data (Figure 5—figure supplement 4A–C), with substantial decreases as significance stringency increased. In situ hybridization validated that top candidates remained lowly expressed in projection neurons in both phox2a siblings and mutants (Figure 5—figure supplement 4D), Importantly, nearly all candidates had low detection across all neurons in our reference single-cell atlas and had predicted expression in populations such as glia and the caudal hindbrain (Materials and methods, Table 5). Notably, some candidates were highly expressed in a subset of medial vestibular nucleus neurons, which lies on the medial edge of the tangential nucleus and expressed phox2a (Materials and methods, Figure 5—figure supplement 5, and Table 6). Together, we conclude that any differential gene expression in our data either reflects noise or contamination from other labeled populations, but not projection neurons in the tangential nucleus.
+
+**Table 4.**
+ Top 50 expressed genes in an unfiltered bulk RNA sequencing dataset of phox2a siblings.‘% of unfiltered 10 x neurons’ refers to gene detection in a single-cell atlas of neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (n=1,468 neurons). ‘% of projection neurons’ refers to gene detection in a subset of the single-cell atlas containing projection neurons in the tangential nucleus (n=159 neurons). Data associated with Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>% of unfiltered 10 x neurons with expression</th>
+      <th>% of projection neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ints5</td>
+      <td>23.2</td>
+      <td>15.1</td>
+    </tr>
+    <tr>
+      <td>stmn1b</td>
+      <td>78.6</td>
+      <td>78.6</td>
+    </tr>
+    <tr>
+      <td>sox4a</td>
+      <td>6.5</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>basp1</td>
+      <td>61.4</td>
+      <td>62.9</td>
+    </tr>
+    <tr>
+      <td>hmgb3a</td>
+      <td>68.2</td>
+      <td>69.8</td>
+    </tr>
+    <tr>
+      <td>ptmaa</td>
+      <td>84.5</td>
+      <td>77.4</td>
+    </tr>
+    <tr>
+      <td>gapdhs</td>
+      <td>28.9</td>
+      <td>30.2</td>
+    </tr>
+    <tr>
+      <td>pnrc2</td>
+      <td>81.3</td>
+      <td>78.6</td>
+    </tr>
+    <tr>
+      <td>snap25a</td>
+      <td>65.7</td>
+      <td>78.0</td>
+    </tr>
+    <tr>
+      <td>gpm6ab</td>
+      <td>81.1</td>
+      <td>78.6</td>
+    </tr>
+    <tr>
+      <td>calm3b</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>marcksl1b</td>
+      <td>88.8</td>
+      <td>86.2</td>
+    </tr>
+    <tr>
+      <td>tuba1c</td>
+      <td>59.9</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <td>cd81a</td>
+      <td>43.3</td>
+      <td>49.7</td>
+    </tr>
+    <tr>
+      <td>meis1b</td>
+      <td>87.9</td>
+      <td>87.4</td>
+    </tr>
+    <tr>
+      <td>rtn1a</td>
+      <td>73.4</td>
+      <td>74.8</td>
+    </tr>
+    <tr>
+      <td>elavl3</td>
+      <td>87.1</td>
+      <td>82.4</td>
+    </tr>
+    <tr>
+      <td>hmgb1b</td>
+      <td>57.2</td>
+      <td>49.7</td>
+    </tr>
+    <tr>
+      <td>ptmab</td>
+      <td>80.7</td>
+      <td>73.6</td>
+    </tr>
+    <tr>
+      <td>zc4h2</td>
+      <td>56.9</td>
+      <td>58.5</td>
+    </tr>
+    <tr>
+      <td>meis2b</td>
+      <td>57.1</td>
+      <td>49.7</td>
+    </tr>
+    <tr>
+      <td>slc25a5</td>
+      <td>51.4</td>
+      <td>55.3</td>
+    </tr>
+    <tr>
+      <td>mab21l2</td>
+      <td>62.7</td>
+      <td>68.6</td>
+    </tr>
+    <tr>
+      <td>h3f3c</td>
+      <td>69.1</td>
+      <td>61.6</td>
+    </tr>
+    <tr>
+      <td>rtn1b</td>
+      <td>36.4</td>
+      <td>33.3</td>
+    </tr>
+    <tr>
+      <td>elavl4</td>
+      <td>78.7</td>
+      <td>67.3</td>
+    </tr>
+    <tr>
+      <td>gng3</td>
+      <td>37.2</td>
+      <td>42.8</td>
+    </tr>
+    <tr>
+      <td>pik3r3b</td>
+      <td>77.4</td>
+      <td>83.6</td>
+    </tr>
+    <tr>
+      <td>tubb5</td>
+      <td>25.3</td>
+      <td>25.2</td>
+    </tr>
+    <tr>
+      <td>histh1l</td>
+      <td>61.0</td>
+      <td>62.9</td>
+    </tr>
+    <tr>
+      <td>serinc1</td>
+      <td>51.9</td>
+      <td>59.1</td>
+    </tr>
+    <tr>
+      <td>ckbb</td>
+      <td>23.5</td>
+      <td>30.8</td>
+    </tr>
+    <tr>
+      <td>az1a</td>
+      <td>43.5</td>
+      <td>49.7</td>
+    </tr>
+    <tr>
+      <td>az1b</td>
+      <td>36.9</td>
+      <td>38.4</td>
+    </tr>
+    <tr>
+      <td>actb1</td>
+      <td>23.6</td>
+      <td>28.3</td>
+    </tr>
+    <tr>
+      <td>ywhaba</td>
+      <td>36.2</td>
+      <td>40.9</td>
+    </tr>
+    <tr>
+      <td>ywhag2</td>
+      <td>36.2</td>
+      <td>50.9</td>
+    </tr>
+    <tr>
+      <td>si:ch211-222l21.1</td>
+      <td>73.8</td>
+      <td>63.5</td>
+    </tr>
+    <tr>
+      <td>si:dkey-276j7.1</td>
+      <td>45.8</td>
+      <td>56.0</td>
+    </tr>
+    <tr>
+      <td>aldocb</td>
+      <td>19.3</td>
+      <td>17.6</td>
+    </tr>
+    <tr>
+      <td>actb2</td>
+      <td>27.0</td>
+      <td>30.8</td>
+    </tr>
+    <tr>
+      <td>tmem59l</td>
+      <td>39.8</td>
+      <td>56.6</td>
+    </tr>
+    <tr>
+      <td>calm2b</td>
+      <td>37.9</td>
+      <td>47.2</td>
+    </tr>
+    <tr>
+      <td>hmgn6</td>
+      <td>73.6</td>
+      <td>65.4</td>
+    </tr>
+    <tr>
+      <td>h2afx1</td>
+      <td>59.6</td>
+      <td>53.5</td>
+    </tr>
+    <tr>
+      <td>cd99l2</td>
+      <td>32.4</td>
+      <td>36.5</td>
+    </tr>
+    <tr>
+      <td>cirbpb</td>
+      <td>77.8</td>
+      <td>73.6</td>
+    </tr>
+    <tr>
+      <td>ppdpfb</td>
+      <td>74.5</td>
+      <td>65.4</td>
+    </tr>
+    <tr>
+      <td>stxbp1a</td>
+      <td>52.3</td>
+      <td>66.0</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>evx2</td>
+      <td>33.8</td>
+      <td>36.4</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Top 50 differentially expressed genes in an unfiltered bulk RNA sequencing dataset of phox2a siblings and null mutants.One star indicates a gene was retained in a filtered subset of projection neurons; %, evaluated using fluorescent in situ hybridization. ‘% of unfiltered 10 x neurons’ refers to gene detection in an unfiltered single-cell reference atlas of neurons labeled in Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) (n=1,468 neurons). Putative origin inferred from gene expression in the annotated 10 x dataset (Materials and methods, Figure 5—figure supplement 2). Genes sorted by p adjusted value. Data associated with Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>% of unfiltered 10 x neurons with expression</th>
+      <th>Putative origin</th>
+      <th>Log2 fold change</th>
+      <th>p adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>macc1</td>
+      <td>0.1</td>
+      <td>r4-6</td>
+      <td>24.0</td>
+      <td>3.2E-06</td>
+    </tr>
+    <tr>
+      <td>CR559941.1</td>
+      <td>0.0</td>
+      <td></td>
+      <td>23.7</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>si:dkey-65b12.6</td>
+      <td>0.0</td>
+      <td></td>
+      <td>23.5</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>si:ch73-106n3.2</td>
+      <td>0.1</td>
+      <td></td>
+      <td>23.5</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>mcm10</td>
+      <td>0.1</td>
+      <td>MNs</td>
+      <td>23.4</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>si:ch211-244o22.2</td>
+      <td>0.5</td>
+      <td>r4-6</td>
+      <td>23.4</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>dre-mir-10a</td>
+      <td>0.0</td>
+      <td></td>
+      <td>23.3</td>
+      <td>3.5E-06</td>
+    </tr>
+    <tr>
+      <td>itga4</td>
+      <td>0.3</td>
+      <td>r5-6 (inhibitory)</td>
+      <td>23.2</td>
+      <td>3.5E-06</td>
+    </tr>
+    <tr>
+      <td>si:dkeyp-87d8.8</td>
+      <td>0.0</td>
+      <td></td>
+      <td>23.2</td>
+      <td>3.6E-06</td>
+    </tr>
+    <tr>
+      <td>arsj</td>
+      <td>0.5</td>
+      <td>MNs</td>
+      <td>23.0</td>
+      <td>3.9E-06</td>
+    </tr>
+    <tr>
+      <td>tlr1</td>
+      <td>0.0</td>
+      <td></td>
+      <td>23.0</td>
+      <td>3.9E-06</td>
+    </tr>
+    <tr>
+      <td>* % itga9</td>
+      <td>2.3</td>
+      <td>r4-7</td>
+      <td>23.0</td>
+      <td>3.9E-06</td>
+    </tr>
+    <tr>
+      <td>tofb</td>
+      <td>0.5</td>
+      <td>r4-6</td>
+      <td>9.1</td>
+      <td>1.4E-05</td>
+    </tr>
+    <tr>
+      <td>myo7ba</td>
+      <td>0.4</td>
+      <td>r4-7</td>
+      <td>9.8</td>
+      <td>1.0E-04</td>
+    </tr>
+    <tr>
+      <td>zfand1</td>
+      <td>0.1</td>
+      <td>MNs</td>
+      <td>9.0</td>
+      <td>1.5E-04</td>
+    </tr>
+    <tr>
+      <td>% slc22a7a</td>
+      <td>0.7</td>
+      <td>r4-7</td>
+      <td>10.2</td>
+      <td>1.5E-04</td>
+    </tr>
+    <tr>
+      <td>agrp</td>
+      <td>0.0</td>
+      <td></td>
+      <td>13.4</td>
+      <td>4.1E-04</td>
+    </tr>
+    <tr>
+      <td>si:dkey-46i9.6</td>
+      <td>0.1</td>
+      <td>r5-7</td>
+      <td>7.7</td>
+      <td>6.8E-04</td>
+    </tr>
+    <tr>
+      <td>muc2.2</td>
+      <td>0.0</td>
+      <td></td>
+      <td>9.4</td>
+      <td>6.9E-04</td>
+    </tr>
+    <tr>
+      <td>cd37</td>
+      <td>0.0</td>
+      <td></td>
+      <td>9.1</td>
+      <td>9.8E-04</td>
+    </tr>
+    <tr>
+      <td>musk</td>
+      <td>0.3</td>
+      <td>r4-6</td>
+      <td>9.4</td>
+      <td>1.2E-03</td>
+    </tr>
+    <tr>
+      <td>mcamb</td>
+      <td>0.2</td>
+      <td>r5-7</td>
+      <td>8.3</td>
+      <td>2.7E-03</td>
+    </tr>
+    <tr>
+      <td>ppp1r42</td>
+      <td>0.5</td>
+      <td>r5-6 (inhibitory)</td>
+      <td>7.9</td>
+      <td>3.1E-03</td>
+    </tr>
+    <tr>
+      <td>CR677513.1</td>
+      <td>0.0</td>
+      <td></td>
+      <td>9.9</td>
+      <td>3.5E-03</td>
+    </tr>
+    <tr>
+      <td>Downregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>* % satb1a</td>
+      <td>7.9</td>
+      <td>r4-7 (inc inhib), MNs</td>
+      <td>–8.6</td>
+      <td>1.0E-06</td>
+    </tr>
+    <tr>
+      <td>*znf975</td>
+      <td>0.7</td>
+      <td>r4-6</td>
+      <td>–8.3</td>
+      <td>1.5E-06</td>
+    </tr>
+    <tr>
+      <td>phldb1a</td>
+      <td>0.6</td>
+      <td>r5-7 (inc inhib)</td>
+      <td>–9.2</td>
+      <td>1.5E-06</td>
+    </tr>
+    <tr>
+      <td>TSTA3</td>
+      <td>0.0</td>
+      <td></td>
+      <td>–9.7</td>
+      <td>3.4E-06</td>
+    </tr>
+    <tr>
+      <td>si:dkey-24p1.6</td>
+      <td>0.0</td>
+      <td></td>
+      <td>–8.3</td>
+      <td>8.4E-06</td>
+    </tr>
+    <tr>
+      <td>si:dkey-77f5.14</td>
+      <td>0.2</td>
+      <td>r5-7</td>
+      <td>–8.5</td>
+      <td>1.1E-05</td>
+    </tr>
+    <tr>
+      <td>tha1</td>
+      <td>0.1</td>
+      <td>MVN</td>
+      <td>–10.3</td>
+      <td>2.1E-05</td>
+    </tr>
+    <tr>
+      <td>serpinh2</td>
+      <td>0.5</td>
+      <td>r4-6</td>
+      <td>–9.0</td>
+      <td>3.7E-05</td>
+    </tr>
+    <tr>
+      <td>ghrh</td>
+      <td>0.3</td>
+      <td>r4-7</td>
+      <td>–9.5</td>
+      <td>6.9E-05</td>
+    </tr>
+    <tr>
+      <td>asah1b</td>
+      <td>0.8</td>
+      <td>r4-7</td>
+      <td>–7.8</td>
+      <td>9.9E-05</td>
+    </tr>
+    <tr>
+      <td>msmo1</td>
+      <td>0.9</td>
+      <td>r5-7, inc inhib</td>
+      <td>–8.9</td>
+      <td>1.1E-04</td>
+    </tr>
+    <tr>
+      <td>tagln2</td>
+      <td>0.3</td>
+      <td>glia</td>
+      <td>–8.4</td>
+      <td>2.2E-04</td>
+    </tr>
+    <tr>
+      <td>zgc:174863</td>
+      <td>0.1</td>
+      <td>MNs</td>
+      <td>–9.9</td>
+      <td>2.2E-04</td>
+    </tr>
+    <tr>
+      <td>* % rxfp2a</td>
+      <td>3.2</td>
+      <td>r4-7, inc inhib</td>
+      <td>–6.6</td>
+      <td>6.8E-04</td>
+    </tr>
+    <tr>
+      <td>bmp4</td>
+      <td>0.7</td>
+      <td>r4-7</td>
+      <td>–6.8</td>
+      <td>6.8E-04</td>
+    </tr>
+    <tr>
+      <td>cfl1l</td>
+      <td>0.1</td>
+      <td>r4-6</td>
+      <td>–8.4</td>
+      <td>6.8E-04</td>
+    </tr>
+    <tr>
+      <td>* polrmt</td>
+      <td>4.2</td>
+      <td>r4-7, inc inhib</td>
+      <td>–8.8</td>
+      <td>6.9E-04</td>
+    </tr>
+    <tr>
+      <td>anxa2a</td>
+      <td>0.6</td>
+      <td>r4-7</td>
+      <td>–3.0</td>
+      <td>1.3E-03</td>
+    </tr>
+    <tr>
+      <td>galr1a</td>
+      <td>0.3</td>
+      <td>MVN</td>
+      <td>–9.1</td>
+      <td>1.4E-03</td>
+    </tr>
+    <tr>
+      <td>selenow2b</td>
+      <td>0.1</td>
+      <td></td>
+      <td>–8.0</td>
+      <td>1.8E-03</td>
+    </tr>
+    <tr>
+      <td>% bckdhbl</td>
+      <td>1.4</td>
+      <td>r4-7, glia, MNs</td>
+      <td>–8.7</td>
+      <td>2.1E-03</td>
+    </tr>
+    <tr>
+      <td>boka</td>
+      <td>0.5</td>
+      <td>r5-7</td>
+      <td>–8.6</td>
+      <td>2.9E-03</td>
+    </tr>
+    <tr>
+      <td>cyldb</td>
+      <td>0.2</td>
+      <td>r4-7</td>
+      <td>–7.9</td>
+      <td>3.0E-03</td>
+    </tr>
+    <tr>
+      <td>pon2</td>
+      <td>0.6</td>
+      <td>r4-7, glia, MNs</td>
+      <td>–5.0</td>
+      <td>3.1E-03</td>
+    </tr>
+    <tr>
+      <td>si:ch73-204p21.2</td>
+      <td>0.3</td>
+      <td>r5-7, inc inhib</td>
+      <td>–8.2</td>
+      <td>3.5E-03</td>
+    </tr>
+    <tr>
+      <td>and2</td>
+      <td>0.1</td>
+      <td>r4-6</td>
+      <td>–5.8</td>
+      <td>3.7E-03</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>evx2</td>
+      <td>33.8</td>
+      <td>r4-7</td>
+      <td>0.46</td>
+      <td>0.99</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Differentially expressed genes in phox2a-expressing medial vestibular neurons.Star indicates a gene was evaluated in projection neurons using fluorescent in situ hybridization. # indicates a gene was significantly differentially expressed in projection neurons. ‘% of medial vestibular neurons’ refers to detection in a subset of phox2a-expressing medial vestibular neurons in a single-cell reference atlas (Materials and methods, Figure 5—figure supplement 2). ‘% of projection neurons with expression’ refers to detection in a filtered subset of projection neurons. Gene sorted by p adjusted value. Data associated with Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>% of medial vestibular neurons</th>
+      <th>% of projection neurons</th>
+      <th>Log2 fold change</th>
+      <th>p adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>itga4</td>
+      <td>2.2</td>
+      <td>0.6</td>
+      <td>23.2</td>
+      <td>3.5E-06</td>
+    </tr>
+    <tr>
+      <td>* # itga9</td>
+      <td>6.7</td>
+      <td>1.9</td>
+      <td>23.0</td>
+      <td>3.9E-06</td>
+    </tr>
+    <tr>
+      <td>musk</td>
+      <td>2.2</td>
+      <td>0.6</td>
+      <td>9.4</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td># dysf</td>
+      <td>6.7</td>
+      <td>1.9</td>
+      <td>6.9</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>* # twf1b</td>
+      <td>8.9</td>
+      <td>1.9</td>
+      <td>5.9</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>gabrr2a</td>
+      <td>2.2</td>
+      <td>2.5</td>
+      <td>6.8</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td># pole</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>7.3</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>* # p4hb</td>
+      <td>15.6</td>
+      <td>1.3</td>
+      <td>5.1</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>col27a1b</td>
+      <td>2.2</td>
+      <td>0.6</td>
+      <td>8.0</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>Downregulated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>asah1b</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>–8.3</td>
+      <td>1.5E-06</td>
+    </tr>
+    <tr>
+      <td>boka</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>–9.2</td>
+      <td>1.5E-06</td>
+    </tr>
+    <tr>
+      <td>* # satb1a</td>
+      <td>6.7</td>
+      <td>8.2</td>
+      <td>–3.0</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td># polrmt</td>
+      <td>4.4</td>
+      <td>1.9</td>
+      <td>–8.7</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td># znf975</td>
+      <td>2.2</td>
+      <td>1.3</td>
+      <td>–5.0</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td># phldb1a</td>
+      <td>2.2</td>
+      <td>3.1</td>
+      <td>–5.8</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>fosl1a</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>–5.4</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>pitpnaa</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>–8.8</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>sgpp1</td>
+      <td>2.2</td>
+      <td>0.6</td>
+      <td>–7.1</td>
+      <td>0.038</td>
+    </tr>
+  </tbody>
+</table>
 
 We acknowledge the possibility that our in situ method is insufficiently quantitative to detect subtle differences in expression. Similarly, despite using both bulk and single-cell RNA sequencing approaches, we may lack the resolution to uncover differential gene expression within projection neurons, particularly given the inclusion of heterozygous phox2a siblings in controls. Nevertheless, consistent with functional and anatomical characterization, our sequencing data argues that projection neurons acquire the correct transcriptional profiles in the absence of motor partner-derived signals. Our findings are reminiscent of recent reports that the molecular signatures of spinal interneurons develop independently of motor partners (Sweeney et al., 2018).
 
@@ -102,13 +1809,13 @@ We acknowledge the possibility that our in situ method is insufficiently quantit
 
 Here, we show that motor neurons are dispensable for fate specification in a canonical sensorimotor circuit. We first demonstrated that peripheral sensory and central projection neurons develop appropriate, directionally-selective connectivity and topography independently of their motor partners. Next, we established that projection neurons remain anatomically and molecularly competent to assemble with motor partners. Lastly, we show that loss of motor neurons does not meaningfully alter the transcriptional signatures of their pre-motor projection neuron partners. By providing causal evidence against an instructional role of motor partners for sensory connectivity, our work forces a revision of the current model for vestibulo-ocular reflex circuit formation. As proper connectivity across multiple synapses is foundational for proper function, our work speaks to mechanisms responsible for sensorimotor circuit assembly.
 
-## Transcriptional influences on motor neuron fate specification
+### Transcriptional influences on motor neuron fate specification
 
 While the primary focus of our work was circuit assembly, we found that, unexpectedly, phox2a acts in a dose-dependent manner to specify extraocular motor pool fate. Key evidence comes from phox2a heterozygotes, in which the earliest-born dorsal neurons in nIII are lost but later-born neurons in nIII/nIV are intact. This observation extends prior characterizations of phox2a mutations in zebrafish (Guo et al., 1999), chick (Hasan et al., 2010), and human (Nakano et al., 2001, Bosley et al., 2006). Prior work hypothesized that phox2a dosage may regulate midbrain motor neuron differentiation into visceral and somatic types (Hasan et al., 2010). In other systems, transcription (DeKoter and Singh, 2000, Liu et al., 2007, Sansom et al., 2009), growth (Vemaraju et al., 2012) and axon guidance factors (Komiyama et al., 2007) can act in such a graded manner to regulate coarse cell type specification and wiring specificity. We extend these ideas to show that phox2a dose-dependency acts both over closely-related subtypes (pools within a single cranial nucleus) and along a temporal axis, where partial dosage preferentially targets the earliest-born neurons (Greaney et al., 2017). Specifically, if phox2a is expressed in neural progenitor cells that give rise to nIII/nIV, then the earliest-born motor neurons would have the shortest exposure to phox2a.
 
 Molecular insight into ocular motor neuron pool specification is sparse but would be welcome given the strong links between genetic development and ocular motor disease (Bosley et al., 2006, Park et al., 2016, Cheng et al., 2014, Cederquist et al., 2012). For example, subpopulation markers could resolve the topography of pools within dorsal nIII; whether IR/MR pools are spatially segregated or intermingled (Evinger et al., 1987, Greaney et al., 2017); whether the medial/lateral axis reflects functional differences among motor neuron subtypes; and whether/how local interactions between motor neuron pools contributes to fate specification (Knüfer et al., 2020). In spinal circuits, the rich molecular understanding of motor pool specification (Lin et al., 1998, Dasen et al., 2005, Dasen et al., 2008, Hanley et al., 2016, D’Elia et al., 2023) has enabled targeted perturbations of pool identity, allowing for major discoveries of their roles in circuit assembly (Vrieseling and Arber, 2006, Sürmeli et al., 2011, Sweeney et al., 2018, Philippidou and Dasen, 2013). Our findings thus represent a step forward towards understanding how developmental deficits may contribute to ocular motor disorders (Whitman and Engle, 2022).
 
-## Motor neurons: active or passive architects of pre-motor connectivity?
+### Motor neurons: active or passive architects of pre-motor connectivity?
 
 Our discoveries advance outstanding controversies over whether motor neurons actively or passively shape pre-motor connectivity. We find that extraocular motor neuron axons do not serve as ‘pioneers’ (Supèr et al., 1998, McConnell et al., 1989, Bentley and Keshishian, 1982, Bate, 1976, Pike et al., 1992), with pre-motor axon targeting following passively from motor-derived pathfinding signals (Matise and Lance-Jones, 1996). Such a model predicts that projection neuron targeting would be entirely ablated after constitutive loss of extraocular motor neurons and their secreted signals (Landmesser and Honig, 1986, Scott, 1988, Swanson and Lewis, 1986, Tosney and Hageman, 1989, Whitlock and Westerfield, 1998). Instead, we observed that projection neurons still establish long-range (hindbrain to midbrain) axonal projections, with appropriate spatial segregation that matches the topography of their motor partners (Greaney et al., 2017, Liu et al., 2022, Goldblatt et al., 2023). Our findings complement reports in spinal circuits that pre-motor targeting is grossly appropriate after manipulating the spatial source of, but not ablating, potential pathfinding signals (Sürmeli et al., 2011), and that the transcriptional fate of pre-motor projection neurons similarly develops independently (Sweeney et al., 2018). We point to the late development of ocular musculature (Easter and Nicola, 1997, Noden et al., 1999) compared to spinal musculature (Matise and Lance-Jones, 1996) as a potential source of the dispensability of muscle-derived signals.
 
@@ -118,7 +1825,7 @@ Nevertheless, extraocular motor neurons might still play an active or passive ro
 
 We note that our study does not eliminate one additional source of post-synaptic partner signals to projection neurons. As in primates (McCrea et al., 1987), projection neurons also contact neurons in the interstitial nucleus of Cajal, also known as the nucleus of the medial longitudinal fasciculus (INC/nMLF; Bianco et al., 2012). INC/nMLF neurons project early in development (Mendelson, 1986) to spinal circuits used for postural stabilization during swimming (Severi et al., 2014, Thiele et al., 2014, Wang and McLean, 2014, Tanimoto et al., 2022, Berg et al., 2023). Notably, ablation of projection neurons disrupts postural stability (Sugioka et al., 2023). As we did not observe postural deficits in phox2a mutants, we infer that projection neuron connectivity to INC/nMLF targets is present and functional. Correspondingly, the development of projection neuron collaterals and synapses to INC/nMLF neurons appeared qualitatively normal in phox2a mutants, supporting our interpretation that projection neurons retain the capacity to properly assemble with post-synaptic targets even though similar structures to extraocular motor neurons are absent. In the future, if a similarly specific marker like phox2a is identified that labels the INC/nMLF, it will be possible to test whether these neurons play a role in vestibulo-ocular reflex circuit development.
 
-## Alternative mechanisms for fate specification and sensory input specificity in projection neurons
+### Alternative mechanisms for fate specification and sensory input specificity in projection neurons
 
 What is the origin of signals that govern projection neuron fate and sensory input specificity, if not motor-derived? In comparable systems, fate signals can be intrinsically-expressed or originate from extrinsic sources. For example, intrinsic genetic mechanisms assemble laminar connectivity in visual circuits (Yamagata et al., 2002, Yamagata and Sanes, 2008) and facilitate sensorimotor matching in spinal circuits (Arber et al., 2000, Vrieseling and Arber, 2006, Pecho-Vrieseling et al., 2009, Bonanomi and Pfaff, 2010). In directionally-selective retinal circuits, subtype fate is established in a similar manner (Duan et al., 2014, Al Khindi et al., 2022). In ‘intrinsic’ models, synaptic specificity arises from molecular matching between subtypes (Kurmangaliyev et al., 2019; Yoo et al., 2023; Dasen, 2009). Alternatively, in somatosensory and auditory circuits, transcriptional fate depends on extrinsic signals such as growth factors (Sharma et al., 2020) and sensation (Shrestha et al., 2018), respectively. In spinal circuits, positional fate, which constrains connectivity (Sürmeli et al., 2011), is established by extrinsic codes such as morphogen gradients in early development (Alaynick et al., 2011) and Hox factors (Dasen et al., 2005, Dasen et al., 2008). In ‘extrinsic’ models, early inputs are often erroneous and refined by activity (Tessier-Lavigne and Goodman, 1996, Goodman and Shatz, 1993) or molecular factors (Spead et al., 2023). Collectively, these findings offer two alternative models for how vestibulo-ocular reflex circuit assembly emerges.
 
@@ -126,59 +1833,342 @@ The tight links between birth order, somatic position, and stimulus selectivity 
 
 Conversely, evidence that stimulus selectivity emerges gradually would suggest that sensory afferents and/or projection neurons initially wire indiscriminately and that circuit connectivity is refined in time by extrinsic forces. Prior work in the vestibulo-ocular reflex circuit has proposed developmental roles for sensory-derived trophic factors (Peusner and Morest, 1977) and activity-dependent refinement (Ronca et al., 2016, Riley and Moorman, 2000), though sensory afferents develop typically in the absence of utricular input (Roberts et al., 2017) and ocular motor behavior does not depend on stimulus-driven activity (Ulrich et al., 2014). Here, an ‘extrinsic’ determination model would predict that connectivity is established by an anterogradely-transmitted signal – that is, from sensory afferents to ocular muscles. If so, then future investigations might constitutively ablate sensory afferents to eliminate activity-driven, diffusible, or cell-surface instructional signals, similar to the present study. The directional bias in opsin-evoked activity in projection neurons (Schoppik et al., 2017), together with their transcriptional profiles established here, offer a clear readout of the role of sensory-derived factors. However, genetic targets exclusive to vestibular sensory afferents for gaze stabilization have not been identified, and tissue-specific genetic ablations remain limited in zebrafish. Looking ahead, resolving when and how stimulus selectivity emerges across the vestibulo-ocular reflex circuit will be key to understanding whether connectivity with pre- and/or post-synaptic partners instructs subtype fate, or whether subtype fate instructs connectivity.
 
-## Conclusion
+### Conclusion
 
 Here, we discovered that motor partners do not determine pre-motor fate and sensory connectivity for the projection neurons that stabilize gaze. Our results overturn the current model that stimulus selectivity and connectivity are retrogradely specified, a major step towards understanding the origin, and eventually nature, of mechanisms that assemble an archetypal sensorimotor reflex circuit. Instead, our data support and extend recent models in spinal systems that motor partners do not actively construct sensory-to-interneuron reflex circuit architecture, but may later refine their inputs. By defining the contribution of motor neurons to specification and sensory connectivity of gaze-stabilizing central projection neurons, our work speaks to principles of sensorimotor circuit assembly.
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
 
-## Lead contact
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>BP337-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>32% paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>15714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>25530049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>LK003178</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hanks Buffered Salt Solution (HBSS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>14170112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Earl’s Buffered Salt Solution (EBSS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>24010043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNAse</td>
+      <td>Worthington Biochemical</td>
+      <td>LK003172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L15 Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11415064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum, qualified, triple-filtered</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A3160501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase Type 1 A</td>
+      <td>Sigma Aldrich</td>
+      <td>C9891-500MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Low melting point agarose</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>16520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl-3-aminobenzoic acid ethyl ester (MESAB)</td>
+      <td>Sigma Aldrich</td>
+      <td>E10521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pancuronium bromide</td>
+      <td>Sigma Aldrich</td>
+      <td>P1918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>in situ hybridization chain reaction v3.0 (HCR)</td>
+      <td>Molecular Instruments</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAqueous Micro Total RNA Isolation Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MEGAshortscript T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QiaQUICK PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>EnGen Spy Cas9 NLS</td>
+      <td>New England Biolabs</td>
+      <td>M0646T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(–6.7Tru.Hcrtr2:GAL4-VP16)</td>
+      <td>Lacoste et al., 2015; Schoppik et al., 2017</td>
+      <td>ZFIN: ZDB-TGCONSTRCT-151028–8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(UAS-E1b:Kaede)</td>
+      <td>Scott et al., 2007</td>
+      <td>ZFIN: ZDB-TGCONSTRCT-070314–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(isl1:GFP)</td>
+      <td>Higashijima et al., 2000</td>
+      <td>ZFIN: ZDB-ALT-030919–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(UAS:GCaMP6s)</td>
+      <td>Chen et al., 2013</td>
+      <td>ZFIN: ZDB-TGCONSTRCT-140811–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>phox2ad22</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>phox2ad19</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>phox2ai2</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>phox2a forward primer</td>
+      <td>Sigma Aldrich</td>
+      <td>N/A</td>
+      <td>CAGCCAGAGCAACGGCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>phox2a reverse primer</td>
+      <td>Sigma Aldrich</td>
+      <td>N/A</td>
+      <td>AAGCCGACAACAGTGTGTGTGTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>phox2a guide 1</td>
+      <td>Sigma Aldrich</td>
+      <td>N/A</td>
+      <td>CTCGCCACCGCCAGCTGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>phox2a guide 2</td>
+      <td>Sigma Aldrich</td>
+      <td>N/A</td>
+      <td>CTCCGGCTTCAGCTCCGGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>HCR probes</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID: SCR_02285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator (2021)</td>
+      <td>Adobe</td>
+      <td>RRID: SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab 2020b</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v4</td>
+      <td>Hao et al., 2021</td>
+      <td>https://satijalab.org/seurat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPR Guide RNA Design Tool</td>
+      <td>Benchling</td>
+      <td>https://benchling.com/crispr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>20 micron cell strainer</td>
+      <td>pluriSelect</td>
+      <td>431002060</td>
+      <td>Method details (Neuron harvesting)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SH800z 100 micron sorting chip</td>
+      <td>Sony</td>
+      <td>LE-C3210</td>
+      <td>Method details (Flow cytometry)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, David Schoppik (schoppik@gmail.com).
 
-## Materials availability
+#### Materials availability
 
 Mutant fish lines generated in this study will be deposited to the Zebrafish International Resource Center (ZIRC).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Fish care
+#### Fish care
 
 All protocols and procedures involving zebrafish were approved by the New York University Langone School of Medicine Institutional Animal Care & Use Committee (IACUC; approval number IA16-00561). All larvae were raised at 28.5 °C at a density of 20–50 larvae in 25–40 ml of buffered E3 (1 mM HEPES added). Larvae used for photofill experiments were raised in constant darkness; all other fish were raised on a standard 14/10 h light/dark cycle. Larvae for experiments were between 3–5 days post-fertilization (dpf).
 
-## Transgenic lines
+#### Transgenic lines
 
 Experiments were conducted on the mifta-/- background to remove pigment. All experiments used larvae from the F3 generation or older of a newly-created line of phox2a mutants (described below) on the following backgrounds: Tg(isl1:GFP) (Higashijima et al., 2000) to validate phox2a loss-of-function; Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16) (Lacoste et al., 2015; Schoppik et al., 2017) to drive UAS reporter expression; Tg(UAS-E1b:Kaede) (Scott et al., 2007) for anatomical imaging experiments; and Tg(UAS:GCaMP6s) (Thiele et al., 2014) for calcium imaging experiments. All larvae were selected for brightness of fluorescence relative to siblings. Mendelian ratios were observed, supporting that selected larvae were homozygous for fluorescent reporter alleles.
 
-## Generation of phox2a mutants
+#### Generation of phox2a mutants
 
 phox2a mutant lines were generated using CRISPR/Cas9 mutagenesis. Two guide RNAs (gRNAs) were designed using the Benchling CRISPR Guide RNA Design Tool (see: key resources table). gRNAs were located towards the 5’ region of exon 1 to minimize the size of any translated protein. gRNAs were incubated with Cas9 protein before co-injection into Tg(isl1:GFP) embryos at the single cell stage. Injected embryos were screened for anatomical phenotypes (reduction in isl1-positive nIII/nIV motor neurons). Phenotypic embryos (F0) and their embryos were raised and genotyped via sequencing to identify and validate germline mutations. Three founders were identified and used for experiments: (1) phox2ad22 has a 22 bp deletion from base pairs 249–270, (2) phox2ad19 has a 19 bp deletion from base pairs 262–280, and (3) phox2ai2 has a 2 bp insertion (AG) from base pairs 261–262. Each mutation created a nonsense mutation, causing a predicted premature stop codon at the beginning of the homeobox. All alleles were validated using complementation assays, and larvae from all three alleles were used in experiments. For brevity, only one allele (phox2ad22) is shown in Figure 1.
 
-## Maintenance of phox2a adults
+#### Maintenance of phox2a adults
 
 phox2a null larvae do not survive past 7 dpf. Sibling embryos (phox2a+/+ or phox2a+/-) were raised and genotyped to identify heterozygotes for line propagation. Primers for genotyping are listed in the Key Resources table. Genomic DNA was amplified using a polymerase (DreamTaq PCR Master Mix 2 X, Thermo Fisher Scientific K1071), 60°annealing temperature, 30 second elongation time, and 35 cycles of PCR. PCR generates a 169 bp product (wildtype), 147 bp product (phox2ad22), 150 bp product (phox2ad19), or 171 bp product (phox2ai2). phox2ad22 and phox2ad19 DNA was evaluated using gel electrophoresis; phox2ai2 was assessed via sequencing with the reverse primer (Genewiz, Azenta Life Sciences, South Plainfield, New Jersey).
 
-## Method details
+### Method details
 
-## Confocal imaging
+#### Confocal imaging
 
 Larvae were anesthetized in 0.2 mg/mL ethyl-3-aminobenzoic acid ethyl ester (MESAB, Sigma-Aldrich E10521, St. Louis, MO) prior to confocal imaging except where noted. Larvae were mounted dorsal side-up (axial view) or lateral side-up (sagittal view) in 2% low-melting point agarose (Thermo Fisher Scientific 16520) in E3. Images were collected on a Zeiss LSM800 confocal microscope with a 20 x water-immersion objective (Zeiss W Plan-Apochromat 20 x/1.0). Images of tangential nucleus soma and axons were acquired in a lateral mount with an 80x80 µm imaging window. Stacks spanned ~30–40 µm, sampled every 1 µm. Images of nIII/nIV motor neurons were acquired in a dorsal mount with a 213x106 µm imaging window; stacks spanned approximately 90 µm, sampled every 1.5 µm. Images to validate nIII/nIV expression in a lateral mount were acquired using a 319x319 µm imaging window. Raw image stacks were analyzed using Fiji/ImageJ (Schindelin et al., 2012).
 
-## Identification of phox2a larvae
+#### Identification of phox2a larvae
 
 Prior to experiments, larvae were designated as phox2a mutants or sibling (wildtype/heterozygote) controls based on two criteria: gross loss of Tg(isl1:GFP) fluorescence in nIII/nIV at 2 dpf, visualized using a SugarCube LED Illuminator (Ushio America, Cypress CA) on a stereomicroscope (Leica Microsystems, Wetzlar, Germany) and absence of a swim bladder at 5 dpf. For anatomical and calcium imaging experiments, allele designations were validated using confocal imaging of nIII/nIV motor neurons: total or near-total loss of nIII/nIV neurons (null), selective loss of IR/MR neurons (heterozygote), or normal expression (wildtype). Designations were confirmed after experiments using genotyping. For RNA sequencing and fluorescent in situ experiments, sibling controls (wildtype/heterozygote) were combined.
 
-## Birthdating of nIII/nIV motor neurons
+#### Birthdating of nIII/nIV motor neurons
 
 Early-born neurons in nIII/nIV were optically tagged using in vivo birthdating (Caron et al., 2008, Greaney et al., 2017, Goldblatt et al., 2023) on Tg(isl1:Kaede)ch103 larvae (Barsh et al., 2017). Briefly, whole embryos were exposed to UV light for five minutes at experimenter-defined timepoints and subsequently raised in darkness to prevent background conversion. At 5 dpf, larvae were imaged on a confocal microscope. Neurons born before the time of photoconversion expressed red, converted Kaede; neurons born after expressed only green, unconverted Kaede.
 
-## Fluorescent in situ hybridization and imaging
+#### Fluorescent in situ hybridization and imaging
 
 Experiments were performed using Hybridization Chain Reaction (HCR) for whole-mount zebrafish larvae (Choi et al., 2018; Ibarra-García-Padilla et al., 2021). Probes were generated using the HCR 3.0 probe maker (Kuehn et al., 2022) using the sense sequence of the canonical gene cDNA from NCBI. All larvae were from the Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) background. Larvae were pre-identified as null mutants or siblings (wildtype or heterozygotes) and combined in equal ratios (8–10 larvae per condition, 16–20 larvae total) into a single 5 mL centrifuge tube for fixation and HCR. Larvae were fixed overnight with 4% PFA in PBS at 4 ° C and stored in 100% methanol at –20 ° C. Subsequently, HCR was performed as described in Ibarra-García-Padilla et al., 2021, with adjustments to proteinase K incubation time based on age (2 dpf: 23 min incubation; 3 dpf: 30 min incubation; 5 dpf: 35 min incubation). HCR experiments used buffers and amplifiers from Molecular Instruments (Los Angeles, CA). DAPI staining was performed on some samples at 1:2000 from 5mg/ml stock solution, incubated overnight at 4 ° C. Samples were stored in 1 x PBS at 4 ° C and imaged on a confocal microscope within four days. Prior to imaging, larvae were re-screened for Tg(isl1:GFP) fluorescence to identify null mutants and sibling controls. For each probe, imaging parameters were determined using a sibling control and kept constant for all subsequent larvae. Comparable settings (within 1% laser power) were used across probes.
 
-## Calcium imaging of tonic and impulse tilt stimuli responses
+#### Calcium imaging of tonic and impulse tilt stimuli responses
 
 Experiments were performed as described in Goldblatt et al., 2023 using Tilt-In-Place Microscopy (Hamling et al., 2023). All experiments used 5 dpf larvae from the Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS:GCaMP6s) background. Briefly, larvae were mounted dorsal-up in 2% low-melt agarose in E3 onto a large beam diameter galvanometer system (ThorLabs GVS011). Tonic pitch-tilt stimuli were presented over a 65 s period in the following order: horizontal baseline (5 s at 0°), nose-down tilt (15 s at –19°), horizontal imaging (15 s at 0°), nose-up tilt (15 s at 19°), and horizontal imaging (15 s at 0°). Impulse stimuli contained a 4 ms eccentric rotation, a 2 ms hold, and a 4 ms restoration step to horizontal and were presented twice over a 65 s imaging window: horizontal baseline (20 s), impulse (10 ms), horizontal imaging (30 s), impulse (10 ms), horizontal imaging (15 s). Tonic and impulse stimuli were presented in alternating sets (impulse, then tonic) with a total of three stimulus set repeats.
 
@@ -186,11 +2176,11 @@ Imaging was performed using a 20 x water immersion objective (Olympus XLUMPLFLN2
 
 The number of neurons sampled per fish for each genotype are as follows (n=mean/standard deviation per fish; total cells/total fish): (1) Wildtype reference dataset: n=22±14 neurons/fish, N=255/10 total; (2) phox2a+/+: 33±13 neurons/fish, N=76/5 total; (3) phox2a+/-: 43±9 neurons/fish, N=109/6 total; (4) phox2a-/-: 35±14neurons/fish, N=297/16 total.
 
-## Retrograde photolabeling of tangential nucleus neurons
+#### Retrograde photolabeling of tangential nucleus neurons
 
 Experiments were performed as described in Goldblatt et al., 2023 based on Pujala and Koyama, 2019 on 5 dpf larvae from the Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) background. Briefly, experiments leveraged a photoconvertible protein, Kaede, which irreversibly converts from green to red with ultraviolet light. Larvae were raised in darkness to minimize background conversions. Larvae were mounted dorsal-up in 2% agarose under a confocal microscope. An imaging window was centered over the medial longitudinal fasciculus (MLF) and repeatedly scanned with a 405 nm laser for 30 s until fully converted (green to red). Off-target photoconversion was assessed (e.g. conversion of projections lateral to the MLF). Larvae were unmounted, left to recover in E3 for 4 hr in darkness, and then re-mounted in a lateral mount. An imaging window was centered around the tangential nucleus (see: Confocal Imaging). Retrogradely labeled soma were identified by their center-surround fluorescence appearance: red converted cytoplasm surrounding an unconverted green nucleus.
 
-## Neuron harvesting, dissociation, and flow cytometry
+#### Neuron harvesting, dissociation, and flow cytometry
 
 Experiments were performed on 72–74 hpf larvae from the Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede) background. At 2 dpf, larvae were designated as null or sibling (wildtype/heterozygote) as described above. Three experimenters (D.G., K.R.H., and P.L) harvested neurons in parallel. Larvae were anesthetized in MESAB in Earle’s Balanced Salt Solution with calcium, magnesium, and phenol red (EBSS, Thermo Fisher Scientific 24010043) and mounted dorsal-up in 2% agarose. Fluorescence in tangential nucleus neurons was visualized using a SugarCube LED Illuminator (Ushio America, Cypress CA) using 10 x eyepieces on a stereomicroscope (Leica Microsystems, Wetzlar, Germany). Neurons were harvested using a thin wall glass capillary tube (4 inch, OD 1.0 MM, World Precision Instruments) into EBSS in a non-stick Eppendorf tube and kept on ice until dissociation.
 
@@ -198,33 +2188,33 @@ Neurons were dissociated in 20 units/mL of papain prepared in EBSS (Worthington 
 
 Flow cytometry was performed using a Sony SH800z cell sorter (100 µm nozzle, 20 psi) to isolate single neurons (Figure 5—figure supplement 1). Three controls were run: (1) non-fluorescent wildtype neurons, (2) non-fluorescent neurons + DAPI, (3) fluorescent (green) neurons from Tg(isl1:GFP);Tg(–6.7Tru.Hcrtr2:GAL4-VP16);Tg(UAS-E1b:Kaede)+DAPI. On average, 2% of neurons were DAPI-positive and excluded. Neurons were evaluated for positive (green) fluorescence. Fluorescence was not evaluated to separate Tg(UAS-E1b:Kaede) neurons from those labeled by Tg(isl1:GFP). Neurons were sorted into an Eppendorf tube containing 700 µl of lysis buffer (RNAqueous Micro Total RNA Isolation Kit, Thermo Fisher Scientific) for downstream bulk RNA sequencing.
 
-## Bulk RNA sequencing
+#### Bulk RNA sequencing
 
 RNA isolation was performed using an RNAqueous Micro Total RNA Isolation Kit (Thermo Fisher Scientific). RNA concentration and quality (RIN > 8.0) was evaluated using an RNA 6000 Pico Kit and a 2100 Bioanalyzer system (Agilent Technologies, Santa Clara, California). RNA sequencing was performed by the NYU Genome Technology Center. Libraries were prepared using the low-input Clontech SMART-Seq HT with Nxt HT kit (Takara Bio USA) and sequenced using an Illumina NovaSeq 6000 with an S1 100 Cycle Flow Cell (v1.5).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Cell counting and spatial mapping of nIII/nIV motor neurons
+#### Cell counting and spatial mapping of nIII/nIV motor neurons
 
 Analysis was performed in Fiji/ImageJ (Schindelin et al., 2012) using the Cell Counter plugin. Anatomical stacks of nIII/nIV were subdivided in the dorsoventral axis as described in Greaney et al., 2017 to facilitate localization. A point ROI was dropped over each neuron in the plane in which the soma was brightest (center). The number of neurons in each dorsoventral plane and their coordinates were recorded. Neuron coordinates were standardized relative to a (0,0) point, defined as one corner of a standard-sized rectangular box centered over the extent of nIII/nIV in a maximum intensity projection. Differences in spatial location across genotypes was evaluated separately for each spatial axis using a two-tailed, two-sample Kolmogorov-Smirnov test. Probability distributions for figures were generated using the mean and standard deviation from bootstrapped data (n=100 iterations) to ensure results were robust to data from single larva.
 
-## Analysis of calcium imaging experiments
+#### Analysis of calcium imaging experiments
 
 Analysis methods are detailed in Goldblatt et al., 2023 and summarized briefly here. Regions of Interest (ROIs) were drawn around tangential nucleus neurons for each stimulus plane sampled and adjusted for minor movement (1–2 µm) between trials. Raw fluorescence traces were extracted using Matlab R2020b (MathWorks, Natick, Massachusetts) and normalized by ROI size to account for variation in magnification. A neuron’s response to tonic or impulse stimuli was defined as the change in fluorescence in the first second of restoration to horizontal following tilt delivery. Responses were normalized using a baseline period, defined as the mean fluorescence across the initial baseline window (5 s) preceding the nose-down tilt (nose-down response) or the last 3 s of the horizontal restoration following nose-down tilt (nose-up response). This was used to generate a ΔF/F value. A ΔF/F response was defined as significant if it was greater than two standard deviations above baseline. Directional selectivity was assigned by normalizing the difference in ΔF/F responses to each tilt by their sum. This generated a scale of values of ±1 (i.e. positive values represent nose-up selectivity; negative values, nose-down). Some neurons responded to both tilt directions with high similarity; we set a minimum threshold of abs(0.1) to distinguish neurons with a clear directional selectivity from untuned neurons.
 
-## Spatial mapping of tangential nucleus neurons
+#### Spatial mapping of tangential nucleus neurons
 
 Analysis methods are detailed in Goldblatt et al., 2023 and summarized briefly here. All imaged neurons were manually registered to a reference framework using Adobe Illustrator (2021). Anatomy stacks from all experiments were aligned in the XY (rostrocaudal, mediolateral) axes using established anatomical landmarks (e.g. Mauthner cell body, medial longitudinal fasciculus, otic capsule). For Z-registration (dorsoventral axis), stacks were subdivided into eight sections using landmarks within and around the tangential nucleus (e.g. Mauthner cell body, neuropil). All registered images were verified by two independent observers (D.G. and S.H.). Neurons were localized to one dorsoventral section and a reference circle, representing a cell, was placed in Illustrator. Coordinates for each reference circle were recorded and standardized to an absolute (0,0) point (dorsomedial-most point of the tangential nucleus). Coordinates were imported into Matlab (R2020b) and used to generate a spatial map of imaged neurons.
 
-## Statistical analysis of differences in tilt responses across phox2a genotypes
+#### Statistical analysis of differences in tilt responses across phox2a genotypes
 
 Statistical comparisons of tonic and impulse tilt responses are summarized in Table 1. Analyses used a one-way ANOVA with multiple comparisons. No significant differences (tonic tilt responses) or small differences (impulse responses) were observed across genotypes. Control data reported in Results and Figures 2 and 3 is an aggregate from wildtype, phox2a+/+, and phox2a+/-larvae.
 
-## Alignment, quality control, and differential expression analysis of bulk sequencing data
+#### Alignment, quality control, and differential expression analysis of bulk sequencing data
 
 Initial alignment and analyses were performed by the Applied Bioinformatics Laboratories at the NYU School of Medicine (RRID:SCR_019178). Sequencing data was aligned to the GRCz11 zebrafish reference genome and two fluorescent markers (Kaede, GFP; NCBI). Eight datasets from four experimental repeats were aligned: four from phox2a mutants, and four from sibling controls. One experimental repeat had significantly higher variance in the first and second principal components, likely due to poor quality leading to extremely low transcript counts, and was excluded from downstream analyses. Number of cells/larvae sequenced and used in downstream analysis are as follows: Repeat 1, n=532/n=904 cells from N=28/N=28 phox2a null/control larvae; Repeat 2, n=802/n=683 cells from N=27/N=26 phox2a null/control larvae; Repeat 3, n=1000/n=1007 cells from N=41/N=40 phox2a null/control larvae; Repeat 4 (excluded): n=690/n=571 cells from N=33/N=33 phox2a null/control larvae Differential gene expression between conditions (phox2a mutants vs. sibling controls) was assessed using DESeq2 (Love et al., 2014). Differentially-expressed candidate genes met two criteria: log2 fold change >—2— and p adjusted < 0.05.
 
-## Filtering of bulk sequencing data using a reference single-cell sequencing dataset
+#### Filtering of bulk sequencing data using a reference single-cell sequencing dataset
 
 Analyses were performed in R. Detection of markers for motor neurons (isl1, isl2a, isl2b) (Pfaff et al., 1996; Tokumoto et al., 1995) and neurons caudal (hoxd4a) (Prince et al., 1998; Moens and Prince, 2002) and lateral (barhl2) (Kinkhabwala et al., 2011) to rhombomeres 4–6 supported that our dataset included other populations. We applied a filter to exclude erroneous gene expression from non-tangential nucleus populations.
 
@@ -234,10 +2224,10 @@ Genes in the bulk dataset were only included in downstream analyses if they were
 
 Projection neurons in the tangential nucleus lie in close proximity to the medial vestibular nucleus (3–5 µm) to the medial edge of the tangential nucleus and 10–20 µm dorsal to the rostral/dorsal edge of the tangential nucleus. Some MVN neurons express phox2a (Figure 5—figure supplement 5). Our reference single-cell atlas isolated a small cluster of phox2a-expressing neurons in r5-6 that likely originates from this population. To control for the possibility that some differentially expressed genes are localized to the MVN, and not projection neurons, we also evaluated differential gene expression in the phox2a-expressing subset of MVN neurons (n=45 neurons, 3% of reference dataset). Data is shown in Figure 5—figure supplement 5.
 
-## Generation of representative images for fluorescent in situ hybridization
+#### Generation of representative images for fluorescent in situ hybridization
 
 Images were generated using Fiji/ImageJ (Schindelin et al., 2012). An anatomical template of the tangential nucleus was generated based on Goldblatt et al., 2023. Briefly, for sagittal view images, a 30 µm stack was centered over the tangential nucleus. For each plane, a region of interest (ROI) was drawn over all cells within the bounds of the tangential nucleus. Transcript expression outside the ROI was masked. Maximum intensity projections were generated. Minimal or no alterations to brightness/contrast were made for probe expression given the correlation between fluorescence intensity and detected transcript (Choi et al., 2018).
 
-## Additional statistics
+#### Additional statistics
 
 Bias and variability in probability distributions were estimated by bootstrapping, or resampling the raw distributions with replacement (Efron and Tibshirani, 1986). Data shown is the mean and standard deviation of 100 bootstrapped distributions. Topography data was evaluated using two-tailed, two-way Kolmogorov-Smirnov tests. Functional responses to tilts (i.e. calcium response strength, directionality index) were evaluated using two-tailed Wilcoxon rank sum tests. Differences in responses across genotypes were analyzed using one-way ANOVA tests.

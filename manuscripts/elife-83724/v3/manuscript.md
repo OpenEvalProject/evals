@@ -17,13 +17,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
+1. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
 2. Laboratory of Biomedical Imaging (LIB) Lausanne Switzerland
-3. https://ror.org/02s6k3f65 BioEM lab, Biozentrum, University of Basel Basel Switzerland
-4. https://ror.org/02j9n6e35 ALBA Synchrotron Barcelona Spain
-5. https://ror.org/04py35477 Max Planck Institute of Biochemistry Martinsried Germany
-6. https://ror.org/052gg0110 Sir William Dunn School of Pathology, University of Oxford Oxford United Kingdom
-7. https://ror.org/02mb95055 Institute of Structural and Molecular Biology, Birkbeck College London United Kingdom
+3. BioEM lab, Biozentrum, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+4. ALBA Synchrotron Barcelona Spain ([ROR:02j9n6e35](https://ror.org/02j9n6e35))
+5. Max Planck Institute of Biochemistry Martinsried Germany ([ROR:04py35477](https://ror.org/04py35477))
+6. Sir William Dunn School of Pathology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+7. Institute of Structural and Molecular Biology, Birkbeck College London United Kingdom ([ROR:02mb95055](https://ror.org/02mb95055))
 8. Instituto Biofisika Leioa Spain
 
 † Corresponding author
@@ -46,43 +46,105 @@ Here, we describe a new approach to subtomogram averaging in RELION-4.0 that opt
 
 ## Methods
 
-## Particle alignment and averaging
+### Particle alignment and averaging
 
-RELION performs maximum a posteriori estimation to find the set of model parameters Θ that maximise the probability of observing the experimental images X. Using Bayes’ theorem, we define a regularised likelihood optimisation target function as(1)P(Θ|X)=P(X|Θ)P(Θ),
+RELION performs maximum a posteriori estimation to find the set of model parameters $Θ$ that maximise the probability of observing the experimental images $X$. Using Bayes’ theorem, we define a regularised likelihood optimisation target function as
 
-where P⁢(Θ) expresses prior information about the model, that is, that the reconstructed map has limited power in Fourier space, and P⁢(X|Θ) is the likelihood of observing the data given the model. A marginalised likelihood function is used, where one integrates over the unknown alignments ϕ of each individual particle. For simplicity, these integrals are omitted from the notations used in this article.
+$$
+P(Θ|X)=P(X|Θ)P(Θ),
+$$
 
-The data model assumes independent Gaussian noise on the Fourier components of the cryo-EM images of individual particles p. We therefore write the negative log-likelihood of observing a particle p in a hypothetical alignment ϕ as a sum over a grid of 2D Fourier pixels j∈R2:(2)−log⁡(P(Xp|ϕ))∝∑j|Xjp−CTFp(j)Vj(p)|2σj2,
+where $P⁢(Θ)$ expresses prior information about the model, that is, that the reconstructed map has limited power in Fourier space, and $P⁢(X|Θ)$ is the likelihood of observing the data given the model. A marginalised likelihood function is used, where one integrates over the unknown alignments $ϕ$ of each individual particle. For simplicity, these integrals are omitted from the notations used in this article.
 
-where Xp is the Fourier transform of the experimental particle image, CTFp its contrast-transfer function, Vj(p) denotes the 2D slice out of the 3D Fourier transform of the known map V into the view of the particle, and σj2 is the noise variance of the frequency band of j given by(3)Vj(p)=exp⁡(itp⋅j)V(Apj)
+The data model assumes independent Gaussian noise on the Fourier components of the cryo-EM images of individual particles $p$. We therefore write the negative log-likelihood of observing a particle $p$ in a hypothetical alignment $ϕ$ as a sum over a grid of 2D Fourier pixels $j\inR^{2}$:
 
-for a 2D vector tp and a 2×3 matrix Ap that respectively encapsulate the particle’s position and orientation, and the evaluation of V⁢(Ap⁢j) is achieved through linear interpolation.
+$$
+−log⁡(P(X^{p}|ϕ))∝\sumj\frac{|X_{j}^{p}−CTF^{p}(j)V_{j}^{(p)}|^{2}}{\sigma_{j}^{2}},
+$$
 
-In tomography, our aim is to approximate that same likelihood on tilt-series data. The equivalent is a sum over the pixels of the relevant regions of all images f from the tilt series:(4)−log⁡(P(Xp|ϕ))∝∑f,j|Xfjp−CTFfp(j)Vfj(p)|2σj2.
+where $X^{p}$ is the Fourier transform of the experimental particle image, $CTF^{p}$ its contrast-transfer function, $V_{j}^{(p)}$ denotes the 2D slice out of the 3D Fourier transform of the known map $V$ into the view of the particle, and $\sigma_{j}^{2}$ is the noise variance of the frequency band of $j$ given by
 
-We model the shifts and rotations as compositions of per-particle and per-image components:(5)tpf=Af⊺Tpf+tf(6)Apf=RpAf,
+$$
+V_{j}^{(p)}=exp⁡(it_{p}⋅j)V(A_{p}j)
+$$
 
-where we keep the per-particle rotation component, Rp, identical for all images in the tilt series, and only vary Af, the rotational alignment of the tilt-series images. In turn, the tilt-series alignment Af is shared among all particles in a given tilt image. The per-particle part of the translation is modelled as a 3D vector, Tp⁢f∈ℝ3, that can vary over different tilt images f. This contrasts with single-particle analysis, where beam-induced motion of the particle can be corrected for as a preprocessing step (Li et al., 2013; Scheres, 2014; Zheng et al., 2017; Zivanov et al., 2019), so that each particle is associated with a single 2D translation in a motion-corrected image.
+for a 2D vector $t_{p}$ and a $2\times3$ matrix $A_{p}$ that respectively encapsulate the particle’s position and orientation, and the evaluation of $V⁢(A_{p}⁢j)$ is achieved through linear interpolation.
 
-For our pseudo-subtomogram approach, we now approximate the sum over 2D pixels j and tilt images f in Equation 4 by a sum over 3D voxels k in the pseudo-subtomogram:(7)−log⁡(P(X|ϕ))∝∑k|Dkp−WkpV(Rpk)|2Mpσk2.
+In tomography, our aim is to approximate that same likelihood on tilt-series data. The equivalent is a sum over the pixels of the relevant regions of all images $f$ from the tilt series:
 
-Here, the data term Dp, the weight term Wp, and the multiplicity term Mp are 3D arrays in the Fourier domain. Together, they constitute a pseudo-subtomogram. They are constructed as follows:(8)Dkp=∑f,jl(Apfj−k)CTFfp(j)Xfjp(9)Wkp=∑f,jl(Apfj−k)|CTFfp(j)|2(10)Mkp=∑f,jl(Apfj−k),
+$$
+−log⁡(P(X^{p}|ϕ))∝\sumf,j\frac{|X_{fj}^{p}−CTF_{f}^{p}(j)V_{fj}^{(p)}|^{2}}{\sigma_{j}^{2}}.
+$$
 
-where l⁢(⋅) represents linear interpolation with forward mapping, that is, each 2D Fourier pixel j is projected into 3D Fourier space, updating the eight closest voxels.
+We model the shifts and rotations as compositions of per-particle and per-image components:
 
-Ignoring the difference of pre-multiplying the images with their CTFs, Equation 7 aims to be equivalent of Equation 4. The variance σk2 is equivalent to σj2, the power of the noise in the individual Fourier components in the 2D images.
+$$
+t_{pf}=A_{f}^{⊺}T_{pf}+t_{f}
+$$
 
-We then optimise Equation 1 by expectation-maximisation (Dempster et al., 1977), using Equation 7 to construct the likelihood function and using a prior P⁢(Θ)∝exp⁢∑k|Vk|2-2⁢τk2, based on the expected frequency-dependent power of the signal τk2. This leads to the following iterative algorithm:(11)Vk(n+1)=∑pD(Rp⊺k)/σk2(n+1)∑pW(Rp⊺k)/σk2(n+1)+1/τk2(n+1)(12)σk2(n+1)=∑p∑k∈Sk|Dk−WkV(Rpk)|22∑p∑k∈SkMk,(13)τk2(n+1)=|Vk|22∑p∑k∈SkWk∑p∑k∈SkMk
 
-where (n) denotes the iteration; the divisions by τk2 and σk2 in Equation 11 are evaluated element-wise; and τk2 and σk2 are calculated by averaging over τk2 and σk2, respectively, in hollow spheres of radius k and thickness 1, described by Sk. The ratio of the terms containing Wk and Mk in Equation 13 corrects the estimate for the power of the signal from the CTF-corrected map V by the average CTF2 to account for the fact that the likelihood in Equation 7 was calculated for CTF pre-multiplied images.
 
-## Pre-oriented priors
+$$
+A_{pf}=R_{p}A_{f},
+$$
 
-Many proteins are organised in imperfect 2D arrays inside the tomograms, for example, inside membranes or as part of capsid-like structures. Often, the individual protein molecules inside these arrays exhibit limited rotational freedom with respect to the surface normal of the array, although they may be able to rotate freely around that normal. This knowledge is often exploited in subtomogram averaging approaches through local orientational searches, for example, see Förster et al., 2005. This not only accelerates the refinement, as fewer orientations need to be evaluated, it also makes it possible to solve more challenging structures because fewer solutions are allowed. In RELION, local orientational searches are implemented as Gaussian priors on the Cartesian translations and on the three Euler angles that describe rotations (Scheres, 2012). One advantage of using pseudo-subtomogram alignment is that the coordinate system of the pseudo-subtomograms themselves can be chosen arbitrarily. By default, pseudo-subtomograms are created in the same orientation as the tomogram, but the user can choose to orient them in a more meaningful way. For example, by constructing the pseudo-subtomograms with their Z-axis parallel to the 2D array, using a rotational prior of approximately 90° on the tilt angle will limit the amount of rocking of the particles inside the array, while avoiding singularities in the definition of the Euler angles that occur when the tilt angle is close to 0°.
+where we keep the per-particle rotation component, $R_{p}$, identical for all images in the tilt series, and only vary $A_{f}$, the rotational alignment of the tilt-series images. In turn, the tilt-series alignment $A_{f}$ is shared among all particles in a given tilt image. The per-particle part of the translation is modelled as a 3D vector, $T_{p⁢f}\inℝ^{3}$, that can vary over different tilt images $f$. This contrasts with single-particle analysis, where beam-induced motion of the particle can be corrected for as a preprocessing step (Li et al., 2013; Scheres, 2014; Zheng et al., 2017; Zivanov et al., 2019), so that each particle is associated with a single 2D translation in a motion-corrected image.
 
-## Tilt-series refinement
+For our pseudo-subtomogram approach, we now approximate the sum over 2D pixels $j$ and tilt images $f$ in Equation 4 by a sum over 3D voxels $k$ in the pseudo-subtomogram:
 
-Averaging over multiple particles leads to an increased signal-to-noise ratio in the estimated density map V. We also implemented procedures that exploit V for subsequent re-estimation of parameters that describe the tilt series. These procedures do not require pseudo-subtomograms, but are performed by comparing projections of the density maps directly with the (Fourier) pixels of 2D boxes that are extracted from the tilt-series images, with a sufficient size to hold the CTF-delocalised signal. The various tilt-series parameters are then estimated by minimising the negative log-likelihood as defined in Equation 4, that is, the sum over noise-weighted square differences between the prediction and the observation.
+$$
+−log⁡(P(X|ϕ))∝\sumk\frac{|D_{k}^{p}−W_{k}^{p}V(R_{p}k)|^{2}}{M^{p}\sigma_{k}^{2}}.
+$$
+
+Here, the data term $D^{p}$, the weight term $W^{p}$, and the multiplicity term $M^{p}$ are 3D arrays in the Fourier domain. Together, they constitute a pseudo-subtomogram. They are constructed as follows:
+
+$$
+D_{k}^{p}=\sumf,jl(A_{pf}j−k)CTF_{f}^{p}(j)X_{fj}^{p}
+$$
+
+
+
+$$
+W_{k}^{p}=\sumf,jl(A_{pf}j−k)|CTF_{f}^{p}(j)|^{2}
+$$
+
+
+
+$$
+M_{k}^{p}=\sumf,jl(A_{pf}j−k),
+$$
+
+where $l⁢(⋅)$ represents linear interpolation with forward mapping, that is, each 2D Fourier pixel $j$ is projected into 3D Fourier space, updating the eight closest voxels.
+
+Ignoring the difference of pre-multiplying the images with their CTFs, Equation 7 aims to be equivalent of Equation 4. The variance $\sigma_{k}^{2}$ is equivalent to $\sigma_{j}^{2}$, the power of the noise in the individual Fourier components in the 2D images.
+
+We then optimise Equation 1 by expectation-maximisation (Dempster et al., 1977), using Equation 7 to construct the likelihood function and using a prior $P⁢(Θ)∝exp⁢\sum_{k}\frac{|V_{k}|^{2}}{-2⁢\tau_{k}^{2}}$, based on the expected frequency-dependent power of the signal $\tau_{k}^{2}$. This leads to the following iterative algorithm:
+
+$$
+V_{k}^{(n+1)}=\frac{\sumpD(R_{p}^{⊺}k)/\sigma_{k}^{2}^{(n+1)}}{\sumpW(R_{p}^{⊺}k)/\sigma_{k}^{2}^{(n+1)}+1/\tau_{k}^{2}^{(n+1)}}
+$$
+
+
+
+$$
+\sigma_{k}^{2(n+1)}=\frac{\sump\sumk\inS_{k}|D_{k}−W_{k}V(R_{p}k)|^{2}}{2\sump\sumk\inS_{k}M_{k}},
+$$
+
+
+
+$$
+\tau_{k}^{2(n+1)}=\frac{|V_{k}|^{2}}{2}\frac{\sump\sumk\inS_{k}W_{k}}{\sump\sumk\inS_{k}M_{k}}
+$$
+
+where (n) denotes the iteration; the divisions by $\tau_{k}^{2}$ and $\sigma_{k}^{2}$ in Equation 11 are evaluated element-wise; and $\tau_{k}^{2}$ and $\sigma_{k}^{2}$ are calculated by averaging over $\tau_{k}^{2}$ and $\sigma_{k}^{2}$, respectively, in hollow spheres of radius $k$ and thickness 1, described by $S_{k}$. The ratio of the terms containing $W_{k}$ and $M_{k}$ in Equation 13 corrects the estimate for the power of the signal from the CTF-corrected map $V$ by the average CTF2 to account for the fact that the likelihood in Equation 7 was calculated for CTF pre-multiplied images.
+
+### Pre-oriented priors
+
+Many proteins are organised in imperfect 2D arrays inside the tomograms, for example, inside membranes or as part of capsid-like structures. Often, the individual protein molecules inside these arrays exhibit limited rotational freedom with respect to the surface normal of the array, although they may be able to rotate freely around that normal. This knowledge is often exploited in subtomogram averaging approaches through local orientational searches, for example, see Förster et al., 2005. This not only accelerates the refinement, as fewer orientations need to be evaluated, it also makes it possible to solve more challenging structures because fewer solutions are allowed. In RELION, local orientational searches are implemented as Gaussian priors on the Cartesian translations and on the three Euler angles that describe rotations (Scheres, 2012). One advantage of using pseudo-subtomogram alignment is that the coordinate system of the pseudo-subtomograms themselves can be chosen arbitrarily. By default, pseudo-subtomograms are created in the same orientation as the tomogram, but the user can choose to orient them in a more meaningful way. For example, by constructing the pseudo-subtomograms with their $Z$-axis parallel to the 2D array, using a rotational prior of approximately 90° on the tilt angle will limit the amount of rocking of the particles inside the array, while avoiding singularities in the definition of the Euler angles that occur when the tilt angle is close to 0°.
+
+### Tilt-series refinement
+
+Averaging over multiple particles leads to an increased signal-to-noise ratio in the estimated density map $V$. We also implemented procedures that exploit $V$ for subsequent re-estimation of parameters that describe the tilt series. These procedures do not require pseudo-subtomograms, but are performed by comparing projections of the density maps directly with the (Fourier) pixels of 2D boxes that are extracted from the tilt-series images, with a sufficient size to hold the CTF-delocalised signal. The various tilt-series parameters are then estimated by minimising the negative log-likelihood as defined in Equation 4, that is, the sum over noise-weighted square differences between the prediction and the observation.
 
 The tilt-series properties that can be refined fall into two broad categories: optical and geometrical. The optical refinement concerns the different parameters of the CTF, while the geometrical refinement aims to optimise the alignment of the tilt series, as well as the beam-induced motion of the individual particles. Both sets of algorithms are closely related to the corresponding single-particle algorithms in RELION: optical-aberration refinement (Zivanov et al., 2018; Zivanov et al., 2020) and Bayesian polishing (Zivanov et al., 2019), respectively. In spite of the similarity between the algorithms, the models that are optimised differ significantly from single-particle analysis. Details of the implementation of the optical and geometrical refinement algorithms are given in Appendix 1. We also note that Bayesian polishing in SPA describes particle motions between individual movie frames. Although our approach for tomography can also consider movie frames, the current implementation uses the same regularisation of particle motions between movie frames within each tilt image as between the movie frames from other tilt images. Because preliminary tests showed limited benefits in considering the movie frames in this manner, only the functionality to model particle motions between the tilt-series images was exposed on the GUI.
 
@@ -96,21 +158,45 @@ The geometric alignment includes both (rigid) rotational and translational re-al
 
 We tested our approach on three test cases. Appendix 2—table 1 provides experimental details for each of the data sets; Appendix 2—table 2 provides details on the image processing.
 
-## HIV-1 immature capsid
+### HIV-1 immature capsid
 
 We tested the workflow above on the cryo-ET data set that was used to determine the structure of the immature capsid lattice and spacer peptide 1 (CA-SP1) regions of the Gag polyprotein from human immunodeficiency virus 1 (HIV-1) (Schur et al., 2016) (EMPIAR-10164). We used the same subset of five tomograms that were also used to assess the NovaCTF (Turoňová et al., 2017), emClarity (Himes and Zhang, 2018), and Warp (Tegunov and Cramer, 2019) programs. Introducing 3D CTF correction, and using the alignment parameters from the original analysis by Schur et al., NovaCTF reported a resolution of 3.9 Å (Turoňová et al., 2017). The Warp program introduced local and global motion correction in the tilt-series images, as well as optimisation of CTF parameters. The combination of Warp and subtomogram alignment and averaging in RELION-3 led to a resolution of 3.8 Å. A recent application of emClarity led to a reconstruction to 3.3 Å resolution (Ni et al., 2022).
 
 We used tilt-series projections after movie frame alignment from the original analysis (Schur et al., 2016), without any other preprocessing step, along with the tilt-series alignment data, performed with IMOD package (Kremer et al., 1996), and CTF parameters estimation using CTFFIND4 (Rohou and Grigorieff, 2015). We used 12,910 particles from the five tomograms subset, reconstructed an initial reference map using the original published particle alignment, and filtered it to 5 Å. A first alignment in 3D auto-refine, followed by averaging of the initial pseudo-subtomograms, led to a resolution of 3.6 Å. This average was then used for a full cycle of pseudo-subtomogram improvement and realignment. We first applied CTF refinement to optimise the defoci of all particles. This improved the resolution only marginally. Subsequent optimisation of the tilt-series geometry, including modelling local particle motion, improved the resolution to 3.5 Å. Finally, realignment of newly generated pseudo-subtomograms led to a resolution of 3.4 Å. A second cycle of these three steps provided 3.3 Å, while a third cycle converged to 3.2 Å (Figure 1a). Geometrical refinement was performed estimating local particle motion. The consideration of deformations did not show additional improvement. In the first cycle, where improvements in both CTFs and geometry are most obvious, the order of applying those optimisations did not alter the final result for this data set. These data and results are also distributed as part of the subtomogram tutorial in RELION-4.0, as described on https://relion.readthedocs.io/en/release-4.0/. Figure 1—figure supplement 1 shows the improvement in map quality during the iterative refinement process; Figure 1—figure supplement 2 shows a comparison with the 3.3 Å map from emClarity.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig1-v3.jpg)
+
+**Figure 1.:** (a) Fourier Shell Correlation (FSC) for resolution estimation of iteratively improved reconstructions using the new RELION-4.0 workflow. (b) Representative region of reconstructed density in the final map. (c) The same density as in (b), together with the published atomic model 5L93, which has not been additionally refined in the density.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Representative region of reconstructed densities at several stages of the iterative refinement process. The four panels on the left show the four stages with the same labels as in Figure 1a; the fifth panel shows the same region from the final map that was calculated from all 43 tomograms.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) FSC for the RELION-4.0 map, which used 12,910 particles from the five tomogram subset (blue); the reported FSC for emClarity, which used 15,460 particles from the five tomogram subset (orange); and the FSC calculated from the deposited half-maps of emClarity, using the same mask as used for the RELION-4.0 FSC curve (yellow). (b) Representative region of the map calculated by RELION-4.0 from the five tomogram subset. (c) The same region of the map calculated by emClarity.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (a) FSC for the RELION-4.0 map, which used 144,275 particles from the full 43 tomogram data set (blue); the reported FSC for M/RELION-3.1, which used 130,658 particles from the full 43 tomogram data set (orange); and the FSC calculated from the deposited half-maps of M, using the same mask as used for the RELION-4.0 FSC curve (yellow). (b) Representative region of the map calculated by RELION-4.0 from the full 43 tomogram data set. (c) The same region of the map calculated by M/RELION-3.1.
+
 Analysis of the complete data set generated a structure at 3.0 Å resolution (Figure 1—figure supplement 1), which is the same resolution obtained using the M and RELION-3 workflow (Tegunov et al., 2021; Figure 1—figure supplement 3), and is likely limited by flexibility and asymmetry in the CA hexamer.
 
-## Caulobacter crescentus S-layer
+### Caulobacter crescentus S-layer
 
 We also applied our approach to thin cellular appendages of C. crescentus bacteria known as stalks, which have previously been imaged using cryo-ET (Bharat et al., 2017). The cell body and cell stalks of C. crescentus cells are covered by a nearly hexagonal, paracrystalline array known as the surface layer (S-layer) (Smit et al., 1992). The structure of the S-layer was solved using a combination of X-ray crystallography, cryo-EM single-particle analysis, and subtomogram averaging, revealing how the S-layer is attached to bacterial cells by an abundant glycolipid called lipopolysaccharide (LPS) (Bharat et al., 2017; von Kügelgen et al., 2020). Previously, cryo-ET of the S-layer, using 110 tilt series collected with a dose-symmetric scheme, yielded 51,866 hexamers of the S-layer. This study used a subtomogram averaging approach that is based on a constrained cross-correlation approach implemented in the AV3 MATLAB suite (Förster and Hegerl, 2007), and which was specifically optimised for the analysis of macromolecules arranged in a lattice (Wan et al., 2017). A 7.4 Å reconstruction of the S-layer was obtained, in which alpha-helices were resolved (Bharat et al., 2017). This reconstruction was improved by application of NovaCTF (Turoňová et al., 2017), leading to a 4.8 Å reconstruction, in which large amino acid residue side chains were resolved (von Kügelgen et al., 2020). Moreover, density for an LPS molecule was observed near the putative LPS-binding residues of the S-layer, in agreement with a cryo-EM single-particle structure of an in vitro reconstituted coplex (von Kügelgen et al., 2020). We used the tilt series after movie frame alignment from the initial analysis (Bharat et al., 2017), along with the tilt-series alignments performed within IMOD (Kremer et al., 1996), CTF parameters from CTFFIND4 (Rohou and Grigorieff, 2015), and the Euler angle assignments and subtomogram coordinates from the original analysis. These parameters were imported into RELION-4.0, followed by multiple cycles of pseudo-subtomogram generation and refinement, analogous to the immature HIV-1 data set described above, leading to a 5.6 Å reconstruction of the S-layer hexamer (Figure 2a). Next, we defined a mask around the central pore of the S-layer, corresponding to the inner domain bound to LPS, to perform focused refinements. Another cycle of pseudo-subtomogram reconstruction, CTF refinement, and refinement within the new mask improved the resolution to 4.4 Å. Accounting for per-particle motions with additional cycles of pseudo-subtomogram improvements and refinements increased the resolution of the central pore to 4.0 Å, and the inner domain of the S-layer to 3.7 Å. Further 3D classification without alignments identified a subset of 42,990 subtomograms that gave a 3.5 Å resolution reconstruction of the inner S-layer.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig2-v3.jpg)
+
+**Figure 2.:** (a) FSC for resolution estimation of iteratively improved reconstructions using the new RELION-4.0 workflow, tested on the S-layer inner domain. (b) Densities for the previously identified lipopolysaccharide (LPS) (cyan and orange) and Ca2+ ions (green) in prior electron cryo-microscopy (cryo-EM) single-particle analyses are resolved. (c, d) The final map shows two densities for bound LPS O-antigen chains. Panel (c) shows only the S-layer protein as blue ribbon and (d) shows LPS O-antigen as orange and cyan sugars corresponding to the N-acetyl-perosamine and mannose moieties, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83724/elife-83724-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Bottom view of STA map of C. crescentus RsaA with lipopolysaccharide (LPS) O-antigen binding site as orange and cyan sugars corresponding to the N-acetyl-perosamine and mannose moieties, respectively, at a threshold of 9 σ. (b) Same view of the SPA map (EMD-10389) with no second LPS O-antigen. (c) FSC between the original refined model (PDB-ID: 6T72) and the SPA map (blue), as well as the same model after a rigid body fit (orange solid line) and refinement with a 4 Å resolution cut-off (orange dashed line) into the STA map. (d) Overlay of the refined model in the STA map (orange) and the original model (light blue, PDB-ID: 6T72) with an overall RMSD of 0.62 Å.
+
 The 3.5 Å map is in excellent agreement with the single-particle structure of the in vitro reconstituted complex, including the LPS binding site (von Kügelgen et al., 2020; see Figure 2—figure supplement 1). Furthermore, divalent metal ions, known to be tightly bound to the inner S-layer (Matthew, 2021), are resolved (Figure 2b). Surprisingly, at lower isosurface contour levels, we also observed a second LPS binding site (Figure 2c and d). The size and shape of this density agree with the structure of the LPS O-antigen, illustrating how improved subtomogram averaging in RELION-4.0 can help uncover new biology.
 
-## Coat protein complex II
+### Coat protein complex II
 
 Finally, we applied our approach to the Saccharomyces cerevisiae coat protein complex II (COPII), which mediates the transport of newly synthesised proteins from the endoplasmic reticulum (ER) to the Golgi apparatus as part of the secretory pathway. COPII is formed by five proteins that assemble sequentially on the ER membrane to induce remodelling of the bilayer into coated carriers in a process known as COPII budding, while simultaneously selectively recruiting cargo into these budding membrane carriers. COPII budding can be reconstituted in vitro from purified proteins and artificial membranes, to form small, spherical vesicles, or long, straight tubes. Cryo-ET has previously been used to visualise the architecture of COPII on reconstituted tubules (Hutchings et al., 2018; Hutchings et al., 2021). The coat assembles into two concentric layers; the inner layer forms a pseudo helical lattice, which has previously been solved to 4.6 Å resolution using Dynamo-based subtomogram averaging protocols (Castaño-Díez et al., 2012).
 

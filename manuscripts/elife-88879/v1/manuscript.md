@@ -18,16 +18,16 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 Department of Gastroenterology and Hepatology, Sichuan University-University of Oxford Huaxi Joint Centre for Gastrointestinal Cancer, West China Hospital, Sichuan University Chengdu China
-2. https://ror.org/052gg0110 Nuffield Division of Clinical Laboratory Sciences, Radcliffe Department of Medicine, University of Oxford Oxford United Kingdom
-3. https://ror.org/05n0qbd70 College of Acupuncture and Moxibustion, Fujian University of Traditional Chinese Medicine Fuzhou China
-4. https://ror.org/00pcrz470 TCM Regulating Metabolic Diseases Key Laboratory of Sichuan Province, Hospital of Chengdu University of Traditional Chinese Medicine Chengdu China
+1. Department of Gastroenterology and Hepatology, Sichuan University-University of Oxford Huaxi Joint Centre for Gastrointestinal Cancer, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+2. Nuffield Division of Clinical Laboratory Sciences, Radcliffe Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. College of Acupuncture and Moxibustion, Fujian University of Traditional Chinese Medicine Fuzhou China ([ROR:05n0qbd70](https://ror.org/05n0qbd70))
+4. TCM Regulating Metabolic Diseases Key Laboratory of Sichuan Province, Hospital of Chengdu University of Traditional Chinese Medicine Chengdu China ([ROR:00pcrz470](https://ror.org/00pcrz470))
 
 † Corresponding author
 
 ## Abstract
 
-Bestrophin isoform 4 ( BEST4 ) is a newly identified subtype of the calcium-activated chloride channel family. Analysis of colonic epithelial cell diversity by single-cell RNA-sequencing has revealed the existence of a cluster of BEST4 + mature colonocytes in humans. However, if the role of BEST4 is involved in regulating tumour progression remains largely unknown. In this study, we demonstrate that BEST4 overexpression attenuates cell proliferation, colony formation, and mobility in colorectal cancer (CRC) in vitro, and impedes the tumour growth and the liver metastasis in vivo. BEST4 is co-expressed with hairy/enhancer of split 4 ( HES4 ) in the nucleus of cells, and HES4 signals BEST4 by interacting with the upstream region of the BEST4 promoter. BEST4 is epistatic to HES4 and downregulates TWIST1, thereby inhibiting epithelial-to-mesenchymal transition (EMT) in CRC. Conversely, knockout of BEST4 using CRISPR/Cas9 in CRC cells revitalises tumour growth and induces EMT. Furthermore, the low level of the BEST4 mRNA is correlated with advanced and the worse prognosis, suggesting its potential role involving CRC progression.
+Bestrophin isoform 4 (BEST4) is a newly identified subtype of the calcium-activated chloride channel family. Analysis of colonic epithelial cell diversity by single-cell RNA-sequencing has revealed the existence of a cluster of BEST4+ mature colonocytes in humans. However, if the role of BEST4 is involved in regulating tumour progression remains largely unknown. In this study, we demonstrate that BEST4 overexpression attenuates cell proliferation, colony formation, and mobility in colorectal cancer (CRC) in vitro, and impedes the tumour growth and the liver metastasis in vivo. BEST4 is co-expressed with hairy/enhancer of split 4 (HES4) in the nucleus of cells, and HES4 signals BEST4 by interacting with the upstream region of the BEST4 promoter. BEST4 is epistatic to HES4 and downregulates TWIST1, thereby inhibiting epithelial-to-mesenchymal transition (EMT) in CRC. Conversely, knockout of BEST4 using CRISPR/Cas9 in CRC cells revitalises tumour growth and induces EMT. Furthermore, the low level of the BEST4 mRNA is correlated with advanced and the worse prognosis, suggesting its potential role involving CRC progression.
 
 ## Introduction
 
@@ -41,9 +41,17 @@ The objectives of the present study are as follows: (1) to establish the role of
 
 ## Results
 
-## BEST4 inhibits CRC proliferation, clonogenesis, migration, and invasion in vitro
+### BEST4 inhibits CRC proliferation, clonogenesis, migration, and invasion in vitro
 
 To evaluate the effect of BEST4 on tumour growth, we constructed BEST4-expressing HCT116 and Caco2 CRC cell lines (Figure 1—figure supplement 1) and showed that BEST4 overexpression halved cell proliferating rates of their respective empty vector (EV) controls when they were monitored in live and analysed using InCucyte (Figure 1A and B). This was accompanied by decreased cell viability (Figure 1—figure supplement 1). To determine the causal role of BEST4 in CRC tumourigenesis, we knocked out the BEST4 in HCT-15 using a CRISPR/Cas9 system (Figure 1—figure supplement 1). Consequently, there was a 50% increase in proliferation rates and viability compared with the parental control (Figure 1C and D; Figure 1—figure supplement 1). Rescued expression of BEST4 was able to reverse the observed effects on HCT-15 (Figure 1D; Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig1-v1.jpg)
+
+**Figure 1.:** Overexpression of BEST4 decreased proliferation of HCT 116 (A) and Caco2 (B) cells as determined by the IncuCyte confluence assay. (C) Viability of three individual BEST4-deleted clones as determined by a CCK-8 assay. (D) BEST4 deletion significantly enhanced cell viability compared with cells transduced with empty vector (EV)-gRNA control; the reintroduction of BEST4 resulted in suppressed cell growth as determined by IncuCyte confluence analysis. (E) Expression of BEST4-HA in HCT116 and Caco2 cells resulted in more colonies than cells transduced with EV plasmids (left panel); colonies were counted and analysed as shown (right panel). (F) A colony formation assay was performed to evaluate the responses of HCT-15 cells following BEST4 deletion and reintroduction (left panel); cell colonies were counted and analysed as shown (right panel). (G) Heterologous expression of BEST4 in HCT116 cells suppressed invasion and migration (upper panel, scale bar, 200 μm); cells that passed through the membrane were counted and compared (lower panel). (H) BEST4 deletion in HCT-15 cells promoted invasion, whereas reintroduction of BEST4 expression resulted in the inhibition of HCT-15 cell invasion and migration (upper panel, scale bar, 200 μm). Cells that passed through the membrane were counted and compared (lower panel). Data shown are the result of at least three independent experiments, with the mean ± SEM; *p<0.05, **p<0.01 vs EV or wild-type (WT).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Hemagglutinin (HA) protein expression in BEST4-HA-transfected GFP+ HCT116 individual clonal lines. (B) HA protein expression in BEST4-HA-transfected GFP+ Caco2 individual clonal lines. (C) BEST4 mRNA and HA protein expression was detected by real-time PCR and western blotting. (D) Cell viability in BEST4-HA- and EV-transfected HCT116 cells was measured by the CCK-8 assay. (E) Cell viability in BEST4-HA- and EV-transfected Caco2 cells was measured by the CCK-8 assay. (F) DNA sequencing results revealed an excision of a 44 bp genomic fragment in exon 3 of the BEST4-knockout lines. (G) DNA fragmentation from each sample was analysed by agarose gel electrophoresis. (H) The protein level of BEST4 was determined by western blotting. (H) Cell proliferation measured by CCK-8 assay showed that knockout of BEST4 obviously promoted cell growth; however, rescue of BEST4 expression in the knockout cells significantly abrogated the promotive effect of BEST4 knockout on cell growth. *p<0.05, **p<0.01. All the data come from three independent experiments and are presented as the mean ± standard deviation.
 
 In contrast to the controls, BEST4 overexpression decreased colony formations of HCT116 and Caco2 by 60% and 70%, respectively (Figure 1E). While BEST4 deletion increased the number of colonies by fivefold in HCT-15 (Figure 1F), the rescued expression counteracted its enhancement (Figure 1F).
 
@@ -51,9 +59,17 @@ Furthermore, overexpression of BEST4 in HCT116 inhibited transwell migration and
 
 Collectively, these findings suggest the functional inhibitory effects of BEST4 on CRC development in vitro.
 
-## BEST4 deters EMT in CRC in vitro and in vivo
+### BEST4 deters EMT in CRC in vitro and in vivo
 
 Because EMT initiation is a critical process in tumour progression (Acloque et al., 2009), we evaluated the effect of BEST4 on EMT using quantitative polymerase chain reaction (qPCR) and found that BEST4 expression upregulated CDH1 and TJP1 and downregulated VIM and TWIST1 in HCT116 compared with the control (p<0.05) (Figure 2A). Conversely, knockout of BEST4 in HCT15 downregulated CDH1 and TJP1 and upregulated VIM and TWIST1. Rescued expression of BEST4 in HCT-15 reversed these gene alterations (Figure 2B). Changes of these genes were consistent with their corresponding protein expression as analysed by immunoblotting (Figure 2C and D; Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig2-v1.jpg)
+
+**Figure 2.:** (A) Expression of mRNAs encoding EMT-related genes as determined by quantitative polymerase chain reaction (qPCR) in HCT116 cells transfected with BEST4-HA or empty vector (EV). (B) As determined by qPCR, the expression of mRNAs encoding EMT markers in BEST4-deleted and BEST4-restored HCT-15 cells. (C) Protein expression of EMT-related genes was evaluated by western blotting of lysates of HCT116 cells transfected with BEST4-HA or EV. (D) Western blotting determined the levels of immunoreactive EMT markers in BEST4-deleted and BEST4-restored HCT-15 cells. (E) Growth of xenograft tumours in BALB/c nude mice resulting from the injection of HCT116 cells stably transduced with BEST4-HA was significantly diminished compared with those resulting from HCT116 cells transduced with EV alone (eight mice per group). (F) The histogram represents the mean weights of tumours isolated from the HCT116-BEST4-HA and HCT116-EV groups. (G) Tumours from the HCT116-BEST4-HA and HCT116-EV groups were sectioned and subjected to immunohistochemical staining to detect HA and human Ki67; scale bar = 50 μm. (H) Mean percentage of Ki67-positive staining in each group. (I) Representative western blot documenting protein levels of EMT markers in individual HCT116-BEST4 and HCT116-EV xenograft tumours. *p<0.05, **p<0.01. Data from at least three independent experiments are presented as the mean ± SEM. (J–L) Intrasplenical injections of HCT-15 cell lines with EV-gRNA control, BEST4-gRNA, or BEST4-Rescued (n=3 per group). After 28 days, the animals were sacrificed and numbers of metastatic nodules in the liver were counted, and the liver tissues were fixed for sectioning and H&E staining; T, tumour. Data are presented as the mean ± SEM. **p<0.01 vs EV-gRNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Each band’s mean pixel intensities were determined and normalised to mean β-actin pixel intensity. *p<0.05, **p<0.01. Data from at least three independent experiments are presented as the mean ± SEM.
 
 Next, we subcutaneously implanted BEST4-HA-expressing HCT116 and EV control cell lines into BALB/c nude mice and monitored tumour growth weekly. When they reached the maximum allowable volumes (day 32), the animals were culled, and tumours were harvested. Essentially, the sizes and weights of tumours in BEST4 overexpression group were only half of the EV control (Figure 2E and F), in conjunction with the similar magnitude reduction of Ki67+ cells as analysed by immunohistochemistry (Figure 2G and H). Further analysis of the HCT116 tumour tissue lysates showed that BEST4 deterred EMT by upregulating E-cadherin, and downregulating VIM and TWIST1 (Figure 2I; Figure 2—figure supplement 1D).
 
@@ -61,9 +77,17 @@ We also evaluated the inhibitory role of BEST4 in a model of CRC to the liver me
 
 These findings indicate the role of BEST4 in suppressing CRC growth, through counteracting EMT induction in models of in vitro and in vivo.
 
-## HES4 upstream regulation of BEST4
+### HES4 upstream regulation of BEST4
 
 Given the co-expression of BEST4+ and HES4+ in a human colonic epithelial lineage (Parikh et al., 2019), we sought to investigate their biological interactions during tumour growth. The human CRC cell line, HCT116, was chosen for HES4 overexpression due to its relatively lower expression of HES4 compared to other CRC cell lines. Similarly, the LS174T cell line derived from human CRC was selected for HES4 knockdown because it exhibited comparatively higher expression of HES4 in comparison to other CRC cell lines (Figure 3—figure supplement 1A). Upon transfecting the Flag-HES4 plasmid DNA into HCT116, we observed a responsive upregulation of both endogenous BEST4 mRNA and protein levels compared to the control transfectant (Figure 3A; Figure 3—figure supplement 1B and C). This intrinsic association was further supported by knocking down the endogenous HES4 with two pairs of short hairpin RNAs (shRNAs) in LST174 that resulted in downregulation of endogenous BEST4 (Figure 3B; Figure 3—figure supplement 1D and E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig3-v1.jpg)
+
+**Figure 3.:** (A) Endogenous BEST4 mRNA and protein levels in HES4-overexpressing HCT116 cells were detected by quantitative polymerase chain reaction (qPCR) and western blotting, respectively. (B) Endogenous BEST4 mRNA and protein levels in LS174T cells after short hairpin RNA (shRNA)-mediated HES4 knockdown as detected by qPCR and western blotting, respectively. (C) Detection of BEST4 promoter activity in HES4-overexpressing HCT116 cells using a dual-luciferase reporter assay. (D) As determined by chromatin immunoprecipitation (ChIP)-qPCR, fold-enrichment of the BEST4 promoter region in Flag-ChIP samples from HES4-overexpressing HCT116 cells. Data were normalised using a fold-enrichment method (i.e. ChIP signals divided by control IgG signals). The DHFR 5' UTR was used as a negative control (upper panel). The primer sets that target the BEST4 promoter in the ChIP-qPCR assays are as illustrated; +1 marks the transcriptional start site of BEST4, and P1, P2, P3, and P4 represent primer locations (lower panels). (E) Immunofluorescence staining documents the colocalisation of BEST4 (green) and HES4 (red) in HCT116 cells based on detection of their specific tags; scale bar, 20 μM. (F) Co-immunoprecipitation of nuclear extracts with specifically tagged BEST4 and HES4 as determined by immunoblotting. Lamin B1 served as a nuclear protein control. (G) Detection of BEST4 promoter activity in HES4-overexpressing HCT116 cells after BEST4 knockdown through a dual-luciferase reporter assay. Data shown are the result of at least three independent experiments, with the mean ± SEM; *p<0.05, **p<0.01 vs empty vector (EV).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) HES4 mRNA level in each colorectal cancer (CRC) cell line. (B) Western blot for BEST4 expression of Figure 3A is quantified by ImageJ, each band’s mean pixel intensities were determined and normalised to mean β-actin pixel intensity. (C) HES4 mRNA and protein levels in HCT116 cells with HES4 overexpression by Flag-HES4 transfection were examined by real-time PCR and western blot. (D) Western blot for BEST4 expression of Figure 3B is quantified by ImageJ, each band’s mean pixel intensities were determined and normalised to mean β-actin pixel intensity. (E) HES4 mRNA and protein levels in LS174T cells with HES4 knockdown by short hairpin RNA (shRNA) transfection were examined by real-time PCR and western blot. (F) No significant change of HES4 mRNA levels in BEST4 overexpression HCT116 cells as detected by real-time PCR. *p<0.05, **p<0.01. All the data come from three independent experiments and are presented as the mean ± SEM. SRC, scramble siRNA.
 
 To explore how HES4 regulates BEST4 expression at the transcriptional level, we transfected a BEST4 promoter-driven luciferase DNA construct into HES4-expressing HCT116 and assessed the promoter activity using a dual-luciferase assay. Our results showed a fourfold increase in the promoter activity compared to the EV control (Figure 3C), Furthermore, chromatin immunoprecipitation-quantitative PCR (ChIP-qPCR) analysis using a Flag antibody to IP for HES4 revealed a 12-fold enrichment of the P3 region upstream of the BEST4 transcriptional start site compared to the control (Figure 3D). Interestingly, BEST4 overexpression in HCT116 cells did not affect HES4 mRNA expression as quantified by qPCR (Figure 3—figure supplement 1F), suggesting that HES4 regulates BEST4 expression upstream. This speculation is supported by immunofluorescence staining, where we observed nuclear colocalisation of BEST4 (green) and HES4 (red) in HCT116 cells co-transfected with BEST4-HA and Flag-HES4 plasmid DNAs, along with additional cytoplasmic expression of BEST4 (Figure 3E).
 
@@ -71,9 +95,21 @@ To evaluate the association of BEST4 with HES4 at the translational level, we co
 
 Collectively, these findings indicate that BEST4 interacts with HES4 at both transcriptional and translational levels.
 
-## BEST4 relays HES4 signal and downregulates TWIST1 leading to EMT inhibition independent of the channel function in CRC
+### BEST4 relays HES4 signal and downregulates TWIST1 leading to EMT inhibition independent of the channel function in CRC
 
 Because a step of HES4 in committing to human bone marrow stromal/stem cell lineage-specific development is mediated by TWIST1 downregulation (Cakouros et al., 2015), with evidence of direct interaction between BEST4 and HES4 observed in HCT116, it is plausible that they could exploit TWIST1 to regulate EMT. To test this notion, we transfected a TWIST1 promoter-driven luciferase DNA construct into HCT116. In comparison with the EV control, Flag-HES4 or BEST4-HA transfectants significantly decreased TWIST1 promoter activity by almost half, as evaluated by the dual-luciferase assay (Figure 4A). Essentially, the BEST4 transfectant enhanced inhibition of the TWIST1 promoter by 70% in HES4-expressing HCT116 (Figure 4B; Figure 4—figure supplement 1A), hence suggesting that BEST4 mediates the inhibition of the TWIST1 promoter activity by HES4. This effect was also observed when endogenous HES4 was knocked down using shRNAs in HCT116 cells transfected with BEST4-HA plasmid DNA (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig4-v1.jpg)
+
+**Figure 4.:** (A) Detection of TWIST1 promoter activity in HES4-overexpressing or BEST4-overexpressing HCT116 cells through a dual-luciferase reporter assay. (B) Detection of TWIST1 promoter activity in HES4-overexpressing HCT116 cells after BEST4 knockdown through a dual-luciferase reporter assay. (C) Detection of TWIST1 promoter activity in HCT116 cells after short hairpin RNA (shRNA)-mediated HES4 knockdown and combination with BEST4-overexpressing using a dual-luciferase reporter assay. (D) Co-immunoprecipitation of nuclear extracts with specifically tagged BEST4 and TWIST1 as determined by immunoblotting. Lamin B1 served as a nuclear protein control. (E) Co-immunoprecipitation of nuclear extracts with specifically tagged HES4 and TWIST1 as determined by immunoblotting. Lamin B1 served as a nuclear protein control. (F) Expression of EMT markers in HES4-overexpressing HCT116 cells. (G) Expression of EMT markers in LS174T cells after shRNA-mediated HES4 knockdown. (H) Expression of EMT markers in HES4-overexpressing HCT116 cells after BEST4 knockdown. (I) Expression levels of EMT markers in BEST4-overexpressing LS174T cells after HES4 knockdown; SCR, scrambled siRNA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) BEST4 mRNA levels in HCT116 and LS174T cells transfected with BEST4-specific RNAs silencing (siRNAs) as detected by real-time polymerase chain reaction (PCR). (B) Co-immunoprecipitation of nuclear extracts with specifically tagged BEST4 and TWIST1 as determined by immunoblotting, Lamin B1 served as a nuclear protein control. (C) Co-immunoprecipitation of nuclear extracts with specifically tagged HES4 and TWIST1 as determined by immunoblotting, Lamin B1 served as a nuclear protein control. (D) VIM mRNA levels in HES4 overexpression HCT 116 cell lines as detected by real-time PCR. (E) VIM mRNA levels in HES4-overexpression HCT 116 cell lines after BEST4 knockdown as detected by real-time PCR. *p<0.05, **p<0.01. All the data were generated from three independent experiments and are presented as the mean ± SEM. SRC, scramble siRNA.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–D) Each band’s mean pixel intensities were determined and normalised to mean β-actin pixel intensity. *p<0.05, **p<0.01. Data from at least three independent experiments are presented as the mean ± SEM.
 
 The association of BEST4 with the TWIST1 promoter activity was also evidenced by their nuclear colocalisation after transfecting BEST4-HA and Myc-TWIST1 plasmid DNAs into HCT116 (Figure 4—figure supplement 1B). Co-immunoprecipitation (Co-IP) with antibodies to Myc or HA showed that they were copurified from the nuclear protein lysates, but not with the IgG controls from the transfectant cell lysates (Figure 4D; Figure 4—figure supplement 1B). Additionally, the knockdown of endogenous BEST4 in HES4-expressing HCT116 cells substantially decreased Flag-HES4 coprecipitation from the nuclear protein lysates, while Myc-TWIST1 expression remained constant, as determined by co-IP with antibodies to Flag or My (Figure 4E; Figure 4—figure supplement 1C).
 
@@ -83,15 +119,340 @@ To determine if BEST4 is downstream signal that relays HES4 to regulate TWIST1 e
 
 Given the physiological role of BEST4 plays in regulating chloride/calcium flux, we evaluated the channel functional effect on EMT induction. After respectively incubating BEST4-expresing HCT116 and the EV control with 300 μM DIDS (a broad blocker of chloride channel), or a gradient increase in doses of CaCCinh-A01 (a specific inhibitor of native CaCCs), or 1 μM ionomycin (a calcium ionophore to activate the chloride channel) as published previously (Liu et al., 2015), we showed that BEST4 significantly increased chloride/calcium fluxes and activated their exchanges and the expected inhibition by DIDS, CaCCinh-A01, or ionomycin (Figure 5—figure supplement 1C). Through immunoblotting analysis, we recapitulated that BEST4 simultaneously upregulated both TJP1 and E-cadherin, and downregulated TWIST1. Essentially, the levels of these proteins remained constantly expressed when the cells were treated with DIDS or CaCCinh-A01 or ionomycin, respectively (Figure 5—figure supplement 1F). Hence, these results suggest BEST4 protein-mediated EMT suppression is independent of its channel function in HCT116.
 
-## Correlation of the BEST4 with clinicopathology and outcomes of patients diagnosed with CRC
+### Correlation of the BEST4 with clinicopathology and outcomes of patients diagnosed with CRC
 
 We showed evidence of the endogenous BEST4 mRNA and protein expression in HCT116 and LS174T CRC cell lines (Figure 3A and B); these findings prompted us to explore the potential clinically significant BEST4 expression in CRC. Initially with high-throughput whole transcriptome sequencing analysis of five pairs of CRCs and adjacent normal tissues (ANTs), we identified several significantly downregulated genes in CRC compared to ANTs; BEST4 was in the top four (Figure 5A and B). Further validation by qPCR in the paired tissues of 50 colorectal adenomas and 124 CRC showed that the BEST4 was expressed significantly less in adenomas and tumours than in ANTs (Figure 5C and D). Immunoblotting analysis of tissue lysates from five paired randomly selected samples showed that BEST4 protein was downregulated in CRC (Figure 5E; Figure 5—figure supplement 1G). Using public datasets of The Cancer Genome Atlas (TCGA) and the Genotype-Tissue Expression (GTEx), we measured BEST4 mRNA expression in CRC and matched normal tissues with the online Gene Expression Profiling Interactive Analysis (GEPIA) tool (http://gepia.cancer-pku.cn/). As shown in Figure 6A the normal colorectal control tissues consistently expressed higher BEST4 than the CRC.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig5-v1.jpg)
+
+**Figure 5.:** (A) Heatmap based on the top 100 differentially expressed genes (downregulated and upregulated) in CRCs compared with ANTs. (B) Volcano plots of RNA-seq results showing all differentially expressed genes in CRC tissues compared with ANTs based on the fold-change (|FC|≥ 1) and p-value (p≤0.05). (C) Expression levels of BEST4 mRNA in 50 pairs of adenoma tissues compared with ANTs. (D) Expression levels of BEST4 mRNA in 124 pairs of CRC tissues compared with ANTs. (E) BEST4 protein levels in CRC and their matched counterparts were measured using western blotting. (F) Kaplan-Meier survival analysis according to BEST4 expression in 124 patients with CRC. The difference was statistically significant based on the log-rank test (p<0.01). (G) A working model delineates the mechanism by which BEST4 is transcriptionally activated by HES4 and suppressed epithelial-to-mesenchymal transition (EMT) through TWIST1 inhibition: (a) the expression of BEST4 is regulated by interactions of its upstream promoter region with HES4. BEST4 positively promotes the transcriptional activity of HES4 on BEST4 by physically binding to HES4 in a positive feedback loop. (b) The complex formed by BEST4 and HES4 interacts with TWIST1 and inhibits the promoter activity of TWIST1. HES4 alone is insufficient to inhibit TWIST1 promoter activity, and BEST4 is required. Inhibition of TWIST1 promoter activity by HES4 is BEST4-dependent. (c) The complex formed by BEST4 and HES4 destabilised TWIST1; the same effect caused by HES4 required BEST4 intermediation. The HES4-BEST4-TWIST1 axis counteracts EMT induction. *p<0.05, **p<0.01; CRC, colorectal cancer; ANT, adjacent normal tissue; T, tumour.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Incubation of HCT116 cell lines expressed BEST4 or empty vector (EV) with DIDS (300 μM), a gradient increased CaCCinh-A01 and ionomycin (1 μM), respectively, overnight. The levels of chloride efflux were determined by calculating relative fold to the EV control. Data are shown as means ± SEM, p<0.05 vs EV or DIDS, or CaCCinh-A01 or ionomycin, with three independent experiments. (D–F) Following the same treatment, cell lysates were prepared for immunoblotting with antibodies to BEST4, TJP1, E-cadherin, TWIST1, and β-actin. Representative of three independent experiments. (G) Western blot for BEST4 expression of Figure 5E is quantified by ImageJ, each band’s mean pixel intensities were determined and normalised to mean β-actin pixel intensity. *p<0.05, **p<0.01. Data from at least three independent experiments are presented as the mean ± SEM.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88879/elife-88879-fig6-v1.jpg)
 
 **Figure 6.:** (A) Correlation between BEST4 and CDH1 in normal and colorectal cancer (CRC) samples analysed from the The Cancer Genome Atlas (TCGA) and Genotype-Tissue Expression (GTEx) databases using the Gene Expression Profiling Interactive Analysis (GEPIA) tool (http://gepia.cancer-pku.cn/). (B) RNA-seq data revealed decreased expression of HES4 in CRC tissues compared with ANTs. (C) Heatmap of HES4 expression in CRC and ANTs. (D) The correlation between BEST4 and HES4, in CRC analysed from the TCGA and GTEx databases using GEPIA (http://gepia.cancer-pku.cn/). (E) Correlation between BEST4 and CDH1 in normal and CRC samples analysed from the TCGA and GTEx databases using the GEPIA tool (http://gepia.cancer-pku.cn/). (F) Correlation between BEST4 and VIMin normal and CRC samples. (G) Correlation between BEST4 and TWIST1 in normal and cancer colorectal samples. ANTs, adjacent normal tissues; COAD, colon adenocarcinoma; READ, rectum adenocarcinoma; other tumour abbreviations are available at GEPIA: http://gepia.cancer-pku.cn/.
 
 We further evaluated the clinicopathological significance of BEST4 expression in CRC patients by examining its correlation with gender, tumour-node-metastases stage, and lymph node metastasis based on the eighth edition of the American Joint Committee on Cancer Staging Manual (Amin, 2017). Interestingly, low BEST4 mRNA expression in males was twice as high as in females (p=0.022, Table 1). Accordingly, low BEST4 mRNA expression correlated with more advanced stages (p=0.02, Table 1) and lymph node metastasis (between 0 and 2) (p=0.032, Table 1). Patients with high BEST4 expression had better overall survival than those with low expression (p<0.01, Figure 5F), which was confirmed by univariate survival analysis showing a lower risk of death (p<0.001, Table 2). Multivariate Cox regression analysis indicated that low levels of BEST4 mRNA were associated with poor prognosis of CRC patients (hazard ratio [HR], 0.285; 95% confidence interval, 0.157–0.606; p<0.001; Table 2).
+
+**Table 1.**
+ Correlation of BEST4 mRNA level with clinicopathological factors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th rowspan="2">n</th>
+      <th colspan="2">BEST4 expression</th>
+      <th rowspan="2">p-Value</th>
+    </tr>
+    <tr>
+      <th>Low</th>
+      <th>High</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (year)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>&lt;60</td>
+      <td>58</td>
+      <td>30</td>
+      <td>28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥60</td>
+      <td>67</td>
+      <td>32</td>
+      <td>35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.022*</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>74</td>
+      <td>43</td>
+      <td>31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>51</td>
+      <td>19</td>
+      <td>32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tumour differentiation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.258</td>
+    </tr>
+    <tr>
+      <td>Poor</td>
+      <td>10</td>
+      <td>3</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Moderate</td>
+      <td>114</td>
+      <td>59</td>
+      <td>55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Well</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tumour stage (TNM)†</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>23</td>
+      <td>10</td>
+      <td>13</td>
+      <td>0.02*</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>50</td>
+      <td>18</td>
+      <td>32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>43</td>
+      <td>27</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>9</td>
+      <td>7</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymph node metastasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.032*</td>
+    </tr>
+    <tr>
+      <td>N0</td>
+      <td>75</td>
+      <td>30</td>
+      <td>45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N1</td>
+      <td>41</td>
+      <td>26</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>9</td>
+      <td>6</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Distant metastasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>116</td>
+      <td>55</td>
+      <td>61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Present</td>
+      <td>9</td>
+      <td>7</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>Colon</td>
+      <td>32</td>
+      <td>12</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rectum</td>
+      <td>93</td>
+      <td>50</td>
+      <td>43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEA level</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>63</td>
+      <td>27</td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>62</td>
+      <td>35</td>
+      <td>27</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistically significant.†Staging was performed according to the eighth edition of AJCC (Amin, 2017)._
+
+**Table 2.**
+ Univariate and multivariate analysis of prognostic factors for overall survival of patients with colorectal cancer (CRC).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable</th>
+      <th rowspan="2">Comparison</th>
+      <th rowspan="2">Univariate analysis, p (log-rank test)</th>
+      <th></th>
+      <th>Multivariateanalysis</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (year)</td>
+      <td>≥60 vs &lt;60</td>
+      <td>0.001*</td>
+      <td>2.713</td>
+      <td>1.524–4.810</td>
+      <td>0.001*</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>Female vs male</td>
+      <td>0.681</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Clinical stage</td>
+      <td>II, III, IV vs I</td>
+      <td>0.1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Tumour differentiation</td>
+      <td>Moderate, well vs poor</td>
+      <td>0.08</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Lymph node metastasis</td>
+      <td>N1, N2 vs N0</td>
+      <td>&lt;0.001*</td>
+      <td>2.190</td>
+      <td>1.291–3.717</td>
+      <td>0.004*</td>
+    </tr>
+    <tr>
+      <td>Distant metastasis</td>
+      <td>Present vs absent</td>
+      <td>&lt;0.001*</td>
+      <td>2.185</td>
+      <td>1.103–4.328</td>
+      <td>0.025*</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Rectum vs colon</td>
+      <td>0.22</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CEA level</td>
+      <td>High vs low</td>
+      <td>0.002*</td>
+      <td>1.697</td>
+      <td>0.953–2.960</td>
+      <td>0.073</td>
+    </tr>
+    <tr>
+      <td>BEST4 level</td>
+      <td>High vs low</td>
+      <td>&lt;0.001*</td>
+      <td>0.285</td>
+      <td>0.157–0.606</td>
+      <td>&lt;0.001*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistically significant.HR, hazard ratio; CI, confidence interval; NA, not applicable._
 
 After the significant reduction of the HES4 mRNA expression through RNA-sequencing analysis of our CRC patients (Figure 6B and C), we proceeded to investigate the connection between BEST4 and HES4 in TCGA and GTEx (http://gepia.cancer-pku.cn/). Our findings revealed a positive correlation between these genes (R=0.47, p<0.001) (Figure 6D), providing further evidence of their association in CRC. Furthermore, we conducted additional mining of TCGA or GTEx datasets using the GEPIA tool (http://gepia.cancer-pku.cn/) and observed a positive correlation between BEST4 and the CDH1 mRNA (R=0.77, p<0.001), with a negative correlation with VIM (R = –0.49, p<0.001) and TWIST1 mRNA (R = –0.39, p<0.001) (Figure 6E–G). These correlation analyses of RNA-sequencing data from our patients and publicly available datasets underscore the association of low BEST4 expression with worse outcomes in malignant CRC.
 
@@ -111,15 +472,15 @@ In conclusion, the functional significance of BEST4 in CRC development and its i
 
 ## Materials and methods
 
-## Clinical samples
+### Clinical samples
 
 A total of 124 samples of paired CRC and ANTs and 50 samples of paired adenoma and ANT were collected randomly from clinical specimens from patients undergoing intestinal resections or upper gastrointestinal endoscopies at the Department of Gastrointestinal Surgery and Digestive Endoscopy Centre, West China Hospital, China, between January and December 2013. All patients were followed until December 2018 or until death. Samples from patients with malignant tumours in other organs, from patients who received preoperative chemotherapy or radiotherapy, and from patients with incomplete follow-up data were excluded. The survival time was calculated from the surgery date to the follow-up deadline (above) or until the date of death. The Ethics Committee of West China Hospital, Sichuan University (Sichuan, China) approved the study. All procedures were performed per the 1964 Declaration of Helsinki. Written informed consent was obtained from all participants.
 
-## Cell cultures and reagents
+### Cell cultures and reagents
 
 The human colon cancer cell lines Caco-2, HCT116, HCT-15, and LS174T were purchased from The American Type Culture Collection (Manassas, VA, USA). Cells were authenticated using short tandem repeat analysis performed within 2 years of receipt. Cells at passages>15 were not used. All cells were maintained in Dulbecco’s Modified Eagle’s medium (DMEM; Gibco, Waltham, MA, USA) supplemented with 10% foetal bovine serum (FBS), 100 U/mL penicillin, and 100 mg/mL streptomycin. Before each experiment, cells were provided with low glucose (1 g/L) DMEM with 5% FBS before adding experimental reagents. All cell lines were frequently examined using the MycoAlert Mycoplasma Detection Kit (Lonza, Verviers, Belgium) to ensure they remained free of mycoplasma contamination.
 
-## Tumour and CRC hepatic metastasis mouse xenografts
+### Tumour and CRC hepatic metastasis mouse xenografts
 
 Four-week-old female BALB/c nude mice were housed under standard conditions. The mice were randomised into two groups, with eight mice per group. HCT116 cells (5×106 cells in 0.1 mL phosphate-buffered saline) transduced with the lentivirus containing BEST4 or EV were injected subcutaneously into the right dorsal flank of mice. Tumour growth was measured twice a week using callipers, and tumour volumes were calculated as length × width2 × 0.5. Mice were sacrificed at 32 days, and tumour weight was measured at the end of the experiment. For further analysis, the excised tumour tissues were divided into two parts and embedded in paraffin or preserved at −80°C for further analysis.
 
@@ -127,15 +488,15 @@ For the liver metastasis of CRC, intrasplenic injections of HCT-15 cells with BE
 
 The Animal Ethics Committee approved animal experiments of West China Hospital, Sichuan University (Sichuan, China).
 
-## CRC cell lines with overexpression of BEST4
+### CRC cell lines with overexpression of BEST4
 
 Forced overexpression of BEST4 was examined in HCT116 and Caco2 CRC cells in which the C-terminal HA epitope-tagged human BEST4 gene with GFP (BEST4-HA-GFP) or GFP alone was introduced by lentivirus-mediated gene transfer. Fluorescence-activated cell sorting (FACS) was performed to obtain single cells distributed into 96-well plates. Three independent lines with the highest levels of BEST4 expression were used for subsequent experiments (Figure 1—figure supplement 1A and B). BEST4 mRNA and HA-tagged protein levels were significantly higher in HCT116 and Caco2 cells transfected with BEST4-HA plasmids than those transfected with the EV alone (Figure 1—figure supplement 1C). The BEST4-overexpressing cell lines were named ‘HCT116 BEST4-HA’ and ‘Caco2 BEST4-HA’. Cells transfected with the EV alone were referred to as ‘HCT116 EV’ and ‘Caco2 EV’.
 
-## CRISPR/Cas9-mediated knockout of BEST4
+### CRISPR/Cas9-mediated knockout of BEST4
 
 BEST4-depleted HCT-15 cells were generated with CRISPR/Cas9 gene-editing technology using a dual sgRNA approach. Two sequences that targeted exon 3 within the BEST4 active fragment (5’-TGACTCTCGTGGTGAACCGC-3’ and 5’-CCGAGATGACGCACATCAGC -3’) were inserted into the pU6-gRNA-Cas9-EGFP vector (GenePharma, Shanghai, China) to generate a CRISPR/Cas9 BEST4 knockout plasmid. Excision of the targeted 44 bp genomic fragment resulted in splicing errors in exons 2–4 and generated a premature STOP codon that abrogated functional gene expression (Figure 1—figure supplement 1F and G). Cells were transfected with these plasmids, and GFP+ cells were FACS-sorted as single cells into 96-well plates. After culturing for 3 weeks, cells were distributed into two 24-well plates, and the appropriate deletion was verified by sequencing. Only cell lines with homozygous deletions were used. Three independent lines generated using this method were used for subsequent experiments and were named ‘HCT15 BEST4-gRNA’. Diminished expression of immunoreactive BEST4 protein was confirmed by immunoblotting (Figure 1—figure supplement 1H). The same overexpression strategy was adopted to rescue BEST4 expression in BEST4 knockout HCT-15 cells, named ‘HCT15 BEST4-Rescued’.
 
-## Plasmids and transfection/transduction
+### Plasmids and transfection/transduction
 
 Expression plasmids encoding BEST4 (GeneID: 266675, NM_153274; vector: pCDH-CMV-MCS-EF1-CopGFP-T2A-Puro) containing a C-terminal hemagglutinin (HA) epitope tag, HES4 (GeneID: 57801, NM_001142467.2; vector: pCDH-CMV-MCS-EF1- CopGFP-T2A-Puro) containing an N-terminal Flag epitope tag, were synthesised by Public Protein/Plasmid Library (Nanjing, China). According to the manufacturer’s instructions, Lipofectamine 3000 (Invitrogen, Carlsbad, CA, USA) was used in cell transfection experiments.
 
@@ -143,56 +504,56 @@ To generate a model of CRC with forced overexpression of HES4, cells were transf
 
 For shRNA and siRNA experiments, HEK293 cells were co-transduced with lentiviral vectors carrying shRNA targeting HES4 (Public Protein/Plasmid Library, Nanjing, China; target sequences are listed in Supplementary file 1). Supernatants were collected at 48 and 72 hr for analysis. Scrambled shRNAs were used to control for non-specific effects. Transduction was performed by mixing aliquots of lentivirus with a standard medium containing 10 μg/mL puromycin (Invivogen) to remove untransduced cells. GeneSolution siRNAs targeting BEST4 (BEST4-siRNA) were used to silence gene expression. Scrambled siRNA (SCR) was used as a control (QIAGEN, Hilden, Germany). The target sequences of the BEST4 siRNAs are listed in Supplementary file 1. For siRNA experiments, cells were seeded 1 day before transfection in an antibiotic-free medium and grown to 60% confluency in six-well plates. Cells were transfected using Lipofectamine 3000 as per the manufacturer’s protocol. The efficiency of RNA interference was determined using qPCR and western blotting.
 
-## RNA isolation, cDNA library preparation, sequencing, and data analysis
+### RNA isolation, cDNA library preparation, sequencing, and data analysis
 
 Total RNA was isolated using a High Pure RNA Isolation Kit (Roche, Basel, Switzerland). RNA samples with an RNA integrity number (RIN)≥7.0 and a 28S:18S ratio≥1.5 were used in subsequent experiments. Sequencing libraries were generated and sequenced by CapitalBio Technology (Beijing, China). A total amount of 3 μg RNA per sample was used. Briefly, the Ribo-Zero Magnetic Kit (Epicentre) was used to remove rRNA from the total RNA, and then the NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, USA) was used to construct the libraries for sequencing following the manufacturer’s instructions. The RNA was fragmented into pieces of ~200 base pairs in length in NEBNext First-Strand Synthesis Reaction Buffer (5×). The first-strand cDNA was synthesised from the RNA fragments using reverse transcriptase and random hexamer primers, and then the second-strand cDNA was synthesised in Second-Strand Synthesis Reaction Buffer with dUTP Mix (10×). The end of the cDNA fragment was subjected to an end-repair process that included the addition of a single ‘A’ base followed by ligation of the adapters. Products were purified and enriched using PCR to amplify the library DNA. The final libraries were qualified using Agilent 2100 and quantified using the KAPA Library Quantification Kit (KAPA Biosystems, South Africa). Finally, the libraries were subjected to paired-end sequencing with a paired-end 150-base pair reading length on an Illumina NovaSeq sequencer (Illumina).
 
 The sequencing quality of raw data in fastq format was assessed using FastQC, and then low-quality data were filtered using the Next Generation Sequencing Quality Control platform. The high-quality clean reads were then aligned to the reference genome using Tophat2 with default parameters. The genome of the human genome version of hg38 (UCSC) was used as the reference. Cufflinks and Cuffmerge software packages were used to assemble the transcripts. All subsequent comparative analyses of lncRNAs and mRNAs were based on the results of the transcripts. Transcripts corresponding to mRNAs or lncRNAs were collected from databases and treated as known lncRNAs and annotated based on information from public databases. The transcripts were treated as novel lncRNAs when their sequence length was >200 and when they were predicted to be non-coding RNAs. Differential expression analyses were performed using the limma package and edgeR. Functional annotation and enrichment analyses were performed using KOBAS 3.0. The target genes of the mRNAs were predicted based on cis- and trans-patterns based on the location of the reference genome and sequence similarity. The raw sequence data reported in this paper were deposited in the NCBI Sequence Read Archive (SRA) with accession number PRJNA690126.
 
-## RNA extraction and real-time PCR
+### RNA extraction and real-time PCR
 
 Total RNA was isolated from cell lysates according to the manufacturer’s protocol (Zymo Research, Tustin, CA, USA). A High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific, Waltham, MA, USA) was used for first-strand cDNA synthesis with 1 µg of total RNA from each sample. The expression of genes and the GAPDH internal control was assayed by qPCR using SYBR Green (Bioline Reagents Ltd, London, UK). Primer sequences are shown in Supplementary file 1.
 
-## Immunoblotting
+### Immunoblotting
 
 Protein extracts were prepared using RIPA lysis buffer (Merck Millipore, Temecula, CA, USA) containing protease inhibitor cocktail and phosphatase inhibitor tablets (Sigma, MO, USA). Protein content was determined using a protein assay kit (Bio-Rad, Hercules, CA, USA). Western blotting was performed as described previously (Wang et al., 2019). All primary (1:1000) and secondary antibodies (1:2000), except BEST4 (1:800; LsBio, Seattle, WA, USA) and anti-Flag M2 (Sigma, MO, USA), were purchased from Cell Signaling Technology (Danvers, MA, USA).
 
-## Cell proliferation
+### Cell proliferation
 
 Cell proliferation was monitored in real time using an IncuCyte ZOOM live-cell microscope incubator (Essen Bioscience, MI, USA), in which the cell confluence was calculated using IncuCyte software, and the cell proliferation was expressed as the percentage of confluence. According to the manufacturer’s protocol, a Cell Counting Kit‐8 (CCK-8, Dojindo, Tokyo, Japan) assay was used to confirm cell viability. The absorbance at 450 nm was measured using a microplate reader (BioTek, VT, USA), and growth curves were drawn according to the optical density.
 
-## Clonogenesis
+### Clonogenesis
 
 A total of 3×103 cells per well were seeded in six-well plates. The medium was refreshed twice a week. After 2 weeks, colonies were fixed and stained with crystal violet (0.005% in 20% methanol). The numbers of colonies were quantified using GelCount (Oxford Optronix Ltd, Oxford, UK). The assay was carried out in triplicate wells for three independent experiments.
 
-## Transwell migration and invasion
+### Transwell migration and invasion
 
 Cell migration and invasion assays were performed using Transwell assay with uncoated polycarbonate transwell inserts (Millipore, Billerica, MA, USA). Cells were digested and suspended in culture medium without FBS for the migration assay. Cell suspensions were added into the upper chamber of the transwell insert and then placed into the 24-well plate transwell containing medium with 10% FBS in the lower chamber. For the invasion assay, the 24-well plate with transwell inserts was coated with 50 μg/insert of Matrigel matrix on the top of the chamber (BD Biosciences, Oxford, UK). After 48 hr, cells that travelled to the lower surface of the insert were stained with crystal violet. Experiments were conducted in triplicate.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Paraffin-embedded tissue blocks from formalin-fixed tumour samples were sectioned, dewaxed, and rehydrated following standard protocols. Sections were stained for human Ki67 primary antibody (1:200, Cell Signaling Technology, MA, USA), a marker of cell proliferation, and anti-mouse HRP-conjugated secondary antibody (Dako, CA, USA), and the positive cells were counted in eight randomly chosen fields. Expression of BEST4-HA in tumours was stained with anti-HA primary antibody (1:800, Cell Signaling Technology) and anti-rabbit HRP-conjugated secondary antibody (Dako).
 
-## Dual-luciferase reporter assay
+### Dual-luciferase reporter assay
 
 The BEST4 promoter region (−2000 to +100 bp) was cloned into pGL3-basic vectors (Promega, WI, USA) to construct the luciferase reporter plasmid (pGL3-BEST4). The stably high HES4 expression cell line was constructed by infecting HCT116 cells with lentivirus, and then the recombinant plasmid pGL3- BEST4 was co-transfected with the control plasmid pRL-TK (Promega) into HCT116 HES4 and HCT116 EV cells. Twenty-four hours after transfection, firefly and Renilla luciferase activities were analysed using the dual-luciferase reporter assay (Promega) according to the manufacturer’s instructions, and the results were normalised as relative luciferase activity (firefly luciferase/Renilla luciferase).
 
-## Chromatin immunoprecipitation-quantitative PCR
+### Chromatin immunoprecipitation-quantitative PCR
 
 ChIP-qPCR was performed as previously described (Miotto and Struhl, 2006). At room temperature, we crosslinked cells at 5×107 cells/mL for 10 min using 1% formaldehyde and stopped the reaction using 125 mM glycine. After three washes with ice-cold PBS, cells were homogenised, lysed, and sonicated to shear DNA into 200–500 bp fragments. The DNA fragments were incubated with 10 µg of antibodies against anti-Flag tag (Sigma, MO, USA) or native IgG (Cell Signaling Technology) followed by IP with 60 µL of protein A/G Magnetic Beads (MedChemExpress, NJ, USA) and overnight incubation at 4°C with rotation. Immunoprecipitated DNAs were extracted from the DNA/antibody/protein A/G bead complexes using proteinase K digestion, subjected to reverse crosslinking at 65°C for 4 hr, and purified with spin columns. qPCR analysis was performed to determine the enrichment of DNA fragments using the indicated primers (Supplementary file 1). ChIP-qPCR data were normalised using the fold-enrichment method (ChIP signals were divided by IgG signals), and DHFR 5 'UTR was used as a negative control. Each experiment included triplicate samples and the data shown represent the mean of three independent experiments.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 HCT116 cells transfected alone or co-transfected with expression vectors encoding C-terminal HA-tagged BEST4, and N-terminal Flag-tagged HES4 were grown on glass coverslips, fixed for 10 min with 4% paraformaldehyde, permeabilised for 5 min with 0.2% Triton X-100, then blocked for 15 min with 3% bovine serum albumin. HA-tagged BEST4 was stained using an anti-HA antibody (Cell Signaling Technology) followed by a TRITC-labelled secondary antibody (Abcam, Cambridge, UK). Flag-tagged HES4 was detected using an anti-Flag antibody (Sigma, MO, USA) with an Alexa Fluor 647-labelled secondary antibody (Invitrogen, Carlsbad, CA). Cells were mounted and imaged using laser-scanning confocal microscopy (Nikon Corporation, Tokyo, Japan).
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Co-IP assays were performed on nuclear extracts. According to the manufacturer’s protocols, nuclear proteins of each sample were collected using Minute Cytoplasmic and Nuclear Fractionation Kit (Invent, MN, USA). Protein G Dynabeads (Thermo Fisher Scientific, MA, USA) following the manufacturer’s instructions. Briefly, HEK293 cells were co-transfected with expression vectors encoding C-terminal HA-tagged BEST4 and N-terminal Flag-tagged HES4. Cells were harvested and lysed 48 hr after transfection. Cell lysates (500 µg) were incubated overnight at 4°C in a rotating wheel with 2 µg of anti-FLAG (Sigma, MO, USA) or anti-HA antibody (Cell Signaling Technology) bound to Protein G Dynabeads. Immunocomplexes were separated using a magnet, washed three times in PBS with 0.02% Tween 20 and eluted in elution buffer (50 mM glycine pH 2.8). After boiling in sample buffer at 70°C for 10 min, immunocomplexes were loaded on 4–20% Tris-Glycine gels (Bio-Rad, CA, USA), followed by blotting on PVDF membranes and immunoblotting using the indicated antibodies.
 
-## Chloride channel efflux
+### Chloride channel efflux
 
 Cells were maintained in a serum-free DMEM overnight prior to treatment with DIDS (4,4'-diisothiocyanatostilbene-2,2'-disulfonic acid; HY-D0086, MCE, China), CaCCinh-A01 (HY-100611, MCE, China), or 1 μM ionomycin for 24 hr as previously published (Liu et al., 2015; Uwada et al., 2019). Chloride channel efflux was evaluated with colorimetric changes by commercially available kits (ab176767, Abcam). Briefly, 40,000 BEST4-expressing or EV-control HCT116 cells were plated per well in a 96-well plate and allowed to grow overnight. Before the assay, cells were refreshed with serum-free medium and 100 µL/well of pre-warmed iodide-loading buffer was added and the plate was incubated for 2 hr at 37°C. After washing each well with HBSS three times, cells were lysed and Iodide Sensor Blue dye (50 µL/well) and 0.5× Iodide Sensor Enhancer (50 µL/well) were added and incubated for 1 min before reading at 405 nm. Data was calculated as fold-change relative to control.
 
-## Statistical analysis
+### Statistical analysis
 
 The results were expressed as the mean ± standard error of the mean. The statistical significance of differences between means was assessed using Student’s unpaired two-tailed t-tests, and the Mann-Whitney U test was performed to compare the variables in two groups using SPSS 25.0 (SPSS, Chicago, IL, USA). The relationship between the clinicopathological parameters of CRC and the expression of BEST4 was examined using the Kruskal-Wallis H test. The Kaplan-Meier method and log-rank tests were used to assess overall survival in relation to BEST4 expression. Differences in cell proliferation and tumour growth rates between the two groups of mice were assessed using repeated-measures analysis of variance. Western blot intensity was assessed using ImageJ v1.53 software (ImageJ, Bethesda, MD, USA). p-Values<0.05 indicated statistically significant differences.

@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Anthropology, University of Michigan-Ann Arbor Ann Arbor United States
-2. https://ror.org/02kc80b57 The Dian Fossey Gorilla Fund International Atlanta United States
-3. https://ror.org/02a33b393 Department of Primatology, Max Planck Institute for Evolutionary Anthropology Leipzig Germany
+1. Department of Anthropology, University of Michigan-Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. The Dian Fossey Gorilla Fund International Atlanta United States ([ROR:02kc80b57](https://ror.org/02kc80b57))
+3. Department of Primatology, Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
 
 † Corresponding author
 
@@ -42,35 +42,47 @@ In addition to kinship, we also investigate the impacts of age differences and s
 
 ## Results
 
-## Affiliative behaviors
+### Affiliative behaviors
 
 In our full sample of 1934 unique dyads spanning 7832 dyad-years, full siblings (n=43 dyads) played and groomed each other significantly more than did paternal siblings (n=555 dyads) or non-siblings (n=1235 dyads; all comparisons p<0.001; Figure 1A and B). Maternal siblings (n=101 dyads) played significantly less than full siblings but they groomed at comparable rates. Age differences (in our sample, mean: 5.85 years; SD: 4.53 years; range: 0–23.5 years) interacted with relatedness in predicting grooming (p=0.035), but not play (p=0.577). Play consistently dropped for siblings and non-siblings alike as age differences increased (γ ranging from –0.28 to –0.23, all p<0.001; Figure 2A). By contrast, grooming rates were relatively unrelated to age differences between partners (γ ranging from –0.07 to –0.01, all p>0.05; Figure 2B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig1-figsupp2-v2.jpg)
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig2-v2.jpg)
 
-**Figure 2.:** A) and grooming (B) across a range of age differences, separated by relatedness category.Bars represent 95% CI for rates of behavior at a given age difference.
+**Figure 2.:** Bars represent 95% CI for rates of behavior at a given age difference.
 
 Male-male dyads (n=503) played more than either mixed-sex (n=977) or female-female dyads (n=454); conversely, female-female dyads groom each other more than either mixed-sex or male-male dyads (all p<0.001; Figure 1C and D). These patterns for play and grooming were strongly moderated by age differences (ps <0.002) and were significantly, albeit more weakly, moderated by relatedness (p=0.025 and 0.036, respectively). Play dropped rapidly with increasing age differences (γ=–0.34–−0.26) for all sex configurations (all p<0.001; Figure 3A). Grooming was steadily low in male-male and mixed-sex dyads (γ=–0.02––0.02, p>0.50), though it dropped with increasing age differences in female-female dyads (γ=–0.09, p=0.002), such that differences between sex categories became indistinguishable after approximately a 10 year age difference (Figure 3B). Play was consistently highest among male-male dyads within all relatedness categories, with the exception of maternal siblings, who exhibited more comparable rates of play among male-male and mixed-sex dyads (Figure 1—figure supplement 1). Grooming was also consistently highest among female-female dyads of all types, though the magnitude of this difference varied between relatedness categories (Figure 1—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig3-v2.jpg)
 
-**Figure 3.:** A) and grooming (B) across a range of age differences, separated by sex category.Bars represent 95% CI for rates of behavior at a given age difference.
+**Figure 3.:** Bars represent 95% CI for rates of behavior at a given age difference.
 
 When restricting analyses to dyads who lived in the same social group during the first year of the younger partner’s life (n=6,724 dyad-years), results for affiliative behavior remained qualitatively similar: full and maternal siblings played and groomed more than paternal siblings or non-siblings (see Figure 1—figure supplements 1 and 2, Appendix 1—Tables 1 and 2). Interactions between relatedness categories and sex makeup weakened and were no longer significant (for play: p=0.555; for grooming: p=0.243); sex category×age difference interactions remained highly significant for grooming (p<0.001) and were marginally significant for play (p=0.070). Additionally, all reported results were robust to the inclusion of average age of the dyad as a covariate (Appendix 3—Tables 1 and 2).
 
-## Time spent in proximity
+### Time spent in proximity
 
 The time dyads spent in close proximity (<2 m) with each other also varied between relatedness categories (p<0.001), with maternal siblings and full siblings once again spending more time near each other than non-siblings, who themselves spent more time in close proximity than paternal siblings did (all comparisons p<0.001; Figure 4A). However, these patterns too were moderated by age differences (p<0.001). Proximity decreased with increasing age differences in maternal siblings and paternal siblings (γ=–0.08−–0.09, p<0.001), but did not decrease significantly in full siblings or non-siblings (γ=–0.04–0.01, p>0.26). Thus, while all classes of siblings spent more time near each other than non-siblings when near in age, even when adjusting for their mother’s presence, this distinction was partially reversed at large age differences, when paternal siblings spent much less time near each other than any other dyad category (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig4-v2.jpg)
 
-**Figure 4.:** A) and estimated trends across a range of age differences (B) for the time gorilla dyads spent in close proximity, separated by relatedness category.Bars in (B) represent 95% CI for rates of proximity at a given age difference.
+**Figure 4.:** Bars in (B) represent 95% CI for rates of proximity at a given age difference.
 
 When restricting analyses to dyads who lived in the same social group during the first year of the younger partner’s life, results for proximity remained consistent: full and maternal siblings spent more time together than paternal siblings or non-siblings, though this difference was reversed at large age differences in the same manner as our primary model (see Appendix 1—Tables 1 and 2 for full results).
 
-## Competitive behaviors
+### Competitive behaviors
 
 Neither relatedness nor sex category on their own significantly predicted rates of aggressive behavior (p=0.217 and 0.625, respectively). However, our model did reveal a significant sex makeup×relatedness interaction term (p=0.017; Figure 5A). Decomposing this interaction, among female-female and male-male dyads, there were no statistically significant contrasts between relatedness categories. In mixed-sex dyads, non-siblings engaged in substantially more aggression than any sibling category (all p<0.050). While sex category also interacted with age differences in predicting aggression (p=0.005), marginal trends were consistently negative (γ=−0.14–−0.09, p<0.001), such that, across sex categories, dyads more distant in age engaged in less aggression than dyads closer in age (Figure 5B). All reported results were robust to the inclusion of average age of the dyad as a covariate (Appendix 3—Tables 1 and 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig5-v2.jpg)
+
+**Figure 5.:** Bars in (B) represent 95% CI for rates of aggression at a given age difference.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80820/elife-80820-fig5-figsupp1-v2.jpg)
 
 Unlike results for affiliative behavior, when restricting analyses to dyads who lived in the same social group during the first year of the younger partner’s life, results for aggressive behavior qualitatively shifted. Relatedness and sex categories no longer significantly interacted (p=0.553), and the significant pairwise differences between siblings and non-siblings in mixed-sex dyads shrank markedly and were no longer significant (all p>0.44). Age difference remained a highly significant predictor of aggression (p=0.004). Inspection of our data confirmed that much aggression specifically occurred in the context of females transferring into groups–i.e., when females first encountered unrelated, unfamiliar males–accounting for non-significant pairwise differences among male-female dyads with early-life familiarity (Figure 5—figure supplement 1). See Appendix 1—Tables 1 and 2 for full results.
 
@@ -92,7 +104,7 @@ Together, these observations–prosocial biases towards kin that do not appear t
 
 Second, the lack of evidence for a prosocial bias towards paternal siblings is not readily reconciled with clear behavioral evidence of reduced aggression within these same dyads. This remarkable disjunct between apparent sibling recognition and sibling bias suggests that from a mountain gorilla’s perspective, paternal siblings are known entities that nevertheless are less attractive social partners than maternal siblings, despite each being equal relatives. There may be multiple, non-mutually exclusive explanations for this dynamic. Perhaps the presence of paternal siblings provides fewer benefits to an individual than do other sibling types–this possibility, while previously suggested (e.g. Cords et al., 2018), has not been systematically investigated and is an ideal target for future research. Relatedly, the strength of maternal versus paternal kin bias may to some degree depend on the costs of the behaviors in question (Widdig et al., 2006). A mismatch between historical and current social structure might also lead to inconsistent, weakened kin recognition among paternal siblings that manifests in the contrasting patterns we report. Ultimately, disentangling these potential explanations within a species that only exists in the wild may depend on the opportunity to study long-term mating patterns and the impacts of ‘natural experiments’ such as early maternal loss or adoption (most often carried out by adult males in this species; Fossey, 1979; Morrison et al., 2021a).
 
-## Conclusion
+### Conclusion
 
 Our analyses of sibling relationships in mountain gorillas provide extensive, large-scale information on the dynamics of cooperation and competition in a primate society where, as in humans, potential social partners vary greatly in the genes, developmental stage, and biological sex they share with each other. We find a selective sibling bias for prosocial behaviors, in that siblings who share matrilineal kinship affiliate at greater rates than either paternal siblings or non-siblings, and that this bias weakens as individuals become more distant in age. While such a result is consistent with a wide range of previous research, none of the reasons proposed for this selective bias in primates appear to apply to our population: mountain gorillas gain regular exposure to siblings of all types, across life stages; furthermore, patterns of aggressive behavior, in contrast to affiliation, suggest that mountain gorillas can in fact recognize paternal siblings, though they evidently do not favor them as cooperative partners. Ultimately, our study underscores a diversity of means, some evidently yet to be revealed, through which individuals might perceive and engage in sibling relationships to achieve fitness outcomes.
 
@@ -100,15 +112,15 @@ Our analyses of sibling relationships in mountain gorillas provide extensive, la
 
 Our study subjects came from a population of habituated wild mountain gorillas living in Volcanoes National Park, Rwanda, that have been monitored nearly continuously for the last 54 years by the Dian Fossey Gorilla Fund. Using focal follow and scan data collected by researchers and staff, we compiled a dataset of all available dyadic gorilla behavior spanning the years of 2003–2017. We then supplemented this dataset with demographic and relatedness data (for maternal relatedness, via direct observation; for paternal relatedness, via genetic paternity determination–see e.g. Vigilant et al., 2015) on individuals pulled from long-term records. From this combined dataset, we excluded interactions with infants <1 year of age at time of observation, parent-offspring interactions, and interactions between dyads for which we could not calculate relatedness from available data. This yielded a final, curated dataset containing 157 unique individuals studied from late infancy to adulthood (75 F, 82 M; average age at time of observation = 9.75 years; age range: 1–38.5 years old) and 38,996 total hours of observation.
 
-## Composition of dyads
+### Composition of dyads
 
 Our dataset of behavior from 157 individuals contained 1934 unique dyad pairs. Of these dyads, 1235 shared neither a mother nor father (‘non-siblings’), 555 shared a father but not a mother (‘paternal siblings’), and 43 shared both a mother and a father (‘full siblings’). In addition to dyads known to share a mother but not a father (n=50), there were a number of dyads with the same mother, but with paternity data missing for one or both individuals (n=51). To maximize sample size, we combined these two groups into the category of ‘maternal siblings’; due to this analytic choice, this category can be effectively conceived of as ‘at least maternal siblings’. See Appendix 2—Tables 1 and 2 for analyses using only confirmed maternal siblings, which were very similar to those reported below. Mixed-sex dyads were the most common sex category in our dataset (n=977), followed by male-male (n=503) and female-female (n=454). Dyads differed in age by an average of 5.85 years (SD: 4.53 years; range: 0–23.5 years); for reference, the average interbirth interval in mountain gorillas is 3.9 years (Eckardt et al., 2016). We used this continuous age difference variable as our primary index of familiarity between individuals, following a number of previous studies on primate kinship (e.g., Widdig et al., 2001; Pfefferle et al., 2014; Wikberg et al., 2014). While we had information on shared group membership in early life, which could also serve as a potential index of familiarity within dyads, we do not focus on this variable in our primary analyses, as it did not allow us to disambiguate between relatedness and familiarity–dyads of individuals who grew up in different natal groups were virtually never (n=3) siblings in our dataset. However, as a robustness check of our main findings, we also performed supplementary analyses on the subset of dyads who lived in the same social group during the first year of the younger partner’s life; i.e., those who had substantial early-life familiarity with one another (n=6,724 dyad-years). We report the correspondence between these analyses and our primary models in our main results section, and we provide full output of these secondary models in our appendix (see Appendix 1—Tables 1 and 2).
 
-## Behavioral measures
+### Behavioral measures
 
 We evaluated five different categories of dyadic behaviors as outcome variables: grooming, playing, non-contact aggression, contact aggression, and time spent in close (2 m) proximity. We operationalized these behaviors from standardized definitions used in previous publications about this gorilla population (see e.g. Rosenbaum et al., 2015). Trained observers regularly undergo interobserver reliability tests. The former four behavioral categories were evaluated as counts (corrected for exposure time; see Data analysis) within the dyad during focal observations, regardless of directionality, while the latter category of time in close proximity was evaluated by counting the number of instantaneous scan samples in which a dyad was observed within 2 m of each other (also corrected for exposure time). Across primates, a substantial body of work has investigated how rates of these social behaviors might change with age (e.g. play: Fagen, 1993; aggression: Del Giudice et al., 2009; Kulik et al., 2015; Grebe et al., 2019; grooming: Almeling et al., 2016; Schino and Pinzaglia, 2018). General age-related trends in our dataset corroborate previously established patterns such as large play decreases, large aggression increases, and moderate grooming decreases as average age within the dyad increases (Appendix 3—figure 1). Importantly, our primary results pertaining to relatedness, sex configuration, and age differences are robust to the inclusion of age as a covariate; see Appendix 3—Tables 1 and 2.
 
-## Data analysis
+### Data analysis
 
 We conducted all analyses in R (version 4.1.2). Our main statistical models for each behavioral outcome consisted of cross-classified generalized linear mixed models (conducted using the glmmTMB package; Brooks et al., 2017) these models included separate random intercept terms for each individual within the dyad and the dyad itself, in addition to random slope terms for relatedness, age difference, and sex makeup within dyads. Given low incidences of many behaviors, we aggregated behaviors into annual counts, making the dyad-year the fundamental unit of analysis (total n=7832). Even with annual aggregation, instances of aggression were uncommon. Therefore, counts of contact and non-contact aggression were summed into a single category for analysis (see Appendix 4—figures 1 and 2; Appendix 4—Tables 1 and 2 for results with individual aggression categories, which were qualitatively similar to those reported below).
 

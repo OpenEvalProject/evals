@@ -39,9 +39,17 @@ Using cryo-electron microscopy (cryo-EM), we have determined the structure of GM
 
 ## Results
 
-## Cryo-EM structure of VASH1-SVBP bound to GMPCPP-stabilized microtubules
+### Cryo-EM structure of VASH1-SVBP bound to GMPCPP-stabilized microtubules
 
 We transfected HeLa cells with plasmids encoding Myc-tagged VASH1 and SVBP, and treated these cells for short durations with nocodazole or Taxol, which inhibited or promoted microtubule polymerization, respectively. The detyrosination levels of α-tubulin were greatly decreased by nocodazole but enhanced by Taxol (Figure 1A–C). These data confirmed the substrate preference of VASH1-SVBP for polymerized microtubules.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig1-v2.jpg)
+
+**Figure 1.:** (A,B) Tubulin detyrosination assays of VASH1-SVBP in human cells. HeLa Tet-On cells were co-transfected with VASH1 and SVBP plasmids, and treated with 5 µM nocodazole (A) or 100 nM Taxol (B) for indicated times at 24 hr post-transfection. The cell lysates were blotted with the indicated antibodies. deY-tubulin, detyrosinated α-tubulin. Experiments were repeated three times with similar results. (C) Quantification of the relative detyrosination levels of α-tubulin in (A) and (B) (mean ± s.d., n = 3 independent experiments). Significance calculated using two-tailed student’s t-test; between control cells and cells treated with nocodazole or Taxol for the indicated time; *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001. (D) Microtubule pelleting assays showing the binding of VASH1-SVBP to recombinant human microtubules. S, supernatant; P, pellet. (E) Cryo-EM map of 14-protofilament, GMPCPP-stabilized microtubules decorated by the VASH152-310-SVBP complex. The catalytically inactive C169S mutant of VASH1 was used in the complex. The map is lowpass filtered to 4 Å. The microtubule seam is indicated by a red dashed line. α-tubulin, β-tubulin, VASH1, and SVBP are colored in green, cyan, blue, and orange, respectively. The same color scheme is used for all figures. The inset shows a close-up view of the boxed region. (F) Close-up view of the cryo-EM map in (E), viewed from the lumen. The α- and β-tubulin molecules can be distinguished by the length of the S9-S10 loop (boxed with red dashed lines), with the loop in α-tubulin being longer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative micrograph of VASH1-SVBP-decorated GMPCPP-microtubules. Scale bar, 50 nm. (B) Processing workflow for cryo-EM structure determination of VASH1-SVBP-decorated GMPCPP-microtubules. The 2D classes of poorly decorated microtubules (red outlines) were discarded whereas the classes belonging to efficiently decorated microtubules (green outlines) were selected for subsequent 3D classification. (C) Fourier shell correlation (FSC) curves of GMPCPP-microtubules decorated with VASH1-SVBP. The FSC curves of microtubules (top) and VASH1-SVBP (bottom) were calculated separately. The final resolution for the reconstruction was estimated by calculating the Fourier shell correlation (FSC) of a single tubulin heterodimer in a ‘good’ protofilament after pseudo-helical averaging, using the FSC = 0.143 criterion.
 
 To elucidate the structural basis of this preference, we sought to determine the structure of VASH1-SVBP bound to microtubules using single-particle cryo-EM. Based on in vitro microtubule pelleting assays, the catalytically inactive C169S mutant of the protease domain of VASH1 (residues 52–310) in complex with SVBP interacted with GMPCPP-stabilized human microtubules that were polymerized from recombinant human αβ-tubulin heterodimers (Figure 1D). Raw cryo-EM images showed efficient decoration of microtubules by VASH1-SVBP C169S (Figure 1—figure supplement 1A). During data processing, poorly decorated microtubule particles were removed by several rounds of 2D classification (Figure 1—figure supplement 1B). Subsequent 3D classification revealed that, compared with 13-protofilament (PF) microtubules, 14-PF microtubules were the less populated but more ordered class. After seam search and 3D refinement, we determined the structure of 14-PF microtubules decorated with VASH1-SVBP to overall resolutions of 3.1 Å and 3.8 Å for microtubules and VASH1-SVBP, respectively (Figure 1—figure supplement 1B).
 
@@ -49,9 +57,21 @@ The EM map shows that VASH1-SVBP decorates the surface of 14-PF microtubules (Fi
 
 To build the structure of the microtubule-VASH1-SVBP complex, we docked the crystal structure of VASH1-SVBP and the cryo-EM structure of αβ-tubulin heterodimers of GMPCPP-stabilized microtubules into the EM density map as rigid bodies, and then manually adjusted the structures to better fit the density. The resolution of VASH1-SVBP is heterogenous, with the microtubule-binding regions and the core exhibiting higher resolution than the rest of the molecule (Figure 2—figure supplement 1A). With the current map, we could model all secondary structures of αβ-tubulin heterodimers except the C-terminal tails, and most of the side chains of αβ-tubulin and the bound nucleotides (Figure 2A and Figure 2—figure supplement 1B,C). By contrast, due to the relatively lower and heterogeneous resolution of VASH1-SVBP, only the side chains of residues that contact microtubules could be modeled (Figure 2—figure supplement 1C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-v2.jpg)
+
+**Figure 2.:** (A) Models of VASH1-SVBP (VASH1, blue; SVBP, orange) and tubulin (α-tubulin, green; β-tubulin, cyan) were docked into the cryo-EM density (lowpass-filtered to 4 Å) and refined. (B) Cryo-EM density map of VASH1-SVBP lowpass-filtered to 6 Å. (C) Ribbon diagram of the cryo-EM structure of VASH1-SVBP bound to microtubules. (D) Two views of the electron density map (generated by Phenix.auto_sharpen, with local B factor sharpening and resolution cutoff at 7 Å) showing an unfitted, continuous density that belonged to the α-tubulin C-terminal tail (CTα).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Density corresponding to the αβ-tubulin heterodimer and the VASH1-SVBP complex colored by local resolution as determined in relion_postprocess. (B) Electron density map of nucleotides in the N-site (left) and E-site (right) of microtubules. (C) Representative regions of the cryo-EM map of α-tubulin, β-tubulin, and VASH1, highlighting the density of key residues at VASH1-microtubule interfaces.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Overlay of the ribbon diagrams of the cryo-EM structure of microtubule-bound VASH1-SVBP (colored blue and orange) and the crystal structure of VASH1-SVBP alone (PDB: 6OCG) (colored gray). (B) Surface drawing of the structure of VASH1-SVBP bound to two neighboring αβ-tubulin heterodimers in two different views. The C-terminal tail of α-tubulin (CTα) is indicated by a dashed green line. (C) Solvent-accessible surface of the VASH1-SVBP complex (PDB: 6OCG) colored by electrostatic potential (blue, positive; red, negative).
+
 In the 6 Å lowpass-filtered EM map, the density of VASH1-SVBP is continuous, with most of the α-helices distinguishable (Figure 2B). The N- and C-terminal regions of SVBP remain disordered. Compared with crystal structures of VASH1-SVBP alone or bound to inhibitors, there are no obvious conformational changes of VASH1-SVBP upon binding to microtubules (Figure 2—figure supplement 2A). VASH1 simultaneously interacts with two α-tubulin molecules in adjacent protofilaments (Figure 2C). This binding mode can explain the substrate preference of VASH1 towards microtubules, because this collection of interactions is only possible within the microtubule lattice.
 
-## Recognition of the α-tubulin C-terminal tail by VASH1
+### Recognition of the α-tubulin C-terminal tail by VASH1
 
 How vasohibins recognize the C-terminal tail of α-tubulin (CTα) is unresolved. Based on crystal structures of VASH1/2 bound to substrate-mimicking covalent inhibitors and subsequent mutagenesis data, we and two other groups identified the positively charged groove near the active site as the CTα-binding site (Adamopoulos et al., 2019; Li et al., 2019; Wang et al., 2019). A later study challenged this model, however, and showed that the free CTα peptide did not bind to the positively charged groove of VASH2, but instead bound to a site on the opposite side of the active site, with the backbone of CTα orientated in the opposite direction (Zhou et al., 2019).
 
@@ -59,19 +79,33 @@ Our 7 Å lowpass-filtered EM map shows an unaccounted, continuous density connec
 
 The surface view of our microtubule-VASH1-SVBP structure reveals that the portion of the modeled CTα is located at one end of the groove and pointing towards the active site (Figure 2—figure supplement 2B). This binding mode is compatible for the detyrosination of α-tubulin. Thus, the structure captured in our study likely represents the catalysis-competent enzyme-substrate complex. We suspect that, because of its low sequence complexity (i.e. stretches of glutamates), the CTα peptide in isolation (i.e. not anchored to the globular domain of α-tubulin) may interact with VASH1 in purely electrostatic, nonproductive ways. Our results are consistent with the positively charged groove of VASH1/2 being the binding site of CTα, as we had originally proposed (Li et al., 2019).
 
-## Interactions between VASH1 and microtubules
+### Interactions between VASH1 and microtubules
 
 VASH1 contacts microtubules through three major interfaces (Figure 3A). Interfaces 1 and 2 are between VASH1 and the globular domain of the α-tubulin molecule that VASH1 would be acting on. Interface 3 is between VASH1 and a second α-tubulin molecule in an adjacent protofilament.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic drawing of the VASH1-microtubule complex, with the three main interfaces indicated. (B–D) Close-up views of the VASH1–microtubule interfaces 1 (B), 2 (C), and 3 (D), with interacting residues shown as sticks. VASH1 residues are colored yellow and labeled with black letters while α-tubulin residues are colored green and labeled with red letters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig3-figsupp1-v2.jpg)
 
 At interface 1, VASH1 residues on αD and the αC-αD loop form a hydrophilic interaction network with the C-terminal helix (α12) of α-tubulin (Figure 3B). Interface 2 is primarily formed between the β4-β5 loop of VASH1 and α11 of α-tubulin (Figure 3C). The β4-β5 loop of VASH1 is well-ordered, and has clear density in the EM map (Figure 2—figure supplement 1C). Residues in this VASH1 loop form hydrophobic and favorable electrostatic interactions with α-tubulin (Figure 3C).
 
 Interface 3 lies between the last helix (αG) of VASH1 and a second α-tubulin molecule (termed α-tubulin’) from the adjacent protofilament (Figure 3D). The total surface area buried between VASH1 and microtubules is 878 Å2, 39.8% of which is contributed by interface 3. Because the density of VASH1 αG is poor (Figure 2—figure supplement 1C), we cannot definitively assign the precise orientation and conformation of the side chains in this helix. Nevertheless, R234, R296, R299, and L303 of VASH1 αG are located in close proximity to Y108, E155, R156, V159, E196, and E414 from α-tubulin’. These residues are likely to develop favorable electrostatic and hydrophobic interactions. Interface 3 can only be established between VASH1 and microtubules, but cannot exist between VASH1 and free αβ-tubulin heterodimers. Thus, the inter-protofilament interactions by VASH1 underlie the substrate preference of VASH1-SVBP towards microtubules.
 
-## Contributions of VASH1-microtubule interactions to tubulin detyrosination
+### Contributions of VASH1-microtubule interactions to tubulin detyrosination
 
 VASH1 residues that lie at the three VASH1-microtubule interfaces are conserved among VASH1 and VASH2 proteins from different species (Figure 3—figure supplement 1A,B), suggesting that they might be functionally important. To test the functional relevance of these interfaces, we introduced mutations into VASH1 to disrupt them, co-transfected these VASH1 mutants with SVBP into HeLa cells (which had low endogenous levels of tubulin detyrosination) (Bulinski et al., 1988), and evaluated their detyrosination activities on α-tubulin.
 
 The single mutation of VASH1 R148 at interface 1 (R148E) greatly decreased α-tubulin detyrosination, and the K145E/R148E double mutation further attenuated the detyrosination activity of VASH1 (Figure 4A and Figure 4—figure supplement 1A). Interestingly, the VASH1 D155R mutant had higher detyrosination activity. D155 might develop unfavorable electrostatic interactions with E429 of α-tubulin (Figure 3B). Mutation of D155 to a positively charged residue, such as arginine, might have alleviated this clash, enhancing detyrosination. VASH1 mutations at interface 1 thus produce results consistent with structure-based predictions, validating its functional importance.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig4-v2.jpg)
+
+**Figure 4.:** (A,B) Tubulin detyrosination assays of VASH1-SVBP WT or mutants in human cells. HeLa Tet-On cells were co-transfected with Myc-VASH1 WT or mutants and Myc-SVBP WT plasmids. At 24 hr post-transfection, the cells were treated without (A) or with 5 µM Nocodazole (B) for 1 hr. The cell lysates were blotted with the indicated antibodies. Compared with VASH1 WT, VASH1 mutants with multiple glutamate substitutions had slightly slower mobilities. The mobility shift is likely caused by the introduction of multiple negative charges, akin to protein phosphorylation, which also sometimes retards gel mobility. deY-tubulin, detyrosinated α-tubulin. 3E, R234E/R299E/L303E. Experiments were repeated three times with similar results. (C–E) In vitro detyrosination of GMPCPP-stabilized human microtubules (C), the C-terminal peptide of α-tubulin (CTα) fused to GST (D), or free αβ-tubulin heterodimers (E) by the indicated recombinant VASH1–SVBP WT or mutant complexes. Experiments were repeated at least three times with similar results. (F) Coomassie-stained gel of microtubule pelleting assays of VASH1-SVBP WT and mutant complexes. (G) Model of microtubule lattice binding, substrate recognition, and tubulin detyrosination by VASH1-SVBP. The ‘+’ signs indicate positive charges.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–E) Quantification of the relative detyrosination levels of α-tubulin in Figure 4A (A), 4B (B), 4C (C), 4D (D), and 4E (E). Mean ± s.d.; n = 3 independent experiments. (F) Quantification of the percentage of VASH1-SVBP bound to microtubules in Figure 4F. Mean ± s.d.; n = 3 independent experiments. Significance calculated using two-tailed student’s t-test; between WT and mutants; *p < 0.05, **p < 0.01 ***p < 0.001, and ****p < 0.0001.
 
 The VASH1 H268E/V270E and R234E/R299E/L303E (3E) mutations that targeted residues at interfaces 2 and 3, respectively, also reduced the detyrosination activity of VASH1 (Figure 4A and Figure 4—figure supplement 1A), consistent with the functional relevance of these interfaces as predicted from the structure. Because interface 3 only exists between VASH1 and microtubules, disrupting interface 3 via the VASH1 3E mutation should impair the detyrosination of microtubules, but not of free αβ tubulin. Consistent with this prediction, in cells treated with nocodazole, wherein microtubules are depolymerized, VASH1 WT and 3E had similar detyrosination activities, whereas mutations that targeted interfaces 1 and 2 still attenuated the detyrosination of free αβ-tubulin as predicted (Figure 4B and Figure 4—figure supplement 1B).
 
@@ -87,34 +121,170 @@ In addition to interacting with and modifying microtubules, VASH1/2-SVBP are kno
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The expression and purification of the wild-type and mutant catalytic domain of human VASH1 (residues 52–310) bound to full-length SVBP and the C-terminal tail of human TUBA1A (residues 441–452) fused to GST (GST-CTα) were performed as previously described (Li et al., 2019). The recombinant human TUBA1B–TUBB3 heterodimer protein was expressed and purified as previously described (Ti et al., 2016; Ye et al., 2020).
 
-## Preparation of cryo-EM grids
+### Preparation of cryo-EM grids
 
 The TUBA1B–TUBB3 protein was thawed on ice and filtered through a 0.1 µm centrifugal Filter (EMD Millipore, UFC30VV00) at 4 °C to remove protein aggregates. The filtered protein was diluted to a final concentration of 15 µM in RBR110 buffer (110 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA) with 10 mM GMPCPP. The GMPCPP-stabilized microtubules were polymerized at 37 °C for 1 hr. The polymerized microtubules (4 µl) were applied to a glow discharged quantifoil holey carbon R1.2/1.3 copper grid (Electron Microscopy Sciences, Q350CR1.3) and allowed to adhere for 30 s in the chamber of a Vitrobot (ThermoFisher, Mark IV) set to 30 °C and 95% relative humidity. The VASH1-SVBP complex consisting of VASH1 C169S and full-length SVBP (2 μl of a 300 μM solution) was then added to the grid containing microtubules and incubated for 30 s. Then, 4 μl of the protein mixture was removed from the grid and another 2 μl of VASH1-SVBP was added. After another 30 s incubation, the grid was blotted for 4 s and plunged into ethane slush.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 The dataset of GMPCPP-microtubules decorated with VASH1-SVBP C169S was collected with SerialEM on a 300-keV Titan Krios (FEI) transmission electron microscope. Movies were collected in super-resolution mode on a K3 Summit direct electron detector (Gatan), with a physical pixel size of 0.83 Å (nominal magnification 105,000X). The frame rate was 0.03 s/frame and the total exposure time was 1.2 s, resulting in an accumulated total exposure of ~50 electron/Å2. A defocus range from −0.9 to −2.5 μm was used.
 
-## Image processing
+### Image processing
 
 Motion correction for each movie stack was performed with the MotionCor2 program (Zheng et al., 2017). The contrast transfer function parameters were estimated from the motion-corrected micrographs with Gctf (Zhang, 2016). The microtubules were selected manually from the motion-corrected micrographs in Relion (Zivanov et al., 2018). The selected microtubule images were computationally cut into overlapping boxes, with a ∼80 Å non-overlapping region along the microtubule axis between adjacent boxes. 2D classification was performed in Relion to remove bad segments. Two rounds of helical refinement were performed in Relion, with each round of refinement assuming that microtubules all belonged 13- or 14-protofilament, respectively. The two resulting volumes were then used as templates in 3D classification to separate segments that belonged to 13- and 14-protofilament microtubules. Segments belonged to 14-protofilament microtubules were selected for an additional round of helical refinement in Relion to generate a map that did not distinguish α- and β-tubulins. The output map was low-pass filtered and masked to identify the seam and to impose the 1:1 VASH1:αβ-tubulin stoichiometry, and was used as the initial model for the following steps in Frealign (Grigorieff, 2007; Grigorieff, 2016). The segments were first aligned with global search, followed by local search with 14-fold pseudo-helical symmetry. After each iteration, a homemade script was used to crop out the best asymmetric unit and to rebuild the entire volume, which was used as the reference for the next iteration. The final resolution was estimated in Relion with the unfiltered half maps from the last iteration in Frealign.
 
-## Model building, refinement and validation
+### Model building, refinement and validation
 
 The crystal structure of human VASH1-SVBP complex (PDB: 6OCG) and the EM structure of GMPCPP-stabilized microtubules (PDB: 6DPU) were fitted as rigid bodies into the cryo-EM map using the ‘Fit in Map’ utility in Chimera (Pettersen et al., 2004). A new αβ-tubulin model was generated in Coot (Emsley and Cowtan, 2004) by mutating residues of the GMPCPP-stabilized microtubules to match human TUBA1B and TUBB3 sequences and manually adjusted according to the density. For refinement, two copies of the αβ-tubulin model were docked into the segmented density from the final 14-protofilament map to form two adjacent tubulin heterodimers. Several rounds of further refinement were then performed using ‘Real_space_refinement’ in Phenix (Adams et al., 2010). The statistics and geometries for the final model were generated with MolProbity (Williams et al., 2018) and summarized in Table 1. The figures were prepared with PyMol (https://pymol.org/) or Chimera.
 
-## Microtubule pelleting assays
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>VASH1-SVBP-microtubule</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-Å−2)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−0.9 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>Pseudo-Helical</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>156,525</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>46,999</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)/FSC threshold</td>
+      <td>3.1/0.143</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å−2)</td>
+      <td>−60</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Initial model used</td>
+      <td>PDB: 6OCG, 6DPU</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)/FSC threshold</td>
+      <td>3.9/0.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model composition</td>
+    </tr>
+    <tr>
+      <td>Nonhydrogen atoms</td>
+      <td>18,196</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2296</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td colspan="2">B factors (Å−2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>143.68</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>101.97</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.931</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.81</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.56</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.35</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.09</td>
+    </tr>
+  </tbody>
+</table>
+
+### Microtubule pelleting assays
 
 The polymerized microtubules (with a monomer concentration of 15 µM) were prepared as described above for EM grid preparation. GMPCPP-stabilized microtubules and VASH1-SVBP wild type or mutants were mixed in pre-warmed RBR80 buffer with 5 mM GMPCPP, and incubated at 37 °C for 5 min. The final concentration of microtubules and VASH1-SVBP is 0.6 µM. The reaction mixtures were then centrifuged at 132,000 g for 30 min to pellet the microtubules. After three gentle washes with the warmed RBR80 buffer, the microtubule pellets were resuspended in the SDS sample buffer and analyzed by SDS-PAGE. The gels were stained by Coomassie brilliant blue and scanned with an Odyssey Infrared Imaging System (LI-COR).
 
-## In vitro detyrosination assays
+### In vitro detyrosination assays
 
 For in vitro detyrosination assays with GST-CTα (the C-terminal tail of α-tubulin) as the substrate, VASH152-310-SVBP wild type or mutants (100 nM) were incubated with 500 nM GST-CTα in the buffer containing 25 mM Tris, pH 7.5, 100 mM NaCl, and 1 mM DTT. The reaction mixtures were incubated at room temperature for 10 min. For in vitro detyrosination assays of microtubules, the polymerized αβ-tubulin proteins were diluted to 0.5 μM with warm BRB80 buffer. VASH152-310-SVBP wild type or mutant proteins (100 nM) were then incubated with 200 nM polymerized microtubules in the BRB80 buffer at room temperature for 5 min. The reactions were stopped by the addition of 2X SDS sample buffer, boiled, and subjected to SDS-PAGE followed by immunoblotting. The blots were scanned with an Odyssey Infrared Imaging System (LI-COR).
 
-## Cell culture, transfection, and immunoblotting
+### Cell culture, transfection, and immunoblotting
 
 HeLa Tet-On cells (Takara Bio USA, Inc) were used to analyze the detyrosination activities of VASH1-SVBP mutants because of the low endogenous detyrosination levels in these cells. The cell line has been validated to be of HeLa origin by short tandem repeat profiling. The cells are routinely checked for mycoplasma contamination with DAPI staining. The cells were grown in DMEM (Invitrogen) supplemented with 10% fetal bovine serum and 2 mM L-glutamine. All plasmids for mammalian cell expression used in this study were cloned into the modified pCS2 vector that encodes six copies of the Myc tag at the N-terminus. Plasmid transfection was performed using the Lipofectamine 2000 Transfection Reagent (Thermo Fisher Scientific, 11668019) per the manufacturer’s protocols. Cells in each well of a 12-well plate were transfected with a total of 1 µg plasmids (0.5 µg VASH1 and 0.5 µg SVBP) when the cell density reached 70% confluency. The cells were washed once with 1 ml PBS at 24 h post-transfection and collected by directly re-suspending them in 150 µl 1X SDS sample buffer. The samples were boiled at 100 °C for 15 min and subjected to immunoblotting with appropriate antibodies. The primary antibodies were used at a final concentration of 1 μg ml−1 diluted in TBS containing 0.05% Tween 20% and 5% dry milk. Anti-mouse IgG (H+L) (Dylight 680 conjugates) and anti-rabbit IgG (H+L) (Dylight 800 conjugates) (Cell Signaling) were used as secondary antibodies. The blots were scanned with an Odyssey Infrared Imaging System (LI-COR).

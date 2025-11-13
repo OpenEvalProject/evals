@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.37434.001 Seed dormancy is an adaptive trait preventing premature germination out of season. In a previous report (Piskurewicz et al., 2016) we showed that dormancy levels are maternally inherited through the preferential maternal allele expression in the seed endosperm of ALLANTOINASE ( ALN ), a negative regulator of dormancy. Here we show that suppression of ALN paternal allele expression is imposed by non-canonical RNA-directed DNA methylation (RdDM) of the paternal ALN allele promoter. Dormancy levels are further enhanced by cold during seed development. We show that DNA methylation of the ALN promoter is stimulated by cold in a tissue-specific manner through non-canonical RdDM, involving RDR6 and AGO6. This leads to suppression of ALN expression and further promotion of seed dormancy. Our results suggest that tissue-specific and cold-induced RdDM is superimposed to parental allele imprints to deposit in the seed progeny a transient memory of environmental conditions experienced by the mother plant.
+Seed dormancy is an adaptive trait preventing premature germination out of season. In a previous report (Piskurewicz et al., 2016) we showed that dormancy levels are maternally inherited through the preferential maternal allele expression in the seed endosperm of ALLANTOINASE (ALN), a negative regulator of dormancy. Here we show that suppression of ALN paternal allele expression is imposed by non-canonical RNA-directed DNA methylation (RdDM) of the paternal ALN allele promoter. Dormancy levels are further enhanced by cold during seed development. We show that DNA methylation of the ALN promoter is stimulated by cold in a tissue-specific manner through non-canonical RdDM, involving RDR6 and AGO6. This leads to suppression of ALN expression and further promotion of seed dormancy. Our results suggest that tissue-specific and cold-induced RdDM is superimposed to parental allele imprints to deposit in the seed progeny a transient memory of environmental conditions experienced by the mother plant.
 
 ## Introduction
 
@@ -30,15 +30,23 @@ Our previous report left unanswered the question of the nature of the mechanism 
 
 ## Results
 
-## ALN imprinting is maintained in met1 mutants and lost in drm1drm2 mutants
+### ALN imprinting is maintained in met1 mutants and lost in drm1drm2 mutants
 
 To investigate whether ALN paternal allele suppression requires DNA methylation, we pollinated WT Cvi plants with pollen from methyltransferase mutants, met1 (Col ecotype) and drm1drm2, hereafter referred as drm mutants (Ws), lacking functional DRM1 and DRM2.
 
 Preferential maternal ALN allele expression was retained in WT x met1 hybrid seed endosperm but not in that of WT x drm (Figure 1A). We also pollinated WT Cvi plants with nrpd1 (Col-0) pollen, deficient in the largest subunit of Pol IV. Interestingly, WT x nrpd1 hybrid seed endosperm retained preferential maternal ALN allele expression (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sanger sequencing chromatograms at SNPs of ALN. WT plants (Cvi) were pollinated with WT (Col and Ws) and mutant pollen as indicated. RNA was extracted from endosperm of F1 seeds and subjected to RT-PCR followed by Sanger sequencing. Nucleotides at SNP sites are highlighted in red: ‘C’ originates from Cvi and ‘T’ originates from Ws and Col. Representative results are shown from experiments repeated at least 5 times for each genotype. (B) DNA methylation on the ALN 5’ and 3’ flanking regions in endosperm of mature seed. Black box arrows and yellow box arrows show genes and TEs respectively. Blue lines show regions where DNA methylation was studied. Red line (300 bp) shows ALN’s highly methylated 5’ upstream region (referred as ‘POGO region’). All remaining methylation data shown in this figure only correspond to the 300 bp POGO region. Red, blue and green vertical lines represent CG, CHG, and CHH methylation levels, respectively. (C) Percentages of CHH methylation levels corresponding to the POGO region in different RdDM mutants (Materials and methods). drm1drm2 is in Ws background; ago4ago6 is generated after crossing ago4 with ago6 in Ler and C24 background, respectively; all other mutants are in Col-0 background. Percentages of DNA methylation at CG and CHG sites are shown in Figure 1—figure supplement 1. (D) DNA methylation levels in maternal and paternal alleles. DNA extracted from endosperm and embryo of F1 seeds obtained after reciprocally crossing Cvi and Col WT plants was analyzed by sodium bisulfite sequencing. SNPs were used to distinguish maternal and paternal alleles. Filled and open circles represent methylated and unmethylated cytosines, respectively. (E) Percentage of DNA methylation in the POGO region in different tissues. (F) Percentage of DNA methylation in the POGO region in female and male gametes. The data were extracted from published whole genomic DNA methylation data of female (Park et al., 2016) and male (Ibarra et al., 2012) gametes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) DNA methylation in the POGO region upstream of ALN in the endosperm of WT seeds and RdDM mutant seeds. The studied region is depicted by a red line in Figure 1B. Filled and open circles represent methylated and unmethylated cytosines respectively. (B) Histograms show percentages of CG and CHG, and CHH methylation in the POGO region of WT and different RdDM mutants as indicated. (C) aln x nrpe1 and aln x WT F1 seeds were after-ripened for 7 days. Germination was scored 72 hr upon seed imbibition (eight replicates, n = 50). (D) DNA methylation levels in the POGO region of maternal and paternal alleles. DNA from endosperm and embryo of F1 seeds obtained after reciprocally crossing Cvi and Col WT plants was analyzed by sodium bisulfite sequencing. SNPs were used to distinguish maternal and paternal alleles. (E) DNA methylation in the POGO region in different tissues of WT (Col) plants. (F) Histograms show percentage of DNA methylation in the POGO region in sperm cells and vegetative cell from two independent published whole genomic DNA methylation data of male gamete (Calarco et al., 2012 and Hsieh et al., 2016).
+
 Altogether, these results show that ALN imprinting requires non-canonical RdDM for paternal allele silencing rather than MET1 or canonical RdDM as previously reported (Gehring, 2013; Vu et al., 2013; Rodrigues and Zilberman, 2015). We therefore hypothesized that ALN imprinting necessitates DNA methylation marks deposited by non-canonical RdDM. Thus, we explored whether genomic DNA neighboring ALN could indeed be targeted by non-canonical RdDM.
 
-## ALN upstream sequences are targeted by non-canonical RdDM
+### ALN upstream sequences are targeted by non-canonical RdDM
 
 The 5’ and 3’ flanking regions of ALN contain transposable elements (TEs), which are often associated with DNA methylation (Figure 1B). We analyzed DNA methylation levels in a region of about 1.3 kbp spanning −1500 to −200 bp relative to ALN’s transcription start site (TSS), and in a region of about 1.7 kbp spanning −200 to +1500 bp relative to ALN’s transcription termination site (TTS) (Figure 1B). We identified a heavily methylated region of about one kbp in the 3’ flanking region and a moderately methylated region of about 300 bp located about 1.0 kbp upstream of ALN’s TSS (Figure 1B). Downstream of ALN’s TTS the levels of CHH methylation, which can be mediated by RdDM, were markedly reduced in drm mutants and nrpd1 mutants (Figure 1B). In contrast, in the methylated region upstream of ALN’s TSS, CHH methylation levels in nrpd1 were similar to WT levels unlike those in drm, which were markedly lower (Figure 1B). We also analyzed DNA methylation upstream of ALN’s TSS in nrpe1, deficient in the largest subunit of Pol V, and met1 mutants. Overall CHH methylation levels in met1 were similar to WT levels whereas they were markedly lower in nrpe1 mutants (Figure 1C, and Figure 1—figure supplement 1).
 
@@ -50,7 +58,7 @@ To further investigate whether CHH methylation in the POGO region affects ALN im
 
 We previously showed that seed dormancy levels can be regulated by maternal ALN allele expression. Indeed, we showed that aln x WT hybrid F1 seeds obtained after pollinating aln plants with WT pollen have higher dormancy than WT seeds (Piskurewicz et al., 2016). To further assess the role of RdDM in maternal regulation of seed dormancy, we pollinated aln mutant plants with WT and nrpe1 pollen. Dormancy levels in aln x nrpe1 hybrid F1 seeds were lower relative to aln x WT hybrid seeds, further indicating that maternal regulation of seed dormancy requires suppression of ALN paternal allele by RdDM (Figure 1—figure supplement 1C).
 
-## The paternal POGO region has higher CHH methylation
+### The paternal POGO region has higher CHH methylation
 
 To assess whether CHH methylation of the POGO region could be involved in suppressing ALN’s paternal allele, we measured allele-specific methylation in the POGO region of hybrid seeds obtained after reciprocally crossing Col and Cvi plants. In embryos, CG methylation levels were similar between parental alleles whereas CHH methylation levels were higher in Cvi alleles (Figure 1D and Figure 1—figure supplement 1). This bias likely reflects accession differences in DNA methylation levels in the POGO region.
 
@@ -62,7 +70,7 @@ ALN expression is not silenced in seedlings and flowers (Schmid et al., 2005; Wa
 
 This further suggests that methylation of CHH sites in the POGO region, mediated by non-canonical RdDM, rather than CG sites, which are present at low density in the POGO region, are involved in suppressing ALN paternal allele expression.
 
-## Preferential paternal POGO region methylation likely originates in the male germ line
+### Preferential paternal POGO region methylation likely originates in the male germ line
 
 Available genomic methylation data revealed that CHH methylation levels in the POGO region are low (about 4%) in the central cell (Figure 1F and Figure 1—figure supplement 1) (Calarco et al., 2012; Ibarra et al., 2012; Hsieh et al., 2016; Park et al., 2016). DME is active in the central cell where it establishes imprinted gene expression in numerous imprinted genes after removing DNA methylation (Choi et al., 2002; Park et al., 2016). In dme mutants CHH methylation levels in the central cell remain low and similar to those in WT plants (Figure 1F). Thus, in the case of ALN, higher paternal CHH methylation in the POGO region does not result from DME-dependent CHH methylation removal in the central cell.
 
@@ -70,13 +78,21 @@ In the case of sperm cells, different POGO region methylation levels are reporte
 
 Altogether, these data suggest that preferential paternal ALN allele POGO region CHH methylation is a phenomenon specific to the male germ cell lineage, which is further maintained in the endosperm after fertilization. In turn, this leads to paternal allele suppression of ALN expression in the endosperm upon imbibition of mature dormant seeds.
 
-## Cold temperatures during seed development increase methylation of the POGO region through RDR6-RdDM
+### Cold temperatures during seed development increase methylation of the POGO region through RDR6-RdDM
 
 Seed development under cold temperatures leads to increased seed dormancy levels, which is associated with low ALN expression upon seed imbibition (Piskurewicz et al., 2016; Penfield and MacGregor, 2017). Interestingly, ALN imprinting was lost in seeds produced at 10 ˚C suggesting that cold perturbs the DNA methylation imprints associated with ALN (Figure 2A). In seeds produced at 10 ˚C, we observed that the length of the methylated POGO region expanded by 200 bp and CHH methylation levels markedly increased while the DNA methylation levels downstream of ALN’s TTS were similar to those observed in seeds produced at 22 ˚C (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sanger sequencing chromatograms at SNPs of ALN. WT (Cvi) plants cultivated at 22 ˚C or 10 ˚C were pollinated with WT (Col) pollen. RNA was extracted from endosperm of F1 seeds and subjected to RT-PCR followed by Sanger sequencing. Nucleotides at SNP sites are highlighted in red: ‘C’ originates from Cvi and ‘T’ originates from Col. Representative results are shown from experiments repeated at least five times for each genotype. (B) DNA methylation in the ALN 5’ and 3’ flanking regions of the endosperm of mature seeds. Blues lines show regions where DNA methylation was studied. Dashed red line (500 bp) shows the region analyzed for DNA methylation levels. All remaining methylation data shown in this figure only correspond to this 500 bp region. Red, blue and green vertical lines represent CG, CHG, and CHH methylation levels, respectively. (C) Histograms show percentage of DNA methylation in the 500 bp region. DNA extracted from endosperm of WT seeds and RdDM mutant seeds produced at 22 ˚C or 10 ˚C was analyzed by sodium bisulfite sequencing. (D) Cold-induced and seed-specific DNA methylation. Seeds produced at 22 ˚C or 10 ˚C were sown and the resulting seedlings cultivated at 22 ˚C for three weeks prior to DNA extraction and sodium bisulfite sequencing analysis (Whole seedling).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The region analyzed for DNA methylation is indicated in Figure 2B. DNA was extracted from endosperm of mature seeds produced at 22 ˚C or 10 ˚C was analyzed by sodium bisulfite sequencing.
+
 Cold-induced CHH methylation was observed in nrpd1 but not in drm or nrpe1 mutants (Figure 2C and Figure 2—figure supplement 1). This strengthens the notion that the POGO region is a target of non-canonical RdDM. Indeed, cold-induced CHH methylation was dependent on RDR6 and AGO6 but not on RDR2 or AGO4 (Figure 2C and Figure 2—figure supplement 1). These results therefore show that non-canonical RDR6-RdDM is required for cold-induced CHH methylation of the POGO region.
 
-## Cold-dependent and tissue-specific stimulation of AGO6 expression likely drives cold-induced methylation of the POGO region in seeds
+### Cold-dependent and tissue-specific stimulation of AGO6 expression likely drives cold-induced methylation of the POGO region in seeds
 
 Increased CHH methylation in the POGO region was observed both in the endosperm and embryo from seeds produced at 10 ˚C, but not in the flowers from plants cultivated at 10 ˚C (Figure 2D). This indicated that cold-induced CHH methylation in mature seeds takes place in gametes or in fertilization tissues or both.
 
@@ -86,15 +102,31 @@ We therefore hypothesized that cold-induced POGO region CHH methylation in matur
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig3-v1.jpg)
 
-**Figure 3.:** AGO6 expression is tissue-specific and is stimulated by cold.(A) pAGO6::AGO6-GFP and pRDR6::RDR6-GFP transgenic lines were used to image AGO6-GFP and RDR6-GFP fluorescence, respectively, at various stages of ovule and seed development using confocal laser-scanning microscopy. Plants lacking the transgene are shown as a negative control (No transgene). Chlorophyll auto-fluorescence appears in red. Arrows indicate pre- and after-fertilization ovules. (B) qRT-PCR analysis of AGO6, AGO4, RDR2, and RDR6 mRNA accumulation in plants cultivated at 22˚C and 10˚C. RNA was extracted from stamens (Stamen), pre-fertilization ovules (Pre-f. ovule), developing seeds at the heart stage (Seed early) and developing seeds at the mature green stage (Seed late). Expression levels were normalized to those of PP2A. Error bars indicate SD from three technical replicates. Experiments were repeated two times giving similar results.10.7554/eLife.37434.010Figure 3—source data 1.Figure 3B: qRT-PCR expression analysis of AGO6, AGO4, RDR2, and RDR6.
+**Figure 3.:** (A) pAGO6::AGO6-GFP and pRDR6::RDR6-GFP transgenic lines were used to image AGO6-GFP and RDR6-GFP fluorescence, respectively, at various stages of ovule and seed development using confocal laser-scanning microscopy. Plants lacking the transgene are shown as a negative control (No transgene). Chlorophyll auto-fluorescence appears in red. Arrows indicate pre- and after-fertilization ovules. (B) qRT-PCR analysis of AGO6, AGO4, RDR2, and RDR6 mRNA accumulation in plants cultivated at 22˚C and 10˚C. RNA was extracted from stamens (Stamen), pre-fertilization ovules (Pre-f. ovule), developing seeds at the heart stage (Seed early) and developing seeds at the mature green stage (Seed late). Expression levels were normalized to those of PP2A. Error bars indicate SD from three technical replicates. Experiments were repeated two times giving similar results.
 
 Taken together these results suggest that cold temperatures could stimulate AGO6 expression and product accumulation in gametes and fertilization tissues. They support the hypothesis that cold stimulates RDR6-RdDM in male and female reproductive tissues or early developing seeds or both, thus leading to increased CHH methylation of the POGO region in mature seeds (Figure 4—figure supplement 3). In turn, increased methylation of ALN maternal allele would lead to loss of imprinting.
 
 Furthermore, seedlings arising from seeds produced at 10 ˚C or at 22 ˚C had similar methylation levels in the POGO region (Figure 2D). This strongly suggests that after germination cold-induced CHH methylation is lost as the combined result of cell division and absence of AGO6 expression in seedlings (McCue et al., 2015).
 
-## Methylation changes in the POGO region correlate with changes in ALN expression and dormancy levels
+### Methylation changes in the POGO region correlate with changes in ALN expression and dormancy levels
 
 We investigated whether changes in the POGO region CHH methylation are associated with changes in ALN endosperm expression levels. ALN endosperm expression upon seed imbibition was higher in WT seeds produced at 22 ˚C relative to seeds produced at 10 ˚C, as previously shown (Figure 4A) (Piskurewicz et al., 2016). In nrpd1 mutant seeds produced at 10 ˚C, in which CHH methylation is increased by cold, ALN expression was suppressed similarly to WT (Figure 4A). In contrast in drm mutants produced at 10 ˚C, ALN expression was comparable to that found in drm seeds produced at 22 ˚C.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig4-v1.jpg)
+
+**Figure 4.:** (A) qRT-PCR analysis of ALN mRNA accumulation in WT, nrpd1 and drm1drm2 endosperm. RNA was extracted from endosperm of seeds produced at 22˚C and 10˚C and imbibed for 48 hr. ALN expression levels were normalized to those of PP2A. Error bars indicate SD of results from three technical replicates. Experiments were repeated three times giving similar results. (B) Analysis of reporter expression driven by ALN upstream sequences. Two different lengths of ALN upstream sequences (open box) were fused to GUS gene (filled box) and transformed into WT plants (Ws background). RNA was extracted from endosperm of seeds produced at 22˚C and 10˚C and imbibed for 48 hr. GUS expression levels were normalized to those of PP2A. Analysis was performed on three independent transgenic lines. Error bars indicate SD of results from three technical replicates. (C) Histograms show percent germination in populations of seeds produced 10 ˚C. Germination was scored 96 hr after seed imbibition (three biological replicates, n = 80–120). drm1drm2 is in Ws background; all other mutants are in Col-0 background. (D) Inducing DNA methylation of the AthPOGON1-containing region upstream of ALN. A DNA fragment covering AthPOGON1 (indicated by a green line) was cloned into a RNAi vector to produce double stranded inverted repeats (Materials and methods) and transformed into WT plants (Ws background). Dormancy levels, CHH methylation levels of endogenous ALN upstream sequences (Materials and methods) and ALN expression levels were analyzed for independent transgenic lines as shown. For the analysis of dormancy levels, seeds were after-ripened for 10 days, and germination was scored 72 hr upon seed imbibition (three replicates, n = 100). RNA was extracted from endosperm 48 hr after imbibition. ALN expression levels were normalized to those of PP2A. Error bars indicate SD of results from three technical replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Histograms show percent germination in populations of seeds produced 22 ˚C. Germination was scored 96 hr after seed imbibition (three biological replicates, n = 80–120). (B) Histograms show percent germination after four days stratification in populations of seeds produced at 10 ˚C. Germination was scored 96 hr after seed imbibition (two biological replicates, n = 80–120). (C) Pictures show plants from seeds produced at 10 ˚C and imbibed for 96 hr. (D) nrpd1 mutant seeds produced at 22 ˚C are less dormant. Germination assay was performed under suboptimal conditions (De Giorgi et al., 2015): seeds were sown in the dark and exposed to a far red (FR) light pulse for 5 min; germination was induced by exposing seeds to a red light pulse (R) for 5 min. Germination assay was performed using WT (Col and Ws), nrpd1, drm (drm1drm2) seeds produced at 22 ˚C and dry after-ripened for one week. Pictures show plants 4 days after the red pulse.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Histograms show percent germination after stratification in populations of transgenic lines shown in Figure 4D produced at 22 ˚C. Germination was scored 48 hr after seed imbibition (two biological replicates, n = 80–120). (B) Pictures show transgenic lines shown in Figure 4D. Seeds from each line were after-ripened for 10 days and imbibed for 72 hr. (D) DNA methylation in the POGO region. The region analyzed for DNA methylation is indicated in Figure 2B. DNA was extracted from endosperm transgenic lines shown in Figure 4D was analyzed by sodium bisulfite sequencing.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37434/elife-37434-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Under warm temperatures (22 ˚C), CHH methylation levels in the ALN promoter are lower in vegetative and flower tissues. During gametogenesis, CHH methylation is established in the sperm cells as a result of tissue-specific expression of AGO6, thus promoting non-canonical RdDM, which involves RDR2, RDR6, AGO6 and AGO4 components but not Pol IV. The paternal allele CHH methylation is maintained during seed development, which is likely due to pollen- and seed-specific non-canonical RdDM activity. (B) Under cold temperatures (10 ˚C) AGO6 accumulation is stimulated in pre-fertilization ovular tissues, which can increase RDR6-RdDM-dependent maternal allele methylation of the POGO region upstream of ALN. Cold also enhances AGO6 accumulation in stamens and post-fertilization ovular tissues, which can further increase methylation of the POGO region in mature seeds. Suppression of ALN expression promotes seed dormancy.
 
 To further investigate the role of DNA methylation to regulate ALN gene expression, we generated transgenic lines where the expression of the GUS reporter gene is controlled by sequences upstream the ALN’s TSS that either lack (pALN-845) or contain (pALN-1525) the highly methylated POGO region (Figure 4B). In three independent pALN-1525 transgenic lines, harboring the POGO region, GUS expression was suppressed in seeds produced at 10 ˚C relative to that in seeds produced at 22 ˚C (Figure 4B). In contrast in three independent pALN-845 lines, lacking the POGO region, GUS expression levels were similar between seeds produced at 22 ˚C and those produced at 10 ˚C (Figure 4B).
 
@@ -112,13 +144,13 @@ Altogether, these results support a model where cold-induced and RDR6-RdDM-depen
 
 ## Discussion
 
-## ALN imprinting is implemented by non-canonical RdDM
+### ALN imprinting is implemented by non-canonical RdDM
 
 Here we showed that ALN preferential maternal allele expression depends on DNA methylation of the paternal allele through non-canonical RdDM rather than MET1 as previously proposed for numerous MEGs (Gehring, 2013; Rodrigues and Zilberman, 2015). An association between RdDM and imprinted gene expression early upon fertilization has previously being described showing that some imprinted genes require canonical RdDM for paternal allele suppression; however, they also require MET1 activity (Vu et al., 2013).
 
 The low abundance of CG sites in the ALN promoter suggests that CG methylation is not involved in suppressing ALN expression. In contrast, we showed that CHH methylation of POGO region located upstream of ALN’s TSS positively correlate with low ALN expression. This indicates that CHH methylation mediated by RdDM regulates ALN gene expression.
 
-## Developmental origin of the imprinting marks
+### Developmental origin of the imprinting marks
 
 Our results indicate that ALN paternal allele CHH methylation is established in sperm cells during gametogenesis and maintained during seed development, which may be due to non-canonical RdDM specifically taking place in the male gamete lineage or fertilization tissues or both (Figure 4—figure supplement 3).
 
@@ -128,7 +160,7 @@ One possible explanation for this discrimination is that RdDM is more efficient 
 
 Another possibility is that higher paternal allele CHH methylation levels at the time of fertilization serve as a primary imprint, which can generate a secondary imprint such as histone modification. This secondary imprint would then attract RdDM and thus maintain higher levels of CHH methylation in the paternal ALN allele. In plants, H3K27 trimethylation was shown to serve as a secondary imprint in some paternally expressed genes (Gehring, 2013; Rodrigues and Zilberman, 2015). In these cases, DNA hypomethylation of the maternal allele promotes H3K27 trimethylation, which suppresses maternal allele expression. This scenario could also operate in the case of ALN. Consistent with th possibility that H3K27 trimethylation could serve as a secondary imprint, a recent report showed that H3K27 trimethylation also takes place in hypermethylated paternal alleles (Moreno-Romero et al., 2016).
 
-## Cold-dependent RdDM in mature seeds is reset after germination
+### Cold-dependent RdDM in mature seeds is reset after germination
 
 Previous studies associated environmental cues, including cold temperatures, with changes in CHH methylation levels in Arabidopsis and different plant species (Dubin et al., 2015; Secco et al., 2015; Wibowo et al., 2016; Secco et al., 2017). In most cases changes are transient, which is consistent with the notion that CHH methylation can be a dynamic process contrarily to CG methylation, which is faithfully maintained by MET1 after each cell division (Kawakatsu et al., 2017).
 
@@ -140,26 +172,26 @@ Similarly, we propose that cold-induced CHH methylation of the POGO region locat
 
 ## Materials and methods
 
-## Plant material
+### Plant material
 
 Arabidopsis mutants, met1‐1 (Kankel et al., 2003), nrpd1a-3 (Herr et al., 2005), drm1-1 drm2-1 (Cao and Jacobsen, 2002), nrpe1 (SALK_017795), ago4 (SALK_027933), ago6-2 (SALK_031553), ago4-1 ago6-1 (Zheng et al., 2007), rdr2 (SALK_206644), rdr6-11 (Peragine et al., 2004), rdr2-1 rdr6-15 (Garcia-Ruiz et al., 2010) were obtained from The European Arabidopsis Stock Centre (RRID:SCR_004576). pAGO6::AGO6-GFP (McCue et al., 2015) and pRDR6::RDR6-GFP (McCue et al., 2012) transgenic lines were kindly provided by Dr. Keith Slotkin. 35S :ALN (Watanabe et al., 2014) construct was kindly provided by Dr. Atsushi Sakamoto.
 
-## Plant growth conditions and germination assays
+### Plant growth conditions and germination assays
 
 Plants were grown at 21–23°C, 16 hr/8 h day/night photoperiod, light intensity of 80 μE·m−2·s−1, humidity of 70%. For cold temperature treatment, plants were transferred to growth cabinets at 10°C after bolting. For germination assays, seeds were surface-sterilized (5% Bleach, 0.05% Tween) and sown on a Murashige and Skoog medium containing 0.8% (w/v) Bacto-Agar (Applichem). Between 80 and 150 seeds were examined with a Stemi 2000 (Zeiss) stereomicroscope and photographed with a high-resolution digital camera (Axiocam Zeiss) at different times of seed imbibition.
 
-## Plasmid construction and plant transformation
+### Plasmid construction and plant transformation
 
 For the GUS reporter gene construct, a 1525 bp fragment spanning −1525 to −1, and a 845 bp fragments spanning −845 to −1 relative to the TSS of ALN were amplified from WT Col-0 genome by PCR and cloned into BamHI and SalI sites flanking the GUS coding region of pBI101 plasmid. For the RNAi vector, the 601 bp flagment spanning −846 to −1446 bp relative to ALN’s TSS was similarly amplified by PCR and cloned into the pRNAi-GG plasmid following the protocol from Yan et al. (2012). The 35S::ALN plasmid was described previously (Watanabe et al., 2014). The resulting constructs were introduced into Agrobacterium tumefaciens GV3101 strains to transform wild-type Col-0 or Ws plants by the floral‐dip method as previously described (Clough and Bent, 1998). Plants from T2 and T3 generation were used for analysis. Primers used in this study are listed in Supplementary file 1.
 
-## DNA methylation analysis
+### DNA methylation analysis
 
 Genomic DNA from embryo and endosperm was extracted as described previously (Piskurewicz and Lopez-Molina, 2011). Genomic DNA from flower and seedling was extracted with DNeasy Plant Mini Kit (Qiagen). Bisulfite DNA conversion was performed using EpiTect Bisulfite Kits (Qiagen). PCR was performed with primers listed in Supplementary file 1. Amplified fragments were cloned into the pGEM-T Easy Vector (Promega) and 10 to 12 independent clones for each sample were sequenced. Experiments were repeated at least twice. Sequencing data were analyzed with Kismeth (http://katahdin.mssm.edu/ kismeth).
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
 Total RNA was extracted as described previously (Piskurewicz and Lopez-Molina, 2011). Total RNAs were treated with RQ1 RNase-Free DNase (Promega) and reverse-transcribed using ImpromII reverse transcriptase (Promega) and oligo(dT)15 primer (Promega). Quantitative RT–PCR was performed by using the ABI 7900HT fast real-time PCR system (Applied Biosystems) and Power SYBR Green PCR master mix (Applied Biosystems). Relative transcript levels were calculated using the comparative ΔCt method and normalized to the PP2A (AT1G69960) gene transcript levels. Primers used in this study are listed in Supplementary file 1.
 
-## Confocal microscopy
+### Confocal microscopy
 
 The confocal fluorescent images were obtained by a Zeiss LSM 700 confocal microscope and ZEN microscope and imaging software package (Zeiss). GFP signals were taken with 488 nm laser and 520/35 nm band-pass filter. Chlorophyll autofluorescence signals were taken with 639 nm laser and 640 LP band-pass filter.

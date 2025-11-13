@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.36607.001 Pain is a prevalent symptom of Parkinson’s disease, and is effectively treated by deep brain stimulation of the subthalamic nucleus (STN). However, the link between pain and the STN remains unclear. In the present work, using in vivo electrophysiology in rats, we report that STN neurons exhibit complex tonic and phasic responses to noxious stimuli. We also show that nociception is altered following lesions of the STN, and characterize the role of the superior colliculus and the parabrachial nucleus in the transmission of nociceptive information to the STN, physiologically from both structures and anatomically in the case of the parabrachial nucleus. We show that STN nociceptive responses are abnormal in a rat model of PD, suggesting their dependence on the integrity of the nigrostriatal dopaminergic system. The STN-linked nociceptive network that we reveal is likely to be of considerable clinical importance in neurological diseases involving a dysfunction of the basal ganglia.
+Pain is a prevalent symptom of Parkinson’s disease, and is effectively treated by deep brain stimulation of the subthalamic nucleus (STN). However, the link between pain and the STN remains unclear. In the present work, using in vivo electrophysiology in rats, we report that STN neurons exhibit complex tonic and phasic responses to noxious stimuli. We also show that nociception is altered following lesions of the STN, and characterize the role of the superior colliculus and the parabrachial nucleus in the transmission of nociceptive information to the STN, physiologically from both structures and anatomically in the case of the parabrachial nucleus. We show that STN nociceptive responses are abnormal in a rat model of PD, suggesting their dependence on the integrity of the nigrostriatal dopaminergic system. The STN-linked nociceptive network that we reveal is likely to be of considerable clinical importance in neurological diseases involving a dysfunction of the basal ganglia.
 
 ## Introduction
 
@@ -45,9 +45,9 @@ We present convergent evidence that the STN is functionally linked to a nocicept
 
 ## Results
 
-## Nociceptive responses in STN
+### Nociceptive responses in STN
 
-## STN neurons
+#### STN neurons
 
 A total of 98 cells were recorded across the STN (Figure 2A). The STN neurons sampled in the present study were characterized by a triphasic action potential in the majority of cases (n = 88, mean duration = 2.1 ± 0.06 ms), the remaining cells having a biphasic action potential (n = 10, mean duration 1.58 ± 0.12 ms) (Figure 2B). The STN cells had a mean baseline firing rate of 7.39 Hz (± 0.53 Hz) and exhibited various spontaneous patterns of activity such as an irregular pattern (n = 42, 43%), a regular pattern (n = 26, 27%) and a bursting pattern (n = 20, 20%) (Figure 2C). The remaining cells (n = 10, 10%) exhibited a mixture of these features. These electrophysiological characteristics are concordant with those reported elsewhere in the literature in anesthetized rats (Hassani et al., 1996; Kreiss et al., 1996; Hamani et al., 2004).
 
@@ -55,7 +55,7 @@ A total of 98 cells were recorded across the STN (Figure 2A). The STN neurons sa
 
 **Figure 2.:** (A) Location of recording sites within the STN. Note that the number of non-responding cells is higher in the caudal part of the STN. (B) Example of triphasic (top) and biphasic (bottom) spike waveforms of STN neurons. (C) Individual recordings illustrating STN irregular (top), regular (middle) and in burst (bottom) firing patterns. Abbreviations: F, nucleus of the fields of Forel; GeM, Gemini hypothalamic nucleus; LH, lateral hypothalamic area; PeF, perifornical nucleus; PSTh, parasubthalamic nucleus; Subl, subincertal nucleus; Te, terete hypothalamic nucleus; VM, ventromedial thalamic nucleus; VPL, ventral posterolateral thalamic nucleus; VPM, ventral posteromedial thalamic nucleus; ZID, zona incerta, dorsal part; ZIV, zona incerta, ventral part.
 
-## Phasic response
+#### Phasic response
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36607/elife-36607-fig3-v2.jpg)
 
@@ -67,13 +67,84 @@ The remaining phasic responses could not be classified this way (n = 5).
 
 The details of the latencies and durations of each response types can be found in Table 1 below:
 
+**Table 1.**
+ Response types latencies and durations
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Response type</th>
+      <th colspan="2">Phase 1</th>
+      <th colspan="2">Phase 2</th>
+      <th colspan="2">Phase 3</th>
+    </tr>
+    <tr>
+      <th>Latency</th>
+      <th>Duration</th>
+      <th>Latency</th>
+      <th>Duration</th>
+      <th>Latency</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">I.</td>
+      <td>1.</td>
+      <td>37,80 ± 3,15 ms</td>
+      <td>338.40 ± 49.79 ms</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>20.18 ± 3.15 ms</td>
+      <td>34.47 ± 3.92 ms</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td colspan="2">II.</td>
+      <td>20.00 ± 3.02 ms</td>
+      <td>35.00 ± 3.86 ms</td>
+      <td>97.00 ± 6.97 ms</td>
+      <td>269.00 ± 40.05 ms</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td colspan="2">III.</td>
+      <td>23.00 ± 4.61 ms</td>
+      <td>69.00 ± 19.59 ms</td>
+      <td>133.70 ± 32.76 ms</td>
+      <td>176.70 ± 3.83 ms</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td colspan="2">IV.</td>
+      <td>16.4 ± 4.57 ms</td>
+      <td>46.4 ± 7.90 ms</td>
+      <td>101.2 ± 18.56 ms</td>
+      <td>28.2 ± 5.27 ms</td>
+      <td>227.6 ± 43.53 ms</td>
+      <td>216.8 ± 69.3 ms</td>
+    </tr>
+  </tbody>
+</table>
+
 A significantly larger number of non-responding cells were located in the caudal portion of STN (χ2 = 6.94, df = 2, p<0.05, Figure 2A). Of the 24 cells activated by noxious stimulation that were tested for multi-modal responses, only three exhibited an excitation in response to non-noxious somatosensory stimulation (light brush), hence the majority were nociceptive-only cells.
 
-## Baseline firing rate
+#### Baseline firing rate
 
 The introduction of noxious stimulation induced a statistically significant increase in STN baseline firing rate (Wilcoxon test: W[97] = −1199; p=0.05; mean ± SEM: no noxious stimulation: 7.13 ± 0.51 Hz vs noxious stimulation: 7.78 ± 0.52 Hz). However, we could clearly observe some cells whose baseline firing rate decreased when the footshock was delivered (Figure 3B). We therefore performed an individual analysis on each of the 98 STN cells, whether responding to the noxious stimulation of not, to test whether the change of their baseline firing rate after the introduction of the stimulation was statistically robust (Wilcoxon test, p<0.05), and if so, in which direction the change took place. We identified 39 (40%) and 17 (18%) cells showing a significant increase (‘up’ group) and decrease (‘down’ group), respectively, in their baseline firing rate with the stimulation, and no significant change for the remaining 42 cells (42%, ‘no change’ group). Contingency analysis did not reveal a specific topography of their location within STN, or a link to the shape of their action potential or to the presence or absence of a phasic response. Once grouped together in terms of direction, the ‘up’ and ‘down’ groups both exhibited a statistically significant change in their baseline firing rate. (Up — Wilcoxon test: W[38] = −780, p<0.001; mean ± SEM: no noxious stimulation 6.31 ± 0.83 Hz vs noxious stimulation 9.09 ± 0.94 Hz. Down — Wilcoxon test: W[16] = 153, p<0.001; mean ±SEM: no noxious stimulation 9.55. ± 1.43 Hz vs noxious stimulation 7.08 ± 1.26 Hz), unlike the ‘no change’ group (Wilcoxon test: W[41] = 245, p = 0.1272; mean ±SEM: no noxious stimulation 6.92 ± 0.65 Hz vs noxious stimulation 6.85 ± 0.67 Hz). Interestingly, the spontaneous firing of STN cells from the ‘down’ group had a significantly higher firing rate than that of the ‘up’ and ‘no change’ groups during the control period (Mann-Whitney test: U = 225, p<0.05; mean ± SEM: ‘up’ 6.31 ± 0.83 Hz vs ‘down’ 9.55 ± 1.43 Hz, U = 261, p=0.05; mean ± SEM: ‘no change’ 6.919 ± 0.65 Hz vs ‘down’ 9.55 ± 1.43 Hz), whereas the ‘up’ and ‘no change’ groups did not differ significantly. This suggests the presence of a separate population of STN neurons that have a higher firing rate.
 
-## STN and nociceptive responses: is nociceptive information in the STN functionally relevant?
+#### STN and nociceptive responses: is nociceptive information in the STN functionally relevant?
 
 To evaluate the involvement of STN in nociceptive responses, we tested nociceptive responses in STN-lesioned and sham-operated rats behaviorally using a hot-plate test. The lesions were positioned within specific sub-regions of the STN, sparing the surrounding structures such as the zona incerta or the hypothalamus located above and medial to the STN, respectively. The bi-lateral STN lesions were localized in the posterior half (n = 6) or in the anterior/central (n = 6) parts of this structure, covering from 8% to 34% of the total surface of both bilateral STN (mean ± SEM: 20 ± 2.4%) (Figure 4).
 
@@ -83,21 +154,90 @@ To evaluate the involvement of STN in nociceptive responses, we tested nocicepti
 
 These partial and highly localized STN lesions affected the nociceptive responses of the rats. Analysis showed a significant increase of the latency to produce the first sign of discomfort from the hotplate in the STN-lesioned group compared to the sham group (mean ± SEM: control = 10.81 ± 0.83 s; STN lesioned = 14.35 ± 0.9 s; p<0.05).
 
-## Where does nociceptive information in the STN come from?
+### Where does nociceptive information in the STN come from?
 
-## Nociceptive responses in afferent structures
+#### Nociceptive responses in afferent structures
 
 Footshocks produced short-latency, short-duration excitatory responses in the SC and PBN (Table 2). The PBN nociceptive responses were smaller in magnitude and amplitude than those in the SC. Footshocks did not change the spontaneous baseline firing rate in the SC or the PBN (SC: t[7] = 1.218; p=0.13; PBN: W = 8; number of pairs = 11; p=0.38). The latencies of the SC and PBN responses to the stimulation were both significantly shorter than those of the STN (SC-STN: t[15] = 2.88; p<0.001; mean ± SEM: SC 9 ± 0.8 ms vs STN 25.33 ± 5.27 ms; PBN-STN: t[22] = 3.34; p<0.01; mean ±SEM: PBN 11.55 ± 1.35 ms vs STN 24.54 ± 3.13 ms). Given that the response to noxious stimulation in SC and PBN occurs before that in the STN, both SC and PBN could be part of the nociceptive afferent network directed at the STN.
 
-## Effect of SC or PBN inhibition on STN nociceptive responses
+**Table 2.**
+ Nociceptive responses in the subthalmic nucleus, superior colliculus and parabrachial nucleus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="4">Microinjection of muscimol in the superior colliculus</th>
+    </tr>
+    <tr>
+      <th colspan="2">Superior colliculus</th>
+      <th colspan="2">Subthalamic nucleus</th>
+    </tr>
+    <tr>
+      <th>Pre muscimol</th>
+      <th>Post muscimol</th>
+      <th>Pre muscimol</th>
+      <th>Post muscimol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Latency</td>
+      <td>9 ± 0.8 ms</td>
+      <td>7.60 ± 0.68 ms</td>
+      <td>25.33 ± 5.27 ms</td>
+      <td>28.38 ± 7.75 ms</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>19.62 ± 5.00 ms</td>
+      <td>14 ± 3.03 ms</td>
+      <td>176.13 ± 60.37 ms</td>
+      <td>135.74 ± 50.19 ms *</td>
+    </tr>
+    <tr>
+      <td>Amplitude</td>
+      <td>322.29 ± 58.16 Hz</td>
+      <td>125.00 ± 26.22 Hz *</td>
+      <td>15.61 ± 3.29 Hz</td>
+      <td>14.4 ± 2.44 Hz</td>
+    </tr>
+    <tr>
+      <td>Magnitude</td>
+      <td>140.20 ± 28.01 Hz</td>
+      <td>45.01 ± 9.16 Hz *</td>
+      <td>10.21 ± 1.99 Hz</td>
+      <td>7.24 ± 1.41 Hz</td>
+    </tr>
+    <tr>
+      <td>Baseline FR no footshock</td>
+      <td>18.27 ± 2.19 Hz</td>
+      <td>—</td>
+      <td>4.37 ± 0.8 Hz</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Baseline FR footshock</td>
+      <td>20.79 ± 2.66 Hz</td>
+      <td>7.69 ± 3.00 Hz *</td>
+      <td>6.06 ± 1.48 Hz</td>
+      <td>6.45 ± 1.38 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean ± SEM - * statistically different from pre-muscimol measure.Abbreviations: cp, cerebral peduncle; IS, injection site; lPBN, lateral parabrachial nucleus; mPBN, medial parabrachial nucleus; scp, superior cerebral peduncle; STN, subthalamic nucleus.Note: the amplitude of the response is the maximum amplitude during the response and the magnitude of the response is the mean number of single multi-unit events between response onset and offset minus the baseline mean._
+
+#### Effect of SC or PBN inhibition on STN nociceptive responses
 
 To test the possibility that the SC or PBN transmits nociceptive signals to the STN, we pharmacologically inhibited their neuronal activity with muscimol, a GABAA agonist, and evaluated the effect of their temporary inactivation on STN nociceptive responses. Simultaneous recordings were made from SC (multi-unit) and STN (single unit) neurons (n = 9) or from PBN (multi-unit) and STN (single unit) neurons (n = 13) before and after the delivery of a noxious footshock.
 
-## Muscimol in the SC
+#### Muscimol in the SC
 
 The injection of muscimol adjacent to the SC electrode decreased the tonic activity in this structure (t[7] = 4.31; p<0.001) and abolished the phasic responses altogether in three cases. In the remaining cases, the muscimol produced a significant reduction of the magnitude (t[4] = 5.49; p<0.01) and the maximum amplitude (t[4] = 3.18; p<0.05), as well as a trend towards the duration of the response (t[4] = 1.74, p=0.08), but did not affect the latency (p=0.19). The depression of the SC neuronal activity by muscimol abolished STN nociceptive response in one case (1/9), and significantly reduced the duration of STN nociceptive responses in the remaining cases (t[7] )= 3.27; p<0.05), with a trend towards a decrease in magnitude, the difference being close to reaching the statistical threshold (t[7] = 2.31; p=0.054). The remaining parameters of the response and the baseline firing rate of STN cells were not statistically different to those in the pre-drug period.
 
-## Muscimol in the PBN
+#### Muscimol in the PBN
 
 The injection of muscimol adjacent to the PBN electrode significantly decreased the tonic activity of this structure (t[10] = 2.59; p<0.05) and abolished the phasic nociceptive responses in the PBN altogether in two cases. In the remaining cases, the injection of muscimol increased the latencies (t[8] = 3.12, p<0.01) and produced a significant reduction in the duration of the response (t[8] = 3.44, p<0.01), the magnitude of response (t[8] = 2.88; p<0.01) and the maximum amplitude (t[8] = 3.91; p<0.01). Unlike the SC, this general depression of PBN neuronal activity by muscimol completely abolished nociceptive phasic responses in five STN cells (5/13, Figure 5) and significantly reduced numerous parameters of the remaining STN responses to the stimulation, such as the duration (Wilcoxon test: W = 31, number of pairs = 8, p<0.05), magnitude (t[7] = 4.25; p<0.01) and maximum amplitude (t[7] = 3.21, p<0.01). Neither the latency (t[7] = 0.04, p=0.48, ns) nor the baseline firing rate (t[12] = 0.19, p=0.42, ns) were significantly affected by the injection of muscimol in PBN.
 
@@ -107,11 +247,11 @@ The injection of muscimol adjacent to the PBN electrode significantly decreased 
 
 These results show that PBN pharmacological blockade with muscimol is more effective at reducing STN phasic nociceptive responses.
 
-## Effect of SC or PBN lesions on STN nociceptive responses
+#### Effect of SC or PBN lesions on STN nociceptive responses
 
 Suppression of SC activity by muscimol only had a small influence on STN phasic nociceptive responses unlike PBN inactivation. However, while the technique of micro-injection offers a temporary inactivation with a possibility of recovery, the comparison of its effects on STN nociceptive responses versus the effects following PBN injections could be affected by the fact that muscimol was less effective at reducing SC phasic responses than those in the PBN, and by the difficulty of evaluating the spread of the injection in the SC and PBN. Therefore, we tested the effect of ipsilateral ibotenic acid lesions of the lateral part of the SC or PBN on STN phasic nociceptive responses.
 
-## SC lesion
+#### SC lesion
 
 In all cases (n = 5), the lesion included the lateral SC and extended, in some cases, to the adjacent superficial and/or deep layers of this structure (Figure 6A and B). A total of 28 STN cells were recorded in lesioned animals before and after noxious footshocks. Of these cells, 27 (94%) still responded to the noxious stimulation. Analysis of the proportions of responding and non-responding cells comparing the control and SC-lesioned rats showed a significant difference between the two groups (χ2 = 2.98, df = 1, p<0.05), with a larger proportion of responding cells in SC-lesioned rats compared to that in control animals (94% vs 81%). This correponded to a facilitation of the occurrence of STN nociceptive responses after the removal of the lateral SC.
 
@@ -121,7 +261,7 @@ In all cases (n = 5), the lesion included the lateral SC and extended, in some
 
 Analysis of the nociceptive-induced phasic responses in STN showed a close to significant reduction of the duration (Mann-Whitney, U = 85, p=0.06), which is consistent with the reduction of duration observed previously after the injection of muscimol in SC. A plot of the distribution of STN responses according to their latency and duration in control and SC-lesioned animals shows that this statistical tendency could be due to the loss of the longer-lasting nociceptive responses in SC-lesioned animals (Figure 6C, dotted line box). This is supported by the observation of an increased proportion of short-latency/short-duration response types and a decrease in the proportion of long-lasting responses (Figure 6D). The other parameters of the response did not differ significantly and the firing rate was statistically unaffected.
 
-## PBN lesion
+#### PBN lesion
 
 The injection of ibotenic acid in the PBN induced a near total lesion of this structure in one case, extending over 87% of the PBN. This lesion also affected a small part of the caudal pedunculopontine nucleus. In the remaining cases, the lesion was only partial and affected between 30% to 60% of this nucleus (Figure 7A and B).
 
@@ -133,11 +273,11 @@ A total of 30 STN cells were recorded in PBN-lesioned rats before and after noxi
 
 A plot of the distribution of STN nociceptive responses according to their latency and duration in control and PBN-lesioned animals shows that most types of response described in control rats disappeared. A cluster of responding cells with short latencies and durations remained (Figure 7C and D).
 
-## Anatomical link between the PBN and the STN
+#### Anatomical link between the PBN and the STN
 
 Our electrophysiological experiments suggest that the PBN acts as a critical source of nociceptive input into the STN and the SC as a critical modulator of those responses. While the connection between the SC and the STN has been characterized previously (Coizet et al., 2009; Tokuno et al., 1994), the functional link between the PBN and the STN was puzzling as a previous neuroanatomical study characterizing afferent connections of the STN reported the absence of labeled terminals and fibers in the STN following the injection of an anterograde tracer in the parabrachial complex (Canteras et al., 1990). The characterization of PBN efferent connections has often focused on the amygdala or the hypothalamus, but a close examination of PBN-related fiber pathways, especially to the amygdala, indicates that those fibers are travelling close to (Saper and Loewy [1980]: Figure 4F) or even partly within the STN (e.g. Bernard et al. [1989]: Figure 2J; Sarhan et al. [2005]: Figure 9B3). Therefore, to better understand the anatomical basis of our electrophysiological data, we re-evaluated the parabrachio-subthalamic pathway using a combination of anterograde and retrograde tract-tracing techniques.
 
-## Anterograde tract-tracing
+#### Anterograde tract-tracing
 
 Injections of the anterograde tracers Phaseolus vulgaris leucoagglutinin (PHA-l, n = 4) or biotinylated dextran amine (BDA, n = 4) into the PBN revealed a robust direct projection to the ipsilateral STN and a less substantial projection to the contralateral STN. The ipsilateral ascending fibers leave the PBN in an antero-dorsal direction and pass above and through the dorso-caudal pedunculopontine tegmental nucleus (Figure 8). There, they split into three large pathways (Figure 8A), a PBN-SC (intermediate and deep layers), a PBN-thalamic and a PBN-nigral ventral projection. PBN-labeled axons traveling to the STN are a rostral extension of the pathway we have described previously (Coizet et al., 2010) from the PBN to the dopaminergic neurons in the ventral midbrain, the parabrachio-nigral pathway. A substantial number of fibers continue further forward to the amygdala and the cortex (Figure 8A). This parabrachio-subthalamic pathway originates in the lateral and medial PBN (lPBN and mPBN, respectively). Thus, injections of either PHA-l or BDA centered preferentially on the lPBN or the mPBN were both associated with numerous labeled axons and terminals, which were differentially distributed within sub-regions of the STN. PBN fibers and terminals were largely seen in a dorsal sheet that extended across the entire mediolateral axis of the STN (Figure 8B and C). Moving rostrally, they further spread across the dorsoventral area of the STN. Many anterogradely labeled boutons were located in the vicinity of labeled fibers (Figure 8B and C).
 
@@ -151,7 +291,7 @@ Retrograde track tracing. To identify the regional distribution and morphology o
 
 **Figure 9.:** (A) Drawing of coronal sections centered on the ipsilateral (left) and contralateral (right) PBN illustrating the location of the retrogradely labeled cells following an injection of a retrograde tracer Fluorogold in the STN. (B) Photomicrographs of retrogradely labeled neurons in the PBN (a) following the injection of cholera toxin unit B (CTB) in the STN (b). Scale bars = 200 µm. (C) Morphology of retrogradely labeled PBN neurons following an injection of CTB into the STN. Scale bars: 20 µm.
 
-## STN nociceptive responses in a rat model of Parkinson’s disease
+### STN nociceptive responses in a rat model of Parkinson’s disease
 
 In a classical rat model of PD induced by an injection of 6-hydroxydopamine (6-OHDA), a neurotoxin thattargets dopaminergic neurons (DA), in the SNc, we tested whether STN nociceptive responses were dysfunctional.
 
@@ -181,27 +321,27 @@ Finally, non-neuropathic pain, recently recognized as a frequent and disabling s
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
-## Animals
+#### Animals
 
 Fifty male Hooded Lister rats (265–450 g) were anaesthetised with an intra-peritoneal injection of urethane (ethyl carbonate; 1.25 g/kg as a 25% aqueous solution) and mounted in a stereotaxic frame with the skull level. Body temperature was maintained at 37°C with a thermostatically controlled heating blanket. Two stainless steel electrodes (E363-1, Plastics One, Roanoke, VA) were inserted into the left hindpaw, one under the skin of the plantar surface of the foot and the other under the skin of the medial aspect of the lower leg/ankle. Craniotomies were then performed to allow access to the STN and SC or PBN. In accordance with the policy of Lyon1 University and the Grenoble Institut des Neurosciences (GIN) and with French legislation, experiments were performed in compliance with the European Community Council Directive of November 24, 1986 (86/609/EEC). The research was authorized by the Direction Départementale des Services Vétérinaires de l’Isère – Ministère de l’Agriculture et de la Pêche, France (Coizet Véronique, PhD, permit number 381003). Every effort was made to minimize the number of animals used and their suffering during the experimental procedure. All procedures were reviewed and validated by the ‘Comité éthique du GIN n°004’ agreed by the research ministry (permits number 309 and 310).
 
-## STN recordings
+#### STN recordings
 
 Extracellular single unit recordings were made from STN neurons located contralaterally to the stimulated hindpaw, using glass microelectrodes pulled via a vertical electrode puller (Narashige Laboratory Instruments Ltd. Tokyo, Japan) and broken back to a tip diameter of approximately 1 µm (impedances 5–20 MΩ, measured at 135 Hz in 0.9% NaCl). Electrodes were filled with 0.5 M saline and 2% Pontamine Sky Blue (BDH Chemicals Ltd., Poole, UK). The electrode was lowered into the STN (3.6–4.16 mm caudal to bregma, 2.0–3.0 mm lateral to midline, 6.8–8.20 mm ventral to the brain surface according to the atlas [Paxinos and Watson, 2005]) with a hydraulic microdrive (Trent Wells Inc.). The STN electrode was lowered until a putative STN neuron was identified on the basis of several criteria as follows. i) the pattern of activity while lowering the electrode, which was as follows: an initial absence of activity corresponding to the medial lemniscus fibre track, followed shortly after by large-amplitude, fast-bursty neurons located in zona incerta, and then a second absence of action potentials. The return of activity corresponded to the STN. ii) STN firing rate between 8.5 and 14.7 Hz (Hassani et al., 1996; Kreiss et al., 1996). iii) STN firing pattern described as irregular or bursting (Hamani et al., 2004).
 
-## SC/PBN recording and muscimol experiments
+#### SC/PBN recording and muscimol experiments
 
 Extracellular multiunit recordings were made simultaneously from the SC or PBN ipsilateral to the STN recording electrode using a tungsten electrode coupled to a 30-gauge stainless steel injector filled with muscimol (0.25 μg/μl in saline, Sigma-Aldrich). An angled approach was used in the PBN, with the electrode tilted caudally by 35°, entering the brain at 11.4 mm caudal to bregma and 1.9–2.0 mm lateral to midline. PBN was encountered 5.2–5.8 mm below the brain surface. In a second group of rats, the electrode/injector assembly was introduced vertically into the SC (AP: 6.2–6.5 mm, bregma; ML: 2.1–2.2 mm, bregma; DV: 4.2–4.5 mm, brain surface). The electrode/injector assembly was lowered into the SC into the lateral part of the deep layers of the SC, known to project to the STN (Coizet et al., 2009).
 
 Microinjections were made (0.5 µl at a rate of 0.5 µl/min) via a 10 µl Hamilton syringe mounted on an infusion pump, connected to the injector by a length of plastic tubing. Extracellular voltage excursions were amplified, band-pass filtered (300 Hz–10 kHz), digitized at 10 kHz and recorded directly onto computer disc using a Micro 1401 data acquisition system (Cambridge Electronic Design [CED] Systems, Cambridge, UK) running CED data capture software (Spike 2).
 
-## Stimulation procedure
+#### Stimulation procedure
 
 As previously described (Coizet et al., 2006, 2010), PBN and SC neurons were identified by their response to noxious footshocks induced by single pulses (0.5 Hz, 2 ms duration) at an intensity of 5.0 mA. The activity of the cells (single unit in STN and multiunit activity in the PBN or SC) was recorded during a control period (120 trials of sham stimulation) and during the application of noxious footshocks (120 trials). For the muscimol experiments, an injection of muscimol was made into the PBN or SC. Typically, a change in local SC/PBN multiunit activity was seen within 60–120 s of the injection. Noxious electrical footshock stimulation was applied throughout this period, until either the effects of the drug wore off in the SC/PBN, or the STN cell was lost. After a complete trial, further STN neurons were tested in the same way. Between 1 and 5 STN cells were tested in a single subject.
 
-## Nociceptive nature of the stimulation
+#### Nociceptive nature of the stimulation
 
 The electrical stimulation parameters from 3 to 5 mA have previously been shown to be approximately three times the threshold for activating C-fiber (Chang and Shyu, 2001; Matthews and Dickenson, 2001; Carpenter et al., 2003), to produce reliable Aδ and C-fiber responses in the anesthetized rat spinal cord (Urch et al., 2003) and to produce c-fos expression in the nociceptive superficial lamina of the spinal cord (Coizet et al., 2006). They also activate the SC (Coizet et al., 2006), the PBN (Coizet et al., 2010) and the dopaminergic neurons (Coizet et al., 2006; 2010) in a qualitatively similar way as a mechanical noxious pinch with a teethed forceps.
 
@@ -211,49 +351,49 @@ To ascertain the noxious nature of our stimulation, we performed three control t
 
 **Figure 10.:** (A) Histogram showing the increase in the number of responding cells with the increase of the footshock intensity. (B) Increase of the maximum amplitude and magnitude of phasic nociceptive-evoked responses with the increase of the footshock intensity. (C) Individual example of an STN cell excited both by a mechanical noxious stimulation (pinch – left) and a 5 mA noxious footshock (right). (D) Coronal sections of the lumbar region of the spinal cord processed for c-fos expression in an animal subjected to 1 hr unilateral noxious electrical stimulation of the hindpaw (left) and in a control animal in which the electrodes were implanted into the hindpaw, but no footshock applied.
 
-## Histology and analysis
+#### Histology and analysis
 
 The position of SC and PBN recording sites were marked with a small lesion caused by passing 10 μA DC current for 2.5 min through the tungsten recording electrode. The final recording site for the STN recording electrode was marked by passing a constant cathodal current of 27.5 µA (constant current source) through the electrode for a period of 30 min to eject Pontamine Sky Blue. Animals were then killed by an overdose of pentobarbital and perfused with 0.9% saline followed by 4% paraformaldehyde. Brains were removed and postfixed overnight in 4% paraformaldehyde at 4°C, before being transferred into sucrose for 36 hr. Serial coronal (30 µm) sections were cut, mounted on slides and processed with a Nissl stain (Cresyl Violet). Once sections had been processed, recording sites were reconstructed onto sections taken from the atlas of Paxinos and Watson (2005).
 
 Peri-stimulus time interval histograms (PSTHs) were constructed based on SC/PBN multi-unit (bin width 1 ms) and STN single-unit data (bin width 10 ms). PSTHs were imported into an Excel program (Peter Furness, University of Sheffield; Coizet et al., 2006, 2009, 2010; Dommett et al., 2005), which determined the following response characteristics. (i) Baseline activity: the mean number of single multi-unit events during the 500 ms bins prior to the footshock. (ii) Response latency: the latency of a visually evoked response was marked as the point when the value of post-stimulation events exceeded 1.96 S.D. of the baseline mean. (iii) Response duration: response offset was recorded when post-stimulation activity returned to a value 1.96 S.D. of the baseline mean. iii) Amplitude of the response: the maximum amplitude during the response. (iv) Magnitude of the response: the mean number of single multi-unit events between response onset and offset minus the baseline mean.
 
-## Lesion procedure in SC and PBN
+### Lesion procedure in SC and PBN
 
 Fourteen rats received a unilateral ibotenic acid lesion of the SC or the PBN. Each rat was anesthetized with isofluorane (5% for the induction and 1–2% for maintenance) and placed in a stereotaxic instrument. A 30-gauge metal injector needle filled with ibotenic acid (20 µg/µl in phosphate buffered saline) was introduced using the same coordinates as for the electrophysiological procedure. The injections in the PBN were made according to a previously published procedure by Reilly and Trifunovic (2000, 2001) with electrophysiological guidance to improve the accuracy of the location of the lesion. The microinjections were made (0.5 µl/min) in the SC (0.5–0.65 µl) and the PBN (0.3–0.5 µl) as for the muscimol injections (see above). The cannula remained in situ for a further 10 min to minimize the spread of neurotoxin back along the track before the cannula was removed and the incision was closed.
 
-## Lesion procedure in STN and hotplate test
+### Lesion procedure in STN and hotplate test
 
 Twenty Long Evans rats were anesthetized with ketamine (100 mg/Kg, s.c., Imalgène 1000, Merial, Lyon, France) and medetomidine (0.85 mg/Kg, s.c., Domitor, Orion Pharma, Espoo, Finland). Rats were secured in Kopf stereotaxic apparatus. Then, a unilateral 30-gauge stainless-steel injector needle connected by Tygon tubing (Saint Gobain performance plastics) with a 10 µL Hamilton microsyringe (Bonaduz, Switzerland) fixed on a micropump (CMA, Kista, Sweden) was positioned into the STN. Coordinates for the aimed site were (with tooth bar set at −3.3 mm): anteposterior −3.72 mm; lateral ±2.4 mm from bregma; dorsoventral −8.4 mm from skull (Paxinos and Watson, 2005). Rats received a bilateral injection of either ibotenic acid (9.4 µg/µL, AbCam Biochemical, Cambridge, UK; STN-lesioned group, n = 12) or vehicle solution (phosphate buffer, 0.1M; Sham control group, n = 8). The volume injected was 0.5 µL per side infused over 3 min. The injectors were left in place for 3 min to allow diffusion. At the end of surgery, medetomidine was reversed by 0.2 mg (4.28 mg/Kg, s.c.) atipamezole (Antisedan, Orion Pharma, Espoo, Finland). Three weeks after the surgery, all the animals were subjected to the hotplate test. Each rat was placed on a heated metal plate (53°) surrounded by a transparent cylinder. The experimenter was constantly watching the rat’s behaviour during the test to measure the latency of the first sign of paw licking or jumping and to remove the animals from the apparatus quickly. The maximum time on the hot place was set to 30 s. The rat’s behaviour was also video recorded online on the computer for a second finer analysis.
 
-## 6-OHDA lesions
+### 6-OHDA lesions
 
 Rats were anesthetised with an intraperitoneal injection of a mixture of ketamine-xylazine (0.765/1.1 ml; 1 ml/kg, i.p.) and placed in a stereotaxic frame with the skull level. All the microinjections were made via a sharpened 30G injection cannula connected with polyethylene tubing to a 10 µl Hamilton syringe driven by an infusion pump (0.5 µl/min). After the injection, the cannula was left in place for a further 5 min to allow diffusion. Animals were divided into two groups: i) those with a total dopaminergic lesion (n = 9), in which 3 µl of 6-OHDA (Sigma-Aldrich, 3 mg/ml in sterile 0.9% NaCl and 0.1% ascorbic acid) was injected into the left SNc using the following stereotaxic coordinates: AP:+3.0 mm; ML:+2.1 mm and DV:+2.4 mm from interaural zero mm; and ii) a control group with no injection of the toxin (n = 9).
 
 The extent of the DA denervation following the 6-OHDA injections in the SNc was determined using tyrosine hydroxylase (TH) immunohistochemistry. To reveal TH, the sections were washed and incubated in a blocking solution containing 0.1M PB with 0.3% of triton X-100 (TX), 2.5% of Bovine Serum Albumin (BSA) and 5% normal horse serum (NHS) for 2 hr before being transferred overnight to a 0.1M PB-TX 0.3% with 1% BSA and 2% NHS containing the primary mouse monoclonal TH antibody, diluted 1:3,000 (Chemicon, Hampshire, UK). The following day, sections were washed in 0.1M PB and incubated with the secondary antibody, biotinylated antimouse made in horse (in a dilution of 1:1,000 in 0.1M PB-TX 0.3% with 2% NHS) for 2 hr. Following further washes in 0.1M PB, the sections were exposed to the elite Vectastain ABC reagent (Vector Laboratories, Burlingame, CA, USA) diluted 1:100 in PB-TX 0.3%, for 2 hr. Again following washes in 0.1M PB, immunoreactivity was revealed by exposure to VIP (Vector Laboratories) for 2 min, which produced a purple reaction product. Sections were then mounted onto gelled slides, dehydrated through alcohols and cleared in xylene before being coverslipped with DPX. TH-immunolabelling of DA neurons and terminals was evaluated using a light microscope (Nikon, Eclipse 80i, TRIBVN, Chatillon, France) coupled to the ICS Framework computerized image analysis system (TRIBVN, 2.9.2 version, Chatillon, France). For quantification, TH-labeled coronal sections of SNc (AP −5.3 mm to −5.8 mm from Bregma) and striatum (AP 0.20 mm to −0.30 mm from bregma) were digitized using a Pike F-421C camera (ALLIED Vision Technologies Stradtroda, Germany). Optical densities (OD) were measured for the denervated and non-denervated territories of the lesioned animals for each section and were compared to those in the homologous regions of the sham-operated animals.
 
-## Statistics
+### Statistics
 
 The statistical reliability of differences between response latencies for the SC/PBN and STN, and comparisons of response duration, amplitude and magnitude before and after SC/PBN injections of muscimol was made using parametric (ANOVA, t-test) or non-parametric (Wilcoxon, Mann-Whitney) statistical tests according to the normality of the data. STN baseline firing rate change before and after the noxious stimulation was assessed during the 500 ms before the sham and noxious stimulations. The data were imported in MATLAB, bined and compared using a Wilcoxon test. STN firing pattern was also assessed using MATLAB according to the methodology developed by Piallat et al. (2011). Neurons were classified as irregular, regular or bursting according to the interspike distributions and autocorrelograms. Burst activity showed a wide or bimodal interval interspike distribution and a significant single peak on the autocorrelation function. Irregular activity was characterised by a wide interval interspike distribution and a flat autocorrelogram. Regular activity was characterised by a narrow interval interspike distribution and an autocorrelogram with multiple regular peaks.
 
-## Anatomy
+#### Anatomy
 
-## Animals
+##### Animals
 
 We used 14 male Long Evans rats (350–460 g, Janvier, France). Animals were anaesthetised with an intraperitoneal injection of a mixture of Ketaset (0.765 ml/kg) and Rompun (1.1 ml/kg).
 
-## Anterograde experiment
+##### Anterograde experiment
 
 Single injections of the anterograde tracers biotinylated dextran amine (BDA: Sigma-Aldrich) or Phaseolus vulgaris leucoagglutinin (PHA-L: Vector Laboratories, Peterborough, UK) were made into the PBN. An angled approach was used as previously described (Coizet et al., 2010). BDA (10% in phosphate buffer; PB) was pressure ejected in volumes of 30–90 nl via a glass micropipette (20 µm diameter tip) using a compressed air injection system, while PHA-L was ejected iontophoretically (5µA anodal current applied to a 2.5% solution in PB, 7 s on/off for 15–20 min).
 
-## Retrograde experiment
+##### Retrograde experiment
 
 Small (10–20 nl) pressure injections of the retrograde tracers Cholera toxin subunit B (CTB, 1% solution in phosphate buffer) or the fluorescent tracer Fluorogold (FG, 4% in distilled water) were made into the STN. After allowing 7 days for the transport of tracers, animals were re-anesthetised with pentobarbitane and perfused transcardially. The brains were placed immediately in 4% PFA overnight before being cryoprotected by immersion in sucrose solution (20% in 0.1 M PB) for at least 36 hr. Three series of coronal or sagittal sections (30 µm) were cut on a freezing microtome and collected in 0.1 M PB for further immunohistochemistry processing, except for tissue containing FG where one series was collected directly onto slides, allowed to dry in a light protected box and coverslipped with DPX mountant.
 
-## Histology
+##### Histology
 
 To reveal the tracers (BDA, PHA-L, CTB), free-floating sections were washed with 0.1 M PB followed by 0.1 M PB containing 0.3% Triton X-100 (PB-TX) for 30 min. For animals injected with PHA-L or CTB, the sections were incubated overnight in primary antibody solution (goat anti-PHA-L, 1:1,000 dilution, Vector, or goat anti-CTB, 1:4,000 dilution, Quadratech). The next day, sections were washed with PB-TX and incubated for 2 hr in biotinylated rabbit anti-goat IgG (1:100, Vector, in PB-TX containing 2% normal rabbit serum). After 30 min washing, all the sections were incubated in Elite Vectastain ABC reagent (Vector, 1:100 in PB-TX) for 2 hr. The peroxidase associated with the tracers was revealed by reacting tissue with H2O2 for approximately 1 min using nickel-enhanced diaminobenzidine (DAB) as the chromogen for BDA and CTB (black reaction product) and using nickel-free DAB for PHA-L (brown reaction product). Finally, sections were washed in PB, mounted on gelatine-coated slides, dehydrated in graded dilutions of alcohol, cleared in xylene and coverslipped in DPX.
 
-## Analysis
+##### Analysis
 
 Following injections of anterograde tracers into the PBN, three coronal sections through the STN separated by ~0.5 mm (equivalent to −3.6, –3.8 and −4.1 mm caudal to bregma in the atlas of Paxinos and Watson (2005) or three sagittal sections (equivalent to 1.9, 2.4 and 2.9 lateral to bregma) were selected for analysis. Sections of interest were digitized using a light microscope (Nikon, Eclipse 80i, TRIBVN, 2.9.2 version, Chatillon, France) coupled to the ICS Framework computerized image analysis system (TRIBVN, 2.9.2 version, Chatillon, France) and a Pike F-421C camera (ALLIED Vision Technologies Stradtroda, Germany).
 

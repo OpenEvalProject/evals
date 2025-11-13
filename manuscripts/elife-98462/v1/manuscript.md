@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Division of Infectious Diseases and Immunology, Department of Medicine, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/05gq02987 Department of Pathology and Laboratory Medicine, Brown University Providence United States
-3. https://ror.org/04r1cxt79 Center for Global Health Research, Kenya Medical Research Institute Kisumu Kenya
+1. Division of Infectious Diseases and Immunology, Department of Medicine, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Pathology and Laboratory Medicine, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+3. Center for Global Health Research, Kenya Medical Research Institute Kisumu Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))
 
 † Corresponding author
 
 ## Abstract
 
-Circulating T-follicular helper (cT FH ) cells have the potential to provide an additional correlate of protection against Plasmodium falciparum ( Pf ) as they are essential to promote B-cell production of long-lasting antibodies. Assessing the specificity of cT FH subsets to individual malaria antigens is vital to understanding the variation observed in antibody responses and identifying promising malaria vaccine candidates. Using spectral flow cytometry and unbiased clustering analysis, we assessed antigen-specific cT FH cell recall responses in vitro to malaria vaccine candidates Pf- schizont egress antigen-1 ( Pf SEA-1A) and Pf -glutamic acid-rich protein ( Pf GARP) within a cross-section of children and adults living in a malaria-holoendemic region of western Kenya. In children, a broad array of cT FH subsets (defined by cytokine and transcription factor expression) were reactive to both malaria antigens, Pf SEA-1A and Pf GARP, while adults had a narrow profile centering on cT FH 17- and cT FH 1/17-like subsets following stimulation with Pf GARP only. Because T FH 17 cells are involved in the maintenance of memory antibody responses within the context of parasitic infections, our results suggest that Pf GARP might generate longer-lived antibody responses compared to Pf SEA-1A. These findings have intriguing implications for evaluating malaria vaccine candidates as they highlight the importance of including cT FH profiles when assessing interdependent correlates of protective immunity.
+Circulating T-follicular helper (cTFH) cells have the potential to provide an additional correlate of protection against Plasmodium falciparum (Pf) as they are essential to promote B-cell production of long-lasting antibodies. Assessing the specificity of cTFH subsets to individual malaria antigens is vital to understanding the variation observed in antibody responses and identifying promising malaria vaccine candidates. Using spectral flow cytometry and unbiased clustering analysis, we assessed antigen-specific cTFH cell recall responses in vitro to malaria vaccine candidates Pf-schizont egress antigen-1 (PfSEA-1A) and Pf-glutamic acid-rich protein (PfGARP) within a cross-section of children and adults living in a malaria-holoendemic region of western Kenya. In children, a broad array of cTFH subsets (defined by cytokine and transcription factor expression) were reactive to both malaria antigens, PfSEA-1A and PfGARP, while adults had a narrow profile centering on cTFH17- and cTFH1/17-like subsets following stimulation with PfGARP only. Because TFH17 cells are involved in the maintenance of memory antibody responses within the context of parasitic infections, our results suggest that PfGARP might generate longer-lived antibody responses compared to PfSEA-1A. These findings have intriguing implications for evaluating malaria vaccine candidates as they highlight the importance of including cTFH profiles when assessing interdependent correlates of protective immunity.
 
 ## Introduction
 
@@ -37,53 +37,137 @@ Antibody levels appear to be unreliable predictors of malaria vaccine efficacy (
 
 ## Results
 
-## Children had lower anti-PfSEA-1A antibodies compared to adults but similar levels of anti-PfGARP antibodies
+### Children had lower anti-PfSEA-1A antibodies compared to adults but similar levels of anti-PfGARP antibodies
 
 This cross-sectional study selected a convenience sample of 7-year-old children and adults with a mean age of 22.67 years (ranging from 19 to 30 years of age). No statistical difference was observed (p=0.35 after Welch’s test) regarding the absolute lymphocyte count (ALC) between children (mean of 373.1; standard deviation [SD] of 118.1) and adults (mean of 335.2; SD of 99.08). Children had significantly lower hematocrit values (median of 37%, interquartile range [IQR] of 32.7–40.5) compared to adults (median of 44.4%, IQR of 40.5–46), p=0.002 after a two-tailed Mann-Whitney t-test; however, these values were within normal ranges after adjusting for age (Pluncevic Gligoroska et al., 2019). Both males and females were enrolled, with 43% (6/14) and 53% (8/15) being female children or adults, respectively. Seroprofiles against a panel of commonly used malaria antigens were generated to confirm the history of previous Pf-infections for the selected children (Figure 1a). All participants had high IgG levels against merozoite antigens, apical membrane antigen 1 (AMA-1), and merozoite surface protein (MSP1), confirming at least one Pf-infection within their lifetime (Yman et al., 2019; O’Flaherty et al., 2021). IgG antibodies against circumsporozoite protein (CSP) and CelTOS (liver-stage antigens) were characteristically lower than against blood-stage antigens, yet were present in all study children. We observed a clear bimodal distribution in antibody levels against histidine-rich protein 2 (HRP2) with half of the children having ‘high-HRP2’ vs ‘low-HRP2’ IgG levels, possibly a reflection of recent malaria history since it has been suggested that HRP2-specific antibodies are short-lived and could serve as a surrogate for a recent infection (Turnbull et al., 2022). We assessed serological profiles for two Pf-malaria antigens being considered as potential vaccine candidates (Raj et al., 2014; Raj et al., 2020), PfSEA-1A and PfGARP (Figure 1b). We found that children had a significantly lower median level of IgG against PfSEA-1A, compared to adults (p<0.0001), whereas median levels to PfGARP were similarly high for adults and children, yet with a broad range of reactivity.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig1-v1.jpg)
 
-**Figure 1.:** Pf-malaria IgG sero-profiles for children and adults.(a) IgG antibody levels against AMA1, MSP1, HRP2, CelTos, and CSP for children (n=14). The bar plots indicate the mean with standard deviation (SD). (b) IgG antibody levels against PfSEA-1A and PfGARP comparing children (n=15) and adults (n=15). The bar plots indicate the mean with SD. Net median fluorescence intensity (MFI) values are the antigen-specific MFI values minus the BSA background. Mann-Whitney tests were performed.
+**Figure 1.:** (a) IgG antibody levels against AMA1, MSP1, HRP2, CelTos, and CSP for children (n=14). The bar plots indicate the mean with standard deviation (SD). (b) IgG antibody levels against PfSEA-1A and PfGARP comparing children (n=15) and adults (n=15). The bar plots indicate the mean with SD. Net median fluorescence intensity (MFI) values are the antigen-specific MFI values minus the BSA background. Mann-Whitney tests were performed.
 
-## The overall abundance of CD4posCXCR5pos cells is unaltered by in vitro antigen stimulation
+### The overall abundance of CD4posCXCR5pos cells is unaltered by in vitro antigen stimulation
 
 To determine whether in vitro antigen stimulation with PfSEA-1A or PfGARP altered the abundance of total cTFH cells, we compared cTFH cells from adults and children using a FlowSOM unbiased clustering analysis and EMBEDSOM dimensional reduction based on common lineage markers assessed by spectral flow cytometry from 87,812 live lymphocytes from each sample: CD8pos, CD4pos, CD4posCXCR5pos, and CD4posCD25pos (Figure 2a). As expected, after a short stimulation (6 hr), overall abundances of cTFH cells were similar across conditions for both adults (Figure 2b) and children (Figure 2c). This observation was confirmed by EdgeR statistical analysis (Figure 2—figure supplement 2) and demonstrated that in vitro stimulation did not preferentially expand any of the T-cell populations on which we based our subsequent analyses.
 
-## An unbiased clustering analysis identifies 12 distinct cTFH meta-clusters
+![Figure 2.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig2-v1.jpg)
+
+**Figure 2.:** (a) A 100-node and 75-meta-cluster FlowSOM tree was generated on live lymphocytes from all our participants (n=29 children and adults), highlighting CD3posCD8pos, CD3posCD4pos, CD4posCXCR5pos, and CD4posCD25pos cells. The five nodes of the CD4posCXCR5posCD25neg population are circled and were used for the downstream analysis. The colored scale was based on the median arcsinh-transformed marker expression. Uniform Manifold Approximation and Projection (UMAP) plots showing five clusters defined as follows: CD14pos and CD19pos (orange), CD4pos (blue), CD4posCXCR5pos (red), CD8pos (purple), and CD4posCD25pos (green) from peripheral blood mononuclear cells (PBMCs) isolated from (b) adults (n=15) and (c) children (n=14) that were unstimulated, stimulated with PfSEA-1A, or stimulated with PfGARP, respectively, from left to right.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Panel (a) shows the CXCR5 vs CD25 cytoplots on unfiltered, CD19pos, CD3pos, CD4pos, and CD8pos cells from left to right. Panel (b) shows CD45RA vs CCR7 cytoplots on CD3pos, CD8pos, CD4pos, and CD4posCXCR5pos cells from left to right. Panel (c) shows CCR6 vs CXCR3 staining on CD4posCXCR5pos cells. Panel (d) shows CD127 vs CD40L expression within CD4posCXCR5pos cells by unstimulated and SEB-stimulated cells. Panel (e) shows ICOS vs PD1 cytoplots after no stimulation or SEB 6 hr stimulation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Volcano plot from EdgeR analysis comparing CD4pos, CD4posCXCR5pos, CD8pos, and CD14/CD19pos populations from adult peripheral blood mononuclear cells (PBMCs) under the following conditions: (a) unstimulated vs PfSEA-1A, (b) unstimulated vs PfGARP, and (c) PfSEA-1A vs PfGARP. Volcano plot from EdgeR analysis comparing CD4pos, CD4posCXCR5pos, CD8pos, and CD14/CD19pos populations from children PBMCs under the following conditions: (d) unstimulated vs PfSEA-1A, (e) unstimulated vs PfGARP, and (f) PfSEA-1A vs PfGARP. The green dots are statistically significant, whereas the black dots are not; here, no green dots were observed.
+
+### An unbiased clustering analysis identifies 12 distinct cTFH meta-clusters
 
 Numerous markers and a two-dimensional gating strategy have previously been used to determine the frequency of cTFH subsets (Obeng-Adjei et al., 2015; Oyong et al., 2022; Chan et al., 2022). To simultaneously account for the expression of 17 markers required to define cTFH subsets, we instead used FlowSOM unbiased clustering analysis to determine the frequency of cTFH subsets from a pool of 1000 CD3posCD4posCXCR5posCD25neg cells from each sample (total of 13,000 CD3posCD4posCXCR5posCD25neg cells in both children and adults). Based on CXCR3 and CCR6 expressions as well as the expression of effector/memory/activation markers (CCR7, CD127, PD1, and ICOS), cytokines (IFNγ, IL-4, and IL-21), and transcription factors (Bcl6 and cMAF), we initially identified 15 meta-clusters within the CD4posCXCR5pos T cells (Figure 3a). First, we found different CXCR5 expression levels between meta-clusters (Figure 3b); CXCR5 is essential for cTFH cells to migrate to the lymph nodes and interact with B cells. Data presented in Figure 3 are from children; however, we found similar observations for adults (Figure 3—figure supplement 1). Because CD45RAposCXCR5pos cells are likely naïve cells with transient low expression of CXCR5, yet high expression of CD45RA, we excluded three meta-clusters using these criteria (i.e. MC12, MC14, and MC15) (Figure 3c). Then, using the overall expression of CXCR3 and CCR6 across the cTFH subsets (Figure 3d and e), we identified the remaining 12 clusters as follows: MC01 and MC02 were cTFH2-like; MC06 and MC07 were cTFH1-like; MC09 and MC11 were cTFH1/17-like; MC10 and MC13 were cTFH17-like. However, CXCR3 expression was not clearly delineated for some subsets and did not align with the conventional CCR6 vs CXCR3 cytoplot (Figure 3f and g, Figure 3—figure supplement 1). Based on the heatmap (Figure 3f), MC03, MC04, MC05, and MC08 clusters appear closer to cTFH2-like MC01 and MC02 clusters than cTFH1-like clusters MC06 and MC07, suggesting that they might be part of the cTFH2-like subset. But, based on their intensity of CXCR3 expression and their distribution across the CCR6 vs CXCR3 cytoplot (Figure 3—figure supplement 1), we defined MC03, MC04, MC05, and MC08 clusters as ‘undetermined’ and would require additional cytokine and transcription factor analyses to fully categorize them.
 
-## Heterogeneity of activation/maturation markers within cTFH subsets
+![Figure 3.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig3-v1.jpg)
+
+**Figure 3.:** (a) A new 25-node and 15 meta-cluster FlowSOM tree was generated from the five CD4posCXCR5posCD25neg nodes as shown in Figure 2a (CXCR5 expression tree). The colored scale of CXCR5 expression was based on the median arcsinh-transformed with red as the highest and deep blue as the absence of CXCR5 expression. (b) Box plots showing CXCR5 expression across all cTFH-like meta-clusters from children (n=13) with no stimulation (blue) and after in vitro stimulation with PfGARP (green) or PfSEA-1A (pink). Fifty percent of the data points are within the box limits, the solid line indicates the median, the dashed line indicates the mean, and the whiskers indicate the range of the remaining data with outliers being outside that range. Similar box plots are shown for (c) CD45RA, (d) CXCR3, and (e) CCR6 expression across all cTFH-like meta-clusters. (f) Clustered heatmap showing the median arcsinh-transformed expression for CCR6, CD45RA, CXCR3, and CXCR5 across meta-clusters, red showing the highest expression and blue the lowest. (g) Cytoplots of CCR6 vs CXCR3 expression where MC01 is blue, MC07 is pink, MC11 is yellow, and MC13 is green.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Bar plots showing (a) CXCR5, (b) CD45RA, (c) CCR6, and (d) CXCR3 expression across all cTFH-like meta-clusters from adults (n=13) under no stimulation (blue), PfGARP (green), and PfSEA-1A (pink) stimulations. Fifty percent of the data are within the box limits, the solid line indicates the median, the dashed line the mean, and the whiskers indicate the range of the remaining data with outliers being outside that range.
+
+### Heterogeneity of activation/maturation markers within cTFH subsets
 
 By assessing the expression of CCR7, PD1, CD127, and ICOS (Figure 4) and following the three-dimensional expression patterns adapted from Schmitt et al., 2014 (Figure 4—figure supplement 1), we determined the activation state of each cTFH meta-cluster and which markers created novel subsets. Data in Figure 4 are from children; however, similar observations were made for adults (Figure 4—figure supplement 3). As expected, none of the extracellular markers showed significant differences in expression patterns after a short 6 hr stimulation, thus representing the cTFH repertoire present within our study participants. Interestingly, the cTFH1or2 subset (MC03) was the only meta-cluster with high expression of PD1 (Figure 4a) accompanied by high ICOS (Figure 4b), low CCR7 (Figure 4c), and low CD127 expression (Figure 4d), suggesting that MC03 was an activated/effector cTFH1or2 subset. The MC04 subset had low CCR7 and high ICOS expression but low CD127 and intermediate PD1 expression, indicating that this cluster was a less activated/effector cTFH1or2 cluster compared to MC03.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig4-v1.jpg)
+
+**Figure 4.:** Box plots showing (a) PD1, (b) ICOS, (c) CCR7, and (d) CD127 expression across all cTFH-like meta-clusters from children (n=13) with no stimulation (blue), and after in vitro stimulation with PfGARP (green) or PfSEA-1A (pink). Fifty percent of the data points are within the box limits, the solid line indicates the median, the dashed line indicates the mean, and the whiskers indicate the range of the remaining data, with outliers being outside that range.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) CCR6 vs CXCR3 expression from activated cTFH2-like MC01 (in blue), quiescent cTFH1-like MC07 (in pink), activated cTFH1/17-like MC11 (in orange), and activated cTFH17-like MC13 (in green). Undetermined meta-clusters were superposed to the sus-mentioned metacluster: activated cTFH1or2-like MC03 (in black) (b); activated cTFH1or2-like MC04 (in black) (c); quiescent cTFH1or2-like MC05 (in black) (d); quiescent cTFH1or2-like MC08 (in black) (e).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Bar plots showing (a) PD1, (b) ICOS, (c) CCR7, and (d) CD127 expression across all cTFH-like meta-clusters in adults (n=13) under no stimulation (blue), PfGARP (green), and PfSEA-1A (pink) stimulations. Fifty percent of the data are within the box limits, the solid line indicates the median, the dashed line the mean, and the whiskers indicate the range of the remaining data with outliers being outside that range.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Dot plots of CD40L expression after manual gating based on unstimulated condition from children (n=13) (a) and adults (n=13) (b) cTFH meta-clusters.
 
 We also observed additional nuances in the expression pattern for other cTFH1-like meta-clusters. The cTFH1-like MC06 cluster had an activated/effector profile, whereas the cTFH1-like MC07 cluster had a quiescent/effector profile. The cTFH1or2-like MC05 and MC08 clusters were defined as quiescent/memory (overall high CCR7 expression), yet with very low expression of ICOS for the MC05 cluster.
 
 Likewise, cTFH2-like and cTFH17-like meta-clusters also displayed heterogeneity. The cTFH2-like MC01 cluster had an activated/effector profile, whereas the cTFH2-like MC02 cluster seemed to be a quiescent/effector subset. The cTFH1/17-like subsets MC09 and MC11 overall had an activated profile, although they had higher expression of CCR7 and CD127 compared to other subsets, suggesting an activated/memory phenotype. Finally, the cTFH17-like MC10 cluster seemed quiescent, whereas cTFH17-like MC13 had an activated/effector profile. Of note, because of our short stimulation time (6 hr), we were unable to find statistical differences in the CD40L expression between groups as only a few individuals responded (Figure 4—figure supplement 3). However, our analysis methods revealed a higher degree of previously unrecognized heterogeneity within circulating cTFH cells.
 
-## Activated cTFH1or2-, cTFH1-, and quiescent cTFH1or2-like subsets were more abundant in children
+### Activated cTFH1or2-, cTFH1-, and quiescent cTFH1or2-like subsets were more abundant in children
 
 After having deconvoluted cTFH cells into 12 subsets, we next wanted to determine whether their abundance differed by age or after antigen stimulation. Using Uniform Manifold Approximation and Projection (UMAP) visualization, we found that cTFH dimensional reduction was contiguous as meta-clusters merged with each other; in addition, there were notable differences between adults and children (Figure 5a). We found that activated PD1high cTFH1or2-like (MC03), activated cTFH1-like (MC06), and quiescent ICOShigh cTFH1or2-like (MC08) subsets were significantly more abundant in children compared to adults regardless of the stimulation conditions (Figure 5b, c, and d, p<0.05). In contrast, the quiescent PfSEA-1A- and PfGARP-specific cTFH2-like cluster (MC02) was significantly more abundant in adults compared to children (Figure 5c and d, p<0.05). Interestingly, following PfGARP stimulation, the activated cTFH1/17-like subset (MC09) became more abundant in children compared to adults (Figure 5d, p<0.05 with a false discovery rate [FDR] = 0.08), but no additional subsets shifted phenotype after PfSEA-1A stimulation (Figure 5c). Of note, the activated PD1low cTFH1or2-like cells (MC04) seemed more abundant in non-stimulated adults and PfGARP-stimulated children, but because these observations were not present in all the participants, they did not achieve statistical significance in EdgeR.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig5-v1.jpg)
+
+**Figure 5.:** (a) Uniform Manifold Approximation and Projection (UMAP) plots showing the 12 different cTFH meta-clusters in adults (top three plots, n=13) and in children (bottom three plots, n=13) in the absence of stimulation or after in vitro stimulation with PfSEA-1A or PfGARP, from left to right, respectively. Colored circles highlight the meta-clusters showing differences in their abundance between adults and children for each condition. An EdgeR statistical plot was performed to assess the change in abundance of the 12 meta-clusters between adults and children after (b) no stimulation or stimulation with (c) PfSEA-1A or (d) PfGARP. EdgeR plots indicate which meta-clusters are significantly abundant between two groups by using green color dots. The Y-axis is the -log10(p-value), and the X-axis is the log(FC). Green dots were statistically significant (p<0.05). Numbers next to the dots indicate the meta-cluster. (e) An abundance heatmap indicates the percentage (black numbers) of each meta-cluster within the total number of CD3posCD4posCXCR5posCD25neg cells for adults and children (concatenated from 13 participants in each group) under the different conditions: no stimulation (Neg) or stimulation with PfSEA-1A or PfGARP. The color scale ranges from high expression (red) to low/no expression (blue). The star in the heatmap indicates which meta-cluster is significantly abundant in children or adults based on the EdgeR results.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Uniform Manifold Approximation and Projection (UMAP) plot showing the clustering of the 13 different cTFH meta-clusters (MC15) in children with low levels of HRP2 (on the left, n=6) and high levels of HRP2 (on the right, n=6) in the absence of stimulation. Each color represents a meta-cluster. The red circles highlight the meta-cluster showing differences in its abundance between the two groups of children. (b) An EdgeR statistical plot was performed to assess the abundance of the 13 meta-clusters between unstimulated peripheral blood mononuclear cells (PBMCs) from both groups of children; the Y-axis being -log10(p-value) and the X-axis shows the log(FC). The green dot (MC04) is statistically significant, whereas the black dots are not. (c) An abundance heatmap showing the distribution (in %) of each meta-cluster within the two groups of children (both concatenated unstimulated PBMCs from six participants). The color scale ranges from high abundance (red) to low abundance (blue).
+
 The abundance heatmap (Figure 5e) reiterates the differences observed between children and adults and highlights important considerations when assessing the potential role of each cTFH subset in assisting with cognate antibody production. Overall, the most common cTFH subset in both children and adults was the quiescent cTFH2-like cells (MC02, 24.1% and 41.2%, respectively). However, the antigen-specific differences in the cTFH subset abundance for children (MC09 for PfGARP) and for adults (MC02 for both PfSEA-1A and PfGARP) suggest that children engage different cTFH cells as they are developing immunity. Of note, only the activated PD1low cTFH1or2-like cells (MC04) were less abundant in children with low compared to high HRP2 antibody levels (Figure 5—figure supplement 1), suggesting that this subset may be involved in short-term antibody production. Overall, this comprehensive examination of the abundance of cTFH subsets demonstrates important diversity based on age and malaria-antigen specificity.
 
-## PfSEA-1A and PfGARP induced IL-4, Bcl6, and cMAF from a broad range of cTFH subsets in children
+### PfSEA-1A and PfGARP induced IL-4, Bcl6, and cMAF from a broad range of cTFH subsets in children
 
 Because the children in this cohort were 7 years of age and resided in a malaria-holoendemic area, they had ample time to develop premunition. To assess antigen-specific cytokine and transcription factor expression signatures and further characterize cTFH subsets, we generated clustered heatmaps of the median fluorescence intensity (MFI) of each analyte (IFNγ, IL-4, IL-21, Bcl6, and cMAF) for children (Figure 6—figure supplement 1a) and adults (Figure 6—figure supplement 1b). Next, using these MFI data, we performed Wilcoxon paired two-tailed t-tests to compare PfSEA-1A and PfGARP stimulation to unstimulated cells (Figure 6a and b, respectively). Significant differences in these expression profiles allowed us to further characterize meta-clusters into three main groups. Group 1: cTFH2-like (activated MC01 and quiescent MC02) and activated cTFH1or2-like (PD1highMC03 and PD1lowMC04); Group 2: activated and quiescent cTFH1-like (MC06 and MC07); Group 3: activated cTFH1/17-like (MC11) and cTFH17-like (quiescent MC10 and activated MC13). For children, PfSEA-1A and PfGARP induced robust IL-4 expression in 9 out of 12 cTFH meta-clusters (p-values≤0.0105); although the composition of which cTFH subsets were engaged differed slightly by antigen (quiescent cTFH1or2-like ICOSlow MC05 vs quiescent cTFH2-like MC02, respectively). In contrast to IL-4, we observed no change in expression for IFNγ or IL-21 after in vitro antigen stimulation (except for quiescent cTFH1or2-like ICOShigh MC08, p-value=0.0391), suggesting that these cytokines are not informative to define the development of antigen-specific cTFH subsets in children.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-v1.jpg)
+
+**Figure 6.:** Heatmaps of Wilcoxon paired two-tailed t-test p-values are shown for cTFH meta-clusters comparing (a) PfSEA-1A and (b) Pf-GARP vs unstimulated peripheral blood mononuclear cells (PBMCs) from children (n=13) for each cytokine (IFNγ, IL-4, and IL-21) and transcription factor (Bcl6 and cMAF). The color scale indicates the significance of the p-value: white (nonsignificant, p>0.05), yellow (0.05>p>0.02), orange (0.02>p>0.005), and red (highly significant, p<0.005). The down arrow indicates a decrease of expression from unstimulated to stimulated condition, whereas no arrow indicates an increase of expression from unstimulated to stimulated condition. The cTFH meta-clusters that co-expressed transcription factors were grouped as follows: Group 1 (blue line), Group 2 (green line), and Group 3 (purple line). Bar plots indicating mean with standard deviation (SD) of the median intensity fluorescence (MFI) of (c) IFNγ, (d) Bcl6, and (e) cMAF for the cTFH meta-clusters showing significant statistical differences between PfSEA-1A and PfGARP stimulations. The p-values from Wilcoxon paired two-tailed t-tests are indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmap of Bcl6, IFNγ, IL21, IL4, and cMAF expression from the 13 cTFH meta-clusters from concatenated data from (a) children (n=13) and (b) adults (n=13), after stimulation by PfSEA-1A or PfGARP, or without any stimulation as indicated in the name of each row. The color scale ranges from high expression (red) to low/no expression (blue).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Comparison of mean fluorescent intensity (MFI) of (a) IFNγ, (b) IL4 cytokines expression after PfSEA-1A (pink) or PfGARP (green) stimulation or no stimulation control (blue). Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Comparison of mean fluorescent intensity (MFI) of (a) Bcl6 and (b) cMAF expression after PfSEA-1A (pink) or PfGARP (green) stimulation or no stimulation control (blue). Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (a) Bcl6 vs cMAF cytoplots from the six runs overlaid FMOs. (b) Percentage of CD4posCXCR5posBcl6pos cells across stimulation in children (left) and adults (right). Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated. (c) Percentage of CD4posCXCR5poscMAFpos cells across stimulation in children (left) and adults (right). Bar plots indicate mean with SD. Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated. Manually gated positive Bcl6 cells overlaid on the Uniform Manifold Approximation and Projection (UMAP) of the CD4posCXCR5posCD25neg cells across stimulation in children (d) and adults (e). (f) Contour plots with outliers of cMAF vs Bcl6 expression upon stimulation for each meta-cluster.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Cytoplot of IFNγ vs CXCR5 expression from CD4 T cells upon stimulation. (B) Percentage of CD4posIFNγpos cells across stimulation. (C) Percentage of CD4posCXCR5posIFNγpos cells across stimulation. (D) Spaghetti plot of the CD4posCXCR5posIFNγpos cells across stimulation, each color represents a participant. (E) Cytoplots of IFNγ vs FSC-A expression from CD89 T cells upon stimulation. (F) Percentage of CD8posIFNγpos cells across stimulation. Manually gated positive IFNγ cells overlaid on the Uniform Manifold Approximation and Projection (UMAP) of the CD4posCXCR5posCD25neg cells across stimulation in children (G) and adults (H). (I) Cytoplots of IFNγ vs IL21 expression from six overlaid FMOs and CD4posCXCR5pos T cells upon stimulation. (J) Percentage of CD4posIL21pos cells across stimulation in children. (K) Percentage of CD4posIL21pos cells across stimulation in adults. Manually gated positive IL21 cells overlaid on the UMAP of the CD4posCXCR5posCD25neg cells across stimulation in children (L) and adults (M). (N) Contour plots with outliers of IFNγ vs IL21 expression upon stimulation for each meta-cluster. Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** (A) Cytoplot of IL4 vs IL21 expression from six overlaid FMO and CD4posCXCR5pos T cells upon stimulation. Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated. Percentage of CD4posCXCR5posIL4pos cells across stimulation in children (B) and adults (C). Manually gated positive IL4 cells overlaid on the Uniform Manifold Approximation and Projection (UMAP) of the CD4posCXCR5posCD25neg cells across stimulation in children (D) and adults (E). IL4 mean fluorescence intensity (MFI) for all meta-clusters represented in bar plots across stimulation in children (F) and adults (G), negative control in blue, PfSEA-1A in pink, and PfGARP in green. Wilcoxon paired two-tailed t-tests were performed, and significant p-values are indicated with * equal p<0.05. (H) Contour plots with outliers of L4 vs IL21 expression upon stimulation for each meta-cluster.
+
 We found that PfSEA-1A (Figure 6a) and PfGARP (Figure 6b) induced similar Bcl6 and cMAF expression profiles from some of the same cTFH subsets: both transcription factors were expressed by activated cTFH2-like MC01 and quiescent cTFH17-like MC10, but only cMAF was expressed in activated and quiescent cTFH1-like MC06, MC07, and activated cTFH1/17-like MC11 subsets. However, PfSEA-1A induced Bcl6 and cMAF from activated PD1highMC03, whereas PfGARP only induced Bcl6. In contrast, the quiescent cTFH2-like MC02 subset did not seem to respond to PfSEA-1A (only cMAF was significant, p=0.0266, Figure 6a, Figure 6—figure supplements 2 and 3), whereas PfGARP stimulation induced significantly more IL-4, Bcl6, and cMAF compared to unstimulated cells (p=0.0081, p=0.0017, and p=0.0081, respectively, Figure 6b, Figure 6—figure supplements 2 and 3). We then compared the response intensity between PfSEA-1A and PfGARP stimulations and found significant differences in IFNγ, IL-21, Bcl6, and cMAF expression levels (Figure 6c, d, e, and f, respectively). In Group 1, Bcl6 expression was significantly higher within activated and quiescent cTFH2-like subsets (MC01 and MC02) as well as activated PD1high cTFH1or2-like (MC03) cells after PfGARP compared to PfSEA-1A stimulation (p=0.0266, p=0.0134, and p=0.0327, respectively, Figure 6e). Within Group 2, IFNγ and Bcl6 were highly expressed by activated cTFH1-like (MC06) after PfGARP stimulation compared to PfSEA-1A stimulation (p=0.0093 and p=0.0024, respectively, Figure 6c and e). Finally, within Group 3, the activated cTFH1/17-like cells (MC11) expressed higher cMAF after PfSEA-1A stimulation compared to PfGARP (p=0.0186, Figure 6f). Interestingly, PfGARP induced significantly more IL-21 within the quiescent ICOSlow cTFH1or2-like (MC05) meta-cluster compared to PfSEA-1A stimulation (p=0.0186, Figure 6d). Nonsignificant differences in cytokines and transcription factors expressed by cTFH subsets between conditions are shown in Figure 7—figure supplements 1 and 2, respectively.
 
-## PfGARP induced IL-4, Bcl6, and cMAF expression in activated cTFH1/17- and cTFH17-like subsets in adults
+### PfGARP induced IL-4, Bcl6, and cMAF expression in activated cTFH1/17- and cTFH17-like subsets in adults
 
 A similar heatmap was generated for adult expression profiles comparing PfSEA-1A and PfGARP stimulated to unstimulated cells (Figure 7). Here, we found that both PfSEA-1A and PfGARP induced significant expression of both IFNγ and IL-4 for activated (MC01) and quiescent (MC02) cTFH2-like cells (Figure 7a and b, Figure 7—figure supplement 1). Whereas PfGARP also induced IL-4 and IFNγ expression from quiescent and activated cTFH17-like cells (MC10 and MC13), in addition to Bcl6 and cMAF for MC13 (Figure 7b, Figure 7—figure supplement 2). This observation was surprising because IFNγ expression is commonly used to categorize the cTFH1 subset (Group 2); however, as shown earlier, quiescent and activated cTFH17-like cells (MC10 and MC13) did not express CXCR3 (Figure 3d and e). In contrast, activated the cTFH1/17-like cells (MC11) only responded to PfGARP (Figure 7b, Figure 7—figure supplement 1), expressing higher levels of IL-4, IL-21, Bcl6, and cMAF. Finally, while assessing the differences between the two malaria antigens, we found that PfGARP induced more Bcl6 expression than PfSEA-1A within the quiescent cTFH2-like subset (MC02, p=0.0327) and the quiescent ICOSlow cTFH1or2-like cells (MC05, p=0.0105), as well as within the quiescent cTFH17-like subset (MC10, p=0.0479) and the activated cTFH1/17-like cells (MC11, p=0.0020) (Figure 7d). The MC11 cells also expressed higher IL-21 levels after PfGARP compared to PfSEA-1A stimulation (p=0.0273, Figure 7c), whereas PfSEA-1A induced cMAF within the activated cTFH2-like subset (MC01, p=0.0134), but PfGARP did not (Figure 7e). Overall, the main observation for adults is that PfSEA-1A predominantly induced IL-4 from slightly more than half of the cTFH clusters, whereas PfGARP induced a broader range of cytokines and transcription factors but within the activated cTFH1/17-like cells (MC11) and quiescent and activated cTFH17-like subset (MC10 and MC13) similar to children. This analysis shows clear differences in cTFH subset specificity by malaria antigen and cTFH subset engagement by age group, with the cTFH repertoire becoming more restricted in adults compared to children.
 
-## The activated cTFH1or2-like subset is more abundant in participants with high anti-PfGARP antibodies
+![Figure 7.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig7-v1.jpg)
+
+**Figure 7.:** Heatmaps of Wilcoxon paired two-tailed t-test p-values are shown for cTFH meta-clusters comparing (a) PfSEA-1A or (b) Pf-GARP vs unstimulated peripheral blood mononuclear cells (PBMCs) from adults (n=13) for each cytokine (IFNγ, IL-4, and IL-21) and transcription factors (Bcl6 and cMAF). The color scale indicates the significance of the p-value: white (nonsignificant, p>0.05), yellow (0.05>p>0.02), orange (0.02>p>0.005), and red (highly significant, p<0.005). The down arrow indicates a decrease of expression from unstimulated to stimulated condition, whereas no arrow indicates an increase of expression from unstimulated to stimulated condition. The only cTFH meta-clusters that expressed transcription factors were in Group 3 (purple box). Bar plots indicate the mean with standard deviation (SD) of the median fluorescence intensity (MFI) of (c) Bcl6 and (d) cMAF for the cTFH meta-clusters showing significant statistical differences between PfSEA-1A and PfGARP stimulations. The p-values from Wilcoxon paired two-tailed t-tests are indicated.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Comparison of mean fluorescent intensity (MFI) of (a) IFNγ, (b) IL4, and (c) IL21 and cytokines expression after PfSEA-1A (pink) or PfGARP (green) stimulation or no stimulation control (blue). Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Comparison of mean fluorescent intensity (MFI) of (a) Bcl6 and (b) cMAF expression after PfSEA-1A (pink) or PfGARP (green) stimulation or no stimulation control (blue). Bar plots indicate mean with standard deviation (SD). Wilcoxon paired two-tailed t-tests were performed, and p-values are indicated.
+
+### The activated cTFH1or2-like subset is more abundant in participants with high anti-PfGARP antibodies
 
 As shown in Figure 1b,, a broad range of anti-PfGARP IgG antibody levels were found in both children and adults. Thus, we wanted to determine whether the abundance of any of the cTFH subsets was associated with the level of anti-PfGARP IgG antibodies. When stratifying by high vs low anti-PfGARP IgG antibody levels, we found that an activated cTFH1or2-like subset (MC04) was more abundant in participants with high levels of anti-PfGARP IgG for both children (Figure 8a) and adults (Figure 8b) after PfGARP stimulation compared to participants with low levels or an absence of anti-PfGARP IgG. However, even though the p-values were significant for both children and adults (p=0.02 and p=0.004, respectively), the FDR was less than 0.05 only for the adults (FDR = 0.018). This suggests that this particular subset might be important for the generation of anti-PfGARP antibodies. Interestingly, activated cTFH1-like (MC06) and quiescent cTFH1-like (MC07) cells were more abundant for adults with low or no anti-PfGARP IgG antibodies compared to those with high levels (p=0.0024 with FDR = 0.0185 and p=0.0034 with FDR = 0.0185, respectively), consistent with previous observations describing TFH1 subsets as inefficient help for antibody production (Obeng-Adjei et al., 2015).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/98462/elife-98462-fig8-v1.jpg)
 
-**Figure 8.:** FH meta-clusters stratified by anti-PfGARP IgG antibody levels.Uniform Manifold Approximation and Projection (UMAP) and EdgeR analyses of (a) children (n=13) and (b) adults (n=13), where significant differences (p<0.05) in the abundance of the cTFH meta-clusters are circled on high vs low PfGARP antibody level (left to right) in the UMAP plot and green dots on the volcano plot (far right).
+**Figure 8.:** Uniform Manifold Approximation and Projection (UMAP) and EdgeR analyses of (a) children (n=13) and (b) adults (n=13), where significant differences (p<0.05) in the abundance of the cTFH meta-clusters are circled on high vs low PfGARP antibody level (left to right) in the UMAP plot and green dots on the volcano plot (far right).
 
 ## Discussion
 
@@ -107,35 +191,304 @@ In summary, our study provides additional justification for the resources needed
 
 ## Methods
 
-## Study populations and ethical approvals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample Homo sapiens</td>
+      <td>PBMCs, Plasma, cell pellet</td>
+      <td>From our studied cohort</td>
+      <td>N/A</td>
+      <td>Used 1 million PBMCs per condition</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Co-stimulatory antibodies CD28/CD49d</td>
+      <td>BD</td>
+      <td>Cat# 347690</td>
+      <td>Fast Immune5 µl per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CCR6BV421, Mouse, clone 561</td>
+      <td>BioLegend</td>
+      <td>Cat#343610, RRID:AB_2561356</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD14-Pacific Blue, Mouse,clone HCD14</td>
+      <td>BioLegend</td>
+      <td>Cat#325616,RRID:AB_830689</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD19-Pacific Blue, Mouse,clone HIB19</td>
+      <td>BioLegend</td>
+      <td>Cat#302232, RRID:AB_2073118</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CCR7-BV480, Rat, Clone 3D12</td>
+      <td>BD</td>
+      <td>Cat#566099, RRID:AB_2739502</td>
+      <td>4 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IFNγ-BV510, Mouse, Clone 4SB3</td>
+      <td>BioLegend</td>
+      <td>Cat#502544,RRID:AB_2563883</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD127-BV570, Mouse, Clone A019D5</td>
+      <td>BioLegend</td>
+      <td>Cat#351307, RRID:AB_10900064</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45RABV605, Mouse, Clone HI100</td>
+      <td>BioLegend</td>
+      <td>Cat#304134, RRID:AB_2563814</td>
+      <td>0.2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PD1-BV650, Mouse, Clone MIH4</td>
+      <td>BD</td>
+      <td>Cat#564324, RRID:AB_2738746</td>
+      <td>4 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CXCR3-BV711, Mouse, Clone G025H7</td>
+      <td>BioLegend</td>
+      <td>Cat#353732, RRID:AB_2563533</td>
+      <td>4 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD25-BV750, Mouse,Clone M-A251</td>
+      <td>BD</td>
+      <td>Cat#747158, RRID:AB_2871896</td>
+      <td>2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CXCR5-BV785, Mouse,Clone J252D4</td>
+      <td>BioLegend</td>
+      <td>Cat#356936, RRID:AB_2629528</td>
+      <td>2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bcl6-AF488, Mouse</td>
+      <td>BD</td>
+      <td>Cat#561524, RRID:AB_10716202</td>
+      <td>5 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3-Spark Blue 550, Mouse, clone SK7</td>
+      <td>BioLegend</td>
+      <td>Cat#344852, RRID:AB_2819985</td>
+      <td>0.2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8-PerCP-Cy5.5, Mouse, clone SK1</td>
+      <td>BioLegend</td>
+      <td>Cat#344710, RRID:AB_2044010</td>
+      <td>0.02 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-21-PE, Mouse, clone 3A3-N2</td>
+      <td>BioLegend</td>
+      <td>Cat#513004, RRID:AB_2249025</td>
+      <td>10 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-4-PE-Dazzle, Rat, clone MP4-25D2</td>
+      <td>BioLegend</td>
+      <td>Cat#500832, RRID:AB_2564036</td>
+      <td>4 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4-PE-Cy5, Mouse, clone RPA-T4</td>
+      <td>BioLegend</td>
+      <td>Cat#300510, RRID:AB_314078</td>
+      <td>0.04 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ICOS-PE-Cy7, Armenian Hamster, clone C398.4A</td>
+      <td>BioLegend</td>
+      <td>Cat#313520, RRID:AB_10643411</td>
+      <td>1 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>cMAF-eFluor 660, Mouse, clone sym0F1</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#50985582, RRID:AB_2574388</td>
+      <td>2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD40L-AF700, Mouse, clone 24–31</td>
+      <td>BioLegend</td>
+      <td>Cat#310846, RRID:AB_2750053</td>
+      <td>2 µl per million PBMCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-human IgG</td>
+      <td>BD</td>
+      <td>Cat#555785</td>
+      <td>Diluted 1:1000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plasmodium falciparum malaria antigens</td>
+      <td>Kurtis’ labBrown University</td>
+      <td>Pf-GARP and Pf-SEA-1A</td>
+      <td>5 µg/ml (PfSEA-1A) 10 µg/ml (PfGARP)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plasmodium falciparum malaria antigens</td>
+      <td>Walter Reed Army Institute of Research</td>
+      <td>AMA1, MSP1, CelTos, HRPII</td>
+      <td>100 µg of each</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transcription factor buffer set Fix/Perm</td>
+      <td>BD</td>
+      <td>Cat#562574</td>
+      <td>Followed manufacturer’s instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma</td>
+      <td>Cat#A3294</td>
+      <td>Solution of 1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staphylococcal enterotoxin B</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 324798</td>
+      <td>Used at 1 µg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GolgiPLUG Brefaldin A</td>
+      <td>BD</td>
+      <td>Cat# 555029</td>
+      <td>Used at 0.1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GolgiSTOP Monensin</td>
+      <td>BD</td>
+      <td>Cat# 554724</td>
+      <td>Used at 0.7 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin-PE Detection</td>
+      <td>BD</td>
+      <td>Cat#554061</td>
+      <td>Diluted 1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SpectroFlow</td>
+      <td>Cytek</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OMIQ platform</td>
+      <td>OMIQ</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>N/A</td>
+      <td>version 7.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zombie NIR</td>
+      <td>BioLegend</td>
+      <td>Cat# 423106</td>
+      <td>Live/Dead staining 1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultra-Compensation beads Plus</td>
+      <td>Thermo Fisher eBiosciences</td>
+      <td>Cat#01333342</td>
+      <td>1 drop per compensation control</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study populations and ethical approvals
 
 Adults and children were recruited from Kisumu County, Kenya, which is holoendemic for Pf-malaria. Written informed consent was obtained from each adult participant and every child’s guardian. An abbreviated medical history, physical examination, and blood film were used to ascertain health and malaria infection status at the time of blood sample collection. Participants were also lifelong residents of the study area with the assumption that they naturally acquired immunity to malaria. This study was conducted before the implementation of any malaria vaccines. Participants were eligible if they were healthy and not experiencing any symptoms of malaria at the time venous blood was collected. For this cross-sectional immunology study, we selected fourteen 7-year-old children from a larger age-structured prospective cohort study (enrollment age range 3–7 years) and fifteen Kenyan adults. We selected 7-year-olds because of the age-dependent shift in major cTFH subsets occurring after 6 years of age (Chan et al., 2022), and as a comparable age published by other studies (Obeng-Adjei et al., 2015), to maximize our ability to measure antigen-specific differences in TFH subsets.
 
 Ethical approvals were obtained from the Scientific and Ethics Review Unit (SERU) at the Kenya Medical Research Institute (KEMRI) reference number 3542, and the Institutional Review Board at the University of Massachusetts Chan Medical School, Worcester, MA, USA, IRB number H00014522. Brown University, Providence, RI, USA, signed a reliance agreement with KEMRI.
 
-## Plasma and PBMC isolation
+### Plasma and PBMC isolation
 
 Venous blood was collected in sodium heparin BD Vacutainers and processed within 2 hr at the Center for Global Health Research, KEMRI, Kisumu. ALCs were determined from whole blood using the BC-3000 Plus Auto Hematology Analyzer, 19 parameters (Shenzhen Mindray Bio-Medical Electronics Co). After 10 min at 1000×g spin, plasma was removed and stored at –20°C, and an equivalent volume of 1× PBS was added to the cell pellet. PBMCs were then isolated using Ficoll-Hypaque density gradient centrifugation on SepMate (StemCell). PBMCs were frozen at 5×106 cells/ml in a freezing medium (90% heat-inactivated and filter-sterilized fetal bovine serum [FBS] and 10% dimethyl sulfoxide [Sigma]) and chilled overnight in Mr. Frosty containers at –80°C before being transferred to liquid nitrogen. For transport to the USA, an MVE vapor shipper (MVE Biological Solutions) was used to maintain the cold chain.
 
-## In vitro stimulation assay
+### In vitro stimulation assay
 
 PBMCs were thawed in 37°C filtered-complete media (10% FBS, 2 mM L-glutamine, 10 mM HEPES, 1× penicillin/streptomycin) and spun twice before resting overnight in a 37°C, 5% CO2 incubator. PBMCs were counted using Trypan Blue (0.4%) and a hemocytometer, and the cell survival was calculated. Our samples showed a median of 94.6% live cells (25% percentile of 92%; 75% percentile of 97%). Using a P96 U-bottom plate, 1×106 PBMCs per well were placed in culture with one of the following stimulation conditions: PfSEA-1A (Raj et al., 2014) (5 µg/ml) or PfGARP (Raj et al., 2020) (10 µg/ml) both produced in the Kurtis lab (Brown University); SEB (1 µg/ml; EMD Millipore) was used as a positive control; sterile water (10 µl, the same volume used to reconstitute PfSEA and PfGARP) was used as a negative control. A pool of anti-CD28/anti-CD49d (BD Fast-Immune Co-Stim following the manufacturer’s instructions), GolgiSTOP (0.7 µg/ml), and GolgiPLUG (0.1 µg/ml) (BD Biosciences) was added to each well before incubating cells at 37°C for 6 hr.
 
-## Cell staining and flow cytometry
+### Cell staining and flow cytometry
 
 A multiparameter spectral flow cytometry panel was used to characterize cTFH cell subsets: CCR6-BV421 (RRID:AB_2561356), CD14-Pacific Blue (RRID:AB_830689), CD19-Pacific Blue (RRID:AB_2073118), CCR7-BV480 (RRID:AB_2739502), IFNγ-BV510 (RRID:AB_2563883), CD127-BV570 (RRID:AB_10900064), CD45RA-BV605 (RRID:AB_2563814), PD1-BV650 (RRID:AB_2738746), CXCR3-BV711 (RRID:AB_2563533), CD25-BV750 (RRID:AB_2871896), CXCR5-BV785 (RRID:AB_2629528), Bcl6-AF488 (RRID:AB_10716202), CD3-Spark Blue 550 (RRID:AB_2819985), CD8-PerCP-Cy5.5 (RRID:AB_2044010), IL-21-PE (RRID:AB_2249025), IL-4-PE-Dazzle (RRID:AB_2564036), CD4-PE-Cy5 (RRID:AB_314078), ICOS-PE-Cy7 (RRID:AB_10643411), cMAF-eFluor 660 (RRID:AB_2574388), CD40L-AF700 (RRID:AB_2750053), and Zombie NIR (BioLegend cat# 423106) for Live/Dead staining. Cells were fixed and permeabilized for 45 min using the transcription factor buffer set (BD Pharmingen) followed by a wash with the perm-wash buffer. Intracellular staining was performed at 4°C for 45 more minutes followed by two washes using the kit’s perm-wash buffer. Data was acquired on a Cytek Aurora with 4 lasers (UMass Chan Flow Core Facility) using SpectroFlo software (Cytek) and compensation for unmixing and fluorescence-minus-one controls. Quality control of the data was performed using SpectroFlo, and the multiparameter analysis was performed with OMIQ data analysis software (https://www.omiq.ai/). Thus, we assessed the expression of markers commonly used to define the following different cTFH (CD4posCD25negCXCR5pos) subsets: cTFH1-like (CCR6negCXCR3pos), cTFH2-like (CCR6negCXCR3neg), and cTFH17-like (CCR6posCXCR3neg) (Schmitt et al., 2014), as well as quiescent/central memory cTFH (CCR7highPD-1negICOSneg) or activated/effector memory cTFH cells (CCR7lowPD-1posICOSpos) (Schmitt et al., 2014; Gong et al., 2019). Representative cytoplots can be found in Figure 2—figure supplement 1.
 
-## Multiplex suspension bead-based serology assay
+### Multiplex suspension bead-based serology assay
 
 To measure plasma IgG antibody levels to PfSEA-1A (Raj et al., 2014) and PfGARP (Raj et al., 2020), we used a Luminex bead-based suspension assay as previously published (Cham et al., 2009; Forconi et al., 2018). In addition, previous Pf exposure was determined using recombinant proteins to blood-stage malaria antigens: AMA1, MSP1, HRP2, CelTos, and CSP (gifts from Sheetji Dutta, Evelina Angov, and Elke Bergmann from the Walter Reed Army Institute of Research). Briefly, 100 μg of each antigen or BSA (Sigma), as a background control, was coupled to ~12 × 106 nonmagnetic microspheres (Bio-Rad carboxylated beads) and then incubated with study participant plasma (spun down 10,000×g for 10 min and diluted at 1:100 in the assay dilution buffer) for 2 hr, followed by incubation with biotinylated anti-human IgG (BD #555785) diluted 1:1000 for 1 hr and streptavidin (BD #554061) diluted 1:1000 for 1 hr following the manufacturer’s instructions. The MFI of each conjugated bead (minimum of 50 beads per antigen) was quantified on a FlexMap3D Luminex multianalyte analyzer (Xponent software). Results are reported as antigen-specific MFI after subtracting the BSA value for each individual since background levels can vary between individuals.
 
-## OMIQ analysis
+### OMIQ analysis
 
 The fcs files were uploaded into the OMIQ platform after passing quality control under SpectroFlo (Cytek) where compensation was re-checked. In OMIQ, we arcsinh-transformed the scale to allow downstream analysis and then gated on singlet live lymphocytes and subsampled the data to yield 87,712 live lymphocytes per sample. Using only lineage markers CD3, CD4, CD8, CD14, CD19, CXCR5, and CD25, FlowSOM consensus meta-clustering was run on 100 clusters based on the 87,712 live lymphocytes per sample with a comma-separated k-value of 75 and Euclidean distance metric. Using these 75 meta-clusters, we defined subsets of cells based on lineage markers, such as CD3posCD8pos, CD3negCD14posCD19pos, and CD3posCD4pos, and then distinguished CD4posCXCR5posCD25neg (cTFH) and CD4posCXCR5negCD25pos (T regulatory [Treg] or T-follicular regulatory [TFR]) subsets. CD25 was used to exclude Treg and TFR cells which share numerous markers with cTFH cells (Wing et al., 2018; Sage et al., 2014; Zhao et al., 2020). EmbedSOM dimensional reduction was used to visualize the different groups of cells, and EdgeR analysis was run to assess the significance of their differences. A clustering heatmap was used to visualize cytokine expression and transcription factor profiles for each subset.
 
 Focusing on the CD4posCXCR5posCD25neg TFH cells, we ran another FlowSOM analysis based on the 1000 CXCR5pos cells per sample (two samples from the adult group and one sample from the children group were excluded from the analysis as they had less than 1000 CXCR5pos cells), using extracellular markers CXCR5, CXCR3, CCR6, ICOS, CCR7, CD45RA, CD127, CD40L, and PD1 enabled the identification of 15 meta-clusters. If the fcs file had more than 1000 CXCR5pos cells, the down-sampling was done randomly by the OMIQ platform algorithm to select only 1000 CXCR5pos cells within this specific fcs file. From there, we performed UMAP dimensional reduction, heatmaps, and EdgeR analyses; the latter allowed statistical analysis of the cTFH abundances. To demonstrate the reproducibility of these results, statistical analysis algorithms were run at least three times downstream of the same clustering algorithm and downstream of repeated clustering algorithms. To assess statistical differences in cytokines and transcription factor expression, we exported the statistics dataset from OMIQ containing MFI values from each marker (IFNγ, IL-4, IL-21, Bcl6, and cMAF) per cluster and for each sample and stimulation condition. To assess cytokines and transcription factors without bias, we chose to use the total MFI expression per meta-cluster with the assumption that cells with increased production of the desired analyte trigger an increase in the overall meta-cluster MFI compared to unstimulated cells, and if there is no production of the desired analyte, the overall MFI will not differ. However, the percentage of positive IFNγ, IL-4, IL-21, Bcl6, or cMAF using manual gating can be found in Figure 6—figure supplements 4–6 along with the overlay of the gated positive cells on the CD4posCXCR5posCD25neg UMAP and the cytoplots of the gated positive cells for each meta-cluster (Figure 6—figure supplements 4–6).
 
-## Statistical analysis
+### Statistical analysis
 
 For this cross-sectional immunology study, we selected both male and female study participants (sex defined at birth). There were fourteen 7-year-old children and fifteen adults. Using GraphPad Prism software (version 7.0), age, sex, ALC, and serological data were compared between adults and children. Because the number of participants within each group was too low to verify the normality of the underlying distributions (adults n=15 and children n=14), we chose to use non-parametric tests, including the Mann-Whitney U test (for unpaired analysis) and Wilcoxon signed-rank test (for paired analysis). When data passed the normality test (D’Agostino and Pearson test), we used Welch’s parametric test. All tests were two-tailed with a p-value<0.05 for significance. Because of the exploratory nature of the analysis, we did not use any adjustment of the p-value for multiple comparisons. The tests used are indicated in the legend of each figure. Results were expressed as the mean with SD and exact p-values for dot plots.
 

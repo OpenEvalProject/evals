@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.44519.001 Sarcoidosis is a complex systemic granulomatous disease of unknown etiology characterized by the presence of activated macrophages and Th1/Th17 effector cells. Data mining of our RNA-Seq analysis of CD14 + monocytes showed enrichment for metabolic and hypoxia inducible factor (HIF) pathways in sarcoidosis. Further investigation revealed that sarcoidosis macrophages and monocytes exhibit higher protein levels for HIF-α isoforms, HIF-1β, and their transcriptional co-activator p300 as well as glucose transporter 1 (Glut1). In situ hybridization of sarcoidosis granulomatous lung tissues showed abundance of HIF-1α in the center of granulomas. The abundance of HIF isoforms was mechanistically linked to elevated IL-1β and IL-17 since targeted down regulation of HIF-1α via short interfering RNA or a HIF-1α inhibitor decreased their production. Pharmacological intervention using chloroquine, a lysosomal inhibitor, decreased lysosomal associated protein 2 (LAMP2) and HIF-1α levels and modified cytokine production. These data suggest that increased activity of HIF-α isoforms regulate Th1/Th17 mediated inflammation in sarcoidosis.
+Sarcoidosis is a complex systemic granulomatous disease of unknown etiology characterized by the presence of activated macrophages and Th1/Th17 effector cells. Data mining of our RNA-Seq analysis of CD14+monocytes showed enrichment for metabolic and hypoxia inducible factor (HIF) pathways in sarcoidosis. Further investigation revealed that sarcoidosis macrophages and monocytes exhibit higher protein levels for HIF-α isoforms, HIF-1β, and their transcriptional co-activator p300 as well as glucose transporter 1 (Glut1). In situ hybridization of sarcoidosis granulomatous lung tissues showed abundance of HIF-1α in the center of granulomas. The abundance of HIF isoforms was mechanistically linked to elevated IL-1β and IL-17 since targeted down regulation of HIF-1α via short interfering RNA or a HIF-1α inhibitor decreased their production. Pharmacological intervention using chloroquine, a lysosomal inhibitor, decreased lysosomal associated protein 2 (LAMP2) and HIF-1α levels and modified cytokine production. These data suggest that increased activity of HIF-α isoforms regulate Th1/Th17 mediated inflammation in sarcoidosis.
 
 ## Introduction
 
@@ -33,15 +33,132 @@ The oxygen-sensitive transcription factors HIF-1α and HIF-2α are key transcrip
 
 ## Results
 
-## RNA-seq data of sarcoidosis monocytes identifies enrichment of the HIF-1α signaling pathway
+### RNA-seq data of sarcoidosis monocytes identifies enrichment of the HIF-1α signaling pathway
 
 Patients (Table 1 and Materials and methods) were ambulatory outpatients who were not hypoxic. Differentially expressed (DE) genes between sarcoidosis monocytes and healthy monocytes previously determined (Talreja et al., 2017) were subjected to pathway analysis. The pathway analysis showed impaction of metabolic pathways, including oxidative phosphorylation, purine and pyruvate metabolism in sarcoidosis. Because most of genes in these pathways showed the presence of hypoxia response elements (HREs), we further focused on interrogation of the HIF-pathway. Figure 1A shows the heat map of HIF signaling genes in monocytes. There are clear differences in the intensity and expression of genes related to the HIF pathway in monocytes of healthy controls and sarcoidosis subjects. Next, we compared the expression of selected genes related to HIF transcription factor activity. The transcription factor aryl hydrocarbon receptor nuclear translocator (ARNT, also known as HIF-1β) heterodimerizes with HIF-1α to form a transcriptional active complex (Wolff et al., 2013). The gene count between sarcoidosis and healthy control subjects demonstrate significantly higher ARNT gene expression in sarcoidosis monocytes (Figure 1B). Endothelial PAS domain protein 1 (EPAS1), also known as HIF-2α, is a hypoxia inducible transcription factor (Hu et al., 2003; Thompson et al., 2014). The EPAS1 gene count between sarcoidosis and healthy control subjects demonstrates significantly higher EPAS1 expression in sarcoidosis monocytes (Figure 1C). EP300 is a co-activator important for transcriptional activity of HIFs (Palazon et al., 2014). Similarly, we found higher p300 gene expression in sarcoidosis monocytes as compared to healthy controls (Figure 1D). However, there were no differences in HIF-1α gene transcripts between the two groups.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig1-v3.jpg)
 
-**Figure 1.:** Pathway analysis of DE genes between sarcoidosis versus healthy control monocytes was done using the iPathwayGuide tool. (A) Heatmap of genes involved in HIF-1α signaling between sarcoid and healthy control monocytes. Dendrograms according to means identifying genes levels in the heatmap show two distinct clusters. Green shading represents high expression and red shading represents low expression. (B–D) Data presented as box plots of gene counts corrected based on an FDR of 0.05. Boxplots for gene expression in monocytes are shown for ARNT (B), EPAS1 (C), and EP300 (D).10.7554/eLife.44519.004Figure 1—source data 1.
+**Figure 1.:** Pathway analysis of DE genes between sarcoidosis versus healthy control monocytes was done using the iPathwayGuide tool. (A) Heatmap of genes involved in HIF-1α signaling between sarcoid and healthy control monocytes. Dendrograms according to means identifying genes levels in the heatmap show two distinct clusters. Green shading represents high expression and red shading represents low expression. (B–D) Data presented as box plots of gene counts corrected based on an FDR of 0.05. Boxplots for gene expression in monocytes are shown for ARNT (B), EPAS1 (C), and EP300 (D).
 
-## Increased protein expression of HIF-α isoforms in sarcoidosis
+**Table 1.**
+ Subject Demographics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Patients</th>
+      <th colspan="2">Control subjects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, y</td>
+      <td>27.7 ± 11.4</td>
+      <td colspan="2">28 ± 8.4</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>29 ± 10.4</td>
+      <td colspan="2">28 ± 3.6</td>
+    </tr>
+    <tr>
+      <td>Gender, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>35 (77)</td>
+      <td colspan="2">16(70)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>10 (23)</td>
+      <td colspan="2">7 (30)</td>
+    </tr>
+    <tr>
+      <td>Race, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>African American</td>
+      <td>51 (100)</td>
+      <td colspan="2">15 (75)</td>
+    </tr>
+    <tr>
+      <td>Caucasian</td>
+      <td>0 (0)</td>
+      <td colspan="2">5 (25)</td>
+    </tr>
+    <tr>
+      <td>CXR stage, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0 (0)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5 (11)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>30 (66)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>3 O2 saturation at Room Air</td>
+      <td>10 (22) 96–100</td>
+      <td colspan="2">NA 97–100</td>
+    </tr>
+    <tr>
+      <td>Organ Involvements, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuro-ophtalmologic</td>
+      <td>8 (17)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>43 (95)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Skin</td>
+      <td>12 (26)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Multiorgan</td>
+      <td>26 (57)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>PPD</td>
+      <td>Negative</td>
+      <td colspan="2">NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Definition of abbreviations: BMI = body mass index, CXR = chest X-ray, NA = not applicable, PPD = purified protein derivative_
+
+### Increased protein expression of HIF-α isoforms in sarcoidosis
 
 Since HIF-1α is known to be predominantly regulated through modification of its protein stability (Lee et al., 2004; Salceda and Caro, 1997), we evaluated HIF-1α and HIF-2α protein abundance in AMs and monocytes of sarcoidosis patients, isolated as described in Materials and methods. AMs or monocytes were cultured ex vivo under normoxic conditions. Western analysis of cell lysates probed with antibody against HIF-1α showed increased HIF-1α protein expression in sarcoidosis AMs and monocytes (Figure 2A and B). Similar results were seen for HIF-2α protein expression (Figure 2C and D). Since HIFα heterodimerizes with ARNT (also known as HIF-1β), translocates to the nucleus, and recruits transcriptional coactivator p300 to transactivate target genes containing hypoxia-responsive elements (HREs) (Semenza, 2003; Talwar et al., 2017a; Talwar et al., 2017b), we also examined their protein expression. Sarcoidosis AMs also show a higher expression of ARNT (Figure 2E and F) and p300 (Figure 2E and G). Similarly, we evaluated the HIF-1α protein abundance in isolated monocytes from sarcoidosis subjects and healthy controls and found significantly higher HIF-1α expression (Figure 2H and I). However, in contrast to increased HIF-2α gene transcripts, we did not detect HIF-2α in either sarcoidosis or control monocytes at the protein level. Because the lack of detection could have been due to low protein abundance in monocytes or lower sensitivity of antibody epitope, we compared the HIF-1α and −2α expression by flow cytometry. Figure 2J shows FSC-A/SSC-A gating. FACS analysis of PBMCs double stained for CD14 and HIF-1α or HIF-2α shows that in healthy controls 5–9% of PBMCs are CD14+HIF-1α+, whereas in sarcoidosis 20% to 35% of PBMCs are CD14+ HIF-1α+. Analysis of CD14+ monocytes based on the expression of HIF-1α shows 25–60% HIF-1α+ CD14+ monocytes in controls, whereas in sarcoidosis HIF-1α+ CD14+ monocytes are 64–96% (K). Interestingly, in healthy controls 0–0.1% of PBMCs are CD14+ HIF-2α+, whereas in sarcoidosis 1–3% of PBMCs are CD14+ HIF-2α+. It shows that in healthy controls the percentage of HIF-2α+ CD14+ monocytes is negligible, whereas in sarcoidosis there is higher percentage of HIF-2α+ CD14+monocytes (5–9%) (Figure 2L). Thus, these results show that sarcoidosis AMs and peripheral monocytes exhibit increased expression of HIF isoforms compared to healthy controls. These data suggest a different protein expression profile of HIF-2α in lung macrophages versus peripheral monocytes with low abundance in monocytes versus AMs.
 
@@ -49,51 +166,59 @@ Since HIF-1α is known to be predominantly regulated through modification of its
 
 **Figure 2.:** Whole cell extracts of AMs and monocytes were prepared and subjected to SDS-PAGE and western blot analysis using specific antibodies for HIF-1α, HIF-2α, ARNT, and p300. Equal loading was confirmed using antibodies against β-actin. Densitometry analysis is expressed as fold increase of the ratio of specific protein/β-actin. Sarcoid AMs exhibited higher HIF-1α expression (A and B) as compared to healthy controls. Sarcoid AMs expressed higher HIF-2α (C and D), ARNT (E and F) and p300 (E and G) as compared to healthy controls. Sarcoid monocytes exhibited higher HIF-1α expression (H and I) as compared to healthy controls. Representative blots for AMs and monocytes are shown out of a total of 10 patients and seven controls. Flow cytometry of PBMCs double stained for CD14+HIF-1α + and CD14+HIF-2α+ (J and K). PBMCs of healthy controls and sarcoid were stained with CD14-PerCPCy5.5, HIF-1α or CD14-PerCPCy5.5, HIF-2α primary antibodies followed by Alexa 488 secondary antibody and analyzed by flow cytometry using Flow-jo software. Figure 2J shows FSC-A/SSC-A gating. In healthy controls, 5–9% of PBMCs were CD14+HIF-1α+ whereas in sarcoidosis 20% to 35% of PBMCs were CD14+HIF-1α+ (K). HIF-2α expression was negligible in control PBMCs whereas 3% of sarcoid PBMCs were CD14+HIF-2α+ (L). Representative scatter plots from 4 patients and three controls are shown.
 
-## Confocal microscopy of sarcoidosis AMs and immunohistochemistry of sarcoidosis tissues confirmed increased HIF-1α expression and its nuclear accumulation
+### Confocal microscopy of sarcoidosis AMs and immunohistochemistry of sarcoidosis tissues confirmed increased HIF-1α expression and its nuclear accumulation
 
 To further confirm increased expression of HIF-1α protein in sarcoidosis and to determine whether HIF-1α accumulates in the nucleus, we immunostained AMs using specific an antibody against HIF-1α. Images were analyzed by immunofluorescent microscopy (AX10, Zeiss). We quantitated the percentage of cells showing HIF-1α expression (Figure 3A and B) in sarcoidosis. The staining is representative of one out of the five patients. It shows that about 60–90% of AMs express HIF-1α. Images (Figure 3C–H) were analyzed by confocal laser scanning microscopy (CLSM-310, Zeiss). Confocal microscopy images show nuclei stained with DAPI (blue) in a single AM (C) and a multinucleated giant cell (D), nuclear and cytoplasmic accumulation of HIF-1α in green (E and F), overlay image shows nuclear co-localization of HIF-1α (G and H).We saw enhanced expression and accumulation of HIF-1α in the cytoplasm and nuclei of sarcoidosis AMs, both in a single AM (Figure 3E) and in a multinucleated giant cell (Figure 3F) that are known to be characteristic cells in sarcoidosis granuloma. HIF-1α is highly expressed and overlay images show that HIF-1α accumulates in nuclei (Figure 3G and H) as compared to cytoplasm. To further explore the expression seen in sarcoidosis AMs, we assessed the presence of HIF-1α in lung biopsies of patients with sarcoidosis. Positive immunostaining was seen in multinucleated giant cells of granulomas as well as macrophages (Figure 3I and J, thick arrow), whereas fibroblasts and normal lungs lack HIF-1α expression. Negative staining was done by using isotype control antibody (Figure 3K). Similarly, we observed increased HIF-1α immunostaining signal in sarcoidosis liver and skin tissue samples. These results further confirmed that HIF-1α accumulates in sarcoidosis granulomatous tissues.
 
-## Increased Glut1, pro-IL-1β levels and IL-1β, IL-1Ra production in sarcoid AMs and monocytes
+![Figure 3.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig3-v3.jpg)
+
+**Figure 3.:** Immunofluorescence staining of sarcoidosis AMs showing presence of HIF-1α in the cytoplasm and nuclei. AMs (1 × 105) were allowed to adhere on chamber slides overnight. The cells were washed with PBST and fixed with 3.7% paraformaldehyde. Cells were permeabilized with 0.1% Triton X-100, blocked (10% FCS), and then incubated with anti-HIF-1α antibody overnight at 4°C. The secondary antibody was Alexa-fluor 488 - conjugated goat anti-rabbit antibody. Images were analyzed by immunofluorescent microscopy (AX10, Zeiss). Images show nuclei staining of AMs (A), overlay image shows nuclear and cytoplasmic co-localization of HIF-1α (Β). Confocal laser scanning microscopy (CLSM-310, Zeiss) images show nuclei stained with DAPI (blue) in a single AM (C) and a multinucleated giant cell (D), nuclear and cytoplasmic accumulation of HIF-1α in green (E and F), overlay image shows nuclear co-localization of HIF-1α (G and H). The images are representative from two patients out of total of 5 patients. The photomicrographs represent in situ immunohistochemistry performed on lung tissues. H and E staining of tissue obtained from transbronchial biopsy (I) 100X, HIF-1α immunostaining (J), negative staining using isotype control antibody (K). The brown color represents an area of precipitate formed by a chromogenic substrate that is transformed by an enzymatic label conjugated to the antibody that has bound to the HIF-1α antigen. Note that the intensity of the staining is most pronounced in the histiocytic cells (i.e., AMs and the multinucleated giant cells, thick arrow), and is not identified in the surrounding alveoli (thin arrow). The immunohistochemistry images are representative from one patient out of total of 5 patients.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** At the age of 21 she developed sarcoidosis involving multiple organs, including lungs, eyes, heart and liver. The increased HIF-1α staining in the hepatocytes may reflect the severity of disease in this patient. (A) Hematoxylin-eosin; original magnification X 200 shows multiple granuloma and increased mononuclear cell infiltrates. No significant fibrosis is seen in the H and E staining. (B) Immunohistochemical analysis using a specific antibody against HIF-1α. Staining intensity of HIF-1α was stronger in the mononuclear cells and granulomatous structures, while hepatocytes showed also HIF-1α staining. (C) Negative staining was performed by using isotype control antibody.
+
+### Increased Glut1, pro-IL-1β levels and IL-1β, IL-1Ra production in sarcoid AMs and monocytes
 
 HIF-1α is a critical transcription factor regulating metabolic reprogramming during inflammation, in part through upregulation of the SLC2A1 gene encoding glucose transporter (Glut)1 (Chen et al., 2001). HIF-1α and Glut1 upregulation contribute to production of several pro-inflammatory cytokines including IL-1β (Talwar et al., 2017a; Talwar et al., 2017b; Tannahill et al., 2013). Therefore, we evaluated the expression of Glut1 and pro-IL-1β at baseline in AMs and monocytes from sarcoidosis and control subjects. Sarcoidosis AMs exhibited a variable amount of Glut1 and pro-IL-1β (18/18 patients) but only 1 out of 10 healthy controls showed expression (Figure 4A and B). We found similar results for pro-IL-1β in monocytes (Figure 4C and D). Furthermore, increased pro-IL-1β expression directly correlated with Glut1 and HIF-1α expression in sarcoidosis AMs (Figure 4E). To determine whether increased pro-IL-1β expression in sarcoidosis leads to released IL-1β, we measured secreted IL-1β in the conditioned media of AMs and monocytes cultured in the absence or presence of LPS via ELISA. The results showed that unstimulated and LPS-stimulated cultured sarcoidosis AMs and monocytes secrete higher IL-1β as compared to healthy controls (Figure 4F and G). These data suggest that increased expression of HIF-1α leads to increased IL-1β production in sarcoidosis patients. The interleukin one receptor antagonist (IL-1Ra) is mainly secreted by monocytes, macrophages, and neutrophils. IL-1Ra (IL-1RII) competitively binds to IL-1β and forms a nonsignaling complex IL-1Ra to the surface receptors for IL-1β and inhibits the effect of IL-1β on cells (Arend, 2000; Janson et al., 1991). Since the sarcoidosis AMs produced significantly high levels of IL-1β, we assessed the conditioned media for the secreted IL-1Ra. Figure 4H shows that sarcoidosis AMs produced significantly high levels of IL-1Ra as compared to control AMs. Similarly, sarcoidosis PBMCs (Figure 4I) produced high levels of IL-1Ra as compared to control PBMCs.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig4-v3.jpg)
 
-**Figure 4.:** AMs or monocytes from sarcoid subjects and controls were cultured overnight. Whole cell extracts were prepared, and culture supernatants were collected to measure IL-1β. Whole cell extracts were subjected to SDS-PAGE and western blot analysis using specific antibodies for Glut1, pro- IL-1β and HIF-1α. Equal loading was confirmed using β-actin antibody. Densitometry analysis is expressed as fold increase of the ratio of specific protein/β-actin. IL-1β was measured in culture supernatants via ELISA. Sarcoidosis AMs (n = 18) exhibited significantly higher expression of Glut1 and pro- IL-1β as compared to control subjects (n = 10) (A and B). The western blot and densitometric results (black bars for pro- IL-1β and grey bars for Glut1) are representative from three patients out of total of 18 patients and three controls out of total of 10 control subjects. Monocytes from sarcoid subjects also exhibited significantly higher pro-IL-1β as compared to controls (C and D). The western blot and densitometric results are representative from three patients out of total of 10 patients and 3 controls out of 10 control subjects. These data indicate that sarcoid AMs exhibit higher pro-IL-1β at baseline and this highly correlates with HIF-1α expression (E). Sarcoidosis AMs (F) and monocytes (G) produced significantly higher IL-1β cytokine at baseline and after LPS-stimulation as compared to healthy controls. Sarcoidosis AMs (H) and PBMCs (I) produced significantly higher IL-1Ra at baseline as compared to healthy controls. ELISA results represent mean ± SEM from 10 patients and 10 controls (4F and 4G), 10 patients and five controls (4H and 4I). *, p < 0.05 and was considered significant.10.7554/eLife.44519.010Figure 4—source data 1.
+**Figure 4.:** AMs or monocytes from sarcoid subjects and controls were cultured overnight. Whole cell extracts were prepared, and culture supernatants were collected to measure IL-1β. Whole cell extracts were subjected to SDS-PAGE and western blot analysis using specific antibodies for Glut1, pro- IL-1β and HIF-1α. Equal loading was confirmed using β-actin antibody. Densitometry analysis is expressed as fold increase of the ratio of specific protein/β-actin. IL-1β was measured in culture supernatants via ELISA. Sarcoidosis AMs (n = 18) exhibited significantly higher expression of Glut1 and pro- IL-1β as compared to control subjects (n = 10) (A and B). The western blot and densitometric results (black bars for pro- IL-1β and grey bars for Glut1) are representative from three patients out of total of 18 patients and three controls out of total of 10 control subjects. Monocytes from sarcoid subjects also exhibited significantly higher pro-IL-1β as compared to controls (C and D). The western blot and densitometric results are representative from three patients out of total of 10 patients and 3 controls out of 10 control subjects. These data indicate that sarcoid AMs exhibit higher pro-IL-1β at baseline and this highly correlates with HIF-1α expression (E). Sarcoidosis AMs (F) and monocytes (G) produced significantly higher IL-1β cytokine at baseline and after LPS-stimulation as compared to healthy controls. Sarcoidosis AMs (H) and PBMCs (I) produced significantly higher IL-1Ra at baseline as compared to healthy controls. ELISA results represent mean ± SEM from 10 patients and 10 controls (4F and 4G), 10 patients and five controls (4H and 4I). *, p < 0.05 and was considered significant.
 
-## Targeted downregulation of HIF-1α decreases IL-1β production in sarcoidosis AMs
+### Targeted downregulation of HIF-1α decreases IL-1β production in sarcoidosis AMs
 
 IL-1β is regulated at the transcriptional level through expression of several transcription factors including Signal Transducer and Activator of Transcription (STAT) 3, HIF-1α, and others (Samavati et al., 2009; Talwar et al., 2017b). To determine the relative contribution of increased HIF-1α in IL-1β production in sarcoidosis AMs, we transiently transfected sarcoidosis AMs with either non-targeted siRNA or HIF-1α targeted siRNA. After 24 hr of transfection, cells were treated with LPS (100 ng/mL). Targeted downregulation of HIF-1α via siRNA of sarcoidosis AMs led to a significant reduction (about 50%) in HIF-1α (Figure 5A and B) and pro-IL-1β (Figure 5C and D) protein expression. To determine the specificity of targeted downregulation of HIF-1α on other cytokines, we assessed the conditioned medium for IL-1β and IL-10 production and found significantly decreased IL-1β production (Figure 5E). However, HIF-1α inhibition did not inhibit IL-10 production (Figure 5F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig5-v3.jpg)
 
-**Figure 5.:** AMs from sarcoidosis subjects were transiently transfected with nonsense vector (NS siRNA, 200 pM) or targeted HIF-1α siRNA (200 pM, Thermofisher-Scientific). After 24 hr of transfection, cells were activated with LPS (100 ng/mL) for 3 hr. Whole cell lysates obtained after 3 hr of activation were subjected to immunoblotting to assess the HIF-1α and pro- IL-1β expression. Values were normalized to β-actin and are shown as relative expression to NS siRNA control. Conditioned media were collected after 24 hr and were assessed for different cytokines. HIF-1α siRNA significantly reduced both HIF-1α and pro-IL-1β protein in AMs (A–D). HIF-1α siRNA significantly inhibited IL-1β (E) but had no inhibitory effect on IL-10 (F) in AMs. Western blot data presented is a representative of four independent experiments. ELISA results represent mean ± SEM from four different experiments. *, p < 0.05 and was considered significant.10.7554/eLife.44519.012Figure 5—source data 1.
+**Figure 5.:** AMs from sarcoidosis subjects were transiently transfected with nonsense vector (NS siRNA, 200 pM) or targeted HIF-1α siRNA (200 pM, Thermofisher-Scientific). After 24 hr of transfection, cells were activated with LPS (100 ng/mL) for 3 hr. Whole cell lysates obtained after 3 hr of activation were subjected to immunoblotting to assess the HIF-1α and pro- IL-1β expression. Values were normalized to β-actin and are shown as relative expression to NS siRNA control. Conditioned media were collected after 24 hr and were assessed for different cytokines. HIF-1α siRNA significantly reduced both HIF-1α and pro-IL-1β protein in AMs (A–D). HIF-1α siRNA significantly inhibited IL-1β (E) but had no inhibitory effect on IL-10 (F) in AMs. Western blot data presented is a representative of four independent experiments. ELISA results represent mean ± SEM from four different experiments. *, p < 0.05 and was considered significant.
 
-## Downregulation of HIF-1α modulates cytokine profiles in sarcoidosis PBMCs in response to LPS and anti-CD3
+### Downregulation of HIF-1α modulates cytokine profiles in sarcoidosis PBMCs in response to LPS and anti-CD3
 
 Similar to AMs, the targeted down regulation of HIF-1α in sarcoidosis PBMCs resulted in decreased production of IL-1β in response to LPS (Figure 6A); the effect of HIF-1α inhibition was specific for IL-1β since there was no significant effect on IL-10 production (Figure 6B). These results clearly show that HIF-1α expression regulates IL-1β production in sarcoidosis AMs and PBMCs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig6-v3.jpg)
 
-**Figure 6.:** PBMCs were transiently transfected with nonsense vector (NS siRNA, 200 pM) or targeted HIF-1α siRNA (200 pM, Thermofisher-Scientific). After 24 hr of transfection, cells were activated with either LPS (100 ng/mL) or anti-CD3 (1 μg/mL) in the presence of rhIL-2 (10 ng/mL). Conditioned media were collected after 24 hr (stimulated with LPS) or after 72 hr (stimulated with anti-CD3) and were assessed for cytokines via ELISA. HIF-1α siRNA significantly inhibited IL-1β (A) but had no inhibitory effect on IL-10 (B). The conditioned media of anti-CD3 stimulated sarcoidosis PBMCs (n = 11) or healthy control PBMCs (n = 10) show that sarcoidosis PBMCs produced significantly higher IL-1β (C) and IL-17 (D) as compared to healthy control PBMCs. HIF-1α siRNA significantly inhibited IL-1β (E), IL-17 (F) and IL-6 (G). HIF-1α siRNA did not inhibit IFN-γ (H), or IL-10 (I). ELISA results obtained from siRNA experiments represent mean ± SEM of four different experiments. *, p < 0.05 and was considered significant.10.7554/eLife.44519.014Figure 6—source data 1.
+**Figure 6.:** PBMCs were transiently transfected with nonsense vector (NS siRNA, 200 pM) or targeted HIF-1α siRNA (200 pM, Thermofisher-Scientific). After 24 hr of transfection, cells were activated with either LPS (100 ng/mL) or anti-CD3 (1 μg/mL) in the presence of rhIL-2 (10 ng/mL). Conditioned media were collected after 24 hr (stimulated with LPS) or after 72 hr (stimulated with anti-CD3) and were assessed for cytokines via ELISA. HIF-1α siRNA significantly inhibited IL-1β (A) but had no inhibitory effect on IL-10 (B). The conditioned media of anti-CD3 stimulated sarcoidosis PBMCs (n = 11) or healthy control PBMCs (n = 10) show that sarcoidosis PBMCs produced significantly higher IL-1β (C) and IL-17 (D) as compared to healthy control PBMCs. HIF-1α siRNA significantly inhibited IL-1β (E), IL-17 (F) and IL-6 (G). HIF-1α siRNA did not inhibit IFN-γ (H), or IL-10 (I). ELISA results obtained from siRNA experiments represent mean ± SEM of four different experiments. *, p < 0.05 and was considered significant.
 
 Recent work has shown that the HIF transcription factors are key elements in the control of immune cell metabolism and function in macrophages, B-cells, and T-cells (Palazon et al., 2014; Wang and Green, 2012). T helper 17 cells (Th17) represent a lineage of effector T cells critical in host defense and autoimmunity. It is has been shown that Th1 and Th17 cells contribute to sarcoidosis pathology (Ramstein et al., 2016). Based on this, we hypothesize that the HIF-1α inhibition may also modulate IL-1β and IL-17 production in response to anti-CD3 challenge. First, we assessed the effect of anti-CD3 activation on the production of IL-1β and IL-17 in healthy controls and sarcoidosis PBMCs. PBMCs were treated with anti-CD3 for 24 hr and the conditioned media were assessed for IL-1β and IL-17 production. Sarcoidosis PBMCS were seen to produce significantly higher levels of IL-1β (Figure 6C) and IL-17 (Figure 6D). To investigate the contribution of HIF-1α in Th1/Th17 cytokine production, we investigated the effect of targeted downregulation of HIF-1α in PBMCs in response to anti-CD3 challenge on the production of various inflammatory cytokines. Inhibition of HIF-1α by siRNA significantly decreased the production of anti-CD3 induced IL-1β (Figure 6E), IL-17 (Figure 6F), and IL-6 (Figure 6G). However, inhibition of HIF-1α did not decrease IFN-γ (Figure 6H) and IL-10 (Figure 6I) production. These results suggest that HIF-1α specifically regulates IL-1β and IL-17 in sarcoidosis.
 
-## Pharmacological HIF-1α inhibition decreases the percentage of activated T-cells and cytokines in sarcoidosis PBMCs in response to anti-CD3
+### Pharmacological HIF-1α inhibition decreases the percentage of activated T-cells and cytokines in sarcoidosis PBMCs in response to anti-CD3
 
 To confirm our results, we used echinomycin, a small molecule inhibitor of HIF-1α that has been shown to inhibit HIF-1α DNA binding activity (Tang and Yu, 2013; Vlaminck et al., 2007). We evaluated the effect of echinomycin HIF-1α inhibition on anti-CD3-induced IL-1β and IL-17 production and T cell activation in sarcoid PBMCs. To do so, cultured sarcoidosis PBMCs were pre-treated with echinomycin in vitro, then activated with anti-CD3 in the presence of rIL-2, followed by determination of activated CD4+CD25+ T-cells by flow cytometry and measurement of cytokines by ELISA. Our results showed that PBMCs of patients with sarcoidosis (n = 23) exhibit higher expression for activated CD4+CD25+T cells (mean ± SEM, 11.08 ± 5.32% as compared to healthy (n = 7) controls (mean ± SEM, 5.16 ± 2.71%, p < 0.05). Figure 7A shows that PBMCs of a patient with sarcoidosis exhibited higher expression for activated CD4+CD25+T cells (10%), further increasing to 50% in response to anti-CD3 stimulation (Figure 7B). Pre-treatment of PBMCs with echinomycin decreased the number of activated T cells (3%) at base line (Figure 7C) and in response to anti-CD3 stimulation to 15% (Figure 7D). Furthermore, pretreatment with echinomycin significantly decreased both baseline and anti-CD3 induced IL-1β production (Figure 7E). Similarly, pretreatment with echinomycin significantly decreased anti-CD3 induced IL-17 (Figure 7F) and IL-6 (Figure 7G) production in sarcoidosis PBMCs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig7-v3.jpg)
 
-**Figure 7.:** PBMCs of sarcoid subjects were pretreated with echinomycin (HIF-1α inhibitor, 10 nM) for 30 min and were stimulated with anti-CD3 (1 μg/mL) in the presence of rhIL-2 (10 ng/mL) for 72 hr. Cells were harvested after 72 hr of culture and immunostained with fluorescein conjugated antibodies CD4 and CD25 and analyzed by flow cytometry using Flow-jo software. (A–D) Representative scatter plots show FACS analysis of CD4 and CD25 expression of sarcoidosis PBMCs. The percentage of CD4 and CD25 double positive, representing activated T-cells, were 10% in untreated PBMCs (A). In sarcoidosis PBMCs stimulated with anti-CD3 the percentage of CD4 and CD25 double positive T-cells increased to 50% (B). Sarcoidosis PBMCs cultured in the presence of echinomycin for 72 hr. The percentage of CD4 and CD25 double positive cells decreased from 10% to 3% (C). Sarcoidosis PBMCs were stimulated with anti-CD3 in the presence of echinomycin. The percentage of activated T-cells decreased from 50% after anti-CD3 challenge to 15% in the presence of echinomycin (D). Data presented is a representative plot of 5 independent experiments. The conditioned medium was assessed for IL-1β, IL-17 and IFN-γ using ELISA. Echinomycin significantly inhibited anti-CD3-induced IL-1β (E), IL-17 (F) and IFN-γ (G). Data represent mean ± SEM from six different experiments. *, p < 0.05 and was considered significant.10.7554/eLife.44519.016Figure 7—source data 1.
+**Figure 7.:** PBMCs of sarcoid subjects were pretreated with echinomycin (HIF-1α inhibitor, 10 nM) for 30 min and were stimulated with anti-CD3 (1 μg/mL) in the presence of rhIL-2 (10 ng/mL) for 72 hr. Cells were harvested after 72 hr of culture and immunostained with fluorescein conjugated antibodies CD4 and CD25 and analyzed by flow cytometry using Flow-jo software. (A–D) Representative scatter plots show FACS analysis of CD4 and CD25 expression of sarcoidosis PBMCs. The percentage of CD4 and CD25 double positive, representing activated T-cells, were 10% in untreated PBMCs (A). In sarcoidosis PBMCs stimulated with anti-CD3 the percentage of CD4 and CD25 double positive T-cells increased to 50% (B). Sarcoidosis PBMCs cultured in the presence of echinomycin for 72 hr. The percentage of CD4 and CD25 double positive cells decreased from 10% to 3% (C). Sarcoidosis PBMCs were stimulated with anti-CD3 in the presence of echinomycin. The percentage of activated T-cells decreased from 50% after anti-CD3 challenge to 15% in the presence of echinomycin (D). Data presented is a representative plot of 5 independent experiments. The conditioned medium was assessed for IL-1β, IL-17 and IFN-γ using ELISA. Echinomycin significantly inhibited anti-CD3-induced IL-1β (E), IL-17 (F) and IFN-γ (G). Data represent mean ± SEM from six different experiments. *, p < 0.05 and was considered significant.
 
-## Chloroquine modifies LAMP2, HIF-1α protein expression and inhibits IL-1 β and IL-17 production in sarcoidosis
+### Chloroquine modifies LAMP2, HIF-1α protein expression and inhibits IL-1 β and IL-17 production in sarcoidosis
 
 Chloroquine (CHQ) is an anti-malarial drug and remains an integral treatment for systemic inflammatory diseases such as systemic lupus erythematosus and sarcoidosis (Lee et al., 2011; Morse et al., 1961). CHQ inhibits lysosomal degradation/autophagy either by altering lysosomal acidification or inhibiting the levels of lysosomal associated proteins (LAMP) (He et al., 2011; Ma et al., 2012; Rubinsztein et al., 2007). We hypothesized that CHQ modulates LAMP2, HIF-1α, and HIF-2α levels and cytokine production in sarcoidosis AMs and PBMCs. To examine this hypothesis, isolated AMs were pre-treated with CHQ and then activated with LPS. Interestingly, CHQ decreased LAMP2 levels and both HIF-1α (by approximately 50%) and HIF-2α protein expression (by approximately 65%) in sarcoidosis AMs after LPS stimulation (Figure 8A–D). Furthermore, CHQ significantly decreased (70%) the expression of pro-IL-1β (Figure 8D and E). Similarly, measurement of released IL-1β in conditioned medium was significantly decreased both at baseline and in response to LPS stimulation (Figure 8F). To assess the effect of CHQ on IL-1β and IL-17 production by sarcoidosis PBMCs, cultured PBMCs were pre-treated with CHQ in vitro and then activated with anti-CD3. CHQ significantly decreased anti-CD3 induced IL-1β (Figure 8G) and IL-17 (Figure 8H) production in sarcoidosis PBMCs (p < 0.05).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/44519/elife-44519-fig8-v3.jpg)
 
-**Figure 8.:** Sarcoidosis AMs were pretreated with CHQ (100 µM) for 30 minutes and activated with LPS (100 ng/mL) for 3 hours. Whole cell lysates obtained after 3 hours of activation were subjected to immunoblotting to assess the LAMP2, HIF-1α, HIF-2α, and pro-IL-1β expression. Values were normalized to β-actin and are shown as relative expression to untreated cells. Densitometry analysis is expressed as fold increase of the ratio of specific protein/ β-actin. Culture supernatants were assessed for IL-1β via ELISA. CHQ significantly inhibited LAMP2 (50%) at baseline and both HIF-1α (50%) and HIF-2α (50%) protein expression in response to LPS challenge (A-D). CHQ significantly inhibited pro-IL-1β (70%) protein expression in response to LPS treatment (E and F) and significantly inhibited IL-1β production both at baseline and in response to LPS (G). Sarcoid PBMCs were pretreated with CHQ (100 µM) for 30 min and activated with anti-CD3 (1 µg/mL) in the presence of rhIL-2 (10 ng/mL). Conditioned media were collected after 72 hours and were assessed for IL-1 β and IL-17 via ELISA. CHQ significantly inhibited anti-CD3 induced IL-1β (H) and IL-17 (I) production. Western blot data presented is representative of five independent experiments. ELISA results represent mean ± SEM from five different experiments. *, p < 0.05 and was considered significant.10.7554/eLife.44519.018Figure 8—source data 1.
+**Figure 8.:** Sarcoidosis AMs were pretreated with CHQ (100 µM) for 30 minutes and activated with LPS (100 ng/mL) for 3 hours. Whole cell lysates obtained after 3 hours of activation were subjected to immunoblotting to assess the LAMP2, HIF-1α, HIF-2α, and pro-IL-1β expression. Values were normalized to β-actin and are shown as relative expression to untreated cells. Densitometry analysis is expressed as fold increase of the ratio of specific protein/ β-actin. Culture supernatants were assessed for IL-1β via ELISA. CHQ significantly inhibited LAMP2 (50%) at baseline and both HIF-1α (50%) and HIF-2α (50%) protein expression in response to LPS challenge (A-D). CHQ significantly inhibited pro-IL-1β (70%) protein expression in response to LPS treatment (E and F) and significantly inhibited IL-1β production both at baseline and in response to LPS (G). Sarcoid PBMCs were pretreated with CHQ (100 µM) for 30 min and activated with anti-CD3 (1 µg/mL) in the presence of rhIL-2 (10 ng/mL). Conditioned media were collected after 72 hours and were assessed for IL-1 β and IL-17 via ELISA. CHQ significantly inhibited anti-CD3 induced IL-1β (H) and IL-17 (I) production. Western blot data presented is representative of five independent experiments. ELISA results represent mean ± SEM from five different experiments. *, p < 0.05 and was considered significant.
 
 ## Discussion
 
@@ -111,50 +236,197 @@ Environmental factors, altered metabolism, and inflammation can be linked to epi
 
 ## Materials and methods
 
-## Chemicals
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat. #11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td>Human AMs</td>
+      <td>Bronchoalveolar lavage (BAL) cells</td>
+      <td></td>
+      <td>Sarcoidosis Center, WSU, Detroit, USA</td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td>Human PBMCs and monocytes</td>
+      <td>Heparinized blood</td>
+      <td></td>
+      <td>Sarcoidosis Center, WSU, Detroit, USA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HIF-1α (rabbit polyclonal)</td>
+      <td>Bioss</td>
+      <td>RRID:AB_ 10857933, Cat. #bs0737</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HIF-2α (rabbit polyclonal)</td>
+      <td>Bioss</td>
+      <td>RRID:AB_ 10857576, Cat. #bs1477</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ARNT (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_ 2783880, Cat. # 5531</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P300 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_ 2231120,Cat # sc-585</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glut1 (rabbit polyclonal)</td>
+      <td>Thermofisher Scientific</td>
+      <td>RRID:AB_ 2302087, Cat # PA1-46152</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAMP2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_ 626858,Cat # sc-18822</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pro-IL-1β (goat polyclonal)</td>
+      <td>R and D</td>
+      <td>Cat # AF-201-NA</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-actin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2305186Cat # ab8227</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4-FITC (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_400007,Cat # 340133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD25-PE (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_400203,Cat # 341009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD14-PerCPCy5.5 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2033939,Cat # 561116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HIF-1α siRNA, Sense</td>
+      <td>GGAACCUGAUGCUUUAACUtt</td>
+      <td></td>
+      <td>Thermofisher-Scientific</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HIF-1α siRNA, Anti-sense</td>
+      <td>AGUUAAAGCAUCAGGUUCCtt</td>
+      <td></td>
+      <td>Thermofisher-Scientific</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MTS assay kit ELISA kits</td>
+      <td>Promega R and D</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine</td>
+      <td>Invivo Gen</td>
+      <td>tlrl-chq</td>
+      <td>100 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Echinomycin</td>
+      <td>Sigma</td>
+      <td>SML0477</td>
+      <td>10 nM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals
 
 Chemicals were purchased from Sigma Chemical (St. Louis, MO) unless specified otherwise. LPS and chloroquine was purchased from InvivoGen (San Diego, CA). Antibodies against HIF-1α (# bs0737) and HIF-2α (#bs1477) were purchased from Bioss Inc (Woburn, MA), P300 (sc-585) was from Santa Cruz Biotechnology (Santa Cruz, CA), Glut1 (PA1-46152) from Thermofisher Scientific (Waltham, MA). The antibody for pro-IL-1β (# AF-201-NA) was purchased from R and D Systems (Minneapolis, MN), and β-actin (#ab8227) was purchased from Abcam (Cambridge, MA). Horseradish peroxidase–conjugated anti-mouse IgG (#7076S) and anti-rabbit IgG (#7074S) antibodies and antibody for ARNT (#5531) were purchased from Cell Signaling Technology (Beverly, MA). Horseradish peroxidase–conjugated anti-goat IgG (sc-2033) was purchased from Santa Cruz Biotechnology, The anti-human antibodies used for flow cytometry were CD4-FITC (#340133), CD25-PE (#341009), CD14-PerCPCy5.5 (#561116) and purified CD3 (#555337), purchased from BD Biosciences (San Jose, CA). The secondary antibody used for immunostaining Alexa 488 (#A11070) was purchased from Molecular Probes (Grand Island, NY). CellTiter 96 AQueous One Solution Cell Proliferation Assay was purchased from Promega (Madison, WI).
 
-## Study Design
+### Study Design
 
 The Committee for Investigations Involving Human Subjects at Wayne State University approved the protocol for obtaining alveolar macrophages by bronchoalveolar lavage (BAL) and blood by phlebotomy from control subjects and patients with sarcoidosis. The IRB number for this study is 055208MP4E. All methods were performed in accordance with the relevant guidelines and regulations. Informed consent was obtained from all subjects enrolled for the study. Sarcoidosis diagnosis was based on the ATS/ERS/WASOG statement (Hunninghake et al., 1999). The criteria for enrollment in the diseased group were: (i) a compatible clinical/radiographic picture consistent with sarcoidosis, (ii) histologic demonstration of non-caseating granulomas on the tissue biopsy, and (iii) exclusion of other diseases capable of producing a similar histologic or clinical picture, such as fungus or mycobacteria. Subjects excluded were: (i) smokers, (ii) individuals receiving immune suppressive medication (defined as corticosteroid alone and/or in combination with immune modulatory medications), (iii) individuals with positive microbial culture in routine laboratory examinations or viral infection; or (iv) individuals with known hepatitis or HIV infections or any immune suppressive condition. The criteria for enrollment in the control group were: (i) absence of any chronic respiratory diseases, (ii) lifetime nonsmoker, (iii) absence of HIV or hepatitis infection, and (iv) negative microbial culture. A total of 51 patients with sarcoidosis and 23 controls participated in this study. The medical records of all patients were reviewed, and data regarding demographics, radiographic stages, pulmonary function tests, and organ involvements were recorded.
 
-## BAL and the preparation of alveolar macrophages (AMs)
+### BAL and the preparation of alveolar macrophages (AMs)
 
 BAL was collected during bronchoscopy after administration of local anesthesia and before tissue biopsies (Rastogi et al., 2011; Talreja et al., 2016). Briefly, a total of 150 to 200 mL of sterile saline solution was injected via fiberoptic bronchoscopy; the BAL fluid was retrieved, measured, and centrifuged. Cells recovered from the BAL fluid were filtered through a sterile gauze pad and washed three times with phosphate-buffered saline (PBS), resuspended in endotoxin-free RPMI 1640 medium (HyClone) supplemented with L-glutamine (Life Technologies), penicillin/streptomycin (Life Technologies), and 1% fetal calf serum (HyClone), and then counted. BAL cells were cultured on adherent plates for 1 hr at 37°C in air containing 5% CO2. Non-adherent cells were removed by aspiration; adherent cells were washed three times and used as AMs. Viability of these populations was routinely about 97% and by morphologic criteria the adherent cells were in excess of 99% AMs (Rastogi et al., 2011; Talreja et al., 2016).
 
-## Isolation of PBMCs and purification of monocytes
+### Isolation of PBMCs and purification of monocytes
 
 PBMCs were isolated from heparinized blood using Ficoll-Histopaque (Sigma, St. Louis, MO) density gradient separation followed by washing twice with PBS. Cell suspension was made in endotoxin-free RPMI 1640 medium (HyClone) supplemented with L-glutamine (Life Technologies), penicillin/streptomycin (Life Technologies), and 10% fetal calf serum (HyClone). Cells were cultured in 12-well plates for further experiments (Rastogi et al., 2011; Talreja et al., 2016). CD14+ monocytes were purified from PBMCs by using the MACS monocyte isolation kit (Miltenyl Biotech, San Diego, CA) according to the manufacturer’s instructions. The purity of enriched monocytes was evaluated by flow cytometry using PerCPCy5.5-conjugated CD14 antibody (#561116, BD Biosciences); the purity of monocytes was about 95%.
 
-## Targeted down regulation of HIF-1α via siRNA
+### Targeted down regulation of HIF-1α via siRNA
 
 Isolated AMs or PBMCs were transiently transfected with non-specific silencer siRNA (NS siRNA, 200 pM) or targeted HIF-1α silencer siRNA (200 pM, Thermofisher-Scientific) in the presence of lipofectamine 2000 (Invitrogen). The sequence of siRNA used: sense (5’−3’) GGAACCUGAUGCUUUAACUtt and antisense AGUUAAAGCAUCAGGUUCCtt. After 24 hr of transfection, cells were activated with either LPS (100 ng/mL) or anti-CD3 (1 µg/mL). Viability of cells was assessed after siRNA treatment by MTS assay and 95% of cells were viable.
 
-## Cell viability
+### Cell viability
 
 Cell viability was assessed using MTS assay [CellTiter 96 AQueous One Solution Cell Proliferation Assay] (Promega, Madison, WI) following the manufacturer’s instructions. Briefly, cells equivalent to 1 × 104/well were seeded in 96-well culture plate and incubated for 24–48 hr with different treatments. After incubation, 20 µl of CellTiter 96 AQueous One Solution Reagent was added per well for 2 hr and the absorbance was measured at 490 nm using a 96-well plate reader.
 
-## Enzyme- Linked Immunosorbent Assay (ELISA)
+### Enzyme- Linked Immunosorbent Assay (ELISA)
 
 The levels of IL-1β, IL-1Ra, IL-17, IL-10, IL-6, and IFN-γ in the conditioned medium were measured by ELISA according to the manufacturer's instructions (ELISA DuoKits; R and D Systems, Minneapolis, MN).
 
-## Flow cytometry and cell surface immunostaining
+### Flow cytometry and cell surface immunostaining
 
 PBMCs from subjects with sarcoidosis were isolated, cultured, and after appropriate treatment were stained for cell surface markers using fluorescent labelled antibodies for CD4-FITC (#340133, BD Biosciences), and CD25-PE (#341009, BD Biosciences). Intracellular staining of PBMCs was done for HIF-1α and HIF-2α. Briefly, PBMCs were first surface stained for CD14 using CD14-PerCPCy5.5 antibody and then fixed using 100 μl of 1% paraformaldehyde for 30 min and then permeabilized with permeabilization buffer (0.5% saponin) for 15 min at room temperature. Cells were centrifuged and resuspended in 100 μl of permeabilization buffer and stained with HIF-1α (bs0737, Bioss Inc) or HIF-2α (bs1477, Bioss Inc) antibody for 30 min. Cells were washed and stained with the Alexa 488 secondary antibody (#A11070, Molecular Probes). After 30 min cells were washed twice, resuspended in staining buffer, and analyzed for CD14+HIF-1α+ and CD14+HIF-2α+ monocytes by flow cytometry. PBMCs were not stained specifically to exclude DC contamination. Flow cytometry was performed on a BD LSR II SORP and data analysis was performed using FlowJo software (FlowJo, LLC, Ashland, OR) (Talreja et al., 2016). Samples were gated on cells using FSC/SSC and doublet discrimination was performed to identify singlets using SSC-W vs. SSC-A. The flowcytometry work was done at the Microscopy, Imaging and Cytometry Resources (MICR) Core at the Karmanos Cancer Institute, Wayne State University.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Intracellular expression of HIF-1α in sarcoidosis AMs was visualized by immunofluorescence staining. AMs (1 × 105) were allowed to adhere overnight on chamber slides. The cells were washed briefly with PBST and fixed with 3.7% paraformaldehyde. Cells were washed and permeabilized with 0.1% Triton X-100, blocked (10% FCS), and then incubated with anti-HIF-1α (bs0737,Bioss Inc) overnight at 4°C. The secondary antibody used was Alexa-fluor 488- conjugated goat anti-rabbit antibody. The next day cells were washed three times with PBS for 5 min, the slide was mounted with a drop of ProLong Gold antifade reagent with DAPI (Invitrogen). The slide was examined using an Axiovert 40 CFL fluorescence microscope (Carl Zeiss MicroImaging, Inc).
 
-## Protein extraction and immunoblotting
+### Protein extraction and immunoblotting
 
 Total cellular proteins were extracted by addition of RIPA buffer containing a protease inhibitor cocktail and antiphosphatase I and II (Sigma Chemicals). Protein concentration was measured with the BCA assay (Thermo Scientific, CA). Equal amounts of proteins (10–25 μg) were mixed 1/1 (v/v) with 2x sample buffer (20% glycerol, 4% sodium dodecyl sulfate, 10% 2-βME, 0.05% bromophenol blue, and 1.25 M Tris-HCl, pH 6.8), and fractionated on a 10% sodium dodecyl sulfate–polyacrylamide gel. Proteins were transferred onto a polyvinylidene difluoride membrane (Bio-Rad) for 60 min at 18 V using a SemiDry Transfer Cell (Bio-Rad). The polyvinylidene difluoride membrane was blocked with 5% nonfat dry milk in TBST (Tris-buffered saline with 0.1% Tween 20) for 1 hr, washed, and incubated with primary Abs (1/1000) overnight at 4°C. The blots were washed with TBST and then incubated for 1 hr with horseradish peroxidase–conjugated secondary anti-IgG Ab using a dilution of 1/10,000 in 5% nonfat dry milk in TBST. Membranes were washed four times in TBST. Immuno-reactive bands were visualized with a chemiluminescent reagent (Amersham GE, PA). Images were captured on Hyblot CL film (Denville; Scientific, Inc; Metuchen, NJ) using a JPI automatic X-ray film processor model JP-33. Optical density analysis of signals was performed using Image J software (Rastogi et al., 2011; Talreja et al., 2016).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Tissue sections from the sarcoidosis transbronchial lung biopsy samples were selected for immunostaining after review of the glass slides that had been previously prepared using the routine hematoxylin-eosin protocol on paraffin-embedded sections. Additional fixed slides were cut, subjected to peroxide block protocol, pretreated, and then incubated first with primary antibody (anti-HIF-1α, bs0737, Bioss Inc ) and then with a secondary conjugated polymer; each incubation step was done for 30 min at room temperature. Negative staining was done by using an isotype control antibody. After another incubation step with the chromogen (5 min at room temperature), the sections were counterstained with hematoxylin and dehydrated with ethanol and xylene prior to mounting. Images were analyzed by microscopy (BX40, Olympus).
 
-## Statistical Analyses
+### Statistical Analyses
 
 A Student t-test or one-way analysis of variance and post hoc repeated measure comparisons (least significant difference) were performed to identify differences between groups. ELISA results were expressed as mean ± SEM. For all analyses, two-tailed p values of less than 0.05 were considered to be significant.

@@ -35,7 +35,7 @@
 
 ## Abstract
 
-Erythroblast erythroferrone (ERFE) secretion inhibits hepcidin expression by sequestering several bone morphogenetic protein (BMP) family members to increase iron availability for erythropoiesis. To address whether ERFE functions also in bone and whether the mechanism of ERFE action in bone involves BMPs, we utilize the Erfe mouse model as well as β–thalassemic ( -/- Hbb ) mice with systemic loss of ERFE expression. In additional, we employ comprehensive skeletal phenotyping analyses as well as functional assays in vitro to address mechanistically the function of ERFE in bone. th3/+ We report that ERFE expression in osteoblasts is higher compared with erythroblasts, is independent of erythropoietin, and functional in suppressing hepatocyte hepcidin expression. Erfe mice display low–bone–mass arising from increased bone resorption despite a concomitant increase in bone formation. Consistently, -/- Erfe osteoblasts exhibit enhanced mineralization, -/- Sost and Rankl expression, and BMP–mediated signaling ex vivo. The ERFE effect on osteoclasts is mediated through increased osteoblastic RANKL and sclerostin expression, increasing osteoclastogenesis in Erfe mice. Importantly, -/- Erfe loss in Hbb mice, a disease model with increased ERFE expression, triggers profound osteoclastic bone resorption and bone loss. th3/+ Together, ERFE exerts an osteoprotective effect by modulating BMP signaling in osteoblasts, decreasing RANKL production to limit osteoclastogenesis, and prevents excessive bone loss during expanded erythropoiesis in β–thalassemia. YZG acknowledges the support of the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) (R01 DK107670 to YZG and DK095112 to RF, SR, and YZG). MZ acknowledges the support of the National Institute on Aging (U19 AG60917) and NIDDK (R01 DK113627). TY acknowledges the support of the National Institute on Aging (R01 AG71870). SR acknowledges the support of NIDDK (R01 DK090554) and Commonwealth Universal Research Enhancement (CURE) Program Pennsylvania.
+Background:Erythroblast erythroferrone (ERFE) secretion inhibits hepcidin expression by sequestering several bone morphogenetic protein (BMP) family members to increase iron availability for erythropoiesis.Methods:To address whether ERFE functions also in bone and whether the mechanism of ERFE action in bone involves BMPs, we utilize the Erfe-/- mouse model as well as β–thalassemic (Hbbth3/+) mice with systemic loss of ERFE expression. In additional, we employ comprehensive skeletal phenotyping analyses as well as functional assays in vitro to address mechanistically the function of ERFE in bone.Results:We report that ERFE expression in osteoblasts is higher compared with erythroblasts, is independent of erythropoietin, and functional in suppressing hepatocyte hepcidin expression. Erfe-/- mice display low–bone–mass arising from increased bone resorption despite a concomitant increase in bone formation. Consistently, Erfe-/- osteoblasts exhibit enhanced mineralization, Sost and Rankl expression, and BMP–mediated signaling ex vivo. The ERFE effect on osteoclasts is mediated through increased osteoblastic RANKL and sclerostin expression, increasing osteoclastogenesis in Erfe-/- mice. Importantly, Erfe loss in Hbbth3/+mice, a disease model with increased ERFE expression, triggers profound osteoclastic bone resorption and bone loss.Conclusions:Together, ERFE exerts an osteoprotective effect by modulating BMP signaling in osteoblasts, decreasing RANKL production to limit osteoclastogenesis, and prevents excessive bone loss during expanded erythropoiesis in β–thalassemia.Funding:YZG acknowledges the support of the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) (R01 DK107670 to YZG and DK095112 to RF, SR, and YZG). MZ acknowledges the support of the National Institute on Aging (U19 AG60917) and NIDDK (R01 DK113627). TY acknowledges the support of the National Institute on Aging (R01 AG71870). SR acknowledges the support of NIDDK (R01 DK090554) and Commonwealth Universal Research Enhancement (CURE) Program Pennsylvania.
 
 ## Introduction
 
@@ -51,37 +51,223 @@ The known mechanism of ERFE action—BMP sequestration—predicts that ERFE loss
 
 ## Materials and methods
 
-## Mouse lines
+### Mouse lines
 
 C57BL/6 and β-thalassemic (Hbbth3/+) mice (Yang et al., 1995) were originally purchased from Jackson Laboratories. Erfe-/- mice were a generous gift from Tomas Ganz (UCLA) (Kautz et al., 2014). Progeny of Erfe-/-mice crossed with Hbbth3/+ yielded Hbbth3/+;Erfe-/- mice. The mice have been backcrossed onto a C57BL/6 background for more than 11 generations. All mice had ad libitum access to food and water and were bred and housed in the animal facility under AAALAC guidelines. Experimental protocols were approved by the Institutional Animal Care and Use Committee at Icahn School of Medicine at Mount Sinai.
 
-## Skeletal phenotyping
+### Skeletal phenotyping
 
 Skeletal phenotyping was conducted on 6-week- and/or 5-month-old male mice, unless otherwise noted. Mice were injected with calcein (15 mg/kg, Sigma C0875) and xylenol orange (90 mg/kg, Sigma 52097), at days 8 and 2, respectively, prior to sacrifice. Briefly, for histomorphometry, the left femur, both tibias, and L1-L3 were fixed in neutral buffered formalin (10%, v/v) for 48 hr at 4°C; transferred to sucrose (30%, w/v) at 4°C overnight; and embedded and sectioned at –25°C (5–6 µm thick sections, 10X) (Dyment et al., 2016). Unstained sections were analyzed by fluorescence microscopy (Leica Upright DM5500) to determine the mineralizing surface and interlabel distance using image J. Von Kossa staining of sections was used to quantify fractional bone volume (BV/TV) and trabecular thickness (Tb.Th). Tartrate-resistant acid phosphatase (ACP5) staining (Sigma 387A) was used to identify osteoclasts, counterstained with aniline blue using Olympus Stereoscope MVX10 (1X). Images were analyzed by TrapHisto and OsteoidHisto (van 't Hof et al., 2017). On the day of sacrifice, BMD was also measured in intact mice (Shi et al., 2016). Frozen bone sections were incubated for 4 min at room temperature in Alkaline Phosphatase Substrate Solution ImmPACT Vector Red (Vector Laboratories). After washing with buffer, the sections were counterstained with hematoxylin (Vector Laboratories) and mounted with VectaMount AQ Mounting Medium (Vector Laboratories). Sections were visualized using Olympus BH-2 Microscope and images obtained with OMAX A35180U3 Camera were analyzed by ImageJ.
 
-## Isolation and culture of bone marrow cells
+### Isolation and culture of bone marrow cells
 
 For osteoblast cultures, fresh bone marrow cells were seeded in 12-well plates (0.6 × 106 cells per well) under differentiating conditions (αMEM, 10% FBS, 1% penicillin/streptomycin, 1 M β-glycerol phosphate, and 0.5 M ascorbic acid) for 21 days to induce the formation of mature, mineralizing osteoblast colonies, Cfu-ob, as before (Maridas et al., 2018). Cultured osteoblasts were treated with BMP2 (50 ng/ml) or BMP6 (50 ng/ml) for 30 min on day 3 of culture to assess effects on BMP-mediated signaling, as previously (Rauner et al., 2019). For osteoclast cultures, bone marrow hematopoietic stem cells (non–adherent) from wild type and Erfe-/- were seeded in six-well plates (106 cells per well) in the presence of αMEM, 10% FBS, 1% penicillin/streptomycin and M-CSF (25 ng/mL, PeproTech) for 48 hr, followed by the addition of RANK-L (50 ng/mL, PeproTech) for 5 days. In experiments testing Epo responsiveness, 20 U/ml of Epo was added for the duration of the differentiation process, for 21 and 5 days in osteoblast and osteoclast cultures, respectively.
 
 Erythroblasts were isolated from bone marrow and purified using CD45 beads, as previously (Li et al., 2017) with minor modifications. Briefly, mouse femur was flushed, single-cell suspensions incubated with anti-CD45 magnetic beads (Mylteni), and erythroid lineage-enriched cells that flowed through the column were collected. Erythroid-enriched cells were incubated with anti-mouse TER119-phycoerythrin Cy7 (PE-Cy7) (BioLegend) and CD44-allophycocyanin (APC) (Tonbo, Biosciences). Non-erythroid and necrotic cells were identified and excluded from analyses using anti-CD45 (BD Pharmigen), anti-CD11b, and anti-Gr1 (APC-Cy7) (Tonbo, Biosciences) antibodies. Erythroid precursors were selected by gating and analyzed using TER119, CD44, and forward scatter as previously described (Li et al., 2017). Samples were analyzed on either FACSCanto I or LSRFortessa flow cytometer (BD Biosciences). To determine levels of Erfe mRNA expression in Epo–stimulated conditions, erythroblasts were cultured in the presence or absence of 20 U/ml Epo for 15 hr as described (Kautz et al., 2014).
 
-## Primary hepatocyte culture
+### Primary hepatocyte culture
 
 Hepatocytes were isolated by perfusion with collagenase and liver digestion, as described previously (Merlin et al., 2017). Briefly, 0.025% (w/v) collagenase type IV (Gibco) and 5 mM CaCl2 was added to Leffert perfusion buffer containing 10 mM HEPES, 3 mM KCl, 130 mM NaCl, 1 mM NaH2PO4.H2O, and 10 mM D-glucose (Sigma). Live cells were purified by Percoll (Sigma) and plated in six-well plates (0.25 × 106 cells per well) in William’s Medium E (Sigma) supplemented with antibiotics and 5% fetal bovine serum (FBS) for 2 hr to allow the hepatocytes to attach. Cells were starved overnight with William’s Medium E lacking FBS, and were then treated for 6 hr with conditioned or control media from wild type or Erfe-/- osteoblast and osteoclast cultures (day 6 and day 5, respectively) in the presence of 50% (v/v) William’s Medium E and 5% FBS.
 
-## Quantitative PCR
+### Quantitative PCR
 
 RNA was purified from osteoblasts, osteoclasts, erythroblasts, and hepatocytes using PureLink RNA (Sigma) and analyzed with SuperScript III Platinum SYBR Green One-Step (Invitrogen). As previously described (Koide et al., 2017; Dumas et al., 2008), ΔΔCT values were used to calculate fold increases relative to β-actin, α-tubulin, and RLP4. Primers are listed in Table 1.
 
-## Western immunoblotting and ELISA
+**Table 1.**
+ Primers used in the presented studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward (sense)</th>
+      <th>Reverse (antisense)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actb</td>
+      <td>TTCTTTGCAGCTCCTTCGTT</td>
+      <td>ATGGAGGGGAATACAGCCC</td>
+    </tr>
+    <tr>
+      <td>Tubb</td>
+      <td>CTGGAGCAGTTTGACGACAC</td>
+      <td>TGCCTTTGTGCACTGGTATG</td>
+    </tr>
+    <tr>
+      <td>Hamp</td>
+      <td>TGAGCAGCACCACCTATCTC</td>
+      <td>ACTGGGAATTGTTACAGCATTT</td>
+    </tr>
+    <tr>
+      <td>Acp5</td>
+      <td>ACCTGTGCTTCCTCCAGGAT</td>
+      <td>TCTCAGGGTGGGAGTGGG</td>
+    </tr>
+    <tr>
+      <td>Ctsk</td>
+      <td>CCATATGTGGGCCAGGATG</td>
+      <td>TCAGGGCTTTCTCGTTCCC</td>
+    </tr>
+    <tr>
+      <td>Runx2</td>
+      <td>GTGGCCACTTACCACAGAGC</td>
+      <td>GTTCTGAGGCGGGACACC</td>
+    </tr>
+    <tr>
+      <td>Alpl</td>
+      <td>ACACCTTGACTGTGGTTACTGCTGA</td>
+      <td>CCTTGTAGCCAGGCCCGTTA</td>
+    </tr>
+    <tr>
+      <td>Osx</td>
+      <td>TGAGGAAGAAGCCCATTCAC</td>
+      <td>GTGGTCGCTTCTGGTAAAGC</td>
+    </tr>
+    <tr>
+      <td>Col1a1</td>
+      <td>CCTGGCAAAGACGGACTCAAC</td>
+      <td>GCTGAAGTCATAACCGCCACTG</td>
+    </tr>
+    <tr>
+      <td>Tnsf11</td>
+      <td>CAGCCATTTGCACACCTCAC</td>
+      <td>GTCTGTAGGTACGCTTCCCG</td>
+    </tr>
+    <tr>
+      <td>Opg</td>
+      <td>ACAGTTTGCCTGGGACCAAA</td>
+      <td>CAGGCTCTCCATCAAGGCAA</td>
+    </tr>
+    <tr>
+      <td>Dmp1</td>
+      <td>GGGCTGTGTTGTGCAAGACA</td>
+      <td>GGTGCACACCTGACCTTCTTTAA</td>
+    </tr>
+    <tr>
+      <td>Fam132b</td>
+      <td>ATGGGGCTGGAGAACAGC</td>
+      <td>TGGCATTGTCCAAGAAGACA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western immunoblotting and ELISA
 
 For western immunoblotting, differentiated cells at day three were lysed in ice cold SDS page lysis buffer (2% SDS, 50 mM Tris-HCl, pH 7.4, 10 mM EDTA) with protease and phosphatase inhibitors. 20 µg of heat–denatured protein was loaded onto a 10% gel, run, and transferred onto a 0.4 µm nitrocellulose membrane (Thermo Scientific). After blocking with 5% BSA in Tris–buffered saline with 1% Tween-20 (TBS-T), the membranes were incubated with primary antibodies to signaling proteins (Table 2) overnight at 4°C, washed, and incubated with the corresponding HRP–conjugated secondary antibodies at room temperature. Proteins were visualized using the ImageQuant LAS 4010 and quantified using Image J. Osteoblast supernatants from wild type and Erfe-/- mice were collected and centrifuged for 10 min at 10,000 x g, and BMP2 (Abnova) and RANKL (R and D) concentrations were measured by ELISAs. Serum BMP2 concentration was determined using mouse BMP2 ELISA (abnova, KA0542), per manufacturers instructions. ERFE concentration in conditioned media was determined as described (Kautz et al., 2015) with the substitution of DELFIA europium–conjugated streptavidin for horseradish-peroxidase-conjugated streptavidin. Fluorescence was measured by CLARIOstar plate reader.
 
-## Complete blood counts
+**Table 2.**
+ Antibodies used in the presented studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Company</th>
+      <th># catalog</th>
+      <th>Dilution</th>
+      <th>BSA/Milk (5%)</th>
+      <th>Rabbit/mouse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">PRIMARY antibodies</td>
+    </tr>
+    <tr>
+      <td>pSMAD 1/5/8</td>
+      <td>Cell signaling</td>
+      <td>9511</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>pSMAD 1/5/8 (monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>9516</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>SMAD 1</td>
+      <td>Cell signaling</td>
+      <td>6944S</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>p-ERK (monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>4376</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>ERK</td>
+      <td>Cell signaling</td>
+      <td>4695</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>pp38</td>
+      <td>Cell signaling</td>
+      <td>4511</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>p38</td>
+      <td>Cell signaling</td>
+      <td>8690</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Rabbit</td>
+    </tr>
+    <tr>
+      <td>Beta-actin</td>
+      <td>ThermoFisher</td>
+      <td>MA515452</td>
+      <td>1:1000</td>
+      <td>BSA</td>
+      <td>Mouse</td>
+    </tr>
+    <tr>
+      <td colspan="6">SECONDARY antibodies</td>
+    </tr>
+    <tr>
+      <td>Rabbit</td>
+      <td>Cell signaling</td>
+      <td>7074</td>
+      <td>1:5000</td>
+      <td>BSA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>GE Healthcare</td>
+      <td>NXA931V</td>
+      <td>1:20000</td>
+      <td>BSA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Complete blood counts
 
 Peripheral blood (100 µL from each mouse) was collected from the retro-orbital vein in EDTA-coated tubes and analyzed by IDEXX Procyte Hematology Analyzer.
 
-## Statistical analyses
+### Statistical analyses
 
 Data are reported as means ± SEM. Unpaired Student’s t-test was used to determine if differences between groups were significant at p<0.05.
 
@@ -89,15 +275,39 @@ Data are reported as means ± SEM. Unpaired Student’s t-test was used to det
 
 To understand if ERFE has a role in regulating skeletal integrity in health, we first studied the effect of ERFE loss on BMD and bone remodeling in adult Erfe-/- mice, as well as in compound mutant mice in which the Erfe gene was deleted on a β-thalassemia Hbbth3/+ background. Compared with wild-type littermates, both 6-week-old and 5-month-old male Erfe-/- mice showed significant reductions in whole body BMD, and BMD at mainly cortical (femur and tibia) sites (Figure 1A and B). However, in contrast to young mice, the older Erfe-/- mice did not show a difference in lumbar spine BMD compared with wild-type littermates. Interestingly, unlike hypogonadal bone loss, which is predominantly trabecular, the sustained reduction in femur and tibia BMD is consistent with prominent cortical loss seen in patients with β-thalassemia (Haidar et al., 2011; Vogiatzi et al., 2006).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig1-v2.jpg)
+
+**Figure 1.:** Bone mineral density (BMD) measured in whole body, femur, tibia, and lumbar spine (L4–L6) along with bone volume (BV/TV) and trabecular thickness (Tb.Th) in growing (6-week-old) (A) and mature (5-month-old) (B) Erfe-/- and wild-type (WT) littermates. Dynamic histomorphometry following two i.p. injections of calcein (green) and xylenol orange (red) given at days 8 and 2, respectively. Representative dual labels from the epiphysis are shown, together with measured and derived parameters, namely mineralizing surface (MS) as a function of bone surface (BS), mineral apposition rate (MAR) and bone formation rate (BFR) in 6-week-old (C) and 5-month-old (D) mice. (E) Alkaline phosphatase staining (magenta) in sections of femura demonstrates no differences in osteoblast surface (Ob.S) and number (N.Ob) as a function of BS in 6-week-old Erfe-/- and WT mice. (F) TRAP staining at the epiphysis showing both osteoclast surface (Oc.S) and number (N.Oc) as a function of BS. Statistics: Mean ± SEM; unpaired two-tailed Student’s t-test; *p<0.05, **p<0.01, ^0.05 < p < 0.1, N = 3–6 mice per group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We confirm previously reported lack of difference relative to wild-type (WT) mice in red blood cell (RBC) count (A), hemoglobin (B), mean corpuscular hemoglobin (MCH) (C), reticulocyte count (D), spleen weight (E), and bone marrow erythroblast fraction (F). Statistics: Mean ± SEM; unpaired two-tailed Student's t-test; N = 4–5 mice per group.
+
 Bone resorption and bone formation are tightly coupled to maintain bone mass during each remodeling cycle (Zaidi, 2007). Bone is lost when either both processes are increased―with resorption exceeding formation, as in hypogonadism―or when there is uncoupling in which formation decreases while resorption rises, as in glucocorticoid excess (Zaidi, 2007). To differentiate between relative increases and uncoupling, we measured both formation and resorption in intact bone. Dynamic histomorphometry performed after the sequential injections of calcein and xylenol orange, which yielded dual fluorescent labels, allowed us to derive parameters of bone formation. We observed that mineralizing surface (MS), mineral apposition rate (MAR) and bone formation rates (BFR) were all increased in young Erfe-/- mice, consistent with the pro-osteoblastic (anabolic) action of ERFE deficiency (see below) (Figure 1C and D). No differences in MS, MAR, and BFR were noted in 5-month-old mice (Figure 1D). We also analyzed alkaline phosphatase stained sections of femurs to find no difference in osteoblast surfaces (Ob.S) or osteoblast number (N.Ob) per bone surface (BS) in 5–week–old Erfe-/- relative to wild type littermates (Figure 1E).
 
 Finally, to study whether an increase in osteoclastic bone resorption caused the notable reduction in BMD in Erfe-/- mice, we measured TRAP-positive osteoclast surfaces (Oc.S) and number (N.Oc) per bone surface (BS). Both Oc.S/BS and N.Oc/BS were increased significantly in Erfe-/- compared with wild type bones in older mice, and to a lesser extent, in younger mice (Figure 1F). Thus, the overall low-bone-mass phenotype in Erfe-/- mice primarily resulted from a relative increase in osteoclastic bone resorption over osteoblastic bone formation, suggesting that ERFE has a function in preventing skeletal loss. To confirm that decreased BMD in Erfe-/- mice did not result from changes in erythropoiesis, we measured circulating red blood cells (RBCs) and reticulocytes, and bone marrow erythroblasts. We also measured spleen weight given the ubiquity of compensatory erythropoiesis that results in splenomegaly. Our results show no differences between 6-week-old wild type and Erfe-/- mice (Figure 1—figure supplement 1), consistent with what has been previously reported in Erfe-/- mice (Kautz et al., 2014).
 
 To probe the mechanism of action of ERFE on osteoblastic bone formation and osteoclastic bone resorption, we first asked which cells in bone marrow produce ERFE, and whether secreted ERFE was functional. Intriguingly, time course studies in differentiating osteoblasts revealed that Erfe expression was 10- and twofold higher at 3 and 21 days of culture, respectively, compared with cultured erythroblasts––the only previously known source of ERFE in bone marrow (Figure 2A). To confirm that cultured cells were of the osteoblastic lineage, we evaluated Alp expression, a known marker of osteoblast lineage, and demonstrate increased Alp expression as early as day 3 in culture (Figure 2—figure supplement 1). Furthermore, Erfe expression in mature osteoclasts was similar to cultured erythroblasts, with little expression in immature osteoclasts (Figure 2B). Likewise, conditioned media from osteoblast cultures revealed increased ERFE concentration at 3 days with no differences in conditioned media from osteoclast cultures (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig2-v2.jpg)
+
+**Figure 2.:** (A) Quantitative PCR showing high levels of Erfe expression in osteoblasts from wild type mice cultured under differentiating conditions. Notably, at 3 days of culture, there was a 10-fold greater expression in osteoblasts relative to bone-marrow-derived wild-type cultured erythroblasts. (B) Quantitative PCR showing comparable levels of Erfe expression in osteoclasts at 3–5 days of culture relative to bone-marrow-derived wild-type cultured erythroblasts from wild-type mice cultured under differentiating conditions. (C) Increased supernatant murine ERFE (mERFE) concentration in day 3 osteoblast cultures and no difference in day 5 osteoclast cultures from wild type relative to Erfe-/- mice (detection limit of 0.2 ng/ml mERFE). (D) Hepcidin (HAMP) expression is suppressed in primary wild-type hepatocytes in response to conditioned media from wild-type relative to Erfe-/- osteoblast cultures (day 6), confirming functionality of osteoblast-derived ERFE. Control hepatocytes were exposed to osteoblast culture media. (E) Unlike in erythroblasts, Erfe expression in cultured wild-type osteoblasts and osteoclasts does not respond to erythropoietin (Epo). Statistics: Mean ± SEM; unpaired two-tailed Student’s t-test; *p<0.05, **p<0.01, ^0.05 < P < 0.1, N = 3 wells per group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** As expected, alkaline phosphatase is increased in ostoblast culture conditions at day 3 and day 6, providing evidence of osteoblasts at the expected time frame. Statistics: Mean ± SEM; unpaired two-tailed Student's t-test; *p<0.05, **p<0.01.
+
 To determine whether osteoblast-derived ERFE was functional, we established a bioassay based on the known inhibitory action of ERFE on hepcidin (Hamp) expression. For this, wild-type hepatocytes were exposed to supernatants from differentiating wild type or Erfe-/- osteoblasts. Hamp expression was suppressed with Erfe-/- osteoblast supernatants, but importantly, this suppression was significantly greater with wild type supernatants (Figure 2D). No Hamp suppression was evident with wild type or Erfe-/- osteoclast supernatants. This latter suggests that osteoblast– but not osteoclast-derived ERFE is functional. However, as Erfe-/- supernatants also suppressed Hamp expression, other yet unknown osteoblast-derived factors likely function in hepcidin regulation. Finally, unlike in erythroblasts, Erfe expression in mature osteoblasts or osteoclasts was not responsive to Epo (Figure 2E).
 
 Given that osteoblasts secrete ERFE that is known to inhibit hepcidin (Kautz et al., 2014) by sequestering BMPs (Arezes et al., 2018; Wang et al., 2020; Arezes et al., 2020) that are skeletal anabolics (Hogan, 1996), we measured serum BMP2 concentration to find elevated BMP2 levels in Erfe-/- relative to wild-type mice (Figure 3A). Given the specific importance of BMP2 in bone remodeling (Salazar et al., 2016), these results are consistent with the previously demonstrated sequestration of BMP2, along with BMP6, by ERFE (Wang et al., 2020)—namely, loss of ERFE led to decreased BMP sequestration. We thus hypothesized that ERFE functions in modulating bone formation by sequestering BMPs and tested whether the loss of ERFE facilitates BMP2-mediated signaling in the osteoblast in vitro. We found that the concentration of BMP2 was higher in supernatants from cultured Erfe-/- osteoblasts compared with wild type cultures (Figure 3B). Consistent with this difference, BMP2-activated signaling pathways, namely phosphorylated Smad1/5/8 and ERK1/2, but not phosphorylated p38, were enhanced in Erfe-/- compared with wild-type osteoblasts (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig3-v2.jpg)
+
+**Figure 3.:** (A) BMP2 ELISA demonstrates elevated BMP2 concentration in serum samples from Erfe-/- relative to WT mice (N = 4 per group). In the 3-day cultures, there was an increase in BMP2 concentration in culture supernatants from Erfe-/- relative to WT osteoblasts (N = 6 per group) (B). (C) Similarly, signaling via the known BMP receptor pathways, namely ERK1/2 and Smad1/5/8, without changes in p38/MAPK, increase in Erfe-/- relative to WT osteoblasts; western blots with quantification shown. Finally, pSmad1/5/8 and pERK1/2 signaling is further induced by BMP2 (50 ng/ml) only in WT (D) but not in Erfe-/- (E) osteoblasts. Statistics: Mean ± SEM; unpaired two-tailed Student’s t-test; *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Similarly to effects of BMP2, signaling via the known BMP receptor pathways, namely ERK1/2 and Smad1/5/8, was further induced by BMP6 (50 ng/ml) only in WT but not in Erfe-/- osteoblasts. Statistics: Mean ± SEM; unpaired two-tailed Student's t-test; ^0.05 < p < 0.1, **p<0.01.
 
 To further understand how ERFE impacts BMP2-mediated signaling, we evaluated the effect of BMP2 on wild type and Erfe-/- osteoblasts in vitro. Treatment with BMP2 (50 ng/ml) in osteoblast cultures showed that pSmad1/5/8 and pERK signaling was not further induced in Erfe-/- relative to wild-type osteoblasts (Figure 3D and E). In all, the data establish that increased BMP2 in Erfe-/- mice leads to maximal induction of BMP signaling that remains unaffected by the further addition of BMP2. To test whether an ERFE effect on bone is BMP2 specific, we also repeated these experiments using BMP6, demonstrating results similar to the effects of BMP2 on BMP signaling pathways in wild type and Erfe-/- osteoblasts in vitro (Figure 3—figure supplement 1). These findings support the hypothesis that ERFE functions in bone by sequestering BMPs, thus, attenuating downstream signaling.
 
@@ -110,6 +320,14 @@ We studied whether the stimulation of bone formation in Erfe-/- mice was due to 
 Given that Erfe is expressed in osteoclasts, and that Erfe-/- mice display a pro–resorptive phenotype, we questioned whether ERFE directly affected the osteoclast, or whether the action resulted via a primary osteoblastic effect. Erfe-/- bone marrow cell cultures derived from 5-month-old mice showed no difference in TRAP-positive osteoclast number compared to wild-type cultures (Figure 4D). Consistent with this, the program of osteoclast gene expression remained unchanged in these 5-day cultures (Figure 4E). The data collectively suggest that the absence of ERFE results in the de-sequestration of BMP2, stimulates the osteoblast to upregulate RANKL and sclerostin, and thus enhances osteoclastic bone resorption indirectly.
 
 Finally, we explored whether ERFE mediates osteoprotection in Hbbth3/+ mice, a model of human NTDT given that Erfe is upregulated in Hbbth3/+ marrow erythroblasts (Vogiatzi et al., 2006; Kautz et al., 2014; Li et al., 2017; Kautz et al., 2015; Vogiatzi et al., 2010). We crossed Hbbth3/+ mice with Erfe-/- mice to generate Hbbth3/+;Erfe-/- compound mutants. Whole body and site-specific measurements at mainly cortical sites, namely femur and tibia, and vertebral trabecular (L4-L6) bone showed striking reductions in BMD in 5-month-old Hbbth3/+;Erfe-/- mutants compared with Hbbth3/wt mice, most notably in cortical bone (Figure 5A). The trabecular bone loss was consistent with reduced histomorphometrically determined fractional bone volume (BV/TV) and trabecular thickness (Tb.Th) in the femoral epiphyses (Figure 5B). There was a trend toward increases in MAR (Figure 5C), but a significant increase in TRAP-positive N.Oc and Oc.S in Hbbth3/+;Erfe-/- bones compared with wild-type controls (Figure 5D)—changes expected to produce reduction in bone mass. These findings document ERFE-mediated skeletal protection in β-thalassemia.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig5-v2.jpg)
+
+**Figure 5.:** (A) Bone mineral density (BMD) measured in whole body, femur, tibia, and lumbar spine (L4–L6) in 5-month-old β-thalassemia mice (Hbbth3/+ mice) and compound Hbbth3/+;Erfe-/- mutants. (B) Representative section of femoral epiphyses stained with Von Kossa, and quantitative estimates of bone volume (BV/TV) and trabecular thickness (Tb.Th). (C) Dynamic histomorphometry following two i.p. injections of calcein (green) and xylenol orange (red) given at days 8 and 2, respectively. Shown are measured and derived parameters, namely mineralizing surface (MS), mineral apposition rate (MAR) and bone formation rate (BFR). (D) Representative image of TRAP (ACP5) staining of femoral epiphysis, also showing both osteoclast surface (Oc.S) and number (N.Oc), expressed as a function of bone surface (BS). Statistics: Mean ± SEM; unpaired two-tailed Student’s t-test; *p<0.05, **p<0.01; N = 4–5 mice per group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68217/elife-68217-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** We confirm previously reported differences in relative to wild-type (WT) mice with decreased red blood cell (RBC) count (A), hemoglobin (B), and mean corpuscular hemoglobin (MCH) (C) as well as increased reticulocyte count (D), spleen weight (E), and bone marrow erythroblast fraction (F) with only minor differences in RBC count and hemoglobin between Hbbth3/+ and compound Hbbth3/+;Erfe-/- mutant mice. Statistics: Mean ± SEM; unpaired two-tailed Student's ttest; *p<0.05, **p<0.01, ***p<0.0001; N = 4–5 mice per group.
 
 To confirm that decreased BMD in Hbbth3/+;Erfe-/- mice did not result from further expanded erythropoiesis, we measured circulating RBCs and reticulocytes, bone marrow erythroblasts, and spleen weight. Our results demonstrate a mildly decreased RBC count and hemoglobin, but no differences in spleen weight or bone marrow erythroblasts between 6-week-old Hbbth3/+ and Hbbth3/+;Erfe-/- mice (Figure 5—figure supplement 1). This is consistent with what has been previously reported in Hbbth3/+;Erfe-/- mice (Kautz et al., 2015).
 

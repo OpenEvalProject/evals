@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/009avj582 Vollum Institute, Oregon Health and Science University Portland United States
+1. Vollum Institute, Oregon Health and Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
 
 † Corresponding author
 
@@ -30,25 +30,41 @@ Here, we examined whether PKA-C dissociates from all major PKA-R isoforms in CA1
 
 Recent studies have suggested that PKA-RIIα and PKA-RIβ may be the prevalent isoforms in hippocampal CA1 neurons. Therefore, we co-expressed C-terminally monomeric EGFP tagged PKA-C (PKA-C-mEGFP; Tillo et al., 2017; Zhong et al., 2009) and a cytosolic marker (mCherry) with either PKA-RIIα or PKA-RIβ in CA1 neurons of organotypic hippocampal slice cultures (Figure 1A and B, upper left panels). At rest, PKA-C-mEGFP exhibited a distribution that was dependent on the co-expressed PKA-R: when co-expressed with PKA-RIIα, PKA-C was enriched in dendritic shafts; when co-expressed with PKA-RIβ, PKA-C was more evenly distributed (quantified using the spine enrichment indexes, or SEI, see Materials and methods; Figure 1C). This distribution was independent of the expression level (rest conditions in Figure 1—figure supplement 1) and largely resembled that of the corresponding PKA-R, as visualized using expressed PKA-R-mEGFP in separate experiments (Figure 1A–C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Representative two-photon images of PKA-C-mEGFP co-expressed with PKA-RIIα or PKA-RIβ at rest, or in the presence of norepinephrine (NE) or forskolin and IBMX (F+I). mCherry (magenta) was co-expressed to reveal the neuronal morphology. (C–E) Quantification and comparison of the spine enrichment index at the resting state (C) and upon activation (D, E). As in panel C from left to right, n (spines/neurons)=53/11, 34/7, 33/6, and 36/7. Error bars represent s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Averaged spine enrichment indexes within individual neurons of PKA-C co-expressed with RIIα (A) and RIβ (B), and their linear fit at rest or under the indicated stimulation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Representative two-photon images (A) and the collective trace of PKA-C-mEGFP co-expressed with PKA-RIIα at rest, or in the presence of 2 μM norepinephrine (NE) or forskolin and IBMX (F+I). DsRed Express (magenta) was co-expressed to reveal the neuronal morphology. n (spines/neurons)=16/4. Error bars represent s.e.m.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The collective trace of PKA-C-mEGFP co-expressed with PKA-RIα (orange) and PKA-RIα-mEGFP (light blue) at rest, or in the presence of 10 μM norepinephrine (NE) or forskolin and IBMX (F+I). DsRed Express was co-expressed to reveal the neuronal morphology. n (spines/neurons)=20/5 for PKA-C and 16/4 for RIα. Error bars represent s.e.m.
+
 Notably, upon application of norepinephrine (10 μM), PKA-C of both subtypes translocated to dendritic spines, but the subcellular localization of PKA-Rs remained unchanged (Figure 1D and E). A 5 x lowered norepinephrine concentration (2 μM) also resulted in similar dynamics of PKA-C (Figure 1—figure supplement 2), indicating that the PKA-C translocation happens in a wide range of neuromodulator concentrations. This differential re-distribution between PKA-C and PKA-R was more prominent following activation with forskolin (25 μM) and IBMX (50 μM). The translocation of PKA-C was independent of the expression level and the effect remained when extrapolating to the zero-overexpression level using a linear fit (Figure 1—figure supplement 1). These results can only be explained if at least a fraction of PKA-C dissociated from both PKA-RIIα and PKA-RIβ when a physiological stimulant was used. The differential re-distribution between PKA-C and PKA-R was also observed when PKA-RIα was used (Figure 1—figure supplement 3), although it was less implicated in hippocampal neurons. Together with our earlier results regarding PKA-C/PKA-RIIβ, we conclude that PKA-C dissociates from PKA-R with physiologically relevant stimuli.
 
 Next, we asked whether PKA regulation of neuronal function is dependent on the dissociation of PKA-C from PKA-R. A key experiment supporting the non-dissociating PKA activation model was that PKA regulation of cell growth could be sustained by a construct in which PKA-C was fused to PKA-RIIα in one polypeptide chain via a flexible linker (named R-C; Figure 2A; Smith et al., 2017). We therefore asked whether this R-C construct could support PKA regulation of neuronal function. When R-C-mEGFP was expressed in CA1 neurons, this construct exhibited a distribution highly similar to that of RIIα (Figure 2B and C). The tendency of this construct to translocate to the spine was largely diminished compared to PKA-C-mEGFP co-expressed with wildtype, unlinked PKA-RIIα (Figure 2D), indicating that the catalytic subunit in R-C was indeed inseparable from the regulatory subunit.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic of wildtype PKA versus R-C. In both cases PKA-C was C-terminally tagged by mEGFP. (B–C) Representative images (B), quantifications of resting distribution (C), and the distribution change upon stimulation by forskolin and IBMX (D) of R-C compared to PKA-RIIα-mEGFP and co-expressed PKA-C-mEGFP/PKA-RIIα. RIIα and RIIα+C data are from Figure 1C. n (spines/neurons)=48/10. Error bars represent s.e.m.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic of wildtype PKA versus R-C. In both cases PKA-C was C-terminally tagged by mEGFP. (B–C) Representative images (B), quantifications of resting distribution (C), and the distribution change upon stimulation by forskolin and IBMX (D) of R-C compared to PKA-RIIα-mEGFP and co-expressed PKA-C-mEGFP/PKA-RIIα. RIIα and RIIα+C data are from Figure 1C. n (spines/neurons)=48/10. Error bars represent s.e.m.
 
 To evaluate the function of R-C, a previously established shRNA construct was used to selectively knock down PKA-Cα in CA1 neurons in cultured hippocampal slices (Tillo et al., 2017). Given that PKA activation is required for the late phase of long-term potentiation (L-LTP; Abel et al., 1997), we examined the structural LTP of individual dendritic spines of CA1 neurons elicited by focal two-photon glutamate uncaging (Figure 3; Matsuzaki et al., 2004). The shRNA knockdown of PKA-C resulted in attenuated LTP at 90 min after induction (Figure 3A–C). This attenuation was not observed when a control shRNA against LacZ was expressed (Figure 3C). The attenuated structural LTP was rescued by co-expression of shRNA-resistant wild-type PKA-C-mEGFP together with PKA-RIIα (Figure 3A–C). However, the R-C construct in which PKA-C was also resistant to shRNA knockdown but could not leave PKA-RIIα failed to rescue the phenotype.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) Representative image (A), time course (B), and the degree of potentiation (C) at the indicated timepoints in panel B of single-spine LTP experiments as triggered by focal glutamate uncaging at the marked spines (gray dot). In panel B, both stimulated spines (solid circles) and non-stimulated control spines (open circles) are shown. As in panel C from left to right, n (spines, each from a different neuron)=8, 7, 17, 11, 9. Error bars represent s.e.m.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–C) Representative image (A), time course (B), and the degree of potentiation (C) at the indicated timepoints in panel B of single-spine LTP experiments as triggered by focal glutamate uncaging at the marked spines (gray dot). In panel B, both stimulated spines (solid circles) and non-stimulated control spines (open circles) are shown. As in panel C from left to right, n (spines, each from a different neuron)=8, 7, 17, 11, 9. Error bars represent s.e.m.
 
 PKA activity has also been shown to regulate synaptic transmission. We therefore examined evoked AMPA and NMDA receptor (AMPAR and NMDAR, respectively) currents in paired, transfected and adjacent untransfected CA1 neurons in cultured hippocampal slices. As shown previously (Tillo et al., 2017; Xiong et al., 2021), neurons expressing the shRNA construct against PKA-C exhibited significantly lower AMPAR currents (Figure 4A), but not NMDAR currents (Figure 4B). As a result, the AMPAR/NMDAR current ratio was also reduced (Figure 4C). The deficits were rescued by co-expression of shRNA-resistant, wild-type dissociable PKA-C-mEGFP and PKA-RIIα (Figure 4). However, the inseparable R-C construct failed to rescue the phenotype. Taken together, the R-C construct did not support normal PKA-dependent synaptic function.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93766/elife-93766-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) Representative traces (red) normalized to the paired control (blue) (insets) and scatter plots of paired AMPA (A) and NMDA (B) receptor currents and AMPA/NMDA receptor current ratios (C) from neighboring untransfected CA1 neurons and those transfected with shRNA against PKA-C and the indicated shRNA-resistant rescue constructs. Statistical p values were obtained using a sign test (MATLAB). From left to right, n (neuron pairs)=13, 11, 11, and 15. Error bars represent s.e.m.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A–C) Representative traces (red) normalized to the paired control (blue) (insets) and scatter plots of paired AMPA (A) and NMDA (B) receptor currents and AMPA/NMDA receptor current ratios (C) from neighboring untransfected CA1 neurons and those transfected with shRNA against PKA-C and the indicated shRNA-resistant rescue constructs. Statistical p values were obtained using a sign test (MATLAB). From left to right, n (neuron pairs)=13, 11, 11, and 15. Error bars represent s.e.m.
 
 ## Discussion
 
@@ -60,36 +76,204 @@ This study also demonstrates that PKA is essential for long-term structural LTP 
 
 ## Materials and methods
 
-## Materials availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, Sprague Dawley)</td>
+      <td>Sprague Dawley rat</td>
+      <td>Charles River</td>
+      <td>Strain Code 001; RRID: RGD_734476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-Cα-mEGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td># 45524; RRID: Addgene_45524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIα-mEGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td># 45525; RRID: Addgene_45525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIβ-mEGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td># 45526; RRID: Addgene_45526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIIα-mEGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td># 45527; RRID: Addgene_45527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIα(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 1—figure supplement 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIβ(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIIα(plasmid)</td>
+      <td>Addgene</td>
+      <td>#168492; RRID: Addgene_168492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PKA-RIIα-PKA-Cα-mEGFP(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shPKA against PKA-Cα with DsRed co-expression (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The shRNA was developed in Tillo et al., 2017; Figure 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shPKA against LacZ with DsRed co-expression (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry2(plasmid)</td>
+      <td>Addgene</td>
+      <td>#54517; RRID:Addgene_54517</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Norepinephrine</td>
+      <td>Tocris</td>
+      <td>5169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>LC Labs</td>
+      <td>F-9926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IBMX</td>
+      <td>Sigma-Aldrich</td>
+      <td>I7018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MNI-glutamate</td>
+      <td>Tocris</td>
+      <td>1490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>Tocris</td>
+      <td>1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Chloroadenosine</td>
+      <td>Sigma-Aldrich</td>
+      <td>C5134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GABAzine (SR 95531)</td>
+      <td>Tocris</td>
+      <td>1262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SI_View</td>
+      <td>Zhong, 2022</td>
+      <td>https://github.com/HZhongLab/SI_View</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability statement
 
 All previously unpublished constructs and their sequences will be submitted to Addgene. All software is publicly accessible as indicated in the Key Resource Table.
 
-## Plasmid constructs
+### Plasmid constructs
 
 Constructs were made using standard mutagenesis and subcloning methods. In the R-C construct, mouse PKA-RIIα and PKA-Cα were fused via a linker with residues WDPGSGSLEAGCKNFFPRSFTSCGSLEGGSAAA that were previously used (Smith et al., 2017).
 
-## Organotypic hippocampal slice cultures and transfections
+### Organotypic hippocampal slice cultures and transfections
 
 Cultured rat hippocampal slices were prepared from P6 – P8 (typically P7) pups, as described previously (Stoppini et al., 1991; Zhong et al., 2009). Animal experiments were performed in accordance with the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health, and were approved by the Institutional Animal Care and Use Committee (IACUC) of the Oregon Health & Science University (#IP00002274). cDNA constructs were transfected after 1.5–3 weeks in vitro via the biolistic gene transfer method using the Helios gene gun and 1.6 μm gold beads (Figure 1) or, where long-term expression (~1 week) was required, with single-cell electroporation (Figure 2; Otmakhov and Lisman, 2012).
 
-## Two-photon imaging and two-photon glutamate uncaging
+### Two-photon imaging and two-photon glutamate uncaging
 
 A custom built two-photon microscope based on an Olympus BW51WI microscope body was used. Laser beams from two different Ti:Sapphire lasers (Maitai, Newport) were aligned to allow for simultaneous two-photon excitation and photoactivation. Laser intensities were controlled by Pockels cells (Conoptics). Imaging and photoactivation were controlled by ScanImage (Vidrio Tech) (Pologruto et al., 2003). Slices were perfused during imaging in gassed artificial cerebral spinal fluid (ACSF) containing (mM) 127 NaCl, 25 NaHCO3, 25 D-glucose, 2.5 KCl, 4 MgCl2, 4 CaCl2, and 1.25 NaH2PO4 with 0.5 µM tetrodotoxin (TTX). mEGFP fluorescence (green) was unmixed from that of the cytosolic marker (mCherry or DsRed Express) using a dichroic (Chroma 565DCXR) and band-pass filters (Chroma HQ510/70 for green and Semrock FF01-630/92 for red).
 
 For single-spine structural LTP experiments, 2.25 mM MNI-caged-L-glutamate (Tocris) was added to ACSF containing 4 mM calcium, 0.05 mM magnesium, 1 μM TTX and 4 µM 2-chloroadenosine, as previously described (Harvey et al., 2008). To trigger structural plasticity, 30 pulses of 4 ms 16 mW (at back focal plane) 720 nm laser light were delivered to the spine head at 0.5 Hz.
 
-Image analysis was performed using custom software written in MATLAB called SI_View (https://github.com/HZhongLab/SI_View; Zhong, 2022; Ma et al., 2022). Using the software, regions of interest (ROIs) were manually drawn to isolate spines or their immediately adjacent dendritic shaft. Only the spines well isolated from the dendrite laterally throughout the entire experiments were included. Spine enrichment index was calculated as:SEI=log2[(Fgreen/Fred)spine/(Fgreen/Fred)shaft]
+Image analysis was performed using custom software written in MATLAB called SI_View (https://github.com/HZhongLab/SI_View; Zhong, 2022; Ma et al., 2022). Using the software, regions of interest (ROIs) were manually drawn to isolate spines or their immediately adjacent dendritic shaft. Only the spines well isolated from the dendrite laterally throughout the entire experiments were included. Spine enrichment index was calculated as:
+
+$$
+SEI=log_{2}[(F_{green}/F_{red})_{spine}/(F_{green}/F_{red})_{shaft}]
+$$
 
 in which F is the average fluorescence intensity in an ROI.
 
 The expression level was estimated by the maximal intensity from thick apical dendrite near the soma (typically 50–100 µm) similar to previously described (Harvey et al., 2008; Tillo et al., 2017). To minimize the influence of noise, a line of 9 pixels (pixel size ~0.04 µm) thick was manually drawn transecting the dendrite through the visually identified, brightest region. The line profile was further smoothened by 5 pixels along the line and baseline subtracted before determining the maximal value. To combine measurements from different hardware configuration (e.g. different microscopes), the data from each configuration and experiment were internally corrected for laser stimulation intensity and then normalized to the average of all data under the same condition.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell voltage-clamp recordings were performed using a MultiClamp 700B amplifier (Molecular Devices). Electrophysiological signals were filtered at 2 kHz and digitized and acquired at 20 kHz using custom software written in MATLAB. Slices were perfused with artificial cerebrospinal fluid containing 4 mM Ca and 4 mM Mg. The internal solution contained (in mM) 132 Cs-gluconate, 10 HEPES, 10 Na-phosphocreatine, 4 MgCl2, 4 Na2-ATP, 0.4 Na-GTP, 3 Na-ascorbate, 3 QX314, and 0.2 EGTA with an osmolarity of 295 mOsmol/kg. The junction potential was calculated to be –17 mV using a built-in function in the Clampfit software (Molecular Devices). Several less abundant anions (phosphocreatine, ATP, GTP and ascorbate) were omitted in the calculation due to lack of data in the program. The Cl reversal potential was –75 mV.
 
 To reduce recurrent activities, cultured hippocampal slices were cut on both sides of CA1 and 4 µM 2-chloroadenosine (Sigma) was present in all recording experiments. 10 µM GABAzine (SR 95531, Tocris) was also included to suppress GABA currents. For electrical stimulation, a bipolar, θ-glass stimulating electrode (Warner Instruments) was positioned in the stratum radiatum 100–150 μm lateral to the recorded neuron. For all recordings, a transfected neuron and an untransfected neuron located within 50 µm of each other were sequentially recorded without repositioning the stimulation electrode. Measurements were carried out on averaged traces from approximately 20 trials under each condition. For AMPAR currents, the cells were held at –60 mV (before correcting for the junction potential) and the current was measured as the baseline-subtracted peak current within a window of 2–50ms after electric stimulation. For NMDAR currents, the average currents at 140–160ms after stimulation were used when the cells were held at +55 mV (before correcting for the junction potential).
 
-## Data analysis, presentation, and statistics
+### Data analysis, presentation, and statistics
 
 Quantification and statistical tests were performed using custom software written in MATLAB. All experiments were replicated in multiple neurons across ≥3 slices from ≥2 transfections. No data were excluded unless the cell was lost during an experiment (the cell became blebby during imaging, or the seal was lost during recording). Averaged data are presented as mean ± s.e.m., unless noted otherwise. p values were obtained from one-way ANOVA tests, unless noted otherwise. In all figures, *: p≤0.05 and is considered statistically significant after Bonferroni correction for multiple tests, **: p≤0.01, and ***: p≤0.001.

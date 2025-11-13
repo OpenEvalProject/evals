@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.35977.001 Abnormalities in nucleic acid processing are associated with the development of amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD). Mutations in Matrin 3 ( MATR3 ), a poorly understood DNA- and RNA-binding protein, cause familial ALS/FTD, and MATR3 pathology is a feature of sporadic disease, suggesting that MATR3 dysfunction is integrally linked to ALS pathogenesis. Using a rat primary neuron model to assess MATR3-mediated toxicity, we noted that neurons were bidirectionally vulnerable to MATR3 levels, with pathogenic MATR3 mutants displaying enhanced toxicity. MATR3’s zinc finger domains partially modulated toxicity, but elimination of its RNA recognition motifs had no effect on survival, instead facilitating its self-assembly into liquid-like droplets. In contrast to other RNA-binding proteins associated with ALS, cytoplasmic MATR3 redistribution mitigated neurodegeneration, suggesting that nuclear MATR3 mediates toxicity. Our findings offer a foundation for understanding MATR3-related neurodegeneration and how nucleic acid binding functions, localization, and pathogenic mutations drive sporadic and familial disease.
+Abnormalities in nucleic acid processing are associated with the development of amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD). Mutations in Matrin 3 (MATR3), a poorly understood DNA- and RNA-binding protein, cause familial ALS/FTD, and MATR3 pathology is a feature of sporadic disease, suggesting that MATR3 dysfunction is integrally linked to ALS pathogenesis. Using a rat primary neuron model to assess MATR3-mediated toxicity, we noted that neurons were bidirectionally vulnerable to MATR3 levels, with pathogenic MATR3 mutants displaying enhanced toxicity. MATR3’s zinc finger domains partially modulated toxicity, but elimination of its RNA recognition motifs had no effect on survival, instead facilitating its self-assembly into liquid-like droplets. In contrast to other RNA-binding proteins associated with ALS, cytoplasmic MATR3 redistribution mitigated neurodegeneration, suggesting that nuclear MATR3 mediates toxicity. Our findings offer a foundation for understanding MATR3-related neurodegeneration and how nucleic acid binding functions, localization, and pathogenic mutations drive sporadic and familial disease.
 
 ## Introduction
 
@@ -31,13 +31,13 @@ Matrin 3 (MATR3) is a DNA- and RNA-binding protein with wide-ranging functions i
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig1-v1.jpg)
 
-**Figure 1.:** (A) Diagram of MATR3 showing nucleic acid-binding domains as well as the distribution of pathogenic mutations implicated in ALS (blue), ALS/FTD (red), and ALS/distal myopathy (green) within domains predicted to be disordered by PONDR VSL2 (Peng et al., 2006). (B) Longitudinal fluorescence microscopy (LFM) allows unique identification and tracking of thousands of primary neurons (green outlines) transfected with fluorescent proteins, as well as monitoring of cell death (red outlines), indicated by loss of fluorescence signal and changes in morphology. (C) MATR3-EGFP expressing neurons exhibited a higher risk of death compared to neurons expressing only EGFP, as quantified by the hazard ratio (HR) (HR = 1.48; EGFP n = 1286, MATR3-EGFP n = 1183; ***p<2×10−16, Cox proportional hazards). (D–E) Transfection of neurons with MATR3-EGFP resulted in a 2.8-fold increase in anti-MATR3 immunoreactivity over untransfected cells (MATR3-EGFP n = 133, untransfected n = 136, EGFP n = 113, ****p<0.0001, one-way ANOVA with Tukey’s post-hoc test). (F) On a single-cell basis, GFP fluorescence is directly proportional to anti-MATR3 reactivity (p<0.0001, r2 = 0.90; linear regression). (G) Penalized spline modeling confirmed a protective effect associated with higher EGFP expression that plateaus at ~1500 arbitrary units (AU); (p=5.3×10−6, penalized spline regression). (H) However, penalized spline analysis showed no relationship between expression and survival at low and medium expression but a significant increase in risk of death with high MATR3-EGFP levels (p=0.012; penalized spline regression). Scale bars in (B) and (D), 20 μm.10.7554/eLife.35977.003Figure 1—source data 1.Figures 1C,G, and H and GFP intensity and immunoreactivity data used for Figures 1E and F.
+**Figure 1.:** (A) Diagram of MATR3 showing nucleic acid-binding domains as well as the distribution of pathogenic mutations implicated in ALS (blue), ALS/FTD (red), and ALS/distal myopathy (green) within domains predicted to be disordered by PONDR VSL2 (Peng et al., 2006). (B) Longitudinal fluorescence microscopy (LFM) allows unique identification and tracking of thousands of primary neurons (green outlines) transfected with fluorescent proteins, as well as monitoring of cell death (red outlines), indicated by loss of fluorescence signal and changes in morphology. (C) MATR3-EGFP expressing neurons exhibited a higher risk of death compared to neurons expressing only EGFP, as quantified by the hazard ratio (HR) (HR = 1.48; EGFP n = 1286, MATR3-EGFP n = 1183; ***p<2×10−16, Cox proportional hazards). (D–E) Transfection of neurons with MATR3-EGFP resulted in a 2.8-fold increase in anti-MATR3 immunoreactivity over untransfected cells (MATR3-EGFP n = 133, untransfected n = 136, EGFP n = 113, ****p<0.0001, one-way ANOVA with Tukey’s post-hoc test). (F) On a single-cell basis, GFP fluorescence is directly proportional to anti-MATR3 reactivity (p<0.0001, r2 = 0.90; linear regression). (G) Penalized spline modeling confirmed a protective effect associated with higher EGFP expression that plateaus at ~1500 arbitrary units (AU); (p=5.3×10−6, penalized spline regression). (H) However, penalized spline analysis showed no relationship between expression and survival at low and medium expression but a significant increase in risk of death with high MATR3-EGFP levels (p=0.012; penalized spline regression). Scale bars in (B) and (D), 20 μm.
 
 Even so, little is known about MATR3’s functions in health or in disease, and the mechanisms underlying MATR3-dependent neurotoxicity remain unclear. Here, we establish an in vitro model of MATR3-mediated neurodegeneration and take advantage of this model to investigate the intrinsic properties and domains of MATR3 required for toxicity. Furthermore, we examine how disease-associated MATR3 mutations affect these properties to enhance neurodegeneration.
 
 ## Results
 
-## MATR3 levels modulate neuronal survival in an in vitro model of neurodegeneration
+### MATR3 levels modulate neuronal survival in an in vitro model of neurodegeneration
 
 We first asked how MATR3 expression is related to neurodegeneration using longitudinal fluorescence microscopy (LFM), a sensitive high-content imaging system that we assembled for assessing neuronal function and survival at the single-cell level. As MATR3 mutations cause a spectrum of disease that includes ALS and FTD, we modeled neurotoxicity in primary mixed cortical cultures, a system that recapitulates key features of ALS/FTD pathogenesis (Barmada et al., 2010b, 2014, 2015). Primary neurons were transfected with diffusely localized mApple to enable visualization of neuronal cell bodies and processes by fluorescence microscopy. In addition, cells were co-transfected with constructs encoding enhanced green fluorescent protein (EGFP) or MATR3 fused with EGFP. Cultures were imaged by fluorescence microscopy at 24 hr intervals for 10 days, and custom scripts (https://github.com/barmadaslab/survival-analysis and https://github.com/barmadaslab/measurements; Miguez, 2018a; Miguez, 2018b copies archived at https://github.com/elifesciences-publications/survival-analysis and https://github.com/elifesciences-publications/measurements) used to generate uniquely labeled regions of interest (ROIs) corresponding to each cell (Figure 1B). Rounding of the soma, retraction of neurites or loss of fluorescence indicated cell death; these criteria proved to be sensitive markers of neurodegeneration in previous studies (Arrasate and Finkbeiner, 2005). We used the time of death for individual cells to calculate an overall risk of death, expressed as a hazard ratio (HR), corresponding to the likelihood of cell death in each population relative to a control or reference group (Christensen, 1987). In doing so, we observed that MATR3-EGFP overexpression significantly increases the risk of death compared to EGFP alone, with a HR of 1.48 (Figure 1C).
 
@@ -49,37 +49,61 @@ Several MATR3 mutations are responsible for familial ALS, FTD, and hereditary di
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig2-v1.jpg)
 
-**Figure 2.:** (A) In primary rodent cortical neurons, the S85C, F115C, P154S, and T622A disease-associated MATR3 mutants have the same granular nuclear distribution as MATR3(WT)-EGFP. (B) All four disease mutations display a subtle but significant increase in toxicity compared to MATR3(WT)-EGFP (comparing to MATR3(WT)-EGFP, n = 2920: MATR3(S85C)-EGFP, HR = 1.16, n = 2031, ***p=3.79×10−6; MATR3(F115C)-EGFP, HR = 1.14, n = 2144, ***p=5.57×10−5; MATR3(P154S)-EGFP, HR = 1.24, n = 2092, ***p=1.77×10−11; MATR3(T622A)-EGFP, HR = 1.14, n = 2137, ***p=6.02×10−5; Cox proportional hazards). (C–D) siRNA targeting the endogenous rat Matr3 reduced MATR3 antibody reactivity by approximately 65% (scrambled siRNA, n = 576; anti-Matr3 siRNA, n = 508; p<0.0001, two-tailed t-test). (E) Neurons transfected with anti-Matr3 siRNA displayed a higher risk of death compared to those transfected with scrambled siRNA (HR = 1.20; scrambled siRNA, n = 2507; anti-Matr3, n = 2623; ***p=2.05×10−8, Cox proportional hazards). Scale bars in (A), 10 μm; scale bars in (C), 20 μm.10.7554/eLife.35977.005Figure 2—source data 1.Figure 2B and E and immunoreactivity data for Figure 2D.
+**Figure 2.:** (A) In primary rodent cortical neurons, the S85C, F115C, P154S, and T622A disease-associated MATR3 mutants have the same granular nuclear distribution as MATR3(WT)-EGFP. (B) All four disease mutations display a subtle but significant increase in toxicity compared to MATR3(WT)-EGFP (comparing to MATR3(WT)-EGFP, n = 2920: MATR3(S85C)-EGFP, HR = 1.16, n = 2031, ***p=3.79×10−6; MATR3(F115C)-EGFP, HR = 1.14, n = 2144, ***p=5.57×10−5; MATR3(P154S)-EGFP, HR = 1.24, n = 2092, ***p=1.77×10−11; MATR3(T622A)-EGFP, HR = 1.14, n = 2137, ***p=6.02×10−5; Cox proportional hazards). (C–D) siRNA targeting the endogenous rat Matr3 reduced MATR3 antibody reactivity by approximately 65% (scrambled siRNA, n = 576; anti-Matr3 siRNA, n = 508; p<0.0001, two-tailed t-test). (E) Neurons transfected with anti-Matr3 siRNA displayed a higher risk of death compared to those transfected with scrambled siRNA (HR = 1.20; scrambled siRNA, n = 2507; anti-Matr3, n = 2623; ***p=2.05×10−8, Cox proportional hazards). Scale bars in (A), 10 μm; scale bars in (C), 20 μm.
 
 To determine if loss of endogenous MATR3 function is sufficient for neurodegeneration, we transfected primary neurons with mApple and siRNA targeting the amino (N)-terminal coding region of rodent Matr3 or a scrambled siRNA control. Three days after transfection, Matr3 immunoreactivity was used to quantify efficacy of knockdown in transfected cells (Figure 2C). Compared to scrambled siRNA-transfected cells, we noted consistent depletion of the endogenous rat Matr3 by approximately 65% in those transfected with siRNA targeting Matr3 (Figure 2D). Having confirmed knockdown, we imaged a separate set of transfected cells for 10 days to assess the effect of Matr3 knockdown on neuronal survival. In doing so, we observed a 20% increase in the risk of death upon Matr3 depletion in comparison to scrambled siRNA (Figure 2E). These data suggest that neurons are vulnerable to both increases and decreases in MATR3 levels and function; further, pathogenic MATR3 mutations may elicit neurodegeneration via gain- or loss-of-function mechanisms, or through elements of both.
 
-## MATR3’s zinc finger domains modulate overexpression toxicity, but its RNA recognition motifs mediate self-association
+### MATR3’s zinc finger domains modulate overexpression toxicity, but its RNA recognition motifs mediate self-association
 
 To identify the functional domains involved in MATR3-mediated neurodegeneration, we systematically deleted each of the annotated MATR3 domains and evaluated subsequent toxicity upon overexpression in primary neurons (Figure 3A). MATR3 has two zinc-finger (ZF) domains of the C2H2 variety, which bind DNA but may also recognize RNA and/or mediate protein-protein interactions (Brayer et al., 2008; Burdach et al., 2012). Deletions of ZF1, ZF2, or both had no observable effect on MATR3-EGFP localization (Figure 3B), and ZF1 deletion by itself did not significantly alter toxicity compared to full-length MATR3-EGFP. In contrast, ZF2 deletion, either in isolation or combined with ZF1 deletion, partially rescued MATR3-EGFP overexpression toxicity (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of MATR3 domain deletion mutants. (B) Zinc finger (ZF) domain deletions do not change the localization of MATR3-EGFP compared to the full-length protein. (C) ZF2 deletion, either in isolation or combination with ZF1, results in modest rescue of overexpression toxicity (comparing to MATR3(WT)-EGFP, n = 1616: MATR3(∆ZF1)-EGFP, HR = 0.94, n = 1471, p=0.10; MATR3(∆ZF2)-EGFP, HR = 0.93, n = 1505, *p=0.040; MATR3(∆ZF1/2)-EGFP, HR = 0.90, n = 1104, **p=0.0093; Cox proportional hazards). (D) While MATR3(∆RRM1)-EGFP exhibits the same localization as MATR3(WT)-EGFP, deletion of RRM2 results in redistribution into intranuclear granules. (E) RRM deletion had little effect on MATR3-mediated toxicity (comparing to MATR3(WT)-EGFP n = 1430: MATR3(∆RRM1)-EGFP, HR = 1.05, n = 1171, p=0.25; MATR3(∆RRM2)-EGFP, HR = 1.09, n = 1001, p=0.066; MATR3(∆RRM1/2)-EGFP, HR = 1.04, n = 1180, p=0.42). Scale bars in (B) and (D), 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-C) Immunostaining for nucleoli, speckles, and PML bodies using antibodies against fibrillarin, SC35, and PML, respectively, show no colocalization between MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP granules and these nuclear structures. Scale bars in (A), (B), and (C), 10 μm.
+
 We next created deletion variants of MATR3’s RNA recognition motifs (RRMs) to test their contribution to MATR3-mediated neurodegeneration. As with the MATR3 ZF domains, RRMs are capable of recognizing both RNA and DNA (Inagaki et al., 1996). While deletion of RRM1 failed to affect MATR3-EGFP localization, we noted a striking redistribution of MATR3(∆RRM2)-EGFP into intranuclear granules in a subset of transfected neurons (Figure 3D). Deletion of RRM1 in combination with RRM2 produced the same phenotype, suggesting that RRM2 normally prevents such redistribution. These nuclear granules formed by MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP were uniformly spherical in shape, and their presence was accompanied by a reduction in the intensity of diffusely-distributed MATR3 within the nucleus, suggesting that they represent hyperconcentrated MATR3 puncta. Evidence from previous studies indicates that RNA recognition by MATR3 may be largely—but not solely—driven by RRM2 (Hibino et al., 2006; Salton et al., 2011). Consistent with this, our finding that RRM2 deletion induces the formation of nuclear condensates suggests that RNA binding normally keeps MATR3 diffuse by preventing an intrinsic tendency for self-association. We detected no colocalization of MATR3(∆RRM2)-EGFP or MATR3(∆RRM1/2)-EGFP with markers of nucleoli, nuclear speckles, or PML bodies (Figure 3—figure supplement 1), indicating that MATR3 lacking its RRM2 does not join these organelles. Despite the dramatic shift in MATR3-EGFP distribution with RRM2 deletion, there was no associated change in the toxicity of MATR3-EGFP lacking RRM1, RRM2, or both in comparison to MATR3(WT)-EGFP (Figure 3E). This finding stands in contrast to what has been observed for other ALS/FTD-associated RBPs, for which the ability to bind RNAs is a key mediator of overexpression toxicity (Elden et al., 2010; Daigle et al., 2013; Ihara et al., 2013).
 
-## The toxicity of RNA binding-deficient MATR3 variants is highly dependent on their subcellular distribution
+### The toxicity of RNA binding-deficient MATR3 variants is highly dependent on their subcellular distribution
 
 One of the hallmarks of neurodegenerative diseases, including ALS and FTD, is the formation of protein-rich aggregates (Arai et al., 2006; Neumann et al., 2006). Prior investigations suggest that these aggregates may be toxic, innocuous, or representative of a coping response that ultimately prolongs neuronal survival (Arrasate et al., 2004; Barmada et al., 2010b). To determine if the formation of nuclear puncta by MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP affected neuronal lifespan, we turned to LFM. We employed a modified version of the automated analysis script to draw ROIs around the nuclear perimeter within each transfected cell (Figure 4A) and then calculated a coefficient of variation (CV) for the MATR3(∆RRM1/2)-EGFP signal within each nuclear ROI. The CV, or the ratio of the standard deviation of GFP intensity to the mean GFP intensity for the ROI, is directly proportional to the spatial variability of fluorescence intensity within each ROI. Therefore, we reasoned that this measure might be useful for rapidly and reliably identifying puncta in an unbiased and high-throughput manner. We first validated the use of CV for detecting puncta by creating a receiver-operator characteristic (ROC) curve; in doing so, we observed that a CV threshold of 0.92 was 87.2% sensitive and 93.9% specific in discriminating cells with nuclear granules from those with diffuse protein (Figure 4B). We therefore utilized this CV threshold to assess the frequency of nuclear granule formation in primary rodent cortical neurons, noting that 24 hr after transfection, 76.1% (2081/2734) of neurons transfected with MATR3(∆RRM2)-EGFP displayed nuclear granules compared to 91.2% (1590/1743) of MATR3(∆RRM1/2)-EGFP cells (Figure 4C). We also observed the time-dependent formation of nuclear granules as neurons expressed increasing amounts of MATR3-EGFP (Figure 4D), suggesting that granule formation may be proportional to expression level. To investigate this relationship further, we identified neurons exhibiting a diffuse distribution of MATR3(∆RRM2)-EGFP at day one and followed these cells for an additional 3 days by automated microscopy. We then measured the GFP intensity for each cell at day one and related this value to the risk of granule formation over the ensuing 72 hr period using penalized splines models. Notably, we failed to observe a significant relationship between GFP intensity on day one and granule formation by day 3 (Figure 3E). We also assessed the relative change in expression level on a per-cell basis, as quantified by the ratio of GFP intensity at day two to the GFP intensity at day 1, to determine if the net rate of MATR3(∆RRM2)-EGFP production better predicted granule formation. The probability of granule formation was directly proportional to the time-dependent change in MATR3(∆RRM2)-EGFP levels (Figure 4F), suggesting that granule formation is favored by the rapid accumulation of MATR3(∆RRM2)-EGFP.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig4-v1.jpg)
 
-**Figure 4.:** (A) Automated analysis of MATR3-EGFP distribution in transfected primary cortical neurons. Regions of interest (ROIs) were drawn around the cell body (marked by mApple fluorescence, red) and diffuse MATR3-EGFP (indicated by GFP fluorescence, green), and used to calculate a coefficient of variation (CV) representing MATR3-EGFP distribution within each ROI. (B) Receiver operating characteristic (ROC) curve for MATR3-EGFP CV values. A CV threshold of 0.92 (arrow/black point) identified cells with intranuclear MATR3-EGFP granules with 87.2% sensitivity and 93.9% specificity. (C) Using this cutoff, we determined that 1 day after transfection, 76.1% (2081/2734) of MATR3(∆RRM2)-EGFP neurons displayed intranuclear granules compared to 91.2% (1590/1743) of MATR3(∆RRM1/2)-EGFP cells (***p<0.00001, Fisher’s exact test). (D) Intranuclear granules form in a time-dependent manner in neurons expressing MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP. (E–F) Penalized spline models depicting the relationship between MATR3(∆RRM2)-EGFP expression on day 1 (E) or change in GFP expression between day 1 and day 2 (F), and risk of developing an intranuclear granule by day 3. Expression level at day one was not significantly associated with risk of granule formation (E; p=0.30, penalized spline regression), but the relative increase in expression from day 1 to day 2 is (F; p=0.015, penalized spline regression). (G) For MATR3(∆RRM2)-EGFP, neurons exhibiting granules by day one displayed improved survival compared to the pooled combination of all cells. Conversely, neurons with diffusely distributed MATR3(∆RRM2)-EGFP fared far worse (comparing to the pooled condition: cells with granules n = 2081, HR = 0.86, ***p=1.02 × 10−5; cells with diffuse protein n = 653, HR = 1.75, ***p<2 × 10−16; Cox proportional hazards). (H) Neurons with MATR3(∆RRM1/2)-EGFP granules by day one similarly displayed a reduced risk of death in comparison to the pooled group, while diffuse MATR3(∆RRM1/2)-EGFP was highly toxic (comparing to the pooled condition: cells with granules, n = 1590, HR = 0.92, *p=0.03; cells with diffuse protein, n = 153, HR = 3.78, ***p=2 × 10−16; Cox proportional hazards). Scale bars in (A) and (B), 10 μm.10.7554/eLife.35977.010Figure 4—source data 1.Figure 4B, granule formation risk and GFP expression data for Figures 4E and F, and survival data for Figures 4G and H.
+**Figure 4.:** (A) Automated analysis of MATR3-EGFP distribution in transfected primary cortical neurons. Regions of interest (ROIs) were drawn around the cell body (marked by mApple fluorescence, red) and diffuse MATR3-EGFP (indicated by GFP fluorescence, green), and used to calculate a coefficient of variation (CV) representing MATR3-EGFP distribution within each ROI. (B) Receiver operating characteristic (ROC) curve for MATR3-EGFP CV values. A CV threshold of 0.92 (arrow/black point) identified cells with intranuclear MATR3-EGFP granules with 87.2% sensitivity and 93.9% specificity. (C) Using this cutoff, we determined that 1 day after transfection, 76.1% (2081/2734) of MATR3(∆RRM2)-EGFP neurons displayed intranuclear granules compared to 91.2% (1590/1743) of MATR3(∆RRM1/2)-EGFP cells (***p<0.00001, Fisher’s exact test). (D) Intranuclear granules form in a time-dependent manner in neurons expressing MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP. (E–F) Penalized spline models depicting the relationship between MATR3(∆RRM2)-EGFP expression on day 1 (E) or change in GFP expression between day 1 and day 2 (F), and risk of developing an intranuclear granule by day 3. Expression level at day one was not significantly associated with risk of granule formation (E; p=0.30, penalized spline regression), but the relative increase in expression from day 1 to day 2 is (F; p=0.015, penalized spline regression). (G) For MATR3(∆RRM2)-EGFP, neurons exhibiting granules by day one displayed improved survival compared to the pooled combination of all cells. Conversely, neurons with diffusely distributed MATR3(∆RRM2)-EGFP fared far worse (comparing to the pooled condition: cells with granules n = 2081, HR = 0.86, ***p=1.02 × 10−5; cells with diffuse protein n = 653, HR = 1.75, ***p<2 × 10−16; Cox proportional hazards). (H) Neurons with MATR3(∆RRM1/2)-EGFP granules by day one similarly displayed a reduced risk of death in comparison to the pooled group, while diffuse MATR3(∆RRM1/2)-EGFP was highly toxic (comparing to the pooled condition: cells with granules, n = 1590, HR = 0.92, *p=0.03; cells with diffuse protein, n = 153, HR = 3.78, ***p=2 × 10−16; Cox proportional hazards). Scale bars in (A) and (B), 10 μm.
 
 Our previous studies demonstrated that deletion of RRM1, RRM2, or both had no effect upon the toxicity of MATR3-EGFP when expressed in primary neurons (Figure 3E). These analyses included all neurons within a given condition, consisting of cells with diffuse nuclear MATR3 as well as those with MATR3 redistributed into granules. To determine if the presence of nuclear MATR3-EGFP granules impacted the survival of neurons, we utilized the nuclear CV threshold (Figure 4B) to divide neurons expressing MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP into three categories: cells with diffuse protein at day 1, those with granules at day 1, or all cells. We then tracked neurons in each category for the following 9 days by LFM, and compared their survival by Cox proportional hazards analysis. By these measures, neurons displaying nuclear MATR3(∆RRM2)-EGFP granules fared significantly better than the population as a whole, while those exhibiting a diffuse distribution demonstrated an increased risk of death (Figure 4G). Similar results were obtained for neurons expressing MATR3(∆RRM1/2)-EGFP; here, the relative protection associated with nuclear MATR3(∆RRM1/2)-EGFP granules was modest, but the toxicity of diffusely-distributed MATR3(∆RRM1/2)-EGFP was more pronounced (Figure 4H). The marked toxicity of diffuse MATR3(∆RRM1/2)-EGFP may explain why so few cells with diffuse protein are seen at day 1 (Figure 4D). Taken together, these results suggest that diffuse MATR3 is highly neurotoxic when it cannot bind RNA. Furthermore, the sequestration of RNA binding-deficient MATR3 variants into nuclear granules is associated with a survival advantage.
 
-## MATR3 granules formed by deletion of the RNA-binding domains display liquid-like properties that are affected by a pathogenic mutation
+### MATR3 granules formed by deletion of the RNA-binding domains display liquid-like properties that are affected by a pathogenic mutation
 
 As part of their normal function, many RBPs reversibly undergo LLPS, involving the formation of droplets with liquid-like properties from diffuse or soluble proteins (Molliex et al., 2015; Murray et al., 2017). Disease-associated mutations in the genes encoding these proteins may promote LLPS or impair the reversibility of phase separation (Kim et al., 2013; Molliex et al., 2015; Patel et al., 2015; Conicella et al., 2016). We wondered whether the intranuclear granules formed by MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP represent liquid droplets and also whether pathogenic MATR3 mutations affect the intrinsic properties of these puncta. Indeed, nuclear granules exhibited dynamic properties, not only growing in size over time but also moving freely within the nucleus and fusing if they encountered other granules (Figure 5A), indicative of liquid-like behavior.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig5-v1.jpg)
+
+**Figure 5.:** (A) MATR3(∆RRM2)-EGFP and MATR3(∆RRM1/2)-EGFP droplets show liquid-like properties such as mobility and fusion. (B) Pathogenic MATR3 mutations on the ∆RRM1/2 background result in similar phase-separated droplets. (C–D) Fluorescence recovery after photobleaching (FRAP) of MATR3(∆RRM1/2)-EGFP droplets shows internal rearrangement consistent with liquid-like behavior, but the recovery of MATR3(S85C ∆RRM1/2)-EGFP droplets was significantly delayed. (E) MATR3(S85C ∆RRM1/2)-EGFP droplets displayed significantly higher viscosity in comparison to MATR3(WT ∆RRM1/2)-EGFP (comparing to MATR3(WT ∆RRM1/2)-EGFP, n = 5: MATR3(S85C ∆RRM1/2)-EGFP, n = 5, ****p<0.0001; MATR3(F115C ∆RRM1/2)-EGFP, n = 5, p>0.9999; MATR3(P154S ∆RRM1/2)-EGFP, n = 5, p>0.9999; MATR3(T622A ∆RRM1/2)-EGFP, n = 4, p>0.9999; one-way ANOVA with Tukey’s post-hoc test). (F–G) FRAP experiments involving full-length MATR3-EGFP variants showed no differences in rates of return. (H) Similarly, there were no differences in diffusion coefficients (DC) among full-length MATR3 variants (MATR3(WT)-EGFP, n = 5; MATR3(S85C)-EGFP, n = 5; MATR3(F115C)-EGFP; n = 5, MATR3(P154S)-EGFP, n = 5; MATR3(T622A)-EGFP, n = 4; p=0.17, one-way ANOVA). Scale bars in (A) and (B), 10 μm; scale bars in (C) and (F), 5 μm. Curves in (D) and (G) show fitted curves ± SD.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) When expressed in rodent primary cortical neurons, the Q66K and A72T disease-associated mutations on MATR3(∆RRM1/2)-EGFP form intranuclear granules. Scale bar, 10 μm. (B–C) However, these mutants do not alter droplet viscosity (MATR3(WT ∆RRM1/2)-EGFP n = 5, MATR3(Q66K ∆RRM1/2)-EGFP n = 6, MATR3(A72T ∆RRM1/2)-EGFP n = 6; p=0.11; one-way ANOVA). Curves in (B) show fitted curves ± SD.
 
 We then asked if these structures displayed internal rearrangement characteristic of liquid droplets (Lin et al., 2015b; Shin and Brangwynne, 2017) and whether pathogenic MATR3 mutations affect their dynamics. To answer this, we introduced disease-associated mutations into MATR3(∆RRM1/2)-EGFP and transfected rodent primary cortical neurons with each construct (Figure 5B). Nuclear puncta were photobleached 2–4 days after transfection, and the recovery of fluorescence intensity tracked within the bleached and unbleached ROIs by laser scanning confocal microscopy. Granules formed by MATR3(WT ∆RRM1/2)-EGFP displayed internal rearrangement over the course of minutes consistent with liquid-like properties, as did all tested disease mutants on the ∆RRM1/2 background (Figure 5C–D). The S85C mutation, however, severely slowed fluorescence recovery, suggesting reduced exchange of molecules within each droplet. Using the Stokes-Einstein equation, we calculated viscosity estimates for each MATR3(∆RRM1/2)-EGFP variant based on return time and bleached area size (Figure 5E). Consistent with the observed effect of this mutation on fluorescence recovery, the S85C mutation led to a pronounced increase in viscosity over that of WT and other disease-associated mutants.
 
 We wondered whether this phenotype was specific to nuclear droplets formed by MATR3(∆RRM1/2)-EGFP, or if full-length MATR3 carrying pathogenic mutations would also display reduced mobility. For this, we transfected primary neurons with full-length versions of MATR3(WT)-EGFP or disease-associated MATR3-EGFP variants and then bleached a circular area in the center of the nucleus (Figure 5F). In each case, we noted rapid return of fluorescence, and the recovery rate was unaffected by pathogenic MATR3 point mutations (Figure 5G). To account for the rapidity of return as well as the area of the bleached region, we calculated a diffusion coefficient (DC) for each construct. Comparison of the DCs for WT and mutant MATR3-EGFP variants showed no significant differences (Figure 5H). Our data therefore suggest that the S85C point mutation selectively affects the droplet properties of MATR3. To test whether this feature is shared among disease-associated mutations affecting the MATR3 N-terminus, we generated two additional pathogenic mutants, Q66K and A72T, on the ∆RRM1/2 background (Figure 5—figure supplement 1). Unlike the S85C variant, these mutations had no effect on granule viscosity, indicating that the S85C mutant is unique among N-terminal low-complexity domain mutations in its ability to affect the mobility of phase-separated MATR3.
 
-## Mapping the sequence determinants of MATR3 localization in neurons
+### Mapping the sequence determinants of MATR3 localization in neurons
 
 Cytoplasmic inclusions composed of the RBP TDP-43 are characteristic of ALS and the majority of FTD (Arai et al., 2006; Neumann et al., 2006). Moreover, pathogenic mutations in the gene encoding TDP-43 enhance cytoplasmic mislocalization concordant with enhanced neurotoxicity, and reductions in cytoplasmic TDP-43 prolong neuronal survival (Barmada et al., 2010b, 2014). To determine if MATR3 localization is likewise an important determinant of neurodegeneration, we sought to disrupt the MATR3 nuclear localization signal (NLS). However, since multiple sequences have been associated with nuclear MATR3 localization (Hibino et al., 2006; Hisada-Ishii et al., 2007), we systematically identified regions enriched in positively-charged amino acids (arginine, lysine) that may mediate nuclear import via importin-α. We then deleted each of the seven regions defined in this manner, including two that had been identified as controlling nuclear localization in previous studies, and assessed their localization by transfection in rodent primary cortical neurons followed by fluorescence microscopy (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic showing putative MATR3 nuclear localization signals (pNLS). (B–C) Deletion of the N-terminal arm of NLS4 (∆pNLS4N) led to nuclear MATR3 clearance in neurons. (D) MATR3(∆pNLS4N)-EGFP forms granular structures in the cytoplasm and neuronal processes (white arrows). (E) Disrupting nuclear localization of MATR3 prevents neurotoxicity from overexpression (compared to MATR3(WT)-EGFP, n = 2459: MATR3(∆pNLS4N)-EGFP, n = 1864, HR = 0.89, ***p=0.00041, Cox proportional hazards). (F–G) Pathogenic MATR3 mutants display no difference in subcellular protein localization as assessed by automated image nuclear/cytoplasmic analysis (F; MATR3(WT)-EGFP, n = 789; MATR3(S85C)-EGFP, n = 462; MATR3(F115C)-EGFP, n = 596; MATR3(P154S)-EGFP, n = 524; MATR3(T622A)-EGFP, n = 657; p=0.067, one-way ANOVA) or biochemical fractionation in transfected HEK293T cells (G). Western blot demonstrated reduced abundance of the S85C mutant in transfected HEK293T cells. Scale bars in (B) and (C), 10 μm; scale bar in (D), 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A-B) Appending the eight amino acids of the pNLS4N sequence onto EGFP results in enhanced nuclear localization, comparable to the effect of the canonical SV40 large T cell antigen NLS (comparing to EGFP n = 877: pNLS4N-EGFP n = 601, p<0.0001; SV40 large T cell antigen NLS-EGFP n = 1095, ****p<0.0001; one-way ANOVA with Tukey’s post-hoc test). Scale bar, 20 μm.
 
 Deletions of putative NLS (pNLS) 1, 2, 3, 5, 6, and 7 had little to no effect on neuronal MATR3 distribution (Figure 6B). While the ∆pNLS3 mutation did not change nuclear MATR3 localization per se, it did induce the formation of many small, nuclear granules. This effect is consistent with the position of pNLS3 within RRM2 and the observed formation of nuclear puncta upon RRM2 deletion (Figure 4). In contrast, and in accord with previous studies (Hisada-Ishii et al., 2007), deletion of the bipartite pNLS4 elicited a marked reduction in nuclear MATR3-EGFP accompanied by enhanced cytoplasmic localization and the formation of small MATR3-EGFP granules within the cytoplasm. In DT40 and HeLa cells, both arms of this NLS were critical for MATR3 nuclear localization (Hisada-Ishii et al., 2007). To determine if this is the case in neurons, we sequentially deleted the N- and C-terminal arms (∆pNLS4N and ∆pNLS4C, respectively) and tested their localization by transfection into primary cortical neurons. These studies demonstrated that only the N-terminal arm is necessary for nuclear localization, as MATR3(∆pNLS4N)-EGFP exhibits nuclear clearing and punctate distribution in the cytoplasm and neuronal processes, while MATR3(∆pNLS4C)-EGFP has the same distribution as MATR3(WT)-EGFP (Figure 6C–D). To test whether pNLS4N was sufficient for nuclear localization, we generated a construct in which the eight amino acids corresponding to pNLS4N were appended to EGFP, and compared the subcellular distribution of this construct in primary neurons to EGFP alone or EGFP fused to the canonical NLS from the SV40 large T antigen (Figure 6—figure supplement 1) (Kalderon et al., 1984). These studies demonstrated comparable nuclear localization of pNLS4N-EGFP and SV40 NLS-EGFP, indicating that the MATR3 pNLS4N sequence is both necessary and sufficient for nuclear protein localization in primary neurons.
 
@@ -89,13 +113,13 @@ Given the observed relationship between MATR3 localization and toxicity, we wond
 
 In a complementary series of experiments, we utilized biochemical fractionation to assess the distribution of MATR3-EGFP in a human cell line. MATR3(WT)-EGFP or versions of MATR3-EGFP bearing the S85C, F115C, P154S, and T622A disease-associated mutations were transfected into HEK293T cells, and the nuclear and cytoplasmic fractions subjected to SDS-PAGE and Western blotting. In agreement with single-cell data from transfected primary neurons, we noted no difference in the nucleocytoplasmic distribution of any of the MATR3-EGFP variants tested here (Figure 6G). Nevertheless, we consistently observed far less of the S85C variant in both nuclear and cytoplasmic fractions, compared to MATR3(WT)-EGFP and other disease-associated mutants. These data suggest that the S85C mutation may destabilize MATR3-EGFP; alternatively, this mutation may prevent adequate solubilization and detection of MATR3-EGFP via SDS-PAGE and Western blotting.
 
-## A subset of pathogenic MATR3 mutations affect protein solubility and stability
+### A subset of pathogenic MATR3 mutations affect protein solubility and stability
 
 To discriminate among these possibilities, we first investigated the turnover of WT and mutant MATR3 variants using optical pulse labeling (OPL), a technique enabling non-invasive determinations of protein clearance in living cells (Barmada et al., 2014). For these experiments, MATR3 was fused to Dendra2—a photoconvertable protein that irreversibly switches from a green to red fluorescent state upon illumination with low-wavelength light (Chudakov et al., 2007)—and expressed in primary cortical neurons. One day after transfection, neurons were illuminated with blue light to photoconvert Dendra2, and the time-dependent loss of red fluorescence signal used to calculate protein half-life (Figure 7A). Previous studies validated the accuracy and utility of OPL for determinations of protein half-life (Barmada et al., 2014); importantly, and in contrast to biochemical techniques for calculating half-life that depend on radioactive labeling or translational inhibitors, OPL allows us to measure protein clearance on a single-cell level for thousands of neurons simultaneously (Figure 7B). Most disease-associated mutations had no effect upon the turnover of MATR3-Dendra2 in primary cortical neurons. However, we noted subtle destabilization of MATR3(S85C)-Dendra2 in comparison to other pathogenic mutant variants and MATR3(WT)-Dendra2 (Figure 7C–D). Even so, the magnitude of the effect was relatively small, making it unlikely that differences in protein turnover fully explain the reduced abundance of MATR3(S85C)-EGFP noted in cell lysates (Figure 6G).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35977/elife-35977-fig7-v1.jpg)
 
-**Figure 7.:** (A) Optical pulse labeling of Dendra2-tagged MATR3 variants. Each neuron is transfected with EGFP alone to outline the cell body, as well as MATR3-Dendra2, which fluoresces in the red channel (TRITC) upon photoconversion. Scale bar, 50 μm. (B) Normalized red fluorescence (TRITC) signal for individual neurons. The time-dependent decay of red fluorescence over time is used to calculate MATR3-Dendra2 half-life for each neuron. (C–D) MATR3(S85C)-Dendra2 displayed a subtle but significant reduction in half-life compared to MATR3(WT)-Dendra2 (comparing to MATR3(WT)-Dendra2, n = 1269: MATR3(S85C)-Dendra2, n = 1670, ****p<0.0001; MATR3(F115C)-Dendra2, n = 1122, p>0.9999; MATR3(P154S)-Dendra2, n = 1509, p=0.9309; MATR3(T622A)-Dendra2, n = 923, p=0.9989; one-way ANOVA with Tukey’s post-hoc test). (E) Sonication in RIPA resulted in equivalent amounts of all MATR3 variants by Western blotting. The S85C variant was markedly enriched in the RIPA-insoluble, urea-soluble fraction, while the T622A variant showed more modest enrichment.10.7554/eLife.35977.017Figure 7—source data 1.Figures 7C and D.
+**Figure 7.:** (A) Optical pulse labeling of Dendra2-tagged MATR3 variants. Each neuron is transfected with EGFP alone to outline the cell body, as well as MATR3-Dendra2, which fluoresces in the red channel (TRITC) upon photoconversion. Scale bar, 50 μm. (B) Normalized red fluorescence (TRITC) signal for individual neurons. The time-dependent decay of red fluorescence over time is used to calculate MATR3-Dendra2 half-life for each neuron. (C–D) MATR3(S85C)-Dendra2 displayed a subtle but significant reduction in half-life compared to MATR3(WT)-Dendra2 (comparing to MATR3(WT)-Dendra2, n = 1269: MATR3(S85C)-Dendra2, n = 1670, ****p<0.0001; MATR3(F115C)-Dendra2, n = 1122, p>0.9999; MATR3(P154S)-Dendra2, n = 1509, p=0.9309; MATR3(T622A)-Dendra2, n = 923, p=0.9989; one-way ANOVA with Tukey’s post-hoc test). (E) Sonication in RIPA resulted in equivalent amounts of all MATR3 variants by Western blotting. The S85C variant was markedly enriched in the RIPA-insoluble, urea-soluble fraction, while the T622A variant showed more modest enrichment.
 
 We next asked if the S85C mutation altered MATR3 solubility. HEK293T cells transfected with WT and mutant MATR3-EGFP variants were lysed using a harsher protocol that involved sonication in RIPA buffer; additionally, we used urea buffer to extract all RIPA-insoluble proteins. In stark contrast to mild conditions (Figure 6G), harsher lysis resulted in equivalent levels of all MATR3 variants on Western blot, suggesting that the S85C mutation reduced MATR3 solubility (Figure 7E). In accordance with this interpretation, the urea-soluble fraction was markedly enriched for MATR3(S85C)-EGFP and modestly enriched for MATR3(T622A)-EGFP. These data show that the S85C and T622A mutations reduce the solubility of MATR3, without drastically affecting its stability. As shown in Figure 1A, both mutations lie within areas of predicted disorder, consistent with their effects on MATR3 aggregation and solubility.
 
@@ -123,27 +147,600 @@ MATR3’s possesses broad functions in DNA/RNA processing (Belgrader et al., 199
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-MATR3</td>
+      <td>Abcam</td>
+      <td>EPR10635(B); RRID:AB_2491618</td>
+      <td>(1:1000) for ICC in Figure 2 and Western blot in Figure 6 and 7</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-MATR3</td>
+      <td>Abcam</td>
+      <td>EPR10634(B)</td>
+      <td>(1:1000) for ICC in Figure 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-fibrillarin</td>
+      <td>Abcam</td>
+      <td>38F3; RRID:AB_304523</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-SC35</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-1774SS; RRID:AB_526734</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PML</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-377390</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse 647</td>
+      <td>Jackson Immuno Research</td>
+      <td>115-605-003; RRID:AB_2338902</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit 647</td>
+      <td>Jackson Immuno Research</td>
+      <td>111-605-003; RRID:AB_2338072</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GAPDH</td>
+      <td>Millipore Sigma</td>
+      <td>MAB374; RRID:AB_2107445</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-H2B</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-56347; RRID:AB_838347</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor goat anti-mouse 594</td>
+      <td>ThermoFisher</td>
+      <td>A-11005; RRID:AB_141372</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor goat anti-rabbit 488</td>
+      <td>ThermoFisher</td>
+      <td>A-11008; RRID:AB_143165</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MATR3 cDNA</td>
+      <td>Addgene</td>
+      <td>#32880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(WT)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(S85C)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(F115C)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(P154S)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(T622A)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆ZF1)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆ZF2)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆ZF1/2)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆RRM1)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆RRM2)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆RRM1/2)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(Q66K ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(A72T ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(S85C ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(F115C ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(P154S ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(T622A ∆RRM1/2)-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS1)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS2)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS3)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS4)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS5)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS6)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS7)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS4N)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(∆pNLS4C)- EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 pNLS4N-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 SV40 large T antigen NLS-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(WT)- Dendra2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(S85C)- Dendra2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(F115C)- Dendra2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(P154S)- Dendra2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1 MATR3(T622A)- Dendra2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Full-length human MATR3 cDNA was obtained from Addgene (#32880) and cloned into the pCMV-Tag2B vector (Agilent Technologies, #211172, Santa Clara, CA) using BamHI and XhoI endonucleases, tagging the amino-terminus with a FLAG epitope. To generate MATR3-EGFP, the EGFP open reading frame with a 14 amino acid N-terminal linker was amplified from pGW1-EGFP (Arrasate et al., 2004) by PCR using forward primer 5’-AGC TAC TAG TAC TAG AGC TGT TTG GGA C-3’ and reverse primer 5’-TAT TGG GCC CCT ATT ACT TGT ACA GCT CGT CCA T-3’. The resulting amplicon was digested with SpeI and ApaI and cloned into the corresponding sites in pKS to generate pKS-EGFP. To create pKS-MATR3-EGFP, the FLAG-MATR3 open reading frame from pCMV-Tag2B was amplified by PCR with forward primer 5’-GAT CTC TAG AGC GGC CGC CAC CAT GGA T-3’ and reverse primer 5’-AGC TAC TAG TCA TAG TTT CCT TCT TCT GTC T-3’, digested with XbaI and SpeI, and inserted into the corresponding sites in pKS-EGFP. pGW1-MATR3-EGFP was generated by digesting pKS-MATR3-EGFP with XbaI and ApaI, purifying the ensuing fragment containing MATR3-EGFP, and inserting into the corresponding sites of pGW1. To create Dendra2-tagged MATR3 variants, the EGFP coding region of each construct was removed by PCR amplification of the pGW1-MATR3-EGFP vector using primers that flank the EGFP open reading frame. The Dendra2 open reading frame was then removed from pGW1-Dendra2 (Barmada et al., 2014) by digestion with ApaI and MfeI, and inserted into pGW1-MATR3. All constructs were confirmed by sequencing prior to transfection in neurons and HEK293T cells.
 
 Domain deletion mutants were created using Q5 Hot Start High-Fidelity DNA Polymerase (New England Biolabs, Ipswich, MA) and primers flanking the regions to be deleted for nucleic acid-binding domain (Table 1) and putative nuclear localization signal (Table 2) deletions. All disease-associated point mutations were created with site-directed mutagenesis (Table 3).
 
+**Table 1.**
+ Primer sequences used to generate domain deletion mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Deletion mutation</th>
+      <th>Amino acids</th>
+      <th>Primers</th>
+      <th>Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">∆ZF1</td>
+      <td rowspan="2">288–322</td>
+      <td>Forward</td>
+      <td>5’-CTT GAA ATC TAC CCA GAA TG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CTT CGG TAA GAG TCC ATG-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆ZF2</td>
+      <td rowspan="2">798–833</td>
+      <td>Forward</td>
+      <td>5’-CTG AAT AAA TTG GCA GAA GAA C-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-AGG TAT CAC ATA GTC TAT ACC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆RRM1</td>
+      <td rowspan="2">398–473</td>
+      <td>Forward</td>
+      <td>5’-TAT AAA AGA ATA AAG AAA CCT GAA GG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-GCT AGT TTC CAC TCT GCC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆RRM2</td>
+      <td rowspan="2">496–575</td>
+      <td>Forward</td>
+      <td>5’-GTT CTG AGG ATT CCA AAC AG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-TCC AAG CTC TTG CTT TTG-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primer sequences used to generate putative NLS deletion mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Deletion mutation</th>
+      <th>Amino acids</th>
+      <th>Primers</th>
+      <th>Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">∆pNLS1</td>
+      <td rowspan="2">146–171</td>
+      <td>Forward</td>
+      <td>5’-AGA GTA CCT AGG GAT GAT TG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-AAG CTG TAG AAG GAT TTG G-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS2</td>
+      <td rowspan="2">473–479</td>
+      <td>Forward</td>
+      <td>5’-CCT GAA GGA AAG CCA GAT C-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CTG GGA TAA ATG AAC TCT CAC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS3</td>
+      <td rowspan="2">571–574</td>
+      <td>Forward</td>
+      <td>5’-CTG GTT CTG AGG ATT CCA ACC-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CTC AGA CAG GTC AAC CTT C-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS4</td>
+      <td rowspan="2">588–611</td>
+      <td>Forward</td>
+      <td>5’-ACT GAT GGT TCC CAG AAG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CAG TAA ATC AAT GCC TCT G-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS5</td>
+      <td rowspan="2">701–720</td>
+      <td>Forward</td>
+      <td>5’-GAG GAA CTT GAT CAA GAA AAC-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CAC AGC TTT ATC TGA TGG TTC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS6</td>
+      <td rowspan="2">780–784</td>
+      <td>Forward</td>
+      <td>5’-CAG CCC AAT GTT CCT GTT G-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-ATA CTC ATC TGG GAT TGT ATA G-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS7</td>
+      <td rowspan="2">798–833</td>
+      <td>Forward</td>
+      <td>5’-GAA ACT ATG ACT AGT ACT AGA G-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CTG ATA ATG AGG AAG GCT G-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS4N</td>
+      <td rowspan="2">588–595</td>
+      <td>Forward</td>
+      <td>5’-TCT TAC TCT CCA GAT GGC-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-CAG TAA ATC AAT GCC TCT G-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">∆pNLS4C</td>
+      <td rowspan="2">608–611</td>
+      <td>Forward</td>
+      <td>5’-ACT GAT GGT TCC CAG AAG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-ATC ACT TGG AGA TTC TTT GC-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Primer sequences used to generate point mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Primers</th>
+      <th>Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Q66K</td>
+      <td>Forward</td>
+      <td>5’-TTC TTC ATT GAA TAA ACA AGG AGC TC-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-GAG CTC CTT GTT TAT TCA ATG AAG AA-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">A72T</td>
+      <td>Forward</td>
+      <td>5’-AAG GAG CTC ATA GTA CAC TGT CT-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-AGA CAG TGT ACT ATG AGC TCC TT-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S85C</td>
+      <td>Forward</td>
+      <td>5’-AAT TTG CAG TGT ATA TTT AAC ATT GG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-ATG GGA AGA AGT ACT AGC AGA-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">F115C</td>
+      <td>Forward</td>
+      <td>5’-ATT TTG GCC AGC TGT GGT CTG TCT GCT-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-GTT ACT GGC CTG GTC TGC ATC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">P154S</td>
+      <td>Forward</td>
+      <td>5’-GAA GAA GGC TCT ACC TTG AGT TAT GG-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-AGT TCT CCT CCT TTT AAG CTG-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">T622A</td>
+      <td>Forward</td>
+      <td>5’-GAG AGT TCA GCC GAA GGT AAA GAA C-3’</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5’-AGT CTT CTG GGA ACC ATC AGT-3’</td>
+    </tr>
+  </tbody>
+</table>
+
 To generate NLS-EGFP fusion protein variants, the pNLS4N sequence (5’-AAA AAA GAT AAA TCC CGA AAA AGA-3’) and SV40 large T antigen NLS sequence (5’-CCA AAA AAG AAG AGA AAG GTA-3’) were synthesized as oligonucleotides flanked with ends complementary to ApaI/AgeI sites and BsrGI/EcoRI sites, respectively. These were heated to 95°C for 5 min, annealed overnight at room temperature (RT), and phosphorylated with T4 Polynucleotide Kinase (New England Biolabs). pGW1-EGFP and FUGW-EGFP vectors were digested with ApaI/AgeI and BsrGI/EcoRI, respectively, after which the corresponding annealed NLS-containing oligonucleotides were ligated.
 
-## Primary neuron cell culture and transfection
+### Primary neuron cell culture and transfection
 
 Cortices from embryonic day (E)19–20 Long-Evans rat embryos were dissected and disassociated, and primary neurons plated at a density of 6 × 105 cells/mL in 96-well plates, as described previously (Saudou et al., 1998). At in vitro day (DIV) 4–5, neurons were transfected with 100 ng of pGW1-mApple (Barmada et al., 2014) to mark cells bodies and 100 ng of an experimental construct (i.e. pGW1-MATR3-EGFP) using Lipofectamine 2000, as before (Barmada et al., 2010b). Following transfection, cells were placed into either Neurobasal with B27 supplement (Gibco, Waltham, MA; for all survival experiments) or NEUMO photostable medium (Cell Guidance Systems, Cambridge, UK; for optical pulse labeling experiments). For siRNA knockdown experiments, neurons were transfected with 100 ng of pGW1-mApple per well and siRNA at a final concentration of 90 nM. Cells were treated with either scrambled siRNA (Dharmacon, Lafayette, CO) or siRNA targeting the N-terminal coding region of rat Matr3 (5’-GUC AUU CCA GCA GUC AUC UUU-3’).
 
-## Longitudinal fluorescence microscopy and automated image analysis
+### Longitudinal fluorescence microscopy and automated image analysis
 
 Neurons were imaged as described previously (Barmada et al., 2015) using a Nikon (Tokyo, Japan) Eclipse Ti inverted microscope with PerfectFocus3 and a 20X objective lens. Detection was accomplished with an Andor (Belfast, UK) iXon3 897 EMCCD camera or Andor Zyla4.2 (+) sCMOS camera. A Lambda XL Xenon lamp (Sutter) with 5 mm liquid light guide (Sutter Instrument, Novato, CA) was used to illuminate samples, and custom scripts written in Beanshell for use in μManager controlled all stage movements, shutters, and filters. Custom ImageJ/Fiji macros and Python scripts (https://github.com/barmadaslab/survival-analysis and https://github.com/barmadaslab/measurements; Miguez, 2018a; Miguez, 2018b; copies archived at https://github.com/elifesciences-publications/survival-analysis and https://github.com/elifesciences-publications/measurements) were used to identify neurons and draw regions of interest (ROIs) based upon size, morphology, and fluorescence intensity. Criteria for marking cell death involved rounding of the soma, loss of fluorescence and degeneration of neuritic processes. Custom scripts (https://github.com/barmadaslab/nuclear-fractionation; Miguez, 2018c; copy archived at https://github.com/elifesciences-publications/nuclear-fractionation) were also used to identify and draw bounding ROIs around nuclei of transfected cells based upon MATR3-EGFP or Hoechst 33258 (ThermoFisher, Waltham, MA) fluorescence. Coefficient of variation (CV) was calculated as the standard deviation of fluorescence intensity divided by the mean fluorescence intensity within an ROI.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Neurons were fixed with 4% paraformaldehyde, rinsed with phosphate buffered saline (PBS), and permeabilized with 0.1% Triton X-100 in PBS. After brief treatment with 10 mM glycine in PBS, cells were placed in blocking solution (0.1% Triton X-100, 2% fetal calf serum, and 3% bovine serum albumin (BSA), all in PBS) at RT for 1 hr before incubation overnight at 4°C in primary antibody at the following dilutions in blocking solution: rabbit anti-MATR3 (Abcam EPR10635(B); RRID: AB_2491618 for Figure 1 and EPR10634(B) for Figure 2, Cambridge, UK) diluted 1:1000, mouse anti-fibrillarin (Abcam 38F3; RRID: AB_304523) diluted 1:1000, mouse anti-SC35 (Novus Biologicals NB100-1774SS; RRID: AB_526734, Littleton, CO) diluted 1:2000, mouse anti-PML (Santa Cruz Biotechnology sc-377390, Santa Cruz, CA) diluted 1:50. Cells were then washed 3x in PBS, and incubated at RT with secondary antibody, goat anti-rabbit 647 (Jackson ImmunoResearch 111-605-003; RRID: AB_2338072, West Grove, PA) or goat anti-mouse 647 (Jackson ImmunoResearch 115-605-003; RRID: AB_2338902) diluted 1:1000 in blocking solution, for 1 hr at RT. Following 3x rinses in PBS containing 1:5000 Hoechst 33258 dye (ThermoFisher), neurons were imaged by fluorescence microscopy, as described above.
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 Primary neurons were dissected as above and plated in LAB-TEK 8-well borosilicate chambers (ThermoFisher). On DIV 3, they were transfected as before but using 200 µg of pGW1-mApple and 200 µg of pGW1-MATR3-EGFP variants per well. Cell were imaged 2–4 days after transfection using a Nikon A1 confocal microscope operated by Nikon Elements, a 60X objective lens, and a heating chamber with CO2 pre-warmed to 37°C. For MATR3(∆RRM1/2)-EGFP variants, an ROI corresponding to half of the granule was outlined with Elements and photobleached using a 488 nm laser set at 30% power, 1 pulse/s x 7 s. Fluorescence recovery was monitored up to 10 min after photobleaching. For full-length MATR3 variants, ROIs for photobleaching were drawn in the center of the nucleus for each cell, and recovery was monitored for 6 min.
 
@@ -153,7 +750,7 @@ Recovery data were fit to the equation y(t)=A(1-e-τt), where A is the return cu
 
 Photobleaching data from full-length MATR3-EGFP was analyzed in a similar fashion. After calculating the nuclear integrated density, the fraction attributable to photobleaching within the ROI was used for normalization. Intensity data were fit to the y(t)=A(1-e-τt) equation, t1/2 values were calculated as before, and D determined by the equation D = (0.88 w2)/(4 t1/2).
 
-## Nuclear/cytoplasmic fractionation and differential solubility
+### Nuclear/cytoplasmic fractionation and differential solubility
 
 HEK293T cells (STR profiling-validated and mycoplasma-negative; ATCC CRL-3216; RRID: CVCL_0063) were transfected in a 6-well plate with 3 µg of DNA per well using Lipofectamine 2000 according to the manufacturer’s instructions. For nuclear/cytoplasmic fractionation, cells were washed with cold PBS 24 hr after transfection, collected with resuspension buffer (10 mM Tris, 10 mM NaCl, 3 mM MgCl2, pH 7.4), and transferred to a pre-chilled 1.5 mL conical tube to sit on ice for 5 min. An equal volume of resuspension buffer with 0.6% Igepal (Sigma, St. Louis, MO) was then added to rupture cell membranes and release cytoplasmic contents, with occasional inversion for 5 min on ice. Nuclei were pelleted at 100 x g at 4°C for 10 min using a tabletop centrifuge. The supernatant (cytosolic fraction) was collected, and the nuclei were rinsed twice in resuspension buffer without Igepal. To collect nuclear fractions, pelleted nuclei were lysed in RIPA buffer (Pierce) with protease inhibitors (Roche, Mannheim, Germany) on ice for 30 min with occasional inversion. Samples were centrifuged at 9400 x g at 4°C for 10 min, and the supernatant was saved as the nuclear fraction.
 
@@ -161,6 +758,6 @@ For differential solubility experiments, transfected HEK293T were collected in c
 
 For SDS-PAGE, stock sample buffer (10% SDS, 20% glycerol, 0.0025% bromophenol blue, 100 mM EDTA, 1 M DTT, 20 mM Tris, pH 8) was diluted 1:10 in lysates and all samples except urea fractions were boiled for 10 min before 5–15 µg of protein were loaded onto 4–15% gradient gels (Bio-Rad, Hercules, CA). For urea fractions, total protein concentration was too low to quantify and so equal volumes of sample across conditions were mixed 1:1 with water and loaded. After electrophoresis, samples were transferred at 30 V overnight at 4°C onto an activated 2 μm nitrocellulose membrane (Bio-Rad), blocked with 3% BSA in 0.2% Tween-20 in Tris-buffered saline (TBST), and blotted overnight at 4°C with the following primary antibodies: rabbit anti-MATR3 (Abcam EPR10634(B)), mouse anti-GAPDH (Millipore Sigma MAB374; RRID: AB_2107445), and rabbit anti-H2B (Novus Biologicals NB100-56347; RRID: AB_838347), all diluted 1:1000 in 3% BSA, 0.2% TBST. The following day, blots were washed in 0.2% TBST, incubated at RT for 1 hr with AlexaFluor goat anti-mouse 594 (ThermoFisher A-11005; RRID: AB_141372) and goat anti-rabbit 488 (ThermoFisher A-11008; RRID: AB_143165), both diluted 1:10,000 in 3% BSA in 0.2% TBST. Following treatment with secondary antibody, blots were washed in 0.2% TBST, placed in Tris-buffered saline, and imaged using an Odyssey CLx Imaging System (LI-COR, Lincoln, NE).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed in R or Prism 7 (GraphPad). For primary neuron survival analysis, the publically available R survival package was used to determine hazard ratios describing the relative survival among populations through Cox proportional hazards analysis. For half-life calculations, mean photoconverted Dendra2 signal in the TRITC channel was measured on a per-cell basis using a custom script (https://github.com/barmadaslab/measurements; Miguez, 2018b; copy archived at https://github.com/elifesciences-publications/measurements), log-transformed and fit to linear equation. Photobleaching recovery data were fit to the y(t)=A(1-e-τt) equation using non-linear regression in R. siRNA knockdown data were plotted using Prism 7, and significance determined via the two-tailed t-test. One-way ANOVA with Tukey’s post-test was used to assess for significant differences among nuclear/cytoplasmic ratios, viscosities, D values, and half-lives. Data are shown as mean ± SEM unless otherwise stated.

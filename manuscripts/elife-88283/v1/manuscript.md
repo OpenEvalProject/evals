@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 MRC Centre for Global Infectious Disease Analysis, Imperial College London London United Kingdom
-2. https://ror.org/0495fxg12 Infectious Disease Epidemiology and Analytics G5 Unit, Department of Global Health, Institut Pasteur, Université de Paris Paris France
-3. https://ror.org/041kmwe10 MRC Centre for Global Infectious Disease Analysis, Jameel Institute, Imperial College London London United Kingdom
+1. MRC Centre for Global Infectious Disease Analysis, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Infectious Disease Epidemiology and Analytics G5 Unit, Department of Global Health, Institut Pasteur, Université de Paris Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+3. MRC Centre for Global Infectious Disease Analysis, Jameel Institute, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
 ## Abstract
 
-Large reductions in the global malaria burden have been achieved, but plateauing funding poses a challenge for progressing towards the ultimate goal of malaria eradication. Using previously published mathematical models of Plasmodium falciparum and Plasmodium vivax transmission incorporating insecticide-treated nets (ITNs) as an illustrative intervention, we sought to identify the global funding allocation that maximized impact under defined objectives and across a range of global funding budgets. The optimal strategy for case reduction mirrored an allocation framework that prioritizes funding for high-transmission settings, resulting in total case reductions of 76% and 66% at intermediate budget levels, respectively. Allocation strategies that had the greatest impact on case reductions were associated with lesser near-term impacts on the global population at risk. The optimal funding distribution prioritized high ITN coverage in high-transmission settings endemic for P. falciparum only, while maintaining lower levels in low-transmission settings. However, at high budgets, 62% of funding was targeted to low-transmission settings co-endemic for P. falciparum and P. vivax . These results support current global strategies to prioritize funding to high-burden P. falciparum -endemic settings in sub-Saharan Africa to minimize clinical malaria burden and progress towards elimination, but highlight a trade-off with ‘shrinking the map’ through a focus on near-elimination settings and addressing the burden of P. vivax .
+Large reductions in the global malaria burden have been achieved, but plateauing funding poses a challenge for progressing towards the ultimate goal of malaria eradication. Using previously published mathematical models of Plasmodium falciparum and Plasmodium vivax transmission incorporating insecticide-treated nets (ITNs) as an illustrative intervention, we sought to identify the global funding allocation that maximized impact under defined objectives and across a range of global funding budgets. The optimal strategy for case reduction mirrored an allocation framework that prioritizes funding for high-transmission settings, resulting in total case reductions of 76% and 66% at intermediate budget levels, respectively. Allocation strategies that had the greatest impact on case reductions were associated with lesser near-term impacts on the global population at risk. The optimal funding distribution prioritized high ITN coverage in high-transmission settings endemic for P. falciparum only, while maintaining lower levels in low-transmission settings. However, at high budgets, 62% of funding was targeted to low-transmission settings co-endemic for P. falciparum and P. vivax. These results support current global strategies to prioritize funding to high-burden P. falciparum-endemic settings in sub-Saharan Africa to minimize clinical malaria burden and progress towards elimination, but highlight a trade-off with ‘shrinking the map’ through a focus on near-elimination settings and addressing the burden of P. vivax.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ We identified 105 malaria-endemic countries based on 2000 P. falciparum and P. v
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88283/elife-88283-fig1-v1.jpg)
 
-**Figure 1.:** P. falciparum and P. vivax malaria burden in 2000 (in the absence of insecticide-treated nets) obtained from the Malaria Atlas Project (Weiss et al., 2019; Battle et al., 2019).(A) The annual number of clinical cases and (B) the population at risk of malaria across settings with different transmission intensities and endemic for P. falciparum, P. vivax, or co-endemic for both species. The number of countries in each setting is indicated below the figure.
+**Figure 1.:** (A) The annual number of clinical cases and (B) the population at risk of malaria across settings with different transmission intensities and endemic for P. falciparum, P. vivax, or co-endemic for both species. The number of countries in each setting is indicated below the figure.
 
 Deterministic compartmental versions of two previously published and validated mathematical models of P. falciparum and P. vivax malaria transmission dynamics (Griffin et al., 2010; Griffin et al., 2014; Griffin et al., 2016; White et al., 2018) were used to explore associations between ITN use and clinical malaria incidence. In model simulations, the relationship between ITN usage and malaria infection outcomes varied by the baseline entomological inoculation rate (EIR), representing local transmission intensity, and parasite species (Figure 2). The same increase in ITN usage achieved a larger relative reduction in clinical incidence in low-EIR than in high-EIR settings. Low levels of ITN usage were sufficient to eliminate malaria in low-transmission settings, whereas high ITN usage was necessary to achieve a substantial decrease in clinical incidence in high-EIR settings. At the same EIR value, ITNs also led to a larger relative reduction in P. falciparum than P. vivax clinical incidence. However, ITN usage of 80% was not sufficient to lead to the full elimination of either P. falciparum or P. vivax in the highest transmission settings. In combination, the models projected that ITNs could reduce global P. falciparum and P. vivax cases by 83.6% from 252.0 million and by 99.9% from 69.3 million in 2000, respectively, assuming a maximum ITN usage of 80%.
 
@@ -56,6 +56,176 @@ We found that the optimal strategies for reducing total malaria cases (i.e. glob
 ![Figure 3.](https://cdn.elifesciences.org/articles/88283/elife-88283-fig3-v1.jpg)
 
 **Figure 3.:** The impact on total malaria cases (panel A), total population at risk (panel B), individual P. falciparum and P. vivax cases (panel C), and population at risk of either species (panel D) are shown. Budget levels range from 0, representing no usage of insecticide-treated nets, to the budget required to achieve the maximum possible impact. Optimizing for case reduction generally leads to declining populations at risk as the budget increases, but this is not guaranteed due to the possibility of redistribution of funding between settings to minimize cases. The strategy optimizing case reduction and pre-elimination shown here places the same weighting (1:1) on reaching pre-elimination in a setting as on averting total cases, but conclusions were the same for weights of 0.5–100 on pre-elimination.
+
+**Table 1.**
+ Relative reduction in malaria cases and population at risk under different allocation strategies.Reductions are shown relative to the baseline of 321 million clinical cases and 4.1 billion persons at risk in the absence of interventions. Low, intermediate, and high budget levels represent 25%, 50%, and 75% of the maximum budget, respectively. The strategy optimizing case reduction and pre-elimination shown here places the same weighting (1:1) on reaching pre-elimination in a setting as on averting total cases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Clinical cases</th>
+      <th colspan="2">Population at risk</th>
+    </tr>
+    <tr>
+      <th>Scenario</th>
+      <th>Budget level</th>
+      <th>Number (millions)</th>
+      <th>Relative reduction (%)</th>
+      <th>Number (billions)</th>
+      <th>Relative reduction (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Optimized for case reduction</td>
+      <td>Low</td>
+      <td>136.1</td>
+      <td>58</td>
+      <td>4.1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>77.0</td>
+      <td>76</td>
+      <td>3.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>53.9</td>
+      <td>83</td>
+      <td>2.4</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>41.5</td>
+      <td>87</td>
+      <td>0.4</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Optimized for case reduction &amp; pre-elimination</td>
+      <td>Low</td>
+      <td>161.3</td>
+      <td>50</td>
+      <td>4.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>87.8</td>
+      <td>73</td>
+      <td>3.5</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>58.8</td>
+      <td>82</td>
+      <td>1.8</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>41.5</td>
+      <td>87</td>
+      <td>0.4</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Prioritize high-transmission settings</td>
+      <td>Low</td>
+      <td>153.9</td>
+      <td>52</td>
+      <td>4.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>109.5</td>
+      <td>66</td>
+      <td>3.4</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>61.8</td>
+      <td>81</td>
+      <td>3.3</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>41.5</td>
+      <td>87</td>
+      <td>0.4</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Proportional allocation</td>
+      <td>Low</td>
+      <td>166.9</td>
+      <td>48</td>
+      <td>4.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>150.4</td>
+      <td>53</td>
+      <td>4.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>123.8</td>
+      <td>61</td>
+      <td>4.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>116.0</td>
+      <td>64</td>
+      <td>3.9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Prioritize low-transmission settings</td>
+      <td>Low</td>
+      <td>268.2</td>
+      <td>17</td>
+      <td>2.3</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>245.2</td>
+      <td>24</td>
+      <td>1.8</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>202.1</td>
+      <td>37</td>
+      <td>0.5</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>41.5</td>
+      <td>87</td>
+      <td>0.4</td>
+      <td>91</td>
+    </tr>
+  </tbody>
+</table>
 
 We additionally found there to be a trade-off between reducing global cases and reducing the global population at risk of malaria. Both the optimal strategies and the strategy prioritizing high-transmission settings did not achieve substantial reductions in the global population at risk until large investments were reached (Figure 3B, Table 1). Even at a high budget, the global population at risk was only reduced by 19% under the scenario prioritizing high-transmission settings, with higher reductions of 42–58% for the optimal strategies, while proportional allocation had almost no effect on this outcome. Conversely, diverting funding to prioritize low-transmission settings was highly effective at increasing the number of settings eliminating malaria, achieving a 56% reduction in the global population at risk already at intermediate budgets. However, this investment only led to a minimal reduction of 24% in total malaria case load (Figure 3, Table 1). At high budget levels, prioritizing low-transmission settings resulted in up to 3.8 times (a total of 159.4 million) more cases than the optimal allocation for case reduction. Despite the population at risk remaining relatively large with the optimal strategy for case reduction and pre-elimination, it nevertheless led to pre-elimination in more malaria-endemic settings than all other strategies (Appendix 1—figure 7), in addition to close to minimum cases across all budgets (Figure 3).
 
@@ -85,31 +255,98 @@ Our analysis demonstrates the most impactful allocation of a global funding port
 
 ## Materials and methods
 
-## Transmission models
+### Transmission models
 
 We used deterministic compartmental versions of two previously published individual-based transmission models of P. falciparum and P. vivax malaria to estimate the impact of varying ITN usage on clinical incidence in different transmission settings. The P. falciparum model has previously been fitted to age-stratified data from a variety of sub-Saharan African settings to recreate observed patterns in parasite prevalence (PfPR2-10), the incidence of clinical disease, immunity profiles, and vector components relating to rainfall, mosquito density, and the EIR (Griffin et al., 2016). We developed a deterministic version of an existing individual-based model of P. vivax transmission, originally calibrated to data from Papua New Guinea but also shown to reproduce global patterns of P. vivax prevalence and clinical incidence (White et al., 2018). Models for both parasite species are structured by age and heterogeneity in exposure to mosquito bites, and account for human immunity patterns. They model mosquito transmission and population dynamics, and the impact of scale-up of ITNs in identical ways. Full assumptions, mathematical details, and parameter values can be found in Appendix 1 and in previous publications (Griffin et al., 2010; Griffin et al., 2014; Griffin et al., 2016; White et al., 2018).
 
-## Data sources
+### Data sources
 
 We calibrated the model to baseline transmission intensity in all malaria-endemic countries before the scale-up of interventions, using the year 2000 as an indicator of these levels in line with the current allocation approach taken by the Global Fund (The Global Fund, 2019). Annual EIR was used as a measure of parasite transmission intensity, representing the rate at which people are bitten by infectious mosquitoes. We simulated models to represent a wide range of EIRs for P. falciparum and P. vivax. These transmission settings were matched to 2000 country-level prevalence data resulting in EIRs of 0.001–80 for P. falciparum and 0.001–1.3 for P. vivax. P. falciparum estimates came from parasite prevalence in children aged 2–10 years and P. vivax prevalence estimates came from light microscopy data across all ages, based on standard reporting for each species (Weiss et al., 2019; Battle et al., 2019). The relationship between parasite prevalence and EIR for specific countries is shown in Appendix 1—figures 5 and 6. In each country, the population at risk for P. falciparum and P. vivax malaria was obtained by summing WorldPop gridded 2000 global population estimates (Tatem, 2017) within Malaria Atlas Project transmission spatial limits using geoboundaries (Runfola et al., 2020) (Appendix 1: Country-level data and modeling assumptions on the global malaria distribution). The analysis was conducted on the national level, since this scale also applies to funding decisions made by international donors (The Global Fund, 2019). As this exercise represents a simplification of reality, population sizes were held constant, and projected population growth is not reflected in the number of cases and the population at risk in different settings. Seasonality was also not incorporated in the model, as EIRs are matched to annual prevalence estimates and the effects of seasonal changes are averaged across the time frame captured. For all analyses, countries were grouped according to their EIR, resulting in a range of transmission settings compatible with the global distribution of malaria. Results were further summarized by grouping EIRs into broader transmission intensity settings according to WHO prevalence cut-offs of 0–1%, 1–10%, 10–35%, and ≥35% (World Health Organization, 2007; World Health Organization, 2022a). This corresponded approximately to classifying EIRs of less than 0.1, 0.1–1, 1–7, and 7 or higher as very low, low, moderate and high transmission intensity, respectively.
 
-## Interventions
+### Interventions
 
 In all transmission settings, we simulated the impact of varying coverages of ITNs on clinical incidence. While most countries implement a package of combined interventions, to reduce the computational complexity of the optimization we considered the impact of ITN usage alone in addition to 40% treatment of clinical disease. ITNs are a core intervention recommended for large-scale deployment in areas with ongoing malaria transmission by WHO (Winskill et al., 2019; World Health Organization, 2007; World Health Organization, 2022a) and funding for vector control represents much of the global investments required for malaria control and elimination (Patouillard et al., 2017). Modeled coverages represent population ITN usage between 0 and 80%, with the upper limit reflective of common targets for universal access (Koenker et al., 2018). In each setting, the models were run until clinical incidence stabilized at a new equilibrium with the given ITN usage.
 
 Previous studies have shown that, as population coverage of ITNs increases, the marginal cost of distribution increases as well (Bertozzi-Villa et al., 2021). We incorporated this non-linearity in costs by estimating the annual ITN distribution required to achieve the simulated population usage based on published data from across Africa, assuming that nets would be distributed on a 3-yearly cycle and accounting for ITN retention over time (Appendix 1). The cost associated with a given simulated ITN usage was calculated by multiplying the number of nets distributed per capita per year by the population size and by the unit cost of distributing an ITN, assumed to be $3.50 (Sherrard-Smith et al., 2022).
 
-## Optimization
+### Optimization
 
-The optimal funding allocation for case reduction was determined by finding the allocation of ITNs b across transmission settings that minimizes the total number of malaria cases at equilibrium. Case totals were calculated as the sum of the product of clinical incidence cinci and the population pi in each transmission setting i. Simultaneous optimization for case reduction and pre-elimination was implemented with an extra weighting term in the objective function, corresponding to a reduction in total remaining cases by a proportion w of the total cases averted by the ITN allocation, C. This, therefore, represents a positive contribution for each setting reaching the pre-elimination phase. The weighting on pre-elimination compared to case reduction was 0 in the scenario optimized for case reduction, and varied between 0.5 and 100 times in the other optimization scenarios. Resource allocation must respect a budget constraint, which requires that the sum of the cost of the ITNs distributed cannot exceed the initial budget B, with bi the initial number of ITNs distributed in setting i and c the cost of a single pyrethroid-treated net. The second constraint requires that the ITN usage bi⋆ must be between 0 and 80% (Koenker et al., 2018), with ITN usage being a function of ITNs distributed, as shown in the following equation.minb∈Rn[∑incinci∗pi−w∗C∗∑i=1nji]s.t.∑i=1nbi∗c≤B0≤bi⋆≤0.8∀i=1,…,nC=Casesatbaseline−∑incinci∗piji={1,cinci<1/10000,cinci≥1/1000}bi⋆=f(bi)for alli=1,…,n
+The optimal funding allocation for case reduction was determined by finding the allocation of ITNs b across transmission settings that minimizes the total number of malaria cases at equilibrium. Case totals were calculated as the sum of the product of clinical incidence cinci and the population pi in each transmission setting i. Simultaneous optimization for case reduction and pre-elimination was implemented with an extra weighting term in the objective function, corresponding to a reduction in total remaining cases by a proportion w of the total cases averted by the ITN allocation, C. This, therefore, represents a positive contribution for each setting reaching the pre-elimination phase. The weighting on pre-elimination compared to case reduction was 0 in the scenario optimized for case reduction, and varied between 0.5 and 100 times in the other optimization scenarios. Resource allocation must respect a budget constraint, which requires that the sum of the cost of the ITNs distributed cannot exceed the initial budget B, with $b_{i}$ the initial number of ITNs distributed in setting $i$ and c the cost of a single pyrethroid-treated net. The second constraint requires that the ITN usage $b_{i}^{⋆}$ must be between 0 and 80% (Koenker et al., 2018), with ITN usage being a function of ITNs distributed, as shown in the following equation.
+
+$$
+minb\inR^{n}[\sumincinc_{i}∗p_{i}−w∗C∗\sumi=1nj_{i}]
+$$
+
+
+
+$$
+s.t.\sumi=1nb_{i}∗c\leqB0\leqb_{i}^{⋆}\leq0.8∀i=1,…,n
+$$
+
+
+
+$$
+C=Casesatbaseline−\sumincinc_{i}∗p_{i}j_{i}={1,cinc_{i}<1/10000,cinc_{i}\geq1/1000}b_{i}^{⋆}=f(b_{i})for alli=1,…,n
+$$
 
 The optimization was undertaken using generalized simulated annealing (Xiang et al., 2013). We included a penalty term in the objective function to incorporate linear constraints. Further details can be found in Appendix 1.
 
 The optimal allocation strategy for minimizing cases was also examined over a period of 39 years using the P. falciparum model, comparing a single allocation of a constant ITN usage to minimize clinical incidence at 39 years, to reallocation every 3 years (similar to Global Fund allocation periods The Global Fund, 2016) leading to varying ITN usage over time. At the beginning of each 3 year period, we determined the optimized allocation of resources to be held fixed until the next round of funding, with the objective of minimizing 3 year global clinical incidence. Once P. falciparum elimination is reached in a given setting, ITN distribution is discontinued, and in the next period, the same total budget B will be distributed among the remaining settings. We calculated the total budget required to minimize case numbers at 39 years and compared the impact of re-allocating every 3 years with a one-time allocation of 25%, 50%, 75%, and 100% of the budget. To ensure computational feasibility, 39 years was used as it was the shortest time frame over which the effect of re-distribution of funding from countries having achieved elimination could be observed.
 
-## Analysis
+### Analysis
 
 We compared the impact of the two optimal allocation strategies (scenarios 1 A and 1B) and three additional allocation scenarios on global malaria cases and the global population at risk. Modeled scenarios are shown in Table 2. Scenarios 1C-1E represent existing policy strategies that involve prioritizing high-transmission settings, prioritizing low-transmission (near-elimination) settings, or resource allocation proportional to disease burden in the year 2000. Global malaria case burden and the population at risk were compared between baseline levels in 2000 and after reaching an endemic equilibrium under each scenario for a given budget.
+
+**Table 2.**
+ Overview of modeled scenarios for allocation of funding to different transmission settings.Strategies 1A-1E compare resource allocation scenarios using clinical incidence values from each transmission setting at equilibrium after insecticide-treated net (ITN) coverage has been introduced. Strategies 2A-2B are compared as part of the allocation over time sub-analysis. EIR: entomological inoculation rate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Strategy</th>
+      <th>Modeling approach/assumptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1A</td>
+      <td>Optimized for total malaria case reduction</td>
+      <td>Generalized simulated annealing is used to determine the optimal allocation of a given budget to minimize the total number of global malaria cases.</td>
+    </tr>
+    <tr>
+      <td>1B</td>
+      <td>Optimized for total malaria case reduction and pre-elimination</td>
+      <td>Generalized simulated annealing is used to determine the optimal allocation of a given budget to minimize the total number of global malaria cases while placing a premium on the pre-elimination phase being reached in a setting.</td>
+    </tr>
+    <tr>
+      <td>1C</td>
+      <td>Prioritize high-transmission settings</td>
+      <td>Funding is allocated to groups of countries according to transmission intensity (P. falciparum + P. vivax entomological inoculation rate, EIR). For a given budget, the transmission settings with the highest EIR are prioritized, increasing ITN coverage in increments of 1% in each setting until malaria is eliminated or until an increase in coverage leads to no further decrease in cases, before allocating to the next-highest EIR setting.</td>
+    </tr>
+    <tr>
+      <td>1D</td>
+      <td>Prioritize low-transmission (near-elimination) settings</td>
+      <td>Funding is allocated to groups of countries according to transmission intensity (P. falciparum + P. vivax EIR). For a given budget, the transmission settings with the lowest EIR are prioritized, increasing ITN coverage in increments of 1% in each setting until malaria is eliminated or until an increase in coverage leads to no further decrease in cases, before allocating to the next-lowest EIR setting.</td>
+    </tr>
+    <tr>
+      <td>1E</td>
+      <td>Proportional allocation</td>
+      <td>Funding is allocated to groups of countries in proportion to their disease burden. Budget shares are calculated using country data from the World Malaria Report (World Health Organization, 2007; World Health Organization, 2020) and account for the country-specific total malaria cases (P. falciparum and P. vivax), deaths, incidence and mortality rate in 2000–2004, scaled by the subsequent increase in the population at risk (The Global Fund, 2019).</td>
+    </tr>
+    <tr>
+      <td>2A</td>
+      <td>One-time optimized allocation for P. falciparum case reduction</td>
+      <td>Generalized simulated annealing is used to determine the optimized allocation at a given budget, minimizing the total number of global P. falciparum cases after 39 years, resulting in constant ITN usage in each setting over this time period.</td>
+    </tr>
+    <tr>
+      <td>2B</td>
+      <td>Optimized allocation every three years for P. falciparum case reduction</td>
+      <td>Generalized simulated annealing is used to determine the optimized allocation at a given budget, minimizing the total number of global P. falciparum cases after every 3 year period for 39 years, allowing ITN usage to vary in each setting every 3 years.</td>
+    </tr>
+  </tbody>
+</table>
 
 Certification of malaria elimination requires proof that the chain of indigenous malaria transmission has been interrupted for at least 3 years and a demonstrated capacity to prevent return transmission (World Health Organization, 2007; World Health Organization, 2018). In our analysis, transmission settings were defined as having reached malaria elimination once less than one case remained per the setting’s total population. Once a setting reaches elimination, the entire population is removed from the global total population at risk, representing a ‘shrink the map’ strategy. The pre-elimination phase was defined as having reached less than 1 case per 1000 persons at risk in a setting (Mendis et al., 2009).
 

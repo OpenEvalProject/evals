@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Department of Bioengineering, University of Pittsburgh Pittsburgh United States
+1. Department of Bioengineering, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 

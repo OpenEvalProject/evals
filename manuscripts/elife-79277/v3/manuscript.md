@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Psychology, The University of Texas at Austin Austin United States
-2. https://ror.org/01aj84f44 Interacting Minds Centre, Aarhus University Aarhus Denmark
-3. https://ror.org/00f54p054 Department of Psychology, Stanford University Stanford United States
-4. https://ror.org/03vek6s52 Program in Speech and Hearing Bioscience and Technology, Harvard University Cambridge United States
-5. https://ror.org/05ymca674 McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States
-6. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University Montreal Canada
+1. Department of Psychology, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. Interacting Minds Centre, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+3. Department of Psychology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+4. Program in Speech and Hearing Bioscience and Technology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+5. McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States ([ROR:05ymca674](https://ror.org/05ymca674))
+6. McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 7. Department of Otolaryngology, Harvard Medical School Boston United States
 
 † Corresponding author
@@ -47,15 +47,15 @@ In the following, we provide a broad overview of the Neuroscout platform, and va
 
 ## Results
 
-## Overview of the Neuroscout platform
+### Overview of the Neuroscout platform
 
 At its core, Neuroscout is a platform for reproducible fMRI research, encompassing the complete lifecycle of fMRI analysis from model specification and estimation to the dissemination of results. We focus particular attention on encouraging the re-use of public datasets that use intrinsically high dimensional and generalizable naturalistic stimuli such as movies and audio narratives. The platform is composed of three primary components: a data ingestion and feature extraction server, interactive analysis creation tools, and an automated model fitting workflow. All elements of the platform are seamlessly integrated and can be accessed interactively online (https://neuroscout.org). Complete and up-to-date documentation of all of the platform’s components, including Getting Started guides to facilitate first time users, is available in the official Neuroscout Documentation (https://neuroscout.org/docs).
 
-## Preprocessed and harmonized naturalistic fMRI datasets
+#### Preprocessed and harmonized naturalistic fMRI datasets
 
 The Neuroscout server indexes a curated set of publicly available naturalistic fMRI datasets, and hosts automatically extracted annotations of visual, auditory, and linguistic events from the experimental stimuli. Datasets are harmonized, preprocessed, and ingested into a database using robust BIDS-compliant pipelines, facilitating future expansion.
 
-## Automated annotation of stimuli
+#### Automated annotation of stimuli
 
 Annotations of stimuli are automatically extracted using pliers (McNamara et al., 2017), a comprehensive feature extraction framework supporting state-of-the-art algorithms and deep learning models (Figure 1). Currently available features include hundreds of predictors coding for both low-level (e.g. brightness, loudness) and mid-level (e.g. object recognition indicators) properties of audiovisual stimuli, as well as natural language properties from force aligned speech transcripts (e.g. lexical frequency annotations). The set of available predictors can be easily expanded through community-driven implementation of new pliers extractors, as well as publicly shared repositories of deep learning models, such as HuggingFace (Wolf et al., 2020) and TensorFlowHub (Abadi et al., 2015). We expect that as machine learning models continue to evolve, it will be possible automatically extract higher level features from naturalistic stimuli. All extracted predictors are made publicly available through a well-documented application programming interface (https://neuroscout.org/api). An interactive web tool that makes it possible to further refine extracted features through expert human curation is currently under development.
 
@@ -63,7 +63,7 @@ Annotations of stimuli are automatically extracted using pliers (McNamara et al.
 
 **Figure 1.:** Visual features were extracted from video stimuli at a frequency of 1 Hz. ‘Faces’: we applied a well-validated cascaded convolutional network trained to detect the presence of faces (Zhang et al., 2016). ‘Building’: We used Clarifai’s General Image Recognition model to compute the probability of the presence of buildings in each frame. ‘Spoken word frequency’ codes for the lexical frequency of words in the transcript, as determined by the SubtlexUS database (Brysbaert and New, 2009). Language features are extracted using speech transcripts with precise word-by-word timing determined through forced alignment.
 
-## Analysis creation and execution tools
+#### Analysis creation and execution tools
 
 Neuroscout’s interactive analysis creation tools—available as a web application (https://neuroscout.org/builder) and python library (pyNS)—enable easy creation of fully reproducible fMRI analyses (Figure 2a). To build an analysis, users choose a dataset and task to analyze, select among pre-extracted predictors and nuisance confounds to include in the model, and specify statistical contrasts. Raw predictor values can be modified by applying model-specific variable transformations such as scaling, thresholding, orthogonalization, and hemodynamic convolution. Internally all elements of the multi-level statistical model are formally represented using the BIDS Statistical Models specification (Markiewicz et al., 2021a), ensuring transparency and reproducibility. At this point, users can inspect the model through quality-control reports and interactive visualizations of the design matrix and predictor covariance matrix, iteratively refining models if necessary. Finalized analyses are locked from further modification, assigned a unique identifier, and packaged into a self-contained bundle.
 
@@ -73,7 +73,7 @@ Neuroscout’s interactive analysis creation tools—available as a web applicat
 
 Analyses can be executed in a single command line using Neuroscout’s automated model execution workflow (Figure 2b). Neuroscout uses container technology (i.e. Docker and Singularity) to minimize software dependencies, facilitate installation, and ensure portability across a wide range of environments (including high performance computers (HPC) and the cloud). At run time, preprocessed imaging data are automatically fetched using DataLad (Halchenko et al., 2021), and the analysis is executed using FitLins (Markiewicz et al., 2021b), a standardized pipeline for estimating BIDS Stats Models. Once completed, thresholded statistical maps and provenance metadata are submitted to NeuroVault (Gorgolewski et al., 2015), a public repository for statistical maps, guaranteeing compliance to FAIR (findable, accessible, interoperable, and reusable) scientific principles (Wilkinson et al., 2016). Finally, Neuroscout facilitates sharing and appropriately crediting the dataset and tools used in the analysis by automatically generating a bibliography that can be used in original research reports.
 
-## Scalable workflows for generalizable inference
+### Scalable workflows for generalizable inference
 
 Neuroscout makes it trivial to specify and analyze fMRI data in a way that meets gold standard reproducibility principles. This is per se a crucial contribution to fMRI research, which often fails basic reproducibility standards. However, Neuroscout’s transformative potential is fully realized through the scalability of its workflows. Automated feature extraction and standardized model specification make it easy to operationalize and test equivalent hypotheses across many datasets, spanning larger participant samples and a more diverse range of stimuli.
 
@@ -91,7 +91,7 @@ Crucially, although study-level results largely exhibited plausible activation p
 
 **Figure 4.:** Images were thresholded at Z=3.29 (p<0.001) voxel-wise. Regions with a priori association with each predictor are highlighted: PPA, parahippocampal place area; VWFA, visual word form area; STS, superior temporal sulcus. Datasets: Budapest, Learning Temporal Structure (LTS), 500daysofsummer task from Naturalistic Neuroimaging Database, and Sherlock.
 
-## Flexible covariate addition for robust naturalistic analysis
+### Flexible covariate addition for robust naturalistic analysis
 
 A notable exception to the successful replications presented in the previous section is the absence of fusiform face area (FFA) activation for faces in naturalistic stimuli (Figure 5). Given long-standing prior evidence implicating the FFA in face processing (Kanwisher et al., 1997), it is highly unlikely that these results are indicative of flaws in the extant literature. A more plausible explanation is that our ‘naive’ single predictor models failed to account for complex scene dynamics present in naturalistic stimuli. Unlike controlled experimental designs, naturalistic stimuli are characterized by systematic co-occurrences between cognitively relevant events. For example, in narrative-driven movies (the most commonly used audio-visual naturalistic stimuli) the presentation of faces often co-occurs with speech—a strong driver of brain activity. Failing to account for this shared variance can confound model estimates and mask true effects attributable to predictors of interest.
 
@@ -105,7 +105,7 @@ In movies, face perception involves repeated and protracted presentation of a re
 
 After controlling for face adaptation, we observed stronger effects in the right FFA (Figure 5; peak z=7.35), highlighting its sensitivity to dynamic characteristics of face presentation which cannot always be captured by traditional designs. Notably, unlike in traditional localizer tasks, we still observe significant activation outside of the FFA, areas whose relation to face perception can be further explored in future analyses using Neuroscout’s rich feature set.
 
-## Large samples meet diverse stimuli: a linguistic case study
+### Large samples meet diverse stimuli: a linguistic case study
 
 Our final example illustrates the importance of workflow scalability in the domain of language processing, where the use of naturalistic input has been explicitly identified as not only beneficial but necessary for real-world generalizability (Hamilton and Huth, 2020). Owing to their ability to provide more robust insights into real-life language processing, studies using naturalistic input (e.g. long written texts or narratives) are becoming increasingly common in language neuroscience (Andric and Small, 2015; Brennan, 2016; Nastase et al., 2021). Yet, even when naturalistic stimuli are used, individual studies are rarely representative of the many contexts in which language production and comprehension take place in daily life (e.g. dialogues, narratives, written exchanges, etc), which raises concerns on the generalizability of their findings. Additionally, modeling covariates is particularly challenging for linguistic stimuli, due to their complex hierarchical structure. As a consequence, single studies are often at risk of lacking the power required to disentangle the independent contributions of multiple variables.
 
@@ -129,7 +129,7 @@ We have also shown how Neuroscout’s scalability facilitates the use of meta-an
 
 A fundamental goal of Neuroscout is to provide researchers with tools that automatically ensure the adoption of gold-standard research practices throughout the analysis lifecycle. We have paid close attention to ensuring transparency and reproducibility of statistical modeling by adopting a community-developed specification of statistical models, and developing accessible tools to specify, visualize and execute analyses. Neuroscout’s model builder can be readily accessed online, and the execution engine is designed to be portable, ensuring seamless deployment across computational environments. This is a key contribution to cognitive neuroscience, which too often falls short of meeting these basic criteria of sound scientific research.
 
-## Challenges and future directions
+### Challenges and future directions
 
 A major challenge in the analysis of naturalistic stimuli is the high degree of collinearity between features, as the interpretation of individual features is dependent on co-occurring features. In many cases, controlling for confounding variables is critical for the interpretation of the primary feature— as is evident in our investigation of the relationship between FFA and face perception. However, it can also be argued that in dynamic narrative driven media (i.e. films and movies), the so-called confounds themselves encode information of interest that cannot or should not be cleanly regressed out (Grall and Finn, 2020).
 
@@ -141,13 +141,13 @@ Although we have primarily focused on naturalistic datasets—as they intrinsica
 
 In addition, as Neuroscout grows to facilitate the re-analysis of a broader set of public datasets, it will be important to reckon with the threat of ‘dataset decay’ which can occur from repeated sequential re-analysis (Thompson et al., 2020). By encouraging the central registration of all analysis attempts and the associated results, Neuroscout is designed to minimize undocumented researcher degrees of freedom and link the final published results with all previous attempts. By encouraging the public sharing of all results, we hope to encourage meta-scientists to empirically investigate statistical solutions to the problem of dataset decay, and develop methods to minimize the effect of false positives.
 
-## Long-term sustainability
+### Long-term sustainability
 
 An on-going challenge for scientific software tools—especially those that rely on centralized services—is long-term maintenance, development, and user support. On-going upkeep of core tools and development of new features require a non-trivial amount of developer time. This problem is exacerbated for projects primarily supported by government funding, which generally prefers novel research to the on-going maintenance of existing tools. This is particularly challenging for centralized services, such as the Neuroscout server and web application, which require greater maintenance and coordination for upkeep.
 
 With this in mind, we have designed many of the core components of Neuroscout with modularity as a guiding principle in order to maximize the longevity and impact of the platform. Although components of the platform are tightly integrated, they are also designed to be independently useful, increasing their general utility, and encouraging broader adoption by the community. For example, our feature extraction library (pliers) is designed for general purpose use on multimodal stimuli, and can be easily expanded to adopt novel extractors. On the analysis execution side, rather than implementing a bespoke analysis workflow, we worked to develop a general specification for statistical models under the BIDS standard (https://bids-standard.github.io/stats-models/) and a compatible execution workflow (FitLins; https://github.com/poldracklab/fitlins; Markiewicz, 2022). By distributing the technical debt of Neuroscout across various independently used and supported projects, we hope to maximize the robustness and impact of the platform. To ensure the community’s needs are met, users are encouraged to vote on the prioritization of features by voting on issues on Neuroscout’s GitHub repository, and code from new contributors is actively encouraged.
 
-## User support and feedback
+### User support and feedback
 
 A comprehensive overview of the platform and guides for getting started can be found in the integrated Neuroscout documentation (https://neuroscout.org/docs), as well as in each tool’s version-specific automatically generated documentation (hosted by ReadTheDocs, a community-supported documentation platform). We plan to grow the collection of complete tutorials replicating exemplary analyses and host them in the centralized Neuroscout documentation.
 
@@ -155,15 +155,122 @@ Users can ask questions to developers and the community using the topic ‘neuro
 
 ## Materials and methods
 
-## Code availability
+### Code availability
 
 All code from our processing pipeline and core Neuroscout infrastructure is available online (https://www.github.com/neuroscout/neuroscout; Alejandro de la, 2022a), including the Python client library pyNS (https://www.github.com/neuroscout/pyNS; Alejandro de la, 2022b). The Neuroscout-CLI analysis engine is available as a Docker and Singularity container, and the source code is also made available (https://github.com/neuroscout/neuroscout-cli/; Alejandro de la, 2022c). Finally, an online supplement following the analyses showcased in this paper is available as interactive Jupyter Book (https://neuroscout.github.io/neuroscout-paper/). All are available under a permissive BSD license.
 
-## Datasets
+### Datasets
 
 The analyses presented in this paper are based on 13 naturalistic fMRI datasets sourced from various open data repositories (see Table 1). We focused on BIDS-compliant datasets which included the exact stimuli presented with precise timing information. Datasets were queried and parsed using pybids (https://github.com/bids-standard/pybids; Yarkoni et al., 2019b; Yarkoni et al., 2019a) and ingested into a SQL database for further subsequent analysis. Several datasets spanned various original studies or distinct simuli (e.g. Narratives, NNDb), resulting in 35 unique ‘tasks’ or ‘studies’ available for analysis. The full list of datasets and their available predictors are available on Neuroscout (https://neuroscout.org/datasets).
 
-## fMRI Preprocessing
+**Table 1.**
+ Neuroscout datasets included in the validation analyses.Subj is the number of unique subjects. Scan Time is the mean scan time per subject (in minutes). AV = Audio-Visual; AN = Audio Narrative.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Subj</th>
+      <th>DOI/URI</th>
+      <th>Scan time</th>
+      <th>Modality</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Study Forrest (Hanke et al., 2014)</td>
+      <td>13</td>
+      <td>10.18112/openneuro.ds000113.v1.3.0</td>
+      <td>120</td>
+      <td>AV</td>
+      <td>Slightly abridged German version of the movie: ‘Forrest Gump’</td>
+    </tr>
+    <tr>
+      <td>Life (Nastase et al., 2018)</td>
+      <td>19</td>
+      <td>datasets.datalad.org/?dir=/labs/haxby/life</td>
+      <td>62.8</td>
+      <td>AV</td>
+      <td>Four segments of the Life nature documentary</td>
+    </tr>
+    <tr>
+      <td>Raiders (Haxby et al., 2011)</td>
+      <td>11</td>
+      <td>datasets.datalad.org/?dir=/labs/haxby/raiders</td>
+      <td>113.3</td>
+      <td>AV</td>
+      <td>Full movie: ‘Raiders of the Lost Ark’</td>
+    </tr>
+    <tr>
+      <td>Learning Temporal Structure (LTS) (Aly et al., 2018)</td>
+      <td>30</td>
+      <td>10.18112/openneuro.ds001545.v1.1.1</td>
+      <td>20.1</td>
+      <td>AV</td>
+      <td>Three clips from the movie ‘Grand Budapest Hotel’, presented six times each. Some clips were scrambled.</td>
+    </tr>
+    <tr>
+      <td>Sherlock (Chen et al., 2017)</td>
+      <td>16</td>
+      <td>10.18112/openneuro.ds001132.v1.0.0</td>
+      <td>23.7</td>
+      <td>AV</td>
+      <td>The first half of the first episode from ‘Sherlock’ TV series.</td>
+    </tr>
+    <tr>
+      <td>SherlockMerlin (Zadbood et al., 2017)</td>
+      <td>18</td>
+      <td>Temporarily unavailable</td>
+      <td>25.1</td>
+      <td>AV</td>
+      <td>Full episode from ‘Merlin’ TV series. Only used Merlin task to avoid analyzing the Sherlock task twice.</td>
+    </tr>
+    <tr>
+      <td>Schematic Narrative (Baldassano et al., 2018)</td>
+      <td>31</td>
+      <td>10.18112/openneuro.ds001510.v2.0.2</td>
+      <td>50.4</td>
+      <td>AV/AN</td>
+      <td>16 three-minute clips, including audiovisual clips and narration.</td>
+    </tr>
+    <tr>
+      <td>ParanoiaStory (Finn et al., 2018)</td>
+      <td>22</td>
+      <td>10.18112/openneuro.ds001338.v1.0.0</td>
+      <td>21.8</td>
+      <td>AN</td>
+      <td>Audio narrative designed to elicit individual variation in suspicion/paranoia.</td>
+    </tr>
+    <tr>
+      <td>Budapest (Visconti et al., 2020)</td>
+      <td>25</td>
+      <td>10.18112/openneuro.ds003017.v1.0.3</td>
+      <td>50.9</td>
+      <td>AV</td>
+      <td>The majority of the movie ‘Grand Budapest Hotel’, presented in intact order</td>
+    </tr>
+    <tr>
+      <td>Naturalistic Neuroimaging Database (NNDb) (Aliko et al., 2020)</td>
+      <td>86</td>
+      <td>10.18112/openneuro.ds002837.v2.0.0</td>
+      <td>112.03</td>
+      <td>AV</td>
+      <td>Movie watching of 10 full-length movies</td>
+    </tr>
+    <tr>
+      <td>Narratives (Nastase et al., 2021)</td>
+      <td>328</td>
+      <td>10.18112/openneuro.ds002345.v1.1.4</td>
+      <td>32.5</td>
+      <td>AN</td>
+      <td>Passive listening of 16 audio narratives (two tasks were not analyzed due to preprocessing error)</td>
+    </tr>
+  </tbody>
+</table>
+
+### fMRI Preprocessing
 
 Neuroscout datasets are uniformly preprocessed using FMRIPREP (version 1.2.2) (Esteban et al., 2020; Esteban et al., 2019; Esteban et al., 2022), a robust NiPype-based MRI preprocessing pipeline. The resulting preprocessed data are publicly available for download (https://github.com/neuroscout-datasets). The following methods description was semi-automatically generated by FMRIPREP.
 
@@ -173,25 +280,76 @@ Functional data are motion-corrected using mcflirt (FSL v5.0.9, Jenkinson et al.
 
 Anatomically based physiological noise regressors were created using CompCor (Behzadi et al., 2007). A mask to exclude signals with cortical origin is obtained by eroding the brain mask, ensuring it only contains subcortical structures. Six principal components are calculated within the intersection of the subcortical mask and the union of CSF and WM masks calculated in T1w space, after their projection to the native space of each functional run. Many internal operations of FMRIPREP use Nilearn (Abraham et al., 2014), principally within the BOLD-processing workflow.
 
-## Automatically extracted features
+### Automatically extracted features
 
-## Overview
+#### Overview
 
 Neuroscout leverages state-of-the-art machine learning algorithms to automatically extract hundreds of novel neural predictors from the original experimental stimuli. Automated feature extraction relies on pliers, a python library for multimodal feature extraction which provides a standardized interface to a diverse set of machine learning algorithms and APIs (McNamara et al., 2017). Feature values are ingested directly with no in place modifications, with the exception of down sampling of highly dense variables to 3 hz to facilitate storage on the server. For all analyses reported in this paper the same set of feature extractors are applied across all datasets (see Table 2), except where not possible due to modality mismatch (e.g. visual features in audio narratives), or features intrinsically absent from the stimuli (e.g. faces in the Life nature documentary). A description of all features included in this paper is provided below. A complete list of available predictors and features is actualized online at: https://neuroscout.org/predictors.
 
-## Visual features
+**Table 2.**
+ Extractor name, feature name, and description for all Neuroscout features used in the validation analyses.
 
-## Brightness
+
+<table>
+  <thead>
+    <tr>
+      <th>Extractor</th>
+      <th>Feature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brightness</td>
+      <td>brightness</td>
+      <td>Average luminosity across all pixels in each video frame.</td>
+    </tr>
+    <tr>
+      <td>Clarifai</td>
+      <td>building, landscape, text, tool</td>
+      <td>Indicators of the probability that an object belonging to each of these categories is present in the video frame.</td>
+    </tr>
+    <tr>
+      <td>FaceNet</td>
+      <td>any_faces, log_mean_time_cum</td>
+      <td>For each video frame, any_faces indicates the probability that the image displays at least one face. log_mean_time_cum indicates the cumulative time (in seconds) a given face has been on screen up since the beginning of the movie. If multiple faces are present, their cumulative time on screen is averaged.</td>
+    </tr>
+    <tr>
+      <td>Google Video Intelligence</td>
+      <td>shot_change</td>
+      <td>Binary indicator coding for shot changes.</td>
+    </tr>
+    <tr>
+      <td>FAVE/Rev</td>
+      <td>speech</td>
+      <td>Binary indicator coding for the presence of speech in the audio signal, inferred from word onsets/offsets information from force-aligned speech transcripts.</td>
+    </tr>
+    <tr>
+      <td>RMS</td>
+      <td>rms</td>
+      <td>Root mean square (RMS) energy of the audio signal.</td>
+    </tr>
+    <tr>
+      <td>Lexical norms</td>
+      <td>Log10WF, concreteness, phonlev, numsylls, numphones, duration, text_length</td>
+      <td>Logarithm of SubtlexUS lexical frequency, concreteness rating, phonological Levenshtein distance, number of syllables, number of phones, average auditory duration and number of characters for each word in the speech transcript. These metrics are extracted from lexical databases available through pliers.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Visual features
+
+##### Brightness
 
 We computed brightness (average luminosity) for frame samples of videos by computing the average luminosity for pixels across the entire image. We took the maximum value at each pixel from the RGB channels, computed the mean, and divided by 255.0 (the maximum value in RGB space), resulting in a scalar ranging from 0 to 1. This extractor is available through pliers as BrightnessExtractor.
 
-## Clarifai object detection
+##### Clarifai object detection
 
 Clarifai is a computer vision company that specializes in using deep learning networks to annotate images through their API as a service. We used Clarifai’s ‘General’ model, a pre-trained deep convolutional neural network (CNN) for multi-class classification of over 11,000 categories of visual concepts, including objects and themes.
 
 To reduce the space of possible concepts, we pre-selected four concepts that could plausibly capture psychologically relevant categories (see Table 2). Feature extraction was performed using pliers’ ClarifaiAPIImageExtractor, which wraps Clarifai’s Python API client. We submitted the sampled visual frames from video stimuli to the Clarifai API, and received values representing the model’s predicted probability of each concept for that frame.
 
-## Face detection, alignment, and recognition
+##### Face detection, alignment, and recognition
 
 Face detection, alignment, and recognition were performed using the FaceNet package (https://github.com/davidsandberg/facenet; Sandberg, 2018), which is an open TensorFlow implementation of state-of-the-art face recognition CNNs. As this feature was not natively available in pliers, we computed it offline and uploaded it to Neuroscout using the feature upload portal.
 
@@ -201,49 +359,49 @@ Next, cropped faces were input to the FaceNet network for facial recognition. Fa
 
 For each dataset separately, we clustered all detected faces’ embedding vectors to group together faces corresponding to distinct characters in the audio-visual videos. We used the Chinese Whispers clustering algorithm, as this algorithm subjectively grouped faces into coherent clusters better than other commonly used algorithms (e.g. k-means clustering). Depending on the dataset, this resulted in 50–200 clusters that subjectively corresponded to readily identifiable characters across the video stimulus. For each dataset, we removed the worst-performing cluster (as for all datasets there was always one with a highly noisy profile) and grouped demonstrably different faces into one cluster. Using the generated face clusters for each dataset, we computed the cumulative time each character had been seen across the stimulus (i.e. entire movie) and log transformed the variable in order to represent the adaptation to specific faces over time. As more than one face could be shown simultaneously, we took the mean for all faces on screen in a given frame.
 
-## Google Video Intelligence
+##### Google Video Intelligence
 
 We used the Google Video Intelligence API to identify shot changes in video stimuli. Using the GoogleVideoAPIShotDetectionExtractor extractor in pliers, we queried the API with complete video clips (typically one video per run). The algorithm separates distinct video segments, by detecting abstract shot changes in the video (i.e. the frames before and after that frame are visually different). The time at which there was a transition between two segments was given a value of 1, while all other time points received a value of 0.
 
-## Auditory features
+### Auditory features
 
-## RMS
+#### RMS
 
 We used librosa (McFee et al., 2015), a python package for music and audio analysis, to compute root-mean-squared (RMS) as a measure of the instantaneous audio power over time, or ‘loudness’.
 
-## Speech forced alignment
+#### Speech forced alignment
 
 For most datasets, transcripts of the speech with low-resolution or no timing information were available either from the original researcher or via closed captions in the case of commercially produced media. We force aligned the transcripts to extract word-level speech timing, using the Forced Alignment and Vowel Extraction toolkit (FAVE; Rosenfelder et al., 2014). FAVE employs Gaussian mixture model based monophone Hidden Markov Models (HMMs) from the Penn Phonetics Lab Forced Aligner for English (p2fa; Yuan and Liberman, 2008), which is based on the Hidden Markov Toolkit (Young, 1994). The transcripts are mapped to phone sequences with pre-trained HMM acoustic models. Frames of the audio recording are then mapped onto the acoustic models, to determine the most likely sequence. The alignment is constrained by the partial timing information available in closed captions, and the sequence present in the original transcripts. Iterative alignment continues until models converge. Linguistic features are available for all datasets except studyforrest, as the movie was presented in German. Transcription and annotation of stimuli in languages other than English are pending.
 
-## Rev.com
+#### Rev.com
 
 For datasets that had no available transcript (LearningTemporalStructure, SchematicNarrative), we used a professional speech-to-text service (Rev.com) to obtain precise transcripts with word-level timing information. Rev.com provides human-created transcripts which are then force-aligned using proprietary methods to produce a high-quality, aligned transcript, similar to that generated by the FAVE algorithm.
 
-## Speech indicator
+#### Speech indicator
 
 In both cases, we binarized the resulting aligned transcripts based on word onset/offset information to produce a fine-grained speech presence feature (‘speech’). These aligned transcripts served as the input to all subsequent speech-based analyses.
 
-## Language features
+### Language features
 
-## Word frequency
+#### Word frequency
 
 Neuroscout includes a variety of frequency norms extracted from different lexical databases. For all the analyses reported here, we used frequency norms from SUBTLEX-US (Brysbaert and New, 2009), a 51 million words corpus of American English subtitles. The variable used in the analyses (Log10WF, see Brysbaert and New, 2009) is the base 10 logarithm of the number of occurrences of the word in the corpus. In all analyses, this variable was demeaned and rescaled prior to HRF convolution. For a small percentage of words not found in the dictionary, a value of zero was applied after rescaling, effectively imputing the value as the mean word frequency. This feature was extracted using the subtlexusfrequency dictionary and the PredefinedDictionaryExtractor available in pliers.
 
-## Concreteness
+#### Concreteness
 
 Concreteness norms were extracted from the (Brysbaert et al., 2014) concreteness database, which contains norms for over 40,000 English words, obtained from participants’ ratings on a five-point scale. In all analyses, this variable was demeaned and rescaled before HRF convolution. This feature was extracted using the concreteness dictionary and the PredefinedDictionaryExtractor available in pliers.
 
-## Massive auditory lexical decision norms
+#### Massive auditory lexical decision norms
 
 The Massive Auditory Lexical Decision (MALD) database (Tucker et al., 2019) is a large-scale auditory and production dataset that includes a variety of lexical, orthographic, and phonological descriptors for over 35,000 English words and pseudowords. MALD norms are available in Neuroscout for all words in stimulus transcripts. The analyses reported in this paper make use of the following variables:
 
 In all analyses, these variables were demeaned and rescaled before HRF convolution. MALD metrics was extracted using the massiveauditorylexicaldecision dictionary and the PredefinedDictionaryExtractor available in pliers.
 
-## Text length
+#### Text length
 
 This variable corresponds to the number of characters in a word’s transcription. A TextLengthExtractor is available in pliers.
 
-## GLM models
+### GLM models
 
 Neuroscout uses FitLins, a newly developed workflow for executing multi-level fMRI general linear model (GLM) analyses defined by the BIDS StatsModels specification. FitLins uses pybids to generate run-level design matrices, and NiPype to encapsulate a multi-level GLM workflow. Model estimation at the first level was performed using AFNI—in part due to its memory efficiency—and subject and group level summary statistics were fit using the nilearn.glm module.
 
@@ -251,6 +409,6 @@ For all models, we included a standard set of confounds from fmriprep, in additi
 
 Smoothing was applied to the resulting parameter estimate images using a 4 mm FWHM isotropic kernel. For the datasets that had more than one run per subject, we then fit a subject-level fixed-effects model with the smoothed run-level parameter estimates as inputs, resulting in subject-level parameter estimates for each regressor. Finally, we fit a group-level fixed-effects model using the previous level’s parameter estimates and performed a one-sample t-test contrast for each regressor in the model.
 
-## Meta-analysis
+### Meta-analysis
 
 NiMARE (version 0.0.11rc1; available at: https://github.com/neurostuff/NiMARE; RRID:SCR_017398) was used to perform meta-analyses across the neuroscout datasets. Typical study harmonization steps (smoothing, design matrix scaling, spatial normalization) were forgone because all group level beta and variance maps were generated using the same GLM pipeline. All group level beta and variance maps were resampled to a 2x2 × 2 mm ICBM 152 Nonlinear Symmetrical gray matter template (downloaded using nilearn, version 0.8.0) with linear interpolation. Resampled values were clipped to the minimum and maximum statistical values observed in the original maps. We used the DerSimonian & Laird random effects meta-regression algorithm (DerSimonian and Laird, 1986; Kosmidis et al., 2017).

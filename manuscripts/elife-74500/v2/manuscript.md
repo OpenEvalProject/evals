@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00vpwhm04 Institute of Neuroscience, Key Laboratory of Primate Neurobiology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China
-2. https://ror.org/05qbk4x57 University of Chinese Academy of Sciences Beijing China
-3. https://ror.org/05gq02987 Brown University Providence United States
-4. https://ror.org/0551a0y31 Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China
+1. Institute of Neuroscience, Key Laboratory of Primate Neurobiology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
+2. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+3. Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+4. Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China ([ROR:0551a0y31](https://ror.org/0551a0y31))
 
 † Corresponding author
 
@@ -35,9 +35,17 @@ The game has a clear objective, but an optimal solution is computationally diffi
 
 ## Results
 
-## The Pac-Man game
+### The Pac-Man game
 
 We trained two monkeys to play an adapted Pac-Man (Namco) game (Figure 1A). In the game, the monkeys navigated a character known as Pac-Man in a maze and their objective is to traverse through the maze to eat all the pellets and energizers. The game presented the obstacles of having two ghosts named Blinky and Clyde, who behaved as predators. As in the original game, each ghost followed a unique deterministic algorithm based on Pac-Man’s location and their own locations with Blinky chasing Pac-Man more aggressively. If Pac-Man was caught, the monkeys would receive a time-out penalty. Afterward, both Pac-Man and the ghosts were reset to their starting locations, and the monkeys could continue to clear the maze. If Pac-Man ate an energizer, a special kind of pellet, the ghosts would be cast into a temporary scared mode. Pac-Man could eat the scared ghosts to gain extra rewards. All the game elements that yield points in the original game provided monkeys juice rewards instead (Figure 1A, right). After successfully clearing the maze, the monkeys would also receive additional juice as a reward for completing a game. The fewer attempts the animals made to complete a game, the more rewards they would be given.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig1-v2.jpg)
+
+**Figure 1.:** (A) The monkeys used a joystick to navigate Pac-Man in the maze and collect pellets for juice rewards. Also in the maze, there were two ghosts, Blinky and Clyde. The maze was fixed, but the pellets and the energizers were placed randomly initially in each game. Eating energizers turned the ghosts into the scared mode for 14 s, during which they were edible. There were also fruits randomly placed in the maze. The juice rewards corresponding to each game element are shown on the right. (B) The monkeys were more likely to move toward the direction with more local rewards. The abscissa is the reward difference between the most and the second most rewarding direction. Different grayscale shades indicate path types with different numbers of moving directions. Means and standard errors are plotted with lines and shades. See Figure 1—figure supplement 1 for the analysis for individual monkeys. (C) The monkeys escaped from normal ghosts and chased scared ghosts. The abscissa is the Dijkstra distance between Pac-Man and the ghosts. Dijkstra distance measures the distance of the shortest path between two positions on the map. Means and standard errors are denoted with lines and shades. See Figure 1—figure supplement 1 for the analysis for individual monkeys.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, C) Probability of monkeys moving toward the largest reward. The monkeys were more likely to move toward the direction with more local rewards. The abscissa is the reward difference between the most and the second most rewarding direction. The colors indicate the path types in which different numbers of moving directions are possible. Means and standard errors are plotted with lines and shades. (B, D) Probability of monkeys moving toward ghosts. The monkeys escaped from the normal ghosts and chased the scared ghosts. The abscissa is the distance between Pac-Man and the ghosts. The colors and the line types indicate the ghosts and their modes. Means and standard errors are plotted with lines and shades.
 
 The game was essentially a foraging task for the monkeys. The maze required navigation, and to gain rewards, the animals had to collect pallets with the risk of encountering predators. Therefore, the game was intuitive for the monkeys, which was crucial for the training’s success. The training started with simple mazes with no ghosts, and more elaborated game elements were introduced one by one throughout the training process (see Materials and methods and Appendix 1—figure 1 for detailed training procedures).
 
@@ -51,7 +59,7 @@ The monkeys also understood how to react to the ghosts in different modes. The l
 
 These analyses suggest that the monkeys understood the basic elements of the game. While they revealed some likely strategies of the monkeys, collecting local pellets and escaping or eating the ghosts, they did not fully capture the monkeys’ decision-making. Many other factors as well as the interaction between them affected the monkeys’ decisions. More sophisticated behavior was required for optimal performance, and to this end, the dynamic compositional strategy model was developed to understand the monkeys’ behavior.
 
-## Basis strategies
+### Basis strategies
 
 While the overall goal of the game is to clear the maze, the monkeys may adopt different strategies for smaller objectives in different circumstances. We use the term ‘strategy’ to refer to the solution for these sub-goals, and each strategy involves a smaller set of game variables with easier computation for decisions that form actions.
 
@@ -59,17 +67,25 @@ We consider six intuitive and computationally simple strategies as the basis str
 
 At any time during the game, monkeys could adopt one or a mixture of multiple strategies for decision-making. We assumed that the final decision for Pac-Man’s moving direction was based on a linear combination of the basis strategies, and the relative strategy weights were stable for a certain period. We adopted a softmax policy to linearly combine utility values under each basis strategy, with the strategy weights as model parameters. To avoid potential overfitting, we designed a two-pass fitting procedure to divide each game trial into segments and performed maximum likelihood estimation (MLE) to estimate the model parameters with the monkeys’ behavior within each time segment (see Materials and methods for details). When tested with simulated data, this fitting procedure recovers the ground-truth weights used to generate the data (Appendix 1—figure 4).
 
-## Monkeys adopted different strategies at different game stages
+### Monkeys adopted different strategies at different game stages
 
 Figure 2A shows the normalized strategy weights in an example game segment (Figure 2—video 1). In this example, the monkey started with the local strategy and grazed pellets. With the ghosts getting close, it initiated the energizer strategy and went for a nearby energizer. Once eating the energizer, the monkey switched to the approach strategy to hunt the scared ghosts. Afterward, the monkey resumed the local strategy and then used the global strategy to navigate toward another patch when the local rewards were depleted. The dynamic compositional strategy model (see Materials and methods for details) faithfully captures the monkey’s behavior by explaining Pac-Man’s movement with an accuracy of 0.943 in this example.
 
-Overall, the dynamic compositional strategy model explains the monkeys’ behavior well. The model’s prediction accuracy is 0.907 ± 0.008 for Monkey O and 0.900 ± 0.009 for Monkey P. In comparison, a static strategy model, which uses the fixed strategy weights, achieves an overall accuracy of 0.806 ± 0.014 and 0.825 ± 0.012 for monkeys O and P, respectively (Figure 2B). The static strategy model’s accuracy is still high, reflecting the fact that the monkeys were occupied with collecting pellets most of the time in the game. Thus, a combination of local and global strategies was often sufficient for explaining the monkeys’ choice. However, the average accuracy measurement alone and the fixed model could not reveal the monkeys’ adaptive behavior. The strategy dynamics are evident when we look at different game situations (Figure 2B). During the early game, defined as when there were more than 90% remaining pellets in the maze, the local strategy dominated all other strategies. In comparison, during the late game, defined as when there were fewer than 10% remaining pellets, both the local and the global strategies had large weights. The approach strategy came online when one or both scared ghosts were within 10 tiles around Pac-Man. The model’s prediction accuracies for the early game, the late game, and the scared-ghosts situations were 0.886 ± 0.0016, 0.898 ± 0.011, and 0.958 ± 0.010, which were significantly higher than the static strategy model’s accuracies (early: 0.804 ± 0.025, p< 10-60 ; late: 0.805 ± 0.019, p< 10-35 ; scared ghosts: 0.728 ± 0.031, p< 10-11 ; two-sample t-test).
+![Figure 2.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig2-v2.jpg)
+
+**Figure 2.:** (A) The normalized strategy weights in an example game segment. The horizontal axis is the time step. Each time step is 417 ms, which is the time that it takes Pac-Man to move across a tile. The color bar indicates the dominant strategies across the segment. The monkey’s actual choice and the corresponding model prediction at each time step are shown below, with red indicating a mismatch. The prediction accuracy for this segment is 0.943. Also, see Figure 2—video 1. (B) Comparison of prediction accuracy across four models in four game contexts. Four game contexts were defined according to the criteria listed in Appendix 1—table 3. Vertical bars denote standard deviations. Horizontal dashed lines denote the chance-level prediction accuracies. See Appendix 1—tables 4–6 for detailed prediction accuracy comparisons. (C) The distribution of the three dominating strategies’ weights. The most dominating strategy’s weights (0.907 ± 0.117) were significantly larger than the secondary strategy (0.273 ± 0.233) and tertiary strategy (0.087 ± 0.137) by far. Horizontal white bars denote means, and the vertical black bars denote standard errors. (D) The distribution of the weight difference between the most and the second dominating strategies. The distribution is heavily skewed toward 1. In over 90% of the time, the weight difference was larger than 0.1, and more than 33% of the time the difference was over 0.9. (E) The ratios of labeled dominating strategies across four game contexts. In the early game, the local strategy was the dominating strategy. In comparison, in the late game, both the local and the global strategies had large weights. The weight of the approach strategy was largest when the ghosts were in the scared mode. See Figure 2—figure supplement 1 for the analysis for individual monkeys.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, E) Comparison of prediction accuracy across three models in four game contexts. See Appendix 1—tables 5 and 6 for details. Vertical bars denote standard deviations. Horizontal dashed lines denote the chance-level prediction accuracies. (B, F) The histograms of the three dominating strategies’ weights. (B) The most dominating strategy’s weights (0.907 ± 0.115) were much larger than the secondary strategy (0.276 ± 0.233) and tertiary strategy (0.088 ± 0.136). (F) The most dominating strategy’s weights (0.907 ± 0.119), the secondary strategy (0.270 ± 0.233), and tertiary strategy (0.07 ± 0.138). Horizontal white bars denote means, and the vertical black bars denote standard errors. (C, G) The histogram of the weight difference between the most and the second dominating strategies. The distribution is heavily skewed toward 1. In about 90% of the time, the weight difference was larger than 0.1, and more than 30% of the time the difference was over 0.9. Horizontal white bars denote means, and the vertical black bars denote standard errors. (D, H) The ratios of labeled dominating strategies across four game contexts. In the early game, the local strategy was the dominating strategy. In comparison, in the late game, both the local and the global strategies had large weights. The weight of the approach strategy was largest when the ghosts were in the scared mode.
+
+Overall, the dynamic compositional strategy model explains the monkeys’ behavior well. The model’s prediction accuracy is 0.907 ± 0.008 for Monkey O and 0.900 ± 0.009 for Monkey P. In comparison, a static strategy model, which uses the fixed strategy weights, achieves an overall accuracy of 0.806 ± 0.014 and 0.825 ± 0.012 for monkeys O and P, respectively (Figure 2B). The static strategy model’s accuracy is still high, reflecting the fact that the monkeys were occupied with collecting pellets most of the time in the game. Thus, a combination of local and global strategies was often sufficient for explaining the monkeys’ choice. However, the average accuracy measurement alone and the fixed model could not reveal the monkeys’ adaptive behavior. The strategy dynamics are evident when we look at different game situations (Figure 2B). During the early game, defined as when there were more than 90% remaining pellets in the maze, the local strategy dominated all other strategies. In comparison, during the late game, defined as when there were fewer than 10% remaining pellets, both the local and the global strategies had large weights. The approach strategy came online when one or both scared ghosts were within 10 tiles around Pac-Man. The model’s prediction accuracies for the early game, the late game, and the scared-ghosts situations were 0.886 ± 0.0016, 0.898 ± 0.011, and 0.958 ± 0.010, which were significantly higher than the static strategy model’s accuracies (early: 0.804 ± 0.025, p< $10^{-60}$ ; late: 0.805 ± 0.019, p< $10^{-35}$ ; scared ghosts: 0.728 ± 0.031, p< $10^{-11}$ ; two-sample t-test).
 
 The dynamic compositional strategy decision-making model is hierarchical. A strategy is first chosen, and the primitive actions (i.e., joystick movements) are then determined under the selected strategy with a narrowed down set of features (Botvinick et al., 2009; Botvinick and Weinstein, 2014; Dezfouli and Balleine, 2013; Ostlund et al., 2009; Sutton et al., 1999). In contrast, in a flat model, decisions are computed directly for the primitive actions based on all relevant game features. Hierarchical models can learn and compute a sufficiently good solution much more efficiently due to its natural additive decomposition of the overall strategy utility.
 
-To illustrate the efficiency of the hierarchical model, we tested two representative flat models. First, we considered a linear approximate reinforcement learning (LARL) model (Sutton, 1988; Tsitsiklis and Van Roy, 1997). The LARL model shared the same structure with a standard Q-learning algorithm but used the monkeys’ actual joystick movements as the fitting target. To highlight the flatness of this baseline model, we adopted a common assumption that the parameterization of the utility function is linear (Sutton and Barto, 2018) with respect to seven game features (see Materials and methods for details). Second, we trained a perceptron network as an alternative flat model. The perceptron had one layer of 64 units for Monkey P and 16 units for Monkey O (the number of units was determined by the highest fitting accuracy with fivefold cross-validation, see Materials and methods for details). The inputs were the same features used in our six strategies, and the outputs were the joystick movements. Compared to our hierarchical models, neither flat model performed as well. The LARL model achieved 0.669 ± 0.011 overall prediction accuracy (Figure 2B, light gray bars) and performed worse than the hierarchical models under each game situation (early: 0.775 ± 0.021, p< 10-15 ; late: 0.621 ± 0.018, p< 10-17 ; scared ghosts: 0.672 ± 0.025, p< 10-12 ; two-sample t-test). The perceptron model was even worse, both overall (0.624 ± 0.010, Figure 2B, white bars) and under each game situation (early: 0.582 ± 0.026, p< 10-40 ; late: 0.599 ± 0.019, p< 10-16 ; scared ghosts: 0.455 ± 0.030, p< 10-16 ; two-sample t-test). The results were similar when we tested the models with individual monkeys separately (Figure 2—figure supplement 1A and E). Admittedly, one may design better and more complex flat models than the two tested here. Yet, even our relatively simple LARL model was more computationally complex than our hierarchical model but performed much worse, illustrating the efficiency of hierarchical models.
+To illustrate the efficiency of the hierarchical model, we tested two representative flat models. First, we considered a linear approximate reinforcement learning (LARL) model (Sutton, 1988; Tsitsiklis and Van Roy, 1997). The LARL model shared the same structure with a standard Q-learning algorithm but used the monkeys’ actual joystick movements as the fitting target. To highlight the flatness of this baseline model, we adopted a common assumption that the parameterization of the utility function is linear (Sutton and Barto, 2018) with respect to seven game features (see Materials and methods for details). Second, we trained a perceptron network as an alternative flat model. The perceptron had one layer of 64 units for Monkey P and 16 units for Monkey O (the number of units was determined by the highest fitting accuracy with fivefold cross-validation, see Materials and methods for details). The inputs were the same features used in our six strategies, and the outputs were the joystick movements. Compared to our hierarchical models, neither flat model performed as well. The LARL model achieved 0.669 ± 0.011 overall prediction accuracy (Figure 2B, light gray bars) and performed worse than the hierarchical models under each game situation (early: 0.775 ± 0.021, p< $10^{-15}$ ; late: 0.621 ± 0.018, p< $10^{-17}$ ; scared ghosts: 0.672 ± 0.025, p< $10^{-12}$ ; two-sample t-test). The perceptron model was even worse, both overall (0.624 ± 0.010, Figure 2B, white bars) and under each game situation (early: 0.582 ± 0.026, p< $10^{-40}$ ; late: 0.599 ± 0.019, p< $10^{-16}$ ; scared ghosts: 0.455 ± 0.030, p< $10^{-16}$ ; two-sample t-test). The results were similar when we tested the models with individual monkeys separately (Figure 2—figure supplement 1A and E). Admittedly, one may design better and more complex flat models than the two tested here. Yet, even our relatively simple LARL model was more computationally complex than our hierarchical model but performed much worse, illustrating the efficiency of hierarchical models.
 
-## Monkeys adopted TTB heuristic
+### Monkeys adopted TTB heuristic
 
 Neither our model nor the fitting procedure limits the number of strategies that may simultaneously contribute to the monkeys’ choices at any time, yet the fitting results show that a single strategy often dominated the monkeys’ behavior. In the example (Figure 2A, Figure 2—video 1), the monkey switched between different strategies with one dominating strategy at each time point. This was a general pattern. We ranked the strategies according to their weights at each time point. The histograms of the three dominating strategies’ weights from all time points show that the most dominating strategy’s weights (0.907 ± 0.117) were significantly larger than those of the secondary strategy (0.273 ± 0.233) and tertiary strategy (0.087 ± 0.137) by a significant margin (Figure 2C). The weight difference between the first and the second most dominating strategies was heavily skewed toward one (Figure 2D). Individual monkey analysis results were consistent (Figure 2—figure supplement 1B, C, F and G). Taken together, these results indicate that the monkeys adopted a TTB heuristics in which action decisions were formed with a single strategy heuristically and dynamically chosen.
 
@@ -77,15 +93,27 @@ Therefore, we labeled the monkeys’ strategy at each time point with the domina
 
 The local and the global strategy were most frequently used overall. The local strategy was particularly prevalent during the early game when the local pellets were abundant, while the global strategy contributed significantly during the late game when the local pellets were scarce (Figure 2E). Similar strategy dynamics were observed in the two monkeys (Figure 2—figure supplement 1D and H).
 
-## Strategy manifested in behavior
+### Strategy manifested in behavior
 
 The strategy fitting procedure is indifferent to how the monkeys chose between the strategies, but the fitting results provide us with some hints. The probability of the monkeys adopting the local or the global strategy correlated with the availability of local rewards: abundant local rewards lead to the local strategy (Figure 3A, individual monkeys: Figure 3—figure supplement 1A and E). On the other hand, when the ghosts were scared, the decision between chasing the ghosts and going on collecting the pellets depended on the distance between Pac-Man and the scared ghosts (Figure 3B, individual monkeys: Figure 3—figure supplement 1B and F). In addition, during the global strategy, the monkeys often moved Pac-Man to reach a patch of pellets far away from its current location. They chose the shortest path (Figure 3C, individual monkeys: Figure 3—figure supplement 1C and G) and made the fewest turns to do so (Figure 3D, individual monkeys: Figure 3—figure supplement 1D and H), demonstrating their goal-directed path-planning behavior under the particular strategy.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig3-v2.jpg)
+
+**Figure 3.:** (A) The probabilities of the monkeys adopting the local or global strategy correlate with the number of local pellets. Solid lines denote means, and shades denote standard errors. (B) The probabilities of the monkeys adopting the local or approach strategy correlate with the distance between Pac-Man and the ghosts. Solid lines denote means, and shades denote standard errors. (C) When adopting the global strategy to reach a far-away patch of pellets, the monkeys’ actual trajectory length was close to the shortest. The column denotes the actual length, and the row denotes the optimal number. The percentages of the cases with the corresponding actual lengths are presented in each cell. High percentages in the diagonal cells indicate close to optimal behavior. (D) When adopting the global strategy to reach a far-away patch of pellets, the monkeys’ number of turns was close to the fewest possible turns. The column denotes the actual turns, and the row denotes the optimal number. The percentages of the cases with the corresponding optimal numbers are presented in each cell. High percentages in the diagonal cells indicate close to optimal behavior. (E) Average fixation ratios of ghosts, energizers, and pellets when the monkeys used different strategies. (F) The monkeys’ pupil diameter increases around the strategy transition (solid line). Such increase was absent if the strategy transition went through the vague strategy (dashed line). Shades denote standard errors. Black bar at the bottom denotes p<0.01, two-sample t-test. See Figure 3—figure supplement 1 for the analysis for individual monkeys.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, E) The probabilities of the monkeys adopting the local or global strategy correlate with the number of local pellets. Solid lines denote means, and shades denote standard errors. (B, F) The probabilities of the monkeys adopting the local or approach strategy correlate with the distance between Pac-Man and the ghosts. Solid lines denote means, and shades denote standard errors. (C, G) When adopting the global strategy to reach a far-away patch of pellets, the monkeys’ actual trajectory length was close to the shortest. The column denotes the actual length, and the row denotes the optimal number. The percentages of the cases with the corresponding actual lengths are presented in each cell. High percentages in the diagonal cells indicate close to optimal behavior. (D, H) When adopting the global strategy to reach a far-away patch of pellets, the monkeys’ number of turns was close to the fewest possible turns. The column denotes the actual turns, and the row denotes the optimal number. The percentages of the cases with the corresponding optimal numbers are presented in each cell. High percentages in the diagonal cells indicate close to optimal behavior.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, E) Average fixation ratios of ghosts, energizers, and pellets when the monkeys used different strategies. (B, F) The monkeys’ pupil diameter increases around the strategy transition (solid line). Such increase was absent if the strategy transition went through the vague strategy (dashed line). Shades denote standard errors across trials. Black bars at the bottom denote p<0.01, two-sample t-test. (C, G) The monkeys’ pupil diameter increase was evident in transitions from local to global. Shades denote standard errors across trials. Black bars at the bottom denote p<0.01, two-sample t-test. (D, H) The monkeys’ pupil diameter increase was evident in transitions from global to local in Monkey P. It was not obvious in Monkey O as the pupil size increased in general. Shades denote standard errors across trials. Black bars at the bottom denote p<0.01, two-sample t-test.
 
 The fitting results can be further corroborated from the monkeys’ eye movements and pupil dilation. Because different game aspects were used in different strategies, the monkeys should be looking at different things when using different strategies. We classified monkeys’ fixation locations into four categories: ghosts, energizers, pellets, and others (see Materials and methods for details). Figure 3E (individual monkeys: Figure 3—figure supplement 2A–E) shows the fixation ratio of these game objects under different strategies. Although a large number of fixations were directed at the pellets in all situations, they were particularly frequent under the local and energizer strategies. Fixations directed to the energizers were scarce, unless when the monkeys adopted the energizer strategy. On the other hand, monkeys looked at the ghosts most often when the monkeys were employing the approach strategy to chase the ghosts (p<0.001, two-sample t-test). Interestingly, the monkeys also looked at the ghosts more often under the energizer strategy than under the local strategy (p<0.001, two-sample t-test), which suggests that the monkeys were also keeping track of the ghosts when going for the energizer.
 
 While the fixation patterns revealed that the monkeys paid attention to different game elements in different strategies, we also identified a physiological marker that reflected the strategy switches in general but was not associated with any particular strategy. Previous studies revealed that non-luminance-mediated changes in pupil diameter can be used as markers of arousal, surprise, value, and other factors during decision-making (Joshi and Gold, 2020). Here, we analyzed the monkeys’ pupil dilation during strategy transitions. When averaged across all types of transitions, the pupil diameter exhibited a significant but transient increase around strategy transitions (p<0.01, two-sample t-test, Figure 3F, also individual monkeys: Figure 3—figure supplement 2B–F). Such an increase was absent when the strategy transition went through a vague period. This increase was evident in the transitions in both directions, for example, from local to global (Figure 3—figure supplement 2C–G) and from global to local (Figure 3—figure supplement 2D–H). Therefore, it cannot be explained by any particular changes in the game state, such as the number of local pellets. Instead, it reflected a computation state of the brain associated with strategy switches (Nassar et al., 2012; Urai et al., 2017; Wang et al., 2021).
 
-## Compound strategies
+### Compound strategies
 
 The compositional strategy model divides the monkeys’ decision-making into different hierarchies (Figure 4). At the lowest level, decisions are made for actions, the joystick movements of up, down, left, and right, using one of the basis strategies. At the middle level, decisions are made between these basis strategies, most likely with a heuristic for the monkeys to reduce the complexity of the decision-making. The pupil dilation change reflected the decision-making at this level. In certain situations, the basis strategies may be pieced together and form compound strategies as a higher level of decision-making. These compound strategies are not simple impromptu strategy assemblies. Instead, they may reflect more advanced planning. Here, building on the strategy analyses, we describe two scenarios in which compound strategies were used by the monkeys.
 
@@ -97,11 +125,27 @@ The first scenario involves the energizers, which is an interesting feature of t
 
 The strategy weight dynamics around the energizer consumption showed distinct patterns when the animals adopted the compound strategy planned attack (Figure 5A, individual monkeys: Figure 5—figure supplement 1A–E). When the monkeys carried out planned attacks, they started to approach the ghosts well before the energizer consumption, which is revealed by the larger weights of the approach strategy than that in the accidental consumption. The monkeys also cared less for the local pellets in planned attacks before the energizer consumption. The weight dynamics suggest that the decision of switching to the approach strategy was not an afterthought but planned well ahead. The monkeys strung the energizer/local strategy with the approach strategy together into the compound strategy to eat an energizer and then hunt the ghosts. Such a compound strategy should only be employed when Pac-Man, ghosts, and an energizer are in close range. Indeed, the average of distance between Pac-Man, the energizer, and the ghosts was significantly smaller in planned attack than in accidental consumption (Figure 5B, p<0.001, two-sample t-test, individual monkeys: Figure 5—figure supplement 1B–F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig5-v2.jpg)
+
+**Figure 5.:** (A) Average strategy weight dynamics in planned attacks (left) and accidental consumptions (right). Solid lines denote means, and shades denote standard errors. (B) The average distance between Pac-Man, the energizer, and the ghosts in planned attacks and accidental consumptions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (C) Ratios of fixations on the ghosts, the energizer, and Pac-Man. Vertical bars denote standard errors. ***p<0.001, **p<0.01, two-sample t-test. (D) The pupil size aligned to the ghost consumption. The black bar near the abscissa denotes data points where the two traces are significantly different (p<0.01, two-sample t-test). Shades denote standard errors at every time point. See Figure 5—figure supplement 1 for the analysis for individual monkeys.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, E) Average strategy weight dynamics in planned attacks (left) and accidental consumptions (right). Solid lines denote means, and shades denote standard errors. (B, F) The average distance between Pac-Man, the energizer, and the ghosts in planned attacks and accidental consumptions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (C, G) Ratios of fixations on the ghosts, the energizer, and Pac-Man. Vertical bars denote standard errors. ***p<0.001, ** p<0.01, two-sample t-test. (D, H) The pupil size aligned to the ghost consumption. The black bar near the abscissa denotes data points where the two traces are significantly different (p<0.01, two-sample t-test). Shades denote standard errors at every time point.
+
 Again, the planned attacks were also associated with distinct eye movement and pupil size dynamics. The monkeys fixated on the ghosts, the energizers, and Pac-Man more frequently before the energizer consumption in planned attacks than in accidental consumption (Figure 5C, p<0.001, two-sample t-test, individual monkeys: Figure 5—figure supplement 1C–G), reflecting more active planning under the way. In addition, the monkeys’ pupil sizes were smaller before they caught a ghost in planned attacks than in accidental consumption (p<0.01, two-sample t-test), which may reflect a lack of surprise under planned attacks (Figure 5D, individual monkeys: Figure 5—figure supplement 1D–H). The difference was absent after the ghost was caught.
 
 The second scenario involves a counterintuitive move in which the monkeys moved Pac-Man toward a normal ghost to die on purpose in some situations. Although the move appeared to be suboptimal, it was beneficial in a certain context. The death of Pac-Man resets the game and returns Pac-Man and the ghosts to their starting positions in the maze. As the only punishment in the monkey version of the game is a time-out, it is advantageous to reset the game by committing such suicide when local pellets are scarce, and the remaining pellets are far away.
 
 To analyze this behavior, we defined the compound strategy suicide using strategy labels. We computed the distances between Pac-Man and the closest pellets before and after its death. In suicides, Pac-Man’s death significantly reduced this distance (Figure 6A, upper histogram, Figure 6—video 1, individual monkeys: Figure 6—figure supplement 1A–E). This was not true when the monkeys were adopting the evade strategy but failed to escape from the ghosts (failed evasions, Figure 6A, bottom histogram, Figure 6—video 2, individual monkeys: Figure 6—figure supplement 1A–E). In addition, the distance between Pac-Man and the ghosts was greater in suicides (Figure 6B, p<0.001, two-sample t-test, individual monkeys: Figure 6—figure supplement 1B and F). Therefore, these suicides were a proactive decision. Consistent with the idea, the monkeys tended to saccade toward the ghosts and pellets more often in suicides than in failed evasions (Figure 6C, p<0.001, two-sample t-test, individual monkeys: Figure 6—figure supplement 1C and G). Their pupil size decreased even before Pac-Man’s death in suicides, which was significantly smaller than in failed evasions, suggesting that the death was anticipated (Figure 6D, p<0.01, two-sample t-test, individual monkeys: Figure 6—figure supplement 1D and H).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig6-v2.jpg)
+
+**Figure 6.:** (A) Distance difference between Pac-Man and closest pellet before and after the death is smaller in suicides than in failed evasions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (B) Average distance between Pac-Man and the ghosts was greater in suicides than in failed evasions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (C) The monkeys fixated more frequently on the ghosts and the pellets in suicides than in failed evasions. Vertical bars denote standard errors. ***p<0.001, two-sample t-test. (D) The monkeys’ pupil size decreased before Pac-Man’s death in suicides. The black bar near the abscissa denotes data points where the two traces are significantly different (p<0.01, two-sample t-test). Shades denote standard errors at every time point. See Figure 6—figure supplement 1 for the analysis for individual monkeys.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74500/elife-74500-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, E) The distance difference between Pac-Man and closest pellet before and after the death is smaller in suicides than in failed evasions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (B, F) The average distance between Pac-Man and the ghosts was greater in suicides than in failed evasions. Vertical dashed lines denote means. ***p<0.001, two-sample t-test. (C, G) The monkeys fixated more frequently on the ghosts and the pellets in suicides than in failed evasions. Vertical bars denote standard errors. ***p<0.001, two-sample t-test. (D, H) The monkeys’ pupil size decreased before Pac-Man’s death in suicides. The black bars near the abscissa denote data points where the two traces are significantly different (p<0.01, two-sample t-test). Shades denote standard errors at every time point.
 
 Together, these two examples demonstrated how monkeys’ advanced gameplay can be understood with concatenated basis strategies. The compositional strategy model not only provides a good fit for the monkeys’ behavior but also offers insights into the monkeys’ gameplay. The compound strategies demonstrate that the monkeys learned to actively change the game into desirable states that can be solved with planned strategies. Such intelligent behavior cannot be explained with a passive foraging strategy.
 
@@ -123,27 +167,27 @@ In summary, our model distilled a complex task into different levels of decision
 
 ## Materials and methods
 
-## Subjects and materials
+### Subjects and materials
 
 Two male rhesus monkeys (Macaca mulatta) were used in the study (O and P). They weighed on average 6–7 kg during the experiments. All procedures followed the protocol approved by the Animal Care Committee of Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences (CEBSIT-2021004).
 
-## Training procedure
+### Training procedure
 
 To help monkeys understand the Pac-Man game and develop their decision-making strategies, we divided the training procedures into the following three stages. In each stage, we gradually increased game depth based on their conceptual and implementational complexity.
 
-## Stage 1: Reward
+#### Stage 1: Reward
 
 In the first stage, the monkeys were trained to use the joystick to control Pac-Man to navigate in simple mazes for collecting pellets (Appendix 1—figure 1A). Training began with the horizontal and the vertical linear mazes. In each maze, Pac-Man started from the center where pellets were at one end and a static ghost was at the other end. Monkeys earned two drops of juice (one drop = 0.5 mL) immediately when consuming a pellet. Monkeys could earn an extra-large amount of juice by clearing all pellets. Running toward the static ghost would lead to the end of the trial with a time-out penalty (5 s). When the monkeys completed more than 100 correct trials with above 80% accuracy, we introduced two slightly more complex mazes, the T and the upside-down T maze. After the monkeys completed more than 50 correct trials in the T-mazes with above 80% accuracy, we introduced the H-maze. Stage 1 training included 58 sessions for Monkey O and 84 sessions for Monkey P.
 
-## Stage 2: Ghost
+#### Stage 2: Ghost
 
 In the second stage, the monkeys were trained to deal with the ghosts (Appendix 1—figure 1B). In addition, the mazes used in this stage were closed and had loops. A ghost would block one of the routes leading to the pellets, forcing the monkeys to take alternative routes. In the first phase, the ghost was stationary in a square maze. Pac-Man started from one of the four corners, and pellets were distributed in the two adjacent arms. The ghost was placed at the corner where the two arms joined, forcing Pac-Man to retreat after clearing the pellets in one arm. In the second phase, the ghost moved within the arm. In the third phase, the ghost would chase Pac-Man. Stage 2 training included 86 sessions for Monkey O and 74 sessions for Monkey P.
 
-## Stage 3: Energizer
+#### Stage 3: Energizer
 
 In this stage, the monkeys were trained to understand the energizer (Appendix 1—figure 1C). In the first phase, the monkeys were trained to understand the distinction between normal and scared ghosts. We used the square maze with a normal or a scared ghost randomly placed across trials. Blinky in the normal mode would chase Pac-Man, while in scared mode move in random directions at half of Pac-Man’s speed. Monkeys earned eight drops of juice after eating a scared ghost. In the second phase, the monkeys were trained with the maze that the scared mode could only be triggered by an energizer. Two energizers were randomly placed in each maze. Monkeys earned four drops of juice when eating an energizer and turned ghosts into the scared mode immediately. The scared mode lasted 14 s. As a reminder, ghosts in the scared mode flashed for 2 s before turning back into the normal mode. In the third phase, we adopted the maze used in our final gameplay recording (Figure 1A). The detailed game rules can be found in the following ‘Task paradigm’ session. Stage 3 training included 248 sessions for Monkey O and 254 sessions for Monkey P.
 
-## Task paradigm
+### Task paradigm
 
 The Pac-Man game in this study was adapted from the original game by Namco. All key concepts of the game are included. In the game, the monkey navigates a character named Pac-Man through a maze with a four-way joystick to collect pellets and energizers. The maze is sized at 700 × 900 pixels, displayed at the resolution of 1920 × 1080 on a 27-inch monitor placed at 68 cm away from the monkey. The maze can be divided into square tiles of 25 × 25 pixel.(Binz et al., 2022). The pellets and energizers are placed at the center of a tile, and they are consumed when Pac-Man moves into the tile. In the recording sessions, there are 88 or 73 pellets in the maze, each worth two drops of juice, and three or four energizers, each worth four drops of juice. We divided the maze into four quarters, and the pellets and energizers are randomly placed in three of them, with one randomly chosen quarter empty. In addition, just as in the original game, there are five different kinds of fruits: cherry, strawberry, orange, apple, and melon. They yield 3, 5, 8, 12, and 17 drops of juice, respectively. In each game, one randomly chosen fruit is placed at a random location at each game. As in the original game, the maze also contains two tunnels that teleport Pac-Man to the opposite side of the maze.
 
@@ -151,89 +195,137 @@ There are two ghosts in the game, Blinky and Clyde. They are released from the G
 
 When Pac-Man is caught by a ghost, it and the ghosts return to the starting location. The game is restarted after a time-out penalty. When all the pellets and energizers are collected, the monkey receives a reward based on the number of rounds that takes the monkey to complete the game: 20 drops if the round number is from 1 to 3; 10 drops if the round number is from 4 to 5; 5 drops if the round number is larger than 5.
 
-## Behavioral data recording and preprocessing
+### Behavioral data recording and preprocessing
 
 We monitored the monkeys’ joystick movements, eye positions, and pupil sizes during the game. The joystick movements were sampled at 60 Hz. We used Eyelink 1000 Plus to record two monkeys’ eye positions and pupil sizes. The sampling rate was 500 Hz or 1000 Hz.
 
 The data we presented here are based on the sessions after the monkeys went through all the training stages and were able to play the game consistently. On average, monkeys completed 33 ± 9 games in each session and each game took them 4.86 ± 1.75 attempts. The dataset includes 3217 games, 15,772 rounds, and 899,381 joystick movements. The monkeys’ detailed game statistics are shown in Appendix 1—figure 2.
 
-## Basic performance analysis
+### Basic performance analysis
 
-In Figure 1B, we compute the rewards for each available moving direction at each location by summing up the rewards from the pellets (one unit) and the energizers (two units) within five steps from Pac-Man’s location. Locations are categorized into four path types defined in Appendix 1—table 1. For each path type, we calculate the probability that the monkey moved in the direction with the largest rewards conditioned on the reward difference between the most (Rmax) and the second most rewarding directions (R2max). In Figure 1C, we compute the likelihood of Pac-Man moving toward or away from the ghosts in different modes with different Dijkstra distance between Pac-Man and the ghosts. We classified Pac-Man’s moving action into two types, toward and away, according to whether the action decreased or increased the Dijkstra distance between Pac-Man and the ghosts. Dijkstra distance is defined as the distance of the shortest path between two positions in the maze.
+In Figure 1B, we compute the rewards for each available moving direction at each location by summing up the rewards from the pellets (one unit) and the energizers (two units) within five steps from Pac-Man’s location. Locations are categorized into four path types defined in Appendix 1—table 1. For each path type, we calculate the probability that the monkey moved in the direction with the largest rewards conditioned on the reward difference between the most ($R_{max}$) and the second most rewarding directions ($R_{2max}$). In Figure 1C, we compute the likelihood of Pac-Man moving toward or away from the ghosts in different modes with different Dijkstra distance between Pac-Man and the ghosts. We classified Pac-Man’s moving action into two types, toward and away, according to whether the action decreased or increased the Dijkstra distance between Pac-Man and the ghosts. Dijkstra distance is defined as the distance of the shortest path between two positions in the maze.
 
-## Basis strategies
+### Basis strategies
 
-We include six basis strategies in the hierarchical strategy model. In each basis strategy, we compute the utility values for all directions (D={left, right, up, down}), expressed as a vector of length 4. Notice that not all directions are available, utility values for unavailable directions are set to be negative infinity. The moving direction is computed according to the largest average utility value for each strategy.
+We include six basis strategies in the hierarchical strategy model. In each basis strategy, we compute the utility values for all directions ($D$={left, right, up, down}), expressed as a vector of length 4. Notice that not all directions are available, utility values for unavailable directions are set to be negative infinity. The moving direction is computed according to the largest average utility value for each strategy.
 
-We determine the utility associated with each direction and its possible trajectories. Specifically, let p represents Pac-Man’s position and τp represent a path starting from p with the length of 10. We define g=gB,gC to be the position of two ghosts, Blinky and Clyde, and r=rp,re,rf to be the positions of pellets, energizers, and fruits, respectively. We compute the utility of each path τp as follows (without specific noting, τp is denoted as τ for simplicity).
+We determine the utility associated with each direction and its possible trajectories. Specifically, let $p$ represents Pac-Man’s position and $\taup$ represent a path starting from p with the length of 10. We define $g=g_{B},g_{C}$ to be the position of two ghosts, Blinky and Clyde, and $r=r_{p},r_{e},r_{f}$ to be the positions of pellets, energizers, and fruits, respectively. We compute the utility of each path $\taup$ as follows (without specific noting, $\taup$ is denoted as $\tau$ for simplicity).
 
-We use the local strategy to describe the local graze behavior within a short distance with the utility function defined as(1)U(τ)=∑r′∈τ∩re,rp,rfReward(r′)
+We use the local strategy to describe the local graze behavior within a short distance with the utility function defined as
 
-where τ∩re,rp,rf denotes the pellets/energizers/fruits on the path. Specific parameters for awarded and penalized utilities of each game element in the model can be found in Appendix 1—table 2.
+$$
+U(\tau)=\sumr^{′}\in\tau∩r_{e},r_{p},r_{f}Reward(r^{′})
+$$
 
-Evade strategy focuses on dodging close-by ghosts. Specifically, we create two evade strategies (evade Blinky and evade Clyde) that react to the respective ghost, with the utility function defined as(2)U(τ)={I(gisnormal)×Penalty(g),ifg∈τ0,otherwise
+where $\tau∩r_{e},r_{p},r_{f}$ denotes the pellets/energizers/fruits on the path. Specific parameters for awarded and penalized utilities of each game element in the model can be found in Appendix 1—table 2.
 
-with g= gB and g= gC, respectively. Here, Is is an indication function, where Is=1 when statement s is true, otherwise Is=0.
+Evade strategy focuses on dodging close-by ghosts. Specifically, we create two evade strategies (evade Blinky and evade Clyde) that react to the respective ghost, with the utility function defined as
 
-Energizer strategy moves Pac-Man toward the closest energizer. In this case, the rewards set r only contains the positions of energizers (i.e., r=re):(3)U(τ)=∑r′∈τ∩reReward(r′)
+$$
+U(\tau)={I(gisnormal)\timesPenalty(g),ifg\in\tau0,otherwise
+$$
 
-Approach strategy moves Pac-Man toward the ghosts, regardless of the ghosts’ mode. Its utility function is(4)U(τ)=∑r′∈τ∩gB,gCReward(r′)
+with $g= g_{B}$ and $g= g_{C}$, respectively. Here, $Is$ is an indication function, where $Is=1$ when statement $s$ is true, otherwise $Is=0$.
+
+Energizer strategy moves Pac-Man toward the closest energizer. In this case, the rewards set $r$ only contains the positions of energizers (i.e., $r=r_{e}$):
+
+$$
+U(\tau)=\sumr^{′}\in\tau∩r_{e}Reward(r^{′})
+$$
+
+Approach strategy moves Pac-Man toward the ghosts, regardless of the ghosts’ mode. Its utility function is
+
+$$
+U(\tau)=\sumr^{′}\in\tau∩g_{B},g_{C}Reward(r^{′})
+$$
 
 Global strategy does not use a decision tree. It counts the total number of pellets in the whole maze in each direction without considering any trajectories. For example, the utility for the down direction is the total number of pellets that sit vertically below Pac-Man’s location.
 
-We construct the utility of each agent as a vector Ua∈R4, for a ∈{local, global, evade Blinky, evade Clyde, approach, energizer} of the four directions. For each direction d∈D, its utility is obtained by averaging utilities Uτ on all the path sets τ∈T in that direction:(5)Ua,d={1|T|∑τ∈TUa(τ),ifdisavailable−∞,otherwise
+We construct the utility of each agent as a vector $U_{a}\inR^{4}, for a \in{local, global, evade Blinky, evade Clyde, approach, energizer}$ of the four directions. For each direction $d\inD$, its utility is obtained by averaging utilities $U\tau$ on all the path sets $\tau\inT$ in that direction:
 
-## Models and model fitting
+$$
+U_{a,d}={\frac{1}{|T|}\sum\tau\inTU_{a}(\tau),ifdisavailable−∞,otherwise
+$$
+
+### Models and model fitting
 
 We adopted a softmax policy to linearly combine the utility values under each basis strategy and used MLE to estimate the model parameters with the monkeys’ behavior.
 
-## Utility preprocessing
+#### Utility preprocessing
 
-To combine the strategies and produce a decision, we first preprocess the utility data computed from the decision trees with two steps. First, because two evade strategies have negative utility values, we calculate their difference to the worst-case scenario within a trial and use the difference, which is a positive value, as the utility for the two evade strategies:(6)Ua(t)=Ua(t)−mint(Ua(t)) for a∈{evade Blinky, evade Clyde}
+To combine the strategies and produce a decision, we first preprocess the utility data computed from the decision trees with two steps. First, because two evade strategies have negative utility values, we calculate their difference to the worst-case scenario within a trial and use the difference, which is a positive value, as the utility for the two evade strategies:
 
-Second, because the scale of utility value varies in different strategies, we normalize the utilities within each strategy:(7)Ua(t)=Ua(t)max(Ua(t))for a∈A
+$$
+U_{a}^{(t)}=U_{a}^{(t)}−min_{t}(U_{a}^{(t)}) for a\in{evade Blinky, evade Clyde}
+$$
 
-with A=local,global,evadeBlinky,evadeClyde,approach,energizer.
+Second, because the scale of utility value varies in different strategies, we normalize the utilities within each strategy:
 
-## Softmax policy
+$$
+U_{a}^{(t)}=\frac{U_{a}^{(t)}}{max(U_{a}^{(t)})}for a\inA
+$$
 
-With the adjusted and normalized utility values, each strategy a is associated with a set of utility values Ua,d for four directions d∈D. We compute the utility for each direction d by simply combining them linearly with strategy weights w∈R6 :(8)Qd(t)=∑a∈AwaUa,d(t).
+with $A=local,global,evadeBlinky,evadeClyde,approach,energizer$.
 
-The final decision is based on a softmax policy:(9)π(d|w)=exp⁡(Qd(t))∑d′∈Dexp⁡(Qd′(t)),
+#### Softmax policy
 
-where πdw describes the probability of choosing d given weights w.
+With the adjusted and normalized utility values, each strategy a is associated with a set of utility values $U_{a,d}$ for four directions $d\inD$. We compute the utility for each direction d by simply combining them linearly with strategy weights $w\inR^{6}$ :
 
-## Maximum likelihood estimate
+$$
+Q_{d}^{(t)}=\suma\inAw_{a}U_{a,d}^{(t)}.
+$$
 
-We use the MLE approach to estimate monkeys’ strategy weights w in a time window δ. Based on Pac-Man’s actual moving directions d* , we compute the likelihood as(10)L(d∗|w,δ)=∏t∈δexp⁡(Qd∗(t))∑d′∈Dexp⁡(Qd′(t))
+The final decision is based on a softmax policy:
 
-The strategy weights within a time window can be estimated by maximizing the log-likelihood:(11)w^=argmaxw∑t∈δ(Qd∗(t)−log(∑d′∈Dexp(Qd′(t))))
+$$
+\pi(d|w)=\frac{exp⁡(Q_{d}^{(t)})}{\sumd^{′}\inDexp⁡(Q_{d^{′}}^{(t)})},
+$$
 
-## Dynamic compositional strategy model
+where $\pidw$ describes the probability of choosing d given weights w.
+
+#### Maximum likelihood estimate
+
+We use the MLE approach to estimate monkeys’ strategy weights $w$ in a time window $\delta$. Based on Pac-Man’s actual moving directions $d^{*}$ , we compute the likelihood as
+
+$$
+L(d^{∗}|w,\delta)=\prodt\in\delta\frac{exp⁡(Q_{d^{∗}}^{(t)})}{\sumd^{′}\inDexp⁡(Q_{d^{′}}^{(t)})}
+$$
+
+The strategy weights within a time window can be estimated by maximizing the log-likelihood:
+
+$$
+w^=argmaxw\sumt\in\delta(Q_{d^{∗}}^{(t)}−log(\sumd^{′}\inDexp(Q_{d^{′}}^{(t)})))
+$$
+
+#### Dynamic compositional strategy model
 
 The dynamic compositional strategy model estimates the strategy weights using time windows of flexible length. We assume that the relative strategy weights are stable for a period. The weights can be estimated from the monkeys’ choices during this period. We design a two-pass fitting procedure to divide each trial into segments of stable strategies and extract the strategy weights for each segment, avoiding potential overfitting caused by segmentations too fine with too many weight parameters while still capturing the strategy dynamics. The procedure is as follows:
 
 To ensure that the fitted weights are unique (Buja et al., 1989) in each time window, we combine utilities of any strategies that give exactly the same action sequence and reduce multiple strategy terms (e.g., local and energizer) to one hybrid strategy (e.g., local + energizer). After MLE fitting, we divide the fitted weight for this hybrid strategy equally among the strategies that give the same actions in the time segments.
 
-## Static strategy model
+#### Static strategy model
 
 The static strategy model uses all data to estimate a single set of strategy weights.
 
-## LARL model
+#### LARL model
 
-The model shares the same structure with a standard Q-learning algorithm but uses the monkeys' actual joystick movements as the fitting target. To highlight the flatness of the model, we adopt a common assumption that the parameterization of the utility function is linear (Sutton and Barto, 2018) with respect to the seven game features: Qθs,d=∑iθi∙xi(s,d) . These features include the local pellet number within five steps in four directions xlocal , the Dijkstra distance to the closest pellet xclosest , the Dijkstra distance to the closest energizer xe , the global pellet number (distance larger than five steps) weighted by their inverse Dijkstra distances to Pac-Man xglobal , the Dijkstra distance to Blinky xgB , the Dijkstra distances to Clyde xgC, and the Dijkstra distance to the closest scared ghost xgS . If a feature is not available in some game context (e.g., xgS is not available when ghosts are in the normal mode or the dead mode), we denote it to be null. The update rule follows the standard temporal-difference learning rule:(12)θi′=θi+α(r(s,d,s′)+γQθ(s′,d′)−Qθ(s,d))⋅xi(s,d)
+The model shares the same structure with a standard Q-learning algorithm but uses the monkeys' actual joystick movements as the fitting target. To highlight the flatness of the model, we adopt a common assumption that the parameterization of the utility function is linear (Sutton and Barto, 2018) with respect to the seven game features: $Q_{\theta}s,d=\sumi\theta_{i}∙x_{i}(s,d)$ . These features include the local pellet number within five steps in four directions $x_{local}$ , the Dijkstra distance to the closest pellet $x_{closest}$ , the Dijkstra distance to the closest energizer $x_{e}$ , the global pellet number (distance larger than five steps) weighted by their inverse Dijkstra distances to Pac-Man $x_{global}$ , the Dijkstra distance to Blinky $x_{gB}$ , the Dijkstra distances to Clyde $x_{gC}$, and the Dijkstra distance to the closest scared ghost $x_{gS}$ . If a feature is not available in some game context (e.g., $x_{gS}$ is not available when ghosts are in the normal mode or the dead mode), we denote it to be null. The update rule follows the standard temporal-difference learning rule:
 
-where α is the learning rate, γ is the discount factor, and r(s,d,s′) is the reward that the agent received from state s to s’ via action d. All the reward values are the actual rewards that the monkeys received in the game. Compared to a typical TD update rule, the max operation in the utility-to-go term r(s,d,s′)+γ maxd′ Qθ(s′,d′) is replaced with the utility under the monkeys’ actual joystick movement r(s,d,s′)+γ Qθ(s′,d′) . Feature weights are randomly initialized, and we use the monkey behavioral data to update these weights. There are two model hyper-parameters:  learning rate α and discount factor γ. They are selected through threefold cross-validation. The best hyperparameters are α=0.01, γ=0.3 for Monkey O and α=0.025, γ=0.3 for Monkey P. The trained feature weights θ are shown in Appendix 1—table 7.
+$$
+\theta_{i}^{′}=\theta_{i}+\alpha(r(s,d,s^{′})+\gammaQ_{\theta}(s^{′},d^{′})−Q_{\theta}(s,d))⋅x_{i}(s,d)
+$$
 
-## Linear perceptron model
+where $\alpha$ is the learning rate, $\gamma$ is the discount factor, and $r(s,d,s^{′})$ is the reward that the agent received from state $s$ to $s’$ via action $d$. All the reward values are the actual rewards that the monkeys received in the game. Compared to a typical TD update rule, the max operation in the utility-to-go term $r(s,d,s^{′})+\gamma max_{d^{′}} Q_{\theta}(s^{′},d^{′})$ is replaced with the utility under the monkeys’ actual joystick movement $r(s,d,s^{′})+\gamma Q_{\theta}(s^{′},d^{′})$ . Feature weights are randomly initialized, and we use the monkey behavioral data to update these weights. There are two model hyper-parameters:  learning rate $\alpha$ and discount factor $\gamma$. They are selected through threefold cross-validation. The best hyperparameters are $\alpha=0.01$, $\gamma=0.3$ for Monkey O and $\alpha=0.025$, $\gamma=0.3$ for Monkey P. The trained feature weights $\theta$ are shown in Appendix 1—table 7.
 
-We build a linear perceptron as another representative flat descriptive model (without calculating utilities and strategies) to describe monkeys’ decision-making based on the same 20 features included in the other models. These features include the modes of Blinky and Clyde (two features), Dijkstra distances between Blinky and Pac-Man in four directions (four features), Dijkstra distances between Clyde and Pac-Man in four directions (four features), Dijkstra distances between the closest energizer and Pac-Man in four directions (four features), distances between fruits and Pac-Man in four directions (four features), the number of pellets within 10 steps of Pac-Man, and the number of pellets left in the maze. For unavailable directions, the corresponding feature value is filled with a none value. We trained a three-layer perceptron with monkeys’ choice behavior: an input layer for 20 features, a hidden layer, and an output layer for four directions. We used scikit-learn (https://scikit-learn.org/). The size of the hidden layer was selected from nhidden={16, 32, 64, 128, 256} with the largest average prediction accuracy on all data. For Monkey O, the best hidden unit number is 64, and for Monkey P, the best hidden unit number is 128. Each model uses Adam for optimization, training batch size = 128, learning rate = 0.001, regularization parameter = 0.0001, and the activation function f(⋅) for the hidden layer is an identity function.
+#### Linear perceptron model
 
-## Model comparison
+We build a linear perceptron as another representative flat descriptive model (without calculating utilities and strategies) to describe monkeys’ decision-making based on the same 20 features included in the other models. These features include the modes of Blinky and Clyde (two features), Dijkstra distances between Blinky and Pac-Man in four directions (four features), Dijkstra distances between Clyde and Pac-Man in four directions (four features), Dijkstra distances between the closest energizer and Pac-Man in four directions (four features), distances between fruits and Pac-Man in four directions (four features), the number of pellets within 10 steps of Pac-Man, and the number of pellets left in the maze. For unavailable directions, the corresponding feature value is filled with a none value. We trained a three-layer perceptron with monkeys’ choice behavior: an input layer for 20 features, a hidden layer, and an output layer for four directions. We used scikit-learn (https://scikit-learn.org/). The size of the hidden layer was selected from $n_{hidden}=${16, 32, 64, 128, 256} with the largest average prediction accuracy on all data. For Monkey O, the best hidden unit number is 64, and for Monkey P, the best hidden unit number is 128. Each model uses Adam for optimization, training batch size = 128, learning rate = 0.001, regularization parameter = 0.0001, and the activation function $f(⋅)$ for the hidden layer is an identity function.
+
+#### Model comparison
 
 We compare four models (static strategy model, dynamic strategy model, LARL, and linear perceptron model) in four game contexts shown in Figure 2B, Figure 2—figure supplement 1A and E, and Appendix 1—table 4. Fivefold cross-validations are used to evaluate the fitting performance of these models with each monkeys’ behavior data.
 
-## Strategy heuristic analysis
+#### Strategy heuristic analysis
 
 We label the behavior strategy as vague when the weight difference between the largest and the second largest strategies is less than 0.1 (Figure 2D). Otherwise, the labels are based on the strategy with the largest weight.
 
@@ -241,7 +333,7 @@ In Figure 3A and B, Figure 3—figure supplement 1A, B, E, and F, we evaluate th
 
 In Figure 3C and D and Figure 3—figure supplement 1C, D, G and H, monkeys’ moving trajectories with at least four consecutive steps labeled as global strategy are selected. We use Dijkstra’s algorithm to compute the shortest path from the starting position when the monkey switched to global strategy to the ending position when the monkey first reached a pellet. The trajectory with the fewest turns is determined by sorting all possible paths between the starting and the ending position.
 
-## Eye movement analysis
+### Eye movement analysis
 
 We label monkeys’ fixation targets based on the distance between the eye position and the relevant game objects: Pac-Man, ghosts, pellets, and energizer. When the distances are within one tile (25 pixel), we add the corresponding target to the label. There can be multiple fixation labels because these objects may be close to each other.
 
@@ -249,9 +341,9 @@ In Figure 3E and Figure 3—figure supplement 2A and E, we select strategy perio
 
 In the pupil dilation analyses in Figure 3F and Figure 3—figure supplement 2B, C, D, F, G, and H, we z-score the pupil sizes in each game round. Data points that are three standard deviations away from the mean are excluded. We align the pupil size to strategy transitions and calculate the mean and the standard error (Figure 3F, solid line and shades). As the control, we select strategy transitions that go through the vague strategy and align the data to the center of the vague period to calculate the average pupil size and the standard error (Figure 3F, Figure 3—figure supplement 2B and F, dashed line and shades). Figure 3—figure supplement 2C, D, G and H are plotted in a similar way but only specific strategy transitions.
 
-## Compound strategy analysis
+### Compound strategy analysis
 
-## Planned attack
+#### Planned attack
 
 We define planned attack and accidental consumption trials according to the strategy labels after the energizer consumption: when at least 8 out of the 10 time steps after the energizer consumption are labeled as the approach strategy, the trial is defined as planned attack; otherwise, this trial is defined as accidental consumption. There are 478 (Monkey O) and 459 (Monkey P) planned attack trials and 1984 (Monkey O) and 1257 (Monkey P) accidental consumption trials. These trials are aligned to the time of energizer consumption in Figure 5A and Figure 5—figure supplement 1A and E.
 
@@ -259,7 +351,7 @@ In Figure 5B and Figure 5—figure supplement 1B and F, the average of Pac-Man-e
 
 In some of the accidental consumption trials (Monkey O: 625/31.5%; Monkey P: 477/37.9%), Pac-Man caught a ghost although the monkeys did not pursue the ghosts immediately after the energizer consumption. In contrast, all planned attack trials resulted in Pac-Man catching the ghosts successfully. These trials are aligned to the ghost consumption in Figure 5D and Figure 5—figure supplement 1D and H.
 
-## Suicide
+#### Suicide
 
 We define suicide and failed evasion trials based on the strategy labels in the last ten steps before Pac-Man’s death: a trial is defined as suicide when all 10 steps are labeled as approach and as failed evasion when all steps are labeled as evade.
 

@@ -26,23 +26,23 @@
 
 ### Affiliations
 
-1. https://ror.org/00412ts95 The Vision Center, Department of Surgery, and Saban Research Institute, Children’s Hospital Los Angeles Los Angeles United States
-2. https://ror.org/03taz7m60 Development, Stem Cell, and Regenerative Medicine Program, Keck School of Medicine, University of Southern California Los Angeles United States
-3. https://ror.org/03taz7m60 Cancer Biology and Genomics Program, Keck School of Medicine, University of Southern California Los Angeles United States
-4. https://ror.org/03taz7m60 Department of Cancer Biology, Keck School of Medicine, University of Southern California Los Angeles United States
-5. https://ror.org/03taz7m60 Norris Comprehensive Cancer Center, Keck School of Medicine, University of Southern California Los Angeles United States
-6. https://ror.org/03taz7m60 Maternal-Fetal Medicine Division of the Department of Obstetrics and Gynecology, Keck School of Medicine, University of Southern California Los Angeles United States
-7. https://ror.org/00412ts95 Department of Radiology and The Saban Research Institute, Children’s Hospital Los Angeles Los Angeles United States
-8. https://ror.org/03taz7m60 Department of Radiology, Keck School of Medicine, University of Southern California Los Angeles United States
-9. https://ror.org/03taz7m60 Department of Development, Stem Cell, and Regenerative Medicine, Keck School of Medicine, University of Southern California Los Angeles United States
-10. https://ror.org/03taz7m60 Department of Integrative Anatomical Sciences, Keck School of Medicine, University of Southern California Los Angeles United States
-11. https://ror.org/03taz7m60 USC Roski Eye Institute, Department of Ophthalmology, Keck School of Medicine, University of Southern California Los Angeles United States
+1. The Vision Center, Department of Surgery, and Saban Research Institute, Children’s Hospital Los Angeles Los Angeles United States ([ROR:00412ts95](https://ror.org/00412ts95))
+2. Development, Stem Cell, and Regenerative Medicine Program, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+3. Cancer Biology and Genomics Program, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+4. Department of Cancer Biology, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+5. Norris Comprehensive Cancer Center, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+6. Maternal-Fetal Medicine Division of the Department of Obstetrics and Gynecology, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+7. Department of Radiology and The Saban Research Institute, Children’s Hospital Los Angeles Los Angeles United States ([ROR:00412ts95](https://ror.org/00412ts95))
+8. Department of Radiology, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+9. Department of Development, Stem Cell, and Regenerative Medicine, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+10. Department of Integrative Anatomical Sciences, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+11. USC Roski Eye Institute, Department of Ophthalmology, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 
 † Corresponding author
 
 ## Abstract
 
-Human cone photoreceptors differ from rods and serve as the retinoblastoma cell-of-origin, yet the developmental basis for their distinct behaviors is poorly understood. Here, we used deep full-length single-cell RNA-sequencing (scRNA-seq) to distinguish post-mitotic cone and rod developmental states and identify cone-specific features related to retinoblastomagenesis. The analyses revealed nascent, immediately post-mitotic cone and rod precursors characterized by higher THRB or NRL regulon activities, immature and maturing cone and rod precursors with concurrent cone- and rod-related gene and regulon expression, and distinct early and late cone and rod maturation states distinguished by maturation-associated declines in RAX regulon activity. Cell-state-specific gene expression features inferred from full-length scRNA-seq were consistent with past 3' scRNA-seq analyses. Beyond the cell state characterizations, full-length scRNA-seq revealed that both L/M cone and rod precursors co-expressed NRL and THRB RNAs yet differentially expressed functionally antagonistic NRL isoforms and prematurely terminated THRB transcripts. Moreover, early L/M cone precursors sequentially expressed several lncRNAs along with MYCN , which composed the seventh most L/M-cone-specific regulon, and SYK , which was implicated in the cone precursors’ proliferative response to RB1 loss. These findings reveal previously unresolved photoreceptor precursor states and suggest a role for early cone-precursor-intrinsic SYK expression in retinoblastoma initiation.
+Human cone photoreceptors differ from rods and serve as the retinoblastoma cell-of-origin, yet the developmental basis for their distinct behaviors is poorly understood. Here, we used deep full-length single-cell RNA-sequencing (scRNA-seq) to distinguish post-mitotic cone and rod developmental states and identify cone-specific features related to retinoblastomagenesis. The analyses revealed nascent, immediately post-mitotic cone and rod precursors characterized by higher THRB or NRL regulon activities, immature and maturing cone and rod precursors with concurrent cone- and rod-related gene and regulon expression, and distinct early and late cone and rod maturation states distinguished by maturation-associated declines in RAX regulon activity. Cell-state-specific gene expression features inferred from full-length scRNA-seq were consistent with past 3' scRNA-seq analyses. Beyond the cell state characterizations, full-length scRNA-seq revealed that both L/M cone and rod precursors co-expressed NRL and THRB RNAs yet differentially expressed functionally antagonistic NRL isoforms and prematurely terminated THRB transcripts. Moreover, early L/M cone precursors sequentially expressed several lncRNAs along with MYCN, which composed the seventh most L/M-cone-specific regulon, and SYK, which was implicated in the cone precursors’ proliferative response to RB1 loss. These findings reveal previously unresolved photoreceptor precursor states and suggest a role for early cone-precursor-intrinsic SYK expression in retinoblastoma initiation.
 
 ## Introduction
 
@@ -56,9 +56,25 @@ In this study, we sought to further define the transcriptomic underpinnings of h
 
 ## Results
 
-## Regulon-defined RPC and photoreceptor precursor states
+### Regulon-defined RPC and photoreceptor precursor states
 
 To interrogate transcriptomic changes during human photoreceptor development, dissociated RPCs and photoreceptor precursors were FACS-enriched from 18 retinae, ages FW13-19 (Figure 1—figure supplement 1A), and isolated using microfluidics or direct sorting into microliter droplets, followed by full-length cDNA synthesis, paired-end sequencing, and alignment to Ensembl transcript isoforms (Figure 1A). The FACS enrichment was based on a prior cone isolation method (Xu et al., 2014) but with wider gating to include rods and RPCs. After sequencing, we excluded all cells with <100,000 read counts and 18 cells expressing one or more markers of retinal ganglion, amacrine, and/or horizontal cells (POU4F1, POU4F2, POU4F3, TFAP2A, TFAP2B, ISL1) and concurrently lacking photoreceptor lineage marker OTX2. This yielded 794 single cells with averages of 3,750,417 uniquely aligned reads, 8278 genes detected, and 20,343 Ensembl transcripts inferred (Figure 1—figure supplement 1A–C). Sequencing batches were normalized and transcriptomes clustered and visualized in uniform manifold approximation and projection (UMAP) plots that integrated cells across different retinae, ages, isolation methods, and sequencing runs (Figure 1B and C and Figure 1—figure supplement 1D–F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of sample collection and sequencing. (B, C) UMAP plots showing low-resolution cell type clusters (B) and ages (C). (D) Expression of marker genes for RPC/MGs (LHX2), rods (NR2E3), S cones (OPN1SW), L/M cones (THRB). Insets: Gene expression violin plots (from left to right): RPC/MG (red), iPRP (brown), LM cone (green), S cone (teal), early rod (blue), late rod (pink). (E) Expression of markers of rod maturation (PDE6G, RHO) and cone maturation (PDE6H, OPN1LW). Arrowheads: Late-maturing RHO+ rods (top), late-maturing OPN1LW+ cones (bottom). See Figure 1—figure supplement 2 for additional examples. UMAP and violin plots for any gene or transcript isoform can be produced at https://docker.saban.chla.usc.edu/cobrinik/app/seuratApp/.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Retinae and cell numbers examined at each age. (B) Histogram of total read counts for each cell, colored by sequencing run. Seq 1 cells were isolated by C1, Seq 2 cells by FACS or C1 as indicated, and all others by FACS. Dotted line: 100,000 read cutoff for cell exclusion. (C) Box plots of read counts, genes detected, and Ensembl transcript isoforms detected per cell ordered by fetal age and specimen number. (D-F) UMAP plots colored by sequencing run (D), isolation method (E), or retina ID (F).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Insets: Gene expression violin plots (from left to right): RPC/MG (red), iPRP (brown), LM cone (green), S cone (teal), early rod (blue), late rod (pink). UMAP and violin plots for any gene or Ensembl transcript can be produced at https://docker.saban.chla.usc.edu/cobrinik/app/seuratApp/.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A, C, E) Volcano plots of differential expression (pAdj <0.05, log2FC >|0.5|) between ER and LR (A), LM and S (C), and spatially separated late-maturing L/M cones and remaining LM cluster (E). Labels indicate genes with highest significance and fold change. (B,D) Overrepresentation of molecular function ontologies for genes upregulated in LR over ER (B) or upregulated in LM over S (D).(F) UMAP plots of upregulated genes in the late-maturing L/M cone group. (G, H) Volcano plots of differential expression (pAdj <0.01, log2FC >|0.5|) between Rod and Rod Precursor (G) and ML Cone and Cone Precursor (H) subclasses as defined Figure 3 of Zuo et al., 2024. Late rod- and late cone-enriched genes labeled in (A) and (E) are also labeled when present in (G) and (H).
 
 Low-resolution Louvain clustering (level 0.4) generated six clusters that segregated into mostly distinct UMAP domains (Figure 1B). One cluster was comprised of RPCs and Mϋller glia (MG), with specific expression of LHX2, VSX2, SOX2, and SLC1A3, while five clusters were comprised of cells with photoreceptor features, with wide expression of OTX2 and CRX and cluster-specific rod- and cone gene expression (Figure 1D and Figure 1—figure supplement 2). In UMAP space, the cluster designated immature photoreceptor precursors (iPRPs) intermixed with the RPC/MG population, extended towards early L/M cone precursors, and was predominantly comprised of cells expressing the L/M cone determinant THRB (Figure 1B and D).
 
@@ -76,11 +92,23 @@ To further interrogate cell identities, we used SCENIC to identify cluster-speci
 
 **Figure 2.:** (A) Ward-clustered heatmap of the highest scoring SCENIC regulons in each cluster, displaying Z-score normalized regulon activities. Late = late-maturing L/M cones. (B) Box plot of RAX regulon area under the curve (AUC) values for early and late L/M cones and rods. *, p<0.005; ***, p<0.0005, Dunn test. (C,D) UMAP plots of regulon AUC values for (C) PAX6 (RPC/MG) and E2F2 (RPC), and (D) OTX2 (photoreceptors and photoreceptor-committed RPCs), NRL (rod) and THRB and ISL2 (L/M cone).
 
-## Differential expression of NRL and THRB isoforms in rod and cone precursors
+### Differential expression of NRL and THRB isoforms in rod and cone precursors
 
 Although cone and rod precursors segregated into distinct clusters, mRNAs encoding rod-determining factor NRL, L/M cone-determining factor TRβ, and cone marker RXRγ were co-expressed in both rod and cone precursor populations, with mean NRL expression only 4.3-fold higher in the ER vs LM cluster, mean THRB expression 5.0-fold higher in LM vs LR, and mean RXRG expression 4.3-fold higher in LM vs ER (Figure 1—figure supplement 2C and D). Cone NRL expression was unexpected given NRL’s role in rod fate determination (Kallman et al., 2020) and rod-specific NRL regulon activity (Figure 2A and D). Similarly, rod RXRG and THRB expression were unexpected given their roles in cone gene expression and fate determination (Ng et al., 2001; Roberts et al., 2005) and L/M cone-specific THRB regulon activity (Figure 2A and D). Accordingly, we used full-length scRNA-seq data to determine if cone and rod precursors differentially express NRL, THRB, and RXRG transcript isoforms.
 
 For NRL, three assigned transcript isoforms (ENST00000397002, ENST00000561028, and ENST00000558280) are predicted to encode the canonical full-length NRL protein (FL-NRL) (RefSeq NP_001341697.1), while two others (ENST00000560550 and ENST00000396995) are previously uncharacterized transcripts predicted to use an alternative ‘P2’ promoter and first exon, here termed exon 1T (Figure 3A–C). The novel transcripts are predicted to encode an N-terminally truncated NRL protein (Tr-NRL) retaining the leucine zipper DNA binding domain but lacking the minimal transactivation domain (Friedman et al., 2004; Figure 3C and Figure 3—figure supplement 1A and B). While all transcript isoforms were inferred to be more highly expressed in the ER rod cluster versus the LM cone cluster, the ratio of all FL-NRL:Tr-NRL transcripts was 2.9:1 in early rod precursors and 2.2:1 in late rod precursors, in contrast to 0.67:1 in L/M cone precursors (Figure 3B). Consistent with the assigned isoform ratios, mean read coverage of the Tr-NRL-specific exon 1T was higher in S and LM cones, while coverage of FL-NRL-specific exon 1 was higher in rods (Figure 3C, red vs. black arrowheads). Comparing the reads mapped to each first exon relative to total reads further confirmed that the Tr-NRL exon 1T predominated in individual cones whereas the FL-NRL exon 1 predominated in rods (Figure 3D). The cone cells’ higher proportional expression of Tr-NRL first exon sequences was validated by RNA fluorescence in situ hybridization (FISH) of FW16 fetal retina in which NRL immunofluorescence was used to identify rod precursors, RXRγ immunofluorescence was used to identify cone precursors, and FISH probes specific to Tr-NRL exon 1T or to FL-NRL exons 1 and 2 were used to assess Tr-NRL and FL-NRL expression (Figure 3E and F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig3-v1.jpg)
+
+**Figure 3.:** (A) Expression of NRL gene and the most highly assigned Ensembl isoforms ENST00000397002 (FL-NRL) and ENST00000560550 (Tr-NRL). (B) Mean NRL isoform assignments for clusters defined in Figure 1B, presented as total counts (top) and percentage of total counts (bottom). Significance for LM vs. ER fold change, colored by isoform. ****, p<0.0002; *****, <0.000001 (bootstrapped Welch’s t-test). Ensemble transcript IDs shown in color with structures shown in Figure 3—figure supplement 1B. (C) Top: Mean read counts (fragments per million, FPM) across Ensembl NRL exons for each cluster. Bottom: Transcript structures numbered according to amino acid positions. Minimal transactivation domain (MTD) in green. Arrowheads: Red/black: First exons where red is higher of two peaks. (D) Relative difference box plot of raw reads mapping to truncated (Tr) and full length (F) transcript first exons in each cell, according to cluster. Relative difference is the difference in reads mapping to truncated and full-length NRL first exons (Tr-F) divided by the sum of both (Tr + F). Values >0 indicate more reads assigned to truncated isoform, values <0 indicate more reads assigned to full-length isoform. ***, p<0.0001 (post-hoc Dunn test). (E) NRL and RXRγ immunostaining and RNA FISH with probes specific to truncated Tr-NRL exon 1T (green puncta) and FL-NRL exons 1 and 2 (red puncta) in FW16 retina. Boxed regions enlarged at right show an RXRγlo, NRL+ rod with one Tr-NRL and six FL-NRL puncta (top) and an RXRγhi, NRL– cone with one Tr-NRL and no FL-NRL puncta (bottom), indicated with same-color arrows. Scale bar: 10 µm. (F) Ratio of fluorescent puncta observed in experiment depicted in (E) for NRL+ or RXRγhi cells where Tr puncta >0. ***; p<0.0005 (Welch’s t-test). (G) Long-read nanopore sequencing of pooled 5' RACE reactions initiated with NRL exon 3 primers and performed on cDNA libraries from 23 ER cells (top) and 21 LM cells (bottom). Each schematic shows total exon coverage (above) and individual transcripts (below), where expressed sequences are gray and introns light blue. Full-length (FL), alternatively spliced or internally initiated exon 2 (△ex2), and truncated (Tr) transcripts are indicated by brackets. Red arrow: Transcripts resembling DD10, with internal exon 2 transcription initiation and premature splicing to exon 3. Ensembl FL-NRL and Tr-NRL transcript isoforms and RACE primer positions are shown below. (H) Top: PDE6B-luciferase reporter activity in NIH-3T3 cells transfected with indicated amounts (ng) of pcDNA4-C-EF1α and derived FL-NRL and Tr-NRL constructs. Bottom: PDE6B-luc reporter and pcDNA4-C-EF1α expression constructs. Blue box = NRL response element. Error bars = standard deviation of triplicate measurements. *, p<0.05; **, <0.005 (Student’s t-test). Data representative of two experiments in NIH-3T3 and one in HEK-293T.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean NRL isoform counts for each cluster based on short-read full-length cDNA sequencing (top) and percentage of total counts (bottom), as in Figure 3B. (B) NRL Ensemble isoforms. (C) Top: Sashimi plots of NRL transcript splicing based on nanopore long read sequencing of 5' RACE reactions from 23 ER cells and 21 LM cells. The minimum number of reads required to display transcript isoforms was set at 20 for ER cells and at 10 for LM cells, proportional to the total NRL reads in each sample. Bottom: Exon structures of FL-NRL70(ENST00000397002) and Tr-NRL (ENST00000560550) isoforms and RACE primer location. The NRL gene is oriented relative to chromosome 14 coordinates. Hash marks indicate sequences preceding a rarely used far upstream first exon in ENST00000561028. Note increased intra-exon 2 splicing and ex1T use in the LM population.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) NRL antibody validation by immunoblot (IB) of ectopic FL-NRL and Tr-NRL in HEK293T. Left: anti-total NRL. Right: anti-N-terminal NRL specific to FL-NRL. (B) Average assigned NRL isoform expression in scRNA-seq of RB31 retinoblastoma cell line. (C) Immunoblot of endogenous total NRL in RB31 cells treated with or without 10 µM retinoic acid (RA) and 10 µM proteasome inhibitor MG132 and in FL-NRL transfected HEK293T. Numbers to the sides of the images in panels A and C indicate molecular mass of marker proteins (kDa). (D) pULTRA-EGFP-P2A-Tr-NRL lentiviral vector used for explanted retina transduction. (E) NRL Immunofluorescent staining of HEK293T cells 48 hr after lentiviral transduction of Tr-NRL-GFP. Scale bar = 50 µm. (F,G) Immunostaining of total NRL (F) or N-terminal-NRL (G) in explanted FW16.5 fetal retina 7 d after lentiviral transduction of Tr-NRL-GFP. Arrows: Yellow = GFP+, NRL-. Green = GFP+ ,RXRγ+. White = GFP-, FL-NRL+. Scale bar, 25 µm.
 
 While the Tr-NRL-encoding NRL isoforms were not to our knowledge previously described, another NRL isoform that initiated within exon 2 and lacked the NRL transactivation domain due to alternative exon 2 splicing, termed DD10 (Figure 3C), was previously identified in adult retina (Swaroop et al., 1992). Concordantly, we detected reads spanning the unique DD10 splice junction, yet at lower levels than the unique Tr-NRL junction (5,942 vs 57,048).
 
@@ -92,13 +120,45 @@ As Tr-NRL might be expressed in contexts that were not examined in our analyses,
 
 For THRB, the most highly assigned transcript isoforms encoded the L/M cone-specific TRβ2 (ENST00000280696) and the more widely expressed TRβ1 (ENST00000396671 and others; Figure 4A-C, Figure 4—figure supplement 1). While both TRβ1 and TRβ2 promote L/M cone fate determination (Eldred et al., 2018), the isoform encoding TRβ2 predominated in L/M cones while isoforms encoding TRβ1 predominated in early rods (Figure 4B). Moreover, late rods preferentially expressed THRB exons 1–6 and the THRB 3' untranslated region (UTR), implying that RNAs encoding full-length TRβ proteins were rare (Figure 4B and C). Notably, a higher percentage of reads extended from the exon 4 and exon 6 splice donor sequences into the subsequent introns in LR versus LM cells (Figure 4D and E; p≤0.001 for both, two-tailed Chi square test), suggesting that premature transcription termination (PTT) in introns 4 and 6 preferentially limits full-length TRβ expression in the LR population. The inferred PTT events are consistent with structures of the assigned Ensembl isoforms (Figure 4B, Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig4-v1.jpg)
+
+**Figure 4.:** (A) Expression of THRB and highly assigned isoforms ENST00000280696 (encoding TRβ2) and ENST00000396671 (TRβ1). (B) Mean THRB isoform assignments for each cluster presented as counts (top) and percentage of counts (bottom); Ensemble transcript IDs shown in color with β2, β1, and β1 PTT isoform structures as in Figure 4—figure supplement 1. (C) Top: Mean read counts across Ensembl THRB exons. Bottom: Transcript structures for TRβ1, TRβ2, and two TRβ1 truncations. Green arrowhead: First TRβ2 exon. ENST00000396671 exon numbers are indicated above and protein domains (AF1, DNA-binding (DBD), and ligand binding (LBD)) below. (D) Read coverage for LR cells across THRB exons 4 and 6 splice donor sites. (E) Percentage of exon splice donor reads that are spliced or readthrough to the subsequent intron. (F) Long-read sequencing of pooled 3' RACE reactions initiated with exon 4 (left) or TRβ2 exon 1 (right) performed on cDNA libraries from 21 LM cells (top) and 5 LR cells (bottom). Schematics show total coverage (above) and individual transcripts (below). TRβ1 and TRβ2 first exons (green boxes) are enlarged at right. Red arrowheads: intronic premature transcription termination (PTT).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A). Mean THRB isoform assignments for each cluster presented as total transcript counts (top) and percentage of total counts (bottom) as in Figure 4B, with isoforms grouped according to capacity to encode full-length canonical TRβ1 or TRβ2 or to have PTT following ex4, ex5, or ex6 (exons numbered as for ENST00000396671) regardless of differences in 5' noncoding exons and 3' poly(A) sites. (B) THRB Ensemble isoforms identified in panel A with ENST00000396671 exon numbers indicated, accessed June 22, 2024, at: http://useast.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000151090;r=3:24117153-24495756.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Top: Sashimi plots of THRB transcript splicing based on long read nanopore sequencing of 3' RACE reactions from 23 LM cells and 5 LR cells. RACE reactions were initiated from primers specific to TRβ1 exon 4 (left) or specific to the unique TRβ2 exon (right). Gray arrows: premature transcription termination following TRβ1 exon 4, the TRβ2 first exon, the shared exon 6, and a novel exon used solely in TRβ2 transcripts. Bottom: TRβ1 and TRβ2 exon structures and RACE primer positions. The THRB gene is oriented relative to chromosome 3 coordinates.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Expression of RXRG and the two most highly assigned RXRG isoforms (ENST00000359842 and ENST00000619224). (B) Mean RXRG isoform assignments for each cluster presented as total counts (top) and as a percentage of total counts (bottom). Lines indicate significant LM vs. ER fold change, colored by isoform. *****, p<0.000001 (bootstrapped Welch’s t-test). (C) Top: Mean read counts across Ensembl RXRG exons. Bottom: Structures for ENST00000359842 and ENST00000619224. Red arrowheads: Extended RXRG 5' UTR. (D) Long-read nanopore sequencing of pooled 5' RACE initiated with RXRG exon 4 primers from 23 ER cells (top) and 21 LM cells (bottom). The schematic shows total exon coverage (above) and individual transcripts (below). Panels at left show RXRG locus with exon 1 in green box enlarged at right, revealing a similar range of RNA 5' ends in ER and LM populations. (E) Immunohistochemical analysis of RXRγ and NRL in FW16 retina. Arrows: Yellow = RXRγ-high cone. White = NRL + rod with weak RXRγ. Scale bar = 25 µm. Right: Boxplot of RXRγ mean gray values in NRL+,RXRγlo and NRL–,RXRγhi cells. ***, p<0.0001 (Welch’s T-test).
+
 To further evaluate PTT events, we used THRB 3' RACE and long-read sequencing on single-cell cDNA libraries from 23 L/M cone cells and five LR cells selected for high THRB expression. RACE reactions were performed separately with primers complementary to the TRβ1-specific exon 4 and to the TRβ2-specific first exon (Figure 4F). Sequencing of LM and LR RACE products corroborated pronounced PTT in introns 4 and 6, with greater intron 6 PTT in LR versus LM cells (Figure 4F and Figure 4—figure supplement 2). However, we did not corroborate the late rods’ proportionately higher intron 4 PTT, likely due to the small number of LR cells examined and heterogeneity in PTT frequency in individual cells. Long read sequencing also revealed PTT following the TRβ2-specific exon and a novel transcription-terminating exon following the canonical exon 5 observed solely in TRβ2 transcripts (Figure 4F and Figure 4—figure supplement 2). 3' RACE transcripts rarely extended into the 3' UTR in LM or LR cells, suggesting that reads mapping to this region do not reflect protein-coding RNAs and confound the assessment of protein-coding THRB mRNA expression. These analyses demonstrate that THRB is regulated by multiple PTT events in rod and cone precursors as well as by cell type-specific promoter utilization and independent 3' UTR RNA expression.
 
 For RXRG, short read sequencing reads were assigned to several isoforms that differed in their 5' promoter position and exon utilization (Figure 4—figure supplement 3A–C). However, 5' RACE and long-read sequencing did not support differential isoform expression, and quantitative imaging revealed an average ~3.5-fold higher RXRγ protein in cones compared to rods (Figure 4—figure supplement 3D and E). Thus, long-read sequencing clarified that RXRG expression is moderately higher in human cone versus rod precursors without evidence of cell-type-specific isoforms.
 
-## Two post-mitotic immature photoreceptor precursor populations
+### Two post-mitotic immature photoreceptor precursor populations
 
 To further define photoreceptor developmental states, we subdivided the initial six cell populations with higher resolution clustering (level 1.6), identified high resolution cluster-associated genes and regulons, and inferred each cell’s rate and direction of transcriptomic change using RNA velocity (La Manno et al., 2018; Figure 5A and B). Increased clustering resolution divided the RPC/MG cluster into separate RPC and Müller glia (MG) groups, divided L/M cones into four subgroups (LM1 – LM4), which partially overlapped in UMAP space, and divided the iPRP cluster into two clusters here designated immature cone precursors (iCPs) and immature rod precursors (iRPs), the latter also drawing cells from the low-resolution ER cluster (Figure 5A and C). Similar clusters were observed at reduced k.param values that define nearest neighbors.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig5-v1.jpg)
+
+**Figure 5.:** (A) UMAP plot colored by high resolution clusters. (B) RNA velocity plots with cell clusters as in A. (C) Enlarged view highlighting RPC and MG clusters (left), RPC-localized iCP and iRP clusters (middle), and RNA velocity (right). Black line: limit of RPC-localized region. Arrows depict inferred trajectories. (D) Violin plots depict expression of selected genes in RPC, MG, and RPC-localized iCP and iRP cells. Colored asterisks compare clusters of the same color to the cluster at the right of the line. (E) SCENIC regulon violin and box plots for RPC-localized cells in each cluster, selected from most specific regulons for MG, RPC, ER, and LM clusters. ^, pAdj <0.1; *, <0.05; **, <0.005; ***, <0.0005 (post-hoc Dunn test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Marker gene dot plot for high resolution Louvain clusters. Dot size: Percent of cells expressing gene. (B) Volcano plot of differential expression (pAdj <0.05, log2FC >|0.5|) between MG and RPC clusters with genes labeled when p < 10–4 except for RPL34. (C) Overrepresentation analysis for genes upregulated in RPC above pAdj and log2FC cutoff.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Violin plots based on full-length scRNA-seq depicting gene expression in RPCs, MG, RPC-localized and non-RPC-localized iCPs and iRPs, and the early maturing LM1 cone and ER clusters as designated in Figure 5A and C. (B) Violin plots based on 3' snRNA-seq depicting expression of the same genes as in (A) in PRPCs, MG, cone- and rod-fated NRPCs, and cone and rod precursors at the indicated ages and macular versus peripheral retinal positions as designated in Zuo et al., 2024. Gray boxes = potential mixed cone plus rod precursor populations as shown in Figure 11. (C,D) Regulon activities based on full-length scRNA-seq in high-resolution RPC and photoreceptor precursor states. (C) Violin plot depicting selected Z-score normalized regulon activities in the indicated cell populations. Significant differences (p<0.05) between corresponding iCP and iRP states are indicated for pan-photoreceptor regulons LHX3, OTX2, CRX, and NEUROD1, and significant differences between successive iCP – LM1 and iRP – ER states are indicated for all regulons. Activities of all regulons except NRL also increased in RPC-localized iCPs and iRPs relative to RPCs (p<0.05 for all). (D) Ward-clustered heatmap of the highest scoring SCENIC regulons in each high-resolution cluster, displaying Z-score normalized regulon activities. Subcluster labels: RPC-l=RPC-localized, Br = Bridge-localized, O=Other/remainder of original cluster, Late = late-maturing LM4 cones. ^<0.1; *,<0.05; ** ,<0.005; ***,<0.0005 (post-hoc Dunn test).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) UMAP positions of cell populations as assigned in Zuo et al., 2024. MG = Muller glia; PRPC = primary retinal progenitor cells; C- and R-NRPC = cone and rod neurogenic retinal progenitor cells, CP = cone precursor, RP = rod precursor. Box = region enlarged in Cone Precursor UMAP plots in panels B-F. (B) Expression of THRB and NR2E3 overlaying UMAP plots of pcw 8–23 cone or rod precursors. *=possible rod precursors mis-assigned as cone precursors based on UMAP position, high NR2E3, and minimal THRB. **=possible cone precursors mis-assigned as rod precursors based on UMAP position, high THRB, and low NR2E3. (C) UMAP plots of assigned cone and rod precursors in macula (orange) and peripheral retina (green) at each age. (D-F) Expression of THRB (D), NR2E3 (E), and GNAT2 (F) overlaying UMAP plots of assigned cone or rod precursors at each age. Blue arrows = major cone precursor population at pcw 8, 10, 13 expressing THRB but not NR2E3. Red arrows = major rod precursor population at pcw 10, 13, 15 expressing NR2E3 but not THRB. Purple arrows = later rod precursors with THRB co-expression at pcw 15, 19, 23. Green arrows = later cone precursors with NR2E3 co-expression at pcw 15, 19, 23. Scale bars at right apply to all plots in each panel. Asterisks in (C-F) are as in panel (B).
 
 The distinction between RPCs and MG was corroborated by the expression of known marker genes, with the RPC cluster having increased expression of cell cycle markers (CCNE2, CCNA2, CCNB2) and the cell cycle-associated PBK and E2F7 (Figure 5D, Figure 5—figure supplement 1A, and Supplementary file 1G). The MG cluster was spatially segregated, lacked expression of most cell cycle genes, and expressed genes known to be expressed in both populations (CCND1, SLC1A3, PAX6, LHX2, VSX2) as well as the MG marker RLBP1 (Roesch et al., 2008; Pereiro et al., 2020; Blackshaw et al., 2004; Figure 5C and D and Figure 5—figure supplement 1A). Differential gene expression analyses revealed upregulation of cell-cycle-related genes and G2/M checkpoint and E2F target ontologies in the RPC cluster but no significantly upregulated ontologies in the MG population (Figure 5—figure supplement 1B and C), consistent with early MGs resembling quiescent RPCs (Walcott and Provis, 2003). In contrast to other studies, we did not distinguish primary RPCs (PRPCs) from neurogenic RPCs (NRPCs; Clark et al., 2019; Lu et al., 2020; Zuo et al., 2024), likely due to the underrepresentation of RPCs in our dataset.
 
@@ -112,7 +172,7 @@ In a further comparison, we noted lower detection of GNAT2 in L/M cone precursor
 
 SCENIC regulons further clarified the identities of the four RPC-localized clusters. The MG cluster was best specified (i.e., had highest regulon specificity scores) by PAX6 and SOX9, both previously described in RPCs and MGs (Roesch et al., 2008; Marquardt et al., 2001; Poché et al., 2008), whereas RPCs were best specified by E2F2 and E2F3 (Figure 5E). These RPC and MG regulons were low or absent in the early post-mitotic iCPs and iRPs, suggesting they undergo an abrupt cell state change. Moreover, RPC-localized iCPs had greater THRB regulon signal than RPC-localized iRPs, while RPC-localized iRPs had higher NRL regulon signal (p<0.05 for both; Figure 5E). Interestingly, RPC-localized and/or non-localized iCPs also had higher activity of the pan-photoreceptor regulons LHX3, OTX2, and NEUROD1 compared to their iRP counterparts (Figure 5—figure supplement 2C and D). Finally, activities of the cone-specific THRB and ISL2 regulons, the rod-specific NRL regulon, and the pan-photoreceptor LHX3, OTX2, CRX, and NEUROD1 regulons increased to varying extents on transitioning from immature iCP or iRP states to the early-maturing LM1 or ER states (Figure 5—figure supplement 2C and D).
 
-## Early cone and rod precursors with rod- and cone-related RNA co-expression
+### Early cone and rod precursors with rod- and cone-related RNA co-expression
 
 In addition to the immediately post-mitotic RPC-localized iCPs, the iCP cluster included cells bridging the UMAP region between early maturing cones and early maturing rods (Figure 6A). Many iCP and ER cells in this bridge region expressed RNAs encoding cone markers (GNAT2, THRB), rod markers (GNAT1, NR2E3), or, in many cases, both (Figure 6B), suggestive of a proposed hybrid cone/rod precursor state more extensive than implied by the co-expression of different THRB and NRL isoforms (Ng et al., 2011).
 
@@ -124,15 +184,35 @@ To determine whether the intermixed cone and rod gene expression reflects a hybr
 
 To identify cells with early cone- and rod-related RNA co-expression in the developing retina, we performed multiplex RNA FISH for early cone marker GNAT2 and rod marker NR2E3 combined with immunofluorescence (IF) staining for RXRγ, which has high expression in outermost neuroblastic layer (NBL) cone precursors and low expression in middle NBL rod precursors (as earlier shown in Figure 4—figure supplement 3E), and for NR2E3, which is detected solely in rods. To infer the spatiotemporal pattern of such expression across human retinal development, we examined GNAT2 and NR2E3 RNA co-expression in RXRγ+ cone precursors in the outermost NBL and in RXRγ+ rod precursors in the middle NBL across 13 regions of a FW14 retina section (Figure 7; see Figure 7—figure supplement 1 for IF + FISH images). Limiting our analysis to the outer and middle NBL allowed us to disregard RXRγ+ retinal ganglion cells in the retinal ganglion cell layer or inner NBL.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Tiled composite fluorescence image of FW14 retinal section after immunofluorescence staining of RXRγ and NR2E3 and RNA FISH of GNAT2 and NR2E3 (A) and diagram of the same section indicating the most peripheral (i.e., youngest and least mature) and most central (i.e., oldest and most mature) rods and cones (B). Scale bar in A = 500 µm. Boxes indicate regions further evaluated as shown in Figure 7—figure supplement 1 and quantitated in panels C and D. (C, D). Quantitation of (C) outermost and (D) middle (i.e. sub-outermost) NBL photoreceptor precursors expressing combinations of RXRγ and NR2E3 proteins and GNAT2 and NR2E3 RNAs (n.b., italics are used for RNAs, non-italics for proteins). (E) Patterns of GNAT2 and NR2E3 RNA and RXRγ and NR2E3 protein expression inferred from in situ hybridization and immunofluorescence staining. RXRγ is expressed in the outermost NBL starting in the far periphery, consistent with cone precursors, and in middle NBL cells, starting more centrally, consistent with rod precursors. GNAT2 and NR2E3 RNA co-expression in outermost NBL cells lacked NR2E3 protein, representing putative cone precursors. RXRγ+ retinal ganglion cells in the inner NBL and ganglion cell layer are not shown.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Composite images of combined RXRγ and NR2E3 immunofluorescence staining and GNAT2 and NR2E3 RNA FISH in boxed regions 2–13 of Figure 7A. Scale bar = 50 µm. (B) Enlarged images of boxed regions in Figures 2, 3, 5 and 8 in panel A, as indicated at upper left of images in column 1. Dotted yellow lines demarcate the outermost and middle (sub-outermost) NBL cells analyzed separately in Figure 7C and D. White arrows = GNAT2 puncta in boxed regions of interest. Green arrows = NR2E3 puncta. Boxed regions in column 3 (GNAT2 RNA plus NR2E3 protein) and column 4 (NR2E3 RNA) are enlarged in column 6 (GNAT2 RNA plus NR2E3 RNA) and illustrate (region 2) initial expression of GNAT2 RNA without NR2E3 RNA in outermost NBL nascent cones; (region 3) initial co-expression of GNAT2 and NR2E3 RNA in early outermost NBL cones; (region 5) initial expression of NR2E3 RNA with or without co-expressed NR2E3 protein; and (region 8) co-expression of high GNAT2 and low NR2E3 RNA without NR2E3 protein in RXRγhi outermost NBL cones. Scale bars in columns 2 and 6 = 10 µm.
+
 The analyses revealed that most of the far peripheral (hence, nascent) outer NBL RXRγ+ cone precursors (Figure 7A and B, regions 2 and 13) lacked detectable GNAT2 and NR2E3 RNA (green bars in Figure 7C), whereas those in the more mature central retina (regions 3–12) were uniformly GNAT2+ (yellow and red bars in Figure 7C). However, starting with regions 3 and 11, some outermost NBL GNAT2+ cones were also NR2E3+ (red bars in Figure 7C). The proportion of outermost NBL cells that co-expressed GNAT2 and NR2E3 RNA increased in the more central retina (regions 5–10), yet all of these cells had strong RXRγ staining and lacked NR2E3 protein, consistent with their having a cone identity (illustrated in Figure 7E). In contrast, most middle NBL RXRγ+ cells had either a low number of NR2E3 RNA puncta without NR2E3 protein (NR2E3+/NR2E3–, magenta bars in Figure 7D), likely in nascent rods, or prominent NR2E3 RNA with NR2E3 protein (NR2E3+/NR2E3+, purple bars in Figure 7D), in maturing rods (Figure 7D and E). However, we did not detect GNAT2 puncta in middle NBL RXRγ+, NR2E3+ cells, including the most peripheral RXRγ+ cells with low-level NR2E3 RNA (Figure 7E). In summary, most photoreceptor precursors with GNAT2 and NR2E3 RNA co-expression had high RXRγ, no detectable NR2E3 protein, and outermost NBL positions expected of cone precursors. This supports the notion that, in our scRNA-seq analyses, bridge region iCP cells with combined GNAT2 and NR2E3 RNA expression are likely cone-directed.
 
 Cone and rod precursor populations that co-express cone and rod marker genes were also evident in the Zuo et al. 3' snRNA-seq dataset. While the earliest cone precursors were NR2E3-negative and the earliest rod precursors were THRB-negative (as described above), starting at pcw 15, later cone precursors expressed NR2E3 (Figure 5—figure supplement 3E, green arrows) and later rod precursors expressed THRB (Figure 5—figure supplement 3D, purple arrows). THRB was highest in the most distal rod precursors (yet still lower than in cone precursors), corroborating our findings in Figures 1D and 4B–C. In contrast, in the 3' snRNA-seq analysis, GNAT2 expression was sparse in rod precursors of all ages (Figure 5—figure supplement 3F), consistent with the lack of GNAT2 in rod precursors in our RNA FISH analyses and implying that different cone- and rod-related genes have different tendencies to be expressed in the other photoreceptor precursor type.
 
 Thus, a 3' snRNA-seq analysis confirmed the initial production of immature photoreceptor precursors with either L/M cone-precursor-specific THRB or rod-precursor-specific NR2E3 expression, followed by lower-level co-expression of their counterparts, NR2E3 in cone precursors and THRB in rod precursors. However, in the Zuo et al. analyses, the co-expression was first observed in well-separated UMAP regions, as opposed to a region that bridges the early cone and early rod populations in our UMAP plots. These findings are consistent with the notion that cone- and rod-related RNA co-expression begins in already fate-determined cone and rod precursors, and that such precursors aberrantly intermixed in our UMAP ‘bridge region’ due to their insufficient representation in our dataset.
 
-## Developmental expression of photoreceptor precursor markers and fate determinants
+### Developmental expression of photoreceptor precursor markers and fate determinants
 
 To further assess relationships between iCP subpopulations, we examined the expression and UMAP distributions of the four iCP marker genes identified in Figure 5—figure supplement 1A. Among these genes, CHRNA1 was mainly expressed in bridge region iCP and ER cells, whereas ONECUT1 was biased to cone-directed iCPs, lncRNA CTC-378H22.2 was expressed in a narrow zone of THRB+, GNAT2+ iCPs, and S100A6 was more widely expressed (Figure 8A). iCP cells also expressed ATOH7 and DLL3, which were previously proposed to define transitional photoreceptor precursors and promote cone fate determination (Clark et al., 2019; Lu et al., 2020; Sridhar et al., 2020). ATOH7 was largely restricted to RPC-localized and bridge region iCPs, whereas DLL3 was broadly expressed similar to S100A6 (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig8-v1.jpg)
+
+**Figure 8.:** (A) UMAP plots of iCP marker genes CHRNA1, ONECUT1, CTC-378H22.2, and S100A (see Figure 5—figure supplement 1A) and previously identified photoreceptor precursor markers ATOH7 and DLL3. (B–D) Combined RXRγ/NRL immunohistochemical staining and CHRNA1 RNA FISH of FW12 retina. (B) Tiled images of retina section with nuclei stained with DAPI. White boxes: fields used for quantitative fluorescent imaging. Distances along apical edge of tissue marked in mm from midpoint of central image (0 mm, C). *: Imaged region shown in C. Scale bar = 500 µm. (C) Top: Retinal nuclear and cellular segmentation and identification of cells as RXRγ+ (green outline) or NRL+ (red outline). Yellow box: Field shown below. Bottom: RXRγ or NRL immunofluorescence staining with CHRNA1 FISH. Arrows: RXRγ+, CHRNA1+ (green), NRL+, CHRNA1+ (yellow). Scale bars = 15 µm. (D) Quantitation of fluorescent puncta in RXRγ+ and NRL+ cells by image field. X-axis: Distance from the midpoint of each image to retina center (0 mm, C). **, p<0.005 (Wald test, images from 0 to 6 mm).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Expression of selected markers in pcw 8–23 cone precursors (top) and rod precursors (bottom), as assigned in Zuo et al., 2024. *=possible rod precursors misassigned as cone precursors; **=possible cone precursors misassigned as rod precursors. (B) Dot plot depicting the percentage of cells expressing each gene and average expression levels in assigned macular and peripheral cone and rod precursors at each age.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** UMAP plots of OLIG2, LHX9, and THRB regulon activities (left) and OLIG2, LHX9, and ONECUT1 gene expression (right), illustrating high OLIG2 regulon activity with minimal OLIG2 gene expression, concurrent LHX9 regulon activity and LHX9 gene expression, and ONECUT1 gene expression in iCP cells preceding increased THRB regulon activity in early LM cones. Boxes indicate the bridge region.
 
 A similar pattern was seen in the Zuo et al., 2024 3' snRNA-seq dataset, where CHRNA1, ONECUT1, S100A, ATOH7, and DLL3 were most highly expressed in the youngest and developmentally earliest ML cone and rod precursors and persisted to various extents during cone and rod maturation, whereas CTC-378H22.2 (ENSG00000259436) had more restricted and cone-specific expression (Figure 8—figure supplement 1A). However, the early cone and rod precursor UMAP regions did not adjoin one another (in contrast to our UMAP bridge region), suggesting that the cone and rod precursors expressing the above markers had begun their distinct trajectories and that their juxtaposition in our UMAP analyses is spurious. Also, different iCP markers had different spatiotemporal expression: CHRNA1 and ATOH7 were most prominent in peripheral retina with ATOH7 strongest at pcw 10 and CHRNA1 strongest at pcw 13; CTC-378H22.2 was prominently expressed from pcw 10–13 in both the macula and the periphery; and DLL3 and ONECUT1 showed the earliest, strongest, and broadest expression (Figure 8—figure supplement 1B). The distinct patterns suggest that these factors have spatiotemporally distinct roles in cone precursor differentiation.
 
@@ -140,15 +220,31 @@ As CHRNA1 appeared to be the most specific marker of both early cone and early r
 
 To identify factors that regulate transcriptomic states during cone cell fate determination, we examined the UMAP distributions of the most iCP-specific transcription factor regulons, OLIG2 and LHX9 (Figure 5—figure supplement 2D, Supplementary file 1H). As Olig2 was previously detected in mouse RPCs in which Onecut1 enabled Thrb expression and cone fate determination (Emerson et al., 2013; Hafler et al., 2012), the OLIG2 regulon was expected to be most active in RPCs and in early, immediately post-mitotic iCPs. While the OLIG2 and LHX9 regulons were indeed active in RPCs, both were also active in a narrow zone of ONECUT1+ iCPs positioned farthest from S cones and immediately preceding the upregulation of the THRB regulon, a location with sparse OLIG2 RNA expression (Figure 8—figure supplement 2). These data indicate that the OLIG2 and LHX9 regulons are active in and potentially relevant to human L/M cone fate determination in a post-mitotic iCP subpopulation.
 
-## An early L/M cone trajectory marked by successive lncRNA expression
+### An early L/M cone trajectory marked by successive lncRNA expression
 
 After fate commitment, L/M cones initiate a maturation process with upregulation of RNAs and proteins related to phototransduction, axonogenesis, synaptogenesis, and outer segment morphogenesis (Hendrickson et al., 2012; Hoshino et al., 2017). To evaluate whether early L/M cone maturation is comprised of distinct transcriptomic cell states, we assessed marker gene and regulon differences between high-resolution clusters LM1, LM2, LM3, and LM4. While clusters LM1-4 were distinguished by sequential increasing expression of ACOT7, RTN1, PDE6H, OLAH, and NPFF, they showed only subtle differences among the three regulons with highest LM1-4 specificity scores, THRB, ISL2, and LHX3 (Figure 9A and B). The lack of cluster-specific marker genes and regulons suggests that LM1-LM4 represent different stages of a graded maturation process.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig9-v1.jpg)
+
+**Figure 9.:** (A) Violin plots of high-resolution cone cluster marker genes with increasing maturation-associated expression. All significant differences between adjacent clusters are indicated. (B) Violin plots of regulons with highest LM1-4 cone cluster specificity scores. *, p<0.05; **,<0.005; ***,<0.0005 (post-hoc Dunn test). (C) Pseudotemporal trajectory through the L/M cone population derived with Monocle 3. *: Root cell used to define endpoint. The pseudotime trajectory may be related to LM1-LM4 subcluster distributions in Figure 5A. (D) Trendlines of relative count expression (left) and UMAP plots for lncRNAs correlating with early or late-upregulating modules. Line color matched to labels. (E, F) Combined RXRγ immunohistochemical staining and FISH of lncRNAs on FW16 retina. (E) Tiled images of retina with nuclei stained with DAPI. White boxes: fields used for quantitative fluorescent imaging. Distances along the apical edge of tissue marked in mm from fovea to ciliary margins. Scale bar = 500 µm. Asterisks identify fields shown in F. (F) Combined RXRγ immunostaining and multiplex FISH for four lncRNAs, of which two are shown in peripheral and central retina regions. Arrows: White: RXRγ/CTC-378H22.2+. Magenta: RXRγ/HOTAIRM1+. Blue: RXRγ/CTD-2034I21.2+. Green: RXRγ/RP13-143G15.4+. Scale bar = 15 µm. (G) Quantitation of lncRNA fluorescent puncta assigned to RXRγ+ cells after segmentation. Colored bars mark lncRNA expression regions as described in the text.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Heatmaps of individual genes in each module across the pseudotime trajectory shown in Figure 6C. lncRNA genes of interest are labeled. (B) Heatmap of averaged gene module expression across pseudotime.
+
 We further evaluated gene expression changes in maturing cones by pseudotemporally ordering iCP and L/M cone precursors (Figure 9C). This identified 967 pseudotime-correlated genes (q-value <0.05, expression >0.05 in >5% of cells; Supplementary file 1I) in seven gene modules (Figure 8—figure supplement 1). Among the top 20 pseudotime-correlated genes in each module, we identified four lncRNAs that were sequentially expressed (Figure 9D). To determine if these lncRNAs distinguish developmentally distinct maturing cones in vivo, we probed their expression via multiplex RNA FISH in co-stained RXRγ+ cone precursors across a FW16 retina (Figure 9E and F). Quantitation of FISH puncta defined four cone maturation zones based on expression peaks and significant count differences for each lncRNA as color-coded in Figure 9G: the most peripheral cones with high CTC-378H22.2 and HOTAIRM1 (blue), peripheral cones with high HOTAIRM1 only (green), cones with low expression of all four lncRNAs (red), and parafoveal/foveal cones with upregulated RP13143G15.4, CTD-2034I21.2, and CTC-378H22.2 (purple) (Figure 9G). The detection of foveal CTC-378H22 by ISH but not in late LM transcriptomes may relate to a lack of the most mature cones in our scRNA-seq analyses. These data support the concept that maturing L/M cones sequentially express specific lncRNAs as they develop.
 
-## Cone-intrinsic SYK expression associated with the proliferative response to pRB loss
+### Cone-intrinsic SYK expression associated with the proliferative response to pRB loss
 
 We next assessed whether early-maturing cone transcriptomic features are conducive to the proliferative response to pRB loss (Xu et al., 2014; Singh et al., 2018). Given the high transcriptomic similarity across the L/M cone population, we compared gene expression between all early-maturing L/M cones and early-maturing rods. This identified 422 genes upregulated and 119 downregulated in cones (p<0.05, log2FC>|0.4|) (Figure 10—figure supplement 1A, Supplementary file 1J). Among cone-enriched genes, the top three enriched ontologies related to translation initiation, protein localization to membrane, and MYC targets (Figure 10—figure supplement 1B). The upregulation of MYC target genes was of interest given that many MYC target genes are also targets of MYCN, that MYCN protein is highly expressed in maturing (ARR3+) cone precursors but not in NRL+ rods (Figure 10A), and that MYCN is critical to the cone precursor proliferative response to pRB loss (Cobrinik, 2024; Xu et al., 2009; Xu et al., 2014). Indeed, whereas MYC RNA was not detected, the LM cone cluster had increased MYCN RNA (log2FC = 0.54) and MYCN regulon activity, representing the seventh highest LM cluster regulon specificity score (Figure 10B and C, Supplementary file 1F).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig10-v1.jpg)
+
+**Figure 10.:** (A) Immunofluorescent staining shows high MYCN in ARR3+ cones but not in NRL+ rods in FW18 retina. Scale bar = 10 µm. (B–D) UMAP plots of MYCN expression (B), MYCN regulon activity (C), and SYK expression (D). (E) SYK and MYCN gene expression violin plots by cluster. *, p<0.05; ns = not significant (t-test). (F) Immunohistochemical staining of SYK and cone arrestin (ARR3) in FW18 and FW16 retinae. Green arrow: ARR3+, SYK+. White arrow: ARR3+, SYK–. Scale bar = 25 µm. (G) Top: Effect of SYK inhibitor GS-9876 on Ki67 expression in RXRγ+ cones from FW16.5 retina co-transduced with YFP and shRB1- or control shSCR-shRNA. Values represent means of three analyses from two treatment replicates. Error bars: standard deviation. *, p<0.05; **,<0.005 (Student’s T-test with equal variance, 2-tailed). RXRγ+ cells: Experiment 1, n=1340. Experiment 2, n=804. Range 107–366 cells per condition. Bottom: Example of Ki67, YFP, and RXRγ co-immunostaining with DAPI+ nuclei (yellow outlines). Arrows: Ki67+, YFP+, RXRγ+ nuclei. Scale bar = 20 µm. (H) Model of SYK expression in cone maturation and retinoblastoma development.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/101918/elife-101918-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Volcano plot of differential expression between early rod cluster ER and cone LM, excluding the 5 cell late-maturing population. pAdj cutoff = 0.05, log2FC cutoff = |0.4|. Labeled genes: pAdj <10e-32, except for SYK and MYCN. (B). Overrepresentation analysis of cone-enriched genes pAdj <0.05, log2FC ≥ |0.4|.
 
 Among other differentially expressed genes, we noted the L/M cone-specific upregulation of SYK (Figure 10D, Supplementary file 1J), which encodes a non-receptor tyrosine kinase. Whereas SYK was previously implicated in retinoblastoma genesis and proposed to be induced in response to pRB loss (Zhang et al., 2012), its expression was not previously reported in developing fetal retina. Indeed, our scRNA-seq analyses revealed that SYK RNA expression increased from the iCP stage through cluster LM4, in contrast to its minimal expression in rods (Figure 10E). Moreover, SYK expression was abolished in the five-cell group with properties of late-maturing cones (characterized in Figure 1E), here displayed separately from the other LM4 cells and designated LM5 (Figure 10E). Similarly, immunohistochemical staining revealed high SYK protein expression in immature (ARR3-) and early-maturing (ARR3+) cones from the retinal periphery to the maturing foveal cones at FW16, while SYK was not detected in the most mature foveal cones at FW18 (Figure 10F). The loss of SYK protein and RNA expression with cone maturation is consistent with the lack of SYK in cones of normal retina adjacent to retinoblastoma tumors (Zhang et al., 2012) and implies that SYK is a defining feature of the human early cone precursor state. While MYCN RNA was also preferentially expressed in early cones, it did not increase as much relative to RPCs nor decline as much in late-maturing cone precursors when compared to SYK RNA dynamics (Figure 10E).
 
@@ -188,41 +284,681 @@ In summary, through deep, full-length RNA sequencing, we identified photorecepto
 
 ## Materials and methods
 
-## Primary human tissue
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 10-beta</td>
+      <td>New England Biolabs</td>
+      <td>C3019H</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CHLA-VC-RB31</td>
+      <td>Stachelek et al., 2023; https://doi.org/10.1002/gcc.23120</td>
+      <td></td>
+      <td>Authenticated by STR analysis</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH-3T3</td>
+      <td>American Type Culture Collection (ATCC)</td>
+      <td>CRL-1658.2</td>
+      <td>Authenticated by STR analysis</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>American Type Culture Collection (ATCC)</td>
+      <td>CRL-11268</td>
+      <td>Authenticated by STR analysis</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Human)</td>
+      <td>Fetal eyes</td>
+      <td>Family Planning Associates, Los Angeles, CA</td>
+      <td></td>
+      <td>Isolated from fetal tissue</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Human)</td>
+      <td>Fetal eyes</td>
+      <td>Advanced Bioscience Resources, Alameda, CA</td>
+      <td></td>
+      <td>Isolated from fetal tissue</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NRL (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>CAT# AF2945, RRID:AB_2155098</td>
+      <td>WB: 1:2000–4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NRL (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAT# SC-374277, RRID:AB_10991100</td>
+      <td>WB:1:250, IF:1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RXRγ (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAT# SC-514134, RRID:AB_2737293</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SYK (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAT# SC1240, RRID:AB_628308</td>
+      <td>IF:(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ARR3 (Rabbit polyclonal)</td>
+      <td>Zhang et al., 2001; Li et al., 2003; https://doi.org/10.1167/iovs.02-0434; Lou et al., 2012; https://doi.org/10.1007/978-1-4615-1355-1_33</td>
+      <td>LUMI-F - hCAR</td>
+      <td>IF: (1:5000)Cheryl Craft</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RXRγ (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAT# SC-555, RRID:AB_2269865</td>
+      <td>IF: (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KI67 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>CAT# 550609, RRID:AB_393778</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP and YFP (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>CAT# ab6673, RRID:AB_305643</td>
+      <td>IF: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD133-PE (Mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>CAT# 130-113-108, RRID:AB_2725937</td>
+      <td>FACS: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD44-FITC (1:50)</td>
+      <td>BD Biosciences</td>
+      <td>CAT# 555478, RRID:AB_395870</td>
+      <td>FACS: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PNR/NR2E3 (1:50)</td>
+      <td>R&amp;D Systems</td>
+      <td>CAT# PP-H7223-00, RRID:AB_ 2155481</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD49b-FITC (1:10)</td>
+      <td>BD Biosciences</td>
+      <td>CAT# 555498, RRID:AB_395888</td>
+      <td>FACS: (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG Alexa Fluor 488 (1:300)</td>
+      <td>Jackson Laboratories</td>
+      <td>CAT# 705-545-147, RRID:AB_2336933</td>
+      <td>IF: (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG Alexa Fluor 680 (Donkey polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>CAT# A10038, RRID:AB_2534014</td>
+      <td>IF: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-mouse IgG Alexa Fluor 680 (Donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>CAT# A11057, RRID:AB_2534104</td>
+      <td>IF: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1C-YFP-shSCR</td>
+      <td>Lee and Cobrinik, 2020; https://doi.org/10.2144/btn-2019-0155</td>
+      <td>RRID:Addgene_139647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1C-YFP-shRB1-733</td>
+      <td>Lee and Cobrinik, 2020; https://doi.org/10.2144/btn-2019-0155</td>
+      <td>RRID:Addgene_244458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-His-Max-C-Nrl</td>
+      <td>Cheng et al., 2004; https://academic.oup.com/hmg/article-abstract/13/15/1563/581552?redirectedFrom=fulltext&amp;login=false</td>
+      <td></td>
+      <td>Gift from A. Swaroop.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-His-Max-C-EF1α-FL-NRL</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239094</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-C-EF1α-FL-NRL</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239095</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-C-EF1α-Tr-NRL</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239096</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-C-EF1α</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239097</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL3-SV40</td>
+      <td>Promega</td>
+      <td>AT# E1761, RRID:Addgene_173953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL3-PDE6B-146</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239098</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL3-empty</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239099</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUltra-EGFP-P2A-Tr-NRL</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_239100</td>
+      <td>See Materials and methods NRL isoform analyses</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUltra-EGFP</td>
+      <td>Lou et al., 2012</td>
+      <td>RRID:Addgene_24129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gipc1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGAAAGGACAAAAGGAACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gipc1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGGGCATTTGCACCCCATGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Del-His F</td>
+      <td>5'- CCGAAACCATGGCCCTGCCCCCCAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Del-His R</td>
+      <td>5'- GGGCCATGGTTTCGGAGGCCGTCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>NRL-no-His F</td>
+      <td>5'- CCGAAACCATGTCTGTGCGGGAGCTAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>NRL-no-His R</td>
+      <td>5'- CAGACATGGTTTCGGAGGCCGTCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>pcDNA del NRL F</td>
+      <td>5'- CCGAAACCGCCGTTCAGAGCACCTTGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>pcDNA del NRL R</td>
+      <td>5'- GAACGGCGGTTTCGGAGGCCGTCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PDE –93 F IF</td>
+      <td>5'- TCTTACGCGTGCTAGAGCGCAGGCCCCCATTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PDE +53 R IF</td>
+      <td>5'- CTTAGATCGCAGATCGGTGGCTGCCTGTCCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>pGL3-sv40 SDM F</td>
+      <td>5'- CTGCGATCAAGCTTGGCATTCCGGTACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>pGL3-sv40 SDM R</td>
+      <td>5'- CAAGCTTGATCGCAGATCGGTGGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>pGL3 del SV40 R</td>
+      <td>5'- CAAGCTTGATCGCAGATCTCGAGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Tr-NRL IF pU-G F</td>
+      <td>5'- GCCTTCTAGAGGATCCATGTCTGTGCGGGAGCTAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Subcloning PCR primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Tr-NRL IF pU-G R</td>
+      <td>5'-- CGCCGGAGCCGGATCCTCAGAGGAAGAGGTGGGAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SmartSeq library amplification primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5' PCR Primer II A</td>
+      <td>5'- AAGCAGTGGTATCAACGCAGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RACE primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5' RACE primer for SmartSeq cDNA</td>
+      <td>5'- AAGCAGTGGTATCAACGCAGAGTACGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NRL reverse primer for 5' RACE</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Rev NRL-Full ex3</td>
+      <td>5'- GGTTTAGCTCCCGCACAGACATCGAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RXRG reverse primer for 5' RACE</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Rev RXR ex5</td>
+      <td>5'- GAAGAACCCTTTGCAGCCTTCACAACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RACE primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3' RACE primer for SmartSeq cDNA</td>
+      <td>5'- AAGCAGTGGTATCAACGCAGAGTACTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>THRB1 forward primer for 3' RACE</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Forw TRb1 ex4</td>
+      <td>5'- GCCTTACAGCCTGGGACAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>THRB2 forward primer for 3' RACE</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Forw TRb2 ex1</td>
+      <td>5'-CCCTGGAAACATGTTTAAAAGCAAGGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>In situ hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>FL-NRL exon 1, 2</td>
+      <td>Target sequence Ensembl ID: ENST00000619224.1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>CHRNA1</td>
+      <td>Target sequence NCBI accession number: NM_000079.4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>RP13-143G15.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>CTC-378H22.2</td>
+      <td>Target sequence Ensembl ID: ENST00000559786.1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>HOTAIRM1</td>
+      <td>Target sequence NCBI accession number: NR_038366.1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>CTD-2034I21.2</td>
+      <td>Target sequence NCBI accession number: XR_001752169.1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>GNAT2</td>
+      <td>Target sequence NCBI accession number: NM_005272.5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hybridization chain reaction probes</td>
+      <td>Molecular Instruments Inc</td>
+      <td>NR2E3</td>
+      <td>Target sequence NCBI accession number: NM_01249.4</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Clontech</td>
+      <td>Clontech:639647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer Ultra Low RNA Kit for the Fluidigm C1 System</td>
+      <td>Clontech (Takara Bio)</td>
+      <td>CAT# 634835/634935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-Seq V4 Ultra Low Input RNA Kit</td>
+      <td>Takara Bio</td>
+      <td>CAT# 63891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>CAT# FC-131–1096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CloneAmp HiFi PCR Premix</td>
+      <td>Clontech (Takara Bio)</td>
+      <td>Takara Bio #639298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>
+      <td>Life Technologies</td>
+      <td>CAT# P11496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nano-Glo Dual-Luciferase Reporter Assay System</td>
+      <td>Promega, Inc</td>
+      <td>CAT# N1610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GS-9876 (SYK inhibitor)</td>
+      <td>MedChemExpress</td>
+      <td>CAT# HY-109091</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrimGalore</td>
+      <td>Krueger, 2018</td>
+      <td>RRID:SCR_011847</td>
+      <td>https://github.com/FelixKrueger/TrimGalore</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt</td>
+      <td>Martin, 2011; https://journal.embnet.org/index.php/embnetjournal/article/view/200</td>
+      <td></td>
+      <td>https://cutadapt.readthedocs.io/en/stable/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Kim et al., 2019; https://www.nature.com/articles/s41587-019-0201-4</td>
+      <td>RRID:SCR_015530, version 2.1.0</td>
+      <td>https://github.com/DaehwanKimLab/hisat2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StringTie</td>
+      <td>Pertea et al., 2015; https://www.nature.com/articles/nbt.3122</td>
+      <td></td>
+      <td>https://ccb.jhu.edu/software/stringtie/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Snakemake/ARMOR</td>
+      <td>Orjuela et al., 2019; https://www.nature.com/articles/nbt.3122; Soneson et al., 2025</td>
+      <td></td>
+      <td>https://github.com/cobriniklab/ARMOR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Minimap2</td>
+      <td>Li, 2018; https://academic.oup.com/bioinformatics/article/34/18/3094/4994778?login=false</td>
+      <td></td>
+      <td>https://lh3.github.io/minimap2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WebGestalt</td>
+      <td>Liao et al., 2019; https://academic.oup.com/nar/article/47/W1/W199/5494758?login=false</td>
+      <td></td>
+      <td>http://www.webgestalt.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pySCENIC</td>
+      <td>Van de Sande et al., 2020; Van de Sande and Flerin, 2025; https://www.nature.com/articles/s41596-020-0336-2</td>
+      <td>RRID:SCR_025802</td>
+      <td>https://github.com/aertslab/pySCENIC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tximport</td>
+      <td>Soneson et al., 2015; https://f1000research.com/articles/4-1521/v1</td>
+      <td></td>
+      <td>https://bioconductor.org/packages/release/bioc/html/tximport.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3 (full-length scRNA-seq),Seurat v5 (3' snRNA-seq)</td>
+      <td>Stuart et al., 2019; https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867419305598%3Fshowall%3Dtrue</td>
+      <td></td>
+      <td>https://satijalab.org/seurat/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EnhancedVolcano</td>
+      <td>Blighe et al., 2018</td>
+      <td>RRID:SCR_018931</td>
+      <td>https://github.com/kevinblighe/EnhancedVolcano</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>genesorteR (v0.4.3)</td>
+      <td>Ibrahim and Kramann, 2019; Ibrahim, 2021; https://doi.org/10.1101/676379</td>
+      <td></td>
+      <td>http://github.com/mahmoudibrahim/genesorteR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wiggleplotr (v1.13.1)</td>
+      <td>Alasoo, 2025; Alasoo, 2022; Bioconductor package</td>
+      <td></td>
+      <td>https://github.com/kauralasoo/wiggleplotr</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEXSeq</td>
+      <td>Anders et al., 2012, https://genome.cshlp.org/content/22/10/2008</td>
+      <td></td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DEXSeq.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>velocytoR</td>
+      <td>La Manno et al., 2018; https://www.nature.com/articles/s41586-018-0414-6</td>
+      <td></td>
+      <td>https://velocyto.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle3</td>
+      <td>Cao et al., 2019; https://www.nature.com/articles/s41586-019-0969-x</td>
+      <td></td>
+      <td>https://cole-trapnell-lab.github.io/monocle3/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPath</td>
+      <td>Bankhead et al., 2017; https://www.nature.com/articles/s41586-019-0969-x</td>
+      <td></td>
+      <td>https://qupath.github.io/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StarDist (QuPath implementation)</td>
+      <td>Schmidt et al., 2018; https://www.nature.com/articles/s41586-019-0969-x</td>
+      <td></td>
+      <td>https://qupath.readthedocs.io/en/stable/docs/advanced/stardist.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary human tissue
 
 Human fetal samples were provided by Advanced Bioscience Resources, Inc, Alameda, CA, or collected under Institutional Review Board approval at the University of Southern California (protocol HS-13–00399), and Children’s Hospital Los Angeles (protocol CHLA-14–00122). Following the patient decision for pregnancy termination, patients were offered the option of donation of the products of conception for research purposes, and those that agreed signed an informed consent. This did not alter the choice of termination procedure, and the products of conception from those who declined participation were disposed of in a standard fashion. Fetal age was determined according to the American College of Obstetrics and Gynecology guidelines (Pettker et al., 2017). Each retina subjected to sequencing was from a different donor.
 
-## Cell lines
+### Cell lines
 
 CHLA-VC-RB31 was produced as in Stachelek et al., and HEK-293T and NIH-3T3 cells obtained from the American Type Culture Collection (ATCC). CHLA-VC-RB31 and HEK-293T were authenticated by short tandem repeat (STR) analysis and all cell lines tested (negative) for mycoplasma by the University of Arizona Genetics Core, which has the original CHLA-VC-RB31 and HEK-293T STR profile records. NIH-3T3 cells were authenticated by STR analysis by the ATCC Mouse Cell Authentication Service.
 
-## Retina dissociation and RNA-sequencing
+### Retina dissociation and RNA-sequencing
 
-## Single cell isolation
+#### Single cell isolation
 
 Retinae were dissected while submerged in ice-cold phosphate-buffered saline (PBS) and dissociated as described (Xu et al., 2014). Briefly, the retina was removed and placed in 200 µl Earle’s balanced salt solution (EBSS) in a six-well plate on ice. 2 ml of 10 u/ml papain (Worthington LK003176) solution was added and then incubated at 37 °C for 10 min, followed by pipetting with a 1000 µl pipet tip to break up large pieces and additional 5 min incubations until cells were dissociated to single cell level. An additional 1–2 ml papain was added after 20 min if dissociation was insufficient (~40 min total). Retina culture media [Iscove’s Modified Dulbecco’s Medium with glutamine (Corning, #12440046), 10% fetal bovine serum (FBS, FB-01, Omega Scientific), 0.28 U/mL insulin (Eli Lilly NDC 0002-0213-01), 55 µM β-mercaptoethanol (Fisher Scientific, # 21985023), penicillin and streptomycin] (Fisher Scientific, # MT30002CI) was used to stop enzyme activity and cells were centrifuged in 14 ml round bottom tubes at 300 x g, 4 °C for 10 min. Supernatants were centrifuged at 1100 x g for an additional 3 min. After resuspension in Hank’s balanced salt solution (Fisher Scientific, 14025092), a 10 µl volume of cells was combined with 10 µl trypan blue and counted using a hemocytometer.
 
-## FACS isolation of single cells and cDNA synthesis
+#### FACS isolation of single cells and cDNA synthesis
 
 Single cells were FACS-isolated as described (Xu et al., 2014) with differences as follows. Dissociated cells were centrifuged and resuspended in a 5% fetal bovine serum in PBS (FBS/PBS) with CD133-PE (Miltenyi Biotec 130-113-108), CD44-FITC (BD Pharmingen 555478), and CD49b-FITC antibodies (BD Pharmingen 555498) to a final concentration of 10,000 cells/µl. After incubation at room temperature (RT) for 1 h, samples were diluted in 5% FBS/PBS, centrifuged as above, and resuspended in 300–400 µl 1% FBS/PBS containing 10 µg/ml 4′,6-diamidino-2-phenylindole (DAPI). Single cells were sorted on a BD FACSAria I at 4 °C using 100 µm nozzle in single-cell mode into each of eight 1.2 µl lysis buffer droplets on parafilm-covered glass slides, with droplets positioned over pre-defined marks (S. Lee et al., in preparation). Gating removed low forward- and side-scatter cells before collecting a CD133-high, CD44/49b-low population. Upon collection of eight cells per slide, droplets were transferred to individual low-retention PCR tubes (eight tubes per strip; Bioplastics K69901, B57801) pre-cooled on ice to minimize evaporation. The process was repeated with a fresh piece of parafilm for up to 12 rounds to collect 96 cells. cDNA was prepared and amplified using the SMART-Seq V4 Ultra Low Input RNA Kit (Takara Bio 634891) in 10 x reduced volume reactions using a Mantis liquid handling system (S. Lee et al., in preparation). Samples were stored at –20 °C until quantitation and library preparation. All RNA/cDNA volumes during FACS and processing were handled using low retention siliconized pipette tips (VWR 53503–800, 535093–794).
 
-## C1 isolation of single cells and cDNA synthesis
+#### C1 isolation of single cells and cDNA synthesis
 
 Dissociated cells were FACS isolated as above and collected into a single 1.5 ml tube. Cells were centrifuged and resuspended at 400–800 cells/µl, combined with C1 suspension reagent, and loaded onto the C1 chip and imaged at each site to define cell number in each well. cDNA was synthesized using SMARTer chemistry (SMARTer Ultra Low RNA Kit for the Fluidigm C1 System, Clontech 634835/634935; three retinae, Seq 1, FW17, and FW13-1), or SMART-Seq V4 (all others). Final cDNA was harvested into low-retention tube strips and stored at –20 °C.
 
-## Quality control, library preparation, and sequencing
+#### Quality control, library preparation, and sequencing
 
 DNA was quantitated using Quant-iT PicoGreen dsDNA assay (Life Technologies, P11496) and quality checked by Bioanalyzer. Libraries >0.05 ng/µl were prepared using the Nextera XT DNA Library Preparation Kit (Illumina, FC-131–1096) and sequenced on the Illumina NextSeq 500 (2x75) (Seq 1) or on Illumina HiSeq 4000 (2x75) (all others).
 
-## 5' and 3' RACE and nanopore sequencing
+#### 5' and 3' RACE and nanopore sequencing
 
 1 µl of amplified single cell cDNAs libraries produced as above (23 ER cells, 21 LM cells, and 5 LR cells) were re-amplified using the 5' PCR Primer II A (described for Clontech SmartSeq V4 and purchased from Integrated DNA Technologies) and using CloneAmp HiFi PCR Premix (Clontech Laboratories, Inc Takara Bio #639298; Supplementary file 1I) by heating to 98 °C x 2 min followed by 20 cycles of 98 °C x 10 s, 65 °C x 15 s, and 72 °C x 35 s, followed by 72 °C x 5 min. Re-amplified cDNAs were quantified using Qubit Flex Fluorometer (InVitrogen) and 50 pg of each re-amplified library was used for separate RACE PCR reactions with gene-specific NRL, RXRγ, TRβ1, and TRβ2 primers and universal 5' RACE and 3' RACE primers (Supplementary file 1I) using CloneAmp HiFi PCR Premix by heating to 98 °C x 2 min followed by 30 cycles of 98 °C x 10 s, 60 °C x 15 s, and 72 °C x 35 s, followed by 72 °C x 5 min. The ‘5' RACE primer for SmartSeq cDNA’ sequence (5'–AAGCAGTGGTATCAACGCAGAGTACGGG–3') was based on the SMART-Seq V4 SMARTer II A oligonucleotide (5'–AAGCAGTGGTATCAACGCAGAGTACXXXXX–3') after library sequencing revealed that AAGCAGTGGTATCAACGCAGAGTAC was most often followed by GGGNN. The ‘3' RACE primer for SmartSeq cDNA’ sequence (5'- AAGCAGTGGTATCAACGCAGAGTACTTTT-3') was based on the SMART-Seq V4 3' SMART CDS Primer II A (5'–AAGCAGTGGTATCAACGCAGAGTACT(30)(N-1)N–3') but with only four Ts at the 3' end. Equal volumes of RACE PCR products were pooled according to cell type, and DNA concentrations of LM (32.8 ng/µl), ER (22.6 ng/µl), and LR (16.5 ng/µl) samples were determined using Qubit fluorometer. Long read sequencing libraries were prepared and samples barcoded using Oxford Nanopore Technology (ONT) Native Barcoding Kit 24 V14 as specified by the manufacturer for average DNA fragment lengths of ~2 kb. 200–300 ng of each DNA pool was subjected to repair/dA-tailing (End-Prep) with NEB Ultra II End-Prep Enzyme Mix (New England Biolabs, Ipswich, MA) followed by Native Barcode Ligation as specified by ONT with NB01 assigned to the ER pool, NB02 assigned to the LM pool, and NB03 assigned to the LR pool. Ligation reactions were quenched by addition of 4 µl EDTA and each reaction mixture (24 µl) pooled for a 72 µl volume. The final pool was incubated with Native Adapter (NA) and NEB Quick T4 ligase. The adapter-ligated pool was recovered by AMPure XP magnetic beads and then loaded onto a PromethION flow cell (R10.4.1) as specified by the manufacturer. Sequencing was performed on a PromethION 24 system using MinKNOW software for 72 hr. Raw FAST5 data files were converted to FASTQ files using ONT MinKNOW base calling software.
 
-## Computational methods
+### Computational methods
 
-## Software packages used in this study are described in the Key Resources Table
+#### Software packages used in this study are described in the Key Resources Table
 
-## Read processing and dimensionality reduction
+##### Read processing and dimensionality reduction
 
 Adapter sequences were removed using the trimgalore wrapper for Cutadapt (Martin, 2011). Trimmed FASTQ files were used as input for HISAT2 (Kim et al., 2019) with a non-canonical splice penalty of 20, maximum and minimum penalties for mismatch of 0 and 1, and maximum and minimum penalties for soft-clipping set to 3 and 1. Aligned bam files were quantified with StringTie (Pertea et al., 2015) and Tximport (Soneson et al., 2015), yielding cell-by-transcript and cell-by-gene count matrices annotated according to Ensembl build 87. All of the above operations can be reproduced using a custom snakemake (Orjuela et al., 2019) workflow accessible at https://github.com/cobriniklab/ARMOR (copy archived at Stachelek, 2025).
 
@@ -232,66 +968,66 @@ For analysis of 3' snRNA-seq, processed data provided with Zuo et al., 2024 (CZ 
 
 Analysis of long-read sequencing data was performed with the nf-core nanoseq version 3.1.0 pipeline (Ewels et al., 2020) (https://nf-co.re/nanoseq/3.1.0). Quality control on raw reads was conducted using FastQC. Reads were aligned using minimap2 (Li, 2018). SAM files were converted to coordinate-sorted BAM files and mapping metrics were obtained using SAMtools. bigWig coverage tracks were created for visualization using BEDTools and bedGraphToBigWig. bigBed coverage tracks were created using BEDTools and bedToBigBed. Transcripts were reconstructed and quantified using bambu. Quality control results for raw reads and alignment results were presented using MultiQC. All reads whose ends overlapped gene-specific RACE primers were displayed and quantitated using the Integrated Genome Browser (IGV). For THRB 3' RACE reactions, reads inferred to initiate through exonic internal oligo(dT) priming were removed based on the following features adjacent to the 3′ end of the alignments: six continuous adenines (As), more than seven As in a 10 nucleotide window, AG-runs of six or more nucleotides, eight or more As or Gs in a 10 nucleotide window, eight or more As or high A/T content (27 out of 30 bases), or 12 or more adenines present in an 18 nt window (Svoboda et al., 2022). The proportion of alternative NRL exon 2 splicing was calculated based on the maximum read coverage between the exon 2 splice acceptor and the first splice donor and the minimum coverage after the internal splice donor as reported in IGV.
 
-## Differential expression and overrepresentation analyses
+### Differential expression and overrepresentation analyses
 
 Marker features for each cluster were identified using the Wilcoxon rank sum tests and specificity scores were computed using the genesorteR (Ibrahim and Kramann, 2019) R package. Only genes with an adjusted p-value (pAdj) <0.05 were considered for further analyses. Differential expression analysis of full-length scRNA-seq was performed using the Seurat FindMarkers function with the Wilcoxon rank sum test on log-normalized counts. Results were displayed as volcano plots made with EnhancedVolcano (Blighe et al., 2018). Differential expression analysis of a 3' snRNA-seq was performed using the Seurat FindMarkers function with the Wilcoxon rank sum test on log-normalized counts. Results were displayed as volcano plots made with EnhancedVolcano (Blighe et al., 2018).
 
 Overrepresentation analyses were performed with WebGestalt (Liao et al., 2019). Analyses were run with the default settings (5–2000 genes per category, Benjamini-Hochberg multiple-testing correction), gene list enrichment was compared to the genome reference set and ontologies were displayed with a false discovery rate (FDR)<0.05 and weighted set cover redundancy reduction. All gene sets evaluated were provided within WebGestalt and the same three were used unless otherwise indicated: GO – Biological Process, KEGG, and Hallmark50.
 
-## Transcription factor regulons
+### Transcription factor regulons
 
 Transcription factor regulons were identified using pySCENIC, the python-based implementation of Single-Cell Regulatory Network Inference and Clustering (SCENIC; Van de Sande et al., 2020; Aibar et al., 2017). The tool was run using the basic settings as shown (https://pyscenic.readthedocs.io/en/latest/tutorial.html). Initial filtering required a gene to have a minimum of 3 raw counts in 1% of cells to be considered for inclusion in a regulon. AUC scores were z-score normalized for comparison between regulons.
 
-## Trajectory analysis
+### Trajectory analysis
 
 RNA velocity analysis was performed with R package velocyto (La Manno et al., 2018). Spliced and unspliced count matrices were assembled using the run_smartseq2 subcommand with repeat-masked ENSEMBL build 87. RNA velocity was calculated using cell kNN pooling with a gamma fit based on a 95% quantile, and velocities were overlaid on integrated UMAP visualizations using velocyto. Pseudotemporal trajectories were calculated using Monocle 3 (Cao et al., 2019). The SeuratWrappers package provided integration between Seurat’s final integrated dimensional reduction and Monocle. The data was subset to include only cone-directed iCPs and L/M cones, then a principal graph was fit across the UMAP plot and a root cell chosen to represent the latest maturation point in the OPN1LW+ late-maturing cone group. After assigning pseudotime values to each cell, genes that significantly changed as a function of pseudotime were identified and those with a correlation q-value of <0.05 with expression >0.5 in at least 5% of the cells present in the pseudotime were grouped into modules of co-regulation by performing UMAP and Louvain community analysis.
 
-## Histology
+### Histology
 
-## Fixation and cryosectioning of fetal retina
+#### Fixation and cryosectioning of fetal retina
 
 Retinae were procured and dissected in cold 1 x PBS. The cornea and lens were removed with a cut around the limbus of the iris leaving the front of the eye open. The tissue was submerged in ~25 ml of 4% paraformaldehyde (PFA) in 1 x TBS and placed at 4 °C on a rocker at low speed for ~16–18 hrs. The tissue was washed three times with 1 x PBS before incubation in 30% sucrose [sucrose plus 1 x PBS] overnight at 4 °C. A mold was made by cutting off the top 5 ml of a 50 ml conical tube and placed on dry ice. A solution of 1:2 OCT Compound:30% sucrose was mixed and centrifuged to remove bubbles. The mold was partially filled before adding the dissected eye and then covering fully. 10 µm frozen sections were cut at ~–24 °C with the front of the eye facing side on to the blade. Explanted retinae were fixed for 15 min in 4% PFA, washed with 1 x PBS, incubated in 30% sucrose for 15 min, after which the membrane was cut from its frame and transferred to a mold containing 1:2 OCT:30% sucrose and frozen.
 
-## Immunohistochemical staining
+#### Immunohistochemical staining
 
 For SYK and ARR3 co-staining, tissue sections were warmed at RT until dry and then washed in Coplin jars twice with 1 x PBS for 5 min at RT. Samples were permeabilized in 1 x PBS-T for 5 min, washed again in 1 x PBS twice for 5 min, blocked for 1 hr in blocking solution (1 x PBS, 0.1% Triton X-100, 5% normal donkey serum, 5% normal horse serum). Primary mouse anti-SYK and rabbit anti-ARR3 (LUMIF-hCAR) antibodies were mixed in blocking solution and applied to samples overnight (16–18 hr) at 4 °C. Slides were washed three times with 1 x PBS for 10 min each, probed with secondary antibodies (Key Resources Table) in blocking solution for 1 hr at RT, washed twice 1 x PBS for 15 min each, incubated in 1x PBS containing 10 µg/ml DAPI for 10 min, and mounted with Mowiol solution. Additional immunohistological staining of tissue sections and cells on coverslips was performed as described (Singh et al., 2018) but without initial EDTA wash.
 
-## Combined in situ hybridization and immunohistological staining
+#### Combined in situ hybridization and immunohistological staining
 
 Human retinal sections were prepared as above but using RNase-free reagents for all stages (PBS, TBS) and ultrapure sucrose (JT Baker, 4097–04) and cryostats cleaned with ELIMINase (Decon Labs, Inc) and 70% ethanol prior to use. RNA FISH hybridization chain reaction probes were designed by and obtained from Molecular Instruments, Inc, with 20 20 bp single strand DNA probes per target RNA sequence except Tr-NRL exon 1 (4 probes), FL-NRL exons 1 and (8 probes), and HOTAIRM1 (14 probes). The accession numbers for target sequences are shown in the Key Resources Table, except for RP13-143G15.4, which included regions of several isoforms for maximum gene coverage. The in situ protocol was performed with fluorescent hairpins and buffers from Molecular Instruments using the manufacturer’s instructions for mammalian cells on a slide (https://files.molecularinstruments.com/MI-Protocol-RNAFISH-MammalianCellSlide-Rev7.pdf), beginning with a 4% PFA treatment after thawing and drying slides at RT for 10 min, with the following changes: samples were incubated in 70% ethanol overnight in a Coplin jar; probes were added to the final hybridization volume at 4 x the recommended concentration for tissue sections (2.4 pmol in 150 µl of hybridization buffer); tissues were pre-hybridized at 42 °C and then lowered to 37 °C once probes were added; and hairpins were used at a volume of 1 µl (6 pmol) in 50 µl amplification buffer per section. After removing the amplification solution and washing, samples were directly used in the immunofluorescence protocol. Briefly, samples were blocked in a basic RNase-free solution (1% BSA, 0.1% Triton X-100, 0.05% Tween-20 in PBS) for 1 hr and primary antibodies mixed in blocking solution and applied to samples overnight at 4 °C. Samples were washed three times for 10 min with 1 x PBS, then incubated with secondary antibodies in blocking solution for 40 min at RT. Samples were washed as above with DAPI in the third and final wash, and mounted with Mowiol before imaging using a Leica STELLARIS 5 inverted confocal microscope. For GNAT2 and NR2E3 FISH, samples were washed with DAPI in the third and final wash, mounted, and then imaged as above. After this first imaging, coverslips were removed, and slides were washed in PBS and then used in the immunofluorescence protocol with an alternate blocking solution (2.5% Horse, donkey, human sera, 1% BSA, 0.1% Triton X-100, 0.05% Tween-20 in TBS).
 
-## Quantitation of FISH
+#### Quantitation of FISH
 
 For NRL, CHRNA1, and lncRNAs, QuPath Bankhead et al., 2017 was used to identify nuclei, predict cell expansion, classify cells, and count FISH puncta. Apical retina regions containing RXRγ+ and/or NRL+ cells were visually selected for evaluation. The StarDist extension Schmidt et al., 2018 was used to outline nuclei and cell expansion zones with deep learning model dsb2018_heavy_augment.pb on the DAPI image channel (threshold = 0.6, pixelSize = 0.15). Model results were reviewed and cells with partial, multiple, or overlapping nuclei were removed from consideration. FISH puncta were thresholded, then output, using the subcellular detection function expected spot size = 0.5 µm2, min spot size = 0.2 µm2, max spot size = 0.7 µm2 (NRL isoforms) or 1 µm2 (CHRNA1 and lncRNAs) to capture the most puncta above background. Image positions were determined by tracing the retina apical edge with line segments in FIJI, identifying the closest point on the line to the midpoint of each image, then measuring the distance from the line starting position. For GNAT2 and NR2E3 FISH, images were analyzed in FIJI. The outer layer of cells was delimited manually based on the RXRγ+ cells and the number of RXRγ+ and/or GNAT2+ and/or NR2E3+ cells were manually counted, examining each color channel separately. For the inner layer, the number of NR2E3-RNA-positive cells and NR2E3-protein-positive cells was counted.
 
-## NRL isoform analyses
+### NRL isoform analyses
 
-## Proteasome inhibition of CHLA-VC-RB-31
+#### Proteasome inhibition of CHLA-VC-RB-31
 
 106 CHLA-VC-RB31 cells Stachelek et al., 2023 were cultured in 2 ml retina culture medium in a 24-well plate with or without 10 µM retinoic acid (Cayman Chemical 11017) and incubated at 37 °C in 5% CO2. MG132 (Sigma-Aldrich 474790) was added at 23 hr to a final concentration of 10 µM and cells incubated for 4 hr. Cells were collected and centrifuged at 300 x g for 4 min, resuspended in 60 µl cold 1 x RIPA buffer (Millipore 20–188), 10% sodium dodecyl sulfate (SDS), protease and phosphatase inhibitors diluted per manufacturer instructions (Sigma-Aldrich 5892970001, 4906837001), incubated on ice for 30 min, then centrifuged at 4 °C for 20 min at 14,000 RPM. 15 µl of supernatant were mixed with 3 µl 6 X sample buffer (300 mM Tris, 60% glycerol, 12% SDS, 86 mM B-mercaptoethanol, 0.6 mg/ml bromophenol blue), heated to 95 °C for 5 min, and separated on a 4–12% Bis-Tris gel (Invitrogen, NP0321) using 1xMOPS running buffer (Life Technologies NP0001). Protein was wet transferred to a PVDF membrane in Towbin transfer buffer (25 mM Tris, 192 mM glycine pH 8.3,10% methanol) at 20 V ON at RT. The membrane was blocked in 1xTBS-T containing 5% w/v nonfat dry milk for 1 hr, washed with TBS-T three times for 5 min, incubated overnight in 0.1% dry milk TBS-T solution containing primary antibody at 4 °C with slow rocking, washed three times for 15 min in TBS-T, incubated with HRP-conjugated secondary antibody for 1 hr at RT in the 0.1% milk solution, washed six times for 15 min, incubated in chemiluminescent substrate (Thermo Fisher, 34094) and imaged.
 
-## NRL isoform and reporter constructs
+#### NRL isoform and reporter constructs
 
 The pcDNA4-His-Max-C-Nrl (Cheng et al., 2004; gift of A. Swaroop) CMV promoter was replaced with EF1α promoter to produce pcDNA4-His-Max-C-EF1α-FL-NRL. Using In-Fusion (Takara Bio), the His-Max tag was removed to produce full-length NRL expression plasmid pCDNA4-C-EF1α-FL-NRL (primers #1,2). The His-Max tag plus first 417 bp of NRL N-terminal coding sequence were removed to produce truncated NRL expression plasmid pCDNA4-C-EF1α-Tr-NRL (primers #1,2,3,4). pcDNA4-C-EF1α-empty transfection carrier plasmid was made by removing NRL coding sequence from pCDNA4-C-EF1α-Fl-NRL (primers #5,6). pGL3-PDE6B-146-luc was produced by amplifying a 146 bp promoter region of PDE6B Lerner et al., 2001 from H9 hESC genomic DNA and inserting into a pGL3-SV40 (Promega, primers #7,8), then removing the SV40 promoter (primers #9,10) to generate pGL3-PDE6B-146. The promoter-less pGL3-empty was produced by removing SV40 sequences from pGL3-SV40 (primers #9,11). pUltra-EGFP-P2A-Tr-NRL was produced by amplification of NRL coding sequence from pcDNA4-C-EF1α-FL-NRL and inserting into BamHI digested pUltra-EGFP (Addgene 24129; primers #12, 13). All primers are listed in the Key Resources Table.
 
-## NRL expression and analysis
+#### NRL expression and analysis
 
 pcDNA4-C-EF1α-NRL constructs were transfected into HEK-293T cells. 4 µg plasmid in 1 ml DMEM (Life Technologies, 10313039) was combined with 1 ml DMEM plus 12 µg polyethylenimine (PEI MAX; MW 40,000, Polysciences 24765–1) and combined with 106 trypsinized HEK-293T cells, plated into two wells of a 6-well plate with an additional 1 ml of DMEM plus 10% FBS, then cultured overnight in a 37 °C incubator. Media was replaced with fresh 293T media (DMEM, 10% FBS, 1% Penicillin-Streptomycin) the next day and after 2 additional days cells were collected, lysed, and protein quantitated via BCA assay (Thermo Scientific PI23227). 30 µg of each well was used for western blot as above, with membranes probed with antibody raised against the NRL N-terminus (Santa Cruz SC-374277) or against full-length NRL (R&D AF2945).
 
-## Luciferase assays
+#### Luciferase assays
 
 575 ng of total DNA (50 ng reporter, 100 ng FL-NRL and/or 100–300 ng Tr-NRL expression vector, and the remainder pcDNA4-C-EF1α empty vector) in 5 µl DMEM was mixed with 2.3 µg PEI in another 5 µl DMEM (per condition, in triplicate) and then plated into one well of a white bottom 96-well cell culture plate with 50,000 NIH3T3 cells or 50,000 of HEK-293T cells in 100 µl 293T media. The luciferase assay was carried out 48 hr after transfection with the Nano-Glo Dual-Luciferase Reporter Assay System (Promega N1610) per manufacturer instructions. Luminescence was recorded using the Promega Glomax Multi+ Detection System.
 
-## Truncated NRL overexpression in fetal retina
+#### Truncated NRL overexpression in fetal retina
 
 Concentrated pUltra-EGFP-NRL-205 and control pUltra-EGFP lentivirus were produced as described (Lee and Cobrinik, 2020). At 16–24 hr after HEK-293T transfection in 15 cm dishes, media was exchanged for 20 ml UltraCULTURE (Lonza Inc, BP12-725F) containing 1% HEPES (Sigma, 0887), 1% GlutaMax (Life Technologies 35050061), and 1% Penicillin-Streptomycin (Thermo Fisher Scientific, MT30002CI). After 60–64 hr, media was harvested, centrifuged at 3000 x g for 10 min at 4 °C, filtered through 0.45 µm PVDF flask filter, concentrated via tangential flow filtration using a MidiKros 20 cm 500 KD 0.5 mm column (D02-5500-05-S), with both input and final supernatant containers kept in ice. The concentrate was re-filtered using a 0.45 µm PVDF syringe filter (Millipore), stored in aliquots at –80 °C, and titered using a p24 ELISA kit (ZeptoMetrix 801002).
 
 As described (Singh et al., 2018), fetal eyes were washed in 70% ethanol, washed three times in 1 x sterile PBS, and dissected in cold 1 x PBS. The cornea was removed and tissue cut ~one-third of the distance towards the posterior pole along our lines approximately equidistant and between attached tendons. The retina was removed in this flattened state after cutting the optic nerve, transferred to a polytetrafluoroethylene culture insert (Millipore, PICM0RG50) with photoreceptor side down, and placed in a six-well plate with 1200 µl retinal culture medium. Retinae were infected as described, cultured for 7 days with half media changes every other day, then fixed in 4% PFA for 15 min, washed three times in 1 x PBS, equilibrated in sucrose (30% in PBS) for 15 min, and embedded and sectioned as above. Immunostaining and imaging were performed as above.
 
-## RB1 knockdown and SYK inhibitor treatment
+### RB1 knockdown and SYK inhibitor treatment
 
 FW18.5 retina was partially dissociated with papain, cultured overnight in retinal culture media at 37 °C in a six-well plate, then frozen in 10% DMSO solution and stored in liquid nitrogen. Samples were thawed and revived in retinal culture media overnight and infected with lentivirus carrying shRNAs targeting RB1 (shRB1-733; Xu et al., 2014) or a scrambled control (shSCR) and diluted β-mercaptoethanol, insulin, glutamine, penicillin, and streptomycin to the final retina culture medium concentrations along with 5 µg/ml Polybrene, for 24 hr. After replacing 2/3 of media in each well with fresh media, cells were treated with GS-9876 (MedChemExpress, HY-109091) in DMSO at or with the same volume of DMSO vehicle control. After 12 days, cells were attached to poly-L-Lysine-coated coverslips for 3 hr, fixed in 4% PFA for 10 min, washed in 1 x PBS three times, and stored at –20 °C until immunocytological staining with antibodies to Ki67, RXRγ, and GFP (for YFP staining) as described (Xu et al., 2014).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical methods and packages are cited in the Methods text and figure legends. Statistical comparison between more than two groups of cells for gene expression, regulon activity, or exon count proportions used the non-parametric Kruskal-Wallis test followed by pairwise post-hoc Dunn tests with Benjamini-Hochberg correction. Mean expression levels of NRL and RXRG isoforms across cell clusters were evaluated by Welch’s t-tests for groups with unequal variance; p-values for these tests were estimated using bootstrapping with 1,000,000 replications per comparison. Changes in FISH puncta counts were examined within each channel individually using zero-inflated negative binomial regression models with robust standard error terms. Distance across the sample tissue was used to model degenerate zero inflation. P values reported in the manuscript text and legends are Wald Chi-Squared tests that evaluate differences in count between inflection points. Analyses were performed using Microsoft Excel, the R statistical language in RStudio, or Stata SE v14.2.

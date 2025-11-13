@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Institute of Cognitive Neuroscience, University College London London United Kingdom
-2. https://ror.org/02tyrky19 School of Psychology, Trinity College Dublin Dublin Ireland
+1. Institute of Cognitive Neuroscience, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. School of Psychology, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
 ## Abstract
 
-In the current study, we explored the behavioural and cognitive correlates of the transdiagnostic trait ‘compulsive behaviour and intrusive thought’ (CIT) in humans. CIT is associated with impaired metacognition, which in turn has been associated with cognitive offloading behaviours such as external reminder setting that play a key role in fulfilling cognitive goals. In an online study ( N =600), we investigated individual differences in compulsivity, metacognition, and external reminder usage. Compulsive individuals had reduced preference for external reminders. This was partially, but not fully, attributable to their relative overconfidence. In contrast to previous studies, we found no evidence for an impaired confidence-action link: compulsive individuals used their metacognition to guide offloading just as much as their non-compulsive counterparts. Given the compensatory nature of cognitive offloading, our findings imply that compulsive individuals are at increased risk of inadequate external memory support. Along with transdiagnostic variation in the general population, this finding could also have implications for clinical conditions, such as obsessive-compulsive disorder (OCD).
+In the current study, we explored the behavioural and cognitive correlates of the transdiagnostic trait ‘compulsive behaviour and intrusive thought’ (CIT) in humans. CIT is associated with impaired metacognition, which in turn has been associated with cognitive offloading behaviours such as external reminder setting that play a key role in fulfilling cognitive goals. In an online study (N=600), we investigated individual differences in compulsivity, metacognition, and external reminder usage. Compulsive individuals had reduced preference for external reminders. This was partially, but not fully, attributable to their relative overconfidence. In contrast to previous studies, we found no evidence for an impaired confidence-action link: compulsive individuals used their metacognition to guide offloading just as much as their non-compulsive counterparts. Given the compensatory nature of cognitive offloading, our findings imply that compulsive individuals are at increased risk of inadequate external memory support. Along with transdiagnostic variation in the general population, this finding could also have implications for clinical conditions, such as obsessive-compulsive disorder (OCD).
 
 ## Introduction
 
@@ -24,11 +24,11 @@ In recent studies of clinically relevant individual differences, there has been 
 
 In the present study, our focus lies on the latter with the goal to investigate the downstream cognitive and behavioural correlates associated with transdiagnostic compulsivity. This symptom dimension represents a clinical concept characterised by an inability to regulate repetitive behaviours that are harmful to oneself, commonly observed in a variety of conditions, particularly OCD, schizophrenia, addiction, and eating disorders. Previous research links transdiagnostic compulsivity to impairments in metacognition, defined as thinking about one’s own thoughts, encompassing a broad spectrum of self-reflective signals, such as feelings of confidence (e.g. Rouault et al., 2018; Seow and Gillan, 2020; Benwell et al., 2022; Fox et al., 2023; Fox et al., 2024; Hoven et al., 2023a). Other studies have shown that metacognitive signals such as feelings of confidence guide cognitive offloading strategies like setting external reminders as memory aids (e.g. Gilbert, 2015; Boldt and Gilbert, 2019). Here, we aim to bridge these two literatures by investigating compulsivity, metacognition, and cognitive offloading within a single experimental paradigm. While compulsivity and cognitive offloading have both separately been linked to metacognition, the relationship between the two – with metacognition as a potential mediating factor – has not previously been systematically examined. This matters because cognitive offloading plays an integral role in our daily lives and is a key contributor to our effectiveness as cognitive agents (Gilbert et al., 2023).
 
-## Metacognition guides reminder setting
+### Metacognition guides reminder setting
 
 Reminders constitute an example of cognitive offloading, defined as the use of physical action to reduce the cognitive demands of a task. By offloading memory demands this way, we not only increase the likelihood of successfully completing tasks (Boldt and Gilbert, 2019), but we may also free up cognitive resources for other activities (Dupont et al., 2023). Choosing between setting a reminder and relying on memory is not a trivial matter. Prior research has emphasised the role of metacognition in determining when individuals resort to cognitive offloading (Gilbert et al., 2023; Gilbert, 2015; Boldt and Gilbert, 2019; Sachdeva and Gilbert, 2020; Risko and Gilbert, 2016): People tend to set more reminders when they feel less confident. In other words, people tend to set reminders when they think that they will forget, and this effect holds even after taking into account actual memory ability (e.g. Boldt and Gilbert, 2019). The link between confidence and offloading is observed both for situational fluctuations in confidence due to varying task difficulties (state variable; Boldt and Gilbert, 2022) and for a general predisposition towards over- or underconfidence (trait variable; Boldt and Gilbert, 2019).
 
-## Metacognition, compulsivity, and checking behaviours
+### Metacognition, compulsivity, and checking behaviours
 
 Given the known metacognitive impairments associated with compulsivity, changes in reminder-setting behaviour are plausible. More specifically, individuals characterised by transdiagnostic compulsivity have been consistently found to exhibit overconfidence (Rouault et al., 2018; Seow and Gillan, 2020; Benwell et al., 2022; Fox et al., 2023; Fox et al., 2024; Hoven et al., 2023a). If we consider the link between reminder setting and confidence, this implies a reduced likelihood of utilising external aids, such as reminders. However, while transdiagnostic compulsivity is liked to overconfidence, the opposite pattern of underconfidence is more common in patients with OCD, a compulsive disorder (as reviewed in Hoven et al., 2019). Recent research suggests that metacognitive impairments in transdiagnostic compulsivity and OCD may originate from different mechanisms (Hoven et al., 2023b; Hoven et al., 2023c), advising caution against broad generalisations between these groups. It should also be noted that the composite measure of transdiagnostic compulsivity includes questionnaire items linked not only with OCD but also other clinical conditions such as eating disorders (Tasca et al., 2011; Gillan et al., 2016). This results in an overlap between transdiagnostic compulsivity and other traits such as rigid perfectionism.
 
@@ -36,7 +36,7 @@ Despite opposite trends in metacognitive monitoring performance (under- versus o
 
 Some research argues that OCD patients’ checking arises from low memory confidence despite intact memory (Tolin et al., 2001). Our study has the potential to shed some light on the link between confidence and checking: While checking behaviours can be seen as a way of ensuring that a necessary action was performed in the past, reminder setting is a way of ensuring that a necessary action will be performed in the future. In other words, a reminder can serve as a future checkpoint that allows us to revisit a task at an appropriate time to complete it, perhaps by setting an alarm on our phone, jotting down a note, or strategically placing a related object somewhere visible. Given these insights, one might expect an increased reliance on reminders among OCD patients as they strive to establish more checkpoints. By contrast, seeing as transdiagnostic compulsivity is associated with increased confidence, this could be associated with the opposite pattern: a decreased reliance on reminders.
 
-## Three possible mechanisms for changes in reminder setting
+### Three possible mechanisms for changes in reminder setting
 
 If, as hypothesised, compulsivity is linked with altered reminder setting, this could be attributed to at least three underlying mechanisms. First is the Metacognitive Control Mechanism: Previous research has found that more compulsive individuals tend to have impaired metacognitive control (Seow and Gillan, 2020), meaning they use metacognitive signals to a lesser extent to guide future behaviour. Compulsivity is a hallmark symptom of OCD, and similar deficits in metacognitive control have been observed in a case-control studies comparing OCD patients with healthy controls examining how confidence and action are correlated (Vaghi et al., 2017; though see also Hoven et al., 2023b; Marzuki et al., 2022). In the context of our study, a Metacognitive Control Mechanism would be reflected in a disrupted relationship between confidence levels and their tendency to set reminders (i.e. the interaction between the bias to be over- or underconfident and transdiagnostic ‘compulsive behaviour and intrusive thought’ (CIT) in a regression model predicting a bias to set reminders).
 
@@ -44,11 +44,11 @@ Second, more compulsive individuals might conceivably differ in their reminder-s
 
 Lastly, there could be a direct link between compulsivity and reminder usage, independent of any metacognitive influence. We refer to this as the Direct Mechanism and it constitutes any possible influences that affect reminder setting in highly compulsive CIT participants outside of metacognitive mechanisms, such as perfectionism and the wish to control the task without external aids. Our study aims to differentiate between these three mechanisms. Back when we preregistered our hypotheses, only a limited number of studies about confidence and transdiagnostic CIT were available. This resulted in us hypothesising to find support for the Metacognitive Control Mechanism and that highly compulsive individuals would offload more due to an increased need for checkpoints. Both of these hypotheses turned out to be incorrect.
 
-## Anxious-depressed transdiagnostic phenotype
+### Anxious-depressed transdiagnostic phenotype
 
 As well as investigating individual differences in compulsivity, we also measured an anxious-depression (AD) factor. Based on the previous findings, we predicted opposite influence of these two factors on confidence. Whereas compulsivity has been linked to increased confidence, AD individuals typically display relative underconfidence (Rouault et al., 2018; Seow and Gillan, 2020; Benwell et al., 2022). By taking a transdiagnostic approach, we were able to jointly investigate the influence of these two factors of confidence which could potentially cancel out if they were investigated separately.
 
-## Online reminder-setting task
+### Online reminder-setting task
 
 In the present preregistered study, we asked 600 participants drawn from the general population to complete several individual differences questionnaires. These responses were then weighted to produce both a ‘CIT’ factor and an ‘AD’ factor (Gillan et al., 2016; Wise and Dolan, 2020). Participants’ scores on these factors were then correlated with their behaviour in a reminder-setting task, which was a modified, 20 min version of the online reminder setting task developed by Gilbert et al., 2020; Figure 6.
 
@@ -66,7 +66,7 @@ Here, we present the results of a preregistered online study on the relationship
 
 We calculated six key measures for each participant:
 
-## Replication and sanity checks
+### Replication and sanity checks
 
 In the following section, we aim, where the design allows it, to replicate four previous effects for this task. First, with Hypothesis 1, we predicted that the reminder bias and metacognitive bias are negatively correlated, replicating previous findings (as reviewed in Gilbert et al., 2023). This effect tests the above-mentioned link between metacognition and cognitive offloading: the less confident someone feels, the more they use reminders. There was indeed a significant negative correlation, r=–0.2, p<0.001 (Figure 2). Second, in replication of previous findings (e.g. Gilbert et al., 2020; Sachdeva and Gilbert, 2020; Kirk et al., 2021; Engeler and Gilbert, 2020), Hypothesis 2 expressed our expectation to find an excessive use of reminders reflected in significantly higher OIPs compared to AIPs. In other words, we expected the reminder bias to be greater than zero, which was indeed the case, m=0.52, t(599) = 5.1, p<0.001, d=0.21. Third, with Hypothesis 3, we expected to replicate that participants would be underconfident in their own memory (e.g. Engeler and Gilbert, 2020), expressed in an average, negative metacognitive bias. Our data supported this hypothesis, m=–3.64, t(599) = –3.1, p=0.001, d=–0.13. Fourth, Hypothesis 4 predicts that as in previous studies, we would find evidence for compensatory reminder use. Keeping in mind that the OIP reflects the cut-off at which participants should be indifferent between offloading and not offloading and the AIP the cut-off they actually displayed, then looking at these two measures together should show that participants with poorer memory and greater benefit from reminders (lower OIP) tend to use them more (lower AIP). Indeed, the OIP and AIP were positively correlated, suggesting participants who benefited most from reminders were more likely to use them, r=0.36, p<0.001. Taken together, we found that participants showed the usual hallmarks of this offloading task, using their confidence to strategically decide when to offload, general tendencies for setting reminders and for underconfidence, and compensatory reminder use.
 
@@ -74,9 +74,9 @@ In the following section, we aim, where the design allows it, to replicate four 
 
 **Figure 2.:** The solid line indicates the fitted relationship between both variables. The dashed lines represent the 95% confidence interval around it. Each circle represents a single participant.
 
-## Testing our key hypotheses
+### Testing our key hypotheses
 
-## Elevated confidence in CIT and reduced confidence in AD
+#### Elevated confidence in CIT and reduced confidence in AD
 
 We predicted that the metacognitive bias would correlate negatively with AD (Hypothesis 8a; more AD individuals tend to be underconfident). For CIT, we preregistered a non-directional, significant link with metacognitive bias (Hypothesis H6a). We found support for both hypotheses, both for AD, β=–0.23, SE = 0.05, t=–4.99, p<0.001, and CIT, β=0.15, SE = 0.05, t=3.11, p=0.002, controlling for age, gender, and educational attainment (Figure 3; see also Appendix 1—table 1). Note that for CIT, this effect was positive, and more compulsive individuals tend to be overconfident.
 
@@ -86,7 +86,7 @@ We predicted that the metacognitive bias would correlate negatively with AD (Hyp
 
 We furthermore preregistered to also test this for raw confidence (percentage of circles participants predicted they will remember, rather than the accuracy-corrected metacognitive bias score; Hypotheses H8b and H6b). Indeed, the same patterns were found for both AD, β=–0.29, SE = 0.04, t=–6.43, p<0.001, and CIT, β=0.12, SE = 0.05, t=2.76, p=0.006 (see Appendix 1—table 2). Including scores from the cognitive ability test as an additional covariate (Hypotheses H8c and H6c, respectively) furthermore did not change the results, AD, β=–0.20, SE = 0.05, t=–4.46, p<0.001; CIT, β=0.12, SE = 0.05, t=2.57, p=0.011 (see Appendix 1—table 3). Taken together, these results suggest that concordant with our hypotheses, compulsivity was linked to inflated confidence and anxiety to deflated confidence.
 
-## Contrary to expectations, compulsivity reduced pro-offloading bias
+### Contrary to expectations, compulsivity reduced pro-offloading bias
 
 We expected to find a positive link between CIT factor scores and reminder bias. In other words, we predicted that more compulsive individuals would show a greater pro-offloading bias, relative to the optimal strategy (Hypothesis H5a). However, our results showed the exact opposite effect with a significantly reduced reminder bias in compulsive individuals, β=–0.14, SE = 0.05, t=–2.91, p=0.004, controlling for age, gender, and educational attainment (Figure 4; see also Appendix 1—table 4). This trend persisted when, instead, we predicted the absolute number of reminders chosen by the participant (Hypothesis H5b), β=–0.09, SE = 0.05, t=–1.94, p=0.053 (see Appendix 1—table 5), as well as when predicting the AIP (Hypothesis H5c), β=0.10, SE = 0.05, t=2.25, p=0.025 (see Appendix 1—table 6).
 
@@ -100,7 +100,7 @@ We furthermore preregistered to conduct the same tests for the AD factor but wit
 
 Taken together, these results suggest that compulsive individuals are less biased towards offloading, in contrast to our hypothesised direction of the effect, but consistent with the observation of increased confidence in their ability on this task.
 
-## No evidence for impaired confidence-offloading link
+### No evidence for impaired confidence-offloading link
 
 We predicted to find support for the Metacognitive Control Mechanism, meaning that CIT would act as a moderator on the link between confidence and offloading (Hypothesis H7a). In other words, we expected to find that the correlation between the metacognitive and the reminder bias to be weakened in highly compulsive individuals. However, the interaction between metacognitive bias and compulsivity in a model predicting the reminder bias was not significant, β=–0.01, SE = 0.04, t=–0.18, p=0.86, controlling for age, gender, and educational attainment (see Appendix 1—table 9). This means that in our task, confidence and offloading were linked just as much as in their low compulsive counterparts. These results remained the same even if working memory performance (d’ from the 2-back task) was included as an additional covariate (Hypothesis H7b), β=–0.01, SE = 0.04, t=–0.26, p=0.79 (see Appendix 1—table 10), or if scores from the cognitive ability test were included as an additional covariate (Hypothesis H7c), β=–0.01, SE = 0.04, t=–0.18, p=0.86 (see Appendix 1—table 11).
 
@@ -120,21 +120,21 @@ In summary, whilst we found no support for the Metacognitive Control Mechanism (
 
 In the current study, we explored the behavioural and cognitive correlates of two transdiagnostic traits: ‘CIT’ and ‘AD’. We focused on changes in cognitive offloading and metacognition related to transdiagnostic compulsivity. Our results replicated that more compulsive individuals were relatively overconfident, while those who were more AD were relatively underconfident. Contrary to expectations, we observed a decreased bias towards reminders among more compulsive participants. This reduction in bias was only partially accounted for by their relative overconfidence. This partial mediation can be interpreted through both a Metacognitive Monitoring Mechanism (differences in the formation of the confidence signal rather than its behavioural application) and a Direct Mechanism (no metacognitive involvement). We found no support for a Metacognitive Control Mechanism, which would centre on how confidence is used to adapt behaviour (Nelson & Narens, 1990; Boldt and Gilbert, 2022).
 
-## Perfectionism and the need to control as potential explanations
+### Perfectionism and the need to control as potential explanations
 
 Contrary to our hypothesis, our study revealed an inverse relationship between transdiagnostic compulsivity and offloading: the reminder bias was reduced in more compulsive individuals. One possible interpretation is perfectionism: Some compulsive individuals may avoid using reminders altogether due to rigid, perfectionistic beliefs about needing to remember everything without relying on external aids, and using reminders could trigger their anxiety or feed into their obsessions about being forgetful or unreliable. This interpretation aligns with findings, suggesting that perfectionism serves as a transdiagnostic maintaining and risk factor for various mental health conditions, including compulsive disorders like eating disorders and OCD (Egan et al., 2011).
 
-## No effect of anxiety on offloading
+### No effect of anxiety on offloading
 
 Interestingly, we found no significant influence of the AD transdiagnostic phenotype on offloading. This aligns with a recent study by Kirk et al., 2021, which also found no effect of anxiety on offloading. However, their study, which used the ‘trait’ component of the STAI to measure anxiety (Spielberger et al., 1983), found no relative underconfidence among anxious participants either. Our transdiagnostic approach likely revealed this confidence effect by separating the counteracting influences of AD and CIT factors. This distinction underscores the value of a transdiagnostic approach.
 
 Our findings align with those reported in a recent study by Mohr et al., 2024. The authors observed that while high-AD participants were underconfident in a perceptual task, this underconfidence did not lead to increased information-seeking behaviour. Future research should explore whether this is due to their pessimism regarding the effectiveness of confidence-modulated strategies (i.e. setting reminders or seeking information) or whether it stems from apathy. Another possibility is that the relevant downstream effects of anxiety were not measured in our study and instead may lie in reminder-checking behaviours.
 
-## No evidence for an impaired confidence-action link in compulsivity
+### No evidence for an impaired confidence-action link in compulsivity
 
 Contrary to Seow and Gillan, 2020, and Vaghi et al., 2017, our study did not find the impaired confidence-action link (Metacognitive Control Mechanism) reported for transdiagnostic compulsivity and OCD patients. This may be because of differences between tasks – prior work used a reinforcement learning task with a clear learning element from trial to trial. Alternatively, it is possible our study was underpowered, as our sample size was designed to detect overconfidence in compulsivity, not the more nuanced but still psychometrically robust confidence-action link (Loosen et al., 2022), which would have required a far larger sample size. Recent studies also failed to find decreased action-confidence coupling with relatively small groups of OCD patients and controls (Hoven et al., 2023b; Marzuki et al., 2022). Indeed, both our paradigm and the earlier predictive-inference task tested for an interaction effect, which is more challenging to power adequately. Future research should consider using more direct measures that ideally aim to manipulate confidence directly.
 
-## Implications
+### Implications
 
 Participants in our current study were recruited from the general population through Prolific, meaning that the variance likely represents primarily subclinical sources. Consequently, caution should be exercised when extrapolating these results to clinical populations. For example, a recent study indicated that metacognitive impairments in OCD originate from different mechanisms than those observed in transdiagnostic compulsivity (Hoven et al., 2023c). Given its metacognitive impairments and the prevalent symptom of checking, OCD still remains a particularly relevant patient group for studying reminder setting, and future studies need to explore this area further. Due to their underconfidence, OCD patients might engage in more frequent reminder setting. This behaviour could serve as a compensatory mechanism, especially since OCD patients often face challenges with working memory (Harkin and Kessler, 2011) and prospective memory (Harris et al., 2010; Racsmany et al., 2011). However, it could also worsen their checking symptoms as more reminders mean more opportunities to check.
 
@@ -142,13 +142,13 @@ On the other hand, it is possible that the observed underconfidence in OCD popul
 
 A pivotal question remains: will the overall reduction in reminder setting, referred to as a ‘direct effect’ in this study, also be observed in OCD patients and other compulsive disorders? Such findings could support the hypothesis that an inherent aspect of compulsivity leads to the decreased use of external aids, potentially due to perfectionism or a need for control.
 
-## Limitations
+### Limitations
 
 Our results are based on a well-validated paradigm which our lab has previously used in other, published studies (as reviewed in Gilbert et al., 2023). However, reliance on a single behavioural task also means that our results might not generalise onto cognitive offloading more broadly or even reminder setting in other contexts. As a first step, future work should aim to replicate our findings in the context of other experimental designs.
 
 Another limitation is that in the present study, we focused solely on measuring two transdiagnostic factors: CIT and AD. We omitted the third factor, ‘social withdrawal’. By doing so, we were able to reduce the number of items from 6 clinical questionnaires to 49 (Wise and Dolan, 2020), thereby shortening the required time for completion – an essential consideration for online research (Sauter et al., 2020). Nevertheless, this focused approach could introduce variability in capturing these transdiagnostic phenotypes. A recent preprint from Hopkins et al., 2022 supports this approach. They used machine learning to select 71 items capable of reliably measuring all three factors, suggesting that future transdiagnostic studies might similarly adopt more concise item sets.
 
-## Conclusion
+### Conclusion
 
 With the present study, we investigated the downstream cognitive and behavioural effects of two transdiagnostic traits, CIT and AD. In particular, we were interested in the effect these factors have on metacognition and cognitive offloading, operationalised as prospective confidence and reminder setting, respectively. We replicated the finding that more compulsive individuals tend to be relatively overconfident, whereas AD individuals tend to be relatively underconfident. Contrary to our hypotheses, however, we found that compulsivity was linked reduced offloading, and that this effect was only in part explained by overconfidence.
 
@@ -156,7 +156,94 @@ Fulfilling delayed intentions (i.e. prospective memory) is a vital process for d
 
 ## Materials and methods
 
-## Task and procedure
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Development Core Team, 2024</td>
+      <td>4.4.2; RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio Team, 2020</td>
+      <td>2024.09.1+394; RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>diagram</td>
+      <td>Soetaert, 2020</td>
+      <td>1.6.5; RRID:SCR_026982</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>effectsize</td>
+      <td>Ben-Shachar et al., 2020</td>
+      <td>0.8.9; RRID:SCR_026983</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>lmerTest</td>
+      <td>Kuznetsova et al., 2017</td>
+      <td>3.1-3; RRID:SCR_015656</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>lme4</td>
+      <td>Bates et al., 2015</td>
+      <td>1.1-35.5; RRID:SCR_015654</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mediation</td>
+      <td>Tingley et al., 2014</td>
+      <td>4.5.0; RRID:SCR_026984</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>plyr</td>
+      <td>Wickham, 2011</td>
+      <td>1.8.9; RRID:SCR_026985</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pwr</td>
+      <td>Champely, 2020</td>
+      <td>1.3-0; RRID:SCR_025480</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>quickpsy</td>
+      <td>Linares and López-Moliner, 2016</td>
+      <td>0.1.5.1; RRID:SCR_026986</td>
+      <td>R package</td>
+    </tr>
+  </tbody>
+</table>
+
+### Task and procedure
 
 For the present, preregistered study, we used a novel variant of an online cognitive-offloading task (‘optimal reminders task’; cf. Gilbert et al., 2020). This task allowed us to measure how people set reminders in relation to their confidence. All procedures, hypotheses, and planned analyses were preregistered at https://osf.io/kztf8 prior to the commencement of data collection.
 
@@ -176,7 +263,7 @@ In addition to the reminder task, we included items from six individual differen
 
 We also included a catch item in the BIS-11 (‘I competed in the 1917 Summer Olympics Games.’) to ensure participants were paying attention to the task, as well as three covariates aimed at measuring cognitive ability (a 5-item version of the International Cognitive Ability Resource; ICAR5; Kirkegaard and Bjerrekær, 2016; Condon and Revelle, 2014); educational attainment mapped onto a 1–9 scale and based on the ISCED 2011 categories (see Appendix 1); and working memory, assessed using 100 consecutive letters from the 2-back task (e.g. Kirchner, 1958). The logic behind including the latter covariate was that whilst our key dependent variables already corrected for working memory (more specifically: unaided prospective memory performance), this could tap into additional working memory components not measured already and potentially impacted in compulsivity based on the finding that they have often been found to be impaired in OCD (Harkin and Kessler, 2011). Together, these elements resulted in a total duration of approximately 35 min. The sequence of events within the task is shown in Figure 6E.
 
-## Participants
+### Participants
 
 Ethical approval for this study was received from the local Ethics Committee at University College London (UCL) under the reference number 1584/003. Informed consent was obtained from all participants prior to the study. Participants were invited on prolific.co to participate for £3.90. Based on points won during the main task, the upper 50% of participants were furthermore rewarded with a bonus payment of £1. We restricted our search to the Prolific standard sample, allowed participants from all countries, with a minimum of 18 years. All participants had to be fluent in English and were required to have an approval rate of over 90% based on Prolific’s criteria. Moreover, we required participants to not have participated in one of the four pilots prior to this study.
 
@@ -184,15 +271,27 @@ All analyses were conducted with R in RStudio (R Development Core Team, 2024; RS
 
 We preregistered six exclusion criteria, based on which we excluded and replaced 69 participants: Nine participants were excluded due to a higher hit rate on forced internal than forced external trials, 22 participants were excluded due to less than 70% accuracy on FE trials, and 3 participants due to less than 10% accuracy on FI trials. We furthermore preregistered to exclude participants with a negative correlation between value and reminder choice (1=reminder, 0=no reminder), as this would indicate participants did not understand the instructions: in order to maximise points in our task, participants should preferentially choose reminders when this strategy brings a higher number of points. Based on this, we excluded 40 participants. No participants were excluded based on scoring lower or higher three times the median absolute deviation calculated separately based on both the reminder bias and the metacognitive bias. Finally, we excluded 9 participants because they failed to answer with ‘Do not agree at all’ to the catch item. Figure 1 visualises the exclusions shown in red. In total, we excluded 10.3% of all participants. There were an additional 26 participants excluded for technical reasons, raising the exclusion rate to 13.7%.
 
-## Key dependent variables
+### Key dependent variables
 
-Our task allowed us to calculate several dependant variables relevant in the context of our study question. The first is the OIP, the optimal indifference point. The OIP describes the number of points at which an unbiased, reward-maximising participant is indifferent between the two strategies (reminders or no reminders) and is calculated as:OIP=(10∗ACCFI)/ACCFE
+Our task allowed us to calculate several dependant variables relevant in the context of our study question. The first is the OIP, the optimal indifference point. The OIP describes the number of points at which an unbiased, reward-maximising participant is indifferent between the two strategies (reminders or no reminders) and is calculated as:
+
+$$
+OIP=(10∗ACC_{FI})/ACC_{FE}
+$$
 
 where ACCFE is the accuracy measured during trials in which the participants had to solve the task using reminders (FE condition), and ACCFI is the accuracy measured during trials in which participants had to solve the task without reminders (FI condition). In contrast, the AIP is the the AIP is the actual indifference point, which is the point cut-off at which participants actually were indifferent and is operationalised as the threshold parameter from fitting a psychometric function to the choice data (target values predicting the decision whether or not to use reminders). Fitting was done using the quickpsy package in R, and more detail is given in Appendix 1. It should be noted that the OIP has a slightly finer resolution due to the number of special circles per trial.
 
-Setting the OIP and the AIP in relation, we can calculate the reminder bias, reflecting participants’ tendency to use reminders corrected for their actual performance and calculated as the difference between both indifference points:biasrem=OIP−AIP
+Setting the OIP and the AIP in relation, we can calculate the reminder bias, reflecting participants’ tendency to use reminders corrected for their actual performance and calculated as the difference between both indifference points:
 
-Positive values reflect that people set more reminders relative to the optimal strategy. The fourth measure is the metacognitive bias, reflecting participants’ over- or underconfidence relative to their performance and was calculated as:biasmeta=confidence−ACCFI
+$$
+bias_{rem}=OIP−AIP
+$$
+
+Positive values reflect that people set more reminders relative to the optimal strategy. The fourth measure is the metacognitive bias, reflecting participants’ over- or underconfidence relative to their performance and was calculated as:
+
+$$
+bias_{meta}=confidence−ACC_{FI}
+$$
 
 Negative values can be interpreted as underconfidence.
 
@@ -202,19 +301,137 @@ It should be noted that we had incorrectly stated in the preregistration that ac
 
 Finally, the transdiagnostic scores for the ‘CIT’ factor and the ‘AD’ factor were calculated from participants’ ratings to the individual differences questionnaires by multiplying them with the item weights from Wise and Dolan, 2020, prior to summing them. The items composing the CIT and AD scores, respectively, were non-overlapping with 24 items forming the AD score and 25 items forming the CIT score.
 
-## Preregistered hypotheses and statistical analyses
+### Preregistered hypotheses and statistical analyses
 
 We preregistered eight hypotheses (see Table 1), half of which were sanity checks (H1-H4) aimed to establish whether our task would generally lead to the same patterns as previous studies using a similar task (as reviewed in Gilbert et al., 2023). H1 was a replication of the central finding of the link between confidence and offloading. More specifically, we entered the unconfounded metacognitive bias and reminder bias into a Pearson correlation analysis. We expected to find a negative relationship between the two measures, which we planned to test for significance using a one-sided test. We furthermore expected to find that people would use more reminders than optimal. This pro-reminder bias would be reflected in a positive reminder bias (H2). We planned to test this using a one-sided paired t-test. Relatedly, we expected to find people to be generally underconfident (i.e. expecting to remember fewer special circles than they actually did when doing the task without reminders). Such underconfidence would be reflected in a negative metacognitive bias (H3), which we again planned to test using a one-sided paired t-test. Furthermore, we expected that those who required more reminders would also be the ones to use them more, as reflected in a positive correlation between the AIP and OIP, again as a one-sided test (H4). We decided to use Spearman’s rho due to the data most likely being distributed around the extremes of the scale. For H2-H4 (as well as H5, H6, and H8, see below), we used the biases and indifference points calculated from all available trials as there was no circularity issue.
 
-Hypotheses H5-H8 were the key hypotheses of our study. Here, we address them out of order in the interest of an improved logical flow. Hypothesis H6 predicted that more compulsive individuals would show an effect in confidence bias, reflected in a reliable predictor of the CITs scores on the metacognitive bias from the following regression model:biasmeta∼CIT+AD+age+gender+education+ε
+**Table 1.**
+ List of preregistered hypotheses together with the empirical support our study found.White background indicates sanity check hypotheses, and grey background indicates key hypotheses. OIP = optimal indifference point. AIP = actual indifference point. CIT = compulsive behaviour and intrusive thought.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Hypothesis</th>
+      <th>Support?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>The reminder bias and metacognitive bias are negatively correlated.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>Participants use reminders excessively.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>Participants are underconfident in their own memory.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>OIP and AIP are positively correlated.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H5a</td>
+      <td>Positive link between CIT and reminder bias.</td>
+      <td>No (significant negative effect)</td>
+    </tr>
+    <tr>
+      <td>H5b</td>
+      <td>Positive link between CIT and absolute number of reminders chosen.</td>
+      <td>No (negative effect but significance not reached)</td>
+    </tr>
+    <tr>
+      <td>H5c</td>
+      <td>Positive link between CIT and AIP.</td>
+      <td>No (significant negative effect)</td>
+    </tr>
+    <tr>
+      <td>H5d</td>
+      <td>Positive link between CIT and reminder bias even if working memory is included as a covariate.</td>
+      <td>No (significant negative effect)</td>
+    </tr>
+    <tr>
+      <td>H5e</td>
+      <td>Positive link between CIT and reminder bias even if cognitive ability is included as a covariate.</td>
+      <td>No (significant negative effect)</td>
+    </tr>
+    <tr>
+      <td>H6a</td>
+      <td>A significant link exists between CIT and metacognitive bias (preregistered as a two-sided test, so either more or less confident).</td>
+      <td>Yes (positive)</td>
+    </tr>
+    <tr>
+      <td>H6b</td>
+      <td>A significant link exists between CIT and raw confidence.</td>
+      <td>Yes (positive)</td>
+    </tr>
+    <tr>
+      <td>H6c</td>
+      <td>A significant link exists between CIT and metacognitive bias even if cognitive ability is included as a covariate.</td>
+      <td>Yes (positive)</td>
+    </tr>
+    <tr>
+      <td>H7a</td>
+      <td>CIT acts as a moderator on the link between confidence and offloading. In other words, we expect to find that the correlation between the metacognitive and the reminder bias to be weakened in highly compulsive individuals.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>H7b</td>
+      <td>CIT acts as a moderator on the link between confidence and offloading even if working memory is included as a covariate.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>H7c</td>
+      <td>CIT acts as a moderator on the link between confidence and offloading even if cognitive ability is included as a covariate.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>H8a</td>
+      <td>A significant negative link exists between AD and metacognitive bias (i.e. more anxious-depressed individuals tend to be underconfident).</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H8b</td>
+      <td>A significant negative link exists between AD and raw confidence.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H8c</td>
+      <td>A significant negative link exists between AD and metacognitive bias even if cognitive ability is included as a covariate.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+Hypotheses H5-H8 were the key hypotheses of our study. Here, we address them out of order in the interest of an improved logical flow. Hypothesis H6 predicted that more compulsive individuals would show an effect in confidence bias, reflected in a reliable predictor of the CITs scores on the metacognitive bias from the following regression model:
+
+$$
+bias_{meta}∼CIT+AD+age+gender+education+\epsilon
+$$
 
 Though we did not preregister a direction for this effect, in the light of recent findings, it has now become clear that compulsivity would most likely be linked to overconfidence (Rouault et al., 2018; Seow and Gillan, 2020; Benwell et al., 2022; Fox et al., 2023; Fox et al., 2024; Hoven et al., 2023a). The same model was used to test hypothesis H8, predicting that more AD individuals tend to be underconfident. This would be reflected in AD scores being negatively linked to the metacognitive bias. The model above represents the main models designed to test hypotheses H6a and H8a. We furthermore also tested these hypotheses but predicted raw confidence (percentage of circles participants predicted they would remember; H6b and H8b, respectively), as well as extending the main model with the scores from the cognitive ability test (ICAR5) as an additional covariate (H6c and H8c, respectively). For this, as well as all following regression models, we z-transformed all non-binary variables prior to fitting the models.
 
-With H5, we predicted that more compulsive individuals would show a bias towards more offloading, reflected in a positive regression coefficient when using the CIT score as a predictor of the reminder bias. This hypothesis was not a replication; consequently, we decided to carry out the test two-sided. Throughout this section, whenever not explicit specified, we plan to carry out a test two-sided. Due to the diametrically opposing effects of CIT and AD, both transdiagnostic scores need to be entered into the model, alongside our demographic covariates age, gender, and educational attainment:biasrem∼CIT+AD+age+gender+education+ε
+With H5, we predicted that more compulsive individuals would show a bias towards more offloading, reflected in a positive regression coefficient when using the CIT score as a predictor of the reminder bias. This hypothesis was not a replication; consequently, we decided to carry out the test two-sided. Throughout this section, whenever not explicit specified, we plan to carry out a test two-sided. Due to the diametrically opposing effects of CIT and AD, both transdiagnostic scores need to be entered into the model, alongside our demographic covariates age, gender, and educational attainment:
+
+$$
+bias_{rem}∼CIT+AD+age+gender+education+\epsilon
+$$
 
 We fitted several different versions of this model: the main model predicted the reminder bias (H5a), but we also fit one with the absolute number of reminders chosen (H5b) or the AIP (H5c). To understand whether any differences in offloading behaviour could stem from differences in working memory capacity not already captured by our correction for unaided task performance, we furthermore extended the main model by also including the d’ from a 2-back task as a covariate (H5d). Finally, we fit an extended version of the main model with scores from the cognitive ability test (ICAR5) as an additional covariate to capture cognitive ability (H5e). We ran the same analysis but for the AD factor. We included this test as a preregistered analysis but did not specify any directional hypotheses.
 
-Our final hypothesis, H7, aimed to differentiate between the Metacognitive Monitoring Mechanism, the Metacognitive Control Mechanism, and the Direct Mechanism. We tested how compulsivity would affect the relationship between confidence and offloading. More specifically, we predicted that CIT scores would act as a moderator variable between the metacognitive and the reminder bias, and that highly compulsive individuals would have a weaker link. We tested this by fitting the following regression model to the data:biasrem∼biasmeta∗CIT+AD+age+gender+education+ε
+Our final hypothesis, H7, aimed to differentiate between the Metacognitive Monitoring Mechanism, the Metacognitive Control Mechanism, and the Direct Mechanism. We tested how compulsivity would affect the relationship between confidence and offloading. More specifically, we predicted that CIT scores would act as a moderator variable between the metacognitive and the reminder bias, and that highly compulsive individuals would have a weaker link. We tested this by fitting the following regression model to the data:
+
+$$
+bias_{rem}∼bias_{meta}∗CIT+AD+age+gender+education+\epsilon
+$$
 
 To avoid circularity, we used the unconfounded metacognitive bias and reminder bias for this analysis. The moderation of CIT is reflected in its interaction term with the biasmeta predictor. A significant interaction term can be interpreted as support for the Metacognitive Control Mechanism. In addition to this main model (H7a), we furthermore also tested whether this effect would persist if working memory (2-back d’; H7b) or educational attainment (H7c) were included as additional covariates. We ran the same analysis but for the AD factor. We included this test as a preregistered analysis but did not specify any directional hypotheses.
 

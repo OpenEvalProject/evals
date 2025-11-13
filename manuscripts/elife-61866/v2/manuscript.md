@@ -34,9 +34,25 @@ Here, we have analyzed the integrity of cellular junctions in an ESCRT-depleted 
 
 ## Results
 
-## ESCRT knockdown specifically affects SJ integrity
+### ESCRT knockdown specifically affects SJ integrity
 
 To analyze the impact of ESCRT loss of function on junctional integrity, transmission electron microscopy (TEM) was used on wing imaginal discs that have been depleted of ESCRT function. We devised an RNAi-based approach allowing spatiotemporal knockdown of the ESCRT-III component Shrub. By using hhGal4 and the temperature sensitive Gal4 Repressor (tubGal80ts), we specifically inhibited Shrub protein expression in the posterior compartment by expressing a UAS-shrub-RNAi construct (Sweeney et al., 2006) for specified durations. After 32 hr of RNAi expression, Shrub protein was effectively reduced in the posterior compartment as visualized by antibody staining (Figure 1A). ESCRT loss of function is known to induce high levels of apoptosis in imaginal disc tissue (Herz et al., 2006; Thompson et al., 2005; Vaccari and Bilder, 2005). Since apoptotic cells disassemble their junctions prior to extrusion from the tissue (Brancolini et al., 1997; Steinhusen et al., 2001), we co-expressed the viral caspase inhibitor p35 (Hay et al., 1994) with shrub-RNAi to preserve tissue integrity and allow unambiguous analysis of junctional structures. Interestingly, while 48 hr expression of p35 + shrub-RNAi yielded discs with no apparent morphological defects seen in a thin section (Figure 1B), discs after 65 hr of expression were disorganized and multi-layered in the posterior compartment as reported for shrub null mutant clonal eye disc tissue (Figure 1C; Vaccari et al., 2009). This indicates that our assay is able to reproduce the hallmarks of ESCRT-mediated neoplasia.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig1-v2.jpg)
+
+**Figure 1.:** (A) 32-hr expression of shrub-RNAi under the control of hhGal4 effectively depletes Shrub levels in the posterior compartment of wing imaginal discs. (B–C) Thin sections of wing discs co-expressing shrub-RNAi and p35 for either 48 hr (B) or 65 hr (C). Note the intact epithelial monolayer at the 48 hr stage (B) vs. posterior neoplastic overgrowth after 65 hr (C). (D) Quantification of electron-dense SJ in TEM sections reveals a ~50% reduction of SJ strands within Shrub-depleted compartments (48 hr) compared to control. Each data point represents a single junctional region of interest (ROI) of 2 μm length as defined in (E) A two-tailed t-test was used for statistical analysis with the significance level **** representing a p-value<0.0001. Representative ROIs of control (E) and Shrub-depleted compartments (E') visualize the reduction in electron-dense SJ. (F) Optical section of a wing disc after 48 hr of Shrub depletion in the posterior compartment. The claudin Mega is lost from the apical SJ (compare arrowheads) and accumulates basal to the nuclei (arrow). In contrast, E-cad localization to AJ between the anterior control and the posterior compartment is largely unaffected (compare arrowheads in F') while only little accumulation is seen at the basal pole (arrow). (G) Projections of the junctional area show the close association of E-cad with Mega in anterior control compartments (G) and apparent lack of junctional Mega in the Shrub-depleted tissue (G'). In basal planes, intracellular accumulation of Mega within the shrub-RNAi compartment is evident as a punctate pattern, colocalizing with the endosomal marker Rab7 (H). Subcellular localization of the SJ component Lachesin::GFP is restricted to SJ in anterior control compartments while showing extensive spread along the entire lateral membrane in Shrub-depleted cells (arrowheads in I). (J) Fluorescence recovery after photobleaching (FRAP) analysis of Lac::GFP at the SJ level reveals increased mobility in shrub-RNAi tissue, indicating defective fence function of SJ. a: anterior/p: posterior. The red graph displays mean Lac::GFP fluorescence recovery in the posterior compartment, the green graph represents mean values for the anterior control compartment. Error bars indicate standard deviation for each individual time point. Scale bar in (A) 100 μm, (B–C) 50 μm, (E) 0.5 μm, and all other panels 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Control wing disc expressing engrailed (en)-Gal4 and Nrx::IV after incubation with dsRed-labeled 10 kDa Dextran. Note the faint red staining indicative of Dextran penetration into the tissue. (B) Dextran accumulates in epithelial folds of a wing disc depleted of Shrub in the posterior compartment (arrowhead). (C) Control disc without RNAi expression and (D) after Vps26 depletion. Note the reduced NrxIV::GFP signal in the Vps26 depleted posterior compartment in (D), accompanied by Dextran infiltration of the tissue (arrowhead). Scale bars in all panels represent 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) HhGal4-driven posterior expression in wing discs of an RNAi construct targeting the SJ component Mega effectively depletes Mega levels as detected by antibody staining. (A') Subcellular localization of an endogenously tagged Lachesin::GFP (SJ component associated with the outer membrane leaflet) in the wildtype anterior control compartment is largely restricted to the SJ. In the Mega depleted posterior compartment, the fraction of Lac::GFP localized at the lateral membrane basal to the SJ is slightly increased (compare arrowheads/anterior with arrows/posterior). This suggests that integrity of the SJ complex is partially compromised upon loss of Mega in wing imaginal discs. Scale bar represents 20 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Optical section of the junctional region of a wing disc expressing p35 and shrub-RNAi for 48 hr under the control of hhGal4 in the posterior compartment. While E-cad levels at the AJ in the Shrub-depleted tissue appear unchanged compared to the control compartment (A), ATPα levels at the SJ are reduced in the posterior compartment (compare arrowheads/anterior to arrows/posterior in A' and A''). In contrast, apical levels of the SJ-associated TMP FasIII, visualized by expression of an endogenously GFP tagged allele (FasIII::GFP) are not reduced in the Shrub-depleted posterior compartment (compare arrowhead/anterior with arrow/posterior in B). Scale bars in all panels represent 10 μm except for (B): 50 μm.
 
 We used the 48-hr stage to analyze junctions by TEM prior to neoplasia. In the wildtype anterior control compartment, the membrane basal to the AJ was lined with the ladder-like electron-dense structures that represent the SJ (Figure 1E). In the posterior (shrub-RNAi) compartment however, only few electron-dense structures basally to the AJ were detected and an obvious ladder pattern was rarely seen (Figure 1E´). Interestingly, we did not find AJ appearance to differ noticeably between wildtype and shrub-RNAi compartments (Figure 1E/E´). We sought to quantify SJ integrity by measuring the total length of electron-dense structures basally to the AJ in a region of interest (ROI) with specified length of 2 μm. In anterior control compartments, roughly 32% of membrane within ROIs was lined with SJ (Figure 1D). This value decreased to about 15% in posterior compartments, indicating that 48 hr expression of p35 + shrub-RNAi reduces SJ density in wing discs by more than 50% (Figure 1D). Due to the lack of apparent neoplastic transformation at the 48 hr stage, we conclude that reduction in SJ density does not reflect indirect effects resulting from ESCRT induced epithelial to mesenchymal transition (EMT), but rather suggests a direct involvement of ESCRT in maintaining SJ density in wing imaginal discs.
 
@@ -50,11 +66,35 @@ The lateral spreading of Lac::GFP within the membrane in Shrub-depleted tissue a
 
 Altogether, these results indicate that SJ integrity critically depends on ESCRT function and suggest that Shrub is required for intracellular transport of Mega from an endosomal compartment toward the junction.
 
-## The retromer CSC regulates membrane levels of SJ core components
+### The retromer CSC regulates membrane levels of SJ core components
 
 The loss of Mega from the SJ and concomitant accumulation in basal aggregates cannot easily be explained with a role of Shrub in Mega degradative trafficking but rather suggest that its export from the endosomal system might be impaired in Shrub-depleted tissue. Consistent with a non-degradative ESCRT role in transport of Mega, we did not find Mega to accumulate intracellularly when we interfered with endosomal maturation or prevented endolysosomal fusion downstream of ESCRT function, in contrast to the canonical ESCRT cargo Notch (Figure 2—figure supplement 1). These results suggest that Mega undergoes very little (if any) lysosomal turnover in wing imaginal discs and point toward an ESCRT function that is distinct from the degradative MVB pathway in trafficking of Mega.
 
 We hypothesized that biosynthetic delivery of Mega to the SJ might require an endosomal recycling pathway depending on ESCRT for its proper function. To test this idea, we depleted imaginal discs of proteins known to regulate endosomal recycling and analyzed the impact on junctional Mega levels. We found that expression of an RNAi construct targeting the retromer CSC component Vps35 led to a significant reduction of Mega at the SJ (Figure 2—figure supplement 1), which led us to investigate the function of retromer in transport of SJ components. We generated null mutant clones of the retromer core component Vps35 (Vps35MH20, Franch-Marro et al., 2008) in wing discs and analyzed the subcellular distribution of junctional proteins. While Mega membrane levels at the SJ were reduced in Vps35MH20 tissue, junctional E-cad levels were unaffected (Figure 2A). This result is analogous to the phenotype seen upon shrub-RNAi expression (Figure 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-v2.jpg)
+
+**Figure 2.:** (A) Null mutant clones of the retromer component Vps35 were generated in wing discs. Mutant tissue (-/-) is marked by absence of either GFP or RFP. Mega signal at the SJ is reduced in Vps35MH20 tissue (A´´), while apical E-cad levels are unaffected (A´´´). (B–D) Endogenously tagged SJ core components ATPα (B), NrxIV (C) and Nrg (D) show reduced membrane levels in Vps35MH20 tissue. (E) Vps26 clones phenocopy Vps35 clones with respect to junctional localization of Mega (compare E´ with A´´). (F–G) Junctional localizations of SJ-associated cytoplasmic proteins Dlg and Cora are unaffected in Vps35MH20 cells. (H) Quantification of junctional membrane levels of indicated proteins in wildtype and Vps35MH20 tissue. Each dot represents fluorescence intensity of a junctional region in either clonal (Vps35MH20) or surrounding wildtype tissue. n = 4 discs for each component. A two-tailed t-test was used for statistical analysis with the significance levels **** representing a p-value of <0.0001, ***<0.001, and n.s. (not significant):≥0.05. Note that the transmembrane SJ components Mega, ATPα, NrxIV, and Nrg are similarly affected, showing reduced levels at the SJ within Vps35MH20 tissue by ~50%, while E-cad and Dlg apical levels do not significantly differ between wildtype and Vps35MH20 tissue. Scale bar in (A) 50 μm, in all other panels 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Posterior knockdown of the HOPS (homotypic fusion and vacuole protein) complex component Vps39 required for endosome-lysosome fusion. Cargo destined for lysosomal degradation such as the Notch receptor (A) accumulates in a punctate pattern upon Vps39 depletion due to failure of endosome-lysosome fusion. (A') In contrast, a tubulin-Promotor expressed HA-Mega construct (tubP-HA-Mega) that faithfully recapitulates endogenous Mega localization is unaffected by Vps39-RNAi expression. This indicates that HA-Mega is not undergoing lysosomal degradation under steady-state condition. (B) Similarly, impeding endolysosomal function by expressing an RNAi against Rabconnectin-3A (Rbcn-3A) accumulates Notch in the posterior Rbcn-3A-depleted tissue (B), while HA-Mega retains a wildtype localization throughout the disc. Rbcn-3A is a regulator of the vacuolar proton pump (V-ATPase) required for endolysosomal acidification (Yan et al., 2009). (C) Depletion of Vps35 reduces Mega::YFP levels within the tissue and little vesicular signal is seen (inset, C'). (D) In contrast, Mega::YFP levels are only mildly affected by Rab7 depletion but strong vesicular accumulation is seen (arrowheads in D'). (E) Lateral view of a wing disc expressing Rab7-RNAi in the posterior compartment. (E) Rab7 depletion is effective. (E') Mega::YFP signal at the SJ is slightly reduced in the posterior compartment and vesicular accumulation is apparent (arrowheads). Rab7 activity is required for both endosome-lysosome fusion as well as for CSC endosomal recruitment (reviewed in Guerra and Bucci, 2016) Thus, Rab7 knockdown should simultaneously impede retromer trafficking and lysosomal degradation. These data are entirely consistent with Mega being targeted for lysosomal degradation only when retromer CSC function is compromised. Scale bars in all panels represent 50 μm except for (E): 10 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Wing imaginal disc containing Vps35MH20 clones. Clones in all panels are marked by the absence of RFP. (A') NrxIV::GFP is reduced within the clonal area. (B) Leg imaginal disc containing Vps35MH20 clones showing stronger loss of NrxIV::GFP from the SJ. Note the complete absence of junctional NrxIV::GFP in this clone compared to modestly reduced levels in the wing disc clone (A'). (C–D) Vps35MH20 clones in pupal wings. Note the variable expressivity of the NrxIV::GFP phenotype within the clones, ranging from still detectable junctional levels (C') to complete loss of NrxIV::GFP from the junction (D'). (E–G) Vps35MH20 clones in eye imaginal discs. Similar to wing imaginal discs (see Figure 2), Dlg levels are not affected by Vps35 loss whereas NrxIV::GFP shows reduced membrane levels (compare arrowheads in E' and E"). (F–G) Similar to NrxIV::GFP, Mega::YFP (F') as well as ATPα::GFP (G') display reduced membrane levels within Vps35MH20 clones. Scale bars in all panels represent 10 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Endogenously tagged Mega::YFP recapitulates reduction of Mega membrane levels within Vps35MH20 tissue detected by antibody staining (see also Figure 2A). (B) FasIII::GFP membrane levels remain wildtype within Vps26B mutant clones. (C–D) Endogenously tagged Varicose (C) and Lachesin (D) membrane levels are reduced within Vps26B mutant tissue. (E) The basolateral cell polarity protein Lethal giant larvae (Lgl) retains a wildtype localization in Vps35MH20 mutant clones. (F) Contactin (Cont) membrane levels are reduced within Vps35MH20 tissue. (G) Optical section of a wing disc containing a Vps35MH20 mutant clone. (G') Mega::YFP signal at the SJ and throughout the tissue is reduced within the Vps35MH20 clone. (G'') In contrast to Mega::YFP, apical Dlg signal at the SJ retains wildtype levels in the retromer mutant clone. Scale bars in all panels represent 10 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) RNAi-mediated depletion of Vps26 in the posterior compartment of wing imaginal discs efficiently reduces Vps26 (A) and junctional NrxIV::GFP levels (A'). (B) Toluidin blue stained thin section of a wing imaginal disc depleted of Vps26 for 72 hr in the posterior compartment. Epithelial monolayer integrity is not affected upon depletion of this retromer component. (C) TEM analysis of junctions in control (C) and Vps26-depleted (C') wing imaginal disc tissue. Expression of Vps26-RNAi was restricted to 72 hr, since continuous hhGal4-driven expression yielded discs with high levels of apoptotic cells, hampering analysis of the junctions. Note the high density of septa in the anterior control compartment compared to the Vps26-depleted posterior compartment (arrowheads in C and C', respectively). (D) Quantification of electron-dense SJ in 2 μm ROIs (basal to the AJ) along the juxtaposed membranes. Each data point represents total SJ length within one single ROI. Note that while approximately 30% of ROI length within anterior control compartments is occupied by SJ, the SJ length/ROI length ratio is reduced to about 12% in posterior Vps26-RNAi compartments, indicating a reduction of SJ by about 60%. The significance level **** represents a p-value <0.0001. Scale bars in (A) and (B) represent 50 μm, in (C): 0.5 μm. The online version of this article includes the following figure supplements for (A-D).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–F) Null mutant clones of SNX family genes in wing imaginal discs, marked by absence of either RFP or GFP. (A–B) Null mutant clone of Snx3 affects levels of the control cargo Wntless (Wls) (Harterink et al., 2011). (A') while Mega retains a wildtype junctional level (B'). Mutant clones of Snx27 affect apical levels of the control cargo Flamingo (Fmi) (Strutt et al., 2019) (C') but not that of Mega (D'). Mutant clones of SNX-Bar family genes Snx1 (E) and Snx6 (F) (Zhang et al., 2011) do not affect junctional levels of Mega. (G) Mega membrane levels are wildtype in clones mutant for the WASH (WASP and SCAR Homolog complex) complex component Fam21 (Family with sequence similarity 21) (Strutt et al., 2019). Scale bars in all panels represent 10 μm.
 
 We also found reduced membrane levels of the SJ core components ATPα, NrxIV and Nrg in Vps35MH20 clones, visualized by using endogenously tagged GFP protein trap lines (Figure 2B–D). These data suggest that retromer has a general function in SJ protein trafficking that is not restricted to Mega. In line with this, quantification of junctional signal revealed that all of the affected SJ core components show similarly reduced levels in Vps35MH20 tissue (roughly 50% compared to wildtype, Figure 2H). Additionally, we found Vps35 to be required for regulating membrane levels of SJ components in several tissues, such as eye/leg imaginal discs and pupal wings, pointing to a common requirement for the retromer pathway in SJ protein transport (Figure 2—figure supplement 2). Surprisingly, loss of NrxIV::GFP from the SJ membrane in Vps35MH20 mutant pupal wing tissue was more severe compared to the phenotype seen in third instar wing discs, suggesting that SJs within a tissue that undergoes morphogenetic changes and does not strongly proliferate might be even more sensitive toward loss of retromer function (Figure 2—figure supplement 2).
 
@@ -66,11 +106,27 @@ In optical sections of Vps35MH20 clones, endogenously tagged Mega::YFP protein s
 
 To gain further insight into the CSC-dependent pathway required for SJ delivery of Mega, we investigated null mutant clones of known retromer-associated factors (SNX-BAR, Snx3, Snx27, and the WASH-complex component Fam21). Surprisingly, we failed to find any of these proteins to be required for the regulation of Mega membrane levels, raising questions on the mechanism governing CSC-dependent transport of Mega (Figure 2—figure supplement 5). Nevertheless, based on above findings, we propose a novel function of the retromer CSC in delivery of SJ core components to the junction, thereby contributing to SJ homeostasis in the proliferative wing disc epithelium.
 
-## ESCRT regulates subcellular localization and mobility of the retromer CSC
+### ESCRT regulates subcellular localization and mobility of the retromer CSC
 
 The above results indicate that retromer is required for regulating membrane levels of Mega and other SJ components. Therefore, trapping of Mega in basally localized endosomal compartments upon shrub-RNAi expression could be a consequence of defective retromer-dependent endosomal export in this ESCRT deficient situation. We reasoned that loss of ESCRT function might alter organization and function of retromer-dependent carrier vesicles, thereby affecting cargo flux. To test this hypothesis, we analyzed the subcellular distribution of retromer components in Shrub-depleted cells.
 
 We visualized the retromer CSC by using an endogenously tagged Vps35 allele (Vps35::RFP, Koles et al., 2016). In anterior control compartments, Vps35::RFP was found in vesicular structures throughout the cell, but with significantly higher abundance in the apical cytoplasm (Figure 3A–D, arrows). Interestingly, this polarized apical localization is consistent with an apical transport hub at the junction level in wing disc cells that is characterized by enrichment of more than half of the Drosophila Rab GTPases (Dunst et al., 2015). In contrast to its concentration within the apical hub, little Vps35::RFP was detected in the basal cytoplasm of wildtype tissue (Figure 3A´). Upon shrub-RNAi expression however, Vps35::RFP strongly accumulated basally (Figure 3A´, arrowhead) while apical hub localization was almost completely abolished (Figure 3A). Therefore, loss of Shrub function appears to re-distribute Vps35::RFP positive vesicles from the apical hub into the basal cytoplasm where they accumulate. This apical to basal shift of retromer CSC positive vesicles is also evident in optical cross sections of wing discs expressing RNAi constructs for several ESCRT components (Figure 3B–D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig3-v2.jpg)
+
+**Figure 3.:** (A) Endogenously tagged Vps35::RFP localizes in a vesicular pattern within the apical hub in wildtype control compartments (arrow). After 48 hr of Shrub depletion, Vps35::RFP apical hub localization is largely abolished and basal accumulation is seen (arrowhead in A'). (B–D) The shift in subcellular localization of Vps35::RFP from the apical hub (wildtype, arrows) to basal aggregates (ESCRT-depleted compartment, arrowheads) is detected upon knockdown of ESCRT components TSG101, Shrub as well as Vps4. This indicates that regulation of retromer subcellular localization is a general ESCRT function in wing discs. (E) Live imaging and vesicle tracking of a genomic Vps26-EGFP construct at the anterior/posterior boundary of a wing disc expressing shrub-RNAi for 48 hr in the posterior compartment under control of enGal4. Note the apical hub in the anterior control compartment and the large basally localized Vps26-EGFP aggregates in the posterior Shrub-depleted compartment (compare with Vps35::RFP in C). (E') Individual vesicle trajectories visualize Vps26-EGFP movement within the tissue after a 5 min imaging acquisition. Note the high mobility of several vesicles along the apicobasal axis in the anterior control compartment (arrows). In contrast to long-distance shuttling of Vps26-EGFP in the control tissue, basal Vps26-EGFP aggregates (arrowheads) in the Shrub-depleted posterior compartment are largely static and overall vesicle dynamic is reduced. (F) Quantification of Vps35::RFP mobility in wildtype (anterior) and Shrub-depleted (posterior) tissue. Each dot represents mean velocity of a single tracked vesicle. Note the reduced mean velocity of Vps35::RFP and the high ratio of low mobility vesicles within Shrub-depleted compartments. A two-tailed t-test was used for statistical analysis with the significance level **** representing a p-value <0.0001. (G) Endogenously tagged Mega::YFP colocalizes with Vps26 in vesicular structures residing in the apical as well as basal cytoplasm (arrowheads). Scale bars in all panels represent 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Hrs, Stam double mutant clones (marked by the absence of GFP). (A") Reduction of Hrs within the clonal tissue. (A"') Mega retains a wildtype membrane level in Hrs, Stam tissue. (B) Notch accumulates in ESCRT-0 deficient clones (B"') while Vps26 vesicular localization is largely unaffected (B"). (C) Ubiquitinated cargo fails to degrade in Hrs, Stam clones. (D–E) Knockdown of Hrs in the posterior compartment does not affect Vps35::RFP levels or subcellular localization. Note the intact apical hub in an optical section (arrowheads in E). Scale bars in (A, B, D) represent 50 μm, in all other panels: 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** All panels show basal planes of wing discs expressing p35, shrub-RNAi for 48 hr under control of hhGal4. (A–B) In posterior Shrub-depleted compartments, tubP-HA-Mega accumulates in basal aberrant endosomes which label positive for Rab7 (arrowheads). (C–D) tubP-HA-Mega overlaps with ubiquitin at basal aggregates (arrowheads), indicating that these contain large amounts of degradative cargo. (E) Basal aggregates are coated with Rab5 and Vps35::RFP but lack clathrin (arrowheads). (F–G) Mega and Vps35::RFP largely overlap within basal compartments. (H–I) ESCRT-0 component Hrs accumulates on basal aberrant endosomes (arrowheads). Scale bars in (A, C, F, H) represent 50 μm, in all other panels: 10 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** All panels show electron micrographs of wing disc cells in either wildtype anterior control compartments (A, B) or posterior (p35, shrub-RNAi) expressing compartments (C–F). (A, B) In control compartments, endosomes appear as stereotypical, spherical shaped MVBs containing electron-dense ILVs (arrows). (C–D) In contrast, MVB-like compartments induced by Shrub depletion appear enlarged and irregularly shaped (arrows). Note that the limiting membrane of the endosome is lined with patches of electron-dense material (arrowheads), which could be aggregating endosomal machineries and/or cargo proteins failing to get retrieved or internalized. (E) Multicisternal endosomal structure with a stacked membrane morphology (arrow), reminiscent of class E compartments in mammalian cells (Doyotte et al., 2005). (F) Aberrant, electron-dense endosomal compartments (arrows) in proximity to the basal membrane. These structures likely correlate with the basal endosomal aggregates characterized in Figure 3—figure supplement 2 above. Scale bars in all panels represent 0.5 μm.
 
 Importantly, RNAi directed against the ESCRT-I component TSG101 or Vps4, but not ESCRT-0, phenocopied shrub-RNAi expression with regard to Vps35::RFP subcellular localization (Figure 3B–D, Figure 3—figure supplement 1). This indicates that several ESCRT complexes are required for maintaining apical hub localization of the CSC in the wing disc epithelium. We found strong colocalization of Mega and Vps35::RFP on basal endosomal aggregates of shrub-RNAi expressing cells (Figure 3—figure supplement 2). This is in line with Mega being trapped in aberrant Rab7 and CSC positive endosomal compartments residing in the basal cytoplasm of ESCRT deficient cells. Our analysis of these basal aggregates revealed that besides containing Mega, they are enriched in ubiquitinated cargo and are coated with retromer components, Hrs and endosomal GTPases Rab5 and Rab7 (Figure 3—figure supplement 2). We conclude that these aggregates likely represent Drosophila ‘class E-like’ compartments, which is supported by TEM analysis of basally localized endosomal structures within shrub-RNAi expressing wing disc tissue (Figure 3—figure supplement 3). While the regularly shaped and sized wildtype MVBs were absent in Shrub-depleted cells, we found a variety of enlarged, abnormal membranous compartments that are reminiscent of class E compartments in mammalian cells (Doyotte et al., 2005; Stuffers et al., 2009). We speculate that these irregular compartments aberrantly cluster endosomal machineries and cargos, thereby interfering with endosome function. Consequently, the SJ phenotype seen in shrub-RNAi tissue (Figure 1) could be explained by basal displacement of retromer-dependent carriers, which are required for targeting SJ components to the junctional region.
 
@@ -78,13 +134,25 @@ The apical bias of Vps35::RFP positive vesicles in wildtype cells suggests a pol
 
 We hypothesize that certain retromer cargos might rely on CSC shuttling between the apical and basal poles for efficient transport. Mega::YFP vesicular structures overlapped extensively with Vps26 not only at the junctional level but also in vesicles with close proximity to the basal pole of the cells (arrowheads in Figure 3G). Colocalization analysis revealed that 71.9% of Mega::YFP vesicles along the apicobasal axis were positive for Vps26 (n = 3 discs/128 vesicles). This suggests that Mega and possibly other SJ components shuttle along the apicobasal axis in CSC positive carrier vesicles. We confirmed this by live imaging of Mega::YFP together with Vps35::RFP, which revealed extensive co-mobility of this retromer component with the vesicular fraction of Mega::YFP (Animation 1). Thus, Mega is moving along the apicobasal axis in CSC decorated vesicles.
 
+![Animation 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-video1.gif.jpg)
+
+**Animation 1.:** Note the close association of Mega and Vps35 at dynamic vesicular structures along the apico-basal axis. Time stamp indicates passed time in minutes, starting from the initial frames of the acquisition.
+
 Together, the results reveal that ESCRT function regulates the mobility and apical hub localization of retromer CSC positive endosomes in wing imaginal discs. We conclude that by trapping CSC on aberrant endosomal compartments, loss of ESCRT function impairs retromer-dependent export of Mega from the endosome, consequently depleting its SJ pool in wing disc cells.
 
-## Mega undergoes basal to apical transcytosis prior to reaching the SJ
+### Mega undergoes basal to apical transcytosis prior to reaching the SJ
 
 Endosomal trafficking by retromer could occur via several different pathways. While certain retromer cargos are transported directly from endosomes to the plasma membrane, the classical retromer route involves cargo recycling in a detour via the Golgi. Besides these two endosomal recycling pathways, retromer has also been shown to regulate transcytosis from one membrane domain to another (Vergés et al., 2004). Prior to all retromer and ESCRT-dependent trafficking events, endocytosis of cargo is required for subsequent sorting within the endosomal system. We reasoned that blocking endocytosis of Mega might reveal the membrane domain from which it is internalized into the endosomal system and aid in understanding how the retromer pathway is involved in its trafficking.
 
 We suppressed clathrin-mediated endocytosis by RNAi induced depletion of clathrin heavy chain (Chc) for 32 hr in the posterior compartment. While depletion of Chc did not have an apparent effect on junctional E-cad levels (Figure 4A'), Mega::YFP levels were strongly reduced at the SJ (Figure 4A"). Since membrane proteins accumulate at their site of endocytosis when the internalization process is inhibited, this result argues against Mega undergoing clathrin-dependent endocytosis at the apical membrane. Importantly, we found Mega::YFP accumulating at the most basal region of the lateral membrane (Figure 4A"'), suggesting that Mega is continuously removed from a basal membrane pool by endocytosis. These results also suggest that Mega, prior to accumulating at the SJ, undergoes clathrin-mediated endocytosis at the most basal section of the basolateral membrane (for the sake of simplicity, we will refer to this as the basodistal membrane).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig4-v2.jpg)
+
+**Figure 4.:** (A) Depletion of clathrin via Chc-RNAi expression for 32 hr in the posterior compartment reduces apical membrane levels of Mega::YFP. While E-cad-based AJ appear unaffected following Chc depletion (A'), the junctional Mega::YFP pool is reduced (A''). In a basal focal plane, Mega::YFP is seen accumulating in the basodistal part of the lateral membrane in the Chc-RNAi expressing posterior compartment. (B–C) Expression of a dominant negative Dynamin construct (ShiK44) leads to apical accumulation of Notch within an epithelial fold of the hinge region (arrow in B) and reduces the amount of Notch positive vesicles (arrowheads). In contrast, posterior Mega::YFP signal at the SJ is reduced and a basal pool is visible (arrow in C). (D) Depleting Rab5 in the posterior compartment yields a similar Mega::YFP phenotype with respect to junctional levels and basal accumulation (arrow in D). (E) In line with internalization from the basodistal membrane, Mega::YFP colocalizes with clathrin at vesicular structures near the basal cell pole and along the apicobasal axis (arrows in E and E'). Scale bars in all panels represent 10 μm except for (A), in which it represents 50 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (Pocha et al., 2011) (A) Vps35MH20 clones, marked by the absence of RFP (A'), differently affect membrane levels of Mega (A") and Crb (A"'). Mega appears to be more severely affected by retromer loss of function. (B) Inhibition of clathrin-dependent endocytosis by Chc-RNAi expression in the posterior compartment reduces apical Mega::YFP levels (B) while Crb levels are unaffected (B'). Similarly, expression of dominant negative Dynamin (ShiK44) reduces Mega::YFP levels (arrowhead in C), while Crb seems to accumulate slightly at the apical membrane (arrowhead in C'). This is consistent with Crb entering the endosomal system via apical internalization. (D) Optical section of a wing disc expressing ShiK44 for 18 hr in the posterior compartment reveals Mega::YFP accumulation at the basal pole of the cells (arrowhead in D). (D') In contrast, no basal accumulation of Crb is detected. These data are consistent with Mega and Crb utilizing dissimilar retromer-dependent transport pathways. Scale bar in (A) represents 100 μm, in (B, C): 50 μm, in (A', D): 10 μm.
 
 Next, we interfered with dynamin-dependent endocytosis by expressing a dominant negative version of Shibire, the Drosophila dynamin homolog (UAS-ShiK44, Moline et al., 1999) under the control of hhGal4. An expression of ShiK44 for 16 hr was sufficient to cause strong accumulation of Notch at the apical membrane, indicating that dynamin-dependent endocytosis of apically internalized membrane proteins is effectively impaired (Figure 4B). In line with diminished uptake of Notch into the endosomal system, we found reduced abundance of intracellular Notch vesicles in the posterior compartment (Figure 4B, arrowheads). In contrast to apically endocytosed Notch, Mega::YFP seemed to be reduced at the SJ level upon 16 hr of ShiK44 expression (Figure 4C). In addition, it accumulated at the basal pole of the cells (Figure 4C, arrow). Reduced SJ levels accompanied by basodistal membrane accumulation of Mega::YFP were also found upon depleting the tissue of Rab5 by RNAi (Figure 4D). This common phenotype suggests that a critical step in SJ supply of Mega is its internalization from the basodistal membrane, hinting at a transcytosis-like mechanism with basal to apical direction.
 
@@ -94,9 +162,17 @@ Together, these data support a transcytosis-like mechanism from the basodistal d
 
 We conclude that Mega is not undergoing apical recycling but rather requires basal to apical transcytosis for junctional delivery. Thus, our data suggest that transcytosis of SJ components is not limited to initial SJ formation in the embryo (Tiklová et al., 2010), but is also required in a proliferative epithelium to maintain the junctional pool of the SJ component Mega.
 
-## Basal to apical transcytosis of Mega depends on ESCRT and retromer function
+### Basal to apical transcytosis of Mega depends on ESCRT and retromer function
 
 The complex anterograde trafficking of Mega to the SJ prompted us to investigate it in more detail. We generated an HA-tagged UAS-Mega construct, allowing us to analyze its delivery to the SJ upon overexpression. Continuous hhGal4-driven expression of UAS-HA-Mega led to its integration into SJ, which we confirmed by colocalization with Lac::GFP (Figure 5A"). Interestingly, in contrast to endogenous Mega, we detected a fraction of HA-Mega at the most basal part of the epithelium (Figure 5A). This suggests that the basodistal membrane pool of Mega that we observed upon endocytosis block is also detectable upon Mega overexpression. We also found increased abundance of intracellular vesicles, consistent with elevated trafficking of Mega within the cells (Figure 5B). HA-Mega colocalized with Vps35::RFP on vesicles (Figure 5B, arrows), reminiscent of endogenous Mega::YFP shuttling in Vps35::RFP positive endosomal carriers (Animation 1). Hence, we conclude that over-expression of UAS-HA-Mega recapitulates the hallmarks of Mega intracellular transport.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig5-v2.jpg)
+
+**Figure 5.:** (A) UAS-driven overexpression of HA-tagged Mega reveals a basal pool opposing the apical SJ fraction. Similarly to endogenously tagged Mega::YFP (see Figure 3G), HA-Mega colocalizes with the CSC on vesicles along the apicobasal axis (arrows in B). (C) Continuous overexpression of HA-Mega yields a strong SJ signal (arrowhead) as well as lateral and basal (arrow) staining of HA-Mega. (C') In a basal focal plane, the strong accumulation of HA-Mega in a junction like fashion at the basodistal membrane is seen. (D) Following a 14 hr chase at 18°C to halt further expression, HA-Mega signal is almost exclusively confined to the SJ (arrowhead) with very little basal staining (arrow). (D') The basodistal membrane pool of HA-Mega (compare with C') vanished after 14 hr chase, in line with a transient localization of HA-Mega at this membrane domain. (E) In Shrub-depleted tissue, overexpressed HA-Mega does not reach the SJ and is found exclusively in large basal aggregates (arrow). (F) These basal aggregates are positive for Vps35::RFP (arrows). (G) Similarly, in Vps35-depleted tissue, apical SJ signal of HA-Mega is faint and vesicular accumulation in the basal cytoplasm is seen (arrows). (H) Knockdown efficiency of the Vps35-RNAi. (I) No distinct membrane staining of HA-Mega is visible in the SJ plane of Vps35-depleted tissue, in contrast to HA-Mega junctional localization in wildtype tissue (J). Scale bar in (B) represents 5 μm, in (G): 50 μm and in all other panels: 10 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61866/elife-61866-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) hhGal4 driven posterior expression of an HA-tagged Mega construct in which all intracellular lysines were exchanged with arginines (UAS-HA-MegaK2R). Junctional (B) and lateral (C) plane of continuously expressed HA-MegaK2R reveals wildtype like membrane localization (compare with F, G). (D) After 15 hr chase at 18°C to allow intracellular transport of newly synthesized protein, HA-MegaK2R signal is largely confined to the SJ, much like the wildtype (HA-MegaWT) construct (H). (E–H) Expression of the wildtype control HA-MegaWT construct under identical conditions. The two constructs are largely indistinguishable with HA-MegaK2R retaining slightly more lateral and basal membrane signal after the 15 hr chase (compare D with H). The data are consistent with Mega transport to the SJ being independent of lysines (which should mediate direct interactions of cargo proteins with ESCRT components via ubiquitination). Scale bars in (A, E) represent 50 μm, in all other panels: 10 μm.
 
 While the majority of HA-Mega signal upon continuous overexpression was detected at the SJ level (Figure 5C, arrowhead), HA-Mega was also found in lateral and basal membrane regions (Figure 5C, arrow). Strikingly, the basodistal pool of HA-Mega was characterized by an intense membrane localization pattern resembling the staining of the junctional region (Figure 5C').
 
@@ -108,7 +184,7 @@ Recognition of proteins by the ESCRT machinery requires cargo ubiquitination, se
 
 Based on above findings, we conclude that a functional endosomal system is critically required for Mega transcytosis from the basodistal to the apical membrane, which is an essential prerequisite for its delivery to the SJ. Importantly, our data indicate a crucial role for ESCRT and retromer in a pathway that regulates anterograde trafficking of an apically localized membrane protein.
 
-## Mega translation and subsequent exit from the Golgi occurs in the basal cytoplasm
+### Mega translation and subsequent exit from the Golgi occurs in the basal cytoplasm
 
 The previous experiments suggested that Mega, despite residing in apical SJs, requires crucial trafficking steps at the basodistal plasma membrane prior to its integration into the junction. We therefore wondered whether locally restricted synthesis of Mega in the basal part of the cell might account for the transient pool at the basodistal plasma membrane observed upon endocytosis block or Mega overexpression.
 
@@ -128,7 +204,7 @@ Here, we describe a novel role of the endosomal ESCRT and retromer machineries i
 
 While transcytosis of SJ components has been shown to occur during the initial establishment of the SJ in the embryo (Tiklová et al., 2010), we here reveal that this mechanism is also continuously required during maintenance of the SJs in a rapidly proliferating epithelium. Our data reveal that the retromer CSC functions downstream of ESCRT to export Mega from the endosome. We propose a novel physiological role for the retromer CSC in regulating membrane levels of several SJ core components. While our data suggest that retromer fails to export Mega from aberrant endosomes induced by ESCRT depletion, the exact mechanism behind this remains to be determined.
 
-## Requirement for ESCRT function in CSC-dependent endosomal retrieval of Mega
+### Requirement for ESCRT function in CSC-dependent endosomal retrieval of Mega
 
 Our data reveal a critical requirement for ESCRT in a transport pathway that depends on retromer-mediated transcytosis to deliver newly synthesized Mega to its apical destination. Defects in endosomal retrieval upon ESCRT inactivation have been previously described in other systems, such as yeast or mammalian cells and, thus, appear to represent a common feature of the pleiotropic ESCRT deficient phenotype. In yeast, the endosome-to-Golgi retrieval of the sorting receptor Vps10p and its cargo carboxypeptidase Y (CPY) depends on retromer function (Seaman et al., 1997; Seaman et al., 1998). ESCRT mutant strains accumulate CPY in class E compartments from which retrieval to the Golgi is blocked (Babst et al., 1997; Piper et al., 1995; Raymond et al., 1992). Similarly, the mammalian retromer cargo mannose 6-phosphate receptor (M6PR) also failed to recycle from endosomes to the Golgi in HeLa cells depleted of TSG101/ESCRT-I function (Doyotte et al., 2005). In this study, the authors suggested that generation of class E compartments occurs at the expense of endosomal tubules (Doyotte et al., 2005). Consistently, the retromer-associated tubulation factor SNX1 and its yeast homolog Vps5p were found on the rims of mammalian and yeast class E compartments, respectively (Doyotte et al., 2005; Seaman et al., 1998). Together with our finding of CSC accumulation on Drosophila class E-like compartments (Figure 3, Figure 3—figure supplement 2), this suggests that ESCRT deficient endosomes remain coated with retromer components but fail to export specific cargo.
 
@@ -136,7 +212,7 @@ While we cannot rule out the possibility of ESCRT components directly cooperatin
 
 While the exact mechanism rendering retromer dysfunctional at Drosophila class E compartments remains to be determined, our data support the mounting pool of evidence that ESCRT is required for multiple endosomal retrieval pathways. It is therefore likely that aspects of the pleiotropic ESCRT phenotype in metazoans stem from defective export of proteins from the endosomal system. For example, in Drosophila, leaky SJ could support ESCRT-mediated neoplastic transformation by permitting diffusion of signaling molecules within the imaginal disc tissue.
 
-## Transcytosis as a means to provide biosynthetic delivery of SJ components
+### Transcytosis as a means to provide biosynthetic delivery of SJ components
 
 We here found that biosynthetic delivery of Mega depends on a transcytosis-like mechanism from the basodistal to the apical plasma membrane. This long-distance transport required sequential action of endocytic (clathrin, dynamin, Rab5) and endosomal (ESCRT, retromer CSC) machineries. Importantly, the finding that overexpressed HA-Mega is unable to reach the SJ in absence of retromer and ESCRT function (Figure 5) is in agreement with biosynthetic delivery of Mega relying on endosomal function. Therefore, although we cannot exclude the possibility that Mega transiently passes the Golgi after endocytosis at the basodistal membrane, we favor the unconventional transcytosis model. Strikingly, while retromer-dependent endosomal recycling has been extensively documented, only one mammalian cell culture study implicated retromer in transcytosis from one membrane domain to another (Vergés et al., 2004). Thus, SJ delivery of Mega in imaginal discs represents a novel physiological role of retromer to study this process in vivo. The finding that CSC-mediated anterograde transport of Mega is independent of retromer-associated sorting nexins (Figure 2—figure supplement 5) indicates that this transcytosis pathway is distinct from many established CSC-dependent routes and suggests that it may require unknown cofactors (or does not require endosomal tubulation).
 
@@ -148,7 +224,7 @@ The reason for SJ maintenance to rely on such an elaborate trafficking of its co
 
 In wing imaginal discs, a similarly complex transcytosis route (albeit with an apical to basal direction) has been described for the signaling molecule Wingless, which is translated apically, transiently presented at the apical membrane and finally transcytosed toward the basal membrane where it is secreted (Yamazaki et al., 2016). Thus, distinct transcytosis pathways in the wing disc epithelium provide a mechanism for targeting certain proteins to their site of action, specifically when the protein is translated far away from its terminal destination.
 
-## A novel retromer function in transport of SJ proteins
+### A novel retromer function in transport of SJ proteins
 
 In this study, we unravel a novel physiological retromer function in regulating surface levels of a claudin and other structural SJ components (e.g. Nrg, ATPα, Lac, NrxIV, Cont) in several Drosophila tissues (Figure 2 and Figure 2—figure supplement 2). Presently, we do not know how the SJ components are selected for this retromer-dependent pathway, and whether it requires physical interaction with CSC components. Since SJ proteins may traverse the endosomal system in complex, the vast number of different components brings about a plethora of possible interaction sites. Importantly, a mass-spectrometry-based study of the Mega interactome did not detect any retromer CSC components or associated factors but confidently found SJ core components as well as clathrin (Jaspers et al., 2012). While the interaction mode of CSC and SJ proteins remains to be determined, our data reflect the assumption that several SJ core components represent novel putative retromer cargos in Drosophila.
 
@@ -158,44 +234,537 @@ Importantly, the mechanism behind reduced recycling and entrapment of Claudin-1 
 
 ## Materials and methods
 
-## Drosophila stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-HA-Mega (II.) and (III.)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-terminally HA-tagged WT Mega for Gal4/UAS-driven expression</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubP-HA-Mega (II.)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-terminally HA-tagged WT Mega expressed under the control of a tubulin promotor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-HA-MegaK2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-terminally HA-tagged Mega (intracellular lysines exchanged with arginines) for Gal4/UAS-driven expression</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Rab5-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V34096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps35-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL22180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Chc-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V103383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps4-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V101722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TSG101-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL35710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shrub-RNAi</td>
+      <td>Sweeney et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps26-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL38937</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps39-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL42605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rbcn-3A-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V108547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab7-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V40337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Hrs-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V20933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mega/pickel-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>V36306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hhGal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL67046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubGal80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL7108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-p35</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL5072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>enGal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL30564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Lac::GFP</td>
+      <td>Gift from Christian Klämbt, University of Münster, Germany</td>
+      <td></td>
+      <td>Endogenously GFP-tagged lac allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ATPα::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL6834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NrxIV::GFP</td>
+      <td>Edenfeld et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Nrg::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL6844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FasIII::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL59809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Vari::Dendra</td>
+      <td>Babatz et al., 2018</td>
+      <td></td>
+      <td>Endogenously Dendra-tagged vari allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mega::YFP</td>
+      <td>Gift from Reinhard Schuh, Max Planck Institute for Biophysical Chemistry, Göttingen, Germany</td>
+      <td></td>
+      <td>Endogenously YFP-tagged mega allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Vps35::RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL66527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Vps26-EGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL67153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ShiK44</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL5811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubx-Flp</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL42730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hsFlp</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL8862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hsFlp FRT19A ubi-nls-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL31418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT40A 2xGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL5189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42D 2xGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL5625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42D ubi-nls-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL35496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT82B ubi-nls-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL30555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42D Vps35MH20</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL67202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Vps26B FRT19A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL57140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>HrsD28Stam2L2896 FRT40A</td>
+      <td>Tognon et al., 2014</td>
+      <td>BL56816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dmon1Mut4 FRT40A</td>
+      <td>Yousefian et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Snx2725 FRT19A</td>
+      <td>Strutt et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42 Fam21KO</td>
+      <td>Strutt et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Snx1Δ2 FRT40A</td>
+      <td>Zhang et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Snx61 FRT40A</td>
+      <td>Zhang et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT82B Snx3EY05688</td>
+      <td>Harterink et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab7GAL4-KO</td>
+      <td>Chan et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATPα (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>a5</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shrub (rabbit polyclonal)</td>
+      <td>Bäumers et al., 2019</td>
+      <td></td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mega (mouse monoclonal)</td>
+      <td>Jaspers et al., 2012</td>
+      <td></td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-E-cad (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>5D3</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rab7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Rab7</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dlg (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>4F3</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Cora (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>C566.9</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vps26 (guinea pig polyclonal)</td>
+      <td>Wang et al., 2014</td>
+      <td></td>
+      <td>IF (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Chc (rat polyclonal)</td>
+      <td>Wingen et al., 2009</td>
+      <td></td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Golgin84 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>12–1</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lgl (guinea pig polyclonal)</td>
+      <td>Shahab et al., 2015</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cont (guinea pig polyclonal)</td>
+      <td>Faivre-Sarrailh et al., 2004</td>
+      <td></td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Notch (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>C458.2H</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Hrs (guinea pig polyclonal)</td>
+      <td>Lloyd et al., 2002</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ubiquitin (FK2) (mouse monoclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>BML-PW8810</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Crb (rat polyclonal)</td>
+      <td>Richard et al., 2006</td>
+      <td>rat anti-Crb 2.8</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>C29F4</td>
+      <td>IF (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rab5 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab31261</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Fmi (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#74</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>fw-NotI-ATG-HA-3xGly-Mega</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>See method section for sequence</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rev-Mega-XhoI</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>See method section for sequence</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33258</td>
+      <td>Sigma Aldrich/Merck</td>
+      <td>B2883</td>
+      <td>IF (1:10.000), DNA/Nucleus staining</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and genetics
 
 A complete list of all stocks used in this study is found in the key resources table above. Flies were raised on standard cornmeal/molasses/yeast diet and kept at room temperature. Crossings were raised on 25°C, except for experiments containing the temperature sensitive tubGal80ts (McGuire et al., 2004). Those flies were kept at 18°C (permissive temperature) to inhibit Gal4/UAS-mediated expression (Brand and Perrimon, 1993) and shifted to 29°C (restrictive) for specific time spans to activate UAS-based expression. Flp/FRT system (Xu and Rubin, 1993) induced clones were either generated by expression of Ubx-FLP or using hs-FLP with an 70 min heatshock in the first instar larval stage (24–48 hr after egg laying).
 
-## Generation of transgenic flies
+### Generation of transgenic flies
 
 For generation of UAS and tubP expressed HA-tagged Mega constructs, the clone LD14222 from Drosophila Genomics Resource Center (DGRC) was used as cDNA source. The HA-tag followed by a 3xGlycin linker was fused to the N-terminus of the Mega open reading frame by PCR using the following primers: fw-NotI-ATG-HA-3xGly-Mega GgcggccgcatgTACCCATACGAcGTTCCAGAcTACGCTggcgggggcCGCGAACTTAACAAGCAGCAG rev-Mega-XhoI ctgcactcgagTTATATGTAGCCCTGCAGGC.
 
 The generated PCR fragment was restriction digested with NotI and XhoI enzymes (New England Biolabs) and subsequently cloned into pUAST-attB and pTUB vectors. The tubulinP-based plasmid derived from a pCaSpeR4-tubulin-QF#7 vector (addgene) with SV40 polyA 3' UTR. The UAS-HA-MegaK2R construct was designed analogous to UAS-HA-Mega with all intracellular lysines exchanged to arginines. The cDNA for this construct was synthesized by BaseClear B.V. Generation of transgenic flies was performed by attB/attP specific genomic integration into the landing sites 51C (for 2nd chromosome) and 86Fb (for 3rd chromosome) (Bischof et al., 2007). Injection of embryos was either performed in house or by BestGene Inc (CA 91709, U.S.A).
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 A complete list of all antibodies used in this study is found in the key resources table above. Late L3 larvae or pupae were dissected in phosphate-buffered saline (PBS, pH 7.4) on ice and immediately fixed for 30 min in 4% paraformaldehyde in PBS. Following three 10 min wash steps in PBT (0.3% Triton X-100 in PBS), tissue was blocked with 5% normal goat serum (NGS, Jackson ImmunoResearch) in PBT and subsequently incubated with primary antibodies in 5% NGS in PBT for 2 hr. After three 15 min wash steps with PBT, discs were incubated with fluorochrome-conjugated antibodies (Alexa-488, –568, −647 from Thermo Fisher Scientific) for 2 hr in 5% NGS in PBT. For nuclear staining, Hoechst 33258 (Sigma Aldrich) was used at a concentration of 1:10,000. Discs or pupae were mounted in Vectashield (Vector Laboratories) and imaged with a Zeiss AxioImager Z1 wide field microscope equipped with a Zeiss Apotome. For SJ length measurements, ROIs were manually assigned with Fiji and the total length of electron-dense SJ within ROIs was measured to yield a SJ length/ROI length ratio. Statistical analysis was performed with GraphPad Prism 7.0 d.
 
-## Live imaging
+### Live imaging
 
 Late L3 instar larvae were dissected in PBS and immediately mounted on coverslips in Schneider's Drosophila medium (Pan Biotech). Double-sided tape containing a punchhole was used both as a spacer to avoid tissue damage during mounting and as a short-term imaging chamber that restricted wing disc movement. Imaging was performed with a Zeiss LSM 880 laser scanning microscope equipped with an Airyscan detector. For time series, frames were acquired in 1–4 s intervals and line switching was used for dual channel acquisition.
 
-## Fluorescence recovery after photobleaching (FRAP)
+### Fluorescence recovery after photobleaching (FRAP)
 
 Wing discs were mounted as described above (see Live Imaging). Photobleaching and imaging were performed on a Zeiss LSM 880 confocal microscope using a gallium arsenide phosphide (GaAsP) detector and 40x objective with a numeric aperture of 1.2. A 15x digital zoom was applied to yield a detection area of 14.17 × 14.17 micron, equivalent to 512 × 512 pixels. In the focal plane of the junctions, a bicellular SJ ROI (0.83 × 0.83 microns) was bleached with 100% excitation laser intensity and 10 repeats. The laser dwell time for each pixel was 4.1 μs. After bleaching, the tissue was imaged in 2 min intervals for 30 min and any potential drifting (x-, y-, z-axis) was corrected manually. Images were merged into a time series with Fiji and the mean gray values within the ROI were plotted against time/min (Figure 1J). Statistical analysis was performed with Microsoft Excel and GraphPad Prism 7.0 d.
 
-## Vesicle tracking
+### Vesicle tracking
 
 The Fiji plugin TrackMate (Tinevez et al., 2017) was used on bleach corrected (exponential fit) time series obtained by live imaging to analyze movement of vesicles positive for either Vps26-EGFP or Vps35::RFP. A Dog detector with estimated blob diameter of 2 micron and threshold 1 were used as a fixed setup. Tracks were analyzed by the simple LAP tracker with following parameters: Linking max distance: 2. Gap closing distance: 2. Gap closing max frame gap: 20. Mean velocity was used as the parameter for comparing vesicles within wildtype and Shrub-depleted tissue. Statistical analysis was performed with GraphPad Prism 7.0 d.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Wing discs were dissected in 0.1M phosphate buffer (0.1M PO4) on ice and immediately fixed with 2.5% glutaraldehyde in 0.1M PO4 for 1 hr. Following five 5 min washsteps with 0.1M PO4, tissue was postfixed with osmium tetroxide (2% in 0.1M PO4) for 1 hr on ice. After three 5 min washsteps with 0.1M PO4 and further washsteps with ddH2O, the specimens were gently dehydrated with ethanol in concentrations ranging from 50 to 100%. Acetone was used as an intermediate solvent to support Epoxy Embedding Medium (Epon, Sigma Aldrich) infiltration into the tissue. Specimens were stored over night in 100% Epon and subsequently embedded and sectioned. Semi-thin sections were stained with Richardson blue. Ultra-thin sections were contrasted with 2% uranyl acetate and lead citrate prior to imaging. Sections were analyzed with an EM 902 (Zeiss) microscope at 80 KV.
 
-## Fluorescence in situ hybridization (FISH)
+### Fluorescence in situ hybridization (FISH)
 
 For generation of Mega RNA antisense probe, the Mega/Pickel cDNA containing LD14222 clone from DGRC was linearized by EcoRI digestion following T7 polymerase-dependent in vitro transcription and digoxigenin (DIG) labeling. RNA probes were purified with a NucleoSpin Gel and PCR clean-up kit before use in the hybridization reaction. For FISH, late L3 larvae were dissected in PBS on ice and fixed for 20 min in 3.7% formaldehyde in PBS. Specimens were handled according to standard protocols. Briefly, larval tissue was incubated with RNA probes in formamide-based hybridization buffer at 65°C over night. To detect probes, HRP-conjugated anti-DIG antibodies (Perkin Elmer) were used, followed by a tyramide signal amplification reaction (TSA plus Cyanine 3 Fluorescence Kit, Perkin Elmer). Wing discs were mounted in Vectashield (Vector Laboratories) and imaged with a Zeiss AxioImager Z1 wide field microscope equipped with a Zeiss Apotome.
 
-## Dye penetration assay
+### Dye penetration assay
 
 Late L3 larvae were dissected in PBS and briefly rinsed (30 s) in PBS containing 10 kDa Texas-dsRed labeled Dextran (Molecular Probes D-1828) in a concentration of 1 mg/ml. Following two quick wash steps in PBS, imaginal discs were dissected from the carcasses and immediately mounted in Vectashield (Vector Laboratories) on microscope slides. To avoid tissue damage due to compression, double-sided tape was used as a spacer between slide and cover slip. Images were acquired on a Zeiss AxioImager Z1 wide field microscope immediately after mounting (within a timeframe of 5 min).
 
-## Colocalization analysis
+### Colocalization analysis
 
 For measuring colocalization of Mega::YFP with either Vps26 or Chc, dual channel images of single fluorescent planes (either lateral views or basal planes) were adjusted for brightness in FiJi. Colocalization was manually determined for each individual Mega::YFP vesicle using the FiJi cell counter plugin.

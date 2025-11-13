@@ -30,11 +30,11 @@ If we could (accurately) estimate sodium/salt intake at the population level bas
 
 ## Results
 
-## Study population for model derivation and validation
+### Study population for model derivation and validation
 
 The pooled dataset included 49,776 people from 21 surveys in 19 countries (i.e., two countries, Bhutan and Mongolia, had two surveys) conducted between 2013 and 2019 (Appendix 1—table 1). Overall, the mean age ranged from 33 (95% confidence interval [95% CI]: 33–34) years in Zambia to 43 (95% CI: 42–44) years in Belarus. The proportion of men ranged from 35.7% in Tonga to 61.4% in Solomon Islands. The mean SBP was lowest in Jordan (117.7 mmHg [95% CI: 115.7–119.8 mmHg]) and highest in Belarus (134.6 mmHg [95% CI: 133.6–135.5 mmHg]). The mean DBP was lowest in Chile (73.6 mmHg [95% CI: 72.5–74.6 mmHg]) and highest in Belarus (84.9 mmHg [95% CI: 84.4–85.5 mmHg]). The mean weight ranged from 54.6 kg (95% CI: 53.8–55.5 kg) in Nepal to 98.6 kg (95% CI: 97.7–99.5 kg) in Tonga. The mean height ranged from 1.55 m (95% CI: 1.55–1.56 m) in Nepal to 1.71 m (95% CI: 1.70–1.71 m) in Tokelau.
 
-## Observed and predicted mean salt intake during the ML model derivation and validation
+### Observed and predicted mean salt intake during the ML model derivation and validation
 
 In the test dataset including 20 WHO STEPS surveys and one national health survey (Chile) (i.e., 21 surveys in total), the observed mean salt intake computed as per the INTERSALT equation was higher in men than in women in all countries; it ranged from 8.5 g/day (95% CI: 8.2–8.8 g/day; Zambia) to 10.4 g/day (95% CI: 10.1–10.7 g/day; Azerbaijan) in men and from 6.8 g/day (95% CI: 6.7–6.8 g/day; Turkmenistan) to 8.3 g/day (95% CI: 8.0–8.6 g/day; Malawi) in women. Across countries, the predicted mean salt intake was also higher in men than in women. Results for each survey are presented in Figure 1 and Appendix 1—table 2.
 
@@ -50,7 +50,7 @@ In women across all countries in the test dataset including 20 WHO STEPS surveys
 
 None of the countries herein analyzed, regardless of the method of sodium intake assessment (i.e., observed or predicted), showed a mean salt intake below the WHO recommended level of <5 g/day (Figure 1, Appendix 1—table 2). The same occurred for the mean salt intake estimates using the Kawasaki, Toft, and Tanaka formulas (Appendix 1—table 5).
 
-## Implementation of the developed ML model to predict salt consumption in 54 countries
+### Implementation of the developed ML model to predict salt consumption in 54 countries
 
 The pooled dataset where we applied the ML model included 166,677 people from 54 countries in 54 WHO STEPS surveys conducted between 2004 and 2018 (Appendix 1—table 6). Overall, the mean age ranged from 31 (95% CI: 31–32) years in Ethiopia to 43 (95% CI: 40–47) years in Barbados. The proportion of men ranged from 17.2% in Eritrea to 63.8% in Timor-Leste. The mean SBP was lowest in Cambodia (116.2 mmHg [95% CI: 115.6–116.9 mmHg]) and highest in Mozambique (138.7 mmHg [95% CI: 136.3–141.0 mmHg]). The mean DBP was lowest in Cambodia (72.4 mmHg [95% CI: 71.8–73.0 mmHg]) and highest in Kyrgyzstan (86.8 mmHg [95% CI: 85.9–87.8 mmHg]). The mean weight ranged from 51.8 kg (95% CI: 51.2–52.4 kg) in Eritrea to 100.4 kg (95% CI: 100.1–100.8 kg) in American Samoa. The mean height ranged from 1.54 m (95% CI: 1.54–1.55 m) in Lao People’s Democratic Republic to 1.70 m (95% CI: 1.70–1.71 m) in British Virgin Islands.
 
@@ -66,17 +66,17 @@ In women, the countries with the highest predicted mean salt intake were America
 
 ## Discussion
 
-## Main findings
+### Main findings
 
 This work leveraged on 21 national health surveys and readily available predictors to develop an ML model to predict salt consumption; this model was then applied to national surveys in 54 countries. It should be noted that we analyzed SU samples. These are not the gold standard to assess salt consumption. Results should be interpreted in light of this limitation, considering that our model aimed to deliver estimates at the population level (not individual level) (Huang et al., 2016; Santos et al., 2020). The HuR ML algorithm yielded the predictions closest to the observed salt intake: the mean difference between predicted and observed salt consumption across surveys was –0.02 g/day in men and 0.01 g/day in women. We used this novel ML model to predict salt consumption in 54 countries, where the mean salt consumption ranged from 8.3 g/day (Eritrea) to 11.0 g/day (Nauru) in men; these numbers in women ranged from 6.5 g/day (Eritrea) to 9.0 g/day (American Samoa). This work aimed to elaborate on novel analytical tools to predict salt consumption where national surveys have not collected this information, limiting their ability to keep track of mean sodium consumption in the general population. Pending external independent validation, our model could be used in monitoring frameworks of salt consumption because most countries do not collect sodium samples in their national health surveys. Our model could contribute to the global surveillance of salt consumption, a relevant cardiometabolic risk factor (He et al., 2013; World Health Organization, 2021a; Poggio et al., 2015).
 
-## Public health implications
+### Public health implications
 
 ML models have been used extensively to predict relevant clinical outcomes (e.g., mortality) and epidemiological indicators (e.g., forecasting COVID-19 cases) (Wang et al., 2020; Wynants et al., 2020; Groot et al., 2021; Watson et al., 2021; Mohan et al., 2021). Furthermore, ML algorithms have proven to be useful for understanding complex outcomes (e.g., identifying clusters of people with diabetes) based on simple predictors (e.g., BMI) in nationally representative survey data (Oh et al., 2019; García de la Garza et al., 2021; Carrillo-Larco et al., 2021). Our work complements the current evidence on ML algorithms by demonstrating its use in a relevant field: population salt consumption. In so doing, we delivered a pragmatic tool that could be used to inform the surveillance of salt consumption in countries where national surveys do not objectively collect this information (e.g., SU samples). Moreover, this work provided preliminary evidence to update the global estimates of population-based sodium consumption (Powles et al., 2013) by informing about the mean sodium consumption in 54 countries. Our results suggest that mean salt consumption is above the WHO recommended level in all the 54 countries herein analyzed, and it was the highest among countries in the Western Pacific, and the lowest among countries in Africa. This finding, which is consistent with a global work (Powles et al., 2013), calls for urgent actions to reduce salt consumption in these 54 countries, especially those in the Western Pacific.
 
 We do not believe that our – or any other – ML model should replace a comprehensive population-based nationally representative health survey with 24 hr or SU samples. However, until such surveys are available in many countries and periodically conducted, we could suggest using an estimation approach to shed lights about the mean salt consumption in the population. Our ML model seems to be a reasonably good alternative and could become a pragmatic tool for surveillance systems that keep track of sodium consumption in accordance with global goals (World Health Organization, 2021a; WHO. World Health Organization, 2021).
 
-## Research in context
+### Research in context
 
 A global effort provided mean sodium/salt consumption estimates for 187 countries in 1990 and 2010 (Powles et al., 2013); they used 24 hr urine samples and dietary reports from surveys conducted in 66 countries. Unfortunately, their results were until 2010. Our results advanced this evidence by providing more recent salt consumption estimates because most of the surveys in which we applied our ML model were conducted after 2010 (Appendix 1—table 6).
 
@@ -86,7 +86,7 @@ In addition to the global work by Powles et al., 2013, there are other reports f
 
 Although these comparisons do not validate our predictions in the 54 national surveys, they suggest that our salt consumption estimates are within reasonable distance from the best available evidence. Until better data are available (e.g., national survey with spot or 24 hr urine sample), our model could provide preliminary evidence to inform the national mean salt consumption. Careful interpretation is warranted to understand the strengths and limitations of our ML-based predictions.
 
-## Strengths and limitations
+### Strengths and limitations
 
 We followed sound and transparent methods to develop an ML model to predict salt consumption at the individual level. We leveraged on open-access national data collected following standard and consistent protocols (World Health Organization, 2021b; Departamento de Epidemiologia. Ministerio de Salud, 2021). Most of the surveys we analyzed were conducted after 2010, providing more recent evidence than the latest global effort to quantify salt consumption in all countries (Powles et al., 2013). Notwithstanding, we must acknowledge some limitations. First and foremost, urine data was based on a spot sample, which is not the gold standard (24 hr urine sample) to measure daily salt consumption. Future work should verify and advance our results using on 24 hr urine samples available in nationally representative samples; in the meantime, our work has led the foundations and hopefully sparked interest to use available data and novel analytical techniques to deliver estimates of salt consumption in the general population. While SU samples may not be the best approach to estimate salt consumption at the individual level, at the population level the means estimated based on SU samples and 24 hr urine samples are similar (Huang et al., 2016; Santos et al., 2020). Therefore, the limitation of using SU samples only may have had little impact on our mean estimates, which are the country level, not at the individual level. While this – reanalysis of SU sample rather than 24 hr urine samples – is a limitation of our work, it is also an observation showing the lack of nationally representative surveys with 24 hr urine samples available for independent reanalyses. Second, even though we analyzed 21 national surveys (representing 19 countries) to develop our ML model, the sample size could still be limited for a data-driven ML algorithm (i.e., 24,889 observations were included in model development). A larger and global work in which all relevant data sources are pooled is needed; while this endeavor takes place, our work has provided recent estimates of salt consumption at the population level in 54 countries. In this line, there are still countries that were not herein included. Researchers in these countries, along with local (e.g., ministries of health) and international health authorities (e.g., WHO), should conduct studies/surveys to collect data on salt consumption. This would inform global targets but also local needs and interventions.
 
@@ -94,11 +94,11 @@ An ML model based on readily available variables was accurate to predict daily s
 
 ## Methods
 
-## Study design
+### Study design
 
 This is an individual-level data pooling ML analysis.
 
-## Data sources
+### Data sources
 
 We sought surveys that met these two criteria: (i) nationally representative health surveys (i.e., community or subnational surveys were not included); and (ii) surveys that were open access or that could be accessed without significant administrative burden (e.g., data sharing agreements that may involve institutional signatures).
 
@@ -110,34 +110,44 @@ In conclusion, our ML model was developed based on 21 surveys (20 WHO STEPS and 
 
 According to the World Bank classification (Appendix 1—table 9), there were 9 high-income countries (2 in model derivation and 7 in model application), 16 low-income countries (1 in model derivation and 15 in model application), 26 lower-middle-income countries (9 in model derivation and 17 in model application), and 18 upper-middle-income countries (6 in model derivation and 12 model application). There were four countries (one in model derivation and three in model application) without income classification (British Virgin Islands, Cook Islands, Niue, and Tokelau).
 
-## Rationale
+### Rationale
 
 We hypothesized that an ML model could accurately predict salt consumption at the individual level, to then inform the overall mean in the underlying population. In addition, we endeavored to develop an ML model with simple predictors; that is, variables that are routinely available in national health surveys contrary to urine sample that are seldom collected in national health surveys. If the model were indeed accurate, then it could be applied to national surveys without urine samples but with the relevant predictors to inform about the mean salt consumption in the overall population. These model-driven estimates could be preliminary until a national health survey is conducted to study mean salt consumption with urine samples. Ideally, salt consumption should be informed by 24 hr urine samples, which are seldom available in large population-based and nationally representative health surveys. The fact that we analyzed SU samples is a limitation of our work, and the results should be interpreted accordingly. However, we aimed to develop an ML model that can be used to predict mean estimates at the population level, not at the individual level. In other words, our model should not be applied to a patient to estimate his/her salt consumption. We did not develop a diagnostic tool to replace SU or 24 hr urine samples. Our model should be applied to survey data to compute the mean sodium/salt consumption in the population (not in individuals). Empirical evidence suggests that, at the population level, mean estimates based on SU samples and on 24 hr urine samples are similar (Huang et al., 2016; Santos et al., 2020).
 
-## Variables
+### Variables
 
 The predictors we used in the ML model were sex, age (years), weight (kg), height (m), systolic blood pressure (SBP, mmHg), and diastolic blood pressure (DBP, mmHg).
 
 The analyzed surveys collect anthropometric and three blood pressure measurements. These are taken by trained fieldworkers following a standard protocol (World Health Organization, 2021b; Departamento de Epidemiologia. Ministerio de Salud, 2021). We used measured weight and height to compute the BMI (kg/m2). We used the mean SBP and mean DBP of the second and third blood pressure measurements (i.e., the first blood pressure measurement was discarded).
 
-The outcome was salt intake as per the INTERSALT equation (Brown et al., 2013). We chose this equation because it has been used by WHO STEPS surveys. There is a specific INTERSALT equation for each sex, and they both include the following variables: age (years), BMI (kg/m2), SU sodium (mmol/L), and SU creatinine (mmol/L) (Brown et al., 2013). We used the following sex-specific formulas:Men:{23.51 +[0.45 x NaSU]-[3.09 x CrSU]+[4.16 x BMI]+[0.22 x age]}Women:{3.74 +[0.33 x NaSU]-[2.44 x CrSU]+[2.42 x BMI]+[2.34 x age]-[0.03 x age2]}
+The outcome was salt intake as per the INTERSALT equation (Brown et al., 2013). We chose this equation because it has been used by WHO STEPS surveys. There is a specific INTERSALT equation for each sex, and they both include the following variables: age (years), BMI (kg/m2), SU sodium (mmol/L), and SU creatinine (mmol/L) (Brown et al., 2013). We used the following sex-specific formulas:
+
+$$
+Men:{23.51 +[0.45 x Na_{SU}]-[3.09 x Cr_{SU}]+[4.16 x BMI]+[0.22 x age]}
+$$
+
+
+
+$$
+Women:{3.74 +[0.33 x Na_{SU}]-[2.44 x Cr_{SU}]+[2.42 x BMI]+[2.34 x age]-[0.03 x age^{2}]}
+$$
 
 where the subscript SU indicates spot urine, Na is sodium, Cr is creatinine, and BMI is body mass index. Because some STEPS surveys had SU creatinine in mg/dL, these values were multiplied by 0.00884 to obtain SU creatinine in mmol/L. No conversion was needed for sodium in SU samples because all surveys herein included already had urinary sodium in mmol/L. The INTERSALT equation computes 24 hr sodium intake, which is then divided by 17.1 to obtain the salt intake in grams per day (g/d) (Brown et al., 2013). For descriptive purposes, we also computed salt intake based on the Kawasaki et al., 1993, Toft et al., 2014, and Tanaka et al., 2002 equations. Of note, our outcome variable was informed by SU samples and not by 24 hr urine samples (gold standard to assess salt consumption). Results should be interpreted according to this limitation.
 
-## Analysis
+### Analysis
 
-## Data preparation
+#### Data preparation
 
 Our complete-case analysis was restricted to men and nonpregnant women aged between 15 and 69 years because of data availability. We dropped participants with implausible BMI levels (outside the range 10–80 kg/m2) or with implausible weight (outside the range 12–300 kg) or height records (outside the range 1.00–2.50 m). Participants with SBP outside the range 70–270 mmHg were discarded, and so were participants with DBP outside the range 30–150 mmHg. We excluded records with SU creatinine <1.8 or > 32.7 mmol/L for males and <1.8 or >28.3 for females (Santos et al., 2019; Paterson et al., 2019). In addition, we excluded participants with estimated salt intake (using the four equations) above or below 3 standard deviations from the equation-specific mean (Appendix 1—figure 1; Jensen et al., 2018). After completing data preparation, observations were randomly assigned from the pooled dataset (100%) into three datasets for the ML analysis: training dataset (50%), test dataset (30%), and validation dataset (20%).
 
-## Machine learning modeling
+#### Machine learning modeling
 
 Our research aim was a regression problem where we had a known outcome attribute (salt consumption at the subject level). Therefore, we planned a supervised ML regression analysis. Details about the modeling process are available in the ‘Extended methods’ (Appendix 2). In brief, we designed a work pipeline with five steps. First, data analysis, where we dropped missing observations, we explored the available data to choose scaling and transformation methods to secure all variables were in the same scale or units, and we also planned transformations for categorical variables (e.g., one-hot encoding). Second, feature importance analysis, where we investigated the contribution of each predictor to the regression model through methods like Random Forest (RF) and Recursive Feature Elimination. The aim of this second step was to exclude any predictor that would not contribute to the regression model. Notably, all predictors (see ‘Variables’ section) chosen following expert knowledge were kept in the analysis (i.e., the feature importance analysis did not suggest the exclusion of any predictor). Third, data processing, having explored the available data (first step in the work pipeline), we implemented different scaling and transformation methods (e.g., Box-Cox, principal component analysis and polynomial features). Fourth, data modeling, where we implemented 10 ML algorithms: (i) linear regression (LiR); (ii) Hubber regressor (HuR); (iii) ridge regressor (RiR); (iv) multilayer perceptron (MLP); (v) support vector regressor (SVR); (vi) k-nearest neighbors (KNN); (vii) RF; (viii) gradient boost machine (GBM); (ix) extreme gradient boosting (XBG); and (x) a customized neural network. All these ML algorithms performed similarly, so the decision to choose one was postponed to the fifth (last) step in the work pipeline. Up to this point, we used the training and validations datasets. Five, forecasting of the predicted attribute in new data (i.e., data not used for model training); in this step, we used the test dataset to choose the model that yielded predictions closest to the observed salt intake. Results comparing the observed and the predicted salt intake were computed in the test dataset alone. For each country, we ran a paired t-test between the observed and predicted salt consumption, where a difference was deemed significant at a p<0.05. We also computed the absolute difference between the observed and predicted salt intake. We chose the HuR algorithm because it showed the mean difference closest to zero in both sexes combined (observed – predicted = 0) (Appendix 2—table 2, Appendix 2—figure 3) . All summary estimates (e.g., mean salt intake) were computed accounting for the complex survey design of the surveys included in the analysis.
 
-## Application of the developed ML model
+#### Application of the developed ML model
 
 Having developed the ML model following the steps above described, we applied the model to 54 WHO STEPS national surveys that did not have urine samples but included the predictors in the ML model (see ‘Variables’ section). In each of these 54 surveys, we computed the mean daily salt intake accounting for the complex survey design. These surveys were preprocessed following the same procedures described in the ‘Data preparation’ section.
 
-## Role of the funding source
+#### Role of the funding source
 
 The funder had no role in the study design, analysis, interpretation, or decision to publish. The authors are collectively responsible for the accuracy of the data. The arguments and opinions in this work are those of the authors alone, and do not represent the position of the institutions to which they belong.

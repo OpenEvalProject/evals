@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.44837.001 Sensory thalami are central sensory pathway stations for information processing. Their role for human cognition and perception, however, remains unclear. Recent evidence suggests an involvement of the sensory thalami in speech recognition. In particular, the auditory thalamus (medial geniculate body, MGB) response is modulated by speech recognition tasks and the amount of this task-dependent modulation is associated with speech recognition abilities. Here, we tested the specific hypothesis that this behaviorally relevant modulation is present in the MGB subsection that corresponds to the primary auditory pathway (i.e., the ventral MGB [vMGB]). We used ultra-high field 7T fMRI to identify the vMGB, and found a significant positive correlation between the amount of task-dependent modulation and the speech recognition performance across participants within left vMGB, but not within the other MGB subsections. These results imply that modulation of thalamic driving input to the auditory cortex facilitates speech recognition.
+Sensory thalami are central sensory pathway stations for information processing. Their role for human cognition and perception, however, remains unclear. Recent evidence suggests an involvement of the sensory thalami in speech recognition. In particular, the auditory thalamus (medial geniculate body, MGB) response is modulated by speech recognition tasks and the amount of this task-dependent modulation is associated with speech recognition abilities. Here, we tested the specific hypothesis that this behaviorally relevant modulation is present in the MGB subsection that corresponds to the primary auditory pathway (i.e., the ventral MGB [vMGB]). We used ultra-high field 7T fMRI to identify the vMGB, and found a significant positive correlation between the amount of task-dependent modulation and the speech recognition performance across participants within left vMGB, but not within the other MGB subsections. These results imply that modulation of thalamic driving input to the auditory cortex facilitates speech recognition.
 
 ## Introduction
 
@@ -50,7 +50,7 @@ In previous studies we found the task-dependent modulation for speech (i.e., hig
 
 ## Results
 
-## Tonotopy localizer – replication of tonotopy in MGB
+### Tonotopy localizer – replication of tonotopy in MGB
 
 First, we replicated the MGB tonotopy reported previously by Moerel et al. (2015) with a larger participant sample. Participants listened to natural sounds (human voices, animal cries, tool sounds) in a fast event-related scheme during silent gaps of the clustered imaging technique (Moerel et al., 2015) (Figure 1A). Using a model that mimics peripheral sound processing (Chi et al., 2005), each sound was represented as a spectrogram. The resulting spectrograms were averaged over time and divided into ten equal bandwidths in octaves. Onsets for each bin were convolved with the hemodynamic response function and entered into the general linear model. Each voxel within each participant’s left and right MGB localizer mask was labeled according to the frequency bin to which it responded strongest, that is which had the highest parameter estimate (Moerel et al., 2015). Thus, voxels would have values from 1 to 10 corresponding to the frequency bin that they best represented. This resulted in a map of frequency distributions from low to high frequencies in the left and right MGB for each participant.
 
@@ -62,33 +62,113 @@ Similar as in Moerel et al. (2015), we found two tonotopic gradients within the 
 
 The regions of low and high frequency preference could be observed in the sagittal view. To quantify the tonotopic gradient direction, we calculated gradient angles in ten slices of the left and right tonotopic map in sagittal orientation. Histograms of gradient angles in 5° steps were calculated for each slice. The histograms of the gradients were then averaged first over slices per participant, followed by an average over participants. The analysis of the mean gradient distributions across individuals (Figure 3, black line with standard error of the mean in gray) for the left MGB had maxima at 130° and 300° (dashed red lines, Figure 3). In the right MGB the mean across individual distributions had maxima at 130° and 310°.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig3-v1.jpg)
+
+**Figure 3.:** The mean number of angle counts in 5° steps (black line with standard error of the mean in gray, numbers indicate counts) for the left MGB have maxima at 130° and 300° (red dashed lines). For the right MGB the maximum gradients are at 130° and 310° (red dashed lines). We interpreted these as two gradients in each MGB: one from anterior-ventral to the center (130°) and the other from the center to anterior-dorsal-lateral (300°, 310°). The two outer images display a slice of the mean tonotopic map in the left and right MGB in sagittal view (S: superior, I: inferior, P: posterior, A: anterior).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The mean number of angle counts in 5° steps (black line; numbers indicate counts) for the left IC cumulatively point towards 65°. For the right IC the general gradient direction was 285°. The two outer images display one slice of the mean tonotopic map across participants in the left and right IC in coronal view (S: superior, I: inferior, L: left, R: right). Individual tonotopies showed high variability (results not shown). The mean tonotopy revealed a gradient from low frequencies in lateral locations to high frequencies in medial locations.
+
 For completeness we ran the same tonotopy analysis also on the inferior colliculi (IC). This analysis (n = 28) revealed a single gradient in the IC similarly to previous reports in the macaque (n = 3) (Baumann et al., 2011) and human (n = 6; n = 5) (Moerel et al., 2015; De Martino et al., 2013) (Figure 3—figure supplement 1).
 
-## Tonotopy localizer—Localisation of vMGB
+### Tonotopy localizer—Localisation of vMGB
 
 We used the high frequency components in the middle of the MGB as a reference to subdivide the MGB volume into two regions per hemisphere (Figure 4A and B). For the left MGB, gradient one was located ventrally and slightly medial compared to gradient 2, which was situated more anterior, dorsal, and lateral. For the right MGB we found similar locations: gradient one was more ventral and medial compared to gradient 2. The center of mass (COM) and the volume for each region is summarized in Table 1. Based on the tonotopy and its ventral location (Morel et al., 1997; Bartlett and Wang, 2011) we considered gradient one to represent the vMGB (Moerel et al., 2015).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig4-v1.jpg)
 
-**Figure 4.:** Figure 2).(A) Three dimensional rendering of the two tonotopic gradients (yellow: ventro-medial gradient 1, interpreted as vMGB, cyan: dorso-lateral gradient 2) in the left and right MGB. (B) Same as in A with a different orientation. Orientation is the same as in Figure 2; crosshairs denote orientation.
+**Figure 4.:** (A) Three dimensional rendering of the two tonotopic gradients (yellow: ventro-medial gradient 1, interpreted as vMGB, cyan: dorso-lateral gradient 2) in the left and right MGB. (B) Same as in A with a different orientation. Orientation is the same as in Figure 2; crosshairs denote orientation.
 
-## Speech experiment
+**Table 1.**
+ Center of mass (COM) and volume of each MGB mask used in the analysis.
 
-## Behavioral results
+
+<table>
+  <thead>
+    <tr>
+      <th>Mask</th>
+      <th>COM (MNI coordinates mm)</th>
+      <th>Volume (mm³)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left Gradient 1 (ventro-medial)</td>
+      <td>(−12.7,–26.9, −6.3)</td>
+      <td>37.38</td>
+    </tr>
+    <tr>
+      <td>Left Gradient 2 (dorso-lateral)</td>
+      <td>(−14.8,–25.9, −5.4)</td>
+      <td>77.38</td>
+    </tr>
+    <tr>
+      <td>Right Gradient 1 (ventro-medial)</td>
+      <td>(12.7,–27.6, −4.4)</td>
+      <td>45.00</td>
+    </tr>
+    <tr>
+      <td>Right Gradient 2 (dorso-lateral)</td>
+      <td>(14.7,–25.8, −4.3)</td>
+      <td>67.38</td>
+    </tr>
+  </tbody>
+</table>
+
+### Speech experiment
+
+#### Behavioral results
 
 Participants scored a mean hit rate in the speech task of 0.872 with 97% highest posterior density (HPD) interval [0.828, 0.915], and a mean hit rate in the speaker task of 0.760 with a 97% HPD interval [0.706, 0.810] (Figure 5; Figure 5—figure supplement 1). The mean hit-rate was 0.112 higher in the speech task than in the speaker task with 97% HPD interval [0.760, 0.150].
 
+![Figure 5.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig5-v1.jpg)
+
+**Figure 5.:** Mean speech task: 0.872 with 97% HPD [0.828, 0.915], mean speaker task: 0.760 with 97% HPD [0.706, 0.800], mean speech vs speaker task: 0.112 with 97% HPD [0.760, 0.150]. Raw data provided in the Source Data File.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The red dots and black numbers indicate estimated means, and the gray dots are individual participant responses averaged over the experiment. The violin plots summarize the distribution of data points. Raw data are provided in the Source Data File.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Reaction times per condition summarized as a mean (black line) and 95% highest posterior density interval (gray area). The blue lines indicate averaged individual reaction times per condition. (B) The speech task reaction time is on average 78 ms quicker than the speaker task reaction time indicating that there is no speed-accuracy trade-off.
+
 An analysis of reaction times showed that there was no speed-accuracy trade-off for the two tasks (Figure 5—figure supplement 2).
 
-## fMRI results
+#### fMRI results
 
 Using the fMRI data of the speech experiment we tested our two hypotheses. The first hypothesis was that within the ventral tonotopic gradient (i.e., vMGB) there is a task-dependent modulation (i.e., higher responses for the speech than the speaker task). Unexpectedly, there was no evidence for higher BOLD response in the speech task in comparison to the speaker task (speech vs speaker contrast) in vMGB.
 
-Our second hypothesis was that there is a positive correlation between speech recognition performance and the amount of task-dependent modulation for speech (i.e., speech vs speaker contrast) in the left vMGB across participants. As expected, there was a significant correlation between the speech vs speaker contrast and mean percent correct speech recognition scores across participants in the left vMGB [MNI coordinate:(-11, -28, -5); SVC for vMGB p=0.04 FWE, T=2.97, r=0.46 using T to r transform from Fisher (1915); parameter estimate (β) and 90% CI 0.82 [0.36, 1.27]; Figures 6 and 7]. The correlation coefficient r=0.46 (R²=0.21) is considered to represent a large effect (Cohen, 1988 p. 80), explaining 21% of the variance of either variable when linearly associated with the variance in the other.
+Our second hypothesis was that there is a positive correlation between speech recognition performance and the amount of task-dependent modulation for speech (i.e., speech vs speaker contrast) in the left vMGB across participants. As expected, there was a significant correlation between the speech vs speaker contrast and mean percent correct speech recognition scores across participants in the left vMGB [MNI coordinate:$(-11,-28,-5)$; SVC for vMGB $p=0.04$ FWE, $T=2.97,r=0.46$ using T to r transform from Fisher (1915); parameter estimate (β) and 90% CI 0.82 [0.36, 1.27]; Figures 6 and 7]. The correlation coefficient r=0.46 (R²=0.21) is considered to represent a large effect (Cohen, 1988 p. 80), explaining 21% of the variance of either variable when linearly associated with the variance in the other.
 
-To check whether potential outliers were driving the correlation, we excluded those data points that were two standard deviations away from the parameter estimate mean. One data point was outside this threshold. The re-calculated correlation was very similar to the one with all data points (T=2.92, p=0.038, r=0.46), indicating that the correlation was robust to outlier removal.
+![Figure 6.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig6-v1.jpg)
 
-## Meta-analysis of the main effect of task (speech vs speaker contrast)
+**Figure 6.:** (A) The mean structural image across participants (n = 33) in MNI space. The red squares denote the approximate location of the left MGB and encompass the zoomed in view in B. (B) Overlap of correlation between the speech vs speaker contrast and the mean percent correct in the speech task (hot color code) across participants within the left vMGB (yellow). The tonotopic gradient two is shown in cyan. Panels correspond to sagittal, coronal, and axial slices (P: posterior, A: anterior, S: superior, I: inferior, L: left, R: right). Crosshairs point to the significant voxel using SVC in the vMGB mask (MNI coordinate −11,–28, −5).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** From left to right: left lateral sagittal view, medial sagittal view, and coronal view (left hemisphere is on the left).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Wrapping artifacts were avoided by using appropriate phase over-sampling (33% larger FoV in phase-encoding direction A-P; A: anterior, P: posterior, L: left, R: right, S: superior, I: inferior).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Each bubble represents a node with a descriptive name and the software package or utility in parentheses (io: input/output utility). Arrows indicate directional connections between nodes. The infosource utility takes the subject names and passes them on to the nodes that require this information (datasource, selectfiles, bbreg, fssource, gestubinforuns). Datasource and selectfiles select the files needed for the analysis. The functional runs are first realigned and unwarped (RealignUnwarp). The mean realigned image together with the structural image are used in the bbreg step to perform the boundary based registration. Convert2itk (c3: c3d converts 3D images between common file formats, https://sourceforge.net/p/c3d/git/ci/master/tree/doc/c3d.md) converts the rotation/translation matrix from bbreg to ITK format in order to be able to use ANTs to apply the coregistration transformations of the functional to structural runs in the warpbbreg step. The coregistered runs are then smoothed (smooth_native). Outliers are computed in the art (rapidart) step. Model generation is implemented in modelspec, where smoothed images, regressors of interest (onsets, durations convolved with HRF from getsubinforuns), and regressors of no interest (realignment parameters, outliers, physiological regressors, button presses) are gathered. These are modeled in the level1design step in SPM, estimated in level1estimate, and contrasts calculated in the contrast step. The two ANTs registrations to MNI (antsRegister_init and antsRegister_mask) are computed in parallel. Contrast warping to MNI space is computed in the warpcon step, and individual structural images are warped to MNI space in the warpstruc step. Using FSL statistical maps are overlayed in overlaystats and slicestats for quick visual inspection. The sinker collects desired files written in the temporary directory and organizes them according to subject name and computational step for easy access. Data processing workflows for MGB and tonotopic localizer follow the one for the speech experiment. Transformation matrices to MNI space were taken from the speech experiment computation, as data from all experiments need to be in the same space.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig7-v1.jpg)
+
+**Figure 7.:** The line represents the best fit with 97% bootstrapped confidence interval (gray shaded region).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44837/elife-44837-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The cyan squares denote those participants who scored below 50% in the reading speed and comprehension test. A lower reading speed and comprehension score in these typically developed participants did not imply a lower vMGB response.
+
+To check whether potential outliers were driving the correlation, we excluded those data points that were two standard deviations away from the parameter estimate mean. One data point was outside this threshold. The re-calculated correlation was very similar to the one with all data points ($T=2.92$, $p=0.038$, $r=0.46$), indicating that the correlation was robust to outlier removal.
+
+#### Meta-analysis of the main effect of task (speech vs speaker contrast)
 
 We performed a random effects meta-analysis to test whether the (non-significant) effect of the main effect of task in the present study (i.e., speech vs speaker task contrast) was different from other studies that have reported a significant task-dependent MGB modulation for speech. We included five studies in the meta-analysis that each contained a speech task vs control task contrast: two experiments from von Kriegstein et al. (2008b), the data from the control participants of Díaz et al. (2012), the result of a recent study (Mihai et al., 2019), and the result of the current study. The meta-analysis yielded an overall large effect size of d = 0.85 [0.06, 1.65], p=0.036 (Figure 8). The analysis showed that four of the five experiments had a positive medium to large effect and only the current study had a very small insignificant negative effect. The confidence intervals from the current study also do not overlap with those of the other studies. In terms of equivalence testing (Schuirmann, 1987), this means that the result of the speech task vs control task contrast of the current study is different from the other studies compared here. We detail potential reasons for this difference in the task-dependent modulation between the studies in the discussion.
 
@@ -96,7 +176,7 @@ We performed a random effects meta-analysis to test whether the (non-significant
 
 **Figure 8.:** Experiment 1 of von Kriegstein et al. (2008b) tested a speech task vs loudness task contrast (n = 16). All other experiments included a speech task vs speaker task contrast (i.e., Experiment 2 of von Kriegstein et al., 2008b (n = 17), the control participants of Díaz et al., 2012 (n = 14), the result of a recent experiment (Mihai et al., 2019) (n = 17) as well as the current study (n = 33)). The meta-analysis yielded an overall large effect size of d = 0.85 [0.06, 1.65], p=0.036. The area of the squares denoting the effect size is directly proportional to the weighting of the particular study when computing the meta-analytic overall score.
 
-## Exploratory analyses
+#### Exploratory analyses
 
 Specificity of the behaviorally relevant task-dependent modulation for speech. In exploratory control analyses we checked whether we could test for a specificity of the correlation between the task-dependent modulation for speech (i.e., the speech task vs speaker task contrast) and the speech recognition behavior across participants. This was, however, not possible. Performance in the speech and the speaker tasks was significantly correlated (r = 0.77, p<0.001). Accordingly, there was no difference in the correlation between the contrast speech vs speaker task and the speech recognition scores and the correlation of the contrast speech vs speaker with the speaker recognition score (z = −0.717, p=0.474). The results indicated that although there is a behaviorally relevant task-dependent modulation in the vMGB for speech, we currently do not know whether it is specific to speech recognition abilities.
 
@@ -128,31 +208,31 @@ Although most of speech and language research focuses on cerebral cortex structu
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 The Ethics committee of the Medical Faculty, University of Leipzig, Germany approved the study (protocol number 273/14-ff). We recruited 33 participants using the database of the Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig, Germany. The participants were right handed (as assessed by the Edinburgh Handedness Inventory; Oldfield, 1971), native German-speakers, had a mean age and standard deviation (SD) of 24.9 ± 2.5 years, and included 23 females. Participants provided written informed consent. None of the participants reported a history of psychiatric or neurological disorders, hearing difficulties, or current use of psychoactive medications. Normal hearing abilities were confirmed with pure tone audiometry (250 Hz to 8000 Hz) with a threshold equal to and below 25 dB (Madsen Micromate 304, GN Otometrics, Denmark). To exclude possible undiagnosed dyslexics, we tested the participant’s reading speed and reading comprehension using the German LGVT: 6–12 test (Schneider et al., 2007). The cut-off for both reading scores were set to those levels mentioned in the test instructions as the ‘lower average and above’ performance range (i.e., 26–100% of the calculated population distribution). None of the participants performed below the cut-off performance (mean and standard deviation: 69.9 ± 19.5%, lowest mean score: 36%). Furthermore, none of the participants exhibited a clinically relevant number of traits associated with autism spectrum disorder as assessed by the Autism Spectrum Quotient (AQ; mean and standard deviation: 16.2 ± 4.8; cutoff: 32–50; Baron-Cohen et al., 2001). We tested AQ as autism can be associated with difficulties in speech-in-noise perception (Alcántara et al., 2004; Groen et al., 2009) and has overlapping symptoms with dyslexia (White et al., 2006). Participants received monetary compensation for participating in the study.
 
-## Experiments
+### Experiments
 
 We performed three different functional MRI measurements: the speech experiment (n = 33), a MGB localizer (n = 33), and a tonotopy localizer (n = 28, 18 females, age 24.8 ± 5.0 years). Each experiment was performed once.
 
-## Stimuli
+### Stimuli
 
-## MGB and Tonotopy localizer
+#### MGB and Tonotopy localizer
 
 The stimuli for the MGB localizer and the tonotopy localizer consisted of 84 and 56 natural sounds, respectively, sampled at 16 kHz at 32 bit, and included samples of human speech, animal cries and tool sounds (these were the same as described in Moerel et al., 2015). The stimuli had a duration of 1000 ms, were ramped with 10 ms linear slopes, and had equalized root-mean-square levels.
 
-## Speech experiment
+#### Speech experiment
 
 The speech experiment stimuli consisted of 448 vowel-consonant-vowel (VCV) syllables with an average duration and SD of 803 ± 105 ms. These were spoken by three female and three male speakers (mean age and SD 27.7 ± 3.3 years) unfamiliar to the participants, and were recorded with a video camera (Canon Legria HFS10, Canon, Japan) and a Røde NTG-1 Microphone (Røde Microphones, Silverwater, NSW, Australia) connected to a pre-amplifier (TubeMP Project Series, Applied Research and Technology, Rochester, NY, USA) in a sound-attenuated room. The sampling rate was 48 kHz at 16 bit. Auditory stimuli were cut and flanked by Hamming windows of 15 ms at the beginning and end, converted to mono, and root-mean-square equalized using Python 3.6 (Python Software Foundation, www.python.org).
 
-## Procedure
+### Procedure
 
-## MGB and Tonotopy localizer
+#### MGB and Tonotopy localizer
 
 For the MGB localizer and the tonotopy localizer, participants listened to natural sounds (human voices, animal cries, tool sounds; Moerel et al., 2015). The MGB localizer consisted of one run where 84 natural sound stimuli were presented in random order and had a duration of 12:50 min. The tonotopy localizer consisted of six runs where 56 of the 84 natural sound stimuli from the MGB localizer were presented. The sounds were randomly chosen before the first run and the same 56 sounds were played in each run. Each run had a duration of 8:58 min. To ensure listener engagement, in both localizers the participants performed a 1-back task and pushed a button when two consecutive sounds were the same. This happened on average 5% of the time. Additionally, 5% of the trials contained no sound (null events). Within each run, sounds were randomly jittered at an interval of 2, 3, or 4 repetition times (TR) and presented in the middle of the silent gap of 1200 ms (Figure 1A). The MGB localizer was used as an independent functional identifier for the left and right MGB. The resulting masks were then used to constrain the analyses of the tonotopy localizer to these regions of interest. In turn, the tonotopic regions of the MGB were used as masks in the speech experiment (see section Functional MRI Data Analysis).
 
-## Speech experiment
+#### Speech experiment
 
 In the speech experiment (Figure 1C) participants listened to blocks of auditory VCV syllables, and were asked to perform two types of tasks: a speech task and a speaker task. In the speech task, participants reported via button press whether the current syllable was different from the previous one (1-back task). In the speaker task, participants reported via button press whether the current speaker was different from the previous one. Speakers within a block were either all male or all female. This was necessary to avoid that participants performed a gender discrimination task on some trials and a speaker identity task on other trials. Task instructions were presented for two seconds prior to each block and consisted of white written words on a black background (German words ‘Silbe’ for syllable, and ‘Person’ for person). After the instruction, the block of syllables started (Figure 1B). Each block contained 14 stimuli. Each stimulus presentation was followed by 400 ms of silence. Within one block both syllables and speakers changed six or seven times. The average length of a block and SD was 17.0 ± 0.9 s. Counterbalancing of the stimulus material for the two tasks was achieved by presenting each block twice: once with the instruction to perform the speech task and once with the instruction to perform the speaker task. Besides the factor ‘task’, the experiment included another factor. That is, blocks had either only vowel or only consonant changes. While this factor is included in the analysis, it is irrelevant for addressing the current research question.
 
@@ -160,7 +240,7 @@ The experiment was divided into five runs with a duration of 8:30 min per run. E
 
 The experiments were programmed and presented using Presentation (v17.1, NeuroBehavioral Systems, Berkley, CA, USA) in Windows XP and delivered through an MrConfon amplifier and earbuds linked to the transducers via air tubes (manufactured 2008, MrConfon GmbH, Magdeburg, Germany).
 
-## Participant training
+### Participant training
 
 The participant training consisted of a speaker familiarization and an experiment familiarization.
 
@@ -170,7 +250,7 @@ The experiment familiarization consisted of one 8:30 min long run of the fMRI sp
 
 The training (speaker and experiment familiarization) took place within the same testing-session as the pre-tests (audiometry, reading comprehension, and AQ questionnaire), and was repeated half an hour prior to the fMRI experiment, which took place at a later date.
 
-## Data acquisition and processing
+### Data acquisition and processing
 
 MRI data were acquired using a Siemens Magnetom 7 T scanner (Siemens Healthineers, Erlangen, Germany) with a Nova 32-channel head coil (Nova Medical, Wilmington MA, USA). Functional MRI data were acquired using echo planar imaging (EPI) sequences. We used a field of view (FoV) of 132 × 132 mm and partial coverage with 28 slices. This volume was oriented obliquely such that the slices encompassed the inferior colliculi (IC), the MGB and the superior temporal gyrus, running in parallel to the latter (Figure 6—figure supplement 1).
 
@@ -180,21 +260,249 @@ For the speech experiment, acquisition parameters were the same as for the local
 
 During functional MRI data acquisition we also acquired physiological values (heart rate, and respiration rate) using a BIOPAC MP150 system (BIOPAC Systems Inc, Goleta, CA, USA). Structural images were recorded using an MP2RAGE (Marques et al., 2010) T1 protocol: 700 µm isotropic resolution, TE = 2.45 ms, TR = 5000 ms, TI1 = 900 ms, TI2 = 2750 ms, flip angle 1 = 5°, flip angle 2 = 3°, FoV 224 mm ×224 mm, GRAPPA acceleration factor 2, duration 10:57 min.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 Button presses were modeled using a binomial logistic regression which predicts the probability of correct button presses based on four independent variables (speech task, vowel change; speech task, consonant change; speaker task, vowel change; speaker, task consonant change) in a Bayesian framework (Mcelreath, 2015).
 
 To pool over participants and runs we modeled the correlation between intercepts and slopes. For the model implementation and data analysis, we used PyMC3 (Salvatier et al., 2016) using a No-U-Turn Sampler (Hoffman and Gelman, 2011) with three parallel chains. Per chain we had 20,000 samples with 5000 of these as warm-up. Only the latter 7500 were used for posterior mean and highest posterior density (HPD) interval estimates. The difference in percent correct button presses between the speech and speaker task was calculated using the posterior densities averaged over consonant and vowel changes. The resulting distribution was averaged and the 97% HPD was calculated. If the posterior probability distribution does not strongly overlap zero, then there was a detectable difference between conditions (Mcelreath, 2015).
 
-The predictors included in the behavioral data model were: task (1 = speech, 0 = speaker), and syllable change (1 = vowel, 0 = consonant). We also included the two way interaction of task and syllable change. Because data were collected across participants and runs it is reasonable to include random effects for both of these in the logistic model, albeit we expected little to no difference in performance between runs. The model had the following likelihood and linear models:Li∼Binomial(1,pi,j)logitpi,j= Ai,j+BS,i,j+BV,i,j+BSV,i,j, for i=1,…, I;j=1, …, JAi,j=α+αparticipanti+αrunjBS,i,j=βS+βS, participanti+βS, runjBV,i,j=βV+βV, participanti+βV, runjBSV,i,j=βSV+βSV, participanti+βSV, runjαparticipantβS,participantβV,participantβSV,participant∼MVNormalαβSβVβSV,SparticipantαrunβS,runβV,runβSV,run∼MVNormalαβSβVβSV,SrunSparticipant=σα0000σβS0000σβS0000σβSVRparticipantσα0000σβS0000σβS0000σβSVSrun=σα0000σβS0000σβS0000σβSVRrunσα0000σβS0000σβS0000σβSVα∼Normal0,5βS∼Normal0,5βV∼Normal0,5βSV∼Normal(0,5)σparticipant,σrun∼HalfCauchy2σcorr, participant∼HalfCauchy2σcorr, run∼HalfCauchy(2)Rparticipant∼LKJcorr4,σcorr, participantRrun∼LKJcorr4,σcorr,runwhere I is the number of subjects and J is the number of runs. The model is compartmentalized into sub-models for the intercept and each slope. Ai,j is the sub-model for the intercept for observations i,j. Similarly, BS,i,j, BV,i,j and BSV,i,j are the sub-models for the speech-speaker slope, vowel-consonant slope and the interaction slope; Sparticipant and Srun are the covariance matrices, Rparticipant and Rrun are the priors for the correlation matrices between the intercepts and slopes modeled as a LKJ probability density for participants and runs (Lewandowski et al., 2009). Informative priors for the intercept (α) and additional coefficients (e.g., βS), random effects for subject and run (βS, participant,βS,run), and multivariate priors for subjects and runs identify the model by constraining the position of pi,j to reasonable values.
+The predictors included in the behavioral data model were: task (1 = speech, 0 = speaker), and syllable change (1 = vowel, 0 = consonant). We also included the two way interaction of task and syllable change. Because data were collected across participants and runs it is reasonable to include random effects for both of these in the logistic model, albeit we expected little to no difference in performance between runs. The model had the following likelihood and linear models:
+
+$$
+L_{i}∼Binomial(1,p_{i,j})
+$$
+
+
+
+$$
+logitp_{i,j}=A_{i,j}+B_{S,i,j}+B_{V,i,j}+B_{SV,i,j}, for i=1,…,I;j=1,…,J
+$$
+
+
+
+$$
+A_{i,j}=\alpha+\alpha_{participanti}+\alpha_{runj}
+$$
+
+
+
+$$
+B_{S,i,j}=\beta_{S}+\beta_{S,participanti}+\beta_{S,runj}
+$$
+
+
+
+$$
+B_{V,i,j}=\beta_{V}+\beta_{V,participanti}+\beta_{V,runj}
+$$
+
+
+
+$$
+B_{SV,i,j}=\beta_{SV}+\beta_{SV,participanti}+\beta_{SV,runj}
+$$
+
+
+
+$$
+\alpha_{participant}\beta_{S,participant}\beta_{V,participant}\beta_{SV,participant}∼MVNormal\alpha\beta_{S}\beta_{V}\beta_{SV},S_{participant}
+$$
+
+
+
+$$
+\alpha_{run}\beta_{S,run}\beta_{V,run}\beta_{SV,run}∼MVNormal\alpha\beta_{S}\beta_{V}\beta_{SV},S_{run}
+$$
+
+
+
+$$
+S_{participant}=\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}R_{participant}\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}
+$$
+
+
+
+$$
+S_{run}=\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}R_{run}\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}
+$$
+
+
+
+$$
+\alpha∼Normal0,5
+$$
+
+
+
+$$
+\beta_{S}∼Normal0,5
+$$
+
+
+
+$$
+\beta_{V}∼Normal0,5
+$$
+
+
+
+$$
+\beta_{SV}∼Normal(0,5)
+$$
+
+
+
+$$
+\sigma_{participant},\sigma_{run}∼HalfCauchy2
+$$
+
+
+
+$$
+\sigma_{corr,participant}∼HalfCauchy2
+$$
+
+
+
+$$
+\sigma_{corr,run}∼HalfCauchy(2)
+$$
+
+
+
+$$
+R_{participant}∼LKJcorr4,\sigma_{corr,participant}
+$$
+
+
+
+$$
+R_{run}∼LKJcorr4,\sigma_{corr,run}
+$$
+
+where I is the number of subjects and J is the number of runs. The model is compartmentalized into sub-models for the intercept and each slope. Ai,j is the sub-model for the intercept for observations i,j. Similarly, BS,i,j, BV,i,j and BSV,i,j are the sub-models for the speech-speaker slope, vowel-consonant slope and the interaction slope; $S_{participant}$ and $S_{run}$ are the covariance matrices, $R_{participant}$ and $R_{run}$ are the priors for the correlation matrices between the intercepts and slopes modeled as a LKJ probability density for participants and runs (Lewandowski et al., 2009). Informative priors for the intercept (α) and additional coefficients (e.g., $\beta_{S}$), random effects for subject and run ($\beta_{S,participant}$,$\beta_{S,run}$), and multivariate priors for subjects and runs identify the model by constraining the position of pi,j to reasonable values.
 
 To check for correlations in the performance between tasks, we calculated the Pearson’s product moment (Cohen, 1988 p. 75) on the proportion of hits in the speech and speaker task using Python 3.6.
 
-We analyzed reaction times using a linear model in a Bayesian framework. Reaction times were mean centered and the priors on reaction times were modeled as T-distributions. We calculated the mean difference in reaction times between the speech and the speaker task to check for a speed-accuracy trade-off. The model is described below:Li∼Binomial(1,pi,j)pi,j= Ai,j+BS,i,j+BV,i,j+BSV,i,j, for i=1,…, I;j=1, …, JAi,j=α+αparticipanti+αrunjBS,i,j=βS+βS, participanti+βS, runjBV,i,j=βV+βV, participanti+βV, runjBSV,i,j=βSV+βSV, participanti+βSV, runjαparticipantβS,participantβV,participantβSV,participant∼MVNormalαβSβVβSV,SparticipantαrunβS,runβV,runβSV,run∼MVNormalαβSβVβSV,SrunSparticipant=σα0000σβS0000σβS0000σβSVRparticipantσα0000σβS0000σβS0000σβSVSrun=σα0000σβS0000σβS0000σβSVRrunσα0000σβS0000σβS0000σβSVα∼T3,0,1βS∼T3,0,1βV∼T3,0,1βSV∼T(3,0,1)σparticipant,σrun∼HalfCauchy2σcorr, participant∼HalfCauchy2σcorr, run∼HalfCauchy(2)Rparticipant∼LKJcorr4,σcorr, participantRrun∼LKJcorr4,σcorr,runwhere I is the number of subjects and J is the number of runs. The model is compartmentalized into sub-models for the intercept and each slope. Ai,j is the sub-model for the intercept for observations i,j. Similarly, BS,i,j, BV,i,j and BSV,i,j are the sub-models for the speech-speaker slope, vowel-consonant slope and the interaction slope; Sparticipant and Srun are the covariance matrices, Rparticipant and Rrun are the priors for the correlation matrices between the intercepts and slopes modeled as a LKJ probability density for participants and runs (Lewandowski et al., 2009). Informative priors for the intercept (α) and additional coefficients (e.g., βS), random effects for subject and run (βS, participant,βS,run), and multivariate priors for subjects and runs identify the model by constraining the position of pi,j to reasonable values.
+We analyzed reaction times using a linear model in a Bayesian framework. Reaction times were mean centered and the priors on reaction times were modeled as T-distributions. We calculated the mean difference in reaction times between the speech and the speaker task to check for a speed-accuracy trade-off. The model is described below:
 
-## Functional MRI data analysis
+$$
+L_{i}∼Binomial(1,p_{i,j})
+$$
 
-## Preprocessing of MRI data
+
+
+$$
+p_{i,j}=A_{i,j}+B_{S,i,j}+B_{V,i,j}+B_{SV,i,j}, for i=1,…,I;j=1,…,J
+$$
+
+
+
+$$
+A_{i,j}=\alpha+\alpha_{participanti}+\alpha_{runj}
+$$
+
+
+
+$$
+B_{S,i,j}=\beta_{S}+\beta_{S,participanti}+\beta_{S,runj}
+$$
+
+
+
+$$
+B_{V,i,j}=\beta_{V}+\beta_{V,participanti}+\beta_{V,runj}
+$$
+
+
+
+$$
+B_{SV,i,j}=\beta_{SV}+\beta_{SV,participanti}+\beta_{SV,runj}
+$$
+
+
+
+$$
+\alpha_{participant}\beta_{S,participant}\beta_{V,participant}\beta_{SV,participant}∼MVNormal\alpha\beta_{S}\beta_{V}\beta_{SV},S_{participant}
+$$
+
+
+
+$$
+\alpha_{run}\beta_{S,run}\beta_{V,run}\beta_{SV,run}∼MVNormal\alpha\beta_{S}\beta_{V}\beta_{SV},S_{run}
+$$
+
+
+
+$$
+S_{participant}=\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}R_{participant}\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}
+$$
+
+
+
+$$
+S_{run}=\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}R_{run}\sigma_{\alpha}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}}0000\sigma_{\beta_{S}V}
+$$
+
+
+
+$$
+\alpha∼T3,0,1
+$$
+
+
+
+$$
+\beta_{S}∼T3,0,1
+$$
+
+
+
+$$
+\beta_{V}∼T3,0,1
+$$
+
+
+
+$$
+\beta_{SV}∼T(3,0,1)
+$$
+
+
+
+$$
+\sigma_{participant},\sigma_{run}∼HalfCauchy2
+$$
+
+
+
+$$
+\sigma_{corr,participant}∼HalfCauchy2
+$$
+
+
+
+$$
+\sigma_{corr,run}∼HalfCauchy(2)
+$$
+
+
+
+$$
+R_{participant}∼LKJcorr4,\sigma_{corr,participant}
+$$
+
+
+
+$$
+R_{run}∼LKJcorr4,\sigma_{corr,run}
+$$
+
+where I is the number of subjects and J is the number of runs. The model is compartmentalized into sub-models for the intercept and each slope. Ai,j is the sub-model for the intercept for observations i,j. Similarly, BS,i,j, BV,i,j and BSV,i,j are the sub-models for the speech-speaker slope, vowel-consonant slope and the interaction slope; $S_{participant}$ and $S_{run}$ are the covariance matrices, $R_{participant}$ and $R_{run}$ are the priors for the correlation matrices between the intercepts and slopes modeled as a LKJ probability density for participants and runs (Lewandowski et al., 2009). Informative priors for the intercept (α) and additional coefficients (e.g., $\beta_{S}$), random effects for subject and run ($\beta_{S,participant}$,$\beta_{S,run}$), and multivariate priors for subjects and runs identify the model by constraining the position of pi,j to reasonable values.
+
+### Functional MRI data analysis
+
+#### Preprocessing of MRI data
 
 The partial coverage by the 28 slices and the lack of a whole brain EPI measurement resulted in coregistration difficulties of functional and structural data. As a workaround, the origin (participant space coordinate [0, 0, 0]) of all EPI and MP2RAGE images were manually set to the anterior commissure using SPM 12. Furthermore, to deal with the noise surrounding the head in MP2RAGE images, these were first segmented using SPM’s new segment function (SPM 12, version 12.6906, Wellcome Trust Centre for Human Neuroimaging, UCL, UK, http://www.fil.ion.ucl.ac.uk/spm) running on Matlab 8.6 (The Mathworks Inc, Natick, MA, USA). The resulting gray and white matter segmentations were summed and binarized to remove voxels that contain air, scalp, skull and cerebrospinal fluid from structural images using the ImCalc function of SPM.
 
@@ -202,11 +510,11 @@ A template of all participants was created with ANTs (Avants et al., 2009) using
 
 The rest of the analysis was coded in nipype (Gorgolewski et al., 2011). A graphical overview of the nipype pipeline can be found in Figure 6—figure supplement 3. Head motion and susceptibility distortion by movement interaction of functional runs were corrected using the Realign and Unwarp method (Andersson et al., 2001) in SPM 12 after which outlier volumes were detected using ArtifactDetect (composite threshold of translation and rotation: 1; intensity Z-threshold: 3; global threshold: 8; https://www.nitrc.org/projects/artifact_detect/). Coregistration matrices for realigned functional runs per participant were computed based on each participant’s structural image using Freesurfer’s BBregister function (register mean EPI image to T1, option ‘—init-header’ was specified in order to preserve the origin of the manual alignment of structural and functional data). Warping using coregistration matrices (after conversion to ITK coordinate system) and resampling to 1 mm isovoxel was performed using ANTs. Before model creation we smoothed the data in SPM12 using a 1 mm kernel at full-width half-maximum.
 
-## Physiological data
+### Physiological data
 
 Physiological data (heart rate and respiration rate) were processed by the PhysIO Toolbox (Kasper et al., 2017) to obtain Fourier expansions of each, in order to enter these into the design matrix (see statistical analyses sections below).
 
-## Statistical analysis of the speech experiment
+### Statistical analysis of the speech experiment
 
 Models were set up in SPM using the native space data for each participant. The design matrix included three cardiac and four respiratory regressors, six realignment parameters, and a variable number of outlier regressors from the ArtifactDetect step, depending on how many outliers were found in each run. These regressors of no interest were also used in the models of the other two experiments (MGB and tonotopy localizer). Since participants provided a response only for the target stimulus changes and not for each stimulus presentation, we modeled these to eschew a potential sensory-motor confound as 0.5 for hit, ‒0.5 for miss and 0.0 for everything else. If more than one syllable presentation took place within one volume acquisition, the values within this volume were averaged. The speech experiment had a total of five modeled conditions, which were convolved with the hemodynamic response function (HRF): speech task/vowel change, speech task/consonant change, speaker task/vowel change, speaker task/consonant change, and task instruction. Parameter estimates were computed for the contrast speech vs speaker at the first level using restricted maximum likelihood (REML) as implemented in SPM 12.
 
@@ -214,34 +522,34 @@ After estimation, the contrasts were registered to the MNI structural template o
 
 We used a random effects (RFX) analysis to compute the speech vs speaker contrast across participants to test our first hypothesis that the MGB response is modulated by this contrast. To do this, we took the first level contrasts across participants and entered them into an RFX model to be estimated using REML. Based on the results of previous experiments (Díaz et al., 2012; von Kriegstein et al., 2008b), we expected a result for the categorical speech vs speaker contrast in the left and right MGB. Our second hypothesis was that the proportion of correct button presses in the speech task correlates with the responses elicited by the speech vs speaker contrast over participants in the left MGB only (von Kriegstein et al., 2008b; Díaz et al., 2012). We thus computed the RFX correlation between the speech vs speaker contrast and the proportion of correct button presses in the speech task across participants. This was implemented using the behavioral percent correct scores for the speech task as a covariate of interest for each participant in the SPM RFX model. We used an equivalent procedure to test for correlation between the speech vs speaker task contrast and the proportion of correct button presses in the speaker task across participants. To formally test for a difference between these two correlations we performed a comparison using a freely available online tool (comparingcorrelations.org) (Diedenhofen and Musch, 2015). This tool computes the z-score and p-value of the difference between two correlations based on Hittner et al. (2003).
 
-## Meta-analysis of the main effect of task (speech vs speaker task contrast)
+### Meta-analysis of the main effect of task (speech vs speaker task contrast)
 
 The lack of statistical significance for the speech vs speaker contrast raised the question whether the overall effect is different from the ones reported previously (Díaz et al., 2012; von Kriegstein et al., 2008b). We performed a random effects meta-analysis to test whether the lack of task-dependent modulation in the present study was different from other studies that have reported a task-dependent modulation of the MGB. We included five studies in the meta-analysis that included a speech task vs control task contrast: two experiments from von Kriegstein et al. (2008b), the data from the control participants of Díaz et al. (2012), the result of a recent study (Mihai et al., 2019), and the result of the current study. Effect sizes and standard errors were entered into a random effects model that was estimated with maximum likelihood using JASP 0.9 (jasp-stats.org).
 
-## Statistical analysis of the MGB localizer
+### Statistical analysis of the MGB localizer
 
 For the MGB localizer we used a stick function convolved with the HRF to model each presented sound. Null events were not modeled, as well as repeated sounds, to avoid a sensory-motor confound through the button-press. The data were modeled according to Perrachione and Ghosh (2013) where repetition (TR = 2.8 s) and acquisition times (TA = 1.6 s) were modeled separately. The contrast Sound vs Silence was computed for each participant. The inference across participants was modeled using the first level contrasts in a second-level RFX analysis for the group. Significant voxels (see Section Masks below) in the left and right MGB found in the RFX analysis for the contrast sound vs silence were used as a mask for the tonotopy localizer.
 
-## Statistical analysis of the tonotopy localizer
+### Statistical analysis of the tonotopy localizer
 
-For the tonotopy localizer we followed a similar approach as Moerel et al. (2015). The sounds were first processed through the NSL toolbox (Chi et al., 2005) which mimics the spectral transformation of sounds passing through the cochlea to the midbrain. This frequency representation includes a bank of 128 overlapping bandpass filters equally spaced on a log frequency axis (180-7040 Hz; range 5.3 octaves). The resulting spectrograms were averaged over time. To reduce overfitting we divided the tonotopic axis into 12 equal bandwidths in octaves and averaged the model’s output within these regions. The MrConfon headphones guarantee a linear frequency response up to 4 kHz, thus only the first 10 bins were used in the analysis, which resulted in 10 frequency bins for each sound file. The frequency model consisted of a vector of values corresponding to the frequency representations per sound. Since each sound had a frequency representation the final model is a matrix W=[S ×F], where S is the number of sounds and F the number of features per sound. The predictors were z-scored across bins since low frequencies have more energy and would thus be more strongly represented compared to high frequencies (Moerel et al., 2015). The matrix was convolved with the hemodynamic response function and its components (i.e., the 10 frequency bins) were used as regressors of interest in the design matrix of SPM. In addition, we included the same regressors of no-interest as in the design matrix for the speech experiment (i.e., six respiratory regressors, six realignment parameters, and a variable number of outlier regressors from the ArtifactDetect step, depending on how many outliers were found). Parameter estimates were calculated for each frequency bin at the first level in native space.
+For the tonotopy localizer we followed a similar approach as Moerel et al. (2015). The sounds were first processed through the NSL toolbox (Chi et al., 2005) which mimics the spectral transformation of sounds passing through the cochlea to the midbrain. This frequency representation includes a bank of 128 overlapping bandpass filters equally spaced on a log frequency axis (180-7040 Hz; range 5.3 octaves). The resulting spectrograms were averaged over time. To reduce overfitting we divided the tonotopic axis into 12 equal bandwidths in octaves and averaged the model’s output within these regions. The MrConfon headphones guarantee a linear frequency response up to 4 kHz, thus only the first 10 bins were used in the analysis, which resulted in 10 frequency bins for each sound file. The frequency model consisted of a vector of values corresponding to the frequency representations per sound. Since each sound had a frequency representation the final model is a matrix $W=[S\timesF]$, where $S$ is the number of sounds and $F$ the number of features per sound. The predictors were z-scored across bins since low frequencies have more energy and would thus be more strongly represented compared to high frequencies (Moerel et al., 2015). The matrix was convolved with the hemodynamic response function and its components (i.e., the 10 frequency bins) were used as regressors of interest in the design matrix of SPM. In addition, we included the same regressors of no-interest as in the design matrix for the speech experiment (i.e., six respiratory regressors, six realignment parameters, and a variable number of outlier regressors from the ArtifactDetect step, depending on how many outliers were found). Parameter estimates were calculated for each frequency bin at the first level in native space.
 
-## Masks
+### Masks
 
-## MGB localizer
+#### MGB localizer
 
-We created masks using all voxels from the second level MGB localizer analysis for the contrast sound vs silence (family-wise error [FWE] corrected p<0.001) constrained within a r=5 mm sphere centered at the voxel with the statistical maximum in the left and right MGB. We chose such a stringent p-value due to the strong effect and the multitude of above threshold voxels found within and around the left and right MGB. This procedure excluded all voxels which were clearly too far away from the structural boundaries of the MGB as seen in the MP2RAGE MNI template, yet still within the cluster, to be considered part of the MGB. These masks were inverse transformed per participant from MNI space to participant space using ANTs. Above threshold voxels (uncorrected p<0.05) within the transformed masks were extracted, for each participant, from the MGB localizer Sound vs Silence contrast. These masks were then used to define each participant’s tonotopy with the tonotopy localizer.
+We created masks using all voxels from the second level MGB localizer analysis for the contrast sound vs silence (family-wise error [FWE] corrected $p<0.001$) constrained within a $r=5$ mm sphere centered at the voxel with the statistical maximum in the left and right MGB. We chose such a stringent p-value due to the strong effect and the multitude of above threshold voxels found within and around the left and right MGB. This procedure excluded all voxels which were clearly too far away from the structural boundaries of the MGB as seen in the MP2RAGE MNI template, yet still within the cluster, to be considered part of the MGB. These masks were inverse transformed per participant from MNI space to participant space using ANTs. Above threshold voxels (uncorrected $p<0.05$) within the transformed masks were extracted, for each participant, from the MGB localizer Sound vs Silence contrast. These masks were then used to define each participant’s tonotopy with the tonotopy localizer.
 
-## Tonotopy localizer
+#### Tonotopy localizer
 
 Each voxel within each participant’s left and right MGB and IC localizer mask was labeled according to the frequency bin to which it responded strongest, that is which had the highest parameter estimate (Moerel et al., 2015). Thus, voxels would have values from 1 to 10 corresponding to the frequency bin that they best represented. This resulted in a map of frequency distributions from low to high frequencies in the left and right MGB for each participant. To create masks at the group level, these tonotopic maps were registered to MNI space using ANTs and averaged across participants.
 
-To evaluate the tonotopic representations in the MGB and IC in a similar way as Moerel et al. (2015), we visually inspected the direction which showed the strongest tonotopy. This was a dorsal-lateral to ventral-medial gradient that was most visible in a sagittal view. We thus rotated and resliced the individual maps around the z-axis by 90°, which placed the sagittal view in the x-y plane. In this plane we calculated gradient directions in 10 adjacent slices, ensuring a representative coverage of the tonotopic pattern. A cut at 90° captured both low and high frequency areas. Histograms in 5° steps were calculated for each slice. The histograms of the gradients were then averaged first over slices per participant, followed by an average over participants. Based on the atlas by Morel et al. (1997) and findings of MGB subdivisions in awake primates (Bartlett and Wang, 2011) we parcellated the resulting frequency gradients as distinct regions. Voxels that represented the highest frequency were chosen as the boundary within each slice. Voxels above this boundary corresponded to one region, and those below this boundary to the other region. The regions were drawn in each slice using ITKSnap (v. 3.6.0; Yushkevich et al., 2006). Volume size and center of mass (COM) for each gradient are listed in Table 1.
+To evaluate the tonotopic representations in the MGB and IC in a similar way as Moerel et al. (2015), we visually inspected the direction which showed the strongest tonotopy. This was a dorsal-lateral to ventral-medial gradient that was most visible in a sagittal view. We thus rotated and resliced the individual maps around the z-axis by $90°$, which placed the sagittal view in the x-y plane. In this plane we calculated gradient directions in 10 adjacent slices, ensuring a representative coverage of the tonotopic pattern. A cut at $90°$ captured both low and high frequency areas. Histograms in 5° steps were calculated for each slice. The histograms of the gradients were then averaged first over slices per participant, followed by an average over participants. Based on the atlas by Morel et al. (1997) and findings of MGB subdivisions in awake primates (Bartlett and Wang, 2011) we parcellated the resulting frequency gradients as distinct regions. Voxels that represented the highest frequency were chosen as the boundary within each slice. Voxels above this boundary corresponded to one region, and those below this boundary to the other region. The regions were drawn in each slice using ITKSnap (v. 3.6.0; Yushkevich et al., 2006). Volume size and center of mass (COM) for each gradient are listed in Table 1.
 
-For the IC, we created functional masks of IC responses from the MGB localizer experiment (Sound vs Silence, uncorrected p<0.05) and constrained these to the anatomical volumes of the IC. Frequency distribution maps were calculated per participant in MNI space and averaged. Gradient directions were calculated from the mean tonotopy maps in three different slices. Histograms were then averaged and plotted. As the IC was not part of the main objective of this manuscript, we report it in the Supplementary file 1 and Figure 3—figure supplement 1.
+For the IC, we created functional masks of IC responses from the MGB localizer experiment (Sound vs Silence, uncorrected $p<0.05$) and constrained these to the anatomical volumes of the IC. Frequency distribution maps were calculated per participant in MNI space and averaged. Gradient directions were calculated from the mean tonotopy maps in three different slices. Histograms were then averaged and plotted. As the IC was not part of the main objective of this manuscript, we report it in the Supplementary file 1 and Figure 3—figure supplement 1.
 
 Unthresholded t-maps of contrasts of interest, tonotopy maps of the MGB and IC, as well as vMGB masks are available on neurovault (https://neurovault.org/collections/4785/).
 
-## Significance testing
+### Significance testing
 
-We used small volume corrections (SVC) to test for significant voxels for the contrast speech vs speaker task as well as the correlation of speech vs speaker task with the behavioral proportion correct scores in the speech task (significance defined as p<0.05 FWE corrected for the region of interest). We tested bilaterally using the vMGB masks described above for the first hypothesis (main effect of task) and left vMGB for the second hypothesis (correlation between speech recognition performance and main effect of task) motivated by findings in previous studies (von Kriegstein et al., 2008a; Díaz et al., 2012).
+We used small volume corrections (SVC) to test for significant voxels for the contrast speech vs speaker task as well as the correlation of speech vs speaker task with the behavioral proportion correct scores in the speech task (significance defined as $p<0.05$ FWE corrected for the region of interest). We tested bilaterally using the vMGB masks described above for the first hypothesis (main effect of task) and left vMGB for the second hypothesis (correlation between speech recognition performance and main effect of task) motivated by findings in previous studies (von Kriegstein et al., 2008a; Díaz et al., 2012).

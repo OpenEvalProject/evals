@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/033n9gh91 Institute for Chemistry and Biology of the Marine Environment [ICBM], Carl von Ossietzky University of Oldenburg Oldenburg Germany
-2. https://ror.org/02tyrky19 Department of Zoology, School of Natural Sciences, Trinity College Dublin Dublin Ireland
+1. Institute for Chemistry and Biology of the Marine Environment [ICBM], Carl von Ossietzky University of Oldenburg Oldenburg Germany ([ROR:033n9gh91](https://ror.org/033n9gh91))
+2. Department of Zoology, School of Natural Sciences, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
 ## Abstract
 
-The dynamics of host-parasite interactions are highly temperature-dependent and may be modified by increasing frequency and intensity of climate-driven heat events. Here, we show that altered patterns of temperature variance lead to an almost order-of-magnitude shift in thermal performance of host and pathogen life-history traits over and above the effects of mean temperature and, moreover, that different temperature regimes affect these traits differently. We found that diurnal fluctuations of ±3°C lowered infection rates and reduced spore burden compared to constant temperatures in our focal host Daphnia magna exposed to the microsporidium parasite Ordospora colligata . In contrast, a 3-day heatwave (+6°C) did not affect infection rates, but increased spore burden (relative to constant temperatures with the same mean) at 16°C, while reducing burden at higher temperatures. We conclude that changing patterns of climate variation, superimposed on shifts in mean temperatures due to global warming, may have profound and unanticipated effects on disease dynamics.
+The dynamics of host-parasite interactions are highly temperature-dependent and may be modified by increasing frequency and intensity of climate-driven heat events. Here, we show that altered patterns of temperature variance lead to an almost order-of-magnitude shift in thermal performance of host and pathogen life-history traits over and above the effects of mean temperature and, moreover, that different temperature regimes affect these traits differently. We found that diurnal fluctuations of ±3°C lowered infection rates and reduced spore burden compared to constant temperatures in our focal host Daphnia magna exposed to the microsporidium parasite Ordospora colligata. In contrast, a 3-day heatwave (+6°C) did not affect infection rates, but increased spore burden (relative to constant temperatures with the same mean) at 16°C, while reducing burden at higher temperatures. We conclude that changing patterns of climate variation, superimposed on shifts in mean temperatures due to global warming, may have profound and unanticipated effects on disease dynamics.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Host fitness was generally reduced when exposed to Ordospora spores or when expe
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/72861/elife-72861-fig3-v1.jpg)
 
-**Figure 3.:** Daphnia exposed to Ordospora and controls that were exposed to a placebo.Daphnia exposed to the parasite (dotted lines and filled symbols) produce less offspring than control individuals (solid lines and open symbols). Lines are the fitted Beta Functions for the different temperature regimes (constant temperature regime in blue, the diurnally fluctuating regime in yellow, and the heatwave in red). 95% confidence intervals of maximum reproductive output (F) are shown to the right, and the temperature of this optimum (mTopt) is shown above the x-axis. Significant differences in parameter estimates of the Beta Function are highlighted with an asterisk. Estimates for minimum and maximum temperatures are not displayed as we used restrictive priors. Error bars on data points indicate standard error. Beta Function parameter estimates displayed in this figure can be found in Supplementary file 4.
+**Figure 3.:** Daphnia exposed to the parasite (dotted lines and filled symbols) produce less offspring than control individuals (solid lines and open symbols). Lines are the fitted Beta Functions for the different temperature regimes (constant temperature regime in blue, the diurnally fluctuating regime in yellow, and the heatwave in red). 95% confidence intervals of maximum reproductive output (Fm) are shown to the right, and the temperature of this optimum (Topt) is shown above the x-axis. Significant differences in parameter estimates of the Beta Function are highlighted with an asterisk. Estimates for minimum and maximum temperatures are not displayed as we used restrictive priors. Error bars on data points indicate standard error. Beta Function parameter estimates displayed in this figure can be found in Supplementary file 4.
 
 ## Discussion
 
@@ -66,11 +66,11 @@ Our study shows that temperature variation alters the outcome of host-pathogen i
 
 ## Materials and methods
 
-## Study system
+### Study system
 
 The crustacean D. magna plays a key role in ecosystem functioning. Daphnia are filter feeders that consume planktonic algae and other microorganisms, thus promoting water transparency and helping to prevent algal blooms (Miner et al., 2012). They are a key food source for planktivorous fish, constitute a major part in the food web (Ebert, 2005), and play a key role in nutrient cycling (Elser et al., 2000). Across its range, Daphnia is affected by a broad variety of pathogens. Here, we use O. colligata, a widely distributed microsporidium parasite that is only known to infect D. magna. This gut parasite has been recently used as a model to understand how changes in mean temperatures under global warming may affect host-parasite systems (Kirk et al., 2020). However, the effects of temperature variance remain unstudied. Daphnia become infected when they accidentally ingest water borne spores of Ordospora while filter feeding. After successful establishment, spores divide intracellularly in the gut epithelium of D. magna (Larsson et al., 1997) until they form a cluster of 32–64 spores. Spores are then released either to the environment or go on to infecting neighboring cells after O. colligata lyses the cell.
 
-## Experimental set-up
+### Experimental set-up
 
 In the laboratory, we established water baths with temperatures ranging from 10°C to 28°C. Each bath was regulated with a temperature controller (Inkbird ITC-308) that interfaced with cooling (Hailea HC300A) and heating (EHEIM JÄGER 300 W) units. Pumps (Micro-Jet Oxy) were used to create constant flow, which ensured equal temperature distribution within the water baths. Each bath held up to 99 microcosms and was kept under natural lighting conditions (16:8 light:dark). Temperature and light intensity were recorded using HOBO loggers housed in spare microcosms. Each microcosm was filled with up to 80 ml of Artificial Daphnia Medium (ADaM, modified to use only 5% of the recommended selenium dioxide concentration; Klüttgen et al., 1994).
 
@@ -78,13 +78,17 @@ To test for the effect of changing both mean temperature and patterns of tempera
 
 The Daphnia genotype (clone FI-OER-3-3), we used was previously isolated from a rock pool at Tvärminne archipelago, Finland and propagated clonally in the laboratory. To generate sufficient animals for the experiment, we grew Daphnia asexually under standardized conditions for 3 weeks. Animals were raised in small populations (20 400 ml microcosms, 12 animals per microcosm) under continuous light at 20°C. The medium (ADaM) was replaced at least twice a week and Daphnia were fed ad libitum with Scenedesmus algae (Scenedesmus sp.), which was grown in batch cultures at 20°C in WC Medium (Kilham et al., 1998) under nutrient- and light-saturated conditions. The experiment was initiated by collecting a cohort of female juveniles (~600 females up to 72 hr old) from the small population microcosms. Individual juveniles were then randomly transferred into 100 ml glass microcosms filled with 40 ml ADaM. These glass microcosms were placed into their assigned water baths and, after an acclimation period of 24 hr, the animals were exposed to the parasite by adding 1 ml medium containing ~10,000 spores of O. colligata. This spore solution was prepared by crushing 3560 infected D. magna individuals with known average burden (determined by using phase-contrast microscopy on a sub-sample), using mortar and pestle and diluting down the resulting spore slurry. The unexposed controls received a placebo exposure consisting of crushed uninfected animals diluted in medium. Animals were exposed either to the parasite or placebo for 6 days and were transferred subsequently to clean microcosms with fresh medium (80 ml of ADaM) twice a week until the end of the experiment. Animals were fed four times a week with an increasing amount of algae to accommodate the increased food demand of the growing animals (from 4 million algae ml–1 at the start of the experiment to 10 million algae ml–1 by day 10, which was maintained until the end of the experiment). Between transfers, evaporation of the medium was offset by refilling microcosms daily with 50-50 ADaM-distilled water.
 
-## Measurements of host and parasite life-history traits
+### Measurements of host and parasite life-history traits
 
 To obtain fitness estimates for the host, we counted the offspring produced and checked mortality of all animals daily. Infection status and spore burden (i.e., the number of spores inside the host) were assessed upon death by dissecting individuals and counting the number of spore clusters (each cluster holds up to 64 parasite spores) in the gut with phase-contrast microscopy (400× magnification). Any animals that remained alive until the end of the experiment (day 27) were terminated within 3 days, dissected and their infection status and burden determined without the observer being aware of the identity of the sample. Because infections cannot be diagnosed accurately in early infection stages, animals that died before day 11 were not considered in analyses. Any male Daphnia that were misidentified as female at the start of the experiment were also excluded. In addition, to prevent potentially confounding effects of animals that died early (where the parasite had less time to grow) as having lower spore burden, we included only animals from the last day of the experiment in the analysis of spore burden. Note that, to facilitate good estimates of spore burden, we terminated most hosts before natural death occurred, which limits our ability to assess the effects of virulence (host mortality, reduced fecundity).
 
-## Data analyses
+### Data analyses
 
-Analyses were performed using R version 3.6.1 (R Development Core Team, 2018) interfacing with JAGS (Lunn et al., 2009; Plummer et al., 2006). Datafiles and code are available at https://github.com/charlyknz/HostParasite (Kunze, 2022; copy archived at swh:1:rev:5f2604fe866f547dd80d5a77f99ef8887b9f10e1). A Beta Function was fitted to each of our different fitness estimates (i.e., host fecundity, parasite infectivity, and burden) for each of the three temperature regimes, as:f=FmTmax-TTmax-ToptT-TminTopt-TminTopt-TminTmax-Topt
+Analyses were performed using R version 3.6.1 (R Development Core Team, 2018) interfacing with JAGS (Lunn et al., 2009; Plummer et al., 2006). Datafiles and code are available at https://github.com/charlyknz/HostParasite (Kunze, 2022; copy archived at swh:1:rev:5f2604fe866f547dd80d5a77f99ef8887b9f10e1). A Beta Function was fitted to each of our different fitness estimates (i.e., host fecundity, parasite infectivity, and burden) for each of the three temperature regimes, as:
+
+$$
+f=F_{m}\frac{T_{max}-T}{T_{max}-T_{opt}}\frac{T-T_{min}}{T_{opt}-T_{min}}^{\frac{T_{opt}-T_{min}}{T_{max}-T_{opt}}}
+$$
 
 where f is fitness at temperature T, Fm is estimated fitness at optimal performance for the fitted host or parasite trait, Topt is temperature at optimal performance, and Tmin and Tmax are, respectively, the critical minimum and maximum temperatures over which fitness of the trait becomes unviable. This non-linear function has been shown to capture thermal performance accurately (Niehaus et al., 2012) and has the advantage that all four parameters in the equation have clear biological meaning.
 

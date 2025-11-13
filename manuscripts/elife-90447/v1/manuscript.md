@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Department of Neuroscience and Developmental Biology, University of Vienna Vienna Austria
-2. https://ror.org/03prydq77 Research Platform Single Cell Regulation of Stem Cells, University of Vienna Vienna Austria
-3. https://ror.org/03prydq77 Max Perutz Labs, University of Vienna Vienna Austria
+1. Department of Neuroscience and Developmental Biology, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+2. Research Platform Single Cell Regulation of Stem Cells, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+3. Max Perutz Labs, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 

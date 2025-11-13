@@ -49,13 +49,23 @@ We performed a systematic search to identify interventional studies in rodent mo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig1-v2.jpg)
 
-**Figure 1.:** Figure 1—source data 1.Details and raw data of all studies included in the meta-analysis. This data can be used with the R code found in Supplementary Methods to run all analyses.
-
 Hepatic triglyceride content was the most widely reported measure: 474/603 (79%) cohorts. Steatosis grade was the most frequently reported histological measure (174/603 (29%) cohorts), compared to: NAS 144/603 (24%), lobular inflammation 143/603 (24%), ballooning 106/603 (18%), and fibrosis in 58/603 (9.6%) cohorts. Portal inflammation was only reported in 8 cohorts from three studies, therefore meta-analysis was not possible for this outcome.
 
-## Meta-analysis of hepatic triglyceride content
+### Meta-analysis of hepatic triglyceride content
 
 We used random-effects meta-analysis to estimate the mean difference (MD) in hepatic triglyceride (TG) content between intervention and control groups (Figure 2A). The overall mean difference in hepatic TG content was −29.9% (95% CI −33%, −27%) with considerable between-study heterogeneity (I2 = 90% (95% CI 89%, 90%), PQ <1×10−300). Exclusion of outliers minimally affected the overall estimate (−30.2% (95% CI −33%, −27%), Figure 2—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig2-v2.jpg)
+
+**Figure 2.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. Results are expressed as a percentage difference relative to control (/placebo). The total number of animals per subgroup is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference; LXR, Liver X receptor; PDE, Phosphodiesterase; PPAR, Peroxisome proliferator-activated receptor; SCD-1, Stearoyl–CoA desaturase-1; SGLT2, Sodium-glucose co-transporter-2; TUDCA, Tauroursodeoxycholic acid. (B) Meta-regression bubble plot using (log) difference in weight between intervention and control animals, after removal of studies using models that induce weight loss. (C) Meta-regression bubble plot using (log) difference in fasting insulin between intervention and control animals, after removal of studies using models that induce weight loss.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. Results are expressed as a percentage change relative to control (/placebo). Total animals is the sum of control and interventional animals for each subgroup. ARB, angiotensin receptor blocker; CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference; LXR, Liver X receptor; PDE, Phosphodiesterase; PPAR, Peroxisome proliferator-activated receptor; PUFA; omega-3 polyunsaturated fatty acid; SCD-1, Stearoyl–CoA desaturase-1; SGLT2, Sodium-glucose co-transporter-2; TUDCA, Tauroursodeoxycholic acid.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Funnel plot illustrating study distribution (publication) bias in 428 original studies (solid grey circles) with 125 added studies (from trim-and-fill). The statistical significance associated with each study is illustrated with the coloured background. Egger’s test p-value indicates the likelihood that the original studies came from a symmetrical distribution. (B) Baujat plot showing individual study contributions to heterogeneity in the meta-analysis. The studies with highest contribution were excluded in a sensitivity analysis.
 
 For comparison, a relative decline of liver fat by ≥30%, as measured by magnetic resonance imaging proton-density fat fraction (MRI-PDFF), has been determined as the reduction required to achieve histological response in humans with NAFLD (Jayakumar et al., 2019; Loomba et al., 2020; Stine et al., 2020).
 
@@ -69,41 +79,177 @@ We then performed univariable meta-regression to investigate which variables acc
 
 When these study characteristics were combined for multivariable meta-regression using an unbiased method, 10 variables were predicted to substantially contribute to the variation in hepatic TG difference (Table 1). In final model 1, weight difference was the only variable to be significantly associated with MD in hepatic TG (p=0.003). Including drug used in model two was able to account for all heterogeneity in results (Figure 2—source data 1) in a small subset of cohorts (k = 42), though neither of these models were significantly predictive of outcome following permutation tests (p-value*>0.05).
 
+**Table 1.**
+ Summary of findings across all outcomes and multivariable meta-regression analyses.Six separate meta-analyses were performed with subgrouping by classes of drug. Drug classes associated with outcome showed a significant reduction in the severity of NAFLD for that outcome, defined by the upper limit of their 95% confidence interval (CI). Differential efficacy refers to drug classes where their 95% CI did not overlap with that of the overall estimate. Multivariable meta-regression was performed using two models, where there was sufficient data: model one did not include drug class, model two included drug. For each analysis and model, the top variables are those identified to be substantially account for heterogeneity using multiple-variable inference. K refers to the number of cohorts included in each analysis. P-val* for each model refers to the overall model p-value (test of moderators) obtained after running multiple permutation tests, where p<0.1 should be considered indicative of an effect. ARB, angiotensin receptor blocker; DPP4-i, Dipeptidyl peptidase-4 inhibitor; EPA, eicosapentaenoic acid; FXR, Farnesoid X receptor; GLP-1, glucagon-like peptide-1; PPAR, peroxisome proliferator-activated receptor; PUFA; omega-3 polyunsaturated fatty acid; SCD1-i, stearoyl–CoA desaturase-1 inhibitor; SGLT2-i, sodium-glucose co-transporter-2 inhibitor; TUDCA, tauroursodeoxycholic acid.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Meta-analysis with subgroup by drug class</th>
+      <th colspan="2">Multi-variable meta-regression – model 1</th>
+      <th colspan="2">Multi-variable meta-regression – model 2</th>
+    </tr>
+    <tr>
+      <th>Outcome</th>
+      <th>Drug classes associated with outcome</th>
+      <th>Differential efficacy</th>
+      <th>Top predictors</th>
+      <th>Final model</th>
+      <th>Top predictors</th>
+      <th>Final model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hepatic TG</td>
+      <td>22/28 (79%): SCD1-i, PUFA-mix, Fibrates, Bifidobacterium sp., DPP4-i, Curcumin, EPA, Silymarin, TUDCA, Polyphenol, GLP1 agonist, ARB, FXR agonist, SGLT2-i, PPARα-δ agonist, Cholesterol Absorption Inhibitor, Berberine, Statin, Biguanide, Lactobacillus sp., Vitamin E</td>
+      <td>Greater reduction: Fibrates, PUFA-mix Smaller reduction: Thiazolidinediones, Vitamin E</td>
+      <td>Weight, Insulin, Fat (%kcal), Model, Age at start, Background, Glucose, Sex, Duration, Quality score (k = 333)</td>
+      <td>R2 = 48.9%, P-val*=0.22 K = 67</td>
+      <td>Insulin, Fat (%kcal), Weight, Glucose, Age at start, Sex, Drug (k = 222)</td>
+      <td>R2 = 100%, P-val*=0.26 K = 42</td>
+    </tr>
+    <tr>
+      <td>Steatosis</td>
+      <td>9/22, (41%): Fibrates, GLP-1 agonist, DPP4-i, Probiotic (mix), Curcumin, Thiazolidinediones, Lactobacillus sp., Statin, ARB</td>
+      <td>Greater reduction: Fibrates</td>
+      <td>Glucose, Fat (%kcal), Sex (k = 94)</td>
+      <td>R2 = 91.8%, P-val*=0.03 K = 19</td>
+      <td>Fat (%kcal), Sex, Weight (k = 62)</td>
+      <td>R2 = 60.3%, P-val*=0.098 K = 27</td>
+    </tr>
+    <tr>
+      <td>Lobular inflammation</td>
+      <td>9/16 (56%): Fibrates, Probiotic (mix), Statin, ARB, FXR agonist, DPP4-i, Biguanide, Thiazolidinediones, Vitamin D</td>
+      <td>-</td>
+      <td>Glucose, Fat (%kcal) (k = 81)</td>
+      <td>R2 = 49.8%, P-val*=0.43 K = 19</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ballooning</td>
+      <td>8/14 (57%): Fibrates, Biguanide, Thiazolidinediones, Vitamin D, DPP4-i, ARB, FXR agonist, Probiotic (mix)</td>
+      <td>Greater reduction: Fibrates Smaller reduction: Probiotic (mix)</td>
+      <td>Glucose (k = 56)</td>
+      <td>R2 = 8.1%, P-val*=0.38 K = 26</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>NAFLD Activity Score</td>
+      <td>10/14 (71%):Fibrates, DPP4-i, GLP1 agonist, Probiotic (mix), Vitamin D, Silymarin, Biguanide, Thiazolidinediones, FXR agonist, ARB</td>
+      <td>Greater reduction: Fibrates</td>
+      <td>Glucose, Fat (%kcal), Age at start, Weight (k = 89)</td>
+      <td>R2 = 78.0%, P-val*=0.03 K = 19</td>
+      <td>Fat (%kcal), Weight, Background, Age at start, Sex (k = 58)</td>
+      <td>R2 = 63.1%, P-val*=0.001 K = 30</td>
+    </tr>
+    <tr>
+      <td>Fibrosis</td>
+      <td>2/5 (40%): FXR agonist, Statin</td>
+      <td>-</td>
+      <td>Model, Weight, Glucose, Fat (%kcal), Duration, Age at start (k = 58)</td>
+      <td>R2 = 100%, P-val*=0.67 K = 16</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 Given that meta-regression implicated weight loss and improved insulin sensitivity in results, we explored how these traits were distributed by drug class (Figure 3A). Including all available data, we observed that 12/33 (36%) drug classes showed a significant reduction in weight (i.e. the upper limit of their 95% CI was below 1, Figure 3—source data 1). 17/32 (53%) and 15/25 (60%) of drug classes were associated with reductions in fasting glucose (Figure 3B) and insulin (Figure 3—figure supplement 1A), respectively. There was a positive correlation between weight, glucose, and insulin differences (Figure 3—figure supplement 1B). In addition, there was a negative correlation between weight difference and study duration or the age of mice at the end of intervention, that is longer studies (or those in older mice) were associated with greater weight loss in interventional groups.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig3-v2.jpg)
+
+**Figure 3.:** (A) Box plot illustrating the difference in weight in interventional animals, expressed as a decimal of the weight of the control animals. Raw data points are plotted for each drug class. (B) Box plot for difference in fasting glucose in interventional animals, expressed as a decimal of the weight of the control animals. Raw data points are plotted for each drug class.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Box plot illustrating the difference in fasting insulin in interventional animals, expressed as a decimal of the weight of the control animals. Raw data points are plotted for each drug class. (B) Plot of Pearson correlation co-efficients (encoded by colour, where red = 1, blue = −1) for continuous traits associated with each cohort. Traits have been log-transformed prior to analysis. Stars indicate p-value associated with each correlation: ***p<0.001, **p<0.01, *p<0.05.
 
 We then explored whether these results showed study distribution (publication) bias or were heavily influenced by individual outliers (Figure 2—figure supplement 2). There was an uneven distribution of studies with a bias towards a reduction in hepatic TG, which was supported by Egger’s test (β = -.83 [95% CI −1.3, −0.4], p=2.2×10−4). Using the trim-and-fill method to account for this bias, we estimated that the true overall mean difference in hepatic TG would be −18.7% (95% CI −21%, −16%), over a third smaller than the original estimate.
 
-## Meta-analysis of histological steatosis grade
+### Meta-analysis of histological steatosis grade
 
 Whilst hepatic TG was the most widely reported measure, histological assessment of disease is considered the gold standard for patients with NAFLD. Therefore, we performed a meta-analysis of MD in steatosis grade (Figure 4A). The overall MD in steatosis was −0.7 (95% CI −0.8, −0.5) again with considerable heterogeneity (I2 = 94% (95% CI 93%, 95%), PQ <1×10−300). Compared to hepatic TG, fewer drug classes were identified to be associated with a significant reduction in steatosis grade (8/22, 36%), though again fibrates showed the largest effect size. Similar results were obtained when performing subgrouping by individual drugs, rather than classes (Figure 4—source data 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig4-v2.jpg)
+
+**Figure 4.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. The total number of animals is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference; TUDCA, Tauroursodeoxycholic acid. (B) Meta-regression bubble plot using (log) difference in fasting glucose between interventional and control animals, after removal of studies using models that induce weight loss. (C) Meta-regression bubble plot using (log) difference in fasting insulin between interventional and control animals, after removal of studies using models that induce weight loss.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. Total animals is the sum of control and interventional animals for each subgroup. ARB, angiotensin receptor blocker; CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; MD, mean difference; TUDCA, tauroursodeoxycholic acid.
+
 Univariable meta-regression found a marked association between difference in plasma glucose levels and MD in steatosis grade (Figure 4B, adj R221%, p=2.4×10−6). Similar associations were observed for difference in weight and insulin levels, particularly after removal of weight-loss inducing models (Figure 4C). In addition, the sex of animals (adj R27%, p=0.01) and genetic background were associated with MD in steatosis grade (Figure 4—source data 1). When factors were combined in multivariable meta-regression (Table 1), a model using sex, fasting glucose difference, and fat (%kcal) in diet accounted for 92% of variability in a small subset of cohorts (k = 19), which remained robust after a multiple permutation test (p-value*=0.03).
 
-## Meta-analysis of lobular inflammation
+### Meta-analysis of lobular inflammation
 
 9/16 (56%) drug classes were associated with a reduction in MD of lobular inflammation (Figure 5A). Again there was considerable heterogeneity within drug classes and when subgrouping by individual drugs (Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig5-v2.jpg)
+
+**Figure 5.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. The total number of animals is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference. (B) Meta-regression bubble plot using (log) difference in weight between interventional and control animals, after removal of studies using models that induce weight loss. (C) Meta-regression bubble plot using (log) fat (%kcal) in diet for each cohort.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. Total animals is the sum of control and interventional animals for each subgroup. ARB, angiotensin receptor blocker; CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; MD, mean difference.
+
 Univariable meta-regression identified an association with difference in weight (Figure 5B, adj R215%, p=4.0×10−4), as had been observed for steatosis grade and hepatic TG content. In addition, an association was found for fat %kcal in diet and MD in lobular inflammation: a higher %kcal fat in diet was associated with a smaller difference in lobular inflammation (Figure 5C, adj R221%, p=1.7×10−5), indicating that study design was associated with size of treatment response. The bubble plot of fat content in diet also illustrated that the majority of studies reporting fat content in diet used either 40–45% or 60% kcal fat (Figure 5C).
 
-## Meta-analysis of hepatocellular ballooning
+### Meta-analysis of hepatocellular ballooning
 
 8/14 (57%) drug classes were associated with a reduction in hepatocellular ballooning (Figure 6A). Fibrates showed greater reduction in ballooning than other studied drug classes, however this could not be replicated at an individual drug level (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig6-v2.jpg)
+
+**Figure 6.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. The total number of animals is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference; TUDCA, tauroursodeoxycholic acid. (B) Meta-regression bubble plot using (log) fat (%kcal) in diet for each cohort. (C) Meta-regression bubble plot using (log) fructose/glucose (% weight) in diet for each cohort. (D) Meta-regression bubble plot using (log) duration of intervention (in weeks) for each cohort.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. Total animals is the sum of control and interventional animals for each subgroup. ARB, angiotensin receptor blocker; CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; MD, mean difference; TUDCA, tauroursodeoxycholic acid.
+
 Similar to previous analyses, difference in fasting glucose (adj R217%, p=9.0×10−4) and weight (adj R28%, p=0.01) were associated with the magnitude of treatment effect. Study design characteristics also influenced difference in ballooning, namely percentage of fat in diet (Figure 6B, greater reduction in ballooning where a lower %kcal was used) and percentage of fructose/glucose in diet (Figure 6C); however, there were only 12 studies contributing to this analysis. In addition, longer studies were associated with larger reductions in ballooning severity (Figure 6D).
 
-## Meta-analysis of NAFLD activity score (NAS)
+### Meta-analysis of NAFLD activity score (NAS)
 
 The NAFLD activity score is a composite of steatosis, lobular inflammation, and ballooning scores. The results largely reflected those observed for the previous three meta-analyses (Figure 7A). 10/14 (71%) drug classes were associated with a significant reduction in NAS, with fibrates being the most beneficial drug class. Meta-regression found associations for difference in weight (Figure 7B) and glucose (Figure 7C) to account for 11% and 12% of heterogeneity in results, respectively.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig7-v2.jpg)
+
+**Figure 7.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. k represents the number of cohorts in each subgroup. The total number of animals is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference. (B) Meta-regression bubble plot using (log) difference in weight between interventional and control animals, after removal of studies using models that induce weight loss. (C) Meta-regression bubble plot using (log) difference in glucose between interventional and control animals, after removal of studies using models that induce weight loss.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. k represents the number of cohorts in each subgroup. Total animals is the sum of control and interventional animals for each subgroup. ARB, angiotensin receptor blocker; CI, confidence interval; DPP4, Dipeptidyl peptidase-4; FXR, Farnesoid X receptor; MD, mean difference.
+
 multiple-variable meta-regression models were able to account for more than 60% of variation in results (in a small subset of cohorts) using genetic background, fat in diet, age at start of intervention, weight and glucose difference, but without requiring drug or drug class (Table 1).
 
-## Meta-analysis of fibrosis stage
+### Meta-analysis of fibrosis stage
 
 Fibrosis stage is the histological feature that most strongly correlates with liver-related outcomes in humans with NAFLD (Angulo et al., 2015; Ekstedt et al., 2015), and was therefore pre-specified as the primary outcome measure for this study. However, it was reported in only 58/603 (9.6%) of cohorts. Only FXR agonists and statins (2/5, 40% drug classes) were associated with a significant reduction in fibrosis stage (Figure 8A), where the overall mean difference was −0.5 (95% CI −0.6, −0.3) stages. Meta-regression replicated previous findings for other traits, showing that difference in weight was associated with reduction in fibrosis stage (Figure 8B, adj R227%, p=0.004).
 
-## Bias analyses of histological outcomes and study quality
+![Figure 8.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig8-v2.jpg)
+
+**Figure 8.:** (A) Forest plot with subgrouping by class of drug. Individual studies have been hidden and only subgroup summaries are illustrated. The total number of animals is calculated from the sum of control and interventional animals for each subgroup. CI, confidence interval; FXR, Farnesoid X receptor; GLP-1, Glucagon-like peptide-1; MD, mean difference. (B) Meta-regression bubble plot using (log) difference in weight between interventional and control animals, after removal of studies using models that induce weight loss.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Forest plot with subgrouping by individual drug. Individual studies have been hidden and only subgroup summaries are illustrated. Total animals is the sum of control and interventional animals for each subgroup. CI, confidence interval; FXR, Farnesoid X receptor; MD, mean difference.
+
+### Bias analyses of histological outcomes and study quality
 
 Funnel plots for steatosis grade, lobular inflammation, fibrosis stage, and NAS were asymmetric (Figure 9), supported by the results of Egger’s test for each analysis.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig9-v2.jpg)
+
+**Figure 9.:** (A) Funnel plot illustrating study distribution (publication) bias in 145 original studies (solid grey circles) with 54 added studies (from trim-and-fill) for meta-analysis of steatosis grade. The statistical significance associated with each study is illustrated with the coloured background. Egger’s test p-value indicates the likelihood that the original studies came from a symmetrical distribution. (B) Funnel plot for lobular inflammation meta-analysis with 103 original studies and 42 added studies. (C) Funnel plot for fibrosis stage meta-analysis with 34 original studies and 14 added studies. (D) Funnel plot for NAS meta-analysis with 106 original studies and 43 added studies.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56573/elife-56573-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Distribution of overall quality scores from a four-point scale, composed of the use of a power calculation, use of blinding, randomisation, and referring to a predefined protocol, with 1-point awarded for presence of each factor. (B) Proportion of cohorts achieving each factor is shown in B.
 
 Using the trim-and-fill method to account for these differences substantially altered the overall effect estimates: for steatosis grade, there was an 79% reduction in estimated effect size to −0.14 (95% −0.3, +.01); for lobular inflammation, a 70% reduction in effect size to −0.18 (95% −0.32, −0.05); for fibrosis, 72% reduction to −0.12 (95% −0.33, +.08); and NAS, 55% reduction in effect size to −0.82 (95% −0.1.1, −0.5).
 
@@ -111,7 +257,7 @@ We used a four-item scale to estimate study quality (Figure 9—figure supplemen
 
 Similar results were obtained for histological steatosis grade: 70/174 (40%) reported results consistent with >80% power but only 27/174 (16%) had a group size large enough to be expected to reach 80% power.
 
-## Summary of findings across traits
+### Summary of findings across traits
 
 The majority of drug classes (or individual drugs) were found to show a significant reduction in severity of NAFLD. Fibrates (for which most data were available for fenofibrate) demonstrated the greatest improvement in several outcome measures (Table 1).
 
@@ -147,37 +293,68 @@ The main strength of this work is the number of included studies, interventions,
 
 There is a wide range of other variables that were not considered in this analysis. Some were unreported variables, such as technique of animal handling. A further factor of potential relevance is the bacterial status of rodents, which is known to affect liver phenotypes (Kaden-Volynets et al., 2019), potentially via intestinal dysbiosis (Balmer et al., 2014; Mazagova et al., 2015). Furthermore, many studies did not report certain variables, for example genetic background of animals was not reported in 5.3% (32/603), which reduced the number of studies included in meta-regression analyses. This was most obvious for multiple-variable meta-regression, where some final models included fewer that 20 data points. However this meta-analysis has included a large number of articles, which gives considerable confidence in the findings we have replicated across several outcome measures.
 
-## Conclusion
+### Conclusion
 
 Multiple drug classes improve NAFLD in rodents, however these results may be confounded by weight loss and alleviation of insulin resistance not observed in humans treated with the same drugs. Publication bias over-estimates these effect sizes by at least a third and a variety of other study design characteristics also influence treatment response. Therefore, standardisation of practices is needed in preclinical studies of metabolism to improve the translatability and reproducibility of findings.
 
 ## Materials and methods
 
-## Review protocol and search strategy
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R [base], dmetar (RRID:SCR_019054), metaphor (RRID:SCR_003450), meta (RRID:SCR_019055)</td>
+      <td>R</td>
+      <td>R 4.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism (RRID:SCR_002798)</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism v8</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Review protocol and search strategy
 
 The systematic review protocol was prospectively registered with SyRF (Systematic Review Facility) and is available from: https://drive.google.com/file/d/0B7Z0eAxKc8ApQ0p4OG5SblRlRTA/view.
 
 PubMed via MEDLINE and EMBASE was searched for published articles of experimental rodent models of fatty liver, NAFLD, or non-alcoholic steatohepatitis (NASH). The following search term was used: (‘Non-alcoholic fatty liver disease’ OR ‘Nonalcoholic fatty liver disease’ OR ‘NAFLD’ OR ‘non-alcoholic steatohepatitis’ OR ‘nonalcoholic steatohepatitis’ OR ‘NASH’ OR ‘fatty liver’ OR ‘hepatic steatosis’) AND (‘mouse’ OR ‘animal’ OR ‘rat’ OR ‘murine’ OR ‘animal model’ OR ‘murine model’ OR ‘rodent model’ OR ‘experimental model’) NOT (‘Review’). Both databases were searched using the ‘Animal’ filters (de Vries et al., 2014; Hooijmans et al., 2010), the results combined, and duplicates eliminated. The search was completed in January 2019.
 
-## Study selection and eligibility criteria
+### Study selection and eligibility criteria
 
 Our inclusion criteria were as follows: primary research articles using mice or rats to model NAFLD (to include hepatic steatosis, NASH, and NASH-fibrosis), use of pharmacological intervention with a control (or placebo) group, and that the pharmacological intervention class (e.g. statins) had been used in Phase 2 or three trials in humans for treatment of NAFLD/NASH. Studies were excluded if: not modelling NAFLD/NASH; studies in humans or any animal other than mice and rats; reviews, comments, letters, editorials, meta-analyses, ideas; articles not in English (unless there was an available translation); studies not reporting any relevant outcome metrics (hepatic triglyceride content relative to hepatic protein (e.g. mg/mg or µM/mg), NAFLD Activity Score [Brunt et al., 2011; Kleiner et al., 2005] or any of its components), portal inflammation grade [Brunt et al., 2009], or histological fibrosis stage (0–4); and studies using a pharmacological agent class that had not been used in Phase 2/3 studies in humans for NAFLD.
 
 Abstracts and titles were screened to identify relevant studies using Rayyan (Ouzzani et al., 2016). Potentially relevant studies had their full-text extracted and were assessed against inclusion/exclusion criteria independently by two reviewers, with discrepancies settled by discussion with JPM.
 
-## Data collection
+### Data collection
 
 The variables extracted were as follows: phenotypic characteristics of animal model used (sex, diet [including percentage of fat, glucose, fructose, sucrose, and cholesterol in diet], rodent age, genetic alterations, background animal strain); drug treatment (dose, drug class, duration, age at intervention), hepatic triglyceride content and liver histology. Fructose/glucose concentration in diet was collected together as a single data point as they were frequently combined in diets. Liver histology results were extracted where the (human) NAFLD Activity Score (NAS [0–8]) and/or any of its components had been used (steatosis grade [0–3], lobular inflammation [0–3], and ballooning severity [0–2]; portal inflammation severity [0–2]); and/or histological fibrosis stage [0–4]. Studies frequently included multiple cohorts or interventional arms, which were defined as use of a different animal model of NAFLD, a different drug, or a different drug dose. Data were extracted for each cohort or interventional arm separately.
 
-## Quality assessment
+### Quality assessment
 
 Each paper was assessed in the following four areas: use of a protocol, reporting use of randomisation, reporting use of blinding, and a power calculation. ‘Use of a protocol’ assessed the article specifically referring to a protocol that was in place and prior to the start of the study. These were each given a score of 1, and each paper was assigned an overall ‘quality score’. A post-hoc power calculation was performed for each study using the means of each group and a common SD (Cohen, 1988) using the pwr (Champely, 2018) package in R. In addition, a ‘pre-test’ sample size calculation was performed using: the overall effect summary from meta-analysis, power = 80%, and p-value=0.05.
 
-## Shared control group adjustment
+### Shared control group adjustment
 
 Multiple studies used a single placebo (or control) group for several experimental arms. Where possible, the experimental arms were combined into a single experimental cohort and compared to the control group (Higgins and Green, 2011). Where this was not appropriate (e.g. interventions from different drug classes), the control group was divided evenly across interventional groups. Therefore, each control animal was included only once in analyses.
 
-## Data processing
+### Data processing
 
 Where possible, drugs were grouped into classes based upon their pharmacological mechanism of action. The majority were well-established classes of drugs: angiotensin receptor blockers, biguanides, dipeptidyl peptidase 4 (DPP4) inhibitors, fibrates, glucagon-like peptide-1 (GLP-1) agonists, statins etc. In some cases there was only a single drug represented in their class, for example: polyphenols – resveratrol, and cholesterol absorption inhibitors – ezetimibe. More novel agents fell into pharmacological classes based on mechanism that are less well established, for example: stearoyl–CoA desaturase-1 inhibitors, or PPARα/δ agonists. Other agents, particularly where the mechanism of action is unclear, were made a class of their own, for example, whilst eicosapentaenoic acid and docosahexaenoic acid are both omega-3 polyunsaturated fatty acids (PUFA), their mechanism is not clear and therefore were classed individually, with other mixtures of PUFA being classed separately. Similarly, berberine and silymarin were classed individually. Where individual bacterial strains were used for probiotics they were classed accordingly (e.g. Lactobacillus sp.), but where a mixture of strains were used a ‘Probiotic (mix)’ category was allocated. For analyses by individual drugs, all agents were separated, though for some drugs (e.g. berberine) this was unchanged from their ‘drug class’ grouping.
 
@@ -187,7 +364,7 @@ Weight, fasting glucose, and fasting insulin of interventional groups were expre
 
 All continuous variables were examined for normality using histograms and, where distributions were skewed, variables were logarithmically transformed prior to use in regression analyses.
 
-## Statistical analysis – meta-analysis
+### Statistical analysis – meta-analysis
 
 Primary outcome was the mean difference in histological fibrosis stage in the interventional group compared to control/placebo. Secondary outcomes were histological features: hepatic triglyceride (TG) content, steatosis grade, lobular inflammation, ballooning, and overall NAS. There was insufficient data to perform meta-analysis for portal inflammation severity.
 
@@ -199,7 +376,7 @@ Heterogeneity within drug classes (or individual drugs) and across the whole dat
 
 Study distribution (‘publication’) bias was assessed using funnel plot with Egger’s test. Given evidence of study distribution bias, Duval and Tweedie’s trim-and-fill procedure (Duval and Tweedie, 2000) was performed to estimate the impact of bias on the overall measure.
 
-## Statistical analysis – meta-regression
+### Statistical analysis – meta-regression
 
 Mixed-effects meta-regression was performed to assess which baseline variables were associated with heterogeneity in each outcome measure. Meta-regression was performed using both categorical variables (e.g. drug class, sex, animal background, NAFLD model design) and continuous variables (e.g. percentage of components in diet, age at intervention, drug dose). For each regression analysis, variables were only included where three or more unique articles reported each variable. The number of cohorts included in each regression analysis is reported with their results. Univariable meta-regressions were considered significant where p-value<0.05 and were replicated in more than one outcome metric (e.g. hepatic TG and steatosis grade).
 

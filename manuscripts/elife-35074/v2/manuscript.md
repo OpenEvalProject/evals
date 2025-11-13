@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.35074.001 Naive B cells co-express two BCR isotypes, IgM and IgD, with identical antigen-binding domains but distinct constant regions. IgM but not IgD is downregulated on autoreactive B cells. Because these isotypes are presumed to be redundant, it is unknown how this could impose tolerance. We introduced the Nur77-eGFP reporter of BCR signaling into mice that express each BCR isotype alone. Despite signaling strongly in vitro, IgD is less sensitive than IgM to endogenous antigen in vivo and developmental fate decisions are skewed accordingly. IgD-only Lyn B cells cannot generate autoantibodies and short-lived plasma cells (SLPCs) in vivo, a fate thought to be driven by intense BCR signaling induced by endogenous antigens. Similarly, IgD-only B cells generate normal germinal center, but impaired IgG1 −/− + SLPC responses to T-dependent immunization. We propose a role for IgD in maintaining the quiescence of autoreactive B cells and restricting their differentiation into autoantibody secreting cells.
+Naive B cells co-express two BCR isotypes, IgM and IgD, with identical antigen-binding domains but distinct constant regions. IgM but not IgD is downregulated on autoreactive B cells. Because these isotypes are presumed to be redundant, it is unknown how this could impose tolerance. We introduced the Nur77-eGFP reporter of BCR signaling into mice that express each BCR isotype alone. Despite signaling strongly in vitro, IgD is less sensitive than IgM to endogenous antigen in vivo and developmental fate decisions are skewed accordingly. IgD-only Lyn−/− B cells cannot generate autoantibodies and short-lived plasma cells (SLPCs) in vivo, a fate thought to be driven by intense BCR signaling induced by endogenous antigens. Similarly, IgD-only B cells generate normal germinal center, but impaired IgG1+ SLPC responses to T-dependent immunization. We propose a role for IgD in maintaining the quiescence of autoreactive B cells and restricting their differentiation into autoantibody secreting cells.
 
 ## Introduction
 
@@ -38,11 +38,176 @@ We and others previously hypothesized that downregulation of IgM on Fo B cells m
 
 ## Results
 
-## Endogenous antigen is both necessary and sufficient for expression of Nur77-eGFP reporter in B cells in vivo
+### Endogenous antigen is both necessary and sufficient for expression of Nur77-eGFP reporter in B cells in vivo
 
 We previously showed that antigen recognition was both necessary and sufficient for Nur77-eGFP reporter expression by B cells in vivo (Figure 1A)(Zikherman et al., 2012). Thus, reporter expression reflects endogenous antigen recognition in vivo. Conversely, under steady-state conditions in vivo, the Nur77-eGFP reporter does not reflect signaling through other receptors expressed in B cells; indeed, loss of either CD40, or TLR3, 7, and 9 signaling has no effect on reporter expression in B cells in vivo (Figure 1—figure supplement 1A). Moreover, neither BAFF, nor IL-4, nor CXCR4-dependent signaling can regulate reporter expression in vitro (Figure 1—figure supplement 1B–C) (Zikherman et al., 2012). To further confirm that Nur77 expression in naïve B cells under steady state conditions is not regulated by microbial stimulation of pattern recognition receptors (e.g. TLRs 1, 2, 4, 6, and the TLR-4-like molecule RP105), we studied mice raised under either germ-free conditions or conventional specific-pathogen-free conditions. We observed no induction of endogenous Nur77 protein in splenic B cells or endogenous Nr4a1 transcript in splenocytes in the presence of commensal flora (Figure 1—figure supplement 1D,E). Moreover, MyD88-deficient and MyD88-sufficient splenocytes and peritoneal B1a cells express comparable amounts of endogenous Nr4a1 transcript and protein respectively under steady state conditions (Figure 1—figure supplement 1F,G). Taken together, these data demonstrate that Nur77-eGFP expression in B cells under steady-state conditions in vivo is a specific readout of antigen-dependent signaling through the BCR (Table 1). We therefore sought to take advantage of the Nur77-eGFP reporter in order to probe the responsiveness of a diverse BCR repertoire of mature B cells expressing either IgM or IgD alone to the vast range of endogenous antigens they may encounter in vivo.
 
-## Dual expression of IgM and IgD BCRs is required to establish a broad dynamic range of BCR responsiveness across the repertoire
+![Figure 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig1-v2.jpg)
+
+**Figure 1.:** (A) GFP expression in mature Fo splenic B cells (CD19+CD23+CD93-) from Nur77-eGFP BAC Tg reporter mice with either a wild-type BCR repertoire (left), or harboring IgHEL Tg specific for the cognate antigen HEL (hen egg lysozyme) in the absence (middle), or presence (right) of endogenous cognate antigen driven by soluble HEL Tg. WT Fo B cells lacking GFP reporter are included for reference (gray shaded histograms). (B) Surface IgM and IgD expression in splenic Fo B cells from WT, IgM−/−, and IgD−/− mice expressing the Nur77-eGFP reporter. (C) Splenocytes from WT, IgM−/−, and IgD−/− mice were loaded with Indo-1 and stimulated with 2.5 μg/mL of F(ab’)2 anti-IgM or 1:400 anti-IgD. Fo B cells with the highest 20% and lowest 20% Nur77-eGFP expression are compared. (D) Representative histograms and quantification of surface Igκ expression in IgM−/− and IgD−/− Fo B cells normalized to WT. (E) Representative histograms and quantification of Nur77-eGFP expression in IgM−/− and IgD−/− Fo B cells normalized to WT. (F) Median surface Igκ expression of WT, IgM−/−, and IgD−/− Fo B cells was calculated for 200 bins of equal width across the Nur77-eGFP spectrum. For (A), (B) and (F), data are representative of at least n = 4 independent experiments. For (C), n = 3 independent experiments for anti-IgM and n = 2 independent experiments for anti-IgD. For (D) and (E), n = 7 and n = 4, respectively, WT, IgM−/−, and IgD−/− mice. Welch’s t test was used to calculate p values, and mean +SEM is displayed. ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Nur77-eGFP expression in mature Fo (B220+CD93-CD23+) B cells from mice with mutations in various signaling pathways (CD40L−/−, Unc93b13d/3d,TLR7−/−). This Unc93b1 mutation abolishes signaling through TLR3, TLR7, and TLR9. (B) Nur77-eGFP and CD69 induction in B220+ splenocytes from Nur77-eGFP reporter mice stimulated with either anti-IgM or IL-4 in vitro for 24 hr. (C) Splenic B cells were stimulated with CXCR4 ligand (SDF-1) in vitro for 18 hr and Nur77-eGFP expression and CXCR4 downregulation were assessed. (D–E) Splenocytes from N = 5 Germ-free and SPF mice were taken directly ex vivo and either permeabilized and stained to detect B220+ cells and endogenous Nur77 by intracellular staining (D), or total Nr4a1 transcript by qPCR (E). (F) PerC (peritoneal cavity) cells from n = 4 MB1-Cre+ MyD88fl/fl and controls were permeabilized and stained immediately ex vivo to detect B1a cells and endogenous Nur77 by intracellular staining. (G) Splenocytes from mice analyzed in (F) were harvested directly ex vivo to detect total Nr4a1 transcript by qPCR. In D-G, Nr4a1-/- splenocytes serve as a control for both Ab and primer specificity. Data in (A) and (C) are representative of n = 2 independent experiments. Data in (B) are representative of n = 3 independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Surface Igκ expression relative to Nur77-eGFP reporter in Fo B cells from WT, IgM−/−, and IgD−/− mice. (B) Mean surface Igκ expression was calculated for Igκ+ splenic B cell (B220+) subsets in WT, IgM−/−, and IgD−/− mice. T1 (CD93+CD23-); T2/3 (CD93+CD23+); Fo (CD93-CD23+); MZ (CD21hiCD23lo). (C) Surface Igλ MFI of Igλ+ B cell subsets described in (B). (D) Surface Igκ MFI of Igκ+ cells in peritoneal B cell (CD19+) subsets. B1a (CD5+CD23-); B1b (CD5-CD23-); B2 (CD5-CD23+). (E) Surface Igλ MFI of Igλ+ cells in peritoneal B cell subsets described in (D). Data in (A) are representative of n = 3 independent experiments. Values in (B-E) were calculated from n = 3 mice of each genotype. One-way ANOVA with Tukey’s multiple comparisons test (B-E) was used to calculate p values, and mean +SEM is displayed. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Nur77-eGFP and CD69 upregulation in IgM−/− and IgD−/− splenic B cells stimulated with indicated doses of LPS, CpG, and Pam3CSK4. Histograms compare unstimulated cells with cells incubated with indicated stimuli for 18 hr at 37C. Histograms are representative of two independent experiments.
+
+**Table 1.**
+ Nur77-eGFP is a specific reporter of antigen-dependent signaling in vivo.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Conclusion</th>
+      <th>Stimulus/perturbation</th>
+      <th>Pathway</th>
+      <th>Readout</th>
+      <th>Cell type</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Does not modulate Nur77 at steady state in vivo</td>
+      <td>CD40L-/-</td>
+      <td>CD40</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>TLR7-/-</td>
+      <td>TLR7</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>Un93b13d/3d</td>
+      <td>TLR3/7/9</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>MyD88fl/fl MB1-Cre</td>
+      <td>MyD88</td>
+      <td>Endog. Nur77 protein/transcript</td>
+      <td>PerC B1a cells/spleen</td>
+      <td>Manuscript Figure 1—figure supplement 1F,G</td>
+    </tr>
+    <tr>
+      <td>Germ-free mice</td>
+      <td>MyD88/TRIF</td>
+      <td>Endog. Nur77 protein/transcript</td>
+      <td>Splenic B cells/spleen</td>
+      <td>Manuscript Figure 1—figure supplement 1D,E</td>
+    </tr>
+    <tr>
+      <td>Const. act. STAT5</td>
+      <td>Jak/Stat</td>
+      <td>Nur77-eGFP</td>
+      <td>Thymocytes</td>
+      <td>Moran et al. JEM 2011, Figure 8.</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Does not induce Nur77 in vitro</td>
+      <td>BAFF</td>
+      <td>BAFFR</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012): Figure S1G</td>
+    </tr>
+    <tr>
+      <td>IL-4</td>
+      <td>Jak/Stat</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 1B</td>
+    </tr>
+    <tr>
+      <td>IL-2, IL-15</td>
+      <td>Jak/Stat</td>
+      <td>Nur77-eGFP</td>
+      <td>CD8 (IL-2, 15), CD4 (IL-2)</td>
+      <td>Au-Yeung et al. JI 2017, Figures S1A, 3C, 4A</td>
+    </tr>
+    <tr>
+      <td>CXCL12/ SDF-1</td>
+      <td>CXCR4</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 1C</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Induces Nur77 in vitro but does not require IgM or IgD specifically</td>
+      <td>LPS</td>
+      <td>TLR4, Rp150</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012): Figure S1G; Manuscript Figure 1—figure supplement 3A</td>
+    </tr>
+    <tr>
+      <td>CpG</td>
+      <td>TLR9</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012), Figure S1G; Manuscript Figure 1—figure supplement 3A</td>
+    </tr>
+    <tr>
+      <td>Pam3CSK4</td>
+      <td>TLR1/2</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 1—figure supplement 3A</td>
+    </tr>
+    <tr>
+      <td>Anti-Igκ</td>
+      <td>BCR</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 2F</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Modulates pathway at steady state in vivo</td>
+      <td>IgHEL Tg</td>
+      <td>Antigen/BCR</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012), Figure 3B,C; Manuscript Figure 1A</td>
+    </tr>
+    <tr>
+      <td>IgHEL BCR Tg/sHEL Ag</td>
+      <td>Antigen/BCR</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012), Figure 3B,C; Manuscript Figure 1A</td>
+    </tr>
+    <tr>
+      <td>Lyn-/-</td>
+      <td>BCR via ITIMs</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Manuscript Figure 5—figure supplement 3A</td>
+    </tr>
+    <tr>
+      <td>CD45 allelic series</td>
+      <td>BCR via SFKs</td>
+      <td>Nur77-eGFP</td>
+      <td>B cells</td>
+      <td>Zikherman et al. (2012), Figure 3A,B</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dual expression of IgM and IgD BCRs is required to establish a broad dynamic range of BCR responsiveness across the repertoire
 
 Surface IgM, but not IgD, expression is inversely correlated with endogenous antigen recognition and GFP expression across a diverse repertoire of mature naïve follicular (Fo) B cells, such that B cells reactive to endogenous antigens express high levels of IgD and low levels of IgM on their surface (Figure 1B) (Zikherman et al., 2012). The variation in surface IgM expression across the B cell repertoire is profound, spanning a 100-fold range. However, because IgD is expressed at high and invariant levels in all WT naïve Fo B cells, total surface BCR, unlike IgM, has little dynamic range across the WT repertoire (Figure 1—figure supplement 2A).
 
@@ -50,21 +215,37 @@ To explore how IgM and IgD differentially regulate B cells reactive to endogenou
 
 We previously showed that IgM down-modulation on GFPhi reporter B cells largely accounts for impaired signaling through IgM (Figure 1C) (Zikherman et al., 2012). However, the narrow dynamic range of IgM on IgD-deficient cells renders reporter B cells unable to fine-tune signaling through the IgM BCR across the GFP repertoire (Figure 1C). Furthermore, IgD-mediated signaling is not altered across the GFP repertoire in the presence or absence of IgM (Figure 1C). As a result, reduced responsiveness of GFPhi B cells is most profound in B cells that express the IgM isotype in the presence of IgD. This suggests that IgD expression may be necessary to establish and/or maintain a broad and functionally dynamic range of surface IgM expression across the B cell repertoire. This is consistent with a previously proposed survival function for the IgD BCR (Roes and Rajewsky, 1993; Sabouri et al., 2016).
 
-## IgM−/− follicular B cells express more surface BCR than IgD−/− follicular B cells, but similar Nur77-eGFP
+### IgM−/− follicular B cells express more surface BCR than IgD−/− follicular B cells, but similar Nur77-eGFP
 
 Deletion of either the IgM or the IgD BCR isotype results in compensatory upregulation of the remaining isotype. This may be due in part to a change in competition for pairing with Igα/β heterodimers, which is essential for trafficking of IgM to the cell surface (Hombach et al., 1990; Sabouri et al., 2016). IgM−/− B cells express about twice as much surface BCR as IgD−/− B cells, as measured by surface anti-light chain staining (Figure 1D and Figure 1—figure supplement 2B–E). Nevertheless, distribution of Nur77-eGFP expression across the naïve B cell repertoire is nearly identical in IgM−/− and IgD−/− Fo B cells (Figure 1E). Further, at every level of Nur77-eGFP, cells that express IgD alone require more surface BCR to drive an equivalent amount of GFP compared to cells that express IgM alone (Figure 1F). This suggests that on a per-receptor basis, IgD BCR may be less efficient at inducing Nur77-eGFP in response to endogenous antigens. Importantly, this is not attributable to differential dependence upon IgM or IgD expression for signaling via CXCR4 or downstream of canonical TLR ligands (Figure 1—figure supplement 1C, Figure 1—figure supplement 3A).
 
-## IgD BCR crosslinking induces robust signaling in vitro
+### IgD BCR crosslinking induces robust signaling in vitro
 
 Because IgD drives less Nur77-eGFP per receptor than IgM in vivo, we wanted to determine whether there were defects in signal transduction downstream of IgD. To mimic antigen binding to the membrane-distal end of the BCR and allow for direct comparison between the isotypes, we stimulated IgD-only (IgM−/−) and IgM-only (IgD−/−) cells with anti-Igκ and compared downstream signaling. BCR ligation in IgD-only B cells induced equivalent amounts of Erk phosphorylation relative to IgM-only B cells (Figure 2A), and there were no gross differences in pErk kinetics (Figure 2B). Additionally, IgD-only cells induced more robust intracellular calcium increase and S6 phosphorylation than IgM-only cells (Figure 2C and Figure 2—figure supplement 1A). This was not due to differential effects of the Fc portion of the stimulatory antibody on IgM-only and IgD-only B cells as anti-Igκ-F(ab’)2 and anti-Igκ stimulation produced identical signaling (Figure 2—figure supplement 1B).
 
-## IgD BCRs sense endogenous antigens less efficiently than IgM BCRs
+![Figure 2.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig2-v2.jpg)
+
+**Figure 2.:** (A) Median intracellular pErk in splenic CD23+ B cells stimulated with anti-Igκ for 15 min. (B) Erk phosphorylation kinetics in splenic CD23+ B cells stimulated with 15 μg/mL anti-Igκ. (C) Splenocytes from IgM−/− and IgD−/− mice were loaded with Indo-1 and stimulated with 2.5 or 5 μg/mL anti-Igκ. B220+CD23+CD93- Fo B cells are compared. (D) CD86 induction in CD23+ IgM−/− and IgD−/− splenocytes stimulated with anti-Igκ for 18 hr. (E) Summary data for CD86 MFI in (D). (F) Nur77-eGFP induction in cells from (D). (G) Nur77-eGFP in cells from (D) incubated with medium alone (0 μg/mL anti-Igκ). (H) Representative histograms and summary data for MHC-II induction in unstimulated cells from (D). (I) Basal calcium in unstimulated IgM−/− and IgD−/− Fo B cells was calculated by normalizing the geometric mean of [Indo-1(violet)/Indo-1(blue)] to WT B cells in the same experiment. For (A), signaling in cells from n = 2 IgM−/− and IgD−/− mice is displayed, and results for 1.5, 3, and 15 μg/mL of anti-Igκ were replicated in n = 3 independent experiments. Data in (B) was compiled from n = 3 independent experiments with n = 3 mice of each genotype in each experiment. Data in (C) are representative of n = 4 independent experiments for 5 μg/mL and n = 2 independent experiments for 2.5 μg/mL. For (D-H), values were calculated for splenocytes from n = 3 mice of each genotype. For (I), basal calcium ratios from n = 6 independent experiments are compiled. Welch’s t test was used to calculate p values, and mean ±SEM is displayed. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) S6 phosphorylation kinetics in splenic CD23+ B cells following stimulation with 15 μg/mL anti-Igκ. (B) Splenocytes from IgM−/− and IgD−/− mice were loaded with Indo-1 and stimulated with 10 or 5 μg/mL anti-Igκ or anti-Igκ F(ab’)2. Data in (A) and (B) are representative of n = 3 and n = 2 independent experiments, respectively. Welch’s t test was used to calculate p values, and mean ±SEM is displayed. *p<0.05.
+
+### IgD BCRs sense endogenous antigens less efficiently than IgM BCRs
 
 Due in part to increased surface receptor expression, IgD-only B cells induce comparable Erk phosphorylation and enhanced calcium mobilization relative to IgM-only B cells stimulated with anti-Igκ. As a result, we observe significantly more CD86 and Nur77-eGFP induction in IgD-only B cells after 18 hr of anti-Igκ stimulation in vitro (Figure 2D–F). However, IgD-only cells induced less Nur77-eGFP and MHC-II upregulation when cultured in the absence of exogenous stimulus (Figure 2G and H). This discrepancy suggests that despite increased receptor expression and efficient coupling to downstream signaling machinery, residual endogenous antigens occupying the IgD BCR are less efficient at inducing signaling ex vivo. Consistent with this hypothesis, basal calcium analyzed immediately ex vivo is depressed in cells that express only IgD (Figure 2I). These data suggest that while signal transduction downstream of the IgD BCR is robust in vitro, IgD responds less efficiently than IgM to the relevant antigens it encounters in vivo.
 
-## Reduced endogenous antigen sensing by IgD BCR in innate-like B cells
+### Reduced endogenous antigen sensing by IgD BCR in innate-like B cells
 
 While IgD-only and IgM-only Fo B cells express comparable levels of Nur77-eGFP (Figure 1E), we suspected that competitive pressures for survival might constrain the acceptable range of BCR signaling among mature Fo B cells. We further speculated that compensatory mechanisms such as altered surface receptor and altered BCR repertoire might fine tune how much signaling Fo B cells experience in vivo in order to lie within this range. In contrast to Fo B cells, IgD-only marginal zone (MZ) and B1a cells expressed significantly less Nur77-eGFP than WT cells despite higher levels of surface BCR (Figure 3A, Figure 1—figure supplement 2B–E). To determine whether this difference was due to isotype or altered BCR repertoire, we probed GFP expression in B1a cells specific for phosphatidylcholine (PtC), an endogenous antigen exposed on the surface of dying cells that is thought to select developing B cells into the B1a compartment (Baumgarth, 2011). We found a large difference in GFP even among B1a cells with a common specificity, and this occurs in spite of high surface PtC binding in IgD-only B1a cells (Figure 3B and C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig3-v2.jpg)
+
+**Figure 3.:** (A) Nur77-eGFP in peritoneal B1a (CD19+CD5+CD23-) and splenic MZ (B220+CD21hiCD23lo) B cells from WT and IgM−/− mice. (B) Nur77-eGFP in PtC-binding peritoneal B1a cells from WT, IgM−/−, and IgD−/− mice. (C) Nur77-eGFP and PtC MFIs were calculated for total B1a and PtC-binding B1a cells. The ratio of the IgM−/− (IgD-only) MFI to the IgD−/− (IgM-only) MFI is displayed with a 95% confidence interval. (D) Representative histograms of Nur77-eGFP in IgM−/− and IgD−/− splenic MZ B cells from mice without (left) and with (right) a BAFF overexpression transgene. (E) Quantification of Nur77-eGFP in MZ B cells from (D). For (A) and (E), n = 3 mice of each genotype were analyzed. For (B), histograms are representative of n = 4 mice of each genotype. For (C), ratios are pooled for n = 4 mice of each genotype from three independent experiments. For (D), histograms are representative of n = 3 mice of each genotype. Welch’s t test (A and E) was used to calculate p values, and mean +SEM is displayed (except in C). *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Surface Igκ MFI of IgM−/− and IgD−/− splenic MZ B cells from mice without (left) and with (right) a BAFF overexpression transgene. (B) Nur77-eGFP expression in peritoneal B1a and splenic MZ B cells from IgM-null (IgDa+) and WT (IgMb+) loci in IgM+/− mice. (C) Nur77-eGFP expression in IgMa+ and IgMb+ splenic MZ B cells in 6-month-old IgHa/b mice with a BAFF overexpression transgene. Values in (A) were calculated from n = 3 mice of each genotype. Values in (B) and (C) were calculated in n = 6 and n = 4 mice, respectively. Welch’s t test (A) and a paired t test (B-C) were used to calculate p values, and mean +SEM is displayed. **p<0.01, ***p<0.001.
 
 We took an independent and complementary approach to address the same question in MZ B cells; we crossed IgM−/− and IgD−/− reporter mice to a genetic background that drives over-expression of the B cell survival factor BAFF (Gavin et al., 2005). BAFF overexpression ‘unrestricts’ the BCR repertoire by removing competition for survival, thereby reducing both positive and negative selection pressures and permitting cells with either insufficient or excessive BCR signaling to persist in the repertoire, resulting in a massively expanded MZ compartment (Stadanlick and Cancro, 2008). Importantly, BAFF does not directly regulate reporter GFP expression, and therefore GFP reflects endogenous antigen stimulation on this genetic background (Zikherman et al., 2012). In BAFF Tg mice, IgD-only MZ cells expressed much less GFP than those expressing IgM alone (Figure 3D and E). This was not explained by differences in surface receptor levels between these populations as they are comparable on this genetic background (Figure 3—figure supplement 1A). Indeed, IgD-only cells with low GFP and IgM-only cells with high GFP appear to be preferentially rescued in mice with excess BAFF, suggesting that distinct BCR repertoires, far from accounting for GFP differences between IgM-only and IgD-only MZ B cells, actually obscure these differences. Conversely, either ‘fixing’ or unrestricting the BCR repertoire unmasks impaired GFP upregulation by IgD relative to IgM.
 
@@ -72,15 +253,23 @@ As a result of allelic exclusion of the heavy chain locus during B cell developm
 
 Since IgM−/− and IgD−/− mice were generated on the Balb/c and 129 genetic backgrounds respectively, their germline VDJ loci are different from that of C57BL/6 mice to which they have been back-crossed. Throughout our study, we have validated our findings in either Balb/c-B6 F1 mice or IgHa/b heterozygous mice, which have two sets B cells with identical IgM and IgD isotype expression but distinct germline VDJ loci. We took this approach to confirm that differences in MZ GFP were due to BCR isotype and not VDJ locus (Figure 3—figure supplement 1C).
 
-## Cell-intrinsic skewing of B cell development by the IgM and IgD BCRs
+### Cell-intrinsic skewing of B cell development by the IgM and IgD BCRs
 
 Generation of the B1a compartment requires endogenous antigen recognition and strong BCR signaling, while the opposite is true for MZ B cells (Figure 4—figure supplement 1A) (Cariappa and Pillai, 2002; Casola et al., 2004). Indeed, B1a cells are modestly reduced in IgM-deficient mice, while MZ B cells are modestly increased (Figure 4—figure supplement 1B–C). Because serum IgM deficiency leads to increased B1a numbers, we assessed B1a and MZ B cell development in a competitive setting to isolate the cell-intrinsic effects of IgM and IgD BCRs (Boes et al., 1998). Analogous to the IgM+/− mice described above, IgM+/− IgD−/+ heterozygous mice develop two genetically distinct sets of B cells in which half express only IgD and the other half express only IgM (Figure 4A). Although IgD-only B cells can partially populate the B1a compartment in the absence of competition (Lutz et al., 1998; Übelhart et al., 2015), IgD-only cells are virtually excluded from this compartment in a competitive setting (Figure 4B). Indeed, this parallels the loss of PtC-binding IgD-only peritoneal B cells observed in competition with wild type cells (Übelhart et al., 2015). In contrast, IgD-only B cells preferentially populate the MZ B cell compartment in competition with IgM-only B cells (Figure 4B). These data are consistent with a signal strength model of B1a/MZ B cell development (Figure 4—figure supplement 1A), and this suggests that in vivo signaling, antigen recognition, or both are reduced in IgD-only B cells. These differences in signaling could in turn modulate the generation and/or survival of IgD-only B1a and MZ B cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig4-v2.jpg)
+
+**Figure 4.:** (A) Allelic exclusion leads to a 1:1 mixture of IgM-only and IgD-only B cells in IgM+/− IgD−/+ mice. (B) Proportion of peritoneal B1a (CD19+CD5+CD23-) and splenic MZ (B220+CD21hiCD23lo) B cells originating from each Ig locus in IgM+/− IgD−/+ mice. (C) Relative competition between IgM+ and IgD+ B cells in IgM+/− IgD−/+ mice was calculated for bone marrow, splenic, and peritoneal B cell compartments. Results include data from (B) for reference. Immature (CD23-CD93+); T2-like (CD23+CD93+); mature recirculating (CD23+CD93-); T1 (CD93+CD23-); T2/3 (CD93+CD23+); Fo (CD93-CD23+); MZ (CD21hiCD23lo); B1a (CD5+CD23-); B1b (CD5-CD23-); B2 (CD5-CD23+). (D) Relative competition between WT (IgMb+) and IgM-null (IgDa+) B cells in IgM+/− mice was determined as in (C). (E) Relative competition between WT (IgMb+) and IgD-null (IgMa+) B cells in IgD+/− mice was determined for splenic and peritoneal compartments as described in (C). (F) Competition in peritoneal B1a and splenic MZ compartments in IgM+/− mice with or without a BAFF overexpression transgene. Results include data from (D) for reference. For (B) and (C), n = 3–5 mice were analyzed. For (D), n = 3–8 mice were analyzed. For (E), n = 5 mice were analyzed. For (F), n = 4–5 mice of each genotype were analyzed. Welch’s t test was used to calculate p values, and mean ±SEM is displayed. **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Signal strength model of B1a and MZ B cell development. While B1a and MZ cells originate from different precursor populations, their development is thought to be BCR signal strength-dependent. (B) B cell compartments as a percentage of total B220+ splenic B cells. T1 (CD93+CD23-); T2/3 (CD93+CD23+); Fo (CD93-CD23+); MZ (CD21hiCD23lo). (C) B cell compartments as a percentage of total CD19+ peritoneal B cells. B1a (CD5+CD23-); B1b (CD5-CD23-); B2 (CD5-CD23+). (D) Relative competition between IgMa+ and IgMb+ B cells in Balb/c-B6 F1 mice was calculated for splenic and peritoneal compartments described in (B–C). For (B), n = 10–12 mice of each genotype were analyzed. For (C), n = 6 mice of each genotype were analyzed. For (D), n = 3 mice were analyzed. Mice in (D) were 6–14 weeks old. One-way ANOVA with Tukey’s multiple comparisons test (B-C) was used to calculate p values, and mean ±SEM is displayed. *p<0.05, **p<0.01, ***p<0.001.
 
 We sought to determine whether skewed development of B cell lineages was driven primarily by properties of IgD, IgM, or both by comparing development of B cell populations in IgM+/− IgD−/+, IgM+/−, and IgD+/− mice (Figure 4C–4E). We conclude that skewing of MZ and B1a fates is primarily attributable to lack of IgM expression on IgD-only cells rather than lack of IgD expression on IgM-only cells because we observe little skewing in IgD+/− mice (Figure 4E). Further, the competitive advantage of IgD-only cells in the marginal zone niche is reduced by BAFF over-expression, consistent with loosening of competitive selection pressures (Figure 4F).
 
 IgM-only B cells exhibit a disadvantage in the mature Fo compartment relative to IgD-only B cells (Figure 4C). We find that absence of IgD rather than excess IgM expression accounts for some of this disadvantage as WT and IgD-only cells compete equally well in this compartment (Figure 4D). This may reflect impaired positive selection or survival in absence of IgD. Indeed, similar to our observations, a disadvantage for Fo B cells lacking IgD was observed in IgD+/− mice previously (Roes and Rajewsky, 1993). As with differences in Nur77-eGFP expression, we confirmed that the developmental fates of IgM-only and IgD-only cells were due to BCR isotype and not VDJ locus (Figure 4—figure supplement 1D).
 
-## Either IgD or IgM BCR is sufficient to mediate polyclonal B cell activation and germinal center differentiation in Lyn−/− mice
+### Either IgD or IgM BCR is sufficient to mediate polyclonal B cell activation and germinal center differentiation in Lyn−/− mice
 
 Mice deficient for either IgM or IgD can mount T-independent and T-dependent immune responses to model antigens (Lutz et al., 1998; Nitschke et al., 1993; Roes and Rajewsky, 1993). However, endogenous antigens may have unique properties that are absent in model antigen systems. To test whether each BCR isotype was competent to mediate autoimmune responses to endogenous antigens in lupus-prone mice, we generated IgM+/− and IgD+/− mice on the Lyn−/− background (Chan et al., 1997). The Src family kinase Lyn is essential to mediate ITIM-dependent inhibitory signals in B cells and myeloid cells (Scapini et al., 2009; Xu et al., 2005). Lyn−/− mice consequently develop a spontaneous lupus-like disease characterized by anti-DNA antibodies and nephritis on the C57BL/6 genetic background (Chan et al., 1997; Hibbs et al., 1995; Nishizumi et al., 1995). It has been shown that both B-cell-specific MyD88 expression and T cells are essential for IgG2a/c anti-dsDNA autoantibody production in Lyn−/− mice, and conditional deletion of Lyn in B cells is sufficient for autoimmunity (Hua et al., 2014; Lamagna et al., 2014).
 
@@ -88,15 +277,31 @@ Secreted natural IgM is thought to play important homeostatic functions that rep
 
 Polyclonal B cell activation in Lyn−/− mice precedes and is genetically separable from autoantibody production; it is driven by B cell-intrinsic loss of Lyn, is thought to result from enhanced BCR signaling, and is independent of MyD88 expression (Hua et al., 2014; Lamagna et al., 2014). Indeed, Lyn−/− reporter B cells have elevated Nur77-eGFP expression consistent with enhanced BCR signal transduction in vivo (Figure 5—figure supplement 3A). We had expected that activation of IgD-only Lyn−/− B cells might be impaired due to reduced sensing of endogenous antigens, but neither CD86 nor CD69 upregulation were significantly different on WT and IgD-only B cells in the absence of Lyn (Figure 5A). This implies that both BCRs can provide sufficient signals to drive polyclonal activation by endogenous antigens.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig5-v2.jpg)
+
+**Figure 5.:** (A) Surface CD69 and CD86 expression on CD23+ splenic B cells from each Ig locus in IgM+/− mice on Lyn+/+ and Lyn−/− backgrounds. (B) Percentage of unswitched germinal center (CD19+ Fashi GL-7hi IgM/IgD+) B cells from each Ig locus in IgM+/− and IgD+/− mice on the Lyn−/− background. (C) Anti-dsDNA IgG2a titers from each Ig locus in IgM+/− Lyn−/− mice were calculated by ELISA using pooled IgHa/b autoimmune serum with high-titer autoantibodies from each locus as a reference (titer set at 1000). Each color represents a single mouse tracked over time. (D) Anti-dsDNA IgG2a titers in IgD+/− Lyn−/− mice were calculated as in (C). (E) Paired anti-dsDNA titers from each locus in individual IgM+/− Lyn−/− mice from (C) with additional mice from 24 weeks to 12 months. (F) Paired anti-dsDNA titers from each locus in IgD+/− Lyn−/− mice from (D). (G) Ratio of anti-dsDNA IgG2a[a] to IgG2a[b] from all samples in (E) and (F) with an anti-dsDNA IgG2a titer >250 from either locus; cutoff defined by titers in young WT mice. For (A), n = 4 IgM+/− Lyn−/− mice are compared to a reference IgM+/− Lyn+/+ mouse. Qualitatively similar results were obtained in two independent experiments. For (B) n = 5–6 mice of each genotype were analyzed. For (C) and (D), n = 9 and n = 12 mice were tracked. For (G), n = 36 IgM+/− Lyn−/− and n = 39 IgD+/− Lyn−/− anti-dsDNA IgG2a+ samples were compared. Welch’s t test was used to calculate p values, and mean ±SEM is displayed. **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Gating scheme for determining Ig locus of origin for splenic B cell subsets in 6-month-old IgHa/b Lyn−/− mice. (B) Quantification of compartments in (A). T1 (CD93+CD23-); T2/3 (CD93+CD23+); Fo (CD93-CD23+). (C) Percentage of Fo B cells originating from each Ig locus in IgM+/− and IgD+/− mice on the Lyn−/− background. Percentages in (A-C) were calculated using n = 5–6 mice of each genotype, and mean +SEM is displayed.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Splenocytes from IgM+/− and IgD+/− mice on either Lyn+/+ or Lyn−/− backgrounds were loaded with Indo-1 and stimulated with anti-Igκ. WT (IgMb+) B cells were gated out to isolate IgM-null (IgD-only) and IgD-null (IgM-only) cells. CD19+CD23+ B cells are compared. (B) Intracellular Erk phosphorylation in splenic B220+CD23+ B cells from mice in (A) stimulated with varying doses of anti-Igκ for 5 min. Shaded histogram corresponds to IgMb+ cells from IgD+/− Lyn−/− mice incubated with medium alone for reference. (A) and (B) are representative of two independent experiments.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Nur77-eGFP expression in splenic mature Fo B cells from Lyn+/+ and Lyn−/− reporter mice. (B) Gating scheme for determining the Ig locus of origin for germinal center B cells in 6-month-old IgM+/− Lyn−/− mice. (C) Relative contribution of IgHa+ and IgHb+ B cells to the splenic unswitched GC (CD19+ Fas+ GL-7+ IgM+) and unswitched PC (CD138+IgM+) compartments of 6-month-old IgHa/b Lyn−/− mice. (D) Anti-dsDNA IgG2a from each Ig locus in 5–6 month old IgM+/−, IgD+/−, and IgHa/b mice on the Lyn−/− background was quantified by ELISA. (E) The OD ratio of knockout (allotype a) to WT (allotype b) anti-dsDNA IgG2a was calculated for all mice in (D) in which either locus produced an OD >0.3. Histograms in (A) are representative of at least n = 3 mice of each genotype. Percentages in (B-C) were calculated using n = 5–6 mice of each genotype, and mean ±SEM is displayed. For (D), n = 10–13 mice of each genotype were analyzed. For (E), n = 5–9 autoantibody-positive mice were analyzed. Welch’s t test (E) was used to calculate p values, and mean ±SEM is displayed. *p<0.05.
+
 Although GC fate is disfavored relative to SLPC fate in Lyn−/− mice, GCs do arise spontaneously with time (Hibbs et al., 1995; Hua et al., 2014). We found that both IgD-only and IgM-only cells in Lyn-deficient mice made comparable contributions to the GC compartment in competition with wild type B cells, independent of VDJ background (Figure 5B and Figure 5—figure supplement 3B–C). We propose that endogenous antigen sensing by IgD, while normally dampened, is sufficient to drive both polyclonal activation and GC differentiation on the Lyn−/− background. This further implies that antigen capture by IgD and presentation on MHC-II is robust enough to recruit adequate T cell help to support these cell fates.
 
-## IgM BCR is required to drive dsDNA antibody production in Lyn−/− mice
+### IgM BCR is required to drive dsDNA antibody production in Lyn−/− mice
 
 IgM- and IgD-deficient B cells express BCR heavy chain allotype [a] (IgHa), and their secreted antibodies can be differentiated from WT B6 antibodies (IgHb) even after isotype switching (e.g. IgG2a[a] vs. IgG2a[b] – also referred to as IgG2c). Allotype-specific antibodies have been previously used in the context of lupus mouse models to track autoantibodies generated by B cells of distinct genetic origin (Mills et al., 2015; Pisitkun et al., 2006). We took an analogous approach to assess IgG2a/c anti-dsDNA autoantibodies emanating from each genetic locus in IgM+/−, IgD+/−, and IgHa/b control mice deficient for Lyn. In order to compensate for reduced penetrance of autoantibody production in IgM+/− Lyn−/− mice, we collected serum from this genotype at time points beyond 24 weeks to increase the number of samples in which tolerance had been broken. While B cells expressing IgM (of either IgH locus) generated IgG2a/c anti-dsDNA, IgD-only B cells were relatively protected from generating anti-dsDNA antibodies, even at late time points (Figure 5C–G, Figure 5—figure supplement 3D–E). Importantly, this is attributable to BCR isotype and not VDJ locus (Figure 5—figure supplement 3D–E).
 
 We noted that anti-dsDNA antibody titers fluctuated substantially over time in Lyn−/− mice, in some cases dropping markedly over a four-week period (Figure 5C and D). Anti-dsDNA IgG autoantibodies in patients with systemic lupus erythematosus (SLE) similarly fluctuate over time – in contrast to other anti-nuclear specificities - and correlate with disease flares (Liu et al., 2011). Furthermore, unmutated germline BCRs from naïve B cells are recruited directly into the circulating plasmablast compartment during SLE flares (Tipton et al., 2015). Taken together, this suggests that anti-dsDNA antibodies in mice and humans are secreted at least in part by SLPCs emerging from an extra-follicular immune response, rather than long-lived plasma cells (LLPCs) that originate in GCs. Our data suggests that, in the absence of Lyn, the IgD BCR is sufficient to mediate B cell activation and GC entry, but the IgM BCR is essential to produce dsDNA-specific SLPCs.
 
-## IgM BCR is required for expansion of unswitched plasma cells in Lyn−/− mice
+### IgM BCR is required for expansion of unswitched plasma cells in Lyn−/− mice
 
 In addition to stochastic generation of autoantibodies over time, Lyn−/− mice exhibit a massive expansion of the splenic IgM plasma cell compartment that corresponds to a roughly 10-fold increase in serum IgM (Hibbs et al., 1995). While natural IgM is thought to be secreted by B1a-derived plasma cells (Baumgarth, 2011), elevated serum IgM in Lyn−/− mice arises from the Fo B2 compartment since Lyn−/− mice lack MZ B cells, and bone marrow chimeras lacking the B1a compartment reconstitute the hyper-IgM secretion phenotype (Luo et al., 2014). Moreover, while BCR signaling is prominently enhanced in Lyn−/− B2 B cells, it is markedly dampened in Lyn−/− B1a cells (Figure 6—figure supplement 1A) (Skrzypczynska et al., 2016).
 
@@ -104,11 +309,35 @@ IgM plasma cell expansion is temporally and genetically separable from autoimmun
 
 As previously shown, Lyn−/− B cells downregulate Ets1 protein expression (Figure 6A) (Luo et al., 2014). However, Lyn-deficient B cells expressing only IgD did not do so, consistent with a reduced ability of IgD to transmit antigen-dependent signals in vivo (Figure 6A). As previously reported, we found that the frequency of plasma cells in the spleens of Lyn−/− mice was increased fourfold relative to Lyn+/+ mice, but the bone marrow plasma cell compartment size was relatively unaffected (Figure 6B–C) (Infantino et al., 2014). The increase in splenic plasma cells was attributable entirely to unswitched (IgM+) plasma cells (Figure 6C). However, unswitched plasma cell expansion was completely absent in IgM−/− Lyn−/− spleens (Figure 6C). This was reflected in steady-state serum antibody levels; while Lyn−/− mice have elevated serum IgM relative to WT mice, IgM−/− Lyn−/− mice did not have elevated serum IgD relative to IgM−/− mice (Figure 6D–E).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative blot and quantification of Ets1 and GAPDH protein in purified splenic B cells from WT, Lyn−/−, and IgM−/− Lyn−/− mice. (B) Composition of the CD138+ plasma cell compartments in the spleen and bone marrow of WT, Lyn−/−, and IgM−/− Lyn−/− mice was determined by intracellular staining of IgM, IgD, and IgA. (C) Percentages in (B) multiplied by the fraction of live cells positive for CD138 in each tissue. Unswitched cells are positive for either IgM or IgD. Statistics correspond to unswitched plasma cell percentages; differences in IgA+ cells were not significant. (D) Serum IgM in 16-week-old mice was quantified for B6.IgHa (WT) and Lyn−/− mice by ELISA. A sample from an IgM−/− mouse is shown for reference. (E) Serum IgD in 16-week-old mice was quantified for IgM−/− and IgM−/− Lyn−/− mice by ELISA. A sample from a WT mouse is shown for reference. (F) Gating scheme for quantifying the unswitched splenic plasma cell composition of IgM+/− Lyn−/− mice. (G) Percentage of unswitched splenic plasma cells (CD138+B220loIgM/IgD+) from each locus in IgM+/− and IgD+/− mice on the Lyn−/− background. For (B) and (C), figures are representative of n = 4–5 mice of each genotype. For (D), values from n = 3 WT and n = 4 Lyn−/− mice are averaged. For (E), values from n = 3 IgM−/− and n = 4 IgM−/− Lyn−/− mice are averaged. For (F) and (G), n = 4–5 mice of each genotype were used. Welch’s t test was used to calculate p values, and mean ±SEM is displayed. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Intracellular Erk phosphorylation in peritoneal B220+ B cells stimulated with anti-Igκ for 5 min. B1a (CD5+CD23-); B2 (CD5-CD23+). Histograms in (A) are representative of cells from n = 2 WT and Lyn−/− mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Model: Lyn restrains BCR signaling in Fo B cells. Loss of Lyn leads to Btk-dependent downregulation of Ets1 expression and consequent expansion of unswitched (IgM+) plasma cells.
+
 To confirm that resistance to unswitched plasma cell expansion was a cell-intrinsic feature of IgD-only Lyn−/− B cells, we assessed this phenotype in IgM+/− Lyn−/− mice. Similar to the non-competitive setting, IgD-only Lyn−/− cells did not contribute to an expansion in the unswitched plasma cell compartment (Figure 6F-G). This effect was due to isotype and not VDJ allele usage because both IgHa and IgHb B cells in IgHa/b Lyn-/- mice generated unswitched plasma cells in a competitive setting (Figure 5—figure supplement 3C).
 
-## IgM BCR is required for efficient generation of short-lived IgG1+ plasma cells but is dispensable for GC B cell fate
+### IgM BCR is required for efficient generation of short-lived IgG1+ plasma cells but is dispensable for GC B cell fate
 
 IgD-only Lyn−/− Fo B cells are completely prevented from generating an expanded unswitched SLPC compartment in response to chronic endogenous antigen stimulation, but they are competent to enter the GC. To determine how this defect relates to responses towards exogenous model antigens, we sought to determine whether IgD-only Lyn+/+ B cells exhibit skewing of cell fate in the context of a T-dependent response to a model antigen. To generate a robust polyclonal B cell response in which T cell help should not be limiting, we used the classic immunogen sheep RBCs. During this immune response, Fo B cells can either enter the germinal center or rapidly differentiate into IgG1+SLPCs (Chan et al., 2009; Paus et al., 2006). We found that wild type, IgM−/−, and IgD−/− mice all produced extremely robust GC responses 5 days after SRBC injection, but B cells expressing IgD alone were unable to produce IgG1+ SLPCs at this time point (Figure 7A–D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig7-v2.jpg)
+
+**Figure 7.:** (A) Splenic (CD19+) B cells from WT, IgM−/−, and IgD−/− mice unimmunized or 5 days after i.p. immunization with 200 μL of 10% SRBCs. (B) Quantification of germinal center (Fashi GL-7hi) cells in (A). (C) Splenocytes from mice in (A). (D) Quantification of CD138+ IgG1+ plasma cells in (C). (E) WT (IgMb+) and IgM-null (IgDa+) germinal center B cells as a percentage of live splenocytes in unimmunized and IgM+/− mice 5 days after i.p. immunization with 200 μL of 10% SRBCs. (F) WT (IgG1b+) and IgM-null (IgG1a+) switched plasma cells (CD138 +IgG1+) as a percentage of live splenocytes in IgM+/− mice unimmunized or 5 days after i.p. immunization with 200 μL of 10% SRBCs. (G) Fraction of unswitched NP-specific germinal center cells (CD19+ Fashi GL-7hi IgM/IgD+) from the IgHa locus in the spleens of Balb/c-B6 F1 and IgM+/− mice 7–8 days after i.p. immunization with 100 μg NP-RSA. (H) Fraction of IgG1+CD138+ plasma cells from the IgHa locus in Balb/c-B6 F1 and IgM+/− mice 7–8 days after i.p. immunization with 100 μg NP-RSA. (I) NP-specific IgG1a and IgG1b titers at OD = 0.2 were calculated for the mice in (G–H) by ELISA. The IgG1a to IgG1b titer ratio was calculated for each mouse, and all ratios were normalized such that the average IgG1a/IgG1b ratio in Balb/c-B6 F1 samples = 1.0. For (A-D), statistics from n = 4 unimmunized mice of each genotype and n = 3 WT, n = 6 IgM−/−, and n = 7 IgD−/− immunized mice were pooled. For (E-F), n = 5 unimmunized and n = 5 immunized mice are shown. For (G-I), n = 5 Balb/c-B6 F1 mice and n = 3 IgM+/− mice are shown. One-way ANOVA with Tukey’s multiple comparisons test (B and D), a paired t test (E-F), and Welch’s t test (G-I) were used to calculate p values, and mean +SEM is displayed. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantification of IgMa+ and IgMb+ germinal center B cells (CD19+FashiGL-7hi) as a percentage of live splenocytes in IgHa/b mice 5 days after i.p. immunization with 200 μL of 10% SRBCs. (B) Quantification of IgMa+ and IgMb+ plasma cells (CD138+) as a percentage of live splenocytes in IgHa/b mice 5 days after i.p. immunization with 200 μL of 10% SRBCs. (C) Quantification of splenic unswitched (IgM +or IgD+) CD138+ plasma cells from WT, IgM−/−, and IgD−/− mice unimmunized or 5 days after i.p. immunization with 200 μL of 10% SRBCs. (D) WT (IgMb+) and IgM-null (IgDa+) unswitched plasma cells (CD138+) as a percentage of live splenocytes in IgM+/− mice unimmunized or 5 days after i.p. immunization with 200 μL of 10% SRBCs. For (A) and (B), n = 3 mice were analyzed. Paired t tests (A-B and D) and one-way ANOVA with Tukey’s multiple comparisons test were used to calculate p values, and mean +SEM is displayed. For (C), cell numbers from n = 4 umimmunized mice of each genotype and n = 3 WT, n = 6 IgM−/−, and n = 7 IgD−/− immunized mice were analyzed. For (D), n = 5 unimmunized and n = 5 immunized were analyzed. **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/35074/elife-35074-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Model: Control of peripheral B cell tolerance by IgM and IgD. Selective downregulation of IgM is a well-described feature of autoreactive B cells. This study demonstrates how loss of IgM could desensitize autoreactive B cells towards self-antigens. High and invariant IgD expression provides survival signals to allow these autoreactive cells to be maintained in the repertoire. Upon activation by foreign antigen, the least autoreactive cells receive strong signals through IgM and can quickly differentiate into plasma cells with little danger of autoimmunity. In contrast, the most autoreactive B cells are activated through IgD, which is less efficient at transducing signals in vivo. This weak signaling shunts IgDhi IgMlo cells into the germinal center where they can be ‘redeemed’ via somatic hypermutation, as proposed by Goodnow and colleagues. In this way, dual expression of IgM and IgD expression facilitates repertoire diversity and balances immune responsiveness with autoimmune potential.
 
 Since serum IgM is absent in IgM−/− mice and is known to enhance PC generation (Boes et al., 1998), we wanted to assess the cell-intrinsic effect of IgD and IgM BCRs on the immune response to SRBCs. To do so, we immunized IgM+/− mice in which half of Fo B cells express IgD alone and half express both IgM and IgD. We could track the relative contribution of these two cell populations to the GC response because the bulk of GC B cells have not yet isotype-switched and express surface IgM or IgD. Both cell types made a robust contribution to the germinal center response (Figure 7E). Next we tracked the generation of IgG1+ PCs by detecting allotype [a] or allotype [b] IgG1. In contrast to the GC response, IgD-only B cells were significantly disfavored in this compartment, although the defect was less severe than that observed in IgM−/− mice, which lack serum IgM (Figure 7F). To control for differences in the VDJ locus, we performed this experiment using IgHa/b control mice and observed no significant differences between allotypes, implying that BCR isotypes rather than VDJ locus accounted for our observations (Figure 7—figure supplement 1A–B).
 
@@ -140,50 +369,837 @@ We demonstrate here for the first time that IgD BCRs sense endogenous antigen mo
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C56BL/6</td>
+      <td>The Jackson Laboratory; Taconic</td>
+      <td>JAX:000664; TAC:BCNTac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Balb/C</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:000651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nur77-eGFP</td>
+      <td>MMRRC UC Davis</td>
+      <td>MMRRC:012015-UCD</td>
+      <td>Characterized in PMID:22902503</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>IgHEL</td>
+      <td>PMID:3261841</td>
+      <td></td>
+      <td>MD-4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>sHEL</td>
+      <td>PMID:3261841</td>
+      <td></td>
+      <td>ML-5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>IgM-/-</td>
+      <td>PMID:9655395</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>IgD-/-</td>
+      <td>PMID:8446604</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>CD40L-/-</td>
+      <td>PMID:7964465</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Unc93b 3d/3d</td>
+      <td>PMID:16415873</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>TLR7-/-</td>
+      <td>PMID:15034168</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>BaffTg</td>
+      <td>MMRRC UC Davis</td>
+      <td>RRID:MMRRC_036508-UCD</td>
+      <td>Described in PMID:15972664</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.IgHa</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:001317</td>
+      <td>B6.Cg-Gpi1a Thy1a Igha/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Lyn-/-</td>
+      <td>PMID:9252121</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MB1-Cre</td>
+      <td>PMID:16940357</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MyD88 fl/fl</td>
+      <td>PMCID:PMC2847796</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nr4a1-/-</td>
+      <td>PMID:7624775</td>
+      <td>JAX:006187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Ovis aires)</td>
+      <td>Sheep Red Blood Cells</td>
+      <td>Rockland</td>
+      <td>R406-0050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-A647 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>557683</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-APC-e780 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>47-0452-82</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-FITC (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>35–0452 U100</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-Pacific Blue (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>75–0452 U100</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-PE (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553090</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-PE-Cy7 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>552772</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220-PerCP-Cy5.5 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>65–0452 U100</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD5-APC (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>20–0051 U100</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19-PE-Cy7 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>115520</td>
+      <td>(1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19-PerCP-Cy5.5 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>551001</td>
+      <td>(1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD21-A647 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>123424</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD21-Pacific Blue (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>123414</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD23-A647 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>101612</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD23-FITC (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553138</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD23-Pacific Blue (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>101616</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD23-PE (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553139</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD23-PE-Cy7 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>25-0232-82</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69-APC (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>104514</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69-PE-Cy7 (hamster monoclonal)</td>
+      <td>Tonbo</td>
+      <td>60–0691 U100</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD86-Pacific Blue (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>105022</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD93 (AA4.1)-PE-Cy7 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>136506</td>
+      <td>(1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD138-PE (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>142504</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD138-PE-Cy7 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>142513</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CXCR4-Biotin (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>551968</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ETS1 (rabbit monoclonal)</td>
+      <td>Epitomics; abcam</td>
+      <td>EPI:3123–1; AB:109212</td>
+      <td>(1:10,000); concentrated lot from L.A. Garrett-Sinha</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fas-PE-Cy7 (hamster monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>557653</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>AB2302</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GL-7-A647 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>561529</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgA-Biotin (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>407003</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD (goat polyclonal serum)</td>
+      <td>MD Biosciences</td>
+      <td>2057001</td>
+      <td>(1:50-1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD[a]-Biotin (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553506</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD-APC-e780 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>47-5993-80</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD-HRP (rat monoclonal)</td>
+      <td>American Research Products</td>
+      <td>09-1008-4</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD-Pacific Blue (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>405712</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgD-PE (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>12-5993-82</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG1[a]-Biotin (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553500</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG1[b]-Biotin (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553533</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG2a[a]-Biotin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>553502</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG2a[b]-Biotin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>553504</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG2c-Biotin (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1079–08</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igκ (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1050–01</td>
+      <td>1–20 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igκ-F(ab')2 (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1052–01</td>
+      <td>1–20 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igκ-FITC (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1050–02</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igκ-FITC (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>550003</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igk-PerCP-Cy5.5 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>560668</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igλ-FITC (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553434</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igλ-PE (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>407307</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM-F(ab')2 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-006-020</td>
+      <td>1–20 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM-HRP (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1020–05</td>
+      <td>(1:2000); secondary for ELISA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM[a]-Biotin (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>408603</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM[a]-FITC (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>408606</td>
+      <td>(1:100); (1:400) for plasma cell</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM[a]-PE (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>553517</td>
+      <td>(1:100); (1:400) for plasma cell</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM[b]-Biotin (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>406204</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM[b]-PE (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>406208</td>
+      <td>(1:100); (1:400) for plasma cell</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM-APC (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>17-5790-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC-2-APC (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>20–5321 U100</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse-IgG(H + L)-HRP (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1031–05</td>
+      <td>(1:5000); secondary for western blots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nur77-PE (mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>12-5965-80</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pERK (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4377S</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pS6 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4856S</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit-IgG-APC (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-136-152</td>
+      <td>(1:100); secondary for pERK/pS6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit-IgG(H + L)-HRP (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>4050–05</td>
+      <td>(1:5000); secondary for western blots</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nr4a1 forward primer</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td>gcctagcactgccaaattg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nr4a1 reverse primer</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td>ggaaccagagagcaagtcat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH forward primer</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td>aggtcggtgtgaacggatttg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH reverse primer</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td>tgtagaccatgtagttgaggtca</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP-RSA</td>
+      <td>Biosearch</td>
+      <td>N-5054–100</td>
+      <td>Conj. ratio: 10</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP-BSA</td>
+      <td>Biosearch</td>
+      <td>N-5050H-100</td>
+      <td>Conj. ratio: 23</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-HRP</td>
+      <td>SouthernBiotech</td>
+      <td>7100–05</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-APC</td>
+      <td>Tonbo</td>
+      <td>20–4317 U500</td>
+      <td>(1:100-1:400)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-Pacific Blue</td>
+      <td>Life Technologies</td>
+      <td>S11222</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-PerCP-Cy5.5</td>
+      <td>BD Pharmingen</td>
+      <td>551419</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-FITC</td>
+      <td>Biolegend</td>
+      <td>405202</td>
+      <td>(1:100-1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CXCL12</td>
+      <td>Peprotech</td>
+      <td>300-28A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP-PE</td>
+      <td>Biosearch</td>
+      <td>N-5070–1</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-Lysine</td>
+      <td>Sigma</td>
+      <td>P2636-100MG</td>
+      <td>100 μg/mL in 0.1 M Tris-HCl pH7.3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly dA-dT</td>
+      <td>Sigma</td>
+      <td>P0883-50UN</td>
+      <td>0.2 U/mL in 0.1 M Tris-HCl pH7.3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>Sigma</td>
+      <td>L8274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CpG</td>
+      <td>InvivoGen</td>
+      <td>tlrl-1826b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pam3CSK4</td>
+      <td>InvivoGen</td>
+      <td>tlrl-pms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Indo-1, AM</td>
+      <td>Life Technologies</td>
+      <td>I-1223</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Live/Dead Fixable Near-IR Dead Cell Stain Kit</td>
+      <td>Invitrogen</td>
+      <td>L10119</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ECL Luminol; Oxidizer Reagents</td>
+      <td>Perkin Elmer</td>
+      <td>0RT2751; 0RT2651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>3,3',5,5'-Tetramethylbenzidine, Slow Kinetic Form</td>
+      <td>Sigma</td>
+      <td>T4319-100ML</td>
+      <td>ELISA substrate</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo LLC</td>
+      <td></td>
+      <td>Version 9.9.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>Version 7.0b</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Canopy</td>
+      <td>Enthought</td>
+      <td></td>
+      <td>Version 1.4.1.1975</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Binning program in Figure 1F</td>
+      <td>Other</td>
+      <td></td>
+      <td>Source code provided in this publication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD Microtainer Capillary Blood Collector</td>
+      <td>Fisher</td>
+      <td>365967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PtC-Rhodamine (DOPC/CHOL Liposomes)</td>
+      <td>FormuMax</td>
+      <td>F60103F-R</td>
+      <td>(1:1000); used in PtC-specific B1a staining</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NuPAGE 4–12% Bis-Tris Protein Gels</td>
+      <td>Invitrogen</td>
+      <td>NP0335BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon-P PVDF Membrane</td>
+      <td>EMD Millipore</td>
+      <td>IPVH00010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Assay Plate, 96 Well, No Lid, Vinyl</td>
+      <td>Costar</td>
+      <td>2595</td>
+      <td>Used for ELISA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Nur77-eGFP mice and Lyn−/− mice have been previously described (Chan et al., 1997; Zikherman et al., 2012). BAFF Tg mice were originally generated in the Nemazee lab, and express BAFF under the control of the myeloid promoter human CD68 (Gavin et al., 2005) (source: MMRRC UC Davis). IgD-/- and IgM−/− mice were previously described, and the former were generously shared by Dr. Hassan Jumaa (Lutz et al., 1998; Nitschke et al., 1993). TLR7−/−, CD40L−/−, Unc93b13d/3d, Nr4a1−/−, and MB1-Cre MyD88fl/fl mice were previously described (Hobeika et al., 2006; Hou et al., 2008; Lee et al., 1995; Lund et al., 2004; Renshaw et al., 1994; Tabeta et al., 2006). All strains were backcrossed to the C57BL/6 genetic background for at least six generations. Mice were used at 5–12 weeks of age for all functional and biochemical experiments unless otherwise noted. Germ-free (GF) and specific pathogen free (SPF) C57BL/6 mice used for direct comparison were purchased from Taconic and Jackson Laboratory and kept in microisolators under GF or SPF (ISOcage P - Bioexclusion System, Tecniplast) conditions. All GF mice were housed in closed caging systems and provided with standard irradiated chow diet, acidified water and housed under a 12 hr light cycle; 7-week-old males mice were used. GF and control mice were generously provided by Drs. Sergio Baranzini and Anne-Katrin Proebstel at UCSF. All other mice used in our studies were housed in a specific pathogen free facility at UCSF according to the University Animal Care Committee and National Institutes of Health (NIH) guidelines.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 Fluorescently-conjugated or biotin-conjugated antibodies to B220, CD5, CD19, CD21, CD23, CD69, CD86, CD93 (AA4.1), CD95 (Fas), CD138, CXCR4, IgA, IgM, IgM[a], IgM[b], IgD, IgD[a], IgG1[a], IgG1[b], Igκ, Igλ, GL-7, MHC Class II, and fluorescently-conjugated streptavidin were from Biolegend, eBiosciences, BD Biosciences, Tonbo, or Life Technologies. NP-PE was from Biosearch Technologies. 100 nm Rhodamine PtC liposomes were from FormuMax. Antibodies for intra-cellular staining, pErk Ab (clone 194g2) and pS6 Ab (2F9), were from Cell Signaling Technologies, and Nur77 Ab (clone 12.14) conjugated to PE was from eBioscience. Goat anti-mouse IgM F(ab’)2 was from Jackson Immunoresearch. Goat anti-mouse Igκ and goat F(ab’)2 anti-mouse Igκ were from Southern Biotech. Anti-IgD was from MD Biosciences. CXCR4 ligand (CXCL12/hSDF-1α) was from Peprotech. LPS (Cat. L8274) was from Sigma. CpG DNA (ODN 1826 Biotin; Cat. tlrl-1826b) and Pam3CSK4 (Cat. tlrl-pms) were from InvivoGen.
 
-## Flow cytometry and data analysis
+### Flow cytometry and data analysis
 
 Cells were stained with indicated antibodies and analyzed on a Fortessa (Becton Dickson) as previously described (Hermiston et al., 2005). Data analysis was performed using FlowJo (v9.7.6) software (Treestar Incorporated, Ashland, OR). Statistical analysis and graphs were generated using Prism v6 (GraphPad Software, Inc). Figures were prepared using Illustrator CS6 v16.0.0. Median Igk levels (Figure 1F) were calculated for 200 equally sized ‘bins’ spanning the Nur77-eGFP spectrum using Canopy v1.4.1 (Enthought); source code is provided, and parameters can be modified to condense any 2D FACS plot for comparisons of multiple samples.
 
-## Statistics and replicates
+### Statistics and replicates
 
 We define biological replicates as independent analyses of cells isolated from different mice of the same genotype, and we define technical replicates as analyses of cells isolated from the same mouse and used in the same experiment. When technical replicates were used, we averaged them to calculate a value for the biological replicate. All reported values and statistics correspond to biological replicates only, and all ‘n’ values reported reflect the number of biological replicates. Wherever MFIs are directly compared, we collected all samples in a single experiment to avoid potential error that could arise from fluctuations in our flow cytometers. In some instances, MFI ratios were compiled from different experiments for statistical purposes, but qualitative findings were consistent experiment to experiment. As our panels reproducibly generated flow plots with well-defined populations, population sizes were calculated from data compiled from different experiments. When comparing two groups, we employed Welch’s t test, which is more stringent than Student’s t test and does not assume that the groups have the same standard deviation. We used paired difference t tests when studying parameters in allotype-heterozygous mice that are sensitive to cell-extrinsic factors (e.g. dose of immunogen or severity of autoimmune disease). When comparing three genotypes (e.g. receptor levels on WT vs. IgM−/−vs. IgD−/− B cells), we used one-way ANOVA and Tukey’s multiple comparison test to calculate p values.
 
-## Intracellular Nur77, pErk and pS6 staining
+### Intracellular Nur77, pErk and pS6 staining
 
 Ex vivo or following stimulation, cells were fixed in 2% paraformaldehyde, permeabilized with 100% methanol, and stained with anti-Nur77, anti-pErk, or anti-pS6 followed by lineage markers and secondary antibodies if needed.
 
-## Intracellular plasma cell staining
+### Intracellular plasma cell staining
 
 Cells were fixed in 2% paraformaldehyde and permeabilized in BD Perm/Wash. Stains for antibody isotypes and allotypes were prepared in BD Perm/Wash.
 
-## Intracellular calcium flux
+### Intracellular calcium flux
 
 Cells were loaded with 5 μg/mL Indo-1 AM (Life Technologies) and stained with lineage markers. Cells were rested at 37 C for 2 min, and Indo-1 fluorescence was measured immediately prior to stimulation to calculate basal calcium, and for at least two minutes following addition of stimulus.
 
-## In vitro B cell stimulation
+### In vitro B cell stimulation
 
 Splenocytes or lymphocytes were harvested into single cell suspension, subjected to red cell lysis using ACK buffer, and plated at a concentration of 7.5 × 105 cells/200 μL in round bottom 96 well plates in complete RPMI media with stimuli for 18 hours prior to analysis. In vitro cultured cells were stained using fixable near IR live/dead stain (Life technologies) per manufacturer’s instructions.
 
-## ELISA
+### ELISA
 
 Serum antibody titers for total IgM, total IgD, anti-dsDNA IgG2a, and NP-specific IgG1 were measured by ELISA. For total IgM and total IgD, 96-well plates (Costar) were coated with 1 μg/mL anti-IgM F(ab’)2 (Jackson) or 1 μg/mL anti-IgD (BD 553438), respectively. Sera were diluted serially, and total IgM and total IgD were detected with anti-IgM-biotin (eBioscience) and SA-HRP (Southern Biotech) or anti-IgD-HRP (American Research Products). dsDNA plates were generated by serially coating plates with 100 μg/mL poly-L-lysine (SigmaAldrich) and 0.2 U/mL poly dA-dT (SigmaAldrich) in 0.1 M Tris-HCL pH 7.6. Sera were diluted serially on dsDNA plates, and autoantibodies were detected with IgG2[a]-biotin, IgG2a[b]-biotin, and SA-HRP. NP plates were generated by coating 96-well plates with 1 μg/mL NP-BSA (Biosearch, conjugation ratio 23) in PBS. Sera from NP-RSA immunized and unimmunized mice were diluted serially, and NP-specific IgG1 was detected with IgG1[a]-biotin, IgG1[b]-biotin, and SA-HRP. All ELISA plates were developed with TMB (Sigma) and stopped with 2N sulfuric acid. Absorbance was measured at 450 nm. For total IgM, total IgD, and dsDNA IgG2a, OD values or OD ratios were calculated and displayed. For NP-specific IgG1, titers were calculated at OD = 0.2 and normalized such that the average IgG1[a]/IgG1[b] ratio in immunized Balb/c-C57BL/6 F1 mice equals 1.0.
 
-## B cell purification and western blots
+### B cell purification and western blots
 
 Splenic B cells were purified by negative selection with a MACS kit according to manufacturer’s protocol (Miltenyi Biotech, cat# 130-090-862). Purified B cells were lysed in 2N 4X SDS and boiled at 95 C for 5 min. 500,000 cells per lane were loaded onto NuPAGE 4–12% Bis-Tris gels (Invitrogen NP0335), run for 50 min at 200V, and transferred onto PVDF membranes using an XCell II Blot Module (Invitrogen). Membranes were blocked with 3% BSA. Proteins were detected with rabbit monoclonal anti-Ets1 (Epitomics, custom lot provided by Lee Ann Garrett-Sinha), mouse anti-mouse GAPDH (Santa Cruz Biotechnology 32233), and HRP-conjugated secondary antibodies goat anti-rabbit IgG (H + L) and goat anti-mouse IgG (H + L) (SouthernBiotech). Membranes were developed with Western Lightning Plus ECL (Perkin Elmer 0RT2651 and 0RT2751) and imaged using a ChemiDoc Touch Imaging System (Bio-Rad). Quantifications were performed using Image Lab v. 5.2.14 (Bio-Rad).
 
-## Immunizations
+### Immunizations
 
 Mice were immunized i.p. with 200 uL of 10% sheep red blood cells (Rockland R406-0050) diluted in PBS. Mice were sacrificed 5 days after immunization, and serum and spleens were harvested. Mice were immunized i.p. with 100 ug of NP-conjugated rabbit serum album (NP-RSA, Biosearch N-5054–10, conjugation ratio 10) prepared in PBS with Alhydrogel 1% adjuvant (Accurate Chemical and Scientific Corp. 21645-51-2). NP-RSA immunized mice were sacrificed 7–8 days following immunization, and serum and spleens were harvested. To ensure that our calculated values accurately reflect the magnitude and variability of immune responses induced by immunization, we analyzed all mice that had larger plasma cell and germinal center compartments than unimmunized mice. One IgM+/− mouse immunized with SRBCs (Figure 7E–F) was excluded because it did not display an expanded plasma cell compartment; no other mice were excluded from analysis.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Splenocytes were lysed in TRIzol (Invitrogen) and stored at −80 C. cDNA was prepared using a SuperScriptIII kit (Invitrogen). Quantitative PCR reactions were run on a QuantStudio 12K Flex thermal cycler (Applied Biosystems) with FastStart Universal SYBR Green Master Mix (Roche). Nr4a1 (forward: gcctagcactgccaaattg; reverse: ggaaccagagagcaagtcat) and GAPDH (forward: aggtcggtgtgaacggatttg; reverse: tgtagaccatgtagttgaggtca) primers were used at 250 nM each.

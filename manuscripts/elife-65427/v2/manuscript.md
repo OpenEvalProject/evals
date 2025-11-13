@@ -32,55 +32,87 @@ Here, we show that disruption of cilia and ciliary signaling in individual postn
 
 ## Results
 
-## Neuronal morphology is unaffected upon acute disruption of ciliary signaling in the postnatal cortex
+### Neuronal morphology is unaffected upon acute disruption of ciliary signaling in the postnatal cortex
 
 Ciliogenesis in neocortical pyramidal neurons occurs progressively during early postnatal development, beginning at birth, with cilia reaching maximal lengths after several weeks (Arellano et al., 2012). To assess the development of cilia in cultured postnatal cortical neurons, we dissociated neurons from visual cortex of Long-Evans rat pups at postnatal days 0–1 (P0-1), and plated them onto beds of confluent astrocytes as described previously (Pratt et al., 2003; Tatavarty et al., 2020). After 11 days in vitro (DIV), the majority of cortical neurons extended a single primary cilium from their soma, as assessed via staining with the neuronal cilia markers ARL13B and AC3 (Figure 1A,B; Berbari et al., 2007; Bishop et al., 2007; Caspary et al., 2007; Sipos et al., 2018). To ask whether cilia distribution and length are similar between excitatory and inhibitory neurons, we quantified the percentage of GAD67-positive (inhibitory interneurons) and GAD67-negative (excitatory) neurons containing cilia. Approximately 90% of both cell types exhibited cilia of lengths similar to those of postnatal neocortical neurons in vivo (Arellano et al., 2012; Figure 1A–C). Cilia lengths varied as expected (Arellano et al., 2012), but were similar across cell types (Figure 1C). These observations indicate that both excitatory and inhibitory postnatal cortical neurons contain primary cilia in culture at DIV11.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images of a DIV11 pyramidal neuron expressing GFP (top), and an inhibitory neuron immunolabeled with GAD67 antibodies (bottom). Cilia (arrows) are immunolabeled using antibodies against AC3 and ARL13B (top) or ARL13B alone (bottom). Scale bars: 5 μm. (B) Percentage of inhibitory (GAD67+) and excitatory (GAD67−) neurons containing cilia immunolabeled with antibodies against AC3 and/or ARL13B. n = 150 total; three dissociations. (C) Lengths of cilia in excitatory and inhibitory neurons. Each dot is a measurement from a single neuron. Bars are average ± SEM. n: GAD67+ = 44, GAD67− = 46; five dissociations. (D) Representative images of neurons expressing GFP alone (top) or shArl13b_1 and GFP (see Key Resources) (bottom). Cilia were immunolabeled with antibodies against AC3 and ARL13B. Images at right show enlarged (2.5×) views of cilia (yellow boxes). Scale bars: 5 μm. (E and F) Relative fluorescence intensities of immunolabeled ciliary ARL13B (E) and cilia lengths (F) in neurons transfected with the indicated plasmids. Each dot is a measurement from a single neuron. Values in (E) are normalized to intensity in control neurons. Bars are average ± SEM. *** indicates p<0.001 for the indicated conditions (Kruskal–Wallis with Dunn’s multiple comparisons test). n: Control = 34, shArl13b_1 = 43, shArl13b_2 = 40; four dissociations. (G) Representative images of pyramidal neurons expressing GFP alone (control) or shArl13b_1 and GFP. Scale bar: 50 μm. (H and I) Total lengths (H) and number of branch points (I) of apical-like dendritic arbors of neurons expressing GFP or shArl13b_1 and GFP. Each dot is a measurement from a single neuron. Bars are average ± SEM. n: Control = 32, shArl13b_1 = 28; four dissociations. Here and below, statistical tests used and exact p-values for each comparison are shown in Supplementary file 1. Also see Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Relative fluorescence intensities of immunolabeled ciliary ARL13b (A) and cilia lengths (B) in neurons transfected with the indicated plasmids 48 hr post-transfection. Each dot is a measurement from a single neuron. Values in A are normalized to values in controls. Bars are average ± SEM. ** and *** indicate p<0.01 and 0.001 for the indicated conditions (Wilcoxon rank-sum). n: Control = 19, shARL13b_2 = 26; three dissociations. (C) Representative images of DIV11 pyramidal neurons expressing the indicated plasmids 48 hr post-transfection. Scale bar: 50 μm. (D and E) Total lengths (D) and branch points (E) of apical-like dendritic arbors of cultured pyramidal neurons expressing the indicated constructs at 48 hr post transfection. Each dot is a measurement from a single neuron. Bars are average ± SEM. n: Control = 21, shArl13b_2 = 14, shIft88/shCep164 = 17; three dissociations. (F and G) Relative fluorescence intensities of immunolabeled ciliary IFT88 (F) and cilia lengths (G) in neurons transfected with the indicated plasmids 24 or 48 hr post-transfection. Each dot is a measurement from a single neuron. Values in F are normalized to values in controls. Bars are average ± SEM. *, **, and *** indicate p<0.05, p<0.01, and p<0.001, respectively for the indicated conditions. n: (24 hr) Control = 23, shIft88/shCep164 = 25; three dissociations; (48 hr) Control = 43, shCep164 = 20; shIft88 = 17, shIft88/shCep164 = 23; three dissociations. (H) Representative images of neurons expressing GFP alone (top) or shIft88/shCep164 and GFP (bottom). Cilia were immunolabeled with antibodies against AC3 and IFT88. Images at right show enlarged (2.5×) views of cilia (yellow boxes). Scale bars: 5 μm.
 
 Since dendritic arbors are dynamic in these young postsynaptic neurons (Pratt et al., 2008; Pratt et al., 2003), we asked whether acute perturbation of ciliary signaling impacts dendritic morphology. To perturb cilia in a cell-autonomous manner, we transfected DIV9-10 cortical cultures at low efficiency (5–10 neurons transfected/dish) with GFP alone, or GFP and one of two shRNAs targeting the ciliary small GTPase Arl13b (shArl13b_1 and shArl13b_2). In this and all further experiments, GFP was used to identify and target transfected neurons for immunohistochemical or electrophysiological analysis. Mutations in Arl13b have been shown to affect ciliary signaling without fully truncating cilia (Caspary et al., 2007; Cevik et al., 2010; Larkins et al., 2011; Lu et al., 2015). Pyramidal neurons transfected with either shRNA for 24 or 48 hr showed a reduction in total immunolabeled ARL13B fluorescence in cilia by ~50% as compared to non-transfected control cells (Figure 1D,E, Figure 1—figure supplement 1A), indicating that both shRNAs were effective at rapidly knocking down ARL13B (henceforth referred to as acute knockdown). This reduction in ARL13B was sufficient to shorten cilia (assessed using AC3 fluorescence) in these postnatal pyramidal neurons (Figure 1F, Figure 1—figure supplement 1B), as reported previously in other cell types (Caspary et al., 2007; Cevik et al., 2010; Larkins et al., 2011; Lu et al., 2015). However, in contrast to the significant reduction in dendritic complexity observed upon prolonged conditional Arl13b deletion in striatal interneurons (Guo et al., 2017), acute and cell-autonomous knockdown of ARL13B for 24 or 48 hr had no impact on the total length of apical-like dendrites, or on the number of dendritic branch points (Figure 1G–I, Figure 1—figure supplement 1C–E).
 
 Since knockdown of ARL13B affects ciliary signaling but does not fully truncate cilia (Caspary et al., 2007; Higginbotham et al., 2012; Higginbotham et al., 2013), we tested whether more severe disruption of cilia structure is sufficient to rapidly alter neuronal morphology. The basal body component CEP164 and the intraflagellar transport protein IFT88 are essential for ciliogenesis and cilia maintenance (Graser et al., 2007; Pazour et al., 2000). shRNA-mediated knockdown of either IFT88 or CEP164 alone led to only a modest knockdown even after 48 hr with a concomitant weak effect on cilia length (Figure 1—figure supplement 1F,G). However, while co-expression of shIft88 and shCep164 reduced IFT88 immunofluorescence by ~30% after 24 hr, co-transfection of both shRNAs reduced IFT88 immunofluorescence by ~70% after 48 hr (Figure 1—figure supplement 1F,H). Consistently, co-transfection of shIft88 and shCep164 also resulted in severely truncated cilia after 48 hr of transfection (Figure 1—figure supplement 1G,H). Despite the dramatic disruption of cilia structure under these conditions, we again observed no gross effects on pyramidal neuron morphology (Figure 1—figure supplement 1C–E). We conclude that acute cilia disruption does not strongly impact short-term maintenance of postnatal pyramidal neuron dendritic morphology.
 
-## Acute knockdown of ARL13B selectively strengthens excitatory synapses
+### Acute knockdown of ARL13B selectively strengthens excitatory synapses
 
 Conditional, prolonged depletion of ARL13B at postnatal stages alters not only morphology but also connectivity of striatal interneurons (Guo et al., 2017). Moreover, cilia disruption for weeks to months induces loss of climbing fibers synapses onto Purkinje cells and reduces synaptic integration of adult-born dentate granule cells (Bowie and Goetz, 2020; Kumamoto et al., 2012). We wondered whether cell-autonomous disruption of cilia function is sufficient to regulate the strength or number of excitatory and/or inhibitory synapses on a more rapid timescale (24–48 hr).
 
 To address this issue, we acutely disrupted cilia via transfection of shArl13b, or co-transfection of shCep164 and shIft88, into DIV9-10 cultured pyramidal neurons. We then fixed and immunostained these cultures after 24 or 48 hr using antibodies against the excitatory presynaptic marker VGlut1, and the postsynaptic AMPA-type glutamate receptor (AMPAR) subunit GluA2 under non-permeant conditions to label surface receptors; sites of colocalization are considered putative excitatory synaptic sites (Figure 2A,B). Manipulation of cilia signaling using either method increased the intensity of the surface synaptic GluA2 signal; this increase was evident at both 24 hr and 48 hr after transfection with shArl13b, and at 48 hr after transfection with shIft88 and shCep164 (Figure 2C), indicating that reducing ciliary function increases the synaptic accumulation of AMPAR. Postsynaptic reduction of cilia function with shArl13b_1 also increased presynaptic expression of VGlut1, although this change was less robust (Figure 2—figure supplement 1A). Quantification of the density of putative excitatory synapses along dendritic arbors also revealed a significant increase in excitatory synapse density that was evident at 48 hr after knockdown (Figure 2D). Thus, acute and cell-autonomous cilia disruption increases both the number of excitatory synapses and the accumulation of synaptic AMPAR. Together, these changes are predicted to enhance excitatory synaptic drive.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig2-v2.jpg)
+
+**Figure 2.:** (A, B, and E) Representative images of pyramidal neuron dendrites immunolabeled with antibodies against GluA2 and VGlut1 (A and B), or Gephyrin and GAD65 (E). Cultures were transfected with GFP alone or together with the indicated plasmids. Scale bars: 5 μm. (C) Relative fluorescence intensity of immunolabeled GluA2 at GluA2 /VGlut1 colocalized puncta for indicated conditions at 24 hr or 48 hr following transfection. Intensity values are normalized to controls. Each dot is the average summed pixel value for all measured synapses from a given neuron. Bars are average ± SEM. ** and *** indicate p<0.01 and 0.001, respectively, for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons). n: Control = 25 (24 hr) and 32 (48 hr), shArl13b_1 = 24, shArl13b_2 = 19, shIft88/shCep164 = 39; four dissociations. (D) Number of colocalized GluA2/VGlut1 puncta per μm of dendrite analyzed (density) onto neurons transfected with the indicated plasmids at 24 hr or 48 hr following transfection. Each dot is the density of synapses examined per neuron. Bars are average ± SEM. * indicates p<0.05 for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons); additional p-values are also indicated. n: As in C. (F) Relative fluorescence intensity of immunolabeled Gephyrin at colocalized puncta on neurons transfected with the indicated plasmids at 24 hr or 48 hr following transfection. Intensity values are normalized to values in control neurons. Each dot is the average summed pixel value for all measured synapses from a given neuron. Bars are average ± SEM. n: Control = 17 (24 hr), shArl13b_1 = 22 neurons; four dissociations; and Control = 25 (48 hr), shArl13b_2 = 19, shIft88/shCep164 = 23; three dissociations. (G) Number of colocalized Gephryin/GAD65 puncta per μm of dendrite analyzed (density) onto neurons transfected with the indicated plasmids at 24 hr or 48 hr following transfection. Each dot is the density of synapses examined per neuron. Bars are average ± SEM. n: As in F. Also see Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Relative fluorescence intensity of immunolabeled VGlut1 (A) or GAD65 (B) at GluA2/VGlut1 or Gephyrin/GAD65 colocalized puncta, respectively, in neurons transfected with the indicated plasmids at 24 hr or 48 hr post transfection. Intensity values are normalized to values in controls. Each dot is the average summed pixel value of examined synapses per neuron. Bars are average ± SEM. * indicates p<0.05 for the indicated conditions; additional p-values are also indicated. (A) n: (24 hr) Control = 25, shArl13b_1 = 24; (48 hr) Control = 32, shArl13b_2 = 19, shIft88/shCep164 = 39; four dissociations. (B) n: (24 hr) Control = 17, shArl13b_1 = 22 neurons; four dissociations; (48 hr) Control = 25, shArl13b_2 = 19, shIft88/shCep164 = 23; three dissociations.
+
 Since the balance between excitation and inhibition (E/I balance) is determined by the relative drive from glutamatergic and GABAergic neurons, we next asked whether ciliary signaling also impacts inhibitory synapses. Different inhibitory interneuron subtypes preferentially synapse onto different compartments of cortical pyramidal neurons (Kepecs and Fishell, 2014; Tremblay et al., 2016; Urban-Ciecko and Barth, 2016). Somatic synapses are difficult to quantify in culture due to the density of somata, so we focused on the more readily quantifiable inhibitory synapses that contact the apical-like dendrites of pyramidal neurons. We used colocalization of GAD65 (a presynaptic inhibitory marker) and Gephyrin (a postsynaptic inhibitory marker) to identify putative inhibitory synapses (Figure 2E); we observed no significant change in the fluorescence intensities of either marker after either 24 or 48 hr following transfection with either shArl13b alone or shIft88 and shCep164 together (Figure 2E,F, Figure 2—figure supplement 1B). Inhibitory synapse density was also unaltered following acute cilia disruption at either time point (Figure 2G). We infer that under our experimental conditions, ciliary signaling acutely regulates excitatory but not inhibitory synapses onto cultured postnatal pyramidal neurons.
 
-## Acute knockdown of ARL13B increases AMPAR-mediated glutamatergic currents
+### Acute knockdown of ARL13B increases AMPAR-mediated glutamatergic currents
 
 Since fast glutamatergic transmission is mainly mediated by AMPAR (Huganir and Nicoll, 2013; Traynelis et al., 2010), increased accumulation of this receptor at the postsynaptic membrane is predicted to increase the strength of excitatory synapses. We tested this by recording AMPAR-mediated miniature excitatory postsynaptic currents (mEPSCs), which represent the postsynaptic response to release of individual vesicles of glutamate; the amplitude of these currents is a direct correlate of postsynaptic strength. To isolate and measure mEPSCs, we obtained whole cell voltage clamp recordings from DIV11 control or shArl13b-transfected neurons in the presence of tetrodotoxin (to block spike-mediated release), APV (to block NMDA receptor-mediated currents), and picrotoxin (to block GABAA-mediated currents) (Figure 3A, left). Consistent with the increased accumulation of synaptic AMPAR, neurons whose cilia were acutely disrupted had larger AMPAR-mediated mEPSCs compared to transfected controls (Figure 3A, right). Analysis of the cumulative probability distribution function of individual events showed that both manipulations shifted the amplitude distributions toward larger values (Figure 3B). mEPSC frequency is quite variable in culture and was not significantly affected by cilia disruption at 24 hr (Figure 3C). The increase in mEPSC amplitude caused by cilia disruption was not caused by changes in passive electrical properties, as input resistance (which can affect voltage clamp efficacy) and resting potentials (a measure of cell health) were unaltered (Figure 3D,E). These results indicate that ciliary signaling acts cell-autonomously to rapidly increase excitatory postsynaptic strength.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig3-v2.jpg)
 
-**Figure 3.:** (A) (Left) Representative mEPSC traces (top) and average waveforms (bottom) from neurons transfected with the indicated plasmids. (Right) mEPSC amplitude from neurons transfected with the indicated plasmids. Each dot represents the average amplitude for a given neuron. Bars are average ± SEM. ** indicates the difference between indicated values at p<0.01 (Kruskal–Wallis with Dunn’s multiple comparisons test). n: Control = 24, shArl13b_1 = 24, shArl13b_2 = 23; >5 dissociations. (B and C) Cumulative distribution probabilities of mEPSC amplitudes (B) and inter-event intervals (C) from neurons transfected with the indicated plasmids. *** indicates the difference from control at p<0.001 (Kruskal–Wallis with Bonferroni correction). (D and E) Average resting membrane potential (Vm) (D) and input resistance (Rin) (E) of neurons transfected with the indicated plasmids. Each dot represents a single neuron. Bars are average ± SEM. n: As in A.  Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) (Left) Representative mEPSC traces (top) and average waveforms (bottom) from neurons transfected with the indicated plasmids. (Right) mEPSC amplitude from neurons transfected with the indicated plasmids. Each dot represents the average amplitude for a given neuron. Bars are average ± SEM. ** indicates the difference between indicated values at p<0.01 (Kruskal–Wallis with Dunn’s multiple comparisons test). n: Control = 24, shArl13b_1 = 24, shArl13b_2 = 23; >5 dissociations. (B and C) Cumulative distribution probabilities of mEPSC amplitudes (B) and inter-event intervals (C) from neurons transfected with the indicated plasmids. *** indicates the difference from control at p<0.001 (Kruskal–Wallis with Bonferroni correction). (D and E) Average resting membrane potential (Vm) (D) and input resistance (Rin) (E) of neurons transfected with the indicated plasmids. Each dot represents a single neuron. Bars are average ± SEM. n: As in A.
 
-## Acute knockdown of ARL13B increases spontaneous firing without affecting intrinsic excitability
+### Acute knockdown of ARL13B increases spontaneous firing without affecting intrinsic excitability
 
 Increasing excitatory synapse number and strength without a concomitant change in inhibitory synapses would be expected to increase net excitatory synaptic drive and elicit more action potentials. To investigate whether knockdown of ARL13B increases firing, we performed whole cell patch clamp recordings in current clamp under conditions where network activity was intact and synaptic drive can elicit action potentials (Figure 4A). To compensate for differences in resting potential across neurons, a small DC current was injected to maintain the inter-spike membrane potential close to −55 mV (see Materials and methods). We targeted control or knockdown GFP-transfected neurons, recorded firing driven by network activity, and calculated the mean firing rate. As expected, we observed a broad distribution of mean firing rates (Trojanowski et al., 2021; Turrigiano et al., 1998); this distribution was shifted toward larger values after acute ARL13B knockdown, such that mean firing rate roughly doubled upon this manipulation (Figure 4A, right).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig4-v2.jpg)
 
-**Figure 4.:** (A) (Left) Representative voltage traces of spontaneous activity recorded from pyramidal neurons expressing GFP alone or shArl13b_1 and GFP. (Right) Average spontaneous firing rate for neurons transfected with the indicated plasmids. Each dot represents one neuron. Bars are average ± SEM. * indicates different between indicated values at p<0.05 (Wilcoxon rank-sum test). n: Control = 32, shArl13b_1 = 25; >5 dissociations. (B) (Left) Representative responses of pyramidal neurons expressing GFP or shArl13b_1 and GFP during current injection. (Right) Average instantaneous firing rate vs current curves for neuron transfected with the indicated plasmids. Errors are SEM. n: Control = 18, shArl13b_1 = 20; three dissociations.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) (Left) Representative voltage traces of spontaneous activity recorded from pyramidal neurons expressing GFP alone or shArl13b_1 and GFP. (Right) Average spontaneous firing rate for neurons transfected with the indicated plasmids. Each dot represents one neuron. Bars are average ± SEM. * indicates different between indicated values at p<0.05 (Wilcoxon rank-sum test). n: Control = 32, shArl13b_1 = 25; >5 dissociations. (B) (Left) Representative responses of pyramidal neurons expressing GFP or shArl13b_1 and GFP during current injection. (Right) Average instantaneous firing rate vs current curves for neuron transfected with the indicated plasmids. Errors are SEM. n: Control = 18, shArl13b_1 = 20; three dissociations.
 
 Spontaneous firing could also be enhanced if the intrinsic excitability of neurons was increased by cilia disruption. Intrinsic excitability is controlled by the balance of voltage-gated ion channels in the cell membrane which determine how many action potentials a neuron fires for a given amount of depolarizing current. To determine whether cilia disruption impacts the intrinsic excitability of pyramidal neurons, we pharmacologically blocked excitatory and inhibitory synaptic currents (see Materials and methods), injected direct current steps to evoke spikes, and then plotted the number of spikes evoked as a function of injected current to generate firing rate vs current (F–I) curves. Knockdown of ARL13B had no significant impact on intrinsic excitability (Figure 4B). Taken together with the lack of an effect on passive neuronal properties and dendritic arborization, these data show that intrinsic neuronal excitability and morphology are unaffected by acute and cell-autonomous manipulation of cilia. Instead, the increase in mean firing rate is likely driven by the increase in number and strength of excitatory synapses.
 
-## The SSTR3 neuropeptide receptor is largely restricted to the cilia of excitatory neurons in the postnatal cortex
+### The SSTR3 neuropeptide receptor is largely restricted to the cilia of excitatory neurons in the postnatal cortex
 
 Cilia specifically localize multiple neuropeptide receptors, a subset of which has been implicated in the regulation of neuronal and circuit properties in the developing and mature brain (Einstein et al., 2010; Guo et al., 2017; Hilgendorf et al., 2016; Loktev and Jackson, 2013; Mykytyn and Askwith, 2017). In particular, the somatostatin receptor 3 (SSTR3) is widely expressed in the brain and is commonly employed as a marker for neuronal cilia (Berbari et al., 2007; Guadiana et al., 2016; Händel et al., 1999; Schulz et al., 2000; Stanić et al., 2009). Moreover, its endogenous ligand somatostatin is expressed by a subset of cortical interneurons (Gonchar et al., 2007; Lee et al., 2010; Xu et al., 2010). However, the role of somatostatin and SSTR3-mediated signaling in the neocortex is largely uncharacterized.
 
 Expression of SSTR3 begins at birth and increases during postnatal development in the rat hippocampus (Stanić et al., 2009). To begin examining a possible role for ciliary SSTR3 mediated signaling in regulating excitatory synapses in the cortex, we first characterized the expression and localization of this receptor in primary visual cortex in vivo. P15–16 animals were injected with a GFP-expressing AAV viral vector, and 7 days later, brain slices were examined via immunostaining. GFP-expressing pyramidal neurons were identified by their characteristic morphologies, and primary cilia were co-labeled with antibodies against AC3 and SSTR3. We found that the majority of pyramidal neurons in each cortical layer contained cilia positive for both AC3 and SSTR3, with a small subset of cilia expressing AC3 alone (Figure 5A,B). To further assess the expression of SSTR3 in neuronal populations, we immunostained fixed cortical slices for the neuronal marker NeuN and inhibitory neuron marker GAD67 together with SSTR3. We found that SSTR3 was present in the cilia of many although not all neurons across layers (Figure 5—figure supplement 1A,B). In the neocortex, NeuN preferentially marks excitatory neurons (Chattopadhyaya et al., 2004). We noted that while the majority of NeuN-positive neurons expressed ciliary SSTR3 (Figure 5—figure supplement 1A,B), fewer than 10% of neurons that stained weakly with NeuN but were GAD67-positive in each layer expressed SSTR3 (Figure 5—figure supplement 1A,B). The cilia of GAD67-positive interneurons retained expression of AC3 (Figure 5C). These results indicate that ciliary SSTR3 localization is restricted largely to cortical excitatory neurons and is present in only a small fraction of inhibitory neurons.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative images of primary cilia immunolabeled with antibodies against AC3 and SSTR3 in GFP-expressing neurons in fixed cortical slices from P22 animals. Images at right show enlarged (2.5×) views of cilium (yellow box; arrow). Scale bars: 5 μm. (B) Percentage of GFP-expressing pyramidal neurons with primary cilia co-expressing AC3 and SSTR3 categorized by cortical layer. n = 150 neurons per layer; three animals. (C) Representative images of a GAD67-expressing inhibitory neuron in fixed cortical tissue stained with DAPI. Cilia were immunolabeled with antibodies against AC3 and SSTR3. The cilium is indicated with an arrow. Scale bar: 5 μm. (D) Percentage of inhibitory neurons of the indicated subtype containing SSTR3+ primary cilia in fixed cortical tissue. Cilia were identified via co-immunostaining with anti-AC3 or anti-PCTN antibodies. n: GAD67+ = 115, ChAT+ = 31, PV+ = 100, SOM+ = 110; VIP+ = 150; three animals. (E) Representative images of cultured neurons immunolabeled with antibodies against GAD67, ARL13B, and SSTR3, and co-stained with DAPI. Arrows indicate cilia of GAD− (top) and GAD+ (bottom) neurons. Scale bars: 5 μm. (F) Quantification of cultured neurons immunolabeled with antibodies against GAD67, ARL13B, and SSTR3. n = 515 total; four dissociations. Also see Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of NeuN, GAD67, and SSTR3 co-labeling in fixed and immunostained cortical tissue. Center and right panels are enlarged representative images from each indicated layer of cortex. GAD67+ neuronal soma are outlined with dashed lines, arrows point to cilia. Scale bars: 50 μm (left panel) and 5 μm (center and right panels). (B) Quantification of the percentage of neurons positive for NeuN and SSTR3 (left), and GAD67 and SSTR3 (right) by cortical layer. n: NeuN+ = 1520, GAD67+ = 253; six animals. (C) Representative images of inhibitory subtypes of neurons in fixed cortical tissue stained with DAPI. Neurons were immunolabeled with antibodies against indicated subtype-specific markers and either PCTN and SSTR3, or with AC3, PCTN, and SSTR3. PCTN was used to identify centrioles and basal bodies (arrows). Scale bar: 5 μm.
+
 We asked whether the small population of inhibitory neurons expressing ciliary SSTR3 represents a defined inhibitory interneuron subtype. To address this, we immunostained fixed cortical slices with antibodies against SSTR3 and the interneuron subtype-specific markers choline acetyltransferase (ChAT), parvalbumin (PV), somatostatin (SOM), and vasoactive intestinal peptide (VIP). We observed only rare (<5%) ciliary SSTR3 expression in inhibitory interneurons positive for PV and SOM (Figure 5D, Figure 5—figure supplement 1C), suggesting that the small number of SSTR3-positive GABAergic neurons is likely to be an alternate inhibitory neuron subtype(s).
 
 To determine if dissociated cultures also expressed ciliary SSTR3, we co-immunostained cortical cultures for ARL13b and SSTR3. We noted that ~30% of ARL13B-positive cilia on cultured neurons were also positive for SSTR3 at DIV11 (Figure 5E,F), indicating that SSTR3 is expressed at detectable levels in a subset of these young neocortical neurons. The majority of SSTR3-expressing neurons in culture were excitatory, based on the absence of co-staining with the inhibitory neuron-specific marker GAD67 (Figure 5E,F). Importantly, SSTR3 was specifically localized to cilia in all expressing cells (Figure 5E). Taken together, these results indicate that SSTR3 is expressed primarily, if not exclusively, by excitatory neurons in the neocortex, and is localized specifically to their cilia both in vitro and in vivo.
 
-## Ciliary SSTR3 signaling bidirectionally modulates excitatory synapses in culture
+### Ciliary SSTR3 signaling bidirectionally modulates excitatory synapses in culture
 
 Given that SSTR3 is enriched in the cilia of cortical excitatory neurons, and somatostatin is present in, and released by, a subset of inhibitory GABAergic interneurons (Gonchar et al., 2007; Lee et al., 2010; Xu et al., 2010), we examined whether signaling via SSTR3 mediates cilia-dependent modulation of excitatory synapse strength. To manipulate SSTR3 signaling, we took advantage of the previously described SSTR3-selective agonist (L-796,778) and antagonist (MK-4256), which can bidirectionally regulate SSTR3-mediated signaling (He et al., 2012; Rohrer et al., 1998; Rohrer and Schaeffer, 2000) (see Materials and methods). We treated DIV10-11 neuronal cultures for varying periods of time with either the agonist or antagonist, and then fixed and stained for excitatory pre- and post-synaptic markers. Since not all neurons in culture express detectable SSTR3 in their cilia, we additionally immunostained with antibodies against SSTR3 and confined our analysis to neurons with robust SSTR3 expression. Because of species overlap between antibodies, we used Shank3 as the postsynaptic marker for these experiments; Shank3 specifically localizes to excitatory synapses and the intensity of synaptic Shank3 is correlated with postsynaptic strength (Monteiro and Feng, 2017; Tatavarty et al., 2020; Verpelli et al., 2011).
 
 Manipulating SSTR3 signaling induced bidirectional changes in the intensity of both Shank3 and VGlut1 at colocalized sites that developed over several hours (Figure 6A,B, Figure 6—figure supplement 1A). The SSTR3 antagonist significantly increased synaptic Shank3 (Figure 6A,B) and VGlut1 intensity (Figure 6—figure supplement 1A), while the SSTR3 agonist significantly reduced the fluorescence intensities of both markers (Figure 6A,B, Figure 6—figure supplement 1A). The SSTR3 agonist also significantly reduced the density of putative excitatory synapses, while the effects of the antagonist on synapse density did not reach statistical significance (Figure 6C). Experiments were performed using the lowest concentrations of each compound at which synaptic effects were observed (Figure 6—figure supplement 1B,C). Taking advantage of the temporal resolution of these pharmacological experiments, we determined how rapidly these manipulations were able to modulate synaptic properties. We found that the first detectable effects were evident after 18 hr and were more robust after 24 hr of treatment (Figure 6B,C). Neither the agonist nor the antagonist altered cilia lengths (Figure 6—figure supplement 1D) or affected cell viability (Figure 6—figure supplement 1E). These results indicate that SSTR3-mediated signaling can dynamically regulate excitatory synaptic properties and suggest that this neuropeptidergic signaling pathway negatively regulates excitatory synaptic strength.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative images of excitatory neuron dendrites immunolabeled with antibodies against Shank3 (Shk3) and VGlut1. Cultures were treated for 24 hr with 2 μM L-796,798 (SSTR3 agonist; purified – see Materials and methods) or 1 μM MK-4256 (SSTR3 antagonist) prior to staining. Scale bars: 5 μm. (B) Relative fluorescence intensity of Shk3 at colocalized Shk3/VGlut1 puncta on neurons treated with the indicated compounds and fixed and immunostained 6, 18, or 24 hr after addition of drug. Intensity values are normalized to values in control neurons. Each dot is the average summed pixel value of all examined synapses per neuron. Bars are average ± SEM. ** and *** indicate p<0.01 and 0.001, respectively, for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons); additional p-values are also shown. n: (6 hr) Control = 23, agonist = 10, antagonist = 17; (18 hr) Control = 35, agonist = 33, antagonist = 17; (24 hr) Control = 87, agonist = 17, antagonist = 40; ≥3 dissociations. (C) Number of colocalized Shk3/VGlut1 puncta per μm of dendrite analyzed (density) onto neurons treated with the indicated compounds. Cultures were immunostained at the indicated times following addition of the compounds. Each dot is the density of synapses examined per neuron. Bars are average ± SEM. * indicates p<0.05 for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons). n: as in B. (D) Representative images of cilia (arrows) of control or shIft88/shCep164-transfected neurons immunolabeled with antibodies against SSTR3. Scale bars: 5 μm. (E) Relative fluorescence intensity of total Shk3 puncta on neurons transfected with the indicated constructs, then fixed and immunostained 24 hr after addition of DMSO or 2 μM L-796,798 (SSTR3 agonist). Intensity values are normalized to values in GFP+ control neurons. Each dot is the average summed pixel value of all examined puncta per neuron. Bars are average ± SEM. ** and *** indicate p<0.01 and 0.001, respectively, for the indicated conditions (Kruskal–Wallis with Dunn correction for multiple comparisons). n: GFP+ control = 35, GFP + agonist = 46, shIft88/shCep164/GFP = 36, shIft88/shCep164/GFP + agonist = 31; three dissociations. Also see Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65427/elife-65427-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Relative fluorescence intensity of VGlut1 at colocalized Shk3/VGlut1 puncta on neurons treated with 2 μM SSTR3 agonist L-796,798 or 1 μM MK-4256 SSTR3 antagonist. Cultures were immunostained at the shown times following treatment. Intensity values are normalized to values in control neurons. Each dot is the average summed pixel value of all examined synapses per neuron. Bars are average ± SEM. * and ** indicate p<0.05 and 0.01, respectively, for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons); additional p-values are also shown. n: (6 hr) Control = 23, agonist = 10, antagonist = 17; (18 hr) Control = 35, agonist = 33, antagonist = 17; (24 hr) Control = 87, agonist = 17, antagonist = 40; ≥3 dissociations. (B) Relative fluorescence intensities of immunolabeled Shk3 and VGlut1 at colocalized Shk3/VGlut1 puncta. Neurons were treated with the indicated concentrations of the SSTR3 agonist L-796,778 or antagonist MK-4256 for 24 hr. Each dot is the average summed pixel value of examined synapses per neuron. Bars are average ± SEM. *, **, and *** indicate p<0.05, p<0.01, and 0.001, respectively, for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons). n: Control = 87, 0.5 μM agonist = 26, 1 μM agonist = 25, 2 μM agonist = 17, 0.125 μM antagonist = 19, 0.5 μM antagonist = 15, 1 μM antagonist = 40; ≥3 dissociations. (C) Number of colocalized Shk3/VGlut1 puncta per μm of dendrite analyzed (density) on neurons treated with the indicated concentrations of the SSTR3 agonist L-796,778 or antagonist MK-4256 for 24 hr. Each dot is the density of synapses examined per neuron. Bars are average ± SEM. * indicates p<0.05 for the indicated conditions (LMM with Dunnett-type correction for multiple comparisons). n: As in B. (D) Lengths of cilia in neurons treated with SSTR3 agonist and antagonist 24 hr following treatment. Each dot represents a measurement from a single neuron. Bars are average ± SEM. n: Control = 63, 2 μM agonist = 7, 1 μM antagonist = 33; ≥3 dissociations. (E) Fraction of alive and dead neurons at 24 hr following treatment with SSTR3 agonist or antagonist. Neurons were co-stained with propidium iodide and Zombie Green; cells positive for either or both stain were scored as dead. n: Control = 97, 2 μM agonist = 92, 2 μM antagonist = 33; three dissociations.
 
 Although we detected SSTR3 only in the cilia of excitatory neurons, this receptor may nevertheless be present in, and function, elsewhere in the cell. We tested whether the effects of pharmacological manipulation of SSTR3 on synaptic strength are mediated through ciliary signaling. We knocked down cilia function, applied the SSTR3 agonist, and quantified the intensity of the excitatory synaptic marker Shank3 (Figure 6B). Neurons were transfected with GFP alone or with shIft88 and shCep164 for 48 hr, treated with DMSO (control) or SSTR3 agonist for 24 hr, and were then fixed and immunolabeled with antibodies against Shank3 and SSTR3. SSTR3 labeling could be detected in many but not all of the shortened cilia of shRNA-transfected neurons (Figure 6D), indicating that this receptor retained localization to these truncated cilia. Consistent with our previous data set (Figure 6B), the SSTR3 agonist decreased the fluorescence intensity of Shank3 puncta in control (GFP-expressing) neurons (Figure 6E). However, in hairpin-expressing neurons with truncated cilia, the intensity of the Shank3 signal was increased (Figure 6E), also as expected (Figure 2C). Finally, the SSTR3 agonist was not able to reduce Shank3 intensity in neurons with truncated cilia (Figure 6E). Together, these data suggest that SSTR3-mediated modulation of excitatory synapses likely relies on proper cilia function.
 
@@ -100,54 +132,302 @@ Altered E/I balance in central circuits is linked to a wide range of neurodevelo
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Long–Evans</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain:006, RRID:RGD_2308852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pAAV-hSyn-EGFP</td>
+      <td>Bryan Roth via Addgene</td>
+      <td>RRID:Addgene_50465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αAC3 (Mouse monoclonal)</td>
+      <td>Encor</td>
+      <td>Cat#:MCA-1A12, RRID:AB_2744501</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αAC3 (Rabbit polyclonal)</td>
+      <td>Encor</td>
+      <td>Cat#:RPCA-ACIII, RRID:AB_2572219</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αARL13B (Mouse monoclonal)</td>
+      <td>NeuroMab</td>
+      <td>Cat#:N295B/66 (75-287), RRID:AB_234154</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αChAT (Goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:AB144P, RRID:AB_2079751</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αGAD67 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat#:AF2086, RRID:AB_2107724</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αGAD67 (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:MAB5406, RRID:AB_2278725</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αGluA2 (Mouse monoclonal)</td>
+      <td>Gift from Gouaux lab, OHSU</td>
+      <td></td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αIFT88 (Rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>Cat#:13967–1-AP, RRID:AB_2121979</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αPV (Mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#:195 011, RRID:AB_2619884</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αShank3 (Guineapig polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#:162 304, RRID:AB_2619863</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αSOM (Mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:14-9751-82, RRID:AB_2572982</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αSSTR3 (Rabbit polyclonal)</td>
+      <td>Biotrend-USA</td>
+      <td>Cat#:SS-830–50, RRID:AB_2196357</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αVGlut1 (Chicken polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#:135 316, RRID:AB_2619822</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αVGlut1 (Guineapig polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#:135 304, RRID:AB_887878</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αVIP (Guineapig polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#:443 005, RRID:AB_2832228</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1 (plasmid)</td>
+      <td>David Root via Addgene</td>
+      <td>RRID:Addgene_10878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-EGFP (plasmid)</td>
+      <td>Bryan Roth via Addgene</td>
+      <td>RRID:Addgene_50465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUPER (plasmid)</td>
+      <td>OligoEngine</td>
+      <td>Cat#:VEC-PBS-0002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUPER-H1-shCep164</td>
+      <td>This paper</td>
+      <td>pLRT18</td>
+      <td>shRNA: 5’-CAACAACCACATCGAACTTA-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO-U6-shArl13b_1</td>
+      <td>This paper</td>
+      <td>pLRT19</td>
+      <td>shRNA: 5’-CCTGTCAGAAAGGTGACACTT-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUPER-H1-shIft88</td>
+      <td>This paper</td>
+      <td>pLRT26</td>
+      <td>shRNA: 5’-CGAATGGCTTGGAGCTTATTA-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-H1-shArl13b_2-hSyn-EGFP</td>
+      <td>This paper</td>
+      <td>pLRT67</td>
+      <td>shRNA: 5’-GCTCAGGACATGATCTCATAA-3'</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie Green Fixable Viability Kit</td>
+      <td>BioLegend</td>
+      <td>Cat#:423111</td>
+      <td>Cell viability assessment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-796,778</td>
+      <td>Gift from Merck Pharmaceuticals</td>
+      <td></td>
+      <td>SSTR3 selective agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-4256</td>
+      <td>MedChemExpress</td>
+      <td>Cat#:HY-13466</td>
+      <td>SSTR3 selective antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>https://www.wavemetrics.com/products/igorpro/igorpro.htm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>﻿Metamorph</td>
+      <td>﻿Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td>http://www.moleculardevices.com/Products/Software/Meta-Imaging-Series/MetaMorph.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (version 4.0.3)</td>
+      <td>R</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.R-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>http://www.rstudio.com/</td>
+    </tr>
+  </tbody>
+</table>
+
 All experimental procedures were approved by the Brandeis IACUC and were performed according to NIH guidelines. All data files used to generate each figure are included as Source Data Files.
 
-## Dissociated cortical neuron cultures and transfection
+### Dissociated cortical neuron cultures and transfection
 
 Dissociated cortical neuron cultures were prepared from visual cortices of male or female P0-3 Long-Evans rat pups and plated on confluent astrocytes as described previously (Pratt et al., 2003). Sparse transfections of plasmid DNA were performed after DIV9-10 with Lipofectamine 2000 (Thermo Fisher). GFP-expressing pyramidal neurons were identified by their characteristic morphologies and used for imaging or recording after either 24 hr or 48 hr. Dissociation-matched sister cultures were transfected with vectors expressing GFP alone as controls. All experiments were replicated a minimum of three times from independent dissociations. Data acquisition and analyses were performed blind to treatment conditions.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Cells from DIV11 cultures were fixed with 4% PFA/5% sucrose for 5 min or 15 min and permeabilized with either ice cold methanol for 10 min, or 0.2% Triton X-100 for 5 min. Primary antibodies were applied for either 1 hr at room temperature or overnight at 4°C. To detect GluA2 at the cell membrane, immunostaining was performed prior to permeabilizing. Primary antibodies included: αARL13B [1:1000, NeuroMab N295B/66 (75-287)], αIFT88 (1:500, ProteinTech 13967–1-AP), αAC3 (1:500, EnCor RPCA-ACIII, MCA-1A12), αSSTR3 (1:2000, Biotrend-USA SS-830–50), αGluA2 (1:1000, gift from Gouaux lab, OHSU), αVGlut1 (1:1000, Synaptic Systems 135 304, 135 316), αShank3 (1:1000, Synaptic Systems 162 304), αPV (1:500, Synaptic Systems 195 011), αSOM (1:500, Thermo Fisher 14-9751-82), αChAT (1:100, Millipore AB144P), αVIP (1:500, Synaptic Systems 443 005), and αGAD67 (1:2000, Millipore MAB5406; 1:2000, R and D Systems AF2086). Secondary antibodies (Thermo Fisher) were incubated for 1–4 hr at room temperature. Slides were mounted using Fluoromount-G.
 
 Vectors and shRNAs shRNA sequences were designed with the TRC algorithm (Broad Institute). Vectors used are listed in Key Resources. The pLKO.1 TRC cloning vector was a gift from David Root (RRID: Addgene_10878) (Moffat et al., 2006), the AAV-shRNA-ctrl was a gift from Hongjun Song (RRID: Addgene_85741) (Yu et al., 2015), and the pAAV-hSyn-EGFP and viral prep 50465-AAV9 were gifts from Bryan Roth (RRID: Addgene_50465). Annealed oligos for shCep164 (5’-CAACAACCACATCGAACTTA-3’), shIft88 (5’-CGAATGGCTTGGAGCTTATTA-3’), and shArl13b_2 (5’-GCTCAGGACATGATCTCATAA-3’) were cloned into modified pAAV-shRNA-ctrl or pSUPER vectors (Oligoengine). The sequence of shArl13b_1 was modified from a previously validated shArl13b sequence (5’-CCTGTCAGAAAGGTGACACTT-3’) (Larkins et al., 2011), and cloned into pLKO.1 and modified pAAV-shRNA-ctrl vectors using Gibson cloning.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Immunostained cells and brain sections were mounted on slides and imaged on either a Zeiss LSM 880 confocal or Zeiss LSM 880 with Airyscan confocal microscope using Plan-Apochromat 63×/1.40 oil objectives. Cilia were labeled with two markers and fluorescence intensity was quantified from ROIs using either Metamorph (Molecular Devices) or ImageJ (NIH). Background fluorescence was subtracted using ROIs from the cell soma or from regions without neurons. Total fluorescence per ROI was averaged and normalized to control treatments. Quantification of synaptic protein intensity and synapse density was performed similar to our published procedures (Gainey et al., 2015; Tatavarty et al., 2020). Images were taken distal to the primary branch point of apical-like dendrites to ensure uniformity across samples. Analyses of synaptic protein intensity were performed using the Granularity application module in Metamorph; granules with a minimum overlap of 3 pixels in all channels were defined as colocalized puncta and selected for analysis. Total pixel intensities of each punctum were summed and then averaged across puncta for each neuron. For quantification of dendritic complexity, tiled images of apical-like arbors were taken and lengths were measured using ImageJ (NIH); nodes were counted at primary, secondary, and tertiary branch points.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole cell patch clamp experiments were performed using an Axopatch 200B amplifier (Molecular Devices) on an Olympus IX70 inverted microscope equipped with differential interference contrast optics and epifluorescence. Recordings were performed at room temperature with an internal solution containing: 120 mM KMeSO4, 10 mM KCl, 2 mM MgSO4, 0.5 mM EGTA, 10 mM HEPES, 3 mM K2ATP, 0.3 mM NaGTP, 10 mM Na2 phosphocreatine; dextrose was used to adjust osmolarity to 320–330 mOsm. Cultures were superfused with artificial cerebral spinal fluid (aCSF) containing: 1 mM NaH2PO4, 25 mM NaHCO3, 126 mM NaCl, 5.5 mM KCl, 2 mM MgSO4, 2 mM CaCl2; dextrose was used to adjust osmolarity to 330–340 mOsm. GFP-expressing pyramidal neurons were identified by their characteristic morphologies. Neurons with Vm > −50 mV, Rs >20 MΩ, Rin <100 MΩ, or with Vm or Rin changed by ≥10% during the recording were excluded from analysis.
 
-## Spontaneous firing rates
+#### Spontaneous firing rates
 
 Spontaneous firing rates were recorded in whole cell current clamp mode. A small DC current was injected to keep the resting potential near −55 mV. Ten sweeps of 20 s each were obtained for each neuron and average firing rate was calculated for the entire period of the recording. Spikes were detected automatically using a threshold crossing function written in R (https://github.com/latereshko/current_clamp_scripts; Tereshko, 2021a; copy archived at swh:1:rev:71bf63383de2b658ae870dba47898b3b784cce79).
 
-## Instantaneous firing rates
+#### Instantaneous firing rates
 
 F-I recordings were made in whole cell current clamp using depolarizing current steps between 10 and 400 pA in aCSF containing 25 μM picrotoxin, 50 μM APV, and 25 μM DNQX to block synaptic currents. Recordings were acquired with Igor Pro (WaveMetrics) and analyzed as described using custom scripts in MATLAB (MathWorks) (Joseph and Turrigiano, 2017). Instantaneous firing rate was calculated as the reciprocal of the interval of the first two consecutive spikes (https://github.com/latereshko/current_clamp_scripts).
 
-## mEPSC recordings
+#### mEPSC recordings
 
 Whole cell voltage clamp recordings were obtained from neurons held at −70 mV. AMPAR-mediated currents were isolated by adding 25 μM picrotoxin, 25 μM APV, and 0.1 μM TTX to aCSF. Events that were <5 pA in amplitude or <3 ms in rise time were excluded from analysis. Recordings were analyzed as described using custom scripts in IGOR Pro (Joseph and Turrigiano, 2017; Tatavarty et al., 2020) (https://github.com/latereshko/mEPSC_scripts; Tereshko, 2021b; copy archived at swh:1:rev:4f77b23d5f94e6e8c5e1a76a059cae4f1811659a).
 
-## SSTR3 pharmacology
+### SSTR3 pharmacology
 
 The antagonist MK-4256 was purchased from MedChemExpress (HY-13466). The agonist L-796,778 was a generous gift from Merck Pharmaceuticals. For a subset of assays, the agonist was purified via HPLC to isolate the active compound from degraded material (Isaac Krauss, Brandeis University). Compounds were dissolved in DMSO to make 1 mM stock concentrations. DIV10-11 cultures were treated with 0.125 μM, 0.5 μM, 1 μM, or 2 μM concentrations of either reagent for the indicated time periods of 6 hr, 18 hr, or 24 hr. Cells were fixed, immunostained, and imaged as described above.
 
-## AAV viral injections
+### AAV viral injections
 
 Virus were diluted in bacteriostatic 0.9% saline on the day of injection (on ice). Prior to surgeries, animals were anesthetized with isoflurane (1.0–2.0% concentration in air) delivered by a SomnoSuite anesthesia system with integrated digital vaporizer (Kent Scientific) through a stereotaxic head holder. Primary visual cortex was bilaterally targeted using stereotaxic coordinates for lambda-bregma distances according to age (P15–16). After craniotomy was performed over the targeted area, a glass micropipette was lowered into the brain and delivered 800 nl of virus-containing solution at the targeted depth. Animals were monitored in separate cages for 12–24 hr post-injection.
 
-## Transcardial perfusions and slices preparation
+### Transcardial perfusions and slices preparation
 
 After 7 days of virus expression, animals (P22–23) were deeply anesthetized with heavy dosage of ketamine/xylazine/acepromazine (KXA) cocktail (140 mg/kg ketamine; 7 mg/kg xylazine; 1.4 mg/kg acepromazine) and perfused with 5 ml of 1× phosphate-buffered saline (PBS) followed by 10–15 ml of 4% paraformaldehyde (PFA) in PBS at room temperature. The brain was removed and preserved in a solution of 4% PFA overnight. After incubation, brain tissues went through three 10 min washes of 1× PBS. Brain tissue was sectioned preserving visual cortex and mounted onto the vibratome with super glue. 50–75 μm sections were collected in a PBS-containing well. Free floating sections were immunostained as described above.
 
-## Cell viability
+### Cell viability
 
 Cell viability was assessed by co-staining with propidium iodide (Thermo Fisher P3566) and the amine-reactive fluorescent dye Zombie Green (BioLegend 423111). Zombie Green was reconstituted in 100 µl of DMSO. Cultures of neurons were incubated with 50 µg/ml propidium iodide and 1:1000 diluted Zombie Green 10 min before fixation. Cells were fixed as described above. Cells were imaged by confocal microscopy as described above and scored as dead when positively stained for either or both propidium iodide and Zombie Green.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were replicated a minimum of three times from biologically independent dissociations performed on different days. Data acquisition and analyses were performed blind to treatment conditions. R software (version 4.0.3) and R Studio were used for statistical analyses (https://www.R-project.org/ and http://www.rstudio.com/). Plots were generated using the package ggplot2 (v3.3.2) (https://cran.r-project.org/web/packages/ggplot2/). Wilcoxon rank-sum or Kruskal–Wallis tests with Dunn’s post hoc test for multiple comparisons were used to compare non-normal distributions (dunn.test v1.3.5) (https://CRAN.R-project.org/package=dunn.test). For synaptic protein intensity analyses, values of experimental samples were normalized to the mean values of the control group for each experiment, and linear mixed models (LMM) were used in place of ANOVA to address the non-independence of measurements taken from the same experimental animal or dissociation, using the lme4 package (v1.1–25) (https://cran.r-project.org/web/packages/lme4/). Comparisons were made using random intercept terms for experimental replicate and culture dish, to address variability between preparations and the non-independence of cells imaged from the same dishes. p-values were approximated using the Kenward–Roger method and adjusted with Dunnett’s post hoc correction as implemented by the emmeans package (v1.5.2–1) (https://CRAN.R-project.org/package=emmeans). Statistical tests used, p-values, and sample and replicate numbers for each figure are summarized in Supplementary file 1. All data and analysis codes can be found at (https://github.com/latereshko/Tereshko_neuron_cilia; Tereshko, 2021c; copy archived at swh:1:rev:a975cce55d21d925d6a60157710638e2c54372f4).

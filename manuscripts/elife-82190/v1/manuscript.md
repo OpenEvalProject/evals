@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00r1edq15 University of Greifswald, Institute of Geography and Geology, Palaeontology and Historical Greifswald Germany
-2. https://ror.org/00r1edq15 University of Greifswald, Zoological Institute and Museum, Cytology and Evolutionary Biology Greifswald Germany
+1. University of Greifswald, Institute of Geography and Geology, Palaeontology and Historical Greifswald Germany ([ROR:00r1edq15](https://ror.org/00r1edq15))
+2. University of Greifswald, Zoological Institute and Museum, Cytology and Evolutionary Biology Greifswald Germany ([ROR:00r1edq15](https://ror.org/00r1edq15))
 3. Mineralientage Oberhaching Germany
-4. https://ror.org/03prydq77 University of Vienna, Department of Palaeontology Vienna Austria
+4. University of Vienna, Department of Palaeontology Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
@@ -31,25 +31,89 @@ The middle Kimmeridgian (Late Jurassic) sauropod Europasaurus (represented by a 
 
 The paratype specimen of Europasaurus, DFMMh/FV 581.1, comprises a largely complete, articulated and probably mature braincase, with DFMMh/FV 581.2 and 3 representing the respective detached parietals (Figures 1—3; Figure 1—figure supplements 1–4). The outer morphology of this material has previously been described (Marpmann et al., 2014). For this study, the parietals were rearticulated with the preserved neurocranium and subsequently documented with micro-computed tomography (microCT). The endocranial cavities which once housed the brain, inner ears, and other soft neuroanatomical structures, such as nerves and blood supply, were then manually segmented. The articulated specimens DFMMh/FV 581.1, 2, and 3 measure about 120 mm mediolaterally, 80 mm anteroposteriorly, and 100 mm dorsoventrally.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig1-v1.jpg)
+
+**Figure 1.:** Note that scale mainly applies to posterior perspective (E,F).?fl, potential floccular recess; ?nh, potential canal for the neurohypophysis; ?sa/ah, potential sphenoidal artery/canal for the adenohypophysis; bpp, basipterygoid process; bt, basal tuber; cp, cultriform process; de, dorsal expansion; ic, internal carotid; fm, foramen magnum; fo, fenestra ovalis; lab, endosseous labyrinth; mcv, mid cerebral vein; mr, median ridge; nc, sagittal nuchal crest; oc, occipital condyle; par, parietal; pit, pituitary; pop, paroccipital process; stf, supratemporal fenestra; vcm, vena capitis media; vf, vagal foramen; V, trigeminal nerve; VI, abducens nerve; VII, facial nerve; XII, hypoglossal nerve.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** ?nh, potential opening for the neurohypophysis; ?sa/ah, potential sphenoidal artery opening/opening for adenohypophysis canal; co, connection between the abducens nerve canal (CN VI) and the pituitary fossa; uo, unclear opening; III, oculomotor nerve opening; V, trigeminal nerve opening; VI, abducens nerve opening.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** ?ab, potential basilar artery opening; mp, median fossa producing the median protuberance on the ventral braincase endocast; pit, pituitary fossa; uo, unclear opening; III, oculomotor nerve opening; V, trigeminal nerve opening; VI, abducens nerve opening; VII, facial nerve opening.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** ?ab, potential basilar artery opening; ?sa/ah, potential sphenoidal artery opening/opening for adenohypophysis canal; co, connection between the abducens nerve canal (CN VI) and the pituitary fossa; mp, median fossa producing the median protuberance on the ventral braincase endocast; uo, unclear opening; pit, pituitary fossa; III, oculomotor nerve opening; V, trigeminal nerve opening; VI, abducens nerve opening; VII, facial nerve opening.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** ?ha, potential hiatus acusticus; fp, fenestra pseudorotunda; macc, medial aspect of common crus; mr, medial trough producing the median ridge on the ventral braincase endocast; VII, facial nerve opening; XII, hypoglossal nerve openings.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig2-v1.jpg)
 
-**Figure 2.:** Europasaurus holgeri, 3D model of the braincase endocast with endosseous labyrinths and neurovascular canals of DFMMh/FV 581.1, 2, and 3 with transparent (A,C) and covering (B,D) volume rendering of the bony braincase in (A,B) anterior (C,D) and ventral view.Note that scale mainly applies to ventral perspective (C,D). ?cerh, potential cerebral hemisphere; ?nh, potential canal for the neurohypophysis; ?sa/ah, potential sphenoidal artery/canal for the adenohypophysis; bd, blind depression; bpp, basipterygoid process; bt, basal tuber; cp, cultriform process; de, dorsal expansion; ic, internal carotid; fm, foramen magnum; lab, endosseous labyrinth; ls; laterosphenoid; mcv, mid cerebral vein; mp, median protuberance; mr, median ridge; oc, occipital condyle; os, orbitosphenoid; par, parietal; pit, pituitary; pop, paroccipital process; uo, unclear opening; vf, vagal foramen; II, optic nerve; III, oculomotor nerve; IV, trochlear nerve; V, trigeminal nerve; VI, abducens nerve; VII, facial nerve; XII, hypoglossal nerve.
+**Figure 2.:** Note that scale mainly applies to ventral perspective (C,D). ?cerh, potential cerebral hemisphere; ?nh, potential canal for the neurohypophysis; ?sa/ah, potential sphenoidal artery/canal for the adenohypophysis; bd, blind depression; bpp, basipterygoid process; bt, basal tuber; cp, cultriform process; de, dorsal expansion; ic, internal carotid; fm, foramen magnum; lab, endosseous labyrinth; ls; laterosphenoid; mcv, mid cerebral vein; mp, median protuberance; mr, median ridge; oc, occipital condyle; os, orbitosphenoid; par, parietal; pit, pituitary; pop, paroccipital process; uo, unclear opening; vf, vagal foramen; II, optic nerve; III, oculomotor nerve; IV, trochlear nerve; V, trigeminal nerve; VI, abducens nerve; VII, facial nerve; XII, hypoglossal nerve.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig3-v1.jpg)
 
-**Figure 3.:** Europasaurus holgeri, 3D model of the braincase endocast with endosseous labyrinths and neurovascular canals of DFMMh/FV 581.1, 2, and 3 with transparent (A,C) and covering (B,D) volume rendering of the bony braincase in (A,B) right ventrolateral and (C,D) left lateral view.?ab, potential basilar artery; ?cerh, potential cerebral hemisphere; ?nh, potential canal for the neurohypophysis; ?sa/ah, potential sphenoidal artery/canal for the adenohypophysis; bpp, basipterygoid process; bt, basal tuber; cp, cultriform process; ic, internal carotid; fo, fenestra ovalis; fp, fenestra pseudorotunda; mp, median protuberance; mr, median ridge; oc, occipital condyle; os, orbitosphenoid; pit, pituitary; pop, paroccipital process; uo, unclear opening; vcm, vena capitis media; vf, vagal foramen; II, optic nerve; III, oculomotor nerve; IV, trochlear nerve; V, trigeminal nerve; VI, abducens nerve; VII, facial nerve; XII, hypoglossal nerve.
+**Figure 3.:** ?ab, potential basilar artery; ?cerh, potential cerebral hemisphere; ?nh, potential canal for the neurohypophysis; ?sa/ah, potential sphenoidal artery/canal for the adenohypophysis; bpp, basipterygoid process; bt, basal tuber; cp, cultriform process; ic, internal carotid; fo, fenestra ovalis; fp, fenestra pseudorotunda; mp, median protuberance; mr, median ridge; oc, occipital condyle; os, orbitosphenoid; pit, pituitary; pop, paroccipital process; uo, unclear opening; vcm, vena capitis media; vf, vagal foramen; II, optic nerve; III, oculomotor nerve; IV, trochlear nerve; V, trigeminal nerve; VI, abducens nerve; VII, facial nerve; XII, hypoglossal nerve.
 
 Additionally, the specimens DFMMh/FV 1077 (Figure 4; Figure 4—figure supplements 1 and 2; adult fragmentary braincase, complete endosseous labyrinth), DFMMh/FV 466+205 (Figures 5 and 6; Figure 5—figure supplement 1; Figure 7—figure supplements 1 and 2; Figure 8—figure supplements 1 and 2; juvenile prootic and otoccipital, nearly complete endosseous labyrinth; the common bond of these two specimens has not been recognized in former studies; Marpmann et al., 2014), DFMMh/FV 964 and DFMMh/FV 561 (Figure 7; Figure 7—figure supplements 1 and 2; prootics of uncertain maturity, anterior labyrinth), DFMMh/FV 981.2, DFMMh/FV 898, and DFMMh/FV 249 (Figure 8; Figure 8—figure supplements 1 and 2; juvenile otoccipitals, posterior labyrinth) were documented with microCT. Since the isolated specimens contain different parts of the endosseous labyrinths, cranial nerves and vascular cavities, the respective digital models were reconstructed in order to describe, compare, and contextualize their characteristics. Whereas the smallest of these specimens (DFMMh/FV 898) hints to an approximate posterior skull width of under 50 mm, the largest specimens DFMMh/FV 581.1 and DFMMh/FV 1077 suggest a mediolateral width of about 140 mm.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig4-v1.jpg)
+
+**Figure 4.:** asc, anterior semicircular canal; cc, common crus; cd, cochlear duct; fp, fenestra pseudorotunda; lsc, lateral semicircular canal; macc, medial aspect of common crus; psc, posterior semicircular canal; rst, recessus scalae tympani; V, trigeminal nerve opening; VII, facial nerve; VIIIa/b, both branches of the vestibulocochlear nerve; XII, hypoglossal nerve.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** fm, foramen magnum; fo, fenestra ovalis; nc, nuchal crest; oc, occipital condyle; pop, paroccipital process; vf, vagal foramen; V, trigeminal nerve opening; VII, facial nerve opening; XII, hypoglossal nerve opening.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** macc, medial aspect of common crus; rst, recessus scalae tympani; V, trigeminal nerve opening; VII, facial nerve opening; VIIIa/b, both openings of the vestibulocochlear nerve.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig5-v1.jpg)
+
+**Figure 5.:** Note that scale mainly applies to posterior perspective (C,D), and that VII and VIIIa/b are not shown in (A) and (B). asc, anterior semicircular canal; cc, common crus; cd, cochlear duct; fm, foramen magnum; fo, fenestra ovalis; lsc, lateral semicircular canal; pop, paroccipital process; psc, posterior semicircular canal; VII, facial nerve; VIIIa/b, both branches of the vestibulocochlear nerve.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Note that scale mainly applies to (A) and (B). fm, foramen magnum; fo, fenestra ovalis; lab, endosseous labyrinth; pop, paroccipital process; vf, vagal foramen; V, trigeminal nerve opening; VII, facial nerve opening; VIIIa/b, both openings of the vestibulocochlear nerve.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig6-v1.jpg)
 
-**Figure 6.:** Europasaurus holgeri, 3D models of the endosseous labyrinth of DFMMh/FV 581.1 (A–D), DFMMh/FV 1077 (E–H; note that this model is mirrored) and DFMMh/FV 466+205 (I–L) in (A,E,I) lateral, (B,F,J) dorsal, (C,G,K), anterior and (D,H,L) posterior view.Note that scale mainly applies to dorsal perspective (B,F,J). asc, anterior semicircular canal; cc, common crus; cd, cochlear duct; fo, fenestra ovalis; fp, fenestra pseudorotunda; lsc, lateral semicircular canal; macc, medial aspect of common crus; psc, posterior semicircular canal.
+**Figure 6.:** Note that scale mainly applies to dorsal perspective (B,F,J). asc, anterior semicircular canal; cc, common crus; cd, cochlear duct; fo, fenestra ovalis; fp, fenestra pseudorotunda; lsc, lateral semicircular canal; macc, medial aspect of common crus; psc, posterior semicircular canal.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig7-v1.jpg)
+
+**Figure 7.:** Note that scale mainly applies to anterolateral perspective (B,D,F). asc, anterior semicircular canal; cd, cochlear duct; lsc, lateral semicircular canal; vc, vascular cavity; V, trigeminal nerve opening.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Note that scale mainly applies to lateral perspective (A,C,E). lab, endosseous labyrinth; V, trigeminal nerve opening; VII, facial nerve opening; VIIIa/b, both openings of the vestibulocochlear nerve.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Note that models are not scaled. asc, anterior semicircular canal; lab, endosseous labyrinth; lsc, lateral semicircular canal; vc, vascular cavity.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig8-v1.jpg)
+
+**Figure 8.:** Note that scale mainly applies to posterior perspective (B,D,F,H). fm, foramen magnum; lsc, lateral semicircular canal; pop, paroccipital process; psc, posterior semicircular canal; vc, vascular cavity.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Note that scale mainly applies to posterior perspective (A,C,E,G). fm, foramen magnum; lab, endosseous labyrinth; pop, paroccipital process.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/82190/elife-82190-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Note that models are not scaled. cc, common crus; fm, foramen magnum; lab, endosseous labyrinth; lsc, lateral semicircular canal; pop, paroccipital process; psc, posterior semicircular canal; vc, vascular cavity.
 
 The microCT data and our digital reconstructions (Europasaurus holgeri - neuroanatomy - DFMMh/FV - Schade et al. 2023 // MorphoSource) of different Europasaurus individuals add to the knowledge of diversity of dinosaur neuroanatomy and allow a better understanding of ontogenetic development. We discuss our findings in context of insights into the lifestyle of this long-necked insular dwarf from the Late Jurassic of Germany.
 
 ## Results
 
-## Cranial endocast, innervation, and blood supply
+### Cranial endocast, innervation, and blood supply
 
 As is generally the case in non-maniraptoriform dinosaurs (e.g., Witmer and Ridgely, 2008a; Witmer and Ridgely, 2009; Knoll et al., 2015; Knoll et al., 2021), many characteristics of the mid- and hindbrain are not perceivable with certainty (however, see Evans, 2005; Morhardt, 2016; Fabbri et al., 2017) on the braincase endocast of DFMMh/FV 581.1 (Figure 1A), which implies scarce correlation of the actual brain and the inner surface of the endocranial cavity (see Watanabe et al., 2019, for ontogenetic variations in recent archosaurs).
 
@@ -57,15 +121,15 @@ This endocast suggests low angles in the cerebral and pontine flexures. There is
 
 The endosseous labyrinth is situated within an anteroventrally inclined lateral depression of the endocast, directly ventral to the vena capitis media eminence. Here, an opening is present, leading to the medial aspect of the common crus in DFMMh/FV 581.1 and 1077 (the opening is considerably larger in the latter specimen; Figures 4 and 6; Figure 1—figure supplement 4; Figure 4—figure supplement 2). Whereas the trigeminal (CN V), facial (CN VII), and vestibulocochlear (CN VIII; two openings) nerve canals are mainly anterior to the endosseous labyrinth, the vagal foramen (=jugular foramen for CN IX-XI and jugular vein) and two canals for the hypoglossal nerves are situated posterior to the cochlear duct (Figures 1—3). Within the depression for CN V, dorsally, a very small opening for the mid-cerebral vein is situated on both sides of DFMMh/FV 581.1. However, only the right canal could approximately be reconstructed (Figures 1A and 2A). Dorsal to the right slit-like opening for CN VII, a small depression is present in DFMMh/FV 581.1. The microCT data do not suggest penetration. Whereas the posterior canals for the hypoglossal nerve (CN XII) are clearly discernable in the microCT data, the anterior ones are not as obvious to detect. However, because of the expression of their respective openings on the actual fossil, their course could be established. Marpmann et al., 2014, only identified one hypoglossal canal (CN XII). However, the specimens considered herein support the presence of two openings on each side. Furthermore, anterior to the proximal openings of the anterior CN XII canals, one depression each is visible in DFMMh/FV 581.1, however, the microCT data do not suggest a penetration. Anterodorsally to the endosseous labyrinth, the cerebellum appears as a mediolaterally expanded part of the endocast, almost reaching the trigeminal nerve (CN V) anteriorly and being delimited by the eminence of the vena capitis media posterodorsally (Figure 1A). Furthermore, a small floccular recess is present close to the mid-length of the anterior semicircular canal (ASC) in DFMMh/FV 581.1. The ventral aspect of the endocast is anterodorsally inclined and bears a median ridge (becoming mediolaterally narrower in anterior direction; Figures 1A—3A), reaching between the foramen magnum and the anteroventral portion of the endocast (not considering the pituitary). Posteroventral to the abducens nerve (CN VI), a single median protuberance is present on the endocast, produced by a fossa on the floor of the endocranial cavity (Figures 2C and 3; Figure 1—figure supplements 2 and 3). In addition, anterodorsally to the proximal openings for the abducens nerve (CN VI), a single median opening is present on the braincase floor, producing a connection to the pituitary fossa (probably for vascularization; see Paulina-Carabajal, 2012; Sues et al., 2015 for arguments on arterial or venous identity). The general osteological configuration of the endocranial floor (Figure 1—figure supplements 2 and 3) seems very similar in the macronarian Giraffatitan (Janensch, 1935: Figure 117). The anterodorsally incomplete endocranial cavity of DFMMh/FV 581.1, 2, and 3 comprises a volume of about 35 cm3 (including the pituitary fossa). On the ventral aspect of DFMMh/FV 581.1, a small funnel-like depression anterior to the occipital condyle ends blindly (Figure 2D).
 
-## Endosseous labyrinth
+### Endosseous labyrinth
 
 Both vestibular systems are preserved and are ventrally connected to the respective cochlea in DFMMh/FV 581.1 (the semicircular canals of the left inner ear were only vaguely perceptible in some places). Whereas only the left endosseous labyrinth is preserved in DFMMh/FV 1077, only the right one is preserved within DFMMh/FV 466+205. The following description is based on the mentioned endosseous labyrinths (Figure 6). The vertical semicircular canals are relatively long and slender. Dorsoventrally, the ASC reaches considerably higher than the posterior one, and the ASC occupies more of the anteroposterior length of the vestibular system. The common crus is dorsally slightly posteriorly inclined (where preserved). While the posterior semicircular canal (PSC) forms a low arc, the ASC turns about 180° to contact the common crus dorsomedially. The medial aspect of the common crus is exposed to the endocranial cavity in DFMMh/FV 581.1 and DFMMh/FV 1077 (Figures 4 and 6G; Figure 1—figure supplement 4; Figure 4—figure supplement 2). The angle between the ASC and the PSC amounts 80° (measured in dorsal view with the common crus as fixpoint). The LSC is anteroposteriorly short. In dorsal view, its anterior ampulla appears posteriorly shifted, producing a medially concave gap between the ASC and LSC (Figure 6B,F,J). Such a medial concavity is also present between the LSC and the PSC (best seen in dorsal view). The cochlear duct is approximately as high as the vestibular system dorsoventrally, points anteroventrally and very slightly medially (in DFMMh/FV 581.1 and 1077). In lateral view, the cochlear duct is anteroposteriorly slender with sub-parallel anterior and posterior margins. However, mediolaterally, the cochlear duct is very wide, resulting in an elongated oval-shaped cross-section. The fenestra ovalis (Figures 1A, B, 2A, B, 6; Figure 4—figure supplement 1) is situated close to the dorsoventral mid-length of the lateral aspect of the cochlear duct (in DFMMh/FV 581.1 and DFMMh/FV 1077). This is also true for the anteroposteriorly oriented fenestra pseudorotunda (Figures 4 and 6D; Figure 1—figure supplement 4), lying on the posteromedial aspect of the cochlear duct. The hiatus acusticus expresses as an anteromedially open notch (similar to the theropod Irritator; Schade et al., 2020) on the actual fenestra pseudorotunda in DFMMh/FV 581.1 (Figure 1—figure supplement 4).
 
-## Auditory capabilities
+### Auditory capabilities
 
 To get a rough idea of the audition of Europasaurus, we measured the dorsoventral cochlear duct length of DFMMh/FV 581.1 (c. 16 mm; as outlined by Walsh et al., 2009; however, see Gleich et al., 2005; Witmer and Ridgely, 2008a; Paulina-Carabajal et al., 2016) and the anteroposterior basicranial length (c. 55 mm; from the anterodorsal part of the pituitary fossa to the posterior-most part of the occipital condyle). Based on the equations of Walsh et al., 2009, our estimate of the mean hearing frequency of Europasaurus yields a value of 2225 Hz and a frequency bandwidth of 3702 Hz (374–4076 Hz). The auditory capabilities of the Late Triassic early-diverging sauropodomorph Thecodontosaurus from England was estimated by same means with a mean frequency of 1893 Hz and a band width of 3089 Hz (349–3438 Hz; Ballell et al., 2021).
 
-## Inner ears and cavities of incomplete specimens
+### Inner ears and cavities of incomplete specimens
 
 In addition to DFMMh/FV 581.1, 2, and 3 (Figures 1—3 and Figure 6A–D; Figure 1—figure supplements 1–4), eight other braincase specimens (that hold parts of the endosseous labyrinth), assigned to Europasaurus, were scanned and analysed. DFMMh/FV 1077 (Figures 4 and 6E–H; Figure 4—figure supplements 1 and 2) contains a complete left endosseous labyrinth and was categorized as belonging to an osteological mature individual in Marpmann et al., 2014; as DFMMh/FV 581.1, 2, and 3. Furthermore, there are two right elements (Figures 5—8G,H; Figure 5—figure supplement 1; Figure 7—figure supplements 1A, B and 2A; Figure 8—figure supplements 1G, H and 2E; DFMMh/FV 205, a fragmentary otoccipital, and DFMMh/FV 466, a fragmentary prootic) that were originally found some 10 cm apart from each other in the sedimentary matrix. Whereas DFMMh/FV 205 was thought to belong to a juvenile, DFMMh/FV 466 was supposed to belong to a considerably older individual (both estimations are mainly based on size and surface texture; Marpmann et al., 2014). However, DFMMh/FV 205 and DFMMh/FV 466 articulate well with each other and jointly contain most of the endosseous labyrinth and the dorsal portion of the lagena, all in a meaningful manner in respect to size, position, and orientation of its compartments. DFMMh/FV 466 is of similar size and texture as the other prootics considered here. DFMMh/FV 205 is considerably smaller than the otoccipitals in the adult specimens. Hence, DFMMh/FV 466+205 are herein interpreted to belong to the same juvenile individual. Furthermore, there are two left fragmentary prootics (Figure 7C–F; Figure 7—figure supplement 1C–F, Figure 7—figure supplement 2B, C; DFMMh/FV 561 and DFMMh/FV 964) containing most of the ASC, the ventral base of the common crus, the anterior ampulla of the LSC, and the anterior base of the lagena; both specimens were assigned to relatively mature individuals (Marpmann et al., 2014). The three right fragmentary otoccipitals DFMMh/FV 249, DFMMh/FV 898, and DFMMh/FV 981.2 (Figure 8A–F; Figure 8—figure supplements 1A–F and 2A–D) contain at least the posterior parts of the LSC and the lagena, as well as most of their PSCs; these specimens were assigned to immature individuals (Marpmann et al., 2014).
 
@@ -75,7 +139,7 @@ No discrete cavities could be found in DFMMh/FV 581.1, DFMMh/FV 1077, DFMMh/FV 9
 
 ## Discussion
 
-## Comparison of neurovascular anatomy and potential ecological implications
+### Comparison of neurovascular anatomy and potential ecological implications
 
 Although not as prominent as in Dicraeosaurus (Janensch, 1935; Paulina Carabajal et al., 2018) and some specimens of Diplodocus (Witmer and Ridgely, 2008a), the position and morphology of the dorsal expansion of Europasaurus gives a rather ‘upright’ or sigmoidal appearance to the endocast (Figure 1A; see also Paulina-Carabajal et al., 2020). This is partly explained by the (preservational) lack of its olfactory bulb and tract. The first cranial nerve is not expected to be very long in many sauropods, especially in the closely related macronarian taxa Camarasaurus and Giraffatitan (Witmer and Ridgely, 2008a; Knoll and Schwarz-Wings, 2009; see also Müller, 2021). In contrast, the braincase endocast is rather tubular in some taxa, for example, the early-diverging sauropodomorph Buriolestes (Müller et al., 2021), the rebbachisaurid Nigersaurus (Sereno et al., 2007), and the titanosaur specimen MCCM-HUE-1667 (Knoll et al., 2015). Instead, the endocast of Europasaurus seems to be most similar to Giraffatitan (Janensch, 1935; Knoll and Schwarz-Wings, 2009; formerly Brachiosaurus brancai, see Paul, 1988; Taylor, 2009).
 
@@ -91,7 +155,7 @@ The endosseous labyrinth of Europasaurus (Figure 6) is most similar to Giraffati
 
 Although the mediolateral width of the lagena does not appear to be associated with auditory capabilities (Walsh et al., 2009), the lagena of Europasaurus is conspicuously thick mediolaterally, especially when compared to its anteroposterior slenderness (Figure 6). The calculated auditory capacities (based on Walsh et al., 2009) impute Europasaurus a relatively wide hearing range with a high upper frequency limit (among non-avian dinosaurs; Lautenschlager et al., 2012; King et al., 2020; Sakagami and Kawabe, 2020). Walsh et al., 2009, demonstrate a certain correlation between hearing range, complexity of vocalization, and aggregational behaviour in extant reptiles and birds (see also Gleich et al., 2005; Hanson et al., 2021). Following their conclusions and other studies suggesting (age-segregated) gregariousness in sauropodomorphs on the basis of nesting sites, body, and ichnofossils (e.g., Lockley et al., 2002; Sander et al., 2008; Myers and Fiorillo, 2009; Pol et al., 2021a), it appears plausible that Europasaurus lived in groups with conspecifics (although it is not clear whether this took place perennial or seasonal, e.g., for ‘brooding’), which made airborne communication crucial. Furthermore, taphonomic reasons (femora count suggests at least 21 individuals in close temporal and spatial connection with very young and very old individuals being rarely represented; Scheil et al., 2018) and evidence for two morphotypes in the cranial and postcranial material of Europasaurus may suggest some form of social cohesion (Carballido and Sander, 2013; Marpmann et al., 2014). However, while a given species is likely to perceive sounds within the frequency spectrum it is able to produce, it may be rather unlikely that the full range of frequencies that can be heard is covered by the sound production ability (see also Walsh et al., 2009; Senter, 2008). Habitat preferences potentially play a role as well: ‘acoustically cluttered’ habitats like forests seem associated with a tendency towards high-frequency intraspecific communication in recent mammals (Charlton et al., 2019). Together with tropic Late Jurassic conditions in Europe (Armstrong et al., 2016), this may be part of the explanation of the recovered auditory capacities of Europasaurus.
 
-## Fragmentary bones and their eco-ontogenetic meaning
+### Fragmentary bones and their eco-ontogenetic meaning
 
 An interesting issue are the different morphological ontogenetic stages of DFMMh/FV 466 and DFMMh/FV 205 mentioned in Marpmann et al., 2014. The authors considered the prootic DFMMh/FV 466 more mature than the otoccipital DFMMh/FV 205. Indeed, DFMMh/FV 466 is about as large as the prootics of DFMMh/FV 581.1, DFMMh/FV 1077, DFMMh/FV 964, and DFMMh/FV 561 (Figure 7; Figure 7—figure supplement 1), but the otoccipital DFMMh/FV 205 is much smaller than the ones in DFMMh/FV 581.1 and DFMMh/FV 1077 (and only slightly larger than DFMMh/FV 981.2, DFMMh/FV 898, and DFMMh/FV 249; Figure 8; Figure 8—figure supplement 1).
 
@@ -101,7 +165,7 @@ DFMMh/FV 466 and DFMMh/FV 205 articulate very well with each other, especially o
 
 The vestibular apparatus detects movements with the aid of endolymphatic fluid and cilia contained within the semicircular canals, which is crucial for locomotion (see, e.g., Benson et al., 2017). Thus, a relatively large and morphologically adult-like endosseous labyrinth in expectedly very young individuals of Europasaurus suggests that hatchlings had to be light on their feet very fast in this dwarfed sauropod taxon.
 
-## Conclusion
+### Conclusion
 
 Europasaurus has a rather sigmoid general braincase endocast shape, with a comparably large dorsal expansion, two openings for CN XII, an angle of 50° between the pituitary fossa and the LSC, and the ASC is clearly dorsoventrally higher than the PSC (Figures 1—4 and Figure 6). This and additional novel details, such as the highly uniform vascular cavities within the juvenile braincase material (Figures 7 and 8; Figure 7—figure supplement 2; Figure 8—figure supplement 2), add to our knowledge about dinosaur neuroanatomy. The relatively small pituitary fossa (Figure 1A) in an insular dwarf lends support to the old idea of being a proxy for body size (Nopcsa, 1917; Edinger, 1942; Müller et al., 2021).
 
@@ -111,11 +175,11 @@ Many sauropods were extremely large land-dwellers as adults, and still, started 
 
 The articulated braincase specimen of E. holgeri, DFMMh/FV 581.1, together with both loose parietals (DFMMh/FV 581.2 and 3), is traversed by breakages but not strongly deformed, lacking parts of the anterior and dorsomedial skull roof, as well as the anteromedial walls of the endocranial cavity. The articulated and assembled braincase lacks the frontals, the right orbitosphenoid and laterosphenoid. The parietals are anteriorly, posterodorsomedially, and posteriorly incomplete and somewhat deformed (if they fit posteromedially with the supraoccipital they do not fit with the supraoccipital, prootic and laterosphenoid further anteriorly, and vice versa). The braincase of, for example, the macronarian G. brancai suggests a plain posterior skull roof not exceeding the dorsal extent of the sagittal nuchal crest; this served as an orientation here.
 
-## Macro-photography
+### Macro-photography
 
 All specimens, except DFMMh/FV 581.1, 2, and 3, were documented using a Canon EOS 70D reflex camera equipped with a Canon EFS 10–135 mm objective, extension tubes (13 or 21 mm), and a Canon Macro Twin Lite MT-26EX-RT. Light was cross-polarized in order to reduce reflections of the specimen surface. Images were recorded in different focal planes (z-stacks) and subsequently fused with CombineZP (Alan Hadley). All obtained images were optimized for colour balance, saturation, and sharpness using Adobe Photoshop CS2.
 
-## Micro-computed tomography
+### Micro-computed tomography
 
 MicroCT of DFMMh/FV 581.1, 2, and 3 (Figures 1—3; Figure 1—figure supplements 1–4) was performed using a Metrotom 1500 (Carl Zeiss Microscopy GmbH, Jena, Germany) in a subsidiary of Zeiss in Essingen; 1804 images were recorded with binning 1 resulting in a DICOM data set (for further details of settings and voxel size, see Supplementary file 1).
 

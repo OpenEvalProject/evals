@@ -30,7 +30,7 @@ Here, we demonstrate that LB delayed physical development in mice and altered de
 
 ## Results
 
-## Early life adversity decreases physical growth
+### Early life adversity decreases physical growth
 
 In humans, ELA is associated with changes in expected weight (Hult et al., 2010; Maniam et al., 2014; Rondó et al., 2003; Wainstock et al., 2013), with low weight in infancy predicting poorer cognitive outcomes (Corbett and Drewett, 2004; Strathearn et al., 2001). Thus, weight may serve as a biomarker for altered neurodevelopment and later risk for pathology. To model ELA in the form of resource insecurity, dams and pups were placed in conditions of low bedding and nesting materials (LB) from PND 4–11 (Bolton et al., 2019; McLoyd, 1998; Rice et al., 2008). To assess the impact of LB on somatic and brain development, the body weight and brain weight of control (Ctrl) and LB reared mice was measured at select ages across early development (PND 16, 21, 28, and 35). We found that LB reared female mice weighed significantly less than control mice at PND 16, 21, and 28, with differences diminishing by PND 35 (Figure 1B top), while LB reared males weighed significantly less than control male mice at PND 21 and 28 (Figure 1B bottom). Examination of brain weight in females (Figure 1C top) revealed a significant decrease in brain weight at PND 21, 28 and 35. LB males had decreased brain weight when compared to control males at PND 16, 21, and 28, with differences resolved by PND 35 (Figure 1C bottom). We predicted that ELA may shift resources away from somatic development to spare brain development. To test this prediction, the brain-to-body weight ratio was calculated across developmental time points (Figure 1D). LB reared female mice had a higher brain-to-body weight ratio than female control mice at PND 16, 21 and 28, while LB males had an increased brain-to-body ratio at PND 21 and 28. Thus LB effects on brain and total body weight were not proportional, with a greater impact on the development of the body at select developmental time points.
 
@@ -38,29 +38,85 @@ In humans, ELA is associated with changes in expected weight (Hult et al., 2010;
 
 **Figure 1.:** (A) Timeline of resource restriction manipulation (PND 4–11) and description of developmental time points tested. Somatic effects of LB rearing on Males and Females. (B) Graphs depicting LB changes in total body weight for females (top) and males (bottom). Insets show a close up of mean and SEM for PND 16 data. When compared to ctrl females, LB females have decreased total weight at PND 16 (t11 = 2.84, p=0.015) 21 (t13 = 4.99, p<0.001) and 28 (t14 = 5.73, p<0.001), but not at PND 35 (t13 = 1.90, p=0.078). When compared to ctrl males, LB males have decreased total weight at PND 21 (t17 = 6.64, p<0.001) and 28 (t14 = 2.65, p=0.018), but not at 16 (t18 = 1.90, p=0.073) or 35 (t15 = 0.98, p=0.33). (Females: Ctrl n = 6, 8, 8, 7; LB n = 7, 7, 8, 8) (Males: Ctrl n = 10, 10, 8, 9; LB n = 10, 9, 8, 8). (C) Graphs depicting LB changes in total brain weight for females (top) and males (bottom). Insets show a close up of mean and SEM for PND 16 data. However, when we assessed brain weight, LB female mice did not differ from ctrl females at PND 16 (t9 = 2.11, p=0.063), with differences emerging at PND 21 (t13 = 5.62, p<0.001), 28 (t14 = 3.11, p=0.0075), and 35 (t12 = 3.55, p=0.0039). LB males had significantly different brain weight when compare to ctrl males at PND 16 (t13 = 2.29, p=0.038), 21 (t17 = 4.84, p<0.001) and 28 (t14 = 3.13, p=0.0073), but not at PND 35 (t14 = 0.40, p=0.69). (D) When we assessed brain to total weight ratio, female LB mice had a higher ratio at PND 16 (t9 = 3.59, p=0.0057), 21 (t13 = 3.69, p=0.0027), and 28 (t14 = 4.33, p<0.001), but not at PND 35 (t12 = 0.69, p=0.50) when compared to ctrl females. However, LB males did not significantly differ from ctrl males at PND 16 (t13 = 0.76, p=0.45), however, by PND 21 (t17 = 4.44, p<0.001) and 28 (t14 = 2.60, p=0.020) LB males had significantly higher brain/total weight ratio when compared to ctrl males, with effects dissipating by PND 35 (t14 = 0.51, p=0.61). For panels (C) and (D): (Females: Ctrl n = 6, 8, 8, 6; LB n = 5, 7, 8, 8) (Males: Ctrl n = 6, 10, 8, 8; LB n = 9, 9, 8, 8). Dots in panels represent individual data points. Bars represent group means + / - SEM. Unpaired two-tailed student t-tests were used for data analysis. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
 
-## LB is associated with deficits in fear recall during the peri-weaning period
+### LB is associated with deficits in fear recall during the peri-weaning period
 
 To determine if LB rearing affected learning and expression of a conditioned fear memory, mice underwent fear conditioning training and testing. The age (in days) at which each separate cohort of mice underwent each stage of auditory fear learning is shown in Figure 2A. To dissociate cue-memory from context-memory, mice were habituated to two contexts (context A and B) for 5 min per context for 2 consecutive days. Mice were then conditioned to six tones (75 dB, 30 s) that each co-terminated with a foot-shock (0.57 mA, 1 s) in context A and tested for memory recall 24 hr post-conditioning in context B (Figure 2B). In control mice, we observed a significant developmental increase in freezing behavior from PND 19 to PND 22. However, in LB reared mice, we found significantly lower levels of freezing compared to control mice during cue recall at PND 22, but not at later developmental time points (Figure 2C), indicating a possible delay in cue-associated fear learning in LB mice. Further, a significant decrease in freezing to the conditioning tones was observed in LB males at PND 21 and in LB females at PND 28. To determine if differences in recall at PND 22 were the result of diminished learning at PND 21, conditioning curves of control and LB mice were matched for levels of freezing during acquisition (Figure 2—figure supplement 1). Matching was conducted by mixing male and female data, and systematically removing individual animal data from the analysis until LB and Ctrl conditioning curves at PND 21 were overlapping and not significantly different. The results showed that deficits in fear expression could not be solely explained by differences in freezing observed during conditioning. To determine if the lower levels of freezing in LB mice at PND 22 were the result of deficits in acquisition, consolidation, or recall; separate cohorts of male and female mice were conditioned at PND 21 and tested at either 1 hr (pre-consolidation), 6 hr (post-consolidation), 24 hr (short-term recall), or 7 days (long-term recall) post conditioning (Figure 3A). At 1 hr, there was a small but significant decrease in freezing observed in LB reared mice compared to controls. At 6 hr, no differences in levels of freezing were detected between LB and control reared mice, indicating that LB mice could freeze to the cue and appeared to have consolidated the fear memory. By 24 hr, LB mice showed significantly lower freezing compared to control mice, suggestive of deficits in fear memory. Interestingly, at 7 days post conditioning, LB freezing levels did not differ from control levels. In aggregate, initial learning was intact but freezing to the conditioned tones was transiently impaired 24 hr post conditioning. Together the results suggest that LB reared mice form a cue-associated fear memory at PND 21 but are not able to behaviorally express this memory during early development. However, with time, behavioral expression of fear, in the form of freezing, re-emerges. Follow-up analysis on sex differences were performed (Figure 3B) showing that both LB males and LB females showed the decrease in freezing 24 hr post condition followed by an increase in freezing 7 days post conditioning. A significant decrease in freezing was observed 1 hr post conditioning in control females when compared to control males. A battery of tests were conducted in males and females to ensure that effects of fear expression were not due to differences in anxiety-like behavior (light/dark box test: Figure 3C and Figure 3—figure supplement 1; elevated plus maze: Figure 3—figure supplement 2), locomotion (open field test: Figure 3—figure supplement 3), or foot-shock sensitivity and reactivity (Figure 3—figure supplement 4). No general differences were detected between LB and control at PND 21 in anxiety-like behavior, locomotion, or somatosensation (see supplements for full stats).
 
-## LB increased PV-positive cell density early in life in the BLA, but not mPFC
+![Figure 2.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig2-v2.jpg)
+
+**Figure 2.:** (A) Table of the postnatal day at which each cohort underwent different phases of auditory cue conditioning. Different cohorts were used for each age group. (B) Schematic of auditory fear conditioning protocol. (C) Graphs of the percent time female (top) and male (bottom) mice spent freezing (immobile) during the conditioning and recall test. LB female (t21 = 2.79, p=0.010) and male (t20 = 3.39, p=0.0028) mice exhibited decreased fear expression at PND 22 when compared to age and sex matched controls, an effect not observed at other ages (Females: PND 17 (t20 = 1.43, p=0.16), 29 (t19 = 0.032, p=0.97), 51 (t21 = 0.73, p=0.47)) (Males: PND 17 (t24 = 0.68, p=0.50), 29 (t21 = 0.014, p=0.98), 51 (t19 = 1.42, p=0.16)). During auditory cue conditioning in females, a main effect of rearing condition was observed at PND 28 (F(1,19) = 7.70, p=0.012), but not at 16 (F(1,20) = 0.52, p=0.47), 21 (F(1,21) = 3.32, p=0.082), or 50 (F(1,21) = 1.33, p=0.26). Post-hoc analysis revealed that PND 28 LB females had significantly lower levels of freezing on the 5th (t114 = 3.50, p=0.0039) and 6th (t114 = 3.80, p=0.0014) tones. A main effect of tone during conditioning was observed in females at all ages (PND 16: F(5,100) = 2.70, p=0.024; PND 21: F(5,105) = 4.11, p=0.0019; PND 28: F(5,95) = 39.3, p<0.0001; PND 50: F(5,105) = 104.1, p<0.0001), indicating that female mice learned the tone/foot shock association at all ages tested. No interaction between tone trial and rearing condition where observed at PND 16 (F(5,100) = 1.51, p=0.19) or 21 (F(5,105) = 0.83, p=0.52); however, significant interactions where observed at PND 28 (F(5,95) = 3.79, p=0.0035) and 50 (F(5,105) = 2.45, p=0.037). During auditory cue conditioning in males, no main effect of rearing condition was observed at any age tested (PND 16: F(1,24) = 0.15, p=0.69; PND 21: F(1,20) = 3.32, p=0.083; PND 28: F(1,21) = 0.78, p=0.38; PND 50: F(1,19) = 0.0017, p=0.96). However, a post-hoc analysis revealed that PND 21 LB males had significantly lower levels of freezing on the 5th (t120 = 3.25, p=0.0088) and 6th (t120 = 2.78, p=0.036) tones when compared to ctrl males. During conditioning in males a main effect of tone trial was observed at all ages (PND 16: F(5,120) = 3.33, p=0.0074; PND 21: F(5,100) = 12.14, p<0.0001; PND 28: F(5,105) = 54.63, p<0.0001; PND 50: F(5,95) = 62.84, p<0.0001), indicating that male mice learned the tone/foot shock association at all ages tested. No interaction between tone trial and rearing condition where observed in male conditioning at PND 16 (F(5,120) = 0.42, p=0.83), 28 (F(5,105) = 0.59, p=0.70), or 50 (F(5,95) = 0.49, p=0.77); however, a significant interaction was observed at PND 21 (F(5,100) = 4.05, p=0.0022). (Females: Ctrl n = 11, 8, 12, 11; LB n = 11, 15, 9, 12) (Males: Ctrl n = 16, 9, 12, 12; LB n = 10, 13, 11, 12). For effects on memory recall, following matching for conditioning curves see Figure 3—figure supplement 4. Additional tests for somatosensation were conducted to ensure that differences in freezing were not due to differences in foot-shock sensitivity, see Figure 2—figure supplement 2. Bars represent group means + / - SEM. Two-way repeated measure ANOVA followed by a Sidak’s multiple comparison analysis was used to analyze the conditioning curves. Unpaired two-tailed student t-tests were used to analyze differences in recall tests. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Graph of subgroup of mixed sex mice matched for levels of freezing during conditioning. A repeated measure ANOVA revealed a main effect of tone presentation (F(5,125) = 10.59, p<0.0001), but no significant main effects of rearing condition (F(1,25) = 0.0038, p=0.95), or effect of interaction between tone presentation and rearing condition (F(5,125) = 0.39, p=0.85). Matching for conditioning did not alter effects on recall (t25 = 3.36, p=0.0025), with deficits in freezing expression in LB reared PND21 mice. For Ctrl n = 13, for LB n = 14. A repeated measure two-way ANOVA was used to test for differences in fear conditioning. A two-tailed paired student t-test was used to test for differences in the recall test. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of experimental protocol (top). A mix of male and female mice were conditioned at PND 21 and tested at only one time point: 1 hr, 6 hr, 7 hr, or 7 days post-conditioning. Graph depicting changes in freezing levels of distinct cohorts of mice during recall tests at varying delays (bottom). LB mice had decreased freezing at 1 hr (t74 = 2.11, p=0.037), 24 hr (t48 = 3.41, p=0.0012) but not 6 hr (t55 = 1.66, p=0.10) or 7 days (t46 = 1.76, p=0.085) post-conditioning. (Ctrl n = 34, 30, 29, 27; LB n = 42, 27, 21, 21). (B) Re-analysis of data presented in panel A to reveal sex differences within the data. When compared to Ctrl males, Ctrl females had decreased freezing at 1 hr (t32 = 2.11, p=0.042), but not at 6 hr (t28 = 1.95, p=0.060), 24 hr (t27 = 1.89, p=0.069) or 7 days (t25 = 1.17, p=0.25) post-conditioning. LB males (t25 = 2.21, p=0.036) and LB females (t21 = 3.94, p=0.0007) had decreased freezing 24 hr post-conditioning when compared to sex matched controls. No other significant differences were observed between Ctrl males and LB males (1 hr: t42 = 1.32, p=0.19; 6 hr: t32 = 0.99, p=0.32; 7 days: t23 = 1.37, p=0.18), or between Ctrl females and LB females (1 hr: t30 = 0.85, p=0.39; 6 hr: t21 = 1.64, p=0.11; 7 days: t21 = 1.31, p=0.20). (Ctrl males n = 15, 19, 16, 14; Ctrl females n = 19, 11, 13, 13; LB males n = 29, 15, 11, 11; LB females n = 13, 12, 10, 10). (C) Depiction of the light/dark box used to assess anxiety-like behavior (top). A mix of male and female mice were placed in the dark side of the box, the latency to light (center) and the total time spent in the light side of the box (bottom) are shown. Total time spent in the light/dark box was 420 s. Age (F(2,135) = 19.2, p<0.0001), but not rearing condition (F(1,135) = 0.50, p=0.47) or age x rearing interaction (F(2,135) = 0.72, p=0.48), significantly affected the latency to exit the dark side of the box (center). PND 21 mice of both LB and control reared conditions took more time to enter the light side of the box when compared to mice from the same rearing condition at PND 28 (LB t135 = 3.63, p=0.0012; Ctrl t135 = 4.05, p=0.0003) and PND 35 (LB t135 = 3.09, p=0.0073; Ctrl t135 = 3.89, p=0.0005). However, a main effect of rearing condition on the total time mice spent in the light side of the light/dark box (F(2,135) = 3.91, p=0.022) was observed (bottom). A post-hoc analysis revealed that significant differences in rearing condition were only observed at PND 35 (t135 = 2.60, p=0.030). Furthermore, a significant main effect of age on the time spent in the light side (F(1,135) = 4.01, p=0.047) was observed. Specifically, control PND 35 mice spent significantly more time in the light side when compared to control reared mice aged PND 21 (t135 = 2.46, p=0.043) and PND 28 (t135 = 2.56, p=0.033). No interaction between age and rearing condition was observed (F(2,135) = 1.23, p=0.29). (Ctrl n = 14, 24, 23; LB n = 27, 22, 31). For effects of rearing condition by sex see Figure 3—figure supplement 1. Bars represent group means + / - SEM. Dots in panel (C) represent individual data points. Unpaired two-tailed student t-tests were used in (A) and (B). For (C) a two-way ANOVA followed by a Sidak’s multiple comparison analysis was used. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Drawing of the light/dark box behavioral apparatus. (B) Graph showing the time in seconds that it took mice to exit the dark side of the box and enter the light side. A three-way ANOVA revealed a main effect of age (F(2,129) = 18.22, p<0.0001) but not of sex (F(1,129) = 0.21, p=0.64) or rearing condition (F(1,129) = 0.39, p=0.53). No significant interactions between age, sex and rearing condition were revealed. A follow-up Sidak multiple comparison analysis revealed that, in general, mice took longer to exit the dark side of the box and enter the light side of the box at PND 21 when compared to PND 28 (t129 = 5.57, p<0.0001) or PND 35 (t129 = 5.05, p<0.0001). (C) Graph showing the total amount of time mice spent in the light side of the box. A three-way ANOVA for sex, rearing condition, and age revealed significant main effect of age (F(2,129) = 3.23, p=0.042) but not of rearing condition (F(1,129) = 3.08, p=0.081) or sex (F(1,129) = 1.12, p=0.29). No significant interactions were observed. (D) When using a three-way ANOVA to assess global effects of mouse entries into the light side of the light dark box, we found a main effect of age (F(2,129) = 4.13, p=0.018), rearing condition (F(1,129) = 78.08, p<0.0001), but not sex (F(1,129) = 0.029, p=0.86). For males, a follow-up two-way ANOVA between Ctrl and LB revealed a significant effect of rearing condition (F(1,71) = 31.31, p<0.0001), but not of age (F(2,71) = 0.96, p=0.38) or age by rearing condition (F(2,71) = 0.72, p=0.48). Follow-up analysis in males revealed significant differences between ctrl and LB mice at PND 28 (t71 = 3.66, p=0.0014) and 35 (t71 = 4.23, p=0.0002), but not at 21 (t71 = 2.03, p=0.13). For females, a two-way ANOVA between Ctrl and LB revealed a significant effect of rearing condition (F(1,58) = 67.27, p<0.0001), age (F(2,58) = 6.45, p=0.0029), and age by rearing condition (F(2,58) = 4.06, p=0.022). Follow-up analysis in females revealed significant differences between ctrl and LB mice at PND 28 (t58 = 5.37, p<0.0001) and 35 (t58 = 6.90, p<0.0001), but not at 21 (t58 = 2.28, p=0.076). Ctrl males n = 8, 12, 15; Ctrl females n = 6, 12, 8; LB males n = 14, 14, 14; LB females n = 13, 8, 17. Dots represent individual data points. For all graphs the mean and SEM are presented. A three-way ANOVA was used to test for main effects of sex, age, and rearing condition. A two-way ANOVA followed by Sidak’s multiple comparison analysis was used to test for difference in rearing condition across age within a given sex. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ctrl and LB mice spent a similar percentage of their time in the open arms of the EPM (F(1,45) = 0.30, p=0.58). No sex difference (F(1,45) = 0.31, p=0.57) or sex by rearing condition interactions (F(1,45) = 0.53, p=0.46) were observed for the percent time mice spent in the open arms. Further, no main effects were observed for the total distance traveled on the EPM (sex: F(1,45) = 3.52, p=0.067; rearing condition: F(1,45) = 1.64, p=0.20; sex x condition interaction: F(1,45) = 0.41, p=0.52). (B) When analyzing the time and number of times that the mouse looked over the edge of the open arms of the EPM (head dipping), we found that LB mice spent more time head dipping (F(1,45) = 4.30, p=0.043), but did not engage in more bouts (F(1,45) = 0.85, p=0.35). No main effect of sex or interaction was observed for the total amount of time mice spent head dipping (sex: F(1,45) = 0.63, p=0.42; sex x rearing condition: F(1,45) = 0.12, p=0.72), or for the total number of head dips (sex: F(1,45) = 2.28, p=0.13; sex by rearing condition: F(1,45) = 0.00047, p=0.98). Ctrl males n = 11; Ctrl females n = 10; LB males n = 18; LB females n = 10. Dots represent individual data points. For all graphs, the mean and SEM are presented. A two-way ANOVA was used to test differences between sexes and rearing conditions. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** We used a three-way ANOVA to assess global effects of rearing condition on locomotion in an open-field assay. We found a main effect rearing condition (F(1,111) = 18.08, p<0.0001), but not of age (F(2,111) = 0.42, p=0.65) or sex (F(1,111) = 0.063, p=0.80). For males, a follow-up two-way ANOVA between Ctrl and LB revealed a significant effect of rearing condition (F(1,50) = 8.97, p=0.0042), but not age (F(2,50) = 0.92, p=0.40) or age by rearing condition (F(2,50) = 0.29, p=0.74). Follow-up analysis in males revealed no significant simple effects between ctrl and LB mice at any of the ages tested (PND 21: t50 = 1.17, p=0.57; PND 28: t50 = 1.79, p=0.22; PND 35: t50 = 2.28, p=0.078). For females, a two-way ANOVA between Ctrl and LB revealed a significant effect of rearing condition (F(1,61) = 9.48, p=0.0031), but not age (F(2,61) = 1.08, p=0.34) or age by rearing condition (F(2,61) = 2.41, p=0.097). Follow-up analysis in females revealed significant differences between ctrl and LB mice at PND 28 (t61 = 3.09, p=0.0090), but not at 21 (t61 = 0.37, p=0.97) or 35 (t61 = 1.56, p=0.32). Ctrl males n = 9, 6, 9; Ctrl females n = 14, 8, 8; LB males n = 10, 8, 14; LB females n = 12, 8, 17. Dots represent individual data points. For all graphs, the mean and SEM are presented. A three-way ANOVA was used to test for main effects of sex, age, and rearing condition. A two-way ANOVA followed by Sidak’s multiple comparison analysis was used to test for difference in rearing condition across age within a given sex. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) To assess if LB affected the response of mice to the conditioning foot-shocks at PND 21, we plotted the mean velocity of mice during the one second foot-shock. A three-way repeated measures ANOVA did not reveal effects of rearing condition (F(1,142) = 0.70, p=0.40), sex (F(1,142) = 1.32, p=0.25), tone trial x sex (F(5,710) = 0.30, p=0.91), rearing condition x sex (F(1,142) = 1.41, p=0.23), tone x rearing condition x sex (F(5,710) = 0.29, p=0.91). However, we did find that a significant effect of tone trial (F(4.436,629.9) = 95.78, p<0.0001), showing that the velocity of the mice decreased as tone trials progressed, and a significant effect of tone by rearing condition (F(5,710) = 2.28, p=0.044). (Ctrl males n = 39, LB males n = 38, Ctrl females n = 39, LB females n = 30). (B) At PND 21, no main effects were observed for the minimum foot-shock intensity required for mice to flinch (sex: F(1,35) = 0.017, p=0.89; rearing condition: F(1,35) = 0.23, p=0.62; interaction: F(1,35) = 0.60, p=0.44) or audibly vocalize (sex: F(1,36) = 3.42, p=0.072; rearing condition: F(1,36) = 1.72, p=0.19; interaction: F(1,36) = 0.32, p=0.57). For flinch: Ctrl males = 12, females = 10; LB males = 8, females = 9. For audible vocalization: Ctrl males = 12, females = 10; LB males = 9, females = 9. For all graphs the mean and SEM are presented. A three-way repeated measure ANOVA was used to assess differences in shock reactivity during conditioning. A two-way ANOVA followed by Sidak’s multiple comparison analysis was used to assess differences in flinching and vocalization. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+### LB increased PV-positive cell density early in life in the BLA, but not mPFC
 
 The altered trajectory of fear expression could have arisen from developmental changes in circuits supporting this behavior, including mPFC and BLA, which are known to be involved in emotional regulation and fear conditioning (Arruda-Carvalho and Clem, 2015; Etkin et al., 2011; Sierra-Mercado et al., 2011). Our prior work demonstrated that LB rearing accelerates markers of development, including PV interneuron maturation, in the hippocampus (Goodwill et al., 2018). Therefore, we predicted that deficits in freezing could be due to ELA effects on interneuron maturation in either the BLA or mPFC. To test this hypothesis, we tested for developmental changes in markers of subclasses of interneurons across these distinct brain structures.
 
 Using immunohistochemistry, we labeled PV-positive interneurons, a late differentiating subclass of inhibitory interneurons (Bartolini et al., 2013; Mukhopadhyay et al., 2009; Rymar and Sadikot, 2007), in the brain of LB and control reared male mice at PND 16, 21, 28, 50, and 75. PV-positive interneurons are known to begin differentiating between PND 10–28, reaching a mature phenotype at approximately PND 30 (Berdel and Moryś, 2000; Dávila et al., 2008). In BLA, LB led to an increased PV-positive cell density at PND 21 when compared to control reared mice at this age (Figure 4A). No differences in PV-positive cell density was observed at PND 16, with both groups expressing low densities of PV-positive cells. Furthermore, the difference in PV-positive cell density between LB and control groups subsided by PND 28, with control PV-positive cell density rising to match those observed in LB mice. The increase in PV-positive cell density in the BLA of LB mice at PND 21 was not observed in the other regions of the fear circuit assessed here, including the prelimbic (PL; Figure 4A center) and infralimbic (IL; Figure 4A right) subregions of the mPFC. A non-significant decrease in PV-positive cell density in LB mice was observed at PND 50 in BLA, IL, and PL. This decrease in PV-positive cell density was not observed in other brain regions such as the primary motor cortex and somatosensory cortex (Figure 4—figure supplement 1). Thus, the decrease in PV-positive cell density may be indicative of changes in parvalbumin protein concentration within BLA, IL, and PL as mice transition into adulthood. Studies assessing protein concentrations in combination with additional labeling techniques will be needed to fully determine whether this represents a true decline. Together these findings suggest that LB increased PV positive cell density in the BLA but not the mPFC, suggesting region-specific effects of LB rearing.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative image of immunohistochemical labeling in the BLA of an LB PND 21 mouse (left). From left to right, graphs showing the density of PV-positive cells in the BLA, PL, and IL of male mice at different ages. Immunohistochemical analysis revealed that LB significantly increased Parvalbumin positive (PV+) neurons at PND 21 in BLA (t10 = 2.40, p=0.037) but not in PL (t10 = 0.83, p=0.42) or IL (t10 = 0.17, p=0.86). Except for PL at PND 75 (t9 = 2.85, p=0.018), no differences were observed at PND 16, 28, 50 or 75 respectively for BLA (t8 = 1.07, p=0.31; t8 = 0.85, p=0.41; t9 = 1.65, p=0.13; t9 = 0.48, p=0.63), PL (t8 = 1.26, p=0.24; t10 = 0.54, p=0.59; t11 = 1.40, p=0.18; t9 = 2.85, p=0.018), or IL (t8 = 1.03, p=0.33; t10 = 1.15, p=0.27; t11 = 1.12, p=0.28; t9 = 0.81, p=0.43). For BLA (Ctrl n = 5, 7, 5, 6, 6; LB n = 5, 5, 5, 5, 5). For PL and IL (Ctrl n = 5, 6,6,7,6; LB n = 5, 6, 6, 6, 5). (B) Western blot analysis of BLA tissue. Diagram and sample blots of PND 35 mice are shown. Graphs showing differing protein levels of mice from infancy into adolescence. No differences between LB and control mice were observed in BLA for calretinin (t11 = 1.90, p=0.083; t11 = 1.28, p=0.22; t11 = 0.37, p=0.71; t12 = 0.14, p=0.88), calbindin (t11 = 0.94, p=0.36; t11 = 0.12, p=0.90; t11 = 0.46, p=0.65; t12 = 0.53, p=0.60), VGLUT1 (t11 = 1.53, p=0.15; t12 = 0.26, p=0.79; t12 = 0.41, p=0.68; t12 = 0.18, p=0.85), or myelin basic protein (t11 = 1.08, p=0.30; t11 = 0.16, p=0.87; t12 = 0.86, p=0.40) levels. For calbindin, calretinin, and myelin basic protein (Ctrl n = 7, 7, 6, 7; LB n = 6, 6, 7, 7). For VGLUT1 (Ctrl n = 6, 7, 7, 7; LB n = 7, 7, 7, 7). (C) Western blot analysis of mPFC tissue. Diagram and sample blots of PND 35 mice are shown. Graphs showing differing protein levels of male mice from infancy into adolescence. No differences between LB and control mice were observed in mPFC for calretinin (t10 = 1.84, p=0.095, t12 = 1.71, p=0.11, t9 = 0.35, p=0.73, t11 = 0.88, p=0.39), calbindin (t10 = 2.01, p=0.071; t12 = 1.02, p=0.32; t9 = 0.19, p=0.85; t11 = 0.67, p=0.51), or VGLUT1 (t10 = 0.42, p=0.68; t12 = 0.15, p=0.88; t12 = 0.26, p=0.79; t12 = 0.85, p=0.41) levels. An increase in mPFC Myelin Basic Protein was observed exclusively at PND 28 (t9 = 2.54, p=0.031), but not at PND 21 (t12 = 0.80, p=0.43) or 35 (t11 = 0.97, p=0.35). For calbindin, calretinin, and myelin basic protein (Ctrl n = 6, 7, 6, 7; LB n = 6, 7, 5, 6). No effects of VGLUT1 were observed in the mPFC. For VGLUT1 (Ctrl n = 6, 7, 7, 7; LB n = 6, 7, 7, 7). Bars represent group means + / - SEM. Unpaired two-tailed t-tests between control and LB of a given age were used for A, B and C. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) LB mice had a significantly lower density of PV-positive cells compared to Ctrl at PND 16 (t9 = 3.21, p=0.010). By PND 21 LB cell density increased significantly above Ctrl levels (t9 = 2.76, p=0.022). No difference in PV+ cells were detected at PND 28 (t11 = 0.60, p=0.56) or 50 (t9 = 0.78, p=0.45). A significantly higher density of PV-positive cells was observed in LB relative to control mice at PND 75 (t9 = 2.49, p=0.033). (B) In somatosensory cortex, LB mice had a significantly lower density of PV-positive cells compared to Ctrl at PND 16 (t9 = 3.17, p=0.011), which was resolved by PND 21, with no significant differences being observed at PND 21 (t9 = 0.31, p=0.75), 28 (t11 = 0.60, p=0.55), 50 (t9 = 0.61, p=0.55), or 75 (t9 = 0.73, p=0.47). For both panels Ctrl n = 5, 5, 7, 6, 6; LB n = 6, 6, 6, 5, 5. For all graphs the mean and SEM are presented. A two-tailed paired student t-test was used to test between group differences. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
 Next, western blot analysis was used to determine if LB impacted protein levels for other classes of interneurons (calbindin/calretinin), glutamatergic neuronal markers (VGLUT1), or markers of myelination (myelin basic protein) across early developmental time points in male mice (Figure 4B and C). Western blot analysis allowed us to detect differences between LB and Ctrl mice that could not be detected through immunohistochemical labeling due to poor quality of staining in brains from young animals. In BLA, LB had no effect on calretinin, calbindin, VGLUT1, or myelin basic protein levels at any age tested (Figure 4B). Furthermore, in mPFC, LB did not affect levels of calretinin, calbindin, or VGLUT 1. However, LB was associated with increased myelin basic protein levels in mPFC at PND 28 (Figure 4C). Together, LB appeared to have driven a cell-type-specific developmental increase in PV-positive cells in BLA.
 
-## PV inhibition in BLA rescues the fear expression deficit
+### PV inhibition in BLA rescues the fear expression deficit
 
 We then hypothesized that the precocious maturation of PV-positive cells in BLA may have impacted the expression of freezing behavior at PND 22. The focus on PV-positive cells was based on previous reports that have demonstrated a role for BLA PV-positive cells in modulating fear expression (Davis et al., 2017; Wolff et al., 2014). To test this hypothesis, we used transgenic mice that selectively express the optogenetic construct halorhodopsin in PV-positive cells. Mice that express halorhodopsin were also positive for EGFP, allowing us to verify ELA effects on cell density. This strategy allowed us to silence PV-positive cells in a time and region-specific manner.
 
 We first replicated the ability of ELA to increase PV-positive cell density in the BLA by quantifying EGFP-positive cells in control and LB reared mice from the PV Halo mice (PV-CreHet/floxed NpHRHet), which co-express an EGFP reporter on PV-positive cells. Again, LB was associated with an increase in BLA PV-positive cell density at PND 21 mirroring prior immunohistochemical findings (Figure 5A). Specifically, at PND 21, LB PV Halo mice had a greater density of PV positive cells in the BLA compared to age matched control PV Halo mice (Figure 5A), with no effect of LB rearing on PV-positive cell density in PL or IL in this mouse line (Figure 5B). No effect of LB rearing at PND 21 was observed for other genetically labeled cell populations within the BLA, such as somatostatin and VGlut 2 (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative image of PV-positive cells in BLA of Het PV-Cre/Het floxed halo (‘PV Halo’) mouse line (left). LB increased the density of PV-positive cells in the BLA (t8 = 3.49, p=0.0081; n = 5 per group). (B) Representative image of PV+ cells in the mPFC of a PV Halo (left). LB did not affect the density of PV-positive cells in PL (t6 = 1.72, p=0.13) or IL (t6 = 0.80, p=0.45) compared with control reared mice (n = 4 per group). (C) Graph showing conditioning and recall test. Optogenetic inhibition occurred during the conditioning tones. Ctrl and LB reared Light control (Het PV-Cre/null floxed Halo) and PV Halo (Het PV-Cre/Het floxed Halo) mice were bilaterally implanted with an optical fiber into BLA, optic fiber placements are shown (left). To assess effects of optogenetic inhibition of PV cells in LB reared mice we compared LB light controls versus LB PV Halo mice. When analyzing PV inhibition in LB mice, a main effect of tone presentation (F(5,45) = 6.97, p<0.0001) was observed, indicating mice had learned the tone/foot shock association. Optogenetic inactivation of PV positive cells in LB reared mice increased freezing during conditioning (F(1,9) = 6.21, p=0.034), and resulted in an increase in freezing on the recall test 24 hr later (t9 = 2.69, p=0.024). No interaction between tone presentation and experimental condition was observed (F(5,45) = 1.55, p=0.19) between LB light control and LB PV Halo mice. For LB: light control n = 5, for LB: PV Halo n = 6. When assessing the effects of PV-positive cell inhibition between Ctrl: Light control and Ctrl: PV Halo mice, a repeated measure ANOVA revealed a main effect of tone presentation (F(5,45) = 9.08, p<0.0001), and optogenetic inactivation (F(1,9) = 9.5, p=0.013). No main effect of tone by optogenetic inactivation (F(5,45) = 0.96, p=0.44) was observed. No differences in memory retrieval were observed between the Ctrl: light control and the Ctrl: PV Halo mice (t9 = 1.29, p=0.22). For additional locomotion controls and cFos analysis of inhibition see Figure 4—figure supplement 1. A repeat measure two-way ANOVA was used to assess differences in fear conditioning, for all other analysis two-tailed unpaired student t-tests were used. Bars represent group means + / - SEM. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Genetic labeling of somatostatin-positive cells (left), derived from Sst-Cre mice crossed with an Ai14 (Td-Tomato) reporter mouse. No significant differences were observed between Ctrl and LB male mice (t7 = 0.91, p=0.39). Ctrl n = 4; LB n = 5. (B) Genetic labeling of slc17a6 ‘VGlut2’-positive cells (left) generated by crossing a VGlut2-Cre mouse with an Ai14 (Td-Tomato) reporter mouse. No significant differences were observed between Ctrl and LB male mice (t6 = 1.06, p=0.32). Ctrl n = 4; LB n = 5. A two-tailed paired student t-test was used to test between group differences. For all graphs the mean and SEM are presented. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Graphs showing the effect of optogenetic inhibition of PV+ cells in the BLA on locomotion (left) and anxiety-like behavior (right). Optogenetic inhibition of PV+ cells did not affect distance traveled (t11 = 0.36, p=0.72) or the time spent in the center of the open field (t11 = 1.40, p=0.18) when compared to light controls. For light control n = 7, for PV Halo n = 6. (B) Graph showing the effects of optogenetic inactivation on cFos labeling within the BLA, following 15 min of unilateral inhibition in the home cage. Immunohistochemical labeling for cFos revealed that unilateral optogenetic inactivation of PV+ cells increased cFos-positive cells in the inhibited side of the brain (t4 = 2.89, p=0.044) when compared to the uninhibited side (n = 5). Two-tailed unpaired student t-tests were used to analyze data in panel A, while a two-tailed paired student t-test was used to assess differences in cFos labeling in panel B. For all graphs, the mean and SEM are presented and represent data from a mix of male and female mice. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
 To test if inhibiting PV-positive cells in the BLA of LB reared mice during fear learning could rescue the observed freezing deficits at PND 22, we optogenetically silenced PV positive cells in the BLA during fear conditioning. Consistent with our prediction, bilateral inactivation of PV-positive cells in the BLA during the conditioning tones resulted in increased freezing 24 hr later, during the recall test (Figure 5C). To ensure that the increased freezing was not due to effects on locomotion or anxiety-like behavior, mice were placed in an open field and PV-positive cells in the BLA were optogenetically inhibited and the behavior of mice was tracked. No effects of optogenetic inhibition of PV-positive cells were found for measures of anxiety-like behavior or general locomotor activity of mice (Figure 5—figure supplement 2A). To ensure that inhibition of PV-positive cells was modulating BLA activity, a subset of unilaterally implanted mice were administered light for 15 min while freely moving in their homecage. Since parvalbumin neurons work to inhibit neuronal activity, we hypothesized that inactivation of the inhibitory interneurons should lead to increased activity of excitatory neurons and therefore increased expression of the immediate early gene cFos. We found that mice exhibited increased cFos labeling in the optogenetically inhibited side when compared to the non-inhibited (control) side (Figure 5—figure supplement 2B). Further, electrophysiological control experiments carried out by our lab in the OFC of the same mouse line demonstrated robust inhibition of PV-positive cells in response to light (Goodwill et al., 2018). Together, these results suggest that the inhibition of PV-positive cells in the BLA of LB reared mice is sufficient to overcome LB induced freezing deficits at this age.
 
-## LB rearing increased PL to BLA anatomical connectivity in females
+### LB rearing increased PL to BLA anatomical connectivity in females
 
 Previous research has demonstrated that ELA can alter mPFC to BLA connectivity in humans (Fan et al., 2014; Gee et al., 2013; Herringa et al., 2016) (reviewed in Herzberg and Gunnar, 2020; VanTieghem and Tottenham, 2018), and BLA to mPFC anatomical (Honeycutt et al., 2020), and functional (Bolton et al., 2018; Guadagno et al., 2018; Yan et al., 2017) connectivity in rodents. Since LB male and female mice exhibited diminished fear expression at PND 21, and PL projections into BLA are known to promote fear learning, while IL projections into BLA support fear extinction (Do-Monte et al., 2015a; Giustino and Maren, 2015; Lee and Choi, 2012; Sierra-Mercado et al., 2011), we sought to investigate whether LB altered anatomical connectivity between mPFC and BLA in our hands. To test if LB altered the timing and density of projections from mPFC to BLA, the retrograde tracer cholera toxin B (CTB) was injected unilaterally into the BLA and the number of labeled cells in PL and IL were quantified. Injections were performed 1 day prior to the time point of interest (e.g. PND 15 for PND 16) and perfusions performed 1 day later (e.g. PND 17 for PND 16). Four time points were tested (PND 16, 21, 28 and 35; Figure 6A–C). As labeling could be affected by efficiency of CTB uptake following injection and BLA placement, we used an ANCOVA analysis with BLA area at the site of injection and CTB injection area as covariates. Previous research has reported no effects of LB rearing on BLA volume at PND 20 (Guadagno et al., 2018). Therefore, we interpreted the corrected estimated mean densities, obtained through the ANCOVA analysis as accounting for between animal differences in CTB injection size and injection placement (potential limitations of this approach may be found in the Discussion and Materials and methods). An independent ANCOVA was conducted for each age group and each sex (for analysis of Ctrl males vs Ctrl females see Figure 6—figure supplement 1). In males, LB did not affect the density of PL to BLA or IL to BLA labeled cells at PND 16, 21, 28 or 35. However, LB female mice did show an increase in PL to BLA projecting cells at PND 21 and 28 when compared to Ctrl females (Figure 6D and E). LB females did not differ from Ctrl females in IL to BLA projection densities. Next, we sought to determine if LB altered the balance of PL and IL inputs into BLA across development. We determined the relative difference in PL and IL projections as a factor of the total number of labelled cells for each mouse ((PL - IL) / (PL + IL)). This value, or projection index, accounts for between-subject differences in labeling efficiency (Figure 6F). No differences in projection index were found between LB and Ctrl reared male mice. A significant increase in the projection index was observed in LB reared females when compared to Ctrl females at PND 16, but not at PND 21, 28 or 35, suggesting an upwards shift in PL over IL inputs into BLA at that age in females. These results suggest that females may be more sensitive to LB induced alterations in the development of mPFC anatomical connectivity to BLA.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of CTB 594 retrograde injection into the BLA. (B) Tracings of CTB injections into the BLA. (C) Example picture of injection in the BLA (left), and of cells labelled in mPFC (right). (D) Graphs showing the differences in PL to BLA corrected estimated mean densities with 95% confidence intervals from infancy (PND16) into adolescence (PND 35). In males, the density of PL to BLA projecting cells in LB mice did not differ at PND 16 (F(1,6) = 2.46, p=0.16), 21 (F(1,7) = 1.69, p=0.23), 28 (F(1,6) = 0.035, p=0.85) or 35 (F(1,6) = 3.08, p=0.13) when compared to control mice. In females, a significant increase in PL to BLA projecting cells density was observed in LB mice at PND 21 (F(1,4) = 21.74, p=0.010) and 28 (F(1,10) = 7.44, p=0.021) but not at PND 16 (F(1,6) = 1.47, p=0.27) or 35 (F(1,6) = 0.001, p=0.97). (E) Graphs showing the differences in IL to BLA corrected estimated mean densities with 95% confidence intervals from infancy into adolescence. LB did not affect the density of IL to BLA projections at any age for males (16: F(1,6) = 3.71, p=0.10; 21: F(1,7) = 0.22, p=0.65; 28: F(1,6) = 0.003, p=0.958; 35: F(1,6) = 2.17, p=0.19) or females (16: F(1,6) = 0.091, p=0.77; 21: F(1,4) = 5.35, p=0.082; 28: F(1,10) = 2.212, p=0.168; 35: F(1,6) = 5.10, p=0.065). For panels D and E (Ctrl male n = 5, 5, 5, 6; LB male n = 5, 6, 5, 4; Ctrl female n = 5, 4, 7, 5; LB female n = 5, 4, 7, 5). (F) Graphs showing the differences in projection index from infancy into adolescence. LB altered the balance of PL and IL projections to BLA at PND 16 in females (t7 = 3.09, p=0.0175). No other significant differences were observed in the projection index for males (16: t8 = 1.05, p=0.32; 21: t9 = 1.47, p=0.17; 28: t8 = 0.83, p=0.42; 35: t8 = 0.60, p=0.56) or females (21: t6 = 2.22, p=0.068; 28: t11 = 0.75, p=0.46; 35: t8 = 1.61, p=0.14). (Ctrl male n = 5, 5, 5, 6; LB male n = 5, 6, 5, 4; Ctrl female n = 4, 4, 6, 5; LB female n = 5, 4, 7, 5). For D and E dots represent estimated group means with 95% confidence intervals. Estimated means were derived from ANCOVA analysis using two covariates: 1) the area of the CTB injection and 2) the area of BLA where the injection occurred. An ANCOVA was run per age per sex. Statistical significance was determined through post ANCOVA univariate comparison. For panel F, dots represent individual values, bars represent group mean + / - SEM. Unpaired two-way student t-tests were used to assess statistical significance between control and LB mice per age per sex in panel F. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55263/elife-55263-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Control females and males had significantly different corrected estimated mean densities of cells projecting from PL to BLA at PND 16 (F(1,6) = 6.18, p=0.047). Sex differences were no longer significant at PND 21(F(1,5) = 2.23, p=0.19), 28 (F(1,8) = 3.19, p=0.11), or 35 (F(1,7) = 0.90, p=0.37). No sex differences were observed between control reared females and males at any of the ages tested for IL to BLA projections (16: F(1,6) = 4.86, p=0.069; 21: F(1,5) = 0.31, p=0.59; 28: F(1,8) = 0.25, p=0.62; 35: F(1,7) = 0.97, p=0.35). (Ctrl males n = 5, 5, 5, 6; Ctrl females n = 5, 4, 7, 5). (B) Comparison of projection index between control reared male and female mice revealed a significant difference only at PND 21 (t7 = 2.40, p=0.047) but not at any of the other ages tested (16: t7 = 0.056, p=0.95; 28: t9 = 0.36, p=0.72; 35: t9 = 0.12, p=0.90). (Ctrl males n = 5, 5, 5, 6; Ctrl females n = 4, 4, 6, 5). For panel A, corrected estimated means and the 95% confidence intervals are shown. The corrected mean 95% confidence intervals were obtained through ANCOVA analysis run per brain region per age. Statistical significance was determined through post ANCOVA univariate comparison. For panel B, dots represent individual values, bars represent group mean + / - SEM. Unpaired two-way student t-tests were used to assess statistical significance between control and LB mice per age per sex in panel F. *=p < 0.05, **=p < 0.01, ***=p < 0.001.
 
 ## Discussion
 
@@ -82,31 +138,181 @@ In sum, this work reveals complex effects of limited resource rearing, on the ti
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>pvalbtm1(cre)Arbr‘PV-Cre’</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Gt(ROSA)26Sortm39(CAG-hop/EYFP)/HZE ‘floxed Halo’</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:014539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Ssttm2.1(cre)Zjh ‘somatostatin-Cre’</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:013044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Slc17a6tm2(cre)Lowl‘vGlut2-Cre’</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:016963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Gt(ROSA)26Sortm14(CAG-tdTomato)Hze mice ‘Ai14’</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Parvalbumin (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_838238</td>
+      <td>(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Fos (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_2631318</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- β-Tubulin (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_2715541</td>
+      <td>(1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_561053</td>
+      <td>(1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calretinin (mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>RRID:AB_10000320</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>RRID:AB_10000347</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myelin Basic Protein (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_1141521</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VGLUT1 (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_2814811</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H+L) (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_2340770</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_10015282</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin Subunit B (Recombinant), Alexa Fluor 594 Conjugate</td>
+      <td>Fisher Scientific</td>
+      <td>C22842</td>
+      <td>1.0 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Noldus Ethovision XT</td>
+      <td>Noldus</td>
+      <td>RRID:SCR_000441</td>
+      <td>Version 11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td>Version 26</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 Approximately 1091 C57BL/6N wildtype and 63 transgenic, male and female, mice were used in this study. Original breeding stock was ordered from Charles River Labs. All wild-type C57BL/6N mice were bred in house. For optogenetic experiments, pvalbtm1(cre)Arbr‘PV-Cre’ (JAX#008069) and Gt(ROSA)26Sortm39(CAG-hop/EYFP)/HZE ‘floxed Halo’ (JAX#014539) mouse lines were derived from a breeding stock acquired from Jackson laboratories. For optogenetic experiments, homozygous PV-Cre mice were bred with heterozygous floxed Halo mice resulting in two groups of offspring, Het PV-Cre/null floxed Halo (Light Controls) and Het PV-Cre/Het floxed Halo (PV Halo). For genetic labeling of select neuronal populations, homozygous Ssttm2.1(cre)Zjh ‘somatostatin-Cre’ (JAX# 013044) or homozygous Slc17a6tm2(cre)Lowl‘vGlut2-Cre’ (JAX#016963) mice were crossed with homozygous Gt(ROSA)26Sortm14(CAG-tdTomato)Hze mice ‘Ai14’ (JAX#007908) mice to allow expression of the Ai14 reporter in a Cre-dependent manner. All animals were housed according to NIH guidelines and maintained on a 12 hr light:dark cycle. Lights were on from 7:30 am to 7:30 pm, with all experiments being conducted during the light period. Mice had free access to food and water throughout the study. All animal procedures were approved by the Brown University Institutional Animal Care and Use Committee and consistent with the National Institutes of Health Guide for the Care and Use of Laboratory Animals.
 
-## Fragmented maternal care
+### Fragmented maternal care
 
 LB was modeled through a resource restriction paradigm, in which dam and pups were placed in low bedding conditions with limited access to nesting material for 7 consecutive days (PND four through PND 11). This manipulation results in a fragmentation in maternal care (Bath et al., 2016; Rice et al., 2008). Four days after the birth of a litter (PND 4), the dam and pups were transferred from their standard home cage with cob bedding and a 4 × 4 cm cotton nestlet to an LB cage containing a wire mesh floor and a 2 × 4 cm cotton nestlet. The mice continued to have ad libitum access to food and water. Following 1 week (PND 11), pups and dams were returned to their standard housing with full bedding and nesting material. Standard reared mice (designated as Controls—Ctrl) were left undisturbed in a standard home cage until weaning. All pups were weaned and sex segregated at PND 21, with the exception of mice tested at PND 21, which were weaned following the completion of fear conditioning experiments at PND 22.
 
-## Mouse body and brain weight
+### Mouse body and brain weight
 
 To analyze mouse body and brain weights mice were deeply anesthetized with pentobarbital (Beuthanasia 150 mg/kg IP). Mice were first weighed to obtain the full body weight, then the brains were quickly removed. To ensure that brain collection was complete and carried out in an identical manner between groups, the brain stem was cut at the level of the occipital bone and the premaxila and nasal bones were crushed at the rostral most level of the eyes. This allowed us to remove the whole brain with the cerebellum and the intact olfactory bulbs. Brains were then weighed. One mouse was sacrificed at a time to ensure minimum protein degradation as brains were subsequently flash frozen prior to protein extraction for western blot analysis.
 
-## Fear conditioning
+### Fear conditioning
 
 Fear conditioning was carried out in Med Associates (St. Albans City, VT) operant chambers. On days 1 and 2, mice were habituated to two distinct (differing in color, texture, and smell) chambers. Habituation trials lasted 5 min per chamber and were counterbalanced. On day 3, mice received tone-shock associative learning in the fear conditioning chamber. During fear conditioning, mice were presented with six tones (30 s, 4 KHz, 75 dB) with each tone co-terminating with a 1 s foot-shock (0.57 mA). Tone shock pairings were separated by an inter-trial interval of 1.5 min. Testing for fear expression occurred on day 4 of the testing protocol, unless otherwise stated. Fear expression testing consisted of exposing mice to two tones in the control chamber (habituated chamber where no fear conditioning occurred). Different cohorts of animals, across multiple litters were used to test mice at the different developmental time points. Freezing behavior was scored automatically by the activity tracker module in Noldus Ethovision XT 11.0 and verified from video by observers blind to treatment and condition but not to age (as age could be inferred based upon differences in mouse size).
 
-## Light/dark box
+### Light/dark box
 
 Mice were tested in a Light/dark box that was built in house. To begin a trial, mice were placed in the dark side of the box which was connected to a light side by a small opening (~6×6 cm). To increase the brightness of the light side (~139 Lux), a lamp, pointing toward the light side, was mounted on the lid of the dark side. The dimensions of the dark and light side of the chamber were the same and measured (height = 23 cm, width = 22 cm, length = 26 cm). A trial lasted a total of 10 min. Activity of the mouse during a trial was recorded and analyzed using Ethovision XT 11.0 software, with latency to first exit being hand scored by an observer blind to sex, age, and condition.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 To assess the relative density of PV-positive cells and c-Fos expressing cells, immunohistochemistry was performed on control and LB mice on the days stated in each experiment. Briefly, mice were deeply anesthetized with pentobarbital, transcardially perfused with buffered saline followed by 4% paraformaldehyde, and processed for immunohistochemistry as previously described (Bath et al., 2016). For PV-positive cell labeling, a rabbit anti-parvalbumin antibody (1:1,000; Millipore) was used. For c-Fos labeling a rabbit anti c-Fos (1:20,000; Millipore) was used. Brain sections (40 µm) were mounted on charged glass slides, counter stained using a Hema three staining set (Fisher Scientific Company), dehydrated, and coverslipped for imaging. For prelimbic, infralimbic, rostral primary motor cortex, and rostral primary somatosensory cortex, brain sections from AP 1.94 to 1.54 were analyzed. For the amygdala, brain sections from AP −1.22 to −2.06 were analyzed.
 
-## Western blot
+### Western blot
 
 Male mice were sacrificed, brains were quickly dissected, weighed, and flash frozen on dry ice. The medial prefrontal cortex (mPFC), and the basolateral amygdala (BLA) were dissected and stored at −80°C until processing.
 
@@ -114,25 +320,25 @@ Tissues were homogenized in RIPA buffer (with 1% protease and phosphatase inhibi
 
 Membranes were blocked for 1 hr in 5% non-fat milk in Tris-buffered saline Tween-20 (TBST, containing 10 mM Tris, 150 mM NaCl, and 0.1% Tween-20, pH 7.6), followed by incubation with primary antibodies diluted in 5% non-fat milk/0.5% bovine serum albumin in TBST at 4°C overnight. Membranes were washed with TBST three times (15 min per wash) and incubated with secondary antibody in 5% non-fat milk/0.5% bovine serum albumin in TBST for 1 hr. Membranes were then washed with TBST three times (15 min per wash), then visualized with Amersham ECL Western Blotting Detection Reagent (RPN2106, GE Life Sciences) using a C600 Azure Biosystems imaging system (Dublin, CA). Densitometry analysis was conducted with a gel imaging module of NIH ImageJ software.
 
-## Primary antibodies used for western blotting
+#### Primary antibodies used for western blotting
 
 Mouse anti-β-Tubulin (1:2000, Cell Signaling Technology), rabbit anti-GAPDH (1:2000, Cell Signaling Technology), mouse anti-Calretinin (1:500, Swant), mouse anti-Calbindin (1:500, Swant) rabbit anti-Myelin Basic Protein (1:1000, Abcam), rabbit anti-VGLUT1 (1:1000, Millipore). Secondary antibodies used for this study were: HRP conjugated donkey anti-mouse (1:2000, Jackson ImmunoResearch) and donkey anti-rabbit (1:2000, Jackson ImmunoResearch).
 
-## Cholera toxin B injections
+### Cholera toxin B injections
 
 Alexa 594 conjugated cholera toxin B (CTB) (Fisher Scientific) was used to retrogradely label the projections from PL and IL to BLA, in male and female mice, at postnatal ages PND 16, 21, 28, and 35. CTB (1.0 mg/mL) was injected (0.15 ul) into the left BLA 1 day prior to the time-point of interest (e.g. PND 15 for PND 16). In order to inject the CTB into BLA across development separate coordinates were used for each age. Developmentally appropriate coordinates were empirically derived from pilot surgeries. Coordinates used for the CTB injections were as follows: (PND 15: DV = −5.075, ML = −3.05, AP = −1.1; PND 20: DV = −5.1, ML = −3.1, AP = −1.15; PND 34: DV = −5.2, ML = −3.15, AP = −1.2). Mice were perfused 48 hr post-injection. The brain was dissected, sectioned (40 µm), mounted, counter-stained with DAPI (Fisher Scientific) and visualized using a fluorescent microscope. The density of CTB positive cells in the PL and IL was measured.
 
-## Optogenetic surgery and inhibition of PV+ cells
+### Optogenetic surgery and inhibition of PV+ cells
 
 Female mice homozygous for Cre under the control of a parvalbumin driver (JAX#008069- Pvalbtm1(cre)Arbr) were crossed with a male heterozygous floxed Halo (JAX#014539- Gt(ROSA)26Sortm39(CAG-hop/EYFP)Hze). The cross resulted in the selective expression of halorhodopsin in PV+ cells (Het PV-Cre, Het Halo ‘PV Halo mice’) and mice from the same litter that were Cre positive, but lacked the optogenetic channel (Het PV-Cre, null floxed Halo ‘Light control’). Mice were bilaterally implanted with an in-house made ceramic optic fiber (Ø200 µm Core, 0.50 NA; Thorlabs, Newtown, NJ) at PND 15 above BLA (Placements: DV = −5.1, ML = = + / - 3.1, AP = −1.15). For surgeries, mice were anesthetized with isoflurane gas anesthesia (2.0%–2.5% in 1 l/min oxygen) and secured to the stereotaxic apparatus. The scalp was shaved and cleaned, Buprenex (0.1 mg/kg, as an analgesic) was administered intraperitoneally and lidocaine was applied. The skin above the skull was removed to expose the skull. A ∼1 mm–diameter craniotomy was drilled above BLA. The right side implant was lowered and temporarily secured with Metabond (Parkell Inc, Brentwood, NY) while the left side fiber optic was placed. Following the implantation of the second optic fiber, a thin layer of metabond was placed above the skull to adhere the dental acrylic to the skull. After the dental adhesive solidified, isoflurane administration was stopped, and mice were allowed to wake.
 
 Mice began fear conditioning protocol at PND 19 (as described above), with optogenetic inhibition occurring at PND 21 (Figure 5). During conditioning, PV+ cells in the BLA were photo-inhibited with constant light (620 nm Plexbright LED, Plexon, Dallas, TX), using an LED driver (Plexon, Dallas, TX) during the 30 s of the tone (including the 1 s foot-shock). The light power delivered, as measured through the optic fiber pre-implant, ranged from 1.5 to 2 mW per side. Following the fear conditioning protocol, a random subset of the mice were tested for locomotion in an open field under conditions of light stimulation.
 
-## Microscopy
+### Microscopy
 
 Neurolucida software was used to analyze immunohistochemical data. Either a light (for DAB staining) or epi-fluorescent microscope (for fluorescence) was used when appropriate. For quantification of neuronal cell density, brain regions were traced at 4x magnification and borders were defined as shown in Paxinos and Franklin mouse brain atlas. Immunoreactive or fluorescent positive neurons within each region were identified by an observer blind to condition and treatment (10x). All region contours with identified cells were saved and the number of cells and area within each contour was assessed using StereoInvestigator. For each brain region, 3–4 sections per brain were averaged to obtain a mean density.
 
-## Statistical analyses
+### Statistical analyses
 
 A two-tailed student’s t-test was used to compare between two groups. When more than two groups were assessed the appropriate ANOVA was performed as stated in the figure legends. All ANOVA tests were followed by Sidak’s multiple comparison test, assessing the effects of treatment at each given age and/or assessing developmental differences within each treatment.
 
@@ -140,16 +346,16 @@ Two separate analyses of CTB retrograde injection data are presented in Figure 6
 
 With the exception of data in Figure 6D–E, Statistical analysis was performed using Prism Graphpad statistical and graphing software. Figure 6D–E was analyzed with SPSS statistical software. All data were graphed using Prism Graphpad statistical and graphing software. For all statistical analyses, statistical significance was defined as p<0.05.
 
-## Methods relevant to supplementary figures
+### Methods relevant to supplementary figures
 
-## Open field test
+#### Open field test
 
 To test for differences in locomotor activity and anxiety-like behavior, mice were placed in an open field arena as previously described (Goodwill et al., 2019). Distance moved and the time spent in the center of the arena were recorded during a 7 (Figure 3—figure supplement 3) or 5 (Figure 5—figure supplement 2) minute test using the Ethovision video-tracking system. The arena was digitally divided into two zones (center and periphery), as previously described (Goodwill et al., 2019). Decreased time in the center was used as an indicator of anxiety-like behavior.
 
-## Elevated plus maze
+#### Elevated plus maze
 
 To assess anxiety-like behavior at PND 21 mice were placed in an elevated plus maze as previously described (Manzano Nieves et al., 2019; Manzano-Nieves et al., 2018). The EPM consisted of two open (unprotected) and two closed (protected) arms. Greater time in the closed (protected) arms is defined as higher anxiety-like behavior. Mice were allowed 7 min to explore the maze. The time spent in the protected vs. unprotected arms was assessed. Videos were recorded, and behavior was tracked using Noldus Ethovision XT 10.0 software. All trials were conducted under low-light conditions (~109 Lux). Time spent and distance walked in the open and closed arms of the EPM were assessed using the mouse tracking module. The amount of time, and number of instances, that the animals spent with their head below the surface of the open arms (Head Dips) was manually scored by an independent observer blind to the sex and condition of the mice.
 
-## Shock sensitivity assay
+#### Shock sensitivity assay
 
 To assess the minimum foot-shock intensity required to elicit a behavioral response (visible flinch or audible vocalization), PND 21 mice were placed in an operant conditioning chamber (Med associates, Fairfax, VT). Mice were exposed to a series of foot shocks, beginning at 0.06 mA and increasing at 0.02 mA intervals (Manzano-Nieves et al., 2018). Each shock intensity was presented three times. The amplitude of the foot-shock at which a given mouse first flinched, and/or audibly vocalized to 2 out of 3 foot shocks at a given intensity was recorded by two independent observers blind to condition to insure agreement on these measures. Flinching was defined as the mouse moving its body reflexively downward, making its body smaller, directly following a foot-shock. Vocalization was defined as the emittance of an audible sound.

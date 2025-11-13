@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/008xxew50 Institute for Brain and Behavior Amsterdam, Department of Experimental and Applied Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands
+1. Institute for Brain and Behavior Amsterdam, Department of Experimental and Applied Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
 
 † Corresponding author
 
@@ -28,11 +28,29 @@ To address this question, we developed a task in which we dissociated the encodi
 
 Twenty-five human volunteers performed a working-memory task in which visual memory items were encoded and tested at different locations (Figure 1a). Participants memorised two coloured gratings with different orientations presented either vertically or horizontally. The crucial manipulation was that we always tested memory content in the orthogonal axis and at a predictable location (depending on the future rule that we varied across sessions; see Figure 1—figure supplement 1 for the four possible rules).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig1-v1.jpg)
+
+**Figure 1.:** (a) Task schematic. Participants memorised two oriented gratings with different colours presented either vertically or horizontally. Following a delay, a colour change of the central fixation dot prompted participants to select the colour-matching item from working memory to report its orientation later. After another delay, two test gratings appeared transiently and participants compared the cued memory grating to the relevant test grating (clockwise/counter-clockwise judgement) that was determined by the ‘future rule’ that was stable within each block. After a response, feedback (0: wrong, 1: correct) was presented at the side of the relevant test grating. Dash lines serve to explain the association between the encoding and test locations and were never presented in the actual experiment. (b–c) Time courses of gaze shift rates (number of saccades per second) for shifts toward and away from the encoded (panel b) and to-be-tested (panel c) locations. (d) Overlays and comparisons of the difference in gaze-shift rates (toward minus away) for the past (encoded) location and the future (to-be-tested) location. Horizontal lines indicate significant temporal clusters (cluster-based permutation test, p<0.001). Data are presented as mean values with shading reflecting 95% confidence intervals, calculated across participants (n=25).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Difference in gaze-shift rates toward minus away relative to past location (panel a) or future location (panel b), as a function of saccade size (y axes). For reference, dashed horizontal lines indicate 1° visual angle. Additionally, for each panel, we separately show the difference in gaze-shift rates (toward minus away) in time course at the top (collapsed over all depicted saccade sizes) and the difference in number of gaze-shift as a function of gaze-shift magnitude to the right (collapsed over all depicted times).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Conventions as in Main Figure 1b–d, separately for trials that encoded items horizontally and tested items vertically (panel a) and trials that encoded items vertically and tested items horizontally (panel b).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** This extended analysis reveals that while the gaze bias towards the past location disappears around 600 ms after cue onset, the gaze bias towards the future location persists (panel a) and that while the early (joint) future bias occurs predominantly in the microsaccade range below 1-degree visual angle, the later bias to the future location incorporates larger eye movement that likely involve preparing for optimally perceiving the anticipated test stimulus (panel b).
+
 After a delay period, we cued the relevant memory item by changing the colour of the central fixation dot. At this stage, participants were required to select the colour-matching grating from working memory in order to compare it to the upcoming test stimulus (clockwise/counter-clockwise judgement). Crucially, we always presented two stimuli at the test-phase of which only one was relevant, as determined by the future rule. For example, in Figure 1a, after the green memory item is cued, the relevant test stimulus will be the right stimulus, given the future rule (top item tested on right) in this session. Note how the colour cue only ever informed the to-be-tested memory content but never directly informed the to-be-tested future location. The to-be-tested location was an attribute of the cued memory content but not of the cue itself.
 
 Participants were able to perform this dynamic visual working-memory task, with an average accuracy of 70±2percent correct (mean ± SEM) and an average reaction time of 1218±125 ms.
 
-## Gaze reveals the use of both past and future memory attributes that are considered at overlapping time windows
+### Gaze reveals the use of both past and future memory attributes that are considered at overlapping time windows
 
 To track the utilisation of past and/or future locations associated with working memory contents, we tracked spatial biases in gaze following the cue to select either memory item. Specifically, we focused on directional biases in saccades, that have previously been shown to be sensitive to selective spatial attention (Engbert and Kliegl, 2003; Hafed and Clark, 2002; Rolfs, 2009; Laubrock et al., 2010; Yuval-Greenberg et al., 2014; Shelchkova and Poletti, 2020; Fernández et al., 2023; Lowet et al., 2018), even when directed internally (Liu et al., 2022a; van Ede et al., 2021; van Ede et al., 2019; van Ede et al., 2020).
 
@@ -42,13 +60,21 @@ Having established that past (encoded) memory locations were still utilised by p
 
 These data thus suggest the joint consideration – or ‘activation’ – of past and future memory attributes, at least when analysing past and future memory attributes separately. Below, we provide additional single-trial (single-saccade) evidence for this interpretation.
 
-## Individual saccades reveal truly joint consideration of past and future memory attributes
+### Individual saccades reveal truly joint consideration of past and future memory attributes
 
 In principle, the observed joint activation of the past and future locations associated with the cued memory content in the trial-averaged and participant-averaged data could result from two alternative scenarios with different interpretations. First, either the past or the future alone may be considered in different trials and/or participants, without past and future memory attributes ever being considered together. Alternatively, participants may truly consider both past and future memory attributes jointly at the single-trial, single-saccade level.
 
 While it is notoriously hard to disentangle the single-trial interpretation of averaged data (Stokes and Spaak, 2016), we were here able to do so by interrogating the individual saccade characteristics for which the two alternative scenarios make different predictions. In the first scenario, saccades should be biased to either the past or the future location, but there should be no dependency between them (i.e., a saccade may be biased to the past location regardless of the future location, and vice versa). In contrast, in the second scenario, with truly joint consideration of the past and future, there should be a clear dependency: it should be those saccades that are biased to the past that are also biased to the future. In other words, the future-biased saccades should predominantly be driven by the past-biased saccades, and vice versa.
 
 To disentangle these alternatives at the single-trial level of individual saccades, we focused on the first saccades after the cue, in the 200–600 ms window. We previously identified these windows as the relevant window for microsaccade biases by internal selective attention (Liu et al., 2022a), and this is also where we observed the overlapping past and future biases in the average here (see Figure 1d). To facilitate visualisation and quantification, we rotated all detected saccades to match a consistent coordinate frame, in which the past location is represented horizontally (right = towards, left = away), and the future location vertically (top = toward, bottom = away; see Figure 2a).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig2-v1.jpg)
+
+**Figure 2.:** (a) The distribution of the direction of the first saccades we detected after cue onset relative to past (horizontal) and future (vertical) locations. Data from the different sessions were rotated to match a common coordinate frame. (b) The bias toward the past (x-axis) as a function of saccade direction with regard to the future (y-axis). (c) The bias toward the future (y-axis) as a function of saccade direction with regard to the past (x-axis). In (b–c), The bold black line indicates the significant temporal cluster (cluster-based permutation test, p<0.001). Data are presented as mean values with shading indicating 95% confidence intervals, calculated across participants (n=25). (d) The percentage of identified first saccades toward or away from the future location as a function of whether the same saccades were also biased toward or away from the past location. Error bars in panel d indicate ±1 SEM calculated across participants (n=25).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90874/elife-90874-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (Top panel) The spatial layouts in the four future rules. (Middle panel) Polar distributions of saccades during 0–1500ms after encoding onset (i.e. the period between encoding onset and cue onset). The purple quadrants represent the axis of the future rule and the gray quadrants the orthogonal axis. (Bottom panel) Time courses of saccades along the above two axes. We did not observe any sign of a bias along the axis of the future rule itself.
 
 As shown in Figure 2a, the majority of first-detected microsaccades in our window of interest were made toward the past (right >left) and toward the future (top >bottom), replicating our prior analyses. Critically, this visualisation and quantification enabled us to disentangle the two alternatives sketched above in which past and future saccades at the single-trial (individual-saccade) level were either independent (past bias regardless of future and future bias regardless of past) or dependent (joint past and future bias). Our data supported the latter.
 
@@ -74,11 +100,11 @@ Our data complement other recent studies investigating visual working memory in 
 
 ## Methods
 
-## Participants
+### Participants
 
 Twenty-five healthy human volunteers participated in the study (age range: 20–27; 10 male and 15 female; 23 right-handed; 10 corrected-to-normal vision: five glasses and five lenses). Sample size of 25 was determined a-priori based on previous publications from the lab with similar experimental designs, and that relied on the same outcome measure (Liu et al., 2022a; van Ede et al., 2021; van Ede et al., 2020). To achieve the intended sample size, three participants were replaced due to chance-level performance.
 
-## Stimuli and procedure
+### Stimuli and procedure
 
 Participants performed a visual working memory task in which we orthogonalised the encoding and to-be-tested location in order to track the utilisation of past and future working-memory attributes.
 
@@ -94,13 +120,13 @@ To ensure the use of the future rule, we made it task-relevant by always present
 
 In total, the study consisted of four sessions, each contained five blocks of 32 trials each. At the start of each session, participants were notified of the session-specific future rule and then practiced the task with the current rule for 16 trials before starting the formal session. We did not include practice trials in our analyses. The study lasted approximately 70min per participant.
 
-## Eye-tracking acquisition and pre-processing
+### Eye-tracking acquisition and pre-processing
 
 Gaze was tracked from a single eye (right eye in all participants except one for which the left eye provided a better signal) using an EyeLink 1000 (SR Research) at a sampling rate of 1000Hz. The eye tracker camera was positioned on the table ∼5cm in front of the monitor and ∼65cm away from the eyes. Gaze position was tracked continuously along the horizontal and vertical axes. Before recording, the built-in calibration and validation protocols from the EyeLink software were used to calibrate the eye tracker.
 
 After recording, the eye-tracking data were converted from the original.edf to the .asc format and analysed in Matlab using the Fieldtrip analysis toolbox (Oostenveld et al., 2011) in combination with custom code. Blinks were marked by detecting 0 clusters in the eye-tracking data. All data from 100 ms before to 100 ms after the detected 0 clusters were set to NaN to eliminate residual blink artefacts. Finally, data were epoched from –1000 to+2000 ms relative to after the onset of the retro-cue.
 
-## Gaze-shift detection
+### Gaze-shift detection
 
 We focused our analysis on spatial biases in gaze shifts (saccades/microsaccades). To identify gaze shifts, we employed a velocity-based method that we established in our prior studies (Liu et al., 2022a; Liu et al., 2022b), that builds on other velocity-based detection methods (e.g., Engbert and Kliegl, 2003). First, gaze velocity was calculated by taking the Euclidean distance between temporally successive gaze-position values in the two-dimensional plane (horizontal and vertical gaze position). Velocity was smoothed with a Gaussian-weighted moving average filter with a 7ms sliding window (using the built-in function ‘smoothdata’ in MATLAB). When the velocity exceeded a trial-based threshold of five times the median velocity, we marked the first sample after the threshold crossing as the onset of a saccade. To avoid counting the same saccade multiple times, a minimum delay of 100 ms between successive saccades was imposed. Saccade magnitude and direction were calculated by estimating the difference between pre-saccade gaze position (−50–0 ms before saccade onset) vs. the post-saccade gaze position (50–100 ms after saccade onset).
 
@@ -108,7 +134,7 @@ To focus our analysis on (micro)saccades that were driven by attention, we here 
 
 Time courses of gaze-shift rates (in Hz) were quantified using a sliding time window of 50 ms, advanced in steps of 1 ms. We additionally decomposed shift rates into a time-magnitude representation (as in Liu et al., 2022a), showing the time-resolved rate of attention-driven shifts (toward vs. away) per second, as a function of the saccade size (see Figure 1—figure supplement 2). For magnitude sorting, we used successive magnitude bins of 0.2 visual degrees in steps of 0.04 visual degrees.
 
-## Individual-shift level analysis
+### Individual-shift level analysis
 
 For our analysis at the single-trial, single-saccade level, we focused on the first start saccade observed during the 200–600 ms post-cue period that we have previously identified as the relevant time window for the effect of interest (Liu et al., 2022a). For all ‘first saccades,’ we then looked at the spatial distribution of saccade directions relative to the relevant past (encoding) and future (to-be-tested) locations associated with the cued memory item. To facilitate visualisation and quantification, we rotated all detected saccades to a common coordinate system, in which the past location was represented horizontally (left=away, right=toward), and the future location vertically (top=toward, bottom = away).
 
@@ -116,7 +142,7 @@ To obtain the proportional distribution of saccades in this coordinate system (s
 
 To quantify whether saccades were jointly biased to the past and future (as opposed to either alone), we decomposed these distributions into the bias toward the past (toward vs. away from past) as a function of saccade direction with regard to the future (Figure 2b) and the bias toward the future (toward vs. away from future) as a function of saccade direction with regard to the past (Figure 2c). Finally, we binarised saccades as either going toward or away from the past and toward or away from the future (Figure 2d). This enabled us to test whether saccades were jointly biased to the past and the future (which would predict an interaction whereby those same saccades that were biased to the past were also biased to the future).
 
-## Statistical analysis
+### Statistical analysis
 
 To evaluate the reliability of patterns in our gaze data, we used a cluster-based permutation approach (Maris and Oostenveld, 2007). This method is ideal for evaluating patterns at multiple neighbouring points while circumventing the problem of multiple comparisons. We used this approach for all evaluations involving a series of data, such as along a time axis (Figure 1b–d; Figure 2b–c).
 

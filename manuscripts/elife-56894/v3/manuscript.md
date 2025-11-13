@@ -40,11 +40,11 @@ We demonstrate that the coupling between hippocampal and entorhinal attractor ne
 
 Next, we show that our model exhibits two emergent features that provide a compelling explanation for several recent experimental observations.
 
-## Variability of individual grid cell firing rates across firing fields
+### Variability of individual grid cell firing rates across firing fields
 
 Even though grid cell activity is spatially periodic to a good approximation, several recent works showed that firing rates of individual grid cells vary across firing fields (Diehl et al., 2017; Dunn et al., 2017; Ismakov et al., 2017). These firing rate differences are retained across multiple exposures to the same environment. On their own, attractor models of grid cell dynamics predict that firing rates should be identical across firing fields. However, external inputs to the grid cell system could modulate the activity of grid cells in a non-periodic manner. Such inputs could have a sensory origin and project to grid cells from the LEC or the hippocampus. Here, we show that even without any sensory inputs projecting into the system, the embedding of multiple spatial maps within the hippocampus, combined with the synaptic projections from place cell to grid cells, generates variability in the firing rate of grid cells across firing fields.
 
-## Artificial hippocampal remapping upon grid cell depolarization
+### Artificial hippocampal remapping upon grid cell depolarization
 
 Place cell firing fields were recently recorded during hyperpolarization or depolarization of layer II stellate cells in the MEC (Kanter et al., 2017), giving rise to surprising observations. First, depolarization in the MEC led to a form of remapping in the hippocampus that resembles partial remapping (Colgin et al., 2008; Latuske et al., 2017; Muller and Kubie, 1987; Quirk et al., 1990). Some place cells shifted their firing fields to new locations, while other place fields remained anchored to their original positions and exhibited only rate remapping. This implies that in contrast to global remapping, population patterns of activity under depolarization of the MEC retained partial overlap with firing patterns that were expressed under non-perturbed conditions. Unlike classical remapping experiments, the changes in the firing patterns of place cells in Kanter et al., 2017 were induced without any changes in the sensory inputs. We refer to this form of remapping induced by MEC depolarization as artificial remapping, following Kanter et al., 2017. Second, an asymmetry was observed between consequences of depolarization and hyperpolarization in the MEC, since hyperpolarization had only mild effect on the spatial tuning curves of place cells. So far, these observations have lacked a satisfying theoretical explanation. We show below that our model exhibits the same phenomenology as observed in Kanter et al., 2017. The theory predicts that MEC depolarization, but not hyperpolarization, alters the manifold of persistent population activity patterns, such that the hippocampus expresses mixtures of patterns that were associated with different environments before the perturbation. The emergence of such mixed states under certain perturbations is characteristic of models of associative memory. Thus, artificial remapping may offer the first experimental observation of this phenomenon in a well-characterized neural network.
 
@@ -52,23 +52,23 @@ Place cell firing fields were recently recorded during hyperpolarization or depo
 
 We first ask whether bidirectional connectivity between grid cells and place cells can enforce persistent states of activity that enable continuous coding of position, and are compatible with the observed phenomenology of the place and grid cell neural codes in multiple environments: global hippocampal remapping (Muller and Kubie, 1987), and phase shifts in individual modules of the MEC (Fyhn et al., 2007). For simplicity, and to reduce the computational cost of simulations, we consider throughout this manuscript a one-dimensional (1d) analogue of grid cell and place cell dynamics.
 
-## Model architecture and description
+### Model architecture and description
 
 We model neural activity using a standard rate model. Neurons are grouped into several sub-populations: hippocampal place cells and three grid-cell modules. The architecture of synaptic connections is briefly described here, and fully specified in Methods. There are three types of synaptic connections in the model:
 
-## Recurrent connectivity between grid cells
+#### Recurrent connectivity between grid cells
 
 Connectivity within each grid cell module produces a continuous attractor with a periodic manifold of steady states. We adopt the simple synaptic architecture proposed in Guanella et al., 2007. In the 1d analogue, this form of connectivity maps into the ring attractor model (Ben-Yishai et al., 1995; Redish et al., 1996; Skaggs et al., 1995; Zhang, 1996): neurons, functionally arranged on a ring, excite nearby neighbors, while global inhibitory connections imply that distant neurons inhibit each other. This synaptic architecture leads to coactivation of a localized group of neurons, which can be positioned anywhere along the ring. The possible positions of the bump are associated with the 1d spatial coordinate by tiling them periodically along the spatial dimension, with an environment specific phase, in accordance with the experimentally observed phase-shifts of grid cell responses under global remapping (Fyhn et al., 2007).
 
-## Recurrent connectivity between place cells
+#### Recurrent connectivity between place cells
 
 Connectivity between place cells is based on similar principles, with two differences: first, each population activity pattern is mapped to a single spatial location. Second, the network possesses a discrete set of continuous attractors, each mapping a distinct environment to a low dimensional manifold of population activity patterns. The synaptic connectivity can be expressed as a sum over contributions from different maps, in similarity to the sum of contributions associated with discrete memories in the Hopfield model (Hopfield, 1982). To mimic the features of global remapping, spatial relationships between place cells in the different maps are related to each other by a random permutation. This is similar to previous models (Battaglia and Treves, 1998; Monasson and Rosay, 2013; Samsonovich and McNaughton, 1997) but adapted here to the formalism of a dynamical rate model.
 
-## Connectivity between grid cells and place cells
+#### Connectivity between grid cells and place cells
 
 We first define an idealized tuning curve for each grid cell and each place cell, in each environment. These tuning curves are determined by the mapping between attractor states and positions, as described above and in Methods. For each pair of grid and place cells, we evaluate the correlation between their spatial tuning patterns across all spatial positions and environments. The efficacy of the synapse is then linearly related to this correlation coefficient.
 
-## Coordinated persistent representations
+### Coordinated persistent representations
 
 We demonstrate that coordinated persistent representations, and only them, simultaneously co-exist in grid cells and place cells. Our methodology is based on quantitative mapping of persistent states obtained when starting from multiple types of initial conditions. We require that in all cases the system will settle on a persistent activity bump in one of the hippocampal maps, and on persistent activity bumps in each grid cell module at matching locations. Examples of such states are shown in Figure 2. Each state exhibits unimodal and co-localized activity bumps when cells are ordered according to their firing location in a particular environment, whereas scattered place cell activity accompanied with grid cell realignment is observed when cells are ordered according to their firing location in other environments.
 
@@ -78,17 +78,35 @@ We demonstrate that coordinated persistent representations, and only them, simul
 
 To test whether a persistent state represents coherently a valid position in one of the environments, we define a bump score that quantifies the existence of a unimodal activity bump in each sub-network. In the hippocampal sub-network, a high bump score should be seen only in a single spatial map. Within that map, we also measure the spatial location that corresponds to activity bumps in each sub-network (Methods). This measurement allows us to verify that all sub-networks express activity bumps in compatible positions, and to test the persistence of these bump states. Figure 3 shows the results from several types of initial conditions:
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig3-v3.jpg)
+
+**Figure 3.:** In all panels, the system is placed at 500 initial conditions of three types (a-d: ‘consistent’, e-h: ‘inconsistent’, i-l: ‘all random’). Its state is then analyzed after a 1 s delay period. (a-d) Results from the ‘consistent’ initial condition (the system is placed without loss of generality in map #1). (a) Histogram of winning map, defined as the map that achieved the highest bump score. Red dashed line: uniform distribution. (b) Histogram of place cell bump scores, obtained from the winning map (blue) and from an average on all other maps (‘Losing maps’, orange). (c) Histogram of distances between the measured spatial location of each grid cell bump and the place cell bump, evaluated in the coordinates of the winning map. (d) Histogram of distances traveled by the activity bumps from their initial condition, evaluated in the coordinates of the winning map. (e-h) Similar to (a-d) but for ‘inconsistent’ condition. (i-l) Similar to (a-d) but for ‘all random’ condition. The initial position was evaluated using the same algorithm used in (d,h) but in this case, where there were no initial bumps, the outcome depended on slight random variations in the initial condition and thus, effectively, the initial position was chosen randomly. Note that for all initial conditions the state of the system after the delay period corresponded to a single spatial map (b,f,j), and the place cell and grid cell representations are coordinated (c,g,k).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (a-d) Similar to Figure 3a–d but for ‘Grid cells - random, Place cells - bump’ initial conditions: grid cells were initially set to have random rates, while place cells were set to encode a specific location. (e–h) Similar to Figure 3a–d but for ‘Place cells - random, Grid cells - bump’: grid cells were set to encode a specific location, and place cells were assigned with random rates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Bump score dynamics in the ‘consistent’ initial condition, corresponding to all realizations shown in Figure 3a–d. Error bars correspond to ±1 std. (b) Same as (a) but in the ‘inconsistent’ initial condition (same realizations as shown in Figure 3e–h). (c) Same as (a) but in the ‘all random’ initial condition (same realizations as shown in Figure 3i–l).
+
 Figure 3—videos 1–3 show examples of activity dynamics in the network for initial conditions of types (1–3) and Figure 3—figure supplement 2 quantify the dynamics of the bump score for each type of the initial conditions shown in Figure 3.
 
-## Functional consequences: path integration and dynamic coupling
+### Functional consequences: path integration and dynamic coupling
 
 Two functional consequences arise from the coupling between the place and grid cell networks:
 
-## Path integration
+#### Path integration
 
 The MEC has been hypothesized to be the brain area responsible for idiothetic path integration for several reasons (Burak, 2014; Hafting et al., 2005; McNaughton et al., 2006) among them the highly geometric nature of grid cell spatial selectivity, the existence of inputs to the MEC that convey information about the animal’s self-motion and heading (Kropff et al., 2015; Sargolini et al., 2006), and the impairment of path integration following disruption of grid cell activity (Gil et al., 2018). The similarity in response patterns of grid cells across environments implies that implementation of path integration in the MEC could be accomplished in different environments by the same synaptic connectivity, whereas implementation in the hippocampus (McNaughton et al., 1996) would require establishment of dedicated synaptic connectivity in each environment. Figure 4a demonstrates that in the coupled system, integration of velocity inputs in the MEC, using mechanisms described in Burak and Fiete, 2009 (Methods) induces coordinated updates in the position represented in the place cell network and Figure 4—figure supplement 1 shows the dynamics of the corresponding bump scores across multiple maps. Figure 4b shows that errors accrued during path integration remain small, when using realistic velocities that were measured experimentally during foraging in an open field environment (Figure 4c). Interestingly, the representation in the hippocampus lags behind the entorhinal representation, due to synaptic transmission delays (Figure 4d).
 
-## Coordination of the grid cell representation: suppression of incompatible drifts
+![Figure 4.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig4-v3.jpg)
+
+**Figure 4.:** (a) Readout of place cell bump location (black) while grid cell modules (green, red, and blue) integrate a velocity profile (dashed orange line). (b) Mean absolute distance between measured location of the place cell activity bump, and integrated velocity (blue), as a function of time. This quantity is compared with the total distance traveled by the place cell bump (red), which is much larger. Averaging was performed over 500 trajectories. In each trajectory velocity was randomly sampled every 0.5 s from an experimentally measured velocity distribution, which was obtained during foraging of a rat in an open-field environment (see panel c). Shaded error bars are 1.96 times the standard deviations obtained from each simulation, divided by the square root of the number of realizations (corresponding to a confidence interval of 95%). (c) Histogram of velocities measured experimentally during foraging of a rat in an open field environment (Hafting et al., 2005). (d) Mean squared displacement between positions represented by place cells and grid cells, when evaluated at varying time lags between the two measurements. Red circle marks the minimal MSE. The minimum MSE occurs at a negative time lag (~−100 ms), which indicates that the place cell representation lags behind the grid cell representation. Shaded error bars are 1.96 times the standard deviations obtained from each simulation, divided by the square root of the number of realizations (corresponding to a confidence interval of 95%).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig4-figsupp1-v3.jpg)
+
+#### Coordination of the grid cell representation: suppression of incompatible drifts
 
 The modular structure of the grid cell code for position confers it with large representational capacity (Fiete et al., 2008). Yet, the modularity poses a significant challenge for the neural circuitry that maintains the representation and updates it based on self-motion. The configurational space of M grid module phases is M dimensional in 1-d (or 2M dimensional in 2-d), but phases that correspond to continuous motion in a given environment span a much smaller subspace: during continuous motion, changes in the phases of any two modules should be identical, up to a proportionality factor related to their respective grid spacings. However, in the absence of correcting mechanisms phase errors that accrue in different modules due to noise might not adhere to these restrictions. Such incompatible drifts can rapidly lead to combinations of phases that do not represent any position in the nearby vicinity of the animal, resulting in catastrophic readout errors (Figure 5a) (see also Burak, 2014; Sreenivasan and Fiete, 2011; Welinder et al., 2008).
 
@@ -102,11 +120,11 @@ We first considered the consequences of stochastic neural firing, by modeling gr
 
 Next, we demonstrated that the system is resilient to noise in the velocity inputs to the different modules (Figure 5c). Even in an extreme situation, in which modules received highly incompatible velocity inputs, their motion remained coordinated in the coupled network but not in the uncoupled network.
 
-## Emergent properties in the hippocampus and MEC
+### Emergent properties in the hippocampus and MEC
 
 The embedding of multiple spatial maps in the coupled hippocampal-entorhinal network gives rise to two non-trivial emergent properties.
 
-## Variability of individual grid cell firing rates across firing fields
+#### Variability of individual grid cell firing rates across firing fields
 
 As the animal moves in a given environment, the summed synaptic input from all place cells to a given grid cell includes a contribution associated with that environment, which is spatially periodic. However, grid cell synaptic inputs also receive contributions from place cells associated with other spatial maps that are embedded in the synaptic connectivity. The latter contributions are spatially aperiodic within the present environment, leading to variability across fields. As an example, Figure 6a shows the population activity of place cells and grid cells from module #3. The system is placed at three spatial locations that are displaced from each other by the grid spacing of module #3. Thus, the same grid cells are active in these three locations. However, the amplitude of the grid cell activity bump differ at the three locations. Figure 6b quantifies the variability of peak firing rates generated by individual grid cells across firing fields within a single environment, using the coefficient of variation (CV): a histogram of the CV, collected from all cells, is shown for networks with varying number of embedded maps. CVs vanish when a single spatial map is embedded in the synaptic connectivity and increase with the addition of spatial maps.
 
@@ -114,13 +132,29 @@ As the animal moves in a given environment, the summed synaptic input from all p
 
 **Figure 6.:** (a) Simultaneous firing rates of place cells (black) and grid cells from one module (module #3, blue), shown at three different persistent states that represent periodic locations of module #3. Even though the same grid cells are active in all three locations, the amplitude of the grid cell activity bumps differ (compared with the red dashed line which shows the maximal grid cell firing rate achieved at the left example, for reference). Different place cells are active in the three examples, thus providing different quenched noise to the same grid cells in each case. (b) Histogram showing CV of maximal firing rate obtained from all individual grid cells across firing fields within a single environment, shown for networks with a single map (blue), two maps (green), and six maps (red).
 
-## Artificial hippocampal remapping upon grid cell depolarization
+#### Artificial hippocampal remapping upon grid cell depolarization
 
 In a recent experiment (Kanter et al., 2017), MEC layer 2 stellate cells were reversibly hyperpolarized or depolarized using chemogenetic receptors, while animals were foraging in a familiar environment. Chronic tetrode arrays implanted in the hippocampus were used to monitor CA1 firing fields during these manipulations. Hyperpolarization of the MEC had very little effect on place cell firing fields, whereas depolarization of the MEC elicited dramatic effects: a significant portion of place cells exhibited changes in the locations or rates of their firing fields, resembling those seen during global and rate remapping experiments. This effect included place cells that had been turned off or on as seen in natural remapping experiments. Firing fields of all other cells remained in their baseline positions, without significant changes. As for the grid cells, both manipulations led to changes in the firing rates but did not elicit a change in the firing locations, unlike the coherent shifts and rotations seen in distinct familiar environments (Fyhn et al., 2007).
 
 The asymmetric effect of entorhinal depolarization and hyperpolarization was highlighted (Kanter et al., 2017) as the most puzzling experimental outcome. Indeed, under simple feedforward models of place cell emergence from grid cell inputs (de Almeida et al., 2009; Monaco et al., 2011; Neher et al., 2017; Rolls et al., 2006; Solstad et al., 2006), it is difficult to envision why such an asymmetry would be observed. Overall, a theoretical framework that can coherently explain the consequences of depolarization and hyperpolarization of the MEC hasn’t been available so far.
 
 To test the effect of grid cell depolarization or hyperpolarization in our model, we adjusted the excitability of grid cells by adding a fixed contribution to their synaptic drive, which was either excitatory or inhibitory. We first placed the system in persistent states in one map (map 1). We then hyperpolarized the grid cell network. Place cell bumps remained around their baseline spatial location, and activity in the place-cell network exhibited significant overlap only with map 1 (Figure 7a–b). Similar results from control trials, in which no manipulation was performed, are shown in Figure 3a–b. The minor effect of grid cell hyperpolarization is not surprising, since the hippocampal network is structured such that it can sustain population activity patterns associated with each environment even without inputs from grid cells. Therefore, suppression of activity in the MEC network did not significantly alter the population activity patterns expressed by the place cell network.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig7-v3.jpg)
+
+**Figure 7.:** (a) Histogram showing bump score distributions for all embedded maps under grid cell hyperpolarization. In each simulation, the system is placed in a ‘consistent’ initial condition, and hyperpolarization is applied. Spatial maps are then ranked according to their bump score. Each color corresponds to a histogram over all bump scores from maps with specific rank, regardless of the map’s identity (this is identical to the analysis shown in Figure 3b,g,f except that here losing maps are separated into distinct histograms according to rank). Bump scores for random unembedded maps are shown in gray. (b) Distribution of identities of the top scored maps from (a). Dashed red line shows the uniform distribution. In all realizations, top ranked map is map #1. (c) Same as (a) under grid cell depolarization. Bump scores are lower than the winning scores in Figure 3b. Bump score distributions from differently ranked maps overlap, and all histograms exhibit significantly higher bump scores than those of unembedded maps (gray), indicating simultaneous expression of activity patterns from multiple embedded maps. (d) Same as (b) under grid cell depolarization.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Firing rates of place cells (black) and grid cells (different modules shown in green, red and blue), shown 2.25 s after starting from a ‘Consistent’ initial condition at a specific location (24 cm in map #1). (b) Same as (a) but under grid cell depolarization. Place cells exhibit scattered activity, yet they preserve dense activity around their original location from (a). Note that the grid cell activity patterns continue to match the original location in map #1, but grid cells increased their firing rate. (c–d) Same as (a–b) but observed in coordinates of map #6. Dense place cell activity can be seen around three locations (~48 cm,~120 cm and ~168 cm) under grid cell depolarization (d). Note that these locations overlap with locations in which multiple grid cell activity bumps overlap under the coordinates of map #6. (e) Analysis of persistence in the mixed state. Location of activity place cell bumps of winning maps was measured using the bump score as in Figure 3 (Methods), 2 s and 2.5 s after onset of depolarization. A histogram of the changes in the measured location within this period is shown, demonstrating that drifts in persistent mixed states are small. Out of 500 simulations, 29 simulations in which the identity of the winning map changed within this period are excluded from the histogram.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Bump score dynamics for each of the embedded maps and for unembedded maps (gray) under grid cell hyperpolarization, corresponding to the realizations shown in Figure 7a–b. Scores for all maps except map one overlap with the score of unembedded maps. Error bars correspond to ±1 std. (b) Same as (a) but showing only the winning map and an average over losing maps. Error bars correspond to ±1 std. (c) Same as (a), but under grid cell depolarization, corresponding to the realizations shown in Figure 7c–d. (d) Same as (b) but under grid cell depolarization.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (a-b) Same analysis as Figure 7a–b but while doubling the bi-directional synaptic strengths between grid cells and place cells. Mixed states emerge under this manipulation, without grid cell depolarization. (c–d) Same as (a–b) but while selectively enhancing only the contribution to the connectivity associated with map #1. Mixed states do not emerge in this case. (e–f) Same as (c–d) but under grid cell depolarization. Although winning map bump score (cyan) is smaller than in Figure 3b, mixed states still do not emerge in this case.
 
 In contrast with this result, depolarization of the MEC network elicited significant changes in the structure of population activity patterns expressed by the hippocampal network. Following a short transient, population activity of place cells stabilized on patterns that exhibited overlap with patterns that were previously associated with multiple spatial maps (Figure 7c). The overlap was highly significant compared to overlaps obtained with random maps that were not embedded in the connectivity (gray bars in Figure 7c). Thus, the place cell network expressed mixtures of population activity patterns from different maps stored in the hippocampal connectivity. Typically, the highest overlap remained with map 1 (Figure 7d). An example of population activity patterns before and after depolarization in one location is shown in Figure 7—figure supplement 1a–d. (Corresponding dynamics can be seen in Figure 7—video 1, and Figure 7—figure supplement 2 quantifies the bump score dynamics, from all realizations shown in Figure 7.) In similarity to experimental results (Kanter et al., 2017), both depolarization and hyperpolarization changed the firing rate, but not firing location, of MEC neurons. On average, grid cells increased their firing rates under grid cell depolarization and decreased their firing rates under grid cell hyperpolarization (not shown), in agreement with the experiment. Figure 7—figure supplement 1e demonstrates that the mixed activity patterns are persistent.
 
@@ -129,6 +163,130 @@ Our interpretation of artificial remapping is thus that excessive inputs from gr
 To make direct contact with the experimental observations (Kanter et al., 2017), we examined the firing properties of individual place cells as a function of the animal’s position during locomotion under MEC depolarization. The observation that population activity patterns under depolarization are mixtures of activity patterns from different maps led us to expect that some cells would maintain place fields in their baseline locations, while others would remap. To test this hypothesis, we first placed the system in a state corresponding to a particular position in map 1. Then, while applying the perturbation, we induced path integration in the MEC network and monitored population activity patterns while continuously scanning positions along the environment.
 
 In accordance with the hypothesis, we found that cells exhibited the same phenomenology observed experimentally (Kanter et al., 2017; Figure 8a–g). Many cells shifted their firing location (~29%), whereas others (~18%) maintained their place fields in their baseline location. Of these, some cells exhibited rate remapping (~7%), while the firing rate of other cells remained unaffected (~11%). Some place cells expressed one or (rarely) more firing fields in addition to their original field location (~36.5%), some completely turned-off (~6%) or exhibited a minor field (~1.5%), and some place cells remapped into more than a single field (~9%). The percentages of place cell responses are likely influenced by the model parameters (Table 1), and depend also on the precise classification criteria (Methods). Qualitatively, however, all the response types observed in our model have been observed experimentally (Kanter et al., 2017). All active cells exhibited a continuous activity pattern with one, or occasionally few, unimodal firing fields. Figure 8—figure supplement 1 shows all the population activity patterns observed while traversing the environment in a single path integration cycle. In agreement with the experimental observations, firing patterns returned to baseline configurations following reversal of MEC depolarization (not shown). As expected (Figure 7a–b), hyperpolarization did not elicit significant changes in the firing locations of place cells (Figure 8h).
+
+**Table 1.**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L</td>
+      <td>6*</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>8.31·10-2</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>4.8</td>
+      <td>cm</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>-2.6·10-2</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>75·10-2</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>ρ</td>
+      <td>13∙2π</td>
+      <td>radian</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>-6.93·10-1</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>Δθ</td>
+      <td>116·2π</td>
+      <td>radian</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>1.03·10-2</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>-203·10-4</td>
+      <td>Hz</td>
+    </tr>
+    <tr>
+      <td>τ</td>
+      <td>15·10-3</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>Δt</td>
+      <td>2·10-4</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>γg</td>
+      <td>4</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Ipc,0</td>
+      <td>−10</td>
+      <td>Hz2</td>
+    </tr>
+    <tr>
+      <td>γp</td>
+      <td>50</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Igc,0μ</td>
+      <td>-5,-5,-5</td>
+      <td>Hz2</td>
+    </tr>
+    <tr>
+      <td>εμ</td>
+      <td>1.7,1.9,2.3</td>
+      <td>cm·s-1</td>
+    </tr>
+    <tr>
+      <td>IperDepo</td>
+      <td>500</td>
+      <td>Hz2</td>
+    </tr>
+    <tr>
+      <td>IperHyper</td>
+      <td>−100</td>
+      <td>Hz2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*In all Figures we simulated the same networks using L=6, except for Figure 6b (where L was also set to 1 and 2), and Figure 8—figure supplement 2 (where L was also set to 1, 2 and 4)._
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig8-v3.jpg)
+
+**Figure 8.:** (a-g) Firing rate maps of seven representative place cells during locomotion without (blue) and with (orange) grid cell depolarization. Rate maps show that under grid cell depolarization place cells changed locations (a-b), acquired additional fields (c-d), turned off (e), rate remapped (f) or were unaffected (g). (h) Rate maps of a representative place cell without (blue) and with (orange) grid cell hyperpolarization.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Place cell firing rates vs. spatial location under grid cell depolarization and grid cell integration of velocity input that produces one complete cycle through the environment. Color bar: place cell firing rates [Hz]. Place cells exhibit uni-modal and continuous firing fields. Same result is obtained while traversing the environment with different velocities, direction, or number of cycles through the environment (not shown). (b) Similar analysis as in Figure 7a, showing the existence of mixed states throughout the process. Activity patterns were analyzed at 500 time points uniformly distributed across the cycle. (c–d) Same as (a–b) but without grid cell depolarization (control). (e–f) Same as (a–b) during grid cell hyperpolarization.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56894/elife-56894-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (a) Spearman rank correlation before and after grid cell depolarization is shown for a varied number of embedded maps. Perturbation was applied persistently 10 ms after starting from a ‘consistent’ initial condition and grid cell rates were measured 100 ms afterwards. Rates were measured from 4800 realizations, uniformly distributed over all positions. Error bars are 1.96 times the standard deviations obtained from each simulation, divided by the square root of the number of realizations (corresponding to a confidence interval of 95%). (b) Same as (a) but under grid cell hyperpolarization.
 
 Finally, we examined how grid cell activity is influenced by the altered firing patterns of place cells during grid cell depolarization. Our previous observation that place cell inputs induce variability in firing rates of single grid cells across different firing fields, led us to examine whether the rank order of grid fields according to peak firing changes under the modification of place cell firing patterns associated with grid cell depolarization (similar rank changes have been observed also under place cell rate remapping, but in this case changes were induced by modifications of sensory inputs in a familiar environment [Diehl et al., 2017]). Figure 8—figure supplement 2 demonstrates that when a single spatial map is embedded in the synaptic connectivity the rank correlation is equal to unity, as expected. When multiple spatial maps are embedded in the connectivity, the rank order correlation weakens, in accordance with experimental observations (Kanter et al., 2017).
 
@@ -156,25 +314,25 @@ Our results also suggest that place cell artificial remapping is likely to occur
 
 The model explains why artificial remapping occurred under depolarization, but not under hyperpolarization of MEC cells (Kanter et al., 2017). In another experiment (Miao et al., 2015), remapping in the hippocampus was observed under suppression of activity in the MEC. The reason for the different outcomes (Kanter et al., 2017; Miao et al., 2015) is unclear. The different outcomes may have arisen from specificity differences in the targeted populations: in Kanter et al., 2017 chemogenetic receptors were targeted almost exclusively to layer II stellate cells of the MEC in transgenic animals. In comparison, a broader population has been likely affected in Miao et al., 2015–in terms of the targeted anatomical area and cortical layers (since the manipulation relied on the diffusion of a virus), and the affected cell types, which most likely included interneurons. Another difference between the experiments of Miao et al and Kanter et al is that the former recorded neural activity in CA3, whereas the latter recorded activity in CA1.
 
-## Experimental predictions
+### Experimental predictions
 
 We next discuss some of the predictions arising from our model. To test some of these predictions experimentally, it will be necessary to simultaneously record the activity of multiple cells in the MEC and the hippocampus in freely behaving animals, in sufficient numbers that will enable dynamic decoding of the population activity. Thus, our results offer a rich set of predictions that could be tested using high-throughput recording techniques (Jun et al., 2017; Pfeiffer and Foster, 2015; Ziv et al., 2013; Zong et al., 2017).
 
-## Idiothetic path integration
+#### Idiothetic path integration
 
 We predict that when updates of the brain’s self-estimate of position rely solely on idiothetic path integration, the hippocampal representation of position will lag behind the MEC representation, due to synaptic transmission delays (Figure 4d). If verified, this feature of the neural population dynamics may help identify where different types of sensory inputs are integrated into the joint neural representation of position in the hippocampus and the MEC. If sensory inputs that convey spatial information project mainly to hippocampus, we expect a reversal of the time lag under conditions in which such sensory inputs are highly informative.
 
 The hippocampal network in our model is set up such that it expresses bump activity patterns at the neural population level even without inputs from the MEC. This is in agreement with the observation that place fields are expressed under MEC lesions (Brun et al., 2008; Hales et al., 2014). We predict that under these manipulations, and in conditions in which sensory inputs are absent, such that the brain must rely on idiothetic path integration to update its internal representation of position, bump activity patterns will still be expressed in the hippocampus at the population level, but their association with position will be disrupted. Thus, the spatial fields of single cells will be severely disrupted in these conditions.
 
-## Coupling of entorhinal modules
+#### Coupling of entorhinal modules
 
 To test whether a coupling mechanism coordinates the states of grid cell modules, we propose to simultaneously decode activities of multiple modules under conditions in which sensory inputs are absent or poor, and observe whether drifts in these modules are coordinated. A hippocampus-independent mechanism for coordinating the activity of grid cells modules, which relies on synaptic connectivity within the MEC was recently proposed (Mosheiff and Burak, 2019). Therefore, it will be of interest to further test whether the coordination requires place cell inputs to the MEC, by repeating the experiment while inactivating inputs from the hippocampus. Under these conditions, cells within a single grid cell module maintain their phase relationships (Almog et al., 2019), but it is unknown whether drifts in different modules remain coordinated. Another possible way to approach this question is to examine the coordination of grid cell modules immediately after exposure to a completely novel environment, since it is unlikely that reciprocal connectivity that could support this coordination is established immediately.
 
-## Variability of individual grid cell firing rates across firing fields
+#### Variability of individual grid cell firing rates across firing fields
 
 Two experiments can directly test the hypothesis that inputs from place cells, independent of sensory inputs, are responsible for a significant fraction of the variability observed in the firing rates of individual grid cells across different firing fields. First, if grid cell modules remain coordinated under hippocampal inactivation, it may be possible to decode position from activity in the MEC in this condition, and test whether firing rates become less variable across firing fields. Second, the independence of variability on sensory inputs could be tested by monitoring activity in the MEC under conditions in which sensory cues are poor or absent. It would also be interesting in this context to measure the variability in animals that have been exposed to different numbers of environments.
 
-## Artificial remapping
+#### Artificial remapping
 
 We predict that artificial remapping (Kanter et al., 2017) arises due to the auto-associative features of network dynamics in the hippocampus, which are believed to arise in area CA3. However, Kanter et al recorded in area CA1. Global and partial remapping have been observed both in CA1 and CA3, yet patterns of activity in CA1 tend to be more correlated across different environments than those observed in CA3 (Leutgeb et al., 2004). Thus, partial remapping in CA1 does not necessarily imply that remapping in CA3 is partial as well. Since Kanter et al observed partial overlap between CA1 activity patterns that were expressed before and after entorhinal depolarization, it will be interesting to record activity also in CA3 under similar conditions. We predict that mixed states will be observed already in CA3 during entorhinal depolarization. Thus, we expect that in CA3 (in similarity to CA1) only a subset of place fields will shift their firing fields. On the other hand, this form of remapping is not expected to occur in the dentate gyrus, since this area is upstream of CA3.
 
@@ -182,74 +340,150 @@ According to our theory, artificial remapping (Kanter et al., 2017) arises from 
 
 ## Methods
 
-## Place cell network
+### Place cell network
 
-The place network consists of N=4800 neurons, which represent positions in L environments. All environments are one-dimensional, spanning a length of 192 cm with periodic boundary conditions. A distinct spatial map is generated for each environment, by choosing a random permutation that assigns all place cells to a set of preferred firing location that uniformly tile this environment.
+The place network consists of $N=4800$ neurons, which represent positions in $L$ environments. All environments are one-dimensional, spanning a length of 192 cm with periodic boundary conditions. A distinct spatial map is generated for each environment, by choosing a random permutation that assigns all place cells to a set of preferred firing location that uniformly tile this environment.
 
-The synaptic connectivity between place cells is expressed as a sum over contributions from all spatial maps:(1)J=∑l=1LJlwhere Ji,jl depends on the distance between the preferred firing locations of cells i and j in environment l, as follows(2)Ji,jl={Aexp[−(di,jl)22σ2]+h,i≠j0, i=j
+The synaptic connectivity between place cells is expressed as a sum over contributions from all spatial maps:
 
-The first term is an excitatory contribution to the synaptic connectivity that decays with the distance di,jl, with a Gaussian profile. The second term is a uniform inhibitory contribution. The parameters A > 0, σ, and h < 0 are listed in Table 1. Note that the connectivity matrices corresponding to any two maps l and k are related to each other by a random permutation:(3)Ji,jl=Jπl,ki,πl,kjkwhere πl,k denotes the random permutation from map k to map l.
+$$
+J=\suml=1LJ^{l}
+$$
 
-## Grid cell network
+where $J_{i,j}^{l}$ depends on the distance between the preferred firing locations of cells $i$ and $j$ in environment $l$, as follows
 
-Each grid cell module is modeled as a double ring attractor (Xie et al., 2002) with n=960 neurons. Within each module, neurons are assigned angles θi, uniformly distributed in [0,2π) (i=1...n). The synaptic weight between neurons i and j is given by(4)Wi,j={Bexp[−(|θi−θj|2π±Δθ)22ρ2]+k,i≠j0,i=jwhere θi-θj2π≡minθi-θj, 2π-θi-θj and the small phase shift +Δθ(−Δθ) applies to the pre-synaptic neurons with even (odd) index j. Thus, evenly indexed and oddly indexed neurons comprise two sub-populations that drive motion of the activity to the right and to the left, respectively, to implement idiothetic path integration (see also Equation 9 below). The parameters B > 0, ρ, k < 0, and Δθ are listed in Table 1. The ring attractor possesses a continuous manifold of steady states, structured as activity bumps that can be localized anywhere in the range [0,2π). We refer to the the center of the activity bump as the phase of the population activity pattern. Grid cells from distinct modules are not directly connected to each other.
+$$
+J_{i,j}^{l}={Aexp[−\frac{(d_{i,j}^{l})^{2}}{2\sigma^{2}}]+h,i\neqj0, i=j
+$$
 
-In our implementation of the model, we include three grid cell modules with grid spacings λμ=64, 48 and 38.4 cm for modules μ=1, 2 and 3, respectively. Within each environment, positions are mapped to attractor states by tiling the possible phases [0,2π) of the population activity periodically along the extent of the environment. For simplicity, we chose grid spacings that correspond precisely to 5, 4 and 3 cycles along the 192 cm environment. To account for grid cell realignment during global remapping (Fyhn et al., 2007), a uniform phase shift Δl,μ is applied to the tiling of grid phases to positions. This phase shift is randomly chosen from the range [0,2π), independently for each environment l and module μ.
+The first term is an excitatory contribution to the synaptic connectivity that decays with the distance $d_{i,j}^{l}$, with a Gaussian profile. The second term is a uniform inhibitory contribution. The parameters $A > 0$, $\sigma$, and $h < 0$ are listed in Table 1. Note that the connectivity matrices corresponding to any two maps $l$ and $k$ are related to each other by a random permutation:
 
-## Bi-directional synaptic connectivity between grid cells and place cells
+$$
+J_{i,j}^{l}=J_{\pi^{l,k}i,\pi^{l,k}j}^{k}
+$$
 
-The mutual connection between each place cell and grid cell depends linearly on the overlap between their tuning curves, summed over all environments. We thus define a connectivity matrix Mμ between all place cells and all grid cells from module μ as a sum over contributions Ml,μ from all environments:(5)Mμ=∑l=1LMl,μ
+where $\pi^{l,k}$ denotes the random permutation from map $k$ to map $l$.
 
-To determine Ml,μ we first define a correlation matrix(6)mi,jl,μ=1zμ∫filx·gjl,μxdxwhere fil is the idealized receptive field of place cell i and gjl,μ is the idealized receptive field of grid cell j measured from uncoupled networks at environment l. The normalization factor zμ is chosen such that ml,μ∈0,1 ∀μ.
+### Grid cell network
 
-Note that the correlation matrices corresponding to any two maps l and k are related to each other by a permutation on the place cell indices, and a cyclic shift on the grid cell indices. Finally,(7)Ml,μ=α·ml,μ+βwhere the parameters α > 0 and β < 0 are identical for all modules and maps (Table 1).
+Each grid cell module is modeled as a double ring attractor (Xie et al., 2002) with $n=960$ neurons. Within each module, neurons are assigned angles $\theta_{i}$, uniformly distributed in $[0,2\pi) (i=1...n)$. The synaptic weight between neurons $i$ and $j$ is given by
 
-The idealized receptive fields of place cells and grid cells from Equation (6) are determined as follows: the field fil is generated by simulating only the place cell network, uncoupled from the grid cell network and when only a single map is embedded in the connectivity. This generates an idealized bump around the initial condition, and all possible steady states of this bump are related to each other by rigid translation in the neural space sorted by the coordinates of map l. Thus, rigid translations of the observed activity bump are associated with all possible positions in the environment. Similarly, the tuning curve gjl,μ of a particular grid cell from module μ, is defined using a rigid translation of an idealized grid cell activity pattern which emerged in a simulation of an uncoupled grid cell module network, and association of the different translations with all possible positions in the environment.
+$$
+W_{i,j}={Bexp[−\frac{(|\theta_{i}−\theta_{j}|_{2\pi}\pmΔ\theta)^{2}}{2ρ^{2}}]+k,i\neqj0,i=j
+$$
 
-## Dynamics
+where $\theta_{i}-\theta_{j}_{2\pi}≡min\theta_{i}-\theta_{j},2\pi-\theta_{i}-\theta_{j}$ and the small phase shift $+Δ\theta(−Δ\theta)$ applies to the pre-synaptic neurons with even (odd) index $j$. Thus, evenly indexed and oddly indexed neurons comprise two sub-populations that drive motion of the activity to the right and to the left, respectively, to implement idiothetic path integration (see also Equation 9 below). The parameters $B > 0$, $ρ$, $k < 0$, and $Δ\theta$ are listed in Table 1. The ring attractor possesses a continuous manifold of steady states, structured as activity bumps that can be localized anywhere in the range $[0,2\pi)$. We refer to the the center of the activity bump as the phase of the population activity pattern. Grid cells from distinct modules are not directly connected to each other.
 
-The dynamics of neural activity are described by a standard rate model. The synaptic activation Si of place cell i evolves in time according to the following equation:(8)τS˙i=−Si+ϕ[∑j=1NJi,jSj+γg∑μ∑k=1nMi,kμskμ+Ipc]+ηiand the synaptic activation siμ of grid cell i from module μ evolve as follows:(9)τs˙iμ=−siμ+ϕ[∑j=1nWi,jsjμ+γp∑k=1NMi,kμTSk+Igcμ±εμ⋅v]+ηiμ
+In our implementation of the model, we include three grid cell modules with grid spacings $\lambda^{\mu}=64,48$ and $38.4$ cm for modules $\mu=1,2$ and $3$, respectively. Within each environment, positions are mapped to attractor states by tiling the possible phases $[0,2\pi)$ of the population activity periodically along the extent of the environment. For simplicity, we chose grid spacings that correspond precisely to 5, 4 and 3 cycles along the 192 cm environment. To account for grid cell realignment during global remapping (Fyhn et al., 2007), a uniform phase shift $Δ^{l,\mu}$ is applied to the tiling of grid phases to positions. This phase shift is randomly chosen from the range $[0,2\pi)$, independently for each environment $l$ and module $\mu$.
 
-In both equations, τ is the synaptic time constant (taken for simplicity to be identical for all synapses). The coupling parameters γg and γp determine the strength of synaptic connections from grid cells to place cells and from place cells to grid cells, respectively. The velocity signal is denoted by v. The signs (+) and (−) are used for the even and odd grid cell populations, respectively. Thus, neurons with even index, whose outgoing synaptic weights are biased to the right (see Equation 4) are preferentially activated during motion to the right, whereas neurons with odd index, whose synaptic weights are biased to the left are preferentially activated during motion to the left. The coefficients εμ determine the weighting of the velocity signal per module. These parameters are chosen in order to obtain correct grid spacings during idiothetic path integration. The external currents Ipc in the place cell population and Igcμ in the grid cell population are constant in time and identical in all cells from a given subpopulation. These currents include two terms: one term is the baseline current, required to drive activity when a single spatial map is embedded in the connectivity. The second term compensates for interference coming from additional maps, and is proportional to L-1 (see Appendix 1, Equations 37 and 38).
+### Bi-directional synaptic connectivity between grid cells and place cells
 
-The transfer function ϕ determines the firing rate (in Hz) of place cells Ri and grid cells riμ as a function of their total synaptic inputs. To resemble realistic neuronal F-I curves, it is chosen to be sub-linear:(10)ϕ(x)={0,x ≤ 0x,x > 0
+The mutual connection between each place cell and grid cell depends linearly on the overlap between their tuning curves, summed over all environments. We thus define a connectivity matrix $M^{\mu}$ between all place cells and all grid cells from module $\mu$ as a sum over contributions $M^{l,\mu}$ from all environments:
 
-The noise terms ηi in Equation 8 and ηiμ in Equation 9 are included only in Figure 5. These terms have zero mean, and to mimic Poisson noise, we assume that they are independent for different neurons and obey(11)⟨ηi(t)ηi(t′)⟩=Ri(t)δ(t−t′)(12)⟨ηiμ(t)ηiμ(t′)⟩=riμ(t)δ(t−t′)
+$$
+M^{\mu}=\suml=1LM^{l,\mu}
+$$
 
-We implemented the dynamics using the Euler-method for numeric integration, with a time interval Δt (Table 1).
+To determine $M^{l,\mu}$ we first define a correlation matrix
 
-## Coupling parameters
+$$
+m_{i,j}^{l,\mu}=\frac{1}{z^{\mu}}\intf_{i}^{l}x·g_{j}^{l,\mu}xdx
+$$
 
-The parameter α in Equation 7 is included for convenience but is redundant since it can be absorbed in the definitions of β, γg and γp. We note also that due to the coupling parameters γg and γp the synaptic connectivity is not necessarily symmetric. However, it is possible to recast the equations in a form that involves symmetric connectivity, by rescaling the synaptic variables Si and siμ. This observation is important since it implies that the dynamics always settle on stationary steady states and do not exhibit limit cycles (Cohen and Grossberg, 1983).
+where $f_{i}^{l}$ is the idealized receptive field of place cell $i$ and $g_{j}^{l,\mu}$ is the idealized receptive field of grid cell $j$ measured from uncoupled networks at environment $l$. The normalization factor $z^{\mu}$ is chosen such that $m^{l,\mu}\in0,1∀\mu$.
 
-The coupling parameters γg and γp were chosen based on the following considerations: on one hand, if the coupling parameters are too weak, the network exhibits persistent states in which the bump positions in different sub-networks are incompatible. Moreover, it is essential for path integration and the coupling of grid cell modules, that both place cells can influence the position of grid cell bumps, and that grid cells can influence the state of the place cell network. Thus, it was not sufficient to include connections only in one direction. On the other hand, the connections cannot be too strong since we are interested in the regime in which the structure of steady states in each sub-network is predominantly determined by its internal connectivity. These goals can be achieved using a wide range of choices for γg and γp. A single set of parameters (Table 1) was used throughout the manuscript.
+Note that the correlation matrices corresponding to any two maps $l$ and $k$ are related to each other by a permutation on the place cell indices, and a cyclic shift on the grid cell indices. Finally,
 
-## Bump score and location analysis
+$$
+M^{l,\mu}=\alpha·m^{l,\mu}+\beta
+$$
+
+where the parameters $\alpha > 0$ and $\beta < 0$ are identical for all modules and maps (Table 1).
+
+The idealized receptive fields of place cells and grid cells from Equation (6) are determined as follows: the field $f_{i}^{l}$ is generated by simulating only the place cell network, uncoupled from the grid cell network and when only a single map is embedded in the connectivity. This generates an idealized bump around the initial condition, and all possible steady states of this bump are related to each other by rigid translation in the neural space sorted by the coordinates of map $l$. Thus, rigid translations of the observed activity bump are associated with all possible positions in the environment. Similarly, the tuning curve $g_{j}^{l,\mu}$ of a particular grid cell from module $\mu$, is defined using a rigid translation of an idealized grid cell activity pattern which emerged in a simulation of an uncoupled grid cell module network, and association of the different translations with all possible positions in the environment.
+
+### Dynamics
+
+The dynamics of neural activity are described by a standard rate model. The synaptic activation $S_{i}$ of place cell $i$ evolves in time according to the following equation:
+
+$$
+\tauS˙_{i}=−S_{i}+ϕ[\sumj=1NJ_{i,j}S_{j}+\gamma_{g}\sum\mu\sumk=1nM_{i,k}^{\mu}s_{k}^{\mu}+I_{pc}]+η_{i}
+$$
+
+and the synaptic activation $s_{i}^{\mu}$ of grid cell $i$ from module $\mu$ evolve as follows:
+
+$$
+\taus˙_{i}^{\mu}=−s_{i}^{\mu}+ϕ[\sumj=1nW_{i,j}s_{j}^{\mu}+\gamma_{p}\sumk=1NM_{i,k}^{\mu^{T}}S_{k}+I_{gc}^{\mu}\pm\epsilon^{\mu}⋅v]+η_{i}^{\mu}
+$$
+
+In both equations, $\tau$ is the synaptic time constant (taken for simplicity to be identical for all synapses). The coupling parameters $\gamma_{g}$ and $\gamma_{p}$ determine the strength of synaptic connections from grid cells to place cells and from place cells to grid cells, respectively. The velocity signal is denoted by $v$. The signs (+) and (−) are used for the even and odd grid cell populations, respectively. Thus, neurons with even index, whose outgoing synaptic weights are biased to the right (see Equation 4) are preferentially activated during motion to the right, whereas neurons with odd index, whose synaptic weights are biased to the left are preferentially activated during motion to the left. The coefficients $\epsilon^{\mu}$ determine the weighting of the velocity signal per module. These parameters are chosen in order to obtain correct grid spacings during idiothetic path integration. The external currents $I_{pc}$ in the place cell population and $I_{gc}^{\mu}$ in the grid cell population are constant in time and identical in all cells from a given subpopulation. These currents include two terms: one term is the baseline current, required to drive activity when a single spatial map is embedded in the connectivity. The second term compensates for interference coming from additional maps, and is proportional to $L-1$ (see Appendix 1, Equations 37 and 38).
+
+The transfer function $ϕ$ determines the firing rate (in Hz) of place cells $R_{i}$ and grid cells $r_{i}^{\mu}$ as a function of their total synaptic inputs. To resemble realistic neuronal F-I curves, it is chosen to be sub-linear:
+
+$$
+ϕ(x)={0,x \leq 0\sqrt{x},x > 0
+$$
+
+The noise terms $η_{i}$ in Equation 8 and $η_{i}^{\mu}$ in Equation 9 are included only in Figure 5. These terms have zero mean, and to mimic Poisson noise, we assume that they are independent for different neurons and obey
+
+$$
+⟨η_{i}(t)η_{i}(t^{′})⟩=R_{i}(t)\delta(t−t^{′})
+$$
+
+
+
+$$
+⟨η_{i}^{\mu}(t)η_{i}^{\mu}(t^{′})⟩=r_{i}^{\mu}(t)\delta(t−t^{′})
+$$
+
+We implemented the dynamics using the Euler-method for numeric integration, with a time interval $Δt$ (Table 1).
+
+### Coupling parameters
+
+The parameter $\alpha$ in Equation 7 is included for convenience but is redundant since it can be absorbed in the definitions of $\beta,\gamma_{g}$ and $\gamma_{p}$. We note also that due to the coupling parameters $\gamma_{g}$ and $\gamma_{p}$ the synaptic connectivity is not necessarily symmetric. However, it is possible to recast the equations in a form that involves symmetric connectivity, by rescaling the synaptic variables $S_{i}$ and $s_{i}^{\mu}$. This observation is important since it implies that the dynamics always settle on stationary steady states and do not exhibit limit cycles (Cohen and Grossberg, 1983).
+
+The coupling parameters $\gamma_{g}$ and $\gamma_{p}$ were chosen based on the following considerations: on one hand, if the coupling parameters are too weak, the network exhibits persistent states in which the bump positions in different sub-networks are incompatible. Moreover, it is essential for path integration and the coupling of grid cell modules, that both place cells can influence the position of grid cell bumps, and that grid cells can influence the state of the place cell network. Thus, it was not sufficient to include connections only in one direction. On the other hand, the connections cannot be too strong since we are interested in the regime in which the structure of steady states in each sub-network is predominantly determined by its internal connectivity. These goals can be achieved using a wide range of choices for $\gamma_{g}$ and $\gamma_{p}$. A single set of parameters (Table 1) was used throughout the manuscript.
+
+### Bump score and location analysis
 
 Without loss of generality, whenever we set the system in a bump state, we do so in the map labeled as map 1.
 
-## Place cell network
+#### Place cell network
 
-To identify whether the place cell network expresses a bump state, and to identify its location x and associated spatial map l, we define a correlation coefficient qlx that quantifies the overlap between the hippocampal population activity pattern and the activity pattern corresponding to position x in spatial map l:(13)qlx=∑iPilx·Riwhere Ri (already defined above) is the firing rate of place cell i, and Pilx, is the firing rate of neuron i in an idealized bump state localized at position x in map l. The idealized bump (as defined above) is obtained from the activity of a network in which a single map (map l) is embedded in the neural connectivity, and there is no quenched noise.
+To identify whether the place cell network expresses a bump state, and to identify its location $x$ and associated spatial map $l$, we define a correlation coefficient $q^{l}x$ that quantifies the overlap between the hippocampal population activity pattern and the activity pattern corresponding to position $x$ in spatial map $l$:
 
-Next, we define a bump score for each spatial map, defined as the maximum of the correlation coefficient qlx over all positions x in spatial map l:(14)Ql=maxxql(x)
+$$
+q^{l}x=\sumiP_{i}^{l}x·R_{i}
+$$
 
-Finally, the map with the highest Ql value is considered as the winning map, and the location x that generated that value is considered as the location of the place cell bump within that map.
+where $R_{i}$ (already defined above) is the firing rate of place cell $i$, and $P_{i}^{l}x$, is the firing rate of neuron $i$ in an idealized bump state localized at position $x$ in map $l$. The idealized bump (as defined above) is obtained from the activity of a network in which a single map (map $l$) is embedded in the neural connectivity, and there is no quenched noise.
 
-## Grid cell network
+Next, we define a bump score for each spatial map, defined as the maximum of the correlation coefficient $q^{l}x$ over all positions $x$ in spatial map $l$:
+
+$$
+Q^{l}=maxxq^{l}(x)
+$$
+
+Finally, the map with the highest $Q^{l}$ value is considered as the winning map, and the location $x$ that generated that value is considered as the location of the place cell bump within that map.
+
+#### Grid cell network
 
 To identify the location corresponding to activity in each grid cell module, we use a similar procedure, in which we calculate the overlap between the population activity and an idealized activity pattern of grid cells, evaluated across all positions in the winning map. Note that due the periodicity of grid cell responses, multiple positions produce the same correlation coefficient. When measuring the distance between the grid cell activity bump and the place activity bump or with its initial position (for example in Figure 3c,g and k), we chose from these periodically spaced positions the one closest to the location of the place cell bump.
 
-## Grid cells hyperpolarization and depolarization implementation
+### Grid cells hyperpolarization and depolarization implementation
 
-To mimic to effects of transgenic DREADDs (Designer Receptors Exclusively Activated by Designer Drugs) in MEC layer 2 cells as performed experimentally (Kanter et al., 2017) we added a constant current Iper to the total synaptic input driving grid cell activity. Equation 9 is thus replaced by:(15)τs˙iμ=−siμ+ϕ[∑j=1nWi,jsjμ+γp∑k=1NMi,kμTSk+Igcμ±εμ⋅v+Iper]+ηiμ
+To mimic to effects of transgenic DREADDs (Designer Receptors Exclusively Activated by Designer Drugs) in MEC layer 2 cells as performed experimentally (Kanter et al., 2017) we added a constant current $I_{per}$ to the total synaptic input driving grid cell activity. Equation 9 is thus replaced by:
 
-A current Iper > 0 was used for depolarization, and a current Iper < 0 was used for hyperpolarization (see Table 1).
+$$
+\taus˙_{i}^{\mu}=−s_{i}^{\mu}+ϕ[\sumj=1nW_{i,j}s_{j}^{\mu}+\gamma_{p}\sumk=1NM_{i,k}^{\mu^{T}}S_{k}+I_{gc}^{\mu}\pm\epsilon^{\mu}⋅v+I_{per}]+η_{i}^{\mu}
+$$
 
-## Analysis of persistent mixed states
+A current $I_{per} > 0$ was used for depolarization, and a current $I_{per} < 0$ was used for hyperpolarization (see Table 1).
+
+#### Analysis of persistent mixed states
 
 In Figure 7, the system is placed at bump states corresponding to 500 uniformly distributed spatial locations in map 1, and its state is analyzed after a 2 s delay period following the onset of grid cell depolarization.
 
-## Classification of place cell responses under grid cell depolarization
+### Classification of place cell responses under grid cell depolarization
 
 Classification of place cell responses under grid cell depolarization was performed based on the following criteria: (a) Cells that turned off (∼6%) are defined as cells that exhibited a precisely vanishing firing rate at all locations. (b) Cells with a minor field (∼1.5%) are defined as cells that exhibited maximal peak firing rate of 2.5 Hz (not necessarily in the vicinity of the peak’s original location). (c) Cells that rate remapped (∼7%) are defined as cells whose peak firing rate remained within a distance of at most 12 cm from its original location. In addition, their peak firing rate decreased or increased by more than 33% relative to its baseline value (but did not decrease below 2.5 Hz). (d) Cells that were not affected (∼11%) are defined as in (c), except that their peak firing rate did not change by more than 33% relative to its baseline value. (e) Cells that shifted their firing location (∼29%) are defined as cells that exhibited a peak firing rate greater than 2.5 Hz, at a distance of 12 cm or more from the baseline peak location. (f) Cells that expressed remapped fields but maintained their firing field in their original location (∼36.5%) are defined as in (e), but exhibited in addition a peak firing rate which did not change by more than 33% relative to its baseline value and at a distance not greater than 12 cm from its original location. (g) Cells that expressed multiple fields (∼9%) are defined as cells that exhibited more than a single peak (at least one peak greater than 2.5 Hz - could involve in addition multiple smaller peaks) at distances greater than 12 cm from the original peak location.

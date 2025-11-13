@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 Research Center for Computer-aided Drug Discovery, Chinese Academy of Sciences Shenzhen China
-2. https://ror.org/00za53h95 Department of Oncology, Johns Hopkins University Baltimore United States
-3. https://ror.org/049tv2d57 Department of Biochemistry, Southern University of Science and Technology Shenzhen China
+1. Research Center for Computer-aided Drug Discovery, Chinese Academy of Sciences Shenzhen China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. Department of Oncology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Department of Biochemistry, Southern University of Science and Technology Shenzhen China ([ROR:049tv2d57](https://ror.org/049tv2d57))
 
 † Corresponding author
 
@@ -25,7 +25,7 @@ Cyclin D1 is a key regulator of cell cycle progression, which forms a complex wi
 
 Cyclin D1 is a key factor controlling cell cycle progression. It forms a complex with CDK4/6 and functions as a regulatory subunit in G1/S phase transition during cell cycle progression. Proteasome degradation is one of the critical post-translational regulatory mechanisms modulating steady-state protein levels of cyclin D1 during normal cell cycle progression (Qie and Diehl, 2020). Cullin-Ring complexes comprise the largest known family of ubiquitin ligases. Human cells express seven different cullins, CUL1, -2, -3, -4A, -4B, -5, and -7, and each of them nucleates a different ubiquitin ligase (Petroski and Deshaies, 2005). Recent studies demonstrate that F-box proteins Fbxw8, Fbx4, Fbxo31, and AMBRA1 interact with CUL1/7 and mediate cyclin D1 degradation in a phosphorylation-dependent manner (Chaikovsky et al., 2021; Kumar et al., 2005; Li et al., 2018; Maiani et al., 2021; Okabe et al., 2006; Santra et al., 2009; Simoneschi et al., 2021). However, it is not known if other E3 ligase(s) is also involved in maintaining steady-state protein levels of cyclin D1. In this study, we have screened an E3 ligase siRNA library and identified three additional cullin-associated E3 ligases, which mediate cyclin D1 ubiquitination and proteasome degradation. Our findings indicate multiple cullin-associated E3 ligases participate in the regulation of cyclin D1 stability in the cells.
 
-## Results and discussion
+### Results and discussion
 
 To determine if cullins are required for cyclin D1 degradation, CUL1–7 (CUL1, -2, -3, -4A, -4B, -5, and -7) expression plasmids were co-transfected with cyclin D1 into HEK293 cells. Forced expression of CUL1–7 significantly suppressed cyclin D1 protein levels (Figure 1—figure supplement 1A). In contrast, the levels of cyclin B1 (G2/M regulator) and cyclin A (S phase regulator) were not affected (Figure 1—figure supplement 1A), indicating that the CUL1–7 specifically regulate cyclin D1 protein levels. Consistent with these findings, RNAi-mediated knockdown of cullins significantly enhanced levels of endogenous cyclin D1 (Figure 1—figure supplement 1B). The knockdown efficiency of these siRNAs to each cullin mRNA was about 60–90% (Figure 1—figure supplement 2). In addition, the silencing specificity of each cullin siRNA has been verified through both western blotting and real-time PCR assays (Figure 1—figure supplements 3 and 4). Results of luciferase assay also showed that cullins inhibited cyclin D1 activity (Figure 1—figure supplement 5). In contrast, silencing of the cullins led to increased cyclin D1 activity (Figure 1—figure supplement 6).
 
@@ -35,7 +35,79 @@ Each cullin protein interacts with different multi-subunit ubiquitin ligases (Pe
 
 To further test the hypothesis that cyclin D1 degradation is mediated by multiple E3 ligases, we determined if different E3 ligases, Keap1, DDB2, and WSB2, are involved in cyclin D1 proteolysis. We first examined the interaction of these E3 ligases with cyclin D1 through co-immunoprecipitation (co-IP) assays. HEK293 cells were transiently transfected with HA-tagged Keap1 and treated with MG132 to prevent cyclin D1 degradation. Endogenous cyclin D1 was detected in the Keap1 immunoprecipitate, and this interaction was enhanced by the CUL3 (Figure 1A). Similarly, the interaction of DDB2 with endogenous cyclin D1 was enhanced by the CUL4A and -4B (Figure 1B). Consistent with these results, we also observed that CUL2 and -5 enhanced the interaction between WSB2 and endogenous cyclin D1 (Figure 1C). Rbx1 is associated with CUL1–7 and was used as a control in this study. The results of co-IP assay showed that Rbx1 interacted with endogenous cyclin D1 (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-v2.jpg)
+
+**Figure 1.:** (A) Co-immunoprecipitation (co-IP) of Keap1, CUL3 with endogenous cyclin D1. HA-Keap1 and Myc-CUL3 were co-transfected into HEK293 cells with the MG132 treatment (10 μM, 4 hr incubation). 24 hr after transfection, the cell lysates were collected. To detect interaction of Keap1 with cyclin D1 or CUL3, co-IP was performed using the anti-HA (α-HA) antibody followed by the western blot using the anti-cyclin D1 or anti-Myc (α-Myc) antibody. To detect the interaction between CUL3 with cyclin D1, co-IP assay was performed using the anti-Myc antibody followed by the western blot using the anti-cyclin D1 antibody. (B) Co-IP of DDB2 and CUL4A/4B with endogenous cyclin D1. Myc-DDB2, HA-CUL4A, and Flag-CUL4B were transfected into HEK293 cells with the MG132 treatment (10 μM, 4 hr incubation). Co-IP was performed using the anti-Flag (α-Flag), anti-HA, or anti-Myc antibody followed by the western blot using the anti-cyclin D1 antibody. (C) Co-IP of WSB2 and CUL2/5 with endogenous cyclin D1. Wild-type (WT) or mutant form of WSB2 (SOCS∆364–400) were co-transfected with Myc-CUL2/5 into HEK293 cells with MG132 treatment (10 μM, 4 hr incubation). Co-IP was performed using the anti-Myc or anti-WSB2 (α-WSB2) antibodies followed by the western blot using the anti-cyclin D1 antibody. (D) Co-IP of Rbx1 with endogenous cyclin D1. Myc-Rbx1 was transfected into HEK293 cells with MG132 treatment (10 μM, 4 hr incubation). Co-IP assay was performed using the anti-WSB2 or anti-Myc antibody followed by the western blot using the anti-cyclin D1 antibody. (E–H) Ubiquitination assay. WT or mutant cyclin D1 (T286A) were co-transfected with WT or mutant Keap1, DDB2, WSB2, or Rbx1 expression plasmids into HEK293 cells with the treatment of MG132 (10 μM, 4 hr incubation). Co-IP was performed using the anti-Ub (α-Ub) antibody followed by the western blot using the anti-cyclin D1 (α-cyclin D1) antibody. (I–L) WT or mutant Keap1, DDB2, WSB2, and Rbx1 expression plasmids were co-transfected with cyclin D1 expression plasmid into HEK293 cells with the MG132 treatment (10 μM, 4 hr incubation). Cyclin D1 protein levels were detected by the western blot analysis. (M, N) Protein decay assay. HEK293 cells were transfected with scramble siRNA (Ctrl) or Keap1, DDB2, WSB2, or Rbx1 siRNA. The cell lysates were collected 0, 30, 60, 120, or 300 min after cycloheximide treatment (80 μg/ml) and the cyclin D1 protein levels were detected by the western blot analysis and were quantified (n=3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cullin1, 2, 3, 4A, 4B, 5 and 7 constructs were co-transfected with cyclin D1 into HEK293 cells. Cyclin D1, cyclin B1 and cyclin A protein levels were detected through western blotting. (B) Cyclin D1 expression plasmid was co-transfected with cullin siRNAs into HEK293 cells and changes in steady-state protein levels of cyclin D1 were analyzed by the western blot.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cyclin D1 expression plasmid and 3xE2F-luc reporter construct were co-transfected with specific siRNAs targeting cullin genes into HEK293 cells. Luciferase assay were performed 24h after the transfection (n=1).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Control siRNA (C) or siRNAs specific for each cullin (1, 2, 3, 4A, 4B, 5 and 7) were transiently tranfected into HEK293 cells. Western blotting was performed detecting the Cul4A and Cul4B protein expression using anti-cullin 4A or anti-cullin 4B antibody. The results showed that cullin 4A and 4B siRNAs specifically inhibited CUL4A and CUL4B protein expression.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Control siRNA or siRNAs specific for each cullin (1, 2, 3, 4A, 4B, 5 and 7) were transiently tranfected into HEK293 cells. Real-time PCR was performed to detect levels of each cullin mRNA. Data are presented as means±SE of three independent experiments. Figure (A-G) showed that transfection of cullin 1, 2, 3, 4A, 4B, 5 and 7 siRNAs specifically inhibited mRNA expression of cullin 1, 2, 3, 4A, 4B, 5 and 7. A-g showed that transfection of cullin 1, 2, 3, 4A, 4B, 5 and 7 siRNAs specifically inhibited mRNA expression of cullin 1, 2, 3, 4A, 4B, 5 and 7.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Cyclin D1 expression plasmid and 3xE2F-luc reporter construct were co-transfected with each cullin iinto HEK293 cells. Luciferase assay were performed at three different time points: 12, 24 and 48 hours after the transfection.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Cyclin D1 expression plasmid and 3xE2F-luc reporter construct were co-transfected with each siRNA specific for each cullin into HEK293 cells. Luciferase assay were performed 24 hours after the transfection. Data are presented as means ± SD of three independent experiments.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** WT or mutant cyclin D1 (T286A) expression plasmids were co-transfected with cullins expression plasmids into HEK293 cells with the treatment of proteasome inhibitor MG132 (10 μM, 4h incubation). 24 hours after transfection, the cell lysates were collected, and ubiquitylated proteins were pulled down using a specific ubiquitin-binding affinity matrix (UbiQapture-Q, Biomol) and polyubiquitylated cyclin D1 was detected using the anti-cyclin D1 antibody.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** Cyclin D1 and cullin expression plasmids were co-transfected into HEK293 cells with or without MG132 treatment (10 μM, 4h incubation). Changes in cyclin D1 protein levels were detected by the western blot analysis.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** HCT-116 cells were transiently transfected with CUL1, 2, 3, 4A, 4B, 5 or 7 respectively. Total RNAs were harvested 24 hours after transfection. Changes in cyclin D1 mRNA expression was detected by real-time PCR. Data were expressed as the fold changes compared to the control group and were presented as means ± SD of three independent experiments.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp10-v2.jpg)
+
+**Figure 1—figure supplement 10.:** (A and B) 468 siRNAs targeting 156 genes (triplicate) were coated in 96-well plates (silencer Custom siRNA library, Ambion, Austin, USA). Cyclin D1 expression plasmid and 3xE2F-luc reporter construct were co-transfected with siRNAs specific for each ligase subunit into NIH3T3 cells. Luciferase assay was performed 24 hours after transfection. Data are presented as means ± SD of three independent experiments.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp11-v2.jpg)
+
+**Figure 1—figure supplement 11.:** Cyclin D1 expression plasmid was co-transfected with Fbxw8 (associated with CUL1), Keap1 (associated with CUL3), DDB2 (associated with CUL4A and 4B), WSB2 (associated with CUL2 and 5) and Rbx1 (Ring-finger domain protein interacting with the C-terminal of cullins) expression plasmids into HEK293 cells. Changes in cyclin D1 protein levels were detected by the western blot analysis.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig1-figsupp12-v2.jpg)
+
+**Figure 1—figure supplement 12.:** Control (Ctrl) siRNA or siRNAs specific for Keap1, DDB2, WSB2 and Rbx1 were transiently tranfected into HEK293 cells. Expression of Keap1 and KLHL12 (interact with CUL3), DDB2 and DDB1 (interact with CUL4A and CUL4B), WSB2 and WSB1 (interact with CUL2 and CUL5) and Rbx1 and ROC2 (interact with CUL1-7) was detected through real-time PCR assay to detect the silencing efficiency and specificity of Keap1, DDB2, WSB2 and Rbx1 siRNAs. Data are presented as means ± SD of three independent experiments.
+
 We then examined the effects of Keap1, DDB2, and WSB2 on cyclin D1 ubiquitination and degradation and used loss-of-function mutants of these E3 ligases to do experiments. In addition, we used Rbx1 as a control in these experiments. For Keap1, we used BTB domain deletion form which abolishes its binding with CUL3 (Furukawa and Xiong, 2005). For DDB2, we used the WD motif deletion form which blocks its binding to its substrates (Nag et al., 2001). For WSB2, we used the C-terminal deleted mutant which loses its binding to CUL2 and -5. And for Rbx1, we used the mutant form Rbx1C53A/C56A which dramatically reduced the ligase activity (Ohta et al., 1999). We found that WT but not mutant Keap1 (F-box mutation) induced cyclin D1 ubiquitination (Figure 1E). In contrast, Keap1 had no effect on the ubiquitination of phosphorylation mutant cyclin D1 (T286A) (Figure 1E). Similarly, WT DDB2, WSB2, and Rbx1 induced cyclin D1 ubiquitination and mutant DDB2, WSB2, and Rbx1 had no effects on cyclin D1 ubiquitination (Figure 1F–H). In addition, Keap1, DDB2, WSB2, or Rbx1 had no effects on the ubiquitination of phosphorylation mutant cyclin D1 (T286A) (Figure 1E–H). These results indicate that Keap1, DDB2, and WSB2 interact with cyclin D1 and mediate cyclin D1 ubiquitination in a phosphorylation-dependent manner. We then determined the effects of these E3 ligases on cyclin D1 degradation by western blot analysis. Keap1, DDB2, WSB2, and Rbx1 induced WT but not T286A mutant cyclin D1 degradation (Figure 1I–L). In contrast, mutant Keap1, DDB2, WSB2, or Rbx1 had no effect on cyclin D1 degradation (Figure 1I–L). Consistent with these findings, silencing of Keap1, DDB2, WSB2, or Rbx1 resulted in the stabilization of cyclin D1 protein and significantly prolonged the half-life of cyclin D1 (Figure 1M and N). The silencing specificity of siRNA for each E3 ligase subunit has been verified through real-time PCR assays (Figure 1—figure supplement 12). To determine the effects of these E3 ligases on protein levels of endogenous cyclin D1, we transfected Keap1, DDB2, WSB2, and Rbx1 siRNA into human colon cancer cell line HCT-116 cells and found that knocking down of Keap1, DDB2, WSB2, or Rbx1 significantly enhanced endogenous cyclin D1 protein levels (Figure 2A, D, G, and J). Taken together, these findings indicate that cyclin D1 degradation is mediated by multiple E3 ligases which are associated with different cullin proteins.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig2-v2.jpg)
+
+**Figure 2.:** (A, D, G, J) Keap1, DDB2, WSB2, or Rbx1 siRNAs were transiently transfected into human colon cancer cell line HCT-116 cells. Endogenous cyclin D1 protein levels were detected by the western blot using the anti-cyclin D1 antibody. (B, E, H, K) Cell proliferation assay. Keap1, DDB2, WSB2, or Rbx1 expression plasmids were transfected into HCT-116 cells which were stably transfected with wild-type (WT) or mutant cyclin D1 (T286). The cells were stained with crystal violet 5 days after Keap1, DDB2, WSB2, or Rbx1 transfection. (C, F, I, L) Bromodeoxyuridine (BrdU) incorporation assay. Keap1, DDB2, WSB2, or Rbx1 expression plasmid was transiently transfected into HCT-116 cells which were stably transfected with WT or mutant cyclin D1 (T286). 4 hr before the harvest of cells, the cells were treated with BrdU (20 μM). 48 hr after the transfection, BrdU incorporation assays were performed (n=3). Data were presented as means ± SD of three independent experiments. Statistical analyses were performed using two-way ANOVA followed by the Tucky’s post-hoc test, *P<0.05 (n=3). (M) A model showing that cullin-associated ubiquitin ligases are participated in the cyclin D1 proteolysis process.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Keap1 (A), DDB2 (B), WSB2 (C) and Rbx1 (D) expression plasmids were transiently transfected into HCT-116 cells stably transfected with WT or mutant cyclin D1 (T286A). 48 hours after transfection, cells were synchronized through the treatment with nocodazle (8 μg/ml) for 16 hours. Then cell cycle progression was analyzed by FACS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** WT or mutant cyclin D1 (T286A) expression plasmids were co-transfected with Keap1, WSB2, DDB2 or Rbx1 expression plasmids into HEK293 cells. 48 hours after transfection, changes in phospho-Rb and cyclin D1 protein levels were detected by the western blot analysis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** WT or mutant cyclin D1 (K269R) expression plasmids were co-transfected with Keap1, DDB2, and AMBRA1 expression plasmids into HEK293 cells. 48 hours after transfection, changes in cyclin D1 protein levels were detected by the western blot analysis.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/80327/elife-80327-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** In vitro ubiquitination of cyclin D1 by different Cullin-associated E3 ligases as indicated. Cyclin D1 and its ubiquitinated forms (bracket indicated) were detected by immunoblotting with an anti-cyclin D1 antibody. Mix: Mg-ATP, E1 (UAE), E2 (UBC9), Ubiquitin solution, IPP (Inorganic pyrophosphatase), DTT (DL-Dithiothreitol).
 
 We then determined whether these E3 ligases affect the function of cyclin D1 during normal cell cycle progression. Over-expression of Keap1, DDB2, WSB2, or Rbx1 markedly inhibited the growth of HCT-116 cells. In contrast, these E3 ligases had no effect on cell proliferation in the cells stably transfected with T286A mutant cyclin D1 (Figure 2B, E, H, and K). Then, we performed fluorescence-activated cell sorting (FACS) analysis and treated cells with nocodazole to synchronize the cell division cycle. We found that in HCT-116 cells stably transfected with the WT cyclin D1, forced expression of Keap1, DDB2, WSB2, or Rbx1 prevented the nocodazole-mediated G2/M block and subsequently resulted in accumulation of cells in G1 phase (Figure 2—figure supplement 1). In contrast, Keap1, DDB2, WSB2, or Rbx1 failed to induce efficient cell cycle arrest at the G1 phase in the mutant cyclin D1 (T286A) transfected cells (Figure 2B, E, H, and K). The results indicate that these cullin-associated ubiquitin ligases promoted cyclin D1 degradation and subsequently decreased cell cycle progression rate in a phosphorylation-dependent manner. Moreover, forced expression of Keap1, DDB2, WSB2, or Rbx1 also blocked DNA synthesis in WT cyclin D1 transfected cells but not mutant cyclin D1 (T286A) transfected cells (Figure 2C, F, I, and L). Consistent with these findings, we also observed that decreased phospho-Rb protein levels in the cells in which Keap1, DDB2, WSB2, or Rbx1 were co-transfected with WT cyclin D1 but not the mutant cyclin D1 (T286) (Figure 2—figure supplement 2). It was reported that Lysine 269 is essential for cyclin D1 ubiquitination (Barbash et al., 2009). To determine if mutation of Lysine 269 will affect cyclin D1 degradation induced by newly identified E3 ligases in the current study, WT or mutant cyclin D1 (K269R) expression plasmids were co-transfected with Keap1 or DDB2 expression plasmid into HEK293 cells. AMBRA1 expression plasmid, a well known E3 ligase targeting cyclin D1, was used as a control in this experiment. 48 hr after transfection, changes in cyclin D1 protein levels were detected by the western blot analysis. We found that expression of Keap1 or DDB2 in 293 cells reduced WT but not K269R mutant cyclin D1 protein levels (Figure 2—figure supplement 3). To determine if these newly identified E3 ligases directly interact cyclin D1, we performed in vitro ubiquitination assay and used AMBRA1 as a positive control. We found that cyclin D1 ubiquitination ladders were observed when Keap1 or DDB2 were added, suggesting that Keap1 and DDB2 could directly interact with cyclin D1. In contrast, WSB2 only has weak effect to directly interact with cyclin D1 (Figure 2—figure supplement 4).
 
@@ -47,42 +119,114 @@ In addition, cyclin D1 is abnormally up-regulated in many different types of hum
 
 ## Materials and methods
 
-## Western blotting, immunoprecipitation, and ubiquitination assay
+### Western blotting, immunoprecipitation, and ubiquitination assay
 
 Western blotting and immunoprecipitation (IP) were performed as previously described (Zhang et al., 2009). The interaction between endogenous cyclin D1 and cullins-associated ligases subunits was determined in HEK293 cells. Proteasome inhibitor MG132 (10 μM) (Sigma, St. Louis, MO, USA) was added to the cell culture 4 hr before cells were harvested for IP or ubiquitination assay. For in vivo ubiquitination assay, HEK293 cells were co-transfected with plasmids expressing HA-cyclin D1 or HA-cyclin D1 (T286A) and cullins-associated ligases subunits constructs. Polyubiquitinated cyclin D1 was detected by co-IP using anti-ubiquitin antibody conjugated beads, followed by immunoblotting with an anti-HA antibody for cyclin D1. Blots were probed with the following antibodies:
 
-## Cell cycle analysis
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cyclin D1</td>
+      <td>Abcam</td>
+      <td>RRID: AB_2750906</td>
+    </tr>
+    <tr>
+      <td>Cyclin B1</td>
+      <td>Abcam</td>
+      <td>RRID: AB_731779</td>
+    </tr>
+    <tr>
+      <td>Cyclin A</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID: AB_627334</td>
+    </tr>
+    <tr>
+      <td>Phospho-cyclin D1 (Thr286)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_2070561</td>
+    </tr>
+    <tr>
+      <td>Myc</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_309725</td>
+    </tr>
+    <tr>
+      <td>HA</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID: AB_2894930</td>
+    </tr>
+    <tr>
+      <td>Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_439687</td>
+    </tr>
+    <tr>
+      <td>Ubiquitin</td>
+      <td>Abcam</td>
+      <td>RRID: AB_2801561</td>
+    </tr>
+    <tr>
+      <td>CUL4A</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_2086563</td>
+    </tr>
+    <tr>
+      <td>CUL4B</td>
+      <td>Proteintech</td>
+      <td>RRID: AB_2086699</td>
+    </tr>
+    <tr>
+      <td>WSB2</td>
+      <td>Proteintech</td>
+      <td>RRID: AB_2216206</td>
+    </tr>
+    <tr>
+      <td>Phospho-Rb (Ser780)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_10950972</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cycle analysis
 
 FACS analysis and bromodeoxyuridine (BrdU) incorporation assay were performed as described before (Santra et al., 2009). For FACS analysis, HCT-116 cells were stably transfected with WT cyclin D1 or mutant (MT) cyclin D1 (T286A). The cells were then transfected with Keap1, WSB2, DDB2, or Rbx1. The cells were harvested 48 hr after the transfection. 16 hr before the harvest, the cells were treated 8 μg/ml of nocodazole (Sigma) for the final 16 hr. As for the non-nocodazole treatment experiments, HCT-116 cells were transiently transfected with siRNA for Keap1, DDB2, WSB2, or Rbx1. 48 hr after the transfection, the cells were synchronized at the G0 phase through serum starvation for over 16 hr. The cells were then stained with propidium iodide (50 μg/ml) at 37°C for 1 hr. FACS samples were analyzed with a FACSCanto Flow Cytometry System (BD Biosciences). And the data were analyzed using FlowJo 7.6 software according to the manufacturer’s instruction. For labeling with BrdU, HCT-116 cells were stably transfected with WT cyclin D1 or MT cyclin D1 (T286A). The cells were then transiently transfected with Keap1, WSB2, DDB2, or Rbx1. The cells were harvested 48 hr after the transfection. Four hr before the harvest, the cells were treated with BrdU (20 μM).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Human colon cancer HCT-116 cells (ATCC, RRID: CVCL_0291) and human embryonic kidney 293 (HEK293) cells (ATCC, RRID: CVCL_0045) were cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal calf serum at 37°C under 5% CO2. The cell lines were tested for mycoplasma-free status before they were used. HCT-116 cells expressing WT HA-cyclin D1 or MT HA-cyclin D1 (T286A) were generated by transient transfection using Lipofectamine 2000 (Invitrogen, Carlsbad, CA, USA). Then transfected colonies were selected in the presence of G418 (1000 μg/ml for HCT-116 cells). DNA plasmids were transiently transfected into HEK293 cells in 6 cm culture dishes using Lipofectamine 2000. Empty vector was used to keep the total amount of transfected DNA plasmid constant in each group in all experiments. Flag-EGFP plasmid was co-transfected as an internal control to evaluate transfection efficiency. Western blotting and IP assays were performed 24 hr after transfection.
 
-## Plasmids
+### Plasmids
 
 Myc-CUL3 and FBXW8 were generously provided by Dr. Yue Xiong and Dr. Osamu Tetsu, respectively. Plasmids expressing WT HA-cyclin D1 and MT HA-cyclin D1 (T286A), CUL2, -4A, -4B, -5, and -7, Keap1 and Keap1 delta BTB, DDB2, Rbx1 were purchased from Addgene. The plasmid pCMV6-WSB2 (NM_018639.3) was purchased from OriGene. Loss-of-function MT DDB2 (WD∆238–278), WSB2 (SOCS∆364–400), and Rbx1 (C53A/C56A) were generated using site directed mutagenesis kit (Agilent, CA, USA). All constructs were confirmed by sequencing.
 
-## In vivo protein decay assay
+### In vivo protein decay assay
 
 Cells were seeded in 15 cm culture dishes, cyclin D1 and equal amounts of siRNAs for Keap1, WSB2, DDB2, Rbx1, or control siRNA were transfected, respectively. 24 hr after transfection, cells were trypsinized and split into five 10 cm dishes. 12 hr after recovery, cells were cultured in regular medium with 80 μg/ml cycloheximide (Calbiochem, La Jolla, CA, USA), for 0, 30, 60, 120, and 300 min before harvesting. Western blotting was performed to detect the decay of cyclin D1 proteins.
 
-## Cullin-associated E3 ligases subunits siRNA library screening
+### Cullin-associated E3 ligases subunits siRNA library screening
 
 462 unique siRNAs targeting each of 156 genes were coated in 96-well plates (silencer Custom siRNA library, Ambion, Austin, TX, USA). 6xE2F luciferase reporter, cyclin D1 plasmids were co-transfected with the siRNA library into NIH3T3 cells. 24 hr after the transfection, the cell lysates were collected, and luciferase activity was measured using a Promega Dual Luciferase reporter assay kit (Promega, Madison, WI, USA).
 
-## Real-time PCR
+### Real-time PCR
 
 Cell samples were immediately posited in 1 ml TRIZOL (Invitrogen) Reagent after taking out from –80°C refrigerator, and further processed with TissueLyser for RNA extraction. Total cellular RNA was extracted by the TRIZOL Reagent according to the supplier’s instructions. cDNAs of the samples were synthesized with RevertAid First Strand cDNA synthesis Kit (Thermo Fisher). And real-time PCR amplification of the cDNAs were performed with SYBR Premix Ex Taq (TAKARA) kit in ABI 7500 real-time PCR system, with following specific primers: cyclin D1 5'-CCGTCCATGCGGAAGATC-3' (upper primer) and 5'-GAAGACCTCCTCCTCGCACT-3' (lower primer); GAPDH, 5'-GAAGGTGAAGGTCGGAGT-3' (upper primer) and 5'-GAAGATGGTGATGGGATTTC-3 (lower primer). As for the real-time PCR in the gene knockdown experiments, the primers used in this study were as follows: cyclin D1, 5'-CGTGGCCTCTAAGATGAAGG (upper primer) and 3'-CTGGCATTTTGGAGAGGAAG (lower primer); Cul1, 5'-AATGCCCTGGTAATGTCTGC (upper primer) and 3'-GTCACAGTATCGAGCCAGCA (lower primer); Cul2, 5'-CTTACTCCGTGCTGTGTCCA (upper primer) and 3'-GCCTTATCCAACGCACTCAT (lower primer); Cul3, 5'-TCCAGGGCTTATTGGATCTG (upper primer) and 3'-GCCCTTTGACTCCCTTTTTC (lower primer); Cul4A, 5'-AAAGAAGCCACAGACGAGGA (upper primer) and 3'-ATGTCCCTGAACATGCCTTC (lower primer); Cul4B, 5'-CGCCTGTTAGTCGGAAAGAG (upper primer) and 3'-TTCCCGGAACATTCTGATTC (lower primer); Cul5, 5'-TGCAGTCTGTCTTTGGGATG (upper primer) and 3'-TATTGCTGCCCTGTTTACCC (lower primer); Cul7, 5'-TAGAATTGGCCCAGGACTTG (upper primer) and 3'-GCGTCTAGCAGGAGGACATC (lower primer); β-actin, 5'-GGACTTCGAGCAAGAGATGG (upper primer) and 3'-AGCACTGTGTTGGCGTACAG (lower primer). The PCR conditions included a denaturation step at 95°C for 5 min, followed by 35 cycles of denaturation at 95°C for 10 s, annealing at 58°C for 15 s, and extension at 72°C for 10 s. Detection of the fluorescent product was carried out at the end of the 72°C extension period. The PCR products were subjected to a melting curve analysis, and the data were analyzed and quantified with the Rotor-Gene analysis software. Dynamic tube normalization and noise slope correction were used to remove background fluorescence. Each sample was tested at least in triplicate and repeated using three independent cell preparations.
 
-## Luciferase and real-time PCR assays
+### Luciferase and real-time PCR assays
 
 The plasmids of reporter constructs were co-transfected with cullins and cyclin D1 expression plasmid into HEK293 cells. 24 hr after transfection, the cell lysates were then collected, and luciferase activity was measured using a Promega Dual Luciferase reporter assay kit.
 
-## In vitro ubiquitination assay
+### In vitro ubiquitination assay
 
 The in vitro ubiquitination assay was performed according to the manufacturer’s recommendations (ab139467, Abcam, USA). The cyclin D1 fusion protein (P05317, Solarbio, China) expressed in Escherichia coli was incubated at 30°C for the 30 min in the presence of E1, E2, ATP, Ub, and E3 ligase recombinant proteins including Keap1, DDB2, WSB2, RBX1, and AMBRA1 (Abnova, China). Samples were resolved by 8% SDS-PAGE and subjected to immunoblot analysis with the anti-cyclin D1 antibody.
 
-## Statistics
+### Statistics
 
 Statistical comparison between two groups was performed using unpaired Student’s t-test and the two-way ANOVA followed by the Tucky’s post-hoc test (n=3). p<0.05 was considered significant and is denoted in the figures.

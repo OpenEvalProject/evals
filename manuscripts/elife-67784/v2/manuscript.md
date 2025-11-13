@@ -52,31 +52,144 @@ In this work, we described GSL variation in seeds of a collection of 797 A. thal
 
 ## Results
 
-## GSL variation across Europe
+### GSL variation across Europe
 
 To investigate the genetic, environmental and demographic parameters influencing the distribution of Arabidopsis GSL chemotypes, we measured GSLs from seeds of a collection of 797 A. thaliana natural accessions ( The 1001 Genomes Consortium, 2016). These Arabidopsis accessions were collected from different geographical locations, mainly in and around Europe (Figure 3A). 23 different GSLs were detected and quantified, identifying a wide diversity in composition and amount among the natural accessions with a median heritability of 83%, ranging from 34% to 93% (Supplementary file 1). To summarize the GSL variation among the accessions, we performed principal component analyses (PCA) on the accumulation of all the individual GSLs across the accessions as an unbiased first step. The first two PCs only captured 33% of the total variation with PC1 describing GSLs with four and seven carbons and PC2 mainly capturing GSLs with eight carbons in their side chain (Figure 3—figure supplement 1). Previous work using a collection of predominantly central European accessions had suggested a simple continental gradient chain-elongation variation from the south-west (SW) (that is enriched with alkenyl and hydroxyalkenyl GSLs) to the north-east (NE) (Brachi et al., 2015; Züst et al., 2012). To assess if this was still apparent in this larger collection, we plotted the accessions based on their geographical locations and colored them based on their PC1 and PC2 scores that are linked to chain elongation variation (Figure 3A and Figure 3—figure supplement 2A, respectively). This larger collection shows that there is not a single gradient shaping GSL diversity across Europe (Figure 3A). Instead, the extended sampling of accessions around the Mediterranean Basin in this collection shows that the SW to NE pattern reiterates within the Iberian Peninsula. In each of these areas (Iberian Peninsula and Central Europe), the SW is enriched with C4 GSLs, and the NE with C3 GSLs (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig3-v2.jpg)
+
+**Figure 3.:** (A) The accessions are plotted on the map based on their collection site and colored based on their principal component (PC)1 score. (B) Manhattan plot of genome-wideassociation analyses using PC1. Horizontal lines represent 5% significance thresholds using Bonferroni (red) and Benjamini–Hochberg (blue).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Percentage of variance explained by each PC. (B, C) Contribution of the individual GSLs to PC1 (B) and PC2 (C). Red bars: contribution of four carbon GSLs; blue bars: contribution of three carbons GSLs. ± above the bar indicates if the contribution of the variable is positive or negative. (D) Linear model for PC1 and PC2 scores with the geographic parameters. Lat: latitude; Long: longitude.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The accessions were plotted on the map based on their collection site and colored based on their principal component (PC)2 score. (B) Manhattan plot of genome-wideassociation analyses using PC2. Horizontal lines represent 5% significance thresholds using Bonferroni (red) and Benjamini–Hochberg (blue).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Horizontal lines represent 5% significance thresholds using Bonferroni (red) and Benjamini–Hochberg (blue).
 
 To test which of the major causal loci are detectable in this collection and to identify new genomic regions that are associated with the observed GSL variation, we performed GWA (with EMMAX algorithms) analyses using the PC1 and PC2 values. This collection of natural accessions presents a dense variant map that is 3× larger than previous GSL GWA mapping populations and includes 6,973,565 SNPs. In spite of the large population size, both PC1- and PC2-based analyses identified the same two major peaks covering two of the known causal gene clusters controlling GSL diversity (Figure 3B for PC1 GWA analyses, Figure 3—figure supplement 2B for PC2 GWA analyses) (Brachi et al., 2015; Chan et al., 2011; Chan et al., 2010). The largest peak in both cases is the GS-Elong locus on chromosome 5, containing the MAM1 (AT5G23010), MAM2 (that is not present in Col-0 plants) and MAM3 (AT5G23020) genes.
 
 The peak on chromosome 4 is the GS-AOP locus containing the AOP2 and AOP3 genes (AT4G03060 and AT4G03050, respectively). Applying a more permissive cutoff did not result in the detection of any other related genes (Supplementary file 2). Previous QTL mapping and molecular experiments have shown that the genes within GS-AOP and GS-Elong loci are the causal genes for GSL variation within these regions (Benderoth et al., 2006; Brachi et al., 2015; Chan et al., 2011; Chan et al., 2010; Kliebenstein et al., 2001a; Kliebenstein et al., 2002a; Kliebenstein et al., 2002a; Kroymann and Mitchell-Olds, 2005; Pfalz et al., 2007; Wentzell et al., 2007). Surprisingly, none of the other known natural variants within the GSL biosynthetic pathway (listed in Supplementary file 2) were identified by GWA including three that were found with 96 accessions and three that were found with 595 accessions using PC1 and 2 (Brachi et al., 2015; Chan et al., 2011; Chan et al., 2010; Kliebenstein, 2009). Performing GWA studies using the accumulation of each of the 23 individual GSL detected in this collection resulted in an identical result, no additional known GSL-related genes were detected, while a few additional unknown genes were found (Figure 3—figure supplement 3 and Supplementary file 2). One explanation for that is that the dense sampling in this collection is available for mainly the Iberian Peninsula, the southern coast of Sweden and the south-western coast of Italy, and is still insufficient for Central Europe. Another possibility is that allelic heterogeneity for the other loci, and more complex patterns of interaction, may hamper their detection and influenced this high false-negative error rate where ~80% of prior validated natural variants found using multiple RIL populations were missed.
 
-## Complex GSL chemotypic variation
+### Complex GSL chemotypic variation
 
 One potential complicating factor is that GSL chemotypic variation is best described as a discrete multimodal distribution involving the epistatic interaction of multiple genes which PCA’s linear decomposition cannot accurately capture (Figure 2). To test if PCA was inaccurately describing GSL chemotypic variation, we directly called the specific GSL chemotypes in each accession. Using Arabidopsis QTL mapping populations and GWA, we have shown that the GS-AOP, Elong and OH loci determine seven discrete chemotypes, 3MSO, 4MSO, 3OHP, 4OHB, Allyl, 3-Butenyl, 2-OH-3-Butenyl (Figure 2), that can be readily assigned from GSLs’ phenotypic data (Brachi et al., 2015; Chan et al., 2011; Chan et al., 2010; Kliebenstein et al., 2001a). The presence and amounts of these seven chemotypes provide a reliable indication about the existence and activity of each of the major GSL loci. Using accessions with previously known chemotypes and genotypes, we developed a phenotypic classification scheme to assign the chemotype for each accession (Figure 4; for details, see Methods and Figure 4—figure supplements 1–3; for structures, see Figure 2 and Supplementary file 1). Since the aliphatic GSLs’ composition in the seeds reliably indicates the GSL structural composition in the other plant’s life stages and tissues, assigning a chemotype for each accession based on the seeds’ composition is expected to be highly stable across tissues of the same accession (Brown et al., 2003; Chan et al., 2011; Chan et al., 2010; Kliebenstein et al., 2001a; Kliebenstein et al., 2001b). Most accessions were classified as 2-OH-3-Butenyl (27%) or Allyl (47%) with lower frequencies for the other chemotypes. Mapping the chemotypes onto Europe showed that the PCA decomposition was missing substantial information on GSL chemotype variation (Figure 4). Instead of a continuous distribution across Europe, the chemotype classifications revealed specific geographic patterns. Central and parts of Northern Europe (like north Germany and Poland) were characterized by a high variability involving the co-occurrence of individuals from all chemotypes. In contrast, southern Europe, which presents a dense sampling, including the Iberian Peninsula, Italy and the Balkan, has two predominant chemotypes, Allyl or 2-OH-3-Butenyl, that are separated from each other by a clear and sharp geographic partitioning (Figure 4 and Figure 4—figure supplement 4). Uniquely, Swedish accessions displayed a striking presence of almost solely Allyl chemotypes. Deeper sampling is required to test if this is or is not mirrored on the eastern side of the Baltic Sea as the few accessions from that region are almost solely 3OHP chemotypes (Finnish, Lithuanian, Latvian or Estonian accessions). Directly assigning GSL variation by discrete chemotypes provided a more detailed image not revealed by PCA decomposition. Further, the different chemotypic to geographic patterns suggest that there may be different pressures shaping GSL variation particularly when comparing Central and Southern Europe.
 
-## Geography and environmental parameters affect GSL variation
+![Figure 4.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig4-v2.jpg)
+
+**Figure 4.:** (A) Using the GSL accumulation, each accession was classified to one of seven aliphatic short-chained GSL chemotypes based on the enzyme functions as follows: MAM2, AOP null: classified as 3MSO dominant, colored in yellow. MAM1, AOP null: classified as 4MSO dominant, colored in pink. MAM2, AOP3: classified as 3OHP dominant, colored in green. MAM1, AOP3: classified as 4OHB dominant, colored in light blue. MAM2, AOP2: classified as Allyl dominant, colored in blue. MAM1, AOP2, GS-OH non-functional: classified as 3-Butenyl dominant, colored in black. MAM1, AOP2, GS-OH functional: classified as 2-OH-3-Butenyl dominant, colored in red. The accessions were plotted on a map based on their collection sites and colored based on their dominant chemotype. (B) The coloring scheme with functional GSL enzymes in the aliphatic GSL pathway is shown with the percentage of accessions in each chemotypes (out of the total 797 accessions) shown in each box.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Accessions were classified based on the side chain length of the aliphatic short-chained glucosinolates (GSLs). Accessions with a majority of GSLs containing three carbons in their side chains are classified as MAM2 dominant and colored in blue. Accessions with the majority of aliphatic short-chained GSLs containing four carbons in their side chains are classified as MAM1 dominant and colored in red. The accessions were plotted on a map based on their original collection sites.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Relative amounts of alkenyl glucosinolates (GSLs), alkyl GSLs and methylsulfinyl (MSO) GSLs were calculated in respect to the total short-chained aliphatic GSLs as described in the Methods section. Accessions with high amounts of alkenyl GSLs were classified as AOP2 dominant and colored in pink. Accessions with high amounts of alkyl GSLs were classified as AOP3 dominant and colored in orange. Accessions with high amounts of MSO GSLs were classified as AOP null and colored in green. The accessions were plotted on a map based on their original collection sites.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The ratio between 2-OH-3-Butenyl to 3-Butenyl glucosinolate (GSL) was calculated only for MAM1-dominant accessions (accessions with GSLs containing four carbons in their side chain). Accessions with high amounts of 2-OH-3-Butenyl were classified as GS-OH functional and colored in black. Accessions with mostly 3-Butenyl were classified as GS-OH non-functional and colored in brown. The accessions were plotted on a map based on their original collection sites.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The accessions were divided to two collections using the following chain of mountains: the Pyrenees between Spain and France, the Alps between Italy and Germany, and the Carpathians in the Balkan. The accessions that are located north of these mountains are referred to as the northern accessions and colored in green. The accessions located south of these mountains are referred to as the southern accessions and colored in pink. (B) The percentage of each chemotype was independently calculated in the south and north. Butenyl: 3-Butenyl; OH-But: 2-OH-3-Butenyl.
+
+### Geography and environmental parameters affect GSL variation
 
 Because GSL chemotypes may be more reflective of local environment, we proceed to test if they are associated with weather parameters and landscape conditions. Further, given the difference in chemotype occurrence in Central and Southern Europe, we hypothesized that these environmental connections may change between Central and Southern Europe. For these tests, we chose environmental parameters that capture a majority of the environmental variance and by that may describe the type of ecosystem (Ferrero-Serrano and Assmann, 2019). We assigned each accession the environmental value based on its location. These environmental parameters include geographic proximity (distance to the coast), precipitation descriptors (precipitation of wettest and driest month) and temperature descriptors (maximal temperature of warmest month and minimal temperature of coldest month) and capture major abiotic pressures as well as provide information about the type of ecosystem in which each accession exists. Because demography and environment can be confounded, we included demography in our models using the previously assigned genomic groupings as components of the model (The 1001 Genomes Consortium, 2016). Further, we included specific geographic information by assigning the accessions to a northern or a southern collection, based on their location in relation to the following chain of mountains: the Pyrenees, the Alps and the Carpathians (Figure 4—figure supplement 4). We then ran a linear model for each geographic area separately (north and central vs. south) to check if the environmental parameters and the genomic population group associate with specific chemotypes. To directly test for an interaction of environment and geography, we ran the model with all accessions and incorporated the geography parameters and genomic population group. As the most frequent chemotypes in the collection are Allyl and 2-OH-3-Butenyl (Figure 4—figure supplement 4B), we focused the models on these chemotypes. The models showed that the environmental conditions have different relationships to the chemotypes that shift by geographic areas. Moreover, two of the parameters (min temp of coldest month and precipitation of wettest month) have a significant interaction with geography, suggesting that the relationship of these environmental parameters to specific GSL chemotypes is different between Northern and Southern Europe (Table 1; for details on the models, see Methods). This suggests that the relationship of GSL chemotype to environmental parameters varies across geographic regions of Europe rather than fitting a simple linear model.
 
+**Table 1.**
+ Environmental conditions differentially associate with major chemotypes across geographic location.Linear model for the two major chemotypes, Allyl and 2-OH-3-Butenyl, was conducted with the indicated environmental parameters, for the northern and southern collection, separately (for more details, see Methods). The table shows p values for each term from the linear model. For the interaction with geography, the linear model was run using the total dataset, and the geography parameter (north or south) was added to the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Environmental parameter</th>
+      <th>Effect on chemotype – north</th>
+      <th>Effect on chemotype – south</th>
+      <th>Interaction with geography</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genomic group</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Max temperature of warmest month</td>
+      <td>0.0382</td>
+      <td>&lt;0.0001</td>
+      <td>0.3574</td>
+    </tr>
+    <tr>
+      <td>Min temperature of coldest month</td>
+      <td>0.0007</td>
+      <td>&lt;0.0001</td>
+      <td>0.0049</td>
+    </tr>
+    <tr>
+      <td>Precipitation of wettest month</td>
+      <td>0.1645</td>
+      <td>0.0003</td>
+      <td>0.0094</td>
+    </tr>
+    <tr>
+      <td>Precipitation of driest month</td>
+      <td>0.0665</td>
+      <td>0.2026</td>
+      <td>0.47425</td>
+    </tr>
+    <tr>
+      <td>Distance to the coast</td>
+      <td>0.2781</td>
+      <td>0.02680</td>
+      <td>0.1279</td>
+    </tr>
+  </tbody>
+</table>
+
 As the two main chemotypes in the collection differ by the length of the carbon chain (C3 for Allyl, C4 for 2-OH-3-Butenyl), we created a linear model to further check the interaction between each environmental condition to geography in respect to the carbon chain length. As was shown by the chemotypes models, most of the environmental parameters (min temp of coldest month, precipitation of wettest month and distance to the coast) significantly interacted with geography, showing again that the relationship of environment to GSL alleles changes across Europe (Figure 4—source data 1; for details on the models, see Methods). Conducting this analysis for each of the geographic areas separately highlighted this by showing that these parameters have different effects on the carbon chain length in each of the areas (Figure 4—source data 1).
 
-## The genetic architecture of GSL variation
+### The genetic architecture of GSL variation
 
 The presence of different GSL chemotype to environmental relationships across Europe raises the question of how these chemotypes are generated. Are these chemotypes from locally derived alleles or obtained by the intermixing of widely distributed causal alleles? Further, if there are multiple alleles, do they display within-species convergent or parallel signatures? We focus on the GS-AOP, GS-Elong and GS-OH loci, the causal genes creating Arabidopsis GSL chemotypes, and use the available genomic sequences in all these accessions to investigate the allelic variation in these genes to map the allelic distribution and test the potential for convergent and/or parallel evolution within each locus.
 
 GS-Elong: Because the variation in the GS-Elong locus is caused by complex structural variation in MAM1 and MAM2 that is not resolvable using the available data from short-read genomic sequence, we used the MAM3 sequence within this locus to ascertain the genomic relationship of accessions at the causal GS-Elong locus (Kroymann et al., 2003). We aligned the MAM3 sequence from each of the accessions, rooted the tree with the Arabidopsis lyrata orthologue (MAMb) and colored the tree tips based on the accessions-dominant chemotype.
 
 The accessions were distributed across eight distinctive clades with each clade clustering accessions having either a C3 or C4 phenotype (Figure 5A and Figure 5—figure supplement 1 for bootstrap support). The clades C3/C4 status altered across the tree with three of the clades expressing C3 (MAM2) and five clades expressing the C4 (MAM1). The use of MAM3 clades as proxy for C3/C4 GLS chemotypes is supported by prior genomic sequencing of the GS-Elong region from 15 accessions (Figure 5B; Kroymann et al., 2003). To test for potential within locus recombination that may influence the overarching patterns, we compared the MAM3 tree to a tree obtained using MYB37, which is on the opposite end of the MAM locus from MAM3 (Figure 5—figure supplement 1F). We found that while the order of the clades in the MYB37 tree is different than their order in the MAM3 tree, the accessions’ classification to clades was similar among the two trees. This suggests that while there are potentially individual instances of within-locus recombination they are not influencing the overall genotype to chemotype linkage from MAM3, and MAM3 can be used as a reliable reflection of the structural variation in this locus.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-v2.jpg)
+
+**Figure 5.:** (A) MAM3 phylogeny of Arabidopsis thaliana accessions, rooted by Arabidopsis lyrata MAMb, which is not shown because of distance. Tree tips are colored based on the accession chemotype. (B) The genomic structure of the GS-Elong regions in the previously sequenced accessions is shown based on Kroymann et al., 2003. The structures in the box are based on sequences obtained in this work. The numbers left to the structures indicate the number of sequenced accessions in this work (left) or by Kroymann et al., 2003 (right). The numbers are colored based on their clades. Bright gray arrows represent MAM1 sequences, and dashed arrows represent MAM2 sequences. Dark gray arrows represent MAM3 sequences. The number to the right of the genomic cartoon represents the number of carbons in the side chain. (C) Collection sites of the accessions colored by their clade classification (from section A) and shaped based on the side chain length of the aliphatic short-chained glucosinolates (circles for C3, triangles for C4).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) MAM3 phylogeny of 637 Arabidopsis thaliana accessions, rooted by Arabidopsis lyrata MAMb, excluding accessions with low-quality sequences. (B–E) MAM3 phylogeny of different combinations of A. thaliana accessions that were randomly chosen, rooted by A. lyrata MAMb. Bootstrap values >60 are indicated. In these trees, clade 2 was divided to two sub-clades. Clade’s MAM classification: clade 1, MAM2; clade 2, MAM1; clade 3, MAM2; clade 4, MAM1; clade 5, MAM1; clade 6, MAM2; clade 7, MAM1; clade 8, MAM1. (F) MYB37 phylogeny of A. thaliana accessions, rooted by the A. lyrate’s homologue (Al_scaffold_0006_2171, on chromosome 6), which is not shown because of distance. Tree tips are colored based on MAM3 clade’s classification as indicated in Figure 5A.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The GS-Elong locus from different accessions was sequenced, and the MAM1 and MAM2 structures were analyzed. The table indicates the dominant chemotype of each accession, the MAM status of each accession, and the number of accessions with the same structure that were sequences in this work. (A) Clade 1. (B) Clade 2. (C) Clade 3. (D) Clade 4. (E) Clade 5. (F) Clade 6. (G) Clade 7. T-1: truncated MAM1 (contains ~66% of 3’ MAM1). *2/1: chimeric version that contain ~50% of 5’ MAM2 and ~50% 3’ MAM1. ** 2/1: chimeric version that contain ~20% of 5’ MAM2 and ~80% 3’ MAM1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Domain (A) and full sequence (B) amino acid phylogenies of the MAM/IPMS gene family. Sequences were taken from Abrahams et al., 2020, which uses Arabidopsis thalina Col-0 genome and the MAM2 amino acid sequence 1006452109 from the Arabidopsis Information Resource (TAIR) database. Both MAM1 and MAM2 fall within the MAMa domain clade. MAM1 and MAM2 are sister to each other in either tree, with the next closest MAM gene belonging to Arabidopsis lyrata. These results support a recent duplication event specific to Arabidopsis thaliana and subsequent divergence and specialization.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) All accessions from Iberia were plotted, colored and shaped based on the side chain length of the aliphatic short chained GSLs. Accessions with a majority of GSLs containing 3 carbons in their side chains are classified as MAM2 dominant, colored in blue and indicated as circles. Accessions with the majority of aliphatic short chained GSLs containing 4 carbons in their side chains are classified as MAM1 dominant, colored in red and indicated as triangles. (B) All accessions from Iberia were plotted, colored based on their MAM3 clade classification, and shaped based on the side chain length. (C) All accessions from Iberia except clades 6 and 7 were plotted, colored based on their MAM3 clade classification, and shaped based on the side chain length. (D) Clades 6 and 7 from Iberia were plotted, colored based on their MAM3 clade classification, and shaped based on the side chain length.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** The MAM phylogeny is split by the major clades/haplotypes and each sub-clade’s phylogeny is reflected on the map. Tree tips are colored based on the accessions chemotype.
 
 Six of the clades in the MAM3 tree include accession/s with a previously sequenced MAM locus (Figure 5B; Kroymann et al., 2003), while two clades (clades 6 and 7) did not include any accession with a previously determined structure. We obtained long-read-based sequencing of 11 additional accessions from the 1001 Genome project for the MAM locus that included accessions in all clades including clades 6 and 7 (Figure 5—figure supplement 2—source data 1 for sequences). This showed that clade 6 are accessions that have a haplotype that contains a previously described chimeric MAM gene that combines the 5′ of MAM2 with the 3′ of MAM1 (Figure 5B and Figure 5—figure supplement 2; Benderoth et al., 2006; Kroymann et al., 2003). In these accessions, the chimeric gene leads to predominantly C3 GSLs. Clade 7 has a haplotype that is highly similar to clade 2 with a single copy of MAM1 leading to C4 GSLs. Comparing transposable elements in the two clades shows that they are different configurations.
 
@@ -94,11 +207,65 @@ GS-AOP: Side chain modification of the core MSO GSL is determined by the GS-AOP 
 
 The phylogenetic trees shared a very similar topology, yielding a clear separation between alkenyl (AOP2 expressed) and hydroxyalkyl (AOP3 expressed) accessions. Alkenyl expressing accessions like Cvi-0 with an expressed copy of the AOP2 enzyme formed a single continuous cluster (Figure 6A and Figure 6—figure supplement 1). In contrast, hydroxyalkyl (AOP3 expressed) accessions clustered into two separate groups with one group of 3OHP-dominant accessions partitioning from the rest of the accessions at the most basal split in the tree (Figure 6—figure supplement 1A, AOP2 tree). This haplotype is marked by having an inversion swapping the AOP2 and AOP3 promoters as shown in bacterial artificial chromosome sequencing of the Ler-0 accession (Figure 6D; Chan et al., 2010). The AOP3 tree also identified a second group of 3OHP-dominant accessions located among the alkenyl accessions. Analyzing the sequences of these accessions reveals that this small group of 3OHP accessions has a complete deletion of AOP2 and contains only AOP3 (Figure 6E). Thus, there are at least two independent transitions from alkenyl to hydroxyalkyl GSLs within Arabidopsis, neither of which are related to the alkenyl to hydroxyalkyl conversion within A. lyrata. This indicates that there are multiple alkenyl to hydroxyalkyl GSL conversions both within and between Arabidopsis species.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig6-v2.jpg)
+
+**Figure 6.:** The genomic structure and causality of the major AOP2/AOP3 haplotypes are illustrated. Pink arrows show the AOP2 gene while yellow arrows represent AOP3. The black arrows represent the direction of transcription from the AOP2 promoter as defined in the Col-0 reference genome. Its position does not change in any of the regions. A-F represent the different structures. The black lines in C and F represent theoretical positions of independent variants creating premature stop codons. The GSL chemotype for each haplotype is listed to the right with the number of the accessions in brackets. The maps show the geographic distribution of the accessions from each structure.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67784/elife-67784-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Separate phylogenies of AOP2 (A) and AOP3 (B) across Arabidopsis thaliana accessions. The trees are rooted by the matching gene in Arabidopsis lyrata, which is not shown because of distance. Tree tips are colored based on accessions’ chemotype. The first column of each heatmap represents the dominant chemotype’s identity. The second column of each heatmap represents the AOP functionality: pink for alkenyl (AOP2 dominant), orange for hydroxy (AOP3 dominant) and green for MSO (null). The third column represents the accessions’ geographic location: dark green for the north and dark pink for the south. The named accessions represent the haplotypes described in Figure 6.
+
 The null accessions (MSO-dominant chemotypes) were identifiable in all the major clades on the tree (Figure 6—figure supplement 1, middle column of heatmap), suggesting that there are independent LOF mutations that abolish either AOP2 or AOP3. Deeper examination of the sequences of these accessions identified three convergent LOF alleles leading to the MSO chemotype. Most of the null accessions harbor a 5 bps deletion in their AOP2 sequence, which causes a frameshift mutation. This mutation arose within the alkenyl haplotype and was first reported in the Col-0 reference genome (Figure 6B; Kliebenstein et al., 2001c). In addition, there are additional independent LOF events arising in both the alkenyl haplotype (e.g., Sp-0, Figure 6C) and within the Ler-0 inversion haplotype (e.g., Fr-2, Figure 6F). Thus, GS-AOP has repeated LOF alleles arising within several of the major AOP haplotypes, suggesting convergent evolution of the MSO chemotype out of both the alkenyl and hydroxyalkyl chemotypes.
 
 Using the combined chemotype/genotype assignments at GS-AOP, we investigated the distribution of the alleles across Europe. The alkenyl haplotype is spread across the entire continent. In contrast, the hydroxyalkyl haplotypes are geographically more restricted. The Ler-like 3OHP haplotype is present in only Central and North Europe (Figure 6D), while the other 3OHP haplotype, possessing only AOP3, is limited to Azerbaijan, along the Caspian Sea (Figure 6E). In contrast to the distinct hydroxyalkyl locations, the distribution of the independent LOF null haplotypes overlaps with all of them being located within Central and North Europe (Figure 6B, C and F). The fact that these independently derived LOF alleles are all contiguous suggests that they may be beneficial or neutral in Central Europe.
 
 GS-OH: The final major determinant of natural variation in Arabidopsis GSL chemotype is the GS-OH enzyme that adds a hydroxyl group to the carbon 2 on 3-butentyl GSL to create 2-OH-3-Butenyl GSL. Previous work had suggested two GS-OH alleles measurable in the seed, a functional allele in almost all accessions and a non-functional allele caused by active site mutations represented by the Cvi-0 accession (Hansen et al., 2008). Because of functional epistasis, we can only obtain functional phenotypic information from accessions that accumulate the GS-OH substrate, 3-Butenyl GLS. This identified 11 accessions with a non-functional GS-OH. Surveying these 11 accessions in the polymorph database (The 1001 Genomes Consortium, 2016) identified multiple independent LOF events. One of these 11 accessions has the Cvi active site mutations, two accessions have a shared nonsense SNP that introduces premature stop codons and two accessions have a complete loss of this gene (Table 2). The other six accessions with a loss of enzyme activity had an unidentified lesion due to sequence quality for this locus.
+
+**Table 2.**
+ GSOH structure.The structures of GS-OH in the 3-Butenyl accessions are illustrated. Gray boxes represent exons, and blue lines represent introns. Black line represents a mutation, and gray lines represent unknown lesions in hypothetical locations. The above mutations create non-functional GS-OH alleles. The fractions of the mutated accessions were calculated out of the total number of 3-Butenyl and OH-3-Butenyl accessions. The observed frequencies were calculated as the ratio between number of accessions with the specific mutation in non-C4 Alkenyl accessions and all the non-C4 Alkenyl accessions, as mentioned in the parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Accession</th>
+      <th>Type of mutation</th>
+      <th>Allele structure</th>
+      <th>Fraction (out of C4 Alkenyl accessions)</th>
+      <th>Observed frequency (out of non-C4 Alkenyl accessions)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sorbo, Pien</td>
+      <td>Polymorphism at SNP10831302</td>
+      <td></td>
+      <td>0.009 (2/226)</td>
+      <td>0.067 (38/564)</td>
+    </tr>
+    <tr>
+      <td>Cvi-0</td>
+      <td>Active site mutation</td>
+      <td></td>
+      <td>0.004 (1/226)</td>
+      <td>0.025 (14/564)</td>
+    </tr>
+    <tr>
+      <td>IP-Mot-0, IP-Tri-0</td>
+      <td>Gene deletion</td>
+      <td></td>
+      <td>0.009 (2/226)</td>
+      <td>0.055 (31/564)</td>
+    </tr>
+    <tr>
+      <td>Multiple accessions (T670, FlyA-3, Ting-1, T880, T710, T850)</td>
+      <td>Unidentified mutations</td>
+      <td></td>
+      <td>0.026 (6/226)</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
 
 All these independent GS-OH LOF alleles are found in accessions that do not accumulate 3-Butenyl GSL, for example, three carbon or non-alkenyl accessions, suggesting that functional epistasis may be influencing the maintenance of these alleles in nature. Thus, we searched for the accessions that do not accumulate 3-Butenyl GLS and carry GS-OH LOF events (Table 2). In all cases, the LOF allele is more frequent in the non four carbon-alkenyl accessions than expected by random chance. This suggests that there is selection against 3-Butenyl GSL synthesis since LOF alleles are more frequent when the GS-OH gene is cryptic by functional epistasis. This agrees with the fact that the 3-Butenyl chemotype is the most sensitive to generalist lepidopteran herbivory (Hansen et al., 2008). Thus, these mutations may represent ongoing pseudogenization of the GS-OH gene when it is functionally hidden by epistasis at the GS-AOP and GS-Elong loci. These LOF events would then only be displayed upon rare admixture with 2-OH-3-Butenyl accessions.
 
@@ -122,27 +289,43 @@ In this work, we combined different approaches to uncover some of the parameters
 
 ## Materials and methods
 
-## Plant material
+### Plant material
 
 Seeds for 1135 Arabidopsis (A. thaliana) genotypes were obtained from the 1001 genomes catalog of A. thaliana genetic variation (https://1001genomes.org/). All Arabidopsis genotypes were grown at 22°C/24°C (day/night) under long-day conditions (16 hr of light/8 hr of dark). Two independent replicates were performed, each of them included the full set of genotypes. The replicates obtained from independent maternal plants were grown in randomized fashion. In the analyses, only accessions from Europe and around Europe were included (Figure 3A), resulting in an analysis of 797 accessions. A list of the accessions can be found in Supplementary file 1.
 
-## GSL extractions and analyses
+### GSL extractions and analyses
 
 GSLs were measured as previously described (Kliebenstein et al., 2001a; Kliebenstein et al., 2001b; Kliebenstein et al., 2001c). Briefly, ~3 mg of seeds were harvested in 200 μL of 90% methanol. Samples were homogenized for 3 min in a paint shaker, centrifuged, and the supernatants were transferred to a 96-well filter plate with DEAE sephadex. The filter plate with DEAE sephadex was washed with water, 90% methanol and water again. The sephadex-bound GSLs were eluted after an overnight incubation with 110 μL of sulfatase. Individual desulfo-GSLs within each sample were separated and detected by HPLC-DAD, identified, quantified by comparison to standard curves from purified compounds and further normalized to the weight. A list of GSLs and their structure is given in Supplementary file 1A. Raw GSLs data are given in Supplementary file 1B.
 
-## Statistics, heritability and data visualization
+### Statistics, heritability and data visualization
 
 Statistical analyses were conducted using R software (https://www.R-project.org/) with the RStudio interface (http://www.rstudio.com/). For each independent GLS, a linear model followed by ANOVA was utilized to analyze the effect of accession, replicate and location in the experiment plate upon the measured GLS amount. Broad-sense heritability (Supplementary file 1C) for the different metabolites was estimated from this model by taking the variance due to accession and dividing it by the total variance. Estimated marginal means (emmeans) for each accession were calculated for each metabolite from the same model using the package emmeans (CRAN, 2021a; Supplementary file 1D). PCAs were done with FactoMineR and factoextra packages (Abdi and Williams, 2010). Data analyses and visualization were done using R software with tidyverse (Wickham et al., 2019) and ggplot2 (Kahle and Wickham, 2013) packages.
 
 Maps were generated using ggmap package (Kahle and Wickham, 2013).
 
-## Phenotypic classification based on GSL content
+### Phenotypic classification based on GSL content
 
 For each accession, the expressed enzyme in each of the following families was determined based on the content (presence and amounts) of short-chained aliphatic GSLs.
 
 MAM enzymes: The total amount of three carbon GSLs and four carbon GSLs was calculated for each accession. Three carbon GSLs include 3MT, 3MSO, 3OHP and Allyl GSL. Four carbon GSLs include 4MT, 4MSO, 4OHB, 3-Butenyl and 2-OH-3-Butenyl GSL (for structures and details, see Supplementary file 1). Accessions that the majority of aliphatic short-chained GSL contained three carbons in their side chains were classified as MAM2 expressed (Figure 4—figure supplement 1). Accessions that the majority of aliphatic short-chained GSL contained four carbons in their side chains were classified as MAM1 expressed (Figure 4—figure supplement 1). The accessions were plotted on a map based on their original collection sites (Figure 4—figure supplement 1).
 
-AOP enzymes: The relative amount of alkenyl GSL, alkyl GSL and MSO GSL was calculated in respect to the total short-chained aliphatic GSL as follows:AlkenylGSL(AOP2expressed)=Allyl +2−OH−3−butenyl + 3−butenylTotal short chained GSLAlkylGSL(AOP3expressed)=3OHP + 4OHBTotal short chained GSLMSOGSL(AOPnull)=3MSO + 4MSOTotal short chained GSL
+AOP enzymes: The relative amount of alkenyl GSL, alkyl GSL and MSO GSL was calculated in respect to the total short-chained aliphatic GSL as follows:
+
+$$
+AlkenylGSL(AOP2expressed)=\frac{Allyl +2−OH−3−butenyl + 3−butenyl}{Total short chained GSL}
+$$
+
+
+
+$$
+AlkylGSL(AOP3expressed)=\frac{3OHP + 4OHB}{Total short chained GSL}
+$$
+
+
+
+$$
+MSOGSL(AOPnull)=\frac{3MSO + 4MSO}{Total short chained GSL}
+$$
 
 The expressed AOP enzyme was determined based on those ratios: Accessions with majority alkenyl GSL were classified as AOP2 expressed. Accessions with majority of alkyl GSL were classified as AOP3 expressed. Accessions with majority of MSO GSL were classified as AOP null. The accessions were plotted on a map based on their original collection sites (Figure 4—figure supplement 2).
 
@@ -150,11 +333,11 @@ GS-OH enzyme: The ratio between 2-OH-3-Butenyl GSL to 3-Butenyl GSL was calculat
 
 Each accession was classified to one of seven aliphatic short-chained GSLs based on the combination of the dominancy of the enzymes as follows: MAM2, AOP null: classified as 3MSO dominant. MAM1, AOP null: classified as 4MSO dominant. MAM2, AOP3: classified as 3OHP dominant. MAM1, AOP3: classified as 4OHB dominant. MAM2, AOP2: classified as Allyl dominant. MAM1, AOP2, GS-OH non-functional: classified as 3-Butenyl dominant. MAM1, AOP2, GS-OH functional: classified as 2-OH-3-Butenyl dominant. The accessions were plotted on a map based on their original collection sites and colored based on their dominant chemotype (Figure 4).
 
-## Environmental and demographic data
+### Environmental and demographic data
 
 Environmental and demographic data (referred to as ‘genomic group’) were obtained from the 1001 genomes website (https://1001genomes.org/, for geographical and demographic data) and from the Arabidopsis CLIMtools (http://www.personal.psu.edu/sma3/CLIMtools.html, Ferrero-Serrano and Assmann, 2019) for environmental data. We chose the five variables that captured a majority of the variance in this dataset based on PCA using different combinations of variables. The chosen variables are maximal temperature of warmest month (WC2_BIO5), minimal temperature of coldest month (WC2_BIO6), precipitation of wettest month (WC2_BIO13), precipitation of driest month (WC2_BIO14) and distance to the coast (in km). Each one of the above variables (including genomic group) was assigned to each one of the accessions.
 
-## Environmental models
+### Environmental models
 
 Linear models to test the effect of geographical and environmental parameters (Figure 3—figure supplement 1 and Figure 4—source data 1) were conducted using dplyr package (CRAN, 2021b) and included the following parameters:
 
@@ -164,11 +347,11 @@ Table 1 and Figure 4—source data 1 for all the data: C length (C3 and C4) or t
 
 For the north and the south: C length (C3 and C4) or the chemotypes (Allyl and 2-OH-3Butenyl) ~ Genomic group + Geography (north versus south)+ Max temperature of warmest month + Min temperature of coldest month + Precipitation of wettest month + Precipitation of driest month + Distance to the coast.
 
-## Genome-wide association studies
+### Genome-wide association studies
 
 The phenotypes for GWA studies were each accession value for PC1 and 2. GWA was implemented with the easyGWAS tool (Grimm et al., 2017) using the EMMAX algorithms (Kang et al., 2010) and a minor allele frequency (MAF) cutoff of 5%. The results were visualized as Manhattan plots using the qqman package in R (Turner, 2014).
 
-## Phylogeny
+### Phylogeny
 
 Genomic sequences from the accessions for MAM3 – AT5G23020, AOP2 – Chr4, 1351568 until 1354216, AOP3 – AT4G03050.2, GS-OH – AT2G25450 and MYB37 – AT5G23000 were obtained using the Pseudogenomes tool (https://tools.1001genomes.org/pseudogenomes/#select_strains).
 
@@ -178,6 +361,6 @@ Bootstrap analyses (Bootstrap = 100) was done with ‘ape’ package in R (Parad
 
 Amino acid phylogenies: Sequences were taken from Abrahams et al., 2020, which uses A. thaliana Col-0 genome and the MAM2 amino acid sequence 1006452109 from the Arabidopsis Information Resource (TAIR) database. Alignments were run using MAFFT (Katoh et al., 2017; Kuraku et al., 2013) and cleaned using Phyutility at a 50% occupancy threshold (Smith and Dunn, 2008). RAxML was used for phylogenetic inference (Stamatakis, 2014) with the PROTCATWAG model (Bootstrap = 1000).
 
-## Sequencing
+### Sequencing
 
 PacBio long read-based de novo genome assemblies of the relevant accession were generated as part of the 1001 Genomes Plus project. The genomes were assembled with Canu (v1.71) (Koren et al., 2017) and polished using the long reads followed by a second polishing step with PCR-free short reads.

@@ -32,13 +32,29 @@ Using a cDNA library expression-based genetic screen combined with phenotypic an
 
 ## Results
 
-## AGS neural cells exhibit marked resistance to metabolic stressors associated with improvements in mitochondrial function and morphology
+### AGS neural cells exhibit marked resistance to metabolic stressors associated with improvements in mitochondrial function and morphology
 
 When growing under identical cell culture conditions, AGS and mouse NPCs exhibit similar morphology, growth rates and expression of Nestin and Ki67, markers for proliferating NPCs (Figure 1A–B and Figure 1—figure supplement 1A-E). Although superficially indistinguishable, mouse and AGS NPCs demonstrate markedly different responses to metabolic stressors. When exposed to hypoxia (1% O2), hypothermia (31°C), or rotenone (30 µM), AGS NPCs exhibit profound resistance to cell death compared with mouse NPCs (Figure 1C), recapitulating resilient AGS phenotypes found in previous studies (Dave et al., 2009; Bhowmick et al., 2017; Bogren et al., 2014; Drew et al., 2016). Moreover, measurement of in vitro oxygen consumption of AGS NPCs after sequential exposure to mitochondrial toxins demonstrates strikingly higher ‘spare respiratory capacity’ in response to FCCP (Figure 1D and Figure 1—figure supplement 1F, G), indicating a greater metabolic reserve for stressors (Nicholls and Budd, 2000). Mitochondrial citrate synthase and oxidative phosphorylation (OXPHOS) enzymatic activities were similar between the two species, with the exception of complex IV (Figure 1—figure supplement 1H). Interestingly, functional improvements in mitochondrial function were also mirrored by changes in mitochondrial dynamic organization following exposure to FCCP at doses that lead to mitochondrial depolarization (Figure 1E). At baseline, mouse and AGS cells had similar mitochondrial organization as evidenced by similar mean branch length and number of cells with fragmented mitochondria (Figure 1F). Following FCCP treatment, mouse cells demonstrated marked increases in mitochondrial fission with concurrent decreases in mean branch length. By contrast, AGS cells appeared largely resistant to mitochondrial fission induced by FCCP (Figure 1G). Together, these results demonstrate intrinsic differential cell survival and mitochondrial responses to metabolic stresses between mouse and AGS NPCs.
 
-## A cDNA library expression screen identifies AGS ATP5G1 as a cytoprotective factor
+![Figure 1.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal image of mouse (top) and AGS (bottom) NPCs demonstrating similar morphology and expression of Nestin (red) and Ki-67 (teal) in nearly all cultured cells of both species. (B) Mouse and AGS NPCs have similar proliferation rates expressed as mean ± SEM of 3 independent experiments where 50,000 NPCs were seeded in a 24-well cell culture plate in triplicate and counted by automated cytometer on two subsequent days (C) AGS NPCs exhibit increased cell survival when exposed to hypoxia (1%, 24 hr), hypothermia (31°C, 24 hr), or rotenone (10 μM, 16 hr). Bar graphs represent the mean ± SEM of 3 independent experiments with three replicates/condition. (D) Seahorse XF analyzer assay of cultured mouse and AGS NPCs sequentially exposed to (i) oligomycin (1 μM), (ii) FCCP (2 μM), and (iii) rotenone/antimycin (0.5 μM) showing enhanced FCCP-stimulated oxygen consumption (spare respiratory capacity). Data represents the mean ± SEM of three independent experiments with 4–6 replicates/species. (E) Relative fluorescence ± SEM of three independent experiments in triplicate each of cultured mouse and AGS NPCs loaded with TMRE (50 nM) exposed to vehicle or FCCP (1 μM) (F) Representative confocal images of mouse (left) and AGS (right) NPCs expressing the mitochondrial marker mCherry-mito7 to demonstrate mitochondrial morphology at baseline (H) and one hour following treatment with 1 μM FCCP. Scale bar represents 10 μm. (G, I) Percent of mitochondria with fragmented morphology (left panel) and the mean branch length (right panel) of mitochondrial networks of NPCs expressing mCherry-mito7. Data obtained from 30 cells/species/condition. *p<0.05; ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Representative live brightfield microscopy image of mouse and AGS NPCs. (C–D) Representative fluorescent microscopy images of fixed mouse and AGS NPCs immunolabeled with Nestin (green) and Ki-67 (red). (E) Quantitative assessment of mouse and AGS NPCs demonstrates that nearly all cells express both Nestin and Ki-67. Cell counts ± SEM from 25 microscopic fields/cell line. Seahorse XF analyzer FCCP dose response assay of cultured mouse (F) and AGS (G) NPCs sequentially exposed to (i) oligomycin (1 μM), (ii) increasing doses of FCCP (0.5–4 μM), and (iii) rotenone/antimycin (0.5 μM) showing enhanced FCCP-stimulated oxygen consumption with optimal dosage without toxicity or heterogeneous response of 2 μM for both mouse and AGS NPCs. Data represents the mean ± SEM of 1 experiment with 3–5 replicates/dose. *p<0.05 for 2 μM vs 0.5 μM FCCP dose. (H) Enzymatic activity of Complex I, II, IV, V, and citrate synthase (CS) in mouse and AGS NPCs measured from mitochondrial extracts of NPCs and normalized to protein content. Data are the mean ± SEM of three independent experiments expressed as a fraction of mouse enzymatic activity. **p<0.01 vs mouse.
+
+### A cDNA library expression screen identifies AGS ATP5G1 as a cytoprotective factor
 
 To identify cytoprotective genes expressed in AGS, we constructed a normalized cDNA expression library from AGS NPCs and introduced the library to mouse NPCs by nucleofection (Bertram et al., 2012; Figure 2—figure supplement 1A-B). Screening of inserts revealed the average library insert size was 2.4 kB. To minimize false negatives due to incorrect splice isoforms, we performed screens in triplicate and maintained representation at 1000 cells/open reading frame. Two days after AGS cDNA library nucleofection, we exposed cells to hypothermia (31°C) for 3 days, hypoxia (1%) for 2 days, or complex I inhibition (rotenone) for 3 days, respectively (Figure 2A). We then isolated plasmids from surviving cells, amplified cDNA insert sequences by PCR and used next-generation sequencing to identify a total of 378 putative cytoprotective genes, three of which (Ags Atp5g1, Ags Manf, and Ags Calm1) provided cytoprotection in all three examined metabolic stress conditions (see Figure 2B and Supplementary file 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig2-v2.jpg)
+
+**Figure 2.:** (A) AGS NPC cDNA was introduced into mouse NPCs by nucleofection. Cells were screened for survival after exposure to hypoxia (1%, 48 hr), hypothermia (31°C, 72 hr), or rotenone (20 μM, 48 hr) to identify AGS cytoprotective factors. (B) Venn-diagram demonstrating the number of cytoprotective proteins identified by next-generation sequencing of plasmids isolated from cells surviving each condition of the cDNA library screen. (C) Truncated sequence alignments demonstrating key GS AA substitutions (blue highlight) for ATP5G1, one of the three proteins imparting survival in all three screens. (D) Ground squirrel-unique amino acid substitutions are plotted as a function of BLOSUM62 score and Jensen-Shannon Divergence (JSD) score. Ground squirrel-unique AA substitutions with the highest probability of functional consequence are in the denoted red quadrant (top 1% scoring of high JSD values and low BLOSUM62 scores). The red dot represents the ATP5G1L32P substitution; orange dots represent two other ATP5G1 substitutions. (E–G) Mouse NPCs expressing human ATP5G1, AGS ATP5G1, AGS ATP5G1L32P, human ATP5G1 P32L, or empty vector (EV) and exposed to 24 hr of 1% O2 (E), 31°C (F), or 20 μM rotenone (G). Cell death was determined by flow cytometry for propidium iodide and experiments are mean ± SEM of three independent experiments with three replicates/genotype/condition, *p<0.05 or **p<0.01 vs EV; δ <0.05 vs human ATP5G1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Agarose gel image of 11 randomly chosen AGS cDNA library clones prior to amplification demonstrating an average insert size of 2.4 kB. (B) Agarose gel image of amplified and normalized AGS cDNA library. (C) ATP5G1 sequence alignment in human, mouse, AGS, and rat demonstrating variability in the mitochondrial targeting sequence (alignment visualized using PRALINE, http://www.ibi.vu.nl/programs/pralinewww/). The * indicates putative mitochondrial processing peptide (MPP) and mitochondrial intermediate peptide (MIP) cleavage sites. (D) qRT-PCR for ATP5G1, ATP5G2, and ATP5G3 demonstrating increased relative abundance of ATP5G1 in AGS NPCs. Data ± SEM from four independent experiments performed in triplicate. *p<0.05***p<0.001. (E) Mouse and AGS mitochondrial extract Complex V enzymatic activity treated with vehicle or oligomycin (1 μM) normalized to protein content. Data are the mean ± SEM of 3 independent experiments expressed as a fraction of mouse enzymatic activity. (F) Representative SDS-PAGE western blots for citrate synthase (CS) and ATP5G of mouse and AGS mitochondrial extracts demonstrate similar ATP5G expression levels.
 
 Since a portion of mouse NPCs survived metabolic stresses even without AGS cDNA library expression or as a result of protective secreted factors, we anticipated false positive hits without cell autonomous cytoprotective effects. Thus, in this study, we focused on characterizing the nuclear-encoded mitochondrial protein AGS ATP5G1 that conferred cytoprotective effects independently confirmed under all three metabolic stress conditions (Figure 2B,E–G). ATP5G1 is one of three ATP5G isoforms making up the C-subunit of mitochondrial ATP synthases, and is regulated distinctly from ATP5G2 or ATP5G3 (Gay and Walker, 1985; De Grassi et al., 2006; Wigington et al., 2016). As most identified genes do not appear to be differentially expressed between mouse and AGS NPCs (Ou et al., 2018), we hypothesized that resistance to metabolic stress may be related to uniquely evolved AGS proteins. Based on multiple sequence alignment of the ATP5G1 protein family in mammals, we observed three AGS-unique amino acid substitutions and two small insertions/deletions at the N-terminal region of AGS ATP5G1, whereas the C-terminal membrane-spanning segment is largely invariant (Figure 2C and Figure 2—figure supplement 1C).
 
@@ -48,9 +64,33 @@ The N-terminal region of ATP5G proteins can undergo cleavage, but also modulate 
 
 Overexpression of the AGS variant of ATP5G1 in mouse NPCs confers cytoprotection in cells exposed to hypoxia, hypothermia, or rotenone (Figure 2E–G). We found that this protective response is not present in NPCs overexpressing ATP5G1L32P. Conversely, overexpression of the human ATP5G1P32L, which mimics the wild-type AGS ATP5G1 variant, leads to enhanced cytoprotection in these conditions of metabolic stress compared to that of human ATP5G1. The ATP5G1 substitutions did not alter the mitochondrial localization of ATP5G1 when expressed in either mouse or AGS NPCs (Figure 3—figure supplements 1,2). In addition, overexpression of the AGS variant of ATP5G1 recapitulated key features of the AGS resilient mitochondrial phenotype, including increasing spare respiratory capacity and reducing mitochondrial fission with reduced fragmentation and increased branch length of mitochondria in response to FCCP (Figure 3, Figure 3—figure supplement 3A). Interestingly, NPCs expressing the AGS ATP5G1L32P variant demonstrated reduced spare respiratory capacity and increased mitochondrial fragmentation compared to the AGS ATP5G1 over-expressing NPCs. Overexpression of human ATP5G1P32L improved survival to metabolic stressors and reduced mitochondrial fragmentation, but compared to AGS ATP5G1L32P spare respiratory capacity was not significantly improved. This may indicate that improving spare respiratory capacity itself is not the sole mechanism conferring resilience to metabolic stressors. Of note, expression of AGS ATP5G1 with two other identified AGS-unique amino acid substitutions (N34D, T39P) did not affect survival of mouse NPCs exposed to hypoxia, hypothermia, or rotenone (Figure 3—figure supplement 3B–D). Together, these results reveal cytoprotective effects of AGS Atp5g1 when ectopically expressed in metabolic stress-susceptible mouse NPCs, and identify functional importance of the leucine-32 residue of AGS ATP5G1 uniquely evolved in AGS.
 
-## Knock-in of AGS ATP5G1L32P alters the resilient phenotype of AGS cells
+![Figure 3.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig3-v2.jpg)
+
+**Figure 3.:** (A) Seahorse XF analyzer assay of cultured mouse NPCs expressing human ATP5G1, AGS ATP5G1, AGS ATP5G1L32P, human ATP5G1P32L, or empty vector and sequentially exposed to (i) oligomycin (1 μM), (ii) FCCP (2 μM), and (iii) rotenone/antimycin (0.5 μM) showing increased FCCP-stimulated oxygen consumption (spare respiratory capacity) with AGS ATP5G1. Substitution of the AGS leucine-32 results in reduced spare respiratory capacity. Data represents the mean + SEM of three independent experiments with 4–6 replicates/species. (B) Relative fluorescence ± SEM of three independent experiments in triplicate each of cultured mouse NPCs stably expressing the indicated ATP5G1 construct, loaded with TMRE (50 nM), and exposed to vehicle or FCCP (1 μM) (C) Percent ± SEM fragmented mitochondria and representative confocal images (D-G) of mitochondrial networks in mouse NPCs expressing human, AGS, and mutant forms of mCherry-ATP5G1 one hour following treatment with vehicle (top panel) or 1 μM FCCP (bottom panel). Data obtained from 30 cells/condition. *p<0.05; ***p<0.001 vs. human ATP5G1; δ <0.05 vs AGS ATP5G1. Scale bars represent 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean branch length of mitochondrial networks of mouse NPCs expressing mCherry-ATP5G1 variants from Figure 3D–G. Bar graph represents mean ± SEM from automated processing of 30 cells/cell line. (B–D) Mouse NPCs expressing mutant AGS ATP5G1 isoforms (ATP5G1D34N, ATP5G1T39P) or empty vector (EV) and exposed to 24 hr of 1% O2 (B), 31°C (C), or 20 mM rotenone (D). Bar graphs represent mean ± SEM from three independent experiments with three replicates/cell line/condition, *p<0.05 vs EV; **p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A-D) Confocal imaging of mouse NPCs transiently expressing mEmerald-mito7 and the indicated mCherry-ATP5G1 constructs demonstrate appropriate mitochondrial localization of the human, AGS, and substituted isoforms of ATP5G1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A-D) Confocal imaging of AGS NPCs transiently expressing mEmerald-mito7 and the indicated mCherry-ATP5G1 constructs demonstrate appropriate mitochondrial localization of the human, AGS, and substituted isoforms of ATP5G1.
+
+### Knock-in of AGS ATP5G1L32P alters the resilient phenotype of AGS cells
 
 Species-specific substitutions of amino acid residues at sites deeply conserved in mammals indicate either relaxed selective constrains at the sites during evolution or potentially adaptive significance functionally specific for that species. As ectopic expression may not fully reflect endogenous functions, precise manipulation of endogenous genetic loci is required to determine definitive causal contribution of ATP5G1L32 to the metabolic resilience of AGS. Using the recently reported adenine DNA base editor (ABEmax; 22), we successfully generated AGS cell lines homozygous for ATP5G1L32P by introducing a cytosine-to-thymine substitution in the (-) strand of Ags Atp5g1 (Figure 4A,B). We isolated three clonal AGS NPC lines harboring the desired knock-in mutation (ABE KI) and two clonal lines that underwent editing and remained homozygous for the wild-type allele (ABE WT). Compared to ABEmax-treated AGS cells without successful knock-in (Figure 4—figure supplement 1A), ABE KI cell lines did not demonstrate differences in Atp5g1 mRNA expression, protein abundance, or complex V activity (Figure 4—figure supplement 1B-C, Figure 4I). However, knock-in of the L32P residue resulted in markedly reduced survival of AGS NPCs following exposure to hypoxia, hypothermia, or rotenone (Figure 4C). In addition, we found the ABE KI AGS NPCs exhibited marked reduction in ‘spare respiratory capacity’ and altered mitochondrial dynamics in response to FCCP treatment (Figure 4D–H and Figure 4—figure supplement 1C). Although overall ATP5G protein abundance is unchanged (Figure 4—figure supplement 1D-E), we used clear-native gel electrophoresis (Kovalčíková et al., 2019; Wittig and Schägger, 2009) and identified a reduced presence of ATP synthase dimers relative to the total amount of ATP synthase in ABE KI cells (Figure 4J–K). Further biochemical experiments are necessary to delineate the specific mechanisms of how the AGS leucine-32 substitution affects the assembly or stability of ATP synthase complex proteins. Nonetheless, genetic evidence in our study based on ectopic expression and specific CRISPR base editing of endogenous loci demonstrates causal roles of the AGS leucine-32 substitution in cytoprotection. Collectively, these results identify a naturally occurring cytoprotective AGS variant that contributes to cytoprotection against various metabolic stresses likely by modulating mitochondrial function.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig4-v2.jpg)
+
+**Figure 4.:** (A) AGS ATP5G1 CRISPR base editing strategy. To create AGS cells with the human amino acid substitution at leucine-32, AGS cells transiently expressing ABEmax were nucleofected with an sgRNA (blue underline) directed toward a PAM site (green underline) on the (-) strand to target conversion of adenine to guanine, which on the (+) strand is a cytosine-to-thymine (*). (B) Sequencing data from a successfully edited clonal AGS cell line demonstrating the cytosine-to- thymine base edit resulting in the desired leucine to proline knock-in cell line. (C) AGS ATP5G1L32P (ABE KI) NPCs exhibit decreased cell survival compared to unedited AGS cells (ABE WT) when exposed to hypoxia (1%, 24 hr), hypothermia (31°C, 72 hr), or rotenone (10 μM, 16 hr). Bar graphs represent the mean ± SEM of three independent experiments with three replicates/condition. (D) Seahorse XF analyzer assay of cultured ABE KI and WT cells sequentially exposed to (i) oligomycin (1 μM), (ii) FCCP (2 μM), and (iii) rotenone/antimycin (0.5 μM) showing enhanced FCCP-stimulated oxygen consumption (spare respiratory capacity). Data represents the mean ± SEM of 3 independent experiments with 4–6 replicates/species. (E and F) Representative confocal images of ABE WT (E) and ABE KI (F) NPCs expressing the mitochondrial marker mCherry-mito7 to demonstrate mitochondrial morphology one hour following treatment with FCCP. Scale bar represents 5 μm. (G) Percent of mitochondria ± SEM with fragmented morphology, data obtained from 50 to 60 cells/genotype. (H) Relative fluorescence ± SEM of 3 independent experiments in triplicate each of cultured ABE AGS NPCs loaded with TMRE (50 nM) and exposed to vehicle or FCCP (1 μM). (I) Complex V enzymatic activity normalized to protein content of ABE WT and KI mitochondrial extracts normalized to protein content and treated with vehicle or oligomycin (1 μM). Data are the mean ± SEM of 3 independent experiments expressed as a fraction of ABE WT enzymatic activity. (J) Representative immunoblots for ATP5G (left), ATP5A (right), or citrate synthase (CS, left, input control) of clear-native gel electrophoresis of mitochondrial extracts from ABE WT and ABE demonstrate ATP synthase dimers (D) and monomers (M). (K) Quantification of ATP5G demonstrates a reduction in ATP synthase dimers relative to total ATP synthase protein (D:(D+M) ratio) in ABE KI. Data are mean ± SEM of 3 independent blots. *p<0.05; **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55578/elife-55578-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequencing data from an unsuccessfully edited clonal AGS cell line demonstrating the preservation of the wild-type sequence (* indicates wild-type thymidine). (B) qRT-PCR for ATP5G1, ATP5G2, and ATP5G3 demonstrating the same relative abundance of ATP5G1 in ABE WT and ABE KI NPCs. Data are means ± SEM from three independent experiments performed in triplicate. (C) Mean branch length of mitochondrial networks of ABE AGS NPCs expressing mCherry-mito7. Data obtained from 30 cells/genotype. (D) Representative western blot images and (E) quantification demonstrating the relative abundance of ATP5G and ATP5A proteins are similar in ABE WT and ABE KI cells. Quantification of western blots from four independent experiments with 2–3 replicates each. **p<0.01.
 
 ## Discussion
 
@@ -68,50 +108,133 @@ Further unraveling of the mechanisms underlying AGS mitochondrial and cellular r
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 AGS NPCs (Neuronascent, Gaithersburg, MD, USA) and mouse NPCs (gift of Song lab, Baltimore, MD) have been previously described (Drew et al., 2016; Ma et al., 2009). They were grown under standard conditions at 37°C and 5% CO2 with NeuroCult basal media (STEMCELL, Vancouver, BC, CA) with EGF (50 ng/ml, PeproTech, Inc, Rocky Hill, NJ, USA), FGF (100 ng/ml, PeproTech, Inc), heparin (0.002%), and proliferation supplements (STEMCELL). Early passage cultures (P2) were expanded and frozen and thawed in batches for use in experiments. These cultures contain cells ubiquitously expressing the NPC marker, Nestin, and the proliferation marker, Ki-67 (Figure 1—figure supplement 1). For in vitro modeling of metabolic stress, cells were exposed to either: (i) 1% hypoxia in a specialized incubator (Nuaire, Plymouth, MN, USA) saturated with Nitrogen/5% CO2; (ii) hypothermia in standard incubators maintained at lower temperatures; and (iii) complex I inhibition with the addition of rotenone to cell media. For cell proliferation determination, wells were seeded in triplicate with 50,000 cells. On subsequent consecutive days, cells were detached with Accutase (STEMCELL) and counted by automated cytometry (Nanoentek, Waltham, MA, USA).
 
-## DNA constructs and lentiviral transfection
+### DNA constructs and lentiviral transfection
 
 The pHAGE-ATP5G plasmids were generated by direct PCR and PCR fusions; and the point mutation plasmids generated using Q5 site-directed mutagenesis (New England Biolabs, Beverly, MA, USA). For lentiviral transfection, the plasmids with packaging plasmids were co-transfected into HEK293FT (with a ratio of 2:1.5:1.5) using Turbofect reagent (Thermo Fisher Scientific Inc, Waltham, MA, USA) according to the manufacturer’s instructions. Lentivirus-containing medium was filtered from the post-transfection supernatant and used for transduction of HEK293T cells or mouse NPCs. All lentivirus-infected cells were cultured in the medium containing Polybrene (4 μg/ml; Sigma Aldrich, St. Louis, MO, USA) for 8 hr before changing media. Forty-eight hours after transduction, the cells were selected with 10 µg/ml Blastidicin S (Thermo Fisher Scientific Inc).
 
-## Generation of CRISPR base-edited AGS cells
+### Generation of CRISPR base-edited AGS cells
 
 ATP5G1L32P NPCs were generated using the dCas9 base editor, ABEmax (gift from David Liu, Addgene #112095), as previously described (Koblan et al., 2018). Briefly, a synthetic sgRNA (TCCTCTAGTCTATTCAGGAA) was selected by manual inspection of the AGS Atp5g1 sequence for a PAM (NGG) site near the desired edit on the (-) strand of the gene. AGS NPCs were nucleofected (Amaxa 4D, program DS113) in P3 solution (Lonza, Alpharetta, GA, USA) containing pCMV ABEmax (500 ng/200,000 cells). Following a 48 hr recovery period, the same cells were nucleofected with the synthetic sgRNA sequence above (100 pmol, Synthego, Menlo Park, CA, USA). Cells were expanded and then clonally plated. Clones were screened by PCR as the desired base edit also introduced a new BfaI restriction enzyme cutting site. Sanger sequencing was used to confirm the two WT and three KI clone sequences utilized. Potential off-target effects of CRISPR/Cas9 cleavage were analyzed by Sanger sequencing of the top 5 predicted off-target genomic locations [https://mit.crispr.edu], which demonstrated a lack of indels for all clones used in subsequent analysis.
 
-## Cell death assay
+### Cell death assay
 
 Mouse and AGS cells were plated in 24 or 96-well plates and grown to 70% confluence. Cells were exposed to metabolic stress paradigms as above, and detached and floating cells collected by centrifugation and washed with 1 ml PBS. The collected cells were resuspended with 200 μl PBS with addition of 0.2 μl Sytox blue (1 µM; Thermo Fisher Scientific) or propidium iodide (2 μg/ml) for an additional 5 min. The fluorescence intensity was measured for individual cells using automated cytometry (Nanoentek) or flow cytometry (BD Biosciences, San Jose, CA, USA) within 20 min of staining, and the percentage of cell death quantified using the FlowJo software.
 
-## cDNA Library generation, screening, and identification of AGS amino acid substitutions
+### cDNA Library generation, screening, and identification of AGS amino acid substitutions
 
 RNA was isolated from AGS NPC cells grown under standard conditions. A normalized cDNA library was generated by a commercial research partner (Bio S and T, Montreal, QC, Canada) from RNA extracted from AGS NPCs. Library quality and normalization is shown in Figure 2—figure supplement 1A and B. For library screening, plates containing 1 × 107 mouse NPCs cells were grown in triplicate and nucleofected with 200,000 clones each. Plates were exposed to one of three metabolic stress conditions (hypoxia, hypothermia, or rotenone treatment) for 48–96 hr. Following this treatment, plasmid DNA was purified from surviving cells and PCR-amplified AGS cDNA inserts subjected to next-generation sequencing. Resulting fastq files were trimmed (Trim Galore!) and mapped to the Ictidomys Tridecemlineatus genome (SpeTri2.0) using HISAT2. Mapped reads were subjected a custom pipeline for analyzing amino acid substitutions (https://github.com/evanmlee/MaLab_spec_subs; copy archived at https://github.com/elifesciences-publications/MaLab_spec_subs; Singhal, 2020). Briefly, protein sequences of mapped genes were queried by gene symbol and downloaded from OrthoDBv10 for 10 species (13LGS, Mus musculus, Rattus norvegicus, Sorex araneus, Pongo abelii, Homo sapiens, Equus caballus, Bos taurus, Oryctolagus cuniculus, Sus scrofa). OrthoDB data was filtered by matching records against accepted GeneCards aliases for each gene (Kriventseva et al., 2019). Multiple records per species were resolved using maximum percent identity against the accepted human, mouse, and 13LGS sequences, such that only one record per species was used for alignment. AGS protein sequences were downloaded from the Entrez Protein database. Multiple AGS isoforms were resolved by best identity match to the OrthoDB sequence data. The final protein sequence set was aligned with KAlign 2.04 (Lassmann and Sonnhammer, 2005). From aligned sequences, GS-specific residue substitutions were defined as amino acid variants present in 13LGS and AGS sequences and present in no other included species. For each GS-specific residue, sequence weights, JSD, and average GS-versus-outgroup BLOSUM62 scores were calculated as described previously (Capra and Singh, 2007). BLOSUM62 scores were used instead of point-accepted mutation scores in order to prioritize protein sequence changes with higher probability of potential chemical and functional difference. JSD was used to capture sequence conservation and difference from the background amino acid distribution. BLOSUM62 scores were calculated for GS residues against all other mammalian species sequences and averaged to give GS vs Outgroup BLOSUM62. For the entire screened cytoprotective protein dataset, JSD and BLOSUM62 score were plotted for individual genes of interest against the remaining dataset.
 
-## Analysis of in vitro mitochondrial respiration
+### Analysis of in vitro mitochondrial respiration
 
 Analysis of mitochondrial respiratory potential was performed using a flux analyzer (Seahorse XFe96 Extracellular Flux Analyzer; Seahorse Bioscience, North Billerica, MA, USA) with a Seahorse XF Cell Mito Stress Test Kit according to the manufacturer’s instructions. Basal respiration and ATP production were calculated to evaluate mitochondrial respiratory function according to the manufacturer’s instructions. After the measurement, cells were harvested to count the cell number, and each plotted value was normalized relative to the number of cells used. Briefly, NPCs were seeded (25,000 cells/well) into each well of XFe96 cell culture plates and were maintained in standard culture media. After 2–3 days in culture, cells were equilibrated in unbuffered XFeassay medium (Seahorse Bioscience) supplemented with glucose (4.5 g/L), sodium pyruvate (25 mg/L) and transferred to a non-CO2 incubator for 1 hr before measurement. Oxygen consumption rate (OCR) was measured with sequential injections of oligomycin, FCCP, and rotenone/antimycin A.
 
-## Analysis of mitochondrial respiratory chain complex activity and mitochondrial potential
+### Analysis of mitochondrial respiratory chain complex activity and mitochondrial potential
 
 Analysis of mitochondrial respiratory chain complex I, II, and IV activity was measured in mitochondrial extracts using complex enzyme activity colorimetric or absorbance-based assays (ab109721, ab10908, ab109911; Abcam, Cambridge, MA). Complex V activity was measured with Complex V Mitocheck kit (Cayman Chemical, Ann Arbor, MI, USA) and citrate synthase activity with a Citrate Synthase Enzyme Assay (Detroit R and D, Detroit, MI). Mitochondrial extracts (50 μg) were obtained as previously described (Clayton and Shadel, 2014) and used to measure time-dependent absorbance alterations on a multi-well plate reader (SprectraMax, Molecular Devices, San Jose, CA, USA). Mitochondrial membrane potential was evaluated by loading 1 × 105 cells in triplicate with the lipophilic positively charged dye tetramethylrhodamine ethyl ester (TMRE, 50 nM). For depolarization control wells, 1 µM FCCP was added. Excitation and emission wavelengths (530 and 580 nm, respectively) were measured on a multi-well plate reader.
 
-## Mitochondrial ATP5G1 targeting and dynamic morphology assessment
+### Mitochondrial ATP5G1 targeting and dynamic morphology assessment
 
 Mitochondrial localization of ATP5G1 constructs as well as morphology and fission/fusion is assessed in mouse and AGS NPCs nucleofected with mCherry or mEmerald-mito7 (Gift from Michael Davidson, Addgene #55102, 54160) as a mitochondrial marker and grown on glass coverslips in standard media (Olenych et al., 2007). Cells are allowed to recover for 48 hr and then fixed with paraformaldehyde (4%) one hour following treatment with FCCP (1 μM) or DMSO. High magnification images of cells are captured by confocal microscopy (DM6, Leica, Wetzlar, Germany) and mitochondrial morphological characteristics were assessed with the Mitochondrial Network Analysis (MiNA) toolset in J-image as previously described (Valente et al., 2017; Martín-Maestro et al., 2017). Briefly, the plugin converts confocal images to binary pixel features and analyzes the spatial relationship between pixels. The parameters analyzed are: (i) individual mitochondrial structures; (ii) networked mitochondrial; and (iii) the average of length of rods/branches. Twenty randomly chosen fields containing 30–50 cells were used to quantify the morphological pattern and network branch lengths of mitochondria. We classify the mitochondrial morphology as fragmented when the appearance is completely dotted with branch lengths < 1.8 μm.
 
-## Electrophoresis and immunoblot analysis
+### Electrophoresis and immunoblot analysis
 
 For SDS-PAGE, Laemmli loading buffer (Bio-Rad Lab, Hercules, CA, USA) plus 5% β-mercaptoethanol was added to protein extracts from cell pellets reconstituted in cell lysis buffer (Cell Signaling Technology, Danvers, MA) before heating at 95°C for 5 min. Around 30 μg of whole cell protein lysate samples were separated on 4–15% mini-PROTEIN GTX precast gels, and transferred to nitrocellulose membranes (Bio-rad). For native electrophoresis, 20 μg of mitochondrial protein extracts were resuspended in buffer containing 50 mM NaCl, 2 mM 6‐aminohexanoic acid, 50 mM imidazole, 1 mM EDTA (pH 7), solubilized with digitonin (2 g/g protein) for 20 min on ice, and centrifuged for 20 min at 30,000 g to remove cell debris. Supernatants were removed and 10% glycerol and 0.01% Ponceau S were added as previously described (Kovalčíková et al., 2019; Wittig and Schägger, 2009). Samples along with a high molecular weight native marker (GE Healthcare Life Sciences, Marlborough, MA) were separated on 4–15% precast gels in 4°C with current limited to 15 mA and transferred to polyvinylidene difluoride membranes (Wittig and Schägger, 2009). Immunoblotting was performed after blocking in TBS (Tris-buffered saline) containing 5% non-fat milk and 0.1% Tween-20. Membranes were incubated overnight with primary antibodies diluted in blocking solution at 4°C, followed by incubation with secondary antibodies at room temperature for 1 hr. Immunoreactivity was visualized by the ECL chemiluminescence system (Bio-rad) on standard film. The antibodies were ATP5A (ab-14748, 1:1000, Abcam), ATP Synthase C-subunit (ab-181243, 1:1000, Abcam), and citrate synthase (#14309, 1:1000, Cell Signaling Technology).
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 For immunocytochemistry of mammalian cells, AGS and mouse NSC/NPC cells were seeded on laminin-coated coverslips (Neuvitro, Vancouver, WA, USA) within 24-well plates. The cells were fixed with 4% paraformaldehyde in PBS, washed with PBS, and permeabilized with 0.02% Triton X-100 in PBS for 10 min. Blocking was done with 5% BSA in PBS for 1 hr, followed by incubation with antibodies against Nestin (MAB2736, 1:50, R and D Systems, Cambridge, MA, USA) or Ki-67 (NB600-1252, 1:500, Novus Biologicals, Littleton, CO, USA) in blocking buffer overnight at 4°C. The Nestin antibody was detected using goat anti-mouse AlexaFluor 488 or 647 (1:1000; Jackson ImmunoResearch Laboratories Inc, West Grove, PA, USA) and the Ki-67 antibody was detected using AlexaFluor 488 goat anti-rabbit (1:1000; Jackson Immunoresearch) or Cy3-conjuated donkey anti-rabbit (1:500; EMD Millipore, Burlington, MA, USA) in blocking buffer. Cells were washed with PBS after primary and secondary antibody staining. Stained cells were overlaid with Fluoroshield mounting medium with DAPI (Abcam) to label nucleus. Fluorescence microscopy was performed with a Leica confocal microscope using the following fluorescence filters: DAPI (405 nm excitation); Cy3 (551 nm excitation); AlexaFluor 647 (651 nm excitation); and GFP/AlexaFluor 488 (488 nm excitation). For comparison across conditions, identical light-exposure levels were used.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 RNA was extracted from approximately 200,000 mouse or AGS NPCs per condition according to manufacturer instructions (Quick-RNA MiniPrep kit; Irvine, CA, USA). Total RNA was reverse transcribed into cDNA (Bimake, Houston, TX, USA), and real-time PCR was performed (LightCycler96, Roche, Basel, CHE) with SYBR Green (Thermo Fisher Scientific) as a dsDNA-specific binding dye. Quantitative RT-PCR conditions were 95°C for denaturation, followed by 45 cycles of: 10 s at 95°C, 10 s at 60°C, and 20 s at 72°C. Species-specific primers for each transcript were used (for list see Table 1). Melting curve analysis was performed after the final cycle to examine the specificity of primers in each reaction. Relative abundance of each Atp5g isoform as a fraction of total Atp5g was calculated by ∆∆CT method and normalized to Rpl27.
 
-## Statistical analysis
+**Table 1.**
+ Species-specific primers used in quantitative RT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rpl27 Forward</td>
+      <td>ATA AGA ATG CGG CCG CAA GC</td>
+    </tr>
+    <tr>
+      <td>Rpl27 Reverse</td>
+      <td>ATC GAT TCG CTC CTC AAA CTT</td>
+    </tr>
+    <tr>
+      <td>Atp5g1 Forward</td>
+      <td>TGC AGA CCA CCA AGG CAC TG</td>
+    </tr>
+    <tr>
+      <td>Atp5g1 Reverse</td>
+      <td>GGC CTC TGG TCT GCT CAG GA</td>
+    </tr>
+    <tr>
+      <td>Atp5g2 Forward</td>
+      <td>CGT CTC TAC CCG CTC CCT GA</td>
+    </tr>
+    <tr>
+      <td>Atp5g2 Reverse</td>
+      <td>CTG CAG ACA GCG GAC GAC TC</td>
+    </tr>
+    <tr>
+      <td>Atp5g3 Forward</td>
+      <td>GGG CCC AGA ATG GTG TGT GT</td>
+    </tr>
+    <tr>
+      <td>Atp5g3 Reverse</td>
+      <td>TGC AGC ACC TGC ACC AAT GA</td>
+    </tr>
+    <tr>
+      <td>AGS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rpl27 Forward</td>
+      <td>CTG CCA TGG GCA AGA AGA AA</td>
+    </tr>
+    <tr>
+      <td>Rpl27 Reverse</td>
+      <td>AGC AGG GTC TCT GAA GAC AT</td>
+    </tr>
+    <tr>
+      <td>Atp5g1 Forward</td>
+      <td>TCC GGC TCT GAT CCG CTG TA</td>
+    </tr>
+    <tr>
+      <td>Atp5g1 Reverse</td>
+      <td>GGG AGC TGC TGC TGT AGG AA</td>
+    </tr>
+    <tr>
+      <td>Atp5g2 Forward</td>
+      <td>TGC CTG CTC CAG GTT CCT CT</td>
+    </tr>
+    <tr>
+      <td>Atp5g2 Reverse</td>
+      <td>GGG ACT GCC AAG CTG CTG AA</td>
+    </tr>
+    <tr>
+      <td>Atp5g3 Forward</td>
+      <td>TGA GGC CCA GAA TGG TGA ACG</td>
+    </tr>
+    <tr>
+      <td>Atp5g3 Reverse</td>
+      <td>CAG CAC CAG AAC CAG CCA CT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 Data were analyzed using GraphPad Prism Software (Graphpad, San Diego, CA) and presented as means ± S.E. unless otherwise specified, with P-values calculated by two-tailed unpaired Student’s t-tests or two-way ANOVA (comparisons across more than two groups) adjusted with the Bonferroni’s correction. No randomization or blinding was used and no power calculations were done to detect a pre-specified effect size.

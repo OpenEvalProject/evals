@@ -57,13 +57,9 @@ This manuscript builds on prior work from the Yoo lab to test whether miRNA cove
 
 1) It would be of interest to quantitatively examine the expression levels of INK4A locus genes (p16 and ARF) since their upregulation has also been associated with aging.
 
-It is interesting to pursue whether CDKN2A levels change in fibroblasts or in reprogrammed neurons with age. To answer this question, we illustrate the age-associated fold-change of CDKN2A in fibroblasts and in reprogrammed neurons (according to our transcriptome profiling data in Figure 2). We further conducted a qPCR using two different primer sets to validate the microarray with qPCR.10.7554/eLife.18648.014Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18648.014
+It is interesting to pursue whether CDKN2A levels change in fibroblasts or in reprogrammed neurons with age. To answer this question, we illustrate the age-associated fold-change of CDKN2A in fibroblasts and in reprogrammed neurons (according to our transcriptome profiling data in Figure 2). We further conducted a qPCR using two different primer sets to validate the microarray with qPCR.10.7554/eLife.18648.014Author response image 1.
 
-DOI: http://dx.doi.org/10.7554/eLife.18648.014
-
-Additionally, we also conducted immunostaining analysis of CDKN2A (Author response image 2). Collectively, we did not detect significant alteration in CDKN2A expression with aging by microarray and qPCR assays in both fibroblasts and converted neurons. However, we do detect a marked increase in CDKN2A in reprogrammed neurons compared to starting fibroblasts, perhaps a reflection of cells adopting a post-mitotic fate.10.7554/eLife.18648.015Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.18648.015
-
-DOI: http://dx.doi.org/10.7554/eLife.18648.015
+Additionally, we also conducted immunostaining analysis of CDKN2A (Author response image 2). Collectively, we did not detect significant alteration in CDKN2A expression with aging by microarray and qPCR assays in both fibroblasts and converted neurons. However, we do detect a marked increase in CDKN2A in reprogrammed neurons compared to starting fibroblasts, perhaps a reflection of cells adopting a post-mitotic fate.10.7554/eLife.18648.015Author response image 2.
 
 2) Regarding telomere rejuvenation upon iPS reprogramming, since the referenced papers were published (Agarwal et al., 2010 and Marion et al., 2009), it has been shown that the original telomere length is only incrementally reset with iPS reprogramming (Batista Nature 2011, Moon Nat Gen 2015 and several others). This should be corrected.
 

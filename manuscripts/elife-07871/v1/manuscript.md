@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.07871.001 NMDA receptor (NMDAR)-dependent forms of synaptic plasticity are thought to underlie the assembly of developing neuronal circuits and to play a crucial role in learning and memory. It remains unclear how NMDAR might contribute to the wiring of adult-born granule cells (GCs). Here we demonstrate that nascent GCs lacking NMDARs but rescued from apoptosis by overexpressing the pro-survival protein Bcl2 were deficient in spine formation. Insufficient spinogenesis might be a general cause of cell death restricted within the NMDAR-dependent critical time window for GC survival. NMDAR loss also led to enhanced mushroom spine formation and synaptic AMPAR activity throughout the development of newborn GCs. Moreover, similar elevated synapse maturation in the absence of NMDARs was observed in neonate-generated GCs and CA1 pyramidal neurons. Together, these data suggest that NMDAR operates as a molecular monitor for controlling the activity-dependent establishment and maturation rate of synaptic connections between newborn neurons and others. DOI: http://dx.doi.org/10.7554/eLife.07871.001
+NMDA receptor (NMDAR)-dependent forms of synaptic plasticity are thought to underlie the assembly of developing neuronal circuits and to play a crucial role in learning and memory. It remains unclear how NMDAR might contribute to the wiring of adult-born granule cells (GCs). Here we demonstrate that nascent GCs lacking NMDARs but rescued from apoptosis by overexpressing the pro-survival protein Bcl2 were deficient in spine formation. Insufficient spinogenesis might be a general cause of cell death restricted within the NMDAR-dependent critical time window for GC survival. NMDAR loss also led to enhanced mushroom spine formation and synaptic AMPAR activity throughout the development of newborn GCs. Moreover, similar elevated synapse maturation in the absence of NMDARs was observed in neonate-generated GCs and CA1 pyramidal neurons. Together, these data suggest that NMDAR operates as a molecular monitor for controlling the activity-dependent establishment and maturation rate of synaptic connections between newborn neurons and others.
 
 ## Introduction
 
@@ -34,69 +34,69 @@ To address the above issues, we performed an analysis of spine morphogenesis in 
 
 ## Results
 
-## NMDAR loss in newborn GCs leads to decreased spine density and increased mushroom spine density
+### NMDAR loss in newborn GCs leads to decreased spine density and increased mushroom spine density
 
-To determine the role of NMDAR in circuit assembly of new neurons in the adult brain, we first examined the morphology of NR1 KO GCs at 4 weeks of age. A retrovirus encoding Cre recombinase and GFP was developed for inducible knockout of the floxed
+To determine the role of NMDAR in circuit assembly of new neurons in the adult brain, we first examined the morphology of NR1 KO GCs at 4 weeks of age. A retrovirus encoding Cre recombinase and GFP was developed for inducible knockout of the floxed Grin1 alleles in adult mice (rv GFP-ires-cre; Figure 1—figure supplement 1). When tested in the ROSA-lacZ reporter mice, rv GFP-ires-cre induced recombination in 97% of GFP+ cells at 6 days post infection (dpi) and in all GFP+ cells at 14 and 28 dpi. We then injected rv GFP-ires-cre together with a control retroviral vector expressing mCherry only (rv CAG-mCherry) into the Grin1 floxed mice (Tsien et al., 1996; Tashiro et al., 2006a) (Figure 1A). To assess NMDAR activity in virus-transduced cells and confirm the cell-specific knockout of the Grin1 gene via Cre/loxP recombination, we performed perforated whole-cell patch-clamp recordings at a holding potential of −70 mV and +40 mV to monitor synaptic responses mediated by AMPA and NMDARs, respectively. In control adult-born GCs (mcherry+GFP−) at 28 dpi, both AMPA and NMDA currents could be readily evoked by perforant path stimulation (Figure 1B). In contrast, there was only a DNQX-sensitive AMPA component in age-matched GFP+ neurons infected by rv GFP-ires-cre (Figure 1B), suggesting that Cre-mediated recombination successfully removed the floxed Grin1 gene fragment from the mouse genomic DNA.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig1-v1.jpg)
 
-**Figure 1.:** (A) Co-injection of rv CAG-mcherry (red) and CAG-GFP-ires-cre (green) for the simultaneous labeling of wild-type (WT) and NR1 KO newborn granule cells (GCs). (B) Left: mCherry+ newborn GCs respond to perforant path stimulation in the absence (upper panel) and presence (lower panel) of the AMPAR antagonist DNQX. Right: GFP+ Cre-expressing newborn GCs respond to perforant path stimulation in the absence (upper panel) but not in the presence (lower panel) of DNQX. (C, D) Representative images of WT (C) and NR1 KO (D) newborn GCs at 4 weeks of age. (E) Representative images of dendritic processes of newborn WT (GFP) and NR1 KO (cre) GCs in the outer molecular layer. (F) Total spine density is decreased in NR1 KO newborn GCs. (G) Comparison of the percentage of each spine type relative to total spine numbers in adult-born WT and NR1 KO GCs. (H) Mushroom spine density is increased in NR1 KO newborn GCs. (I) Cumulative plot of spine size in NR1 WT and KO GCs. (J) Representative traces of AMPAR-mediated miniature excitatory postsynaptic currents (mEPSCs) in mCherry+ WT and GFP+ NR1 KO newborn GCs. (K, L) Quantitative analysis of mEPSCs by amplitude (K) and frequency (L).DOI: http://dx.doi.org/10.7554/eLife.07871.003
+**Figure 1.:** (A) Co-injection of rv CAG-mcherry (red) and CAG-GFP-ires-cre (green) for the simultaneous labeling of wild-type (WT) and NR1 KO newborn granule cells (GCs). (B) Left: mCherry+ newborn GCs respond to perforant path stimulation in the absence (upper panel) and presence (lower panel) of the AMPAR antagonist DNQX. Right: GFP+ Cre-expressing newborn GCs respond to perforant path stimulation in the absence (upper panel) but not in the presence (lower panel) of DNQX. (C, D) Representative images of WT (C) and NR1 KO (D) newborn GCs at 4 weeks of age. (E) Representative images of dendritic processes of newborn WT (GFP) and NR1 KO (cre) GCs in the outer molecular layer. (F) Total spine density is decreased in NR1 KO newborn GCs. (G) Comparison of the percentage of each spine type relative to total spine numbers in adult-born WT and NR1 KO GCs. (H) Mushroom spine density is increased in NR1 KO newborn GCs. (I) Cumulative plot of spine size in NR1 WT and KO GCs. (J) Representative traces of AMPAR-mediated miniature excitatory postsynaptic currents (mEPSCs) in mCherry+ WT and GFP+ NR1 KO newborn GCs. (K, L) Quantitative analysis of mEPSCs by amplitude (K) and frequency (L).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.DOI: http://dx.doi.org/10.7554/eLife.07871.004
+**Figure 1—figure supplement 1.:** Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.
 
 Because the fluorescent signal produced by rv CAG-mCherry labeling was not sufficient for optimal image acquisition and analysis of dendritic spines, we then injected the control CAG-GFP or GFP-ires-cre retrovirus into Grin1f/f mice to compare the morphology of NR1 wild-type (WT) and KO cells. There was no obvious difference in overall cell morphology between NR1 KO and WT cells (Figure 1C,D). Dendritic tracing with the ICL TRACE (http://synapses.clm.utexas.edu/tools/trace/trace.stm) showed that WT and KO cells were similar in both dendritic length (WT: 601.8 ± 36.6, n = 47 frames, KO: 515.1 ± 29.3, n = 38 frames, p = 0.08) and branching points (WT: 5.92 ± 0.33, KO: 5.68 ± 0.37, p = 0.64). These data indicate that gross development of dendrites does not require NMDARs. However, detailed analyses of the dendritic segments in the outer third of the molecular layer revealed significant differences between WT and KO cells (Figure 1E). According to the criteria described by Harris and Yuste (Harris et al., 1992; Parnass et al., 2000), all dendritic protrusions were classified into four categories: filopodia, stubby, thin and mushroom spines. Briefly, ‘stubby’ were neckless spines whose head diameters were about equal to their lengths. Spines were defined as ‘filopodia’ if they were long, thin and did not have a head. In contrast, ‘thin’ spines had long, thin necks and obvious heads. ‘Mushroom’ spines were similar to ‘thin’ spines in shape, but with larger heads (see ‘Materials and methods’). As shown in Figure 1F, total spine density was significantly decreased in NR1 KO cells (WT: 2.14 ± 0.08, n = 59 frames, KO: 1.53 ± 0.09, n = 37 frames, p < 0.0001). Surprisingly, the percentage of mushroom type relative to total spine numbers was drastically enhanced, whereas the other spine types remained unchanged (p < 0.0001; Figure 1G). In line with this observation, mushroom spine density was increased by more than twofold in NR1 KO cells (WT: 0.026 ± 0.004, KO: 0.064 ± 0.010, p = 0.0001; Figure 1H). A cumulative probability graph of the size of all measured spines showed that the spine head area in NR1 KO cells was bigger than that in control cells (p < 0.0001, Kolmogorov–Smirnov test; Figure 1I).
 
-The size of the spine head has been positively correlated with synaptic AMPAR level (
+The size of the spine head has been positively correlated with synaptic AMPAR level (Matsuzaki et al., 2001). Since NR1 KO cells displayed increased mushroom spines, we postulated that NMDAR KO cells might have more synaptic AMPAR activity. Therefore, we measured AMPAR-mediated miniature excitatory postsynaptic currents (mEPSCs). While mEPSCs were infrequent in mCherry+GFP− NR1 WT cells, they were evident in GFP+ NR1 KO cells (Figure 1J). Both the amplitude and frequency of mEPSCs were significantly increased in neurons lacking NR1 as compared to control cells (WT: n = 5 cells, KO: n = 6 cells, p < 0.001, Kolmogorov–Smirnov test; Figure 1K,L). These data confirmed that NR1 KO cells had enhanced functional glutamatergic synapses. Utilizing serial immuno-electron microscopy for GFP, we consistently observed that GFP+ dendritic spines were associated with GFP− axon terminals containing presynaptic vesicles (Figure 2A), verifying that newborn NR1-null GCs could form normal synapses. We also noted that all stubby, thin and mushroom spines were asymmetric and presumably excitatory (Figure 2A). While the axo-dendritic synapses located on dendritic shafts had a typical morphology of symmetric or GABAergic synapses (Figure 2A), they could be initially excitatory in newly born GCs due to the high intracellular chloride concentration (Ge et al., 2006). Total head volumes of randomly selected spines averaged 0.035 ± 0.005 µm3 (n = 130 spines) and 0.078 ± 0.014 µm3 (n = 74 spines) in WT and NR1 KO GCs, respectively, indicating a significant difference between these two groups (p = 0.0008; Figure 2B). Furthermore, we found that this difference was mainly due to increased volume of big or mushroom spines in NR1 KO neurons, whereas the volumes of small spines (presumably filopodia or thin) were roughly the same across groups. These results suggest that changes in the amount of depolarization-induced Ca2+ influx may affect the survival of nascent neurons, although the role of a possible re-distribution of Ca2+ entry through different spine categories cannot be excluded.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig2-v1.jpg)
 
-**Figure 2.:** (A) Electron micrograph illustrating dendrites of newborn NR1 KO neurons. Panels show examples of symmetric axo-dendritic synapses (left panels, arrows), filopodia (middle left panels), thin spines (middle right panels) and mushroom spines (right panel). Darkly immunolabeled GFP+ dendritic spines are each contacted by GFP− axon terminals (asterisks) containing numerous presynaptic vesicles. Scale bars: 1 μm. (B) Comparison of total spine volumes in NR1 KO and WT cells.DOI: http://dx.doi.org/10.7554/eLife.07871.005
+**Figure 2.:** (A) Electron micrograph illustrating dendrites of newborn NR1 KO neurons. Panels show examples of symmetric axo-dendritic synapses (left panels, arrows), filopodia (middle left panels), thin spines (middle right panels) and mushroom spines (right panel). Darkly immunolabeled GFP+ dendritic spines are each contacted by GFP− axon terminals (asterisks) containing numerous presynaptic vesicles. Scale bars: 1 μm. (B) Comparison of total spine volumes in NR1 KO and WT cells.
 
-## NMDAR is required for spine growth in newborn GCs
+### NMDAR is required for spine growth in newborn GCs
 
-Given that most NR1 KO GCs die before reaching 4 weeks of age (
+Given that most NR1 KO GCs die before reaching 4 weeks of age (Tashiro et al., 2006a), it is questionable whether the observed abnormal spine morphogenesis in the few surviving NR1 KO cells represents a general phenomenon in NR1-null neurons. To clarify this issue, we engineered a new retroviral vector expressing a fusion protein of the pro-survival gene Bcl2 and GFP in addition to Cre recombinase (rv GFPBcl2-ires-cre; Figure 3—figure supplement 1) to prevent NR1 KO cells from dying. The logic behind this set of experiments is: NR1 deletion in new GCs results in certain defects that eventually lead to cell death. Since Bcl2 is an important anti-apoptotic protein (Tsujimoto et al., 1984; Cleary et al., 1986), it may suppress apoptosis and drive NR1 KO cells to survive even though they have deficiencies. Therefore, neurons rescued by Bcl2 expression should exhibit features distinct from those surviving normally, and these differences presumably reflect defects caused by NR1 loss. We first tested the virus efficiency of cell death regulation in WT C57Bl/6 mice. In line with prior studies (Dayer et al., 2003; Tashiro et al., 2006b), within 28 dpi of rv CAG-GFP, we found a significant decrease in the quantity of GFP+ GCs in C57Bl/6 mice (GFP, relative cell number to that of 14 dpi, 14 dpi: 1.00 ± 0.11, n = 5 mice, 28 dpi: 0.30 ± 0.22, n = 4 mice, p = 0.019; Figure 3A). In contrast, GCs infected by rv GFPBcl2-ires-cre did not die (GFPBcl2icre, 14 dpi: 1.00 ± 0.29, n = 6 mice, 28 dpi: 1.00 ± 0.14, n = 6 mice; Figure 3A). More importantly, the dramatic death of new neurons observed in Grin1f/f mice injected with rv GFP-ires-cre was not found in Grin1-floxed animals injected with rv GFPBcl2-ires-cre (GFPicre, 7 dpi: 1.00 ± 0.37, n = 5 mice, 21 dpi: 0.05 ± 0.03, n = 5 mice, p = 0.032; GFPBcl2icre, 7 dpi: 1.00 ± 0.31, n = 5 mice, 21 dpi: 1.31 ± 0.39, n = 5 mice, p = 0.5; Figure 3B), suggesting that the expression of Bcl2 did prevent the death of NR1 KO cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig3-v1.jpg)
 
-**Figure 3.:** (A) Bcl2 expression was able to rescue newborn GCs from naturally occurring cell death in C57Bl/6 mice. (B) Bcl2 expression was able to rescue NR1 KO newborn GCs from cell death. (C) For morphological analysis of GFPBcl2-ires-cre-targeted cells, rv GFPBcl2-ires-cre was co-injected with rv GFP. Bcl2-ires-cre-targeted cells were identified by immunohistochemistry using an antibody against the cre recombinase. The arrow and asterisk show GCs transfected by both rv GFPBcl2-ires-cre and rv GFP. Insets on the right side represent GFP− (green) and Cre-expressing (red) GCs, respectively. (D–G) Analysis of dendritic growth of newborn GCs at 28 dpi. Bcl2-rescued newborn GCs had a decreased total dendritic length in both C57Bl/6 and Grin1 mice (f/fD, F), whereas branching points were not changed (E, G). (H) Representative images of dendritic processes in the outer molecular layer of newborn GCs at 28 dpi in C57Bl/6 mice labeled by rv GFP, GFP-ires-cre and GFPBcl2-ires-cre. (I, J) Total spine density was similar in GFP and GFP-ires-cre targeted newborn GCs but significantly decreased in GFPBcl2-ires-cre targeted newborn GCs. (K) The density of mushroom spines did not change significantly in newborn GCs targeted by the three retroviruses. (L) Comparison of the percentage of each spine type relative to total spine numbers in new GCs of C57Bl/6 mice infected by the three retroviruses. (M) Representative images of dendritic processes in the outer molecular layer of newborn GCs at 28 dpi in Grin1 mice labeled by rv GFP, GFP-ires-cre and GFPBcl2-ires-cre. (f/fN, O) Total spine density was significantly lower in surviving NR1 KO cells (Cre) and further decreased in Bcl2-rescued cells. (P) Mushroom spine density was increased in NR1 KO cells (Cre) but not in Bcl2-rescued cells. (Q) Comparison of the percentage of each spine type relative to total spine numbers in new GCs of Grin1 mice infected by the three retroviruses. Scale bars: 20 µm (f/fC) and 2 µm (H, M).DOI: http://dx.doi.org/10.7554/eLife.07871.006
+**Figure 3.:** (A) Bcl2 expression was able to rescue newborn GCs from naturally occurring cell death in C57Bl/6 mice. (B) Bcl2 expression was able to rescue NR1 KO newborn GCs from cell death. (C) For morphological analysis of GFPBcl2-ires-cre-targeted cells, rv GFPBcl2-ires-cre was co-injected with rv GFP. Bcl2-ires-cre-targeted cells were identified by immunohistochemistry using an antibody against the cre recombinase. The arrow and asterisk show GCs transfected by both rv GFPBcl2-ires-cre and rv GFP. Insets on the right side represent GFP− (green) and Cre-expressing (red) GCs, respectively. (D–G) Analysis of dendritic growth of newborn GCs at 28 dpi. Bcl2-rescued newborn GCs had a decreased total dendritic length in both C57Bl/6 and Grin1f/f mice (D, F), whereas branching points were not changed (E, G). (H) Representative images of dendritic processes in the outer molecular layer of newborn GCs at 28 dpi in C57Bl/6 mice labeled by rv GFP, GFP-ires-cre and GFPBcl2-ires-cre. (I, J) Total spine density was similar in GFP and GFP-ires-cre targeted newborn GCs but significantly decreased in GFPBcl2-ires-cre targeted newborn GCs. (K) The density of mushroom spines did not change significantly in newborn GCs targeted by the three retroviruses. (L) Comparison of the percentage of each spine type relative to total spine numbers in new GCs of C57Bl/6 mice infected by the three retroviruses. (M) Representative images of dendritic processes in the outer molecular layer of newborn GCs at 28 dpi in Grin1f/f mice labeled by rv GFP, GFP-ires-cre and GFPBcl2-ires-cre. (N, O) Total spine density was significantly lower in surviving NR1 KO cells (Cre) and further decreased in Bcl2-rescued cells. (P) Mushroom spine density was increased in NR1 KO cells (Cre) but not in Bcl2-rescued cells. (Q) Comparison of the percentage of each spine type relative to total spine numbers in new GCs of Grin1f/f mice infected by the three retroviruses. Scale bars: 20 µm (C) and 2 µm (H, M).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Green—GFP, red—β-gal. Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.DOI: http://dx.doi.org/10.7554/eLife.07871.007
+**Figure 3—figure supplement 1.:** Green—GFP, red—β-gal. Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.
 
 Next we assessed the morphology of NR1 KO cells that were rescued by Bcl2 expression. Because the fluorescent signal from GFPBcl2 fusion protein was not strong enough for morphological analyses, rv GFPBcl2-ires-cre was injected together with rv CAG-GFP. In this case, we identified rv GFPBcl2-ires-cre targeted cells by Cre immunostaining and imaged Cre+GFP+ cells when the newborn cells were 4 weeks old (Figure 3C). GFP-labeled GCs from animals injected with pure rv CAG-GFP or rv GFP-ires-cre were imaged in parallel for control purposes. In C57Bl/6 mice, Bcl2-expressing cells displayed decreased dendritic length (GFP: 378.2 ± 32.0, n = 58 frames, cre: 351.5 ± 45.6, n = 33 frames, Bcl2: 283.8 ± 22.0, n = 93 frames, p = 0.013 Bcl2 vs GFP; Figure 3D). The number of dendritic branching points was not significantly different between the samples (GFP: 5.2 ± 0.3, cre: 4.9 ± 1.5, Bcl2: 4.4 ± 0.2, p = 0.056 Bcl2 vs GFP, Figure 3E). Similarly, in Grin1f/f mice, Bcl2-expressing cells displayed a significant decrease in dendritic length (GFP: 342.4 ± 32.9, n = 55 frames, cre: 302.7 ± 22.8, n = 85 frames, Bcl2: 256.0 ± 18.0, n = 133 frames, p = 0.014 Bcl2 vs GFP; Figure 3F) but not in branching points (GFP: 5.4 ± 0.4, cre: 5.1 ± 0.3, Bcl2: 4.7 ± 0.3, p = 0.14 Bcl2 vs GFP, Figure 3G). Since NR1 KO neurons did not display impairment of dendrite length and complexity (Figure 1C,D), we infer from these data that Bcl2 expression promoted survival of a mixed population of nascent GCs, including both WT and NR1 KO cells.
 
 Detailed analyses of the dendritic processes in the outer molecular layer showed that Bcl2-expressing cells in C57Bl/6 mice had much lower total spine density (GFP: 2.13 ± 0.11, n = 28 frames, cre: 2.22 ± 0.11, n = 17 frames, Bcl2: 1.39 ± 0.14, n = 31 frames, p = 0.0001 Bcl2 vs GFP; Figure 3H,I). A closer examination of the data identified a unique population of dendritic branches with low spine density (<1.5 spines/µm) in the Bcl2-expressing group but not in samples expressing GFP or Cre alone, although the cumulative fractions of spine counts in these groups were not statistically different (p > 0.1, Kolmogorov–Smirnov test; Figure 3J). However, neither the mushroom spine density (GFP: 0.015 ± 0.006, cre: 0.013 ± 0.004, Bcl2: 0.017 ± 0.006) nor the percentage of mushroom spines (GFP: 0.80 ± 0.27, cre: 1.06 ± 0.30, Bcl2: 1.08 ± 0.34) relative to total number of protrusions showed any difference between samples in C57Bl/6 mice (Figure 3K,L). These results suggest that WT adult-born GCs selected for death had fewer spines, specifically fewer thin spines (p < 0.05; Figure 3L), as compared to those destined for survival. In Grin1f/f mice, deletion of NMDAR in newborn GCs led to a decrease in total spine density, and the spine density was even lower in Bcl2-rescued cells (GFP: 1.96 ± 0.06, n = 68 frames, cre: 1.47 ± 0.11, n = 35 frames, Bcl2: 1.06 ± 0.08, n = 45 frames, p = 0.0054 cre vs Bcl2; Figure 3M,N), whereas the cumulative distribution of total spine density did not exhibit significant differences between each pair (p > 0.09, Kolmogorov–Smirnov test; Figure 3O). We noted that, in comparison with WT GFP-expressing cells, Bcl2-expressing GCs did not show dramatically increased density (GFP: 0.028 ± 0.004, cre: 0.053 ± 0.011, Bcl2: 0.032 ± 0.007, p = 0.0092 cre vs GFP) or percentage (GFP: 1.40 ± 0.21, cre: 4.76 ± 0.66, Bcl2:2.13 ± 0.39, p < 0.0001 cre vs GFP) of mushroom-like spines as naturally surviving NMDAR KO cells (Figure 3P–Q). However, Bcl2-rescued group displayed a strong trend of mushroom spine enhancement in Grin1f/f mice (Bcl2 vs GFP: p = 0.08, Figure 3Q), but not in WT mice (Bcl2 vs GFP: p = 0.5, Figure 3L), suggesting that NR1 KO GCs accounted for a portion of neurons rescued by Bcl2 and they had more mushroom spines than those dying of reasons other than genetic ablation of NMDARs. Taken together, these data support that NMDAR was critical for spine outgrowth and that newborn GCs destined to die without the protection of Bcl2 were defective in spine formation.
 
-## Mushroom spine density is increased in mature neurons upon deletion of NR1
+### Mushroom spine density is increased in mature neurons upon deletion of NR1
 
-Since Bcl2-rescued GCs exhibited a total spine reduction, but not a mushroom spine enhancement (
+Since Bcl2-rescued GCs exhibited a total spine reduction, but not a mushroom spine enhancement (Figure 3H–Q), it seems unlikely that the increases in spine volume and AMPA currents associated with NMDAR loss (Figure 1I–L) simply represent a homeostatic change in response to the decrease of total synaptic drive. However, two scenarios may explain the increase in mushroom spines found in surviving NR1 KO cells (Figure 1). The alteration of spine head diameter could be a direct consequence of NMDAR loss. Alternatively, the survival selection was biased towards neurons that happened to bear lots of mushroom spines or mature synapses. To test these possibilities, we developed a cre-ER retrovirus in which the expression of GFP and the inducible Cre recombinase creERt2 was bridged by the 2A sequence from Picornavirus (Szymczak et al., 2004) (rv CGS-creER; Figure 4—figure supplement 1) to induce NMDAR deletion in newborn GCs after their critical time window for survival. We injected rv CGS-creER or control rv CAG-GFP into Grin1f/f and Grin1f/+ mice, respectively, and injected oil or tamoxifen (180 mg/kg, daily for 4 days) into the animals at 28 dpi. Mouse brains were collected at 56 dpi (28 days after the induction with tamoxifen) for morphological analyses. We first quantified GFP+ cell number from Grin1f/f mice injected with rv CGS-creER and found no significant difference between oil and tamoxifen treatment (oil: 84 ± 48, n = 4 mice, tamo: 117 ± 15, n = 4 mice, p = 0.54; Figure 4A–C). Therefore, NMDAR activity was not required for the survival of newborn GCs that were 4 weeks old or older. Although there was no statistically significant decrease in total spine density in NMDAR KO cells (oil/creER: 2.20 ± 0.10, n = 20 frames, tamo/creER: 1.91 ± 0.12, n = 14 frames, tamo/GFP: 2.29 ± 0.11, n = 21 frames; Figure 4D,E), there appeared to be a strong trend of increased mushroom spine density (oil/creER: 0.133 ± 0.016, tamo/creER: 0.188 ± 0.027, tamo/GFP: 0.131 ± 0.015, p = 0.054 comparing tamo/creER with tamo/GFP; Figure 4D,F). In particular, the percentage of mushroom-shaped spines was markedly increased by 62% (oil/creER: 6.38 ± 0.91, tamo/creER: 10.35 ± 1.68, tamo/GFP: 6.17 ± 0.92, p = 0.024 comparing tamo/creER with tamo/GFP; Figure 4G). These data indicate that enhanced spine maturation was unlikely to be a compensatory effect from the stress of NMDAR-dependent cell survival.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) Representative images of newborn GCs in Grin1 mice that were infused with rv CAG GFP-t2A-creER and treated with oil (f/fA) or tamoxifen (B). (C) Deletion of the Grin1 gene initiated in 4-week-old newborn GCs did not affect cell survival. (D) Representative images of dendritic processes in the outer molecular layer of rv GFP-t2A-creER-targeted newborn GCs treated with oil and tamoxifen, and of rv GFP-targeted newborn GCs treated with tamoxifen. (E–G) Quantification of total spine density (E), mushroom spine density (F) and mushroom spine percentage (G) in rv GFP-t2A-creER- and rv GFP-targeted newborn GCs (*p < 0.05). Scale bars: 50 µm (A, B) and 5 µm (D).DOI: http://dx.doi.org/10.7554/eLife.07871.008
+**Figure 4.:** (A, B) Representative images of newborn GCs in Grin1f/f mice that were infused with rv CAG GFP-t2A-creER and treated with oil (A) or tamoxifen (B). (C) Deletion of the Grin1 gene initiated in 4-week-old newborn GCs did not affect cell survival. (D) Representative images of dendritic processes in the outer molecular layer of rv GFP-t2A-creER-targeted newborn GCs treated with oil and tamoxifen, and of rv GFP-targeted newborn GCs treated with tamoxifen. (E–G) Quantification of total spine density (E), mushroom spine density (F) and mushroom spine percentage (G) in rv GFP-t2A-creER- and rv GFP-targeted newborn GCs (*p < 0.05). Scale bars: 50 µm (A, B) and 5 µm (D).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** ROSA-lacZ reporter mice received stereotaxic delivery of retrovirus into the DG and subsequently tamoxifen daily for 5 days starting at 2 weeks after virus injection. Reporter gene expression was analyzed at 2 weeks after the first dose of tamoxifen. Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.DOI: http://dx.doi.org/10.7554/eLife.07871.009
+**Figure 4—figure supplement 1.:** ROSA-lacZ reporter mice received stereotaxic delivery of retrovirus into the DG and subsequently tamoxifen daily for 5 days starting at 2 weeks after virus injection. Reporter gene expression was analyzed at 2 weeks after the first dose of tamoxifen. Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 50 µm.
 
-Since NR1 KO newborn GCs display increased mushroom spine density at both immature and relatively mature stages during GC development, we next examined whether NMDARs functioned similarly in GCs generated during embryonic development. To delete NR1 in mature GCs, we engineered a lentivirus CAG-GFP-ires-cre (lv GFP-ires-cre;
+Since NR1 KO newborn GCs display increased mushroom spine density at both immature and relatively mature stages during GC development, we next examined whether NMDARs functioned similarly in GCs generated during embryonic development. To delete NR1 in mature GCs, we engineered a lentivirus CAG-GFP-ires-cre (lv GFP-ires-cre; Figure 5—figure supplement 1) and injected the lv GFP-ires-cre virus or a control lv GFP virus into 8-week-old Grin1f/+ and Grin1f/f mice. Lv-transduced GCs were analyzed at 28 dpi. A brief visual inspection of the sections revealed no obvious difference in the number of lv GFP-ires-cre-transduced cells in f/+ and f/f cells, consistent with the previous observation that NMDAR was not required for the survival of mature GCs (Figure 5A,B). Electrophysiological recordings showed that Cre-targeted cells did not respond to perforant path stimulation in the presence of the AMPAR blocker DNQX, confirming that Cre-expressing cells had no functional NMDARs (Figure 5C,D). There was no difference in total spine density between WT and NMDAR KO cells (Grin1f/+ GFP: 2.97 ± 0.14, n = 29 frames, Grin1f/+ cre: 3.09 ± 0.18, n = 28 frames, Grin1f/f GFP: 3.15 ± 0.10, n = 71 frames, Grin1f/f cre: 2.97 ± 0.08, n = 75 frames; Figure 5E,F). However, mature NMDAR KO GCs displayed significantly more mushroom spines than any other group (Grin1f/+ 0.128 ± 0.018, Grin1f/+ cre: 0.089 ± 0.013, Grin1f/f GFP: 0.117 ± 0.009, Grin1f/f cre: 0.193 ± 0.010, p < 0.0001; Figure 5G). Correspondingly, both the amplitude and the frequency of AMPAR-mediated mEPSCs were increased in NMDAR KO mature cells (WT: n = 7 cells, KO: n = 6 cells, p < 0.01, Kolmogorov–Smirnov test; Figure 5H–K). These data demonstrated that spine maturation and synaptic AMPAR activity were enhanced in mature GCs in the absence of NMDAR.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig5-v1.jpg)
 
-**Figure 5.:** (A, B) Representative images of mature GCs in Grin1 (f/+A) and Grin1 (f/fB) mice targeted by lv CAG-GFP-ires-cre. (C, D) Electrophysiological recordings of mature GCs in lv CAG-GFP-ires-cre-targeted mice. GFP− and GFP+ cells represent NR1 WT and KO GCs, respectively. (E) Representative images of dendritic processes in the outer molecular layer of GFP+ cells targeted by lv CAG-GFP and GFP-ires-cre. (F) NR1 KO mature GCs display similar total spine density as wild type GCs. (G) Mushroom spine density was increased in NR1 KO mature GCs (*p < 0.0001). (H, I) Sample traces of AMPAR-mediated mEPSCs in GFP− and GFP+ mature GCs in Grin1 mice targeted by lv CAG GFP-ires-cre. (f/fJ, K) Cumulative plots of mEPSC amplitude (J) and frequency (K) confirmed that AMPAR-mediated activity was enhanced in NR1 KO mature GCs. Scale bars: 100 µm (A, B) and 5 µm (E).DOI: http://dx.doi.org/10.7554/eLife.07871.010
+**Figure 5.:** (A, B) Representative images of mature GCs in Grin1f/+ (A) and Grin1f/f (B) mice targeted by lv CAG-GFP-ires-cre. (C, D) Electrophysiological recordings of mature GCs in lv CAG-GFP-ires-cre-targeted mice. GFP− and GFP+ cells represent NR1 WT and KO GCs, respectively. (E) Representative images of dendritic processes in the outer molecular layer of GFP+ cells targeted by lv CAG-GFP and GFP-ires-cre. (F) NR1 KO mature GCs display similar total spine density as wild type GCs. (G) Mushroom spine density was increased in NR1 KO mature GCs (*p < 0.0001). (H, I) Sample traces of AMPAR-mediated mEPSCs in GFP− and GFP+ mature GCs in Grin1f/f mice targeted by lv CAG GFP-ires-cre. (J, K) Cumulative plots of mEPSC amplitude (J) and frequency (K) confirmed that AMPAR-mediated activity was enhanced in NR1 KO mature GCs. Scale bars: 100 µm (A, B) and 5 µm (E).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 100 µm.DOI: http://dx.doi.org/10.7554/eLife.07871.011
+**Figure 5—figure supplement 1.:** Insets on the right side represent GFP− and β-gal-expressing cells, respectively. Scale bar: 100 µm.
 
-Although adult-born GCs only constitute a small population of GCs in the DG and most lentivirus-labeled cells should be mature GCs, we could not completely rule out the possibility that our conclusions about NMDAR-dependent inhibition on spine maturation and AMPAR activity in mature GCs might be confounded by the small population of newborn cells possibly included in our analyses. To resolve this concern, and also to determine whether NMDAR-mediated inhibition of spine maturation was specific to GCs, we examined lv GFP-ires-cre-targeted CA1 pyramidal cells in
+Although adult-born GCs only constitute a small population of GCs in the DG and most lentivirus-labeled cells should be mature GCs, we could not completely rule out the possibility that our conclusions about NMDAR-dependent inhibition on spine maturation and AMPAR activity in mature GCs might be confounded by the small population of newborn cells possibly included in our analyses. To resolve this concern, and also to determine whether NMDAR-mediated inhibition of spine maturation was specific to GCs, we examined lv GFP-ires-cre-targeted CA1 pyramidal cells in Grin1f/f mice at 28 dpi (Figure 6A,B). Since no neurogenesis occurs in the CA1 area, the pyramidal cells we examined in this area should be exclusively mature cells. Images of the apical and basal dendrites of CA1 pyramidal cells were obtained from stratum lacunosum-moleculare and stratum oriens, respectively, and were analyzed separately. NMDAR KO pyramidal cells displayed a decreased total spine density in the apical dendrites but not the basal dendrites (apical GFP: 2.63 ± 0.12, n = 38 frames, cre: 2.12 ± 0.17, n = 15 frames, p = 0.023, basal GFP: 2.59 ± 0.11, n = 28 frames, cre: 2.44 ± 0.15, n = 15 frames, p = 0.44; Figure 6C). Hippocampal CA1 pyramidal neurons have distinct compartments with differential inputs, plasticity characteristics and mechanisms crucial for integrative function (Spruston, 2008). It is possible that NMDAR subunit composition, distribution and associated signaling pathways are different in apical and basal domains. Therefore, the spine turnover rate may be low and not sufficient to amount to a visible difference in total spine number in basal but not apical dendritic branches. For example, 96% of spines in the adult mouse visual cortex remained stable through weeks of live imaging (Grutzendler et al., 2002). Consistent with the data in lentivirus-transduced GCs, mushroom spine density was significantly higher in both apical and basal dendrites of NMDAR KO pyramidal cells (apical GFP: 0.105 ± 0.012, cre: 0.192 ± 0.034, p = 0.0037, basal GFP: 0.050 ± 0.012, cre: 0.125 ± 0.030, p = 0.0077; Figure 6D). Therefore, spine maturation was also enhanced in CA1 pyramidal cells in the absence of NMDAR.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07871/elife-07871-fig6-v1.jpg)
 
-**Figure 6.:** (A) Representative image of CA1 pyramidal cells labeled by lv GFP-ires-cre. Dotted boxes indicate typical apical and basal dendrite segments for spine analysis. (B) Representative images of apical (A) and basal (B) dendrites in wild type and NR1 KO CA1 pyramidal cells. (C) Total spine density was decreased in the apical but not basal dendrites in CA1 pyramidal cells in response to NR1 deletion (*p < 0.05). (D) Mushroom spine density was increased in both apical and basal dendrites in NR1 KO pyramidal cells (*p < 0.01). Scale bars: 50 µm (A) and 2 µm (B).DOI: http://dx.doi.org/10.7554/eLife.07871.012
+**Figure 6.:** (A) Representative image of CA1 pyramidal cells labeled by lv GFP-ires-cre. Dotted boxes indicate typical apical and basal dendrite segments for spine analysis. (B) Representative images of apical (A) and basal (B) dendrites in wild type and NR1 KO CA1 pyramidal cells. (C) Total spine density was decreased in the apical but not basal dendrites in CA1 pyramidal cells in response to NR1 deletion (*p < 0.05). (D) Mushroom spine density was increased in both apical and basal dendrites in NR1 KO pyramidal cells (*p < 0.01). Scale bars: 50 µm (A) and 2 µm (B).
 
 ## Discussion
 
@@ -112,30 +112,148 @@ Experience constructs the neural network in the form of activity-dependent spine
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Grin1 floxed mice (Tsien et al., 1996) and the ROSA-lacZ reporter mice (B6;129S4-Gt(ROSA)26Sortm1sho) were maintained as homozygous in the Salk mouse facility. For some of the experiments, Grin1f/f mice were bred to Grin1f/+ mice so that littermate Grin1f/+ mice were used as controls. Mice aged 5–7 weeks were used to examine the role of NR1 in newborn GCs, and those 8 weeks old or older were used to examine the role of NR1 in mature neurons. C57Bl/6 female mice, 6 weeks old, were used to test the retrovirus GFPBcl2-ires-cre. The animal protocols were all approved by the Salk Institutional Animal Care and Use Committee.
 
-## Viruses
+### Viruses
 
 To examine stage-specific roles of the NMDAR, we developed four new cre-expressing viruses. Firstly, retrovirus CAG-GFP ires cre (rv GFP-ires-cre) was constructed for the purpose of gene deletion and the simultaneous visualization of the newborn cell morphology (Figure 1—figure supplement 1, 28 dpi). In the rv GFP-ires-cre vector, the Cre cDNA was placed after the internal ribosomal entry site to minimize the expression of Cre and potentially reduce cre-associated vector recombination in bacteria. When tested in the ROSA-lacZ reporter mice, rv GFP-ires-cre induced recombination in 97% of GFP+ cells at 6 dpi and in all GFP+ cells at 14 and 28 dpi. Secondly, a retrovirus CAG-GFPBcl2-ires-cre (rv GFPBcl2-ires-cre) was constructed so that the Cre-targeted cells also expressed the fusion protein of GFP and Bcl2 (Figure 3—figure supplement 1, 14 dpi). This virus allowed the deletion of the Grin1 gene in newborn GCs and the expression of the pro-survival protein Bcl2 in the same cells so that NR1 KO cells would be prevented from going through apoptosis. The recombination efficiency of rv GFPBcl2-ires-cre was 100% at 7 dpi. Thirdly, an inducible retrovirus CAG-GFP-t2A-creER (rv GFP-t2A-creER) was generated so that deletion of the Grin1 gene could be initiated at the desired age to bypass NR1-depedent cell survival (Figure 4—figure supplement 1, induction at 14 dpi). To test the recombination efficiency of rv GFP-t2A-creER virus in vivo, we gave tamoxifen (180 mg/kg, daily for 4–5 days) to virus-injected ROSA26-lacZ reporter mice starting from 14 and 28 days after virus injection. At 14 dpi, we observed 16% background recombination with oil control and 85% recombination in GFP+ cells. At 28 dpi, recombination efficiency was 97%. Lastly, a Cre-expressing lentivirus CAG-GFP-ires-cre was developed for deletion of the Grin1 gene in both mature and newborn cells to examine the function of NR1 in mature neurons (Figure 5—figure supplement 1, lv GFP-ires-cre, 29 dpi). Because mature cells greatly outnumbered immature cells, the Cre-targeted cells largely represented mature cells. The recombination efficiency of the lv CAG-ires-cre in ROSA reporter mice was 85% at 29 dpi. Recombinant retroviruses and lentiviruses were prepared in 293T cells as described before (Zhao et al., 2006; Tashiro et al., 2006b).
 
-## Immunohistochemistry and cell quantification
+### Immunohistochemistry and cell quantification
 
 Mouse brain sections of 40 µM thickness were prepared with a sliding microtome as described in detail (Zhao et al., 2006). Brain sections of one-in-six series were selected for DAPI staining. GFP+ cells in the GC layer were visualized and counted manually with a Nikon E800 microscope (Melville, NY, United States). The total number of labeled GFP+ cells per DG was then estimated by multiplying the number by 6.
 
-## Confocal imaging and spine analysis
+### Confocal imaging and spine analysis
 
-All images were acquired through the Bio-Rad R2100 confocal system (Berkeley, CA, United States) or the Zeiss 710/780 confocal system (Germany). Images of the whole cell morphology of GFP+ cells were taken with a 40× objective (Bio-Rad R2100) or a 25× W objective (Zeiss 710/780). GFP+ cells with at least one dendritic process terminating at the outer molecular layer were randomly picked for imaging (every nth cell depending on the labeling efficiency). If the number of labeled cells from the one-in-six series was too low to allow for 5–10 cells to be imaged, more sections were sampled to obtain enough cells from an individual mouse or until all sections were used. For spine analyses, dendritic processes of GFP+ cells in the outer molecular layer were imaged with a 60× oil objective (NA 1.4, Nikon, on Bio-Rad R2100) or with a 63× oil objective (NA 1.4, Zeiss, on Zeiss 710). The raw confocal image files were subjected to 10 iterations of deconvolution (AutoDeblur, AutoQuant, Troy, NY, United States). Dendrite measuring and spine analyses have been described in detail before (Zhao et al., 2006). The categorization of dendritic spine shape was based on qualitative criteria (Harris et al., 1992; Parnass et al., 2000). For classification of mushroom spines, major and minor axes of each spine head were measured with NeuronStudio program. A spine was judged to be of mushroom type if the head area (estimated with the function ¼ × π × Dmajor × Dminor) was ≥0.4 μm2. The absolute numbers of each spine type for the NR1 KO experiment (Figure 1G) and the Bcl2 rescue experiment (Figure 3L,Q) are summarized in Tables 1–3.10.7554/eLife.07871.013Table 1.Total number of spines evaluated in Figure 1GDOI: http://dx.doi.org/10.7554/eLife.07871.013Spine classesWTKOStubby742391Mushroom4497Thin38841643Filopodia20212110.7554/eLife.07871.014Table 2.Total number of spines evaluated in Figure 3LDOI: http://dx.doi.org/10.7554/eLife.07871.014Spine classesGFPcreBcl2Stubby306164248Mushroom231224Thin254516351835Filopodia655910410.7554/eLife.07871.015Table 3.Total number of spines evaluated in Figure 3QDOI: http://dx.doi.org/10.7554/eLife.07871.015Spine classesGFPcreBcl2Stubby572208222Mushroom10110860Thin690119842342Filopodia16078164
+All images were acquired through the Bio-Rad R2100 confocal system (Berkeley, CA, United States) or the Zeiss 710/780 confocal system (Germany). Images of the whole cell morphology of GFP+ cells were taken with a 40× objective (Bio-Rad R2100) or a 25× W objective (Zeiss 710/780). GFP+ cells with at least one dendritic process terminating at the outer molecular layer were randomly picked for imaging (every nth cell depending on the labeling efficiency). If the number of labeled cells from the one-in-six series was too low to allow for 5–10 cells to be imaged, more sections were sampled to obtain enough cells from an individual mouse or until all sections were used. For spine analyses, dendritic processes of GFP+ cells in the outer molecular layer were imaged with a 60× oil objective (NA 1.4, Nikon, on Bio-Rad R2100) or with a 63× oil objective (NA 1.4, Zeiss, on Zeiss 710). The raw confocal image files were subjected to 10 iterations of deconvolution (AutoDeblur, AutoQuant, Troy, NY, United States). Dendrite measuring and spine analyses have been described in detail before (Zhao et al., 2006). The categorization of dendritic spine shape was based on qualitative criteria (Harris et al., 1992; Parnass et al., 2000). For classification of mushroom spines, major and minor axes of each spine head were measured with NeuronStudio program. A spine was judged to be of mushroom type if the head area (estimated with the function ¼ × π × Dmajor × Dminor) was ≥0.4 μm2. The absolute numbers of each spine type for the NR1 KO experiment (Figure 1G) and the Bcl2 rescue experiment (Figure 3L,Q) are summarized in Tables 1–3.
 
-## Electrophysiology
+**Table 1.**
+ Total number of spines evaluated in Figure 1G
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spine classes</th>
+      <th>WT</th>
+      <th>KO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stubby</td>
+      <td>742</td>
+      <td>391</td>
+    </tr>
+    <tr>
+      <td>Mushroom</td>
+      <td>44</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Thin</td>
+      <td>3884</td>
+      <td>1643</td>
+    </tr>
+    <tr>
+      <td>Filopodia</td>
+      <td>202</td>
+      <td>121</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Total number of spines evaluated in Figure 3L
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spine classes</th>
+      <th>GFP</th>
+      <th>cre</th>
+      <th>Bcl2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stubby</td>
+      <td>306</td>
+      <td>164</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Mushroom</td>
+      <td>23</td>
+      <td>12</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Thin</td>
+      <td>2545</td>
+      <td>1635</td>
+      <td>1835</td>
+    </tr>
+    <tr>
+      <td>Filopodia</td>
+      <td>65</td>
+      <td>59</td>
+      <td>104</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Total number of spines evaluated in Figure 3Q
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spine classes</th>
+      <th>GFP</th>
+      <th>cre</th>
+      <th>Bcl2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stubby</td>
+      <td>572</td>
+      <td>208</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>Mushroom</td>
+      <td>101</td>
+      <td>108</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Thin</td>
+      <td>6901</td>
+      <td>1984</td>
+      <td>2342</td>
+    </tr>
+    <tr>
+      <td>Filopodia</td>
+      <td>160</td>
+      <td>78</td>
+      <td>164</td>
+    </tr>
+  </tbody>
+</table>
+
+### Electrophysiology
 
 Electrophysiological recordings of NR1 WT and KO cells were performed using a protocol that was described in detail in a previous study (Mu et al., 2011). Specifically, mice injected with retrovirus- or lentivirus-expressing GFP-ires-cre were anesthetized by isoflurane inhalation. Mouse brains were immediately removed and placed in ice-cold dissection buffer (in mM choline chloride 110, KCl 2.5, NaH2PO4 1.3, NaHCO3 25.0, CaCl2 0.5, MgCl2 7, glucose 20, Na-ascorbate 1.3, and Na-pyruvate 0.6). Horizontal slices (200 μm thick) were prepared using a Leica VT1000S vibrotome (Germany) and incubated for at least 1 hr at room temperature before recording in standard ACSF (in mM NaCl 125, KCl 2.5, NaH2PO4 1.3, NaHCO3 25, CaCl2 2, MgCl2 1.3, Na-ascorbate 1.3, Na-pyruvate 0.6, and glucose 10) that was saturated with 95% O2 and 5% CO2. Whole-cell perforated patch recordings were obtained from GCs visualized using an upright microscope (BX51WI; Olympus) with infrared differential interference contrast optics (Japan). The Cre-targeted cells were visually identified by their green fluorescence. The following drugs were used for blocking certain activities: 50–100 µM picrotoxin to block GABAergic synaptic transmission, 10 µM DNQX to block AMPAR-mediated activity, 25 µM APV to clock NMDAR-mediated activity and 1 µM TTX to block action potentials. All experiments were performed at room temperature. A bipolar tungsten electrode was used for extracellular stimulation of the perforant path, and GCs were held at −70 mV in voltage-clamp mode unless stated otherwise.
 
-## Electron microscopy and image analysis
+### Electron microscopy and image analysis
 
 Tissue processing for electron microscopy was performed as described previously (Toni et al., 2008). Briefly, mice were transcardially perfused with 4% paraformaldehyde and brains were cut coronally at a thickness of 50 μm. Sections were cryoprotected, briefly freeze-thawed four times in liquid nitrogen and treated with 0.3% hydrogen peroxide. After a block with 0.5% bovine serum albumin, slices were incubated 40 hr with rat anti-GFP antibody (1:500, Chemicon) at 4°C on a shaker. After washing, sections were incubated for 5 hr at 5°C in biotinylated secondary antibody (goat anti-rabbit, Fac fragment, 1:500, Chemicon). Sections were then incubated in avidin biotin peroxidase complex (ABC Elite, Vector laboratories), followed by 3,3′-diaminobenzidine tetrachloride for 10–20 min to obtain a dark residue in labeled cells. Sections were next postfixed in 2.5% glutaraldehyde, followed by 1% osmium tetroxide, dehydrated in ascending concentrations of ethanol and then acetone, and finally embedded in Epoxy resin. Sections of a thickness of 50 nm were contrasted with uranyl acetate followed by lead citrate and observed on a Philips CM10 electron microscope (Hillsboro, OR, United States), at a magnification of 13,500×. Synapses were defined by the presence of at least three presynaptic vesicles within 50 nm of the presynaptic membrane, a clearly defined synaptic cleft and a postsynaptic density. Spines were serially sectioned and the surface area of each segment was measured on every image. Volumes were obtained by multiplying the surface area, the section thickness and the number of sections.
 
-## Statistical analysis
+### Statistical analysis
 
 All data were presented as mean ± standard error. Statistic comparisons were done using unpaired two-tailed t-test, except that the Kolmogorov–Smirnov test was used for data analyses on AMPAR mEPSCs.

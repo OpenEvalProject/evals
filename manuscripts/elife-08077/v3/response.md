@@ -81,9 +81,7 @@ We have previously published an analysis of the bone mineralization (Macrae et a
 
 6) Please give evidence of talpid3 columnar chondrocytes where cell division angle is abnormal. Suggest giving higher magnification image of data in Figure 3G and H. Please provide numbers of cells counted. Graph Figure 3I shows 11% of Wt cells align within 25o of expected angle, while in the Results the authors state that all Wt cells align within 20°.
 
-We apologize for the ambiguity. Our results, as written were based on 50 bins of degrees, which was more precise (Author response image 1). However we increased the bin size in the graph in the submission for size. The data has now been removed.10.7554/eLife.08077.011Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08077.011
-
-DOI: http://dx.doi.org/10.7554/eLife.08077.011
+We apologize for the ambiguity. Our results, as written were based on 50 bins of degrees, which was more precise (Author response image 1). However we increased the bin size in the graph in the submission for size. The data has now been removed.10.7554/eLife.08077.011Author response image 1.
 
 7) In Figure 3J, K, what are the VANGL2 foci and what is the precedence that this is a marker of polarity in columnar chondrocytes? Please indicate in the figure examples of cells counted as having one or two foci or dispersed VANGL2 expression, higher magnification images may help. Please provide numbers of cells counted and statistical analysis.
 

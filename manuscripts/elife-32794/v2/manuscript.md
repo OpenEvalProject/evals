@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.32794.001 The shape and function of plant cells are often highly interdependent. The puzzle-shaped cells that appear in the epidermis of many plants are a striking example of a complex cell shape, however their functional benefit has remained elusive. We propose that these intricate forms provide an effective strategy to reduce mechanical stress in the cell wall of the epidermis. When tissue-level growth is isotropic, we hypothesize that lobes emerge at the cellular level to prevent formation of large isodiametric cells that would bulge under the stress produced by turgor pressure. Data from various plant organs and species support the relationship between lobes and growth isotropy, which we test with mutants where growth direction is perturbed. Using simulation models we show that a mechanism actively regulating cellular stress plausibly reproduces the development of epidermal cell shape. Together, our results suggest that mechanical stress is a key driver of cell-shape morphogenesis.
+The shape and function of plant cells are often highly interdependent. The puzzle-shaped cells that appear in the epidermis of many plants are a striking example of a complex cell shape, however their functional benefit has remained elusive. We propose that these intricate forms provide an effective strategy to reduce mechanical stress in the cell wall of the epidermis. When tissue-level growth is isotropic, we hypothesize that lobes emerge at the cellular level to prevent formation of large isodiametric cells that would bulge under the stress produced by turgor pressure. Data from various plant organs and species support the relationship between lobes and growth isotropy, which we test with mutants where growth direction is perturbed. Using simulation models we show that a mechanism actively regulating cellular stress plausibly reproduces the development of epidermal cell shape. Together, our results suggest that mechanical stress is a key driver of cell-shape morphogenesis.
 
 ## Introduction
 
@@ -50,7 +50,7 @@ Here we explore the relationship between cell shape and mechanical stress, to un
 
 ## Results
 
-## Cell shape predicts mechanical stress magnitude
+### Cell shape predicts mechanical stress magnitude
 
 Using the Finite Element Method (FEM), we performed simulations on single cells with idealized shapes to explore the effect of cell shape on turgor-induced mechanical stresses (the trace of the Cauchy stress tensor) in the cell wall (Bassel et al., 2014). To assess basic relations between cell shape and stress we used uniform, isotropic elastic properties for cell walls, which were assumed to have cell wall thickness of 1 µm, and pressurized the cells to 5 bar (note that this neglects inhomogeneities in the cell wall, as for example observed by Majda et al., 2017). Starting with a small cube-shaped cell (10 × 10 × 10 µm) we increased the initial cell size in different dimensions to observe the effect on stress following pressurization. We observed that an increase of cell length in one direction (50 × 10 × 10 µm) does not significantly increase maximal stress in the cell wall (Figure 1B). This suggests that anisotropic growth that results in long thin cells is a mechanically advantageous strategy to limit stress magnitude, limiting the wall thickness required to maintain the cell's integrity. Next, we simulated a cell expanded in two directions (50 × 50 × 10 µm) and observed that the maximal stress was much higher. Enlarging the cell in two directions created a large open surface area, causing the cell wall to bulge out in response to turgor pressure, greatly increasing the stress. When the third dimension is enlarged to form a cube (50 × 50 × 50 µm), only a small increase in maximal stress is observed compared to the 50 × 50 × 10 µm case. Thus if a cell must increase its size, an effective way to do it without increasing stress is to elongate along a single axis, instead of expanding in two or three dimensions. Plant organs such as roots, hypocotyls, sepals, many grass leaves and stems grow primarily in one direction and have elongated cells, which would maintain low stress during growth. But how do cells avoid excessive stress if they are part of a tissue that grows in two directions, such as the surface of broad leaves?
 
@@ -60,15 +60,23 @@ Next, we asked how the presence of lobes affects mechanical stress in the cell w
 
 Following these observations, we propose that the size of the largest empty circle (LEC) that can fit into the cell contour (Figure 1G, yellow) can serve as a proxy for mechanical stress magnitude in both puzzle and non-puzzle shaped cells. For long thin cells, such as in roots or stems, the size of the empty circle is the cell diameter, which is known to predict stress for cylindrical cells (Geitmann and Ortega, 2009). We hypothesize that in a strongly anisotropically growing organ the plant would make long thin cells, whereas in more isotropic organs puzzle cells would be produced. Counter-intuitively, it is the requirement for isotropic expansion at the tissue scale that drives the irregular shape of puzzle cells.
 
-## Cell shape measures
+### Cell shape measures
 
 To test our hypothesis, a method to quantify the puzzle shape of cells was required. As the epidermis is a surface of relatively uniform thickness, most shape measures applied to puzzle cells consider only the 2D form of cells, and several methods have been developed for this purpose (see Zhang et al., 2011; Wu et al., 2016, and references therein). A common measure to estimate the complexity of a contour is circularity, indicating how closely a given object resembles a circle. Circularity is calculated using the ratio of the perimeter to the square root of area (Zhang et al., 2011; Majda et al., 2017). However, it is not suitable for our purposes as both simple, elongated cells and lobed puzzle cells have increased circularity values. Consequently, it cannot be used to reliably distinguish between these cell shapes. Another common approach is to calculate a skeleton based on the cell contour and count its branches (Le et al., 2006). Unfortunately skeletonization methods can be very sensitive to small changes in shape (such as the error produced by discretization) making it difficult to robustly quantify the geometric features of cells.
 
 Here we use a method based on the convex hull (Wu et al., 2016), the smallest convex shape containing the cell (think of a rubber band surrounding the cell). We define cell lobeyness as the perimeter of the cell divided by the perimeter of its convex hull (Figure 1G, white and red, respectively). The higher this value, the more lobed the cell is expected to be. The ratio of the cell's convex hull area to that of the cell is another possibility, however we found that for important special cases, such as worm or boomerang-shaped cells, using the area may produce high ratios even when cells do not have significant lobes. The ratio of perimeters (perimeter of the cell/perimeter of its convex hull) is less affected in these cases.
 
-## A mechanistic model of puzzle shape emergence
+### A mechanistic model of puzzle shape emergence
 
 Cortical microtubules are thought to direct the deposition of cellulose fibrils in the cell wall (Green, 1962; Paredez et al., 2006). These fibrils stiffen the cell wall, causing growth to be favored in the direction perpendicular to the fibrils (Suslov and Verbelen, 2006). Cortical microtubules have also been shown to orient along the maximal direction of tensile stress (Hejnowicz et al., 2000; Hamant et al., 2008). The fact that growth anisotropy affects cell shape and cell shape affects stress, suggests a feedback mechanism linking cell shape and growth via the response of cortical microtubules to mechanical stress directions. This idea is supported by experimental and modeling work showing that predicted stress directions in puzzle cells align with cortical microtubule direction in Arabidopsis cotyledons (Sampathkumar et al., 2014).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mechanical representation of cells. Cell walls are discretized into a sequence of point masses (blue circles) connected by linear wall-segments (black lines). Growth restricting connections (red lines) join point masses across the cell. The forces acting on the point mass are produced by stretching of wall segments and growth restricting connections as well as bending of the cell wall at the mass. (B–C) The simulation loop consists of 3 steps (B), as depicted for a diagrammatic example in (C). Step 1: additional transversal springs (red) are added to the model to represent oriented cell wall stiffening components guided by microtubules connecting opposing sides of the cell. They act like one-sided springs, in that they exert a force when under tension (i.e. stretched beyond their rest length), but are inactive when compressed. This is consistent with the high tensile strength of cellulose. Step 2: the tissue is scaled to simulate growth, which can have a preferred direction (i.e. is anisotropic). Step 3: the network of springs reaches mechanical equilibrium. Transversal springs restrict cell expansion in width, causing cell walls to bend. Before the next iteration, wall springs are relaxed and transversal springs are rearranged to reflect the new shape of cells. Cell shapes emerging in the model are determined by the nature of the assumed tissue growth direction. Note that in (C) the deformation of the cell causes the placement of growth restrictions to change during the subsequent iteration, where the green mass at the lobe tip attracts more connections on the convex side and loses connections on the concave side (in line with the model assumption of not restricting growth in concave regions).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** See Appendix Mechanical simulation for details. The linear spring connecting masses mi and mj is shown, and generates a force parallel to the line connecting their positions Pi and Pj (green line with arrowheads). The bending spring in cell c at mass mn generates a force acting on mn and the neighboring masses mo and mr. The sign and magnitude is determined by θ (the signed angle between Po and Pr). The vector do (the outward facing normal to the cell wall spanning Pn and Po) determines the direction of the force acting on mass mo. The vector dr is defined similarly, and determines the direction of the force acting on mr. The force acting on mass mn balances those acting on masses mo and mr.
 
 Here we propose a dynamic simulation model of puzzle cell patterning based on the idea that cells can respond to mechanical signals generated by cell geometry. The model focuses on the developmental stage when cells stop dividing and begin to expand. The basic principle behind the model is that as cells grow, stresses gradually increase, and when they reach a threshold level the cell wall is reinforced to resist these stresses. Using simulations on idealized cell templates, we test whether this basic principle is sufficient to generate different cell shapes, depending on the anisotropy of tissue growth. The emerging cell shapes primarily arise from the growth direction imposed at the tissue level that is locally modulated by stress-based growth restriction.
 
@@ -76,17 +84,73 @@ We present the essential aspects of the model here (Figure 2), but refer the rea
 
 If tissue growth is isotropic, cells quickly approach their target LEC, and connections representing the cellulose and microtubules begin to stretch. Lobes emerge as the indentations (concave regions) attract more connections and protrusions (convex regions) lose connections (Figure 2C, Video 1). The increased number of connections at indentations is an emergent geometric effect. As the indentation deepens, and its tip becomes more exposed, it becomes the closest node to a larger number of nodes on the opposing cell wall, thus attracting more connections. This is consistent with the findings of Sampathkumar et al. (2014), who detected oriented patterns of mechanical anisotropy with atomic force microscopy, consistent with the proposed directed accumulation of cellulose microfibrils in the indentations of puzzle cells. These connections act as a proxy for the additional stress in the indentations (Figure 1). Interestingly, the accumulation of connections in the indentations is consistent with the observed auto-catalytic effect of microtubule bundling in indentations in real pavement cells, via induced ROP6/RIC1/katanin-dependent microtubule severing activity (Lin et al., 2013; Sampathkumar et al., 2014). Conversely, protrusions gradually lose connections as neighboring nodes become closer to opposing portions of the cell wall. This is enhanced by the model assumption that connections cannot be made across the cell to opposite walls from regions that are too convex (i.e. in the lobes, Figure 3A,D). If the simulation is performed with anisotropic growth, the cellulose-microtubule connections are never stretched significantly beyond the LEC, and cells simply elongate, and lobes do not emerge (Figure 3B,E). In other words, stress-based activation of connections induces indentations, coinciding with locations of ROP6 activity, which necessarily generate incipient lobes in adjacent portions of the cell-wall where ROP2 is localized, accentuating their outgrowth. Thus, although phrased in geometric terms, our model is consistent with both the antagonistic local molecular interactions of ROP2-ROP6 and the stress-based feedbacks proposed by Sampathkumar et al. (2014).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig3-v2.jpg)
+
+**Figure 3.:** (A) Starting with meristematic-like cells (top), growing the tissue isotropically, i.e. equally in all directions (arrows), produces puzzle-shaped cells (middle) that resemble cotyledon epidermal cells (bottom). (B) Growing the tissue primarily in one direction (anisotropically) results in elongated cells (middle) as observed, for example, in the petiole (bottom). (C) A gradient of growth anisotropy (increasing left to right) produces a spatial gradient of cell shapes (middle), as observed between the blade and midrib of a leaf (bottom). (D–E) Connections of transversal springs (red) restricting growth in each simulation step in tissues with isotropic (D) and anisotropic (E) growth. To make connections more apparent, only 50% are visualized. (F–G) Cell outlines from 2D models with isotropic growth were used to generate 3D templates for FEM models (growth progresses from left to right, scale bars: 80 µm). (F) As the tissue grows, cells lacking transversal springs conserve their original shape. In pressurized cells, mechanical stress increases with the cell size. (G) When transversal springs are added, tissue expansion generates lobed cells. (H) Average stress in the cell increases with cell area in the polygonal cells (yellow, pink, red), while stress plateaus during tissue grows when cells form lobes (cyan, green). Points of each color represent cells of increasing size, with stresses calculated using the FEM model. Color scale: trace of Cauchy stress tensor in MPa.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The wild type isotropic simulation was used as the reference simulation (A, 100%), and parameters were varied independently. Isotropy was varied from 40% to 100% of the reference value and all other parameters were varied from (at least) 25% to 200%. Snapshots of the final stage of each simulation are displayed. The varied parameters were: (A) growth isotropy (growth in width vs growth in length), (B) bending stiffness, (C) cellulose connection stiffness, (D) stretching stiffness, (E) target LEC, (F) normal angle.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Using a different parameter set compared to Figure 3—figure supplement 1A, growth isotropy was varied while all other parameters were constant. Compared to Figure 3—figure supplement 1A, target LEC has been increased by 100%, simulation time extended by 10%, and the initial cellular template was changed to that shown in (A). (B) Snapshots of the final stage of each simulation as isotropy (growth in width vs growth in length) was varied from 50% to 100% Although cell morphology changes, the relation between isotropy and puzzle-cell development is maintained.
+
+![Video 1.](https://cdn.elifesciences.org/articles/32794/elife-32794-video1.mp4.jpg)
+
+**Video 1.:** The tissue is shown at two scales: unscaled (Left) and scaled to maintain a constant tissue width (Right). Red lines traversing cell-interiors correspond to active growth restrictions. Scale bar indicates a constant reference length.
+
 The main parameters of the model are the stiffness of the cell walls and the cellulose-microtubule connection springs, the target LEC, the angle within which connections can be made, and the convexity criteria for attachment to the opposing wall (see Appendix Table 1 for parameter values). To examine the contribution of growth distribution to cell shape we varied growth anisotropy while all other model parameters remained constant (Figure 3A–C). In this case, the emergence of puzzle vs. elongated cells depends only on the anisotropy of growth at the tissue scale, with puzzle cells appearing for isotropic growth, and elongated cells for anisotropic growth (Video 1, Video 2). If the growth specified has a gradient of anisotropy at the tissue scale, a gradient of cell shapes from elongated to lobed is produced (Video 3). Similar gradients in cell shape are seen in A. thaliana leaves, where elongated cells cover the anisotropically growing midrib, whereas lobed cells adorn the adjacent isotropically growing leaf blade (Figure 3C).
 
+![Video 2.](https://cdn.elifesciences.org/articles/32794/elife-32794-video2.mp4.jpg)
+
+**Video 2.:** The tissue is shown at two scales. (Left) Scaled to maintain a constant tissue width. (Right) Scaled so that the largest dimension of the tissue is constant. Scale bars indicate a common constant reference length.
+
+![Video 3.](https://cdn.elifesciences.org/articles/32794/elife-32794-video3.mp4.jpg)
+
+**Video 3.:** Growth anisotropy increases linearly from left to right. The tissue is shown at two scales: unscaled (Left) and scaled to maintain a constant tissue width (Right). Red lines traversing cell interiors correspond to active growth restrictions. Scale bar indicates a constant reference length.
+
 To explore the effect of model parameters on cell morphology we performed a parameter space exploration using the simulation with isotropic growth as a reference (Figure 3A). We varied isotropy within a range of 40–100% of the reference value and all other parameters within a range of at least 25–200% (Figure 3—figure supplement 1, Videos 5–10). This exploration showed that when growth is anisotropic, there is no strict 'threshold' for the onset of lobing, but rather it is a continuous characteristic. This feature is preserved when the initial template and additional parameters are varied (Figure 3—figure supplement 2). Parameter variation also demonstrates that the model can generate a diverse range of plausible cell shapes, similar to those observed in nature (e.g. Figure 3—figure supplement 2B 60% isotropy; which are reminiscent of epidermal cells in maize leaves).
+
+![Video 5.](https://cdn.elifesciences.org/articles/32794/elife-32794-video4.mp4.jpg)
+
+**Video 5.:** Using the wild type isotropic simulation as a reference, growth isotropy (growth in width/growth in height, or gx/gy in Appendix) is varied from 50% to 100% of the reference value in regular increments. Successive frames show the final stage of each simulation as isotropy is increased. Scale bars indicate a constant reference length.
+
+![Video 6.](https://cdn.elifesciences.org/articles/32794/elife-32794-video5.mp4.jpg)
+
+**Video 6.:** Using the wild type isotropic simulation as a reference, bending stiffness (kb in Appendix) is varied with respect to the reference value from 5% to 25% and then from 25–200% by increments of 25%. Successive frames show the final stage of each simulation as the bending stiffness is increased. Scale bars indicate a constant reference length.
+
+![Video 7.](https://cdn.elifesciences.org/articles/32794/elife-32794-video6.mp4.jpg)
+
+**Video 7.:** Using the wild type isotropic simulation as a reference, cellulose connections stiffness (km in Appendix) is varied with respect to the reference value from 0–200% by increments of 25%. Successive frames show the final stage of each simulation as the cellulose connections stiffness is increased. Scale bars indicate a constant reference length.
+
+![Video 8.](https://cdn.elifesciences.org/articles/32794/elife-32794-video7.mp4.jpg)
+
+**Video 8.:** Using the wild type isotropic simulation as a reference, stretching stiffness (ks in Appendix) is varied with respect to the reference value from 25–200% by increments of 25%. Successive frames show the final stage of each simulation as the stretching stiffness is increased. Scale bars indicate a constant reference length.
+
+![Video 9.](https://cdn.elifesciences.org/articles/32794/elife-32794-video8.mp4.jpg)
+
+**Video 9.:** Using the wild type isotropic simulation as a reference, target LEC (minmicro in Appendix) is varied with respect to the reference value from 0–200% by increments of 25%. Successive frames show the final stage of each simulation as the target LEC is increased. Scale bars indicate a constant reference length.
+
+![Video 10.](https://cdn.elifesciences.org/articles/32794/elife-32794-video9.mp4.jpg)
+
+**Video 10.:** Using the wild type isotropic simulation as a reference, normal angle (θmicro in Appendix) is varied with respect to the reference value from 25–200% by increments of 25%. Successive frames show the final stage of each simulation as the normal angle is increased. Scale bars indicate a constant reference length.
 
 To validate the model, we confirmed in a FEM analysis that limiting the size of the LEC by creating lobes during growth reduces the cellular stress (Figure 3F–G). This causes the maximum stress in simulated tissues to plateau, greatly reducing it compared to isodiametric cells of the same size (Figure 3H). The model thus illustrates how a mechanism actively limiting the mechanical stress of cells by restricting large open areas (LECs) can lead to the formation of puzzle-shape cells in the context of isotropic growth.
 
 The model relies on cell-autonomous mechanical restriction of indentations through controlled cellulose deposition and does not require cell-cell signaling molecules to synchronize the indentations in one cell with the protrusions of its neighbor. Nonetheless, synergies exist between the mechanical and biochemical control of cell morphogenesis. In particular, the ROP6 in the indentation of one cell must coincide with ROP2 in the corresponding lobe of the neighboring cell. Although mobile biochemical signals cannot be ruled out (Xu et al., 2010), our model predicts that this signal could be passed through the geometry of the cells via its effect on stress patterns or geometry, with indentations attracting microtubule-cellulose deposition and ROP6, and lobes suppressing microtubules via the cell-autonomous co-repression of ROP2 and ROP6.
 
-## Isotropic tissue growth is correlated with puzzle-shaped cell formation
+### Isotropic tissue growth is correlated with puzzle-shaped cell formation
 
 Our model predicts that puzzle cells should appear when cells stop dividing and tissue growth is not primarily in one direction. To test this prediction experimentally, we performed time-lapse confocal imaging on cotyledons (n = 3 time-lapse series), which have a blade of roughly isodiametric shape, growing from 2 to 4 days after germination (DAG). Epidermal cells of Arabidopis thaliana cotyledons begin to acquire a puzzle-shaped morphology roughly 2 DAG, whereas the organ achieves its characteristic round shape at approximately 3 DAG, long before reaching its final size (Zhang et al., 2011). We used MorphoGraphX (Barbier de Reuille et al., 2015) to extract growth rates and directions, and these results confirm that the overall growth of cotyledons is isotropic as suggested by its round shape. To examine the correlation between growth anisotropy and lobeyness we pooled the data from the final time-point of our time-lapse series. We then extracted the largest 100 cells from this set (i.e. those most likely to be affected by the stress-minimizing mechanism) and found a significant correlation between growth anisotropy and lobeyness (Pearson correlation coefficient r = −0.46, p=0.6 × 10−6). This supports our hypothesis that growth anisotropy and lobeyness are inversely related in the isotropically growing cotyledons of Arabidopsis (see also Figure 4A, Figure 4—figure supplement 1C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig4-v2.jpg)
+
+**Figure 4.:** (A-B) Time-lapse confocal imaging. Pictures were taken every 48 hr and analyzed using MorphoGraphX. The last time point of each series is shown. Growth anisotropy between 2 and 6 days after germination (DAG), calculated as the expansion rate in the direction of maximal growth divided by expansion rate in the direction of minimal growth, and cell lobeyness in wildtype (A) and p35S::LNG1 (B) cotyledons. The p35S::LNG1 cotyledon displays more anisotropic growth and less lobed epidermal cells. Scale bars: 50 µm. (C-E) p35S::LNG1 T1 plants with wild type-like phenotype (C, 61/98 plants), strong phenotype with dramatically elongated cotyledons and leaves (D, 16/98 plants) and intermediate phenotype with elongated cotyledons but wt-like leaves (E, 12/98 plants). Cotyledons are marked by white dots. The remaining nine obtained plants displayed elongated costyledons and mildly elongated leaves (not shown). (F-I) Confocal images of epidermal cells. Scale bars: 20 µm. (F) shows cells from a leaf in (C), (G) shows cells from a leaf in (D), (H) shows cells from a cotyledon in (E), and (I) shows cells from a leaf in (E). (J-K) Epidermal cell outlines from fruit with more isotropic shapes (silicles, J) and more anisotropic shapes (siliques, K).Fruit images reproduced from Figure 4 and S4 of Hofhuis et al., 2016; published under the terms of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/). Cell outlines reproduced from Figure 2 of Hofhuis and Hay (2017), adapted with permission from John Wiley and Sons. Scale bars: 10 µm for cell outlines, 1 mm for fruit. (L) Depolymerization of cortical microtubules by oryzalin treatment causes cells of NPA-treated meristems to expand without division, ultimately leading to the rupture of the cell wall due to increased mechanical stress. Regions where cells have ruptured (white stars) are primarily located on the flanks of the meristems, where cells are larger. Scale bar: 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Pictures were taken at 24 hr intervals for 3 days (A, wild type sepal; B, ftsh4 sepal) or 2 days (C, wild type cotyledon) and analyzed using MorphoGraphX. The last time point of each series is shown. Characterization of growth anisotropy (expansion rate in the direction of maximal growth divided by expansion rate in direction of minimal growth) and cell shape (lobeyness and LEC radius) in wildtype sepal, ftsh4 sepal and the wild type cotyledon, scale bars: 50 µm. Growth patterns of the wild type and ftsh4 sepals shown were previously described in (Hervieux et al., 2016) and (Hong et al., 2016), respectively.
 
 In contrast to cotyledons, the Arabidopsis sepal is an elongated organ with epidermal cells that are either small and relatively isodiametric in shape, or large and elongated. Sepals initiate from a band of cells in the floral meristem, undergoing strongly anisotropic growth (Hervieux et al., 2016) which produces giant cells that are far less lobed than those of the cotyledon (compare Figure 4—figure supplement 1A and C). Thus growth isotropy and final organ shape correlate with lobeyness in these two organs.
 
@@ -96,31 +160,51 @@ The opposite change in growth anisotropy and organ shape can be seen in plants o
 
 To further test the generality of the correlation between organ and cell shape, we examined fruit epidermal cells in a sample of 21 species from the Brassicaceae family (full dataset shown in Hofhuis and Hay, 2017). These fruit pods were either elongated siliques or short, rounded silicles and we only observed puzzle-shaped cells in silicles, not in siliques (Figure 4J,K). This strict correspondence between fruit shape and puzzle-shaped epidermal cells fits the prediction of our model that puzzle shapes are required to allow cells to enlarge in isotropically growing tissues, but are not required in elongated organs.
 
-## Lobeyness allows cells to increase their size while avoiding excessive mechanical stress
+### Lobeyness allows cells to increase their size while avoiding excessive mechanical stress
 
 Our model predicts that plant cells regulate their shape to prevent their LEC, a proxy for stress, from becoming too large. To test this hypothesis, we imaged cells of young cotyledons at different stages of growth and tracked changes in cell and LEC area. We reasoned that if the cell area increases faster than LEC area, cells must have a mechanism to maintain a low LEC radius. We imaged 1, 2, 4 and 6 DAG seedlings, as within this time window we could qualitatively observe the most dramatic increase in cellular lobeyness. In the epidermal cells of 2 DAG seedlings, lobes were small or absent in most cells, while 6 days after germination most cells were puzzle-shaped (Figure 5C). For each time point we imaged up to 10 plants and segmented several hundred cells from each plant using MorphoGraphX. We then pooled all cells from each timepoint and calculated average cell area and LEC area for the largest 20% of cells (Figure 5A, Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig5-v2.jpg)
+
+**Figure 5.:** (A) Average LEC area of wild type and spk1 cotyledons vs. average cell area. The red line represents the theoretical case of a perfectly circular cell. In this case cell area and LEC area increase at the same rate. For the cell area and the LEC area analysis we considered the average values for the largest 20% of segmented cells in order to avoid bias stemming from the much smaller cells of the stomatal lineage, which due to their small size would not need to regulate their LEC. For average values for each point, including sample size and SE, see Figure 5—source data 1. (B) Time-lapse data on wild type and spk1 cotyledons. Plants were imaged twice in 48 hr intervals. Heat maps are displayed on the last time points. Scale bar: 100 µm. (C and D) Examples of cell shapes in the experiment shown in (A). Scale bars: 50 µm. (C) Wild type. (D) spk1. (E) Confocal image of spk1 cotyledon, 8 DAG. Note the gaps between cells and ruptured stomata that typify spk1 phenotype (arrows indicate several examples). (F) Model result with placement of transverse connections in lobe tips combined with parameter changes to account for defects in ROP-mediated cytoskeletal rearrangement (see main text).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Cumulative distribution of growth anisotropy (A), lobeyness (B) and LEC radius (C) of cells of wild type and spk1 cotyledons. A Kolmogorov-Smirnov test performed on data from time-lapse imaging experiments (Figure 5B) showed that growth anisotropy and cell lobeyness are statistically different in spk1 compared to wild type (A, B), while there is no statistically significant difference of LEC radius distribution between the two genotypes (C). We consider two distributions different if the p-value is higher than 0.05. This suggests that cells arrive at similar mechanical stress levels (here represented by LEC size) in different ways.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The FEM simulations were performed as described for the data in Figure 1, using spike1 epidermal cells. Color scale: trace of Cauchy stress tensor in MPa.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Data obtained from the data displayed in Figure 5A. For mean average values including SE, please see Figure 5—source data 2.
+
 We compared these values to the case where cells are perfectly isodiametric (i.e. circles) so that the cell area and LEC area are equal (Figure 5A, red line). Our results show that as the cotyledon grows, the ratio of average LEC area to average cell area increases slower than when the cell is circular. Consequently, as organ development progresses, cell area increases faster than LEC area, consistent with the idea that increased lobeyness allows surface area to increase faster than the magnitude of stress (Figure 5A, blue signs).
 
-## Experimental evidence that mechanical stress needs to be managed
+### Experimental evidence that mechanical stress needs to be managed
 
 Our model and experiments show that a mechanism, likely cortical-microtubule dependent, generates puzzle shapes to limit stress in large cells when tissue growth is isotropic. It is commonly observed that the periclinal cell walls slightly bulge out in healthy, turgid cells. However, if stress is indeed a developmental constraint, then when cells grow isotropically without this mechanism, they should bulge excessively, reach their rupture point and burst. The shoot apex of Arabidopsis grows isotropically in areas without lateral organs (Kwiatkowska and Dumais, 2003; Kierzkowski et al., 2012), with the cells presumably managing their mechanical stress by employing cell division to remain small. In plants grown with auxin transport inhibitor 1-N-naphtylphtalamic acid (NPA), the shoot apex is unable to produce lateral organs, and is uniformly covered in small rapidly dividing cells of isodiametric shape (Reinhardt et al., 2000). Treating these meristems with oryzalin, a chemical compound that depolymerizes cortical microtubules, blocks cell division and anisotropic growth restriction, preventing the formation of puzzle shapes. It has been shown in Arabidopsis hypocotyls that oryzalin treatment changes the trajectory of cellulose microfibril-producing molecules (CESA), as there is no organized cortical microtubule array to follow, but does not appear to change the rate of cellulose production (Chan et al., 2010). As such, although oryzalin makes cell walls mechanically isotropic by preventing the directionally organized deposition of cellulose, it does not necessarily reduce the overall deposition of cellulose, although this cannot be precluded. Cells of shoot apices in these conditions do not divide, but continue to grow developing large, isodiametric shapes that tend to balloon out (Hamant et al., 2008; Corson et al., 2009; Grandjean, 2004).
 
 After treating naked meristems of NPA-grown seedlings with oryzalin (five biological replicates), 20 displayed full microtubule depolymerization following oryzalin treatment (as assessed by the absence of cell division). In those 20 samples, we could see cell bursting in the latest time points of 13 samples, out of which 10 displayed bursting cells located in the flank of the meristem, where cells were substantially larger (Figure 4L). Although it cannot be completely excluded that these lateral cells, under these experimental conditions, have different wall properties, the most parsimonious explanation is that their cell walls could not withstand the increasing mechanical stress induced by the isotropic expansion. This provides direct experimental support for the proposition that large isodiametrically shaped cells are not viable due to the high stresses on their walls.
 
-## A strategy for when lobes cannot be formed
+### A strategy for when lobes cannot be formed
 
 Previous reports have shown that lobe formation in pavement cells is compromised in spike1 (spk1) mutants (Qiu et al., 2002). The SPIKE1 protein is a guanine nucleotide exchange factor (GEF) and is required for the production of the active, GTP-bound form of ROP proteins molecular switches that deliver signals to downstream components. SPIKE1 regulates actin polymerization via WAVE and ARP2/3 complexes (Basu et al., 2008). Furthermore, it activates ROP2, ROP4 and ROP6, thereby promoting isotropic cell expansion (Ren et al., 2016). Mutant plants have a number of severe phenotypes including reduced trichome branching, altered organ shape and increased sensitivity to low humidity environments. Epidermal cells of spk1 plants have altered shape, with lobes either small or absent, and compared to wild type, their overall cell shape is much less complicated. Furthermore, the epidermis suffers from defects in cell-cell adhesion, which have been reported to result in gaps between cells that are clearly visible in the cotyledon epidermis from approximately 5 DAG on (Qiu et al., 2002; Ren et al., 2016). It has been reported that spk1 cotyledons are narrower, but not longer than wild type cotyledons (Qiu et al., 2002) and spk1 petals display an increase in growth anisotropy at late stages of development, after the general shape of the organ has been established (Ren et al., 2016).
 
 In spk1, epidermal cells of the cotyledons do not have puzzle-shaped forms (Figure 5B,D,E, Figure 5—figure supplement 1B), even though the tissue growth isotropy is similar to wild type plants (n = 3 time-lapse series, Figure 4B, Figure 5—figure supplement 1A – cellular growth anisotropy shows a small statistical difference in that spk1 grows more anisotropically than wild type). Given our hypothesis that lobes function to reduce mechanical stress (LEC size) during isotropic growth, we tested if LEC was higher in the simple-shaped cells of spk1 mutant than in the puzzle-shaped cells of wild type. In our time-lapse experiment, even though lobeyness is greatly reduced in spk1, LEC radius in the final time point is comparable to wild type (Figure 5B, Figure 5—figure supplement 1C). Our FEM simulations revealed that cellular stresses in wild type and spk1 cells are similar and scale with LEC (compare Figure 1C and Figure 5—figure supplement 2). We also performed the same analysis as for wild type, imaging spk1 cotyledons 1, 2, 4 and 6 DAG and measuring cell area and LEC area (Figure 5C,D). This revealed a similar trend to that observed in the wild type, with cell area increasing faster than LEC area (Figure 5A) during the course of organ development. At the same time, mean average cell area in spk1 remained similar or lower than in wild type until 6 DAG (Figure 5—figure supplement 3). Cells of the spk1 mutant keep LEC low and overall organ growth remains isotropic. Similar LEC size in mutant and wild type suggests that LEC acts as a threshold for stress based cell shape modification. However, instead of forming lobes, the spk1 cells themselves seem to interdigitate generating worm-like shapes. It is possible that this strategy is insufficient, as holes appear between cells in the growing epidermis of cotyledons (Figure 5E), which may be due to increased mechanical stress. However, since holes are already present in cotyledons at 1 DAG it is more likely that they result from direct disruption of the molecular process regulating cellular adhesion, such as actin-driven pectin delivery to cell walls, causing defects prior to the stress-based shape patterning where the final cell shape is established. The spk1 mutant is unable to make lobes because it fails to activate ROPs which interact with effector proteins to mediate cytoskeletal rearrangements and cell shape (Basu et al., 2008). In our model framework, ROP2 activity would preclude connections where walls have high curvature, thus preventing connections from penetrating lobes. Apart from removing this assumption from the model, we increased the stiffness of connections and the cell-wall, and decreased the frequency at which connections were reset, to account for defects in ROP-mediated cytoskeletal rearrangement. These three changes to the initial simulation allowed us to reproduce the spk1 phenotype (Figure 5F, Video 4). This suggests that creating interdigitated worm-shaped cells provides an alternate strategy to cover an isotropically growing tissue, although possibly not as efficient in reducing stress as lobe formation.
 
-## Cell shape and size across species
+![Video 4.](https://cdn.elifesciences.org/articles/32794/elife-32794-video10.mp4.jpg)
+
+**Video 4.:** The tissue is shown at two scales: unscaled (Left) and scaled to maintain a constant tissue width (Right). Red lines traversing cell-interiors correspond to active growth restrictions. Scale bar indicates a constant reference length of arbitrary value.
+
+### Cell shape and size across species
 
 Our data indicates that the stress control mechanism we propose is conserved between various organs in A. thaliana, and within the fruit of Brassicaceae (Figure 4J,K). This raises the question as to how broadly this mechanism is conserved, with large cell size and isotropic growth correlating with puzzle-shaped cells. Under this assumption, two geometric strategies are possible for cell expansion in isotropically growing organs without requiring excessively thick walls: (1) keeping cell size small by frequent divisions or (2) creating larger, puzzle-shaped cells. We measured cell area, LEC area and lobeyness in the adaxial epidermis of 19 unrelated plant species including trees, shrubs and herbs. A statistical analysis revealed that there was a positive correlation between cell size and lobeyness for each species (Figure 6A–C). Species with the largest average lobeyness also tended to have the largest cells (and vice-versa, Figure 6A–B). For average values of lobeyness and cell area of each species (including sample size), see Figure 6—source data 1. Pearson correlation coefficients ranged from 0.23 for Catharantus roseus to 0.94 for Solanum nigrum (Figure 6D). When pooling cells of all species together, the Pearson correlation coefficient was 0.64. Lobe formation is therefore more likely to be observed in big cells rather than small cells, which is intuitive if one considers cell division (where cell size remains low) as an alternative strategy to limit LEC size and cell wall stress. This suggests our hypothesis, that plants create puzzle-shaped cells in order to reduce stress in large isotropically growing cells, may be conserved among many plant species.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32794/elife-32794-fig6-v2.jpg)
 
-**Figure 6.:** (A) Average cell lobeyness. (B) Average cell area. (I-VIII) Pictures of leaf epidermal cells of species corresponding to numbering in (A) and (B), numbered by the order of appearance in (A). Scale bars, 50 µm. (C) A plot of lobeyness vs. area for cells of all species pooled together. Each color symbolizes one species. (D) Pearson correlation coefficients between lobeyness and cell area for each species and for all cells pooled together (entire set). Note that in all cases a positive correlation between lobeyness and cell area is observed (correlation coefficient is greater than 0).10.7554/eLife.32794.028Figure 6—source data 1.Number of cells measured for each species, average values and SE are included. Figure supplements (captions embedded in the text alongside primary figures).
+**Figure 6.:** (A) Average cell lobeyness. (B) Average cell area. (I-VIII) Pictures of leaf epidermal cells of species corresponding to numbering in (A) and (B), numbered by the order of appearance in (A). Scale bars, 50 µm. (C) A plot of lobeyness vs. area for cells of all species pooled together. Each color symbolizes one species. (D) Pearson correlation coefficients between lobeyness and cell area for each species and for all cells pooled together (entire set). Note that in all cases a positive correlation between lobeyness and cell area is observed (correlation coefficient is greater than 0).
 
 ## Discussion
 
@@ -138,39 +222,140 @@ Our model is also consistent with the functions attributed to the main molecular
 
 ## Materials and methods
 
-## Live imaging of cotyledons
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene</td>
+      <td>spk1</td>
+      <td>Nottingham Arabidopsis Stock Centre</td>
+      <td>SALK_125206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene</td>
+      <td>ftsh4-5</td>
+      <td>Hong et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent</td>
+      <td>p35S::LNG1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Vector obtained using gateway cloning, transformed into Col-0 plants by Agrobacterium-mediated floral dipping</td>
+    </tr>
+    <tr>
+      <td>genetic reagent</td>
+      <td>pUBQ10::myrYFP</td>
+      <td>Hervieux et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>LNG1CDS</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Full-length CDS of LONGIFOLIA1 gene, PCR amplified</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pENTR/D-TOPO</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pK7WG2</td>
+      <td>Karimi et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent</td>
+      <td>p35S::LTI6b-GFP</td>
+      <td>Cutler et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>N-(1-naphtyl) phtalamic acid (NPA)</td>
+      <td>Hamant et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>oryzalin</td>
+      <td>Hamant et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>VVE</td>
+      <td>Smith et al., 2003</td>
+      <td></td>
+      <td>www.algorithmicbotany.org</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MorphoGraphX</td>
+      <td>Barbier de Reuille et al., 2015</td>
+      <td></td>
+      <td>www.MorphoGraphX.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Live imaging of cotyledons
 
 Plantlets were grown on 1/2 MS medium in long day conditions as previously described in Vlad et al. (2014). Young cotyledons (2–6 days after germination, DAG) were imaged using the Leica SP8 microscope with 20x (HCX APO, numerical aperture 0.8) and 40x (HCX APO, n.a. 0.5) long working distance, water immersion objectives. Col-0 and p35S::LNG1 plants contained a plasma membrane-localized fluorescent marker pUBQ10::myrYFP previously described in Hervieux et al., 2016 and fluorescent signal was collected from 519 to 550 nm emission spectrum using 514 nm laser for excitation. Sepals were imaged as previously described in Hong et al., 2016 and Hervieux et al., 2016. For spk1 plants and corresponding Col-0 controls, cell walls were stained with propidium iodide and fluorescent signal was collected from 605 to 644 nm emission spectrum using 488 nm laser for excitation. spk1 homozygous mutant cotyledons were chosen for time-lapse imaging 2 DAG based on their shape, which was more elongated compared to wild type cotyledons of comparable age.
 
-## Creating transgenic lines
+### Creating transgenic lines
 
 The LNG1 gene full-length CDS was PCR amplified and cloned into the pENTR/D-TOPO vector (Invitrogen) as described in the manual, using primer pair 5’-CACCATGTCGGCGAAGCTTTTGT ATAACT-3’ and 5’-GAACATAAGAAAGGGGTTCAGAGA-3’. The resultant vector was LR recombined into the gateway vector pK7WG2 (Karimi et al., 2002) to generate the final construct p35S::LNG1. The intermediate and final constructs were verified by sequencing. The p35S::LNG1 construct was individually transformed into Col-0 plants by Agrobacterium-mediated floral dipping. T1 seeds were sown on Kanamycin-containing medium and transferred into soil approximately 2 weeks after germination.
 
-## Analysis of fruit and exocarp cell shape
+### Analysis of fruit and exocarp cell shape
 
 Fruit shape was classified as an elongated silique or a silicle (if the length was less than three times the width of the fruit) for 21 species in the Brassicaceae family. Exocarp cells were stained with propidium iodide, imaged by CLSM (as described in section 'Live imaging of cotyledons') and cell outlines extracted using MorphoGraphX.
 
-## Time-course imaging of cotyledons
+### Time-course imaging of cotyledons
 
 Arabidopsis seeds were sown on a 1/2 MS medium. 1, 2, 4 and 6 days after germination (DAG) 5–10 seedlings were taken out of the medium and imaged. Confocal stacks were processed in MorphoGraphX (Barbier de Reuille et al., 2015). Cell area and LEC radius were calculated for each cell in each sample. For average values displayed in Figure 5A (scatter plot), only the largest 20% of cells in each sample were considered, to eliminate stomata and small cells in the stomatal lineage.
 
-## Pharmacological treatment
+### Pharmacological treatment
 
 The p35S::LTI6b-GFP Arabidopsis lines have been described previously (Cutler et al., 2000) and were grown in tall petri dishes on a solid custom-made Duchefa ‘Arabidopsis’ medium (DU0742.0025, Duchefa Biochemie) supplemented with 10 μM of NPA (N-(1-naphthyl) phthalamic acid) as described in Hamant et al. (2008). As soon as naked inflorescences had formed, the plants were transferred to a medium without inhibitor. First images (T = 0 hr) were taken 1 day after the plants were taken off the drug. The samples were then immersed for 3 hr in 20 μg/ml oryzalin at T0h, T24h and T48h, as described in Hamant et al. (2008). Images were acquired using a Leica SP8 confocal microscope. GFP excitation was performed using a 488 nm solid-state laser and fluorescence was detected at 495–535 nm.
 
-## Comparison of the distributions of cellular quantities between WT and spike1
+### Comparison of the distributions of cellular quantities between WT and spike1
 
 We employed the Kolmogorov-Smirnov (K-S) test to statistically test if the distributions of growth anisotropy, lobeyness and LEC radius between WT and spk1 were the same. We used heat maps created in MorphoGraphX on data displayed in Figure 5B (final time point) to extract the values for each segmented cell. In the K-S test, the cumulative distribution of the corresponding quantity is first constructed as in Figure 5—figure supplement 1. The test statistic in the K-S test is the maximum (vertical) distance between the two cumulative distributions from WT and spk1. A large vertical distance signifies that the null hypothesis, i.e., the distributions of WT and spk1 are the same, is more likely to be rejected. The significance level of 0.05 is used in our analysis and we statistically conclude that the two distributions are different if the p-value<0.05.
 
-## spike1 genotyping
+### spike1 genotyping
 
 The seeds of a heterozygous spk1 T-DNA insertion line (SALK 125206) were purchased from Nottingham Arabidopsis Stock Centre. Segregating individuals were genotyped according to instructions provided by the SALK institute (http://signal.salk.edu/) using primers 5’- GATTTCAGTCTCTCACCGCAG-3’ and 5’-ATGGTCGACTCCACATTTCTG-3’ for detecting individuals with no T-DNA insertion and primers 5’-ATTTTGCCGATTTCGGAAC-3’ (recommended by SALK) and 5’-ATGGTCGACTCCACATTTCTG-3’ for detecting individuals containing the T-DNA insertion (mutant plants).
 
-## Multi-species leaf cell shape analysis
+### Multi-species leaf cell shape analysis
 
 Leaf surface impressions were taken from the adaxial side using transparent nail enamel (Revlon). The impressions were viewed under the differential interference contrast (DIC) mode of an Olympus BX52a upright microscope (Olympus, Japan) and imaged using a CapturePro CCD camera (Jenoptik, Germany). Images were loaded into MorphoGraphX and cell outlines were projected on a flat (2D) mesh. The mesh was segmented, cell area, lobeyness and LEC radius were calculated for all segmented cells.
 
-## Lobeyness and largest empty circle
+### Lobeyness and largest empty circle
 
 The Lobeyness and Largest Empty Circle (LEC) measures are calculated using custom plugins developed for MorphoGraphX (Barbier de Reuille et al., 2015). These measures are applied to 2D cell contours, obtained by projecting each 3D cell-contour extracted using MorphoGraphX on a local plane. For this purpose, the plane minimizing the loss of variance following projection is used. This plane is obtained from Principal Component Analysis (PCA) of the contour points, and is defined as the plane orthogonal to the third principal component (i.e. the direction of minimal variance) passing through the mean of the contour. Lobeyness captures the deviation of 2D cell contours from the convex polygonal forms typical of young undifferentiated cells. The measure is computed by taking the ratio of the cell’s perimeter to that of its convex hull (the smallest convex shape containing the cell), and is the inverse of the convexity measure used in Wu et al., 2016. Lobeyness takes a value of 1 for convex shapes and increases with contour complexity. This provides a translation, scale and rotation invariant measure of contour complexity and overall pavement cell lobation. The LEC for each cell is computed using the Delaunay triangulation of the contour positions. The cell contour defines a bounded region of the plane, and the largest empty circle within this region must be either the circumscribed circle of a triangle in the Delaunay triangulation, or a point on the boundary (Toussaint, 1983). Thus, the LEC for each cell is calculated by:
 

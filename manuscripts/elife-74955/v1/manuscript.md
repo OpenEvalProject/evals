@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Kimmel Center for Biology and Medicine at the Skirball Institute, NYU Grossman School of Medicine New York United States
-2. https://ror.org/0190ak572 Department of Cell Biology, NYU Grossman School of Medicine New York United States
+1. Kimmel Center for Biology and Medicine at the Skirball Institute, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Cell Biology, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 3. Department of Genetics, Washington University School of Medicine St. Louis United States
-4. https://ror.org/017zqws13 Department of Genetics, Cell Biology and Development, University of Minnesota Minneapolis United States
-5. https://ror.org/05cf8a891 Department of Neuroscience, Albert Einstein College of Medicine The Bronx United States
-6. https://ror.org/0190ak572 Department of Pathology, NYU Grossman School of Medicine New York United States
+4. Department of Genetics, Cell Biology and Development, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+5. Department of Neuroscience, Albert Einstein College of Medicine The Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+6. Department of Pathology, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
 ## Abstract
 
-Gap-junctional signaling mediates myriad cellular interactions in metazoans. Yet, how gap junctions control the positioning of cells in organs is not well understood. Innexins compose gap junctions in invertebrates and affect organ architecture. Here, we investigate the roles of gap-junctions in controlling distal somatic gonad architecture and its relationship to underlying germline stem cells in Caenorhabditis elegans . We show that a reduction of soma–germline gap-junctional activity causes displacement of distal sheath cells (Sh1) towards the distal end of the gonad. We confirm, by live imaging, transmission electron microscopy, and antibody staining, that bare regions—lacking somatic gonadal cell coverage of germ cells—are present between the distal tip cell (DTC) and Sh1, and we show that an innexin fusion protein used in a prior study encodes an antimorphic gap junction subunit that mispositions Sh1. We determine that, contrary to the model put forth in the prior study based on this fusion protein, Sh1 mispositioning does not markedly alter the position of the borders of the stem cell pool nor of the progenitor cell pool. Together, these results demonstrate that gap junctions can control the position of Sh1, but that Sh1 position is neither relevant for GLP-1/Notch signaling nor for the exit of germ cells from the stem cell pool.
+Gap-junctional signaling mediates myriad cellular interactions in metazoans. Yet, how gap junctions control the positioning of cells in organs is not well understood. Innexins compose gap junctions in invertebrates and affect organ architecture. Here, we investigate the roles of gap-junctions in controlling distal somatic gonad architecture and its relationship to underlying germline stem cells in Caenorhabditis elegans. We show that a reduction of soma–germline gap-junctional activity causes displacement of distal sheath cells (Sh1) towards the distal end of the gonad. We confirm, by live imaging, transmission electron microscopy, and antibody staining, that bare regions—lacking somatic gonadal cell coverage of germ cells—are present between the distal tip cell (DTC) and Sh1, and we show that an innexin fusion protein used in a prior study encodes an antimorphic gap junction subunit that mispositions Sh1. We determine that, contrary to the model put forth in the prior study based on this fusion protein, Sh1 mispositioning does not markedly alter the position of the borders of the stem cell pool nor of the progenitor cell pool. Together, these results demonstrate that gap junctions can control the position of Sh1, but that Sh1 position is neither relevant for GLP-1/Notch signaling nor for the exit of germ cells from the stem cell pool.
 
 ## Introduction
 
@@ -33,6 +33,16 @@ The relative positions of certain cells within larger organ structures are often
 The C. elegans hermaphrodite gonad provides a premier system for studying organogenesis and stem cell behavior (reviewed by Hubbard and Greenstein, 2000; Hubbard and Schedl, 2019). Two gonad arms, anterior or posterior of a central uterus and vulva, are each capped by a single somatic cell, the distal tip cell (DTC), that establishes a stem cell niche. Germline stem cells and their proliferative progeny, which together are referred to as progenitors, are maintained by GLP-1/Notch-mediated signaling in the germ line in response to DSL family ligands LAG-2 and APX-1 produced by the DTC (Austin and Kimble, 1987; Berry et al., 1997; Henderson et al., 1994; Nadarajan et al., 2009; Yochem and Greenwald, 1989). Proximal to the DTC, five pairs of sheath cells (named as pairs Sh1 to Sh5, distal to proximal) provide additional support to the germ line. In particular, Sh1 is implicated in promoting germline progenitor cell proliferation (Killian and Hubbard, 2005; McCarter et al., 1997). Although the molecular and cellular mechanisms by which Sh1 promotes germline proliferation remain to be fully elucidated, it is clear that one mechanism for the function of these cells involves the formation of gap junctions with germ cells (Starich et al., 2014).
 
 Invertebrate gap junctions are formed from octameric hemichannels of innexin proteins (Oshima et al., 2016). In C. elegans, INX-8 and INX-9 associate to form hemichannels in the hermaphrodite somatic gonad which couple to germline innexin hemichannels (INX-14 with INX-21 or INX-22) to promote germline proliferation and inhibit meiotic maturation, respectively (Figure 1A–B; Starich et al., 2014). Phenotypic analysis of reduction-of-function mutants in inx-8 recently led to the discovery of malonyl-CoA as a key cargo that traverses the soma-germline junctions to ensure proper embryogenesis (Starich et al., 2020).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of paired somatic and germline octameric hemichannels. (B) Schematic diagram of the inx-8 inx-9 locus and the inx-14 locus, with relevant mutations indicated in red. (C) Fluorescent confocal maximum projection images of distal gonads in live worms. Distal tip cell (DTC) marked in magenta (naIs37[lag-2p::mCherry-PH]) and sheath pair 1 (Sh1) marked in green (bcIs39[lim-7p::CED-1::GFP]). Top: strain bearing markers only, denoted “wild-type”, representative of phenotypic Classes 1 and 2. (D) inx-14(ag17) and inx-8(tn1513tn1555) inx-9(ok1502), denoted ‘inx-8(rf)’ after Starich et al., 2020, representative of Class 3. (E) Diagram of DTC–Sh1 relationship in distal end of a typical wild-type gonad (DTC magenta, Sh1 green) for phenotypic Classes 1–3. Class 1: greater than 8 µm (two cell diameters) separates the proximal most extent of the DTC (vertical line topped with magenta dot) and the distal most border of Sh1 (vertical line topped with green dot) as measured in slice-by-slice analysis of Z series; Class 2: ≤8 µm separates DTC and Sh1 extensions or interdigitation of DTC and Sh1 is seen up to the position of the average DTC process length (vertical line topped with blue dot); Class 3: distal position of Sh1 is distal to the average DTC process length. A diagram of all measurements taken for live fluorescent images is shown in Figure 1—figure supplement 1. (F) The proportion of gonads examined that fall into the phenotypic classes indicated. (G) Plot showing the distance between the average DTC process length (blue dots), the longest DTC process (magenta dots) and the distal-most border of Sh1 (green dots); each trio of dots joined by a dark blue line represents the data for a single gonad, analyzed as a confocal maximum projection. Scale bars are 10 µm. Strains used are DG5020, DG5026, and DG5029; n for each is indicated in panel F. See Supplementary file 1 for complete genotypes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of DTC and Sh1 parameters measured. Each black dot represents a point in a maximum projection Z-stack for which the distance from the distal end was measured in microns. (B) Fluorescent micrographs of gonads in live worms bearing indicated markers that label DTC (magenta lettering) or Sh1 (green lettering), in wild-type and inx-14(ag17) mutant backgrounds, as indicated: naIs37, bcIs39, qIs154, and tnIs5 are integrated transgenes; tnEx42 carries a rescuing acy-4p::gfp fusion on an extrachromosomal array; and fasn-1(av138[fasn-1::gfp]) was tagged at the endogenous locus using CRISPR-Cas9 genome editing (see Supplementary file 1 for full genotypes). The fasn-1 and acy-4 fusions also drive expression in non-gonadal tissues. (C) The proportion of gonads examined that fall into the phenotypic classes indicated. (D) Plot showing the distance between the average DTC process length (blue dots), the longest DTC process (magenta dots) and the distal-most border of Sh1 (green dots); each trio of dots joined by a dark blue line represents the data for a single gonad. (E) Plots showing quantitative measurement of parameters diagrammed in (A). Although the behavior of the DTCs marked by different markers is variable, and DTCs marked with qIs154 show significantly longer DTC processes, the behavior of Sh1 in the presence of either marker shows significantly consistent changes across mutant genotypes. All P values result from Student’s t-test. Scale bars are 10 µm. Strains used were DG5020, DG4959, DG4977, DG5026, DG5320, DG5367, DG5310; n for each is indicated in panel C. See Supplementary file 1 for complete genotypes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig1-figsupp2-v1.jpg)
 
 In the distal gonad, the somatic gonadal hemichannel components INX-8 and INX-9 are required redundantly for germ cell proliferation and differentiation. Loss of both components renders the germ line devoid of all but a handful of germ cells, which fail to undergo gametogenesis. Restoration of inx-8 either to the DTC or to sheath cells rescues the severe germline proliferation defect of the inx-8(0) inx-9(0) double mutant (Starich et al., 2014). In addition, a reduction of inx-8 and inx-9 via hypomorphic alleles or by RNA interference limits expansion of the pool of proliferative germ cells (Dalfó et al., 2020; Starich and Greenstein, 2020; Starich et al., 2014). The mutant innexin allele combinations used in this study are proficient in promoting germline proliferation; however, as this work shows, many of them affect the position of Sh1 with respect to the distal end of the gonad.
 
@@ -44,11 +54,23 @@ In short, we characterize the natural variability of Sh1 position and confirm th
 
 ## Results
 
-## There is natural variability in the position of the distal border of Sh1, but gonads of wild-type hermaphrodites display bare regions where germ cells contact neither the DTC nor Sh1
+### There is natural variability in the position of the distal border of Sh1, but gonads of wild-type hermaphrodites display bare regions where germ cells contact neither the DTC nor Sh1
 
 As detailed below, we found that Sh1 is somewhat variably positioned in wild-type young adult hermaphrodites. We confirmed the existence of bare regions between Sh1 and the DTC, characterized by germ cells that do not contact Sh1 or the DTC.
 
 To better characterize the natural variability in the position of the distal border of Sh1 in the wild type, and to facilitate comparisons among different genotypes and markers, we binned gonads into one of three phenotypic classes based on the position of Sh1 (Figure 1C–F; Videos 1–3; Figure 1—figure supplement 1). To avoid ambiguity that results from the analysis of maximum projection images, we analyzed all gonads in 3 dimensions (based on 0.5 µm optical Z-series slices). We designated as Class 1, those gonads in which > 8 µm (a distance covered by 2 germ cell diameters) separated the DTC and Sh1. Class 2 includes those gonads in which Sh1 and DTC processes come within 8 µm or in which Sh1 extensions intercalate with DTC processes, up to the position of the mean length of DTC processes. Class 3 gonads are those in which the border of Sh1 is markedly shifted distally such that it lies between the distal end of the gonad and the mean DTC process length.
+
+![Video 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-video1.mp4.jpg)
+
+**Video 1.:** Strain DG5020.
+
+![Video 2.](https://cdn.elifesciences.org/articles/74955/elife-74955-video2.mp4.jpg)
+
+**Video 2.:** Strain DG5020.
+
+![Video 3.](https://cdn.elifesciences.org/articles/74955/elife-74955-video3.mp4.jpg)
+
+**Video 3.:** Strain DG5026.
 
 Using bcIs39[lim-7p::ced-1::GFP] to visualize Sh1, a transgene that produces a CED-1::GFP fusion protein that fully rescues the sheath cell function of CED-1 to engulf germ cell corpses (Zhou et al., 2001), we found that a majority of gonads (70%) are in Class 1, confirming the existence of bare regions. Indeed, in many cases, the distance between the proximal-most DTC measurement and the distal-most Sh1 measurement exceeds 25 µm (Figure 1G; Figure 1—figure supplement 1D). The remaining gonads are in Class 2.
 
@@ -56,7 +78,15 @@ Using three additional Sh1 markers (and one alternate DTC marker), we found that
 
 We also analyzed serial distal-to-proximal transmission electron micrographs (TEM) of a gonad from a wild-type, unmarked young adult worm fixed using high-pressure freezing and freeze-substitution freezing methods (Figure 1—figure supplement 2; Videos 4 and 5; Materials and methods). Focusing on an 80 µm region from the distal end to the distal extensions of Sh1, we followed DTC processes (and their fragments) and Sh1 filopodial extensions among the tightly packed germ cells (see Materials and methods). We observed germ cells that contact neither a DTC process (nor fragment thereof) nor filopodial extensions of Sh1, and thus represent bare regions. Therefore, this TEM analysis is consistent with the confocal analysis above using cell-type-specific markers in live worms, and it corroborates prior ultrastructural observations made on chemically fixed TEM preparations (Hall et al., 1999).
 
-## Distal somatic gonad architecture is dictated by both somatic- and germline-expressed innexins
+![Video 4.](https://cdn.elifesciences.org/articles/74955/elife-74955-video4.mp4.jpg)
+
+**Video 4.:** Germ cell nuclei are marked in yellow if the corresponding germ cells receive direct contact from a DTC or Sh1 process, or in salmon if they do not. The soma and processes of the DTC are filled in pink. Filopodial extensions of the somatic sheath are filled in green. Individual images are composed from multi-panel montages (mostly 3x4 montages). Scale bar is 3 µm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/74955/elife-74955-video5.mp4.jpg)
+
+**Video 5.:** The DTC, its processes and fragments are in pink. Nearest sheath cell bodies lie out of frame proximally, but their filopodial extensions are shown in green, extending towards the DTC. Germ cell nuclei are modelled as spheres; the nuclei of those germ cells that do not come in contact with either DTC or Sh1 are colored in salmon, while germ cells with direct contact are shown in yellow. The true volume of each germ cell is larger than is shown here because each sphere is centered only on the cell nucleus. Scale bar is 5 µm.
+
+### Distal somatic gonad architecture is dictated by both somatic- and germline-expressed innexins
 
 Previously, in fixed preparations, we observed that the distal edge of Sh1 was shifted nearly to the distal end of the gonad in worms bearing a hypomorphic mutation in the germline innexin inx-14(ag17) (Starich et al., 2014). We further investigated the position of Sh1 in inx-14(ag17) using live imaging of intact young adult hermaphrodites bearing contrasting markers for Sh1 and the DTC (see Materials and methods for details on markers used).
 
@@ -64,9 +94,25 @@ In contrast to inx-14(+), the distal border of Sh1 in inx-14(ag17) extends to th
 
 To determine whether the position of Sh1 is shifted distally upon reduction of the somatic innexins, we investigated the position of Sh1 relative to the distal end of the gonad in a well-characterized compound reduction-of-function (rf) inx-8 mutant (Starich et al., 2020; Figure 1B–G). We found that Sh1 in worms bearing one partially functional somatic gonad innexin encoded by inx-8(tn1513tn1555) in an otherwise null inx-9(ok1502) background (hereafter referred to as ‘inx-8(rf)’; Starich et al., 2020) is also distally positioned, similar to inx-14(ag17) (Figure 1C–E). Thus, Sh1 is positioned distally as a result of reducing the function of either germ line or somatic innexins in the distal gonad.
 
-## An mKate2::INX-8 fusion causes a distal shift in the border of Sh1
+### An mKate2::INX-8 fusion causes a distal shift in the border of Sh1
 
 We extended our analysis to inx-8(qy78[mKate2::inx-8]), an allele that encodes an N-terminal fusion protein of mKate2 and INX-8 that was used to mark Sh1 in a prior study (Gordon et al., 2020; Figure 2A). As detailed below, we found that—like inx-14(ag17) and inx-8(rf)—inx-8(qy78[mKate2::inx-8]) caused a distal shift in the position of Sh1 (Figure 2B–F). We documented this shift both by anti-INX-8 antibody (Starich et al., 2014) detection in otherwise unmarked strains (Figure 2B–C), as well as in live imaging of marked strains (Figure 2D–F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic diagram showing the genetic manipulations used in this section. inx-8(qy78[mKate2::inx-8]) was created by placing mKate2 in-frame with the N-terminus of INX-8 (Gordon et al., 2020). inx-8(qy78tn2031) was created by deleting the inx-8 coding region and mKate2 moiety in the inx-8(qy78) background. (B) Representative distal gonads stained with anti-INX-8 antibody; Top: N2 wild type, Bottom: DG5063 inx-8(qy78[mKate2::inx-8]). See legend to Figure 2—figure supplement 1 for further details. (C) Dot plot with overlaid quantile box plots showing the distance from the distal end of the gonad to the Sh1 distal border for each genotype. Each dot represents a single gonad of that genotype. p value was calculated using Student’s t-test. (D) Fluorescent micrographs of live animals with the DTC marked by naIs37[lag-2p::mCherry-PH] and Sh1 marked by bcIs39[lim-7p::ced-1::gfp]. Top: wild-type with markers only. Middle: inx-8(qy78[mKate2::inx-8]). Bottom: inx-8(qy78tn2031). (E) The proportion of gonads examined that fall into the phenotypic classes indicated. (F) Quantitative dot-plots as in Figure 1; data for wild-type (marker only) strain in E and F is the same as in Figure 1. Each pair of dots connected by a line represents data from a single gonad. Scale bar 10 µm. Strains used were N2, DG5063, DG5020, DG5131, DG5229, DG5320, DG5378; n for each is indicated in panel E. See Supplementary file 1 for complete genotypes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Shown are fluorescence confocal maximum projections of surface images (~7 µm depth) of a DG5063 inx-8qy78[mKate2::INX-8] dissected and fixed gonad, with INX-8 visualized by anti-INX-8 antibody staining (top, green), endogenous mKate2 fluorescence (middle, red), and merged (bottom, yellow). The distal end of the gonad is on the left. In all gonads examined (n=32), overlap was complete. Scale bars are 10 µm. The INX-8 distribution pattern in wild type appears less punctate compared to a previous report (Starich et al., 2014). We attribute this to several differences in imaging. (1) Images in Starich et al., 2014 were obtained on a compound microscope, whereas the images shown here were acquired by confocal microscopy. (2) Except for the progenitor zone region (see point 3 below), images in Starich et al., 2014 were captured to present a surface view, while images presented here are maximum projections of confocal stacks, as described above. This stack goes from the gonad surface down through to the surface germ cell nuclei, which results in the appearance of increased signal from junctions residing between intercalating Sh1 invaginations and germ cells, as well as from INX-8 trafficking through the secretory pathway. This gives the appearance of a more honeycomb antibody staining pattern than Starich et al., 2014. Unlike the surface view image from the compound microscope, a projection of confocal images is necessary to capture both Sh1 and the DAPI- stained germ cell nuclei that served as a reference (DAPI is not shown). (3) For the progenitor zone (labelled M for mitotic region in the 2014 paper), the image in Figure 1 of Starich et al., 2014 shows a slightly more interior view (at the level of the rachis), revealing sparse punctate staining near the distal tip of the gonad. In this study, DTC staining is less apparent since the distal-most region is also maximum projection confocal stacks only from the gonad surface to the surface germ cell nuclei. Importantly, when viewing more interior planes of the Z-stack, sparse punctate staining is observed at positions consistent with DTC-rachis contact, as described in Figure 6 of Starich et al., 2014. (4) Finally, fixation conditions in this study were slightly different than Starich et al., 2014, so as to preserve mKate2 fluorescence.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic diagram showing additional relevant alleles at the inx-8 and inx-9 loci. (B–E) Relevant genotypes are given for inx-8 and inx-9 only. All strains also contain naIs37 to mark the DTC and bcIs39 to mark Sh1. inx-8(qy78[mKate2::inx-8]) and inx-8(qy102[mKate2::inx-8]) are abbreviated as inx-8(qy78) and inx-8(qy102) to aid comparisons between genotypes. (B) Representative fluorescent micrographs of live worms carrying each relevant allele, as indicated (images for inx-8(+), inx-8(qy78[mKate2::inx-8]) and inx-8(qy102tn2031) are the same as in Figure 2B, included here for comparison). (C) Stacked histogram showing the frequency of each of the phenotypic classes described in Figure 1, for each genotype, as indicated. (D) Table showing frequency of Class 3 gonads for each genotype, with indicated pairwise significance levels derived from a Fisher’s Exact Test. (E) Quantitative plots showing changes to DTC morphology and Sh1 position. All P values result from Student’s t-test. Scale bars are 10 µm. Strains used were DG5020, DG5131, DG5229, DG5232, DG5027, DG5133, DG5346, DG5347, DG5366; n for each is indicated in panel C. See Supplementary file 1 for complete genotypes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Individual gonads carrying different Sh1 markers in addition to inx-8(qy78[mKate2::inx-8]). Left, top to bottom: Individual channels and merged image of a single worm co-expressing the DTC marker cpIs122[lag-2p::gfp], inx-8(qy78[mKate2::inx-8]) and the sheath cell marker tnIs5[lim-7p::gfp]. Right, top to bottom: Individual channels and merged image of a single worm co-expressing the DTC marker naIs37[lag-2p::mCherry-PH], inx-8(qy78[mKate2::inx-8]) and the sheath cell marker bcIs39[lim-7p::ced-1::gfp]. (B) Two individual gonads of the same genotypes as in (A), showing incomplete overlap between mKate2::INX-8 and the respective GFP sheath cell markers. White arrowheads mark the most distal extent of each marker in the single-channel panels. (C and D): inx-8(qy78)[mKate2::inx-8] is abbreviated as ‘inx-8(qy78)’. (C) Frequency of overlap. Of 46 gonads examined, 39 showed perfect overlap as shown in these images. (D) Proportion of gonads in phenotypic Classes 1–3 as scored by mKate2 or as scored by GFP expression, as indicated by bold in the genotype. Scale bars are 10 µm. Strains used were DG5020, DG5131, KLG006; n for each is indicated in panels C and D. See Supplementary file 1 for complete genotypes.
 
 We used anti-INX-8 antibody staining to compare the distal border of Sh1 in the unmarked wild type and in inx-8(qy78[mKate2::inx-8]) gonads (N2 and DG5063, respectively; see Supplementary file 1; Figure 2—figure supplement 1). The mean distal boundary of INX-8 staining in the wild type lies at ~80 µm from the distal end of the gonad, while the mean distal boundary of INX-8 staining in worms carrying inx-8(qy78[mKate2::inx-8]) lies at ~50 µm from the distal end, and the difference between these means is significant (Figure 2B–C). Moreover, in 89% of wild-type gonads (n=28), the distal border of Sh1 is greater than 60 µm (~15–16 cell diameters) from the distal end of the gonad, while in 79% of inx-8(qy78[mKate2::inx-8]) gonads (n=32) the distal border of Sh1 is less than 60 µm from the distal end (Figure 2B–C).
 
@@ -76,43 +122,188 @@ To explain the observed distal Sh1 border shift of mKate2::INX-8 compared to pre
 
 We conclude that despite variability in the exact position of the Sh1 border, and despite minor differences in transgene expression, bare regions between the Sh1 and the DTC are present in the wild type, and they are greatly diminished due to a distal shift in the position of Sh1 in worms bearing reduced inx-14 or inx-8 function or bearing the mKate2::INX-8 fusion.
 
-## An mKate2::INX-8 fusion behaves as a dominant dosage-sensitive antimorph
+### An mKate2::INX-8 fusion behaves as a dominant dosage-sensitive antimorph
 
 Based on our observations that inx-8(qy78[mKate2::inx-8)] gonads display a distally shifted border of Sh1, we hypothesized that this allele might encode an INX-8 protein that poisons innexin complexes thereby interfering with the channel and/or adhesion functions important for Sh1 positioning. If this were due to a toxic effect of the mKate2::INX-8 fusion protein on gap junctions, we would predict that the distal shift of Sh1 would be dependent on the presence of the INX-8 coding region. To test this hypothesis, we used CRISPR-Cas9 genome editing to generate inx-8 null alleles in both the inx-8(qy78[mKate2::inx-8]) and wild-type genetic backgrounds. We generated deletions with identical breakpoints in the inx-8 locus in both genetic backgrounds [i.e. inx-8(qy78tn2031) and inx-8(tn2034)] starting 136 bp upstream of the wild-type inx-8 ATG start codon and extending 221 bp into inx-8 exon 3 (Figure 2 and Figure 2—figure supplement 2). In the inx-8(qy78[mKate2::inx-8]) context, this deletion also removes the mKate2 moiety. These deletions are expected to constitute inx-8 null alleles because, in addition to removing the start codon, they delete amino acids 1–349 (out of 382 amino acids), including virtually all residues essential for spanning the plasma membrane and forming a channel (Starich and Greenstein, 2020). Consistent with our hypothesis, the deletion mutant inx-8(qy78tn2031) displays a significantly lower frequency of Class 3 gonads than the original inx-8(qy78[mKate2::inx-8]) allele. Sh1 in the inx-8(qy78tn2031) deletion mutant is positioned more proximally, and therefore, like the wild type, exhibits bare regions that are lacking in inx-8(qy78[mKate2::inx-8]) mutants (Figure 2D–F). In addition, inx-8(qy78tn2031) exhibits a nearly normal brood size and suppresses the low-level embryonic lethality observed in the inx-8(qy78) starting strain (Table 1). Likewise, the identical deletion generated in the wild-type genetic background, inx-8(tn2034), also exhibits the wild-type Sh1 position (Figure 2—figure supplement 2), with a normal brood size and negligible embryonic lethality (Table 1). However, the observation of a small percentage of Class 3 gonads in inx-8(qy78tn2031) and inx-8(tn2034) animals but not in the wild type (Figure 2—figure supplement 2), suggests that the position of Sh1 is sensitive to the dosage of somatic gap junction hemichannels. In fact, the inx-8(qy78tn2031)/+ heterozygote reveals apparent haploinsufficiency for this phenotype (Figure 2—figure supplement 2).
+
+**Table 1.**
+ Brood sizes and embryonic lethality measurements for selected strains.Table 1—source data 1.Brood size and embryonic lethality data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Relevant genotype*</th>
+      <th>Brood (n)†</th>
+      <th>%Lethality (n) ‡</th>
+      <th>Sh1 mispositioned§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>Wild type</td>
+      <td>298.6±42.1 (24)</td>
+      <td>0.4±0.4 (7194)</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>DG5063</td>
+      <td>inx-8(qy78) ¶</td>
+      <td>221.6±23.6 (25)</td>
+      <td>9.0±4.6 (6087)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>NK2571</td>
+      <td>inx-8(qy78); cpIs122</td>
+      <td>212.8±27.5 (23)</td>
+      <td>6.2±3.0 (5217)</td>
+      <td>(yes**)</td>
+    </tr>
+    <tr>
+      <td>DG5059</td>
+      <td>inx-9(ok1502)</td>
+      <td>322.7±33.0 (25)</td>
+      <td>0.2±0.3 (8081)</td>
+      <td>(no**)</td>
+    </tr>
+    <tr>
+      <td>DG5064</td>
+      <td>inx-8(qy102) inx-9(ok1502)††</td>
+      <td>211.1±47.2 (25)</td>
+      <td>1.1±1.1 (5327)</td>
+      <td>(yes**)</td>
+    </tr>
+    <tr>
+      <td>NK2576</td>
+      <td>inx-8(qy102) inx-9(ok1502); cpIs122</td>
+      <td>209.5±52.7 (23)</td>
+      <td>2.3±1.2 (4928)</td>
+      <td>(yes**)</td>
+    </tr>
+    <tr>
+      <td>DG5250</td>
+      <td>inx-8(qy78tn2031) ‡ ‡</td>
+      <td>260.0±25.9 (25)</td>
+      <td>0.1±0.2 (6504)</td>
+      <td>(no**)</td>
+    </tr>
+    <tr>
+      <td>DG5251</td>
+      <td>inx-8(tn2034) ‡ ‡</td>
+      <td>301.6±37.8 (25)</td>
+      <td>0.4±0.4 (7570)</td>
+      <td>(no**)</td>
+    </tr>
+    <tr>
+      <td>DG5270</td>
+      <td>inx-14(ag17)</td>
+      <td>253.2±28.1 (25)</td>
+      <td>0.4±0.6 (6356)</td>
+      <td>(yes**)</td>
+    </tr>
+    <tr>
+      <td>DG5070</td>
+      <td>inx-14(ag17); inx-8(qy78)</td>
+      <td>106.6±19.4 (25)</td>
+      <td>23.7±8.0 (3510)</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>DG5380</td>
+      <td>bcIs39</td>
+      <td>282.6±34.2 (25)</td>
+      <td>0.4±0.5 (7091)</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>DG5020</td>
+      <td>naIs37; bcIs39</td>
+      <td>237.5±46.5 (24)</td>
+      <td>1.0±1.4 (5753)</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>DG5320</td>
+      <td>fasn-1(av138::gfp) naIs37</td>
+      <td>342.4±30.3 (25)</td>
+      <td>0.4±0.4 (8591)</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>DG5367</td>
+      <td>inx-14(ag17) fasn-1(av138::gfp) naIs37</td>
+      <td>256.0±26.6 (23)</td>
+      <td>0.2±0.2 (5897)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>DG5378</td>
+      <td>fasn-1(av138::gfp) naIs37; inx-8(qy78)</td>
+      <td>245.4±43.7 (23)</td>
+      <td>5.3±3.2 (5947)</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Full genotypes in Supplementary file 1; genotypes inx-8(qy78[mKate2::inx-8]) and inx-8(qy102[mKate2::inx-8]) are abbreviated as “inx-8(qy78)” and “inx-8(qy102)” and fasn-1(av138[fasn-1::GFP]) as fasn-1(av138::gfp).†Brood size ± SD, n = number of broods counted.‡Percent lethality ± SD, n = number of embryos scored.§yes/no indication of distal shift in the position of Sh1; relevant measurements in Figure 1, Figure 2, and their related supplements.¶Derived from NK2571 inx-8(qy78); cpIs122 [lag-2p::mNeonGreen::plcdeltaPH] (Gordon et al., 2020).**These particular strains were not scored for Sh1 position. However, where equivalent inx genotypes were analyzed, the Sh1 phenotype is given in parenthesis; see Figure 1, Figure 2, and their related supplements.††Derived from NK2576 inx-8(qy102) inx-9(ok1502); cpIs122 (Gordon et al., 2020).‡ ‡Equivalent inx-8(null) CRISPR-Cas9 deletions generated in inx-8(qy78[mKate2::inx-8]) or in wild-type genetic backgrounds._
 
 We made several additional observations from a brood-size and embryonic-viability analysis (Table 1). First, the marker transgenes do not have an appreciable effect on brood size or embryonic lethality in our hands. Second, genetic interactions exist between inx-8(qy78[mKate2::inx-8]), inx-14(ag17) and the inx-9(ok1502) null mutation. Specifically, inx-14(ag17) enhances both the reduced brood size and embryonic lethality of inx-8(qy78[mKate2::inx-8]); whereas inx-9(ok1502) weakly suppresses the embryonic lethality defect (Table 1). Third, in the course of this analysis, we noted that strains bearing inx-8(qy78[mKate2::inx-8]) displayed highly variable population growth dynamics that we attribute to stress. Although the relevant stressor has yet to be determined, we observed this effect over multiple generations after starvation or transport. Given our previous finding that key metabolites such as malonyl-CoA are transported through these junctions to support embryonic growth, this finding deserves future scrutiny.
 
 Finally, to assess more fully the nature of the inx-8(qy78[mKate2::inx-8]) allele with respect to Sh1 position, we generated and imaged worms bearing this allele in heterozygous and hemizygous configurations (Figure 2—figure supplement 2; we abbreviate inx-8(qy78[mKate2::inx-8]) to ‘qy78’ and null to (0), below, to aid comparison between genotypes). We infer loss-of-function behavior since other loss-of-function mutations affecting soma-germline gap junctions, such as inx-14(ag17), also cause a distal shift in the Sh1 border. Nevertheless, inx-8(qy78) is dominant: a substantial proportion of gonads in qy78/+ are in Class 3, similar to qy78/qy78, but distinct from deletion heterozygotes [inx-8(qy78tn2031/+)]. However, in a hemizygous configuration (qy78/0), the Sh1 distal displacement phenotype is largely suppressed. Thus, qy78 acts as a dosage-sensitive antimorph. We speculate that the fusion protein produced by inx-8(qy78[mKate2::inx-8]) can form dysfunctional junctions on its own or with INX-8(+), but not when it is present below a certain abundance threshold. As also mentioned above, the inx-8 deletion allele qy78tn2031, while largely suppressing the Sh1 distal mispositioning defect, displays a weak dominant haploinsufficient behavior consistent with dosage sensitivity. Alternatively, this behavior could result from genetic positional effects that impinge on nearby inx-9 function and for which Sh1 position is particularly sensitive.
 
-## The distal position of Sh1 does not influence the position of the stem cell pool border
+### The distal position of Sh1 does not influence the position of the stem cell pool border
 
 A recent model proposed that the position of the Sh1 border influences the stem/non-stem decision in underlying germ cells (Gordon et al., 2020). However, because the previous study did not examine the position of stem or progenitor cells, and because the model was based on results using the antimorphic inx-8(qy78[mKate2::inx-8]) allele, we investigated this relationship.
 
 In its simplest form, the model proposed by Gordon et al., 2020 predicts that when the distal edge of Sh1 is positioned distally, the stem/non-stem border should similarly shift distally. The SYGL-1 protein serves as a stem cell marker as sygl-1 is a direct transcriptional target of GLP-1/Notch in the germ line (Chen et al., 2020; Kershner et al., 2014; Lee et al., 2019; Lee et al., 2016; Shin et al., 2017). We analyzed the proximal extent of the pool of SYGL-1-positive cells bearing a well-characterized OLLAS epitope tag on SYGL-1 (Shin et al., 2017) and compared that boundary relative to the distal Sh1 border (Figure 3 and Materials and methods). In the case of inx-14(ag17), although the distal border of Sh1 was shifted drastically and significantly, there was no significant change in the position of the border of the SYGL-1-positive stem cell pool. In the case of the inx-8(qy78[mKate2::inx-8]) allele, the border of the SYGL-1-positive pool was marginally shifted distally relative to the wild type, though not commensurate with the extent to which Sh1 shifted distally in this background (Figure 3C). Furthermore, the marginal shift of the border of the stem cell pool in inx-8(qy78[mKate2::inx-8]) was suppressed when inx-8 was deleted in both inx-8(qy78tn2031) and inx-8(tn2034). The marginal shift in the border of the stem cell pool is not observed in inx-14(ag17), suggesting that such a defect in inx-8(qy78[mKate2::inx-8]) is due to the altered function of mKate2::INX-8, rather than the position of Sh1 per se (Figure 3A–C). To detect any subtle correlation between the proximal border of the SYGL-1 pool and the distal border of Sh1, we plotted these against one another and computed an R value (Figure 3D). By Pearson correlation, there is no significant relationship in any genotype examined between the position of the Sh1 border and the position of the SYGL-1-positive stem cell pool border. There is no significant relationship regardless of whether measurements are made in microns (Figure 3) or cell diameters (CD; Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fluorescence confocal maximum projection of surface images (~7 µm depth) of fixed, dissected gonads showing the SYGL-1-positive stem cell pool marked in magenta and the sheath cell marked in green. Magenta caret represents the location of the proximal border of the SYGL-1-positive stem cell pool. Green caret represents the distal edge of Sh1. (B) Quantitative graph with magenta dots representing the proximal border of SYGL-1::OLLAS expression and green dots representing the distal reach of Sh1. Each pair of dots connected by a line represents the data for a single gonad. (C) Dot plot with overlaid box plots showing the distance and quantiles of the SYGL-1-positive stem cell pool and distal extent of Sh1 for each genotype. Each dot represents a single specimen of that genotype. p values were calculated using Student’s t-test. (D) Scatterplot showing lack of correlation between the proximal extent of SYGL-1 expression and the distal reach of Sh1. Scale bars are 10 µm. Strains used, top to bottom as indicated on figure panels A and C, and (n) number of gonads are DG5136 (320), DG5150 (83), DG5181 (88), DG5248 (86), and DG5249 (88). See Supplementary file 1 for complete genotypes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantitative graph with magenta dots representing the proximal extent of SYGL-1::OLLAS expression and green dots representing the distal reach of Sh1. Each pair of magenta and green dots connected by a line represents the data for a single gonad. (B) Dot plot with overlaid box plots showing the distance and quantiles of the SYGL-1-positive stem cell pool and distal extent of Sh1 for each genotype, in cell diameters from the distal end. Each dot represents a single specimen of that genotype. p values were calculated using Student’s t-test. (C) Scatterplot showing lack of correlation between the proximal extent of SYGL-1 expression and the distal reach of Sh1. CD: cell diameters. Strains used and n are listed in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** SYGL-1 (3xOLLAS::SYGL-1) levels were measured from the distal tip of the gonad to (A) 25 CD and (B) 100 µmicrons proximal, in dissected and stained gonads from 1 day adults of the indicated genotypes. The visually assessed SYGL-1 border and the distal extent of Sh1 are marked. SYGL-1 protein levels from fluorescence-intensity measurements are normalized by setting the peak levels in wild type to 100. The SYGL-1 quantitation of the indicated genotype is carried out for the gonads in Figure 3B. The small differences observed in SYGL-1 peak levels between wild type and inx-14(ag17) or inx-8(qy78[mKate2::inx-8]) are not statistically significant (Student’s t-test). Triangle, distal most position (start) of Sh1; circle, proximal position of SYGL-1 staining; blue, wild type; red inx-14(ag17); black inx-8(qy78[mKate2::inx-8]). Curved plot lines, mean; vertical bars, mean ± SD. All three strains have sygl-1(q983) naIs37 I; bcIs39 V in the background along with the indicate inx-x genotype. Strains used are DG5136, DG5150, and DG5181. See Supplementary file 1 for complete genotypes.
+
 The recent model also proposed that Sh1 controls spindle orientation at the stem/progenitor border. However, we found that in the wild-type (marker-only) strain, the distal border of Sh1 was proximal to the proximal SYGL-1-positive border in 86% of the gonads (n=320), with a distance between them of ≥5 CD in 67% of the gonads (Figure 3 and Figure 3—figure supplement 1). As mentioned above, this 5 CD distance is inconsistent with the hypothesis that Sh1 is controlling spindle orientation at the stem cell border as such control would be expected to occur over a distance of only 1–2 cell diameters.
 
 We conclude that (1) there is no correlation between the position of the distal border of Sh1 and the proximal border of the SYGL-1-positive stem cell pool, and (2) if spindle-oriented divisions occur at the Sh1 border, they are not influencing stem cell fate.
 
-## The distal position of Sh1 does not influence the position of the progenitor pool border
+### The distal position of Sh1 does not influence the position of the progenitor pool border
 
 Although we found no correlation between the stem cell pool border and Sh1 position, we wondered whether altered Sh1 position might nevertheless influence the position of the border between the progenitor zone (PZ) and the transition zone that marks overt meiotic entry. In the wild type, consistent with our previous analysis in live worms, we found that the distal position of Sh1 is somewhat variable and can be either distal or proximal of the PZ border, using the length of the CYE-1-positive region to define the PZ border, following CYE-1 and pSUN-1(S8) co-staining (Figure 4 and Materials and methods; Mohammad et al., 2018). We found that although there is a subtle shift in the PZ border in inx-8(qy78[mKate2::inx-8]) and inx-14(ag17), it does not correlate with the dramatic shift in Sh1 position seen in these mutants (Figure 4). Again, we saw no significant correlation between Sh1 position and the position of the PZ border (Figure 4D). As with the SYGL-1 analysis, the relationships are similar when measurements are made in microns (Figure 4) or in CD (Figure 4—figure supplement 1), noting that differences between genotypes are more apparent in the micron measurements since cells are slightly larger more proximally in the PZ.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig4-v1.jpg)
+
+**Figure 4.:** (A) Fluorescence confocal maximum projection of surface images (~7 µm depth) of fixed, dissected gonads showing the progenitor pool marked in magenta and the sheath cell marked in green. All measurements were made by examining optical sections through the entire depth of the gonad. Magenta caret represents the location of the proximal border of the CYE-1-positive, pSUN-1-negative progenitor pool (pSUN-1 staining not shown; see Materials and methods). Green caret represents the distal edge of Sh1. (B) Quantitative graph with magenta dots representing the proximal extent of the CYE-1 staining and green dots representing the distal reach of Sh1. Each pair of magenta and green dots connected by a line represents the data for a single gonad. (C) Dot plot with overlaid box plots showing the distance and quantiles of the progenitor pool and distal extent of Sh1 for each genotype. Each dot represents a single specimen of that genotype. p values were calculated using Student’s t-test. (D) Scatterplot showing lack of correlation between the proximal PZ border and Sh1 position. Scale bars are 10 µm. Strains used, top to bottom as indicated on figure panels A and C, and (n) number of gonads are DG5136 (72), DG5150 (26), DG5181 (52), DG5248 (30), and DG5249 (32). See Supplementary file 1 for complete genotypes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantitative graph with magenta dots representing the location of the proximal border of the CYE-1-positive, pSUN-1-negative progenitor pool and green dots representing the proximal extent of and green dots representing the distal reach of Sh1. Each pair of magenta and green dots connected by a line represents the data for a single gonad. (B) Dot plot with overlaid box plots showing the distance and quantiles of the CYE-1-positive progenitor pool and distal extent of Sh1 for each genotype, in cell diameters from the distal end. Each dot represents a single specimen of that genotype. p values were calculated using Student’s t-test. (C) Scatterplot showing lack of correlation between the proximal extent of progenitor zone and the distal reach of Sh1. CD: cell diameters. Strains used and n are listed in Figure 4.
 
 In sum, the border between the PZ and the transition zone is not markedly altered relative to the dramatic distal displacement of the Sh1 border in inx-14(ag17) or in inx-8(qy78[mKate2::inx-8]), suggesting that the position of Sh1 has no bearing on the position of meiotic entry.
 
 ## Discussion
 
-## Contact with Sh1 does not dictate the stem cell pool border
+### Contact with Sh1 does not dictate the stem cell pool border
 
 Our studies show that impaired innexin function distally mispositions Sh1, but that this displacement does not similarly shift the proximal border of the adult stem cell pool (Figure 5). We show that bare regions of variable size normally exist between the DTC and Sh1, in which germ cells lack contact with the DTC or Sh1, but that these bare regions are diminished or lost with reduced innexin activity either in the soma or the germ line. While our studies rule out a role for Sh1 in stem cell fate, they demonstrate a role for innexins in somatic gonad architecture.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74955/elife-74955-fig5-v1.jpg)
 
-## Resolving apparent inconsistencies in the literature
+### Resolving apparent inconsistencies in the literature
 
 A recent challenge (Gordon et al., 2020) to previous literature (primarily Hall et al., 1999; Starich et al., 2014) was made regarding the anatomical position of Sh1. Results presented here regarding Sh1 position concur with all these published observations in a variety of genetic scenarios and provide an explanation for apparent discrepancies, one that is consistent with all of the observations to date. Our results also refute the model proposed in Gordon et al., 2020 concerning the role of Sh1 in cell fate decisions, but reveal a novel role for innexins in cell positioning in this system. As requested by eLife, we include in the discussion below comments on the Li et al., 2022 manuscript as it appeared in bioRxiv July 18, 2022. The major points of resolution and remaining discrepancies concern (1) the normal anatomical position of Sh1, (2) the utility of a CED-1::GFP transgene to mark Sh1, (3) the implications of Sh1 position for the stem cell fate decision, and (4) brood size analyses.
 
-## Abnormal and normal anatomical positions of Sh1 and effects on bare regions of the distal gonad
+#### Abnormal and normal anatomical positions of Sh1 and effects on bare regions of the distal gonad
 
 Our results indicate that inx-8(qy78[mKate2::inx-8]) is a dominant antimorph that significantly mispositions Sh1 to the distal end of the gonad. The mispositioning phenotype is dominant to inx-8(+) and the antimorphic character is revealed by our dosage analysis (Figure 2—figure supplement 2). As is often the case for antimorphs, residual inx-8 function is present, consistent with the selection for inx-8 function included in the construction strategy used to generate inx-8(qy78[mKate2::inx-8]) (Gordon et al., 2020). We observed that inx-8(0)/+ has a very mild haploinsufficient phenotype, milder than inx-8(qy78[mKate2::inx-8])/+. The fusion protein is therefore somewhat functional, but compromises or, in genetical terms, ‘poisons’ the channels into which it is incorporated.
 
@@ -122,7 +313,7 @@ Notably, we also examined Sh1 position in wild-type hermaphrodites that lack flu
 
 The cautionary tale is that fusion proteins used as markers, even when they are generated by genome editing of the endogenous locus—and therefore are not likely mis-expressed or overexpressed—may nevertheless generate proteins that are not benign. Here, the mKate2::INX-8 fusion protein caused a distal shift in the Sh1 position due to its apparent antimorphic effect on gap junctions.
 
-## The utility of the CED-1::GFP transgene to mark Sh1
+#### The utility of the CED-1::GFP transgene to mark Sh1
 
 Li et al., 2022 question the usefulness of bcIs39[lim-7p::ced-1::gfp], which encodes a functional CED-1::GFP fusion as a marker for the distal edge of Sh1, showing that it has variable expression. Specifically, the hypothesis is that inx-8(qy78[mKate2::inx-8]) illuminates distal portions of Sh1 that are not always visible with bcIs39[lim-7p::ced-1::GFP]. We had considered this possibility and examined strains carrying both inx-8(qy78[mKate2::inx-8]) and either bcIs39[lim-7p::ced-1::GFP] or tnIs5[lim-7p::gfp]. We found that both GFP markers (bcIs39 or tnIs5) are indeed variably expressed (faint or undetectable in 15–20% of gonads; Figure 2F; Figure 2—figure supplement 3A–C), but that this variability is not biologically meaningful with respect to the range of Sh1 position in inx-8(+) versus inx-8(qy78[mKate2::inx-8]). In the remaining 80–85% of gonads examined, the overlap between these GFP markers and the mKate2::INX-8 is complete.
 
@@ -134,7 +325,7 @@ More salient than the penetrance of migration defects in strain DG5020 bearing n
 
 An unresolved question is why several membrane-associated Sh1 markers exhibit patterns that are discordant with strains bearing bcIs39, tnIs5, tnIs6, fasn-1(av138), acy-4(tnEx42) markers and with TEM and antibody analyses in unmarked strains. We hypothesize that, like strains bearing an mKate::INX-8 fusion protein, membrane-associated fluorescent proteins described by Li et al., 2022 similarly disrupt functions that act to position Sh1, including CAM-1::mNeonGreen, INA-1::mNeonGreen, and lim-7p::GFP::CAAX that display reduced or absent bare regions. Since the gonadal architecture displayed by these markers differs from that established by analysis of unmarked strains (Hall et al., 1999; Starich et al., 2014; this work), we hypothesize that these proteins, like mKate2::INX-8, disrupt the physiology of Sh1 in some manner. If so, they may, for example, display reduction-of-function or even dominant effects on the position of Sh1, as do strains bearing mKate2::INX-8. Although such tests of this hypothesis are beyond the scope of our study, it will be interesting to determine how these fusion proteins are perturbing Sh1 position and whether these membrane markers perturb Sh1–germline gap junctions.
 
-## The implications of Sh1 position for the stem cell fate decision
+#### The implications of Sh1 position for the stem cell fate decision
 
 Li et al., 2022 experimentally altered germ cell fate or proliferative capacity of germ cells and assayed Sh1 position, whereas we tested directly the proposed model that Sh1 influences the stem cell border (Gordon et al., 2020) by altering Sh1 position and assaying expression of the direct GLP-1 target SYGL-1. Li et al., 2022 report that the boundary of Sh1 correlates with the group of germ cells that is first to differentiate when GLP-1/Notch signaling or mitosis are blocked using temperature-sensitive mutations in glp-1 or emb-30, which respectively encode the GLP-1/Notch receptor (Austin and Kimble, 1989; Yochem and Greenwald, 1989) or the APC4 subunit of the Anaphase-Promoting Complex (Furuta et al., 2000). However, in all these experiments, Sh1 was marked with the mKate2::INX-8 fusion, which we demonstrate here acts as a dominant antimorph that causes distal mispositioning of Sh1. While the mispositioned Sh1 border in strains expressing mKate2::INX-8 does indeed correlate with the SYGL-1 border, if Sh1 were influencing the stem cell fate decision as proposed, the SYGL-1 border should move with Sh1, and it does not (Figure 3).
 
@@ -142,15 +333,15 @@ To assess the stem cell border, we examined GLP-1/Notch signaling using a direct
 
 Our finding that the position of the germline response to signaling from the DTC, as measured by expression of the direct GLP-1/Notch target, SYGL-1, is independent of the position of Sh1 (Figure 3) is also consistent with other observations from the literature. For example, males, which lack sheath cells altogether, exhibit stem cell pools similar to those in the hermaphrodite (Crittenden et al., 2019). In addition, the stem cell and progenitor pools are present in larval stages prior to DTC process elaboration (Byrd et al., 2014), when Sh1 is positioned several CD from the DTC, precluding the possibility of a DTC–Sh1 handoff at these stages (e.g. L4 stage, when stem/non-stem fate decisions are in progress; Killian and Hubbard, 2005). Here, we observed that the distal border of Sh1 relative to the proximal stem cell border in the wild type is ≥5 CD in the majority of adult gonads we examined. Thus, the model suggested in Gordon et al., 2020, that Sh1 physically orients divisions of stem cells to direct their fate, is also called into question by our results. Finally, using alleles that dramatically alter the position of Sh1, we found no evidence supporting the prediction that the stem/non-stem border is coincident with the Sh1 border. Together, these results indicate that Sh1 is not involved in the germline stem-progenitor fate decision.
 
-## Brood size analyses
+#### Brood size analyses
 
 An unresolved difference between our study and that of Li et al., 2022 concerns observations of brood sizes in strains bearing bcIs39[lim-7p::ced-1::gfp]. In our studies, a strain bearing bcIs39 as the only marker (DG5380, Table 1), exhibited a brood size (282.6±34.2, n=25), which was not statistically different (p=0.1501, t test) from that of the wild type (298.6±42.1, n=24). Li et al., 2022 did not analyze this exact strain, they did analyze DG5020 naIs37[lag-2p::mCherry-PH]; bcIs39[lim-7p::ced-1::gfp] and observed ~20% embryonic lethality, while we only observed ~1% embryonic lethality (Table 1). This difference might reflect variations in growth conditions despite the fact that both groups utilized standard C. elegans culture conditions. Perhaps relevant, and as noted in the results section above, key germline metabolites such as malonyl Co-A require gap junctions and innexin function for transport (Starich et al., 2020). Alternatively, such a difference might be due to genetic drift.
 
-## The role of bare regions in the adult hermaphrodite gonad is uncertain
+### The role of bare regions in the adult hermaphrodite gonad is uncertain
 
 Our observation that loss of the bare regions correlates with only a relatively modest effect on brood size (Table 1) raises the question of what, if any, biological significance the bare regions might have. Because the innexins have multiple functions in germline development (Starich et al., 2014; Starich et al., 2020; Starich and Greenstein, 2020), we are unable to ascribe the observed brood-size reduction in strains lacking bare regions to the absence of the bare regions per se. Thus, any potential roles for the bare regions vis-à-vis brood size and germline development will require additional study.
 
-## Gap junctions position somatic cells in distal gonad
+### Gap junctions position somatic cells in distal gonad
 
 Our studies also provide evidence that innexin gap junctions not only serve as communication and adhesion junctions, but that in the context of an organ system, they contribute to the positioning of cells relative to each other. How might gap junctions influence the relative position of the DTC and Sh1 in the distal gonad arm? The DTC forms gap junctions with germ cells, which must be disassembled as germ cells enter a bare region, only to be reassembled again when in contact with Sh1 (and then again with more proximally located sheath cells Sh2–5). A detailed TEM analysis of the gonad (Hall et al., 1999) led to the consideration that a constant interplay of association and dissociation likely occurs between Sh1 and the underlying germ cells that move proximally along the arm: as germ cell flux continually moves germ cells towards the proximal end of the gonad, the Sh1 cells presumably extend their filopodia distally and form new gap junction connections with incoming germ cells. Otherwise, the bare regions would increase in length along the distal-proximal axis. Under optimal growth conditions in the laboratory, this constant association and dissociation between Sh1 and germ cells may be pushed to its limit.
 
@@ -162,7 +353,7 @@ How could impaired innexin function cause Sh1 to creep distally? One hypothesis 
 
 ## Materials and methods
 
-## Live imaging and image analysis of live samples
+### Live imaging and image analysis of live samples
 
 Live specimens were grown at 20 °C, and staged by picking mid-L4 larvae, then allowing them to grow at 20 °C until imaging them 24 hr later. Animals were immobilized using 10 mM Levamisole (Sigma T1512) in M9 buffer. Imaging was carried out on a Nikon W1 spinning disk confocal microscope. We define a biological replicate as any set of individuals collected, processed and imaged together. Numbers of individuals included in each analysis is indicated in the figure panels or legends.
 
@@ -172,11 +363,11 @@ Sh1 visualization in live worms: bcIs39 [lim-7p::CED-1::GFP] (Zhou et al., 2001)
 
 DTC visualization in live worms: naIs37[lag-2p::mCherry-PH] encodes mCherry fused to the PH domain of rat phospholipase C delta (Pekar et al., 2017) and qIs154[lag-2p::MYR-tdTomato] encodes a src kinase myristoylation sequence fused to tdTomato (Byrd et al., 2014).
 
-## Imaris rendering of confocal images
+### Imaris rendering of confocal images
 
 3D rendering of confocal stacks for Videos 1–3 was done using Imaris (Oxford Instruments, plc. Abingdon, UK) according to the following algorithm for batch processing. For the Sh1 channel (green): Enable Smooth = true; Surface Grain Size = 0.433 µm; Enable Eliminate Background = false; Diameter Of Largest Sphere = 1.63 µm; Enable Automatic Threshold = false; Manual Threshold Value = 650; Active Threshold = true; Enable Automatic Threshold B=true; Manual Threshold Value B=31622.8. For the DTC channel (red): Enable Smooth = true; Surface Grain Size = 0.433 µm; Enable Eliminate Background = false; Diameter Of Largest Sphere = 1.63 µm; Enable Automatic Threshold = false; Manual Threshold Value = 710; Active Threshold = true; Enable Automatic Threshold B=true; Manual Threshold Value B=14988.5.
 
-## Strains
+### Strains
 
 C. elegans strains (Supplementary file 1) were grown on standard NGM media with OP50 as a food source (Brenner, 1974) for all figures in this work. Strain constructions employed a modified NGM medium [containing 6.25 µg/ml Nystatin and 12.5 mM potassium phosphate pH 6.0 (added after autoclaving) and 200 mg/ml streptomycin sulphate (added before autoclaving)] with E. coli strain OP50-1 as food source. Strains were grown at 20 °C. In addition to the wild-type strain N2, the following alleles, described in WormBase (https://wormbase.org//#012-34-5) or in the cited references, were used:
 
@@ -192,11 +383,11 @@ Integrated transgenes included: naIs37[lag-2p::mCherry::plcdeltaPH +unc-119(+)] 
 
 Extrachromosomal arrays used included: tnEx42[acy-4::gfp +rol-6(su1006)] (Govindan et al., 2009).
 
-## Strain constructions
+### Strain constructions
 
 Multiply mutant strains were constructed in a straightforward manner (Huang and Sternberg, 1995). tmC18 was used as a balancer chromosome for inx-14(ag17). tmC27 was used as a balancer chromosome for sygl-1(q983). tmC5 (or the derivatives described) or mIs11 were used as balancer chromosomes for inx-8 and inx-9 mutant alleles. The presence of inx-14(ag17) in strains was verified by PCR and DNA sequencing. The ag17 allele was originally described as an Arg to His change in the second extracellular loop of INX-14, but the exact residue position was not specified (Miyata et al., 2008). A 1.2 kb PCR fragment covering this region was amplified with primers inx-14delF and inx-14delR (see Supplementary file 2 for the sequence of oligonucleotides used in this study). The PCR fragment was sequenced with the inx-14delR primer. No sequence changes were found in Arg residues predicted to occupy the second extracellular loop. However, a CGT to CAT (R326H) change was identified at a residue position predicted to lie near the cytoplasmic end of the fourth transmembrane domain, and we surmise that this change represents the original ag17 mutation. The presence of the sygl-1(q983[3xOLLAS::sygl-1]) mutation in strains was verified by PCR with primers sygl1-F and sygl1-R, which produce a 216 bp product in the wild type and a 348 bp product in sygl-1(q983) and by anti-OLLAS staining. The presence of inx-8(qy78tn2031) and inx-8(tn2034) in strains was verified by PCR with oligonucleotide primers inx8_delta.F and inx8_delta.R. To construct DG5367 inx-14(ag17) fasn-1(av138[fasn-1::gfp]) naIs37 I, fasn-1(av138[fasn-1::gfp]) naIs37/dpy-5(e61) unc-13(e51) heterozygotes were generated and Dpy non-Unc recombinants were sought, which resulted in the isolation of a dpy-5(e61) fasn-1(av138[fasn-1::gfp]) naIs37 I intermediate strain. From, inx-14(ag17)/dpy-5(e61) fasn-1(av138[fasn-1::gfp]) naIs37 heterozygotes, recombinants of genotype inx-14(ag17) fasn-1(av138[fasn-1::gfp]) naIs37/dpy-5(e61) fasn-1(av138[fasn-1::gfp]) naIs37 were identified by virtue of their increased GFP signal using a fluorescence dissecting microscope. The presence of inx-14(ag17) in the desired recombinants was verified by DNA sequencing. naIs37 was shown to be tightly linked to unc-54(e190) on the right end of LGI as follows. From dpy-5(e61) fasn-1(av138[fasn-1::gfp]) naIs37/unc-54(e190) heterozygotes, of 15 unc-54(e190) homozygotes, none contained the naIs37 marker (4 were recombinants expressing fasn-1::gfp). Of 38 wild-type segregants of the aforementioned parental heterozygous strain, all expressed the naIs37 marker (11 were recombinants lacking fasn-1::gfp expression). DG5380 was derived from DG5020 by crossing to N2 males and segregating away naIs37; the bcIs39 source was MD701, available from the CGC.
 
-## Electron microscopy methods and analysis
+### Electron microscopy methods and analysis
 
 Wild-type N2 young adults were analyzed using high-pressure freezing/freeze-substitution freezing (HPF/FS; Hall et al., 2012). Four animals from chemical immersion and four animals from HPF/FS were collected in serial sections on slot grids, ranging from 80 nm to 100 nm thickness on an RMC PowerTome XL ultramicrotome (Eden Instruments, Valence, France). Sections were post-stained in 2% uranyl acetate in H2O for 20 min and in Reynold’s lead for 3 min. Sections from each animal were viewed in the gonad region using Digital Micrograph software (Gatan, Pleasanton, CA) for the JEOL JEM-1400Plus M (Jeol USA, Peabody, MA), using a Gatan Orius SC1000B digital camera.
 
@@ -204,36 +395,36 @@ We selected the most optimally positioned and resolved HPF/FS-fixed animal (2% o
 
 We followed the DTC processes and their fragments and the filopodial extensions of Sh1 due to their increased translucency compared with the germ cells and by the fact that these somatic cellular extensions contained many small mitochondria (Video 4). We observed what we infer to be shed pieces of the DTC beginning at approximately 30 µm from the distal end, as has been observed using light microscopic methods (Byrd et al., 2014). However, some DTC and Sh1 processes may appear discontinuous due to the fact that micrographs of every third section were used to generate the reconstructed model (Video 5). Regardless of the effect that this sampling technique has on our ability to resolve contiguous versus shed bits of somatic gonadal cells, this TEM analysis is in agreement with our light microscopic observations that a large subset of distal germ cell progenitors are not in contact either with the DTC or Sh1.
 
-## Brood counts and embryonic lethality measurements
+### Brood counts and embryonic lethality measurements
 
 Because inx-8(qy78[mKate2::inx-8]) brood counts and embryonic lethality were highly variable, we used a single batch of NGM media with OP50 food source for all brood count measurements reported in Table 1. To prevent mold formation, the medium contained 6.25 µg/ml Nystatin. L4-stage hermaphrodites were cultured individually on 35 mm Petri plates and transferred approximately every 24 hr until they stopped producing embryos (4–6 days). Worms that crawled off the media and died were redacted (varied from 0 to 10% depending on the experiment). Embryos that failed to hatch after 24–36 hr were counted and scored as dead. In the majority of cases, these embryos exhibited morphological abnormalities. Control experiments demonstrated that these embryos were not simply delayed and never hatched. Embryos that hatched were counted and scored as viable.
 
-## Genome editing
+### Genome editing
 
 CRISPR-Cas9 genome editing was used to generate inx-8 null alleles in both the inx-8(qy78[mKate2::inx-8]) and wild-type genetic backgrounds. The approach taken generated identical 1525 bp deletions within the inx-8 locus in both genetic backgrounds starting 136 bp upstream of the wild-type inx-8 ATG start codon and extending 221 bp into inx-8 exon 3. In the inx-8(qy78[mKate2::inx-8]) context, this edit removes both the mKate2 moiety and inx-8. The deletions are expected to constitute inx-8 null alleles because, in addition to removing the start codon, they delete amino acids 1–349 (out of 382 amino acids), including virtually all residues essential for spanning the plasma membrane and forming a channel (Starich and Greenstein, 2020). The approach used pRB1017 to express two single guide RNAs (sgRNAs) under control of the C. elegans U6 promoter (Arribere et al., 2014). Oligonucleotides inx8_us_sgRNA1.F and inx8_us_sgRNA1.R were annealed and used to generate the plasmid inx8_us_sgRNA1 to direct Cas9 cleavage 136 bp upstream of the ATG initiator codon (Supplementary file 2 lists all oligonucleotides used in this study). Oligonucleotides inx8_sgRNA1.F and inx8_sgRNA1.R were annealed and used to generate the plasmid inx8_sgRNA1 to direct Cas9 cleavage in exon 3. To generate sgRNA clones, annealed oligonucleotides were ligated to BsaI-digested pRB1017 plasmid vector, and the resulting plasmids were verified by Sanger sequencing. pDD162 served as the source of Cas9 expressed under control of the eef-1A.1/eft-3 promoter (Dickinson et al., 2013). The repair template oligonucleotide used was inx8_rpr. Genome editing employed the dpy-10 co-conversion method (Arribere et al., 2014). The injection mix contained pJA58 (7.5 ng/μl), AF-ZF-827 (500 nM), inx8_us sgRNA1 (25 ng/μl), inx8_sgRNA1 (25 ng/μl), inx8_rpr (500 nM), and pDD162 (50 ng/μl) and was injected into adult hermaphrodites from strains DG5131 naIs37[lag-2p::mCherry::PH +unc-119(+)] I; inx-8(qy78[mKate2::inx-8]) IV; bcIs39[lim-7p::ced-1::gfp +lin-15(+)] V and DG5020 naIs37[plag-2::mCherryPH +unc-119(+)] I; bcIs39[lim-7p::ced-1::gfp +lin-15(+)]V. Correct targeting was verified by conducting PCR with primer pairs inx8_delta.F and inx8_delta.R followed by DNA sequencing. Three deletion alleles were recovered from the injections into DG5131 (qy78tn2031, qy78tn2032, and qy78tn2033), and two deletion alleles were recovered from the injections into DG5020 (tn2034 and tn2035). The deletion alleles were outcrossed to naIs37[lag-2p::mCherryPH +unc-119(+)]/+I; tmC5(tmIs1220[myo-2p::Venus])/+IV; bcIs39[lim-7p::ced-1::gfp +lin-15(+)]/+V males to generate DG5229 and DG5232. Homozygous strains were analyzed by confocal microscopy. To introduce an inx-8 null allele onto the tmC5[tmIs1220] IV balancer chromosome, the same injection mix of CRISPR reagents as described above was injected into dpy-20(e1282)/tmC5[tmIs1220] IV heterozygotes. The inx-8(tn2075) null allele was generated on the balancer chromosome, which resulted from a 1526 bp deletion that differed from the other CRISPR-generated inx-8 null alleles by the removal of an extra base at the cut site.
 
-## Immunostaining and image analysis of fixed samples
+### Immunostaining and image analysis of fixed samples
 
 Immunostaining was carried out as described (Mohammad et al., 2018). Briefly, synchronized adult hermaphrodites, 24 hr past mid-L4, were dissected in PBST (PBS with 0.1% Tween 20), with 0.2 mM levamisole to extrude the gonads. The gonads were fixed in 3% paraformaldehyde solution for 10 min and then post-fixed in −20° chilled methanol for 10 min. After 3x10 min washes with PBST, they were blocked in 30% goat serum for 30 min at RT. The gonads were then incubated with the desired primary antibodies diluted (see below) in 30% goat serum at 4° overnight. The next day, after 3x10 min PBST washes, the gonads were further incubated with appropriate secondary antibodies, diluted in 30% goat serum, at 4° overnight. The gonads were washed 3 times with PBST, then incubated with 0.1 g/ml DAPI in PBST for 30 min. After removal of excess liquid, the gonads were mixed with anti-fading agent (Vectashield) and transferred to an agarose pad on a slide. Hyperstack images were captured using a spinning disk confocal microscope (PerkinElmer-Cetus, Norwalk, CT). Two overlapping hyperstack images were captured for each gonad arm to obtain coverage of >50 cell diameters from the distal end of the gonad. Images were further processed in Fiji, and DAPI stained nuclei were used to mark the number of cell diameters from the distal end. Employing pixel to micron ratio, specific to the images captured, cell diameters were converted into microns where required.
 
-## SYGL-1-positive zone length assessment
+#### SYGL-1-positive zone length assessment
 
 OLLAS staining was used to assess 3xOLLAS::SYGL-1 accumulation (Shin et al., 2017). In wild-type young adults, SYGL-1 accumulates at the distal end of the germline and is downregulated around 10-cell diameters from the distal tip (Kocsisova et al., 2019; Shin et al., 2017). Cell diameters were counted from the distal end of the germline up to the row where SYGL-1 is no longer visible by eye. OLLAS staining in the wild-type worms without OLLAS tag was used to differentiate staining from the background. To confirm the accuracy of our visual assessment, we quantified the intensity of SYGL-1 accumulation in the distal germline, employing methods similar to Chen et al., 2020 in the same set of germlines where the SYGL-1 zone was visually evaluated. We found that the cell diameter position called as the end of the SYGL-1 zone consistently corresponded to 6–9% of peak SYGL-1 intensity, for each genotype (Figure 3—figure supplement 2). These results indicate that the SYGL-1 zone length visual assessment was reproducible and consistent.
 
-## Progenitor zone length assessment
+#### Progenitor zone length assessment
 
 The gonads were stained with a progenitor zone marker, anti-CYE-1, and an early meiotic prophase marker, pSUN-1, (anti-SUN-1 S8-Pi) (Mohammad et al., 2018). For assessing the progenitor zone length, cell diameters (rows) were counted from the distal end of the germline, where all cells are CYE-1-positive, until the point after which the majority of the cells in a row have switched from staining for CYE-1 to pSUN-1. Note that pSUN-1 staining is not shown in the figures, although it was used to assess the PZ border.
 
-## Assessment of distal position of Sh1
+#### Assessment of distal position of Sh1
 
 Anti-GFP antibody staining was used to visualize the sheath, where cell diameters were counted from distal end to the point where GFP staining became prominent.
 
 To quantify the distance from the distal end to the border of expression of any protein, we have used either ~30 gonads for single-replicate experiments and ~20 gonads for multi-replicate experiments. We define a biological replicate as independently dissected and stained, along with the controls in the same tube, and images acquired with the same settings. During these experiments, no outliers were encountered. In rare cases, acquired images, which either failed to stitch by Fiji or had poor staining, were discarded.
 
-## Primary antibodies used
+#### Primary antibodies used
 
 mouse anti-CYE-1 (1:100; Brodigan et al., 2003); guinea pig anti-SUN-1 S8-Pi (1:1000; Penkner et al., 2009); rat anti-OLLAS (1:2000; Novus Biological); rabbit anti-GFP (1:200; from Swathi Arur, MD Anderson Cancer Center; Lopez et al., 2013); and rabbit anti-INX-8 (1:25; Starich et al., 2014).
 
-## Secondary antibodies used
+#### Secondary antibodies used
 
 Alexa Fluor 647 goat anti-mouse (Life Technologies, Carlsbad, CA); Alexa Fluor 594 goat anti-guinea pig (Invitrogen, Waltham, MA), Alexa Fluor 594 donkey anti-rat (Invitrogen); and Alexa Fluor 488 goat anti-rabbit (Invitrogen).

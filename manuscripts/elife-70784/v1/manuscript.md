@@ -28,17 +28,49 @@ Despite the immense value of the two proteome-wide thermal shifts assays describ
 
 ## Results
 
-## The solvent-induced denaturation landscape of the cellular proteome
+### The solvent-induced denaturation landscape of the cellular proteome
 
 With the ultimate goal being the development of a reliable workflow for identifying protein-ligand interactions on a proteome-wide scale, we first sought to explore the impact of increasing concentrations of AEA (50% acetone, 50% ethanol, and 0.1% acetic acid) on the proteome of HCT116 cells. To that end, native HCT116 lysates were treated with increasing concentrations of AEA from 0 to 32.5% (Figure 1A). Protein aggregates were removed from each condition by high-speed centrifugation and the resulting soluble fractions were resolved by SDS-PAGE. While some proteins were insensitive to AEA treatment, the majority of the proteome appeared to denature well between the concentrations tested, reaching a bottom plateau around 25% AEA (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic diagram of solvent-induced precipitation. (B) Count of quantified proteins in each replicate and those to which sigmoidal curves were fit well (R2 > 0.8 and plateau < 0.3). Each replicate is a single TMTpro 16plex experiment. (C) Heatmap representation of all proteins quantified in replicate 1. For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA is presented. The proteins for which high-quality curves (R2 > 0.8 and plateau < 0.3) could be obtained (6623) are separated from those for which curves with reduced quality fits were returned (1874). Proteins are sorted by CM. (D) CM distribution for replicate 1. Proteins to which sigmoidal curves were fit well were included (6623 proteins, R2 > 0.8 and plateau < 0.3). (E) Reproducibility of CM measures between replicates. A high correlation (Pearson correlation – 0.9) was achieved. Proteins that showed high-quality curves (R2 > 0.8 and plateau < 0.3) in at least one replicate were included. (F) Examples of solvent melting curves for URB2, NHP2L1, FAM114A1, and UNC119B from replicate 1 (blue) and replicate 2 (orange). Inset in each panel reports CM, slope, plateau, and R2 for each curve. Curves were selected to highlight a range of CM values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Upper panel: native HCT116 lysates were treated with 14 increasing concentrations of AEA (0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5%). Soluble fractions were resolved by SDS-PAGE and visualized with Coomassie staining.Lower panel: the concentration of protein in each soluble fraction at each %AEA was determined by BCA assay from two biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Heatmap representation of all proteins quantified in replicate 1 before (left panel) and after (right panel) normalization with thermal proteome profiling (TPP) package. For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA is presented.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Heatmap representation of all proteins quantified in replicate 2. For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA is presented. The proteins to which curves could be fit well (6879 proteins, R2 > 0.8 and plateau < 0.3) are separated from those to which curves could not be fit well (1678). Proteins are sorted by CM. (B) Gene Ontology enrichment analysis of proteins to which sigmoidal curves could not be fit well in replicate 1. (C) CM distribution in replicate 2. Proteins to which sigmoidal curves could be fit well are included (6879 proteins, R2 > 0.8 and plateau < 0.3).
 
 Next, we wanted to combine the underlying principles of SIP with modern TMT-based quantitative proteomics (Li et al., 2020a; Thompson et al., 2019). If SIP is to form the foundation for an MS-based target engagement strategy, then three criteria must be met. First, methods to fit protein melting curves to protein abundance data are required. Second, these curves need to be capable of reliably and reproducibly assigning melting concentrations (the concentration of AEA at which a protein is equally distributed between the folded and unfolded state; CM) to individual proteins. Finally, a significant fraction of the proteome needs to be amenable to this method. To address these three objectives, native HCT116 lysates (biological duplicates) were treated with 16 increasing concentrations of AEA from 0 to 21%. An equal volume of each soluble fraction was collected, digested, labeled with one of the 16 TMTpro reagents, and further prepared for LC-MS/MS analysis (Figure 1A). In total, this generated two TMTpro 16plexes, one representing each replicate proteome treated with 16 concentrations of AEA. We adapted the R package (TPP) to assign melting curves for TPP data to analyze solvent-induced melting/denaturation curves (see Materials and methods) (Savitski et al., 2014). Using TMTpro-based quantitation, sigmoidal protein melting curves were then fit to protein abundance measurements from each %AEA such that a CM could be assigned to each protein. Similar to thermal melting experiments, a subset of the data is used to normalize protein abundance values at each %AEA (Figure 1—figure supplement 2).
 
 In total, we were able to quantify approximately 8500 proteins in each replicate, with greater than 7600 proteins being quantified in both 16plexes (Figure 1B and C, Figure 1—figure supplement 3A, Figure 1—source data 1). Similar to TPP, each curve is assigned three important measures of overall quality—the coefficient of determination (R2), which indicates how well the curve fit the data, the melting concentration (CM), which is given by the concentration at which 50% of the protein is denatured, and the plateau, which is given by the curve’s bottom asymptote. Echoing the values used for assigning thermal melting curves, we required that a high-quality solvent melting curve have an R2 value greater than 0.8, a plateau less than 0.3, and a valid slope in order to confidently assign a CM (Franken et al., 2015). Using these filters, we were able to fit high-quality melting curves to 6623 and 6879 proteins in each replicate, respectively, with a total of 5894 curves passing filters in both replicates (Figure 1B and C, Figure 1—figure supplement 3A and B, Figure 1—source data 1). The median CM in each experiment was 10.2%, with an overall range of approximately 7–21% AEA (Figure 1D, Figure 1—figure supplement 3C). Individual CM values correlated well between replicates (Figure 1E) and protein melting curves from independent replicates tended to superimpose across a broad range of CM values (Figure 1F). Overall, these data demonstrate that SIP can be employed to reliably and reproducibly assign CM values to a large fraction (~78%) of the cellular proteome that we were able to detect.
 
-## SPP is capable of target deconvolution
+### SPP is capable of target deconvolution
 
 Armed with a workflow capable of generating and interpreting solvent melting curves, we next sought to develop a robust assay for assessing target engagement. To that end, we developed SPP, an MS-based sample multiplexing approach for uncovering protein-ligand interactions on a proteome-wide scale (Figure 2A, Figure 2—figure supplement 1). To test this workflow, we selected SCIO-469, an inhibitor of p38 MAP kinases, for analysis by SPP (Dominguez et al., 2005; Hideshima et al., 2004). HCT116 lysates were treated with 100 μM SCIO-469 or vehicle (DMSO). Following a brief incubation, each sample was further divided into eight aliquots and treated with increasing concentrations of AEA from 0 to 21% (0, 3, 6, 9, 12, 15, 18, and 21%). Protein aggregates were removed by high-speed centrifugation and an equal volume of each soluble fraction was collected and prepared for downstream analysis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic diagram summarizing the SPP workflow. (B) Native HCT116 lysates were treated with 100 μM SCIO-469. SPP melting curves for MAPK14 and MAPK12—known target proteins of SCIO-469—are displayed from two biological replicates. (C) Native HCT116 lysates were treated with 25 μM Alisertib. SPP melting curves for AURKA and AURKB are displayed for two biological replicates. (D) Native HCT116 lysates were treated with 25 μM MK2206. SPP melting curves for AKT1 and AKT2 are displayed for two biological replicates. (E) Soluble fractions from SPP were separated by SDS-PAGE and immunoblotted with the indicated antibodies. Asterisks indicate statistically significant hits (see Materials and methods). Crosses indicate melting points when available.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Native cell lysates are prepared and divided into two aliquots. One aliquot is treated with drug and the other reserved for a vehicle-treated control. Samples are incubated with drug or vehicle for 15 min at room temperature. Compound- and vehicle-treated samples are further divided into eight aliquots and treated with increasing concentrations of AEA (0–3−6–9−12–15−18–21%). AEA-treated samples are incubated at 37°C for 20 min at which point they are subjected to centrifugation to separate the soluble and insoluble fractions. Soluble fractions are collected and the proteomes are reduced, alkylated, and digested. The resulting peptides were labeled with TMTpro 16plex reagents, pooled, and fractionated before being analyzed by LC-MS/MS. Sigmoidal protein denaturation curves were fit to the quantitative protein data. Target engagement is determined by a change in melting concentration (CM).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Heatmap representation of all proteins quantified in each replicate in the solvent proteome profiling (SPP) experiment with SCIO-469 treatment. For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA is presented. The proteins to which curves could be fit well (R2 > 0.8 and plateau < 0.3) are separated from those for which curves with reduced quality fits. (E, F) The CM distribution for each replicate native HCT116 lysates treated with DMSO or SCIO-469. Only proteins showing high-quality curves were included (R2 > 0.8 and plateau < 0.3). (I, J) Reproducibility of CM measures between replicates treated with DMSO (I, Pearson correlation – 0.86) or SCIO-469 (J, Pearson correlation – 0.9). Proteins that showed high-quality curves (R2 > 0.8 and plateau < 0.3) in at least one replicate were included.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Native HCT116 lysates were treated with 100 μM SCIO-469. Solvent melting curve for MAPK13 is displayed for two replicate experiments. Asterisks indicate statistically significant hits (see Materials and methods). Crosses indicate melting points when available.
 
 Moving from 16 concentrations to 8 allowed us to combine the vehicle- and compound-treated samples into a single TMTpro 16plex, thereby assuring all detected proteins will be quantified in both the control and treated groups (Zinn et al., 2021). In order to confirm that this transition did not have a negative impact on our ability to fit solvent melting curves, we first inspected the overall quality of the dataset. In total, we were able to quantify 9118 and 8847 proteins in each replicate, respectively (Figure 2—figure supplement 2A–D, Figure 2—source data 1). After curve fitting, CM values could be assigned to more than 6500 proteins in each group (~75% of quantified proteins), a value in line with what was previously observed when using 16 concentrations (Figure 1). Using these eight-point melting curves, we next assigned a CM to each protein in the control and treated groups and found a median CM of approximately 12% across all four groups (Figure 2—figure supplement 2E–H). This is in contrast to the median CM of ~10%, which was observed in Figure 1. We believe that this disparity stems from day-to-day variation in the preparation of AEA stock solutions. Nonetheless, while there appears to be some amount of deviation between experiments, replicate data, produced using the identical AEA stocks, generate CM values that are highly reproducible (Figure 2—figure supplement 2I and J). Overall, these data demonstrate that high-quality solvent melting curves can be generated from just eight concentrations of AEA.
 
@@ -46,9 +78,25 @@ We next directed our attention to the known targets of SCIO-469. Appropriately, 
 
 Satisfied with the outcome of our initial SPP trial, we applied this workflow to two additional compounds—Alisertib and MK2206—which engage and inhibit Aurora kinase A (AURKA) and AKT, respectively (Bavetsias and Linardopoulos, 2015; Hirai et al., 2010). Native HCT116 lysates were treated with 25 μM Alisertib, 25 μM MK2206, or vehicle (DMSO) and subjected to SPP. Alisertib is a potent and specific inhibitor of AURKA, which it inhibits with at least two orders of magnitude greater potency than Aurora kinase B (AURKB) (Bavetsias and Linardopoulos, 2015). Consistent with this disparity, Alisertib induces an evident shift in CM for AURKA, while AURKB did not experience such a shift in response to the compound (Figure 2C and E, Figure 2—source data 2). MK2206 is a pan-AKT inhibitor and, as such, causes a significant shift in both AKT1 and AKT2 (Figure 2D and E, Figure 2—source data 3). Overall, these data further reinforce that SPP can be used to reliably assess compound target engagement on a proteome-wide scale.
 
-## Solvent-PISA increases the efficiency of SPP
+### Solvent-PISA increases the efficiency of SPP
 
 Similar to TPP, SPP depends on building and analyzing full protein melting curves and, therefore, suffers from similar drawbacks as its predecessor. The PISA technique was developed to address these issues and increase the efficiency of proteome-wide thermal shift assays. Rather than relying on analysis of full melting curves, thermal-PISA, instead, approximates the area under a protein melting curve by pooling samples that had been heated across a temperature gradient (Gaetani et al., 2019). We applied this strategy to SPP to develop solvent-PISA (Figure 3A). Rather than labeling each soluble fraction individually, as in SPP, an equal volume from each sample is pooled together. This pooled sample, which approximates the area under the solvent melting curve for all proteins quantified, can then be labeled with a single TMTpro reagent. Importantly, comparing a single compound to a vehicle-treated control using solvent-PISA requires just two TMTpro channels (each channel represents thousands of melting curves from a single sample), whereas the analogous SPP experiment would use the full 16 channels. Thus, solvent-PISA can support more complex experimental design that allows for the simultaneous analysis of multiple replicates, multiple concentrations, or multiple compounds in a single TMTpro group. In the end, ligand binding can be read out as a simple increase or decrease in protein abundance in the compound-treated sample versus the vehicle-treated control often determined by a simple t-test (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig3-v1.jpg)
+
+**Figure 3.:** (A) Native cell lysates are prepared and divided into multiple aliquots. Half the aliquots are treated with drug and the other half reserved for a vehicle-treated control. Samples are incubated for 15 min at room temperature. Compound- and vehicle-treated samples are further divided into eight aliquots and treated with increasing concentrations of AEA (9, 10.375, 11.75, 13.125, 14.5, 15.875, 17.25, and 18.625%). AEA-treated samples are incubated at 37°C for 20 min at which point they are subjected to centrifugation to separate the soluble and insoluble fractions. Soluble fractions are collected and pooled in equal volumes before being reduced, alkylated, and digested. The resulting peptides are labeled with TMTpro 16plex reagents, pooled, and fractionated before being analyzed by LC-MS/MS. Target engagement is determined by an increase or decrease in protein content compared to the vehicle-treated control. (B, C) HCT116 lysates were treated with 100 μM SCIO-469 (B) or 25 μM vorinostat (C) and analyzed by solvent-PISA. Data are presented as a volcano plot to highlight significant changes in abundance. Significant changes were determined using a permutation-based false discovery rate (FDR) (FDR – 0.05, S0 – 0.1) and are indicated with blue dots. (D, E) HCT116 lysates were treated with 100 μM SCIO-469 (D) or 25 μM vorinostat (E) and analyzed by solvent-PISA (blue shades) or thermal-PISA (orange shades). Individual log2 fold change values (in reference to the vehicle mean) are plotted for several proteins. Dotted lines at y = 0.25 and y = −0.25 are included to denote fold change values of ~20%.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Solvent melting curves for MAPK9. (B) MAPK9/JNK2 in vitro kinase assay. Bars represent the mean relative kinase activity of four replicate measurements with (blue) and without (gray) 10 µM SCIO-469. Data represent two independent experiments in which 10 µg or 20 µg MAPK9/JNK2 was used per reaction. #p<0.0001. (C) Solvent melting curves for MAPK9/JNK2. Asterisks indicate statistically significant hits (see Materials and methods). Crosses indicate melting points when available.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Count of total proteins quantified and proteins quantified with at least two peptides and with a %CV < 15% across replicates. (B, C) Distribution of CV values from each experimental group for all proteins quantified (B) and those quantified with at least two peptides (C). For the box plots, center line, median; box limits correspond to the first and third quartiles; whiskers, 1.5× interquartile range, outliers not shown. (D) Table summarizing the filters used during data analysis. A significant change in CM is defined by p<0.0001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) HCT116 lysates were treated with 100 μM SCIO-469 and analyzed by solvent-PISA (A) or thermal-PISA (B). Proteins quantified with at least two peptides and having a %CV < 15 across replicates were sorted by the mean log2 fold change of four (A) or three (B) replicate measurements. (C, D) HCT116 lysates were treated with 25 μM vorinostat and analyzed by solvent-PISA (C) or thermal-PISA (D). Proteins quantified with at least two peptides and having a %CV < 15% across replicates were sorted by the mean log2 fold change of four (C) or two (D) replicate measurements. Known targets are indicated with green dots. Dotted lines at y = 0.25 and y = −0.25 are included to highlight significant shifts. * indicate different isoforms of the same gene.
 
 In order to illustrate the utility of solvent-PISA and underscore its increased capacity for sample multiplexing, we again treated native HCT116 lysates (N = 4) with 100 μM SCIO-469 (to mirror SPP data) or vehicle (DMSO). The samples were exposed to eight increasing concentrations of AEA from 9 to 19%. After centrifugation to remove aggregates, an equal volume of each soluble fraction was pooled, labeled with TMTpro reagents, and prepared for LC-MS/MS analysis. In total, we quantified ~7200 proteins with two or more peptides and found that the known targets of SCIO-469, including MAPK14 and MAPK12, emerged as significant hits (Figure 3B, Figure 3—source data 1). In addition to these known targets, solvent-PISA also highlighted additional putative targets (Figure 3B). One of these potential targets, MAPK9/JNK2, also scored in the full-curve SPP experiment (Figure 3—figure supplement 1A). Therefore, we sought to confirm this result using an in vitro kinase assay and found that SCIO-469 could inhibit MAPK9/JNK2 (Figure 3—figure supplement 1B). Interestingly, other putative targets identified in the PISA experiment, including CDK19, did not score in the full-curve SPP experiment. Upon closer inspection, it was discovered that CDK19 appeared to shift CM in the presence of SCIO-469. However, it was only found in a single SPP replicate and was therefore ignored (Figure 3—figure supplement 1C). Overall, these data demonstrate that solvent-PISA is an adequate surrogate for SPP, capable of identifying protein-ligand interactions using AUC analysis.
 
@@ -56,13 +104,33 @@ Next, we wanted to compare solvent-PISA to thermal-PISA. To that end, we include
 
 Having previously performed SPP on both Alisertib and MK2206, we next analyzed these two compounds by solvent-PISA. This provided an opportunity to highlight the increased multiplexing capacity of this approach by simultaneously analyzing multiple concentrations in a single experiment. HCT116 lysates (N = 4) were treated with three increasing concentrations (5 μM, 25 μM, and 125 μM) of each compound and analyzed by solvent-PISA (Figure 4—source data 1, Figure 4—source data 2). Consistent with previous SPP data, the known targets of each compound emerged as significant hits following 25 μM treatments (Figure 4A, Figure 4—figure supplement 1A-C ). AURKA reached a maximum log2 fold change at the lowest dose of Alisertib assayed and held steady upon treatment with increasing doses (Figure 4—figure supplement 1D). Treatment with increasing concentrations of MK2206, on the other hand, resulted in a dose-dependent increase in log2 fold change for its targets—AKT1 and AKT2 (Figure 4B). Overall, these data further reinforce the utility of solvent-PISA and underscore its benefits compared to SPP.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig4-v1.jpg)
+
+**Figure 4.:** (A) HCT116 lysates were treated with 25 μM MK2206 and analyzed by solvent-PISA. Data are presented as a volcano plot to highlight significant changes in abundance. Significant changes were determined using a permutation-based false discovery rate (FDR) (FDR – 0.05, S0 – 0.1) and are indicated with blue dots. (B) HCT116 lysates were treated with 5 μM, 25 μM, or 125 μM MK2206 and analyzed by solvent-PISA. Individual log2 fold change values are plotted for several proteins at each concentration. Dotted lines at y = 0.25 and y = −0.25 are included to highlight minimum changes of ~20%. (C) Schematic diagram of solvent proteome profiling (SPP) melting curves indicating the range of %AEA used for each window. (D) Individual log2 fold change values are plotted for several proteins measured using different windows. (E) Expected log2 fold change values for several proteins were calculated based on SPP melting curves determined by SPP for each window (calculated from Figure 2B). Individual abundances for the compound-treated samples and vehicle-treated controls at each %AEA within a given range were summed. Considering the 0–21% window (window 1), for example, we simply summed all eight abundance measurements from the eight AEA concentrations used to generate the SPP data. For the 9–19% window (window 2), we summed only the SPP abundances between 9 and 19%, and so on.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HCT116 lysates were treated with 25 μM MK2206 and analyzed by solvent-PISA. Proteins quantified with at least two peptides and having a %CV < 15 across replicates were sorted by the mean log2 fold change of four replicate measurements. (B) HCT116 lysates were treated with 25 μM Alisertib and analyzed by solvent-PISA. Data are presented as a volcano plot to highlight significant changes in abundance. Significant changes were determined using a permutation-based false discovery rate (FDR) (FDR – 0.05, S0 – 0.1) and are indicated with blue dots. (C) HCT116 lysates were treated with 25 μM Alisertib and analyzed by solvent-PISA. Proteins quantified with at least two peptides and having a %CV < 15 across replicates were sorted by the mean log2 fold change of four replicate measurements. (D) Individual log2 fold change values are plotted for several proteins at each concentration of Alisertib. Dotted lines at y = 0.25 and y = −0.25 are included to highlight changes of ~20%.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Solvent proteome profiling (SPP) melting curves for CHEK1. Replicate experiments were separated into two different panels for visualization. (B) HCT116 lysates were treated with 125 μM MK2206 and analyzed by solvent-PISA. Data are presented as a volcano plot to highlight significant changes in abundance. Significant changes were determined using a permutation-based false discovery rate (FDR) (FDR – 0.05, S0 – 0.1) and are indicated with blue dots. (C) HCT116 lysates were treated with 5 μM, 25 μM, or 125 μM MK2206 and analyzed by solvent-PISA. Individual log2 fold change values for CHEK1 are displayed at each concentration of MK2206. All values are derived from a single TMTpro 16plex experiment.
+
 Previously, we demonstrated that, in the context of thermal-PISA, the selection of temperature range ultimately impacts the fold change values, with higher and smaller temperature windows generally resulting in larger fold changes (Li et al., 2020b). In this study, we have focused on a range of 9–19% AEA for all solvent-PISA experiments thus far. This range encompasses the back half of most solvent-induced protein melting curves, a concept that we found to be advantageous for thermal-PISA experiments. Nonetheless, we wanted to understand how the selection of AEA concentrations impacts the final fold changes that are measured in a solvent-PISA experiment. Therefore, we exposed HCT116 lysates (N = 2) treated with 25 μM MK2206 to four ranges of AEA concentrations, which we will refer to as windows (Figure 4C, Figure 4—source data 3). The first window covered the entire melting curve from 0 to 21% AEA. The remaining three windows covered much smaller and higher ranges and were all localized to the back half of most melting curves (Figure 4C). Echoing what was seen previously for thermal-PISA, the selection of %AEA range had a profound impact on the ultimate log2 fold changes that were measured, with progressively later and smaller windows resulting in larger fold change values (Figure 4D). Focusing on AKT1 and AKT2, using the full window of 0–21% AEA resulted in a measured log2 fold change of approximately 0.3 and 0.2, respectively. Utilizing the remaining three windows, all resulted in much larger changes, with AKT1 exhibiting log2 fold changes of ~0.6, ~0.75, and ~1.6 for windows 2 (9–19% AEA), 3 (11–19% AEA), and 4 (14–19%), respectively, while AKT2 followed a similar trend. Having previously performed SPP on MK2206-treated lysates, we took the opportunity to calculate the expected log2 fold change for each %AEA window based on the SPP melting curves (Figure 2D) and found that the calculated (Figure 4D) and measured (Figure 4E) log2 fold change values were quite similar. Overall, these data demonstrate that the selection of AEA concentrations meaningfully impacts the final dataset such that the chosen range should be carefully considered.
 
 While it is likely that AKT1 and AKT2 would have been identified using any of the windows, we found at least one example of a putative target that only experienced a significant fold change in a single solvent-PISA window. Indeed, CHEK1 does not appear to change substantially in any of the first three windows but exhibits an average log2 fold change of –0.7 upon utilization of window 4 (Figure 4D). Consistent with our previous observations, these values also correlate well with the calculated values based on the CHEK1 solvent melting curves (Figure 4E). Upon closer inspection of SPP data, it is clear that CHEK1 has a high CM and treatment with 25 µM MK2206 resulted in a slight but reproducible ΔCM (Figure 4—figure supplement 2A). This likely explains why CHEK1 only emerged as a putative target when utilizing the smallest solvent-PISA window. Finally, we found that treatment with higher doses of MK2206 (125 µM) in an independent experiment caused a significant decrease (log2 fold change of –0.52) in CHEK1, even when utilizing the window of 9–19% AEA (Figure 4—figure supplement 2B and C). While these data imply that CHEK1 might be a target of MK2206, they are far from definitive and would require further investigation.
 
-## Combining solvent shift assays with thermal shift assays increases proteome coverage
+### Combining solvent shift assays with thermal shift assays increases proteome coverage
 
 So far, we have described two new strategies for assessing target engagement on a proteome-wide scale. While only SPP involves building complete protein melting curves, solvent-PISA still relies on them to a large extent. That is, if a high-quality melting curve cannot be fit to a given protein, the protein is not amenable to analysis by SPP and very likely not by solvent-PISA, either. On the basis of previously published TPP data and the SPP data presented here, it appears that high-quality curves cannot be fit to as much as 30% of quantified proteins (Figure 5A, Figure 5—figure supplement 1A; Jarzab et al., 2020). We hypothesized that by combining SPP with TPP or, indeed, solvent-PISA with thermal-PISA, it might be possible to expand the overall coverage of the proteome, allowing access to more proteins than either approach, individually by maximizing the absolute number of high-quality curves. To test this hypothesis, we generated native HCT116 lysates (biological duplicates) and performed both SPP and TPP. SPP was performed using eight different concentrations of AEA, while TPP experiments were performed using eight temperatures. Biological duplicates were combined into a single TMTpro 16plex to maximize the overlap between replicates. Each approach resulted in the quantification of ~8500 proteins. However, 25–30% of each dataset were lost due to poor curve quality, meaning that only approximately 6500 proteins could be assigned a CM or TM (Figure 5A and B, Figure 5—figure supplement 1A, Figure 5—source data 1). A total of 7667 proteins were quantified using both SPP and TPP. Using R2 > 0.8 and plateau < 0.3 as criteria, high-quality curves could be fit to approximately 5000 proteins in both approaches, while over 1000 proteins could not be assigned a good curve using either SPP or TPP (Figure 5C, Figure 5—figure supplement 1B and C). Consistent with our hypothesis, there were over 620 proteins that produced high-quality curves in SPP but not TPP and over 850 proteins that produced high-quality curves in TPP but not SPP. Therefore, by combining both SPP and TPP, we were able to fit high-quality curves to a total of over 6400 proteins, which is more than either approach, independently (Figure 5C, Figure 5—figure supplement 1C, Figure 5—source data 1). While these numbers will, of course, vary based on experimental conditions such as proteome extraction method and AEA/temperature range, we expect that the basic trend will hold true. Thus, we conclude that combining the two methods can expand total proteomic coverage and allow a molecule of interest to be screened against a greater fraction of the total cellular proteome.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fractions of high-quality curves (R2 > 0.8 and plateau < 0.3) in SPP and TPP datasets. * indicates datasets taken from the Meltome Atlas (Jarzab et al., 2020). A similar fraction (~70%) of high-quality curves were obtained in SPP and TPP assays. (B) Reproducibility of SPP CM (left panel) and TPP TM (right panel) values between replicates. SPP and TPP experiments showed equivalent reproducibility between replicates. Proteins that show high-quality curves (R2 > 0.8 and plateau < 0.3) in at least one replicate were included. (C) Heatmap representation of all proteins quantified in both SPP and TPP (replicate 1). For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA (SPP, left) or at the indicated temperature compared to 38°C (TPP, right) is presented. The panel on the right indicates Gene Ontology entries that are enriched in each indicated group. Proteins that were quantified in both SPP and TPP were used as the background. (D) Selected SPP (orange) and TPP (blue) denaturation/melting curves highlighting proteins showing high-quality curves (R2 > 0.8 and plateau < 0.3) in both approaches, in SPP alone (second), in TPP alone (third), or neither (fourth).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70784/elife-70784-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Total number of high-quality curves (R2 > 0.8 and plateau < 0.3) in solvent proteome profiling (SPP) and thermal proteome profiling (TPP) datasets. * indicates datasets taken from the Meltome Atlas (Jarzab et al., 2020). (B) Relationship between CM (x-axes) and TM (y-axes) for two replicate experiments. (C) Heatmap representation of all proteins quantified in both SPP and TPP (replicate 2). For each protein, its relative abundance (fold change) at the indicated %AEA compared to 0% AEA (SPP, left) or at the indicated temperature compared to 38°C (TPP, right) is presented. The panel on the right indicates Gene Ontology entries that are enriched in each indicated group. Proteins quantified in both SPP and TPP were used as the background. For proteins (colored in cyan) showing good curves in SPP, but not in TPP, adjusted p-values were filtered at 0.05.
 
 ## Discussion
 
@@ -76,39 +144,182 @@ Overall, the proteome-wide solvent shift assays described here represent powerfu
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116 (adult, colorectal cancer)</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-247</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4691</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p38 MAPK (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9212</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Aurora A (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4718</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG-HRP</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-2004</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SCIO-469</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 29484;batch: 0575761-1</td>
+      <td>10 µM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alisertib(MLN8237)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 13602;batch: 0565558-18</td>
+      <td>10 µM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK2206 (hydrochloride)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 11593;batch: 0586491-5</td>
+      <td>10 µM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vorinostat(SAHA)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10009929;batch: 0512249-52</td>
+      <td>10 µM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMTpro 16plex Label Reagent Set</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A44520;batch: VI313212</td>
+      <td>Solubilized in anhydrous acetonitrile</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JNK2 kinase enzyme</td>
+      <td>Promega</td>
+      <td>Cat# VA7210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ADP-Glo kinase assay</td>
+      <td>Promega</td>
+      <td>Cat# V9101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>ttp://maxquant.net/perseusTyanova et al., 2016</td>
+      <td>Version 1.6.15.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Version 9.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>Version 4.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TPP package</td>
+      <td>https://github.com/DoroChilds/TPP; Franken et al., 2015</td>
+      <td>Version 3.17.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sera-Mag SpeedBead Carboxylate-Modified Magnetic Particles (Hydrophobic)</td>
+      <td>Cytiva</td>
+      <td>Cat# 44152105050250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sera-Mag Carboxylate-Modified Magnetic Particles (Hydrophylic)</td>
+      <td>Cytiva</td>
+      <td>Cat#45152105050250</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HCT116 cells (purchased from ATCC) were cultured in Dulbecco’s Modified Eagle’s Medium supplemented with 10% fetal bovine serum and 1× penicillin-streptomycin. Cells were grown until ~80% confluency, harvested by scraping, washed with phosphate-buffered saline, and flash frozen in liquid nitrogen. Cell pellets were stored at –80°C until ready for use. HCT116 cells were confirmed to be mycoplasma negative.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 HCT116 cell lysates were combined with Laemmli buffer and resolved on Novex WedgeWell 4–20% Tris-Glycine gels (Invitrogen). Gels were either stained with Novex SimplyBlue SafeStain (Invitrogen) or transferred to an Immun-Blot PVDF membrane (Bio-Rad). Membranes were immunoblotted with antibodies against p38 MAPK (Cell Signaling Technology, 9212), Akt (Cell Signaling Technology, 4691), and Aurora A (Cell Signaling Technology, 4718).
 
-## Solvent proteome profiling
+### Solvent proteome profiling
 
 HCT116 proteomes were extracted from frozen cell pellets with lysis buffer (1× TBS, 1.5 mM MgCl2, 0.5% NP-40, 1× protease inhibitor [Pierce Protease Inhibitor Mini Tablets]). Lysates were incubated for 15 min at 4°C and cleared by centrifugation at 20,000 × g. The soluble fraction was diluted to 2 mg/mL using lysis buffer and allowed to warm to room temperature (RT). Compound (solubilized in DMSO) or DMSO was added to the desired concentration, and the samples were allowed to incubate at RT for 15 min. Each sample was divided into eight aliquots, each of which was treated with an increasing concentration of AEA from 0 to 21% (0, 3, 6, 9, 12, 15, 18, and 21%). Upon addition of AEA, samples were incubated at 37°C with vigorous shaking for 20 min. Precipitated proteins were removed by centrifugation at 21,000 × g for 15 min. An equal volume of each soluble fraction was collected and prepared for LC-MS/MS analysis.
 
-## Thermal proteome profiling
+### Thermal proteome profiling
 
 HCT116 proteomes were extracted from frozen cell pellets with lysis buffer (1× TBS, 1.5 mM MgCl2, 0.5% NP-40, 1× protease inhibitor Pirece Protease Inhibitor Mini Tablets). Lysates were incubated for 15 min at 4°C and cleared by centrifugation at 20,000 × g. The soluble fraction was diluted to 2 mg/mL using lysis buffer and allowed to warm to RT. DMSO was added to the desired concentration, and the samples were allowed to incubate at RT for 15 min. Each sample was divided into eight aliquots and heated across a temperature gradient from 38 to 61°C for 3 min in an Eppendorf Mastercycler Pro S. Precipitated proteins were removed by centrifugation at 21,000 × g for 15 min. An equal volume of each soluble fraction was collected and prepared for LC-MS/MS analysis.
 
-## Solvent-PISA assay
+### Solvent-PISA assay
 
 HCT116 proteomes were extracted from frozen cell pellets with lysis buffer (1× TBS, 1.5 mM MgCl2, 0.5% NP-40, 1× protease inhibitor [Pierce Protease Inhibitor Mini Tablets]). Lysates were incubated for 15 min at 4°C and cleared by centrifugation at 20,000 × g. The soluble fraction was diluted to 2 mg/mL using lysis buffer and allowed to warm to RT. Compound (solubilized in DMSO) or DMSO was added to the desired concentration, and the samples were allowed to incubate at RT for 15 min. Each sample was divided into eight aliquots, each of which was treated with an increasing concentration of AEA from 0 to 21% (0, 3, 6, 9, 12, 15, 18, and 21%), 9 to 19% (9, 10.5, 12, 13.5, 15, 16.5, 18, and 19.5%), 11 to 19% (11, 12.25, 13.5, 14.75, 16, 17.25, 18.5, and 19.75%), or 14 to 19% (14.25, 15, 15.75, 16.5, 17.25, 18, 18.75, and 19.5%). Upon addition of AEA, samples were incubated at 37°C with vigorous shaking for 20 min. Precipitated proteins were removed by centrifugation at 21,000 × g for 15 min. An equal volume of each resulting soluble fraction was pooled into a single sample and prepared for LC-MS/MS analysis.
 
-## Thermal-PISA assay
+### Thermal-PISA assay
 
 HCT116 proteomes were extracted from frozen cell pellets with lysis buffer (1× TBS, 1.5 mM MgCl2, 0.5% NP-40, 1× protease inhibitor [Pierce Protease Inhibitor Mini Tablets]). Lysates were incubated for 15 min at 4°C and cleared by centrifugation at 20,000 × g. The soluble fraction was diluted to 2 mg/mL using lysis buffer and allowed to warm to RT. Compound (solubilized in DMSO) or DMSO was added to the desired concentration, and the samples were allowed to incubate at RT for 15 min. Each sample was divided into eight aliquots, each of which was heated to a different temperature from 48 to 58°C for 3 min in an Eppendorf Mastercycler Pro S. Samples were allowed to cool at RT for 5 min. An equal volume of each sample was pooled and spun at 21,000 × g for 90 min. Approximately 15 μg of soluble protein were collected and prepared for LC-MS/MS analysis.
 
-## LC-MS/MS sample preparation
+### LC-MS/MS sample preparation
 
 Samples (15–20 μg protein) were diluted in prep buffer (400 mM EPPS pH 8.5, 1% SDS, 10 mM tris(2-carboxyethyl)phosphine hydrochloride) and incubated at RT for 10 min. Iodoacetimide was added to a final concentration of 10 mM to each sample and incubated for 25 min in the dark. Finally, DTT was added to each sample to a final concentration of 10 mM. A buffer exchange was carried out using a modified SP3 protocol (Hughes et al., 2014; Hughes et al., 2019). Briefly, ~250 μg of each SpeedBead Magnetic Carboxylate modified particles (Cytiva; 45152105050250, 65152105050250) mixed at a 1:1 ratio were added to each sample. 100% ethanol was added to each sample to achieve a final ethanol concentration of at least 50%. Samples were incubated with gentle shaking for 15 min. Samples were washed three times with 80% ethanol. Protein was eluted from SP3 beads using 200 mM EPPS pH 8.5 containing trypsin (Thermo Fisher Scientific) and Lys-C (Wako). Samples were digested overnight at 37°C with vigorous shaking. Acetonitrile was added to each sample to achieve a final concentration of 30%. Each sample was labeled, in the presence of SP3 beads, with ~65 μg of TMTpro 16plex reagents (Thermo Fisher Scientific) (Li et al., 2020a; Thompson et al., 2019). Experimental layouts for each experiment are described in the corresponding source data tables. Following confirmation of satisfactory labeling (>97%), excess TMTpro reagents were quenched by addition of hydroxylamine to a final concentration of 0.3%. The full volume from each sample was pooled and acetonitrile was removed by vacuum centrifugation for 1 hr. The pooled sample was acidified using formic acid and peptides were desalted using a Sep-Pak Vac 50 mg tC18 cartridge (Waters). Peptides were eluted in 70% acetonitrile, 1% formic acid, and dried by vacuum centrifugation. The peptides were resuspended in 10 mM ammonium bicarbonate pH 8, 5% acetonitrile, and fractionated by basic pH reverse-phase HPLC. In total, 24 fractions were collected. The fractions were dried in a vacuum centrifuge, resuspended in 5% acetonitrile, 1%, formic acid and desalted by stage-tip. Final peptides were eluted in 70% acetonitrile, 1% formic acid, dried, and finally resuspended in 5% acetonitrile, 5% formic acid. In the end, 12 of 24 fractions were analyzed by LC-MS/MS.
 
-## MS data acquisition
+### MS data acquisition
 
 Data were collected on an Orbitrap Eclipse mass spectrometer (Thermo Fisher Scientific) coupled to a Proxeon EASY-nLC 1000 LC pump (Thermo Fisher Scientific). Peptides were separated using a 90 min gradient at 500 nL/min on a 30 cm column (i.d. 100 μm, Accucore, 2.6 μm, 150 Å) packed in-house. High-field asymmetric-waveform ion mobility spectroscopy (FAIMS) was enabled during data acquisition with compensation voltages (CVs) set as −40 V, −60 V, and −80 V (Schweppe et al., 2019). MS1 data were collected using the Orbitrap (60,000 resolution; maximum injection time 50 ms; AGC 4 × 105). Determined charge states between 2 and 6 were required for sequencing, and a 60 s dynamic exclusion window was used. Data-dependent mode was set as cycle time (1 s). MS2 scans were performed in the Orbitrap with HCD fragmentation (isolation window 0.5 Da; 50,000 resolution; NCE 36%; maximum injection time 86 ms; AGC 1 × 105).
 
-## MS data analysis
+### MS data analysis
 
 Raw files were first converted to mzXML, and monoisotopic peaks were reassigned using Monocle (Rad et al., 2021). Database searching included all human entries from Uniprot (downloaded in February 2014). The database was concatenated with one composed of all protein sequences in the reversed order. Sequences of common contaminant proteins (e.g., trypsin, keratins, etc.) were appended as well. Searches were performed using the Comet search algorithm. Searches were performed using a 50 ppm precursor ion tolerance and 0.02 Da product ion tolerance. TMTpro on lysine residues and peptide N termini (+304.2071 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification.
 
@@ -116,13 +327,13 @@ Peptide-spectrum matches (PSMs) were adjusted to a 1% false discovery rate (FDR)
 
 For reporter ion quantification, a 0.003 Da window around the theoretical m/z of each reporter ion was scanned, and the most intense m/z was used. Reporter ion intensities were adjusted to correct for the isotopic impurities of the different TMTpro reagents according to the manufacturer’s specifications. Peptides were filtered to include only those with a summed signal-to-noise (SN) of 160 or greater across all channels. For each protein, the filtered peptide TMTpro SN values were summed to generate protein quantification.
 
-## Data analysis for SPP and TPP
+### Data analysis for SPP and TPP
 
 The TPP R package (3.17.6) (Franken et al., 2015) was adapted to enable the analysis of SPP data. First, a bug in ‘analyzeTPPTR.r’ was fixed to allow passing starting parameters to the function ‘tpptrNormalize.’ The starting parameters used for SPP data were ‘startPars = c("Pl" = 0,"a" = 55,"b" = 10).’ The starting parameters used for TPP data were ‘startPars = c("Pl" = 0,"a" = 550,"b" = 10)’ (default parameters in TPP package). Second, in ‘inflectionPoint.r,’ the parameter ‘interval’ for function ‘uniroot’ was set as ‘c(3,21)’ for SPP data, and the temperature range (default parameter in TPP package) for TPP data.
 
 Protein quantifications were first scaled to the first concentration or temperature. The adapted TPP R package was then used to perform the normalization that accounts for technical variance (e.g., pipetting error) (Savitski et al., 2014). Proteins for generating normalization curves met the following criteria: (i) the 5th (8-point curves) or 10th (16-point curves) point was between 0.4 and 0.6; (ii) the 7th (8-point curves) or 15th (16-point curves) point was between 0 and 0.3; and (iii) the last point was between 0 and 0.2. Normalized data were then fit to sigmoidal curves using the adapted TPP R package with the parameters described above. Following the criteria used in the published TPP protocol (Franken et al., 2015), we designated curves with R2 > 0.8, plateau < 0.3, valid slopes, and valid melting/denaturation points as high-quality curves. Significant hits are designated as proteins fulfilling all four requirements (fulfills_all_4_requirements=“Yes”, see Figure 1—source data 1, Figure 2—source data 1–3, Figure 5—source data 1 for details), with adjusted p-values<0.001 and peptides > 1 in both replicates.
 
-## Data analysis for solvent-PISA and thermal-PISA assays
+### Data analysis for solvent-PISA and thermal-PISA assays
 
 Solvent-PISA data were analyzed using Perseus (Tyanova et al., 2016). Significant changes were determined using a permutation-based FDR with the following settings: FDR – 0.05, S0 – 0.1, and number of randomizations – 250. Only proteins that were quantified with >1 peptide were analyzed. Individual fold change values were calculated in reference to the mean of the vehicle-treated samples.
 
@@ -130,10 +341,10 @@ For solvent- and thermal-PISA datasets, proteins quantified with <2 peptides wer
 
 Theoretical fold changes in solvent-PISA were calculated from respective SPP data for Figure 4G. The normalized protein abundance in the output table of TPP package was used. The normalized protein abundance was summed for the compound-treated samples or vehicle-treated controls at each %AEA within a given range. Considering the 0–21% window (window 1), for example, we simply summed all eight abundance measurements from the eight AEA concentrations. For the 9–19% window (window 2), we summed only the protein abundances between 9 and 19%, and so on. Then the fold changes were calculated as summed protein abundance for compound-treated samples versus that for vehicle-treated samples.
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 MAPK9/JNK2 in vitro kinase assay was performed using the JNK2 kinase assay kit (Promega #VA7210) and the ADP-Glo kit (Promega #V9101) according to the manufacturer’s instructions. In brief, SCIO-469 or 5% DMSO (1 μL) was added to recombinant MAPK9/JNK2 (10 or 20 ng in 2 μL) in a white 384-well assay plate (Corning #3825). To this was added 2 μL of a solution containing the peptide substrate and ATP to a final, in-well concentration of 0.2 μg/μL and 50 μM, respectively. The kinase reaction proceeded at RT (1 hr) before adding ADP-Glo reagent (5 μL), which was incubated at RT (45 min). Finally, the kinase detection reagent was added (10 μL) and the luminescence was measured after 1 hr using an EnVision plate reader (PerkinElmer). Background luminescent signal, measured from no enzyme controls, was subtracted from each measurement before calculating relative percent inhibition. All experimental conditions were performed in quadruplicate. Plots and statistics were generated using GraphPad Prism (v7).
 
-## Gene Ontology enrichment analysis
+### Gene Ontology enrichment analysis
 
 Gene Ontology enrichment analysis was performed with DAVID (6.8) (Huang et al., 2009). All quantified proteins in the respective dataset were used as the background. p-Values were corrected with Benjamini–Hochberg method and filtered at 0.001 unless otherwise stated.

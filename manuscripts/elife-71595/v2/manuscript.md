@@ -34,33 +34,81 @@ Here, we define the role of amino acid uptake through Slc1a5 during bone develop
 
 ## Results
 
-## Slc1a5 is required for bone development
+### Slc1a5 is required for bone development
 
 We previously identified Slc1a5 as a potential regulator of proliferation and WNT induced osteoblast differentiation in stromal cells (Shen et al., 2021; Hu et al., 2020). To understand if Slc1a5 functions in osteoblasts, we first characterized Slc1a5 expression during osteoblast differentiation. Slc1a5 is highly expressed in both naive calvarial cells and bone marrow stromal cells and significantly increases during osteoblast differentiation (Figure 1A). To determine if Slc1a5 is required for osteoblast differentiation, we first utilized a CRISPR/Cas9 approach to knock out Slc1a5 in cultured calvarial cells (Figure 1—figure supplement 1A). Western blot analyses confirmed this approach effectively ablated SLC1A5 protein (Figure 1—figure supplement 1B). Slc1a5 targeting did not affect early osteoblast differentiation but did prevent the induction of the mature osteoblast genes Ibsp and Bglap and prevented matrix mineralization in primary calvarial cells (Figure 1B–C). To determine if Slc1a5-dependent amino acid uptake is important for osteoblast differentiation in vivo, we generated a conditional (floxed) Slc1a5 allele (Slc1a5fl) using homologous recombination (Figure 1—figure supplement 1C). These mice were crossed with the Sp7tTA;tetOeGFP/Cre deleter mouse (denoted hereafter as Sp7Cre) that expresses GFP and Cre recombinase under the control of the Sp7 promoter to generate mice lacking Slc1a5 in committed osteoblast progenitors (Rodda and McMahon, 2006). Western blot analysis confirmed the specific ablation of SLC1A5 in bones isolated from Sp7Cre;Slc1a5fl/fl mice (Figure 1—figure supplement 1D). Sp7Cre;Slc1a5fl/fl mice were characterized by delayed endochondral and intramembranous ossification evident at both embryonic (E) day E14.5 and E15.5 (Figure 1D–E–). In addition to delayed mineralization, Sp7Cre;Slc1a5fl/fl mice had reduced size of various skeletal elements (exemplified by the humerus, Figure 1F and J) relative to Sp7Cre;Slc1a5fl/+ littermate controls (Figure 1F–G and J–K and Figure 1—figure supplement 1E-L). By E16.5 the extent of mineralization was no longer significantly different although the overall length of individual skeletal elements was significantly different from Sp7Cre;Slc1a5fl/+ littermate controls (Figure 1L–O and Figure 1—figure supplement 1M-P). At birth, neither matrix mineralization or nor element length were significantly different suggesting there is a transient delay in endochondral ossification (Figure 1—figure supplement 1Q-X). Conversely, Sp7Cre;Slc1a5fl/fl mice are characterized by impaired intramembranous ossification at all stages evaluated (Figure 1D–E–, L–M and P–Q and Figure 1—figure supplement 1Q-R). At birth, Sp7Cre;Slc1a5fl/fl calvariae had increased porosity (1.0 ± 0.2 vs 2.3 ± 0.2 in Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl respectively, p < 0.05), increased suture width (1.0 ± 0.2 mm vs 1.4 ± 0.3 in Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl respectively, p < 0.05) and significantly less bone volume (0.7% ± 0.02% vs 0.6 ± 0.05% in Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl respectively, p < 0.05) as measured by micro-computed tomography (µCT) (Figure 1). At 2-months of age, Sp7Cre;Slc1a5fl/fl mice presented with less bone mass, increased suture width and altered suture morphology (Figure 1—figure supplement 2). Von Kossa staining of histological sections confirmed the reduction in mineralized bone matrix in newborn Sp7Cre;Slc1a5fl/fl calvariae (Figure 1T–U). Thus, Slc1a5 expression in osteoprogenitors is essential for bone development.
 
-## Slc1a5 is required for osteoblast differentiation and proliferation
+![Figure 1.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig1-v2.jpg)
+
+**Figure 1.:** (A) qRT-PCR analyses of gene expression in calvarial osteoblasts (cOB) cultured for 7 days in growth or osteogenic media. (B–C) qRT-PCR analyses (B) or functional assays (C) of the effect of Slc1a5 deletion on osteoblast differentiation in cOB cultured for 7 days in osteogenic media. (D–O) Skeletal preparations of Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice at E14.5 (n = 5), E15.5 (N = 8) and E16.5 (N = 5). Arrows denote reduced mineralization. Isolated humeri shown in (F), (J) and (N). Blue dotted lines denotes the control overall humerus length. Red dotted lines denote control mineralized area. Images quantified in (G, K and O). (P–S) A representative skeletal preparation (P–Q) or (R–S) Representative Micro-computed tomography (μCT) (N = 6) used to quantify BV/TV(%) and (T–U) von Kossa staining on Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl (N = 4) knockout mice at P0. Error bars depict SD. * p ≤ 0.05, ** p ≤ 0.005, *** p ≤ 0.0005, **** p ≤ 0.00005, by an unpaired two-tailed Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Slc1a5 Crispr targeting strategy(B) Western Blot analyses of the effect of Slc1a5 targeting ASCT2 normalized to α-tubulin. sgRNAs targeting luciferase and mCherry were used as a negative control. Fold change± SD for sgSlc1a5 over sgLuc in three independent experiments. * p ≤ 0.05 by an unpaired two-tailed Student’s t-test. (C) Slc1a5fl targeting strategy. (D) Western Blot analyses of SLC1A5 (ASCT2) expression in protein isolated from Muscle, Bone and Bone marrow from Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice. (E–X) Skeletal preparations of Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl hindlimbs at E14.5 (n = 5), E15.5 (N = 8), E16.5 (N = 5) and (p0). Images quantified in (G, H, K,L,O, P,U and X).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Representative X-Ray, (C–D) µCT image of a whole calvarium from 2-month-old Sp7Cre;Slc1a5fl/+ or Sp7Cre;Slc1a5fl/fl littermates.(E–F) H&E staining and cartoon depiction of section through the coronal suture (level of section indicated by the dotted red line in (C,D)) showing altered suture morphology.
+
+### Slc1a5 is required for osteoblast differentiation and proliferation
 
 To determine how Slc1a5 regulates bone development, we first characterized the cellular effects of Slc1a5 ablation on osteoblasts. Because we observed a consistent skull phenotype at all stages and Sp7Cre is expressed in both osteoblasts and hypertrophic chondrocytes in the developing limb (Rodda and McMahon, 2006), we focused our analyses on the skull which is formed by intramembranous ossification and does not involve a cartilaginous intermediate (Ornitz and Marie, 2002). Von Kossa staining confirmed there was delayed mineralization in Sp7Cre;Slc1a5fl/fl calvariae at E15.5 (Figure 2A–D). This was not due to changes in the number of osteoblast progenitors as we observed no significant difference in the number of Sp7GFP expressing osteoblast progenitors per bone area in Sp7Cre;Slc1a5fl/fl mice compared to Sp7Cre;Slc1a5fl/+ wild type littermates (75.3% ± 11.6% vs 64.7±9.5 % in Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/f animals, respectively) (Figure 2E–F). However, we did observe a significant reduction in the proportion of Sp7GFP cells that were positive for proliferating cell nuclear antigen (PCNA) (25.9% ± 4.6% vs 15.6±2.9 % in Sp7Cre;Slc1a5fl/+ or Sp7Cre;Slc1a5fl/fl respectively, p < 0.05) (Figure 2G–J) suggesting Slc1a5 is required for proliferation of Sp7 expressing osteoblast progenitors. We next evaluated osteoblast differentiation using in situ hybridization. We did not observe significant differences in the expression of early osteoblast genes including alkaline phosphatase (Alpl, as determined by in situ staining) or Col1a1 (Figure 2K–N). Conversely, Sp7Cre;Slc1a5fl/fl animals had reduced expression of the osteoblast differentiation genes Spp1 and Ibsp at both E15.5 and postnatal (P) day 0 (P0) (Figure 2O–T and Figure 2—figure supplement 1A-B). Similarly, the mature osteoblast gene Bglap was highly reduced at P0 in Sp7Cre;Slc1a5fl/fl compared to Sp7Cre;Slc1a5fl/+ littermates (Figure 2U–V). Consistent with these observations, primary calvarial cells isolated from Sp7Cre;Slc1a5fl/fl mice incorporated less EdU and were characterized by reduced osteoblast differentiation and matrix mineralization in vitro (Figure 2W–X). This is likely a direct effect of loss of Slc1a5 activity as acute SLC1A5 inhibition using GPNA reduced calvarial cell proliferation in vitro (Figure 2—figure supplement 1W). It is important to note we observed similar results in the developing long bones at both e15.5 and P0 (Figure 2—figure supplement 1C-V and Figure 2—figure supplement 2A-I). Similarly, 2-month-old Sp7Cre;Slc1a5fl/fl mice had reduced osteoblast numbers (exemplified by OCN expression) and significantly less trabecular bone volume as measured by µCT in the distal femur compared to Sp7Cre;Slc1a5fl/+ wild-type littermate controls (Figure 2—figure supplement 2J-N). Collectively, these data indicate Slc1a5 acts cell-autonomously to regulate osteoprogenitor proliferation and osteoblast differentiation.
 
-## Slc1a5 inhibition reduces protein synthesis in osteoblasts
+![Figure 2.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) von Kossa/Alcian blue staining on Sp7Cre;Slc1a5fl/+ (A,C) and Sp7Cre;Slc1a5fl/fl (B,D) (N = 4) at E15.5. (E–J) Representative immunofluorescent staining for Proliferating Cell Nuclear Antigen (PCNA) used to quantify proliferation. Endogenous GFP from Sp7GFP shown in (G–H) used to quantify PCNA/GFP double positive cells. The numbers in each panel represent the percent GFP, PCNA or double positive cells per GFP positive bone area (dotted line). (K–V) Representative alkaline phosphatase (ALPL) staining (K–L) or In situ hybridization (M–V) for Col1a1, Spp1, Ibsp at E15.5 (N = 4) and Spp1, Bglap at P0 (N = 3). (W) Functional assays of osteoblast differentiation in cOB isolated from Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice. cultured for 14 days in osteogenic media. (X) Graphical depiction of EdU incorporation in cOB cells isolated from Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice. Error bars depict SD. * p ≤ 0.05, ** p ≤ 0.005. by an unpaired two-tailed Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–V) In situ hybridization for Ibsp on p0 skull (A–B), representative alkaline phosphatase (ALPL) staining (C–D) von Kossa/Alcian blue staining (E–F), In situ hybridization (G–L, O–P, S–V) for ColX, MMP13, SP7, Col1a1, Spp1, Ibsp at E15.5 (N = 4).Representative immunofluorescent staining for OSX (M–N) or Collagen Type 1 (COL1A1) (Q–R) at E15.5 in Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice. (W–Y) Effect of GPNA (0.3 mM) treatment on EdU incorporation (W–X) or protein synthesis as determined by 35S incorporation assay (Y). Error bars depict SD. * p ≤ 0.05, ** p ≤ 0.005. by an unpaired two-tailed Student’s t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Alcian blue/Picrosirius red staining, (C) qRT-PCR analyses or in situ hybridization (D–I) on Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl femora (N = 5) at P0.(J–K) Representative μCT (N = 6) used to quantify BV/TV(%) and (L–N) OCN immunofluorescent staining and quantification on Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl (N = 4) knockout mice at 2 months of age. Error bars depict SD. * p ≤ 0.05, ** p ≤ 0.005, by an unpaired two-tailed Student’s t-test.
+
+### Slc1a5 inhibition reduces protein synthesis in osteoblasts
 
 We next sought to understand how Slc1a5 regulates proliferation and differentiation. Because Slc1a5 encodes a neutral amino acid transporter, we hypothesized that Slc1a5 ablation would primarily affect protein synthesis. To test this hypothesis, we first evaluated protein synthesis directly by monitoring the incorporation of 3H-proline into protein. Slc1a5 targeting significantly reduced 3H-proline incorporation into both collagen and total protein (Figure 3—figure supplement 1A-B). Likewise, primary calvarial cells isolated from Sp7Cre;Slc1a5fl/fl mice had significantly reduced protein and collagen synthesis rates in vitro (Figure 3A–B). These results indicate Slc1a5 is required for robust protein synthesis in osteoblasts. To test the validity of this conclusion, we evaluated the production of osteoblast proteins in vivo. Consistent with the in vitro data, Sp7Cre;Slc1a5fl/fl mice were characterized by significantly less COL1A1 in both the calvariae and long bones at e15.5 and P0 (Figure 3C–H and Figure 2—figure supplement 1Q-R and Figure 3—figure supplement 1E-F). It is important to note, Col1a1 mRNA expression was not affected in these mice indicating Slc1a5 provides amino acids required for robust COL1A1 synthesis. Similarly, Sp7Cre;Slc1a5fl/fl mice had a significant reduction in OSX protein expression as we observed a reduction in the proportion of OSX expressing cells despite no change in Sp7GFP expression (used as a proxy for Sp7) in Sp7Cre;Slc1a5fl/fl calvariae (Figure 3I–N). Thus, Slc1a5 is essential for the synthesis of proteins like OSX to regulate terminal osteoblast differentiation and COL1A1 necessary for bone matrix production.
 
-## Slc1a5 provides glutamine and asparagine to regulate amino acid homeostasis
+![Figure 3.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Radiolabeled 3H-proline incorporation into total protein (A) or collagen (B) in cOB cells isolated from Sp7Cre;Slc1a5fl/+ and Sp7Cre;Slc1a5fl/fl mice. (C–N) Representative immunofluorescent staining for Collagen Type 1 (COL1A1) (C–H) or OSX (I–N) at E15.5 in Sp7Cre;Slc1a5fl/+(C,D,E,I,J,K) and Sp7Cre;Slc1a5fl/fl (F,G,H,L,M,N) mice. Endogenous GFP from Sp7GFP shown in (C,F,I,L). Col1a1 intensity was quantified in the GFP-positive region. Endogenous GFP from Sp7GFP shown in (I, L) was used to quantify OSX/GFP double positive cells. The numbers in each panel represent the percent GFP, OSX or double positive cells per GFP-positive bone area (dotted line). Inset images show 60 x magnification of the indicated region. * p ≤ 0.05, by an unpaired two-tailed Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Radiolabeled 3H-proline incorporation into total protein (A) or collagen (B) in cOB cells.(C–H) Representative immunofluorescent staining for Collagen Type 1 (COL1A1) at P0 in Sp7Cre;Slc1a5fl/+(C,E,G) and Sp7Cre;Slc1a5fl/fl (D,F,H) mice. Endogenous GFP from Sp7GFP shown in (C–D). The value below the merged image is the quantification of Col1a1 intensity in the GFP positive area measured from 4 mice. Inset images are ×60 magnification of the indicated region. * p ≤ 0.05, by an unpaired two-tailed Student’s t-test.
+
+### Slc1a5 provides glutamine and asparagine to regulate amino acid homeostasis
 
 We next sought to define the molecular substrates of SLC1A5 in osteoblasts. First, we determined the effect of Slc1a5 knockout on downstream metabolites using mass spectrometry. Slc1a5 targeting significantly diminished the intracellular abundance of many amino acids including reported substrates of SLC1A5 (e.g. asparagine, glutamine, and alanine) as well as amino acids not known to be transported by SLC1A5 (e.g. glutamate, lysine, histidine, aspartate, glycine, and proline) (Figure 4A). Moreover, Slc1a5 deletion also reduced the abundance of select TCA cycle intermediates including fumarate, malate, citrate, and a-ketoglutarate (Figure 4—figure supplement 1A). Interestingly, the uptake of many of these amino acids was unaffected in Slc1a5-deficient cells as only glutamine and to a lesser extent asparagine uptake was diminished in Slc1a5 targeted calvarial cells (Figure 4B). Conversely, we observed a compensatory increase in the uptake of lysine in Slc1a5-deficient calvarial cells (Figure 4B). Similar results were obtained upon acute SLC1A5 inhibition indicating SLC1A5 transports glutamine and asparagine in osteoblasts (Figure 4—figure supplement 1B). Slc1a5-deficient cells had many cellular changes consistent with decreased amino acid concentrations. For example, Slc1a5 inhibition significantly increased EIF2a Ser51 phosphorylation, a marker of amino acid depletion (Figure 4C and Figure 4—figure supplement 1C). Additionally, we observed a significant reduction in mTORC1 activity, as both ribosomal protein S6 Ser240/244 phosphorylation and Eif4ebp1 Ser65 phosphorylation were significantly reduced in Slc1a5-deficient calvarial cells (Figure 4C). Interestingly, mTOR activation was not affected by acute SLC1A5 inhibition indicating decreased mTORC1 signaling may be a secondary effect of Slc1a5 deletion. Collectively, these data indicate SLC1A5 provides glutamine and asparagine to regulate intracellular amino acid homeostasis in osteoblast progenitors.
 
-## Glutamine depletion mimics the effects of Slc1a5 deletion
+![Figure 4.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig4-v2.jpg)
+
+**Figure 4.:** (A) Effect of Slc1a5 targeting on intracellular amino acid concentration measured by mass spectrometry.(B) Effect of Slc1a5 targeting on the uptake of indicated radiolabeled amino acids. (C) Western Blot analyses of the effect of Slc1a5 targeting on mTORC1 signaling and Eif2a phosphorylation. Phospho-proteins normalized to respective total protein. ASCT2 normalized to α-tubulin. sgRNAs targeting luciferase were used as a negative control. Fold change± SD for sgSlc1a5 over sgLuc in three independent experiments. * p ≤ 0.05 by an unpaired two-tailed Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Effect of Slc1a5 targeting on intracellular concentration of Pyruvate, Lactate, Succinate, Malate, citrate, and α ketoglutarate (αKG).(B) Effect of GPNA treatment on the uptake of indicated radiolabeled amino acids. (C) Western blot analyses of the effect of GPNA treatment on Eif2a phosphorylation and mTORC1 signaling. Phospho-proteins normalized to respective total protein. HCL treated cells were used as negative control. Fold change± SD for HCL over GPNA treated in three independent experiments. (D–E) Effect of NEAA supplementation on osteoblast marker gene induction as measured by qRT-PCR (D) or EDU incorporation (E) in sgSlc1a5 cells. * p ≤ 0.05, ** p ≤ 0.005, ** p ≤ 0.0005, by multiple unpaired t-tests (A–B) or ordinary one-way ANOVA with Tukey’s multiple comparisons (D–E). Error bars depict SD.
+
+### Glutamine depletion mimics the effects of Slc1a5 deletion
 
 We next sought to understand the importance of both glutamine and asparagine for cellular function. To do this, we cultured naive calvarial cells in the absence of glutamine or in media treated with asparaginase to deplete asparagine. Depletion of either glutamine or asparagine from the media similarly inhibited the induction of terminal osteoblast genes Ibsp and Bglap and prevented matrix mineralization (Figures 1B–C ,–5A–B). While this was reminiscent of Slc1a5 ablation, it is important to note that glutamine withdrawal had a more profound effect on osteoblast differentiation compared to either asparagine depletion or Slc1a5 ablation. We next evaluated mTORC1 activity and EIF2a phosphorylation. Depletion of glutamine, but not asparagine, mimicked the effects of Slc1a5 targeting on both EIF2a Ser51 phosphorylation and mTORc1 activity (Figure 5C). Consistent with this, cells cultured in the absence of glutamine had reduced COL1A1 expression and decreased proliferation like Slc1a5 deficient cells (Figure 5C–D). On the other hand, culturing cells in the absence of asparagine had no discernable effect on either pSer51 Eif2a, pSer240/244 S6rp, or COL1A1 expression and enhanced proliferation as determined by increased EdU incorporation (Figure 5C–D). Importantly, culturing cells in the absence of either glutamine or asparagine had no effect on cell viability (Figure 5E). From these data, we conclude SLC1A5 primarily provides glutamine to regulate amino acid homeostasis necessary for proliferation and osteoblast differentiation. Additionally, SLC1A5 provides asparagine which is essential for terminal osteoblast differentiation and matrix mineralization.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig5-v2.jpg)
 
-**Figure 5.:** (A–B) Functional assays (A) or qRT-PCR analyses (B) of the effect of glutamine withdrawal or asparaginase treatment on cOB cultured in osteogenic media for 14 days. (C) Western blot analyses of the effect of glutamine or asparagine withdrawal on mTORC1 signaling, Eif2a phosphorylation or COL1A1 expression. Phospho-proteins normalized to respective total protein. COL1A1 normalized to beta-actin. Fold change± SD for three independent experiments. * p ≤ 0.05 by an unpaired 2-tailed Student’s t-test. (D–E) Effect of glutamine or asparagine withdrawal on EdU incorporation (D) or cell viability (E) as determined by Annexin V staining.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A–B) Functional assays (A) or qRT-PCR analyses (B) of the effect of glutamine withdrawal or asparaginase treatment on cOB cultured in osteogenic media for 14 days. (C) Western blot analyses of the effect of glutamine or asparagine withdrawal on mTORC1 signaling, Eif2a phosphorylation or COL1A1 expression. Phospho-proteins normalized to respective total protein. COL1A1 normalized to beta-actin. Fold change± SD for three independent experiments. * p ≤ 0.05 by an unpaired 2-tailed Student’s t-test. (D–E) Effect of glutamine or asparagine withdrawal on EdU incorporation (D) or cell viability (E) as determined by Annexin V staining.
 
-## Glutamine and asparagine-dependent amino acid synthesis is essential for protein synthesis
+### Glutamine and asparagine-dependent amino acid synthesis is essential for protein synthesis
 
 We next investigated how osteoblast utilize glutamine and asparagine. Since SLC1A5 ablation reduced intracellular amino acids, we hypothesized osteoblasts rely on glutamine and asparagine metabolism to maintain cellular amino acid pools. To test the validity of this hypothesis, we traced the relative contribution of glutamine or asparagine into amino acids directly. Consistent with previous reports, glutamine carbon contributes to all TCA cycle intermediates and was significantly enriched in several amino acids (e.g. glutamate, aspartate, alanine, and proline) found to be reduced in Slc1a5 targeted cells (Figure 6A, Figure 6—figure supplement 1A). Similarly, glutamine nitrogen was significantly enriched in glutamate, aspartate, alanine, serine, glycine and proline (Figure 6B). Consistent with the minor effects of asparagine withdrawal on markers of amino acid depletion, asparagine carbon was enriched only in aspartate, malate, fumarate, and citrate (Figure 6A, Figure 6—figure supplement 1A). On the other hand, asparagine nitrogen was enriched in aspartate, glutamate, proline, serine, and alanine (Figure 6A–B). Thus, glutamine contributes both carbon and nitrogen for amino acid biosynthesis whereas asparagine carbon is used only for aspartate biosynthesis while asparagine nitrogen is used in transamination reactions. Importantly, the amino acids derived from either glutamine carbon (e.g. Glu, Ala, Asp, Pro) and nitrogen (e.g. Glu, Ala, Asp, Ser, Gly and Pro) and asparagine carbon (e.g. Asp) and nitrogen (e.g. Asp, Pro, Ala, Ser) were significantly enriched in total protein (Figure 6C–D). Rescue experiments found NEAA did not rescue proliferation but could rescue the induction of terminal osteoblast marker genes like Ibsp and to a lesser extent Bglap in Slc1a5-deficient cells (Figure 4—figure supplement 1). These data indicate Slc1a5 provides glutamine and asparagine that are used for de novo synthesis of many amino acids (e.g. Glu, Asp, Ala, Ser, Gly, and Pro) that can be incorporated into nascent protein in osteoblasts.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71595/elife-71595-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Fractional contribution of [U-13C]glutamine or [U-13C]asparagine (A) or [α−15N]glutamine or [α–15N]asparagine (B) to asparagine, aspartate, glutamate, proline, serine, and alanine. (C–D) Fractional contribution of [U-13C]glutamine or [U-13C]asparagine (C) or [α–15N]glutamine or [α–15N]asparagine (D) to asparagine, aspartate, glutamate, proline, serine, and alanine in total protein. (E–F) Effect of BPTES treatment on the fractional contribution of [U-13C]glutamine (E) or [α–15N]glutamine (F) to amino acids. * p ≤ 0.05, ** p ≤ 0.005, *** p ≤ 0.0005, **** p ≤ 0.00005 by ordinary one-way ANOVA with Tukey’s multiple comparisons. (G) Effect of GLS inhibition on intracellular amino acid concentration measured by mass spectrometry. * p ≤ 0.05, multiple unpaired t-tests. Error bars depict SD.(H) Western blot analyses of the effects of BPTES treatment on mTORC1 signaling, Eif2a phosphorylation and COL1A1 expression. Phospho-proteins normalized to respective total protein. COL1A1 normalized to beta-actin. Fold change± SD for three independent experiments. * p ≤ 0.05 by an unpaired two-tailed Student’s t-test. (I) Effect of GLS inhibition on protein synthesis as determined by the rate of 3H Proline incorporation into total protein. * p ≤ 0.05 by an unpaired two-tailed Student’s t-test. Error bars depict SD.
+
+![Figure 6—figure supplement 1](https://cdn.elifesciences.org/articles/71595/elife-71595-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1:** (A) Fractional contribution of [U-13C]glutamine or [U-13C]asparagine to fumarate, malate, succinate, and Citrate.(B) Effect of BPTES treatment on the fractional contribution of [U-13C]glutamine to fumarate, malate, succinate, and Citrate. (C) Effect of BPTES on EdU incorporation. (D) Effect of GLS inhibition on tRNA charging. Error bars depict SD. (E) Gls Crispr targeting strategy. (F) PCR analysis of targeted region. Arrow denotes untargeted Gls band. (G) Western blot analyses of the effect of Gls targeting. sgRNAs targeting luciferase and mCherry (denoted sgLuc) were used as a negative control. * p ≤ 0.05, by an multiple unpaired t-tests. Error bars depict SD.
 
 Next, we sought to determine if glutamine-dependent amino acid synthesis was required for the high rate of protein synthesis in osteoblasts. We focused on glutamine because glutamine was more widely used for amino acid synthesis, and glutamine withdrawal more completely phenocopied the cellular effects of Slc1a5 targeting. To do this, we inhibited the enzyme glutaminase (GLS) which catalyzes the first rate-limiting step in glutamine metabolism. GLS inhibition using BPTES resulted in cellular effects similar to Slc1a5 ablation. GLS inhibition significantly reduced glutamine carbon and nitrogen contribution to amino acid synthesis and reduced the intracellular concentrations of glutamate, aspartate, alanine, serine, and glycine concentrations (Figure 6E–G). Consistent with reduced amino acid concentrations, GLS inhibition increased the presence of uncharged Glu, Asp, and Pro tRNA without affecting either Gln or Val tRNA charging (Figure 6—figure supplement 1D). Finally, GLS inhibition induced eIF2α Ser51 phosphorylation and reduced S6 Ser240/244 phosphorylation (Figure 6H). Consistent with these molecular changes, GLS inhibition significantly reduced EdU incorporation and COL1A1 expression (Figure 6H–I). Importantly, Gls targeting reduced overall protein synthesis like Slc1a5 targeting (Figure 6I, Figure 6—figure supplement 1E-G). These data highlight the importance of de novo amino acid synthesis to maintain amino acid homeostasis and promote proliferation and protein synthesis in osteoblasts.
 
@@ -82,37 +130,464 @@ In summary, we have defined the necessity and the molecular substrates of Slc1a5
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>C57Bl/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Rosa26Cas9</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:024858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Rosa26Flpe</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Sp7tTA;tetOeGFP/Cre</td>
+      <td>PMID:16854976</td>
+      <td>RRID:IMSR_JAX:006361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Slc1a5flox</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Methods – Mouse strains for more information.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ascorbic acid</td>
+      <td>Sigma</td>
+      <td>Cat#A4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-glycerophosphate</td>
+      <td>Sigma</td>
+      <td>Cat#G9422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>one-step NBT/BCIP solution</td>
+      <td>Thermofisher</td>
+      <td>Cat#PI34042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(2,3,4-3H)Glutamine</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#NET551250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(14C)Alanine</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#EC266E250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(2,3,-3H)Proline</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#NET483250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(2,3,-3H)Aspartic acid</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#NET390V001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(4,5-3H(N))Lysine</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#NEC280E050UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-(2,3,3 H)Asparagine</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>Cat#ART-0500–250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]glutamine,</td>
+      <td>Sigma</td>
+      <td>Cat#605,166</td>
+      <td>Used at 2 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[α-15 N]glutamine</td>
+      <td>Sigma</td>
+      <td>Cat#486,809</td>
+      <td>Used at 2 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]Asparagine</td>
+      <td>Sigma</td>
+      <td>Cat#579,866</td>
+      <td>Used at 0.33 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[α-15 N] Asparagine</td>
+      <td>Sigma</td>
+      <td>Cat#485,896</td>
+      <td>Used at 0.33 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AP substrate BM purple</td>
+      <td>Roche</td>
+      <td>Cat#11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ECL substrate</td>
+      <td>Biorad</td>
+      <td>Cat#1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>super signal West Femto ECL.</td>
+      <td>Thermofisher</td>
+      <td>Cat#1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Eif2α (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_10692650</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pSer51 Eif2α (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_2096481</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pSer240/244 S6rp(rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_331682</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S6rp (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_331355</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-tubulin (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_2619646</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-actin (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_330288</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP goat anti-rabbit (goat polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_2099233</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP anti-mouse (horse polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_330924</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COL1A1 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_2797597</td>
+      <td>(1:2000) WB (1:1000) IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OSX (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2194492</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCNA (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_2160343</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti mouse 568 (goat unknown clonality)</td>
+      <td>Thermofisher</td>
+      <td>RRID:AB_141359</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti Rabbit 568 (goat polyclonal)</td>
+      <td>Thermofisher</td>
+      <td>RRID:AB_143157</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Iscript Reverse transcription kit</td>
+      <td>Biorad</td>
+      <td>Cat#1708841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR green</td>
+      <td>Biorad</td>
+      <td>Cat#1725275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Imaging Kit</td>
+      <td>Invitrogen,</td>
+      <td>Cat#C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#C10420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Apoptosis Assay Kit (Cat# 22837).</td>
+      <td>AAT BIO</td>
+      <td>Cat# 22,837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AP substrate BM purple</td>
+      <td>Roche</td>
+      <td>Cat#11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software Algorithm</td>
+      <td>Graphpad 6</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 C57Bl/6 J (RRID:IMSR_JAX:000664), Rosa26Cas9 (RRID:1MSR_JAX:024858), Sp7tTA;tetOeGFP/Cre (RRID:IMSR_JAX:006361) (denoted in the text as Sp7Cre), and Rosa26Flpe (RRID:IMSR_JAX:003946) mouse strains were obtained from the Jackson Laboratory. The Slc1a5flox mouse strain was generated by the Duke Cancer Institute Transgenic Core facility. Briefly, LoxP sites flanking exon two and a frt PGK neo-cassette were inserted in to the endogenous Slc1a5 locus using homologous recombination (Fig. S1). The chimeric mice containing the targeting vector were then crossed to the Rosa26Flpe mouse to remove the neomycin cassette. All mice were housed at 23 °C on a 12 hr light/dark cycle and maintained on PicoLab Rodent Diet 290 (Lab diet#5053, St. Louis, MO). Timed pregnant females euthanized, and embryos were analyzed at E14.5, E15.5, E16.5, and P0. Sp7tTA;tetOeGFP/Cre mice expresses GFP and Cre recombinase under the control of the Sp7 promoter. We evaluated GFP as a proxy for Sp7 mRNA expression. The Sp7tTA;tetOeGFP/Cre mice have a partially penetrant bone phenotype. To control for this, in all genetic experiments, Sp7Cre;Slc1a5fl/fl ‘knockout’ mice are always compared to Sp7Cre;Slc1a5fl/+ as ‘wild type’ littermate controls. All animal studies were approved by the animal studies committees at Duke University and the University of Texas Southwestern Medical Center at Dallas.
 
-## Cell culture
+### Cell culture
 
 P3 pups were euthanized and the parietal and frontal bones were isolated according to standard protocols. The membranous tissue was removed, and the bones were washed and cleaned with PBS. The calvaria was chopped and four sequential 10 min digestions were performed with 1 mg/ml Collagenase P in a shaking incubator at 37 °C. The first digestion was discarded, and the rest were combined. The digested calvarial cells were centrifuged and plated with α-MEM (GIBCO) supplemented with 15 % FBS (Invitrogen). The cells were seeded at 50,000 cells/ml. To initiate osteoblast differentiation the growth media was replaced with α-MEM with 10 % FBS, 50 mg/ml ascorbic acid (Sigma) and 10 mM β-glycerophosphate (Sigma). RNA was isolated at day 7 after mineralization media was added. At day 14, alizarin red and Von kossa staining was performed to visualize matrix mineralization. Alkaline phosphatase staining was performed using the one-step nitro-blue tetrazolium (NBT) and 5-bromo-4-chloro-3’-indolyphosphate p-toluidine salt (BCIP) solution (Thermofisher). For amino acid rescue experiments, cells were cultured for either 24 hr (proliferation) or 7 days in α-MEM supplemented to the indicated concentration with the following amino acids: 0.67 mM glycine, 0.28 mM alanine, 0.23 mM aspartic acid, 0.2 mM histidine, 0.24 mM serine, 0.35 mM proline, 0.4 mM lysine, and 0.5 mM arginine.
 
 CRISPR/Cas9 targeting sgRNA vectors were purchased from the Genome Engineering and iPSC Center at Washington University School of Medicine. cOB were isolated from RosaCas9 mice and were infected with five lentiviral delivered short guide RNAs targeting exons 4–6 of either Slc1a5 (sgSlc1a5) or Gls (sgGls) (Fig. S1 and S6). As a control cOB were infected with sgRNAs targeting the open-reading frames of Luciferase and mCherry as a control (designated sgLuc in text and Fig.s). sgRNA sequences are listed in Table 1. To make virus, 293T cells were cotransfected with the lentiviral vector expressing short guide RNAs, pMD2.g and psPax2. After 48 hr of transfection, the media containing the virus was collected and filtered through 0.45µ m filter. cOB were cultured to 50 % confluency and were infected for 24 hr followed by recovery in regular media for another 24 hr.
 
-## Uptake assays and proline incorporation assay
+**Table 1.**
+ sgRNA sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Slc1a5.g4</th>
+      <th>ATTGATCTCCCGCTGGATACNGG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slc1a5.g1</td>
+      <td>ACCCGTTGGAATCCTGTTCCNGG</td>
+    </tr>
+    <tr>
+      <td>Slc1a5.g10</td>
+      <td>AAAATCCCTATCGATTCCTGNGG</td>
+    </tr>
+    <tr>
+      <td>Slc1a5.g17</td>
+      <td>AGAAGAGGTCCCGAAAGCAGNGG</td>
+    </tr>
+    <tr>
+      <td>Slc1a5.g31</td>
+      <td>CCAGGAGCCCGTGGATGGCGNGG</td>
+    </tr>
+    <tr>
+      <td>MS344.Gls.g5</td>
+      <td>ATATAACTCATCGATGTGTGNGG</td>
+    </tr>
+    <tr>
+      <td>MS344.Gls.g3</td>
+      <td>GTGCTAAAAAGCAGTCTGGANGG</td>
+    </tr>
+    <tr>
+      <td>MS345.Gls.g3</td>
+      <td>CAAATTCAGTCCTGATTTGTNGG</td>
+    </tr>
+    <tr>
+      <td>MS346.Gls.g14</td>
+      <td>ATATTTCAGGGGTTTTACACNGG</td>
+    </tr>
+    <tr>
+      <td>MS346.Gls.g1</td>
+      <td>TGCAATTGCTGTTAATGACCNGG</td>
+    </tr>
+    <tr>
+      <td>SP498.mCherry.g17</td>
+      <td>CAAGTAGTCGGGGATGTCGGNGG</td>
+    </tr>
+    <tr>
+      <td>SP498.mCherry.g19</td>
+      <td>AGTAGTCGGGGATGTCGGCGNGG</td>
+    </tr>
+    <tr>
+      <td>SP499.Luc.g3</td>
+      <td>CAATTCTTTATGCCGGTGTTNGG</td>
+    </tr>
+    <tr>
+      <td>SP399.Luc.g4</td>
+      <td>GTGTTGGGCGCGTTATTTATNGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Uptake assays and proline incorporation assay
 
 Confluent primary cells were washed ones with PBS and two additionally washes with Krebs Ringer Hepes (KRH) (120 mM NaCl, 5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 25 mM NaHCO3, 5 mM HEPES, 1 mM D-Glucose, pH 8). Cells were then treated for 5 min with KRH containing 4 μCi/mL of either L-(2,3,4-3H)Glutamine, L-(14C)Alanine, L-(2,3,-3H)Proline, L-(2,3,-3H)Aspartic acid, L-(4,5-3H(N))Lysine, or L-(2,3,-3H)Asparagine. After 5 min, the uptake was terminated by washing the cells three times with ice cold KRH. Cells were then scraped in 1 mL of dH2O and lysed by sonication for 1 min with 1 second pulses at 20 % amplitude. The lysate was then centrifuged and mixed with 8 mL scintillation liquid. The counts per minute (CPM) were measured using a Beckman LS6500 scintillation counter. Proline incorporation assay was performed on confluent cells in a 12-well plate. The cells were washed ones with PBS and two additional washes with KRH. The cells were incubated with 4 μCi/mL L (2,3,-3H) Proline in KRH at 37 C for 3 hr. The uptake was terminated with three washes of cold KRH, and the cells were scraped with 150 μl RIPA. The lysates were then cleared and 90 μl of the protein was precipitated with 10 % tricholoroacetic acid (TCA). The pellet was washed three times with 5%TCA and resuspended with 1 ml 0.2 N NaOH. A total of 100 μl of the lysate was saved to measure proline incorporation in total protein. The remaining lysate was separated in to two 400 μl parts, to one-part 200 μl of 60 μm HEPES containing 10 units of collagenase was added and to the second part only HEPES was added. The lysates were incubated at 37 C for 2 hr, followed by precipitation of undigested protein with 10%TCA. The supernatant was added to 8 ml of scintillation liquid to measure proline incorporation in collagen using a Beckman LS6500 scintillation counter.
 
-## RT-PCR
+### RT-PCR
 
 RNA was isolated using the Qiagen RNAeasy kit. 500 ng of RNA was reverse transcribed to cDNA using Iscript Reverse transcription kit (Biorad). The cDNA was diluted 1:10. qPCR reaction was setup using SYBR green (Biorad), 2μl of diluted cDNA and 0.1 μM primers in technical and biological triplicates. ABI Quantstudio three was used to run the qPCR. The PCR cycle were 95 °C for 3 min followed by 35 cycles of 95 °C for 10 s and 60 °C for 30 s. Gene expression was normalized to ActB followed by calculating relative expression using the 2-(ΔΔCt) method. The list of primers is found in Table 2.
 
-## Western blotting
+**Table 2.**
+ RT-PCR primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slc1a5</td>
+      <td>TGGAGATGAAAGACGTCCGC</td>
+      <td>CAGGCAGGCTGACACTGGAT</td>
+    </tr>
+    <tr>
+      <td>β-actin</td>
+      <td>AGATGTGGATCAGCAAGCAG</td>
+      <td>GCGCAAGTTAGGTTTTGTCA</td>
+    </tr>
+    <tr>
+      <td>Akp2</td>
+      <td>CCAACTCTTTTGTGCCAGAGA</td>
+      <td>GGCTACATTGGTGTTGAGCTTTT</td>
+    </tr>
+    <tr>
+      <td>Ibsp</td>
+      <td>CAGAGGAGGCAAGCGTCACT</td>
+      <td>GCTGTCTGGGTGCCAACACT</td>
+    </tr>
+    <tr>
+      <td>Sp7</td>
+      <td>CCTTCTCAAGCACCAATGG</td>
+      <td>AAGGGTGGGTAGTCATTTGCATA</td>
+    </tr>
+    <tr>
+      <td>Runx2</td>
+      <td>CCAACCGAGTCATTTAAGGCT</td>
+      <td>GCTCACGTCGCTCATCTTG</td>
+    </tr>
+    <tr>
+      <td>Bglap</td>
+      <td>CAGCGGCCCTGAGTCTGA</td>
+      <td>GCCGGAGTCTGTTCACTACCTTA</td>
+    </tr>
+    <tr>
+      <td>Asns</td>
+      <td>CAAGGAGCCCAAGTTCAGTAT</td>
+      <td>GGCTGTCCTCCAGCCAAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blotting
 
 To isolate protein, cells were scraped, or bones were pulverized in RIPA lysis buffer (50 mM Tris (pH 7.4), 15 mM NaCl, 0.5% NP-40) containing protease and phosphatase inhibitors (Roche). Protein concentration was measured using the BCA method and 10 μg of the protein was run on 10 % polyacrylamide gel. The protein was then transferred to a nitrocellulose membrane which was blocked for 1 hour at room temperature with 5 % milk in TBST (TBS, 0.1 % Tween20). The blots were then incubated with primary antibodies raised against ASCT2/SLC1A5 (RRID:AB_10621427, 1:1000), Eif2α (RRID:AB_10692650), pSer51 Eif2α (RRID:AB_2096481) pSer240/244 S6rp (RRID:AB_331682, 1:1000), S6rp (RRID:AB_331355, 1:1000), α-tubulin (RRID: AB_2619646, 1:1000), or β-actin (RRID: AB_330288, 1:2000) overnight at 4 C. On day 2, the membranes were washed three times 5 min each with TBST and incubated with appropriate secondary antibody HRP goat anti-rabbit (RRID:AB_2099233) or HRP anti-mouse (RRID:AB_330924) in 5 % milk in TBST for 1 hr at room temperature. The membranes were again washed three times with TBST and developed using clarity ECL substrate (Biorad) or super signal West Femto ECL.
 
-## EdU incorporation and annexin V assay
+### EdU incorporation and annexin V assay
 
 5000 cells/well were seeded in a 96 well plate for 12–16 hr after which the cells were incubated with 10 μM EdU (5-ethynyl-2’-deoxyuridine) for 6 hr. EdU incorporation was performed using the instructions provided in the Click-iT EdU Cell Proliferation Imaging Kit (Invitrogen, C10337). EdU incorporation was also analyzed using Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit (Invitrogen, C10420) after 24 hr incubation with 10 μM EdU. The cells were then trypsinized, permeabilized and stained as per kit instructions. Cell viability assay was performed using the Apoptosis Assay Kit (Cat# 22837).
 
-## Skeletal prep
+### Skeletal prep
 
 Timed pregnant females were euthanized, and pups were harvested at E14.5, E15.5, and P0. The embryos were skinned, eviscerated and dehydrated in 95 % ethanol overnight. The mice were transferred to acetone for another night to dissolve fat tissue. After which, the tissue was stained with Alcian blue 8 GX (0.03%, m/v in 70 % ethanol) and Alizarin red S (0.005%, m/v in dH2O) solution containing 10 % acetic acid and 80 % ethanol. The stained skeletons were cleared in 1 % KOH followed by a gradient of glycerol.
 
-## Histology, immunofluorescence, and in situ hybridization
+### Histology, immunofluorescence, and in situ hybridization
 
 Limbs and skulls from E15.5, E16.5, and P0 were harvested skinned and fixed overnight in 4 % PFA (paraformaldehyde). Limbs from E16.5 and P0 were decalcified in 14 % EDTA overnight, followed by transferring them to 30 % sucrose for frozen embedding in OCT and 70 % ethanol for paraffin embedding. Paraffin embedded blocks were sectioned at 5 μM thickness and utilized for Alcian blue and picro-sirius, von Kossa and alcian blue using standard protocols.
 
@@ -120,18 +595,18 @@ Immunofluorescence was performed on 10 μM frozen sections brought to room tempe
 
 In situ hybridization was performed on 10 μM frozen sections. The sections were fixed with 4 % PFA for 10 min at room temperature followed by 10 min in acetylation solution (1.3 % triethanolamine, 0.175 % HCl, 0.375 % acetic anhydride in dH2O). The sections were then washed and incubated with hybridization buffer (50 % formamide (deionized), 5 X SSC, pH 4.5 (use citric acid to pH), 1 % SDS, 50 μg/mL yeast tRNA, 50 μg/mL heparin) for 2 hr in a humidified chamber. The excess hybridization buffer was removed and prewarmed probe diluted 1:10 was added to the slides, covered with parafilm and incubated at 60 C overnight. The slides were immersed in 5 X SSC to remove the parafilm and washed twice with 0.2 X SSC for 30 min at 60 C. After an additional wash at room temperature with 0.2 X SSC the slides were transferred to NTT (0.15 M NaCl, 0.1 M tris-Cl pH 7.5, 0.1 % tween 20) for 10 min at room temperature. The slides were blocked with blocking buffer (5 % heat inactivated sheep serum, 2 % blocking reagent/NTT) for 2 hr, followed by incubation with anti-Dig AP antibody diluted at 1:4000 in the blocking buffer overnight at 4 C. On the third day, the slides were washed with NTT on rotator three times for 30 min each, followed by 3 5 min washes with NTTML (0.15 M NaCl, 0.1 M tris pH 9.5, 50 mM MgCl2,2mM Levamisole, 0.1 % tween 20). The slides were then incubated with prewarmed AP substrate BM purple (ROCHE) at 37 C and monitored for desired staining. After staining was achieved the slides were rinsed in PBS 3 times for 5 min each. The slides were fixed in 0.2 % glutaraldehyde in 4 % PFA overnight, the slides were then mounted with glycergel and imaged.
 
-## Micro computed tomography (uCT)
+### Micro computed tomography (uCT)
 
 Micro computed tomography (µCT) (VivaCT80, Scanco Medical AG) was used for three-dimensional reconstruction and analysis of bone parameters. Calvariae were harvested from either newborn mice or 2-month-old mice. All muscle and extemporaneous tissue were removed and the isolated calvariae were washed in PBS, fixed overnight in 10%NBF and dehydrated in 70 % ethanol. The calvariae were immobilized in 2 % agarose in PBS for scanning. A fixed volume surrounding the skull was used for 3D reconstructions. In newborn calvariae, bone volume was quantified from a fixed number of slices in the occipital lobe. The threshold was set at 280. For quantification of bone mass in the long bone, 2-month-old femurs were isolated, fixed, immobilized, and scanned. Bone parameters were quantified from 200 slices directly underneath the growth plate with the threshold set at 320.
 
 Mass spectrometry and metabolic tracing cOB isolated from RosaCas9 homozygous P3 pups were cultured in 6 cm plates and treated as indicated. Cells were incubated with 2 mM [U-13C]glutamine, 2 mM [α–15N]glutamine, 0.33 mM [U-13C]Asparagine and 0.33 mM [α–15N] Asparagine for either 24 or 72 hours as indicated. Cells treated for 24 hr were washed with cold PBS and isolated three times with –80 °C methanol on dry ice in Eppendorf tubes containing 20 nM norvaline, which is an internal standard. The extracts were vortexed and centrifuged at 12,000 RPM for 15 min. The supernatant was completely dried with N2 gas. The dried residue was resuspended in 25 μl methoxylamine hydrochloride (2 % MOX in pyridine) and incubated for 90 min at 40 °C on a heat block. After the incubation, the samples were spun at maximum speed for 2 min and 35 μl of MTBSTFA + 1 % TBDMS was added followed by a 30 min incubation at 60 °C. The samples were centrifuged at 12,000 RPM for 5 minutes and the supernatant was transferred to GC vials for GC-MS analysis. For the experiments tracing labeled amino acids into protein, cells were incubated with 2 mM [U-13C]glutamine, 2 mM [α–15N]glutamine, 0.33 mM [U-13C]Asparagine or 0.33 mM [α–15N] Asparagine for 72 hours. Cells were isolated in 1 ml 1 M PCA and centrifuged for 10 min to precipitate the protein. The precipitate was washed twice with 1 ml 70 % ethanol after which 20 nM norvaline was added to the samples. The protein was hydrolyzed with 1 ml 6 M HCl at 110 °C for 18 hr. The samples were cooled and 1 ml chloroform was added and vortexed to remove hydrophobic metabolites. The isolates were centrifuged for 10 minutes and 100 μl of the supernatant was dried with N2 gas until dry, 50 μl of MTBSTFA + 1 % TBDMS was added followed by a 30 min incubation at 60 °C. The samples were transferred to GC vials for GC-MS analysis.
 
-## tRNA aminoacylation assay
+### tRNA aminoacylation assay
 
 The method is adapted from two recent reports (Loayza-Puch et al., 2016). Purified RNA was resuspended in 30 mM NaOAc/HOAc (pH 4.5). RNA was divided into two parts (2µ g each): one was oxidized with 50 mM NaIO4 in 100 mM NaOAc/HOAc (pH 4.5) and the other was treated with 50 mM NaCl in NaOAc/HOAc (pH 4.5) for 15 min at room temperature. Samples were quenched with 100 mM glucose for 5 min at room temperature, followed by desaltation using G50 columns and precipitation using ethanol. tRNA was then deacylated in 50 mM Tris-HCl (pH 9) for 30 min at 37°C, followed by another ethanol precipitation. RNA (400 ng) was then ligated the 3′adaptor.
 
 (5′-/5rApp/TGGAATTCTCGGGTGCCAAGG/3ddC/–3′) using T4 RNA ligase 2(NEB) for 4 hr at 37 °C. 1µ g RNA was then reverse transcribed using SuperScript III first strand synthesis system with the primer (GCCTTGGCACCCGAGAATTCCA) following the manufacturer’s instruction.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All statistics were performed in Graphpad six software. In cell culture studies, statistical significance was determined by an unpaired two-tailed Student’s t-test or one-way Anova. For uCT statistical significance was determine by a paired two-tailed Student’s t-test comparing paired littermate controls. All quantifications are represented as mean ± standard deviation. A p value of less than 0.05 is considered statistically significant. All experiments were performed with n ≥ 3 biological replicates. The sample size and statistical analysis are noted in the Figure legends.

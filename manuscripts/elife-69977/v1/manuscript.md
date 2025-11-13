@@ -16,13 +16,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Psychology, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 UC Berkeley – UCSF Graduate Program in Bioengineering, University of California, Berkeley Berkeley United States
-3. https://ror.org/04gyf1771 Department of Neurology, University of California at Irvine Irvine United States
-4. https://ror.org/043mz5j54 Department of Neurological Surgery, University of California San Francisco, San Francisco San Francisco United States
-5. https://ror.org/02bjh0167 Department of Neurology and Neurosurgery, California Pacific Medical Center San Francisco United States
-6. https://ror.org/01an7q238 Department of Electrical Engineering and Computer Sciences, University of California, Berkeley Berkeley United States
-7. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States
+1. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. UC Berkeley – UCSF Graduate Program in Bioengineering, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Department of Neurology, University of California at Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+4. Department of Neurological Surgery, University of California San Francisco, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Department of Neurology and Neurosurgery, California Pacific Medical Center San Francisco United States ([ROR:02bjh0167](https://ror.org/02bjh0167))
+6. Department of Electrical Engineering and Computer Sciences, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+7. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
@@ -42,17 +42,115 @@ In the present study, we use intracranial recordings from the cortical surface (
 
 ## Results
 
-## Behavior
+### Behavior
 
 We used a delayed response, out-and-back reaching task. On each trial, a cue indicating the target location was presented on a touchscreen followed, after a short delay, by an imperative signal. Participants were instructed to prepare to move to the target during the delay period. The participant was free to move at their own pace, with the instructions emphasizing that the participant should focus on touching the screen near the target and then returning to the start position. Left and right arm reaches were tested in separate blocks, with the position of the nonresponding hand fixed throughout the block.
 
 Table 1 summarizes the total number of successful trials, along with the reaction time and movement time data. A trial was considered unsuccessful if the reach was initiated before the go cue or if contact with the touchscreen was outside the boundary of the target. The percentage of unsuccessful trials was low, ranging between 0% and 12.5% across individuals. The movements had roughly, bell-shaped velocity profiles for the outbound and the inbound segments (Figure 1C, E) and the outbound reaches were, on average, faster than inbound reaches. The marked interindividual differences in reaction time and movement time reflect the fact that the instructions emphasized accuracy and smoothness.
 
+**Table 1.**
+ Summary of performance measures for each participant.Reaction times (RT) are averages over left and right arm reaches since RT differences were negligible for the two arms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th>Age</th>
+      <th>Handedness</th>
+      <th>RT</th>
+      <th>Outbound reach</th>
+      <th>Inbound reach</th>
+      <th>Total trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L1</td>
+      <td>36</td>
+      <td>Right</td>
+      <td>392 (102)</td>
+      <td>703 (118)</td>
+      <td>907 (287)</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>L2</td>
+      <td>26</td>
+      <td>Right</td>
+      <td>1574 (871)</td>
+      <td>598 (173)</td>
+      <td>1003 (406)</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>55</td>
+      <td>Ambidextrous</td>
+      <td>771 (345)</td>
+      <td>946 (183)</td>
+      <td>1429 (252)</td>
+      <td>148</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>26</td>
+      <td>Right</td>
+      <td>518 (194)</td>
+      <td>940 (211)</td>
+      <td>1027 (345)</td>
+      <td>132</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>32</td>
+      <td>Right</td>
+      <td>335 (55)</td>
+      <td>602 (94)</td>
+      <td>590 (120)</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>34</td>
+      <td>Right</td>
+      <td>534 (157)</td>
+      <td>721 (145)</td>
+      <td>1017 (318)</td>
+      <td>145</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig1-v1.jpg)
+
+**Figure 1.:** (A) Task overview. Participants performed an instructed-delay reaching task, moving to targets that appeared on a touchscreen monitor with either the left or right arm. (B) Target positions. The position of each target with respect to the start position of the reaching arm can be defined on the basis of three Cartesian coordinates (X, Y, Z) and two spherical angles (theta and phi). (C) Representative kinematics. Average estimated position and velocity traces for a representative series of trials performed with the left arm. (D) Reach accuracy. Accuracy was quantified as the absolute distance from the center of each target (target diameter = 2.5 cm) to the touch location for all four targets with the left (blue) and right (gray) arm. (E) Kinematic encoding model. Time lagged estimated kinematic features were used to the predict high-frequency activity (HFA) for each electrode using ridge regression. Four kinematic features were included in the model: Position in the Z dimension, speed in the Z dimension, and the two spherical angles phi and theta. Kinematic features were trained on a subset of the HFA data and predictions of HFA were evaluated on held-out test sets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Sample of position and velocity traces along the Z dimension for one participant. Kinematics from the leap motion controller are plotted in black and the estimated kinematics calculated from task parameters are in blue.
+
 At a more fine-grained level of spatial accuracy, we calculated the distance from the center of each target to the touch location for each trial. On average, the mean distance from the center of the 2.5 cm circle was 0.80 cm (SD = 0.10 cm) for right-handed reaches and 0.90 cm (SD = 0.17 cm) for left-handed reaches (Figure 1D). These values did not differ from one another [t = 1.538, p = 0.22].
 
-## Stronger bilateral encoding in the left hemisphere
+### Stronger bilateral encoding in the left hemisphere
 
 We examined the extent to which movement kinematics were encoded for contralateral and ipsilateral reaches in individual electrodes. To do this we fit a kinematic encoding model that maps continuous kinematic features to the HFA signal (Figure 1E) for the 665 electrodes meeting our inclusion criteria. This procedure was done separately for contralateral and ipsilateral reaches. We quantified the cross-validated model fit by generating HFA predictions using the kinematic features from held-out trials of the same condition and calculating prediction performance as the square of the linear correlation (R2) between the predicted and actual HFA signal (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig2-v1.jpg)
+
+**Figure 2.:** Held-out prediction performance (R2) was computed for each electrode during contralateral reaches (C) and ipsilateral reaches (I). R2 was calculated as the squared linear correlation between the actual high-frequency activity (HFA) and the predictions based on the model. (A) Prediction performance maps for individual patients. Performance of each electrode, shown at the idiosyncratic electrode location for each participant (location based on clinical criteria). Electrodes that did not account for at least 0.05% of the variance (R2 < 0.05) in either the contralateral or ipsilateral condition are shown as smaller dots. (B) Model predictions. Representative time series of the actual HFA and model-based predictions for three electrodes during contralateral and ipsilateral reaches. (C) Summary across patients. Scatter plot displaying R2 values separately for patients with electrodes in either the left (upper) or right (lower) hemisphere. Individual patients can be identified in the scatterplot by the color surrounding the patient label (e.g., L1) in A. R2 for contralateral predictions are plotted against R2 for ipsilateral predictions. Electrodes close to the unity line encode both arms equally whereas electrodes off the unity line indicate stronger encoding of one arm. Points above the unity line indicate stronger encoding of the contralateral arm. These differences are summarized in the frequency histograms in the upper right of each panel. The histogram shows less of a shift in the left hemisphere, a signature consistent with stronger bilateral encoding. ***p < 0.001, permutation test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each electrode was categorized based on a cortical parcellation provided by the Desikan–Killiany atlas. When pooled across the three left hemisphere and three right hemisphere patients, the proportion of electrodes in the highlighted regions was similar. 70% of all electrodes were assigned to one of these regions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The distribution of electrodes using Pearson’s correlation coefficient (CCabs). Histograms of the average held-out correlation for predictive electrodes during ipsilateral and contralateral reaches for the right hemisphere (top) and left hemisphere (bottom). (B) The distribution of all electrodes using the correlation coefficient normalized by signal power (CCnorm). Same as A except the x-values now indicate CCnorm values, a measure designed to account for response variability (see Methods). The two metrics provide similar density estimates, suggesting that the number of observations and signal power in our experimental data is sufficient to capture the majority of explainable variance.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Degree of unimanual encoding, calculated as difference in R2 for contralateral and ipsilateral movements, is plotted as a function of absolute distance from the dorsal aspect of the central sulcus. Electrodes further from the central sulcus had stronger encoding of the ipsilateral arm for both the left and right hemispheres. ***p < 0.001.
 
 Figure 2A displays R2 values for each electrode for the contralateral and ipsilateral conditions, presented on the individual patient MRIs. Electrodes with high prediction performance were primarily located in arm areas of sensorimotor cortex. In line with previous research (Downey et al., 2020), a sizeable percentage of the electrodes were able to predict the HFA at or above our criterion of R2 > 0.05 (examples shown in Figure 2B). This degree of prediction was observed not only when the data were restricted to contralateral movement (31% of electrodes), but also when the data were from ipsilateral movement (25%). A number of electrodes (24%) were predictive in both the contralateral and ipsilateral models. Electrodes that did not meet this criterion for either arm are represented as small dots in Figure 2A and were excluded from further analysis, leaving a total of 216 predictive electrodes (32%, 141 = left hemisphere, 75 = right hemisphere).
 
@@ -62,7 +160,7 @@ Given the similar distributions, we next asked whether prediction performance fo
 
 To further explore this interaction, we calculated the difference between the R2 values for the contralateral and ipsilateral conditions for each electrode, using this as a proxy of an encoding bias between the two arms (Figure 2C, upper right corner of each scatterplot). Values close to zero indicate similar encoding across the two arms, whereas positive values correspond to stronger contralateral encoding and negative values stronger ipsilateral encoding. The distribution for each condition was positively skewed indicating that, overall, there was a bias for better encoding for contralateral reaches [permutation test: pright < 0.001, pleft < 0.001]. However, there was a significant difference in the distributions for the two hemispheres: The bias scores were lower in the left hemisphere compared to the right hemisphere [permutation test: p < 0.001] indicating stronger bilateral encoding in the left hemisphere. We also found that the contralateral bias becomes weaker the further the electrodes are from the primary motor cortex, an effect observed in both hemispheres [rleft = −0.48, pleft < 0.001, rright = −0.45, pright < 0.001; Figure 2—figure supplement 3].
 
-## Opposing patterns of kinematic encoding for the left and right hemispheres during planning and execution
+### Opposing patterns of kinematic encoding for the left and right hemispheres during planning and execution
 
 As neural activity unfolds from preparation to movement, the underlying computations may change substantially (Elsayed et al., 2016). To examine if hemispheric asymmetries in encoding depend on task state, we repeated the mixed-effects model described in the previous section, but now added a factor Task Phase, separating the data to test the held-out predictions during the instruction and movement phases (Figure 3A). The effect of Arm was again significant, with contralateral reaches more strongly encoded than ipsilateral reaches [χ2(1) = 16.19, p < 0.001]. The main effects of Hemisphere [ χ2(1) = 0.72, p > 0.40] and Task Phase were not significant [χ2(1) = 0.01, p > 0.90]. Importantly, there was a three-way interaction between Arm, Hemisphere, and Task Phase indicating that the level of encoding for the two arms varied across the two hemispheres for the two task phases [χ2(4) = 22.47, p < 0.001].
 
@@ -72,7 +170,7 @@ As neural activity unfolds from preparation to movement, the underlying computat
 
 To explore this interaction we again examined the distribution of difference scores for each electrode. The right hemisphere electrodes show a positive skew in both the planning and movement phase [permutation test: pright_move < 0.001, pright_planning < 0.001]. However, this pattern is only seen in the left hemisphere during the planning phase [pleft_planning < 0.001]; the mean difference score was not statistically different from zero for the left hemisphere electrodes in the movement phase [pleft_move = 0.482]. Analyzing simple effects within each hemisphere, we found that the difference score was smaller (i.e., more bilateral encoding) in the left hemisphere during the movement phase compared to the planning phase [R2left_move = 0.01, R2left_planning = 0.04, p < 0.001]. In contrast, the opposite pattern was observed in the right hemisphere, with encoding being more bilateral during the instruction phase [R2right_move = 0.13, R2right_planning = 0.10, p < 0.001]. Taken together, these results suggest that the left and right hemispheres may have different roles in bilateral encoding with regard to task phase.
 
-## Across-arm generalization: more overlap between arms in the left hemisphere
+### Across-arm generalization: more overlap between arms in the left hemisphere
 
 The preceding analyses focused on an encoding analysis for within-arm prediction. We next evaluate the overlap between the neural representations for contralateral and ipsilateral movements. To this end, we examined across-arm prediction performance by training the kinematic encoding model with the data from movements produced with one arm and testing prediction performance using the data from movements produced with the other arm.
 
@@ -88,9 +186,17 @@ To evaluate this interaction, we used a difference score, calculated by subtract
 
 Considered together, the within- and across-arm encoding results indicate that left hemisphere electrodes show stronger bilateral encoding and more similar encoding during left and right arm movements. Interestingly, although overall encoding was stronger during movement, across-arm generalization was stronger during the instruction phase.
 
-## Temporal and spatial topography of across-arm generalization
+### Temporal and spatial topography of across-arm generalization
 
 To examine how generalization varied across the cortex, we categorized each electrode as showing either good across-arm generalization (decrease of up to 20% relative to within-arm performance) or poor across-arm generalization (decrease of more than 50%; Figure 5A). We focused on the extremes of the generalization distribution based on the assumption that these electrodes were more likely to share similar underlying neural profiles. This also allowed us to have similar numbers of electrodes in each group.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig5-v1.jpg)
+
+**Figure 5.:** (A) Generalization index. Electrodes were classified as showing good across-arm generalization (white, generalization index >0.80) or poor across-arm generalization (magenta; generalization index <0.50). (B) Ipsilateral encoding strength. Ipsilateral encoding strength for electrodes that generalize well and generalize poorly. (C) Amplitude differences across arms. Average contralateral (solid line) and ipsilateral (dashed line) high-frequency activity (HFA) for electrodes that generalize well across arms (left) or generalize poorly (right). Significant clusters are represented with a gray line. Inset: same data but standardized to highlight shape of the time series independent of absolute amplitude. (D) Spatial distribution of across-arm generalization. Electrodes that generalize well across arms (white) were primarily located in dorsal and ventral premotor regions of the left hemisphere. Electrodes that generalize poorly (magenta) were clustered around the putative arm area of the central sulcus in both the left and right hemispheres. Dashed rectangles indicate extent of electrode coverage across the three patients for each hemisphere. (E) Modulation depth. Depth of tuning was calculated during instruction or movement with either the ipsilateral or contralateral hand. Greater modulation was found during contralateral reaches and during movement. (F) Tuning similarity. Across arms tuning similarity was calculated for electrodes that generalize well (white) or poorly (magenta). Electrodes that generalize well across arms had significantly more tuning similarity than electrodes that did not generalize. *p < 0.05, ***p < 0.001, cluster permutation test, Pearson’s correlation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69977/elife-69977-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Across-arm generalization was calculated as the ratio of across-arm performance divided by within-arm performance. Electrodes further from the dorsal aspect of the central sulcus had better across-arm generalization in the left hemisphere. This relationship was not significant in the right hemisphere. ***p < 0.001.
 
 Figure 5B plots ipsilateral encoding strength (R2) for electrodes that either generalize well or generalize poorly. Electrodes that generalize poorly have lower ipsilateral encoding strength than electrodes that generalize well [t = 5.921, p < 0.001]. Despite this difference, 61% (23/38) of electrodes that generalize poorly meet our encoding criteria of R2 > 0.05.
 
@@ -100,13 +206,13 @@ It is possible that similarity in temporal structure is obscured in the precedin
 
 We next examined the relationship between generalization, hemisphere and spatial position on the cortical surface. As can be seen in Figure 5D, electrodes that generalize well were predominantly found in the left hemisphere (proportion of electrodes that generalize across patients: L1 = 22%, L2 = 39%, L3 = 29%, R1 = 0%, R2 = 5%, R3 = 4%; χ2(2) = 48813, p < 0.001). In contrast, electrodes showing poor generalization were observed in both hemispheres (proportion of electrodes that generalize poorly: L1 = 21%, L2 = 5%, L3 = 6%, R1 = 14%, R2 = 15%, R3 = 37%; χ2(2) = 0.400, p = 0.818). Moreover, in both hemispheres, electrodes showing poor generalization were clustered near the dorsal portion of the central sulcus, a region corresponding to the arm area of motor cortex. Electrodes showing strong generalization (mostly limited to the left hemisphere) tended to be in dorsal and ventral premotor cortices (PMd and PMv), along with a few in superior parietal cortex. This pattern was also observed when we analyzed all electrodes, rather than restrict the analysis to those showing extreme values. Here we used a continuous measure, correlating the amount of across-arm generalization with the distance (absolute value) from the dorsal aspect of the central sulcus. The correlation was significant in the left hemisphere [rleft = 0.46, pleft < 0.001] but did not reach significance in the right hemisphere, although the trend was in the same direction [rright = 0.22, pright = 0.068; Figure 5—figure supplement 1].
 
-## Target modulation and tuning similarity across arms
+### Target modulation and tuning similarity across arms
 
 To examine the extent of target modulation for the contralateral and ipsilateral arms, we calculated the modulation depth (MD) of each electrode during the instruction and movement phases. The modulation index reflects the amount of variability in the signal captured by target tuning (or target specificity): A modulation index of 0.1 means 10% of the variance is captured by the difference between the response to the four target locations. The modulation values overall were relatively low (Figure 5D). However, it should be noted that the reaches were all within the frontoparallel plane which comprise a considerably smaller range of movement compared to studies that use a center-out reaching task. For both electrode types (showing good or poor across-arm generalization), there was a main effect of arm, with ipsilateral modulation lower than contralateral modulation [permutation test: pGeneralize_well < 0.001; pGeneralize_poorly < 0.005]. Both subgroups of electrodes also displayed a main effect of task phase, with the depth of modulation greater during the movement phase compared to the instruction phase [permutation test: pGeneralize_well < 0.001; pGeneralize_poorly < 0.005]. No significant interactions were found for either group.
 
 We also examined the representational overlap between the two arms in terms of their tuning profiles. We computed a tuning similarity index (SI), defined as the sum of squared errors (SSEs) for average HFA predictions to the same target between the contralateral and ipsilateral arms. An SI of 1 would correspond to identical tuning preferences for the arms whereas an SI of 0 would indicate completely disparate tuning preferences. The similarity data were analyzed with a mixed design permutation test, including the factors task phase and electrode type (good vs. poor generalizers). Electrodes that generalize well across the two arms (predominately found in the left hemisphere) showed more overlap of tuning preferences compared to electrodes that generalized poorly [main effect of generalizability: p < 0.001]. While there was no effect of phase [p > 0.70], the interaction was significant [p < 0.005], with electrode types showing more comparable tuning similarity during instruction and tuning similarity diverging during movement. Simple effects analysis revealed that for electrodes that generalize poorly, tuning similarity was higher during the instruction phase compared to the movement phase [permutation test: p < 0.001]. In contrast, for electrodes that generalize well, tuning similarity was higher during movement compared to instruction [permutation test: p < 0.001]. These analyses demonstrate that a number of electrodes in the left hemisphere encode kinematic variables for both arms, including similar tuning preferences across the two arms, which was especially pronounced during the movement phase.
 
-## HFA relationship to kinematics
+### HFA relationship to kinematics
 
 In the final analysis, we examined how the kinematic features of the movements contribute to the encoding model used to predict HFA. Each of the four kinematic features includes 400 time lags and thus 400 weights that contribute to the model. To obtain a metric of the relative contribution of the features, we calculated the total contribution of each feature and normalized these values by dividing by the total contribution of the four features. The calculation was done for each patient separately and then averaged, with error bars representing the standard deviation across patients (Figure 6A). The relative contribution of the four kinematic features was similar for contralateral and ipsilateral reaches. We next examined the temporal profile of the weights (Figure 6B) and found that this was also similar for the two conditions, although the average weights for ipsilateral reaches are substantially lower, consistent with the observation of lower performance metrics for ipsilateral reaches across all predictive electrodes (Figure 2—figure supplement 2).
 
@@ -128,7 +234,7 @@ Although the most prominent feature of cortical motor pathways is their contrala
 
 Here, we report the results from ECoG data obtained from six patients, three with left hemisphere implants and three with right hemisphere implants, with each patient having at least 17 predictive electrodes. To examine how kinematic features are represented in each hemisphere, we built an electrode-wise encoding model. Such models allow prediction of the full time series for each electrode thus retaining the high spatial and temporal resolution of the intracranial signal. From these metrics we could compare kinematic encoding and across-arm generalization between the two hemispheres as well as the spatial distribution of the information-carrying electrodes within each hemisphere.
 
-## Hemispheric asymmetry in movement encoding
+### Hemispheric asymmetry in movement encoding
 
 We observed a striking asymmetry between the two hemispheres for ipsilateral movement encoding. While contralateral movements were encoded similarly across the two hemispheres, ipsilateral encoding was much stronger in the left hemisphere, an effect that was especially pronounced during movement execution. In addition, there was greater overlap between the representation of contralateral and ipsilateral movement in the left hemisphere compared to the right hemisphere.
 
@@ -140,7 +246,7 @@ Examining the temporal profile of electrodes that generalize poorly, we found th
 
 We further examined the spatial tuning of the electrodes. Target tuning in the HFA band was found for both contralateral and ipsilateral movements, although ipsilateral tuning was significantly shallower. Interestingly, electrodes that generalized well across arms had similar spatial/target tuning for each arm. This suggests that for these electrodes, ipsilateral signals are not just encoding generic movement, but encoding movement direction in a similar manner to contralateral signals. A similar overlap in tuning has been observed in single-unit recordings from PMd (Cisek et al., 2003) and can be inferred from the across-arm generalization decoding results reported by Bundy et al., 2018. In contrast, electrodes that failed to generalize, located primarily in M1 in either left or right hemisphere, exhibited disparate tuning for contralateral and ipsilateral reaches.
 
-## Functional implications of hemispheric asymmetries in movement encoding
+### Functional implications of hemispheric asymmetries in movement encoding
 
 By using a delayed response task, we were able to segregate activity into an instruction phase during which the participant was presented with the target location for the forthcoming movement and a movement phase, defined at the onset of the reach. With this design, we found that the encoding model could predict neural activity during the instruction phase based on the kinematics of the forthcoming reach, evidence that the participants were indeed planning the upcoming movement.
 
@@ -160,17 +266,17 @@ The asymmetry of ipsilateral encoding may be reflective of a prominent role of t
 
 An important question for future work is to examine how ipsilateral representations in the left hemisphere are affected during more complex movements, including those that involve both limbs. Using fMRI, Diedrichsen et al., 2013 compared ipsilateral movement representations during unimanual and bimanual movements. Within the primary motor cortex, ipsilateral representations could only be discerned during unimanual movement. However, caudal premotor and anterior parietal regions retained similar ipsilateral representation during uni- and bimanual movement. If the left hemisphere tracks both limbs to facilitate bimanual coordination, we would predict that ipsilateral representations in premotor cortex are retained more strongly in the left hemisphere compared to the right hemisphere when both arms are engaged in the task.
 
-## Conclusion
+### Conclusion
 
 Using a kinematic encoding model, we observed a striking hemispheric asymmetry, with the left hemisphere more strongly encoding the ipsilateral arm than the right hemisphere, a finding that was apparent during preparation and amplified during movement. This asymmetry was primarily driven by electrodes positioned over premotor and parietal cortices, with strong contralateral encoding for electrodes positioned over sensorimotor cortex. We propose that these networks monitor the state of each arm, a prerequisite for most skilled actions.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Intracranial recordings were obtained from six patients (two female; five right handed; Table 1) implanted with subdural grids as part of their treatment for intractable epilepsy. Data were recorded at three hospitals: University of California, Irvine (UCI) Medical Center (n = 2), University of California, San Francisco (UCSF) Medical Center (n = 2), and California Pacific Medical Center (CPMC), San Francisco (n = 2). Electrode placement was solely determined based on clinical considerations and all procedures were approved by the institutional review boards at the hospitals, as well as the University of California, Berkeley. All patients provided informed consent prior to participating in the study.
 
-## Behavioral task
+### Behavioral task
 
 Participant performed an instructed-delay reaching task while sitting upright in their hospital bed. The participant rested their arms on a horizontal platform (71 cm × 20 cm) that was placed over a standard hospital overbed table. The platform contained two custom-made buttons, each connected to a microswitch. At the far end of the platform (13 cm from the buttons, approximately 55 cm from the participant’s eyes), a touchscreen monitor was attached, oriented vertically. Visual targets could appear at one of six locations, four for each arm (Figure 1A). The two central locations were used as targets for reaches with either arm; the two eccentric targets varied depending on the arm used. Stimulus presentation was controlled with Matlab 2016a. A photodiode sensor was placed on the monitor to precisely track target presentation times. The analog signals from the photodiode and the two microswitches were fed into the ECoG recording system and were digitized into the same data file as the ECoG data with identical sampling frequency.
 
@@ -180,7 +286,7 @@ Once back at the home position, the screen displayed the word ‘HIT’ or ‘MI
 
 Each block consisted of 40 trials (10/target), all performed with a single limb. Blocks alternated between contralateral and ipsilateral arms (relative to the ECoG electrodes), with the order counterbalanced across participants. Each block took approximately 5–6 min to complete. All participants completed at least two blocks with each per arm (Table 1).
 
-## Movement analysis and trajectory reconstruction
+### Movement analysis and trajectory reconstruction
 
 We used two methods to analyze the movements. For the first method, we recorded key events defined by the release of the microswitch at the start position, time and location of contact with the touchscreen, and return time to the home position, defined by the time at which they depressed the home position microswitch. For the second method, we used the Leap Motion 3D movement analysis system (Weichert et al., 2013) to record continuous hand position and the full movement trajectory (sampling rate = 60 Hz). Although the Leap system is a lightweight video-based tracking device that is highly mobile, the unpredictable environment of the ICU led to erratic recordings from the Leap system. For example, patients frequently had intravenous lines in one or both hands which obstructed the visibility of the hand and interfered with the ability of the Leap system to track the hand using their built-in hand model. This resulted in lost samples and therefore satisfactory kinematic data were obtained from only a subset of conditions collected from patients using the Leap system.
 
@@ -188,11 +294,11 @@ Given the limitations with the Leap data, we opted to use a simple algorithm to 
 
 For conditions that had clean kinematic traces (no lost samples) from the Leap system, we compared the estimated kinematic profiles with those obtained with the Leap system. There was a high correlation between the two datasets (r = 0.98 for position in the Z dimension; r = 0.93 for velocity in the Z dimension; Figure 1—figure supplement 1). We note that our method of estimating the trajectories results in a smoothed version of the movement, one lacking any secondary or corrective movements that are sometimes observed when reaching to a visual target (Suway and Schwartz, 2019). We believe this is still a reasonable estimation given the high correlation with the continuous Leap data, and the fact that participants had ample time to prepare the movements and were instructed and observed to make ballistic movements by the experimenter who was present for all recording sessions (CMM).
 
-## Electrode localization
+### Electrode localization
 
 Grid and strip electrode spacing was 1 cm in four patients and 4 mm in the two other patients. The electrode locations were visualized on a three-dimensional reconstruction of the patient’s cortical surface using a custom script that takes the postoperative computed tomography scan and coregisters it to the preoperative structural magnetic resonance scan (Stolk et al., 2018).
 
-## Neural data acquisition and preprocessing
+### Neural data acquisition and preprocessing
 
 Intracranial EEG data and peripheral data (photodiode and microswitch traces) were acquired using a Nihon Kohden recording system at UCI (128 channel, 5000 Hz digitization) and CPMC (128 channel, 1000 Hz digitization rate), and two Tucker Davis Technologies recording systems at UCSF (128 channel, 3052 Hz digitization rate).
 
@@ -200,17 +306,21 @@ Offline preprocessing included the following steps. First, if the patient’s da
 
 From the cleaned dataset, we extracted the HFA instantaneous amplitude using a Hilbert transform. To account for the 1/f power drop in the spectrum, we divided the broadband signal into five narrower bands that logarithmically increased from 70 to 200 Hz (i.e., 70–86, 86–107, 107–131, 131–162, and 162–200 Hz), and applied a band-pass filter within each of these ranges. We then took the absolute value of the Hilbert transform within each band-pass, performed a z-score transformation, and averaged the five values. z-Scoring was performed after concatenating all the blocks for each patient, ensuring that we did not obscure possible amplitude differences across the two arms. As a final step, the data were downsampled to 100 Hz to reduce computational load (e.g., number of parameters in the encoding model, see below). HFA amplitude fluctuations (envelope; are evident at lower frequencies Canolty et al., 2006; Pei et al., 2011).
 
-## Feature selection
+### Feature selection
 
 Four estimated kinematic features were used to predict HFA (Figure 1B, left). The first two features were position and speed in the Z dimension. This dimension captures variability related to movement that is relatively independent of target location (i.e., along the axis between the participant and touchscreen). The second pair of features were spherical angles that define the specific target locations (Figure 1A, right). Features were selected to reduce collinearity and redundancy in the encoding model. Because we include time lags for each kinematic feature, derivatives can emerge from the linear model (e.g., velocity and acceleration can be created from position); thus, velocity and acceleration were not included as additional features. Speed is a nonlinear transformation of position and is added as a separate feature.
 
-## Kinematic encoding model
+### Kinematic encoding model
 
 The estimated kinematic features were used to predict the HFA for each electrode (Figure 1F). We created a 4 × 400 feature matrix by generating a time series for each feature by time lagging the values of the selected feature relative to the neural data, with lags extending from 2 s before movement onset to 2 s after movement onset (sampling rate at 100 Hz). This wide range of lags serves two purposes. First, it provides a way to compensate for the anticipated asynchrony between neural data and movement kinematics. Second, it allowed us to evaluate HFA activity during the instructed-delay (beginning ~1.5 s before movement onset) period as well as during movement. HFA at each time point [HFA(t)] was modeled as a weighted linear combination of the kinematic features at different time lags, resulting in a set of beta weights, b1, …, b400 per kinematic feature. To make the beta weights scale-free, the kinematic features and neural HFA were z-scored before being fit by the model.
 
-## Fitting
+### Fitting
 
-Regularized (ridge) regression (Hoerl and Kennard, 1970) was used to estimate the weights that map each kinematic feature (X) to the HFA signal (y) for each electrode, with λ being the regularization hyperparameter:β^=(XTX+λI)−1XTy
+Regularized (ridge) regression (Hoerl and Kennard, 1970) was used to estimate the weights that map each kinematic feature (X) to the HFA signal (y) for each electrode, with λ being the regularization hyperparameter:
+
+$$
+\beta^=(X^{T}X+\lambdaI)^{−1}X^{T}y
+$$
 
 For within-arm model fitting, the total dataset consisted of all clean, successful trials performed with either the ipsilateral or contralateral arm (each arm was fit separately). Nested fivefold cross-validation was used to select the regularization hyperparameter on inner test sets (validation sets) and assess prediction performance on separate, outer test sets. At the outer level, the data were partitioned into five mutually exclusive estimation and test sets. For each test set, the remaining data served as the estimation set. For each outer fold, we further partitioned our estimation set into five mutually exclusive inner folds to train the model (80% of estimation set) and predict neural responses across a range of regularization values on the validation set (20% of estimation set). For each inner fold, the regularization parameter value was selected that produced the best prediction as measured by the linear correlation of the predicted and actual HFA. The average of the selected regularization parameters across the five inner folds was computed and used to calculate the prediction of the HFA on the outer test set. This procedure was done at the outer level five times. Our primary measure is held-out prediction performance (R2), which we quantified as the squared linear correlation between the model prediction and the actual HFA time series, averaged across the five mutually exclusive test sets.
 
@@ -218,42 +328,62 @@ To be considered as predictive, we established a criterion that an electrode mus
 
 For across-arm model fitting, the same procedure was used except the test set was partitioned from the total dataset of the other arm. We partitioned the data in this manner (80% estimation, 20% test) to make the fitting procedure for the across-arm model comparable to that employed in the within-arm model.
 
-## Tuning modulation and similarity across arms
+### Tuning modulation and similarity across arms
 
-MD of target tuning was calculated as the standard deviation of the mean HFA predictions for each of the four target locations:MD=∑i=1n(xi−x¯)2n
+MD of target tuning was calculated as the standard deviation of the mean HFA predictions for each of the four target locations:
+
+$$
+MD=\sumi=1n\frac{(x_{i}−x¯)^{2}}{n}
+$$
 
 where x is the average HFA prediction, xi is the average HFA prediction for each of the four target positions. i iterates through the target locations and n is the total number of target locations. This process was done separately for contralateral and ipsilateral HFA predictions.
 
-To assess similarity in tuning across the two arms, we computed the SSEs for average HFA predictions to the same target between the contralateral and ipsilateral arms. This calculation was computed for each electrode as follows:SSEe=∑i=1n(contrai−ipsii)2
+To assess similarity in tuning across the two arms, we computed the SSEs for average HFA predictions to the same target between the contralateral and ipsilateral arms. This calculation was computed for each electrode as follows:
+
+$$
+SSE_{e}=\sumi=1n(contra_{i}−ipsi_{i})^{2}
+$$
 
 where contra and ipsi are average HFA predictions for a given target location reached with either the contralateral or ipsilateral arm. Note that for this calculation n is limited to the two positions that served as target locations for both arms.
 
-This metric was only calculated for the two central targets, the targets common to both arms (the two eccentric target locations varied depending on the arm used). These values were scaled from 0 to 1 based on the minimum and maximum values of SSE across all electrodes. SSE represents a metric of dissimilarity; to calculate a similarity index (SI), we subtracted the scaled SSE values from 1:SI=1-SSEe-minSSEemaxSSEe-minSSEe
+This metric was only calculated for the two central targets, the targets common to both arms (the two eccentric target locations varied depending on the arm used). These values were scaled from 0 to 1 based on the minimum and maximum values of SSE across all electrodes. SSE represents a metric of dissimilarity; to calculate a similarity index (SI), we subtracted the scaled SSE values from 1:
+
+$$
+SI=1-\frac{SSE_{e}-minSSE_{e}}{maxSSE_{e}-minSSE_{e}}
+$$
 
 Thus, higher SI represents more similar average predictions.
 
-## Separating instruction and movement phases
+### Separating instruction and movement phases
 
 The encoding model was run to predict the full HFA time course. To compare model prediction performance during different phases of the task, the data were epoched into instruction and movement phases, using event markers recorded in the analog channel (i.e., cue onset and movement onset). Epochs of the same task phase were concatenated together, and prediction performance was operationalized as the square of the Pearson’s correlation between the predicted and actual HFA for each task phase.
 
-## Permutation-based linear mixed-effects model
+### Permutation-based linear mixed-effects model
 
 Linear mixed-effects models were carried out in RStudio using software packages lme4 and permlmer (Bates et al., 2014; Lee and Braun, 2012). Each mixed-effects model used participant as a random effect and experimental variables (e.g., reaching arm, hemisphere) as fixed effects. The models were used to predict performance from the kinematic encoding model for all predictive electrodes. Nested models were created to assess the effect of the fixed factors, with the null model using patient as a random effect to predict encoding values. For the nesting, fixed factors were added to the model to assess if each new factor improved prediction above that obtained with the null model using a permutation-based method (Anderson and Braak, 2003, Lee and Braun, 2012). Interactions were tested by comparing a model in which the fixed effects were restricted to have additive effects to a model that could have both multiplicative and additive effects.
 
-## Assessing the contribution of kinematic features in the encoding model
+### Assessing the contribution of kinematic features in the encoding model
 
 Average weights for each patient were calculated for all predictive electrodes for each kinematic feature. Because each feature has 400 time lags, there are 400 weights per feature in the full model. To assess the relative contribution of each feature, we calculated the sum of the weights across time lags after taking the absolute value of each weight (since negative weights are as informative as positive weights). The sum of each feature was then plotted as a proportion against the total sum of all weights (after taking the absolute value) to assess the relative contribution. To capture the temporal profile of the weights, the average was taken for all predictive electrodes for all patents.
 
-## Assessing explainable variance in the encoding model
+### Assessing explainable variance in the encoding model
 
-There are several methods to assess prediction performance for encoding models (Lage-Castellanos et al., 2019; Nunez-Elizalde et al., 2019; Schoppe et al., 2016). A drawback with the Pearson’s product-moment correlation coefficient is that it does not distinguish between explainable variability and response variability (Hsu et al., 2004). To better capture this distinction, we calculated CCnorm, a measure which normalizes by signal power (SP) to account for response variability (Schoppe et al., 2016):CCnorm=Cov(y,y^)Var(y^)1SP
+There are several methods to assess prediction performance for encoding models (Lage-Castellanos et al., 2019; Nunez-Elizalde et al., 2019; Schoppe et al., 2016). A drawback with the Pearson’s product-moment correlation coefficient is that it does not distinguish between explainable variability and response variability (Hsu et al., 2004). To better capture this distinction, we calculated CCnorm, a measure which normalizes by signal power (SP) to account for response variability (Schoppe et al., 2016):
 
-where y is neural activity and y^ are predictions from the model, and SP is:SP=Var∑n=1NRn-∑n=1NVarRnNN-1
+$$
+CC_{norm}=\frac{Cov(y,y^)}{\sqrt{Var(y^)}}\sqrt{\frac{1}{SP}}
+$$
+
+where y is neural activity and $y^$ are predictions from the model, and SP is:
+
+$$
+SP=\frac{Var\sum_{n=1}^{N}R_{n}-\sum_{n=1}^{N}VarR_{n}}{NN-1}
+$$
 
 where Rn is the neural time series for the nth trial and N is the total number of trials.
 
 We plot the density estimates of all predictive electrodes for both the Pearson’s correlation coefficient (CCabs) and CCnorm (see Figure 2—figure supplement 2). We find similar values for the two metrics, suggesting that the number of trials in our study and SP is sufficient for the encoding model to capture the majority of explainable variance. (Calculations of Pearson’s correlation coefficient were always taken from held-out trials.)
 
-## Calculating distance from dorsal central sulcus
+### Calculating distance from dorsal central sulcus
 
 For each patient, 30 discrete (x, y) coordinates were manually demarcated along the central sulcus on individual MRI scans. The 30 points were then interpolated to create a line traversing the central sulcus for each individual. The dorsal aspect of the central sulcus was defined as all points dorsal to the midpoint of the central sulcus. We then calculated the absolute distance between each electrode and the closest point on the dorsal aspect of the central sulcus (our interpolated line).

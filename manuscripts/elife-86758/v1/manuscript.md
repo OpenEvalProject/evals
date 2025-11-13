@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0293rh119 Department of Human Physiology, University of Oregon Eugene United States
+1. Department of Human Physiology, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
 
 † Corresponding author
 

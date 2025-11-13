@@ -18,19 +18,19 @@
 
 ### Affiliations
 
-1. https://ror.org/025kb2624 University of Medicine and Pharmacy at Ho Chi Minh City Ho Chi Minh City Viet Nam
-2. https://ror.org/05rehad94 Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam
-3. https://ror.org/040tqsb23 Hospital for Tropical Diseases Ho Chi Minh City Viet Nam
-4. https://ror.org/005x9g035 Center for Global Health, Colorado School of Public Health Aurora United States
-5. https://ror.org/013czdx64 Heidelberg Institute of Global Health (HIGH), Heidelberg University Hospital Heidelberg Germany
-6. https://ror.org/052gg0110 Centre for Tropical Medicine and Global health, Nuffield Department of Clinical Medicine, University of Oxford Oxford United Kingdom
-7. https://ror.org/02bfwt286 World Mosquito Program, Monash University Clayton Australia
+1. University of Medicine and Pharmacy at Ho Chi Minh City Ho Chi Minh City Viet Nam ([ROR:025kb2624](https://ror.org/025kb2624))
+2. Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam ([ROR:05rehad94](https://ror.org/05rehad94))
+3. Hospital for Tropical Diseases Ho Chi Minh City Viet Nam ([ROR:040tqsb23](https://ror.org/040tqsb23))
+4. Center for Global Health, Colorado School of Public Health Aurora United States ([ROR:005x9g035](https://ror.org/005x9g035))
+5. Heidelberg Institute of Global Health (HIGH), Heidelberg University Hospital Heidelberg Germany ([ROR:013czdx64](https://ror.org/013czdx64))
+6. Centre for Tropical Medicine and Global health, Nuffield Department of Clinical Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+7. World Mosquito Program, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
 
 † Corresponding author
 
 ## Abstract
 
-Viremia is a critical factor in understanding the pathogenesis of dengue infection, but limited data exist on viremia kinetics. This study aimed to investigate the kinetics of viremia and its effects on subsequent platelet count, severe dengue, and plasma leakage. We pooled data from three studies conducted in Vietnam between 2000 and 2016, involving 2340 dengue patients with daily viremia measurements and platelet counts after symptom onset. Viremia kinetics were assessed using a random effects model that accounted for left-censored data. The effects of viremia on subsequent platelet count and clinical outcomes were examined using a landmark approach with a random effects model and logistic regression model with generalized estimating equations, respectively. The rate of viremia decline was derived from the model of viremia kinetics. Its effect on the clinical outcomes was assessed by logistic regression models. Viremia levels rapidly decreased following symptom onset, with variations observed depending on the infecting serotype. DENV-1 exhibited the highest mean viremia levels during the first 5–6 days, while DENV-4 demonstrated the shortest clearance time. Higher viremia levels were associated with decreased subsequent platelet counts from day 6 onwards. Elevated viremia levels on each illness day increased the risk of developing severe dengue and plasma leakage. However, the effect size decreased with later illness days. A more rapid decline in viremia is associated with a reduced risk of the clinical outcomes. This study provides comprehensive insights into viremia kinetics and its effect on subsequent platelet count and clinical outcomes in dengue patients. Our findings underscore the importance of measuring viremia levels during the early febrile phase for dengue studies and support the use of viremia kinetics as outcome for phase-2 dengue therapeutic trials. Wellcome Trust and European Union Seventh Framework Programme.
+Background:Viremia is a critical factor in understanding the pathogenesis of dengue infection, but limited data exist on viremia kinetics. This study aimed to investigate the kinetics of viremia and its effects on subsequent platelet count, severe dengue, and plasma leakage.Methods:We pooled data from three studies conducted in Vietnam between 2000 and 2016, involving 2340 dengue patients with daily viremia measurements and platelet counts after symptom onset. Viremia kinetics were assessed using a random effects model that accounted for left-censored data. The effects of viremia on subsequent platelet count and clinical outcomes were examined using a landmark approach with a random effects model and logistic regression model with generalized estimating equations, respectively. The rate of viremia decline was derived from the model of viremia kinetics. Its effect on the clinical outcomes was assessed by logistic regression models.Results:Viremia levels rapidly decreased following symptom onset, with variations observed depending on the infecting serotype. DENV-1 exhibited the highest mean viremia levels during the first 5–6 days, while DENV-4 demonstrated the shortest clearance time. Higher viremia levels were associated with decreased subsequent platelet counts from day 6 onwards. Elevated viremia levels on each illness day increased the risk of developing severe dengue and plasma leakage. However, the effect size decreased with later illness days. A more rapid decline in viremia is associated with a reduced risk of the clinical outcomes.Conclusions:This study provides comprehensive insights into viremia kinetics and its effect on subsequent platelet count and clinical outcomes in dengue patients. Our findings underscore the importance of measuring viremia levels during the early febrile phase for dengue studies and support the use of viremia kinetics as outcome for phase-2 dengue therapeutic trials.Funding:Wellcome Trust and European Union Seventh Framework Programme.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ This study aims to improve our understanding of viremia kinetics, how it is asso
 
 ## Methods
 
-## Study population
+### Study population
 
 We used data from three prospective observational studies performed as part of the longstanding collaboration between the Oxford University Clinical Research Unit (OUCRU) and the Hospital for Tropical Diseases (HTD) in Ho Chi Minh City, Vietnam. Protocol synopses for the three studies are presented in Appendix 1. Briefly, studies A and B simultaneously ran from 2000 to 2009 and enrolled children aged between 5 and 15 years. Study A included children with a febrile illness presenting to community outpatient clinics, while study B included children admitted to HTD with a febrile illness suspected to be dengue. Some patients from study A were subsequently enrolled in study B after admission to hospital. Study C ran from 2011 to 2016 and enrolled adults and children presenting with possible dengue within 3 days of fever onset (IDAMS study, NCT01550016) (Jaenisch et al., 2016). Clinical evaluation and blood sampling were performed daily for all three studies. All studies were approved by the Oxford Tropical Research Ethics Committee and the Institutional Ethics Committee.
 
@@ -54,7 +54,7 @@ We identified 3527 laboratory-confirmed dengue patients. Among them, 2340 had re
 
 **Figure 1.:** @Among 385 laboratory-confirmed dengue patients in study A, 31 individuals were later included in study B upon hospitalization. Of these, nine had viremia measurements available in both studies and were consequently analysed in study A. The remaining 22 lacked viremia data in study A but had measurements in study B, leading to their inclusion in study B in the analysis. #Although study B spanned from 2000 to 2009, daily viremia levels were only measured between 2006 and 2008. $In study C, one study site in Vietnam did not have daily viremia measurements. Overall, a random sample of 2340 from 3527 laboratory-confirmed dengue patients had data on viremia kinetics. PCR, polymerase chain reaction.
 
-## Plasma viremia measurement, dengue diagnostics, and clinical endpoints (details in Appendix 2)
+### Plasma viremia measurement, dengue diagnostics, and clinical endpoints (details in Appendix 2)
 
 Plasma viremia levels were measured by reverse transcription polymerase chain reaction (RT-PCR), which was an internally controlled, serotype-specific, real-time, two-step assay in studies A and B (Simmons et al., 2007b), and a one-step procedure using a validated assay in study C (Hue et al., 2011). There was no formal validation of the detection limit for viremia for the two-step PCR used in studies A and B; we set it at 1000 copies/ml. In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 (Hue et al., 2011).
 
@@ -62,7 +62,7 @@ Patients were classified into probable primary (i.e., the first) or probable sec
 
 For the clinical endpoints we selected severe dengue and plasma leakage. The definitions are based on the WHO 2009 guidelines (World Health Organization, 2009) and standard endpoint definitions for dengue trials (Tomashek et al., 2018). Severe dengue was defined as severe plasma leakage, severe bleeding, and/or severe organ impairment. Plasma leakage included moderate and severe leakage.
 
-## Statistical analysis (details in Appendix 3)
+### Statistical analysis (details in Appendix 3)
 
 In Appendix 3—figure 1 we show a directed acyclic graph (DAG) to display assumptions about the causal relationships between variables over illness day. Illness day is the number of days after symptom onset, where day 1 is the day of symptom onset. Potential confounders that needed to be corrected for were age, sex, DENV serotype, and primary/secondary immune status. In all analyses, we used a log-10 transformation for viremia levels.
 
@@ -80,21 +80,298 @@ In the analyses for platelet count and clinical outcomes, undetectable viremia l
 
 Baseline characteristics and outcomes are summarized in Table 1. Three quarters of the participants were children, and male sex predominated (60%). Most patients (85%) were enrolled on illness day 2 or 3. All four serotypes were included, but DENV-1 was the most prevalent (54%). Most infections (69%) were classified as probable secondary infection, while in 11% immune status could not be determined. There were 353 patients (15%) with plasma leakage and 65 patients (3%) with severe dengue. In Appendix 4—table 1, we summarize plasma leakage and severe dengue by serotype and immune status. DENV-2 had the highest proportion of these two outcomes. Patients with probable secondary infection were more likely to experience these outcomes than those with probable primary infection or indeterminate immune status, regardless of the infecting serotype.
 
-## Viremia kinetics and the relationship with clinical characteristics
+**Table 1.**
+ Baseline characteristics and clinical outcomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N*</th>
+      <th>All patients (N = 2340)</th>
+      <th>Study A (N = 363)</th>
+      <th>Study B (N = 622)</th>
+      <th>Study C (N = 1355)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years</td>
+      <td>2340</td>
+      <td>13 (10; 18)</td>
+      <td>12 (9; 14)</td>
+      <td>12 (10; 13)</td>
+      <td>16 (10; 25)</td>
+    </tr>
+    <tr>
+      <td>Sex male</td>
+      <td>2340</td>
+      <td>1403 (60)</td>
+      <td>195 (54)</td>
+      <td>412 (66)</td>
+      <td>796 (59)</td>
+    </tr>
+    <tr>
+      <td>Illness day at enrolment</td>
+      <td>2340</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td>310 (13)</td>
+      <td>59 (16)</td>
+      <td>7 (1)</td>
+      <td>244 (18)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td>848 (36)</td>
+      <td>150 (41)</td>
+      <td>155 (25)</td>
+      <td>543 (40)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>1137 (49)</td>
+      <td>114 (31)</td>
+      <td>455 (73)</td>
+      <td>568 (42)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td>45 (2)</td>
+      <td>40 (11)</td>
+      <td>5 (1)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Serotype</td>
+      <td>2340</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DENV-1</td>
+      <td></td>
+      <td>1264 (54)</td>
+      <td>233 (64)</td>
+      <td>410 (66)</td>
+      <td>621 (46)</td>
+    </tr>
+    <tr>
+      <td>DENV-2</td>
+      <td></td>
+      <td>373 (16)</td>
+      <td>48 (13)</td>
+      <td>130 (21)</td>
+      <td>195 (14)</td>
+    </tr>
+    <tr>
+      <td>DENV-3</td>
+      <td></td>
+      <td>252 (11)</td>
+      <td>80 (22)</td>
+      <td>82 (13)</td>
+      <td>90 (7)</td>
+    </tr>
+    <tr>
+      <td>DENV-4</td>
+      <td></td>
+      <td>451 (19)</td>
+      <td>2 (1)</td>
+      <td>0 (0)</td>
+      <td>449 (33)</td>
+    </tr>
+    <tr>
+      <td>Immune status</td>
+      <td>2340</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Probable primary</td>
+      <td></td>
+      <td>474 (20)</td>
+      <td>134 (37)</td>
+      <td>124 (20)</td>
+      <td>216 (16)</td>
+    </tr>
+    <tr>
+      <td>Probable secondary</td>
+      <td></td>
+      <td>1619 (69)</td>
+      <td>219 (60)</td>
+      <td>464 (75)</td>
+      <td>936 (69)</td>
+    </tr>
+    <tr>
+      <td>Indeterminate</td>
+      <td></td>
+      <td>247 (11)</td>
+      <td>10 (3)</td>
+      <td>34 (5)</td>
+      <td>203 (15)</td>
+    </tr>
+    <tr>
+      <td>Plasma leakage</td>
+      <td>2288</td>
+      <td>353 (15)</td>
+      <td>43 (13)</td>
+      <td>177 (29)</td>
+      <td>133 (10)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td></td>
+      <td>52</td>
+      <td>39</td>
+      <td>13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Illness day of plasma leakage</td>
+      <td>327</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>2 (1)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>2 (2)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td>71 (22)</td>
+      <td>12 (30)</td>
+      <td>35 (23)</td>
+      <td>24 (18)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td>107 (33)</td>
+      <td>12 (30)</td>
+      <td>50 (32)</td>
+      <td>45 (34)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td></td>
+      <td>105 (32)</td>
+      <td>12 (30)</td>
+      <td>49 (32)</td>
+      <td>44 (33)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td>42 (13)</td>
+      <td>4 (10)</td>
+      <td>20 (13)</td>
+      <td>18 (14)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td></td>
+      <td>26</td>
+      <td>3</td>
+      <td>23</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Severe dengue</td>
+      <td>2340</td>
+      <td>65 (3)</td>
+      <td>6 (2)</td>
+      <td>40 (6)</td>
+      <td>19 (1)</td>
+    </tr>
+    <tr>
+      <td>Illness day of severe dengue</td>
+      <td>65</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>2 (3)</td>
+      <td>0 (0)</td>
+      <td>2 (5)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td>13 (20)</td>
+      <td>0 (0)</td>
+      <td>12 (30)</td>
+      <td>1 (5)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td>24 (37)</td>
+      <td>2 (33)</td>
+      <td>16 (40)</td>
+      <td>6 (32)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td></td>
+      <td>20 (31)</td>
+      <td>4 (67)</td>
+      <td>7 (18)</td>
+      <td>9 (47)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td>6 (9)</td>
+      <td>0 (0)</td>
+      <td>3 (8)</td>
+      <td>3 (16)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary statistics are number of patients (%) or median (25th; 75th percentiles).DENV: dengue virus.*N represents the number of patients with available data (i.e., without missing data)._
+
+### Viremia kinetics and the relationship with clinical characteristics
 
 Individual viremia trajectories are shown in Figure 2. Most individuals had a decreasing trend from day 1 or 2 onwards. However, values higher than the baseline value were observed up to day 7 (Appendix 4—figure 3). The decreasing trend was consistent across all combinations of serotype and immune status (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig2-v1.jpg)
 
-**Figure 2.:** A) the one-step PCR cohort and (B) the two-step PCR cohort.The dots represent the measured viremia levels and are connected by lines for each individual patient. The dashed lines indicate the detection limits, which are 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 in the one-step PCR cohort, and 1000 copies/ml in the two-step PCR cohort. Fifty-seven measured values that are lower than 1000 copies/ml in the two-step PCR cohort are considered as below the detection limit. Values below the detection limit are visually represented as 1/10 of the corresponding detection limit (on the original scale). DENV, dengue virus; PCR, polymerase chain reaction.
+**Figure 2.:** The dots represent the measured viremia levels and are connected by lines for each individual patient. The dashed lines indicate the detection limits, which are 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 in the one-step PCR cohort, and 1000 copies/ml in the two-step PCR cohort. Fifty-seven measured values that are lower than 1000 copies/ml in the two-step PCR cohort are considered as below the detection limit. Values below the detection limit are visually represented as 1/10 of the corresponding detection limit (on the original scale). DENV, dengue virus; PCR, polymerase chain reaction.
 
 In Figure 3, we present the fitted values based on the model for viremia for the one-step PCR cohort. The mean viremia trajectory differed by serotype. DENV-1 gave the highest viremia levels, with DENV-2 in secondary infection giving similar levels from day 5 onwards. DENV-2, DENV-3, and DENV-4 had similar viremia levels during the first 3 days. However, viremia decreased rapidly in DENV-4, reaching undetectable levels in the shortest time, while DENV-2 showed the slowest decline. These differences between serotypes were more pronounced in case of probable primary infection (Figure 3A). In terms of immune status, probable primary infection showed higher viremia levels compared to probable secondary infection in DENV-1 from day 3 onwards. The disparity between probable primary and probable secondary infection was less pronounced in the other serotypes (Figure 3B). Mean viremia levels were comparable between females and males (Figure 3C), as well as across age (Figure 3D). The one-step PCR method resulted in longer viremia compared to the two-step PCR (Appendix 5—figure 1). P values for the differences by age, serotype, immune status, and illness day were all <0.0001 (Appendix 5—table 1). The sensitivity analysis using the 10th-root transformation of viremia gave results similar to the main analysis using log-10 viremia (Appendix 5—figure 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig3-v1.jpg)
 
-**Figure 3.:** A) serotype, (B) immune status, (C) sex, and (D) age.The colored lines represent the estimated mean viremia levels, and the colored shaded regions represent the corresponding 95% credible intervals. The horizontal lines represent the detection limits (D1, D2, D3, and D4 denote DENV-1, DENV-2, DENV-3, and DENV-4, respectively). Dashed lines indicate fitted viremia levels that are below the detection limit. Viremia levels are shown for age of 10 years, male sex, serotype DENV-1, probable secondary infection, and using the one-step PCR. DENV, dengue virus; PCR, polymerase chain reaction.
+**Figure 3.:** The colored lines represent the estimated mean viremia levels, and the colored shaded regions represent the corresponding 95% credible intervals. The horizontal lines represent the detection limits (D1, D2, D3, and D4 denote DENV-1, DENV-2, DENV-3, and DENV-4, respectively). Dashed lines indicate fitted viremia levels that are below the detection limit. Viremia levels are shown for age of 10 years, male sex, serotype DENV-1, probable secondary infection, and using the one-step PCR. DENV, dengue virus; PCR, polymerase chain reaction.
 
-## Effect of viremia on subsequent platelet count
+### Effect of viremia on subsequent platelet count
 
 Figure 4 shows the mean platelet counts by viremia levels based on the supermodel for the one-step PCR method. There was minimal impact of viremia on days 1–5 platelet count. However, higher viremia levels gave decreased subsequent platelet counts from day 6 onwards, for all serotypes. The strength of this effect increased with later illness day and was more pronounced in DENV-1 and DENV-2 compared to DENV-3 and DENV-4. All covariates had low p values (Appendix 6—table 1). The effect of viremia on subsequent platelet count remained consistent across subgroups of immune status, sex, and age. In the two-step PCR cohort, the effect of viremia on platelet count was less pronounced compared to the one-step PCR cohort, although the overall trends were similar (Appendix 6—figure 1).
 
@@ -102,13 +379,13 @@ Figure 4 shows the mean platelet counts by viremia levels based on the supermode
 
 **Figure 4.:** The colored lines or dots represent the estimated mean platelet counts. The colored shaded regions and whiskers indicate the corresponding 95% confidence intervals. Each row represents the effect of viremia on a specific day to platelet count from that day to day 10. No fitted trends are made for DENV-4 in LM day 7 since viremia was undetectable in almost all DENV-4 cases from day 7 onwards. The mean platelet counts are shown for age of 10 years, male sex, probable secondary infection, and using the one-step PCR. DENV, dengue virus; LM, landmark; PCR, polymerase chain reaction; U, under the limit of detection.
 
-## Effect of viremia on clinical outcomes
+### Effect of viremia on clinical outcomes
 
 Higher viremia levels increased the risk of severe dengue and plasma leakage for each of the serotypes (Figure 5). The effect of viremia on both endpoints decreased with later landmark day of viremia measurement, particularly for severe dengue (Appendix 7—table 1). However, these trends were not clear in the results obtained from the simple logistic regression models at each landmark time point (Appendix 7—figure 1). This trend remained consistent across subgroups of sex, age, and study (Appendix 7—figure 2). Furthermore, the results were consistent between the analyses with and without imputation (Appendix 7—figure 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig5-v1.jpg)
 
-**Figure 5.:** A) severe dengue and (B) plasma leakage, according to viremia levels – results from the supermodel.The colored lines or dots represent the probability of the endpoints. The colored shaded regions and whiskers indicate the corresponding 95% confidence intervals. Each column represents the effect of viremia on a specific day. No fitted trends are made for DENV-4 in LM day 7 since viremia was undetectable in almost all DENV-4 cases from day 7 onwards. Note that due to the limited number of severe dengue in primary infections (only 1 case in DENV-1) and plasma leakage in primary DENV-4 (see Appendix 4—table 1), the estimated probability of having these outcomes is nearly zero across all viremia levels within these subgroups. The probabilities are shown for age of 10 years, male sex, probable secondary infection, and from Study C. DENV, dengue virus, LM, landmark; PCR, polymerase chain reaction; U, under the limit of detection.
+**Figure 5.:** The colored lines or dots represent the probability of the endpoints. The colored shaded regions and whiskers indicate the corresponding 95% confidence intervals. Each column represents the effect of viremia on a specific day. No fitted trends are made for DENV-4 in LM day 7 since viremia was undetectable in almost all DENV-4 cases from day 7 onwards. Note that due to the limited number of severe dengue in primary infections (only 1 case in DENV-1) and plasma leakage in primary DENV-4 (see Appendix 4—table 1), the estimated probability of having these outcomes is nearly zero across all viremia levels within these subgroups. The probabilities are shown for age of 10 years, male sex, probable secondary infection, and from Study C. DENV, dengue virus, LM, landmark; PCR, polymerase chain reaction; U, under the limit of detection.
 
 The supermodel revealed that older individuals had a relatively lower risk of developing severe dengue, but the trend was not significant. Males exhibited a slightly higher risk of severe dengue compared to females. The effect of serotype on the two endpoints was dependent on immune status. Individuals with probable secondary infection had a higher risk of experiencing both endpoints compared to those with probable primary infection (Appendix 7—figure 4).
 
@@ -116,7 +393,7 @@ From the model of viremia kinetics with a linear trend of illness day, the indiv
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig6-v1.jpg)
 
-**Figure 6.:** A) severe dengue and (B) plasma leakage, according to the rate of decline in viremia.The colored lines represent the probability of the endpoints. The colored shaded regions indicate the corresponding 95% confidence intervals.
+**Figure 6.:** The colored lines represent the probability of the endpoints. The colored shaded regions indicate the corresponding 95% confidence intervals.
 
 ## Discussion
 

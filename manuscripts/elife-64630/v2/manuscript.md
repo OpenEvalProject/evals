@@ -46,15 +46,55 @@ Genetic tags for electron microscopy (EM) have made protein ultrastructural loca
 
 In this study, we describe the use of a method for converting the DAB reaction produced by a cytoplasmically exposed APEX tag into a particulate marker. This method produces an easily detectable gold particle at the site of the fusion protein with high resolution and specificity, allowing simple correlative light and electron microscopy (CLEM), use in 3D EM techniques, and simple quantitation.
 
-## Design
+### Design
 
 In order to convert the DAB reaction product to a particulate marker, we tested a number of protocols with a particular focus on silver/gold (Ag/Au) enhancement methods originally developed for amplification of the DAB signal obtained with peroxidase-labelled antibodies on histological sections. The criteria for enhancement of the APEX-DAB reaction product for EM were: (1) production of a uniformly sized particle with high specificity, (2) high sensitivity with low background and no self-nucleation, (3) high resolution, and (4) ease of use, that is, using conventional fixation and processing schemes, readily available laboratory reagents, and in ambient light conditions rather than a darkroom. The optimal protocol which satisfied these criteria was a modified Ag/Au enhancement method (Sedmak et al., 2009) as shown schematically in Figure 1A, similar to that used to visualize luminal APEX (Mavlyutov et al., 2017). After fixation and a conventional incubation with DAB/H2O2 to reveal the oxidized DAB reaction product, cells were incubated sequentially with a silver nitrate solution (containing hexamethylenetetramine and disodium tetraborate) and then with gold chloride. This resulted in local production of stabilized gold particles in the range of 10–15 nm in diameter as the argyrophilic oxidized DAB reaction product converts the metal salts to colloidal particles at the site of the fusion protein. Gum arabic was included to provide consistent uniform nucleation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the APEX-Gold method. Cells were transfected with Cavin4-APEX2 (B,D,E) (control light microscopy experiments are described in Figure 1—figure supplement 5) or LifeAct-APEX2 (C,F), fixed, treated with diaminobenzidine (DAB), and then incubated with Ag/Au reagents in the presence of gum arabic. (B,D,E) Low (B) and higher (D,E, inset in B) magnification views of caveolae labelling. (C) Labelled actin filaments. (F) Optical slice projection through tomogram of LifeAct-APEX2 expressing cells. APEX-Gold particulate reaction product can be observed tightly associated with and throughout the actin bundles in three dimensions. Note the uniform gold label, the lack of background, and high signal to noise. PM, plasma membrane; CCP, clathrin-coated pit. Bars, B, 2 µm (inset 500 nm); C, 1 µm; D, 500 nm; E, 1 µm; F, 500 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Low and higher magnification views respectively of Cavin4-APEX2 labelling using the APEX-Gold method without gum arabic. Arrows, caveolae labelled with gold. (C,D) Low and higher magnification examples respectively of labelling on actin filaments with LifeAct-APEX2 with APEX-Gold enhancement. N, nucleus; PM, plasma membrane. Bars, A, 1 µm; B, 1 µm (inset, 200 nm); C, 10 µm; D, 2 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) An example of a Cavin4-APEX2 transfected cell immediately adjacent to a untransfected cell (UT, highlighted by dashed line). Sections were poststained with uranyl acetate and Reynold’s lead citrate. Note the absence of particulate reaction product within the untransfected cell. (B) Micrograph of Cavin4-APEX2 labelling enhanced with APEX-Gold. Linescans (FIJI) across caveolae were used to measure the distance from centre of gold particles to the caveolar membrane. (C) The distribution of particle label resolution. (D) A1AR-APEX2 stably expressing CHO cells, processed with APEX-Gold enhancement without gum arabic showing labelling at specific areas of plasma membrane. UT, untransfected cell. Bars, A, 2 µm; D, 500 nm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A,B) Cryosectioned cells showing LifeAct-APEX2 labelling. (C,C’) Cryosectioned cells showing Cavin4-APEX2 labelling. (D–E) Scanning electron microscopic (SEM) analysis of sections of BHK cells expressing Cavin4-APEX2 (Raith eLine Plus). UT, untransfected; N, nucleus; PM, plasma membrane. Bars, A, 1 µm; B, 500 nm; C, 2 µm; C’, 1 µm; D, 50 µm; D’, 10 µm; E, 100 nm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Serial micrographs of Cavin4-APEX2 labelling obtained using serial block-face imaging scanning electron microscope (SEM). Arrows indicate areas of APEX-Gold labelling. (B–B’) Focussed ion beam (FIB) analysis of same experiment followed by supervised segmentation. (C) Actin filaments labelled with LifeAct-APEX2 followed by APEX-Gold enhancement. (C’) Segmentation of the diaminobenzidine (DAB) product and the gold labelling using FIJI/Weka automated segmentation of the image shown in C. (D,E) Fast-frozen and freeze-substituted cells embedded in lowicryl showing Cavin4-APEX2 labelling. Bars, A, 5 µm; B,B’, 200 nm; C,C’, 1 µm; D, 1 µm; E, 500 nm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Untransfected BHK cell treated with diaminobenzidine (DAB), Ag/Au, and gum arabic. (B) BHK cell transfected with Cavin4-APEX2 treated with DAB. (C) BHK cell transfected with Cavin4-APEX2 treated with DAB, Ag, and gum arabic. (D) BHK cell transfected with Cavin4-APEX2 treated with DAB and Ag/Au. (E) BHK cell transfected with Cavin4-APEX2 treated with DAB, Ag/Au, and gum arabic. Bars, A-E, 50 µm.
 
 ## Results
 
 We applied this localization method to Cavin4-APEX2 which is associated with cell surface caveolae (Figure 1B,D,E and Figure 1—figure supplement 1A,B), to LifeAct-APEX2 that allows ultrastructural detection of actin filaments (Figure 1C and Figure 1—figure supplement 1C,D), and to A1AR-APEX2, a G-protein-coupled receptor (Figure 1—figure supplement 2D). The APEX-Gold method satisfies the criteria of specificity, low background, sensitivity, resolution, and ease of use. Untransfected cells show negligible Ag/Au particles (Figure 1—figure supplement 2A) and labelling is tightly restricted to caveolae with an average of 18.4 nm from the caveolar membrane to the centre of the particulate reaction product when imaged using transmission EM (Figure 1—figure supplement 2B,C). The experimental process is very simple and robust; all incubations are done in the light and require no specialist chemicals or equipment. The method has been used successfully in over 20 different biological replicate experiments using the Cavin4-APEX2 and LifeAct-APEX2 systems. Critically, it results in an unambiguous particulate reaction product that is clearly definable without expert interpretation. Sections were generally viewed without further on-grid staining to maximize detection of gold particles. However, visualization of the electron-dense APEX-Gold particles is readily compatible with on-grid staining (Figure 1—figure supplement 2A). We were also able to visualize APEX-Gold labelling with Tokuyasu-cryosectioned samples (Figure 1—figure supplement 3A–C).
 
 The clarity and density of the APEX-Gold enhanced particulate signal makes the method compatible with 3D EM methods including 3D electron tomography (Figure 1F), array tomography scanning EM (SEM) (Figure 1—figure supplement 3D,E), focussed ion beam (FIB) EM (Figure 1—figure supplement 4B), and serial block-face SEM (Figure 1—figure supplement 4A). The gold particles can also be resolved by supervised and automated segmentation (Weka Image J/FIJI plug-in, Figure 1—figure supplement 4B’,C’). We also tested the compatibility of the method with freeze substitution/low temperature embedding (Figure 1—figure supplement 4D,E). This makes APEX-Gold potentially compatible with double labelling, with the APEX-fusion protein being expressed endogenously in the cells and then sections labelled for other proteins of interest. The APEX-Gold method is also simple to use in CLEM approaches (Figure 2C–F) and can be checked by dot blot in parallel to the EM experiment to ensure the protocol is standardized (Figure 2—figure supplement 1B; see Materials and methods for a standard protocol).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic explaining the cell-free caveolae-APEX2-Gold system. (B) A431 cells were incubated with in vitro synthesized CAV1-APEX2 cell-free caveolae for 5 min at 37°C before fixation and processing for APEX-Gold detection. Note the Ag/Au labelling of the surface-associated cell-free caveolae circled in red and low background label within cell. (C) Light microscopic detection of tropomyosin 3.1 (Tpm3.1)-APEX2 after APEX-Gold DAB/Ag/Au detection. (D) Low magnification electron microscopy (EM) showing a basal section of the same cell. (D’,F) Higher magnification views of gold labelled stress fibres from boxed region. (D’,E) Gold labelling follows individual actin filaments from boxed region. Bars, B, 2 µm (inset 200 nm); C,D, 50 µm; D’, 5 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence correlation spectroscopic (FCS) analysis of cell-free synthesized GFP-CAV1-APEX2. (B) Dot blots comparing two concentrations of the indicated in vitro synthesized proteins (1; GFP-CAV1, 2; CAV1-APEX2, 3; GFP-CAV1-APEX2) or commercial horseradish peroxidase (4; HRP) treated with diaminobenzidine (DAB) or DAB and Ag/Au. (C) Expression of the indicated constructs followed by in-gel fluorescence detection using the GFP fluorescence or with fluorescently labelled lysine (BODIPY-lysine). (D) High magnification example micrograph of a single in vitro synthesized CAV1-APEX2 cell-free vesicle with APEX-Gold processing. (D’) Ag/Au particles circled in red. Bars, D,D’, 100 nm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Genomic organization of the mouse line expressing tropomyosin 3.1 (Tpm3.1) C-terminally tagged with APEX2 (Meiring et al., 2019). (B) Western blot detection and (C) quantitation of endogenous and APEX2-tagged Tpm3.1. (D,D’) Tpm3.1-APEX2 labelling enhanced with APEX-Gold, also analysed with linescans to measure distance from particles centre to the actin bundle centre of mass. (E) Representative output from linescan showing edges of bundle highlighted in orange and the two peaks within indicative of APEX-Gold. (F) The distribution of Tpm3.1-APEX2 resolution, and half the average width of bundles highlighted in orange. Bars, D, 50 nm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64630/elife-64630-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Arrows, particle labelling following individual actin filaments. Bars, A, 2 µm; B, 1 µm; C-I, 2 µm.
 
 Next, we investigated whether we could develop a system to act as an internal control for the APEX-Gold method and to allow quantitative comparison with cellular APEX-tagged proteins of interest. We made use of the ability of mammalian caveolin-1 (CAV1), the major structural protein of caveolae, to generate nanovesicles with a defined number of caveolin proteins when expressed in a cell-free system (Jung et al., 2018) (see scheme in Figure 2A). CAV1-APEX2 was expressed in a cell-free Leishmania lysate (GFP-tagged and -untagged; Figure 2—figure supplement 1C) and the GFP-tagged protein characterized by fluorescence correlation spectroscopy (FCS) (Figure 2—figure supplement 1A). The resulting vesicles contained a quantum of fluorescence consistent with approximately 110 GFP-CAV1-APEX2 molecules per vesicle. We then compared the enzymatic activity of the cell-free synthesized GFP-CAV1-APEX-fusion protein with commercial horseradish peroxidase using dot blots. The cell-free synthesized APEX2 fusion protein had higher activity per µg of protein than the commercial HRP preparation (Figure 2—figure supplement 1B). Enhancement of the signal using the APEX-Gold protocol caused a slight increase in sensitivity of detection and a colour change in the dot blot providing a simple assay to check for successful enhancement.
 
@@ -72,7 +112,7 @@ We were able to use the APEX-Gold method to localize low levels of APEX2-tagged 
 
 APEX-Gold represents a significant advance in protein distribution analysis by EM. Compared with current APEX methods which rely on subjective interpretation of a diffuse DAB reaction product, the improved signal-to-noise ratio and a particulate, quantitative readout indicate that this method should become the gold standard for localization of genetically tagged proteins in EM.
 
-## Methodological considerations
+### Methodological considerations
 
 The method used here, which we have optimized for APEX localization, is based on well-established methods for histological and EM visualization of the insoluble DAB product of peroxidase (Adams, 1981; Danscher and Nörgaard, 1983; Dobó et al., 2011; Newman and Jasani, 1998; Pohl and Stierhof, 1998), combined with the methods of silver reduction and gold toning developed for photography in the 19th century (for review, see Ellis, 1975). These methods have been developed and used in many laboratories to allow enhancement of the DAB reaction for light microscopic applications, for converting the DAB signal to an easily detected particulate marker to allow discrimination from any cellular structures, and to increase the sensitivity of DAB detection (Dobó et al., 2011; Newman et al., 1983; Sedmak et al., 2009). The three principle steps involve: (1) production of the polymerized DAB product, (2) the reduction of silver ions to submicroscopic metallic silver by the argyrophilic DAB polymer, and (3) substitution of metallic silver by gold (gold toning), through the simple reaction Ag + Au+→ Ag++ Au to produce the more inert gold particle that can resist subsequent osmium treatment. A further refinement is the use of gum arabic which was introduced for gold enhancement by Danscher, 1981; Danscher and Nörgaard, 1983 to allow precise control of Ag/Au nucleation and more uniform particle generation.
 
@@ -80,35 +120,640 @@ While the benefits of the APEX-Gold method are clear, this approach still comes 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Leishmania tarentolae)</td>
+      <td>LEXSY host P10</td>
+      <td>Jena Biosciences</td>
+      <td>LT-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tpm3.1-APEX2 ± heterozygous</td>
+      <td>PMID:31331962</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mesocricetus auratus)</td>
+      <td>BHK-21</td>
+      <td>ATCC</td>
+      <td>CCL-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A-431</td>
+      <td>ATCC</td>
+      <td>CRL-1555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>Flp-In-CHO</td>
+      <td>Invitrogen</td>
+      <td>R75807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>LifeAct-APEX2</td>
+      <td>This study</td>
+      <td>RRID:170523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Cavin4-APEX</td>
+      <td>This study</td>
+      <td>RRID:170524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pCSDEST2</td>
+      <td>PMID:17948311</td>
+      <td>RRID:22424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>p3E-APEX2</td>
+      <td>PMID:29621251</td>
+      <td>RRID:108894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>p3E-APEX2-P2A-mKate2</td>
+      <td>PMID:26585296</td>
+      <td>RRID:61671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pME-CAV1</td>
+      <td>This study</td>
+      <td>RRID:170527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pME-LifeAct</td>
+      <td>PMID:32709891</td>
+      <td>RRID:109545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pME-Cavin4</td>
+      <td>This study</td>
+      <td>RRID:170528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>A1AR-APEX2</td>
+      <td>This study</td>
+      <td>RRID:170529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tropomyosinthree mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>MABT1335</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha tubulin rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Ab52866</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-CAV1-APEX (cell-free)</td>
+      <td>This study</td>
+      <td>RRID:170525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAV1-APEX (cell-free)</td>
+      <td>This study</td>
+      <td>RRID:170526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCellFree_G03</td>
+      <td>PMID:25529348</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCellFree_G03</td>
+      <td>PMID:25529348</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Antisplice leader oligonucleotide</td>
+      <td>PMID:19648909</td>
+      <td></td>
+      <td>CAATAAAGTACAGAAACTGATACTTATATAGCGTT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FluoroTect GreenLys in vitro Translation Labeling System</td>
+      <td>Promega</td>
+      <td>L5001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>LT07-418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>25% EM grade glutaraldehyde</td>
+      <td>Electron Microscopy Services</td>
+      <td>16220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>16% EM grade paraformaldehyde</td>
+      <td>Electron Microscopy Services</td>
+      <td>15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>Electron Microscopy Services</td>
+      <td>22400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lead citrate</td>
+      <td>ProSciTech</td>
+      <td>C073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAB</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrogen peroxide solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>H1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide</td>
+      <td>ProSciTech</td>
+      <td>C010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LX 112 Embedding Kit</td>
+      <td>Ladd Research Industries</td>
+      <td>21210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horseradish peroxidase – 25 mg Type VI-A</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Silver nitrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>209139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gum arabic</td>
+      <td>Electron Microscopy Services</td>
+      <td>25574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gold chloride</td>
+      <td>Electron Microscopy Services</td>
+      <td>16583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexamethylenetetramine</td>
+      <td>Sigma-Aldrich</td>
+      <td>398160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium tetraborate decahydrate (borax)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B9876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium thiosulphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>72049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bactotryptone</td>
+      <td>Beckton Dickinson</td>
+      <td>211699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemin chloride</td>
+      <td>MP Biomedicals</td>
+      <td>0219402505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Chem-Impex</td>
+      <td>00015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Chem-Impex</td>
+      <td>00348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spermidine</td>
+      <td>Sigma-Aldrich</td>
+      <td>85558–5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Sigma-Aldrich</td>
+      <td>D0632-10G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cr phosphate</td>
+      <td>Chem-Impex</td>
+      <td>00072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG 3350</td>
+      <td>Hampton Research</td>
+      <td>HR2-527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prot Inhib C</td>
+      <td>Roche Diagnostics</td>
+      <td>11 873 580 001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTP</td>
+      <td>Chem-Impex</td>
+      <td>00095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UTP</td>
+      <td>Chem-Impex</td>
+      <td>00311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T7 polymerase</td>
+      <td>In-house purification</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cr phosphokinase</td>
+      <td>Sigma-Aldrich</td>
+      <td>C3755-35KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alanine</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Arginine</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Asparagine</td>
+      <td>Sigma-Aldrich</td>
+      <td>A0884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aspartic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>49449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>G3126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Sigma-Aldrich</td>
+      <td>G7126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histidine</td>
+      <td>Sigma-Aldrich</td>
+      <td>H8000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoleucine</td>
+      <td>Sigma-Aldrich</td>
+      <td>I2752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leucine</td>
+      <td>Sigma-Aldrich</td>
+      <td>L8912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>L5626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methionine</td>
+      <td>Sigma-Aldrich</td>
+      <td>M9625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylalanine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P2126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proline</td>
+      <td>Sigma-Aldrich</td>
+      <td>P0380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Serine</td>
+      <td>Sigma-Aldrich</td>
+      <td>S4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Threonine</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tryptophan</td>
+      <td>Sigma-Aldrich</td>
+      <td>T0524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tyrosine</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valine</td>
+      <td>Sigma-Aldrich</td>
+      <td>V0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Life Technologies</td>
+      <td>15070–063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>P1190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium acetate</td>
+      <td>Amresco</td>
+      <td>0131–1 KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LR clonase II Plus</td>
+      <td>Invitrogen</td>
+      <td>12538120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin-B</td>
+      <td>Thermo Fisher/Invitrogen</td>
+      <td>10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Life Technologies</td>
+      <td>11995065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Life Technologies</td>
+      <td>25030081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>F9423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI Weka Plugin</td>
+      <td>ImageJ developers</td>
+      <td></td>
+      <td>https://imagej.net/Trainable_Segmentation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTEM</td>
+      <td>Olympus</td>
+      <td></td>
+      <td>https://www.emsis.eu/home/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AttoBright: LabView and GUI for data acquisition, Matlab code and GUI for data analysis</td>
+      <td>PMID:31827096</td>
+      <td></td>
+      <td>https://gambinsiereckilab.github.io/AttoBright/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAPs</td>
+      <td>Thermo Fisher</td>
+      <td>https://www.fei.com/software/maps/#gsc.tab=0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 BHK (ATCC), A431 (ATCC), MEF (as described in Meiring et al., 2019), and Flp-In-CHO (Invitrogen) cells were maintained in Dulbecco’s modified eagle medium (DMEM), supplemented with L-glutamine, and 10% fetal bovine serum at 37°C with 5% CO2. CHO cells stably expressing the human adenosine A1 G-protein-coupled receptor (A1AR) with C-terminally labelled APEX2 were generated as described previously (Baltos et al., 2016). Expression was maintained by addition of 500 μg/mL hygromycin-B to culture medium. All cells were subject to quarterly mycoplasma testing using the MycoAlert (Lonza) mycoplasma detection kit.
 
-## Plasmid construction
+### Plasmid construction
 
 CAV1-APEX2, CAV1-EGFP-APEX2, Cavin4-APEX2-P2A-mKate2, and LifeAct-APEX2-P2A-mKate2 were produced using the multisite gateway system (Invitrogen) by recombination of pME-Cavin4, pME-CAV1, pME-LifeAct, p3E-APEX2-P2A-mKate2, p3E-APEX2, and pCSDEST2. Full details and unique repository identifiers are given in key resources table. A1AR-APEX2 was produced by gateway cloning, whereby human A1AR in pENTR/D/TOPO vector was recombined into pEF5/FRT/V5-DEST-APEX2. The resultant expression vector encoded the human A1AR with C-terminally tagged APEX2, adjoined by a glycine-serine-rich linker. GFP-CAV1 was produced by cloning into pCellFree_G03 (Gagoski et al., 2015) from human ORFeome library described in Škalamera et al., 2011.
 
-## Transfection
+### Transfection
 
 Cells were seeded into 35 mm tissue culture dishes ON, then transfected with Lipofectamine 3000 as per manufacturer’s instructions. Cells were left for 24 hr, then fixed and processed for EM 24 hr later.
 
-## EM eLine
+### EM eLine
 
 SEM array tomography was carried out in an Electron Beam Lithography system, the Raith eLINE PLUS. The system is equipped with the dual detector (Inlens, SE) and a laser interferometric stage. Prior to the image acquisition, the scan field was calibrated at 25,000× with the laser stage. The displayed image was captured at 2 kV with 30 µm aperture (beam current of 30 pA), using the SE detector, at a working distance of 2.2 mm. The use of laser interferometric stages allows near-perfect stitching of scan fields by overlapping just five pixels at the edge.
 
-## Focussed ion beam
+### Focussed ion beam
 
 FIB-SEM tomography of the sample was carried out on a FEI Scios DualBeam FIB-SEM system equipped with a 30 kV Ga + column and a Pt gas injection system (FEI). The sample was tilted to 52° so that its top surface was aligned parallel to the focal plane of the FIB. A protective layer of Pt was deposited onto the top surface directly above the volume of interest. A trench was milled at one end of the volume of interest using a 7 nA beam current. The purpose of the trench was to provide the SEM with an unobstructed view of the exposed cross-section and to allow for the escape of sputtered material. Fiducial marks were milled into both the top surface of the sample and the sidewall of the trench. The surface of the exposed face was planarized by milling using successively lower ion beam currents, down to 100 pA. The Auto Slice and View automation package (FEI) was used to sequentially mill away 10-nm-thick segments of material followed by SEM imaging of each newly exposed surface using the In-lens Trinity ‘T1’ BSE detector. An electron beam acceleration voltage of 2 kV and current of 50 pA was used. The stage remained stationary during the entire sequence so that the surface of each cross-section is tilted 38° from the SEM column and in-column detector. The respective fiducial marks were detected by the automation package prior to each milling and imaging step and used to correct for image drift of the electron and ion beam, respectively.
 
-## Tomography
+### Tomography
 
 The 200-nm-thick sections were cut on a Leica UC6 ultramicrotome. Grids were assembled into an Autogrid (Thermo Fisher) and loaded onto a 200 kV Thermo Fisher Talos Arctica fitted with a Falcon 3EC (Thermo Fisher) camera operated in linear mode and at room temperature (RT). Bidirectional dual axis tilt series were acquired at 1° increments from −60° to +60° under the control of Tomography software (Thermo Fisher). Tilt series were reconstructed using weighted back-projection with IMOD.
 
-## Serial block-face EM
+### Serial block-face EM
 
 Images were additionally collected using a VolumeScope serial block-face EM (SBEM; Thermo Fisher, Waltham, MA) equipped with a low-vac backscatter detector (VS-DBS; Thermo Fisher). Plastic embedded samples were scanned in low vacuum (10 Pa) with a landing beam energy of 2.0 kV and a current of 0.1 nA. Images were acquired using MAPS software (Thermo Fisher, Waltham, MA) at a pixel scale of 5.9–7 nm and pixel dwell of 3 µs.
 
-## DAB treatment and APEX-Gold enhancement
+### DAB treatment and APEX-Gold enhancement
 
 DAB treatment and APEX-Gold enhancement were performed using a modification of the method of Sedmak et al., originally developed to enhance immunoperoxidase staining of tissues (Sedmak et al., 2009). Cells grown in 3 cm dishes were fixed with glutaraldehyde (2.5%) in PBS, then washed in PBS and then in cacodylate buffer, pH 7.35. Fixed cells were incubated in freshly prepared 0.05% DAB solution in cacodylate buffer for 10 min at RT followed by incubation with 0.05% DAB solution containing 0.01% H2O2 for 30 min at RT. The cells were then washed with cacodylate buffer and further fixed in 2.5% GA in cacodylate buffer for 1 hr at 4°C to stabilize the DAB reaction product. After washing with cacodylate buffer, cells were immediately processed for APEX-Gold enhancement.
 
@@ -116,27 +761,27 @@ Cells in dishes were washed in triple distilled water (H2O) for 4 × 15 min to r
 
 Cells were then postfixed with 1% osmium for 2 min, then serial dehydrated with increasing percentages of ethanol. Cells then underwent serial infiltration with LX112 resin in a Pelco Biowave, then incubated at 60°C for 24 hr. Ultrathin sections were attained on a ultramicrotome (UC6, Leica) and imaged using a JEOL1011 transmission EM at 80 kV. Where indicated sections were poststained with 2% aqueous uranyl acetate and Reynold’s lead citrate.
 
-## Freeze substitution
+### Freeze substitution
 
 Cells grown on Thermanox coverslips were fixed with 4% PFA and 0.1% GA, then DAB-treated and underwent the APEX-Gold enhancement described earlier. Cells were then infiltrated with 2.1 M sucrose at RT for 1 hr, fast-frozen in liquid nitrogen, and freeze-substituted in 0.2% uranyl acetate in methanol, then washed in methanol and infiltrated with Lowicryl (HM20) resin before polymerizing at −50°C.
 
-## Cryo-sectioning
+### Cryo-sectioning
 
 Cells were fixed in 4% PFA and 0.1% glutaraldehyde and washed in PBS three times. Cells were scraped gently from the petri dish surface and pelleted at 8000 rpm in warm (37°C) 10% gelatine/PBS and then allowed to set on ice. The gelatine-embedded pellet was removed from the tube, then cut into small cubes and infused with 2.1 M sucrose at RT (three changes, 5 min each), mounted on aluminium stubs plunged into liquid nitrogen and then sectioned at −120°C on a Leica Ultra cut UC6 ultramicrotome. Ribbons of sections with a thickness of approximately 65–90 nm were placed on to 100 mesh formvar-coated Cu grids with a thin layer of carbon evaporated onto the surface. Grids complete with mounted sections were contrasted using a solution of 0.3% uranyl acetate and methyl cellulose on ice for 8 min. Grids were then picked up in wire loops and the excess methyl cellulose solution removed using filter paper.
 
-## Light microscopy
+### Light microscopy
 
 Brightfield microscopy was carried out on a Zeiss 880 confocal microscope using the TPMT channel and 40× water immersion objective.
 
-## Dot blots
+### Dot blots
 
 Horseradish peroxidase or in vitro generated CAV1-GFP or CAV1-GFP-APEX2 were dotted onto nitrocellulose in a volume of 10 μL to give the indicated protein amounts. After drying, nitrocellulose was incubated with a blocking solution of 5% BSA. After washing with PBS, the nitrocellulose was incubated with the DAB solutions, before treatment with or without the APEX-Gold enhancement solutions.
 
-## Western blotting of Tpm3.1 APEX2 cells
+### Western blotting of Tpm3.1 APEX2 cells
 
 Triplicates of Tpm3.1-APEX2 +/− and −/− PMEFs were grown on 6 cm dishes until full confluency was reached. Cell lysates were harvested in 4°C RIPA buffer with protease inhibitor (cOmplete, EDTAfree Protease Inhibitor Cocktail, Merck) and homogenized by sonication for 30 s. Protein concentration was measured with Precision Red Assay (Cytoskeleton). Laemmli sample buffer (Biorad) was added 1:4 (v/v) and lysates were boiled at 95°C for 10 min. Samples were run at 100 V for 90 min on 10% polyacrylamide SDS-PAGE gels in running buffer. Gels were semi-dry-transferred in transfer buffer to PVDF membranes preactivated with 100% methanol. Membranes were blocked in 5% skim milk in TBS for 1 hr and probed with mouse γ/9d 2G10.2 (1:1000, MERCK MABT1335), rabbit anti-mouse IgG (1:3000, Abcam ab97046), rabbit α-tubulin (1:3000) (Abcam ab52866) and goat anti-rabbit IgG (1:5000) (Biorad 170-6515) antibodies sequentially for 1 hr. Luminata Crescendo Western HRP substrate (Merk) was used for imaging on a Chemicoc MP imaging system (Biorad). Band densitometry was quantified (ImageJ) and normalized to α-tubulin control.
 
-## Cell-free expression and particle characterization, cell incubation
+### Cell-free expression and particle characterization, cell incubation
 
 Leishmania tarentolae cell-free lysate was produced, and cell-free protein expression was performed as described by Hunter et al., 2018. Briefly, Leishmania tarentolae Parrot strain was obtained as LEXSY host P10 from Jena Bioscience GmbH, Jena, Germany, and cultured in TBGG medium containing 0.2% v/v penicillin/streptomycin (Life Technologies) and 0.05% w/v hemin (MP Biomedical). Cells were harvested by centrifugation at 2500 × g, washed twice by resuspension in 45 mM HEPES, pH 7.6, containing 250 mM sucrose, 100 mM potassium acetate, and 3 mM magnesium acetate and resuspended to 0.25 g cells/g suspension. Cells were placed in a cell disruption vessel (Parr Instruments, Moline, IL) and incubated under 7000 KPa nitrogen for 45 min, then lysed by rapid release of pressure. The lysate was clarified by sequential centrifugation at 10,000 × g and 30,000 × g and anti-splice leader oligonucleotide was added to 10 µM. The lysate was then desalted into 45 mM HEPES, pH 7.6, containing, 100 mM potassium acetate and 3 mM magnesium acetate and snap-frozen until required.
 
@@ -144,7 +789,7 @@ Cell-free lysate was supplemented with a feeding solution containing nucleotides
 
 Cell-free reaction product was diluted (1:1) with DMEM and incubated with cells for 5 min at 37°C in 5% CO2. Cells were then fixed and processed for DAB treatment and APEX-Gold enhancement as stated above. Thin sections were imaged at a magnification of 120,000×. APEX-Gold positive vesicles of 50–100 nm were selected for quantitation of gold particles per vesicle (see, e.g., Figure 2—figure supplement 1D').
 
-## FCS method
+### FCS method
 
 Single-molecule fluorescence counting methods were used to compare the oligomeric state of the expressed CAV1-GFP-APEX2 construct with the known state of GFP-labelled CAV1 (GFP-CAV1). Comparison of the brightness values obtained for the two constructs suggests that vesicles produced using the CAV1-GFP-APEX2 construct comprised approximately 110 GFP-CAV1-APEX2 molecules.
 

@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Institute of Parasitology, Faculty of Agricultural and Environmental Sciences, McGill University Montreal Canada
+1. Institute of Parasitology, Faculty of Agricultural and Environmental Sciences, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 2. Mark Wainberg Center for Viral Diseases, Lady Davis Institute Montreal Canada
 
 † Corresponding author
@@ -31,35 +31,87 @@ We attempted to address this link by analyzing the nano-organization of NiV-F at
 
 ## Results
 
-## NiV-F forms regular-sized clusters that are not affected by the surface expression level
+### NiV-F forms regular-sized clusters that are not affected by the surface expression level
 
 We recently published that NiV-F formed distinctive nanoclusters on the plasma membrane regardless of the presence of NiV-G or ephrinB2 (Liu et al., 2018). To investigate the determinants of the NiV-F nano-organization, we used a custom-built SMLM to probe the NiV-F at various conditions at a 10-nm precision (Figure 1—figure supplement 1A). SMLM generates super-resolution images by localizing spatially far-apart fluorophores with nanometer precision (Coelho et al., 2020). PK13 cells have a flat morphology that is suitable for SMLM imaging. PK13 cells express little endogenous ephrinB2 and -B3 receptors for NiV and thus can eliminate any potential receptor-dependent clustering. Cell surface NiV-F was detected using an FLAG tag in its extracellular domain (Liu et al., 2018). The FLAG tags were employed to detect NiV-F because of the availability of high affinity and specificity anti-FLAG antibodies for a high labeling density, which is vital for the reconstruction accuracy of SMLM images (Dempsey et al., 2011). To rule out the effect of the FLAG tag on NiV-F clustering, we compared NiV-F clusters formed by NiV-F-FLAG to that of a NiV-F-HA construct. Both HA and FLAG tags were inserted after amino acid residue 104, right before the fusion peptide (Figure 1—figure supplement 1B). Visual examination of the SMLM images reveals that NiV-F-FLAG and NiV-F-HA form similar clusters (Figure 1—figure supplement 1C). The clustering tendency, indicated by Hopkins’ index, is comparable between NiV-F-HA and NiV-F-FLAG (Figure 1—figure supplement 1D), suggesting that NiV-F clustering is not affected by specific epitope tags. To test whether the FLAG tag affects the function of NiV-F, we pseudotyped NiV-G-HA and NiV-F-FLAG or untagged NiV-F on the recombinant vesicular stomatitis virus (VSV) with glycoprotein (G) replaced by a Renilla luciferase gene (VSV-ΔG-rluc) and determined the viral entry levels (VSV/NiV pseudoviruses). The virus entry induced by NiV-F-FLAG is comparable to that of untagged NiV-F (Figure 1—figure supplement 1E), verifying that the FLAG tag has minimal effect on the membrane fusion activity of NiV-F.
 
 Next, we investigated whether the nano-organization of NiV-F depends on the cell surface expression (CSE) levels. The total CSE level of NiV-F in a selected cell was measured before the cell was subjected to SMLM imaging. The SMLM images show that NiV-F forms similar nanoclusters in both high- and low-expression cells (Figure 1A, B). Our data show that the clustering tendency of NiV-F is independent of its CSE in individual cells (Figure 1C). To gain a quantitative understanding of NiV-F nanoscale organization, we used a cluster identification method DBSCAN (Density-Based Spatial Clustering of Applications with Noise) that links the closely situated localizations in a propagative manner. We created cluster and density maps using Clus-DoC for representative high- and low-expression cells (Figure 1D, E; Pageon et al., 2016). Our data show that the estimated diameter of the NiV-F clusters ranges from 20 to 34 nm, with a peak at 24 nm (Figure 1F). Nonetheless, the precise values of the cluster diameter are indicative rather than definite in SMLM as it could be affected by the labeling complex and the blinking property of the fluorophore. The distribution of the cluster diameter shows that ~60% of NiV-F clusters have similar sizes, indicating that NiV-F clusters maintain a quite uniform appearance. Interestingly, we noticed that the size of the clusters (Figure 1G) and localization density (Figure 1H) in clusters were similar between high- and low-expression cells, suggesting that the NiV-F organization in nanoclusters is not affected by the expression levels. Moreover, our data show that the high-expression cells have more clusters than the low-expression cells (Figure 1I). These results suggest that changes in CSE may affect the number of NiV-F clusters on the plasma membrane (Figure 1I), but not the clustering tendency of NiV-F (Figure 1C), the size of the clusters (Figure 1G), or the localization density within clusters (Figure 1H). These data imply that the distribution and nano-organization of NiV-F are tightly regulated and may be important for membrane fusion activation. We also analyzed NiV-F distribution in different cell lines. HeLa cells express ephrinB2 and -B3, and thus are NiV permissive cells. The overall NiV-F nano-organization seems quite similar on PK13 and HeLa cells, agreeing with our previous results (Figure 1—figure supplement 2A; Liu et al., 2018). The Hopkins’ indices are also similar for NiV-F on PK13 and HeLa cells (Figure 1—figure supplement 2B). The DBSCAN analysis shows that the percentage localizations in clusters (Figure 1—figure supplement 2C), the relative density defined as the ratio of the localization density in clusters to the total localization density in the selected region (Figure 1—figure supplement 2D), and cluster diameters (Figure 1—figure supplement 2E) are comparable for NiV-F on PK13 and HeLa cells. These results suggest that NiV-F clusters are minimally affected by the cell lines of expression or the presence of the ephrinB2 and/or -B3.
 
-## The NiV-F nanoclusters are not affected by NiV-F cleavage
+![Figure 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig1-v1.jpg)
+
+**Figure 1.:** Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of NiV-F in high-expression (A) and low-expression (B) PK13 cells. Scale bar: 1 μm. The yellow boxed region is enlarged to show the detailed distribution pattern. Scale bar: 0.2 μm. (C) Hopkin’s index of the F localizations in low- and high-expression cells. p = 0.0927; n = 35 and 40. (D, E) Cluster maps (left) and localization density maps (right) of the enlarged regions in A and B. Cluster contours are highlighted with gray lines. Normalized relative density is pseudocolored according to the scale on the right. (F) The percentage distribution of the NiV-F cluster diameter from 13 cells. n = 114. (G) The cluster diameters in low- and high-expression cells. p = 0.2739; n = 58 and 56. (H) The localization density (# of localizations per μm2) within clusters in low- and high-expression cells. p = 0.7602; n = 58 and 50. (I) The number of clusters per μm2 in low- and high-expression cells. p < 0.0001; n = 59 and 74. The cut-off fluorescence intensity for low- and high-expression cells is 8000 (Arb. Unit). Sample size n is the number of total regions from six to eight cells. Bars represent mean ± SD. p value was obtained using the Mann–Whitney test. ns: p > 0.05; ****p < 0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The localization precision of the custom-built SMLM. The distribution of localization error at the x (dX), y (dY), and z (dZ) directions of blinks generated from Alexa Fluor 647 bound to NiV-F expressed on the plasma membrane of PK13 cells. The lateral precision is <10 nm and the axial precision is <20 nm. (B) A diagram of NiV-F-FLAG (top) and NiV-F-HA (bottom) constructs. Both tags were inserted after amino acid 104 of NiV-F. (C) First column: Cross-section (Δz = 600 nm) of SMLM images of NiV-F-FLAG (top) and NiV-F-HA (bottom) in PK13 cells. Scale bar: 1 μm. Second column: The yellow boxed region is enlarged to show the detailed distribution pattern. Scale bar: 0.2 μm. Third column: Cluster maps of the enlarged regions. Fourth column: Localization density maps show the normalized relative density of the enlarged regions. (D) Hopkin’s index of the NiV-F-FLAG and NiV-F-HA localizations in PK13 cells. p = 0.0675, n = 36 and 34. Sample size n is the number of total regions from four cells. Bars represent mean ± SD. p value was obtained using the Mann–Whitney test. ns: p > 0.05. (E) The entry of VSV/NiV pseudoviruses expressing NiV-G with untagged NiV-F (red), NiV-F-FLAG (black), and pcDNA 3 vector (NC; gray) in Vero cells. Data shown are mean ± SEM from one representative experiment (of three).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) First column: Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of NiV-F in PK13 (top) and HeLa (bottom) cells. Scale bar: 1 μm. Second column: The yellow boxed region is enlarged to show the detailed distribution pattern. Scale bar: 0.2 μm. Third column: Cluster maps of the localizations in the enlarged region. Fourth column: Localization density maps show the normalized relative density of the enlarged regions. Quantitative analyses of clustering of NiV-F in PK13 and HeLa: (B) Hopkin’s index, p = 0.9773; n = 38 and 38; (C) percentage of localizations in clusters, p = 0.1150; n = 84 and 90; (D) relative density, p = 0.1764; n = 83 and 82; (E) average cluster diameters, p = 0.1666; n = 84 and 84. Bars represent mean ± SD. Sample size n is the number of total regions from 4 to 10 cells. p value was obtained using the Mann–Whitney test. ns: p > 0.05.
+
+### The NiV-F nanoclusters are not affected by NiV-F cleavage
 
 NiV-F is synthesized in host cells as inactive precursor F0 and cleaved by cellular proteases cathepsins L and B in the endosomes at an acidic pH to generate the fusion-active, disulfide-linked F1–F2 construct. The F1–F2 is subsequently recycled to the cell surface to induce cell–cell fusion and incorporated into virus particles. We hypothesized that the F0 precursor and the F1–F2 active forms co-existed in the same clusters on the cell surface. To test this hypothesis, we used a pan-cysteine cathepsin inhibitor E64d to inhibit the NiV-F cleavage. E64d inhibited the cell–cell fusion induced by NiV-F and NiV-G in HeLa cells (Figure 2—figure supplement 1), agreeing with the previous fusion inhibitory effects in Vero and MDCK (Madin-Darby canine kidney) cells (Diederich et al., 2012; Diederich et al., 2005). Our SMLM images show that E64d treatment does not result in any significant change in the clustering of NiV-F in HeLa cells (Figure 2A). The clustering extent of NiV-F was not altered by the E64d treatment, as shown by comparable Hopkin’s indices (Figure 2B). Additionally, quantitative parameters of the nano-organization such as percentage of localizations in clusters (Figure 2C), relative density (Figure 2D), cluster size (Figure 2E), and the total density of the regions (Figure 2F) were comparable. Our data show that clusters formed by non-cleaved NiV-F in cells treated by E64d are similar to those formed by a mixture of cleaved and non-cleaved NiV-F in the control cells, suggesting that F cleavage does not alter F clustering on the cell membrane. These data support our hypothesis that the non-cleaved precursor F0 and cleaved F1–F2 co-exist in the same cluster on the cell membrane.
 
-## Mutations destabilizing the NiV-F hexamer-of-trimer assembly alter its nano-organization on the plasma membrane
+![Figure 2.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig2-v1.jpg)
+
+**Figure 2.:** (A) First column: Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of NiV-F in HeLa cells untreated (NC) and treated with 20 μM E64d (E64d). HeLa cells were co-transfected by expression plasmids coding for NiV-G and NiV-F. Twenty μM E64d or the same volume of solvent methanol was added to cells at 2 hr post-transfection. Scale bar: 1 μm. Second column: The yellow boxed region in the first column is enlarged to show individual clusters. Scale bar: 0.2 μm. Third column: Cluster maps from the enlarged regions. Fourth column: Localization density maps show the normalized relative density of the enlarged regions. Quantitative analyses of NiV-F clusters formed in HeLa cells without (NC) and with (E64d) the E64d treatment: (B) Hopkin’s index, p = 0.1774; n = 40 and 40; (C) percentage of localizations in clusters, p = 0.7343; n = 101 and 101; (D) relative density, p = 0.6878; n = 100 and 103; (E) average cluster diameters, p = 0.5769; n = 100 and 101; (F) total density of the region, p = 0.5439; n = 101 and 102. Bars represent mean ± SD. p value was obtained using Mann–Whitney test. ns: p > 0.05. Sample size n is the number of total regions from 4 to 10 cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of cell–cell fusion induced by NiV-G and NiV-F without (NC) or with (E64d) the treatment of 20 μM E64d in HeLa cells. Cells were co-transfected by expression plasmids coding for NiV-G and NiV-F, at 3 hr post-transfection, 20 μM E64d or the same volume of solvent methanol was added to cells. Cells were fixed at 18 hr post-transfection and observed under ×20 magnification. Scale bar = 10 μm. (B) Cell–cell fusion levels normalized to that of the untreated HeLa cells (NC). Five fields per experiment were counted from three independent experiments. Bars represent mean ± SEM. ***p = 0.0002. p value was obtained using Welch’s t-test.
+
+### Mutations destabilizing the NiV-F hexamer-of-trimer assembly alter its nano-organization on the plasma membrane
 
 We noticed that the uniformity in the NiV-F cluster morphology resembled the hexameric assembly of soluble NiV-F decorated by GCN4 (Xu et al., 2015). Next, we investigated whether NiV-F clusters were stabilized by the hexameric interface. As reported, L53D and V108D mutants destabilize the hexameric interface and demonstrate decreased membrane fusion ability; Q393L stabilizes the hexameric interface and demonstrates increased fusion ability (Xu et al., 2015). We inserted the FLAG tag into the ectodomains of these mutants at the same position as that of the NiV-F. We verified that the relative fusion ability to their F-WT counterpart was comparable between the FLAG-tagged and untagged mutants (Figure 3—figure supplement 1A, B; Xu et al., 2015). The FLAG-tagged mutants showed similar CSE levels to NiV-F (Figure 3—figure supplement 1C). All mutants showed some levels of processing, although the cleavage of L53D was the least efficient compared to F-WT and other mutants (Figure 3—figure supplement 1D). Additionally, the FLAG-tagged NiV-F mutants showed a similar trend in virus entry as that of cell–cell fusion when pseudotyped to a recombinant VSV virus (Figure 3—figure supplement 1E, F), agreeing with the previous results obtained using the NiV-F constructs with a C-terminal AU1 tag (Xu et al., 2015). We also generated VLPs (virus-like particles) expressing NiV-M-β-lactamase (NiV-M-Bla), NiV-G-HA, and NiV-F-FLAG or mutants for an entry kinetics assay. The entry kinetics was measured in real-time by conversion of green to blue fluorescence resulting from CCF2-AM dye cleavage by the β-lactamase upon the entry of VLPs (Wolf et al., 2009; Landowski et al., 2014). Our results show that the hyperfusogenic mutant Q393L shows more efficient VLP entry than that of WT, while VLPs bearing the hypofusogenic mutant L53D and V108D are less efficient in entry than that of the WT (Figure 3—figure supplement 1G, H). It is noteworthy that the incorporation of NiV-G seems to be impacted by the expression of L53D in both VSV/NiV pseudovirions and VLPs (Figure 3—figure supplement 1F, H), and the deficient virus entry induced by L53D may be partly due to the decreased attachment to the target cells (Figure 3—figure supplement 1E, G). Nonetheless, the level of L53D on the pseudovirions and VLPs seems comparable to that of the WT (Figure 3—figure supplement 1F, H). These data support that mutations at the hexameric interface significantly impact the fusion activity of NiV-F on both cell and virus surface.
 
 NiV-F mutants L53D, V108D, and Q393L were expressed on PK13 cells and subjected to SMLM imaging. The images show that clusters formed by L53D and V108D are smaller and more dispersed than those of the F-WT and Q393L (Figure 3A). The Hopkin’s index for Q393L is significantly higher than that of F-WT, while the Hopkin’s indices for L53D and V108D are slightly lower than that of F-WT (Figure 3B). Consistently, a lower percentage of L53D and V108D localizations are segregated into clusters than that of F-WT, while a similar percentage of Q393L and F-WT localizations form clusters (Figure 3C). In addition, clusters of L53D and V108D are less packed than that of F-WT, with 48-, 49-, and 55-fold denser than the total localization density in the region, respectively (Figure 3D). The clusters of Q393L are not significantly denser than that of F-WT (Figure 3D). Our analysis also shows that L53D and V108D form smaller clusters compared to the F-WT (Figure 3E). The Q393L clusters are of a similar size to that of F-WT (Figure 3E). The total density of localizations and the total CSE levels for all constructs are comparable (Figure 3F, Figure 3—figure supplement 1C), suggesting that differences in clustering are not due to variable numbers of localizations or levels of expression. Collectively, these data show that the mutations destabilizing the hexameric interface (L53D and V108D) make NiV-F localizations more dispersed and form smaller and less packed clusters. Q393L that stabilizes the hexameric interface promotes the clustering of NiV-F localizations (Figure 3B) but does not significantly alter the organization and morphology of individual clusters (Figure 3C–F). These data suggest that the NiV-F clusters are susceptible to mutations at the hexameric interface. Considering that the uniformed cluster size is similar to the assemblies formed by the soluble GCN4-NiV-F, we propose that NiV-F may organize into hexamer-of-trimer on the plasma membrane.
 
-## Mutations at the NiV-F hexameric interface affect its distribution on the VLP membrane
+![Figure 3.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig3-v1.jpg)
+
+**Figure 3.:** (A) First column: Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of the FLAG-tagged NiV-F-WT (WT), L53D, V108D, and Q393L on PK13 cell membrane. Scale bar: 1 μm. Second column: The yellow boxed regions in the first column are enlarged to show individual clusters. Scale bar: 0.2 μm. Third column: Cluster maps from enlarged regions. Fourth column: Localization density maps show normalized relative density of the enlarged regions. Quantitative analyses of the distribution of the FLAG-tagged NiV-F constructs: (B) Hopkin’s index, p = 0.0034, 0.0029, and 0.0448; n = 57–70; (C) percentage of localizations in clusters, p < 0.0001, <0.0001, and =0.9880; n = 106–198; (D) relative density, p = 0.0015, 0.0100, and 0.2244; n = 90–187; (E) average cluster diameters, p < 0.0001, <0.0001, and =0.0617; n = 106–198; (F) total density of the region (a ratio of total localizations in a region to the size of the region), p = 0.5726, 0.3097, and 0.8209; n = 106–243. Bars represent mean ± SD. Sample size n is the number of total regions from 11 to 20 cells. p value was obtained using Mann–Whitney test. ns: p > 0.05; *p < 0.05; **p < 0.01; ****p < 0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of 293T cell–cell fusion induced by NiV-G and NiV-F-WT, L53D, V108D, or Q393L. 293T cells were co-transfected with plasmids coding for NiV-G and empty vector (NC) or NiV-F constructs. Cells were fixed at 18 hr post-transfection. Arrows point to syncytia. Scale bar: 10 μm. (B) Relative levels of 293T cell–cell fusion in (A). Five fields per experiment were counted from three independent experiments. Data are presented as mean ± SEM. p value was obtained by Welch’s test. *p < 0.05; ****p < 0.0001. (C) The cell surface expression levels of NiV-F-WT, L53D, V108D, and Q393L on 293T cells were measured by flow cytometry. Mean fluorescence intensity (MFI) values were calculated by FlowJo and were normalized to that of F-WT. Data are presented as mean ± SEM of three independent experiments. Statistical significance was determined by the unpaired t-test with Welch’s correction (ns: p > 0.05). Values were compared to that of the NiV-F-WT. (D) NiV-F processing of F-WT, L53D, V108D, Q393L in 293T cells. 293T cells were transfected by F-WT and the mutants. The cell lysates were analyzed on sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) followed by western blotting after 28 hr post-transfection. F0 and F2 were probed by M2 monoclonal mouse anti-FLAG antibody. GAPDH was probed by monoclonal mouse anti-GAPDH. (E) Relative entry levels of VSV/NiV pseudovirions expressing NiV-G-HA and NiV-F-FLAG (WT; solid black line) or FLAG-tagged NiV-F-L53D (L53D), V108D (V108D), or Q393L (Q393L; dotted red line). The negative control (NC), the recombinant VSV pseudoviruses without glycoproteins, is shown as a dotted gray line. The relative light units (RLUs) of the lysates of infected Vero cells were quantified 18–24 hr post-infection and plotted against the number of viral genomes/ml over 3 logs of viral input. Data shown are mean ± SEM from one representative experiment (of three). (F) The result of a representative western blot analysis of VSV/NiV pseudovirions. 4 × 108 copies VSV/NiV pseudovirions were separated by a denaturing 10% SDS–PAGE and probed against NiV-G-HA (rabbit anti-HA) and NiV-F-FLAG (mouse anti-Flag). (G) The VLPs expressing NiV-M-Bla, G-HA, and the FLAG-tagged WT or mutant NiV-F were allowed to bind to the target HEK293T cells loaded with CCF2-AM dye at 4°C. The Blue/Green (B/G) ratio was measured at 37°C for 4 hr at a 3-min-interval. The average background was subtracted, and the results were normalized to the maximal B/G ratio of WT VLPs. Results from one representative experiment (of three) are shown. (H) The result of a representative western blot analysis of NiV VLPs. Equal volumes of VLPs were separated by a denaturing 10% SDS–PAGE and probed against NiV-G (rabbit anti-HA), NiV-F (mouse anti-Flag), and NiV-M (mouse anti-β-lactamase).
+
+### Mutations at the NiV-F hexameric interface affect its distribution on the VLP membrane
 
 To further investigate the organization of F mutants in viral membranes, we imaged the FLAG-tagged NiV-F constructs on VLPs produced by 293T cells expressing NiV-M-GFP, NiV-G, and NiV-F-WT, L53D, V108D, or Q393L mutants. The incorporation of NiV-F is comparable among the NiV-F constructs (Figure 4A). The L53D and V108D on VLPs are less cleaved compared to that of the F-WT and Q393L, as suggested by the weaker NiV-F2 bands (Figure 4A). Notably, the incorporation of NiV-G is largely abrogated in the VLPs that expressing L53D (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig4-v1.jpg)
+
+**Figure 4.:** (A) The incorporation of F-WT and mutants in VLPs. NiV-M-GFP, G-HA, and FLAG-tagged F-WT or mutants were transfected to 293T cells. The supernatants were collected at 48 hr post-transfection and analyzed on sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) followed by western blotting. NiV-M was probed by polyclonal goat anti-GFP, NiV-G polyclonal rabbit anti-HA, F0 and F2 M2 monoclonal mouse anti-FLAG antibody. (B) Cross-section (Δz = 100 nm) of single-molecule localization microscopy (SMLM) images of the FLAG-tagged NiV-F-WT (WT), L53D, V108D, and Q393L on individual VLPs. Scale bar: 0.2 μm. (C) The classification of the ordered sequence of reachability distances of the NiV-F constructs localizations. Orange: F-WT (n = 306) and Q393L (n = 323); blue: L53D (n = 310) and V108D (n = 329). n is the number of VLPs used for classification analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The OPTICS plots for a simulated 3D single-molecule localization microscopy (SMLM) dataset containing clusters of different sizes and densities. (B) The OPTICS plots of the localizations of NiV-F constructs on individual VLPs. The OPTICS plot shows the correlation between the ordered localization sequence (x-axis) and the reachability distance (y-axis).
+
 To probe the organization of NiV-F constructs on VLPs, the F-constructs on VLP membranes were stained using Alexa Fluor 647 and subjected to SMLM imaging. The GFP fluorescence on NiV-M was used to locate the VLPs. Figure 4B shows that F-WT and F-Q393L form distinctive clusters, while localizations of L53D and V108D are more dispersed on a z = 100 nm projection. This agrees with their distributions on the plasma membrane (Figure 3A). To gain a quantitative insight into the distribution of the F constructs on the three-dimensional (3D) VLPs, we used an algorithm named OPTICS (Ordering Points To Identify Clustering Structure) (Ankerst et al., 1999). To identify clusters, the OPTICS algorithm sorts out the localizations by calculating the reachability distance between two adjacent localizations in a propagative manner and generates a sequence of the ordered localizations (Ankerst et al., 1999). In the plot of reachability distance vs. the sequence of ordered localizations, a sudden increase in the reachability distance marks the cutoff of a cluster (Figure 4—figure supplement 1A). The shade between neighboring peaks represents localizations that are classified in one cluster (Figure 4—figure supplement 1A). OPTICS can identify sub-clusters on a 3D VLP that may not be recognized by DBSCAN that uses one fixed parameter for the entire dataset (Figure 4—figure supplement 1B) shows the OPTICS plots of the localizations of F-WT and mutants on representative VLPs (Figure 4B). The noticeable kinks suggest that F-WT and Q393L form distinctive clusters on VLPs, while the irregular, small kinks indicate that L53D and V108D are more dispersed and form smaller clusters on VLPs (Figure 4B, Figure 4—figure supplement 1B). To gain a population insight on the nano-organization of the F constructs on VLPs, we developed a one-dimensional convolutional neural network (1D CNN) to classify the ordered sequence of reachability distances of the NiV-F localizations obtained by the OPTICS algorithm (Kiranyaz et al., 2021). The distribution patterns of the localizations of the F-WT and Q393L partition into one category, and L53D and V108D in another (Figure 4C). These results indicate that L53D and V108D form smaller and more dispersed clusters than F-WT and Q393L on the VLP membranes, agreeing with that of the plasma membrane (Figure 3). Our results indicate that the trimer-trimer interaction at the hexameric interface is key in stabilizing the nano-organization of NiV-F on both cell and viral membranes, and NiV-F do not seem to rearrange during the incorporation into VLPs. Nonetheless, our data do not rule out the possibility that the association of nucleocapsids with the plasma membrane during assembly may reorganize NiV-F on the authentic virus membranes. Since the incorporation levels of NiV-M and -G varies among mutants, the nano-organization of NiV-F is likely associated with the virion incorporation or budding.
 
-## The NiV-F clusters are dispersed upon the disruption of the interactions between TMDs
+### The NiV-F clusters are dispersed upon the disruption of the interactions between TMDs
 
 Evidence shows that TMD of class I fusion protein can self-associate in the absence of the rest of the protein and is important for membrane fusion (Barrett and Dutch, 2020). Previous studies show that mutations in the Leucine–Isoleucine Zipper (LI zipper) motif lead to the dissociation of an HeV-F TMD-derived peptide, decreased stability, and the fusion ability of the whole HeV-F protein (Webb et al., 2017). As the TMD domains of the NiV- and HeV-F demonstrate a 94% similarity, we mutated leucine (488 and 509) and isoleucine (495 and 502) residues of the LI zipper in NiV-F TMD to alanine (LI4A) (Figure 5—figure supplement 1A). Similar to their counterparts of HeV-F, the NiV-F-LI4A showed a decreased F processing (Figure 5—figure supplement 1B), cell–cell fusion activity (Figure 5—figure supplement 1C, D), and CSE levels (Figure 5—figure supplement 1E; Webb et al., 2017). The NiV-F-LI4A failed to incorporate into VSV/NiV pseudovirions (Figure 5—figure supplement 1F), and thus did not induce any virus entry (Figure 5—figure supplement 1G). Visual inspection of the images suggests that LI4A forms bigger clusters than F-WT (Figure 5A). However, the LI4A seems less likely to cluster than F-WT, indicated by a lower Hopkin’s index (Figure 5B). Similarly, the portion of LI4A localizations partitioned into clusters is slightly lower than that of WT (Figure 5C). Interestingly, we noticed that clusters formed by LI4A are significantly bigger (Figure 5D) than that of F-WT and with a similar localization density within the clusters (Figure 5E). The data suggest that interactions between TMDs of NiV-F monomers play a role in stabilizing its nano-organization. Dissociation of TMDs by mutations may result in increased space between F monomers and thus leads to bigger clusters on the cell membrane.
 
-## The NiV-F nanoclusters are stabilized by endocytosis components
+![Figure 5.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig5-v1.jpg)
+
+**Figure 5.:** (A) First column: Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of the FLAG-tagged NiV-F-WT (WT) and NiV-F-LI4A (LI4A) mutant on PK13 cell membrane. Scale bar: 1 μm. Second column: The yellow boxed region in the first column is enlarged to show individual clusters. Scale bar: 0.2 μm. Third column: Cluster maps from enlarged regions. Fourth column: Localization density maps show normalized relative density of the enlarged regions in the second column. Quantitative analyses of the WT and LI4A clusters: (B) Hopkin’s index, p = 0.0001; n = 40 and 40 (C) Percentage of localizations in clusters, p = 0.3058; n = 171 and 211; (D) Average cluster diameters, p < 0.0001; n = 171 and 210; (E) relative density, p = 0.1092; n = 166 and 211. Bars represent mean ± SD. p value was obtained using Mann–Whitney test. ns: p > 0.05; ***p = 0.0001; ****p < 0.0001. Sample size n is the number of total regions from 13 to 16 cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A diagram of NiV-F-LI4A (LI4A) mutant that carries alanine mutations at the LI zipper (B) The processing of NiV-F-WT and F-LI4A in 293T cells. Expression plasmids of an empty vector (NC), NiV-F-WT (WT), and NiV-F-LI4A (LI4A) were transfected into 293T cells. At 28 hr posttransfection, cell lysates were collected and loaded on a 10% polyachrylamide gel for sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE). The F0 and F2 were detected using a mouse anti-FLAG antibody and a goat anti-mouse HRP (horseradish peroxidise). The GAPDH is a loading control. (C) Representative images of 293T cell–cell fusion induced by WT and LI4A. 293T cells were co-transfected using plasmids coding for NiV-G and an empty vector (NC), NiV-F-WT (WT), or NiV-F-LI4A. Cells were fixed at 18 hr post-transfection. Arrows point to syncytia. Scale bar: 10 μm. (D) Relative cell–cell fusion levels in (C). Five fields per experiment were counted from three independent experiments. Bars represent mean ± SEM. p value was obtained by the unpaired t-test with Welch’s correction. ***p = 0.0003. (E) The cell surface expression levels of WT and LI4A on 293T cells were measured by flow cytometry. Mean fluorescence intensity (MFI) values were calculated by FlowJo and were normalized to WT. Bars are presented as mean ± SEM of n = 3 independent experiments. Statistical significance was determined by the unpaired t-test with Welch’s correction (*p = 0.0156). Values were compared to that of WT. (F) The result of a representative Western blot analysis of VSV/NiV pseudovirions. 4 × 108 copies of VSV/NiV pseudotyped virions were separated by a denaturing 10% SDS–PAGE and probed against NiV-G (rabbit anti-HA) and NiV-F (mouse anti-Flag). (G) Relative entry levels of VSV/NiV pseudovirions expressing NiV-G-HA and NiV-F-FLAG (solid black line) or LI4A (dotted red line). The negative control (NC), the recombinant VSV pseudoviruses without glycoproteins, is shown as a dotted gray line. The relative light units (RLUs) of lysates of infected Vero cells were quantified 18–24 hr post-infection and plotted against the number of viral genomes/ml over 3 logs of viral input. Data shown are averages ± SEM from one representative experiment (of three).
+
+### The NiV-F nanoclusters are stabilized by endocytosis components
 
 NiV-F can be endocytosed for endosomal cleavage. Next, we investigated whether NiV-F clusters are stabilized during endocytosis. NiV-F contains an endocytosis sorting signal YSRL and an additional YY motif at its cytoplasmic tail (Figure 6—figure supplement 1A). Mutation of these tyrosine residues to alanine almost diminished NiV-F cleavage (Diederich et al., 2005). An FLAG-tagged NiV-F-YA construct containing the aforementioned mutations resulted in significantly less F2 band than F-WT (Figure 6—figure supplement 1B) and completely abrogated cell–cell fusion in 293T cells (Figure 6—figure supplement 1C, D), although the CSE levels were comparable to that of F-WT (Figure 6—figure supplement 1E). The YA mutant did not incorporate into the VSV/NiV pseudovirions (Figure 6—figure supplement 1F) and thus did not mediate virus entry (Figure 6—figure supplement 1G). By visually inspecting the SMLM images, we noticed that F-YA was less clustered than that of F-WT (Figure 6A). Indeed, the Hopkin’s analysis suggests that F-YA is less clustered than F-WT (Figure 6B). The DBSCAN analysis shows that lower percentage of F-YA localizations segregate into clusters (Figure 6C) than that of the F-WT, and clusters formed by F-YA are smaller (Figure 6D) and less dense (Figure 6E) than that of the F-WT. Notably, there is no significant difference in the total density for F-YA and F-WT SMLM images (Figure 6F), indicating that the differences in cluster organizations do not result from overall protein expression or the stochastic blinking properties of the fluorophore. These results suggest that the endocytosis sorting signal of NiV-F may facilitate the enrichment of NiV-F into clusters on the cell surface, preparing them for endosomal cleavage and/or incorporation into viruses.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig6-v1.jpg)
+
+**Figure 6.:** (A) First column: Cross-section (Δz = 600 nm) of single-molecule localization microscopy (SMLM) images of the FLAG-tagged NiV-F-WT (WT) and NiV-F-YA (YA) mutant on PK13 cell membrane. Scale bar: 1 μm. Second column: The yellow boxed region in the first column is enlarged to show individual clusters. Scale bar: 0.2 μm. Third column: Cluster maps from enlarged regions. Fourth column: Localization density maps show normalized relative density of the enlarged regions in the second column. Quantitative analyses of the WT and YA clusters: (B) Hopkins index of WT and YA, p < 0.0001; n = 40 and 40; (C) percentage of localizations in clusters, p < 0.0001; n = 72 and 77; (D) average cluster diameters, p < 0.0001; n = 72 and 77; (E) relative density, <0.0001; n = 71 and 76; (F) total density of the region, p = 0.3560; n = 72 and 77. (G) First column: Cross-section (Δz = 600 nm) of SMLM images of the FLAG-tagged NiV-F-WT treated without (NC) and with pitstop2 (pitstop2) on HeLa cell membrane. Scale bar: 1 μm. Second column: The yellow boxed region in the first column is enlarged to show individual clusters. Scale bar: 0.2 μm. Third column: Cluster maps from enlarged regions. Fourth column: Localization density maps show normalized relative density of the enlarged regions in the second column. Quantitative analyses of NiV-F without (NC) and with pitstop2 (pitstop2): (H) Hopkins index, p = 0.0054; n = 40 and 40; (I) percentage of localizations in clusters, p = 0.0060; n = 82 and 85; (J) average cluster diameters, p = 0.0057; n = 82 and 81; (K) relative density, p = 0.4235; n = 79 and 78; (L) total density of the region, p = 0.0607; n = 82 and 85. Bars represent mean ± SD. p value was obtained using Mann–Whitney test. ns: p > 0.05; **p < 0.01; ****p < 0.0001. Sample size n is the number of total regions from four to nine cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97017/elife-97017-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) A diagram of NiV-F-YA (YA) mutant which carries alanine mutations of a tyrosine residue at the endosomal sorting signal YSRL and two additional tyrosine residues at the cytoplasmic tail. (B) The processing of NiV-F-WT and F-YA in 293T cells. Expression plasmids of an empty vector (NC), NiV-F-WT (WT), and NiV-F-YA (YA) were transfected into 293T cells. At 28 hr posttransfection, cell lysates were collected and loaded on a 10% polyachrylamide gel for sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE). The F0 and F2 were detected using a mouse anti-FLAG antibody and a goat anti-mouse HRP. The GAPDH is a loading control. (C) Representative images of 293T cell-cell fusion induced by WT and YA. 293T cells were cotransfected using plasmids coding for NiV-G and an empty vector (NC), NiV-F-WT (WT), or NiV-F-YA (YA). Cells were fixed at 18 hr post-transfection. Arrows point to syncytia. Scale bar: 10 μm. (D) Relative cell–cell fusion levels in (C). Five fields per experiment were counted from three independent experiments. Bars represent mean ± SEM. p value was obtained by the unpaired t-test with Welch’s correction. ***p = 0.0007. (E) The cell surface expression levels of WT and YA on 293T cells were measured by flow cytometry. Mean fluorescence intensity (MFI) values were calculated by FlowJo and were normalized to WT. Bars are presented as mean ± SEM of n = 3 independent experiments. Statistical significance was determined by the unpaired t-test with Welch’s correction. Values were compared to that of WT. ns: p = 0.0558. (F) The result of a representative western blot analysis of VSV/NiV pseudovirions. 4 × 108 copies of NiV/VSV pseudovirions were separated by a denaturing 10% SDS–PAGE and probed against NiV-G (rabbit anti-HA) and NiV-F (mouse anti-Flag). (G) Relative entry levels of VSV pseudovirions containing NiV-G-HA and the FLAG-tagged-NiV-F (solid black line) or YA (dotted red line). The negative control (NC), the recombinant VSV pseudoviruses without glycoproteins (VSV/pcDNA3), is shown as a dotted gray line. The relative light units (RLUs) of lysates of infected Vero cells were quantified 18–24 hr post-infection and plotted against the number of viral genomes/ml over 3 logs of viral input. Data shown are mean ± SEM from one representative experiment (of three) are shown. (H) 293T cells were transfected with the indicated combinations of NiV-F-WT, YA, and AP-2. At 48 hpt, cells were lysed and NiV-F constructs were immunopreciptated by using μMACS. Anti-FLAG magnetic beads were used. Total cell lysate (Lysate) and immunoprecipiated proteins (IP:αFLAG) were separated by 10% SDS–PAGE and immunoblotted with mouse α-FLAG (F detection) or rabbit α-mcherry (AP-2 detection). Proteins were detected using HRP-conjugated secondary antibodies.
 
 It is established that the YxxФ sorting signal on the endocytosis cargo is bound and enriched by the heterotetrameric adaptor protein (AP) complexes, which further recruit the assembly of the clathrin coat (Bonifacino and Neefjes, 2017; Bonifacino and Traub, 2003). We hypothesize that the clustering of NiV-F is promoted by the assembly of the clathrin coat via the NiV-F–AP-2 interactions. As suggested by a yeast two-hybrid analysis, NiV-F interacts with μ1, μ2, μ3, and μ4 subunits of the AP complexes AP-1, AP-2, AP-3, and AP-4, and mutations of Y525, Y542, and Y543 almost completely abolished the interaction between AP-2 and NiV-F (Mattera et al., 2014). Indeed, the co-immunoprecipitation assay shows that less AP2μ2 is pulled down by F-YA than that of F-WT, suggesting that F-YA has a reduced interaction with AP-2 (Figure 6—figure supplement 1H). Next, we examined the NiV-F clusters in HeLa cells treated by the endocytosis inhibitor pitstop2. Pitstop2 blocks clathrin-mediated endocytosis by obstructing the binding of the accessory protein (e.g. AP-2) and the clathrin terminal domain, and potentially preventing the assembly of the clathrin coat (von Kleist et al., 2011). The SMLM images (Figure 6G) show that the NiV-F localizations are more dispersed upon pitstop2 treatment, agreeing with the lower Hopkin’s index (Figure 6H) and a smaller percentage of localizations in clusters (Figure 6I) in pitstop2 treated group compared to that of the control group. Interestingly, we noticed that the NiV-F clusters in pitstop2 treated cells were larger than the control cells (Figure 6J), although with similar densities (Figure 6K). The total density is consistent between the pitstop2 treated and control groups (Figure 6L). The overall dispersed NiV-F distribution upon pitstop2 treatment may potentially be caused by the disrupted assembly of clathrin coat. In combination, these results suggest that the enrichment of NiV-F by AP-2 and the subsequent assembly of the clathrin-coated endosomes are important in stabilizing the F clusters on cell membranes. We envision that the endocytosis components may also facilitate the NiV-F clustering in virus particles as previous proteomic studies show the presence of endocytosis related proteins, such as clathrin, AP-2, and dynamin in NiV VLPs (Johnston et al., 2019; Pentecost et al., 2015; Vera-Velasco et al., 2018).
 
@@ -79,52 +131,483 @@ In conclusion, our observations provide direct evidence on the nano-organization
 
 ## Materials and methods
 
-## Cell lines and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Sus scrofa, pig)</td>
+      <td>PK13</td>
+      <td>ATCC</td>
+      <td>CRL-6489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero</td>
+      <td>ATCC</td>
+      <td>CCL-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmids containing cDNA for NiV-F-FLAG and mutants</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The FLAG tag was inserted after residue 104 of the codon-optimized NiV-F (GenBank accession no. AY816748.1). The hexameric interface mutants (Figure 3; Xu et al., 2015), LI4A mutant (Figure 5; Webb et al., 2017), and YA mutant (Figure 6; Diederich et al., 2005) were constructed as previously published.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for NiV-F-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The HA tag was inserted after residue 104 of the codon-optimized NiV-F (GenBank accession no. AY816748.1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for NiV-G-HA</td>
+      <td>Liu et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for NiV-M-GFP</td>
+      <td>Liu et al., 2018; Wang et al., 2010</td>
+      <td></td>
+      <td>The GFP gene was fused to the N-terminus of NiV-M gene (GenBank accession no. EU480491.1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for AP2μ2-mCherry</td>
+      <td>Christien Merrifield</td>
+      <td>RRID:Addgene_27672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for untagged NiV-F</td>
+      <td>Liu et al., 2018</td>
+      <td></td>
+      <td>Codon-optimized NiV-F (GenBank accession no. AY816748.1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3 plasmid containing cDNA for NiV-F-AU1</td>
+      <td></td>
+      <td></td>
+      <td>The AU1 tag was inserted at the C terminal of the codon-optimized NiV-F (GenBank accession no. AY816748.1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGs plasmid containing cDNA for NiV-M-β-lactamase</td>
+      <td>Wolf et al., 2009, Landowski et al., 2014</td>
+      <td></td>
+      <td>The β-lactamase gene was fused to the N-terminus of NiV-M gene (GenBank accession no. EU480491.1)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-L53D-F1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGCAACCCCgacACCAAGGACATCGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-L53D-R1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTGGTgtcGGGGTTGCTCTTGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-V108D-F2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATAAGGTGGGCGACGacCGGCTGGCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-V108D-R2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gtCGTCGCCCACCTTATCGTCGTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-Q393L-F3</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGTGACCTGCCtGTGCCAGACCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-Q393L-R3</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGGTCTGGCAcagGCAGGTCACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-FLAG-G/L-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCTGTGCATCctgCTGATCACCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-FLAG-G/L-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGcagGATGCACAGGCTGGCGATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-LI-A-F1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATCCTGTACGTGCTGAGCgccGCCAGCCTGTGCATCGGCgccATCACCTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-LI-A-R1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTCAGCACGTACAGGATggcCATGGACAGCATGCTGATggcGCTGGGGTTCACGGTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-YA-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCACCCGCCGGTCCTCCAGCCGGCTGgcGGTGTTCCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NiV-F-YA-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGACCGGCGGGTGCGGCCCACCAGCAGCGGCGACCTGGCCGCCATCGGCACCTGATAA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E64d</td>
+      <td>Sigma-Aldrich</td>
+      <td>E8640-250UG</td>
+      <td>20 µM final concentration for treatment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pitstop2</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1169-5MG</td>
+      <td>30 µM final concentration for treatment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris</td>
+      <td>EMD Millipore</td>
+      <td>648311-1KG</td>
+      <td>50 mM for TN buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>S9888-1KG</td>
+      <td>10 mM for TN buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2133-50KU</td>
+      <td>0.5 mg/ml for imaging buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>C100</td>
+      <td>40 μg/ml for imaging buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mercapto ethylamine (MEA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>30070-10G</td>
+      <td>50 mM for SMLM imaging buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Fisher Scientific</td>
+      <td>15-630-080</td>
+      <td>25 mM for fusion buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamine</td>
+      <td>Fisher Scientific</td>
+      <td>25-030-081</td>
+      <td>2 mM for fusion buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7902</td>
+      <td>1 mM for fusion buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Probenecid</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8761-25G</td>
+      <td>2.5 mM for fusion buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Solution D</td>
+      <td>Fisher Scientific</td>
+      <td>K1156</td>
+      <td>1:20 for Entry kinetics loading solution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804</td>
+      <td>IF, SMLM: 1:100, Flow: 1:200;WB: 1:500–1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA rabbit polyclonal antibody</td>
+      <td>Biolegend</td>
+      <td>902301</td>
+      <td>IF: 1:900WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP goat polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>Ab5450</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry rabbit polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>Ab167453</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-lactamase mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-66062</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse donkey polyclonal antibody, Alexa Fluor 647 conjugated</td>
+      <td>Invitrogen</td>
+      <td>A31571</td>
+      <td>IF and SMLM: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit donkey polyclonal antibody, Alexa Fluor 488 conjugated</td>
+      <td>Invitrogen</td>
+      <td>A21206</td>
+      <td>IF: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse donkey polyclonal antibody, Alexa Fluor 488 conjugated</td>
+      <td>Invitrogen</td>
+      <td>A21202</td>
+      <td>Flow: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat donkey polyclonal antibody, HRP conjugated</td>
+      <td>Jackson Immunoresearch</td>
+      <td>705-035-147</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse goat polyclonal antibody, HRP conjugated</td>
+      <td>Bio-Rad</td>
+      <td>1705047</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit goat polyclonal antibody, HRP conjugated</td>
+      <td>Bio-Rad</td>
+      <td>1706515</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>μMACS anti-DYKDDDDK starting kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-101-636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Renilla Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>E2820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LiveBLAzer FRET-B/G Loading Kit with CCF2-AM</td>
+      <td>Invitrogen</td>
+      <td>K1032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp Viral RNA Kits for RNA Extraction</td>
+      <td>QIAGEN</td>
+      <td>52904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>SMLM image reconstruction</td>
+      <td>Liu et al., 2018</td>
+      <td></td>
+      <td>MATLAB Codes are available upon request.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ClusDoc</td>
+      <td>Pageon et al., 2016</td>
+      <td></td>
+      <td>Codes were modified to process the data generated in the custom-built SMLM microscope.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>OPTICS</td>
+      <td>This paper; Ankerst et al., 1999</td>
+      <td></td>
+      <td>C++ Codes are available on GitHub, copy archived at QLlab, 2024</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>One-dimensional convolutional neural network (1D CNN)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PYTHON Codes are available on GitHub, copy archived at QLlab, 2024</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism GraphPad</td>
+      <td>Dotmatics</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Flowjo</td>
+      <td>BD</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and plasmids
 
 PK13, HeLa, Vero, and HEK293T cells were cultured at 37°C and 5% CO2 in DMEM (Sigma-Aldrich, D6429) complemented with 10% fetal bovine serum (Invitrogen, 12483-020). Cells were passaged using phosphate-buffered saline (PBS, Invitrogen, 10010-049) and 0.25% Trypsin–EDTA solution (Invitrogen, 25002-072). Cells were monitored routinely for mycoplasma contamination using a mycoplasma detection PCR kit (ABM, G238). An FLAG (NiV-F-FLAG) or HA (NiV-F-HA) tag was inserted after residue 104 of codon-optimized NiV-F in pcDNA3.1 vector. An AU1(NiV-F-AU1) tag was inserted at the C-terminal of codon-optimized NiV-F in pCAGGS vector. The untagged NiV-F does not contain any epitope tag. NiV-F-YA, L53D, V108D, Q393L, and LI4A were produced by site-directed mutagenesis using the NiV-F-FLAG in pcDNA3.1 vector as a template (Diederich et al., 2005; Xu et al., 2015; Webb et al., 2017). AP2μ2-mcherry plasmid is a gift from Christien Merrifield (RRID:Addgene_27672). The HA-tagged NiV-G, GFP-tagged NiV-M, and β-lactamase-NiV-M were constructed previously (Negrete et al., 2005; Wolf et al., 2009; Wang et al., 2010).
 
-## Immunofluorescence for SMLM
+### Immunofluorescence for SMLM
 
 For SMLM imaging on cells, 1 × 105 PK13 or HeLa cells were seeded on coverslips (Marienfeld #1.5 H, 18 mm) coated with 2.5 μg fibronectin (Sigma-Aldrich, F4759-2 mg) in a 12-well plate, and transfected with 1 μg NiV-F variants using lipofectamine 3000 (Invitrogen, L3000015) on the following day. E64d was dissolved in methanol and pitstop2 in DMSO (Dimethylsulfoxide) as recommended by the manufacturer. E64d was added to cells at 3 hr post-transfection for a total treatment time of 15 hr. Pitstop2 was added to cells at 10 hr post-transfection for a total treatment time of 8 hr. At 18 hr post-transfection, cells were fixed with phosphate-buffered saline (PBS) containing 4% paraformaldehyde (PFA; Electron Microscopy Sciences; 50980487) and 0.2% glutaraldehyde (Sigma-Aldrich, G5882-50 ml) for 90 min at room temperature. Cells were treated with signal enhancer image-IT-Fx (Life Technologies, I36933) for 30 min at room temperature, and then blocked using BlockAid (Life Technologies, B10710) for 1 hr at room temperature. The FLAG-tagged NiV-F and mutants were detected by the anti-FLAG mouse monoclonal antibody (Sigma-Aldrich, F1804) and an Alexa Fluor 647 conjugated donkey anti-mouse secondary antibody (Invitrogen, A31571). Cells were incubated with primary antibody overnight at 4°C, and then with the secondary antibody for 1 hr at room temperature. Each antibody incubation is followed by five PBS washes, 5 min each time. Cells were then fixed in PBS containing 4% PFA for 10 min at room temperature.
 
-## SMLM setup, imaging, and data analysis
+### SMLM setup, imaging, and data analysis
 
 SMLM setup. Imaging was performed on a custom-built SMLM. Briefly, the microscope was built upon an apochromatic TIRF oil-immersion objective lens (Nikon, 60×; numerical aperture 1.49). Four lasers were used for excitation: a 639-nm laser (MRL-FN-639, 500 mW) for exciting Alexa Fluor 647, a 532-nm laser (MGL-III-532-300 mW) for exciting cy3B, a 488-nm laser (MBL-F-473-300 mW) for exciting GFP, and a 405 nm laser (MDL-III-405-100 mW) for reactivating Alexa Fluor 647 and cy3B. For SMLM imaging, the exciting and reactivating lasers were combined into a single path using dichroic mirrors and then expanded and collimated using a beam expander. The incident light beam was focused on the back focal plane of the objective lens. A translation stage allowed the beam to be shifted between the center and edge of the objective lens so that the incident light emerging from the objective lens reaches the sample at various angles. For SMLM imaging of NiV-F at the cell and virus membranes at the cell-coverslip contact, the incident angle of the illumination light was adjusted to near or greater than the critical angle of the water–glass interface to allow total internal reflection and ensure low background fluorescence for single fluorophore detection (Bates et al., 2013). The emission fluorescence was separated using appropriate dichroic mirrors and filters (Semrock) and detected by electron-multiplying charge-coupled devices (Ixon, Andor). The full width at half maxima of the image of the point spread function was magnified in size to ~3 camera pixels (106 nm per pixel), ensuring the optimal fluorophore localization (Bates et al., 2013). A feedback loop, composed of a tracking camera (Andor Zyla SCOMS camera) and a computer-controlled piezo stage (Thorlabs 3-Axis NanoMax 300), was employed to control the sample drift to <1 nm laterally and 2.5 nm axially (Tafteh et al., 2016.)
 
 Before SMLM imaging, fluorescence beads (Life technologies, F8799) were added to samples as fiducial markers for drift control. Samples were immersed in imaging buffer [TN buffer (50 mM Tris (pH 8.0) and 10 mM NaCl), 0.5 mg/ml glucose oxidase, 40 μg/ml catalase, 10% glucose, and 50 mM mercaptoethylamine] (Dempsey et al., 2011). The expression level of the protein of interest in individual cells was determined by measuring the average emission fluorescence intensity of an area of 27 × 27 μm2. To ensure sample stability during SMLM, a fiducial marker was continuously tracked by the tracking camera. A brief procedure for SMLM imaging is described as follows: (1) the sample was exposed to the imaging light beam [639 nm laser (1 kW/cm2)] at a 90° incident angle to cause a subset of the fluorophores to switch to the fluorescent state; (2) the incident light angle was adjusted close to or at the critical angle at the water–glass interface to achieve total internal reflection; (3) a low density of activated fluorophores were recorded to avoid fluorophore overlap; (4) another subset of fluorophores was stochastically activated by exposure to the activation light (405 nm). This process was repeated until 40,000 images were acquired. Custom-written software in MATLAB (Mathworks) was used to identify activated fluorophores in each image, determine their precise locations by Gaussian fitting, and reconstruct SMLM images (Bates et al., 2013). Briefly, each image was first convolved with a Gaussian kernel to remove noise and background, and thresholded to search for local maxima. Next, two fitting steps were applied to determine the peak center position, the amplitude, and the width. Then, filtering and trail generation were combined to remove erroneous peaks and group multiple peaks originating from one activated fluorophore. Lastly, a list of fluorophore positions was reconstructed into an SMLM image. Clusters of NiV-F localizations on cell surface resolved by SMLM were identified and characterized using ClusDoC (Pageon et al., 2016). The min points and ε were set at 4 and 20, respectively.
 
-## VLP production and immunofluorescence
+### VLP production and immunofluorescence
 
-To produce NiV VLPs, HEK293T cells were transfected by NiV-F-FLAG or mutants, NiV-G-HA, and NiV-M-GFP at a 9:1:5 ratio by using polyethylenimine at 1 mg/ml (Polysciences, 23966-100). At 48 hr posttransfection, the supernatant of the cell culture was collected and subjected to ultracentrifugation on a 20% sucrose cushion at 125, 392 rcf for 90 min. The VLP-containing pellets were resuspended in 5% sucrose-NTE buffer. VLPs were bound to 2.5 μg fibronectin-coated 18 mm coverslips at 4°C overnight, followed by fixation using PBS containing 4% PFA and 0.2% glutaraldehyde. The protocols of immunofluorescence, SMLM setup, and SMLM imaging for cells were followed to stain and image NiV-F-FLAG and mutants on VLPs using SMLM. A widefield image of GFP was acquired and superimposed on the SMLM image of NiV-F. VLPs were identified as GFP-positive particles. The distribution of NiV-F localizations on VLPs was analyzed by using a custom-written OPTICS algorithm based on C++ and Point Cloud Library. Briefly, OPTICS segregates closely situated data points into clusters from a 3D SMLM dataset (Ankerst et al., 1999). OPTICS algorithm depends on two parameters: (1) ε describes the radius for searching neighbors, and the number of neighbors of point p is called N ε (p); (2) m i n P t s is a user-defined parameter; point p is a core point if it has more than m i n P t s neighbors around it (including point p itself). The core and reachability distances are calculated for cluster segregation. The core distance is the Euclidean distance of the m i n P t s t ℎ closest points to point p (Equation 1).(1)CoreDistε, minPts(p)= {UNDEFINED, if Nε(p)<minPts,minPtsth smallest distance in Nε(p), otherwise
+To produce NiV VLPs, HEK293T cells were transfected by NiV-F-FLAG or mutants, NiV-G-HA, and NiV-M-GFP at a 9:1:5 ratio by using polyethylenimine at 1 mg/ml (Polysciences, 23966-100). At 48 hr posttransfection, the supernatant of the cell culture was collected and subjected to ultracentrifugation on a 20% sucrose cushion at 125, 392 rcf for 90 min. The VLP-containing pellets were resuspended in 5% sucrose-NTE buffer. VLPs were bound to 2.5 μg fibronectin-coated 18 mm coverslips at 4°C overnight, followed by fixation using PBS containing 4% PFA and 0.2% glutaraldehyde. The protocols of immunofluorescence, SMLM setup, and SMLM imaging for cells were followed to stain and image NiV-F-FLAG and mutants on VLPs using SMLM. A widefield image of GFP was acquired and superimposed on the SMLM image of NiV-F. VLPs were identified as GFP-positive particles. The distribution of NiV-F localizations on VLPs was analyzed by using a custom-written OPTICS algorithm based on C++ and Point Cloud Library. Briefly, OPTICS segregates closely situated data points into clusters from a 3D SMLM dataset (Ankerst et al., 1999). OPTICS algorithm depends on two parameters: (1) ε describes the radius for searching neighbors, and the number of neighbors of point p is called N ε (p); (2) m i n P t s is a user-defined parameter; point p is a core point if it has more than m i n P t s neighbors around it (including point p itself). The core and reachability distances are calculated for cluster segregation. The core distance is the Euclidean distance of the m i n P t s t ℎ closest points to point p (Equation 1).
 
-The reachability distance of another point t to point p is either the Euclidean distance between point t and point p or the core distance of p, whichever is bigger (Equation 2).(2)ReachDistε, minPts(t, p)={UNDEFINED, if Nε(p)<minPts,max(CoreDistε, minPts)(p),EudDist(p, t), otherwise
+$$
+CoreDist_{\epsilon, minPts}(p)= {UNDEFINED, if N_{\epsilon}(p)<minPts,minPts_{th} smallest distance in N_{\epsilon}(p), otherwise
+$$
+
+The reachability distance of another point t to point p is either the Euclidean distance between point t and point p or the core distance of p, whichever is bigger (Equation 2).
+
+$$
+ReachDist_{\epsilon, minPts}(t, p)={UNDEFINED, if N_{\epsilon}(p)<minPts,max(CoreDist_{\epsilon, minPts})(p),EudDist(p, t), otherwise
+$$
 
 The process begins by randomly selecting a point (point A). If the number of neighbors of point A is larger than the user-defined minPts (set at 10), the algorithm outputs point A without a reachability-distance value. Next, OPTICS obtains point A’s nearest neighbor (point B) and outputs the B–A reachability-distance value. Point B is the new starting point. OPTICS recalculates the reachability distance of all unprocessed neighbors of point B and selects the next point to process, as described above. This process repeats until all points in the dataset have been visited. The final output of OPTICS is a sequence of reachability distances for each point.
 
 The classification of the ordered sequence of reachability distances was performed by using custom-written 1D CNN based on Python and Tensorflow. Briefly, CNN extracts features from OPTICS output dataset by using convolutional layers for subsequent classification of the space information hidden in the OPTICS datasets. The convolutional layers use a 1D sliding window to slide along the sequence data (Yu et al., 2014). Each sliding window captures local information and passes it to the next layer. Multiple CNN layers work sequentially to build a high-dimensional representation of the dataset. A fully connected layer that transforms high-dimensional features into classification results is achieved by CNN convolution. We use t-SNE (t-distributed stochastic neighbor embedding) to reduce dimensionality on a trained neural network layer for visualization in Figure 4C; Kobak and Berens, 2019.
 
-## Sodium dodecyl sulfate–polyacrylamide gel electrophoresis and western blot analysis and co-immunoprecipitation
+### Sodium dodecyl sulfate–polyacrylamide gel electrophoresis and western blot analysis and co-immunoprecipitation
 
 For western blot analysis to confirm the expression of NiV-F-FLAG and mutants, HEK293T cells were seeded in 6-well plate and transfected with 2.5 μg pcDNA3.1 empty vector, NiV-F-FLAG, or mutants. At 28 or 48 hr posttransfection, cells were lysed in RIPA buffer (Millipore-Sigma, 20-188) supplemented with protease inhibitor (Sigma-Aldrich, 11836170001) on ice for 30 min. The cell lysates were collected after centrifuge at 16,000 × g for 20 min at 4°C. The cell lysates were supplemented with 1× sodium dodecyl sulfate (SDS) loading dye [60 mM Tris–HCl (pH = 6.8); 2% SDS; 10% glycerol, 0.025% Brophenol blue] and 15 mM DTT (dithiothreitol) (Thermo Scientific, R0861), and heated at 95°C for denature. The denatured cell lysates were loaded into 10% polyacrylamide gels for SDS–polyacrylamide gel electrophoresis (PAGE). Proteins were transferred to PVDF (polyvinylidene fluoride) membrane, pore size 0.45 μm (Cytiva, GE10600021). Membrane was blocked with 1% bovine serum albumin (Sigma-Aldrich, A9647-50G) in PBS and incubated with anti-FLAG mouse monoclonal antibody (Sigma-Aldrich, F1804). An HRP-conjugated goat anti-mouse secondary antibody and the clarity Western ECL substrate (Bio-Rad, 1705060) were used for protein detection. Images were acquired using Chemic Doc MP Imaging System (Bio-Rad).
 
 For co-immunoprecipitation experiments, HEK293T cells were transfected with the following combinations (1) 2.3 μg empty pcDNA 3.1 vector and 0.2 μg AP2μ2-mcherry, (2) 0.2 μg AP2μ2-mcherry and 2.3 μg NiV-F-FLAG, and (3) 0.2 μg AP2μ2-mcherry and 2.3 μg NiV-F-YA. At 48 hrs post-transfection, cells from 1 well of a 6-well plate were washed with PBS and lysed in 200 μl lysis buffer provided with the μMACS DYKDDDDK isolation kit, and supplemented with protease inhibitors. Cells were isolated on ice for 30 min. Cell debris was removed by centrifuge at 16,000 × g for 20 min at 4°C. 60 μl of cell lysate was set aside for immunoblot analysis, and the rest was used for immunoprecipitation, as recommended by the manufacturer. 6 μl anti-DYKDDDDK microbeads (Miltenyi Biotec, 130-101-591) were added to 140 μl cell lysates and incubated for 30 min on ice. μ columns (Miltenyi Biotec, 130-101-591) were prepared according to the manufacturer’s instructions. Lysate ran over the columns, and microbeads were washed according to the manufacturer’s instruction. 20 μl preheated elution buffer (95°C) was added to the column before eluting the bound immunoprecipitated protein in 50 μl elution buffer. Elute was separated by 10% SDS–PAGE, and proteins were immunoblotted by mouse anti-FLAG and rabbit anti-mcherry primary antibodies. The HRP-conjugated goat anti-mouse and goat anti-rabbit secondary antibodies were used for protein detection.
 
-## Flow cytometry
+### Flow cytometry
 
 HEK293T cells were seeded in 6-well plate and transfected with 2.5 μg pcDNA3.1 empty vector, NiV-F-FLAG, or mutants. Cells were collected in 1 ml PBS containing 10 mM EDTA (Ethylenediaminetetraacetic acid) after 28 hr post-transfection. The collected cells were incubated on ice for 1 hr with primary antibody mouse anti-flag diluted in 1:200. Samples were washed twice in fluorescence-activated cell sorting buffer (0.1% fetal bovine serum with PBS). After washing, samples were incubated with fluorescent anti-mouse Alexa Fluor 647 antibody 1:400 on ice for 45 min. After being washed twice again, samples were read on a flow cytometer (Attune NxT Acoustic Focusing Cytometer, Thermo Fisher). The results were analyzed through FlowJo. The mean fluorescent intensities (MFIs) were normalized to the MFIs of the NiV F-WT.
 
-## Cell–cell fusion
+### Cell–cell fusion
 
 HEK293T cells were seeded in the 12-well plate and transfected with 1 μg total DNA of NiV-G and wt-F or mutant-F with a 3:1 ratio using Lipofectamine 3000. Cells were fixed with 4% PFA after 18 hr post-transfection. Four or more nuclei within a common cytoplasm were considered syncytium. Syncytia were quantified by counting the number of nuclei in the syncytium per 10 × filed (5 fields are counted per group) under microscope TE2000U.
 
-## Viral entry kinetics assay
+### Viral entry kinetics assay
 
 HEK293T cells were loaded with CCF2-AM in the loading buffer by using a CCF2-AM loading kit (Invitrogen) and incubated at room temperature for 90 min. Loaded cells were washed three times and resuspended in 60 μl of cold fusion buffer [25 mM HEPES (4-(2-Hydroxyethyl)piperazine-1-ethane-sulfonic acid)], 2 mM glutamine, 1 mM CaCl2, 2.5 mM probenecid in HBSS (Hanks' balanced salt solution). 110 μl fusion buffer, 10 μl of VLPs, and 60 μl of loaded cells were added into a black, clear-bottom 96-well plate on ice. The VLPs were allowed to attach to target cells at 4°C for 1 hr. Viral entry was measured by a Tecan fluorometer preheated to 37°C. Fluorescence was recorded every 3 min for 4 hr. A blue-to-green (B/G) fluorescence ratio was determined for each well at each time point. The background control B/G ratio of VLPs expressing only MG and MF was then subtracted from each sample ratio as indicated, and the B/G ratio was plotted against time.
 
-## VSV/NiV pseudovirus production, quantitative PCR, and viral entry quantification
+### VSV/NiV pseudovirus production, quantitative PCR, and viral entry quantification
 
 HEK293T cells in a 10-cm dish were transfected with NiV-F-Flag and NiV-G-HA. pCDNA3.1 vector was transfected as the negative control. At 18–20 hr post-transfection, cells were infected by a recombinant VSV-ΔG-renilla luciferase virus in infection buffer (0.1% fetal bovine serum in PBS). After 48 hr, the supernatant was collected and concentrated by ultracentrifugation through a 20% sucrose cushion in NTE (NaCl-Tris-EDTA) buffer at 125,000 × g at 4°C for 90 min. The supernatant was removed and the pellet was resuspended in the appropriate amount of 5% sucrose in NTE buffer. The expression levels of NiV-F and -G proteins in pseudoviruses were analyzed by western blot, and the VSV genome copy number was quantified by quantitative PCR (qPCR). Briefly, the viral RNA of NiV/VSV pseudoviruses was extracted by using a QIAGEN viral RNA extraction kit (QIAGEN, 52904), reverse transcribed to cDNA by the SuperScript III first-strand synthesis system (Invitrogen, 18080051). The VSV viral cDNA was quantified by using a qPCR Taqman probes (FAM-CGG TAT TTT TCC ATA ATT CAA GTA ATC TGC T-TAMRA) and the VSV-P plasmid was used as a standard to establish the standard curve. To quantify virus entry, Vero cells in a 96-well plate were infected using tenfold serial virus dilutions. Infections were done for 2 hr in infection buffer. After 24 hr, the luciferase activity was measured using a Renilla luciferase assay kit (Promega E2810). The relative light units (RLUs) were plotted against the viral genome copy number per milliliter in GraphPad Prism.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism. The sample size, biological repeats, and statistical analysis used for each test were specified in the figure legend. The sample size was determined based on previous studies sharing similar objectives and methodology.

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.45826.001 In 2016, we reported four substantial observations of APECED/APS1 patients, who are deficient in AIRE, a major regulator of central T cell tolerance (Meyer et al., 2016). Two of those observations have been challenged. Specifically, ‘private’ autoantibody reactivities shared by only a few patients but collectively targeting >1000 autoantigens have been attributed to false positives (Landegren, 2019). While acknowledging this risk, our study-design included follow-up validation, permitting us to adopt statistical approaches to also limit false negatives. Importantly, many such private specificities have now been validated by multiple, independent means including the autoantibodies’ molecular cloning and expression. Second, a significant correlation of antibody-mediated IFNα neutralization with an absence of disease in patients highly disposed to Type I diabetes has been challenged because of a claimed failure to replicate our findings (Landegren, 2019). However, flaws in design and implementation invalidate this challenge. Thus, our results present robust, insightful, independently validated depictions of APECED/APS1, that have spawned productive follow-up studies.
+In 2016, we reported four substantial observations of APECED/APS1 patients, who are deficient in AIRE, a major regulator of central T cell tolerance (Meyer et al., 2016). Two of those observations have been challenged. Specifically, ‘private’ autoantibody reactivities shared by only a few patients but collectively targeting >1000 autoantigens have been attributed to false positives (Landegren, 2019). While acknowledging this risk, our study-design included follow-up validation, permitting us to adopt statistical approaches to also limit false negatives. Importantly, many such private specificities have now been validated by multiple, independent means including the autoantibodies’ molecular cloning and expression. Second, a significant correlation of antibody-mediated IFNα neutralization with an absence of disease in patients highly disposed to Type I diabetes has been challenged because of a claimed failure to replicate our findings (Landegren, 2019). However, flaws in design and implementation invalidate this challenge. Thus, our results present robust, insightful, independently validated depictions of APECED/APS1, that have spawned productive follow-up studies.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Our 2016 paper discussed the close alignment of our first substantial observatio
 
 ## Results and conclusions
 
-## No association between neutralizing autoantibodies to interferons and Type 1 diabetes in APECED/APS1
+### No association between neutralizing autoantibodies to interferons and Type 1 diabetes in APECED/APS1
 
 The comment disputes our observed correlation of strongly neutralizing IFNα autoantibodies with reduced incidence of T1D, claiming to have essentially repeated our experiment, but finding no difference in the IFN neutralization capacity of sera from APECED/APS1 patients with or without T1D.
 
@@ -44,13 +44,13 @@ It is also unfortunate that an imperfect study design was employed in the commen
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45826/elife-45826-fig1-v1.jpg)
 
-**Figure 1.:** In panel (A), the same reporter cell assay (HEK-Blue IFN-α/β cells from InvivoGen) has been applied as in Meyer et al. (2016) but at a single high serum concentration (ns: not significant). (B) Representative fitted dose-response curves that were used in Meyer et al. (2016) to calculate IC50 values for each serum sample. Individual curves are represented with dotted lines and those for grouped values in solid lines (mean ± SEM). (C) IC50 values (expressed as the dilution of serum sufficient to neutralize 50% of IFNα2 activity [12.5 U/ml]) that were calculated from individual and grouped curves shown in panel B. APECED/APS1 patients with Type 1 diabetes (T1D) are depicted in red and APECED/APS1 patients with GAD65 autoantibodies (GADA) but without T1D are in blue. (D) Neutralization of IFNα2 activity (10 000 U/ml) required to induce pSTAT1 was tested with different dilutions of sera from GAD seropositive patients with and without T1D. 2-way ANOVA was used to calculate P-values [ns – not significant, **p≤0.01, ***p≤0.001, ****p≤0.0001].  10.7554/eLife.45826.003Figure 1—source data 1.
+**Figure 1.:** In panel (A), the same reporter cell assay (HEK-Blue IFN-α/β cells from InvivoGen) has been applied as in Meyer et al. (2016) but at a single high serum concentration (ns: not significant). (B) Representative fitted dose-response curves that were used in Meyer et al. (2016) to calculate IC50 values for each serum sample. Individual curves are represented with dotted lines and those for grouped values in solid lines (mean ± SEM). (C) IC50 values (expressed as the dilution of serum sufficient to neutralize 50% of IFNα2 activity [12.5 U/ml]) that were calculated from individual and grouped curves shown in panel B. APECED/APS1 patients with Type 1 diabetes (T1D) are depicted in red and APECED/APS1 patients with GAD65 autoantibodies (GADA) but without T1D are in blue. (D) Neutralization of IFNα2 activity (10 000 U/ml) required to induce pSTAT1 was tested with different dilutions of sera from GAD seropositive patients with and without T1D. 2-way ANOVA was used to calculate P-values [ns – not significant, **p≤0.01, ***p≤0.001, ****p≤0.0001].
 
 The authors of the comment employed a phospho-STAT1 induction assay (Gupta et al., 2016). This is an inherently less sensitive assay, but nonetheless when we adopted it in another new experiment, we obtained the same pattern of results as we obtained with the AP assay. Namely, at high concentrations, the sera of patients with and without T1D showed comparable activities, but at lower, sub-saturation concentrations [50-fold dilutions], the cohort without T1D showed significantly greater capacity to limit IFNα activity (Figure 1D). Thus, because their measurements were insufficiently sensitive to discriminate low neutralizers from high neutralizers, we believe that the experimental design employed in the comment was not appropriate to compare IFN neutralization by the sera of patients with and without T1D: as such, the comment provides no experimental basis on which to dispute the fourth substantial observation of Meyer et al. (2016).
 
 Finally, the observations of Meyer et al. (2016) are germane to an important clinical issue. Specifically, the delayed onset and relatively rare incidence (~15%) of T1D in APECED/APS1 patients is puzzling given that: insulin is a prototypic AIRE-regulated tissue-specific autoantigen; there is defective negative selection of β-cell antigen-specific T cells; pancreatic β-cells are notoriously vulnerable to autoimmune attack; and idiopathic T1D commonly occurs in children and adolescents (Perheentupa, 2006; Anderson et al., 2002; Wolff et al., 2014; Sabater et al., 2005). In this context, the observations of Meyer et al. (2016) suggest that IFN-neutralizing antibodies may delay T1D onset in APECED/APS1 patients and may prevent it completely in those with very high neutralizing titres. This is consistent with longitudinal assessment, albeit limited, reported by in Supplementary Figure 7 of Meyer et al. (2016). When combined with increasing numbers of studies implicating Type I IFN as pathogenic in patients at genetic risk to develop T1D (Ferreira et al., 2014; Kallionpää et al., 2014; Foulis et al., 1987), our data compel us to disagree with the assertion made in the comment that there is insufficient evidence to "embark on in-depth investigations of targeting Type 1 IFNs for the treatment or prevention of Type 1 diabetes."
 
-## No evidence for widespread autoantibody reactivity in APECED/APS1 patients
+### No evidence for widespread autoantibody reactivity in APECED/APS1 patients
 
 The comment disputes our observations that individual APECED/APS1 patients harbor small numbers of ‘private’ specificities shared by few other patients, but collectively comprising a very large number of proteins.
 
@@ -68,6 +68,145 @@ Examples of validation are as follows. First, several private anti-cytokine reac
 
 Second, LIPS likewise validated many non-cytokine targets, including but not limited to 24 of 31 testis- and cancer-associated antigens so far tested (Table 1), commonly with good correlation with the ProtoArray signal intensities (Fishman et al., 2017). Those validated targets included twelve testis-specific and CT-antigens (PDILT, MAGE-B2, SPANXD, SPAG8, SPAG16, CT45A3, GAGE1, GAGE7B, MAGE-B1, MAGE-A3, MAGE-4 and MAGE-A10) (Fishman et al., 2017). This overtly contrasts with the comment and with Landegren et al. (2016) in which the ProtoArray analysis identified reactivity to only two CT-antigens (PDILT and MAGE-B2), providing experimental evidence that their statistical methods were too conservative to detect patients’ private reactivities.
 
+**Table 1.**
+ Testis- and cancer- associated non-cytokine targets screened by LIPS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>LIPS result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPAG8</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>SPANXD</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>TEX264</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>CT45A3</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>GAPDHS</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>SPAG16</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>PDILT</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>GAGE1</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>SPATA7</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>GAGE7</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>CAPNS1</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>KCNIP2</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>POMZP3</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MAGEA4</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>RPL12</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MKNK2</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>S100A7A</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MAGEA3</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MAGEB1</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MAGEB2</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>MAGEA10</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>LCN1</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>FGF12</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>HMGB1</td>
+      <td>pos</td>
+    </tr>
+    <tr>
+      <td>TSPY2</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>MORN2</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>CRYGD</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>GNG4</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>RSU1</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>PAGE1</td>
+      <td>neg</td>
+    </tr>
+    <tr>
+      <td>PAGE2</td>
+      <td>neg</td>
+    </tr>
+  </tbody>
+</table>
+
 Third, Fishman et al. (2017) applied very stringent criteria to the data of Meyer et al. (2016), including a further filtration of private reactivities into those shared by >3 patients. Still there were ~1000 reactivities: 490 shared by only three patients; 245 shared by 4 but not five patients; 111 shared by 5 but not six patients; 116 shared by >6 patients. These reactivities individually and collectively displayed five conspicuous traits: (1) correlations with clinical phenotypes, for example pernicious anemia or vitiligo; (2) more reactivities in patients with more complex clinical phenotypes; (3) a correlation of the average number of reactivities per patient with the severity of the AIRE gene mutation; (4) reactivities assessed longitudinally over relatively short time-frames correlated more closely than those sampled over longer time-frames (e.g. 10 years); and (5) reactivities mostly increased with duration of disease (Fishman et al., 2017).
 
 Fourth, the reactivities described by Meyer et al. (2016) were conspicuously enriched in gene-products of two sub-classes: a) those expressed in lymphoid tissues and with no known connection to AIRE function, but which comprise some of the strongest reactivities (as agreed by Landegren et al., 2016 and the comment); b) diverse tissue-restricted antigens (TRAs), which were strikingly enriched in those expressed by AIRE-expressing medullary thymic epithelial cells (Fishman et al., 2017). Consistent with this, male antigens were also targeted in females (Fishman et al., 2017), whereas non-CT-antigen members of the MAGE family that are expressed in all tissues were not observed as targets (Meyer et al., 2016; Fishman et al., 2017).
@@ -82,10 +221,44 @@ We conclude that our published and ongoing studies (Meyer et al., 2016; Fishman 
 
 ## Materials and methods
 
-## Reporter cell assay
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>Human HEK293 cells - Type I IFNs reporter cells</td>
+      <td>InvioGen</td>
+      <td>cat # hkb-ifnab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-STAT1 (pY701), mouse IgG2a</td>
+      <td>BD Biosciences</td>
+      <td>cat # 562070</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>recombinant human IFNα2a</td>
+      <td>Miltenyi Biotech</td>
+      <td>cat # 130-093-873</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reporter cell assay
 
 The IC50 values of IFNα neutralization of serum samples were tested with the help of HEK-BlueTM IFN-α/β reporter cells (InvivoGen) that express alkaline phosphatase (AP) under the inducible ISG54 promoter after ISGF binding to the IFN-stimulated response elements in the promoter. The cells were grown in DMEM supplemented with heat inactivated 10% FBS and 30 g/ml blasticidin (InvivoGen) and 100 g/ml Zeocin (InvivoGen). Cells were stimulated with IFNα2a (12.5 U/ml, Miltenyi Biotech) that was preincubated for 2 hr with serial dilutions of recombinant antibodies or one fixed concentration (10%) of serum. QUANTI-Blue TM (InvivoGen) colorimetric enzyme assay was used to determine AP in the cell culture supernatants after 21 hr of incubation. OD was measured at 620 nm with Multiscan MCC/340 (Labsystems) ELISA reader and IC50 values were calculated from the dose-response curves using GraphPad Prism eight software.
 
-## Phospho-STAT1 assay
+### Phospho-STAT1 assay
 
 Peripheral blood mononuclear cells (PBMC) from a healthy control were isolated with density gradient centrifugation and aliquoted by 500 000 cells to test tubes containing IFN-α2a (10 000 U/ml) pre-incubated with serum dilutions for 2 hr. Tubes with or without IFN alone served as positive and negative controls. After 15 min of stimulation of PBMCs at 37°C, the cells were fixed immediately with Cytofix buffer, permeabilized with Perm Buffer III and stained with PE-conjugated antibody to phospho-STAT1 (Y701; all from BD Biosciences). Data were acquired with LSRFortessa (BD Biosciences) and analyzed with FCS Express (De Novo Software).

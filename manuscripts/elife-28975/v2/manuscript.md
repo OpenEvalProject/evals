@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.28975.001 Transcription factors bind low-affinity DNA sequences for only short durations. It is not clear how brief, low-affinity interactions can drive efficient transcription. Here, we report that the transcription factor Ultrabithorax (Ubx) utilizes low-affinity binding sites in the Drosophila melanogaster shavenbaby ( svb ) locus and related enhancers in nuclear microenvironments of high Ubx concentrations. Related enhancers colocalize to the same microenvironments independently of their chromosomal location, suggesting that microenvironments are highly differentiated transcription domains. Manipulating the affinity of svb enhancers revealed an inverse relationship between enhancer affinity and Ubx concentration required for transcriptional activation. The Ubx cofactor, Homothorax (Hth), was co-enriched with Ubx near enhancers that require Hth, even though Ubx and Hth did not co-localize throughout the nucleus. Thus, microenvironments of high local transcription factor and cofactor concentrations could help low-affinity sites overcome their kinetic inefficiency. Mechanisms that generate these microenvironments could be a general feature of eukaryotic transcriptional regulation.
+Transcription factors bind low-affinity DNA sequences for only short durations. It is not clear how brief, low-affinity interactions can drive efficient transcription. Here, we report that the transcription factor Ultrabithorax (Ubx) utilizes low-affinity binding sites in the Drosophila melanogaster shavenbaby (svb) locus and related enhancers in nuclear microenvironments of high Ubx concentrations. Related enhancers colocalize to the same microenvironments independently of their chromosomal location, suggesting that microenvironments are highly differentiated transcription domains. Manipulating the affinity of svb enhancers revealed an inverse relationship between enhancer affinity and Ubx concentration required for transcriptional activation. The Ubx cofactor, Homothorax (Hth), was co-enriched with Ubx near enhancers that require Hth, even though Ubx and Hth did not co-localize throughout the nucleus. Thus, microenvironments of high local transcription factor and cofactor concentrations could help low-affinity sites overcome their kinetic inefficiency. Mechanisms that generate these microenvironments could be a general feature of eukaryotic transcriptional regulation.
 
 ## Introduction
 
@@ -32,15 +32,47 @@ We have explored this problem using the shavenbaby (svb) locus, which contains m
 
 ## Results
 
-## Ubx is present in microenvironments of varying local concentrations
+### Ubx is present in microenvironments of varying local concentrations
 
 We first examined whether nuclei in Drosophila melanogaster embryos possess Ubx microenvironments by performing immunofluorescence (IF) staining in fixed embryos and high-resolution confocal imaging using Airyscan (Carl Zeiss Microscopy, Jena, Germany). We found that Ubx protein was not distributed uniformly, but rather exhibited regions of high and low Ubx intensities (Figure 1A,B). To observe Ubx distribution at higher resolution, we expanded the size of the embryos (Tillberg et al., 2016) by approximately four-fold in each dimension (Figure 1C). Nuclei of expanded embryos revealed distinct regions of high Ubx intensity separated by regions of low Ubx intensity. We observed, on average, 185 ± 25 (n = 12, three embryos) clusters per nucleus that were stronger than one-quarter of the maximum Ubx intensity within that nucleus (Figure 1D,E, and Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-v2.jpg)
+
+**Figure 1.:** (A) Stage 15 embryos stained for Ubx protein with a bounding box indicating a ventral region of abdominal segment one (A1). (B) Higher magnification, Airyscan image of the region indicated in panel (A). (C) Stage 15 embryo pre- and post-expansion. (D, E) Expanded stage 15 embryos stained for Ubx protein. The dashed line encircles a single nucleus in (E). (F, I) Projections of summed pixel intensity over 100 s from videos of nos::GAL4, UAS::HaloTag-Ubx for either a wild-type Ubx (F) or a binding deficient Ubx (I), imaged with JF635 dye. (G) Sixteen individual, 100 millisecond video frames of the nucleus surrounded by a dashed box in panel (F). (H, J) Temporal traces of the signal intensity of the regions noted in panel (G) or (I). The color of each trace in (H) and (J) corresponds to the colors of the circles in panels (G) and (I), respectively. AU indicates Arbitrary Units of fluorescence intensity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 3D projection of a single nucleus stained for Ubx protein. (B) Surface plot of contiguous Ubx regions containing a minimum of four pixels with signal intensity greater than 25% of the maximum intensity. (C) Centroids of the Ubx regions found in panel (B). Colors denote different segmented regions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Stage 15 embryo stained with an antibody against Engrailed (En) and Ubx protein. (B) Same image as (A) with only En shown. (C) A higher magnification of the area in the bounding box of panel (A). (D) Stage 15 embryo stained with an antibody against Eve and Ubx protein. (E) Same image as (D) with only Eve shown. (F) A higher magnification of the area in the bounding box of panel (D). (G) Stage 15 embryo stained with an antibody against AbdA and Ubx protein. (H) Same image as (G) with only AbdA shown. (I) A higher magnification of the area in the bounding box of panel (G).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Stage 15 embryo stained with an antibody against transcriptionally active RNA Polymerase II RPB1 (Ser5 phosphorylated) and Ubx protein, with only active Pol II shown. (B) Same image as (A) with both active Pol II and Ubx shown. (C) A higher magnification of the area in the bounding box of panel (B). (D) Stage 15 embryo stained with an antibody against histone H3K4me3 and Ubx protein, with only H3K4me3 shown. (E) Same image as (D) with both H3K4me3 and UBx shown. (F) A higher magnification of the area in the bounding box of panel (E). (G) Stage 15 embryo stained with an antibody against histone H3K27me3 and Ubx protein, with only H3K27me3 shown. (H) Same image as (G) with both H3K27me3 and Ubx shown. (I) A higher magnification of the area in the bounding box of panel (H).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic of the N-terminal HaloTag construct with HaloTag-Ubx under the control of 20x UAS (responsive to GAL4) and the hsp70 prometer. Ubx is inserted at the MCS. (B) Stage 5 embryo resulting from a cross of a homozygous nos::GAL4 line with a homozygous 20x UAS::HaloTag-Ubx line. The embryo was injected with JF635 dye (magenta) at the anterior end. (C) Quantification of the signal intensity of the bounded region in panel (B) along the embryonic axis. A.U. indicates Arbitrary Units of fluorescence intensity. (D, E) Cuticle preps of first instar larva from either a wild-type (WT) (D) or nos::GAL4, UAS::HaloTag-Ubx embryo. (E) Arrows point to the nos::GAL4, UAS::HaloTag-Ubx induced transformation of anterior segments.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A, D, G, J) Projections of summed pixel intensities over 100 s of nos::GAL4, UAS::HaloTag-Ubx nuclei imaged with JF635 dye. (B, E, H, K) Individual 100 millisecond video frames of the nuclei in panels (A, D, G, J). (C, F, I, L) Signal traces of the signal intensity of the regions noted in panels (A, D, G, J), where color of trace corresponds to color of circle. AU indicates Arbitrary Units of fluorescence intensity.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) One hundred millisecond video frame from video of nos::GAL4, UAS::HaloTag-Ubx in late stage 6 embryos with higher overall nuclear concentrations of HaloTag-Ubx molecules compared to stage 5 embryos Figure 1, imaged with JF635 dye. (B) 3D surface plot of the nucleus indicated in panel (A). (C) Individual, 100 millisecond video frames of the nucleus from panel (A). (D) Signal traces of the signal intensity of the regions noted with red and green circles in panel (C). AU indicates Arbitrary Units of fluorescence intensity.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A, B, C) Projections of summed pixel intensity over 100 or 50 seconds (as indicated in the top right corner of the panels) from videos of (A) HaloTag-Ubx, (B) HaloTag-Ubx(R3A, N51A), and (C) HaloTag-NLS (from H2B). (D, E, F) Average intensity profiles across the nuclei in the field of view of the previous panels, showing nuclear enrichment for both variants of HaloTag-Ubx fusion proteins but no enrichment for the NLS-HaloTag construct, which is unstable. The light grey lines show the variance. (G, H, I) Sample frame from single-molecule localization using Fiji, showing (G) short but localized binding of HaloTag-Ubx, (H) very short and fast moving single-molecule traces from DNA-binding deficient HaloTag-Ubx, and (I) no localization at all for the unstable HaloTag-NLS.
 
 One explanation for the observed distribution of Ubx is that transcription factors localize generally to accessible regions of the nucleus that have high levels of transcriptional activity. This mechanism, if shared by transcription factors in general, should yield Ubx distributions that mostly overlap with that of other transcription factors. Engrailed (En), a transcription factor unrelated to Ubx, displayed non-uniform sub-nuclear concentrations, but its distribution only partially overlapped with that of Ubx (Figure 1—figure supplement 2A–C, white regions indicate overlap). We similarly observed only partial overlap between Ubx and Even-skipped (Eve) (Figure 1—figure supplement 2D–F). Abdominal-A (AdbA), a paralog of Ubx that is expressed mainly in separate cells from Ubx and that has similar DNA-binding specificity as Ubx, was excluded from Ubx regions in the few nuclei where both were expressed (Figure 1—figure supplement 2G–I). These results indicate that the distributions of these transcription factors do not result from a shared mechanism that limits the distribution of all transcription factors to the same sub-nuclear regions.
 
 We also examined whether Ubx simply occupies regions containing actively transcribed DNA. Both active RNA Polymerase II (Pol II, Ser5 phosphorylated CTD) and the methylated histone H3K4me3, which marks actively transcribed DNA, only partially overlapped with Ubx (Figure 1—figure supplement 3A–F). In contrast, the histone mark H3K27me3, which marks regions of repressed chromatin, displayed almost no overlap with the distribution of Ubx (Figure 1—figure supplement 3G–I). Thus, Ubx is not merely restricted to regions inside the nucleus that are available to transcription factors or to regions of high transcriptional activity.
 
-## Ubx repeatedly binds to specific regions in nuclei of live embryos
+### Ubx repeatedly binds to specific regions in nuclei of live embryos
 
 To understand if the heterogeneous distribution of Ubx is dynamic or stable over the timescale of seconds to minutes, as well as to rule out the possibility that our observations of Ubx microenvironments are an artifact of the fixation protocol (Teves et al., 2016), we examined the spatiotemporal dynamics of single Ubx molecules in live Drosophila embryos. Single-molecule imaging has been mostly performed in cell lines previously because live-imaging studies of transcription factor dynamics in embryos requires overcoming several new challenges, including imaging at lower signal-to-noise ratios, compensating for rapid morphological changes during embryonic development, and determining how to deliver fluorescent dyes. We overcame these challenges by generating a HaloTag-Ubx transgene that allowed precise control of fusion protein levels (Figure 1—figure supplement 4A) and coupling HaloTag-Ubx in vivo to new, strongly fluorescent dyes (Grimm et al., 2017). The transgene we built can be expressed either from a heat-shock promoter (hsp70) or from a 20x UAS promoter by crossing with a GAL4 driver line.
 
@@ -50,19 +82,35 @@ Observation of embryos at late stage 6 showed that total HaloTag-Ubx concentrati
 
 To determine whether regions of high Ubx concentration depended on DNA binding, we performed the same experiments with a version of the HaloTag-Ubx transgene where Arg3 and Asn51 of the homeodomain were mutated to Ala (R3A and N51A), abrogating DNA binding (Slattery et al., 2011b). Both the wild-type and DNA-binding deficient Ubx were expressed and imported into the nucleus (Figure 1—figure supplement 7A,B,D,E,G, and H), suggesting that the protein is stable. In contrast, an unstable HaloTag-NLS construct (NLS from H2B) serving as a negative control, neither increased JF635 fluorescence post injection nor became enriched into the nucleus (Figure 1—figure supplement 7C,F, and I). The mutant HaloTag-Ubx (R3A N51A) did not display spatial heterogeneity and exhibited only extremely brief fluctuations in intensity inconsistent with transcription-factor DNA-binding events (Figure 1I and J). These results suggest that binding of Ubx to DNA is required to generate restricted nuclear distributions of Ubx.
 
-## Transcriptionally active svb loci and enhancers correlate with regions of high Ubx concentration
+### Transcriptionally active svb loci and enhancers correlate with regions of high Ubx concentration
 
 The heterogeneous distributions of Ubx we observed are consistent with the hypothesis of nuclear ‘microenvironments’ (Reiter et al., 2017), whereby high local concentrations of transcription factors may drive transcription. Therefore, we examined whether these regions of high Ubx concentration co-localized with sites of active transcription. The svb gene is directly regulated by Ubx protein through binding of Ubx to low-affinity sites in multiple svb enhancers (Crocker et al., 2015). We marked sites of active svb transcription by fluorescence in situ hybridization (FISH) and compared the localization of actively transcribed svb loci to Ubx protein concentration (Figure 2A and B). We observed high local Ubx concentrations surrounding active svb transcription sites (Figure 2C–F). To quantify Ubx distributions around these sites, we calculated the radially averaged Ubx intensity as a function of distance r from the point of maximum FISH intensity for each svb transcription site (Figure 2G–I). Ubx intensity was normalized to one at r = 0 (maximum FISH intensity) and averaged across all sites measured. To adjust for background fluorescence, we located the minimum intensity in the averaged Ubx distribution (r = 2–4 μm) and subtracted that value from the distribution. The first micrometer of the radially averaged 3D distribution is shown, with the shaded area representing the variance (Figure 2J). Within the first micrometer, svb transcription sites showed a relative enrichment of Ubx. Because these sites are on average within 200 nm of a local intensity maximum, Ubx intensity decreased monotonically away from the transcription sites, leading to a relatively constant variance after 200 nm. The normalized Ubx intensity after background subtraction at the site of svb transcription was 0.60 ± 0.17 (n = 59, four embryos, uncertainty is the variance of the background) and decreased approximately 250 nm away from the site. Thus, active svb transcription sites colocalized with areas of high Ubx concentration spanning approximately a few hundred nanometers.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig2-v2.jpg)
+
+**Figure 2.:** (A) Embryos co-stained for both Ubx protein (magenta) and shavenbaby (svb) intronic mRNA (green). Bright spots of svb intronic nascent mRNA mark actively transcribed svb loci. Regions with high levels of both svb transcription and Ubx appear white (the sum of the two colors). (B) Higher magnification, Airyscan image of the region noted in panel (A), revealing sites of svb transcription (green). (C, D) Higher magnification, Airyscan images of the nuclei noted in panel (B). (E, F) 3D surface plots of the images in panels (C) and (D), centered on the sites of svb transcription (green), where height represents Ubx intensity. (G) A representative nucleus used for quantifying Ubx distribution around a svb transcription site. (H) 3D view of the confocal stack from the nuclei in panel (G). (I) Schematic outlining the method of Ubx quantification surrounding svb transcriptional sites. A 3D radial distribution of the average Ubx intensity on the surface of a sphere centered at the site of svb transcription was calculated. The gray sphere and white outlines is an example of the sphere with a radius r = 1 μm. (J) Quantification of the average relative concentration of Ubx and the distance from svb transcription sites (n = 59, see method supplements ‘settings for extracting radially averaged distributions’ for how relative concentration is computed). The shaded region indicates the variance. A.U. indicates Arbitrary Units of fluorescence intensity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 3D surface plot of a nuclear region showing two transcriptionally active svb loci close by and possibly within the same Ubx environment. The embryo is co-stained for Ubx (magenta) and the introns of nascent svb mRNA (green). The height of the plot indicates the Ubx intensity. A.U. indicates Arbitrary Units of fluorescence intensity. (B) The whole nucleus shown in (A), with Ubx in white and svb intronic mRNA in green. The svb locus is on the X chromosome. The scale bar is 2 µm. (C, D, E) The same plot as (B) stained additionally for either a reporter mRNA (lacZ) under the control of 7H (C) or E3N (D) minimal enhancers derived from svb or introns of the nascent mRNA of the endogenous forkhead locus (fkh, E). All are on chromosome 3. (F) Quantification of the distance between pairs of transcription sites. The red line is the mean, the grey box is the standard error, and the black bars are the maxima and minima of the distribution. The number of transcription site pairs are: n = 13 (svb only), n = 11 (svb & 7H), n = 12 (svb & E3N), and n = 12 (svb & fkh).
+
 If Ubx protein co-localizes with actively transcribed svb loci because Ubx drives svb expression, then we would expect that transcription at a locus not regulated by Ubx should not co-localize with high Ubx concentrations. Indeed, we observed that active transcription sites driven by a synthetic enhancer containing binding sites for a TALEA transcription factor (Crocker et al., 2016a; Crocker and Stern, 2013; Crocker et al., 2017) did not show Ubx enrichment on average despite wide fluctuations in Ubx levels, with a relative enrichment of Ubx at TALEA-driven enhancers of 0.02 ± 0.63 (Figure 3A–C, n = 29, three embryos). As these transcription sites are not close to maxima of Ubx intensity, the variance in these distributions incresed with distance from the site of transcription.
 
-## Transcription sites of svb and svb enhancers co-localize
+![Figure 3.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the synthetic TALEA transcription network driven by the Hunchback (Hb) promoter, indicating TALEA-binding sites with green circles. (B) Early stage 15 embryos carrying the TALEA synthetic network stained with an antibody against ß-Galactosidase. (C) Quantification of the relative concentration of Ubx based on the distance from synthetic network transcription sites. (D) Schematic of the shavenbaby locus, indicating embryonic cis-regulatory enhancers in boxes. The ventral embryonic enhancers DG3, E3N and 7H are highlighted in magenta, yellow and blue boxes, respectively. (E, G, I, K, M, O, Q) Early stage 15 embryos carrying the reporter constructs DG3-lacZ (E), E3N-lacZ (G, I, K), or 7H-lacZ (M, O, Q) stained with an antibody against ß-Galactosidase, with Ubx-Exd sites altered as indicated. (F, H, J, L, N, P, R) Quantification of the relative concentration of Ubx versus the distance from svb transcription sites. The shaded regions in panels (C, F, H, J, L, N, P, R) indicate the variance. A.U. indicates Arbitrary Units of fluorescence intensity.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The Ubx intensity distributions at transcription sites were plotted for the E3N and 7 hr enhancers after subtraction of background fluorescence from raw Ubx intensities. The naming convention of the enhancers follows that of Figure 3. The density (y-axis) for each distribution is calculated by the count per bin divided by a normalization factor. The normalization factor is the bin size multiplied by the number of transcription sites (n) in the dataset. The dotted gray line is the median of the distributions, which are: (A) 160 for E3N High Affinity, (B) 290 for E3N WT, (C) 400 for E3N Mut23, (D) 260 for 7H WT, (E) 350 for 7H Mut23, and (F) 440 for 7H Mut123.
+
+### Transcription sites of svb and svb enhancers co-localize
 
 In numerous nuclei actively transcribing svb on the X chromosome, we observed what appeared to be two transcription sites within 200 nm of each other (Figure 2—figure supplement 1A and B). This indicates that the svb locus on homologous X chromosomes often co-localizes to the same Ubx microenvironment. There are several possible mechanisms that could explain this observation. We consider two broad classes of mechanism. First, a unique chromosomal signature specific to the region containing the svb locus could facilitate localization of homologous alleles to the same transcriptional microenvironments. Second, microenvironments contain distinct combinations of transcription factors and enhancers localize to the relevant microenvironments to enable transcription. To distinguish between these alternative hypotheses, we examined the spatial distribution of the native svb locus, located on the X chromosome, and a single svb enhancer driving lacZ expression which we placed on chromosome 3.
 
 Double-FISH experiments revealed that the native svb locus and the ectopic svb enhancer co-localized often in nuclei in which both were transcribed (Figure 2—figure supplement 1C and D). In contrast, the transcription sites of forkhead (fkh, also on chromosome 3) did not colocalize with the svb locus (Figure 2—figure supplement 1E). The average distance between pairs of related transcription sites (svb-svb, svb-7H, and svb-E3N) within single nuclei is approximately 250 nm, near the resolution limit of AiryScan images (Figure 2—figure supplement 1F). On the other hand, fkh and svb transcription sites are on average 1 µm apart. These results indicate that related enhancers co-localize in transcriptional microenvironments independently of their chromosomal location. This suggests that transcription factor microenvironments are highly differentiated and that related enhancers often exploit the same transcriptional microenvironments.
 
-## Manipulation of binding site number and affinity inversely changes the concentration of Ubx required to activate svb enhancers
+### Manipulation of binding site number and affinity inversely changes the concentration of Ubx required to activate svb enhancers
 
 The experiments described so far showed that the actively transcribed native svb locus co-localizes with local concentration maxima of Ubx in the nucleus. We wondered whether the position of actively transcribed enhancers within Ubx microenvironments depended on Ubx binding site affinity. To address this question, we examined transcription driven by the individual svb enhancers DG3, E3N, and 7 hr, each of which contains a cluster of low-affinity Ubx-binding sites and can independently drive transcription of a reporter gene when moved from their native location (Crocker et al., 2015). Transcription sites driven by these relocated enhancers also colocalized with regions of high Ubx concentration (Figure 3D). The relative Ubx enrichment for each of the three enhancers was 0.56 ± 0.16 for DG3 (n = 61, three embryos), 0.51 ± 0.19 for E3N (n = 142, 11 embryos), and 0.68 ± 0.10 for 7 hr (n = 38, three embryos) (Figure 3E–H,M,N). These results indicate that low-affinity enhancers actively transcribed far from the native svb locus also co-localize with microenvironments of high Ubx concentrations.
 
@@ -74,13 +122,13 @@ Across all manipulations, we observed an inverse correlation between binding sit
 
 Taken together, these data suggest that enhancers may be dynamically sampling local nuclear environments. A lower fraction of nuclei showing transcription from enhancers with binding site deletions (Figure 3K,O,Q) may occur because there are fewer areas of the nucleus in which peak Ubx levels are sufficient for weakened svb elements.
 
-## The Ubx cofactor Homothorax (Hth) is co-enriched around transcription sites with Ubx
+### The Ubx cofactor Homothorax (Hth) is co-enriched around transcription sites with Ubx
 
 Co-factors can stabilize low-affinity binding interactions through cooperative and scaffolding interactions with transcription factors. A co-factor-dependent enhancer would require sufficient concentrations of both the factor and the co-factor to drive transcription. The homeodomain proteins Extradenticle (Exd)/Pbx and Homothorax (Hth)/MEIS (Slattery et al., 2011b; Rieckhof et al., 1997; Ryoo and Mann, 1999; Lelli et al., 2011) interact with Ubx during DNA binding, and Ubx and Hth regulate a partially overlapping set of genes (Choo et al., 2011; Slattery et al., 2011a). In vitro, Ubx requires Hth/Exd to bind to the low-affinity sites in 7H and E3N (Crocker et al., 2015). In vivo, Hth deficiency led to the loss of expression for both 7H and E3N (Figure 4A–D). Consistent with this requirement for both Ubx and Hth, Hth was co-enriched with Ubx around active transcription sites driven by 7H or E3N (Figure 4E–T). The relative enrichment for Ubx and Hth, respectively, was 0.58 ± 0.14 and 0.41 ± 0.16 for 7H (n = 51, seven embryos) and 0.66 ± 0.13 and 0.39 ± 0.24 for E3N (n = 74, five embryos). These results suggest that transcription from co-factor-dependent enhancers requires microenvironments that contain high concentrations of both transcription factors and their co-factors. This observation provides further support for the model that transcription factor microenvironments are present as multiple highly differentiated transcription domains containing unique combinations of transcription factors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/28975/elife-28975-fig4-v2.jpg)
 
-**Figure 4.:** (A–D) Early stage 15 embryos with 7H-lacz (A–B) or E3N-lacZ reporter constructs (C–D) stained with an antibody against ß-Galactosidase in either wild-type (WT) (A and C) or hth mutant embryos (P2B and D). (E–H) A nucleus displaying active transcription of the 7H-lacZ reporter construct denoted by a bounding box (E–H) and co-stained for Ubx protein (F), Hth protein (G), or both Ubx and Hth proteins (H). (I–L) A nucleus displaying active transcription of the E3N-lacZ reporter construct denoted by a bounding box (I–L) and co-stained for Ubx protein (J), Hth protein (K), or both Ubx and Hth proteins (L). (M–P) 3D surface plots of the images in panels (F, G, J, K), centered on the sites of enhancer activity (yellow). The height of the plot is Ubx intensity in panels (M) and (O) and Hth intensity in panels (N) and (P). (Q–T) Quantification of the relative concentration of Ubx (Q, S) and Hth (R, T) versus distance from active enhancer sites. The shaded regions indicate the variance. A.U. indicates Arbitrary Units of fluorescence intensity. (U, V) A conceptual model showing nuclei with multiple regions of high local concentrations of Ubx or Hth (U) and high local concentrations of both Ubx and Hth that allow rapid ON rates (V, grey arrows) and collectively may recruit RNA pol II complexes.
+**Figure 4.:** (A–D) Early stage 15 embryos with 7H-lacz (A–B) or E3N-lacZ reporter constructs (C–D) stained with an antibody against ß-Galactosidase in either wild-type (WT) (A and C) or hthP2 mutant embryos (B and D). (E–H) A nucleus displaying active transcription of the 7H-lacZ reporter construct denoted by a bounding box (E–H) and co-stained for Ubx protein (F), Hth protein (G), or both Ubx and Hth proteins (H). (I–L) A nucleus displaying active transcription of the E3N-lacZ reporter construct denoted by a bounding box (I–L) and co-stained for Ubx protein (J), Hth protein (K), or both Ubx and Hth proteins (L). (M–P) 3D surface plots of the images in panels (F, G, J, K), centered on the sites of enhancer activity (yellow). The height of the plot is Ubx intensity in panels (M) and (O) and Hth intensity in panels (N) and (P). (Q–T) Quantification of the relative concentration of Ubx (Q, S) and Hth (R, T) versus distance from active enhancer sites. The shaded regions indicate the variance. A.U. indicates Arbitrary Units of fluorescence intensity. (U, V) A conceptual model showing nuclei with multiple regions of high local concentrations of Ubx or Hth (U) and high local concentrations of both Ubx and Hth that allow rapid ON rates (V, grey arrows) and collectively may recruit RNA pol II complexes.
 
 ## Discussion
 
@@ -92,11 +140,11 @@ Transcription factor microenvironments may be a general feature of eukaryotic tr
 
 ## Materials and methods
 
-## Preparing fixed Drosophila embryos
+### Preparing fixed Drosophila embryos
 
 D. melanogaster strains were maintained under standard laboratory conditions. All enhancer constructs were cloned into the placZattB expression construct with a hsp70 promoter (Crocker et al., 2015). Transgenic fly lines were made by Rainbow Transgenic Flies Inc. E3 and 7H were integrated at the attP2 landing site. DG3 was integrated at ZH-86Fb.
 
-## Immuno-fluorescence staining of transcription factors and in situ hybridization to mRNA
+### Immuno-fluorescence staining of transcription factors and in situ hybridization to mRNA
 
 Flies were reared at 25°C and embryos were fixed and stained according to standard protocols (Crocker et al., 2015). Primary antibodies were detected using secondary antibodies labeled with Alexa Fluor dyes (1:500, Invitrogen). In situ hybridizations were performed using DIG or biotin-labeled, antisense RNA-probes against a reporter construct RNA (lacZ) or the first intron of svb or fkh. DIG-labeled RNA products were detected with a DIG antibody: Invitrogen, 9H27L19 (1:200 dilution) and biotin-labeled RNA products are detected using a biotin antibody: Pierce, PA1-26792 (1:200).
 
@@ -120,59 +168,59 @@ Histone H3K4me3: Cell-signaling technology C42D8 (1:200)
 
 LacZ: Promega anti-ß-Gal antibody (1:1000)
 
-## Imaging fixed embryos with Airyscan
+### Imaging fixed embryos with Airyscan
 
 Fixed Drosophila embryos mounted in ProLong Gold mounting media (Molecular Probes, Eugene, OR) were imaged on a Zeiss LSM 880 confocal microscope with Airyscan (Carl Zeiss Microscopy, Jena, Germany) using 3D Airyscan in SR mode to obtain images with 1.7-fold higher resolution compared to diffraction-limited confocal imaging (Sheppard et al., 2013) (method supplements: imaging setup for Airyscan). Images presented in the figures were processed with ImageJ (Schindelin et al., 2015).
 
-## Expanding fixed embryos
+### Expanding fixed embryos
 
 To expand embryos, after fixation and staining, embryos were embedded into poly-acrylate gels and expended according to a previously published protocol (Tillberg et al., 2016) (method supplements: handling expansion gels).
 
-## Imaging expanded embryos
+### Imaging expanded embryos
 
 Expanded gels containing embryos were imaged in 6-well glass bottom plates (Cellvis, Mountain View, CA) using a Zeiss LSM 800 confocal microscope (Carl Zeiss Microscopy, Jena, Germany) using standard settings (method supplements: imaging setup for expanded embryos).
 
-## HaloTag-Ubx transgene construct for live imaging and overexpression assay
+### HaloTag-Ubx transgene construct for live imaging and overexpression assay
 
 Transgenic fly lines containing HaloTag-Ubx under the control of both a hsp70 and a 20x UAS promoter was made by Rainbow Transgenic Flies Inc. The lines were made homozygous for the transgene.
 
-## Preparing embryos for live imaging
+### Preparing embryos for live imaging
 
 Embryos resulting from crossing the homozygous line with the HaloTag-Ubx transgene with a nos::GAL4 driver line were injected following previously established protocols (Rubin and Spradling, 1982) with the HaloTag ligand of JF635. Briefly, embryos were collected for 30 min at 25°C and placed in oxygen permeable Halocarbon 27 oil. The stock dye solution of 1 mM JF635 with a HaloTag ligand in DMSO was diluted 1:100 into fly injection buffer and injected into the posterior end of the embryos. The embryos were then aged to stage 5 or late stage 6 and imaged in oxygen permeable Halocarbon 27 oil.
 
-## Live imaging of Drosophila embryos
+### Live imaging of Drosophila embryos
 
 Injected embryos were imaged on a customized inverted Nikon Ti-Eclipse (Nikon Instruments, Tokyo, Japan) with the appropriate settings (method supplements: imaging setup for live embryos).
 
-## Embryos for HaloTag-Ubx overexpression assay
+### Embryos for HaloTag-Ubx overexpression assay
 
 Embryos from the homozygous HaloTag-Ubx transgene line were exposed to 30°C to induce the heat shock promoter and cuticle preps were prepared following previously established protocols (Crocker et al., 2015).
 
-## Radially averaged distributions centered around transcription sites
+### Radially averaged distributions centered around transcription sites
 
 To obtain the distributions of Ubx and Hth around a transcription site, the processed Airyscan stacks obtained from the Zeiss LSM 880 confocal microscope were analyzed in Fiji (Schindelin et al., 2012) using native functions and the 3D ImageJ Suite plugin (Schmid et al., 2010). Radially averaged distributions for individual transcription sites were computed using the 3D ImageJ Suite Plugin. Distributions for all sites were averaged and background offset in Matlab (MathWorks, Natick, MA) using a custom script (method supplements: settings for extracting radially averaged distributions).
 
-## Method supplements
+### Method supplements
 
-## Imaging setup for Airyscan
+#### Imaging setup for Airyscan
 
 All Airyscan images were acquired using a Zeiss Plan-Apochromat 63x/1.4 Oil DIC M27 objective due to its well-characterized point spread function. First an embryo at the appropriate developmental stage (stage 15 for most embryos) and proper orientation was located. The band of mRNA expression in high Ubx regions of the first abdominal (A1) segment was then found. Within that band, areas containing transcription sites in nuclei of high Ubx expression were imaged. Images with both Ubx and Hth were acquired in the same manner by locating the proper area using the mRNA and Ubx. When Ubx was imaged together with RNA polymerase II, a histone marker, or other transcription factors, Ubx expression levels were used to locate the region of interest.
 
 The optimal setting suggested by Zeiss for the number of pixels in the x-y direction (40 nm per pixel) and displacement in the z-stack (190 nm) were used for all Airyscan images. The images from different fluorophores were acquired sequentially with the appropriate laser lines (405 nm, 488 nm, 561 nm, or 633 nm) and spectral filters. The laser power and gain were adjusted to maximize the signal to noise ratio within the dynamic range of the Airyscan detector. The acquired stacks were processed with Zen 2.3 SP1 (Carl Zeiss Microscopy GmbH, Jena, Germany) in 3D mode to obtain super-resolved images.
 
-## Handling expansion gels
+### Handling expansion gels
 
 To allow easier handling of expanded gels, the gels containing embryos were cast into eight-well silicone isolators without adhesives (eight round chambers with a diameter of 9 mm and a thickness of 0.5 mm, Grace Bio-Labs (Bend, OR)) and allowed to polymerize. The gels were transferred into a six-well glass-bottom cell culture plate (Cellvis, Mountain View, CA) and expanded using ultrapure water containing 500 nM DAPI. Before imaging, the water was removed and the gel encased in 3% low melting temperature agarose (NuSieve GTG Agarose, Lonza Group Ltd, Basel, Switzerland), taking care not to allow the agarose to flow under the gel and float the gel away from the cover glass bottom. Water was then added back into the wells to prevent drying.
 
-## Imaging setup for expanded embryos
+### Imaging setup for expanded embryos
 
 A long working-distance water immersion objective, the Zeiss LCI Plan-Neofluar 25x/0.8 Imm Korr DIC M27, was selected for index-matching with the gel and its ability to image up to 400 µm above the surface of the coverslip. Stage 15 embryos in the correct orientation were located using the DAPI and Ubx staining. Regions of low to high Ubx expression were imaged sequentially using the appropriate laser lines (405 nm, 488 nm, or 561 nm) with the proper spectral filters. The laser power settings and the gain were selected to maximize signal to noise within the dynamic range of the detector. The full field of view of the microscope was imaged with 2048 × 2048 pixels and with a z-step of 1 μm. The final images presented were processed in ImageJ (Schindelin et al., 2015).
 
-## Imaging setup for live embryos
+### Imaging setup for live embryos
 
 All videos were collected under a Nikon CFI Plan Apo NCG 100X Oil NA 1.41 objective with an Andor iXon 897 EMCCD camera (Andor Technology Ltd., Belfast, UK). Embryos at stage 5 and late stage 6 in the correct orientation were found and imaged. We selected an area in the middle of the embryo with enough dye-labeled Ubx molecules to observe single molecules and we avoided regions close to the injection site to avoid oversaturating the camera (compare with Figure S5A-D where there are too many labeled Ubx). The samples were illuminated with a 633 nm laser to image the JF635 tagged Halo-Ubx molecules with laser power and camera gain set to maximize signal from individual Ubx molecules without oversaturating the EMCCD detector. The 512 × 512 pixel videos were acquired at an exposure time of 100 ms per frame for up to 200 s. Images were processed using ImageJ to generate the time-averaged images and the intensity-over-time traces presented in the figures.
 
-## Settings for extracting radially averaged distributions
+### Settings for extracting radially averaged distributions
 
 To extract radially averaged protein distributions, we used Fiji to identify transcription sites inside nuclei by thresholding at a level that is roughly 50-fold above the background intensity. The center of a transcription site was defined as the pixel of maximum intensity in 3D in the mRNA channel inside a nucleus with high levels of Ubx expression. The radially averaged distribution out to a radius of 4 μm from transcription site for the transcription factor in 3D was computed using the 3D ImageJ Suite. The suite generates the distribution by computing the average intensity on the surface of a sphere with a radius r from the center in three dimensions for all the values of r ranging from zero to a desired outer limit (4 μm in this case).
 

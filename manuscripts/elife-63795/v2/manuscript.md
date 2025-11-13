@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03m0zs870 Univ Lyon, Université Lyon 1, Inserm, Stem Cell and Brain Research Institute U1208 Bron France
-2. https://ror.org/05neq8668 Sorbonne Université, CNRS, Institut des Systèmes Intelligents et de Robotique, ISIR, F-75005 Paris France
-3. https://ror.org/04a9tmd77 Nash Family Department of Neuroscience and Friedman Brain Institute, Icahn School of Medicine at Mount Sinai New York United States
+1. Univ Lyon, Université Lyon 1, Inserm, Stem Cell and Brain Research Institute U1208 Bron France ([ROR:03m0zs870](https://ror.org/03m0zs870))
+2. Sorbonne Université, CNRS, Institut des Systèmes Intelligents et de Robotique, ISIR, F-75005 Paris France ([ROR:05neq8668](https://ror.org/05neq8668))
+3. Nash Family Department of Neuroscience and Friedman Brain Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 
@@ -44,9 +44,25 @@ We analysed 570 units recorded in MCC and LPFC (298 and 272 units, respectively)
 
 One basic assumption to explain local dynamical properties is that interactions between cell types (e.g. pyramidal cells and interneurons) might induce specific dynamics in different areas (Medalla et al., 2017; Wang, 2020; Womelsdorf et al., 2014b). To separate putative cell populations in extracellular recordings, we clustered them using single unit waveform characteristics (Nowak et al., 2003). Although associating spike shapes to cell types is not a fully reliable methods for cell-type identification (Vigneswaran et al., 2011), several studies have shown that on population data different cell types and coding properties can be clustered in this way (Krimer et al., 2005; Trainito et al., 2019). Clustering our dataset discriminated three populations, with short, large, and very large spikes (Figure 1c). The results below were obtained using two clusters (small, and large + very large), as detailed analyses showed no clear difference between large and very large spike populations (see Figure 2—figure supplement 1). We classified units as FS (short spikes; nMCC = 41, nLPFC = 57 units) or RS (long spikes; nMCC = 257, nLPFC = 215 units) which, in previous studies, were associated to putative interneurons and pyramidal cells, respectively. In the rest of the paper, and especially for the purpose of modelling, we thus assume simplistically an equivalence between FS vs. RS and interneurons vs. excitatory neurons.
 
-## MCC temporal signatures differ for RS units
+### MCC temporal signatures differ for RS units
 
 From spike autocorrelograms we extracted multiple metrics, namely the peak latency (LAT; the time lag of the peak of the autocorrelogram) and time constant (TAU) (see Materials and methods). Together, TAU and LAT constituted the temporal signature of single neurons spiking dynamic. The success rate of fitting an exponential function on spike autocorrelograms using the whole recordings was 91.4% and largely outperformed the alternative method (see Materials and methods). Figure 2a shows comparative examples. All subsequent analyses of this study were performed on this pool of units (nMCC-FS=39, nMCC-RS=225, nLPFC-FS=55, nLPFC-RS=202). Note that because of the methodological criteria on spike numbers required for good fitting, the sample size of units can change depending on the analysis, especially when restricting recordings to specific time periods. Note also that in the pool of neurons where TAU was successfully extracted using both methods (n=280, see Materials and methods for criteria), we found a correlation between the two measures (Murray methods – scTAU – vs. spike autocorrelograms; Spearman’s correlation: rho(282) = 0.46, p<10–15) although scTAU were overall larger, as observed by another recent study using a different method (Spitmaan et al., 2020). Importantly, TAU was not correlated with firing rate across units (Figure 2b, Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig2-v2.jpg)
+
+**Figure 2.:** (a) Three single examples of spike count (purple, scTAU) vs. normalized spike autocorrelograms (green) contrasting the outcome of the two methods. The measured time constant (TAU) is indicated for both when possible. Numbers of spikes used for each method is also indicated. (b) TAU values extracted from each methods are significantly correlated (n=280, Spearman’s rho(282) = 0.46, p<10–15). (c) Distributions of TAUs (upper histograms) and peak latencies (LAT – lower histogram) for fast spiking (FS) (left) and regular spiking (RS) (right) units. ‘n’ indicates the number of units. Vertical dashed lines indicate medians of respective populations. Boxplots on the right show the respective population data. TAU values were longer in MCC (dark grey) than in LPFC (blue) for both FS and RS (linear model fit on BLOM transformed TAU for normality, TAU = region * unit type, region: t=−4.68, p<10–6, unit type: ns, interaction: ns). Peak latencies significantly differed between MCC and LPFC for RS but not for FS units (medians: MCC FS = 48.5 ms, RS = 102.0 ms, LPFC FS = 48.5 ms, RS = 51.8 ms; linear model fit on BLOM transformed latency for normality, latency = region * unit type, interaction: t-value=−3.57, p<10–3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) TAUs and (b) autocorrelogram peak latencies distribution in the three-cell populations in the MCC and the LPFC. Densities were computed using a Gaussian kernel with standard deviation of 50 and 15 ms respectively for TAU and peak latencies.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The graphs relate TAU measured from specific recording periods (whole, engage, pause, etc.) and firing rate as measured in specific task epochs (feedback or decision). Note that each selection of period for firing rate measures changes the number of units that can be analysed because of the criteria on data size (see figure). Spearman’s rank correlations with Bonferroni corrected p-values (eight comparisons): engage after first pause and decision: rho(374)=0.11, p=0.31; engage after first pause and feedback: rho(375)=0.12, p=0.13; pause and decision: rho(266)=0.17, p=0.042; pause and feedback: rho(267)=0.18, p=0.031; whole and decision: rho(522)=0.06, p=1.00; whole engage and decision: rho(520)=0.05, p=1.00; whole engage and feedback: rho(519)=0.07, p=1.00; whole and feedback: rho(521)=0.08, p=0.54.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Sample sizes: monkey A: LPFC FS n=31, RS n=142; MCC FS n=31, RS n=163 - for monkey H: LPFC FS n=26, RS n=73 ; MCC FS n=10, RS n=94.
 
 TAU was higher on average in MCC than in LPFC for both RS and FS cells (medians ± sd: MCC FS = 284.7 ± 132 ms, RS = 319.5 ± 199 ms, LPFC FS = 175.1 ± 67 ms, RS = 191.6 ± 116 ms; linear model fit on Blom transformed TAU for normality, TAU = area * unit type, area: F(1,520)=18.36, p<10–4, unit type: F(1,520)=2.72, p=0.12, interaction: F(1,520)=0.19, p=0.79) (Figure 2c; individual monkey data in Figure 2—figure supplement 3).
 
@@ -54,7 +70,7 @@ Additionally, our new approach allowed us to extract LAT, which captures other a
 
 TAU and LAT both reflect temporal dynamics, but those measures were significantly correlated only in LPFC RS units (Spearman’s correlations with Bonferroni correction, only significant in LPFC RS: rho(203) = 0.29, p<10–3). The absence of correlation suggested TAU and LAT likely reflect different properties of cortical dynamics. Moreover, the data also suggested that the different temporal signatures of RS units could reflect differences in the physiology and/or local circuitry determining the intrinsic dynamical properties of MCC and LPFC.
 
-## MCC temporal signatures are modulated by current behavioural state
+### MCC temporal signatures are modulated by current behavioural state
 
 A wide range of temporal signatures might reflect a basic feature of distributed neural processing (Bernacchia et al., 2011). But do different temporal signatures play distinct roles in terms of neural processing in different areas? And, are these signatures implicated differentially, depending on task demands? These questions are unresolved, although recent studies suggest a lack of relationship between individual neuron timescale and selectivity to task-relevant signals (Spitmaan et al., 2020). As single units were recorded while monkeys performed a decision-making task (described in Stoll et al., 2016; Figure 3a), we extracted each unit’s temporal signature separately for periods in which monkeys were either engaged in the cognitive task or were pausing from performing the task (Figure 3b). TAU extracted during engage and pause periods were significantly correlated across neural populations (MCC FS n=19, LPFC FS n=21, MCC RS n=80, LPFC RS n=97, Pearson correlation: r(215)=0.20, p=3.0e-3), indicating that TAU reflects stable temporal properties across conditions (corrected from time-on-task, see Materials and methods). The MCC RS population exhibited a significant modulation of TAU, expressing longer TAU during engage periods compared to pause periods, suggesting that engagement in cognitive performance was accompanied by a lengthening of temporal dynamics for RS neurons in MCC (Figure 3c top) (Wilcoxon signed-rank test with Bonferroni correction, only significant for MCC RS: MD = 1.06, V=2467, p=3.9e-7). To control for a time-on-task effect on such timescale modulation, we contrasted pause periods with engaged periods that occurred at similar times within sessions (i.e. considering only engaged periods occurring after the first pause – see limits in Figure 3b, red marks) (nMCCFS = 19, nLPFCFS = 21, nMCCRS = 80, nLPFCRS = 97, Wilcoxon signed-rank test with Bonferroni correction, only significant for MCC RS: MD = 1.06, V=2467, p=3.9e-7).
 
@@ -64,7 +80,7 @@ A wide range of temporal signatures might reflect a basic feature of distributed
 
 We observed no significant variation of LAT with task demands.
 
-## Temporal signatures are linked to cognitive processing
+### Temporal signatures are linked to cognitive processing
 
 Contrary to MCC, LPFC temporal signatures were not modulated by engagement in the task. Multiple cognitive models propose a functional dissociation between MCC and LPFC and indeed empirical data reveal their relative contribution to feedback processing, shifting, and decision-making (Khamassi et al., 2015; Kolling et al., 2018; Stoll et al., 2016). One important question is thus whether temporal signatures observed for a given area and/or cell type contribute to selected aspects of cognitive processing. For example, temporal signatures might be adjusted to the current functional context and timescale required to perform a task. In our experiment monkeys gained rewards by performing trials correctly in a categorization task while each success also brought them closer to obtaining a bonus reward (Figure 3a, right panel, see Materials and methods for task description). By touching a specific lever at trial start, animals could either enter a categorization trial or check the status of a visual gauge indicating the proximity of the bonus reward availability. The number of rewards (i.e. correct categorization trials) needed to get the bonus, and thus the speed of the gauge increase, varied across blocks (i.e. either fast or slow). Previous analyses revealed that feedback influenced the likelihood of checking in the following trial (Stoll et al., 2016). Thus, feedback can be considered as information used on a short timescale (within the intertrial period). The animals also built an estimation of the gauge size that was updated upon checking in order to regulate the frequency of checks during blocks, allowing animals to seek and collect the bonus in a cost-efficient manner (Stoll et al., 2016). Gauge size can thus be considered as information used and carried over long timescales.
 
@@ -72,11 +88,23 @@ We first hypothesized that blocks of different speeds and/or gauge encoding coul
 
 Conversely, we assessed whether temporal signatures observed for certain cell types contributed to code-specific aspects of the task. We used mixed effect models on groups of single units to test the contribution of population activity to encoding task-relevant information: feedback in categorization trials (i.e. reward vs. no-reward), and gauge size. The rationale was that feedback information was relevant within the intertrial period, whereas gauge information was relevant across trials between two successive checks. Previous analyses had revealed that both MCC and LPFC units encode such information, although MCC units showed greater contributions (Stoll et al., 2016). We used data from the whole recordings (all periods) and classified both FS and RS units as either short or long TAU units using a median split. We used a time-resolved generalized mixed linear models (glmm; Figure 4a) to reveal notable dissociations between these populations that we complemented using a more classical approach at the single unit level, using Poisson glm and weighted proportion of variance explained (wPEV; Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig4-v2.jpg)
+
+**Figure 4.:** (a) Regression weights (β-coefficients) for the midcingulate cortex (MCC) (grey) and lateral prefrontal cortex (LPFC) (blue) unit populations obtained from time-resolved glmm for feedback (reward vs. no reward; top graphs) and gauge size (bottom) (see group analyses using glmm’ in Materials and methods). Regression weights are obtained at successive time points covering the entire intertrial period between feedback onset and the lever onset in the following trial. Significant effects are indicated by a red triangle (p<0.05 corrected) when more than two successive bins are concerned, shadings indicate standard deviations. Positive values depict a population activity bias towards negative feedback (top) and positive slope of linear coding for gauge size (bottom). Data are presented for fast spiking (FS) and regular spiking (RS) units (left and right respectively for each panel) and have been obtained on subpopulations with short or long TAU values (determined by a median split). Short and long TAU populations are represented by light and dark colour intensity, respectively. Thick bars above the x-axes indicate significance of the coloured corresponding data compared to a null distribution generated through permutations of median split unit identity. Note in particular the dissociation for RS MCC units with short and long TAU respectively coding for feedback and gauge size.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each single unit activity has been analysed using a glm including feedback, gauge, and decision as fixed effects. The proportion of single units presenting significant variation by each factor at the successive time bins is presented in (a). The average weighted mean proportion of explained variance (wPEV) is presented in (b). Data are shown for the two median split populations based on TAU values computed on the entire session. Red and blue marks on the x axes reflect time bins for which the proportions for the unit populations are not equal (Chi-2, blue in a), and for which values differ from null distribution obtained from 1000 permutations across unit types labels. In red significance results for permutations of TAU labels within cell_type × area to construct two NULL distributions (short and long) to compare the real data to. Permutations of TAU labels hence provide two statistics. For the sake of clarity, red marks of the figure indicate time bins for which at least one of the permutation tests was significant (a=0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Averaged TAU values measured along the postero-anterior axis in the midcingulate cortex (MCC) and lateral prefrontal cortex (LPFC), for both monkeys. (b) Anatomical distribution of LAT in MCC and LPFC for the two monkeys. (c) Regression weights reflecting the coding strength of feedback and gauge size for MCC unit populations separated by their posterior vs. anterior location and unit type (fast spiking vs. regular spiking). Thick bars above the x-axes indicate significance of the corresponding coloured data compared to a null distribution generated through permutations of anatomical unit identity.
+
 Early phases of feedback encoding recruited MCC long TAU populations for both FS and RS units (Figure 4a, upper graphs). This discrepancy was confirmed by a difference between early feedback coding in short and long TAU population at the single unit level (Figure 4—figure supplement 1). Interestingly FS units in the MCC were mostly engaged in the first second after feedback onset, with a strong bias towards encoding negative feedback (Figure 4a, upper left, positive estimates). Effects were more transient and involved short TAU units in the LPFC (Figure 4a).
 
 During the intertrial interval, feedback valence was represented in different directions between short and long TAU RS populations in MCC, coding being positive for short TAU populations (higher activity for incorrect feedback) and becoming negative for long TAU populations (higher activity for correct feedback). Conversely, solely the population of MCC long TAU RS units coded for the gauge during the intertrial period (Figure 4a, lower graphs). Single unit analyses confirmed the higher contribution of the long TAU population to gauge encoding (Figure 4—figure supplement 1).
 
-## Spiking timescales are anatomically organized in MCC
+### Spiking timescales are anatomically organized in MCC
 
 Spiking timescales measured in MCC and LPFC covered several orders of magnitudes (10–1000 ms; Figure 2c). Because single unit recordings spanned large regions, such wide range could reflect anatomical organization of segregated populations with distinct homogeneous intrinsic properties. Such organization has been observed in MCC with human fMRI (Meder et al., 2017). We indeed found that average TAU values in MCC were higher in more posterior parts, in particular for RS units (ANOVA on Blom transformed TAU: MCC, monkey A: F(5,112)=2.8, p=0.041, monkey H: F(5,54)=3.09, p=0.033; linear regression on Blom transformed TAU: MCC, monkey A: t(1,112)=8.99, p=0.0067, monkey H: t(1,54)=2.22, p=0.28; all p-values are FDR corrected for n=2 comparison per monkey) (Figure 4—figure supplement 2a). This suggests an antero-posterior gradient or heterogeneity of spiking timescales. No such effect was observed in our LPFC data (ANOVA on Blom transformed TAU: LPFC, monkey A: F(6,110)=0.34, p=1, monkey H: F(6,64)=2.49, p=0.066; linear regression on Blom transformed TAU: LPFC, monkey A: t(1,110)=1.09, p=0.60, monkey H: t(1,64)=0.25, p=1; all p-values are FDR corrected for n=2 comparison per monkey). Note that the so-called LPFC data covered several subparts of posterior LPFC (see Stoll et al., 2016). Similar analyses for LAT revealed no consistent heterogeneity within MCC or LPFC (Figure 4—figure supplement 2b).
 
@@ -84,19 +112,67 @@ The consequence of such an organization, knowing the respective functional invol
 
 In summary, MCC RS units with relatively short or long TAU contributed to the encoding of task elements relevant over short and long terms, respectively. The spiking timescales seemed to be organized along the rostro-caudal axis in MCC. This suggests a correspondence between cell type, temporal signatures, and their functional involvement in processing specific aspects of cognitive information in different functional subdivisions of cortical regions. The crucial questions thus remain of the mechanistic origin of temporal signatures and of how they relate to cognitive functions.
 
-## Biophysical determinants of temporal signatures in frontal network models
+### Biophysical determinants of temporal signatures in frontal network models
 
 To uncover the source and consequences of distinct temporal spiking signatures in the LPFC and MCC, we designed a fine-grained model of local recurrent frontal networks. This model is unique in combining (1) highly detailed biophysical constraints on multiple ionic channels, synaptic receptors, and architectural frontal specificities, and (2) the cardinal realistic features of mammals cortical neurodynamics including the excitation/inhibition balance, high-conductance state of neuronal activity, and asynchronous irregular regime characterizing the awake state (Brunel, 2000; Destexhe et al., 2003; Hennequin et al., 2017). Our specific goal was to evaluate whether biophysical circuit specificities could mechanistically account for differences in LPFC and MCC temporal signatures. We also assessed whether these specificities induce distinct collective network neurodynamics and functional implications, possibly explaining the empirical relationships between temporal signatures, cell type, and information processing. Note that for modelling purposes we equate FS units to GABAergic interneurons and RS units to excitatory neurons while acknowledging that it is a crude simplification.
 
 We first explored, using Hodgkin-Huxley cellular models (see Materials and methods), whether specific frontal temporal signatures may arise from ionic or synaptic properties of individual neurons. Extensive explorations of these models identified the maximal cationic non-specific conductance (gCAN) and potassium after-hyperpolarization conductance (gAHP) as the sole couple affecting both LAT and TAU (Figure 5—figure supplement 1a-b). By contrast, conductance couples setting spiking adaptation, post-inhibitory rebound, and slow synaptic transmission were ineffective in changing LAT and TAU (Figure 5—figure supplement 2). However, we could not find any region of the gCAN and gAHP parameter space that yielded reasonable values for both LAT and TAU (Figure 5—figure supplement 1b). Therefore, the temporal signature of the monkey dataset (Figure 5—figure supplement 1c) was poorly reproduced by the cellular model (Figure 5—figure supplement 1d). Thus, we then assessed whether collective dynamics at the level of recurrent networks models could better account for frontal temporal signatures (Figure 5a–b, see Materials and methods). One-dimensional explorations of the large parameter space failed to identify single biophysical determinants accounting, alone, for differences between monkey LPFC and MCC (RS and FS) temporal signatures (Figure 5—figure supplement 3; Figure 5—source data 1). However, these explorations targeted four parameters of interest regulating either LAT or TAU confirming those already revealed in cellular models (gCAN and gAHP) and uncovering, in addition, NMDA and GABA-B maximal conductance (gNMDA and gGABA-B) whose slow time constants strongly affected network dynamics.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig5-v2.jpg)
+
+**Figure 5.:** (a) Scheme of the frontal recurrent networks modelled, with 80% excitatory (green) and 20% inhibitory (red) neurons and sparsity of synaptic connections. (b) Membrane potential in the 484 excitatory (lower part) and 121 inhibitory (upper part) neurons of LPFC and MCC example network models (respectively LPFCm and MCCm ; 'm' for model) with parameter set to approximate LPFC dynamics (gCAN = 0.025 mS·cm–2, gAHP = 0.022 mS·cm–2, gGABA-B=0.0035 mS·cm–2; see text and legend of Figure 6b for the choice of LPFCm and MCCm standard gAHP and gGABA-B maximal conductances) and MCC dynamics (gCAN = 0.025 mS·cm–2, gAHP = 0.087 mS·cm–2, gGABA-B=0.0143 mS·cm–2). (c) (Upper left) Membrane potential of an example excitatory neuron of LPFCm. Scaling bars 1 s and 10 mV (spikes truncated). (Lower left) Autocorrelogram of this LPFCm example excitatory neuron (black) and its exponential fit (red, see Materials and methods). (Right) Bivariate probability density distribution of autocorrelogram parameters in LPFCm excitatory neurons. Contour lines at 50%, 75%, and 90% of the maximum of the bivariate probability density distribution in LPFC monkey regular spiking (RS) units. (d) Same as (c) for LPFCm inhibitory neurons, with contour lines from the bivariate probability density distribution in LPFC monkey fast spiking (FS) units. (e,f) Same as (c,d), for the MCCm and MCC.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) In (i) schematic shapes of the autocorrelogram of a neuron (e.g. regular spiking, blue), of the same neuron with a larger refractory period (e.g. due to increased hyperpolarizing ionic conductance, red) or with higher burstiness of the spike discharge (e.g. due to increased depolarizing conductance-mediated positive feedbacks, green). (ii–iii) Autocorrelogram of a model pyramidal neuron (ii) in the absence (gCAN = 0 mS·cm-2, gAHP = 0 mS·cm-2) of CAN or AHP, or (iii) with gCAN = 0.05 mS·cm-2 and gAHP = 0.1 mS·cm-2. Scaling bars 1 s and 25 mV. (b) Maps of the autocorrelogram latency (left) and time constant (right), as a function of gCAN and gAHP maximal conductances. (c) Bivariate probability density distribution of neuronal autocorrelogram LAT and TAU in regular spiking (RS) units in both the lateral prefrontal cortex (LPFC) (left) and midcingulate cortex (MCC) (right) in monkeys (each dot represents an individual unit and the underlying map is the best-fit distribution). (d) Similarity of the temporal signature between the frontal pyramidal neuron model and the population of RS units in the LPFC (left) and MCC (right), as a function of gCAN and gAHP maximal conductances.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Maps of LAT (upper left) and TAU (upper right) and of the temporal signature similarity of the pyramidal neuron to regular spiking (RS) neurons of the modelled prefrontal cortex (PFCm) (lower left) and midcingulate cortex (MCCm) (lower right), as a function of (a) the high-threshold calcium and after-hyperpolarization maximal conductances (gCaL and gAHP) that set adaptation properties, (b) the low-threshold calcium (CaT) and hyperpolarization-activated H maximal conductances (gCaT and gH) that set post-inhibitory rebound properties, and (c) the synaptic NMDA and GABA-B maximal conductances (gNMDA, gGABA-B) that set slow synaptic transmission.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** LAT (left) and TAU (right) in Exc (upper) and Inh (lower) neurons in the model (green), as a function of the (a) CAN, (b) AHP, (c) NMDA, and (d) GABA-B maximal conductances. The default lateral prefrontal cortex (LPFCm) model parameter value is indicated (vertical black) as well as experimental LAT and TAU in the LPFC (blue) and midcingulate cortex (MCC) (grey).
+
 Two-dimensional explorations using these key parameters (Figure 5 and Figure 6—figure supplement 1) identified a single specific setup which demonstrated network dynamics that reproduced the shift from the LPFC-like temporal signature to that resembling the MCC with striking precision. An increase of both gAHP and gGABA-B, in the presence of gCAN, drove the model from an LPFC-like temporal signature (LPFCm) (Figure 5c–d; map and contours: bivariate probability density model and monkeys’ distributions, respectively) towards that of the MCC (MCCm, Figure 5e–f). Specifically, gAHP increased LAT and decreased TAU in excitatory (possibly equivalent to RS) neurons (Figure 6a left) and had no effect in inhibitory (putatively FS) neurons (Figure 6a, right). Besides, gGABA-B decreased LAT in both excitatory and inhibitory neurons (Figure 6a, top) and increased TAU in an intermediate range (Figure 6a, bottom). A bivariate similarity measure of probability density (see Materials and methods) revealed that monkey temporal signatures were robustly reproduced by the model in two large contiguous regions in the (gAHP, gGABA-B) space (from which best fits were drawn), with both conductances increased in the MCCm compared to LPFCm (Figure 6b).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig6-v2.jpg)
+
+**Figure 6.:** (a) Mean population LAT (top) and TAU (bottom) in Exc (left) and Inh (right) neurons, as a function of AHP and GABA-B maximal conductances. Blue and grey dots indicate the (gAHP, gGABA-B) parameter values of the best fits for LPFCm and MCCm, respectively. (b) Similarity of the temporal signature between the network model and monkey data in the LPFC (left) and MCC (right), as a function of AHP and GABA-B maximal conductances (see Materials and methods). In (a) and (b), the value for each (gAHP, gGABA-B) is averaged over five simulations. Contour line at 80% of maximum similarity. LPFCm and MCCm (gAHP, gGABA-B) parameter values calculated as coordinates of the contour delimited area’s weighted average. (c) Bivariate probability density distribution of the autocorrelogram LAT and first-order latency (the latency of the inter-spike interval [ISI] distribution) in regular spiking (RS) units in monkey LPFC (left) and excitatory neurons in the example LPFCm (right). The model accounts for two distinct neuronal subsets in RS neurons, where LAT is determined by first-order latency solely (due to gAHP-mediated refractoriness; diagonal band), or in conjunction with other factors (gGABA-B slow dynamics-mediated burstiness and recurrent synaptic weight variability; horizontal band). (d) Single excitatory neuron frequency/intensity relationship in LPFCm (blue) and MCCm (grey) in response to a constant injected current.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Mean population LAT (top), TAU (bottom) in Exc (left) and Inh (right) neurons, as a function of AHP and CAN maximal conductances. (b) Similarity of the temporal signature between the network model and monkey data in the lateral prefrontal cortex (LPFC) (left) and midcingulate cortex (MCC) (right), as a function of AHP and CAN maximal conductances (see Materials and methods). (c) Same as (a) and (d) same as (b) as a function of AHP and NMDA maximal conductances.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Bivariate probability density distribution of the autocorrelogram LAT and first-order latency (i.e. the latency of the ISI distribution) in (a) LPFC monkey FS units (left) and network Inh neurons (right), (b) MCC monkey RS units (left) and network Exc neurons (right), and (c) MCC monkey FS units (left) and network Inh neurons (right).
 
 Several lines of evidence further indicated the model’s relevance. First, spiking statistics were similar to those of monkeys (Figure 7—source data 1). Then, the model properly accounted for the larger LAT variability in monkey RS vs. FS units (Figure 5). Moreover, it reproduced the complex relations between LAT and first-order latency (inter-spike interval [ISI] distribution latency) remarkably well, and in all populations (Figure 6c and Figure 6—figure supplement 2). Furthermore, both the firing frequency and input-output gain were lower in MCCm excitatory neurons (Figure 6d), because of its higher gAHP (Naudé et al., 2012), as found experimentally (Medalla et al., 2017).
 
-## Metastable states underlie LPFC and MCC temporal signatures
+### Metastable states underlie LPFC and MCC temporal signatures
 
 The asynchronous irregular (presumably chaotic) dynamics of network models was highly structured in time (Figure 5b). Hidden Markov models (HMMs) revealed that it organized through collective transitions between the so-called metastable (quasi-stationary) states in model neural populations (Figure 7a) or pseudo-populations (Figure 7—figure supplement 1; see Materials and methods) in the LPFCm and MCCm, as found in frontal areas (Abeles et al., 1995; Seidemann et al., 1996; Xydas et al., 2011). Moreover, while LPFCm states maximally lasted a few hundred milliseconds (Figure 7b, left, blue), MCCm states persisted up to several seconds (Figure 7b, grey). This suggested that such a difference in metastability may also parallel the difference of temporal signature in monkey LPFC and MCC areas. Applying HMM to neural pseudo-populations built from experimental data revealed that, as predicted by the model, neural activity was organized as metastable states at slower timescales in the MCC (vs. the LPFC, Figure 7b, right). State durations were globally shorter in models (compared to monkeys), as they contained neither temporal task structure nor learning (see Discussion) and were not optimized to fit data.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig7-v2.jpg)
+
+**Figure 7.:** (a) LPFCm and MCCm spiking raster plots (black dots), with Hidden Markov model states (HMM, coloured bands). (b) State duration distributions: probability distributions of being in states of given durations in LPFCm (blue), MCCm (grey), MCCm with LPFCm gAHP (MCCmLPFC AHP pink), and MCCm with LPFCm gGABA-B (MCCmLPFC GABA-B, orange) models (left) and monkey LPFC (blue) and MCC (grey) areas (right). Each model was simulated 100 times and analysed via HMM, while monkey data was analysed via HMM with 100 different initiation parameter states. Periods above 300 s were excluded. (c, d) Regulation of state duration and short states: median state duration (c) and Kolmogorov-Smirnov one-sample test statistic or maximal distance of state duration probability distributions to log-normality, as a measure of the over-representation of short states (d), as a function of gAHP and gGABA-B maximal conductances. Coloured disks indicate parameter values of models LPFCm, MCCm, MCCmLPFC AHP, and MCCmLPFC GABA-B, respectively. Each point is the average of five simulations. (e) Separation between states: average distances between HMM states (averaged pairwise distance between neural centred standardized frequency centroids [temporal averages] of HMM states), as a function of median state durations. Distances calculated over 100 simulations in models and once for monkey LPFC and MCC data. (f) State segregation: projection of neural activity on the principal components of the principal component analysis (PCA) space of example model simulations and of monkey data. State colours as in (a). (g) Frontal processes and state regulation: schematic attractor landscapes in the LPFC and MCC. Horizontal and vertical arrows indicate possible regulations of AHP and GABAB conductance levels respectively by intrinsic/synaptic plastic processes or neuromodulation in the LPFC and MCC. Likely functional processes operating in these landscapes are indicated in blue for the LPFC and grey for the MCC. (h) Inhibitory control of state transitions: probability to escape an ongoing state (left) and to reach a target state (right), when the ongoing state is perturbed by substituting a given proportion of its excitatory (vs. inhibitory) neurons’ activity by that of the same neurons in the (perturbing) target state (see Materials and methods). Average (full line), ± s.e.m. (shaded areas, almost imperceptible).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) State duration distributions in the lateral prefrontal cortex (LPFC) (grey) and midcingulate cortex (MCC) (blue) of pseudo-populations built from (a1) model data with a procedure equivalent (see Materials and methods) to monkey data (Figure 7b right), which gives a state duration MCC/LPFC ratio of 1.5 in the absence of control procedure, and for different controls where (a2) group statistics are chosen the same (i.e. those of monkey LPFC group statistics [ratio of 1.52]), (a3) randomly spikes are removed in LPFCm data such that LPFCm and MCCm have precisely the same frequency (ratio of 2.03), (a4) the neural identity is shuffled (the neuron to which each spike is associated is randomly reattributed) (ratio of 1.92) and (a5) the timing of spikes is shuffled in each neuron (ratio of 1.01). Distributions are averaged over 10 independent HMM analyses for each panel. Panels (a1–a4) altogether indicate that state durations are robustly larger in the MCC, compared to the LPFC, even when using pseudo-populations in the model (a1), as quantitatively similar results are obtained even when strong degradations of model data are operated to examine the contribution of possible confounding factors (a2–a4). Panel (a5) indicates that larger state durations in the MCC in model pseudo-populations emerge from the global temporal structure of neural activity in the model. (b) HMM of experimental pseudo-population data where neural spiking activity of each neuron in LPFC and MCC areas is simulated as a non-homogeneous Poisson model (NHPM) whose instantaneous firing rate is given by the post-stimulus time histogram (PSTH) of that neuron within each epoch type between all possible task events (e.g. reward, go signal, etc.). This simulated activity only depends on task-variable coding but does not contain any specific fine-grained activity temporal structure internally generated by frontal areas. There is no difference of state durations between LPFC and MCC, indicating that task variable coding is not responsible for the state duration difference between LPFC and MCC but relies on the precise temporal structure of spiking, independent of task epochs. Thus, accounting for neural states in monkeys with a biophysical model devoid of task structure is not an issue per se.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The HMM analysis was repeated on temporal segments of 50 s of the 600 s monkey data (i.e. performed on spike data from 0 to 50 s, 50–100 s, etc. all the way up to 550–600 s). This procedure was repeated for different segment durations (i.e. segments of 50, 60, 75 s, 100, 120, 150, 200, 300, 600 s), to find at which timescale such neural frequency drifts might bias HMM state durations, if at all. In each case, the average neural frequency drift was measured as the absolute difference in neural frequency between the first and second half of the data segment (e.g. 0–25 vs. 25–50 s for first 50 s segment), averaged across all neurons. The average neural frequency drifts are correlated to average HMM state durations within each cortical area when pooling all segment durations (lateral prefrontal cortex [LPFC] [red markers]: rho ~ 0.54, p ~ 9.9*10–5; midcingulate cortex [MCC] [green markers]: rho ~ 0.38, p ~ 8.3*10–3). However, state duration and frequency drift are never correlated when pooling data from both cortical areas, be it within or across temporal subdivisions, indicating that average neural frequency drift does not account for the observed difference in state durations between LPFC and MCC. Four outliers were removed from LPFC and MCC data according to the scaled median absolute deviation of HMM state durations using the standard (rmoutliers MATLAB function).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** HMM state metastability implies that state durations follow an exponential distribution. Thus, we performed robust linear regressions on the logarithm of the count probability (binned in 50 ms bins) of HMM state durations for each of the 100 HMM analyses, and reported the slope coefficient p-value and R2, for both cortical areas in both monkey and model data. HMM state durations here refer to the durations of each state period, rather than the definition used elsewhere and introduced in the Materials and methods section, being the proportion of time spent in state periods of duration d. We observed overall that R2 scores were above ~0.6, indicating reasonable fits, as well as significantly non-zero slopes (p<0.05, red points; ns: black points) in all monkey HMM analyses, in all MCCm and in the immense majority of PFCm (98/100). Thus, state duration distributions appear exponential, lending credence to the metastable nature of HMM states.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/63795/elife-63795-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (a) AIC and BIC values for different numbers of states in both cortical areas and in both monkey and model data. AIC and BIC do not substantially change when increasing the number of states. This analysis was repeated five times for each sub-panel. Solid lines are average values, shaded areas are confidence intervals of the mean. (b) When changing the number of states, HMM state duration results did not strongly differ compared to those with four states: while lateral prefrontal cortex (LPFC) and midcingulate cortex (MCC) state durations slightly decreased with more states (since the same time period is divided into a greater number of states), MCC state durations remained one to two orders of magnitude longer than LPFC state durations.
 
 Long states essentially required high gGABA-B in the MCCm, as they disappeared when gGABA-B was lowered to its LPFCm value (MCCmLPFC GABA-B model, Figure 7b left, orange curve). In contrast, they only marginally depended on gAHP. MCCm and an MCCm with the gAHP derived from that of LPFCm (MCCmLPFC AHP) showed state duration distributions that were essentially similar, although there was a small increase in the probability of short states at lower gAHP (pink vs. grey curves). In the (gAHP, gGABA-B) space, gGABA-B systematically proved to be essential in increasing the duration of states, with a border region that clearly separated short states (<0.1 s) from longer states (>1 s) (Figure 7c) At this intermediate border, lower gAHP increased the probability of short states (grey vs. pink dots; distributions were even bimodal at lowest gAHP values, not shown), as witnessed by departure from log-normality (Figure 7c). As such, the temporal structure of states in the LPFCm was dominated by short and unimodal state duration distributions (Figure 7c and d, blue dots), as in monkeys (Figure 7b, right) and previous studies (Abeles et al., 1995; Seidemann et al., 1996). In the MCCm, by contrast, the distribution displayed large durations and a slight departure from log-normality (Figure 7c and d, grey dots), resulting in a majority of long states (>1 s) coexisting with short states, as found in data (Figure 7b).
 
@@ -112,15 +188,15 @@ We showed LPFC and MCC displayed long population spiking timescales (TAU), with 
 
 Unravelling the multidimensional nature of LPFC and MCC temporal signatures at the level of individual neurons enabled us to constrain refined biophysical recurrent network models and reveal the local biophysical determinants mechanistically accounting for their specific temporal organization. Moreover, we showed that these determinants control neurodynamical features that constitute core computational foundations for the executive cognitive processes operated by these frontal areas.
 
-## Functional spatio-temporal organization of temporal signatures in frontal areas
+### Functional spatio-temporal organization of temporal signatures in frontal areas
 
 The relationship between temporal signatures and behaviour suggests how such biophysical properties could contribute to functional specificities. Such functional relations are still debated. Spiking timescales distributions have been related to persistent activity, choice value, and reward history in the LPFC and MCC (Bernacchia et al., 2011; Cavanagh et al., 2018; Meder et al., 2017; Wasmuht et al., 2018), but in a recent study no correlation was observed between task-dependent and intrinsic timescales at the unit level (Spitmaan et al., 2020). In all those studies, however, cell types were not considered. Here, we could not estimate task-relevant timescales to correlate with TAU, but we found that the spiking timescales of MCC RS units increased on average during periods of engagement in cognitive performance, likely reflecting the global implication of neural processes in task performance at long timescales. MCC units with different temporal signatures differentially contributed to cognitive processes known to engage MCC, namely feedback/outcome processing and outcome history representations (Kennerley et al., 2009; Quilodran et al., 2008; Seo and Lee, 2007). Outcome processing generally enables rapid – trial by trial – adaptation of control and decisions, while outcome history representations contribute to the long-term – across trials – establishment of values guiding strategy adaptation (Behrens et al., 2007; Karlsson et al., 2012). Here, population analyses suggested that short spiking timescale units contributed to feedback processing, whereas long spiking timescale units and especially RS units contributed to encode gauge size, which linearly increase with the accumulation of rewards across trials. In MCC, this temporal dissociation coincided with a spatial organization along the antero-posterior axis: anterior units mainly encoded feedback valence, more strongly and earlier than posterior units, whilst posterior units mostly encoded the long-term information related to gauge size. This antero-posterior gradient strikingly resembles that observed in humans (Meder et al., 2017).
 
-## Local molecular basis of frontal temporal signatures
+### Local molecular basis of frontal temporal signatures
 
 Through extensive parameter exploration of constrained biophysical frontal network models, we identified two conductances that precisely reproduced all monkey temporal signatures. In the model, higher TAU (i.e. MCC vs. LPFC, posterior vs. anterior MCC) was accounted for by stronger synaptic GABA-B levels, consistent with reported higher GABA-B receptor densities (Zilles and Palomero-Gallagher, 2017), stronger and slower inhibitory currents in the MCC (vs. LPFC) (Medalla et al., 2017), and stronger GABA-B receptor densities in the posterior (vs. anterior) MCC (Palomero-Gallagher et al., 2009). Excitatory synaptic transmission has been proposed to be a crucial determinant of longer spiking timescales in the temporal cortical hierarchy (Chaudhuri et al., 2015). We found that while stronger excitatory transmission increases TAU (possibly accounting for longer MCC TAUs), it also decreases LAT. LAT, however, was longer in the monkey MCC. This inability to reproduce the temporal signature pattern of frontal areas suggests that GABA-B inhibitory – rather than excitatory – transmission is likely the principal causal determinant of longer spiking timescales, at least in the LPFC and MCC. Noticeably, long timescales do not require strong inhibitory-to-inhibitory connections (Kim and Sejnowski, 2021) nor specific disinhibition between molecularly identified subnetworks of interneurons (Wang, 2020), but of strong slow inhibition to both excitatory and inhibitory neurons. Note also that long timescales naturally emerge from weights variability (see below) and does not require synaptic learning as found elsewhere (Kim and Sejnowski, 2021). The model also predicts that higher LAT in the MCC originate from increased refractoriness through higher AHP conductances in RS units (which increases first-order latency). Higher AHP implies lower input-output gains in MCC RS units, compared to the LPFC (Naudé et al., 2012), as found empirically (Medalla et al., 2017). Finally, reproducing appropriate temporal signatures required the cationic non-specific (CAN) conductance in the areas’ RS units. This was observed in RS of rodent medial frontal areas (Haj-Dahmane and Andrade, 1997; Ratté et al., 2018), where it regulates, together with AHP, cellular bistability and memory, network persistent activity, and computational flexibility (Compte et al., 2003; Papoutsi et al., 2013; Rodriguez et al., 2018; Thuault et al., 2013). Our conclusions do not preclude the contribution of other factors to temporal signatures such as different positions in the anatomical hierarchy, different proportion of excitatory to inhibitory neurons, large-scale hierarchical gradients of other neurotransmitter receptor or receptor subunit expression (Chaudhuri et al., 2015), distinct neuromodulations (see below), different extra-regional inputs, or inputs with different spectral contents to LPFC and MCC.
 
-## Frontal temporal signatures uncover metastable dynamics
+### Frontal temporal signatures uncover metastable dynamics
 
 The LPFC and MCC activity, both in models and in monkeys, was metastable, that is, organized in sequences of discrete, quasi-stationary states in which activity fluctuates around fixed-point attractors (Abeles et al., 1995; La Camera et al., 2019; Rich and Wallis, 2016; Seidemann et al., 1996). Such states were robustly found, whether analysing populations or pseudo-populations of neurons (see Materials and methods). As a general rule, the duration of states increases with the stability of their attractor (i.e. the depth/width of their basin of attraction) and decreases with spiking fluctuations. Fluctuations originate from stochastic inputs or chaotic noise (as in our model), and they trigger state transitions. Here, activity was always present as consecutive states occurred, that is, with no interruption, and therefore departed from UP/DOWN dynamics in which the network was either active or silent (Jercog et al., 2017).
 
@@ -128,7 +204,7 @@ States were longer in monkeys, likely because extensive training induced attract
 
 In monkeys and biophysical models, temporal signatures, which correlate with state stability, actually reflect the underlying temporal organization of neurodynamics into metastable states. Interestingly, state durations (up to >10 s) were longer than spiking timescales (<0.5 s), reconciling the apparent discrepancy between typical spiking timescales in frontal areas (<1 s) and the functional timescales at which those areas operate (up to tens of seconds, Bernacchia et al., 2011).
 
-## Functional significance of controlled metastable states in frontal areas
+### Functional significance of controlled metastable states in frontal areas
 
 Metastable states can be linked to specific representations in the brain at a variety of levels of abstraction, from stimuli to mental states (Engel et al., 2016; La Camera et al., 2019; Mazzucato et al., 2015; Mazzucato et al., 2019; Rich and Wallis, 2016; Taghia et al., 2018). In general, state transitions contain appreciable randomness, with high transition rates signing internal deliberation, whilst more stable states predicting forthcoming decisions (La Camera et al., 2019). We suggest that controlling itinerancy among metastable states constitutes a core neurodynamical process supporting executive functions in frontal areas, which allows to scan choices and strategies, generate deliberation, and solve ongoing tasks.
 
@@ -140,19 +216,19 @@ In conclusion, we showed that local ionic and synaptic determinants specify the 
 
 ## Materials and methods
 
-## Subjects and materials
+### Subjects and materials
 
 This project was conducted with two male rhesus monkeys (Macaca mulatta), monkeys A and H. All procedures followed the European Community Council Directive (2010) (Ministère de l’Agriculture et de la Forêt, Commission nationale de l’expérimentation animale) and were approved by the local ethical committee (Comité d’Ethique Lyonnais pour les Neurosciences Expérimentales, CELYNE, C2EA #42). Electrophysiological data were recorded using an Alpha-Omega multichannel system (AlphaOmega Engineering, Israel).
 
-## Recording sites
+### Recording sites
 
 Recording chambers (Gray Matter Research, Bozeman, MT) were centred on antero-posterior coordinates of +34.4 and+33.6 relative to ear bars (for monkeys A and H, respectively) (Stoll et al., 2016). MCC recording sites covered an area extending over 10 mm (anterior to posterior), and at depths superior to 4 mm from cortical surface (corresponding to the anatomically defined aMCC or functionally defined dACC). Recording sites in LPFC were located between the principalis and arcuate sulcus and just dorsal to the arcuate (areas 6DR, 8B, 8A, and 9/46) and at depths inferior to 2 mm from cortical surface (see supplemental figures in Stoll et al., 2016). Reconstructions of cortical surface, of MRI sections perpendicular to recording grids and of microelectrode tracks were performed using neuronavigation. Locations were confirmed with MRI reconstructions and stereotaxic measurements by keeping track of electrophysiological activity during lowering of electrodes.
 
-## Single unit activity
+### Single unit activity
 
 Electrophysiological activity was recorded using epoxy-coated tungsten electrodes (1–2 MOhm at 1 kHz; FHC Inc, Bowdoin, ME) independently lowered using Microdrive guidance (AlphaOmega Engineering). Neuronal activity was sampled at 22 kHz resolution. Single units were sorted offline using a specific toolbox (UltraMegaSort2000, Matlab toolbox, Kleinfeld Lab [Hill et al., 2011], University of California, San Diego, CA). Metrics served to verify the completeness and purity of single unit activity. Each single unit activity was selected, recorded, and included in analyses on the basis of the quality of isolation only. We obtained 298 MCC units and 272 LPFC units while monkeys performed a checking task (Stoll et al., 2016). A subset of these data has been used in a previous publication (Stoll et al., 2016).
 
-## Spike shape clustering
+### Spike shape clustering
 
 Spike shapes can be clustered in different groups that might correspond to different putative cell populations. For each single unit, we computed the average spike shape on which we extracted the spike width, represented by the time between the peak and the trough (maximal and minimal value, respectively), and the spike amplitude defined by the ratio between the minimum value of the waveform following the peak and the peak. To cluster units we first computed the spike width vs. spike amplitude distance matrix (dist function in R). The partitioning led to three clusters, one with narrow spike shapes, one with wide spikes, and one with very wide spikes. Narrow and wide spikes were considered FS and RS, respectively. Although clustering revealed three clusters, no differences were found between the two wide ones, both considered RS neurons (see Figure 2—figure supplement 1). To get a statistical confirmation of the numbers of retained clusters, we then fitted the distribution of spike widths using Gaussian Mixture Models (Mclust function from the package MClust in R, which uses the expectation-maximization algorithm). This method was previously applied for spike clustering (Torres-Gomez et al., 2020). We tested the presence of up to three mixture components with variable/unequal variance, comparing the different models using Bayesian information criterion (BIC). In this context BIC values are an approximation to integrated likelihood and should be maximized (Banfield and Raftery, 1993; Scrucca et al., 2016).
 
@@ -160,35 +236,47 @@ The model which fitted best the spike widths distribution was composed of three 
 
 We decided not to use the firing rate for the clustering because we did not have a clear justification for choosing a specific period for firing rate calculation. Yet we found that the so-called FS population we extracted had a higher firing rate than the RS population (Figure 2—figure supplement 2a). This difference is in adequation with the literature and supported our decision to cluster units solely based on spike shape/duration. This difference of firing rate is reported when computed from the whole recording. Firing rate computed from different periods of the recordings (when monkeys are engaged in the task, taking a break or around key task events, etc.) are correlated but variable. Actually, in our recordings the correlation is lowest when considering firing rates between pauses and the fore period of the task, two of the periods which could have been logical candidates for a firing rate of reference.
 
-## Spike count autocorrelogram and timescale
+### Spike count autocorrelogram and timescale
 
-The primary analysis of timescales was based on Murray et al., 2014. Spike counts (sc) were measured in 14 successive bins of 50 ms from the pre-cue period (700 ms) of each trial, when the monkey is in a controlled, attentive state awaiting stimulus onset. We first calculated the cross-trial bin cross-correlations. Each vector of spike counts from the 50 ms bin t was correlated with vectors of spike counts at subsequent bins (t+1, t+2, etc.) generating an autocorrelation matrix. Autocorrelograms were computed for negative and positive lags, producing a histogram symmetric along the zero axis. Timescales were computed using the autocorrelation defined over positive time lags. The autocorrelogram data was then fitted using non-linear least square (nls function in R) to a function of the form:R ~ A* e-tscTAU +B
+The primary analysis of timescales was based on Murray et al., 2014. Spike counts (sc) were measured in 14 successive bins of 50 ms from the pre-cue period (700 ms) of each trial, when the monkey is in a controlled, attentive state awaiting stimulus onset. We first calculated the cross-trial bin cross-correlations. Each vector of spike counts from the 50 ms bin t was correlated with vectors of spike counts at subsequent bins (t+1, t+2, etc.) generating an autocorrelation matrix. Autocorrelograms were computed for negative and positive lags, producing a histogram symmetric along the zero axis. Timescales were computed using the autocorrelation defined over positive time lags. The autocorrelogram data was then fitted using non-linear least square (nls function in R) to a function of the form:
+
+$$
+R ~ A* e^{\frac{-t}{scTAU} }+B
+$$
 
 where R is the correlation coefficient and t the bin time. scTAU, representing the decay of the exponential function and thus the timescale, and A, a scaling constant, were obtained from the fit. We computed scTAU both at the population level, by using a global fit on all recorded units from a given area (as in Murray et al., 2014), and at the single unit level.
 
 However, the above method cannot resolve the fine dynamics of neuronal activity at short time lags because it is based on counts pooled across trials and from coarse-grained time bins (50 ms). Moreover, the large variability of unit discharge resulted in a high variability of autocorrelograms, which could not be fitted in many cases (47.5% failures), as in other studies (52.1% and 48.4% failures in Wasmuht et al., 2018 and Cavanagh et al., 2018, respectively). Finally, tracking the causal determinants of LPFC and MCC temporal signatures in terms of local cellular and/or network dynamics requires a high temporal precision, because they rely on intrinsic and synaptic time constants, which often lie below the coarse time bin of the spike count method. To prevent these shortcomings, we directly computed the autocorrelogram of individual neurons from spike times, allowing for high temporal precision in parameter estimation. For this we leveraged all the data recorded for each neuron to reduce the large noise present at the level of individual neurons.
 
-## Spike autocorrelogram analysis
+### Spike autocorrelogram analysis
 
-To capture the dynamics of neuronal activity, we computed autocorrelograms from individual unit spike time series and extracted their latencies (LAT; the time lag of the peak of the autocorrelogram) and time constants (TAU). The same method was applied to units from in vivo recordings and neurons from network models. To do so, we computed the lagged differences between spike times up to the 100th order, that is, the time differences between any spike and its n successors (up to n=100) at the unit level. The lagged differences were then sorted in 3.33 ms bins from 0 to 1000 ms. The resulting counts allowed to build the probability density function of the autocorrelogram (AC) that we multiplied by the inverse of the time bin width so that it peaked at 1 and is graphically more understandable (as in Figure 2). We then smoothed the AC by local non-linear regression (loess method, with span 0.1; to filter high-frequency noise and correctly detect the peaks, see below) after removing its first 10 ms, to eliminate potential source data contaminations, such as ISIs shorter than the absolute refractory period. We defined the peak of the AC as its maximum, except when the maximum was the very first bin, in which case the peak was defined as the first local maximum after the first bin. The latency of that peak, LAT, was considered in further analyses as a structural parameter of the AC characterizing the temporal signature of the neuron/unit spiking set. For each AC, a global mono-exponential fit (GLOBAL fit) was then performed on the part of the AC situated after the peak using the Levenberg-Marquardt algorithm (nlsLM function in R) for monkey data or von-Neumann-Karmarkar interior-point algorithm (fmincon in Matlab) for network models (we checked that either algorithm on the same spiking sets gave similar results), as follows:AC ~ Ae-t/TAU +B
+To capture the dynamics of neuronal activity, we computed autocorrelograms from individual unit spike time series and extracted their latencies (LAT; the time lag of the peak of the autocorrelogram) and time constants (TAU). The same method was applied to units from in vivo recordings and neurons from network models. To do so, we computed the lagged differences between spike times up to the 100th order, that is, the time differences between any spike and its $n$ successors (up to $n=100$) at the unit level. The lagged differences were then sorted in 3.33 ms bins from 0 to 1000 ms. The resulting counts allowed to build the probability density function of the autocorrelogram (AC) that we multiplied by the inverse of the time bin width so that it peaked at 1 and is graphically more understandable (as in Figure 2). We then smoothed the AC by local non-linear regression (loess method, with span 0.1; to filter high-frequency noise and correctly detect the peaks, see below) after removing its first 10 ms, to eliminate potential source data contaminations, such as ISIs shorter than the absolute refractory period. We defined the peak of the AC as its maximum, except when the maximum was the very first bin, in which case the peak was defined as the first local maximum after the first bin. The latency of that peak, LAT, was considered in further analyses as a structural parameter of the AC characterizing the temporal signature of the neuron/unit spiking set. For each AC, a global mono-exponential fit (GLOBAL fit) was then performed on the part of the AC situated after the peak using the Levenberg-Marquardt algorithm (nlsLM function in R) for monkey data or von-Neumann-Karmarkar interior-point algorithm (fmincon in Matlab) for network models (we checked that either algorithm on the same spiking sets gave similar results), as follows:
 
-TAU, the time constant of the AC fit characterized the temporal signature of the neuron. A, the amplitude of the exponential, and B, the offset, are positive constants. Note that this mono-exponential fitting equation is strictly equivalent to that of Murray et al., 2014, B here corresponding to AB in the Murray method. Choosing one or the other equation did not affect the resulting fit and we kept the present form as it is easier to interpret. Fits on each AC were performed 50 times, with random initial guesses in the range 0, 2maxAC-minAC for A, 0, 2minAC for B, and [0, 1000] ms for TAU, from which the best fit was kept.
+$$
+AC ~ Ae^{-t/TAU }+B
+$$
 
-In a minority of cases (<3% of neurons), the AC following the peak (as defined above and denoted below the 1st peak) could present a shape that diverged from a simple exponential decay, because the first peak was followed by: a fast and large dip, then a second peak (local maximum), then the slower, final exponential decay. In this case, we developed a pipeline aiming at consistently choosing the peak (i.e. 1st or 2nd) from which the fit started. We defined the AC as having a dip if the first local minimum in the 100 ms after the 1st peak was below 75% of the global range of the AC, maxAC-minAC (to avoid modelling local troughs due to noise as dips). When two peaks were detected, the second peak was defined as the maximum of the AC after the dip. Two additional mono-exponential fits of the AC were then performed, one from the first peak to the dip (FAST fit) and a second one from the second peak to the end of the AC (SLOW fit).
+TAU, the time constant of the AC fit characterized the temporal signature of the neuron. $A$, the amplitude of the exponential, and $B$, the offset, are positive constants. Note that this mono-exponential fitting equation is strictly equivalent to that of Murray et al., 2014, $B$ here corresponding to $AB$ in the Murray method. Choosing one or the other equation did not affect the resulting fit and we kept the present form as it is easier to interpret. Fits on each AC were performed 50 times, with random initial guesses in the range $0, 2maxAC-minAC$ for $A$, $0, 2minAC$ for $B$, and [0, 1000] ms for TAU, from which the best fit was kept.
 
-To be valid, any individual fit (whether of the GLOBAL, FAST or SLOW type) had to display positive A, B, and TAU values. When neurons had a valid GLOBAL fit, two possibilities were considered. First, the valid GLOBAL fit was kept when (1) at least one of the FAST and SLOW fits were not valid or when (2) it was the best (i.e. its root-mean-square error was inferior to that of the sum of the valid FAST and SLOW fits). Neurons that did not have a valid GLOBAL fit were excluded from further analysis. Thus, while FAST and SLOW fits were de facto systematically excluded from further analysis, they were only used to ensure the quality of GLOBAL exponential fits. Note again that excluding <3% of neurons, this complex procedure was very conservative and designed for the sake of fitting performance.
+In a minority of cases (<3% of neurons), the AC following the peak (as defined above and denoted below the 1st peak) could present a shape that diverged from a simple exponential decay, because the first peak was followed by: a fast and large dip, then a second peak (local maximum), then the slower, final exponential decay. In this case, we developed a pipeline aiming at consistently choosing the peak (i.e. 1st or 2nd) from which the fit started. We defined the AC as having a dip if the first local minimum in the 100 ms after the 1st peak was below 75% of the global range of the AC, $maxAC-minAC$ (to avoid modelling local troughs due to noise as dips). When two peaks were detected, the second peak was defined as the maximum of the AC after the dip. Two additional mono-exponential fits of the AC were then performed, one from the first peak to the dip (FAST fit) and a second one from the second peak to the end of the AC (SLOW fit).
+
+To be valid, any individual fit (whether of the GLOBAL, FAST or SLOW type) had to display positive $A$, $B$, and TAU values. When neurons had a valid GLOBAL fit, two possibilities were considered. First, the valid GLOBAL fit was kept when (1) at least one of the FAST and SLOW fits were not valid or when (2) it was the best (i.e. its root-mean-square error was inferior to that of the sum of the valid FAST and SLOW fits). Neurons that did not have a valid GLOBAL fit were excluded from further analysis. Thus, while FAST and SLOW fits were de facto systematically excluded from further analysis, they were only used to ensure the quality of GLOBAL exponential fits. Note again that excluding <3% of neurons, this complex procedure was very conservative and designed for the sake of fitting performance.
 
 All codes are freely available (Fontanier et al., 2020).
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were performed using R (version 3.6.1) with the RStudio environment (R core team, 2014).
 
-BLOM transformation. As some timescale measures are non-normally distributed, analyses required a robust non-parametric test. We opted for the BLOM transformation which is a subcase of rank-based inverse normal transformations (Beasley et al., 2009). Basically, the data is ranked and then back-transformed to approximate the expected normal scores of the normal distribution according to the formula:Yi= Φ-1 ri-cN-2c+1
+BLOM transformation. As some timescale measures are non-normally distributed, analyses required a robust non-parametric test. We opted for the BLOM transformation which is a subcase of rank-based inverse normal transformations (Beasley et al., 2009). Basically, the data is ranked and then back-transformed to approximate the expected normal scores of the normal distribution according to the formula:
+
+$$
+Y_{i}= Φ^{-1} \frac{r_{i}-c}{N-2c+1}
+$$
 
 where ri is the ordinary rank and Yi the BLOM transformed value of the ith case among the N observations. Φ−1 is the standard normal quantile (or probit) function and c a constant set to 3/8 according to Blom, 1958. Regular parametric analyses can then be performed on the transformed data. Since z-scores of the transformed data are normally distributed and differences are expressed in standard errors, main effects and interactions can easily and robustly be interpreted. As sanity checks we also ran more classical non-parametric tests (Wilcoxon test) on non-normally distributed data leading to the same conclusions.
 
-## Behaviour and context-dependent modulations
+### Behaviour and context-dependent modulations
 
 Behavioural task. Monkeys were trained to perform a dual task involving rule-based and internally driven decisions (Stoll et al., 2016). Monkeys performed the task using a touch screen. In each trial they could freely choose whether to perform a rewarded categorization task or to check their progress towards a large bonus juice reward (Figure 3a). Upon checking (selection of a disk-shaped lever) progress was indicated by the onset of a visual ‘gauge’ (an evolving disk inside a fixed circle). Choosing the categorization task (selection of an inverted triangle lever) started a delayed response task in which an oriented white bar (cue) was briefly presented, followed by a delay at the end of which two bars oriented 45° leftward and rightward where presented. Selecting the bar matching the cue orientation led to a juice reward. An incorrect response led to no reward delivery. The gauge increased based on correct performance in the categorization task following seven steps to reach the maximum size. If the animal checked while the gauge was full, the bonus reward was delivered, and the gauge reset to step 1. The full gauge was reached after either 14, 21, 28, or 35 correct trials (=number of trials to complete the seven steps, pseudo-randomly chosen in each block). Thus, the gauge could increase at one of four different speeds.
 
@@ -200,13 +288,17 @@ Emptier vs. fuller gauge size seen. In each block, monkeys used the gauge size o
 
 To test whether current block speed had an influence on TAU at the unit level, we computed a modulation index for each unit: log(TAUslow)/log(TAUfast). Similarly, to test whether gauge filling state had an influence on TAU at the unit level, we computed a modulation index for each unit: log(TAUempty)/log(TAUfull), where TAUfull corresponds to TAU calculated on the spike data recorded during the time in blocks where the gauge was superior of equal to the 4th level.
 
-## Task-related analyses
+### Task-related analyses
 
 Single unit activity. Each unit’s spikes were counted in sliding bins of 200 ms overlapping by 50 ms from feedback onset to 800 ms post-feedback and during the intertrial interval from 400 ms before the end of trial signal onset to 2000 ms after its onset.
 
 Group analyses using a glmm. We used a glmm using a Poisson family. p-Values were corrected for multi-comparison with the false discovery rate algorithm with the number of comparisons being the number of timebins (p.adjust function in R).
 
-The mixed models used were of the form:y=β0+β1.CheckWork+β2.Gauge+β3.Previousfeedback+γ.Z+ϵ
+The mixed models used were of the form:
+
+$$
+y=\beta_{0}+\beta_{1}.CheckWork+\beta_{2}.Gauge+\beta_{3}.Previousfeedback+\gamma.Z+ϵ
+$$
 
 where γ·Z is the random term, and CheckWork, Gauge, and PreviousFeedback are the fixed effects describing the Check vs. Work decision (0/1), the gauge size (1–7) and the feedback in the previous trial (0/1) with their respective parameters (β). In the glmm, the single unit identity was used as a random factor.
 
@@ -222,7 +314,7 @@ Proportions of significant single units were extracted from the sliding glm if t
 
 We used also used the wPEV (computed with the function anova_stats from the sjstats package in R) as a statistical measure to quantify the extent to which the variability in neural firing rate was determined by feedback valence and gauge state. We then quantified the time-resolved proportion of cells coding for the task variables (p<0.05 for at least four successive bins) and the wPEV in populations of units with short or long TAU (median split by cell type). To assess differences between short and long TAU populations, we built null distributions by permuting 1000 times the TAU group allocation of units. We then compared the position of the true data relative to the cumulative distribution of the permutations and set a statistical threshold at α=0.05.
 
-## Timescale and coding variations along the antero-posterior axis
+### Timescale and coding variations along the antero-posterior axis
 
 We considered the genu of the arcuate sulcus as an anatomical landmark from which we computed distances of recording location along the anterior-posterior axis from MRI reconstructions.
 
@@ -230,61 +322,157 @@ We questioned TAU antero-posterior variability keeping recording locations cover
 
 To test variation in population coding along the antero-posterior axis, we divided single units into a posterior and anterior group based on the range of locations of each area (posterior MCC from 4.5 to 7 mm, nMCCRSpost = 84, nMCCFSpost = 14; anterior MCC from 7 to 9.5 mm, nMCCRSant = 82, nMCCFSpost = 16; posterior LPFC from 2.5 to 6 mm, nLPFCRSpost = 77, nLPFCFSpost = 19; anterior LPFC from 6 to 8.5 mm, nLPFCRSant = 97, nLPFCFSant = 19). Population coding analysis is described in task-related analyses.
 
-## Cellular model of pyramidal neurons in frontal areas
+### Cellular model of pyramidal neurons in frontal areas
 
-We built a generic biophysical Hodgkin-Huxley model of the detailed dynamics of membrane potential and of ionic and synaptic currents of individual pyramidal neurons in frontal areas. The model was generic, being endowed with a large set of ionic voltage- and calcium-dependent conductances, to encompass the wide possible repertoire of spiking discharge patterning encountered in vivo. In the model, the membrane potential followedCdVdt=-(IIonic+ISyn)
+We built a generic biophysical Hodgkin-Huxley model of the detailed dynamics of membrane potential and of ionic and synaptic currents of individual pyramidal neurons in frontal areas. The model was generic, being endowed with a large set of ionic voltage- and calcium-dependent conductances, to encompass the wide possible repertoire of spiking discharge patterning encountered in vivo. In the model, the membrane potential followed
 
-where C is the specific membrane capacity and the membrane ionic current writesIIonic=IL+INa+IK+ICaL+ICAN+IAHP+ICaT+IH
+$$
+C\frac{dV}{dt}=-(I_{Ionic}+I_{Syn})
+$$
 
-in which the leak current isIL=g-L V-VL
+where C is the specific membrane capacity and the membrane ionic current writes
 
-and action potential (AP) currents (INa , IK) are taken from a previous model we devised to reproduce spike currents of frontal pyramidal regular-spiking neurons (Naudé et al., 2012). The high-threshold calcium current wasICaL=g−CaL pCaL2(V−VCaL)
+$$
+I_{Ionic}=I_{L}+I_{Na}+I_{K}+I_{CaL}+I_{CAN}+I_{AHP}+I_{CaT}+I_{H}
+$$
 
-where the activation followed first-order kineticsdpCaLdt=(pCaL∞(V)−pCaL)/τCaL(V)
+in which the leak current is
 
-with a voltage-dependent time constantτCaL(V)=10αCaL+βCaLV
+$$
+I_{L}=g-_{L} V-V_{L}
+$$
 
-where αCaL and βCaL were fitted from in vitro data (Helton et al., 2005). The infinite activation followedpCaL∞(V)= 1/(1+exp(−(V−V1/2,CaL)/kCaL))
+and action potential (AP) currents ($I_{Na}$ , $I_{K}$) are taken from a previous model we devised to reproduce spike currents of frontal pyramidal regular-spiking neurons (Naudé et al., 2012). The high-threshold calcium current was
 
-where V1/2,CaL and kCaL respectively denote the half-activation potential and e-fold slope of the Boltzmann activation voltage dependence, estimated from in vitro data (Helton et al., 2005). The cationic non-selective (ICAN) current and the medium after-hyperpolarization (IAHP) current, responsible for frequency adaptation in pyramidal neurons were taken as in Rodriguez et al., 2018, withICAN=g-CAN pCANV-VCAN
+$$
+I_{CaL}=g−_{CaL} p_{CaL}^{2}(V−V_{CaL})
+$$
 
-andIAHP=g-AHP pAHP2V-VAHP
+where the activation followed first-order kinetics
 
-The activation of both currents, px (x∈CAN,  AHP) followed,dpxdt=(px∞(Ca)−px)/τx(Ca)
+$$
+\frac{dp_{CaL}}{dt}=(p_{CaL}^{∞}(V)−p_{CaL})/\tau_{CaL}(V)
+$$
 
-withτx(Ca)=1/(αxCa+βx)
+with a voltage-dependent time constant
 
-andpx∞(Ca)=αx/(αxCa+βx)
+$$
+\tau_{CaL}(V)=10^{\alpha_{CaL}+\beta_{CaL}V }
+$$
 
-where αx and βx respectively denote activation and deactivation kinetic constants consistent with experimental data in layer 5 PFC pyramidal neurons (Faber and Sah, 2007; Haj-Dahmane and Andrade, 1997; Villalobos et al., 2004). The low-threshold calcium (ICaT) and hyperpolarization-activated (IH) currents were from reference Ritter-Makinson et al., 2019. To account for autocorrelogram parameters, we employed different versions of the model that contained distinct subsets of ionic currents, which have been implicated in adaptation and bursting (ICaL, IAHP), rebound (ICaT, IH), and regenerative and bistable discharge (ICaL, ICAN, IAHP) in cortical pyramidal neurons. Calcium concentration dynamics resulted from the inward influx due to ICaL and ICaT and first-order buffering or extrusion (Rodriguez et al., 2018) through:dCadt=−(1/2F)(S/V)(ICaL+ICaT)+(Ca0−Ca)/τCa
+where $\alpha_{CaL}$ and $\beta_{CaL}$ were fitted from in vitro data (Helton et al., 2005). The infinite activation followed
 
-where F is the Faraday constant, Ca0 is the basal intracellular calcium concentration, τCa is the buffering time constant, andS/V=r1-11-r1/r0+r12/3r02-1
+$$
+p_{CaL}^{∞}(V)= 1/(1+exp(−(V−V_{1/2,CaL})/k_{CaL}))
+$$
 
-is the surface area to volume ratio of an idealized intracellular shell compartment of thickness r1 situated beneath the surface of a spherical neuron soma of radius r0 .
+where $V_{1/2,CaL}$ and $k_{CaL}$ respectively denote the half-activation potential and e-fold slope of the Boltzmann activation voltage dependence, estimated from in vitro data (Helton et al., 2005). The cationic non-selective ($I_{CAN}$) current and the medium after-hyperpolarization ($I_{AHP}$) current, responsible for frequency adaptation in pyramidal neurons were taken as in Rodriguez et al., 2018, with
 
-The synaptic current (ISyn) mimicked in vivo conditions encountered by neurons in the asynchronous irregular regime, summing random synaptic excitatory inputs, through AMPA and NMDA receptors, and inhibitory inputs, through GABAA and GABAB receptors. Thus,ISyn=IAMPA+INMDA+IGABAA+IGABAB
+$$
+I_{CAN}=g-_{CAN} p_{CAN}V-V_{CAN}
+$$
 
-For AMPA, GABAA, and GABAB,Ix=g¯x px(V−Vx)
+and
 
-where px is the opening probability of channel receptors and Vx the reversal potential of the current. The NMDA current followedINMDA=g¯NMDA pNMDA xNMDA(V)(V−VNMDA)
+$$
+I_{AHP}=g-_{AHP} p_{AHP}^{2}V-V_{AHP}
+$$
 
-incorporating the magnesium block voltage dependence modelled (Jahr and Stevens, 1990) asxNMDA(V)=(1+[Mg2+]e−0.062 V/3.57)−1
+The activation of both currents, $p_{x}$ ($x\inCAN,  AHP$) followed,
 
-To simulate fluctuations encountered in vivo, all opening probabilities followed Ornstein-Uhlenbeck processes (Destexhe and Paré, 1999)dpxdt=mx-pxτxdecay+σxεt
+$$
+\frac{dp_{x}}{dt}=(p_{x}^{∞}(Ca)−p_{x})/\tau_{x}(Ca)
+$$
 
-where εt is a Gaussian stochastic process with zero mean and unit standard deviation and mx and σx are the mean and standard deviation of the opening probabilities. For AMPA and GABAA, the mean was taken as the steady-state value of first-order synaptic dynamics described in the network model (see below):mx=1+τxdecay-1Δpx-1 fSyn-1nSyn-1-1
+with
 
-with nSyn pre-synaptic neurons firing at a frequency fSyn (with Syn∈Exc,  Inh , depending on the type of current considered), an instantaneous increase Δpx of opening probability upon each pre-synaptic spike and first-order decay dynamics with time constant τxdecay between spikes. For NMDA and GABAB, the mean was taken as the steady-state value of second-order synaptic dynamics described in the network model (see below):mx=1+τxdecay-1α-1 1+τxrise-1Δpx-1 fSyn-1nSyn-1-1
+$$
+\tau_{x}(Ca)=1/(\alpha_{x}Ca+\beta_{x})
+$$
 
-For all currents, standard deviations were taken as σx=0.5mx . Feed-forward excitatory and inhibitory currents were balanced (Xue et al., 2014), according to the driving forces and the excitation/inhibition ratio, through{g¯GABAA=gGABAA −(Vmean−VExc)(Vmean−VGABAA)  nExcnInh g¯GABAB=gGABAB −(Vmean−VExc)(Vmean−VGABAB)  nExcnInh
+and
 
-## Model similarity to monkey data
+$$
+p_{x}^{∞}(Ca)=\alpha_{x}/(\alpha_{x}Ca+\beta_{x})
+$$
 
-The bivariate probability density distribution of neuronal TAU and LAT autocorrelogram parameters was estimated in RS and FS units in monkey in both the LPFC and MCC, using bivariate normal kernel density functions. For cellular models, similarity maps to monkey data was determined as following: for each model parameter couple of the map, the similarity to the considered cortex (LPFC or MCC) was defined as the probability density of that cortex to display the TAU and LAT parameters produced by the model. Cellular models with mean firing frequency superior to 20 Hz were considered to discharge in an unrealistic fashion, compared to data, and were discarded. In network models, for each parameter value (one-dimensional explorations) or model parameter couples of the map (two-dimensional explorations), the similarity (S) was defined as the normalized Frobenius inner product between the bivariate probability density distributions of units in monkeys (U) and that of neurons in the network model (N), followingSU,N=<U,N>F‖U‖F‖N‖F
+where $\alpha_{x}$ and $\beta_{x}$ respectively denote activation and deactivation kinetic constants consistent with experimental data in layer 5 PFC pyramidal neurons (Faber and Sah, 2007; Haj-Dahmane and Andrade, 1997; Villalobos et al., 2004). The low-threshold calcium ($I_{CaT}$) and hyperpolarization-activated ($I_{H}$) currents were from reference Ritter-Makinson et al., 2019. To account for autocorrelogram parameters, we employed different versions of the model that contained distinct subsets of ionic currents, which have been implicated in adaptation and bursting ($I_{CaL}$, $I_{AHP}$), rebound ($I_{CaT}$, $I_{H}$), and regenerative and bistable discharge ($I_{CaL}$, $I_{CAN}$, $I_{AHP}$) in cortical pyramidal neurons. Calcium concentration dynamics resulted from the inward influx due to $I_{CaL}$ and $I_{CaT}$ and first-order buffering or extrusion (Rodriguez et al., 2018) through:
 
-In order to account for the TAU and LAT autocorrelogram parameters for both RS and FS populations, the similarity was calculated separately as RS with Exc and FS with Inh. Seeing as excitatory neurons represent pExc=0.8 of the neurons in cortex (Beaulieu et al., 1992), the overall similarity was then calculated asS=pExc SRS,Exc+pInh SFS,Inh
+$$
+\frac{dCa}{dt}=−(1/2F)(S/V)(I_{CaL}+I_{CaT})+(Ca_{0}−Ca)/\tau_{Ca}
+$$
 
-## Parametric explorations in the pyramidal neuron model
+where F is the Faraday constant, $Ca_{0}$ is the basal intracellular calcium concentration, $\tau_{Ca}$ is the buffering time constant, and
+
+$$
+S/V=r_{1}^{-1}1-r_{1}/r_{0}+r_{1}^{2}/3r_{0}^{2}^{-1}
+$$
+
+is the surface area to volume ratio of an idealized intracellular shell compartment of thickness $r_{1}$ situated beneath the surface of a spherical neuron soma of radius $r_{0}$ .
+
+The synaptic current ($I_{Syn}$) mimicked in vivo conditions encountered by neurons in the asynchronous irregular regime, summing random synaptic excitatory inputs, through AMPA and NMDA receptors, and inhibitory inputs, through GABAA and GABAB receptors. Thus,
+
+$$
+I_{Syn}=I_{AMPA}+I_{NMDA}+I_{GABA_{A}}+I_{GABA_{B}}
+$$
+
+For AMPA, GABAA, and GABAB,
+
+$$
+I_{x}=g¯_{x} p_{x}(V−V_{x})
+$$
+
+where $p_{x}$ is the opening probability of channel receptors and $V_{x}$ the reversal potential of the current. The NMDA current followed
+
+$$
+I_{NMDA}=g¯_{NMDA} p_{NMDA} x_{NMDA}(V)(V−V_{NMDA})
+$$
+
+incorporating the magnesium block voltage dependence modelled (Jahr and Stevens, 1990) as
+
+$$
+x_{NMDA}(V)=(1+[Mg^{2+}]e^{−0.062 V}/3.57)^{−1}
+$$
+
+To simulate fluctuations encountered in vivo, all opening probabilities followed Ornstein-Uhlenbeck processes (Destexhe and Paré, 1999)
+
+$$
+\frac{dp_{x}}{dt}=\frac{m_{x}-p_{x}}{\tau_{x}^{decay}}+\sigma_{x}\epsilont
+$$
+
+where $\epsilont$ is a Gaussian stochastic process with zero mean and unit standard deviation and $m_{x}$ and $\sigma_{x}$ are the mean and standard deviation of the opening probabilities. For AMPA and GABAA, the mean was taken as the steady-state value of first-order synaptic dynamics described in the network model (see below):
+
+$$
+m_{x}=1+\tau_{x}^{decay}^{-1}Δp_{x}^{-1} f_{Syn}^{-1}n_{Syn}^{-1}^{-1}
+$$
+
+with $n_{Syn}$ pre-synaptic neurons firing at a frequency $f_{Syn}$ (with $Syn\inExc,  Inh$ , depending on the type of current considered), an instantaneous increase $Δp_{x}$ of opening probability upon each pre-synaptic spike and first-order decay dynamics with time constant $\tau_{x}^{decay}$ between spikes. For NMDA and GABAB, the mean was taken as the steady-state value of second-order synaptic dynamics described in the network model (see below):
+
+$$
+m_{x}=1+\tau_{x}^{decay}^{-1}\alpha^{-1} 1+\tau_{x}^{rise}^{-1}Δp_{x}^{-1} f_{Syn}^{-1}n_{Syn}^{-1}^{-1}
+$$
+
+For all currents, standard deviations were taken as $\sigma_{x}=0.5m_{x}$ . Feed-forward excitatory and inhibitory currents were balanced (Xue et al., 2014), according to the driving forces and the excitation/inhibition ratio, through
+
+$$
+{g¯_{GABA_{A}}=g_{GABA_{A}} \frac{−(V_{mean}−V_{Exc})}{(V_{mean}−V_{GABA_{A}})}  \frac{n_{Exc}}{n_{Inh}} g¯_{GABA_{B}}=g_{GABA_{B}} \frac{−(V_{mean}−V_{Exc})}{(V_{mean}−V_{GABA_{B}})}  \frac{n_{Exc}}{n_{Inh}}
+$$
+
+### Model similarity to monkey data
+
+The bivariate probability density distribution of neuronal TAU and LAT autocorrelogram parameters was estimated in RS and FS units in monkey in both the LPFC and MCC, using bivariate normal kernel density functions. For cellular models, similarity maps to monkey data was determined as following: for each model parameter couple of the map, the similarity to the considered cortex (LPFC or MCC) was defined as the probability density of that cortex to display the TAU and LAT parameters produced by the model. Cellular models with mean firing frequency superior to 20 Hz were considered to discharge in an unrealistic fashion, compared to data, and were discarded. In network models, for each parameter value (one-dimensional explorations) or model parameter couples of the map (two-dimensional explorations), the similarity (S) was defined as the normalized Frobenius inner product between the bivariate probability density distributions of units in monkeys (U) and that of neurons in the network model (N), following
+
+$$
+S_{U,N}=\frac{<U,N>_{F}}{‖U‖_{F}‖N‖_{F}}
+$$
+
+In order to account for the TAU and LAT autocorrelogram parameters for both RS and FS populations, the similarity was calculated separately as RS with Exc and FS with Inh. Seeing as excitatory neurons represent $p_{Exc}=0.8$ of the neurons in cortex (Beaulieu et al., 1992), the overall similarity was then calculated as
+
+$$
+S=p_{Exc} S_{RS,Exc}+p_{Inh} S_{FS,Inh}
+$$
+
+### Parametric explorations in the pyramidal neuron model
 
 Biophysical properties of neurons can affect autocorrelation parameters in several ways. In principle, increasing the refractory period (through increased hyperpolarizing ionic conductance) shifts the distribution of first-order lags (ISIs), thus increasing LAT (Figure 5—figure supplement 1a i). Increasing burstiness of the spike discharge (through increased depolarizing conductance-mediated positive feedback) also increases the latency, because higher-order lag distributions are more peaked. Moreover, conductances with slow time constants (including many bursting-mediating conductances) increase that of the autocorrelogram itself. Finally, all these factors may interact in complex ways in vivo to set the spiking pattern that shapes autocorrelations.
 
@@ -292,41 +480,81 @@ We first explored these alternatives with a detailed biophysical Hodgkin-Huxley 
 
 Computing an estimation of the bivariate probability density distribution of neuronal autocorrelogram parameters for LPFC and MCC RS units (Figure 5—figure supplement 1c) allowed to build a map of the similarity of the cellular model to RS units temporal signatures in monkey LPFC and MCC, defined as the bivariate probability density observed for the LAT and TAU yielded by the cellular model, given a (gCAN, gAHP) couple of parameters (see Model similarity to monkey data). We found that the model displayed large (i.e. sub-maximal) similarity to the LPFC in a substantial region of (gCAN, gAHP) parameters (Figure 5—figure supplement 1d). By contrast, this was not true for the MCC (Figure 5—figure supplement 1d), because the model was unable to generate LAT in the 100–150 ms range that characterizes the MCC (Figure 5—figure supplement 1b), even when exploring large ranges of CAN and AHP conductance kinetic parameters.
 
-## Model of local recurrent neural networks in frontal areas
+### Model of local recurrent neural networks in frontal areas
 
-We built a biophysical model of a generic local frontal recurrent neural network, endowed with detailed biological properties of its neurons and connections. The network model contained N neurons that were either excitatory (E) or inhibitory (I) (neurons projecting only glutamate or GABA), respectively (Dale, 1935), with probabilities pE and pI=1-pE, respectively, and pE/pI=4 (Beaulieu et al., 1992). Connectivity was sparse (i.e. only a fraction of all possible connections exists Thomson et al., 2002) with no autapses (self-connections) and EE connections (from E to E neurons) drawn to insure the over-representation of bidirectional connections in cortical networks (four times more than randomly drawn according to a Bernoulli scheme; Song et al., 2005). The synaptic weights w(i,j) of existent connections were drawn identically and independently from a log-normal distribution of parameters μw and σw (Song et al., 2005). To cope with simulation times required for the massive explorations ran in the parameter space, neurons were modelled as leaky integrate-and-fire neurons, that is, the AP mechanism was simplified, compared to the cellular model (see above). Moreover, leveraging simulations at the cellular level, we only considered the ICAN and IAHP amongst the ionic currents of the cellular model (see above). Thus, the membrane potential followed{ dV(j)dt=−(IIonic(j)+ISyn.Rec(j)+ISyn.FF(j))V(j)>θ→V(j)=Vrest
+We built a biophysical model of a generic local frontal recurrent neural network, endowed with detailed biological properties of its neurons and connections. The network model contained $N$ neurons that were either excitatory (E) or inhibitory (I) (neurons projecting only glutamate or GABA), respectively (Dale, 1935), with probabilities $p_{E}$ and $p_{I}=1-p_{E}$, respectively, and $p_{E}/p_{I}=4$ (Beaulieu et al., 1992). Connectivity was sparse (i.e. only a fraction of all possible connections exists Thomson et al., 2002) with no autapses (self-connections) and EE connections (from E to E neurons) drawn to insure the over-representation of bidirectional connections in cortical networks (four times more than randomly drawn according to a Bernoulli scheme; Song et al., 2005). The synaptic weights $w_{(i,j)}$ of existent connections were drawn identically and independently from a log-normal distribution of parameters $\mu_{w}$ and $\sigma_{w}$ (Song et al., 2005). To cope with simulation times required for the massive explorations ran in the parameter space, neurons were modelled as leaky integrate-and-fire neurons, that is, the AP mechanism was simplified, compared to the cellular model (see above). Moreover, leveraging simulations at the cellular level, we only considered the $I_{CAN}$ and $I_{AHP}$ amongst the ionic currents of the cellular model (see above). Thus, the membrane potential followed
 
-where repolarization occurred after a refractory period ΔtAP . The ionic current followedIIonic(j)=IL(j)+ICAN(j)+IAHPj
+$$
+{ \frac{dV_{(j)}}{dt}=−(I_{Ionic(j)}+I_{Syn.Rec(j)}+I_{Syn.FF(j)})V_{(j)}>\theta→V_{(j)}=V_{rest}
+$$
 
-with parameters and gating dynamics of ionic currents identical to the cellular model. The intra-somatic calcium concentration Ca evolved according to discrete spike-induced increments and first-order exponential decay:dCa(j)dt=Ca0−Ca(j)τCa+ΔCa δ(t−t(j)k)
+where repolarization occurred after a refractory period $Δt_{AP}$ . The ionic current followed
 
-where t(j)k is the time of the kth spike in the spike train of neuron j, δ the Dirac delta function, τCa the time constant of calcium extrusion, Ca0 the basal calcium, and ΔCa a spike-induced increment of calcium concentration. The recurrent synaptic current on post-synaptic neuron j, from – either excitatory or inhibitory – pre-synaptic neurons (indexed by i), wasISyn.Rec(j)=∑iIAMPAi,j+INMDAi,j+IGABAAi,j+IGABABi,j
+$$
+I_{Ionic(j)}=I_{L(j)}+I_{CAN(j)}+I_{AHPj}
+$$
 
-The delay for synaptic conduction and transmission, Δtsyn , was considered uniform across the network (Brunel and Wang, 2001). Synaptic recurrent currents followedIx(i,j)=g¯x w(i,j) px(i)(V(j)−Vx)
+with parameters and gating dynamics of ionic currents identical to the cellular model. The intra-somatic calcium concentration Ca evolved according to discrete spike-induced increments and first-order exponential decay:
 
-where w(i,j) is the synaptic weight, px(i) the opening probability of channel receptors, and Vx the reversal potential of the current. The NMDA current followedINMDA(i,j)=g¯NMDA w(i,j) pNMDA(i) xNMDA(V(j))(V(j)−VNMDA)
+$$
+\frac{dCa_{(j)}}{dt}=\frac{Ca_{0}−Ca_{(j)}}{\tau_{Ca}}+ΔCa \delta(t−t_{(j)}^{k})
+$$
 
-with xNMDA(V) the magnesium block voltage dependence (see cellular model). AMPA and GABAA rise times were approximated as instantaneous (Brunel and Wang, 2001) and bounded, with first-order decaydpx(i)dt=−px(i)τxdecay+Δpx(1−px(i)) δ(t−t(i)k)
+where $t_{(j)}^{k}$ is the time of the $k$th spike in the spike train of neuron $j$, $\delta$ the Dirac delta function, $\tau_{Ca}$ the time constant of calcium extrusion, $Ca_{0}$ the basal calcium, and $ΔCa$ a spike-induced increment of calcium concentration. The recurrent synaptic current on post-synaptic neuron $j$, from – either excitatory or inhibitory – pre-synaptic neurons (indexed by $i$), was
 
-To take into account the longer NMDA (Wang et al., 2008) and GABA-B (Destexhe et al., 1998) rise times, opening probabilities followed second-order dynamics (Brunel and Wang, 2001){dqx(i)dt=−qx(i)τxrise+Δqx(1−qx(i))δ(t−t(i)k)dpx(i)dt=−px(i)τxdecay+αx qx(i) (1−px(i))
+$$
+I_{Syn.Rec(j)}=\sumiI_{AMPAi,j}+I_{NMDAi,j}+I_{GABA_{A}i,j}+I_{GABA_{B}i,j}
+$$
 
-Recurrent excitatory and inhibitory currents were balanced in each post-synaptic neuron (Xue et al., 2014), according to driving forces and excitation/inhibition weight ratio, through{g¯GABAA=gGABAA −(Vmean−VExc)(Vmean−VGABAA)  ∑i∈Excw(i,j)∑i∈Inhw(i,j) g¯GABAB=gGABAB −(Vmean−VExc)(Vmean−VGABAB)  ∑i∈Excw(i,j)∑i∈Inhw(i,j)
+The delay for synaptic conduction and transmission, $Δt_{syn}$ , was considered uniform across the network (Brunel and Wang, 2001). Synaptic recurrent currents followed
 
-with Vmean=θ+Vrest/2 approximating the average membrane potential.
+$$
+I_{x(i,j)}=g¯_{x} w_{(i,j)} p_{x(i)}(V_{(j)}−V_{x})
+$$
 
-The feed-forward synaptic current ISyn.FF(j) (putatively arising from cortical and sub-cortical inputs) consisted of an AMPA componentISyn.FF(j)=g¯AMPAFF pAMPAFF (V(j)−VAMPA)
+where $w_{(i,j)}$ is the synaptic weight, $p_{x(i)}$ the opening probability of channel receptors, and Vx the reversal potential of the current. The NMDA current followed
 
-with a constant opening probability pAMPAFF .
+$$
+I_{NMDA(i,j)}=g¯_{NMDA} w_{(i,j)} p_{NMDA(i)} x_{NMDA}(V_{(j)})(V_{(j)}−V_{NMDA})
+$$
 
-## Numerical integration and parameters of the models
+with $x_{NMDA}(V)$ the magnesium block voltage dependence (see cellular model). AMPA and GABAA rise times were approximated as instantaneous (Brunel and Wang, 2001) and bounded, with first-order decay
 
-Models were simulated and explored using custom developed code under MATLAB and were numerically integrated using the forward Euler method with time-steps Δt=0.1 ms in cellular models and Δt=0.5 ms in network models. Computational models are freely accessible on the Zenodo repository (https://doi.org/10.5281/zenodo.5707884) (Fontanier et al., 2020).
+$$
+\frac{dp_{x(i)}}{dt}=−\frac{p_{x(i)}}{\tau_{x}^{decay}}+Δp_{x}(1−p_{x(i)}) \delta(t−t_{(i)}^{k})
+$$
 
-Unless indicated in figure legends, standard cellular parameter values were as follows. Concerning ionic currents, C=1 μF.cm−2 , g¯L=0.05 mS.cm−2, VL=−70 mV, g¯Na=30 mS.cm−2 , VNa=50 mV, g¯K=2 mS.cm−2 , VK=−90 mV , g¯CaL=0.01 mS.cm−2 , VCaL=150 mV , g¯CAN=0.05 mS.cm−2 , VCAN=30 mV , αCAN=0.0015 μM−1.ms−1 , βCAN=0.005 ms−1 , g¯AHP=0.1 mS.cm−2 , VAHP=−90 mV , αAHP=0.025 μM−1.ms−1 , βAHP=0.025 ms−1 , g¯CaT=0 mS.cm−2 , VCaT=120 mV , g¯H=0 mS.cm−2 , VH=−40 mV , VτH1/2=−105 mV , kτH=10 mV , τH,min=1000 ms , τH,max=6000 ms , Ca0=0.1 μM , τCa=25 ms , F=96500 mol.s-1.A-1 , r0=4⋅10−4 cm , r1=0.25⋅10−4 cm. Concerning synaptic currents, g¯AMPA=0.02 mS.cm−2 , τAMPAdecay=2.5 ms , g¯NMDA=0.03 mS.cm−2 , αNMDA=0.275 ms−1 , τNMDArise=4.65 ms , τNMDAdecay=75 ms , VAMPA=VNMDA=0 mV , gGABAA=0.0063 mS.cm−2 , τGABAAdecay=10 ms , VGABAA=−70 mV , gGABAB=3.125⋅10−4 mS.cm−2 , αGABAB=0.015 ms−1 , τGABABrise=90 ms , τGABABdecay=160 ms , VGABAB=−90 mV , ΔxAMPA=ΔxNMDA=ΔxGABAA=ΔxGABAB=0.1 , Vmean=−57.5 mV , nExc=484 , nInh=nExc/4=121 , fExc=7Hz , fInh=7Hz , [Mg2+]=1.5 mM.
+To take into account the longer NMDA (Wang et al., 2008) and GABA-B (Destexhe et al., 1998) rise times, opening probabilities followed second-order dynamics (Brunel and Wang, 2001)
 
-Unless indicated in figure legends, standard parameter values in network models were identical to cellular model parameters, except for the following. Concerning the network, N=nExc+nInh=605 neurons, pExc=0.8, so that nExc=NpExc=484 and nInh=NpInh=121. Concerning the weight matrix, μw=0.03, σw=0.02, pEE=pEI=pII=0.3, pIE=0.55. Concerning integrate-and-fire neuron properties and intrinsic currents, Vrest=−65 mV , θ=−50 mV, Vmean=(Vrest+θ)/2=−57.5 mV, ΔtAP=3 ms, ΔCa=0.2μM, g¯CAN=0.025 mS.cm−2 . Concerning synaptic currents, Δtsyn=0.5 ms, τAMPAFF=2.5 ms, ΔxAMPAFF=0.1, g¯AMPA=g¯AMPAFF=0.23 mS.cm−2 , g¯NMDA=0.35 mS.cm−2 , gGABAA=0.4 mS.cm−2 , pAMPAFF=0.101 a.u.
+$$
+{\frac{dq_{x(i)}}{dt}=−\frac{q_{x(i)}}{\tau_{x}^{rise}}+Δq_{x}(1−q_{x(i)})\delta(t−t_{(i)}^{k})\frac{dp_{x(i)}}{dt}=−\frac{p_{x(i)}}{\tau_{x}^{decay}}+\alpha_{x} q_{x(i)} (1−p_{x(i)})
+$$
 
-## Parametric explorations in the network model
+Recurrent excitatory and inhibitory currents were balanced in each post-synaptic neuron (Xue et al., 2014), according to driving forces and excitation/inhibition weight ratio, through
+
+$$
+{g¯_{GABA_{A}}=g_{GABA_{A}} \frac{−(V_{mean}−V_{Exc})}{(V_{mean}−V_{GABA_{A}})}  \frac{\sumi\inExcw_{(i,j)}}{\sumi\inInhw_{(i,j)}} g¯_{GABA_{B}}=g_{GABA_{B}} \frac{−(V_{mean}−V_{Exc})}{(V_{mean}−V_{GABA_{B}})}  \frac{\sumi\inExcw_{(i,j)}}{\sumi\inInhw_{(i,j)}}
+$$
+
+with $V_{mean}=\theta+V_{rest}/2$ approximating the average membrane potential.
+
+The feed-forward synaptic current $I_{Syn.FF(j)}$ (putatively arising from cortical and sub-cortical inputs) consisted of an AMPA component
+
+$$
+I_{Syn.FF(j)}=g¯_{AMPA_{FF}} p_{AMPA_{FF}} (V_{(j)}−V_{AMPA})
+$$
+
+with a constant opening probability $p_{AMPA_{FF}}$ .
+
+### Numerical integration and parameters of the models
+
+Models were simulated and explored using custom developed code under MATLAB and were numerically integrated using the forward Euler method with time-steps $Δt=0.1 ms$ in cellular models and $Δt=0.5 ms$ in network models. Computational models are freely accessible on the Zenodo repository (https://doi.org/10.5281/zenodo.5707884) (Fontanier et al., 2020).
+
+Unless indicated in figure legends, standard cellular parameter values were as follows. Concerning ionic currents, $C=1 \muF.cm^{−2}$ , $g¯_{L}=0.05 mS.cm^{−2}$, $V_{L}=−70 mV$, $g¯_{Na}=30 mS.cm^{−2}$ , $V_{Na}=50 mV$, $g¯_{K}=2 mS.cm^{−2}$ , $V_{K}=−90 mV$ , $g¯_{CaL}=0.01 mS.cm^{−2}$ , $V_{CaL}=150 mV$ , $g¯_{CAN}=0.05 mS.cm^{−2}$ , $V_{CAN}=30 mV$ , $\alpha_{CAN}=0.0015 \muM^{−1}.ms^{−1}$ , $\beta_{CAN}=0.005 ms^{−1}$ , $g¯_{AHP}=0.1 mS.cm^{−2}$ , $V_{AHP}=−90 mV$ , $\alpha_{AHP}=0.025 \muM^{−1}.ms^{−1}$ , $\beta_{AHP}=0.025 ms^{−1}$ , $g¯_{CaT}=0 mS.cm^{−2}$ , $V_{CaT}=120 mV$ , $g¯_{H}=0 mS.cm^{−2}$ , $V_{H}=−40 mV$ , $V_{\tauH1/2}=−105 mV$ , $k_{\tauH}=10 mV$ , $\tau_{H,min}=1000 ms$ , $\tau_{H,max}=6000 ms$ , $Ca_{0}=0.1 \muM$ , $\tau_{Ca}=25 ms$ , $F=96500 mol.s^{-1}.A^{-1}$ , $r_{0}=4⋅10^{−4} cm$ , $r_{1}=0.25⋅10^{−4} cm$. Concerning synaptic currents, $g¯_{AMPA}=0.02 mS.cm^{−2}$ , $\tau_{AMPA}^{decay}=2.5 ms$ , $g¯_{NMDA}=0.03 mS.cm^{−2}$ , $\alpha_{NMDA}=0.275 ms^{−1}$ , $\tau_{NMDA}^{rise}=4.65 ms$ , $\tau_{NMDA}^{decay}=75 ms$ , $V_{AMPA}=V_{NMDA}=0 mV$ , $g_{GABA_{A}}=0.0063 mS.cm^{−2}$ , $\tau_{GABA_{A}}^{decay}=10 ms$ , $V_{GABA_{A}}=−70 mV$ , $g_{GABA_{B}}=3.125⋅10^{−4} mS.cm^{−2}$ , $\alpha_{GABA_{B}}=0.015 ms^{−1}$ , $\tau_{GABA_{B}}^{rise}=90 ms$ , $\tau_{GABA_{B}}^{decay}=160 ms$ , $V_{GABA_{B}}=−90 mV$ , $Δx_{AMPA}=Δx_{NMDA}=Δx_{GABA_{A}}=Δx_{GABA_{B}}=0.1$ , $V_{mean}=−57.5 mV$ , $n_{Exc}=484$ , $n_{Inh}=n_{Exc}/4=121$ , $f_{Exc}=7Hz$ , $f_{Inh}=7Hz$ , $[Mg^{2+}]=1.5 mM$.
+
+Unless indicated in figure legends, standard parameter values in network models were identical to cellular model parameters, except for the following. Concerning the network, $N=n_{Exc}+n_{Inh}=605$ neurons, $p_{Exc}=0.8$, so that $n_{Exc}=Np_{Exc}=484$ and $n_{Inh}=Np_{Inh}=121$. Concerning the weight matrix, $\mu_{w}=0.03$, $\sigma_{w}=0.02$, $p_{EE}=p_{EI}=p_{II}=0.3$, $p_{IE}=0.55$. Concerning integrate-and-fire neuron properties and intrinsic currents, $V_{rest}=−65 mV$ , $\theta=−50 mV$, $V_{mean}=(V_{rest}+\theta)/2=−57.5 mV$, $Δt_{AP}=3 ms$, $ΔCa=0.2\muM$, $g¯_{CAN}=0.025 mS.cm^{−2}$ . Concerning synaptic currents, $Δt_{syn}=0.5 ms$, $\tau_{AMPA_{FF}}=2.5 ms$, $Δx_{AMPA_{FF}}=0.1$, $g¯_{AMPA}=g¯_{AMPA_{FF}}=0.23 mS.cm^{−2}$ , $g¯_{NMDA}=0.35 mS.cm^{−2}$ , $g_{GABA_{A}}=0.4 mS.cm^{−2}$ , $p_{AMPA_{FF}}=$$0.101$ a.u.
+
+### Parametric explorations in the network model
 
 We first assessed whether variations of a single biophysical parameter could explain the differences in the temporal signature of the MCC, compared to the LPFC: an increased TAU for RS and FS units and an increased LAT for RS (but not for FS) units. To do so, we tested many biophysical parameters determining the architectural, synaptic, and intrinsic properties of the network, but none were able to account for these differences between frontal areas (not shown).
 
@@ -356,20 +584,24 @@ The exploration of the (gAHP, gNMDA) space indicated a situation where combined 
 
 Contrarily to explorations in (gAHP, gCAN) and (gAHP, gNMDA) spaces, exploration in the (gAHP, gGABA-B) provided two domains of high similarity to LPFC and MCC that indicated a strong quantitative agreement of the model to monkey data (see main text). Moreover, these domains were large (relative to the mean values of gAHP and gGABA-B in said domains) indicating robustness to the inherent biological variability present in frontal cortical structures. Finally, qualitative agreement was present, in addition to the quantitative agreement revealed by the similarity measure, in the sense that all three main qualitative differences between LPFC and MCC (with higher LAT and TAU in RS units and a higher TAU in Inh neurons) were well reproduced in this setup.
 
-## HMM analysis
+### HMM analysis
 
 We used HMM to map the spiking set of neural network models and unit populations in monkeys onto discrete states of collective activity, based on previously established methods (Abeles et al., 1995; Seidemann et al., 1996). Monkey recordings occurred in separate sessions from which samples of typically three to four (maximum five) neurons were recorded simultaneously. HMMs were impractical on such small samples, so it was necessary to create pseudo-populations that could substitute for large simultaneous recordings of the population, to improve the amount of data leveraged and maximize the information extracted in terms of neural states. However, creating pseudo-populations ignores correlated activity between neurons, globally degrading the accuracy of state detection. In principle this degradation affects absolute quantitative state estimations in the LPFC and MCC equally. Therefore, it should not affect the conclusions drawn here, as they are based on relative comparisons between order of magnitudes of state estimates in the LPFC and MCC. Thus, applying HMM to large simultaneous populations would most likely not change the conclusions drawn from experimental data. This point is supported by the fact that we qualitatively obtained similar HMM results in populations and pseudo-populations in the model (see Results), as well as by the general observation that the amount of information that can be time-decoded in associative areas (such as in the LPFC) is globally the same, when using pseudo-populations or simultaneously recorded neurons (Anderson et al., 2007; Meyers et al., 2008). Extended results presented in supplementary materials were obtained using LPFC and MCC pseudo-populations built of groups of neurons drawn from simulations of distinct random neural networks (i.e. synaptic matrices), with group statistics (numbers of groups and numbers of excitatory and inhibitory neurons within each group) similar to those of monkey LPFC and MCC data.
 
-HMM methods allow to determine the probability pSk(t) of the network to be in state Sk, k∈1...nS at time t. Typically, we found that, as previously shown in frontal areas, population activity organized into periods that lasted in the range ∼10 ms−10 s, that is, transition probabilities were small and states were quasi-stationary. When all probabilities of being in a state p(Sk)<0.8, the network was considered to be in the null state S0, signifying that the network was not in any of the states. Periods in the S0  state were typically short (mean: LPFCm =16 ms, MCCm =36 ms, not shown). Thus, when immediately preceded and followed by two periods in the same state Sk , periods in S0  were attributed the state Sk. For each network spiking set assessed, we pooled the durations of all periods in all the states of the HMM, to build the overall probability distribution of period durations pd. We then used this probability distribution to computeptd=pdd∫u=0+∞puu du
+HMM methods allow to determine the probability $pS_{k}(t)$ of the network to be in state $S_{k}, k\in1...n_{S}$ at time $t$. Typically, we found that, as previously shown in frontal areas, population activity organized into periods that lasted in the range $∼10 ms−10 s$, that is, transition probabilities were small and states were quasi-stationary. When all probabilities of being in a state $p(S_{k})<0.8$, the network was considered to be in the null state $S_{0}$, signifying that the network was not in any of the states. Periods in the $S_{0 }$ state were typically short (mean: LPFCm =16 ms, MCCm =36 ms, not shown). Thus, when immediately preceded and followed by two periods in the same state $S_{k}$ , periods in $S_{0 }$ were attributed the state $S_{k}$. For each network spiking set assessed, we pooled the durations of all periods in all the states of the HMM, to build the overall probability distribution of period durations $pd$. We then used this probability distribution to compute
 
-that is, the proportion of time spent in state periods of duration d, that is, the probability, at any given instant in time, of being in state periods of duration d. We could not find any generic univocal suitable method of stably determining the number of states nS. However, as a low number of states is more parsimonious in terms of data interpretation (Pohle et al., 2017) in general and because the task structure contains a low number of possible states in terms of actions (four), reward on the last trial (incorrect trial, first correct trial, correct trial after previous correct trials) and behavioural states (exploration, exploitation), we arbitrarily fixed nS=4. We checked that this choice was sound and evaluated Akaike information criterion (AIC) and BIC values for different numbers of states in both cortical areas and in both monkey and model data (Figure 7—figure supplement 4). We observed that AIC and BIC did not substantially change when varying the number of states in the range 2–10. We therefore kept the chosen value nS=4.
+$$
+p_{t}d=\frac{pdd}{\int_{u=0}^{+∞}puu du}
+$$
 
-Each HMM analysis was conducted on a spiking set lasting 600 s, both in neural network models and unit populations in monkeys. For each monkey area, the activity of all neurons was pooled, regardless of their recording session. This was mandatory because the number of neurons simultaneously recorded in each session was typically inferior to 5, so that HMMs were inefficient in detecting states. Pooling all neurons allowed the detection of global states that corresponded to the combination of collective dynamics recorded during distinct sessions, that is, that were not time-locked together (phase information lost across sessions) and causally independent. Although chimeric, these HMM states were nevertheless able to indirectly capture the underlying temporal structure of collective spiking discharges in frontal areas in a similar way and thus allowed comparing LPFC and MCC collective temporal structure. In control HMMs, both the timing and neuron assignment of all spikes were randomly shuffled. The initial estimation of the average state duration across all periods in a given state was taken at a high value (300 ms), which was suggested to give better log-likelihood scores and converge to similar states across repetitions of the HMM (Seidemann et al., 1996). The time bin was Δt=0.5 ms. We checked that state durations were not caused by eventual drifts in data firing frequency (Figure 7—figure supplement 2; Figure 7—source data 2). We also checked that state durations were distributed exponentially, lending credence to the metastable nature of HMM states (Figure 7—figure supplement 3).
+that is, the proportion of time spent in state periods of duration $d$, that is, the probability, at any given instant in time, of being in state periods of duration $d$. We could not find any generic univocal suitable method of stably determining the number of states $n_{S}$. However, as a low number of states is more parsimonious in terms of data interpretation (Pohle et al., 2017) in general and because the task structure contains a low number of possible states in terms of actions (four), reward on the last trial (incorrect trial, first correct trial, correct trial after previous correct trials) and behavioural states (exploration, exploitation), we arbitrarily fixed $n_{S}=4$. We checked that this choice was sound and evaluated Akaike information criterion (AIC) and BIC values for different numbers of states in both cortical areas and in both monkey and model data (Figure 7—figure supplement 4). We observed that AIC and BIC did not substantially change when varying the number of states in the range 2–10. We therefore kept the chosen value $n_{S}=4$.
 
-## Principal component analysis
+Each HMM analysis was conducted on a spiking set lasting 600 s, both in neural network models and unit populations in monkeys. For each monkey area, the activity of all neurons was pooled, regardless of their recording session. This was mandatory because the number of neurons simultaneously recorded in each session was typically inferior to 5, so that HMMs were inefficient in detecting states. Pooling all neurons allowed the detection of global states that corresponded to the combination of collective dynamics recorded during distinct sessions, that is, that were not time-locked together (phase information lost across sessions) and causally independent. Although chimeric, these HMM states were nevertheless able to indirectly capture the underlying temporal structure of collective spiking discharges in frontal areas in a similar way and thus allowed comparing LPFC and MCC collective temporal structure. In control HMMs, both the timing and neuron assignment of all spikes were randomly shuffled. The initial estimation of the average state duration across all periods in a given state was taken at a high value (300 ms), which was suggested to give better log-likelihood scores and converge to similar states across repetitions of the HMM (Seidemann et al., 1996). The time bin was $Δt=0.5 ms$. We checked that state durations were not caused by eventual drifts in data firing frequency (Figure 7—figure supplement 2; Figure 7—source data 2). We also checked that state durations were distributed exponentially, lending credence to the metastable nature of HMM states (Figure 7—figure supplement 3).
 
-The principal component analysis (PCA) of LPFC and MCC of monkeys’ units and neural network models’ neurons spiking activity was computed from firing frequencies, in order to better visualize and characterize collective dynamics. PCA was achieved on the set of the spiking frequency vectors of all units/neurons in each case. Spiking frequency was estimated through convolution of spiking activity with a normalized Gaussian kernel with standard deviation σ=100 ms, as average frequencies were typically <10 Hz in both areas. For each neuron, frequencies were then centred and standardized for optimal PCA. Cells with average frequencies <0.5 Hz were removed for the experimental data and for the model data, to avoid abnormal standardized frequencies when the neuron’s average frequency was too low (at most six cells per area).
+### Principal component analysis
 
-## Perturbation protocol for state transitions
+The principal component analysis (PCA) of LPFC and MCC of monkeys’ units and neural network models’ neurons spiking activity was computed from firing frequencies, in order to better visualize and characterize collective dynamics. PCA was achieved on the set of the spiking frequency vectors of all units/neurons in each case. Spiking frequency was estimated through convolution of spiking activity with a normalized Gaussian kernel with standard deviation $\sigma=100 ms$, as average frequencies were typically $<10 Hz$ in both areas. For each neuron, frequencies were then centred and standardized for optimal PCA. Cells with average frequencies <0.5 Hz were removed for the experimental data and for the model data, to avoid abnormal standardized frequencies when the neuron’s average frequency was too low (at most six cells per area).
+
+### Perturbation protocol for state transitions
 
 We assessed the contribution of excitatory and inhibitory neural populations to the stability of HMM states. To do so, we estimated the probability to stay in a given ongoing (or perturbed, see below) HMM state or to switch towards a distinct target (or perturbing) state in response to specified perturbations. The perturbation was achieved by substituting the value of neural variables (membrane potential, spiking state, calcium concentration, downstream channel opening probabilities) of a random subset of excitatory (respectively inhibitory) neurons of the ongoing state by those of the same neurons taken from the (distinct) target state. Specifically, starting from an initial (unperturbed) 600 s simulation, perturbations were achieved by substituting state variables 50 ms after the onset of a randomly chosen period of a specified perturbed state by those taken 50 ms after the onset of a randomly chosen period of a distinct perturbing state and the resulting network states used as initial conditions for further ‘perturbation simulations’. For each perturbation simulation, the network was simulated from the perturbation time to the end of the period when the network was not perturbed and the HMM state was determined as the posterior state probability based on HMM transition and emission matrices obtained from the entire initial unperturbed simulation. The probability to escape the ongoing state (Figure 7h, left) and to reach the target state (Figure 7h, right) were then computed as the proportion of time spent, during the ongoing period, in a HMM state different from the ongoing perturbed state (escape ongoing state probability), and in the target perturbing state (reach target state probability), respectively. The effects of perturbations were tested by replacing either excitatory or inhibitory populations, where proportions of replaced neurons systematically varied in the range 0–1. For each neuron type and proportion tested, the perturbation protocol was applied and results averaged for 50 random combinations of periods (with period durations >100 ms), for each of the 12 possible pairs of the four HMM states (excluding pairs of repeated states), over 20 different randomly initialized MCCs. Probabilities were offset and normalized to remove the basal probability of escaping the ongoing (0.09) and reaching the target (0.01) states when no perturbation was applied (such transitions were due to random selection of simultaneous spikes when initiating the HMM analysis).

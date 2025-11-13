@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.42379.001 On 5 June this year the first field trial of a CRISPR-Cas-9 gene-edited crop began at Rothamsted Research in the UK, having been approved by the UK Department for Environment, Food & Rural Affairs. However, in late July 2018, after the trial had started, the European Court of Justice ruled that techniques such as gene editing fall within the European Union’s 2001 GMO directive, meaning that our gene-edited Camelina plants should be considered as genetically modified (GM). Here we describe our experience of running this trial and the legal transformation of our plants. We also consider the future of European plant research using gene-editing techniques, which now fall under the burden of GM regulation, and how this will likely impede translation of publicly funded basic research.
+On 5 June this year the first field trial of a CRISPR-Cas-9 gene-edited crop began at Rothamsted Research in the UK, having been approved by the UK Department for Environment, Food & Rural Affairs. However, in late July 2018, after the trial had started, the European Court of Justice ruled that techniques such as gene editing fall within the European Union’s 2001 GMO directive, meaning that our gene-edited Camelina plants should be considered as genetically modified (GM). Here we describe our experience of running this trial and the legal transformation of our plants. We also consider the future of European plant research using gene-editing techniques, which now fall under the burden of GM regulation, and how this will likely impede translation of publicly funded basic research.
 
 ## Introduction
 

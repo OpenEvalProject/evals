@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 University of Copenhagen, Faculty of Science, CPSC, Department of Plant and Environmental Sciences Copenhagen Denmark
-2. https://ror.org/03xjwb503 University of Paris-Saclay, INRAE, UR BIOGER Thiverval-Grignon France
+1. University of Copenhagen, Faculty of Science, CPSC, Department of Plant and Environmental Sciences Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. University of Paris-Saclay, INRAE, UR BIOGER Thiverval-Grignon France ([ROR:03xjwb503](https://ror.org/03xjwb503))
 
 † Corresponding author
 
 ## Abstract
 
-Filamentous fungal and oomycete plant pathogens that invade by direct penetration through the leaf epidermal cell wall cause devastating plant diseases. Plant preinvasive immunity toward nonadapted filamentous pathogens is highly effective and durable. Pre- and postinvasive immunity correlates with the formation of evolutionarily conserved and cell-autonomous cell wall structures, named papillae and encasements, respectively. Yet, it is still unresolved how papillae/encasements are formed and whether these defense structures prevent pathogen ingress. Here, we show that in Arabidopsis the two closely related members of the SYP12 clade of syntaxins (PEN1 and SYP122) are indispensable for the formation of papillae and encasements. Moreover, loss-of-function mutants were hampered in preinvasive immunity toward a range of phylogenetically distant nonadapted filamentous pathogens, underlining the versatility and efficacy of this defense. Complementation studies using SYP12s from the early diverging land plant, Marchantia polymorpha , showed that the SYP12 clade immunity function has survived 470 million years of independent evolution. These results suggest that ancestral land plants evolved the SYP12 clade to provide a broad and durable preinvasive immunity to facilitate their life on land and pave the way to a better understanding of how adapted pathogens overcome this ubiquitous plant defense strategy.
+Filamentous fungal and oomycete plant pathogens that invade by direct penetration through the leaf epidermal cell wall cause devastating plant diseases. Plant preinvasive immunity toward nonadapted filamentous pathogens is highly effective and durable. Pre- and postinvasive immunity correlates with the formation of evolutionarily conserved and cell-autonomous cell wall structures, named papillae and encasements, respectively. Yet, it is still unresolved how papillae/encasements are formed and whether these defense structures prevent pathogen ingress. Here, we show that in Arabidopsis the two closely related members of the SYP12 clade of syntaxins (PEN1 and SYP122) are indispensable for the formation of papillae and encasements. Moreover, loss-of-function mutants were hampered in preinvasive immunity toward a range of phylogenetically distant nonadapted filamentous pathogens, underlining the versatility and efficacy of this defense. Complementation studies using SYP12s from the early diverging land plant, Marchantia polymorpha, showed that the SYP12 clade immunity function has survived 470 million years of independent evolution. These results suggest that ancestral land plants evolved the SYP12 clade to provide a broad and durable preinvasive immunity to facilitate their life on land and pave the way to a better understanding of how adapted pathogens overcome this ubiquitous plant defense strategy.
 
 ## Introduction
 
@@ -30,21 +30,113 @@ Here, we show that the formation of papillae and encasements in Arabidopsis requ
 
 The role of PEN1 in timely papilla deposition in response to Bgh attack prompted us to investigate the involvement of other syntaxins in preinvasive immunity, notably SYP122 that shares a currently unknown function with PEN1. This shared function is apparent from the autoimmune lesion-mimic phenotype of the pen1 syp122 double mutant (Assaad et al., 2004; Zhang et al., 2007; Zhang et al., 2008). Yet, during the first ~2 weeks of growth, the pen1 syp122 mutant develops no visible symptoms, leaving a short window in which to study the interaction with Bgh before the onset of necrosis. From analysis of unattacked plants, we found that the pen1 syp122 mutant developed spontaneous callose deposits despite having a wild-type-like appearance (Figure 1A and B). Callose is a polysaccharide (β-1,3-glucan) secreted in response to various biotic and abiotic stresses and is a major constituent of papillae and encasements. Although the deposition of callose is not required to block the penetration event by Bgh per se, it serves as a reliable visual marker for easy detection of papillae and encasements (Ellinger et al., 2013). We found that in response to attack by Bgh plants lacking PEN1 and SYP122 were unable to form papillae at sites of unsuccessful attack by fungal appressoria, as visualized by detection of callose (Figure 1C and D). Surprisingly, while the appressorial germ tube did not induce a papilla response in pen1 syp122 mutants, we observed large callosic deposits induced by the noninvasive primary germ tube, which were not observed in any other genetic background (Figure 1D, F, and G, Figure 1—figure supplement 1A). Thus, SYP122 seems to play a complementary role to PEN1 in papilla formation upon attack by Bgh. However, despite being unable to form a papilla at the attempted entry site, the pen1 syp122 mutant remains capable of generating focused depositions of callose elsewhere and seems to be highly sensitive to signals released by Bgh.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Spontaneous callose depositions in leaves of 3-week-old plants. (C–G) Accumulation of callose in response to Bgh attack at appressoria (arrows) and primary germ tube (arrowheads) in (C, D), nonpenetrated cells and (E–G) cells following a successful penetration. Open arrows point to the developing intracellular pathogenic structure (IPS). (G) Same as (F), but optical section taken below the point of entry. * marks cells with cell death response. Bars = 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Attack by nonadapted filamentous pathogens such as Bgh on Arabidopsis is met by a localized apposition (papilla) formed between the plant cell wall (CW) and the plasma membrane (PM), containing callose, phenolic compounds, reactive oxygen species, and exosomes, that likely prevents penetration (Zeyen et al., 2002; Assaad et al., 2004; An et al., 2006). (B) Upon successful penetration, the host cell forms an encasement, similar in composition to the papilla, that eventually encloses the developing haustorium (H) and prevents nutrient uptake. Similar to Bgh, spores of C. destructivum and P. infestans attempt to penetrate and form an intracellular pathogenic structure (IPS, haustoria, biotrophic hyphae, and infection vesicle, respectively). In the case of an ineffective encasement response, the host cell initiates a cell death response that prevents pathogen growth. (C, D) Accumulation of callose in response to successful penetration by G. orontii (24 hr). Open arrows point to the developing IPS. Bars = 20 µm.
+
 In response to a successful penetration attempt by Bgh, the host cell initiates postinvasive immunity, where an encasement forms as an extension of the penetrated papilla (Figure 1—figure supplement 1B). The encasement expands and, eventually, completely encloses the IPS and likely prevents the pathogen from proliferating. Previous observations have shown that although pen1 mutants display a delayed papilla formation response to attack by Bgh, these plants seem unaffected in their ability to form encasements when successfully penetrated (Assaad et al., 2004; Wen et al., 2011; Nielsen et al., 2017). In contrast to our observations of unsuccessful penetration sites, the successful penetration of pen1 syp122 cells often induced a strong but diffuse, unfocused accumulation of callose at the fungal entry site (Figure 1E–G, Figure 1—video 1, Figure 1—video 2). Interestingly, we did not observe any encasement-like structures. Instead, the callosic deposits in the pen1 syp122 mutant were superficial and did not extend inward from the outer surface of the host cell enveloping the growing IPS. This would suggest that the penetration event by Bgh triggers a strong callose response, but formation of the encasement is dependent on a functional overlap of the PEN1 and SYP122 syntaxins. Furthermore, we tested the adapted powdery mildew Golovinomyces orontii, which also induces encasement formation, although at a later stage and less frequently than Bgh. For G. orontii, IPS formation seemed unaffected in pen1 syp122 and no encasements were found. Interestingly, successful penetration by G. orontii did not induce the strong, diffuse callose response described for Bgh (Figure 1—figure supplement 1C and D, Figure 1—video 3, Figure 1—video 4).
 
 The lack of papillae and encasements in the pen1 syp122 mutant prompted us to investigate the secretion of exosomes in response to Bgh attack. We speculated that the plant exosomal marker TET8-GFP (TETRASPANIN 8), which accumulates at sites of attack by Botrytis, would also accumulate in response to attack by Bgh (Boavida et al., 2013; Cai et al., 2018). In unattacked epidermal cells of wild-type plants, we found TET8-GFP localized mainly on the plasma membrane (Figure 2A). TET8-GFP signal focally accumulated in response to successful penetration by Bgh and seems a reliable marker for the encasement (Figure 2B). In unattacked epidermal cells of the pen1 syp122 mutant, the TET8-GFP localization was similar to that seen in wild-type plants, whereas successful penetration by Bgh did not induce focal accumulation of TET8-GFP (Figure 2C and D, Figure 2—video 1, Figure 2—video 2). Thus, the general localization of TET8-GFP was not affected in the pen1 syp122 mutant. Only in the event of fungal attack where TET8-GFP is transported to the infection site in wild-type plants this did not occur in the double mutant, supporting the idea that PEN1 and SYP122 play a specific role in pre- and postinvasive immunity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Localization of TET8-GFP in (A, C) resting epidermal cells and in (B, D) response to successful penetration by Bgh (stained with propidium iodide [PI]) and initiation of the intracellular pathogenic structure (IPS) (arrows). Bars = 10 µm.
+
 We noticed that the spontaneous callose deposits formed in the lesion-mimic pen1 syp122 mutant made it difficult to compare pre- and postinvasive immunity responses during attack by Bgh. Furthermore, successful penetration of epidermal cells in pen1 syp122 by Bgh, and even G. orontii, resulted in a fast-developing cell death response that would likely compromise encasement formation. To overcome the difficulties of working with the pen1 syp122 mutant, we made use of the partially rescued triple mutant, fmo1 pen1 syp122 (Zhang et al., 2008). Flavin-dependent-monooxygenase1 (FMO1) enables Arabidopsis plants to generate N-hydroxypipecolic acid, which plays a central role in pathogen-inducible plant immunity (Hartmann et al., 2018). Similar to introducing a number of SA-signaling mutations, the loss of FMO1 clearly relieves the downstream effects of the pen1 syp122 lesion-mimic mutant (Figure 3—figure supplement 1A and B). However, importantly, these mutations do not affect preinvasive immunity toward Bgh, thereby clearly separating the two phenotypes mechanistically (Zhang et al., 2007 and this work). Moreover, fmo1 pen1 syp122 plants did not display the large callosic deposits induced by the noninvasive primary germ tube. To ensure that the autoimmune phenotype of fmo1 pen1 syp122 would not compromise fungal development, we first tested G. orontii. During the initial 48 hr after inoculation, we found that formation of the IPS and secondary hyphae in fmo1 pen1 syp122 was indistinguishable from the fmo1 control plants (Figure 3—figure supplement 1C and D). In response to attack by Bgh, we found that fmo1 plants formed papillae at the site of attack that were identical to wild-type as visualized by detection of callose (Figure 3A–C, Figure 3—figure supplement 2A–D). Instead, plants lacking PEN1 and SYP122 were unable to form discrete papillae at sites of unsuccessful fungal attack. To support these findings, we also tested the ability of these plants to accumulate papillary H2O2 in response to attack by Bgh using DAB (Thordal-Christensen et al., 1997). Similar to the staining of callose, the accumulation of H2O2 is used as a convenient marker of the defense structure. In accordance with our observations on callose deposition, we found that fmo1 pen1 syp122 plants failed to accumulate papillary H2O2 (Figure 3D–F). Thus, these results confirmed that plants lacking PEN1 and SYP122 failed to form papillae at sites of attack by Bgh.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig3-v2.jpg)
+
+**Figure 3.:** (A, B, D, E) Accumulation of callose (A, B) or H2O2 (D, E) in response to Bgh attack (arrows) at nonpenetrated attack sites. Bars = 10 µm. (C, F) Frequency of papillae in response to Bgh in nonpenetrated cells as detected by staining for callose (C) or H2O2 (F). (C, F) All values are mean ± SD (n = 5 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Plants at 4 weeks, showing the growth phenotypes of the mutant lines used in these studies. (B) Relative transcript levels of PR1 in 4-week-old plants. Values are mean ± SD (n = 3). ***p<0.001, Student’s t-test. (C, D) Accumulation of callose in response to G. orontii (48 hr). Open arrows and arrowheads point to the developing intracellular pathogenic structure (IPS) and secondary hyphae, respectively. Bars = 20 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Accumulation of callose in response to Bgh attack at nonpenetrated (arrowheads) and penetrated (arrows) attack sites. Bars = 20 µm.
 
 Similar to the papilla response, we found that fmo1 mutants reacted like wild-type plants in response to successful penetration by Bgh, as visualized by the detection of callose encasements around the IPS (Figure 4A–C, Figure 4—figure supplement 1A–D). In stark contrast to this, fmo1 pen1 syp122 plants were unable to create an encasement around the developing IPS when penetrated by Bgh. To rule out the possibility that the lack of these defense structures is due to a host cell death response, dead cells stained by Trypan blue were excluded from our observations. Similar to our observations on papilla formation, we also assessed the ability of these plants to accumulate H2O2 in response to successful penetration by Bgh using DAB. We found that in fmo1 pen1 syp122 plants successful penetration by Bgh induced a diffuse, superficial accumulation of H2O2, but we did not observe encasement-like structures (Figure 4D and E). This supported our finding that plants lacking PEN1 and SYP122 failed to form encasements at sites of attack. To verify the requirement for PEN1 and SYP122 in forming papillae and encasements, we included observations of pad4 sid2 pen1 syp122 and amsh3 pen1 syp122 mutants, where, similar to fmo1, the autoimmune phenotype of pen1 syp122 is attenuated (Zhang et al., 2008; Schultz-Larsen et al., 2018). As expected, fungal development and host cell responses in these lines were similar to that observed in fmo1 pen1 syp122 plants (Figure 4—figure supplement 2, Figure 4—videos 1–8). As SYP122 appears to have a significant, albeit less important, role in papilla and encasement formation, we wondered if the complete absence of these defense structures would lead to an increase in penetration frequency as compared to the delayed papilla response described for the pen1 mutant. We found a significant increase in fungal penetration frequency on fmo1 pen1 syp122 plants when compared to pen1 single and fmo1 pen1 double mutant plants (Figure 4F). This supports our previous finding of a minor but significant PEN1-independent contribution to preinvasive immunity that relates to proper formation of the encasement (Nielsen et al., 2017). Taken together, these observations show that the Bgh-induced formation of papillae and encasements at attack sites is dependent on a functional overlap between the PEN1 and SYP122 syntaxins.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig4-v2.jpg)
+
+**Figure 4.:** (A, B, D) Accumulation of callose (A, B) or H2O2 (D) in response to Bgh attack (arrows) at penetrated attack sites. Open arrows point to the developing intracellular pathogenic structure (IPS). Bars = 10 µm. (C, E) Frequency of encasements in response to Bgh in penetrated cells as detected by staining for callose (C) or H2O2 (E). (F) Frequency of penetrations by Bgh. (C, E, F) All values are mean ± SD (n = 5 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Accumulation of callose in response to Bgh attack at nonpenetrated (arrowheads) and penetrated (arrows) attack sites. Open arrows point to the developing intracellular pathogenic structure (IPS). * marks cells with cell death response. Bars = 20 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) Accumulation of callose in response to (A, B) G. orontii and (C–F) Bgh (48 hr) attack at (C, D) nonpenetrated and (A, B, E, F) penetrated attack sites (arrows). Open arrows point to the developing intracellular pathogenic structure (IPS). Open arrows and arrowheads point to the developing IPS and secondary hyphae, respectively. Bars = 20 µm.
+
 To further dissect the overlapping functions of PEN1 and SYP122 in immunity, we tested host cell responses to another, nonadapted fungal pathogen, namely, C. destructivum (an ascomycete fungal pathogen causing alfalfa anthracnose disease). The initial invasion strategy of C. destructivum is very similar to that of Bgh (Latunde-Dada et al., 1997). Nevertheless, while host cell responses include papilla formation, the highly effective preinvasive immunity of Arabidopsis toward nonadapted Colletotrichum species such as C. destructivum does not require PEN1 (Shimada et al., 2006; Yang et al., 2014). Moreover, attack by C. destructivum did not induce accumulation of GFP-PEN1, GFP-SYP122, or TET8-GFP at sites of attempted penetration (Figure 5—figure supplement 1A–C). Nonetheless, we found that plants lacking both PEN1 and SYP122 showed a dramatic decrease in the ability to form papillae at sites of unsuccessful penetration (Figure 5A–C). In contrast to Bgh, the host cell response to penetration by C. destructivum only rarely resulted in the formation of a detectable encasement. Nevertheless, penetrated host cells did respond by accumulating callose in and around the site of penetration. In fmo1 pen1 syp122, the responses varied from no detectable callose to a faint diffuse accumulation of callose at the penetration site (Figure 5D and E, Figure 5—figure supplement 1D and E). Moreover, the lack of host cell responses correlated with a remarkable increase in penetration frequency by C. destructivum on fmo1 pen1 syp122 plants (Figure 5F, Figure 5—figure supplement 1F and G). Thus, preinvasive immunity toward C. destructivum requires a syntaxin function shared by PEN1 and SYP122, and this correlates with the lack of defense structure formation in response to attack.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig5-v2.jpg)
+
+**Figure 5.:** (A, B, D, E) Accumulation of callose in response to attack by melanized C. destructivum appressoria (arrows) at (A, B) nonpenetrated and (D, E) penetrated attack sites. Open arrows point to the developing intracellular pathogenic structure (IPS). Bars = 10 µm. (C) Frequency of papillae in response to C. destructivum in nonpenetrated cells. (F) Frequency of penetrations by C. destructivum. (C, F) All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Localization of GFP-PEN1 (A), GFP-SYP122 (B), and TET8-GFP (C) in response to attack by C. destructivum. (D, E) Accumulation of callose in response to attack by C. destructivum in (D) nonpenetrated cells and (E) at penetration sites (arrows). Open arrows point to the developing intracellular pathogenic structure (IPS). * marks cell with cell death response. (F) Frequency of penetration by C. destructivum. (G) Macroscopic phenotype at 5 dai with C. destructivum. Bars = 10 µm. (F) All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
 
 Finding that PEN1 and SYP122 facilitate a preinvasive immunity that extends to a fungal pathogen other than powdery mildews, we speculated that this immunity could be a general defense mechanism effective against an even wider range of direct penetrating filamentous pathogens. One such pathogen is P. infestans (the potato blight pathogen), which, as an oomycete, is thought to have evolved completely independently of true fungi (Lévesque, 2011). Similar to the above observations for C. destructivum, preinvasive immunity toward P. infestans in Arabidopsis does not rely on a functional PEN1 (Lipka et al., 2005). Instead, Rodriguez-Furlán et al., 2016 reported that loss of the root hair-specific SYP123 affects the penetration rates by P. infestans. However, SYP123 was suggested to regulate rhizobacterial priming of induced systemic resistance and is unlikely to be directly involved in the preinvasive response in leaves. We observed that attempted penetration by P. infestans did not lead to accumulation of either GFP-PEN1, GFP-SYP122, or TET8-GFP at the site of attack (Figure 6—figure supplement 1A–C). As expected, penetration attempts by P. infestans incited papilla formation in all genotypes, except for fmo1 pen1 syp122 (Figure 6A–C). Successful penetration by P. infestans was often followed by host cell death. Nevertheless, we found that host cells expressing PEN1 and/or SYP122 could initiate a strong accumulation of callose and form an encasement around the IPS. In the fmo1 pen1 syp122 triple mutant, the penetrated cell, as well as neighboring cells, responded with a diffuse callose accumulation but encasement of the IPS was not seen (Figure 6D and E). Similar to our observations with C. destructivum, fmo1 pen1 syp122 plants displayed elevated penetration frequencies when attacked by P. infestans (Figure 6F, Figure 6—figure supplement 1D). Surprisingly, we could not detect an increase in penetration events by P. infestans in the syp123 mutant, even when in combination with pen1. Taken together, these findings show that PEN1 or SYP122 are required for papilla and encasement responses, which mediate immunity toward these phylogenetically distant, nonadapted filamentous pathogens. Moreover, it is striking that the functionality of PEN1 and SYP122 in immunity does not correlate with the ability of these syntaxins to visibly accumulate at attack sites.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig6-v2.jpg)
+
+**Figure 6.:** (A, B, D, E) Accumulation of callose in response to P. infestans attack (arrows) at (A, B) nonpenetrated and (D, E) penetrated attack sites. Open arrows point to the developing intracellular pathogenic structure (IPS). Bars = 10 µm. (C) Frequency of papillae in response to P. infestans in nonpenetrated cells. (F) Frequency of penetrations by P. infestans. (C, F) All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Localization of GFP-PEN1 (A), GFP-SYP122 (B), and TET8-GFP (C) in response to attack by P. infestans. (D) Frequency of penetration by P. infestans. Bars = 10 µm. (D) All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
 PEN1 and SYP122 belong to the SYP12 clade of secretory syntaxins, which evolved during plant terrestrialization and is conserved in all land plants (Sanderfoot, 2007; Slane et al., 2017). To evaluate whether the immunity function of the SYP12 clade is also evolutionarily conserved among land plants, we investigated the response of the early diverging land plant Marchantia to attack by nonadapted filamentous pathogens. Consistent with previous findings, the germinating spores of Bgh were not able to properly differentiate a penetration hypha or appressorium on Marchantia thalli (Figure 7—figure supplement 1A; Takikawa et al., 2014). Similarly, most spores of P. infestans germinating on Marchantia seemed unable to identify a host cell and direct an attack. Nonetheless, occasional sites of attempted and successful penetrations were detected, to which the host cell responded by forming papillae and encasement-like defense structures, respectively (Figure 7A, Figure 7—figure supplement 1B). Thus, neither Bgh nor P. infestans were suitable for studying nonhost interactions in Marchantia. In contrast, C. destructivum spores germinated and developed characteristic darkly melanized appressoria on the thallus surface. In response to attack, Marchantia epidermal cells formed callose-containing papillae similar to those found in Arabidopsis (Figure 7B). However, we never detected successful penetration of Marchantia cells by C. destructivum. A previous report that the Marchantia syntaxin MpSYP13B accumulates in response to colonization by Phytophthora palmivora prompted us to test whether candidate MpSYPs also accumulate in response to C. destructivum (Carella et al., 2018). However, despite inducing papillae, attack by C. destructivum did not induce focal accumulation of any of the four MpSYPs tested (Figure 7C–F; Kanazawa et al., 2016). Thus, the cellular responses of Marchantia to C. destructivum were similar to those that we observed in Arabidopsis.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) Accumulation of callose in Marchantia in response to attack (arrows) by (A) P. infestans or (B) C. destructivum in nonpenetrated cells. Note that the frequency of P. infestans spores that attack a host cell is very low. (C–F) mCitrine signal of MpSYPs in response to attack (arrows) by C. destructivum in nonpenetrated cells. We did not observe any successful penetrations in Marchantia by C. destructivum. Bars = 10 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) On M. polymorpha, spores from Bgh (dotted line) were mis-differentiated with no or wrongly orientated appressoria that did not attack the host cell. (B) Accumulation of callose in M. polymorpha in response to attack by P. infestans (arrows) in penetrated cells. Open arrow points to the developing intracellular pathogenic structure (IPS). Note that the frequency of P. infestans spores that attack a host cell is very low. Bars = 10 µm.
+
 In contrast to PEN1 and SYP122 in Arabidopsis, MpSYP12A seems to be essential in Marchantia, thereby precluding the possibility for studying preinvasive immunity in knockout lines (Kanazawa et al., 2020). Instead, to evaluate whether the immunity function of the SYP12 clade is evolutionarily conserved among land plants, we introduced GFP-fused versions of the two Marchantia SYP12s (i.e., MpSYP12A and MpSYP12B) into the Arabidopsis pen1 syp122 mutant. GFP-MpSYP12A fully suppressed the necrotic and dwarfed phenotypes of pen1 syp122 plants, while GFP-MpSYP12B only partially suppressed these phenotypes (Figure 8—figure supplement 1A and B). In contrast, expression of either of the two SYP13 clade members, MpSYP13A and MpSYP13B, failed to rescue the pen1 syp122 mutant. This suggests that MpSYP12A shares the PEN1/SYP122 overlapping function and that MpSYP12B does so incompletely. Because MpSYP12A complements the growth phenotype of pen1 syp122 at the macroscopic level, we decided to test how these plants react to attack by Bgh. We found that MpSYP12A completely, and MpSYP12B partially, restored both papilla and encasement responses (Figure 8A and B, Figure 8—figure supplement 2, Figure 8—figure supplement 3). As explained above, the papillary accumulation of GFP-PEN1 in response to attack by Bgh is also seen for ROR2 in barley and highlights a likely conserved functionality in plant defense against powdery mildews (Bhat et al., 2005). In contrast, neither GFP-SYP122 nor the two GFP-MpSYP12s accumulated in papillae at sites of attempted penetration (Figure 8C, Figure 8—figure supplement 4). However, all the tested SYPs accumulated in the encasement matrix at sites of successful penetration (Figure 8D, Figure 8—figure supplement 5). Interestingly, preinvasive immunity toward Bgh was not restored by GFP-MpSYP12A. Instead, the penetration frequency of Bgh was similar to that of plants expressing GFP-SYP122 (Figure 8E). Thus, MpSYP12A resembles SYP122, and not PEN1, both in its localization and functionality. In support of this, GFP-MpSYP12A fully restored immunity toward both P. infestans and C. destructivum (Figure 8F, Figure 8—figure supplement 6A and B). Also, when tested with the adapted filamentous pathogens G. orontii and Colletotrichum higginsianum, penetration frequencies were similar to plants expressing PEN1 and SYP122 (Figure 8—figure supplement 6C and D). As described for PEN1 and SYP122, focal accumulation of GFP-MpSYP12A or GFP-MpSYP12B was not observed at unsuccessful attack sites by either C. destructivum or P. infestans (Figure 8—figure supplement 7). Taken together, these results reveal a conserved SYP12 clade functionality that has survived 470 My of independent evolution. Moreover, our findings suggest that the PEN1-dependent immunity toward powdery mildew fungi evolved at a later stage of land plant evolution.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-v2.jpg)
+
+**Figure 8.:** (A, B) Accumulation of callose in response to attack (arrow) by Bgh in (A) nonpenetrated and (B) penetrated cells. Open arrow points to the developing intracellular pathogenic structure (IPS). (C, D) Localization of MpSYP12A and PEN1 in response to attack (arrows) by Bgh in (C) nonpenetrated and (D) penetrated cells. Bars = 10 µm. (E, F) Frequency of penetration by (E) Bgh and (F) P. infestans. All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Plants at 5 weeks, expressing SYP12 clade members from either Arabidopsis or Marchantia polymorpha. (B) Localization of Marchantia SYP12 clade members in the epidermis of leaves from plants of 4 weeks. Bars = 10 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Accumulation of callose in response to Bgh attack at nonpenetrated (arrows) attack sites. Bars = 10 µm. (B) Frequency of papillae in response to Bgh in nonpenetrated cells. All values are mean ± SD (n = 5 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Accumulation of callose in response to Bgh attack at successful penetration sites. Open arrows point to the developing intracellular pathogenic structure (IPS). Bars = 10 µm. (B) Frequency of encasements in response to Bgh haustoria in penetrated cells. All values are mean ± SD (n = 5 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Comparative papilla localization of SYP12 members from Arabidopsis or Marchantia in response to attack by Bgh in nonpenetrated cells. Bars = 10 µm.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** Comparative encasement localization of SYP12 members from Arabidopsis or Marchantia in response to haustoria by Bgh in penetrated cells. Bars = 10 µm.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp6-v2.jpg)
+
+**Figure 8—figure supplement 6.:** (A) Macroscopic phenotype at 5 dai with C. destructivum. (B–D) Frequency of penetration by C. destructivum (B), G. orontii (C), and C. higginsianum (D). (B–D) All values are mean ± SD (n = 4 leaves per genotype). Different letters indicate significantly different values at p≤0.001 estimated using logistic regression.
+
+![Figure 8—figure supplement 7.](https://cdn.elifesciences.org/articles/73487/elife-73487-fig8-figsupp7-v2.jpg)
+
+**Figure 8—figure supplement 7.:** (A–D) Localization of GFP-MpSYP12A (A, C) and GFP-MpSYP12A (B, D) in response to attack by P. infestans (A, B) and C. destructivum (C, D) in nonpenetrated cells. Bars = 10 µm.
 
 ## Discussion
 
@@ -64,24 +156,76 @@ Adapted filamentous pathogens are able to overcome preinvasive immunity in their
 
 ## Materials and methods
 
-## Plant, fungal, and oomycete growth
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>pen1-1 syp122-1</td>
+      <td>Assaad et al., 2004</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>fmo1-1 pen1-1 syp122-1</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>amsh3-4 pen1-1 syp122-1</td>
+      <td>Schultz-Larsen et al., 2018</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>sid2 pad4 pen1 syp122</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>TET8-GFP</td>
+      <td>Boavida et al., 2013</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant, fungal, and oomycete growth
 
 Plants of Arabidopsis thaliana and M. polymorpha (Tak-1) were grown at 21°C, with 8 hr of light at 125 micro Einstein s−1 m−2 per day. All mutant plant lines were reported previously (Collins et al., 2003; Assaad et al., 2004; Zhang et al., 2008; Rodriguez-Furlán et al., 2016; Schultz-Larsen et al., 2018). The barley powdery mildew fungus, Bgh (isolate C15) and Arabidopsis powdery mildew, G. orontii, were propagated on barley and Arabidopsis, respectively. C. destructivum isolate LARS 709 and C. higginsianum isolate IMI 349063A were cultured on Mathur’s medium containing glucose (2.8 g), MgSO4-7H2O (1.22 g), KH2PO4 (2.72 g), Oxoid Mycological peptone (2.18 g), and agar (30 g) in 1 L of deionized water at 25°C in the dark. The P. infestans (field isolate 2017-DK-31-03 and SW1_A1) was cultured on rye sucrose (2%) agar supplemented with β-sitosterol (50 mg/L), pimaricin (10 mg/L), and ampicillin (100 mg/L) at 18°C in the dark (Tzelepis et al., 2020).
 
-## Infection studies
+### Infection studies
 
 Spores from Bgh and G. orontii were blown evenly onto the leaves of 4-week-old Arabidopsis plants and kept at 21°C. For Colletotrichum, spores were harvested in water from a 7–10-day-old culture. Spores were adjusted to a final concentration of 5 × 105 or 1 × 106 spores/mL and sprayed evenly onto the leaves of 5-week-old Arabidopsis plants. Following inoculation, the plants were sealed inside plastic bags and kept at 21°C. Zoospores of P. infestans were released from sporangia by addition of cold water and incubation at 4°C for 90 min. The zoospore suspension was diluted to 5 × 105 or 1 × 106 spores/mL and added to the abaxial side of attached leaves from 4-week-old Arabidopsis plants. The leaves were kept in a closed Petri dish on water-soaked filter paper at 21°C.
 
 For scoring penetration success, leaf material was Trypan blue stained at 24 hr post inoculation for Bgh or P. infestans, 48 hr post inoculation for G. orontii, and 72 hr post inoculation for C. destructivum (Keogh et al., 1980). Penetration was determined by the presence of a developing IPS inside epidermal cells using light microscopy. To avoid the possibility that cells undergoing programmed cell death would be restricted in their encasement response to IPS, these cells were excluded from our observations based on Trypan blue staining. Once the penetration status for a particular event was determined, only then was the callose response investigated. For staining of live fungal structures, infected leaves were vacuum infiltrated with propidium iodide (10 µM) for 2 hr. Callose staining was performed using 0.01% Aniline blue in 1 M glycine (adjusted to pH 9.5 using NaOH) and visualized by UV epifluorescence. All experiments were repeated at least three times with similar results. Data from the individual studies described above represent discrete variables since it was recorded whether or not a certain event had taken place (e.g., whether or not a spore caused penetration). Consequently, these data were analyzed by logistic regression, assuming a binomial distribution (corrected for over-dispersion when present) (Collett, 1991). Hypotheses were rejected at p<0.001. All data were analyzed by PC-SAS (release 9.4; SAS Institute, Cary, NC).
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 Total RNA was isolated from A. thaliana tissue using Monarch Total RNA Miniprep Kit (NEB). cDNA was synthesized using ProtoScript II First Strand cDNA Synthesis Kit (NEB) and an oligo(dT) primer. Transcript quantification was performed using the 5× HOT FIREPol EvaGreen qPCR Mix Plus (Solis BioDyne) on a Stratagene MX3000P real-time PCR detection system. Gene-specific primers are described below. We used the At4g26410 transcript as internal control.
 
-## Constructs
+### Constructs
 
 Open reading frames (ORFs) of PEN1 and SYP122 were amplified by PCR from cDNA, and the amplified products were subcloned into pDONR221 (Invitrogen). Along with pENTR clones containing MpSYP12A and MpSYP12B (Kanazawa et al., 2016), PEN1 and SYP122 were cloned into pUBIN-GFP, and PEN1 also in pB7WGR2 (Karimi et al., 2002; Grefen et al., 2010), destination vectors according to the manufacturer’s instructions. For cloning, the following primers were used:
 
-## Fluorescent protein, propidium iodide, and callose detection using confocal microscopy
+### Fluorescent protein, propidium iodide, and callose detection using confocal microscopy
 
 Samples were examined using a ×63 water immersion lens mounted on a Leica CLSM TCS SP5 confocal microscope. For detection and localization of the fluorophores and stains, GFP and propidium iodide were excited at 488 nm and detected between 500 and 520 nm, and 555 and 615 nm, respectively. Aniline blue-stained callose was excited at 405 nm and detected between 435 and 485 nm. Imaging data were collected at the Center for Advanced Bioimaging (CAB) Denmark, University of Copenhagen. Projections of serial confocal sections, image overlays, and contrast enhancement were performed using image processing software (GIMP 2).

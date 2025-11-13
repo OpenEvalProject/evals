@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03qb7bg95 Guangzhou University of Chinese Medicine Guangzhou China
-2. https://ror.org/0207yh398 Department of Endocrinology, Shandong Provincial Hospital, Shandong University Jinan China
-3. https://ror.org/02ar2nf05 Department of Endocrinology, Shandong Provincial Hospital, Shandong Provincial Hospital Jinan China
+1. Guangzhou University of Chinese Medicine Guangzhou China ([ROR:03qb7bg95](https://ror.org/03qb7bg95))
+2. Department of Endocrinology, Shandong Provincial Hospital, Shandong University Jinan China ([ROR:0207yh398](https://ror.org/0207yh398))
+3. Department of Endocrinology, Shandong Provincial Hospital, Shandong Provincial Hospital Jinan China ([ROR:02ar2nf05](https://ror.org/02ar2nf05))
 
 † Corresponding author
 

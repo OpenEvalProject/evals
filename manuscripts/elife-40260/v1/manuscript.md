@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.40260.001 We find that variation in the dbt-1 gene underlies natural differences in Caenorhabditis elegans responses to the toxin arsenic. This gene encodes the E2 subunit of the branched-chain α-keto acid dehydrogenase (BCKDH) complex, a core component of branched-chain amino acid (BCAA) metabolism. We causally linked a non-synonymous variant in the conserved lipoyl domain of DBT-1 to differential arsenic responses. Using targeted metabolomics and chemical supplementation, we demonstrate that differences in responses to arsenic are caused by variation in iso-branched chain fatty acids. Additionally, we show that levels of branched chain fatty acids in human cells are perturbed by arsenic treatment. This finding has broad implications for arsenic toxicity and for arsenic-focused chemotherapeutics across human populations. Our study implicates the BCKDH complex and BCAA metabolism in arsenic responses, demonstrating the power of C. elegans natural genetic diversity to identify novel mechanisms by which environmental toxins affect organismal physiology. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+We find that variation in the dbt-1 gene underlies natural differences in Caenorhabditis elegans responses to the toxin arsenic. This gene encodes the E2 subunit of the branched-chain α-keto acid dehydrogenase (BCKDH) complex, a core component of branched-chain amino acid (BCAA) metabolism. We causally linked a non-synonymous variant in the conserved lipoyl domain of DBT-1 to differential arsenic responses. Using targeted metabolomics and chemical supplementation, we demonstrate that differences in responses to arsenic are caused by variation in iso-branched chain fatty acids. Additionally, we show that levels of branched chain fatty acids in human cells are perturbed by arsenic treatment. This finding has broad implications for arsenic toxicity and for arsenic-focused chemotherapeutics across human populations. Our study implicates the BCKDH complex and BCAA metabolism in arsenic responses, demonstrating the power of C. elegans natural genetic diversity to identify novel mechanisms by which environmental toxins affect organismal physiology.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -40,27 +40,155 @@ We used two quantitative genetic mapping approaches to show that a major source 
 
 ## Results
 
-## Natural variation on chromosome II underlies differences in arsenic responses
+### Natural variation on chromosome II underlies differences in arsenic responses
 
-We quantified arsenic trioxide sensitivity in C. elegans using a high-throughput fitness assay that utilizes the COPAS BIOSORT (Andersen et al., 2015; Zdraljevic and Andersen, 2017). In this assay, three L4 larvae from each strain were sorted into arsenic trioxide or control conditions. After four days of growth, we quantified various attributes of populations that relate to the ability of C. elegans to grow in the presence of arsenic trioxide or control conditions (see Materials and methods). To determine an appropriate concentration of arsenic trioxide for mapping experiments, we performed dose-response experiments on four genetically diverged isolates of C. elegans: N2, CB4856, JU775, and DL238 (Figure 1—figure supplement 1; Figure 1—figure supplement 1—source data 1). To assess arsenic-induced toxicity, we studied four independently measured traits: brood size, animal length, optical density, and fluorescence (see Materials and methods). When compared to control conditions, all four strains produced fewer progeny at all arsenic trioxide concentrations, and the lowest concentration at which we observed a significant reduction in brood size for all strains was 1 mM (Figure 1—figure supplement 1A). We used statistical summaries of measurements of individual animals as replicated identical genotypes to estimate broad-sense heritability (H2) across the four strains, but this analysis might not represent the effects of arsenic on individuals within natural populations. For the brood size trait in 1 mM arsenic trioxide, we calculated H2 to be 0.65 (Figure 1—figure supplement 3—source data 1) and the strain effect to be 0.48 (partial omega squared, ωp2, Figure 1—figure supplement 3—source data 2), indicating that this trait has a large genetic component and a large strain effect. In addition to brood size effects, we observed that the progeny of animals exposed to arsenic trioxide were shorter in length than the progeny of animals grown in control conditions (Figure 1—figure supplement 1B), which indicates an arsenic-induced developmental delay (animal length (mean.TOF) H2 = 0.13; Figure 1—figure supplement 3—source data 1 and ωp2 = 0.09; Figure 1—figure supplement 3—source data 2). As C. elegans develop, the animals increase in optical density. Therefore, it is not surprising that we found an arsenic-induced decrease in optical density of progeny populations, which is further support for an arsenic-induced developmental delay (Figure 1—figure supplement 1C; H2 = 0.19; Figure 1—figure supplement 3—source data 1 and ωp2 = 0.07;Figure 1—figure supplement 3—source data 2). We also observed an arsenic-induced effect on yellow autofluorescence (Figure 1—figure supplement 1D; H2 = 0.50; Figure 1—figure supplement 3—source data 1 and ωp2 = 0.21; Figure 1—figure supplement 3—source data 2). Overall, the CB4856 strain was less affected by arsenic – that strain produced approximately 16% more offspring that were on average 20% larger than the other three strains when treated with 1 mM arsenic trioxide. These results suggest that the CB4856 strain was more resistant to arsenic trioxide than the other three strains. In addition to the BIOSORT-quantified traits, we generated a synthetic principal component (PC) trait using the four quantified traits described above (see Materials and methods, Figure 1—figure supplement 1—source data 1, Figure 1—figure supplement 2—source data 1 and Figure 1—source data 1). For 1 mM arsenic trioxide, we estimated the broad-sense heritability (H2) of the first principal component to be 0.37 (Figure 1—figure supplement 3—source data 1) with an effect size of 0.001 (ωp2) (Figure 1—figure supplement 3—source data 2). The first principal component explained a large fraction (0.75) of the total phenotypic variance within the experiment, which is likely because the four input traits correlate with arsenic-induced toxicity (Figure 1—figure supplement 2A; Figure 1—figure supplement 1—source data 3). We noted that the first principal component (PC1) was most strongly influenced by the optical density trait, as indicated by the loadings (Figure 1—figure supplement 2B; Figure 1—figure supplement 3—source data 2 and Figure 1—source data 1), suggesting that PC1 is a biologically relevant trait (Figure 1—figure supplement 1E). Furthermore, because we observe a large range of effect sizes and broad-sense heritability estimates across measured traits (Figure 1—figure supplement 3), we focused our analyses on the PC1 trait derived from the four BIOSORT-quantified described above for all subsequent experiments (Materials and methods).
+We quantified arsenic trioxide sensitivity in C. elegans using a high-throughput fitness assay that utilizes the COPAS BIOSORT (Andersen et al., 2015; Zdraljevic and Andersen, 2017). In this assay, three L4 larvae from each strain were sorted into arsenic trioxide or control conditions. After four days of growth, we quantified various attributes of populations that relate to the ability of C. elegans to grow in the presence of arsenic trioxide or control conditions (see Materials and methods). To determine an appropriate concentration of arsenic trioxide for mapping experiments, we performed dose-response experiments on four genetically diverged isolates of C. elegans: N2, CB4856, JU775, and DL238 (Figure 1—figure supplement 1; Figure 1—figure supplement 1—source data 1). To assess arsenic-induced toxicity, we studied four independently measured traits: brood size, animal length, optical density, and fluorescence (see Materials and methods). When compared to control conditions, all four strains produced fewer progeny at all arsenic trioxide concentrations, and the lowest concentration at which we observed a significant reduction in brood size for all strains was 1 mM (Figure 1—figure supplement 1A). We used statistical summaries of measurements of individual animals as replicated identical genotypes to estimate broad-sense heritability ($H^{2}$) across the four strains, but this analysis might not represent the effects of arsenic on individuals within natural populations. For the brood size trait in 1 mM arsenic trioxide, we calculated $H^{2}$ to be 0.65 (Figure 1—figure supplement 3—source data 1) and the strain effect to be 0.48 (partial omega squared, $\omega_{p}^{2}$, Figure 1—figure supplement 3—source data 2), indicating that this trait has a large genetic component and a large strain effect. In addition to brood size effects, we observed that the progeny of animals exposed to arsenic trioxide were shorter in length than the progeny of animals grown in control conditions (Figure 1—figure supplement 1B), which indicates an arsenic-induced developmental delay (animal length (mean.TOF) $H^{2}$ = 0.13; Figure 1—figure supplement 3—source data 1 and $\omega_{p}^{2}$ = 0.09; Figure 1—figure supplement 3—source data 2). As C. elegans develop, the animals increase in optical density. Therefore, it is not surprising that we found an arsenic-induced decrease in optical density of progeny populations, which is further support for an arsenic-induced developmental delay (Figure 1—figure supplement 1C; $H^{2}$ = 0.19; Figure 1—figure supplement 3—source data 1 and $\omega_{p}^{2}$ = 0.07;Figure 1—figure supplement 3—source data 2). We also observed an arsenic-induced effect on yellow autofluorescence (Figure 1—figure supplement 1D; $H^{2}$ = 0.50; Figure 1—figure supplement 3—source data 1 and $\omega_{p}^{2}$ = 0.21; Figure 1—figure supplement 3—source data 2). Overall, the CB4856 strain was less affected by arsenic – that strain produced approximately 16% more offspring that were on average 20% larger than the other three strains when treated with 1 mM arsenic trioxide. These results suggest that the CB4856 strain was more resistant to arsenic trioxide than the other three strains. In addition to the BIOSORT-quantified traits, we generated a synthetic principal component (PC) trait using the four quantified traits described above (see Materials and methods, Figure 1—figure supplement 1—source data 1, Figure 1—figure supplement 2—source data 1 and Figure 1—source data 1). For 1 mM arsenic trioxide, we estimated the broad-sense heritability ($H^{2}$) of the first principal component to be 0.37 (Figure 1—figure supplement 3—source data 1) with an effect size of 0.001 ($\omega_{p}^{2}$) (Figure 1—figure supplement 3—source data 2). The first principal component explained a large fraction (0.75) of the total phenotypic variance within the experiment, which is likely because the four input traits correlate with arsenic-induced toxicity (Figure 1—figure supplement 2A; Figure 1—figure supplement 1—source data 3). We noted that the first principal component (PC1) was most strongly influenced by the optical density trait, as indicated by the loadings (Figure 1—figure supplement 2B; Figure 1—figure supplement 3—source data 2 and Figure 1—source data 1), suggesting that PC1 is a biologically relevant trait (Figure 1—figure supplement 1E). Furthermore, because we observe a large range of effect sizes and broad-sense heritability estimates across measured traits (Figure 1—figure supplement 3), we focused our analyses on the PC1 trait derived from the four BIOSORT-quantified described above for all subsequent experiments (Materials and methods).
 
-The increased arsenic trioxide resistance of CB4856 compared to N2 motivated us to perform linkage mapping experiments with a panel of recombinant inbred advanced intercross lines (RIAILs) that were previously constructed through ten generations of intercrossing between an N2 derivative (QX1430) and CB4856 (Andersen et al., 2015). To capture arsenic trioxide-induced phenotypic differences, we exposed a panel of 252 RIAILs to 1 mM arsenic trioxide and corrected for growth differences among RIAILs in control conditions and assay-to-assay variability using linear regression (Figure 1—source data 2; see Materials and methods). We performed linkage mapping on processed traits and the eigenvector-transformed traits (principal components or PCs) obtained from PCA that explained 90% of the variance in the processed trait set (Materials and methods). The rationale of this approach was to minimize trait fluctuations that could be caused by only measuring the phenotypes of one replicate per RIAIL strain, and PC1 captured overall arsenic-induced toxicity. In agreement with our observations from the dose-response experiment, we found that PC1 captures 69.5% of the total measured trait variance and is strongly influenced by animal length traits (Figure 1—figure supplement 4; Figure 1—figure supplement 11—source data 1 and 2). Linkage mapping analysis of the PC1 trait revealed that arsenic trioxide-induced phenotypic variation is significantly associated with genetic variation on the center of chromosome II (Figure 1—figure supplement 4; Figure 1—source data 3). An additional quantitative trait locus (QTL) was significantly associated with variation in arsenic responses on chromosome X (Figure 1—figure supplement 4). Consistent with the loadings of PC1, we determined that PC1 is highly correlated with the both brood size and animal length traits (Figure 1B), suggesting that PC1 captures RIAIL variation in these traits. To further support this relationship to interpretable biological significance, we found that the four traits used as input for PCA all map to the same region on the center of chromosome II (Figure 1—figure supplement 5; Figure 1—source data 3). The QTL on the center of chromosome II explains 35.4% of the total RIAIL phenotypic variation for the PC1 trait, which accounts for 63.4% of the total phenotypic variation that can be explained by genetic factors (H2 = 0.56) (Figure 1—figure supplement 6; Figure 1—figure supplement 6—source data 1). Taken together, the two QTL identified by mapping the PC1 trait account for 40% of the total RIAIL variation, corresponding to 71.6% of the total phenotypic variation that can be explained by genetic factors. However, we did not account for errors in genomic heritability estimates. In addition to the two QTL that explain variation of the PC1 trait, we identified a QTL on chromosome I for the brood size and optical density traits, and a QTL on chromosome V that explained variation in animal length and optical density upon arsenic exposure (Figure 1—figure supplement 7; Figure 1—source data 3). The PC1 QTL confidence interval spans from 7.04 to 8.87 Mb on chromosome II. This QTL overlaps with the brood size (6.18-9.31 Mb) and animal length (6.92-8.70 Mb) QTL confidence intervals and is identical to the optical density and fluorescence QTL (Figure 1—figure supplement 5; Figure 1—source data 3). However, each of these QTL confidence intervals span genomic regions greater than 1.5 megabases and contain hundreds of genes that vary between the N2 and CB4856 strains.
+The increased arsenic trioxide resistance of CB4856 compared to N2 motivated us to perform linkage mapping experiments with a panel of recombinant inbred advanced intercross lines (RIAILs) that were previously constructed through ten generations of intercrossing between an N2 derivative (QX1430) and CB4856 (Andersen et al., 2015). To capture arsenic trioxide-induced phenotypic differences, we exposed a panel of 252 RIAILs to 1 mM arsenic trioxide and corrected for growth differences among RIAILs in control conditions and assay-to-assay variability using linear regression (Figure 1—source data 2; see Materials and methods). We performed linkage mapping on processed traits and the eigenvector-transformed traits (principal components or PCs) obtained from PCA that explained 90% of the variance in the processed trait set (Materials and methods). The rationale of this approach was to minimize trait fluctuations that could be caused by only measuring the phenotypes of one replicate per RIAIL strain, and PC1 captured overall arsenic-induced toxicity. In agreement with our observations from the dose-response experiment, we found that PC1 captures 69.5% of the total measured trait variance and is strongly influenced by animal length traits (Figure 1—figure supplement 4; Figure 1—figure supplement 11—source data 1 and 2). Linkage mapping analysis of the PC1 trait revealed that arsenic trioxide-induced phenotypic variation is significantly associated with genetic variation on the center of chromosome II (Figure 1—figure supplement 4; Figure 1—source data 3). An additional quantitative trait locus (QTL) was significantly associated with variation in arsenic responses on chromosome X (Figure 1—figure supplement 4). Consistent with the loadings of PC1, we determined that PC1 is highly correlated with the both brood size and animal length traits (Figure 1B), suggesting that PC1 captures RIAIL variation in these traits. To further support this relationship to interpretable biological significance, we found that the four traits used as input for PCA all map to the same region on the center of chromosome II (Figure 1—figure supplement 5; Figure 1—source data 3). The QTL on the center of chromosome II explains 35.4% of the total RIAIL phenotypic variation for the PC1 trait, which accounts for 63.4% of the total phenotypic variation that can be explained by genetic factors ($H^{2}$ = 0.56) (Figure 1—figure supplement 6; Figure 1—figure supplement 6—source data 1). Taken together, the two QTL identified by mapping the PC1 trait account for 40% of the total RIAIL variation, corresponding to 71.6% of the total phenotypic variation that can be explained by genetic factors. However, we did not account for errors in genomic heritability estimates. In addition to the two QTL that explain variation of the PC1 trait, we identified a QTL on chromosome I for the brood size and optical density traits, and a QTL on chromosome V that explained variation in animal length and optical density upon arsenic exposure (Figure 1—figure supplement 7; Figure 1—source data 3). The PC1 QTL confidence interval spans from 7.04 to 8.87 Mb on chromosome II. This QTL overlaps with the brood size (6.18-9.31 Mb) and animal length (6.92-8.70 Mb) QTL confidence intervals and is identical to the optical density and fluorescence QTL (Figure 1—figure supplement 5; Figure 1—source data 3). However, each of these QTL confidence intervals span genomic regions greater than 1.5 megabases and contain hundreds of genes that vary between the N2 and CB4856 strains.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-v1.jpg)
+
+**Figure 1.:** (A) Linkage mapping plots for the first principal component trait in the presence of 1000 µM arsenic trioxide is shown. The significance values (logarithm of odds, LOD, ratio) for 1454 markers between the N2 and CB4856 strains are on the y-axis, and the genomic position (Mb) separated by chromosome is plotted on the x-axis. The associated 1.5 LOD-drop confidence intervals are represented by blue boxes. The phenotypic variance explained by each QTL is shown above the peak QTL marker, which is marked by red triangles. (B) The correlation between brood size (blue; r2 = 0.38, p-value=1.65E-27) or animal length (pink; r2 = 0.74, p-value=3.16E-74) with the first principal component trait. Each dot represents an individual RIAIL’s phenotype, with the animal length and brood size phenotype values on the x-axis and the first principal component phenotype on the y-axis. (C) Tukey box plots of near-isogenic line (NIL) phenotype values for the first principal component trait in the presence of 1000 µM arsenic trioxide is shown. NIL genotypes are indicated below the plot as genomic ranges. The N2 trait is significantly different than the CB4856 and NIL traits (Tukey HSD p-value<1E-5).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Arsenic trioxide concentration in µM is plotted on the x-axis and the (A) normalized brood size, (B) mean progeny length, (C) mean normalized optical density, (D) mean normalized yellow fluorescence, or (E) the first principal component are plotted on the y-axes. For panels A-D, the y-axis values represent individual phenotypic measurements subtracted from the mean value in 0 µM arsenic trioxide. At least 15 replicates for each strain and condition are represented by Tukey box plots. Box plots are colored by strain (CB4856:blue, DL238:teal, JU775:pink, and N2:orange).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The trait Pearson’s correlation coefficient of the assay- and control-regressed measured traits from the dose response experiment with 1000 µM arsenic trioxide is shown. (B) The contribution of each measured trait to the principal components that explain 90% of the total variance is shown. For each plot, the tile color corresponds to the value, where yellow colors represent higher values.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Each panel corresponds to a concentration of arsenic trioxide concentration, which is indicated above the plot panel. The x-axis represents the partial omega squared ($\omega_{p}^{2}$) effect-size estimate, and the y-axis represent the broad-sense heritability estimate (H2). Each dot represents a different BIOSORT-measured or principal component trait.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Tukey box plots of the first principal component are shown: (A), assay- and control-regressed mean animal length (B), brood sizes (C), optical density (D), and mean normalized yellow fluorescence (E) of the N2 and CB4856 RIAIL panel after exposure to arsenic trioxide. Each dot corresponds to the phenotype for a single RIAIL. The RIAILs are separated by the N2 (orange) or CB4856 (blue) genotype at each QTL detected by linkage mapping.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Linkage mapping plots for regressed brood size (orange), mean normalized yellow fluorescence (pink), mean animal length (blue) and mean normalized optical density (red) in the presence of 1000 µM arsenic trioxide are shown. The significance values (logarithm of odds (LOD) ratio) for 1454 markers between the N2 and CB4856 strains are on the y-axis, and the genomic position (Mb) separated by chromosome is plotted on the x-axis. The associated 1.5 LOD-drop confidence intervals are represented by colored boxes below significant QTL.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** The genomic broad (H2)- and narrow (h2)-sense heritability estimates calculated using the expectation (E(A)) of the realized relatedness matrix or the realized relatedness matrix (A) are shown. Each dot represents a measured or principal component trait. Dots are colored black if that trait mapped to the center of chromosome II and red if no QTL was detected on the center of chromosome II.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** All QTL identified by linkage mapping are shown. Traits are labeled on the y-axis and the genomic position in Mb is plotted on the x-axis. Only PCs that explain greater than 90% of the variance are shown. Triangles represent the peak QTL position and bars represent the associated 1.5-LOD drop QTL confidence interval. Triangles and bars are colored based on the LOD score, where red colors correspond to higher LOD values.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Tukey box plots of near-isogenic line (NIL) phenotype values for, from top to bottom: the brood size, mean animal length, mean normalized optical density, and mean normalized yellow fluorescence traits in the presence of 1000 µM arsenic trioxide are shown. NIL genotypes are indicated below the plot as genomic ranges. The N2 phenotypes are significantly different from all other strains (Brood size: Tukey HSD p-value=2E-7; Animal Length: Tukey HSD p-value<1E-7; Optical Density: Tukey HSD p-value<1E-7; Fluorescence: Tukey HSD p-value<1E-7).
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (A) The Pearson’s correlation coefficients of the assay- and control-regressed measured traits are shown. (B) The contribution of each measured trait to the principal components that explain 90% of the total variance in the NIL and allele replacement-recapitulation experiment, which was performed at 1000 µM, is shown. For each plot, the tile color represents the value, where yellow colors represent higher values.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** The correlation between brood size (blue) or animal length (pink) (A), mean normalized optical density (B) or mean normalized yellow fluorescence (C) traits with the first principal component (PC1) trait for the NIL recapitulation experiment are shown. Each dot represents an individual NIL or parental strain replicate phenotype with the animal length and brood size phenotype values on the x-axis and the first principal component (PC1) phenotype on the y-axis.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** (A) The trait Pearson’s correlation coefficient of the assay- and control-regressed measured traits is shown. (B) The contribution of each measured trait to the principal components that explain 90% of the total variance in the linkage mapping experiment, which was performed at 1000 µM, is shown. For each plot, the tile color represents the value, where yellow colors represent higher values.
 
 Next, we constructed near-isogenic lines (NILs) to isolate and narrow the chromosome II QTL in a controlled genetic background. We introgressed genomic regions from the CB4856 strain on the left and right halves of the confidence interval into the N2 genetic background. In the presence of arsenic trioxide, both of these NILs recapitulated the parental CB4856 PC1 phenotype (Figure 1C; Figure 1—source data 4) and had similar trait values for the four traits used as inputs into the PCA (Figure 1—figure supplement 8; Figure 1—source data 4). Furthermore, we showed that similar to the RIAIL phenotypes, the measured traits were correlated (Figure 1—figure supplement 9A; Figure 1—figure supplement 9—source data 1) and contributed similarly to the PC1 trait (Figure 1—figure supplement 9B; Figure 1—figure supplement 9—source data 2). Furthermore, the PC1 trait was highly correlated with the four input traits (Figure 1—figure supplement 10). The phenotypic similarity of these NILs to the CB4856 parental strain suggested that the two NILs might share an introgressed region of the CB4856 genome. To identify this shared introgressed region, we performed low-coverage whole-genome sequencing of the NIL strains and defined the left and right bounds of the CB4856 genomic introgression to be from 5.75 to 8.02 Mb and 7.83 to 9.66 Mb in the left and right NILs, respectively (Figure 1—source data 5). The left and right NILs recapitulate 70.6% and 81.9% of the effect size difference between N2 and CB4856 as measured by Cohen’s F, respectively (Cohen, 2013), which exceeds our observations the linkage mapping results where the QTL on chromosome II explained 63.4% of the total phenotypic variation in the RIAIL population. This discrepancy was observed likely because the NILs are a more homogenous genetic background, and the experiment was performed at higher replication than the linkage mapping. We observed similar levels of phenotypic recapitulation for the four traits used as inputs for the PCA (brood size: 57.8% and 87.4%, animal length: 98.5% and 100%; 69.5% and 68.1%; fluorescence: 58.5% and 64.2% for the left and right NILs). Taken together, these results suggested that genetic differences between N2 and CB4856 within 7.83 to 8.02 Mb on chromosome II conferred resistance to arsenic trioxide.
 
-In parallel to the linkage-mapping approach described above, we performed a genome-wide association (GWA) mapping experiment by quantifying the responses to arsenic trioxide for 86 wild C. elegans strains (Figure 2—figure supplement 1—source data 1) (Andersen et al., 2012). Consistent with previous experiments, the PC1 trait was influenced less by the brood size trait, as indicated by the loadings (Figure 2—figure supplement 1; Figure 2—source data 1 and Figure 5—figure supplement 1—source data 1). In agreement with the results from the linkage mapping approach, PC1 differences among the wild isolates mapped to a QTL on the center of chromosome II that spans from 7.6 Mb to 8.21 Mb (Figure 2A; Figure 2—figure supplement 3—source data 1 and Figure 2—figure supplement 5—source data 1). However, we noted that the brood size trait did not map to a significant QTL with the GWA mapping approach, which is most likely due to the lower statistical power of this approach. Interestingly, the genomic estimates of broad- and narrow-sense heritability (H2; h2) were low for all of the wild isolates measured and principal component traits (Figure 2—figure supplement 2; Figure 2—source data 2), which could be because the center of chromosome II has not experienced the chromosome-scale selective sweeps (Andersen et al., 2012) that contribute to much of the population structure within the species. The marker found to be most correlated with the PC1 trait from GWA mapping (II:7,931,252), explains 84.6% of the total heritable phenotypic variation. In addition to the PC1 trait, three of the four measured traits also mapped to significant QTL on the center of chromosome II. (Figure 2—figure supplement 1; Figure 2—figure supplement 1—source data 1). Notably, the CB4856 strain, which was one of the parents used to construct the RIAIL panel used for linkage mapping, had the non-reference genotype at the marker most correlated with PC1 (Figure 2B), suggesting that the same genetic variant(s) might be contributing to the differential arsenic trioxide response between the RIAIL and wild isolate populations.
+In parallel to the linkage-mapping approach described above, we performed a genome-wide association (GWA) mapping experiment by quantifying the responses to arsenic trioxide for 86 wild C. elegans strains (Figure 2—figure supplement 1—source data 1) (Andersen et al., 2012). Consistent with previous experiments, the PC1 trait was influenced less by the brood size trait, as indicated by the loadings (Figure 2—figure supplement 1; Figure 2—source data 1 and Figure 5—figure supplement 1—source data 1). In agreement with the results from the linkage mapping approach, PC1 differences among the wild isolates mapped to a QTL on the center of chromosome II that spans from 7.6 Mb to 8.21 Mb (Figure 2A; Figure 2—figure supplement 3—source data 1 and Figure 2—figure supplement 5—source data 1). However, we noted that the brood size trait did not map to a significant QTL with the GWA mapping approach, which is most likely due to the lower statistical power of this approach. Interestingly, the genomic estimates of broad- and narrow-sense heritability ($H^{2}$; $h^{2}$) were low for all of the wild isolates measured and principal component traits (Figure 2—figure supplement 2; Figure 2—source data 2), which could be because the center of chromosome II has not experienced the chromosome-scale selective sweeps (Andersen et al., 2012) that contribute to much of the population structure within the species. The marker found to be most correlated with the PC1 trait from GWA mapping (II:7,931,252), explains 84.6% of the total heritable phenotypic variation. In addition to the PC1 trait, three of the four measured traits also mapped to significant QTL on the center of chromosome II. (Figure 2—figure supplement 1; Figure 2—figure supplement 1—source data 1). Notably, the CB4856 strain, which was one of the parents used to construct the RIAIL panel used for linkage mapping, had the non-reference genotype at the marker most correlated with PC1 (Figure 2B), suggesting that the same genetic variant(s) might be contributing to the differential arsenic trioxide response between the RIAIL and wild isolate populations.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-v1.jpg)
+
+**Figure 2.:** (A) A manhattan plot for the first principal component in the presence of 1000 µM arsenic trioxide is shown. Each dot represents an SNV that is present in at least 5% of the assayed wild population. The genomic position in Mb, separated by chromosome, is plotted on the x-axis and the -log10(p) for each SNV is plotted on the y-axis. SNVs are colored red if they pass the genome-wide Bonferroni-corrected significance (BF) threshold, which is denoted by the gray horizontal line. SNVs are colored pink if they pass the genome-wide eigen-decomposition significance (ED) threshold, which is denoted by the dotted gray horizontal line. The genomic region of interests surrounding the QTL that pass the BF and ED thresholds are represented by cyan and pink rectangles, respectively. (B) Tukey box plots of phenotypes used for association mapping in (A) are shown. Each dot corresponds to the phenotype of an individual strain, which is plotted on the y-axis. Strains are grouped by their genotype at the peak QTL position (red SNV from panel A, ChrII:7,931,252), where REF corresponds to the allele from the reference N2 strain. The N2 (orange) and CB4856 (blue) strains are highlighted. (C) Fine mapping of the chromosome II region of interest (cyan region from panel A, 7.60–8.21 Mb) is shown. Each dot represents an SNV present in the CB4856 strain. The association between the SNV and first principal component is shown on the y-axis and the genomic position of the SNV is shown on the x-axis. Dots are colored by their SnpEff predicted effect.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** All QTL identified by GWA mapping above the eigen significance threshold are shown. Traits are labeled on the y-axis and the genomic position in Mb is plotted on the x-axis. Only PCs that explain greater than 90% of the variance are shown. Triangles represent the peak QTL position, and bars represent the associated QTL region of interest. Triangles and bars are colored based on the significance value where red colors correspond to higher significance values.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Fine mapping of the chromosome II region of interest (cyan region from Figure 1A, 7.71–8.18 Mb) is shown. Each dot represents an SNV present in the phenotyped population. SNVs present in the CB4856 strain are shown in the left panel and SNVs present in other phenotyped strains, but REF in CB4856, are shown in the right panel. The association between the SNV and first principal component (PC1) is shown on the y-axis, and the genomic position of the SNV is shown on the x-axis. Dots are colored by their SnpEff predicted effect.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Divergence, as measured by Tajima's D, is shown across the arsenic trioxide QTL confidence interval (II:7,430,000–8,330,000). The whole-genome SNV data set (Cook et al., 2016; Cook et al., 2017) was used for Tajima’s D calculations. Window size for the calculations was 500 SNVs with a 10 SNV sliding window size. The vertical red line marks the position of the dbt-1 locus.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Cysteine (REF) is shown in orange, and serine (ALT) is shown in blue. Latitude and longitude coordinates of sampling locations were used to plot individual strains on the map.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The genomic broad (H2)- and narrow (h2)-sense heritability estimates calculated using the realized relatedness matrix are shown. Each dot represents a measured or principal component trait. The five traits discussed throughout the manuscript are highlighted (purple: first principal component, pink: mean animal length, blue: brood size, orange; mean normalized optical density, and red: mean normalized yellow fluorescence). The four input traits for PCA in the left panel are mean normalized optical density, brood size, and mean animal length. For the right panel, mean normalized yellow fluorescence was also added.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) The Pearson’s correlation coefficients of the assay- and control-regressed for measured traits are shown. (B) The contribution of each measured traits to the principal components that explain 90% of the total variance in the GWA mapping experiment, which was performed at 1000 µM, is shown. For each plot, the tile color represents the value, where yellow colors represent higher values.
 
 To fine map the PC1 QTL, we focused on variants from the C. elegans whole-genome variation dataset (Cook et al., 2016) that are shared among at least 5% of the 86 wild isolates exposed to arsenic trioxide. Under the assumption that the linkage and GWA mapping QTL are caused by the same genetic variation, we only considered variants present in the CB4856 strain. Eight markers within the QTL region are in complete linkage disequilibrium with each other and are most correlated with the PC1 trait (Figure 2—figure supplement 2; Figure 2—source data 1). Only one of these markers is located within an annotated gene (dbt-1) and is predicted to encode a cysteine-to-serine variant at position 78 (C78S). Although it is possible that the causal variant underlying differential arsenic trioxide response in the C. elegans population is an intergenic variant, we focused on the DBT-1(C78S) variant as a candidate to test for an effect on arsenic response.
 
-## A cysteine-to-serine variant in DBT-1 contributes to arsenic response variation
+### A cysteine-to-serine variant in DBT-1 contributes to arsenic response variation
 
 The C. elegans dbt-1 gene encodes the E2 component of the branched-chain α-keto acid dehydrogenase complex (BCKDH) (Jia et al., 2016). The BCKDH complex is a core component of branched-chain amino acid (BCAA) catabolism and catalyzes the irreversible oxidative decarboxylation of amino-acid-derived branched-chain α-ketoacids (Adeva-Andany et al., 2017). The BCKDH complex belongs to a family of α-ketoacid dehydrogenases that include pyruvate dehydrogenase (PDH) and α-ketoglutarate dehydrogenase (KGDH) (Bergquist et al., 2009). All three of these large enzymatic complexes include a central E2 component that is lipoylated at one critical lysine residue (two residues in PDH). The function of these enzymatic complexes depends on the lipoylation of these lysine residues (Bergquist et al., 2009; Reed and Hackert, 1990). In C. elegans, the putative lipoylated lysine residue is located at amino acid position 71 of DBT-1, which is in close proximity to the C78S residue that we found to be highly correlated with arsenic trioxide resistance.
 
 To confirm that the C78S variant in DBT-1 contributes to differential arsenic trioxide responses, we used CRISPR-Cas9-mediated genome editing to generate allele-replacement strains by changing the C78 residue in the N2 strain to a serine and the S78 residue in the CB4856 strain to a cysteine. When treated with arsenic trioxide, the N2 DBT-1(S78) allele-replacement strain recapitulated 56.4% of the phenotypic difference between the CB4856 and N2 strains as measured with the first principal component (Cohen’s F) (Cohen, 2013) (Figure 3; Figure 1—source data 4). Similarly, the CB4856 DBT-1(C78) allele-replacement strain recapitulated 64.8% of the total phenotypic difference between the two parental strains. The degree to which the allele-replacement strains recapitulated the difference in the PC1 trait between the N2 and CB4856 strains matched our observations from the linkage mapping experiment, where the chromosome II QTL explained 63.4% of the total phenotypic variation in the RIAIL population. This result suggested that the majority of heritable variation in arsenic trioxide response was explained by the DBT-1(C78S) allele. We obtained similar results for the BIOSORT-quantified traits (Figure 3—figure supplement 1; Figure 1—source data 4), suggesting that overall animal physiology is affected by arsenic exposure (Figure 1—figure supplement 9; Figure 3—figure supplement 2; Figure 1—figure supplement 11—source data 2 and Figure 1—source data 3). However, when considering brood size, the N2 DBT-1(C78S) allele-replacement strain produced an intermediate number of progeny in the presence of arsenic trioxide relative to the parental N2 and CB4856 strains. And the CB4856 DBT-1(S78C) allele-replacement strain produced fewer offspring than both parental strains (Figure 3—figure supplement 1; Figure 1—source data 4). These results suggested that additional genetic variants between the N2 and CB4856 strains might interact with the DBT-1(C78S) allele to affect different aspects of physiology. Nevertheless, these results functionally validated that the DBT-1 C78S variant underlies differences in physiological responses to arsenic trioxide.
 
-## Arsenic trioxide inhibits the DBT-1 C78 allele
+![Figure 3.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig3-v1.jpg)
+
+**Figure 3.:** Tukey box plots of the first principal component generated by PCA on allele-replacement strainphenotypes measured by the COPAS BIOSORT 1000 μM arsenic trioxide exposure are shown (N2,orange; CB4856, blue; allele replacement strains, gray). Labels correspond to the genetic backgroundand the corresponding residue at position 78 of DBT-1 (C for cysteine, S for serine). All pair-wise comparisons are significantly different (Tukey HSD, p-value < 1E-7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** From top to bottom: Tukey box plots of residual mean animal length, brood size, mean normalized yellow fluorescence, and mean normalized optical density after exposure to 1000 µM arsenic trioxide are shown (N2, orange; CB4856, blue; allele replacement strains, gray). Labels correspond to the genetic background and the corresponding residue at position 78 of DBT-1 (C for cysteine, S for serine). Every pairwise strain comparison was significant (Brood size: Tukey’s HSD p-value<1.55E-5; Animal length: p-value<2E-73; Fluorescence: p-value<1E-7; Optical Density: p-value<1E-7).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The correlations between brood size (blue) or animal length (pink) with the first principal component trait for the allele- replacement recapitulation experiment are shown. Each dot represents an individual allele-replacement or parental strain replicate phenotype, with the animal length and brood size phenotype values on the x-axis and the first principal component (PC1) phenotype on the y-axis.
+
+### Arsenic trioxide inhibits the DBT-1 C78 allele
 
 Mono-methyl branched chain fatty acids (mmBCFA) are an important class of molecules that are produced via BCAA catabolism (Kniazeva et al., 2004; Jia et al., 2016; Kniazeva et al., 2008; Baugh, 2013). The production of mmBCFA requires the BCKDH, fatty acid synthase (FASN-1), acetyl-CoA carboxylase (POD-2), fatty acyl elongases (ELO-5/6), β-ketoacyl dehydratase (LET-767), and acyl CoA synthetase (ACS-1) (Kniazeva et al., 2004; Jia et al., 2016; Kniazeva et al., 2008; Watts and Ristow, 2017; Entchev et al., 2008; Zhu et al., 2013). Strains that lack functional elo-5, elo-6, or dbt-1 produce less C15ISO and C17ISO mmBCFAs, arrest at the L1 larval stage, and can be rescued by supplementing the growth media with C15ISO or C17ISO (Kniazeva et al., 2004; Jia et al., 2016; Kniazeva et al., 2008) (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-v1.jpg)
+
+**Figure 4.:** (A) A simplified model of BCAA catabolism in C. elegans. The BCKDH complex, which consists of DBT-1, catalyzes the irreversible oxidative decarboxylation of branched-chain ketoacids. The products of thesebreakdown can then serve as building blocks for the mmBCFA that are required for developmental progression. (B) The difference in the C15ISO/C15SC (left panel) or C17ISO/C17SC (right panel) ratios between 100 μM arsenic trioxide and control conditions is plotted on the y-axis for three independent replicates of the CB4856 and CB4856 allele replacement strains and six independent replicates of the N2and N2 allele replacement strains. The difference between the C15 ratio for the CB4856-CB4856 allele replacement comparison is significant (Tukey HSD p-value = 0.0427733), but the difference between the C17 ratios for these two strains is not (Tukey HSD p-value = 0.164721). The difference between the C15and C17 ratios for the N2-N2 allele replacement comparisons are both significant (C15: Tukey HSD p-value = 0.0358; C17: Tukey HSD p-value = 0.003747). (C) Tukey box plots median animal length after arsenic trioxide or arsenic trioxide and 0.64 μM C15ISO exposure are shown (N2, orange; CB4856, blue; allele replacement strains, gray). Labels correspond to the genetic background and the corresponding residue at position 78 of DBT-1 (C for cysteine, S for serine). Every pair-wise strain comparison is significant except for the N2 DBT-1(S78) - CB4856 comparisons (Tukey’s HSD p-value < 1.43E-6).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The raw abundance of C17ISO is plotted on the y-axis for three independent replicates of the CB4856 and CB4856 allele replacement strains exposed to control (teal) or 100 µM arsenic trioxide (pink) conditions. The difference between CB4856 replacement mock and arsenic conditions was significant (Tukey HSD p-value=0.029), but the difference between CB4856 mock and arsenic conditions was not significant (Tukey HSD p-value=0.10).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The difference in raw C15SC (left panel) or C17SC (right panel) abundances between 100 µM arsenic trioxide and control conditions is plotted on the y-axis for three independent replicates of the CB4856 and CB4856 allele replacement strains and six independent replicates of the N2 and N2 allele replacement strains. We found no significant differences when comparing the abundances between parental and allele-replacement strains.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The C15ISO/C15SC (left panel) or C17ISO/C17SC (right panel) ratios in control conditions are plotted on the y-axis for three independent replicates of the CB4856 and CB4856 allele replacement strains and six independent replicates of the N2 and N2 allele replacement strains. The C15 and C17 ratios for the CB4856-CB4856 allele replacement comparison were significant (C15: Tukey HSD p-value=0.0168749; C17: Tukey HSD p-value=0.0342525). The difference between the C17 ratio for the N2-N2 allele replacement comparison was significant (Tukey HSD p-value=0.0044667), but the difference in the C15 ratio was not significant (Tukey HSD p-value=0.1239674).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Branched chain (left panel) and straight chain (right panel) fatty acid measurements in L1 animals arerepresented on the y-axis. We found significant differences in abundances when comparing all parentaland allele-replacement strains for C15ISO and C17ISO chain fatty acids (CB4856-C15ISO DBT-1(C78):Tukey HSD p-value = 0.0036201, n=3; N2-C15ISO DBT-1(C78): Tukey HSD p-value = 0.0265059, n=6;CB4856-C17ISO DBT-1(C78): Tukey HSD p-value = 0.0086572, n=3; N2-C17ISO DBT-1(C78): TukeyHSD p-value = 0.0022501, n=6). Conversely, we observed no significant differences in straight chain fattyproduction except for C17n production in the CB4856 background (CB4856-C15n DBT-1(C78): TukeyHSD p-value = 0.0787388, n=3; N2-C15n DBT-1(C78): Tukey HSD p-value = 0.5817993, n=6; CB4856-C17n DBT-1(C78): Tukey HSD p-value = 0.0086572, n=3; N2-C17n DBT-1(C78): Tukey HSD p-value =0.35827, n=6).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The C15ISO/C18SC (top panel) or C17ISO/C18SC(bottom panel) ratios of young adult animals in control conditions are plotted on the y-axis for six independent replicates for all strains. We found no significant differences when comparing the abundances between parental and allele-replacement strains.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Labels correspond to the genetic background and the corresponding residue at position 78 of DBT-1 (C for cysteine, S for serine). Every pairwise strain comparison was significant except for the N2 DBT-1(S78) - CB4856 comparisons (Tukey’s HSD p-value<1.43E-6).
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** (A), mean animal length (B), brood size (C), and mean normalized yellow fluorescence (D) traits after 0.64 µM C15ISO, arsenic trioxide, or arsenic trioxide and 0.64 µM C15ISO exposure are shown (N2, orange; CB4856, blue; allele replacement strains, gray). Labels correspond to the genetic background and the corresponding residue at position 78 of DBT-1 (C for cysteine, S for serine). For all traits, except brood size, the comparison between arsenic and arsenic with C15ISO for strains with the DBT-1(C78) allele was significant (Tukey’s HSD p-value<2E-3).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** (A) The Pearson’s correlation coefficients of the assay- and control-regressed measured traits are shown. (B) The contribution of each measured trait to the principal components that explain 90% of the total variance in the GWA mapping experiment, which was performed at 1000 µM, is shown. For each plot, the tile colors represent the value, where yellow colors represent higher values.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig4-figsupp9-v1.jpg)
+
+**Figure 4—figure supplement 9.:** The correlations between brood size (blue) or animal length (pink) with the first principal component trait for the C15ISO rescue experiment are shown. Each dot represents an individual allele-replacement or parental strain replicate phenotype, with the animal length and brood size phenotype values on the x-axis and the first principal component phenotype on the y-axis.
 
 Because DBT-1 is involved in BCAA catabolism, we hypothesized that the DBT-1(C78S)-dependent difference in progeny length between the N2 and CB4856 strains after arsenic trioxide treatment might be caused by differential larval arrest through depletion of downstream mmBCFAs. To test this hypothesis, we quantified the abundance of the monomethyl-branched (ISO) and straight-chain (SC) forms of C15 and C17 in the N2, CB4856, and allele-replacement genetic backgrounds. We measured the metabolite levels in staged L1 animals and normalized the detected amounts of C15ISO and C17ISO relative to the abundances of C15SC and C17SC, respectively, to mitigate the confounding effects of differences in developmental rates that could be caused by genetic background differences after arsenic trioxide exposure. Generally, the ratios of C15ISO/C15SC and C17ISO/C17SC were reduced in arsenic-treated animals relative to controls (Figure 4B; Figure 4—source datas 1–3).
 
@@ -70,9 +198,17 @@ In addition to arsenic-induced differences in branched chain fatty acid producti
 
 To test the hypothesis that differential arsenic-induced depletion of branched-chain fatty acids in strains with the DBT-1(C78S) causes physiological differences in growth, we tested if mmBCFA supplementation could rescue the effects of arsenic trioxide-induced toxicity. We exposed the parental and the DBT-1 allele-replacement strains to media containing arsenic trioxide alone, C15ISO alone, or a combination of arsenic trioxide and C15ISO. In agreement with previous experiments, the PC1 trait was more strongly correlated with the animal length, optical density, and fluorescence traits than the brood size trait (Figure 4—figure supplement 6–7; Figure 4—source data 4, Figure 4—figure supplement 5—source data 1 and Figure 4—figure supplement 2—source data 1). C15ISO supplementation of the arsenic growth media caused a 53.5% rescue of the allele-specific effect in the N2 genetic background (Figure 4—figure supplement 6). Similarly, when arsenic-exposed CB4856 DBT-1(C78) animals were supplemented with C15ISO, the allele-specific PC1 phenotypic difference was reduced by 25.6% when compared to the difference between the CB4856 DBT-1(C78) and CB4856 DBT-1(S78) strains in arsenic trioxide alone (Figure 4—figure supplement 6C). By contrast, CB4856 DBT-1(S78) and N2 DBT-1(S78) phenotypes were unaffected by C15ISO supplementation in arsenic trioxide media. We observed similar trends for the animal length, optical density, and fluorescence traits that we used as inputs for PCA but not for brood size (Figure 4—figure supplement 9C). Collectively, these data support the hypothesis that the cysteine/serine variant in DBT-1 contributes to arsenic sensitivity in C. elegans by reducing ISO fatty acid biosynthesis, and the DBT-1(C78) variant can be partially rescued by supplementation with mmBCFAs.
 
-## Arsenic exposure increases mmBCFA production and favors a cysteine allele in human DBT1
+### Arsenic exposure increases mmBCFA production and favors a cysteine allele in human DBT1
 
 To test whether our results from C. elegans translate to human variation in arsenic sensitivity, we tested the role of DBT1 variation on arsenic trioxide responses and mmBCFA biosynthesis in human cells. The human DBT1 enzyme contains a serine at position 112 that corresponds to the C78 residue in C. elegans DBT-1 (Figure 4—figure supplement 6). Using CRISPR-Cas9, we edited batch cultures of 293 T cells to generate a subset of cells with DBT1(S112C). These cells were exposed to arsenic trioxide or control conditions, and we monitored changes in the fraction of cells carrying the DBT1(C112) allele. We found that arsenic exposure caused a 4% increase in the fraction of cells that contained the DBT1(C112) allele (Figure 5B, Fisher’s exact test, p-value<1.9E-16; Figure 5—source datas 1–2). Though the human DBT1 does not vary within the human population at S112, two residues in close spatial proximity to S112 do vary among individuals in the population (R113C and W84C) (Figure 5A) (Forbes et al., 2008). To test the effects of these residues on arsenic trioxide sensitivity, we performed the same editing and arsenic selection procedure described above. Over the course of the selection experiment, cells with DBT1(W84C) and DBT1(R113C) increased by 2% and 1%, respectively (Figure 5B). Therefore, it appears that all three missense variants caused a slight increase in fitness in batch-edited human cell cultures exposed to arsenic – the opposite result we found in C. elegans. To determine if branched-chain fatty acid production was altered by arsenic exposure, as we found in C. elegans, we measured mmBCFA production in unedited 293 T cells in arsenic and mock-treated cultures. We found that overall fatty acid production was markedly reduced in arsenic-treated cultures. In contrast to our observations in C. elegans, straight-chain fatty acids were more drastically reduced than ISO fatty acids (Figure 5—source data 3), suggesting pleiotropic effects and a general perturbation of fatty acid metabolism.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig5-v1.jpg)
+
+**Figure 5.:** (A) Alignment of C. elegans DBT-1 and H. sapiens DBT1. The residues tested for an arsenic-specific effect are indicated with arrows - W84C (pink), S112C (blue), and R113C (black). The lysine that is post-translationally modified with a lipoid acid is highlighted in red. (B) The percent increase of edited human cells that contain the W84C, S112C, or R113C amino acid change in DBT1 in the presence 5 µM arsenic trioxide relative to control conditions are shown. The number of reads in 5 µM arsenic trioxide for all replicates are significantly different from control conditions (Fisher’s exact test, p-value<0.011).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40260/elife-40260-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The C78 residue that conferred resistance to arsenic trioxide is highlighted in orange, and the C65 residue is highlighted in purple. The C. elegans K71 residue is highlighted in red, and the human lipoylated lysine is highlighted in green.
 
 ## Discussion
 
@@ -84,86 +220,306 @@ The C78 allele of DBT-1 is likely the derived allele in the C. elegans populatio
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>dbt-1</td>
+      <td>NA</td>
+      <td>Wormbase:WBGene00014054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>N2 DBT-1(S78)</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:ECA581</td>
+      <td>dbt-1(ean15[C78S])</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CB4856 DBT-1(C78)</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:ECA590</td>
+      <td>dbt-1(ean34[S78C])</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>Left NIL; CB4856 &gt; N2 (II:5.75–8.02 Mb)</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:ECA414</td>
+      <td>eanIR188[II:5.75–8.02 Mb, CB4856 &gt; N2]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>Right NIL; CB4856 &gt; N2 (II:7.83–9.66 Mb)</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:ECA434</td>
+      <td>eanIR208[II:7.83–9.66 Mb, CB4856 &gt; N2]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NIL Fd primer</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:oECA609</td>
+      <td>tttcacacaaaccatgcgct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NIL Rv primer</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:oECA610</td>
+      <td>actcgtctgctgggtattct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NIL Fd primer</td>
+      <td>This paper</td>
+      <td>Andersen_ Lab:oECA611</td>
+      <td>tgtcttcgcacctttactcg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NIL Rv primer</td>
+      <td>This paper</td>
+      <td>Andersen_ Lab:oECA612</td>
+      <td>cattcaagtcagggcgtatcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotype C78S Edit</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:oECA1163</td>
+      <td>GAAGGAATTGCCGAAGTTCAGGTTAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotype C78S Edit</td>
+      <td>This paper</td>
+      <td>Andersen_Lab:oECA1165</td>
+      <td>CCGTCATCTCCACAAAAAGCTTTATCTCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dbt-1 gRNA</td>
+      <td>This paper</td>
+      <td>Andersen_ Lab:crECA97</td>
+      <td>CCATCTCCTGTAGATACGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N2 dbt-1 repair oligo</td>
+      <td>This paper</td>
+      <td>Andersen_ Lab:oECA1542</td>
+      <td>CTTCCAGGTACGTGAAAGAAGGAGATACGATTTCGCAGTTCGATAAAGTCTGTGAAGTGCAAAGTGATAAAGCAGCAGTAACCATCTCCAGTAGATACGACGGAATTGTCAAAAAATTGTAAGTTTCTTCCTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CB4856 dbt-1 repair oligo</td>
+      <td>This paper</td>
+      <td>Andersen_ Lab:oECA1543</td>
+      <td>TTAGGAAGAAACTTACAATT TTTTGACAATTCCGTCGTATCTACAGGAGATGGTTACTGCT GCTTTATCGCTTTGCACTTCACAGACTTTATCGAACTGCGAAATCGTATCTCCTTCTTTCACGTACCTGGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dpy-10 repair oligo</td>
+      <td>Kim et al., 2014</td>
+      <td>Andersen_Lab:crECA37</td>
+      <td>CACTTGAACTTCAATACGGCAAGATGAGAATGACTGGAAACCGTACCGCATGCGGTGCCTATGGTAGCGGAGCTTCACATGGCTTCAGACCAACAGCCTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dpy-10 gRNA</td>
+      <td>Kim et al., 2014</td>
+      <td>Andersen_Lab:crECA36</td>
+      <td>GCTACCATAGGCACCACGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human gRNA S112C and R113C</td>
+      <td>This paper</td>
+      <td>Guide_1 used in RDA_74</td>
+      <td>TCCATCATAACGACTAGTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>S112C repair template</td>
+      <td>This paper</td>
+      <td>1192 DBT1-repair-S112C</td>
+      <td>ATAGCATCTGTGAAGTTCAAAGTGATAAAGCTTCTGTTACAATCACTTGTCGTTATGATGGAGTCATTAAAAAACTCTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R113C repair template</td>
+      <td>This paper</td>
+      <td>1193 DBT1-repair-R113C</td>
+      <td>ATAGCATCTGTGAAGTTCAAAGTGATAAAGCTTCTGTTACAATCACTAGTTGTTATGATGGAGTCATTAAAAAACTCTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fwd PCR C</td>
+      <td>This paper</td>
+      <td>1188 DBT1-PCR-C</td>
+      <td>TtgtggaaaggacgaaacaccgAGAAGGAGATACAGTGTCTCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fwd PCR D</td>
+      <td>This paper</td>
+      <td>1189 DBT1-PCR-D</td>
+      <td>TtgtggaaaggacgaaacaccgTGTCTCAGTTTGATAGCATCTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human gRNA W84C</td>
+      <td>This paper</td>
+      <td>Guide_2 used in RDA_75</td>
+      <td>TCTTTTAGGTATGTAAAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>W84C repair template</td>
+      <td>This paper</td>
+      <td>1195 DBT1-repair-W84C-v2</td>
+      <td>GACTGTTTCCATAAAAGTGTCTCATTTCTTTTTCTTTTAGTTATGTGAAGGAAGGAGATACAGTGTCTCAGTTTGATAGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fwd PCR A</td>
+      <td>This paper</td>
+      <td>1186 DBT1-PCR-A</td>
+      <td>TtgtggaaaggacgaaacaccgGCATGGCATTTACATCCTTAATATGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fwd PCR B</td>
+      <td>This paper</td>
+      <td>1187 DBT1-PCR-B</td>
+      <td>TtgtggaaaggacgaaacaccgCCTTAATATGATCTGTACTTATGACTGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rev PCR 1</td>
+      <td>This paper</td>
+      <td>1190 DBT1-PCR-Rev1</td>
+      <td>TctactattctttcccctgcactgtCTACTAATGGCTTCCCCACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rev PCR 2</td>
+      <td>This paper</td>
+      <td>1191 DBT1-PCR-Rev2</td>
+      <td>TctactattctttcccctgcactgtCAATACCTTTTAAAGCTTCCGTTTCTAT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>S112C and R113C Cas9-sgRNA plasmid</td>
+      <td>This paper</td>
+      <td>p1054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>W84C Cas9-sgRNA plasmid</td>
+      <td>This paper</td>
+      <td>p1052</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Animals were fed the bacterial strain OP50 and grown at 20°C on modified nematode growth medium (NGM), containing 1% agar and 0.7% agarose to prevent burrowing of the wild isolates (Boyd et al., 2012). For each assay, strains were grown for five generations with no strain entering starvation or encountering dauer-inducing conditions (Andersen et al., 2014). Wild C. elegans isolates used for genome-wide association and recombinant inbred advanced intercross lines (RIAILs) used for linkage mapping have been described previously (Cook et al., 2016; Cook et al., 2017; Andersen et al., 2015). Strains constructed for this manuscript are listed above in the Key Resources Table.
 
-## High-throughput fitness assay
+### High-throughput fitness assay
 
 We used the high-throughput fitness assay (HTA) described previously (Andersen et al., 2015). In short, strains are passaged for four generations before bleach-synchronization and aliquoted to 96-well microtiter plates at approximately one embryo per microliter in K medium (Boyd et al., 2012). The final concentration of NaCl in the K medium for the genome-wide association (GWA) and linkage mapping assays was 51 mM. For all subsequent experiments the final NaCl concentration was 10.2 mM. The following day, hatched and synchronized L1 animals were fed HB101 bacterial lysate (Pennsylvania State University Shared Fermentation Facility, State College, PA, [García-González et al., 2017]) at a final concentration of 5 mg/ml and grown for two days at 20°C. Next, three L4 larvae were sorted using a large-particle flow cytometer (COPAS BIOSORT, Union Biometrica, Holliston, MA) into microtiter plates that contain HB101 lysate at 10 mg/ml, K medium, 31.25 µM kanamycin, and either arsenic trioxide dissolved in 1% water or 1% water alone. The animals were then grown for four days at 20°C. For linkage mapping and GWA mapping experiments, we added polychromatic fluorescent beads (Polysciences, cat. #19507–5) to each well for five minutes. The populations were treated with sodium azide (50 mM) prior to being measured with the BIOSORT. To reduce experimental costs, the polychromatic fluorescent beads were not added to follow-up experiments. For all experiments, we report the results for four independently quantified traits): the normalized brood size (norm.n), mean progeny length per well (mean.TOF), the mean optical density normalized by animal length per well (mean.norm.EXT), and the mean fluorescence normalized by animal length per well (mean.norm.yellow). All raw experimental data can be found on FigShare (https://doi.org/10.6084/m9.figshare.7458980.v2).
 
-## Calculation of fitness traits for genetic mappings
+### Calculation of fitness traits for genetic mappings
 
 Phenotype data generated using the BIOSORT were processed using the R package easysorter, which was specifically developed for processing this type of data (Shimko and Andersen, 2014). Briefly, the function read_data, reads in raw phenotype data and runs a support vector machine to identify and eliminate bubbles. Next, the remove_contamination function eliminates any wells that were identified as contaminated prior to scoring population parameters. This analysis results in processed BIOSORT data where each observation is for a given strain corresponds to the measurements for an individual animal. However, the phenotypes we used for mapping and follow-up experiments are summarized statistics of populations of animals in each well of a 96-well plate. The sumplate function was used to generate summary statistics of the measured parameters for each animal in each well. These summary statistics include the 10th, 25th, 50th, 75th, and 90th quantiles for time of flight (TOF), animal extinction (EXT), and three fluorescence channels (Green, Yellow, and Red), which correspond to animal length, optical density, and ability to pump fluorescent beads, respectively. Measured brood sizes (n) are normalized by the number of animals that were originally sorted into each well (norm.n). For mapping experiments, a single well replicate for each strain is summarized using the sumplate function. For follow-up experiments, multiple replicates for each strain indicated by a unique plate, well, and column were used. After summary statistics for each well are calculated, we accounted for differences between assays using the regress(assay = TRUE) function in the easysorter package. Outliers in the GWA and linkage mapping experiments were identified and eliminated using the bamf_prune function in easysorter. For follow-up experiments that contained multiple replicates for each strain, we eliminated strain replicates that were more than two standard deviations from the strain mean for each condition tested. Finally, arsenic-specific effects were calculated using the regress(assay = FALSE) function from easysorter, which accounts for strain-specific differences in growth parameters present in control conditions.
 
-## Principal component analysis of processed BIOSORT measured traits
+### Principal component analysis of processed BIOSORT measured traits
 
 The COPAS BIOSORT measures individual animal length (TOF), optical density (EXT), fluorescence (green, yellow, and red). We use these data to calculate the total number of animals in a well and then normalize by the number of animals initially sorted into the well (brood size). All these measurements were then summarized using the easysorter package to generate various summary statistics of each measured parameter, including five distribution quantiles and measures of dispersion (Andersen et al., 2015). We used four independently quantified traits as inputs to principal component analysis (PCA): the normalized brood size (norm.n), mean progeny length per well (mean.TOF), the mean optical density normalized by animal length per well (mean.norm.EXT), and the mean fluorescence normalized by animal length per well (mean.norm.yellow). Although we only used fluorescent beads in the GWA and linkage mapping experiments, we found that fluorescence-based traits exhibited an arsenic-specific effect that correlated with strain sickness. Prior to principal component analysis (PCA), HTA phenotypes were scaled to have a mean of zero and a standard deviation of one using the scale function in R. PCA was performed using the prcomp function in R (R Development Core Team, 2017). Eigenvectors were subsequently extracted from the object returned by the prcomp function.
 
-## Arsenic trioxide dose-response assays
+### Arsenic trioxide dose-response assays
 
 All dose-response experiments were performed on four genetically diverged strains (N2, CB4856, DL238, and JU775) in technical quadruplicates prior to performing GWA and linkage mapping experiments (Figure 1—source data 1). Animals were assayed using the HTA, and phenotypic analyses were performed as described above. The arsenic trioxide concentration for GWA and linkage mapping experiments was chosen based on an observable effect for animal length and brood size phenotypes in the presence of arsenic.
 
-## Heritability calculations
+### Heritability calculations
 
-For dose-response experiments, broad-sense heritability (H2) estimates were calculated using the lmer function in the lme4 package with the following linear mixed model (phenotype ~1 + (1|strain)) (Bates et al., 2014). H2 was then calculated as the fraction of the total variance that can be explained by the random component (strain) of the mixed model. Prior to estimating H2, we removed outlier replicates that we defined as replicates with values greater than two standard deviations away from the mean phenotype. Outliers were defined on a per-trait and per-strain basis. Heritability estimates for dose response experiments are in Figure 1—figure supplement 3—source data 1.
+For dose-response experiments, broad-sense heritability ($H^{2}$) estimates were calculated using the lmer function in the lme4 package with the following linear mixed model (phenotype ~1 + (1|strain)) (Bates et al., 2014). $H^{2}$ was then calculated as the fraction of the total variance that can be explained by the random component (strain) of the mixed model. Prior to estimating $H^{2},$ we removed outlier replicates that we defined as replicates with values greater than two standard deviations away from the mean phenotype. Outliers were defined on a per-trait and per-strain basis. Heritability estimates for dose response experiments are in Figure 1—figure supplement 3—source data 1.
 
-Heritability estimates for the linkage mapping experiment were calculated using two approaches. In both approaches, we used the previously described RIAIL genotype matrix to compute relatedness matrices (Andersen et al., 2012). In the first approach, a variance component model using the R package regress was used to estimate the fraction of phenotypic variation explained by additive and epistatic genetic factors, H2, or just additive genetic factors, h2 (Bloom et al., 2015; David Clifford, 2006), using the formula (y ~ 1, ~ZA+ZAA), where y is a vector of RIAIL phenotypes, ZA is the additive relatedness matrix, and ZAA is the pairwise-interaction relatedness matrix. The additive relatedness matrix was calculated as the correlation of marker genotypes between each pair of strains. In addition, a two-component variance model was calculated with both an additive and pairwise-interaction effect. The pairwise-interaction relatedness matrix was calculated as the Hadamard product of the additive relatedness matrix.
+Heritability estimates for the linkage mapping experiment were calculated using two approaches. In both approaches, we used the previously described RIAIL genotype matrix to compute relatedness matrices (Andersen et al., 2012). In the first approach, a variance component model using the R package regress was used to estimate the fraction of phenotypic variation explained by additive and epistatic genetic factors, $H^{2}$, or just additive genetic factors, $h^{2}$ (Bloom et al., 2015; David Clifford, 2006), using the formula (y ~ 1, ~ZA+ZAA), where y is a vector of RIAIL phenotypes, ZA is the additive relatedness matrix, and ZAA is the pairwise-interaction relatedness matrix. The additive relatedness matrix was calculated as the correlation of marker genotypes between each pair of strains. In addition, a two-component variance model was calculated with both an additive and pairwise-interaction effect. The pairwise-interaction relatedness matrix was calculated as the Hadamard product of the additive relatedness matrix.
 
 The second approach utilized a linear mixed model and the realized additive and epistatic relatedness matrices (Endelman, 2011; Covarrubias-Pazaran, 2016; Su et al., 2012; Endelman and Jannink, 2012). We used the mmer function in the sommer package with the formula (y ~ A + E) to estimate variance components, where y is a vector of RIAIL phenotypes, A is the realized additive relatedness matrix, and E is the epistatic relatedness matrix. This same approach was used to estimate heritability for the GWA mapping phenotype data, with the only difference being that we used the wild isolate genotype matrix described below. Heritability estimates for RIAIL and wild isolate data are in Figure 1—figure supplement 6—source data 1 and Figure 2—figure supplement 5—source data 1, respectively.
 
-## Effect size calculations for dose response assay
+### Effect size calculations for dose response assay
 
 We first fit a linear model with the formula (phenotype ~strain) for all measured and principal component traits for each concentration of arsenic trioxide using the lm R function. Next, we extracted effect sizes using the anova_stats function from the sjstats R package (Lüdecke, 2018). Effect sizes for dose responses are in Figure 1—figure supplement 3—source data 2.
 
-## Linkage mapping
+### Linkage mapping
 
-A total of 262 RIAILs were phenotyped in the HTA described previously for control and arsenic trioxide conditions (Andersen et al., 2015; Zdraljevic et al., 2017). The phenotype and genotype data were entered into R and scaled to have a mean of zero and a variance of one for linkage analysis (Figure 1—source data 2). Quantitative trait loci (QTL) were detected by calculating logarithm of odds (LOD) scores for each marker and each trait as -n(ln(1-r2)/2ln(10)), where r is the Pearson correlation coefficient between RIAIL genotypes at the marker and phenotype trait values (Bloom et al., 2013). The maximum LOD score for each chromosome for each trait was retained from three iterations of linkage mappings (Figure 1—source data 3). We randomly permuted the phenotype values of each RIAIL while maintaining correlation structure among phenotypes 1000 times to estimate the significance threshold empirically. The significance threshold was set using a genome-wide error rate of 5%. Confidence intervals were defined as the regions contained within a 1.5 LOD drop from the maximum LOD score (Broman et al., 2003).
+A total of 262 RIAILs were phenotyped in the HTA described previously for control and arsenic trioxide conditions (Andersen et al., 2015; Zdraljevic et al., 2017). The phenotype and genotype data were entered into R and scaled to have a mean of zero and a variance of one for linkage analysis (Figure 1—source data 2). Quantitative trait loci (QTL) were detected by calculating logarithm of odds (LOD) scores for each marker and each trait as $-n(ln(1-r^{2})/2ln(10))$, where $r$ is the Pearson correlation coefficient between RIAIL genotypes at the marker and phenotype trait values (Bloom et al., 2013). The maximum LOD score for each chromosome for each trait was retained from three iterations of linkage mappings (Figure 1—source data 3). We randomly permuted the phenotype values of each RIAIL while maintaining correlation structure among phenotypes 1000 times to estimate the significance threshold empirically. The significance threshold was set using a genome-wide error rate of 5%. Confidence intervals were defined as the regions contained within a 1.5 LOD drop from the maximum LOD score (Broman et al., 2003).
 
-## Near-isogenic line (NIL) generation
+### Near-isogenic line (NIL) generation
 
 NILs were generated by crossing N2xCB4856 RIAILs to each parental genotype. For each NIL, eight crosses were performed followed by six generations of selfing to homozygose the genome. Reagents used to generate NILs are detailed in the Key Resources Table. The NILs responses to 1000 µM arsenic trioxide were quantified using the HTA described above (Figure 1—source data 4). NIL whole-genome sequencing and analysis was performed as described previously (Brady et al., 2018) (Figure 1—source data 5).
 
-## Genome-wide association mapping
+### Genome-wide association mapping
 
-Genome-wide association (GWA) mapping was performed using phenotype data from 86 C. elegans isotypes (Figure 2—source data 2). Genotype data were acquired from the latest VCF release (Release 20180527) from CeNDR that was imputed as described previously (Cook et al., 2017). We used BCFtools (Li, 2011) to filter variants that had any missing genotype calls and variants that were below 5% minor allele frequency. We used PLINK v1.9 (Purcell et al., 2007; Chang et al., 2015) to LD-prune the genotypes at a threshold of r2 <0.8, using --indep-pairwise 50 10 0.8. This resulting genotype set consisted of 59,241 markers that were used to generate the realized additive kinship matrix using the A.mat function in the rrBLUP R package (Endelman, 2011) (Figure 2—source data 3). These markers were also used for genome-wide mapping. However, because these markers still have substantial LD within this genotype set, we performed eigen decomposition of the correlation matrix of the genotype matrix using eigs_sym function in Rspectra package (Qiu, 2018). The correlation matrix was generated using the cor function in the correlateR R package (Bilgrau, 2018). We set any eigenvalue greater than one from this analysis to one and summed all of the resulting eigenvalues (Li and Ji, 2005). This number was 500.761, which corresponds to the number of independent tests within the genotype matrix. We used the GWAS function in the rrBLUP package to perform genome-wide mapping with the following command: rrBLUP::GWAS (pheno = PC1, geno = Pruned_Markers, K = KINSHIP, min.MAF = 0.05, n.core = 1, P3D = FALSE, plot = FALSE). To perform fine-mapping, we defined confidence intervals from the genome-wide mapping as +/- 100 SNVs from the rightmost and leftmost markers above the Bonferroni significance threshold. We then generated a QTL region of interest genotype matrix that was filtered as described above, with the one exception that we did not perform LD pruning. We used PLINK v1.9 to extract the LD between the markers used for fine mapping and the peak QTL marker identified from the genome-wide scan. We used the same command as above to perform fine mapping, but with the reduced variant set. The workflow for performing GWA mapping can be found on https://github.com/AndersenLab/cegwas2-nf (copy archived at https://github.com/elifesciences-publications/cegwas2-nf; Zdraljevic et al., 2019). All trait mapping results can be found on FigShare (https://doi.org/10.6084/m9.figshare.7828706.v1).
+Genome-wide association (GWA) mapping was performed using phenotype data from 86 C. elegans isotypes (Figure 2—source data 2). Genotype data were acquired from the latest VCF release (Release 20180527) from CeNDR that was imputed as described previously (Cook et al., 2017). We used BCFtools (Li, 2011) to filter variants that had any missing genotype calls and variants that were below 5% minor allele frequency. We used PLINK v1.9 (Purcell et al., 2007; Chang et al., 2015) to LD-prune the genotypes at a threshold of $r^{2 }<$0.8, using --indep-pairwise 50 10 0.8. This resulting genotype set consisted of 59,241 markers that were used to generate the realized additive kinship matrix using the A.mat function in the rrBLUP R package (Endelman, 2011) (Figure 2—source data 3). These markers were also used for genome-wide mapping. However, because these markers still have substantial LD within this genotype set, we performed eigen decomposition of the correlation matrix of the genotype matrix using eigs_sym function in Rspectra package (Qiu, 2018). The correlation matrix was generated using the cor function in the correlateR R package (Bilgrau, 2018). We set any eigenvalue greater than one from this analysis to one and summed all of the resulting eigenvalues (Li and Ji, 2005). This number was 500.761, which corresponds to the number of independent tests within the genotype matrix. We used the GWAS function in the rrBLUP package to perform genome-wide mapping with the following command: rrBLUP::GWAS (pheno = PC1, geno = Pruned_Markers, K = KINSHIP, min.MAF = 0.05, n.core = 1, P3D = FALSE, plot = FALSE). To perform fine-mapping, we defined confidence intervals from the genome-wide mapping as +/- 100 SNVs from the rightmost and leftmost markers above the Bonferroni significance threshold. We then generated a QTL region of interest genotype matrix that was filtered as described above, with the one exception that we did not perform LD pruning. We used PLINK v1.9 to extract the LD between the markers used for fine mapping and the peak QTL marker identified from the genome-wide scan. We used the same command as above to perform fine mapping, but with the reduced variant set. The workflow for performing GWA mapping can be found on https://github.com/AndersenLab/cegwas2-nf (copy archived at https://github.com/elifesciences-publications/cegwas2-nf; Zdraljevic et al., 2019). All trait mapping results can be found on FigShare (https://doi.org/10.6084/m9.figshare.7828706.v1).
 
-## Generation of dbt-1 allele replacement strains
+### Generation of dbt-1 allele replacement strains
 
 Allele replacement strains were generated using CRISPR-Cas9-mediated genome editing, using the co-CRISPR approach (Kim et al., 2014) with Cas9 ribonucleoprotein delivery (Paix et al., 2015). Alt-R crRNA and tracrRNA were purchased from IDT (Skokie, IL). tracrRNA (IDT, 1072532) was injected at a concentration of 13.6 µM. The dpy-10 and the dbt-1 crRNAs were injected at 4 µM and 9.6 µM, respectively. The dpy-10 and the dbt-1 single-stranded oligodeoxynucleotides (ssODN) repair templates were injected at 1.34 µM and 4 µM, respectively. Cas9 protein (IDT, 1074182) was injected at 23 µM. To generate injection mixes, the tracrRNA and crRNAs were incubated at 95°C for 5 min and 10°C for 10 min. Next, Cas9 protein was added and incubated for 5 min at room temperature. Finally, repair templates and nuclease-free water were added to the mixtures and loaded into pulled injection needles (1B100F-4, World Precision Instruments, Sarasota, FL). Individual injected P0 animals were transferred to new 6 cm NGM plates approximately 18 hr after injections. Individual F1 rollers were then transferred to new 6 cm plates to generate self-progeny. The region surrounding the desired S78C (or C78S) edit was then amplified from F1 rollers using primers oECA1163 and oECA1165. The PCR products were digested using the SfcI restriction enzyme (R0561S, New England Biolabs, Ipswich, MA). Differential band patterns signified successfully edited strains because the N2 S78C, which is encoded by the CAG codon, creates an additional SfcI cut site. Non-Dpy, non-Rol progeny from homozygous edited F1 animals were propagated. If no homozygous edits were obtained, heterozygous F1 progeny were propagated and screened for the presence of the homozygous edits. F1 and F2 progeny were then Sanger sequenced to verify the presence of the proper edited sequence. The phenotypes of allele replacement strains in control and arsenic trioxide conditions were measured using the HTA described above (Figure 1—source data 4). PCA phenotypes for allele-replacement strains were generated the same way as described above for GWA mapping traits and are located in Figure 1—source data 4.
 
-## Rescue with 13-methyltetradecanoic acid
+### Rescue with 13-methyltetradecanoic acid
 
 Strains were grown as described for a standard HTA experiment. In addition to adding arsenic trioixde to experimental wells, we also added a range of C15iso (13-methyltetradecanoic acid, Matreya Catalog # 1605) concentrations to assay rescue of arsenic effects (Figure 4—source data 4).
 
-## Growth conditions for metabolite profiling
+### Growth conditions for metabolite profiling
 
 For L1 larval stage assays, chunks (~1 cm) were taken from starved plates and placed on multiple fresh 10 cm plates. Prior to starvation, animals were washed off of the plates using M9, and embryos were prepared by bleach synchronization. Approximately 40,000 embryos were resuspended in 25 ml of K medium and allowed to hatch overnight at 20°C. L1 larvae were fed 15 mg/ml of HB101 lysate the following morning and allowed to grow at 20°C for 72 hr. We harvested 100,000 embryos from gravid adults by bleaching. These embryos were hatched overnight in 50 ml of K medium in a 125 ml flask. The following day, we added arsenic trioxide to a final concentration of 100 µM and incubated the cultures for 24 hr. After 24 hr, we added HB101 bacterial lysate (2 mg/ml) to each culture. Finally, we transferred the cultures to 50 ml conical tubes, centrifuged the cultures at 3000 RPM for 3 min to separate the pellet and supernatant. The supernatant and pellets from the cultures were frozen at −80°C and prepared for analysis. For young adult stage assays, 45,000 animals per culture were prepared as described above but in S medium, at a density of three animals per microliter, and fed HB101 lysate (5 mg/mL). These cultures were shaken at 200 RPM, 20°C in 50 mL Erlenmeyer flasks for 62 hr. For harvesting, we settled 15 mL of cultures for 15 min at room temperature and then pipetted the top 12 mL of solution off of the culture. The remaining 3 mL of animal pellet was washed with 10 mL of M9, centrifuged at 1000 g for one minute, and then the supernatant removed. This wash was repeated once more with M9 and again with water. The final nematode pellet was snap frozen in liquid nitrogen.
 
-## Nematode metabolite extractions
+### Nematode metabolite extractions
 
 Pellets were lyophilized 18–24 hr using a VirTis BenchTop 4K Freeze Dryer until a chalky consistency was achieved. Dried pellets were transferred to 1.5 mL microfuge tubes and dry pellet weight recorded. Pellets were disrupted in a Spex 1600 MiniG tissue grinder after the addition of three stainless steel grinding balls to each sample. Microfuge tubes were placed in a Cryoblock (Model 1660) cooled in liquid nitrogen, and samples were disrupted at 1100 RPM for two cycles of 30 s. Each sample was individually dragged across a microfuge tube rack eight times, inverted, and flicked five times to prevent clumping. This process was repeated two additional rounds for a total of six disruptions. Pellets were transferred to 4 mL glass vials in 3 mL 100% ethanol. Samples were sonicated for 20 min (on/off pulse cycles of two seconds at power 90 A) using a Qsonica Ultrasonic Processor (Model Q700) with a water bath cup horn adaptor (Model 431C2). Following sonication, glass vials were centrifuged at 2750 RCF for five minutes in an Eppendorf 5702 Centrifuge using rotor F-35-30-17. The resulting supernatant was transferred to a clean 4 mL glass vial and concentrated to dryness in an SC250EXP Speedvac Concentrator coupled to an RVT5105 Refrigerated Vapor Trap (Thermo Scientific). The resulting powder was suspended in 100% ethanol according to its original dry pellet weight: 0.01 mL 100% ethanol per mg of material. The suspension was sonicated for 10 min (pulse cycles of 2 s on and 3 s off at power 90 A) followed by centrifugation at 20,817 RCF in a refrigerated Eppendorf centrifuge 5417R at 4°C. The resulting supernatant was transferred to an HPLC vial containing a Phenomenex insert (cat #AR0-4521-12) and centrifuged at 2750 RCF for five minutes in an Eppendorf 5702 centrifuge. The resulting supernatant was transferred to a clean HPLC vial insert and stored at −20°C or analyzed immediately.
 
-## Mass spectrometric analysis
+### Mass spectrometric analysis
 
 Reversed-phase chromatography was performed using a Dionex Ultimate 3000 Series LC system (HPG-3400 RS High Pressure pump, TCC-3000RS column compartment, WPS-3000TRS autosampler, DAD-3000 Diode Array Detector) controlled by Chromeleon Software (ThermoFisher Scientific) and coupled to an Orbitrap Q-Exactive mass spectrometer controlled by Xcalibur software (ThermoFisher Scientific). Metabolites were separated on a Kinetex EVO C18 column, 150 mm x 2.1 mm, particle size 1.7 µm, maintained at 40°C with a flow rate of 0.5 mL/min. Solvent A: 0.1% ammonium acetate in water; solvent B: acetonitrile (ACN). A/B gradient started at 5% B for 30 s, followed by a linear gradient to 95% B over 13.5 min, then a linear gradient to 100% B over 3 min. 100% B was maintained for 1 min. Column was washed after each run with 5:1 isopropanol:ACN, flow rate of 0.12 mL/min for 5 min, followed by 100% ACN for 2.9 min, a linear gradient to 95:5 water:ACN over 0.1 min, and then 95:5 water:ACN for 2 min with a flow rate of 0.5 mL/min. A heated electrospray ionization source (HESI-II) was used for the ionization with the following mass spectrometer parameters: spray voltage: 3 kV; capillary temperature: 320°C; probe heater temperature: 300°C; sheath gas: 70 AU; auxiliary gas flow: 2 AU; resolution: 240,000 FWHM at m/z 200; AGC target: 5e6; maximum injection time: 300 ms. Each sample was analyzed in negative and positive modes with m/z range 200–800. Fatty acids and most ascarosides were detected as [M-H]- ions in negative ionization mode. Peaks of known abundant ascarosides and fatty acids were used to monitor mass accuracy, chromatographic peak shape, and instrument sensitivity for each sample. Processed metabolite measures can be found in Figure 4—source datas 1–3 and Figure 4—figure supplement 4—source datas 1 (Artyukhin et al., 2018).
 
-## Statistical analyses
+### Statistical analyses
 
 All p-values testing the differences of strain phenotypes in the NIL, allele-replacement, and C15ISO experiments were performed in R using the TukeyHSD function with an ANOVA model with the formula (phenotype ~strain). p-Values of individual pairwise strain comparisons are reported in each figure legend.
 
-## CRISPR-Cas9 gene editing in human cells
+### CRISPR-Cas9 gene editing in human cells
 
 The 293 T cells were sourced from CCLE. Identity authenticated by SNP profiling. Cells were regularly tested for Mycoplasma (~bimonthly). Gene-editing experiments were performed in a single parallel culture experiment using human 293 T cells (ATCC) grown in DMEM with 10% FBS. On day zero, 300,000 cells were seeded per well in a six-well plate format. The following day, two master mixes were prepared: a) LT-1 transfection reagent (Mirus) was diluted 1:10 in Opti-MEM and incubated for 5 min; b) a DNA mix of 500 ng Cas9-sgRNA plasmid (Supplementary file 1–2) with 250 pmol repair template oligonucleotide was diluted in Opti-MEM in a final volume of 100 μL. 250 μL of the lipid mix was added to each of the DNA mixes and incubated at room temperature for 25 min. Following incubation, the full 350 μL volume of DNA and lipid mix was added dropwise to the cells. These six-well plates were then centrifuged at 1000 x g for 30 min. After 6 hr, the media on the cells was replaced. For the next 6 days, cells were expanded and passaged as needed. On day 7, one million cells were taken from each set of edited and unedited cells and placed into separate T75s with either media-only or 5 µM arsenic-containing media. Days 7 to 14, arsenic and media-only conditions were maintained at healthy cell densities. Days 14 to 18, arsenic exposed cell populations were maintained off arsenic to allow the populations to recover prior to sequencing. Media-only conditions were maintained in parallel. On day 18, all arsenic and media-only conditions were pelleted for genomic DNA extraction.
 
-## Analysis of CRISPR-Cas9 editing in human cells
+### Analysis of CRISPR-Cas9 editing in human cells
 
 Genomic DNA was extracted from cell pellets using the QIAGEN (QIAGEN, Hilden, Germany) Midi or Mini Kits based on the size of the cell pellet (51183, 51104) according to the manufacturer’s recommendations. DBT1 loci were first amplified with 17 cycles of PCR using a touchdown protocol and the NEBnext 2x master mix (New England Biolabs M0541). The resulting product served as input to a second PCR, using primers that appended a sample-specific barcode and the necessary adaptors for Illumina sequencing. The resulting DNA was pooled, purified with SPRI beads (A63880, Beckman Coulter, Brea, CA), and sequenced on an Illumina MiSeq with a 300-nucleotide single-end read with an eight nucleotide index read. For each sample, the number of reads exactly matching the wild-type and edited DBT1 sequence were determined (Figure 5—source data 1).
 
-## Preparing human cells for mass spectroscopy
+### Preparing human cells for mass spectroscopy
 
 Mass spectroscopy experiments used human 293 T cells (ATCC) grown in DMEM with 10% FBS. On day zero, 150,000 cells were seeded into 15 cm tissue cultures dishes with 15 mL of either 2.5 µM arsenic or no arsenic media. Each condition had five replicates. On day 3, the no arsenic cells were approaching confluence and required passaging. Arsenic conditions were at ~30% confluence and received a media change. On day seven, both conditions were near confluence, media was removed, and plates were rinsed with ice cold PBS, remaining liquid removed. Plates were frozen at −80°C before processing for mass spectrometric analysis. Cells were scraped off the plates with PBS and pelleted in microfuge tubes. Cell pellets were lyophilized 18–24 hr using a VirTis BenchTop 4K Freeze Dryer and extracted in 100% ethanol using the same sonication program as described for nematode extraction. Following sonication, samples were centrifuged at 20,817 RCF in a refrigerated Eppendorf centrifuge 5417R at 4°C. Clarified supernatant was aliquoted to a new tube and concentrated to dryness in an SC250EXP Speedvac Concentrator coupled to an RVT5105 Refrigerated Vapor Trap (Thermo Scientific). The resulting material was suspended in. 1 mL 100% ethanol and analyzed by LC-MS as described. Metabolite measurements can be found in Figure 5—source data 3.
 
-## Tajima’s D calculation
+### Tajima’s D calculation
 
 We used the VCF corresponding to CeNDR release 20160408 (https://elegansvariation.org/data/release/20160408) to calculate Tajima’s D. Tajima’s D was calculated using the tajimas_d function in the cegwas package using default parameters (window size = 500 SNVs, sliding window distance = 50 SNVs, outgroup = N2) (Figure 2—source data 3). Isolation locations of strains can be found in Figure 2—figure supplement 3—source data 1.

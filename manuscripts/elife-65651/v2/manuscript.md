@@ -17,7 +17,7 @@
 
 ## Abstract
 
-ParABS partition systems, comprising the centromere-like DNA sequence parS , the parS -binding ParB-CTPase, and the nucleoid-binding ParA-ATPase, ensure faithful segregation of bacterial chromosomes and low-copy-number plasmids. F-plasmid partition complexes containing ParB F and parS move by generating and following a local concentration gradient of nucleoid-bound ParA F F . However, the process through which ParB F activates ParA F -ATPase has not been defined. We studied CTP- and parS -modulated ParA F F –ParB F complex assembly, in which DNA-bound ParA F -ATP dimers are activated for ATP hydrolysis by interacting with two ParB F N-terminal domains. CTP or parS enhances the ATPase rate without significantly accelerating ParA F F –ParB F complex assembly. Together, parS and CTP accelerate ParA F F –ParB F assembly without further significant increase in ATPase rate. Magnetic-tweezers experiments showed that CTP promotes multiple ParB F loading onto parS -containing DNA, generating condensed partition complex-like assemblies. We propose that ParB F F in the partition complex adopts a conformation that enhances ParB F –ParB F and ParA F –ParB F interactions promoting efficient partitioning.
+ParABS partition systems, comprising the centromere-like DNA sequence parS, the parS-binding ParB-CTPase, and the nucleoid-binding ParA-ATPase, ensure faithful segregation of bacterial chromosomes and low-copy-number plasmids. F-plasmid partition complexes containing ParBF and parSF move by generating and following a local concentration gradient of nucleoid-bound ParAF. However, the process through which ParBF activates ParAF-ATPase has not been defined. We studied CTP- and parSF-modulated ParAF–ParBF complex assembly, in which DNA-bound ParAF-ATP dimers are activated for ATP hydrolysis by interacting with two ParBF N-terminal domains. CTP or parSF enhances the ATPase rate without significantly accelerating ParAF–ParBF complex assembly. Together, parSF and CTP accelerate ParAF–ParBF assembly without further significant increase in ATPase rate. Magnetic-tweezers experiments showed that CTP promotes multiple ParBF loading onto parSF-containing DNA, generating condensed partition complex-like assemblies. We propose that ParBF in the partition complex adopts a conformation that enhances ParBF–ParBF and ParAF–ParBF interactions promoting efficient partitioning.
 
 ## Introduction
 
@@ -41,29 +41,245 @@ Here, we investigated the ParA–ParB interactions that lead to accelerated ATP 
 
 **Figure 1.:** ParAF-eGFP and ParBF-Alexa647 proteins were flowed over a dense carpet of nsDNA attached to the supported lipid bilayer coated surface of a flow cell. TIRF microscopy permits selective detection of the DNA-carpet bound proteins. Sample solution and wash buffer, as specified for each experiment, were infused via two syringes at different infusion rates from separate inlets into a Y-shaped flow cell. A laminar boundary separates the two solutions downstream of the flow convergence point at the Y-junction. At the midpoint across the flow channel, downstream but close to the flow convergence point where the observations are made, the DNA-carpet area is exposed to the syringe content of the higher infusion rate. When the infusion rates of the two syringes are switched, the laminar boundary moves across the observation area and the solution flowing over the area switches. By switching the infusion rates of the two syringes repeatedly, multiple DNA-carpet-bound protein complex assembly and wash cycles can be recorded.
 
-## The N-terminus of ParBF alone enhances DNA binding activity of ParAF
+![Figure 2.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig2-v2.jpg)
+
+**Figure 2.:** Protein sample solution in the presence of ATPγS (1 mM) was infused into nsDNA-carpeted flow cell at a constant flow to monitor the protein binding to the nsDNA, and the sample solution was switched to a wash buffer containing ATPγS to monitor protein dissociation from nsDNA. (A, B) Binding to, and dissociation from, nsDNA of ParAF-eGFP (1 μM) or ParBF-Alexa647 (2 μM) were measured separately. (C) ParBF1-42-mCherry (10 μM) and ParAF-eGFP (1 μM) preincubated with ATPγS were infused into the nsDNA-carpeted flow cell and (D) washed with buffer containing ATPγS. (E) The washing experiment of (D) was repeated with wash buffer containing ATPγS and ParBF1-42-mCherry (10 μM). For the parameters of the time courses of above experiments and subsequent experiments of the same type in this study, see Table 1. The ParBF:ParAF ratio was calculated from carpet-bound densities of the two proteins measured in parallel, and summarized in Table 1. (F) ParAF-ATPase activity (expressed as turnover rate per ParAF monomer) was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml) and different concentrations of ParBF1-42. Inset shows a plot with expanded abscissa. (G) ParAF-ATPase activity was measured as above in the presence of dimeric ParBF1-42-mCherry-EcoRIE111Q. The parameters of ATPase stimulation curves in these and subsequent figures are summarized in Table 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The elution profile of ParBF1-42-mCherry on a Superose 6 3.2/300 column (GE Healthcare) with a standard curve generated using a protein standards kit (GE Healthcare). The molecular weight of ParBF1-42-mCherry was estimated to be ~35 kDa, close to the predicted molecular weight for a monomer of ~33 kDa.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** ParBF1-42-mCherry exchanged significantly faster than ParAF after photo-bleaching. Data have been normalized to the maximum fluorescence recovery. The data were fitted to a single-exponential curve for ParAF and a double-exponential curve for ParBF, which was not well fit with a single-exponential recovery curve. ParAF recovered with kexcg ~2.0 min−1, and ParBF recovered with kexcg ~15 min−1 for the faster (68%), and ~2.0 min−1 for the slower, recovery components. Multi-exponential recovery kinetics can be explained by the relatively large bleached area causing variable diffusion distance for the unbleached molecules need to travel for full fluorescence recovery of the bleached area (this affects recovery of faster recovering components more significantly). An alternative explanation that assumes a 30% population of stable ParAF-ParBF1-42-mCherry complex is unlikely since the buffer wash experiment (Figure 2D) did not support the presence of such a species.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) ParBF dimer structure in the absence (B) and presence (C) of C-nucleotide. This figure depicts montages of domain structures connected by gray lines representing presumed flexible linkers. The structures of the protein domains are based on the following PDB files: EcoR1 (dark green): 1qc9, mCherry (pale yellow): 2h5q, ParB dimerization domain (gray): 1zx4, ParB DNA-binding domain (dark blue) plus CTPase domain (pale blue) in the absence of C-nucleotide: 4umk, ParB DNA-binding domain plus CTPase domain bound to CDP: 6sdk. The dark red helix symbolizes the ParAF interaction domain, which is expected to form an α-helix upon binding ParAF. The domain arrangement in (B) is loosely based on the proposal by Chen et al., 2015, which is based on the SAXS envelope of ParBHp dimer in the absence of C-nucleotide.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) ParAF-ATPase activation curve of ParBF1-42-mCherry-EcoRIE111Q in the absence of the EcoRI sequence duplex (Figure 2G) is shown for comparison. (B) ParAF-ATPase activity was measured in the presence of EcoRI-digested pBR322 DNA (60 µg/ml), 77 bp duplex DNA fragment containing two EcoRI recognition sequences (5'-GAATTCCGAGTGGGACCGTGGTCCCAGTCTGATTATCAGACCGAGAATTCAAGTTGGGACCGTGGTCCCAAGAGAAT, plus complement; 1.5 µM) and different concentrations of dimeric ParBF1-42-mCherry-EcoRIE111Q.
+
+### The N-terminus of ParBF alone enhances DNA binding activity of ParAF
 
 We first examined if the N-terminal ParAF-activation domain of ParBF (ParBF1-42) alone can induce the ParAF conformational changes necessary for DNA binding in the presence of ATPγS. The activation domain includes Arginine 36, which is critical for activation of ParAF ATPase (Ah-Seng et al., 2009; Leonard et al., 2005), but lacks the CTPase (AA63-155), parSF-binding (AA160-272), and dimerization (AA276-323) domains. For these experiments, we used ParBF1-42 fused to the N-terminus of mCherry (ParBF1-42-mCherry). This protein is a monomer in solution as judged by its elution profile on a gel filtration column (Figure 2—figure supplement 1). ParBF1-42-mCherry (10 μM) and ParAF-eGFP (1 μM) bound the DNA-carpet together in the presence of ATPγS to a density of ~5000 monomers/μm2 maintaining ~1:1 stoichiometry (Figure 2C). When washed with a buffer containing ATPγS, ParBF1-42-mCherry dissociated first, with an apparent dissociation rate constant of ~5.7 min−1, closely followed (within a few seconds) by ParAF-eGFP dissociation (Figure 2D). On the other hand, when the wash buffer contained 10 μM ParBF1-42-mCherry and ATPγS, both proteins dissociated together, significantly slower than ParAF-eGFP bound to the DNA-carpet alone, with an apparent rate constant of ~0.9 min−1, maintaining ~1:1 stoichiometry (Figure 2E). After essentially complete dissociation of ParAF-eGFP from the DNA-carpet, 10 μM ParBF1-42-mCherry present in the wash solution showed no significant binding to the DNA-carpet, indicating low intrinsic affinity of this protein for DNA. FRAP measurements of ParAF-eGFP—ParBF1-42-mCherry bound in steady state to the DNA-carpet in the presence of ATPγS also indicated rapid exchange of ParBF1-42-mCherry (Figure 2—figure supplement 2). Thus, at saturating ParBF1-42-mCherry concentration, a ParAF—ATPγS dimer is bound by two molecules of ParBF1-42-mCherry occupying both sides of the ParAF dimer. The data also indicate that ParAF dimers adopt a state of slowed dissociation from nsDNA when both of the ParBF-interacting faces are occupied by the ParBF N-terminal domain. The nsDNA dissociation rate constants of ParAF—ParBF complexes (including those involving ParBF variants) and ParBF:ParAF stoichiometry reported above and in the following sections are summarized in Table 1.
 
-## ParAF ATPase activation requires binding of two copies of ParBF N-terminal domain to the ParAF dimer
+**Table 1.**
+ Apparent disassembly or exchange rate constants (min−1) and ParBF/ParAF ratio from fits of TIRFM wash and FRAP experiments.The apparent dissociation (or FRAP) rate constants (koff) were obtained for individual time-trajectories by single-exponential curve fitting (except ** where the rate of the faster decay, (68 ± 0.5%) of a double-exponential fit is shown), and the mean and SEM for the set of independent experiments are shown (except * where standard deviation among non-independent repeats within an experiment is shown). (N is the number of separate experiments, with total number of binding/wash cycles for repeated data collection in parenthesis.) ParA:ParB ratios were calculated from the final phase of the individual association time-trajectories (except *** where it was based on the beginning part of the washing phase in the presence of ParBF1-42 R36A), and the mean and SEM for the set of independent experiments are shown in italics. N.D., not done.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>ParAF</th>
+      <th colspan="2">ParAF + ParBF1-42</th>
+      <th colspan="2">ParAF + ParBF1-42 R36A</th>
+      <th colspan="2">FRAP</th>
+      <th colspan="2">ParAF + ParBF</th>
+      <th colspan="2">ParAF + ParBF + CDP</th>
+      <th colspan="2">ParAF + ParBF + CTP</th>
+      <th colspan="2">ParAF + ParBFR121A</th>
+    </tr>
+    <tr>
+      <th colspan="2">Protein Measured</th>
+      <th>ParAF</th>
+      <th>ParAF</th>
+      <th>ParBF1-42</th>
+      <th>ParAF</th>
+      <th>ParBF1-42 R36A</th>
+      <th>ParAF</th>
+      <th>ParBF1-42</th>
+      <th>ParAF</th>
+      <th>ParBF</th>
+      <th>ParAF</th>
+      <th>ParBF</th>
+      <th>ParAF</th>
+      <th>ParBF</th>
+      <th>ParAF</th>
+      <th>ParBFR121A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">- parSF</td>
+      <td>koff</td>
+      <td>6.4± 0.6 N=4 (12)</td>
+      <td>5.2± 0.2 N=2 (9)</td>
+      <td>6.3± 0.3 N=2 (9)</td>
+      <td>29± 2 N=3 (9)</td>
+      <td>52± 4 N=3 (9)</td>
+      <td>2.0± 0.08 N=3 (11)</td>
+      <td>15.3± 2.1** N=3 (12)</td>
+      <td>0.93± 0.07 N=2 (6)</td>
+      <td>0.89± 0.09 N=2 (6)</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+      <td>0.63± 0.04 N=2 (7)</td>
+      <td>0.65± 0.10 N=2(7)</td>
+      <td>0.89± 0.01 N=3 (8)</td>
+      <td>0.78± 0.05 N=3 (8)</td>
+    </tr>
+    <tr>
+      <td>A:B</td>
+      <td></td>
+      <td colspan="2">1 : 1.27 ± 0.06 N=2 (8)</td>
+      <td colspan="2">1 : 0.92 ± 0.02*** N=3 (9)</td>
+      <td colspan="2"></td>
+      <td colspan="2">1 : 1.10 ± 0.13 N=3 (9)</td>
+      <td colspan="2"></td>
+      <td colspan="2">1 : 2.16 ± 0.15 N=3 (10)</td>
+      <td colspan="2">1 : 0.99 ± 0.01 N=3 (8)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">+ parSF</td>
+      <td>koff</td>
+      <td rowspan="2">N.D.</td>
+      <td rowspan="2" colspan="2">N.D.</td>
+      <td rowspan="2" colspan="2">N.D.</td>
+      <td rowspan="2" colspan="2">N.D.</td>
+      <td>0.95± 0.04 N=2 (6)</td>
+      <td>0.82± 0.01 N=2 (6)</td>
+      <td>0.46± 0.02 N=2 (7)</td>
+      <td>0.53± 0.01 N=2 (7)</td>
+      <td>0.60± 0.08 N=2 (5)</td>
+      <td>0.83± 0.12 N=2 (6)</td>
+      <td>0.91± 0.01 N=3 (8)</td>
+      <td>0.78± 0.04 N=3 (8)</td>
+    </tr>
+    <tr>
+      <td>A:B</td>
+      <td colspan="2">1 : 2.17 ± 0.40 N=3 (9)</td>
+      <td colspan="2">1 : 2.53 ± 0.07 N=2 (6)</td>
+      <td colspan="2">1 : 2.16 ± 0.27 N=2(6)</td>
+      <td colspan="2">1 : 1.12 ± 0.01 N=3 (12)</td>
+    </tr>
+    <tr>
+      <td>ParBF or ParBF1-42 R36Ain wash</td>
+      <td>koff</td>
+      <td>N.D.</td>
+      <td>0.84± 0.01* N=1 (3)</td>
+      <td>0.89± 0.02* N=1 (3)</td>
+      <td>1.8± 0.4 N=3 (9)</td>
+      <td>1.8± 0.4 N=3 (9)</td>
+      <td colspan="2">N.D.</td>
+      <td colspan="2">N.D.</td>
+      <td colspan="2">N.D.</td>
+      <td colspan="2">N.D.</td>
+      <td colspan="2">N.D.</td>
+    </tr>
+  </tbody>
+</table>
+
+### ParAF ATPase activation requires binding of two copies of ParBF N-terminal domain to the ParAF dimer
 
 ParBF1-42 stimulated ParAF-ATPase (1 μM) with a clear sigmoidal ParBF1-42 concentration dependence and a half-maximum activation concentration of ~1.2 μM (Figure 2F; Table 2). Thus, monomeric ParBF1-42 appears to activate ParAF-ATPase when it binds on both sides of the DNA-bound ParAF dimers. To test whether the observed sigmoidal concentration dependence is due to the monomeric nature of ParBF1-42, we prepared the N-terminal region of ParBF fused to mCherry and the nuclease activity deficient EcoRIE111Q, ParBF1-42-mCherry-EcoRIE111Q (see Figure 2—figure supplement 3A). This construct, with expected EcoRI dimerization KD < 20 pM (Modrich and Zabel, 1976), efficiently activated ParAF-ATPase at least to a similar maximum rate as ParBF1-42, but with a Khalf of ~0.15 μM, ~eight fold lower than ParBF1-42, and displayed no noticeable sigmoidal concentration dependence (Figure 2G). Potential binding of the inactive EcoRI domain to DNA did not appear to influence the ATPase activation properties of this construct; addition of EcoRI-binding DNA fragment in the reaction did not impact the ATPase activation (Figure 2—figure supplement 4). Based on these results, we conclude that both ParBF-binding faces of a ParAF dimer must be occupied by ParBF N-termini for stimulation of its ATPase activity.
 
-## ParBF1-42 R36A forms a rapidly disassembling complex with ParAF on the DNA carpet
+**Table 2.**
+ ATPase fit parameters.ATPase measurements were performed with ParAF (1 μM) and different mutants of ParBF, 60 μg/ml EcoRI-digested pBR322 DNA plus Scram- or parSF-DNA fragment and CTP or CDP, as indicated in the column headings. Assays were repeated ‘N’ times, each data set of an assay was fit after subtraction of background measured without ParAF to a modified Hill equation: v − v0 = (vmax [B]n) / (KAn + [B]n), and the mean and standard error of the mean (SEM) of the fit parameters for the N measurements are shown. For [B] on the x-axis, total ParBF concentration was used instead of free ParBF concentration due to technical issues in estimating the free ParBF concentration and the meanings of KA and the cooperativity factor (n) here differ from those in the standard adaptation of the Hill equation. vmax is the maximum stimulated ParAF ATPase turnover rate, KA is the apparent total concentration of ParBF necessary for half maximum stimulation, and n is the apparent cooperativity coefficient.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">ParBF</th>
+      <th colspan="2">ParBF CTP</th>
+      <th>ParBF CDP</th>
+      <th colspan="2">ParBFR121A</th>
+      <th>ParBF1-42</th>
+      <th>ParBF1-42 R36A</th>
+      <th colspan="2">ParBF1-42-mCherry-EcoRIE111Q</th>
+    </tr>
+    <tr>
+      <th>DNA cofactor Number of exp.</th>
+      <th>Scram N = 6</th>
+      <th>parSF N = 6</th>
+      <th>Scram N = 3</th>
+      <th>parSF N = 3</th>
+      <th>parSF N = 3</th>
+      <th>Scram N = 3</th>
+      <th>parSF N = 3</th>
+      <th>N = 6</th>
+      <th>N = 3</th>
+      <th>Scram N = 3</th>
+      <th>EcoRI DNA N = 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vmax (hr−1)</td>
+      <td>54 ± 5</td>
+      <td>79 ± 2</td>
+      <td>79 ± 8</td>
+      <td>78 ± 8</td>
+      <td>87 ± 5</td>
+      <td>60 ± 5</td>
+      <td>62 ± 5</td>
+      <td>83 ± 3</td>
+      <td>38 ± 2</td>
+      <td>131 ± 13</td>
+      <td>125 ± 9</td>
+    </tr>
+    <tr>
+      <td>KA (µM)</td>
+      <td>0.53 ± 0.09</td>
+      <td>0.59 ± 0.03</td>
+      <td>0.41 ± 0.05</td>
+      <td>0.24 ± 0.02</td>
+      <td>0.34 ± 0.04</td>
+      <td>0.86 ± 0.1</td>
+      <td>1.1 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+      <td>108 ± 13</td>
+      <td>0.16 ± 0.04</td>
+      <td>0.16 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Cooperativity coefficient (n)</td>
+      <td>1.2 ± 0.2</td>
+      <td>1.4 ± 0.1</td>
+      <td>3.3 ± 1.0</td>
+      <td>3.6 ± 0.2</td>
+      <td>1.1 ± 0.1</td>
+      <td>2.5 ± 0.6</td>
+      <td>1.6 ± 0.3</td>
+      <td>2.5 ± 0.3</td>
+      <td>1.5 ± 0.2</td>
+      <td>1.4 ± 0.3</td>
+      <td>1.4 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### ParBF1-42 R36A forms a rapidly disassembling complex with ParAF on the DNA carpet
 
 An R36A mutation was reported to significantly compromise ParBF’s ability to activate ParAF’s ATPase (Ah-Seng et al., 2009). To test whether this mutation affected ParBF’s ability to form a complex with ParAF we repeated the experiments shown in Figure 2C–E using ParBF1-42 R36A- mCherry. ParBF1-42R36A- mCherry and ParAF-eGFP bound with an approximately 1:1 stoichiometry, similar to ParBF1-42- mCherry but reached a steady-state density on the DNA-carpet of less than 10% of the density observed with ParBF1-42- mCherry (Figure 3A). When washed with buffer containing ATPγS, ParBF1-42 R36A- mCherry dissociated first followed by ParAF, similar to the results obtained with ParBF1-42- mCherry but ParBF1-42 R36A-mCherry dissociated ~10-fold faster, followed by dissociation of ParAF-eGFP within a few seconds (Figure 3B). When the wash buffer also contained 10 μM ParBF1-42 R36A-mCherry the two proteins dissociated in parallel maintaining ~1:1 stoichiometry (Figure 3C). Together these observations indicate that ParBFR36A interacts with ParAF, but with a much faster dissociation rate constant compared to wild-type ParBF. ParBF1-42 R36A could activate ParAF-ATPase with an increased half-saturation concentration of 108 µM, approximately 100-fold higher than ParBF1-42 (Figure 3D). These results explain the puzzling report that while the R36A mutation severely compromised activation of ParAF-ATPase by ParBF, it did not impede oscillation of ParAF on the nucleoid, and only mildly reduced plasmid stability (Ah-Seng et al., 2013). At the interface between the ParAF-bound nucleoid and partition complexes containing many ParBF dimers, the local ParBF concentration is expected to be sufficiently high for this mutant protein to activate ParAF-ATPase to effectively generate a ParAF depletion zone and motive force driving the partition complex as indicated by the repeated oscillation of the nucleoid-bound ParAF distribution.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig3-v2.jpg)
 
-**Figure 3.:** F1-42 R36A-mCherry dissociates faster from nsDNA-carpet-bound ParAF-ATPγS dimer, and ParAF-ATPase activation requires higher ParBF1-42 R36A concentration.(A) ParBF1-42 R36A-mCherry (10 μM) and ParAF-eGFP (1 μM) preincubated with ATPγS were infused into the nsDNA-carpeted flow cell and then (B) washed with buffer containing ATPγS. (C) The washing experiment of B was repeated with buffer containing ATPγS and ParBF1-42 R36A-mCherry (10 μM). (D) ParAF-ATPase activity was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml) as a function of ParBF1-42 R36A concentration. See Figure 2 legend and Tables 1 and 2 for additional details.
+**Figure 3.:** (A) ParBF1-42 R36A-mCherry (10 μM) and ParAF-eGFP (1 μM) preincubated with ATPγS were infused into the nsDNA-carpeted flow cell and then (B) washed with buffer containing ATPγS. (C) The washing experiment of B was repeated with buffer containing ATPγS and ParBF1-42 R36A-mCherry (10 μM). (D) ParAF-ATPase activity was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml) as a function of ParBF1-42 R36A concentration. See Figure 2 legend and Tables 1 and 2 for additional details.
 
-## ParAF and ParBF bind to and dissociate from nsDNA together in the presence of ATPγS with ~1:1 stoichiometry
+### ParAF and ParBF bind to and dissociate from nsDNA together in the presence of ATPγS with ~1:1 stoichiometry
 
 When ParAF-eGFP and full-length ParBF-Alexa647 were incubated together at 1 µM and 2 µM, respectively, in the presence of ATPγS, they bound to the DNA-carpet in parallel maintaining ~1:1 stoichiometry up to a density of ~5000 monomers/μm2 (Figure 4A). They also dissociated from the DNA-carpet in parallel, maintaining ~1:1 stoichiometry, when washed with a buffer containing ATPγS, with an apparent dissociation rate constant of approximately ~1 min−1 (Figure 4B). These results show that ParAF and ParBF form a hetero-tetramer containing two monomers each of ParAF and ParBF (A2B2), or larger oligomers composed of the hetero-tetramers, that binds as a unit on nsDNA in the presence of ATPγS.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig4-v2.jpg)
+
+**Figure 4.:** (A) ParAF-eGFP (1 μM) and ParBF-Alexa647 (2 μM) preincubated with ATPγS were infused into the nsDNA-carpeted flow cell and then (B) washed with buffer containing ATPγS. (C, D) As (A) and (B) except the sample included the 24 bp parSF DNA fragment (1.1 μM). (E) ParAF-ATPase activity was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml), different concentrations of ParBF and either a parSF-DNA fragment or a DNA fragment with a scrambled sequence (1.1-fold higher concentrations than the ParBF dimers). See Figure 2 legend and Tables 1 and 2 for additional details.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** In order to estimate the KD for dimerization of ParBF two batches of protein were separately labeled with Alexa 488 or Alexa 594 then mixed at equal concentrations, the sum of which are shown on the x-axis. The FRET efficiency was measured using a fluorescence plate reader (Clariostar Plus, BMG Labtech). Assuming the observed FRET efficiency linearly correlates with the fraction of the protein in the dimer state, the apparent KD for dimerization of ParBF was estimated to be ~18.5 nM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** ParAF (1 μM) and ParBF R121A (2 μM) were preincubated in the presence of ATPγS either without (A) or together with 24 bp parSF DNA fragment (1.1 μM, C), infused into to the DNA-carpeted flow cell and washed with buffer containing ATPγS (B, D). (E) ParAF ATPase activation by ParBFR121A was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml) and different concentrations of ParBFR121A either in the absence (black line) or presence (red line) of parSF (at 10% excess of the dimer concentrations of ParBFR121A). (F) The binding of ParBF or ParBFR121A to 0.1 nM P32-labeled 24 bp parSF DNA (left) or to 0.1 nM P32-labeled 24 bp scrambled DNA (right) was measured by EMSA. A 4–12% gradient acrylamide gel was run in 1× TBE + 5 mM Mg2Ac at 4°C for 1 hr, 150 V. The gels were quantified (bottom) to estimate the parS binding KD of ParBF and ParBFR121A.
+
 Full-length ParBF, which forms dimer with apparent KD of ~ 19 nM (Figure 4—figure supplement 1), activated ParAF-ATPase in the presence of nsDNA to ~50 hr−1 without significant sigmoidal concentration dependence (Figure 4E). Based on the results of experiments with monomeric ParBF1-42 proteins described earlier, we conclude that a single dimer of full-length ParBF can straddle an nsDNA-bound ParAF dimer, permitting the two N-termini to interact with both of the ParBF-binding faces of the ParAF dimer to activate the ATPase.
 
-## In the presence of parSF, ParBF forms a 2:1 complex with ParAF
+### In the presence of parSF, ParBF forms a 2:1 complex with ParAF
 
 We next asked if ParBF bound to parSF interacts differently with ParAF on the DNA-carpet. We preincubated ParAF-eGFP, ParBF-Alexa647, ATPγS and a 24 bp duplex DNA fragment containing a single parSF consensus sequence, at a slight molar excess over ParBF dimer, for 10 min at room temperature. At the concentrations used, most of the ParBF dimers are expected to be bound to parSF. When infused into the DNA-carpeted flow cell, ParAF-eGFP and ParBF-Alexa647 bound to and dissociated from the carpet with a stoichiometry of ~1:2 (Figure 4C,D), in sharp contrast to the ~1:1 stoichiometry without parSF DNA. The kinetic parameters of the complex assembly and disassembly were not significantly affected. These results demonstrate that ParAF and ParBF form a complex of one ParAF dimer and two ParBF dimers (A2B4) in the presence of parSF.
 
@@ -71,13 +287,25 @@ Does the change in protein stoichiometry caused by parSF translate to different 
 
 We note that ParBFR121A, harboring a mutation in the conserved Box II region of the CTPase domain, neither exhibited a change in the ParBF/ParAF complex stoichiometry, nor a change in the ParBF-stimulated ATP turnover, in response to parSF (Figure 4—figure supplement 2), suggesting that the effects of parSF binding described above are mediated through conformational changes in the CTPase domain (see below for further discussion).
 
-## CTP alters the complex formed between ParAF and ParBF in a manner similar to parSF and accelerates complex formation in the presence of parSF
+### CTP alters the complex formed between ParAF and ParBF in a manner similar to parSF and accelerates complex formation in the presence of parSF
 
 ParB proteins have recently been reported to have CTPase activity that is coupled with changes in their DNA binding properties and refolding of the CTPase domains into a globular dimeric structure in the presence of CTP (Soh et al., 2019; Osorio-Valeriano et al., 2019) from the more extended and poly-dispersed structure in the absence of nucleotide (Chen et al., 2015). We therefore decided to test whether the addition of CTP influences the ParAF–ParBF complex formed on the DNA-carpet in the presence of ATPγS. When ParAF-eGFP and ParBF-Alexa647 were incubated together in the presence of ATPγS (1 mM) and CTP (2 mM), they bound to and dissociated from the nsDNA-carpet with a stoichiometry of ~1:2 (Figure 5A, Figure 5—figure supplement 1A). The assembly kinetics of the carpet-bound complex was roughly the same as in the absence of CTP; however, the apparent dissociation rate constant during buffer wash was slightly but reproducibly slower by a factor of roughly two at ~0.6 min−1. When parSF was included together with CTP, the rate of A2B4 complex assembly on the DNA-carpet increased several-fold, the binding density of the complex on the DNA-carpet reached a correspondingly higher level, and the two proteins dissociated from the DNA-carpet maintaining a ~1:2 stoichiometry with apparent dissociation rate constant similar to that in the absence of parSF (Figure 5B, Figure 5—figure supplement 1B). When CTP was replaced by CDP in the presence of parSF, although the ParBF/ParAF ratio remained above 2, unlike in the presence of CTP, the complex assembly rate did not increase (Figure 5C, Figure 5—figure supplement 1C), thus behaving similarly to the reaction in the presence of parSF alone.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig5-v2.jpg)
+
+**Figure 5.:** (A) ParAF-eGFP (1 μM) and ParBF-Alexa647 (2 μM) preincubated with ATPγS and CTP (2 mM) were infused into the nsDNA-carpeted flow cell and then washed with buffer containing ATPγS and CTP. (B) As in (A), except a 24 bp parSF fragment (1.1 μM) was added to the sample mixture. (C) As in (B), except CTP was replaced by CDP. For binding curves, see Figure 5—figure supplement 1A–C. (D) ParAF (1 μM), ParBF-Alexa647 (2 μM) and Alexa488-labeled 24 bp parSF fragment (1.1 μM) preincubated with ATPγS or ATPγS plus CTP (2 mM) were infused into the nsDNA-carpeted flow cell and after 240 s, the ratio of the carpet-bound parSF fragment and ParBF dimer was measured. (E) ParAF-ATPase activity was measured in the presence of EcoRI-digested pBR322 DNA (60 μg/ml), different concentrations of ParBF and either no C-nucleotide or 2 mM CTP. Inset shows data in the presence of CTP with expanded abscissa. (F) As in (E) except the reactions also contained 24 bp parSF fragment (1.1-fold higher concentrations than ParBF dimers). Inset shows data in the presence of parSF and CTP with expanded abscissa. See Figure 2 legend and Tables 1 and 2 for additional details.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) ParAF-eGFP (1 μM) and ParBF-Alexa647 (2 μM) preincubated in the presence of ATPγS and 2 mM CTP were infused into the nsDNA-carpeted flow cell. (B) ParAF-eGFP (1 μM) and ParBF-Alexa647 (2 μM) preincubated in the presence of 24 bp parSF DNA fragment (1.1 μM), ATPγS and 2 mM CTP were infused into the nsDNA-carpeted flow cell. (C) ParAF-eGFP (1 μM) and ParBF-Alexa647 (2 μM) preincubated in the presence of 24 bp parSF DNA fragment (1.1 μM), ATPγS and 2 mM CDP were infused into the nsDNA-carpeted flow cell.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) NTPase activities of ParBF (0.84 μM) in the presence of 100 μM ribonucleoside triphosphates were measured in the CTPase buffer (Materials and Methods). (B) The CTP hydrolysis initial rate by ParBF (0.84 μM) was measured at different CTP concentrations to estimate the apparent CTP KM with or without 100 nM parSF (24 bp duplex with one copy of ParBF binding consensus sequence). (C) parSF concentration dependence of the CTPase activity of ParBF (0.84 μM, 100 μM CTP). Pronounced sigmoidal parSF concentration dependency of the CTPase stimulation was observed. This is in contrast to the hyperbolic parSBsu concentration dependency reported for ParBBsu (Soh et al., 2019). The mechanistic reason for this concentration dependency is currently under investigation. (D) CDP used in this study contained a compound that can be hydrolyzed by ParBF to release Pi. Time course of Pi production from 1 mM CDP in the presence of 0.84 μM ParBF is compared to reactions containing 5–150 μM CTP.
+
 Next, we asked if the parSF DNA fragment was incorporated in the A2B4 complexes assembled in its presence. The experiments in the presence of parSF were repeated in the presence or absence of CTP with ParAF (1 μM), ParBF-Alexa647 (2 μM) and Alexa488-parSF (1.1 μM), and the nsDNA-carpet-bound ratio of parSF and ParBF after 240 s sample infusion was measured (Figure 5D). The observed parSF/(ParBF)2 ratio in the absence of CTP was ~0.2, while in the presence of CTP, the ratio was only ~0.04. Thus, whereas the assembly of the A2B4 complex involving CTP-ParBF was accelerated by parSF, a very small fraction of the resulting complex contained the parSF-DNA fragment, indicating that parSF plays a catalytic role in the activation of CTP-ParBF and accelerated assembly of the A2B4 complex. This parallels the observation that a much lower concentration of parSF fully activated the CTPase activity of ParBF (Figure 5—figure supplement 2C) as has also been shown for ParBBsu (Soh et al., 2019).
 
-## ParBF activates ParAF-ATPase to the full extent without parSF in the presence of CTP
+### ParBF activates ParAF-ATPase to the full extent without parSF in the presence of CTP
 
 The maximum ParBF activation of ParAF-ATPase in the presence of CTP, with or without parSF, was comparable to that of parSF-bound ParBF in the absence of CTP (Figure 5E,F). The half-saturation concentration of ParBF in the presence of parSF and CTP was significantly lower than in the absence of CTP (~0.24 μM vs ~0.6 μM). Combined with the observation of faster assembly of the complex on the DNA-carpet, a likely possibility is that in the presence of CTP and parSF, the ParBF dimer adopts a unique state that interacts with ParAF dimers with a higher association rate constant. We note that the ParAF-ATPase assays in this study measured radioactive γ-phosphate release from γ-32P-ATP, avoiding potential technical complications associated with ATPase measurements in the presence of CTP.
 
@@ -85,9 +313,25 @@ We next measured the ParBF-CTPase activity to estimate the apparent KM and kcat 
 
 During these experiments, which were prompted by a reviewer’s comment, we also attempted to characterize the interaction between CDP and ParBF, but discovered that the CDP used here contained ~2% contamination of a compound that released Pi upon incubation with ParBF (Figure 5—figure supplement 2D). The results shown in Figure 5C and Figure 5F suggest this contamination did not strongly influence the reactions involving CDP, considering that they generally paralleled the results obtained in the absence of C-nucleotides with only minor deviations. However, this contamination prevented us from accurately determining the affinity of ParBF for CDP.
 
-## In the presence of CTP, ParBF condenses DNA carrying parSF in cis
+### In the presence of CTP, ParBF condenses DNA carrying parSF in cis
 
 The recently discovered CTP and parS-dependent ParB conformational change appears to promote ParB parS-DNA binding and spreading (Soh et al., 2019), impacting ParB-DNA partition complex assembly. In vivo, spreading ParB forms condensed foci around parS sites indicating that parS-driven ParB spreading likely occurs in cis. Nonetheless, the possibility that parS can trigger ParB spreading in trans has not been tested in vitro. Previous studies reported DNA condensation by B. subtilis ParB via ParB–ParB interactions, but these studies were conducted in the absence of CTP and did not observe a strong effect of parS in cis (Graham et al., 2014; Song et al., 2017; Taylor et al., 2015). To see if parSF can act in trans and to characterize how parSF and CTP influence ParBF–DNA interactions in vitro, we conducted single-molecule DNA pulling experiments employing magnetic tweezers. ParBF at various concentrations was infused into a flow cell containing ~5 kbp DNA tethers that anchored magnetic beads to the coverslip surface (Figure 6A). The tethers contained either 12 parSF consensus sequence repeats at their midpoints (parSF-DNA), or no parSF sequence (nsDNA). The protein sample was infused while the DNA tethers were stretched at 5 pN force, preventing DNA condensation. To allow DNA condensation by bound ParBF molecules, the force was dropped to 0.05 pN and the tether extension was monitored for 30 s. To assess the stability of DNA condensation by ParBF dimers, tether extension was monitored after increasing the force to 5 pN. In the absence of CTP, we only observed condensation at very high concentrations of ParBF (>5 µM) and did not see a significant difference between parSF-containing and non-specific tethers (Figure 6B inset). However, in the presence of CTP, 50 nM ParBF robustly condensed parSF-containing DNA tethers (Figure 6B purple). These condensed protein-DNA complexes resisted 5 pN extension force, requiring many minutes at 5 pN tension to de-condense (Figure 6—figure supplement 1A). The slow de-condensation took place through a series of abrupt steps, which we interpret as stepwise opening of large DNA loops held by multiple ParBF–ParBF interactions (Figure 6—figure supplement 1A). Condensation was comparable for DNA molecules that were topologically constrained, i.e., could be supercoiled, or unconstrained (nicked), suggesting that condensation is not a consequence of topological changes in the DNA caused by ParBF translocating away from parSF sites (Figure 6—figure supplement 2). We observed some condensation events with parSF containing tethers in the presence of CDP, but these events were rarer, required higher ParBF concentrations, and were almost completely de-condensed within 5 s of raising the force to 5 pN, in stark contrast to condensation in the presence of CTP (Figure 6B, light blue, Figure 6—figure supplement 1B). Since this experiment was also carried out using CDP that contained a compound hydrolysable by ParBF, contribution of this compound to the limited tether condensation cannot be ruled out. In contrast, ParBF was unable to substantially condense DNA tethers lacking parSF sequences, even in the presence of CTP, and rare condensation events were quickly reversed by the application of 5 pN force (Figure 6B, dark blue). Addition of parSF-containing DNA fragments together with ParBF and CTP did not rescue the inability to condense tethers lacking parSF, indicating that parSF cannot act in trans to promote ParB spreading and condensation of DNA molecules (Figure 6—figure supplement 3). Together these results indicate that parSF mediates loading of multiple CTP-bound ParBF dimers in cis onto the DNA-tethers and these ParBF dimers are capable of forming DNA looping bridges likely via inter-dimer interactions to form a condensed partition complex-like structure. As expected, ParBFR121A bearing a mutation at the critical Box II residue in the CTPase domain was unable to condense DNA to a significant degree even with parSF containing tethers (Figure 6B, red). We propose that stable DNA condensation by ParBF is mediated by CTPase domain dimerization and requires both parSF and CTP at moderate ParBF concentrations (~100 nM) (Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic showing the magnetic tweezers DNA condensation assay. One end of a 5 kb DNA molecule is attached to the surface of a flow-cell and the free end is attached to a 1 µm magnetic bead (brown sphere). The DNA extension (Ex) was measured by tracking the bead height above the cover glass surface at two different forces; 0.05 pN (low force, lf), and 5 pN (high force, hf). The extent of DNA condensation was estimated from the difference in DNA extension with and without ParBF. (B) Changes in extension at low force (dExlf = Exlf– Ex0lf), left panel, and at high force (dExhf = Exhf− Ex0hf), right panel, for seven different conditions plotted as a function of ParBF concentration. The extension values were the averages of the last 5 s of the extension at low force (circles) and the first 5 s of the extension at high force (triangles). Error bars represent standard error of means (SEM). Different conditions are color coded as follows. Purple: parSF-DNA tether with WT ParBF and CTP; light blue: parSF-DNA tether with WT ParBF and CDP; dark blue: nsDNA tether with WT ParBF and CTP; red: parSF-DNA tether with ParBFR121A and CTP; orange: nsDNA tether with ParBFR121A and CTP. For comparison with condensation in the presence of CTP, dEx data of parSF-DNA tether (purple) and nsDNA tether (blue) with WT ParBF without CTP are displayed (inset, open circles for 0.05 pN, triangle for 5 pN respectively). (C) The condensation probabilities at 0.1 µM ParBF for five different conditions at 0.05 pN and 5 pN. The condensation probability was calculated by dividing the number of DNA tethers that exhibited DNA condensation by the total number of DNA tethers for each measurement condition. Except for parSF-DNA with WT ParBF and CTP, all conditions show either minimal or negligible condensation probabilities. The different conditions are color-coded as indicated in (B), and the diagonal stripes indicates probabilities at 5 pN. Error bars represent standard error of means (SEM).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The extension of 6 DNA tethers containing parSF sequences (colored solid lines, left y-axis) were simultaneously measured at a force (green solid line, right y-axis) of 0.05 pN after the introduction of ParBF (0.1 µM) and CTP (1 mM). The tethers remained condensed for at least 85 s after the force was increased to 5 pN. Most increases in extension took place in discrete steps. (B) The same measurement as in (A) except that the DNA was condensed with 10-fold more ParBF (1 µM) with CDP (1 mM). DNA condensation in the presence of CDP was quickly reversed under high force (5 pN). After the force was increased to 5 pN (time 0), the extension of all five DNA tethers increased to their full decondensed length (dashed line) within ~5 s.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The DNA tethers used for the condensation experiments were a mixture of torsionally constrained and unconstrained. Prior to condensation measurements, the magnetic beads attached to the end of the DNA molecules were rotated by rotating the external magnets in the magnetic tweezer instrument. Rotationally constrained DNA molecules are supercoiled by rotating the magnet, resulting in the formation of a plectoneme and a decrease in the extension of the DNA molecule. Torsionally unconstrained (typically nicked) DNA molecules are insensitive to the bead rotation and remain at the same extension (top). An example of this in situ discrimination between torsionally constrained and unconstrained DNA tethers is shown in the graph displaying the extension of six DNA molecules (bottom). The DNA extension decreased for two of the six DNA molecules after imposing −10 turns, indicating that these two molecules are rotationally constrained (left panel bottom). (B) Condensation, as measured by the change in extension reduction as a function of ParBF concentration, is comparable for the topologically constrained (black squares) and unconstrained (gray squares) DNA molecules.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** DNA tethers that did not contain a parSF site were not significantly condensed by the addition of parSF DNA fragment in trans with ParBF in the presence of CTP. The decreases in extension at 0.05 pN (blue circle, left panel) and 5 pN (blue triangle, right panel) are plotted as a function of the concentration of ParB and parSF, which were added together at stoichiometric concentrations.
 
 ## Discussion
 
@@ -95,7 +339,7 @@ In this report, we characterized facets of the ParAF–ParBF interaction leading
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/65651/elife-65651-fig7-v2.jpg)
 
-**Figure 7.:** F and ParBF.(A) Pictograms of nsDNA, parS-DNA, ParAFF monomer/dimer and ParBF domains with binding ligand designations. The CTPase domains of a ParBF dimer fold forming a single globular domain on binding CTP, bringing the two ParAF-binding domains into close proximity. (B) ParAF-binding domain, ParBF1-42 alone can convert ParAF monomers to DNA-binding-competent dimers in the presence of ATPγS by forming an A2B1-422 complex (top). ParBF dimers in the absence of CTP convert ParAF monomers to DNA-binding-competent dimers in the presence of ATPγS by straddling a ParAF dimer to form an A2B2 complex (middle). In the presence of CTP, the close proximity of the ParAF-binding domains of the ParBF dimer prevents A2B2 complex formation and instead an A2B4 complex assembles on nsDNA in the presence of ATPγS (bottom). (C) In the presence of parS and CTP, ParBFF dimers load on to the parS-DNA and spread to adjacent DNA regions while adopting a state that enables faster assembly of AF2B4 complexes. Considering the requirements for efficient partition complex motion by diffusion-ratchet mechanism based on the chemophoretic principle of force generation, we propose a significant energy barrier that slows the formation of the ATP hydrolysis-competent A2B4 complex. This energy barrier partially decouples ParAF–ParBF association–dissociation dynamics from ATP hydrolysis, which triggers ParAF dissociation from the nucleoid.
+**Figure 7.:** (A) Pictograms of nsDNA, parSF-DNA, ParAF monomer/dimer and ParBF domains with binding ligand designations. The CTPase domains of a ParBF dimer fold forming a single globular domain on binding CTP, bringing the two ParAF-binding domains into close proximity. (B) ParAF-binding domain, ParBF1-42 alone can convert ParAF monomers to DNA-binding-competent dimers in the presence of ATPγS by forming an A2B1-422 complex (top). ParBF dimers in the absence of CTP convert ParAF monomers to DNA-binding-competent dimers in the presence of ATPγS by straddling a ParAF dimer to form an A2B2 complex (middle). In the presence of CTP, the close proximity of the ParAF-binding domains of the ParBF dimer prevents A2B2 complex formation and instead an A2B4 complex assembles on nsDNA in the presence of ATPγS (bottom). (C) In the presence of parSF and CTP, ParBF dimers load on to the parSF-DNA and spread to adjacent DNA regions while adopting a state that enables faster assembly of A2B4 complexes. Considering the requirements for efficient partition complex motion by diffusion-ratchet mechanism based on the chemophoretic principle of force generation, we propose a significant energy barrier that slows the formation of the ATP hydrolysis-competent A2B4 complex. This energy barrier partially decouples ParAF–ParBF association–dissociation dynamics from ATP hydrolysis, which triggers ParAF dissociation from the nucleoid.
 
 The clearest indication that both ParBF-interacting faces of the nsDNA-bound ParAF dimer must be occupied by the N-terminal domain of ParBF for ATPase activation came from experiments using artificial ParBF constructs. We showed that monomeric ParBF1-42 stimulates ParAF ATPase with a clear sigmoidal concentration dependence, indicating that one molecule of ParBF1-42 binding to one side of a ParAF dimer cannot fully activate the ParAF ATPase (Figure 2F). When ATP hydrolysis was blocked by using non-hydrolysable ATPγS, ParBF1-42-mCherry formed an equimolar complex with ParAF (Figure 2C–E). Thus, the ParAF forms a complex with ParBF1-42-mCherry bound at both ParBF-interacting faces of the ParAF dimer prior to ATP hydrolysis (Figure 7B; top). Consistently, an artificially dimeric ParBF1-42 construct, ParBF1-42-mCherry-EcoRIE111Q, efficiently activated ParAF-ATPase with hyperbolic concentration dependence (Figure 2G).
 
@@ -119,15 +363,389 @@ This study demonstrates how parSF, along with CTP, has wide-reaching roles in th
 
 ## Materials and methods
 
-## Plasmids and constructs for protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 DE3 AI</td>
+      <td>Invitrogen</td>
+      <td>C607003</td>
+      <td>Protein expression strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11a</td>
+      <td>EMD Millipore</td>
+      <td>9436</td>
+      <td>Protein expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-parSF</td>
+      <td>This work</td>
+      <td></td>
+      <td>Tether DNA PCR template</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a</td>
+      <td>EMD Millipore</td>
+      <td>69865</td>
+      <td>Tether DNA PCR template</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBlueScript II KS(+)</td>
+      <td>Agilent</td>
+      <td>212207</td>
+      <td>Tether DNA PCR template</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX7</td>
+      <td>Vecchiarelli et al., 2013</td>
+      <td></td>
+      <td>ParAFoverexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX2</td>
+      <td>Vecchiarelli et al., 2013</td>
+      <td></td>
+      <td>ParAF-eGFP overexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX8</td>
+      <td>Vecchiarelli et al., 2013</td>
+      <td></td>
+      <td>ParBFoverexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11a-ParBFR121A</td>
+      <td>This work</td>
+      <td></td>
+      <td>ParBFR121overexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11a-ParBF1-42-mCherry</td>
+      <td>This work</td>
+      <td></td>
+      <td>ParBF1-42-mCherry overexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11a-ParBF1-42 R36A-mCherry</td>
+      <td>This work</td>
+      <td></td>
+      <td>ParBF1-42 R36A-mCherry overexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11a-ParBF1-42-mCherry-EcoRIE111Q</td>
+      <td>This work</td>
+      <td></td>
+      <td>ParBF1-42-mCherry-EcoRIE111Qoverexpression plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>parSF DNA</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-AGTCTGGGACCACGGTCCCACTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>parSF DNA Alexa 488</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-Alexa488-(HNS)-AGTCTGGGACCACGGTCCCACTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>parSF DNA complement strand</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-CGAGTGGGACCGTGGTCCCAGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scrambled seq DNA</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-AGTCTGCAGCTACTATACCACTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scrambled seq DNA complement strand</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-CGAGTGGTATAGTAGCTGCAGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EcoR1 sequence + strand</td>
+      <td>This work</td>
+      <td></td>
+      <td>5'-GAATTCCGAGTGGGACCGTGGTCCCAGTCTGATTATCAGACCGAGAATTCAAGTTGGGACCGTGGTCCCAAGAGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EcoR1 sequence - strand</td>
+      <td>This work</td>
+      <td></td>
+      <td>5’-ATTCTCTTGGGACCACGGTCCCAACTTGAATTCTCGGTCTGATAATCAGACTGGGACCACGGTCCCACTCGGAATTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA primer1</td>
+      <td>Seol and Neuman, 2011</td>
+      <td></td>
+      <td>5'- GCTGGGTCTCGGTTGTTCCCTTTAGTGAGGGTTAATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA primer2</td>
+      <td>Seol and Neuman, 2011</td>
+      <td></td>
+      <td>5'- GCTGGGTCTCGTGGTTTCCCTTTAGTGAGGGTTAATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA handle primer1</td>
+      <td>Seol and Neuman, 2011</td>
+      <td></td>
+      <td>5'- GGACCTGCTTTCGTTGTGGCGTAATCATGGTCATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA handle primer2</td>
+      <td>Seol and Neuman, 2011</td>
+      <td></td>
+      <td>5'- GGGTCTCGTGGTTTATAGTCCTGTCGGGTTTC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ParBF1-42</td>
+      <td>This work</td>
+      <td></td>
+      <td>MKRAPVIPKHTLNTQPVEDTSLSTPAAPMVDSLIARVGVMAR</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ParBF1-42 R36A</td>
+      <td>This work</td>
+      <td></td>
+      <td>MKRAPVIPKHTLNTQPVEDTSLSTPAAPMVDSLIAAVGVMAR</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Millipore-Sigma</td>
+      <td>A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Millipore-Sigma</td>
+      <td>G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UTP</td>
+      <td>Thermo Scientific</td>
+      <td>J23160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTP</td>
+      <td>Millipore-Sigma</td>
+      <td>C1506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CDP</td>
+      <td>Millipore-Sigma</td>
+      <td>C9755</td>
+      <td>2–3% possible contamination of ParBF-CTPase substrate detected</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>γ32P-ATP</td>
+      <td>Perkin-Elmer</td>
+      <td>NEG002A250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin T1</td>
+      <td>Invitrogen</td>
+      <td>65601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 C5 Maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 594 C5 Maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>A10256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647 C2 Maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antifoam Y-40 emulsion</td>
+      <td>Sigma</td>
+      <td>A5758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA-free Sigmafast protease inhibitor cocktail tablet</td>
+      <td>Sigma</td>
+      <td>S8830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPC</td>
+      <td>Avanti polar lipids</td>
+      <td>850375C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPE-Biotin</td>
+      <td>Avanti polar lipids</td>
+      <td>850149P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-14-dCTP</td>
+      <td>Thermo Fisher</td>
+      <td>19518018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-16-dUTP</td>
+      <td>Roche</td>
+      <td>11093070910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxigenin-11-dUTP</td>
+      <td>Roche</td>
+      <td>11093088910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate assay kit</td>
+      <td>Thermo Fisher</td>
+      <td>E6646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>Prism 8</td>
+      <td>Used for curve fitting, and fitting parameters and their error estimation.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igro Pro 7</td>
+      <td>Wavemetrics</td>
+      <td>Igro Pro</td>
+      <td>Used for single molecule data analysis.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW</td>
+      <td>National Instruments</td>
+      <td>LabView NXG Full</td>
+      <td>Used for instrumental control in single molecule experiments.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph 7</td>
+      <td>Molecular Devices</td>
+      <td>Metamorph 7</td>
+      <td>Used for TIRF michroscope data acquisition.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>National Institutes of Health</td>
+      <td>ImageJ</td>
+      <td>Used for TIRF michroscope image analysis.</td>
+    </tr>
+    <tr>
+      <td>Other (Instrument)</td>
+      <td>Prism type TIRF microscope</td>
+      <td>In house Ivanov and Mizuuchi, 2010; Vecchiarelli et al., 2013</td>
+      <td></td>
+      <td>Used for ParAF-ParBF complex assembly-disassembly experiments.</td>
+    </tr>
+    <tr>
+      <td>Other (Instrument)</td>
+      <td>Magnetic tweezers</td>
+      <td>In house Seol and Neuman, 2011 and Seol et al., 2016</td>
+      <td></td>
+      <td>Used for taking single molecule measurements of enzyme binding on 5 kb DNA.</td>
+    </tr>
+    <tr>
+      <td>Other (Instrument)</td>
+      <td>Plate reader</td>
+      <td>BMG Labtech</td>
+      <td>Clariostar Plus</td>
+      <td>Used for FRET-based ParBF dimerization KD and CTP hydrolysis assays using EnzChek Phosphate assay kit</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and constructs for protein expression
 
 All expression open-reading frames were synthesized and subcloned into pET11a (Genscript). ParAF, ParAF-eGFP, ParBF, ParBFR121, ParBF1-42-mCherry, ParBF1-42 R36A-mCherry, and ParBF1-42-mCherry-EcoRIE111Q constructs were made with a hexa-histidine tag on their C-terminus. Protein fusions were made with a SGGG linker between fused domains, with exception of ParBF1-42-mCherry-EcoRIE111Q, which had a 4× (SGGG) linker between ParBF1-42 and mCherry. ParBF1-42 and ParBF1-42 R36A were synthesized de novo (Genscript).
 
-## Oligonucleotides
+### Oligonucleotides
 
 The 24 bp double-stranded DNA fragments containing the parSF consensus sequence and a scrambled sequence used in this study were as follows: 5'-AGT CTG GGA CCA CGG TCC CAC TCG; 5' -AGT CTG CAG CTA CTA TAC CAC TCG, respectively, and their complements. The fluorescently labeled parSF substrate was synthesized with Alexa-488 NHS coupled with the 5' of the forward strand by the manufacturer (IDT).
 
-## Protein purification and fluorescent labeling
+### Protein purification and fluorescent labeling
 
 For expression of proteins 5 ml of an overnight culture of BL21 DE3 AI (Invitrogen), E. coli cells transformed with the desired plasmid were inoculated into 500 ml Terrific Broth (Teknova) supplemented with 100 μg/ml carbenicillin, antifoam Y-40 emulsion (Sigma), 1 g/l NaCl, 0.7 g/l Na2SO4, 2.6 g/l NH4Cl, and 0.24 g/l MgSO4. The cultures were incubated at 37°C in 2.5 l Fernbach flasks and shaken at 120 rpm until they reached an OD600 of 1.8. Cultures were chilled on ice before they were induced by the addition of 1 mM IPTG and 0.2% l-arabinose. Following induction, cultures were incubated at 16°C for 16 hr, and cells were harvested by centrifugation at 6000 × g for 15 min at 4°C. Cell pellets were frozen in liquid nitrogen and stored at −80°C.
 
@@ -141,21 +759,21 @@ Finally, all protein samples were purified by size-exclusion chromatography. The
 
 To produce fluorescently labeled ParBF and ParBF R121A, ParBF protein was buffer exchanged into gel filtration buffer without reducing agent and incubated with a twofold molar excess of Alexa Fluor 647 C2 Maleimide (Thermo Fisher) for 30 min at room temperature. The reaction was then quenched by the addition of DTT to a final concentration of 10 mM. The protein solution was then filtered through a 0.22 μm filter and free dye removed by buffer exchange into gel filtration buffer in Amicon ultra 10 kDa spin concentrator (Millipore). The extent of labeling was estimated based on absorbance at 280 and 647 nm.
 
-## Assaying contaminating activities in the protein preparations
+### Assaying contaminating activities in the protein preparations
 
 Proteins purified by the above protocol had no significant DNA endonuclease activity. After 16 hr incubation of supercoiled pBR322 with 2 µM ParAF and/or 10 µM ParBF at 37°C in ATPase buffer (see below), no linear DNA was observed and less than 10% of the supercoiled plasmid was converted to a nicked-circular form. The contaminating ATPase activity for all ParBF proteins was less than 2 mol ATP per mol ParBF per hour, as determined by the ATPase assay protocol detailed below.
 
-## ATPase activity assays
+### ATPase activity assays
 
 Steady-state ATPase activity was measured as described (Vecchiarelli et al., 2016) with modifications. ATP to be used for ATPase activity assays was purified after diluting 20 μCi ATP γ-P32 (Perkin-Elmer) in 100 µl of 100 mM unlabeled ATP (Sigma) by passing through a 3 ml P2 resin size-exclusion column equilibrated with a buffer containing 50 mM HEPES·KOH pH 7.5, 150 mM KCl, and 0.1 mM EDTA. The purity of fractions was determined by TLC. One microliter of each fraction was spotted on to a 10 × 8 cm piece of TLC PEI Cellulose F paper (Millipore) 1 cm above the bottom of the paper and developed for 10 min using 400 mM NaH2PO4 pH 3.6 as the solvent. The fractions containing the minimum contamination of P32-Pi were pooled and their concentration determined by spectrometry before storage at −20°C.
 
 ParAF ATPase activity was measured in the presence of the combinations and concentrations of proteins and DNA cofactors specified in the main text in ATPase buffer (50 mM HEPES·KOH pH 7.5, 150 mM KCl, 5 mM MgCl2, 0.5 mM TCEP, and 1 mM ATP γ-P32). Reactions were incubated at 37°C for 4 hr and stopped by the addition of an equal volume of 1 M formic acid. The increase of P32-Pi was measured by TLC using PEI Cellulose F paper as detailed above.
 
-## ParBF NTPase activity assays
+### ParBF NTPase activity assays
 
 Steady-state ParBF CTPase activity was measured in CTPase buffer containing 50 mM Tris–HCl pH 7.5, 100 mM NaCl, 2 mM MgCl2, 1 mM DTT, 100 μg/ml BSA, 200 μM MESG (EnzChek probe), 1 U/ml of purine nucleotide phosphorylase, and ParBF, parSF DNA, and CTP at concentrations specified in the figure, following the protocol of the supplier of the EnzChek phosphate assay kit (ThermoFisher). Reactions were typically repeated three times using 96-well microtiter plates and the 360 nm absorption signal increase was monitored at 0.5–1 min intervals using Clariostar Plus plate reader (BMG Labtech). The absorption signal increase after subtraction of background time course in the absence of enzyme was converted to released Pi concentration increase based on phosphate titration measurements. The CTP hydrolysis rate was calculated from the initial slope of the time course curve, which typically started after ~7 min deadtime for the plate setting up. Substrate specificity was examined comparing Pi release from four ribonucleoside triphosphates. Attempt to examine inhibition of the CTPase activity by CDP or to detect CDP binding to ParBF was postponed when the CDP used in this study was found to release Pi upon incubation with ParBF. CDP obtained from two additional suppliers also generated similar quantities of Pi upon incubation with ParBF.
 
-## TIRF microscopy
+### TIRF microscopy
 
 The general design of the TIRF microscopy setup was essentially as previously described (Ivanov and Mizuuchi, 2010; Vecchiarelli et al., 2013). A prism-type TIRFM system was built around an Eclipse Ti microscope (Nikon) with a 40× objective (S Fluor, 40×/1.30 oil, Nikon) and two-color images captured by an Andor DU-897E camera through a dxcr630 insert DualView (Photometrics) with the following settings: 3 MHz digitizer (gray scale); 5.2 pre-amplifier gain, 2 MHz vertical shift speed; +one vertical clock range; electron-multiplying gain 30; EM CCD temperature set at −90°C; baseline clamp ON; and exposure time 100 ms.
 
@@ -175,11 +793,11 @@ Prior to use, excess DNA was removed by infusion of 300 μl 0.22 μm filtered an
 
 Conversion of the fluorescence signal detected in TIRF microscopy to the DNA-carpet-bound protein densities was done following the procedure described in the legend of Figure 2—figure supplement 4 in Vecchiarelli et al., 2016.
 
-## Fluorescence recovery after photobleaching (FRAP)
+### Fluorescence recovery after photobleaching (FRAP)
 
 For FRAP experiments, 488 nm solid-state and 630 nm diode lasers were focused to the back focal plane of the objective through an appropriate dichroic mirror (Di01-R405/488/561/635-25x36, Semrock) through the objective lens to illuminate a ~5 or ~10 μm (for 488 nm or 630 nm, respectively) diameter spot in the center of the sample area. The laser power was adjusted for ~80% bleaching with 5 s exposure for the eGFP or Alexa 647 signals, and four cycles of bleaching/recovery were recorded for each sample and averaged.
 
-## Magnetic tweezers-based DNA condensation assay
+### Magnetic tweezers-based DNA condensation assay
 
 The magnetic tweezers setup and assays conducted with it were performed as previously described (Seol and Neuman, 2011; Seol et al., 2016).
 

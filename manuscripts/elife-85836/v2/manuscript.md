@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01tmp8f25 Department of Physiology, School of Medicine, Universidad Nacional Autónoma de México México City Mexico
+1. Department of Physiology, School of Medicine, Universidad Nacional Autónoma de México México City Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
 
 † Corresponding author
 
 ## Abstract
 
-Voltage-dependent gating of the voltage-gated proton channels (H V 1) remains poorly understood, partly because of the difficulty of obtaining direct measurements of voltage sensor movement in the form of gating currents. To circumvent this problem, we have implemented patch-clamp fluorometry in combination with the incorporation of the fluorescent non-canonical amino acid Anap to monitor channel opening and movement of the S4 segment. Simultaneous recording of currents and fluorescence signals allows for direct correlation of these parameters and investigation of their dependence on voltage and the pH gradient (ΔpH). We present data that indicate that Anap incorporated in the S4 helix is quenched by an aromatic residue located in the S2 helix and that motion of the S4 relative to this quencher is responsible for fluorescence increases upon depolarization. The kinetics of the fluorescence signal reveal the existence of a very slow transition in the deactivation pathway, which seems to be singularly regulated by ΔpH. Our experiments also suggest that the voltage sensor can move after channel opening and that the absolute value of the pH can influence the channel opening step. These results shed light on the complexities of voltage-dependent opening of human H V 1 channels.
+Voltage-dependent gating of the voltage-gated proton channels (HV1) remains poorly understood, partly because of the difficulty of obtaining direct measurements of voltage sensor movement in the form of gating currents. To circumvent this problem, we have implemented patch-clamp fluorometry in combination with the incorporation of the fluorescent non-canonical amino acid Anap to monitor channel opening and movement of the S4 segment. Simultaneous recording of currents and fluorescence signals allows for direct correlation of these parameters and investigation of their dependence on voltage and the pH gradient (ΔpH). We present data that indicate that Anap incorporated in the S4 helix is quenched by an aromatic residue located in the S2 helix and that motion of the S4 relative to this quencher is responsible for fluorescence increases upon depolarization. The kinetics of the fluorescence signal reveal the existence of a very slow transition in the deactivation pathway, which seems to be singularly regulated by ΔpH. Our experiments also suggest that the voltage sensor can move after channel opening and that the absolute value of the pH can influence the channel opening step. These results shed light on the complexities of voltage-dependent opening of human HV1 channels.
 
 ## Introduction
 
@@ -35,9 +35,25 @@ We find our measurements can resolve a transition during the deactivation proces
 
 ## Results
 
-## Incorporation of Anap into hHV1
+### Incorporation of Anap into hHV1
 
 To study voltage-dependent transitions in a voltage sensor using PCF, it is desirable that the introduced fluorescent probe does not produce a major structural perturbation of the target protein. The relatively recently developed probe Anap (3-[6-acetylnaphthalen-2-ylamino]–2-aminopropanoic acid) is a small non-canonical fluorescent amino acid (Figure 1B), which has been shown to be easily genetically encoded in proteins expressed in eukaryotic cells (Chatterjee et al., 2013; Puljung, 2021). Moreover, Anap has been successfully used as a reporter of voltage-dependent conformational changes (Kalstrup and Blunck, 2013) and as a Fluorescence Resonance Energy Transfer (FRET) pair (Gordon et al., 2018) to probe ion channel dynamics. In this study, Anap was inserted into specific positions of the S4 segment of the human HV1 proton channel (hHV1) sequence (Figure 1A), with the purpose of examining its voltage and pH-dependent dynamics.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ribbon representation of transmembrane segments S1–S4 of closed hHV1 based on the model of Randolph et al., 2016. S1–S3 are in gray, whereas S4 is in light blue. S4 positively charged arginine residues are shown as cyan sticks, whereas the residues where Anap was incorporated individually in the S4 segment are depicted as green sticks and with green arrow heads in the S3–S4 sequence below; positively charged arginine residues are indicated in marine blue. (B) Structure of non-canonical amino acid Anap (left), and a schematic representation (right) that shows the incorporation of Anap (green star) into the hHV1 dimer expressed in HEK293 cells. An mCherry fluorescent protein (magenta cylinder) was fused to the C-terminal end of hHV1 as an Anap incorporation reporter. (C) Images of a representative patch-clamp fluorometry (PCF) experiment, showing the voltage-clamped cell and the co-localization of Anap and mCherry fluorescence in the cell membrane for Anap incorporated at position Q191 of hHV1. (D) G-V curves obtained from currents produced by each hHV1 mutant rescued by Anap incorporation. All G-V curves were obtained at ΔpH = 1 and compared with hHV1 WT (n=5); Q191(n=13); A197(n=6); L198(n=7); G199(n=5); L200(n=1); L201(n=4); I202(n=4). Continuous lines are the fit of the conductance data to equation 1; fit parameters are summarized in Supplementary file 1. The incorporation of Anap at the I202 site sifts the G-V ~65 mV to more negative potentials. Data shown are mean ± SEM. (E) Normalized mean emission spectrum of Anap (continuous lines) and mCherry (dashed lines) at each incorporation site (color code from D) recorded at resting potential in non-patched cells. Q191(n=15); A197(n=8); L198(n=7); G199(n=6); L200(n=10); L201(n=8); I202(n=10). The vertical blue line indicates the peak emission of Anap in water (486 nm). A second emission peak can be distinguished in every position inside S4 where Anap was incorporated, except Q191Anap. This peak is located around 610 nm which coincides with the peak emission of mCherry.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Confocal images of HEK 293 cells in bright-field (top panel), mCherry fluorescence (middle row, magenta), and Anap fluorescence (bottom row, green). Each column shows the same field, and the bottom labels indicate transfection of the HV1-A197TAG plasmid in the presence or absence pAnap plasmid and L-Anap in the culture media. The images were obtained with a Leica TCS SP5 inverted confocal microscope (RRID:SCR_020233 Leica Microsystems, Germany). Fluorescence of mCherry was excited with a He-Ne laser at 543 nm, and the emission was filtered at 580–610 nm, while Anap was excited with a 405 nm laser diode, and the emission was filtered at 415–458 nm. Scale bar = 10 µm. (B) Summary of current density quantification at 60 mV test pulse (ΔpH = 1) in HEK293 cells cotransfected with the hHV1-TAG plasmid in different positions (Q191, blue circles; A197, red triangles; L201, orange squares; F150A-A197, green diamonds) and the pAnap plasmid with (+, filled markers) or without (−, empty markers) L-Anap added to incubation media. Note that the cells that were not incubated with L-Anap presented similar current density as non-transfected cells (gray marks), showing a low probability of non-specific amino acid incorporation. Current density values: non-transfected cells: 2.6±0.98 pA/pF, n=7. HV1-Q191TAG +pAnap: 3.4±1.04 pA/pF (n=7). HV1-Q191TAG + pAnap + L-Anap: 89.7±17.53 pA/pF (n=7). HV1-A197TAG +pAnap: 2.1±1.2 pA/pF (n=4). HV1-A197TAG +pAnap + L-Anap: 149.9±27.42 pA/pF (n=11). HV1-L201TAG +pAnap: 2.6±1.47 pA/pF (n=6). HV1-L201TAG +pAnap + L-Anap: 151.1±5.4 pA/pF (n=4). HV1-F150A-A197TAG +pAnap: 4.6±2.4 pA/pF (n=6). HV1-F150A-A197TAG +pAnap + L-Anap: 95.7±16.98 pA/pF (n=4). Horizontal bars and error bars represent these mean ± SEM values, and markers are individual experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Family of currents of hHV1-WT (gray traces, n=4) and hHV1 with the fluorescent protein mCherry attached to channel’s C-terminus (black traces, n=5). The right panel shows the conductance vs. voltage relationship of these two constructs. Notice the similar behavior. (B) Current families of channels incorporating Anap at the indicated position. Each family was obtained with a protocol of voltage pulses from –100 mV to +140 mV in 20 mV steps from a holding potential of –100 mV. AI experiments were performed at a ∆pH = 1. The parameters of the Boltzmann fits are summarized in Supplementary file 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Measurements of L-Anap emission spectrum peak wavelength incorporated in S3–S4 loop (Q191: 484.4±0.5 nm, n=15), and the sites in extracellular half of S4 studied in this work (A197: 487.7±0.8 nm, n=30; L198: 489.6±1.8 nm, n=7; G199: 483.5±1.7 nm, n=6; L200: 489±1.4 nm, n=10; L201: 489.1±1 nm, n=30; I202: 477.4±2.1 nm, n=10). (B) Quantification of direct excitation (Ratio A) of mCherry emission spectra peak (610 nm) excited by 405 nm laser. Ratio values per position: A197: 2.4 ± 0.3%, n=8; L198: 1.7 ± 0.3%, n=7; G199: 1.4 ± 0.4%, n=6; L200: 1.7 ± 0.4%, n=10; L201: 3.4 ± 0.9%, n=8; I202: 1.1 ± 0.3%, n=10. The horizontal red dotted line is the ratio A of WT-hHV1-mCherry (1.87%), and the shaded area is the SEM. In both figures, the horizontal bars and error bars represent these mean ± SEM values, and markers are individual experiments.
 
 We selected the S4 helix as insertion target since this region of the channel is proposed to undergo a voltage-dependent outward displacement that has been previously studied with different approaches, including voltage-clamp fluorometry (VCF) (De-la-Rosa et al., 2016; Eckert and Sibaoka, 1968; Edelstein et al., 2014).
 
@@ -47,7 +63,7 @@ The substituted channels gave rise to voltage-activated currents, with similar r
 
 Figure 1E also shows that the emission spectra of positions other than Q191Anap exhibit a small extra peak near 610 nm that corresponds to the peak emission of mCherry. Since the excitation peak of mCherry is 587 nm (Shaner et al., 2004), we performed experiments with hHV1-mCherry channels to measure direct mCherry excitation by our 405 nm laser. The results indicate that this peak is mostly produced by direct excitation of mCherry at 405 nm (Figure 1—figure supplement 3B).
 
-## Insensitivity of Anap to pH
+### Insensitivity of Anap to pH
 
 In order to use Anap as a reporter of conformational changes in HV1 proton channels, and given that these channels are able to change the pH of the surrounding solution (De-la-Rosa et al., 2016; Zhang et al., 2016), we first wanted to validate if this fluorophore is insensitive to pH changes. The amino acid form of Anap that we use is the methyl-ester, which contains amino and carboxy groups. The fluorescence of methyl-ester Anap could be affected by protonation because it could alter electron distribution; for this reason, we reasoned that the best assay to test the pH dependence of Anap fluorescence is to use already incorporated Anap. For this purpose, we used the mutant Q191Anap, which incorporates Anap in the S3–S4 loop, which faces the extracellular solution, even in the deactivated state of the channel (Figure 1A). Since the emission spectrum of Q191Anap channels was measured from non-voltage clamped transfected HEK cells, fluorescence was obtained only from membrane regions to ensure that the signal comes mostly from channels exposed to the extracellular solution changes and not channels in intracellular compartments, which will not be exposed to the pH changes.
 
@@ -55,11 +71,27 @@ To ensure that most of the fluorescence is collected from channels in the membra
 
 These measurements showed that the fluorescence of channel-incorporated Anap is not significantly changed in intensity or shape of the emission spectrum over the pH range 3–9 (Figure 2A and B), indicating that this fluorophore is insensitive to pH and that Anap fluorescence should not be affected by local pH changes, which might be produced as a consequence of proton currents.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mean spectra of Anap fluorescence in the hHV1-Q191Anap mutant at each external pH tested (pHo) recorded at the resting potential in non-patched cells. The emission peak of spectra of Anap remained inside the wavelength range of 475–480 nm. (B) Percentage of fluorescence intensity change normalized to fluorescence at pHo 7 in hHV1-Q191Anap mutant (n=13). The intensity was measured from the peak of emission spectra and found not to be significantly different with a two-way ANOVA test that evaluated the brightness at each value of pHo (F-statistic=0.09, degrees of freedom = 6, and p=0.99). (C) Representative patch-clamp fluorometry (PCF) experiments with the hHV1-V62Anap mutant. Currents (upper panel, orange traces) and fluorescent signal (lower panel, gray traces) were elicited in response to voltage pulses from –100 mV to 120 mV in steps of 20 mV. (D) F-V and G-V relationships from the experiments shown in C. Relative fluorescence changes at the end of voltage test pulses are shown in gray triangles, and conductance is shown in orange circles (n=3). The orange continuous line is the fit to equation 1 of G-V data (fit parameters: V0.5=24.4 ± 1.6 mV; q=1.5 ± 0.1 e0). Data in B and D are mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The HEK293 cell to be recorded is chosen in the bright field (A) and exciting the fluorescent signal of mCherry (B) at 514 nm. When the L-Anap fluorescence is confirmed, exciting the cell at 405 nm (C), a portion of the cellular membrane is isolated with the spectrograph slit (D, discontinuous vertical yellow lines; mCherry signal in magenta; L-Anap signal in green). The spectrograph scatters the L-Anap light that goes through this slit (E), producing a spectral image, and a line scan is performed (white discontinuous horizontal lines in E and D) from the membrane identified by mCherry fluorescence. The fluorescence intensity measured in this scan is presented in F. Scale bar = 10 µM.
+
 As a further test of our data showing the pH-insensitivity of channel-incorporated Anap and to validate the use of Anap in proton channels, we incorporated the amino acid in a position at the N-terminus of the channel, V62Anap. This amino acid is located in the intracellular part of the channel and should be subject to changes in local internal pH during channel activation (De-la-Rosa et al., 2016) but not show changes in fluorescence as a function of voltage-dependent conformational changes. As expected, we did not detect Anap fluorescence changes, although the amino acid was incorporated into functional channels, as judged from proton currents recorded simultaneously with fluorescence (Figure 2C and D). This result further supports the use of Anap in voltage-gated proton channels to measure conformational changes.
 
-## Voltage-dependent changes of Anap fluorescence
+### Voltage-dependent changes of Anap fluorescence
 
 Previous experiments in which other dyes like TMR maleimide (TMRM) were used to label cysteine residues located in the amino-end of the S4 segment of VSDs, including the Ciona and human HV1 channels (Schladt and Berger, 2020; Mony et al., 2015; Qiu et al., 2013), usually result in fluorescence signals that are reduced upon depolarization by a voltage-dependent quenching process (Vaid et al., 2008; Cha and Bezanilla, 1998). In contrast, when we incorporate Anap at position A197, located toward the extracellular end of the S4, depolarization induced an increase of the fluorescence, along with proton currents. The fluorescence increase saturates at depolarized voltages, suggesting that it is produced by a saturable process such as voltage-sensor activation. The direction of this fluorescence change is the same when measured at a ΔpH of 0 or 2, suggesting the same conformational change in the S4 voltage sensor occurs at different pH gradients, albeit over a different range of voltages (Figure 3A and B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Representative patch-clamp fluorometry (PCF) experiment with A197Anap at ΔpH = 0 and ΔpH = 2, respectively. Proton current families (upper panels) are shown in blue traces and fluorescent Anap signal (lower panel) in gray traces. (C) Activation time constant of current (blue) and fluorescent (lemon) signals at ΔpH = 0 obtained by fitting Equation 3 (n=3). The dark blue curve shows the exponential fit to Equation 4. The fit parameters were: τ(0)=976ms and q=–0.03 e0 for fluorescence and 768 ms and –0.12 e0 for current. (D) F-V (empty triangles) and G-V (filled diamonds) curves and different ΔpH values (ΔpH = 0 in blue, n=4; ΔpH = 1 in red, n=11; ΔpH = 2 in black, n=6). The data were fit to Equation 1 (G-V, continuous curves; F-V, discontinuous curves) with the following parameters: ∆pH = 0; F-V: V0.5=72.7 ± 6 mV; q=1.0 ± 0.1 e0. G-V: V0.5=69.6 ± 1.5 mV; q=1.1 ± 0.1 e0. ∆pH = 1; F-V: V0.5=26.6 ± 1.5 mV; q=1.3 ± 0.1 e0. G-V: V0.5=23.4 ± 1.3 mV; q=1.5 ± 0.1 e0. ∆pH = 2; F-V: V0.5=–4.5 ± 1.7 mV; q=1.0 ± 0.1 e0. G-V: V0.5=–8.1 ± 2.6 mV; q=1.2 ± 0.1 e0. (E) Emission spectra of Anap in the A197Anap mutant obtained in steady-state (300 ms at the end of holding potential and the end of the test pulse, green bars in the inset) in response to different voltages (color code indicates the test pulse in mV: purple, –60; dark blue, –40; light blue, 20; cyan, 0; light green, 20; dark green, 40; olive, 60; yellow, 80; orange, 100; dark red, 120; red, 140). The inset plots the amplitude of the emission peak as a function of test voltage. The smooth curve is the fit of the fluorescence data at ΔpH = 1 shown in panel D. Summary data shown in C and D are mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Emission spectrum of L-Anap in methanol-water mixtures. The percentage of methanol is indicated in the figure. Increasing methanol concentrations increase the fluorescence intensity and produce a blue shift in the peak emission wavelength. (B) Emission spectrum of L-Anap in isopropanol-water mixtures. As with methanol, the percentage of isopropanol is indicated in the figure. Increasing concentrations of isopropanol also increase fluorescence intensity and a more evident blue shift in the peak emission wavelength. (C) Comparison of emission spectra of L-Anap in pure solvents. Lower polarity solvents produce an increased fluorescence intensity. (D) The peak emission wavelength of L-Anap obtained from spectra as in C is red-shifted at higher dielectric constants (higher polarity). All spectra were measured in a UV-VIS spectrofluorometer (PC1, ISS, USA). The excitation wavelength was 360 nm.
 
 We compared the kinetics of current and fluorescence by fitting an exponential function to the second half of the signal time course and plotted the time constant as a function of voltage (Figure 3C). Both current and fluorescence have the same voltage dependence, but the current is ~1.3 times faster than the fluorescence. Although not a very large difference, this can be explained by an overestimation of the current time course due to slight proton depletion observed with large currents.
 
@@ -67,7 +99,7 @@ When F-V and G-V curves are plotted together, it is evident that sensor movement
 
 Anap is an environmentally sensitive dye which shifts its emission to red wavelengths in increasingly polar solvents (Figure 3—figure supplement 1). To understand the origin of the increased fluorescence observed during activation, we measured the emission spectra of A197Anap in voltage-clamped cells at different voltages. Fluorescence was measured from channels in the membrane region, which are identified by the mCherry signal, similar to Figure 1C. Figure 3E plots the spectra obtained at voltages ranging from –100 to 140 mV, and it shows that the fluorescence increases with depolarization and has the same voltage-dependence as the fluorescence measured in Figure 3A, B and C at the same ΔpH (Figure 3E, inset). On the other hand, the peak emission wavelength remains the same at negative or positive voltages, indicating that the increase in fluorescence is not due to depolarization-driven wavelength shifts of the emission spectra. We interpret this result as an indication that Anap incorporated at position A197 remains in a polar environment at all voltages or that small changes in polarity change the quantum yield of Anap but not the emission spectrum.
 
-## HV1-197Anap is quenched by a phenylalanine in the S2
+### HV1-197Anap is quenched by a phenylalanine in the S2
 
 The increase of the Anap fluorescence at position 197 in the S4 seen with depolarization could be interpreted as a reflection of an outward movement of the S4 and exposure of Anap to a more polar environment (Figure 3—figure supplement 1), that in principle will produce a red shift of the emission spectrum and an increase of the fluorescence that is detected. However, as shown in Figure 3E, the shape of emission spectrum of Anap remains unchanged at all voltages and with a constant emission peak at ~480 nm, indicating that the fluorophore remains in a polar environment in the closed and open states and thus, a change in local polarity is likely not the principal cause of dequenching.
 
@@ -75,19 +107,39 @@ Many fluorophores can be quenched by aromatic amino acids through mechanisms suc
 
 For these reasons, it is conceivable that the Anap quencher in HV1 could be an aromatic residue located near the introduced fluorophore in the closed state and upon S4 movement, increases its distance, generating the observed dequenching. We used a structural model of HV1 derived from experimental data (Randolph et al., 2016) and replaced A197 with Anap. Figure 4A shows Anap in salmon-colored spheres and highlights aromatic residues within the transmembrane domains of a monomer as dotted spheres. A possible candidate for an Anap quencher is F150 (yellow spheres) because this residue is the closest aromatic to Anap that is not in the S4, and F150 will presumably remain in its position as 197Anap undergoes an outward displacement with depolarization. In contrast, other aromatic residues, which are closer to 197Anap and are part of the S4, will presumably move with all the S4 as a rigid body. Incidentally, an equivalent phenylalanine to F150 has been identified as the charge transfer center in canonical voltage-gated potassium channels and in HV1 (Tao et al., 2010; Hong et al., 2013).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cartoon showing the presence of aromatic residues in hHV1 (rendered as space-filling dots, main chain in light blue, S3 was removed for illustration). F150 in yellow and Anap in pink. (B) Averages of spectra of Anap incorporated in both mutants (HV1-A197Anap, red; HV1-F150A-A197Anap, green) normalized to the fluorescence of mCherry (black). Spectra were obtained at the resting potential in non-patched cells. The double mutant’s brightness is approximately 60% higher. Shadows represent SEM. (C) Comparison of the intensity of the emission spectrum peak of Anap normalized to the intensity of the fluorescent protein mCherry between the mutant HV1-A197Anap-Cherry (0.49±0.03) and double mutant HV1-F150A-A197Anap-Cherry (0.79±0.05), taken at 48 hr post-transfection. Each point indicates an individual spectrum measured from a single cell; n=41 and 49, respectively. Black horizontal lines are the mean ± SEM. Unpaired Student’s t-test with Welch’s correction: T-statistic=5.2, degrees of freedom = 71.18, and p=1.6 × 10–6. (D) Representative current and fluorescence traces from patch-clamp fluorometry (PCF) experiments of the double mutant HV1-F150A-A197Anap at ∆pH = 1 (upper panel) and ∆pH = 0 (lower panel). (E) Comparison of G-V (diamonds) and F-V (triangles) relationship between both ∆pH conditions (∆pH = 1 in green, n=4; ∆pH = 0 in purple, n=5) of the double mutant HV1-F150A-A197Anap. F-V curve of HV1-F150A-A197Anap at ∆pH = 0 is shifted negatively around 58 mV compared to ∆pH = 1. Boltzmann fit parameters of HV1-F150A-A197Anap were: ∆pH = 1 F-V: V0.5=−19.8 ± 2.7 mV; q=1.2 ± 0.1 e0; G-V: V0.5=22.7 ± 2.3 mV; q=0.9 ± 0.1 e0. ∆pH = 0 F-V: V0.5=38.0 ± 3.0 mV; q=0.9 ± 0.1 e0; G-V: V0.5=42.6 ± 3.8 mV; q=1.0 ± 0.1 e0. Data shown in B, C, and E are mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fraction of Anap fluorescence in relation to mCherry fluorescence determined from emission spectra. Data are averaged spectra; the shaded regions are ± SEM. (B) The Anap/mCherry fluorescence ratio measured at the peak emission wavelength for each construct as a function of incorporation site position. The dotted line is a linear fit, and the shaded area is the 96% CI. Data are mean ± SEM.
+
 To test this hypothesis, we made the double mutant F150A-A197Anap and estimated the relative amount of basal Anap quenching by comparing the emission spectra of both Anap and mCherry in the same membrane region. Figure 4B and C show that the double mutant displays a significantly increased Anap fluorescence (~60 %) relative to mCherry, when compared to A197Anap alone, suggesting that indeed, phenylalanine 150 is capable of quenching Anap in the closed state (at the resting potential of HEK cells of –20 to –40 mV [Thomas and Smart, 2005] and at the employed ΔpH ~–0.2 [pHo = 7] most channels should be in the closed state).
 
 Despite having removed the quenching group, F150A-A197Anap channels still show voltage-dependent fluorescence changes (Figure 4D), suggesting the presence of additional quenchers or that in the absence of F150, Anap at 197 becomes sensitive to polarity changes.
 
 The voltage dependence of the fluorescence signals from F150A-A197Anap channels shows significant differences from those of A197Anap alone (Figure 4E). At values of ΔpH of 0 and 1, fluorescence precedes the increase in conductance, indicating that the conformational change of the S4 segment occurs at more negative voltages than the formation of the proton-permeable pathway. This effect is more pronounced at ΔpH = 1. Interestingly, the difference of V0.5 of the F-V curve between ΔpH = 0 and 1 is ~58 mV, similar to A197Anap, which is ~46 mV.
 
-## A distinct gating transition detected by Anap fluorescence
+### A distinct gating transition detected by Anap fluorescence
 
 The fluorescence time course of the F150A-A197Anap channels shows an interesting characteristic; the OFF signals (Foff) that are produced at the return of the voltage to the holding potential and represent the return of the voltage sensor to the resting states show a two-component kinetic behavior. This is particularly evident at ΔpH = 0 (Figure 4D), where Foff shows a very rapid quenching followed by a much slower component, suggesting that the voltage sensor can move back to its resting position at varying rates.
 
 To explore the kinetics of fluorescence signals during repolarization, and since this double mutant removes a quenching group, we used the hHV1-201Anap channels. We reasoned that this mutant channel, which has Anap in a deeper position in the S4 and presumably closer to F150 in the closed state, might be a better reporter of the kinetics of S4 movement.
 
 Figure 5A, B and C show simultaneous current and fluorescence recordings from hHV1-L201Anap channels at three different ΔpH values of 0, 1, and 2. As with the hHV1-A197Anap construct, the voltage-dependence of the conductance and fluorescence is almost superimposable and shows a large shift of >40 mV/pH unit (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig5-v2.jpg)
+
+**Figure 5.:** Representative patch-clamp fluorometry (PCF) experiments with the hHV1-L201Anap mutant at: (A) ∆pH = 0. (B) ∆pH = 1. (C) ∆pH = 2. Current families are shown in the upper panel (purple traces) and fluorescent signals in the lower panel (black and gray traces). (D) G-V (filled diamonds) and F-V (empty triangles) relationships at ∆pH = 0 (blue markers, n=3), ∆pH = 1 (orange markers, n=4), and ∆pH = 2 (black markers, n=5) of mutant hHV1-L201Anap. Data are mean ± SEM. Note that the difference between the activation at ∆pH = 1 and ∆pH = 0 is around 77 mV/∆pH unit. Boltzmann fit parameters: ∆pH = 0, F-V; V0.5=84.6 ± 2.1 mV, q=1.0 e0 ±0.1. G-V; V0.5=79.7 ± 1.8 mV, q=1.4 ± 0.1 e0. ∆pH = 1, F-V; V0.5=7.7 ± 1.6 mV, q=1.2 ± 0.1 e0. G-V: V0.5=6.3 ± 2.2 mV; q=1.2 ± 0.1 e0. ∆pH = 2, F-V: V0.5=–21.1 ± 2.3 mV; q=1.1 ± 0.1 e0. G-V: V0.5=–30.6 ± 2.1 mV; q=1.2 ± 0.1 e0. (E) Comparison of the current and fluorescence at two values of ∆pH with the predictions of the sequential activation model in Scheme 1. Experimental current and fluorescence traces are color coded as in (A). Simulated current traces are mustard colored, and fluorescence traces are orange. Simulation parameters can be found in Supplementary file 2. Source code files: DefinitionSchemeI_Fig5E.ipf and ProcedureToSimulateFig5E.ipf.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tail current (purple trace) with a superimposed exponential fit (red). Simultaneous fluorescence decay signal (black) with a double exponential fit (red). Both recordings were obtained at –60 mV after a test pulse to 160 mV and a ∆pH = 0 (pHi = 5.5/pHo = 5.5). (B) Summary of time constants obtained from traces as in (A). The horizontal bars and error bars represent mean ± SEM values, and markers are individual experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Allosteric model of HV1 activation by voltage. The kij’s are rate constants, and D is an allosteric coupling factor for channel opening. (B) is an empirical factor that accounts for the pH-dependence of the rate constants. In this model, channel opening can occur without full voltage-sensor movement. The closing rate constant indicated in red has a value much smaller than all others (at 0 mV) and is responsible for the slow return of the fluorescence signal upon repolarization. (B) Simulation comparing the steady-state conductance and fluorescence as a function of voltage. In this mechanism, fluorescence appears at the same voltages as conductance since channel opening can occur from early closed states, and currents can flow without full-voltage sensor activation. (C) Comparison of simulated currents (orange traces) and fluorescence signals (blue traces) with experimentally recorded currents (green) and fluorescence (gray) at the two indicated values of ∆pH, using the parameters given in Supplementary file 3. Source code files: DefinitionSchemeII_Fig5-Sup2.ipf andProcedureToSimulate_Figure ig5_Sup2.ipf.
 
 The most remarkable feature of these fluorescence traces is that, at ΔpH = 0, the OFF signal during repolarization (Foff) has two distinct kinetic components. The deactivation tail currents at –60 mV decay exponentially, with a time constant of 141±55 ms, while the Foff can be fit to a sum of two exponentials with time constants of 129±68 ms and 8.6±0.74 s. (Figure 5—figure supplement 1). The presence of the two components in Foff suggests that the return of the voltage sensor to its resting state can occur at varying rates. In particular, the slow component is consistent with the immobilization of the off-gating charge observed in monomeric Ciona HV1 channels (Carmona et al., 2018). The slow off-component is also present at ΔpH = 1 and 2, although its amplitude is smaller. We did not undertake a systematic kinetic analysis of current and fluorescence traces during channel activation due to the alterations that proton depletion cause on the current time course, especially for the larger currents observed at ΔpH = 2.
 
@@ -99,13 +151,13 @@ In this model, one of the backward transitions (k21) between closed states is se
 
 While the simple model in Scheme 1 can account qualitatively for the observed kinetics of 201Anap channels, the experimental F-V relationship is superimposable on the G-V curve (ΔpH = 0 and 1) or positively shifted by ~10 mV (ΔpH = 2) with respect to the G-V curve, which is not a feature predicted by Scheme 1 and is reminiscent of channels that can open to multiple open states, without the need of full-voltage sensor activation (Stefani et al., 1997). This observation suggests that hHV1 channels operate via a more complicated mechanism than the sequential gating illustrated by Scheme 1, which might include channel opening before complete voltage-sensor movement. We tested a simple version of such an allosteric model and show that it can account, at least qualitatively, for current and fluorescence kinetics and for the relationships between G-V and F-V curves at varying ΔpH (Figure 5—figure supplement 2). Interestingly, in this model, the slow deactivation rate constant is also the step with the most sensitivity to pH (Supplementary file 3).
 
-## Absolute pH values are determinants of voltage sensor movement
+### Absolute pH values are determinants of voltage sensor movement
 
 One of the most intriguing characteristics of HV1 channel gating is its steep modulation by the pH gradient. While it has been shown that this modulation depends on the value of ΔpH, regardless of how it is set up (Cherny et al., 1995), there is evidence that the absolute value of pH can also exert an effect on gating (Cherny et al., 2015). In most of our experiments, the pH gradient was set up with a low value of intracellular pH, between 5.5 and 6.0. To test the effect of absolute pH, we carried out experiments with the same ΔpH of 0, with symmetric low (5.5/5.5) or high (7/7) intra/extracellular pH. The expectation was that, if pH gating of hHV1 depends only on the pH gradient, the voltage sensor should move with essentially the same characteristics. Surprisingly, the fluorescence signals display important differences, as do the proton currents. Our results in Figure 6 show that when compared to ΔpH = 0 (5.5/5.5), the fluorescence in symmetric pHo and pHi = 7.0 has a rapid return of the Foff signal (Figure 6A and B). Interestingly, the voltage dependence of the F-V relationship is very similar for (5.5/5.5) or (7/7) conditions, while in (7/7) the proton current appears at more negative voltages than the bulk of the fluorescence (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85836/elife-85836-fig6-v2.jpg)
 
-**Figure 6.:** V1-L201Anap.(A) Representative patch-clamp fluorometry (PCF) experiment at ∆pH = 0 (5.5o-5.5i). Currents are purple and fluorescence black. (B) Similar experiment to (A) with ∆pH = 0 (7o-7i). Current and fluorescence traces are color coded as in (A). (C) G-V (filled diamonds) and F-V (empty triangles) curves at ∆pH = 0 but with different absolute pH values (pHo/pHi = 5.5/5.5 in blue n=3; pHo/pHi = 7/7 in orange, n=4). Boltzmann fit parameters were pHo/pHi = 7/7 F-V: V0.5=75.3 ± 2.2 mV; q=0.8 ± 0.04 e0. G-V: V0.5=39.6 ± 1.3 mV; q=1.2 ± 0.1 e0. pHo/pHi = 5.5/5.5 F-V: V0.5=84.6 ± 2.1 mV; q=1.0 e0 ±0.1. G-V: V0.5=79.7 ± 1.8 mV; q=1.4 ± 0.1 e0. Data are mean ± SEM.Figure 6—source data 1.Figure 6C.
+**Figure 6.:** (A) Representative patch-clamp fluorometry (PCF) experiment at ∆pH = 0 (5.5o-5.5i). Currents are purple and fluorescence black. (B) Similar experiment to (A) with ∆pH = 0 (7o-7i). Current and fluorescence traces are color coded as in (A). (C) G-V (filled diamonds) and F-V (empty triangles) curves at ∆pH = 0 but with different absolute pH values (pHo/pHi = 5.5/5.5 in blue n=3; pHo/pHi = 7/7 in orange, n=4). Boltzmann fit parameters were pHo/pHi = 7/7 F-V: V0.5=75.3 ± 2.2 mV; q=0.8 ± 0.04 e0. G-V: V0.5=39.6 ± 1.3 mV; q=1.2 ± 0.1 e0. pHo/pHi = 5.5/5.5 F-V: V0.5=84.6 ± 2.1 mV; q=1.0 e0 ±0.1. G-V: V0.5=79.7 ± 1.8 mV; q=1.4 ± 0.1 e0. Data are mean ± SEM.
 
 These results suggest that the voltage range of movement of the voltage sensor, as reported by the fluorescence of 201Anap, is dependent on the ΔpH since the V0.5 of the F-V is the same in pHo/pHi = 5.5/5.5, while the opening of the proton conduction pathway in pHo/pHi = 7/7 can occur after only a fraction of the voltage sensor movement has occurred, and this coupling between voltage sensing and channel opening can be increased by low pH.
 
@@ -135,7 +187,7 @@ A mechanism in which the proton gradient energy is coupled to S4 movement predic
 
 ## Materials and methods
 
-## Molecular biology and HEK cell expression
+### Molecular biology and HEK cell expression
 
 A plasmid containing the human voltage-gated proton channel (hHV1) was a gift from Dr. Ian Scott Ramsey (Virginia Commonwealth University, Richmond, VA, USA). We used the fluorescent protein mCherry as a reporter to verify L-Anap incorporation. The construct hHV1-mCherry was made by the PCR overlap technique, adding the sequence of fluorescent protein mCherry after the C-terminus of hHV1 with the following linker sequence: (Gly-Gly-Ser)3. This construct was subcloned into the pcDNA3.1(+) vector (ThermoFisher Scientific, USA). For all hHV1-TAG mutants, an amber codon (TAG) was introduced using appropriate mutagenic oligonucleotides and a protocol for whole plasmid site-directed mutagenesis employing KOD polymerase (Merck Millipore, Germany) as detailed in manufacturer’s instructions and previous work (Zheng et al., 2004; Munteanu et al., 2012). The bacterial methylated DNA templates were digested with the DpnI restriction enzyme, and the mutant plasmids were confirmed by automatic sequencing at the Instituto de Fisiología Celular, UNAM.
 
@@ -143,11 +195,11 @@ We used HEK293 cells (RRID: CVCL_0045) for channel expression and L-Anap incorpo
 
 The pANAP plasmid contains the orthogonal pair tRNA/aminoacyl tRNA synthetase specific to L-Anap. The Methyl ester form of L-Anap, L-Anap-Me (AsisChem Inc), was added to the medium of cells in 35 mm culture dishes from a storing stock solution of 10 mM to a final concentration of 10–20 μM. Through the text, we will refer to L-Anap as Anap for simplicity. Cells were incubated during 12–48 hr before experiments in Dulbecco’s Modified Eagle Medium (DMEM, Invitrogen, USA) supplemented with 10% fetal bovine serum (Invitrogen, USA) and penicillin-streptomycin (100 units/ml — 100 μg/ml, Invitrogen, USA) at 37°C in a 5% CO2 atmosphere. Around 4 hr before electrophysiological recordings, HEK293 cells were treated with 0.05% trypsin-EDTA (Trypsin-EDTA, Invitrogen, USA) to obtain rounded cells, which were then re-platted in 35 mm glass-bottom dishes (World Precision Instruments, USA) and used for experiments within 3–6 hr. All the experiments were performed at room temperature (~25°C).
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings of proton currents were performed in the whole-cell patch-clamp configuration using fire-polished borosilicate micropipettes (Sutter Instruments, USA). Currents were recorded by an Axoclamp 200B amplifier (RRID: SCR_018866, Axon Instruments, USA) and acquired with an ITC-18 AD/DA converter (RRID: SCR_023164, HEKA Elektronik, Germany), both controlled with Patchmaster software (RRID:SCR_000034, HEKA Elektronik, Germany). Currents were low-passed filtered at 5 kHz and sampled at 20 kHz. The extracellular solution contained (in mM): 100 tetramethylammonium hydroxide and methanesulfonic acid (TMAOH-HMESO3), 100 buffer (2-(N-morpholino)) ethanesulfonicacid (MES) for pH 5.5 and 6.0; 4-(2-hydroxyethyl)–1-piperazineethanesulfonic acid (HEPES) for pH 7.0 and 7.5, 2 CaCl2, 2 MgCl2, 8 HCl, and pH-adjusted with TMAOH and HMESO. The intracellular solution contained (in mM): 80 (TMAOH-HMESO3) 100 buffer (MES for pH 5.5 and 6.0; HEPES for pH 7.0 and 7.5), 10 ethylene glycol-bis(β-aminoethyl ether)-N,N,N’,N’- tetraacetic acid (EGTA), 10 MgCl2, and 4 HCl and pH-adjusted with TMAOH and HMESO. With these solutions, patch pipettes had a resistance of 2–5 MΩ. Since cells used in these experiments were round to improve space-clamp and currents were relatively small, no series-resistance compensation was employed. The voltage-clamp protocols varied depending on the value of ΔpH and are indicated in the figure legends. The interval between each test pulse was 45 s at the holding potential to facilitate return of slow fluorescence signals and minimize the effects of proton depletion. Some cells expressed very large currents (>5 nA) and displayed too much proton depletion. These cells were excluded from further analysis.
 
-## Fluorescence measurements
+### Fluorescence measurements
 
 Fluorescence measurements in whole-cell PCF experiments were made using a TE-2000U (RIDD:SCR_023161, Nikon, Japan) inverted epifluorescence microscope with a 60× oil immersion objective (numerical aperture 1.4). A 405 nm solid-state laser (Compass 405–50 CW, COHERENT, USA) and a filter cube containing a 405/20 nm excitation filter, a 405 nm long pass dichroic mirror, and a 425 nm long-pass emission filter were used for Anap fluorescence excitation. For mCherry fluorescence, measurements were performed using an Ar-Ion laser (model 163, Spectra-Physics, Germany) and a filter cube with a 514/10 nm excitation filter, a 514 nm long pass dichroic mirror, and a 530 nm long-pass emission filter (Chroma, USA). Both lasers were through-air coupled, collimated using an optical cage system and appropriate optics (Thorlabs, USA) and then focused into the objective’s back focal plane through the microscope’s rear port. Imaging was performed using Luca or Ixon Ultra EMCCD cameras (RRID:SCR_023165 and SCR_023166, Andor, Oxford instruments, Ireland) controlled by Micromanager software (RRID: SCR_016865; Edelstein et al., 2014). The fluorescence of a region without cells was measured with the same region of interest (ROI) employed with cells, and this background was subtracted from Anap fluorescence images. Image stacks from cells were recorded at 10–25 Hz (100–40 ms of exposure, respectively). To improve signal-to-noise ratio, 4×4 or 8×8 pixel binning was used. Initially, fluorescence time course was measured from a ROI that included only the membrane of the patched cell. Identical results were obtained by using an ROI encompassing all the cell.
 
@@ -155,44 +207,84 @@ Fluorescence and proton current recording synchronization was achieved through a
 
 For spectral measurements, the light from the microscope was collected by a SpectraPro 2150i imaging spectrograph (RRID: SCR_023163, Princeton Instruments, USA) mounted between the microscope and EMCCD camera. The mCherry fluorescence was used as an indicator of membrane-associated channels. A small area from the membrane-associated mCherry fluorescence is selected using the spectrograph slit, and mCherry and Anap spectra were recorded by measuring a line scan 10 pixels wide from the cell membrane spectral image (Figure 2—figure supplement 1). Background fluorescence spectrum was recorded from a region of the image without cells and subtracted from Anap and mCherry fluorescence. Unless indicated, all the spectra were obtained at resting potential in non-patched cells (Thomas and Smart, 2005) and a ΔpH ~–0.2.
 
-## Data analysis
+### Data analysis
 
-IgorPro (RRID: SCR_000325, Wavemetrics, USA) and ImageJ (RRID: SCR_003070, NIH) software were used to analyze the data. For the G-V relationships, conductance (G) was calculated from proton currents according to:G(V)=IVV-Vrev
+IgorPro (RRID: SCR_000325, Wavemetrics, USA) and ImageJ (RRID: SCR_003070, NIH) software were used to analyze the data. For the G-V relationships, conductance (G) was calculated from proton currents according to:
 
-Where Vrev is the proton current reversal potential, measured from the current-voltage relation. Then, G was normalized and fit to a Boltzmann function as follows:(1)GGmax=11+exp(q(V-V0.5)/KBT)⁡
+$$
+G(V)=\frac{IV}{V-V_{rev}}
+$$
+
+Where Vrev is the proton current reversal potential, measured from the current-voltage relation. Then, G was normalized and fit to a Boltzmann function as follows:
+
+$$
+\frac{G}{G_{max}}=\frac{1}{1+exp^{(q(V-V_{0.5})/K_{B}T)}⁡}
+$$
 
 Where q is the apparent gating charge (in elementary charges, e0), V is the membrane potential, V0.5 is the potential at which half of the maximal activation is reached, KB is the Boltzmann constant, and T is the temperature in Kelvin.
 
-The time course of fluorescence in PCF experiments was obtained from all the background-subtracted images in a stack (Fi), and the changes through time were normalized to the first image (F0) as follows:Fi-F0F0=ΔFF0
+The time course of fluorescence in PCF experiments was obtained from all the background-subtracted images in a stack (Fi), and the changes through time were normalized to the first image (F0) as follows:
 
-Then, this normalization was multiplied by 100 to obtain the percent change of fluorescence. This procedure was carried out for each stack at each voltage. The voltage-dependence of the fluorescence was estimated from F-V relationships. The value of the fluorescence at the end of the volage step was normalized and fit to a Boltzmann function:(2)FFmax=11+exp(q(V-V0.5)/KBT)⁡
+$$
+\frac{F_{i}-F_{0}}{F_{0}}=\frac{ΔF}{F_{0}}
+$$
+
+Then, this normalization was multiplied by 100 to obtain the percent change of fluorescence. This procedure was carried out for each stack at each voltage. The voltage-dependence of the fluorescence was estimated from F-V relationships. The value of the fluorescence at the end of the volage step was normalized and fit to a Boltzmann function:
+
+$$
+\frac{F}{F_{max}}=\frac{1}{1+exp^{(q(V-V_{0.5})/K_{B}T)}⁡}
+$$
 
 Where F is the percent of fluorescence change at V potential, and Fmax is the maximum fluorescence percent change in each experiment at V potential. The meaning of q, V, V0.5, and KBT is the same as in Equation 1. All data are presented as the mean ± SEM.
 
-The time constants activation of proton currents and fluorescence signals were obtained by fitting of the second half of each trace to the equation:(3)I or Ft=Ass1-e-t-toτ
+The time constants activation of proton currents and fluorescence signals were obtained by fitting of the second half of each trace to the equation:
 
-Where Ass is the amplitude of the fluorescent signal (F) or current (I) at steady state, τ is the time constant, and t0 is the time of start if the voltage pulse, both in ms. The voltage dependence of τ was calculated from a fit to equation:(4)τV=τ0∙eqVKBT
+$$
+I or Ft=A_{ss}1-e^{\frac{-t-t_{o}}{\tau}}
+$$
+
+Where Ass is the amplitude of the fluorescent signal (F) or current (I) at steady state, τ is the time constant, and t0 is the time of start if the voltage pulse, both in ms. The voltage dependence of τ was calculated from a fit to equation:
+
+$$
+\tauV=\tau0∙e^{\frac{qV}{K_{B}T}}
+$$
 
 Where τ(0) is the activation time constant at 0 mV, q is the partial charge in e0 units, and V, KB, and T have the same meaning as in Equation 1.
 
-## Modeling
+### Modeling
 
-Modeling of current and fluorescence was carried out using custom-written programs in IgorPro. The occupancy of each discreet state in the models was calculated by numerically solving the differential equations describing the transitions between states. The occupancy of each discreet state i is Pi, and it was calculated by numerically solving the differential equations described by a master equation:dPidt=∑i≠j(Pjkji-Pikij)
+Modeling of current and fluorescence was carried out using custom-written programs in IgorPro. The occupancy of each discreet state in the models was calculated by numerically solving the differential equations describing the transitions between states. The occupancy of each discreet state i is Pi, and it was calculated by numerically solving the differential equations described by a master equation:
 
-The rate constants kij or kji are given by:kij=kij(0)∙exp⁡(-zijV/KBT)
+$$
+\frac{dP_{i}}{dt}=\sum_{i\neqj}(P_{j}k_{ji}-P_{i}k_{ij})
+$$
+
+The rate constants kij or kji are given by:
+
+$$
+k_{ij}=k_{ij}(0)∙exp⁡(-z_{ij}V/K_{B}T)
+$$
 
 Where kij(0) is the value of the rate constant at 0 mV, zij is the partial charge associated with the transition, and KBT have the same meaning as in Equation 1.
 
-The current as a function of time t and voltage V was calculated as:It,V=γch∙N∙V-Vrev∙Po(t,V)+γleak∙V-Vrevleak
+The current as a function of time t and voltage V was calculated as:
 
-γch is the single proton channel conductance, N is the number of channels, Vrev is the reversal potential, and Po is the probability of the open state. γleak is the leak conductance, and Vrevleak is the reversal potential of the leak currents.
+$$
+It,V=\gamma_{ch}∙N∙V-V_{rev}∙P_{o}(t,V)+\gamma_{leak}∙V-V_{rev}^{leak}
+$$
 
-The fluorescence was calculated as:Ft,V=∑i=0nPi(t,V)∙fi
+γch is the single proton channel conductance, N is the number of channels, Vrev is the reversal potential, and Po is the probability of the open state. γleak is the leak conductance, and $V_{rev}^{leak}$ is the reversal potential of the leak currents.
+
+The fluorescence was calculated as:
+
+$$
+Ft,V=\sumi=0nP_{i}(t,V)∙f_{i}
+$$
 
 fi is the fluorescence of the i-th state in arbitrary units.
 
 The Igor code used for simulations in Figure 5 and Figure 5—figure supplement 2 is available as source code files.
 
-## Materials availability statement
+### Materials availability statement
 
 All clones generated and employed in this study are available upon request.

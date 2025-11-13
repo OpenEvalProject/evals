@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.43243.001 All synapses require fusion-competent vesicles and coordinated Ca 2+ -secretion coupling for neurotransmission, yet functional and anatomical properties are diverse across different synapse types. We show that the presynaptic protein RIM-BP2 has diversified functions in neurotransmitter release at different central murine synapses and thus contributes to synaptic diversity. At hippocampal pyramidal CA3-CA1 synapses, RIM-BP2 loss has a mild effect on neurotransmitter release, by only regulating Ca 2+ -secretion coupling. However, at hippocampal mossy fiber synapses, RIM-BP2 has a substantial impact on neurotransmitter release by promoting vesicle docking/priming and vesicular release probability via stabilization of Munc13-1 at the active zone. We suggest that differences in the active zone organization may dictate the role a protein plays in synaptic transmission and that differences in active zone architecture is a major determinant factor in the functional diversity of synapses.
+All synapses require fusion-competent vesicles and coordinated Ca2+-secretion coupling for neurotransmission, yet functional and anatomical properties are diverse across different synapse types. We show that the presynaptic protein RIM-BP2 has diversified functions in neurotransmitter release at different central murine synapses and thus contributes to synaptic diversity. At hippocampal pyramidal CA3-CA1 synapses, RIM-BP2 loss has a mild effect on neurotransmitter release, by only regulating Ca2+-secretion coupling. However, at hippocampal mossy fiber synapses, RIM-BP2 has a substantial impact on neurotransmitter release by promoting vesicle docking/priming and vesicular release probability via stabilization of Munc13-1 at the active zone. We suggest that differences in the active zone organization may dictate the role a protein plays in synaptic transmission and that differences in active zone architecture is a major determinant factor in the functional diversity of synapses.
 
 ## Introduction
 
@@ -46,13 +46,13 @@ Now, extended analysis of how RIM-BP2 impacts on synaptic integrity revealed tha
 
 ## Results
 
-## Distinct role of RIM-BP2 at hippocampal synapses
+### Distinct role of RIM-BP2 at hippocampal synapses
 
 To probe the nature of diversity between central mammalian synapses, we examined the role of RIM-BP2 throughout the hippocampus. Immunostainings for RIM-BP2 in mouse hippocampal slices revealed RIM-BP2 expression in the whole hippocampal neuropil, with a strong labeling of the mossy-fiber layer band in the CA3 stratum lucidum (Figure 1a).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig1-v1.jpg)
 
-**Figure 1.:** (a) Immunostaining of RIM-PB2 in hippocampal brain slices (DG = dentate gyrus) and schematic illustration of recording configurations. (b) Input-output of synaptic transmission, plotted as PFV against fEPSP amplitude, of associative commissural (AC) and Schaffer collateral (SC) synapses showed no difference between RIM-BP2 WT and KO slices (AC: n(WT)=17 slices/6 animals; n(KO)=21 slices/6 animals) (SC: n(WT)=9 slices/3 animals; n(KO)=12 slices/3 animals). Sample traces show averages of 10 sweeps. Values represent mean ± SEM. (c) Input-output of synaptic transmission of MF synapses, plotted as PFV against fEPSP amplitude (MF: n(WT)=22 slices/7 animals; n(KO)=18 slices/7 animals). Sample traces show averages of 10 sweeps. (d) Frequency facilitation with 1 Hz stimulation of MF synapses (sweep 10–30). Sample traces show averages of five sweeps before (gray) and at the end of 1 Hz stimulation (black). For statistics please see Figure 1—source data 1.10.7554/eLife.43243.003Figure 1—source data 1.Figure 1.
+**Figure 1.:** (a) Immunostaining of RIM-PB2 in hippocampal brain slices (DG = dentate gyrus) and schematic illustration of recording configurations. (b) Input-output of synaptic transmission, plotted as PFV against fEPSP amplitude, of associative commissural (AC) and Schaffer collateral (SC) synapses showed no difference between RIM-BP2 WT and KO slices (AC: n(WT)=17 slices/6 animals; n(KO)=21 slices/6 animals) (SC: n(WT)=9 slices/3 animals; n(KO)=12 slices/3 animals). Sample traces show averages of 10 sweeps. Values represent mean ± SEM. (c) Input-output of synaptic transmission of MF synapses, plotted as PFV against fEPSP amplitude (MF: n(WT)=22 slices/7 animals; n(KO)=18 slices/7 animals). Sample traces show averages of 10 sweeps. (d) Frequency facilitation with 1 Hz stimulation of MF synapses (sweep 10–30). Sample traces show averages of five sweeps before (gray) and at the end of 1 Hz stimulation (black). For statistics please see Figure 1—source data 1.
 
 To analyze the functional impact of RIM-BP2 loss at different hippocampal synapses, we recorded field excitatory postsynaptic potentials (fEPSPs) in acute brain slices obtained from RIM-BP2 KO mice and wildtype (WT) littermates. Synaptic transmission was assessed at three different hippocampal synapses: the Mossy fiber – pyramidal cell synapse (MF-CA3), the Associational – commissural synapses (AC-CA3), and the SC synapse (CA3-CA1) (illustrated in Figure 1a). To ensure MF origin, we verified input sensitivity to group II metabotropic glutamate receptor (mGluR) agonist DCG IV (Yoshino et al., 1996). The ratio of fEPSP to presynaptic fiber volley (PFV) was drastically reduced when stimulating the MF pathway in RIM-BP2 deficient (KO) slices compared to that in WT slices (Figure 1c). This shows that neurotransmission is severely impaired upon loss of RIM-BP2 at MF synapses. In contrast, the ratio of fEPSP to presynaptic fiber volley (PFV) for associative commissural (AC)-fibers and Schaffer collaterals (SC), both representing small central synapses, were not affected by the loss of RIM-BP2 (Figure 1b). Thus, RIM-BP2 deletion specifically impairs neurotransmitter release at hippocampal MF synapses, compared to AC and SC synapses.
 
@@ -60,11 +60,19 @@ To further characterize the defect in neurotransmission at MF synapses upon loss
 
 In addition, we recorded in whole cell patch-clamp mode from CA3-pyramidal neurons in acute hippocampal slices and stimulated MF EPSCs. However, it was extremely difficult to find a quantifiable input of mossy fibers onto CA3 pyramids in the RIM-BP2 KOs, which was in sharp contrast to responses from WT animals. This strong phenotype made a comparative analysis of synaptic properties using whole cell recordings unfeasible.
 
-## RIM-BP2 deletion does not alter Ca2+-channel localization at the MF synapse
+### RIM-BP2 deletion does not alter Ca2+-channel localization at the MF synapse
 
 Given that RIM-BP2 contributes to high fidelity coupling of Ca2+-channels and release apparatus in CA3-CA1 synapses (Acuna et al., 2015; Grauel et al., 2016), the disruption in synaptic transmission in the MF synapse may also arise from alterations in active zone organization.
 
 Since MF terminals are unique in their morphology, we first assessed the active zone molecular architecture from WT mice. Therefore, we used triple-channel gSTED, with a lateral resolution of approximately 50 nm in all channels (Grauel et al., 2016). Due to limited capacity of antibodies combination, we could not combine specific markers to differentiate between MF postsynaptic partners in our immunostainings. We thereby refer to MF terminals or synapses in our analysis. In order to define putative differences in the active zone architecture at MF and CA3-CA1 synapses, we utilized super-resolution STED-microscopy based on detection of major active zone proteins intensities, here referred to as protein clusters. Quantification of the localization of these protein clusters was mainly performed by counting and measuring distances between intensities of these marker proteins. We compared the distribution of RIM-BP2 to the active zone markers Munc13-1 and Bassoon as a proxy for active zone organization. Protein clusters were determined by peak intensities, after image thresholding and watershed segmentation. We analyzed the k nearest neighbor distances (dk) between clusters formed by these proteins by measuring Euclidean distances between the centers of each cluster, using a semi-automated analysis described previously (Grauel et al., 2016) (Figure 2a–c). Since the k nearest neighbor distance analysis was performed in parallel on the same processed brain slice preparations as our previously published gSTED experiments at CA3-CA1 synapses, we were able to compare protein cluster distances between both synapse types. The average distance of the closest RIM-BP2 cluster relative to a given Bassoon cluster at MF synapses was comparable to CA3-CA1 synapses. However, the closest Munc13-1 cluster in the MF synapse was 51% further away from a RIM-BP2 cluster (174 ± 20 nm, Figure 2c) than what we previously observed at CA3-CA1 synapses (115 ± 5 nm) (Grauel et al., 2016). Our gSTED analysis does not allow the differentiation between intra- and inter- active zone protein clusters. However, ultrastructural quantifications of the MF active zone size (0.12 µm2) (Rollenhagen et al., 2007), are consistent with four RIM-BP2, two Bassoon, and three Munc13-1 clusters per active zone (Figure 2c). Regardless of this semiquantitative analysis, the difference in Munc13-1/RBP cluster distances is indicative for distinct active zone organization between MF and CA3-CA1 synapses.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig2-v1.jpg)
+
+**Figure 2.:** (a) Confocal (left) and gSTED (right) images of RIM-BP2, Munc13-1 and Bassoon (Bsn) at the active zone (AZ) of WT MF boutons (MFBs) in situ. Arrows indicate synapses in side view. (b) Example of k nearest neighbor distance analysis of protein clusters at MF synapses. Following image thresholding and Watershed segmentation, X and Y coordinates of each segmented cluster identified were retrieved and Euclidean distances of for example Munc13-1 clusters relative to a given RIM-BP2 cluster calculated with a custom-written MATLAB script. Several hundreds to thousands of clusters per image were analyzed and values averaged per animal (n = 6). (c) Upper, mean k nearest neighbor distances for Munc13-1 clusters relative to a given RIM-BP2 (left) or Bassoon (middle) cluster and for RIM-BP2 clusters relative to a given Bassoon cluster (right). Lower, mean k nearest neighbor distances for Munc13-1 clusters relative to Munc13-1 itself as center (left), for Bassoon clusters relative to itself (middle) and RIM-BP2 clusters relative to itself (right). Based on ultrastructural studies of MF AZ size, estimating an AZ diameter of 391 nm, at WT MFBs we detected at least three Munc13-1 clusters, two Bassoon clusters and four RIM-BP2 clusters within a single AZ, having a dk <391 nm.(d) gSTED images of CaV2.1, RIM1 and Homer1 clusters at MFBs of RIM-BP2 WT and KO brain slices. Arrows indicate synapses with two Cav2.1 clusters apposed to a single Homer1 cluster. (e) Average number of Cav2.1, RIM1 and Homer1 clusters found at MFBs and cluster ratio per each RIM-BP2 WT (n = 9) and KO (n = 9) mouse analyzed (f). No significant differences were observed between the two groups. (g) Example of k nearest neighbor distance analysis of protein clusters at MF synapses. Several hundreds to thousands of clusters per image were analyzed and values averaged per animal. (h) k nearest neighbor distances of the first and second closest RIM1 k neighbor (k = 1, k = 2) relative to a given Cav2.1 (first left), no significant differences were observed between RIM-BP2 WT and KO mice. No significant differences were observed also for the mean k nearest neighbor distance at which Cav2.1 clusters are located relative to a given Cav2.1 (second left). Based on ultrastructural studies of MF AZ size, estimating an AZ diameter of 391 nm, at WT MFBs we detected one RIM1 cluster and three Cav2.1 clusters per single active zone, having a dk <391 nm. No significant difference was observed for Cav2.1 and RIM1 localization in relation to Homer1 (third left and first right, respectively). Values represent mean ± SEM. For statistics please see Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) in situ gSTED images of Cav2.1 and Homer1 at MF synapses in RIM-BP2 WT and KO mice. Dotted line represents an example of a synapse analyzed by line profile measurement. Line profile thickness was set to ~250 nm. (b) Intensity line profiles of the synapses displayed in (a). For display, intensity in each channel was normalized to its maximum after background subtraction. We analyzed 24–35 line profiles per mouse (n = 9 mice/genotype). (c) inter-Cav2.1 distances found averaged per mouse analyzed. (d) Frequency histogram for all inter-Cav2.1 distances found. Counts were normalized to obtain a probability density function with an integral equal 1. No significant difference between RIM-BP2 WT and KO mice was observed. Values represent mean ± SEM. For statistics please see Figure 2—figure supplement 1—source data 1.
 
 We next asked whether changes in protein cluster distribution might account for the impaired release in RIM-BP2 deficient MF synapses. First, in accordance to the phenotype observed at the CA3-CA1 synapse (11,12d), we determined the position of clusters formed by the P/Q type Ca2+-channel subunit Cav2.1 in relation to clusters formed by the active zone protein RIM1, and the postsynaptic scaffold Homer1 in RIM-BP2 WT and KO MF synapses. Surprisingly, neither the number, the ratio of protein clusters nor the distance of RIM1 or Homer1 clusters to a given Cav2.1 cluster were altered upon the loss of RIM-BP2 (Figure 2d–f). As for RIM-BP2, Munc13-1, and Bassoon we computed the putative number of clusters formed by Cav2.1 and RIM1 that would fit in an average MF active zone (Figure 2g). According to the threshold applied, we detected in average three Cav2.1 clusters and one RIM1 clusters per single active zone in WT mice (Figure 2h). We further analyzed the cluster number and k nearest neighbor distances of RIM1, as main interacting scaffold protein of RIM-BP2. The cluster number of RIM1 as well as the nearest neighbor distance between Homer1 and RIM1 clusters was unaltered in RIM-BP2 deficient MF synapses (Figure 2g,h). Although we observed a higher variability in the RIM1/Cav2.1 cluster ratio in RIM-BP2 KO mice (Figure 2e,f), our data suggest that the loss of RIM-BP2 does not grossly alter RIM1 cluster number or localization at MF terminals.
 
@@ -72,9 +80,29 @@ To probe again for differential organizations of MF and CA3-CA1 synapses, we com
 
 Our unbiased k nearest neighbor analysis measures the distance of thousands of neighboring protein clusters found in one image. However, it does not allow us to discriminate protein clusters within or between nearby active zones unequivocally. To retrieve a more direct determination of distances within the active zone, we performed line profile measurements of peak-to-peak distances between protein clusters in selected active zones that are defined to be opposite to the postsynaptic marker Homer1. We analyzed only well-defined synapses in side or planar view. As shown with our k nearest neighbor analysis, line profile measurements did not reveal a significant change in the distance between two adjacent Cav2.1 clusters comparing RIM-BP2 WT and KO MF synapses (Figure 2—figure supplement 1), indicative of unaltered P/Q type Ca2+-channel localization within a given MF active zone upon loss of RIM-BP2. Our line profile measurements retrieved a distance between two Cav2.1 clusters of 184 ± 6 nm, a distance shorter than the one obtained with our semi-automated analysis (238 ± 23 nm), possibly indicating a subpopulation of synapses selected or mapping of clusters belonging to neighboring active zones, respectively.
 
-## RIM-BP2 stabilizes Munc13-1 protein clusters at MF synapses
+### RIM-BP2 stabilizes Munc13-1 protein clusters at MF synapses
 
 We next compared the relative localization and abundance of Munc13-1 clusters and their distance to Ca2+-channels in RIM-BP2 WT and KO brain slices. In these experiments we identified MF synapses by their expression of the vesicular ZnT3, enriched at these synapses (Wenzel et al., 1997). Interestingly, we found a drastic reduction in the number of Munc13-1 clusters in RIM-BP2 deficient synapses, accompanied by a decrease in Munc13-1 clusters at specific distances from a given Cav2.1 clusters (Figure 3a–e). Therefore, in RIM-BP2 deficient MF active zones we detect less Munc13-1 clusters, which also were located at an increased distance to Cav2.1 clusters compared to WT MF synapses (Figure 3f,g). In contrast, the Munc13-1 cluster number and distribution at CA3-CA1 synapses were unaltered upon RIM-BP2 loss (Figure 3h–m), indicating that the observed reduction in the Munc13-1 cluster number is specific for MF synapses. To ensure the analysis of intra-active zone clusters, we performed line profile measurements assessing the peak intensity distance between Munc13-1 and Cav2.1 clusters in RIM-BP2 WT and KO MF synapses. Peak-to-peak distance measurements revealed a significantly increased distance of Munc13-1 clusters relative to Cav2.1 clusters in RIM-BP2 deficient MF synapses compared to WT (Figure 3—figure supplement 1), supporting our results from the semi-automated k nearest neighbor analysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative gSTED images of CaV2.1 and Munc13-1 clusters at MF boutons (MFB) identified by ZnT3 expression (confocal) in RIM-BP2 WT and KO brain sections. Arrows indicate Munc13-1 clusters nearby CaV2.1 clusters. (b) Example of k nearest neighbor distance analysis of Munc13-1 clusters relative to a given Cav2.1 cluster at MF synapses. Following image thresholding and Watershed segmentation, X and Y coordinates of each segmented cluster identified were retrieved and Euclidean distances of for example Munc13-1 clusters relative to a given Cav2.1 cluster calculated with a custom-written MATLAB script (b, upper). Similarly, we retrieved the number of for example Munc13-1 clusters found at specific distance intervals (nm) from a given Cav2.1 cluster (b, lower). Several hundreds to thousands of clusters per image were analyzed and values averaged per animal. (c) Average number of Cav2.1 clusters within the ZnT3 +area found per each RIM-BP2 WT (n = 8) and KO (n = 6) animal analyzed. ZnT3 was used as marker to identify MF synapses. (d) Average number of Munc13-1 clusters within the ZnT3 +area found per each RIM-BP2 WT and KO animal analyzed (e) Ratio of Munc13-1 clusters/Cav2.1 clusters in RIM-BP2 KO and WT mice. (f) The number of Munc13-1 clusters at determined distance intervals (nm) from a given Cav2.1 cluster decreased significantly at all distances analyzed in RIM-BP2 KO, while the distance of the first closest k neighbor (k = 1; g) up to the fourth (k = 4) significantly increased. (h) Representative gSTED images of Cav2.1 and Munc13-1 clusters at CA3-CA1 synapses in RIM-BP2 WT and KO brain sections. Arrows indicate Munc13-1 clusters adjacent to Cav2.1 clusters. (i) Average number of Cav2.1 clusters and Munc13-1 clusters (j) found within the field of view at CA3-CA1 synapses in RIM-BP2 KO (n = 6) and WT (n = 9) mice (k) Ratio of Munc13-1 clusters/Cav2.1 clusters at CA3-CA1 synapses. (l) At CA3-CA1 synapses, loss of RIM-BP2 does not significantly alter either the number of Munc13-1 clusters at determined distance intervals (nm) from a given Cav2.1 cluster or the distance at which the first closest k neighbor (k = 1, (m) is found. Values represent mean ± SEM. *p<0.05, **p<0.01. For statistics please see Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) in situ gSTED images of Munc13-1 and Cav2.1 at MF synapses in RIM-BP2 WT and KO mice. Dotted line represents an example of a synapse analyzed by line profile measurement. Line profile thickness was set to ~250 nm. (b) Intensity line profiles of the synapses displayed in (a). For display, intensity in each channel was normalized to its maximum after background subtraction. We analyzed 30–48 line profiles per mouse (n (WT) = 8 mice and n (KO) = 6 mice). (c) Munc13-1-Cav2.1 distances averaged per mouse analyzed. A significant increase in the distance at which Munc3-1 clusters are found relative to Cav2.1 clusters was observed in RIM-BP2 KO as compared to WT mice. (d) Frequency histogram for all Munc13-1-Cav2.1 distances found. Counts were normalized to obtain a probability density function with an integral equal 1. Values represent mean ± SEM. *p<0.05. For statistics please see Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) in situ gSTED images of Munc13-1 and Homer1 at MF synapses in RIM-BP2 WT and KO mice. Dotted line represents an example of a synapse analyzed by line profile measurement. Line profile thickness was set to ~250 nm (b) Intensity line profiles of the synapses displayed in (a). For display, intensity in each channel was normalized to its maximum after background subtraction. We analyzed 31–36 line profiles per mouse (n (WT) = 6 mice and n (KO) = 6 mice). (c) inter-Munc13-1 distances averaged per mouse analyzed. A significant increase in the distance at which two Munc13-1 clusters are found relative to each other was observed in RIM-BP2 KO as compared to WT mice. (d) Frequency histogram for all inter-Munc13-1 distances found. Counts were normalized to obtain a probability density function with an integral equal 1. (e) in situ gSTED images of Munc13-1 and Homer1 at CA3-CA1 synapses in RIM-BP2 WT and KO mice. Dotted line represents an example of a synapse analyzed by line profile measurement. Line profile thickness was set to ~250 nm (f) Intensity line profiles of the synapses displayed in (e). For display, intensity in each channel was normalized to its maximum after background subtraction. We analyzed 27–30 line profiles per mouse (n (WT) = 6 mice and n (KO) = 6 mice). (g) Inter-Munc13-1 distances averaged per mouse analyzed. At CA3-CA1 synapses, no significant difference was observed in the distance at which two Munc13-1 clusters are found relative to each other. (h) Frequency histogram for all inter-Munc13-1 distances found. Counts were normalized to obtain a probability density function with an integral equal 1. Values represent mean ± SEM. **p<0.01. For statistics please see Figure 3—figure supplement 2—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) in situ confocal images of Munc13-1 immunoreactivity at MF synapses, in the CA3 stratum lucidum of RIM-BP2 WT (n = 8) and KO (n = 6) mice. (b) Munc13-1 intensity for MF synapses, normalized to RIM-BP2 WT mice. Loss of RIM-BP2 resulted in significantly lower Munc13-1 intensity in RIM-BP2 KO mice as compared to RIM-BP2 WT mice. (c) in situ confocal images of Munc13-1 immunoreactivity in the CA1 stratum radiatum (n(WT)=9; n(KO)=6). (d) Munc13-1 intensity for CA3-CA1 synapses, normalized to RIM-BP2 WT mice. At CA3-CA1 synapses, RIM-BP2 deletion did not significantly altered Munc13-1 intensity. Values represent mean ± SEM. *p<0.05. For statistics please see Figure 3—figure supplement 3—source data 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Representative gSTED images of Cav2.1 and Munc13-2 clusters at MF boutons (MFB) identified by ZnT3 expression (confocal) in RIM-BP2 WT and KO brain sections. Arrows indicate Munc13-2 clusters nearby Cav2.1 clusters. (b) Example of k nearest neighbor distance analysis of Munc13-2 clusters relative to a given Cav2.1 cluster at MF synapses. Following image thresholding and Watershed segmentation, X and Y coordinates of each segmented cluster identified were retrieved and Euclidean distances of for example Munc13-2 clusters relative to a given Cav2.1 cluster calculated with a custom-written MATLAB script (b, upper). Similarly, we retrieved the number of for example Munc13-2 clusters found at specific distance intervals (nm) from a given Cav2.1 cluster (b, lower). Several hundreds to thousands of clusters per image were analyzed and values averaged per animal. (c) Average number of Cav2.1 clusters within the ZnT3 +area found per each RIM-BP2 WT (n = 6) and KO (n = 6) animal analyzed. ZnT3 was used as marker to identify MF synapses. (d) Average number of Munc13-2 clusters within the ZnT3 +area found per each RIM-BP2 WT and KO animal analyzed (e) Ratio of Munc13-2- clusters/Cav2.1 clusters in RIM-BP2 KO and WT mice. (f) Number of Munc13-2 clusters at determined distance intervals (nm) from a given Cav2.1 cluster and distance at which the closest k neighbor (k = 1,2,3,4; g) is found. No significant difference was observed between RIM-BP2 KO and WT mice. (h) Representative gSTED images of Cav2.1 and Munc13-2 clusters at CA3-CA1 synapses in RIM-BP2 WT and KO brain sections. Arrows indicate Munc13-2 clusters nearby Cav2.1 clusters. (i) Number of Cav2.1 clusters and Munc13-2 clusters (j) found at CA3-CA1 synapses in RIM-BP2 KO (n = 6) and WT mice (n = 6). (k) Ratio of Munc13-2 clusters/Cav2.1 clusters at CA3-CA1 synapses. (l) At CA3-CA1 synapses, loss of RIM-BP2 does not significantly alter either the number of Munc13-2 clusters at determined distance intervals (nm) from a given Cav2.1 cluster or the distance at which the closest k neighbor (k = 1,2,3) is found (m). Values represent mean ± SEM. For statistics please see Figure 3—figure supplement 4—source data 1.
 
 To further validate our results on Munc13-1 localization within a single active zone, we analyzed by line profile measurements inter-cluster distances of two Munc13-1 clusters opposed to Homer1 at MF and CA3-CA1 terminals of RIM-BP2 WT and KO mice. Confirming our nearest neighbor analysis, the peak-to-peak distance between two Munc13-1 clusters increased at RIM-BP2 KO MF active zones, in contrast to CA3-CA1 synapses (Figure 3—figure supplement 2). Notably, as shown for Cav2.1 inter-cluster measurements, the distances between Munc13-1 and Cav2.1 clusters or inter-Munc13-1 clusters retrieved by line profile measurements were shorter than the one retrieved with our semi-automated analysis, possibly indicating a subpopulation of synapses selected or mapping of clusters belonging to neighboring active zones, respectively.
 
@@ -84,31 +112,43 @@ To analyze if the loss of RIM-BP2 synapse specifically affects protein clusterin
 
 We also analyzed the relative distribution and abundance of Munc13-2 clusters relative to a given Cav2.1 cluster at both MF and CA3-CA1 synapses. In both synapses, loss of RIM-BP2 neither altered the number of protein clusters nor the distribution of Munc13-2 clusters relative to Cav2.1 channels (Figure 3—figure supplement 4), showing that the observed electrophysiological phenotype is not due to Munc13-2 loss (Breustedt et al., 2010).
 
-## RIM-BP2 docks synaptic vesicles via the specific recruitment of Munc13-1 at MF synapses
+### RIM-BP2 docks synaptic vesicles via the specific recruitment of Munc13-1 at MF synapses
 
 The primary role of Munc13-1 is to dock and prime synaptic vesicles (SV) at the active zone (Imig et al., 2014; Augustin et al., 1999). To explore whether the reduction in Munc13-1 clusters at RIM-BP2 deficient MF synapse might result in a decrease of vesicle docking, we analyzed their ultrastructural anatomy by electron microscopy (Figure 4a). We made use of high-pressure freezing fixation followed by freeze substitution, since conventional chemical fixation cannot reveal the Munc13-1 dependent loss in SV docking (Varoqueaux et al., 2002; Camacho et al., 2017). High-pressure freezing of acute hippocampal slices (4–6 weeks) show a ~ 25% reduction in docked SVs in RIM-BP2 deficient MF synapses compared to WT MF synapses (Figure 4c). The size of the post-synaptic density (PSD) was unaltered upon the loss of RIM-BP2 indicating that RIM-BP2 does not affect trans-synaptic interactions at MF synapses (Figure 4b). To evaluate whether the deletion of RIM-BP2 in acute hippocampal slices also affects SV docking at SC synapses we analyzed SV distribution at small central synapses in the CA1 area in parallel. However as expected from previous results in culture (Grauel et al., 2016), the number of docked SVs in CA1 synapses was unaltered in RIM-BP2 deficient synapses compared to synapses from WT slices (Figure 4b,f).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig4-v1.jpg)
 
-**Figure 4.:** Representative EM images of MF synapses from acute hippocampal slices obtained from RIM-BP2 KO (black: three animals/each2-3 slices/78 active zones) and WT (red: three animals/2–3 slices each/52 active zones) mice. (b) Representative EM images of CA1 synapses from acute hippocampal slices obtained from RIM-PB2 KO (black: three animals/each2slices/27 active zones) and WT (red: three animals/2 slices each/25 active zones) mice. (c) Frequency distribution and bar graph show no difference in the size in the post-synaptic density (PSD) in MF active zones from WT or RIM-BP2 KO slices. (d) Frequency distribution and bar graph show a reduction of docked vesicles per 100 nm of the active zone at RIM-BP2 KO MF synapse compared to WT MF synapses. (e) Frequency distribution and bar graph depict no difference in the number of docked large vesicles (LV) (vesicle diameter >70 nm) (f) Frequency distribution and bar graph of docked vesicles at CA3-CA1 synapses show no difference between WT and RIM-BP2 KO. Values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001. For statistics please see Figure 4—source data 1.10.7554/eLife.43243.019Figure 4—source data 1.Figure 4.
+**Figure 4.:** Representative EM images of MF synapses from acute hippocampal slices obtained from RIM-BP2 KO (black: three animals/each2-3 slices/78 active zones) and WT (red: three animals/2–3 slices each/52 active zones) mice. (b) Representative EM images of CA1 synapses from acute hippocampal slices obtained from RIM-PB2 KO (black: three animals/each2slices/27 active zones) and WT (red: three animals/2 slices each/25 active zones) mice. (c) Frequency distribution and bar graph show no difference in the size in the post-synaptic density (PSD) in MF active zones from WT or RIM-BP2 KO slices. (d) Frequency distribution and bar graph show a reduction of docked vesicles per 100 nm of the active zone at RIM-BP2 KO MF synapse compared to WT MF synapses. (e) Frequency distribution and bar graph depict no difference in the number of docked large vesicles (LV) (vesicle diameter >70 nm) (f) Frequency distribution and bar graph of docked vesicles at CA3-CA1 synapses show no difference between WT and RIM-BP2 KO. Values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001. For statistics please see Figure 4—source data 1.
 
 MF synapses also contain a small but distinct fraction of large clear vesicles (>70 nm diameter; Henze et al., 2002; Rollenhagen and Lübke, 2010), which generate mEPSC >100 pA upon fusion (Henze et al., 2002). The number of large docked vesicles per active zone was however not affected by the deletion of RIM-BP2 (Figure 4e).
 
 Thus, in contrast to CA3-CA1 synapses, MF synapses require RIM-BP2 dependent stabilization of Munc13-1 at the active zone to dock synaptic vesicles.
 
-## Loss of RIM-BP2 impairs vesicle priming and release efficiency in granule autaptic neurons
+### Loss of RIM-BP2 impairs vesicle priming and release efficiency in granule autaptic neurons
 
 To examine the functional impact of RIM-BP2 loss in MF synapses, we prepared autaptic cultures of hippocampal granule cells that form synaptic contacts only with themselves and therefore allow the quantitative analysis of synaptic input-output properties. It is important to note that cultured granule cells form MF like boutons as assessed by EM analysis (Figure 5—figure supplement 1) and are sensitive to the application of DCG IV (Figure 5a,b and Figure 5—figure supplement 1). Therefore, granule autaptic neurons exhibit key aspects of hippocampal granule cell identity. Interestingly, since autapses just form synapses with themselves, their specialized protein expression and presynaptic ultrastructure are likely to be intrinsically encoded and mostly independent of the postsynaptic target.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig5-v1.jpg)
+
+**Figure 5.:** (a) Sample traces of evoked EPSC amplitudes before (black) and after DCG IV application (gray) for RIM-BP2 WT and KO neurons. RIM-BP2 KO neurons were rescued by lentiviral transduction of RIM-BP2. (Number of experiments (cells/cultures); EPSC WT (70/4); KO (78/4); RIM-BP2 (24/3)) (b) Summary graphs of normalized EPSC amplitudes evoked by 2 ms depolarization (red arrow). (c) Sample traces and (d) summary graphs of normalized RRP responses elicited by a 5 s application of 500 mM sucrose. Summary graph of the PVR calculated as the ratio of the EPSC charge and the RRP charge. (Sucrose WT (69/4); KO (59/4); RIM-BP2 (24/3)) .(e) Sample traces of evoked EPSC amplitudes with an interstimulus interval of 25 ms. (f) Summary graph of paired-pulse ratio (PPR) of RIM-BP2 WT, KO and RIM-BP2 rescued autaptic granule neurons. (PPR WT (70/4); KO (74/4); RIM-BP2 (24/3)) (g) Summary graph of Paired-Pulse-Ratio (PPR) of granule cells with different inter-stimulus intervals of RIM-BP2 WT and KO granule autapses (PPR WT (28/2), PPR KO (29/2)). (h) Sample traces of miniature EPSCs (mEPSCs) and summary graph of mEPSC frequencies. (mEPSC WT (63/4); KO (43/4); RIM-BP2 (24/3)). Values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001. For statistics please see Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative EM image of a granule cells in culture. (b) Sample traces and summary graphs of evoked EPSCs of granule cells with an interstimulus interval of 25 ms before (black) and after DCG IV application (gray) of RIM-BP2 WT and KO neurons. Both WT and KO neurons respond to the DCG IV application. EPSC amplitudes were reduced in RIM-BP2 KO neurons. (c) Representative EM image of a small central synapse in culture. (d) Sample traces and summary graphs of evoked EPSCs of hippocampal autaptic neurons with an interstimulus interval of 25 ms from RIM-BP2 WT and KO neurons that did not respond to DCG IV application. Autaptic neurons that do not respond to DCG IV application showed no reduction in EPSC amplitude in RIM-BP2 KO autapses compared to WT.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Sample traces of miniature EPSCs (mEPSCs) and summary graph of mEPSC amplitudes. (mEPSC WT (48/4); KO (37/4); RIM-BP2 (24/3)) (b) Sample traces of normalized EPSC amplitudes to the first EPSC and (c) summary graph of EPSCs elicited by a 10 Hz stimulation train (WT (54/3); KO (44/3); RIM-BP2 (18/3). Values represent mean ± SEM. For statistics please see Figure 5—figure supplement 2—source data 1.
+
 We first tested whether autaptic granule neurons also show a reduction in neurotransmitter release upon RIM-BP2 loss and thus whether they can be used as a model system to study synapse diversity. Consistent with the findings from hippocampal field recordings (Figure 1), evoked excitatory postsynaptic currents (EPSCs) were severely impaired in RIM-BP2 KO granule cell autapses as compared to that in WT autapses (Figure 5a,b). Rescue of RIM-BP2 deficiency by lentiviral expression in RIM-BP2 KO neurons completely restored synaptic transmission, confirming the specificity of RIM-BP2 function at these synapses (Figure 5a,b). To examine the origin of the impaired evoked response, we first probed vesicle priming by measuring the readily releasable pool (RRP) via hypertonic sucrose solution application. In line with the finding that RIM-BP2 KO MF synapses had only half the number of docked vesicles compared to that in WT neurons (Figure 4), the size of the RRP was significantly reduced (Figure 5c,d). The frequency and amplitude of Ca2+-independent release events as measured by recording spontaneous miniature EPSCs (mEPSCs) were not significantly altered upon RIM-BP2 loss (Figure 5h and Figure 5—figure supplement 2a). We next assessed vesicular release probability Pvr, as the ratio of EPSC and RRP charge, and RIM-BP2 KO and WT granule autapses were not significantly different (Figure 5d). However, utilizing paired-pulse ratio (PPR, 25 ms interstimulus interval), we found that RIM-BP2 KO neurons displayed enhanced facilitation compared to WT neurons, which could be rescued by re-expression of RIM-BP2 (Figure 5e,f). We assessed PPR in more detail by extending interstimulus intervals to up to 500 ms. At all but one interstimulus intervals tested (250 ms), PPF was increased (Figure 5g). Also, EPSCs evoked by 10 Hz action potential trains displayed less depression over the 5 s train duration in RIM-BP2 KO granule cell autapses compared to WT or rescue groups (Figure 5—figure supplement 2b,c). Thus, loss of RIM-BP2 leads to impaired hippocampal granule cell output, due to changes in both vesicle docking/priming and due to changes in release during repeated stimuli.
 
-## RIM-BP2 primes synaptic vesicles via Munc13-1 in granule autaptic neurons
+### RIM-BP2 primes synaptic vesicles via Munc13-1 in granule autaptic neurons
 
 Our gSTED imaging experiments revealed a decrease in presynaptic Munc13-1 clusters upon the loss of RIM-BP2 (Figure 3). In small central synapses, priming is attained by an interaction of Munc13 and RIM via the Munc13 C2A domain, which can be mimicked by the constitutively monomeric mutant Munc13-1 K32E lacking Munc13-1 homodimerization (Deng et al., 2011). To test whether vesicle priming can be rescued by restoring Munc13-1 function in RIM-BP deficient MF synapses, we lentivirally transduced Munc13-1 WT (M13WT) or the constitutively monomeric Munc13-1 mutant (M13K32E) (Camacho et al., 2017) in granule autapses. Remarkably, Munc13-1 K32E expression in RIM-BP2 KO granule neurons sufficed to rescue the RRP, whereas Munc13-1 WT was not sufficient to rescue vesicle priming upon RIM-BP2 deletion (Figure 6d). In line with the RRP, evoked release could not be rescued by Munc13-1 WT, but required the constitutive active form of Munc13-1 K32E (Figure 6a,b). Again, the Pvr was neither altered upon RIM-BP2 deletion nor by the rescue of Munc13-1 WT or Munc13-1 K32E (Figure 6d).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/43243/elife-43243-fig6-v1.jpg)
 
-**Figure 6.:** (a) Sample traces of evoked EPSC amplitudes before (black) and after DCG IV application (gray) for RIM-BP2 WT and KO neurons and lentiviral-transduced RIM-BP2 KO rescues with either Munc13-1 WT (M13WT) or Munc13-1 K32E (M13K32E). (b) Summary graphs of normalized EPSC amplitudes evoked by 2 ms depolarization (red arrow) (EPSC WT (49/3); KO (47/3); M13WT (18/2); M13K32E(41/3)) and after DCGIV application. (EPSC-DCG WT (49/3); KO (44/3); M13WT (18/2); M13K32E(41/3)) (c) Sample traces and (d) summary graphs of normalized RRP responses elicited by a 5 s application of 500 mM sucrose (RRP WT (41/3); KO (36/3); M13WT (17/2); M13K32E(39/3)). Summary graph of the PVR calculated as the ratio of the EPSC charge and the RRP charge (Pvr WT (41/3); KO (38/3); M13WT (16/2); M13K32E(37/3)). Values represent mean ± SEM. *p<0.05, **p<0.01. For statistics please see Figure 6—source data 1.10.7554/eLife.43243.026Figure 6—source data 1.Figure 6.
+**Figure 6.:** (a) Sample traces of evoked EPSC amplitudes before (black) and after DCG IV application (gray) for RIM-BP2 WT and KO neurons and lentiviral-transduced RIM-BP2 KO rescues with either Munc13-1 WT (M13WT) or Munc13-1 K32E (M13K32E). (b) Summary graphs of normalized EPSC amplitudes evoked by 2 ms depolarization (red arrow) (EPSC WT (49/3); KO (47/3); M13WT (18/2); M13K32E(41/3)) and after DCGIV application. (EPSC-DCG WT (49/3); KO (44/3); M13WT (18/2); M13K32E(41/3)) (c) Sample traces and (d) summary graphs of normalized RRP responses elicited by a 5 s application of 500 mM sucrose (RRP WT (41/3); KO (36/3); M13WT (17/2); M13K32E(39/3)). Summary graph of the PVR calculated as the ratio of the EPSC charge and the RRP charge (Pvr WT (41/3); KO (38/3); M13WT (16/2); M13K32E(37/3)). Values represent mean ± SEM. *p<0.05, **p<0.01. For statistics please see Figure 6—source data 1.
 
 These results suggest that in MF synapses, unlike hippocampal pyramidal neuron synapses, the recruitment or stabilization of active monomeric Munc13-1 is RIM-BP2 dependent.
 
@@ -134,11 +174,140 @@ It will be of interest to see whether and through which molecular mechanism loss
 
 ## Materials and methods
 
-## KO mouse generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rimbp2</td>
+      <td>PMID: 27671655</td>
+      <td></td>
+      <td>Prof. Christian Rosenmund, Prof. Dietmar Schmitz (Charité)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>f(syn)NLS-RFP-P2A-RIMBP2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>f(syn)NLS-GFP-P2A-rMunc13.1-Flag</td>
+      <td>PMID: 28489077</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>f(syn)NLS-GFP P2A-Munc13.1 K32E-Flag</td>
+      <td>PMID: 28489077</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bsn (N-terminal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_1860018</td>
+      <td>1:1200 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cav2.1 (rat aa1921-2212)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_2619841</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cav2.1 (rat aa1921-2212)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_2619842</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Homer1 (human aa 1–186)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_10549720</td>
+      <td>1:200 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MUNC13-1 (rat aa 3–317)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_887734</td>
+      <td>1:150 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MUNC13-2 (rat aa 151–317)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_2619807</td>
+      <td>1:150 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RIM1 (rat aa 602–723)</td>
+      <td>BD Pharmigen</td>
+      <td>RRID:AB_2315284</td>
+      <td>1:200 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RIM-BP2 (rat aa 589–869)</td>
+      <td>Kind gift of A. Fejtova and Eckart Gundelfinger (Leibniz Institute for Neurobiology, Magdeburg, Germany)</td>
+      <td></td>
+      <td>1:600/1:1000 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ZnT3 (mouse aa 2–75)</td>
+      <td>Synaptic System</td>
+      <td>RRID:AB_2189665</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti mouse AF488</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_138404</td>
+      <td>1:100/1:200 (gSTED) 1:400 (confocal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti guinea pig AF594</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_141930</td>
+      <td>1:100/1:200 (gSTED) 1:400 (confocal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti rabbit ATTO647N</td>
+      <td>Active Motif</td>
+      <td>Cat number #15048</td>
+      <td>1:100 (gSTED)</td>
+    </tr>
+  </tbody>
+</table>
+
+### KO mouse generation
 
 RIM-BP2 KO mouse generation, specific deletion of the Rimbp2 gene, and genotyping was performed as described previously (Grauel et al., 2016). All animal experiments were approved by the animal welfare committee of Charité Universitaetsmedizin Berlin and the Landesamt für Gesundheit und Soziales Berlin and carried out under the license (Berlin State Government, T0410/12; T0100/03).
 
-## Slice preparation and electrophysiological recordings
+### Slice preparation and electrophysiological recordings
 
 Acute hippocampal slices were prepared as described previously (Grauel et al., 2016). In brief, RIM-BP2 KO mice and wild-type littermates of both sexes (4–8 weeks) were anesthetized with Isofluorane and decapitated. The brain was quickly removed and chilled in ice-cold sucrose-artificial cerebrospinal fluid (sACSF) containing (in mM): 50 NaCl, 25 NaHCO3, 10 glucose, 150 sucrose, 2.5 KCl, 1 NaH2PO4, 0.5 CaCl2, and 7 MgCl2. All solutions were saturated with 95% (vol/vol) O2/5% (vol/vol) CO2, pH 7.4.
 
@@ -150,15 +319,15 @@ For recordings, slices were placed in a recording chamber continuously superfuse
 
 For Mossy fiber recordings, stimulation electrodes were placed in the granule cell layer or in the hilus region. For fEPSP recordings, the recording electrode was placed in stratum lucidum of CA3 region. Mossy fiber origin of recorded signals was verified by frequency facilitation >400% when stimulus frequency was changed from 0.05 to 1 Hz and a complete block of responses upon DCG IV (1 µM; Tocris) application at the end of each experiment. Whole-cell recordings in voltage-clamp mode were performed in CA3 pyramidal cells, with an intracellular solution containing (in mM): K-Gluconate 120; Hepes 10; KCl 10; EGTA 5; MgSO4 2; MgATP 3; NaGTP one and Na-Phosphocreratine 5. Cells were held at −60 mV and series resistance was monitored by delivery of voltage steps prior to each evoked current. Mossy fiber signals were verified by pronounced frequency facilitation and paired pulse facilitation as well as by sensitivity to DCG IV. Paired pulse ratio (50 ms inter-stimulus interval) was measured on the average trace of 20 evoked currents (including possible failures). Failure rate was calculated in 30 traces by detecting the number of traces in which stimulation failed to induce an EPSC. fEPSPs in CA1 were recorded in stratum radiatum after stimulation of the Schaffer collaterals. fEPSPs of associative commissural fibers in area CA3 were recorded in stratum radiatum after stimulation electrodes were places in stratum radiatum of CA3, in the presence of DCG IV (1 µM) to avoid mossy fiber contamination. Amplitudes of EPSCs and fEPSPs were determined by analyzing ±2 ms of the amplitude peak. Data were analyzed with the Igor plug-in NeuroMatic (http://neuromatic.thinkrandom.com/) software. Recordings were only analyzed if the fiber volley remained constant throughout the recording. Statistical analysis was performed with Prism 6 (GraphPad Software).
 
-## Autaptic granule cell culture
+### Autaptic granule cell culture
 
 Autaptic cultures of Dentate Gyrus Granule cells were prepared as described previously (Rost et al., 2010). In brief, the dentate gyrus of P0-P1 RIM-BP2 WT and KO embryos was separated from the hippocampus. After digestion with Papain and trituration, cells were plated on astrocytic micro-islands (Arancillo et al., 2013). Neurons were incubated at 37°C for 14–20 days before the electrophysiological characterization was performed. For rescue experiments, neurons were transduced with lentiviruses 24 hr after plating.
 
-## Lentiviral constructs
+### Lentiviral constructs
 
 Lentiviral constructs used in this study were based on the FUGW vector (Lois et al., 2002). The cDNA from mouse RIM-BP2 (NM_001081388) and from rat Unc-13a (NM_022861) (Camacho et al., 2017) were cloned into an lentiviral shuttle vector after a NLS-GFP-P2A or NLS-GFP-P2A under the control of a human synapsin-1 promoter. The expression of nuclear RFP or GFP allows to identify transduced neurons. All lentiviruses were provided from the Viral Core Facility of the Charité Berlin and prepared as described before (Lois et al., 2002).
 
-## Electrophysiological recordings of autaptic neurons
+### Electrophysiological recordings of autaptic neurons
 
 To pharmacologically identify autaptic granule cells, DCG IV (1 µm) was washed in after each experiment. Only cells where synaptic transmission was inhibited by 70% or more were considered for analysis (Rost et al., 2010).
 
@@ -168,7 +337,7 @@ The patch pipette solution contained the following (in mM): 136 KCl, 17.8 HEPES,
 
 EPSCs were evoked by a 2 ms depolarization to 0 mV from a holding potential of −70 mV. PPRs were calculated as the ratio from the second and first EPSC amplitudes with an interstimulus interval of 25 ms. The RRP size was calculated by integrating the transient current component of 5 s evoked by application of extracellular hypertonic 500 mM sucrose solution. Miniature EPSC (mEPSC) amplitude and frequency were detected using a template-based algorithm in Axograph X.
 
-## Immunohistochemistry, time gated STED microscopy and image analysis
+### Immunohistochemistry, time gated STED microscopy and image analysis
 
 Immunohistochemistry was performed as described previously (Grauel et al., 2016). Notably, the antibody against RIM1 (RRID: AB_2315284, BD Pharmigen) used in this study is not commercially available anymore. To repeat these results, other RIM1 antibodies need to be validated beforehand. Conventional confocal tile scans of RIM-BP2 immunofluorescence in the hippocampus were acquired with a Leica SP8 laser confocal microscope equipped with a 20 × 0.7 N.A. oil immersion objective.
 
@@ -182,13 +351,13 @@ Line profile measurements of distances between clusters was performed in Imagej 
 
 Measurements of Munc13-1 intensity were performed in ImageJ (version 1.51 w) on confocal images acquired in parallel to the gSTED images. Mean pixel gray values were measured for each whole image (25.83 µm x 25.83 µm). Four to eight confocal images per mouse were quantified and values averaged per mouse. Data from independent staining were pooled and analyzed.
 
-## Electron microscopy
+### Electron microscopy
 
 Acute Hippocampal slices (150 µm) were prepared as described above and frozen at RT using an HPM 100 (Leica) supported with extracellular solution containing 15% Ficoll.
 
 Slices from at least three different WT and KO animals were frozen and processed in parallel (biological replicate). After freezing, samples were transferred into cryovials containing 1% glutaraldehyde, 2% osmium tetroxide, and 1% ddH2O in anhydrous acetone in an AFS2 (Leica) with the following temperature program: −90°C for 72 hr, heating to −60°C in 20 hr, −60°C for 8 hr, heating to −30°C in 15 hr, −30°C for 8 hr, heating to −20°C in 8 hr. After staining with 1% uranyl acetate, samples were infiltrated and embedded into Epon and backed 48 hr at 60°C. Serial 40 nm sections were cut using a microtome (Leica) and collected on formvar-coated single-slot grids (Science Services GmbH). Before imaging, sections were contrasted with 2.5% (wt/vol) uranyl acetate and lead citrate. Samples were imaged in a FEI Tecnai G20 TEM operating at 80–120 keV and images taken with a Veleta 2K x K CCD camera (Olympus) and analyzed with a custom-written ImageJ (NIH) and MATLAB (The MathWorks, Inc) script. The size of the post-synaptic density is defined as the length of the prominent electron dense material at the post-synaptic side of the synapse. Small clear vesicles were defined by their diameter between 30–55 nm, whereas large clear vesicles were defined >60 nm.
 
-## Statistical analysis
+### Statistical analysis
 
 For electrophysiological experiments in brain slices, numbers of experiments are indicated in n/N, while n represents the number of brain slices and N the number of animals. Sample size estimation was done as published previously (Breustedt et al., 2010).
 

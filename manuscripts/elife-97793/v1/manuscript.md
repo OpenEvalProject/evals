@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Department of Systems Neuroscience, University Medical Center Hamburg Eppendorf Hamburg Germany
+1. Department of Systems Neuroscience, University Medical Center Hamburg Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ In total, we investigated 50 participants (32 female) in a combined EEG-fMRI par
 
 **Figure 1.:** Structure of the experiment including pre-measurements and the main experiment. Expectations were generated using a sham brain-computer interface (BCI), i.e., participants were told that they would receive real-time feedback regarding their pain sensitivity (verbal instructions) and experienced the validity of this feedback (conditioning). In the conditioning phase, green cues were paired with lower pain intensities compared to red cues unbeknownst to the participants. In the test phase, the stimulation temperature was always the same, regardless of the cue. The presentation of the condition cue varied from trial to trial.
 
-## Successful induction of placebo and nocebo effects in behavioral ratings and skin conductance responses
+### Successful induction of placebo and nocebo effects in behavioral ratings and skin conductance responses
 
 Our data showed successfully induced expectations in line with the cued sham brain states as evidenced by a significant main effect of condition in a repeated-measures ANOVA for mean expectation ratings (F(2,98) = 86.51, p<0.001, ηP²=0.64; see Figure 2A). Expectation ratings were higher in the nocebo (M=65.80, SD = 15.80) compared to the control condition (M=48.58, SD = 13.79, p<0.001), which in turn were higher than in the placebo condition (M=34.33, SD=17.71, p<0.001). Similarly, mean pain ratings were affected by our manipulation (rmANOVA: F(2,98) = 63.00, p<0.001, ηP²=0.56; see Figure 2B). Post-hoc Tukey tests revealed higher pain ratings in the nocebo (M=56.80, SD=14.21) compared to the control condition (M=51.40, SD=14.31, p<0.001), which in turn led to higher pain ratings than the placebo condition (M=44.88, SD=15.06, p<0.001). Moreover, placebo (control - placebo) and nocebo (nocebo - control) effects were significantly correlated across subjects for both expectation (r=0.64, p<0.001) and pain ratings (r=0.30, p=0.033), indicating that subjects who experienced stronger placebo effects also experienced larger nocebo effects.
 
@@ -50,7 +50,7 @@ To assess whether ratings within the three conditions were stable or varied over
 
 The expectation manipulation not only affected behavioral ratings but also the skin conductance responses (SCRs) to the pain stimuli (rmANOVA: F(2,50) = 4.33, p=0.018, ηP²=0.15; see Figure 2C). A post-hoc Tukey test showed larger SCRs in the nocebo (M=0.05, SD=0.09) compared to the placebo condition (M=–0.04, SD=0.10, p=0.049). SCRs in the control condition (M=–0.01, SD=0.07) did not significantly differ from neither the nocebo (p=0.072) nor placebo condition (p=0.607).
 
-## Successful induction of expectation effects in fMRI pattern
+### Successful induction of expectation effects in fMRI pattern
 
 Induction of expectation effects was also tested in functional imaging data. For all fMRI analyses, a finite impulse response (FIR) model was used to characterize BOLD fluctuations over time from cue onset to the pain rating (see Methods for details). The stimulus intensity independent pain signature (SIIPS) has been introduced as a marker for subjective pain perception going beyond intensity differences as it has been reported to be affected by psychological factors such as expectations (Botvinik-Nezer et al., 2023; Woo et al., 2017). To further validate our experimental design, we estimated the SIIPS score for each condition during the pain phase as a marker for differences in pain perception between the three conditions (see Methods). A rmANOVA revealed significant differences between the three conditions within the pain period (F(2,88) = 11.59, p<0.001, ηP²=0.21), with Bonferroni-corrected paired t-tests showing significant differences between the placebo and nocebo condition (t(44) = 4.79, p<0.001) and between the nocebo condition and the control condition (t(44) = 3.36, p=0.002) but not between the control and the placebo condition (t(44) = 1.35, p=0.184, see Figure 3). We therefore conclude that the manipulation of expectations led to significant perceptual differences. Contrastingly, the SIIPS signature failed to discern between conditions during the anticipation period, suggesting fundamentally distinct processes in the two phases (F(2,88) = 0.79, p=0.455, ηP²=0.02).
 
@@ -58,7 +58,7 @@ Induction of expectation effects was also tested in functional imaging data. For
 
 **Figure 3.:** (A) Mean SIIPS score per condition for all time-points during pain perception. White dots = mean, horizontal lines = median, thick gray vertical lines = upper and lower quartile, coloured dots = pain ratings of individual participants per condition. *p<0.05. **p<0.01. ***p<0.001. (B) Mean SIIPS score per condition plotted over the duration of the whole trial. The mean SIIPS scores shown in A were extracted from the gray-marked period. n = 45.
 
-## Neuronal representation of expectations over time
+### Neuronal representation of expectations over time
 
 In our main analysis, we found a clear dissociation between the anticipation and pain phases with a predominantly common representation of positive and negative expectations during the anticipation phase and a later shift towards distinct effects during the pain phase (see Figure 4A). In order to investigate how the representations of directed expectations changed over time from the anticipation to the pain phase, we identified common (i.e. positive and negative vs. control; constrained to areas with no statistical difference between positive and negative) and distinct (positive vs. negative) effects of directed expectations in each phase (see Supplementary file 1a-d for all comparisons). During the anticipation phase, common effects of directed expectations were found in several important areas of the DPMS, e.g., in the bilateral DLPFC, bilateral ACC, and right vmPFC, indicating that directed expectations were represented in a rather general and nonspecific way during this period. With the stimulus onset, activity in these areas showed differential activation between positive and negative expectations. Further differential activity was observed in e.g., the left insula, amygdala, thalamus, and hippocampus during the pain phase.
 
@@ -74,7 +74,7 @@ Crucially, the bilateral DLPFC, right vmPFC, left anterior insula, and thalamus 
 
 The differences between the anticipation and the pain phase demonstrate that specific expectations were mediated by different processes during these phases and arise from a dynamic interplay of brain regions such as the DLPFC, vmPFC, anterior insula, and thalamus over time.
 
-## Timing of effects during the anticipation phase
+### Timing of effects during the anticipation phase
 
 To obtain detailed information on the temporal characteristics of the expectation effects during pain anticipation, we performed fMRI-informed EEG analyses. Specifically, we were interested in the temporal sequence of the areas involved. Single-trial estimates of fMRI activity during the anticipation phase were correlated with time-frequency decomposed EEG measures for each participant and then statistically tested at the group level. This analysis was conducted separately for the identified regions of interest that represented directed expectations during both the anticipation and pain phase (left anterior insula, right vmPFC, bilateral DLPFC, and thalamus). We further included the bilateral ACC, as we were interested in all areas that reflected directed expectations during the anticipation phase.
 
@@ -108,98 +108,254 @@ Based on the present results, understanding the processing of expectations requi
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Matlab (2021b)</td>
+      <td>mathworks.com</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SPM 12 (7771)</td>
+      <td>https://www.fil.ion.ucl.ac.uk/spm/</td>
+      <td>RRID:SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Ledalab (V3.4.9)</td>
+      <td>http://ledalab.de/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>JASP (0.18.3)</td>
+      <td>https://jasp-stats.org/</td>
+      <td>RRID:SCR_015823</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 In total, 55 volunteers were recruited via an online job platform and participated in our preregistered study (German Clinical Trials Register; ID: DRKS00025872). All participants were right-handed, had normal or corrected-to-normal vision, reported no neurological or psychiatric diseases, pain conditions, current medication, substance abuse, or pregnancy, and were non-smokers. They gave written informed consent and were compensated with 15 Euros per hour of participation. Of these 55 participants, five had to be excluded from all analyses (four due to technical issues leading to the abortion of the measurement, one due to a severe BDI score), leading to a final sample size of n=50 (see Table 1). As preregistered, three participants who rated expectation and pain averaged over the entire experiment higher for placebo compared to nocebo and/or stated that they did not believe in the BCI method were excluded from the analysis of neural data, as we reasoned that the analysis of expectation-related neural activity requires a successful induction of expectations. Analyses for fMRI data were performed additionally excluding two participants with bad MRI data (leading to n=45 for fMRI analyses), and for combined EEG-fMRI analyses additionally excluding four participants with excessive artifacts and/or recording equipment malfunction (leading to n=41 for combined EEG-fMRI analyses). The study was approved by the local ethics committee (PV7170).
 
-## Procedure
+**Table 1.**
+ Characteristics of study participants.
 
-## Pre-measurements (Collaborative Research Centre recordings)
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Range</th>
+      <th>Number (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>18 (36%)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>32 (64%)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>25.4</td>
+      <td>3.5</td>
+      <td>18–34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FOP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Severe Pain</td>
+      <td>36.5</td>
+      <td>5.4</td>
+      <td>22–47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minor Pain</td>
+      <td>18.9</td>
+      <td>4.9</td>
+      <td>10–33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medical Pain</td>
+      <td>25.8</td>
+      <td>6.4</td>
+      <td>12–42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STADI</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anxiety</td>
+      <td>15.2</td>
+      <td>4.1</td>
+      <td>10–28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>17.0</td>
+      <td>3.2</td>
+      <td>11–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Global Score</td>
+      <td>32.2</td>
+      <td>5.1</td>
+      <td>23–43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BDI-II Global Score</td>
+      <td>6.0</td>
+      <td>3.8</td>
+      <td>0–16</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. STADI = State-Trait Anxiety Depression Inventory. FOP = Fear of Pain Questionnaire. BDI-II=Beck Depression Inventory-II._
+
+### Procedure
+
+#### Pre-measurements (Collaborative Research Centre recordings)
 
 One day before the actual study, we recorded fMRI data (T1, functional EPI, DW EPI) and asked the participants to complete a comprehensive psychosocial questionnaire battery that will be analyzed by other projects under the structure of the overarching collaborative research center and are beyond the scope of this manuscript. Participants were pseudonymized using ALIIAS (Englert et al., 2023).
 
-## Main experiment
+#### Main experiment
 
 The experiment consisted of four phases: a verbal instruction phase, a pain calibration phase, a conditioning phase, and a test phase. The experiment was programmed using Psychtoolbox3 (http://psychtoolbox.org/) for Matlab (Version R2021b; The MathWorks). Rating responses were given by the participants using a Button Box MR. Instructions and ratings were presented on an MR-compatible monitor with a resolution of 3840×2160, placed at one end of the scanner. Participants saw the monitor through a mirror that was placed approximately 12 cm away from the participant’s eyes and had a distance of approximately 151 cm from the monitor. Two researchers and one radiographer guided the participants through the instructions and preparations.
 
-## Verbal instruction phase
+#### Verbal instruction phase
 
 After being prepared for the EEG and fMRI recording, participants were verbally informed that their current oscillatory state of the primary somatosensory cortex would be measured in real-time using a BCI (Brain Computer Interface) and that this state would reflect their pain sensitivity. They were further told that the measured brain state would be visualized in the form of visual stimuli consisting of a brain image with the right primary somatosensory cortex highlighted in one of three different colors (green, red, or yellow). A green stimulus represented a state in which their brain would be less susceptible to pain, a red stimulus represented a state in which their brain would be highly susceptible to pain, and a yellow stimulus represented a state in which the algorithm was not able to detect a clear-cut state and would thus make no prediction (e.g. due to high fluctuations in brain activity or intermediate activity levels). With this procedure, a positive expectation was induced by the green cue, and a negative expectation was induced by the red cue. After the verbal instructions, participants were asked to fill out state questionnaires, including the State-Trait Anxiety Depression Inventory (Laux et al., 2013) and the Fear of Pain Questionnaire (McNeil and Rainwater, 1998).
 
-## Pain calibration phase
+#### Pain calibration phase
 
 Heat stimuli were delivered with a PATHWAY CHEPS (Contact Heat-Evoked Potential Stimulator) thermode (https://www.medoc-web.com/pathway-model-cheps), which has a rapid heating rate of 70 °C/s and a cooling rate of 40 °C/s and can deliver pain stimuli in the range of 30 to 55°C in less than 300 ms. For all phases, the baseline temperature was set to 32 °C, and the rise and fall rates were set to 70 °C/s. The thermode head was attached to a location directly proximal to the volar mid-forearm. Using a stepwise procedure, we determined individual temperatures for each participant corresponding to values of VAS30, VAS60, and VAS70 on a visual analog scale (VAS) from 0 (‘no pain’) to 100 (‘unbearable pain’). Target temperatures were calculated using linear regression.
 
-## Conditioning phase
+#### Conditioning phase
 
 For the conditioning phase, the location of the thermode head was changed to a location directly distal to the volar mid-forearm to avoid unnecessary sensitization of one location and skin irritations. Participants were instructed that the next phase would serve as the calibration of the BCI algorithm introduced in the verbal instruction phase. They were informed that in this phase only green and red cues would appear because the pain stimulation would only occur once a clear-cut state of their brain has been detected. Each trial began with the presentation of either a red or green visual cue for 2 s, then the painful stimulus was administered for 4 s, and lastly, participants were asked to rate their pain experience for 8 s. Between trials, there was a fully randomized inter-trial interval (ITI) of between 2 and 7 s. During the painful stimulation and ITIs, a fixation cross was presented in the middle of the screen. Perceived pain intensity was again rated on a VAS from 0 (‘no pain’) to 100 (‘unbearable pain’). Unbeknownst to the participants, green cues were always followed by less painful stimuli (VAS30), and red cues were always followed by more painful stimuli (VAS70). They received 10 stimuli of each condition, leading to 20 trials in total. The order of stimuli was pseudo-randomized with the restrictions of no more than two direct repetitions of the same condition and the last two trials of this phase belonged to the less painful condition.
 
-## Test phase
+#### Test phase
 
 For the test phase, the thermode head was once again attached to the location directly proximal to the volar mid-forearm. Participants were informed that the BCI algorithm has now been calibrated and would be tested in the next phase. They were told that the painful stimulation would occur at random predetermined points in time, so that either highly pain-sensitive (red; nocebo condition) or less pain-sensitive states (green; placebo condition) could be detected and reported back to the participant, or that they would receive feedback that the algorithm was not able to detect a clear-cut state (yellow; control condition). The trial structure was similar to the conditioning phase, with the change that after cue presentation, participants were asked to rate how painful they expected the next stimulus to be on a VAS ranging from 0 to 100 while the cue was still presented on the screen (4 s). After this expectation rating, a fixation cross was presented for 3.3 s (anticipation phase) before the pain stimulus was administered for 4 s (pain phase). Independently of the cue color, participants always received painful stimuli corresponding to values calibrated to VAS60. Importantly, participants were only informed that they would receive different stimuli of medium intensity and were thus not aware that the stimulation temperature remained constant. There were 30 cues of each condition followed by pain stimulation divided into three blocks, summing up to a total of 90 stimuli. Similarly to the conditioning phase, the ITI was fully randomized between 2 and 7 s. The order of cues was pseudo-randomized with no more than two direct repetitions of the same condition. Before each block, we applied one pain stimulus of VAS60 without a cue to desensitize the new skin area.
 
-## Follow-Up
+#### Follow-Up
 
 One week after the main experiment, participants were invited for a follow-up measurement which is beyond the scope of this manuscript. They were asked to fill out questionnaires, including the Beck Depression Inventory-II (Beck et al., 1996; Hautzinger et al., 2006). Lastly, participants were debriefed and paid.
 
-## Data acquisition
+### Data acquisition
 
-## Electrodermal data
+#### Electrodermal data
 
 Electrodermal activity was measured with MRI-compatible electrodes on the thenar and hypothenar. Electrodes were connected to Lead108 carbon leads (BIOPAC Systems, Goleta, CA). The signal was amplified with an MP150 analogue amplifier (also BIOPAC Systems) and sampled at 5000 Hz using a CED 1401 analogue-digital converter (Cambridge Electronic Design, Cambridge, UK).
 
-## fMRI data
+#### fMRI data
 
 MRI was performed with a 3T Siemens PRISMA Scanner, and a 64-channel head coil was used. On the day of the pre-measurements, a T1 image with the following parameters was acquired: T1 FLASH 3D: TE 2.98 ms, TR: 2300 ms, matrix flip angle: 9°, FOV 25.6 * 25.6 cm, TA: 7:22 min. Two sequences on the day of the main experiment were acquired: An EPI BOLD sequence and a field map sequence. Participants were prepared with a 64-channel standard BrainCap MR for 3Tesla (2020 Version) and the EPI BOLD sequence had therefore to be adjusted to meet the necessary safety criteria. The following parameters were used: 2 D EPI BOLD: TE: 29.0 ms, TR: 1679.00 ms, FOV: 22.4 * 22.4 cm, flip angle: 70°, s1: 2 mm, TA: 20:17 min, fat saturation, 715 volumes in total; 2 D field map sequence: TR: 594 ms, TE1: 5.51 ms, TE2: 7.79 ms, FOV: 22.4 * 22.4 cm, flip angle: 40°, s1: 2 mm, TA: 1:31 min.
 
-## EEG data
+#### EEG data
 
 Continuous EEG data was recorded inside the MRI scanner using a custom 64-channel BrainCap-MR for 3 Tesla using BrainVision Recorder (Version 1.10, BrainProducts, Gilching, Germany). The cap contained 64 passive sintered Ag/AgCl electrodes arranged according to the 10/20 System, as well as one ECG electrode. FCz served as the reference and Pz served as the ground electrode. The cap was connected to two Brain Amp MR plus amplifier systems with 32 channels each (BrainProducts, Gilching, Germany), powered by one rechargeable battery unit. Amplifiers and the battery unit were positioned on foam cushions directly behind the head coil inside the scanner. Electrode skin impedance was kept below 10 kΩ. EEG data was recorded with a sampling rate of 5000 Hz and an amplitude resolution of 0.5 µV for EEG channels and 10 µV for the ECG channel. The EEG system was synchronized with the clock of the MRI system using a SyncBox (BrainProducts, Gilching, Germany). The helium pump of the MRI system was switched off during data recording. Data was transmitted from the amplifiers to the recording computer outside of the scanner room via a fiber-optic cable.
 
-## Preprocessing
+### Preprocessing
 
-## Electrodermal data
+#### Electrodermal data
 
 Preprocessing and analysis of electrodermal data were performed using the Ledalab toolbox for MATLAB (Benedek and Kaernbach, 2010). Single-subject data was downsampled to 100 Hz and visually screened. In total, 21 subjects were excluded from the electrodermal analysis (18 due to physiological non-responsiveness, three due to equipment malfunction). From the remaining 26 subjects, all data segments around pain stimulation were screened for excessive artifacts, resulting in the exclusion of 55 of the 2340 segments (2.35%). Using a deconvolution method implemented in Ledalab, raw electrodermal data were decomposed into continuous phasic (driver) and tonic components. Subsequent analyses were performed on the extracted phasic skin conductance responses (SCRs). The response window for pain was determined by visual inspection of the curve to cover the peak and set between 2 and 7.5 s. SCR segments within the response window were log- and z-transformed within participants. For the log-transform, a constant (minimum of the driver plus 1) was added to the data to shift it to positive values. Lastly, segments were averaged per subject for each of the three conditions.
 
-## fMRI data
+#### fMRI data
 
 Preprocessing of fMRI data was done using the Statistical Parameter Mapping software (SPM 12, Wellcome Department of Imaging Neuroscience, London, UK, https://www.fil.ion.ucl.ac.uk/spm/software/spm12/). The first two volumes of each block were dropped to get full MRI saturation effects. Furthermore, realignment and unwarping, registration to standard space (Montreal Neurological Institute), and spatial smoothing with a 6 mm Gaussian kernel were used on the data.
 
-## EEG data
+#### EEG data
 
 MR and cardioballistic artifacts were corrected using BrainVision Analyzer 2.2 (BrainProducts, Gilching, Germany) for each block separately. Continuous MR artifacts were corrected with sliding baseline corrected average templates. Data was then downsampled to 500 Hz. Cardioballistic artifact correction was done by semi-automatically detecting a pulse template, marking it in the electrocardiogram channel, and then subtracting it from recordings.
 
 For the remaining preprocessing and analysis, we used the Fieldtrip toolbox for Matlab (Oostenveld et al., 2011). Data were cut into trials including all relevant time intervals from 1000 ms before cue onset to the end of pain 15,800 ms after cue onset. The resulting segmented data were low-pass filtered at 150 Hz and high-pass filtered at 0.5 Hz. We adapted a recent preprocessing approach introduced by Hipp et al., 2011. The data was split into low- and high-frequency data (34 Hz low-pass filter and 16 Hz high-pass filter, respectively) and processed in parallel. This approach leads to high sensitivity in detecting and removing artifacts from the data as e.g., heartbeats cause more artifacts at lower frequencies and muscle activity affects higher frequencies more strongly. All trials were visually inspected and removed for both subsets when containing large artifacts. Then, both high- and low-frequency data were subjected to an independent component analysis (ICA) using a logistic infomax algorithm. Components reflecting residual cardioballistic and MR artifacts, blinks, eye- and head movement, and muscle activity were identified by visual inspection of the time course, spectrum, and topography of each component and discarded. Both subsets were re-referenced to the average of all channels and the original reference electrode was regained. Lastly, we subjected all data to another full visual scan and shifted the time axis so that the onset of pain stimulation occurred at t=0 s. In total, the visual artifact screening led to the exclusion of 228 of the 3944 recorded trials (5.78%).
 
-## Time-frequency decomposition
+#### Time-frequency decomposition
 
 Our procedure was again adapted from Hipp et al., 2011. Time-frequency decomposition was conducted for 21 logarithmically spaced frequencies ranging from 4 to 128 Hz (0.25-octave increments) in 0.1 s steps using the multi-taper method based on discrete prolate spheroid sequences (DPSS). The high-frequency data were used for the frequency transformation of frequencies above 25 Hz, and the low-frequency data for frequencies below 25 Hz. Temporal and spectral smoothing were adjusted to match 250 ms and 3/4 octave, respectively. This was achieved by fixing the time window to 250 ms and adjusting the number of Slepian tapers for frequencies larger than 16 Hz, while for frequencies up to 16 Hz, a single taper was used, and the time window was adjusted. We extracted single-trial time-frequency resolved data for each participant.
 
-## Data analysis
+### Data analysis
 
-## Behavioral data
+#### Behavioral data
 
 We compared differences in pain and expectation ratings for the different cue conditions by computing two repeated-measures ANOVAs with cue type (placebo vs. nocebo vs. control) as predictor and pain and expectation ratings as outcome, respectively. Partial eta-squared was used to describe effect sizes.
 
 Furthermore, we analyzed variability within conditions indicated by the relative variability index (Mestdagh et al., 2018) by computing two repeated-measures ANOVA with cue type (placebo vs. nocebo vs. control) and measurement block (block 1, block 2, block 3) for the relative variability index of expectation and pain ratings, respectively.
 
-## Electrodermal data
+#### Electrodermal data
 
 We compared differences in SCRs in the pain phase by conducting a repeated-measures ANOVA with the factor cue type (placebo vs. nocebo vs. control) as predictor and SCR as outcome.
 
-## fMRI data
+#### fMRI data
 
-## Statistical inference
+##### Statistical inference
 
 For each subject, a finite impulse response model (FIR model) was set up on a time course of 18.4 s starting at the onset of the cue, divided into 11 bins, with a bin roughly covering the duration of one TR (1.679 s compared to 1.675 s). The FIR model was implemented separately for each condition. Data was also corrected for cardioballistic and respiratory artifacts by including them as regressors built with the RETROICOR algorithm of the PhysIO toolbox (Frässle et al., 2021; Kasper et al., 2017).
 
 On the group level in a flexible factorial design, directed t-contrasts were set up for common effects (placebo and nocebo vs. control), exclusively masked with the F-contrast between placebo and nocebo (thresholded at p<0.05 uncorrected) to identify areas that showed a similar response for placebo and nocebo but different to the control condition in the anticipation phase. For the comparison between placebo and nocebo, directed t-contrasts were set up to identify areas that showed distinct modulation by placebo and nocebo in both the anticipation and pain phases. Analyses in the anticipation phase were performed by including the FIR regressors covering the time period from –4.275 s until –0.925 s relative to pain onset (bins 4 and 5), analyses in the pain phase by including the FIR regressors covering the time from 0.75 s until 5.8 s relative to pain onset (bins 7, 8, and 9). All analyses were corrected for multiple comparisons using FWE (p<0.05) correction.
 
-## ROI analyses
+##### ROI analyses
 
 Additionally, ROI analyses were conducted regarding a priori hypotheses in the following areas defined by the anatomy based on the Harvard-Oxford atlas: insular cortex, thalamus, ACC, hippocampus, and amygdala. Furthermore, an ROI analysis was conducted on the DLPFC based on the clusters identified in the meta-analysis conducted by Zunhammer et al., 2021 by applying a 15 mm-radius sphere around the two reported peak coordinates (xyzMNI: 42, 11, 33, and xyzMNI: –30, 13, 54) bilaterally.
 
-## Combined EEG-fMRI analysis
+##### Combined EEG-fMRI analysis
 
 Single-trial fMRI BOLD response amplitudes were estimated based on the preprocessed MR data using GLMsingle (Prince et al., 2022). The hemodynamic response during the anticipation phase was estimated by fitting a boxcar function with a length of 1.679 s to the anticipation onset. The accuracy of beta estimates was improved by an adaptation of GLMdenoise for single-trial beta estimation. Furthermore, the noise was reduced by using fractional ridge regression as integrated into the GLMsingle toolbox. For each trial, we extracted the mean beta within several regions of interest centered around the significant peak voxels derived from the MR analyses of common effects of expectations during the anticipation phase. These included the left anterior insula (xyzMNI: –28, 22,–6), left (xyzMNI: –2, 40,–4) and right ACC (xyzMNI: 4, 42, 12), right vmPFC (xyzMNI: 14, 56,–14), left (xyzMNI: –32, 18, 36) and right DLPFC (xyzMNI: 40, 24, 36), and left thalamus (−6,–12, 4; all with 10 mm sphere). For each participant on a single-trial level, Spearman’s rank correlation coefficients between beta ROI estimates and time-frequency EEG data were computed, resulting in one time-frequency-resolved correlation pattern per participant and ROI. For the group-level analysis, correlations were Fisher-z-transformed and tested against zero using nonparametric cluster-based permutation tests as implemented in the Fieldtrip toolbox (cluster threshold: p=0.05, minimum neighbors: 2, number of randomizations: 2000). Statistics were calculated from cue onset until pain offset (–9.3 until 3.9 s relative to pain onset).

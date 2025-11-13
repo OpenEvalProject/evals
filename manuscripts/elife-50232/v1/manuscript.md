@@ -30,33 +30,77 @@ Taken together, these studies suggest that visual cortex is linked to the subjec
 
 Here, we investigated whether cortical excitability might also be linked to the individual differences that exist in the strength of voluntarily produced visual imagery. We used a multi-method approach (fMRI, TMS, and tDCS, see Materials and methods for measures of cortical excitability) to assess the potential contributions of resting levels of cortical excitability in the visual imagery network as a critical physiological precondition, which influences the strength of visual imagery.
 
-## Measuring visual imagery strength
+### Measuring visual imagery strength
 
 To measure mental imagery strength, we utilized the binocular rivalry imagery paradigm (see Figure 1), which has been shown to reliably measure the sensory strength of mental imagery through its impact on subsequent binocular rivalry perception (Pearson, 2014). Previous work has demonstrated that when someone imagines a pattern or is shown a weak perceptual version of a pattern, they are more likely to see that image in a subsequent brief binocular rivalry display (see Pearson et al., 2015b for review of methods). Longer periods of imagery generation, or weak perceptual presentation, increase the probability of perceptual priming of subsequent rivalry. For this reason, the degree of imagery priming has been taken as a measure of the sensory strength of mental imagery. Importantly, this measure of imagery is directly sensory; while it is related to subjective reports of imagery vividness, it is not a direct proxy for subjective reports of imagery vividness, and findings regarding their relationship across individuals have been mixed (see Figure 1—figure supplement 1A and Pearson et al., 2011; Bergmann et al., 2016a). This measure of imagery strength has been shown to be both retinotopic location and spatial orientation specific (Bergmann et al., 2016a; Pearson et al., 2008a), is reliable when assessed over days or weeks (see Figure 1—figure supplement 2 and Bergmann et al., 2016a), is contingent on the imagery generation period (therefore not due to any rivalry control) and can be dissociated from visual attention (Pearson et al., 2008a). This measure of imagery is advantageous in that it allows us to avoid the prior limitations of subjective introspections and reports.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig1-v1.jpg)
+
+**Figure 1.:** Participants were cued to imagine a red-horizontal or a green-vertical Gabor patch for 6–7 s by the letter R or G (respectively). Following this, they were presented with a brief binocular rivalry display (750 ms) and asked to indicate which image was dominant. In the behavioral experiments with the brain-imaging sample and in three of the tDCS experiments, a rating of subjective vividness of the imagery also preceded the binocular rivalry display.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Data shows the correlation between mean vividness ratings (x-axis) and visual imagery priming (y-axis) for participants from both the MRI and tDCS experiments (tDCS experiments 2, 3 and 4). All possible participants’ data were included for the tDCS analysis (resulting in the analysis of 54 participant’s data). Only the correlation in the tDCS sample was significant, (rs = 0.37, p=0.003, Spearman’s rank-order correlation was used due to a violation of normality). The effect size was too small for significant results in the fMRI sample (rs = 0.34, p=0.065, Spearman’s rank-order correlation was used due to a violation of normality, N = 31). (B) Surface-based whole brain analysis of the fMRI resting-state data: associations with subjective vividness. Corrected clusters showing associations with individual subjective vividness at a cluster-wise probability threshold of p<0.05 (see also see Supplemental Table S3). The upper row shows a lateral view of the two hemispheres from an anterior perspective, whereas the lower row shows a medial view of them from the back. Multiple comparison correction was done using Monte Carlo Null-Z simulation (mc-z). No smoothing of the functional data was applied. Only two fMRI mean intensity clusters showed associations with subjective vividness that survived the correction for multiple comparisons: One cluster in the left rostralmiddlefrontal cortex showed a positive association (orange), and one smaller cluster in the left cuneus showed a negative association (blue). Note the similarity in the subjective vividness results with the ones in Bergmann et al. (2016b), where only a volume cluster in left frontal cortex also showed a positive association with subjective vividness. Apparently, the positive relationship of subjective vividness with the anatomy of left frontal cortex is also reflected in the fMRI mean intensity levels of this region. (C) tDCS effect on mean vividness ratings. Left panel: Occipital (1.5ma) – Vividness ratings were included in this experiment, which allowed us to look at subjective changes in imagery vividness that occur with changes in cortical excitability of the visual cortex. Red dots show the effect of anodal stimulation (increasing excitability) while blue dots show cathodal stimulation (decreasing excitability). Each dot represents an individual participant (one participant’s data is excluded from this analysis due to incorrect button presses on one of the days of testing, N = 15). All data show means and error bars represent ± SEM’s. The data was again analyzed using percentage changed. We found no significant differences in the reported mean vividness of the imagined patterns (main effect of tDCS polarity: F(1,14) = 1.97, p=0.18, main effect of block: F(3,42) = .73, p=0.54, interaction: F(3,42) = .59, p=0.63). Middle panel: tDCS of prefrontal cortex and mean vividness ratings. As vividness ratings were included in this experiment, we could also look at the subjective changes in imagery vividness that occur with changes in cortical excitability of the prefrontal cortex. Red dots show the effect of anodal stimulation (increasing excitability) while blue dots show cathodal stimulation (decreasing excitability). All data show means and error bars represent ± SEM’s. We again analyzed the data using the percent change scores. There were no differences in the mean vividness ratings for either polarity of the tDCS (main effect: F(1,15) = .28, p=0.61) or the block (main effect: F(3,45) = .77, p=0.51), and there was no interaction between the two (F(3,45) = .07, p=0.98). Right panel: tDCS of occipital cortex (1.5ma) – cathodal, anodal and sham stimulation, one participant's data is removed due to incorrect button presses for vividness ratings. Red dots show the effect of anodal stimulation (increasing excitability) while blue dots show cathodal stimulation (decreasing excitability), and grey triangles show the effect of sham stimulation. All data show means and error bars represent ± SEM’s. We again analyzed the data using the percent change scores. There were no differences in the mean vividness ratings for any of the polarity conditions (Mixed-effects analysis due to attrition: Polarity effect: F(1.95, 31.19)=1.38, p=0.27), there was also no effect of block (F(2.19, 34.98)=0.94, p=0.41) and no interaction (F(2.63, 36.82)=0.98, p=0.41).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scatterplot shows participants’ imagery strength measured by percent of binocular rivalry displays primed before tDCS stimulation across 2 days of testing (pre-anodal and pre-cathodal stimulation). Each data point represents one participant, 79 pairs in total. (B) Scatterplot shows participants’ 60% phosphene thresholds (PT) before tDCS stimulation across the 2 days of testing. Each data point represents one participant, 21 pairs in total.
+
 ## Results
 
-## Visual cortex and visual imagery strength
+### Visual cortex and visual imagery strength
 
-## Correlations between visual cortex excitability and visual imagery strength: exploratory fMRI analysis
+#### Correlations between visual cortex excitability and visual imagery strength: exploratory fMRI analysis
 
 First an exploratory analysis was run to see if there was any relationship between cortex physiology and imagery strength. To do this, we looked at fMRI data and assessed a sample of 31 participants resting-state fMRI data (these participants form part of a sample that has previously been reported on in Bergmann et al., 2016a; Bergmann et al., 2016b); however, these previous analyses were structural rather than functional). We related this data set to each individual’s imagery strength determined using the binocular rivalry method (% primed, see Figure 1). Using a whole-brain surface-based group analysis (see Methods), we found that the normalized mean fMRI intensity of clusters in the visual cortex showed a negative relationship with imagery strength, while frontal cortex clusters showed positive relationships (multiple comparison-corrected; see Figure 2, left column; and Supplementary file 1 Supplementary Table S1 –S3). This pattern of results was also present in a second set of resting-state fMRI data that was acquired from the sample (see Figure 2, right column). We also assessed the relationship between retinotopically defined early visual cortices V1-V3 and the adjacent occipito-parietal areas (defined by the Desikan–Killiany atlas). We found significant negative correlations with normalized mean fMRI intensity levels in V1-V3 and lateral occipital cortex and imagery strength (See Figure 2—figure supplement 1).
 
-## Correlations between visual cortex excitability and visual imagery strength: TMS
+![Figure 2.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig2-v1.jpg)
+
+**Figure 2.:** Two columns on the left: results of the main resting-state fMRI data set with a TR of 2 s (TR2). Two columns on the right: results of an additional resting-state fMRI data set with a TR of 1 s (TR1); in those participants with which both measurements were conducted, about half were done on the same day. In the other half, the two measurements were conducted on different days. The two upper rows show the uncorrected (positive and negative) relationships with imagery as heatmaps. The two lower rows show the corrected clusters that had a negative association with individual imagery strength at a cluster-wise probability threshold (CWP) of p<0.05 (also see Supplementary file 1 - Supplementary Table S1). The two hemispheres are shown from the back, with the lateral view in the upper and the medial view in the lower panel. Multiple comparison correction was done using Monte Carlo Null-Z simulation (mc-z). No smoothing of the functional mean intensity data was applied. In line with the correlation analyses using normalised fMRI mean intensity of atlas- and retinotopically defined areas, only fMRI mean intensity clusters in the back of the brain, where early visual and lateral occipital cortex are located, showed negative associations with imagery strength (% primed). The fMRI measurement with a TR = 2 s has a better signal-to-noise ratio, as longer TR increase T2* tissue contrast (e.g. see Hashemi et al., 2010); in addition, the larger voxel size of the TR1 measurement (3.28 × 3.28×5 mm3) also means that they are more likely to pick up signals from other tissue (e.g. white matter), thereby increasing the contributions of biophysical noise. Both of this likely weakens the observed correlations with behavior; this might explain why none of the relationships with the brain areas using retinotopic mapping and the Desikan-Killiany atlas survived multiple comparison correction in the ROI-based approach (all p>0.05). Despite this, the clusters from the two different measurements in the surface-based group analysis show striking similarities; while the clusters in the TR1 measurement are smaller and sparser, their location in early visual and lateral occipital cortex are strongly overlapping with those found in the TR2 measurement. Further analyses showed that these similarities were not driven by the group that completed the measurements on the same day (analysis not shown).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Lateral view of the pial surface (A) and posterior view of the inflated surface (B) of the visual areas that showed a significant negative relationship with imagery. Red = V1, Orange = V2, Yellow = V3 and Green = lateral occipital area (C–F) Correlation between normalized mean fMRI intensity levels in V1, V2, V3, and lateral occipital area and imagery strength. Individuals with lower mean fMRI intensity levels in early visual cortex showed stronger imagery (FDR-corrected p-values to correct for multiple comparisons).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Results of the main resting-state fMRI data set with a TR = 2 s are shown on the left (TR2); results of an additional resting-state fMRI data set with a TR = 1 s are shown on the right (TR1); in those participants with which both measurements were conducted, about half were done on the same day. In the other half, the two measurements were conducted on different days. The two upper rows show the uncorrected (positive and negative) relationships with imagery as heatmaps. The two lower rows show the corrected clusters that had a positive association with individual imagery strength at a cluster-wise probability threshold of p<0.05 (also see Supplementary Table S2). In both the lateral and medial views, the hemispheres are shown from the front. Multiple comparison correction was done using Monte Carlo Null-Z simulation (mc-z). No smoothing of the functional data was applied. In line with the correlation analyses using normalised fMRI mean intensity of atlas- and retinotopically defined areas, only fMRI mean intensity clusters in frontal areas showed positive associations with imagery strength (% primed). As elaborated in Figure 2, the signal-to-noise ratio is lower in the fMRI measurement with the TR of 1 s (on the right). In the ROI-based approach, none of the brain-behavior relationships survived multiple comparison correction (all p>0.05). Nevertheless, the clusters in the surface-based group analysis from the two different measurements show strong overlaps, indicating the reliability of the measurements. These similarities were not driven by the group that completed the measurements on the same day (analysis not shown).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** To allow for longitudinal magnetization equilibration to stabilize, it is standard to remove at least the first two (or more) volumes from the measurement. With a TR of 2 s, our analyses were conducted after exclusion of the first 2 volumes (blue mcircles). To ensure that this number was not too low, potentially causing the results to still be prone to magnetization artifacts, we re-analyzed the data after excluding 4 (red circles), 6 (yellow circles), and 8 volumes (purple circles). Irrespective of the number of discarded volumes at the beginning of the measurement, imagery strength correlations with visual cortices V1, V2, V3, and lateral occipital area remained almost identical.
+
+#### Correlations between visual cortex excitability and visual imagery strength: TMS
 
 To further substantiate our observations and circumvent other potential confounds that might influence the fMRI data (see appendices for discussion of these limitations), we next utilized a different methodology that measures cortical excitability: transcranial magnetically induced phosph﻿enes. A new sample of 32 participants performed an automated phosphene threshold (PT) procedure using transcranial magnetic stimulation (TMS) over early visual cortex. Visual phosphenes are weak hallucinations caused by TMS applied to visual cortex. The magnetic strength needed to induce a phosphene is a reliable and non-invasive method to measure cortical excitability (see Materials and methods section for explanation of phosphene thresholds and cortex excitability). In line with the normalized mean fMRI intensity data, we found a significant negative correlation between imagery strength and visual cortex excitability (data shows inverse phosphene threshold (100-PT) for ease of visualizing data as PT’s are negatively correlated with cortical excitability: r = −0.43, p=0.0127; Figure 3A). In other words, individuals with lower visual cortex excitability exhibited stronger imagery. Importantly, we also tested the phosphene threshold retest reliability for our paradigm over 2 days and found it was a very reliable measure (rs = 0.75, p<0.001; see Figure 1—figure supplement 2), as was our measure of imagery strength re-test reliability of tDCS experiments imagery strength: rs = 0.51, p<0.001; see Figure 1—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig3-v1.jpg)
 
-**Figure 3.:** (A) Correlation between the inverse phosphene threshold and imagery strength. Individuals with lower cortical excitability in visual cortex tended to have stronger imagery. (B) Correlation between mock priming scores and real binocular rivalry priming for participants in the fMRI (circles) and TMS (squares) study. There was no significant association between perceptual priming in real and mock trials for the fMRI or TMS data. In the scatterplots (A & B), each data point indicates the value of one participant; the bivariate correlation coefficients are included with their respective significance levels.Figure 3—source data 1.
+**Figure 3.:** (A) Correlation between the inverse phosphene threshold and imagery strength. Individuals with lower cortical excitability in visual cortex tended to have stronger imagery. (B) Correlation between mock priming scores and real binocular rivalry priming for participants in the fMRI (circles) and TMS (squares) study. There was no significant association between perceptual priming in real and mock trials for the fMRI or TMS data. In the scatterplots (A & B), each data point indicates the value of one participant; the bivariate correlation coefficients are included with their respective significance levels.
 
 To assess possible effects of a decisional bias, mock rivalry trials were included in all tests of imagery strength (Pearson et al., 2008a; Bergmann et al., 2016a; Keogh and Pearson, 2011; Keogh and Pearson, 2014)(see Materials and methods). We found no correlation between real binocular rivalry and ‘mock priming’ (fMRI (circles rs = −0.03, p=0.89 and TMS (squares) rs = −0.01, p=0.97, see Figure 3B). These data suggest it is unlikely that the relationship between imagery strength and physiology is due to demand characteristics or decisional bias.
 
-## Manipulating visual cortex excitability using tDCS
+#### Manipulating visual cortex excitability using tDCS
 
 The data suggest that the excitability of the visual cortex might influence the strength of visual imagery, as participants with lower visual cortex activity tended to have stronger visual imagery and vice versa. However, these data do not speak to the causal role of early visual cortex in creating strong mental images. If the association between imagery strength and visual cortex activity is causal, manipulating visual cortex excitability should likewise modulate imagery strength.
 
 To assess this hypothesis, we utilized non-invasive transcranial direct current stimulation (tDCS), which can increase or decrease cortical excitability depending on electrode polarity and position (see Filmer et al., 2014 for review, and methods for evidence of tDCS modulating visual cortex excitability). Broadly speaking, when the cathode is placed over the cortex, when averaging across participants, the underlying cortical excitability is decreased, whereas the anode increases excitability (although the polarity specific effects can be influenced by multiple methodological and inter-individual differences Strube et al., 2016; Filmer et al., 2019a; Batsikadze et al., 2013; Monte-Silva et al., 2013). Sixteen new participants underwent both anodal and cathodal stimulations of visual cortex (see Figure 4B for electrode montage) on 2 separate days (separated by at least 24 hr). On each day, participants completed six blocks of the imagery task, two before tDCS, two during tDCS and two post-tDCS (see Figure 4—figure supplement 1A for experimental timeline). To assess the effect of tDCS on imagery strength, we calculated the percent change in priming for each participant from baseline (on each day, see Materials and methods for percent change calculation details) such that positive numbers indicate increases in imagery strength and negative ones indicate decreases.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig4-v1.jpg)
+
+**Figure 4.:** (A) Effect of visual cortex stimulation on imagery strength at 1mA. The top image shows the tDCS montage, with the active electrode over Oz and the reference electrode on the supraorbital area. The bottom image shows the effect of cathodal (decreases excitability, blue dots represent each participant’s data) and anodal (increases excitability, red dots represent each individual participant’s data) stimulation averaged across all tDCS stimulation blocks (D1, D2, P1, and P2). (B) Effect of visual cortex stimulation on imagery strength at 1.5mA. Top: the tDCS montage with the active electrode over Oz and the reference electrode on the right cheek. Bottom: the effect of cathodal (blue dots, decrease excitability) and anodal (red dots, increase excitability) stimulation averaged across all blocks during and after tDCS stimulation (D1, D2, P1, and P2). Each data point represents a single participant. Imagery strength increases in the cathodal stimulation condition (blue), when neural excitability is reduced. (C) Effect of visual cortex stimulation on imagery strength at 1.5mA. Top: the tDCS montage with the active electrode over Oz and the reference electrode on the right cheek. Bottom: The left bar shows the relative change in imagery strength for cathodal stimulation (blue bar, blue dots represent individual participants data), the middle bar shows the relative change in imagery strength for anodal stimulation (red bar, red dots represent individual participants data), while the right bar shows the change in imagery strength for sham stimulation (grey bar, grey dots represent individual participants data). All error bars show ± SEMs and stars (*) indicate a significant effect of tDCS polarity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental timeline for all tDCS experiments. Spread of individual data points for raw data and difference scores for experiment 1 (1mA Occipital: B and C), experiment 2 (1.5mA Occipital: D and E) and experiment 4 (1.5mA PreFrontal: F and G). Blue data points represent individual subjects’ cathodal stimulation changes while red data points represent anodal stimulation changes. For the raw data (B, D and F) the figure shows data averaged across pre, during and post-stimulation blocks. For the difference scores data (C, E and G) the figure shows difference scores for each imagery block, two during (D1 and D2, shaded yellow area) and two after tDCS (P1 and P2). All error bars show ± SEMs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Experimental timeline for all tDCS experiments. Spread of individual data points for raw data and difference scores for experiment 3 (Occipital stimulation: B and D), experiment 5 (Occipital + Prefrontal stimulation: C and E). For B and C blue data points represent individual subjects’ cathodal stimulation changes, red data points represent anodal stimulation changes and grey data points represent sham stimulation. For D and E blue data points represent cathodal-occipital and anodal-prefrontal stimulation, while blue represents anodal-occipital and cathodal-prefrontal stimulation, and grey data points represent sham stimulation. For the raw data (B and C) the figure shows data averaged across pre, during and post-stimulation blocks. For the difference scores (percent change) data (D and E), the figure shows difference scores (percent change) for each imagery block, two during (D1 and D2, shaded yellow area) and two after tDCS (P1 and P2). All error bars show ± SEMs.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Data shows phosphene thresholds (PT) before cathodal (left-hand side, blue data points) and before anodal (left-hand side, red data points) and after cathodal (right-hand side, blue data points) and after anodal stimulation (right-hand side, red data points). A significant interaction between tDCS polarity and PT session was found (F(1,17) = 6.16, p=0.02). (B) We then looked at the difference scores for each participant’s phosphene thresholds in the cathodal and anodal conditions. This difference score was calculated with the following equation: PT(after tDCS) – PT(before tDCS). Data shows participants’ phosphene threshold differences scores with positive scores indicating that PTs have increased after tDCS (in the cathodal condition, blue bar) while negative scores indicate that PTs have decreased after tDCS (in the anodal condition, red bar). There was a significant difference between the anodal and cathodal conditions with anodal PT changes being significantly lower than cathodal (t(17) = 2.48, p=0.02). (C) To assess whether or not some participants were driving these results, for example it might be that participants with high phosphene thresholds are driving the results, relative difference scores were also calculated: ((PT(after tDCS) – PT(before tDCS))/PT(before tDCS))*100. Using this method of analysis, the same pattern of results was found with cathodal stimulation increasing phosphene thresholds in comparison to anodal stimulation (t(17) = 2.70, p=0.015). All error bars show ± SEMs.
 
 Figure 4A shows relative imagery priming percent change scores averaged across all stimulation blocks with 1mA of tDCS stimulation (data per block can be seen in Figure 4—figure supplement 1C). Linear mixed-effects analysis were computed for all following tDCS experiments. This analysis was run with a 2 (tDCS polarity: cathodal and anodal), x 4 (block: D1, D2, P1, P2 – see Figure 4—figure supplement 1A for timeline and Figure 4—figure supplement 1C for data for each block) x 2 (order of stimulation: cathodal on the first or second day) design. When fitting a linear mixed model, the effect of tDCS polarity was not significant (χ2(1)=2.99, p=0.084).
 
@@ -66,39 +110,99 @@ It is likely that the change from 1mA to 1.5mA allowed us to observe the modulat
 
 Although other studies have provided evidence that tDCS does change the excitability of the visual cortex (see Antal et al., 2003 for example), we wanted to ensure that our specific stimulation paradigm was indeed modulating visual cortex excitability. We ran a separate control study comparing TMS-phosphene thresholds before and after the same tDCS paradigm (1.5mA, active electrode on Oz and reference on the cheek, see Figure 4B, all subjects received both anodal and cathodal stimulations across separate days; see Materials and methods for further details). If our cathodal stimulation is decreasing visual cortex excitability, greater TMS power output would be required to elicit phosphenes post-cathodal stimulation, whereas post-anodal stimulation we would predict the opposite effect. A linear mixed-effects analysis was run with a 2 (tDCS polarity: cathodal and anodal), x 2 (block: Pre tDCS and Post tDCS) x 2 (order of stimulation: cathodal on the first or second day) design. We found that phosphene thresholds measured immediately after anodal stimulation decreased, whereas after cathodal stimulation phosphene thresholds increased (significant effect of tDCS polarity (χ2(1)=4.32, p=0.038, see Figure 4—figure supplement 3)). These findings show that our stimulation paradigm changes cortical excitability in the expected direction, that is cathodal stimulation decreases cortical excitability, whereas anodal stimulation increases activity.
 
-## Summary of visual cortex excitability and visual imagery strength
+### Summary of visual cortex excitability and visual imagery strength
 
 In two separate experiments, we found that resting levels of early visual cortex excitability/activity negatively predicted visual imagery strength (fMRI and TMS, Figures 2 and 3). We were also able to causally alter visual imagery strength in two separate tDCS experiments. Specifically, decreasing visual cortex excitability (using cathodal stimulation 1.5mA) increased imagery strength (see Figure 4B and C).
 
 Our data suggest that visual cortex excitability plays a causal role in modulating imagery strength, but how exactly does excitability influence imagery strength? One hypothesis is that hyperexcitability might act as a source of noise in visual cortex that limits the availability or sensitivity of neuronal response to top-down imagery signals, resulting in weaker image-simulations. This hypothesis is supported by behavioral work showing that both imagery and visual working memory can be disrupted by the passive presence of uniform bottom-up afferent visual stimulation (Keogh and Pearson, 2011; Keogh and Pearson, 2014), known to increase neural depolarization in primary visual cortex (Kinoshita and Komatsu, 2001). However, the strength of the top-down imagery-signals arriving at visual cortex should also play a role in governing imagery strength, as activity in a brain network including prefrontal areas supports mental image generation (Pearson et al., 2015b). Therefore, we next assessed the role that prefrontal cortex activity plays in shaping visual imagery strength.
 
-## Correlations between frontal cortex excitability and imagery strength
+### Correlations between frontal cortex excitability and imagery strength
 
 As mentioned previously, the exploratory, multiple comparison-corrected whole-brain surface-based analysis of the mean fMRI intensity levels at rest revealed relationships with clusters in both visual and frontal cortex (see Figure 2 and Figure 2—figure supplement 2 and Supplementary Table S2). Most of the significantly positive frontal clusters were located in superior frontal cortex. Additionally, using a ROI-based approach, normalized mean fMRI intensity levels in two frontal areas also showed positive relationships with imagery strength: superior frontal cortex (r = 0.41, p=0.022) and area parsopercularis (r = 0.38, p=0.033; ROIs defined by the Desikan–Killiany atlas). However, these relationships did not survive multiple comparison correction (both p>0.05).
 
-## Manipulating prefrontal cortex excitability using tDCS
+### Manipulating prefrontal cortex excitability using tDCS
 
 To explore the theoretical role of frontal cortex in imagery generation and maintenance further, we next sought to evaluate the effect of modulating neural excitability in prefrontal cortex using tDCS during image generation. The active electrode was placed between F3 and Fz (left frontal cortex), and the reference electrode on the right cheek (Figure 5A for montage). Participants completed both cathodal and anodal conditions (1.5mA) over 2 separate days. A linear mixed-effects analysis was run with a 2 (tDCS polarity: cathodal and anodal), x 4 (block: D1, D2, P1, P2 – see Figure 4—figure supplement 1A for timeline and Figure 4—figure supplement 1G for data for each block) x 2 (order of stimulation: cathodal on the first or second day) design. The effect of tDCS polarity was significant (χ2(1)=6.86, p=0.009, see Figure 5A). Interestingly, in contrast to the visual cortex, where decreasing excitability led to stronger imagery, we found the opposite pattern for frontal areas (see Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50232/elife-50232-fig5-v1.jpg)
 
-**Figure 5.:** (A) Effect of left prefrontal (pFC) cortex stimulation on imagery strength at 1.5mA. The left image shows the tDCS montage, with the active electrode between Fz and F3 and the reference electrode on the right cheek. The right image shows the effect of cathodal (decrease excitability, blue dots represent each participant’s difference score) and anodal (increase excitability, red dots represent each individual participant’s difference score) stimulation averaged across all blocks during and after tDCS stimulation (D1, D2, P1, and P2). Imagery strength can be seen to increase with anodal stimulation. (B) Effect of joint electrical stimulation of prefrontal cortex and visual cortex. The left image shows brain areas targeted in the final tDCS study. Data shows non-significant effects of cathodal occipital + anodal pFC stimulation (blue bars, blue dots represent individual participants data), anodal occipital + cathodal pFC stimulation (red bars, red dots represents individual participants data) and sham stimulation (grey bars grey dots represent individual participants data). All error bars show ± SEMs and stars (*) indicate a significant effect of tDCS polarity.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** (A) Effect of left prefrontal (pFC) cortex stimulation on imagery strength at 1.5mA. The left image shows the tDCS montage, with the active electrode between Fz and F3 and the reference electrode on the right cheek. The right image shows the effect of cathodal (decrease excitability, blue dots represent each participant’s difference score) and anodal (increase excitability, red dots represent each individual participant’s difference score) stimulation averaged across all blocks during and after tDCS stimulation (D1, D2, P1, and P2). Imagery strength can be seen to increase with anodal stimulation. (B) Effect of joint electrical stimulation of prefrontal cortex and visual cortex. The left image shows brain areas targeted in the final tDCS study. Data shows non-significant effects of cathodal occipital + anodal pFC stimulation (blue bars, blue dots represent individual participants data), anodal occipital + cathodal pFC stimulation (red bars, red dots represents individual participants data) and sham stimulation (grey bars grey dots represent individual participants data). All error bars show ± SEMs and stars (*) indicate a significant effect of tDCS polarity.
 
 Taken together, these fMRI and tDCS data provide evidence that the cortical excitability of prefrontal cortex also plays a role in governing the sensory strength of visual imagery.
 
-## The joint role of visual and frontal cortex activity in visual imagery strength: fMRI
+### The joint role of visual and frontal cortex activity in visual imagery strength: fMRI
 
 Beyond the individual roles of prefrontal and visual cortex in forming mental images, evidence suggests that both areas can act together as part of an imagery network (Østby et al., 2012; Schlegel et al., 2013). Hence, we combined the whole-brain normalized mean fMRI intensity scores from the two areas (frontal and visual) and related their ratio to imagery strength. We found that the ratio of V1 to superior frontal activity predicted the strength of visual imagery (Spearman rank: rs = −0.53, p=0.002). This effect also held when controlling for the Euklidean distance between the two areas (partial Spearman rank: rs = −0.54, p=0.002). Hence, participants with both comparatively lower levels of visual cortex normalized mean intensity and higher frontal levels had stronger imagery.
 
 To assess the possibility that cortical connectivity might be driving this fronto-occipital excitability relationship, we analyzed the individual functional connectivity of the same two areas for each participant, that is, the degree to which the BOLD signals in each area correlate over time. The functional connectivity did not significantly predict imagery strength (r = −0.24, p=0.19). This suggests that the combination of highly active frontal areas and low visual cortex excitability might present an optimal precondition for strong imagery creation, irrespective of the temporal coupling of their activity.
 
-## The joint role of visual and frontal cortex activity in visual imagery strength: tDCS
+### The joint role of visual and frontal cortex activity in visual imagery strength: tDCS
 
 To further investigate the possibility that optimal imagery strength occurs with a combination of low levels of excitability in visual cortex and high levels in prefrontal cortex, a new tDCS experiment was run where both prefrontal and visual cortex were simultaneously stimulated during imagery generation using the same blocked design as in all previous tDCS experiments (1.5mA). There were 3 conditions in this study, the first condition aimed to increase prefrontal (anodal) and decrease visual cortex (cathodal) excitability (blue dots in Figure 5B), the second condition decreased prefrontal (cathodal) and increased visual cortex (anodal) excitability (red dots in Figure 5B), and the third condition was a sham condition where the tDCS machine shut off after 30 s (grey dots in Figure 5B). A linear mixed-effects analysis was run with a 3 (tDCS polarity: cathodal, anodal and sham), x 4 (block: D1, D2, P1, P2 – see Figure 4—figure supplement 2A for timeline and Figure 4—figure supplement 2E for data for each block) x 3 (order of stimulation: cathodal on first, second or third day) design. However, the effect of tDCS polarity was not significant (tDCS χ2(2)=2.70, p=0.26), see Figure 5B).
 
-## Summary of cortical excitabilities effect on imagery strength
+### Summary of cortical excitabilities effect on imagery strength
 
 In summary, visual cortex excitability reliably correlated negatively with the strength of visual imagery using both fMRI and TMS as measurement tools (Figures 2 and 3). Modulating visual cortex excitability also altered the strength of visual imagery (Figure 4B & C, see Table 1 for a summary of all tDCS experiments). Specifically decreasing visual cortex excitability led to increased visual imagery strength. There was also evidence that altering prefrontal cortex excitability modulates visual imagery strength, but in the opposite pattern to visual cortex – increasing prefrontal cortex excitability led to increased imagery strength (see Figure 5A). However, combining stimulation of the frontal and occipital cortex had no reliable effect on modulating visual imagery strength.
+
+**Table 1.**
+ Summary of montage, intensity, duration, and significance of each tDCS experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment #</th>
+      <th>Montage (EEG Coordinates)</th>
+      <th>Intensity + duration</th>
+      <th>Notes</th>
+      <th>Significant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Occipital</td>
+      <td>Active: Inion (Oz) Reference: Supraorbital (Fpz)</td>
+      <td>1 mA 15 min</td>
+      <td>Tested effect on imagery strength</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>2 Occipital</td>
+      <td>Active: Inion (Oz) Reference: Right Cheek</td>
+      <td>1.5 mA 15 min</td>
+      <td>Tested effect on imagery strength</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>3 Occipital</td>
+      <td>Active: Inion (Oz) Reference: Right Cheek</td>
+      <td>1.5 mA 15 min</td>
+      <td>Tested effect on imagery strength (additional sham condition)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>4 Prefrontal</td>
+      <td>Active: Between F3-Fz Reference: Right Cheek</td>
+      <td>1.5 mA 15 min</td>
+      <td>Tested effect on imagery strength</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>5 Occipital + Prefrontal</td>
+      <td>Active: Inion (Oz) Active: Between F3-Fz</td>
+      <td>1.5 mA 15 min</td>
+      <td>Tested effect on imagery strength</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>Additional control Occipital</td>
+      <td>Active: Inion (Oz) Reference: Right Cheek</td>
+      <td>1.5 mA 15 min</td>
+      <td>Tested effect on phosphene threshold</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -136,29 +240,179 @@ In conclusion our data demonstrates that visual cortical excitability, as well a
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The first study with fMRI was exploratory, to assess whether resting levels of BOLD might predict visual imagery. We followed this with a correlational TMS study and aimed to collect phosphene thresholds from 30 to 35 participants, which would give us power of around 80–85% for a moderate correlation (in line with the fMRI correlations of r = ~. 45). All tDCS experiments were designed as repeated measures studies (with the aim of all participants completing all conditions in the study). We aimed to collect data from 15 to 20 participants, as most tDCS studies examining effects on cognition have found significant effects with this range of participants (see for examples: Javadi and Cheng, 2013; Strobach et al., 2015; Manuel et al., 2014; Javadi et al., 2012). Data collection stopped once we had at least 15 participants in each group who had completed 2 days of testing, no more participants were recruited beyond this point; however, participants were not cancelled if we reached 15 (e.g. if we had collected 15 participants for both days but still had 2 more participants who had completed 1 day of testing, we still ran them through the study – resulting in 17 participants).
 
-## Participants
+### Participants
 
 All MRI participants were right-handed and had normal or corrected-to-normal vision, with no history of psychiatric or neurological disorders. All tDCS and TMS participants had normal or corrected-to-normal vision, with no history of psychiatric or neurological disorders, as well as no history of migraines and/or severe or frequent headaches. All MRI research was carried out in Germany at the Max Planck Institute for Brain Research and all brain stimulation research (tDCS and TMS) was carried out in Australia at the University of New South Wales. Written informed consent was obtained from all participants and the ethics committee of the Max Planck Society approved the MRI study and the ethics committee of the University of New South Wales approved the tDCS and TMS studies.
 
-## Exclusion criteria for the tDCS experiments
+### Exclusion criteria for the tDCS experiments
 
 There were a number of strict exclusion criteria chosen a priori for the tDCS experiments due to the technical psychophysics and brain stimulation experiments involved here. These are based on previous work using the binocular rivalry paradigm, which is a sensitive measure of visual imagery strength when participants complete the task correctly. Due to the nature of the task, it is important to include catch trials/exclusion criteria to assess whether participants are correctly and reliably completing the task. These values are based on exclusion criteria we have used in previous experiments using this paradigm.
 
-## Brain imaging sample
+### Brain imaging sample
 
 Thirty-two individuals (age range: 18–36 years, median: 25.5; 13 males) participated in the fMRI resting-state and retinotopic mapping measurements and in the behavioral experiment. These individuals had been part of previous studies (Bergmann et al., 2016a; Bergmann et al., 2016b). Of the original imagery study (Bergmann et al., 2016a), which included 34 participants, 1 participant had not done the fMRI resting-state measurement (but this individual participated in the additional fMRI resting-state measurement, see further below). The other participant was excluded because of reporting several migraine attacks shortly prior to the measurement. Migraine is known to affect fMRI BOLD activity and cortical excitability (Coppola and Schoenen, 2012; Welch, 2005). One participant was excluded from data analysis because of misunderstanding the task instructions in the behavioral imagery task (this participant had already been excluded in the original study). The data analysis was done with the remaining 31 individuals. To look at the reliability of the observed relationships, we also analysed the data of an additional fMRI resting-state measurement (with different sequence parameters, see further below). This sample also included 31 individuals (age range: 22–36 years). Of these, 30 had also participated in the original resting-state measurement. Hence, there were two participants of which only one resting-state measurement was available, respectively: for one participant, only the fMRI measurement with TR = 2 s had been done, and for the other one, only the fMRI measurement with TR = 1 s. Participants were reimbursed for their time at a rate of 15€ per hour. Written informed consent was obtained from all participants and the ethics committee of the Max Planck Society approved the study.
 
-## TMS samples
+### TMS samples
 
 All participants in both the TMS and tDCS studies had normal or corrected to normal vision, no history of any neurological or mental health issues or disorders, no history of epilepsy or seizures themselves or their immediate family, no history of migraines and no metal implants in the head or neck region. We aimed to collect phosphene thresholds from 30 to 35 participants, which would give us power of around 80–85% for a moderate correlation (in line with the MRI correlations). A total of 37 participants participated in this study for money ($30 per hour) or course credit, five participants were excluded due to an inability to produce reliable phosphenes (see Table 2 and exclusion criteria). Of the remaining thirty-two participants 15 were female, age range: 18–30). Written informed consent was obtained from all participants and the ethics committee of the University of New South Wales approved the study.
 
-## TDCS samples
+**Table 2.**
+ Exclusion criteria for tDCS experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Exclusion</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mock Priming (Higher than 66%)</td>
+      <td>Mock displays are fake binocular rivalry displays – priming on these trials indicates that participants are showing a response/demand characteristic and as such we cannot trust their priming scores, as they may either be responding in a way that they think we want them too, or they are not attending to the task correctly. A score of more than 66% indicates that the participant has primed on these mock trials more than once.</td>
+    </tr>
+    <tr>
+      <td>Low Priming (lower than 40%)</td>
+      <td>Participants whose imagery scores were lower than 40% were excluded, as the score becomes difficult to interpret: The measure of imagery strength is predicated on how the energy of a stimulus impacts on binocular rivalry. Very weak perceptual stimuli prime binocular rivalry up unto a certain point. At this tipping point, as the image becomes stronger, it begins to suppress binocular rivalry (Brascamp et al., 2007). For this reason, very low priming can either mean that the participant’s visual imagery is so strong that it leads to suppression, or that the opposite is the case, and imagery is in fact very weak. Alternatively, it may also be that a participant is not completing the task correctly. 40% was chosen as the cut off as this is 10% lower than chance values (50%).</td>
+    </tr>
+    <tr>
+      <td>Mixed Percepts (higher than 1/3 or 33%)</td>
+      <td>We analyse our priming data as percent primed,that is the percentage of trials a participant imagined an image, then saw that image in the following display. Mixed trials cannot be labelled as either ‘primed’ or ‘not primed’, and as such these trials are not included in the analysis. A high number of mixed trials reduces the number of usable trials for analysis. This can lead to large changes that may be spurious (much larger percentage changes due to a single trial) and not due to the stimulation parameters. We excluded an individual’s data set if more than a third of the trials were mixed percept’s.</td>
+    </tr>
+    <tr>
+      <td>Attrition</td>
+      <td>Attrition occurred when a participant did not turn up to or cancelled the second and/or third day of testing.</td>
+    </tr>
+    <tr>
+      <td>Impedance (Exceeding voltage: impedance greater than 55 kΩ)</td>
+      <td>For safety reasons, our tDCS machine was programmed to shut off once the impedance exceeded 55 kΩ (this is pre-programmed into the tDCS machine). As the participants completed the experiment in a blackened room by themselves we could not monitor the impedance of the machine in real-time and as such the machine could switch off during a block of the experiment. As we cannot know how much stimulation this participant received we are unable to use them reliably in our analysis – as different stimulation durations will lead to different excitability changes. The second (1.5mA Occip + cheek) and fourth (1.5mA pFC + cheek) tDCS experiments were run at the same time. There were a large number of cases of impedance being exceeded in these studies – it was discovered that this was due to a faulty wire, which was replaced halfway through the experimental data collection.</td>
+    </tr>
+    <tr>
+      <td>Phosphene Determination</td>
+      <td>If participants reported phosphenes in the wrong visual hemifield (e.g. left visual hemisphere was stimulated and participants reported phosphenes in the left visual hemifield) their data was excluded. Participants who had very large eye-blinks in the REPT procedure were excluded from the experiment, due to this potentially resulting in a missed phosphene leading to incorrect phosphene threshold estimation.</td>
+    </tr>
+  </tbody>
+</table>
+
+### TDCS samples
 
 For all tDCS experiments, we aimed to collect data from 15 to 20 participants, as most tDCS studies examining effects on cognition have found significant effects with this range of participants (see for examples: Javadi and Cheng, 2013; Strobach et al., 2015; Manuel et al., 2014; Javadi et al., 2012). A priori we chose a cut-off of 33% of trials being mixed as an exclusion criterion (see Table 2 for explanations of all exclusion criteria and Table 3 for tally of all exlcuded participants). The reason for this is that mixed trials are not included in our analysis, and as such a large number of mixed trials vastly decrease the number of analyzable trials. Participants whose imagery scores were lower than 40% were also excluded, as it is difficult to tell if these data should be defined as strong or weak imagery, or due to a participant just not completing the task correctly. This measure of imagery strength is predicated on how the energy of a stimulus impacts on binocular rivalry. Very weak perceptual stimuli prime binocular rivalry up unto a certain point. At this tipping point, as the image becomes stronger, it begins to suppress binocular rivalry (Brascamp et al., 2007). For this reason, when priming is low this indicates suppression that may either mean the participant’s visual imagery is so strong it is suppressing binocular rivalry, or the participant is not completing the task correctly.
+
+**Table 3.**
+ Number of participants excluded per exclusion criteria for tDCS experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Exclusion criteria</th>
+      <th>Exp 1</th>
+      <th>Exp 2</th>
+      <th>Exp 3</th>
+      <th>Exp 4</th>
+      <th>Exp 5</th>
+      <th>Exp 6</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mock priming</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Low priming</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>1</td>
+      <td>3</td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Mixed percept’s</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Attrition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Impedance</td>
+      <td></td>
+      <td>9</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Incorrect buttons</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Technical issues</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Phosphenes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>5</td>
+      <td>13</td>
+      <td>6</td>
+      <td>7</td>
+      <td>9</td>
+      <td>11</td>
+      <td>51</td>
+    </tr>
+  </tbody>
+</table>
 
 For the first tDCS experiment (1mA, Occipital and Supraorbital), a total of 21 subjects participated for money or course credit. Five participants were excluded from our analysis, as the number of usable trials was small due to too many reported mixed rivalry percepts (more than a third of trials, N = 3) and two were excluded due to low priming scores (see Table 1 for exclusion criteria). Of the remaining 16 participants, 7 were female, and the age range was 18–32.
 
@@ -172,41 +426,41 @@ For the fifth tDCS experiment (1.5mA, left prefrontal and occipital cortex + sha
 
 All subjects participated in these studies for course credit or money - $30 AUD per hour.
 
-## tDCS modulation of phosphene thresholds control study
+### tDCS modulation of phosphene thresholds control study
 
 A total of 29 subjects participated in this study for money ($30 AUD per hour) or course credit. Of these 29 participants, 11 were excluded due to a number of strict exclusion criteria in regard to reliability of phosphene thresholds: If participants reported phosphenes in the wrong visual hemifield (e.g. left visual hemisphere was stimulated and participants reported phosphenes in the left visual hemifield) their data was excluded (N = 2), see Table 1 for exclusion criteria. If participants blinked during the rapid estimation of phosphene thresholds (REPT) procedure their data was also removed from analysis (N = 4). A participant’s data was also removed if the REPT procedure took longer than 5 min to set up after tDCS stimulation (N = 1). 3 participants were also removed due to technical issues with the tDCS machine exceeding voltages on one of the days (N = 2) or the REPT Matlab procedure experiencing errors (N = 1). One participant was removed due to attrition (N = 1). This resulted in 18 participants’ data being analyzed (8 female, age range 18–25).
 
-## TMS Phosphene threshold reliability study
+### TMS Phosphene threshold reliability study
 
 This sample consisted of the same 29 subjects that participated in the control study to test tDCS modulation of phosphene thresholds. Exclusion criteria were the same as stated above, with the exception that those participants who had technical issues with the tDCS machine were included as their pre-tDCS TMS phosphene values were still usable (N = 2); the study also included 1 participant who took longer than 5 min to set up the TMS after the tDCS stimulation. This resulted in 21 participants’ data being included in this correlation.
 
-## Behavioral measurements
+### Behavioral measurements
 
-## Apparatus
+#### Apparatus
 
-## Brain imaging sample
+##### Brain imaging sample
 
 Participants sat in a darkened room with dark walls, wearing red-green anaglyph glasses for the binocular rivalry imagery paradigm. Their head position was stabilized with a chin rest and the distance to the screen was 57 cm. The stimuli were presented on a CRT monitor (HP p1230; resolution, 1024 × 768 pixels, refresh rate: 150 Hz; visible screen size: 30° x 22.9°) and controlled by MATLAB R2010a (The MathWorks, Natick, MA) using the Psychophysics Toolbox extension (Brainard, 1997; Pelli, 1997; Kleiner et al., 2007), running on Mac OSX, version 10.7.4.
 
-## TMS/tDCS sample
+##### TMS/tDCS sample
 
 All experiments were performed in a blackened room on a 27 inch iMac with a resolution of 2560 × 1440 pixels, with a frame rate of 60 Hz. A chin rest was used to maintain a fixed viewing distance of 57 cm. Participants wore red-green anaglyph glasses throughout all experiments.
 
-## Stimuli
+#### Stimuli
 
-## Brain imaging sample
+##### Brain imaging sample
 
 The circular Gaussian-windowed Gabor stimuli were presented centrally, spanning a radius of 4.6° around the fixation point in visual angle (thereby covering a diameter of 9.2°), one period subtending a length of 1.2°. The peak luminance starting value was ~0.71 cd/m2 for the red horizontal grating, and ~0.73 cd/m2 for the green vertical grating, which was then individually adjusted for each participant to compensate for eye dominance (see further below).
 
-## TMS/tDCS sample
+##### TMS/tDCS sample
 
 The binocular rivalry stimuli were presented in a Gaussian-windowed annulus around the bull’s eye and consisted of a red-horizontal (CIE X = 0.579 Y=0.369 and green-vertical (CIE X = 0.269 Y=0.640), Gabor patch, one cycle/°, with a diameter of 6° and a mean luminance of 6.06 cd/m2. The background was black throughout the entire experiment.
 
-## Mock trials
+##### Mock trials
 
 Mock rivalry displays were presented on 10% of trials in the behavioral measurements with the brain imaging sample, 25% of trials in the first two tDCS experiments as well as the TMS experiment, and in 12.5% of the last three tDCS experiment to assess demand characteristics. The mock displays consisted of a spatial mix of a red-horizontal and green-vertical Gabor patch (50/50% or 25/75%). The mock display was spatially split with a blurred edge and the exact path of the spatial border changed on each trial based on a random function. Otherwise, the mock rivalry displays had the same parameters as the Gabor patches described in the previous paragraph.
 
-## Procedure
+### Procedure
 
 All participants first underwent a previously documented eye dominance task (Pearson et al., 2008a). They then underwent the binocular rivalry imagery paradigm which has been shown to reliably measure the sensory strength of mental imagery through its impact on subsequent binocular rivalry perception (Pearson, 2014; Pearson et al., 2008a; Keogh and Pearson, 2011; Keogh and Pearson, 2014; Pearson and Brascamp, 2008b; Sherwood and Pearson, 2010; Rademaker and Pearson, 2012; Pearson et al., 2015b), thus avoiding any reliance on self-report questionnaires or compound multi-feature tasks. Previous work has demonstrated that when individuals imagine a pattern or are shown a weak perceptual version of a pattern, they are more likely to see that pattern in a subsequent brief binocular rivalry display (see Pearson, 2014 for a review). Longer periods of imagery generation or weak perceptual presentation increase the probability of perceptual priming of subsequent rivalry (Pearson et al., 2008a; Pearson et al., 2015b; Brascamp et al., 2007). For this reason, the degree of imagery priming has been taken as a measure of the sensory strength of mental imagery (Pearson, 2014; Pearson et al., 2008a; Keogh and Pearson, 2011; Keogh and Pearson, 2014; Pearson and Brascamp, 2008b; Sherwood and Pearson, 2010; Rademaker and Pearson, 2012; Pearson et al., 2015b). This measure of imagery strength has been shown to be both retinotopic location- and spatial orientation-specific (Bergmann et al., 2016a; Pearson and Brascamp, 2008b), is closely related to phenomenal vividness (Rademaker and Pearson, 2012; Chang et al., 2013), is reliable when assessed over days (Rademaker and Pearson, 2012) or weeks (Bergmann et al., 2016a), is contingent on the imagery generation period (therefore not due to any rivalry control Sherwood and Pearson, 2010) and can be dissociated from visual attention (Pearson et al., 2008a).
 
@@ -214,63 +468,63 @@ At the beginning of each trial of the imagery experiment, participants were pres
 
 For the tDCS experiments, there were no effects for mean subjective ratings of imagery vividness (see Supplementary Figure 1—figure supplement 1C). For the subjective vividness ratings acquired in the brain imaging sample, we conducted a whole-brain surface-based analysis of the fMRI resting-state data (see Materials and methods and Figure 1—figure supplement 1B and Table S3). Throughout all imagery experiments, participants were asked to maintain fixation on a bulls-eye fixation point in the center of the screen.
 
-## Brain imaging sample
+### Brain imaging sample
 
 Participants completed 100 trials of the standard imagery paradigm per session (outside the scanner). The behavioral test session was repeated after an average of ~2 weeks with each participant. All of the runs were divided into blocks of 33 trials, and participants were asked to take a rest in between. In one participant, there was a strong perceptual bias for one of the two rivalry patterns in the first session due to incorrectly conducted eye dominance adjustments. Therefore, only the data set from the second session of this participant was used for later analysis. The retests demonstrated a very high retest reliability of the imagery strength measure (r = 0.877, p<0.001). The data from both conditions were checked for normal distribution using Shapiro-Wilk normality test. No violation of the normality assumption was detected (both p>0.52).
 
-## TMS/tDCS samples
+### TMS/tDCS samples
 
 For the TMS study, participants completed one block of 40 imagery trials. In the first tDCS experiments comprising of cathodal and anodal conditions, participants completed a total of 40 trials for each block resulting in a total of 480 trials across the two days of testing. In the tDCS experiments with cathodal, anodal and sham conditions participants completed 48 trials per block, and as such 864 trials were completed.
 
-## Control tDCS modulation of phosphene thresholds experiment
+### Control tDCS modulation of phosphene thresholds experiment
 
 Participants completed both the anodal and cathodal stimulation across two days separated by at least 24 hr, the order of which was randomized and counterbalanced across participants. Participants completed a memory or psychophysical task (both of which are not relevant to the current study) followed by the automated REPT phosphene threshold procedure prior to tDCS stimulation. Following this, participants completed two blocks of the imagery task (see main tDCS methods for full description of procedure and stimuli) with 15 min of cathodal or anodal stimulation. Immediately after the tDCS stimulation participants completed the automated REPT procedure again.
 
-## Neuroimaging experiments
+### Neuroimaging experiments
 
 All neuroimaging data were acquired at the Brain Imaging Center Frankfurt am Main, Germany. The scanner used was a Siemens 3-Tesla Trio (Siemens, Erlangen, Germany) with an 8-channel head coil and a maximum gradient strength of 40 mT/m. Imaging data were acquired in two or three scan sessions per participant.
 
-## Anatomical imaging
+### Anatomical imaging
 
 For anatomical localization and coregistration of the functional data, T1-weighted anatomical images were acquired first using an MP-RAGE sequence with the following parameters: TR = 2250 ms, TE = 2.6 ms, flip angle: 9°, FoV: 256 mm, resolution = 1×1 x 1 mm3.
 
-## fMRI retinotopic mapping measurement and analysis
+### fMRI retinotopic mapping measurement and analysis
 
 This procedure has already been described in previous studies (Bergmann et al., 2016a; Bergmann et al., 2016b; Genç et al., 2015); the retinotopic maps acquired in studies [20, 22] were used for the ROI-based fMRI resting-state analyses in the present study. A gradient-recalled echo-planar (EPI) sequence with the following parameter settings was applied: 33 slices, TR = 2000 ms, TE = 30 ms, flip angle = 90°, FoV = 192 mm, slice thickness = 3 mm, gap thickness = 0.3 mm, resolution = 3×3 x 3 mm3. A MR-compatible goggle system with two organic light-emitting-diode displays was used for presentation of the stimuli (MR Vision 2000; Resonance Technology Northridge, CA), which were generated with a custom-made program based on the Microsoft DirectX library (Muckli et al., 2005). The maximal visual field subtended 24° vertically and 30° horizontally.
 
-## Retinotopic mapping procedure
+### Retinotopic mapping procedure
 
 To map early visual cortices V1, V2, and V3, our participants completed two runs, a polar angle mapping and an eccentricity mapping run. The rationale of this approach has already been described elsewhere (Sereno et al., 1995; Wandell et al., 2007). Polar angle mapping: For the mapping of boundaries between areas, participants were presented with a black and white checkerboard wedge (22.5° wide, extending 15° in the periphery) that slowly rotated clockwise around the fixation point in front of a grey background. In cycles of 64 s, it circled around the fixation point 12 times at a speed of 11.25 in polar angle/volume (2 s). Eccentricity mapping: To map bands of eccentricity on the cortical surface to the corresponding visual angles from the center of gaze, our participants were presented with a slowly expanding flickering black and white checkerboard ring in front of a grey background (flicker rate: 4 Hz). The ring started with a radius of 1° and increased linearly up to a radius of 15°. The expansion cycle was repeated 7 times, each cycle lasting 64 s. The participants’ task in both mapping experiments was to maintain central fixation.
 
-## Retinotopic mapping data analysis
+### Retinotopic mapping data analysis
 
 We used FreeSurfer’s surface-based methods for cortical surface reconstruction from the T1-weighted image of each participant (Dale et al., 1999; Fischl et al., 1999) (http://surfer.nmr.mgh.harvard.edu/fswiki/RecommendedReconstruction). FSFAST was applied for slice time correction, motion correction and co-registration of the functional data to the T1-weighted anatomical image. Data from the polar angle and eccentricity mapping experiment were analysed by applying a Fourier transform to each voxel’s fMRI time series to extract amplitude and phase at stimulation frequency. Color-encoded F-statistic maps were then computed, each color representing a response phase whose intensity is an F-ratio of the squared amplitude of the response at stimulus frequency divided by the averaged squared amplitudes at all other frequencies (with the exception of higher harmonics of the stimulus frequency and low frequency signals). The maps were then displayed on the cortical surface of the T1-weighted image. Boundaries of areas V1, V2 and V3 were then estimated manually for each participant on the phase-encoded retinotopic maps up to an eccentricity of 7.2°.
 
-## fMRI Resting-state data acquisition and analysis
+### fMRI Resting-state data acquisition and analysis
 
-## fMRI resting-state data acquisition
+#### fMRI resting-state data acquisition
 
 The fMRI resting-state data (TR2) were collected using a gradient-re- called echo-planar imaging (EPI) sequence with the following parameters: TR = 2000 ms, TE = 30 ms, flip angle = 90°, FoV = 192 mm, slice thickness = 3 mm, number of slices = 33, gap thickness = 0.3 mm, voxel size = 3×3 x 3 mm3, acquisition time = 9 min, 20 s (thus, 280 volumes were collected)The additional fMRI measurement (TR1) used a gradient-recalled echo-planar imaging (EPI) sequence with the following parameters: TR = 1000 ms, TE = 30 ms, flip angle = 60°, FoV = 210 mm, slice thickness = 5 mm, number of slices = 15, gap thickness = 1 mm, voxel size = 3.28×3.28 x 5 mm3, acquisition time = 7 min, 30 s (i.e. 450 volumes). During the scans, the screen remained grey and participants had no further instruction but to keep their eyes open and fixate a cross in the center of the grey screen. Of those individuals who participated in both fMRI measurements, half completed the two resting-state measurements in the same session, whereas the other half completed the measurements on two different days.
 
-## fMRI resting-state data analysis
+#### fMRI resting-state data analysis
 
 whole-brain surface-based group analysis. For a first assessment of the relationship between behavior and the fMRI data, we ran whole-brain analyses with the mean fMRI intensity data using a surface-based group analysis in FreeSurfer. Preprocessing of the functional data was done using FSFAST, which included slice time correction, motion correction and co-registration to the T1-weighted anatomical image. No smoothing was applied, and the first two volumes (TR2 data) or four volumes (TR1 data) of the fMRI measurement were discarded. In a first-level analysis, each individual’s average signal intensity maps were computed (which included intensity normalization) and nonlinearly resampled to a common group surface space (fsaverage), which allows for comparisons at homologous points within the brain. Following this, all subjects’ data were concatenated and a general linear model fit to explain the individual behavioral data by the individual mean fMRI intensity levels was computed vertex-wise using an uncorrected threshold of p<0.05. Correction for multiple comparisons was done using a pre-cached Monte Carlo Null-Z simulation with 10 000 iterations and a cluster-wise probability threshold of p<0.05. In addition, as we had also collected subjective vividness ratings in the brain imaging sample (see Procedure), we also ran the equivalent whole brain analysis for the vividness ratings with the TR2 data set, using each individual’s mean vividness (see Figure 1—figure supplement 1B and Supplementary Table S3). As already described in our previous study (Bergmann et al., 2016a), the subjective vividness values of two individuals were extreme, leading to a violation of the normal distribution assumption. As normality is necessary for the general linear model fit (Shapiro-Wilk normality test: W(31) = .885, p=0.003), the vividness ratings of these two individuals were excluded in the whole brain analysis.
 
-## fMRI resting-state data analysis
+#### fMRI resting-state data analysis
 
 ROI-based approach. The fMRI resting-state data were first preprocessed individually for each participant using the preprocessing steps implemented in FSL’s MELODIC Version 3.10 (http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/MELODIC), which included motion and slice time correction, high-pass temporal filtering with a cut-off point at 200 s and linear registration to the individual’s T1 anatomical image and to MNI 152 standard space. No spatial smoothing was applied. The first two of the 280 volumes of the TR2 measurement were discarded to allow for longitudinal magnetization stabilization (of the TR1 measurement, the first 4 volumes of the 450 volumes were discarded); further ROI-based analyses confirmed that the pattern of significant results in visual cortex did not change when more volumes (4, 6 and 8) were discarded (see Figure 2—figure supplement 3). To compute fMRI mean intensity of the early visual cortex in each individual’s subject space, delineations of the areas were first converted from anatomical to functional space in each individual. To ensure that the conversion had not produced overlaps between areas V1-V3, the volumes were subsequently subtracted from each other. Time courses of V1-V3 were then determined to compute their mean intensity across time. To determine mean intensity for other brain areas, we relied on the gyral-based Desikan–Killiany Atlas (Desikan et al., 2006). To ensure that there was no overlap between posterior atlas-defined areas and the retinotopically mapped early visual cortex, which would result in the mean intensity of these areas being partly computed from the same voxels, the volumes of the retinotopically mapped areas were also subtracted from the adjacent atlas-defined areas; the fMRI mean intensity of the atlas-defined areas was then determined from the remainder of these. The estimates of fMRI mean intensity of the atlas- and retinotopically mapped areas (Fox and Raichle, 2007) were normalized by subtracting the whole brain’s mean intensity from the area’s mean intensity, divided by the standard deviation of the whole brain’s mean intensity.
 
 Like the behavioral data, the normalized mean intensity values were checked for normal distribution using Shapiro-Wilk normality test. None of the retinotopically mapped early visual cortices showed a violation of the normal distribution (all p>0.20). Of the 34 atlas-defined areas, the normalized mean fMRI intensities of 4 areas showed a violation of the normal distribution assumption (p<0.05; fusiform, inferiortemporal, parstriangularis and postcentral area). For this reason, the relationships with behavior were also computed using Spearman rank correlations. Like with Pearson product moment correlations, none of the intensities of these areas had a significant relationship with behaviour (all p>0.20). The ratio of V1 and superior frontal mean intensities showed a violation of the normal distribution assumption (W(31) = .919, p=0.022) due to one extreme value (subject S8). Therefore, Spearman rank correlation (rs) was used to compute the relationship with behavior. To further examine the possibility that temporal coupling between V1 and superior frontal cortex might account for their inverse relationship with behavior, we also computed each individual’s functional connectivity of these two regions by calculating the time-wise correlation of their resting-state signals in each individual. As the functional connectivity data did not violate the normal distribution assumption (Shapiro-Wilk normality test, p=0.50), Pearson product moment correlation was used to examine the relationship with behavior. To correct for multiple comparisons in the brain-behaviour relationships, we first ran permutation tests where we randomly shuffled the subject labels of one of the paired measures and re-computed the pairwise correlations (1000 permutations). p-Values of the correlations were then determined via the percentile of the real correlation in the distribution of correlations from all permutations. Following this, the p-values were adjusted for multiple comparisons using the False Discovery Rate (FDR)(Yekutieli and Benjamini, 1999; Benjamini and Hochberg, 1995).
 
-## Control analyses to examine the effect of individual head motion
+#### Control analyses to examine the effect of individual head motion
 
 To rule out the possibility that factors like individual differences in head motion contributed to intensity variability, we re-analysed the data in two ways: (1) Partialling out overall head movement: we first computed a measure of Framewise Displacement (FD), which is a frame-wise scalar quantity of the absolute head motion from one volume to the next using the six motion parameters (Power et al., 2012). To obtain one value of absolute movement parameter for each individual, we determined the absolute sum of the displacement values across the whole run. We then used this parameter as a control variable in a Spearman partial correlation analysis (since the normality assumption was violated for overall head motion, W(31) = .790, p<0.001). (2) Exclusion of volumes with strong head movements (‘scrubbing’): volumes with strong head movements have previously been shown to influence functional resting-state connectivity patterns (Power et al., 2012). To investigate whether such movement also influenced individual mean resting-state intensity in our sample, we re-analyzed our data as using the method described by Power et al. To identify affected timepoints (i.e. volumes), we first computed the Framewise Displacement (FD), and DVARS, which is a frame-wise measure of how much the signal changes from one volume to the next. Using Powell et al.’s threshold of 0.5 for FD and 0.5% signal change for DVARS, we then excluded all volumes that had FD and DVARS values above threshold, plus one frame back and two forward. After this procedure, we re-computed mean intensity for each participant and correlated the values with behaviour.
 
-## Measuring and manipulating cortical excitability with brain stimulation (TMS and tDCS)
+### Measuring and manipulating cortical excitability with brain stimulation (TMS and tDCS)
 
 Cortical excitability can be broadly defined as the ease with which a neuron, or a population of neurons, can produce an action potential. The excitability of the brain is controlled by interactions between inhibitory (GABA acting upon GABAA and GABAB receptors) and excitatory (glutamate acting upon NMDA and non-NMDA receptors) neurotransmitters and cellular receptors. To measure cortical excitability and its role in visual imagery strength TMS (phosphene thresholds) were used, and non-invasive brain stimulation (in the form of transcranial direct current stimulation, tDCS) was employed to manipulate cortical excitability.
 
-## Phosphene thresholds
+### Phosphene thresholds
 
 Phosphene thresholds measure how much magnetic energy is needed to elicit an action potential and is inversely related to the excitability of the cortex, that is a more excitable cortex will require less magnetic energy to produce a phosphene. Many studies have used phosphene thresholds as a reliable measure of visual cortex excitability, for examples see: (Cowey and Walsh, 2000; Stewart et al., 2001; Bestmann et al., 2007; Romei et al., 2008). Phosphene thresholds have been shown to be reduced in populations that have elevated/altered cortical excitability, such as epilepsy and migraines (Brigo et al., 2013; Afra et al., 1998; Aurora et al., 1998; Aurora and Welch, 1998; Young et al., 2004). Studies of migraineurs who take pharmaceuticals to reduce cortical excitability as a treatment have demonstrated increased phosphene thresholds (reduced excitability) while taking these drugs (Artemenko et al., 2008; Mulleners et al., 2002; Palermo et al., 2009). A recent MRS study has also demonstrated that glutamate levels in the early visual cortex correlate negatively with phosphene thresholds (Terhune et al., 2015b). Taken together these results provide evidence that phosphene thresholds are a good proxy for measuring cortical excitability, although whether they measure inhibition, excitation or a combination of the two is still not fully known.
 
@@ -280,9 +534,9 @@ The mechanisms of change in cortical excitability that occur with tDCS are thoug
 
 These data suggest that tDCS can manipulate cortex excitability in a polarity-specific manner, potentially through modulating GABA and glutamate concentrations.
 
-## Phosphene threshold determination
+### Phosphene threshold determination
 
-Phosphene thresholds were obtained using single pulse TMS with a butterfly shaped coil (Magstim Rapid2, Carmarthenshire, UK). The coil was placed centrally and approximately 2 cm above the inion. To obtain each participant’s phosphene threshold, we used the previously documented automated rapid estimation of phosphene thresholds (REPT) (Abrahamyan et al., 2011). This REPT procedure uses a Bayesian adaptive staircase approach to find the 60% phosphene threshold of each participant.
+Phosphene thresholds were obtained using single pulse TMS with a butterfly shaped coil (Magstim $Rapid^{2}$, Carmarthenshire, UK). The coil was placed centrally and approximately 2 cm above the inion. To obtain each participant’s phosphene threshold, we used the previously documented automated rapid estimation of phosphene thresholds (REPT) (Abrahamyan et al., 2011). This REPT procedure uses a Bayesian adaptive staircase approach to find the 60% phosphene threshold of each participant.
 
 Before the REPT procedure, we first ensured that our participants were able to see reliable phosphenes. We initially placed the coil centrally and approximately 2 cm above the inion (with the coil oriented 45 degrees) and gave the participant’s single pulses starting at 50% of the machines maximal output, moving up to 85% of the machines maximal output in 5% step increments. If the participant failed to report any phosphenes (or if the location of the coil was producing very large eye blinks or neck twitches) the coil was moved approximately 1 cm left and the same procedure occurred. If this did not elicit phosphenes the coil was moved to the right-hand side (approximately 2 cm above the inion and 1 cm to the right) and the same procedure occurred. If the participant still could not see any phosphenes they did not complete any more of the experiment. While this initial testing took place participants were seated in front of a computer screen with a piece of black cardboard with white numbered quadrants covering the monitor. The participants were instructed to relax and stare forward at a fixation dot in the middle of the black cardboard and to let the experimenter know if they saw any sort of visual disturbances on the cardboard and if they did see something to describe what they saw and in which quadrant they saw it. If participants reported a phosphene occurring in an incorrect location, for example the left visual field when stimulating the left visual cortex, then they were excluded from the study and did not complete the REPT procedure.
 
@@ -302,7 +556,7 @@ The experimenter was not blind to which polarity condition the participant was i
 
 In the control tDCS modulation of phosphene thresholds experiment, the tDCS parameters were the same as in experiment 2. The intensity of the stimulation was set to 1.5mA and the active electrode placed over Oz and the reference electrode on the right cheek (see main text Materials and methods section and Figure 4B.)
 
-## Statistical analysis of tDCS and TMS data
+### Statistical analysis of tDCS and TMS data
 
 All correlational analysis, ANOVA’s and t-tests were run in SPSS (IBM, Armonk), and the LME’s were run in R (R Core Team, 2018) using the lme4 package (Bates et al., 2015).
 

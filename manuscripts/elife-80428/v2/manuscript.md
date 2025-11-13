@@ -42,25 +42,25 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Department of Twin Research and Genetic Epidemiology, King’s College London London United Kingdom
-2. https://ror.org/0524sp257 Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom
-3. https://ror.org/013meh722 Department of Applied Mathematics and Theoretical Physics, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/02jx3x895 MRC Unit for Lifelong Health and Ageing, University College London London United Kingdom
-5. https://ror.org/02jx3x895 Centre for Longitudinal Studies, University College London London United Kingdom
-6. https://ror.org/056d84691 Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden
-7. https://ror.org/00vtgdb53 MRC/CSO Social and Public Health Sciences Unit, University of Glasgow Glasgow United Kingdom
-8. https://ror.org/04h699437 Department of Health Sciences, University of Leicester Leicester United Kingdom
-9. https://ror.org/02jx3x895 Department of Epidemiology and Public Health, University College London London United Kingdom
-10. https://ror.org/035dkdb55 AI for Science and Government, The Alan Turing Institute London United Kingdom
-11. https://ror.org/0220mzb33 Department of Infectious Diseases, King's College London London United Kingdom
-12. https://ror.org/01nrxwf90 Division of Psychiatry, University of Edinburgh Edinburgh United Kingdom
-13. https://ror.org/00j161312 Guy’s & St Thomas’s NHS Foundation Trust London United Kingdom
+1. Department of Twin Research and Genetic Epidemiology, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. Department of Applied Mathematics and Theoretical Physics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. MRC Unit for Lifelong Health and Ageing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+5. Centre for Longitudinal Studies, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+6. Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+7. MRC/CSO Social and Public Health Sciences Unit, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+8. Department of Health Sciences, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
+9. Department of Epidemiology and Public Health, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+10. AI for Science and Government, The Alan Turing Institute London United Kingdom ([ROR:035dkdb55](https://ror.org/035dkdb55))
+11. Department of Infectious Diseases, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+12. Division of Psychiatry, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+13. Guy’s & St Thomas’s NHS Foundation Trust London United Kingdom ([ROR:00j161312](https://ror.org/00j161312))
 
 † Corresponding author
 
 ## Abstract
 
-Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) antibody levels can be used to assess humoral immune responses following SARS-CoV-2 infection or vaccination, and may predict risk of future infection. Higher levels of SARS-CoV-2 anti-Spike antibodies are known to be associated with increased protection against future SARS-CoV-2 infection. However, variation in antibody levels and risk factors for lower antibody levels following each round of SARS-CoV-2 vaccination have not been explored across a wide range of socio-demographic, SARS-CoV-2 infection and vaccination, and health factors within population-based cohorts. Samples were collected from 9361 individuals from TwinsUK and ALSPAC UK population-based longitudinal studies and tested for SARS-CoV-2 antibodies. Cross-sectional sampling was undertaken jointly in April-May 2021 (TwinsUK, N=4256; ALSPAC, N=4622), and in TwinsUK only in November 2021-January 2022 (N=3575). Variation in antibody levels after first, second, and third SARS-CoV-2 vaccination with health, socio-demographic, SARS-CoV-2 infection, and SARS-CoV-2 vaccination variables were analysed. Using multivariable logistic regression models, we tested associations between antibody levels following vaccination and: (1) SARS-CoV-2 infection following vaccination(s); (2) health, socio-demographic, SARS-CoV-2 infection, and SARS-CoV-2 vaccination variables. Within TwinsUK, single-vaccinated individuals with the lowest 20% of anti-Spike antibody levels at initial testing had threefold greater odds of SARS-CoV-2 infection over the next 6–9 months (OR = 2.9, 95% CI: 1.4, 6.0), compared to the top 20%. In TwinsUK and ALSPAC, individuals identified as at increased risk of COVID-19 complication through the UK ‘Shielded Patient List’ had consistently greater odds (two- to fourfold) of having antibody levels in the lowest 10%. Third vaccination increased absolute antibody levels for almost all individuals, and reduced relative disparities compared with earlier vaccinations. These findings quantify the association between antibody level and risk of subsequent infection, and support a policy of triple vaccination for the generation of protective antibodies. Antibody testing was funded by UK Health Security Agency. The National Core Studies program is funded by COVID-19 Longitudinal Health and Wellbeing – National Core Study (LHW-NCS) HMT/UKRI/MRC ([MC_PC_20030] and [MC_PC_20059]). Related funding was also provided by the NIHR 606 (CONVALESCENCE grant [COV-LT-0009]). TwinsUK is funded by the Wellcome Trust, Medical Research Council, Versus Arthritis, European Union Horizon 2020, Chronic Disease Research Foundation (CDRF), Zoe Ltd and the National Institute for Health Research (NIHR) Clinical Research Network (CRN) and Biomedical Research Centre based at Guy’s and St Thomas’ NHS Foundation Trust in partnership with King’s College London. The UK Medical Research Council and Wellcome (Grant ref: [217065/Z/19/Z]) and the University of Bristol provide core support for ALSPAC.
+Background:Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) antibody levels can be used to assess humoral immune responses following SARS-CoV-2 infection or vaccination, and may predict risk of future infection. Higher levels of SARS-CoV-2 anti-Spike antibodies are known to be associated with increased protection against future SARS-CoV-2 infection. However, variation in antibody levels and risk factors for lower antibody levels following each round of SARS-CoV-2 vaccination have not been explored across a wide range of socio-demographic, SARS-CoV-2 infection and vaccination, and health factors within population-based cohorts.Methods:Samples were collected from 9361 individuals from TwinsUK and ALSPAC UK population-based longitudinal studies and tested for SARS-CoV-2 antibodies. Cross-sectional sampling was undertaken jointly in April-May 2021 (TwinsUK, N=4256; ALSPAC, N=4622), and in TwinsUK only in November 2021-January 2022 (N=3575). Variation in antibody levels after first, second, and third SARS-CoV-2 vaccination with health, socio-demographic, SARS-CoV-2 infection, and SARS-CoV-2 vaccination variables were analysed. Using multivariable logistic regression models, we tested associations between antibody levels following vaccination and: (1) SARS-CoV-2 infection following vaccination(s); (2) health, socio-demographic, SARS-CoV-2 infection, and SARS-CoV-2 vaccination variables.Results:Within TwinsUK, single-vaccinated individuals with the lowest 20% of anti-Spike antibody levels at initial testing had threefold greater odds of SARS-CoV-2 infection over the next 6–9 months (OR = 2.9, 95% CI: 1.4, 6.0), compared to the top 20%. In TwinsUK and ALSPAC, individuals identified as at increased risk of COVID-19 complication through the UK ‘Shielded Patient List’ had consistently greater odds (two- to fourfold) of having antibody levels in the lowest 10%. Third vaccination increased absolute antibody levels for almost all individuals, and reduced relative disparities compared with earlier vaccinations.Conclusions:These findings quantify the association between antibody level and risk of subsequent infection, and support a policy of triple vaccination for the generation of protective antibodies.Funding:Antibody testing was funded by UK Health Security Agency. The National Core Studies program is funded by COVID-19 Longitudinal Health and Wellbeing – National Core Study (LHW-NCS) HMT/UKRI/MRC ([MC_PC_20030] and [MC_PC_20059]). Related funding was also provided by the NIHR 606 (CONVALESCENCE grant [COV-LT-0009]). TwinsUK is funded by the Wellcome Trust, Medical Research Council, Versus Arthritis, European Union Horizon 2020, Chronic Disease Research Foundation (CDRF), Zoe Ltd and the National Institute for Health Research (NIHR) Clinical Research Network (CRN) and Biomedical Research Centre based at Guy’s and St Thomas’ NHS Foundation Trust in partnership with King’s College London. The UK Medical Research Council and Wellcome (Grant ref: [217065/Z/19/Z]) and the University of Bristol provide core support for ALSPAC.
 
 ## Introduction
 
@@ -74,7 +74,7 @@ Here, we aimed to examine variables associated with variation in post-vaccinatio
 
 ## Methods
 
-## Study participants
+### Study participants
 
 TwinsUK is a UK-based national registry of monozygotic (MZ) and dizygotic (DZ) twins, with over 15,000 twins registered since 1992 (Verdi et al., 2019).
 
@@ -84,7 +84,7 @@ During the COVID-19 pandemic, participants from both cohorts were invited to com
 
 Inclusion and exclusion criteria were as follows. Individuals with unknown vaccination status at time of antibody testing were excluded from all analyses. For descriptive analysis of antibody levels versus time since vaccination, all individuals with known vaccination status were included. For analysis of variables associated with low antibody levels, individuals sampled fewer than 28 days since first vaccination, or fewer than 14 days since second or third vaccination, were excluded (these thresholds were chosen to allow sufficient time for an immunological response after each vaccine dose, based on previous studies Shrotri et al., 2021a; Shrotri et al., 2021b), while individuals with 77 days or more since first vaccination were excluded in case of misclassification due to unreported further vaccination (based on 11–12 week spacing between doses for majority of adults in the UK). In addition to the above criteria, for analysis of variables associated with post-vaccination infection within TwinsUK, individuals must have participated in Q2 antibody testing followed by either Q4 antibody testing and/or concurrent COVID-19 questionnaire.
 
-## Questionnaires administered during the COVID-19 pandemic
+### Questionnaires administered during the COVID-19 pandemic
 
 TwinsUK COVID-19 questionnaires were administered in April-May 2020 (Suthahar et al., 2021), July-August 2020, October-December 2020, April-July 2021 (approximating first round of antibody testing, Q2), and November 2021-February 2022 (approximating second round of antibody testing, Q4). ALSPAC COVID-19 questionnaires were administered in April-May 2020 (Northstone et al., 2020a), May-July 2020 (Northstone et al., 2020b), October 2020 (Northstone et al., 2021), November 2020-March 2021 (approximating first round of antibody testing, Q2) (Smith et al., 2021), and July-December 2021.
 
@@ -92,7 +92,7 @@ Details of variables collected through cohort-specific pandemic questionnaires a
 
 As questionnaires were cohort-specific, assessed variables were not completely uniform (both question wording and collected data). Details for comparison are shown in Supplementary file 1.
 
-## SARS-CoV-2 antibody testing
+### SARS-CoV-2 antibody testing
 
 Q2 testing in TwinsUK and ALSPAC occurred along with an additional nine UK-based longitudinal studies who collected samples in unison as part of the UK National Core Studies Longitudinal Health & Wellbeing (NCS-LH&W) programme (University College London, 2022). Additional cohort-specific details and results for ALSPAC and Extended Cohort for E-health, Environment and DNA (EXCEED) are provided elsewhere (Lee et al., 2021; Major-Smith et al., 2021). Data availability in cohorts limited analysis to TwinsUK and ALSPAC.
 
@@ -100,9 +100,9 @@ For TwinsUK antibody testing in Q2 and Q4, invitation criteria were based on ava
 
 Additional antibody testing was also undertaken in-house for TwinsUK samples between April 2020 and April 2021. Quantitative enzyme-linked immunosorbent assay (ELISA) testing anti-Nucleocapsid and anti-Spike antibody levels were performed using previously published methods (Seow et al., 2020). These data were used to determine serology-based infection status prior to Q2 antibody testing.
 
-## Identification of SARS-CoV-2 infection
+### Identification of SARS-CoV-2 infection
 
-## Assessment of prior SARS-CoV-2 infection, at time of antibody testing
+#### Assessment of prior SARS-CoV-2 infection, at time of antibody testing
 
 Prior SARS-CoV-2 infection was classified with three distinct variables derived from self-reported questionnaire data or serological testing.
 
@@ -110,27 +110,70 @@ From these variables, distinct measures of the proportion of individuals with ev
 
 Thus, ‘SARS-CoV-2 infection status (self-reported)’ and ‘SARS-CoV-2 infection status (serology-based)’ variables identify individuals with any history of SARS-CoV-2 infection (who are not necessarily seropositive for anti-Nucleocapsid antibodies at time of testing), while ‘Anti-Nucleocapsid antibody status’ assesses the contemporaneous level of infection-induced antibody response.
 
-## Assessment of post-vaccination SARS-CoV-2 infection
+#### Assessment of post-vaccination SARS-CoV-2 infection
 
 For analysis of variables associated with post-vaccination SARS-CoV-2 infection (performed within TwinsUK only), individuals with post-vaccination SARS-CoV-2 infections were identified using the following criteria:
 
 Individuals meeting one or more of these criteria were considered as having post-vaccination infection. Individuals who did not meet any of these criteria were considered as controls (i.e., no post-vaccination infection). Individuals must have participated in TwinsUK Q4 antibody testing and/or concurrent COVID-19 questionnaire for post-vaccination infection to be determinable and for inclusion as controls or cases.
 
-## Phenotypic data list
+### Phenotypic data list
 
 Variables from antibody testing and pandemic questionnaire data were supplemented with pre-pandemic socio-demographic and health variables for TwinsUK and ALSPAC analyses (details in Supplementary file 1). A full list of variables considered in analyses is given in Table 1.
 
-## Statistical analyses
+**Table 1.**
+ Phenotypic variables used in analyses.Variables marked with an asterisk were outcome variables in logistic regression analyses; all other variables were adjustment or exposure variables. Variables only available in TwinsUK are notated as [TUK], and those only in ALSPAC as [ALSPAC].
 
-## Descriptive analysis of antibody levels after first, second, and third vaccination
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable group</th>
+      <th>Variable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody levels</td>
+      <td>Anti-Spike level*</td>
+    </tr>
+    <tr>
+      <td>Socio-demographic</td>
+      <td>AgeSexEthnicityLocal area deprivation (index of multiple deprivation, IMD [using national IMD rank decile/quintile]) (GOV.UK, 2019; Northern Ireland Statistics and Research Agency, 2017; Gov.scot, 2020; GOV.WALES, 2021)Rural-urban classification [TUK] (GOV.UK, 2022a)Highest educational attainmentEmployment status</td>
+    </tr>
+    <tr>
+      <td>COVID-19 infection</td>
+      <td>SARS-CoV-2 infection status (self-reported)SARS-CoV-2 infection status (serology-based)Anti-Nucleocapsid antibody statusPost-vaccination SARS-CoV-2 infection [TUK]*</td>
+    </tr>
+    <tr>
+      <td>COVID-19 vaccination</td>
+      <td>Brand/manufacturer of first/second/third vaccinationNumber of weeks between first/second/third vaccination and antibody sampling</td>
+    </tr>
+    <tr>
+      <td>Health indicators</td>
+      <td>Body mass indexFrailty index [TUK] (derived following Searle et al., 2008)Frailty (PRISMA-7 assessment; Raîche et al., 2008) [ALSPAC]Self-reported advised as on ‘Shielded Patient List’Self-rated health (5-point scale from ‘poor’ to ‘excellent’)Prescribed immunosuppressant medication [TUK]Self-reported immunocompromised [ALSPAC]Anxiety (hospital anxiety and depression assessment scale (HADS) [TUK] Zigmond and Snaith, 1983, or 7-item generalised anxiety disorder scale (GAD-7) [ALSPAC] Spitzer et al., 2006, assessment)Depression (HADS [TUK] or short mood and feelings questionnaire (SMFQ) [ALSPAC] Turner et al., 2014 assessment)Number of comorbidities from: anxiety/depression, diabetes, cancer, hypertension, heart disease</td>
+    </tr>
+    <tr>
+      <td>Individual comorbidities</td>
+      <td>AnxietyArthritis (any) [TUK]AsthmaAtrial fibrillation [TUK]Cancer (any)DepressionDiabetes (any)Heart diseaseHigh cholesterol [TUK]HypertensionLung diseaseOsteoporosis [TUK]Rheumatoid arthritis [TUK]Stroke [TUK]</td>
+    </tr>
+    <tr>
+      <td>Comorbidity domains</td>
+      <td>Cardiac disease [TUK]Cardiac risk factors [TUK]Neurological diseaseSubjective memory impairment [TUK]</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analyses
+
+#### Descriptive analysis of antibody levels after first, second, and third vaccination
 
 Median, interquartile range, 10th and 5th percentile antibody levels were produced for univariate splits of adjustment and exposure variables listed in Table 1. Differences in median antibody levels (per Results) were tested using a two-sided Mann-Whitney U-test (Mann and Whitney, 1947). Trend in median antibody level versus number of weeks post-vaccination was tested using the Mann-Kendall trend test (Mann, 1945; Kendall, 1975).
 
-## Association between SARS-CoV-2 infection and socio-demographic variables
+#### Association between SARS-CoV-2 infection and socio-demographic variables
 
 Associations between SARS-CoV-2 infection, quantified from SARS-CoV-2 infection status (self-reported), SARS-CoV-2 infection status (serology-based), and anti-Nucleocapsid antibody status, and age, sex, ethnicity, local area deprivation, and rural-urban classification were tested using the chi-square test of independence.
 
-## Logistic regression analyses
+#### Logistic regression analyses
 
 Within TwinsUK only, univariable and multivariable logistic regression were used to test associations between an outcome of post-vaccination SARS-CoV-2 infection and exposure variables related to: Q2 anti-Spike antibody levels; socio-demographics; COVID-19 infection; COVID-19 vaccination. In TwinsUK and ALSPAC, multivariable logistic regression was also performed to test associations between the outcome of low anti-Spike antibody levels (as defined below) after each round of vaccination (after first and second vaccinations for both TwinsUK and ALSPAC, and after third vaccination for TwinsUK only) and all exposure variables previously listed.
 
@@ -140,25 +183,447 @@ An outcome of post-vaccination SARS-CoV-2 infection was identified using the cri
 
 Multivariable models testing association between post-vaccination SARS-CoV-2 infection and anti-Spike antibody levels used the following sets of adjustment variables: (1) number of weeks since most recent vaccination; (2) age, sex, number of weeks since most recent vaccination. Multivariable models testing association between post-vaccination SARS-CoV-2 infection and socio-demographic variables used the following sets of adjustment variables: (1) age; (2) age, SARS-CoV-2 infection status (serology-based); (3) age, sex, SARS-CoV-2 infection status (serology-based). Multivariable models testing associations with low anti-Spike antibody levels used the following set of adjustment variables: age, sex, most recent vaccine received, and number of weeks since most recent vaccination. Adjustment variables were chosen based on relatively large effects observed in preliminary descriptive analysis.
 
-## Twin-pair analyses
+#### Twin-pair analyses
 
 To assess the relationship between zygosity and relatedness on variation in antibody levels between pairs of individuals after third vaccination within TwinsUK, antibody level differences were calculated for all pairs of MZ and DZ twins, and within all combinations of non-related pairs. The difference between the resulting median pair differences within MZ, DZ, and non-related pairs were tested using the two-sided Mann-Whitney U-test.
 
 For variables associated with low antibody levels (from logistic regression analyses), within-twin-pair associations with unadjusted anti-Spike antibody levels after third vaccination were tested using ‘within-between’ generalised linear mixed effects models. Such models implicitly control for pair-specific shared genetic and environmental factors by design and are commonly used in twin-pair studies as described elsewhere (Carlin et al., 2005). The pseudonymised family identifier variable was fitted as a random effect, allowing intercept to vary for each twin-pair. For the exposure variable of interest, twin-pair mean values and difference-to-twin-pair-mean values were calculated and both included as ‘between-pair’ and ‘within-pair’ variables in models, respectively. Age, sex, number of weeks since third vaccination, brand of vaccine received for third vaccination, and SARS-CoV-2 infection status (serology-based) were also included in models as adjustment variables. For each exposure variable, separate models were fitted for MZ and DZ twin-pairs. Differences between ‘between-pair’ and ‘within-pair’ coefficients were tested using a Wald test. Unpaired single twins and individuals without data for all variables were excluded from the given model.
 
-## Software
+### Software
 
 TwinsUK analyses were performed using python v3.8.8 (Van Rossum and Drake, 2009) and packages: numpy v1.20.1, pandas v1.2.4, statsmodels v0.12.2, scipy v1.6.2, scikit-learn v0.24.1, matplotlib v3.3.4, pymannkendall v1.4.2, seaborn v0.11.1. ALSPAC analyses were performed using python v3.9.7 and packages: numpy v1.20.3, pandas v1.3.4, matplotlib v3.4.3, and seaborn v0.11.2, and R v4.1.2 (R Development Core Team, 2021) and packages: plyr v1.8.6, dplyr v1.0.7, and broom v0.7.11.
 
 ## Results
 
-## Cohort characteristics
+### Cohort characteristics
 
 Antibody levels were measured in 9361 individuals at two timepoints – 4256 individuals from TwinsUK and 4622 individuals from ALSPAC during April and May 2021 (referred to throughout as Q2 [calendar year quarter 2] testing), and 3575 individuals from TwinsUK in follow-up testing from November 2021 to January 2022 (referred to throughout as Q4 [quarter 4] testing). Response rates, as the percentage who returned sample after consenting and being sent a sample collection kit, were as follows: TwinsUK Q2: 87%, TwinsUK Q4: 80%, ALSPAC Q2: 79%. Flow charts showing identification of analysis samples are given in Figure 1—figure supplements 1–3. Results of antibody testing and selected characteristics are summarised in Table 2 (with extended characteristics given in Supplementary file 2). Consistent with the tiered UK vaccination campaign, individuals who had received more vaccinations at either timepoint were older, more likely to be on the UK ‘Shielded Patient List’ (GOV.UK, 2022b), and had lower self-rated health, compared with those with fewer vaccinations. Participants were predominantly female and the vast majority were of white ethnicity in both cohorts, consistent with the broader composition of both cohorts. Prevalence of SARS-CoV-2 infection differed according to the measure of infection, either from self-report or from serological testing, and varied by vaccination status, socio-demographic variables, and between the two timepoints examined (Table 2, Supplementary file 3, Figure 1—figure supplement 4).
 
-## Antibody levels after first, second, and third vaccination
+**Table 2.**
+ Sample characteristics.Antibody level values and characteristics for TwinsUK and Avon Longitudinal Study of Parents and Children (ALSPAC) individuals sampled in Q2 and Q4 antibody collections. Individuals are stratified by vaccination status at time of sampling. Data shown for individuals sampled at least 4 weeks after first vaccination, and at least 2 weeks after second or third vaccination to allow time for antibody generation. The anti-Spike antibody level assay range is 0.4–250 BAU/mL for Q2 results and 0.4–25,000 BAU/mL for Q4 results, with a positive threshold of 0.8 BAU/mL. Categories with fewer than five individuals are suppressed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort</th>
+      <th colspan="7">TwinsUK</th>
+      <th colspan="4">ALSPAC</th>
+    </tr>
+    <tr>
+      <th>Testing period</th>
+      <th>Q2</th>
+      <th>Q4</th>
+      <th colspan="3">Q2</th>
+      <th colspan="2">Q4</th>
+      <th colspan="4">Q2</th>
+    </tr>
+    <tr>
+      <th>Vaccination status</th>
+      <th>All results</th>
+      <th>All results</th>
+      <th>Not vaccinated</th>
+      <th>Single-vaccinated</th>
+      <th>Double-vaccinated</th>
+      <th>Double-vaccinated</th>
+      <th>Triple-vaccinated</th>
+      <th>All results</th>
+      <th>Not vaccinated</th>
+      <th>Single-vaccinated</th>
+      <th>Double-vaccinated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>4256</td>
+      <td>3575</td>
+      <td>330</td>
+      <td>1375</td>
+      <td>748</td>
+      <td>691</td>
+      <td>1937</td>
+      <td>1779</td>
+      <td>36</td>
+      <td>1459</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>Age (years): Median (IQR)</td>
+      <td>63.0 (49.0, 72.0)</td>
+      <td>63.0 (51.0, 72.0)</td>
+      <td>38.0 (31.0, 44.0)</td>
+      <td>63.0 (56.0, 69.0)</td>
+      <td>70.0 (56.0, 77.0)</td>
+      <td>49.0 (38.0, 59.0)</td>
+      <td>69.0 (60.0, 74.0)</td>
+      <td>60.0 (57.0, 62.0)</td>
+      <td>57.5 (52.75, 62.25)</td>
+      <td>60.0 (57.0, 63.0)</td>
+      <td>59.0 (56.0, 61.0)</td>
+    </tr>
+    <tr>
+      <td>Sex: Male, n (%)</td>
+      <td>518/4255 (12.2%)</td>
+      <td>447/3574 (12.5%)</td>
+      <td>48/330 (14.5%)</td>
+      <td>178/1375 (12.9%)</td>
+      <td>88/748 (11.8%)</td>
+      <td>103/691 (14.9%)</td>
+      <td>225/1937 (11.6%)</td>
+      <td>451/1779 (25.4%)</td>
+      <td>8/36 (22.2%)</td>
+      <td>397/1459 (27.2%)</td>
+      <td>46/284 (16.2%)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity: Other than White, n (%)</td>
+      <td>118/4219 (2.8%)</td>
+      <td>96/3536 (2.7%)</td>
+      <td>16/329 (4.9%)</td>
+      <td>29/1368 (2.1%)</td>
+      <td>19/739 (2.6%)</td>
+      <td>26/686 (3.8%)</td>
+      <td>39/1914 (2.0%)</td>
+      <td>26/1779 (1.5%)</td>
+      <td>&lt;5</td>
+      <td>20/1459 (1.4%)</td>
+      <td>5/284 (1.8%)</td>
+    </tr>
+    <tr>
+      <td>BMI: Median (IQR)</td>
+      <td>24.75 (22.15, 27.99)</td>
+      <td>24.76 (22.2, 27.98)</td>
+      <td>22.72 (20.94, 25.42)</td>
+      <td>24.86 (22.27, 28.28)</td>
+      <td>24.99 (22.23, 28.07)</td>
+      <td>23.91 (21.62, 27.58)</td>
+      <td>24.87 (22.3, 27.87)</td>
+      <td>25.7 (23.23, 28.7)</td>
+      <td>25.63 (23.13, 28.04)</td>
+      <td>25.71 (23.25, 28.77)</td>
+      <td>25.65 (23.02, 28.6)</td>
+    </tr>
+    <tr>
+      <td>Advised on ‘Shielded Patient List’: Yes, n (%)</td>
+      <td>341/4109 (8.3%)</td>
+      <td>279/3530 (7.9%)</td>
+      <td>8/329 (2.4%)</td>
+      <td>82/1374 (6.0%)</td>
+      <td>86/748 (11.5%)</td>
+      <td>23/691 (3.3%)</td>
+      <td>190/1936 (9.8%)</td>
+      <td>67/1754 (3.8%)</td>
+      <td>&lt;5</td>
+      <td>45/1443 (3.1%)</td>
+      <td>22/276 (8.0%)</td>
+    </tr>
+    <tr>
+      <td>Self-rated health: Poor, Fair, n (%)</td>
+      <td>357/4082 (8.7%)</td>
+      <td>290/3407 (8.5%)</td>
+      <td>15/316 (4.7%)</td>
+      <td>134/1364 (9.8%)</td>
+      <td>60/737 (8.1%)</td>
+      <td>42/656 (6.4%)</td>
+      <td>168/1871 (9.0%)</td>
+      <td>167/1778 (9.4%)</td>
+      <td>&lt;5</td>
+      <td>137/1459 (9.4%)</td>
+      <td>28/283 (9.9%)</td>
+    </tr>
+    <tr>
+      <td>Zygosity: Monozygotic, n (%)</td>
+      <td>2722/4253 (64.0%)</td>
+      <td>2280/3573 (63.8%)</td>
+      <td>248/328 (75.6%)</td>
+      <td>883/1375 (64.2%)</td>
+      <td>459/748 (61.4%)</td>
+      <td>490/689 (71.1%)</td>
+      <td>1170/1937 (60.4%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Anti-Spike antibody level value (BAU/mL): Median (IQR)</td>
+      <td>80.78 (18.55, 250.0)</td>
+      <td>10403.0 (3510.0, 20224.0)</td>
+      <td>0.4 (0.4, 0.4)</td>
+      <td>53.3 (22.72, 121.2)</td>
+      <td>250.0 (250.0, 250.0)</td>
+      <td>1317.0 (337.0, 5202.5)</td>
+      <td>13694.0 (8153.0, 23543.0)</td>
+      <td>58.93 (21.25, 247.5)</td>
+      <td>10.53 (0.4, 48.69)</td>
+      <td>43.42 (17.98, 106.65)</td>
+      <td>250.0 (250.0, 250.0)</td>
+    </tr>
+    <tr>
+      <td>Anti-Spike antibody status: Positive, n (%)</td>
+      <td>3372/3912 (86.2%)</td>
+      <td>3423/3445 (99.4%)</td>
+      <td>79/330 (23.9%)</td>
+      <td>1357/1375 (98.7%)</td>
+      <td>745/748 (99.6%)</td>
+      <td>690/691 (99.9%)</td>
+      <td>1936/1937 (99.9%)</td>
+      <td>1745/1779 (98.1%)</td>
+      <td>23/36 (63.9%)</td>
+      <td>1440/1459 (98.7%)</td>
+      <td>282/284 (99.3%)</td>
+    </tr>
+    <tr>
+      <td>Anti-Nucleocapsid antibody status, Q2: Positive, n (%)</td>
+      <td>460/3893 (11.8%)</td>
+      <td>333/2887 (11.5%)</td>
+      <td>60/329 (18.2%)</td>
+      <td>156/1368 (11.4%)</td>
+      <td>87/743 (11.7%)</td>
+      <td>85/565 (15.0%)</td>
+      <td>160/1624 (9.9%)</td>
+      <td>167/1757 (9.5%)</td>
+      <td>&lt;5</td>
+      <td>133/1438 (9.2%)</td>
+      <td>31/283 (11.0%)</td>
+    </tr>
+    <tr>
+      <td>Anti-Nucleocapsid antibody status, Q4: Positive, n (%)</td>
+      <td>524/2998 (17.5%)</td>
+      <td>618/3447 (17.9%)</td>
+      <td>80/290 (27.6%)</td>
+      <td>197/1130 (17.4%)</td>
+      <td>95/602 (15.8%)</td>
+      <td>179/691 (25.9%)</td>
+      <td>263/1937 (13.6%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Weeks since first vaccination: Median (IQR)</td>
+      <td>10.0 (6.0, 12.0)</td>
+      <td>42.0 (38.0, 45.0)</td>
+      <td>–5.0 (-8.0,–3.0)</td>
+      <td>8.0 (6.0, 9.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>6.0 (5.0, 8.0)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>First vaccination received: AZD1222 (Oxford/AZ), n (%)</td>
+      <td>2124/3591 (59.1%)</td>
+      <td>1980/3378 (58.6%)</td>
+      <td>70/275 (25.5%)</td>
+      <td>1103/1374 (80.3%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>1235/1459 (84.6%)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>First vaccination received: BNT162b2 (Pfizer BioNTech), n (%)</td>
+      <td>1410/3591 (39.3%)</td>
+      <td>1336/3378 (39.6%)</td>
+      <td>170/275 (61.8%)</td>
+      <td>266/1374 (19.4%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>224/1459 (15.4%)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Weeks since second vaccination: Median (IQR)</td>
+      <td>–1.0 (-4.0, 2.0)</td>
+      <td>32.0 (28.0, 34.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>3.0 (2.0, 5.0)</td>
+      <td>25.0 (20.0, 28.0)</td>
+      <td>33.0 (31.0, 35.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>4.0 (2.0, 6.0)</td>
+    </tr>
+    <tr>
+      <td>Second vaccination received: AZD1222 (Oxford/AZ), n (%)</td>
+      <td>1858/3266 (56.9%)</td>
+      <td>1888/3275 (57.6%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>212/748 (28.3%)</td>
+      <td>411/691 (59.5%)</td>
+      <td>1065/1934 (55.1%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>50/284 (17.6%)</td>
+    </tr>
+    <tr>
+      <td>Second vaccination received: BNT162b2 (Pfizer BioNTech), n (%)</td>
+      <td>1357/3266 (41.5%)</td>
+      <td>1330/3275 (40.6%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>532/748 (71.1%)</td>
+      <td>241/691 (34.9%)</td>
+      <td>858/1934 (44.4%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>234/284 (82.4%)</td>
+    </tr>
+    <tr>
+      <td>Weeks since third vaccination: Median (IQR)</td>
+      <td>–28.0 (-30.0,–26.0)</td>
+      <td>5.0 (3.0, 7.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>5.0 (4.0, 8.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Third vaccination received: mRNA-1273 (Moderna), n (%)</td>
+      <td>293/2149 (13.6%)</td>
+      <td>337/2400 (14.0%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>203/1903 (10.7%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Third vaccination received: BNT162b2 (Pfizer BioNTech), n (%)</td>
+      <td>1828/2149 (85.1%)</td>
+      <td>2026/2400 (84.4%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>1677/1903 (88.1%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection status (serology-based) at time of antibody testing: Evidence of natural infection, n (%)</td>
+      <td>891/4190 (21.3%)</td>
+      <td>977/3561 (27.4%)</td>
+      <td>98/330 (29.7%)</td>
+      <td>304/1375 (22.1%)</td>
+      <td>157/748 (21.0%)</td>
+      <td>245/691 (35.5%)</td>
+      <td>464/1937 (24.0%)</td>
+      <td>187/1757 (10.6%)</td>
+      <td>23/36 (63.9%)</td>
+      <td>133/1438 (9.2%)</td>
+      <td>31/283 (11.0%)</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection status (self-reported), Q2: Suspected case, n (%)</td>
+      <td>477/4092 (11.7%)</td>
+      <td>399/3428 (11.6%)</td>
+      <td>35/320 (10.9%)</td>
+      <td>183/1365 (13.4%)</td>
+      <td>67/739 (9.1%)</td>
+      <td>81/662 (12.2%)</td>
+      <td>197/1882 (10.5%)</td>
+      <td>302/1675 (18.0%)</td>
+      <td>5/33 (15.2%)</td>
+      <td>240/1374 (17.5%)</td>
+      <td>57/268 (21.3%)</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection status (self-reported), Q2: Confirmed case, n (%)</td>
+      <td>597/4092 (14.6%)</td>
+      <td>492/3428 (14.4%)</td>
+      <td>57/320 (17.8%)</td>
+      <td>218/1365 (16.0%)</td>
+      <td>112/739 (15.2%)</td>
+      <td>107/662 (16.2%)</td>
+      <td>256/1882 (13.6%)</td>
+      <td>40/1675 (2.4%)</td>
+      <td>&lt;5</td>
+      <td>29/1374 (2.1%)</td>
+      <td>11/268 (4.1%)</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection status (self-reported), Q4: Suspected case, n (%)</td>
+      <td>478/4134 (11.6%)</td>
+      <td>404/3543 (11.4%)</td>
+      <td>34/330 (10.3%)</td>
+      <td>183/1375 (13.3%)</td>
+      <td>70/748 (9.4%)</td>
+      <td>78/691 (11.3%)</td>
+      <td>204/1936 (10.5%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection status (self-reported), Q4: Confirmed case, n (%)</td>
+      <td>817/4134 (19.8%)</td>
+      <td>751/3543 (21.2%)</td>
+      <td>92/330 (27.9%)</td>
+      <td>306/1375 (22.3%)</td>
+      <td>145/748 (19.4%)</td>
+      <td>202/691 (29.2%)</td>
+      <td>357/1936 (18.4%)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibody levels after first, second, and third vaccination
 
 Considering firstly data from Q4 testing undertaken within TwinsUK only, cross-sectional antibody levels following third vaccination were much greater and more sustained, with less inter-individual variability, compared to levels for those with fewer vaccinations. The median anti-Spike antibody levels in individuals who had received a third vaccination (unadjusted for time since vaccination) were over 10-fold higher than for individuals after second vaccination: 13700 BAU/mL after third vaccination, 1300 BAU/mL after second vaccination, 50 BAU/mL after first vaccination (Figure 1, detailed univariable splits of anti-Spike levels given in Supplementary file 4). There were also large increases in absolute levels for individuals at the bottom of the antibody level distribution after third vaccination, with 90% having level greater than 5000 BAU/mL, close to the estimated 6000 BAU/mL threshold estimated to confer partial protection against the omicron variant (Dimeglio et al., 2022b). The antibody level distribution after third vaccination was relatively narrower compared with earlier vaccination (median:IQR ratios of 0.54, 0.27, and 0.89 among Q2 single-vaccinated, Q4 double-vaccinated, and Q4 triple-vaccinated sub-samples, respectively), with smaller scale-factor differences between those with median and lowest levels (median:10th percentile ratios of 5.6, 11.8, and 2.7 among Q2 single-vaccinated, Q4 double-vaccinated, and Q4 triple-vaccinated sub-samples, respectively).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig1-v2.jpg)
+
+**Figure 1.:** Dot and box plots showing distribution of anti-Spike antibody levels within Avon Longitudinal Study of Parents and Children (ALSPAC) and TwinsUK, for those not vaccinated or individuals single-, double- or triple-vaccinated at time of sampling. Data shown for individuals sampled at least 4 weeks after first vaccination, and at least 2 weeks after second or third vaccination to allow time for antibody generation. Length of box plot whiskers are limited to 1.5 times the interquartile range. Red lines show 10th percentile levels. Assay upper limit is shown by black dotted lines, with 0.4–250 BAU/mL range for Q2 results and 0.4–25000 BAU/mL for Q4 results, with a positive threshold of 0.8 BAU/mL. Percentage of values above assay upper limit is given on right side of plots.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The use of groups of individuals in various analyses is highlighted with symbols. Unknown vaccination status included a small number of individuals with contradictory vaccination dates (e.g., first vaccination dated after second vaccination), in addition to those who did not complete vaccination status questions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The use of groups of individuals in various analyses is highlighted with symbols. Unknown vaccination status included a small number of individuals with contradictory vaccination dates (e.g., first vaccination dated after second vaccination), in addition to those who did not complete vaccination status questions.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The use of groups of individuals in various analyses is highlighted with symbols. Unknown vaccination status included a small number of individuals with contradictory vaccination dates (e.g., first vaccination dated after second vaccination), in addition to those who did not complete vaccination status questions.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Prevalence of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection for serology-based and self-reported measures of infection, for all individuals sampled in TwinsUK Q4 antibody testing, overall and split by socio-demographic variables: age, sex, ethnicity, local area deprivation (IMD), and rural-urban classification. Anti-N: anti-Nucleocapsid.
 
 Considering antibody levels versus time since vaccination: within TwinsUK Q4 results, median antibody levels up to 16 weeks since third vaccination were highest in individuals sampled 2–3 weeks after vaccination (median: 24600 BAU/mL, n=203) (Figure 2). Although median antibody levels decreased between 2 and 8 weeks after third vaccination, there was no evidence of further decline between 8 and 16 weeks (Mann-Kendall trend test in median levels at 8+ weeks, p=0.60), and high absolute levels of antibodies were sustained (8+ weeks median = 9200 BAU/mL [IQR: 5800–16000 BAU/mL], n=519). These cross-sectional trends in median antibody levels versus time since third vaccination persisted when stratifying by age and other variables. Similarly, for individuals sampled 13–33 weeks after second vaccination, longer time since vaccination was also associated with lower antibody levels.
 
@@ -168,13 +633,74 @@ Considering antibody levels versus time since vaccination: within TwinsUK Q4 res
 
 From Q2 results, antibody levels peaked at 9 weeks after first vaccination in both TwinsUK and ALSPAC. After second vaccination, median levels breached the 250 BAU/mL assay limit from 2 weeks onwards, precluding further time assessment.
 
-## Factors associated with recorded post-vaccination infection in TwinsUK
+### Factors associated with recorded post-vaccination infection in TwinsUK
 
 Given the large variability in antibody response after first vaccination (Figure 1), we investigated whether a lower antibody response after first vaccination associated with post-vaccination ‘breakthrough’ infection, as evidenced by self-report (suspected or confirmed case) and/or serological testing (positive anti-Nucleocapsid test after vaccination). Within TwinsUK, post-vaccination SARS CoV-2 infection (between first vaccination and Q4 testing) was recorded in 276 of 2993 (9.2%) individuals (further details related to post-vaccination infection given in Supplementary file 5). Among those tested at Q2 while single-vaccinated, individuals with lower antibody levels had increased risk of subsequent infection over the next 6–9 months (Table 3). After controlling for age, sex, and number of weeks since vaccination, those with anti-Spike levels in the lowest 80% within the sample, <164 BAU/mL, had two- to threefold odds of post-vaccination infection than those in the highest quintile, ≥164 BAU/mL, with those in the lowest quintile, <18 BAU/mL, having the largest effect size (OR = 2.9 [95% CI: 1.4–6.0], p=0.02). Odds of post-vaccination infection was also found to be lower in older age groups (e.g., 80+ versus 18–49, OR = 0.18 [95% CI: 0.07–0.44], p=0.002), those with serological evidence of SARS-CoV-2 infection prior to Q2 testing versus those without (OR = 0.46 [95% CI: 0.32–0.67], p=0.0009), and for those who were retired versus employed (OR = 0.49 [95% CI: 0.33–0.74], p=0.01) (full multivariable results in Supplementary file 6).
 
-## Factors associated with lower antibody levels within TwinsUK and ALSPAC
+**Table 3.**
+ Association between post-vaccination infection and anti-Spike antibody levels within TwinsUK.Logistic regression model results, testing association between post-vaccination infection, and Q2 anti-Spike antibody levels in single-vaccinated individuals within TwinsUK. Reference category was a Q2 antibody level in quintile 5 (highest 20%). Results present odds ratios, unadjusted 95% confidence intervals, and p-values adjusted for multiple testing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Q2 antibody level</th>
+      <th>Post-vaccination infection incidence rate (%)</th>
+      <th>UnadjustedOR (95% CI), p-value</th>
+      <th>Adjusted for: Weeks since vaccinationOR (95% CI), p-value</th>
+      <th>Adjusted for: Age, sex, weeks since vaccinationOR (95% CI), p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Quintile 1 (lowest 20%):0.4–18 BAU/mL</td>
+      <td>32/233 (13.7%)</td>
+      <td>3.23 (1.58–6.58), p=0.009</td>
+      <td>2.85 (1.39–5.86), p=0.03</td>
+      <td>2.93 (1.42–6.04), p=0.02</td>
+    </tr>
+    <tr>
+      <td>Quintile 2: 18–40 BAU/mL</td>
+      <td>20/226 (8.8%)</td>
+      <td>1.97 (0.92–4.21), p=0.11</td>
+      <td>2.04 (0.94–4.43), p=0.08</td>
+      <td>2.15 (0.99–4.68), p=0.06</td>
+    </tr>
+    <tr>
+      <td>Quintile 3: 40–73 BAU/mL</td>
+      <td>21/239 (8.8%)</td>
+      <td>1.95 (0.92–4.15), p=0.11</td>
+      <td>2.26 (1.04–4.92), p=0.06</td>
+      <td>2.41 (1.11–5.27), p=0.04</td>
+    </tr>
+    <tr>
+      <td>Quintile 4: 73–164 BAU/mL</td>
+      <td>21/230 (9.1%)</td>
+      <td>2.04 (0.96–4.33), p=0.11</td>
+      <td>2.39 (1.10–5.22), p=0.06</td>
+      <td>2.55 (1.17–5.58), p=0.04</td>
+    </tr>
+    <tr>
+      <td>Quintile 5 (highest 20%): ≥164 BAU/mL (reference)</td>
+      <td>11/234 (4.7%)</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+
+### Factors associated with lower antibody levels within TwinsUK and ALSPAC
 
 We tested for associations with having lower antibody levels after each round of vaccination. Lower antibody levels were defined as the lowest 10% within each sub-sample of cohort, testing round and vaccination status (<250 BAU/mL threshold corresponding to lowest 8% in both TwinsUK and ALSPAC used for Q2 double-vaccinated sub-samples where assay limit did not allow lowest 10% to be identified). Relative thresholds were used rather than absolute values due to the variation in reported thresholds between studies and for different SARS-CoV-2 variants, while the more general principal that antibody levels are inversely correlated with risk of infection has remained consistent throughout the COVID-19 pandemic. Increased odds of lower antibody levels were consistently observed across multiple vaccination rounds in TwinsUK and/or ALSPAC (Figure 3) for the following health-related variables:
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig3-v2.jpg)
+
+**Figure 3.:** Odds ratios with unadjusted 95% confidence intervals for selected exposure variables, testing associations with low anti-Spike antibody levels, for sub-samples of TwinsUK (purple circles) and ALSPAC (red diamonds) individuals tested in Q2 or Q4, while single-, double-, or triple- vaccinated. Low antibody levels were defined as the lowest 10% within the given sub-sample, except for ALSPAC and TwinsUK Q2 double-vaccinated sub-samples where lowest 8% is used due to assay upper limit. Each point estimate originates from a distinct multivariate logistic regression model, including the exposure variable of interest and adjustment variables of age, sex, name of most recent vaccine received and weeks since most recent vaccination. Note x-axis ranges on sub-plots vary, and vaccine received panel uses a logarithmic x-axis. Odds ratio = 1 is indicated with a dashed black line.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80428/elife-80428-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Empirical cumulative distribution functions describing the difference in anti-Spike antibody levels after third severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccination within TwinsUK, with pair differences calculated between all complete pairs of related monozygotic (MZ) twins, dizygotic (DZ) twins, and all combinations of non-related pairs.
 
 Results for all exposure variables are presented Supplementary file 7.
 
@@ -182,7 +708,7 @@ Individuals in both cohorts who received the AZD1222 (Oxford/AstraZeneca) vaccin
 
 Less consistent associations (i.e., not observed across more than one round of vaccination) with increased likelihood of lower antibody levels were seen in TwinsUK for several other variables: very frail, high multimorbidity (three or more of five selected comorbidities), rheumatoid arthritis, employment status of permanently or long-term sick or disabled, and lower educational attainment (Supplementary file 7). No clear associations with lower antibody levels were seen with age, sex, or BMI in either TwinsUK or ALSPAC.
 
-## Twin-pair analysis in TwinsUK after third vaccination
+### Twin-pair analysis in TwinsUK after third vaccination
 
 Within TwinsUK, pairs of identical MZ twins showed smaller average intra-pair anti-Spike antibody level differences after third vaccination versus non-identical DZ twin-pairs (median twin-pair difference = 5000 BAU/mL versus 6800 BAU/mL, p=0.0002 for MZ versus DZ), while differences between pairs of non-related individuals were largest (median difference = 7900 BAU/mL, p<0.0001 for MZ versus non-related) (Figure 3—figure supplement 1, Supplementary file 8).
 
@@ -202,6 +728,6 @@ We also acknowledge limitations of this work. Both TwinsUK and ALSPAC (Generatio
 
 In conclusion, our results highlight the large boost across the antibody level distribution produced by third vaccination, and suggest that measurement of anti-Spike antibodies after first SARS-CoV-2 vaccination may have potential use as an early indicator to identify individuals at higher risk of a future SARS-CoV-2 infection, particularly in the many countries where vaccination roll-out is at an earlier stage. Individuals who previously met UK ‘Shielded Patient List’ criteria had consistently lower antibody responses to vaccination than other participants, highlighting the importance of continuing to inform such individuals of their personal risk of SARS-CoV-2 infection, despite the UK government decision to end shielding guidance in April 2021 (GOV.UK, 2021). This result should inform prioritisation of vaccination towards these individuals in any future immunisation campaigns.
 
-## Data availability
+### Data availability
 
 Data from all analyses presented in figures and tables herein are tabulated and available as a supple-mentary spreadsheet file. Original antibody test data are available within the UK Longitudinal Linkage Collaboration upon application (see https://ukllc.ac.uk/apply/). UK LLC houses COVID-19 related datasets from over 20 UK longitudinal population studies (see https://ukllc.ac.uk/datasets/). Original TwinsUK data are available to researchers on application. Access to original TwinsUK data is managed by the TwinsUK Resource Executive Committee (see https://twinsuk.ac.uk/resources-for-researchers/access-our-data/) and access to original ALSPAC data via an online proposal system (see http://www.bristol.ac.uk/media-library/sites/alspac/documents/researchers/data-access/ALSPAC_Access_Policy.pdf). This is to ensure privacy and protect against misuse. ALSPAC study data were collected and managed using REDCap electronic data capture tools hosted at the University of Bristol. REDCap (Research Electronic Data Capture) is a secure, web-based software platform designed to support data capture for research studies (Harris et al., 2009). The study website contains details of all the data that is available through a fully searchable data dictionary and variable search tool on the study website (University of Bristol, 2022). Analysis code is available via GitHub at: https://github.com/nathan-cheetham/NCS_SARSCOV2_Antibody_Study, (Cheetham, 2023 copy archived at swh:1:rev:7103349369b7a4f00d6cf73f780283ba86fe8570).

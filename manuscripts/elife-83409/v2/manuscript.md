@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Section of Structural Biology, Department of Infectious Disease, Faculty of Medicine, Imperial College London London United Kingdom
-2. https://ror.org/0524sp257 DNA:protein Interactions Unit, School of Biochemistry, University of Bristol Bristol United Kingdom
+1. Section of Structural Biology, Department of Infectious Disease, Faculty of Medicine, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. DNA:protein Interactions Unit, School of Biochemistry, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
@@ -32,31 +32,230 @@ In this work, we present a comparative study of the interactions between RecBCD 
 
 ## Results
 
-## Gp5.9, but not Abc2, inhibits RecBCD helicase activity
+### Gp5.9, but not Abc2, inhibits RecBCD helicase activity
 
 The T7 gp5.9 protein was shown previously to inhibit RecBCD, but the mechanism was not determined. Therefore, we made recombinant gp5.9 and studied its effects on RecBCD activity in vitro. We found that gp5.9 expression was toxic to E. coli, and therefore used insect cell expression to express and purify the protein with a cleavable histidine tag (Figure 1—figure supplement 1). Unless stated otherwise, all experiments were performed with a preparation of gp5.9 with the tag removed. We first assessed the effect of T7 gp5.9 on RecBCD helicase-nuclease activity using a simple gel-based DSB resection assay. As expected, RecBCD rapidly unwound a linearised duplex DNA substrate (Figure 1a, lanes 1–4). In the presence of excess purified gp5.9 (1 µM), the RecBCD enzyme was strongly inhibited (compare lanes 4 and 5). To assess the specificity of gp5.9 for RecBCD, we performed analogous experiments using the AddAB helicase-nuclease, a RecBCD orthologue from Bacillus subtilis (Yeeles and Dillingham, 2010), and observed no inhibition of DNA degradation (lanes 6–10). This strongly suggests that gp5.9 acts by binding directly and specifically to the RecBCD complex, as opposed to blocking DNA ends.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig1-v2.jpg)
+
+**Figure 1.:** (a) Gel-based double-stranded DNA break (DSB) resection assay. The indicated proteins or protein complexes were incubated with a linearised dsDNA substrate for the indicated times in the presence of ATP. RecBCD (or AddAB) activity leads to DNA strand separation and depletion of the substrate. Substrate depletion is not affected by the presence of Abc2 or PPI. The substrate is not unwound by RecBCD in the presence of gp5.9 regardless of the presence of Abc2/PPI, but gp5.9 does not inhibit the orthologous AddAB complex. (b) Schematic of the DNA helicase assay using the fSSB biosensor (yellow circles). The ssDNA products of DNA unwinding are bound by fSSB causing a fluorescence increase. (c) Representative example of DNA unwinding traces for RecBCD in the presence of increasing [gp5.9]. The black arrow indicates addition of ATP to initiate the reaction. (d) A plot of initial DNA unwinding rate versus [gp5.9] yields a low nanomolar inhibition constant (IC50). The two data sets shown are for gp5.9 with the N-terminal his-tag removed (squares and solid fit line; IC50 = 1.3 nM) and with the his-tag intact (crosses and dotted fit line; IC50 = 23 nM). Values for the unwinding rate (mean and standard error for three technical repeats) are normalised to a control experiment in the absence of gp5.9 (marked C on the x-axis). (e) Electrophoretic mobility shift assay showing the effect of gp5.9 and Abc2 on the DNA binding activity of RecBCD. A Cy5-labelled blunt-ended duplex DNA substate was incubated with the proteins indicated and then run on a native gel to separate the free and bound DNA species. (f) Native 'inverse EMSA' assay showing binding of DNA by RecBCD or RecBCD-Abc2 complexes, and the effect of gp5.9 on both systems. The indicated complexes were incubated with or without labelled DNA substrate either in the presence or absence of gp5.9 as indicated. The samples were then run on native polyacrylamide gels and stained with Coomassie to reveal the position of the intact protein complexes. The same gel was also imaged for Cy5 fluorescence to reveal the position of the DNA. Note that free DNA runs off the bottom of the gel in this experiment, whereas bound DNA co-migrates with the RecBCD complexes. All gel images are representative examples of experiments that were technically reproduced at least once.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Purified RecBCD, RecBCD-Abc2P68A, and RecBCD-PPI-Abc2 complexes (1.5 µg each). The subunits are indicated. (B) Purification of gp5.9 from an insect cell extract. Lane 1, whole-cell extract; lane 2, soluble cell extract; lane 3, Ni2+ flowthrough; lane 4, Ni2+ elution; lane 5, monoQ elution; lane 6; final prep after SEC and concentration. All samples were run on SDS-PAGE gels and stained with Coomassie Blue.
 
 We next compared the effects of Abc2 on RecBCD activity. It has been established previously that Abc2 binds directly to RecBCD but, in comparison to gp5.9 and Gam, it seems to have only moderate effects on its DNA binding, helicase, and nuclease activities in vitro (Murphy, 2000). We were unable to purify the Abc2 polypeptide alone. Therefore, to confirm these observations, we purified the intact RecBCD-Abc2 complex which was found to co-purify with host peptidyl-prolyl cis-trans isomerase B (E. coli PpiB) as observed previously (Court et al., 2007; Murphy, 1991; Figure 1—figure supplement 1). It was found that the expression of the Pro68Ala mutant form of Abc2 (Abc2P68A) with RecBCD prevented co-purification with the host PpiB protein, allowing us to also isolate the RecBCD-Abc2P68A complex (Figure 1—figure supplement 1). Therefore, in the following experiments, we compare the biochemical activities of independently purified samples of free RecBCD, RecBCD-Abc2P68A, and the RecBCD-Abc2-PPI complex. As expected based on previous work, the observed DNA unwinding activities of the three preparations were very similar (Figure 1a, compare lanes 1–4 with 11–14 and 16–19), and all three preparations were completely inhibited by excess gp5.9 (lanes 5, 15, and 20).
 
 To provide more quantitative insights into RecBCD inhibition by gp5.9, we next employed a continuous multiple turnover helicase assay which uses a fluorescent biosensor for ssDNA (fSSB) to monitor DNA unwinding in real time (Chisty et al., 2018; Dillingham et al., 2008; Hedgethorne and Webb, 2012; Figure 1b). RecBCD was pre-incubated at a low concentration (10 pM) with a linear DNA substrate (100 pM molecules) that was devoid of Chi sequences. DNA unwinding was then initiated by the addition of ATP in the presence of fSSB. A rapid increase in fluorescence indicated that RecBCD unwound the DNA over several hundred seconds (Figure 1c). We next repeated the experiment in the presence of increasing concentrations of gp5.9, measuring the initial rate of unwinding in each case. Increasing concentrations of gp5.9 inhibited RecBCD helicase and a plot of [gp5.9] versus unwinding rate was well-fit to an inhibitor dose–response curve yielding IC50 = 1.3 nM (solid line; Figure 1d). Equivalent experiments using a gp5.9 preparation retaining the histidine tag yielded a significantly higher IC50 value of 23 nM (dotted line; Figure 1d). This suggests that the N-terminal region of the protein is important functionally. Together, these experiments show that both gp5.9 and Abc2 bind directly to RecBCD, but only gp5.9 acts as an inhibitor of RecBCD DNA unwinding activity.
 
-## Gp5.9 inhibits RecBCD-DNA interaction independently of Abc2 binding
+### Gp5.9 inhibits RecBCD-DNA interaction independently of Abc2 binding
 
 To determine the mechanistic basis for inhibition of RecBCD by gp5.9, and to assess whether the phage proteins could bind simultaneously to RecBCD, we next performed EMSA and 'inverse EMSA' experiments to monitor DNA binding by different RecBCD-inhibitor complexes. In conventional EMSA experiments, a Cy5-labelled DNA substrate (25mer blunt duplex) at low concentration (5 nM) was incubated with RecBCD or RecBCD-Abc2 either in the presence or absence of excess gp5.9 (1 µM). RecBCD caused a shift in the mobility of the substrate indicative of the expected RecBCD-DNA interaction (Figure 1e). This gel shift was largely eliminated by the addition of gp5.9 to RecBCD before DNA was added. The RecBCD-Abc2 complex behaved identically to wild type. It was able to bind the duplex DNA substrate, but binding was largely inhibited by excess gp5.9. The phage protein alone did not interact with DNA. In complementary 'inverse' EMSA experiments (Figure 1f), RecBCD-DNA or RecBCD-Abc2-DNA complexes were run at high concentrations in native polyacrylamide gels that were imaged for Cy5-DNA using a confocal scanner and then stained with Coomassie to detect protein-containing complexes. Note in these experiments that free DNA is not detected as it has run off the bottom of the gel (lane 1). RecBCD was able to bind to DNA as expected (lane 2). However, addition of gp5.9 before DNA dramatically reduced the amount of DNA detected and caused a small increase in the mobility of the RecBCD complex showing it was interacting directly (compare lanes 2 and 3). The RecBCD-Abc2 complex displayed a reduced mobility compared to RecBCD alone (compare lanes 2–4 with 5–7). There was evidence for a small amount of free RecBCD in the preparation in the form of a fine band running with identical mobility to the RecBCD-alone preparation. Importantly, both bands co-migrated with Cy5-DNA showing that DNA and Abc2 can bind simultaneously to RecBCD (lane 5). Pre-addition of gp5.9 to the RecBCD-Abc2 preparation reduced Cy5-DNA binding to both protein complexes (compare lanes 5 and 6). Together, these data show that the gp5.9 binding site on RecBCD is distinct from that of Abc2 and that gp5.9 inhibits DNA binding, potentially by direct competition at the DNA binding locus.
 
-## gp5.9 is a DNA mimic protein with an unprecedented architecture
+### gp5.9 is a DNA mimic protein with an unprecedented architecture
 
 We next purified the RecBCD-gp5.9 complex (using the tag-free form of gp5.9) and analysed its structure using single-particle cryoEM. The dataset was found to be relatively homogeneous with evident additional density for the phage protein on the surface of the complex (Figure 2—figure supplement 1). There was structural heterogeneity only within the RecD protein, suggesting that the RecD conformation becomes uncoupled to the rest of the complex when bound to gp5.9. This was improved by 3D classification, after which an ordered high-resolution class (30% of the classified particles) was separated for the RecBCD-gp5.9 complex with the RecD 1A and 1B domains resolved but not the 2A nor SH3 domains (Figure 2—figure supplement 1e). A 3.2 Å resolution cryoEM map was obtained (Figure 2a, Figure 2—figure supplement 1h) facilitating the building of a model for two chains of gp5.9, both containing residues 1–49 (Figure 2b, Figure 2—figure supplement 2). The structure reveals that gp5.9 adopts a parallel coiled-coil architecture in which the N-termini are slightly braced apart by a short anti-parallel beta-sheet. Many aspartate and glutamate residues are displayed on the outer surface of this exceptionally negatively charged protein (pI = 4.0; Figure 2b and c). The phage protein engages RecBCD in a position which overlaps extensively with the DNA binding site and also with the binding site for the DNA mimic protein Gam (Figure 2d–f). The C-terminal end of the coiled-coil binds to the extended RecB arm domain, while the N-terminus binds closer to the RecBCD core, making contacts with both the RecB and RecC subunits and helping to explain the reduced efficacy of inhibition by purified gp5.9 retaining an N-terminal tag (Figure 1d). The overall structures of RecBCD when bound to either DNA or gp5.9 are almost identical, although small rigid body domain movements help accommodate differences in the dimensions of the two ligands (Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig2-v2.jpg)
+
+**Figure 2.:** (a) CryoEM map of the RecBCD-gp5.9 complex. Subunit colour coding is as follows: RecB in red, RecC in slate blue, RecD in green, and gp5.9 in yellow. (b, c) The gp5.9 dimer adopts a parallel coiled-coil architecture braced by an N-terminal beta-sheet and displays many negatively charged Asp and Glu residues (red) on its surface. (d) Section of the atomic model of the RecBCD-gp5.9 complex with colouring as in (a). (e, f) Sections of the models of the RecBCD-DNA (PDB:5LD2) and RecBCD-Gam (PDB:5MBV) complexes for comparison.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Representative micrograph from the dataset. (b) The most populated 2D class averages generated in cryoSPARC from the cleaned 2xbinned particle set. (c) The results of cryoSPARC ab initio 3D classification. (d) The RELION-3 refined cryoEM maps before and after Bayesian polishing and CTF refinement. (e) The output classes from 3D classification with local angular searches. (f) 3D refinement of the selected particles and generation of a mask around the gp5.9 binding site used for (g) focused classification to remove particles absent of density for gp5.9. (h) The final refined RecBCD-gp5.9 map coloured by local resolution as estimated in RELION. (i) Fourier Shell Correlation curves for the corrected and phase randomised maps.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) The model of the gp5.9 dimer with the surrounding cryoEM density represented by grey mesh. (b) Superposition of the two chains of the gp5.9 model shows they share a high degree of structural similarity.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Both DNA and gp5.9 bind predominantly to RecBCD at the RecB arm domain and the RecC CTD. Small changes in the relative positioning of these two domains allow RecBCD to bind either DNA or gp5.9 at the same site despite their slightly different sizes and orientation of binding. The RecBCD-DNA complex and the RecBCD-gp5.9 complex are shown overlaid and in black and cyan, respectively. In both cases, the ligand (i.e. either DNA or gp5.9) is shown as a surface representation, whereas the RecB arm and RecC CTD are shown as ribbons (positions indicated). The structures have been aligned using the RecB arm domains which are therefore almost perfectly superimposed upon one another. Note the different positioning of the RecC CTD which accommodates differences in the binding of either DNA or the DNA mimic.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Side-by-side view of the density for the RecB arm in the RecBCD-gp5.9 cryoEM map, with the original RecB model (left) shown alongside the corrected RecB model (right). The large hydrophobic residues key to establishing the register of the model are labelled, highlighting the 7–8 residue sequence shift induced by the rebuilding.
 
 Many ion pair contacts are formed between D/E and K/R residues in gp5.9 and RecBCD, respectively (Figure 3, Table 1). These imitate a subset of the contacts formed between the negatively charged DNA phosphates and K/R residues in the RecBCD-DNA complex and, on this basis, we can conclude that gp5.9 acts by DNA mimicry. Interestingly, the contacts formed between RecBCD and Gam (another DNA mimic protein) are equivalent to a different subset of the RecBCD-DNA interactions such that only a few of the charge-based interactions (with RecB Arg residues 254, 255, and 761) are conserved across all three complexes (see highlighted residues in Figure 3 and Table 1). Indeed, besides their dimeric, α-helical, and highly charged structures there is little else in common between the two phage proteins and the coiled-coil architecture of gp5.9 is unprecedented for a DNA mimic. In addition to charge-based interactions that mimic contacts with DNA phosphates, gp5.9 makes additional protein–protein interactions which presumably provide specificity for RecBCD (Figure 3—source data 1), as opposed to other DNA binding proteins including AddAB.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig3-v2.jpg)
 
-**Figure 3.:** Charge pair interactions between R/K residues in RecBCD (blue) and either phosphates or D/E residues (red) for DNA (a), gp5.9 (b), or Gam (c). The images are all taken from the same point of view for complexes that were superimposed using the RecB arm domain. The R/K residues displayed are all of those shown in Table 1 and are the same for all three complexes. They are coloured blue and labelled with residue numbers if they make contacts with the ligand in each case (either DNA, gp5.9, or Gam) and are grey and unlabelled if they do not.Figure 3—source data 1.
+**Figure 3.:** Charge pair interactions between R/K residues in RecBCD (blue) and either phosphates or D/E residues (red) for DNA (a), gp5.9 (b), or Gam (c). The images are all taken from the same point of view for complexes that were superimposed using the RecB arm domain. The R/K residues displayed are all of those shown in Table 1 and are the same for all three complexes. They are coloured blue and labelled with residue numbers if they make contacts with the ligand in each case (either DNA, gp5.9, or Gam) and are grey and unlabelled if they do not.
 
-## Abc2 binds to the RecC subunit, close to a putative exit channel for recombinogenic DNA
+**Table 1.**
+ Gp5.9 is a DNA mimic protein.Ion pair contacts (<4 Å) between Arg/Lys residues in the RecBCD complex and negatively charged moieties in either DNA (phosphates) or DNA mimic proteins (Asp/Glu). Shaded rows highlight charge–charge interactions that are analogous across all three complexes. These interactions are illustrated in Figure 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RecBCD(subunit indicated)</th>
+      <th>DNA</th>
+      <th>Gp5.9</th>
+      <th>Gam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R254 (B)</td>
+      <td>O3′-25</td>
+      <td>E45</td>
+      <td>D73</td>
+    </tr>
+    <tr>
+      <td>R255 (B)</td>
+      <td>O3′-56</td>
+      <td>D38/E39</td>
+      <td>E118/E125</td>
+    </tr>
+    <tr>
+      <td>K256 (B)</td>
+      <td>OP1-57/O5′-57</td>
+      <td></td>
+      <td>E118</td>
+    </tr>
+    <tr>
+      <td>K264 (B)</td>
+      <td></td>
+      <td>E36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K268 (B)</td>
+      <td></td>
+      <td></td>
+      <td>D107</td>
+    </tr>
+    <tr>
+      <td>K288 (B)</td>
+      <td>OP-59</td>
+      <td></td>
+      <td>E111</td>
+    </tr>
+    <tr>
+      <td>R297 (B)</td>
+      <td>OP-58</td>
+      <td></td>
+      <td>E114</td>
+    </tr>
+    <tr>
+      <td>K299 (B)</td>
+      <td>OP-27</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R561 (B)</td>
+      <td>OP-69</td>
+      <td>D4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R584 (B)</td>
+      <td></td>
+      <td></td>
+      <td>D48</td>
+    </tr>
+    <tr>
+      <td>R761 (B)</td>
+      <td>O5′–68/O3′-67</td>
+      <td>D11</td>
+      <td>E51</td>
+    </tr>
+    <tr>
+      <td>R822 (B)</td>
+      <td>OP-67</td>
+      <td>D15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R823 (B)</td>
+      <td>OP-18</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R824 (B)</td>
+      <td></td>
+      <td>D21/E24</td>
+      <td>E65/E68/E125</td>
+    </tr>
+    <tr>
+      <td>K828 (B)</td>
+      <td></td>
+      <td></td>
+      <td>E118</td>
+    </tr>
+    <tr>
+      <td>R846 (C)</td>
+      <td>OP-10/O3′-9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R968 (C)</td>
+      <td>OP-11/O3′-10</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1001 (C)</td>
+      <td>OP-12</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K1066 (C)</td>
+      <td></td>
+      <td></td>
+      <td>E70/D74</td>
+    </tr>
+    <tr>
+      <td>R1068 (C)</td>
+      <td></td>
+      <td>D11/D15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K1070 (C)</td>
+      <td></td>
+      <td>E24</td>
+      <td>E70</td>
+    </tr>
+  </tbody>
+</table>
+
+### Abc2 binds to the RecC subunit, close to a putative exit channel for recombinogenic DNA
 
 We next solved cryoEM structures of the RecBCD-Abc2-PPI complex bound to a tailed DNA substrate (Figure 4). All of the particles within the dataset contained ordered density for RecBCD with additional density evident for the Abc2 protein (Figure 4—figure supplement 1). Focused classification with a mask around the phage binding site (Figure 4—figure supplement 1f) isolated 71% of the particles into a homogeneous class from which a 3.4 Å resolution structure of the RecBCD-Abc2-DNA complex was solved (Figure 4a, Figure 4—figure supplement 1g). A second class containing 22% of the data displayed further additional resolved density in the vicinity of Abc2, corresponding to the E. coli PpiB protein. From this class, a 3.8 Å resolution structure of RecBCD-Abc2-PPI-DNA complex was solved (Figure 4b, Figure 4—figure supplement 1h). The Abc2 protein adopts an extended alpha-helical structure and binds to the surface of the 'inactivated helicase domains' of RecC which play a key role in Chi recognition (Figure 4c–e, Figure 4—source data 1; Murphy, 2000). Consistent with biochemical observations, this location suggests a role for Abc2 in modulating the late stages of the DSB processing reaction catalysed by RecBCD (i.e. Chi recognition and associated conformational changes mediated by a 'latch' structure in RecC, or the subsequent loading of RecA protein). The binding site is also close to the interface with the helicase domains of RecB, and to a tunnel between RecB and RecC (Figure 4—figure supplement 2) which has been suggested to allow exit of a recombinogenic ssDNA loop (the site of RecA loading) after Chi recognition (Cheng et al., 2020; Yang et al., 2012). In the RecBCD-Abc2-PPI structure, RecBCD and Abc2 are essentially identical, but Abc2 is also bound to the host PpiB protein. Abc2 interacts extensively with the Chi-recognition domains of RecC as before, but there are no interactions between PpiB and RecBCD (Figure 4c). The structure can be superposed onto the corresponding translocation activated RecBCD-DNA structure (PDB: 5LD2; Wang et al., 2019), containing the same DNA substrate and non-hydrolysable ATP analogue, ADPNP (Figure 4—figure supplement 3a). This shows that Abc2 has no significant effect on the conformation of the majority of the RecBCD complex except for a minor opening of the nuclease domain relative to RecC and RecD. Additionally, Abc2 binding displaces a helical bundle, residues 252–294, from the RecC surface (Figure 4—figure supplement 3b) and some partial density can be seen for the displaced region clamping back over the exposed face of Abc2 (Figure 4—figure supplement 3c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-v2.jpg)
+
+**Figure 4.:** (a) CryoEM map of the RecBCD-Abc2-DNA complex, coloured as in Figure 2 but with the DNA substrate yellow and Abc2 in orange (b) CryoEM map of the RecBCD-Abc2-PpiB-DNA complex, with PpiB in grey. (c) Section of the atomic model of the RecBCD-Abc2-PpiB-DNA complex. (d) Surface view of the Abc2 binding site on the surface of the RecC Chi-binding domains. (e) Atomic model of residues 3–66 of Abc2 in the PpiB-bound complex showing an extended helical structure. (f) Model of the C-terminus of Abc2 bound to PpiB. A substrate analogue (magenta) is superimposed on the PpiB structure based upon PDB: 1LOP. The structure strongly suggests that P68 (two residues beyond the final modelled amino acid 66) would reside in the cis-trans isomerisation active site.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative micrograph from the dataset. (b) The most populated 2D class averages generated in cryoSPARC from the cleaned 2xbinned particle set. The RELION-3 refined cryoEM maps (c) before and (d) after Bayesian polishing and CTF refinement. (e) Resulting map from a focused 3D refinement using a mask around the Abc2 binding site with the mask displayed as a transparent surface. (f) Focused classification isolated a high resolution RecBCD-Abc2 class and a RecBCD-Abc2-PPI class. The final refined (g) RecBDCD-Abc2-DNA and (h) RecBDCD-Abc2-PPI-DNA map coloured by local resolution as estimated in RELION. (i) FSC curves for the corrected and phase randomised maps.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Slabbed view of the RecBCD-Abc2-DNA structure with the Chi DNA substrate from the RecBCD Chi recognition cryoEM structure (PDB: 6SJB; Murphy, 2000) overlaid in gold with the Chi residues highlighted in magenta.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Superposition of the RecBCD-Abc2-DNA structure (coloured as in other figures) with the corresponding RecBCD-DNA structure containing the same DNA substrate (PDB: 5LD2) in grey. The boxed panel shows a close-up of the superposition, revealing a slight rotation within the RecB nuclease domain. (b) Side-by-side related close-up views of the Abc2 binding site in the structures without (left) and with (right) Abc2. A surface helical bundle involving RecC252-294, highlighted in cyan, peels back to allow Abc2 binding. (c) Rotated view of the Abc2 binding site in the RecBCD-Abc2-PPI-DNA model (left) with the associated cryoEM map displayed unsharpened (right) to indicate a potential path for the displaced RecC252-294 domain, highlighted in cyan.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Density and model for the RecBCD-Abc2-DNA structure showing the Abc2 binding site on RecC. (b) Density and model for Abc2 and docked PpiB taken from the RecBCD-Abc2-PPI-DNA structure. (c) View of the blurred RecBCD-Abc2-PPI-DNA map showing evidence for the continuation of the Abc2 C-terminus through the crevice between PpiB and RecC.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Similar views and contouring of the blurred (a) RecBCD-Abc2-PPI-DNA and (b) RecBCD-Abc2-DNA CryoEM maps with additional, unmodelled difference density shown as a lime green surface. This suggests that in the PpiB bound complex the C-terminus of Abc2 becomes partially ordered around the RecB helicase domains, in the vicinity of the bound ATP analogue ADPNP.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/83409/elife-83409-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (a) The five top AlphaFold models for the Abc2 protein (coloured on a greyscale spectrum) are aligned to the solved Abc2 model (residues 3–66, coloured blue-to-red from the N- to the C-terminus). The predictions diverge significantly in trying to assign structure to the C-terminal residues which cannot be modelled in the cryoEM structure. (B) Alignment of the five AlphaFold models to Abc2 in the context of the RecBCD-Abc2-DNA structure. None of the predictions orientate the C-terminus is a way that would satisfy the additional density seen within the RecB helicase.
 
 The C-terminal region of Abc2 is disordered to differing extents in the structures; helix-2 of Abc2 is ordered up to residue 52 on the surface of RecC (Figure 4—figure supplement 4a) but in the PpiB-bound state this helix is extended with Abc2 modelled up to residue 66 (Figure 4—figure supplement 4b). This C-terminal extension protrudes into the PpiB density, into which a high-resolution crystal structure of PpiB containing a bound substrate analogue (PDB: 1LOP; Konno et al., 1996) can be docked (Figure 4f). The resulting model strongly suggests that P68 from Abc2 would occupy the cis-trans isomerisation active site in PpiB. A cis proline conformation at this position would disrupt the helical secondary structure and potentially direct the disordered C-terminus of Abc2 towards the RecB-RecC interface. In fact, when the RecBCD-Abc2-PPI map is blurred and contoured down, a continuous weak density path can be observed for the continuation of the Abc2 C-terminus through the PpiB binding cleft and out towards the RecB helicase domains (Figure 4—figure supplement 4c). Looking around the RecB helicase domains, additional unaccountable patches of density are found above the noise in-between the 1A and 2A motor domains which enclose the ATP-binding site (Figure 4—figure supplement 5a). This additional density is not seen in the Abc2 complex without bound PpiB (Figure 4—figure supplement 5b). AlphaFold (Yüksel et al., 2016) models of the Abc2 C-terminus are highly divergent and cannot be used to interpret the density (Figure 4—figure supplement 6).
 
@@ -78,55 +277,334 @@ The RecBCD complex and related systems such as AddAB (also known as RexAB) have 
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The T7 gp5.9 gene from phage T7 was produced as a synthetic gene construct with an N-terminal 3C-cleavable histidine tag (GeneArt, Invitrogen). This was subcloned into the pACEBAC1 (MultiBac) vector using engineered BamHI and XbaI sites for overexpression in insect cells using standard techniques (Berger et al., 2004; Bieniossek et al., 2008). Briefly, for large-scale expression of gp5.9, 500 mL of High5 cells at 2 × 106 cells/mL were infected with 25 mL P3 virus and incubated for 72 hr at 27°C with shaking before cells were harvested by centrifugation. The pellet was resuspended in 50 mL lysis buffer (20 mM Tris-HCl pH 7.5, 200 mM NaCl, 2 mM β-mercaptoethanol, 10% glycerol, protease inhibitor cocktail [Roche, as directed by the manufacturer], 20 mM imidazole). The cells were lysed by sonication and centrifuged to remove cell debris. The supernatant was then applied to Talon resin (Takara Bio) to purify gp5.9 using the histidine tag. Beads were equilibrated by washing three times with 15 mL wash buffer (20 mM Tris-HCl pH 7.5, 200 mM NaCl, 20 mM β-mercaptoethanol, 10% glycerol, 20 mM imidazole). Supernatant from the centrifuged cell lysate was added to the beads and incubated for 30 min at 4°C. The beads were then spun down and the supernatant (unbound protein) was removed. The beads were washed four times with wash buffer before gp5.9 was eluted with 50 mL elution buffer (20 mM Tris-HCl pH 7.5, 200 mM NaCl, 20 mM β-mercaptoethanol, 150 mM imidazole). The eluate was loaded onto a 1 mL MonoQ column (GE Healthcare) in buffer A (20 mM Tris-HCl pH 7.5, 1 mM TCEP) and eluted with buffer B (20 mM Tris-HCl pH 7.5, 1 mM TCEP, 1 M NaCl). Peak fractions were pooled and further purified using size-exclusion chromatography in SEC buffer (20 mM Tris-HCl pH 8, 0.5 mM TCEP, 200 mM NaCl). The concentration of his-tagged gp5.9 was calculated using a theoretical extinction coefficient of 8480. The final protein preparation was stored at –80°C in a buffer containing 20 mM Tris-HCl-Cl pH 8, 0.5 mM TCEP, 200 mM NaCl at a final concentration of 19.4 μM. A sample of tag-free gp5.9 was prepared by treatment of this stock with 3C protease (Pierce) followed by size-exclusion chromatography, and the resulting protein was stored in the same buffer at a final concentration of 14.9 μM. Unless stated otherwise, all experiments presented in this article were performed with the tag-free gp5.9 protein.
 
 For the wild type RecBCD and nuclease-dead RecBDCD complexes, RecB, RecC, and RecD were co-expressed and purified from three separate plasmids: pETduet-His6-TEVsite-recB or pETduet-His6-TEVsite-recBD1080A, pRSFduet-recC and pCDFduet-recD as described previously (Saikrishnan et al., 2008; Wilkinson et al., 2016a). For the RecBCD-Abc2 complex, the four genes were co-expressed together as Abc2 has been shown to be unstable when overexpressed alone (Murphy, 1994). The nuclease-dead RecB mutant (D1080A) was used to prevent digestion of the DNA substrates. To avoid adding a fourth plasmid to the transformation, the genes encoding His6-TEVsite-recBD1080A and RecC were jointly cloned into the respective NdeI/KpnI and NcoI/XhoI sites of the pRSFduet vector for use with the pCDFduet-recD plasmid. Finally, the Abc2 gene from phage P22 was synthesised (GeneStrings, Thermo Fisher) and cloned in-between the NdeI and XhoI sites of pET22b. An Abc2P68A mutant variant was generated using In-Fusion cloning (Takara Bio) for the generation of RecBCD-Abc2 complex without the co-purification of the host PpiB protein. Co-expression of the three plasmid system coding for RecB, RecC, RecD, and Abc2 was performed as for wild-type RecBCD. The RecBCD-Abc2 complexes were purified by a similar method to that described previously for RecBCD (Wilkinson et al., 2016a). Briefly, the cells were lysed using an emulsiflex cell disruptor, the lysate clarified by centrifugation, and ammonium sulphate was added to the soluble fraction (0.35 g/mL) before a second centrifugation at 30,000 × g to pellet the proteins. The pellets were resuspended and complexes bound to a HisTrap column (GE Healthcare) before direct elution onto a HiTrap heparin column (GE Healthcare) and subsequent elution using a gradient of NaCl. The His-tags were cleaved by incubation with TEV protease during overnight dialysis before being re-passed through the HisTrap column and finally eluted from a MonoQ column with a shallow gradient of NaCl. The purified proteins were diluted to give a final buffer solution of 25 mM Tris-HCl pH 7.5, 100 mM NaCl, 0.5 mM TCEP. The samples were concentrated to around 5–10 mg/mL, supplemented with glycerol to a concentration of 15% (v/v), and flash-frozen in aliquots in liquid nitrogen for storage at –80°C. The fluorescent SSB biosensor was a gift from Martin Webb (The Crick Institute, London) and was purified as described (Chisty et al., 2018).
 
-## Preparation of DNA substrates for cryoEM and native gel shift assays
+### Preparation of DNA substrates for cryoEM and native gel shift assays
 
 A splayed hairpin DNA substrate as used in previous cryoEM studies (Wilkinson et al., 2016a) was also used here to allow direct comparison of the effect of Abc2 interaction on the conformation of the RecBCD-DNA complex. The oligonucleotide sequence is 5′-TTT TTT TTT TTT tct aat gcg agc act gct aca gca tTT CCC atg ctg tag cag tgc tcg cat tag aTT T-3′, with lowercase denoting paired bases in the duplex region and uppercase denoting unpaired bases (12 on the 5′-end and 3 on the 3′-end). The DNA substrate was purified as described previously (Saikrishnan et al., 2008; Singleton et al., 2004). Briefly, the synthesised oligonucleotide (IDT) was annealed at low concentration by heating to 95°C followed by a slow cooling to room temperature and purification by chromatography on a Source-Q column. The purified substrate was desalted into deionised water, aliquoted, and stored at –20°C.
 
-## DNA double-strand break resection assays
+### DNA double-strand break resection assays
 
 DSB resection assays were performed in RecBCD buffer (25 mM Tris-HCl pH 7.5, 10 mM NaCl, 6 mM MgCl2, 0.1 mg/mL BSA) supplemented with 2.5 nM RecBCD (or RecBCD-ABC2 or RecBCD-ABC2-PPI) or 20 nM AddAB, 960 µM (in ntds) linearised pACEBac1 vector, and 1 µM gp5.9. Reactions were initiated by the addition of 2 mM ATP. 10 µL aliquots were removed at the times indicated and quenched by the addition of 10 µL STOP buffer (10% glycerol, 1% SDS, 50 mM EDTA, 1 mg/mL proteinase K). The samples were run on 1% agarose gels and imaged by post-staining with SYBR gold.
 
-## Helicase assays
+### Helicase assays
 
-Real-time helicase assays were performed using a fluorescent biosensor for ssDNA based on the Plasmodium falciparum SSB protein (fSSB; Chisty et al., 2018). Reactions were performed in RecBCD buffer (25 mM Tris-HCl pH 7.5, 10 mM NaCl, 6 mM MgCl2, 0.1 mg/ml BSA) supplemented with 10 pM RecBCD, 1 uM (in ntds; ~10 pM molecules) bacteriophage lambda DNA (New England Biolabs), 25 nM fSSB (tetramer) and gp5.9 at the stated concentration. After a 10 min pre-incubation, reactions were initiated by the addition of 2 mM ATP. Fluorescence intensity was monitored using a Cary Eclipse Fluorescence Spectrophotometer (excitation wavelength 430 nm, emission wavelength 475 nm, excitation and emission slit widths of 10 nm and 5 nm, respectively). Assays were performed in triplicate, and the initial rates reported are the mean and standard error for the three repeats. To obtain IC50 values for inhibition of RecBCD by gp5.9, data describing the initial unwinding rate as a function of log10[gp5.9] were fit to the sigmoidal dose–response equation of GraphPad Prism.rate=rmin+(rmax−rmin)/(1+10∧(logIC50−log[gp5.9]))
+Real-time helicase assays were performed using a fluorescent biosensor for ssDNA based on the Plasmodium falciparum SSB protein (fSSB; Chisty et al., 2018). Reactions were performed in RecBCD buffer (25 mM Tris-HCl pH 7.5, 10 mM NaCl, 6 mM MgCl2, 0.1 mg/ml BSA) supplemented with 10 pM RecBCD, 1 uM (in ntds; ~10 pM molecules) bacteriophage lambda DNA (New England Biolabs), 25 nM fSSB (tetramer) and gp5.9 at the stated concentration. After a 10 min pre-incubation, reactions were initiated by the addition of 2 mM ATP. Fluorescence intensity was monitored using a Cary Eclipse Fluorescence Spectrophotometer (excitation wavelength 430 nm, emission wavelength 475 nm, excitation and emission slit widths of 10 nm and 5 nm, respectively). Assays were performed in triplicate, and the initial rates reported are the mean and standard error for the three repeats. To obtain IC50 values for inhibition of RecBCD by gp5.9, data describing the initial unwinding rate as a function of log10[gp5.9] were fit to the sigmoidal dose–response equation of GraphPad Prism.
+
+$$
+rate=r_{min}+(r_{max}−r_{min})/(1+10^{∧}(logIC50−log[gp5.9]))
+$$
 
 rmin and rmax are the minimum and maximum DNA unwinding rates, respectively. Values for the unwinding rates were normalised to 100% for a zero gp5.9 control, and so for the purposes of the fits the values for rmax and rmin were constrained to 100 and 0 respectively.
 
-## Native gel mobility shift assays
+### Native gel mobility shift assays
 
 Native-PAGE was used to assess the shift in mobilities of the RecBCD complex in the presence of DNA and gp5.9. For Figure 1e, the 10 µL reactions contained 25 mM Tris-HCl pH 7.5, 10 mM NaCl, 6 mM MgCl2. 50 nM of either RecBCD or RecBCD-Abc2 complex were mixed with 1 µM gp5.9 (or buffer), incubated for 5 min at room temperature and then added to 2.5 nM of a 5′-Cy5-labelled 25 bp duplex DNA substrate (5′-Cy5-GCT TGC TAG GAC GGA TCG CTC GAG G and its complement; IDT). Reactions were then loaded onto a 6% (w/v) native polyacrylamide gel (1× TBE), then run in 1× TBE running buffer for 35 min at a constant voltage of 150 V. The gels were imaged using a Typhoon, scanning for the Cy5 fluorophore. For Figure 1f, the 20 µL reactions contained 25 mM Tris-HCl pH 7.5, 10 mM NaCl, 6 mM MgCl2, and 10% glycerol. 400 nM RecBCD or RecBCD-Abc2 were mixed with 4 µM gp5.9 (or buffer) and incubated for 5 min prior to addition of 500 nM of 5′-Cy5-labelled 25 bp duplex DNA substrate. The reactions were incubated for a further 5 min at room temperature prior loading onto a 6% (w/v) native polyacrylamide gel (1× TBE). The gel was run in 1× TBE running buffer for 100 min at a constant voltage of 150 V. The gels were visualised using the Typhoon to scan for the Cy5 fluorophore (to visualise DNA) and then after stained with Coomassie Blue to visualise the proteins.
 
-## CryoEM grid preparation
+### CryoEM grid preparation
 
 RecBCD and gp5.9 proteins were thawed and mixed in buffer B100 on ice at final concentrations of 0.3 µM RecBCD, 0.9 µM gp5.9 (based on monomeric weight) and 5 mM MgCl2. Quantifoil-Au 2/1 µm holey carbon film grids (300 mesh) were cleaned by successive washes of MilliQ water and ethylacetate. They were then washed with 0.3 mM n-dodecyl-beta-D-maltoside (DDM) before being immediately covered with a solution of diluted graphene oxide sheets in 0.3 mM DDM, as described previously (Cheng et al., 2020). A sample volume of 4 µL was evenly applied to the graphene oxide-coated carbon side of the grid and frozen in liquid ethane using a Vitrobot Mark IV (FEI) with a 10 s wait time and 1.5 s blot time, respectively. The Vitrobot chamber was maintained at close to 100% humidity and 4°C.
 
 RecBDCD-Abc2 was thawed and mixed with a 1.5-fold molar excess of the hairpin DNA substrate for 10 min at room temperature before being placed on ice and ligands and buffer B100 added to give the desired concentrations. The final mixture contained 0.2 µM RecBDCD-Abc2, 0.3 µM DNA, 5 mM magnesium chloride, and 2 mM ADPNP. C-flat 2/1 µm holey carbon film grids (400 mesh) were covered with a solution of diluted graphene oxide sheets in 0.3 mM DDM, as described previously (Cheng et al., 2020). The sample (3 µL) was evenly applied to the graphene oxide-coated side of the grid and frozen in liquid ethane using a Vitrobot Mark IV (FEI) with a 2 s wait time and 1.5 s blot time, respectively. The Vitrobot chamber was maintained at close to 100% humidity and 4°C.
 
-## CryoEM data collection
+### CryoEM data collection
 
 The RecBCD-gp5.9 cryoEM dataset was collected at LonCEM (The Francis Crick Institute, London) using a Titan Krios microscope operated at 300 kV with a Gatan K3 detector in super resolution mode. A nominal magnification of ×81,000 was set yielding a physical pixel size of 1.10 Å used for image processing. A total of 5064 images were collected with a nominal defocus range of –1.0 to –2.5 µm in 0.3 µm increments. Each image consisted of a movie stack of 40 frames with a total dose of ~50 e-/Å2 over 4.3 s, corresponding to a dose rate of ~14 e-/pixel/s (all values relative to the physical pixel size of 1.10 Å).
 
 The RecBDCD-Abc2-DNA-ADPNP cryoEM dataset was collected at eBIC (Diamond Light Source, UK) using a Titan Krios microscope operated at 300 kV with a Gatan K2 detector in counting mode. A nominal magnification of 130,000 was set, yielding a pixel size of 1.06 Å. A total of 2500 images were collected with a nominal defocus range of −1.2 to −2.4 µm in 0.3 µm increments. Each image consisted of a movie stack of 30 frames with a total dose of ~56 e-/Å2 over 12 s, corresponding to a dose rate of ~5.2 e-/pixel/s.
 
-## CryoEM data processing: gp5.9
+### CryoEM data processing: gp5.9
 
 The 5064 movie stacks were aligned and summed using Motioncor2 (Zheng et al., 2017) before CTF parameters were estimated for each micrograph using Gctf (Zhang, 2016). Outlying poor quality images, based on CTF figure of merit, defocus value and predicted resolution were removed to give 4080 micrographs for further processing. Template-based particle picking was done with Gautomatch using 25 Å lowpass-filtered (LPF) 2D reprojections of an 8 Å resolution RecBCD-gp5.9 cryoEM map obtained from in-house data on a Technai F20 microscope operating with a Falcon2 detector. A total of 1,458,124 picked particles were extracted 2× binned in RELION3 (Zivanov et al., 2018). To remove picking artefacts and noise, two successive rounds of 2D classification were carried out in cryosparc2 (Punjani et al., 2017) from which 674,546 potential RecBCD particles were kept (Figure 2—figure supplement 1b). A further round of cleaning was carried out using template-free ab initio classification from which two featureless classes were removed to leave 547,993 particles which represented a RecBCD-gp5.9 complex (Figure 2—figure supplement 1c). These were refined in cryosparc2, using the ab initio map lowpass filtered to 20 Å as a template, to centre the particles prior to re-extraction without binning in RELION3.
 
 The unbinned, centred particles were refined in RELION3, with the template lowpass filtered to 20 Å and with a soft, extended, 16 Å lowpass filtered mask around the complex, producing a map at a resolution of 3.7 Å (gold-standard, FSC = 0.143, as with all succeeding resolution estimates) after postprocessing. The output particles were then subjected to Bayesian polishing and refined as before in RELION3 producing a map at a resolution of 3.5 Å. A round of CTF refinement of the per-particle defocus values significantly improved the map, which was subsequently refined to a resolution of 3.1 Å (Figure 2—figure supplement 1d). A round of 3D classification was then with local angular searches and without a mask to separate any heterogeneity within the complex into three classes (Figure 2—figure supplement 1e). A class containing 163,484 particles (30% of those classified) with strong density for the full complex was selected out from low-resolution classes with mixed occupancies and refined to a resolution of 3.2 Å (Figure 2—figure supplement 1f). A focused 3D classification was then run using a soft mask around the gp5.9 and RecB arm domain region of the complex and without image alignment. This led to the exclusion of 22,026 particles with no gp5.9 density and selection of 141,458 particles with strong gp5.9 density (Figure 2—figure supplement 1g), which were refined to yield a final map at 3.2 Å (Figure 2—figure supplement 1h), which was deposited with a sharpening factor of –50 e-/Å2 applied. Due to the reduced resolution still observed around the C-terminus of gp5.9 and the RecB arm in the map, the refinement was continued using the local mask from the previous classification to generate a secondary map to aid model building and interpretation in this region.
 
-## CryoEM data processing: Abc2
+### CryoEM data processing: Abc2
 
 The movie stacks were aligned and summed using Motioncor2 (Zheng et al., 2017) before CTF parameters were estimated for each micrograph using Gctf (Zhang, 2016). Images with significant ice contamination were removed to give 2338 micrographs for further processing. Template-based particle picking was done with Gautomatch using 25 Å LPF 2D-reprojections of the published RecBCD-DNA-ADPNP cryoEM map (EMD-4038, Wilkinson et al., 2016a). A total of 467,613 picked particles were extracted 2× binned. To remove picking artefacts and noise, two successive rounds of 2D classification were carried out in RELION3 (Zivanov et al., 2018) from which 185,881 potential RecBCD particles were kept (Figure 4—figure supplement 1b). These were used for an unmasked 3D refinement with the EMD-4038 map filtered to 30 Å resolution as the starting template to centre the particles before re-extraction without binning. This was followed by 3D refinement with a soft mask around the full complex, Bayesian polishing and CTF refinement of the per-particle defocus values. The map resolution improved from 3.6 Å (0.143 FSC cutoff, RELION3) to 3.3 Å after Bayesian polishing, CTF refinement, and a further 2D classification without image alignment to select 167,080 highly ordered particles (Figure 4—figure supplement 1c and d).
 
 To separate different states/occupancies of the complex, a focused refinement was done on the polished particles with a soft mask around Abc2 and the surrounding domains of RecC, followed by 3D classification without image alignment using the same focused mask (Figure 4—figure supplement 1e and f). The majority of the particles (71% of those classified) formed a high-resolution class with strong density for the full complex, including Abc2 bound on the surface of RecC. A minor, low-resolution class was excluded containing 7% of the particles respectively. The remaining particles (22% of those classified) were in a class that displayed additional density attached to Abc2 for the contaminant E. coli PpiB protein, representing the RecBCD-DNA-Abc2-PPI complex. The 119,163 RecBCD-DNA-Abc2 particles were refined to generate a map at a resolution of 3.4 Å (0.143 FSC cutoff, RELION3) deposited with a sharpening B-factor of –50 Å2 (Figure 4—figure supplement 1g and i, Table 2). The 37,072 RecBCD-DNA-Abc2-PPI particles were refined to yield a map at a resolution of 3.8 Å (0.143 FSC cutoff, RELION3), which was deposited with a sharpening B-factor of –50 Å2 (Figure 4—figure supplement 1h and i, Table 2).
 
-## Model building and refinement
+**Table 2.**
+ CryoEM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>gp5.9-RecBCD(EMDB-15803)(PDB 8B1R)</th>
+      <th>Abc2-RecBCD-DNA-ADPNP(EMDB-15804)(PDB 8B1T)</th>
+      <th>Abc2-RecBCD-PpiB-DNA-ADPNP(EMDB-15805)(PDB 8B1U)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>81,000</td>
+      <td>130,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>K3</td>
+      <td>K2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy slit width (e–V)</td>
+      <td>20</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>50</td>
+      <td>56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Exposure rate (e–/pixel/s)</td>
+      <td>14.0</td>
+      <td>5.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–1.0 to –2.5</td>
+      <td>–1.2 to –2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.10</td>
+      <td>1.06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Movies collected</td>
+      <td>5064</td>
+      <td>2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>674,546</td>
+      <td>185,881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>141,458</td>
+      <td>119,163</td>
+      <td>37,072</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.2</td>
+      <td>3.4</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>5MBV</td>
+      <td>5LD2, 8B1R</td>
+      <td>8B1T</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>–50</td>
+      <td>–50</td>
+      <td>–50</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.1</td>
+      <td>3.3</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Model to map correlation</td>
+      <td>0.87</td>
+      <td>0.83</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>21,953</td>
+      <td>23,986</td>
+      <td>24,127</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2746</td>
+      <td>2869</td>
+      <td>2886</td>
+    </tr>
+    <tr>
+      <td>DNA residues</td>
+      <td>-</td>
+      <td>51</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Ligand molecules</td>
+      <td>1 (Mg2+)</td>
+      <td>1 (ADPNP)1 (Mg2+)</td>
+      <td>1 (ADPNP)1 (Mg2+)</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>89.5</td>
+      <td>72.0</td>
+      <td>68.0</td>
+    </tr>
+    <tr>
+      <td>DNA</td>
+      <td>-</td>
+      <td>168.5</td>
+      <td>162.6</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>61.0</td>
+      <td>50.0</td>
+      <td>54.5</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.617</td>
+      <td>0.493</td>
+      <td>0.464</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.4</td>
+      <td>1.5</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>7.5</td>
+      <td>6.0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.5</td>
+      <td>1.4</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured (%)</td>
+      <td>99.3</td>
+      <td>98.9</td>
+      <td>98.9</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>0.7</td>
+      <td>1.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model building and refinement
 
 For the 3.2 Å resolution RecBCD-gp5.9 map, RecBCD from the published RecBCD-GamS structure (PDB ID: 5MBV, Anderson and Kowalczykowski, 1997b) was docked into the density using Chimera (Dillingham et al., 2008) and refined with jelly-body restraints using Refmac5 (Brown et al., 2015) in CCPEM (Burnley et al., 2017). A focused refinement in RELION3 with the mask around the gp5.9 binding site used during data processing (Figure 2—figure supplement 1g) generated a more resolved map to facilitate the building of gp5.9 and remodelling of interacting regions of the RecB arm and RecC C-terminal domains respectively in Coot (Konno et al., 1996). Initially a long idealised α-helix was docked in to start gp5.9 building with an N-terminal ß-strand extension clearly visible. At this resolution and with the majority of the peptide ordered, sequence assignment was clear and straightforward with residues 1–49 modelled. The chain was duplicated and docked into the density for the second gp5.9 molecule within the homo-dimer, with only minor adjustments required for the very N-terminal residues and some altered side-chain conformers (Figure 2—figure supplement 2). An AlphaFold (Yüksel et al., 2016) model of gp5.9 was later used to help validate our model. Notably, an AlphaFold model of the RecBCD complex combined with observations of inconsistencies between the model and map in the RecB arm led to the finding that the protein register within this domain was off by seven residues for residues 241–289, which are flanked by disordered loops in prior RecBCD structures. Two tryptophan residues positioned seven residues apart in this region had become the basis for the misalignment in the first model built for RecBCD (Singleton et al., 2004), and it was not uncovered with the ambiguous nature of the density in this region in the subsequent RecBCD structures that followed, until this significantly higher-resolution gp5.9 complex map (Figure 2—figure supplement 4). We went back through past RecBCD complex structures and found that the new RecB arm model fit significantly better into all of the past maps. Comparative analyses of RecBCD structures in this article use the corrected models.
 
@@ -134,10 +612,10 @@ The published RecBCD-DNA-ADPNP structure (PDB ID: 5LD2, Wilkinson et al., 2016a)
 
 For the Abc2 and PPI-containing map at 3.8 Å resolution, the final RecBCD-DNA-Abc2 model was docked in and refined with jelly-body restraints as described above. As well as containing additional density for PPI, the map showed further density for building an extended part of the C-terminal region of the Abc2 model up to residue 66 (Figure 4—figure supplements 4b and 5a). The density in this region was ambiguous as indicated by local resolution estimation identifying the resolution to be worse than 5 Å for PpiB (Figure 4—figure supplement 1h). As a result, the crystal structure of E. coli PpiB (PDB: 1LOP) was docked into the density (Figure 4—figure supplement 4) for the purpose of figures but not for the deposition of a 3D model. It is unclear what changes are induced in Abc2 and in PPI itself upon PPI binding to the C-terminal portion of Abc2. However, the model is strongly suggestive of P68 of Abc2 binding within the active site of the prolyl isomerase (Figure 4f). The final models of each structure were real-space refined in Phenix against the deposited maps with ADP-factor refinement enabled and model quality assessed by MolProbity (Williams et al., 2018) to generate the final model statistics (Table 2).
 
-## Materials availability statement
+### Materials availability statement
 
 Expression vectors used in this study are available from the corresponding authors upon request.
 
-## Data availability statement
+### Data availability statement
 
 Newly generated structural models from this work have been deposited at the PDB and EMDB. Accession codes are shown in Table 2. Existing structural models used in this work are accessible from the PDB with accession codes 5MBV and 5LD2.

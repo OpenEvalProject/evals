@@ -43,67 +43,310 @@ To investigate the impact of unique bat immune processes on in vitro viral kinet
 
 ## Results
 
-## Virus infection experiments in antiviral bat cell cultures yield reduced cell mortality and elongated epidemics
+### Virus infection experiments in antiviral bat cell cultures yield reduced cell mortality and elongated epidemics
 
 We first explored the influence of innate immune phenotype on within-host viral propagation in a series of infection experiments in cell culture. We conducted plaque assays on six-well plate monolayers of three immortalized mammalian kidney cell lines: [1] Vero (African green monkey) cells, which are IFN-defective and thus limited in antiviral capacity (Desmyter et al., 1968); [2] RoNi/7.1 (Rousettus aegyptiacus) cells which demonstrate idiosyncratic induced interferon responses upon viral challenge (Kuzmin et al., 2017; Arnold et al., 2018; Biesold et al., 2011; Pavlovich et al., 2018); and [3] PaKiT01 (Pteropus alecto) cells which constitutively express IFN-α (Zhou et al., 2016; Crameri et al., 2009). To intensify cell line-specific differences in constitutive immunity, we carried out infectivity assays with GFP-tagged, replication-competent vesicular stomatitis Indiana viruses: rVSV-G, rVSV-EBOV, and rVSV-MARV, which have been previously described (Miller et al., 2012; Wong et al., 2010). Two of these viruses, rVSV-EBOV and rVSV-MARV, are recombinants for which cell entry is mediated by the glycoprotein of the bat-evolved filoviruses, Ebola (EBOV) and Marburg (MARV), thus allowing us to modulate the extent of structural, as well as immunological, antiviral defense at play in each infection. Previous work in this lab has demonstrated incompatibilities in the NPC1 filovirus receptor which render PaKiT01 cells refractory to infection with rVSV-MARV (Ng and Chandrab, 2018, Unpublished results), making them structurally antiviral, over and above their constitutive expression of IFN-α. All three cell lines were challenged with all three viruses at two multiplicities of infection (MOI): 0.001 and 0.0001. Between 18 and 39 trials were run at each cell-virus-MOI combination, excepting rVSV-MARV infections on PaKiT01 cells at MOI = 0.001, for which only eight trials were run (see Materials and methods; Figure 1—figure supplements 1–3, Supplementary file 1).
 
 Because plaque assays restrict viral transmission neighbor-to-neighbor in two-dimensional cellular space (Howat et al., 2006), we were able to track the spread of GFP-expressing virus-infected cells across tissue monolayers via inverted fluorescence microscopy. For each infection trial, we monitored and re-imaged plates for up to 200 hr of observations or until total monolayer destruction, processed resulting images, and generated a time series of the proportion of infectious-cell occupied plate space across the duration of each trial (see Materials and methods). We used generalized additive models to infer the time course of all cell culture replicates and construct the multi-trial dataset to which we eventually fit our mechanistic transmission model for each cell line-virus-specific combination (Figure 1; Figure 1—figure supplements 1–5).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-v3.jpg)
+
+**Figure 1.:** Results are shown for the best fit immune absent model on Vero cells, induced immunity model on RoNi/7.1 cells, and constitutive (for rVSV-VSVG and rVSV-EBOV) and induced (for rVSV-MARV) immunity models on PaKiT01 cells. Raw data across all trials are shown as open circles (statistical smoothers from each trial used for fitting are available in Figure 1—figure supplements 2–3). Model output is shown as a solid crimson line (95% confidence intervals by standard error = red shading). Panel background corresponds to empirical outcome of the average stochastic cell culture trial (persistent infection = white; virus-induced epidemic extinction = gray; immune-mediated epidemic extinction = black). Parameter values are listed in Table 1 and Supplementary file 4. Results for absent/induced/constitutive fitted models across all cell lines are shown in Figure 1—figure supplement 4 (MOI = 0.001) and Figure 1—figure supplement 5 (MOI = 0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A), (B), and (C) show raw, original images of rVSV-EBOV propagation across Vero cell lines at, respectively, 17, 21, and 28 hr post-infection (timesteps 2, 3, and five from trial Ver6_B1). (D), (E), and (F) show corresponding, binary images processed in the R package, EBImage. Cells expressing viral eGFP are depicted in white and uninfected/dead cells in black.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Open circles show raw data across all trials, while red, dashed line gives the statistical mean of each trials, established from GAM model incorporating random effects per trial. Results for MOI = 0.0001 are shown in Figure 1—figure supplement 3.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Open circles show raw data across all trials, while red, dashed line gives the statistical mean of each trials, established from GAM model incorporating random effects per trial. Results for MOI = 0.001 are shown in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Figure shows fitted time series of infectious cell proportions for rVSV-G, rVSV-EBOV, and rVSV-MARV infections (columns) on Vero, RoNi/7.1, and PaKiT01 cell lines (rows) at MOI = 0.001. Raw data across all trials are shown as open circles and model output as the solid crimson line (95% confidence intervals by standard error = red shading). Panel background corresponds to empirical outcome of the average stochastic cell culture trial (persistent infection = white; virus-induced epidemic extinction = gray; immune-mediated epidemic extinction = black).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp5-v3.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (A) IFN-α and (B) IFN-β gene expression profiles from qPCR for rVSV infections on RoNi/7.1 and PaKiT01 cell lines. Panels show δ-Ct (raw Ct of IFN gene assay subtracted from raw Ct of β-Actin housekeeping gene assay) across a time series for mock (left), MOI = 0.0001 (middle) and MOI = 0.001 (right) infections across a time series. Viruses are represented by color (rVSV-G = green, rVSV-EBOV = magenta, rVSV-MARV = blue). The red dashed line at δ-Ct = 37 corresponds to no expression; higher expression is indicated at lower values for δ-Ct. qPCR was carried out using primers summarized in Supplementary file 6.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** Curve fits to control data for standard birth (b = .025) and natural mortality ($\mu=\frac{1}{121},\frac{1}{191},\frac{1}{84}$ hours for, respectively, Vero, RoNi/7.1, and PaKiT01 cell lines) rates across all three cell lines.Raw data from multiple trials are shown as open circles, statistical means as dashed black lines, with the output from the mean field model, using the fixed birth rate and estimated mortality rate, in solid green.
+
 All three recombinant vesicular stomatitis viruses (rVSV-G, rVSV-EBOV, and rVSV-MARV) infected Vero, RoNi/7.1, and PaKiT01 tissue cultures at both focal MOIs. Post-invasion, virus spread rapidly across most cell monolayers, resulting in virus-induced epidemic extinction. Epidemics were less severe in bat cell cultures, especially when infected with the recombinant filoviruses, rVSV-EBOV and rVSV-MARV. Monolayer destruction was avoided in the case of rVSV-EBOV and rVSV-MARV infections on PaKiT01 cells: in the former, persistent viral infection was maintained throughout the 200 hr duration of each experiment, while, in the latter, infection was eliminated early in the time series, preserving a large proportion of live, uninfectious cells across the duration of the experiment. We assumed this pattern to be the result of immune-mediated epidemic extinction (Figure 1). Patterns from MOI = 0.001 were largely recapitulated at MOI = 0.0001, though at somewhat reduced total proportions (Figure 1—figure supplement 5).
 
-## A theoretical model fit to in vitro data recapitulates expected immune phenotypes for bat cells
+### A theoretical model fit to in vitro data recapitulates expected immune phenotypes for bat cells
 
-We next developed a within-host model to fit to these data to elucidate the effects of induced and constitutive immunity on the dynamics of viral spread in host tissue (Figure 1). The compartmental within-host system mimicked our two-dimensional cell culture monolayer, with cells occupying five distinct infection states: susceptible (S), antiviral (A), exposed (E), infectious (I), and dead (D). We modeled exposed cells as infected but not yet infectious, capturing the ‘eclipse phase’ of viral integration into a host cell which precedes viral replication. Antiviral cells were immune to viral infection, in accordance with the 'antiviral state' induced from interferon stimulation of ISGs in tissues adjacent to infection (Stetson and Medzhitov, 2006). Because we aimed to translate available data into modeled processes, we did not explicitly model interferon dynamics but instead scaled the rate of cell progression from susceptible to antiviral (ρ) by the proportion of exposed cells (globally) in the system. In systems permitting constitutive immunity, a second rate of cellular acquisition of antiviral status (ε) additionally scaled with the global proportion of susceptible cells in the model. Compared with virus, IFN particles are small and highly diffusive, justifying this global signaling assumption at the limited spatial extent of a six-well plate and maintaining consistency with previous modeling approximations of IFN signaling in plaque assay (Howat et al., 2006).
+We next developed a within-host model to fit to these data to elucidate the effects of induced and constitutive immunity on the dynamics of viral spread in host tissue (Figure 1). The compartmental within-host system mimicked our two-dimensional cell culture monolayer, with cells occupying five distinct infection states: susceptible (S), antiviral (A), exposed (E), infectious (I), and dead (D). We modeled exposed cells as infected but not yet infectious, capturing the ‘eclipse phase’ of viral integration into a host cell which precedes viral replication. Antiviral cells were immune to viral infection, in accordance with the 'antiviral state' induced from interferon stimulation of ISGs in tissues adjacent to infection (Stetson and Medzhitov, 2006). Because we aimed to translate available data into modeled processes, we did not explicitly model interferon dynamics but instead scaled the rate of cell progression from susceptible to antiviral (ρ) by the proportion of exposed cells (globally) in the system. In systems permitting constitutive immunity, a second rate of cellular acquisition of antiviral status ($\epsilon$) additionally scaled with the global proportion of susceptible cells in the model. Compared with virus, IFN particles are small and highly diffusive, justifying this global signaling assumption at the limited spatial extent of a six-well plate and maintaining consistency with previous modeling approximations of IFN signaling in plaque assay (Howat et al., 2006).
 
-To best represent our empirical monolayer system, we expressed our state variables as proportions (PS, PA, PE, PI, and PD), under assumptions of frequency-dependent transmission in a well-mixed population (Keeling and Rohani, 2008), though note that the inclusion of PD (representing the proportion of dead space in the modeled tissue) had the functional effect of varying transmission with infectious cell density. This resulted in the following system of ordinary differential equations:(1)dPSdt=bPD(PS+ PA)−βPSPI−μPS−ρPEPS− εPS+cPA(2)dPAdt=ρPEPS+ εPS−cPA−μPA(3)dPEdt=βPSPI-σPE-μPE(4)dPIdt=σPE-αPI-μPI(5)dPDdt=μ(PS+PE+ PI+ PA)+αPI−bPD(PS+ PA)
+To best represent our empirical monolayer system, we expressed our state variables as proportions ($P_{S}$, $P_{A}$, $P_{E}$, $P_{I}$, and $P_{D}$), under assumptions of frequency-dependent transmission in a well-mixed population (Keeling and Rohani, 2008), though note that the inclusion of $P_{D}$ (representing the proportion of dead space in the modeled tissue) had the functional effect of varying transmission with infectious cell density. This resulted in the following system of ordinary differential equations:
 
-We defined 'induced immunity' as complete, modeling all cells as susceptible to viral invasion at disease-free equilibrium, with defenses induced subsequent to viral exposure through the term ρ. By contrast, we allowed the extent of constitutive immunity to vary across the parameter range of ε > 0, defining a 'constitutive' system as one containing any antiviral cells at disease-free equilibrium. In fitting this model to tissue culture data, we independently estimated both ρ and ε, as well as the cell-to-cell transmission rate, β, for each cell-virus combination. Since the extent to which constitutively-expressed IFN-α is constitutively translated into functional protein is not yet known for bat hosts (Zhou et al., 2016), this approach permitted our tissue culture data to drive modeling inference: even in PaKiT01 cell lines known to constitutively express IFN-α, the true constitutive extent of the system (i.e. the quantity of antiviral cells present at disease-free equilibrium) was allowed to vary through estimation of ε. For the purposes of model-fitting, we fixed the value of c, the return rate of antiviral cells to susceptible status, at 0. The small spatial scale and short time course (max 200 hours) of our experiments likely prohibited any return of antiviral cells to susceptible status in our empirical system; nonetheless, we retained the term c in analytical evaluations of our model because regression from antiviral to susceptible status is possible over long time periods in vitro and at the scale of a complete organism (Radke et al., 1974; Rasmussen and Farley, 1975; Samuel and Knutson, 1982).
+$$
+\frac{dP_{S}}{dt}=bP_{D}(P_{S}+ P_{A})−\betaP_{S}P_{I}−\muP_{S}−ρP_{E}P_{S}− \epsilonP_{S}+cP_{A}
+$$
 
-Before fitting to empirical time series, we undertook bifurcation analysis of our theoretical model and generated testable hypotheses on the basis of model outcomes. From our within-host model system (Equation 1-5), we derived the following expression for R0, the pathogen basic reproduction number (Supplementary file 2):(6)R0=βσ(b-μ)(c+μ)bσ+μα+μc+μ+ε
 
-Pathogens can invade a host tissue culture when R0>1. Rapid rates of constitutive antiviral acquisition (ε) will drive R0<1: tissue cultures with highly constitutive antiviral immunity will be therefore resistant to virus invasion from the outset. Since, by definition, induced immunity is stimulated following initial virus invasion, the rate of induced antiviral acquisition (ρ) is not incorporated into the equation for R0; while induced immune processes can control virus after initial invasion, they cannot prevent it from occurring to begin with. In cases of fully induced or absent immunity (ε=0), the R0 equation thus reduces to a form typical of the classic SEIR model:(7)R0=βσb-μbα+μσ+μ
+
+$$
+\frac{dP_{A}}{dt}=ρP_{E}P_{S}+ \epsilonP_{S}−cP_{A}−\muP_{A}
+$$
+
+
+
+$$
+\frac{dP_{E}}{dt}=\betaP_{S}P_{I}-\sigmaP_{E}-\muP_{E}
+$$
+
+
+
+$$
+\frac{dP_{I}}{dt}=\sigmaP_{E}-\alphaP_{I}-\muP_{I}
+$$
+
+
+
+$$
+\frac{dP_{D}}{dt}=\mu(P_{S}+P_{E}+ P_{I}+ P_{A})+\alphaP_{I}−bP_{D}(P_{S}+ P_{A})
+$$
+
+We defined 'induced immunity' as complete, modeling all cells as susceptible to viral invasion at disease-free equilibrium, with defenses induced subsequent to viral exposure through the term ρ. By contrast, we allowed the extent of constitutive immunity to vary across the parameter range of $\epsilon$ > 0, defining a 'constitutive' system as one containing any antiviral cells at disease-free equilibrium. In fitting this model to tissue culture data, we independently estimated both ρ and $\epsilon,$ as well as the cell-to-cell transmission rate, β, for each cell-virus combination. Since the extent to which constitutively-expressed IFN-α is constitutively translated into functional protein is not yet known for bat hosts (Zhou et al., 2016), this approach permitted our tissue culture data to drive modeling inference: even in PaKiT01 cell lines known to constitutively express IFN-α, the true constitutive extent of the system (i.e. the quantity of antiviral cells present at disease-free equilibrium) was allowed to vary through estimation of $\epsilon.$ For the purposes of model-fitting, we fixed the value of $c$, the return rate of antiviral cells to susceptible status, at 0. The small spatial scale and short time course (max 200 hours) of our experiments likely prohibited any return of antiviral cells to susceptible status in our empirical system; nonetheless, we retained the term $c$ in analytical evaluations of our model because regression from antiviral to susceptible status is possible over long time periods in vitro and at the scale of a complete organism (Radke et al., 1974; Rasmussen and Farley, 1975; Samuel and Knutson, 1982).
+
+Before fitting to empirical time series, we undertook bifurcation analysis of our theoretical model and generated testable hypotheses on the basis of model outcomes. From our within-host model system (Equation 1-5), we derived the following expression for $R_{0}$, the pathogen basic reproduction number (Supplementary file 2):
+
+$$
+R_{0}=\frac{\beta\sigma(b-\mu)(c+\mu)}{b\sigma+\mu\alpha+\muc+\mu+\epsilon}
+$$
+
+Pathogens can invade a host tissue culture when $R_{0}>1$. Rapid rates of constitutive antiviral acquisition ($\epsilon$) will drive $R_{0}<1$: tissue cultures with highly constitutive antiviral immunity will be therefore resistant to virus invasion from the outset. Since, by definition, induced immunity is stimulated following initial virus invasion, the rate of induced antiviral acquisition (ρ) is not incorporated into the equation for $R_{0}$; while induced immune processes can control virus after initial invasion, they cannot prevent it from occurring to begin with. In cases of fully induced or absent immunity ($\epsilon=0$), the $R_{0}$ equation thus reduces to a form typical of the classic SEIR model:
+
+$$
+R_{0}=\frac{\beta\sigmab-\mu}{b\alpha+\mu\sigma+\mu}
+$$
 
 At equilibrium, the theoretical, mean field model demonstrates one of three infection states: endemic equilibrium, stable limit cycles, or no infection (Figure 2). Respectively, these states approximate the persistent infection, virus-induced epidemic extinction, and immune-mediated epidemic extinction phenotypes previously witnessed in tissue culture experiments (Figure 1). Theoretically, endemic equilibrium is maintained when new infections are generated at the same rate at which infections are lost, while limit cycles represent parameter space under which infectious and susceptible populations are locked in predictable oscillations. Endemic equilibria resulting from cellular regeneration (i.e. births) have been described in vivo for HIV (Coffin, 1995) and in vitro for herpesvirus plaque assays (Howat et al., 2006), but, because they so closely approach zero, true limit cycles likely only occur theoretically, instead yielding stochastic extinctions in empirical time series.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig2-v3.jpg)
 
-**Figure 2.:** Panel (A) depicts dynamics under variably constitutive immunity, ranging from absent (left: ) to high (right: ε=0). In all panel (ε=.0025A) plots, the rate of induced immune antiviral acquisition (ρ) was fixed at 0.01. Panel (B) depicts dynamics under variably induced immunity, ranging from absent (left: ρ=0) to high (right: ρ=1). In all panel (B) plots, the rate of constitutive antiviral acquisition () was fixed at 0.0001 Branch point curves are represented as solid lines and Hopf curves as dashed lines. White space indicates endemic equilibrium (persistence), gray space indicates limit cycles, and black space indicates no infection (extinction). Other parameter values for equilibrium analysis were fixed at: ε)b = .025, μ = .001, σ = 1/6, c = 0. Special points from bifurcations analyses are listed in Supplementary file 3.
+**Figure 2.:** Panel (A) depicts dynamics under variably constitutive immunity, ranging from absent (left: $\epsilon=0$) to high (right: $\epsilon=.0025$). In all panel (A) plots, the rate of induced immune antiviral acquisition (ρ) was fixed at 0.01. Panel (B) depicts dynamics under variably induced immunity, ranging from absent (left: ρ=0) to high (right: ρ=1). In all panel (B) plots, the rate of constitutive antiviral acquisition ($\epsilon)$) was fixed at 0.0001 Branch point curves are represented as solid lines and Hopf curves as dashed lines. White space indicates endemic equilibrium (persistence), gray space indicates limit cycles, and black space indicates no infection (extinction). Other parameter values for equilibrium analysis were fixed at: b = .025, μ = .001, σ = 1/6, c = 0. Special points from bifurcations analyses are listed in Supplementary file 3.
 
-Bifurcation analysis of our mean field model revealed that regions of no infection (pathogen extinction) were bounded at lower threshold (Branch point) values for β, below which the pathogen was unable to invade. We found no upper threshold to invasion for β under any circumstances (i.e. β high enough to drive pathogen-induced extinction), but high β values resulted in Hopf bifurcations, which delineate regions of parameter space characterized by limit cycles. Since limit cycles so closely approach zero, high βs recovered in this range would likely produce virus-induced epidemic extinctions under experimental conditions. Under more robust representations of immunity, with higher values for either or both induced (ρ) and constitutive (ε) rates of antiviral acquisition, Hopf bifurcations occurred at increasingly higher values for β, meaning that persistent infections could establish at higher viral transmission rates (Figure 2). Consistent with our derivation for R0, we found that the Branch point threshold for viral invasion was independent of changes to the induced immune parameter (ρ) but saturated at high values of ε that characterize highly constitutive immunity (Figure 3).
+Bifurcation analysis of our mean field model revealed that regions of no infection (pathogen extinction) were bounded at lower threshold (Branch point) values for β, below which the pathogen was unable to invade. We found no upper threshold to invasion for β under any circumstances (i.e. β high enough to drive pathogen-induced extinction), but high β values resulted in Hopf bifurcations, which delineate regions of parameter space characterized by limit cycles. Since limit cycles so closely approach zero, high βs recovered in this range would likely produce virus-induced epidemic extinctions under experimental conditions. Under more robust representations of immunity, with higher values for either or both induced (ρ) and constitutive ($\epsilon$) rates of antiviral acquisition, Hopf bifurcations occurred at increasingly higher values for β, meaning that persistent infections could establish at higher viral transmission rates (Figure 2). Consistent with our derivation for $R_{0}$, we found that the Branch point threshold for viral invasion was independent of changes to the induced immune parameter (ρ) but saturated at high values of $\epsilon$ that characterize highly constitutive immunity (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig3-v3.jpg)
 
-**Figure 3.:** A) the induced immunity rate of antiviral acquisition (ρ) and (B) the constitutive immunity rate of antiviral acquisition ().εPanels show variation in the extent of immunity, from absent (left) to high (right). Branch point curves are represented as solid lines and Hopf curves as dashed lines. White space indicates endemic equilibrium (persistence), gray space indicates limit cycling, and black space indicates no infection (extinction). Other parameter values for equilibrium analysis were fixed at: b = .025, μ = .001, σ = 1/6, α = 1/6, c = 0. Special points from bifurcations analyses are listed in Supplementary file 3.
+**Figure 3.:** Two parameter bifurcations of the mean field model, showing variation in the transmission rate, β, against variation in: (A) the induced immunity rate of antiviral acquisition (ρ) and (B) the constitutive immunity rate of antiviral acquisition ($\epsilon$).Panels show variation in the extent of immunity, from absent (left) to high (right). Branch point curves are represented as solid lines and Hopf curves as dashed lines. White space indicates endemic equilibrium (persistence), gray space indicates limit cycling, and black space indicates no infection (extinction). Other parameter values for equilibrium analysis were fixed at: b = .025, μ = .001, σ = 1/6, α = 1/6, c = 0. Special points from bifurcations analyses are listed in Supplementary file 3.
 
-We next fit our theoretical model by least squares to each cell line-virus combination, under absent, induced, and constitutive assumptions of immunity. In general, best fit models recapitulated expected outcomes based on the immune phenotype of the cell line in question, as described in the general literature (Table 1; Supplementary file 4). The absent immune model offered the most accurate approximation of IFN-deficient Vero cell time series, the induced immune model best recovered the RoNi/7.1 cell trials, and, in most cases, the constitutive immune model most closely recaptured infection dynamics across constitutively IFN-α-expressing PaKiT01 cell lines (Figure 1, Figure 1—figure supplements 4–5, Supplementary file 4). Ironically, the induced immune model offered a slightly better fit than the constitutive to rVSV-MARV infections on the PaKiT01 cell line (the one cell line-virus combination for which we know a constitutively antiviral cell-receptor incompatibility to be at play). Because constitutive immune assumptions can prohibit pathogen invasion (R0<1), model fits to this time series under constitutive assumptions were handicapped by overestimations of ε, which prohibited pathogen invasion. Only by incorporating an exceedingly rapid rate of induced antiviral acquisition could the model guarantee that initial infection would be permitted and then rapidly controlled.
+We next fit our theoretical model by least squares to each cell line-virus combination, under absent, induced, and constitutive assumptions of immunity. In general, best fit models recapitulated expected outcomes based on the immune phenotype of the cell line in question, as described in the general literature (Table 1; Supplementary file 4). The absent immune model offered the most accurate approximation of IFN-deficient Vero cell time series, the induced immune model best recovered the RoNi/7.1 cell trials, and, in most cases, the constitutive immune model most closely recaptured infection dynamics across constitutively IFN-α-expressing PaKiT01 cell lines (Figure 1, Figure 1—figure supplements 4–5, Supplementary file 4). Ironically, the induced immune model offered a slightly better fit than the constitutive to rVSV-MARV infections on the PaKiT01 cell line (the one cell line-virus combination for which we know a constitutively antiviral cell-receptor incompatibility to be at play). Because constitutive immune assumptions can prohibit pathogen invasion ($R_{0}<1$), model fits to this time series under constitutive assumptions were handicapped by overestimations of $\epsilon$, which prohibited pathogen invasion. Only by incorporating an exceedingly rapid rate of induced antiviral acquisition could the model guarantee that initial infection would be permitted and then rapidly controlled.
 
-## Robust immunity is linked to rapid within-host virus transmission rates in fitted models
+**Table 1.**
+ Optimized parameters from best fit deterministic model and spatial approximation at MOI = 0.001
 
-In fitting our theoretical model to in vitro data, we estimated the within-host virus transmission rate (β) and the rate(s) of cellular acquisition to antiviral status (ρ or ρ + ε) (Table 1; Supplementary file 4). Under absent immune assumptions, ρ and ε were fixed at 0 while β was estimated; under induced immune assumptions, ε was fixed at 0 while ρ and β were estimated; and under constitutive immune assumptions, all three parameters (ρ, ε, and β) were simultaneously estimated for each cell-virus combination. Best fit parameter estimates for MOI=0.001 data are visualized in conjunction with β – ρ and β – ε bifurcations in Figure 4; all general patterns were recapitulated at lower values for β on MOI=0.0001 trials (Figure 4—figure supplement 1).
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>Virus</th>
+      <th>Immune assumption</th>
+      <th>AIC reduction from next-best model</th>
+      <th>Antiviral rate</th>
+      <th>ε [lci – uci] *</th>
+      <th>ρ [lci – uci] *</th>
+      <th>β [lci – uci] *</th>
+      <th>Mean field R0</th>
+      <th>Spatial β</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Vero</td>
+      <td>rVSV-G</td>
+      <td>Absent</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0 [0–0]</td>
+      <td>0 [0–0]</td>
+      <td>2.44 [1.52–3.36]</td>
+      <td>8.73</td>
+      <td>24.418</td>
+    </tr>
+    <tr>
+      <td>rVSV-EBOV</td>
+      <td>Absent</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0 [0–0]</td>
+      <td>0 [0–0]</td>
+      <td>1.5 [1.06–1.94]</td>
+      <td>5.42</td>
+      <td>14.996</td>
+    </tr>
+    <tr>
+      <td>rVSV-MARV</td>
+      <td>Absent</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0 [0–0]</td>
+      <td>0 [0–0]</td>
+      <td>0.975 [0.558–1.39]</td>
+      <td>3.45</td>
+      <td>9.752</td>
+    </tr>
+    <tr>
+      <td rowspan="3">RoNi/7.1</td>
+      <td>rVSV-G</td>
+      <td>Induced</td>
+      <td>2</td>
+      <td>7.03 × 10−5</td>
+      <td>0 [0–0]</td>
+      <td>0.089 [0–0.432]</td>
+      <td>2.47 [1.49–3.45]</td>
+      <td>10.91</td>
+      <td>24.705</td>
+    </tr>
+    <tr>
+      <td>rVSV-EBOV</td>
+      <td>Induced</td>
+      <td>2.01</td>
+      <td>2.87 × 10−5</td>
+      <td>0 [0–0]</td>
+      <td>0.0363 [0–0.343]</td>
+      <td>0.685 [0.451–0.919]</td>
+      <td>3.04</td>
+      <td>6.849</td>
+    </tr>
+    <tr>
+      <td>rVSV-MARV</td>
+      <td>Induced</td>
+      <td>2</td>
+      <td>1.40 × 10−5</td>
+      <td>0 [0–0]</td>
+      <td>0.0177 [0–0.257]</td>
+      <td>1.23 [0.917–1.55]</td>
+      <td>5.48</td>
+      <td>12.324</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PaKiT01</td>
+      <td>rVSV-G</td>
+      <td>Constitutive</td>
+      <td>29.9</td>
+      <td>.00209</td>
+      <td>0.00602 [0–0.019]</td>
+      <td>8.26 × 10−8 [0–4.75 × 10−7]</td>
+      <td>3.45 [1.07–5.84]</td>
+      <td>6.20</td>
+      <td>34.516</td>
+    </tr>
+    <tr>
+      <td>rVSV-EBOV</td>
+      <td>Constitutive</td>
+      <td>27.9</td>
+      <td>.00499</td>
+      <td>0.0478 [0–0.0958]</td>
+      <td>4.46 × 10−8 [0–4.37 × 10−7]</td>
+      <td>34.5 [28.7–40.2]</td>
+      <td>18.82</td>
+      <td>344.821</td>
+    </tr>
+    <tr>
+      <td>rVSV-MARV</td>
+      <td>Induced</td>
+      <td>2</td>
+      <td>.00687</td>
+      <td>0 [0–0]</td>
+      <td>13.1 [0–37.9]</td>
+      <td>3.25 [0–41.3]</td>
+      <td>8.83</td>
+      <td>32.452</td>
+    </tr>
+  </tbody>
+</table>
+
+_Improvement in AIC from next best model for same cell line-virus-MOI combination. All δ-AIC are reported in Supplementary file 4.*lci = lower and uci = upper 95% confidence interval. No confidence interval is shown for spatial β which was fixed at 10 times the estimated mean for the mean field model fits when paired with equivalent values of ε and ρ.All other parameters were fixed at: b = 0.025 (mean field), 0.15 (spatial); α = 1/6; c = 0; μ = 1/121 (Vero), 1/191 (RoNi/7.1), and 1/84 (PaKiT01)._
+
+### Robust immunity is linked to rapid within-host virus transmission rates in fitted models
+
+In fitting our theoretical model to in vitro data, we estimated the within-host virus transmission rate (β) and the rate(s) of cellular acquisition to antiviral status (ρ or ρ + $\epsilon$) (Table 1; Supplementary file 4). Under absent immune assumptions, ρ and $\epsilon$ were fixed at 0 while β was estimated; under induced immune assumptions, $\epsilon$ was fixed at 0 while ρ and β were estimated; and under constitutive immune assumptions, all three parameters (ρ, $\epsilon$, and β) were simultaneously estimated for each cell-virus combination. Best fit parameter estimates for MOI=0.001 data are visualized in conjunction with β – ρ and β – $\epsilon$ bifurcations in Figure 4; all general patterns were recapitulated at lower values for β on MOI=0.0001 trials (Figure 4—figure supplement 1).
 
 As anticipated, the immune absent model (a simple target cell model) offered the best fit to IFN-deficient Vero cell infections (Figure 4; Table 1; Supplementary file 4). Among Vero cell trials, infections with rVSV-G produced the highest β estimates, followed by infections with rVSV-EBOV and rVSV-MARV. Best fit parameter estimates on Vero cell lines localized in the region of parameter space corresponding to theoretical limit cycles, consistent with observed virus-induced epidemic extinctions in stochastic tissue cultures.
 
-In contrast to Vero cells, the induced immunity model offered the best fit to all RoNi/7.1 data, consistent with reported patterns in the literature and our own validation by qPCR (Table 1; Figure 1—figure supplement 6; Arnold et al., 2018; Kuzmin et al., 2017; Biesold et al., 2011; Pavlovich et al., 2018). As in Vero cell trials, we estimated highest β values for rVSV-G infections on RoNi/7.1 cell lines but here recovered higher β estimates for rVSV-MARV than for rVSV-EBOV. This reversal was balanced by a higher estimated rate of acquisition to antiviral status (ρ) for rVSV-EBOV versus rVSV-MARV. In general, we observed that more rapid rates of antiviral acquisition (either induced, ρ, constitutive, ε, or both) correlated with higher transmission rates (β). When offset by ρ, β values estimated for RoNi/7.1 infections maintained the same amplitude as those estimated for immune-absent Vero cell lines but caused gentler epidemics and reduced cellular mortality (Figure 1). RoNi/7.1 parameter estimates localized in the region corresponding to endemic equilibrium for the deterministic, theoretical model (Figure 4), yielding less acute epidemics which nonetheless went extinct in stochastic experiments.
+![Figure 4.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig4-v3.jpg)
 
-Finally, rVSV-G and rVSV-EBOV trials on PaKiT01 cells were best fit by models assuming constitutive immunity, while rVSV-MARV infections on PaKiT01 were matched equivalently by models assuming either induced or constitutive immunity—with induced models favored over constitutive in AIC comparisons because one fewer parameter was estimated (Figure 1—figure supplements 4–5; Supplementary file 4). For all virus infections, PaKiT01 cell lines yielded β estimates a full order of magnitude higher than Vero or RoNi/7.1 cells, with each β balanced by an immune response (either ρ, or ρ combined with ε) also an order of magnitude higher than that recovered for the other cell lines (Figure 4; Table 1). As in RoNi/7.1 cells, PaKiT01 parameter fits localized in the region corresponding to endemic equilibrium for the deterministic theoretical model. Because constitutive immune processes can actually prohibit initial pathogen invasion, constitutive immune fits to rVSV-MARV infections on PaKiT01 cell lines consistently localized at or below the Branch point threshold for virus invasion (R0=1). During model fitting for optimization of ε, any parameter tests of ε values producing R0<1 resulted in no infection and, consequently, produced an exceedingly poor fit to infectious time series data. In all model fits assuming constitutive immunity, across all cell lines, parameter estimates for ρ and ε traded off, with one parameter optimized at values approximating zero, such that the immune response was modeled as almost entirely induced or entirely constitutive (Table 1; Supplementary file 4). For RoNi/7.1 cells, even when constitutive immunity was allowed, the immune response was estimated as almost entirely induced, while for rVSV-G and rVSV-EBOV fits on PaKiT01 cells, the immune response optimized as almost entirely constitutive. For rVSV-MARV on PaKiT01 cells, however, estimation of ρ was high under all assumptions, such that any additional antiviral contributions from ε prohibited virus from invading at all. The induced immune model thus produced a more parsimonious recapitulation of these data because virus invasion was always permitted, then rapidly controlled.
+**Figure 4.:** Best fit parameter estimates for β and ρ or $\epsilon$ from mean-field model fits to MOI=0.001 time series data, atop (A,B) β – ρ and (C) β – $\epsilon$ bifurcation.Fits and bifurcations are grouped by immune phenotype: (A) absent; (B) induced; (C) constitutive immunity, with cell lines differentiated by shape (Vero=circles; RoNi/7.1 = triangles; PaKiT01=squares) and viral infections by color (rVSV-G = green, rVSV-EBOV = magenta, rVSV-MARV = blue). Note that y-axis values are ten-fold higher in panel (C). Branch point curves (solid lines) and Hopf curves (dashed lines) are reproduced from Figure 3. White space indicates endemic equilibrium (pathogen persistence), gray space indicates limit cycling (virus-induced epidemic extinction), and black space indicates no infection (immune-mediated pathogen extinction). In panel (A) and (B), $\epsilon$ is fixed at 0; in panel (C), ρ is fixed at 5x10−8 for bifurcation curves and estimated at 4x10−8 and 8x10−8 for rVSV-EBOV and rVSV-G parameter points, respectively. Other parameter values were fixed at: b = .025, μ = 0.001, σ = 1/6, α = 1/6, and c = 0 across all panels. Raw fitted values and corresponding 95% confidence intervals for β, ρ, and $\epsilon$, background parameter values, and AIC recovered from model fit, are reported in Supplementary file 4. Parameter fits at MOI=0.0001 are visualized in Figure 4—figure supplement 1.
 
-## Antiviral cells safeguard live cells against rapid cell mortality to elongate epidemic duration in vitro
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig4-figsupp1-v3.jpg)
 
-In order to compare the relative contributions of each cell line’s disparate immune processes to epidemic dynamics, we next used our mean field parameter estimates to calculate the initial ‘antiviral rate’—the initial accumulation rate of antiviral cells upon virus invasion for each cell-virus-MOI combination—based on the following equation:(8)AntiviralRate=ρPEPs−ϵPswhere PE was calculated from the initial infectious dose (MOI) of each infection experiment and PS was estimated at disease-free equilibrium:(9)PE= 1-e-MOI(10)PS= (b-μ)(c+μ)b(c+μ+ε)
+**Figure 4—figure supplement 1.:** Best fit parameter estimates for β and ρ or $ϵ$ from mean-field model fits to MOI=0.0001 time series data, atop (A,B) β – ρ and (C) β – $ϵ$ bifurcation.Fits and bifurcations are grouped by immune phenotype: (A) absent; (B) induced; (C) constitutive immunity, with cell lines differentiated by shape (Vero=circles; RoNi/7.1 = triangles; PaKiT01=squares) and viral infections by color (rVSV-G = green, rVSV-EBOV = magenta, rVSV-MARV = blue). Note that y-axis values are ten-fold higher in panel (C). Branch point curves (solid lines) and Hopf curves (dashed lines) are reproduced from Figure 3 (main text). White space indicates endemic equilibrium (pathogen persistence), gray space indicates limit cycling (virus-induced epidemic extinction), and black space indicates no infection (immune-mediated pathogen extinction). In panel (A) and (B), $ϵ$ is fixed at 0; in panel (C), $ϵ$ is fixed at 5x10−8 for bifurcation curves and estimated at 4x10−8 and 8x10−8 for rVSV-EBOV and rVSV-G parameter points, respectively. To construct bifurcation curves, other parameter values were fixed at: b = 0.025, µ = 0.001, $\alpha=\frac{1}{6}$, and c = 0 across all panels. Raw fitted values and corresponding 95% confidence intervals for β, ρ, and $ϵ$, background parameter values, and AIC recovered from model fit, are reported in Supplementary file 4. Parameter fits at MOI=0.0001 are visualized in Figure 4 of the main text.
 
-Because ρ and ε both contribute to this initial antiviral rate, induced and constitutive immune assumptions are capable of yielding equally rapid rates, depending on parameter fits. Indeed, under fully induced immune assumptions, the induced antiviral acquisition rate (ρ) estimated for rVSV-MARV infection on PaKiT01 cells was so high that the initial antiviral rate exceeded even that estimated under constitutive assumptions for this cell-virus combination (Supplementary file 4). In reality, we know that NPC1 receptor incompatibilities make PaKiT01 cell lines constitutively refractory to rVSV-MARV infection (Ng and Chandrab, 2018, Unpublished results) and that PaKiT01 cells also constitutively express the antiviral cytokine, IFN-α. Model fitting results suggest that this constitutive expression of IFN-α may act more as a rapidly inducible immune response following virus invasion than as a constitutive secretion of functional IFN-α protein. Nonetheless, as hypothesized, PaKiT01 cell lines were by far the most antiviral of any in our study—with initial antiviral rates estimated several orders of magnitude higher than any others in our study, under either induced or constitutive assumptions (Table 1; Supplementary file 4). RoNi/7.1 cells displayed the second-most-pronounced signature of immunity, followed by Vero cells, for which the initial antiviral rate was essentially zero even under forced assumptions of induced or constitutive immunity (Table 1; Supplementary file 4).
+In contrast to Vero cells, the induced immunity model offered the best fit to all RoNi/7.1 data, consistent with reported patterns in the literature and our own validation by qPCR (Table 1; Figure 1—figure supplement 6; Arnold et al., 2018; Kuzmin et al., 2017; Biesold et al., 2011; Pavlovich et al., 2018). As in Vero cell trials, we estimated highest β values for rVSV-G infections on RoNi/7.1 cell lines but here recovered higher β estimates for rVSV-MARV than for rVSV-EBOV. This reversal was balanced by a higher estimated rate of acquisition to antiviral status (ρ) for rVSV-EBOV versus rVSV-MARV. In general, we observed that more rapid rates of antiviral acquisition (either induced, ρ, constitutive, $\epsilon$, or both) correlated with higher transmission rates (β). When offset by ρ, β values estimated for RoNi/7.1 infections maintained the same amplitude as those estimated for immune-absent Vero cell lines but caused gentler epidemics and reduced cellular mortality (Figure 1). RoNi/7.1 parameter estimates localized in the region corresponding to endemic equilibrium for the deterministic, theoretical model (Figure 4), yielding less acute epidemics which nonetheless went extinct in stochastic experiments.
 
-Using fitted parameters for β and ε, we additionally calculated R0, the basic reproduction number for the virus, for each cell line-virus-MOI combination (Table 1; Supplementary file 4). We found that R0 was essentially unchanged across differing immune assumptions for RoNi/7.1 and Vero cells, for which the initial antiviral rate was low. In the case of PaKiT01 cells, a high initial antiviral rate under either induced or constitutive immunity resulted in a correspondingly high estimation of β (and, consequently, R0) which still produced the same epidemic curve that resulted from the much lower estimates for β and R0 paired with absent immunity. These findings suggest that antiviral immune responses protect host tissues against virus-induced cell mortality and may facilitate the establishment of more rapid within-host transmission rates.
+Finally, rVSV-G and rVSV-EBOV trials on PaKiT01 cells were best fit by models assuming constitutive immunity, while rVSV-MARV infections on PaKiT01 were matched equivalently by models assuming either induced or constitutive immunity—with induced models favored over constitutive in AIC comparisons because one fewer parameter was estimated (Figure 1—figure supplements 4–5; Supplementary file 4). For all virus infections, PaKiT01 cell lines yielded β estimates a full order of magnitude higher than Vero or RoNi/7.1 cells, with each β balanced by an immune response (either ρ, or ρ combined with $\epsilon$) also an order of magnitude higher than that recovered for the other cell lines (Figure 4; Table 1). As in RoNi/7.1 cells, PaKiT01 parameter fits localized in the region corresponding to endemic equilibrium for the deterministic theoretical model. Because constitutive immune processes can actually prohibit initial pathogen invasion, constitutive immune fits to rVSV-MARV infections on PaKiT01 cell lines consistently localized at or below the Branch point threshold for virus invasion ($R_{0}=1$). During model fitting for optimization of $\epsilon$, any parameter tests of $\epsilon$ values producing $R_{0}<1$ resulted in no infection and, consequently, produced an exceedingly poor fit to infectious time series data. In all model fits assuming constitutive immunity, across all cell lines, parameter estimates for ρ and $\epsilon$ traded off, with one parameter optimized at values approximating zero, such that the immune response was modeled as almost entirely induced or entirely constitutive (Table 1; Supplementary file 4). For RoNi/7.1 cells, even when constitutive immunity was allowed, the immune response was estimated as almost entirely induced, while for rVSV-G and rVSV-EBOV fits on PaKiT01 cells, the immune response optimized as almost entirely constitutive. For rVSV-MARV on PaKiT01 cells, however, estimation of ρ was high under all assumptions, such that any additional antiviral contributions from $\epsilon$ prohibited virus from invading at all. The induced immune model thus produced a more parsimonious recapitulation of these data because virus invasion was always permitted, then rapidly controlled.
 
-Total monolayer destruction occurred in all cell-virus combinations excepting rVSV-EBOV infections on RoNi/7.1 cells and rVSV-EBOV and rVSV-MARV infections on PaKiT01 cells. Monolayer destruction corresponded to susceptible cell depletion and epidemic turnover where R-effective (the product of R0 and the proportion susceptible) was reduced below one (Figure 5). For rVSV-EBOV infections on RoNi/7.1, induced antiviral cells safeguarded remnant live cells, which birthed new susceptible cells late in the time series. In rVSV-EBOV and rVSV-MARV infections on PaKiT01 cells, this antiviral protection halted the epidemic (Figure 5; R-effective <1) before susceptibles fully declined. In the case of rVSV-EBOV on PaKiT01, the birth of new susceptibles from remnant live cells protected by antiviral status maintained late-stage transmission to facilitate long-term epidemic persistence. Importantly, under fixed parameter values for the infection incubation rate (σ) and infection-induced mortality rate (α), models were unable to reproduce the longer-term infectious time series captured in data from rVSV-EBOV infections on PaKiT01 cell lines without incorporation of cell births, an assumption adopted in previous modeling representations of IFN-mediated viral dynamics in tissue culture (Howat et al., 2006). In our experiments, we observed that cellular reproduction took place as plaque assays achieved confluency.
+### Antiviral cells safeguard live cells against rapid cell mortality to elongate epidemic duration in vitro
 
-Finally, because the protective effect of antiviral cells is more clearly observable spatially, we confirmed our results by simulating fitted time series in a spatially-explicit, stochastic reconstruction of our mean field model. In spatial simulations, rates of antiviral acquisition were fixed at fitted values for ρ and ε derived from mean field estimates, while transmission rates (β) were fixed at values ten times greater than those estimated under mean field conditions, accounting for the intensification of parameter thresholds permitting pathogen invasion in local spatial interactions (see Materials and methods; Videos 1–3; Figure 5—figure supplement 3; Supplementary file 5; Webb et al., 2007). In immune capable time series, spatial antiviral cells acted as ‘refugia’ which protected live cells from infection as each initial epidemic wave ‘washed’ across a cell monolayer. Eventual birth of new susceptibles from these living refugia allowed for sustained epidemic transmission in cases where some infectious cells persisted at later timepoints in simulation (Videos 1–3; Figure 5—figure supplement 3).
+In order to compare the relative contributions of each cell line’s disparate immune processes to epidemic dynamics, we next used our mean field parameter estimates to calculate the initial ‘antiviral rate’—the initial accumulation rate of antiviral cells upon virus invasion for each cell-virus-MOI combination—based on the following equation:
+
+$$
+AntiviralRate=ρP_{E}P_{s}−ϵP_{s}
+$$
+
+where PE was calculated from the initial infectious dose (MOI) of each infection experiment and PS was estimated at disease-free equilibrium:
+
+$$
+P_{E}=1-e^{-MOI}
+$$
+
+
+
+$$
+P_{S}=\frac{(b-\mu)(c+\mu)}{b(c+\mu+\epsilon)}
+$$
+
+Because $ρ$ and $\epsilon$ both contribute to this initial antiviral rate, induced and constitutive immune assumptions are capable of yielding equally rapid rates, depending on parameter fits. Indeed, under fully induced immune assumptions, the induced antiviral acquisition rate (ρ) estimated for rVSV-MARV infection on PaKiT01 cells was so high that the initial antiviral rate exceeded even that estimated under constitutive assumptions for this cell-virus combination (Supplementary file 4). In reality, we know that NPC1 receptor incompatibilities make PaKiT01 cell lines constitutively refractory to rVSV-MARV infection (Ng and Chandrab, 2018, Unpublished results) and that PaKiT01 cells also constitutively express the antiviral cytokine, IFN-α. Model fitting results suggest that this constitutive expression of IFN-α may act more as a rapidly inducible immune response following virus invasion than as a constitutive secretion of functional IFN-α protein. Nonetheless, as hypothesized, PaKiT01 cell lines were by far the most antiviral of any in our study—with initial antiviral rates estimated several orders of magnitude higher than any others in our study, under either induced or constitutive assumptions (Table 1; Supplementary file 4). RoNi/7.1 cells displayed the second-most-pronounced signature of immunity, followed by Vero cells, for which the initial antiviral rate was essentially zero even under forced assumptions of induced or constitutive immunity (Table 1; Supplementary file 4).
+
+Using fitted parameters for $\beta$ and $\epsilon$, we additionally calculated R0, the basic reproduction number for the virus, for each cell line-virus-MOI combination (Table 1; Supplementary file 4). We found that R0 was essentially unchanged across differing immune assumptions for RoNi/7.1 and Vero cells, for which the initial antiviral rate was low. In the case of PaKiT01 cells, a high initial antiviral rate under either induced or constitutive immunity resulted in a correspondingly high estimation of $\beta$ (and, consequently, $R_{0}$) which still produced the same epidemic curve that resulted from the much lower estimates for $\beta$ and R0 paired with absent immunity. These findings suggest that antiviral immune responses protect host tissues against virus-induced cell mortality and may facilitate the establishment of more rapid within-host transmission rates.
+
+Total monolayer destruction occurred in all cell-virus combinations excepting rVSV-EBOV infections on RoNi/7.1 cells and rVSV-EBOV and rVSV-MARV infections on PaKiT01 cells. Monolayer destruction corresponded to susceptible cell depletion and epidemic turnover where R-effective (the product of $R_{0}$ and the proportion susceptible) was reduced below one (Figure 5). For rVSV-EBOV infections on RoNi/7.1, induced antiviral cells safeguarded remnant live cells, which birthed new susceptible cells late in the time series. In rVSV-EBOV and rVSV-MARV infections on PaKiT01 cells, this antiviral protection halted the epidemic (Figure 5; R-effective <1) before susceptibles fully declined. In the case of rVSV-EBOV on PaKiT01, the birth of new susceptibles from remnant live cells protected by antiviral status maintained late-stage transmission to facilitate long-term epidemic persistence. Importantly, under fixed parameter values for the infection incubation rate (σ) and infection-induced mortality rate (α), models were unable to reproduce the longer-term infectious time series captured in data from rVSV-EBOV infections on PaKiT01 cell lines without incorporation of cell births, an assumption adopted in previous modeling representations of IFN-mediated viral dynamics in tissue culture (Howat et al., 2006). In our experiments, we observed that cellular reproduction took place as plaque assays achieved confluency.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig5-v3.jpg)
+
+**Figure 5.:** Results are shown for the best fit immune absent model on Vero cells, induced immunity model on RoNi/7.1 cells and constitutive (rVSV-G and rVSV-EBOV) and induced (rVSV-MARV) immune models on PaKiT01 cells. Combined live, uninfectious cell populations (S + A + E) are shown in tan shading, with raw live, uninfectious cell data from Hoechst stains visualized as open circles. The right-hand y-axis corresponds to R-effective (pink solid line) across each time series; R-effective = 1 is a pink dashed, horizontal line. Panel background corresponds to empirical outcome of the average stochastic cell culture trial (persistent infection = white; virus-induced epidemic extinction = gray; immune-mediated epidemic extinction = black). Parameter values are listed in Supplementary file 4 and results for absent/induced/constitutive fitted models across all cell lines in Figure 5—figure supplement 1 (MOI = 0.001) and Figure 5—figure supplement 2 (MOI = 0.0001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Figure shows fitted time series of susceptible (green shading) and antiviral (blue shading) cell proportions from the mean field model for rVSV-G, rVSV-EBOV, and rVSV-MARV infections (columns) on Vero, RoNi/7.1, and PaKiT01 cell lines (rows) at MOI = 0.001. Combined live, uninfectious cell populations (S + A + E, summed across the time series) is shown in tan shading, with raw live, uninfectious cell data from Hoechst stains of terminal time series visualized as open circles. The right-hand y-axis corresponds to R-effective (pink solid line) across each time series; R-effective = 1 is given as a pink dashed, horizontal line. Panel background corresponds to empirical outcome of the average stochastic cell culture trial (persistent infection = white; virus-induced epidemic extinction = gray; immune-mediated epidemic extinction = black).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig5-figsupp2-v3.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/48401/elife-48401-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Values for ρ and $\epsilon$ were fixed at equivalent values to those optimized in mean field trials and β fixed at ten times the value estimated under mean field conditions. Figure shows mean output from 10 runs of the spatial stochastic model, on a 10,000 cell lattice for MOI = 0.001 infections of rVSV-G, rVSV-EBOV, and rVSV-MARV (columns) on Vero, RoNi/7.1, and PaKiT01 (rows) cell lines. Mean state variable outputs are plotted as colored lines with 95% confidence intervals by standard error shown in corresponding shading (infectious = red; susceptible = green; antiviral = blue). Raw infectious cell data across all time trials are plotted as open red circles, with the Hoechst-stained live cell population as open black circles. Modeled live, uninfectious cell populations (S+A+E) are shown in tan shading in the background. Panel background shading corresponds to the mean spatial model outcome for each cell line – virus combination (persistent infection = white; virus-induced epidemic extinction = gray; immune-mediated epidemic extinction = black). All parameter values are reported in Supplementary file 4.
+
+Finally, because the protective effect of antiviral cells is more clearly observable spatially, we confirmed our results by simulating fitted time series in a spatially-explicit, stochastic reconstruction of our mean field model. In spatial simulations, rates of antiviral acquisition were fixed at fitted values for ρ and $\epsilon$ derived from mean field estimates, while transmission rates (β) were fixed at values ten times greater than those estimated under mean field conditions, accounting for the intensification of parameter thresholds permitting pathogen invasion in local spatial interactions (see Materials and methods; Videos 1–3; Figure 5—figure supplement 3; Supplementary file 5; Webb et al., 2007). In immune capable time series, spatial antiviral cells acted as ‘refugia’ which protected live cells from infection as each initial epidemic wave ‘washed’ across a cell monolayer. Eventual birth of new susceptibles from these living refugia allowed for sustained epidemic transmission in cases where some infectious cells persisted at later timepoints in simulation (Videos 1–3; Figure 5—figure supplement 3).
+
+![Video 1.](https://cdn.elifesciences.org/articles/48401/elife-48401-video1.mp4.jpg)
+
+**Video 1.:** Parameter values are listed in Supplementary file 4.
+
+![Video 2.](https://cdn.elifesciences.org/articles/48401/elife-48401-video2.mp4.jpg)
+
+**Video 2.:** Parameter values are listed in Supplementary file 4.
+
+![Video 3.](https://cdn.elifesciences.org/articles/48401/elife-48401-video3.mp4.jpg)
+
+**Video 3.:** Parameter values are listed in Supplementary file 4.
 
 ## Discussion
 
 Bats are reservoirs for several important emerging zoonoses but appear not to experience disease from otherwise virulent viral pathogens. Though the molecular biological literature has made great progress in elucidating the mechanisms by which bats tolerate viral infections (Zhou et al., 2016; Ahn et al., 2019; Xie et al., 2018; Pavlovich et al., 2018; Zhang et al., 2013), the impact of unique bat immunity on virus dynamics within-host has not been well-elucidated. We used an innovative combination of in vitro experimentation and within-host modeling to explore the impact of unique bat immunity on virus dynamics. Critically, we found that bat cell lines demonstrated a signature of enhanced interferon-mediated immune response, of either constitutive or induced form, which allowed for establishment of rapid within-host, cell-to-cell virus transmission rates (β). These results were supported by both data-independent bifurcation analysis of our mean field theoretical model, as well as fitting of this model to viral infection time series established in bat cell culture. Additionally, we demonstrated that the antiviral state induced by the interferon pathway protects live cells from mortality in tissue culture, resulting in in vitro epidemics of extended duration that enhance the probability of establishing a long-term persistent infection. Our findings suggest that viruses evolved in bat reservoirs possessing enhanced IFN capabilities could achieve more rapid within-host transmission rates without causing pathology to their hosts. Such rapidly-reproducing viruses would likely generate extreme virulence upon spillover to hosts lacking similar immune capacities to bats.
 
-To achieve these results, we first developed a novel, within-host, theoretical model elucidating the effects of unique bat immunity, then undertook bifurcation analysis of the model’s equilibrium properties under immune absent, induced, and constitutive assumptions. We considered a cell line to be constitutively immune if possessing any number of antiviral cells at disease-free equilibrium but allowed the extent of constitutive immunity to vary across the parameter range for ε, the constitutive rate of antiviral acquisition. In deriving the equation for ε, the basic reproduction number, which defines threshold conditions for virus invasion of a tissue (R0>1), we demonstrated how the invasion threshold is elevated at high values of constitutive antiviral acquisition, ε. Constitutive immune processes can thus prohibit pathogen invasion, while induced responses, by definition, can only control infections post-hoc. Once thresholds for pathogen invasion have been met, assumptions of constitutive immunity will limit the cellular mortality (virulence) incurred at high transmission rates. Regardless of mechanism (induced or constitutive), interferon-stimulated antiviral cells appear to play a key role in maintaining longer term or persistent infections by safeguarding susceptible cells from rapid infection and concomitant cell death.
+To achieve these results, we first developed a novel, within-host, theoretical model elucidating the effects of unique bat immunity, then undertook bifurcation analysis of the model’s equilibrium properties under immune absent, induced, and constitutive assumptions. We considered a cell line to be constitutively immune if possessing any number of antiviral cells at disease-free equilibrium but allowed the extent of constitutive immunity to vary across the parameter range for $\epsilon$, the constitutive rate of antiviral acquisition. In deriving the equation for $\epsilon$, the basic reproduction number, which defines threshold conditions for virus invasion of a tissue ($R_{0}>1$), we demonstrated how the invasion threshold is elevated at high values of constitutive antiviral acquisition, $\epsilon$. Constitutive immune processes can thus prohibit pathogen invasion, while induced responses, by definition, can only control infections post-hoc. Once thresholds for pathogen invasion have been met, assumptions of constitutive immunity will limit the cellular mortality (virulence) incurred at high transmission rates. Regardless of mechanism (induced or constitutive), interferon-stimulated antiviral cells appear to play a key role in maintaining longer term or persistent infections by safeguarding susceptible cells from rapid infection and concomitant cell death.
 
 Fitting of our model to in vitro data supported expected immune phenotypes for different bat cell lines as described in the literature. Simple target cell models that ignore the effects of immunity best recapitulated infectious time series derived from IFN-deficient Vero cells, while models assuming induced immune processes most accurately reproduced trials derived from RoNi/7.1 (Rousettus aegyptiacus) cells, which possess a standard virus-induced IFN-response. In most cases, models assuming constitutive immune processes best recreated virus epidemics produced on PaKiT01 (Pteropus alecto) cells, which are known to constitutively express the antiviral cytokine, IFN-α (Zhou et al., 2016). Model support for induced immune assumptions in fits to rVSV-MARV infections on PaKiT01 cells suggests that the constitutive IFN-α expression characteristic of P. alecto cells may represent more of a constitutive immune priming process than a perpetual, functional, antiviral defense. Results from mean field model fitting were additionally confirmed in spatially explicit stochastic simulations of each time series.
 
@@ -113,9 +356,126 @@ The continued recurrence of Ebola epidemics across central Africa highlights the
 
 ## Materials and methods
 
-## Cell culture experiments
+**Key resources table**
 
-## Cells
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Vero)</td>
+      <td>Kidney (normal, epithelial, adult)</td>
+      <td>ATCC</td>
+      <td>CCL-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Rousettus aegyptiacus)</td>
+      <td>Kidney (normal, epithelial, adult)</td>
+      <td>(Biesold et al., 2011; Kühl et al., 2011)</td>
+      <td>RoNi/7.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Pteropus alecto)</td>
+      <td>Kidney (normal, epithelial, adult)</td>
+      <td>(Crameri et al., 2009)</td>
+      <td>PaKiT01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Virus strain</td>
+      <td>Replication competent, recombinant vesicular stomatitis Indiana virus expressing eGFP</td>
+      <td>(Miller et al., 2012; Wong et al., 2010)</td>
+      <td>rVSV-G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Virus strain</td>
+      <td>Replication competent, recombinant vesicular stomatitis Indiana virus expressing eGFP and EBOV GP in place of VSV G</td>
+      <td>(Miller et al., 2012; Wong et al., 2010)</td>
+      <td>rVSV-EBOV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Virus strain</td>
+      <td>Replication competent, recombinant vesicular stomatitis Indiana virus expressing eGFP and MARV GP in place of VSV G</td>
+      <td>(Miller et al., 2012; Wong et al., 2010)</td>
+      <td>rVSV-MARV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>Hoechst 33342 Fluorescent Stain</td>
+      <td>ThermoFisher</td>
+      <td>cat #: 62249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>L-Glutamine Solution</td>
+      <td>ThermoFisher</td>
+      <td>cat #: 25030081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>Gibco HEPES</td>
+      <td>ThermoFisher</td>
+      <td>cat #: 15630080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>BioRad</td>
+      <td>cat #: 1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick RNA Mini Prep Kit</td>
+      <td>Zymo</td>
+      <td>cat #: R1054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrogen Superscript III cDNA Synthesis Kit</td>
+      <td>ThermoFisher</td>
+      <td>cat #: 18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MatCont (version 2.2)</td>
+      <td>(Dhooge et al., 2008)</td>
+      <td>MatCont</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>R version 3.6.0</td>
+      <td>(R Development Core Team, 2019)</td>
+      <td>R</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Note that primers for R. aegyptiacus and P. alecto β-Actin, IFN-α, and IFN-β genes are listed in the Supplementary file 6._
+
+### Cell culture experiments
+
+#### Cells
 
 All experiments were carried out on three immortalized mammalian kidney cell lines: Vero (African green monkey), RoNi/7.1 (Rousettus aegyptiacus) (Kühl et al., 2011; Biesold et al., 2011) and PaKiT01 (Pteropus alecto) (Crameri et al., 2009). The species identifications of all bat cell lines was confirmed morphologically and genetically in the publications in which they were originally described (Kühl et al., 2011; Biesold et al., 2011; Crameri et al., 2009). ﻿Vero cells were obtained from ATCC.
 
@@ -123,13 +483,13 @@ Monolayers of each cell line were grown to 90% confluency (~9×105 cells) in 6-w
 
 Previous work has demonstrated that all cell lines used are capable of mounting a type I IFN response upon viral challenge, with the exception of Vero cells, which possess an IFN-β deficiency (Desmyter et al., 1968; Rhim et al., 1969; Emeny and Morgan, 1979). RoNi/7.1 cells have been shown to mount idiosyncratic induced IFN defenses upon viral infection (Pavlovich et al., 2018; Kuzmin et al., 2017; Arnold et al., 2018; Kühl et al., 2011; Biesold et al., 2011), while PaKiT01 cells are known to constitutively express the antiviral cytokine, IFN-α (Zhou et al., 2016). This work is the first documentation of IFN signaling induced upon challenge with the particular recombinant VSVs outlined below. We verified known antiviral immune phenotypes via qPCR. Results were consistent with the literature, indicating a less pronounced role for interferon defense against viral infection in RoNi/7.1 versus PaKiT01 cells.
 
-## Viruses
+#### Viruses
 
 Replication-capable recombinant vesicular stomatitis Indiana viruses, expressing filovirus glycoproteins in place of wild type G (rVSV-G, rVSV-EBOV, and rVSV-MARV) have been previously described (Wong et al., 2010; Miller et al., 2012). Viruses were selected to represent a broad range of anticipated antiviral responses from host cells, based on a range of past evolutionary histories between the virus glycoprotein mediating cell entry and the host cell’s entry receptor. These interactions ranged from the total absence of evolutionary history in the case of rVSV-G infections on all cell lines to a known receptor-level cell entry incompatibility in the case of rVSV-MARV infections on PaKiT01 cell lines.
 
 To measure infectivities of rVSVs on each of the cell lines outlined above, so as to calculate the correct viral dose for each MOI, NH4Cl (20 mM) was added to infected cell cultures at 1–2 hr post-infection to block viral spread, and individual eGFP-positive cells were manually counted at 12–14 hr post-infection.
 
-## Innate immune phenotypes via qPCR of IFN genes
+#### Innate immune phenotypes via qPCR of IFN genes
 
 Previously published work indicates that immortalized kidney cell lines of Rousettus aegyptiacus (RoNi/7.1) and Pteropus alecto (PaKiT01) exhibit different innate antiviral immune phenotypes through, respectively, induced (Biesold et al., 2011; Pavlovich et al., 2018; Kühl et al., 2011; Arnold et al., 2018) and constitutive (Zhou et al., 2016) expression of type I interferon genes. We verified these published phenotypes on our own cell lines infected with rVSV-G, rVSV-EBOV, and rVSV-MARV via qPCR of IFN-α and IFN-β genes across a longitudinal time series of infection.
 
@@ -141,9 +501,9 @@ We undertook qPCR of cDNA to assess expression of the type I interferon genes, I
 
 We report simple δ-Ct values for each run, with raw Ct of the target gene of interest (IFN-α or IFN-β) subtracted from raw Ct of the β-Actin housekeeping gene in Figure 1—figure supplement 6. Calculation of fold change upon viral infection in comparison to mock using the δ-δ-Ct method (Livak and Schmittgen, 2001) was inappropriate in this case, as we wished to demonstrate constitutive expression of IFN-α in PaKiT01 cells, whereby data from mock cells was identical to that produced from infected cells.
 
-## Plaque assays and time series imaging
+#### Plaque assays and time series imaging
 
-After being grown to ~90% confluency, cells were incubated with pelleted rVSVs expressing eGFP (rVSV-G, rVSV-EBOV, rVSV-MARV). Cell lines were challenged with both a low (0.0001) and high (0.001) multiplicity of infection (MOI) for each virus. In a cell monolayer infected at a given MOI (m), the proportion of cells (P), infected by k viral particles can be described by the Poisson distribution: R0, such that the number of initially infected cells in an experiment equals: R0>1. We assumed that a ~90% confluent culture at each trial’s origin was comprised of ~9x105 cells and conducted all experiments at MOIs of 0.0001 and 0.001, meaning that we began each trial by introducing virus to, respectively, ~81 or 810 cells, representing the state variable ‘E’ in our theoretical model. Low MOIs were selected to best approximate the dynamics of mean field infection and limit artifacts of spatial structuring, such as premature epidemic extinction when growing plaques collide with plate walls in cell culture.
+After being grown to ~90% confluency, cells were incubated with pelleted rVSVs expressing eGFP (rVSV-G, rVSV-EBOV, rVSV-MARV). Cell lines were challenged with both a low (0.0001) and high (0.001) multiplicity of infection (MOI) for each virus. In a cell monolayer infected at a given MOI (m), the proportion of cells (P), infected by k viral particles can be described by the Poisson distribution: $R_{0}$, such that the number of initially infected cells in an experiment equals: $R_{0}>1$. We assumed that a ~90% confluent culture at each trial’s origin was comprised of ~9x105 cells and conducted all experiments at MOIs of 0.0001 and 0.001, meaning that we began each trial by introducing virus to, respectively, ~81 or 810 cells, representing the state variable ‘E’ in our theoretical model. Low MOIs were selected to best approximate the dynamics of mean field infection and limit artifacts of spatial structuring, such as premature epidemic extinction when growing plaques collide with plate walls in cell culture.
 
 Six-well plates were prepared with each infection in duplicate or triplicate, such that a control well (no virus) and 2–3 wells each at MOI 0.001 and 0.0001 were incubated simultaneously on the same plate. In total, we ran between 18 and 39 trials at each cell-virus-MOI combination, excepting r-VSV-MARV infections on PaKiT01 cells at MOI = 0.001, for which we ran only eight trials due to the low infectivity of this virus on this cell line, which required high viral loads for initial infection. Cells were incubated with virus for one hour at 37 °C. Following incubation, virus was aspirated off, and cell monolayers were washed in PBS, then covered with a molten viscous overlay (50% 2X MEM/L-glutamine; 5% FBS; 3% HEPES; 42% agarose), cooled for 20 min, and re-incubated in their original humidified 37 °C, 5% CO2 environment.
 
@@ -153,31 +513,31 @@ Wells were photographed in rotation, as frequently as possible, from the onset o
 
 In the case of PaKiT01 cells infected with rVSV-EBOV, where an apparently persistent infection established, the assay was terminated after 200+ hours (8+ days) of continuous observation. Upon termination of all trials, cells were fixed in formaldehyde (4% for 15 min), incubated with Hoechst stain (0.0005% for 15 min) (ThermoFisher, Inc, Waltham, MA), then imaged at 4X on the CellInsight CX5 High Content Screening (HCS) Platform. The machine was allowed to find optimal focus for each Hoechst stain image. One color channel was permitted such that images produced showed live nuclei in white and dead cells in black.
 
-## Hoechst staining
+#### Hoechst staining
 
 Hoechst stain colors cellular DNA, and viral infection is thought to interfere with the clarity of the stain (Dembowski and DeLuca, 2015). As such, infection termination, cell fixation, and Hoechst staining enables generation of a rough time series of uninfectious live cells (i.e. susceptible + antiviral cells) to complement the images which produced time series of proportions infectious. Due to uncertainty over the exact epidemic state of Hoechst-stained cells (i.e. exposed but not yet infectious cells may still stain), we elected to fit our models only to the infectious time series derived from GFP-expressing images and used Hoechst stain images as a post hoc visual check on our fit only (Figure 5; Figure 5—figure supplements 1–2).
 
-## Image processing
+#### Image processing
 
 Images recovered from the time series above were processed into binary (‘infectious’ vs. ‘non-infectious’ or, for Hoechst-stained images, ‘live’ vs. ‘dead’) form using the EBImage package (Pau et al., 2010) in R version 3.6 for MacIntosh, after methods further detailed in Supplementary file 7. Binary images were then further processed into time series of infectious or, for Hoechst-stained images, live cells using a series of cell counting scripts. Because of logistical constraints (i.e. many plates of simultaneously running infection trials and only one available imaging microscope), the time course of imaging across the duration of each trial was quite variable. As such, we fitted a series of statistical models to our processed image data to reconstruct reliable values of the infectious proportion of each well per hour for each distinct trial in all cell line–virus-MOI combinations (Figure 1—figure supplements 2–3), as well as for declining live cell counts from control well data derived from the Hoestch time series (Supplementary file 1; Supplementary file 7; Figure 1—figure supplement 7). All original and processed images, image processing and counting code, and resulting time series data are freely available for download at the following FigShare repository: DOI: 10.6084/m9.figshare.8312807.
 
-## Mean field model
+### Mean field model
 
-## Theoretical model details
+#### Theoretical model details
 
-To derive the expression for R0, the basic pathogen reproductive number in vitro, we used Next Generation Matrix (NGM) techniques (Diekmann et al., 1990; Heffernan et al., 2005), employing Wolfram Mathematica (version 11.2) as an analytical tool. R0 describes the number of new infections generated by an existing infection in a completely susceptible host population; a pathogen will invade a population when R0>1 (Supplementary file 2). We then analyzed stability properties of the system, exploring dynamics across a range of parameter spaces, using MatCont (version 2.2) (Dhooge et al., 2008) for Matlab (version R2018a) (Supplementary file 3).
+To derive the expression for $R_{0}$, the basic pathogen reproductive number in vitro, we used Next Generation Matrix (NGM) techniques (Diekmann et al., 1990; Heffernan et al., 2005), employing Wolfram Mathematica (version 11.2) as an analytical tool. $R_{0}$ describes the number of new infections generated by an existing infection in a completely susceptible host population; a pathogen will invade a population when $R_{0}>1$ (Supplementary file 2). We then analyzed stability properties of the system, exploring dynamics across a range of parameter spaces, using MatCont (version 2.2) (Dhooge et al., 2008) for Matlab (version R2018a) (Supplementary file 3).
 
-## Theoretical model fitting
+#### Theoretical model fitting
 
 The birth rate, b, and natural mortality rate, μ, balance to yield a population-level growth rate, such that it is impossible to estimate both b and μ simultaneously from total population size data alone. As such, we fixed b at. 025 and estimated μ by fitting an infection-absent version of our mean field model to the susceptible time series derived via Hoechst staining of control wells for each of the three cell lines (Figure 1—figure supplement 7). This yielded a natural mortality rate, μ, corresponding to a lifespan of approximately 121, 191, and 84 hours, respectively, for Vero, RoNi/7.1, and PaKiT01 cell lines (Figure 1—figure supplement 7). We then fixed the virus incubation rate, σ, as the inverse of the shortest observed duration of time from initial infection to the observation of the first infectious cells via fluorescent microscope for all nine cell line – virus combinations (ranging 6 to 9.5 hours). We fixed α, the infection-induced mortality rate, at 1/6, an accepted standard for general viral kinetics (Howat et al., 2006), and held c, the rate of antiviral cell regression to susceptible status, at 0 for the timespan (<200 hours) of the experimental cell line infection trials.
 
-We estimated cell line–virus-MOI-specific values for β, ρ, and ε by fitting the deterministic output of infectious proportions in our mean field model to the full suite of statistical outputs of all trials for each infected cell culture time series (Figure 1—figure supplements 2–3). Fitting was performed by minimizing the sum of squared differences between the deterministic model output and cell line–virus-MOI-specific infectious proportion of the data at each timestep. We optimized parameters for MOI = 0.001 and 0.0001 simultaneously to leverage statistical power across the two datasets, estimating a different transmission rate, β, for trials run at each infectious dose but, where applicable, estimating the same rates of ρ and ε across the two time series. We used the differential equation solver lsoda() in the R package deSolve (Soetaert et al., 2010) to obtain numerical solutions for the mean field model and carried out minimization using the ‘Nelder-Mead’ algorithm of the optim() function in base R. All model fits were conducted using consistent starting guesses for the parameters, β (β = 3), and where applicable, ρ (ρ = 0.001) and ε (ε = 0.001). In the case of failed fits or indefinite hessians, we generated a series of random guesses around the starting conditions and continued estimation until successful fits were achieved.
+We estimated cell line–virus-MOI-specific values for β, ρ, and $\epsilon$ by fitting the deterministic output of infectious proportions in our mean field model to the full suite of statistical outputs of all trials for each infected cell culture time series (Figure 1—figure supplements 2–3). Fitting was performed by minimizing the sum of squared differences between the deterministic model output and cell line–virus-MOI-specific infectious proportion of the data at each timestep. We optimized parameters for MOI = 0.001 and 0.0001 simultaneously to leverage statistical power across the two datasets, estimating a different transmission rate, β, for trials run at each infectious dose but, where applicable, estimating the same rates of ρ and $\epsilon$ across the two time series. We used the differential equation solver lsoda() in the R package deSolve (Soetaert et al., 2010) to obtain numerical solutions for the mean field model and carried out minimization using the ‘Nelder-Mead’ algorithm of the optim() function in base R. All model fits were conducted using consistent starting guesses for the parameters, β (β = 3), and where applicable, ρ (ρ = 0.001) and $\epsilon$ ($\epsilon$ = 0.001). In the case of failed fits or indefinite hessians, we generated a series of random guesses around the starting conditions and continued estimation until successful fits were achieved.
 
-All eighteen cell line–virus-MOI combinations of data were fit by an immune absent (ε = ρ = 0) version of the theoretical model and, subsequently, an induced immunity (ε = 0; ρ >0) and constitutive immunity (ε >0; ρ >0) version of the model. Finally, we compared fits across each cell line–virus-MOI combination via AIC. In calculating AIC, the number of fitted parameters in each model (k) varied across the immune phenotypes, with one parameter (β) estimated for absent immune assumptions, two (β and ρ) for induced immune assumptions, and three (β, ρ, and ε) for constitutive immune assumptions. The sample size (n) corresponded to the number of discrete time steps across all empirical infectious trials to which the model was fitted for each cell-line virus combination. All fitting and model comparison scripts are freely available for download at the following FigShare repository: DOI: 10.6084/m9.figshare.8312807.
+All eighteen cell line–virus-MOI combinations of data were fit by an immune absent ($\epsilon$ = ρ = 0) version of the theoretical model and, subsequently, an induced immunity ($\epsilon$ = 0; ρ >0) and constitutive immunity ($\epsilon$ >0; ρ >0) version of the model. Finally, we compared fits across each cell line–virus-MOI combination via AIC. In calculating AIC, the number of fitted parameters in each model (k) varied across the immune phenotypes, with one parameter (β) estimated for absent immune assumptions, two (β and ρ) for induced immune assumptions, and three (β, ρ, and $\epsilon$) for constitutive immune assumptions. The sample size (n) corresponded to the number of discrete time steps across all empirical infectious trials to which the model was fitted for each cell-line virus combination. All fitting and model comparison scripts are freely available for download at the following FigShare repository: DOI: 10.6084/m9.figshare.8312807.
 
-## Spatial model simulations
+#### Spatial model simulations
 
-Finally, we verified all mean field fits in a spatial context, in order to more thoroughly elucidate the role of antiviral cells in each time series. We constructed our spatial model in C++ implemented in R using the packages Rcpp and RcppArmadillo (Eddelbuettel and Francois, 2011; Eddelbuettel and Sanderson, 2017). Following Nagai and Honda (2001) and Howat et al. (2006), we modeled this system on a two-dimensional hexagonal lattice, using a ten-minute epidemic timestep for cell state transitions. At the initialization of each simulation, we randomly assigned a duration of natural lifespan, incubation period, infectivity period, and time from antiviral to susceptible status to all cells in a theoretical monolayer. Parameter durations were drawn from a normal distribution centered at the inverse of the respective fixed rates of μ, σ, α, and c, as reported with our mean field model. Transitions involving the induced (ρ) and constitutive (ε) rates of antiviral acquisition were governed probabilistically and adjusted dynamically at each timestep based on the global environment. As such, we fixed these parameters at the same values estimated in the mean field model, and multiplied both ρ and ε by the global proportion of, respectively, exposed and susceptible cells at a given timestep.
+Finally, we verified all mean field fits in a spatial context, in order to more thoroughly elucidate the role of antiviral cells in each time series. We constructed our spatial model in C++ implemented in R using the packages Rcpp and RcppArmadillo (Eddelbuettel and Francois, 2011; Eddelbuettel and Sanderson, 2017). Following Nagai and Honda (2001) and Howat et al. (2006), we modeled this system on a two-dimensional hexagonal lattice, using a ten-minute epidemic timestep for cell state transitions. At the initialization of each simulation, we randomly assigned a duration of natural lifespan, incubation period, infectivity period, and time from antiviral to susceptible status to all cells in a theoretical monolayer. Parameter durations were drawn from a normal distribution centered at the inverse of the respective fixed rates of μ, σ, α, and c, as reported with our mean field model. Transitions involving the induced (ρ) and constitutive ($\epsilon$) rates of antiviral acquisition were governed probabilistically and adjusted dynamically at each timestep based on the global environment. As such, we fixed these parameters at the same values estimated in the mean field model, and multiplied both ρ and $\epsilon$ by the global proportion of, respectively, exposed and susceptible cells at a given timestep.
 
 In contrast to antiviral acquisition rates, transitions involving the birth rate (b) and the transmission rate (β) occurred probabilistically based on each cell’s local environment. The birth rate, b, was multiplied by the proportion of susceptible cells within a six-neighbor circumference of a focal dead cell, while β was multiplied by the proportion of infectious cells within a thirty-six neighbor vicinity of a focal susceptible cell, thus allowing viral transmission to extend beyond the immediate nearest-neighbor boundaries of an infectious cell. To compensate for higher thresholds to cellular persistence and virus invasion which occur under local spatial conditions (Webb et al., 2007), we increased the birth rate, b, and the cell-to-cell transmission rate, β, respectively, to six and ten times the values used in the mean field model (Supplementary file 4). We derived these increases based on the assumption that births took place exclusively based on pairwise nearest-neighbor interactions (the six immediately adjacent cells to a focal dead cell), while viral transmission was locally concentrated but included a small (7.5%) global contribution, representing the thirty-six cell surrounding vicinity of a focal susceptible. We justify these increases and derive their origins further in Supplementary file 5.
 

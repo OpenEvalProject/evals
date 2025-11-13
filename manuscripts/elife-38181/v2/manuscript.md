@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38181.001 The correct establishment and maintenance of unidirectional Notch signaling are critical for the homeostasis of various stem cell lineages. However, the molecular mechanisms that prevent cell-autonomous ectopic Notch signaling activation and deleterious cell fate decisions remain unclear. Here we show that the retromer complex directly and specifically regulates Notch receptor retrograde trafficking in Drosophila neuroblast lineages to ensure the unidirectional Notch signaling from neural progenitors to neuroblasts. Notch polyubiquitination mediated by E3 ubiquitin ligase Itch/Su(dx) is inherently inefficient within neural progenitors, relying on retromer-mediated trafficking to avoid aberrant endosomal accumulation of Notch and cell-autonomous signaling activation. Upon retromer dysfunction, hypo-ubiquitinated Notch accumulates in Rab7 + enlarged endosomes, where it is ectopically processed and activated in a ligand-dependent manner, causing progenitor-originated tumorigenesis. Our results therefore unveil a safeguard mechanism whereby retromer retrieves potentially harmful Notch receptors in a timely manner to prevent aberrant Notch activation-induced neural progenitor dedifferentiation and brain tumor formation.
+The correct establishment and maintenance of unidirectional Notch signaling are critical for the homeostasis of various stem cell lineages. However, the molecular mechanisms that prevent cell-autonomous ectopic Notch signaling activation and deleterious cell fate decisions remain unclear. Here we show that the retromer complex directly and specifically regulates Notch receptor retrograde trafficking in Drosophila neuroblast lineages to ensure the unidirectional Notch signaling from neural progenitors to neuroblasts. Notch polyubiquitination mediated by E3 ubiquitin ligase Itch/Su(dx) is inherently inefficient within neural progenitors, relying on retromer-mediated trafficking to avoid aberrant endosomal accumulation of Notch and cell-autonomous signaling activation. Upon retromer dysfunction, hypo-ubiquitinated Notch accumulates in Rab7+ enlarged endosomes, where it is ectopically processed and activated in a ligand-dependent manner, causing progenitor-originated tumorigenesis. Our results therefore unveil a safeguard mechanism whereby retromer retrieves potentially harmful Notch receptors in a timely manner to prevent aberrant Notch activation-induced neural progenitor dedifferentiation and brain tumor formation.
 
 ## Introduction
 
@@ -33,13 +33,33 @@ However, the plasma membrane is not the only location where the Notch receptor c
 
 Type II neural stem cells, so called neuroblasts, in the Drosophila larval central brain region provide an attractive model system for studying how endosomal trafficking establishes unidirectional Notch signaling and ensures stem cell versus progenitor binary cell fate decisions (Figure 1A) (Liu et al., 2017; Song and Lu, 2012). Firstly, type II neural stem cell lineages resemble their mammalian counterparts in terms of regulatory molecules and principles, yet with much simpler anatomical structure and lineage composition (Brand and Livesey, 2011; Homem and Knoblich, 2012; Sousa-Nunes et al., 2010). Secondly, unidirectional Notch signaling is critical for establishing type II neuroblast versus immature intermediate neural progenitor (INP) binary cell fates (Bowman et al., 2008; Song and Lu, 2011; Song and Lu, 2012; Wang et al., 2006; Weng et al., 2010). Whereas downregulation of Notch signaling in neuroblasts leads to their premature differentiation into INPs and loss of stemness, overactivation of Notch signaling in neural progenitors cause their fate reversion back into neuroblast-like state and tumorigenesis (Bowman et al., 2008; Song and Lu, 2011; Song and Lu, 2012; Wang et al., 2006; Weng et al., 2010). Thus, the total number of neuroblasts in each brain lobe represents a quantitative and precise readout of Notch signaling strength. Thirdly, Numb is asymmetrically inherited by immature INPs, where it dampens Notch signaling partly by reducing the cell surface pool of mature Notch receptors (Figure 1B) (Bowman et al., 2008; Lee et al., 2006b; Song and Lu, 2012; Wang et al., 2006).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram depicting the lineage hierarchy of Drosophila type II neuroblasts in the central brain area. (B) Schematic showing how asymmetric distribution and segregation of the endocytic protein Numb (cyan) initiates unidirectional Notch signaling (purple arrow) from a neural progenitor (light blue) to its sibling type II neuroblast (pink). (C) Schematic of the cargo-recognition retromer complex. (D–F) Larval brain lobes of indicated genotypes were stained for neuroblast marker Deadpan (Dpn) and ganglion mother cell (GMC)/neuronal marker Prospero (nuclear Pros) (D,F). In this and subsequent micrographs, yellow dotted line marks the boundary between the optic lobe (left) and the central brain (right) areas. Quantification of total neuroblast number per brain lobe is shown in (E). **p<0.001 (n = 12–16). (G) Asymmetric cortical distribution of apical marker atypical PKC (aPKC) and basal marker Miranda (Mira) in wild type (WT) or vps35 mutant metaphase neuroblasts. (H) Colocalization of Mira and cell fate determinant Numb at the basal cortex of WT or vps35 mutant metaphase neuroblasts. (I) MARCM clonal analysis of type II neuroblast lineages in WT control or vps35 mutant backgrounds. In this and subsequent micrographs, type II neuroblast MARCM clones are marked by CD8-GFP and outlined by white dashed lines, whereas neuroblasts, immature intermediate neural progenitors (INPs), mature INPs and neuroblast-like dedifferentiating progenitors are marked with brackets, white arrowheads, cyan arrowheads and yellow arrowheads respectively. (J) Transplantation of GFP+ tissue from WT control larval brains into the abdomens of adult host flies caused neither tumorous growth (while bracket) nor metastasis (white arrowhead). In sharp contrast, transplantation of GFP+ tumor tissue from vps35 mutant larval brains caused massive tumor formation (yellow bracket) and metastasis to distal organs such as the eyes (yellow arrowhead). (K) Table showing the frequency of tumor formation or metastasis 14 days after transplantation of GFP+ tissue from larval brains of indicated genotypes. (L) GFP+ tumor tissues from the transplanted hosts were isolated and stained for neuroblast markers Mira and Dpn. Note that most of the extracted GFP+ tumor cells were Mira+ and Dpn+ neuroblast-like cells. Scale bars, 50 μm (D,F); 5 μm (G,H) and 10 μm (I,L).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The expression patterns of the Gal4 drivers. (B) The identity of each cell type in type II neuroblast lineages can be unambiguously determined by a combination of cell type markers. NB: neuroblast.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A,B) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (B). **p<0.001; NS: not significant (n = 10–12). Note that whereas downregulation of vps26 in type II neuroblast lineages or immature INP lineages, driven by PntP1-Gal4 or erm-Gal4(II) respectively, resulted in supernumerary neuroblast phenotype, its knockdown in mature INP lineages or type I neuroblast lineages, driven by erm-Gal4 (III) or ase-Gal4 respectively, failed to induce ectopic neuroblasts. Scale bar, 50 μm (A).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** MARCM clones were marked by CD8-GFP and stained with Dpn and Pros. Immature INPs in WT neuroblast clone and ectopic neuroblast-like cells in vps35 mutant clone were marked by white arrowheads and yellow arrowheads respectively. Note that Dpn+ Pros- ectopic neuroblasts (yellow arrowheads) were several cell diameters away from the primary neuroblast (dashed white bracket, out of the current focal plane). Scale bar, 10 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Lineage-traced cells were marked by nlsGFP and stained with Dpn and Ase. vps35 mutant immature INPs could dedifferentiate back into Dpn+ Ase- ectopic neuroblasts (yellow arrowheads), while WT control immature INPs differentiated into Dpn+ Ase+ mature INPs (white arrowhead), Dpn- Ase+ GMCs or Dpn- Ase- neurons (cyan arrowhead). Note that some glial cells and occasionally a couple of type I NB lineages are marked by nlsGFP in the WT control background. Scale bar, 10 μm.
+
 In a large-scale unbiased RNAi-based genetic screen for regulators of neuroblast versus progenitor cell fate decision, we identified Vps26, a subunit of the retromer complex (Burd and Cullen, 2014; Wang and Bellen, 2015). Specific downregulation of Vps26 in Drosophila central brain neuroblast lineages led to a supernumerous neuroblast phenotype. The retromer complex is an evolutionarily highly conserved endosomal sorting complex, which plays a crucial role in the retrograde trafficking of a specific subset of endocytosed proteins from endosomes back to the trans-Golgi network or the plasma membrane (Burd and Cullen, 2014; Wang and Bellen, 2015). The core of the retromer complex is a vacuolar protein sorting (Vps) trimer composed of Vps35, Vps26 and Vps29 subunits (Figure 1C). Previous studies have implicated retromer in controlling a wide range of physiological processes, such as regulating fly wing development, maintaining the function of photoreceptors, establishing cell polarity in epithelial cells, controlling LTP (long-term potential) in mature hippocampus, modulating fly oogenesis and propagating mitochondrial stress signals (Belenkaya et al., 2008; Chen et al., 2010; Choy et al., 2014; Coudreuse et al., 2006; Franch-Marro et al., 2008; Gomez-Lamarca et al., 2015; Harterink et al., 2011; Hesketh et al., 2014; Pan et al., 2008; Pocha et al., 2011; Port et al., 2008; Starble and Pokrywka, 2018; Temkin et al., 2011; Temkin et al., 2017; Wang and Bellen, 2015; Yang et al., 2008; Zhang et al., 2018). Dysfunction of retromer-mediated endosomal sorting has been linked to various pathologies, including neurodegenerative diseases such as Alzheimer’s disease and Parkinson’s disease (McMillan et al., 2017; Small and Petsko, 2015; Wang and Bellen, 2015).
 
 Here our results unveil a safeguard mechanism through which the retromer complex ensures sufficient dampening of Notch signaling in neural progenitors. Upon attenuation of the retromer function, hypo-ubiquitinated Notch that fails to enter the ESCRT-lysosomal pathway accumulates in enlarged Rab7+ endosomes and is ectopically processed and activated. Such cell-autonomous intracellular hyperactivation of Notch signaling causes fate reversion of neural progenitors and the formation of transplantable tumors. These results led us to propose a model whereby retromer serves as ‘bomb squad’ to retrieve and disarm the potentially harmful pool of Notch receptors in a timely manner.
 
 ## Results
 
-## The retromer complex prevents neural progenitor dedifferentiation and tumorigenesis
+### The retromer complex prevents neural progenitor dedifferentiation and tumorigenesis
 
 To investigate the function of retromer in neuroblast lineages, we first downregulated Vps26 in all central brain neuroblast lineages using short hairpin microRNAs (shmiRNAs), driven by insc-Gal4, and observed a supernumerary neuroblast phenotype (Figure 1D,E). Such brain tumor phenotype induced by vps26-RNAi was fully rescued by the coexpression of a shmiRNA-resistant form of the Vps26 transgene, excluding the possibility of an off-target effect of the shmiRNA (Figure 1D,E). Furthermore, homozygous vps35 mutant larval brains exhibited an even more severe supernumerary neuroblast phenotype than vps26-IR, and such phenotype was fully rescued upon specific expression of a Vps35 transgene in all central brain neuroblast lineages (Figure 1D,E). Importantly, human Vps35 also fully rescued the brain tumor phenotype of vps35 mutants back to wild type (Figure 1D,E). Taken together, our results clearly indicated that retromer plays an evolutionarily-conserved role in preventing ectopic neuroblast formation in the central brain area.
 
@@ -47,21 +67,37 @@ To investigate the cellular origin of the ectopic neuroblasts formed upon retrom
 
 We next employed transplantation assay to test whether the ectopic neuroblasts in vps35 mutant brains are capable of initiating tumor. Transplantation of vps35 mutant but not wild-type control brain tissues into the abdomens of host flies caused the formation of massive tumors (yellow bracket in Figure 1J) that often metastasize to distal organs (yellow arrowhead in Figure 1J; statistic results in Figure 1K). Importantly, the vps35 mutant GFP+ tumor cells extracted from the abdomen of transplanted hosts were Dpn+ Miranda (Mira)+ neuroblast-like cells (Figure 1L). Thus vps35 mutant cells in the larval brains are indeed tumor-initiating cells. Together, we conclude that retromer acts as a tumor suppressor in the Drosophila brain by preventing neural progenitor dedifferentiation.
 
-## vps35 mutant dedifferentiating neural progenitors contained enlarged Rab7-positive endosomal vesicles
+### vps35 mutant dedifferentiating neural progenitors contained enlarged Rab7-positive endosomal vesicles
 
 Since the well-characterized function of retromer is retrograde transport of transmembrane proteins, we next assessed whether the distribution of any subcellular marker(s) is altered upon inactivation of retromer function. Compared to wild-type control INPs, vps35 mutant INPs or ectopic neuroblasts displayed dramatically enlarged late endosomes/MVBs (Figure 2A–C; up to more than 10-fold increase in endosomal vesicle sizes). The expression levels of Rab7 remained unchanged in vps35 mutants (Figure 2D), ruling out the likelihood that Vps35 regulates Rab7 gene expression or protein stability. Furthermore, Rab7 primarily colocalized with early endosome marker Rab5 in vps35 but not wild type cells (Figure 2E), demonstrating that the enlarged MVBs in vps35 mutant cells are of early and late endosome hybrid identities. In contrast, other subcellular markers including lysosome (GFP-LAMP1), recycling endosome (Rab11), Golgi (GFP-Golgi) and mitochondria (mito-GFP) remained unchanged in vps35-defective cells (Figure 2F–2I). Therefore, our results strongly suggest that retromer normally functions in neural progenitors to transport cargo proteins away from early and late endosomes. Upon retromer dysfunction, its cargo proteins highly accumulate in MVBs, resulting in enlarged, aberrant endosomal vesicles of hybrid identities.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig2-v2.jpg)
 
-**Figure 2.:** + endosomes are drastically enlarged in vps35 mutant neuroblast lineages.(A,B) Compared to WT control immature INPs, Rab7+ endosomes were dramatically enlarged in vps35 mutant dedifferentiating neural progenitors (arrowheads in A). Quantification of the size range of Rab7+ puncta in immature INPs of indicated genotypes was shown in (B). (C) Transmission electron micrograph of wild type or vps35 mutant larval brain neuroblasts. The mean size of MVBs, identified by the presence of intraluminal vesicles, was greatly enlarged in vps35 mutant neuroblasts. Note that neuroblasts were identified by their large cellular and nuclear sizes and MVBs are highlighted in purple. (D) Western blot analysis of larval brain extracts of indicated genotypes using anti-Rab7 antibody. Anti-β-actin blot served as a loading control. (E) The enlarged Rab7+ endosomes in vps35 mutant neuroblast-like cells were also positive for YFP-Rab5 (arrowheads). (F–I) Compared to WT control immature INPs, the sizes of GFP-LAMP1+ lysosomes (F), Rab11+ recycling endosomes (G), Golgi (H) or mitochondria marked by mito-GFP (I) remained unaltered in vps35 mutant dedifferentiating neural progenitors (arrowheads). Scale bars, 10 μm (A,E–I).
+**Figure 2.:** (A,B) Compared to WT control immature INPs, Rab7+ endosomes were dramatically enlarged in vps35 mutant dedifferentiating neural progenitors (arrowheads in A). Quantification of the size range of Rab7+ puncta in immature INPs of indicated genotypes was shown in (B). (C) Transmission electron micrograph of wild type or vps35 mutant larval brain neuroblasts. The mean size of MVBs, identified by the presence of intraluminal vesicles, was greatly enlarged in vps35 mutant neuroblasts. Note that neuroblasts were identified by their large cellular and nuclear sizes and MVBs are highlighted in purple. (D) Western blot analysis of larval brain extracts of indicated genotypes using anti-Rab7 antibody. Anti-β-actin blot served as a loading control. (E) The enlarged Rab7+ endosomes in vps35 mutant neuroblast-like cells were also positive for YFP-Rab5 (arrowheads). (F–I) Compared to WT control immature INPs, the sizes of GFP-LAMP1+ lysosomes (F), Rab11+ recycling endosomes (G), Golgi (H) or mitochondria marked by mito-GFP (I) remained unaltered in vps35 mutant dedifferentiating neural progenitors (arrowheads). Scale bars, 10 μm (A,E–I).
 
-## Retromer regulates retrograde trafficking of Notch receptors
+### Retromer regulates retrograde trafficking of Notch receptors
 
 We next sought to identify the critical cargo protein(s) of retromer in preventing INP dedifferentiation. Since Notch pathway is both necessary and sufficient to promote self-renewal in type II neuroblast lineages, we first examined the subcellular distribution of transmembrane protein components of Notch signaling pathway. We noted that the Notch receptor and its cofactor Sanpodo (Couturier et al., 2012; Hutterer and Knoblich, 2005; O'Connor-Giles and Skeath, 2003; Song and Lu, 2012) highly accumulated in enlarged puncta in vps35 mutant cells, mostly colocalizing with Rab7+ enlarged endosomes (Figure 3A,B and Figure 3—figure supplement 1). In contrast, the distribution of other signaling molecules such as Patched (Ptc) and Wnt/Wingless (Wg) remained unaltered upon Vps35 depletion (Figure 3—figure supplement 2A–C), indicating that retromer specifically mediates Notch receptor trafficking in neuroblast lineages. Strongly supporting this notion, Notch signaling reporter E(spl)mγ-GFP (Almeida and Bray, 2005; Song and Lu, 2011), which faithfully reflects Notch signaling activity in neuroblast lineages, was undetectable in wild type Dpn- Ase- immature INPs (white arrowhead in Figure 3C) but ectopically turned on in Dpn+ Ase- dedifferentiating neural progenitors (yellow arrowhead in Figure 3C) upon Vps26 downregulation. In addition, Notch puncta colocalizing with Rab7+ endosomes remained unaltered in vps35 mutant wing imaginal disc epithelia (arrowheads in Figure 3—figure supplement 2D), suggesting a tissue-specific regulation of Notch trafficking by retromer. Collectively, retromer normally suppresses Notch activity through mediating retrograde trafficking of Notch receptors in neural progenitors.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig3-v2.jpg)
+
+**Figure 3.:** (A,B) Compared to WT control immature INPs, Notch puncta colocalizing with Rab7+ endosomes were enlarged in vps35 mutant dedifferentiating neural progenitors (arrowheads in A). Quantification of the size range of Notch puncta colocalizing with Rab7+ endosomes is shown in (B). (C) The expression pattern of Notch signaling reporter E(spl)mγ-GFP in wild type control or vps26-RNAi type II neuroblast lineages. Note that immature INPs (Dpn- Ase-) in control type II neuroblast lineages and dedifferentiating neural progenitors (Dpn+ Ase-) in vps26-RNAi lineages are marked with white arrowheads and yellow arrowheads respectively. (D,E) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (E). **p<0.001 (n = 10–18). NS, not significant. (F) Type II neuroblast lineages expressing Vps35-FLAG were stained for Notch extracellular domain (NECD) and FLAG. Note that NECD puncta (arrowheads) colocalized with Vps35-FLAG in immature INPs. (G,H) NECD puncta colocalized with FLAG-tagged human Vps35 (hVps35-FLAG; G) and endogenous Vps26 (H) in immature INPs (arrowheads). (I) Type II neuroblast lineages of indicated genotypes were stained for Rab7 and F-actin. Rab7 puncta are marked with arrowheads. Scale bars, 10 μm (A,C,F–I) and 50 μm (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Compared to WT control immature INPs, Spdo-GFP puncta colocalizing with Rab7+ endosomes were enlarged in vps35 mutant dedifferentiating neural progenitors (arrowheads in A). Quantification of the size range of Spdo-GFP puncta colocalizing with Rab7+ endosomes is shown in (B). Scale bar, 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Compared to WT control immature INPs, Notch (A) but not Wingless (Wg, B) or Patched (Ptc, (C) puncta colocalizing with Rab7+ endosomes were enlarged in vps35 mutant dedifferentiating neural progenitors (arrowheads in islets in A–C). (D) In fly late third instar larval wing discs, Notch puncta colocalizing with Rab7+ endosomes (arrowheads) remained unaltered in vps35 mutant cells. (E,F) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (F). **p<0.001; NS, not significant (n = 10–12). Scale bars, 50 μm (E); 10 μm (A–D).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Western blot analysis of wild type or insc-Gal4 >UAS-Vps26-Myc larval brain extracts using anti-Vps26 (left) or anti-Myc (right) antibody. (B) Compared to WT control, Vps26 expression levels in vps35 mutant larval brain extracts were drastically reduced. Anti-α-Tubulin blot serves as loading control. (C) High and punctuated expression of Vps26 in type II neuroblast lineage (arrowheads) was diminished upon neuroblast-specific knockdown of vps26. Scale bar, 10 μm.
+
 We next assessed whether Notch is a crucial cargo of retromer in neuroblast lineages. Neuroblast lineage-specific knockdown of Notch completely suppressed the neuroblast overproliferation phenotype in vps35 mutants (Figure 3D,E), indicating that the dedifferentiation process of vps35 mutant INPs was Notch signaling-dependent. Type II neuroblast lineage-specific or immature INP-specific depletion of the ligand Delta, as well as neuroblast lineage-specific expression of a dominant negative form of Delta (Dl-DN) that lacks its intracellular domain (Baonza et al., 2000; Flores et al., 2000; Huppert et al., 1997), completely or potently suppressed brain tumor phenotypes caused by vps35 mutations (Figure 3D,E and Figure 3—figure supplement 2E,F). Furthermore, type II neuroblast lineage-specific or immature INP-specific expression of a dominant negative form of the metalloprotease Kuzbanian (Kuz-DN), which lacks its protease activity and thereby specifically blocks ligand-induce S2 cleavage of Notch (Lieber et al., 2002; Mumm et al., 2000; Pan and Rubin, 1997), also phenocopied the effect of Notch-RNAi in inhibiting brain tumor formation (Figure 3D,E). These observations indicated that overactivation of Notch signaling in vps35 mutant neural progenitors is largely, if not completely, ligand-dependent. Not surprisingly, a functional γ–secretase is also essential for ectopic activation of Notch signaling in vps35 mutants (Figure 3D,E). In sharp contrast, inactivation of various other signaling pathways, such as Wnt/Wg, Hedgehog or EGFR, or overactivation of Hedgehog signaling showed no effects on the supernumerary neuroblast phenotype in vps35 mutants (Figure 3D,E and Figure 3—figure supplement 2E,F), further demonstrating the high specificity of retromer on Notch signaling pathway in neuroblast lineages. Importantly, Notch colocalized with fly or human Vps35 transgene (Figure 3F,G) and endogenous Vps26 (Figure 3H and Figure 3—figure supplement 3). More remarkably, Notch depletion by RNAi led to a dramatic reduction in Rab7+ endosomal vesicle sizes almost back to normal (Figure 3I), suggesting that Notch receptors constitute the major endosomal contents of these aberrant vps35 mutant vesicles. Taken together, our results strongly suggested that the Notch receptor is a functionally important cargo of retromer in type II neuroblast lineages.
 
-## Notch is a bona fide cargo protein of retromer
+### Notch is a bona fide cargo protein of retromer
 
 To validate that the Notch receptor is a cargo protein of the retromer complex, we assessed their physical interaction by performing coimmunoprecipitation (coIP) assays. Vps35 or Vps26 was specifically coimmunoprecipitated with Notch intracellular domain (NICD) from HEK293T cell extracts (Figure 4A). Further domain mapping experiments revealed that the ankyrin repeat region but not the C-terminal region of NICD exhibited a strong binding activity to Vps26 (Figure 4B,C). Reciprocal coIP assay showed that Vps26 utilized its middle domain to interact with NICD (Figure 4D,E). Furthermore, Notch-V5 expressed in central brain neuroblast lineages was specifically coimmunoprecipitated with Vps35-FLAG from fly larval brain extracts (Figure 4F), confirming the in vivo protein-protein interaction. Importantly, coIP experiments further revealed interaction between mouse NICD and mouse Vps26 proteins (Figure 4G,H), indicating that the physical association between the retromer cargo-recognition complex and Notch is evolutionarily conserved. Taken together, our results validate that the Notch receptor is a bona fide cargo protein of the retromer complex.
 
@@ -69,17 +105,49 @@ To validate that the Notch receptor is a cargo protein of the retromer complex, 
 
 **Figure 4.:** (A) Coimmunoprecipitation (CoIP) of FLAG-tagged Vps26 or Vps35 and V5-tagged Notch intracellular domain (NICD) in HEK293T cell extracts. Note that in these and subsequent panels, EGFP served as a negative control. (B) Schematic drawings of NICD protein domains and truncated constructs. (C) CoIP of full-length (FL) or truncated NICD-V5 and Vps26-Myc in HEK293T cells. (D) Schematic drawings of Vps26 protein domains and truncated constructs. (E) The reciprocal coIP of full-length (FL) or truncated FLAG-Vps26 and NICD-V5 in HEK293T cells. (F) CoIP of Vps35-FLAG and Notch-V5 (N–V5) in fly larval brain extracts. Note that Vps35-FLAG and N-V5 were specifically expressed in neuroblast lineages by insc-Gal4. (G,H) CoIP of Myc-tagged mouse Vps26 (mVps26-Myc) and V5-tagged mouse NICD (mNICD-V5) and the reciprocal coIP of mVps26-FLAG and mNICD-V5 in HEK293T cell extracts.
 
-## Retromer prevents intracellular hyperactivation of Notch signaling
+### Retromer prevents intracellular hyperactivation of Notch signaling
 
 Our results presented so far support an intriguing possibility that the retromer complex physically interacts with Notch and transports it away from early and late endosomes in a timely and efficient manner. When retromer is defective, Notch receptors are trapped at early/late aberrant endosomal vesicles and is ectopically processed and activated, causing neural progenitor-derived brain tumor.
 
 If this hypothesis is correct, one would expect that blocking the flux of Notch receptors towards its activating compartment or accelerating Notch trafficking away from it might prevent the accumulation and subsequent ectopic activation of Notch in vps35 mutants (Figure 5A). Indeed, overexpression of a dominant negative form of Rab5 GTPase (Rab5-DN), which blocks the fusion of endocytic vesicles with early endosomes, or a constitutively active form of Rab9 GTPase (Rab9-CA), which promotes protein retrograde trafficking from late endosomes to trans-Golgi network (TGN) or the plasma membrane (Figure 5—figure supplement 1), completely suppressed brain tumor formation in vps35 mutant brains (Figure 5B,C). Importantly, both the enlargement of Rab5/Rab7-positive endosomal vesicles and the high accumulation of Notch in these aberrant endosomal compartments in vps35 mutant cells were effectively relieved upon Rab5-DN or Rab9-CA coexpression (arrowheads in Figure 5D,E). On the other hand, overexpression of a constitutively active form of Rab7 (Rab7-CA) or the ESCRT-0 complex component Hrs (Hepatocyte growth factor-regulated tyrosine kinase substrate), which accelerates the protein trafficking towards lysosome (Figure 5—figure supplement 1) (Lloyd et al., 2002), potently inhibited the neuroblast overproliferation phenotype in vps35 mutant brains (Figure 5A,B,C). Indeed, coexpression of either Rab7-CA or Hrs led to high accumulation of Notch in lysosomes of vps35 mutant cells (Figure 5F). In contrast, overexpression of a constitutively active form of Rab5 GTPase (Rab5-CA), which accelerates the fusion of endocytic vesicles with early endosomes, or a dominant negative form of Rab7 (Rab7-DN) or Rab9 (Rab9-DN) GTPase, which prevents transport of proteins away from the sorting endosomes, failed to suppress the supernumerary neuroblast phenotype in vps35 mutant brains (Figure 5—figure supplement 2). In addition, the Delta ligand clearly colocalized with Rab7+ enlarged endosomes in vps35 mutant cells (Figure 5G). Taken together, we concluded that the enlarged, aberrant endosomal vesicles with both early and late endosomal identities are the ligand-dependent activating compartments of the Notch receptor in vps35 mutant neural progenitors.
 
-## Retromer recycles hypo-ubiquitinated Notch receptors
+![Figure 5.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic depicting a simplified endocytic pathway. Red arrow: promotion; blue flat line: inhibition. (B,C) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (C). **p<0.001 (n = 10–12). (D,E) Type II neuroblast lineages of indicated genotypes were stained for NECD, Rab7 and F-actin. NECD puncta colocalizing with Rab7 are marked with arrowheads. Quantification of the size range of Notch puncta colocalizing with Rab7+ endosomes is shown in (E). (F) Type II neuroblast lineages of indicated genotypes were stained for NECD, GFP and F-actin. (G) Type II neuroblast lineages of indicated genotypes were stained for Delta, Rab7 and F-actin. Scale bars, 50 μm (B) and 10 μm (D,F,G).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Type II neuroblast lineages of indicated genotypes were stained for NECD, Rab7 and F-actin. NECD puncta colocalizing with Rab7 were marked with arrowheads. Note that expression of Rab5-DN or Rab9-CA resulted in increased cortical distribution of Notch and decreased colocalization between Notch and Rab7. (B) Type II neuroblast lineages of indicated genotypes were stained for NECD, GFP-LAMP1 and F-actin. Scale bars, 10 μm (A,B).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Cartoon depicting a simplified endocytic pathway. Red arrow: promotion; blue flat line: inhibition. (B,C) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (C). **p<0.001; NS, not significant (n = 10–12). Scale bar, 50 μm.
+
+### Retromer recycles hypo-ubiquitinated Notch receptors
 
 Why Notch needs to be transported away from its activating compartments by retromer under physiological conditions? Previous studies indicated that the internalized Notch receptors are either sorted through the ESCRT pathway and get degraded in lysosomes or recycled back to the plasma membrane for ligand binding and activation (Kopan, 2012). Furthermore, ubiquitin is a crucial sorting signal for Notch receptor trafficking. We therefore considered the intriguing possibility that a pool of hypo-ubiquitinated Notch receptors might not be sorted through ESCRT-0 but instead trapped at the limiting membrane of MVBs, where they are retrieved and transported away by retromer in a timely manner.
 
 If this hypothesis is correct, one would expect that an elevation in the activity of the E3 ubiquitin ligase(s) that promotes Notch polyubiquitination and lysosomal degradation may reduce the pool of hypo-ubiquitinated Notch in retromer mutant neural progenitors and thereby alleviate the brain tumor phenotype. Neuroblast lineage-specific overexpression of HECT domain E3 ubiquitin ligase Itch/Su(dx) or Nedd4, known for mediating Notch receptor polyubiquitination and degradation (Cornell et al., 1999; Le Bras et al., 2011; Qiu et al., 2000; Sakata et al., 2004; Wilkin et al., 2004), showed little inhibitory effect on the supernumerary neuroblast phenotype in vps35 mutants (Figure 6A,B), suggesting that these two E3 ligases are not fully active upon overexpression in neuroblast lineages. Since Ndfip protein (Nedd4 family interacting protein) has been reported to recruit and activate Itch/Su(dx) or Nedd4 by relieving their autoinhibition caused by intramolecular interaction (Dalton et al., 2011; Mund and Pelham, 2009), we coexpressed Ndfip in an attempt to boost the catalytic activity of Itch/Su(dx) and Nedd4. Whereas simultaneous overexpression of Nedd4 and Ndfip barely exhibited any effect on brain tumor phenotype caused by vps35 mutation (Figure 6—figure supplement 1A–C), coexpression of Su(dx) and Ndfip indeed led to a complete rescue of the supernumerary neuroblast phenotype in vps35 mutants (Figure 6A,B). Consistent with these observations, the high accumulation of Notch in aberrant endosomal vesicles in vps35 mutant cells was also effectively suppressed by Su(dx) and Ndfip coexpression (Figure 6—figure supplement 1D,E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig6-v2.jpg)
+
+**Figure 6.:** (A,B) Neuroblast-specific coexpression of both Su(dx) and Ndfip but not either alone potently inhibited brain tumor phenotype in vps35 mutants. Quantification of total neuroblast number of indicated genotypes is shown in (B). **p<0.001 (n = 12–15). (C,D) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (D). **p<0.001; *p<0.01; NS, not significant (n = 13–15). (E) Type II neuroblast lineages of indicated genotypes were stained for NECD, Rab7 and F-actin. NECD puncta colocalizing with Rab7 are marked with arrowheads. (F) Quantification of the size range of Notch puncta colocalizing with Rab7+ endosomes in immature or dedifferentiating neural progenitors of indicated genotypes. (G,H) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (H). **p<0.001; NS, not significant (n = 11–15). (I,J) Western blot analysis of larval brain extracts of indicated genotypes using anti-NICD antibody. Anti-α-tubulin blot served as a loading control. Note that hypo-ubiquitinated NICD fragments included NICD carrying approximately three ubiquitin moieties (NICD-Ub3) and un-ubiquitinated NICD (NICD-Ub0). Scale bars, 10 μm (E) and 50 μm (A,C,G).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Larval brain lobes of indicated genotypes were stained for Dpn and Pros. Quantification of total neuroblast number per brain lobe is shown in (B). **p<0.001; NS, not significant (n = 10–15). Note that coexpression of Nedd4 with Ndfip or Su(dx) failed to suppress the supernumerary neuroblast phenotype in vps35 mutants. (C) Simultaneous expression of Su(dx) and Ndfip or Nedd4 and Ndfip potently inhibited Wg expression in wing discs, indicating that the Nedd4 transgene is functional. (D,E) Enlarged NECD puncta colocalizing with Rab7+ endosomes in vps35 mutant dedifferentiating neural progenitors drastically shrank upon coexpression of Su(dx) and Ndfip (arrowheads in D). Quantification of the size range of NECD puncta colocalizing with Rab7+ endosomes is shown in (E). Scale bars, 50 μm (A) and 10 μm (D).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A,B) Antibodies raised against Su(dx) (A) and Ndfip (B) are highly specific. Western blot analysis of wild type and insc-Gal4 >UAS-Myc-Su(dx) larval brain extracts (left) or wild type and insc-GAL4 >UAS Flag-Ndfip larval brain extracts (right) confirmed the specificity of Su(dx) and Ndfip antibodies respectively. (C,D) Su(dx) displayed cortical distribution in type II neuroblast lineages (C), whereas Ndfip showed largely punctuated distribution in type II neuroblast lineages (D). Scale bars, 10 μm (C,D).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Western blot analysis of wild type, N55e11; NiGFP or N55e11; NiGFP; vps35 larval brain extracts using anti-NICD antibody. Anti-α-Tubulin blot serves here as a loading control. Note that NiGFP is a BAC transgene expressing a fully functional GFP-tagged Notch, whereas N55e11 is a null mutant allele of Notch. Note that hypo-ubiquitinated NICD-GFP fusion includes NICD-GFP carrying approximately three ubiquitin moieties (NICD-GFP-Ub3; green arrowhead) and un-ubiquitinated NICD-GFP (NICD-GFP-Ub0; dark purple arrowhead) fragments. Also note that the cyan and light purple arrowheads indicate full-length Notch-GFP fusion (cyan) and NICD (purple) bands respectively.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/38181/elife-38181-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Larval brain lobes of WT or insc-Gal4 >Su(dx); Ndfip background were stained for Dpn and Ase. Each type II neuroblast lineage is encircled by dashed line. Quantification of type II neuroblast lineage number per brain lobe is shown in (B). **p<0.001 (n = 10–12).
 
 A related and more important prediction of this hypothesis is that the activity of the E3 ubiquitin ligase(s) targeting Notch for polyubiquitination and degradation is inherently inefficient in fly neuroblast lineages and depends on retromer-mediated retrieval to avoid ectopic accumulation and processing of Notch in INPs. If this model is correct, we reason that a reduction in the activity of the E3 ubiquitin ligase(s) might tilt the balance and lead to a larger pool of hypo-ubiquitinated Notch than normal. If retromer is meanwhile not fully functional, Notch receptors may be stalled in MVBs and eventually result in progenitor-derived tumor. Indeed, we observed a strong synergistic interaction between Su(dx) and Vps26 in mediating neuroblast self-renewal. While expression of either vps26-RNAi or Su(dx)-C917A, a dominant negative form of Su(dx) (Su(dx)-DN) that lacks its E3 ubiquitin ligase activity (Wang et al., 2015), by PntP1-Gal4, led to a mild neuroblast overproliferation phenotype (Figure 6C,D), simultaneous expression of vps26-RNAi and Su(dx)-DN resulted in a severe brain tumor phenotype (Figure 6C,D). More significantly, Notch receptors were highly accumulated in enlarged Rab7-positive endosomal vesicles in neural progenitors expressing both vps26-RNAi and Su(dx)-DN, but not in neural progenitors expressing either vps26-RNAi or Su(dx)-DN alone (Figure 6E,F). Immunostaining with our newly-raised Su(dx) and Ndfip antibodies (Figure 6—figure supplement 2A,B) revealed that Su(dx) mainly localized to the cell cortex, whereas Ndfip primarily distributed in intracellular vesicles (Figure 6—figure supplement 2C,D). Such largely distinct distribution pattern of Su(dx) and Ndfip in INPs might partially explain why Notch polyubiquitination and lysosomal degradation is inherently inefficient in neural progenitors.
 
@@ -107,7 +175,563 @@ The ability of vps35 mutant neoplastic neuroblasts to metastasize upon transplan
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>insc-Gal4</td>
+      <td>(Luo et al., 1994)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PntP1-Gal4</td>
+      <td>(Zhu et al., 2011)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ase-Gal4</td>
+      <td>(Zhu et al., 2006)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>erm-Gal4 (II)</td>
+      <td>(Xiao et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>erm-Gal4 (III)</td>
+      <td>(Pfeiffer et al., 2008; Weng et al., 2010)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-vps26-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_38937</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Notch-RNAi</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>RRID: VDRC_27229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Delta-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_34322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-wg-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_32994</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-med-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_52214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Hrs-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_34086; BDSC_33900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-white-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps26-Myc</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Vps35-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hVps35-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-HA-Rab9-CA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Myc-Su(dx)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Myc-Su(dx)-C917A</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Myc-Nedd4</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FLAG-Ndfip</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Su(dx)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_51664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Hrs</td>
+      <td>(Lloyd et al., 2002)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Spdo-GFP</td>
+      <td>(Song and Lu, 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dl-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_26698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Psn-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_8323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kuz-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_6578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-EGFR-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_5364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ptc-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_31928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP-LAMP1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_42714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_8442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sqh-EYFP-Golgi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_7193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-YFP-Rab5-WT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_24616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-YFP-Rab5-CA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_9773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Rab5-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_42704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-YFP-Rab7-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_9778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Rab7-CA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_42707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-YFP-Rab9-WT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_9784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-YFP-Rab9-CA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_9785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-YFP-Rab9-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_23642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-YFP-Rab11-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_9792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vps35E42</td>
+      <td>Gift from Xinhua Lin (Belenkaya et al., 2008)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vps351</td>
+      <td>Gift from Xinhua Lin (Belenkaya et al., 2008)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>N55e11; NiGFP</td>
+      <td>(Couturier et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FLP, Ubi-p63E- FRT-nlsGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_28282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NotchECD (C458.2H)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528408</td>
+      <td>IHC (1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Pros (MR1A)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528440</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-Mira</td>
+      <td>Abcam</td>
+      <td>Cat#Ab197788</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Dpn</td>
+      <td>Gift from Y.N. Jan</td>
+      <td>N/A</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-Numb</td>
+      <td>Gift from J. Skeath (O'Connor-Giles and Skeath, 2003)</td>
+      <td>N/A</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-β- galactosidase (40-1a)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_2314509</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-Ase</td>
+      <td>Gift from Y.N. Jan</td>
+      <td>N/A</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-aPKC ζ C20</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>RRID: AB_2168668</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Rab7</td>
+      <td>Gift from A. Nakamura (Tanaka and Nakamura, 2008)</td>
+      <td>N/A</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Wg (4D4)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528512</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Ptc (Apa 1)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528441</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Myc (71D10)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_10693332</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_439687</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-V5</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_261889</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-c-Myc</td>
+      <td>CW Biotech</td>
+      <td>Cat#cw0299M</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-DeltaECD (C594.9B)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528194</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NotchICD (C17.9C6)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528410</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Vps26</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Su(dx)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Ndfip</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 affinity gels</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_10062721</td>
+      <td>15 μl gel per coIP reaction</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 affinity gels</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_10063035</td>
+      <td>15 μl gel per coIP reaction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The Leica Application Suite 2.6.3</td>
+      <td>Leica</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1</td>
+      <td>Invitrogen</td>
+      <td>Cat#: V79020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>vps26 (Drosophila cDNA)</td>
+      <td>BDGP</td>
+      <td>LD29140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>vps35-RB (Drosophila cDNA)</td>
+      <td>BDGP</td>
+      <td>SD03023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>nedd4-RK (Drosophila cDNA)</td>
+      <td>BDGP</td>
+      <td>SD04682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>vps35 (human cDNA)</td>
+      <td>Human ORFeome</td>
+      <td>Internal ID: 7965 Genbank Accession: CV029249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>vps26A (human cDNA)</td>
+      <td>Addgene</td>
+      <td>Cat#17636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NICD1 (mouse cDNA)</td>
+      <td>Addgene</td>
+      <td>Cat#20183</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 Fly culture and crosses were performed according to standard procedures. Drosophila stocks used in this study include: vps35E42 (Belenkaya et al., 2008)(a gift from Dr. Xinhua Lin); vps351 (Belenkaya et al., 2008); vps26G2008 (BL26623); UAS-Vps35-FLAG (this study); UAS-Vps26-Myc (RR: RNAi resistant form; this study); UAS-vps26-RNAi (BL38937); UAS-Notch-RNAi (VDRC27229); UAS-Dl-DN (BL26698); UAS-Dl-RNAi (BL34322); UAS-Psn-DN (BL8323); UAS-Kuz-DN (BL6578); UAS-Rab5-DN (BL42704); UAS-Rab7-CA (BL42707); UAS-Hrs (Lloyd et al., 2002); UAS-GFP-LAMP1 (BL42714); UAS-mito-GFP (BL8442); UASp-YFP-Rab9-WT (BL9784); UASp-YFP-Rab9-CA (BL9785); UAS-Su(dx) (BL51664); UAS-Myc-Su(dx) (this study); UAS-FLAG-Ndfip (this study); UAS-Myc-Su(dx)-C917A (this study); UAS-Myc-Nedd4 (this study); insc-Gal4 (Luo et al., 1994); PntP1-Gal4 (Zhu et al., 2011); ase-Gal4 (Zhu et al., 2006); erm-Gal4 (II) (Xiao et al., 2012); erm-Gal4 (III) (Pfeiffer et al., 2008; Weng et al., 2010); E(spl)mγ-GFP (Almeida and Bray, 2005; Monastirioti et al., 2010); UAS-Spdo-GFP (Song and Lu, 2012); UAS-wg-RNAi (BL32994); UAS-EGFR-DN (BL5364); UAS-med-RNAi (BL52214); UAS-ptc-DN (BL31928); UAS-Hrs-RNAi (BL34086, BL33900); N55e11; NiGFP (Couturier et al., 2012) and UAS-FLP, Ubi-p63E-FRT > stop > FRT-nlsGFP (BL28282) (Evans et al., 2009).
 
@@ -115,17 +739,17 @@ All larval brains phenotypes were analyzed at late third instar larval stage. No
 
 The experimental conditions shown in Figures 1D, F, 3D, 5B, D, F, 6C, E and I are as follows: Eggs were collected for 4–6 hr at 22°C, kept at 22°C for 24 hr (Figures 1D, F, 3D, 5B, 6C and E) or 48 hr (Figures 5D, F and 6I) after hatching and shifted to 29°C until dissection at late third instar larval stage. The experimental conditions shown in 3C is as follows: Eggs were collected for 4–6 hr at 25°C, kept at 18°C for 8 days, then shifted to 29°C for 40 hr before dissection. The experimental conditions shown in Figure 1—figure supplement 2 and Figure 6—figure supplement 4 are as follows: Eggs were collected for 4–6 hr at 22°C. Larvae were raised at 29°C immediately after hatching until dissection at late third instar larval stage.
 
-## Molecular biology
+### Molecular biology
 
 Full-length cDNA clones for vps35, vps26 (LD29140), and nedd4 were obtained from Drosophila Genomics Resource Center (DGRC). For ndfip and su(dx) cDNAs, their respective coding exons were cloned by genomic DNA PCR from w1118 flies and UAS-Su(dx) transgenic flies respectively, assembled together by the Gibson Assembly method and fully sequenced. FLAG-Ndfip, Myc-Nedd4 and Myc-Su(dx)-WT were constructed by adding a FLAG tag (DYKDDDDK) or a Myc tag (EQKLISEEDL) respectively to the N-terminus. Vps35-FLAG and Vps26-Myc were constructed by adding a FLAG tag or a Myc tag respectively to the C-terminus. Note that shmiRNA-resistant sequence was introduced into Vps26 before it was cloned into the pUAST vector. A missense mutation (C917A) was introduced into Su(dx) to generate a ligase-inactivated form. NICD-V5 was generated as described before (Liu et al., 2017). All transgenic plasmids were verified by DNA sequencing before germline transformation.
 
 For coimmunoprecipitation experiments, Vps26-FLAG and Vps26-Myc were cloned into pcDNA3.1 vector respectively (Invitrogen). Vps26 truncated forms Vps26-ΔN (aa 147–478), Vps26-ΔM (aa 1–146 and aa 297–478), Vps26-ΔC (aa 1–296) and Vps26-M (aa 110–357) were cloned with a N-terminal FLAG tag into pcDNA3.1 vector respectively. Mouse NICD cDNA was obtained from Addgene, while mouse vps26 cDNA were generated by introducing I16V, V17A, E217D to human vps26 cDNA (Addgene). NICD-V5 construct was generated as described before (Liu et al., 2017), except that aa 1767–1770, 1832–1835, 2202–2205 and 2222–2225 were deleted to remove its nuclear localization sequence. NICD truncated versions NICD-N (aa 1771–2230) and NICD-ANK (aa 1838–2230) were cloned into the vector pcDNA3.1 with V5 tag added to C-terminus, and NICD-C-ΔPEST (aa 2231–2603) with a V5 tag inserted between aa 2571 and 2572. To generate mouse NICD-ΔNLS-V5, aa 1749–1752, 1771–1774, 1811–1814, 2146–2149 and 2167–2170 were deleted from mouse NICD (aa 1744–2531 of mouse Notch1 protein) and a V5 tag was inserted between aa 2396 and 2397, before cloned into pcDNA3.1 vector. mVps26-FLAG and mVps26-Myc were cloned into the pCMV vector respectively.
 
-## MARCM clonal analysis
+### MARCM clonal analysis
 
 Neuroblast MARCM clones were generated as previously described (Song and Lu, 2011). Briefly, newly hatched larvae were heat-shocked at 37°C for 90 min and further aged at 25°C for indicated time before dissection. FRTG13, vps351 was used for neuroblast MARCM clonal analysis, as shown in Figure 1I and Figure 1—figure supplement 2, with FRTG13 alone serving as a negative control.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For larval brain immunostaining, larvae were dissected in Schneider’s Insect Medium (Sigma-Aldrich) and proceeded as previously described (Liu et al., 2017; Song and Lu, 2011). Briefly, larval brains were fixed with 4% paraformaldehyde in PEM buffer (100 mM PIPES at pH 6.9, 1 mM EGTA, 1 mM MgCl2) for 22 min at room temperature. Brains were washed several times with PBST buffer (1 × PBS plus 0.1% Triton X-100) and were incubated with appropriate primary antibody overnight at 4°C or for 2 hr at room temperature, labeled with secondary antibodies according to standard procedures, and mounted in Vectashield (Vector Laboratories). For anti-Delta staining, larval brains were fixed with 4% paraformaldehyde/PEM buffer for 20 min at room temperature, blocked in 3% BSA/PBST for 20 min at room temperature, before being incubated with mouse anti-Delta (1:200) in 0.5% BSA/PBST for 12 hr at 4°C. After washing with PBST buffer, brains were incubated with goat anti-mouse secondary antibody (1:100) in 0.5% BSA/PBST for 2 hr at room temperature before being mounted in Vectashield.
 
@@ -133,20 +757,20 @@ Antibodies generated in this study were rabbit anti-Vps26 antibody [GST fusion o
 
 Other primary antibodies used for immunohistochemistry were chicken anti-GFP (1:2000, Abcam), mouse anti-Pros (1:100, Developmental Studies Hybridoma Bank [DSHB]), mouse anti-NECD C458.2H (1:80, DSHB), rat anti-Miranda (1:100; Abcam), rabbit anti-Dpn (1:1000, Y.N. Jan), rabbit anti-Rab7 (1:2000, a generous gift from A. Nakamura) (Tanaka and Nakamura, 2008); guinea pig anti-Numb (1:1000, a generous gift from J. Skeath) (O'Connor-Giles and Skeath, 2003), mouse anti-β-galactosidase (1:100, DSHB), guinea pig anti-Ase (1:400, Y.N. Jan), rabbit anti-aPKC ζ C20 (1:1000, Santa Cruz Biotechnologies) and mouse anti-DlECD C594.9B (1:200, DSHB). The outline of individual, dispersed neuroblast lineages was determined by the staining pattern of general cell cortex marker F-actin or CD8-GFP/CD8-RFP and marked by white dashed line.
 
-## Cell line and transfection
+### Cell line and transfection
 
 Human embryonic kidney HEK293T cells (ATCC, RRID: CRL-3216; obtained from Dr. Hong Wu’s laboratory, Peking University, and authenticated by ATCC) were maintained in DMEM medium (Invitrogen) supplemented with 10% FBS at 37˚C and 5% CO2. DNA transfection was performed using a standard polyethylenimine (PEI) protocol. The cell line has been tested for and confirmed to be negative for mycoplasma contamination, using short tandem repeat (STR) profiling technique.
 
-## Coimmunoprecipitation
+### Coimmunoprecipitation
 
 Coimmunoprecipitation (CoIP) assays in HEK 293 T cell extracts were performed as previously described (Liu et al., 2017; Song and Lu, 2012). Briefly, 48 hr after transfection, HEK 293 T cells were harvested, washed and resuspended in lysis buffer [50 mM Tris-HCl (pH 8.0); 120 mM NaCl; 5 mM EDTA; 1% NP-40; 10% glycerol; protease inhibitor cocktail (Sigma-Aldrich); 2 mM Na3VO4] and kept on ice for 20 min. Cell extracts were sonicated with Bioruptor Plus (Biosense) at 4°C. The cell extracts were clarified by centrifugation, and proteins immobilized by binding to anti-FLAG M2 or anti-V5 (Sigma-Aldrich) affinity gel for 4 hr or overnight at 4°C. Beads were washed and proteins recovered directly in SDS-PAGE sample buffer. Rabbit anti-FLAG (Sigma-Aldrich), rabbit anti-V5 (Sigma-Aldrich) or mouse anti-c-Myc (CWBIO) were used for Western blot analysis.
 
 For in vivo coIP, larval brains coexpressing UAS-Vps35-FLAG and UAS-Notch-V5 by insc-Gal4 were used as experimental group, whereas larval brains expressing UAS-Vps35-FLAG alone by insc-Gal4 served as control. Approximately 350 late third instar larval brains of each genotype were dissected and collected in ice-cold 1xPBS solution. Protein samples were prepared by grinding brains in lysis buffer [50 mM Tris-HCl, 120 mM NaCl, 5 mM EDTA, 10% glycerol, 1% NP-40, protease inhibitor cocktail (Sigma-Aldrich)] with a plastic pestle. Immunoprecipitation was carried out with anti-V5 affinity gels (Sigma-Aldrich).
 
-## Transplantation assay
+### Transplantation assay
 
 GFP+ larval brain pieces were transplanted into the abdomen of young female adult host flies as previously described (Caussinus and Gonzalez, 2005; Liu et al., 2017). After transplantation, host flies were transferred to fresh food every day and were observed under a fluorescent scope every two days to analyze tumor formation and metastasis.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Drosophila late third instar larval brains were dissected in PBS buffer, and immediately transferred into Fixation buffer I (2% paraformaldehyde/2.5% glutaraldehyde in 0.1 M phosphate buffer, pH 7.4) for 2 hr at room temperature, and then overnight at 4°C. The samples were then fixed in the Fixation buffer II (1% tannic acid/2.5% glutaraldehyde in 0.1 M phosphate buffer, pH 7.4) for 2 hr at room temperature. After rinsing several times in phosphate buffer, the brain samples were post-fixed in 2% OsO4 with 1.5% Potassium Ferrocyanide for 1 hr at room temperature and stained with 2% aqueous uranyl acetate overnight at 4°C. Following several washes in distilled water, samples were dehydrated through a graded alcohol series and subsequently embedded in Spurr’s resin (SPI supplies, PA, USA). Ultra-thin sections (70 nm) were cut with a diamond knife using an ultramicrotome (UC7, Leica Microsystem) and mounted on copper grids with a single slot. Sections were stained with uranyl acetate and lead citrate, and observed under a FEI Tecnai G2 Spirit transmission electron microscope at 120 kV.

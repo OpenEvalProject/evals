@@ -18,15 +18,11 @@ The manuscript could be improved by addressing several issues that are raised by
 
 1) The LynA degradation mechanism controls macrophage activation in response to pharmacological Csk inhibition, but does it also apply in response to a physiological stimulus?
 
-To mimic a soluble, physiological stimulus like cell debris, we treated BMDMs with laminarin, a soluble form of β-glucan that interacts with Dectin-1 but forms sub-threshold-sized receptor clusters (Goodridge et al., 2011). These new data show consistently that priming WT BMDMs with IFN-γ increases Erk phosphorylation induced by treatment with laminarin, in contrast to our observations with zymosandep. Representative data are shown in the Author response image 1.10.7554/eLife.09183.030Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09183.030
-
-DOI: http://dx.doi.org/10.7554/eLife.09183.030
+To mimic a soluble, physiological stimulus like cell debris, we treated BMDMs with laminarin, a soluble form of β-glucan that interacts with Dectin-1 but forms sub-threshold-sized receptor clusters (Goodridge et al., 2011). These new data show consistently that priming WT BMDMs with IFN-γ increases Erk phosphorylation induced by treatment with laminarin, in contrast to our observations with zymosandep. Representative data are shown in the Author response image 1.10.7554/eLife.09183.030Author response image 1.
 
 Unfortunately, Dectin-1 ligation failed to produce sufficient SFK activation to assess whether local LynA ubiquitination and degradation block signaling as we predict, and explain the suggestive data above. Although SFK activity is essential for signaling in response to zymosandep (shown in Figure 3 of the manuscript), we cannot visualize bulk activation of the SFKs in response to this stimulus (shown in the pSFKY416 blot in Figure 4 of the manuscript).
 
-To confirm this observation with zymosandep and laminarin treatment in parallel, we performed immunoprecipitation experiments with antibodies against LynA or the activated SFKs and blotted for ubiquitination and total LynA/activation-loop-phosphorylated SFK levels in the immunoprecipitates and the lysates. These new data are shown in Author response image 2.10.7554/eLife.09183.031Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.09183.031
-
-DOI: http://dx.doi.org/10.7554/eLife.09183.031
+To confirm this observation with zymosandep and laminarin treatment in parallel, we performed immunoprecipitation experiments with antibodies against LynA or the activated SFKs and blotted for ubiquitination and total LynA/activation-loop-phosphorylated SFK levels in the immunoprecipitates and the lysates. These new data are shown in Author response image 2.10.7554/eLife.09183.031Author response image 2.
 
 We do not yet know whether our inability to detect SFK activation in response to Dectin-1 ligation is because a pool of basally active SFKs that is harnessed for receptor signaling is too small or whether SFK activation is too highly localized to be detected in whole-cell lysate. Recent studies of the T-cell SFKs have implicated a basally active pool of Lck as the major driver of TCR signaling (Manz et al., 2015; Nika et al., 2010). On the other hand, previous microscopy studies have shown that a pool of activated SFKs may be enriched within the phagocytic synapse (Goodridge et al., 2011). Please see paragraph four of the subsection “SFK activation in the absence of receptor clustering fails to induce downstream signaling” for a brief discussion on this observation.
 

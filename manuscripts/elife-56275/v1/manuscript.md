@@ -35,23 +35,35 @@ We use these tractable, structurally complex TS systems to address an important 
 
 ## Results
 
-## Overview of TS microcosms
+### Overview of TS microcosms
 
 We used standard microfluidics procedures to generate a visualization chamber out of polydimethylsiloxane (PDMS), a non-toxic gas-permeable silicone polymer commonly used for microfluidics fabrication (Figure 1A; see Materials and methods). The chambers were designed as 3 × 5 mm hexagons (free of 90° corners that can produce regions of low mixing). Inlet and outlet channels were 150 µm wide and 3 mm long, and the inlet and outlet ports themselves were 1 mm circles. Chamber height was 100 µm. As detailed below, the TS matrices within these chambers were optically transparent (Figure 1B) and enabled the three-dimensional visualization of bacteria held within them (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig1-v1.jpg)
 
-**Figure 1.:** (A) Manufacture process of microcosm fluidics chambers. (B) 20% ethanol added after chip manufacture hydrates dry, hydrophobic Nafion and renders it transparent. Microfluidics chamber (3 × 5 mm hexagon, with 200 µm wide channels) filled with Nafion and attached by tubing to syringe with 20% ethanol, held in syringe pump. As ethanol is slowly flowed into the microcosm by the syringe pump, the Nafion hydrates and becomes transparent. Rehydrated Nafion can then be washed with media, washing away ethanol and rendering microcosms suitable for cell culture. (C) Three-dimensional confocal rendering of fluorescently labeled E. coli cells visualized to 100 µm depth in Nafion-based TS microcosm by confocal microscopy. Sulforhodamine-stained Nafion particles (false-colored green), and E. coli cells constitutively expressing cyan fluorescent protein (P, false-colored red). Scale bar = 100 µm.spacC-cfp
+**Figure 1.:** (A) Manufacture process of microcosm fluidics chambers. (B) 20% ethanol added after chip manufacture hydrates dry, hydrophobic Nafion and renders it transparent. Microfluidics chamber (3 × 5 mm hexagon, with 200 µm wide channels) filled with Nafion and attached by tubing to syringe with 20% ethanol, held in syringe pump. As ethanol is slowly flowed into the microcosm by the syringe pump, the Nafion hydrates and becomes transparent. Rehydrated Nafion can then be washed with media, washing away ethanol and rendering microcosms suitable for cell culture. (C) Three-dimensional confocal rendering of fluorescently labeled E. coli cells visualized to 100 µm depth in Nafion-based TS microcosm by confocal microscopy. Sulforhodamine-stained Nafion particles (false-colored green), and E. coli cells constitutively expressing cyan fluorescent protein (PspacC-cfp, false-colored red). Scale bar = 100 µm.
 
-## Visualization of TS matrices
+### Visualization of TS matrices
 
 To determine whether pore space could be adequately distinguished from particle space within our model soil systems, we first tested whether particle edges could be rendered visible in the two TS matrices. (Note that for speed and ease, these fluorescence parameterization experiments were conducted in microwell slides rather than in PDMS microcosms). Nafion particle edges were visible through water by brightfield or differential interference contrast (DIC) microscopy (Figure 2A). As shown previously (Downie et al., 2012), Nafion can be rendered fluorescent in the RFP channels by staining with sulforhodamine (Figure 2A). We found that a small proportion (≤1%) of Nafion particles were also slightly autofluorescent in the FITC channel (Figure 2A). For context, the detected autofluorescence was quite weak: the Nafion was less autofluorescent than LB (lysogeny broth), a common microbiological growth medium. Cryolite particle edges, by contrast, are not visible in water by brightfield microscopy, presumably due to close RI matching (Figure 2—figure supplement 1). They are visible by DIC microscopy or other polarized light microscopy and are partly visible in the photomultiplier tube (PMT) channel of a confocal microscope (Figure 2—figure supplement 1, Figure 2B). Cryolite particles were not able to be stained by sulforhodamine, fluorescein, or Alexa Fluor 647 amine dye (Figure 2B). They also were not autofluorescent in the FITC, RFP, or fRFP channels (Figure 2B). However, the cryolite particle matrix can be visualized by staining the pore water around particles with non-toxic fluorescent dyes such as sulforhodamine, fluorescein, or Alexa Fluor dyes (Figure 2C). These images can be inverted to more clearly visualize the particles themselves (Figure 2C). Pore water in a Nafion particle matrix can be visualized using these same dyes, which is particularly helpful when imaging unsaturated systems where it is important to be able to distinguish liquid- from air-filled pores (Figure 2C). Because cryolite particles cannot be stained and the particles therefore appear as negative space, particles cannot be distinguished from air-filled pores (Figure 2C). Nafion is therefore more suitable than cryolite for applications requiring an unsaturated TS matrix.
 
-## Nafion particle size
+![Figure 2.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig2-v1.jpg)
+
+**Figure 2.:** Nafion (A) and cryolite (B) were packed into a microwell microscope slide, saturated with water containing the fluorophore indicated, and imaged on a confocal laser scanning microscope with the noted filter sets. A single Z-slice about 10 µm deep into the TS matrix is shown here. ‘Cryolite with fluorescein inverted’ is the inverted image of ‘cryolite with fluorescein’, highlighting particles rather than the pore space. Partially hydrated microcosms (C) have air-filled pockets (black). Image size of each square is 850 × 850 µm. Scale bars are 250 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** M. fragilis fungus was grown from spores for 24 hr at 30°C in a microfluidic chamber packed with crystalline cryolite and saturated with aqueous minimal salts growth medium (MSN, minimal salts with free ammonium and 2% glucose). Images of the fungus were taken through the cryolite matrix, about 25 µm up from the cover slip. Images taken on Zeiss Axio Observer widefield light microscope, 40x objective, water immersion lens, under brightfield or DIC illumination. Scale bar = 40 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Commercially available Nafion powder was washed (see Materials and methods) and filtered through 40 µm cell strainer. Particles were stained with sulforhodamine to render particles fluorescent in the RFP channel (false-colored red). Particles were imaged by confocal microscopy and 15 µm z-stacks flattened into maximum intensity projections. Images were analyzed in Fiji image analysis software by binarizing and applying watershed process, then calculating particle area size, represented in density plot. Scale bar = 100 µm.
+
+### Nafion particle size
 
 We tested a range of particle size distributions of TS. We found that, based on their optical properties and our interest in imaging microbes, the optimal particle size distribution was between 2 µm and 40 µm (Figure 2—figure supplement 2); we speculate that the particle size distributions using a higher proportion of small (1–2 µm) particles may worsen optical resolution with depth due to light scattering.
 
-## Optical properties of TS microcosms
+### Optical properties of TS microcosms
 
 To assess how well micron-sized objects (e.g. bacteria) could be visualized and resolved within aqueous TS microcosms to 100 µm depth, we mixed 1 µm fluorescent beads within water-saturated TS microcosms and acquired z-stacks from the coverslip up to 100 µm into the microcosms by confocal microscopy (Zeiss 710 CLSM, 40x water immersion objective, NA 1.2, 488/514 nm excitation/emission filters). Bead brightness decreased with depth for both TS substrates, although more steeply for Nafion than for cryolite (Figures 3A, B and D). For example, while beads 50 µm into a Nafion microcosm have on average about 40% of the intensity of a bead at the coverslip, beads at the same depth in cryolite only decrease to approximately 60% of their coverslip intensity (Figure 3A, B and D). The loss of brightness with depth results in more pixelated images and a lower signal-to-background ratio for 100-µm-deep beads in Nafion compared to 100-µm-deep beads in cryolite (Figure 3C). The lower variances between beads deeper in the Nafion matrix are due to the relative dimness of these beads (Figure 3A, narrow 95% confidence intervals for beads at 75 and 100 µm). The intensities of the beads are scarcely detectable above the background, and therefore their intensities fall within a compressed range.
 
@@ -61,7 +73,7 @@ To assess how well micron-sized objects (e.g. bacteria) could be visualized and 
 
 To determine the spatial resolution limits of our system, and therefore how suitable it is to imaging of single microbial cells, lateral intensity profiles of 1 µm beads at the coverslip or 100 µm deep were taken and full width at half-maximum (FWHM) values were calculated as a measure of lateral spatial resolution (Figure 3D and E). In Nafion, the FWHM of beads 100 µm deep (mean 0.4122 µm ± 0.0086 SD) was greater than the FWHM of beads at the coverslip (mean 0.3755 µm ± 0.0157 SD), indicating an approximately 10% loss of lateral resolution with depth. In cryolite, in contrast, the FWHM (mean 0.3944 µm ± 0.0093 SD) of beads indicated an approximately 5% loss of lateral resolution relative to a bead at a coverslip. Overall, beads at 100 µm in cryolite were slightly but significantly better resolved than those in Nafion, with an average difference of about 4% (0.0178 µm) between them (Figure 3f; Tukey-Kramer HSD p-value=0.0160; bootstrap p-value testing difference in means = 0.01780). These small losses of resolution at 100 µm depth in both Nafion and cryolite TS microcosms relative to at the coverslip were statistically significant (Figure 3F; n = 8 beads per category, one-way ANOVA of all three categories F-statistic 19.904, p-value=1.418×10−16; Tukey-Kramer HSD p-value=8.6×10−6 for coverslip versus Nafion and p-value 0.01014 for coverslip versus cryolite; bootstrap p-value testing difference in means 0.0006001 for coverslip versus Nafion and 0.003200 for coverslip versus cryolite). Thus, although previous work focused on closer RI matching of TS particles and liquid in order to improve image quality through the particle matrix (Downie et al., 2012; Leis et al., 2005; O'Callaghan et al., 2018), we found that exact RI matching was not necessary to obtain well-resolved images of 1 µm-diameter fluorescent objects even through 100 µm of TS, suggesting that even micron-sized bacteria could be imaged in both Nafion and cryolite TS microcosms to considerable depth.
 
-## B. subtilis bacteria are visible to ~75 µm depth in Nafion microcosms and over 100 µm depth in cryolite microcosms
+### B. subtilis bacteria are visible to ~75 µm depth in Nafion microcosms and over 100 µm depth in cryolite microcosms
 
 From our assessment of the optical properties of TS microcosms using 1 µm fluorescent beads, we expected that fluorescently labeled bacteria would be resolvable within both TS substrates, but that cryolite would better enable the visualization of bacteria. To test this, we grew B. subtilis NCIB3610 expressing a constitutive yellow fluorescent protein (YPet) in aqueous growth medium for two days within TS microcosms, then imaged cells live to 100 µm depth (Videos 1–4, Figure 4). We chose B. subtilis NCIB3610 as the bacterium for this study because it is a model soil saprophyte that can be easily cultured in the laboratory and is genome sequenced and genetically tractable (allowing for the production of fluorescent strains), yet it retains phenotypes lost from many laboratory strains of B. subtilis that are important adaptations to life in soils (e.g. biofilm production, secondary metabolite synthesis, etc.; McLoon et al., 2011; Nye et al., 2017).
 
@@ -69,19 +81,35 @@ From our assessment of the optical properties of TS microcosms using 1 µm fluor
 
 **Figure 4.:** B. subtilis 3610 cells expressing constitutive YPet were inoculated into TS microcosms in MSgg, incubated at room temperature (22°C) for 48 hr, and Z-stacks acquired by confocal microscopy. Cells were not fixed, but imaged live. Single slices (0.75 µm thick) acquired at the coverslip, 75 µm, and 100 µm deep into (A) Nafion and (B) cryolite TS microcosms are shown (frames from Videos 1, 2, 3 and 4, YFP and DIC channels only). White arrows indicate examples of single visible bacteria. Scale bars = 1 µm.
 
+![Video 1.](https://cdn.elifesciences.org/articles/56275/elife-56275-video1.mp4.jpg)
+
+**Video 1.:** B. subtilis 3610 cells expressing constitutive YFP were inoculated into Nafion microcosms in MSgg, incubated at room temperature (22°C) for 48 hr, and Z-stacks acquired by confocal microscopy. Nafion was stained with sulforhodamine, visible in the RFP channel (green), and AF647 amine was added to the liquid medium, visible in the far-red channel (blue). YPet-producing B. subtilis cells are visible in the YFP channel (red), with some fluorescence also visible in the RFP channel (green) resulting in yellow appearance. Image size is 101.25 × 101.25 µm. Each frame shows a 0.75 µm slice.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56275/elife-56275-video2.mp4.jpg)
+
+**Video 2.:** Same as in Video 1, but with PMT (non-fluorescent) channel added.
+
+![Video 3.](https://cdn.elifesciences.org/articles/56275/elife-56275-video3.mp4.jpg)
+
+**Video 3.:** B. subtilis 3610 cells expressing constitutive YPet were inoculated into cryolite microcosms in MSgg, incubated at room temperature (22°C) for 48 hr, and Z-stacks acquired by confocal microscopy. AF647 amine was added to the liquid medium, visible in the far-red channel (blue). YPet-producing B. subtilis cells are visible in the YFP channel (red), with some fluorescence also visible in the RFP channel (green) resulting in yellow appearance. Image size is 101.25 × 101.25 µm. Each frame shows a 0.75 µm slice.
+
+![Video 4.](https://cdn.elifesciences.org/articles/56275/elife-56275-video4.mp4.jpg)
+
+**Video 4.:** Same as in Video 3, but with PMT (non-fluorescent) channel added.
+
 As expected, the fluorescence signals from the bacteria and the PMT images both decay with depth. In Nafion, bacteria were visible up to approximately 75 µm depth (Figure 4A); in cryolite, bacteria were visible to at least 100 µm depth; we did not image further (Figure 4B). Bacteria were more visible in the PMT channel than the YFP fluorescence channel in both Nafion and cryolite (Videos 1–4, Figure 4). In cryolite in particular, the bacteria were readily visible and identifiable in the PMT channel even at 100 µm, indicating that microbial cells do not necessarily have to be fluorescent in order to be visible in cryolite TS microcosms and suggesting the suitability of the material for non-fluorescently-labeled, non-genetically tractable microorganisms.
 
-## TS microcosms enable submicron resolution imaging of bacteria and fungi in three dimensions over time
+### TS microcosms enable submicron resolution imaging of bacteria and fungi in three dimensions over time
 
 Bacteria and fungi are both ecologically important soil microorganisms; we therefore sought to determine whether TS microcosms were compatible with the culture and visualization of both. B. subtilis bacteria and Mucor fragilis fungi were able to grown and visualized non-destructively over time in both Nafion- and cryolite-based TS microcosms (Figure 5). We found that B. subtilis cells were still active in hydrated TS microcosms (as indicated by motility within liquid-filled pores) after 2 weeks in MSgg medium (data not shown). M fragilis inoculated as spores into TS microcosms grew into mycelial masses within 48 hr (Figure 5B), demonstrating the biocompatibility of these materials. Moreover, M. fragilis hyphae grown in TS show less variation in width and a more tortuous growth habit (as defined by deviation from straight lines of growth) than M. fragilis hyphae are grown without TS (Figure 5C). This suggests a possible influence of narrow pore space and touch stimuli offered by particles on fungal branching and morphology (Soufan et al., 2018).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig5-v1.jpg)
 
-**Figure 5.:** B. subtilis and M. fragilis in TS over time.(A) Cells of a B. subtilis 3610 eps-tasA biofilm mutant strain expressing constitutive YPet were inoculated into TS microcosms in MSgg, incubated at room temperature (22°C), and imaged over time. Images are ten-micron thick Z-stacks flattened into color-coded Z-projections. Filaments in Nafion (left) are chains of single cells, some of which have segmented, and some of which have not yet expressed autolysins for segmentation and thus appear as filaments (Chen et al., 2009). Scale bar = 20 µm. (B) M. fragilis spores were inoculated into microcosms with or without TS and incubated for 48 hr at 30°C in MSN minimal salts with 2% glucose. Confocal micrographs of 25 µm Z-stacks flattened into maximum intensity projections; sulforhodamine-stained Nafion (false-colored green), M. fragilis autofluorescence in YFP channel (false-colored red), PMT channel (false-colored blue). Scale bar = 20 µm.
+**Figure 5.:** (A) Cells of a B. subtilis 3610 eps-tasA biofilm mutant strain expressing constitutive YPet were inoculated into TS microcosms in MSgg, incubated at room temperature (22°C), and imaged over time. Images are ten-micron thick Z-stacks flattened into color-coded Z-projections. Filaments in Nafion (left) are chains of single cells, some of which have segmented, and some of which have not yet expressed autolysins for segmentation and thus appear as filaments (Chen et al., 2009). Scale bar = 20 µm. (B) M. fragilis spores were inoculated into microcosms with or without TS and incubated for 48 hr at 30°C in MSN minimal salts with 2% glucose. Confocal micrographs of 25 µm Z-stacks flattened into maximum intensity projections; sulforhodamine-stained Nafion (false-colored green), M. fragilis autofluorescence in YFP channel (false-colored red), PMT channel (false-colored blue). Scale bar = 20 µm.
 
 The apparent differences in B. subtilis growth between Nafion and cryolite microcosms in Figure 5 are, in our estimation, due to the particular distribution of cells within the small field of view. Videos 1–4 show a 10x larger field of view than Figure 5 (and therefore a more representative distribution of cells) at 48 hr. These movies show robust B. subtilis growth in both Nafion and cryolite microcosms, indicating comparable abundance and viability.
 
-## TS microcosms are compatible with Raman microspectroscopy and enable in situ single-cell detection of microbial activity as measured by uptake of D2O
+### TS microcosms are compatible with Raman microspectroscopy and enable in situ single-cell detection of microbial activity as measured by uptake of D2O
 
 All microbial metabolism involves the uptake of water and incorporation of hydrogen from water into cellular biomass. By tracking the incorporation of the non-toxic, isotopically-labeled deuterium from ‘heavy’ water (D2O) into cellular biomass through peak shifts in the Raman spectrum of single cells, it is possible to detect which cells in a D2O-treated population are active (Berry et al., 2015). Peaks in the area between 2030 and 2300 cm−1 (referred to hereafter as the ‘CD region’ or ‘CD area’, the region indicating Raman signal arising from carbon-deuterium bonds) in single-cell Raman spectra are correlated with D2O uptake, which in turn is a measure of the metabolic activity of a bacterium (Berry et al., 2015).
 
@@ -91,21 +119,33 @@ In agreement with previous work (Berry et al., 2015), we found that D2O-grown ce
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig6-v1.jpg)
 
-**Figure 6.:** 2O labeling in B. subtilis cells in TS microcosms.B. subtilis 3610 cells were grown in minimal salts growth medium made with either regular water or 50% heavy water (deuterium oxide, D2O). Cells were then either spotted onto an aluminum slide (A, D) or inoculated into separate Nafion (B, E) or cryolite (C, F) microcosms. Raman spectra of single cells were obtained by microspectroscopy on the aluminum slide, or within the TS matrix from cells embedded anywhere from 15 to 85 µm deep within the matrix. Average background subtracted spectra cells grown in H2O or D2O show a broad peak in the CD region of the spectrum between 2050 and 2250 in D2O-labeled cells (D, E, F). CD region for individual cell spectra was calculated as the area under the curve between 2150 and 2200 cm−1. Each dot represents CD region for an individual background-subtracted cell spectrum (A, B, C). Each boxplot represents a single separate biological replicate (e.g. all H2O-grown cells inoculated into Nafion came from a single culture, and all H2O-grown cells inoculated into cryolite came from a separate single culture). D2O-labeled cells have larger CD area than H2O-labeled cells on all three substrates (Welch’s t-test p-value<1.3 × 10−5 for all three substrates).
+**Figure 6.:** B. subtilis 3610 cells were grown in minimal salts growth medium made with either regular water or 50% heavy water (deuterium oxide, D2O). Cells were then either spotted onto an aluminum slide (A, D) or inoculated into separate Nafion (B, E) or cryolite (C, F) microcosms. Raman spectra of single cells were obtained by microspectroscopy on the aluminum slide, or within the TS matrix from cells embedded anywhere from 15 to 85 µm deep within the matrix. Average background subtracted spectra cells grown in H2O or D2O show a broad peak in the CD region of the spectrum between 2050 and 2250 in D2O-labeled cells (D, E, F). CD region for individual cell spectra was calculated as the area under the curve between 2150 and 2200 cm−1. Each dot represents CD region for an individual background-subtracted cell spectrum (A, B, C). Each boxplot represents a single separate biological replicate (e.g. all H2O-grown cells inoculated into Nafion came from a single culture, and all H2O-grown cells inoculated into cryolite came from a separate single culture). D2O-labeled cells have larger CD area than H2O-labeled cells on all three substrates (Welch’s t-test p-value<1.3 × 10−5 for all three substrates).
 
 Notably, although D2O-labeled cells can be distinguished from H2O-labeled cells in TS microcosms, the differences between these two populations are about 10-fold lower than when measured on an aluminum slide (note differences in y-axis values for Figure 6A versus Figure 6B and C). Therefore, in TS microcosms, there is some overlap in these D2O- and H2O-labeled populations, leading to both false-positive and false-negative classifications. In Nafion microcosms, the cutoff for cells to be classified as D2O-labeled can be set at CD region area = 0.5, since all H2O-labeled cells fall below this cutoff (Figure 6B). This cutoff produces an approximately 9% false-negative rate (D2O-labeled cells misclassified as H2O-labeled cells; two such cells detected here). In cryolite microcosms, the cutoff for cells to be classified as D2O-labeled was necessarily higher due to the higher background noise from the cryolite matrix (note higher and more varied CD area values for H2O-labeled cells in cryolite versus in Nafion matrix, indicating greater background noise in cryolite). The cutoff for cryolite chambers can be set at CD region area = 0.75, since this is the third quartile of H2O-labeled cells (Figure 6C). This cutoff produces a 20% false-positive rate (H2O-labeled cells misclassified as D2O-labeled, due to the eight such cells detected here), and a similar 19% false-negative rate (D2O-labeled cells misclassified as H2O-labeled, due to the five such detected cells).
 
-## TS microcosms enable the in situ detection of 13C uptake by bacterial populations by Raman microspectroscopy
+### TS microcosms enable the in situ detection of 13C uptake by bacterial populations by Raman microspectroscopy
 
 Raman spectroscopy is a powerful tool to detect the uptake of 13C-labeled compounds into cellular biomass by measuring the characteristic ‘red-shift’ of the phenylalanine peak from 1003 cm−1 to 966 cm−1 upon incorporation of 13C into the cell (Huang et al., 2004; Huang et al., 2009; Li et al., 2012; Li et al., 2013; Kumar B N et al., 2016). To test whether we could detect differences in the phenylalanine peak between 12C- and 13C-treated cells within TS microcosms, we grew B. subtilis cells in growth medium containing either 12C- or 13C-glucose and inoculated them into Nafion and cryolite TS microcosms. As a control, we also spotted the cells onto an aluminum slide. We then collected Raman spectra from many single cells within these microcosms.
 
 We quantified 13C incorporation using the formula (A966/(A966 + A1003))x100, where A966 represents the area of the 13C phenylalanine peak and A1003 represents the area of the 12C phenylalanine peak (designated ‘Percent 13C’; see Materials and Methods for details). On aluminum slides, the Percent 13C metric clearly distinguished 12C- and 13C-labeled cells into two non-overlapping populations (Figure 7A; Welch’s t-test p-value<2.2 × 10−16, bootstrap p-value testing difference in means <1.00 × 10−7).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig7-v1.jpg)
+
+**Figure 7.:** B. subtilis 3610 cells were grown in minimal salts growth medium made with either regular (12C) glucose or 13C glucose. Cells were then either spotted onto an aluminum slide (A, D) or inoculated into separate Nafion (B, E) or cryolite (C, F) microcosms. Raman spectra of single cells were obtained by microspectroscopy on the aluminum slide, or within the TS matrix from cells embedded anywhere from 15 to 85 µm deep within the matrix. Percent 13C is calculated individually for each background subtracted cell spectrum (see Materials and methods). Each dot represents Percent 13C for an individual background-subtracted cell spectrum (A, B, C). Each boxplot represents a single separate biological replicate (e.g. all 12C-grown cells inoculated into Nafion came from a single culture, and all 12C-grown cells inoculated into cryolite came from a separate single culture). Average background subtracted spectra cells grown in 12C or 13C glucose are shown (D, E, F). On aluminum slides, 13C-labeled cells show a significantly higher Percent 13C than 12C-labeled cells (A; Welch’s t-test p-value<2.2×10−16). In Nafion TS, the Percent 13C of 13C-labeled cells are not significantly different than 12C-labeled cells (B; Welch's t-test p-value=0.2151). In cryolite TS, 13C-labeled cells show a significantly higher Percent 13C than 12C-labeled cells (C; Welch’s t-test p-value=1.348×10−4).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Representative single-cell spectrum showing 12C-labeled cell spectrum, a background spectrum taken 20 µm away from the cell and capturing the Raman spectrum of the Nafion matrix itself, and the subtracted spectrum (cell spectrum minus background).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Nafion and cryolite powders were spotted onto an aluminum slide and Raman spectra acquired at 532 nm excitation wavelength. Resultant spectra are shown, with peaks of interest highlighted: 962 cm−1 peak in Nafion interferes with reading phenylalanine peak shift at 966 cm−1 in embedded cells; 548 cm−1 peak in cryolite is the only strong peak in the spectrum.
+
 In Nafion TS microcosms, however, we found that these differently labeled cells could not be clearly distinguished from each other. Although over three-quarters of 13C-labeled cells in Nafion had a Percent 13C value of over 75%, a large number of 12C-labeled cells also had high Percent 13C values and were misclassified as 13C-labeled (Figure 7B). As seen in the average spectral traces, 12C-labeled cells have a high background peak at around 965 cm−1 (Figure 7E). To determine why this peak occurs even in 12C-treated cells, we inspected the background spectra of single 12C-grown cells. A representative background spectrum of a single 12C-grown cell shows the same peak at 965 cm−1 (Figure 7—figure supplement 1). This peak within the background may be due to a peak in the same region corresponding to a Nafion-specific C-O-C bond (Bribes et al., 1991; Figure 7—figure supplement 2). The peak remains in the background-subtracted cell spectrum, resulting in the cell being misclassified as 13C-labeled. Because with Raman spectroscopy we typically monitor biomass incorporation of 13C by measuring spectral shifts in the range of 1003 cm−1 to 966 cm−1 (which result from isotopic incorporation into the aromatic ring structure of phenylalanine), this background 965 cm−1 peak indicates that Nafion may not be ideally suited for microbial carbon-uptake studies. Thus, in this Nafion-based TS microcosm, populations of 13C-labeled cells did not have a significantly higher Percent 13C values than 12C-labeled cells (Figure 7B; Welch's t-test p-value=0.2151, bootstrap p-value testing difference in means = 0.2288).
 
 In contrast, in cryolite-based TS microcosms, populations of 13C-treated B. subtilis cells could be distinguished from populations of 12C-treated cells (Figure 7C). 13C-grown cells measured within the cryolite matrix have significantly higher Percent 13C values than 12C -grown cells (Figure 7C; n = 39 12C-grown-cells, n = 20 13C-grown cells; Welch’s t-test p-value=0.0001348; bootstrap p-value testing difference in means = 0.0002002).
 
-## B. subtilis cells attached to dead fungal biomass are more metabolically active after a dry-wet cycle than cells far away from fungal hyphae
+### B. subtilis cells attached to dead fungal biomass are more metabolically active after a dry-wet cycle than cells far away from fungal hyphae
 
 Having established that Raman spectroscopy can be used to distinguish single D2O-treated cells from single H2O-treated cells within a Nafion matrix, and knowing that D2O uptake can be used as a marker of microbial activity (Berry et al., 2015), we applied our method to an ecologically relevant question: how does a desiccation and rehydration cycle within a porous matrix affect microbial activity, and does proximity to a fungus affect whether cells remain active after being dried?
 
@@ -117,7 +157,7 @@ We then monitored the deuterium incorporation of B. subtilis cells that were cla
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/56275/elife-56275-fig8-v1.jpg)
 
-**Figure 8.:** B. subtilis cells on M. fragilis are more metabolically active than cells far from M. fragilis after dry-wet cycle in Nafion-based transparent soil microcosms.(A) B. subtilis cells grown with dead M. fragilis in Nafion TS microcosm undergo a dry-wet cycle, mimicking the dry-down and wet-up of soils. Cells were exposed to D2O for 16 hr during the wet-up phase. Because M. fragilis spores were trapped within the Nafion matrix on the side where they were inoculated, after they germinated, one side of the microcosm filled with hyphae, while the other side remains empty. Confocal microscopy in GFP channel shows autofluorescent M. fragilis hyphae on one side of microcosm (above, and left inset), and no growth on the other side (right inset). Scale bar is 400 µm in both top micrograph and insets. B. subtilis cells measured were classified as either ‘on’ (cells attached to M. fragilis hyphae), ‘near’ (cells attached to Nafion on M. fragilis-inoculated side of microcosm, within 20 µm radius of nearest hypha), or ‘far’ (cells attached to Nafion on side of microcosm without M. fragilis). ‘Far’ cells are 3 mm or more away from nearest M. fragilis hyphae. (B) Most cells (~60–70 percent) have no detectable activity after a dry-wet cycle, regardless of distance from M. fragilis (left panel, all cells with CD area less than 0.5, indicating no activity detectable by D2O uptake). However, cells that did take up D2O took up more of the label when on M. fragilis than cells far from M. fragilis (right panel, one-way ANOVA of all three categories F-statistic 4.7194, p-value=0.0160; Tukey-Kramer HSD p-value<0.0131 for cells on M. fragilis vs far from M. fragilis, Welch’s t-test p-value=0.002398). Results pooled from three separate biological replicate experiments in three separate TS microcosms, indicated by color.
+**Figure 8.:** (A) B. subtilis cells grown with dead M. fragilis in Nafion TS microcosm undergo a dry-wet cycle, mimicking the dry-down and wet-up of soils. Cells were exposed to D2O for 16 hr during the wet-up phase. Because M. fragilis spores were trapped within the Nafion matrix on the side where they were inoculated, after they germinated, one side of the microcosm filled with hyphae, while the other side remains empty. Confocal microscopy in GFP channel shows autofluorescent M. fragilis hyphae on one side of microcosm (above, and left inset), and no growth on the other side (right inset). Scale bar is 400 µm in both top micrograph and insets. B. subtilis cells measured were classified as either ‘on’ (cells attached to M. fragilis hyphae), ‘near’ (cells attached to Nafion on M. fragilis-inoculated side of microcosm, within 20 µm radius of nearest hypha), or ‘far’ (cells attached to Nafion on side of microcosm without M. fragilis). ‘Far’ cells are 3 mm or more away from nearest M. fragilis hyphae. (B) Most cells (~60–70 percent) have no detectable activity after a dry-wet cycle, regardless of distance from M. fragilis (left panel, all cells with CD area less than 0.5, indicating no activity detectable by D2O uptake). However, cells that did take up D2O took up more of the label when on M. fragilis than cells far from M. fragilis (right panel, one-way ANOVA of all three categories F-statistic 4.7194, p-value=0.0160; Tukey-Kramer HSD p-value<0.0131 for cells on M. fragilis vs far from M. fragilis, Welch’s t-test p-value=0.002398). Results pooled from three separate biological replicate experiments in three separate TS microcosms, indicated by color.
 
 When cells classified as D2O-labeled (i.e. CD > 0.5) were pooled from three replicate microcosms (with three biological replicate cultures), we found a statistically significant effect of distance category (i.e. ‘on’, ‘near’, or ‘far’ from M. fragilis) on CD area (Figure 8B; n = 13 cells on M. fragilis, n = 10 cells near M. fragilis, n = 11 cells far from M. fragilis, one-way ANOVA of all three categories F-statistic 4.5988, p-value=0.01782). However, when ‘replicate’ is added as a factor to the model, neither the replicate nor distance category accounted for the observed variance in CD area (one-way ANOVA of all three categories, distance category p-value=0.2255, replicate p-value=0.2248). Replicates A and B show a trend of decreasing CD area with distance from M. fragilis; cells from the replicate C microcosm experiment, however, had such low CD area values overall that only four cells were above the CD > 0.5 detection limit: too few to show a trend with distance category (Figure 8B). Therefore, although distance from M. fragilis does explain the variation in CD region area when all replicates are pooled, the variation between replicates is high enough that when replicate is added as a factor to the model, the distance category ceases to be significant.
 
@@ -128,6 +168,127 @@ By employing stable isotope probing methods, we were able to detect bacterial ac
 In this study, we visualized micrometer-sized bacteria by imaging through TS volumes that represent large bacterial habitats (~100 µm). Although previous studies have used light microscopy to image bacteria with single-cell resolution in transparent porous media (Leis et al., 2005; Oates et al., 2005; Drescher et al., 2013), this work further successfully demonstrates the application and combination of light microscopy and Raman microspectroscopy through deep volumes of TS to visualize microbial distributions and measure metabolic states. Achieving Raman spectroscopy in TS is a particularly ambitious goal: even with perfect refractive index matching, surface refraction and surface scattering by TS substrates can contribute background noise and decrease the intensity of the Raman signal (Everall, 2010; Freebody et al., 2010). Despite these challenging conditions, we were able to detect cell-specific Raman spectra from single, micrometer-sized bacteria throughout hydrated TS matrices.
 
 We summarize the properties of both the polymer Nafion and the crystal cryolite for their suitability to soil microbial ecology studies in Table 1. Both substrates are non-toxic to heterotrophic bacteria and fungi, are inert (i.e. not readily decomposed); enable the visualization of fluorescent cells through 100 µm depth; have soil-relevant cation exchange properties (empirically measured for Nafion [Downie et al., 2012]; theoretically inferred for cryolite [see below]); and are compatible with stable isotope probing by Raman microspectroscopy. However, the two TS substrates have important differences. Nafion has the advantage of being commercially available and pure – as opposed to cryolite crystal, which is sporadically available through gem vendors and may include impurities like siderite, fluorite, and quartz (Pauly et al., 1999). It is important to note that synthetically produced cryolite is not recommended as a TS due to the prevalence of sub-micron particles that highly scatter light, the prevalence of opaque aluminum oxides (Flessa, 1972), and an amorphous molecular structure that leads to higher baseline Raman spectra (Tushcel, 2017).
+
+**Table 1.**
+ Summary table comparing Nafion and cryolite as transparent porous substrates for applications in soil microbial ecology.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterion</th>
+      <th>Nafion</th>
+      <th>Cryolite</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biocompatible?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Inert (i.e. not easily metabolizable or decomposable by bacteria or fungi)?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Submicron resolution through 100 µm of matrix?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bacteria visible with fluorescence through 100 µm of matrix?</td>
+      <td>Somewhat (see text)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bacteria visible without fluorescence through 100 µm of matrix?</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Ready to use without pre-treatment?</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Particles visible under brightfield microscopy?</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Particles visible under DIC and PMT microscopy?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Particles autofluorescent?</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Particles visible after staining with fluorescent dye?</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Pore water visualizable?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Commercially available?</td>
+      <td>Yes</td>
+      <td>Somewhat (see text)</td>
+    </tr>
+    <tr>
+      <td>Inexpensive?</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Pure?</td>
+      <td>Yes</td>
+      <td>Somewhat (see text)</td>
+    </tr>
+    <tr>
+      <td>Desired particle size distributions (between 1 µm and ~ 5 mm) easy to obtain?</td>
+      <td>Somewhat (see text)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Amenable to drying and rewetting?</td>
+      <td>Somewhat (see text)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Cation-exchanging?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Compatible with single-cell D2O tracing by Raman?</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Compatible with population-level D2O tracing by Raman?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Compatible with single-cell 13C tracing by Raman?</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Compatible with population-level 13C tracing by Raman?</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 Cryolite has several advantages over Nafion as a TS substrate. It is considerably cheaper than Nafion (tens of cents per gram as opposed to tens of dollars per gram), readily ground into powder of desired particle sizes by mortar and pestle (as opposed to Nafion, which must be cryomilled or bought pre-ground), and requires no pre-treatment before use (unlike Nafion which requires an extensive number of washes to appropriately functionalize). Cryolite also has the advantage of being extremely optically transparent: micron-sized bacteria can be resolved through even 100 µm of hydrated matrix even under brightfield or DIC illumination on a compound microscope (Figure 4, Figure 2—figure supplement 1). This makes cryolite an attractive candidate for soil microbial ecology studies, since bacteria may be visualized even without being fluorescently labeled, obviating the need for genetic modification or staining. Cryolite also has more natural dry-down and wet-up behavior than Nafion (which requires small amounts of surfactants [15% ethylene glycol or 0.1% Tween] to be re-wet after drying; although generally non-toxic [Blank et al., 1987; Man et al., 2017], both of these surfactants can cause cell stress [Hallsworth et al., 2003; Nielsen et al., 2016]﻿ and can be potential sources of nutrient contamination [Man et al., 2017]).
 
@@ -163,51 +324,159 @@ In conclusion, the TS model microcosms we describe here – in which the locatio
 
 ## Materials and methods
 
-## Strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>NCIB3610 (abbreviated as 3610); ES3 in Shank Laboratory</td>
+      <td>Nye et al., 2017 https://doi.org/10.1128/ genomeA.00364-17</td>
+      <td>GenBank: CP020102.1</td>
+      <td>Available from the Shank lab or Bacillus Genetic Stock Center (BGSCID 3A1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Bacillus subtilis 3610)</td>
+      <td>ES768</td>
+      <td>This study; Shank Laboratory</td>
+      <td></td>
+      <td>B. subtilis 3610 amyE::PspacC-YPet-camR; available from Shank lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Bacillus subtilis 3610)</td>
+      <td>ES769</td>
+      <td>This study; Shank Laboratory</td>
+      <td></td>
+      <td>eps-tasA biofilm gene mutant, B. subtilis 3610 epsA-O::tet tasA::kan amyE::PspacC-YPet-camR; available from Shank lab</td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>epsA-0</td>
+      <td>GenBank</td>
+      <td>BSU_34370 through BSU_34220</td>
+      <td>Extracellular polysaccharide biosynthesis operon</td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>tasA</td>
+      <td>GenBank</td>
+      <td>BSU_24620</td>
+      <td>Major component of biofilm matrix</td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>YPet</td>
+      <td>Ethan Garner, Garner Laboratory</td>
+      <td></td>
+      <td>Yellow fluorescent protein codon-optimized for B. subtilis</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEA003</td>
+      <td>This study; Shank Laboratory</td>
+      <td></td>
+      <td>Available from Shank lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pES037</td>
+      <td>This study; Shank Laboratory</td>
+      <td></td>
+      <td>Available from Shank lab</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mucor fragilis)</td>
+      <td></td>
+      <td>This study; Shank Laboratory</td>
+      <td></td>
+      <td>Isolated the strain from a tall fescue plant in the Piedmont region of North Carolina by Fletcher Halliday, University of North Carolina, 2016; available from Shank lab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>https://imagej.nih.gov/ij/ docs/guide/146-2.html</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Raman spectrum analysis software</td>
+      <td>Berry et al., 2015, http://shiny.csb. univie.ac.at:3838/scattr/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nafion</td>
+      <td>IonPower, Newcastle, DE, USA</td>
+      <td>POWDion Insoluble −40 + 60 Mesh</td>
+      <td>https://ion-power.com/product/ powdion-insoluble-4060-mesh/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cryolite</td>
+      <td>Wilhelm Niemetz Minalerien, Vienna, Austria</td>
+      <td></td>
+      <td>Crystalline form from Ivigtut, Greenland</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain construction
 
 Bacillus subtilis NCIB3610 strains constitutively expressing fluorescent proteins were constructed by vector cloning, transformation of vectors into B. subtilis 168, and phage transduction of B. subtilis 168 transformant DNA into B. subtilis 3610 (Yannarell et al., 2019). B. subtilis 3610 is a commonly used strain of B. subtilis which is less genetically tractable than B. subtilis 168, but exhibits biofilm production phenotypes common to wild B. subtilis soil isolates that have been lost in the 168 lab strain (McLoon et al., 2011). Plasmid pES037 was constructed by standard restriction digest cloning of B. subtilis codon-optimized versions of the YPet gene (obtained from Ethan Garner, Harvard University) into the pEA003 parent vector (amyE::PspacC-cfp-camR), which replaced the cfp gene with the new fluorescent protein. Linearized vector was transformed into B. subtilis 168 as described previously (Yannarell et al., 2019). Cells were plated onto Lennox-chloramphenicol to select for transformants – amyE::PspacC-YPet-camR. Phage transduction from B. subtilis 168 transformants into B. subtilis 3610 using SPP1 bacteriophage was performed as previously described (Yasbin and Young, 1974), to produce the final strains used in this study: ES768 (B. subtilis 3610 amyE::PspacC-YPet-camR) and ES769 (eps-tasA biofilm gene mutant, B. subtilis 3610 epsA-O::tet tasA::kan amyE::PspacC-YPet-camR).
 
-## Microorganisms, media, and growth conditions
+### Microorganisms, media, and growth conditions
 
 B. subtilis 3610 strains were routinely cultured on Lysogeny Broth (LB)-Lennox agar (10 g/L tryptone, 5 g/L yeast extract, 5 g/L NaCl, 15 g/L agar) supplemented with antibiotics (5 μg/mL chloramphenicol final concentration) at 30°C for 16–20 hr. Mucor fragilis used in this study was obtained from Fletcher Halliday (University of North Carolina at Chapel Hill), who isolated the strain from a tall fescue plant in the Piedmont region of North Carolina, and created a culture stock by patching M. fragilis hyphae onto a malt extract agar (MEA) slant (Difco, malt extract 6 g/L, 6 g/L maltose, 6 g/L dextrose, 15 g/L agar) containing 200 μg/mL chloramphenicol. M. fragilis was routinely cultured by patching agar from culture stock into the center of an MEA plate containing 200 μg/mL chloramphenicol and incubating at 30°C for 10 days until a lawn of M. fragilis spore bodies was obtained. M. fragilis spore stock was obtained by adding 10 mL Milli-Q water to this lawn and aspirating the liquid back up to obtain spores. Spores were pelleted by centrifugation (4000 x g on tabletop centrifuge in 15 mL Falcon tube) and washed three times in Milli-Q dH2O to remove residual growth medium and hyphae. Spore stock was stored at 4°C for up to 1 month. Spore concentration was calculated by counting spores on hemocytometer and diluting back to 105 spores per mL for routine use.
 
 MSN medium (minimal salts with free ammonium as nitrogen source; Beauregard et al., 2013) was used as the base medium to which various amendments were added for growth and isotope-labeling experiments. MSN is 5 mM potassium phosphate [pH 7], 100 mM morpholinepropanesulfonic acid [MOPS; pH 7], 2 mM MgCl2, 700 μM CaCl2, 50 μM MnCl2, 50 μM FeCl3, 1 μM ZnCl2, 2 μM thiamine, 0.2% NH4Cl. M. fragilis was grown in TS microcosms with MSNglu (MSN with 2% glucose, final concentration). B. subtilis was grown in TS microcosms with MSNglu or MSgg, a biofilm-inducing medium (5 mM potassium phosphate [pH 7], 100 mM MOPS [pH 7], 2 mM MgCl2, 700 μM CaCl2, 50 μM MnCl2, 50 μM FeCl3, 1 μM ZnCl2, 2 μM thiamine, 0.5% glycerol, 0.5% glutamate). Though the strains used in this study do not metabolize MOPS, it is a carbon-rich molecule that may be metabolized by other microorganisms. A carbon-free buffer, such as phosphate buffered saline, may be substituted for studies requiring a truly carbon-free medium.
 
-## Nafion particle preparation
+### Nafion particle preparation
 
 Nafion is very hydrophobic until its sulfonyl group is functionalized by acid washing, which renders Nafion cation-exchanging and hydrophilic (Downie et al., 2012; Moilanen et al., 2007). Thus, Nafion particles were acid washed as previously described (Downie et al., 2012), with the following modifications. Briefly, 30 g PowdION Nafion powder (IonPower, New Castle, DE, USA) was suspended in 300 mL 15% KOH/35% DMSO aqueous solution in a glass beaker and heated for 5 hr at 80°C to hydrolyze Nafion. Particles were washed three times with Milli-Q water. All washes were carried out by centrifugation unless otherwise noted (4000 x g in 50 mL centrifuge tube in tabletop centrifuge for 5 min). To convert Nafion to ion-exchanging form, particles were suspended in 15% nitric acid and incubated at room temperature for 1 hr in a glass beaker, then washed with Milli-Q water, and resuspended with nitric acid and left at room temperature overnight. To remove impurities from Nafion surfaces, particles were washed three times with Milli-Q water, incubated in 1 M sulfuric acid for 1 hr at 65°C in a glass beaker, washed with Milli-Q water, and incubated again at 65°C for 1 hr. Particles were then washed three times with Milli-Q water, suspended in 3% hydrogen peroxide, incubated at 65°C for 1 hr, and washed three times with Milli-Q water. Finally, to replace protons held by Nafion with biologically important cations, particles were washed repeatedly with MSN medium until supernatant pH stabilized at 7.
 
 To obtain particle size fractions small enough to fit in microfluidic microcosms, a dilute particle slurry (1:20 particles to water) was sieved through a 40 µm cell strainer. Particles in the flow-through were collected by centrifugation (see Figure 2—figure supplement 2 for particle size distributions). Particles were then sterilized by autoclaving slurry (1:1 particles to water by volume).
 
-## Cryolite particle preparation
+### Cryolite particle preparation
 
 Cryolite particles were obtained by grinding 5 g of cryolite crystal (Wilhelm Niemutz Mineralien, Vienna, Austria) with a mortar and pestle, washing three times in Milli-Q water by centrifugation, sieving through a 40-µm-cell strainer to obtain small particles in flow-through, and autoclaving particle slurry.
 
-## TS microcosm manufacture and preparation
+### TS microcosm manufacture and preparation
 
 The TS microcosm construction process is summarized in Figure 1a. Sylgard 184 PDMS (Dow Chemical, Midland, MI, USA) was mixed 10:1 base:curing agent, poured over a standard SU-8 silicon master and baked overnight. Inlets and outlets were punched with a 1 mm biopsy puncher (Cole-Parmer, Vernon Hills, IL, USA). Devices were rendered hydrophilic using a handheld corona treater (Electro-Technic, Chicago, IL, USA), passed over the chip 10–20 times at full power. A TS slurry of either Nafion or cryolite particles (1:1 particles to water) was vigorously vortexed and 3 µL of slurry pipetted quickly into PDMS chambers. A glass cover slip (60 × 20×0.15 mm) was corona treated as above and pressed firmly onto the PDMS chamber to seal, then baked at 70°C for 1 hr to bond.
 
 TS in chambers was washed by gently flowing in liquid at a rate of 0.5 µL/min with a syringe pump (Oxford Instruments, Abindgon, UK) using a 1 mL syringe with a 23 gauge needle (BD, Franklin Lakes, NJ) and 0.58 mm ID/0.97 mm OD tubing (Warner Instruments, Hamden, CT). Nafion-based microcosms were rehydrated with 3 uL 20% ethanol to render particles hydrophilic, then washed with 20 µL of desired culture medium before inoculation with microorganisms. Cryolite-based microcosms were simply wet with 3 µL of desired medium (enough to wet the TS) before inoculation (see Figure 1A).
 
-## Fluorescent dyes in TS microcosms
+### Fluorescent dyes in TS microcosms
 
 Aqueous solutions of sulforhodamine 101, fluorescein (free acid form), and AlexaFluor 647 NHS Ester form dye (AF647) – all from Thermo Fisher (Waltham, MA, USA) – were mixed 1:1 by volume with TS particles and pipetted (40 µL) into ibidi angiogenesis glass bottom slides (ibidi GmbH, Martinsried, Germany) and imaged by confocal microscopy. Sulforhodamine and AF647 were added to 10 µg/mL final volume, and fluorescein was added to 0.1% (w/v) final volume. To dye Nafion particles with sulforhodamine, 10 µg/mL sulforhodamine was added to a 1:1 Nafion:water slurry and incubated at room temperature for 10 min in a roller in order to keep particles shaking. Particles were then washed by settling particles by centrifugation (30 s at 13,200 rcf in a benchtop centrifuge), removing liquid, and adding fresh water or growth medium. For unsaturated microcosms, liquid supernatant was carefully removed from above the settled particles in each well and allowed to air dry partially until about 30% of pore volume was air-filled.
 
-## Fluorescent bead imaging through TS microcosms
+### Fluorescent bead imaging through TS microcosms
 
 1 µm fluorescent beads (Tetraspeck microspheres, Thermo Fisher, Waltham, MA, USA) were mixed into TS microcosms – one Nafion microcosm and one cryolite microcosm. Beads were imaged using a Zeiss 710 confocal laser scanning microscope (Zeiss, Oberkochen, Germany) with a 40x water immersion objective, NA 1.0. 100 µm deep Z-stacks were collected with voxel size of 0.0793 × 0.0793×0.3535 µm3. Lateral intensity profiles of beads were measured using Fiji open-source image analysis software (Schindelin et al., 2012). Eight beads were measured per measurement depth in each microcosm. Gaussian distribution curves were fitted to each bead and the full width half maximum (FWHM) measured from each fitted curve as a measure of resolution. Maximum intensities of each bead were used as a measure of brightness.
 
-## Bacterial and fungal culture in TS microcosms
+### Bacterial and fungal culture in TS microcosms
 
 B. subtilis 3610 cells were grown for 2.5 hr at 37°C shaking in LB broth, washed 5x in appropriate growth medium (MSN or MSgg, see figure captions for details), diluted back to OD600 of 0.05 (~2.5×107 cells/mL) and inoculated into TS microcosms by syringe pump at a rate of 0.5 µL/min, 3 µL total volume. For Video 1, 2, 3, 4 and Figure 4, cells were imaged using a Zeiss 710 confocal laser scanning microscope with a 40x water immersion objective with NA 1.0. 100 µm deep Z-stacks were collected with voxel size of 0.0934 × 0.0934×0.75 µm3. For Figure 5, cells and fungus were imaged using a Zeiss 880 confocal laser scanning microscope with a 40x water immersion objective with NA 1.0. 10 µm deep Z-stacks were collected with voxel size of 0.0934 × 0.0934 × 0.75 µm3.
 
 M. fragilis spores were resuspended 1:10 (from 105 spores/mL spore stock in sterile Milli-Q water) into MSN-glu growth medium and inoculated into TS microcosms by syringe pump. TS microcosms were sealed with Scotch tape on the inlet and outlet and either imaged immediately or placed in a 50 mL Falcon tube with a small piece of wet paper towel to maintain humidity and incubated horizontally at 30°C until removed for imaging.
 
-## B. subtilis culture for isotope labeling experiments
+### B. subtilis culture for isotope labeling experiments
 
 B. subtilis 3610 cells were grown for 16 to 20 hr at 37°C shaking in MSN 2% glucose medium made with either: 2% regular glucose (termed 12C H2O cells), 2% 13C glucose (13C H2O cells), or 2% regular glucose and 50% (final volume) D2O (12C D2O cells). Each cell culture was then inoculated directly into a separate TS microcosms by pipetting ~3 µL cell culture into inlet. In the case of 12C D2O cells, cells were first washed 5x in regular MSN to remove background D2O (which interferes with Raman cell spectrum signal) and then inoculated into TS microcosms. Cells were measured by Raman microspectroscopy immediately after inoculation.
 
-## Confocal Raman microspectroscopy and spectral processing
+### Confocal Raman microspectroscopy and spectral processing
 
 Single microbial cell spectra were acquired using a LabRAM HR800 Raman microscope (Horiba, Kyoto, Japan) equipped with a 532 nm neodymium-yttrium aluminium garnet laser and 300 grooves/mm diffraction grating. Spectra were acquired in the range of 400–3200 cm−1.
 
@@ -221,7 +490,7 @@ Spectra were baselined and normalized using spectrum analysis software (Berry et
 
 ‘CD region area’ for an individual cell spectrum was calculated as the area under the curve between 2145 and 2090 cm−1 (average intensity of region between 2145 and 2090 cm−1 minus average intensity between the flat baseline region between 2040 and 2060 cm−1). ‘Percent 13C’ was calculated individually for each background subtracted cell spectrum as (A966/(A966 + A1003))x100, where A966 is the average intensity between 960 and 968 cm−1 minus the average intensity of the nearby baseline 935 to 945 cm−1 region (13C phenylalanine peak) and A1003 is average intensity between 998 and 1005 cm−1 minus the nearby baseline 980 to 985 cm−1 region (12C phenylalanine peak).
 
-## Desiccation and rehydration treatment of TS microcosm
+### Desiccation and rehydration treatment of TS microcosm
 
 M. fragilis spores were inoculated into three Nafion TS microcosms with MSN-glu growth medium and incubated at 30°C for 24 hr. Hyphae were heat-killed in situ the next day by incubating the microcosms for 1 hr in a 70°C air incubator, a treatment that kills both hyphae and spores, preventing germination (Thom et al., 1916). Microcosms were sealed with Scotch tape during incubation to prevent evaporation. The microcosms were then washed with fresh MSN medium by gently flowing MSN medium through the microcosms at a rate of 0.5 µL/min, 15 µL total volume. B. subtilis 3610 cells were then inoculated into the microcosm in MSN medium, with dead M. fragilis as their sole carbon source. The fully hydrated microcosm was next dried down by leaving ports on the microfluidics device unsealed and leaving exposed to air in a 50 mL Falcon tube at 30°C for 6 hr. After full desiccation of the Nafion (i.e. macropores filled with air, Nafion reverts to white appearance and not transparent/translucent as when hydrated), microcosms were incubated for an additional 36 hr at 30°C with ports unsealed and the system exposed to air.
 

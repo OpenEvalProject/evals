@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.10012.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from ' Fusobacterium nucleatum infection is prevalent in human colorectal carcinoma' by Castellarin and colleagues published in Genome Research in 2012 ( Castellarin et al., 2012 ). The experiment to be replicated is reported in Figure 2. Here, Castellarin and colleagues performed a metagenomic analysis of colorectal carcinoma (CRC) to identify potential associations between inflammatory microorganisms and gastrointestinal cancers. They conducted quantitative real-time PCR on genomic DNA isolated from tumor and matched normal biopsies from a patient cohort and found that the overall abundance of Fusobacterium was 415 times greater in CRC versus adjacent normal tissue. These results confirmed earlier studies and provide evidence for a link between tissue-associated bacteria and tumorigenesis. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife . DOI: http://dx.doi.org/10.7554/eLife.10012.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from 'Fusobacterium nucleatum infection is prevalent in human colorectal carcinoma' by Castellarin and colleagues published in Genome Research in 2012 (Castellarin et al., 2012). The experiment to be replicated is reported in Figure 2. Here, Castellarin and colleagues performed a metagenomic analysis of colorectal carcinoma (CRC) to identify potential associations between inflammatory microorganisms and gastrointestinal cancers. They conducted quantitative real-time PCR on genomic DNA isolated from tumor and matched normal biopsies from a patient cohort and found that the overall abundance of Fusobacterium was 415 times greater in CRC versus adjacent normal tissue. These results confirmed earlier studies and provide evidence for a link between tissue-associated bacteria and tumorigenesis. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife.
 
 ## Introduction
 
@@ -32,58 +32,759 @@ Similar findings confirming the higher relative abundance of Fusobacterium in CR
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors. An asterisk (*) indicates data or information provided by the Reproducibility Project: Cancer Biology core team. A hashtag (#) indicates information provided by the replicating lab.
 
-## Protocol 1: quantitative PCR for amplification of F. nucleatum from matched normal and tumor human colon cancer specimens
+### Protocol 1: quantitative PCR for amplification of F. nucleatum from matched normal and tumor human colon cancer specimens
 
 This protocol utilizes quantitative PCR to test the relative abundance of F. nucleatum DNA in gDNA isolated from matched normal and tumor human colon cancer specimens. It is a replication of Figure 2.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentManufacturerCatalog #CommentsFrozen human colon tumor samples and matched normal samples#iSpecimenData include age, gender, ethnicity, diagnosis, histopathology reportGentra Puregene Genomic DNA extraction kitQiagen158667Replaces Qiagen 69504PicoGreen Assay#Life TechnologiesP7589Spectrophotometer#NanoDropND1000384-well optical PCR plate#Phoenix ResearchMPS-3898Fusobacteria forward qPCR primerPart of a custom-designed Taqman primer/probe set (Applied Biosystems)CAACCATTACTTTAACTCTA CCATGTTCAFusobacteria reverse qPCR primerGTTGACTTTACAGAAGGAGA TTATGTAAAAATCFusobacteria FAM probeTCAGCAACTTGTCCTTCTTGA TCTTTAAATGAACC†PGT forward qPCR primerPart of a custom-designed Taqman primer/probe set (Applied Biosystems)  ATCCCCAAAGCACCTGGTTTPGT reverse qPCR primerAGAGGCCAAGATAGTCCTG GTAAPGT FAM probeCCATCCATGTCCTCATCTCTaqMan Universal Master MixABI#4304437qPCR thermal cycling systemABI#43514057900HT system†Note: Probe sequence from original manuscript incorrect. Correct sequence seen here from Flanagan et al., 2014.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Reagent</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Frozen human colon tumor samples and matched normal samples</td>
+      <td>#iSpecimen</td>
+      <td></td>
+      <td>Data include age, gender, ethnicity, diagnosis, histopathology report</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gentra Puregene Genomic DNA extraction kit</td>
+      <td>Qiagen</td>
+      <td>158667</td>
+      <td>Replaces Qiagen 69504</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PicoGreen Assay</td>
+      <td>#Life Technologies</td>
+      <td>P7589</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spectrophotometer</td>
+      <td>#NanoDrop</td>
+      <td>ND1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>384-well optical PCR plate</td>
+      <td>#Phoenix Research</td>
+      <td>MPS-3898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusobacteria forward qPCR primer</td>
+      <td rowspan="3" colspan="2">Part of a custom-designed Taqman primer/probe set (Applied Biosystems)</td>
+      <td>CAACCATTACTTTAACTCTA CCATGTTCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusobacteria reverse qPCR primer</td>
+      <td>GTTGACTTTACAGAAGGAGA TTATGTAAAAATC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusobacteria FAM probe</td>
+      <td>TCAGCAACTTGTCCTTCTTGA TCTTTAAATGAACC†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PGT forward qPCR primer</td>
+      <td rowspan="3" colspan="2">Part of a custom-designed Taqman primer/probe set (Applied Biosystems)</td>
+      <td>ATCCCCAAAGCACCTGGTTT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PGT reverse qPCR primer</td>
+      <td>AGAGGCCAAGATAGTCCTG GTAA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PGT FAM probe</td>
+      <td>CCATCCATGTCCTCATCTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TaqMan Universal Master Mix</td>
+      <td>ABI</td>
+      <td>#4304437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>qPCR thermal cycling system</td>
+      <td>ABI</td>
+      <td>#4351405</td>
+      <td>7900HT system</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+_†Note: Probe sequence from original manuscript incorrect. Correct sequence seen here from Flanagan et al., 2014._
 
-## Deliverables
+#### Procedure
 
-## Confirmatory analysis plan
+#### Deliverables
+
+#### Confirmatory analysis plan
 
 This replication attempt will perform the statistical analysis listed below:
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the 'Materials and reagents' section with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design. We have added an additional control of matched gDNA from healthy individuals.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The sample purity (A260/280 and A260/230 ratios) of the isolated gDNA from each sample will be reported. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/v4se2) and made publically available.
 
-## Power calculations
+### Power calculations
 
 For a detailed breakdown of all power calculations, see spreadsheet at https://osf.io/yadgq/
 
-## Protocol 1
+### Protocol 1
 
-## Summary of original data
+#### Summary of original data
 
-SampleLog (mean)N1‑1.578722‑1.195723‑0.927724‑0.876625‑0.519226‑0.446827‑0.412828‑0.314929‑0.2936210‑0.2681211‑0.2766212‑0.2383213‑0.234214‑0.2215‑0.1787216‑0.1703217‑0.1617218‑0.1362219‑0.0681220‑0.02982210.0342220.01282230.00952240.0172250.02132260.02132270.02552280.01282290.0172300.01282310.0172320.02552330.02132340.03012350.0342360.05552370.13622380.14472390.17452400.19152410.22420.20862430.2172440.22132450.25962460.40432470.44682480.45112490.46812500.49792510.50642520.50212530.5492540.57872550.57872560.58722570.60852580.62132590.65532600.69792610.72342620.76172630.80432640.82982650.9662660.96172671.00422681.01282691.0172701.02552711.06812721.05962731.08512741.12342751.19582761.31492771.31492781.40852791.62982801.75752811.7832821.87232831.94042841.98328522862.25532872.42982882.47232892.47232902.55322912.67232922.68932932.90642943.05962953.24252963.34472973.58722983.82994.2612
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Sample</th>
+      <th>Log (mean)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>‑1.5787</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>‑1.1957</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>‑0.9277</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>‑0.8766</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>‑0.5192</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>‑0.4468</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>‑0.4128</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>‑0.3149</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>‑0.2936</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>‑0.2681</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>‑0.2766</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>‑0.2383</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>‑0.234</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>‑0.2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>‑0.1787</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>‑0.1703</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>‑0.1617</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>‑0.1362</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>‑0.0681</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>‑0.0298</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>0.034</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>0.0128</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>0.0095</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>0.017</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>0.0213</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>0.0213</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>0.0255</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>0.0128</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>0.017</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>0.0128</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>0.017</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>0.0255</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>0.0213</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>0.0301</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>0.034</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>0.0555</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0.1362</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>0.1447</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>0.1745</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>0.1915</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>0.2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>0.2086</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>0.217</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>0.2213</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>0.2596</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>0.4043</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>0.4468</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>0.4511</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>0.4681</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>0.4979</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>0.5064</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>0.5021</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>0.549</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>0.5787</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>0.5787</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>0.5872</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>0.6085</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>0.6213</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>0.6553</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>0.6979</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>0.7234</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>0.7617</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>0.8043</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>0.8298</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>0.966</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>0.9617</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>1.0042</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>1.0128</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>1.017</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>1.0255</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>1.0681</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>1.0596</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>1.0851</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>1.1234</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>1.1958</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>1.3149</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>1.3149</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>1.4085</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>1.6298</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>1.7575</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>1.783</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>1.8723</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>1.9404</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>1.983</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>2.2553</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>2.4298</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>2.4723</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>2.4723</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>2.5532</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>2.6723</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>2.6893</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>2.9064</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>3.0596</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>3.2425</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>3.3447</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>3.5872</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>3.8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>4.261</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+### Test family
 
-## Power calculations
+### Power calculations
 
-MeanEffect size dA priori powerTotal sample sizeRatio0.758938380.502456887.26%40**Forty total ratios (40 tumor 40 matched controls) will be used.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Mean</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Ratio</td>
+      <td>0.75893838</td>
+      <td>0.5024568</td>
+      <td>87.26%</td>
+      <td>40*</td>
+    </tr>
+  </tbody>
+</table>
 
-## Additional exploratory analysis
+_*Forty total ratios (40 tumor 40 matched controls) will be used._
 
-## Test family
+### Additional exploratory analysis
 
-## Power calculations
+#### Test family
 
-Group 1Group 2Detectable effect size dA priori powerTotal sample sizeTumor sampleAdjacent matched control0.5038480%40
+#### Power calculations
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Detectable effect size d</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Tumor sample</td>
+      <td>Adjacent matched control</td>
+      <td>0.50384</td>
+      <td>80%</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
 
-## Power calculations
+#### Test family
 
-Group 1Group 2Detectable effect size dA priori powerTotal sample sizeTumor sampleHealthy individual matched control0.700780%40
+#### Power calculations
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Detectable effect size d</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Tumor sample</td>
+      <td>Healthy individual matched control</td>
+      <td>0.7007</td>
+      <td>80%</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>

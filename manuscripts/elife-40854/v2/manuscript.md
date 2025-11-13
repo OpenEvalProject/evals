@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.40854.001 Estrogen Receptor-alpha (ER) drives 75% of breast cancers. Stimulation of the ER by estra-2-diol forms a transcriptionally-active chromatin-bound complex. Previous studies reported that ER binding follows a cyclical pattern. However, most studies have been limited to individual ER target genes and without replicates. Thus, the robustness and generality of ER cycling are not well understood. We present a comprehensive genome-wide analysis of the ER after activation, based on 6 replicates at 10 time-points, using our method for precise quantification of binding, Parallel-Factor ChIP-seq. In contrast to previous studies, we identified a sustained increase in affinity, alongside a class of estra-2-diol independent binding sites. Our results are corroborated by quantitative re-analysis of multiple independent studies. Our new model reconciles the conflicting studies into the ER at the TFF1 promoter and provides a detailed understanding in the context of the ER’s role as both the driver and therapeutic target of breast cancer.
+Estrogen Receptor-alpha (ER) drives 75% of breast cancers. Stimulation of the ER by estra-2-diol forms a transcriptionally-active chromatin-bound complex. Previous studies reported that ER binding follows a cyclical pattern. However, most studies have been limited to individual ER target genes and without replicates. Thus, the robustness and generality of ER cycling are not well understood. We present a comprehensive genome-wide analysis of the ER after activation, based on 6 replicates at 10 time-points, using our method for precise quantification of binding, Parallel-Factor ChIP-seq. In contrast to previous studies, we identified a sustained increase in affinity, alongside a class of estra-2-diol independent binding sites. Our results are corroborated by quantitative re-analysis of multiple independent studies. Our new model reconciles the conflicting studies into the ER at the TFF1 promoter and provides a detailed understanding in the context of the ER’s role as both the driver and therapeutic target of breast cancer.
 
 ## Introduction
 
@@ -28,27 +28,55 @@ In the context of these challenges, we applied two strategies to robustly and ac
 
 ## Results
 
-## Measurement of genome Copy-Number discordance
+### Measurement of genome Copy-Number discordance
 
 We measured ER-binding in MCF7 cells, a widely used model system for ER biology. To maximize the reproducibility of our results, MCF7 cells were grown from ATCC stocks, keeping passaging to a minimum, and the cell line origin was confirmed by STR genotyping. Additionally, to ensure the MCF7 cell line did not show significant genetic drift during culturing within our laboratory, we applied CellStrainer (Ben-David et al., 2018) to the input data from our ChIP-seq experiments. The fraction of genome with copy-number discordance was estimated at 0.2787, within the range of 0 to 0.3 as published by CellStrainer’s developers to ensure similar therapeutic response.
 
-## Visualization of raw data
+### Visualization of raw data
 
 Sequencing reads from the analysis of 60 pfChip-seq samples targeting ER and six input samples were demultiplexed and aligned to the Homo sapiens GRCh38 reference assembly. Visual inspection of the data using the Integrative Genomics Viewer (IGV) Viewer (Robinson et al., 2011) confirmed enrichment at known ER binding sites (exemplified by TFF1 in Figure 1—figure supplement 1) and the presence of previously reported CTCF control peaks (Guertin et al., 2018). From visual inspection, pfChIP-seq samples qualitatively showed minimal ER binding at 0 min while CTCF binding was constant at all time points.
 
-## Parallel-Factor normalization
+### Parallel-Factor normalization
 
 Peak count data from CTCF binding sites were used to normalize between conditions as these sites have previously been shown to be unchanged in response to estrogen (Ross-Innes et al., 2011), with >70 000 binding sites discovered across all samples and >50 000 CTCF binding sites found in over 50% of samples. Analysis after normalization of the raw data showed similar levels of variability in terms of signal (Figure 1—figure supplement 2) as we saw when developing the pfChIP method (Guertin et al., 2018). The resultant normalized binding matrix of ER binding was used for all downstream analyses and is provided as Supplementary file 1.
 
-## ER binding at the TFF1 promoter
+### ER binding at the TFF1 promoter
 
 Normalized count data for the TFF1 promoter showed that on activation with estra-2-diol the ER rapidly (in less than 10 min) binds the TFF1 promoter. Binding after this time point shows no significant changes (Figure 1). Analysis of the data by individual replicates (Figure 1—figure supplement 3) did not demonstrate evidence of oscillatory binding in individual replicates either with a period of 90 min period or an alternative frequency.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig1-v2.jpg)
+
+**Figure 1.:** Binding of ER at the TFF1 promoter has been the classical focus of study before genome-wide technology and the predicted site for oscillations in ER binding. ER binding is minimal at 0 min; however, by 10 min, the ER has rapidly and robustly bound to give a sustained signal at the TFF1 promoter. In contrast, the closest CTCF binding site demonstrates a constant, estra-2-diol-independent, signal with significantly less variance. Pairwise comparison found no significant changes in binding at the TFF1 promoter (t-test, two-sided, FDR < 0.05) except for when comparing against the 0 min time point.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Illustrative screenshot of aligned reads from one lane of sequencing after demultiplexing. Key features are the pile-up of reads at the TFF1 promoter (left) and enhancer (middle) and the CTCF control peak (right). From top to bottom is 0 to 90 min in 10 min intervals, six replicates of each. Light gray samples are input controls. Row height normalized to maximum read count in region. .
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Each point represents a CTCF control binding site. After establishing the normalization factor for parity of CTCF binding, the ER binding was corrected using the same parameters. As expected, the levels of normalization required varies between time points and correction is greatest for the largest magnitude peaks.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig1-figsupp4-v2.jpg)
+
 Comparison of the variance in the ER binding after induction shows that there is significantly more variance (F-test, time points >= 10 min, p-value < 1 × 10-10) in the ER binding data than in CTCF binding between replicates. In contrast, pairwise F-test (two-sided, FDR < 0.05) for ER binding at all time points showed no significant difference in the variance for any comparison. As the variance of CTCF binding in pfChIP-seq is a good estimator of the technical variance, the most likely source of increased variance in ER binding is therefore biological. These findings were validated through analysis of the RARA promoter and proximal CTCF peaks (Figure 1—figure supplement 4), which gave consistent results to those seen at the TFF1 promoter.
 
-## Locus specific variation in maximal ER binding affinity
+### Locus specific variation in maximal ER binding affinity
 
 Previously, ER binding sites were shown to reach maximum occupancy at different time points depending on genomic location, revealing a P300 squelching mechanism at early time points (Guertin et al., 2014). Therefore, to provide a partial validation of this study, we applied the same principles of their analysis to our data, that is normalizing in the time-space setting maximum occupancy to 1. Consistent with the previous study, the two time points with the largest numbers of sites reaching maximal occupancy in both data sets were at 10 and 40 min (Figure 2A). As the remaining time points were unique to the individual data sets, these could not be directly compared.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig2-v2.jpg)
+
+**Figure 2.:** Row order is the same in both plots. (A) Normalized by row to time point with maximal binding. Data suggests that genomic loci may influence the time point maximal binding; however, normalizing to CTCF control peaks (B) demonstrates the effect is potentially overemphasized by normalization choice and that binding affinity is the biggest variable. In contrast, both plots (A and B) show minimal ER binding affinity is found at 0 min, consistent with the literature response of MCF7 cells to treatment of estra-2-diol.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The red-dotted line represents the false discovery rate for the data set. (Right) The same analysis between all possible contrasts shows the same results. The majority of events occur between 0 min and other time points. A small numbers of contrasts do find significant changes in binding, but always below the level of potential false positives.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** While there is a clear maximum at 0 min, this effect is dominated by the variance of the data. (Right) The individual traces of each of these binding events show low level binding with a very shallow peak at 0 min.
 
 While grouping by maximum occupancy in Figure 2A was essential to highlight these features in the context of Guertin et al.'s previous study, in our analysis we found this method distorts the data and the effects that drove the appearance of blocks are not statistically significant in our dataset (Figure 2—figure supplement 1) with the exception of the 0 to 10 min contrast.
 
@@ -58,9 +86,21 @@ pfChIP-seq allowed us to improve on the previous study by directly normalizing t
 
 Comparison of Figure 2A and B demonstrates the effects of different data normalization strategies. The relative normalization to maximum binding emphasizes binding maxima (red blocks in Figure 2A) while the absolute normalization to an internal control shows that these maxima are very shallow, barely visible in Figure 2B, and other features dominate the data. A few genes show very high levels of ER binding (visible as thin red lines in Figure 2B), while most genes show intermediate levels and some very low levels (blue lines). These different levels of ER binding are preserved over time, with only time point 0 showing very low levels for all genes.
 
-## Visualizing temporal ER binding affinity
+### Visualizing temporal ER binding affinity
 
 To elucidate potential different temporal responses to ER activation by estra-2-diol, we applied t-SNE (Maaten and Hinton, 2008), a widely used method for dimensionality reduction and data visualization (Figure 3). Each dot in the plot represents a binding site over time, that is one row in the binding matrix shown in Figure 2B. We colored each dot by the false discovery rate (FDR; (Benjamini and Hochberg, 1995)) for the change in ER affinity between 0 to 10 min. This analysis revealed two major trajectories of binding sites in the data, one dominated by low FDR (orange) and one by high FDR (blue). Both trajectories saw an increasing affinity in the direction of the white arrow. This pattern was stable for a wide range of perplexity, the main t-SNE parameter (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig3-v2.jpg)
+
+**Figure 3.:** Two trajectories, A and B, are highlighted with white arrows and starting a single cluster of peaks. Points are colored by FDR value computed by Brundle/DiffBind for the 0 vs 10 min contrast. Trajectory A demonstrates increasing ER affinity in response to estra-2-diol at 10 min. Trajectory B shows increasing affinity for all times points, that is estra-2-diol independent binding, but the maximum signal is of a lower intensity than that of Trajectory A. De novo motif analysis for Class A (the peaks found at the end of trajectory A) gave strongest enrichment for the ERE (p = 1 × 10-538). The same analysis of Class C provided a partial ERE (not shown), consistent with ER affinity being a function of how conserved the ER binding site is with respect to ideal ERE. Analysis of Class B gave FOXA1 as the most significantly enriched motif (p = 1 × 10-19).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** For perplexity 30–200, two consistent trajectories are seen, with exact pattern depending on random seed provided. A perplexity of 200 was used to render Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40854/elife-40854-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) and RARA (B) promoters. Visualising the individual replicates provided no evidence of ER cycling within replicates (C). Genome-wide tSNE analysis of the ER data stream gave two trajectories that matched those previously found using pfChIP-seq (D). Genome-wide average of ER binding profiles demonstrated a sustained, not cyclical, response (E).
 
 We named the estra-2-diol responsive trajectory A, and the estra-2-diol independent trajectory B. The set of genomic sites found at the end of each trajectory were named Class A and B respectively. Motif analysis of Class A peaks demonstrated significant enrichment for the full estrogen response element (ERE, (Klein-Hitpass et al., 1986)), while Class B gave enrichment for the FOXA1 binding site. Analysis of Class C (i.e. weaker responding genes on trajectory A) gave a partial ERE match, suggesting a greater divergence from the ERE motif and consistent with the lower levels of ER affinity found on ER activation at these sites (Driscoll et al., 1998).
 
@@ -70,7 +110,7 @@ Genomic regions enrichment of annotations tool (GREAT) analysis (Welch et al., 2
 
 Undertaking the same analysis of the ER only ChIP-seq data stream gave very similar results to that of pfChIP-seq analysis, confirming that any potential cycling is not suppressed by the method (Figure 3—figure supplement 2). As with the pfChIP-seq analysis, no clear cycling was seen for the individual replicates (Figure 3—figure supplement 2C).
 
-## Analysis of class A ER binding sites
+### Analysis of class A ER binding sites
 
 Class A binding sites showed the strongest response to estra-2-diol, the greatest enrichment of the estrogen response element and contained the classical ER binding site at TFF1. We therefore focused further analysis on these peaks to minimize confounding factors. A t-SNE plot of only Class A sites (Figure 4A) did not provide distinct clustering of points. Partial separation was seen on the basis of time point of maximal binding (left to right) and amplitude (approximately top to bottom).
 
@@ -82,7 +122,7 @@ As the class profiles may average out site-specific oscillatory kinetics, we und
 
 Profiles of ER binding that showed either early or late maximal ER affinity were individually investigated. Binding near the TSS of SNX24 and ACKR3 are provided as representative examples.
 
-## Quantitative re-analysis of independent studies
+### Quantitative re-analysis of independent studies
 
 Given we found a robust and stable response to ER activation by estra-2-diol in contrast to the cyclical response previously described (Shang et al., 2000), we reviewed studies that have investigated ER binding at the TFF1 promoter. Several studies either used a different promoter (Park et al., 2005), factor (Li et al., 2003) or estra-2-diol concentration/include α-amanitin (Métivier et al., 2003).
 
@@ -110,22 +150,22 @@ In summary, through the use of stringent internal controls, we have reproducibly
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 MCF7 cells (RRID:CVCL_0031) were obtained from ATCC and confirmed by STR genotype before culture. For each immunoprecipitation, cells from 2 × 15 cm dishes were used. In each 15 cm plate, 2 × 106 were seeded and grown for 3 days in DMEM (Glibco) with 10% FBS before washing with phosphate buffered saline. Media was replaced with charcoal stripped and phenol red-free DMEM medium. Media was replaced daily for 4 days to ensure removal of estrogenic compounds. Plates were stimulated on day 5 with a final concentration of 100 nM estra-2-diol in EtOH before crosslinking at the required time. All six replicates were done on different dates and represent different passages.
 
-## Cell lines
+### Cell lines
 
 MCF7 cells were obtained from ATCC. The cell line was authenticated using STR profiling and are confirmed Mycoplasma free.
 
-## pfChIP-seq
+### pfChIP-seq
 
 Parallel-factor ChIP-seq was performed as previously described (Guertin et al., 2018). CTCF antibody was D31H2 Lot:3 (RRID:AB_2086791, Cell Signaling). ER antibody was 06–965 Lot:3008172 (Millipore).
 
-## Data analysis
+### Data analysis
 
 Reads were aligned using BWA (Li and Durbin, 2009), and ENCODE blacklist regions (ENCODE Project Consortium et al., 2012) were removed as previously described (Carroll et al., 2014). Duplicate reads were removed and peak calling was undertaken using MACS2 (Zhang et al., 2008; Feng et al., 2012). ER and CTCF peaks were filtered according to the pfChIP-seq protocol(Guertin et al., 2018), before normalization and differential binding analysis with Brundle/DiffBind (Guertin et al., 2018; Ross-Innes et al., 2012) in R. t-SNE plots were generated with Rtsne (Krijthe, 2015). Perplexity was tested from 2 to 200 to confirm the stability of the transformation of the data into 2-dimensional space (Figure 3—figure supplement 1). Lower perplexities, 2 and 5, gave minimal structure. For perplexities tested between 30 and 200, two stable trajectories were seen in all cases. GREAT (Welch et al., 2014) was used to analyze Class B binding sites. Band intensities from previously published studies were measured with ImageJ (Schneider et al., 2012).
 
-## Data repositories
+### Data repositories
 
 Sequencing data have been deposited in GEO under accession code GSE119057.

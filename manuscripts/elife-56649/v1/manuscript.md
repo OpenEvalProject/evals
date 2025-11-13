@@ -41,13 +41,146 @@ We herein first validated this system with proteins exclusively localized in the
 
 ## Results
 
-## Construction of the BiG Mito-Split-GFP strain encoding the GFPβ1-10 fragment in the mitochondrial genome
+### Construction of the BiG Mito-Split-GFP strain encoding the GFPβ1-10 fragment in the mitochondrial genome
 
 We used the scaffold of the self-assembling Superfolder Split-GFP fragments designed by Cabantous and coworkers (Cabantous et al., 2005b; Pédelacq et al., 2006), where the 11 beta strands forming active Superfolder GFP are separated in a fragment encompassing the 10 first beta strands (GFPβ1-10) and a smaller one consisting of the remaining beta strand (GFPβ11). Seven amino acid (aa) residues of GFPβ1-10 and three of GFPβ11 were replaced in order to increase the stability and the self-assembly of both fragments (Figure 1—figure supplement 1). To increase the fluorescent signal and facilitate observation of low-abundant proteins, we concatenated and fused three β11 strands (GFPβ11-chaplet; β11ch) linked by GTGGGSGGGSTS spacers (see Materials and methods for DNA sequence, Figure 1—figure supplement 1, as in Kamiyama et al., 2016; Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig1-v1.jpg)
+
+**Figure 1.:** (A) Principle of the Split-GFP system. When present in the same subcellular compartment, two fragments of GFP namely GFPβ1-10 and GFPβ11ch can auto-assemble to form a fluorescent BiG Mito-Split-GFP chaplet (three reconstituted GFPs). GFPβ1-10 sequence encoding the first ten beta strands of GFP has been integrated into the mitochondrial genome under the control of the ATP6 promoter. GFPβ11ch consists of a tandemly fused form of the eleventh beta strand of GFP and is expressed from a plasmid under the control of a strong GPD promoter (pGPD). The molecular weight of the tag is indicated. (B) Growth assay on permissive SC Glu plates, respiratory plates (SC Gly), and restrictive media lacking arginine (SC Glu -Arg) of the different strains used in the study (N = 2). All generated strains are derivative from MR6. (C) ATP synthesis rates of the MR6 and RKY112 strains presented as the percent of the wild type control strain (N = 2). P-value was 0.7456 (not significant). 95% confidence interval was −273.4 to 229.9, R squared = 0.064 (D) Mitochondrial translation products in the MR6 and RKY112 strains (N = 2). Cells were grown in rich galactose medium. Pulse-chase of radiolabeled [35S]methionine + [35S]cysteine was performed by a 20 min incubation in the presence of cycloheximide. Total cellular extracts were separated by SDS PAGE in two different polyacrylamide gels prepared with a 30:0.8 ratio of acrylamide and bis-acrylamide. Upper gel: 12% polyacrylamide gel containing 4 M urea and 25% glycerol. Lower gel: 17.5% polyacrylamide gel. Gels were dried and exposed to X-ray film. The representative gels are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The amino acid sequence and numbering of the residues of wild type GFPβ1-10 are shown. The β-strands are schematized as blue arrows. The amino acid residues of wild type GFP that were mutated to generate the Folding Reporter GFP are in green. The six amino acids of Folding reporter GFP that were then mutated to build the Superfolder GFP are in red (Pédelacq et al., 2006) and the seven amino acid residues of Superfolder GFP that were mutated to generate GFPβ1-10 OPT are indicated in orange (Cabantous et al., 2005a). (B) The amino acid sequence of the GFPβ11ch is shown and the numbering corresponds to the aa residues of the β11-strand of wild type GFP. The three consecutive β11 strands are schematized as green arrows and the three mutations that were introduced into each β11 strand (GFP11M3) are in purple (Cabantous et al., 2005a). The linker sequences are colored gray.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Construction of the RKY83 strain. (B–C) Construction of RKY112 and RKY176, a strain that expresses GFPβ1-10 from the mitochondrial genome. Detailed description can be found in the Materials and methods section. (D) Total DNA prepared from the RKY112 clones 1 to 4 was used as templates for a﻿mplification of the 3’part of ATP6 and the 3’UTR region of COX2 (N = 4). (E) Total DNA prepared from or RKY176 clones 1 to 3 was used as templates for amplification of the 3’ and the 5’ ATP6 gene UTRs/GFPβ1-10 regions (N = 3). The oligonucleotides used for each reaction and products lengths are indicated (Supplementary file 1).
+
 Our objective was to integrate the gene encoding the GFPβ1-10 fragment into the mtDNA so that it will only be translated inside the mitochondrial matrix, while the GFPβ11ch fragment is fused to the nuclear-encoded protein of interest and thus translated by cytosolic ribosomes (Figure 1A). To achieve this, we constructed a strain (RKY112) in which the coding sequence of the ATP6 gene has been replaced by ARG8m (atp6::ARG8m), and where ATP6 is integrated at the mitochondrial COX2 locus under the control of the 5’ and 3’ UTRs of COX2 gene (Supplementary file 1; Table 1; Figure 1—figure supplement 2A–C; see Materials and methods section for details). The RKY112 strain grew well on respiratory carbon source as wild type yeast (MR6) (Figure 1B), produced ATP effectively (Figure 1C), and expressed normally Atp6 and all the other mitochondria-encoded proteins (Figure 1D). We next integrated at the atp6::ARG8m locus of RKY112 strain mtDNA, the sequence encoding GFPβ1-10 (Figure 1A; Figure 1—figure supplement 2). To this end, we first introduced into the ρ0 mitochondria (i.e. totally lacking mtDNA) of DFS160 strain, a plasmid carrying the GFPβ1-10 sequence flanked by 5’ and 3’ UTR sequences of the native ATP6 locus (pRK67, see Materials and methods for DNA sequence), yielding the RKY172 strain (bearing a non-functional synthetic ρ-S mtDNA, Figure 1—figure supplement 2C). This strain was crossed to RKY112 to enable replacement of ARG8m with GFPβ1-10. The desired recombinant clones, called RKY176, were identified by virtue of their incapacity to grow in media lacking arginine due to the loss of ARG8m and their capacity to grow in respiratory media (Figure 1B). Integration of GFPβ1-10 in mtDNA was confirmed by PCR (Figure 1—figure supplement 2E, Supplementary file 2) and Western blot with anti-GFP antibodies (Figure 2C). Finally, the BiG Mito-Split-GFP strain (Table 1) was obtained by restoring the nuclear ADE2 locus in order to eliminate interfering fluorescence emission of the vacuole due to accumulation of a pink adenine precursor (Fisher, 1969; Kim et al., 2002).
 
-## The BiG Mito-Split-GFP system restricts fluorescence emission to mitochondrially-localized proteins
+![Figure 2.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of the spatial localization of proteins used as positive mitochondrial control proteins (Atp4, Pam16), negative cytosolic control protein (Pgk1) and as dual localized protein (cERS) in S. cerevisiae. (B) Empty pAG414pGPDβ11ch vector (EV) or pAG414pGPDβ11ch vectors expressing each of the four GFPβ11ch-tagged proteins used as markers in our study were transformed into the BiG Mito-Split-GFP strain. cERSβ11ch was either expressed under the dependence of the GPD (pGPD) or its own promoter (pGUS1) from a centromeric plasmid. GFP reconstitution upon mitochondrial import was followed by epifluorescence microscopy (N = 3). (C) Immunodetection of the GFPβ1-10, cERSβ11ch and Pgk1β11ch fusion protein in whole cell extract from the transformed BiG Mito-Split-GFP strain using anti-GFP and -Pgk1 antibodies, confirming expression of Pgk1β11ch. Loading control: stain-free. The representative gels are shown. (D) The strains described in the legend of panel (B) were used for three-dimensional reconstitution of yeast mitochondrial network (N = 1). Z-Stack images from Pam16β11ch, Atp4β11ch, cERSβ11ch and Pgk1β11ch were taken using an Airyscan microscope. Scale bar: 1 µm. (E) Flow cytometry measurements of total GFP fluorescence of the BiG Mito-Split-GFP strain stably expressing Pgk1β11ch or Pam16β11ch (N = 3). (F) The mitochondrial GatF protein was fused to the GFPβ1-10 fragment (mtGatF β1-10), thereby targeting the ten first GFP beta-strands to mitochondria after being transcribed in the nucleus and translated in the cytoplasm. This construct was co-expressed with either cERSβ11ch or Pgk1β11ch. The GFP reconstitution was monitored by epifluorescence microscopy. Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm. Representative fields are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Colocalization measurement of the reconstituted GFP (β11+ β1-10) with MitoTracker Red CMXRos-stained mitochondria on merged micrographs shown in Figure 2B. Fluorescent signals were measured along the yellow line with the ImageJ software. (B) Fluorescence microscopy analysis of the BiG Mito-Split-GFP strains bearing integrated into the TRP1 locus of GUS1 (cERS), PAM16 or PGK1 genes fused to GFPβ11ch. The cERSβ11ch is expressed from the own promoter (GUS1) while Pam16β11ch and Pgk1β11ch are expressed from GPD promoter. The last panel (Pgk1β11ch Increased brightness) shows the full field from which the Pgk1β11ch micrograph of the upper panel was taken from, with enhanced brightness, thereby illustrating the absence of any faint mitochondrial fluorescence. Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm.
+
+**Table 1.**
+ Genotypes of yeast strains used or generated for this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Nuclear genotype</th>
+      <th>mtDNA</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MR6</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+</td>
+      <td>Rak et al., 2007</td>
+    </tr>
+    <tr>
+      <td>DFS160</td>
+      <td>MATα leu2∆ ura3-52 ade2-101 arg8::URA3 kar1-1</td>
+      <td>ρo</td>
+      <td>Steele et al., 1996</td>
+    </tr>
+    <tr>
+      <td>NB40-3C</td>
+      <td>MATa lys2 leu2-3,112 ura3-52 his3∆HindIII arg8::hisG</td>
+      <td>ρ+ cox2-62</td>
+      <td>Steele et al., 1996</td>
+    </tr>
+    <tr>
+      <td>MR10</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 leu2-3,112 ura3-1 CAN1 arg8::hisG</td>
+      <td>ρ+ atp6::ARG8m</td>
+      <td>Rak et al., 2007</td>
+    </tr>
+    <tr>
+      <td>SDC30</td>
+      <td>MATα leu2∆ ura3-52 ade2-101 arg8::URA3 kar1-1</td>
+      <td>ρ-COX2 ATP6</td>
+      <td>Rak et al., 2007</td>
+    </tr>
+    <tr>
+      <td>YTMT2</td>
+      <td>MATα leu2∆ ura3-52 ade2-101 arg8::URA3 kar1-1</td>
+      <td>ρ+cox2-62</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKY83</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 leu2-3,112 ura3-1 arg8::HIS3</td>
+      <td>ρ+cox2-62 atp6::ARG8m</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKY89</td>
+      <td>MATα leu2∆ ura3-52 ade2-101 arg8::URA3 kar1-1</td>
+      <td>ρ-S5`UTRCOX2 ATP6 3`UTRCOX2 COX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKY112</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 leu2-3,112 ura3-1 arg8::HIS3</td>
+      <td>ρ+ atp6::ARG8m 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKY172</td>
+      <td>MATα leu2∆ ura3-52 ade2-101 arg8::URA3 kar1-1</td>
+      <td>ρ-S atp6::GFPβ1-10 COX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKY176</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+atp6::GFPβ1-10 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BiG Mito- Split-GFP</td>
+      <td>MATa his3-11,15 trp1-1 leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+atp6::GFPβ1-10 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BiG Mito- Split- GFP+PAM16β11ch</td>
+      <td>MATa his3-11,15 trp1-1::PAM16β11ch leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+atp6::GFPβ1-10 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BiG Mito- Split- GFP+PGK1β11ch</td>
+      <td>MATa his3-11,15 trp1-1::PGK1β11ch leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+atp6::GFPβ1-10 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BiG Mito- Split- GFP+GUS1β11ch</td>
+      <td>MATa his3-11,15 trp1-1:: GUS1β11ch leu2-3,112 ura3-1 CAN1 arg8::HIS3</td>
+      <td>ρ+atp6::GFPβ1-10 5`UTRCOX2ATP6 3`UTRCOX2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BY 4742</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0</td>
+      <td>ρ+</td>
+      <td>Winston et al., 1995</td>
+    </tr>
+  </tbody>
+</table>
+
+### The BiG Mito-Split-GFP system restricts fluorescence emission to mitochondrially-localized proteins
 
 The BiG Mito-Split-GFP system was first tested with Pam16 which localizes in the matrix at the periphery of the mitochondrial inner membrane and Atp4, an integral membrane protein with domains exposed to the matrix (Kozany et al., 2004; Velours et al., 1988; Figure 2A). The BiG Mito-Split-GFP host strain was transformed with centromeric plasmids expressing either Pam16β11ch or Atp4β11ch bearing the GFPβ11ch tag at their C-terminus under the constitutive GPD promoter. Expression of Pam16β11ch and Atp4β11ch resulted in strong GFP signal emissions that colocalized with MitoTracker Red CMXRos-stained mitochondria, whereas no fluorescence was detected with the corresponding empty plasmid (Figure 2B; Figure 2—figure supplement 1A). These observations confirmed that the GFPβ1-10 polypeptide is well expressed from the mtDNA, stably and correctly folded, allowing reconstitution of an active GFP upon association with the mitochondrial GFPβ11ch-tagged protein. So far, the positive controls we used for the proof of concept of the BiG Mito-Split-GFP approach are proteins more or less abundant: Atp4 (30000–40000 copies/cell) and Pam16 (3000 copies/cell) (Morgenstern et al., 2017; Vögtle et al., 2017). We will report soon, in BioRxiv, tests with other proteins with a known mitochondrial location and varying abundance to better estimate the sensitivity of the BiG Mito-Split-GFP system, including the GatF subunit of the GatFAB tRNA-dependent amidotransferase chromosomally expressed from its own promoter. This is a mitochondrial protein that has been reported to be present at only 40–80 copies (Vögtle et al., 2017).
 
@@ -59,27 +192,210 @@ Using high-resolution Airyscan confocal microscopy, a typical 3D mitochondrial n
 
 We next evaluated whether the BiG Mito-Split-GFP approach represents a significant technical advance compared to the existing MTS-based Split-GFP methods that are currently used. To this end, we constructed cells (with a wild type mitochondrial genome) that co-express in the cytosol the mitochondrial protein GatF (with its own MTS) fused at its C-terminus with GFPβ1-10 (mtGatFβ1-10) and either cERSβ11ch (dual localized, positive control) or Pgk1β11ch (cytosolic, negative control) (Figure 2F, left panel). As expected, a strong and specific mitochondrial fluorescent signal was obtained with cERSβ11ch (Figure 2F, right panel). However, Pgk1β11ch resulted in a mitochondrial signal of similar intensity. This is presumably due to the location at the external surface of mitochondria of a small fraction of the Pgk1 pool that could interact with mtGatFβ1-10 prior to its import into the organelle. These results show that due to the high affinity of both self-assembling Split-GFP fragments, the MTS-based strategy can generate a mitochondrial fluorescence without mitochondrial protein internalization (Figure 2F, right panel). These experiments suggest that compartment-restricted expression of the GFPβ1-10 fragment and GFPβ11ch-tagged proteins increases the reliability of identifying mitochondrial echoforms of dual-localized proteins.
 
-## Screening for mitochondrial relocation of cytosolic aminoacyl-tRNA synthetases
+### Screening for mitochondrial relocation of cytosolic aminoacyl-tRNA synthetases
 
 Originally, screening cytosolic aminoacyl-tRNA synthetases (caaRSs) that can additionally relocate to mitochondria was motivated by several inconsistencies concerning this family of enzymes. The first and most documented example concerns cERS (Frechin et al., 2009; Frechin et al., 2014). We showed that the fraction of cERS which is imported (mtecERS) into mitochondria is essential for the production of mitochondrial Gln-tRNAGln by the so-called transamidation pathway (Frechin et al., 2009; Frechin et al., 2014). In the latter, mtecERS aminoacylates the mitochondrial tRNAGln with Glu thereby producing the Glu-tRNAGln that is then converted into Gln-tRNAGln by the GatFAB amidotransferase (AdT) (Frechin et al., 2009; Frechin et al., 2014). These results argued against the proposal that mitochondrial import of cQRS compensates for the absence of nuclear-encoded mtQRS in yeast (Rinehart et al., 2005). This being said, nothing excludes that cQRS can be imported into mitochondria to fulfill additional tasks beyond translation.
 
 Another puzzling concern is the absence in S. cerevisiae of genes encoding six stricto-senso mtaaRSs: mtARS, mtCRS, mtGRS, mtHRS, mtQRS and mtVRS (Table 2). This suggests that the genes encoding their cytosolic equivalents (cytecaaRS) might also encode their mitochondrial echoforms (mtecaaRSs). This has been confirmed for cARS, cGRS1, cHRS, cVRS for which alternative translation/transcription initiation allows the expression of both echoforms (Figure 3D; Chang and Wang, 2004; Chatton et al., 1988; Chen et al., 2012; Natsoulis et al., 1986; Turner et al., 2000).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig3-v1.jpg)
+
+**Figure 3.:** Fluorescence microscopy analyses of BiG Mito-Split-GFP strain transformed with pAG414pGPDβ11ch expressing yeast caaRSs (also see Table S3). Genes encoding 18 out of the 20 yeast caaRS, including those encoding the α- and β-subunits of the cytosolic α2β2 FRS (cFRS2), and the cGRS2 pseudogene, as well as the four encoding the cytosolic echoforms of cGRS1 (cytecGRS1), cARS (cytecARS), cHRS (cytecHRS) and cVRS (cytecVRS) were cloned in the pAG414pGPDβ11ch and expressed in the BiG Mito-Split-GFP strain (N = 2). (A) From the set of caaRSs tested, only cERS, cQRS, cFRS2 and cytecHRS micrographs are shown. (B) Table summarizing the GFP emission and mitochondrial localization of the caaRSs not shown in A). The corresponding micrographs are shown in Fig. S4A. (C) Fluorescence microscopy analysis of the BiG Mito-Split-GFP strain expressing the first 100 amino acids of the N-ter region of the cCRS fused to GFPβ11ch (N = 2). (D) Fluorescence microscopy analyses of BiG Mito-Split-GFP strain transformed with pAG414pGPDβ11ch expressing the mitochondrial echoforms mtecGRS1, mtecARS, mtecHRS and mtecVRS. Schematics of cARS, cGRS1, cHRS and cVRS echoforms expression in yeast. Expression can be initiated upstream of the initiator ATG+1 (mtecARS at ACG-75 and mtecGRS1 at TTG-69) but the synthesis of this echoform can also be initiated at the ATG+1. In this case, the expression of the cytosolic echoform is initiated downstream (cytecHTS at ATG+60 and cytecVRS at ATG+148). Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm. Representative fields are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Micrographs of all the other caaRSs tested in Figure 3A. Representative panels from two independent experiments are shown. Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm. Representative fields are shown. (B) Immunodetection of all the GFPβ11ch-tagged aaRSs expressed in the BiG Mito-Split-GFP strain. aaRSβ11ch were detected by anti-GFP antibodies. Equal loading was verified by anti-Pgk1 antibodies and by stain-free technology (Loading control). caaRS: cytosolic aaRS, cytecaaRS: cytosolic echoform of the caaRS, mtecaaRS: mitochondrial echoform of the caaRS.
+
+**Table 2.**
+ List of genes encoding S. cerevisiae cytosolic and mitochondrial aminoacyl-tRNA synthetases and their cytosolic or mitochondrial echoforms
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Gene coding for</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">aaRSs forms</th>
+      <th colspan="2">aaRS echoforms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aaRS</td>
+      <td>cytosolic (c)</td>
+      <td>mitochondrial (mt)</td>
+      <td>cytosolic (cyte)</td>
+      <td>mitochondrial (mte)</td>
+    </tr>
+    <tr>
+      <td>IRS</td>
+      <td>ILS1</td>
+      <td>ISM1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>GRS</td>
+      <td>GRS1/GRS2</td>
+      <td>-</td>
+      <td>GRS1</td>
+      <td>GRS1 −23</td>
+    </tr>
+    <tr>
+      <td>SRS</td>
+      <td>SES1</td>
+      <td>DIA4</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>KRS</td>
+      <td>KRS1</td>
+      <td>MSK1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RRS</td>
+      <td>RRS1</td>
+      <td>MSR1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ERS</td>
+      <td>GUS1</td>
+      <td>MSE1</td>
+      <td>GUS1</td>
+      <td>GUS1</td>
+    </tr>
+    <tr>
+      <td>VRS</td>
+      <td>VAS1</td>
+      <td>-</td>
+      <td>VAS1∆46</td>
+      <td>VAS1</td>
+    </tr>
+    <tr>
+      <td>YRS</td>
+      <td>TYS1</td>
+      <td>MSY1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>MRS</td>
+      <td>MES1</td>
+      <td>MSM1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>NRS</td>
+      <td>DED81</td>
+      <td>SLM5</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PRS</td>
+      <td>YHR020W</td>
+      <td>AIM10</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TRS</td>
+      <td>THS1</td>
+      <td>MST1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>DRS</td>
+      <td>DPS1</td>
+      <td>MSD1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FRS</td>
+      <td>FRS1 (β)/FRS2 (a)</td>
+      <td>MSF1 (a)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CRS</td>
+      <td>CRS1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WRS</td>
+      <td>WRS1</td>
+      <td>MSW1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>QRS</td>
+      <td>GLN4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ARS</td>
+      <td>ALA1</td>
+      <td>-</td>
+      <td>ALA1</td>
+      <td>ALA1 −25</td>
+    </tr>
+    <tr>
+      <td>LRS</td>
+      <td>CDC60</td>
+      <td>NAM2</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HRS</td>
+      <td>HTS1</td>
+      <td>-</td>
+      <td>HTS1∆20</td>
+      <td>HTS1</td>
+    </tr>
+  </tbody>
+</table>
+
+_The Saccharomyces Genome Database standard gene names are used. The amino acid (aa) one-letter code is used for the aminoacyl-tRNA synthetase aa specificity and (-) means that the gene encoding the corresponding aaRS is missing. Two genes encode the cytosolic phenylalanyl-tRNA synthetase (cFRS) since the enzyme is an α2β2 hetero-tetramer. For echoforms, the position of the alternative initiation start codon is indicated and corresponds to the nomenclature described in Figure 3; briefly, (- number) means that the start codon of the mteaaRS is located (number) aa upstream the one that starts translation of the corresponding cyteaaRS while (∆number) means that the start codon of the cyteaaRS is located (number) aa downstream the one that starts translation of the corresponding mteaaRS._
+
 We therefore applied the BiG Mito-Split-GFP strategy to the S. cerevisiae caaRSs (See supplementary file 4), aiming to discover new mitochondrial echoforms of caaRSs. We successfully expressed in the BiG Mito-Split-GFP strain the full length GFPβ11ch-tagged versions of 18 out of 20 yeast caaRSs or cyteaaRSs (Figure 3A–C; Figure 3—figure supplement 1, Supplementary files 3 and 4). For unknown reasons, we failed to obtain the full-length GFPβ11ch-tagged versions of cCRS and cPRS despite repeated attempts, but successfully cloned the first hundred N-terminal aa residues of cCRS (N100cCRS) (Figure 3C). An unambiguous mitochondrial fluorescent signal was observed with cFRS2β11ch (the α-subunit of the α2β2 cFRS), cytecHRSβ11ch and N100cCRSβ11ch (Figure 3A–C; Figure 3—figure supplement 1). Since the existence of a fully functional mtFRS has been demonstrated (Koerner et al., 1987), it is possible that supernumerary mtecFRS2 we identified is not necessary for charging mitochondrial tRNAPhe but exerts some non-canonical functions, in addition to its role in cytosolic protein synthesis. The mitochondrial fluorescence triggered by expression of N100cCRSβ11ch suggests that this part of cCRS harbors a MTS, which has recently been proposed (Nishimura et al., 2019, see Discussion). The mitochondrial fluorescence triggered by cytecHRSβ11ch is more intriguing. The most plausible hypothesis is that the MTS of the mtecHRS is longer than the one originally characterized. The other possibility is that there is indeed a second mitochondrial echoform of cHRS imported inside mitochondria through a cryptic MTS that has yet to be identified and, like for cFRS2, this new mtecHRS would then most probably exert a non-canonical function.
 
 As already mentioned, cARS, cGRS1, cHRS and cVRS genes are known to produce both cytosolic and mitochondrial forms of these proteins (Figure 3D). When mtecARSβ11ch, mtecGRS1β11ch, mtecHRSβ11ch and mtecVRSβ11ch (echoforms that start with the most upstream methionine initiator codon, Figure 3D) were expressed in the BiG Mito-Split-GFP strain, a mitochondrial GFP staining was, as expected, observed with these four mtecaaRSs (Figure 3D). Conversely, cytecARSβ11ch, cytecGRS1β11ch and cytecVRSβ11ch, versions without their MTS) did not produce any detectable GFP signal confirming the MTS-dependency of these cytosolic echoforms for mitochondria localization (Figure 3D; Figure 3—figure supplement 1A). The mitochondrial fluorescence produced by cytecHRSβ11ch has already been discussed above.
 
-## Investigating non-conventional mitochondrial targeting signals in dual localized proteins
+### Investigating non-conventional mitochondrial targeting signals in dual localized proteins
 
 Unlike proteins with a MTS that is cleaved upon import into mitochondria, mtecERS does not involve any processing (Frechin et al., 2009). Presumably, the mitochondrial targeting residues are located in the N-terminal (N-ter) region of cERS as in precursors of mitochondrial proteins destined to the matrix. To identify them, we tagged with GFPβ11ch three N-ter domains of cERS of varying length that correspond to the first 30 (cERSβ11ch-N1), 70 (cERSβ11ch-N2) and 200 (cERSβ11ch-N3) residues of cERS (Supplementary files 3 and 4; Figure 4A) and we tested their ability to be imported in the mitochondria of the BiG Mito-Split-GFP strain (Figure 4B). All three peptides produced a GFP fluorescence signal that matched the labeling of mitochondria with MitoTracker Red CMXRos (Figure 4B). Consistently, no GFP fluorescence was detected with cERSβ11ch lacking the residues 1–30 or 1–200 (cERSβ11ch-∆N1 and cERSβ11ch-∆N2 respectively) (Figure 4B) despite detection by WB of these truncated proteins in cells (Figure 4C). For unknown reasons, cERSβ11ch-N1 and cERSβ11ch-N2 constructs were not detected by Western blot but gave a proper mitochondrial fluorescence staining (Figure 4B and C). These data narrow down cERS’ MTS to the 30 first aa residues of its N-ter domain; this segment is made of a short β-strand and a 13 aa long α-chain (Simader et al., 2006) likely harboring the import signal. This further illustrates the strength of our technique towards the identification of unconventional MTSs in dual localized proteins.
 
-## Testing mitochondrial importability of plant and mammalian proteins using the BiG Mito-Split-GFP system
+![Figure 4.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of the cERS fragments fused to GFPβ11ch. Orange boxes correspond to the GST-like domain necessary for Arc1 interaction (GST), the grey boxes represent the catalytic domain (CD), and the blue box, the tRNA-binding domain generally named anti-codon binding domain (ABD). Numbering above corresponds to cERS amino acids residues. (B) Fluorescence microscopy analyses of the BiG Mito-Split-GFP strain expressing the cERS variants shown on A. Mitochondria were stained with MitoTracker Red CMXRos; scale bar: 5 µm. The secondary structure (according to Simader et al., 2006) of the smallest peptide that still contains the non-conventional MTS of cERS is described together with the amino acid sequence of each helices. Positively and negatively charged amino acids are shown in orange and blue respectively. (C) Immunodetection of the cERS variants in BiG Mito-Split-GFP whole cell extracts using anti-GFP antibodies. Quantity of proteins loaded in each lane was estimated using anti-Pgk1 antibodies or by the stain-free procedure. The bands corresponding to the mutants N1 and N2 could not be detected. The representative fields or gel are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig4-figsupp1-v1.jpg)
+
+### Testing mitochondrial importability of plant and mammalian proteins using the BiG Mito-Split-GFP system
 
 The BiG Mito-Split-GFP system is based on modifications in the mitochondrial genome for expressing the GFPβ1-10 fragment inside the organelle. Modifying the mitochondrial genome is thus far only possible in S. cerevisiae and Chlamydomonas reinhardtii (Remacle et al., 2006). Owing to the high degree of conservation of mitochondrial protein import systems (Lithgow and Schneider, 2010), we used the yeast BiG Mito-Split-GFP strain to test the mitochondrial importability of proteins from various eukaryotic origins. We first tested two glutamyl-tRNA synthetases from Arabidopsis thaliana, AthcERS and Athmt/chlERS. According to independent MTS prediction tools, AthcERS would be a cytosolic protein with a putative chloroplastic targeting signal (TargetP1.1), whereas Athmt/chlERS is strongly predicted to be located in mitochondria and chloroplast (Figure 5A). cDNAs encoding the AthcERS and Athmt/chlERS proteins were fused to GFPβ11ch (Supplementary files 3 and 4) and the resulting plasmids were transformed into the BiG Mito-Split-GFP strain. Expression of these proteins was confirmed by Western blot (Figure 5C). AthcERSβ11ch did not produce any GFP signal, whereas consistent with its predicted localization Athmt/chlERSβ11ch resulted in a specific mitochondrial fluorescence staining (Figure 5B). These data show that the yeast BiG Mito-Split-GFP system can be used to analyze mitochondrial localization of plant proteins.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56649/elife-56649-fig5-v1.jpg)
 
-**Figure 5.:** (A, D) Prediction of MTS and mitochondrial localization of (A) two ERS from Arabidopsis thaliana (AthcERS and Athmt/chlERS) and (D) five eukaryotic Ago2 proteins [HsaAgo2 (Protein argonaute-2 isoform X2 [Homo sapiens] NCBI sequence ID: XP_011515267.1), MmuAgo2 (protein argonaute-2 Mus musculus NCBI sequence ID: NP_694818.3.), BtaAgo2 (Bos Taurus), DreAgo2 (Danio rerio), DmeAgo2 (Drosophila melanogaster). MTS were predicted using TPpred2.0 (http://tppred2.biocomp.unibo.it/tppred2), TargetP1.1 (http://cbs.dtu.dk/services/TargetP/), MitoFates (http://mitf.cbrc.jp/MitoFates/cgibin/top.cgi) and the EukmPloc2 website (http://www.csbio.sjtu.edu.cn/bioinf/euk-multi-2/). Grey boxes indicate prediction of a cytosolic localization, light and dark green indicate prediction of mitochondrial or chloroplastic localization respectively. Blue boxes indicate prediction of nuclear localization. (B, E) Fluorescence microscopy analyses of the BiG Mito-Split-GFP strain expressing the GFPβ11ch-tagged cERS and Athmt/chlERS (N = 2) (AthB) andAgo2, MmuAgo2 (N = 2) (HsaE). Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm. Representative fields are shown. (C, E) Protein expression was checked by WB with anti-GFP antibodies and equal amount of loaded protein was controlled using anti-Pgk1 antibodies and by the stain-free technology (Loading control: stain-free). The representative gels are shown.Figure 5—source data 1.β11ch and mouse and human Ago2β11ch in whole cell extract from the transformed BiG Mito-Split-GFP strains (Related to Figure 5C and F).Antibodies used for immunoblotting are indicated below WBs. Loading controls correspond to gels stained with the stain-free procedure.
+**Figure 5.:** (A, D) Prediction of MTS and mitochondrial localization of (A) two ERS from Arabidopsis thaliana (AthcERS and Athmt/chlERS) and (D) five eukaryotic Ago2 proteins [HsaAgo2 (Protein argonaute-2 isoform X2 [Homo sapiens] NCBI sequence ID: XP_011515267.1), MmuAgo2 (protein argonaute-2 Mus musculus NCBI sequence ID: NP_694818.3.), BtaAgo2 (Bos Taurus), DreAgo2 (Danio rerio), DmeAgo2 (Drosophila melanogaster). MTS were predicted using TPpred2.0 (http://tppred2.biocomp.unibo.it/tppred2), TargetP1.1 (http://cbs.dtu.dk/services/TargetP/), MitoFates (http://mitf.cbrc.jp/MitoFates/cgibin/top.cgi) and the EukmPloc2 website (http://www.csbio.sjtu.edu.cn/bioinf/euk-multi-2/). Grey boxes indicate prediction of a cytosolic localization, light and dark green indicate prediction of mitochondrial or chloroplastic localization respectively. Blue boxes indicate prediction of nuclear localization. (B, E) Fluorescence microscopy analyses of the BiG Mito-Split-GFP strain expressing the GFPβ11ch-tagged AthcERS and Athmt/chlERS (N = 2) (B) andMmuAgo2, HsaAgo2 (N = 2) (E). Mitochondria were stained with MitoTracker Red CMXRos. Scale bar: 5 µm. Representative fields are shown. (C, E) Protein expression was checked by WB with anti-GFP antibodies and equal amount of loaded protein was controlled using anti-Pgk1 antibodies and by the stain-free technology (Loading control: stain-free). The representative gels are shown.
 
 We also used the BiG Mito-Split-GFP system to address a yet-unresolved question regarding the presence of mammalian Argonaute protein 2 (Ago2) in mitochondria. This protein mainly localizes to the nucleoplasm and cell junctions where it is required for RNA-mediated gene silencing (RNAi) by the RNA-induced silencing complex (RISC) (Hammond et al., 2000). In some studies, Ago2 was suggested to be associated to mitochondria, but it remains unclear whether it localizes at the external surface or inside the organelle (Barrey et al., 2011; Shepherd et al., 2017). Using four different algorithms a potential MTS could not be predicted in Ago2 proteins from human, mouse, Bos taurus, Danio rerio andDrosophila melanogaster, casting doubts on the mitochondrial import of Ago2 (Figure 5D). To help resolve this question, the BiG Mito-Split-GFP yeast strain was transformed with plasmids expressing mouse and human Ago2β11ch proteins (MmuAgo2β11ch and HsaAgo2β11ch, respectively, Supplementary files 3 and 4). Expression of each of these GFPβ11ch-tagged constructs was confirmed by WB, and both generated a solid and specific GFP fluorescence restricted to mitochondria (Figure 5E and F). These observations provide strong evidence that in addition to a cytosolic and nuclear location, Ago2 is also transported into mitochondria and is really a multi-localized protein with a mitochondrial echoform.
 
@@ -105,34 +421,121 @@ The yeast BiG Mito-Split-GFP system we describe here is designed to point out mi
 
 ## Materials and methods
 
-## Construction of plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>BiG Mito- Split-GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>RKY176 strain with ADE2 gene (ρ+atp6::GFPβ1-105`UTRCOX2 ATP6 3`UTRCOX2)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>BiG Mito- Split-GFP+Pgk1β11ch</td>
+      <td>This study</td>
+      <td></td>
+      <td>RKY176 strain (PGK1:: β11ch::TRP1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>BiG Mito- Split-GFP+PAM16β11ch</td>
+      <td>This study</td>
+      <td></td>
+      <td>RKY176 strain (PAM16:: β11ch::TRP1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>BiG Mito- Split-GFP+cERSβ11ch</td>
+      <td>This study</td>
+      <td></td>
+      <td>RKY176 strain (GUS1:: β11ch::TRP1)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Mouse polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# G1544</td>
+      <td>WB (1:5000) Called GFP N-ter in Figure 2C recognizes GFPβ1–10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Mouse monoclonal IgG1κ clones 7.1 and 13.1)</td>
+      <td>Roche</td>
+      <td>Cat# 11814460001</td>
+      <td>WB (1:5000) Called GFP polyclonal in Figure 2C recognizes GFPβ11</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pgk1 (Mouse monoclonal IgG1, clone 22C5D8)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# 459250</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG414-pGPD- β11ch (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Template vector used for all constructs. Cloning done by Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red CMXRos</td>
+      <td>ThermoFisher</td>
+      <td>Cat# M7512</td>
+      <td>Mitochondria staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.5% (v/v) 2,2,2-Trichloroethanol</td>
+      <td>Sigma</td>
+      <td>Cat# T54801</td>
+      <td>Used to detect total protein loading in SDS-PAGE, referred to Loading control</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of plasmids
 
 ATP6 gene flanked by 75 bp of 5`UTR and 118 bp of 3`UTR of COX2 was synthesized by Genescript and cloned at the EcoRI site of pPT24 plasmid bearing the sequence of COX2 gene along with its UTRs (Thorsness and Fox, 1993), giving pRK49-2. The GFPβ1-10 sequence (optimized for mitochondrial codon usage) encoding the first ten β-strands of GFP flanked by the regulatory sequences of ATP6 gene and BamHI/EcoRI sites was synthesized by Genescript. The BamHI-EcoRI DNA fragment was cloned into pPT24 plasmid, giving the pRK67-2. The sequences of inserts were verified by sequencing.
 
 The GFPβ11ch coding sequence, synthesized by Genescript, was subcloned into the pAG414 pGPD-ccdB vector to generate the pAG414pGPD-ccdBβ11ch. All genes encoding cytosolic or mitochondrial proteins were amplified from genomic DNA using the PrimeSTAR Max polymerase according to the manufacturer instructions (Takara), purified by PCR clean up (Macherey-Nagel) and subcloned either by Gateway (Thermofisher) (Katzen, 2007) or Gibson assembly (NEB) (Gibson et al., 2010; Gibson et al., 2009) according to the manufacturer’s instructions (see Table S2).
 
-## Construction of the BiG Mito-Split-GFP strain
+### Construction of the BiG Mito-Split-GFP strain
 
 The genotypes of strains used in this study are listed in Table 1. The ρ+ indicates the wild-type complete mtDNA (when followed by deletion/insertion mutation it means the complete mtDNA with a mutation). The ρ- synthetic genome (ρ-S) was obtained by biolistic introduction into mitochondria of ρ0 DFS160 strain (devoid of mitochondrial DNA) of the plasmids (pRK49-2 or pRK67-2) bearing indicated genes. The integration of ATP6 gene into the mtDNA under the control of regulatory sequences of COX2 was done using a previously described procedure (Steele et al., 1996). The pRK49-2 plasmid was introduced into mitochondria of DFS160 ρ0 strain by ballistic transformation using the Particle Delivery Systems PDS-1000/He (BIO-RAD) as described (Bonnefoy and Fox, 2001), giving the ρ-S strain RKY89. For the integration of the ATP6 gene at the COX2 locus, we first constructed a ρ+ strain (RKY83, Fig. S2A) with a complete deletion of the coding sequence of ATP6 (atp6::ARG8m) and a partial deletion in COX2, cox2-62 (Table 1), by crossing YTMT2 (Matα derivative of strain NB40-3C carrying the cox2-62 mutation (Steele et al., 1996) and MR10 (atp6::ARG8m) (Rak et al., 2007). After crossing, cells were allowed to divide during 20–40 generations to allow mtDNA recombination and mitotic segregation of the double mutation. The double atp6::ARG8m cox2-62 mutant colonies were identified by crossing with the ρ-S strain SDC30 (Duvezin-Caubet et al., 2003) that carries ATP6 and COX2 which restored the respiratory competence and by crossing with the YTMT2 strain, ρ+cox2-62, which did not restored the respiratory competence of the double mutant. Next, the ρ-S strain RKY89 was crossed with strain RKY83. This cross resulted in the respiratory competent progenies, named RKY112, which were growing on minimal medium without arginine (Table 1, Figure 1B and S2B). The ectopic integration of the ATP6 gene into COX2 locus was verified by PCR using oligonucleotides oAtp6-2, oAtp6-4, o5`UTR2 and o5`UTR1 (Table S1, Fig. S2D). To integrate GFPβ1-10 into ATP6 locus the ρ-S strain RKY172 was obtained by biolistic transformation of DFS160ρ0 with pRK67-2, as described above. RKY172 was crossed with RKY112, heterokaryons were allowed to divide during 20–40 generations to allow mtDNA recombination and mitotic segregation (Fig. S2C). The RKY176 progenies were selected by their respiratory competence and inability to grow on arginine depleted plates. The correct integration of the GFPβ1-10 gene into ATP6 locus was verified by PCR using oligonucleotides oAtp6-1, oAtp6-10, oXFP-pr and oXFP-lw (Table S1, Fig. S2E). Finally, ADE2 WT sequence was amplified from the genomic DNA of a BY strain using oligonucleotides ADE2 Fw and ADE2 Rv (Table S2) and transformed into the RKY176 strain. Red/white colonies were then screened on adenine depleted plates to select ADE2-bearing RK176 strain.
 
-## Media and growth conditions
+### Media and growth conditions
 
 Yeast cell culture media and their composition: complete glucose YP medium (1% Bacto yeast extract, 1% Bacto peptone, 2% glucose, 40 mg/l adenine), complete YP Gal (1% Bacto yeast extract, 1% Bacto peptone, 2% galactose, 40 mg/l adenine), synthetic media composed of 0.67% (w/v) yeast nitrogen base without amino acids (aa), 0.5% (w/v) ammonium sulfate, either 2% (w/v) glucose (SC), galactose (SC Gal) or glycerol (SC Gly) and a mixture of aa and bases from Formedium (Norfolk, UK). Low sulfate medium LSM contained 0.67% (w/v) yeast nitrogen base without aa and ammonium sulphate, 2% galactose and 50 mg/L histidine, tryptophan, leucine, uracil, adenine, and arginine. The solid media contained 2% (w/v) of agar. Every strain was grown at 30°C with rotational shaking to mid-log (OD600 nm = 0.7). SC Gal was filtered on 25 µm filters and not autoclaved before use.
 
-## Pulse-labelling of mitochondrially-synthesized proteins and ATP synthesis
+### Pulse-labelling of mitochondrially-synthesized proteins and ATP synthesis
 
 Labeling of mitochondrial translation products was performed using the protocol described by Barrientos et al., 2002. Yeast cells were grown to early exponential phase (107 cells/mL) in 10 mL of liquid YP Gal medium. Cells were harvested by centrifugation and washed twice with LSM medium then suspended in the same medium and incubated for cysteine and methionine starvation for 2 hr at 28°C with shaking. Cells were suspended in 500 µL of LSM medium, and 1 mM cycloheximide was added. After a 5 min incubation at 28°C, 0.5 mCi of [35S]methionine and [35S]cysteine (Amersham Biosciences) was added and cell suspension was further incubated for 20 min at 28°C. Total proteins were isolated by alkaline lysis and suspended in 50 µL of Laemmli buffer. Samples with the same level of incorporated radioactivity were separated by SDS-PAGE in 17.5% (w/v) acrylamide gels (to separate Atp8 and Atp9) or 12% (w/v) acrylamide containing 4 M urea and 25% (v/v) glycerol (to separate Atp6, Cox3, Cox2 and cytochrome b). After migration, the gels were dried and [35S]-radiolabeled proteins were visualized by autoradiography with a PhosphorImager after a one-week exposure. To measure ATP synthase activities in the RKY112 strain, mitochondria were prepared by the enzymatic method as described in Guérin et al., 1979. For the rate of ATP synthesis, the mitochondria (0.15 mg/mL) were placed in a 1 mL thermostatically controlled chamber at 28°C in respiration buffer (0.65 M mannitol, 0.36 mM EGTA, 5 mM Tris-phosphate, 10 mM Tris-maleate pH 6.8) (Rigoulet and Guerin, 1979). The reaction was started by adding 4 mM NADH and 750 µM ADP; 100 µL aliquots were taken every 15 s and the reaction was stopped by adding 3.5% (v/v) perchloric acid and 12.5 mM EDTA. Samples were neutralized to pH 6.5 by KOH and 0.3 M MOPS. ATP was quantified using the Kinase-Glo Max Luminescence Kinase Assay (Promega) and a Beckman Coulter's Paradigm Plate Reader.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 5 mL of cells stably expressing Pam16β11ch and Pgk1β11ch strains (see Table 1) grown in YPD to confluence were diluted in 4 mL of SC Gal and grown overnight to reach mid-log phase. They were then diluted again in SC Gal and grown for 6 hr. Cells were then centrifuged and resuspended in water, passed for GFP detection on a BD FACS Canto II cytometer and Data analysis was performed using FlowJo.
 
-## Proteins extraction and western blots
+### Proteins extraction and western blots
 
 10 mL of cells grown to mid-log phase were harvested and spin down 5 min at 2000 × g at room temperature (RT). Cells were suspended in 500 µL of deionized water, 50 µL of 1.85 M NaOH was added and the mixture was incubated 10 min on ice. After addition of 50 µL of TCA 100% and 10 min of incubation on ice, the total precipitate was pelleted by centrifugation 15 min at 13000 × g at 4°C. After removing the supernatant, pellets were suspended in 200 µL of Laemmli buffer (1×) supplemented with 20 µL of 1M Tris Base pH 8.
 
 For each strain, 10 µL of total proteins were separated by SDS-PAGE on 8-, 10- or 12% (w/v) polyacrylamide gels prior to electroblotting with a Trans-Blot Turbo system (BIO-RAD) onto PVDF membranes (BIO-RAD, #1704156). Detection was carried out using mouse monoclonal IgG anti-GFP primary antibodies (1:5000; Roche Clone 7.1 and 13.1) + mouse polyclonal for the recognition of GFPβ1-10 (1:5000, Sigma #G1544), and mouse monoclonal IgG1 anti-Pgk1 primary antibodies (1:5000; Molecular Probes Clone 22C5D8). Secondary antibodies were Goat anti-mouse IgG (H+L) HRP-conjugated antibodies (BIO-RAD; #1706516), at a concentration of 1:10000. ECL-plus reagents (BIO-RAD) was used according to the manufacturer’s instructions and immuno-labeled proteins were revealed using a ChemiDoc Touch Imaging System (BIO-RAD). Total load of protein (Loading control) was assessed by UV detection using a ChemiDoc Touch Imaging System (BIO-RAD; Stain-free procedure) and detected by addition of 0.5% (v/v) 2,2,2-Trichloroethanol (Sigma #T54801) to the 30% acrylamide/bis-acrylamide solution.
 
-## Image acquisition and staining
+### Image acquisition and staining
 
 Cells were incubated overnight in the appropriate media, diluted to an OD600 nm of 0.3 prior to microscopy studies and stained after 6 hr of growth at 30°C. For mitochondria staining, cells were centrifuged 1 min at 1500 × g at room temperature, suspended in 1 mL of SC Gal supplemented with Red-Mitotracker CMXRos at a final concentration of 100 nM (Molecular Probes), and incubated 15 min at rotational shaking at 30°C. Cells were washed three times in one volume of deionized water, and suspended in 100 µL of deionized water for microscopic studies. Epifluorescence images were taken with an AXIO Observer d1 (Carl Zeiss) epifluorescence microscope using a 100 × plan apochromatic objective (Carl Zeiss) and processed with the Image J software. Images for 3D reconstruction were taken using a confocal LSM 780 high resolution module Airyscan with a 63 × 1.4 NA plan apochromatic objective (Carl Zeiss) controlled by the Zen Black 2.3 software (Carl Zeiss). Z-stack reconstruction was performed on the IMARIS 9.1.2 (Bitplane AG) software.

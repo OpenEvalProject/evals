@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00wbskb04 Host Pathogen Interactions Program, Texas Biomedical Research Institute San Antonio United States
+1. Host Pathogen Interactions Program, Texas Biomedical Research Institute San Antonio United States ([ROR:00wbskb04](https://ror.org/00wbskb04))
 
 † Corresponding author
 

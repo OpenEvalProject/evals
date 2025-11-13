@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.43514.001 The linguistic foundations of science and technology include many terms that have been borrowed from ancient languages. In the case of terms with origins in the Greek language, the modern meaning can often differ significantly from the original one. Here we use the PubMed database to demonstrate the prevalence of words of Greek origin in the language of modern science, and call for scientists to exercise care when coining new terms.
+The linguistic foundations of science and technology include many terms that have been borrowed from ancient languages. In the case of terms with origins in the Greek language, the modern meaning can often differ significantly from the original one. Here we use the PubMed database to demonstrate the prevalence of words of Greek origin in the language of modern science, and call for scientists to exercise care when coining new terms.
 
 ## Our etymological legacy
 
@@ -46,6 +46,147 @@ Advances in science mean that there is an ongoing need for new words (also known
 A case in point is the term metagenomics, which is the study of genetic material taken from environmental samples. Here the prefix 'meta-' is used in a way that is not consistent with its Greek origins (meta- meaning beyond). Better names might have been endogenomics for the study of environmental samples taken from inside a host organism, and exogenomics for the study of samples taken from the outside (endo- and exo- meaning 'inside' and 'outside' in Greek, respectively). A similar situation might have occurred when looking for a name to describe the search for life elsewhere in the universe: the term exobiology was gradually replaced by astrobiology (Gargaud et al., 2011) – possibly because it had to rhyme with astronauts!
 
 The suffix -some (from 'soma', meaning 'body' in Greek) has been employed in neologisms across the life sciences in recent decades, with varying degrees of success (Table 1). Likewise, the suffix -ome (from '-oma', meaning an undefined set in Greek) has been much used (think biome and genome) in recent times. To exemplify the linguistic richness of the Greek language, we explored the use of Greek prepositions to convey additional meaning within genomics. Epigenome (Murrell et al., 2005) is an excellent example of a scientific term in which a Greek preposition ('epi'-, meaning 'on top of') is combined with the suffix -genome to make a word that is precise and logically consistent. Other (less well known) examples include antigenome (which is used in immunology; Sette et al., 2016), metagenome (Streit and Schmitz, 2004), progenome (Ferreira et al., 2004), and hypergenome (Sgaramella, 2013). We then went on to create new words of this kind (Table 2) that, we feel, remain true to their etymological roots while, at the same time, being potentially useful to the scientific community. (The term pangenome (Tettelin et al., 2005), meaning the full complement of genes in a clade, is also very useful although, strictly speaking, 'pan-' is not a preposition).
+
+**Table 1.**
+ A selection of terms ending with the suffix -some that appear in the scientific literature.The term prostasome, which first showed up in PubMed in 1982, appeared in 218 PubMed records as of July 28, 2018. However, other terms ending with -some have proved much less popular.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+      <th>Context</th>
+      <th>Number of PubMed records</th>
+      <th>Year of first appearance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>catansome</td>
+      <td>catanionic vesicle</td>
+      <td>synthetic biochemistry, surfactants</td>
+      <td>2</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>ejectisome</td>
+      <td>extrusive organelle</td>
+      <td>cell biology and physiology</td>
+      <td>16</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <td>histrosome</td>
+      <td>a type of ejectisome</td>
+      <td>cell biology and physiology</td>
+      <td>1</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <td>hyposome</td>
+      <td>cellular structure</td>
+      <td>dDinoflagellate biology</td>
+      <td>7</td>
+      <td>2010</td>
+    </tr>
+    <tr>
+      <td>prostasome</td>
+      <td>prostate gland vesicle</td>
+      <td>sperm mobility and physiology</td>
+      <td>218</td>
+      <td>1982</td>
+    </tr>
+    <tr>
+      <td>remosome</td>
+      <td>remodeled nucleosome</td>
+      <td>non-canonical chromatin structure</td>
+      <td>2</td>
+      <td>2010</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ A selection of terms that combine a Greek preposition and the suffix -genome.Some terms that the authors believe could be useful in genome biology.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Preposition</th>
+      <th>Term</th>
+      <th>Possible definition/interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ana</td>
+      <td>anagenome</td>
+      <td>could be used to describe usage over time, to monitor population variation</td>
+    </tr>
+    <tr>
+      <td>amphi</td>
+      <td>amphigenome</td>
+      <td>could be used to describe polyploid genomes, and sex differences</td>
+    </tr>
+    <tr>
+      <td>apo</td>
+      <td>apogenome</td>
+      <td>could be used to convey non-DNA large scale analysis</td>
+    </tr>
+    <tr>
+      <td>dia</td>
+      <td>diagenome</td>
+      <td>could be a useful concept for comparative genomics</td>
+    </tr>
+    <tr>
+      <td>eis</td>
+      <td>eisgenome</td>
+      <td>could be a useful term for substance use</td>
+    </tr>
+    <tr>
+      <td>ek</td>
+      <td>ecgenome</td>
+      <td>alternative for exo-genomics (see text)</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>engenome</td>
+      <td>alternative for endo-genomics (see text)</td>
+    </tr>
+    <tr>
+      <td>kata</td>
+      <td>katagenome</td>
+      <td>could be a vey useful term to describe developmental processes over time</td>
+    </tr>
+    <tr>
+      <td>para</td>
+      <td>paragenome</td>
+      <td>could be used to describe the genomics of paralogs (although this is not satisfactory from an etymological point of view)</td>
+    </tr>
+    <tr>
+      <td>peri</td>
+      <td>perigenome</td>
+      <td>could be a very useful term to describe developmental processes over space</td>
+    </tr>
+    <tr>
+      <td>pros</td>
+      <td>prosgenome</td>
+      <td>could be used to describe synthetic genomes</td>
+    </tr>
+    <tr>
+      <td>syn</td>
+      <td>syngenome</td>
+      <td>could be used to describe the genomics of symbioses</td>
+    </tr>
+    <tr>
+      <td>hypo</td>
+      <td>hypogenome</td>
+      <td>could be used to describe a synthetic genome with depleted functions – as opposed to hyper-genome to describe a synthetic genome with added functions</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Conclusion and epilogue
 

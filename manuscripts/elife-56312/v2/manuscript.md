@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Due to its amenability to manipulations, to live observation and its striking similarities to mammals, the chicken embryo has been one of the major animal models in biomedical research. Although it is technically possible to genome-edit the chicken, its long generation time (6 months to sexual maturity) makes it an impractical lab model and has prevented it widespread use in research. The Japanese quail ( Coturnix coturnix japonica ) is an attractive alternative, very similar to the chicken, but with the decisive asset of a much shorter generation time (1.5 months). In recent years, transgenic quail lines have been described. Most of them were generated using replication-deficient lentiviruses, a technique that presents diverse limitations. Here, we introduce a novel technology to perform transgenesis in quail, based on the in vivo transfection of plasmids in circulating Primordial Germ Cells (PGCs). This technique is simple, efficient and allows using the infinite variety of genome engineering approaches developed in other models. Furthermore, we present a website centralizing quail genomic and technological information to facilitate the design of genome-editing strategies, showcase the past and future transgenic quail lines and foster collaborative work within the avian community.
+Due to its amenability to manipulations, to live observation and its striking similarities to mammals, the chicken embryo has been one of the major animal models in biomedical research. Although it is technically possible to genome-edit the chicken, its long generation time (6 months to sexual maturity) makes it an impractical lab model and has prevented it widespread use in research. The Japanese quail (Coturnix coturnix japonica) is an attractive alternative, very similar to the chicken, but with the decisive asset of a much shorter generation time (1.5 months). In recent years, transgenic quail lines have been described. Most of them were generated using replication-deficient lentiviruses, a technique that presents diverse limitations. Here, we introduce a novel technology to perform transgenesis in quail, based on the in vivo transfection of plasmids in circulating Primordial Germ Cells (PGCs). This technique is simple, efficient and allows using the infinite variety of genome engineering approaches developed in other models. Furthermore, we present a website centralizing quail genomic and technological information to facilitate the design of genome-editing strategies, showcase the past and future transgenic quail lines and foster collaborative work within the avian community.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Here, we used the direct transfection of PGCs in the bloodstream of quail embryo
 
 ## Results
 
-## Direct transfection of quail PGCs
+### Direct transfection of quail PGCs
 
 Unlike mammals, avian PGCs temporarily transit through the blood system. Chicken PGCs initially located at the end of gastrulation within the germinal crescent, enter the extra-embryonic blood vessels at about 30 hr of incubation (E1.5, HH9) and begin to circulate throughout the embryo. Their number in the blood peaks around E2/2.5 (HH15-16). By E3 (HH20), PGCs actively migrate back in the embryo and into the gonad anlagen (Nakamura et al., 2007; Nieuwkoop and Sutasurya, 1979). Chicken PGCs are transfected during their transient journey in the bloodstream, using a transfection mix containing lipofectamine, a transgenesis plasmid with Tol2 elements flanking the DNA construct to be inserted and a plasmid coding for transposase under an ubiquitous promoter (Tyack et al., 2013).
 
@@ -47,7 +47,7 @@ To test whether the direct transfection of PGCs can be achieved in quails, we de
 
 **Figure 1.:** (A) Vectors used in the injection mix. (B) Gonads from E7 embryo dissected 5 days after in vivo PGC transfection, showing GFP-positive transfected PGCs (arrowheads). (C–F) Confocal views of transfected (GFP- and mCherry-positive) PGCs among non-transfected PGCs, in the gonads of E7 injected embryo. PGCs are recognized by their expression of the Vasa marker (E,F). (G–H) Transgenic (Tg) and wild-type (WT) chicks showing ubiquitous expression of membranal GFP and nuclear mCherry when observed with UV goggles. (I–J) cross-section of an E3 transgenic quail embryo, showing strong and ubiquitous expression of the transgenes in all cells of the embryo.
 
-## Generation of a lens-specific GFP minigene to facilitate the selection of transgenic birds
+### Generation of a lens-specific GFP minigene to facilitate the selection of transgenic birds
 
 To facilitate the selection of transgenic (F1) birds, we devised a fluorescent selection marker readily visible in the lens at hatching under blue light illumination. We isolated a 462bp-long lens-specific promoter of the βB1crystallin gene (CRYBB1; Duncan et al., 1995) from chicken genomic DNA and cloned it upstream of GFP to develop a selection mini-gene (CrystallGFP) based on lens expression. The CrystallGFP mini gene is only 1.7 kb long and can be added to transgene constructs. To test the specificity of the promoter, we co-electroporated the CrystallGFP construct together with a ubiquitously expressed RFP (CAG-RFP) into the optic cup of a quail E3 embryo (Figure 2A–D). Twenty-four hours after electroporation, RFP-positive cells were found in the retina and lens (Figure 2B,D). However, only the lens cells expressed the GFP (Figure 2C,D), showing the specificity of the βB1crystallin promoter for lens tissues. Transgenic quails carrying the CrystallGFP selection cassette display strong expression of GFP in all lens cells during embryogenesis (Figure 2E–G) and in adults (Figure 2I). The CrystallGFP selection cassette was included in some of the transgenesis constructs, such as the muscle-specific quail line described below (Figure 2H and Figure 4).
 
@@ -55,13 +55,21 @@ To facilitate the selection of transgenic (F1) birds, we devised a fluorescent s
 
 **Figure 2.:** (A–D) Cross-section of the head of an E4 embryo, electroporated one day earlier in the optic cup with a CrystallGFP minigene. (A) DAPI, (B) electroporation marker CAG-RFP plasmid, (C) GFP, (D) overlay. (E–G) Cross-section of the head of a 3-day-old embryo of the Tg(MLC:GFP-IRES-NLS-mCherry,CRYBB1:GFP) transgenic line showing the specific expression of GFP throughout the lens. (H) Electroporation constructs used to express the CrystallGFP minigene in a muscle-specific transgenic line (see Figure 4). (I) Transgenic and WT adults of the muscle-specific transgenic line showing GFP expression in lens.
 
-## Generation of transgenic quails lines
+### Generation of transgenic quails lines
 
-## TgT2(CAG:NLS-mCherry-IRES-GFP-CAAX): ubiquitous expression of membranal GFP and nuclear RFP
+#### TgT2(CAG:NLS-mCherry-IRES-GFP-CAAX): ubiquitous expression of membranal GFP and nuclear RFP
 
 To generate a transgenic quail line ubiquitously expressing a membrane-bound GFP and a nuclear RFP, embryos injected with the pT2-CAG:NLS-mCherry-IRES-GFP-CAAX plasmid (see above) were incubated until hatching and raised to adult stage. In this and other experiments described below, we have observed that about half of the (50) injected eggs hatched. Six weeks later, we collected semen from adult males and tested by PCR for the presence of the transgene. Three (F0) males, positive for the transgene, were crossed with four females each. From these crosses, three transgenic (F1) birds could be readily spotted at hatching by fluorescence screening thanks to the ubiquitously expressed GFP and mCherry. Expression of GFP or mCherry was visible in the beak, eyes and legs of the transgenic birds compared to wild-type animals (Figure 1G,H). Immunostaining on cross-sections of E3 transgenic embryos showed a ubiquitous expression of the GFP at the cell membrane and of mCherry in nuclei (Figure 1I–K). From this and other crosses we have performed in the laboratory (see below), we estimate that about 1% of the offspring contain the transgene, an efficiency comparable to that observed in the chicken using the same technology (Tyack et al., 2013). Compared to the existing quail lines carrying ubiquitously expressed fluorescent proteins, this line should prove useful to researchers in the field. Indeed, we observed that the membrane-bound GFP results in a better resolution of cell membrane processes (protrusions, filopodia, etc.) than a cytoplasmic counterpart, while it also combines a nuclear mCherry, allowing accurate segmentation of cells necessary for automated image analyses such as for 3D cell tracking. As a proof of concept of the usefulness of this transgene, we performed real-time video microscopy on 2-day-old embryos (observation time of about 12 hr), which illustrates the extensive morphogenetic changes taking place during early development (e.g. somitogenesis, heart and otic placode formation, etc.; see Video 1), while a higher magnification exquisitely shows the posteriorward migration of the pronephric primordium (see Video 2) in this embryo.
 
-## TgT2(CAG:Kaede): ubiquitous expression of a photoconvertible fluorescent protein
+![Video 1.](https://cdn.elifesciences.org/articles/56312/elife-56312-video1.mp4.jpg)
+
+**Video 1.:** Embryo was maintained at 38°C and imaged every 10mn for 12 hr using Thunder Imager Model Organism Leica stereo microscope equipped with 1x lens.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56312/elife-56312-video2.mp4.jpg)
+
+**Video 2.:** Embryo was maintained at 38°C and imaged every 10mn for 12 hr using Thunder Imager Model Organism Leica stereo microscope equipped with 5x lens.
+
+#### TgT2(CAG:Kaede): ubiquitous expression of a photoconvertible fluorescent protein
 
 To generate this transgenic line, E2 quail embryos were injected with a construct coding for a cytoplasmic form of the photoconvertible fluorescent protein Kaede (Ando et al., 2002), driven by a CAG promoter. Upon irradiation with ultraviolet light, Kaede undergoes irreversible photoconversion from green to red fluorescence. Three F1 founders were obtained in which strong and ubiquitous expression of the photoconvertible fluorescent protein is observed in adult (Figure 3A) and in developing embryos (Figure 3B). Using the region of interest (ROI) function present in most confocal microscopes, specific areas of the embryo can be UV-illuminated to efficiently photoconvert the green fluorescent Kaede protein present in tissues to its red counterpart (Figure 3C–F). The long half-life of the photoconverted Kaede results in red fluorescence that can be detected up to 48 hr after photoconversion (Tomura et al., 2008). One major application of the TgT2(CAG:Kaede) quail line is the possibility to track in vivo the behaviour of cells over time. As an example, we performed a 7 hr-long time-lapse video of an E2 TgT2(CAG:Kaede) quail embryo where a section of the neural tube had been photoconverted upon exposure to UV light. Over the 7 hr of the time-lapse (one image taken every 15mn), neural crest cells can be observed migrating away from the neural tube (Figure 2G–I, arrowheads, and Video 3). This quail line is the first avian line carrying a photoconvertible fluorescent protein and it should be extremely useful to perform short to medium-term lineage tracing of cells as development proceeds.
 
@@ -69,7 +77,11 @@ To generate this transgenic line, E2 quail embryos were injected with a construc
 
 **Figure 3.:** (A) Two-week-old WT and transgenic quails showing the ubiquitous expression of the green fluorescent Kaede in the beak and eye (arrows). (B) WT and transgenic 3-day-old embryos showing strong ubiquitous expression of the protein. (C–F) A newly formed somite before (C) and after (D–F) photoconversion. (G–I) Snapshots from a time-lapse video (see Video 3) showing the morphogenic movements of photoconverted neural tube cells. Arrowheads in H and I show neural crest cells initiating their lateral migration. NT: Neural Tube, S: Somite.
 
-## TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP): a skeletal muscle-specific reporter quail
+![Video 3.](https://cdn.elifesciences.org/articles/56312/elife-56312-video3.mp4.jpg)
+
+**Video 3.:** Embryo was imaged using a Leica SP8 upright confocal microscope. A ROI was defined in half of the neural tube and exposed to UV light, photoconverting the Kaede protein from green to red. The area was imaged every 15mn for 7 hr showing neural crest cells migrating away from the neural tube.
+
+#### TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP): a skeletal muscle-specific reporter quail
 
 We generated a line carrying a promoter for the mouse alkali Myosin Light Chain gene (MLC; Kelly et al., 1995) upstream of the membrane-bound GFP and the nuclear mCherry reporters described above. We designed a muscle-specific promoter, based on a synthetic reporter derived from the MLC1F/3F gene regulatory sequences previously utilized for mouse transgenesis (3F-nlacZ-E; Kelly et al., 1995). It contains a 2 kb sequence located 5' and 3' of the MLC3F transcriptional start site together with a 260 bp enhancer sequences from the 3' UTR region of the MLC3F gene, necessary for the high level of transcription in muscles. This construct was shown to drive strong LacZ expression in all (head and body) striated muscles from the early steps of myogenesis in somites of mouse embryos throughout embryogenesis, as well as in all skeletal muscles of the foetus and in the adult (Kelly et al., 1995). We included in the transgenesis construct the CrystallGFP cassette to facilitate the selection of F1 transgenic birds (Figure 2H).
 
@@ -81,9 +93,17 @@ The GFP and RFP reporters were expressed in all (i.e. head, trunk and limb) skel
 
 **Figure 4.:** (A–D) Cross-section of E3 transgenic embryo stained for the indicated markers, showing the expression of the transgene throughout the primary myotome. (A) GFP-CAAX, (B) NLS-mCherry, (C) Pax7, (D) Merge. Insets in (A–D) Magnifications of the regions indicated in (A–D) showing the cellular localisation of the markers. (E–H) E5 Transgenic embryo showing GFP-CAAX (E) and NLS-mCherry (F) in the transition zone (TZ, arrow) where progenitors from the dermomyotome translocate to elongate and differentiate. (I–K) E5 embryos showing strong and specific expression of the muscle-specific reporter in somites (arrowheads). In this quail line, transgenic embryos can be selected at hatching by tηε GFP expression in lens due to the CrystallGFP minigene (arrows). (H–J) E7 transgenic embryo showing muscle-specific expression of the transgene in the head, limbs and trunk.
 
-## Quailnet: a community website to share quail lines and resources
+![Video 4.](https://cdn.elifesciences.org/articles/56312/elife-56312-video4.mp4.jpg)
 
-## Transgenic lines
+**Video 4.:** Image rendering and video obtained with an Arivis software suite.
+
+![Video 5.](https://cdn.elifesciences.org/articles/56312/elife-56312-video5.mp4.jpg)
+
+**Video 5.:** Image rendering and video obtained with an Arivis software suite.
+
+### Quailnet: a community website to share quail lines and resources
+
+#### Transgenic lines
 
 To foster collaborative work in the avian community, we created a website in which existing and future quail lines will be listed (http://quailnet.geneticsandbioinformatics.eu/). A restricted access to the website enables researchers that generate new quail lines to deposit information (e.g. the type of line and the method used to generate it, its availability, etc.). An online form allows contacting the researcher that produced the line and inquire about additional information. Currently, a total of 24 lines are listed, comprising three transgenic lines generated using the transposon-based method (this report), seven transgenic lines generated using the lentiviral-based method (Huss et al., 2015; Moreau et al., 2019; Saadaoui et al., 2020; Sato et al., 2010; Seidl et al., 2013), 7 quail mutant lines and 7 strains obtained through breeding-selection programs (See Figure 5A–C).
 
@@ -91,11 +111,11 @@ To foster collaborative work in the avian community, we created a website in whi
 
 **Figure 5.:** (A) Interactive world map displaying the number of quail strains available by country. (B) List of quail strains together with a general description by country. (C) Detailed description of a specific quail strain (e.g. Tg(hUbC:memGFP)). (D) Quail genome browser displaying genomic information and location of a queried gene (e.g. FGF8). (E) Information associated with a queried gene (e.g. FGF8).
 
-## Gene and genomic information
+### Gene and genomic information
 
 The Quail Genome Consortium has recently obtained high quality genomic data, assembled and submitted for annotation at NCBI and Ensembl (Morris et al., 2019). This is a critically important step for the future design of genome engineering technologies in this organism, such as the Crispr-Cas9-based gene knockout and knock-in. QuailNet has been fitted with a gene search feature, which provides useful information such as gene models, curated coding sequences (not available elsewhere) and a genomic browser (Figure 5D,E). Furthermore, each result page embeds a link to the protocol for designing efficient Crispr-Cas9-mediated gene knock-out based on our own recent experience (Morin et al., 2017; Véron et al., 2015) and a link to the ChopChop (Labun et al., 2019) website that we found helpful and user-friendly for the choice of gRNAs sequences.
 
-## Additional resources
+### Additional resources
 
 As an aid to transgenic quail research, QuailNet integrates various resources:
 
@@ -111,30 +131,30 @@ A significant step to promote genetic approaches in avian is the recent creation
 
 ## Materials and methods
 
-## Generating transgenic quail by direct injection
+### Generating transgenic quail by direct injection
 
 The direct injection technique is performed as described in Tyack et al., 2013. Plasmid DNA was purified using Nucleobond Xtra Midi EF kit. Injection mix contained 0.6 μg of Tol2 plasmid, 1.2 μg of CAG Transposase plasmid, 3 μl of Lipofectamine 2000 CD (ThermoFisher Scientific) in 90 μl of OptiPro transfection medium. 1 μl of injection mix was injected in the dorsal aorta of 2.5-day-old embryos. After injection, eggs were sealed and incubated until hatching. Chicks were grown for 6 weeks until they reached sexual maturity. Semen from the male was collected using a female teaser and massage technic as described in Chełmońska et al., 2008. In short, the foam produced by the male cloacal gland was first emptied by pressing the gland. The male was then introduced in a cage, which already contained a female. When the male was ready to mate, it was taken out, turned on its back and a massage of the cloaca led to the expulsion of semen that was collected. Genomic DNA from semen was extracted and PCR was performed to test for the presence of the transgene. Males showing a positive band were kept and crossed with wild type females. F1 offsprings were selected directly after hatching using UV goggles if expression of the transgene was readily visible in newly hatched chicks or by genotyping 5 days after hatching by plucking a feather.
 
-## Expression constructs
+### Expression constructs
 
 The T2(CAG:NLS-mCherry-IRES-GFP-CAAX) has been described previously (Sieiro-Mosti et al., 2014). The T2(CAG:Kaede) was constructed by cloning the Kaede fluorescent protein (Ando et al., 2002) into a the T2(CAG) expression vector. The T2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP) was made by combining two constructs. The first is the mouse Myosin Light chain MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry, described in Sieiro-Mosti et al., 2014. The second was made by PCR amplification from chicken genomic DNA of a 462bp-long promoter region of the chicken CRYBB1 gene (Duncan et al., 1995). As indicated in Figure 2H, both constructs are cloned in a head-to-tail configuration as we observed that this minimizes interferences between promoters.
 
-## Section, immunochemistry and confocal analysis
+### Section, immunochemistry and confocal analysis
 
 Transgenic embryos were dissected and fixed for 1 hr in 4% formaldehyde. For cryostat section, embryos were embedded in 15% sucrose/7.5% gelatine/PBS solution and sectioned at 20 μm slices. The following antibodies were used: anti-GFP chicken polyclonal (Abcam), anti-RFP rabbit polyclonal (Abcam), anti-Pax7 IgG1 mouse monoclonal (Developmental Studies Hybridoma Bank), anti-Vasa (gift from Dr Craig Smith laboratory). Stained sections were examined using a Leica SP5 confocal microscope 40x lens oil immersion and images were analyzed with an Imaris software suite.
 
-## Quail lens electroporation
+### Quail lens electroporation
 
 Lens electroporation were performed as described in Chen et al., 2004. Plasmids were electroporated at 1 µg/µl final concentration in the electroporation mix. Lens electroporation were performed in 2-day-old embryos (HH12) by positioning the electrodes to target the lens. Embryos were re-incubated at 38°C for 24 hr.
 
-## Embryo clearing, staining and imaging
+### Embryo clearing, staining and imaging
 
 Embryo preparation for whole mount immunostaining and 3DISCO clearing was performed as described in Belle et al., 2017. Imaging of stained embryos was performed (for the E3 quail embryo) on a Zeiss Lightsheet Z1 microscope equipped with 5X Plan-Neofluar objectives and (for the E6 quail wing) on LaVision Biotec Ultramicroscope II. Image rendering was performed with an Arivis software suite. The following antibodies were used: anti-GFP chicken polyclonal (Abcam), anti-RFP mouse IgG1 monoclonal (Abcam), anti HNK1 mouse IgM monoclonal (Developmental Studies Hybridoma Bank).
 
-## Time lapse imaging
+### Time lapse imaging
 
 Live imaging was performed in ovo using a custom-made egg incubator designed for live observation as described in quailDB (http://quailnet.geneticsandbioinformatics.eu/). The transgenic quail eggs were carefully placed in a stainless-steel cup without damaging the egg yolk. Embryo turn to the top and the stainless-steel cup is filled up with egg white. A CultFoil 25 μm Teflon membrane (Zeiss, allowing gas exchange and avoiding dehydration) was placed over the embryo. The stainless- steel cup is then placed on a heat pad, which maintains the temperature of the embryo at 38°C. Embryos were imaged using a Leica Thunder Imager Model Organism (Videos 1 and 2) or under a Leica SP8 confocal upright (Videos 3 and 4).
 
-## Nomenclature
+### Nomenclature
 
 We propose to describe the quail transgenic lines we generated according to the nomenclature conventions described in the ZFIN zebrafish website (https://wiki.zfin.org/display/general/ZFIN+Zebrafish+Nomenclature+Conventions). For instance, in the line TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP), Tg denotes transgenic, T2 denotes the Tol2 transposons, Mmu and Gga denotes the species of origin of the two promoters used in the transgene (Mmu = Mus musculus Gga = Gallus gallus).

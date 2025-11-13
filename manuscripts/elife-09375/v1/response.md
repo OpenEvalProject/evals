@@ -84,9 +84,7 @@ Due to the location of the sodium binding sites, which are covered by the bound 
 
 The point of Figure 8 is to illustrate substrate translocation and binding/unbinding events schematically. We did not go into details of the release order of the ions here, because we wanted to keep this schematic as simple as possible. Figure 8 and the movies do not contradict one another, as both show the same events. Of course the movies are more detailed.
 
-6) The authors do not mention what the crystal packing is like. Are any of the contacts potentially relevant? 10.7554/eLife.09375.018Author response image 1.shows the two dimers in the asymmetric unit (multi-coloured) surrounded by 12 symmetry-related dimers.DOI: http://dx.doi.org/10.7554/eLife.09375.018
-
-DOI: http://dx.doi.org/10.7554/eLife.09375.018
+6) The authors do not mention what the crystal packing is like. Are any of the contacts potentially relevant? 10.7554/eLife.09375.018Author response image 1.shows the two dimers in the asymmetric unit (multi-coloured) surrounded by 12 symmetry-related dimers.
 
 Both the interface and the helix bundle domains are involved in crystal contacts. The backbone geometry of the two dimers in the asymmetric unit is very similar, even though the crystal contacts for each dimer are different. Therefore the impact of crystal contacts on the conformation of the helix bundle is negligible. This is why we did not discuss the crystal packing in the original manuscript. We have now added a short statement to say that the observed conformational differences are not due to crystal packing (Results and Discussion).
 
@@ -194,9 +192,7 @@ This figure is now discussed in more detail in the Results and Discussion sectio
 
 We replaced the term “pi stacking” in with “pi interactions” (fifth paragraph of the Results and Discussion).
 
-In the citrate carboxyl group, pi electrons of the carbon and oxygens form a de-localized electron orbital. Similar to the well-known pi–pi stacking of aromatic rings, pi–pi interactions do occur between aromatic and non-aromatic systems (e.g. pi–pi interactions of Tyr and Arg sidechains (PMID:24438169, PMID:8196060). Therefore, there is no reason why the same sort of interaction between pi orbitals should not occur between the aromatic ring of Tyr348 and citrate. Please refer to Author response image 2, which shows electron density between the two pi systems, indicating a binding interaction.10.7554/eLife.09375.019Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.09375.019
-
-DOI: http://dx.doi.org/10.7554/eLife.09375.019
+In the citrate carboxyl group, pi electrons of the carbon and oxygens form a de-localized electron orbital. Similar to the well-known pi–pi stacking of aromatic rings, pi–pi interactions do occur between aromatic and non-aromatic systems (e.g. pi–pi interactions of Tyr and Arg sidechains (PMID:24438169, PMID:8196060). Therefore, there is no reason why the same sort of interaction between pi orbitals should not occur between the aromatic ring of Tyr348 and citrate. Please refer to Author response image 2, which shows electron density between the two pi systems, indicating a binding interaction.10.7554/eLife.09375.019Author response image 2.
 
 15) For the domain movement in GltPh (Results and Discussion, last paragraph), the authors should cite Reyes et al., Nature 2009 paper.
 

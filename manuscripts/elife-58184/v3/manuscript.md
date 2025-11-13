@@ -42,15 +42,15 @@ In this study, we investigate the role of OPN phosphorylation on bone fracture. 
 
 ## Results
 
-## Evidence of decreased osteopontin phosphorylation in mouse models of impaired phosphate metabolism and decreased mechanical properties
+### Evidence of decreased osteopontin phosphorylation in mouse models of impaired phosphate metabolism and decreased mechanical properties
 
 We first investigated whether the phosphorylation state of OPN varied using in vivo mouse models having phosphate disorders and known skeletal pathology linked to soft osteomalacic bones. Mineral-bound proteins were extracted from long bones of WT, Hyp, and Fgf23-/- mice. Total protein was quantified using a colorimetric detection system. From each sample, 2 µg of protein extract was loaded onto a 4–20% gradient SDS-PAGE gel. Since the vast majority of OPN phosphorylation occurs at serine residues, we performed immunoblotting for phosphoserine in the mineral-binding protein extracts. In the bone matrix of both Hyp and Fgf23-/- mice, we found that mineral-bound OPN increased (Figure 1a) but global phosphorylation decreased (Figure 1b) as compared to WT controls. In addition, the post-immunoprecipation results show that despite the accumulation of OPN in Hyp and Fgf23-/- mice (Figure 1c), the proportion of phosphorylated OPN was reduced compared to the bone of WT mice (Figure 1d). Given that these models have opposite levels of serum phosphate deviation from normal (hypophosphatemic vs. hyperphosphatemic), and display a reduction in bone strength (Liu et al., 2016; Murali et al., 2016; Sitara et al., 2004; Camacho et al., 1995) which may be dependent on defective mineralization but driven by the mineral-inhibiting protein OPN, our results suggest that osteopontin phosphorylation may be an important contributor to the fracture resistance of bone.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig1-v3.jpg)
 
-**Figure 1.:** (a) and global phosphorylation (b) in protein extracts of long bones from WT, Hyp and Fgf23 mice. Post-immunoprecipation (Post-IP) indicates that despite similar levels of OPN (-/-c), phosphorylation of OPN is reduced in these disease models (d).
+**Figure 1.:** (a) and global phosphorylation (b) in protein extracts of long bones from WT, Hyp and Fgf23-/- mice. Post-immunoprecipation (Post-IP) indicates that despite similar levels of OPN (c), phosphorylation of OPN is reduced in these disease models (d).
 
-## Phosphorylation status of osteopontin influences bone fracture toughness
+### Phosphorylation status of osteopontin influences bone fracture toughness
 
 To capture the effects of OPN phosphorylation on bone fracture toughness, we performed separate ex-vivo phosphorylation and dephosphorylation of whole femurs from WT and Opn KO mice and subsequent mechanical testing. The global phosphorylation level in bone matrix increased in both genotypes with ex-vivo casein kinase-II (CKII) phosphorylation (WT-phosphorylated vs. WT-nonphosphorylated control, p=0.008; Opn KO-phosphorylated vs. Opn KO-nonphosphorylated control, p=0.007) (Figure 2a). We observed a significant reduction in phosphoproteins with ex-vivo dephosphorylation by alkaline phosphatase (WT-dephosphorylated vs. WT-nondephosphorylated control, p=0.033; Opn KO-dephosphorylated vs. Opn KO-nondephosphorylated control, p=0.006) (Figure 3a). Although the change in ex-vivo phosphorylation between WT and Opn KO (delta-WT vs. delta-Opn KO, Figure 2b) was not statistically significant, we observed a significant difference in dephosphorylation between delta-WT and delta-Opn KO (Figure 3b), indicating that OPN-deficient bone can be modified to a greater extent than WT bone, likely attributable to increased permeability of enzymes into bones lacking OPN.
 
@@ -66,15 +66,25 @@ We observed higher fracture toughness with phosphorylation of WT bones (WT-phosp
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig4-v3.jpg)
 
-**Figure 4.:** a) and change in fracture toughness (b) due to ex-vivo phosphorylation for WT and Opn KO groups.* Indicates significance at p<0.05 and error bars represent standard deviation.  Figure 4—source data 1.
+**Figure 4.:** * Indicates significance at p<0.05 and error bars represent standard deviation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig5-v3.jpg)
 
-**Figure 5.:** a) and change in fracture toughness (b) attributable to ex-vivo dephosphorylation for WT and Opn KO groups.* Indicates significance at p<0.05 and error bars represent standard deviation.  Figure 5—source data 1.
+**Figure 5.:** * Indicates significance at p<0.05 and error bars represent standard deviation.
 
-## Energy dissipation of the osteopontin network is altered by levels of phosphorylation
+### Energy dissipation of the osteopontin network is altered by levels of phosphorylation
 
 We conducted atomic force microscopy-force spectroscopy (AFM-FS) studies using an in-vitro experimental system to demonstrate that the phosphorylation status of OPN can affect bone toughness by altering energy dissipation. At pH 8.5, both OPN and hydroxyapatite (HA) surfaces are negatively charged. Under high Ca2+ concentration, the detachment energy increased more significantly as compared to H2O and Na+ environments. At pH 6.0 however, the protein and HA bear opposite charges. The slightly acidic pH lead to a moderate dissolution of HA over time, and therefore, it is expected that Ca2+ ions are present in solution from the beginning of the experiment. Further addition of Ca2+ ions decreased energy dissipation attributable to the reduction of sacrificial bond formation (Gao et al., 2003) (increase of effectively positively charged sites in OPN) as well as increased repulsion between OPN and HA. These results were also confirmed by the decline in energy dissipation that was observed for dephosphorylated OPN in Ca2+ solution at pH 7.4 as compared to native OPN, as well as dephosphorylated OPN in Na+ solution at pH 7.4, all on mica substrates. Thus, the balance between Ca2+ ions in solution and the availability of negatively charged groups are both important for energy dissipation within the OPN network as well as at the OPN-HA interface. The results from AFM force spectroscopy are summarized in Figure 6.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig6-v3.jpg)
+
+**Figure 6.:** Energies are normalized to dissipation levels in EDTA for OPN deposited on mica and pulled with a pristine AFM tip (pH 7.4) and to dissipation levels in H2O for OPN deposited on HA and pulled with a HA-functionalized tip. All values are significantly different except OPN between HA, pH 8.5 H2O vs. Na+. It should be noted that the relative differences are similar to what is seen for quantitative values, except for EDTA and H2O levels due to normalization. These values are provided in Supplementary files 1 and 2. * indicates significance at p<0.05 and error bars represent standard error (SE) of the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig6-figsupp1-v3.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig6-figsupp2-v3.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig6-figsupp3-v3.jpg)
 
 ## Discussion
 
@@ -94,7 +104,7 @@ We observed a non-linear dose response relationship between the level of global 
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/58184/elife-58184-fig8-v3.jpg)
 
-**Figure 8.:** a) and Opn KO (b) mice.By continuing the increase in phosphorylation of WT bone, fracture toughness improves exponentially. There is no significant relationship between global phosphorylation and fracture toughness in Opn KO mice following ex-vivo phosphorylation and dephosphorylation.
+**Figure 8.:** By continuing the increase in phosphorylation of WT bone, fracture toughness improves exponentially. There is no significant relationship between global phosphorylation and fracture toughness in Opn KO mice following ex-vivo phosphorylation and dephosphorylation.
 
 Our current study is not devoid of limitations and we acknowledge other phosphorylation interactions that may potentially influence the outcomes. The gross skeletal phenotype of Opn KO mice is normal compared to WT mice (Rittling et al., 1998; Yoshitake et al., 1999). However, increased mineralization was found in some areas of cortical bone (Boskey et al., 2002), and the bones are mechanically weaker. The collagen structure in Opn KO mice was also shown to be highly disorganized which further causes disorganization of mineral (Depalle et al., 2020). OPN in bone resides at its surfaces (including lining the lacuno-canalicular system) in the thin structure known as the lamina limitans (McKee and Nanci, 1996), and throughout bulk bone. Thus, its alterations in vivo may affect many processes including mineral-binding (Addison et al., 2010), cell attachment as part of the bone remodeling cycle, cell signaling that may affect mechanosensation, and the structural integrity of bone. Our ex-vivo experiments were conducted under physiological conditions to alter the organic matrix with buffer solutions containing magnesium chloride, calcium, and EDTA to prevent any alterations in mineral. The AFM measurements are not fully quantitative, but the potential lies in examining relative differences, as was done in this study. Also, by using the same cantilever, the measurements are very accurate and reproducible. Bovine milk OPN contains approximately 28 phosphorylation sites and all but a few residues in this motif are phosphorylated. The higher phosphorylation levels essentially allow for demonstration of the principal effects seen in whole-bone fracture toughness tests following increased phosphorylation. Attempts to over-phosphorylate bovine milk OPN (our source OPN) would likely be unsuccessful as the nonphosphorylated serine residues in bovine OPN are not located in recognition sequences of any specific kinase. The lack of experiments on OPN with a varying range of phosphorylation levels may be seen as a limitation, but nevertheless we provide data points for the most extreme cases, and, different from the physiological system, we control the concentration of Ca2+ ions.
 
@@ -104,72 +114,152 @@ In conclusion, this study shows for the first time that osteopontin and its phos
 
 ## Materials and methods
 
-## Immunoprecipitation and immunoblotting for OPN in mouse models of phosphate disorder
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6NCrl</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_CRL:27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-PhexHyp/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat#: 000528 RRID:IMSR_JAX:000528</td>
+      <td>Animals maintained in Dr M Mckee lab.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgf23-/-</td>
+      <td>PMID:15579309</td>
+      <td></td>
+      <td>Animals were a gift from Dr. B. Lanske</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129S6(Cg)-Spp1tm1Blh/J</td>
+      <td>PMID:9661074</td>
+      <td></td>
+      <td>Animals were a gift from Dr S. Rittling.</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (B. taurus)</td>
+      <td>Milk protein (Mammary gland)</td>
+      <td>PMID:8320368</td>
+      <td></td>
+      <td>Provided by Dr ES Sorensen</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Synthetic hydroxyapatite</td>
+      <td>Andriotis et al., 2010. Crystal Research and Technology</td>
+      <td></td>
+      <td>Produced by Dr N. Bouropoulos</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pIMAGO-biotin HRP Detection</td>
+      <td>Tymora Analytical</td>
+      <td>Cat# 900–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-OPN (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF808, RRID:AB_2194992</td>
+      <td>(1:100,000 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phosphoserine (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 61–8100, RRID:AB_2533940</td>
+      <td>(1:2500 µL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunoprecipitation and immunoblotting for OPN in mouse models of phosphate disorder
 
 Long bones from 6-week-old Hyp and Fgf23-/- mice (and WT age-, strain-, and sex-matched controls, n = 3) were collected and bone proteins extracted as described previously (Goldberg and Sodek, 1994). In brief, cleaned frozen bone samples were pulverized, cooled in liquid nitrogen, and bone protein extracted from this powder twice at 4°C for 24 hr with 4 M guanidium‐HCl in 50 mM Tris‐HCl, pH 7.4 containing protease and phosphatase inhibitors (0.1 mM phenylmethylsulfonyl fluoride (PMSF), 100 µg/mL of benzamidine, 5 µg/mL leupeptin, 1 mM sodium pyrophosphate, 1 mM β-glycerophosphate, 1 mM sodium orthovanadate, and 5 mM sodium fluoride). Mineral-bound proteins were then extracted twice at 4°C for 24 hr with 0.5 M EDTA, 50 mM Tris‐HCl, pH 7.4 containing protease and phosphatase inhibitors. The mineral-binding protein fraction was then concentrated and washed in 5 mM sodium bicarbonate, then quantified using the bicinchoninic acid protein assay (Pierce, Rockford, IL, USA).
 
 For each sample, 10 µg of total mineral-bound bone protein extract was mixed with 300 µL of 100 mM sodium acetate, pH 5.5 containing 1 mM PMSF and 0.1 mM leupeptin and incubated on ice for 3 min, and then gently mixed with rotation at 4°C for 10 min. Next, 10 µL of 0.2 mg/mL goat anti-mouse osteopontin antibody (R and D Systems, Cat# AF808-CF, Minneapolis, MN, USA) was added and samples were gently rotated at 4°C for 1 hr, followed by the addition of 50 µL of Protein A/G PLUS-Agarose beads (Santa Cruz, SC-2003, Dallas, TX, USA) and gentle rotation at 4°C for 1 hr. Samples were spun at 2000 × g for 1 min, and supernatants were removed. Beads were then washed in cold 100 mM sodium acetate buffer, pH 5.5 three times, and immunoprecipitated proteins were eluted in 2 × Laemmli protein loading buffer. Samples were resolved on a 4–20% gradient SDS-PAGE gel, transferred onto PVDF membranes and immunodetected using anti-mouse osteopontin (R and D Systems, Minneapolis, MN, USA) and anti-phosphoserine (Invitrogen, Cat# 61–8100, Carlsbad, CA, USA) antibodies. Two technical replicates were performed for Fgf23-/- mice and corresponding WT littermates experiments while four technical replicates were performed for the Hyp and corresponding WT littermates experiments.
 
-## In-vitro phosphorylation and dephosphorylation of whole mouse bone
+### In-vitro phosphorylation and dephosphorylation of whole mouse bone
 
-## Sample preparation
+#### Sample preparation
 
 Previously frozen femora were dissected from twenty-eight six-month-old male Opn KO (n = 14) and C57BL/6NCrl wild-type (WT, n = 14) mice. The sample size reflects the number of independent biological replicates and were based on results from previous pilot studies and publications from the laboratory (Sroga and Vashishth, 2016; Poundarik et al., 2012). Bones were cleaned of soft tissue and femoral head and condyle removed for experimental uniformed treatment throughout the bone. A notch was created on the anterior side in the mid-shaft of all samples using a slow speed diamond blade saw and sharpened using a razor blade (IsoMet Low Speed Saw, Buehler) This method produces a sharp notch with a root radius of ~10 µm (Ritchie et al., 2008). The crack length is defined in terms of the half crack angle and fracture toughness testing is accurate for half crack angles between 0–110 degrees (Ritchie et al., 2008). A specimen was considered an outlier and removed if crack angles were larger than two standard deviations from the mean, and if notches were off-centered or extended greater than 1/3 of the cortex. Consistent with physiological loading, the anterior side was chosen so that the notch experiences tension during bending test. The notch represents a pre-existing crack that will initiate and propagate into a large-scale catastrophic fracture. The bones were then rinsed with 1 x phosphate buffered saline (PBS) and stored in saline soaked gauze at −80°C until use.
 
-## In-vitro phosphorylation and dephosphorylation
+#### In-vitro phosphorylation and dephosphorylation
 
 One limb of each animal (left or right) was randomly selected for phosphorylation and the contralateral limb served as the non-phosphorylated control [Opn KO (n = 7) and WT (n = 7)]. Phosphorylation was conducted by incubating the samples for 48 hr at 30°C with casein kinase-II (CK2) and the reaction buffer (New England BioLabs, Ipswich, MA). Adenosine triphosphate (ATP) (2 mM) was added to the buffer as the phosphoryl donor for CK2. The incubating solution also contained protease and phosphatase inhibitors (final concentration 2 x, Pierce Biotechnology, Rockford, IL), and antibiotics [ampicillin (100 μg/μL) and kanamycin (50 μg/μL)]. ATP, CK2, and antibiotics were also added second time to the reaction at the 20 hr of incubation. The non-phosphorylated samples (i.e. controls) were placed in a similar solution without added enzymes for the same time period and temperature.
 
 In a different set of animals, one limb was randomly selected for de-phosphorylation and the contralateral limb served as the nondephosphorylated control [Opn KO (n = 7) and WT (n = 7)]. De-phosphorylation was conducted by incubating the samples for 48 hr at 37°C with calf intestinal alkaline phosphatase (CIP) and the CIP reaction buffer (New England BioLabs, Ipswich, MA). In pilot and published studies (Sroga and Vashishth, 2016) we did not observe increase in either phosphorylation or dephosphorylation of bone samples after 48 hr. The incubation solution also contained protease inhibitor and antibiotics as previously described. CIP enzyme was also added second time to the reaction at the 20 hr of incubation. The non-dephosphorylated samples (i.e. controls) were placed in a similar solution without added enzymes.
 
-## Mechanical testing
+#### Mechanical testing
 
 All femora were scanned using micro-computed tomography (μCT) at 70 kVp, 114 mA, 200 ms integration time and at high resolution 10.5 µm voxel size (vivaCT 40, Scanco Medical AG, Bassersdorf, Switzerland) for measuring bone geometry. Following in-vitro phosphorylation and dephosphorylation treatment, samples were loaded in three-point bending until failure at a loading rate of 0.001 mm/s (Elf Enduratec 3200). The resulting load displacement curve was used to calculate a single-valued fracture toughness Kc at maximum load for each sample (Ritchie et al., 2008). Toughness measured here is dependent on the material reflecting the changes due to phosphorylation or dephosphorylation.
 
-## Protein extraction, quantification, and phosphoprotein detection
+#### Protein extraction, quantification, and phosphoprotein detection
 
 After mechanical testing, all bones were defatted, lyophilized (freeze-dried), and weighed (approximately 20–40 mg). Samples were then placed in eppendorf tubes with 600 μL of extraction buffer consisting of 0.05 M EDTA, 4 M guanidine chloride, and 30 mM Tris-HCl. The bones were subsequently homogenized, centrifuged, and the supernatant collected (Omni Inc, Kennesaw, GA). The supernatant from each sample was placed into a micro-dialysis vial and underwent simultaneous protein isolation and demineralization over two days at 4°C, pH 7.4, against several changes of 1 x PBS and 5 mM EDTA.
 
 The amount of protein in the samples was quantified using the Coomassie Plus (Bradford) Assay. The measurement of phosphorylated proteins was done using the pIMAGO-biotin Phosphoprotein Detection assay kit (Sroga and Vashishth, 2016) (Tymora Analytical, West Lafayette, IN). Samples were tested in triplicates for each assay. Briefly, protein mixtures were bound to the wells by overnight incubation at 4°C. After a series of washing and blocking, the wells were incubated with pIMAGO reagent for attachment of the nanopolymer to phosphate groups on proteins. The wells were washed again, incubated with avidin-HRP followed by the provided colorimetric-based detection system. The absorbance was read at 415 nm using a micro-plate reader (Infinite M200, Tecan). The amount of global protein phosphorylation was calculated as absorbance/ng of protein. Assays for protein concentration and phosphoprotein detection were ran in triplicates.
 
-## Data analysis for global phosphorylation
+#### Data analysis for global phosphorylation
 
 The mean and standard deviation were calculated for total protein phosphorylation amount and fracture toughness. Paired samples t-test was used to compare differences between the groups (WT-phosphorylated vs. WT-nonphosphorylated; Opn KO-phosphorylated vs. Opn KO -non phosphorylated). Because phosphorylation modifies the organic matrix including OPN, we compared the change in fracture toughness caused by phosphorylation of the organic matrix with (WT-treated minus WT-control, delta-WT) and without osteopontin (Opn KO-treated minus Opn KO -control, delta- Opn KO) by independent samples t-test. The same analysis was done for dephosphorylated samples and nondephosphorylated controls conducted on separate animals. All analyses were conducted using IBM SPSS 21 and two-tailed significance threshold set at 0.05 for both paired and independent samples t-test.
 
-## Atomic force microscopy – force spectroscopy studies
+### Atomic force microscopy – force spectroscopy studies
 
-## Chemicals
+#### Chemicals
 
 All chemicals were purchased from Sigma-Aldrich (Sigma-Aldrich Company Ltd., Gillingham, Dorset, UK) unless otherwise stated.
 
-## Preparation and characterization of hydroxyapatite (HA) powder
+#### Preparation and characterization of hydroxyapatite (HA) powder
 
 Synthetic HA was produced for the functionalization of the AFM cantilever in order to simulate the mineralized fiber – NCP – mineralized fiber interaction. The preparation of the synthetic HA crystals was performed by the simultaneous addition of 250 mL aqueous solution of H3PO4 (0.3 M) and 250 mL aqueous solution of CaCl2·2H2O (0.5 M) to 500 mL ultrapure boiling water. To avoid temperature fluctuation, both reactants were added at a rate of approximately 2.5 mL per minute under continuous stirring. Prior and during the addition of the reactants, nitrogen gas was bubbled through the solution in order to remove the dissolved CO2. At all times, the pH was kept between 9.0 and 10.0 by the addition of concentrated NH4OH solution. Upon the completion of the addition, the solution was kept under stirring for 24 hr at 80°C before cooling to room temperature. To retrieve the HA crystals, the suspension was filtered through a 0.22 μm membrane filters (Whatman, Maidstone England). Finally, the crystals were dried and ‘matured’ at 150°C for 24 hr and stored in a desiccator. The end product was characterized by means of X-Ray Diffraction (XRD), Fourier Transform Infrared Spectroscopy (FTIR) and Scanning Electron Microscopy equipped with Energy-dispersive X-ray analyser (SEM/EDX; Zeiss Supra 35VP). XRD analysis was performed using a standard powder diffractometer (Siemens D8) with Ni-filtered CuKa1 radiation (λ = 0.154059 nm) and the acquired diffraction spectra were matched against JCPDS reference data using the EVA XRD software. The FTIR spectra were acquired using an Excalibur spectrophotometer (Digilab, Japan) at a resolution of 2 cm−1 using the KBr pellet method.
 
-## Preparation and characterization of hydroxyapatite (HA) surfaces
+#### Preparation and characterization of hydroxyapatite (HA) surfaces
 
 HA surfaces were prepared through the ‘maturation’ of CaP cements in Ringer solution as described previously (Knychala et al., 2013; Andriotis et al., 2010). In brief, the cements were made by mixing alpha-tricalcium phosphate (a-TCP) powder with 4.0 % w/v disodium hydrogen phosphate (Na2HPO4) solution at liquid (mL)/powder (g) ratio of 0.32, homogenized by a spatula for 1 min in agate mortar and then spread carefully on Silastic M RTV Silicone Rubber moulds. The specimens were kept in 100% humidity for 12 hr and then placed in 60 mL of Ringer’s solution at 37°C for 7 days to harden. During the maturation period, the a-TCP is transformed into calcium-deficient HA following the hydrolysis of the a-TCP according to the reaction 3Ca3(PO4)2 + H2O → Ca9(HPO4)(PO4)5OH (Ginebra et al., 2004).
 
-## OPN purification and dephosphorylation
+#### OPN purification and dephosphorylation
 
 In bovine milk, OPN is subjected to proteolytic processing by proteinases such as thrombin (Grassinger et al., 2009), plasmin, cathepsin D or matrix metalloproteinases (Christensen et al., 2010). In this work isolated OPN from bovine milk as essentially described in Sørensen and Petersen, 1993. The principal components are N-terminal OPN fragments ending between residues 145 and 153 of the mature protein as well as the mature full-length protein (Christensen and Sørensen, 2014). After isolation, OPN was stored in a desiccator at room temperature until use. Dephosphorylated milk OPN was prepared as described in Boskey et al., 2012. Briefly, OPN was incubated with bovine alkaline phosphatase (ALP) (20 mU ALP/μg protein) in 10 mM ammonium bicarbonate (pH 8.5) overnight at 37°C and subsequently analyzed by MALDI-TOF MS to verify dephosphorylation.
 
-## Buffer solutions
+#### Buffer solutions
 
 The buffers used were the same as previous studies (Katayama et al., 1998; Fantner et al., 2005; Lai et al., 2014). More specifically, Na Buffer (150 mM NaCl, 10 mM HEPES), Ca Buffer (40 mM CaCl2, 110 mM NaCl, 10 mM HEPES), and ultra pure water (H2O). Each solution was divided into separate vials and ph adjusted for each experiment using either HCl or concentrated NaOH solution.
 
-## Adsorption of OPN on model surfaces
+#### Adsorption of OPN on model surfaces
 
 The lyophilized OPN was dissolved in ultrapure water (concentration 2 μg/µL) and absorption of OPN film on the model surfaces (HA or mica) was accomplished using the ‘drying droplet’ method. During this process, a small drop (4 μL) of OPN solution was deposited onto a freshly cleaned and dried HA or mica surface which was previously glued on the bottom of the fluid cell using 5 minute-setting epoxy. The droplet was then left to dry inside the AFM hood forming a thin protein film on the model surface, and then rehydrated with the appropriate solution.
 
-## AFM cantilevers for force spectroscopy measurements
+#### AFM cantilevers for force spectroscopy measurements
 
 One aggregate of synthetic HA crystals was glued to a tipless monolithic silicon AFM probe (AIO-TL, Budget Sensors) using epoxy glue (Araldixe, Huntsman, The Woodlands, Texas, USA). For this, a few micrograms of the synthetic HA crystals were added in 5 mL of ethanol and stirred vigorously to produce a dispersion. At this stage, 500 μL of this dispersion were deposited onto a glass slide and left to dry. A droplet of epoxy was placed by the side of the dry crystals and the glass slide was placed into the AFM. The AFM probe was then engaged carefully onto the epoxy, pulled back, and engaged again on the aggregate of choice. After two minutes in contact, the probe was withdrawn and left in the AFM for an additional 30 min to ensure complete setting of the epoxy. An example of the end result is presented in Figure 6—figure supplement 1.
 
-## Force spectroscopy experiments
+#### Force spectroscopy experiments
 
 Force spectroscopy measurements of the adhesive properties of the OPN film under various ionic environments were conducted by means of an atomic force microscope (MFP3D, Asylum Research, Santa Barbara, CA, USA) using an open fluid cell setup. Following Fantner et al., 2005 protocol, all experiments were performed subsequently and at the same location. Exchange of solution, for altering the ionic environment and the pH, was carried using a syringe-pump inlet/outlet system without moving the head. In each environment, 50–80 pulls were collected and analyzed using a custom made Matlab script (version 7.10.0.4999, The MathWorks Inc, Natick, Massachusetts, USA). For each force curve, the cantilever was positioned 3 μm away of the surface, driven in full contact with it, and after a dwell time of 10 s was retracted back to the starting position. During these cycles, the approach and retraction velocities were set to 2.0 μm/sec and 5.0 μm/sec, respectively. Full contact was defined as the tip-sample repulsive force reaching a threshold value of 15 nN. The spring constant, k, of the cantilever probe was measured prior to the functionalization using the thermal noise method (Ritchie et al., 2008), and followed by the Inverse Optical Lever Sensitivity (InvOLS) of the system. The later was determined by acquiring ten (10) force curves on a nominally infinitely stiff surface (i.e. the glass slide). A line was then fitted on the loading part of each force curve and the slope of the fitted line was used as the InvOLS. The mean InvOLS value of all ten curves was then used as the InvOLS of the cantilever. In the case of the HA-functionalized cantilevers the spring constant was reassessed using the thermal method post-functionalization and the resulting value was used for the analysis. Force spectroscopy measurements of phosphorylated/dephosphorylated OPN on mica surfaces were conducted using Olympus BL-RC150VB-C1 Bio-levers (Olympus Optical Co., Ltd., Tokyo, Japan); spring constant 6 pN/nm (0.006 N/m), while stiffer (c. 0.18 N/m) cantilevers were used for the HA experiments. Maximum force from force spectroscopy experiments are reported in Supplementary files 3 and 4.
 
-## Data processing and analysis
+#### Data processing and analysis
 
 All force curves were exported in ASCII (plain text files) and processed in Matlab. Each force curve was split into its approaching and retraction parts (Figure 6—figure supplement 2). Energy dissipation was defined as the area enclosed by the retraction curve and the X-axis from the point of contact (X = 0, Y = 0) to the ‘Pulling Length’; where the latter was defined as the length from contact to the maximum distance at which the adhesion is smaller than the 1.0% of the Maximum Force (maximum adhesion force registered during retraction, i.e the Y-minimum of the retraction curve). Statistical analysis was performed in Origin (OriginPro version 9.0.0; OriginLab Corporation, Northampton, MA, USA). The normality of the distributions was assessed by means of a Kolmogorov-Smirnov test. Differences in Energy between the different environments were assessed by means of two-sided unpaired Student’s t-test (significance threshold p=0.05).

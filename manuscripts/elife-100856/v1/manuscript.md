@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, Downing site, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/02crff812 Zurich Center for Neuroeconomics, Department of Economics, University of Zurich Zurich Switzerland
+1. Department of Physiology, Development and Neuroscience, Downing site, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Zurich Center for Neuroeconomics, Department of Economics, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ We have previously documented that the expression of GCaMP in GnRH neuron cell b
 
 ## Results
 
-## Characterization of Gnrh1-GCaMP mouse
+### Characterization of Gnrh1-GCaMP mouse
 
 The Gnrh1Cre/+ mouse line (JAX stock #021207) (Yoon et al., 2005) was crossed with the Ai162 (TIT2L-GC6s-ICL-tTA2)-D Cre-dependent GCaMP6s line (JAX stock #031562) (Daigle et al., 2018) to generate Gnrh1-GCaMP6 mice. Dual immunofluorescence in four female mice demonstrated that 90 ± 2% of GnRH neuron cell bodies expressed GCaMP within the rostral preoptic area (Figure 1A) as did the majority of GnRH dendrons and fibers within the ME (Figure 1B). In successfully recorded mice, optic fibers were found to be located immediately above or within the mid-caudal ARN (Figure 1B). Mice with unsuccessful recordings (n=4), that displayed no variation in GCaMP signal over 24 hr recordings, were found to have optic fibers located either mostly within the third ventricle or >200 μM lateral to the ARN.
 
@@ -39,7 +39,7 @@ The Gnrh1Cre/+ mouse line (JAX stock #021207) (Yoon et al., 2005) was crossed wi
 
 **Figure 1.:** (A) Photomicrographs at the level of organum vasculosm of the laminae terminalis (OVLT) showing GFP immunofluorescence representing GCaMP6 (green), GnRH (purple), and merged channels showing double labeled cells (white). (B) Photomicrographs from four mice at the level of arcuate nucleus showing the location of the end of the optic fiber (dotted line) in relation to GnRH neuron dendrons labeled with GnRH (red), GFP representing GCaMP6 (green) in merged channels where double labeled elements are yellow. 3 V, third ventricle.
 
-## GnRH neuron activity in male mice
+### GnRH neuron activity in male mice
 
 The GnRH neuron population activity at the level of distal dendron was measured for 24 hr starting between 10.00–11.00 am in freely behaving Gnrh1-GCaMP6 male mice (n=7). Mice exhibited intermittent, abrupt increases in GCaMP signal termed here ‘dendron-synchronization episodes’ (dSEs; Figure 2A). These episodes had a total duration of ~10 min (658 ± 5 s) comprised of a rapid increase (full width at half maximum (FWHM) value of 30 ± 4 s) and a slower decline (FWHM 102 ± 7 s) (Figure 2C). The dSEs occurred on average every 93.3 ± 7.4 min but had a large inter-interval range of 3.9–346.6 min. The inter-peak interval distribution was right-skewed (Skewness=1.39, W=0.87, p<0.0001, Shapiro-Wilk test) and showed no clear modal pattern (Kurtosis=1.81, indicating that the data is more spread out than a normal distribution which has a kurtosis of 3.0; Figure 2D). The 24 hr recordings also revealed a low amplitude, higher frequency baseline pattern activity (Figure 2A). Control recordings from mice with misplaced fibers exhibited almost no baseline activity (Figure 2B).
 
@@ -49,7 +49,7 @@ The GnRH neuron population activity at the level of distal dendron was measured 
 
 The characteristics of dSEs strongly resembled those exhibited by arcuate nucleus kisspeptin neurons that drive pulsatile LH secretion (Han et al., 2019). Therefore, we assessed the relationship of GnRH neuron dSEs to LH pulses by taking 5- to 10 min tail-tip blood samples for up to 240 min periods while monitoring GCaMP fluorescence. This showed a perfect association between dSE occurrence and LH pulses (Figure 2E). Analysis of the temporal relationship between dSEs and LH pulses revealed that the peak of dSE consistently preceded LH pulses by 5.0 ± 0.9 min (N=6 episodes in 5 mice; Figure 2F).
 
-## GnRH neuron activity in female mice
+### GnRH neuron activity in female mice
 
 To examine patterns of GnRH neuron activity across the estrous cycle, female Gnrh1-GCaMP6 mice were recorded for 6 hr periods between 10 am-4 pm on each day of the cycle determined by vaginal cytology on the morning of the recording. Similar to males, freely behaving female mice exhibited a variable baseline pattern of high-frequency activity upon which intermittent, abrupt increases in GCaMP signal occurred (Figure 3A). Each dSE had a total duration of ~8 min (463 ± 22 s) with a rapid increase (FWHM 31 ± 3 s) and a slower decline (FWHM 81 ± 6 s) (Figure 3B). The frequency of dSEs varied across the cycle in the same manner as kisspeptin neuron SEs (McQuillan et al., 2019) with a dramatic slowing during estrus (dSE interval of 151.0 ± 35.3 min; p=0.01 vs diestrus and 0.001 vs proestrus, Dunn’s posthoc; n=5) (Figure 3C). The inter-dSE intervals for metestrus, diestrus, and proestrus were not significantly different with mean ± SEM of 70.2 ± 6.7 min (n=8), 46.2 ± 4.2 min (n=8), and 38.8 ± 3.4 min (n=6), respectively (Figure 3C). The pattern of the inter-peak interval distribution of dSEs interval was determined in each estrous cycle. In all cycles, the distribution pattern failed the normality test (metestrus [W=0.92, p=0.0007], diestrus [W=0.88, p<0.0001], proestrus [W=0.92, p=0.0007], estrus [W=0.94, p=0.03]). In metestrus, diestrus, and proestrus, the distribution was right-skewed (skewness = 0.83, 1.37, and 1.13, respectively) with diestrus showing the most pronounced skew (Figure 3.Aii). In metestrus, most dSEs occurred within an interval range of 46–55 min (17.5%), while in diestrus and proestrus, the most frequent range was 16–25 min (26.0% and 25.0%, respectively)(Figure 3A). In contrast, during estrus, the inter-peak distribution pattern was nearly symmetric (skewness=0.59) with a flatter and broad shape, showing no clear modal distribution (kurtosis=−0.41) (Figure 3D). The kurtosis values were –0.22, 2.01, 1.84, and –0.41 in metestrus, diestrus, proestrus and estrus, respectively. A kurtosis of 3.0 indicates normally distributed data, suggesting that the inter-peak intervals in diestrus and proestrus have a moderate peak, while the negative kurtosis values of estrus in particular indicate a flatter and broader distribution.
 
@@ -59,7 +59,7 @@ To examine patterns of GnRH neuron activity across the estrous cycle, female Gnr
 
 To examine the relationship of dSEs to LH pulses, tail-tip blood sampling was performed and dSEs were found to have a perfect correlation with LH pulses (Figure 3D) with the peak of dSEs occurring 6.1 ± 0.2 min (N=6 episodes in 4 mice) before the peak of the following LH pulse (Figure 3E).
 
-## Low amplitude, clustered baseline activity in GnRH neurons in both male and female mice
+### Low amplitude, clustered baseline activity in GnRH neurons in both male and female mice
 
 A low-amplitude, high-frequency GCaMP signal was observed in both male and female mice (Figure 2A, Figure 3A, Figure 4A and B). This activity occurred in a cluster-like manner with mean cluster durations of 22.5 ± 2.8 min (males), 30.0 ± 3.9 min (metestrus), 35.7 ± 6.0 min (diestrus) 24.8 ± 2.2 min (proestrus) and 35.3 ± 6.8 min (estrus) in female mice (Figure 4C). The intra-cluster frequency (range of 0.006–0.018 Hz) was not different between males and females (Figure 4D). Neither the mean duration nor intra-cluster frequency of the baseline activity were different between males and females or across the estrous cycle (Figure 4C and D). The amplitude of the baseline signal was 10–12% (males) and 5–12% (females) of the mean amplitude of dSEs.
 
@@ -67,7 +67,7 @@ A low-amplitude, high-frequency GCaMP signal was observed in both male and femal
 
 **Figure 4.:** Representative 4 hr GCaMP recordings in (A) two male mice and (B) a female mouse across the different stages of the estrous cycle showing high-frequency baseline activity. The large increases in calcium activity representing dendron synchronization episodes (dSEs) are indicated by red asterisks and cut off to optimize the display of the low amplitude activities. Histograms showing the duration (C) and the intra-cluster frequency (D) of the baseline activity in male and female mice. No significance was found across the groups. M=metestrus, D=diestrus, P=proestrus, E=estrus.
 
-## GnRH neuron activity in proestrous female mice
+### GnRH neuron activity in proestrous female mice
 
 To examine patterns of GnRH neuron activity at the time of the preovulatory surge, female Gnrh1-GCaMP6 mice (n=7) were recorded for a 24 hr period beginning on the morning of proestrus. Initially, the signals were identical to those observed on metestrus and diestrus with a low level of high-frequency baseline activity upon which abrupt, short increases in activity occurred (Figures 3A and 5A). A gradual increase in baseline activity was observed to begin 4.0 ± 0.5 hr (range 2–6.5 hr) before ‘lights-off’ (19:00 hr, 12:12 lighting) that peaked 5.9 ± 0.5 hr later and declined to baseline by 12.6 ± 0.8 hr (range: 10.3–15.0 hr)(Figure 5A). The FWHM period of incline and decline of this slow activity was 3.1 ± 0.4 and 4.7 ± 0.5 hr, respectively. The slow increment in calcium signal was not smooth but consisted of multiple slow oscillations (Figure 5A). The mean duration of these slow oscillations was 78 ± 4 min (range 32–150 min). In addition, dSEs were observed to occur superimposed upon the slow oscillating signal until around the time of the peak at which time they stopped for several hours (Figure 5A). Similar duration 24 hr recordings from metestrus-diestrous female mice recorded the presence of dSEs without any baseline shifts.
 
@@ -107,15 +107,15 @@ In summary, we provide here the first direct recordings of GnRH neuron activity 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Male and female 129S6Sv/Ev C57BL/6 Gnrh1Cre/+mice (Yoon et al., 2005) crossed on to the Ai162 (TIT2L-GC6s-ICL-tTA2)-D Cre-dependent GCaMP6s line (JAX stock #031562) (Daigle et al., 2018) were group-housed in conventional cages with environmental enrichment under conditions of controlled temperature (22 ± 2°C) and lighting (12 hr light/12 hr dark cycle; lights on at 07:00) with ad libitum access to food (RM1-P, SDS, UK) and water. All animal experimental protocols were approved by the University of Cambridge Animal Welfare and Ethics Review Body under the UK Home Office license, P174441DE.
 
-## Stereotaxic implantation of optic fibers
+### Stereotaxic implantation of optic fibers
 
 Adult mice were anaesthetized with 2% isoflurane and placed in a stereotaxic frame with concurrent buprenorphine (0.05 mg/kg, s.c.) and meloxicam (5 mg/kg, s.c.) analgesia. Dexamethasone (10 mg/kg, s.c.) was used to prevent cranial swelling. A single 400 μm diameter optic fiber (0.48 NA, Doric lenses, QC, Canada) was implanted into the brain with the tip placed immediately above the dorsomedial part of ARN (A-P to bregma, –2.0 mm; D-V 5.9 mm, M-L ± 0.2 mm to sagittal sinus). Following 1 wk of surgery, all animals were handled daily and habituated to a photometry recording setup for at least 3 wk.
 
-## GCaMP6 fiber photometry and blood sampling
+### GCaMP6 fiber photometry and blood sampling
 
 Four to 12 wk following surgery, fiber photometry experiments were undertaken to record GCaMP fluorescence signal in freely behaving mice for 6 or 24 hr periods using a previously described methodology (Han et al., 2019; Han et al., 2023). This included a custom-built photometry system using Doric components (Doric Lenses, QC, Canada) and a National Instrument data acquisition board (TX, USA) based on a previous design (Lerner et al., 2015). Blue (465–490 nm) and violet (405 nm) LED lights were sinusoidally modulated at frequencies of 531 and 211 Hz, respectively and were focused onto a single fiber optic connected to the mouse. The light intensity at the tip of the fiber was 30–80 microwatts. Emitted fluorescence signal from the brain was collected via the same fiber, passed through a 500–550 nm emission filter, and focused onto a fluorescence detector (Doric, QC, Canada). The emissions were collected at 10 Hz and the two GCaMP6 emissions were recovered by demodulating the 465–490 nm signals (calcium-dependent) and 405 nm (calcium-independent) signals. Signals were either recorded in a continuous mode or a scheduled 5 s on/10 s off mode.
 
@@ -125,10 +125,10 @@ With this approach, slow oscillatory shifts in baseline during the proestrous su
 
 To examine the relationship between calcium episodes with LH pulses, freely behaving mice were attached to the fiber photometry system, and 4 μL blood samples were obtained every 5–10 min from the tail tip over a period of 120–240 min. To assess the relationship between the long calcium increment during proestrus evening and the LH surge, female mice were attached to the fiber photometry system in the morning of proestrus, and blood samples (3 μL) were collected every 3 hr for 18 hr until the morning of estrus. Levels of LH were measured by in-house LH ELISA (Steyn et al., 2013) with an assay sensitivity of 0.04 ng/mL and intra-assay coefficient of variation of 8.2%.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Adult GnRH-Cre, GCaMP6s mice were given a lethal overdose of pentobarbital (3 mg/100 μL, i.p.) and perfused transcardially with 4% paraformaldehyde. Brains were processed for dual GFP and GnRH immunofluorescence. For GFP immunostaining, anti-chicken GFP (1:5000, Aves Lab) was used followed by AlexaFluor 488-conjugated goat-anti-chicken (1:1000). For GnRH cell body immunostaining, GA2 guinea pig anti-GnRH antisera (1:3000, gift from G.Anderson, New Zealand) was used in combination with AlexaFluor 647-conjugated goat anti-guinea pig immunoglobulin (1:500, Thermo Fisher Scientific, USA). For GnRH dendron immunostaining, rabbit anti-GnRH (1:20,000, LR1, gift of R.Benoit, Montreal) antisera were used followed by biotinylated goat anti-rabbit immunoglobulin (1:1000, Jackson Immunoresearch) and AlexaFluor 568-conjugated Streptavidin (1:400, Thermo Fisher Scientific, USA). Imaging was performed using a Leica SP8 Laser Scanning Confocal Microscope (Leica Microsystems) at the Cambridge Advanced Imaging Center and analyzed using ImageJ.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in Prism 10 (GraphPad Software Inc). All values given in this study are mean ± SEM, and significance is defined as p<0.05* or p<0.01**. For inter-peak interval analysis in females across the estrous cycle and the residual cluster activity analysis, Kruskal Wallis ANOVA followed by Dunn’s post-hoc tests was used.

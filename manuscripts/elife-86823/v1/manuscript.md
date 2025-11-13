@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03nawhv43 Department of Molecular, Cell and Systems Biology, University of California Riverside United States
-2. https://ror.org/03nawhv43 Division of Biomedical Sciences, University of California Riverside United States
-3. https://ror.org/03nawhv43 Cell, Molecular and Developmental Biology Program, University of California Riverside United States
-4. https://ror.org/03nawhv43 Genetics, Genomics and Bioinformatics Program, University of California Riverside United States
+1. Department of Molecular, Cell and Systems Biology, University of California Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+2. Division of Biomedical Sciences, University of California Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+3. Cell, Molecular and Developmental Biology Program, University of California Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+4. Genetics, Genomics and Bioinformatics Program, University of California Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
 
 † Corresponding author
 
@@ -32,13 +32,25 @@ In the model system Drosophila melanogaster, prolonged exposure to CO2 showed an
 
 ## Results
 
-## Activity-dependent expression modulation of chemosensory receptors
+### Activity-dependent expression modulation of chemosensory receptors
 
 Previous studies demonstrated that prolonged exposure of ~5 d to elevated CO2 levels causes an increase in volume of the CO2-sensitive V-glomerulus in the antennal lobe of Drosophila, which lead to adaptations in fly behavior (Devaud et al., 2001; Sachse et al., 2007). To assess the effect of the CO2 response inhibitor diacetyl on the antennal lobe, flies were exposed to the odorant during the first 5 days immediately following eclosion. The CO2-detecting ab1C neuron was labeled using the promoters of the CO2 receptors, Gr63a-Gal4; UAS-mcd8GFP and Gr21a-Gal4; UAS-mcd8GFP, and the flies were exposed to headspace above a 1% (V/V) diacetyl solution in an air-tight container. The flies were then imaged for expression of GFP in the ab1C neurons of the antenna, as well as the V glomerulus, which receives axonal input from ab1C neurons in the antennal lobe (Jones et al., 2007). Surprisingly, the Gr63a promoter-driven GFP signal in the V glomerulus was completely abolished after 5 days of exposure to the odor for all brains imaged (Figure 1A). However, there was also a concomitant decrease in GFP signal in ab1C neurons in the antenna (Figure 1A and B). Similar results were seen for Gr21a-driven expression, where expression of GFP was lost in both the V-glomerulus and ab1C neurons (Figure 1—figure supplement 1A and B). Interestingly, after 5 d of recovery in clean air, the GFP expression was regained in the V-glomerulus as well as in ab1C neurons in the antenna, indicating that both Gr21a and Gr63a expression had been restored (Figure 1—figure supplement 2). Because olfactory neurons do not regenerate in the fruit fly (Berdnik et al., 2006; Sigg et al., 1997), these results suggest that changes in GFP levels are likely due to changes in the promoter expression and not due to neuronal cell death.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig1-v1.jpg)
+
+**Figure 1.:** (A) Antennal and whole-mount brain staining of Gr63a-Gal4 flies. Flies were exposed to diacetyl (headspace from 10–2 soln) or air for 2–5 d. Brains and antenna were dissected on the indicated days, fixed, and then stained for neuropil marker nc82 (red) and anti-GFP (green). Magnification 25 x. (B) Mean of ab1C neurons expressing GFP after indicated days of odor exposure. d4on = 2,3-butanedione. n = 6, error bars = SEM. Schematic chemical structures of diacetyl, β-hydroxybutyrate, and sodium butyrate. (C) Dose–activity curves of class I HDACs: HDAC1, HDAC2, HDAC3, HDAC8, and class II HDAC6 treated with various concentrations of diacetyl. Percentage of HDAC activity is relative to the activity of each enzyme without diacetyl. IC50s are indicated in the chart areas. Error bars = SEM, n = 4–5. (D) Representative structures of odorants that inhibit HDACs (left), and average percentage inhibition of class I HDACs: HDAC1, HDAC3, and class II HDAC4, HDAC6 treated with 15 mM of indicated volatiles (right). Error bar = SD, each tested in duplicate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Antennal and whole-mount brain staining of Gr21a-Gal4 flies. Flies were exposed to headspace from 1% diacetyl (v/v in paraffin oil) or air for 2–5 d (see ‘Materials and methods’). Brains and antenna were dissected on the indicated days, fixed, and then stained for neuropil marker nc82 (red) and anti-GFP (green). 25 x magnification lens. (B) Mean of ab1C neurons expressing GFP after indicated days of odor exposure. d4on = diacetyl. n = 6, error bars = SEM. (C) Flies were exposed to headspace from 1% diacetyl for 6 d (day 6 treated, blue bars) or exposed to headspace from 1% diacetyl for 6 d and allowed to recovery in air for 5 d (day 6 treated, 5 d recovery, purple bars). Gene expression by QPCR is compared to flies raised in air for the equivalent number of days. Expression data is based on fold expression normalized to RP49. Fold expression = 1 indicates no change in expression. n = 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Representative images of antennal and whole-mount brain staining of Gr63a-Gal4;UAS-mcd8GFP and Gr21a-Gal4; UAS-mcd8GFP flies. Flies were exposed to headspace from 1% diacetyl (v/v in paraffin oil) for 5 d (treated 5 d) and allowed to recover in clean air for 5 d (treated 5 d/recovered 5 d) or exposed to air for 10 d (control day 10). Brains and antenna were dissected on the indicated days, fixed, and then stained for neuropil marker nc82 (red) and anti-GFP (green). Magnification 25 x.
+
 In order to test whether expression of Gr63a and Gr21a is being downregulated by diacetyl, we used quantitative-PCR for testing along with a few members of the Odorant receptor (Or) family genes. Apart from Gr63a and Gr21a, we also evaluated receptors where diacetyl has no activity (Or47a, Or88a) and the broadly expressed co-receptor (Or83b). Wild-type flies that were exposed to diacetyl for 6 d showed dramatic downregulation of all genes tested. However, after a 5 d subsequent recovery period, expression of all but one (Or88a) of the genes was recovered, including Gr63a (Figure 1—figure supplement 1C). This form of plasticity in gene expression is unexpected and therefore mechanistically interesting to investigate.
 
-## Diacetyl and structurally related odorants act as HDAC inhibitors in vitro
+### Diacetyl and structurally related odorants act as HDAC inhibitors in vitro
 
 Diacetyl is structurally related to a soluble metabolite secreted by the gut microbiome and liver, β-hydroxybutyrate, which is known to inhibit zinc-dependent HDACs (Shimazu et al., 2013). It is also structurally related to another known HDAC inhibitor sodium butyrate. Diacetyl is present widely in nature as a pH-neutral fermentation product of microorganisms such as yeasts in over-ripe fruit, the favorite food for Drosophila, and also from lactic acid bacteria, and is found in many foods and beverages (Shibamoto, 2014). In humans, diacetyl is also produced by microbes on the skin, in the oral cavity, and is found in breath (Whiteson et al., 2014). Interestingly, this volatile is known to traverse the cell membrane (Krogerus and Gibson, 2013).
 
@@ -46,19 +58,27 @@ Soluble metabolites from the gut microbiome, such as short-chain fatty acids, ar
 
 To test other odorants for their ability to inhibit HDACs, we identified a list of volatile odorants structurally similar to diacetyl using the similarity search feature on PubChem (Figure 1D) and tested them on four purified human HDACs, from class I (HDAC1 and HDAC3) and class II (HDAC4 and HDAC6). Each compound was tested at 15 mM, the concentration at which diacetyl inhibits HDAC1, 3, and 6 with more than 50% efficacy (Figure 1C and D). All compounds tested reduced the activity of at least one of the HDACs tested (Figure 1D). Ethyl pyruvate, methyl pyruvate, 2,3-hexanedione, 2,3-heptandione, 2,3-pentandione inhibited HDAC1, 3, and 6 with more than 70% efficacy. Allyl butyrate also inhibited those HDACs but with lower efficacy. 1-Acetoxyacetone and 2,3-butanediol inhibited HDAC6 more than 70% but inhibitory effects against HDAC1 and 4 were lower. Moreover, propyl formate strongly inhibited HDAC 6 but did not inhibit HDAC1, 3, and 4. Taken together, these results indicate that microbial volatiles and structurally related odorants can inhibit human HDACs, and that each compound has a specific HDAC inhibitory spectrum.
 
-## Microbial volatile increases histone acetylation in human cell nuclei
+### Microbial volatile increases histone acetylation in human cell nuclei
 
 In order to directly examine histone acetylation at the cellular level, we used human HEK293T cells, which offer a tractable system to prepare nuclear extracts, and picked the volatile diacetyl to test in more detail. We exposed the cells to different doses of diacetyl for 2 or 6 hr and monitored histone acetylation levels within nuclear extracts in western blot assays. Compared to the mock treatment, 10 mM diacetyl significantly increased H3K9 acetylation levels within 2 hr of treatment, whereas the acetylation levels of H3K14 and H4K5 were not affected (Figure 2A). This specificity for an increase of the H3K9 mark is consistent with previous observations for β-hydroxybutyrate. Preferential acetylation of H3K9 was also observed previously in HEK293T cells with treatment of the structurally related β-hydroxybutyrate (Shimazu et al., 2013). After 6 hr of treatment, the H3K9 acetylation induced by 10 mM diacetyl was further increased (Figure 2B). The increase in H3K9 acetylation with diacetyl treatment was dependent both on the duration of exposure and concentration of the odorant.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig2-v1.jpg)
 
-**Figure 2.:** (A, B) Representative images from western blots showing acetylation levels of H3K9 (left), H3K14 (middle), and H4K5 (right) in HEK293 cells after 2 hr (A) and 6 hr (B) of diacetyl exposure. Proliferating cell nuclear antigen (PCNA ) is a 29 kDa nuclear protein used as a loading control for nuclear protein extracts. (C) Western blots showing acetylation levels of H3K9 in HEK293T cells treated with 100 μM diacetyl for 72, 96, and 120 hr. PCNA is used for a loading control. (D) Bar graph showing the relative intensities of acetylated H3K9 in HEK293T cells treated with 100 μM diacetyl for 72–120 hr. n = 4 samples, * p<0.05.Figure 2—source data 1.Figure 2A and B (anti-H3K9ace).Figure 2—source data 2.Figure 2A and B (anti-H3K14ace).Figure 2—source data 3.Figure 2A and B (anti-H4K5ace).Figure 2—source data 4.Figure 2C (anti-H3K9AC).
+**Figure 2.:** (A, B) Representative images from western blots showing acetylation levels of H3K9 (left), H3K14 (middle), and H4K5 (right) in HEK293 cells after 2 hr (A) and 6 hr (B) of diacetyl exposure. Proliferating cell nuclear antigen (PCNA ) is a 29 kDa nuclear protein used as a loading control for nuclear protein extracts. (C) Western blots showing acetylation levels of H3K9 in HEK293T cells treated with 100 μM diacetyl for 72, 96, and 120 hr. PCNA is used for a loading control. (D) Bar graph showing the relative intensities of acetylated H3K9 in HEK293T cells treated with 100 μM diacetyl for 72–120 hr. n = 4 samples, * p<0.05.
 
 Organisms are constantly exposed to volatiles commonly found in their food and environment for prolonged periods of time. In order to test the effect of a lower concentration of the volatiles, we selected a 5 d exposure time at a 100-fold lower concentration. When we treated HEK293T cells with this lower dose of diacetyl (100 μM), H3K9 acetylation level increased after 96 hr of exposure and reached significantly higher levels than control after 120 hr (Figure 2C and D). These results demonstrate that even prolonged exposure to low levels of diacetyl can greatly impact the epigenetic landscape inside the nucleus. More importantly, a 5 d exposure was sufficient to alter the epigenetic state of nuclei at concentrations that are present in some food sources. Taken together, these results demonstrate that diacetyl can act as an HDAC inhibitor, with the potential of causing broad modulations of gene expression and histone acetylation in cells.
 
-## Transcriptional response to odor exposure is conserved in invertebrates and vertebrates
+### Transcriptional response to odor exposure is conserved in invertebrates and vertebrates
 
 We next performed in vivo experiments to determine whether eukaryotes alter gene expression in response to diacetyl exposure, as would be expected with HDAC inhibition. Epigenetic changes occur slowly over days, and to test its effects on gene expression we used two model systems for eukaryotes: invertebrates (D. melanogaster) and vertebrates (M. musculus). We placed Drosophila adult males in vials and housed these vials within a closed container exposed to headspace from a 1% diacetyl solution (V/V in paraffin oil) for 5 d, similar to a previous long-term odor-exposure study (Sachse et al., 2007; Figure 3A). The transcriptome of the primary olfactory organ, the antenna, was compared with that of the control group of age-matched flies that were exposed to the solvent paraffin oil (PO). The antennal transcriptional profile of diacetyl-exposed flies showed substantial changes in gene expression when compared to the solvent control (Figure 3B). We identified 1234 differentially expressed genes (DEGs) (false discovery rate [FDR] < 0.05) in the antennal transcriptome of diacetyl-exposed flies compared to control animals. Of these, 645 genes were significantly upregulated (log2 fold-change > 1; red dots in Figure 3B) and 589 genes were significantly downregulated (log2 fold-change < –1; blue dots in Figure 3B). A broad range of genes were significantly altered, with several biological process GO terms significantly enriched in the upregulated gene list including ‘response to biotic stimulus’ (p<3 × 10–7), ‘response to bacterium’ (p<3 × 10–7), and ‘defense response’ (p<3 × 10–7). In the downregulated gene set, the GO term most enriched was ‘sensory perception of chemical stimulus’ (p<6 × 10–72). The GO molecular functions that were most common in the upregulated sets included enzymes like hydrolases and oxidoreductases, as well as nucleic acid binding genes (Figure 3C). Downregulated genes include receptors, hydrolases, and transporters (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of odor exposure protocol for transcriptome analysis from the antennae. (B) Plot highlighting up- and downregulated genes in the diacetyl-exposed group. Red and blue dots represent upregulated genes (false discovery rate [FDR] < 0.05, log2 fold change [LFC] > 1) and downregulated genes (FDR < 0.05, LFC < 1), respectively. (C) Bar graphs denoting the protein classification of the genes up- and downregulated after odor exposure. (D) Schematic of diacetyl exposure protocol for transcriptome analysis of mouse lung tissue. (E) Plot highlighting up- and downregulated genes in the diacetyl-exposed groups. Red and blue dots represent upregulated genes (FDR < 0.05, LFC > 1) and downregulated genes (FDR < 0.05, LFC < 1), respectively in lungs. (F) Table showing pairwise tests of significance of overlap between gene sets. p-Values from Fisher’s exact test, colored with associated odds ratio (strength of association). (G, H) Bar graphs denoting the protein classification of the genes up- and downregulated in the lung after exposure to headspace above 0.1% (v/v) (G) and 1% (v/v) (H) of diacetyl solutions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86823/elife-86823-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Mean concentration of diacetyl in the air in the exposure experimental chambers in ppm calculated based on weight loss of the compound as tested in (A) the Drosophila melanogaster exposure assays, (B) mouse exposure assay with headspace over 1% V/V diacetyl being circulated, and (C) mouse exposure assay with headspace over 0.1% V/V diacetyl being circulated.
 
 The first tissue that would have contact with airborne volatiles in terrestrial vertebrates are the airways and lungs. We therefore performed transcriptome analyses on lung tissue of mice exposed to diacetyl headspace at different doses for a period of 5 d, as was done in Drosophila (Figure 3D). The dose of the volatile in the chamber was measured in parallel experiments by tracking volatile loss and airflow and determined to range between a peak 1920 ppm at the end of hour 2, tapering off to 28 ppm by hour 120 (Figure 3—figure supplement 1B). Indeed, expression of a substantial number of genes was modulated in the diacetyl-exposed lungs compared to the control. The changes were dose-dependent and more pronounced in mice exposed to headspace from a 1% diacetyl source compared to those exposed similarly to 0.1% (v/v) diacetyl source (Figure 3E, Figure 3—figure supplement 1C). Among these diverse sets of regulated genes in the lung tissue, a significant overlap was found between 1% (v/v) and 0.1% (v/v) headspace for both upregulated genes (p=3 × 10–3) and downregulated genes (p=6 × 10–3, Figure 3F), further supporting a dose-dependent effect of diacetyl on gene expression in the mouse lung.
 
@@ -66,7 +86,7 @@ The GO enrichment analysis of the lung transcriptome from mice exposed to diacet
 
 HDAC family members are highly conserved across eukaryotes, spanning both animal and insects. Volatile microbial metabolites have been present throughout the evolution of animals, insects, and plants, and have potential as signals for multidomain communication because they can travel wide ranges; plants detect root infections and time their immune response using volatiles (Effantin et al., 2011), and microbial volatiles elicit olfactory behaviors in insects and nematodes. Our results indicate that a volatile compound, capable of directly inhibiting HDACs and altering acetylation levels, can cause significant changes in gene expression in a variety of organisms following exposure from a distance, through the air.
 
-## DEGs overlap those for known HDAC inhibitors and upregulation is partially reversible
+### DEGs overlap those for known HDAC inhibitors and upregulation is partially reversible
 
 One of the hallmarks of epigenetic regulators which makes them attractive candidates for therapeutics is plasticity. Upon removal of the inhibitors, we expect that some of the changes in gene expression are reversible. To test for reversibility, we performed a recovery experiment following diacetyl exposure using the Drosophila model. We maintained 5 d diacetyl-exposed flies in clean air for five additional days (Figure 4A). In parallel, we performed age-matched mock experiments with paraffin oil solvent exposure alone. A large number of genes were downregulated following the recovery in comparison to the 10-day-old flies in the mock condition (Figure 4B). Interestingly, there was a significant overlap of these downregulated genes with the set that was upregulated in the diacetyl treatment (Figure 4C). These results suggest that the effects of HDAC inhibitory odorant exposure are not permanent but dynamic, and removal of the odorant leads to subsequent changes in gene expression of the upregulated set.
 
@@ -76,7 +96,7 @@ One of the hallmarks of epigenetic regulators which makes them attractive candid
 
 Drugs that inhibit HDACs are in various stages of approval as treatments for several diseases. The approved drugs include sodium butyrate and valproic acid. To compare the gene-regulatory effects of these drugs to diacetyl, we performed RNA-seq after raising the flies on food containing sodium butyrate (SB) or valproic acid (VA) (Steffan et al., 2001) and compared gene expression in the antennae of flies raised on untreated food for 5 d. We next compared the upregulated gene profiles following each treatment to the one induced by exposure to diacetyl. As expected, feeding SB and VA induced significant changes in expression levels of several genes (Figure 4D and E). Interestingly, we found that 113 of diacetyl upregulated genes were also upregulated in either SB, VA, or both treatment conditions (Figure 4F). Pairwise statistical analysis of each gene set revealed a significant overlap of diacetyl-induced genes with SB-induced genes (p=6 × 10–11) and with VA-induced genes (p=2 × 10–65) (Figure 4F). There was, as expected, also a significant overlap between SB- and VA- induced genes (p=1 × 10–52) (Figure 4F). This highly significant overlap among upregulated genes lends further support to our model that diacetyl vapors act as an HDAC inhibitor in vivo. As expected, each of the three treatments also modulated a substantial number of unique genes (Figure 4G and H), suggesting that differences in oral vs. vapor delivery, molecular structure, and inhibition profile across the repertoire of HDACs may contribute to differences in gene regulation. These results suggest that some volatile odorants, or the microbes that emit them, may impart therapeutic effects like other HDAC inhibitors from a distance, through the air.
 
-## Volatile diacetyl alters gene expression in the mouse brain
+### Volatile diacetyl alters gene expression in the mouse brain
 
 One of the categories of challenging diseases that HDAC inhibitors are being tested for drugs are neurodegenerative diseases (Fischer, 2010), where volatile odorants may provide a new class of inhaled therapeutics. A major design challenge for nervous system drugs is the ability to cross the blood–brain barrier. Due to the volatility and small size of volatile odorants, there is a possibility that they could diffuse through the intranasal route to the brain directly (Chauhan and Chauhan, 2015). We cannot tell a priori whether odorants like diacetyl can travel across the nasal membrane to the brain. In order to test whether cells in the brain of mice respond when presented with diacetyl vapors from a distance, we used gene expression as the final readout to measure it. We performed RNA-seq experiments on mice exposed only to aroma of diacetyl in the air for 5 d as before. Littermate controls were exposed in a similar manner to the solvent (PO) in the air. Interestingly, several genes were differentially expressed upon exposure to headspace from 0.1% (v/v) diacetyl passaged through the air in the holding cage where it is further diluted (49 upregulated, 32 downregulated, |log2 fold-change|>1, FDR < 0.05) or to headspace from 1% (v/v) diacetyl diluted in the holding cage (748 upregulated, 1031 downregulated, |log2 fold-change|> 1, FDR < 0.05) (Figure 5B and C). GO analysis of the regulated genes in the exposed mouse brain transcriptome revealed several interesting sets of genes were significantly altered in each set (Figure 5E). These results indicate that a volatile odorant like diacetyl can reach the brain in mammals and presumably alter gene expression in neuronal cells. Although the overall DEG sets were different across the lungs and brain, there was a statistically significant overlap, particularly in the 1% exposure, as would be expected from using the same mechanism of action. There was a highly significant overlap (p=2 × 10–101) between genes upregulated in the brain compared with the lungs (248 of 748), as well as for downregulated genes (p=3 × 10–163; 477 of 1031 genes) (Figure 5D).
 
@@ -84,13 +104,13 @@ One of the categories of challenging diseases that HDAC inhibitors are being tes
 
 **Figure 5.:** (A) Schematic of diacetyl exposure protocol for transcriptome analysis of mouse brain tissues. (B, C) Plot showing up- and downregulated genes in the diacetyl-exposed groups. Red and blue dots represent upregulated genes (false discovery rate [FDR] < 0.05, log2 fold change [LFC] > 1) and downregulated genes (FDR < 0.05, LFC < 1), respectively, in the brain. (D) Left: table showing pairwise tests of significance of overlap between gene sets. p-Values from Fisher’s exact test. Right: Venn diagrams showing the overlaps of differentially expressed genes (DEGs) between lung and brain groups. (E) Bar graphs denoting the protein classification of the brain genes up- and downregulated after 1% diacetyl exposure. (F) Mean fold change of select neuroblastoma related genes in the brain of mice exposed to diacetyl vapors. (G) Cell counts of indicated cancer cell lines in tissue culture treated with solvent control or indicated concentration of diacetyl. N = 3–6, p<0.001.
 
-## Diacetyl prevents proliferation of neuroblastoma cells
+### Diacetyl prevents proliferation of neuroblastoma cells
 
 Among the significantly downregulated genes was MYCN, which is known to show increased expression and plays a central role in many types of cancers, suggesting that epigenetic regulation may affect tumor cells. Broad-spectrum HDAC inhibitors have been approved by the FDA for treatment of a variety of cancers. To test the exciting possibility that a volatile HDAC inhibitor, which affects gene expression in the brain, would have an effect against cancers as well, we performed a cell-based assay. We picked neuroblastoma as a candidate since it has a strong dependence on MYCN and develop from fetal adrenal neuroblasts (Jansky et al., 2021). Several genetic and ‘omics’ studies have identified genes that are upregulated in neuroblastomas, some of which are considered to be key causative factors (Pugh et al., 2013). We evaluated the DEGs from the diacetyl-exposed mouse brain transcriptome for several of these key genes. Three of the six key genes identified across multiple studies were significantly altered, two of which were significantly downregulated, MYCN (p=2.06E-13, FDR = 1.76E-12) and Alk (p=3.3E-5, FDR = 9.48E-5) (Figure 5F). An unbiased computational study evaluated omics datasets and identified four genes that were the best predictors of clinical outcome (Zhong et al., 2018), all of which are significantly different in the brains of the diacetyl-exposed mice, strikingly three of which were significantly downregulated, NCAN (p=1.33E-16, FDR = 1.59E-15), STK33 (p=4.6E-7, FDR = 1.79E-6), and ERCC6L2 (p=4.57E-5, FDR = 0.00012) (Figure 5F). These findings are extremely provocative, given that the downregulated genes, particularly MYCN, play a role in neuroblastomas and in several other cancers.
 
 We tested diacetyl for the ability to inhibit proliferation of an SH-SY5Y neuroblastoma cell line from a metastatic bone tumor. A significant reduction in cell count was seen in diacetyl treatments in the SH-SY5Y cancer cell lines (Figure 5G). To validate the initial result, we retested diacetyl at two concentrations across three different cancer cell lines. Diacetyl showed a significant reduction in cell numbers for the neuroblastoma cell line specifically, and not any other cell lines, relative to the control (Figure 5G). These results demonstrate that the effect is specific to the SH-SY5Y cancer cell line and unlikely to be caused by a nonspecific general toxic effect. It also suggests that the potential epigenetic regulation of cancer-promoting genes may be caused by exposure to volatiles like diacetyl in the environment.
 
-## Testing therapeutic effect in Huntington’s neurodegeneration model
+### Testing therapeutic effect in Huntington’s neurodegeneration model
 
 Since diacetyl can affect changes in a mammalian brain by crossing the blood–brain barrier, we wanted to test whether it can impart therapeutic effects in disorders of the brain like neurodegeneration for which HDAC inhibitors have been proposed as therapeutics. In order to test diacetyl in the context of neurodegenerative disease, we used the well-established Drosophila model of Huntington’s disease, which has previously been used to demonstrate the efficacy of sodium butyrate in slowing neurodegeneration (Steffan et al., 2001; Marsh and Thompson, 2006). The human Huntingtin protein with expanded poly-Q repeats is expressed in the neurons of the compound eye in Drosophila, causing progressive degeneration of the seven visible photoreceptor rhabdomere cells in each ommatidium (Jackson et al., 1998). We selected this model in particular since polyglutamine disorders are well suited for targeting by inhibitors of HDAC1 and HDAC3 (Thomas, 2014) such as diacetyl (Figure 1B). Moreover, previous studies have shown that orally administered HDAC inhibitors such as sodium butyrate and SAHA can significantly reduce photoreceptor degeneration in this model (Steffan et al., 2001). When the transgenic flies expressing two copies of the human Huntingtin with poly-Q repeats (HTTQ120) under control of the eye-specific GMR promoter were raised at 18°C, the number of rhabdomeres in each ommatidium was similar to that normally observed in wild-type flies immediately post-eclosion (day 1, Figure 6A–C). When these HTTQ120 flies were moved to 25°C following eclosion (Figure 6A), they showed dramatic degeneration of rhabdomeres over a period of 10 d (Figure 6B and D–G). The mean number of rhabdomeres was reduced from 7 to ~1 by day 10. The dose of the volatile in the chamber was measured in parallel experiments by tracking volatile loss and airflow (0.5 L/min) and determined to range from 260 to 95 ppm, an average of 125 ppm at the end of hour 1, tapering off to 0 ppm by hour 24. The odorant was replaced each day, leading to a dosage profile that would seem like a once-a-day treatment regimen (Figure 3—figure supplement 1A).
 
@@ -118,66 +138,473 @@ Taken together, our discovery that cells can alter gene expression in response t
 
 ## Materials and methods
 
-## Drosophila stocks and manipulations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{GMR-HTT.Q120}2.4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:8533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr63a-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDCS:9943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mcd8:GFP</td>
+      <td>Lee and Luo, 1999</td>
+      <td>mCD8-GFP in pUAST</td>
+      <td>Gift from Dr. John Carlson’s lab, Yale</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr21a-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:57600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>wCS</td>
+      <td>Koh et al., 2014</td>
+      <td>wCS</td>
+      <td>w1118 backcrossed multi-generation to Canton-S</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock no.: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Gift from Dr.Francis Sladek &amp; Dr.Xuan Liu, UCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185TM</td>
+      <td>Lot # 70035208</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SK-MEL-5</td>
+      <td>ATCC</td>
+      <td>HTB-70</td>
+      <td>Gift from Dr. Maurizio Pellecchia Lab, UCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SH-SY5Y</td>
+      <td>ATCC</td>
+      <td>CRL-2266</td>
+      <td>Gift from Dr. Maurizio Pellecchia Lab, UCR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nc82 (mouse monoclonal)</td>
+      <td>Development Studies Hybridoma Bank</td>
+      <td>nc82</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-11122</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, Alexa Fluor Plus 488</td>
+      <td>Invitrogen</td>
+      <td>A32731</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>A-11004</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetyl Histone H3K9 (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>ab4441</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetyl Histone H3K14 (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>06-911</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetyl Histone H4K5 (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>07-327</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Immun-Star anti-rabbit IgG, HRP (goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>1705046</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Gr21a F</td>
+      <td>PCR primer</td>
+      <td>CGATCGTCTTTCCGAATCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Gr21a R</td>
+      <td>PCR primer</td>
+      <td>GGCTCAGATCCACCCATAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Gr63a F</td>
+      <td>PCR primer</td>
+      <td>AAATGAACTCCGCCTCCTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Gr63a R</td>
+      <td>PCR primer</td>
+      <td>CGCAATTTCAGAGGCAAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>RP49 F</td>
+      <td>PCR primer</td>
+      <td>CTGCCCACCGGATTCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>RP49 R</td>
+      <td>PCR primer</td>
+      <td>GTTTCATGCGGCGAGATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or47a F</td>
+      <td>PCR primer</td>
+      <td>ATCACAGGCCACATTGAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or47a R</td>
+      <td>PCR primer</td>
+      <td>TCCCCGCAGTAGCAGTAGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or88a F</td>
+      <td>PCR primer</td>
+      <td>TTAAAGTGGCCTTCCTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or88a R</td>
+      <td>PCR primer</td>
+      <td>ATGCGGCAATAAAGTTCCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or83b F</td>
+      <td>PCR primer</td>
+      <td>TTCTTGGCATTCGCTTTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>This paper</td>
+      <td>Or83b R</td>
+      <td>PCR primer</td>
+      <td>TCCCTGGATTTGTTTGCTTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC Fluorometric Activity Assay Kit</td>
+      <td>Cayman Chemical</td>
+      <td>10011563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC2 Fluorogenic Assay Kit</td>
+      <td>BPS Bioscience</td>
+      <td>50062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC3 Fluorogenic Assay Kit</td>
+      <td>BPS Bioscience</td>
+      <td>50073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC8 Fluorogenic Assay Kit</td>
+      <td>BPS Bioscience</td>
+      <td>50068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC4 Fluorogenic Assay Kit</td>
+      <td>BPS Bioscience</td>
+      <td>50064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC6 Fluorogenic Assay Kit</td>
+      <td>BPS Bioscience</td>
+      <td>50076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PolyATtract mRNA Isolation System</td>
+      <td>Promega</td>
+      <td>Z5310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III</td>
+      <td>Invitrogen</td>
+      <td>18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green Master Mix</td>
+      <td>Bio-Rad</td>
+      <td>1725270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Invitrogen</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Preparation Kit v2</td>
+      <td>Illumina</td>
+      <td>RS-122-2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity ECL Western Blotting Substrate</td>
+      <td>Bio-Rad</td>
+      <td>1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diacetyl</td>
+      <td>Sigma-Aldrich</td>
+      <td>B85307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>B5887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valproic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl pyruvate</td>
+      <td>Alfa Aesar</td>
+      <td>A13966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Allyl butyrate</td>
+      <td>Aldrich Chemistry</td>
+      <td>246522-100ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Butanediol</td>
+      <td>Acros Organics</td>
+      <td>107642500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Hexanedione</td>
+      <td>Alfa Aesar</td>
+      <td>L04669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Heptanedione</td>
+      <td>Alfa Aesar</td>
+      <td>A19136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Pentanedione</td>
+      <td>Aldrich Chemistry</td>
+      <td>241962-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Acetoxyacetone</td>
+      <td>Alfa Aesar</td>
+      <td>H31346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propyl formate</td>
+      <td>Sigma-Aldrich</td>
+      <td>W294306-Sample-K</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and manipulations
 
 Fly stocks were maintained on conventional fly food under a 12 hr light:12 hr dark cycle at 18°C or 25°C. The fly strain of w1118 backcrossed five times to Canton-S (wCS) was used in all the Drosophila transcriptome experiments. P{GMR-HTT.Q120}2.4 (Bloomington # 8533) were used for neurodegeneration experiments. For imaging Gr63a-Gal4; UAS-mcd8:GFP, Gr21a-Gal4; UAS-mcd8:GFP stocks were obtained as a kind gift from the Carlson lab, Yale.
 
-## Odor exposure experiments for imaging
+### Odor exposure experiments for imaging
 
 Newly eclosed male wCS flies were sorted in groups of 30 into vials with standard cornmeal medium. Vials were closed with two overlapping 3″ × 3″ polypropylene mesh squares and tied with cotton twine. Vials were used within 6 hr. Four vials were placed in a 1000 ml Nalgene straight-sided jar with a 10 ml glass beaker with 10 ml of diacetyl 10–2 in paraffin oil. Jars were closed for exposure periods ranging from 2 to 6 d. In recovery experiments, vials were removed from the jars and were placed in a 25°C incubator for the remainder of the recovery period. Flies were anesthetized on ice, sacrificed in ethanol, and then immediately put into 1× phosphate-buffered saline with 0.3% Triton-X (PTX). Brains or antenna were put in 4% paraformaldehyde in PTX and incubated for 30 min while rotating at 25°C. Samples were washed five times in PTX and blocked in 5% natural goat serum in PTX for 1 hr while rotating at 25°C. Samples were then incubated in primary antibody with 5% goat serum in PTX, mouse-nc82 (1:20) (Development Studies Hybridoma Bank, University of Iowa) and rabbit-antiGFP (1:150) (Invitrogen) in PTX for 48 hr in 4°C while rotating. After washing five times in PTX, samples were incubated in secondary antibody with 5% goat serum in PTX, rabbit-anti-Alexa488 (1:400) (Invitrogen), and mouse-anti-Alexa568 (1:400) (Invitrogen) for 48 hr in 4°C. Samples are washed five times in PTX and stored in 70% glycerol in PTX. Images were taken using a Ziess 510 laser scanning confocal microscope, and image analysis was done using ImageJ software.
 
-## QRT-PCR
+### QRT-PCR
 
 Drosophila heads (with antenna) were collected on liquid nitrogen and stored at –80°C until processing. A total of 300 heads were collected for each sample and ground on liquid nitrogen. mRNA was extracted using a PolyATract kit (Promega) and was reverse transcribed using Superscript III (Invitrogen) according to the manufacturer’s protocol. The quality of the cDNA was assessed on a 1.5% agarose gel. cDNA was added to individual reactions of SYBR green master mix (Bio-Rad) and run on a Bio-Rad-MyQ thermocycler. The program began with a single cycle for 3 min at 95°C, followed by 40 cycles of 15 s at 95°C, 30 s at 58°C and 30 s at 72°C. Afterward, the PCR products were heated to 95°C for 1 min and cooled to 55°C for 1 min to measure the dissociation curves. The efficiency of each primer set was first validated by constructing a standard curve and three 10× serial dilutions of first-strand cDNA. For each serial dilution, the CT value was plotted against the log (template dilution) and the slope and r2 value of each regression line calculated. Expression of each Or or Gr gene was assessed in triplicate. Dissociation curves were used to assess the purity of the PCR reactions. Or and Gr transcript levels were normalized by using the transcript levels of ribosomal protein 49. Expression levels were calculated using the Pfaffl equation.
 
 In general, primers were designed by using coding sequences close to the 3′ end of the gene, and where possible, primers spanned an intron.
 
-## Odor exposure protocol for transcriptome analysis
+### Odor exposure protocol for transcriptome analysis
 
 Flies were exposed to diacetyl (B85307, Sigma-Aldrich, St. Louis, MO) by placing them in vials in a cylindrical closed container (112 mm diameter × 151 mm height) along with an odor-containing glass vial. The odorant was dissolved in 5 ml paraffin oil at 1% dilution. For a given exposure protocol, two groups of flies were prepared: those exposed to 1% diacetyl headspace and those exposed to paraffin oil headspace alone (control flies). Adult male flies aged 1 d were transferred to fly vials containing fresh medium and put into the container with the odor vial. At the end of the fifth day of exposure, flies were collected, and their antennae were dissected for RNA extraction. All treatments and experiments were performed at room temperature. For the recovery experiment, flies were transferred to a container with a glass vial of paraffin oil after 5 d of diacetyl exposure. At the end of the fifth day of recovery, flies were collected, and their antennae were dissected for total RNA extraction. The second and third antennal segments from 40 to 60 male flies after treatment were carefully hand-dissected from the head and collected in 1.5 ml microfuge tubes kept cold in liquid nitrogen. Antennae were mechanically crushed with disposable RNAse-free plastic pestles, and total RNA was isolated using a Trizol-based protocol. cDNA libraries were prepared from total RNA using the Illumina TruSeq RNA Sample Preparation Kit (v2) and 50 bps single- and paired-end sequencing was done using the HighSeq2000. Two biological replicates were sequenced for each condition, with an average of 27 million reads/ replicate, and with an average of 84% mapped.
 
 Two-month-old C57BL/6 male mice (2–3 for each condition in a single cage) were continually exposed to air flowing over headspace of paraffin oil (solvent control), 0.1%, or 1% diacetyl over a period of 5 d, then euthanized for collecting the lung and brain tissues and processing for mRNA isolation. All protocols for animal use and euthanasia were approved by the Institutional Animal Care and Use Committee (#20150028) and were in accordance with the provisions established by the Animal Welfare Act and the Public Health Services (PHS) Policy. In the transcriptome analysis, two replicates were performed for each condition, with an average of 123,687,411 reads/replicate, with an average of 88% mapped. Multiplexed libraries were made from total RNA input using the Illumina TruSeq RNA sample preparation kit (v2) and 50 bps single-end sequencing was done using the NextSeq500.
 
-## Calculation ppm in air based on weight loss of odorant over time
+### Calculation ppm in air based on weight loss of odorant over time
 
-The odor solution in PO in each setup (Drosophila and mouse) was weighed using a sensitive balance. PO is nonvolatile and therefore weight loss is attributable to diacetyl volatilization. Volatile Headspace exposure (ppm) is calculated through odor cartridge weight change from pure odor compound volatizing out (Inamdar et al., 2012).ppm=(10∧6w/MW)/(v/Vm)
+The odor solution in PO in each setup (Drosophila and mouse) was weighed using a sensitive balance. PO is nonvolatile and therefore weight loss is attributable to diacetyl volatilization. Volatile Headspace exposure (ppm) is calculated through odor cartridge weight change from pure odor compound volatizing out (Inamdar et al., 2012).
 
-where ppm is the concentration of tested VOC in parts per million (v/v), w is the weight of the tested chemical in grams, MW is the molecular weight of the tested VOC (g/mole), v is the total volume of the respective exposure chambers, and Vm is the molecular volume under the tested condition.Vm=24.45(760/P)((t+273.15)/298.15)
+$$
+ppm=(10^{∧}6w/MW)/(v/V_{m})
+$$
+
+where ppm is the concentration of tested VOC in parts per million (v/v), w is the weight of the tested chemical in grams, MW is the molecular weight of the tested VOC (g/mole), v is the total volume of the respective exposure chambers, and Vm is the molecular volume under the tested condition.
+
+$$
+V_{m}=24.45(760/P)((t+273.15)/298.15)
+$$
 
 where 24.45 is the gram molecular volume, under standard lab conditions of 760 mmHg, 25°C; P is the ambient pressure, in mmHg; and t is the ambient temperature, in°C. Odor cartridges, consisting of varying odor volume/volume dilutions, were weighed periodically under standard ambient temperature and pressure. Under these conditions, the pure volatile odor compounds volatize out of the odor cartridge and the evaporation rates were used for our exposure calculations. Based on ideal gas law and experimental conditions, ppm is calculated based on volatized odor compound and experimental chamber volume based on airflow.
 
-## HDAC inhibitor treatment protocol for transcriptome analysis
+### HDAC inhibitor treatment protocol for transcriptome analysis
 
 Sodium butyrate (B5887, Sigma-Aldrich) or valproic acid (P4543, Sigma-Aldrich) was dissolved in normal fly food medium at the final concentration of 10 mM. Three groups of flies were prepared: those treated with one of the HDAC inhibitors and those without HDAC inhibitor treatment (control flies). Adult flies aged 1 d were transferred to fly vials containing medium with or without a HDAC inhibitor. At the end of the fifth day of treatment, flies were collected, and their antennae were dissected for RNA extraction. All treatments and experiments were performed at room temperature. Two biological replicates with 60 flies/replicate were performed for each condition, with an average of 23 million reads/replicate, and with an average of 92% mapped. Multiplexed libraries were made from total RNA input using the Illumina TruSeq RNA sample preparation kit (v2) and 50 bps paired-end sequencing was done using the HighSeq2000.
 
-## Bioinformatic analysis of RNA-seq experiments
+### Bioinformatic analysis of RNA-seq experiments
 
 Reads aligned to the latest release of each of the genomes used (dm6 for the Drosophila genome, GRCm38 for the Mus musculus genome) and quantified with kallisto (version 0.43.1) (Bray et al., 2016) Only libraries for which we obtained >75% alignment were used for downstream analysis. Transcript counts were summarized to gene-level using tximport package (version 1.4.0) (Soneson et al., 2015). For any instances of detected batch effects, we removed unwanted variation using RuvR in the RuvSeq package (version 1.10.0) (Risso et al., 2014). DEG analysis was performed with the edgeR package (version 3.18.1) (Robinson et al., 2010) using low count filtering (cpm > 0.5) and TMM normalization. Protein classification analysis was performed with PANTHER (version 13.1) (Mi et al., 2017). All significance analyses of gene overlap were done using the GeneOverlap package in R package (version 1.14.0). GO enrichment analysis was performed using clusterProfiler (version 3.6.0) (Yu et al., 2012).
 
-## HDAC activity assays
+### HDAC activity assays
 
-HDAC activity of class I HDACs (HDAC1, 2, 3, and 8) was measured with the fluorometric HDAC Activity Assay kit: HDAC1 (10011563, Cayman Chemical, Ann Arbor, MI), HDAC2, HDAC 3, and HDAC 8 (50062, 50073 and 50068, BPS Bioscience, San Diego, CA), according to the manufacturer’s instructions. HDAC activity of class II HDACs (HDAC4 and HDAC6) were measured with the fluorometric HDAC Activity Assay kit: HDAC4, HDAC 4 (50064 and 50076, BPS Bioscience), according to the manufacturer’s instructions. HDAC activity in these 96-well format kits was directly correlated with fluorescence produced by the enzyme and substrate interaction. Each test compound was tested in duplicates, minimum. Due to interference, concentrations of >30 mM were not used in the IC50 calculation. To account for any potential absorbance or fluorescence contributed by the test chemicals interacting with the assay substrate, all baseline background measurements of test compound + substrate control wells (everything, but no HDAC enzyme) were performed and subtracted against the respective test compound wells. It is fair to note that no significant changes in background fluorescence were seen with tested compounds in comparison to control background fluorescence. HDAC activity was calculated based on averaged maximum fluorescence from negative control wells and the averaged fluorescence in test compound wells.FluorescenceNegative  control−FluorescenceHDACiFluorescenceNegative  controlx100%=Remaining HDAC activity %
+HDAC activity of class I HDACs (HDAC1, 2, 3, and 8) was measured with the fluorometric HDAC Activity Assay kit: HDAC1 (10011563, Cayman Chemical, Ann Arbor, MI), HDAC2, HDAC 3, and HDAC 8 (50062, 50073 and 50068, BPS Bioscience, San Diego, CA), according to the manufacturer’s instructions. HDAC activity of class II HDACs (HDAC4 and HDAC6) were measured with the fluorometric HDAC Activity Assay kit: HDAC4, HDAC 4 (50064 and 50076, BPS Bioscience), according to the manufacturer’s instructions. HDAC activity in these 96-well format kits was directly correlated with fluorescence produced by the enzyme and substrate interaction. Each test compound was tested in duplicates, minimum. Due to interference, concentrations of >30 mM were not used in the IC50 calculation. To account for any potential absorbance or fluorescence contributed by the test chemicals interacting with the assay substrate, all baseline background measurements of test compound + substrate control wells (everything, but no HDAC enzyme) were performed and subtracted against the respective test compound wells. It is fair to note that no significant changes in background fluorescence were seen with tested compounds in comparison to control background fluorescence. HDAC activity was calculated based on averaged maximum fluorescence from negative control wells and the averaged fluorescence in test compound wells.
+
+$$
+\frac{Fluorescence_{Negative  control}−Fluorescence_{HDACi}}{Fluorescence_{Negative  control}}x100%=Remaining HDAC activity %
+$$
 
 HDAC % inhibition was directly calculated from obtained HDAC activity %.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 Human embryonic kidney 293 (HEK293) cells were grown in 100 mm cell culture dishes with Dulbecco’s modified Eagle’s medium (DMEM) (10-013, Corning, Manassas, VA), supplemented with 10% fetal bovine serum (FBS) (26140-079, Gibco, Carlsbad, CA) at 37°C with 5% CO2. Cells that were ~80% confluent were treated with freshly prepared medium supplemented with diacetyl at the concentrations indicated. The cells for mock controls were handled in the same manner without adding diacetyl to the medium. To prevent diffusion of diacetyl odor from the treatment dishes to the ones of mock control, the cell culture dishes in different conditions were cultured in separate CO2 incubators.
 
 Cell proliferation assays were performed to assess the effects of compounds against cancer cell lines. Cells were maintained in a 37°C incubator with 5% CO2 throughout the whole experiment. Compound stocks are dissolved in 10% DMSO and final concentrations made fresh in complete media as needed. Then, 10% DMSO solvent is used as control in complete media. Cells were seeded onto 12-well plates and allowed 12–24 hr until treatment to allow cells to adhere to wells. This is followed by minimum 5 d treatment of compounds, changing the media with treatment every 48 hr. Cell lines A549 and SK-MEL-5 were seeded at 8000 cells/well, which was determined to provide 80–100% confluency after 6 d growth. SH-SY5Y was seeded at 8000 cells/well and 16,000 cells/well due to their known slower division rate and given at least 10 d for sufficient growth. After allotted growth times, cell counts were performed using the Countess automated cell counter. All assays had a minimum of three replicates for all conditions and analyzed through GraphPad Prism one-way ANOVA for significance. Cell lines were from ATCC: HEK-293T, A549, SH-SY5Y, and SK-MEL-5. All four cell lines were evaluated to be negative for Mycoplasma using the following tests: A549: Hoechst DNA stain (indirect) method – negative, Agar culture (direct) method – negative, and PCR-based assay – negative. The HEK-293T, SH-SY5Y, and SK-MEL-5 were determined to be negative based on PCR-based assay.
 
-## Odor exposure protocol for Huntington’s disease model flies
+### Odor exposure protocol for Huntington’s disease model flies
 
 Flies were exposed to diacetyl in a cylindrical container (112 mm diameter × 151 mm height). Each container was tightly closed but had two holes, one of which connected to an air suction port, and the other to a vial containing either of 5 ml paraffin oil or 5 ml 1% diacetyl in paraffin oil. A gentle suction was applied to pull the headspace from the odor or paraffin oil vials into the cylindrical structure. pGMR-HTTQ120 flies were maintained at 18°C. Adult flies aged 1 d were transferred to fly vials containing fresh medium and put into the odor-filled container at room temperature. Paraffin oil and 1% diacetyl solution were prepared and replaced every day. At the end of the fifth day of exposure, half of the flies were collected and subjected to pseudopupil analysis as before (Steffan et al., 2001). The remaining flies were transferred to fresh medium and exposed to the odors for an additional 5 d. All treatments and experiments were performed at room temperature. The number of rhabdomeres in each ommatidium was counted using the pseudopupil analysis, and statistical significance was determined by unpaired t-test (two-tailed) against PO at each time point.
 
-## Preparation of nuclear extracts from HEK293 cells
+### Preparation of nuclear extracts from HEK293 cells
 
 Nuclear extracts of HEK293 cells were prepared according to a protocol described previously (Andrews and Faller, 1991), with minor modifications. In brief, HEK293 cells were washed twice with cold phosphate-buffered saline (PBS) and lysed with hypotonic buffer (10 mM HEPES-KOH [pH 7.9], 1.5 mM MgCl2, 10 mM KCl, protease inhibitor cocktail [04693159001, Roche, Indianapolis, IN], 1 mM DTT, 1 mM TSA). Following a brief centrifugation, the pellet was resuspended in hypertonic buffer (20 mM HEPES-KOH [pH 7.9], 25% glycerol, 420 mM NaCl 1.5 mM MgCl2, 0.2 mM EDTA, protease inhibitor cocktail, 1 mM DTT, 1 mM TSA). The supernatant was recovered as nuclear extract.
 
-## Western blot analysis
+### Western blot analysis
 
 Proteins in the nuclear extracts (60 μg protein) were separated by SDS-PAGE gels (456-1043, Bio-Rad, Hercules, CA), transferred onto PVDF membranes (162-0174, Bio-Rad), and incubated with anti-histone antibodies: acetylated H3K9 (1/2000: ab4441, abcam, Cambridge, MA), acetylated H3K14 (1/5000: 06-911, EMD Millipore, Billerica, MA), and acetylated H4K5 (1/2000: 07-327, EMD Millipore). Bound antibody was detected by horseradish peroxidase-conjugated anti-rabbit secondary antibody (1/20,000: 1705046, Bio-Rad) and developed using Clarity Western ECL Substrate (1705060, Bio-Rad). Signals were detected and captured using ImageQuant LAS 4000 mini (GE Healthcare, Pittsburgh, PA), and band intensities were quantified with ImageJ software. H3K9 acetylation intensity in individual lanes was reported relative to the normalized Mock treatment and calculated using this formula: relative H3K9ace intensity for each timepoint = (H3K9ace/PCNA)/averaged (Mock H3K9ace/Mock PCNA). Statistical significance was determined by unpaired t-test (two-tailed) against mock at each time point.
 
-## Materials availability
+### Materials availability
 
 All newly created reagents in this publication such as primers are available upon request.

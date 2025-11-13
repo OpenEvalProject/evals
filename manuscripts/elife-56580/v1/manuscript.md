@@ -27,7 +27,7 @@
 
 ## Abstract
 
-All eukaryotes require iron. Replication, detoxification, and a cancer-protective form of regulated cell death termed ferroptosis , all depend on iron metabolism. Ferrous iron accumulates over adult lifetime in Caenorhabditis elegans . Here, we show that glutathione depletion is coupled to ferrous iron elevation in these animals, and that both occur in late life to prime cells for ferroptosis. We demonstrate that blocking ferroptosis, either by inhibition of lipid peroxidation or by limiting iron retention, mitigates age-related cell death and markedly increases lifespan and healthspan. Temporal scaling of lifespan is not evident when ferroptosis is inhibited, consistent with this cell death process acting at specific life phases to induce organismal frailty, rather than contributing to a constant aging rate. Because excess age-related iron elevation in somatic tissue, particularly in brain, is thought to contribute to degenerative disease, post-developmental interventions to limit ferroptosis may promote healthy aging.
+All eukaryotes require iron. Replication, detoxification, and a cancer-protective form of regulated cell death termed ferroptosis, all depend on iron metabolism. Ferrous iron accumulates over adult lifetime in Caenorhabditis elegans. Here, we show that glutathione depletion is coupled to ferrous iron elevation in these animals, and that both occur in late life to prime cells for ferroptosis. We demonstrate that blocking ferroptosis, either by inhibition of lipid peroxidation or by limiting iron retention, mitigates age-related cell death and markedly increases lifespan and healthspan. Temporal scaling of lifespan is not evident when ferroptosis is inhibited, consistent with this cell death process acting at specific life phases to induce organismal frailty, rather than contributing to a constant aging rate. Because excess age-related iron elevation in somatic tissue, particularly in brain, is thought to contribute to degenerative disease, post-developmental interventions to limit ferroptosis may promote healthy aging.
 
 ## Introduction
 
@@ -39,21 +39,35 @@ The developmental dependence on iron for reproduction and cellular biochemistry 
 
 ## Results
 
-## Glutathione depletion vulnerability
+### Glutathione depletion vulnerability
 
 Glutathione is suggested to be the dominant coordinating ligand for cytosolic ferrous iron (Hider and Kong, 2011) and is also the substrate used by glutathione peroxidase-4 (GPX4) to clear the lipid peroxides that induce ferroptotic cell death (Dixon and Stockwell, 2014; Friedmann Angeli et al., 2014; Yang et al., 2014). Deletion of four C. elegans homologs of GPX4 decreases lifespan (Sakamoto et al., 2014), but whether ferroptosis mediates this is unknown. We tested whether acute depletion of glutathione can initiate ferroptosis in adult C. elegans using diethyl maleate (DEM), which conjugates glutathione (Urban et al., 2017; Valmas and Ebert, 2006). DEM has been reported to produce a non-linear response to glutathione depletion, with a minor glutathione loss induced by DEM at 10–100 µM increasing lifespan via hormesis, but a major glutathione loss induced by DEM ≥1 mM shortening lifespan (Urban et al., 2017). We found that DEM ≥1 mM induced death in 4 day old adult worms (at the end of their reproductive phase) in a dose- and time-dependent manner, with ≈50% lethality occurring after 24 hr exposure to 10 mM DEM (Figure 1A) associated with ≈50% depletion of glutathione (Figure 1B). We also found that total glutathione levels steadily decrease with normal aging, approaching ≈50% on Day 10 of the levels on Day 1 (Figure 1C, Supplementary file 1). This may contribute to C. elegans becoming disproportionately more vulnerable to DEM lethality as they enter the midlife stage (Figure 1D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig1-v1.jpg)
 
-**Figure 1.:** Treatment with DEM represents an acute stress that reduces glutathione levels and causes death, with older animals being more susceptible.Note, the age of adults is determined by the number of days following the last larval molt and therefore reflects the number of days of adulthood. (A) Survival curves of adults following either 24- or 48 hr exposure to increasing doses of DEM. Treatment begun on Day 4 of adulthood. Shown are proportions ± 95% confidence intervals (Newcombe, 1998), with a sigmoidal curve fitted. (B) Total glutathione (GSH) decrease following 6 hr of DEM exposure. Day 4 adults used, with results normalized to the GSH levels in worms not exposed to DEM. Plotted are six independent replicates, with each estimated derived from 50 adults per measure). Linear regression R2 = 0.98, p=0.01 (C) Total GSH levels decrease with increased adult age in C. elegans. Each point is derived from six independent replicates of 50 adults, with black lines marking the mean value. Results are normalized to the GSH levels in Day one worms (ANOVA: F (3, 20)=32.96, p<0.0001; see Supplementary file 1 for pairwise comparisons). (D) Aged C. elegans adults become progressively more sensitive to GSH depletion by DEM. Shown are proportions ± 95% confidence intervals, with a sigmoidal curve fitted. (E) Both Lip and SIH treatment protect against lethality from DEM-derived glutathione depletion. Day 4 adults, with values representing pooled data from four independent experiments ± 95% confidence intervals, each with a fitted sigmoidal curve. Ctl denotes vehicle control (0.5% v/v DMSO). Pairwise comparisons at 10 and 20 mM DEM were performed using Fisher’s exact test; *** denotes p<0.001. (F) Total glutathione levels are preserved following SIH pretreatment from L4, but not by Lip-1. Day 4 adults were exposed to DEM (10 mM) for 6 hr, and total glutathione (GSH) assayed. Ctl denotes vehicle control (0.5% v/v DMSO). Each point is derived from 4 to 9 independent replicates of 50 adults, with black lines marking the mean value ± SD. (ANOVA: F (5, 30)=50.97, p<0.0001; see Supplementary file 1 for pairwise comparisons). *** denotes p<0.001.Figure 1—source data 1.
+**Figure 1.:** Treatment with DEM represents an acute stress that reduces glutathione levels and causes death, with older animals being more susceptible.Note, the age of adults is determined by the number of days following the last larval molt and therefore reflects the number of days of adulthood. (A) Survival curves of adults following either 24- or 48 hr exposure to increasing doses of DEM. Treatment begun on Day 4 of adulthood. Shown are proportions ± 95% confidence intervals (Newcombe, 1998), with a sigmoidal curve fitted. (B) Total glutathione (GSH) decrease following 6 hr of DEM exposure. Day 4 adults used, with results normalized to the GSH levels in worms not exposed to DEM. Plotted are six independent replicates, with each estimated derived from 50 adults per measure). Linear regression R2 = 0.98, p=0.01 (C) Total GSH levels decrease with increased adult age in C. elegans. Each point is derived from six independent replicates of 50 adults, with black lines marking the mean value. Results are normalized to the GSH levels in Day one worms (ANOVA: F (3, 20)=32.96, p<0.0001; see Supplementary file 1 for pairwise comparisons). (D) Aged C. elegans adults become progressively more sensitive to GSH depletion by DEM. Shown are proportions ± 95% confidence intervals, with a sigmoidal curve fitted. (E) Both Lip and SIH treatment protect against lethality from DEM-derived glutathione depletion. Day 4 adults, with values representing pooled data from four independent experiments ± 95% confidence intervals, each with a fitted sigmoidal curve. Ctl denotes vehicle control (0.5% v/v DMSO). Pairwise comparisons at 10 and 20 mM DEM were performed using Fisher’s exact test; *** denotes p<0.001. (F) Total glutathione levels are preserved following SIH pretreatment from L4, but not by Lip-1. Day 4 adults were exposed to DEM (10 mM) for 6 hr, and total glutathione (GSH) assayed. Ctl denotes vehicle control (0.5% v/v DMSO). Each point is derived from 4 to 9 independent replicates of 50 adults, with black lines marking the mean value ± SD. (ANOVA: F (5, 30)=50.97, p<0.0001; see Supplementary file 1 for pairwise comparisons). *** denotes p<0.001.
 
 We tested whether lethality associated with glutathione depletion was caused by ferroptosis. We examined the treatment of C. elegans with the selective ferroptosis inhibitor, liproxstatin (Lip-1, 200 µM) (Dixon et al., 2012). We also targeted the accumulation of late life iron (James et al., 2016; James et al., 2015), that catalyses (phospho)lipid hydroperoxide propagation, using salicylaldehyde isonicotinoyl hydrazone (SIH, 250 µM), a lipophilic acylhydrazone that scavenges intracellular iron and mobilizes it for extracellular clearance (Kalinowski and Richardson, 2005). Importantly, unlike chelators such as CaEDTA, iron bound by SIH does not redox cycle (Chen et al., 2018). For both interventions, C. elegans were treated from early adulthood (late L4) onwards to eliminate any potential developmental effects.
 
 DEM toxicity in 4-day-old worms was rescued by both Lip-1 and SIH (Figure 1E, Supplementary file 1), with more marked protection by SIH. This is consistent with ferroptosis contributing to the death mechanism. Therefore, the fall in glutathione with aging (Figure 1C, Supplementary file 1) would be expected to interact synergistically with the concomitant rise in labile iron (James et al., 2016; James et al., 2015) to increase the risk of ferroptosis. We found that this age-dependent rise in iron itself may contribute to the fall in glutathione, since pretreatment of the worms with SIH from L4 prevented the age-dependent decrease in glutathione when assayed on Day 4 of adult life (Figure 1F). Furthermore, SIH mitigated the glutathione depletion induced by DEM in Day four animals (Figure 1F), demonstrating that cytosolic iron synergizes the depletion of glutathione initiated by DEM. While Lip-1 alleviated the lethality of DEM (Figure 1E), it did not prevent the fall in glutathione that was induced by aging (as assayed on Day 4) or by DEM (Figure 1F). Thus, Lip-1 inhibition of ferroptosis in C. elegans occurs downstream of glutathione depletion, consistent with its effect in rescuing ferroptosis in cultured cells (Shah et al., 2018).
 
-## Individual cell ferroptosis heralds organismal demise
+### Individual cell ferroptosis heralds organismal demise
 
 A feature of ferroptosis is the propagation of cell death in a paracrine manner mediated by uncertain signals that might include the toxic lipid peroxidation end-products 4-hydroxynonenal (4-HNE) and malondialdehyde (MDA) (Feng and Stockwell, 2018; Linkermann et al., 2014). Compared to strong oxidants like the hydroxyl radical, 4-HNE and MDA are relatively stable and able react with macromolecules, such as proteins distal to the site of origin. To determine whether individual cell death precedes organismal death in our model of aging, we used propidium iodide to visualize moribund cells in vivo after DEM treatment and during aging. Propidium iodide (PI) is a fluorescent intercalating agent that binds to DNA, but cannot cross the membrane of live cells, making it possible to identify the nuclei of recently dead or dying cells, as shown in Figure 2A (and Figure 2—figure supplement 1). Examination of aged cohorts, or young animals treated with DEM, indicated that cell death (particularly death of intestinal cells) preceded organismal death in both 4-day-old (Figure 2B) and 6- and 8-day-old (Figure 2C) adults, and was significantly attenuated by both Lip-1 or SIH. Death of individual cells prior to organismal death is consistent with progressive degeneration contributing to the frailty phenotype.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig2-v1.jpg)
+
+**Figure 2.:** Measures of lipid peroxidation and cell death show an increase with age and reduction by both Lip-1 and SIH treatment.In all panels, vehicle control (0.5% v/v DMSO, Ctl)-treated worms are shown in orange, Lip-1-treated (200 µM Lip-1) are green and SIH-treated (250 µM SIH) are blue. (A) Representative propidium iodide fluorescence (red) overlay of bright field micrograph depicting dead intestinal cells (marked by nuclear signal, yellow triangles) within a live Day 4 adult treated with DEM. Smaller fluorescent puncta were also observed, consistent with neuronal cell nuclei (white unfilled triangles). Untreated Day 4 adult control animals (Ctl) showed no cell death. (B) Proportion of live animals at Day 4 (±95% confidence intervals) of adulthood showing dead cell fluorescence (propidium iodide)±exposure to 10 mM DEM for 24 hr. Cohorts of animals included: co-treatment with a vehicle control (-DEM, Ctl, n = 102; +DEM Ctl n = 117), Lip-1 (-DEM, Lip-1, n = 84; +DEM Ctl n = 106) or SIH (-DEM, Ctl, n = 89; +DEM Ctl n = 129). Lip-1 and SIH both markedly reduced the proportion of animals with dead cells after DEM treatment (z-test: Ctl vs Lip-1 Z = 6.37 ***p<0.001; Ctl vs SIH Z = 7.24, ***p<0.001). (C) Proportion of live animals at 4, 6 and 8 days of adulthood (±95% confidence intervals) showing propidium iodide nuclear fluorescence. Day 6 Ctl adults (n = 160) had a significantly higher proportion of animals with dead cells than Day 4 Ctl (n = 263; z-test: Z = 4.70 ***p<0.001). Similarly, Day 8 Ctl adults (n = 119) had significantly higher prevalence of animals with propidium iodide nuclear fluorescence than Day 4 Ctl (z-test: Z = 6.65 ***p<0.001). No significant difference was observed between Day 6 and Day 8 control populations. Within the Day 6 adult cohorts treatment with Lip-1 (n = 77) or SIH (n = 81) markedly reduced the prevalence of animals with propidium iodide nuclear fluorescence compared to vehicle control (z-test: Ctl vs Lip-1 Z = 2.57 # p<0.001; Ctl vs SIH Z = 2.64, # p<0.001). Within the Day 8 adult cohorts treatment with Lip-1 (n = 234) or SIH (n = 308) markedly reduced the prevalence of animals with propidium iodide nuclear fluorescence compared to vehicle control (Ctl, n = 119; z-test: Ctl vs Lip-1 Z = 5.67 # p<0.001; Ctl vs SIH Z = 6.28, # p<0.001). (D) Levels of the lipid peroxidation end product malondialdehyde (MDA) increases in C. elegans following acute glutathione depletion by 20 mM DEM exposure for 6 hr. MDA levels are shown as values normalized against the mean of untreated Day 4 Adults (Ctl) for independent samples. (Ctl vs +DEM, unpaired 2-tailed t-test ***p<0.001) (E) Malondialdehyde (MDA) increases in aged C. elegans (Day 1 vs Day 8 adults, ANOVA *p<0.05). Treatment with either Lip-1 (Day 8 vs Day 8 +Lip-1 adults, ANOVA ***p<0.001) or SIH (Day 8 vs Day 8 +SIH adults, ANOVA *p<0.05) reduces levels of MDA. Data represent independent samples with values normalized against the mean of untreated Day 1 adults. (F) Representative immunoblot against 4-HNE protein adducts comparing Day 1 and Day 8 control adults and aged adults treated with Lip-1 and SIH with corresponding tubulin blot below (representative of triplicate experiments). The relative intensity of the bands show an age-related increase that is ameliorated by Lip-1 and SIH.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative images are shown in A for DEM-treated animals and B for aging animals. (A) Representative epifluorescence micrographs of dead cell fluorescence (propidium iodide) in animals ± exposure to 10 mM DEM for 24 hr. In animals treated with DEM (+DEM) examples of animals with single through to numerous dying cells (yellow triangles) were observed. Untreated Day 4 adult control animals (-DEM) showed no cell death. Some fine puncta, consistent with labelling of dead bacteria was observed in the intestinal tract (white unfilled triangles). (B) Representative epifluorescence micrographs of dying cell fluorescence (propidium iodide) in aged animals ± treatment with Lip-1 or SIH. In Day 1 control (Ctl) animals no dying cells were observed. In comparison, in Day 6 and Day 8 Ctl animals with dying cells (ranging from a few to many cells) (yellow triangles) were observed. Representative images of age matched animals treated with Lip-1 or SIH without cell death.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Images of control (Ctl), 200 µM Lip-1 and 250 µM SIH-treated animals are shown in A to C. DEM-treated (±10 mM DEM) animals are shown in D and E. Lip-1 and SIH do not cause nuclear translocation of DAF-16. Representative fluorescence micrographs of DAF-16::GFP localization in animals treated from L4 larval stage for 48 hr at 25°C. Shown are (A) 0.5% (v/v) DMSO vehicle control (Veh Ctl), (B) 200 µM Lip-1 (Lip-1) and (C) 250 µM SIH (SIH), which all show unaltered cytoplasmic localization of DAF-16. In contrast, glutathione depletion by DEM causes nuclear translocation of DAF-16. Representative fluorescence micrographs of DAF-16::GFP localization in animals (D) untreated (Ctl) or (E) animals exposed to 20 mM DEM for 6 hr at 25°C treated from L4 larval stage for 48 hr at 25°C.
 
 The PI-positive dying cells did not accumulate with aging (Figure 2—figure supplement 1), perhaps because the dead cells are cleared during the remaining lifespan of the animal. It is known that as C. elegans ages, intestinal nuclei are lost (McGee et al., 2011) and the propidium iodide cannot stain nuclei if they are absent. Additionally, we would not expect a linear increase proportional to age in the prevalence of animals with stained cells during longitudinal studies of our cohorts, because dead animals are removed from the population and the rate of death changed over time for the cohorts (Figure 5C; see below). Thus, the prevalence of PI-positive cells per animal would be a complex product of the rate of PI emergence, the rate of PI disappearance, the rate of nuclear disappearance and the rate of organismal death. However, we were able to survey the prevalence of animals with any dead cells on particular days in the adult life span. This determined that cell death begins to be detected after 4 days of age, and that our interventions with SIH and Lip-1 completely suppressed this cell death at 6 and 8 days of age (Figure 2C).
 
@@ -61,27 +75,49 @@ To estimate changes in lipid peroxidation, we assayed MDA via the thiobarbituric
 
 We considered whether the higher levels of glutathione in animals treated with SIH (Figure 1E and F) could reflect a hormetic response to sublethal oxidative stress, which has been described for SIH at low concentrations (10 µM) combining with the cellular labile iron pool within hepatocellular carcinoma cells in culture (Caro et al., 2015). The decrease we observed in our oxidation markers, MDA and 4-HNE, by SIH treatment at 250 µM in C. elegans (Figure 2E and F) suggests that this higher dose of SIH was sufficient to debulk reservoirs of total iron. To further discount possible off-target stress responses elicited by our interventions, we interrogated DAF-16 localization. Nuclear localization of the DAF-16 transcription factor is an indicator of insulin-like signalling, which occurs under stress conditions (Henderson and Johnson, 2001). Neither 250 µM SIH nor 200 µM Lip-1 induced DAF-16 nuclear translocation. As a positive control, treatment with 10 mM DEM did induce nuclear localization of DAF-16 (Figure 2—figure supplement 2), consistent with this challenge inducing acute stress. Taken together, these findings argue against hormesis mediating the benefits of SIH or Lip-1 under these conditions in C. elegans.
 
-## Changes in iron quantity, speciation and cytoplasmic fraction
+### Changes in iron quantity, speciation and cytoplasmic fraction
 
 Lowering cellular iron suppresses ferroptosis, but the peroxyl radical trapping ferroptosis inhibitors, such as Lip-1, are not expected to change iron levels. We examined the impact of SIH and Lip-1 interventions on iron levels over lifespan using synchrotron-based X-ray fluorescence microscopy (Ganio et al., 2016; James et al., 2015) to measure both iron concentration (presented as areal density, pg μm−2) and total (pg per worm) iron (Figure 3A; Supplementary file 7). Both total iron and areal density increased with age in control animals (Figure 3B and C; Supplementary file 2), as expected (James et al., 2015). SIH dramatically reduced the areal density of iron (and reduced variance) with aging (Figure 3C; Supplementary file 2), but Lip-1 did not alter iron density. Notably, by Day 8, animals treated with SIH contained total iron load on par with the untreated control group (Figure 3C; Supplementary file 2), as the lower areal density was offset by an increase in body size of SIH-treated worms compared to age matched controls. These results highlight how bulk measures of total iron or measurements by inference (Valentini et al., 2012) can be confounded by changes in the animal morphology when exploring aging interventions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig3-v1.jpg)
 
-**Figure 3.:** C. elegans.In all panels, vehicle control (0.5% v/v DMSO, Ctl) treated worms are shown in orange, Lip-1 treated (200 µM Lip-1) are green and SIH treated (250 µM SIH) are blue. (A) Representative X-ray fluorescence microscopy maps of tissue iron (Fe) reported as areal density (pg µm−2) for a first day adult (Day 1) and animals treated for four days (Day 4) and eight days (Day 8) with vehicle control (Ctl), Lip-1 or SIH at 25°C. Scale bar = 50 µm. (B) Plot of mean areal density for iron (pg µm−2) for all treatment cohorts aged at 25°C. The starting population (Day 1, vehicle control (0.5% v/v DMSO); Start)) is shown in grey. The control cohort (orange) shows an age related increase in total iron (as previously observed [James et al., 2015). The Lip-1 group (green) has similar iron levels across each age, whereas the SIH cohort (blue) has markedly less total iron (ANOVA: F(6,148)=171.3, p<0.0001; see Supplementary file 2 for sample summary and pair-wise comparisons). Each data point represents a value from a single C. elegans adult, with mean ± SD, ***p<0.001. (C) Plot of total body iron (pg) for treated C. elegans cohorts aged at 25°C. Each data point represents a value from a single C. elegans adult, with mean ± SD. All treatments have increased total iron across age with SIH-treated (blue) worms retaining significantly less iron than control (red) and Lip-1 (green) treated worms at Day 4 (ANOVA: F(6,148)=97.3, ***p<0.0001; see Supplementary file 2 for sample summary and pair-wise comparisons) (D) Native, size-exclusion chromatography of iron-macromolecular complexes from 10 day old adults treated with vehicle control (Ctl, shown in orange) or SIH-treated cohorts (shown in blue). The means ± SD, from three independent biological replicates, are plotted. The three major peaks include unaltered high molecular weight complexes (HMW,>1 MDa,~2.2 mL retention volume), ferritin bound iron (~2.7 mL retention volume; previously identified as FTN-2 [James et al., 2015]; area under the peak decreased by ~53% relative to Ctl) and low molecular weight iron complexes (LMW,<30 kDa,~3.9 mL retention volume, decreased ~47% relative to Ctl).Figure 3—source data 1.
+**Figure 3.:** In all panels, vehicle control (0.5% v/v DMSO, Ctl) treated worms are shown in orange, Lip-1 treated (200 µM Lip-1) are green and SIH treated (250 µM SIH) are blue. (A) Representative X-ray fluorescence microscopy maps of tissue iron (Fe) reported as areal density (pg µm−2) for a first day adult (Day 1) and animals treated for four days (Day 4) and eight days (Day 8) with vehicle control (Ctl), Lip-1 or SIH at 25°C. Scale bar = 50 µm. (B) Plot of mean areal density for iron (pg µm−2) for all treatment cohorts aged at 25°C. The starting population (Day 1, vehicle control (0.5% v/v DMSO); Start)) is shown in grey. The control cohort (orange) shows an age related increase in total iron (as previously observed [James et al., 2015). The Lip-1 group (green) has similar iron levels across each age, whereas the SIH cohort (blue) has markedly less total iron (ANOVA: F(6,148)=171.3, p<0.0001; see Supplementary file 2 for sample summary and pair-wise comparisons). Each data point represents a value from a single C. elegans adult, with mean ± SD, ***p<0.001. (C) Plot of total body iron (pg) for treated C. elegans cohorts aged at 25°C. Each data point represents a value from a single C. elegans adult, with mean ± SD. All treatments have increased total iron across age with SIH-treated (blue) worms retaining significantly less iron than control (red) and Lip-1 (green) treated worms at Day 4 (ANOVA: F(6,148)=97.3, ***p<0.0001; see Supplementary file 2 for sample summary and pair-wise comparisons) (D) Native, size-exclusion chromatography of iron-macromolecular complexes from 10 day old adults treated with vehicle control (Ctl, shown in orange) or SIH-treated cohorts (shown in blue). The means ± SD, from three independent biological replicates, are plotted. The three major peaks include unaltered high molecular weight complexes (HMW,>1 MDa,~2.2 mL retention volume), ferritin bound iron (~2.7 mL retention volume; previously identified as FTN-2 [James et al., 2015]; area under the peak decreased by ~53% relative to Ctl) and low molecular weight iron complexes (LMW,<30 kDa,~3.9 mL retention volume, decreased ~47% relative to Ctl).
 
 We had previously determined age-related changes to the C. elegans iron-proteome, characterized on size exclusion chromatography by three major peaks: a high molecular weight peak (HMW,>1 MDa), ferritin, and a low MW peak (LMW, 600 Da) that may contain labile iron. With aging, iron redistributes in C. elegans out of the ferritin peak (where it is sequestered in redox-silent storage reserves) and accumulates in the HMW and LMW peaks (James et al., 2015). The chromatographic profile of aged C. elegans (10 days post adulthood) treated with SIH (Figure 3D) revealed decreased iron associated with the LMW peak (normalized peak area approximately 40%). Ferritin-bound iron was also similarly decreased by SIH (normalized peak area approximately 50%), but iron bound within HMW species was unaffected. The age-related changes in LMW iron are consistent with increased labile iron, which is withdrawn as the substrate for ferroptosis by SIH treatment.
 
-## Fe2+ increase with aging is normalized by liproxstatin and SIH
+### Fe2+ increase with aging is normalized by liproxstatin and SIH
 
 X-ray absorption near edge structure (XANES) spectroscopy, using fluorescence detection for visualization, directly assesses the in vivo coordination environments of metal ions in biological specimens (φXANES) (James et al., 2016). The centroid of the XANES pre-edge feature reflects the relative abundance of ferrous [Fe2+] and ferric [Fe3+] species (Westre et al., 1997). Since Fe2+ in the labile iron pool is the specific substrate for ferroptosis, and rises with aging in C. elegans (James et al., 2015), we investigated the impact of our interventions using φXANES (James et al., 2016). This synchrotron-based spectroscopy allowed us to evaluate steady state iron speciation (Fe2+/ Fe3+) in a specific region (anterior intestinal, Figure 4A; Figure 4—figure supplement 1) of intact, cryogenically-stabilized control, Lip-1 and SIH-treated worms. We found that the age-related increase in the Fe2+ fraction was normalized to that of a young animal by both Lip-1 and SIH treatments (Figure 4B and C; Figure 4—figure supplement 2A and B; Supplementary file 3).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig4-v1.jpg)
+
+**Figure 4.:** 𝜑XANES evaluation of the Fe2+ fraction in vivo within intact animals. (A) Schematic highlighting the anatomy of an adult hermaphrodite C. elegans with the intestine shaded in grey. Dashed box is indicative of the region of animals selected for 𝜑XANES. (B) Fe2+ synchrotron microscopy. 𝜑XANES imaging allowed extraction of the normalised Fe K-edge XANES spectra (coloured circles) from the anterior intestine of Day 1 (n = 6) and Day 8 control (n = 4), SIH treated (n = 4) and Lip-1 treated (n = 5) worms. Averaged spectra for each group are shown along with 95% confidence intervals (shading). The pre-edge region, following subtraction of the rising edge (dashed line), highlights changes in the intensity and position of the 1 s → 3d transition. The extracted data (empty circles) and fitted Gaussian (solid lines; shading represents the 95% CI) are superimposed to determine the centroid values for the pre-edge peak, from which the Fe2+ fraction is derived. Changes in the first derivative of the Fe K-edge XANES (Figure 4—figure supplement 2) reflect variation in the intensity of the 1 s → 4 s and 1 s → 4 p transitions. The relative intensity of these features was used to estimate the proportion of Fe2+ iron in the specimens. For reference, the red line through all spectra denotes the centroid of the Day 1 adults at 7.114 keV. (C) The proportional change in fractional Fe2+ contribution for spectrum in the aged (Day 1 versus Day 8 adults) and treated (Lip-1 and SIH, from panel B) specimens is indicated, along with 95% confidence interval. Changes in the first derivative of the Fe K-edge XANES (Figure 4—figure supplement 2) was used to infer variation in the intensity of the 1 s → 4 s and 1 s → 4 p transitions and the relative intensity of these features was then used to estimate the proportion of Fe2+ iron. (D) The proportional change in fractional Fe2+ contribution for Day 4 adults treated with (n = 4) and without acute glutathione depletion via DEM (n = 4) is indicated, along with 95% confidence interval.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Similarly, pooled spectra and first derivatives from 4-day-old adult wild types treated with (n = 4) and without (n = 4) DEM is shown in Fig C-D Changes in the first derivative of the Fe K-edge XANES reflect variation in the intensity of the 1 s → 4 s and 1 s → 4 p transitions. (A) Iron K-edge φXANES spectra (circles) determined by integrating 105 XFM micrographs acquired at energies spanning the iron absorption edge (7000–7455 eV). Shaded region represents 95 % CI; spectra offset for clarity. Shown are spectra for Day 1 adults, Day 8 adults, Day 8+Lip and Day 8+SIH groups. (B) The corresponding first derivative for spectra shown in A; spectra offset in the vertical for clarity. Darker shading (7.114–7.121 keV) marks the area under the curve attributed the 1 s → 4 s transition. The lighter shading (7.121–7.132 keV) marks the are under the curve attributed to the 1 s → 4 p transition. (C) Pooled spectra for Day 4 adults treated with and without DEM, and (D) their matching first derivatives, as described above.
+
 Higher levels of pro-ferroptotic Fe2+ might be compounded by a loss of glutathione. So, we also assessed changes in fractional Fe2+ induced by lethal glutathione depletion by DEM. φXANES of 4 day old wild type worms treated with DEM identified a marked increase in the Fe2+ fraction (Figure 4D; Figure 4—figure supplement 2C & D; Supplementary file 3), revealing the upper limit for tolerable Fe2+ fraction being about 0.3 of the total iron (Figure 4D). These results help to contextualize the observed increase in Fe2+ during normal aging also being about 0.3 of the total iron (Figure 4C), which was normalized to ≈0.2 by Lip-1 or SIH intervention.
 
-## Lifespan effects of ferroptosis inhibition or blocking iron accumulation
+### Lifespan effects of ferroptosis inhibition or blocking iron accumulation
 
 Since Fe2+ accumulates with aging and contributes to C. elegans frailty by executing cells before organismal death, we hypothesized that ferroptosis directly impacts on lifespan and may represent an underlying process that contributes to organismal aging. We found that treatment of C. elegans with Lip-1 markedly extended lifespan [Figure 5A and B; average ~70% increase in median lifespan (eight independent replicates; p<0.002), Supplementary file 4]. Dose response is shown in Figure 5—figure supplement 1A & B. An alternative ferroptosis inhibitor, ferrostatin (Dixon et al., 2012), was also examined, producing a significant but more modest median lifespan extension (Figure 5—figure supplement 1C). Targeting the accumulation of late life iron using SIH also resulted in a marked increase in median lifespan [Figure 5A and B; average ~100% median increase (eight independent replicates; p<0.0001), Supplementary file 4]. Dose response is shown in Figure 5—figure supplement 1D. Exposing C. elegans to 250 µM SIH as an iron complex (Fe(SIH)2NO3) neutralized the benefits of SIH on lifespan (Figure 5—figure supplement 1E), confirming that the rescue mechanism required SIH being free to ligate iron.
 
-## Lifespan increases are not due to temporal scaling
+![Figure 5.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig5-v1.jpg)
+
+**Figure 5.:** Treatment with both Lip-1 and SIH extend lifespan. (A) Representative Kaplan-Meier survival curve from C. elegans treated with vehicle control (Ctl, median survival 7 days, death events n = 88); Lip-1 (median survival 13 days, Log-rank test p<0.001, n = 103) and SIH (median survival 14 days, p<0.001, n = 71) at 25°C. (B) Survival curve derived from pooled data from all eight replicate experiments (Ctl n = 709, Lip-1 n = 809, and SIH n = 720; see Supplementary file 4) at 25°C. (C) Plot of hazard (mortality) rate against age at 25°C, derived from meta-analysis of pooled data (presented in B). Both SIH and Lip-1 alter mortality rates relative to control populations and are also distinct from each other. (see Supplementary file 5).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Median survival (Log-rank (Mantel-Cox) test: Control = 6 days; 25 μM Lip-1 = 6 days (p=0.07 ns); 100 μM Lip-1 = 6 days (p=0.006); 200 μM Lip-1 = 12 days (p<0.0001); 250 μM SIH = 13 days (p<0.0001) (B) Median survival (Log-rank (Mantel-Cox) test: Control = 7 days; 1 μM Lip-1 = 9 days (p=0.90 ns); 10 μM Lip-1 = 7 days (p=0.78 ns); 100 μM Lip-1 = 9 days (p<0.0001); 250 μM SIH = 13 days (p<0.0001) (C) Median survival (Log-rank (Mantel-Cox) test: Control = 10 days; 5 μM Fer-1 = 15 days (p=0.0047); 200 μM Fer-1 = 12 days (p=0.35 ns); 250 μM SIH = 18 days (p<0.0001) (D) Median survival (Log-rank (Mantel-Cox) test: Control = 12 days; 100 μM SIH = 17 days (p<0.0001); 250 μM SIH = 21 days (p<0.0001) (E) Median survival (Log-rank (Mantel-Cox) test: Control = 8 days; 125 μM Fe(SIH)2NO3, equimolar SIH = 8 days (p=0.51 ns); 250 μM SIH = 16 days (p<0.0001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** To determine whether the increased lifespan seen with SIH treatment could be explained solely by an antibiotic effect of iron reduction, nematodes were treated with ampicillin, with and without SIH co-administration. Even in the presence of ampicillin, SIH increased median lifespan by 6 days, similar to its benefits in the absence of ampicillin (median increase of 7 days), as shown in A. Bacterial Growth Assay: The effects of test compounds on growth of the OP50 E. coli feed was assayed using optical density at 600 nm (OD600). Using standard microtitre plates, replicate wells of 200 µL of sterile Luria broth were inoculated with 2 µL of an overnight OP50 culture in addition to the stated final concentrations of ampicillin (Amp), Lip-1 and SIH. OD600 measures were taken after 12 hr in an EnSpire (PerkinElmer) spectrophotometric plate reader preset to 37°C, with 30 s of 200 rpm orbital shaking every 10 min. Data were averaged across duplicate experiments, each with eight replicate wells per treatment where a baseline of Luria broth without an inoculate was subtracted. Results, shown in B, indicated that ampicillin at either 50 or 100 µg/mL completely suppressed bacterial growth. In contrast, neither Lip-1 nor SIH suppressed bacterial growth. (A) Administration of the antibiotic ampicillin and SIH; AMP = 50 mg / ml ampicillin. Median survival - Log-rank (Mantel-Cox) test: Control (Ctl) = 9 days; AMP = 15 days (p<0.0001); 250 mM SIH = 16 days (p<0.0001); 250 mM SIH + AMP = 21 days (p<0.0001). (B) Effects of compounds on growth of OP50 E. coli. Ampicillin at either 50 or 100 µg/mL completely suppressed bacterial growth. Lip-1 and SIH did not suppress growth.
+
+### Lifespan increases are not due to temporal scaling
 
 Lip-1 and SIH had distinct effects on aging, as shown by the lifespan curves in Figure 5. Treatment with Lip-1 primarily altered late life survival, while SIH extended mid-life with a squaring of the survival curve. Interventions that increase lifespan in C. elegans are not uncommon, but Stroustrup et al. recently demonstrated the great majority of longevity interventions, for example dietary and temperature alteration, oxidative stress, and genetic disruptions of the insulin/IGF-1 pathway (e.g. daf-2 and daf-16), heat shock factor hsf-1, or hypoxia-inducible factor hif-1, each alter lifespan by temporal scaling - an apparent stretching or shrinking of time (Stroustrup et al., 2016). For an intervention to extend lifespan by temporal scaling it must alter, to the same extent throughout adult life, all physiological determinants of the risk of death. In effect temporal scaling arises when the risk of death is modulated by an intervention acting solely on the rate constant associated with a single stochastic process. It is important to note that temporal scaling is determined by statistical analysis rather than subjective assessment, and also that reproducibility of results depends upon adequate sample size (Petrascheck and Miller, 2017).
 
@@ -91,9 +127,17 @@ The sample size in our experiment is much smaller than the lifespan machine expe
 
 Our results indicate that while iron accumulation may impact many processes that influence aging rate, ferroptosis inhibition predominantly reduces frailty rather than slows a global rate of aging. Notably, Stroustrup et al., 2016 identified only two other instances among the many lifespan interventions tested in C. elegans that modulated lifespan outside a temporal scaling model, namely altered feeding behaviour (eat-2 mutants) and mitochondrial dysfunction (nuo-6 mutants) (Stroustrup et al., 2016). Both these mutants express marked developmental variability and reduced fitness.
 
-## Preventing ferroptosis improves fitness and healthspan
+### Preventing ferroptosis improves fitness and healthspan
 
 Interventions that increase lifespan in C. elegans often do so at the detriment of fitness and healthspan (Jenkins et al., 2004; Walker et al., 2000). Adult body size can inform on fitness; reduced size may reflect a trade-off between longevity and fitness, as typically seen under dietary restriction where the cost of increased longevity can be lowered size, fertility and movement (Piper et al., 2011). Distinctly, SIH-treated animals grew substantially larger. Following one day of treatment all animals were of similar body length (Figure 6A & B). After 4 days and 8 days of intervention, adult SIH-treated animals were significantly longer compared to similarly aged controls (e.g. control 1440 ± 123 µm versus SIH 1696 ± 64 µm, means ± SD on Day 8, p<0.001). In addition, SIH induced an increase in body volume between Days 1 and 4, but not thereafter (Figure 6C). SIH-treated worms grew to greater volume than both control and Lip-1-treated worms at Day 4, indicating that preventing iron accumulation can improve animal robustness (for all comparisons see Supplementary file 6). Lip-1 had no effect on length or volume.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig6-v1.jpg)
+
+**Figure 6.:** In all panels, vehicle control (0.5% v/v DMSO, Ctl)-treated worms are shown in orange, Lip-1-treated (200 µM Lip-1) are green and SIH-treated (250 µM SIH) are blue.Significant differences between treatments are highlighted where * indicates p<0.05, ** indicates p<0.01 and *** indicates p<0.001. (A) Micrograph of an adult C. elegans on the first day of treatment (Day 0) and animals treated with Ctl, Lip-1 or SIH for eight days at 25°C (Day 8). Scale bar = 50 µm. (B) Estimates of adult body length (in µm), showing SIH- treated animals (blue) have longer average body length compared to age matched control (orange)or Lip-1 (green) treated populations (Kruskal-Wallis ANOVA: H(10) = 432.6, p<0.0001; see Supplementary file 6 for sample summary and pair-wise comparisons). Start (grey) represents the beginning population of L4/young adults grown from egg at 25°C for 48 hr prior to transfer to treatment plates. Each point represents an individual worm, with mean and error bars representing standard deviation (SD) (C) Estimated adult body volume (in pL), showing increased body volume with adult age for all groups (Kruskal-Wallis ANOVA: H(10) = 489, p<0.0001; see Supplementary file 6 for sample summary and pair-wise comparisons), with SIH treated animals having even greater body volume. Each point represents an individual worm, with mean ± SD. (D) Early fertility (first 24 hr) and total reproductive output are unaltered when vehicle control (Ctl)-treated cohorts are compared to Lip-1 or SIH-treated animals at 25°C. Each data point represents an estimate from a single C. elegans adult, with mean ± SD. Sample size: early fertility Ctl n = 25, Lip-1 n = 26, SIH n = 26; total Ctl n = 21, Lip-1 n = 17, SIH n = 19 (ANOVA: Early fertility F(2,74)=0.996, p=0.37; Total fertility F(2,57) = 4.89, p=0.011). (E) Estimates of maximum velocity achieved by aged and treated cohorts of C. elegans. Treatment with either Lip-1 or SIH attenuates the age-related decline in maximum velocity (Kruskal-Wallis ANOVA: H(7) = 298.5, p<0.0001; see Supplementary file 6 for sample summary and pair-wise comparisons). Each data point represents an estimate from a single C. elegans adult, with median ±interquartile range. Equivalent analyses of mean velocity and total distance travelled (and how these data correlate) are shown in Figure 6—figure supplement 1 and Supplementary file 6).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Movement parameters measured included maximum velocity (shown in Figure 6E), mean velocity and total distance travelled. The latter two datasets are represented in Figure 6-figure supplement A and B. Pooling all groups and ages reveals that all movement parameters (maximum velocity, mean velocity and distance travelled in 30 s) are all positively correlated, as shown in (C). (A) Estimates of mean velocity (mm s−1) achieved by aged and treated cohorts of C. elegans. (Grey = starting population, red = control, green = Lip-1-treated, blue = SIH-treated) Treatment with either Lip-1 or SIH attenuates the age-related decline in mean velocity (Kruskal-Wallis ANOVA: H(7) = 339.2, p<0.0001), see Supplementary file 6 for summary data and pair-wise comparisons). (B) Estimates of total distance travelled (in 30 s) by aged and treated cohorts of C. elegans. (Grey = starting population, red = control, green = Lip-1-treated, blue = SIH-treated) Treatment with either Lip-1 or SIH attenuates the age-related decline in distance travelled (Kruskal-Wallis ANOVA: H(7) = 340.6, p<0.0001)see Supplementary file 6 for summary data and pair-wise comparisons). C: Correlation of estimated movement parameters.
 
 We also examined whether the interventions altered early and total reproductive output when worms were treated from early adulthood/late L4 (as used in the lifespan experiments). Early fertility (first 24 hr) was not altered by either SIH or Lip-1 treatment (Figure 6D; p>0.4). Lip-1 treatment resulted in a small decrease in lifetime reproductive output (Figure 6D; p<0.05), but SIH had no effect. Early fertility in C. elegans is paramount with respect to Darwinian fitness (Jenkins et al., 2004; Walker et al., 2000), so the reduction in lifetime fertility with Lip-1 treatment is consistent with a mild deleterious effect in early adulthood.
 
@@ -119,13 +163,142 @@ Aging is the principal risk factor for many major human diseases including cance
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>Wild type</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>spe-9(hc88); rrf-3(b26)</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>TJ1060</td>
+      <td>temperature sensitive-sterile strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>zIs356 [Pdaf-16::daf-16a/b::gfp + rol-6(su1006)]</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>TJ356</td>
+      <td>DAF-16 reporter strain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>4-HNE protein adduct antibody (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat.#: AB5605</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tubulin antibody (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#: T6074</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thiobarbituric acid reactive substances (TBARS) assay kit</td>
+      <td>Caymen Chemical</td>
+      <td>Cat.#: 10009055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein assay kit</td>
+      <td>Pierce</td>
+      <td>Cat.#: 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diethyl maleate</td>
+      <td>Sigma-Aldrich</td>
+      <td>DEM Cat.#: D97703-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liproxstatin</td>
+      <td>Marcus Conrad (Helmholtz Zentrum München; initially) and subsequently ApexBio Tech LLC</td>
+      <td>Lip-1</td>
+      <td>N-[(3-chlorophenyl) methyl]-spiro[piperidine-4,2'(1'H)-quinoxalin]−3'-amine)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salicylaldehyde isonicotinoyl hydrazone</td>
+      <td>Des Richardson (University of Sydney)</td>
+      <td>SIH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeoPIXE 7.3, Dynamic Analysis</td>
+      <td>CSIRO</td>
+      <td></td>
+      <td>Ryan, 2000. Quantitative trace element imaging using PIXE and the nuclear microprobe. Int J Imag Syst Tech 11, 219–230.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ WormSizer plugin</td>
+      <td></td>
+      <td></td>
+      <td>Moore, B.T., Jordan, J.M., and Baugh, L.R. (2013). WormSizer: high-throughput analysis of nematode size and shape. PLoS One 8, e57142.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v7.0a, GraphPad Software</td>
+      <td></td>
+      <td></td>
+      <td>www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package flexsurv</td>
+      <td></td>
+      <td></td>
+      <td>rdocumentation.org/packages/flexsurv</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J, wrMTrck plugin</td>
+      <td></td>
+      <td></td>
+      <td>Nussbaum-Krammer, C.I., Neto, M.F., Brielmann, R.M., Pedersen, J.S., and Morimoto, R.I. (2015). J Vis Exp, 52321</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>propidium iodide</td>
+      <td>Life Technologies</td>
+      <td>P3566</td>
+      <td>0.25 mg/mL solution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Wild type (strain N2), the temperature sensitive-sterile strain TJ1060: spe-9(hc88); rrf-3(b26) and the DAF-16 reporter strain TJ356: zIs356 [Pdaf-16::daf-16a/b::gfp + rol-6(su1006)] were obtained from the Caenorhabditis Genetics Center. The wild type strain was maintained at 20°C on standard nematode growth media (NGM) (Brenner, 1974) and aged at 20°C or 25°C as required. TJ1060 was maintained at 16°C and also aged at 20°C or 25°C as required. TJ1060 was predominately used to remove the inconvenience of progeny production and can be regarded as a proxy for wild type.
 
-## Compounds
+### Compounds
 
-## Compounds used in this study include
+#### Compounds used in this study include
 
 ![Chemical structure 1.](https://cdn.elifesciences.org/articles/56580/elife-56580-fig8-v1.jpg)
 
@@ -135,59 +308,59 @@ Wild type (strain N2), the temperature sensitive-sterile strain TJ1060: spe-9(hc
 
 SIH precomplexed with iron as Fe(SIH)2NO3.
 
-## Glutathione depletion
+#### Glutathione depletion
 
 Diethyl maleate (DEM; Sigma-Aldrich) was added to neat DMSO and added to molten NGM at 55°C to a final concentration of 5, 10, 15 or 20 mM DEM and 0.5 % v/v DMSO. Plates were seeded with OP50 and used within 24 hr. As above, data were collected at 25 (±1) °C using the temperature sensitive-sterile strain TJ1060. A synchronous population was obtained by transferring egg-laying adults to fresh plates at 16°C for 2–3 hr. The adults were removed and the plates with eggs then transferred to 25°C to ensure sterility. After 48 hr at 25°C, when worms were at the late L4/young adult stage, 25–35 nematodes were transferred to fresh plates containing either vehicle control, 250 μM SIH, or 200 μM Lip-1 (all with 0.5 % v/v DMSO). Worms were aged at 25°C for a further 4 days and then transferred to DEM plates. Survival, determined by touch-provoked movement, was scored at 24 and 48 hr after exposure to DEM.
 
 Aging studies were also undertaken to determine changes with age of both survival after DEM exposure and basal glutathione levels. Initial populations were obtained as describe above, with worms aged on standard NGA plates. Note that here we refer to the age of adults as determined by the number of days following the last larval molt and therefore reflects the number of days of adulthood, not the time since egg.
 
-## Quantification of total glutathione
+### Quantification of total glutathione
 
 Measurement of total glutathione was based on established protocols and is based on a kinetic spectrophotometric assay using the reaction between GSH and 5,5′-dithio-bis (2-nitrobenzoic acid) (DTNB) measured at 412 nm (Caito and Aschner, 2015; Rahman et al., 2006). All reagents were freshly prepared prior to the assay and for each estimate 50 adults were collected in 200 µL of S-basal (Brenner, 1974) in 1.7 ml microfuge tubes. Animals were washed twice in S-basal, pelleted via centrifugation and total volume reduced to 20 µL. A 50 µL aliquot of Extraction Buffer was added, then the samples were frozen in Liquid N2 and store at −80°C until required. Extraction buffer consisted of 6 mg/mL 5-sulfosalicylic acid dehydrate, 0.1 % v/v Triton X-100 and Complete, EDTA-free Proteinase inhibitor cocktail (Roche) in KPE buffer (0.1 M potassium phosphate buffer and 5 mM EDTA at pH 7.5).
 
 Samples were homogenized with a Bioruptor Next Gen (Diagenode) bath sonicator, set on HIGH and cooled to 4°C, using 10 cycles of 10 s ON and 10 s OFF. Supernatant was collected following a 14K x g spin at 4°C. Assays were performed in 96 well microplates (clear polystyrene, flat-bottomed, Greiner bio-one), in a total volume of 200 µL per well. To each well was added 50 µL of lysate supernatant, 50 µL of milli-Q H2O and then 100 µL of GA buffer (NADPH 400 µM, glutathione reductase 1 U/mL and 0.3 mM DTNB in KPE buffer diluent). Reactions were incubated for 1–2 min at room temperature and then absorbance measured at 412 nm for 10 min with 1 min interval using a Powerwave plate spectrophotometer (BioTek). The rate of change in absorbance per minute is linearly proportional to the total concentration of GSH. Total GSH in the samples was interpolated from using linear regression from a standard curve of known GSH concentrations (0 to 1 µM) run in tandem. In parallel, the concentration of total protein per sample was also determined by a Bicinchoninic acid (BCA) assay (Pierce) using the manufacturers protocol. Total GSH estimates were then normalized for protein load, thus accounting for any size differences between populations. Within experiment results are presented as relative glutathione levels, where results are normalized to the mean of the starting population.
 
-## Lipid peroxidation
+### Lipid peroxidation
 
 Measurement of malondialdehyde (MDA) was performed using a Thiobarbituric acid reactive substances (TBARS) assay kit (10009055, Caymen Chemical) as per manufacturer instructions using reduced reaction volumes of 1 mL. For C. elegans samples with acute glutathione depletion, Day 1 adults were treated with and without 20 mM DEM for 6 hr at 25°C prior to collection. For aging, animals were aged at 25°C and treated with Lip-1 or SIH as previously described. Replicate samples were collected, washed twice in S-basal, pelleted by centrifugation. Following removal of excess buffer samples (~40 µL) were frozen in liquid-N2 and stored at −80°C until needed. Samples were then homogenized via a Bioruptor bath sonicator (Diagenode, set on ‘high power’ with 10 cycles of 10 s pulses with a 10 s pause between pulses, at 4°C), then centrifuged at 21,500 xg at 4°C for 30 min and the supernatant retained. The concentration of protein was determined using a BCA assay kit (Pierce) and equivalent aliquots of 20–25 µg total protein used for subsequent measurements.
 
 Analysis of Hydroxynonenal (4-HNE) protein adducts was also used as a proxy for lipid peroxidation. Duplicate samples of 50 and 200 worms were collected and washed twice in S-basal, pelleted by centrifugation and the supernatant discarded. These samples (~30 µL) were frozen in liquid-N2 and stored at −80°C until needed. To each sample an 10 µL 4x Bolt LDS sample buffer (Invitrogen) and 3 µL TCEP (Invitrogen) was added and the sample heated to 95°C for 10 min. Lysates were loaded onto NuPAGE 4–12% Bis-Tris acrylamide gels (1.0 mm, 10-well, Invitrogen), electrophoresed with MES running buffer and then transferred onto 0.45 µm PVDF membrane by electroblot using a Mini Blot module (Invitrogen). 4-HNE protein adducts were detected by an anti 4-HNE protein adduct antibody (1:2000, AB5605, Millipore) in Tris-buffer saline with 5% skim milk, and ECL (GE Healthcare). The membranes were stripped using a 1x ReBlot Strong Antibody Stripping Solution (Merck) for 15 min, reprobed for tubulin using an anti-Tubulin antibody (1:10,000, T6074, Sigma-Aldrich).
 
-## Visualization of cell death
+### Visualization of cell death
 
 The red-fluorescent propidium iodide (PI), was used to visualize dead cells within live C. elegans after DEM treatment and during aging. Populations were incubated for 24 hr at 25°C with PI (a 10 µL volume of 0.25 mg/mL solution added to the bacterial lawn on 50 mm NGM plates) prior to the described age or with concurrent exposure to 10 mM DEM (as described above) and PI. For aging experiments, animals were visualized at Day 6 and Day 8. Cohorts of live animals (i.e. showing spontaneous or touch-provoked movement) were isolated and mounted under glass coverslips on 2% agarose pads without anesthetic. Images were captured with a Leica DMI3000B inverted microscope, DsRed filter set and a DFC 3000G digital.
 
-## Liquid chromatography-inductively coupled plasma mass spectrometry
+### Liquid chromatography-inductively coupled plasma mass spectrometry
 
 Liquid chromatography was performed using established protocols (James et al., 2015). Briefly, samples of aged C. elegans were lysed using a Bioruptor Next Gen (Diagenode) bath sonicator set on HIGH and cooled to 4°C using 10 cycles of 10 s ON and 10 s OFF, in a 1:1 vol ratio of Tris-buffered saline (pH 8.0) with added proteinase inhibitors (EDTA-free; Roche). Sample homogenization was confirmed by microscopic inspection. Lysates were then centrifuged for 15 min at 175,000 g at 4°C. The supernatant was removed and total protein concentration in the soluble fraction was determined using a NanoDrop UV spectrometer (Thermo Fisher Scientific) before being transferred to standard chromatography vials with polypropylene inserts (Agilent Technologies) and kept at 4°C on a Peltier cooler for analysis. Size exclusion chromatography-inductively coupled plasma-mass spectrometry was performed using an Agilent Technologies 1100 Series liquid chromatography system with a BioSEC 5 s column (5 μm particle size, 300 Å pore size, I.D. 4.6 mm, Agilent Technologies) and 7700x Series ICP-MS as previously described (Hare et al., 2016b). A buffer of 200 mM NH4NO3 was used for all separations at a flow rate of 0.4 mL min−1. A total of 50 µg of soluble protein was loaded onto the column by manually adjusting the injection volume for each sample. Mass-to-charge ratios (m/z) for phosphorus (31) and iron (56) were monitored in time resolved analysis mode.
 
 Plots of the mean (± standard deviation) of three independent biological replicates are shown. Integration of the three major peaks was performed using Prism (ver. seven for Mac OS X, Graphpad).
 
-## X-ray fluorescence microscopy
+### X-ray fluorescence microscopy
 
-## Sample preparation - Elemental mapping
+#### Sample preparation - Elemental mapping
 
 Specimens were prepared for XFM using previously described protocols (Hare et al., 2016a; James et al., 2013). Briefly, adult C. elegans were removed from NGM, washed four times in excess S-basal (0.1 M NaCl; 0.05 M KHPO4 at pH 6.0), briefly in ice-cold 18 MΩ resistant de-ionized H2O (Millipore) and twice in ice-cold CH3COONH4 (1.5 % w/v). Samples were transferred onto 0.5 μm-thick silicon nitride (Si3N4) window (Silson), excess buffer wicked away and then the slide was frozen in liquid nitrogen (N2)-chilled liquid propane using a KF-80 plunge freezer (Leica Microsystems). The samples were lyophilised overnight at −40°C and stored under low vacuum until required.
 
-## Elemental mapping
+### Elemental mapping
 
 The distribution of metals was mapped at the X-ray Fluorescence Microscopy beamline at the Australian Synchrotron (Paterson et al., 2011) using the Maia detector system (Kirkham et al., 2010). The distribution of elements with atomic number < 37 were mapped using an incident beam of 15.6 keV X-rays. This incident energy allowed clear separation of X-ray fluorescence (XRF) peaks from the relatively intense elastic and inelastic scatter. The incident beam (~1.71 109 photons s−1) was focussed to approximately 2 × 2 μm2 (H × V, FWHM) in the sample plane and the specimen was continuously scanned through focus (1 mm sec−1). The resulting XRF was binned in 0.8 μm intervals in both the horizontal and vertical giving virtual pixels spanning 0.64 μm2 of the specimen probed with a dwell time of 8 μsec. XRF intensity was normalized to the incident beam flux monitored with a nitrogen filled ionization chamber with a 27 cm path length placed upstream of the focusing optics. Three single-element thin metal foils of known areal density (Mn 18.9 μg cm−2, Fe 50.1 μg cm−2 and Pt 42.2 μg cm−2, Micromatter, Canada) were used to calibrate the relationship between fluorescence flux at the detector and elemental abundance. Dynamic Analysis, as implemented in GeoPIXE 7.3 (CSIRO), was used to deconvolve the full XRF spectra at each pixel in the scan region to produce quantitative elemental maps (Ryan, 2000). This procedure includes a correction for an assumed specimen composition and thickness, in this case 30 μm of cellulose. Though unlikely to exactly match the actual sample characteristics, deviations from these assumptions are not significant for the results presented in this study as the effects of beam attenuation and self-absorption on calcium and iron XRF are negligible for a dried specimen of this type and size (Davies et al., 2015).
 
-## Elemental quantification and image analysis
+### Elemental quantification and image analysis
 
 Analysis of elemental XRF maps was performed using a combination of tools native to GeoPIXE and ImageJ (Schneider et al., 2012). Incident photons inelastically scattered (Compton scatter) from the sample detail the extent and internal structure of individual C. elegans. The differential scattering power of the specimens and substrate allowed individual animals (or parts thereof) to be identified as regions of interest (ROI; Supplementary file 7) facilitating analysis of elemental content on a ‘per worm’ basis. This segmentation of each elemental map was achieved using the histogram of pixel intensities from Compton maps to locate the clusters within the image. ROIs composed of <10,000 pixels were deemed to be so small that their elemental content was not reflective of the elemental content of whole animals and so these were excluded from the analysis. The ‘non-worm’ region of each scan was used to calculate the value specimen elemental content was distinguishable from background noise, that is the critical value as defined by Kadachi and Al-Eshaikh, 2012. The background corrected elemental maps were used to establish the areal densities and the total mass of each element associated with individual ROIs.
 
-## Sample preparation - φXANES Imaging
+### Sample preparation - φXANES Imaging
 
 Adult C. elegans were removed from NGM, washed four times in excess ice-cold S-basal (0.1 M NaCl; 0.05 M KHPO4 at pH 6.0). Samples were transferred onto 0.5 μm-thick silicon nitride (Si3N4) window (Silson), excess buffer wicked away and then the slide was frozen in situ under a laminar stream of 100 °K dry nitrogen (N2) gas.
 
-## φXANES imaging
+### φXANES imaging
 
 The beam energy was selected using a Si(311) double-crystal monochromator with a resolution of ∼0.5 eV. 𝜑XANES imaging was achieved by recording Fe XRF at 106 incident energies spanning the Fe K-edge (7112 eV). Measurement energy interval was commensurate with anticipated structure in the XANES:
 
 As for XFM, 𝜑XANES measurements used a beam spot ~2 × 2 μm but data were recorded using continuous scanning at 0.2 mm sec−1 (binned at 2 μm intervals). Transit time through each virtual pixel was 10 ms and the incident X-ray intensity at 7455 eV was ~1.67 ×1010 photons s−1. These imaging parameters gave a total dose associated with the 𝜑XANES measurement estimated at ~5 MGy. This value is commensurate with doses typically delivered during bulk X-ray absorption spectroscopy.
 
-## 𝜑XANES analysis
+### 𝜑XANES analysis
 
 The XANES spectra from an iron foil (50.1 μg cm−2, Micromatter Canada) was measured to monitor the energy calibration of the beamline. The maxima of the first peak in the derivative spectra of the iron foil was subsequently defined as 7112.0 eV. The energy stability of beamline has been determined at <0.25 eV over 24 hr making energy drift over the course of a scan negligible. Consistency of the measured edge positions in conjunction with stability of beam position and flux recorded in ion chambers upstream the specimen position provide confidence that energy stability was high through the duration of the experiment. Small position drifts were aligned by cross-correlation of the calcium map which remains essentially constant throughout the energy series.
 
@@ -195,7 +368,7 @@ XANES probes the density of states on the absorbing atom and reveals electronic 
 
 As all points on the specimen represent a heterogenous mixture of iron binding species the resulting XANES spectra are admixtures with contributions from all of these components. The technical particulars of the XFM beamline (being primarily designed for elemental mapping) are not optimised for high resolution spectroscopy and our XANES spectra are relatively sparse. For iron K-edge XANES the abrupt increase in absorption coefficient at the critical threshold obscures the presence of 1 s → 4 s and 1 s → 4 p electronic transitions. Berry et al., 2003 demonstrated that the relative intensity of these transitions provides the proportional contribution of Fe2+ and Fe3+ to the XANES and can be assessed by interrogating the first derivative of the XANES spectra.
 
-## Lifespan determination
+### Lifespan determination
 
 Lifespan was measured using established protocols (James et al., 2015; McColl et al., 2010). SIH was dissolved in neat dimethyl sulfoxide (DMSO; Sigma-Aldrich) then added to the molten NGM at 55°C (to a final concentration of 250 μM SIH in 0.5 % v/v DMSO). Lip-1 was dissolved in neat DMSO then added to the molten NGM at 55°C (to a final concentration of 200 μM Lip-1 in 0.5 % v/v DMSO). Media containing equivalent vehicle alone (0.5 % v/v DMSO) was used for comparison. Standard overnight culture of the Escherichia coli (E. coli) strain OP50 was used as the food source.
 
@@ -205,17 +378,17 @@ C. elegans are bacteriophores and the E. coli (OP50) monoxenic diet can colonize
 
 It is well documented that differences are observed between independent measures of lifespan, with micro-environmental factors such as minor temperature fluctuations potentially resulting differences in median and maximum lifespan between replicates (Lucanic et al., 2017). After determining the optimal doses of 250 μM SIH and 200 μM Lip-1, respectively, cohorts of nematodes were compared in eight independent replicates. As the number of worms measured is known to influence the likelihood of accurately observing differences in lifespan (Petrascheck and Miller, 2017), the starting populations for all treatments within experiments were in excess of 70 individuals. The median and maximum lifespans observed of control and treated populations for these eight replicates are shown in Supplementary file 4. As can be seen in this table, the median lifespan of treated populations was always greater than that of control populations, however the magnitude of the difference varied between experiments, with the median lifespan of control populations ranging from 7 to 9 days.
 
-## Body size analysis
+### Body size analysis
 
 A developmentally synchronous population, derived from eggs laid over a 2 hr window, were cultured on NGA media at 25°C for 48 hr, and then as young adult worms were transferred onto three treatment plates for an additional 24 hr. The treatment plates included NGA with 0.5% (v/v) DMSO (vehicle control, Ctl), 250 µM SIH, or 200 µM Lip-1 (as described above).
 
 Cohorts of approximately 100 animals were transferred into a 1.5 ml centrifuge tube containing 400 µL S-basal. Following a brief centrifugation excess S-basal was removed leaving the animals suspended in 50 µL. Animals were euthanised and straightened by a 15 s exposure to 60°C (using a heated water bath). Samples were then mounted between glass slides and a cover slip and immediately imaged. Micrographs were collected using a Leica M80 stereomicroscope and Leica DFC290 HD 3 MP) digital camera. Pixel sizes were defined using a calibrated 25 µm grid slide (Microbrightfield, Inc). Size and shape metrics were extracted from brightfield images were analysed using the WormSizer plugin (Moore et al., 2013) for ImageJ.
 
-## Fertility analysis
+### Fertility analysis
 
 Wild type (N2) adults (4 day post egg lay) were transferred to fresh plates for 30 min at 20°C to establish a developmentally synchronous population. Adult nematodes were then removed, and eggs were then transferred to 25°C. As with the survival analyses, after 48 hr at 25°C, when worms were at the late L4/young adult stage individual nematodes were transferred to plates containing vehicle control (0.5 % v/v DMSO), 250 μM SIH, or 200 μM Lip-1. After 24 hr, adult worms were transferred to fresh plates and transferred daily until the end of the fertile period. After allowing progeny to develop for 2 days at 20°C, they were then counted to determine daily and total fertility. Early fertility is determined by the number of progeny laid in the first 24 hr period.
 
-## Movement
+### Movement
 
 A developmentally synchronous population, derived from eggs laid over a 2 hr window, were cultured on NGA media at 25°C for 48 hr, and then as young adult worms were transferred onto three treatment plates for an additional 24 hr. The treatment plates included NGM + 0.5% (v/v) DMSO (vehicle control, Ctl), NGM + 250 µM SIH, and NGM + 200 µM Lip-1 (as described above).
 
@@ -223,21 +396,21 @@ Single worms were transferred to a 55 mm NGA assay plate devoid of a bacterial l
 
 The maximum velocity achieved was expressed as mm per second (as derived from the distance between displaced centroids per second). Additional metrics of movement were determined including mean velocity (mm s−1) and (total) distance travelled (mm). These variables were collated in Prism (v7.0a GraphPad Software) and presented as a scatter plot with medians and interquartile range.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Areal density and total iron analysis
+#### Areal density and total iron analysis
 
 Areal iron and total body iron data were assessed for normality using a D’Agostino and Pearson test (see Supplementary file 2). Based on this analysis a one-way ANOVA was performed followed by a Sidak’s multiple comparisons test (as implemented by PRISM; see Supplementary file 2).
 
-## Standard lifespan analysis
+#### Standard lifespan analysis
 
 Kaplan–Meier survival curves were generated and compared via non-parametric log rank tests (Prism v7.0a, GraphPad Software).
 
-## Testing for departure from temporal rescaling
+#### Testing for departure from temporal rescaling
 
 Following the recently published results of Stroustrup et al., 2016, and using their supplied code, we determined whether the results observed with both the SIH and Lip-1 interventions were due to temporal scaling of aging. A modified Kolmogorov-Smirnov (K-S) test was applied to the residuals from a replicate-specific accelerated failure time (AFT) model fitted according to the Buckley-James method that uses a nonparametric baseline hazard function. The function bj in R package rms was used to fit the replicate-specific model with interventions as categorical independent variables. We used the same approach for testing whether the temperature difference results in simple temporal rescaling, with the only difference being using temperature rather than intervention as categorical independent variable in the AFT model. Full details of these analyses are included in Supplementary file 5.
 
-## Characterizing departure from temporal rescaling
+#### Characterizing departure from temporal rescaling
 
 Parametric survival models with Weibull baseline hazards and Gamma frailty were fitted to replicate-specific data using the R package flexsurv. A likelihood ratio test was used to compare models that assume simple temporal rescaling to models that allow varying degrees of departure from temporal rescaling. The best model for each replicate was selected using a likelihood ratio test and the goodness of fit (GOF) of the best model is evaluated using a chi-square GOF test. To combine data across different replicates, we performed fixed-effect and random-effect meta-analyses for each parameter in the best model (Supplementary file 5). Briefly, the fixed-effect meta-analysis estimates were derived using Inverse Variance Weighting (IVW) in which the estimates from each replicate were weighted by the inverse of their variance estimates. The meta-analysis estimates were then calculated simply as the weighted average of estimates from all replicates. The fixed-effect meta-analysis assumes that there is insignificant variation between the estimates of the same parameter across different replicates. The random-effect meta-analysis also derives the estimates by assigning weights to estimates from each replicate, but in this case the weights take into account the variation of estimates across replicates.
 
@@ -245,26 +418,26 @@ The fixed-effects and random-effects meta-analysis estimates are quite similar a
 
 One notable pattern shown in Supplementary file 5 is that for nearly all replicates, there is more heterogeneity due to unobserved factors among the control worms, as indicated by the negative Δlog(σ2) parameter estimates for Lip-1 and SIH data. This heterogeneity is also reflected in a de-acceleration of the hazard function for control worms beyond 7–8 days. This de-acceleration of the hazard function is the main contributor to the crossing behaviour we observe when comparing the survival functions, and it is what causes a violation of the simple temporal rescaling assumption.
 
-## Survival during GSH depletion
+### Survival during GSH depletion
 
 For survival with increasing DEM dose response and protection by compounds (Lip-1 and SIH), data were plotted as fraction of animal alive with upper and lower 95% confidence interval, using the Wilson ‘score’ method (Wilson, 1927) using asymptotic variance (Newcombe, 1998) and fitted with a sigmoidal curve (Prism). Pairwise comparisons of treated groups versus control at each concentration of DEM was determined using the N-1 chi-squared test (Campbell, 2007; Richardson, 2011).
 
-## Fertility
+### Fertility
 
 Differences in fertility (i.e. early and total reproductive output) were assessed using an ordinary one-way analysis of variance (ANOVA), followed by a Tukey’s multiple comparison test (as implemented by Prism v7.0a, GraphPad Software).
 
-## Body length and volume analysis
+### Body length and volume analysis
 
 Data of estimated adult body length and volume were initially assessed for normality using a D’Agostino and Pearson test (see Supplementary file 6). Based on this analysis, a nonparametric Kruskal-Wallis Analysis of Variance (ANOVA) was performed followed by a Dunn–Šidák test for multiple comparisons (as implemented by Prism v7.0a, GraphPad Software; Supplementary file 6).
 
-## Movement analysis
+### Movement analysis
 
 Data of estimated maximum velocity were initially assessed for normality (see Supplementary file 6). Based on this analysis a nonparametric Kruskal-Wallis ANOVA was performed followed by a Dunn–Šidák test for multiple comparisons (as implemented by PRISM; Supplementary file 6). Mean velocity and total distance travelled were also determined (Figure 6—figure supplement 1A & B). Results summaries and comparisons between treatments are shown in Supplementary file 6. The data for the three movement parameters were combined across treatments and ages to determine the relationship between the estimated parameters, all were found to be positively correlated (Figure 6—figure supplement 1C).
 
-## Cell death analysis
+### Cell death analysis
 
 Differences between the proportion of live animals with fluorescently labelled nuclei in control versus Lip-1 and SIH treatment, either aged or exposed to DEM, were compared using a z-test.
 
-## Type I error for statistical hypothesis testing
+### Type I error for statistical hypothesis testing
 
 Unless otherwise stated, all statistical tests are conducted with type I error set at 0.05.

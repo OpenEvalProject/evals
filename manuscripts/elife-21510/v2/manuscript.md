@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.21510.001 The DEAH-box helicase Prp43 is a key player in pre-mRNA splicing as well as the maturation of rRNAs. The exact modus operandi of Prp43 and of all other spliceosomal DEAH-box RNA helicases is still elusive. Here, we report crystal structures of Prp43 complexes in different functional states and the analysis of structure-based mutants providing insights into the unwinding and loading mechanism of RNAs. The Prp43•ATP-analog•RNA complex shows the localization of the RNA inside a tunnel formed by the two RecA-like and C-terminal domains. In the ATP-bound state this tunnel can be transformed into a groove prone for RNA binding by large rearrangements of the C-terminal domains. Several conformational changes between the ATP- and ADP-bound states explain the coupling of ATP hydrolysis to RNA translocation, mainly mediated by a β-turn of the RecA1 domain containing the newly identified RF motif. This mechanism is clearly different to those of other RNA helicases. DOI: http://dx.doi.org/10.7554/eLife.21510.001
+The DEAH-box helicase Prp43 is a key player in pre-mRNA splicing as well as the maturation of rRNAs. The exact modus operandi of Prp43 and of all other spliceosomal DEAH-box RNA helicases is still elusive. Here, we report crystal structures of Prp43 complexes in different functional states and the analysis of structure-based mutants providing insights into the unwinding and loading mechanism of RNAs. The Prp43•ATP-analog•RNA complex shows the localization of the RNA inside a tunnel formed by the two RecA-like and C-terminal domains. In the ATP-bound state this tunnel can be transformed into a groove prone for RNA binding by large rearrangements of the C-terminal domains. Several conformational changes between the ATP- and ADP-bound states explain the coupling of ATP hydrolysis to RNA translocation, mainly mediated by a β-turn of the RecA1 domain containing the newly identified RF motif. This mechanism is clearly different to those of other RNA helicases.
 
 ## Introduction
 
@@ -34,123 +34,570 @@ So far, three crystal structures of Prp43 in the post-catalytic ADP-bound state 
 
 ## Results
 
-## Crystal structure of Prp43 with bound RNA in an active state
+### Crystal structure of Prp43 with bound RNA in an active state
 
-In order to overcome the lack of crystal structures of DEAH-box helicases in an active state, we crystallized Prp43 in the presence of the non-hydrolysable ATP-analog ADP•BeF
+In order to overcome the lack of crystal structures of DEAH-box helicases in an active state, we crystallized Prp43 in the presence of the non-hydrolysable ATP-analog ADP•BeF3- as well as a U16-RNA. For these crystallization approaches, an N-terminally truncated version of Prp43 from C. thermophilum was used (ctPrp43ΔN), which lacks the first 60 amino acids (Figure 1a). Previously, we already demonstrated that this truncated ctPrp43 variant is fully capable of replacing its yeast ortholog in spliceosome disassembly assays (Tauchert et al., 2016). Crystals of ctPrp43ΔN•ADP•BeF3- in the presence of the U16-RNA were obtained in the space group P6122 and diffracted up to 2.62 Å. In addition to the ADP•BeF3- and a central magnesium ion at the active site, seven out of the 16 nucleotides of the RNA as well as one additional phosphate group were traceable in the electron density (for an omit map of the RNA see Figure 1—figure supplement 1a). Hence, this complex is referred to here as ctPrp43ΔN•U7•ADP•BeF3-. The refinement of this complex converged at Rwork and Rfree values of 19.70% and 22.97% (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig1-v2.jpg)
 
-**Figure 1.:** 7-RNA and the ATP-analog ADP•BeF3-.(a) Domain overview of ctPrp43. The bottom bar indicates the N-terminally truncated construct (ΔN, 61–764) used for crystallization. (b) Overall structure of ctPrp43ΔN•U7•ADP•BeF3-. Domains are colored according to a and the bound U7-RNA is shown in gray with two alternative conformations for nucleotides U1-U3. The ADP•BeF3- is bound in the cleft between the RecA domains. (c) Close-up of the bound U7-RNA. Residues involved in interactions are labeled according to the wild-type ctPrp43 sequence. The 5’ and 3’ end of the RNA is indicated. (d) Cross-section of the Prp43 RNA-binding tunnel. Prp43 is shown in surface representation and the RNA in ball-and-sticks mode. (e) Schematic figure of the Prp43-RNA interactions. Residues which interact with the RNA via their main chain are shown as triangles and residues which exhibit side chain interactions are presented as ellipses. The coloring of the residues corresponds to a. The alternative conformation of the first three nucleotides is shown light gray. Stacking interactions are highlighted by double lines and polar interactions by dotted lines.DOI: http://dx.doi.org/10.7554/eLife.21510.002
+**Figure 1.:** (a) Domain overview of ctPrp43. The bottom bar indicates the N-terminally truncated construct (ΔN, 61–764) used for crystallization. (b) Overall structure of ctPrp43ΔN•U7•ADP•BeF3-. Domains are colored according to a and the bound U7-RNA is shown in gray with two alternative conformations for nucleotides U1-U3. The ADP•BeF3- is bound in the cleft between the RecA domains. (c) Close-up of the bound U7-RNA. Residues involved in interactions are labeled according to the wild-type ctPrp43 sequence. The 5’ and 3’ end of the RNA is indicated. (d) Cross-section of the Prp43 RNA-binding tunnel. Prp43 is shown in surface representation and the RNA in ball-and-sticks mode. (e) Schematic figure of the Prp43-RNA interactions. Residues which interact with the RNA via their main chain are shown as triangles and residues which exhibit side chain interactions are presented as ellipses. The coloring of the residues corresponds to a. The alternative conformation of the first three nucleotides is shown light gray. Stacking interactions are highlighted by double lines and polar interactions by dotted lines.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** 7-RNA from the ctPrp43ΔN•U7•ADP•BeF3- complex structure and of the active site of ctPrp43ΔN•ADP•BeF3-(HR) (Figure 2a).(a) |Fo-Fc| omit map of nucleotides U3-U7 at 3σ level. The complete RNA molecule was omitted for map calculation. Coloring according to Figure 1a. (b) The ADP•BeF3-, the Mg2+ ion and five water molecules at the active site were omitted during map calculation. The |Fo-Fc| map is shown at 3σ. Coloring according to Figure 6a.DOI: http://dx.doi.org/10.7554/eLife.21510.003
+**Figure 1—figure supplement 1.:** (a) |Fo-Fc| omit map of nucleotides U3-U7 at 3σ level. The complete RNA molecule was omitted for map calculation. Coloring according to Figure 1a. (b) The ADP•BeF3-, the Mg2+ ion and five water molecules at the active site were omitted during map calculation. The |Fo-Fc| map is shown at 3σ. Coloring according to Figure 6a.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 7-RNA in the ctPrp43ΔN•U7•ADP•BeF3- complex structure.Coloring according to Figure 1a. Nucleotides U1-U3 are present in two alternative conformations (A and B) which exhibit after crystallographic refinement an occupancy of 54% and 46%, respectively. The first nucleotide of each conformation is labeled.DOI: http://dx.doi.org/10.7554/eLife.21510.004
+**Figure 1—figure supplement 2.:** Coloring according to Figure 1a. Nucleotides U1-U3 are present in two alternative conformations (A and B) which exhibit after crystallographic refinement an occupancy of 54% and 46%, respectively. The first nucleotide of each conformation is labeled.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** B-factors of the U7-RNA in the ctPrp43ΔN•U7•ADP•BeF3- complex structure.B-factors of the bound RNA range from 37 to 159 Å². The B-factors of U1 to U3 are clearly elevated compared to U4 to U7.DOI: http://dx.doi.org/10.7554/eLife.21510.005
+**Figure 1—figure supplement 3.:** B-factors of the bound RNA range from 37 to 159 Å². The B-factors of U1 to U3 are clearly elevated compared to U4 to U7.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** (a) Interactions between NS3 HCV•ADP•BeF3- (PDBid: 3o8r) and the bound U8-RNA are shown. Polar interactions are presented as dotted lines and stacking interactions as double lines. Residues which interact via their main chain are depicted as triangles and residues which interact with their side chain are shown as ellipses. RecA1 domain residues are labeled in green, RecA2 residues in purple and Domain 3 residues in blue. The 5’ and 3’ end of the RNA is labeled according to convention. Structurally conserved interactions (SCI) between main chain amides and the RNA which are also present in Prp43 are indicated as well as the conserved threonine side chain interactions from motif Ib and V. (b) Depiction of the MLE•ADP•AlF4- (PDBid: 5aor) and U10-RNA interaction network. Residues from the RecA1 are shown in green, RecA2 residues in purple, ratchet-like domain residues in blue and residues which are located in the OB-fold are presented in orange. Abbreviations were used as introduced in a. The first three nucleotides (U1–U3) present in the crystal structure of MLE were omitted in this figure, since these interactions are neither conserved in Prp43 nor in NS3 HCV.DOI: http://dx.doi.org/10.7554/eLife.21510.006
+**Figure 1—figure supplement 4.:** (a) Interactions between NS3 HCV•ADP•BeF3- (PDBid: 3o8r) and the bound U8-RNA are shown. Polar interactions are presented as dotted lines and stacking interactions as double lines. Residues which interact via their main chain are depicted as triangles and residues which interact with their side chain are shown as ellipses. RecA1 domain residues are labeled in green, RecA2 residues in purple and Domain 3 residues in blue. The 5’ and 3’ end of the RNA is labeled according to convention. Structurally conserved interactions (SCI) between main chain amides and the RNA which are also present in Prp43 are indicated as well as the conserved threonine side chain interactions from motif Ib and V. (b) Depiction of the MLE•ADP•AlF4- (PDBid: 5aor) and U10-RNA interaction network. Residues from the RecA1 are shown in green, RecA2 residues in purple, ratchet-like domain residues in blue and residues which are located in the OB-fold are presented in orange. Abbreviations were used as introduced in a. The first three nucleotides (U1–U3) present in the crystal structure of MLE were omitted in this figure, since these interactions are neither conserved in Prp43 nor in NS3 HCV.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ctPrp43ΔN•U7•ADP•BeF3-</th>
+      <th>ctPrp43ΔN•ADP•BeF3-(HR)</th>
+      <th>ctPrp43ΔN•ADP•BeF3-(LR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDBid</td>
+      <td>5lta</td>
+      <td>5ltj</td>
+      <td>5ltk</td>
+    </tr>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P6122</td>
+      <td>P212121</td>
+      <td>P65</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>106.39, 106.39, 356.70</td>
+      <td>88.83, 105.64, 119.05</td>
+      <td>184.34, 184.34, 82.32</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 120.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.56 – 2.62 (2.70 – 2.62)</td>
+      <td>79.02 – 1.78 (1.89 – 1.78)</td>
+      <td>92.17 – 3.24 (3.39 – 3.24)</td>
+    </tr>
+    <tr>
+      <td>Rmeas (%)</td>
+      <td>5.9 (90.3)</td>
+      <td>7.2 (123.5)</td>
+      <td>9.8 (76.2)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>22.16 (1.85)</td>
+      <td>14.88 (1.64)</td>
+      <td>14.65 (2.26)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>99.9 (65.2)</td>
+      <td>99.9 (61.9)</td>
+      <td>99.8 (63.8)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.5 (86.8)</td>
+      <td>99.6 (98.8)</td>
+      <td>98.8 (94.9)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>5.14 (5.34)</td>
+      <td>4.71 (4.66)</td>
+      <td>4.00 (3.59)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.56 – 2.62</td>
+      <td>67.99 – 1.78</td>
+      <td>92.17 – 3.24</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>36887</td>
+      <td>107276</td>
+      <td>25304</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree</td>
+      <td>19.70/22.97</td>
+      <td>17.67/19.88</td>
+      <td>18.22/21.78</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>5605</td>
+      <td>5730</td>
+      <td>5622</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>204</td>
+      <td>/</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Ligand / Ion</td>
+      <td>37</td>
+      <td>105</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>52</td>
+      <td>688</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>B-factors(Å²)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>72.83</td>
+      <td>34.41</td>
+      <td>88.87</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>88.65</td>
+      <td>/</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Ligand / Ion</td>
+      <td>55.04</td>
+      <td>47.83</td>
+      <td>83.89</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>60.51</td>
+      <td>44.29</td>
+      <td>62.19</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.0028</td>
+      <td>0.0041</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.78</td>
+      <td>0.87</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>95.98</td>
+      <td>97.34</td>
+      <td>96.28</td>
+    </tr>
+    <tr>
+      <td>Outlier</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses are for the highest resolution shell._
 
 By this ctPrp43ΔN•U7•ADP•BeF3- complex structure (Figure 1b–1e), insights into the sequence-unspecific RNA-binding mechanism of a genuine DEAH-box helicase were obtained. ctPrp43 consists of six different domains: an N-terminal extension (residues 1–96), the RecA1 (97–273) and RecA2 (274–458) domains, and the C-terminal domains which were assigned as degenerate winged helix domain (459–526), ratchet-like domain (527–640) and oligosaccharide binding-fold domain (641–764) (Walbott et al., 2010; He et al., 2010).
 
 The RecA-like domains and the C-terminal domains appear to be stably associated by multiple interactions and form a tunnel inside the Prp43 molecule (Figure 1d) which is the binding site of the U7-RNA. The 5’ end of the RNA is located at the RecA2 domain and the 3’ RNA end is situated at the RecA1 domain. For the first three nucleotides at the 5’ end (U1–U3) two alternative conformations are observed (Figure 1—figure supplement 2). The structure reveals the basis for the sequence-independent RNA binding of Prp43 which is in line with previous biochemical data (Fourmann et al., 2016b; Bohnsack et al., 2009; Tanaka and Schwer, 2006).
 
-## Prp43 binds RNA in a sequence-independent fashion
+### Prp43 binds RNA in a sequence-independent fashion
 
 Interactions between Prp43 and the U7-RNA are sparsely present. Depending on which of the two alternative RNA conformations is analyzed, only 11 or 13 hydrogen bonds and ionic interactions between the RNA and Prp43 can be detected (Figure 1c and e). Most of these interactions are formed between the sugar-phosphate backbone of the RNA and the RecA1, RecA2 or the ratchet-like domain. On the contrary, the uracil moieties do not interact with the helicase with the exception of a hydrogen bond of U3 with the Ser 555 main-chain carboxyl group from the ratchet-like domain and a base stack between the U1 and Arg 562 which only occurs in one of the two alternative conformations. These Prp43-RNA interactions are, however, by far not enough for sequence-specific binding of a substrate RNA to Prp43. In addition to the unspecific RNA-binding mode of Prp43, RNA binding appears to be transient, as only four nucleotides are more tightly associated with Prp43. In the crystal structure presented, this corresponds to the nucleotides U4 to U7. At the 5’ end, the first three nucleotides are weakly bound by Prp43 since only 2 (conf. B) and 3 (conf. A) interactions are detectable, respectively. The weak interaction is additionally highlighted by elevated B-factors for this RNA region compared to the four other nucleotides (see Figure 1—figure supplement 3). After the first two nucleotides, a kink is introduced in the RNA backbone and the number of Prp43-RNA interactions gets more numerous and more intense. At the 3’end, the RNA does not interact with Prp43 as soon as the end of the RNA-binding tunnel is reached. The phosphate group of the eighth nucleotide is exactly located at the end of this tunnel. Compared to the nucleotides U4 to U7, this phosphate exhibits elevated B-factors. The U8 nucleoside was not defined in the electron density map and thus might indicate the presence of multiple RNA conformations at this site out of which none is clearly favorable due the lack of interactions with Prp43.
 
 Having determined the crystal structure of ctPrp43ΔN•U7•ADP•BeF3- another question concerning Prp43’s modus operandi did arise which is directly linked to its cellular role. In the context of pre-mRNA splicing or rRNA biogenesis, Prp43 has to bind to or to be released from short singled-stranded RNA stretches within larger folded RNAs or RNPs. In the light of the fact that the RNA-binding site of Prp43 is located inside a tunnel, RNA loading appears to be non-trivial and thus requires further illumination.
 
-## Crystal structure of Prp43 in the ATP-bound state
+### Crystal structure of Prp43 in the ATP-bound state
 
-In pursuance of analyzing how Prp43 binds to ssRNA regions within folded RNAs, we targeted at determining the pre-catalytic state of Prp43 before RNA binding. For this purpose, we subjected ctPrp43ΔN to crystallization trials in the presence of the ATP analog ADP•BeF
+In pursuance of analyzing how Prp43 binds to ssRNA regions within folded RNAs, we targeted at determining the pre-catalytic state of Prp43 before RNA binding. For this purpose, we subjected ctPrp43ΔN to crystallization trials in the presence of the ATP analog ADP•BeF3-. The ctPrp43ΔN•ADP•BeF3- complex crystallized in two very distinct crystallization conditions and in two different space groups. The structure of the complex, which crystallized in P212121, was refined at a resolution of 1.78 Å to Rwork and Rfree values of 17.67% and 19.88% (Figure 2a) and is referred to here as ctPrp43ΔN•ADP•BeF3-(HR) (high resolution). The second crystal form belongs to the hexagonal space group P65 which exhibited a resolution limit of 3.24 Å (Figure 2b) and thus is referred to as ctPrp43ΔN•ADP•BeF3-(LR) (low resolution). This structure was refined to Rwork / Rfree values of 18.22% and 21.78%, respectively.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig2-v2.jpg)
 
-**Figure 2.:** 3- in different crystal forms.(a) Overall structure of ctPrp43ΔN•ADP•BeF3- at high and (b) low resolution. ctPrp43ΔN•ADP•BeF3-(HR) crystalized in the orthorhombic space group P212121 and ctPrp43ΔN•ADP•BeF3-(LR) in the hexagonal space group P65. Domains are colored according to Figure 1a. ADP•BeF3- is shown at the binding cleft between the two RecA-like domains in ball-and-stick mode. (c) Superposition of ctPrp43ΔN•ADP•BeF3-(HR) (orange) and ctPrp43ΔN•ADP•BeF3-(LR) (blue) with ctPrp43ΔN•U7•ADP•BeF3- (green). Structures were superimposed via their helicase core (RecA1 and RecA2 domains) and are shown in ribbon representation.DOI: http://dx.doi.org/10.7554/eLife.21510.008
+**Figure 2.:** (a) Overall structure of ctPrp43ΔN•ADP•BeF3- at high and (b) low resolution. ctPrp43ΔN•ADP•BeF3-(HR) crystalized in the orthorhombic space group P212121 and ctPrp43ΔN•ADP•BeF3-(LR) in the hexagonal space group P65. Domains are colored according to Figure 1a. ADP•BeF3- is shown at the binding cleft between the two RecA-like domains in ball-and-stick mode. (c) Superposition of ctPrp43ΔN•ADP•BeF3-(HR) (orange) and ctPrp43ΔN•ADP•BeF3-(LR) (blue) with ctPrp43ΔN•U7•ADP•BeF3- (green). Structures were superimposed via their helicase core (RecA1 and RecA2 domains) and are shown in ribbon representation.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The A conformation (47%) is shown in orange and the B conformation (53%) in purple blue. In the A conformation a type I β -turn is formed and in the B conformation a type II β-turn.DOI: http://dx.doi.org/10.7554/eLife.21510.009
+**Figure 2—figure supplement 1.:** The A conformation (47%) is shown in orange and the B conformation (53%) in purple blue. In the A conformation a type I β -turn is formed and in the B conformation a type II β-turn.
 
-In comparison to the ctPrp43ΔN•U
+In comparison to the ctPrp43ΔN•U7•ADP•BeF3- complex structure, the conformation of the two RecA-like domains in the ctPrp43ΔN•ADP•BeF3- complex is almost identical and they superpose very well with r.m.s.d. values of 0.34 Å (312 Cα) in case of ctPrp43ΔN•ADP•BeF3-(HR) and with 0.39 Å (318 Cα) for the ctPrp43ΔN•ADP•BeF3-(LR) structure (Figure 2c). However, a large rearrangement of the C-terminal domains is seen in both ctPrp43ΔN•ADP•BeF3- complex structures (Figure 3), which leads to the disruption of the interaction between two β-hairpin loops from the RecA2 domain and the OB-fold. As a consequence, the RNA-binding tunnel of ctPrp43ΔN•U7•ADP•BeF3- is opened and transformed into a shallow groove. In the closed state, the C-terminal domains of the ctPrp43ΔN•U7•ADP•BeF3- complex and of ctPrp43ΔN•ADP superpose well (r.m.s.d. of 0.55 Å for 267 Cα).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig3-v2.jpg)
 
-**Figure 3.:** Tauchert et al., 2016), ctPrp43ΔN•U7•ADP•BeF3- (5lta), ctPrp43ΔN•ADP•BeF3-(HR) (5ltj) and ctPrp43ΔN•ADP•BeF3-(LR) (5ltk).Structures were superposed via their RecA1 domains. In the top panel the back view is presented (rotated by 180° with respect to Figure 1b, Figure 2a and Figure 2b) and in the bottom panel the side view (90° rotation around a vertical axis). Structures are ordered according to the degree of C-terminal displacement and opening of the RNA-binding tunnel. The location of the RNA-binding tunnel which is present in ctPrp43ΔN•ADP and ctPrp43ΔN•U7•ADP•BeF3- is indicated.DOI: http://dx.doi.org/10.7554/eLife.21510.010
+**Figure 3.:** Structures were superposed via their RecA1 domains. In the top panel the back view is presented (rotated by 180° with respect to Figure 1b, Figure 2a and Figure 2b) and in the bottom panel the side view (90° rotation around a vertical axis). Structures are ordered according to the degree of C-terminal displacement and opening of the RNA-binding tunnel. The location of the RNA-binding tunnel which is present in ctPrp43ΔN•ADP and ctPrp43ΔN•U7•ADP•BeF3- is indicated.
 
-## RNA loading mechanism of Prp43
+### RNA loading mechanism of Prp43
 
 The opening of the RNA-binding tunnel appears to be the key mechanism allowing Prp43, and very likely numerous other DEAH-box helicases, to bind to complex folded RNA substrates. Thus, these rearrangements of the C-terminal domains are expected to be crucial for their unwinding function. The opening is feasible due to a large movement of the ratchet-like and the OB-fold domains. Rearrangements of the WH domain are less pronounced owing to the fact that the WH rather functions as a hinge region between the RecA2 and the ratchet-like domain. Comparison between the ctPrp43ΔN•U7•ADP•BeF3- and the ctPrp43ΔN•ADP•BeF3-(HR) complex structures after alignment of the RecA-like domains revealed that the center of mass of the ratchet-like domain is shifted by 16.2 Å, and by 14.1 Å for the OB-fold domain. In the ctPrp43ΔN•ADP•BeF3-(LR) complex structure, these values are equal to 17.0 Å (ratchet-like) and 11.7 Å (OB-fold), respectively. The ctPrp43ΔN•ADP•BeF3-(HR) structure is in a marginally more closed conformation, hence the ctPrp43ΔN•ADP•BeF3- complex structures are not completely identical. They represent two slightly different snapshots of Prp43 which both might exist in solution and presumably are favored by the different crystallization conditions or different crystal packing. These two states of ctPrp43ΔN•ADP•BeF3- might also give a hint at how Prp43 switches into the closed conformation since in the ctPrp43ΔN•ADP•BeF3-(HR) complex structure one inter-domain contact is present between the RecA2 (Asp 486) and the ratchet-like domain (Lys 605). These interactions between sequentially distal residues might trigger the switching from the open into the closed conformation after the binding to RNA. The circumstance that both structures of the ctPrp43ΔN•ADP•BeF3- complex are in a similar, open conformation strongly suggests the possibility that the complex structures presented reflect the main conformation of Prp43 in an active state in solution. Owing to the fact that Prp43•ADP•BeF3- crystallized in different space groups and in divergent crystallization conditions, the open conformation in crystallo is highly unlikely to be a crystallization artefact. This assumption is additionally supported by the low number of crystal contacts for the ctPrp43ΔN•ADP•BeF3-(HR) (355.3 Å² of buried surface/1.1% of the total surface) and the ctPrp43ΔN•ADP•BeF3-(LR) (1524.3 Å²/4.7%) complex structure.
 
 To further strengthen the hypothesis that the opening of the tunnel by the displacement of the C-terminal domains is crucial for the helicase function of Prp43, we designed a mutant of Prp43 which allows us to trap the closed conformation by the introduction of an internal disulfide bond (ctPrp43-IDSB). For this purpose, one cysteine was introduced into the RecA1 domain and another one into the ratchet-like domain at exposed positions to maximize the number of formed disulfide bonds (Figure 4—figure supplement 1). The functional impact of these mutations was analyzed by an ATPase assay, a fluorescence-based helicase assay and an intron-lariat spliceosome (ILS) disassembly assay. First of all, the percentage of formed disulfide bonds was experimentally estimated. The wild-type protein contains nine cysteines, the ctPrp43-IDSB mutant two additional ones. Via Ellman reaction, the number of cysteines was determined to be 8.5 ± 0.1 (ctPrp43) and 9.3 ± 0.1 (ctPrp43-IDSB), respectively. This allows us to conclude that the majority of ctPrp43-IDSB exhibits the internal disulfide bridge because oxidized cysteines cannot be detected by this method and only the nine cysteines, which are also present in the wild-type protein, were determined.
 
-## Prp43 trapped in the closed conformation is impaired in its helicase activity
+### Prp43 trapped in the closed conformation is impaired in its helicase activity
 
-Having determined that ctPrp43-IDSB is mainly present in the oxidized and therefore closed state, this mutant was subsequently analyzed concerning its helicase activity using a synthetic dsRNA with a 3’ssRNA overhang (
+Having determined that ctPrp43-IDSB is mainly present in the oxidized and therefore closed state, this mutant was subsequently analyzed concerning its helicase activity using a synthetic dsRNA with a 3’ssRNA overhang (Figure 4a and Table 2). Since wild-type Prp43 exhibited a very low activity (0.54 nM of unwound RNA/min) in the absence of any stimulatory G-patch (GP) protein, we tested its activity in the presence of the ctNtr1-GP (1.98 nM/min) and the ctPfa1-GP (60.03 nM/min). Since the ctPfa1-GP could increase the Prp43 activity to a much higher level, the ctPfa1-GP was used for the in vitro helicase activity analysis of all Prp43 mutants. ctPrp43-IDSB exhibited an activity of 12.18 nM/min which equals about 1/5th of the wild-type Prp43 activity and thus is clearly impaired concerning its ability to unwind dsRNA. The remaining helicase activity of the mutant is most likely caused by the fraction of ctPrp43-IDSB which does not contain the internal disulfide bond. The activity of ctPrp43 and the ctPrp43-IDSB mutant were also analyzed for a physiological and more complex substrate RNP by using the S. cerevisiae ILS disassembly assays (Figure 5 and Figure 5—figure supplement 1). In previous work it was shown that ctPrp43 is capable of functionally replacing scPrp43 in the spliceosome (Tauchert et al., 2016). ctPrp43 can release about 60% of intron-lariat RNA from scILS in the presence of ATP and scNtr(1•2) and dissociate the remaining spliceosomal RNP core into the free U6 snRNA, 18S U5 and 20S U2 snRNP (Figure 5c). This is close to the 65% efficiency of recombinant scPrp43 (Figure 5b). In case of the ctPrp43-IDSB mutant, these assays were performed in the presence and absence of DTT, which can reduce the disulfide bridge between the RecA1 and ratchet-like domain and thus free ctPrp43-IDSB from its locked conformation. Without DTT, the efficiency of ILS disassembly by ctPrp43-IDSB is clearly impaired compared to the wild-type protein since only 10% of all ILSs are dissociated which equals the amount of the negative control (Figure 5a and d). In the presence of DTT, the ILS dissociation efficiency of ctPrp43-IDSB can be fully restored to the wild-type activity level of 60% (Figure 5e). This clearly hints at the fact that locking Prp43 in the closed conformation distinctly influences its activity as deduced from the crystal structures of ctPrp43ΔN•ADP•BeF3- and thus proving the importance of adopting the open conformation for the helicase activity of Prp43 also in the spliceosome (Video 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig4-v2.jpg)
 
-**Figure 4.:** (a) The maximal unwinding velocity (nM/min) for a dsRNA with a 3’ overhang is shown. (b) RNA binding of 5’−6FAM-U16-RNA by ctPrp43 and ctPrp43-HT was determined via fluorescence anisotropy measurements. Error bars indicate the standard deviation from three independent measurements for a and b.DOI: http://dx.doi.org/10.7554/eLife.21510.011
+**Figure 4.:** (a) The maximal unwinding velocity (nM/min) for a dsRNA with a 3’ overhang is shown. (b) RNA binding of 5’−6FAM-U16-RNA by ctPrp43 and ctPrp43-HT was determined via fluorescence anisotropy measurements. Error bars indicate the standard deviation from three independent measurements for a and b.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** The Phe 181 in the RecA1 domain and the Asn 623 in the ratchet-like domain were substituted by cysteines. Owing to their close spatial proximity, a disulfide bridge can be formed which traps Prp43 in this closed conformation. The formation of this disulfide bridge is reversible, for instance, by adding a reducing agent such as DTT. The closed state of the ctPrp43-IDSB mutant was modeled from the ctPrp43ΔN•U7•ADP•BeF3- complex.DOI: http://dx.doi.org/10.7554/eLife.21510.012
+**Figure 4—figure supplement 1.:** The Phe 181 in the RecA1 domain and the Asn 623 in the ratchet-like domain were substituted by cysteines. Owing to their close spatial proximity, a disulfide bridge can be formed which traps Prp43 in this closed conformation. The formation of this disulfide bridge is reversible, for instance, by adding a reducing agent such as DTT. The closed state of the ctPrp43-IDSB mutant was modeled from the ctPrp43ΔN•U7•ADP•BeF3- complex.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** a) without further stimulation, (b) in the presence of a G-patch, (c) in the presence of a U16-RNA and (d) in the presence of a G-patch and a U16-RNA.kcat and KM values are shown in Table 3. Error bars, s.d. (n = 3 independent measurements). For detailed information refer to the Materials and methods section.DOI: http://dx.doi.org/10.7554/eLife.21510.013
+**Figure 4—figure supplement 2.:** kcat and KM values are shown in Table 3. Error bars, s.d. (n = 3 independent measurements). For detailed information refer to the Materials and methods section.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** The typical curve progression of individual measurements for this fluorescence-based helicase assay is shown for ctPrp43+ctPfa1-GP (red), ctPrp43-IDSB+ctPfa1-GP (blue), ctPfa1-GP (green) and the negative control (black) in which no proteins were present.DOI: http://dx.doi.org/10.7554/eLife.21510.014
+**Figure 4—figure supplement 3.:** The typical curve progression of individual measurements for this fluorescence-based helicase assay is shown for ctPrp43+ctPfa1-GP (red), ctPrp43-IDSB+ctPfa1-GP (blue), ctPfa1-GP (green) and the negative control (black) in which no proteins were present.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig5-v2.jpg)
 
-**Figure 5.:** 10–30% glycerol gradient sedimentation of purified yeast ILS (scILS) incubated in solution with ATP plus (a) no recombinant protein, (b) scPrp43 and cofactors scNtr(1•2), (c) ctPrp43 and scNtr(1•2), (d) ctPrp43-IDSB and scNtr(1•2), (e) ctPrp43-IDSB, scNtr(1•2) and 0.5 mM DTT, (f) ctPrp43-HT and scNtr(1•2), (g) ctPrp43-HL and scNtr(1•2), (h) ctPrp43-HT&HL and scNtr(1•2). U2, U5 and U6 snRNAs were visualized by Northern blotting followed by autoradiography. RNA identities are indicated on the left. Quantifications were performed with ImageQuant software (Molecular Dynamics). Numbers represent the percentage of intron-lariat RNA released in the top fractions (sum of fractions 1–11) or associated with the ILS (unreleased, sum of fractions 12–23) relative to the intron-lariat RNA distributed in all 23 fractions, the sum of which was set to 100%.DOI: http://dx.doi.org/10.7554/eLife.21510.015
+**Figure 5.:** 10–30% glycerol gradient sedimentation of purified yeast ILS (scILS) incubated in solution with ATP plus (a) no recombinant protein, (b) scPrp43 and cofactors scNtr(1•2), (c) ctPrp43 and scNtr(1•2), (d) ctPrp43-IDSB and scNtr(1•2), (e) ctPrp43-IDSB, scNtr(1•2) and 0.5 mM DTT, (f) ctPrp43-HT and scNtr(1•2), (g) ctPrp43-HL and scNtr(1•2), (h) ctPrp43-HT&HL and scNtr(1•2). U2, U5 and U6 snRNAs were visualized by Northern blotting followed by autoradiography. RNA identities are indicated on the left. Quantifications were performed with ImageQuant software (Molecular Dynamics). Numbers represent the percentage of intron-lariat RNA released in the top fractions (sum of fractions 1–11) or associated with the ILS (unreleased, sum of fractions 12–23) relative to the intron-lariat RNA distributed in all 23 fractions, the sum of which was set to 100%.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Activated spliceosomes (BactΔPrp2) assembled on Actin7 wild-type pre-mRNA in heat-inactivated splicing extracts from a prp2-1 yeast strain expressing a temperature-sensitive Prp2 mutant, were first purified. Purified BactΔPrp2 complexes were then incubated with recombinant Prp2 and Spp2, generating the B* spliceosome, and then Cwc25 was added to promote catalysis of step 1 of splicing and the formation of complex C. For catalysis of step 2, which generates post-catalytic spliceosomes (PCS), recombinant Prp16, Slu7 and Prp18 were added. Finally, for the purification of the ILS, the spliced mRNA was dissociated from the ILS by incubation of the PCS with Prp22 and ATP. Addition of ATP and recombinant Prp43, Ntr1 and Ntr2, leads to disassembly of the ILS into the intron-lariat, 20S U2 snRNP, 18S U5 snRNP and free U6 snRNA.DOI: http://dx.doi.org/10.7554/eLife.21510.016
+**Figure 5—figure supplement 1.:** Activated spliceosomes (BactΔPrp2) assembled on Actin7 wild-type pre-mRNA in heat-inactivated splicing extracts from a prp2-1 yeast strain expressing a temperature-sensitive Prp2 mutant, were first purified. Purified BactΔPrp2 complexes were then incubated with recombinant Prp2 and Spp2, generating the B* spliceosome, and then Cwc25 was added to promote catalysis of step 1 of splicing and the formation of complex C. For catalysis of step 2, which generates post-catalytic spliceosomes (PCS), recombinant Prp16, Slu7 and Prp18 were added. Finally, for the purification of the ILS, the spliced mRNA was dissociated from the ILS by incubation of the PCS with Prp22 and ATP. Addition of ATP and recombinant Prp43, Ntr1 and Ntr2, leads to disassembly of the ILS into the intron-lariat, 20S U2 snRNP, 18S U5 snRNP and free U6 snRNA.
 
-To exclude the possibility that the results of the helicase or ILS disassembly assays differ between ctPrp43 and ctPrp43-IDSB due to a reduced ATPase activity of the latter, ATPase activity measurements were performed. For all ctPrp43 variants, the ATPase activity was analyzed for ctPrp43 itself, after the addition of a GP, or U16-RNA or in the presence of both. Since this was the first enzymatic characterization of Prp43 from C. thermophilum, several general results are worth mentioning (Table 3 and Figure 4—figure supplement 2). The basal ATPase activity of ctPrp43 (1.81 min−1) is very similar to its ortholog from S. cerevisiae (2.43 min−1) (Christian et al., 2014). ctPrp43 is stimulated by both, the ctNtr1-GP and the ctPfa1-GP, but the effect by the latter is more pronounced. A clear difference between C. thermophilum and S. cerevisiae Prp43 is that ctPrp43 does not exhibit RNA-stimulated ATPase activity in the absence of a GP. The ctPrp43 ATPase activity can only be induced by RNA if an additional G-patch protein is present.10.7554/eLife.21510.019Table 3.ATPase activity.DOI: http://dx.doi.org/10.7554/eLife.21510.019kcat (min−1)±KM (µM)±ctPrp431.810.0347.233.40ctPrp43 + U16-RNA2.080.053.750.68ctPrp43 + ctNtr1-GP4.160.045.490.32ctPrp43 + ctNtr1-GP + U16-RNA16.280.094.870.19ctPrp43 + ctPfa1-GP36.280.368.900.58ctPrp43 + ctPfa1-GP + U16-RNA372.202.9126.111.21ctPrp43-IDSB5.040.1216.232.38ctPrp43-IDSB + ctPfa1-GP199.351.5929.041.35ctPrp43-IDSB + U16-RNA24.990.373.420.38ctPrp43-IDSB + ctPfa1-GP + U16-RNA609.386.1588.143.50ctPrp43-HT13.210.1891.235.89ctPrp43-HT + ctPfa1-GP60.950.7413.291.03ctPrp43-HT + U16-RNA10.580.3453.928.27ctPrp43-HT + ctPfa1-GP + U16-RNA98.611.8413.191.52ctPrp43-HL6.190.0514.310.71ctPrp43-HL + ctPfa1-GP86.500.8414.380.89ctPrp43-HL + U16-RNA6.160.065.380.35ctPrp43-HL + ctPfa1-GP + U16-RNA533.559.5349.493.86ctPrp43-HT&HL7.610.1116.721.49ctPrp43-HT&HL + ctPfa1-GP113.181.0325.171.37ctPrp43-HT&HL + U16-RNA5.530.075.590.51ctPrp43-HT&HL + ctPfa1-GP + U16-RNA82.281.3111.881.18
+**Table 2.**
+ Helicase activity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>nM/min</th>
+      <th>±</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctPrp43</td>
+      <td>0.54</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctPfa1-GP</td>
+      <td>60.03</td>
+      <td>2.75</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctNtr1-GP</td>
+      <td>1.98</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>ctPfa1-GP</td>
+      <td>0.46</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-IDSB + ctPfa1-GP</td>
+      <td>12.18</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT+ ctPfa1-GP</td>
+      <td>0.68</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HL + ctPfa1-GP</td>
+      <td>61.87</td>
+      <td>7.14</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT&amp;HL+ ctPfa1-GP</td>
+      <td>0.88</td>
+      <td>0.03</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-media1.mp4.jpg)
+
+**Video 1.:** This morphing movie between the ADP-bound state of Prp43 (PDBid: 5d0u), the two ADP•BeF3- bound states (PDBids: 5ltk and 5ltj) and the ctPrp43ΔN•U7•ADP•BeF3- complex structure (PDBid: 5lta) illustrates the RNA-binding mode of Prp43.
+
+To exclude the possibility that the results of the helicase or ILS disassembly assays differ between ctPrp43 and ctPrp43-IDSB due to a reduced ATPase activity of the latter, ATPase activity measurements were performed. For all ctPrp43 variants, the ATPase activity was analyzed for ctPrp43 itself, after the addition of a GP, or U16-RNA or in the presence of both. Since this was the first enzymatic characterization of Prp43 from C. thermophilum, several general results are worth mentioning (Table 3 and Figure 4—figure supplement 2). The basal ATPase activity of ctPrp43 (1.81 min−1) is very similar to its ortholog from S. cerevisiae (2.43 min−1) (Christian et al., 2014). ctPrp43 is stimulated by both, the ctNtr1-GP and the ctPfa1-GP, but the effect by the latter is more pronounced. A clear difference between C. thermophilum and S. cerevisiae Prp43 is that ctPrp43 does not exhibit RNA-stimulated ATPase activity in the absence of a GP. The ctPrp43 ATPase activity can only be induced by RNA if an additional G-patch protein is present.
+
+**Table 3.**
+ ATPase activity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>kcat (min−1)</th>
+      <th>±</th>
+      <th>KM (µM)</th>
+      <th>±</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctPrp43</td>
+      <td>1.81</td>
+      <td>0.03</td>
+      <td>47.23</td>
+      <td>3.40</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + U16-RNA</td>
+      <td>2.08</td>
+      <td>0.05</td>
+      <td>3.75</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctNtr1-GP</td>
+      <td>4.16</td>
+      <td>0.04</td>
+      <td>5.49</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctNtr1-GP + U16-RNA</td>
+      <td>16.28</td>
+      <td>0.09</td>
+      <td>4.87</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctPfa1-GP</td>
+      <td>36.28</td>
+      <td>0.36</td>
+      <td>8.90</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>ctPrp43 + ctPfa1-GP + U16-RNA</td>
+      <td>372.20</td>
+      <td>2.91</td>
+      <td>26.11</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-IDSB</td>
+      <td>5.04</td>
+      <td>0.12</td>
+      <td>16.23</td>
+      <td>2.38</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-IDSB + ctPfa1-GP</td>
+      <td>199.35</td>
+      <td>1.59</td>
+      <td>29.04</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-IDSB + U16-RNA</td>
+      <td>24.99</td>
+      <td>0.37</td>
+      <td>3.42</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-IDSB + ctPfa1-GP + U16-RNA</td>
+      <td>609.38</td>
+      <td>6.15</td>
+      <td>88.14</td>
+      <td>3.50</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT</td>
+      <td>13.21</td>
+      <td>0.18</td>
+      <td>91.23</td>
+      <td>5.89</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT + ctPfa1-GP</td>
+      <td>60.95</td>
+      <td>0.74</td>
+      <td>13.29</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT + U16-RNA</td>
+      <td>10.58</td>
+      <td>0.34</td>
+      <td>53.92</td>
+      <td>8.27</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT + ctPfa1-GP + U16-RNA</td>
+      <td>98.61</td>
+      <td>1.84</td>
+      <td>13.19</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HL</td>
+      <td>6.19</td>
+      <td>0.05</td>
+      <td>14.31</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HL + ctPfa1-GP</td>
+      <td>86.50</td>
+      <td>0.84</td>
+      <td>14.38</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HL + U16-RNA</td>
+      <td>6.16</td>
+      <td>0.06</td>
+      <td>5.38</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HL + ctPfa1-GP + U16-RNA</td>
+      <td>533.55</td>
+      <td>9.53</td>
+      <td>49.49</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT&amp;HL</td>
+      <td>7.61</td>
+      <td>0.11</td>
+      <td>16.72</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT&amp;HL + ctPfa1-GP</td>
+      <td>113.18</td>
+      <td>1.03</td>
+      <td>25.17</td>
+      <td>1.37</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT&amp;HL + U16-RNA</td>
+      <td>5.53</td>
+      <td>0.07</td>
+      <td>5.59</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>ctPrp43-HT&amp;HL + ctPfa1-GP + U16-RNA</td>
+      <td>82.28</td>
+      <td>1.31</td>
+      <td>11.88</td>
+      <td>1.18</td>
+    </tr>
+  </tbody>
+</table>
 
 The intrinsic ATPase activity of ctPrp43-IDSB (5.04 min−1) is similar to the one determined for wild-type ctPrp43. ctPrp43-IDSB is also stimulated by ctPfa1-GP and by U16-RNA in the presence of the ctPfa1-GP, but in the contrast to wild-type Prp43 also just by U16-RNA. These findings confirm that the difference in the helicase and the ILS disassembly assay between ctPrp43 and ctPrp43-IDSB is solely caused by the impairment of the unwinding capabilities. The RNA-induced stimulation of ctPrp43-IDSB in the trapped conformation might still be feasible due to the fact that a short single-stranded U16-RNA without any secondary structures was used for these assays. Binding to the entry or exit site of the RNA-binding tunnel, which does not require an opening of the tunnel, might be sufficient for the RNA-induced stimulation of the ATPase activity (see below). Furthermore, Prp43 in the trapped closed conformation appears to be more prone for the stimulation of the ATPase activity by RNA since the ctPrp43-IDSB mutant (24.99 min−1) is stimulated by U16-RNA while the wild-type protein is not (2.08 min−1). It is conceivable that the GP increases the number of Prp43 molecules in a closed conformation since in the presence of a GP also the wild-type protein is stimulated by RNA.
 
 Having shown the importance of the opening of Prp43’s C-terminal domains for its unwinding capability, we asked how Prp43 couples ATP hydrolysis and RNA translocation, leading to its helicase activity. Since high-resolution structures of the pre- and post-catalytic state of a DEAH-box helicase are both now available, conformational rearrangements of Prp43 in the course of nucleotide hydrolysis were analyzed.
 
-## Conformational rearrangements at the helicase core
+### Conformational rearrangements at the helicase core
 
 To investigate the effect of ATP hydrolysis on the Prp43 conformation, the structures of the ADP and the ADP•BeF3- bound state were compared. Since the conformations of the RecA-like domains of the three structures ctPrp43ΔN•U7•ADP•BeF3-, ctPrp43ΔN•ADP•BeF3-(HR) and ctPrp43ΔN•ADP•BeF3-(LR) are very similar, the analysis of the conformational switches was restricted to the comparison of ctPrp43ΔN•ADP•BeF3-(HR) with the previously published ctPrp43ΔN•ADP structure.
 
-The individual RecA-like domains of ctPrp43ΔN•ADP and ctPrp43ΔN•ADP•BeF
+The individual RecA-like domains of ctPrp43ΔN•ADP and ctPrp43ΔN•ADP•BeF3-(HR) superimpose well with r.m.s.d. values of 0.36 Å (139 Cα) for the RecA1 domains and 0.44 Å (142 Cα) for the RecA2 domains. Superimposing the helicase cores consisting of both RecA-like domains shows that the RecA1 and RecA2 domains are rotated by ca. 4˚ and ca. 14˚, respectively. There is also a slight translational displacement of the RecA2 domain by a 2.7 Å shift of its center of mass with regard to the RecA1 domain. Depending on the ADP/ATP state, conformational changes of several of the conserved SF2 helicase motifs, most strikingly of those in the RecA2 domain are observed (Figure 6). The conformations of the motifs I, Ia, Ib and II, which are all located in the RecA1 domain, are similar between the ATP-bound and the ADP-bound state of Prp43. This ATP-bound state, mimicked by the bound ADP•BeF3-, also allows to deduce how Prp43 does hydrolyze ATP. The Glu 219 of the eponymous DEAH-motif (motif II) binds a water molecule (H2O 388) and positions it in close spatial proximity to the BeF3-, which corresponds to the ATP γ-phosphate. Presumably, this H2O 388 performs the nucleophilic attack on the phosphorus atom of the γ-phosphate since it is in an almost perfect orientation for an SN2 substitution mechanism at 180° to the leaving group. In the ADP•BeF3- complex structure, this water molecule is additionally bound via the interactions with Gln 428 and Arg 435 from motif VI. The region containing the motif VI undergoes one of the most pronounced conformational rearrangements of the helicase core and it is shifted in the ADP-bound state 5.1 Å apart from the bound nucleotide. In the ATP-bound state, also interactions between Arg 432 and Arg 435 from motif VI and the phosphate(-mimic) groups are detectable. In the ADP-bound state, only Arg 435 of motif VI interacts with the 3’OH of the ribose. Another noticeable rearrangement can be observed for Phe 360 which is not part of a classical SF2 helicase motif. In the ADP-bound state, the adenine moiety interacts with Phe 360 via π-electron stacking and by cation-π-interactions with Arg 162. In the ATP-bound state, Phe 360 is shifted 5.4 Å apart from the base which is now solely stabilized by Arg 162. The rearrangements of the other conserved motifs are less distinct but still notably. In the ADP-bound state, the motifs IV and V are shifted by 3.3 Å and 2.9 Å, respectively, apart from the C-terminal domains.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig6-v2.jpg)
 
-**Figure 6.:** (a, Left panel) Active site of Prp43 with the bound ATP-analog ADP•BeF3- as present in ctPrp43ΔN•ADP•BeF3-(HR) (PDBid: 5ltj). The RecA1 domain is colored in light gray, the RecA2 domain in dark gray, carbon atoms of the ADP in yellow, oxygen in red, nitrogen in blue, phosphorus in orange, beryllium in chartreuse, fluoride in light blue, magnesium in light green and water molecules in pale pink. Nucleotide-interacting motifs are shown in blue, nucleic acid-binding motifs in ruby and motif III, which couples ATP hydrolysis to RNA unwinding, in green. Residues, which are involved in base-stacking with the adenine moiety, are presented in light orange. Residues from motif I, which are involved in Mg2+ coordination (Thr 126), and from motif II, which coordinate water molecules at the active site (Asp 218 and Glu 219), are presented as sticks. The water molecule 388 is perfectly positioned for the nucleophilic attack on the γ-phosphate and thus its hydrolysis. The conserved SF2 helicase motifs I-VI are numbered according to convention. (a, Right panel) Schematic representation of the active site in ctPrp43ΔN•ADP•BeF3-(HR). Motifs and residues are labeled as introduced in the left panel. Water molecules are numbered according to the PDB entry. Stacking interactions are shown by double lines, polar interactions between ADP•BeF3- and Prp43 via red dotted lines, interactions between Prp43 and water molecules via light blue lines and the coordination of the central Mg2+ by dark green lines. (b) Active site of Prp43 with bound ADP (PDBid: 5d0u) (Tauchert et al., 2016). (Left and right panel) Labeling and numbering according to a. Numerous rearrangements and conformational changes are noticeable between the ATP- and ADP-bound state.DOI: http://dx.doi.org/10.7554/eLife.21510.020
+**Figure 6.:** (a, Left panel) Active site of Prp43 with the bound ATP-analog ADP•BeF3- as present in ctPrp43ΔN•ADP•BeF3-(HR) (PDBid: 5ltj). The RecA1 domain is colored in light gray, the RecA2 domain in dark gray, carbon atoms of the ADP in yellow, oxygen in red, nitrogen in blue, phosphorus in orange, beryllium in chartreuse, fluoride in light blue, magnesium in light green and water molecules in pale pink. Nucleotide-interacting motifs are shown in blue, nucleic acid-binding motifs in ruby and motif III, which couples ATP hydrolysis to RNA unwinding, in green. Residues, which are involved in base-stacking with the adenine moiety, are presented in light orange. Residues from motif I, which are involved in Mg2+ coordination (Thr 126), and from motif II, which coordinate water molecules at the active site (Asp 218 and Glu 219), are presented as sticks. The water molecule 388 is perfectly positioned for the nucleophilic attack on the γ-phosphate and thus its hydrolysis. The conserved SF2 helicase motifs I-VI are numbered according to convention. (a, Right panel) Schematic representation of the active site in ctPrp43ΔN•ADP•BeF3-(HR). Motifs and residues are labeled as introduced in the left panel. Water molecules are numbered according to the PDB entry. Stacking interactions are shown by double lines, polar interactions between ADP•BeF3- and Prp43 via red dotted lines, interactions between Prp43 and water molecules via light blue lines and the coordination of the central Mg2+ by dark green lines. (b) Active site of Prp43 with bound ADP (PDBid: 5d0u) (Tauchert et al., 2016). (Left and right panel) Labeling and numbering according to a. Numerous rearrangements and conformational changes are noticeable between the ATP- and ADP-bound state.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** 3- (HR) structure with chain A of the MLE•U10•ADP•AlF4- complex (PDB 5aor) (Prabu et al., 2015).The conformation of the helicase core is highly similar, also for all conserved helicase SF2 motifs, indicated by an r.m.s.d. value of 0.70 Å for 235 Cα for the superposition.DOI: http://dx.doi.org/10.7554/eLife.21510.021
+**Figure 6—figure supplement 1.:** The conformation of the helicase core is highly similar, also for all conserved helicase SF2 motifs, indicated by an r.m.s.d. value of 0.70 Å for 235 Cα for the superposition.
 
-In the course of NTP hydrolysis, the loop harbouring the conserved motif III, which is known to couple ATPase and unwinding activity (
+In the course of NTP hydrolysis, the loop harbouring the conserved motif III, which is known to couple ATPase and unwinding activity (Schwer and Meszaros, 2000; Banroques et al., 2010; Fitzgerald et al., 2016), also undergoes a pronounced rearrangement. The transition of this motif might be required to induce the global conformational rearrangements leading to the rotation of the RecA domains. The rotation leads to a movement of a β-turn in the RecA1 domain and of a β-hairpin in the RecA2 domain, which both are directly located at the RNA-binding tunnel and thus might be involved in RNA translocation (Figure 7a, Video 2). The β-turn in the RecA1 domain consists of the amino acids Arg 180 and Phe 181, and the β-hairpin of the RecA2 domain is composed of the amino acids Tyr 348, Gly 349 and Thr 350. Interestingly, this second loop has previously been identified to be crucial for the helicase activity of the DExH-box helicase MLE (Prabu et al., 2015). In this study by Prapu and co-workers, a triple-mutant of the MLE was generated in which all residues located in this loop were mutated to glycine residues. This loop was termed Hook-Loop as it hooks between the bases of the bound RNA. It was assumed that in the course of NTP hydrolysis the movement of this loop causes the translocation of the bound RNA. Replacing the wild-type Hook-Loop sequence by GGG led to a complete loss of the helicase activity of MLE. Notably, in contrast to MLE the corresponding residues of the Prp43 Hook-Loop do not contact the bound RNA. In order to analyze the impact of both β-hairpin loops on RNA unwinding, several mutants of Prp43 were generated. In the Hook-Turn mutant (ctPrp43-HT), the amino acids 180–181 were mutated to GG and in the Hook-Loop mutant (ctPrp43-HL) the residues 348 and 350 were replaced by glycines. In addition to this, a double mutant in which both, the Hook-Turn and the Hook-Loop, contain the glycine substitutions (ctPrp43-HT&HL), was also analyzed.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig7-v2.jpg)
 
-**Figure 7.:** (a) The localization of the Hook-Turn in the RecA1 domain and of the Hook-Loop in the RecA2 domain in the ctPrp43ΔN•U7•ADP•BeF3- complex structure is shown. Domains are colored according to Figure 1a. (b) Superpositions of the RecA1 and RecA2 domains of the ctPrp43ΔN•U7•ADP•BeF3- and the ctPrp43ΔN•ADP (PDB 5d0u) complexes for the Hook-Turn and Hook-Loop, respectively. The superpositions indicate that the Hook-Loop remains in a highly similar conformation after ATP hydrolysis in contrast to the Hook-Turn which is shifted towards the RNA in the ADP-bound state.DOI: http://dx.doi.org/10.7554/eLife.21510.022
+**Figure 7.:** (a) The localization of the Hook-Turn in the RecA1 domain and of the Hook-Loop in the RecA2 domain in the ctPrp43ΔN•U7•ADP•BeF3- complex structure is shown. Domains are colored according to Figure 1a. (b) Superpositions of the RecA1 and RecA2 domains of the ctPrp43ΔN•U7•ADP•BeF3- and the ctPrp43ΔN•ADP (PDB 5d0u) complexes for the Hook-Turn and Hook-Loop, respectively. The superpositions indicate that the Hook-Loop remains in a highly similar conformation after ATP hydrolysis in contrast to the Hook-Turn which is shifted towards the RNA in the ADP-bound state.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/21510/elife-21510-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** C. thermophilum to all DEAH-box RNA helicases from S. cerevisiae and of MLE from D. melanogaster to all yeast DExH-box RNA helicases.The amino-acid sequence of ctPrp43 (G0RY84) was aligned to scPrp43 (P53131), scPrp2 (P20095), scPrp16 (P15938), scPrp22 (P24384), scDhr1 (Q04217) and scDhr2 (P36009). The sequence of dmMLE (P24785) was aligned to scMtr4 (P47047), scSki2 (P35207), scBrr2 (P32639), scSlh1 (P53327) and scYL419 (Q06698). The values in parentheses indicate the Uniprot accession numbers (The UniProt Consortium, 2015). The alignment was visualized with ESPript 3.0 (Robert and Gouet, 2014). The Hook-Turn and Hook-Loop motifs are boxed in green.DOI: http://dx.doi.org/10.7554/eLife.21510.023
+**Figure 7—figure supplement 1.:** The amino-acid sequence of ctPrp43 (G0RY84) was aligned to scPrp43 (P53131), scPrp2 (P20095), scPrp16 (P15938), scPrp22 (P24384), scDhr1 (Q04217) and scDhr2 (P36009). The sequence of dmMLE (P24785) was aligned to scMtr4 (P47047), scSki2 (P35207), scBrr2 (P32639), scSlh1 (P53327) and scYL419 (Q06698). The values in parentheses indicate the Uniprot accession numbers (The UniProt Consortium, 2015). The alignment was visualized with ESPript 3.0 (Robert and Gouet, 2014). The Hook-Turn and Hook-Loop motifs are boxed in green.
 
-## Prp43 translocates RNA via its Hook-Turn
+![Video 2.](https://cdn.elifesciences.org/articles/21510/elife-21510-media2.mp4.jpg)
+
+**Video 2.:** The morphing between the ctPrp43ΔN•U7•ADP•BeF3- (PDBid: 5lta) complex structure and ctPrp43ΔN•ADP (PDBid: 5d0u) reveals conformational rearrangements in the course of ATP hydrolysis, mainly of the Hook-Turn, which is in close spatial proximity to the RNA.
+
+### Prp43 translocates RNA via its Hook-Turn
 
 The Hook-Turn and Hook-Loop mutants were tested for their dsRNA unwinding capabilities. As shown in Figure 4a, the ctPrp43-HT (0.68 nM/min) and the ctPrp43-HT&HL (0.88 nM/min) mutants exhibit a strongly impaired RNA unwinding activity compared with wild-type ctPrp43 (60.03 nM/min) which corresponds to an almost complete loss of function as seen for the negative control (0.46 nM/min). Intriguingly, the ctPrp43-HL (61.87 nM/min) mutant shows an activity being almost equal to the wild-type protein. This high helicase activity of the ctPrp43-HL mutant is in clear contrast to the results for MLE and thus indicates a different RNA translocation mechanism between the two subfamilies of DEAH-box and DExH-box helicases. This difference in the translocation mechanism is consistent with the ctPrp43ΔN•U7•ADP•BeF3- complex structure. An interaction between the Hook-Loop and the RNA, as seen in MLE, is unlikely in Prp43 because the Hook-Loop residues point at the opposite direction and do not contact the RNA (Figure 7b). In contrast, Arg 180 and Phe 181 of the Hook-Turn directly point at the RNA, and after ATP-hydrolysis these residues are moving towards the RNA (Figure 7b) and presumably hook in between the bases. The Hook-Turn exhibits some flexibility since its main chain is present in two alternative conformations in the ctPrp43ΔN•ADP•BeF3-(HR) complex structure. According to this structure, this β-turn is present as type I (47%) and type II (53%) (Figure 2—figure supplement 1).
 
@@ -176,19 +623,19 @@ To further elaborate the difference in the RNA-translocation mechanism between t
 
 ## Materials and methods
 
-## Protein purification
+### Protein purification
 
 ctPrp43 and ctPrp43(61–764) (ctPrp43ΔN) were expressed and purified as previously described (Tauchert et al., 2016). The mutants ctPrp43(F181C, N623C), ctPrp43(R180G, F181G), ctPrp43(Y348G, T350G) and ctPrp43(R180G, F181G, Y348G, T350G) were expressed and purified under identical conditions. These mutants are referred to here as ctPrp43-IDSB, ctPrp43-HT, ctPrp43-HL and ctPrp43-HT&HL. The only deviation from the wild-type protein purification protocol was done for ctPrp43-IDSB. This mutant was subjected to overnight stirring during removal of the GST-tag to increase the formation of intramolecular disulfide bonds.
 
 The homologs of the G-patch proteins Pfa1 and Ntr1 from C. thermophilum were identified by BLAST search against the complete C. thermophilum genome (Altschul et al., 1990). The identified homologs are annotated as ‘hypothetical protein CTHT_0048220’ and ‘hypothetical protein CTHT_0020180’ and here termed as ctPfa1 and ctNtr1, respectively. The truncated G-patch constructs ctPfa1(662–742) (ctPfa1-GP) and ctNtr1(242–305) (ctNtr1-GP) were cloned from genomic DNA of C. thermophilum var. thermophilum DSM 1495 into pGEX-6P-1 via BamHI/SalI and EcoRI/SalI restriction sites. Both constructs were expressed in and purified from E. coli BL21(DE3) (Agilent Technologies). Cells were lysed in 50 mM Tris/HCl pH 7.5, 500 mM NaCl and 10 mM EDTA by microfluidization and soluble protein was separated by ultracentrifugation. The N-terminally tagged GST-fusion proteins were loaded onto Glutathione Sepharose 4B (GE Healthcare) in lysis buffer and thoroughly washed with an additional 2 M LiCl. After protein elution in 50 mM Tris/HCl pH 7.5, 500 mM NaCl, 2 mM MgCl2 and 30 mM reduced glutathione, GST-tag removal was realized by incubation with PreScission Protease (1:100 (w/w), GE Healthcare). Final polishing was obtained by size exclusion chromatography (Superdex 75, GE Healthcare) and a second GST affinity chromatography step, both in 10 mM Tris/HCl pH 7.5, 200 mM NaCl and 2 mM MgCl2.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 Complexes of ctPrp43ΔN were crystallized via the sitting-drop vapor-diffusion technique by mixing equal volumes of protein solution and crystallization buffer. ctPrp43ΔN•ADP•BeF3-(LR) was crystallized at a concentration of 5 mg ml−1 in 40% (v/v) pentaerythritol propoxylate (5/4 PO/OH), 6% (v/v) ethanol, 16% (v/v) glycerine and 100 mM Tris/HCl pH 8.0 at 20°C. ctPrp43ΔN•ADP•BeF3-(HR) crystallized at 4.5 mg ml−1 in 35% (v/v) 2-methyl-2,4-pentanediol, 1.67% (w/v) PEG 4000 and 100 mM Na HEPES pH 7.0 at 4°C. Crystals of the ctPrp43ΔN•U7-RNA•ADP•BeF3- complex were obtained at 20°C by mixing ctPrp43ΔN at 3 mg ml−1 with a 2.5-fold molar excess of poly-U16-RNA (AXOlabs, Germany) and 2.5% (w/v) PGA-LM, 13% (w/v) PEG 8000 and 100 mM Na Cacodylate pH 6.5. For all crystallization attempts, ADP was used at a tenfold molar excess with respect to ctPrp43ΔN, BeSO4 with a twentyfold and NaF at a sixtyfold excess.
 
 Prior to data collection, crystals of the RNA-complex structure were cryo-protected in 26% (v/v) glycerine. Both ctPrp43ΔN•ADP•BeF3- crystals did not require additional cryo-protection. Diffraction data were collected at 100 K on beamline P13, PETRA III, DESY (Hamburg, Germany) and were processed with the XDS package (Kabsch, 2010). Data collection statistics are tabularized in Table 1.
 
-## Structure determination, refinement and analysis
+### Structure determination, refinement and analysis
 
 The structure of ctPrp43ΔN•U7-RNA•ADP•BeF3- was solved by molecular replacement using Phaser as implemented in the CCP4 suite and the ctPrp43ΔN•ADP (PDBid: 5d0u) structure as a search model (Tauchert et al., 2016; McCoy et al., 2007). It was crucial to split this protein into three search models to obtain a reasonable molecular replacement solution. The RecA1, the RecA2 and the C-terminal domains had to be placed independently from each other. After initial model improvement in PHENIX and manual adjustment in Coot, the ADP•BeF3- and seven nucleotides of the U16-RNA, which was present in the crystallization reaction, could be fitted into the difference density (Adams et al., 2010; Emsley et al., 2010). Subsequent to additional refinement in PHENIX and Coot, the final model was refined to Rwork and Rfree of 19.70% and 22.97% (for refinement statistics see Table 1) and validated with MolProbity (Chen et al., 2010). 95.98% of all residues are in favored regions of the Ramachandran plot and 0.0% are indicated as outliers.
 
@@ -196,30 +643,30 @@ Both crystal structures of ctPrp43ΔN•ADP•BeF3-(HR and LR) were determined b
 
 Figures were prepared with PyMOL (v.1.3; Schrödinger) and Chimera (Pettersen et al., 2004).
 
-## ATPase activity assays
+### ATPase activity assays
 
 The ATPase activity of ctPrp43 and all of its mutants was monitored in an NADH-dependent enzyme coupled assay by recording the decrease of NADH absorption at 340 nm as initially described by Agarwal and coworkers (Agarwal et al., 1978). All reactions were performed as a set of triplicates in 25 mM Tris/HCl pH 7.5, 150 mM KCl and 3 mM MgCl2 at 25°C on an Ultrospec 2100 pro UV/Vis spectrophotometer (GE Healthcare). Reactions were supplemented with 250 nM NADH, 500 nM phosphoenolpyruvate, 6–8.3 U/ml pyruvate kinase (Sigma-Aldrich, UK) and 9–14 U/ml lactic dehydrogenase (Sigma-Aldrich, UK). ctPrp43 and mutants were used at a concentration range between 0.25–10 µM. G-patch proteins and U16-RNA (Sigma-Aldrich, UK) were each added in five-fold excess over ctPrp43. kcat and KM values were determined according to Michaelis and Menten equation.
 
-## Helicase activity assays
+### Helicase activity assays
 
 Helicase activity was monitored with a fluorescence-based unwinding assay (Belon and Frick, 2008) using a dsRNA substrate with a 3’ssRNA overhang, consisting of 5’-GCG CCU ACG GAG CUG GUG GCG UAG GCG CAA AAA AAA AAA AAA AAA AAA-3’ and 5’-(Cy5)-GCG CCU ACG CCA CCA GCU CCG UAG GCG C-(BBQ)-3’, as previously established for scPrp43 (Christian et al., 2014). In this assay, a decrease of fluorescence is measured which is caused by the quenching of BBQ on Cy5. Quenching only occurs if the dsRNA is disrupted and an internal hairpin is formed within the labeled RNA strand, positioning BBQ and Cy5 in close spatial proximity. Assays were performed in 25 mM Tris/HCl pH 7.5, 150 mM KCl, 3 mM MgCl2 and 1 mM ATP at 20°C and recorded on a Fluoromax III (Horiba Jobin Yvon). ctPrp43 and ctPrp43 mutants were used at a concentration of 250 nM, G-patch proteins at 1.25 µM and the dsRNA (AXOlabs, Germany) at 500 nM. The excitation wavelength was set to 643 nm and the emission was measured at 673 nm with a slit setting of 2.5 nm/2.0 nm. The initial slope (ΔF/s) of each reaction, which is the maximum reaction velocity, was determined in three independent measurements per sample (for example measurements see Figure 4—figure supplement 3). To determine the amount of unwound RNA in nM/min, data were normalized with regard to the fluorescence signals at 667 nm for the intact dsRNA and the completely quenched ssRNA, respectively. The mean value of the initial slope (nM/min) for the reactions with ctPrp43 and all ctPrp43 mutants was plotted with the corresponding standard deviation.
 
-## Determination of reduced cysteine residues
+### Determination of reduced cysteine residues
 
 The number of reduced cysteines was determined using Ellman’s reagent (5,5’-dithiobis(2-nitrobenzoic acid)) (Ellman, 1959). Reactions were carried out under denaturing conditions in 8 M urea in the presence of 400 µM Ellman’s reagent and 5 µM ctPrp43 or ctPrp43-IDSB. The number of sulfhydryl groups was calculated by measuring the absorption at 412 nm using an Ultrospec 2100 pro UV/Vis spectrophotometer (GE Healthcare) and applying an extinction coefficient of 14290 M−1 cm−1.
 
-## RNA-binding assay
+### RNA-binding assay
 
 RNA binding of ctPrp43 and ctPrp43-HT was analyzed via fluorescence anisotropy measurements using a Fluoromax VI (Horiba Jobin Yvon). 5’ 6-carboxyfluorescein-labeled U16-RNA (Sigma-Aldrich, UK) was used at a concentration of 0.1 µM and ctPrp43 or ctPrp43-HT at concentrations between 0.01 µM to 50 µM in the presence of a 100-fold excess of AMPPNP (Jena Bioscience, Germany). RNA-binding assays were performed in 25 mM Tris pH 7.5, 150 mM KCl and 3 mM MgCl2 at 25°C. The excitation wavelength was set to 490 nm and the emission was measured at 517 nm with a slit setting of 5 nm/5 nm. Data points were analyzed as a set of triplicates and for each sample, and the anisotropy was determined as the mean value of ten individual measurements. The measured anisotropy was normalized with respect to the sample with a concentration of 0 µM ctPrp43 or ctPrp43-HT.
 
-## Spliceosome purification and reconstitution
+### Spliceosome purification and reconstitution
 
 Yeast Bact ΔPrp2 complexes were assembled in heat-inactivated extracts from the yeast strain prp2-1 (Yean and Lin, 1991) by incubating with Actin7 pre-mRNA containing MS2 aptamers at 23°C for 45 min (Figure 5—figure supplement 1). Samples were centrifuged for 10 min at 9000 rpm and loaded onto columns containing 200 μl of amylose matrix equilibrated with GK75 buffer (20 mM HEPES-KOH pH 7.9, 1.5 mM MgCl2, 75 mM KCl, 5% glycerol, 0.01% NP40). The matrix was washed twice with 10 ml GK75 buffer. To obtain ILSs (Fourmann et al., 2013), Bact ΔPrp2 complexes bound to the amylose matrix were supplemented with a 10-fold molar excess of recombinant proteins (Prp2, Spp2, Cwc25, Prp16, Slu7 and Prp18) and the reaction volume was adjusted to 400 µl with GK75 buffer; then 40 µl of 10x ‘rescue’ solution (200 mM KPO4 (pH 7.4), 10 mM MgCl2, 20 mM ATP, 10% PEG 8000) were added to the reaction that was incubated at 23°C for 45 min. After thorough mixing, the reaction was incubated at 23°C for 45 min. Matrices were subsequently washed 3 times with 10 column volumes of GK75 buffer. Then a 10-fold molar excess of recombinant Prp22 was added and the volume was adjusted to 400 µl with 1x ‘rescue’ solution prepared in GK75 buffer. After thorough mixing, the reaction was incubated at 23°C for 15 min. The supernatant (containing the released ILS) was collected, and GK75 buffer was added to the matrix to a final volume of 400 µl. After gentle mixing and repeated centrifugation for 1 min at 2000 rpm the supernatant was collected and then loaded onto linear 10–30% (v/v) glycerol gradients containing GK75 buffer. Samples were centrifuged for 16 h at 21,500 rpm in a TH660 rotor (Thermo Scientific) and harvested manually from the top in 23 fractions of 175 µl. Fractions were analyzed by Cherenkov counting in a scintillation counter. Peak fractions containing ILSs were pooled and the glycerol concentration was adjusted to 5% with GK75 buffer without glycerol.
 
-## Spliceosomal disassembly assays
+### Spliceosomal disassembly assays
 
 To dismantle purified ILSs (Fourmann et al., 2016b), samples were incubated with distinct combinations of a 10-fold molar excess over the spliceosome of recombinant scPrp43, ctPrp43, ctPrp43-IDSB, ctPrp43-HT, ctPrp43-HL, ctPrp43-HT&HL and scNtr(1•2). An additional step of incubation was performed for the variant ctPrp43-IDSB in the presence of 0.5 mM DTT for 5 min at 23°C. The volume was adjusted to 400 µl with 1× ‘rescue’ solution prepared in GK75 buffer containing ATP and only for the variant ctPrp43-IDSB 0.5 mM DTT was added to the reaction. After thorough mixing, the mixture was incubated at 23°C for 15 min and then subjected to glycerol gradient centrifugation for 2 h at 60,000 rpm in a TH660 rotor and harvested manually from the top in 23 fractions of 175 µl. Each fraction was digested with Proteinase K followed by phenol-chloroform-isoamyl alcohol (PCI) extraction. RNA was precipitated with ethanol, and then analyzed by PAGE on 8% polyacrylamide, 8 M urea gels (PAGE) and visualized by autoradiography or Northern blot analysis.
 
-## Accession codes
+### Accession codes
 
 Coordinates and structure factors of ctPrp43ΔN•U7•ADP•BeF3- (PDBid: 5lta), ctPrp43ΔN•ADP•BeF3-(HR) (PDBid: 5ltj) and ctPrp43ΔN•ADP•BeF3-(LR) (PDBid: 5ltk) have been deposited in the Protein Data Bank.

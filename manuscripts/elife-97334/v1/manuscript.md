@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/012tb2g32 Academy of Medical Engineering and Translational Medicine, Medical College, Tianjin University Tianjin China
+1. Academy of Medical Engineering and Translational Medicine, Medical College, Tianjin University Tianjin China ([ROR:012tb2g32](https://ror.org/012tb2g32))
 2. Tianjin Key Laboratory of Brain Science and Neuroengineering Tianjin China
 3. Haihe Laboratory of Brain-Computer Interaction and Human-Machine Integration Tianjin China
-4. https://ror.org/01y1kjr75 School of Statistics and Data Science, Nankai University Tianjin China
+4. School of Statistics and Data Science, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
 
 † Corresponding author
 
@@ -44,15 +44,39 @@ Here, we proposed a scheme that fast gamma rhythms coordinate a subgroup of plac
 
 ## Results
 
-## A subgroup of hippocampal place cells phase-locked to fast gamma rhythms during active behaviors
+### A subgroup of hippocampal place cells phase-locked to fast gamma rhythms during active behaviors
 
 To investigate the temporal organization of place cells’ firing associated with the gamma rhythms during the development of theta sequences, we trained four Long-Evans rats traversed unidirectionally on a circular track, with five trials (laps) in each recording session (day). Meanwhile, neuronal spiking of place cells and local field potentials (LFPs) were recorded simultaneously in hippocampal CA1 (Figure 2—figure supplement 1) during active running behaviors (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig2-v1.jpg)
+
+**Figure 2.:** (A) An example of simultaneously recorded local field potentials (LFPs) (raw LFP; theta: 4–12 Hz; slow gamma: 25–45 Hz; fast gamma: 65–100 Hz) and spikes of place cells. The troughs of theta were represented by dark gray vertical lines. Slow and fast gamma episodes were marked by dashed boxes and gray blocks. (B) Firing characteristics of two examples of FG- and NFG-cells, including turning curve, fast and slow gamma phase distribution during detected episodes. Spikes were represented by red rasters on top of the gamma traces. Mean vector length of each cell was shown above the gamma phase distribution. (C) The normalized turning curves of place cells sorted by the center of mass of their main place field. The proportion of four types of cells identified according to different modulation by fast and slow gamma was shown on the right. (D) Mean vector length of fast gamma phase distribution of FG- and NFG-cells across successive running laps (n = 12 sessions). Data are presented as mean ± SEM. ***p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Histologic sections showing example recording sites in CA1 of four rats. The red triangle marks the location of tetrode tip in CA1 pyramidal layer.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Pairwise phase consistency (PPC) of four-type cell of Figure 2 in 5 Hz steps over a range of 0–100 Hz. (B) Same as (A) but for mean vector length. Legend color was same as Figure 2. Gray line indicated all 488 cells. (C, D) The normalized turning curves of FG-cells (red) and NFG-cells (yellow) detected according to the local local field potential (LFP) and consistent central LFP as reference, respectively. The number of FG-cells in (C) and (D) was 113 (23.2%) and 101 (20.7%). They were sorted by the center of mass of main place field. (E) The PPC of FG- and NFG-cells (n = 113 and 375 cells) in (C), modulated by all LFP frequency band (1–100 Hz). (F) The PPC of FG- and NFG-cells (n = 101 and 387 cells) in (D), modulated by all LFP frequency band (1–100 Hz). Data are presented as mean ± SEM.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) An example FG-cell with significant theta phase precession. Red line shows the linear-circular regression of scatter plots. (B) An example NFG-cell with significant theta phase precession. Yellow line shows the linear-circular regression of scatter plots. (C) An example of FG-cell without significant theta phase precession. (D) An example NFG-cell without significant theta phase precession. (E) Percentage of FG- and NFG-cells with or without significant theta phase precession. ***p < 0.001.
+
 The slow and gamma episodes were detected in time periods when the power of each gamma type (Figure 2A, B, fast gamma: 65–100 Hz, slow gamma: 25–45 Hz) was above a preset threshold (see Materials and methods). We could observe both slow gamma and fast episodes occurred during active exploration. As shown in a previous study, 32% of hippocampal pyramidal cells were phase-locked to gamma rhythms during waking theta states (Senior et al., 2008). We further tested how the hippocampal place cells were modulated by slow and fast gamma rhythms, respectively, by quantifying the slow or fast gamma phase distributions of all spikes across all trials (Figure 2B). In this study, 488 place cells were included with place field distributed on the circular track but not located at the resting box. We employed local LFPs as reference to detect gamma phase-locking and found that 120 (24.6%) out of these cells were significantly phase-locked to gamma rhythms, a majority of which (113 cells, 23.2%) exhibited significant phase-locking to fast gamma rhythms (Figure 2C, Figure 2—figure supplement 2A, B). We also detected FG-cells by using LFP from a different tetrode, that is the central one of the bundle that located in the pyramidal layer, and found approximate proportion of FG-cells which phase-locked to ~75 Hz (Figure 2—figure supplement 2C–F, Chi-squared test, χ2 = 0.9, p = 0.4, Cramer V = 0.03). Their preferred fast gamma phases (202.38 ± 2.01°) were concentrated around the peak of fast gamma cycle, which was consistent with the findings in Schomburg et al., 2014. However, a very small number (3.7%) of cells were found to phase-locked to slow gamma rhythms. Thus, these place cells were subdivided according to whether they were significantly phase-locked to fast gamma (FG-cells) or not (NFG-cells) during active behaviors in the subsequent analyses. Furthermore, the fast gamma phase-locking of FG-cells was stable across trials, with a significantly higher mean vector length of fast gamma phase-locking than those of NFG-cells (Figure 2D, repeated measure ANOVA, main effect of cell type, F(1,22) = 33.9, p = 7.5 × 10–6, partial η2 = 0.6; main effect of trials, F(4,88) = 1.3, p = 0.3, partial η2 = 0.06, no cell type × trials interaction, F(4,88) = 0.5, p = 0.8, partial η2 = 0.02). Meanwhile, we also found that a larger proportion of neurons in FG-cells had significant theta phase precession than NFG-cell (Figure 2—figure supplement 3, Chi-squared test, ratio of theta phase precession cell among the FG- vs. NFG-cell, n = 457 cell，χ2 = 13.7, p = 2.1 × 10–4, Cramer V = 0.2). These results suggested that the FG-cells were stably modulated by fast gamma rhythms during active behaviors.
 
-## The FG-cells were crucial for theta sequence development
+### The FG-cells were crucial for theta sequence development
 
 As theta sequences were developed dependent on experience, we next investigated whether FG- and NFG-cells played different roles in the development of theta sequences. We then used a Bayesian decoding approach (see Methods) to identify trajectories represented as rats running on a circular track, and detected theta sequences in each single lap (Figure 3A). Another two decoders were built by excluding either FG-cells spikes or downsampled NFG-cells spikes, respectively, in order to compare the structures of theta sequences without each type of cells. It can be observed that posterior probability distribution of theta sequences was changed by excluding spikes from FG-cells (Figure 3B). The weighted correlation of each sequence (Feng et al., 2015) was then measured to quantify the temporospatial correlation of a theta sequence structure. We found that the weighted correlation of theta sequences decoded by excluding FG-cells spikes (exFG-sequences) was much lower than that of theta sequences decoded by excluding downsampled NFG-cells spikes (exNFG-sequences) in the same theta cycles (Figure 3C, generalized linear mixed model, main effect of cell type, F(2,7255) = 53.0, p = 0; post hoc test, raw sequences vs. exFG-sequences, p = 0, raw sequences vs. exNFG-sequences, p = 4.6 × 10–8, exFG-sequences vs. exNFG-sequences, p = 1.1 × 10–6). This suggests that the sequential structure could be dominantly interrupted by excluding FG-cells rather than NFG-cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig3-v1.jpg)
+
+**Figure 3.:** (A) Top: An example of color-coded decoded probability with time during a single lap. The running trajectory of the animal was indicated as white dashed line. Bottom: 4–12 Hz bandpass filtered theta rhythm, with cycles divided on trough indicated as red bars. (B) Examples of detected theta sequences decoded by three different decoders, all spikes from all cells (top, i.e. raw sequences), all spikes excluding those from FG-cells (middle, i.e. exFG-sequences) and all spikes excluding those from NFG-cells (bottom, i.e. exNFG-sequences). The white triangle indicates the animal’s current position. The white boxes indicate the center of sequences for calculating weighted correlation. (C) Weighted correlations of sequences among three types of decoders (n = 2423 sequences). (D) Averaged decoded probabilities for each lap, at a range of the animal’s current position ±63 cm and the mid-time point of theta sequence ±170 ms, of a single recording session. (E) Weighted correlation of raw sequences was significantly increased with running laps (n = 12 sessions). (F) The running speeds were maintained across laps. (G) The sweep-ahead structure of the exFG-sequences was disrupted compared to that of exNFG-sequences (n = 12 sessions). (H) The effect of excluding either FG- or NFG-cells at early (left) and late (right) development of theta sequences (n = 24 laps). Data are presented as mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97334/elife-97334-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The polar coordinates’ histogram of angle difference between instantaneous head direction and angle of tangent vector along the circular track across laps (n = 12 sessions). The distribution of angle difference did not significantly change across laps.
 
 Consistent with the previous studies (Feng et al., 2015; Wang et al., 2020), we also observed the development of theta sequences along with exploration experience (Figure 3D, E, repeated measure ANOVA, main effect of trials, F(4,44) = 7.0, p = 2.0 × 10–4, partial η2 = 0.4). This could not be accounted for by behavioral parameters, as the rats were running at stable running speed and head direction across trials (Figure 3F, repeated measure ANOVA, main effect of trials: F(4,44) = 0.9, p = 0.5, partial η2 = 0.07; Figure 3—figure supplement 1, Watson–Williams multi-sample test, F(4,55) = 0.2, p = 0.9, partial η2 = 0.01). We further investigated whether the FG- or NFG-cells were required for the development of theta sequence structure. Interestingly, the temporospatial structure of the theta sequences cannot be developed with experience when the FG-cell spikes were excluded, with significantly lower weighted correlation than theta sequences constructed by excluding NFG-cell spikes (Figure 3D, G, repeated measure ANOVA, trials × cell type interaction, F(4,44) = 3.0, p = 0.03, partial η2 = 0.2, main effect of cell type, F(1,11) = 7.8, p = 0.02, partial η2 = 0.4; main effect of trials, F(4,44) = 4.0, p = 0.008). Since the theta sequences have been developed after Lap2, we defined the early development phase of sequences as the first two laps and late development phase of sequences as the last two laps of exploration experience, respectively. We found that the weighted correlation of both exFG- and exNFG-sequences was low during early development (Figure 3H, paired t-test, t(24) = 0.2, p = 0.9, Cohen’s d = 0.04). During late development, however, the weighted correlation of exNFG-sequences was higher than that of exFG-sequences (Figure 3H, paired t-test, t(24) = −3.7, p = 0.001, Cohen’s d = 0.8). These results suggest that fast gamma modulation of place cells may contribute to the development of theta sequence with exploration experience.
 
@@ -68,7 +92,7 @@ In addition, we tested whether these results could be accounted for by the diffe
 
 **Figure 5.:** (A) Spatial tuning curves of representative FG- and NFG-cells during exploration on the circular track. Each column of cells exhibited similar place field positions on the track. (B) Distribution of the place field centers of mass (COM) of FG- and NFG-cells as a function of position on the track (n = 113 cells for FG-cells and downsampled n = 113 cells for NFG-cells). (C) Cumulative distribution of FG- and NFG-cells’ place field COM. (D) Mean firing rate, (E) excluded spike counts in decoding, (F) place field size, and (G) spatial information of FG- and NFG-cells (n = 12 sessions). Data are presented as mean ± SEM. *p < 0.05.
 
-## FG-cells exhibited slow gamma phase precession for information compression required in theta sequence development
+### FG-cells exhibited slow gamma phase precession for information compression required in theta sequence development
 
 In our previous study, we found that the place cell spikes occurred at progressively earlier slow gamma phases across slow gamma cycles in theta sequences, so-called slow gamma phase precession (Zheng et al., 2016). As sequences of locations were represented at different slow gamma phases, theta sequences exhibited temporospatially compressed structure representing long paths. We next investigated if the development of theta sequence structure was related to the slow gamma phase modulation of place cells. By detecting the slow gamma phases of spikes within all theta cycles, we observed that the slow gamma phases significantly shifted across successive slow gamma cycles (Figure 6A, multi-sample Mardia–Watson–Wheeler test, W(4) = 369.4, p < 2.2 × 10–16; post hoc test, Cycle –1 vs. Cycle 0, W(2) = 97.5, p < 2.2 × 10–16, Cycle 0 vs. Cycle 1, W(2) = 95.4, p < 2.2 × 10–16), which was consistent with the previous finding (Zheng et al., 2016). Then we separated out the spike activity from the early and late development, and tested if the slow gamma phase precession still existed during different developments. Interestingly, we observed slow gamma phase shifting, but not phase precession, across successive gamma cycles during early development. The distribution of slow gamma phases in Cycle 0 was similar as that in Cycle –1, then was dispersed in Cycle 1 (Figure 6B, multi-sample Mardia–Watson–Wheeler test, W(4) = 18.5, p = 9.8 × 10–4; post hoc test, Cycle –1 vs. Cycle 0, W(2) = 0.8, p = 0.7; Cycle 0 vs. Cycle 1, W(2) = 15.5, p = 4.4 × 10–4). However, the slow gamma phase precession existed during late development (Figure 6C, multi-sample Mardia–Watson–Wheeler test, W(4) = 21.2, p = 2.8 × 10–4; post hoc test, Cycle –1 vs Cycle 0, W(2) = 8.8, p = 0.01; Cycle 0 vs. Cycle 1, W(2) = 8.2, p = 0.02). This finding suggests that slow gamma phase precession of place cells may occur with exploring experience.
 
@@ -84,7 +108,7 @@ Furthermore, we investigated how the slow gamma phase precession occurred in the
 
 These findings raised a question of whether the development of slow gamma phase presession existed for both FG- and NFG-cells. To address this question, we quantified the distribution of slow gamma phase difference in FG- and NFG-cells, respectively. We found that the slow gamma phase difference of FG-cells consistently exhibited a stable phase precession across trials, independent with learning experience (Figure 7E, lap1 p = 0.007, lap2 p = 0.006, lap3 p = 0.007, lap4 p = 0.002, lap5 p = 0.02). In contrast, the slow gamma phase precession of NFG-cells was experience dependent, with negative biased distribution of phase difference occurring from lap2 (Figure 7E, lap1 p = 0.9, lap2 p = 0.01, lap3 p = 0.001, lap4 p = 0.009, lap5 p = 0.1). These results suggest that FG- and NFG-cells have different dynamic modulated by slow gamma rhythms during exploration experience. The slow gamma modulation of FG-cells may occur earlier than that of NFG-cells, thereby driving the location information to be coded within theta cycles in a highly temporospatially compressed way.
 
-## FG- and NFG-cells exhibited different dynamics of slow gamma modulation along with theta sequence development
+### FG- and NFG-cells exhibited different dynamics of slow gamma modulation along with theta sequence development
 
 Finally, we wondered if there was correlation between slow gamma phase precession and the development of theta sequence structure, and how the FG- and NFG-cells coordinated during this process. Within each theta sequence, we measured its weighted correlation of the sequence structure, and plot it as a function of slow gamma phase difference across slow gamma cycles. Interestingly, we found most data were distributed in the Quadrant1 (Q1) compared to the shuffled data distributed at the center (Figure 8A, B). The theta sequences with negative slow gamma phase difference and positive weighted correlation were significantly dominant (Figure 8C, the probability of observed data from lap1 exceeded 95% confidence intervals of those from shuffled data, p = 0.001). This finding supports our hypothesis that the theta sequence development could be associated with the slow gamma phase precession.
 
@@ -114,61 +138,73 @@ It is noteworthy that the subset of neurons (FG-cells) was modulated by both fas
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Four male Long-Evans rats weighing 500–700 g (~6–12 months old) were used in this study. Rats were housed in custom-made acrylic cages (40 cm × 40 cm × 40 cm) on a reverse light cycle (Light: 8:00 pm to 8:00 am). All waking behavior recordings were performed during the dark phase of the cycle (i.e., from 8:00 am to 8:00 pm). Rats were handled prior to recording drive implantation surgery. Rats recovered from surgery for at least 1 week before behavioral training resumed. Behavioral training was initiated after at least 1 week of recovery from implantation surgery. Rats were physically deprived during experimental data collection so that their body weight was maintained at ~90% of their free-feeding body weight. All experiments were conducted according to the guidelines of the Animal Care and Use Committee of Tianjin University.
 
-## Behavioral paradigm
+### Behavioral paradigm
 
 Following the postsurgery recovery period, rats were trained to run on a circular track from our previous study (Wang et al., 2024; Zheng et al., 2021). In each recording day (session), rats ran five trials (or laps) on the track (inner diameter of 90 cm, height of 50 cm, and width of 10 cm, surrounded by a blue curtain) without receiving any food reward. Each trial was starting and ending at a wooden rest box attached to the track (starting point: 33 cm, ending point: 281 cm away from the box).
 
-## Surgery and tetrode implanting
+### Surgery and tetrode implanting
 
 Multi-tetrode drives containing 21 independently moveable tetrodes (18 recording tetrodes and 3 reference tetrodes) were implanted into the hippocampal dorsal CA1 region (anterior–posterior [AP] –3.5 mm, medial–lateral [ML] 3.0 mm, dorsal–ventral [DV] 1 mm on day of implantation). Bone screws were placed in the skull, and the screws along with the base of the drive were covered with dental cement to affix the drive to the skull. Two screws above the cerebellum in the skull were connected to the recording drive ground. Before surgery, tetrodes were built from 17 μm polyimide-coated platinum-iridium (10/90%) wire (California Fine Wire, Grover Beach, California). The tips of tetrodes designated for single-unit recording were plated with platinum to reduce single-channel impedances under 300 kOhms. Tetrodes were gradually lowered to their target locations. Recording tetrodes were targeted to the dCA1 stratum pyramidale. One reference tetrode from each region was designated as the reference for differential recording and remained in a quiet area of the cortex throughout the experiments. This reference tetrode was moved up and down until a quiet location was found and was continuously recorded against ground to ensure that it remained quiet throughout data collection. The other reference tetrode in the dHPC was placed in the dCA1 apical dendritic layer to monitor and record LFPs in the hippocampus during placement of the other tetrodes and to later obtain simultaneous recordings from a dendritic layer.
 
-## Data acquisition
+### Data acquisition
 
 Data were acquired using a Digital Lynx system and Cheetah recording software (Neuralynx, Bozeman, Montana). LFPs from one channel within each tetrode were continuously recorded in the 0.1–500 Hz band at a 2,000 Hz sampling rate. Input amplitude ranges were adjusted before each recording session to optimize resolution and prevent signal saturation. Input ranges for LFPs were typically within the range of ±2,000 μV to 3000μV. To detect unit activity, signals from each channel in a tetrode were bandpass filtered from 600 to 6000 Hz. The spike was detected when the signal on one or more of the channels exceeded a threshold set at 55 μV. Detected events were acquired with a 32,000 Hz sampling rate. Signals were recorded differentially against a dedicated reference channel (see ‘Surgery and recording drive implantation’ section). The video was recorded through the Neuralynx system with a resolution of 720 × 480 pixels and a frame rate of 25 frames per second. The animal position was tracked via a red light-emittingdiode (LED) on one of the three HS-27-Mini-LED headstages (Neuralynx, Bozeman, Montana) attached to the hyperdrive.
 
-## Estimation of running speed and head direction
+### Estimation of running speed and head direction
 
 The running speed (vt) at a time point (t) was estimated by calculating the distance between the preceding position (xt−1, yt−1) and the following position (xt+1, yt+1), and dividing by the elapsed time (2 × 1/position sampling frequency). The sampling frequency of the position data was 25 Hz, yielding a temporal resolution of 2/25 s (Figure 3F).
 
-The head direction (dt) at a given time point (t) was calculated as the arctangent of the vector formed by the preceding (xt−1, yt−1) and the following (xt+1, yt+1) position:dt=tan−1⁡(xt+1−xt−1)(yt+1−yt−1)
+The head direction (dt) at a given time point (t) was calculated as the arctangent of the vector formed by the preceding (xt−1, yt−1) and the following (xt+1, yt+1) position:
+
+$$
+d_{t}=tan^{−1}⁡\frac{(x_{t+1}−x_{t−1})}{(y_{t+1}−y_{t−1})}
+$$
 
 Angles were adjusted to the range of 0–360° (Figure 3—figure supplement 1). If the animal did not move at the time point (t), dt was set to dt−1.
 
-## Spike sorting and turning curve analysis
+### Spike sorting and turning curve analysis
 
 Detected spikes that occurred during trials were manually sorted using graphical cluster-cutting software (MClust; A.D. Redish, University of Minnesota, Minneapolis). Clusters of spikes were sorted using two-dimensional projections of three different features of spike waveforms (i.e., energies, peaks, and peak-to-valley differences) from four channels. Individual cells were identified as putative excitatory neurons that they had pyramidal cell-like waveform shape, at least 1-ms refractory period, and their clusters were perfectly separated with other clusters or noise in at least three projections. Units with mean firing rates that were higher than 15 Hz were identified as putative fast-spiking interneurons and were excluded.
 
 The turning curve of each unit was built at 90 angle bins (approximately 3.5 cm per bin) on the circular track by using spikes during locomotion (running speed >5 cm/s, Figure 5). The field size of the main place field was defined as the size of contiguous position bins with a firing rate >10% of the peak firing rate. Only units with peak firing rates over 1 Hz and main field size over 3 angle bins (approximately 10.5 cm) during trials were defined as putative neurons with spatial representation. A putative excitatory neuron, which at least had one place field, was defined as a place cell. Finally, we accepted 488 place cells for further analysis.
 
-## Spatial information score
+### Spatial information score
 
-Spatial information was calculated as previously described (Skaggs et al., 1992). Briefly, for each cell, the spatial information score in bits per spike was calculated from the recording during test trials (Figure 5), as:Spatial information=∑iPiλiλlog2⁡λiλ
+Spatial information was calculated as previously described (Skaggs et al., 1992). Briefly, for each cell, the spatial information score in bits per spike was calculated from the recording during test trials (Figure 5), as:
 
-where λi is the mean firing rate of a unit in the ith bin, λ is the overall mean firing rate, and pi is the probability of the animal being in the ith bin (occupancy in the ith bin/total occupancies bin).
+$$
+Spatial information=\sumiP_{i}\frac{\lambda_{i}}{\lambda}log_{2}⁡\frac{\lambda_{i}}{\lambda}
+$$
 
-## Detection of gamma episodes
+where $\lambda_{i}$ is the mean firing rate of a unit in the ith bin, $\lambda$ is the overall mean firing rate, and $p_{i}$ is the probability of the animal being in the ith bin (occupancy in the ith bin/total occupancies bin).
+
+### Detection of gamma episodes
 
 LFP signals from each tetrode were band-pass filtered for slow gamma (25–45 Hz) and fast gamma (65–100 Hz) rhythms. Time-varying power for slow gamma and fast gamma was computed, using a Morlet’s wavelet transform method described previously (Tallon-Baudry et al., 1997; Zheng et al., 2016), and then averaged within each frequency range. To detect slow and fast gamma episodes, we z-scored the time-varying power for slow and fast gamma across time within each trial. The timestamp of z-scored time-varying power ≥3 was set as the center of a slow or fast gamma episode, and a 160-ms window around this center was defined as a gamma episode. For the windows with overlapping time bins, the one with the lower gamma amplitude was discarded. Also, the slow (or fast) gamma episode with z-scored fast (or slow) gamma power ≥3 was removed, ensuring that fast and slow gamma episodes are mutually exclusive (Figure 2A, B).
 
-## Detection of FG- and NFG-cells
+### Detection of FG- and NFG-cells
 
 The spikes of each place cell recorded during freely running on the track were included. The time-varying slow or fast phases of local LFPs from the same tetrode with recorded cells were calculated by Hilbert transform of the bandpass filtered signals. Each spike time was matched to the closest LFP time stamp to determine its corresponding slow and fast gamma phase, and the slow and fast gamma phase distribution was established for each cell (Figure 2B). Mean vector length was quantified based on the slow and fast gamma phase distributions. Significant phase-locking to either slow or fast gamma was detected by Rayleigh test on phase distributions with at least 10 spikes in each lap. Because of a relatively high proportion of significant fast gamma phase-locked cells, we focused on these cells in this study and defined them as FG-cells (Figure 2C). Meanwhile, NFG-cells were defined as place cells which were not significantly phase-locked to fast gamma with at least 10 spikes in each lap. In addition, regarding the contribution of spike leakage to the local LFPs, we also selected an individual tetrode which located at stratum pyramidale and at the center of the drive bundle for each rat. We detected a similar proportion of FG-cells by using LFPs on this tetrode, compared with that using local LFPs (Chi-squared test, χ2 = 0.9, p = 0.4, Cramer V = 0.03).
 
-## Theta phase precession
+### Theta phase precession
 
 LFPs from each tetrode were filtered through a 4- to 12-Hz bandpass filter. Theta phases were estimated using angles of their Hilbert-transformed signals for each channel. Theta phase precession was examined in linearized spatial turning curves (see Spike sorting and turning curve analysis). For spikes within each place field, phase precession was computed using a circular-linear fit (Kempter et al., 2012). The p-value from the circular-linear regression was reported (Figure 2—figure supplement 3).
 
-## Single-trial Bayesian decoding analysis
+### Single-trial Bayesian decoding analysis
 
-In the decoding analysis, we included the recording sessions with 44 ± 1 HPC place cells. To translate ensemble spiking activity into radian positions on the circular track, the Bayesian decoding algorithm was implemented. For each trial, a memoryless Bayesian decoder was built at 90 angle bins (ranging from 0 to 2pi) by using spikes during locomotion (running speed >5 cm/s) in this trial. Decoding was performed using a 20-ms sliding time window with 5-ms stepping. For each time window, the number of spikes occurring is denoted as ni, so that the vector of all spiking activity simultaneously recorded for the cell is n=n1,n2,⋯,ni. The probability of a rat being at position x, given the number of spikes n from each unit recorded in a time window, was estimated by Bayes’ rule:Pxn=Pnx×PxPn
+In the decoding analysis, we included the recording sessions with 44 ± 1 HPC place cells. To translate ensemble spiking activity into radian positions on the circular track, the Bayesian decoding algorithm was implemented. For each trial, a memoryless Bayesian decoder was built at 90 angle bins (ranging from 0 to 2pi) by using spikes during locomotion (running speed >5 cm/s) in this trial. Decoding was performed using a 20-ms sliding time window with 5-ms stepping. For each time window, the number of spikes occurring is denoted as $n_{i}$, so that the vector of all spiking activity simultaneously recorded for the cell is $n=n_{1},n_{2},⋯,n_{i}$. The probability of a rat being at position $x$, given the number of spikes $n$ from each unit recorded in a time window, was estimated by Bayes’ rule:
 
-where Pnx was approximated from the single directional firing turning curve of each unit. The approximation assumed that the turning curve of individual units was statistically independent and the number of spikes from each unit followed a Poisson distribution. Prior knowledge of position Px was set to 1 to avoid decoding bias to any particular location on the track. The normalizing constant  P(n) was set to ensure Pxn, or posterior probability, summed to 1 (Figure 3). The decoding position was is the set of x that maximizes Pxn. For excluded cell decoding, position reconstruction was performed by removing the FG- or NFG-cells from n, respectively. Bayesian decoding analyses were performed using custom routines in MATLAB 2020b.
+$$
+Pxn=\frac{Pnx\timesPx}{Pn}
+$$
 
-## Theta sequences detection
+where $Pnx$ was approximated from the single directional firing turning curve of each unit. The approximation assumed that the turning curve of individual units was statistically independent and the number of spikes from each unit followed a Poisson distribution. Prior knowledge of position $Px$ was set to 1 to avoid decoding bias to any particular location on the track. The normalizing constant $ P(n)$ was set to ensure $Pxn$, or posterior probability, summed to 1 (Figure 3). The decoding position was is the set of x that maximizes $Pxn$. For excluded cell decoding, position reconstruction was performed by removing the FG- or NFG-cells from $n$, respectively. Bayesian decoding analyses were performed using custom routines in MATLAB 2020b.
+
+### Theta sequences detection
 
 Theta rhythms were detected from a central tetrode of all recording tetrodes which located in the stratum pyramidale of hippocampus. We cut sequences at each theta phases (0°, 10°, 20°, …, 350°) and quantified averaged weighted correlation corresponding to these 36 possible phases (see ‘Weighted correlation of theta sequences’). Then, the optimal cutting phase of the theta cycle was determined when the weighted correlation of theta sequences was maximal, whereby the sequences were separated within each theta cycle (Figure 3A).
 
@@ -176,38 +212,58 @@ Raw theta sequences were detected by the following criteria: (1) during the sequ
 
 To investigate the relationship between sequence development and slow gamma phase precession, we defined FG- and NFG-cell sequences (Figure 8). FG-cell sequences are theta sequences with (1) at least one FG-cell and (2) at least firing spikes across three slow gamma cycles for an individual cell. And the ‘NFG-cell-dominant sequences’ are theta sequences with (1) only NFG-cells and (2) at least firing spikes across three slow gamma cycles for an individual cell.
 
-## Weighted correlation of theta sequences
+### Weighted correlation of theta sequences
 
-Weighted correlation was calculated to identify sequential structure within a theta cycle. Decoding probabilities (prob) were assigned as the weights of the position estimates to calculate the correlation coefficient between the time (t) and the decoding position (p) as follows:corrw(t,p;prob)=cov(t,p;prob)cov(t,t;prob)cov(p,p;prob)
+Weighted correlation was calculated to identify sequential structure within a theta cycle. Decoding probabilities (prob) were assigned as the weights of the position estimates to calculate the correlation coefficient between the time (t) and the decoding position (p) as follows:
 
-and the weighted covariance between time and decoded position covt,p;prob is as follows:covt,p;prob=∑iprobi(ti-m(t;prob))(pi-m(p;prob))∑iprobi
+$$
+corr_{w}(t,p;prob)=\frac{cov(t,p;prob)}{\sqrt{cov(t,t;prob)cov(p,p;prob)}}
+$$
 
-Weighted means of time and decoded position are as follows:mt;prob=∑iprobiti∑iprobi
+and the weighted covariance between time and decoded position $covt,p;prob$ is as follows:
 
-andmp;prob=∑iprobipi∑iprobi
+$$
+covt,p;prob=\frac{\sum_{i}prob_{i}(t_{i}-m(t;prob))(p_{i}-m(p;prob))}{\sum_{i}prob_{i}}
+$$
+
+Weighted means of time and decoded position are as follows:
+
+$$
+mt;prob=\frac{\sum_{i}prob_{i}t_{i}}{\sum_{i}prob_{i}}
+$$
+
+and
+
+$$
+mp;prob=\frac{\sum_{i}prob_{i}p_{i}}{\sum_{i}prob_{i}}
+$$
 
 Weighted correlation of each theta sequence was calculated from the decoded probabilities of positions 35 cm behind and ahead of the rat’s current location, in a time window of ±30 ms (approximate 1⁄4 theta cycle) before and after the mid-time point of each theta sequence (Figures 3 and 4). A significant sweep-ahead structure in the current running direction would produce a large positive correlation, whereas a lack of sequential structure would produce a correlation close to zero.
 
-## Slow gamma phase shift analysis of cell ensemble
+### Slow gamma phase shift analysis of cell ensemble
 
 Slow gamma phase shift of cell ensemble was estimated as previously described (Zheng et al., 2016). The gamma cycle with maximal spiking across all simultaneously recorded cells was defined as cycle 0. Gamma cycles occurring before cycle 0 are represented by decreasing integer values, after by increasing integer values. Incomplete cycles at the beginning or end of the sequence or during immobile (speed <5 cm/s) were excluded from analyses. We estimated the gamma and theta phases of spike times for place cells that exhibited spikes within at least two slow gamma cycles or at least three fast gamma cycles within a single theta cycle. The number of cycles analyzed within each theta sequence was limited to three (cycles –1 to 1) for slow gamma. Two-dimensional histograms of gamma phases and theta phases for spikes from each cycle number were binned into 40 bins and smoothed across nine bins (Figure 6).
 
-## Slow gamma phase shift analysis of individual cell
+### Slow gamma phase shift analysis of individual cell
 
-Time-varying slow gamma power (see Detection of gamma episodes) was averaged within each theta cycle. To identify the theta cycle with high slow gamma power, we z-scored time-varying slow gamma power across the theta cycle within each trial. The theta cycle with z-scored time varying power ≥1.5 was defined as slow gamma events. The global 0 phase of slow gamma, set at the trough, determined the phase shift. Slow gamma cycles with at least one spike was defined as active slow gamma cycles (Figure 7A). The slow gamma phase difference of a theta cycle with k (k ≥ 2) adjacent active slow gamma cycles (active cycle) is as follows:slow gamma phase difference=∑i=2k(φi−φi−1)k−1
+Time-varying slow gamma power (see Detection of gamma episodes) was averaged within each theta cycle. To identify the theta cycle with high slow gamma power, we z-scored time-varying slow gamma power across the theta cycle within each trial. The theta cycle with z-scored time varying power ≥1.5 was defined as slow gamma events. The global 0 phase of slow gamma, set at the trough, determined the phase shift. Slow gamma cycles with at least one spike was defined as active slow gamma cycles (Figure 7A). The slow gamma phase difference of a theta cycle with k (k ≥ 2) adjacent active slow gamma cycles (active cycle) is as follows:
 
-where φi and φi-1 are, respectively, slow gamma phase of a spike in ith and (i-1)th active cycle. A negative slow gamma phase difference value indicates phase precession, while a positive value indicates phase procession.
+$$
+slow gamma phase difference=\frac{\sumi=2k(\phi_{i}−\phi_{i−1})}{k−1}
+$$
+
+where $\phi_{i}$ and $\phi_{i-1}$ are, respectively, slow gamma phase of a spike in ith and (i-1)th active cycle. A negative slow gamma phase difference value indicates phase precession, while a positive value indicates phase procession.
 
 In order to test if the negatively biased distribution was robust for slow gamma phase precession, we generated surrogate data and compared their distribution with the real data. A random slow gamma phase within the same cycle was assigned to each spike to keep its firing location constancy, and the distribution of slow gamma phase difference was obtained for this mock data. This procedure was repeated 1000 times to get 1000 distributions and the 95% confident interval of their median (black lines in Figure 7C–E). In the analysis, we calculated one-sided, corrected empirical p-values [(r + 1)/(n + 1)] by comparing real data to its corresponding shuffle data. Where r is the number values from the shuffled distribution that are either smaller or larger (depending on the hypothesis) than the observed value and n = 1000 is the number of shuffling (Figure 7C–E).
 
-## Correlation between slow gamma phase precession and weighted correlation
+### Correlation between slow gamma phase precession and weighted correlation
 
 FG- and NFG-cell sequences were included in this analysis (see ‘Theta sequences detection’ section). For each type of sequences, a scatter plot was made to visualize the relationship between slow gamma phase precession and theta sequence structure, with slow gamma phase shift of each sequence on x-axis and its weighted correlation on y-axis (Figure 8A, D, G). Meanwhile, a two-dimensional histogram was measured to show the distribution of sequences in four quadrants (Figure 8B, E, H). We summed up the probability in Quadrant 1 (Q1) and compared it with that of the mock data generated in Figure 7. The statistical significance was determined by calculating the one-sided, corrected empirical p-value, with lower p-value indicating significantly higher probability in Q1 of real data than that of the mock data (Figure 8C, F, I).
 
-## Histology
+### Histology
 
 At the end of the experiment, histological sections were prepared as follows to verify the tetrodes position. Rats were intraperitoneally injected with a lethal dose of urethane solution. The heart was subsequently perfused with phosphate buffer and formalin to fix the brain tissue. Rat brains were then cut into 30 μm coronal sections and Nissl Staining was performed to determine the location of tetrode in CA1.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data analyses were performed using SPSS (IBM), custom Matlab (the Math Work) and R scripts. Paired t-test was performed to compare weighted correlation for exFG- and exNFG-sequences during early and late development (Figure 3H). Student’s t-test was performed to compare the mean firing rate, spike counts, place fields size and spatial information for the FG- and NFG-cell (Figure 5D–G). One-sample t-test was used to test whether the slow gamma phase shift was significantly lower than 0 (Figure 7B). Repeated measures ANOVA was performed to test the MVL for FG- and NFG-cell (Figure 2D), weighted correlation of theta sequences (Figure 3E, G), and running speed (Figure 3F) across laps. Generalized linear mixed model was performed to compare weighted correlation among the Raw-, exFG-, and exNFG-sequence. Chi-squared test was performed to compare the proportion of neurons had significant theta phase precession in FG- and NFG-cells (Figure 2—figure supplement 3). Kolmogorov–Smirnov test was performed to test the distribution of place field COM (Figure 5C) on the track using the Matlab function ‘kstest2’. Watson–Williams multi-sample test (circular one-way ANOVA test) was performed to test the for differences in head directions across laps (Figure 3—figure supplement 1) using the ‘circ_wwtest’ function from the CircStat Toolbox. Multi-sample Mardia–Watson–Wheeler test was performed to test the slow gamma phase shift of place cells across successive slow gamma cycles (Figure 6) using the R ‘circular-package’.

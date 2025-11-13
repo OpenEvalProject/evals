@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04tj63d06 Department of Biological Sciences, North Carolina State University Raleigh United States
+1. Department of Biological Sciences, North Carolina State University Raleigh United States ([ROR:04tj63d06](https://ror.org/04tj63d06))
 
 † Corresponding author
 
 ## Abstract
 
-New developmental programs can evolve through adaptive changes to gene expression. The annelid Streblospio benedicti has a developmental dimorphism, which provides a unique intraspecific framework for understanding the earliest genetic changes that take place during developmental divergence. Using comparative RNAseq through ontogeny, we find that only a small proportion of genes are differentially expressed at any time, despite major differences in larval development and life history. These genes shift expression profiles across morphs by either turning off any expression in one morph or changing the timing or amount of gene expression. We directly connect the contributions of these mechanisms to differences in developmental processes. We examine F 1 offspring – using reciprocal crosses – to determine maternal mRNA inheritance and the regulatory architecture of gene expression. These results highlight the importance of both novel gene expression and heterochronic shifts in developmental evolution, as well as the trans -acting regulatory factors in initiating divergence.
+New developmental programs can evolve through adaptive changes to gene expression. The annelid Streblospio benedicti has a developmental dimorphism, which provides a unique intraspecific framework for understanding the earliest genetic changes that take place during developmental divergence. Using comparative RNAseq through ontogeny, we find that only a small proportion of genes are differentially expressed at any time, despite major differences in larval development and life history. These genes shift expression profiles across morphs by either turning off any expression in one morph or changing the timing or amount of gene expression. We directly connect the contributions of these mechanisms to differences in developmental processes. We examine F1 offspring – using reciprocal crosses – to determine maternal mRNA inheritance and the regulatory architecture of gene expression. These results highlight the importance of both novel gene expression and heterochronic shifts in developmental evolution, as well as the trans-acting regulatory factors in initiating divergence.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ One difficulty in determining the genetic basis of gene expression shifts is tha
 
 ## Results
 
-## Study system and embryology
+### Study system and embryology
 
 We compare the gene expression over developmental time for two morphs of a marine annelid, Streblospio benedicti, which has an intraspecific developmental dimorphism. There are two distinct developmental morphs which differ in their egg size, embryological development time, larval ecology, and morphology. These are either obligately feeding planktotrophic (PP) larvae or non-feeding lecithotrophic (LL) larvae. Despite these developmental differences, as adults they are morphologically indistinguishable outside of some reproductive traits and occupy the same environmental niches. The larval traits are heritable, meaning the differences in development are genetic and not plastic (Levin and Creed, 1986). The two morphs have been characterized extensively in terms of life-history and genetic differences (Levin, 1984; Levin and Creed, 1986; Gibson et al., 2010; Zakas and Rockman, 2014; Zakas et al., 2018; Zakas, 2022). Intriguingly, crosses between the morphs are viable with no obvious fitness effects, and these F1 offspring can have intermediate larval traits compared to the parentals (Levin and Creed, 1986; Zakas, 2022). Embryological differences between the two types (and thus egg sizes) have been briefly described (McCAIN, 2008) but here we detail the full time course of embryogenesis from the one-cell embryo through the larval phase in detail for both morphs, and present data from reciprocal F1 crosses (PL or LP) between the morphs in both directions across the same developmental period.
 
@@ -33,15 +33,25 @@ Spiralian animals have a famously conserved pattern of embryological cleavage (r
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig1-v1.jpg)
 
-**Figure 1.:** S. benedicti.(A) Timeline of early development of the two morphs. The ‘swimming’ stage is the onset of swimming ability in both morphs. The ‘1-week’ old stage (7 days post fertilization) occurs approximately 1–4 days following larval release from maternal brood pouches under natural conditions. Planktotrophic (PP) larvae at this stage were not fed. Stages used in this study are marked with a red dot. (B) Adult male. The adults of both morphs are indistinguishable outside of reproductive traits. (C) Table of larval traits. Lecithotrophic (LL) offspring are facultatively feeding, meaning that feeding is not obligatory, but they are capable of feeding (Pernet and McArthur, 2006). Gut formation from Pernet and McHugh, 2010, where the three-band stage is our swimming stage and the five-band stage is shortly before our 1-week stage.
+**Figure 1.:** (A) Timeline of early development of the two morphs. The ‘swimming’ stage is the onset of swimming ability in both morphs. The ‘1-week’ old stage (7 days post fertilization) occurs approximately 1–4 days following larval release from maternal brood pouches under natural conditions. Planktotrophic (PP) larvae at this stage were not fed. Stages used in this study are marked with a red dot. (B) Adult male. The adults of both morphs are indistinguishable outside of reproductive traits. (C) Table of larval traits. Lecithotrophic (LL) offspring are facultatively feeding, meaning that feeding is not obligatory, but they are capable of feeding (Pernet and McArthur, 2006). Gut formation from Pernet and McHugh, 2010, where the three-band stage is our swimming stage and the five-band stage is shortly before our 1-week stage.
 
-## Total RNA expression analysis
+### Total RNA expression analysis
 
 We measured total gene expression from the six developmental stages using RNAseq (Figure 2) with at least four biological replicates per morph at each stage (Figure 2A). Using the full dataset, the first two principal component analysis (PCA) show most of the variance in total gene expression is due to developmental stage and morph (PC1; Figure 2B). As expected the LL individuals appear to transcriptionally fall behind the PP offspring at each morphologically defined, equivalent developmental stage. We expect this pattern as LL offspring develop more slowly to reach these first developmental stages but reach the juvenile stage more quickly in absolute time than PP offspring, which develop in the water column for a longer period (Figure 1). Notably, pre-gastrulation development is distinctly separated from post-gastrulation by the second principal component.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sequenced libraries. Colors indicate morphs: green = PP (planktotrophic), orange = LL (lecithotrophic), purple = (F1) PL, pink = (F1) LP. Numbers in boxes are the sample’s sequencing depth in million reads. Total number of replicates for each time point are in bold. Samples for which all six stages were collected from the same cross are indicated as ‘complete’ with a check mark. (B) Principal component analysis of PP and LL samples. PC1 represents developmental time, whereas PC2 separates pre-gastrulation from post-gastrulation (C) DE between morphs over development. Black line is the percentage of total expressed genes that are DE at each stage, ribbon displays the relative mean and median log2 fold-change between morphs for those genes that are DE.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Mapping rates in all pairwise comparisons do not differ significantly. p-Values are shown above the plot indicating no significant differences between the mapping rates of any two groups.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig2-figsupp2-v1.jpg)
+
 As expected for an intraspecific comparison, most genes are conserved, having the same expression levels at all stages in both morphs. Only 36.2% of all expressed genes are significantly differentially expressed (DE) between PP and LL at any stage in this dataset. We find that early in development over a third of these DE genes are significantly different between the morphs, but these differences tend to be quite small in magnitude. At gastrulation the number of significant genes decreases to less than 5% of the total DE genes, however these remaining expression differences are much larger in magnitude (Figure 2C). It appears that the two morphs are more functionally distinct during early development, likely because of the different metabolic requirements imposed on them by the differences in maternal egg provisioning (Moran and McAlister, 2009; Zakas, 2022; Harry and Zakas, 2023).
 
-## Differential expression analysis
+### Differential expression analysis
 
 We use our RNAseq time course dataset to quantify the extent that modifications to gene expression timing and amount contribute to developmental differences. We define heteromorphic genes as homologous genes whose expression differs significantly between larval morphs, but the pattern of expression (expression profile) does not change (Figure 3). The significant difference in heteromorphic genes could be at only one or a few discrete time points. Heterochronic genes are those whose overall expression pattern and timing change between the developmental morphs, as discussed in the clustering algorithm below. We categorize genes that are only expressed in one morph over the full time course of development as morph-specific genes. These genes are specific to only one developmental type.
 
@@ -50,6 +60,18 @@ We use our RNAseq time course dataset to quantify the extent that modifications 
 **Figure 3.:** Functional heterochrony is a change in the developmental stage at which a particular pattern of gene expression appears instead of a difference in absolute time.
 
 To differentiate heterochronic shifts in gene expression from heteromorphic ones, we clustered all gene expression patterns from PP into a representative set of expression profiles using Mfuzz (v2.60.0) (no additional clusters were found when using LL). We selected six clusters based on the criteria that the average correlation between cluster pairs increased with each additional cluster, such that the final clusters generated sufficiently represented the diversity of gene expression patterns (Figure 4, Figure 4—figure supplement 1). We then assigned each gene to a cluster in the PP and LL datasets independently. A gene’s expression is considered heterochronic when it appears in one cluster for PP and a different cluster for LL.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig4-v1.jpg)
+
+**Figure 4.:** The number of conserved genes and heteromorphic genes that match each cluster is listed to summarize overall trends in expression patterns that appear mostly similar in both morphs. Clusters 2 (early expression) and 5 (late expression) represent the most genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The correlation between the two most similar gene expression clusters (profiles) as cluster number increases. Threshold (solid line) at r=0.85.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Red lines indicate genes with high cluster membership scores while blue lines indicate genes with lower membership scores. Genes with no cluster membership score greater than 0.5 were not assigned to a cluster and are not presented in this study’s results.
 
 We identified 354 genes from our set of DE genes (45.9%) where both the PP and LL expression pattern matched the same cluster. (These are heteromorphic genes and are significantly DE in at least one developmental stage, but do not have different profiles of expression between PP and LL.) Approximately half of these are assigned to clusters 2 and 5. Cluster 2, which shows a pattern of maternal transcript degradation with no subsequent zygotic expression, is likely to contain genes associated with embryogenesis that are shared by both morphs. Cluster 5 shows a pattern of largely post-gastrulation zygotic gene expression. Based on this pattern, these genes are likely to be associated with shared larval features. Although there are some late-appearing heteromorphic genes that are associated with discrete larval differences: ‘chitin catabolic processes’, for example, are overexpressed in PP at the swimming stage (when they grow swimming chaetae) and are lowly expressed in LL which do not make swimming chaetae (see Supplementary file 1).
 
@@ -79,15 +101,25 @@ Overall, we find that heteromorphic changes in expression accounts for most gene
 
 **Figure 7.:** Heteromorphy makes up nearly half of all differentiated genes, while heterochrony and morph-specific genes split the remainder nearly equally.
 
-## Gene expression of genetic crosses
+### Gene expression of genetic crosses
 
 Because we are using an intraspecific comparison, we can extend our analysis to understand the regulatory architecture behind these expression differences. We included RNAseq time course data for offspring from reciprocal crosses between the two morphs, meaning PP and LL parents were crossed in both directions alternating the role of the mother. Cross of the two developmental morphs to produce F1 offspring, which can have a range of intermediate traits, but typically closely resemble their mother’s phenotype (Zakas and Rockman, 2014). This is particularly useful to disentangle maternal effects, as both F1s (PL and LP; mother’s genotype is listed first) are heterozygotes, but they originate from different egg sizes and mothers with different genetic backgrounds. F1s allow us to identify the regulatory architecture underlying DE, and to assess the impact of maternal background on gene expression.
 
 F1s have a general pattern of intermediate expression values but have more variability within replicates and clear cases of outliers (Figure 8A, Figure 8—figure supplement 1). They have considerably more variability across replicates, and some genes are misexpressed – where the F1 expression value is outside the range of the parental difference (Figure 8A). Misexpression is reported in hybridization studies and is thought to be the result of epistatic interactions between divergent genomes that reduce the fitness of offspring contributing to sympatric speciation (Norrström et al., 2011; Moran et al., 2021). Whether misexpression affects the fitness of the embryos in S. benedicti is unclear, although F1s typically develop normally in the lab and no systematic reduction in viability has been observed. In previous studies of gene expression in eggs of the two morphs, we saw a similar pattern where F1 eggs typically have intermediate expression values compared to parental genotypes, but high levels of misexpression (Harry and Zakas, 2023). For genes that are DE between PP and LL samples, we find that F1 gene expression patterns are split between those matching the maternal and paternal gene expression pattern, with slightly more genes matching the paternal expression at each stage (Figure 8B). We expect most transcripts in the first and second stages of development to be maternally derived, so the high proportion of genes matching paternal expression patterns is somewhat unexpected.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig8-v1.jpg)
+
+**Figure 8.:** (A) Principal component analysis (PCA) of the top 500 most variable genes, including F1 (PL or LP) offspring. F1s have more misexpression in early stages but converge after the swimming stage and become intermediate to planktotrophic (PP) and lecithotrophic (LL) samples. (B) Plot relating F1 expression back to parental types. Dots indicate the number of DEGs between PP and LL samples at each stage. Purple bars represent the number of those DEGs for which the F1 gene expression is more like its maternal parent, and gray bars represent the number of those DEGs for which the F1 gene expression is more similar to its paternal parent.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig8-figsupp1-v1.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/93062/elife-93062-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Most genes match maternal expression patterns.
+
 We find that most genes (>8000 genes on average, out of 14,327 genes expressed) have extremely conserved expression patterns among PP, LL, and F1 embryos at each developmental stage. The high variability and misexpression of F1s negatively impacts our statistical power by introducing variation and results in fewer genes being confidently assigned gene regulatory mechanisms. As a result, almost no genes can be identified as having a dominant or additive inheritance pattern, while 150 genes are identified as overdominant over the course of development. Notably, very few morph-specific genes are expressed at a significant level in either F1s (between 0 [PP] and 3 [LL] genes), strongly suggesting negative regulation of expression that acts in trans for these genes.
 
-## Regulatory architecture
+### Regulatory architecture
 
 We leverage the F1 offspring to dissect the regulatory architecture underlying developmental gene expression differences; we use allele-specific expression patterns in F1 offspring – tracking the expression of the maternal or paternal allele – to assign gene regulatory differences as either cis- or trans-acting modifications (or both; Davidson and Peter, 2015). Typically this approach is used in hybrids (Wittkopp et al., 2004; Tirosh et al., 2009; McManus et al., 2010; Coolon et al., 2014; Wang et al., 2020), but we have adapted it to intraspecific F1 offspring to test whether early divergence is consistent with predictions in the literature (Harry and Zakas, 2023).
 
@@ -121,58 +153,84 @@ We quantify the relative contribution of heteromorphic, heterochronic, and morph
 
 ## Methods
 
-## Animal rearing and sample collection
+### Animal rearing and sample collection
 
 We use lab-reared male and female S. benedicti originally sampled from Newark Bay Bayonne, New Jersey (PP), and Long Beach, California (LL). All experimental procedures and growth incubations are carried out at 20°C unless otherwise noted. To produce offspring for sampling, we crossed virgin females with one male for each test cross (Cross ID in Figure 2A). PP offspring were fed small quantities of our lab’s standard feeding algae after the swimming stage had been reached to avoid starvation. As clutch sizes can be quite small, we took advantage of the multiple broods that can be produced by a single mating event. We used three to five consecutive broods per female where all offspring were full sibs. This is necessary as embryo number is limited (10–40 embryos per clutch for LL and 100–400 for PP) and 10–40 pooled embryos are required to produce sufficient input mRNA. In this study brood number and developmental stage are confounded within sample groups (Cross IDs).
 
-## Embryo timeline construction
+### Embryo timeline construction
 
 To build a timeline of development, we removed embryos from the maternal brood pouch and observed development in a Petri dish in artificial seawater in an incubator at 20°C (previous work indicates development is normal outside the brood pouch). We selected six distinct time points that we confirmed with cell counts (nuclei) using Hoechst: 16 cells, blastula (64 cells), and gastrula (124 cells). Time to each development stage was averaged over at least four clutch observations. Later embryo and larval stages were identified by morphological differences (appearance of ciliated band trochophores and eye development). Six stages capture a broad scope of developmentally critical periods while having enough timing separation to be distinct (each embryonic time point was ~12 hr apart). Images were captured using a ×40 objective on a Zeiss Axio inverted microscope with an indicator for scale which was subsequently used to scale images to the same relative size in Figure 1.
 
-## RNAseq
+### RNAseq
 
 Embryos were collected from a single female, and 10–40 were processed for total mRNA extraction at each time point. If the number of embryos was insufficient for all time points, we used multiple broods. We used a minimum of 20 LL embryos for stages 16-cell, blastula, gastrula, and 10 LL embryos for stages trochophore, swimming, 1 week. PP females have large clutches, so embryos were divided equally (~40 embryos/clutch) among the six stages. With this approach we could not collect all time points for the same females, but there are at least two complete sets and at least four replicates per stage for each morph. The same sampling stages were used when collecting F1 samples in this experiment (Figure 2A).
 
 Embryo RNA extraction used the Arcturus PicoPure kit including the DNAse step. We used a Qubit RNA kit to measure RNA yields for pilot data, but once established we bypassed this step to maximize RNA yields. Libraries were constructed with the NEB UltraII Stranded RNA library prep kit (cat# E7760S) for Illumina. Libraries were sequenced on two lanes of 150 bp on the Illumina NovaSeq.
 
-## Sequencing read quality trimming and mapping
+### Sequencing read quality trimming and mapping
 
 We used TrimGalore (cutadapt) (Martin, 2011) and FastP (Chen et al., 2018) for quality assessment and trimming. Reads were mapped to a reference of all transcript sequences (transcripts extracted with GFFread, Pertea and Pertea, 2020) that are annotated in the S. benedicti reference genome (Zakas et al., 2022) using Salmon 1.10 (Patro et al., 2017) using the default scoring parameters. The reference genome for S. benedicti is a chromosome-level assembly with >99% of genes occurring in the first 11 chromosomal scaffolds (Zakas et al., 2022). Individual sample transcript expression quantification estimates were summarized to the gene-level using the Tximport R package (Soneson et al., 2015).
 
-## Library diagnostics
+### Library diagnostics
 
 As the S. benedicti genome is from P individuals (Zakas et al., 2022), we checked the mapping rate of P and L samples (as well as both F1s) at each developmental stage to ensure similar mapping rates (Figure 2—figure supplement 1). We calculated mapping by dividing the sum of expression estimates for all genes by the sequencing depth for each sample individually, and then averaging samples from each developmental stage by morph to produce an average mapping rate (Figure 2—figure supplement 1). We find LL and PP mapping rates do not differ significantly (two-sided t-test; p=0.1118), nor do the F1 samples’ mapping rates differ from any other group (Figure 2—figure supplement 2). While this does not eliminate the possibility of mapping bias, these results indicate that missing data would not substantially change our results.
 
 Samples which received fewer than 2 million total reads were excluded from further analyses since our expected sequencing depth was between 20 and 40 million reads (six samples total). Samples were normalized using the DESeq2 R package (Love et al., 2014) and expression estimates were transformed using the variance stabilizing transformation function to perform PCA using the function prcomp (R Development Core Team, 2020), which is plotted for the first two principal components with ggplot2 (Wickham, 2016; Figure 2B).
 
-## Differential expression
+### Differential expression
 
 We used DESeq2 to determine significance in expression differences (Love et al., 2014) using the variable grouping method recommended by the DESeq2 manual. We used two factors for characterization: developmental stage and genotype (P, L, PL, LP) which generate a factor level for each stageHead2/genotype combination (i.e. ‘16-cell_Lecithotroph’) which we called ‘multiFactor’ for DESeq2 as ‘design = ~multiFactor’. The Benjamini-Hochberg false discovery rate (FDR) algorithm was used with p-values between factor levels of ‘multiFactor’ to reduce the incidence of false positives for differential expression. Throughout this study, the threshold for significant gene expression differences is an FDR-adjusted p-value of 0.05 or less, and an expression fold-change greater than twofold.
 
-## Expression profile clustering
+### Expression profile clustering
 
 To summarize expression clusters we used the Mfuzz 2.58 R package (Futschik and Carlisle, 2005; Kumar and E Futschik, 2007). Clusters are based on mean expression estimates from P samples. Normalization was (DESeq2, Love et al., 2014), log2-transformed, and then filtered for genes with low variability/expression and standardized using the Mfuzz functions ‘filter.std’ and ‘standardize’, respectively. Mfuzz requires a priori cluster numbers. To capture the representative sample of expression patterns, we found the highest number of clusters for which Pearson correlations of pairs of cluster centroids (the single most cluster-representative gene for each cluster) did not exceed 0.85 (r<0.85) for any pair of clusters. This resulted in six clusters. The fuzzifier coefficient (m) required by Mfuzz was estimated to be 1.71 by the function ‘mestimate’ (Futschik and Carlisle, 2005; Kumar and E Futschik, 2007). Following cluster generation with the P expression data, the L expression data was mapped onto the clusters using the Mfuzz function ‘membership’ so both morphs could be compared. Clusters were plotted using the function ‘mfuzz.plot2’ (Figure 4, Figure 4—figure supplement 2).
 
-## Expression classification
+### Expression classification
 
 To identify genes as heterochronic we first identify genes that have different expression patterns between the morphs and then filter those genes based on their Pearson correlation coefficients. Genes for which the PP and LL expression are on different clusters are categorized as heterochronic. Some of these genes fall onto different clusters but still have relatively similar expression profiles. Therefore, we also filter by a measure of the Pearson correlation coefficient. The threshold is based on the distribution of correlation coefficients of all PP to LL genes’ expression in the dataset (Figure 5B). Based on the distribution, a threshold of r<0.85 was selected to filter genes which would be classified as switching clusters but are similar enough in their expression between the two morphs to be removed. This filter disqualified 38 genes.
 
-## Morph-specific expression
+### Morph-specific expression
 
 To categorize morph-specific expression we use a gene expression thresholding approach. Spurious gene expression resulting in low levels of estimated expression (few RNAseq reads) is categorically and functionally distinct from robust gene expression (Hebenstreit et al., 2011). We establish meaningful expression thresholds based on the assumption that genes with robust expression will have values which are normally distributed. Individual sample thresholds were calculated using a DAFS (George and Chang, 2014). Thresholds were used to identify genes which are expressed at significant levels in only PP or only LL offspring. For example, if a gene is expressed above its threshold in three or more (out of five) P samples at one or more developmental stages and in no more than one LL sample at any developmental stage, then that gene was categorized as morph-specific (Table 1).
 
-## F1 expression time-series collection
+**Table 1.**
+ Logical table showing criterion for morph-specific expression classification of genes based on number of samples in each group that have gene expression greater than their expression level threshold as assessed by data-adaptive flag method (DAFS).An allowance for a single mismatched replicate is made in this criterion. This is because we do not believe that a single incidence within a morph (across all developmental stages) is a functionally significant and biologically relevant level of gene expression in this case.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PP samples above expression threshold</th>
+      <th>LL samples above expression threshold</th>
+      <th>Classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≤1</td>
+      <td>≥3</td>
+      <td>Lecithotrophic-specific expression</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≤1</td>
+      <td>Planktotrophic-specific expression</td>
+    </tr>
+  </tbody>
+</table>
+
+### F1 expression time-series collection
 
 We concurrently sequenced RNA libraries from F1 offspring (Figure 2A). We generated F1 offspring from reciprocal crosses P×L and L×P (both mother-father directions) using the same sample collection method as stated above. However, we only sequenced samples from three of the developmental stages for the F1s in the LP direction. All analyses were performed as above.
 
-## Mode of inheritance and F1 misexpression
+### Mode of inheritance and F1 misexpression
 
 Using F1 data, we classified the mode of inheritance for each gene according to established criteria and differential expression tests from DESeq2 (Coolon et al., 2014; Harry and Zakas, 2023; Wang et al., 2020). Genes which were significantly DE between reciprocal F1 offspring (PL vs LP) at any developmental stage were not considered for this analysis. The remaining genes were classified as either (1) conserved, (2) additive, (3) dominant for one genotype, or (4) misexpressed (over/under-dominant).
 
-## Parent of origin effects
+### Parent of origin effects
 
 DE genes between PL and LP offspring are different due to parental effects. DE was detected with DESeq2 with the contrasts ‘c(“multiFactor”, “PL_sixteencell”, “LP_sixteencell”)’, ‘c(“multiFactor”, “PL_gastrula”, “LP_gastrula”)’, and ‘c(“multiFactor”, “PL_swimming”, “LP_swimming”)’ similar to PP and LL samples. We evaluate these at three of the six developmental stages. The direction of the parental effect was determined by matching the expression change with the direction of each identified gene’s expression in PP and LL samples (where those genes were DE in PP and LL samples).
 
-## Mode of regulatory change
+### Mode of regulatory change
 
 To measure allele-specific expression, we assigned sequencing reads from F1 samples to either P or L parentage by identifying fixed SNPs within the transcript sequences of the parental types. We used HyLiTE (Duchemin et al., 2015) to identify SNPs and assign reads as a P or L allele. We then categorized genes’ regulatory mode according to established empirical methods (Wittkopp et al., 2004; Graze et al., 2009; Coolon et al., 2014; Harry and Zakas, 2023; Wang et al., 2020) for each developmental stage independently. This required three comparisons of each gene’s expression which we performed using DESeq2: (1) the contrast of PP to LL samples, (2) the contrast of P alleles to L alleles within F1 samples, and (3) a ratio of the differential expression of PP:LL to the differential expression of P:L alleles. For (3) we use a special contrast in DESeq2, applying the design (~Geno × Ori) where Geno identifies reads as either a P or L allele and Ori identifies the reads as originating from the parentals or F1 samples. DE genes were categorized as either in ‘cis’, ‘trans’, ‘cis+trans’, or ‘cis × trans’ (Wittkopp et al., 2004; Graze et al., 2009; Coolon et al., 2014; Harry and Zakas, 2023; Wang et al., 2020).

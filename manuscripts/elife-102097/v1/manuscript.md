@@ -18,12 +18,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01cby8j38 Institute for Biomedical Research Sols-Morreale (IIBM), Spanish National Research Council- Universidad Autónoma de Madrid Madrid Spain
+1. Institute for Biomedical Research Sols-Morreale (IIBM), Spanish National Research Council- Universidad Autónoma de Madrid Madrid Spain ([ROR:01cby8j38](https://ror.org/01cby8j38))
 2. Princess Máxima Center for Pediatric Oncology Utrecht Netherlands
-3. https://ror.org/01n92vv28 Oncode Institute Utrecht Netherlands
-4. https://ror.org/01b6kha49 ACRF Cancer Biology and Stem Cells Division, The Walter and Eliza Hall Institute of Medical Research Parkville Australia
-5. https://ror.org/01b6kha49 Immunology Division, The Walter and Eliza Hall Institute of Medical Research Parkville Australia
-6. https://ror.org/01ej9dk98 Department of Medical Biology, The University of Melbourne Parkville Australia
+3. Oncode Institute Utrecht Netherlands ([ROR:01n92vv28](https://ror.org/01n92vv28))
+4. ACRF Cancer Biology and Stem Cells Division, The Walter and Eliza Hall Institute of Medical Research Parkville Australia ([ROR:01b6kha49](https://ror.org/01b6kha49))
+5. Immunology Division, The Walter and Eliza Hall Institute of Medical Research Parkville Australia ([ROR:01b6kha49](https://ror.org/01b6kha49))
+6. Department of Medical Biology, The University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
 
 † Corresponding author
 
@@ -39,17 +39,160 @@ IVM is a technique used to capture both spatial and temporal information at a si
 
 While significant efforts have been made to develop open-source segmentation and tracking tools for live imaging data, including IVM (Pizzagalli et al., 2018; Pizzagalli et al., 2022; Joseph et al., 2020; Molina-Moreno et al., 2022; Hidalgo-Cenalmor et al., 2024; Ershov et al., 2022), fewer tools exist for the unbiased analysis of tumor dynamics. One major barrier is that implementing such analytical methods often requires substantial computational expertise, limiting accessibility for many biomedical researchers conducting IVM experiments. To bridge this gap, we present BEHAV3D Tumor Profiler (BEHAV3D-TP) by providing a robust, user-friendly tool that allows researchers to extract meaningful insights from dynamic cellular behaviors without requiring advanced programming skills. BEHAV3D-TP expands the capabilities of BEHAV3D by incorporating key features designed for in vivo tumor cell dynamics (Figure 1). The pipeline includes extensions that integrate tumor cell behavior with spatial features within the native TME, using either in situ (IVM) or fixed correlative imaging to reveal how distinct spatial niches influence tumor dynamics.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig1-v1.jpg)
+
+**Figure 1.:** Schematic representation of the workflow showing data preparation, input, and outputs in each of the three modules. (a) Time-lapse image processing and preparation, based on segmentation and tracking of tumor (and labeled TME cells). Mounting Google Drive is optional but recommended to work in the Google Colab framework. (b) Heterogeneity Module provides distinct behavioral clusters for cells and relates them to dynamic features and provides a back-projection of the tracked cells. (c, d) Optional modules, additional to the Heterogeneity module. (c) Large-scale phenotyping module combines TME large-scale information with cell morphodynamic profiling to further depict population frequencies in distinct TME regions. (d) Small-scale phenotyping module quantifies TME proximity and interaction features at the single-cell level. These features can be incorporated upstream as part of the clustering process to define behaviorally distinct subpopulations (option 1), or downstream to analyze how spatial relationships to TME components such as TAMMs or vasculature vary across behavioral clusters identified in the heterogeneity module (option 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative intravitally imaged position showing breast tumor cells tracked in 2D with the MTrackJ plugin. Red: MDA-MB-231 cells; Blue: Second Harmonic Generation; Multicolored tracks: individually tracked cells. (b) UMAP plot showing six color-coded breast tumor cell behavioral clusters identified by BEHAV3D-TP. Each datapoint represents one cell track. A total of 935 individual cells were tracked. (c) Heatmap depicting relative values of breast tumor cell dynamic and spatial features indicated for each cluster, named according to their most distinct characteristics. Arbitrary units in respect to maximal and minimal values for each feature. See Table 1 for features description. (d) Boxplots showing the percentages of different breast cancer behavioral clusters for 4T1 and MDA-MB-231 cells. Each point represents a different imaging position. P-values represent the significance between both conditions measured with a Student’s T test. (e) Breast tumor cell tracks classified according to behavior (color coded by cluster in c). In all panels: representative of n = 13 independent positions from n=4 mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic overview of the segmentation and tracking pipeline using CellPose2.0 and TrackMate (see Methods). (b) UMAP plot showing four color-coded morphodynamic clusters of healthy breast epithelial cells from TEBs identified by BEHAV3D-TP. Each datapoint represents one cell track. A total of 291 individual cells were tracked. (c) Heatmap depicting relative values of epithelial cell dynamic and morphological features indicated for each cluster, named according to their most distinct characteristics. Arbitrary units in respect to maximal and minimal values for each feature. (d) Stacked bar plot showing the distribution of morphodynamic cell types across the two indicated TEB populations: HR + luminal progenitor cells and HR− luminal progenitor cells. Combined data from 19 mice and 72 independent positions. Chi-square test indicates p=0.02 for cluster 2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Schematic overview of the segmentation and tracking pipeline using μSAM and TrackMate. An online app was developed to integrate morphological and dynamic features (see Methods). (b) UMAP plot showing four color-coded morphodynamic clusters of GBM cells identified by BEHAV3D-TP. Each datapoint represents one cell track. Total of 460 individually tracked cells. (c) Heatmap depicting relative values of GBM cell dynamic and morphological features indicated for each cluster, named according to their most distinct characteristics. Arbitrary units in respect to maximal and minimal values for each feature. See Table 1 for features description. (d) Boxplot showing Average distance to the 3 closest GBM neighbors (pixels) across distinct GBM morphodynamic clusters. Each data point represents the per-mouse average, calculated from a total of six independent imaging positions. Statistical significance across behavioral clusters was assessed using a linear mixed model with mouse as a random effect. p<0.05 (*).
+
 To further facilitate unbiased analysis of tumor dynamics, we developed BEHAV3D-TP as a flexible tool that supports both commercial and open-source data formats, ensuring broad compatibility across different research workflows. The pipeline supports 2D and 3D data formats generated by Imaris and by Fiji plugins such as TrackMate, MTrackJ, and ManualTracking, enabling processing of datasets from the most widely used segmentation and tracking solutions. We demonstrate the versatility and broad applicability of BEHAV3D-TP by applying it to a range of published tumor and healthy tissue IVM datasets.
 
 Next, we focused on Diffuse Midline Glioma (DMG), a highly aggressive pediatric brain tumor characterized by invasive growth and its capacity to spread to other regions of the brain and the spinal cord (Buczkowicz et al., 2014). Our approach allowed us to observe associations between DMG cell migration behavior and specific microenvironmental factors, including tumor-associated macrophages and vasculature, by visualizing TME components either during or after IVM. In our study, we specifically focused on cancer cell migration as a specific feature of DMG, but our methodology could easily be extended to other cancer cell behaviors such as intravasation or metastatic colonization. Overall, BEHAV3D-TP provides an accessible computational approach for a better understanding of tumor-TME crosstalk and the functional implications of this communication in heterogeneous tumors.
 
 ## Results
 
-## BEHAV3D Tumor Profiler: an accessible tool for mapping heterogeneity in tumor dynamics
+### BEHAV3D Tumor Profiler: an accessible tool for mapping heterogeneity in tumor dynamics
 
 To comprehensively map and analyze the dynamic heterogeneity of tumor cells within their TME, we developed BEHAV3D-TP (https://github.com/imAIgene-Dream3D/BEHAV3D_Tumor_Profiler). To enhance accessibility and encourage widespread adoption among researchers studying single tumor cell dynamics in live imaging and inspired by previous work on democratizing advanced image analysis (Hidalgo-Cenalmor et al., 2024; Gómez-de-Mariscal et al., 2023; Von Chamier et al., 2021), we designed BEHAV3D-TP as a modular Jupyter Notebook featuring an intuitive graphical user interface (GUI) (Figure 1 and Figure 1—video 1). The platform runs directly in a web browser and requires only a Google account for access. BEHAV3D-TP implementation within the Google Colaboratory (Colab) framework not only ensures efficient cloud-based computation with free and scalable resources but also enhances tool accessibility by eliminating the need for local software installation, a common barrier for inexperienced users. Regardless of programming proficiency, users can navigate the computational pipeline to extract comprehensive insights into tumor dynamics (Figure 1). After time-lapse image file processing and preparation using various frameworks (Figure 1a), the central component of BEHAV3D-TP — called the heterogeneity module (Figure 1b) — enables researchers to uncover diverse patterns of tumor morphodynamic behavior. Additionally, we provide two extension modules—the large-scale phenotyping module (Figure 1c) and the small-scale phenotyping module (Figure 1d)— which integrate tumor cell behavior identified with the heterogeneity module with TME features based on different data types. The large-scale phenotyping module uses post-IVM fixed imaging data for tissue phenotyping, identifying extensive regions with specific TME characteristics, and assessing the distribution of distinct tumor cell behavioral patterns within these regions. The small-scale phenotyping module uses in situ-labeled TME structures from IVM data, facilitating the correlation of these TME features within the microenvironment of individual tumor cell neighborhoods. Both modules, in conjunction with the heterogeneity module, help to identify how different aspects of the TME influence distinct behavioral patterns of tumor cells.
 
 To evaluate the capability of the BEHAV3D-TP heterogeneity module in identifying diverse morphodynamic cell patterns, we applied it to IVM datasets from various tumor and healthy models. The datasets, processed with different segmentation and tracking tools, were analyzed for multivariate similarities in morphological and dynamic features (summarized in Table 1) using the dynamic time warping algorithm (Alieva et al., 2024).
+
+**Table 1.**
+ Relation of features used in the analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Type</th>
+      <th>2D/3D</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>speed</td>
+      <td>Dynamic</td>
+      <td>2D/3D</td>
+      <td>The rate at which an object moves over time.</td>
+    </tr>
+    <tr>
+      <td>disp2</td>
+      <td>Dynamic</td>
+      <td>2D/3D</td>
+      <td>Squared displacement. Change in position over time.</td>
+    </tr>
+    <tr>
+      <td>disp_d</td>
+      <td>Dynamic</td>
+      <td>2D/3D</td>
+      <td>Displacement delta, linear distance to the starting point at any given time.</td>
+    </tr>
+    <tr>
+      <td>disp_l</td>
+      <td>Dynamic</td>
+      <td>2D/3D</td>
+      <td>Displacement length, distance traveled since the start.</td>
+    </tr>
+    <tr>
+      <td>persistence (displ/disp_d)</td>
+      <td>Dynamic</td>
+      <td>2D/3D</td>
+      <td>Ratio of displacement to total path length, indicating movement efficiency.</td>
+    </tr>
+    <tr>
+      <td>Major_Axis_Length</td>
+      <td>Morphological</td>
+      <td>2D/3D</td>
+      <td>Length of the longest axis of an object (used in ellipse fitting).</td>
+    </tr>
+    <tr>
+      <td>Minor_Axis_Length</td>
+      <td>Morphological</td>
+      <td>2D/3D</td>
+      <td>Length of the shortest axis of an object (used in ellipse fitting).</td>
+    </tr>
+    <tr>
+      <td>Elongation</td>
+      <td>Morphological</td>
+      <td>2D/3D</td>
+      <td>A measure of how stretched an object is, usually defined as the ratio of major to minor axis length.</td>
+    </tr>
+    <tr>
+      <td>AREA</td>
+      <td>Morphological</td>
+      <td>2D</td>
+      <td>Total pixel area occupied by the object in 2D.</td>
+    </tr>
+    <tr>
+      <td>SOLIDITY</td>
+      <td>Morphological</td>
+      <td>2D</td>
+      <td>Ratio of object area to convex hull area, indicating compactness.</td>
+    </tr>
+    <tr>
+      <td>SHAPE_INDEX</td>
+      <td>Morphological</td>
+      <td>2D</td>
+      <td>A measure of shape complexity, often based on perimeter or surface area.</td>
+    </tr>
+    <tr>
+      <td>dist_3_neigh</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Average distance to the 3 nearest neighboring objects.</td>
+    </tr>
+    <tr>
+      <td>dist_10_neigh</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Average distance to the 10 nearest neighboring objects.</td>
+    </tr>
+    <tr>
+      <td>n_SR101</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Number of SR101 + cells in a 30 µm radius</td>
+    </tr>
+    <tr>
+      <td>min_SR101</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Minimum distance to the nearest SR101 + cell in the neighborhood.</td>
+    </tr>
+    <tr>
+      <td>n_CD20r</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Number of CD20r + cells in a 30 µm radius.</td>
+    </tr>
+    <tr>
+      <td>min_CD20r</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Minimum distance to the nearest CD20r + cell in the neighborhood.</td>
+    </tr>
+    <tr>
+      <td>min_BV_dist</td>
+      <td>Spatial</td>
+      <td>2D/3D</td>
+      <td>Minimum distance to the nearest blood vessel (BV), indicating vascular proximity.</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: [feature]_range represents the variability between the maximum and minimum value of that feature over time._
 
 As an initial benchmark, we analyzed a previously published IVM dataset of two migratory and metastatic breast cancer cell lines (4T1 and MDA-MB231), tracked in 2D using the MTrackJ Fiji plugin (Figure 1—figure supplement 1a; Chen et al., 2019). BEHAV3D-TP provided a more granular characterization of these behaviors, uncovering additional migratory patterns not reported in the original study (Figure 1—figure supplement 1b–c). Specifically, we identified behaviors such as Fast, Intermediate, Very slow, and Static that had a different distribution among both tumor cell lines (Figure 1—figure supplement 1d–e).
 
@@ -59,17 +202,41 @@ We next tested BEHAV3D-TP with a 3D image processing pipeline applied to IVM dat
 
 Collectively, these findings underscore the versatility and broad applicability of BEHAV3D-TP across diverse biological systems, dimensionalities (2D and 3D), imaging modalities, and data processing pipelines, supporting its utility as a robust tool for the in-depth analysis of cellular behavioral patterns in IVM data.
 
-## Identification of highly heterogeneous in vivo cell behavior displayed by DMGs
+### Identification of highly heterogeneous in vivo cell behavior displayed by DMGs
 
 We then applied our platform to get insights into the behavioral heterogeneity among pediatric DMG tumors, characterized by a highly invasive nature. We implanted mice with patient-derived DMG cells expressing H2BmNeonGreen marker and performed IVM for up to 5.4 hr upon tumor development (Figure 2—figure supplement 1a). We tracked intravitally imaged DMG cells from different mice using Imaris, a commercial software widely adapted by the IVM community (Dawson et al., 2021; Jung et al., 2021; Crainiciuc et al., 2022; Chauveau et al., 2020; Kienle et al., 2021; Jarade et al., 2022; Liu et al., 2021; Persson et al., 2022) for its intuitive 3D visualization and analysis capabilities. In each imaged position, we evaluated not only the dynamic characteristics of individual DMG cells but also their spatial relationship to the tumor edge, which was delineated using Imaris Surface module (Figure 2a, see Methods). Next, to untangle the complexity of tumor cell dynamics in an unbiased manner, we used the BEHAV3D-TP heterogeneity module, implementing multiparametric single-cell time-series classification to identify distinct single-cell behavioral patterns (Figure 2a and b). For this, we used kinetic parameters, including displacement, speed, persistence, and movement direction relative to the tumor edge (Table 1), followed by dimensionality reduction to classify cells. The BEHAV3D-TP heterogeneity module identified 7 DMG behavioral clusters: retreating, slow retreating, erratic, static, slow, slow invading, and invading (Figure 2b–d, Figure 2—video 1). To accurately describe each of the clusters, we analyzed their most predominant features (Figure 2d) and back-projected the cluster information into the original time-lapse to visually inspect cell behavior in relation to the tumor (Figure 2a, c, Figure 2—figure supplement 1b, Figure 2—video 1). Of particular interest were cells from the invading and retreating clusters, characterized by fast movement away from and towards the tumor edge, respectively (Figure 2c-f, Figure 2—figure supplement 1c). In fact, in this particular DMG model, approximately 10% of the cancer cells were displaying invasive behavior (Figure 2—figure supplement 1d), in line with the intrinsic infiltrative nature of DMG (Van Ineveld et al., 2022). Interestingly, about another 10% of DMG cells were moving back to the tumor edge (retreating, slow retreating clusters; Figure 2—figure supplement 1d), behavior that has been previously observed for glioblastoma and suggested to be regulated by differential chemotactic signaling by the tumor edge and the surrounding brain parenchyma (Alieva et al., 2019). We also observed erratic cells that display fast non-directed migration behavior and static cells that are non-migratory (Figure 2c–f). Crucially, the distinct behavioral patterns were detected in all intravitally imaged mice (Figure 2—figure supplement 1d), ruling out any sample bias that might lead to clusters consisting solely of cells from a single tumor or mouse. This underscores the effectiveness of the BEHAV3D-TP in revealing representative heterogeneous tumor behavioral patterns.
 
-## Mapping in vivo tumor cell migratory properties to distinct TME regions identified through ex vivo large-scale 3D imaging
+![Figure 2.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig2-v1.jpg)
+
+**Figure 2.:** (a) Representative intravitally imaged position showing DMG cells tracked relative to tumor Edge (left panel). Tracks were classified according to DMG behavior (right, color coded by cluster). Representative of n = 18 independent positions from n=6 mice. (b) UMAP plot showing seven color-coded DMG cell behavioral clusters identified by BEHAV3D-TP. Each datapoint represents one DMG cell track. A total of 981 individual cells were tracked in n = 18 independent positions from n=6 mice. (c) Representative intravitally imaged positions and enlarged sections for showcasing distinct DMG behavioral clusters Invading (yellow), Retreating (green), Erratic (dark purple), and Static (light purple) through the time series. n = 18 independent positions from n=6 mice. Scale bars 10 µm. (d) Heatmap depicting relative values of DMG cell features indicated for each cluster, named according to their most distinct characteristics. Arbitrary units in respect to maximal and minimal values for each feature. See Table 1 for features description. Bubble size according to significance levels, all features represented have a significance level of p<0.001 (***): mean_displ2, mean squared displacement; speed; delta displacement; displacement length; persistence; invasion. p-Values represent the significance of differences across clusters tested through ANOVA for each feature. (e, f) UMAP representation of DMG cells’ velocity relative to the tumor edge (µm) (e) and speed (µm/hr) (f). Each datapoint represents one cell track and is colored following a color gradient. For each feature, colors represent the mean DMG track values. Representative of n = 18 independent positions from n=6 mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic representation of an intravital imaging experimental design, capturing timelapses up to 5.4 hr of DMG cells expressing H2BmNeonGreen and mScarlet proteins, followed by single-cell tracking. (b) Representative intravitally imaged position showing DMG cell tracks colored by behavioral cluster projected over the last timepoint of the original IVM time-lapse. (c) Quantification of average DMG cell speed (µm/hr) in each identified behavioral cluster per mouse. Significance of differences across behavioral clusters tested through ANOVA followed by Tukey’s post hoc test. All comparisons significant, except cluster 5–2, 4–7, 1–6, 7–3, 3–6, 3–4, and 6–4. (d) Behavioral cluster frequency distribution across individual IVM imaged mice. (c,d) Each data point represents the average per mouse, computed from 18 independent imaging positions.
+
+### Mapping in vivo tumor cell migratory properties to distinct TME regions identified through ex vivo large-scale 3D imaging
 
 To investigate whether the TME influences behavioral heterogeneity among cancer cells, we developed two complementary approaches to correlate the identified behavioral clusters (Figure 2) to the composition of the TME (Figures 1c, 3a and 4a).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig3-v1.jpg)
+
+**Figure 3.:** (a) Overview of the large-scale TME region phenotyping workflow. After the IVM imaging session, the tissue is fixed and stained and then analyzed using mLSR-3D. CytoMAP Spatial Analysis Toolbox is used to identify distinct large-scale regions that are subsequently matched to IVM imaging dataset (c). (b) Representative fixed multispectral image of a mLSR3D imaged DMG tumor and zoomed-in images of TME large-scale regions: Void (blue outline), TAMM/vascularized (red outline), and TAMM/Oligo (yellow outline). DMG nuclei (blue), CD31 (pink), Olig2 (purple), and Iba1 (yellow) are represented on the imaged. Scale bars, 100 µm (overview), 30 µm (zoomed-in regions). (c) 3D multispectral image DMG cell rendering color-coded per large TME region: Void (blue), TAMM/Oligo (yellow), and TAMM/vascularized (red) (left). Based on the spatial coordinates of DMG cells classified into specific TME regions by CytoMAP, cells within the mLSR-3D images were subsequently assigned to their respective TME regions. Regions were then visually mapped on intravital imaging data (right). Representative of n=6 mice. White outline indicates one of the tumor regions analyzed with BEHAV3D-TP from the full tumor volume. (d) Boxplots showing the frequencies of different DMG behavioral clusters in Void, TAMM/Oligo, and TAMM/vascularized TME large-scale regions. For each behavioral cluster, the y-axis displays the z-scored percentage of cells, normalized per mouse to account for inter-mouse variability. Each point represents an individual imaged position, with shape indicating the mouse of origin. p-Values represent the significance of differences across TME regions tested through ANOVA with Tukey post hoc, for each behavioral cluster. n = 18 independent positions from n=6 mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Representative CytoMap output showcasing 3D spatial distribution of DMG cells in distinct TME large-scale regions: Void (blue), TAMM/Oligo (yellow), and TAMM/vascularized (red). Each datapoint represents a unique DMG cell within a classified large-scale region. (b, c) Fold change of cell count of DMG, Iba1+, Olig2 + and CD31 + cell types, identified with mLSR3D fixed imaging, relative to the mean cell count in each TME large scale region (Void, TAMM/Oligo, TAMM/vascularized), both in boxplot (b) and table (c) formats. In (b) each point represents a mouse, n=7. For DMG cell count: TAMM/Oligo versus Void, p<0.01 (**); TAMM/Oligo versus TAMM/vascularized, p<0.05 (*). For Iba1 cell count: TAMM/Oligo versus Void, p<0.001 (***); TAMM/vascularized versus Void, p<0.001 (***). In Olig2 cell count: TAMM/Oligo versus Void, p<0.001 (***); TAMM/Oligo versus TAMM/vascularized, p<0.001 (***). For CD31 cell count: TAMM/Oligo versus Void, p<0.001 (***); TAMM/vascularized versus Void, p<0.001 (***); TAMM/Oligo versus TAMM/vascularized, p<0.001 (***). (d) Boxplots showing the percentages of different DMG behavioral clusters in Void, TAMM/Oligo, and TAMM/vascularized TME large-scale regions. Each point represents a different imaging position. Color: n = 18 independent positions; Shape: n=6 mice. (e, f, g) Boxplots showing DMG single cell features (Tumor cell speed (µm/hour) (e), Average speed displacement (f) and Tumor cell velocity (µm/hour) (g)) differences among Void, TAMM/Oligo, and TAMM/vascularized per mouse in TME large-scale regions. (g) Tumor cell velocity can be either towards brain core (down, negative values) or towards brain parenchyma (up, positive values). For (e, f, g): Each data point represents the average per mouse, computed from 18 independent imaging positions. Statistical differences were assessed using one-way ANOVA. No statistically significant differences were found.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig4-v1.jpg)
+
+**Figure 4.:** (a) Overview of the small-scale TME phenotyping module. During IVM imaging, information about spatial distribution of SR101+, CD20r+, and CD31+ cells is collected and processed by the BEHAV3D-TP small-scale phenotyping module. Single DMG cell spatial TME features like distance to its neighbors, number of cells in a radius, or minimal distance to a cell type were measured. (b) Heatmap depicting DMG cell small-scale niches’ features across distinct DMG behavioral clusters. Arbitrary units in respect to maximal and minimal values for each feature. Bubble size according to significance levels, from smallest (p<0.05 (**)) to medium (p<0.01 (**)) to biggest (p<0.001 (***)): dist_10_cell, Distance to nearest 10 cells, p<0.01 (**); n_SR101, number of SR101 cells, p<0.05 (*); min_SR101, minimal distance to a SR101 cell, p<0.05 (*); n_CD20r, number of CD20r cells, p<0.05 (*); min_Cd20r, minimal distance to a CD20r cell, p<0.01 (**); min_BV_dist, minimal distance to a Blood vessel, p<0.001 (***). p-Values represent the significance of differences across clusters tested through ANOVA for each feature. (c, e) Boxplots depicting the percentage of DMG cells across behavioral clusters that are close to CD20r + TAMM (c) or to blood vessels (e). Each point represents an individual imaged position, color depicts the TME large-scale region type, and shape denotes the mouse. Statistical differences across clusters were assessed using a linear mixed-effects model including mouse and TME class as random effects. p < 0.05 (*), p<0.01 (**), p<0.001 (***) indicate significant differences between clusters. (c) n = 10 independent positions from n=3 mice. (e) n = 8 independent positions from n=3 mice. (d) Multispectral image showing the movement of DMG cells (gray) relative to CD20r+TAMM (blue) and the Tumor core. The trajectories show a path from the initial (blue) to the final position (red). Scale bar, 10 µm. (f) Time lapse multispectral images (left to right) showing the DMG cells (blue) displacement along CD31 blood vessel (purple) away from the tumor edge. Scale bars, 30 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102097/elife-102097-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a, b) Representative 3D IVM rendering of DMG nuclei (cyan), CD31 + cells (gray) and SR101+ (a, red) or CD20r + cells (b, red). Scale bars, 100 µm. (c, d) Boxplots showing Average distance to the 10 closest DMG neighbors (µm) (c) and Number of SR101 + cells in a 30 µm radius (d) across distinct DMG single-cell behavioral clusters. (c) Each point represents an individual mouse. Statistical differences across clusters were assessed using a linear mixed-effects model including mouse as random effect. p < 0.05 (*) indicates significant differences between clusters. n =18 independent positions from n=6 mice. (d) Each point represents an individual imaged position, color depicts the TME large-scale region type and shape denotes the mouse. Statistical differences across clusters were assessed using a linear mixed-effects model including mouse and TME class as random effects. p < 0.05 (*), p<0.01 (**) indicate significant differences between clusters. n=8 independent positions from n=3 mice.
+
 The first approach consists of performing large-scale TME phenotyping and identifying regions with a specific cellular composition and architecture within the TME of intravitally imaged tumors that were subsequently fixed. This is accomplished by using multispectral large-scale single-cell resolution 3D (mLSR-3D) imaging data (Van Ineveld et al., 2021, Stoltzfus et al., 2020) and a spatial analysis framework called CytoMAP (Winkler et al., 2009; Figure 3a). We selected microenvironmental components of interest, such as perivascular niches and glial cells, as they have been previously reported to play an important role in the invasive behavior of glioblastoma cells (Alieva et al., 2019; Wallmann et al., 2018; Seano and Jain, 2020; Ravin et al., 2023; Gupta et al., 2024; Nimmerjahn et al., 2004). Specifically, intravitally imaged brains were collected immediately after the IVM imaging sessions and were fixed and stained for blood vessels (CD31), oligodendrocytes (Olig2), and tumor-associated microglia/macrophages (TAMM; Iba1; Figure 3b). Subsequent CytoMAP (Winkler et al., 2009) spatial phenotyping analysis identified three different environmental niches: Void regions (less vascularized and with low glial infiltration), TAMM/oligo regions (enriched in oligodendrocytes, TAMM, and tumor cells), and TAMM/vascularized regions (highly vascularized regions enriched in TAMM; Figure 3b, Figure 3—figure supplement 1a-c). To investigate the heterogeneity of tumor cell behavior in relation to the identified microenvironmental niches, BEHAV3D-TP large-scale phenotyping module mapped the different niches (Void, TAMM/Oligo, and TAMM/vascularized) identified by CytoMAP onto 3D intravital imaging data (Figures 1c and 3c). In the TME-defined IVM-imaged positions, we compared the frequencies of the different behavioral clusters that we identified with the BEHAV3D-TP heterogeneity module (Figure 3d). Interestingly, invading cells were more abundant in TAMM/vascularized regions compared to Void regions that contain a higher proportion of static cells, and TAMM/Oligo microenvironments contain more slow retreating cells compared to the other regions (Figure 3d, Figure 3—figure supplement 1d). Finally, we compared the results obtained with BEHAV3D-TP to a more classical IVM analysis approach that relies on assessing single dynamic parameters. Interestingly, single parameters showed a restricted ability to identify differences in cellular behavior among various environments (Figure 3—figure supplement 1e–g), underscoring the importance of multiparametric behavioral mapping in revealing more nuanced cellular behavior that cannot be captured solely by individual dynamic parameters.
 
-## Linkage of in vivo tumor cell behavior to the composition of the microenvironment at a single-cell level
+### Linkage of in vivo tumor cell behavior to the composition of the microenvironment at a single-cell level
 
 With the goal of further refining TME phenotyping to better understand tumor cell behavior determinants, we implemented an alternative approach using the BEHAV3D-TP small-scale phenotyping module (Figures 1d and 4a). This module utilizes the detection of TME components during IVM to offer insights into their abundance and spatial relationship with DMG cells at a single-cell level. It complements the heterogeneity module, which captures tumor cell behavioral profiles and offers two options of integration: (1) upstream integration, where TME-derived spatial features—such as proximity or interactions with specific components—are used as input variables for clustering tumor cells; and (2) downstream integration, where previously defined behavioral clusters are correlated with TME spatial features in a subsequent analytical step (Figures 1d and 4a). When using the upstream integration approach, it is essential to include only biologically meaningful features, as the presence of irrelevant or redundant variables can introduce noise and compromise the interpretability of the resulting clusters.
 
@@ -93,23 +260,23 @@ In summary, BEHAV3D-TP allows getting insights into the heterogeneity of tumor c
 
 ## Methods
 
-## Animal material
+### Animal material
 
 NOD.Cg-PrkdcscidIl2rgtm1Wjl/SzJ (NSG) mice were purchased from Charles River Laboratories (France). Experiments were conducted in accordance with Institutional Guidelines and current Dutch laws on Animal Experimentation, with approval from the local Ethical Committee (Animal Welfare Body of the Princess Máxima Center for Pediatric Oncology) and under CCD license AVD39900 202216507, following both local and international regulations. Mice were housed under sterile conditions using an individually ventilated cage (IVC) system and were fed with sterile food and water. Both male and female mice were used and randomly allocated to experimental groups.
 
-## Human DMG sphere-forming culture
+### Human DMG sphere-forming culture
 
 DMG007 (HSJD-DIPG-007) cells, established from primary DMG material and provided by Dr. Ángel Montero Carcaboso (Sant Joan de Déu Barcelona Hospital), were authenticated by STR profiling and tested negative for mycoplasma contamination. Cells were grown in a base medium (TSM) consisting of 48% DMEM/F12 and 48% Neurobasal medium (Thermo Fisher) supplemented with GlutaMAX, 100 mM Sodium Pyruvate, MEM non-essential amino acids, and 1 M Hepes buffer, at 1% each. Primocin (InvivoGen) at 50 mg/ml was additionally added to the TSM. Working medium was prepared by adding 20 ng/ml of human EGF and human basic FGF, 10 ng/ml of PDGF-AA and PDGF-BB (Peprotech), and 2 µg/ml of Heparin (StemCell Technologies). DMG cells were cultured at 37  °C in a humidified atmosphere with 5% CO2.
 
-## Fluorescent reporter cloning and lentiviral transduction
+### Fluorescent reporter cloning and lentiviral transduction
 
 Fluorescent reporter construct was based on the combination of Histone2B-mNeonGreen, P2A, and mScarlet I-CAAX gifted from Dr. Hugo Snippert (UMC Utrecht, The Netherlands), and inserted by In-Fusion HD Cloning Plus (Takarabio) into a lentiviral vector including cPPT/CTS, WPRE, an EF1a promoter, and IRES-puromycin-resistance cassette (Janssen et al., 2013). Subsequently, the above-mentioned elements were amplified by PCR and the amplicon was assembled in the final lentiviral backbone using Gibson Assembly (NEB). Sequences were validated using Sanger sequencing. DMG007 cells were transduced using a standard lentiviral transduction protocol and selected using puromycin to achieve a stable cell line.
 
-## Cranial imaging window (CIW) surgery and tumor cell injection
+### Cranial imaging window (CIW) surgery and tumor cell injection
 
 CIW surgery and tumor cell injection were performed on the same day as previously described (Alieva et al., 2019, Alieva et al., 2017). Briefly, mice were sedated with Hypnorm (Fluanison [neuroleptic] + Fentanyl [opioid]) (0.4  ml/kg) + Midazolam [benzodiazepine sedative] (2  mg/kg) at a dose of 1:1:2 in sterile water and mounted in a stereotactic frame. The head was secured using a nose clamp and two custom-made 3D printed ear bars, made out of Polylactic Acid (PLA, Geeetech, 700-001-043). The head was shaved, and the skin was cut circularly. The mouse was placed under a stereo-microscope to ensure precise surgical manipulation. The periosteum was scraped, and a circular groove of 5  mm diameter was drilled over the right parietal bone. The bone flap was lifted under a drop of cortex buffer (125  mM NaCl, 5  mM KCl, 10  mM glucose, 10  mM HEPES buffer, 2  mM MgSO4, and 2  mM CaCl2, pH 7.4), and the dura mater was removed. Gelfoam sponge (Pfizer) was used to stop potential bleedings. Next, 1 × 105 DMG007-H2B-mNeonGreen cells resuspended in 3  μl phosphate-buffered saline (PBS) were injected stereotactically using a 5  μl Hamilton syringe with a 2 pt style in the middle of the craniotomy at a depth of 0.5  mm. The exposed brain was sealed with silicone oil and a 6  mm coverslip was glued on top. Dental acrylic cement (Vertex) was applied on the skull surface, covering the edge of the coverslip, and a custom-made 3D printed ring made of biocompatible Polylactide acid (PLA, Geeetech, 700-001-0433) was glued around the coverslip to provide fixation during intravital imaging and to serve as a reservoir for a water drop required for the objective of the microscope. A single dose of 100  μg/kg of buprenorphine (Temgesic, BD Pharmaceutical Limited) was administered for post-surgical pain relief. Mice were closely monitored twice per week to assess behavior, reactivity, and appearance.
 
-## Intravital imaging
+### Intravital imaging
 
 For DMG IVM imaging, mice were intravitally imaged as previously described (Alieva et al., 2019, Alieva et al., 2017). In short, mice were sedated with isoflurane and placed face-down in a stereotactic frame. The Polylactide ring was used to fix the mouse’s head to the frame with custom-made Polylactide bars. Time-lapse images of the entire tumor volume were acquired for a maximum of 5.4  hr. The minimal time interval between serial images was set to 20  min. For tile scans, images of the complete z-stack of the tumor were acquired, with a step size of 2  µm. In a group of three mice, oligodendrocytes and astrocytes were imaged by an intravenous injection of 50 µL SR101 (Thermo Fisher) at a concentration of 5 mM dissolved in PBS. In a different group of three mice, TAMMs were imaged by intravenous injection of 50 μl 100 µM CDr20 (Kim et al., 2019). Simultaneously with the injection of either SR101 or CDr20, all mice received an intravenous injection of 10 μl CD31-AF647 antibody (Thermo Fisher, A14716) to visualize the blood vessels.
 
@@ -117,37 +284,37 @@ Intravital imaging was performed on an upright FVMPE-RS multiphoton microscope (
 
 Breast tumor IVM imaging was performed as described before (Chen et al., 2019), and data was kindly provided by Dr. Nienke Vrisekoop. GBM IVM imaging was performed as described before (Alieva et al., 2019), and data was kindly provided by Prof. Jacco van Rheenen. Breast epithelial IVM imaging and cell tracking with MaSCOT-AI was performed as described before (Dawson et al., 2024) and single cell tracks were downloaded from Zenodo repository (14503476).
 
-## Co-registration of IVM imaged blood vessel imaging
+### Co-registration of IVM imaged blood vessel imaging
 
 CD31-AF647 tile scan featuring optimal visualization of blood vessels during live imaging was co-registered to the last timepoint of the time-lapse movie. Both images (last timepoint of time-lapse tile-scan and blood vessel tile-scan) were visually inspected to determine and annotate the internal landmarks using Imaris (Oxford Instruments), versions 9.5–9.6. These landmarks served as a reference for the co-registration software to overlap both images. To perform the co-registration, a modification of elastix (Marstal et al., 2016) was used; a python-based open-source software based on Insight Segmentation and Registration Toolkit (ITK) plus SimpleElastix (Rios et al., 2019): a collection of different algorithms used on medical image registration. Due to the extensive number of potential parameter combinations, specific parameters were manually chosen. This selection was conducted using the Slicer3D visualization software, version 5.2.2.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 3D immunohistochemistry was performed as described before (Stoltzfus et al., 2020). After the live imaging session, mouse brains were immersed in 5 ml 4% paraformaldehyde (PFA) pH 7.4 overnight on ice. After fixation, brains were blocked in 5–10 ml Wash Buffer 1 (2 ml Tween-20, 2 ml Triton X-100, 2 ml 10% SDS, and 2 g BSA in 1 l PBS) for 5 hr. For multiplex immunolabeling, a two- or three-round staining protocol was used as previously described (Van Ineveld et al., 2021, Stoltzfus et al., 2020). Washing and incubation steps were performed in Wash Buffer 2 (1 ml Triton X-100, 2 ml 10% SDS, and 2 g BSA in 1 l PBS). A thick (1 mm) slice of the cortex part that was under the cranial imaging window was dissected with a scalpel before proceeding to immunolabeling. The following primary antibodies were used: rabbit anti-Olig2 1:100 (AB9610, Merk), goat anti-Iba1 1:200 (NB100-1028SS, NovusBio) and CD31-AF647 1:250 (A14716, Thermo Fisher). As secondary antibodies, donkey anti-rabbit AF405 1:250 (ab175651, Abcam) and donkey anti-goat AF633 1:250 (A21082, Thermo Fisher) were used. After the last washing step, tissues were optically cleared by three stepwise incubations of an increasing concentration of FUnGI (Rios-Jimenez, 2025) clearing agent (25%/50%/75%, diluted in PBS) for 1 hr at room temperature (Van Ineveld et al., 2021). The final incubation step with 100% FUnGI was performed overnight at 4 °C.
 
-## mLSR3D imaging
+### mLSR3D imaging
 
 mLSR3D imaging (Van Ineveld et al., 2021, Stoltzfus et al., 2020) of thick slices of fixed mouse cortex was performed using a Zeiss LSM880 system equipped with a 32-channel spectral detector. The signal from all fluorophores present in the samples was collected in a single acquisition, and linear unmixing was used to obtain separate channels. Unmixing was carried out by the Online Fingerprinting mode of the microscope. Pre-acquired references of each single fluorophore were used to enable multispectral on-the-fly unmixing. Imaging was performed using a 25 x multi-immersion objective 0.8 NA (Zeiss 420852–9871) with a working distance of 570 µm. Tile scans were acquired using a voxel size of 0.332x0.332 × 1.200 µm, a pixel dwell of 2µs, and a 10% tile overlap.
 
-## Imaris image processing
+### Imaris image processing
 
 DMG IVM datasets were processed using Imaris software (Oxford Instruments, versions 9.5–10.1) for 3D visualization, shift correction, object rendering, and cell tracking of time-lapse movies.
 
-## Imaris cell tracking
+#### Imaris cell tracking
 
 The Channel Arithmetics Xtension was used for channel unmixing of overlapping signals. The Spots ImarisTrack module was used for object detection and semi-automated tracking of tumor cells (autoregressive motion). Tumor cell tracks were manually corrected to ensure accurate tracking. Around 50–100 cells per position were manually corrected and labeled as such for posterior selection of accurate tracks. To determine the direction of tumor cell movement relative to the tumor core, at the image edge closer to the tumor core, a ‘Tumor edge’ surface object was manually rendered using the contour tool. The Distance Transformation Xtension was used to measure the distance between tumor cells and the ‘Tumor edge’. For tracked tumor cells, time-lapse data containing the coordinates of each cell, the values of cell speed, mean square displacement, displacement delta length, displacement length, and distance to “Tumor edge” were exported. See https://qbi.uq.edu.au/files/40820/ImarisManual.pdf for statistical details.
 
-## Imaris microenvironmental factors rendering
+#### Imaris microenvironmental factors rendering
 
 For rendering the microenvironmental factors detected during IVM or by post-IVM LSR-3D imaging, the Surface and Spots modules of Imaris were used. Surfaces were used for the SR101, CDr20, Olig2, DAPI, and Iba1 stainings, and Spots were used for CD31+protruding or elongated structures, as previously described (Winkler et al., 2009). For rendered structures, positional data containing the coordinates of objects was exported for large-scale spatial phenotyping with Cytomap.
 
-## Fiji image processing
+### Fiji image processing
 
-## μSAM cell segmentation
+#### μSAM cell segmentation
 
 Segmentation was performed using the μSAM plugin for Napari (Archit et al., 2025), where vit-b model was selected to compute embeddings for each timeframe. Automatic segmentation was applied, and parameters were adjusted for optimal results. Manual corrections were made to remove unwanted surfaces or add missing cells. Once segmentation was complete, frames were combined into a single stack in ImageJ and tracked with Trackmate.
 
-## Fiji tracking
+#### Fiji tracking
 
 Breast tumor IVM data was manually tracked with the Fiji MtrackJ plugin as previously described (Alieva et al., 2017, Chen et al., 2019).
 
@@ -155,11 +322,11 @@ Adult glioma cells, segmented with μSAM, were consequently tracked with Fiji Tr
 
 The script is available both as a downloadable version on GitHub (http://github.com/imAIgene-Dream3D/MorphoTrack-merger; Rios-Jimenez, 2025) and as an online application (https://morphotrack-merger.streamlit.app/), making this tool more accessible for non-coding users.
 
-## Tumor large-scale spatial phenotyping with Cytomap
+### Tumor large-scale spatial phenotyping with Cytomap
 
 The positional data of various environmental surface features, segmented from LSR-3D imaging data, was analyzed for large-scale spatial phenotyping using the Cytomap Spatial Analysis Toolbox (Winkler et al., 2009). Briefly, neighborhoods with a 100 µm radius were generated. Neighborhoods were then clustered into two regions based on DMG cell positioning using the David Balwin algorithm. Using the gating tool, the tumor regions (containing DMG objects) were defined. Next, the neighborhoods were clustered again into three different regions based on the distribution of Iba1, Olig2, and CD31: Void, TAMM/Oligo, and TAMM/vascularized. By using the Manually Defined Regions option, only the tumor region was classified. Finally, for each region, fold-change values were calculated and exported using the Region Statistics tab. To map the assigned regions onto IVM movies, a 3D image of the cluster distribution within the tumor was generated and exported for each sample (Figure 3—figure supplement 1a). Next, regions within the IVM movies were visually matched to the corresponding regions identified by the Large-Scale Phenotyping module of Cytomap (Figure 3c). For each mouse, at least one or two representative positions per matched region type were selected, cropped, and analyzed to assess tumor cell behavior, following the previously described cell tracking methodology (Imaris Cell tracking).
 
-## BEHAV3D Tumor Profiler framework
+### BEHAV3D Tumor Profiler framework
 
 BEHAV3D-TP was developed using the R Studio version 4.3.3. It features three modules: (1) Heterogeneity module with optional (2) Large-scale and/or (3) Small-scale phenotyping module. These modules are described in detail below, exemplified by the analysis of DMG data from this study. All the modules are included in the same script available in GitHub (https://github.com/imAIgene-Dream3D/BEHAV3D_Tumor_Profiler), but can be run independently from one another. To acquire this independence, the optional modules are directly combined to the necessary sections of the Heterogeneity module. Consequently, the user can use whichever module is best suited for their purposes. The complete workflow—combining heterogeneity analysis with large- and small-scale phenotyping—is primarily optimized for datasets processed with Imaris due to its wide use in the IVM community and special suitability for 3D visualization and tracking. In order to further facilitate public access to the BEHAV3D-TP, a Google Colab notebook has also been created accessible through the same Github page (https://github.com/imAIgene-Dream3D/BEHAV3D_Tumor_Profiler). This environment is friendly to anyone regardless of their coding expertise as it has a step-by-step follow-through execution through the pipeline.
 
@@ -169,22 +336,22 @@ A Wiki demo run and a video tutorial (Figure 1—video 1) are also provided thro
 
 To ensure that your input data aligns with the workflow, we provide an online application for data quality control (https://github.com/alievakrash/BEHAV3D_TP_dataQC). This tool allows users to visualize various features, grouped by a condition of interest, and check for issues such as a high number of missing values (NA). It enables users to assess their data for any inconsistencies or unexpected patterns before proceeding with further analysis.
 
-## Heterogeneity module
+#### Heterogeneity module
 
 To account for missing time points and to create a time series with the same time interval for each tumor cell time series, linear interpolation was used to estimate the values of missing time points. To compare time series independently, tracks were cropped to the minimal common length among all tracks. In the case of DMG data to a 2.6 hr duration. For tracked tumor cells, time-lapse data containing the coordinates of each cell, the values of cell speed, mean square displacement, displacement delta length, displacement length, and relative distance to ‘Tumor edge’ were used to calculate a cross-distance matrix between time series. First, we performed a principal component (PC) analysis and selected the number of PCs that explained at least 90% of data variance (3).
 
 The previously calculated PCs were then used to compute the cross-distance matrix between each tumor cell multivariate time series using the dynamic time warping algorithm from the package ‘dtwclust’. To visualize heterogeneous tumor cell behaviors in two dimensions, dimensionality reduction on the cross-distance matrix was performed by the Uniform Manifold Approximation and Projection method (‘umap’ package). Clustering was performed using the k-means clustering algorithm. For each cluster, the average values of distinct behavioral and environmental components were calculated and plotted as a heatmap (‘pheatmap’).
 
-## Large-scale phenotyping module
+#### Large-scale phenotyping module
 
 The information obtained from mLSR3D and Cytomap about large-scale TME regions was combined with the DMG cells behavioral information (see above section Tumor large-scale spatial phenotyping with Cytomap) to examine the large-scale features of tumor cells. For tumor cells, the mean speed, square displacement, and raw movement were analyzed.
 
-## Small-scale phenotyping module
+#### Small-scale phenotyping module
 
 BEHAV3D-TP enables the integration of microenvironmental features—beyond tumor cells—through two distinct approaches within this module (Figure 1d). In Option 1, these microenvironmental features (MEFs) are incorporated upstream and directly included in the clustering process. Feature selection for this step is performed via the interface titled "Select the features you want to use for the environmental (morpho)-dynamic analysis." In Option 2, illustrated in Figure 4, environmental features are integrated downstream to assess their correlation with pre-defined behavioral clusters. In this case, features are selected through a separate interface titled "Feature selection for projection over UMAP."
 
 In the DMG example of Figure 4, the positional coordinates of tracked tumor cells and detected microenvironmental factors (TAMMs, SR101+and blood vessels) were used to determine the small-scale landscape of tumor cells. For tumor cells, the average distance to the closest 10 neighbors was measured to determine tumor cell density. For each tumor cell and each environmental component, the number of microenvironmental objects in a 30 µm radius and the distance to the closest object were computed. For each behavioral cluster, the values of closest neighbors, minimal distance to each environmental factor, and number of environmental objects in the 30 µm radius were plotted and compared. To quantify the percentage of DMG cells in proximity to CD20r+ TAMMs, we classified cells located within 15  µm of TAMM surfaces as ‘close’. For proximity to blood vessels, DMG cells were considered ‘close’ if they were within 3  µm of blood vessel spots. The difference in distance thresholds reflects the nature of the reference objects: while TAMMs are defined by ‘Surface’ boundaries, blood vessels were represented by smaller centroid-based ‘Spots’, necessitating a more stringent cutoff.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using R. The representation of n may refer to individual mice, distinct imaging positions within different mice, or individual cell tracks, as indicated in the figure legends. Two-tailed unpaired t-tests were performed for comparison between two groups in Figure 1—figure supplement 1d. For comparisons involving more than two groups, where no random effects were present, we performed one-way ANOVA (Figures 2d and 4b), followed by Tukey’s Honest Significant Difference post hoc test to correct for multiple comparisons. This correction was applied in Figure 2—figure supplement 1c (p-values reported in the legend), as well as in Figure 3d, Figure 3—figure supplement 1b, e-g. Where necessary to account for inter-mouse and TME region variability, we applied a linear mixed-effects model with mouse and/or TME class included as random effects (Figure 4c, e, Figure 1—figure supplement 3d, Figure 4—figure supplement 1c and d). To compare the distribution of different morphodynamic clusters of TEB cells, we pooled all positions and mice due to the low number of cells per position. We then constructed a contingency table and performed a Chi-square test (Figure 1—figure supplement 2d).

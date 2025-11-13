@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/047s2c258 Department of Chemical and Biomolecular Engineering, University of Maryland, College Park College Park United States
-2. https://ror.org/047s2c258 Department of Physics, University of Maryland, College Park College Park United States
-3. https://ror.org/047s2c258 Biological Sciences Graduate Program, University of Maryland, College Park College Park United States
-4. https://ror.org/047s2c258 Biophysics Graduate Program, University of Maryland, College Park College Park United States
-5. https://ror.org/047s2c258 Institute for Physical Science and Technology, University of Maryland College Park United States
-6. https://ror.org/047s2c258 Department of Chemistry and Biochemistry, University of Maryland College Park United States
+1. Department of Chemical and Biomolecular Engineering, University of Maryland, College Park College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+2. Department of Physics, University of Maryland, College Park College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+3. Biological Sciences Graduate Program, University of Maryland, College Park College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+4. Biophysics Graduate Program, University of Maryland, College Park College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+5. Institute for Physical Science and Technology, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+6. Department of Chemistry and Biochemistry, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
 
 † Corresponding author
 
@@ -39,49 +39,125 @@ Furthermore, our computational analysis indicates that actin filaments located a
 
 ## Results
 
-## Dissecting and modeling the T cell actin ring
+### Dissecting and modeling the T cell actin ring
 
 In order to construct a molecular model of actin rings, we first examined the F-actin distribution in live Jurkat T cells expressing tdTomato-F-tractin (an indirect reporter of F-actin) and MLC-EGFP (myosin light chain). These cells were allowed to spread on an activating glass surfaces coated with anti-CD3 antibody and imaged with time-lapse total internal reflection fluorescence (TIRF) microscopy to visualize the dynamics of actin reorganization (Figure 1—video 1). Upon activation by stimulatory antibodies, the actin cytoskeleton in T cells reorganizes into a ring-like structure characterizing the immune synapse (Figure 1a-c and Hui and Upadhyaya, 2017; Yi et al., 2012; Babich et al., 2012; Hammer et al., 2019; Murugesan et al., 2016). The actin ring consists of an outer lamellipodial region and an inner lamellar ring. In the outer ring, Arp2/3 is activated by WASP near the membrane (Takenawa and Suetsugu, 2007), generating a branched actin network that largely excludes non-muscle myosin II (NMII) as shown in Figure 1c. The inner ring is enriched in actin filaments decorated with NMII which form actomyosin ‘arcs’ (Figure 1b–c). The central region is largely depleted of actin and NMII.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig1-v2.jpg)
+
+**Figure 1.:** (a–b) Representative snapshots of actin (a) and NMII (b) in actin rings of live Jurkat T cells activated on anti-CD3 antibody-coated coverslips. Actin is labeled by tdTomato F-tractin (magenta), and NMII is labeled by MLC-EGFP (green). (c) Merged fluorescence image (left panel) showing distribution of actin and NMII within the T cell actin ring. Inner and outer regions of the ring are indicated. Normalized fluorescence intensity profiles of F-actin and NMII (right) along the dashed line shown in the left panel. (a–c) Scale bar = 10 µm. (d) Setup of simulations using MEDYAN with the major cytoskeletal components labeled. (e) A representative snapshot of the simulation (left)and the corresponding distribution of actin and NMII along the diameter of the ring (right). $C_{actin}=120\muM,C_{NMII}=0.1\muM,C_{alpha−actinin}=4\muM,C_{Arp2/3}=1\muM,C_{formin}=0.3\muM$. Scale bar = 1µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Arp2/3 (represented as yellow beads) is activated 500nm away from the boundary. Scale bar = 1 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Flow rate is quantified by tracking the mean displacement of individual F-actin molecules. Negative flow rate indicates centripetal motion.
+
 To understand the biophysical determinants of ring formation and stability, we modeled the formation of actin ring systems using MEDYAN, a simulation platform that combines sophisticated, single molecule level treatment of cytoskeletal reactions, polymer mechanics, and mechanochemical feedback. Actin networks were simulated in a thin oblate cylinder with diameters between 3.8 µm and 10 µm, to mimic the lateral dimensions of small mammalian cells (Figure 1d). Model details can be found in Simulation Methods. We first modeled an actin network with Arp2/3 mediated branching near the periphery. Simulations show that this preferential activation of branching alone is sufficient to generate a lamellipodia-like actin ring, similar to the outer T cell ring, without any other cytoskeletal components, or filament tethering to the boundary (Figure 1—figure supplement 1). We then added the motor protein NMII, crosslinker alpha-actinin, and a filament nucleator formin, which are essential components for actin network remodeling and are ubiquitously found in actin rings and cortices (Salbreux et al., 2012; Blanchoin et al., 2014). Arp2/3 creates a dense dendritic actin mesh at the cell periphery (Svitkina and Borisy, 1999; Takenawa and Suetsugu, 2007), and we hypothesize that NMII is sterically expelled from this region as observed in T cells. To mimic in vivo conditions, we excluded NMII from the peripheral region which contains Arp2/3 mediated branched actin networks. Upon tuning the concentrations of cytoskeletal components and filament treadmilling rates, we found that the network self-organizes into and maintains an outer lammellipodia-like ring and an inner lamellar-like ring with similar actomyosin spatial distribution as the actin ring in T cells (Figure 1e). Also similar to T cells (Hui and Upadhyaya, 2017; Babich et al., 2012; Yi et al., 2012), simulated F-actin undergoes retrograde flow due to filament polymerization against the boundary and NMII generated contraction (Figure 1—figure supplement 2). Even without spatial restrictions on actin or myosin at the periphery, our simulated networks resemble the inner actomyosin ring found in T cells, suggesting that the formation of a ring-like actin structure is a consequence of actomyosin self-organization. We next focused on the origins of this inner actomyosin ring.
 
-## Building a minimal model for actin ring formation
+### Building a minimal model for actin ring formation
 
-To explore the minimal determinants of actin ring formation, we first modeled networks with only actin filaments at different average treadmilling rates (⟨rT⁢M⟨= 0.57 s–1, 1.41 s–1, and 2.21 s–1) based on actin filament assembly kinetics reported from prior experiments (Fujiwara et al., 2007; Kovar et al., 2006; Fujiwara et al., 2018). These systems also include formin at a concentration of 100 nM (Pring et al., 2003; Ni and Papoian, 2019). We found that disordered actin networks were created at all treadmilling conditions tested (Figure 2—figure supplement 1, b). We quantified the spatiotemporal evolution of the network geometry by plotting the median of the radial filament density distribution (Rm⁢e⁢d⁢i⁢a⁢n) as a function of time (Figure 2—figure supplement 1, a). In NMII-free networks, we observed a relatively uniform filament density across the network regardless of treadmilling rates (Figure 2—figure supplement 1, c). In this case, the network geometry is dominated by stochastic filament treadmilling that is not spatially biased. The boundary plays an important role, as the boundary repulsion force inhibits barbed end polymerization such that filaments reaching the boundary rapidly depolymerize and eventually disassemble. The loss of filaments through depolymerization is compensated by the nucleation of new filaments, resulting in dynamic and disordered structures (Figure 2—video 1).
+To explore the minimal determinants of actin ring formation, we first modeled networks with only actin filaments at different average treadmilling rates ($⟨r_{T⁢M}⟨=$ 0.57 s–1, 1.41 s–1, and 2.21 s–1) based on actin filament assembly kinetics reported from prior experiments (Fujiwara et al., 2007; Kovar et al., 2006; Fujiwara et al., 2018). These systems also include formin at a concentration of 100 nM (Pring et al., 2003; Ni and Papoian, 2019). We found that disordered actin networks were created at all treadmilling conditions tested (Figure 2—figure supplement 1, b). We quantified the spatiotemporal evolution of the network geometry by plotting the median of the radial filament density distribution ($R_{m⁢e⁢d⁢i⁢a⁢n}$) as a function of time (Figure 2—figure supplement 1, a). In NMII-free networks, we observed a relatively uniform filament density across the network regardless of treadmilling rates (Figure 2—figure supplement 1, c). In this case, the network geometry is dominated by stochastic filament treadmilling that is not spatially biased. The boundary plays an important role, as the boundary repulsion force inhibits barbed end polymerization such that filaments reaching the boundary rapidly depolymerize and eventually disassemble. The loss of filaments through depolymerization is compensated by the nucleation of new filaments, resulting in dynamic and disordered structures (Figure 2—video 1).
 
-We next explored how these disordered networks behaved upon the introduction of crosslinking and motor contractility. We allowed the network to evolve for 300 s at different ⟨rT⁢M⟨ as described above to reach a steady disordered state, and then added NMII and the actin crosslinker alpha-actinin to generate contractile forces. The addition of NMII and crosslinkers changed the steady state network geometry, as measured by Rm⁢e⁢d⁢i⁢a⁢n (Figure 2a). For slow treadmilling rates (⟨rT⁢M⟨=0.56⁢s-1), the addition of NMII and alpha-actinin resulted in the clustering of actin filaments (Figure 2b–iii, and Figure 2—video 1). This geometric pattern is consistent with prior in vitro and in silico studies on contractile actomyosin networks (Murrell and Gardel, 2012; Chuang et al., 2018; Linsmeier et al., 2016; Niu et al., 2017), where contractility can be defined as a symmetry breaking event accompanied by a geometric collapse of the network. The average local concentration of actin within the clusters was 234 µM (Figure 2—figure supplement 2), which is almost six-fold higher than the initial G-actin concentration (40 µM), suggesting a high degree of condensation. Although the size and location of actin clusters varied significantly across multiple trajectories (Figure 2—figure supplement 3), a decreasing Rm⁢e⁢d⁢i⁢a⁢n suggests that the overall collapse is centripetal (Figure 2b–iii).
+We next explored how these disordered networks behaved upon the introduction of crosslinking and motor contractility. We allowed the network to evolve for 300 s at different $⟨r_{T⁢M}⟨$ as described above to reach a steady disordered state, and then added NMII and the actin crosslinker alpha-actinin to generate contractile forces. The addition of NMII and crosslinkers changed the steady state network geometry, as measured by $R_{m⁢e⁢d⁢i⁢a⁢n}$ (Figure 2a). For slow treadmilling rates ($⟨r_{T⁢M}⟨=0.56⁢s^{-1}$), the addition of NMII and alpha-actinin resulted in the clustering of actin filaments (Figure 2b–iii, and Figure 2—video 1). This geometric pattern is consistent with prior in vitro and in silico studies on contractile actomyosin networks (Murrell and Gardel, 2012; Chuang et al., 2018; Linsmeier et al., 2016; Niu et al., 2017), where contractility can be defined as a symmetry breaking event accompanied by a geometric collapse of the network. The average local concentration of actin within the clusters was 234 µM (Figure 2—figure supplement 2), which is almost six-fold higher than the initial G-actin concentration (40 µM), suggesting a high degree of condensation. Although the size and location of actin clusters varied significantly across multiple trajectories (Figure 2—figure supplement 3), a decreasing $R_{m⁢e⁢d⁢i⁢a⁢n}$ suggests that the overall collapse is centripetal (Figure 2b–iii).
 
-Our simulations suggest that actin networks are subject to two competing processes: treadmilling, which tends to homogeneously distribute filaments in the network, and NMII-mediated contractility, which tends to trap filaments into clusters. We thus explored changes in the actin network geometry by increasing the treadmilling rate while maintaining the same concentration of NMII. Although filament nucleation occurs stochastically throughout the entire network and there is no filament tethering near the boundary, we discovered that after addition of NMII to rapidly treadmilling networks (⟨rT⁢M⟨=2.05⁢s-1), filaments steadily accumulate at the network boundary (Figure 2a–i, and Figure 2—video 1). During this process, we observed that NMII deformed many filaments and gradually changed their orientation from being perpendicular to the boundary to parallel (Figure 2—video 2). Upon allowing the system to further evolve for several hundred seconds, we found that actin networks transformed into ring-like structures (Figure 2b–i). Networks with intermediate ⟨rT⁢M⟨=0.94⁢s-1 form a mixture of clusters and rings (Figure 2b–ii, and Figure 2—video 1).
+![Figure 2.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-v2.jpg)
+
+**Figure 2.:** (a) Normalized medians of radial filament density distribution ($R_{m⁢e⁢d⁢i⁢a⁢n}$) at different treadmilling rates ($⟨r_{T⁢M}⟨$) are shown. The treadmilling rate is defined as the average number of actin monomers added per filament per second at the barbed ends - equivalent to the rate of F-actin depletion from the pointed ends - after reaching the kinetic steady state (See Simulation Methods and Figure 2—figure supplement 7 for details). 0.06µM of NMII and 4µM of alpha-actinin were added at 301s. The inset figure is a snapshot at t=300s of networks with $⟨r_{T⁢M}⟨=2.05⁢s^{-1}$. The shaded error bars represent the standard deviation across 5 runs. (b–c) Representative snapshots at each treadmilling condition (b) and their radial filament density distribution, $ρ⁢(r)$ (c) are shown. Dashed lines in (c) indicate the position of $R_{m⁢e⁢d⁢i⁢a⁢n}$. (d) Representative snapshot of ring-like networks with 80µM actin (left), and $ρ⁢(r)$ of actin rings with 40µM actin and 80µM actin (right) are shown ($⟨r_{T⁢M}⟨=$ 1.35 s–1). (e) A snapshot of a spherical cortex-like network (left) and a slice showing the internal structure (right). (a,b,d,e) Actin filaments are magenta cylinders, NMIIs are green cylinders and linkers are blue cylinders in all snapshots. All scale bars are 1µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) 5 trajectories of normalized medians of filament radial density distribution, (b) representative snapshots, and (c) the corresponding filament radial density distributions ($ρ(r)$) at t=2000s are shown. Scale bar = 1 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) A cluster-like network as shown in Figure 1a–c ($⟨r_{T⁢M}⟨=0.56⁢s^{-1}$), and (c) a ring-like network as shown in Figure 1a–c ($⟨r_{T⁢M}⟨=2.05⁢s^{-1}$). (b and d) are the same heatmaps as (a) and (c), respectively, but only contains bins that exceed a concentration threshold of 160µM.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Five trajectories of medians of filament radial density distribution and simulation snapshots with $⟨r_{TM}⟩=0.56s^{−1}$.The upper plot shows five trajectories of medians of filament radial density distribution with $⟨r_{TM}⟩=0.56s^{−1}$. The lower part shows snapshots of each trajectory at the end of simulation. Actin is in magenta, NMII in green, and crosslinkers in blue. Scale bar =1 µm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The distribution of filament orientations for disordered networks ($⟨r_{TM}⟩=2.21s^{−1}$) and ring-like networks ($⟨r_{TM}⟩=2.05s^{−1}$) near the network periphery (r>1600 nm) are shown. More filaments are oriented perpendicular to the boundary in disordered networks. The filament orientation is represented by the angle between the treadmilling direction (the non-bendable barbed end cylinder) and the tangent vector to the boundary. Only filaments longer than 200nm are counted. The angle ranges from $0^{∘}$ to $90^{∘}$, with $0^{∘}$ indicating treadmilling parallel to the boundary and $90^{∘}$ indicating treadmilling perpendicular to the boundary. Five runs per condition.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Medians of filament radial density distribution ($R_{m⁢e⁢d⁢i⁢a⁢n}$) at different treadmilling rates ($⟨r_{T⁢M}⟨$) are shown. Networks are simulated in a thin oblate geometry, which has a diameter of 10µm and a height of 200nm. The network contains 20µM G-actin and 30nM filament nucleator. 0.03µM of NMII and 2µM alpha-actinin are added at t=301s. Shahded error bars indicate the standard deviation across five runs. (b) Snapshots of the evolution of representative networks under high treadmilling (i) and low-treadmilling (ii) conditions. Actin is shown in magenta, NMII in green, and crossklinkers in blue. Scale bar = 5 µm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a–b) Median of filament radial density distribution ($R_{m⁢e⁢d⁢i⁢a⁢n}$) at different treadmilling rates ($⟨r_{T⁢M}⟨$) and the most representative snapshots in spherical networks are shown. The diameter of the spherical network is 4 µm. The network contains 20µM G-actin and 20nM filament nucleators. 0.03 µM of NMII and 2µM alpha-actinin are added at t=50 s. Scale bar = 1µm.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (a) Average filament lengths as a function of time are shown for different treadmilling rates with colors as indicated in the legend. Shaded color represents the standard deviation of mean (5 runs per condition). (b) Filament length distribution (last 500s) at different treadmilling rates with the same color legend as panel a.
+
+Our simulations suggest that actin networks are subject to two competing processes: treadmilling, which tends to homogeneously distribute filaments in the network, and NMII-mediated contractility, which tends to trap filaments into clusters. We thus explored changes in the actin network geometry by increasing the treadmilling rate while maintaining the same concentration of NMII. Although filament nucleation occurs stochastically throughout the entire network and there is no filament tethering near the boundary, we discovered that after addition of NMII to rapidly treadmilling networks ($⟨r_{T⁢M}⟨=2.05⁢s^{-1}$), filaments steadily accumulate at the network boundary (Figure 2a–i, and Figure 2—video 1). During this process, we observed that NMII deformed many filaments and gradually changed their orientation from being perpendicular to the boundary to parallel (Figure 2—video 2). Upon allowing the system to further evolve for several hundred seconds, we found that actin networks transformed into ring-like structures (Figure 2b–i). Networks with intermediate $⟨r_{T⁢M}⟨=0.94⁢s^{-1}$ form a mixture of clusters and rings (Figure 2b–ii, and Figure 2—video 1).
 
 The resulting actin rings are highly condensed, with a thickness of a few hundred nanometers and exhibiting local actin concentrations similar to those found in actin clusters (263 µM). Increasing the initial G-actin concentration increases the thickness of actin rings (Figure 2d). Most filaments in actin rings are oriented parallel to the boundary (Figure 2—figure supplement 4), forming small actin clusters that undergo azimuthal flow (Figure 2—videos 1; 2). Analogous ring-like patterns were observed on a larger system with a diameter of 10 µm (Figure 2—figure supplement 5). In a spherical system, networks evolved into hollow spherical cortex-like geometries under similar conditions (Figure 2e, Figure 2—figure supplement 6, and Figure 2—video 3).
 
-## Competition between filament treadmilling and NMII contractility determines network morphology
+### Competition between filament treadmilling and NMII contractility determines network morphology
 
-To further examine how treadmilling rate regulates the formation of distinct actomyosin architectures, we performed extensive simulations at different treadmilling rates. Indeed, ⟨rT⁢M⟨ emerges as a key control parameter that governs the steady state network geometry. Below a critical ⟨rT⁢M⟨, which is 0.94 s-1 in our simulations, networks geometrically collapse into clusters, while above this critical ⟨rT⁢M⟨, they preferentially evolve into ring-like geometries (Figure 3a and b). The radial distribution of the ring state is characterized by higher Rm⁢e⁢d⁢i⁢a⁢n and smaller standard deviation compared with the cluster phase. Interestingly, Rm⁢e⁢d⁢i⁢a⁢n as a function of ⟨rT⁢M⟨ displays a sharp increase as the network transitions from the cluster state to the ring state (Figure 3b). Because the Rm⁢e⁢d⁢i⁢a⁢n trajectories after adding NMIIs are almost linear before reaching a steady state, we quantified the network remodeling speed by measuring the slopes of the linear part of the Rm⁢e⁢d⁢i⁢a⁢n trajectories. We found that the network remodeling speed is positively correlated with ⟨rT⁢M⟨ (Figure 3c), indicating that ⟨rT⁢M⟨ is an important factor driving network structural evolution.
+To further examine how treadmilling rate regulates the formation of distinct actomyosin architectures, we performed extensive simulations at different treadmilling rates. Indeed, $⟨r_{T⁢M}⟨$ emerges as a key control parameter that governs the steady state network geometry. Below a critical $⟨r_{T⁢M}⟨$, which is 0.94 $s^{-1}$ in our simulations, networks geometrically collapse into clusters, while above this critical $⟨r_{T⁢M}⟨$, they preferentially evolve into ring-like geometries (Figure 3a and b). The radial distribution of the ring state is characterized by higher $R_{m⁢e⁢d⁢i⁢a⁢n}$ and smaller standard deviation compared with the cluster phase. Interestingly, $R_{m⁢e⁢d⁢i⁢a⁢n}$ as a function of $⟨r_{T⁢M}⟨$ displays a sharp increase as the network transitions from the cluster state to the ring state (Figure 3b). Because the $R_{m⁢e⁢d⁢i⁢a⁢n}$ trajectories after adding NMIIs are almost linear before reaching a steady state, we quantified the network remodeling speed by measuring the slopes of the linear part of the $R_{m⁢e⁢d⁢i⁢a⁢n}$ trajectories. We found that the network remodeling speed is positively correlated with $⟨r_{T⁢M}⟨$ (Figure 3c), indicating that $⟨r_{T⁢M}⟨$ is an important factor driving network structural evolution.
 
-We next varied the NMII concentration (CN⁢M⁢I⁢I) at different treadmilling rates, obtaining a phase diagram delineating actin network morphologies (Figure 3d–e). The phase diagram indicates that the critical ⟨rT⁢M⟨ for actin ring formation increases as CN⁢M⁢I⁢I increases. Networks collapse into clusters for ⟨rT⁢M⟨ below the critical value. The higher CN⁢M⁢I⁢I is, the more likely a cluster tends to localize to the geometric center of the network, indicating that NMII induced contractility drives the centripetal condensation. When ⟨rT⁢M⟨ and CN⁢M⁢I⁢I are both low, the network becomes disordered (for example, see Figure 3e, ⟨rT⁢M⟨=0.56⁢s-1 and CNMII=0.02μM). Similarly, increasing network contractility by tuning alpha-actinin concentration also results in a transition from ring-like networks at low linker concentrations to bundles and clusters at higher concentrations (Figure 3—figure supplement 1).
+![Figure 3.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig3-v2.jpg)
 
-## Inhibition of actin dynamics disrupts actin rings in live cells and in silico
+**Figure 3.:** (a) Normalized medians of radial filament density distribution ($R_{m⁢e⁢d⁢i⁢a⁢n}$) as a function of time at different $⟨r_{T⁢M}⟨$(0.56 $s^{-1}$ to 2.05 $s^{-1}$) are shown. The shaded colors represent the standard deviation of means for 5 runs. (b) The box plot shows the average $R_{m⁢e⁢d⁢i⁢a⁢n}$ in the last 500 s of simulation at each treadmilling rate. Solid line connects the mean $R_{m⁢e⁢d⁢i⁢a⁢n}$ at each $⟨r_{T⁢M}⟨$. (c) The box plot shows the speed of network remodeling, measured as the slope of the linear part of $R_{m⁢e⁢d⁢i⁢a⁢n}$ after 300 s. The solid line connects the mean remodeling rates at each $⟨r_{T⁢M}⟨$. (a–c) $C_{a⁢c⁢t⁢i⁢n}=40⁢\mu⁢M,C_{N⁢M⁢I⁢I}=0.06⁢\mu⁢M,C_{a⁢l⁢p⁢h⁢a-a⁢c⁢t⁢i⁢n⁢i⁢n}=4⁢\mu⁢M$. (d) Steady state $R_{m⁢e⁢d⁢i⁢a⁢n}$ at different $⟨r_{T⁢M}⟨$(0.56 $s^{-1}$ to 2.05 $s^{-1}$) and $C_{N⁢M⁢I⁢I}$ (0.02–0.2 µM). (e) Representative snapshots of steady state actin network structures at different $⟨r_{T⁢M}⟨$ and $C_{N⁢M⁢I⁢I}$. Representative snapshots of trajectories in (a) are shown in the dashed box. (d-e) $C_{a⁢c⁢t⁢i⁢n}=40⁢\mu⁢M,C_{a⁢l⁢p⁢h⁢a-a⁢c⁢t⁢i⁢n⁢i⁢n}=4⁢\mu⁢M$. Actin is depcited as magenta cylinders and NMII as green cylinders. Scale bar = 2 µm.
 
-In order to further understand how treadmilling regulates ring-like actin networks, we experimentally disrupted F-actin dynamics in live Jurkat T cells expressing EGFP-F-tractin. Since it is not feasible to directly control the treadmilling rate in experiments, we used the actin inhibitor, Latrunculin-A (LatA), which decreases the polymerization rate and increases the depolymerization rate by sequestering G-actin and accelerating phosphate release from ADP-Pi-actin (Lodish, 2000; Yarmola et al., 2000; Fujiwara et al., 2018). Upon the formation of the actin ring at the contact zone, LatA (at different concentrations) was added to spreading cells and the resulting effect on the rings was monitored with time-lapse imaging. In order to compare with simulations, we used the fluorescence intensity as a reporter of F-actin levels and calculated a normalized Rm⁢e⁢d⁢i⁢a⁢n to quantify the evolution of the actin network under varying degrees of LatA inhibition compared to vehicle control (Figure 4a). With weak inhibition (CL⁢a⁢t⁢A= 250 nM), the ring like structure is perturbed but largely preserved for several minutes (Figure 4b, and Figure 4—video 1). At higher doses of LatA (CL⁢a⁢t⁢A= 500 nM and 1 µM, Figure 4c, and Figure 4—video 1), Rm⁢e⁢d⁢i⁢a⁢n rapidly decreases (Figure 4d), indicating a collapse of the network towards the geometric center of the cell. The rate of centripetal collapse of the actin network increases with increasing CL⁢a⁢t⁢A (Figure 4e). The dismantling of the actin ring is also accompanied by the formation of F-actin clusters or bundles (Figure 4b–c).
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig3-figsupp1-v2.jpg)
 
-To compare with these experimental observations, we perturbed actin network assembly in silico after ring-like networks were established. Based on recent work on reconstituted actin networks under LatA treatment (Fujiwara et al., 2018), we reduced the polymerization rate constants and increased the depolymerization rate constants to mimic the effect of LatA on sequestering G-actin and accelerating depolymerization to closely model the T cell experiments. Actin rings (no inhibition, Figure 4f) were created in the same way as shown in Figure 2a–i. Upon the formation of stable actin rings at 800 seconds, we perturbed actin filament polymerization to different extents to mimic weak and strong LatA inhibition (Figure 4—video 2). We found that actin rings persist under weak inhibition (Figure 4g), while they collapse into clusters under strong inhibition (Figure 4h). The disruption of actin filament assembly also reduces ⟨rT⁢M⟨ from 2.05⁢s-1 to 1.80⁢s-1 (weak inhibition) and 0.50⁢s-1 (strong inhibition), respectively. Measurements of Rm⁢e⁢d⁢i⁢a⁢n and the rate of collapse (Figure 4i and j) at different inhibition conditions reveal the centripetal collapse of the ring network, reproducing the above-described experimental observations.
+**Figure 3—figure supplement 1.:** Representative snapshots of steady state actin network structures at different $C_{a⁢l⁢p⁢h⁢a-a⁢c⁢t⁢i⁢n⁢i⁢n}$ and $C_{NMII}$ for all conditions.Actin is in magenta, NMII is in green, and alpha-actinin is in blue. Scale bar = 2 µm.
 
-## Enhancement of NMII activity leads to centripetal contraction of actomyosin rings in T cells and in silico
+We next varied the NMII concentration ($C_{N⁢M⁢I⁢I}$) at different treadmilling rates, obtaining a phase diagram delineating actin network morphologies (Figure 3d–e). The phase diagram indicates that the critical $⟨r_{T⁢M}⟨$ for actin ring formation increases as $C_{N⁢M⁢I⁢I}$ increases. Networks collapse into clusters for $⟨r_{T⁢M}⟨$ below the critical value. The higher $C_{N⁢M⁢I⁢I}$ is, the more likely a cluster tends to localize to the geometric center of the network, indicating that NMII induced contractility drives the centripetal condensation. When $⟨r_{T⁢M}⟨$ and $C_{N⁢M⁢I⁢I}$ are both low, the network becomes disordered (for example, see Figure 3e, $⟨r_{T⁢M}⟨=0.56⁢s^{-1}$ and $C_{NMII}=0.02\muM$). Similarly, increasing network contractility by tuning alpha-actinin concentration also results in a transition from ring-like networks at low linker concentrations to bundles and clusters at higher concentrations (Figure 3—figure supplement 1).
 
-In order to validate the role of NMII activity in regulating ring-like actin networks, we next altered NMII dynamics in live Jurkat T cells. Under vehicle control (DMSO), actin rings are relatively stable over the timescale of 10 min, and the F-actin distribution displays a steep transition from a depletion zone at the cell center to a high-intensity plateau (Figure 5—figure supplements 1 and 2a). Calyculin A (CalyA) application to enhance NMII activity (Ishihara et al., 1989) leads to an increase in contractility and a centripetal collapse of the actin network (Figure 5a, and Figure 5—video 1), as quantified by the decrease of Rm⁢e⁢d⁢i⁢a⁢n (Figure 5c). On the other hand, upon treatment with Y-27632, an inhibitor of NMII’s upstream regulator, Rho kinase (Uehata et al., 1997), which decreases myosin based contractility, the network becomes more disordered and displays a shallower transition from the central depletion zone to the peripheral plateau (Figure 5b, and Figure 5—video 1). We quantified these changes by calculating the slope of the normalized F-actin intensity from the center to plateau region. As shown in Figure 5d, the slope remained constant over time under vehicle addition, while it decreased upon Y-27632 addition, indicating that the network becomes more diffuse and disordered, and the ring integrity is compromised with loss of myosin contractility. These results confirm that NMII is a central regulator of actin network structure, and high NMII activity is antagonistic to actin ring formation.
+### Inhibition of actin dynamics disrupts actin rings in live cells and in silico
+
+In order to further understand how treadmilling regulates ring-like actin networks, we experimentally disrupted F-actin dynamics in live Jurkat T cells expressing EGFP-F-tractin. Since it is not feasible to directly control the treadmilling rate in experiments, we used the actin inhibitor, Latrunculin-A (LatA), which decreases the polymerization rate and increases the depolymerization rate by sequestering G-actin and accelerating phosphate release from ADP-Pi-actin (Lodish, 2000; Yarmola et al., 2000; Fujiwara et al., 2018). Upon the formation of the actin ring at the contact zone, LatA (at different concentrations) was added to spreading cells and the resulting effect on the rings was monitored with time-lapse imaging. In order to compare with simulations, we used the fluorescence intensity as a reporter of F-actin levels and calculated a normalized $R_{m⁢e⁢d⁢i⁢a⁢n}$ to quantify the evolution of the actin network under varying degrees of LatA inhibition compared to vehicle control (Figure 4a). With weak inhibition ($C_{L⁢a⁢t⁢A}=$ 250 nM), the ring like structure is perturbed but largely preserved for several minutes (Figure 4b, and Figure 4—video 1). At higher doses of LatA ($C_{L⁢a⁢t⁢A}=$ 500 nM and 1 µM, Figure 4c, and Figure 4—video 1), $R_{m⁢e⁢d⁢i⁢a⁢n}$ rapidly decreases (Figure 4d), indicating a collapse of the network towards the geometric center of the cell. The rate of centripetal collapse of the actin network increases with increasing $C_{L⁢a⁢t⁢A}$ (Figure 4e). The dismantling of the actin ring is also accompanied by the formation of F-actin clusters or bundles (Figure 4b–c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig4-v2.jpg)
+
+**Figure 4.:** (a–c) Timelapse montages of Jurkat T cells expressing F-tractin-EGFP spreading on anti-CD3 coated glass substrates. Cells were treated with (a) vehicle control (0.1% DMSO), (b) 250 nM LatA, or (c) 500 nM LatA between 300 and 360 s after contact with activating surface. The first post-treatment image is labeled as 0 s. Timelapse images illustrate the centripetal collapse of the actin ring upon treatment with LatA. Timescales of this collapse depend on the concentration of LatA as can be seen from the timestamps on the images. Scale bar is 10 µm. (d) Quantification of the spatial organization of the actin network using the normalized median of radial filament density distribution. Shaded error bars represent the standard deviations across trajectories (7–11 cells per condition). (e) Box plots showing the rate of centripetal collapse, measured as the slope of the $R_{m⁢e⁢d⁢i⁢a⁢n}$ distribution after inhibition. (f–h) Timelapse montages of simulations of (f) control, (g) weak inhibition, and (h) strong inhibition. Treadmilling rates in these conditions are $2.05⁢s^{-1}$, $1.80⁢s^{-1}$, and $0.50⁢s^{-1}$, respectively. Indicated $⟨r_{T⁢M}⟨$ is the averaged treadmilling from 1500 s to the end of simulations. Scale bar indicates 1 µm. (i) Medians of radial filament density distribution at different conditions. (j) Rate of centripetal collapse, measured as the slope of the $R_{m⁢e⁢d⁢i⁢a⁢n}$ distribution after inhibition. (i, j) The shaded color and error bars represent the standard deviation across trajectories, n=5 runs per condition.
+
+To compare with these experimental observations, we perturbed actin network assembly in silico after ring-like networks were established. Based on recent work on reconstituted actin networks under LatA treatment (Fujiwara et al., 2018), we reduced the polymerization rate constants and increased the depolymerization rate constants to mimic the effect of LatA on sequestering G-actin and accelerating depolymerization to closely model the T cell experiments. Actin rings (no inhibition, Figure 4f) were created in the same way as shown in Figure 2a–i. Upon the formation of stable actin rings at 800 seconds, we perturbed actin filament polymerization to different extents to mimic weak and strong LatA inhibition (Figure 4—video 2). We found that actin rings persist under weak inhibition (Figure 4g), while they collapse into clusters under strong inhibition (Figure 4h). The disruption of actin filament assembly also reduces $⟨r_{T⁢M}⟨$ from $2.05⁢s^{-1}$ to $1.80⁢s^{-1}$ (weak inhibition) and $0.50⁢s^{-1}$ (strong inhibition), respectively. Measurements of $R_{m⁢e⁢d⁢i⁢a⁢n}$ and the rate of collapse (Figure 4i and j) at different inhibition conditions reveal the centripetal collapse of the ring network, reproducing the above-described experimental observations.
+
+### Enhancement of NMII activity leads to centripetal contraction of actomyosin rings in T cells and in silico
+
+In order to validate the role of NMII activity in regulating ring-like actin networks, we next altered NMII dynamics in live Jurkat T cells. Under vehicle control (DMSO), actin rings are relatively stable over the timescale of 10 min, and the F-actin distribution displays a steep transition from a depletion zone at the cell center to a high-intensity plateau (Figure 5—figure supplements 1 and 2a). Calyculin A (CalyA) application to enhance NMII activity (Ishihara et al., 1989) leads to an increase in contractility and a centripetal collapse of the actin network (Figure 5a, and Figure 5—video 1), as quantified by the decrease of $R_{m⁢e⁢d⁢i⁢a⁢n}$ (Figure 5c). On the other hand, upon treatment with Y-27632, an inhibitor of NMII’s upstream regulator, Rho kinase (Uehata et al., 1997), which decreases myosin based contractility, the network becomes more disordered and displays a shallower transition from the central depletion zone to the peripheral plateau (Figure 5b, and Figure 5—video 1). We quantified these changes by calculating the slope of the normalized F-actin intensity from the center to plateau region. As shown in Figure 5d, the slope remained constant over time under vehicle addition, while it decreased upon Y-27632 addition, indicating that the network becomes more diffuse and disordered, and the ring integrity is compromised with loss of myosin contractility. These results confirm that NMII is a central regulator of actin network structure, and high NMII activity is antagonistic to actin ring formation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig5-v2.jpg)
+
+**Figure 5.:** (a–b) Time lapse montages of Jurkat T cells expressing F-tractin-EFGP spreading on anti-CD3-coated glass substrates (left) and the normalized radial F-actin intensity (right). After achieving maximal spreading, cells were treated with (a) 50 nM CalyA, or (b) 100 µM Y-27632. Scale bar is 10 µm. (c) The normalized median of radial filament density distribution $R_{m⁢e⁢d⁢i⁢a⁢n}$. n=12 cells for vehicle (0.5% DMSO), and n=14 cells for CalyA. Two sample t-test was performed for the first point before drug addition (ns, p=0.83) and 600 s after drug addition (****, p<0.0001). (d) The slope of the intensity profiles over the transition region from the center to the peripheral plateau as a function of time. n=25 cells for vehicle (0.1% DMSO), and 24 for Y-27832. Two sample t-test was performed for the first point (before drug addition) and the last point (660 s after drug addition). (e–f) Timelapse montages of simulations (left) and the normalized radiaul filament density distribution $ρ⁢(r)$ at different times (right) mimicking actin rings in (e) CalyA treatment by increasing NMII levels, and (f) Y-27632 treatment by reducing NMII levels. An actin ring containing 80 µM actin, 0.18 µM NMII, and 4 µM alpha-actinin was pre-initialized as described in the Simulation Methods, and the NMII perturbation was performed at 0 s. The control condition is shown in Figure 5—figure supplement 2. Scale bar is 1 µm. (g) The evolution of $R_{m⁢e⁢d⁢i⁢a⁢n}$ for different levels of NMII addition. Blue curve is control, and other curves are simulations with indicated levels of NMII added to mimic the CalyA experiment. (h) The slope of the intensity profiles over the transition region from the center to the peripheral plateau as a function of time for simulations of Y-27632 addition. Blue curve is control while orange curve represents simulations after reduction of NMII concentration by 0.04 µM. Two sample t-test was performed for the first three points (before inhibition) and the last three points (510 s to 600 s after drug addition). (g–h) n=5 runs per condition. (a–h) In all figures, 0 s represented the first time point recorded after drug addition (for experiments) or NMII addition/depletion (for simulations). (c,d,g,h) Shaded colors and error bars represent the standard deviation across cells or simulation trajectories.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (Left) Example image of a Jurkat T cell expressing F-Tractin-EGFP with the cell mask (yellow outline) and centroid (red asterisk) overlaid. 50 equally spaced lines joining the centroid to the mask edge are randomly drawn (yellow). The average intensity profile over these lines is generated to produce. a single intensity line profile from the cell centroid to the cell edge for a cell at a given time point. (Right) Normalized F-actin intensityprofiles for the cell shown on the left at selected timepoints (indicated as per the color bar) 30 seconds apart for the duration of imaging. Linear fits for the steeply increasing region of the normalized F-actin intensity profiles (shaded red and blue lines) are used to calculate the slope of center to plateau F-actin distribution at each time point. Scale bar is 10 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a–b) Time lapse montages of Jurkat T cells expressing F-tractin-EFGP spreading on anti-CD3 coated glass substrates (left) and the normalized radial F-actin intensity at different times (right). After achieving maximal spreading, cells were treated with 0.5% DMSO. Scale bar is 10 µm. (b) Timelapse montages of simulations (left) and the normalized radial filament density distribution  $ρ⁢(r)$ at different times (right) mimicking actin rings in vehicle control. Scale bar is 1 µm.
 
 We then validated the role of NMII in shaping actin structure using MEDYAN simulations. To reduce the computational time, we first initialized actin ring networks and then increased or decreased NMII concentrations (see Materials and methods for simulation setups). Under control conditions, we tuned the actin and NMII concentrations to mimic the conditions tested in T cells (Figure 5—figure supplement 2b). In agreement with experiments, enhancing NMII levels induces centripetal collapse of the network (Figure 5e, and Figure 5—video 2), and the speed of the collapse is proportional to the amount of NMII added to the system (Figure 5f). These results also indicate that a confined boundary is not required for the maintenance of actin rings. On the other hand, upon reduction of NMII levels, the actin ring becomes more disordered (Figure 5—video 2) and the slope of the center to plateau F-actin distribution decreases (Figure 5g and h), in agreement with Y-27632 inhibition experiments.
 
-## Energetic origins of structural polymorphism in active networks
+### Energetic origins of structural polymorphism in active networks
 
-We next explored the chemical and mechanical properties of actin networks at various treadmilling rates. We found that the numbers of F-actin filaments, bound linkers, and bound motors remain nearly constant across different ⟨rT⁢M⟨, while distributions of diffusive molecules, such as G-actin and nucleators, also did not show spatial localization, being uniformly distributed throughout the simulation volume (Figure 6—figure supplement 1). These observations suggest that ring-like architectures do not form because of the enrichment of soluble constituent molecules near the periphery.
+We next explored the chemical and mechanical properties of actin networks at various treadmilling rates. We found that the numbers of F-actin filaments, bound linkers, and bound motors remain nearly constant across different $⟨r_{T⁢M}⟨$, while distributions of diffusive molecules, such as G-actin and nucleators, also did not show spatial localization, being uniformly distributed throughout the simulation volume (Figure 6—figure supplement 1). These observations suggest that ring-like architectures do not form because of the enrichment of soluble constituent molecules near the periphery.
 
-The lack of enrichment of soluble molecules in the periphery suggested a possible energetic origin of the structures. We thus examined the mechanical energy (UM⁢e⁢c⁢h) of the system, which primarily arises from filament bending in our simulations. For fixed concentrations of NMII (0.06µM) and crosslinker (4 µM), we found that UM⁢e⁢c⁢h decreases with increasing ⟨rT⁢M⟨ (Figure 6a). In addition, UM⁢e⁢c⁢h undergoes a sharp reduction when ⟨rT⁢M⟨ reaches the critical threshold, with UM⁢e⁢c⁢h of actin rings being two- to threefold lower than that of clusters. Moreover, we found that UM⁢e⁢c⁢h is negatively correlated with Rm⁢e⁢d⁢i⁢a⁢n, regardless of the structural state (Figure 6b). Since higher Rm⁢e⁢d⁢i⁢a⁢n indicates localization of actin filaments at the network periphery, this negative correlation indicates that configurations with the lowest mechanical energy are those with a ring-like geometry. These results suggest that the peripheral arrangement of actin filaments is more energetically favorable than more distorted configurations found in centripetal clusters.
+The lack of enrichment of soluble molecules in the periphery suggested a possible energetic origin of the structures. We thus examined the mechanical energy ($U_{M⁢e⁢c⁢h}$) of the system, which primarily arises from filament bending in our simulations. For fixed concentrations of NMII (0.06µM) and crosslinker (4 µM), we found that $U_{M⁢e⁢c⁢h}$ decreases with increasing $⟨r_{T⁢M}⟨$ (Figure 6a). In addition, $U_{M⁢e⁢c⁢h}$ undergoes a sharp reduction when $⟨r_{T⁢M}⟨$ reaches the critical threshold, with $U_{M⁢e⁢c⁢h}$ of actin rings being two- to threefold lower than that of clusters. Moreover, we found that $U_{M⁢e⁢c⁢h}$ is negatively correlated with $R_{m⁢e⁢d⁢i⁢a⁢n}$, regardless of the structural state (Figure 6b). Since higher $R_{m⁢e⁢d⁢i⁢a⁢n}$ indicates localization of actin filaments at the network periphery, this negative correlation indicates that configurations with the lowest mechanical energy are those with a ring-like geometry. These results suggest that the peripheral arrangement of actin filaments is more energetically favorable than more distorted configurations found in centripetal clusters.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig6-v2.jpg)
+
+**Figure 6.:** (a) The box plot shows the steady state $U_{M⁢e⁢c⁢h}$ at each treadmilling rate. $U_{M⁢e⁢c⁢h}$ is the sum of the bending energy of actin filaments and the stretching energy of filaments, motors, and linkers. The solid line connects the mean $U_{M⁢e⁢c⁢h}$ at each $⟨r_{T⁢M}⟨$. (b) Mechanical energy ($U_{M⁢e⁢c⁢h}$) and the corresponding $R_{m⁢e⁢d⁢i⁢a⁢n}$ at different $⟨r_{T⁢M}⟨$ as indicated in the legend. Each data point represents the average $U_{M⁢e⁢c⁢h}$ and $R_{m⁢e⁢d⁢i⁢a⁢n}$ per 100 s of the last 500 s of simulation. (a–b) $C_{a⁢c⁢t⁢i⁢n}=40⁢\mu⁢M,C_{N⁢M⁢I⁢I}=0.06⁢\mu⁢M,C_{a⁢l⁢p⁢h⁢a-a⁢c⁢t⁢i⁢n⁢i⁢n}=4⁢\mu⁢M$, with varying $⟨r_{T⁢M}⟨$ as shown in Figure 3a–c. n=5 runs per condition. (c) A graphical description showing the proposed energy landscape for generating actin cortices. (d) Schematic showing the formation of actin ring/cortex versus clusters. At low treadmilling rates, networks are dominated by myosin-driven contraction, leading to centripetal collapse into clusters (lower). Faster filament treadmilling allows networks to overcome the myosin-driven centripetal motion, where filaments tend to move to the network periphery due to lower energy (upper).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82658/elife-82658-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a–b) Diffusing molecule concentrations along the radius of (a) cluster networks ($⟨r_{T⁢M}⟨=0.56⁢s^{-1}$) and (b) ring-like networks ($⟨r_{T⁢M}⟨=2.05⁢s^{-1}$, b) are shown. (c–d) Box plots of the number of (c) bound linkers and (d) F-actin in the system are shown. Almost all motors are bound upon addition, thus we do not provide a plot for the number of bound motors.
 
 ## Discussion
 
-Detailed mechanochemical modeling using MEDYAN shows that active actin networks exhibit a striking morphological transition upon changes in the filament treadmilling rate. We found that two distinct types of dynamic structures emerge due to the interplay between treadmilling rates and NMII contractility in an initially disordered network: (1) actin clusters formed in slow-treadmilling or high CN⁢M⁢I⁢I networks and (2) ring-like and cortex-like structures spontaneously assembled in fast-treadmilling and low CN⁢M⁢I⁢I networks. This geometric transition does not require filament tethering to the boundary or spatially biased filament assembly. We also observed a sharp transition in the system’s mechanical energy during the transformation from a multi-cluster network to a ring architecture. Such a sharp change in morphology and mechanical energy, induced by tuning filament treadmilling speed, is indicative of a finite size phase transition.
+Detailed mechanochemical modeling using MEDYAN shows that active actin networks exhibit a striking morphological transition upon changes in the filament treadmilling rate. We found that two distinct types of dynamic structures emerge due to the interplay between treadmilling rates and NMII contractility in an initially disordered network: (1) actin clusters formed in slow-treadmilling or high $C_{N⁢M⁢I⁢I}$ networks and (2) ring-like and cortex-like structures spontaneously assembled in fast-treadmilling and low $C_{N⁢M⁢I⁢I}$ networks. This geometric transition does not require filament tethering to the boundary or spatially biased filament assembly. We also observed a sharp transition in the system’s mechanical energy during the transformation from a multi-cluster network to a ring architecture. Such a sharp change in morphology and mechanical energy, induced by tuning filament treadmilling speed, is indicative of a finite size phase transition.
 
 While phase transitions in many biomolecular systems are often driven by passive biomolecular interactions (Li et al., 2012; Brangwynne et al., 2009), in this work we identified a phase transition in cytoskeletal networks that is induced by non-equilibrium actomyosin dynamics. Our analysis shows that the formation of actin rings and cortices arises from the competition between filament treadmilling and myosin induced contraction. The addition of myosin motors and crosslinkers to an initially disordered actin network induces contractile forces, creating actomyosin clusters having higher mechanical energy (Figure 6c). In the language of dissipative structures (Glansdorff et al., 1973), actomyosin clusters are thereby trapped in a non-equilibrium, metastable state that cannot easily transition to a final steady state structure with lower mechanical energy. Rapid filament treadmilling provides a mechanism for escaping these traps (Kim et al., 2014; Popov et al., 2016; McCall et al., 2019), giving rise to smaller clusters that rapidly dissolve and reappear. In this state, the network has more freedom to remodel its structure in order to lower the mechanical energy. Indeed, our analysis suggests that as the actin filament distribution shifts to the network periphery, the smaller curvature at the boundary results in a decrease in filament bending, thereby lowering the mechanical energy of the network (Figure 6a–b). As a consequence, actin filaments at high treadmilling speeds rapidly accumulate at the network periphery, contributing to the build up of an actin ring in flattened volumes or actin cortices in fully 3D spherical geometries (Figure 6d, upper). In contrast, networks undergoing slow filament treadmilling are trapped in cluster-like configurations that have higher mechanical energy. The latter networks are dominated by myosin-driven contractility, leading to a highly non-ergodic state in which actin filaments undergo centripetal collapse (Figure 6d, lower).
 
@@ -93,128 +169,373 @@ In summary, we have shown that rapid treadmilling and the presence of myosin are
 
 ## Materials and methods
 
-## Cell culture and transfection
+### Cell culture and transfection
 
-E6.1 Jurkat T cells (a gift from Brian C. Schaefer, Uniformed Services University, MD, USA) were grown in RPMI medium supplemented with 10% Fetal Bovine Serum (FBS) and 1% penicillin-streptomycin at 37°C in a CO2 incubator. Transfections were performed with 2×105 cells using 1 µg of plasmid by electroporation using a Neon electroporation kit (Thermo Fisher Scientific). Prior to imaging, cells were transferred to CO2 independent L-15 medium (Fisher Scientific). Cells tested negative for mycoplasma contamination using MycoAlert Mycoplasma Detection Kit (Lonza).
+E6.1 Jurkat T cells (a gift from Brian C. Schaefer, Uniformed Services University, MD, USA) were grown in RPMI medium supplemented with 10% Fetal Bovine Serum (FBS) and 1% penicillin-streptomycin at 37°C in a CO2 incubator. Transfections were performed with $2\times10^{5}$ cells using 1 µg of plasmid by electroporation using a Neon electroporation kit (Thermo Fisher Scientific). Prior to imaging, cells were transferred to CO2 independent L-15 medium (Fisher Scientific). Cells tested negative for mycoplasma contamination using MycoAlert Mycoplasma Detection Kit (Lonza).
 
-## Plasmids and reagents
+### Plasmids and reagents
 
 pEGFP-C1 F-tractin-EGFP was a gift from Dyche Mullins (Addgene plasmid # 58473) (Belin et al., 2014). The tdTomato-F-tractin plasmid was a gift from Dr. John A. Hammer and the MLC-EGFP plasmid was a gift from Dr. Robert Fischer, National Heart, Lung, and Blood Institute. Latrunculin A was purchased from Sigma Aldrich Calyculin A was purchased from Cell Signaling Technology, Y-27632 was purchased from Selleck Chemicals, and dimethyl sulfoxide (DMSO) was purchased from Thermo Fisher Scientific.
 
-## Preparation of glass coverslips
+### Preparation of glass coverslips
 
 Sterile eight-well chambers (Cellvis) were incubated with 0.01% poly-L-lysine solution in distilled water for 10 min and then dried at 37°C for 1hr. Poly-L-lysine-coated chambers were then incubated with anti-human CD3 antibody (HIT3a clone, Thermo Fisher Scientific) in PBS at a concentration of 10 µg/mL for 2 hr at 37°C or overnight at 4°C. Following incubation, the chambers were washed five times with L-15 and warmed prior to imaging.
 
-## Microscopy
+### Microscopy
 
 Transfected T cells were seeded on anti-CD3 coated glass coverslips and allowed to activate for 5 min. Chambers were maintained at 37°C using a stage-top incubator (Okolab). Latrunculin A or vehicle (DMSO) were added at specified concentrations 5 min after seeding the cells. Fluorescence and interference reflection microscopy (IRM) images were acquired using an inverted microscope (Ti-E, Nikon, Melville, NY) with a scientific CMOS camera (Prime BSI, Photometrics, Tucson, AZ) with a frame interval of 2s. F-tractin-EGFP was imaged using total internal reflection fluorescence (TIRF), using a 60X, 1.49 NA oil immersion objective. One background image was captured during every session in order to perform background subtraction.
 
 For inhibitor experiments with Calcyulin-A and Y-27632, 50 nM Calyculin-A, 100 µM Y-27632 or vehicle (DMSO) were added after the cells had formed an actin ring. TIRF images were acquired as above with a frame interval of 2 s using a 100X, 1.49 NA oil immersion objective.
 
-## Image analysis
+### Image analysis
 
 Initial preprocessing of images was done using Fiji (Schindelin et al., 2012). A custom MATLAB script was written to perform background subtraction. The IRM or actin images were used to find the outline and centroid of the cells. 50 uniformly spaced lines were drawn from the centroid and these 50 line profiles were pooled together to generate a histogram of intensities as a function of a normalized distance to the centroid. The median of the distribution of intensities (and hence F-actin) was estimated for each time point. Custom MATLAB script can be found in the repository in the Data Availability Statement.
 
 To calculate the slope of center to plateau F-actin distribution, a cell mask was drawn for each cell (Figure 5—figure supplement 1, left - yellow outline) using a minimum threshold intensity. The centroid (red dot) of the masked cell was identified, and 50 equally spaced lines joining the centroid to the mask edge were drawn and the intensity profile was averaged over all these lines. This plot gives a single intensity line profile from cell centroid to cell edge for a cell at a given time point. Similarly, the line profiles for all the other time points spaced 30 s apart are obtained and normalized using the mean intensity of the cell to account for the effects of photobleaching. The resultant normalized line profile curves are now representative of how the actin distribution changes over time inside the cell (Figure 5—figure supplement 1, right). The intensity profiles typically display a linear regime before they plateau near the cell edge. The linear region of the line profile curves are fit to straight lines (Figure 5—figure supplement 1, right - shaded red and blue lines) to find their slope at each time point and the changes in the slopes over time are then compared across different chemical perturbations.
 
-## Simulation methods
+### Simulation methods
 
-## Simulation setup overview
+#### Simulation setup overview
 
 In this work, we employed an open-access mechanochemical platform for simulating active matter (MEDYAN Popov et al., 2016) to investigate the spatiotemporal evolution of actin networks under different treadmilling and myosin motor conditions. MEDYAN accounts for two overlapping phases and their interactions. (1) Diffusing G-actin and unbound formins, NMII and linkers are spatially dissolved in a solution phase. In this phase, the network is discretized into compartments based on the Kuramoto length of G-actin, which is the mean-free path that G-actin molecules are expected to diffuse before undergoing their next reaction (Hu and Papoian, 2010). Diffusing chemical species are assumed to be well-mixed within each compartment, and inter-compartment transports are modeled as stochastic diffusion reactions. (2) Polymeric filaments and bound species comprise the continuous polymeric phase which is overlaid on the solution phase. The polymeric phase is mechanically active, where filament bending, stretching, and steric interactions are taken into account. Bound motors and linkers are modeled as harmonic springs based on the mechanical properties of NMII and alpha-actinin. A boundary repulsion potential restricts filaments within the volume boundary. Filament polymerization is affected by interactions with the boundary, following the Brownian Ratchet model (Peskin et al., 1993). The following chemical reactions stochastically occur among the two phases: filaments can polymerize, depolymerize, and interact with myosin and crosslinker; formins are able to bind to G-actin and nucleate filaments; filaments that are only two monomers long can be rapidly destroyed. The chemical reaction modeling engine is based on an efficient and statistically accurate Next Reaction Method (NRM) (Gibson and Bruck, 2000), which is a variant of the Gillespie Algorithm (Gillespie, 1977).
 
-We initialized de novo cytoskeletal networks in MEDYAN with small seed filaments, 40 µM diffusing G-actin, and 100 nM filament nucleators based on their reported cytoplasmic concentrations in cells (Wu and Pollard, 2005; Kiuchi et al., 2011; Dominguez and Holmes, 2011). Most of the simulations were carried out in a thin oblate geometry, having a diameter ranging from 3.8 µm to 10 µm and an effective height of 200 nm. The spherical simulation volume has a diameter of 4 µm. We tuned the barbed end polymerization rate and pointed end depolymerization rate to model the effects of treadmilling promoters such as formin, profilin, and cofilin. To monitor the actual speed of treadmilling, we define ⟨rT⁢M⟨ as the average barbed end elongation rate, which is also equal to the shortening rate of the pointed end at steady state. Networks were allowed to assemble with only filament polymerization, depolymerization, nucleation, and disassembly for 300 s. At 300 s, 0.06 µM NMII and 4 µM alpha-actinin crosslinkers are added. The local density of clusters and rings were measured using a customized density based clustering algorithm.
+We initialized de novo cytoskeletal networks in MEDYAN with small seed filaments, 40 µM diffusing G-actin, and 100 nM filament nucleators based on their reported cytoplasmic concentrations in cells (Wu and Pollard, 2005; Kiuchi et al., 2011; Dominguez and Holmes, 2011). Most of the simulations were carried out in a thin oblate geometry, having a diameter ranging from 3.8 µm to 10 µm and an effective height of 200 nm. The spherical simulation volume has a diameter of 4 µm. We tuned the barbed end polymerization rate and pointed end depolymerization rate to model the effects of treadmilling promoters such as formin, profilin, and cofilin. To monitor the actual speed of treadmilling, we define $⟨r_{T⁢M}⟨$ as the average barbed end elongation rate, which is also equal to the shortening rate of the pointed end at steady state. Networks were allowed to assemble with only filament polymerization, depolymerization, nucleation, and disassembly for 300 s. At 300 s, 0.06 µM NMII and 4 µM alpha-actinin crosslinkers are added. The local density of clusters and rings were measured using a customized density based clustering algorithm.
 
-## Mechanical models
+### Mechanical models
 
-Unlike the traditional bead-spring model, the semi-flexible filaments are represented as connected cylinders. The equilibrium length (under zero force) of each cylinder elements varies from 2.7 nm (1 actin monomer) to a maximum of 108 nm (40 actin monomers). Addition of each actin monomer would increase the length of the first or last cylinders by 2.7 nm, and vice versa. Polymerization will create a new cylinder if the cylinder has reached its maximum length. Filaments have a very large aspect ratio, that is, the persistence length of a filament (∼20⁢μ⁢m) is much larger than its diameter (∼10⁢n⁢m). Thus, it is reasonable to ignore the radial stretching/compression and only allow the axial stretching/compression of a cylinder, which is written asUf⁢i⁢l⁢a⁢m⁢e⁢n⁢ts⁢t⁢r=12⁢Kf⁢i⁢l⁢a⁢m⁢e⁢n⁢ts⁢t⁢r⁢(lf-lf,0)2.
+Unlike the traditional bead-spring model, the semi-flexible filaments are represented as connected cylinders. The equilibrium length (under zero force) of each cylinder elements varies from 2.7 nm (1 actin monomer) to a maximum of 108 nm (40 actin monomers). Addition of each actin monomer would increase the length of the first or last cylinders by 2.7 nm, and vice versa. Polymerization will create a new cylinder if the cylinder has reached its maximum length. Filaments have a very large aspect ratio, that is, the persistence length of a filament ($∼20⁢\mu⁢m$) is much larger than its diameter ($∼10⁢n⁢m$). Thus, it is reasonable to ignore the radial stretching/compression and only allow the axial stretching/compression of a cylinder, which is written as
 
-lf is the actual length of cylinder under force, and lf,0 is the equilibrium length based on the number of actin monomers on this cylinder (each monomer is 2.7 nm). Radial filament deformation is modeled as bending between two connected cylinders:Uf⁢i⁢l⁢a⁢m⁢e⁢n⁢tb⁢e⁢n⁢d⁢i⁢n⁢g=Kf⁢i⁢l⁢a⁢m⁢e⁢n⁢tb⁢e⁢n⁢d⁢i⁢n⁢g⁢(1-c⁢o⁢s⁢(θ-θ0)),
+$$
+U_{f⁢i⁢l⁢a⁢m⁢e⁢n⁢t}^{s⁢t⁢r}=\frac{1}{2}⁢K_{f⁢i⁢l⁢a⁢m⁢e⁢n⁢t}^{s⁢t⁢r}⁢(l_{f}-l_{f,0})^{2}.
+$$
 
-where θ is the angle between the two consecutive cylinders under force, while θ0 is the equilibrium angle that is set to be 0.
+lf is the actual length of cylinder under force, and $l_{f,0}$ is the equilibrium length based on the number of actin monomers on this cylinder (each monomer is 2.7 nm). Radial filament deformation is modeled as bending between two connected cylinders:
 
-A novel volume exclusion exclusion potential is implemented to prevent cylinders overlapping, which is written asUVol=∬li,ljδU∣r→i−r→j∣dlidlj,
+$$
+U_{f⁢i⁢l⁢a⁢m⁢e⁢n⁢t}^{b⁢e⁢n⁢d⁢i⁢n⁢g}=K_{f⁢i⁢l⁢a⁢m⁢e⁢n⁢t}^{b⁢e⁢n⁢d⁢i⁢n⁢g}⁢(1-c⁢o⁢s⁢(\theta-\theta_{0})),
+$$
 
-where δ⁢U⁢∣r→i-r→j∣=1/∣r→i-r→j∣4 is the pair potential between two points located on the two interacting cylinders. r→i amd r→j are the distances between any two points along the cylinder i and j, respectively. This potential can provide a steep enough volume exclusion effect while remain analytically solvable.
+where $\theta$ is the angle between the two consecutive cylinders under force, while $\theta_{0}$ is the equilibrium angle that is set to be 0.
 
-Bound NMIIs and linkers are modeled as harmonic springs, and the stretching energy is written asUN⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢rs⁢t⁢r=12⁢KN⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢rs⁢t⁢r⁢(lN⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r-lN⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r,0)2.
+A novel volume exclusion exclusion potential is implemented to prevent cylinders overlapping, which is written as
 
-lN⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r,0 is the equilibrium length of a linker, which are initialized when a linker /NMII binding reaction occurs as the distance between the paired binding site. lN⁢M⁢I⁢I,0 is reset every time a motor walking reaction occurs.
+$$
+U^{Vol}=∬_{l_{i},l_{j}}\deltaU∣r→_{i}−r→_{j}∣dl_{i}dl_{j},
+$$
 
-In order to confine all the filaments within the simulation boundary, an exponential boundary repulsion potential is implemented. In the thin oblate system, the actual height of the network is set to be 400nm, and the diameter to 4000 nm. However, filaments would occasionally move out of the mechanical boundary due to rapid treadmilling, leading to simulation failures. To prevent this, we shift the boundary barrier slightly inside the network by a0, and the exponential boundary repulsion is written asUb⁢o⁢u⁢n⁢d⁢a⁢r⁢y=ϵb⁢o⁢u⁢n⁢d⁢a⁢r⁢y⁢e-(d-a0)/λ,
+where $\delta⁢U⁢∣r→_{i}-r→_{j}∣=1/∣r→_{i}-r→_{j}∣^{4}$ is the pair potential between two points located on the two interacting cylinders. $r→_{i}$ amd $r→_{j}$ are the distances between any two points along the cylinder $i$ and $j$, respectively. This potential can provide a steep enough volume exclusion effect while remain analytically solvable.
 
-where ϵb⁢o⁢u⁢n⁢d⁢a⁢r⁢y=100⁢p⁢N⋅n⁢m is the repulsive energy constant, d is the distance between boundary and filament element, and λ=2.7⁢n⁢m is the screening length. The boundary shifting factor a0 is chosen to be 100nm based on experience. The existence of a0 restricts the effective network boundary to height =200 nm and diameter =3800 nm.
+Bound NMIIs and linkers are modeled as harmonic springs, and the stretching energy is written as
+
+$$
+U_{N⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r}^{s⁢t⁢r}=\frac{1}{2}⁢K_{N⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r}^{s⁢t⁢r}⁢(l_{N⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r}-l_{N⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r,0})^{2}.
+$$
+
+$l_{N⁢M⁢I⁢I/l⁢i⁢n⁢k⁢e⁢r,0}$ is the equilibrium length of a linker, which are initialized when a linker /NMII binding reaction occurs as the distance between the paired binding site. $l_{N⁢M⁢I⁢I,0}$ is reset every time a motor walking reaction occurs.
+
+In order to confine all the filaments within the simulation boundary, an exponential boundary repulsion potential is implemented. In the thin oblate system, the actual height of the network is set to be 400nm, and the diameter to 4000 nm. However, filaments would occasionally move out of the mechanical boundary due to rapid treadmilling, leading to simulation failures. To prevent this, we shift the boundary barrier slightly inside the network by a0, and the exponential boundary repulsion is written as
+
+$$
+U^{b⁢o⁢u⁢n⁢d⁢a⁢r⁢y}=ϵ_{b⁢o⁢u⁢n⁢d⁢a⁢r⁢y}⁢e^{-(d-a_{0})/\lambda},
+$$
+
+where $ϵ_{b⁢o⁢u⁢n⁢d⁢a⁢r⁢y}=100⁢p⁢N⋅n⁢m$ is the repulsive energy constant, $d$ is the distance between boundary and filament element, and $\lambda=2.7⁢n⁢m$ is the screening length. The boundary shifting factor a0 is chosen to be 100nm based on experience. The existence of a0 restricts the effective network boundary to height =200 nm and diameter =3800 nm.
 
 The mechanical model parameters can be found in Table 1.
 
-## Chemical models
+**Table 1.**
+ Mechanical parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Parameters</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cylinder stretching</td>
+      <td>Kf⁢i⁢l⁢a⁢m⁢e⁢n⁢ts⁢t⁢r=100⁢p⁢N/n⁢m</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Cylinder bending</td>
+      <td>Kf⁢i⁢l⁢a⁢m⁢e⁢n⁢tb⁢e⁢n⁢d⁢i⁢n⁢g=672⁢p⁢N⋅n⁢m</td>
+      <td>Ott et al., 1993</td>
+    </tr>
+    <tr>
+      <td>Filament volume exclusion</td>
+      <td>Kv⁢o⁢l=105⁢p⁢N/n⁢m4</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Linker stretching</td>
+      <td>Kl⁢i⁢n⁢k⁢e⁢rs⁢t⁢r=8⁢p⁢N/n⁢m</td>
+      <td>DiDonna and Levine, 2007</td>
+    </tr>
+    <tr>
+      <td>NMII stretching</td>
+      <td>KN⁢M⁢I⁢Is⁢t⁢r=2.5⁢p⁢N/n⁢m per head</td>
+      <td>Vilfan and Duke, 2003</td>
+    </tr>
+    <tr>
+      <td>Boundary repulsion</td>
+      <td>ϵb⁢o⁢u⁢n⁢d⁢a⁢r⁢y=100⁢p⁢N⋅n⁢m</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical models
 
 The chemical engine of MEDYAN is powered by Next Reaction Method (NRM)(Gibson and Bruck, 2000), which is a variant of the Gillespie algorithm (Gillespie, 1977). Overall, the NRM stochastically solves the chemical Master Equation by generating a trajectory of chemical events. In this work, we simulated the following chemical reactions: diffusion, filament polymerization, filament depolymerization, filament nucleation, destruction of filaments, binding of myosin motors and linkers, and motor walking.
 
-The diffusion of molecules is modeled as a single molecule transfer process between neighboring compartments, which follows our stochastic chemical reaction protocol asD⁢Mi0,j0,k0⟨D⁢Mi1,j1,k1,
+The diffusion of molecules is modeled as a single molecule transfer process between neighboring compartments, which follows our stochastic chemical reaction protocol as
 
-where a diffusing molecule (DM) originally located in compartment i0,j0,k0 is transferred to a neighboring compartment i1,j1,k1. The copy number of this diffusing molecule species is decreased by 1 in compartment i0,j0,k0 and is increased by 1 in compartment i1,j1,k1.
+$$
+D⁢M_{i_{0},j_{0},k_{0}}⟨D⁢M_{i_{1},j_{1},k_{1}},
+$$
 
-Actin filament (F-actin) polymerization and depolymerization occur at both barbed end (BE) and pointed end (PE) of a filament. These reactions are written asG-a⁢c⁢t⁢i⁢n⟨F-a⁢c⁢t⁢i⁢n,F-a⁢c⁢t⁢i⁢n⟨G-a⁢c⁢t⁢i⁢n
+where a diffusing molecule (DM) originally located in compartment $_{i_{0},j_{0},k_{0}}$ is transferred to a neighboring compartment $_{i_{1},j_{1},k_{1}}$. The copy number of this diffusing molecule species is decreased by 1 in compartment $_{i_{0},j_{0},k_{0}}$ and is increased by 1 in compartment $_{i_{1},j_{1},k_{1}}$.
+
+Actin filament (F-actin) polymerization and depolymerization occur at both barbed end (BE) and pointed end (PE) of a filament. These reactions are written as
+
+$$
+G-a⁢c⁢t⁢i⁢n⟨F-a⁢c⁢t⁢i⁢n,
+$$
+
+
+
+$$
+F-a⁢c⁢t⁢i⁢n⟨G-a⁢c⁢t⁢i⁢n
+$$
 
 It should be noted that G-actin is dissolved in the solution phase, while F-actin is in the polymeric phase.
 
-The nucleation reaction is presented as a two-step reaction based on the mechanism of formin nucleation (Pring et al., 2003; Ni and Papoian, 2019):S⁢t⁢e⁢p⁢ 1:F⁢o⁢r⁢m⁢i⁢n+G-a⁢c⁢t⁢i⁢n⟨i⁢n⁢t⁢e⁢r⁢m⁢e⁢d⁢i⁢a⁢t⁢e,S⁢t⁢e⁢p⁢ 2:G-a⁢c⁢t⁢i⁢n+i⁢n⁢t⁢e⁢r⁢m⁢e⁢d⁢i⁢a⁢t⁢e⟨F⁢B⁢E-a⁢c⁢t⁢i⁢n+F-a⁢c⁢t⁢i⁢n+P⁢E-a⁢c⁢t⁢i⁢n.
+The nucleation reaction is presented as a two-step reaction based on the mechanism of formin nucleation (Pring et al., 2003; Ni and Papoian, 2019):
 
-The intermediate is an arbitrary molecule that consists of a formin and a G-actin molecule. We assume step 1 is the rate-limiting step and step 2 is a fast step, thus this intermediate would rapidly react with a G-actin molecule and become a short filament consisting of one F-actin molecule at the pointed end (PE-actin), a regular F-actin molecule, and another F-actin molecule at the formin bound barbed end (FBE-actin). For simplicity, polymerization and depolymerization at FBE are the same as regular barbed end reactions. Formin can dissociate from a filament, which releases a formin molecule into the solution phase and creates a regular F-actin barbed end (BE-actin) on that filament:F-a⁢c⁢t⁢i⁢n+F⁢B⁢E-a⁢c⁢t⁢i⁢n⟨B⁢E-a⁢c⁢t⁢i⁢n+F⁢o⁢r⁢m⁢i⁢n.
+$$
+S⁢t⁢e⁢p⁢ 1:F⁢o⁢r⁢m⁢i⁢n+G-a⁢c⁢t⁢i⁢n⟨i⁢n⁢t⁢e⁢r⁢m⁢e⁢d⁢i⁢a⁢t⁢e,
+$$
 
-Since new filaments are constantly created by nucleation,, the filament destruction process is required to establish a steady state which maintains a constant total number of filaments. The destruction reaction occurs exclusively when a filament has only two F-actin molecules (a BE-actin and a PE-actin), which destroys this filament and releases two diffusing G-actin molecules asB⁢E-a⁢c⁢t⁢i⁢n+P⁢E-a⁢c⁢t⁢i⁢n⟨2⁢G-a⁢c⁢t⁢i⁢n.
+
+
+$$
+S⁢t⁢e⁢p⁢ 2:G-a⁢c⁢t⁢i⁢n+i⁢n⁢t⁢e⁢r⁢m⁢e⁢d⁢i⁢a⁢t⁢e⟨F⁢B⁢E-a⁢c⁢t⁢i⁢n+F-a⁢c⁢t⁢i⁢n+P⁢E-a⁢c⁢t⁢i⁢n.
+$$
+
+The intermediate is an arbitrary molecule that consists of a formin and a G-actin molecule. We assume step 1 is the rate-limiting step and step 2 is a fast step, thus this intermediate would rapidly react with a G-actin molecule and become a short filament consisting of one F-actin molecule at the pointed end (PE-actin), a regular F-actin molecule, and another F-actin molecule at the formin bound barbed end (FBE-actin). For simplicity, polymerization and depolymerization at FBE are the same as regular barbed end reactions. Formin can dissociate from a filament, which releases a formin molecule into the solution phase and creates a regular F-actin barbed end (BE-actin) on that filament:
+
+$$
+F-a⁢c⁢t⁢i⁢n+F⁢B⁢E-a⁢c⁢t⁢i⁢n⟨B⁢E-a⁢c⁢t⁢i⁢n+F⁢o⁢r⁢m⁢i⁢n.
+$$
+
+Since new filaments are constantly created by nucleation,, the filament destruction process is required to establish a steady state which maintains a constant total number of filaments. The destruction reaction occurs exclusively when a filament has only two F-actin molecules (a BE-actin and a PE-actin), which destroys this filament and releases two diffusing G-actin molecules as
+
+$$
+B⁢E-a⁢c⁢t⁢i⁢n+P⁢E-a⁢c⁢t⁢i⁢n⟨2⁢G-a⁢c⁢t⁢i⁢n.
+$$
 
 The binding reactions of myosin motors and linkers are carried out with a slightly different protocol. Firstly, the system will search for all possible binding site pairs on actin filaments and stochastically choose one for binding reaction. The two binding sites of a pair must be located at different filaments. The distance between the two binding sites ranges from 175 to 225 nm for NMII mini filament (Pollard, 1982), and 30–40 nm for alpha-actinin crosslinker (Meyer and Aebi, 1990). After the binding site pair is determined, the binding reaction convert a diffusing motor or linker to a bound motor or linker with two ends attaching to the two binding sites, creating a mechanical linkage. This linkage vanishes when an unbinding reaction occurs, releasing the motor or linker to the diffusing pool. It should be noted that NMII mini filament is an ensemble of 15–30 myosin heads (Verkhovsky et al., 1995), and we model the entire ensemble as a while. To take the variation of the number of myosin heads into account, the number of myosin heads of each NMII mini filament is chosen stochastically for each reaction, and the reaction rate for each NMII binding event is then scaled by the number of myosin heads.
 
-In an active cytoskeleton, myosin motors consume energy from ATP hydrolysis and actively walk along filaments, which is one of the most important sources of contractile force generation. In MEDYAN, a motor stepping reaction is implemented to mimic this effect. For a bound NMII, the stepping reaction is written asN⁢M⁢I⁢Ii⟨N⁢M⁢I⁢Ii+1,
+In an active cytoskeleton, myosin motors consume energy from ATP hydrolysis and actively walk along filaments, which is one of the most important sources of contractile force generation. In MEDYAN, a motor stepping reaction is implemented to mimic this effect. For a bound NMII, the stepping reaction is written as
 
-where i and i+1 are the NMII locations on the filament before and after walking. NMII is a barbed end walking motor, thus i+1 represents the next binding site towards the barbed end.
+$$
+N⁢M⁢I⁢I_{i}⟨N⁢M⁢I⁢I_{i+1},
+$$
+
+where $i$ and $i+1$ are the NMII locations on the filament before and after walking. NMII is a barbed end walking motor, thus $i+1$ represents the next binding site towards the barbed end.
 
 Parameters for diffusion and chemical reactions can be found in Table 2.
 
-## Mechanochemical models
+**Table 2.**
+ Parameters for diffusion and reactions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Parameters</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Diffusion</td>
+      <td>Da⁢c⁢t⁢i⁢n,a⁢r⁢p⁢2/3,C⁢P=20⁢μ⁢M2/s</td>
+      <td>Hu and Papoian, 2010</td>
+    </tr>
+    <tr>
+      <td>Actin</td>
+      <td>ko⁢nB⁢E=11.6-34.8⁢(μ⁢M⋅s)-1</td>
+      <td>32 and this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ko⁢nP⁢E=1.3⁢(μ⁢M⋅s)-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ko⁢f⁢fB⁢E=1.4⁢s-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ko⁢f⁢fP⁢E=0.8-2.4⁢s-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Destruction</td>
+      <td>kd⁢e⁢s⁢t⁢r⁢u⁢c⁢t⁢i⁢o⁢n=1.0-1.9⁢s-1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>Nucleation</td>
+      <td>kn⁢u=0.005⁢s-1</td>
+      <td>Ni and Papoian, 2019</td>
+    </tr>
+    <tr>
+      <td>Formin dissociation</td>
+      <td>ko⁢f⁢ff⁢o⁢r⁢m⁢i⁢n=0.01⁢s-1</td>
+      <td>Fritzsche et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Alpha-actinin</td>
+      <td>ko⁢nα=0.7⁢(μ⁢M⋅s)-1</td>
+      <td>Wachsstock et al., 1993</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ko⁢nα=0.3⁢s-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NMII head binding</td>
+      <td>ko⁢nM=0.2⁢s-1</td>
+      <td>Kovács et al., 2003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ko⁢nM=1.7⁢s-1</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mechanochemical models
 
 Many cytoskeletal reactions, including actin polymerization, myosin motor binding and stepping, and linker binding, are mechanosensitive. To capture this feature, MEDYAN implements mechanochemical models that explicitly allow force-dependent chemical reaction rates.
 
-The effect of boundary force on filament polymerization is described by the Brownian Ratchet model (Peskin et al., 1993), which models the force sensitive polymerization rate kp⁢o⁢l⁢y as:kp⁢o⁢l⁢y=kp⁢o⁢l⁢y0⋅exp⁡(-Fe⁢x⁢t/Fp⁢o⁢l⁢y,0),
+The effect of boundary force on filament polymerization is described by the Brownian Ratchet model (Peskin et al., 1993), which models the force sensitive polymerization rate $k_{p⁢o⁢l⁢y}$ as:
 
-where kp⁢o⁢l⁢y0 is the bare polymerization rate under zero external force, Fe⁢x⁢t is the boundary repulsive force exerted on the filament ends, and Fp⁢o⁢l⁢y,0 is the characteristic polymerization force based on the thermal energy and the size of actin monomers.
+$$
+k_{p⁢o⁢l⁢y}=k_{p⁢o⁢l⁢y}^{0}⋅exp⁡(-F_{e⁢x⁢t}/F_{p⁢o⁢l⁢y,0}),
+$$
 
-We used a simple exponential equation to model the slip bond property of alpha-actinin crosslinker:kl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d=kl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d0⋅exp⁡(Fl⁢i⁢n⁢k⁢e⁢r,s⁢t⁢r⁢e⁢t⁢c⁢h⁢i⁢n⁢g/Fl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d),
+where $k_{p⁢o⁢l⁢y}^{0}$ is the bare polymerization rate under zero external force, $F_{e⁢x⁢t}$ is the boundary repulsive force exerted on the filament ends, and $F_{p⁢o⁢l⁢y,0}$ is the characteristic polymerization force based on the thermal energy and the size of actin monomers.
 
-where kl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d0 is the unbinding rate constant under zero external force, and Fl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d is the characteristic unbinding force of alpha-actinin. Fl⁢i⁢n⁢k⁢e⁢r,s⁢t⁢r⁢e⁢t⁢c⁢h⁢i⁢n⁢g is the stretching force on the linker, while a compressive force on the linker does not trigger the slip bond.
+We used a simple exponential equation to model the slip bond property of alpha-actinin crosslinker:
 
-In this work, we model NMII binding as a catch bond, as adapted from the Parallel Cluster Model (Erdmann et al., 2013), such that the force loaded on NMII can reduce its unbinding rate constant:kN⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d=β⋅kN⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d0Nh⁢e⁢a⁢d⁢s⋅e⁢x⁢p⁢(-Fe⁢x⁢tNh⁢e⁢a⁢d⁢s⋅FN⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d),
+$$
+k_{l⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d}=k_{l⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d}^{0}⋅exp⁡(F_{l⁢i⁢n⁢k⁢e⁢r,s⁢t⁢r⁢e⁢t⁢c⁢h⁢i⁢n⁢g}/F_{l⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d}),
+$$
 
-where β is a tunable parameter, kN⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d0 is the unbinding rate constant under zero force, Fe⁢x⁢t is the total stretching force applied on the NMII, and Nh⁢e⁢a⁢d⁢s is the number of NMII heads.
+where $k_{l⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d}^{0}$ is the unbinding rate constant under zero external force, and $F_{l⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d}$ is the characteristic unbinding force of alpha-actinin. $F_{l⁢i⁢n⁢k⁢e⁢r,s⁢t⁢r⁢e⁢t⁢c⁢h⁢i⁢n⁢g}$ is the stretching force on the linker, while a compressive force on the linker does not trigger the slip bond.
 
-The NMII walking rate is also mechanochemically sensitive and can be modeled with a Hill type force-velocity relation:kw⁢a⁢l⁢k=kw⁢a⁢l⁢k0⋅Fs⁢t⁢a⁢l⁢l-Fe⁢x⁢t/Nh⁢e⁢a⁢d⁢sFs⁢t⁢a⁢l⁢l+FN⁢M⁢I⁢I,p⁢u⁢l⁢l⁢i⁢n⁢g/(Nh⁢e⁢a⁢d⁢s⋅ξ),
+In this work, we model NMII binding as a catch bond, as adapted from the Parallel Cluster Model (Erdmann et al., 2013), such that the force loaded on NMII can reduce its unbinding rate constant:
 
-where Fs⁢t⁢a⁢l⁢l is the stall force of a single NMII head, FN⁢M⁢I⁢I,p⁢u⁢l⁢l⁢i⁢n⁢g is the pulling force on NMII in the opposite direction of walking movement, and ξ is a tunable parameter.
+$$
+k_{N⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d}=\frac{\beta⋅k_{N⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d}^{0}}{N_{h⁢e⁢a⁢d⁢s}}⋅e⁢x⁢p⁢(\frac{-F_{e⁢x⁢t}}{N_{h⁢e⁢a⁢d⁢s}⋅F_{N⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d}}),
+$$
+
+where $\beta$ is a tunable parameter, $k_{N⁢M⁢I⁢I,u⁢n⁢b⁢i⁢n⁢d}^{0}$ is the unbinding rate constant under zero force, $F_{e⁢x⁢t}$ is the total stretching force applied on the NMII, and $N_{h⁢e⁢a⁢d⁢s}$ is the number of NMII heads.
+
+The NMII walking rate is also mechanochemically sensitive and can be modeled with a Hill type force-velocity relation:
+
+$$
+k_{w⁢a⁢l⁢k}=k_{w⁢a⁢l⁢k}^{0}⋅\frac{F_{s⁢t⁢a⁢l⁢l}-F_{e⁢x⁢t}/N_{h⁢e⁢a⁢d⁢s}}{F_{s⁢t⁢a⁢l⁢l}+F_{N⁢M⁢I⁢I,p⁢u⁢l⁢l⁢i⁢n⁢g}/(N_{h⁢e⁢a⁢d⁢s}⋅ξ)},
+$$
+
+where $F_{s⁢t⁢a⁢l⁢l}$ is the stall force of a single NMII head, $F_{N⁢M⁢I⁢I,p⁢u⁢l⁢l⁢i⁢n⁢g}$ is the pulling force on NMII in the opposite direction of walking movement, and $ξ$ is a tunable parameter.
 
 The mechanochemical model parameters can be found in Table 3.
 
-## Simulation protocol
+**Table 3.**
+ Mechanochemical dynamic rate parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Parameters</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Characteristic polymerization force</td>
+      <td>Fp⁢o⁢l⁢y,0=1.5⁢p⁢N</td>
+      <td>Footer et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Characteristic linker unbinding force</td>
+      <td>Fl⁢i⁢n⁢k⁢e⁢r,u⁢n⁢b⁢i⁢n⁢d=17.2⁢p⁢N</td>
+      <td>Ferrer et al., 2008</td>
+    </tr>
+    <tr>
+      <td>NMII duty ratio</td>
+      <td>ρ=0.1</td>
+      <td>Kovács et al., 2003</td>
+    </tr>
+    <tr>
+      <td>NMII stall force</td>
+      <td>Fs⁢t⁢a⁢l⁢l=12.62⁢p⁢N per head</td>
+      <td>Erdmann et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Tunable parameters</td>
+      <td>β=0.2</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>γ=0.05⁢p⁢N-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ξ=0.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Simulation protocol
 
 The relaxation time for local deformations of actin networks (Falzone et al., 2015) is much shorter than the timescale of typical chemical events such as motor stepping (Kovács et al., 2003) or filament polymerization (Fujiwara et al., 2007), thereby creating a significant separation of timescales. Hence, the mechanical equilibrium process can be viewed as a pseudo-adiabatic process that can be separated from chemical reactions. Based on this hypothesis, the simulation can be carried out in the following steps:
 
 This protocol is iterated until we reach 2000 s of simulation time, or until we reach the wall time limit on the Deepthought2 High-Performance Computing cluster at University of Maryland, College Park, whichever comes first.
 
-## Defining treadmilling rate and treadmilling inhibition simulation setups
+### Defining treadmilling rate and treadmilling inhibition simulation setups
 
-Although treadmilling in cells is a complex system that involves hundreds of reactions (Bugyi and Carlier, 2010; Floyd et al., 2017), it is simplified to four reactions in this work by considering polymerization and depolymerization at both barbed ends and pointed ends. When a steady state is established, the net barbed end growth rate will equal the net pointed ends reduction rate (averaged over the system), maintaining a constant average filament length. Therefore, we can define a kinetic steady state for treadmilling by monitoring the average filament length of the network as shown in Figure 2—figure supplement 7. We found that such a kinetic steady state could be established after 1000 s in all conditions, and at this state, the average barbed end elongation rate is almost the same as the average pointed end shrinkage rate. Hence, we quantify the average treadmilling rate ⟨rT⁢M⟨ as the average barbed end elongation rate after 1000 s.
+Although treadmilling in cells is a complex system that involves hundreds of reactions (Bugyi and Carlier, 2010; Floyd et al., 2017), it is simplified to four reactions in this work by considering polymerization and depolymerization at both barbed ends and pointed ends. When a steady state is established, the net barbed end growth rate will equal the net pointed ends reduction rate (averaged over the system), maintaining a constant average filament length. Therefore, we can define a kinetic steady state for treadmilling by monitoring the average filament length of the network as shown in Figure 2—figure supplement 7. We found that such a kinetic steady state could be established after 1000 s in all conditions, and at this state, the average barbed end elongation rate is almost the same as the average pointed end shrinkage rate. Hence, we quantify the average treadmilling rate $⟨r_{T⁢M}⟨$ as the average barbed end elongation rate after 1000 s.
 
-While the treadmilling rate is an elegant and robust way of quantifying the speed of actin network assembly, it is extremely hard to measure in vivo. An alternative way to quantify the speed of actin network remodeling is to measure the turnover timescale, which has been widely studied via an experimental technique called Fluorescent Recovery After Photobleaching (FRAP). To compare with experiments, in our simulation we used a method mimicking the FRAP to calculate the turnover halftime (t1/2, the time required for a network to reach 50% turnover) as developed in our previous work (Ni and Papoian, 2019), and we obtain t1/2∼168⁢s for the slowest treadmilling condition, and t1/2∼48⁢s for the most rapid treadmilling case. It should be noted that our longest t1/2 is similar to the turnover timescale of some reconstituted networks (McCall et al., 2019), and our shortest t1/2 is comparable to that of in vivo actin cortices (Salbreux et al., 2012). The details of turnover halftime measurement in MEDYAN and how it is related to treadmilling has been discussed in depth in a prior computational study (Ni and Papoian, 2019).
+While the treadmilling rate is an elegant and robust way of quantifying the speed of actin network assembly, it is extremely hard to measure in vivo. An alternative way to quantify the speed of actin network remodeling is to measure the turnover timescale, which has been widely studied via an experimental technique called Fluorescent Recovery After Photobleaching (FRAP). To compare with experiments, in our simulation we used a method mimicking the FRAP to calculate the turnover halftime ($t_{1/2}$, the time required for a network to reach 50% turnover) as developed in our previous work (Ni and Papoian, 2019), and we obtain $t_{1/2}∼168⁢s$ for the slowest treadmilling condition, and $t_{1/2}∼48⁢s$ for the most rapid treadmilling case. It should be noted that our longest $t_{1/2}$ is similar to the turnover timescale of some reconstituted networks (McCall et al., 2019), and our shortest $t_{1/2}$ is comparable to that of in vivo actin cortices (Salbreux et al., 2012). The details of turnover halftime measurement in MEDYAN and how it is related to treadmilling has been discussed in depth in a prior computational study (Ni and Papoian, 2019).
 
-We utilized kinetic parameters measured in vitro (Fujiwara et al., 2007) as the baseline to assemble the slow treadmilling networks. To explore suitable parameters for rapidly treadmilling networks, we looked into the effects of formin and ADF/cofilin. An earlier work (Kovar et al., 2006) has shown that the presence of formin can boost the polymerization rate at the barbed end several-fold over the baseline. For simplicity, we imitated this effect by increasing the barbed end polymerization rate constant (ko⁢nB⁢E). ADF/cofilin can also promote treadmilling by severing filaments. Importantly, the fragment that contains the pre-existing pointed end is very unstable and would undergoes rapid disassembly (McCall et al., 2019). This observation allows us to mimic the effect of ADF/cofilin by simply increasing the depolymerization at the pointed end (ko⁢f⁢fP⁢E). For example, we increase the ko⁢nB⁢E and ko⁢f⁢fP⁢E to three-fold in the actin ring network as shown in Figure 1a–c (⟨rT⁢M⟨=2.05⁢s-1).
+We utilized kinetic parameters measured in vitro (Fujiwara et al., 2007) as the baseline to assemble the slow treadmilling networks. To explore suitable parameters for rapidly treadmilling networks, we looked into the effects of formin and ADF/cofilin. An earlier work (Kovar et al., 2006) has shown that the presence of formin can boost the polymerization rate at the barbed end several-fold over the baseline. For simplicity, we imitated this effect by increasing the barbed end polymerization rate constant ($k_{o⁢n}^{B⁢E}$). ADF/cofilin can also promote treadmilling by severing filaments. Importantly, the fragment that contains the pre-existing pointed end is very unstable and would undergoes rapid disassembly (McCall et al., 2019). This observation allows us to mimic the effect of ADF/cofilin by simply increasing the depolymerization at the pointed end ($k_{o⁢f⁢f}^{P⁢E}$). For example, we increase the $k_{o⁢n}^{B⁢E}$ and $k_{o⁢f⁢f}^{P⁢E}$ to three-fold in the actin ring network as shown in Figure 1a–c ($⟨r_{T⁢M}⟨=2.05⁢s^{-1}$).
 
-## Calculation of local actin concentration for clusters and rings
+### Calculation of local actin concentration for clusters and rings
 
-In this work, we used a density-based clustering method to define regions that contain actin clusters and rings, and calculated the local F-actin concentration within these regions. We first a generated pixelated map by dividing the network into 100⁢n⁢m×100⁢n⁢m bins and calculated the F-actin concentration within each bins (Figure 2—figure supplement 2a). We then grouped connecting bins with concentration higher than a threshold (160 µM) into clusters (Figure 2—figure supplement 2b). Clusters with size less than 4 bins were ignored. The local actin concentration within clusters was calculated as the average F-actin concentration of these clusters. The local actin concentration within actin rings is calculated using the same method (Figure 2—figure supplement 2c-d).
+In this work, we used a density-based clustering method to define regions that contain actin clusters and rings, and calculated the local F-actin concentration within these regions. We first a generated pixelated map by dividing the network into $100⁢n⁢m\times100⁢n⁢m$ bins and calculated the F-actin concentration within each bins (Figure 2—figure supplement 2a). We then grouped connecting bins with concentration higher than a threshold (160 µM) into clusters (Figure 2—figure supplement 2b). Clusters with size less than 4 bins were ignored. The local actin concentration within clusters was calculated as the average F-actin concentration of these clusters. The local actin concentration within actin rings is calculated using the same method (Figure 2—figure supplement 2c-d).
 
-## Simulation setups of Latrunculin A, Calyculin A, and Y-27632 modeling
+### Simulation setups of Latrunculin A, Calyculin A, and Y-27632 modeling
 
-Earlier works have shown that LatA affects filament treadmilling in two ways: (1) it sequesters G-actin and (2) it accelerates the phosphate release from ADP-Pi-actin thereby reducing filament polymerization while increasing depolymerization at both ends (Lodish, 2000; Yarmola et al., 2000; Fujiwara et al., 2018). To simulate such effects in the actin ring perturbation simulations, we explore a parameter space that mimicked the effect of LatA treatment: we disrupted rT⁢M by reducing the filament polymerization rate and increasing the depolymerization rates. In the weak inhibition case, we decreased ko⁢nB⁢E to 11.6⁢(μ⁢M⋅s)-1, increased ko⁢f⁢fB⁢E to 2.1⁢s-1, and maintained ko⁢f⁢fP⁢E at 2.4⁢s-1. In the strong inhibition case, ko⁢nB⁢E was decreased to 3.48⁢(μ⁢M⋅s)-1, ko⁢f⁢fB⁢E was increased to 11.2⁢s-1, and ko⁢f⁢fP⁢E was increased to 4.8⁢s-1. In all simulations, pointed end polymerization rate was set to be constant at 1.3⁢(μ⁢M⋅s)-1. Treadmilling rate is consequentially reduced as a result of such disruption.
+Earlier works have shown that LatA affects filament treadmilling in two ways: (1) it sequesters G-actin and (2) it accelerates the phosphate release from ADP-Pi-actin thereby reducing filament polymerization while increasing depolymerization at both ends (Lodish, 2000; Yarmola et al., 2000; Fujiwara et al., 2018). To simulate such effects in the actin ring perturbation simulations, we explore a parameter space that mimicked the effect of LatA treatment: we disrupted $r_{T⁢M}$ by reducing the filament polymerization rate and increasing the depolymerization rates. In the weak inhibition case, we decreased $k_{o⁢n}^{B⁢E}$ to $11.6⁢(\mu⁢M⋅s)^{-1}$, increased $k_{o⁢f⁢f}^{B⁢E}$ to $2.1⁢s^{-1}$, and maintained $k_{o⁢f⁢f}^{P⁢E}$ at $2.4⁢s^{-1}$. In the strong inhibition case, $k_{o⁢n}^{B⁢E}$ was decreased to $3.48⁢(\mu⁢M⋅s)^{-1}$, $k_{o⁢f⁢f}^{B⁢E}$ was increased to $11.2⁢s^{-1}$, and $k_{o⁢f⁢f}^{P⁢E}$ was increased to $4.8⁢s^{-1}$. In all simulations, pointed end polymerization rate was set to be constant at $1.3⁢(\mu⁢M⋅s)^{-1}$. Treadmilling rate is consequentially reduced as a result of such disruption.
 
-Calyculin A is an enhancer of NMII activity by inhibiting myosin light chain ATPase, while Y-27632 inhibits Rho kinase, a upstream regulator of NMII. Thus, we model their effects by increasing or decreasing the NMII levels after actin ring formation to match the T cell experiment. In the CalyA experiment, actomyosin ring collapses while maintaining the ring-like geometry. We realize that such ‘whole ring contraction’ is difficult to achieve at the low actin concentration (Ca⁢c⁢t⁢i⁢n=40⁢μ⁢M) that we used other conditions. At low actin concentration, enhancing NMII activity often simultaneously cause centripetal collapse as well as the local collapse that disassemble the ring-like structure, due to lack of filament-filament connectivity. To overcome this issue, we double the actin concentration to Ca⁢c⁢t⁢i⁢n=80⁢μ⁢M and adjust CN⁢M⁢I⁢I to 0.18 µM in the model. Such a high concentration of actin and motor protein significantly reduces the computational efficiency, therefore we initialize the ring-like actin structure instead of starting from a disordered network. In the control condition as shown in Figure S9, network will slightly contract but can maintain the ring-like structure.
+Calyculin A is an enhancer of NMII activity by inhibiting myosin light chain ATPase, while Y-27632 inhibits Rho kinase, a upstream regulator of NMII. Thus, we model their effects by increasing or decreasing the NMII levels after actin ring formation to match the T cell experiment. In the CalyA experiment, actomyosin ring collapses while maintaining the ring-like geometry. We realize that such ‘whole ring contraction’ is difficult to achieve at the low actin concentration ($C_{a⁢c⁢t⁢i⁢n}=40⁢\mu⁢M$) that we used other conditions. At low actin concentration, enhancing NMII activity often simultaneously cause centripetal collapse as well as the local collapse that disassemble the ring-like structure, due to lack of filament-filament connectivity. To overcome this issue, we double the actin concentration to $C_{a⁢c⁢t⁢i⁢n}=80⁢\mu⁢M$ and adjust $C_{N⁢M⁢I⁢I}$ to 0.18 µM in the model. Such a high concentration of actin and motor protein significantly reduces the computational efficiency, therefore we initialize the ring-like actin structure instead of starting from a disordered network. In the control condition as shown in Figure S9, network will slightly contract but can maintain the ring-like structure.

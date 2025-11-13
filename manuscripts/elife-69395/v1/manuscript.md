@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03rmrcq20 The Okanagan Institute for Biodiversity, Resilience and Ecosystem Services (BRAES) Irving K. Barber Faculty of Science, Department of Biology, University of British Columbia Kelowna Canada
+1. The Okanagan Institute for Biodiversity, Resilience and Ecosystem Services (BRAES) Irving K. Barber Faculty of Science, Department of Biology, University of British Columbia Kelowna Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
 
 † Corresponding author
 
@@ -33,19 +33,17 @@ The purpose of this study is to present an approach to address the above researc
 
 ## Results
 
-## Distribution and values of ES supply areas
+### Distribution and values of ES supply areas
 
 Based on existing ES supply area mapping from the study area (Field et al., 2017; Figure 2), top-valued 50% supply areas were distributed north-to-south across our study region (Figure 3b–d). Plant foods are grown primarily in valley bottom areas in the Okanagan, and thus PA supply areas (n = 1497) were concentrated in lower-elevation and population-dense regions with similar coverage to the original PA map (distribution of specific crop types detailed in Field et al., 2017). The highest-value PA supply areas were coincident with the largest farm parcels, present in the agriculture-rich areas of the south, north and east-central Okanagan. Given the extensive coverage of their original model results, top-value supply areas for both WF (n = 7350) and LA (n = 5262) were distributed fairly evenly across the entire study area. The highest-value WF supplies were associated with stream riparian areas in larger, partially protected sub-basins of the southwest, and with riparian and wetland complexes in the central- and north-east. Our results suggest that the highest-value LA supplies were associated with large areas of upland forests, rivers, lakes, and protected parkland in the southwest and northeast, with relatively lower cumulative LA values in the more heavily-populated valley bottom. It is worth noting that, as our method of delineating distinct LA supply areas was based on the amalgamation of immediately adjacent raster cells, there were several large LA supply areas that may or may not be subjectively interpreted by human consumers as part of a single supply area. Issues with inherent subjectivity around LA mapping and assessment are common (e.g. van Zanten et al., 2016, see also Daniel et al., 2012), and this could lead to variable results in strength and physical location of cultural supply areas and their inter- and intra-ES linkages. Even nuances within a single cultural ES valuation method can lead to complex results; for example, tourist’s aesthetic appreciation of landscape features can differ from that of residents (Beza, 2010). That said, the focus of this study is not on how to produce the most accurate spatial representation of ES and their connections, but is on demonstrating a connectivity-based approach for visualizing and evaluating multi-ES relationships. The original LA value distribution map is reproduced in Figure 2c (Field et al., 2017).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69395/elife-69395-fig2-v1.jpg)
 
-**Figure 2.:** a) plant food agriculture, (b) waterflow regulation, and (c) landscape aesthetics (Field et al., 2017).
-
 ![Figure 3.](https://cdn.elifesciences.org/articles/69395/elife-69395-fig3-v1.jpg)
 
 **Figure 3.:** Insets show (a) all top-value supply areas and links; top-value supply areas for (b) plant food agriculture (PA), (c) waterflow regulation (WF), and (d) landscape aesthetics (LA); overlapping connections from (e) LA to WF, (f) PA to LA, (g) PA to WF, (h) WF to LA, and (i) WF to PA; and topographic connections from (j) WF to WF, (k) WF to PA, and (l) WF to LA. Adjacent circular coxcomb charts represent the proportion of ES supply and link areas covered by major LULC types. LULC types are color-coded and include forests, agriculture, rocks/exposed areas, residential areas, shrubs, grasslands, urban areas, water, wetlands, and areas with unknown use and/or cover.
 
-## Distribution and values of functional connections between ES supplies
+### Distribution and values of functional connections between ES supplies
 
 The spatial distribution and value of connections between overlapping ES were predictable based on the extents of supply area mapping and on the functional theory we applied to link weighting. Bi-directional overlap links between WF and LA (n = 9363 in each direction) were distributed across the entire study are (Figure 3e, h). The highest-value links from LA to WF were associated with stream and lake riparian areas in both populated and remote valleys in the north, with riparian and wetland complexes in the central-east, and with remote stream and river riparian areas in the southwest. Similarly, the highest-value links from WF to LA were present in stream and river riparian areas in the southwest, and with stream riparian and wetland complexes in the central-east. For overlapping connections from PA to LA (n = 174), link distribution was sparse throughout the valley bottom and limited to croplands with high aesthetic value; primarily associated with vineyards and orchards (Figure 3f). In terms of bi-directional overlap connections, the majority of PA supply areas were connected with WF regulation areas throughout the valley bottoms (WF to PA n = 1,220; PA to WF n = 1320), with highly-weighted links typically associated with cultivated lands, fields, crop transitions, vineyards, and orchards near to (or containing) riparian, floodplain, and/or wetland areas (Figure 3g and i).
 
@@ -55,7 +53,7 @@ When all link types were included on a map of accumulated weights, it highlighte
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69395/elife-69395-fig4-v1.jpg)
 
-## Spatial coverage of supply area and linkages across LULC types
+### Spatial coverage of supply area and linkages across LULC types
 
 The distribution of ES supply areas and links were only in part determined by the underlying LULC types included in the original model parameters defined by Field et al., 2017. In decreasing order of coverage of our study area (21,580 km2), the high-level LULC types are as follows: 76.7% forest; 11.9% park (NB: overlaps with forest, grassland, shrub, rock and exposed categories); 6.8% grassland; 5.8% shrub; 3.7% agriculture; 3.0% waterbodies (lakes, rivers, reservoirs); 1.6% residential; 1.3% rock and exposed land; 0.8% wetland; 0.3% urban; and 0.1% unknown (Appendix 2). For the subset top-valued ES areas, almost all PA supplies were, unsurprisingly, on agricultural lands (~100.0%), but only covered 15.8% of all croplands in the region. Both WF and LA supplies were found mainly on forested lands (78.7% and 93.0%, respectively) and within parks (14.0% and 13.1%, respectively). Distribution of top-valued WF supplies covered large portions of most LULC types in the study area (19.7–50.6%; NB: 0% aquatic), including 99.6% of all mapped wetlands. Top-valued LA supplies spanned the majority of aquatic (98.8%), forested (81.9%), park (74.4%), and wetland (69.1%) LULC types (Figure 3a–d).
 
@@ -67,7 +65,7 @@ For topographic corridors, we found that LULC coverage was less consistent with 
 
 We applied a novel approach to mapping and modeling the functional connectivity between multiple types of ES across a regional landscape. By testing the application of this approach on three ES categories for a case study area, we identified and mapped eight link types connecting ES supply areas on the landscape. The results demonstrate the variety of ways categorically divergent ES can exhibit interdependencies related to their production potential, and the importance of considering these dependencies in land use planning for ecological connectivity.
 
-## The case study: ES connectivity across a heterogeneous regional landscape
+### The case study: ES connectivity across a heterogeneous regional landscape
 
 The connections we observed between ES revealed high-value multifunctional linkages on the landscape that were not necessarily predictable from supply area mapping. Across all link types we found heterogeneous distribution as well as spatially distinct areas of markedly higher value, or ‘hotspots’ of connectivity, relative to surrounding areas (e.g. Alemu et al., 2021). But one surprising observation is that the weighted amalgamation of all eight link types uncovered areas of high-value connectivity that were not present on any of the ES supply or pairwise link maps. This finding points to nuances that can be discovered when multiple ES and multiple linkage types are assessed together, and suggests that the spatial focus of planning for optimal service provisioning may shift when functional relationships between several ES are considered. Ultimately, such multifunctional areas represent possible conservation priorities that, if degraded or lost, may cause significant disruption of ES connectivity networks. Understanding the complexity of interactions between multiple ES has been highlighted as a critical challenge in planning for sustainable multifunctional landscapes in the face of changing environmental conditions and management interventions (Dee et al., 2017). A recent review of studies that have modeled interactions between multiple ES found that a large proportion did so from the perspective of co-occurring production synergies and trade-offs, but that the examination of flows, and the identification and quantification of explicit functional relationships remain largely unexplored (Agudelo et al., 2020). Ultimately, simultaneously modeling multiple ES continues to be difficult in part because of methodological inadequacies and the complexity of the ecological processes involved (Kolosz et al., 2018). Our approach provides a new and flexible framework that can help address these challenges.
 
@@ -75,15 +73,78 @@ From initiation points within WF supply areas, our modeling revealed several fun
 
 Our study demonstrates that functional connections between ES often span several LULC categories, and that trends in dominant cover types may be unexpected relative to those associated with related supply areas. Certain areas or cover types are sometimes considered ‘hotspots’ for ES production, that is, they provide several different, often high-value, ES (e.g. Qiu and Turner, 2013). For example, wetlands provide flood and flow control, storm protection, erosion control, groundwater supply, water quality maintenance, nutrient waste disposal, habitat to support fishing and hunting, natural materials, biodiversity, micro-climate stabilization, carbon sequestration, recreation, and aesthetic value (Brander et al., 2006). Agricultural lands can provide many ES beyond food for humans, such as habitat and food for pollinators, biological pest control (e.g. Loos et al., 2019), and tourism (e.g. Wagner and White, 2009). We assessed the potential for LULC-associated connectivity hotspots in our region using LULC comparisons. Forested lands clearly stand out as being important for the regulating and cultural ES we investigated. Forests are often identified as hubs for maintaining regulating and cultural ES, including surface water provisioning and quality, soil retention, nutrient retention, pollination, carbon storage, climate regulation, habitat quality, and recreation (Matson et al., 1997; Brauman et al., 2007; Qiu and Turner, 2013; Karimi et al., 2021). Notably, although parks make up only 11.9% of the study area, they represent important landscapes for WF and LA supply and overlapping connectivity, and as flow corridors between all ES types we investigated. Both the above observations are likely driven by the suite of ecological processes present in complex forest, grassland and shrub ecosystems (e.g. vegetation-mediated infiltration, Mills et al., 2004), and by the contribution of wildlands and parks to LA (Thompson and Center for Environmental Philosophy, The University of North Texas, 1995). From the perspective of functional connectivity, our study suggests a need to expand upon the ES ‘hotspot’ notion by considering that other LULC types beyond those associated with supply areas may be serving as critical corridors for interdependent ES. A clearly delineated example of this is the ecological process links between terrestrial and aquatic ecosystems. Areas of land adjacent to waterbodies are known to provide various regulation services in addition to WF, including erosion and water quality regulation through soil- and vegetation-mediated retention and filtration (Mills et al., 2004). Whereas the model parameters we applied for WF preclude supply area coverage within any aquatic areas, the LULC proportions we observed within upland and downslope WF corridors traversed 24.4% of all surface waterbodies in the region and demonstrated that aquatic areas represent some of the most high-value linkages between different production areas for this ES. In addition, croplands proportionally represent the third-largest cover type in the corridors between upland WF and downslope LA supplies, with the majority of these corridors found in riparian zones, or on farms adjacent to wetlands and waterbodies. The synergistic association of WF and PA supply areas has been observed in other ES interaction studies (e.g. Qiu and Turner, 2013), and stems from crops’, especially deep-rooted perennials, ability to provide a variety of hydrological benefits including increased water infiltration and recharge, reduced runoff, and mitigation of peak flows (Dabney, 1998; Tilman et al., 2002; Brauman et al., 2007; Power, 2010). These observations have implications for ecosystem- and habitat-based management programs as LULC types are often imposed as boundaries for interventions and/or institutions (e.g. BC Ministry of Agriculture). Especially in heterogeneous regional landscapes, our results point to potential for increased need for cross-jurisdictional collaboration when planning for functional connectivity in the optimization of multiple ES.
 
-## The conceptual shift: from correlative interactions to functional connectivity
+### The conceptual shift: from correlative interactions to functional connectivity
 
 Our approach reveals cross-landscape connectivity processes that represent important drivers of ES production that are undetectable with traditional methods for identifying ES synergies and trade-offs (e.g. Qiu and Turner, 2013; Su and Fu, 2013; Tomscha and Gergel, 2016). It can be used to represent several different types of functional connections, for example, between different ES that occupy the same space, and abiotic movement from one ES supply area to another across the landscape. Identification of links between spatially co-occurring supply areas is similar to a representation of paired ES ‘interactions’, a concept for identifying synergies and trade-offs among services, as well as identifying groups of services that repeatedly occur together across a landscape (i.e. ‘ES bundles’; Bennett et al., 2009). Our methods take a closer look at the concept of ES interactions by explicitly representing the mechanisms behind the co-occurrence of ES in the delineation and valuation of these areas (Bennett et al., 2009). Investigation of interaction mechanisms with respect to multi-ES assessment has been highlighted as a crucial step toward providing more rigorous information to inform the management of multifunctional landscapes (Alemu et al., 2021; Thierry et al., 2021), and our study is one of the few to provide this information at the regional scale (Agudelo et al., 2020).
 
 Areas of ES supply are not necessarily spatially congruent with the discrete structural components traditionally considered in landscape connectivity frameworks (e.g. habitat patches, specific LULC types); therefore, linkages between ES are also unlikely to be coincident with these components (e.g. movement of organisms and matter; Brooks, 2003). For example, the global benefit of carbon storage and sequestration depends only on the quantity of natural landcover, and not the spatial arrangement of patches (Mitchell et al., 2015). Although protected areas and intact habitat patches are important spaces for some of the plants, animals, and abiotic ecosystem components responsible for providing ES, provisioning and flows are not bound by human-defined reserve areas, and many ES are produced completely by and interact with one-another in human-modified landscapes (Schröter et al., 2019). Further, connectivity of certain ES will be limited by distance thresholds and/or human or ecological barriers to the flow of ecological processes. For example, crop production can benefit from interspersion of natural habitat throughout agricultural landscapes, which can increase pollination and pest control services delivery from species that can only move limited distances from their habitat patches (Tscharntke et al., 2005). There may be spatial congruency between existing wildlife movement corridors and certain regulating services, especially those that depend on the movement of organisms for their delivery (e.g. pollinators, disease control, pests and their predators, seed dispersal; Kremen et al., 2007), which suggests that there may be opportunities for win-win conservation initiatives for wildlife and ES together. Our approach can be used to explore this possibility, and to explicitly map and assesses the mechanisms behind distance-threshold-mediated and cross-landscape ES interactions in general.
 
-## Limitations and opportunities for future work
+### Limitations and opportunities for future work
 
 We identify several limitations of our approach, and suggest related opportunities for future work. Firstly, we only included three ES in our study and comparisons, a decision driven by available data and desire to clearly test a new approach while using a diverse subset of ES. A small number of tested ES means we are limited in the generalizations we can make, especially as they pertain to LULC- and ecosystem-relevance of the potential for connectivity ‘hotspots’. Investigating a limited number of ES is common among studies that model interactions among ES (Agudelo et al., 2020), with data limitations, complexity of socio-ecological processes involved, and methodological gaps cited as barriers to inclusion of all ES (Kolosz et al., 2018). However, our choice to test only three ES was motivated by our goal to provide a straightforward case study of how each of the three broad ES categories (i.e. non ‘supporting’; Millennium Ecosystem Assessment, 2005) can be represented in the same study. Our approach is easily adaptable to including an unlimited number of ES, though the complexity in representing the functional connections between them may increase disproportionately to the number of ES included, and limited data and/or gaps in our understanding of interaction mechanisms may preclude modelling of certain pairwise relationships (Field and Parrott, 2017). As evidenced by the lack of known functional links between some of the ES in our study (e.g. topographic links between PA and LA; Table 1), some pairs of ES may not exhibit inter- or intra-ES connectivity, although these can still be included on maps as disconnected supply areas on the landscape.
+
+**Table 1.**
+ Rationale behind functional connection mechanisms, directionality, and weighting between top-value ES supply areas.Directionality is represented by the top row as originating (or ‘source’) ES supply areas; and the left column as recipient (or ‘sink’) ES supply areas (PA, WF, or LA). Functional connection mechanisms are distinguished by Link Type (i.e., Overlap or Topographic), and their definitions and weighting rationale are provided in matrix cells. If no functional connection exists from one ES to another, the matrix cell indicates that there is ‘None’ in either direction, or that there is a connection in the ‘Other direction’. Superscripts denote the following references: (1) Crossman et al., 2013; (2) Power, 2010; (3) Daniel et al., 2012; (4) Zhang et al., 2007; (5) Bennett et al., 2009; (6) Poff et al., 1997; (7) Burmil et al., 1999; (8) Raudsepp-Hearne et al., 2010; (9) Nicholls and Altieri, 2012.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Supply areas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>linked from → linked to ↓</td>
+      <td>Link Type</td>
+      <td>Plant Agriculture (PA)supply area weight: potential PA crop area (ha)</td>
+      <td>Waterflow Regulation (WF)supply area weight: summed WF model value</td>
+      <td>Landscape Aesthetics (LA)supply area weight: area (ha) x LA model value</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Supply Areas</td>
+      <td rowspan="2">PlantAgriculture</td>
+      <td>Overlap</td>
+      <td rowspan="2">None</td>
+      <td>WF regulation on PA croplands4,5link weight: summed WF model supply area values within PA supply area</td>
+      <td>Other direction</td>
+    </tr>
+    <tr>
+      <td>Topographic</td>
+      <td>WF regulation downslope4,5link weight: summed WF model values along LCP pathway from WF to PA supply area</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Waterflow Regulation</td>
+      <td>Overlap</td>
+      <td>PA croplands providing WF regulation1,2link weight: all summed WF model values within entire PA supply area</td>
+      <td>None</td>
+      <td>LA areas providing WF regulation8,9link weight: summed WF model values within LA supply area</td>
+    </tr>
+    <tr>
+      <td>Topographic</td>
+      <td>Other direction</td>
+      <td>WF regulation downslope6link weight: summed WF model values along LCP pathway from WF1 to WF2 supply area</td>
+      <td>Other direction</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Landscape Aesthetics</td>
+      <td>Overlap</td>
+      <td>PA cropland providing LA3link weight: summed LA model values within PA supply area</td>
+      <td>WF regulation on LA areas7link weight: summed WF model supply area values within LA supply area</td>
+      <td rowspan="2">None</td>
+    </tr>
+    <tr>
+      <td>Topographic</td>
+      <td>None</td>
+      <td>WF regulation downslope7link weight: summed WF model values along LCP pathway from WF to LA supply area</td>
+    </tr>
+  </tbody>
+</table>
 
 Further, we note that only synergistic interactions were identified among the case study ES we included, but no trade-offs were represented. Although the latter has been identified among the ES tested in our study (e.g. water extraction for agriculture can disrupt hydrologic cycles; Janssen et al., 2006), we did not model these due to lack of data on specific trade-off mechanisms. The incorporation of other services may reveal both positive and negative effects of connectivity on ES supply as a result of complex multi-ES interactions; for example, the rate of waterflow through riparian areas may increase filtration and water quality regulation, but decrease downstream water provisioning (Mitchell et al., 2013). The presence of potential trade-offs, as well as ecosystem dis-services (e.g. competition for water and pollination among different LULC types; spread of pests and diseases; Zhang et al., 2007), is of critical importance to informing management, as the optimization of all ES on a landscape is usually not simultaneously possible (e.g. Qiu and Turner, 2013). We encourage future applications of our approach to represent trade-offs and negatively-valued functional connections between ES where appropriate.
 
@@ -91,11 +152,42 @@ Our case study maps and quantifies relationships between ES at a snapshot in tim
 
 We acknowledge that that other existing methods for spatially identifying and evaluating spatial connectivity may be more appropriate for certain relationships between other ES not tested in this study. Examples include least cost corridors (Singleton, 2002), circuit theory (McRae and Beier, 2007; McRae et al., 2008), graph theory (Fall et al., 2007; Pinto and Keitt, 2008, Rayfield et al., 2011), spatial networks (Phillips et al., 2008; Parks et al., 2013), Euclidean distance mapping (Doak et al., 1992), radius buffers (Laliberté and St-Laurent, 2020), and deterministic eight models (Mark, 1984). These could also be combined with dynamic modeling approaches (e.g. Bayesian belief networks; scenario modeling) that can incorporate measures of uncertainty (e.g. Karimi et al., 2021; Sahraoui et al., 2021; Appendix 4). Specifically, incorporating measurable changes in ES characteristics (e.g. supply quantities or distributions) will allow researchers to test the degree of influence one ES supply area has on another. We chose to employ only LCP analysis mainly because the topographic ES flows in our study all originated at WF supply areas, corridors all were to represent the ecological process of water flowing downslope, and because LCP has been shown to be a valid method for approximating drainage networks while being capable of overcoming issues around topographic depressions (Melles et al., 2011). Therefore, a DEM-driven model representing water moving downslope was deemed the most appropriate for these types of ES connections in our study region, which was supported by validation analyses (Appendix 5), while providing relatively simple and accessible representations of corridors between supply areas to support the primary goal of this paper, that is, to demonstrate a novel approach for conceptualizing how the provisioning of ES are functionally connected across a landscape. Future research should compare and validate alternative spatial connectivity mapping and valuing approaches (e.g. Melles et al., 2011) for predicting process-based movement between other ES types, with validation approaches tailored to the specific ES under study (e.g. Appendix 5). For example, connections between pollination supply areas and PA could be represented by first identifying pollinator habitat, which may encompass natural and semi-natural habitat areas within and/or adjacent to PA areas (e.g. Power, 2010). Then the functional link mechanism may be represented by modeling pollinator movement between habitat areas (e.g. three-dimensional surface models; Abdel Moniem and Holland, 2013). As long as the researcher clearly defines the known functional mechanisms a priori and selects the appropriate model(s), our approach is flexible in that it allows for a variety of functional connections to be spatially represented, and for the use of several methods in delineating functional relationships between multiple ES which can then be incorporated into the same map for spatial representation of such connections. Within the defined functional mechanisms, models can allow for the incorporation of complex interactions between ES, such as nonlinear relationships and threshold effects (Thierry et al., 2021). We note that certain multi-ES relationships may not be amenable to spatial representation or assessment using connectivity mapping (e.g. air quality with erosion control; animal agriculture with PA from the perspective of direct, non-fodder sources of food for humans, though known fertilizer contributions may allow for a directional functional connection to be defined), but their supply areas can still be included on maps to display distribution, values, or other metrics.
 
-## Conclusions
+### Conclusions
 
 Our study provides a new approach for the assessment of multiple ES and provides important information on the spatial interconnectivity of a variety of divergent types of ES across a diverse temperate landscape in southern interior British Columbia. We are confident that providing a tool for visualization of multiple ES will help address several ongoing challenges: increase awareness and understanding of how dependent humans are on nature; highlight a need to maintain landscape connectivity to support ecological functioning; advance the interdisciplinary science around the ES concept; and help move toward incorporating this science into management of natural capital (Guerry et al., 2015). As the ES concept continues to be developed and refined, considering how ES operate within the context of interconnected, complex social-ecological systems will help improve our ability to meaningfully incorporate multiple ES into decision-making and planning at the landscape scale. Overall, our methods not only allow for the explicit incorporation of the current knowledge of the ecological processes driving linkages between multiple ES, but they also provide decision makers mapping tools that show where these connections occur on the landscape and how valuable they are to ES flows and production potential. Thus, our approach can help guide planners in predicting how intervention(s) in specific location(s) are likely to have synergistic or antagonistic impacts on ES supply areas in other, sometimes distant places.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (v.3.6.2)</td>
+      <td>R Development Core Team, 2013</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ArcGIS (v.10.7.1)</td>
+      <td>ESRI, 2011</td>
+      <td>RRID:SCR_011081</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Our case study area spans the Okanagan region in British Columbia (BC), Canada, which we use to demonstrate a multi-ES connectivity mapping approach for informing landscape planning (Figure 5). It is located in the south-central interior of BC, is a biodiversity hotspot within Canada and one of North America’s most endangered semi-arid ecoregions (Warman et al., 2004; Kerr and Cihlar, 2004), has a highly diverse assemblage of land use types (see Caslys Consulting Ltd, 2013; Appendix 2), and covers 21,580 km2 from ~276 to 2774 masl. The diversity of LULC and ecosystem types of this multifunctional landscape allow the results to be more widely applicable to other regions relative to a study of a more homogenous landscape.
 
@@ -103,15 +195,13 @@ Our case study area spans the Okanagan region in British Columbia (BC), Canada, 
 
 **Figure 5.:** Major waterbodies, elevation (masl), and the most populous cities and towns in Okanagan regional districts are indicated.
 
-## Approach
+### Approach
 
 We developed and tested a flexible approach that can be used to map the functional relationships between multiple ES on a landscape. It is flexible in that it can be adapted to various decision and research contexts (e.g. Value of Nature to Canadians Study Taskforce, 2017), and can incorporate a variety of methods and models for mapping ES provisioning and flows. Figure 6 provides high-level guidelines for researchers with the intent of supporting standards for comprehensive ES assessments (e.g. Crossman et al., 2013). The guidelines focus on the general technical approach for producing spatial assessment tools that will inform goals of researchers and/or decision-makers; other aspects required to produce thorough ES assessments (e.g. defining issue and context; time and expertise resource logistics; communicating results) are presented elsewhere (e.g. Value of Nature to Canadians Study Taskforce, 2017).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69395/elife-69395-fig6-v1.jpg)
 
-**Figure 6.:** Value of Nature to Canadians Study Taskforce, 2017).
-
-## Original ES supply data
+### Original ES supply data
 
 We obtained existing data on the spatial distribution of the ‘supply’ of three ES: (1) plant food agriculture (‘PA’ herein; provisioning = products obtained from ecosystems); (2) waterflow regulation (‘WF’; regulating = abiotic and biotic processes that moderate natural phenomena); and landscape aesthetics (‘LA’; cultural = non-material characteristics that benefit human well-being; Millennium Ecosystem Assessment, 2005) produced for our study area by Field et al., 2017 (Figure 2; Field, 2021). Field et al., 2017 mapped Field et al., 2017 ecosystem attributes and quantified their potential contribution to ES supply based on environmental characteristics and functions that are known to be related to ES production; on explicit incorporation of perceived benefits to humans; or a combination of the two methods (Jakeman and Letcher, 2003; Vigerstol and Aukema, 2011; Field et al., 2017). Spatial data sources for original maps included LULC indicators, remote sensing image interpretation, and were supported by some field-validations. For analytical consistency, raster data for original mapping were assigned the identical spatial projection by resampling to ~29 m x 29 m resolution based on the size of digital elevation model (DEM) cells; therefore, ES models accounted for fine-scale heterogeneity of parameters across the landscape. Original maps were created using ArcMap 10.2 and 10.4 (ESRI, 2011), and R (R Development Core Team, 2013). For full details see Field et al., 2017; data sources were all updated since 2001, and are summarized in Appendix 3—table 1; data are available on the Open Science Framework (OSF; Field, 2021).
 
@@ -121,13 +211,13 @@ Field et al., 2017 mapped the terrestrial areas that provide WF mapped as a func
 
 Lastly, Field et al., 2017 mapped LA supply areas were on models of perceived values of different LULC types in the region, on ‘visual condition’ ranging from preserved to manicured lands, and on the visibility of areas from various viewpoints across the case study region. LA supply areas spanned both terrestrial and large aquatic (i.e. lakes, rivers, manmade reservoirs) areas. We did not separate adjacent terrestrial from aquatic LA supply areas as 13 LULC (10 terrestrial; three aquatic) values were used as input for original LA mapping, in conjunction with two other valuation methods (i.e. tourism brochure assessment; viewshed analysis), and we aimed to keep supply area delineation methodologically as consistent as possible across different ES types (e.g. for amalgamation of immediately adjacent supply areas). As LULC data overlapped in certain areas, LULC categories were ranked based on data confidence and relevance to mapped ES (Appendix 6—table 2). We note that LULC datasets were used for mapping all three ES types in our study. We do not believe these interlinkages will impact interpretation of our results as the use of LULC indicators is common and typically the best available proxy data for ES mapping (e.g. Queiroz et al., 2015), and spatial overlap is an inherent characteristic of ES (e.g. Bennett et al., 2009).
 
-## Mapping and valuing ES supply patches
+### Mapping and valuing ES supply patches
 
 Based on the original ES mapping data produced by Field et al., 2017, we first established and valued supply area polygons – defined as spatially identifiable regions of higher-than-average-value supply potential – which serve as source and destination patches in a connectivity network (Appendix 1). We then developed a methodology to establish and value functional linkages, or connectivity, between supply areas. Functional connections were of two broad types: (1) overlapping links, which were areas where the supplies of two different types of ES occur in the same place, and there is an underlying process-based connection between them; and (2) topographic links, which were mapped based on the ecological processes that functionally connect the supplies of two ES areas separated in space. Links could exist in one or both directions, with unique mechanisms operating from one ES to another. Lastly, we compared the coverage of top-value ES supplies and their linkages on the major LULC types found in the region. The details of our approach are provided below.
 
 To spatially partition the landscape into ES supply areas and establish the links between them, we developed a rationale based on interdisciplinary methods for assessing complex and connected natural systems (Bialonski et al., 2010). From the perspective of the landscapes’ capacity to provide ES, we defined subsystems as discrete areas with the greatest potential for providing ES supply (Appendix 7), while the functional interdependencies between such areas were represented by spatial connections (also referred to herein as ‘links’ or ‘corridors’). We delineated ES supply areas based on approaches used in landscape connectivity and ES mapping studies: spatial polygons that represent high-value supply ES patch boundaries (e.g. Bangash et al., 2013); and the aggregation of immediately adjacent clusters of high-value supply spatial grid cells (e.g. Gardner, 1999; Urban et al., 2009; Qiu and Turner, 2013; Field and Parrott, 2017). Aggregated areas became supply area polygons, and were valued based on the summed raster values therein, then normalized on a unit-less scale from 1 to 10,000. Any areas either lacking the potential for ES supply, or below a high-value supply threshold (Appendix 7), were represented as the landscape matrix through which ecological process-based connections between supply areas could flow (Field and Parrott, 2017). In reality, such spatial interaction networks are dynamic through time (Boesing et al., 2020), though here we consider a static snapshot of the present state of ES supply in our study region to clearly illustrate real-world application of a novel approach for mapping the ecological relationships underpinning multiple types of ES supply.
 
-## Establishing functional connections between ES supplies
+### Establishing functional connections between ES supplies
 
 We define ES connectivity as areas on the landscape where one ES supply area influences the provisioning of another via underlying ecological processes. We identified spatial interactions between ES supply areas either as those that are connected through their overlap in space, or those that transverse the landscape through the relatively low value (i.e. sub-50% threshold) ES matrix. For these two cases respectively, we applied spatial overlay analysis (e.g. Qiu and Turner, 2013), or identified flows using a stepwise procedure involving least-cost path (LCP) analyses akin to those applied in wildlife connectivity studies based on species movement and habitat attributes (Urban et al., 2009). Movement of organisms and matter across a landscape is often specifically defined in a single direction as a result of biophysical (e.g. waterflow, topography) or biological (e.g. movement from source to destination areas) realities, with multiple link types representing qualitatively unique flows that exist between patches (Zhang et al., 2007; Urban et al., 2009). That is to say, an area on the landscape producing multiple ES supply types may have functional links between ES of the same type in different locations, between different ES types in the same location, or with different ES types in different locations.
 
@@ -137,7 +227,7 @@ Topographic links were based on the ecological processes that functionally conne
 
 In addition to spatially identifying connections between pairs of ES, we quantified the weight of these connections based on assumptions around the functional relationships between ES (e.g. Urban et al., 2009). We based valuations on the original ES provisioning maps, which assigned each raster cell in the map an ES value equivalent to the results of the underlying models (Field, 2021; Field et al., 2017), and on the assumptions summarized in Table 1 and discussed in Appendix 7. We acknowledge that alternative ecological process models could be used to produce more nuanced or accurate measures of link weightings (e.g., Cadotte et al., 2011). However, we chose to base our link quantification on high-level and readily calculable assumptions in an effort to provide simple, replicable, and easily-communicated metrics to inform applied, often resource-limited, decision-making for corridor, conservation, and protected area placement.
 
-## Comparison with regional LULC
+### Comparison with regional LULC
 
 To compare the spatial coverage of supply areas and their linkages, and to aid in our assessment of potential uses of ES connectivity results for on-the-ground planning and management, we calculated the proportion of several high-level LULC categories intersected by each of the high-value supply areas and eight link types identified in the above analyses. We selected several LULC categories to provide both local and regional decision-makers additional information about where on the landscape ES connectivity is distributed, including forests, grasslands, shrubs, parks, aquatic areas, wetlands, rock and exposed land, agriculture, residential, and urban areas. We calculated the total area (ha and %) of LULC types covered by each link type, and the proportions of study area total LULC covered by each link.
 

@@ -34,7 +34,7 @@ Thus, both atRA and synaptopodin have been firmly linked to the ability of neuro
 
 ## Results
 
-## All-trans retinoic acid has no major effects on synaptic strength and intrinsic cellular properties of dentate granule cells in the dorsal hippocampus
+### All-trans retinoic acid has no major effects on synaptic strength and intrinsic cellular properties of dentate granule cells in the dorsal hippocampus
 
 Adult male C57BL/6J mice were injected intraperitoneally with atRA (10 mg/kg) or vehicle-only solution, and acute coronal slices containing the dorsal hippocampus were prepared 6 hr later. AMPA-receptor-mediated spontaneous excitatory postsynaptic currents (sEPSCs) were recorded from mature granule cells in the suprapyramidal blade of the dentate gyrus (Figure 1A–C). In contrast to neocortical neurons (Lenz et al., 2021), atRA had no apparent effects on the mean sEPSC amplitude, whether half width or area (Figure 1D). However, a significant increase in sEPSC frequencies was observed in the atRA group (Figure 1E).
 
@@ -50,7 +50,7 @@ Finally, basic intrinsic properties were assessed (Figure 2). Dentate granule ce
 
 **Figure 2.:** (A, B) Group data of resting membrane potentials, input-output curves, and input resistances. (C) A slight but not significant decrease in action potential (AP) frequency of dentate granule cells is observed in the atRA group (ncontrol = 22 cells, natRA = 25 cells in four animals each; Mann-Whitney test for column statistics, RM two-way ANOVA followed by Sidak’s multiple comparisons test for input-output curve and AP frequency analysis). Individual data points are indicated by gray dots. Values represent mean ± SEM. (ns, non-significant difference).
 
-## All-trans retinoic acid has no significant effects on synaptic transmission and intrinsic cellular properties of dentate granule cells in the ventral hippocampus
+### All-trans retinoic acid has no significant effects on synaptic transmission and intrinsic cellular properties of dentate granule cells in the ventral hippocampus
 
 The ability of neurons to express synaptic plasticity varies along the septotemporal axis of the hippocampus (Vlachos et al., 2008; Chawla et al., 2018; Maggio and Segal, 2009; Schreurs et al., 2017). We therefore tested for the effects of atRA on dentate granule cells in the ventral hippocampus.
 
@@ -64,7 +64,7 @@ A different set of animals was injected intraperitoneally with atRA (10 mg/kg) o
 
 **Figure 4.:** (A–C) Group data of resting membrane potentials (A), input-output curves, and input resistances (B), and action potential (AP) frequency of dentate granule cells in the ventral hippocampus (ncontrol=22 cells, natRA=23 cells in four animals each; Mann-Whitney test for column statistics, RM two-way ANOVA followed by Sidak’s multiple comparisons test for input-output curve and AP frequency analysis). Individual data points are indicated by gray dots. Values represent mean ± SEM. (ns, non-significant difference).
 
-## All-trans retinoic acid treatment causes only limited changes in the expression of synapse-related genes in the hippocampus
+### All-trans retinoic acid treatment causes only limited changes in the expression of synapse-related genes in the hippocampus
 
 Biological effects of atRA have been reported at the gene transcription level (Maden, 2002). To further evaluate the effects of atRA in our experimental setting transcriptome analysis was performed in hippocampal tissue samples 6 hr after intraperitoneal atRA or vehicle-only injections (Figure 5). Principal component analysis revealed no major clustering of samples related to the respective treatment (Figure 5A). In line with this observation, only a limited number of significantly regulated genes were identified (Figure 5B), representing a z-score heatmap clustering over treatment (29 genes; Figure 5C). Further analysis of the significantly regulated genes indicated that subsets of these genes relate to atRA-signaling/atRA-metabolism (~21%, 6 genes), synaptic transmission (~14%, 4 genes), or Wnt signaling (~7%, 2 genes), respectively. Notably, the majority of significantly regulated genes did not show any functional clustering (Figure 5D). While these findings indicate that intraperitoneally injected atRA reached and affected the hippocampus, no major changes in synaptic genes were detected 6 hr after administration of atRA.
 
@@ -72,7 +72,7 @@ Biological effects of atRA have been reported at the gene transcription level (M
 
 **Figure 5.:** (A) Principal component analysis with ‘treatment’ as primary factor reveals no treatment-specific clustering of hippocampal mRNA samples (n=4 animals, one hippocampus each). (B) DESeq2-Analysis reveals differential expression of genes with a moderate │log2FC│<1 (visualization by MA plot). (C) Heatmap showing the z-scores of 29 differentially expressed genes. The differential expression of genes depends on the atRA treatment, as indicated by the z-score clustering. (D) Subsets of genes can be attributed to atRA-signaling or atRA-metabolism, synaptic transmission, and Wnt-signaling, respectively.
 
-## Increased synapse numbers in the dorsal hippocampus are detected in mice treated with all-trans retinoic acid
+### Increased synapse numbers in the dorsal hippocampus are detected in mice treated with all-trans retinoic acid
 
 Next, transmission electron microscopy was used to assess the structural properties of excitatory synapses in the outer two-thirds of the molecular layer in the dorsal hippocampus which is the layer of the major excitatory input from the entorhinal cortex (Figure 6). Cross sections of asymmetric synapses, that is, the numbers and length of postsynaptic densities (PSDs) and presynaptic vesicle counts, were quantified in control and atRA-treated mice (Figure 6A). It is well established that PSD length in synaptic cross sections correlates to synaptic strength (Meyer et al., 2014). In agreement with our electrophysiological recordings, which showed no significant difference in the sEPSC amplitudes between the groups (c.f., Figure 1D), PSD lengths did not significantly change in the atRA-treated group (Figure 6B). However, a robust increase in the number of PSDs per area was detected, while presynaptic vesicle counts were not significantly different between the two groups (Figure 6B and C). These results indicate that the structural properties of synapses are not affected by atRA, and that increased synapse numbers may explain the increased sEPSC frequencies in the dorsal hippocampus of atRA-treated mice.
 
@@ -80,7 +80,7 @@ Next, transmission electron microscopy was used to assess the structural propert
 
 **Figure 6.:** (A) Representative electron microscopy images of asymmetric synapses (arrowheads) in the outer two-thirds of the molecular layer (mol. layer) of the dorsal hippocampus from atRA- or vehicle-only-injected mice. Scale bar=1 µm. (B) Group data of postsynaptic density (PSD) counts (ncontrol=36 individual images, natRA=36 individual images in three different animals with 12 images per sample; Mann-Whitney test, U=340) and analysis of PSD lengths of asymmetric synapses (ncontrol=908 PSDs, natRA=1189 PSDs in three different animals, one data point outside the axis limits in the control group; Mann-Whitney test). (C) Presynaptic vesicle counts are not significantly different between the groups (ncontrol=885 presynaptic buttons, natRA=1151 presynaptic buttons in three different animals, one data point outside the axis limits in the atRA group; Mann-Whitney test). Individual data points are indicated by gray dots. Values represent mean ± SEM. (***, p<0.001; ns, non-significant difference).
 
-## All-trans retinoic acid mediates synaptopodin-dependent metaplasticity in the dentate gyrus
+### All-trans retinoic acid mediates synaptopodin-dependent metaplasticity in the dentate gyrus
 
 In light of the plasticity-promoting effects of atRA (Aoto et al., 2008; Hsu et al., 2019; Arendt et al., 2015), including our recent findings in the mouse and human neocortex (Lenz et al., 2021), we theorized that atRA could induce metaplasticity in the dentate gyrus. Specifically, the lack of essential changes in synaptic strength and intrinsic cellular properties detected 6 hr after atRA injections prompted the hypothesis, that atRA may modulate the ability of neurons to express synaptic plasticity.
 
@@ -110,35 +110,157 @@ The plasticity-promoting effects of atRA were not observed in synaptopodin-defic
 
 ## Materials and methods
 
-## Pharmacological treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans retinoic acid (atRA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: R2625</td>
+      <td>Final concentration:10 mg/kgInjection vehicle: Corn oil+5% DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl Sulfoxide(DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Carl Roth</td>
+      <td>Cat#: 0335.3</td>
+      <td>Final concentration: 4% (w/v) in PB or PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutardialdehyd</td>
+      <td>Carl Roth</td>
+      <td>Cat#: 4157.2</td>
+      <td>Final concentration: 2% (w/v) in PB</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Biotrend</td>
+      <td>Cat#: BN0153</td>
+      <td>Final concentration: 10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-APV</td>
+      <td>Abcam</td>
+      <td>Cat#: ab120003</td>
+      <td>Final concentration: 10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI (1 mg/ml in water)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 62248</td>
+      <td>IF and post hoc labeling (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch Total RNA Miniprep Kit</td>
+      <td>New England Biolabs</td>
+      <td>#T2010S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.129-Synpotm1Mndl/Dllr; Synpo−/−</td>
+      <td>Vlachos et al., 2013 PMID:23630268</td>
+      <td>RRID:MGI:6423115</td>
+      <td>Obtained from Deller Lab (Frankfurt); male</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin, Alexa Fluor 488-Conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat#: S32354 RRID:AB_2315383</td>
+      <td>Post hoc labeling (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit (pClamp software package)</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J; Synpo+/+</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Pharmacological treatment
 
 AtRA (Sigma-Aldrich) was dissolved in DMSO and stored at –20°C until further use. The injection solution was prepared immediately before injection by adding corn oil to prediluted stocks to achieve a final concentration of 5% DMSO (v/v). Before use, the solution was vortexed briefly. The solution was intraperitoneally injected in adult (C57BL//6J; 6–10 weeks old) male mice at an atRA concentration of 10 mg/kg. Control animals were injected with a vehicle-only solution (5% DMSO in corn oil) but otherwise treated equally. After injection, no overt behavioral changes were observed. Experiments were performed 3–6 hr after intraperitoneal injections.
 
-## Preparation of acute mouse hippocampal slices
+### Preparation of acute mouse hippocampal slices
 
 Adult mice were anesthetized with ketamine/xylazine (100 mg/kg ketamine and 20 mg/kg xylazine) and rapidly decapitated. Brains were removed and further dissected for the preparation of acute slices of the ventral hippocampus as previously described (Bischofberger et al., 2006). For the preparation of acute slices of the dorsal hippocampus, the rostral and caudal parts of the brains were removed to ensure stable coronal sectioning. Brains were immediately transferred to a cooled oxygenated extracellular solution (5°C; 5% CO2 /95% O2) containing (in mM): 92 NMDG, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, 2 thiourea, 5 Na-ascorbate, 3 Na-pyruvate, 0.5 CaCl2, and 10 MgSO4; pH = 7.3–7.4 at ~7°C (NMDG-aCSF; Ting et al., 2018). 300 µm tissue sections were cut with a Leica VT1200S vibratome. Slices were transferred to cell strainers with 40 µm pore size placed in NMDG-aCSF at 34°C, and the sodium levels were gradually increased following a protocol as described before (Ting et al., 2018). After recovery, slices were maintained for further experimental assessment at room temperature in extracellular solution containing (in mM): 92 NaCl, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, 2 thiourea, 5 Na-ascorbate, 3 Na-pyruvate, 2 CaCl2, and 2 MgSO4.
 
-## Whole-cell patch-clamp recordings
+### Whole-cell patch-clamp recordings
 
 Dentate granule cells in the suprapyramidal blade of the dentate gyrus were recorded in a bath solution (35°C) containing (in mM): 92 NaCl, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, 2 thiourea, 5 Na-ascorbate, 3 Na-pyruvate, 2 CaCl2, and 2 MgSO4. Granule cell somata close to the molecular layer of the dentate gyrus were visually identified using an LN-Scope (Luigs & Neumann, Ratingen, Germany) equipped with an infrared dot-contrast and a 40× water immersion objective (Olympus, NA 0.8). Recorded signals were amplified using a Multiclamp 700B amplifier, digitized with a Digidata 1550B digitizer and visualized with the pClamp 11 software package. For recordings of sEPSC and intrinsic cellular properties, patch pipettes with a tip resistance of 3–5 MΩ were used, containing (in mM): 126 K-Gluconate, 4 KCl, 10 HEPES, 4 MgATP, 0.3 Na2GTP, 10 PO-Creatine, and 0.3 % (w/v) Biocytin (pH=7.25 with KOH, 285 mOsm/kg). For sEPSC recordings, dentate granule cells were held at –80 mV in voltage-clamp mode. Intrinsic cellular properties were recorded in current-clamp mode. A pipette capacitance of 2.0 pF was corrected and series resistance was compensated using the automated bridge balance tool of the Multiclamp commander. IV curves were generated by injecting 1 s square pulse currents starting at –100 pA and increasing in 10 pA steps until +500 pA injection was reached (sweep duration: 2 s). sIPSCs were recorded in the same extracellular solution by adding the AMPA receptor inhibitor CNQX (10 µM, Biotrend) and the NMDA receptor inhibitor APV (10 µM, Abcam). Patch pipettes for sIPSC recordings contained (in mM): 40 CsCl, 90 K-gluconate, 1.8 NaCl, 1.7 MgCl2, 3.5 KCl, 0.05 EGTA, 2 MgATP, 0.4 Na2GTP, 10 PO-Creatine, and 10 HEPES (pH=7.25 with KOH, 290 mOsm), and granule cells were held at –70 mV during the recordings. Series resistance was monitored and recordings were discarded if series resistance reached >30 MΩ.
 
-## Post hoc labeling of patched dentate granule cells
+### Post hoc labeling of patched dentate granule cells
 
 Acute slice preparations were fixed in 4% PFA/4% sucrose (w/v, phosphate-buffered saline, PBS) at room temperature and stored at 4°C overnight in the same solution. After fixation, slices were washed in PBS and consecutively incubated for 1 hr with 10% (v/v) normal goat serum (NGS) in 0.5% (v/v) Triton X-100 containing PBS to reduce unspecific staining. For post hoc visualization of patched dentate granule cells, sections were incubated for 3 hr with streptavidin-Alexa Fluor 488 (Invitrogen, #S32354; 1:1000 dilution in 10% (v/v) NGS, 0.1% (v/v) Triton X-100 containing PBS) at room temperature. Sections were washed in PBS and incubated with DAPI for 10 min (Thermo Fisher Scientific, #62248; 1:5000 dilution in PBS) to visualize the cytoarchitecture. After washing, sections were transferred onto glass slides and mounted with fluorescence anti-fading mounting medium (DAKO Fluoromount). Confocal images were acquired using a Leica SP8 laser-scanning microscope equipped with a 20× multi-immersion (NA 0.75; Leica) and a 40× oil-immersion (NA 1.30; Leica) objective. Image stacks were acquired in tile scanning mode with the automated stitching function of the LasX software package.
 
-## Electron microscopy
+### Electron microscopy
 
 Adult mice of both sexes were anesthetized using intraperitoneal injection of ketamine (100 mg/kg) and xylazine (20 mg/kg). Deeply anesthetized mice were transcardially perfused using 2% (w/v; 0.1 M phosphate buffer, PB) glutaraldehyde and 4% (w/v; 0.1 M PB) paraformaldehyde. Post hoc fixation of the brains was continued overnight in the same fixation solution. After fixation, frontal sections containing the dorsal hippocampus were generated using a Leica VT1000S vibratome. Isolated dorsal hippocampal slices were washed for 4 hr in 0.1 M PB. Subsequently, slices were incubated with 1% osmium tetroxide for 60 min, washed in graded ethanol (up to 50% (v/v)) for 5 min each, and incubated overnight with uranyl acetate (1% (w/v) in 70% (v/v) ethanol) overnight. Slices were then dehydrated in graded ethanol (80%, 90%, and 98% for 5 min each, 2 times 100% for 10 min each). Subsequently, two washing steps were performed in propylene oxide for 10 min each prior to incubation with durcupan/propylene oxide (1:1 for 1 hr) and transferred to durcupan (overnight at room temperature). Slices were embedded in durcupan, and ultra-thin sectioning (55 nm) was performed using a Leica UC6 Ultracut. Sections were mounted onto copper grids (Plano), at which point an additional Pb-citrate contrasting step was performed (3 min). Electron microscopy was performed with a LEO 906E microscope (Carl Zeiss) at 4646× magnification. For each sample, 12 images from the outer two-thirds of the molecular layer were acquired and further analyzed.
 
-## RNA isolation and transcriptome analysis
+### RNA isolation and transcriptome analysis
 
 Hippocampi were isolated from the brain of adult mice and immediately transferred into RNA protection buffer (New England Biolabs) and RNA was consecutively isolated using a column-based RNA isolation kit according to the manufacturer’s instructions (Monarch Total RNA Miniprep Kit; #T2010S New England Biolabs). Strand-specific cDNA library preparation from polyA enriched RNA (150 bp mean read length) and RNA sequencing was performed by Eurofins Genomics (Eurofins Genomics Europe Sequencing GmbH, Konstanz, Germany). RNA sequencing was performed using the genome sequencer Illumina HiSeq technology in NovaSeq 6000 S4 PE150 XP sequencing mode. For further analysis .fastq-files were provided. All files contained more than 45 M high-quality reads having at least a phred quality of 30 (>90% of total reads).
 
-## In vivo perforant path long-term potentiation
+### In vivo perforant path long-term potentiation
 
 Three-month-old C57BL/6J (Synpo+/+) or synaptopodin-deficient male animals (Synpo−/−; with C57BL/6J genetic background) were kept in a 12 hr light/12 hr dark cycle (Scantainer) with access to food and water ad libitum. To achieve stable anesthesia, an initial dose of urethane (1.25 g/kg, in sodium chloride solution) was injected subcutaneously (s.c.); a supplemental dose of 0.1 g/kg was given as needed. After stable anesthesia was reached, atRA (10 mg/kg in 5% DMSO) or vehicle-only was intraperitoneally injected (blind to experimenter). The surgery and electrode placement were performed as previously described (Jedlicka et al., 2011; Muellerleile et al., 2020). Briefly, the mouse was placed in a stereotactic frame (David Kopf Instruments) and local anesthesia with prilocaine (Xylonest 1%, Astra Zeneca, s.c. to the scalp) was applied. Cranial access to the brain was established according to coordinates from the mouse brain atlas (Franklin and Paxinos; stimulation electrode: 2.5 mm lateral to the midline, 3.8 mm posterior to bregma; recording electrode: 1.2 mm lateral to the midline, 1.7 mm posterior to bregma). The ground electrode was placed in the neck musculature. Electrophysiological signals were amplified using a Grass P55 A.C. pre-amplifier (Astro-Med) and digitized at a 10 kHz sampling rate (Digidata 1440A, Molecular Devices). Extracellular stimulation was performed using a STG1004 stimulator (Multichannel Systems). A bipolar stimulation electrode (NE-200, 0.5 mm tip separation, Rhodes Medical Instruments) was lowered 1.5–2.2 mm below the surface of the brain to target the angular bundle of the perforant path. Then a tungsten recording electrode (TM33B01KT, World Precision Instruments) was lowered in 0.1 mm increments while monitoring the waveform of the field excitatory postsynaptic potential (fEPSP) in response to 500 µA test pulses until the granule cell layer in the dorsal part of the hippocampus was reached (1.7–2.2 mm below the surface). The correct placement of the stimulation electrode in the medial portion of the perforant path was verified electrophysiologically by the latency of the population spike (approximately 4 ms), although the activation of some lateral perforant path fibers could not be excluded. Recordings started a minimum of 3 hr after experimental treatment with atRA or vehicle-only. An input-output curve was generated by 30–800 µA current pulses, repeated three times at each intensity, 0.1 ms pulse duration, 60 pulses total at 0.1 Hz. Perforant path-dentate gyrus (PP/DG)-LTP was recorded by applying stimuli with a current intensity set to elicit a 1–2 mV population spike (0.1 Hz, 0.1 ms pulse duration). PP/DG-LTP was induced using a weak TBS protocol (Jedlicka et al., 2015) composed of three series of six trains with six 400 Hz current pulses at double the baseline intensity and pulse duration (with 200 ms interval between trains and 20 s interval between series). Following LTP induction, evoked fEPSPs were recorded for 1 hr using the baseline stimulation parameters.
 
-## Quantification and statistics
+### Quantification and statistics
 
 RNA sequencing data were uploaded to the galaxy web platform (public server: usegalaxy.eu; Afgan et al., 2018; Jalili et al., 2020; Afgan et al., 2016) and transcriptome analysis was performed using the Galaxy platform in accordance with the reference-based RNA-seq data analysis tutorial (Batut et al., 2018). Adapter sequences, low quality, and short reads were removed via the CUTADAPT tool (Galaxy version 1.16.5). Reads were mapped using RNA STAR (Galaxy version 2.7.6a) with the mm10 Full reference genome (Mus musculus). For an initial assessment of gene expression, unstranded FEATURECOUNT (Galaxy version 2.0.1) analysis was performed from RNA STAR output. Statistical evaluation was performed using DESeq2 (Galaxy version 2.11.40.6+ galaxy1) with treatment as the primary factor that might affect gene expression. Genes were considered as differentially expressed if the adjusted p-value was <0.05. Heatmaps were generated based on z-scores of the normalized count table.
 
@@ -148,6 +270,6 @@ Electron microscopy images were analyzed and cross-checked by five investigators
 
 Data were statistically evaluated using GraphPad Prism 7 (GraphPad Software, USA). Statistical comparisons were made using the nonparametric Mann-Whitney test. For statistical comparison of XY plots in whole-cell patch-clamp recordings and fEPSP input-output curves, we used an RM two-way ANOVA test (repeated measurements/analysis) with Sidak’s multiple comparisons. Statistical analysis of fEPSP slope data was performed using the Mann-Whitney test for the three terminal data points. p-values smaller than 0.05 were considered a significant difference. In the text and figures, values represent mean ± standard error of the mean (SEM). Statistical significance in XY plots is indicated in the figure panel. U-values were provided for significant results only. *, p<0.05; ***, p<0.001; ns, non-significant differences.
 
-## Digital illustrations
+### Digital illustrations
 
 Figures were prepared using Photoshop graphics software (Adobe, San Jose, CA). Image brightness and contrast were adjusted.

@@ -17,18 +17,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Neurobiology, Duke University Durham United States
-2. https://ror.org/00py81415 Center for Cognitive Neuroscience, Duke University Durham United States
-3. https://ror.org/00py81415 Duke Institute for Brain Sciences, Duke University Durham United States
-4. https://ror.org/00jmfr291 Department of Psychiatry, University of Michigan Ann Arbor United States
-5. https://ror.org/00py81415 Department of Statistical Science, Duke University Durham United States
-6. https://ror.org/01an3r305 Department of Ophthalmology, University of Pittsburgh Pittsburgh United States
-7. https://ror.org/011znd796 American Medical Group Association Alexandria United States
-8. https://ror.org/024mw5h28 Department of Neurobiology, University of Chicago Chicago United States
-9. https://ror.org/0420db125 The Rockefeller University New York United States
-10. https://ror.org/00py81415 Department of Psychology & Neuroscience, Duke University Durham United States
-11. https://ror.org/00py81415 Department of Computer Science, Duke University Durham United States
-12. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
+1. Department of Neurobiology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Center for Cognitive Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+3. Duke Institute for Brain Sciences, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Department of Psychiatry, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Department of Statistical Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Department of Ophthalmology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+7. American Medical Group Association Alexandria United States ([ROR:011znd796](https://ror.org/011znd796))
+8. Department of Neurobiology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+9. The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+10. Department of Psychology & Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+11. Department of Computer Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+12. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -50,13 +50,86 @@ Together, these findings suggest that fluctuating activity patterns are a widesp
 
 ## Materials and methods
 
-## Introduction to datasets
+### Introduction to datasets
 
 We analyzed multiple datasets from two visual cortical regions (MT and IT cortex). All datasets were collected in awake, behaving macaques (MT: Macaca mulatta; IT: Macaca mulatta and Macaca fascicularis). The data were originally collected at the University of Pittsburgh (Ruff and Cohen, 2016b; Ruff et al., 2016a), Rockefeller University (Ebihara, 2015), and the German Primate Center in Goettingen (Li et al., 2016). All procedures were conducted in accordance with applicable US, German, and European guidelines or regulations and were approved by the relevant compliance committees at the relevant institutions (US guidelines: National Institutes of Health (NIH) Pub. No. 86-23, Revised 1985; Pittsburgh MT grating datasets: Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University (Protocol #: 20067560, PHS Assurance Number: D16-00118); IT datasets: The Rockefeller University Institutional Animal Care and Use Committee (Protocol #: 21,104 H USDA, PHS Assurance Number: A3081-01); Goettingen MT dot patch dataset: [Niedersächsisches Landesamtfür Verbraucherschutzund Lebensmittelsicherheit (LAVES)] permit numbers 33.42502/08-07.02 and 33.14.42502-04-064/07). All surgical procedures were conducted aseptically and with suitable anesthetics and analgesics.
 
 Our goal was to assess fluctuating neural activity in multiple visual areas and in response to multiple stimuli (Table 1). In all datasets, fixation was controlled while the stimuli were presented (0.5–1.2 degree fixation window radius, depending on the dataset). In some datasets, monkeys performed a behavioral task in which attention was directed away from the stimuli, such as to the fixation position itself or to an additional stimulus in the ipsilateral hemifield. In the fixation-only tasks, it should be noted that the absence of experimental control over attention could have led to the monkeys covertly attending the receptive field stimuli from time to time.
 
+**Table 1.**
+ Comparison of datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Citation</th>
+      <th>Brain area</th>
+      <th>Stimuli</th>
+      <th>Stimulus locations</th>
+      <th>Task</th>
+      <th>Recording method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MT adjacent gratings</td>
+      <td>Ruff and Cohen, 2016b</td>
+      <td>MT</td>
+      <td>Drifting images of two gratings</td>
+      <td>Adjacent (3 degrees eccentric)</td>
+      <td>Detect orientation change of a different, ipsilateral stimulus</td>
+      <td>Array, single and multi-unit</td>
+    </tr>
+    <tr>
+      <td>MT dot patches</td>
+      <td>Li et al., 2016</td>
+      <td>MT</td>
+      <td>Moving dots</td>
+      <td>Adjacent</td>
+      <td>Detect change in fixation stimulus</td>
+      <td>Single electrode, single unit</td>
+    </tr>
+    <tr>
+      <td>MT plaid</td>
+      <td>Ruff et al., 2016a</td>
+      <td>MT</td>
+      <td>Drifting images of gratings and plaids</td>
+      <td>Same location</td>
+      <td>Passive fixation</td>
+      <td>Array, single and multi-unit</td>
+    </tr>
+    <tr>
+      <td>IT face patch MF</td>
+      <td>Ebihara, 2015; Caruso et al., 2018</td>
+      <td>MF</td>
+      <td>Images of faces and objects</td>
+      <td>Adjacent</td>
+      <td>Passive fixation</td>
+      <td>Single electrode, single unit</td>
+    </tr>
+    <tr>
+      <td>IT face patch AL</td>
+      <td>Ebihara, 2015</td>
+      <td>AL</td>
+      <td>Images of faces and objects</td>
+      <td>Adjacent</td>
+      <td>Passive fixation</td>
+      <td>Single electrode, single unit</td>
+    </tr>
+  </tbody>
+</table>
+
 For area MT, we used three datasets. The first dataset included single- and multi-unit responses to drifting grating stimuli positioned adjacent to one another (Figure 1a.1 and 2; Ruff and Cohen, 2016b). The experiment involved simultaneous recordings from V1, V4, and MT. As we have previously identified fluctuating response patterns in V1 and V4 (Jun et al., 2022), this MT dataset provides an opportunity to compare the presence of fluctuating activity across visual areas under the same experimental conditions (and some of the same recording sessions) as in our previous work. However, this dataset was comparatively small (as detailed further below), making additional data desirable.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91129/elife-91129-fig1-v1.jpg)
+
+**Figure 1.:** (a) Middle temporal area (MT) gratings datasets from Ruff and Cohen, 2016b and Ruff et al., 2016a. (a.1). For the adjacent gratings, the two stimuli were placed side by side and roughly within the MT neuron’s receptive field. The superimposed gratings were larger and each was placed at the same position, also within the MT neuron’s receptive field. (a.2) Monkeys performed an attention task during the presentation of the adjacent gratings; only trials in which attention was successfully directed to the stimulus in the ipsilateral hemifield were included in this study. (a.3) Monkeys performed a fixation task during presentation of the superimposed gratings. (b) MT random dot patch dataset from Li et al., 2016. Patches of moving dots were presented within apertures placed within the receptive field of an MT neuron. Attention was directed to the fixation target for the trials included in the present study. (c) Face patch stimulus conditions (Ebihara, 2015). (c.1) Monkeys performed a fixation task and stimuli were presented either at the center of the receptive field or from one of eight locations surrounding it. (c.2) ‘Preferred’ faces were faces that evoked a strong response, and were presented in the center of the receptive field. Non-preferred faces or non-face objects were presented at one of the other locations. Combinations of stimuli involved the preferred face in the center and one of the non-preferred stimuli at one of the adjacent locations. (c.3) Additional examples of stimuli used in the face patch datasets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91129/elife-91129-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Average A, B, and AB trial counts for each included triplet (after Poisson, trial count, and response separation screening). (b) The distribution of variance-to-mean ratios, or Fano factors, on A- and B-alone trials across the different datasets.Results shown involve the average A and B Fano factors for a given triplet (computed after the screening for minimum trial count and A and B response separation). (c) A and B response separations, computed as an index of the difference between A and B responses as a fraction of their sum, for included triplets (after Poisson, trial count, and response separation screening). Note that the middle temporal area (MT) plaid dataset differs from the other 4 datasets in that many of the included triplets have much smaller A and B response separations than those that are included for other datasets. This is likely due to the larger numbers of trials providing greater confidence that the A and B responses did indeed differ at smaller difference levels. (d) Average ‘winning probability’ for the ‘mixture’ model (see Materials and methods: Data analysis) as a function of the response separation. Average ‘mixture’ winning probability was higher for all four datasets involving distinguishable stimuli (MT adjacent gratings and dot patches, the face patch datasets) than for the MT plaid dataset, across all levels of A vs. B response separation.
 
 Accordingly, we included a second dataset from a previously published study involving single- and multi-unit responses to adjacent random dot stimuli (Figure 1b; Li et al., 2016). Both of these datasets were recorded while monkeys performed a behavioral task in which attention was directed away from the stimuli in the MT receptive field: toward the opposite hemifield (Ruff and Cohen, 2016b) or to the fixation point (Li et al., 2016). Fixation was maintained during stimulus presentation to within 0.5 degrees of the fixation point for the Ruff and Cohen dataset and 1.2 degrees for the Li et al. dataset.
 
@@ -70,17 +143,17 @@ For both MF and AL, we assessed neural responses to image pairs drawn from three
 
 As in Caruso et al., 2018, we did not incorporate the exact location of the non-preferred face/object into the present analysis, but any excessive heterogeneity in the responses of the non-preferred stimuli due to location would likely result in exclusion of the condition from further analysis (see ‘Analysis: response periods and inclusion criteria’).
 
-## Analysis: response periods and inclusion criteria
+### Analysis: response periods and inclusion criteria
 
-## Response periods
+#### Response periods
 
 For each dataset, we compared neural responses (see ‘Data analysis’) using a spike counting window of 200 ms, the minimum stimulus presentation window across all datasets. This window was shifted by the approximate response latency of the brain region, specifically 30 ms for MT and 50 ms for IT, that is, spikes were counted in a window from 30 to 230 ms after stimulus onset for MT or 50–250 ms for IT. For the IT datasets, the stimuli were presented for 400 ms, and results were similar when we analyzed the data in a 50–450 ms time window.
 
-## Trial inclusion criteria
+#### Trial inclusion criteria
 
 Only correctly performed trials were analyzed. For fixation tasks, this meant that the monkey maintained fixation for the required interval (MT plaid dataset, IT datasets). For attention tasks, this meant that the monkey correctly identified the change in the attended stimulus, which was outside the receptive field of the neurons under study (MT gratings dataset: the motion change in a grating presented in the ipsilateral field; MT dot patch dataset: the change in color in the fixation target). In addition, trials were excluded from the MT gratings dataset if any microsaccades were identified during the stimulus presentation period. Microsaccades were defined as periods of time in which eye speed exceeded the mean eye speed in the fixation epoch by more than 6 standard deviations, following standards established by Engbert and Kliegl, 2003 and deployed in our previous studies involving these same experiments (Ruff et al., 2016a; Ruff and Cohen, 2016b; Jun et al., 2022).
 
-## ‘Triplet’ definition and inclusion criteria
+### ‘Triplet’ definition and inclusion criteria
 
 Our analysis of fluctuating activity patterns relies on comparing the activity evoked on trials in which two stimuli, A and B, are presented simultaneously (AB) to trials in which only the A or only the B stimulus was presented. We refer to the corresponding A-alone, B-alone, and combined AB conditions as ‘triplets’.
 
@@ -90,21 +163,21 @@ Second, spike count distributions for the A- and B-alone trials in a triplet wer
 
 Finally, spike count distributions for the individual A and B stimuli in a triplet were required to be sufficiently separable from one another. This is necessary so that it is possible to ascertain with some confidence how the AB spike count distributions compare to each of the corresponding single-stimulus A and B distributions. We set the inclusion criterion as a 95% likelihood that the A and B spike counts were drawn from different Poisson distributions (specifically, the logarithm of the intrinsic Bayes factor was required to be greater than 3, given an a priori 50–50 chance that the two distribution means are the same vs. different). The greater numbers of trials in some datasets than in others allowed for inclusion of triplets at smaller differences in the A vs. B response distributions (Figure 1—figure supplement 1), but this did not appear to impact the overall conclusions (see Figure 1—figure supplement 1 and associated legend).
 
-## Data analysis
+### Data analysis
 
 A full description of our statistical method has been published previously (Caruso et al., 2018; Mohl et al., 2020; Jun et al., 2022). Our method centers on modeling spike counts based on Poisson distributions, a common technique for handling non-negative count data in neuroscience and other fields.
 
 Briefly, we compare the distribution of spike counts in response to a stimulus pair (AB) to the distributions of spike counts in response to the component stimuli presented individually (A and B). We consider four possibilities for the relationship between the AB response and the individual A and B responses (Figure 2). The first three attempt to fit the AB responses with a single Poisson distribution, as follows:
 
-## Outside
+#### Outside
 
 The mean of the distribution of AB responses might be higher than the maximum or lower than the minimum of A or B. This possibility includes either summation of the mean A and B responses or strong suppression of responses to one stimulus by the presence of the other.
 
-## Single
+#### Single
 
 The mean of the distribution of AB responses might match the mean response to either A or B. This is akin to winner-take-all, with the same winner on every trial.
 
-## Intermediate
+#### Intermediate
 
 The AB responses might be well fit by a single Poisson distribution with a mean between A and B, as if the neuron performed an averaging operation on its inputs.
 
@@ -114,7 +187,7 @@ The AB responses might be well fit by a single Poisson distribution with a mean 
 
 These possibilities are in contrast to the final possibility of interest:
 
-## Mixture
+#### Mixture
 
 The AB responses match A on some trials and match B on other trials, creating a mixture of the two A and B distributions across trials (fluctuations or ‘multiplexing’ from trial to trial). We model this possibility as a bimodal mixture of the A and B Poisson distributions as assessed on those single-stimulus trials.
 
@@ -124,7 +197,7 @@ As noted previously (Caruso et al., 2018; Jun et al., 2022), these category boun
 
 ## Results
 
-## Spiking activity fluctuates in MT when two stimuli are distinct, but not when they fuse into one object
+### Spiking activity fluctuates in MT when two stimuli are distinct, but not when they fuse into one object
 
 We first evaluated the responses in visual area MT to stimuli that appeared as distinct objects. The first dataset involved adjacent drifting gratings, both of which were positioned within the receptive field of the MT neuron under study. These data were recorded simultaneously with recordings in V1, in which we have previously reported the presence of fluctuating activity in response to these stimuli (Jun et al., 2022). On the trials included for analysis, monkeys performed a task in which attention was directed elsewhere.
 
@@ -142,13 +215,21 @@ In contrast, evidence of fluctuating activity was much lower in our third MT dat
 
 The difference in the proportions of ‘mixture’ response patterns in the first two MT datasets involving distinct objects (~45%) vs. this last dataset in which the two stimuli fuse to form a new third object (~1.4%) was statistically significant (Figure 3e, blue vs. green bars, chi-squared test p < 10−9). This finding is consistent with the interpretation that the prevalence of fluctuating activity is related to whether two stimuli are perceptually distinguishable vs. fuse to form a single object.
 
-## Spiking activity fluctuates in face patches MF and AL when two stimuli are distinct
+### Spiking activity fluctuates in face patches MF and AL when two stimuli are distinct
 
 To further explore the generality of these fluctuating activity patterns, we next turned to a higher order area of the visual pathway – the face patch system of IT cortex. Face patches are exquisitely sensitive to the identity of individual faces, and respond preferentially to faces as compared to other objects. This affords the opportunity to test whether fluctuating activity is evoked solely when the two stimuli are both faces, as might be expected because the non-face objects are largely thought to be encoded by neural populations in other regions of IT, or if both face–face and face–object pairs evoke fluctuating activity. We previously identified fluctuating activity patterns in the MF face patch (Caruso et al., 2018), but we did not separate face–face and face–object stimulus conditions. Here, we revisited that dataset to conduct that comparison. We also sought to compare the results in MF to those in face patch AL. Recent work has suggested that MF is ‘earlier’ in the face patch hierarchy than AL, and that AL shows properties such as view-invariance that are less evident in MF (Moeller et al., 2008; Freiwald and Tsao, 2010; Ebihara, 2015). Thus, any differences between the results in MF and AL could shed light on how fluctuating activity varies within the processing hierarchy at this late stage of visual processing.
 
 Accordingly, we assessed MF and AL face patch responses with both face–face and face–object stimulus combinations. In face–face combinations, one face evoked the strongest response from among a stimulus set (preferred face), and the other face evoked the weakest response from the same set. The preferred face was presented at the center of the neuron’s receptive field, while the non-preferred face was presented at a different location (Figure 1c). Similarly, the object stimuli were also chosen to evoke weak responses and were presented at a different location than the preferred face. The stimulus conditions were randomly interleaved, and the data were collected while monkeys performed simple fixation tasks.
 
 Both face patch regions and both types of stimulus combinations elicited fluctuating activity. Figure 4a–d shows the responses of four example neurons, each of which exhibited spike counts that fluctuated across trials between appearing to respond to the preferred vs. non-preferred face (Figure 4a, c) or to the face vs. the object (Figure 4b, d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91129/elife-91129-fig4-v1.jpg)
+
+**Figure 4.:** (a) An example single MF unit’s response to two simultaneous faces (AB, black solid lines) in comparison to the mean response to each face individually (A and B, red and blue dotted lines). (b) Same as (a) but in response to one face and one object. (c) Same as (a) but recorded in AL. (d) Same as (b) but recorded in AL. In (a) through (d), distributions were smoothed for display purposes via convolution with a 3-point sliding window of which the middle point is weighted twice as much as either of the two outer points, followed by cubic spline interpolation. Gray bars show the raw spike counts for the 200 ms spike counting windows (multiply x-axis scale by 5 to convert to spike rates in Hz). (e) Number of triplets classified into each category (as shown in Figure 2) when responses to a face–face pair (dark brown) or a face–object pair (mustard color) are recorded in face patch MF. Only triplets for which the winning model garnered a posterior probability of 0.67 or greater are shown. (f) Same as (e) but recorded in face patch AL. (g) Comparison of (e) and (f) showing that more conditions display a fluctuating (mixture) pattern in AL than in MF. In MF, there were more ‘mixtures’ among face–face pairs than among face–object pairs. Results in this figure only include triplet conditions for which the average variance-to-mean ratio (Fano factor) of activity on the A- and B-only trials was less than 3. See Figure 4—figure supplement 1 for corresponding findings using stricter inclusion criteria.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91129/elife-91129-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** All trends in the data are maintained compared to the comparisons with a criterion of 3, other than the loss of significance between face–face and face–object comparisons in middle fundus (MF).
 
 To evaluate these results at the population level, we used the same statistical comparison described above for the MT analysis. As shown in Figure 4e, we identified ‘mixtures’ in face patch MF for both face–face (dark brown bar) and face–object (mustard-colored bar) stimulus combinations. We also observed ‘intermediates’ and ‘singles’, but no ‘outsides’. Overall, ‘mixtures’ constituted about 32.5% of well-categorized conditions (Figure 4g, light brown bar). The proportion of ‘mixtures’ was higher for face–face stimulus combinations (43.6%, Figure 4g, dark brown bar) than for face–object stimulus combinations (22.7%, Figure 4g, mustard-colored bar). The difference in these proportions was just barely significant by chi-squared test (p = 0.043), but we note that when using stricter Fano factor inclusion criteria for the dataset (variance-to-mean ratio of single-stimulus responses less than 2 rather than 3, see Materials and methods: ‘Triplet’ definition and inclusion criteria), the reduction in the amount of included data increases this p value to p = 0.054 (see Figure 4—figure supplement 1). Accordingly, this aspect of the results should be viewed as of borderline significance.
 

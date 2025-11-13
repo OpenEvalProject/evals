@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/023rffy11 Laboratory for Vascular Morphogenesis, RIKEN Center for Biosystems Dynamics Research Kobe Japan
-2. https://ror.org/048a87296 Department of Immunology, Genetics and Pathology, Rudbeck Laboratory, Uppsala University Uppsala Sweden
-3. https://ror.org/056d84691 Department of Medicine Huddinge, Karolinska Institutet Huddinge Sweden
+1. Laboratory for Vascular Morphogenesis, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+2. Department of Immunology, Genetics and Pathology, Rudbeck Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+3. Department of Medicine Huddinge, Karolinska Institutet Huddinge Sweden ([ROR:056d84691](https://ror.org/056d84691))
 
 † Corresponding author
 
@@ -30,25 +30,77 @@ We have previously discovered that EC migration persists after the inhibition of
 
 ## Results
 
-## aqp1a.1 and aqp8a.1 are differentially expressed by tip and stalk cells during sprouting angiogenesis
+### aqp1a.1 and aqp8a.1 are differentially expressed by tip and stalk cells during sprouting angiogenesis
 
 Of the 18 aquaporin genes that are expressed in zebrafish (Tingaud-Sequeira et al., 2010), aqp1a.1 and aqp8a.1 mRNA have been detected in blood ECs (Koun et al., 2016; Rehn et al., 2011). We confirmed the endothelial expression of aqp1a.1 and aqp8a.1 at 30 hr post fertilization (hpf) and 2, 3, and 4 days post fertilization (dpf) by whole-mount in situ hybridization (Figure 1—figure supplement 1). The two endothelial aqp genes, however, differ in spatial expression. While aqp1a.1 is widely expressed in blood vessels of the head and trunk (dorsal aorta [DA], caudal artery [CA], ISVs, dorsal longitudinal anastomotic vessels [DLAV] and caudal vein plexus) at 30 hpf, aqp8a.1 expression is absent in cerebral blood vessels and is restricted to the DA, CA, and the ventral regions of ISVs in the trunk. After 1 dpf, aqp8a.1 expression expands to the entire ISV and DLAV. Additionally, the expression of aqp1a.1 and aqp8a.1 gradually decreases in the DA and CA so that both are absent by 4 dpf. Single-cell RNA sequencing (scRNAseq) of ECs isolated at 24 hpf, 34 hpf, and 3 dpf further confirmed the endothelial expression of aqp1a.1 and aqp8a.1 mRNA (Figure 1—figure supplement 2A–F), revealed differential expression of aqp1a.1 and aqp8a.1 mRNA in distinct endothelial clusters, and highlighted elevated aqp1a.1 transcript expression in all endothelial subtypes compared to aqp8a.1 (Figure 1—figure supplement 2E–H).
 
 We next examined the expression pattern of aqp1a.1 and aqp8a.1 at the beginning of sprouting angiogenesis at higher resolution using RNAscope and confocal microscopy. At 20 hpf, aqp1a.1 mRNA is highly expressed in the DA with little expression in the posterior cardinal vein (PCV) (Figure 1A and C, Figure 1—figure supplement 3). Closer inspection uncovered heterogeneous expression in the DA, with higher expression in ECs that would be specified as tip cells (Figure 1, Figure 1—figure supplement 3). Indeed, tip cells of newly formed vascular sprouts express higher levels of aqp1a.1 compared to adjacent ECs in the DA at 20 hpf (Figure 1A–C, Figure 1—figure supplement 3B) and the majority of ISVs (61%) display higher aqp1a.1 expression in tip cells than in trailing stalk cells at 22 hpf (Figure 1G). Aqp8a.1 expression is at first largely absent in the DA at 20 hpf (Figure 1B and D, Figure 1—figure supplement 3C) but becomes detectable at 22 hpf (Figure 1E and F). Interestingly, unlike aqp1a.1, aqp8a.1 expression is undetectable in tip cells of emerging ISVs at 20 hpf. At 22 hpf, it is expressed in 22 out of 23 tip cells analyzed, with 78% of ISVs exhibiting higher aqp8a.1 mRNA expression in stalk cells than tip cells (Figure 1G). These observations highlight differential expression pattern of aqp1a.1 and aqp8a.1 in newly formed vascular sprouts, with aqp1a.1 expression enriched in tip cells and aqp8a.1 expression in stalk cells.
 
-## VEGF-VEGFR2 signaling induces the expression of aqp1a.1 and aqp8a.1 mRNA
+![Figure 1.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig1-v1.jpg)
+
+**Figure 1.:** (A–F) Detection of aqp1a.1 and aqp8a.1 mRNA by RNAscope in situ hybridization in 20 (A–D) and 22 (E, F) hpf embryos. Representative maximum intensity projection of confocal z-stacks of tip and stalk cells sprouting from DA are shown (n = 9 embryos, two independent experiments). (B) and (F) show magnified region of a tip cell from a 20 hpf and 22 hpf zebrafish, respectively (tip cell and EC nuclei in the DA are outlined). (G) Percentage of vascular sprouts with differential expression of aqp1a.1 and aqp8a.1 mRNA in tip and stalk cells in 22 hpf embryos (n = 23 sprouts from eight embryos, two independent experiments). (H) qPCR analysis of aqp1a.1 and aqp8a.1 expression in zebrafish embryos treated with 0.01% DMSO or 1 µM Ki8751 at 20 hpf for 6 hr (n = 3 independent experiments). (I) qPCR analysis of AQP1 gene expression in human aortic endothelial cells (HAECs) treated with 0.01% DMSO, 1 or 10 nM Ki8751 for 6 hr (n = 2 independent experiments). In panels (H) and (J), gene expressions are shown relative to gapdh expression and data are presented as mean ± SD; statistical significance was determined by Brown–Forsythe and Welch ANOVA tests with Dunnett’s multiple-comparisons test; ns p>0.05, **p<0.01, ***p<0.001, and ****p<0.0001. DA, dorsal aorta; PCV, posterior cardinal vein. Scale bar, 10 µm (B, F) and 40 µm (A, C–E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Whole-mount in situ hybridization with aqp1a.1 and aqp8a.1 RNA probes at different developmental stages. Images are representative of 10 embryos for every stage and probe (n = 2 independent experiments). Scale bar, 250 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) UMAP plots of 5576 cells from 24 hpf Tg(kdrl:mCherry) (Gurung et al., 2022), 1475 cells from 34 hpf Tg(kdrl:EGFP)s843 zebrafish, and 1692 cells from 3 dpf Tg(kdrl:EGFP)s843 zebrafish (A) showing 16 distinct clusters (B). Classifications were based on previously known marker genes that are enriched in each cluster. (C–F) UMAP feature plots showing expression of kdrl (C), etsrp/etv2 (D), aqp1a.1 (E), and aqp8a.1 (F). (G, H) Violin plots showing expression of aqp1a.1 (G) and aqp8a.1 (H) in different cell populations.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) aqp1a.1 mRNA expression in the DA, as determined by RNAscope in situ hybridization. (B) Magnified region of the anterior trunk. aqp1a.1 expression is heterogeneous, with higher expression in endothelial tip cells of newly formed intersegmental vessels (ISVs) (arrowhead) and in endothelial cells (ECs) of the DA destined to be tip cells (asterisk). (C) aqp8a.1 mRNA expression in the posterior blood island, as determined by RNAscope in situ hybridization. Endothelial nuclei are labeled with EGFP (pseudocolored in blue) in Tg(fli1a:H2B-EGFP)nvc69 transgenic line. Representative confocal images of nine embryos (n = 2 independent experiments). Anterior to the left. DA, dorsal aorta; NC, notochord; PCV, posterior cardinal vein; PBI, posterior blood island. Scale bar, 100 µm (A) and 40 µm (B, C).
+
+### VEGF-VEGFR2 signaling induces the expression of aqp1a.1 and aqp8a.1 mRNA
 
 We next explored whether aqp1a.1 and aqp8a.1 expression is regulated by VEGFR2 signaling, which is highly activated in tip cells during sprouting angiogenesis (Gerhardt et al., 2003; Siekmann et al., 2013). To inhibit VEGFR2 activity, embryos were treated with 1 µM ki8751 from 20 hpf. Relative quantitative PCR (qPCR) experiments showed that aqp1a.1 and aqp8a.1 mRNA expression was suppressed by 52% (p<0.0001) and 17% (p=0.0028), respectively, after 6 hr of ki8751 treatment compared to DMSO-treated embryos (Figure 1H). These results demonstrate that VEGFR2 activity upregulates the expression of aqp1a.1 and aqp8a.1. To examine whether VEGFR2 activity also regulates Aquaporin expression in human ECs, we treated cultured human aortic endothelial cells (HAECs) with ki8751 for 6 hr and analyzed AQP1 expression by qPCR. AQP8 expression was not examined since it is not expressed in HAECs (data not shown). Inhibition of VEGFR2 activity with 1 nM and 10 nM ki8751 decreased AQP1 mRNA expression by 31% (p=0.0023, Figure 1I) and 40% (Pp0.1032, Figure 1I), respectively, demonstrating cross-species conservation of VEGFR2 activity in inducing Aqp1 mRNA expression.
 
-## Aqp1a.1 and Aqp8a.1 proteins are enriched at the leading edge of migrating tip cells
+### Aqp1a.1 and Aqp8a.1 proteins are enriched at the leading edge of migrating tip cells
 
 To gain a better understanding of where within the cell Aquaporin protein functions, we generated stable Tg(fli1ep:aqp1a.1-mEmerald)rk30 and Tg(fli1ep:aqp8a.1-mEmerald)rk31 zebrafish lines in which ECs express Aqp1a.1 or Aqp8a.1 tagged with mEmerald, respectively. At 25 hpf, we observed an accumulation of Aqp1a.1 (Figure 2A) and Aqp8a.1 (Figure 2B) in mCherryCAAX-positive membrane clusters in the cytoplasm and filopodia of tip cells. Notably, many of the Aqp1a.1- or Aqp8a.1-positive membrane clusters are located at the migrating front of the tip cell. Time-lapse imaging capturing the process of ISV formation between 24 hpf and 30 hpf further showed sustained enrichment of Aqp1a.1 and Aqp8a.1 in clusters at the front of the tip cell as well as in filopodia (Figure 2C and D, Figure 2—videos 1 and 2), suggesting that Aqp1a.1 and Aqp8a.1 may promote localized water flux at the migrating edge of tip cells.
 
-## Loss of Aqp1a.1 and Aqp8a.1 function leads to defective trunk blood vessel formation
+![Figure 2.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Representative maximum intensity projection confocal z-stacks of endothelial tip cells of 25 hpf Tg(fli1ep:aqp1a.1-mEmerald)rk30;(kdrl:Hsa.HRAS-mCherry)s916 (A) and Tg(fli1ep:aqp8a.1-mEmerald)rk31;(kdrl:Hsa.HRAS-mCherry)s916 (B) embryos. White serrated line outlines tip-stalk cell border. (C, D) Still images from time-lapse movies of migrating tip cells from Tg(fli1ep:aqp1a.1-mEmerald)rk30 (C) and Tg(fli1ep:aqp8a.1-mEmerald)rk31 (D) embryos. Movies were taken from 24 hpf to 30 hpf. Arrowheads, aquaporin protein localization at the leading edge of migrating tip cells. Arrows, aquaporin protein localization in filopodia. Time, hour:minutes. Scale bar, 5 µm (C, D) and 20 µm (A, B).
+
+### Loss of Aqp1a.1 and Aqp8a.1 function leads to defective trunk blood vessel formation
 
 We subsequently proceeded to generate zebrafish aqp1a.1 and aqp8a.1 mutants to investigate the function of Aquaporin-mediated water flow in blood vessel development. Using CRISPR/Cas9 genome editing, we targeted the first exons of aqp1a.1 and aqp8a.1 genes. The CRISPR-generating allele aqp1a.1rk28 carries a 14 bp deletion and an 8 bp insertion in the 5′ end of the gene, leading to a premature termination codon at amino acid 76 after 1 missense amino acid (Figure 3—figure supplement 1A and B). The aqp8a.1rk29 allele carries a 4 bp deletion in the 5′ end of the gene that leads to a frameshift after Thr15 and premature termination codon at amino acid 73 after 58 missense amino acids (Figure 3—figure supplement 2A and B). Using whole-mount in situ hybridization and qPCR analysis, we demonstrated that aqp1a.1 and aqp8a.1 mRNA expression is significantly decreased in aqp1a.1rk28/rk28 (Figure 3—figure supplement 1C and D) and aqp8a.1rk29/rk29 (Figure 3—figure supplement 2C and D) zebrafish embryos, respectively, suggesting a rapid degradation of mutant mRNAs and as a result, the loss of Aquaporin protein expression.
 
 Although aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos look morphologically normal compared to wildtype or aqp1a.1+/rk28;aqp8a.1+/rk29 embryos (Figure 3—figure supplement 5A–D), we observed defects in blood vessel formation and patterning at 1–3 dpf. Compared to 28 hpf control embryos whose ISVs have reached the dorsal roof of the neural tube and started to form the DLAV, ISVs of aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos are much less developed (Figure 3A and D) with significantly reduced length (Figure 3E, Figure 3—figure supplement 3H and K). Single deletion of aqp1a.1 (Figure 3B, Figure 3—figure supplement 3F and I) or aqp8a.1 (Figure 3C, Figure 3—figure supplement 3G and J) also led to defective ISV formation, although the defects are less severe compared to the loss of both aqp1a.1 and aqp8a.1 expression. Comparison of ISV length in aqp1a.1rk28/rk28, aqp8a.1rk29/rk29, and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos shows that the loss of aqp1a.1 leads to a greater decrease in ISV length than the loss of aqp8a.1 (Figure 3E, Figure 3—figure supplement 3I and J), and that the loss of both aqp1a.1 and aqp8a.1 results in the greatest reduction. These observations indicate an additive effect of Aqp1a.1 and Aqp8a.1 function in blood vessel development and implicate Aqp1a.1 as the more dominant Aquaporin protein in EC function, in line with the higher expression of aqp1a.1 mRNA in tip cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Representative maximum intensity projection confocal z-stacks of 28 hpf aqp1a.1+/rk28;aqp8a.1+/rk29 (A), aqp1a.1rk28/rk28 (B), aqp8a.1rk29/rk29 (C), and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (D) embryos. (E) Quantification of ISV length at different positions along the trunk in 28 hpf embryos (aqp1a.1+/rk28;aqp8a.1+/rk29: n = 21 embryos; aqp1a.1rk28/rk28: n = 20 embryos; aqp8a.1rk29/rk29: n = 20 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 19 embryos from two independent experiments); data is presented as mean ± SD. (F) Illustration of aISV and vISV connections in the trunk of wildtype embryo at 3 dpf. (G–J) Representative maximum intensity projection confocal z-stacks of 3 dpf wild type (G), aqp8a.1rk29/rk29 (H), aqp1a.1rk28/rk28 (I), and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (J) embryos. Asterisk marks incomplete ISVs, arrows point to EC nuclei on the contralateral side. (K) Pie chart showing the proportion of different classes of truncated ISV phenotypes (I–VI) found in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 mutant embryos at 3 dpf. DA, dorsal aorta; DLAV, dorsal longitudinal anastomotic vessel; ISV, intersegmental vessel; aISV, arterial ISV; vISV, venous ISV; NC, notochord; NT, neural tube; PCV, posterior cardinal vein. Scale bar, 50 µm (G–J) and 200 µm (A–D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Zebrafish aqp1a.1 gene structure, gRNA binding site (in blue), aqp1a.1rk28 allele, Aqp1a.1 wildtype (261 aa) and Aqp1a.1rk28 (truncated at 76 aa) protein structure. The rk28 mutation causes a 14-nt deletion and an 8-nt insertion (in red), which leads to a premature termination codon (underlined), and as a result, to the loss of four out of six transmembrane domains/helices (H4/TMD3-H8/TMD6) and two membrane-inserted non-membrane-spanning helices (H3 and H7). (B) Sequence read showing 14-nt deletion (shadowed area in wildtype allele) and 8-nt insertion (shadowed area in rk28 allele) in aqp1a.1rk28 allele. Premature termination codon is underlined. Amino acid sequence is shown above the nucleotide sequences. (C) qPCR analysis of aqp1a.1 mRNA expression in wildtype, aqp1a.1rk28/rk28 and aqp8a.1rk29/rk29 embryos. (D) Representative images of wildtype, heterozygote, and homozygote embryos after whole-mount in situ hybridization with aqp1a.1 RNA probe at 30 hpf. Scale bar, 250 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Zebrafish aqp8a.1 gene structure, gRNA binding site (in blue), aqp8a.1rk29 allele, Aqp8a.1 wildtype (261 aa), and Aqp8a.1rk29 (truncated at 73 aa) protein structure. The rk29 mutation causes a 4-nt deletion, which leads to a frameshift after Thr15 and premature termination codon at amino acid 73 after 58 missense amino acids, and as a result to the loss of six transmembrane domains/helices (H1/TMD1-H8/TMD6) and two membrane-inserted non-membrane-spanning helices (H3 and H7). (B) Sequence read showing 4-nt deletion (shadowed area in wildtype allele) in aqp8a.1rk29 allele (red dotted line). Amino acid sequence is shown above the nucleotide sequences. (C) qPCR analysis of aqp8a.1 mRNA expression in wildtype, aqp1a.1rk28/rk28 and aqp8a.1rk29/rk29 embryos. (D) Representative images of wildtype, heterozygote, and homozygote embryos after whole-mount in situ hybridization with aqp8a.1 RNA probe at 30 hpf. Scale bar, 250 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–D) Number of truncated ISVs per embryo in wildtype (A, n = 47), aqp1a.1rk28/rk28 (B, n = 30), aqp8a.1rk29/rk29 (C, n = 38), and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (D, n = 204) larvae at 3 dpf. (E) Anterior-to-posterior distribution of truncated ISVs in the trunk and tail region. (F–H) Maximum intensity projection confocal z-stacks of aquaporin heterozygote and homozygote embryos at 28 hpf. Images are representative of 10 embryos for each genotype. Scale bar, 200 µm. (I–K) Quantification of ISV length at each position along the length of the embryos in aquaporin heterozygote and homozygote embryos at 28 hpf; data is presented as mean ± SD. ISVs, intersegmental vessels.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Class I (76.3% of truncated ISVs). vISV crosses horizontal myoseptum and turns right (posteriorly toward the tail) along the ventral side of the spinal cord. Vessel comprises four ECs. (B) Class II (14.3% of truncated ISVs). Absence of ISV in segmental position (sometimes a single EC is present, which is neither connected to the DA nor DLAV, asterisk). (C) Class III (1.3% of truncated ISVs). vISV does not cross horizontal myoseptum and aISV is not connected to the DA. (D) Class IV (2.8% of truncated ISVs). aISV is not connected to the DA. (E) Class V (2.3% of truncated ISVs). aISV crosses horizontal myoseptum, but has no connection to DLAV. Vessel comprises three ECs. (F) Class VI (3.1% of incomplete ISVs). vISV extends over the notochord and spinal cord, but does not connect to DLAV. In panels (A, C, E), dashed line marks an approximate position of horizontal myoseptum. DA, dorsal aorta; DLAV, dorsal longitudinal anastomotic vessel; EC, endothelial cell; ISV, intersegmental vessel; aISV, arterial ISV; vISV, vein ISV; NC, notochord; PCV, posterior cardinal vein; SC, spinal cord. Scale bar, 20 µm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The same aqp1a.1+/rk28;aqp8a.1+/rk29 heterozygote and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 homozygote embryos were imaged at 28 hpf and 3 dpf. (A–D) Brightfield images of 28 hpf (A, C) and 3 dpf (B, D) embryos showing normal gross morphology of aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryo. (E–H) Maximum intensity projections of confocal z-stacks of the brain vasculature of 28 hpf (E, F) and 3 dpf (G, H) embryos. (I–M) Maximum intensity projections of confocal z-stacks of the trunk vasculature of 28 hpf (I, K) and 3 dpf (J, L, M) embryos. The trunk and tail were imaged separately and stitched using Fiji stitching plugin to make an entire image. A magnified image of the boxed areas in (K) and (L) is shown in (M). In panel (K), numbers in red correspond to those sprouts (ISV5, ISV6, ISV9, ISV11, ISV13, and ISV15) that will not form complete ISVs at 3 dpf (asterisks in M). Scale bar, 200 µm.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Dorsal view of 4 dpf wildtype cranial vasculature visualized by Tg(fli1a:H2B-EGFP)ncv69;(fli1:Lifeact-mCherry)ncv7 expression, showing distinct cranial vessels. (B–D) Dorsal view of cranial vasculature of 4 dpf aqp1a.1rk28/rk28 zebrafish, showing one representative embryo with DLV (B, arrow) and two other embryos lacking the DLV (C and D, asterisks). (E) Quantification of DLV lengths in embryos that formed the DLV at 4 dpf (n = 12 wildtype embryos; n = 19 aqp1a.1rk28/rk28 embryos, two independent experiments). Statistical significance was determined by unpaired t-test; **p<0.01. (F) Percentage of the embryos of indicated genotype with and without the DLV at 4 dpf (n = 12 wildtype embryos, n = 21 aqp1a.1rk28/rk28 embryos, two independent experiments). DLV, dorsal longitudinal vein; MsV, mesencephalic vein; PCeV, posterior cerebral vein. Scale bar, 50 µm.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Quantification of vessel diameter in wildtype and aquaporin mutant embryos at 2 dpf (wildtype: n = 178 aISVs/148 vISVs from 31 embryos; aqp1a.1rk28/rk28: n = 63 aISVs/42 vISVs from 21 embryos; aqp8a.1rk29/rk29: n = 39 aISVs/59 vISVs from 10 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 36 aISVs/25 vISVs from 13 embryos). Data collected from three (wildtype) and two (aquaporin mutants) independent experiments. (B) Quantification of vessel diameter in Tg(fli1:myr-mCherry)ncv1 (n = 49 aISVs/32 vISVs from eight embryos), Tg(fli1ep:aqp1a.1-mEmerald)rk30 (n = 53 aISVs/58 vISVs from 15 embryos) and Tg(fli1ep:aqp8a.1-mEmerald)rk31 (n = 56 aISVs/43 vISVs from 12 embryos) transgenic embryos at 2 dpf. Data collected from two independent experiments. Statistical significance was determined by ordinary one-way ANOVA with Sidak’s multiple-comparison test; data is presented as mean ± SD. ns, p>0.05, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. aISV, arterial intersegmental vessel; vISV, venous intersegmental vessel.
 
 We next examined the embryos at 3 dpf, a stage when arterial ISVs (aISVs) and venous (vISVs) are fully established and lumenized, connecting the DLAV to either the DA or PCV (Figure 3F and G), respectively. Such fully established ISVs are significantly reduced in embryos when aqp1a.1, aqp8a.1 or both aqp1a.1 and aqp8a.1 are deleted. Instead, these embryos display an increased number of aISVs and vISVs that fail to establish a connection to the DLAV, DA, or PCV (Figure 3H–J). The number of incompletely formed or truncated ISVs per embryo in aquaporin mutants was variable, between 1–6, 1–16, and 1–22 truncated ISVs in aqp8a.1rk29/rk29, aqp1a.1rk28/rk28 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos, respectively (Figure 3—figure supplement 3A–D). We also found that truncated ISVs appear with higher frequency in the zebrafish trunk (ISV number 5–15) rather than in the tail (ISV number 16–27, Figure 3—figure supplement 3E). Detailed analysis revealed that most of the truncated ISVs are vISVs that are connected to the PCV but not the DLAV (Class I in Figure 3K, Figure 3—figure supplement 4A), followed by the absence of aISV or vISV (Class II in Figure 3K, Figure 3—figure supplement 4B). A small fraction of the truncated vessels are aISVs that are not connected to the DA (Class IV in Figure 3K, Figure 3—figure supplement 4D) or DLAV (Class V in Figure 3K, Figure 3—figure supplement 4E), or vISVs that are not connected to the DLAV (Class VI in Figure 3K, Figure 3—figure supplement 4F). At some regions, there is a truncated aISV that is not connected to the DA and an incomplete vISV that is not connected to the DLAV (Class III in Figure 3K, Figure 3—figure supplement 4C).
 
@@ -56,33 +108,49 @@ As aqp1a.1 is expressed in the brain vasculature during development (Figure 1—
 
 In summary, our analyses suggest that in the absence of Aqp1a.1 and/or Aqp8a.1 function, there is an initial delay in ISV formation during primary sprouting angiogenesis. By 3 dpf, some ISVs are completely formed (Figure 3—figure supplement 5K and M), connecting the DA or PCV to the DLAV. However, the number of completely formed ISVs is significantly decreased, with the loss of Aqp1a.1 having a more severe impact compared to the loss of Aqp8a.1, and the combined loss of Aqp1a.1 or Aqp8a.1 having a greater deleterious effect.
 
-## Aquaporins promote endothelial tip cell protrusion and migration
+### Aquaporins promote endothelial tip cell protrusion and migration
 
 To gain a better understanding of why ISVs do not develop normally, we assessed EC number. By counting the number of nuclei in aISVs and vISVs, we found a significant reduction in EC number per vessel in 2 dpf and 3 dpf aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos compared to wildtype embryos (Figure 4—figure supplement 1A and B), suggesting that the defective formation of ISVs may result from insufficient EC number. Quantification of endothelial mitotic events between 21 hpf and 30 hpf shows that there is a similar number of tip and stalk cell division in aqp1a.1+/rk28;aqp8a.1+/rk29 embryos and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos (Figure 4—figure supplement 1C), indicating that decreased EC division is not the cause of reduced EC number in ISVs. We next explored whether EC migration from the DA is impaired by examining tip cell behavior from 21 hpf to 22 hpf, when sprouting angiogenesis begins. In aqp1a.1+/rk28;aqp8a.1+/rk29 embryos, tip cells emerge from the DA between 20 hpf and 24 hpf (Figure 4A) and migrate dorsally between the somite boundaries over the notochord and neural tube to form primary ISVs (Figure 4B, Figure 4—video 1). However, in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos, tip cell nuclei emerge between 22 hpf and 28 hpf (Figure 4A). Furthermore, in some aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos, tip cell membrane protrusions do not extend dorsally in the direction of migration but retract back to the DA so that a primary ISV does not form at this location (Figure 4C, Figure 4—video 2), potentially giving rise to the Class II phenotype at 3 dpf (Figure 3K, Figure 3—figure supplement 4B). These observations indicate that tip cell protrusion from the DA is significantly delayed in the absence of Aqp1a.1 and Aqp8a.1 function.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig4-v1.jpg)
+
+**Figure 4.:** (A) Timing of tip cell emergence from the dorsal aorta (DA) in aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 23 cells) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 27 cells). (B, C) Still images from time-lapse imaging of migrating tip cells from aqp1a.1+/rk28;aqp8a.1+/rk29 (B) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (C) embryos from 20 hpf to 30 hpf. White arrows, retracting tip cell. *, secondary sprouting from posterior cardinal vein (PCV). Scale bar, 10 µm. (D, E) Stills images from representative time-lapse movies of migrating tip cells in aqp1a.1+/rk28;aqp8a.1+/rk29 (D, n = 2) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (E, n = 5) embryos. Movies were taken from 25 hpf to 30 hpf (n = 2 independent experiments). Bracket, formation of stable protrusions. Scale bar, 20 µm. (F, G) Representative maximum intensity projection confocal z-stacks of tip cells from wildtype (F) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (G) embryos at 26 hpf. Scale bar, 10 µm. (H) Quantification of filopodia number in tip cells of wildtype (n = 36 cells from 10 embryos, two independent experiments), aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 19 cells from six embryos, two independent experiments), and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 28 cells from nine embryos, two independent experiments) embryos. (I) Quantification of filopodia length in tip cells of wildtype (n = 24 cells from seven embryos, two independent experiments), aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 16 cells from seven embryos, two independent experiments), and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 11 cells from six embryos, two independent experiments) embryos. (J) Growth rate of actin bundles in tip cell filopodia in 25 hpf wildtype (n = 12 cells from seven embryos, two independent experiments) and aqp1a.1rk28;aqp8a.1rk29 (n = 12 cells from six embryos, two independent experiments) embryos. (K) Quantification of tip cell leading edge displacement of aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 19 cells from five embryos, three independent experiments) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 47 cells from 13 embryos, six independent experiments) embryos at 25–30 hpf; data is presented as mean ± SD. (L) Quantification of tip cell nuclei displacement of aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 20 cells from six embryos, four independent experiments) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 20 cells from four embryos, two independent experiments) embryos at 21–30 hpf; data is presented as mean ± SD. (M) Quantification of tip cell migration velocity in aqp1a.1+/rk28;aqp8a.1+/rk29 (n = 19 cells from five embryos, three independent experiments) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 47 cells from 13 embryos, six independent experiments) embryos at 25–30 hpf. Statistical significance was determined by Brown–Forsythe and Welch ANOVA tests with Dunnett’s (H) or Sidak’s (I) multiple-comparisons test, and with unpaired t-test (J, M). ns, p>0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of EC number in arterial ISVs (aISVs) of wildtype and aquaporin mutant embryos at 2 dpf (wildtype: n = 273 aISVs from 31 embryos; aqp1a.1rk28/rk28: n = 189 aISVs from 21 embryos; aqp8a.1rk29/rk29: n = 84 aISVs from 10 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 65 aISVs from 13 embryos) and 3 dpf (wildtype: n = 98 aISVs from 10 embryos; aqp1a.1rk28/rk28: n = 86 aISVs from 20 embryos; aqp8a.1rk29/rk29: n = 175 aISVs from 22 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 102 aISVs from 22 embryos). Data collected from three (wildtype) and two (aquaporin mutants) independent experiments. (B) Quantification of EC number in venous ISVs (vISVs) of wildtype and aquaporin mutant embryos at 2 dpf (wildtype: n = 266 vISVs from 31 embryos; aqp1a.1rk28/rk28: n = 143 vISVs from 21 embryos; aqp8a.1rk29/rk29: n = 121 vISVs from 10 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 95 vISVs from 13 embryos) and 3 dpf (wildtype: n = 121 vISVs from 10 embryos; aqp1a.1rk28/rk28: n = 143 vISVs from 20 embryos; aqp8a.1rk29/rk29: n = 280 vISVs from 22 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29: n = 160 vISVs from 22 embryos). Data collected from three (wildtype) and two (aquaporin mutants) independent experiments. (C) Quantification of number of mitotic events per ISV in aqp1a.1+/rk28;aqp8a.1+/rk29 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos from 21 hpf to 30 hpf (aqp1a.1+/rk28;aqp8a.1+/rk29, n = 34 ISVs from five embryos, four independent experiments; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29, n = 43 ISVs from nine embryos, three independent experiments). Data is presented as mean ± SD. (D) Quantification of tip cell polarization in wildtype (n = 79 cells from 10 embryos), aqp1a.1rk28/rk28 (n = 35 cells from 16 embryos) and aqp8a.1rk29/rk29 (n = 90 cells from nine embryos) embryos at 24–26 hpf. The orientation of the Golgi apparatus relative to the nucleus was assessed to determine cell polarization: the position of the Golgi apparatus within –30° ~+30° angle of the direction of cell migration was considered as polarized. Data collected from two independent experiments. Statistical significance was determined by ordinary one-way ANOVA with Sidak’s multiple-comparisons test (A, B) and unpaired t-test (C). ns, p>0.05, **<0.01, and ****p<0.0001. ISV, intersegmental vessel.
 
 We have previously demonstrated that filopodia facilitate EC migration by serving as a template for lamellipodia formation (Phng et al., 2013). Lamellipodia frequently emanate laterally from stable filopodia at the leading edge of tip cells, leading to rapid expansion of the filopodium, increase in volume, and the formation of a stable protrusion in the direction of migration (Phng et al., 2013). This was similarly observed in aqp1a.1+/rk28;aqp8a.1+/rk29 embryos (Figure 4D, Figure 4—video 3) but not in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos (Figure 4E, Figure 4—video 4). Comparison of filopodia dynamics in wildtype (Figure 4F), aqp1a.1+/rk28;aqp8a.1+/rk29 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (Figure 4G) embryos revealed a significant reduction in filopodia number (wildtype, 18.73 ± 5.1/100 µm; aqp1a.1+/rk28;aqp8a.1+/rk29, 20.4 ± 6.5/100 µm; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29, 9.8 ± 5.5/100 µm; Figure 4H) and length (wildtype, 5.5 ± 2.8 µm; aqp1a.1+/rk28;aqp8a.1+/rk29, 6.0 ± 3.4 µm; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29, 4.5 ± 2.2 µm; Figure 4I) in ECs lacking both Aqp1a.1 and Aqp8a.1 function that can be accounted for by a decrease in actin polymerization (Figure 4J). By tracking Lifeact-mCherry signal in filopodia, we determined that the average elongation rate of actin as 0.055 ± 0.013 µm per second in wildtype embryos and that this is significantly decreased by 47% to 0.029 ± 0.011 µm per second (p<0.0001) in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos. Analysis of time-lapse images of tip cell behavior further showed slower tip cell membrane expansion at the leading edge (Figure 4K), decreased nuclei displacement (Figure 4L), and a significant reduction in tip cell migration velocity (Figure 4M) in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos. To determine whether the slower EC migration is caused by a loss of front-rear polarity, we examined Golgi position relative to the nucleus in wildtype, aqp1a.1rk28/rk28 and aqp8a.1rk29/rk29 embryos at 24–26 hpf (Figure 4—figure supplement 1D). This analysis shows that tip cell polarity is unperturbed in the absence of Aqp1a.1 or Aqp8a.1 function.
 
 In conclusion, our findings demonstrate that Aqp1a.1 and Aqp8a.1 regulate sprouting angiogenesis by promoting endothelial tip cell emergence from the DA, the formation and expansion of membrane protrusions and EC migration.
 
-## Tip cell volume regulation depends on Aquaporin-mediated water influx
+### Tip cell volume regulation depends on Aquaporin-mediated water influx
 
 Aquaporin channels permit bidirectional flow of water across the plasma membrane, with the direction of flow determined by the osmotic gradient between the extracellular environment and cell cytoplasm (Agre et al., 2002). We next sought to determine whether water flows in or out of tip cells during sprouting angiogenesis. We hypothesize that water flux across the cell membrane can lead to changes in tip cell volume, with water influx increasing the volume while outflow decreases. To quantify tip cell volume in the absence of Aquaporin function, we injected a plasmid encoding kdrl:mEmerald into one-cell stage aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos to label ECs in a mosaic manner. We also investigated the effects of increasing Aqp1a.1 expression on tip cell volume by injecting a plasmid encoding Aqp1a.1-P2A-EGFP into wildtype embryos. As control, wildtype embryos were injected with the plasmid encoding kdrl:mEmerald. mEmerald/EGFP-positive tip cells were imaged and their volume measured at 24–25 hpf from 3D reconstructions of labeled cells. Wildtype ECs are on average 964.6 ± 270.2 µm3 in size (Figure 5A and D). In the absence of both Aqp1a.1 and Aqp8a.1 function (Figure 5B), tip cell volume significantly decreased by 26% to 709.8 ± 293.5 µm3 (p=0.015, Figure 5D) compared to wildtype tip cells. The overexpression of Aqp1a.1 increased tip cell volume by 36% to 1313 ± 527.4 µm3 compared to wildtype tip cells (Figure 5C and D, p=0.0069) and by 85% compared to aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 tip cells (p<0.0001). These results therefore support water influx as the direction of water flow in tip cells during migration, and that this is mediated through Aqp1a.1 and Aqp8a.1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig5-v1.jpg)
 
-**Figure 5.:** (A–C) Representative maximum intensity projection confocal z-stacks of tip cell and its 3D-volume rendering of 25 hpf wildtype (A), aqp1a.1 (rk28/rk28;aqp8a.1rk29/rk29B) and wildtype embryos overexpressing Aqp1a.1 (C) labeled with cytosolic mEmerald or EGFP. Scale bar, 10 µm. (D) Quantification of tip cell volume in 25 hpf wildtype (n = 24 cells) and aqp1a.1 (n = 20 cells) and wildtype overexpressing Aqp1a.1 (n = 32 cells) embryos from three independent experiments. Statistical significance was determined by Brown–Forsythe and Welch ANOVA tests. *p<0.05, **p<0.01, and rk28/rk28;aqp8a.1rk29/rk29****p<0.0001.Figure 5—source data 1.
+**Figure 5.:** (A–C) Representative maximum intensity projection confocal z-stacks of tip cell and its 3D-volume rendering of 25 hpf wildtype (A), aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (B) and wildtype embryos overexpressing Aqp1a.1 (C) labeled with cytosolic mEmerald or EGFP. Scale bar, 10 µm. (D) Quantification of tip cell volume in 25 hpf wildtype (n = 24 cells) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (n = 20 cells) and wildtype overexpressing Aqp1a.1 (n = 32 cells) embryos from three independent experiments. Statistical significance was determined by Brown–Forsythe and Welch ANOVA tests. *p<0.05, **p<0.01, and ****p<0.0001.
 
 In summary, our results demonstrate a role of endothelial Aquaporins in promoting water influx to increase endothelial tip cell volume and cytoplasmic hydrostatic pressure, as well as accelerate actin polymerization in filopodia (Figure 4J).
 
-## The anion channel, SWELL1, promotes EC migration and sprouting angiogenesis
+### The anion channel, SWELL1, promotes EC migration and sprouting angiogenesis
 
 As the direction of water flow is dictated by an osmotic gradient, with water flowing from low to high osmolarity, we next examined the function of ion channels in establishing an osmotic gradient. SWELL1, or LRRC8A, is a component of volume-regulated anion channel (VRAC) that mediates ions, especially chloride anions, and osmolyte efflux (Qiu et al., 2014; Voss et al., 2014). Recently, SWELL1 has been demonstrated to polarize at the trailing edge of migrating breast cancer cells to direct water efflux and confer confined migration direction (Zhang et al., 2022). In the zebrafish, scRNAseq data shows that the gene encoding SWELL1, lrrc8aa, is expressed in a subset of ECs, with 12.32% of ECs coexpressing lrrc8aa and aqp1a.1 (Figure 6A) and 10.16% coexpressing lrrc8aa and aqp8a.1 (Figure 6B). To determine whether lrrc8aa is expressed in endothelial tip cells, we performed RNAscope and confocal microscopy. Although lrrc8aa is expressed in surrounding somites and notochord (Figure 6C), we could also detect its expression in endothelial tip cells (Figure 6D and E), suggesting that SWELL1 can establish an osmotic gradient in the vicinity of the developing ISVs and within tip cells to direct water flow. To address the function of SWELL1-generated osmotic gradient, we disrupted its activity by treating zebrafish with 5 µM DCPIB (Gunasekar et al., 2022) for 6 hr from 20 hpf and observed a similar impairment in ISV formation (Figure 6F and G) as in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos (Figure 3D and E). SWELL1 inhibition resulted in shorter ISVs formed at 26–27 hpf (Figure 6H) due to impaired leading edge displacement of tip cells (Figure 6I) and decreased tip cell velocity (Figure 6J). Further analysis of tip cell morphology showed a decrease in the number (Figure 6K) and length (Figure 6L) of filopodia formed and compromised elongation of tip cells (Figure 6M and N, Figure 6—video 1) in DCPIB-treated embryos. In summary, these results suggest that chloride efflux through SWELL1 establishes an osmotic gradient, either within ECs or between EC and the surrounding interstitial tissue, to direct water flow and thereby modulate EC migration and sprouting angiogenesis.
 
-## Additive effects of actin polymerization and water influx in driving EC migration and sprouting angiogenesis
+![Figure 6.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) UMAP plots showing co-expression of lrrc8aa and aqp1a.1 (A), and lrrc8aa and aqp8a.1 (B) in ECs from 24 hpf, 34 hpf, and 3 dpf embryos. (C–E) Detection of aqp1a.1, aqp8a.1, and lrrc8aa mRNA by RNAscope in situ hybridization in 22 hpf zebrafish embryo. Representative maximum intensity projection rendering of confocal z-stacks of tip and stalk cells (C). (D) and (E) show surface rendering of image (C) where only endothelial expression of lrrc8aa is shown after masking. Scale bar, 10 µm. (F, G) Representative maximum intensity projection confocal z-stacks of 26 hpf wildtype embryos treated with 0.05% EtOH (F) or 5 µM DCPIB (G) from 20 hpf to 26 hpf (control, n = 16 embryos; DCPIB, n = 18 embryos; two independent experiments). Scale bar, 50 µm. (H) Quantification of intersegmental vessel (ISV) length in 26 hpf wildtype embryos treated with 0.05% EtOH or 5 µM DCPIB (control, n = 133 vessels from 16 embryos; DCPIB, 157 vessels from 18 embryos; two independent experiments). (I) Quantification of tip cell leading edge displacement of wildtype embryos treated with 0.05% EtOH (n = 29 cells from seven embryos, two independent experiments) or 5 µM DCPIB (n = 29 cells from eight embryos, three independent experiments) at 25–30 hpf; data is presented as mean ± SD. (J) Quantification of tip cell migration velocity in wildtype treated with 0.05% EtOH (n = 29 cells from seven embryos, two independent experiments) or 5 µM DCPIB (n = 29 cells from eight embryos, three independent experiments) at 25–30 hpf. (K) Filopodia number in tip cells of wildtype embryos treated with 0.05% EtOH (n = 34 vessels from nine embryos, three independent experiments) or 5 µM DCPIB (n = 53 vessels from 16 embryos, three independent experiments). (L) Filopodia length in tip cells of wildtype embryos treated with 0.05% EtOH (n = 34 vessels from nine embryos, three independent experiments) or 5 µM DCPIB (n = 53 vessels from 12 embryos, three independent experiments). Statistical significance was determined with unpaired t-test; ****p<0.0001 (H, J, K, and L). (M, N) Still images from representative time-lapse movies of migrating tip cells in wildtype embryos treated with 0.05% EtOH (M, n = 7) or 5 µM DCPIB (N, n = 8). Movies were taken from 25 to 30 hpf (n = 3 independent experiments). Bracket, formation of stable protrusions. Scale bar, 20 µm.
+
+### Additive effects of actin polymerization and water influx in driving EC migration and sprouting angiogenesis
 
 We have previously observed that ECs are still able to migrate and form ISVs after the inhibition of actin polymerization (Phng et al., 2013). In these experiments, embryos were treated with a low concentration of Latrunculin B (Lat. B), an inhibitor of actin polymerization, that resulted in the suppression of filopodia formation. Under such conditions, ECs can generate small membrane protrusions and migrate in a directed manner at a reduced speed. How ECs are still able to migrate after the inhibition of actin polymerization was unclear. As our current study demonstrates a role of water inflow and hydrostatic pressure as another mechanism of cell migration, we hypothesize that ECs employ water influx to migrate when actin polymerization is compromised and that the depletion of both water influx and actin polymerization will result in a greater inhibition of EC migration.
 
 To test this hypothesis, we examined ISV development in embryos with decreased actin polymerization and water inflow by treating aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos with Lat. B. At 28 hpf, ISVs of wildtype embryos treated with DMSO have reached the dorsal roof of the neural tube (Figure 7A) and show an average length of 104.1 ± 13.47 µm (Figure 7E). The treatment of wildtype embryos with 0.08 µg/ml Lat. B from 20 hpf to 28 hpf (Figure 7B) resulted in a significant decrease in ISV length (61.53 ± 23.27 µm) compared to control embryos (p<0.0001, Figure 7E). A similar decrease in ISV length was also observed in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos treated with DMSO (63.75 ± 30.24 µm, Figure 7C and E). When aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos were treated with 0.08 µg/ml Lat. B from 20 hpf to 28 hpf, there was a greater decrease in the length of ISV formed at 28 hpf (43.10 ± 24.42 µm, Figure 7D and E) compared to the inhibition of actin polymerization (p=0.0028) or depletion of water influx (p<0.0001) alone (Figure 7—video 1). These results therefore demonstrate additive functions of actin polymerization and water influx in driving EC migration during sprouting angiogenesis (Figure 7F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/98612/elife-98612-fig7-v1.jpg)
+
+**Figure 7.:** (A–D) Representative maximum intensity projection confocal z-stacks of 28 hpf wildtype (A, B) and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 (C, D) embryos treated with 0.1% DMSO (A, C) or 0.8 µg/ml Lat. B (B, D) from 20 hpf to 28 hpf (for each condition: wildtype, n = 10 embryos; aqp1a.1rk28/rk28;aqp8a.1rk29/rk29, n = 12 embryos, two independent experiments). Scale bar, 20 µm. (E) Intersegmental vessel (ISV) length in 28 hpf wildtype and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos treated with 0.1% DMSO or 0.8 µg/ml Lat. B (wildtype: n = 60 vessels from 10 control embryos, n = 66 vessels from 10 Lat. B-treated embryos; aqp1a.1rk28;aqp8a.1rk29: n = 126 vessels from 12 control embryos, n = 112 vessels from 11 Lat. B-treated embryos, two independent experiments). Statistical significance was determined by Brown–Forsythe ANOVA test with Sidak’s multiple-comparisons test; ns, p>0.05, **p<0.01, and ****p<0.0001. (F) Model of endothelial tip cell migration. Tip cells generate membrane protrusions by actin polymerization and increased hydrostatic pressure via Aquaporin-mediated water inflow. In the absence of actin polymerization and presence of Aquaporins, hydrostatic pressure deforms membranes to generate membrane protrusions. When Aquaporin function is lost, membrane protrusions is generated by actin polymerization. Fewer membrane protrusions are formed when only one mechanism is utilized, resulting in slower EC migration.
 
 ## Discussion
 
@@ -104,104 +172,324 @@ In summary, our study highlights the role of water influx and hydrostatic pressu
 
 ## Materials and methods
 
-## Zebrafish maintenance and stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>RRID:ZIRC_ZL1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(kdrl:EGFP)s843</td>
+      <td>Jin et al., 2005</td>
+      <td>ZFIN:ZDB-ALT-050916-14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:zgc:114046-EGFP)ncv69</td>
+      <td>Ando et al., 2019</td>
+      <td>ZFIN:ZDB-ALT-200226-15</td>
+      <td>Referred to as Tg(fli1a:H2B-EGFP)ncv69</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(fli1:Lifeact-mCherry)ncv7</td>
+      <td>Wakayama et al., 2015</td>
+      <td>ZFIN:ZDB-ALT-150603–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:myr-mCherry)ncv1</td>
+      <td>Fukuhara et al., 2014</td>
+      <td>ZFIN:ZDB-ALT-131216–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:EGFP-Hsa.PLCD1)rk26</td>
+      <td>Kondrychyn et al., 2020</td>
+      <td>ZFIN:ZDB-ALT-201118-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(kdrl:Hsa.HRAS-mCherry)s916</td>
+      <td>Hogan et al., 2009</td>
+      <td>ZFIN:ZDB-ALT-090506-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>"Tg(kdrl:nls-EGFP)ubs1;(fli1:Hsa.B4GALT1-mCherry)bns9"</td>
+      <td>Kwon et al., 2016</td>
+      <td>ZFIN:ZDB-ALT-081105–1; ZFIN:ZDB-ALT-160804–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:GAL4FF)ubs3</td>
+      <td>Herwig et al., 2011</td>
+      <td>ZFIN:ZDB-ALT-120113-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1ep:aqp1a.1-mEmerald)rk30</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods ‘Plasmid construction and transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1ep:aqp8a.1-mEmerald)rk31</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods ‘Plasmid construction and transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HAEC-Human Aortic Endothelial Cells</td>
+      <td>Lonza</td>
+      <td>Lonza:CC-2535</td>
+      <td>lot-20TL231227</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin (sheep polyclonal) Fab fragments, conjugated with alkaline phosphatase</td>
+      <td>Roche</td>
+      <td>Roche:11093274910; RRID:AB_514497</td>
+      <td>Whole-mount in situ hybridization (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-N1 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_53976</td>
+      <td>A source of mEmerald protein for In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ds-MCS (plasmid)</td>
+      <td>Emelyanov et al., 2006</td>
+      <td>N/A</td>
+      <td>The minimal cis-required sequences of Dissociation (Ds) element from the maize (used in In-Fusion cloning)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NLS-AcTP-SP6 (plasmid)</td>
+      <td>Emelyanov et al., 2006</td>
+      <td>N/A</td>
+      <td>Activator (Ac) transposase cDNA from the maize</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ds-fli1ep:NLS-EGFP-P2A-mKate2-GM130 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ds-6xUAS:aqp1a.1-P2A-EGFP-T2A-mKate2-CAAX (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ds-kdrl:mEmerald (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Dr-aqp1a.1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>ADC:893521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Dr-aqp8a.1-C3</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>ADC:802961-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Dr-lrrc8aa-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>ADC:1596611-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Essential 22.10</td>
+      <td>Scientific Volume Imaging B.V.</td>
+      <td>RRID:SCR_014237</td>
+      <td>https://svi.nl/Huygens-Essential</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger v2.1</td>
+      <td>10X Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td>https://www.10xgenomics.com/support/software/cell-ranger</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat package v4.3.0</td>
+      <td>Hao et al., 2021</td>
+      <td>RRID:SCR_016341</td>
+      <td>https://satijalab.org/seurat</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ShinyCell package v2.1</td>
+      <td>Ouyang et al., 2021</td>
+      <td>RRID:SCR_022756</td>
+      <td>https://github.com/SGDDNB/ShinyCell</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v10.2.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio Design and Analysis software v1.5.3</td>
+      <td>Applied Biosystems</td>
+      <td>N/A</td>
+      <td>https://www.thermofisher.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish maintenance and stocks
 
 Zebrafish (Danio rerio) were raised and staged according to established protocols (Kimmel et al., 1995). Transgenic lines used in this work are Tg(kdrl:EGFP)s843 (Jin et al., 2005), Tg(fli1:zgc:114046-EGFP)ncv69 (referred to as Tg(fli1a:H2B-EGFP)ncv69, Ando et al., 2019), Tg(fli1:Lifeact-mCherry)ncv7 (Wakayama et al., 2015), Tg(fli1:myr-mCherry)ncv1 (Fukuhara et al., 2014), Tg(fli1:EGFP-Hsa.PLCD1)rk26 (Kondrychyn et al., 2020), Tg(kdrl:Hsa.HRAS-mCherry)s916 (Hogan et al., 2009), Tg(kdrl:nls-EGFP)ubs1;(fli1:Hsa.B4GALT1-mCherry)bns9 (Kwon et al., 2016), and Tg(fli1:GAL4FF)ubs3 (Herwig et al., 2011). Zebrafish were maintained on a 14 hr light/10 hr dark cycle, and fertilized eggs were collected and raised in E3 medium at 28°C. To inhibit pigmentation in embryos older than 24 hpf, 0.003% N-Phenylthiourea (Sigma-Aldrich, Cat# P7629) in E3 medium was used. All animal experiments were approved by the Institutional Animal Care and Use Committee at RIKEN Kobe Branch (IACUC).
 
-## Plasmid construction and transgenesis
+### Plasmid construction and transgenesis
 
 Plasmid mEmerald-N1 was a gift from Michael Davidson (Addgene plasmid #53976), plasmids pDs-MCS containing the minimal cis-required sequences of Dissociation (Ds) transposable element from the maize and pNLS-AcTP-SP6 containing an ORF of Activator (Ac) transposase from the maize were a gift from Sergei Parinov. Other plasmids used in this study were generated by using In-Fusion HD Cloning kit (Takara Bio Inc, Cat# 639650). Detailed information regarding plasmids used in this study can be found in Supplementary file 1. Tg(fli1ep:aqp1a.1-mEmerald)rk30 and Tg(fli1ep:aqp8a.1-mEmerald)rk31 transgenic zebrafish were generated by injecting Tol2-based fli1ep:aqp1a.1-mEmerald or fli1ep:aqp8a.1-mEmerald plasmids (10 ng/μl), respectively, along with Tol2 transposase mRNA (100 ng/μl) into one-cell stage AB embryos. Tol2 transposase mRNA was transcribed from NotI-linearized pCS-TP plasmid (a gift from Koichi Kawakami, National Institute of Genetics, Japan) using the mMESSAGE mMACHINE SP6 kit (Invitrogen, Cat# AM1340). Injected embryos were raised to adult and screened for founders.
 
-## Cloning of aqp1a.1 and aqp8a.1 genes
+### Cloning of aqp1a.1 and aqp8a.1 genes
 
 Total RNA was isolated from 1-day-old zebrafish embryos with TRI Reagent using Direct-zol RNA MicroPrep kit (Zymo Research, Cat# R2061-A) according to the manufacturer’s protocol. The first-strand cDNA was synthesized from 1 µg of a total RNA by oligo(dT) priming using the SuperScript III First-Strand synthesis system (Invitrogen, Cat# 18080-051) according to the manufacturer’s protocol. Amplification of cDNAs was performed using a high-fidelity KOD-Plus-Neo DNA polymerase (Toyobo, Japan, Cat# KOD-401) and resulting PCR products were cloned using NEB PCR Cloning kit (New England BioLabs, Cat# E1202S). Positive clones and plasmids were verified by DNA sequencing.
 
-## Mosaic expression of DNA constructs
+### Mosaic expression of DNA constructs
 
 To avoid unwanted Tol2 re-transposition from the donor site in transgenic zebrafish lines generated using Tol2 transposon (Kondrychyn et al., 2009), Ac/Ds transposon system from the maize (Emelyanov et al., 2006) was used for mosaic expression of DNA constructs. Ds-based plasmids (10 pg) were co-injected with 100 pg of Ac transposase mRNA, transcribed from BamHI-linearized pNLS-AcTP-SP6 plasmid using the mMESSAGE mMACHINE SP6 kit (Invitrogen), into one-cell stage zebrafish wildtype or aquaporin mutant embryos. Embryos were analyzed at 25–26 hpf after injections.
 
-## In vivo cell volume analysis
+### In vivo cell volume analysis
 
 Single-cell labeling of ECs in ISVs was achieved by mosaic expression of pDs-kdrl:mEmerald plasmid in wildtype or aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 mutant Tg(fli1:Lifeact-mCherry)ncv7 transgenic embryos. To visualize single ECs with Aqp1a.1 overexpression, we injected pDs-6xUAS:aqp1a.1-P2A-EGFP-T2A-mKate2-CAAX plasmid into Tg(fli1:GAL4FF)ubs3;Tg(fli1:myr-mCherry)ncv1 embryos. Embryos were imaged at 25–26 hpf with an Olympus UPLSAPO ×60/NA 1.2 water immersion objective with optical Z planes interval of 0.26 μm. Cell volume was measured with Huygens Essential 22.10 software (Scientific Volume Imaging B.V.) using object analyzer tool with manual adjustment of threshold.
 
-## Generation of aqp1a.1 and aqp8a.1 zebrafish mutants
+### Generation of aqp1a.1 and aqp8a.1 zebrafish mutants
 
 Aquaporins mutants were generated by CRISPR/Cas9-mediated mutagenesis. Guide RNAs (gRNAs) targeting the first exons of aqp1a.1 and aqp8a.1 (see Figure 3—figure supplements 1 and 2) were generated by using cloning-independent protocol (Gagnon et al., 2014). Briefly, to generate templates for gRNA transcription, a 60-base oligodeoxynucleotides containing the SP6 promoter sequence, the gene-specific sequence (aqp1a.1: 5′-GACAGCTGGCCAGCAGACCC-3′; aqp8a.1: 5′-GATGTCTCCCCCATCGCCCG-3′) and 23-base overlap region was annealed to an 80-base constant oligodeoxynucleotide encoding the reverse-complement of the tracrRNA tail (see Supplementary file 2 for sequence information). The ssDNA overhangs were filled-in with T4 DNA polymerase (New England BioLabs, Cat# M0203S) to generate dsDNA. The gRNAs were in vitro transcribed using MEGAScript SP6 kit (Invitrogen, Cat# AM1330), DNase treated and purified with RNA Clean and Concentrator kit (Zymo Research, Cat# R1015). The gRNAs were quality-checked by running 1 µg of the product on a 2% TBE-agarose gel. Cas9/gRNA RNP complex was assembled just prior to injection and after 5 min incubation at room temperature 200 pg of Cas9 protein (Invitrogen, Cat# A36497) and 200 pg of gRNAs (100 pg of each, aqp1a.1 gRNA and aqp8a.1 gRNA) were co-injected into one-cell stage Tg(fli1:myr-mCherry)ncv1 embryos. Such dose produced over 70% embryos survival post-injection showed CRISPR/Cas9-induced somatic aqp1a.1 and aqp8a.1 gene mutations. F0 founders were identified by outcrossing CRISPR/Cas9-injected fish with wildtype fish and screening the offspring for mutations at 2 dpf using Sanger sequencing. We found one F0 fish with germline transmitted mutations in both aqp1a.1 and aqp8a.1 genes and outcrossed it with Tg(fli1:myr-mCherry)ncv1 and Tg(fli1a:H2B-EGFP)ncv69 transgenic fish to establish F1 generation of heterozygotes. A 55 F1 fish were genotyped to identify 4 aqp1a.1+/rk28, 11 aqp8a.1+/rk29, and 12 aqp1a.1+/rk28;aqp8a.1+/rk29 heterozygote fish. Subsequently, F1 heterozygote fish were in-crossed to establish a single and double homozygote fish.
 
-## DNA isolation and genotyping
+### DNA isolation and genotyping
 
 Genomic DNA was isolated from either embryos or fin clips using HotSHOT method (Meeker et al., 2007). To identify genomic lesions, the following primers were used: aqp1a1-fwd (5′-CGCCTCCAGATTCATTAGCAGGA-3′) and aqp1a1-rev (5′-GTAAGTGAACTGCTGCCAGTGA-3′) to amplify a 550 bp fragment, and aqp8a1-fwd (5-GGATCAATTGAGTTGCATAACAGAC-3′) and aqp8a1-rev (5′-CTGTAATGTAGACTTGTAAAGTGGA-3′) to amplify a 638 bp fragment. Mutations were assessed by direct sequencing of purified PCR products.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA from whole embryos was isolated with TRI reagent using Direct-zol RNA MicroPrep kit (Zymo Research) according to the manufacturer’s protocol, including on-column DNA digestion. RNA was quantified using a NanoDrop 1000 spectrophotometer (Thermo Fisher Scientific, USA). cDNA was synthesized from 300 ng of purified RNA using LunaScript RT SuperMix kit (New England BioLabs, Cat# E3030L) according to the manufacturer’s protocol. Amplification of target cDNA was performed in technical triplicate of three biological replicates using the SYBR green methods. Each qPCR reaction mixture contained 5 µl 2× Luna Universal qPCR master mix (New England BioLabs, Cat# M3003L), 1 µl cDNA (twofold dilution), 0.2 µl antarctic thermolabile UDG (New England BioLabs, Cat# M0372L), and 250 nM each primer to a final volume of 10 µl. Reactions were run in 384-well plates (Applied Biosystems, USA) using the QuantStudio 5 Real-Time PCR system (Applied Biosystems) with the following thermal cycling conditions: initial UDG treatment at 25°C for 2 min, UDG inactivation at 50°C for 5 min, and denaturation at 95°C for 1 min, followed by 45 cycles of 15 s at 95°C, 30 s at 60°C with a plate read at the end of the extension step. Control reactions included a no-template control (NTC) and a no-reverse transcriptase control (NRT). Dissociation analysis of the PCR products was performed by running a gradient from 60 to 95°C to confirm the presence of a single PCR product. Amplification data was analyzed using QuantStudio Design and Analysis software v1.5.3 (Applied Biosystems), and relative fold change was calculated using Pfaffl method (Pfaffl, 2001) and normalized to gapdh expression (as an internal control). Primers are listed in Supplementary file 2. Two embryos were used in each biological replicate to generate an average value that was used to calculate the final mean ± SD from two or three independent experiments.
 
-## Whole-mount RNA in situ hybridization
+### Whole-mount RNA in situ hybridization
 
-## RNAscope in situ hybridization
+#### RNAscope in situ hybridization
 
 RNAscope in situ hybridization was conducted by using RNAscope Multiplex Fluorescent Reagent kit v2 (Advanced Cell Diagnostics, Cat# 323100). We adapted manufacture’s protocol designed for samples mounted on slides and protocol developed for whole-mount embryo samples (Gross-Thebing et al., 2014). For each experimental point, five embryos were processed in one 1.5 ml Eppendorf tube. Briefly, 20 hpf and 22 hpf old embryos were manually dechorionated and fixed in freshly prepared 4% methanol-free PFA (Thermo Fisher Scientific, Cat# 28908) in PBS for 1 hr at room temperature. After fixation, embryos were washed three times in PBS containing 0.01% Tween-20 (PBST), dehydrated stepwise in 5 min washes in a series of increasing methanol concentrations (25%, 50%, 75%, 100%) in PBS, and then stored in 100% methanol at –20°C before use them for hybridization. The methanol-stored embryos were incubated with 5% H2O2 in methanol for 20 min at room temperature and then rehydrated stepwise in 5 min washes in series of decreasing methanol concentrations (75%, 50%, 25%) in PBS, followed by three times 5 min washes in PBST. Embryos were permeabilized in 2 drops of RNAscope Protease III from the kit for 15 min, rinsed three times with PBST, and hybridized with RNAscope target probes overnight at 50°C in water bath. After hybridization probes were recovered and embryos were washed three times with 0.2× SSCT (0.01% Tween-20 in SSC) at room temperature, re-fixed with 4% PFA for 10 min, and washed three times with 0.2× SSCT. For RNA detection, the embryos were sequentially hybridized with three different amplifier solutions for 30 min (Amp1 and Amp2) and 15 min (Amp3) in a water bath at 40°C. After each hybridization step, the embryos were washed three times with 0.2× SSCT for 10 min at room temperature. To develop signal of each probe, the embryos were sequentially incubated in a water bath at 40°C with (i) the horseradish peroxidase (HRP) for 15 min, (ii) TSA fluorophore for 30 min, and (iii) the HRP blocker for 15 min. After each incubation step, the embryos were washed three times with 0.2× SSCT for 10 min at room temperature. HRP step is linked to a probe channel, we first developed C1 probe, Dr-aqp1a.1 (Advanced Cell Diagnostics) using HRP-C1 and TSA Vivid Fluorophore 520 (dilution 1:1500, Tocris, Cat# 7523), then C2 probe, Dr-lrrc8aa (Advance Cell Diagnostics) using HRP-C2 and TSA Vivid Fluorophore 570 (dilution 1:1500, Tocris, Cat# 7526), and finally C3 probe, Dr-aqp8a.1 (Advanced Cell Diagnostics) using HRP-C3 and TSA Vivid Fluorophore 650 (dilution 1:1500, Tocris, Cat# 7527). Nuclei were counterstained with DAPI ready-to-use solution overnight at 4°C in the dark. Prior to imaging embryos were rinsed in PBST and kept in 70% glycerol in PBS at 4°C in the dark. Images were acquired using Olympus FV3000 confocal microscope and an Olympus UPlanXApo ×60/NA 1.42 oil immersion objective.
 
-## Chromogenic in situ hybridization
+#### Chromogenic in situ hybridization
 
 Chromogenic in situ hybridization was conducted according to standard protocol (Thisse and Thisse, 2008) with minor modifications. For each experimental point, 10 embryos were processed in one 1.5 ml Eppendorf tube. Briefly, 30 hpf, 48 hpf, 72 hpf, and 96 hpf old embryos were manually dechorionated and fixed in freshly prepared 4% methanol-free PFA in PBS (pH 7.4) at 4°C overnight. After fixation, embryos were washed three times in PBS containing 0.1% Tween-20 (PBST), dehydrated stepwise in 5 min washes in a series of increasing methanol concentrations (25%, 50%, 75%, 100%) in PBS and then stored in 100% methanol at –20°C before use them for hybridization. The methanol-stored embryos were rehydrated stepwise in 5 min washes in series of decreasing methanol concentrations (75%, 50%, 25%) in PBS followed by three times 5 min washes in PBST, and permeabilized 20 min with 10 µg/ml proteinase K (Thermo Fisher Scientific, Cat# EO0491). Hybridization was carried out in buffer (50% deionized formamide, 5× SSC, 50 μg/ml heparin, 500 μg/ml tRNA [Invitrogen, Cat# 15401029], 10 mM citric acid and 0.1% Tween-20) containing 5% dextran sulfate (500 kDa, Wako Chemicals, Japan, Cat# 193-09981) at 69°C overnight. After stringency wash, the specimens were blocked with 2% blocking reagent (Roche, Cat# 11096176001) in maleic acid buffer (100 mM maleic acid, 150 mM NaCl, 50 mM MgCl2 and 0.1% Tween-20, pH 7.5) and incubated overnight with anti-digoxigenin antibody, conjugated with alkaline phosphatase (dilution 1:5000, Roche, Cat# 11093274910) at 4°C. For detection of alkaline phosphatase, specimens were incubated in staining buffer (50 mM Tris-HCl, 50 mM NaCl, 25 mM MgCl2, 2% polyvinyl alcohol, and 0.1% Tween-20, pH 9.5) containing 375 µg/ml nitro-blue tetrazolium chloride (Roche, Cat# 11383213001) and 175 µg/ml 5-bromo-4-chloro-3′-indolyl-phosphate (Roche, Cat# 11383221001). Embryos were cleared in 70% glycerol overnight and imaged using Leica M205FA microscope.
 
-## RNA probe synthesis
+#### RNA probe synthesis
 
 The cDNA-containing vectors were linearized with appropriate restriction enzymes (detailed maps of vectors will be provided upon request) and used as a template for RNA probe synthesis. Sense and antisense RNA probes were synthesized using MEGAscript SP6 (Invitrogen) or T7 (Invitrogen, Cat# AM1333) kits and digoxigenin (DIG)-labeled rNTPs (Roche, Cat# 11277073910) according to the manufacturer’s protocol and purified using RNA Clean and Concentrator kit (Zymo Research). The following sense and antisense DIG-labeled riboprobes were generated: (i) aqp1a.1, 1.1 kb long probe comprised 121 nt of 5′UTR, 783 nt of the open-reading frame (ORF) and 207 nt of 3′UTR; and (ii) aqp8a.1, 0.8 kb long probe comprised 17 nt of 5′UTR, 783 nt of ORF and 30 nt of 3′UTR. Sense probes showed no specific or unspecific staining (data not shown).
 
-## Image processing
+#### Image processing
 
 Chromogenic and RNAscope in situ hybridization images were processed using Fiji software with brightness and contrast adjustments. Z-stacks of fluorescent images are presented as maximum intensity projections.
 
-## Analysis of mRNA expression in tip and stalk cells
+### Analysis of mRNA expression in tip and stalk cells
 
 RNAscope processed embryos were mounted on slide and imaged using Olympus FV3000 confocal microscope and Olympus UPlanXApo ×60/NA 1.42 oil immersion objective. Maximum intensity projection of z-stacks was used to determine the level of cellular fluorescence in Fiji. Tip and stalk cells were selected using freehand selection tool; ‘mean grey value’, ‘area’, and ‘integrated density’ in each ROI were measured first for channel 1 (aqp1a.1). A region next to cell without fluorescence was selected as background and measured. The step was repeated for channel 2 (aqp8a.1) on the same ROIs. Two parameters were calculated for each channel, (i) the corrected total cell fluorescence, CTCF = Integrated Density – (Area of selected cell × Mean fluorescence of background) and (ii) ratio, R = CTCF of tip cell/CTCF of stalk cell. We consider that if R < 0.9, expression is lower in tip cell, if R = 0.9–1.1, expression is equal in tip and stalk cells, if R > 1.1, expression is higher in tip cell.
 
-## Imaging
+### Imaging
 
 For live confocal imaging, embryos were mounted in 0.8% low-melt agarose (Bio-Rad, Cat# 1613111) in E3 medium containing 0.16 mg/ml Tricaine (Sigma-Aldrich, Cat# E10521-10G) and 0.003% phenylthiourea (Sigma-Aldrich) in glass-bottom 35 mm dishes (MatTek, USA). Confocal z-stacks were acquired using an inverted Olympus IX83/Yokogawa CSU-W1 spinning disc confocal microscope equipped with a Zyla 4.2 CMOS camera (Andor) and Olympus UPLSAPO ×40/NA 1.25 or ×30/NA 1.05 silicone oil immersion objectives. Bright-field images were acquired on Leica M205FA microscope. Images were processed using Fiji software.
 
-## Analysis of cell migration
+### Analysis of cell migration
 
 aqp1a.1+/rk28;aqp8a.1+/rk29 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos on Tg(fli1a:H2B-EGFP)ncv69;(fli1:Lifeact-mCherry)ncv7 double transgenic background were imaged from 21 hpf to 30 hpf with time interval 6 min using Olympus UPLSAPO ×30/NA 1.05 silicon oil immersion objective. Both heterozygote and mutant embryos were mounted on the same dish (1 het plus 2 mut, or 2 het plus 2 mut) to image embryos under the same conditions. Acquired time-lapse images were registered using HyperStackReg plugin in Fiji. Tip cell nuclei and leading edge were tracked using Manual Tracking plugin and velocity was calculated.
 
-## Analysis of grow rate of actin bundles in filopodia
+### Analysis of grow rate of actin bundles in filopodia
 
 Wildtype and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos on Tg(fli1:EGFP-Hsa.PLCD1)rk26;(fli1:Lifeact-mCherry)ncv7 double transgenic background were imaged from 25 hpf for 10 min with time interval of 30 s using Olympus UPLSAPO ×60/NA 1.2 water immersion objective. Actin bundles growth was tracked using Manual Tracking plugin in Fiji and velocity was calculated.
 
-## Analysis of filopodia number and length
+### Analysis of filopodia number and length
 
 Wildtype, aqp1a.1+/rk28;aqp8a.1+/rk29 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos on Tg(fli1:EGFP-Hsa.PLCD1)rk26;(fli1:Lifeact-mCherry)ncv7 double transgenic background were imaged from 24 hpf for 15 min with a time interval of 50 s using Olympus UPLSAPO ×60/NA 1.2 water immersion objective. The number of filopodia per 100 µm membrane length was calculated at each time point by counting the number of filopodia number per vessel and measuring membrane length. The average filopodia number per 100 µm of each vessel was calculated by averaging the number of filopodia per 100 µm at each time point.
 
-## Assessment of tip cell polarization
+### Assessment of tip cell polarization
 
 Tg(kdrl:nls-EGFP)ubs1;(fli1:Hsa.B4GALT1-mCherry)bns9Tg wildtype and aqp8a.1rk29/rk29 embryos were imaged at 24–26 hpf using an Olympus UPLSAPO ×40/NA 1.25 silicon oil immersion objective. To analyze endothelial tip cell polarity in aqp1a.1rk28/rk29 embryos, Golgi apparatus and nuclei were labeled by mosaic expression of pDs-fli1ep:nls-EGFP-P2A-mKate2-GM130 plasmid in Tg(fli1-EGFP-Hsa.PLCD1)rk26 transgenic line. Images were analyzed using Fiji software. To assess polarity, the nucleus was fit into an ellipsoid shape and the angle between the primary axis of the ellipse and the center of the Golgi was measured (see Figure 4—figure supplement 1D). Polarization of ECs is defined as follows: (1) front (polarized), if the Golgi is located within –300 ~+300; (2) none, if the Golgi is located within +300 ~ +1500 or –300 ~ –1500; or (3) rear, if the Golgi is located on the downstream side of the nucleus and angle is –1500 ~+1500. Tip cells in ISVs no. 5–15 were analyzed.
 
-## Quantification of EC number and ISV diameter
+### Quantification of EC number and ISV diameter
 
 Measurements were performed in wildtype, aqp1a.1rk28/rk28, aqp8a.1rk29/rk29 and aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 zebrafish raised in Tg(fli1:Lifeact-mCherry)ncv7;(fli1a:H2B-EGFP)ncv69 transgenic line or in Tg(fli1ep:aqp1a.1-mEmerald)rk30;(fli1:myr-mCherry)ncv1 and Tg(fli1ep:aqp8a.1-mEmerald)rk31;(fli1:myr-mCherry)ncv1 zebrafish. Confocal z-stacks images of embryos were taken at 50–54 hpf and 3 dpf using Olympus UPLSAPO ×40/NA 1.25 silicone oil immersion objective. ISVs no. 5–15 were used for quantification. For ISV diameter, five measurements were made along the length of each ISV using Fiji software and the average was plotted.
 
-## Chemical treatment
+### Chemical treatment
 
 Latrunculin B (Merck Millipore, Cat# 428020-1MG) was dissolved in DMSO to 1 mg/ml and stored at –20°C. Ki8751 (Selleck Chemicals, Cat# S1363) was prepared as 5 mM solution in DMSO and stored at –80°C. DCPIB (Tocris, Cat# 1540) was prepared as 10 mM solution in EtOH and stored at –20°C. All compounds were diluted to the desired concentration in E3 medium (see in figure legends). Embryos were treated from 20 hpf for 6 (Ki8751 and DCPIB) or 8 hr (Latrunculin B). For imaging experiments, the same concentrations of chemicals were added to the agarose and E3 medium.
 
-## Cell culture
+### Cell culture
 
 Adult HAECs (Lonza, Cat# CC-2535, lot-20TL231227) were cultured in EGM medium (Lonza, Cat# CC-3124) and used at passage 3. Cells were seeded in EBM medium (Lonzo, Cat# CC-3162) supplemented with 2% FBS (Gibco, Cat# 26240079) at 4 × 105 cells/well on 24-well plate (Corning, Cat# 3524) coated with 5 μg/ml fibronectin (Sigma-Aldrich, Cat# F0895). Cells were treated with either 0.01% DMSO or different concentrations of Ki8751 inhibitor for 6 hr. Cells were lysed with TRI reagent and RNA was isolated using Direct-zol RNA MicroPrep kit (Zymo Research).
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 ECs were isolated from Tg(kdrl:EGFP)s843 transgenic embryos. Cell sorting was carried out with FACSAriaII Cell Sorter (BD Bioscience, USA). Single-cell suspension was loaded into the 10X Chromium system and cDNA libraries were constructed using Chromium Next GEM Single Cell 3′ GEM, Library and Gel Bead Kit v2 (10X Genomics, USA) according to manufacturer’s protocol. Library was sequenced on the Illumina HiSeq 1500 Sequencer (Illumina, USA). Cell Ranger v2.1 was used to de-multiplex raw base call (BCL) files generated by Illumina sequencers into FASTQ files.
 
-## Single-cell RNA sequencing data analysis
+### Single-cell RNA sequencing data analysis
 
 The raw sequence data from above mentioned internal sequencing and also a public zebrafish embryo data at 24 hpf stage (Gurung et al., 2022) were processed. The public dataset was obtained from NCBI GEO database (accession number GSE202912). The raw sequencing reads from both datasets were mapped to the zebrafish genome assembly (GRCz11, Ensembl release 112). Further analyses were performed using Seurat package (version 4.3.0) in R software (https://www.r-project.org). The expression matrices were first filtered by keeping genes that are expressed in a minimum of three cells and cells that expressed a minimum of 200 genes for downstream analysis. The data were then normalized using NormalizeData function that normalizes the gene expression for each cell by the total expression counts (with a scale factor 10,000). To correct for batch effect between the data from the two time points, the rpca method in the Seurat package was applied to integrate the data. The top 2000 variable genes identified using the vst method in FindVariableFeatures function were used for principal component analysis in RunPCA function, and the first 30 principal components were used for visualization analysis with Uniform Manifold Approximation and Projection (UMAP) method, and in FindNeighbors function analysis. The cell clustering resolution was set at 0.5 in FindClusters function. The Seurat object was then processed using the ShinyCell package (version 2.1) for gene expression visualizations.
 
-## Statistical analysis
+### Statistical analysis
 
 For zebrafish experiments, the sample size (number of cells or vessels) was chosen based on the number of embryos expressing the transgene of interest (e.g., transient overexpression of plasmids) or of the desired genotype obtained per experiment. The number of embryos used for time-lapse imaging per experiment ranged from 3 to 4 per experiment for overnight imaging, 6–8 for short (0.5–2 hr) but high temporal resolution imaging, and 1–3 embryos for drug treatments since time was a limiting factor. Statistical analysis was performed using Prism software version 10.2.0 (GraphPad). The variance between the mean values of two groups was evaluated using the unpaired Student’s t-test. For assessment of more than three groups, we used one-way ANOVA test. A p-value of <0.05 was considered statistically significant. Statistic details can be found in each figure legend.
 
-## Materials availability statement
+### Materials availability statement
 
 Further information and requests for reagents should be directed to the corresponding author, Li-Kun Phng (likun.phng@riken.jp).

@@ -26,11 +26,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03kk7td41 Division of Infection and Immunity, School of Medicine, Cardiff University Cardiff United Kingdom
-2. https://ror.org/013meh722 Cambridge Institute for Therapeutic Immunology & Infectious Disease, Jeffrey Cheah Biomedical Centre, Cambridge Biomedical Campus, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/0220mzb33 Department of Infectious Diseases, School of Immunology & Microbial Sciences, King's College London London United Kingdom
-4. https://ror.org/00j161312 Department of Infectious Diseases, Guy’s and St Thomas’ NHS Foundation Trust London United Kingdom
-5. https://ror.org/00vtgdb53 MRC - University of Glasgow Centre for Virus Research Glasgow United Kingdom
+1. Division of Infection and Immunity, School of Medicine, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))
+2. Cambridge Institute for Therapeutic Immunology & Infectious Disease, Jeffrey Cheah Biomedical Centre, Cambridge Biomedical Campus, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Infectious Diseases, School of Immunology & Microbial Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+4. Department of Infectious Diseases, Guy’s and St Thomas’ NHS Foundation Trust London United Kingdom ([ROR:00j161312](https://ror.org/00j161312))
+5. MRC - University of Glasgow Centre for Virus Research Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
 
 † Corresponding author
 
@@ -52,11 +52,23 @@ To address these critical gaps in our understanding of the SARS-CoV-2-specific N
 
 ## Results
 
-## SARS-CoV-2 remodels the plasma membrane proteome
+### SARS-CoV-2 remodels the plasma membrane proteome
 
 Immune cells recognise and interact with infected cells through cell surface ligands. We therefore wanted to gain a comprehensive and unbiased overview of how SARS-CoV-2 infection changes the plasma membrane protein landscape. We performed plasma membrane enrichment through selective aminooxy-biotinylation (Plasma Membrane Profiling; PMP), a methodology that we previously developed (Weekes et al., 2010; Weekes et al., 2014) and have validated extensively against human immunodeficiency virus (HIV) (Matheson et al., 2015), human cytomegalovirus (HCMV) (Vlahava et al., 2021; Weekes et al., 2014; Fielding et al., 2017; Hsu et al., 2015; Weekes et al., 2013), and herpes simplexvirus (HSV) (Soh et al., 2020) infection.
 
 High infection rates are critical to minimise confounding effects from bystander cells. We therefore applied PMP to SARS-CoV-2 infected A549-ACE2-TMPRSS2 (AAT) cells, which are highly permissive to SARS-CoV-2 (Rihn et al., 2021) and infection at a high multiplicity of infection (MOI) results in over 90% infection by 24 hr (Figure 1A). We utilised TMT-based quantification to compare plasma membrane (PM) protein abundance in uninfected cells, and cells infected for 12, 24, and 48 hr (Figure 1B). In total, 4953 proteins were quantitated, including 2227 proteins with gene ontology annotation associated with the cell surface and plasma membrane (Figure 1—figure supplement 1A). Importantly however, the plasma membrane annotated proteins made up nearly 80% of the total protein abundance, indicating a high degree of enrichment for plasma membrane proteins, comparable with our previous PMP datasets (Vlahava et al., 2021; Weekes et al., 2010; Weekes et al., 2014; Matheson et al., 2015; Fielding et al., 2017; Hsu et al., 2015; Weekes et al., 2013; Soh et al., 2020). The detection of low abundance proteins that are not plasma-membrane annotated reflects a combination of incorrect annotations, and contaminating intracellular proteins that were incompletely removed following PMP.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig1-v3.jpg)
+
+**Figure 1.:** (A) AAT cells were infected with SARS-CoV-2 in biological triplicate (MOI = 5). Twenty-four hr later, they were detached with trypsin, fixed and permeabilised, stained for Spike protein, and analysed by flow cytometry. (B) Schematic of plasma membrane profiling and analysis pathway. (C). Examples of temporal profiles of viral and cellular genes, fold change is compared to 0 hr timepoint. Data points show mean ± SD. (D). Left – heat map of the 914 significantly changing proteins clustered by k-mean, colour indicates log2 fold change compared to 0 hr, right, Z-score normalised temporal profiles of proteins within each cluster.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pie charts showing the proportion of proteins falling into previously defined annotation categories for plasma membrane proteins by left, protein abundance, or right, protein identifiers. (B) Pie chart showing the distribution of proteins defined by the Molecular Signatures Database (MSigDB) gene set ‘Hallmark Interferon Alpha Response’ into the defined temporal clusters. (C). Example temporal profiles of type I interferon inducible genes upregulated in cluster 5, y-axis shows fold change compared to 0 hr timepoint.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig1-figsupp2-v3.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig1-figsupp3-v3.jpg)
 
 Five SARS-CoV-2 viral proteins were detected (see later), including spike, ORF3A, and membrane, which have previously been annotated as having a cell surface localisation (Figure 1C). Consistent with prior reports, the viral receptor ACE2 was strongly downregulated after infection (Patra et al., 2020), while TMPRSS2 expression was unaffected (Figure 1C). Overall, of the 2227 PM proteins quantified with more than one peptide, 914 showed changes which were both significant and with a greater than 1.5-fold alteration over the course of the experiment. Clustering of proteins by their temporal pattern of change has previously shown utility in defining classes of regulated proteins and predicting underlying mechanisms (Matheson et al., 2015; Greenwood et al., 2016). Here, we used K-means clustering to define five groups of significantly altered proteins by their temporal profile.
 
@@ -64,41 +76,97 @@ To assess the innate immune response triggered by SARS-CoV-2 infection, the clus
 
 To identify potential innate and adaptive immune evasion strategies employed by SARS-CoV-2, we focused on cluster 1, which describes proteins downregulated from early in the time course. This cluster was subject to gene ontology and pathway analysis to define proteins related by functional and structural similarities (Figure 2). Several classifications enriched in this cluster are particularly relevant, including the downregulation of several cytokine receptors, including IFNAR1. Much of the SARS-CoV-2 genome is dedicated to antagonising a type I interferon response within an infected cell (Lei et al., 2020) and the plasma membrane downregulation of IFNAR1 presents a previously undescribed strategy to prevent signalling from exogenous IFN.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig2-v3.jpg)
+
+**Figure 2.:** Enriched gene ontology and pathway annotations of proteins downregulated in temporal cluster 1 were condensed to groups of related terms, bar chart shows the enrichment score of these groups. Examples of annotation terms falling within each group are shown underlined with Bejamani-Hochberg adjusted p-values in parentheses, alongside four examples of proteins for each annotation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Temporal profiles of NK-cell ligands detected in the PMP dataset, y-axis shows fold change compared to 0 hr timepoint.
+
 Also of note is the downregulation of heparan sulfate proteoglycans, the syndecan (SDC), glypican (GPC), and neurophillin (NRP) proteins, which together encompass the families of heparan sulfate modified proteins expressed on epithelial cells (Sarrazin et al., 2011). NRP1 is a cell entry factor for SARS-CoV-2 (Cantuti-Castelvetri et al., 2020; Daly et al., 2020), and SARS-CoV-2 spike is also reported to bind heparan sulphated proteins (Clausen et al., 2020). The decrease in cell surface expression of heparan sulfated proteins may therefore enable the egress of viral particles and prevent super-infection, and is reminiscent of the capacity of other viruses to downregulate both primary viral receptors and co-receptors (Landi et al., 2011).
 
-## SARS-CoV-2 inhibits the synthesis of multiple NK cell ligands and reduces NK activation
+### SARS-CoV-2 inhibits the synthesis of multiple NK cell ligands and reduces NK activation
 
 Our experience with PMP has emphasised the modulation of NK ligands as an important immune evasion mechanism (Fielding et al., 2017). As these ligands are poorly annotated in public databases, we investigated the PMP dataset for previously described ligands (Kumar, 2018), of which 18 were detected (Figure 2—figure supplement 1). MHC-I proteins HLA-B to HLA-E were upregulated in cluster 5, likely reflecting a late IFN-mediated upregulation, while HLA-A was unchanged. By contrast, the activating NK-cell ligands MICA, ULBP2, B7-H6 (NCR3LG1), and Nectin1 (which is inhibitory in mice, but recently reported as activating in humans Holmes, 2019) were significantly downregulated in cluster 1. This was confirmed by flow cytometry in multiple cell types (Figure 3A, Figure 3—figure supplement 1A). These responses were dependent on virus replication, because no alterations in ligand abundance were observed when virus was heat-inactivated (Figure 3—figure supplement 2A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig3-v3.jpg)
+
+**Figure 3.:** (A) AAT cells were either mock infected, or infected with SARS-CoV-2 for 24 hr (MOI = 5), detached using TrypLE, then stained for the indicated NK cell receptors before being analysed by flow cytometry (bottom). Plots for the same proteins from PMP are included for reference (top) (B) AAT cells were infected with RAd-MICA, RAd-ULBP2, or RAd-B7-H6, then after 48 hr either mock infected, or infected with SARS-CoV-2 (SCV2) for a further 24 hr (MOI = 5). Lysates were either kept undigested, or digested with EndoH (E), or PNGaseF (P), then western blotted for the indicated proteins. Mature cell surface glycoproteins are resistant to EndoH, while immature (ER resident) forms are digested and therefore run with a smaller mass following EndoH digestion (C) AAT cells were infected with RAd-MICA or RAd-B7-H6, then after 24 hr either mock infected, or infected with SARS-CoV-2 (SCV2), and treated with MG132 (M) or Leupeptin (L).Twenty-four hour later lysates were made, and analysed by western blot for the indicated proteins. (Note: The additional band seen when staining for actin in the presence of SARS-CoV-2 may be non-specific).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CACO2 cells were either mock infected, or infected with SARS-CoV-2 for 24 hr (MOI = 5), detached using TrypLE, then stained for the indicated NK cell receptors before being analysed by flow cytometry.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** AAT cells were mock infected, or infected with SARS-CoV-2 (MOI = 5), or with heat inactivated SARS-CoV-2. After 24 hr, cells were dissociated with trypLE. (A) cells were stained with the indicated antibodies before being analysed by flow cytometry. (B) Cells were mixed with PBMC and incubated for 5 hr in the presence of golgistop and CD107a antibody, before staining for CD3, CD56, CD57 and Live/Dead Aqua. Cells were gated on live NK cells, and the percentage of cells positive for CD107a calculated. Assays were run in technical triplicate, and are representative of two biological repeats. One-way ANOVA **p<0.01.
 
 Many of the best characterised mechanisms by which viruses inhibit the function of NK ligands involve inhibition of cell-surface transport and/or proteasomal or lysosomal degradation of the mature protein (Patel et al., 2018; Berry et al., 2020). To determine whether SARS-CoV-2 targeted NK ligands in the same way we measured their abundance, and their sensitivity to digestion with EndoH, which cleaves N-linked glycans from proteins that have not yet transited (or have been retained in) the endoplasmic reticulum (ER). Digestion with PNGaseF (which cleaves N-linked glycans irrespective of subcellular trafficking) served as a control to show the effect of complete deglycosylation. We were unable to detect endogenous NK ligands by western blot (data not shown), and therefore overexpressed MICA, ULBP2, and B7-H6 using replication deficient adenovirus vectors (RAd). Following infection with SARS-CoV-2, levels of all three NK ligands were substantially reduced, however there was no alteration in the pattern of EndoH sensitivity (Figure 3B). Thus, SARS-CoV-2 infection does not result in intracellular retention of NK ligands, but instead reduces the overall abundance of protein.
 
 To determine whether this occurred by inhibition of synthesis or degradation of mature protein, we treated cells with proteasomal (MG132) or lysosomal (Leupeptin) inhibitors after infection (Figure 3C). When tested with overexpressed MICA or B7-H6 (ULBP2 was not tested), MG132 did not result in recovery of NK ligand levels. Leupeptin resulted in a small recovery of B7-H6; however, this was seen in both Mock and infected cells, implying that it reflects constitutive turnover of the ligand rather than virus-specific targeting, and recovery in infected cells remained reduced compared to untreated mock infected cells. Overall, these results are consistent with the virus targeting NK ligands at the level of synthesis, rather than post-translationally. We therefore investigated whether NK ligands were particularly sensitive to inhibition of synthesis, by treating cells expressing MICA, B7-H6, or a control protein (GFP) with the translation inhibitor cycloheximide (ULBP2 was not tested). This resulted in rapid loss of MICA, ULBP2, and B7-H6, but not GFP (Figure 4A). Finally, to determine which viral proteins were responsible for these effects, we transfected cells with a library of previously validated plasmids expressing all 29 SARS-CoV-2 ORFs individually (Gordon et al., 2020), and assessed them for levels of NK ligands on the cell surface. Only two SARS-CoV-2 ORFs resulted in a reduction of staining; Nsp1 and Nsp14 (Figure 4B). For MICA and ULBP2, Nsp14 consistently resulted in the strongest reduction, with Nsp1 being weaker. For Nectin1 and B7-H6, effects were weaker, but both Nsp1 and Nsp14 resulted in similar reductions.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig4-v3.jpg)
+
+**Figure 4.:** (A) AAT cells were infected with RAd-MICA, RAd-B7-H6, or RAd-GFP, then after 24 hr either mock infected, infected with SARS-CoV-2 (SCV2), or treated with Cycloheximide (CHX). Twenty-four hr later, cells were lysed and analysed by western blot for the indicated proteins (Note: The additional band seen when staining for actin in the presence of SARS-CoV-2 may be non-specific). (B) 293T cells were transfected with expression plasmids for Nsp1 or Nsp14, or GFP as a control. Twenty-four hr later, cells were detached with HyQtase and stained for the indicated proteins. (C–E) AAT cells were either mock infected, or infected with SARS-CoV-2 for 24 h (MOI = 5), detached with TrypLE and mixed with interferon stimulated PBMC for 5 hr in the presence of golgistop, golgiplug, and CD107a antibody, before staining for CD3/CD56 and Live/Dead Aqua. Cells were then fixed, permeabilised, and stained for TNFα and IFNγ. Cells were gated on live NK cells, and the percentage of cells positive for CD107a, TNFα, and IFNγ calculated. Individual assays were run in technical triplicate, with data shown from four assays using different donors. Kruskal–Wallis, *p<0.05, **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Lymphocytes were gated on FSC/SSC, doublets excluded using FSC-A/FSC-H, and live cells selected on the basis of Live/Dead Aqua staining. The percentage of CD107a + cells were determined in the CD56+/CD3- gate, or in the CD57 +gate of CD56+/CD3- cells.
+
 Both Nsp1 and Nsp14 are involved in the ability of SARS-CoV-2 to degrade host RNA (Nsp1), and inhibit host protein translation (Nsp1 and Nsp14), and these activities have been implicated in their ability to counteract the interferon response within the infected cell (Yuan et al., 2021; Hsu et al., 2021). Together with our biochemical analysis, this data suggests that NK ligands are highly susceptible to inhibition of synthesis, and that SARS-CoV-2 manipulation of host protein production could impact the NK response in addition to the interferon response. To determine whether this was the case, we incubated SARS-CoV-2 infected cells with PBMC, and measured (i) degranulation of CD3-CD56+ NK cells (Figure 4C; Figure 3—figure supplement 2B), (ii) production of IFNγ (Figure 4D), and (iii) TNFα (Figure 4E, Figure 3—figure supplement 2B). Consistent with data using other viruses Vlahava et al., 2021, CD107a was recirculated on a higher proportion of NK cells than IFNγ and TNFα. Nevertheless, all three markers of NK activation were significantly reduced in SARS-CoV-2 infected versus mock infected cells, suggesting that the virus has evolved to inhibit NK cell responses. Comparable results were seen at both 24 hr and 48 hr post-infection (data not shown).
 
-## NK-cell evasion is overcome by antibody-dependent activation
+### NK-cell evasion is overcome by antibody-dependent activation
 
 In addition to their role in innate immunity through interactions with activating and inhibitory NK receptors early in infection, NK cells play additional roles following the development of adaptive immunity via ADNKA/ADCC, in which CD16 interacts with the Fc portion of antibodies bound to targets on the surface of infected cells. To analyse this aspect of NK function, PBMC were incubated with infected cells in the presence of sera from individuals that were seronegative or seropositive for SARS-CoV-2. Certain NK cell subsets degranulate more effectively in response to antibody bound targets. These NK cells can be differentiated by the presence of NKG2C and CD57 on the cell surface (Stary and Stary, 2020). However, NKG2C is only found in a subset of donors who are HCMV seropositive, and a proportion of these individuals are NKG2Cnull due to a deletion in the KLRC2 gene. As a result, NKG2C cannot be used as a marker in all donors. We have previously shown that CD57 is sufficient to identify higher responding NK cells in all donors, and activation of this population correlates with the ability of antibodies to mediate ADCC (Fielding et al., 2021; Wang et al., 2018). We therefore focussed on this population here; identical patterns of activation were observed in the CD57-negative population, albeit of slightly smaller magnitude (not shown). Non-specific activation was controlled for by testing against mock-infected cells throughout.
 
 Degranulation (Figure 5A), as well as production of IFNγ (Figure 5B) and TNFα (Figure 5C), were all significantly increased in the presence of serum containing anti-SARS-CoV-2 antibodies, across a range of different NK donors (Figure 5D–F). ADNKA was dependent on virus replication, since heat inactivated virus did not lead to serum-dependent NK degranulation (Figure 5—figure supplement 1A). NK cells were activated equivalently whether purified NK cells or PBMC were used (Figure 5—figure supplement 1B), thus these responses are due to direct stimulation of NK cells, rather than other cells responding to antibodies and releasing NK stimulating cytokines. Viral immune evasion can therefore be overcome through antibody dependent mechanisms, suggesting that in addition to neutralising virus, SARS-CoV-2 antibodies may aid virus clearance through ADCC.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig5-v3.jpg)
+
+**Figure 5.:** AAT cells were either mock infected, or infected with SARS-CoV-2 for 24 hr (MOI = 5), detached using TrypLE, then mixed with PBMC in the presence of golgistop, CD107a antibody, and serum from donors who were seronegative or seropositive for SARS-CoV-2. After 5 hr, cells were stained for CD3, CD56, CD57, and live/dead aqua, fixed, permeabilised and stained for IFNγ and TNFα, then analysed by flow cytometry. (A–F) assays were performed using 1% serum, and the percentage of CD57 +NK cells positive for CD107a (A, D), TNFα (B, E), and IFNγ (C, F) were calculated. Individual donors were performed in technical triplicate (A–C), two-way ANOVA **p<0.01, ****p<0.0001. Assays from multiple donors were also compared (D–F), Kruskal–Wallis **p<0.01, ***p<0.001. (G–H) assays were performed using a serial threefold dilution of serum, starting from 3.3%, then the area under the curve (AUC) calculated. (G) Longitudinal serums from donors who experienced mild (black) or severe (grey) were used. (H) In addition to AUC for ADNKA activity, serums were tested for their ability to neutralise SARS-CoV-2 infection of VeroE6 cells, and the NT50 calculated, then compared to the AUC for ADNKA; Spearman rank correlation analysis is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) AAT cells were mock infected, or infected with SARS-CoV-2, or with heat inactivated SARS-CoV-2 (MOI = 5). After 24 hr, cells were dissociated with trypLE. (A–B) Cells were mixed with PBMC (A) or purified NK cells (A–B) and 1% sera that was seropositive or seronegative for SARS-CoV-2. Cells were incubated for 5 hr in the presence of golgistop and CD107a antibody, before staining for CD3, CD56, CD57, and Live/Dead Aqua. Cells were gated on live CD57 +NK cells, and the percentage of cells positive for CD107a. Assays were run in technical triplicate. Two-way ANOVA ****p<0.0001. (C) Cells were stained for spike or nucleocapsid. (D) Vero or Caco2 cells were infected with SARS-CoV-2. After 24 hr, cells were dissociated with trypLE and stained for spike or nucleocapsid, before being analysed by flow cytometry.
+
 The magnitude of the neutralising antibody response to SARS-CoV-2 correlates with severity of disease; individuals with more severe disease generate higher levels of neutralising antibody (Seow et al., 2020; Dan et al., 2021; Wajnberg et al., 2020). Although memory B-cell responses persist, levels of circulating antibody can decrease over time following resolution of disease, such that in some mildly infected people they become undetectable after a few months (Seow et al., 2020; Dan et al., 2021; Wajnberg et al., 2020). To determine whether the same was true of ADCC responses, we assessed ADNKA in a cohort of donors with known disease status, for whom longitudinal sera were available (Figure 5G). ADNKA responses were generally of greater magnitude in individuals with more severe disease, with responses remaining detectable during the 150–200 day follow-up. Amongst those with milder disease, strong initial responses were maintained over time, while weaker responses decreased, becoming virtually undetectable by around 200 days. There was a moderate correlation between the ability of antibodies to neutralise SARS-CoV-2, and to activate ADNKA in response to SARS-CoV-2 (Figure 5H), with a R2 value of 0.7. Thus, although the antibodies mediating these activities may be induced in a similar manner, the antibodies mediating the two responses may not be identical.
 
-## Multiple SARS-CoV-2 ORFs mediate ADCC
+### Multiple SARS-CoV-2 ORFs mediate ADCC
 
 There has been a major focus on spike as an activator of ADCC (Barrett et al., 2021; Herman et al., 2021; Zohar et al., 2020; Tauzin et al., 2021; Anand et al., 2021; Lee et al., 2020; Dufloo et al., 2020; Tortorici et al., 2020; McCallum et al., 2021; Cathcart et al., 2021). It is certainly a potential target during infection as, despite the fact that virion particles bud internally rather than from the cell membrane, both our PMP and flow cytometric analysis detected substantial levels of spike protein on the infected cell surface (Figure 6A, C, Figure 5—figure supplement 1C, D). However, our studies with other viruses have demonstrated that although viral proteins involved in virion binding and entry are found on the cell surface, and can be bound by antibody, they are not necessarily the strongest mediators of ADCC activity (Vlahava et al., 2021). PMP also detected membrane (M), nucleocapsid (N), ORF3a, and ORF1ab on the cell surface. ORF1ab is expressed as a polyprotein, which is proteolytically cleaved into multiple non-structural proteins (NSPs). Analysis of individual peptides representative of the proteolytically processed NSPs did not reveal any specific NSP enrichment. Furthermore, comparing the relative abundance of viral proteins in PMP, ORF1ab was only present at very low levels (1% of all viral proteins, significantly lower than any other SARS-CoV-2 protein). Taken together, it is unlikely that any NSPs are surface-exposed. Nevertheless, we performed bioinformatic analysis of all viral proteins for the presence of potential transmembrane domains or signal peptides, revealing five additional candidate cell-surface proteins (Nsp4, Nsp6, ORF6, ORF7a, ORF7b). We transfected cells with previously validated expression constructs for each of these genes (Gordon et al., 2020), and screened them for their ability to activate NK cells in an antibody-dependent manner. We used sera from patients with severe COVID-19 disease, that had previously generated the strongest ADNKA signals against infected cells (Figure 6B). As expected, spike primed a substantial ADNKA response. However, in support of our PMP data, expression of ORF3a, membrane, and nucleocapsid, were also capable of priming ADNKA in the presence of serum containing SARS-CoV-2 antibodies, while the Nsps did not.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig6-v3.jpg)
+
+**Figure 6.:** (A) Plots of viral proteins detected in the PMP analysis. (B) 293T cells were transfected with plasmids expressing the indicated SARS-CoV-2 proteins for 48 hr, then mixed with PBMC in the presence of golgistop, CD107a antibody, and 1% serum from donors who were seronegative or seropositive for SARS-CoV-2. After 5 hr, cells were stained for CD3, CD56, CD57, and live/dead aqua, then analysed by flow cytometry. Assays were performed in technical triplicate. Data is shown from two donor serums. **p<0.01, ****p<0.0001, two-way ANOVA. (C) 293T cells were transfected with plasmids expressing SARS-CoV-2 nucleocapsid or spike (or empty vector; light grey) for 48 hr, or AAT cells were infected with SARS-CoV-2 (MOI = 5) (or mock infected; light grey) for 24 hr, then cells were detached with TrypLE, stained for nucleocapsid or spike, and analysed by flow cytometry. (D) AAT cells were infected with SARS-CoV-2 (MOI = 5) for 24 hr, then cells were fixed in paraformaldehyde and stained for the indicated targets. Images are shown as maximum intensity projections of Z-stacks.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Mock infected AAT cells were fixed in paraformaldehyde and stained for the indicated targets. Images are shown as maximum intensity projections of Z-stacks.
+
 Interestingly, nucleocapsid readily activated ADNKA despite the fact that this protein has previously been assumed to be intracellular. We have previously observed the exquisite sensitivity of ADNKA, which can be activated in response to levels of virus protein that are difficult to detect by flow cytometry (Vlahava et al., 2021). We have also shown that antigen levels can be very different in the context of virus infection, compared with transfection (Vlahava et al., 2021). In support of this, nucleocapsid levels were much higher on the surface of infected cells than transfected cells (Figure 6C); detection of nucleocapsid was dependent on virus replication (Figure 5—figure supplement 1C), and occurred following infection of multiple different cell types (Figure 5—figure supplement 1D). The presence of nucleocapsid on the cell surface was also supported by immunofluorescence staining of non-permeabilised infected cells (Figure 6D), where distinct patches of nucleocapsid were observed that sometimes, but not always, coincided with cell-cell junctions. Given how well even very low levels of surface nucleocapsid activated ADNKA, this suggested that multiple proteins could be major contributors to ADCC during SARS-CoV-2 infection.
 
-## Monoclonal anti-spike antibodies only weakly mediate ADNKA despite binding strongly to infected cells
+### Monoclonal anti-spike antibodies only weakly mediate ADNKA despite binding strongly to infected cells
 
 To determine the relative contribution of spike, and of different antigenic sites on spike, to ADNKA during SARS-CoV-2 infection, we tested a panel of 26 human anti-spike monoclonal antibodies, which had been isolated from naturally infected donors, and cloned as IgG1 constructs (Graham et al., 2021). The panel included antibodies targeting the RBD, S1, NTD, and S2 domains, neutralising and non-neutralising, and those targeting multiple distinct epitopes (Supplementary file 4).
 
 All 26 antibodies bound efficiently to infected cells, at levels comparable to polyclonal serum (Figure 7—figure supplement 1). However, only five of these antibodies were capable of triggering degranulation (Figure 7A), of which two triggered TNFα (Figure 7—figure supplement 2A), and one IFNγ (Figure 7—figure supplement 2B). Importantly, these NK responses were at dramatically lower levels than seen with polyclonal serum from a naturally infected donor, even when combined (Figure 7B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig7-v3.jpg)
+
+**Figure 7.:** (A–B) AAT cells were either mock infected, or infected with SARS-CoV-2 (MOI = 5), or (C) 293T cells were transfected with an expression plasmid for spike. After 24 hr (A–B) or 48 hr (C), cells were detached with TrypLE and mixed with PBMC and the indicated antibodies, or a serum from a moderate case of COVID-19. Cells were incubated for 5 hr in the presence of golgistop, golgiplug, and CD107a antibody, before staining for CD3, CD56, CD57, and Live/Dead Aqua. Cells were gated on live CD57 +NK cells, and the percentage of cells positive for CD107a calculated. Assays were run in technical triplicate. Two-way ANOVA ***p<0.001, ****p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** AAT cells were mock infected (light grey), or infected with SARS-CoV-2 (black; MOI = 5) for 24 hr, then detached with TrypLE, stained with the indicated human anti-spike antibodies, then analysed by flow cytometry. UL16 represents a negative control antibody targeting a protein from a different virus (HCMV) (Vlahava et al., 2021).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74489/elife-74489-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** AAT cells were either mock infected, or infected with SARS-CoV-2 (MOI = 5) for 24 hr, detached with TrypLE and mixed with PBMC and the indicated antibodies, or a serum from a moderate case of COVID-19. Cells were incubated for 5 hr in the presence of golgistop, golgiplug, and CD107a antibody, before staining for CD3, CD56, CD57, and Live/Dead Aqua. Cells were then fixed, permeabilised, and stained for TNFα and IFNγ. Cells were gated on live CD57 +NK cells, and the percentage of cells positive for TNFα (A) and IFNγ (B) calculated. Assays were run in technical triplicate. Two-way ANOVA *p<0.05, ***p<0.001, ****p<0.0001.
+
 A number of previous publications have used cells transfected with spike expression constructs to suggest that monoclonal anti-spike antibodies can induce potent ADNKA, which would appear to contradict our data (Chan et al., 2020; Schäfer et al., 2021; Winkler et al., 2020; Suryadevara et al., 2021; Winkler et al., 2021; Yamin et al., 2021). We therefore tested a subset of our monoclonal antibodies against transfected, as opposed to infected, cells (Figure 7C). mAbs that induced ADNKA against infected cells also induced ADNKA against transfected cells (P008-014 and P054-044). However, of 12 antibodies that failed to activate ADNKA against infected cells, 5 induced potent ADNKA against transfected cells. Furthermore, in contrast to infected cells, the level of ADNKA induced by mAbs was extremely high against transfected cells, with many exceeding that of our control seropositive serum. Thus, despite a substantial ability to activate ADCC against cells transfected with spike protein, and high levels of antibody binding, spike was a relatively poor ADCC target in the context of natural infection when using mAbs.
 
-## Following natural infection, ADNKA responses are dominated by non-spike antibodies
+### Following natural infection, ADNKA responses are dominated by non-spike antibodies
 
 Although our data using monoclonal antibodies indicated that spike was a comparatively weak activator of ADNKA, the antibodies that mediate ADNKA against infected cells may represent a minor proportion of the overall anti-spike response; we simply may not have captured those antibodies in our panel. To directly address this concern, we specifically depleted anti-spike antibodies from the serum of naturally infected individuals, and assessed changes in activity. ELISA analysis confirmed the effective depletion of spike-specific antibodies (Figure 8A), which was accompanied by a significant loss of neutralisation activity (Figure 8B), across multiple donors (Figure 8C). However, there was no loss of ADNKA activity from any of these samples following spike-antibody depletion (Figure 8D and E), consistent with the results of our monoclonal antibody data. We conclude that spike-specific antibodies dominate the neutralising antibody response, but play a minor roles in the ADCC response following natural infection.
 
@@ -108,7 +176,7 @@ Although our data using monoclonal antibodies indicated that spike was a compara
 
 Since nucleocapsid, ORF3a, and membrane had activated ADNKA when expressed in isolation, we therefore investigated whether they also mediated ADNKA against virus infected cells. A nucleocapsid-specific human monoclonal antibody was capable of activating ADNKA against infected cells (Figure 8F) and, although not to the extent of polyclonal serum, was superior to our best anti-spike antibody. Furthermore, when we used the serums from which Spike antibodies had been depleted (Figure 8D–E), and also depleted anti-nucleocapsid antibodies, we saw a significant reduction in ADNKA activity (Figure 8G–H), although considerable activity remained. Reagents are not available to deplete antibodies targeting ORF3a or membrane, so we instead deleted ORF3a from the virus genome. In line with existing data, this resulted in a small reduction (~1 log) in virus titres (not shown). We therefore assessed levels of viral antigens on the cell surface following infection, which revealed that deletion of ORF3a resulted in a small reduction in levels of spike and nucleocapsid, but not membrane (Figure 8I). To ensure that these alterations did not affect readouts, we used serums that had been depleted for antibodies targeting both Spike and Nucleocapsid, and compared ADNKA responses against wildtype or ΔORF3a virus (Figure 8J–K). Deletion of ORF3a resulted in a dramatic reduction in ADNKA activity, although this was not reduced completely to the level of seronegative serum. We therefore conclude that nucleocapsid and ORF3a are targets for ADNKA activity against SARS-CoV-2 infected cells, with membrane potentially also contributing.
 
-## Spike-specific antibodies following vaccination are weak mediators of ADNKA
+### Spike-specific antibodies following vaccination are weak mediators of ADNKA
 
 Since non-spike antigens are required to efficiently prime ADCC following natural infection, we investigated individuals who have been vaccinated against spike, but not exposed to the virus – since they will only have spike-specific antibodies. As with serum from naturally infected individuals, ELISA demonstrated effective depletion of spike antibodies (Figure 9A), which was accompanied by a marked loss of virus neutralisation activity (Figure 9B and C). In functional NK assays, these sera only mediated weak ADNKA (Figure 9D and E) and, unlike sera from naturally infected individuals, ADNKA activity was abrogated following depletion of spike antibodies. When we compared responses following natural infection or vaccination, vaccine mediated ADNKA was significantly weaker than responses seen following natural infection, and was not boosted following the second dose of the vaccine (Figure 9F). This was in stark contrast with the neutralisation activity of those same serum samples, which were dramatically increased following the second dose, with activity comparable to patients with severe COVID-19 disease (Figure 9G).
 
@@ -138,72 +206,257 @@ Although Fc-dependent mechanisms of cellular immune activation could contribute 
 
 ## Materials and methods
 
-## Cells and viruses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, Strain Background (SARS-CoV-2)</td>
+      <td>England 2</td>
+      <td>Public Health England</td>
+      <td>Genome identical to NC_045512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (African Green Monkey)</td>
+      <td>VeroE6</td>
+      <td>ATCC</td>
+      <td>CCL-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Monoclonal anti-CD107a-FITC</td>
+      <td>Biolegend</td>
+      <td>Cat No. 328,606</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD56-BV605</td>
+      <td>Biolegend</td>
+      <td>Cat No. 362,538</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD3-PC7</td>
+      <td>Biolegend</td>
+      <td>Cat No. 300,420</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD57-APC</td>
+      <td>Biolegend</td>
+      <td>Cat No. 359,610</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-B7-H6</td>
+      <td>Biotechne</td>
+      <td>Cat No. MAB7144</td>
+      <td>Flow cytometry (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Nectin-1</td>
+      <td>Biolegend</td>
+      <td>Cat No. 340,402</td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-MICA</td>
+      <td>BAMOMAB</td>
+      <td>Cat No. AMO1-100</td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ULBP2</td>
+      <td>BAMOMAB</td>
+      <td>Cat No. BUMO1</td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Spike</td>
+      <td>Insight</td>
+      <td>Cat No. GTX632604</td>
+      <td>Flow cytometry (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Nucleocapsid</td>
+      <td>Stratech</td>
+      <td>Cat No. BSM-41411M</td>
+      <td>Flow Cytometry (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG-AF647</td>
+      <td>Thermo Fisher</td>
+      <td>Cat No. A-21235</td>
+      <td>Flow Cytometry (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD3-BV711</td>
+      <td>Biolegend</td>
+      <td>Cat No. 344,837</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD57-PECy7</td>
+      <td>Biolegend</td>
+      <td>Cat No. 359,623</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal TNFα–BV421</td>
+      <td>Biolegend</td>
+      <td>Cat No. 502,931</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IFNγ–APC</td>
+      <td>Biolegend</td>
+      <td>Cat No. 502,511</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal Anti-mouse AF594</td>
+      <td>Thermofisher</td>
+      <td>Cat No. A48288</td>
+      <td>IFA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human monoclonal anti-nucleocapsid</td>
+      <td>Acro</td>
+      <td>Cat No. NUN-S41</td>
+      <td>Flow cytometry (10 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin-AF488</td>
+      <td>Thermofisher</td>
+      <td>Cat No. A12379</td>
+      <td>IFA (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Anti-spike</td>
+      <td>Acro</td>
+      <td>RAS-T025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Anti-Spike Magnetic beads</td>
+      <td>Acro</td>
+      <td>MBS-K015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Anti-nucleocapsid Magnetic Beads</td>
+      <td>Acro</td>
+      <td>MBS-K017</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and viruses
 
 All cell lines tested negative for mycoplasma, and A549 were authenticated by Short tandem Repeat analysis. A549 were transduced with lentiviruses expressing human ACE2, and TMPRSS2 (AAT cells), as previously described (Rihn et al., 2021). The England2 strain of SARS-CoV-2 was obtained from Public Health England (PHE), and grown on VeroE6 cells. This strain has a genome that is identical to the original Wuhan isolate. A virus lacking ORF3a, along with the parental virus, was a kind gift from Luis Martinez-Sobrido (Texas Biomedical Research Institute; Silvas et al., 2021). Virions were concentrated by pelleting through a 30% sucrose cushion to remove contaminating soluble proteins, and titrated by plaque assay on both VeroE6, AAT, and Caco2, as previously described (Rihn et al., 2021). All cell lines were grown in DMEM containing 10% FCS (Gibco), at 37 °C and in 5% CO2. Throughout the study, multiple batches of virus were used, and no overt differences were noted between them. For assays, cells were plated out the day before, then infected at a multiplicity of infection (MOI) of 5, for 1 hr on a rocking platform. The inoculum was removed, and fresh DMEM containing 2% FCS was added, then cells were incubated until the assay. To confirm that phenotypes were dependent on active virus replication, virus was inactivated by heating to 56 °C for 30 min.
 
-## Plasma membrane profiling
+### Plasma membrane profiling
 
 Cell surface proteins were labelled essentially as described (Weekes et al., 2014; Weekes et al., 2012). Briefly, cells were incubated in a solution containing sodium periodate, aniline and aminooxy biotin to label predominantly sialic acid containing glycans at the cell surface. Cell lysates were then enriched for labelled proteins using streptavidin-agarose beads. After extensive washing trypsin was added to liberate peptides of the enriched proteins. The resulting peptide pools were dried prior to labelling with TMT reagents.
 
-## TMT labelling and clean-up
+### TMT labelling and clean-up
 
 Samples were resuspended in 21 µL 100 mM TEAB pH 8.5. After allowing to come to room temperature, 0.2 mg TMT reagents (Thermo Fisher) were resuspended in 9 µL anhydrous acetonitrile (ACN) which was added to the respective samples and incubated at room temperature for 1 hr. A 3 µL aliquot of each sample was taken and pooled to check TMT labelling efficiency and equality of loading by LC-MS. After checking each sample was at least 98% TMT labelled total reporter ion intensities were used to normalise the pooling of the remaining samples such that the final pool was as close to a 1:1 ratio of total peptide content between samples as possible. This final pool was then dried in a vacuum centrifuge to evaporate the majority of ACN form labelling. The sample was acidified to a final 0.1% Trifluoracetic Acid (TFA) (~200 µL volume) and fluoroacetic acid (FA) was added until the SDC visibly precipitated. Four volumes of ethyl acetate were then added and the sample vortexed vigorously for 10 s. Sample was then centrifuged at 15,000 g for 5 min at RT to effect phase separation. A gel loading pipette tip was used to withdraw the lower (aqueous) phase to a fresh low adhesion microfuge tube. The sample was then partially dried in a vacuum centrifuge and brought up to a final volume of 1 mL with 0.1% TFA. FA was added until the pH was <2, confirmed by spotting onto pH paper. The sample was then cleaned up by SPE using a 50 mg tC18 SepPak cartridge (Waters). The cartridge was wetted with 1 mL 100% Methanol followed by 1 mL ACN, equilibrated with 1 mL 0.1% TFA and the sample loaded slowly. The sample was passed twice over the cartridge. The cartridge was washed 3 x with 1 mL 0.1% TFA before eluting sequentially with 250 µL 40% ACN, 70% ACN and 80% ACN and dried in a vacuum centrifuge.
 
-## Basic pH reversed phase fractionation
+### Basic pH reversed phase fractionation
 
 TMT labelled samples were resuspended in 40 µL 200 mM Ammonium formate pH10 and transferred to a glass HPLC vial. BpH-RP fractionation was conducted on an Ultimate 3,000 UHPLC system (Thermo Scientific) equipped with a 2.1 mm ×15 cm, 1.7µ Kinetex EVO column (Phenomenex). Solvent A was 3% ACN, Solvent B was 100% ACN, solvent C was 200 mM ammonium formate (pH 10). Throughout the analysis solvent C was kept at a constant 10%. The flow rate was 500 µL/min and UV was monitored at 280 nm. Samples were loaded in 90% A for 10 min before a gradient elution of 0–10% B over 10 min (curve 3), 10–34% B over 21 min (curve 5), 34–50% B over 5 mins (curve 5) followed by a 10 min wash with 90% B. 15 s (100 µL) fractions were collected throughout the run. Fractions containing peptide (as determined by A280) were recombined across the gradient to preserve orthogonality with on-line low pH RP separation. For example, fractions 1, 25, 49, 73, 97 are combined and dried in a vacuum centrifuge and stored at –20 °C until LC-MS analysis. 24 Fractions were generated in this manner.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Samples were analysed on an Orbitrap Fusion instrument on-line with an Ultimate 3000 RSLC nano UHPLC system (Thermo Fisher). Samples were resuspended in 10 µL 5% DMSO/1% TFA and all sample was injected. Trapping solvent was 0.1% TFA, analytical solvent A was 0.1% FA, solvent B was ACN with 0.1% FA. Samples were loaded onto a trapping column (300 µm x 5 mm PepMap cartridge trap (Thermo Fisher)) at 10 µL/min for 5 min at 60 degrees. Samples were then separated on a 75 cm x 75 µm i.d. 2 µm particle size PepMap C18 column (Thermo Fisher) at 55 degrees. The gradient was 3–10% B over 10 min, 10–35% B over 155 min, 35–45% B over 9 min followed by a wash at 95% B for 5 min and requilibration at 3% B. Eluted peptides were introduced by electrospray to the MS by applying 2.1kV to a stainless-steel emitter (5 cm x 30 µm (PepSep)). During the gradient elution, mass spectra were acquired with the parameters detailed in Figure 1—figure supplement 2 using Tune v3.3 and Xcalibur v4.3 (Thermo Fisher).
 
-## Data processing
+### Data processing
 
 Data were processed with PeaksX+, v10.5 (Bioinformatic Solutions). Processing parameters are shown in detail in Figure 1—figure supplement 3. Briefly, raw files were searched iteratively in three rounds, with unmatched de novo spectra (at 1% PSM FDR) from the previous search used as the input for the next. The three iterations were as follows (1) Swissprot Human (27/03/2020)+common contaminants, (2) the same databases as search 1 but permitting semi-specific cleavage, (3) trEMBL Human (27/03/2020), with specific cleavage rules. Proteins were then quantified using the parameters outlined in Figure 1—figure supplement 3. Identified proteins and their abundances were output to.csv format and further subjected to statistical analysis. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD025000 and 10.6019/PXD025000. Supplementary file 1 contains the analysed data.
 
-## Statistical analysis and K-means clustering
+### Statistical analysis and K-means clustering
 
 Prior to statistical analysis, proteins were filtered for those quantified across all TMT reporter channels and with more than one unique peptide. Only proteins with a plasma membrane related GO:CC annotation as previously described (Weekes et al., 2010) were then carried forward for statistical analysis. All SARS-CoV-2 proteins quantified with more than one unique peptide were also included. Statistical tests were performed with the aov and p.adjust functions in the R base stats package (version 4.0.3) to calculate Benjamini-Hochberg corrected p-values for changes in protein abundance across the measured time-points.
 
 Proteins with a p-value <0.05 and a maximum fold-change across the time-course of >1.5-fold were selected for k-means clustering. Mean intensities of each time-point were scaled using the scale function in base R and utilised to cluster proteins into five groups using the kmeans function in R base stats package.
 
-## Functional annotation clustering
+### Functional annotation clustering
 
 Assessment of enriched gene annotation terms in temporal cluster one was carried out using the Functional Annotation Clustering tool at DAVID (david.ncifcrf.gov) v6.8 (Huang et al., 2009), using the default clustering settings for medium stringency and the following libraries: Uniprot UP_Keyword, GOTERM:MF_ALL, BIOCARTA, KEGG_PATHWAY and REACTOME_PATHWAY. Output clusters were curated with representative names based on the enriched terms within. The background for enrichment was a list of proteins detected in the PMP dataset with more than one peptides and a plasma membrane associated GO:CC term. Functional annotation clusters with an enrichment score of >1.5 are shown, and any clusters in which no individual annotation term had a Benjamini-Hochberg correct p-value of <0.05 were excluded.
 
-## Biochemical analysis of NK ligands
+### Biochemical analysis of NK ligands
 
 Replication-deficient adenovirus vectors (RAd) expressing B7-H6, MICA, and ULBP2, have been described previously (Fielding et al., 2017). To analyse glycosylation of these proteins, cells were infected with RAd-MICA and RAd-GFP at MOI = 100 and RAd-B7-H6 and RAd-ULBP2 at MOI = 500, then 48 hr later cells were either mock-infected or infected with SARS-CoV-2 MOI = 5 for a further 24 hr. For some experiments, lysates were digested overnight at 37 °C with EndoH or PNGaseF (NEB) according to manufacturer’s instructions. In some experiments, MG132 (10 µM), Leupeptin (200 µM), or cycloheximide (CHX, 2.5 µg/ml) inhibitors were added 18 hr prior to harvest. Samples were then analysed by SDS-PAGE followed by western blotting for proteins of interest. Membranes were stained with primary antibodies (anti-MICA/B, BAMOMAB, BAMO1, 1:2000; anti-B7-H6, Abcam, ab121794, 1:2000; anti-ULBP-2, R&D Systems, AF1298, 1:2000; anti-GFP, FL, SC-8334, Santa Cruz Biotechnology, 1:2000; anti-Spike, Genetex, 1A9, 1:2000; anti-Actin, Sigma, 1:2000), followed by anti-mouse, anti-rabbit or anti-goat HRP-conjugated secondary antibody, then developed using Supersignal West Pico, and imaged in a Syngene XX6.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were plated on coverslips, then infected with SARS-CoV-2. After 24 hr, cells were fixed with 4% paraformaldehyde, then stained with nucleocapsid mAb (1C7), followed by anti-mouse AF594, Phalloidin-AF488, and DAPI. Coverslips were washed, then mounted in prolong gold anti-fade (Thermofisher), before being imaged on a Zeiss LSM800 confocal microscope.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were dissociated using HyQtase, then stained with primary antibody for 30 min at 4 °C. Following washing, they were incubated with secondary antibody, again for 30 min at 4 °C. Cells were washed, fixed in 4% paraformaldehyde, and data collected on an Attune cytometer (Thermofisher). In one experiment (Figure 1A), cells were fixed and permeabilised (Cytofix/Cytoperm, BD) before staining. Antibodies used were against HLA-ABC (W632; AbD Serotec), NCR3LG1/B7-H6 (MAB7144, Biotechne R&D Systems), Nectin 1 (R1.302; Biolegend), MICA (AMO1-100; BAMOMAB), MICB (BMO2-100; BAMOMAB), ULBP2 (BUMO1; BAMOMAB), Spike (1A9; Insight), Nucleocapsid (1C7; Stratech), anti-mouse IgG AF647 (Thermofisher).
 
-## ELISA
+### ELISA
 
 To measure levels of spike antibodies, an ELISA using the spike trimer (Acro Biosystems) was used according to manufacturers instructions. Each sample was measured in duplicate, and compared to a standard curve. A pre-pandemic serum was included in each assay to define the cut-off.
 
-## Plasmids and transfections
+### Plasmids and transfections
 
 Lentivirus plasmids encoding each SARS-CoV-2 ORF individually, with a C-terminal twin-strep tag, were obtained from Addgene, and have been validated for expression previously (Gordon et al., 2020). Plasmids were midiprepped (Nucleobond Xtra Midi; Machery-Nagel), and transfected into 293T cells using GeneJuice (Merck) according to manufacturers’ instructions.
 
-## NK activation assays
+### NK activation assays
 
 PBMCs from healthy donors were thawed from liquid N2 storage, rested overnight in RPMI supplemented with 10% FCS, and L-glutamine (2 mM). For assays investigating viral inhibition of NK activation, PBMC were stimulated overnight with IFN-α (1,000 U/ml) to provide a baseline level of activation against which inhibition could be seen. For ADNKA this stimulation is not required, and so cells were used unstimulated (Vlahava et al., 2021). To confirm that phenotypes were due to direct effects on NK cells, NK cells were purified by depletion, using the human NK cell purification kit (Miltenyi) according to manufacturer’s instructions. Target cells were harvested using TrypLE Express (Gibco), preincubated for 30 min with the relevant antibody or serum preparations, then mixed with effectors at an effector:target (E:T) ratio of 10:1 (PBMC) or 1:1 (purified NK cells) in the presence of golgistop (0.7 μl/ml, BD Biosciences), Brefeldin-A (1:1000, Biolegend) and anti-CD107a–FITC (clone H4A3, BioLegend). Cells were incubated for 5 hr, washed in cold PBS, and stained with live/dead Fixable Aqua (Thermo Fisher Scientific), anti-CD3–PECy7 (clone UCHT1, BioLegend) or anti-CD3-BV711 (Clone SK7, Biolegend), anti-CD56–BV605 (clone 5.1H11, BioLegend), anti-CD57–APC (clone HNK-1, BioLegend) or anti-CD57-PECy7 (clone HNK-1, Biolegend), and anti-NKG2C–PE (clone 134591, R&D Systems). In some experiments, cells were also fixed/permeabilized using Cytofix/Cytoperm (BD Biosciences) and stained with anti-TNFα–BV421 (clone MAb11, BioLegend) and anti-IFNγ–APC (clone 4 S.B3, BioLegend). Data were acquired using an AttuneNxT (Thermo Fisher) and analyzed with Attune NxT software or FlowJo software version 10 (Tree Star). Individual assays were run in technical triplicate. To ensure inter-assay variation did not affect results, a donor serum demonstrating moderate ADCC activity against SARS-CoV-2 was included as a positive standard in every assay, while a serum collected before 2020 was included as a negative control in every assay. Where sera were tested at a range of dilutions, the area under the curve (AUC) was calculated using Graphpad Prism 9. This value was then normalised to the AUC for the standard serum in that particular assay. In all experiments, serums were additionally tested against mock infected cells to control for non-specific activation of NK cells by serum components. An example gating strategy is shown in Figure 4—figure supplement 1, and involved gating on NK cells defined as CD56 positive, CD3 negative. This strategy will capture all ‘classical’ NK cells; however, it will miss the recently described CD56-negative NK cell population. Since these are only present at substantial levels in specific conditions such as chronic HIV infection, and older people with HCMV or EBV infection (Müller-Durovic et al., 2019), and have not been described to expand during SARS-CoV-2 infection, they are unlikely to play a major role in the NK response examined herein.
 
-## Serums
+### Serums
 
 Serums were collected from healthy donors vaccinated with the BNT162b2 vaccine, a minimum of 3 weeks after the first dose, or 1 week after the second. A pre-vaccine sample was taken from every donor, and an ELISA for SARS-CoV-2 RBD performed as previously described (Amanat et al., 2020), to determine pre-exposure to live SARS-CoV-2. Longitudinal serums from naturally infected individuals have been described previously, clinical characteristics are in Supplementary file 3; (Seow et al., 2020). Those labelled ‘mild’ had severity scores of 0, 1, 2 or 3, and ‘severe’ was 4 or 5, as described previously (Seow et al., 2020).
 
-## Virus neutralisation assays
+### Virus neutralisation assays
 
 600PFU of SARS-CoV-2 was incubated with appropriate dilutions of serum, in duplicate, for 1 hr, at 37 °C. The mixes were then added to pre-plated VeroE6 cells for 48 hr. After this time, monolayers were fixed with 4% PFA, permeabilised for 15 min with 0.5% NP-40, then blocked for 1 hr in PBS containing 0.1% Tween (PBST) and 3% non-fat milk. Primary antibody (anti-nucleocapsid 1C7, Stratech, 1:500 dilution) was added in PBST containing 1% non-fast milk and incubated for 1 hr at room temperature. After washing in PBST, secondary antibody (anti-mouse IgG-HRP, Pierce, 1:3000 dilution) was added in PBST containing 1% non-fat milk and incubated for 1 hr. Monolayers were washed again, developed using Sigmafast OPD according to manufacturers’ instructions, and read on a Clariostar Omega plate reader. Wells containing no virus, virus but no antibody, and a standardised serum displaying moderate activity were included as controls in every experiment. NT50 were calculated in Graphpad Prism 9.
 
-## Antibody depletions
+### Antibody depletions
 
 Anti-spike or anti-nucleocapsid antibody was depleted from sera using magnetic bead conjugated spike trimer protein or nucleocapsid protein (Acrobiosystems). Beads were resuspended in PBS +0.05% BSA, then 50 µl serum was mixed with 150 µl beads. Mixtures were incubated on a rotating mixer at 4 °C overnight. Serum diluted in buffer alone was used as a control. Magnetic beads were then removed using a 3D printed magnetic stand. All values given in assays are corrected for this initial fourfold dilution. Levels of anti-spike antibody were measured using a spike trimer ELISA (Acrobiosystems).

@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02afcvw97 Affiliated Hospital of Nantong University, Nantong Laboratory of Development and Diseases, School of Life Science; Co-innovation Center of Neuroregeneration, Nantong University Nantong China
+1. Affiliated Hospital of Nantong University, Nantong Laboratory of Development and Diseases, School of Life Science; Co-innovation Center of Neuroregeneration, Nantong University Nantong China ([ROR:02afcvw97](https://ror.org/02afcvw97))
 2. Suqian First Hospital Suqian China
-3. https://ror.org/02afcvw97 Medical School, Nantong University Nantong China
+3. Medical School, Nantong University Nantong China ([ROR:02afcvw97](https://ror.org/02afcvw97))
 
 † Corresponding author
 
 ## Abstract
 
-Artificially sweetened beverages containing noncaloric monosaccharides were suggested as healthier alternatives to sugar-sweetened beverages. Nevertheless, the potential detrimental effects of these noncaloric monosaccharides on blood vessel function remain inadequately understood. We have established a zebrafish model that exhibits significant excessive angiogenesis induced by high glucose, resembling the hyperangiogenic characteristics observed in proliferative diabetic retinopathy (PDR). Utilizing this model, we observed that glucose and noncaloric monosaccharides could induce excessive formation of blood vessels, especially intersegmental vessels (ISVs). The excessively branched vessels were observed to be formed by ectopic activation of quiescent endothelial cells (ECs) into tip cells. Single-cell transcriptomic sequencing analysis of the ECs in the embryos exposed to high glucose revealed an augmented ratio of capillary ECs, proliferating ECs, and a series of upregulated proangiogenic genes. Further analysis and experiments validated that reduced foxo1a mediated the excessive angiogenesis induced by monosaccharides via upregulating the expression of marcksl1a . This study has provided new evidence showing the negative effects of noncaloric monosaccharides on the vascular system and the underlying mechanisms.
+Artificially sweetened beverages containing noncaloric monosaccharides were suggested as healthier alternatives to sugar-sweetened beverages. Nevertheless, the potential detrimental effects of these noncaloric monosaccharides on blood vessel function remain inadequately understood. We have established a zebrafish model that exhibits significant excessive angiogenesis induced by high glucose, resembling the hyperangiogenic characteristics observed in proliferative diabetic retinopathy (PDR). Utilizing this model, we observed that glucose and noncaloric monosaccharides could induce excessive formation of blood vessels, especially intersegmental vessels (ISVs). The excessively branched vessels were observed to be formed by ectopic activation of quiescent endothelial cells (ECs) into tip cells. Single-cell transcriptomic sequencing analysis of the ECs in the embryos exposed to high glucose revealed an augmented ratio of capillary ECs, proliferating ECs, and a series of upregulated proangiogenic genes. Further analysis and experiments validated that reduced foxo1a mediated the excessive angiogenesis induced by monosaccharides via upregulating the expression of marcksl1a. This study has provided new evidence showing the negative effects of noncaloric monosaccharides on the vascular system and the underlying mechanisms.
 
 ## Introduction
 
@@ -33,33 +33,101 @@ The zebrafish has been recognized as a valuable animal model for studying metabo
 
 ## Results
 
-## Establishment of a short-term model of high glucose-induced excessive angiogenesis
+### Establishment of a short-term model of high glucose-induced excessive angiogenesis
 
 To establish the short-term zebrafish hyperangiogenenic model induced by high glucose treatment, we immersed the Tg(fli1aEP:EGFP-CAAX)ntu666 embryos, a transgenic line wherein the endothelial cells were labeled with membrane-bound GFP (Figure 1—figure supplement 1), in glucose solution within a wide range of concentrations and time windows (Figure 1—figure supplement 2). We subsequently measured the glucose concentration in the embryos. We found that the glucose concentration in the embryos treated with high glucose was significantly higher than that in the control group (Figure 1—figure supplement 3). We observed that exposing zebrafish embryos at either 24 hr post fertilization (hpf) or 48 hpf to a 6% D-glucose treatment for a duration exceeding 48 hr led to dramatically increased formation of blood vessels (Figure 1, Videos 1 and 2), especially intersegmental vessels (ISVs) in the indicated area (Figure 1b). The hyperbranched endothelial cells were observed to sprout from existing vessels, including the ISVs, dorsal aorta (DA), and dorsal lateral anastomotic vessel (DLAV) (Figure 1) in embryos treated with high glucose.
 
+![Video 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-video1.mp4.jpg)
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-v1.jpg)
+
+**Figure 1.:** (a) A diagram showing the glucose treatment time window and imaging time point. (b) A diagram indicating the imaging positions of the zebrafish embryos. (c) Confocal imaging analysis of the control and glucose-treated embryos. The red bar indicates position 1; the green bar indicates position 2. Arrowheads indicate the ectopic branching from the dorsal aorta. Stars indicate the ectopic vessels from intersegmental vessels (ISVs) and dorsal lateral anastomotic vessels (DLAVs). (d) Statistical analysis of the total length of ISVs in control and glucose-treated embryos (n=8). t-test, ****p<0.0001. (e) A diagram showing the glucose treatment time window and imaging time point. (f) Confocal imaging analysis of the control and glucose-treated embryos. The red bar indicates position 1; the green bar indicates position 2. Arrowheads indicate the ectopic branching from the dorsal aorta. Stars indicate the ectopic vessels from ISVs and DLAVs. (g) Statistical analysis of the total length of ISVs in control and glucose-treated embryos (n=8). t-test, ****p<0.0001. (h) A diagram showing the glucose treatment time window and imaging time point. (i) Confocal imaging analysis of the control and glucose-treated embryos. The red bar indicates position 1; the green bar indicates position 2. Arrowheads indicate the ectopic branching from the dorsal aorta. Stars indicate the ectopic vessels from ISVs and DLAVs. (j) Statistical analysis of the total length of ISVs in control and glucose-treated embryos (n=8). t-test, ****p<0.0001. (k) A diagram showing the glucose treatment time window and imaging time point. (l) Confocal imaging analysis of the control and glucose-treated embryos. The red bar indicates position 1; the green bar indicates position 2. Arrowheads indicate the ectopic branching from the dorsal aorta. Stars indicate the ectopic vessels from ISVs and DLAVs. (m) Statistical analysis of the total length of ISVs in control and glucose-treated embryos (n=8). t-test, ****p<0.0001. (o) A diagram showing the blood vessels in position 2 indicated in panel b of control embryos. (p) A diagram showing the blood vessels in position 2 indicated in panel b of high glucose-treated embryos.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) A diagram showing the glucose treatment time window and concentration measuring time point. (b) Statistical analysis of the glucose concentration in control and high glucose-treated embryos. One-way ANOVA, ****p<0.0001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a–c) Imaging analysis of control, glucose, and sucrase-treated embryos in bright field. (d) A diagram showing the sucrase treatment time window and imaging time point. (e) A diagram indicating the imaging positions of the zebrafish embryos. (f) Confocal imaging analysis of the control and sucrase-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. The red bar indicates position 1; the green bar indicates the position. (g) A diagram showing the sucrase treatment time window and imaging time point. (h) Confocal imaging analysis of the control and sucrase-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. The red bar indicates position 1; the green bar indicates the position.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a) A diagram showing the glucose treatment time window and imaging time point. (b–g’) Confocal imaging analysis of the control, 1%, 2%, 3%, and 4% glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos.
+
+![Video 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-video2.mp4.jpg)
+
 Additionally, these ectopically branched angiogenic sprouts were not perfused by blood flow. Despite the abnormal vessel formation, no significant developmental defects were observed in these treated embryos when examined under a bright-field microscope (Figure 1—figure supplement 4a–c). Moreover, no excessive angiogenic phenotype was observed in the embryos treated with 1%, 2%, 3%, and 4% D-glucose within the corresponding time frame (Figure 1—figure supplement 5).
 
-## Fructose and noncaloric monosaccharides induce excessive angiogenesis
+### Fructose and noncaloric monosaccharides induce excessive angiogenesis
 
 Fructose is a ketonic monosaccharide that is an energy source for living organisms. Therefore, our study investigated the potential effects of fructose on vascular dysfunction in comparison to glucose. The result demonstrated fructose-induced excessive angiogenesis in zebrafish embryos (Figure 2—figure supplement 1). Wondering whether the effects of glucose and fructose on vascular development were mediated by metabolic events, we then conducted the same tests by using other noncaloric monosaccharides, including L-glucose, D-mannose, D-ribose, and L-arabinose, which animals could not digest. Interestingly, we observed that all these noncaloric monosaccharides could induce excessive angiogenesis, among which the L-glucose purchased from two companies resulted in a similar phenotype as efficiently as D-glucose did (Figure 2a–h). To rule out the effect of osmotic pressure, we treated zebrafish embryos with isotonic disaccharides, including lactose, maltose, and sucrose, which did not cause a significant excessive angiogenic phenotype (Figure 1—figure supplement 4d and h; Figure 2—figure supplement 2). However, higher concentration disaccharide treatment can also cause excessive angiogenesis in zebrafish embryos (Figure 2—figure supplement 3). In addition, we also tested the effects of pyruvic acid but did not observe the excessive angiogenic phenotype in the embryos treated with pyruvic acid solution at 50 nM to 50 μM concentration (Figure 2—figure supplement 4). Furthermore, we examined the arterial and venous identity of the hyperbranched vessels via live imaging analysis of the high glucose-treated Tg(flt1:YFP::kdrl:ras-mCherry) line, in which the YFP expression in the artery was relatively higher than that in the vein (Krueger et al., 2011). The result revealed that the hyperbranched ectopic vessels comprised arteries and veins (Figure 2i and j).
 
-## High glucose promotes quiescent endothelial differentiation into tip cells
+![Figure 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig2-v1.jpg)
+
+**Figure 2.:** (a) A diagram showing the monosaccharides treatment time window and imaging time point. (b) A diagram indicating the imaging position of the zebrafish embryos. (c–g) Confocal imaging analysis of the control and monosaccharides, including L-glucose, D-mannose, D-ribose, and L-arabinose, treated embryos. Arrowheads indicate the ectopic branching from the dorsal aorta. Stars indicate the ectopic vessels from intersegmental vessels (ISVs). (h) Statistical analysis of the total length of ISVs in control and monosaccharides-treated embryos (n=5). (i, j) Confocal imaging analysis of the control and glucose-treated embryos. Arrowheads indicate the ectopic branching of arteries. Stars indicate the ectopic branching of veins. t-test, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) A diagram showing the fructose treatment time window and imaging time point. (b) A diagram indicating the imaging position of the zebrafish embryos. (c, d) Confocal imaging analysis of the control and glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (e, f) Imaging analysis of control and fructose-treated embryos in bright field.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) A diagram showing the lactose and maltose treatment time window and imaging time point. (b–d’’) Confocal imaging analysis of the control, lactose-, and maltose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) A diagram showing the sucrase and maltose treatment time window and imaging time point. (b) Confocal imaging analysis of the control and sucrase-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (c) Statistical analysis of the total length of intersegmental vessels (ISVs) in control and sucrase-treated embryos (n=5). t-test, ****p<0.0001. (d) Confocal imaging analysis of the control and maltose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (a) A diagram showing the pyruvic acid treatment time window and imaging time point. (b) Confocal imaging analysis of the pyruvic acid-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (c) A diagram showing the pyruvic acid treatment time window and imaging time point. (d) Confocal imaging analysis of the pyruvic acid-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos.
+
+### High glucose promotes quiescent endothelial differentiation into tip cells
 
 Given that a high glucose shock has been observed to induce excessive angiogenesis in 48 hpf embryos, it was hypothesized that the shock might play a crucial role in regulating the differentiation of quiescent endothelial cells (ECs) into active tip cell-like cells and their subsequent behaviors. To investigate whether this was the case, we observed the behaviors of these ECs by confocal time-lapse imaging analysis. As shown in the result, in control Tg(fli1aEP:EGFP-CAAX)ntu666 embryos, no significant activation of tip cells in the angiogenic sprouts was observed in the generated ISVs, DA, and DLAV in the embryos aged from 48 hpf to 5 dpf. Moreover, only a few ECs in established ISVs, DA, and DLAV extended filopodia, which quickly retracted (Figure 3a–c, Video 3). However, many ECs initiated sprouting angiogenesis in the high glucose-treated embryos, extended dynamic filopodia to sense the surroundings, and formed excessive ectopic blood vessels (Figure 3, Video 4). In a snapshot, we observed that some of the ECs protruded long and intricate sprouts simultaneously (Figure 3f), and nearly all the ECs within an ISV underwent the outgrowth of filopodia in some extreme cases (Figure 3g), suggesting that the high glucose treatment induced the endothelial differentiation into tip cell-like cells. Furthermore, we observed that these outgrowths of the ectopic angiogenic sprouts could establish a connection to the neighboring sprouts and vessels and thereby form complicated vascular structures (Figure 1c, f, i, l, and p).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig3-v1.jpg)
 
-**Figure 3.:** (a) A diagram showing the confocal time-lapse imaging time window. (b) A diagram indicating the imaging position of the zebrafish embryos. (c) Confocal time-lapse imaging analysis of blood vessels in control Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666d) A diagram showing the glucose treatment time window and confocal time-lapse imaging time window. (e) Confocal time-lapse imaging analysis of blood vessels in glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. Arrowheads indicate the ectopic angiogenic branches. (ntu666f) A snapshot of confocal time-lapse imaging analysis of blood vessels in glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. Z stacks were used to make 3D color projections, where blue represents the most proximal (closest to the viewer), and red represents the most distal (farthest from the viewer). Arrowheads indicate ectopic angiogenic sprouts. (ntu666g) A snapshot of confocal time-lapse imaging analysis of an intersegmental vessel (ISV) in glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. Arrowheads indicate ectopic angiogenic sprouts. (ntu666h-j’) The feature plot of tip cell marker genes esm1, apln and cxcr4a of control and high glucose group in arterial and capillary ECs. (k) The violin plot of tip cell marker genes esm1, apln and cxcr4a of control and high glucose group in arterial and capillary ECs.
+**Figure 3.:** (a) A diagram showing the confocal time-lapse imaging time window. (b) A diagram indicating the imaging position of the zebrafish embryos. (c) Confocal time-lapse imaging analysis of blood vessels in control Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (d) A diagram showing the glucose treatment time window and confocal time-lapse imaging time window. (e) Confocal time-lapse imaging analysis of blood vessels in glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. Arrowheads indicate the ectopic angiogenic branches. (f) A snapshot of confocal time-lapse imaging analysis of blood vessels in glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. Z stacks were used to make 3D color projections, where blue represents the most proximal (closest to the viewer), and red represents the most distal (farthest from the viewer). Arrowheads indicate ectopic angiogenic sprouts. (g) A snapshot of confocal time-lapse imaging analysis of an intersegmental vessel (ISV) in glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. Arrowheads indicate ectopic angiogenic sprouts. (h-j’) The feature plot of tip cell marker genes esm1, apln and cxcr4a of control and high glucose group in arterial and capillary ECs. (k) The violin plot of tip cell marker genes esm1, apln and cxcr4a of control and high glucose group in arterial and capillary ECs.
 
-## Single-cell transcriptomic sequencing analysis of the ECs isolated from glucose-treated embryos
+![Video 3.](https://cdn.elifesciences.org/articles/95427/elife-95427-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/95427/elife-95427-video4.mp4.jpg)
+
+### Single-cell transcriptomic sequencing analysis of the ECs isolated from glucose-treated embryos
 
 We did a single-cell transcriptomic sequencing analysis to gain more insight into the potential mechanism through which glucose activates the ECs. Due to the limited presence of ECs within the zebrafish embryos, the analysis of these cells poses a challenge. First, we isolated the EGFP-positive cells from control and high glucose-treated embryos. Following the proteolytic dissociation of embryos, the EGFP-positive cells were isolated by fluorescence-activated cell sorting. Around 300–500 zebrafish embryos were used for the ECs collection for each stage. The isolated ECs were analyzed using a large-scale scRNA-seq (10X Genomics) platform, and the pipeline is illustrated in the diagram (Figure 4a). Multiple criteria were applied to select the single cells, including the retention of the genes that were expressed (Unique Molecular Identifiers or UMI larger than 0) in at least three individual cells, the selection of cells with the gene expression count falling within the range of 500–3000, and the imposition of a threshold wherein the proportion of sequencing reads derived from the mitochondrial genome was limited to less than 5% (Figure 4—figure supplement 1, Figure 4—figure supplement 2, Supplementary file 1). Ultimately, 6006 ECs were selected for further analysis (Supplementary file 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic diagram of the single-cell sequencing process. 300 embryos in the control group and 300 in the high glucose group were used, and ECs were sorted by GFP fluorescent using fluorescence-activated cell sorting (FACS) technology. (b) The measured cells were divided into six individual clusters based on gene expression profiles using UMAP. (c–h) The violin plots of some EC marker genes. (i) The proportion of ECs in each cluster of control and high glucose groups. (j) Changes of ECs percentage in arterial and capillary ECs, endocardium, and proliferating ECs of control and high glucose group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Before filtering. (b) After filtering. Cell selection criteria: 500<number of genes<3000; 0<percentage of mitochondrial UMIs<5%.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** All single cells (after filtering) from the control and D-glucose treated were included in this illustration.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) The heatmap of differentially expressed genes (DEGs). (b) Volcano map of DEGs after high D-glucose treatment. (c) Volcano map of DEGs after high L-glucose treatment.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) The heatmap of gluconeogenesis-related genes. (b) The heatmap of glycolysis-related genes. (c) The heatmap of oxidative phosphorylation-related genes.
 
 Through clustering analysis of gene expression, these ECs were categorized into six clusters using UMAP. These clusters include cluster 0, which consists of arterial and capillary ECs; cluster1, comprising endocardium; cluster2, consisting of venous and lymphatic ECs; cluster3, comprising arch ECs; cluster4, encompassing proliferating ECs; and cluster5, consisting of vesicle-enriched ECs (Figure 4b). The endothelial marker gene cdh5 was expressed in all the clusters (Figure 4c). The notch ligand dlc was highly expressed in arterial, capillary ECs, and arch ECs (Figure 4d). The dab2 and prox1 were mainly enriched in venous and lymphatic ECs (Figure 4e and f). The cdk1, a key player in cell cycle regulation, was specifically expressed in proliferating ECs (Figure 4h). It was revealed that the ratio of arterial and capillary ECs and proliferating ECs was increased in the high glucose-treated embryos (Figure 4i and j), consistent with the observation that glucose treatment resulted in excessive sprouting angiogenesis of ISVs. In addition, we examined tip cell marker genes in arterial and capillary ECs. The results showed that the expression of esm1, cxcr4a, and apln was significantly upregulated after high glucose treatment (Figure 3h–k), consistent with our observation that high glucose treatment induced the endothelial differentiation into tip cell-like cells (Figure 3f and g).
 
 We also performed the whole embryo transcriptome sequencing after high D-glucose and L-glucose treatment. We analyzed and compared the differentially expressed genes (DEGs) of control, high D-glucose-treated, and high L-glucose-treated embryos. The results revealed that 1259 and 1074 genes were upregulated significantly in high D-glucose- and high L-glucose-treated embryos, respectively, compared with the control (Figure 4—figure supplement 3). After that, we analyzed the expression of the genes related to metabolic pathways and found significant alteration in the expression of several genes involved in gluconeogenesis, glycolysis, and oxidative phosphorylation (Figure 4—figure supplement 4).
 
-## Foxo1a was significantly downregulated in arterial and capillary ECs
+### Foxo1a was significantly downregulated in arterial and capillary ECs
 
 To identify the potential molecules responsible for increasing the proportion of arterial and capillary ECs in the embryos treated with glucose, we analyzed and compared the DEGs in arterial and capillary ECs of control and glucose-treated ECs. The results revealed that 1201 genes were upregulated and 523 genes were downregulated significantly (Figure 5a). Gene ontology (GO) analysis revealed that these DEGs were enriched in several biological processes, including regulation of actin filament organization, blood vessel morphogenesis, development, angiogenesis, etc. (Figure 5b).
 
@@ -73,11 +141,23 @@ To further validate that the excessive angiogenesis induced by high glucose was 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig6-v1.jpg)
 
-**Figure 6.:** (a) A diagram showing the high glucose treatment time window and heat shock-treated time point. (b) Confocal imaging analysis of blood vessels in control Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666c) Confocal imaging analysis of blood vessels in high glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666d–d’) Confocal imaging analysis of blood vessels in hsp70l:foxo1a-P2A-mCherry and high glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666e) Statistical analysis of the total length of intersegmental vessels (ISVs) in control, high glucose-treated, hsp70l:foxo1a-P2A-mCherry, and high glucose-treated embryos (n=6), respectively. One-way ANOVA, ****p<0.0001. (f) A diagram showing the high glucose treatment time window and imaging time point. (g) Confocal imaging analysis of blood vessels in high glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666h) Confocal imaging analysis of blood vessels in fli1EP:foxo1a-mApple and high glucose-treated Tg(fli1aEP:EGFP-CAAX) embryos. (ntu666i) Statistical analysis of the number of sprouts per ISV in high glucose-treated embryos, and fli1EP:foxo1a-mApple and high glucose-treated embryos (n=9). t-test, ****p<0.0001. (j) Statistical analysis of the total length of ISVs in high glucose-treated embryos, and fli1EP:foxo1a-mApple and high glucose-treated embryos (n=8). t-test, ***p<0.001.
+**Figure 6.:** (a) A diagram showing the high glucose treatment time window and heat shock-treated time point. (b) Confocal imaging analysis of blood vessels in control Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (c) Confocal imaging analysis of blood vessels in high glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (d–d’) Confocal imaging analysis of blood vessels in hsp70l:foxo1a-P2A-mCherry and high glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (e) Statistical analysis of the total length of intersegmental vessels (ISVs) in control, high glucose-treated, hsp70l:foxo1a-P2A-mCherry, and high glucose-treated embryos (n=6), respectively. One-way ANOVA, ****p<0.0001. (f) A diagram showing the high glucose treatment time window and imaging time point. (g) Confocal imaging analysis of blood vessels in high glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (h) Confocal imaging analysis of blood vessels in fli1EP:foxo1a-mApple and high glucose-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (i) Statistical analysis of the number of sprouts per ISV in high glucose-treated embryos, and fli1EP:foxo1a-mApple and high glucose-treated embryos (n=9). t-test, ****p<0.0001. (j) Statistical analysis of the total length of ISVs in high glucose-treated embryos, and fli1EP:foxo1a-mApple and high glucose-treated embryos (n=8). t-test, ***p<0.001.
 
-## Monosaccharides induced excessive angiogenesis through the foxo1a-marcksl1a pathway
+### Monosaccharides induced excessive angiogenesis through the foxo1a-marcksl1a pathway
 
 A previous study has reported that marcksl1a overexpression in ECs in zebrafish led to a significant increase in filopodia formation, similar to the phenotype we observed in response to high glucose treatment (Kondrychyn et al., 2020). Our analysis of the single-cell sequencing data revealed a significant upregulation of marcksl1a in arterial and capillary ECs following high glucose treatment, compared to the ECs marker gene kdrl (Figure 7a and b). The real-time quantitative PCR (qPCR) and ISH experiments further confirmed the elevated expression levels of marcksl1a following high D-glucose and L-glucose treatment (Figure 7c and d). Then, by constructing the transgenic zebrafish line hsp70l:marcksl1a-p2A-mCherry::Tg(fli1a:EGFP-CAAX) ntu666, we conducted the experiments to overexpress marcksl1a in zebrafish and subsequently observed the vascular developmental phenotype. After 1 hr of heat shock at 24 hpf and confocal imaging analysis at 72 hpf, significantly increased blood vessel formation was observed in embryos overexpressing marcksl1a, compared with the control group (Figure 7e–g).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig7-v1.jpg)
+
+**Figure 7.:** (a) The violin plot of endothelial cells (ECs) marker gene kdrl of control and high glucose group in arterial and capillary ECs. (b) The violin plot of gene marcksl1a of control and high glucose group in arterial and capillary ECs. (c) Real-time PCR analysis of marcksl1a expression in control, high glucose-, and high L-glucose-treated embryos (n=6). t-test, ****p<0.0001. (d) Whole-mount in situ hybridization analysis of marcksl1a in control, high glucose, and high L-glucose-treated embryos. (e–f’) Confocal imaging analysis of blood vessels in control and hsp70l:marcksl1a-P2A-mCherry-injected Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (g) Statistical analysis of the total length of intersegmental vessels (ISVs) in control and hsp70l:marcksl1a-P2A-mCherry-injected embryos (n=5). t-test, **p<0.01.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The DNA binding domain of mouse FOXO1 is demarcated with blue.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/95427/elife-95427-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (a) A diagram showing the Lenvatinib treatment time window and imaging time point. (b) Confocal imaging analysis of the control and Lenvatinib-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos. (c) A diagram showing the Lenvatinib treatment time window and imaging time point. (d) Confocal imaging analysis of the control and Lenvatinib-treated Tg(fli1aEP:EGFP-CAAX)ntu666 embryos.
 
 Given the results obtained from marcksl1a overexpression and loss of function of foxo1a, we hypothesized that marcksl1a might be a target gene of Foxo1a. Therefore, we investigated the impact of Foxo1 inhibition on marcksl1a expression in zebrafish embryos. As expected, qPCR analysis revealed that inhibition of Foxo1a by AS1842856 resulted in the upregulation of marcksl1a expression. In contrast, Foxo1a overexpression resulted in the downregulation of marcksl1a (Figure 8a–c), which suggested that Foxo1a might negatively regulate marcksl1a transcription in zebrafish. To further confirm it, we performed the chromatin immunoprecipitation (ChIP) experiment to validate the potential binding interaction between Foxo1 and marcksl1a. Since the amino acid sequence and DNA binding motifs of Foxo1 are highly conserved between zebrafish and mice (Figure 7—figure supplement 1), we analyzed the 3 kb promoter region of marcksl1a to search the binding site (BS) sequence of mouse FOXO1 presented in the JASPAR database. Two candidate BS were found at −265 to −275 (BS1) and −153 to −163 (BS2) nucleotides upstream of the TSS of marcksl1a (Figure 8d) and then used for the ChIP-PCR assay detection. The results showed that Foxo1a was enriched in both the predicted binding sites of marcksl1a (Figure 8e) in zebrafish. Luciferase reporter assay also indicated that Foxo1a could negatively regulate marcksl1a transcription in zebrafish (Figure 8f and g).
 
@@ -105,46 +185,46 @@ In conclusion, to investigate the effects of monosaccharides on vascular develop
 
 ## Materials and methods
 
-## Zebrafish
+### Zebrafish
 
 Care and breeding of zebrafish were carried out as previously described (Wang et al., 2016). Animal experiments were conducted according to local institutional laws and Chinese law for the Protection of Animals. The following transgenic strains were used: Tg(fli1aEP:EGFP-CAAX)ntu666 and Tg(kdrl:ras-mCHerry) (Krueger et al., 2011). Embryos were obtained through natural mating and maintained at 28.5°C. The stages of zebrafish embryos are defined as previously described (Wang et al., 2016). Embryos were treated with 0.2 mM 1-phenyl-2-thiourea (PTU, Sigma, P7629) to block pigmentation for further imaging analysis.
 
-## Monosaccharides and drug treatment
+### Monosaccharides and drug treatment
 
 The D-glucose (Sigma, G7021-100g), L-glucose (Sigma, G5500-1g; J&K, 981195-1g), D-fructose (Sigma, F0127-100g), L-rhamnose monohydrate (Aladdin, R108982), D-sorbitol (Sigma, S1876-100g), D-mannitol (Sigma, M4125-100g), D-(-)-ribose (Sigma, V900389-25g), L-(+)-arabinos (Sigma, V900920-25g), mannose (Sigma, M2069-25g), and sucrose (Sigma, V900116-500G) were dissolved in E3 solution. Zebrafish embryos at 24 hpf to 48 hpf were placed in 24-well plates (10 embryos per well) and immersed in the solution at the presetting concentrations and time windows. Then, put it in a 28°C incubator for cultivation. Five days before embryonic development, a stereo fluorescence microscope and a laser confocal microscope were used to observe the changes in blood vessel phenotype. For the drug treatment, the embryos were co-incubated in glucose with Lenvatinib (Selleck, S1164-5MG) at the presetting concentrations and time window. Foxo1 inhibitor AS1842856 (MCE, HY-100596) was dissolved in DMSO and stored at –80°C and diluted with E3 solution to 1 μM when used. The same concentration of DMSO was used as a negative control.
 
-## Glucose concentration measurement
+### Glucose concentration measurement
 
 Glucose concentration in the embryo was measured as described previously (Da’as et al., 2023). Embryos that developed to 75% epiboly were selected and transferred to 24-well plates (10 embryos per well) and immersed in the solution at the presetting concentrations and time windows. For glucose concentration measurement, embryos (n=20) were transferred to a new 1.5 mL tube, rinsed three times with 1× PBS, and immersed in ice for the following experiments. Discard the PBS as much as possible, embryos homogenized using a hand homogenizer, and centrifuged at 14,000×g for 10 min. 1.5 μL of the supernatant was used to measure the total free-glucose level using a glucometer (Baye, 7600P).
 
-## Whole-mount ISH
+### Whole-mount ISH
 
 Whole-mount ISH and the preparation of antisense RNA probes were performed as described in the previous protocol (Huang et al., 2013). Briefly, the marcksl1a and foxo1a cDNA fragments were cloned with the specific primers listed below using the wild-type embryo (AB) cDNA library. Probes were synthesized using the in vitro DIG-RNA labeling transcription Kit (Roche, 11175025910) with linearized pGEM-T easy vector containing marcksl1a or foxo1a gene fragment as the templates. Synthesized probes were purified with LiCl (Invitrogen, AM9480) and diluted to 1 ng/µL for hybridization. Zebrafish embryos were collected and fixed with 4% paraformaldehyde overnight at 4°C, then dehydrated with methanol gradients and stored at –20°C in 100% methanol. The hybridization result was detected with anti-DIG-AP antibody (1:2000, Roche, 11093274910) and NBT/BCIP (1:500, Roche, 11681451001). After hybridization, images of the embryos were captured with an Olympus stereomicroscope MVX10. The primers are listed below:
 
-## Single-cell gene expression profile analysis
+### Single-cell gene expression profile analysis
 
 Cell Ranger 3.0.2 (https://github.com/10XGenomics/cellranger; 10xGenomics Company, 2019) was used to convert the raw sequencing data to a single-cell level gene count matrix. The clustering of single cells and the marker genes in each cluster were analyzed by Seurat 3.0 (https://satijalab.org/seurat/install.html; Stuart et al., 2019). Several criteria were applied to select the single cells, including only keeping the genes that are expressed (UMI larger than 0) at least in three single cells, selecting single cells with the number of expressed genes at the range between 500 and 3000, and requiring the percentage of sequencing reads on mitochondrial genome being less than 5 percentage. Furthermore, sctransform method (Hafemeister and Satija, 2019) was applied to remove technical variation, and ClusterProfiler (Yu et al., 2012; Yu et al., 2019) was used to do the GO enrichment analysis based on the marker genes of each cell cluster. Detailed information about the data processing can be found in this project’s source code (https://github.com/gangcai/ZebEndoimmune; Xie, 2024).
 
-## Gene expression analysis by real-time qPCR
+### Gene expression analysis by real-time qPCR
 
 Total RNA was extracted from zebrafish embryos using TRIzol (Invitrogen, 15596026) and stored at –80°C. The cDNA was then synthesized using the HiScript II Q RT SuperMix for qPCR Kit (Vazyme, R223-01) according to the manufacturer’s instructions. qPCR was performed in triplicates using the Taq Pro Universal SYBR qPCR Master Mix (Vazyme, Q712-02) on a real-time PCR detection system (StepOne Real-Time PCR Systems). The primers used for real-time PCR analysis are as follows:
 
-## Transgenic and heat shock
+### Transgenic and heat shock
 
 The Tg(fli1aEP:EGFP-CAAX)ntu666 line was established using a construct fli1aEP:EGFP-CAAX, which was generated using MultiSite Gateway technology, the tol2 kit as previously described (Kwan et al., 2007). The 5’ Entry p5Efli1ep (#31160) purchased from Addgene was originally from Nathan Lawson Lab (Villefranc et al., 2007). Three entry clones and the pDestTol2pA2 destination vector were used to generate the expression construct by LR recombination reaction as described in the Multisite Gateway Manual book. The expression constructs were synthesized by GENEWIZ company. The zebrafish embryos were immersed in a 37°C water bath for 1 hr for heat shock. Around 75 pg of expression plasmid DNA and 25 pg tol2 transposase mRNA were premixed and microinjected into single-cell fertilized eggs.
 
-## ChIP-PCR
+### ChIP-PCR
 
 Embryos injected with hsp70l:foxo1a-6×His-P2A-mCherry were collected at 72 hpf after heat shock treatment. According to the manufacturer’s instructions, the ChIP-PCR assay was performed using the ChIP Assay Kit (Millipore, 3753379). The genomic DNA crossed with Foxo1a protein was immunoprecipitated by using 5 μg Anti-6×His tag antibody (abcam, ab213204). Antibody against lgG was used as a negative control. The semiquantitative PCR was performed with KODfx (TOYOBO, KFX-101) at the following conditions: 94°C for 5 min; 35 cycles of 98°C for 10 s, 55°C for 30 s, 68°C for 10 s; 68°C for 10 min. The PCR primers used for the predicted BS are as follows:
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 Plasmids of PGL4.10[luc2] and PGL4.74[hRluc/TK] (Promega) were used for luciferase reporter assay. Zebrafish marcksl1a promoter fragment with predictive Foxo1a-binding cite was cloned and inserted into pGL4.10 basic vector by Kpn I and Hind III. The assays for detecting the promoter activity in response to Foxo1a were performed according to the previous study. Briefly, 50 pg of PGL4.10 vectors, 1 pg of PGL4.74 vectors, and 50 pg of foxo1a mRNA or 20 pg of foxo1a MO were co-injected into wild-type embryos at the one-cell stage. And then, embryos were harvested at 24 hpf to measure their luciferase activity according to the manufacturer’s protocols (Promega).
 
-## Imaging analysis
+### Imaging analysis
 
 For confocal imaging of blood vessels in fluorescence protein labeled transgenic zebrafish embryos, they were anesthetized with egg water/0.16 mg/mL MS222 (Sigma, A5040)/1% PTU and embedded in 0.5–0.8% low melting agarose. Confocal imaging was performed with a Nikon A1R HD25 Confocal Microscope. Analysis was performed using Nikon-NIS-Elements software. The bright-field images were acquired with an Olympus DP71 camera on an Olympus stereomicroscope MVX10.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with a Student’s t-test. All data is presented as mean ± SEM; p<0.05 was considered statistically significant.

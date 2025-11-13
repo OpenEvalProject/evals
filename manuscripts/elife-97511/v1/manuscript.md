@@ -15,16 +15,16 @@
 ### Affiliations
 
 1. Fujian Provincial Key Laboratory of Agroecological Processing and Safety Monitoring Fuzhou China
-2. https://ror.org/01pn91c28 Agricultural College, Anhui Science and Technology University Chuzhou China
-3. https://ror.org/019bev041 State Key Laboratory of Proteomics, Beijing Proteome Research Center, National Center for Protein Sciences (Beijing), Beijing Institute of Lifeomics Beijing China
-4. https://ror.org/04kx2sy84 Key Laboratory of Crop Ecology and Molecular Physiology (Fujian Agriculture and Forestry University), Fujian Province University Fuzhou China
-5. https://ror.org/018yw5541 Key Laboratory of Marine Biotechnology of Fujian Province, Institute of Oceanology, Fujian Agriculture and Forestry University Fuzhou China
+2. Agricultural College, Anhui Science and Technology University Chuzhou China ([ROR:01pn91c28](https://ror.org/01pn91c28))
+3. State Key Laboratory of Proteomics, Beijing Proteome Research Center, National Center for Protein Sciences (Beijing), Beijing Institute of Lifeomics Beijing China ([ROR:019bev041](https://ror.org/019bev041))
+4. Key Laboratory of Crop Ecology and Molecular Physiology (Fujian Agriculture and Forestry University), Fujian Province University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))
+5. Key Laboratory of Marine Biotechnology of Fujian Province, Institute of Oceanology, Fujian Agriculture and Forestry University Fuzhou China ([ROR:018yw5541](https://ror.org/018yw5541))
 
 † Corresponding author
 
 ## Abstract
 
-Protein N Ɛ -lysine acetylation (Kac) modifications play crucial roles in diverse physiological and pathological functions in cells. In prokaryotic cells, there are only two types of lysine deacetylases (KDACs) that are Zn 2+ - or NAD + -dependent. In this study, we reported a protein, AhCobQ, in Aeromonas hydrophila ATCC 7966 that presents NAD + - and Zn 2+ -independent KDAC activity. Furthermore, its KDAC activity is located in an unidentified domain (from 195 to 245 aa). Interestingly, AhCobQ has no homology with current known KDACs, and no homologous protein was found in eukaryotic cells. A protein substrate analysis showed that AhCobQ has specific protein substrates in common with other known KDACs, indicating that these KDACs can dynamically co-regulate the states of Kac proteins. Microbiological methods employed in this study affirmed AhCobQ’s positive regulation of isocitrate dehydrogenase (ICD) enzymatic activity at the K388 site, implicating AhCobQ in the modulation of bacterial enzymatic activities. In summary, our findings present compelling evidence that AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.
+Protein NƐ-lysine acetylation (Kac) modifications play crucial roles in diverse physiological and pathological functions in cells. In prokaryotic cells, there are only two types of lysine deacetylases (KDACs) that are Zn2+- or NAD+-dependent. In this study, we reported a protein, AhCobQ, in Aeromonas hydrophila ATCC 7966 that presents NAD+- and Zn2+-independent KDAC activity. Furthermore, its KDAC activity is located in an unidentified domain (from 195 to 245 aa). Interestingly, AhCobQ has no homology with current known KDACs, and no homologous protein was found in eukaryotic cells. A protein substrate analysis showed that AhCobQ has specific protein substrates in common with other known KDACs, indicating that these KDACs can dynamically co-regulate the states of Kac proteins. Microbiological methods employed in this study affirmed AhCobQ’s positive regulation of isocitrate dehydrogenase (ICD) enzymatic activity at the K388 site, implicating AhCobQ in the modulation of bacterial enzymatic activities. In summary, our findings present compelling evidence that AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.
 
 ## Introduction
 
@@ -38,15 +38,39 @@ In this study, we fortuitously identified the protein AhCobQ in Aeromonas hydrop
 
 ## Results
 
-## The physiological phenotypes of AhCobQ are different from those of AhCobB
+### The physiological phenotypes of AhCobQ are different from those of AhCobB
 
 This project proceeded from the misunderstanding that AhCobQ and AhCobB may be homologous proteins because AhCobQ is annotated as a CobQ/CobB/MinD/ParA family protein in the UniProt database. Therefore, we constructed ahcobB and ahcobQ mutant strains (Figure 1A) and compared their general physiological phenotypes. When compared to the wild-type strain (WT), the deletion of ahcobB did not affect the hemolytic or swarming ability of A. hydrophila. Notably, ΔahcobQ did not affect the hemolytic ability either but significantly increased the swarming ability (Figure 1B, C and Figure 1—figure supplement 1). Most interestingly, ΔahcobB sharply increased, while ΔahcobQ significantly decreased, the bacterial biofilm formation ability (Figure 1D). These results indicated that CobB and CobQ in A. hydrophila may play different roles in biological functions.
 
-## AhCobQ and AhCobB are not homologous proteins
+![Figure 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig1-v1.jpg)
+
+**Figure 1.:** (A) Construction of ahcobB- and ahcobQ-defective strains. M: Marker; Lanes 1 and 3: PCR products of wild-type (WT) using the P7/P8 primer pairs of ahcobB and ahcobQ, respectively; Lanes 2 and 6: PCR products of ΔahcobB and ΔahcobQ, respectively, using P7/P8 primer pairs; Lanes 5 and 7: PCR products of WT using P5/P6 primer pairs of ahcobB and ahcobQ, respectively; Lanes 4 and 8: PCR products of ΔahcobB and ΔahcobQ, respectively, using the P5/P6 primer pairs. (B) Bacterial migration ability; (C) hemolytic activity; (D) histogram of the biofilm formation ability (OD 595 nm). **p<0.005.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig1-figsupp1-v1.jpg)
+
+### AhCobQ and AhCobB are not homologous proteins
 
 We then further investigated the evolutionary relationship between AhCobQ and AhCobB. To our surprise, we found that the proteins belong to different protein families. AhCobB (UniProt ID A0KKN9) belongs to a well-known NAD+-dependent protein deacylase sirtuin family and shares a highly homologous SIR2 domain with CobB sirtuins in many bacterial species, such as E. coli (NPD_ECOLI), S. typhimurium (NPD_SALTY), Pseudomonas nitroreducens (A0A246F352_9PSED), and even seven types of sirtuins in humans (Figure 2A). However, AhCobQ (UniProt ID A0KI27) shares an AAA_31 ATPase domain with several homologous proteins, such as cobalamin biosynthesis protein CobQ in P. nitroreducens (A0A246FC44_9PSED), probable plasmid partitioning protein in P. aeruginosa (G3XCW7_PSEAE), and chromosome partitioning ATPase in S. typhimurium (A0A0F6B556_SALT1). Moreover, AhCobQ also shares homology with Soj protein (A0KQY7_AERHH) and cell division inhibitor MinD (A0KK56_AERHH) in A. hydrophila as well (Figure 2B and Figure 2—figure supplement 1). Interestingly, this protein was not found to have homologous proteins in humans or mice species, indicating the significant evolutionary difference between AhCobQ and sirtuins.
 
-## AhCobQ is an NAD- and Zn2+-independent lysine deacetylase
+![Figure 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Homologous and conserved domain analysis of AhCobQ and AhCobB family proteins. (C, D) Dot blot and western blot verified the whole cell protein Kac level among WT, ΔahcobB, and ΔahcobQ strains. (E–H) Effect of NAD+, NAM, Zn2+, and ATP on KDAC enzymatic activity of AhCobQ.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) PCR amplification results of ahcobQ, ahcobB, and ahacuC gene, respectively; (B) SDS-PAGE gels of purified recombinant proteins AhCobQ, AhCoB, and AhAcuC, respectively. Lane M represents the DNA or protein marker. M: Marker; Lane 1: AhCobQ; Lane 2: AhCobB; Lane 3: AhAcuC.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Purified His-tag (A) and GST-fused (B) recombinant AhCobQ incubated with the substrate Kac-BSA, both in the absence and presence of 150 µM EDTA treatment, respectively.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp5-v1.jpg)
+
+### AhCobQ is an NAD- and Zn2+-independent lysine deacetylase
 
 Dot blot and western blot experiments showed that the deletion of ahcobQ or ahcobB both significantly increased the whole protein lysine acetylation levels in A. hydrophila cells (Figure 2C and D), which aroused our interest as to whether AhCobQ is a lysine deacetylase or not. To test this possibility, we purified AhCobQ, AhAcuC, and AhCobB proteins and incubated them in vitro with lysine acetylated-bovine serum albumin (Kac-BSA) as a protein substrate with and without NAD+ or Zn2+ treatment (Figure 2—figure supplement 2 and Figure 2—figure supplement 3). As a positive control, AhCobB and AhAcuC significantly deacetylated Kac-BSA in the presence of NAD+ or Zn2 + buffer, which met our expectations. However, AhCobQ clearly deacetylated Kac-BSA regardless of whether NAD+ or Zn2+ were present (Figure 2E and G). Moreover, the KDAC activity of AhCobB was inhibited when the sirtuin inhibitor nicotinamide (NAM) was added, but this did not affect the deacetylase activity of AhCobQ (Figure 2F). Furthermore, the introduction of the metal ion chelator, EDTA, had no discernible effect on the deacetylase activity of AhCobQ (Figure 2—figure supplement 4). These results strongly indicate that AhCobQ is an NAD+- and Zn2+-independent protein deacetylase. Additionally, since AhCobQ has an ATPase domain at the N-terminal, we also tested its deacetylase activity with or without ATP (Figure 2H and Figure 2—figure supplement 5). The results demonstrated that the KDAC activity of AhCobQ was ATP-independent, suggesting its enzymatic activity was downstream of the ATPase domain.
 
@@ -56,31 +80,63 @@ We further digested Kac-BSA to peptides after AhCobQ incubation and then subject
 
 **Figure 3.:** (A) Retention time of synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQAEDKacGACL-L-PK (STD*Kac) with or without AhCobB and AhCoQ treatment; (B) MS1 spectrum of synthetic peptides STD and STD*Kac with or without AhCobB and AhCobQ treatment; (C, D) MS2 spectrum of acetylated and unmodified peptides.
 
-## The deacetylase activity of AhCobQ is in an unidentified domain
+### The deacetylase activity of AhCobQ is in an unidentified domain
 
 Because AhCobQ has a conservative N-terminal AAA family ATPase domain (1–179 aa) and its KDAC activity was not affected by ATP, we then asked whether this domain has deacetylase activity. We divided and purified recombinant AhCobQ protein into two truncated protein fragments of 1–179 aa and 179–264 aa and then tested their deacetylase activities. To our surprise, the 179–264 aa protein fragment but not the 1–179 aa fragment showed NAD+- and Zn2+-independent deacetylase activity (Figure 4A). To better understand the deacetylase domain of AhCobQ, a total of 12 truncated protein fragments were constructed and purified, and their deacetylase activities were evaluated (Figure 4—figure supplement 1 and Figure 4A). As shown in Figure 4, the 1–179 aa, 200–255 aa, and 189–240 aa shortened proteins disrupted the deacetylase activity of AhCobQ to some extent, whereas the 179–264 aa, 189–264 aa, 199–264 aa, 195–264 aa, 195–255 aa, 189–245 aa, 189–250 aa, 189–255 aa, and 189–264 aa shortened proteins did not, indicating that the deacetylase activity may be in the 195–245 aa range. Interestingly, although the full amino acid sequence of AhCobQ (1–254 aa) is homologous with Soj protein (A0KQYT), site-determining protein (A0KI19 and A0KK56), and ParA family protein (A0KQG8) in A. hydrophila, the KDAC activity domain (195–245 aa) does not share homology with these proteins, which suggests the different biological roles among them. Moreover, AhCobQ (195–245 aa) also shares homology with several prokaryotic species, such as Aeromonas sp., Aliivibrio sp., Enterovibri sp., Oceanimonas sp., Photobacterium sp., and Vibrio sp., most of which are marine prokaryotes based on a PSI-BLAST program searching, but the search failed to find homologous proteins in eukaryotic cells (Figure 5). Therefore, the 195–245 aa shortened protein of AhCobQ may represent a new domain that exhibits NAD+- and Zn2+-independent deacetylase activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig4-v1.jpg)
+
+**Figure 4.:** Western blot analysis of the lysine acetylases and deacetylases (KDAC) activity of (A) AhCobQ1–179, AhCobQ179–264, AhCobQ1–264, AhCobQ189–264, AhCobQ199–264, AhCobQ195–264, AhCobQ195–255, and AhCobQ200–255; (C) AhCobQ179–264, AhCobQ189–264, AhCobQ189–255, AhCobQ189–250, AhCobQ189–245, and AhCobQ189–240 truncated proteins treated with Kac-BSA. The first lane represents Kac-BSA without AhCobQ truncated proteins. The upper part of the figure shows the WB results of the Kac level of truncated proteins with Kac-BSA, and the lower part shows the PVDF membrane R350 staining for the loading amount control. (B) Design of the series of truncated proteins and the summary of the WB results in this experiment. Blue indicates the AAA_31 domain (1–179 aa), and red indicates the unknown range (180–264 aa) in AhCobQ. Black and white indicate the positive and negative WB results, respectively, in this study.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The PCR amplification and SDS-PAGE results of purified recombinant truncated proteins (GST-fusion) 1: AhCobQ1–179; 2: AhCobQ179–265; 3: AhCobQ189–265; 4: AhCobQ189–255; 5: AhCobQ189–250; 6: AhCobQ189–245; 7: AhCobQ189–240; 8: AhCobQ195–255; 9: AhCobQ200–255; 10: AhCobQ179–225; 11: AhCobQ179–235; 12: AhCobQ179–245; 13: AhCobQ179–255; 14: AhCobQ189–265; 15: AhCobQ199–265; 16: AhCobQ209–265; 17: AhCobQ219–265.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig5-v1.jpg)
 
 **Figure 5.:** Different colors indicate different branches, and Aeromonas hydrophila spp. is highlighted in red.
 
-## AhCobQ, AhCobB, and AhAcuC deacetylate different acetylated proteins and sites
+### AhCobQ, AhCobB, and AhAcuC deacetylate different acetylated proteins and sites
 
 We then identified the proteins that were substrates of AhCobQ and analyzed the substrate differences among AhCobQ, AhCobB, and a predicted Zn2+-dependent deacetylase AhAcuC of A. hydrophila that is homologous to type I KDACs in eukaryotes. A quantitative lysine acetylome was generated to compare the differential expression of lysine-acetylated peptides among ahcobQ, ahcobB, and ahacuC gene-deficient strains and their WT strain (Figure 6, Figure 6—figure supplement 1, Figure 6—figure supplement 2, Figure 6—figure supplement 3 and Supplementary file 1b). We only focused on the upregulated lysine-acetylated peptides between the mutant and WT strains. When compared to WT, the deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52 Kac sites (corresponding to 47 Kac proteins), 370 Kac sites (291 proteins), and 197 Kac sites (176 proteins), respectively. Moreover, there were 19 increased Kac peptides common between the ΔahcobQ and ΔahacuC strains, 10 increased Kac peptides common between the ΔahcobQ and ΔahcobB strains, 69 increased Kac peptides common between the ΔahcobB and ΔahacuC strains, and four peptides common among the ΔahcobQ, ΔahcobB, and ΔahacuC strains (Figure 6A). We also found that there were only 531 Kac peptides directly regulated by these three deacetylases, which is only a small proportion of the total Kac peptides (accounting for 10.28% of all 3163 Kac peptides identified in the current study), indicating the presence of other unknown KDACs in this bacterium.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-v1.jpg)
+
+**Figure 6.:** (A) Venn diagrams visualized the overlapped upregulated NƐ-lysine acetylation (Kac) proteins and Kac peptides among the ΔahcobB, ΔahcobQ, ΔahacuC, and WT strains. The number of acetylated proteins and peptides (sites) are shown in the figure. (B) Kyoto Encyclopedia of Genes and Genomes (KEGG) metabolic pathway enrichment analysis of upregulated Kac proteins and peptides by the three lysine acetylases and deacetylases (KDACs). Unique and overlapped Kac proteins and peptides (sites) are presented in different colors.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** hydrophila ahacuC knockout mutant strain. M: Marker; Lanes 1 and 2: PCR products of wild-type (WT) and ΔahacuC using the P7/P8 primer pairs; Lanes 3 and 4: PCR products of WT and ΔahacuC using the P5/P6 primer pairs.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp2-v1.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Mass error distribution of total identified NƐ-lysine acetylation (Kac) peptides; (B–D) Volcano plot of the p-values vs. the log2 Kac peptide abundance differences between ΔahcobQ vs. WT, ΔahcobB vs. WT, and ΔahacuC vs. WT, with upregulated Kac proteins outside the significance lines colored in red. Some representative Kac protein names are highlighted.
+
 A KEGG pathway analysis showed that biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the ΔahcobQ strain (Figure 6B). Furthermore, five pathways, namely, pyrimidine metabolism, metabolic pathways, purine metabolism, pyruvate metabolism, and RNA polymerase, were enriched in upregulated Kac proteins under AhCobB-regulation. Of these three deacetylase mutants, ΔahacuC enriched the most metabolic pathways, although ΔahcobB regulated more Kac sites. Carbon metabolism, biosynthesis of antibiotics, and glycolysis/gluconeogenesis pathways were the top three enrichment pathways in the unique 119 Kac sites regulated by AhAcuC. Phosphotransferase system (PTS), microbial metabolism in diverse environments, and metabolic pathways were enriched in the upregulated Kac proteins common to the ΔahacuC and ΔahcobB mutants. In general, although there are different pathways involved in the activity of different deacetylases, most of the Kac proteins regulated by these KDACs were enzymes and normally had important roles in metabolic pathways.
 
-## Validation of the specificity of Kac proteins and sites by deacetylases
+### Validation of the specificity of Kac proteins and sites by deacetylases
 
 We further validated the specificity of Kac proteins and the sites regulated by these deacetylases. A total of three target proteins (SUN, ENO, and ArcA-2) were selected for validation due to their significantly upregulated Kac levels in the ΔahcobQ strain, potentially indicating their roles as substrates for AhCobQ. These proteins were first cloned and purified in E. coli. The anti-Kac western blot showed that these purified proteins did not have lysine acetylation signals, which may be because of the heterologous expression in an engineered bacterial strain. This was ideal for excluding signal interference from the background (Figure 7—figure supplement 1). Next, site-specific lysine acetylation of the target protein substrates was constructed using a two-plasmid-based system of genetically encoded NƐ-acetyllysine, which was purified and incubated with AhCobQ, AhCobB, and AhAcuC for western blot analysis against anti-lysine acetylation antibodies (Figure 7—figure supplement 2). As shown in Figure 7, when compared to untreated Kac proteins, the acetylation level of three Kac sites (K103 and K148 in SUN, K195 in ENO) that were uniquely regulated by AhCobQ according to quantitative acetylome analysis was significantly reduced after incubation with AhcobQ but unchanged after incubation with AhCobB or AhAcuC. Moreover, K26 in ArcA-2 was reduced in both AhCobB and AhCobQ incubations. These results were consistent with our quantitative acetylome results.
 
-## AhCobQ positively regulates the enzymatic activity of isocitrate dehydrogenase (ICD) at K388 site
+![Figure 7.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-v1.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** 1: SUN, 2: ENO, 3 ArcA-2, CK: Kac-BSA, M: prestained protein marker. CK is Kac-BSA as a positive control. The lower section presents the PVDF membrane R350 staining for the loading amount control.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The PCR products (right) and SDS-PAGE results of the target recombinant or site-directed acetylated proteins. (A) ArcA-2 and ArcA-2-K26; (B) SUN, SUN-K103, and SUN-K148; (C) ENO and ENO-K195.
+
+### AhCobQ positively regulates the enzymatic activity of isocitrate dehydrogenase (ICD) at K388 site
 
 To further understand the effect of AhCobQ on bacterial biological function, an AhCobQ substrate, A. hydrophila ICD was cloned and purified in E. coli (Figure 7—figure supplement 2). Western blot assay showed that this protein didn’t display lysine acetylation modification in E. coli (Figure 8A). Therefore, site-specific lysine acetylation was constructed at the K388 site of ICD for further enzymatic activity determination. As shown in Figure 8B, AhCobQ can significantly deacetylated ICD at K388, while the other two deacetylases, AhCobB and AhAcuC didn’t. This result is consistent with the proteomics conclusions. When compared with unKac ICD protein, the Kac at K388 of ICD significantly decreased the product of NADPH with the addition of NADP+ substrate, which indicates the Kac at K388 negatively regulates the enzymatic activity of ICD. Moreover, the adding of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD and quickly reached the platform period in 10 min, while AhCobB and AhAcuC didn’t affect ICD enzymatic activity (Figure 8C and D). These results indicate that AhCobQ positively regulates the enzymatic activity of isocitrate dehydrogenase by deacetylating the ICD protein at the K388 site.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig8-v1.jpg)
 
-**Figure 8.:** (A) Western blot verified the deacetylation effect of AhCobQ on ICD and ICD-K388; (B) Western blot verified the deacetylation effect of AhCobQ, AhCobB, and AhAcuC on ICD-K388. The PVDF membrane R350 staining for the loading amount control was displayed under the WB results; (C) Enzymatic activities of ICD (yellow), ICD-Kac388(blue), ICD-Kac388 treated with AhCobQ (red), ICD-Kac388 treated with AhCobB (green), ICD-Kac388 treated with AhAcuC (brown); (D) The histogram showed the effect of AhCobQ/AhcobB on ICD or ICD-Kac388 enzymatic activities at 5 min. ***p<0.001.Figure 8—source data 1.Figure 8A and B, indicating the relevant bands and treatments.Figure 8—source data 2.Figure 8A and B.
+**Figure 8.:** (A) Western blot verified the deacetylation effect of AhCobQ on ICD and ICD-K388; (B) Western blot verified the deacetylation effect of AhCobQ, AhCobB, and AhAcuC on ICD-K388. The PVDF membrane R350 staining for the loading amount control was displayed under the WB results; (C) Enzymatic activities of ICD (yellow), ICD-Kac388(blue), ICD-Kac388 treated with AhCobQ (red), ICD-Kac388 treated with AhCobB (green), ICD-Kac388 treated with AhAcuC (brown); (D) The histogram showed the effect of AhCobQ/AhcobB on ICD or ICD-Kac388 enzymatic activities at 5 min. ***p<0.001.
 
 ## Discussion
 
@@ -94,41 +150,41 @@ We then further asked whether the protein substrates of AhCobQ were the same as 
 
 To further validate our proteomics results, plasmid-based site-specific acetylation was introduced as a target of the recombinant proteins, and the deacetylase activity of the KDACs was determined in vitro. The behavior of the three KDACs on 4 target site-specific acetylated proteins was consistent with our proteomics results. AhCobQ regulated certain proteins at specific Kac sites, which implied that it is involved in specific biological functions. Moreover, AhCobQ and AhCobB also co-regulated the same Kac sites on ArcA-2 (Arginine deiminase), indicating that the cooperation of these KDACs may play an important role during the maintenance of cellular acetylation homeostasis. Most importantly, our results also showed that AhCobQ deacetylated different Kac sites on the same protein as AhCobB or AhAcuC. For example, the bacterial topoisomerase DNA gyrase GyrB is an essential enzyme that controls the topological state of DNA during replication (Tari et al., 2013). Previous studies reported the important role of GyrB in bacterial fluoroquinolone resistance (Chauffour et al., 2021; Li et al., 2022). The 3D structure prediction showed that GyrB K331 is located in the ATPase domain that is responsible for supercoiling DNA, whereas K449 is located in the Toprim domain that is required for the interaction with GyrA (Brino et al., 2000). Our current data showed that K331 and K449 were deacetylated by AhCobQ and AhCobB, respectively, indicating the delicate regulatory mechanisms in both functional domains. To our knowledge, this is the first evidence that different KDACs regulate the Kac level at specific sites of the same protein and that they may be involved in differential biological functions in prokaryotic cells. To our knowledge, it is the first evidence that different KADCs regulates the Kac level at specific-site of one protein and that may involve in differential biological functions in prokaryotic cell. We then further wondered the role of AhCobQ in bacterial biological functions. ICD is a key enzyme in the tricarboxylic acid cycle pathway, and also affects bacterial biofilm formation and virulence in several species (Venkat et al., 2018). Diverse Kac sites of bacterial ICD have been well identified. In E. coli K12, there are at least 15 Kac sites on ICD, and the Kac at K55 and K350 have been determined to play crucial roles on the enzymatic activity by a positively regulatory manner, while Kac at K100, K230, and K235 in a negatively regulatory manner. However, only four Kac sites including K55, K142, K177, and K350 have been proved to be deacetylated by CobB sirtuin obviously. In our quantitative MS data, there are at least ten Kac sites in ICD protein, while only the Kac level of ICD K388 was AhCobQ regulated and others were not altered in KADCs deleted strains. The following assay confirmed that the enzymatic activity of ICD was negatively regulated in a dose-dependent manner by deaectylated ICD K388 site by AhCobQ, whereas not affected by AhCobB and AhAcuC. These results indicate the important role of AhCobQ in bacterial metabolic regulation.
 
-## Conclusion
+### Conclusion
 
 In summary, here, we identified a novel NAD+- and Zn2+-independent deacetylase, AhCobQ, in prokaryotic cells, which does not share homology with current known deacetylases and is unique in prokaryotes. The deacetylase activity of this KDAC is through an unknown domain. Moreover, AhCobQ acetylates at least 47 protein substrates involved in many biological processes, especially metabolic pathways. We provide evidences that AhCobQ negatively regulates the enzymatic activity of bacterial isocitrate dehydrogenase at K388 site. These results indicate that AhCobQ has an important regulatory role in bacterial metabolic pathways. AhCobQ is a novel deacetylase in prokaryotic cells and its biological functions need to be further investigated.
 
-## Chemicals and reagents
+### Chemicals and reagents
 
 Ni-NTA agarose beads were purchased from Yeasen Biotechnology; C18 ZipTips from Millipore Corporation; water and acetonitrile from Thermo Fisher Scientific; and formic acid (FA), dithiothreitol, acetone, and iodoacetamide from Sigma Aldrich. Synthesized peptides were purchased from Science Peptide (Shanghai, China) with 95–99% purity. All chemicals and reagents used in this study are listed in Supplementary file 1c. Critical commercial assay kits used in this study are listed in Supplementary file 1d.
 
 ## Methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 All strains and vectors involved in this study were preserved or constructed in our laboratory; these are listed in Supplementary file 1e. A. hydrophila was cultured at 30 °C, and E. coli was cultured at 37 °C. All bacterial solutions were transferred at 1:100 (v:v; bacterial solution: LB) and cultured continuously for 16 hr at 200 rpm, unless otherwise specified.
 
-## Generation of gene-deleted strains
+### Generation of gene-deleted strains
 
 According to the whole genome sequence of the A. hydrophila ATCC 7966 strain, upstream and downstream fragments of the target gene of about 500 bp were amplified. The amplified gene fragments were ligated with the digested pRE112 plasmid using the restriction sites SacI and XbaI and then transformed first into E. coli MC1061. The plasmid was collected and transformed into E. coli S17 and then introduced into A. hydrophila by bacterial conjugation. The positive clones were selected on resistant LB plates (100 μg/mL ampicillin and 30 μg/mL chloramphenicol). Finally, the positive mutants from the previous step were spread on LB plates containing 20% sucrose, and a single clone was picked. The positive result was sent to Shanghai Sangon Biological Co., Ltd. for sequencing, and the bacteria were kept at −80 °C for later use (Li et al., 2019; Kou et al., 2022).
 
-## Physiological phenotype assay
+### Physiological phenotype assay
 
 The physiological phenotyping was performed as previously described (Li et al., 2019; Cai et al., 2019). Briefly, for hemolytic and swarming motility assays, bacteria cultured overnight were spotted on 0.7% sheep blood or 0.4% agar plates, respectively, at 30 °C for 16 hr, and the diameter of the hemolytic or swarming circle was observed and measured in three independent experiments. The bacterial biofilm formation ability was measured with a SpectraMax i3 multifunctional microplate reader using the crystal violet staining method, and the absorbance at an optical density (OD) of 595 nm wavelength was measured, as previously described (Li et al., 2019). All these experiments were independently repeated three times, and the one-way ANOVA method was used for statistical analysis.
 
-## BSA acetylation in vitro
+### BSA acetylation in vitro
 
 Briefly, 1 mg of BSA powder was dissolved in 1 mL of ddH2O containing 0.1 M Na2CO3 and 0.04 g of acetic anhydride and then incubated at 37 °C to react for 3 hr to produce Kac-BSA. Finally, 20 µL of 1 M Tris (pH 8.0) was added to stop the reaction (Guan et al., 2010).
 
-## Protein deacetylation assay in vitro
+### Protein deacetylation assay in vitro
 
 Briefly, 1 µg of protein or peptides were mixed with 0.2 µg of purified KDAC protein in basic buffer (150 mM Tris-HCl, pH 8.0, and 10% glycerol) with 10 mM ZnCl2, 0.5 mM ATP, 0.25 mM NAD+, or 0.5 mM NAM, as appropriate, and then incubated at 37 °C for 3 hr (Li et al., 2024).
 
-## Quantitative acetylome analysis
+### Quantitative acetylome analysis
 
 The quantitative acetylome was performed as previously described (Zhang et al., 2022). Briefly, the protein samples from bacteria cultured overnight were collected by centrifugation and then sonicated in an ice bath. A 10 mg protein sample was reduced by 10 mM dithiothreitol (DTT), alkylated by 20 mM iodoacetamide (IAA), and then digested to peptides by trypsin at a 1:50 ratio at 37 °C for 16 hr. The lysine acetylation peptides were enriched by an immuno-affinity enrichment method using an agarose-conjugated anti-lysine-acetylated antibody (Hangzhou Jingjie, PTM 101).
 
-## LC MS/MS
+### LC MS/MS
 
 For BSA acetylation identification, the digested peptides were analyzed on an Orbitrap Q Exactive HF mass spectrometer (Thermo Fisher Scientific) equipped with an EASY-nLC 1200 system (Thermo Fisher Scientific). The peptides were first loaded into a C18 trap column (1.9 μm, 100 μm, 20 mm) and separated on an EASY-nLC 1200 UPLC system. The precursor ions were selected for fragmentation in the higher energy collision-activated dissociation (HCD) cell at a normalized collision energy of 27% and then detected using the Orbitrap analyzer at a resolution of 15,000 at m/z 200.
 
@@ -136,30 +192,30 @@ The synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQA EDKacGACLLPK 
 
 The data obtained were compared and annotated with the BSA (UniProt ID P02769) or A. hydrophila ATCC 7966 database from the UniProt database using MaxQuant v1.6.2.10 software. The mass error of the search was set to 10 ppm, the main search was set to 5 ppm, the fragment ion was set to 0.02 Da, and the variable modification was acetylation modification. The maximum false discovery rate (FDR) threshold for proteins, peptides, and modification sites was set at 1%. In addition, the localization probability threshold was specified as >0.75, and the modification site score threshold was set to 40. The precursor area for quantification of synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQAEDKacGACLLPK (STD*Kac) was manually exacted with Thermo Xcalibur (v.3.0.63). When performing a label-free quantitative (LFQ) comparison, in addition to the above settings, label-free quantification was also set to LFQ, and the intensity signal ratio of the corresponding modified peptides in the identification results (ratio) was >1.5. p<0.05 (Student’s t-test) among the three biological replicates in each group was considered a significant difference.
 
-## Western blot
+### Western blot
 
 The protein samples (0.2 µg) were separated on a 12% sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE) gel and then transferred to polyvinylidene fluoride (PVDF) membranes using a semi-dry transfer system (Bio-Rad, USA) at 25 V for 20 min. The membranes were blocked with Tris-buffered saline with 0.1% Tween 20 (TBST) containing 5% skim milk for 1 hr and incubated with the diluted primary antibody (PTM-101 1:1,000) for 5 hr at room temperature. After washing three times with TBST, the membranes were incubated with the secondary antibody, horseradish peroxidase-conjugated goat anti-mouse IgG (1:5,000), at room temperature for 1 hr. Finally, the membranes were covered with Clarity western ECL (Bio-Rad) chromogenic solution and exposed with a ChemiDoc MP (Bio-Rad, Hercules, CA, USA). The exposed PVDF membranes were stained with Coomassie R-350 to verify whether the loading amounts were consistent (Peng et al., 2015).
 
-## Dot blot
+### Dot blot
 
 10 mg protein was diluted and spotted on the PVDF membrane. Once the samples had air-dried, the membranes underwent a blocking process with Tris-buffered saline with Tween 20 (TBST) containing 5% BSA for a duration of 3–5 hr. Following this, they were incubated with the PTM-101 antibody at a 1:1000 dilution for 5 hr. Afterward, the membranes were washed three times in TBST, then incubated with a secondary antibody, goat anti-mouse HRP-IgG, at a 1:5000 dilution and containing 3% BSA, for 1 hr at room temperature. This was followed by five washes in TBST, each lasting 5 min. To conclude the process, the membrane was treated with Clarity Western ECL Substrate (Bio-Rad) chromogenic solution, exposed using a ChemiDoc MP imaging system (Bio-Rad, Hercules, CA, USA), and finally stained with Coomassie R-350 to ensure consistent sample loading.
 
-## Recombinant protein production and purification
+### Recombinant protein production and purification
 
 The target genes were amplified and ligated to the digested pET-21b/32 a plasmid using the restriction sites EcoRI and HindIII. Then, the recombinant plasmid was transformed into competent E. coli BL21 (DE3), and the positive clones were selected from an agar plate with 100 μg/mL ampicillin. For the construction of site-directed mutant strains, the target gene was mutated using a Fast Mutagenesis System kit according to the manufacturer’s protocol (Transgen Biotech Co., Beijing, China). All primer pairs used in this study are listed in Supplementary file 1f.
 
 The successfully constructed recombinant strains were transferred to 200 mL of LB medium containing 100 μg/mL ampicillin, and then, 200 μL of 1 M isopropyl β-D-1-thiogalactopyranoside (IPTG) was added until the OD at 600 nm reached about 0.6. After washing three times with phosphate-buffered saline (PBS) and dissolving in 10 mL of a solution (5 mM imidazole, 0.5 mM NaCl, 0.05 M Tris-HCl pH = 8.0), the bacterial cells were ultrasonically disrupted for 20 min on ice. The supernatant was collected by centrifuging at 10,000 rpm at 4 °C for 15 min, and the recombinant proteins were purified using an Ni+-NTA column as previously described (Jiang et al., 2022).
 
-## Expression and purification of site-specific Kac proteins
+### Expression and purification of site-specific Kac proteins
 
 We used two genetic code expansion systems in E. coli BL21 to express site-specific acetylated proteins (Vidali et al., 1968；Bryson et al., 2017). First, the target gene was inserted into the pET-21b plasmid as described above, and the lysine codon at the target position of the gene was substituted with an amber stop (TAG) codon by site-directed mutagenesis. Then, equal amounts of pTECH-MbAcK3RS (IPYE) and recombinant pET-21b plasmid were co-transfected into competent E. coli BL21 (DE3) on agar plates containing 100 μg/mL ampicillin and 30 μg/mL chloramphenicol. After culturing for 5 h at 37 °C and 200 rpm, the successful PCR products were confirmed with DNA sequencing.
 
 The successfully site-specific acetylated mutants were cultured overnight in 5 mL of LB medium and then transferred to 200 mL of fresh LB medium containing 100 μg/mL ampicillin and 30 μg/mL chloramphenicol and incubated at 200 rpm and 37 °C. To express the acetyl proteins, 2 mM N-acetyllysine and 20 mM NAM were added to the medium at 37 °C and vortexed at 200 rpm until the OD at 600 nm reached about 0.8. Then, 200 μL of 1 M IPTG was added to the medium, and the cells were cultured at 16 °C and vortexed at 200 rpm for 18 h to express the proteins. The procedure of site-specific Kac protein purification was the same as the method described above.
 
-## Bioinformatics and data analysis
+### Bioinformatics and data analysis
 
 Amino acid sequences were obtained from the UniProt database (https://www.uniprot.org/uniprot). The pfam database (https://www.pfam.org/) was used to predict protein domains, and the online software iTOL (https://itol.embl.de/) was used to generate graphs. The amino acid sequence homology analysis was carried out using position-specific iterated BLAST (PSI-BLAST) software after two iterations (https://blast.ncbi.nlm.nih.gov/Blast.cgi). MEGA v7.0.26 software was used to construct the evolutionary tree that was visualized by online Chiplot software (https://www.chiplot.online/). The online software STRING v.11.5 (http://string-db.org/) was used to perform Kyoto Encyclopedia of Genes and Genomes (KEGG) metabolic pathway enrichment analysis for upregulated proteins, and these proteins were finally visualized using Cytoscape v.3.9.0. Except where otherwise stated, each experiment in this study was independently repeated three times, and the one-way ANOVA method was used for statistical analysis.
 
-## ICD enzymatic activity assay
+### ICD enzymatic activity assay
 
 The enzymatic activity of ICD was detected by measuring the amount of NADPH generated by NADP substrate. 10 μg purified ICD or site-specifically Kac ICD protein was mixed with or without 3 μg purified AhCobQ in 180 μL solution buffer (100 mM Tris-HCl, pH 8.0, 0.5 mM NADP, 3 mM MgCl2, 10% glycerol, 1.5 mM isocitrate), and the absorbance of NADPH at OD340nm was detected by SpectraMax i3(Molecular Devices) once a minute. Simultaneously, serial concentrations of NADPH (0–0.8 mM) was incubated with ICD for standard curve determination.

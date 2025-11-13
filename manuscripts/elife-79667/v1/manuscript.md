@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/036jqmy94 Department of Psychological and Brain Sciences, University of Iowa Iowa City United States
-2. https://ror.org/036jqmy94 Cognitive Control Collaborative, University of Iowa Iowa City United States
-3. https://ror.org/04dkp9463 Department of Psychology, University of Amsterdam Amsterdam Netherlands
-4. https://ror.org/02y3ad647 Department of Clinical and Health Psychology, University of Florida Gainesville United States
-5. https://ror.org/04g2swc55 Department of Neurology, University of Iowa Hospitals and Clinics Iowa City United States
+1. Department of Psychological and Brain Sciences, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+2. Cognitive Control Collaborative, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+3. Department of Psychology, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+4. Department of Clinical and Health Psychology, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+5. Department of Neurology, University of Iowa Hospitals and Clinics Iowa City United States ([ROR:04g2swc55](https://ror.org/04g2swc55))
 
 † Corresponding author
 
@@ -34,25 +34,478 @@ Hence, in line with our behavioral hypothesis, we predicted that if rIFG lesion 
 
 ## Results
 
-## Participants
+### Participants
 
 Participants included 16 rIFG lesion patients, 16 non-rIFG lesion patients, and 32 age- and sex-matched comparisons. Lesion overlap maps are provided in Figure 1, and demographic data for all participants are presented in Table 1. All participants performed a version of the stop-signal task (Figure 2A) that was optimized for the usage of BEESTS, a hierarchical Bayesian modeling technique that simultaneously accounts for the shape of Go-RT and SSRT distributions and the prevalence of trigger failures in the stop-signal task (Matzke et al., 2013; Matzke et al., 2017b, Figure 2B). This was a typical version of the stop-signal task (Verbruggen et al., 2019), which, however, included more trials than necessary for standard analyses of SSRT (see Task and Procedure).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79667/elife-79667-fig1-v1.jpg)
 
-**Figure 1.:** A) and in patients with lesions outside of rIFG (non-rIFG lesion patients, bottom, B).(A) Top left: a lateral view of the lesion overlaps for rIFG lesion patients at the cortical level. Within the rIFG, three subregions are labeled: pars opercularis, pars triangularis, and pars orbitalis. The anterior insula is also highlighted. Top right (in order): sagittal, coronal, and axial views of the lesion overlap for rIFG lesion patients. The crosshair is centered on the right inferior frontal gyrus (IFG) on the Harvard-Oxford Atlas. All rIFG patients were included (N = 16). (B) Bottom: axial view of the lesion overlap for non-rIFG lesion patients. One lesion mask for a patient was missing and not included (N = 15). The color bar indicates the number of patients overlapped in lesion sites. R: right; L: left.
+**Figure 1.:** (A) Top left: a lateral view of the lesion overlaps for rIFG lesion patients at the cortical level. Within the rIFG, three subregions are labeled: pars opercularis, pars triangularis, and pars orbitalis. The anterior insula is also highlighted. Top right (in order): sagittal, coronal, and axial views of the lesion overlap for rIFG lesion patients. The crosshair is centered on the right inferior frontal gyrus (IFG) on the Harvard-Oxford Atlas. All rIFG patients were included (N = 16). (B) Bottom: axial view of the lesion overlap for non-rIFG lesion patients. One lesion mask for a patient was missing and not included (N = 15). The color bar indicates the number of patients overlapped in lesion sites. R: right; L: left.
+
+**Table 1.**
+ Demographic information all four groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Sex</th>
+      <th>Handedness</th>
+      <th>Age</th>
+      <th>Chronicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rIFG lesions</td>
+      <td>10M/6F</td>
+      <td>16R/0L</td>
+      <td>54.25 (15.19)</td>
+      <td>19.88 (21.54)</td>
+    </tr>
+    <tr>
+      <td>rIFG comparison</td>
+      <td>10M/6F</td>
+      <td>15R/1L</td>
+      <td>54.63 (15.28)</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Non-rIFG lesions</td>
+      <td>10M/6F</td>
+      <td>13R/3L</td>
+      <td>61.50 (14.62)</td>
+      <td>10.97 (15.97)</td>
+    </tr>
+    <tr>
+      <td>Non-rIFG comparison</td>
+      <td>10M/6F</td>
+      <td>15R/1L</td>
+      <td>61.94 (14.40)</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
+
+_M, male; F, female; R, right-handed; L, left-handed; rIFG = right inferior frontal gyrus; Age: mean age at testing in years (standard deviation); Chronicity: median length of time between lesion onset and current experiment in years (inter-quartile range)._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79667/elife-79667-fig2-v1.jpg)
 
 **Figure 2.:** (A) Schematic design of the stop-signal task. (B) Graphical representation of the censored BEESTS model. The model assumes that the finishing times of the go (Go-RT distribution) and the stop runner (stop-signal reaction time [SSRT] distribution) follow an ex-Gaussian distribution with parameters µgo, σgo, and τgo, and µstop, σstop, and τstop, respectively. The finishing time distributions, and hence also the observed distribution of signal-respond RTs, are assumed to be censored above at 1000 ms to accommodate trials where the runners did not finish before the response window. The trigger failure parameter, P(TF), quantifies the probability that the stop runner was not initiated.
 
-## Behavioral and modeling results
+### Behavioral and modeling results
 
 BEESTS assumes that the finishing times of the go (Go-RT distribution) and the stop runners (SSRT distribution) follow an ex-Gaussian distribution with parameters µ, σ, and τ. The µ and σ parameters reflect the mean and the standard deviation of the Gaussian component and τ gives the mean of the exponential component and reflects the slow tail of the distribution. The mean and variance of the finishing time distributions can be obtained as µ + τ (i.e., mean Go-RT and SSRT) and σ2 + τ2, respectively. Using a mixture-likelihood approach, the model can be augmented with a parameter, P(TF), that quantifies the probability that participants fail to trigger the stop runner (Matzke et al., 2017b). Table 2 presents the posterior means and the corresponding 95% CIs of the population-level mean parameters in the four groups. The overlap of the posterior distributions of the go parameters indicated that μgo was lower, whereas τgo was higher in the rIFG lesion group relative to matched comparisons, suggesting that the Go-RT distribution of the lesion group had a faster leading edge but a larger skew. Resulting from the nearly perfect trade-off between μgo and τgo, mean Go-RT did not differ between the two groups. The overlap of the posterior distributions of the stop parameters indicated that μstop, σstop, and mean SSRT were higher in the rIFG lesion group than in matched comparisons, although the difference in σstop was small. Crucially, we found a more than fivefold increase in the P(TF) parameter of the lesion group (16% vs. 3% in healthy comparisons). These results suggest that poor stop-signal performance associated with rIFG lesions is mainly attributable to increased trigger failure rate and a slowing of SSRT as a result of a shift in the leading edge of the distribution. Following Matzke et al., 2017b, we interpret this pattern of SSRT differences (increased μstop and constant τstop) to reflect differences in the speed of encoding the stop-signal and not differences in the decisional or inhibitory component of SSRT, suggesting an attentional deficit in rIFG lesion patients. In contrast, with the exception of σstop, our analyses did not indicate the presence of differences in go or stop parameters between non-rIFG lesion patients and their matched comparisons, neither did we find evidence for a difference in the probability of trigger failures. We also directly compared the two lesion groups. Table 3 presents the posterior mean and the corresponding 95% CIs of the population-level mean difference between the two lesion groups. The overlap of the posterior distributions of the go parameters indicated that μgo and the σgo were lower in the rIFG lesion group compared to the non-rIFG lesion group, whereas τgo was higher. Crucially, the difference in the P(TF) parameter was large and reliable as the rIFG lesion group showed high trigger failure rate while the non-rIFG lesion group did not (16% vs. 2% in the non-rIFG lesion group). These patterns were similar to the comparison between the rIFG lesion group and their matched healthy comparison group. Taken together, our results are mostly consistent with an attentional rather than inhibitory account of stop-signal deficits associated with rIFG lesions.
 
+**Table 2.**
+ Posterior means and 95% credible intervals (CIs) of the population-level mean parameters in the four groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="2">Lesion patients</th>
+      <th colspan="2">Matched comparisons</th>
+      <th colspan="3">Difference</th>
+    </tr>
+    <tr>
+      <th>Posterior mean</th>
+      <th>95% CI</th>
+      <th>Posterior mean</th>
+      <th>95% CI</th>
+      <th>Posterior mean</th>
+      <th>95% CI</th>
+      <th>Bayesian p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rIFG</td>
+      <td>μgo</td>
+      <td>479</td>
+      <td>[435,521]</td>
+      <td>578</td>
+      <td>[505,650]</td>
+      <td>–99</td>
+      <td>[-181,–15]</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>σgo</td>
+      <td>75</td>
+      <td>[60,94]</td>
+      <td>90</td>
+      <td>[73,107]</td>
+      <td>–15</td>
+      <td>[–39,10]</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>τgo</td>
+      <td>154</td>
+      <td>[111,216]</td>
+      <td>76</td>
+      <td>[54,109]</td>
+      <td>78</td>
+      <td>[25,145]</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean Go-RT</td>
+      <td>633</td>
+      <td>[572,708]</td>
+      <td>654</td>
+      <td>[576,730]</td>
+      <td>–21</td>
+      <td>[–124,80]</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>μstop</td>
+      <td>223</td>
+      <td>[197,249]</td>
+      <td>198</td>
+      <td>[182,215]</td>
+      <td>25</td>
+      <td>[–6,55]</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>σstop</td>
+      <td>40</td>
+      <td>[26,58]</td>
+      <td>24</td>
+      <td>[16,37]</td>
+      <td>16</td>
+      <td>[–3,37]</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>τstop</td>
+      <td>45</td>
+      <td>[30,65]</td>
+      <td>34</td>
+      <td>[22,50]</td>
+      <td>11</td>
+      <td>[–12,35]</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean SSRT</td>
+      <td>268</td>
+      <td>[237,298]</td>
+      <td>232</td>
+      <td>[211,254]</td>
+      <td>35</td>
+      <td>[–2,73]</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(TF)</td>
+      <td>0.16</td>
+      <td>[0.08,0.29]</td>
+      <td>0.03</td>
+      <td>[0,0.12]</td>
+      <td>0.13</td>
+      <td>[0.01,0.27]</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Non-rIFG</td>
+      <td>μgo</td>
+      <td>547</td>
+      <td>[504,589]</td>
+      <td>575</td>
+      <td>[506,646]</td>
+      <td>–28</td>
+      <td>[–109,52]</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>σgo</td>
+      <td>98</td>
+      <td>[84,111]</td>
+      <td>104</td>
+      <td>[85,122]</td>
+      <td>-6</td>
+      <td>[–29,17]</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>τgo</td>
+      <td>106</td>
+      <td>[79,139]</td>
+      <td>85</td>
+      <td>[61,116]</td>
+      <td>21</td>
+      <td>[–19,62]</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean Go-RT</td>
+      <td>653</td>
+      <td>[602,706]</td>
+      <td>660</td>
+      <td>[586,735]</td>
+      <td>-7</td>
+      <td>[–97,83]</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>μstop</td>
+      <td>215</td>
+      <td>[191,239]</td>
+      <td>199</td>
+      <td>[184,215]</td>
+      <td>16</td>
+      <td>[–11,43]</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>σstop</td>
+      <td>54</td>
+      <td>[24,104]</td>
+      <td>24</td>
+      <td>[14,36]</td>
+      <td>31</td>
+      <td>[0.11,80]</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>τstop</td>
+      <td>29</td>
+      <td>[18,44]</td>
+      <td>26</td>
+      <td>[13,44]</td>
+      <td>3</td>
+      <td>[–18,22]</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean SSRT</td>
+      <td>244</td>
+      <td>[218,271]</td>
+      <td>225</td>
+      <td>[204,249]</td>
+      <td>19</td>
+      <td>[–12,49]</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(TF)</td>
+      <td>0.02</td>
+      <td>[0,0.05]</td>
+      <td>0.04</td>
+      <td>[0.02,0.08]</td>
+      <td>–0.02</td>
+      <td>[0.07,0.02]</td>
+      <td>0.09</td>
+    </tr>
+  </tbody>
+</table>
+
+_The parameters of the Go-RT and SSRT distributions are presented on the ms scale. The P(TF) parameter is presented on the probability scale. The posterior distribution of 'Difference' is computed by subtracting the posterior samples of the matched comparison group from the corresponding samples of the lesion group, i.e., positive values indicate that the parameter is higher in the lesion group than in the matched comparison group. 'Bayesian p' is computed as the proportion of posterior samples in the posterior distribution of the lesion group that is larger than in the matched comparisons group. Bayesian p values are presented as P = min(p, 1p), i.e., as non-directional tests, with results at a two-sided p of 0.05 (i.e., a one-sided critical p of 0.025) highlighted in bold.rIFG = right inferior frontal gyrus; SSRT = stop-signal reaction time._
+
+**Table 3.**
+ Posterior mean and 95% credible interval (CI) of the population-level mean difference between the two lesion groups (rIFG lesion vs. non-rIFG lesion).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Posterior mean of difference</th>
+      <th>95% CI of difference</th>
+      <th>Bayesian p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>μgo</td>
+      <td>–68</td>
+      <td>[-126,–10]</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>σgo</td>
+      <td>–22</td>
+      <td>[–44,1]</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>τgo</td>
+      <td>49</td>
+      <td>[–6,116]</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Mean Go-RT</td>
+      <td>–19</td>
+      <td>[–103,71]</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>μstop</td>
+      <td>8</td>
+      <td>[–26,44]</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>σstop</td>
+      <td>–15</td>
+      <td>[–67,24]</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>τstop</td>
+      <td>16</td>
+      <td>[–5,39]</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Mean SSRT</td>
+      <td>24</td>
+      <td>[–18,63]</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>P(TF)</td>
+      <td>0.15</td>
+      <td>[0.06,0.28]</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_The parameters of the Go-RT and SSRT distributions are presented on the ms scale. The P(TF) parameter is presented on the probability scale. The posterior distribution of 'Difference' was computed by subtracting the posterior samples of the non-rIFG group from the corresponding samples of the rIFG lesion group; i.e., positive values indicate that the parameter is higher in the rIFG lesion group than in the non-rIFG lesion group. 'Bayesian p' is computed as the proportion of posterior samples in the posterior distribution of the rIFG lesion group that was larger than in the non-rIFG lesion group. Bayesian p values are presented as P = min(p, 1p), i.e., as non-directional tests, with results at a two-sided p of 0.05 (i.e., a one-sided critical p of 0.025) highlighted in bold.rIFG = right inferior frontal gyrus; SSRT = stop-signal reaction time._
+
 Observed behavioral metrics of stop-signal performance, including non-parametric SSRT estimates computed with the integration method with replacement of go omissions (Verbruggen et al., 2019), can be found in Table 4. Compared to BEESTS, the integration approach estimated elongated SSRT in three groups except the healthy comparison for the rIFG lesion group; rIFG lesion: –39 ms, non-rIFG lesion: –11 ms, healthy comparison for rIFG lesion: 1 ms, and healthy comparison for non-rIFG lesion: –13 ms. Among them, the rIFG lesion group showed the largest attenuation. This suggests that the high trigger failure rate in the rIFG lesion group indeed inflated non-parametric SSRT (e.g., Doekemeijer et al., 2021; Matzke et al., 2017a; Skippen et al., 2019). Statistical comparisons for non-parametric SSRT, P(Go error), and P(Go miss) between groups can be found in Appendix 1.
 
-## EEG results: Frontal β-bursts
+**Table 4.**
+ Non-parametric integration estimates and behavioral metrics of stop-signal performance in the four groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th>Lesion patients</th>
+      <th>Matched comparisons</th>
+    </tr>
+    <tr>
+      <th>Mean (SD)</th>
+      <th>Mean (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rIFG</td>
+      <td>Mean SSD</td>
+      <td>286 (120)</td>
+      <td>397 (131)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Go RT</td>
+      <td>589 (88)</td>
+      <td>634 (108)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SSRT</td>
+      <td>307 (124)</td>
+      <td>231 (43)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SR-RT</td>
+      <td>526 (76)</td>
+      <td>569 (109)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Go miss)</td>
+      <td>0.058 (0.083)</td>
+      <td>0.029 (0.04)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Go error)</td>
+      <td>0.016 (0.021)</td>
+      <td>0.001 (0.003)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Inhibit)</td>
+      <td>0.5 (0.078)</td>
+      <td>0.533 (0.019)</td>
+    </tr>
+    <tr>
+      <td>Non-rIFG</td>
+      <td>Mean SSD</td>
+      <td>371 (81)</td>
+      <td>399 (119)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Go RT</td>
+      <td>634 (61)</td>
+      <td>644 (87)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SSRT</td>
+      <td>255 (47)</td>
+      <td>238 (46)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SR-RT</td>
+      <td>552 (66)</td>
+      <td>564 (93)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Go miss)</td>
+      <td>0.031 (0.033)</td>
+      <td>0.04 (0.092)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Go error)</td>
+      <td>0.005 (0.007)</td>
+      <td>0.004 (0.007)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P(Inhibit)</td>
+      <td>0.532 (0.013)</td>
+      <td>0.536 (0.024)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean SSD, Go RT, SSRT, and signal-respond RT (SR-RT) are presented on the ms scale. Go misses, Go errors, and Inhibition are given as probabilities (0 ≤ p ≤ 1). With the exception of P(Go error), all measures are computed after removing incorrect RTs and RTs faster than 200 ms, treating RTs slower than 1000 ms as censored observations.rIFG = inferior frontal gyrus; SSRT = stop-signal reaction time; SSD = stop-signal delay._
+
+### EEG results: Frontal β-bursts
 
 Figure 3 shows the results of the analysis of frontal β-bursts. The 2 × 3 ANOVA of frontal β-burst rates for the rIFG group and their matched comparisons revealed a main effect of TRIAL TYPE (F(2, 60) = 3.749, p=0.029, η2P = 0.111) and, crucially, a significant interaction between GROUP and TRIAL TYPE (F(2, 60) = 4.215, p=0.019, η2P = 0.123). The main effect of GROUP was not significant (F(1, 30) = 0.046, p=0.832, η2p = 0.002).
 
@@ -68,7 +521,7 @@ We then also directly compared the Stop vs. Go differences in frontal β between
 
 To sum up, these results confirmed our hypothesis that rIFG lesion patients show reduced β-burst rates on Successful-stop-trials compared to healthy comparisons, given their increase in stop-signal trigger failures. Moreover, this impairment was specific to the rIFG lesion group as no group difference was found between the non-rIFG lesion group and matched comparisons. Importantly, the rIFG group also showed a significant reduction in frontal burst rates when directly compared to the non-rIFG lesion group.
 
-## EEG results: Sensorimotor β-bursts after stop-related frontal bursts
+### EEG results: Sensorimotor β-bursts after stop-related frontal bursts
 
 We then investigated the temporal development of sensorimotor β-bursts after frontal β-bursts that occurred during the critical post-stop-signal window on Successful-stop trials (Figure 4). First, we replicated that across the whole sample, sensorimotor β-bursts were increased following frontal β-bursts (compared to trials without frontal β-bursts). This was done by comparing the sensorimotor β-burst rates on Successful-stop trials that contained frontal β-bursts in the stop-signal-to-SSRT period to that of trials without frontal β-bursts (in which sensorimotor β-bursts were time-locked to a random time point in the stop-signal-to-SSRT period) with paired-samples t-test at each time point between –100 and + 100 around the frontal β-bursts. Any significant difference between trials with frontal β-bursts and without frontal β-bursts is marked as gray hashes on the bottom of the figure (p<0.05). This analysis showed that sensorimotor β-burst rates were significantly increased following frontal β-bursts (Figure 4A), replicating Wessel, 2020. To test for potential group differences in this pattern, we then compared the sensorimotor burst rate between the respective lesion groups and their healthy comparisons (Figure 4B). No time point showed any significant differences at p<0.05, even absent any corrections for multiple comparisons. Together, this shows that the pattern of increased sensorimotor β-bursts following stop-related frontal β-burst was intact, even in the rIFG group.
 
@@ -96,11 +549,11 @@ Taken together, our data show that the dominant model of inhibitory control in t
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Sixty-four participants across four groups of N = 16 were recruited for the study, matching the sample size of the rIFG lesion group in the original Aron et al., 2003 investigation. In addition to patients with focal lesions within the rIFG, we also included 16 non-rIFG lesion comparison patients – i.e., individuals with lesions outside of rIFG (see Figure 1 for lesion overlap maps). All rIFG lesion and non-rIFG lesion patients were recruited from the Neurological Patient Registry of the University of Iowa’s Division of Behavioral Neurology and Cognitive Neuroscience. Lesion etiologies included ischemic stroke (n = 13), hemorrhagic stroke (n = 4), focal contusion (n = 2), Arteriovenous Malformation (AVM) or cavernoma resection (n = 5), benign tumor resection (n = 3), herpes simplex encephalitis (n = 2), cyst resection (n = 1), abscess resection (n = 1), and epilepsy resection (n = 1). Patients taking psychoactive medications at dosages likely to induce cognitive side effects were not included. The rIFG and non-rIFG lesion groups varied somewhat regarding the chronicity of the lesion (Table 1). Three patients in the rIFG group had developmental-onset lesions. Exclusions of these patients did not affect the pattern of significance of the analyses of interest. Thirty-two age- and sex-matched healthy comparison participants were then also recruited from the Cognitive Neuroscience Registry for Normative Data of the Division of Behavioral Neurology and Cognitive Neuroscience and through local ads. All participants received detailed information describing the experiment and provided informed consent prior to participating in the study. The study was approved by the Institutional Review Board at the University of Iowa (IRB#201511709) and conducted in accordance with the Declaration of Helsinki. Data collection was performed in an EEG laboratory in the Neurology Clinic at the University of Iowa between October 2018 and July 2021. All lesion patients were compensated at an hourly rate of $30, while healthy participants were compensated at an hourly rate of $15. Monetary compensations for mileage and meal were also provided. Demographic data for all participants are presented in Table 1.
 
-## Task and procedure
+### Task and procedure
 
 Participants performed a stop-signal task presented using Psychtoolbox (version 3, Brainard, 1997) in MATLAB 2015b (The MathWorks, Natick, MA) on an Ubuntu Linux desktop computer. Responses were made using a standard QWERTY USB keyboard. A schematic design of the stop-signal task is shown in Figure 2. Each trial began with a fixation cross at the center of the screen (500 ms) followed by a black arrow (Go-signal) pointing either left or right, displayed for 1000 ms. Two white stickers were attached on the ‘q’ key and ‘p’ key in the keyboard to indicate Go stimulus-response key mapping. Participants were instructed to press the left key (the ‘q’ key) with their left index finger in response to the left arrow and the right key (the ‘p’ key) with their right index finger in response to the right arrow as fast and accurately as possible. In five rIFG lesion patients (as well as their respective matched comparison participants), participants instead made unimanual responses with two fingers of their right hand using the arrow keys on the keyboard. This was due to lesions to the right hemisphere of the lesion patients that encompassed motor cortex and surrounding areas, which could affect the mobility of their left hand.
 
@@ -108,7 +561,7 @@ If no response was made during the Go-signal presentation (1000 ms), the feedbac
 
 On one-third of trials, an auditory Stop-signal (900 Hz sine-wave tones of 100 ms duration) was presented after the Go-signal at a varying stop-signal delay (SSD). Participants were instructed to withhold their response on such trials. The SSD was initially set to 200 ms and adjusted separately for left and right responses depending on stop success (50 ms increment) or failure (50 ms decrement), with a goal of achieving an overall p(stop) of approximately 0.50 (Verbruggen et al., 2019). The overall trial length was fixed to 3500 ms. Before the experiment, participants performed a short practice block (24 trials). In total, participants underwent 480 trials (eight blocks of 60 trials; 320 go/160 stop-trials overall). In each rest period between blocks, performance feedback was given on the previous block.
 
-## Bayesian modeling of behavioral data
+### Bayesian modeling of behavioral data
 
 The stop-signal data were analyzed with BEESTS, a hierarchical Bayesian modeling technique that simultaneously accounts for the shape of Go-RT and SSRT distributions and the prevalence of trigger failures in the stop-signal task (Matzke et al., 2013; Matzke et al., 2017b). As shown in Figure 2B, BEESTS is based on the horse-race model (Logan and Cowan, 1984) and assumes that response inhibition depends on the relative finishing times of a go and a stop runner, triggered by the go and the stop stimuli, respectively. On a given trial, if the go runner is slower than SSD + the finishing time of the stop runner, the go response is successfully stopped (i.e., the stop process wins the race). If the go runner is faster than SSD + the finishing time of the stop runner, inhibition fails and a signal-respond RT (e.g., gray-color distribution in Figure 2) is produced. BEESTS assumes that the finishing times of the go (Go-RT distribution) and the stop runners (SSRT distribution) follow an ex-Gaussian distribution with parameters µ, σ, and τ. The µ and σ parameters reflect the mean and the standard deviation of the Gaussian component, and τ gives the mean of the exponential component and reflects the slow tail of the distribution. The mean and variance of the finishing time distributions can be obtained as µ + τ (i.e., mean Go-RT and SSRT) and σ2 + τ2, respectively. Using a mixture-likelihood approach, the model can be augmented with a parameter, P(TF), that quantifies the probability that participants fail to trigger the stop runner (Matzke et al., 2017b).
 
@@ -116,31 +569,35 @@ Incorrect RTs and RTs faster than 200 ms (e.g., anticipatory responses) were rem
 
 We assumed (truncated) normal population-level distributions for all model parameters, including the probit transformed P(TF) parameter. The population-level distributions were parameterized and estimated in terms of their location and scale parameters, which were then transformed back to means and standard deviations for inference. As shown in Appendix 1, we assigned weakly informative priors to the population-level location and scale parameters that covered a wide but realistic range (e.g., Matzke et al., 2019).
 
-The analyses were carried out in the Dynamic Models of Choice software (Heathcote et al., 2019) using Differential Evolution Markov chain Monte Carlo (DE-MCMC; TerBraak, 2006) sampling implemented in the R programming environment (R Core Team, 2015). We used parameter estimates obtained from fitting each participant’s data individually using non-hierarchical Bayesian estimation as start values for the hierarchical sampling routine. The number of MCMC chains was set to 21, i.e., three times the number of participant-level model parameters. To reduce autocorrelation, the MCMC chains were thinned to retain only every 15th draw from the joint posterior distribution. During the burn-in period, the probability of a migration step was set to 5%, after which only crossover steps were performed. Convergence was assessed using univariate and multivariate proportional scale-reduction factors (R^ < 1.1; Brooks and Gelman, 1998; Gelman and Rubin, 1992) and visual inspection of the MCMC chains.
+The analyses were carried out in the Dynamic Models of Choice software (Heathcote et al., 2019) using Differential Evolution Markov chain Monte Carlo (DE-MCMC; TerBraak, 2006) sampling implemented in the R programming environment (R Core Team, 2015). We used parameter estimates obtained from fitting each participant’s data individually using non-hierarchical Bayesian estimation as start values for the hierarchical sampling routine. The number of MCMC chains was set to 21, i.e., three times the number of participant-level model parameters. To reduce autocorrelation, the MCMC chains were thinned to retain only every 15th draw from the joint posterior distribution. During the burn-in period, the probability of a migration step was set to 5%, after which only crossover steps were performed. Convergence was assessed using univariate and multivariate proportional scale-reduction factors ($R^$ < 1.1; Brooks and Gelman, 1998; Gelman and Rubin, 1992) and visual inspection of the MCMC chains.
 
 The absolute goodness-of-fit of the model was assessed with posterior predictive model checks (Gelman et al., 1996) using the average cumulative distribution function of Go-RTs and signal-respond RTs, inhibition functions, and median signal-respond RTs as a function of SSD. Decision about the descriptive accuracy of the model was based on visual inspection of the model predictions, aided with posterior predictive p-values (for details, see Matzke et al., 2019). As shown in Appendix 1, the model provided a good account of all these aspects of the observed data for the rIFG lesion patients and the matched healthy comparison participants (Appendix 1—figure 1–4), but it showed a quantitatively small misfit (i.e., underprediction) to the average inhibition function at short SSDs in the other two groups (Appendix 1—figures 6 and 8). To examine the robustness of the results to a possible model misspecification, we sequentially removed all stop-signal trials from the data of the non-rIFG lesion and the matched comparison group at SSDs of 0, 50, 100, 150, and 250 ms (i.e., SSDs where misfit occurred), refit the model, and reassessed the model’s descriptive accuracy. Descriptive accuracy improved as stop-signal trials on short SSDs were removed (Appendix 1—figures 10 and 12). Importantly, qualitative conclusions about group differences were the same whether or not stop trials with short SSDs were included in the analysis. This indicates the robustness of the results and supports the validity of our conclusions. To avoid overconfidence and ensure that our conclusions are based on a descriptively accurate model, we report results based on mixing the posterior distributions estimated using the full data set and the five subsets after removing SSDs between 0 and 250 ms.
 
-## Statistical inference on model parameters
+### Statistical inference on model parameters
 
 We used the mean of the posterior distributions as point estimates for the BEESTS model parameters, and the 2.5th and 97.5th percentile of the distributions (i.e., 95% credible interval [CI]) to quantify estimation uncertainty. Inference about group differences was based on the overlap between the posterior distributions of the population-level parameters of the different groups (i.e., both lesion groups vs. their respective matched healthy comparison group). Overlap was quantified using Bayesian p values computed as the proportion of samples in the posterior distribution of the lesion group that is larger than in the matched comparison group. Bayesian p values close to 0 or 1 indicate that the posterior distribution of the lesion group is shifted to lower or higher values, respectively, relative to the matched comparison group, suggesting the presence of a group difference. Bayesian p values were computed after appropriate transformations of the posterior distributions (i.e., bivariate inverse probit transformation for the P(TF) parameter and transformation of the truncated normal population-level location parameters to means). The posterior distributions of the population-level mean Go-RT and SSRT were obtained by computing µgo + τgo and µstop + τstop, respectively, for each MCMC iteration and then collapsing the resulting population-level samples in a single distribution across chains. Similarly, the posterior distributions of the participant-level mean Go-RT and SSRT were computed by summing the corresponding participant-level µ and τ samples for each iteration and collapsing the resulting samples across the chains. The point estimates used in the analysis of β-burst events reflect the mean of the participant-level posteriors.
 
 The preregistration document for these analyses can be found at https://osf.io/d9r4s/.
 
-## EEG recording
+### EEG recording
 
 Sixty-four-channel EEG data in the extended 10–10 system were recorded using two Brain Products systems (actiChamp or MRplus). Ground and reference electrodes were placed at AFz and Pz, respectively. The MRplus system included two additional electrodes on the left canthus (for the horizontal eye movement) and below the left eye (for the vertical eye movement). EEG data was digitized with a sampling rate of 500 Hz, with hardware filters set to 10 s time-constant high-pass and 1000 Hz low-pass.
 
-## EEG preprocessing
+### EEG preprocessing
 
 EEG data preprocessing was conducted using custom routines in MATLAB. The data were filtered (high-pass cutoff: 0.3 Hz; low-pass cutoff: 50 Hz) and then visually inspected to identify and remove non-stereotypical artifacts. The data were subsequently re-referenced to common average and subjected to a temporal infomax independent component analysis (ICA; Bell and Sejnowski, 1995) as implemented in EEGLAB (Delorme and Makeig, 2004). Components representing stereotypic artifact activity (saccades, blinks, and electrode artifacts) were identified using outlier-based statistics and were removed from the data. We further obtained dipole solutions for ICs using the Dipfit plug-in for EEGLAB and further rejected ICs with residual variance larger than 15%, which typically represent non-brain data (Delorme et al., 2012). The remaining components were backprojected into channel space to reconstruct artifact-free channel data and subjected to further analyses. Finally, the channel-space data were then transformed using the current-source density method (CSD; Kayser and Tenke, 2006), which attenuates the effects of volume conduction on the scalp-measured activity.
 
-## β-Burst detection
+### β-Burst detection
 
-β-Burst detection was performed using the same method as described in Wessel, 2020, except with a burst detection threshold of 2× median power (rather than 6× median), following the recent recommendation from Enz et al., 2021. First, each electrode’s data were convolved with a complex Morlet wavelet of the form:w(t,f)=A exp-t22σt2exp⁡(2iπft)
+β-Burst detection was performed using the same method as described in Wessel, 2020, except with a burst detection threshold of 2× median power (rather than 6× median), following the recent recommendation from Enz et al., 2021. First, each electrode’s data were convolved with a complex Morlet wavelet of the form:
 
-With σ = m2πf , A= 1σt2π , and m = 7 (cycles) for each of the 15 evenly spaced frequencies spanning the β-band (15–29Hz). Time-frequency power estimates were extracted by calculating the squared magnitude of the complex wavelet-convolved data. These power estimates were then epoched relative to the events in question (ranging from 500 – 1000 ms with respect to Stop-/Go-signals). Individual β-bursts were defined as local maxima (using the MATLAB function imregionalmax) in the trial-by-trial β-band time-frequency power matrix for which the power exceeded a cutoff of 2× the median power of the entire time-frequency power matrix for that electrode (Enz et al., 2021).
+$$
+w(t,f)=A exp-\frac{t^{2}}{2\sigma_{t}^{2}}exp⁡(2i\pift)
+$$
 
-## Statistical analysis of β-burst events
+With $\sigma$ = $\frac{m}{2\pif}$ , $A= \frac{1}{\sigma_{t}}\sqrt{2\pi}$ , and m = 7 (cycles) for each of the 15 evenly spaced frequencies spanning the β-band (15–29Hz). Time-frequency power estimates were extracted by calculating the squared magnitude of the complex wavelet-convolved data. These power estimates were then epoched relative to the events in question (ranging from 500 – 1000 ms with respect to Stop-/Go-signals). Individual β-bursts were defined as local maxima (using the MATLAB function imregionalmax) in the trial-by-trial β-band time-frequency power matrix for which the power exceeded a cutoff of 2× the median power of the entire time-frequency power matrix for that electrode (Enz et al., 2021).
+
+### Statistical analysis of β-burst events
 
 The quantification of frontal β-bursts was done as in Wessel, 2020. β-Burst events in the critical time period ranging from the stop-signal onset to each individual’s SSRT estimate were counted separately for successful- and Failed-stop trials at electrode FCz. For Go trials, we counted the number of β-burst events in a time period of identical length, ranging from the current SSD on the trial and the participants’ SSRT estimate (in other words, in the time period during which a stop-signal would have appeared on that particular trial and the end of SSRT). We then converted these numbers to β-burst rate (bursts per second) by dividing each participant’s burst rates with the length of individual SSRT estimate. We then normalized each participant’s burst/s measurement with a baseline time period of [–500 0] relative to the Go stimulus onset on the trial for each trial type (Successful-stop, Failed-stop, and Go). This normalization procedure was adapted from Jana et al., 2020. However, the normalization had no significant influence on the results, and all significances remained intact when raw β-burst rates were investigated. These normalized β-burst rates were then analyzed with 2-by-3 mixed ANOVA with between-subjects factor of LESION (lesion vs. matched healthy comparison) and within-subjects factor of TRIAL TYPE (Successful-stop, Failed-stop, Go). This was done separately for the rIFG lesion group and the non-rIFG lesion group. Planned comparisons for Stop vs. Go difference (e.g., Successful-stop vs. Go and Failed-stop vs. Go) within the groups (e.g., lesion vs. matched healthy comparison) were made using paired-samples t-tests.
 

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.34412.001 Clinical trials have a vital role in ensuring the safety and efficacy of new treatments and interventions in medicine. A key characteristic of a clinical trial is its statistical power. Here we investigate whether the statistical power of a trial is related to the gender of first and last authors on the paper reporting the results of the trial. Based on an analysis of 31,873 clinical trials published between 1974 and 2017, we find that adequate statistical power was most often present in clinical trials with a male first author and a female last author (20.6%, 95% confidence interval 19.4-21.8%), and that this figure was significantly higher than the percentage for other gender combinations (12.5-13.5%; P<0.0001). The absolute number of female authors in clinical trials gradually increased over time, with the percentage of female last authors rising from 20.7% (1975-85) to 28.5% (after 2005). Our results demonstrate the importance of gender diversity in research collaborations and emphasize the need to increase the number of women in senior positions in medicine.
+Clinical trials have a vital role in ensuring the safety and efficacy of new treatments and interventions in medicine. A key characteristic of a clinical trial is its statistical power. Here we investigate whether the statistical power of a trial is related to the gender of first and last authors on the paper reporting the results of the trial. Based on an analysis of 31,873 clinical trials published between 1974 and 2017, we find that adequate statistical power was most often present in clinical trials with a male first author and a female last author (20.6%, 95% confidence interval 19.4-21.8%), and that this figure was significantly higher than the percentage for other gender combinations (12.5-13.5%; P<0.0001). The absolute number of female authors in clinical trials gradually increased over time, with the percentage of female last authors rising from 20.7% (1975-85) to 28.5% (after 2005). Our results demonstrate the importance of gender diversity in research collaborations and emphasize the need to increase the number of women in senior positions in medicine.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ In this study, we therefore aimed to quantify the effect of collaborations acros
 
 ## Results
 
-## Statistical power and gender combinations in all clinical trials (N=31,873)
+### Statistical power and gender combinations in all clinical trials (N=31,873)
 
 In our 31,873 trials, the number of published clinical trials with adequate statistical power (>80%) was generally low (12-13%; Figure 1A, left panel). The exception was the set of trials with a male first author combined with a female last author with 20.6% of outcomes adequately powered (CI 19.4–21.8). This percentage was significantly higher in comparison to the three other combinations (highest odds ratio 2.08, CI 1.87–2.30, P<0.0001). Cut-off values for adequate power set to either 70% or 90% yielded comparable results (P<0.0001; Figure 1B). The percentage of adequately powered trials in which the gender combination was unknown was 13.8% (CI 13.6–14.1; Figure 1C). Irrespective of the gender of the first author, clinical trials with female last authors had a higher statistical power compared to male last authors: 16.6% (CI 15.9–17.4) versus 12.9% (CI 12.6–13.3; Figure 2). The average statistical power of clinical trials with missing gender was comparable to those with known gender combinations (Figures 1C and 2). Slightly higher odds for adequately powered trials were also found in the author combination ‘both males’ and ‘female – male (last)’ in comparison to the reference group ‘both females’: odds ratios 1.28 (CI 1.17–1.41, P<0.0001) and 1.25 (CI 1.13–1.39, P<0.0001), respectively (Table 1). In the sensitivity analysis model estimates were slightly lower (relative estimate difference 2.3% to 4.8%; Table 2).
 
@@ -41,7 +41,1227 @@ In our 31,873 trials, the number of published clinical trials with adequate stat
 
 **Figure 2.:** Left: Percentage of trials with power > 0.8 plotted for the gender of the first author (top) and the last author (bottom). Right: Percentage of trials with power > 0.8 plotted for four periods (1975–1985; 1985–1995; 1995–2005; >2005) for the gender of the first author (top) and the last author (bottom). Error bars represent the 95% confidence interval for proportions for all panels.
 
-## Trends across countries
+**Table 1.**
+ Model estimates for the variables fitted against adequately powered trials.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Odds ratio</th>
+      <th colspan="2">95% CI</th>
+      <th>Z value</th>
+      <th>P value</th>
+    </tr>
+    <tr>
+      <th>Author combination</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Both females</td>
+      <td>1.00 (ref.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Both males</td>
+      <td>1.28</td>
+      <td>1.17</td>
+      <td>1.41</td>
+      <td>5.22</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Female - male (last)</td>
+      <td>1.25</td>
+      <td>1.13</td>
+      <td>1.39</td>
+      <td>4.29</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Male - female (last)</td>
+      <td>2.08</td>
+      <td>1.87</td>
+      <td>2.30</td>
+      <td>13.94</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Publication year</td>
+      <td>1.03</td>
+      <td>1.02</td>
+      <td>1.03</td>
+      <td>12.05</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Country group</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anglosphere</td>
+      <td>1.00 (ref.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>0.76</td>
+      <td>0.71</td>
+      <td>0.81</td>
+      <td>8.87</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Non-western</td>
+      <td>0.87</td>
+      <td>0.80</td>
+      <td>0.94</td>
+      <td>3.69</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Medical discipline</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allergy &amp; intolerance</td>
+      <td>1.00 (ref)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Blood disorders</td>
+      <td>0.45</td>
+      <td>0.34</td>
+      <td>0.62</td>
+      <td>5.11</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Child health</td>
+      <td>0.47</td>
+      <td>0.36</td>
+      <td>0.61</td>
+      <td>5.68</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Complementary medicine</td>
+      <td>0.23</td>
+      <td>0.17</td>
+      <td>0.31</td>
+      <td>9.14</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Consumer strategies</td>
+      <td>0.66</td>
+      <td>0.41</td>
+      <td>1.03</td>
+      <td>1.80</td>
+      <td>0.072</td>
+    </tr>
+    <tr>
+      <td>Dentistry &amp; oral health</td>
+      <td>1.05</td>
+      <td>0.68</td>
+      <td>1.59</td>
+      <td>0.21</td>
+      <td>0.832</td>
+    </tr>
+    <tr>
+      <td>Developmental problems</td>
+      <td>0.69</td>
+      <td>0.47</td>
+      <td>1.00</td>
+      <td>1.98</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>Ear, nose &amp; throat</td>
+      <td>0.37</td>
+      <td>0.24</td>
+      <td>0.55</td>
+      <td>4.77</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Effective health systems</td>
+      <td>0.75</td>
+      <td>0.53</td>
+      <td>1.07</td>
+      <td>1.57</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td>Endocrine &amp; metabolic</td>
+      <td>0.29</td>
+      <td>0.20</td>
+      <td>0.42</td>
+      <td>6.51</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Eyes &amp; vision</td>
+      <td>0.56</td>
+      <td>0.38</td>
+      <td>0.81</td>
+      <td>3.02</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Gastroenterology &amp; hepatology</td>
+      <td>0.49</td>
+      <td>0.38</td>
+      <td>0.65</td>
+      <td>5.07</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genetic disorders</td>
+      <td>0.19</td>
+      <td>0.12</td>
+      <td>0.30</td>
+      <td>7.09</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Gynaecology</td>
+      <td>0.69</td>
+      <td>0.52</td>
+      <td>0.92</td>
+      <td>2.58</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Health &amp; safety at work</td>
+      <td>0.24</td>
+      <td>0.13</td>
+      <td>0.42</td>
+      <td>4.74</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Heart &amp; circulation</td>
+      <td>0.29</td>
+      <td>0.22</td>
+      <td>0.39</td>
+      <td>8.24</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Infectious disease</td>
+      <td>0.61</td>
+      <td>0.47</td>
+      <td>0.80</td>
+      <td>3.62</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Kidney disease</td>
+      <td>0.80</td>
+      <td>0.58</td>
+      <td>1.12</td>
+      <td>1.28</td>
+      <td>0.201</td>
+    </tr>
+    <tr>
+      <td>Lungs &amp; airways</td>
+      <td>0.35</td>
+      <td>0.27</td>
+      <td>0.46</td>
+      <td>7.56</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Mental health</td>
+      <td>0.53</td>
+      <td>0.40</td>
+      <td>0.71</td>
+      <td>4.40</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Neonatal care</td>
+      <td>0.47</td>
+      <td>0.34</td>
+      <td>0.64</td>
+      <td>4.68</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Neurology</td>
+      <td>0.56</td>
+      <td>0.42</td>
+      <td>0.74</td>
+      <td>4.08</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Orthopaedics &amp; trauma</td>
+      <td>0.79</td>
+      <td>0.60</td>
+      <td>1.05</td>
+      <td>1.63</td>
+      <td>0.103</td>
+    </tr>
+    <tr>
+      <td>Pain &amp; anaesthesia</td>
+      <td>0.64</td>
+      <td>0.49</td>
+      <td>0.84</td>
+      <td>3.23</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Pregnancy &amp; childbirth</td>
+      <td>0.58</td>
+      <td>0.44</td>
+      <td>0.77</td>
+      <td>3.76</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Public health</td>
+      <td>1.23</td>
+      <td>0.78</td>
+      <td>1.92</td>
+      <td>0.89</td>
+      <td>0.372</td>
+    </tr>
+    <tr>
+      <td>Rheumatology</td>
+      <td>0.75</td>
+      <td>0.57</td>
+      <td>1.00</td>
+      <td>2.02</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>Skin disorders</td>
+      <td>0.89</td>
+      <td>0.65</td>
+      <td>1.23</td>
+      <td>0.69</td>
+      <td>0.488</td>
+    </tr>
+    <tr>
+      <td>Tobacco, drugs &amp; alcohol</td>
+      <td>0.34</td>
+      <td>0.26</td>
+      <td>0.46</td>
+      <td>7.39</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Urology</td>
+      <td>1.04</td>
+      <td>0.74</td>
+      <td>1.45</td>
+      <td>0.21</td>
+      <td>0.834</td>
+    </tr>
+    <tr>
+      <td>Wounds</td>
+      <td>0.36</td>
+      <td>0.21</td>
+      <td>0.61</td>
+      <td>3.73</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Model estimates from the sensitivity analysis (with individual countries) for the variables fitted against adequately powered trials.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Odds ratio</th>
+      <th colspan="2">95% CI</th>
+      <th>Z value</th>
+      <th>P value</th>
+    </tr>
+    <tr>
+      <th>Author combination</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Both females</td>
+      <td>1.00 (ref.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Both males</td>
+      <td>1.25</td>
+      <td>1.13</td>
+      <td>1.37</td>
+      <td>4.58</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Female - male (last)</td>
+      <td>1.19</td>
+      <td>1.07</td>
+      <td>1.32</td>
+      <td>3.28</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Male - female (last)</td>
+      <td>1.98</td>
+      <td>1.78</td>
+      <td>2.19</td>
+      <td>12.95</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Publication year</td>
+      <td>1.02</td>
+      <td>1.02</td>
+      <td>1.03</td>
+      <td>14.5</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Argentina</td>
+      <td>1.00 (ref.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>0.79</td>
+      <td>0.52</td>
+      <td>1.19</td>
+      <td>1.12</td>
+      <td>0.261</td>
+    </tr>
+    <tr>
+      <td>Austria</td>
+      <td>1.31</td>
+      <td>0.84</td>
+      <td>2.02</td>
+      <td>1.19</td>
+      <td>0.232</td>
+    </tr>
+    <tr>
+      <td>Bangladesh</td>
+      <td>3.29</td>
+      <td>2.00</td>
+      <td>5.41</td>
+      <td>4.69</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Belgium</td>
+      <td>0.94</td>
+      <td>0.61</td>
+      <td>1.45</td>
+      <td>0.29</td>
+      <td>0.775</td>
+    </tr>
+    <tr>
+      <td>Brazil</td>
+      <td>0.98</td>
+      <td>0.63</td>
+      <td>1.51</td>
+      <td>0.10</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>1.16</td>
+      <td>0.78</td>
+      <td>1.72</td>
+      <td>0.72</td>
+      <td>0.474</td>
+    </tr>
+    <tr>
+      <td>Chile</td>
+      <td>0.74</td>
+      <td>0.39</td>
+      <td>1.42</td>
+      <td>0.89</td>
+      <td>0.371</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>1.20</td>
+      <td>0.8</td>
+      <td>1.81</td>
+      <td>0.87</td>
+      <td>0.383</td>
+    </tr>
+    <tr>
+      <td>Colombia</td>
+      <td>1.95</td>
+      <td>1.17</td>
+      <td>3.26</td>
+      <td>2.55</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Costa Rica</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Inf</td>
+      <td>0.14</td>
+      <td>0.891</td>
+    </tr>
+    <tr>
+      <td>Croatia</td>
+      <td>0.47</td>
+      <td>0.22</td>
+      <td>1.03</td>
+      <td>1.88</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Czech Republic</td>
+      <td>0.71</td>
+      <td>0.45</td>
+      <td>1.13</td>
+      <td>1.45</td>
+      <td>0.147</td>
+    </tr>
+    <tr>
+      <td>Denmark</td>
+      <td>1.24</td>
+      <td>0.82</td>
+      <td>1.87</td>
+      <td>1.03</td>
+      <td>0.303</td>
+    </tr>
+    <tr>
+      <td>Egypt</td>
+      <td>1.78</td>
+      <td>1.13</td>
+      <td>2.79</td>
+      <td>2.50</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Finland</td>
+      <td>0.88</td>
+      <td>0.58</td>
+      <td>1.32</td>
+      <td>0.63</td>
+      <td>0.527</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>0.91</td>
+      <td>0.61</td>
+      <td>1.37</td>
+      <td>0.44</td>
+      <td>0.663</td>
+    </tr>
+    <tr>
+      <td>Gambia</td>
+      <td>1.05</td>
+      <td>0.56</td>
+      <td>1.99</td>
+      <td>0.16</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>0.90</td>
+      <td>0.6</td>
+      <td>1.34</td>
+      <td>0.53</td>
+      <td>0.593</td>
+    </tr>
+    <tr>
+      <td>Ghana</td>
+      <td>0.84</td>
+      <td>0.48</td>
+      <td>1.48</td>
+      <td>0.61</td>
+      <td>0.544</td>
+    </tr>
+    <tr>
+      <td>Greece</td>
+      <td>0.46</td>
+      <td>0.29</td>
+      <td>0.75</td>
+      <td>3.12</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Hong Kong</td>
+      <td>1.37</td>
+      <td>0.89</td>
+      <td>2.11</td>
+      <td>1.44</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Hungary</td>
+      <td>2.87</td>
+      <td>1.75</td>
+      <td>4.7</td>
+      <td>4.18</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>0.89</td>
+      <td>0.58</td>
+      <td>1.35</td>
+      <td>0.56</td>
+      <td>0.573</td>
+    </tr>
+    <tr>
+      <td>Indonesia</td>
+      <td>0.71</td>
+      <td>0.34</td>
+      <td>1.48</td>
+      <td>0.93</td>
+      <td>0.354</td>
+    </tr>
+    <tr>
+      <td>Iran</td>
+      <td>1.14</td>
+      <td>0.73</td>
+      <td>1.79</td>
+      <td>0.59</td>
+      <td>0.557</td>
+    </tr>
+    <tr>
+      <td>Ireland</td>
+      <td>0.80</td>
+      <td>0.49</td>
+      <td>1.32</td>
+      <td>0.87</td>
+      <td>0.387</td>
+    </tr>
+    <tr>
+      <td>Israel</td>
+      <td>0.80</td>
+      <td>0.51</td>
+      <td>1.26</td>
+      <td>0.98</td>
+      <td>0.328</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>1.03</td>
+      <td>0.69</td>
+      <td>1.53</td>
+      <td>0.15</td>
+      <td>0.881</td>
+    </tr>
+    <tr>
+      <td>Japan</td>
+      <td>0.35</td>
+      <td>0.22</td>
+      <td>0.53</td>
+      <td>4.83</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Jordan</td>
+      <td>3.91</td>
+      <td>2.09</td>
+      <td>7.32</td>
+      <td>4.27</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Kenya</td>
+      <td>0.42</td>
+      <td>0.18</td>
+      <td>1.00</td>
+      <td>1.97</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>Korea</td>
+      <td>1.56</td>
+      <td>1.02</td>
+      <td>2.39</td>
+      <td>2.07</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Lebanon</td>
+      <td>1.36</td>
+      <td>0.75</td>
+      <td>2.46</td>
+      <td>1.01</td>
+      <td>0.311</td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>0.12</td>
+      <td>0.03</td>
+      <td>0.52</td>
+      <td>2.83</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Malaysia</td>
+      <td>0.78</td>
+      <td>0.34</td>
+      <td>1.79</td>
+      <td>0.59</td>
+      <td>0.552</td>
+    </tr>
+    <tr>
+      <td>Mali</td>
+      <td>0.75</td>
+      <td>0.29</td>
+      <td>1.91</td>
+      <td>0.61</td>
+      <td>0.543</td>
+    </tr>
+    <tr>
+      <td>Mexico</td>
+      <td>1.07</td>
+      <td>0.62</td>
+      <td>1.85</td>
+      <td>0.25</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Netherlands</td>
+      <td>0.71</td>
+      <td>0.47</td>
+      <td>1.07</td>
+      <td>1.62</td>
+      <td>0.106</td>
+    </tr>
+    <tr>
+      <td>New Zealand</td>
+      <td>1.28</td>
+      <td>0.76</td>
+      <td>2.14</td>
+      <td>0.94</td>
+      <td>0.349</td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>1.32</td>
+      <td>0.70</td>
+      <td>2.48</td>
+      <td>0.87</td>
+      <td>0.386</td>
+    </tr>
+    <tr>
+      <td>Norway</td>
+      <td>0.89</td>
+      <td>0.56</td>
+      <td>1.41</td>
+      <td>0.49</td>
+      <td>0.624</td>
+    </tr>
+    <tr>
+      <td>Pakistan</td>
+      <td>0.93</td>
+      <td>0.48</td>
+      <td>1.83</td>
+      <td>0.20</td>
+      <td>0.844</td>
+    </tr>
+    <tr>
+      <td>Papua New Guinea</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Inf</td>
+      <td>0.10</td>
+      <td>0.918</td>
+    </tr>
+    <tr>
+      <td>Peru</td>
+      <td>0.99</td>
+      <td>0.57</td>
+      <td>1.7</td>
+      <td>0.04</td>
+      <td>0.967</td>
+    </tr>
+    <tr>
+      <td>Poland</td>
+      <td>0.39</td>
+      <td>0.22</td>
+      <td>0.68</td>
+      <td>3.29</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Portugal</td>
+      <td>3.17</td>
+      <td>1.84</td>
+      <td>5.45</td>
+      <td>4.17</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Qatar</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Inf</td>
+      <td>0.11</td>
+      <td>0.916</td>
+    </tr>
+    <tr>
+      <td>Saudi Arabia</td>
+      <td>0.54</td>
+      <td>0.30</td>
+      <td>0.98</td>
+      <td>2.02</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>Singapore</td>
+      <td>1.14</td>
+      <td>0.68</td>
+      <td>1.93</td>
+      <td>0.50</td>
+      <td>0.614</td>
+    </tr>
+    <tr>
+      <td>Slovenia</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Inf</td>
+      <td>0.11</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>South Africa</td>
+      <td>1.24</td>
+      <td>0.79</td>
+      <td>1.96</td>
+      <td>0.93</td>
+      <td>0.355</td>
+    </tr>
+    <tr>
+      <td>Spain</td>
+      <td>1.08</td>
+      <td>0.71</td>
+      <td>1.62</td>
+      <td>0.35</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+      <td>1.24</td>
+      <td>0.83</td>
+      <td>1.85</td>
+      <td>1.03</td>
+      <td>0.301</td>
+    </tr>
+    <tr>
+      <td>Switzerland</td>
+      <td>0.66</td>
+      <td>0.43</td>
+      <td>1.02</td>
+      <td>1.89</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>Taiwan</td>
+      <td>0.45</td>
+      <td>0.29</td>
+      <td>0.71</td>
+      <td>3.43</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Thailand</td>
+      <td>1.53</td>
+      <td>0.99</td>
+      <td>2.37</td>
+      <td>1.93</td>
+      <td>0.053</td>
+    </tr>
+    <tr>
+      <td>Turkey</td>
+      <td>0.64</td>
+      <td>0.42</td>
+      <td>0.98</td>
+      <td>2.06</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td>Uganda</td>
+      <td>1.27</td>
+      <td>0.56</td>
+      <td>2.88</td>
+      <td>0.58</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>1.25</td>
+      <td>0.84</td>
+      <td>1.85</td>
+      <td>1.10</td>
+      <td>0.273</td>
+    </tr>
+    <tr>
+      <td>USA</td>
+      <td>1.42</td>
+      <td>0.96</td>
+      <td>2.10</td>
+      <td>1.78</td>
+      <td>0.076</td>
+    </tr>
+    <tr>
+      <td>Venezuela</td>
+      <td>5.25</td>
+      <td>3.22</td>
+      <td>8.54</td>
+      <td>6.67</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Vietnam</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Inf</td>
+      <td>0.12</td>
+      <td>0.907</td>
+    </tr>
+    <tr>
+      <td>Zimbabwe</td>
+      <td>1.93</td>
+      <td>0.90</td>
+      <td>4.12</td>
+      <td>1.70</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Other countries</td>
+      <td>0.75</td>
+      <td>0.48</td>
+      <td>1.17</td>
+      <td>1.28</td>
+      <td>0.201</td>
+    </tr>
+    <tr>
+      <td>Medical discipline</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allergy &amp; intolerance</td>
+      <td>1.00 (ref.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Blood disorders</td>
+      <td>0.49</td>
+      <td>0.39</td>
+      <td>0.63</td>
+      <td>5.79</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Child health</td>
+      <td>0.55</td>
+      <td>0.45</td>
+      <td>0.67</td>
+      <td>5.87</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Complementary medicine</td>
+      <td>0.26</td>
+      <td>0.20</td>
+      <td>0.33</td>
+      <td>11.21</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Consumer strategies</td>
+      <td>0.94</td>
+      <td>0.66</td>
+      <td>1.34</td>
+      <td>0.35</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Dentistry &amp; oral health</td>
+      <td>1.43</td>
+      <td>1.07</td>
+      <td>1.92</td>
+      <td>2.41</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Developmental problems</td>
+      <td>0.78</td>
+      <td>0.58</td>
+      <td>1.05</td>
+      <td>1.64</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>Ear, nose &amp; throat</td>
+      <td>0.51</td>
+      <td>0.39</td>
+      <td>0.68</td>
+      <td>4.66</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Effective health systems</td>
+      <td>0.85</td>
+      <td>0.63</td>
+      <td>1.14</td>
+      <td>1.11</td>
+      <td>0.269</td>
+    </tr>
+    <tr>
+      <td>Endocrine &amp; metabolic</td>
+      <td>0.4</td>
+      <td>0.30</td>
+      <td>0.53</td>
+      <td>6.58</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Eyes &amp; vision</td>
+      <td>0.51</td>
+      <td>0.38</td>
+      <td>0.70</td>
+      <td>4.27</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Gastroenterology &amp; hepatology</td>
+      <td>0.56</td>
+      <td>0.46</td>
+      <td>0.69</td>
+      <td>5.41</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Genetic disorders</td>
+      <td>0.29</td>
+      <td>0.20</td>
+      <td>0.42</td>
+      <td>6.51</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Gynaecology</td>
+      <td>0.82</td>
+      <td>0.66</td>
+      <td>1.01</td>
+      <td>1.84</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>Health &amp; safety at work</td>
+      <td>0.54</td>
+      <td>0.37</td>
+      <td>0.79</td>
+      <td>3.16</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Heart &amp; circulation</td>
+      <td>0.34</td>
+      <td>0.27</td>
+      <td>0.43</td>
+      <td>9.43</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Infectious disease</td>
+      <td>0.8</td>
+      <td>0.65</td>
+      <td>0.99</td>
+      <td>2.09</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>Kidney disease</td>
+      <td>0.71</td>
+      <td>0.55</td>
+      <td>0.92</td>
+      <td>2.59</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Lungs &amp; airways</td>
+      <td>0.47</td>
+      <td>0.38</td>
+      <td>0.58</td>
+      <td>7.04</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Mental health</td>
+      <td>0.6</td>
+      <td>0.48</td>
+      <td>0.75</td>
+      <td>4.58</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Neonatal care</td>
+      <td>0.38</td>
+      <td>0.29</td>
+      <td>0.48</td>
+      <td>7.81</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Neurology</td>
+      <td>0.7</td>
+      <td>0.57</td>
+      <td>0.87</td>
+      <td>3.26</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Orthopaedics &amp; trauma</td>
+      <td>1.18</td>
+      <td>0.96</td>
+      <td>1.46</td>
+      <td>1.56</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Pain &amp; anaesthesia</td>
+      <td>0.73</td>
+      <td>0.60</td>
+      <td>0.90</td>
+      <td>2.92</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Pregnancy &amp; childbirth</td>
+      <td>0.69</td>
+      <td>0.55</td>
+      <td>0.85</td>
+      <td>3.40</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Public health</td>
+      <td>1.72</td>
+      <td>1.24</td>
+      <td>2.37</td>
+      <td>3.27</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Rheumatology</td>
+      <td>0.97</td>
+      <td>0.78</td>
+      <td>1.20</td>
+      <td>0.31</td>
+      <td>0.757</td>
+    </tr>
+    <tr>
+      <td>Skin disorders</td>
+      <td>1.26</td>
+      <td>0.99</td>
+      <td>1.59</td>
+      <td>1.89</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>Tobacco. drugs &amp; alcohol</td>
+      <td>0.4</td>
+      <td>0.32</td>
+      <td>0.50</td>
+      <td>7.97</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Urology</td>
+      <td>1.27</td>
+      <td>1.00</td>
+      <td>1.63</td>
+      <td>1.92</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Wounds</td>
+      <td>0.8</td>
+      <td>0.59</td>
+      <td>1.08</td>
+      <td>1.44</td>
+      <td>0.15</td>
+    </tr>
+  </tbody>
+</table>
+
+### Trends across countries
 
 The world map in Figure 3 shows the geographical distribution of the trials in our sample (based on affiliation of the first author). The percentage of trials originating from Anglosphere countries (United States, United Kingdom, Canada, Australia and New Zealand) was 46.9%; the percentage from European countries was 32.9%; and the percentage from non-western countries was 20.2% (with the top five being Turkey, Japan, India, China and Israel). European trials had lower odds of adequate statistical power compared to Anglosphere trials (odds ratio: 0.76, CI 0.71–0.81, P<0.0001; Figure 4A). This was also the case in trials from Non-western countries (odds ratio: 0.87, CI 0.80–0.94, P<0.0001; Table 1). Individual country data, from the sensitivity analysis, is provided in Table 2.
 
@@ -53,11 +1273,11 @@ The world map in Figure 3 shows the geographical distribution of the trials in o
 
 **Figure 4.:** (A) Percentage of trials with power > 0.8 for the four gender combinations of first and last author within the three country groups. Error bars represent the 95% confidence interval for proportions. (B) A logistic regression multivariable model (see "Data analysis and statistical model" below) can be used to predict the probability that a trial will have a power above a certain value. Here the predicted probabilities that trials will have power > 0.8 are plotted as a function of year for the four gender combinations in the three country groups. The predicted probabilities are averaged across medical disciplines and plotted as mean and 95% confidence intervals.
 
-## Trends over time
+### Trends over time
 
 The percentage of adequately powered trials with a male first author and a female last author increased over time, and was higher than the percentage for other combinations in the last three decades of the study (Figure 1A, right panel). According to a logistic regression multivariable model (see "Data analysis and statistical model") the odds ratio of adequate statistical power increased each year (odds ratio: 1.03, CI: 1.02–1.03, P<0.0001; Figure 4B).
 
-## Trends across medical fields
+### Trends across medical fields
 
 The higher percentage of adequately powered clinical trials with a combination of a male first author and a female last author was not restricted to specific medical disciplines, although the effect sizes differed across disciplines (Figure 5). The medical fields with a relative low odds for adequate statistical power in general, as determined with the multivariable model, are: ‘complementary medicine’, ‘endocrine & metabolic’, ‘gastroenterology & hepatology’, ‘genetic disorders’, ‘health & safety at work’ and ‘heart & circulation’, all with significant odds ratios below 0.3 compared to the reference field allergy and intolerance (Table 1). The fields with most pronounced higher statistical power for male first and female last author were ‘pregnancy & childbirth’, ‘gynaecology’, ‘lungs & airways’, ‘gastroenterology & hepatology’ and ‘tobacco, drugs & alcohol’. The total number of trials for each of the four gender combinations was not equally distributed. Most trials were published by the male–male author combination (Figure 6), and this inequality in the gender of authors was found across major medical disciplines (Figure 6). Nevertheless, the number of clinical trials with a male first and last author decreased from 64.8% in the period 1975–1985 (CI 61.9–67.6) to 49.0% after 2005 (CI 48.4–49.6; Figure 7).
 
@@ -73,7 +1293,7 @@ The higher percentage of adequately powered clinical trials with a combination o
 
 **Figure 7.:** Left: The number and percentage of trials underlying the power calculations for the four gender combinations. Right: The corresponding percentage of the total number of trials underlying the four gender combinations for the four periods studied (1975–1985; 1985–1995; 1995–2005; >2005). Error bars represent the 95% confidence interval for proportions for both panels.
 
-## Correction for potential confounders
+### Correction for potential confounders
 
 To correct for the potential confounders at the country level, the year of publication, and the medical discipline, logistic regression was performed. The linear combination of the variables ‘author combination’, ‘year of publication’, ‘country’ and ‘medical discipline’ explained the presence or absence of adequate statistical power well in a multivariable logistic regression model (χ2Zeng et al., 2016 = 1146.5 (degree-of-freedom 36), P<0.0001). The four author combinations were overall different from each other (χ2Zeng et al., 2016 = 440.5 (4), P<0.0001). The model estimates are provided in Table 1. A sensitivity analysis with ‘country’ defined as individual countries rather than groups of countries did not significantly change the other variable model estimates (Table 2). The sensitivity model explained the presence or absence of adequate statistical power very well in a multivariable logistic regression model (χ2Zeng et al., 2016 = 3638.6 (degree-of-freedom 101), P<0.0001). The four author combinations in the sensitivity analysis were also overall different from each other (χ2Zeng et al., 2016 = 488.2 (4), P<0.0001).
 
@@ -91,7 +1311,7 @@ Even though adequate power in clinical trials is of vital importance, (Ioannidis
 
 ## Materials and methods
 
-## Selection of clinical trials
+### Selection of clinical trials
 
 The selection of trials for this analysis is shown in a flow chart (Figure 8). Clinical trials were extracted from the Cochrane Database of Systematic Reviews. Only the subset of trials was included in the analysis where the first name of the first and last author were reported. These reviews cover all medical fields and have high quality standards and methodological rigor with elaborate search protocols, and rigorously identify and summarize comparable trials (Jørgensen et al., 2006). Moreover, these reviews perform meta-analyses on individual clinical trials to generate an estimated effect size of interventions. All clinical trials with a PubMed ID included in a systematic review published in the second Issue of the 2017 Cochrane Database of Systematic Reviews (CDSR) were extracted using an in-house developed, open-source Cochrane Library website parser. For each individual clinical trial, we extracted publication year, outcome estimates (odds or risk ratio, risk difference or standardized mean difference), and Cochrane’s medical discipline classifications.
 
@@ -99,19 +1319,19 @@ The selection of trials for this analysis is shown in a flow chart (Figure 8). C
 
 **Figure 8.:** Trials were analyzed if published after 1974, included in a significant meta-analysis in a systematic review and gender data was extractable for both the first and the last author.
 
-## Statistical power of individual clinical trials
+### Statistical power of individual clinical trials
 
 Statistical power was assessed in clinical trials, published after 1974, which were included in a Cochrane meta-analysis with a significant overall estimate (i.e., a meta-analytic P-value of <0.05). All data and scripts are available via the Open Science Framework (WM Otte, Temporal RCT power, Open Science Framework, https://osf.io/ud2jw/. Update 17-03-04 11:19 AM). We included only significant meta-analyses to exclude bias from interventions with no proven effects. In other words, if a confidence interval of a meta-analysis contains 0, the point estimate of the overall effect size is not reliable nor known and may not be used to estimate the individual power of studies included in that meta-analysis. Nevertheless, inclusion of non-significant meta-analyses did not impact on our findings (data not shown).
 
 The power for an individual clinical trial was calculated based on the sample sizes in both trial arms, using a 5% α threshold using the meta-analytic estimate as approximation of the true effect size. Trials with a statistical power lower than 80% were considered to be underpowered based on historical arguments (Moher et al., 1994). This cut-off is standard but also relatively arbitrary. We therefore also performed analyses using a less and more conservative cut-off of 70% and 90%, respectively. The statistical power is presented in all plots with 95% confidence intervals determined with the Wilson’s score method (Wilson, 1927).
 
-## Gender extraction
+### Gender extraction
 
 All included trials had multiple authors. We considered the first author of clinical trial publication as a junior researcher and the last author as a senior. This assumption will most likely reflect the hierarchal relationship in the majority of the cases. The senior author having the last position in publications has long been practiced in medicine. Typically, the person conducting the practical research, analyzing the data, and drafting the first manuscript is often the first author, while the last author is the senior research responsible for the overall oversight.
 
 For the gender of authors, first names were extracted for the first and the last author for all included clinical trials using the online interface PubReMiner (http://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi) (Slater, 2014). First names were then converted to male and female probabilities with the application programming interface (API) of Genderize (http://genderize.io/). This API compares first names against a database containing over 216,000 distinct names from 79 countries and 89 languages based on millions of public profiles and their gender data in major social networks. Accuracy of female and male classification with this API, compared with open-source gender prediction tools, is excellent (Wais, 2016). A recent validation study reported female and male classification precisions of 95% and 98%, respectively (Karimi et al., 2016). Gender probabilities were dichotomized to obtain binary male/female labels. Trials with unknown gender data for either the first or last author were not included in the analysis. Missing first names caused most of the unknown genders. For some first names no gender data was available in the gender database (<5%).
 
-## Data analysis and statistical model
+### Data analysis and statistical model
 
 Clinical trials with adequate statistical power, more than 80%, were identified for all four combinations of the gender of first and last author (i.e. female–female, male–male, female–male and male–female).
 
@@ -121,6 +1341,6 @@ We classified the trials using the 21 standard Cochrane major medical discipline
 
 The data were modeled with logistic regression. In this model the log odds of the dichotomous outcome variable, namely trial ‘adequate power’, was modeled as a linear combination of predictor variables. We used the glm function in R software version 3.2.0. The variable ‘author combination’ was added as a factor to the model, with the author combination ‘both females’ as reference group. The three covariates included were ‘publication year’, ‘country’ and ‘medical field’. The model fit was investigated with the significance of the overall model. This χ (Zeng et al., 2016) test determines whether the model with predictors fits significantly better than a so called null model with just an intercept. The 95% confidence intervals for the estimated coefficients were determined with the profiled log-likelihood function (Venzon and Moolgavkar, 1988).. The estimates were exponentiated to interpret them as odds-ratios. The overall effect of ‘author combination’ in the model was tested with the Wald test. We determined the model’s predicted probabilities and their 95% confidence intervals over time. We considered a P-value<0.005 as significant (Benjamin et al., 2018). We performed a sensitivity analysis with the ‘country’ variable not specified into three main categories but into individual country categories, if a minimal of fifty entries per country were present.
 
-## Data sharing
+### Data sharing
 
 Open-source code to reproduce our processing pipeline is provided via the Open Science Framework (WM Otte, Temporal RCT power, Open Science Framework, https://osf.io/ud2jw/. Update 17-03-04 11:19 AM). Data extraction from the Cochrane Database of Systematic Reviews requires full text access.

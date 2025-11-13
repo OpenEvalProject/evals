@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.45318.001 We recently reported that molecular dynamics simulations for hemoglobin require a surprisingly large box size to stabilize the T(0) state relative to R(0), as observed in experiments (El Hage et al., 2018). Gapsys and de Groot have commented on this work but do not provide convincing evidence that the conclusions of El Hage et al., 2018 are incorrect. Here we respond to these concerns, argue that our original conclusions remain valid, and raise our own concerns about some of the results reported in the comment by Gapsys and de Groot that require clarification.
+We recently reported that molecular dynamics simulations for hemoglobin require a surprisingly large box size to stabilize the T(0) state relative to R(0), as observed in experiments (El Hage et al., 2018). Gapsys and de Groot have commented on this work but do not provide convincing evidence that the conclusions of El Hage et al., 2018 are incorrect. Here we respond to these concerns, argue that our original conclusions remain valid, and raise our own concerns about some of the results reported in the comment by Gapsys and de Groot that require clarification.
 
 ## Introduction
 
@@ -26,19 +26,17 @@ Our investigation of the box size dependence of hemoglobin in solution was initi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig1-v1.jpg)
 
-**Figure 1.:** 146B2 and His146B2 for the 150 Å box during 1280 nanoseconds of molecular dynamics simulation.
-
 ## Results
 
-## Statistics
+### Statistics
 
 To estimate rates, a sufficient number of samples is required. An explicit example, although not related to hemoglobin but illustrating the effect of insufficient statistics, is to consider reactive MD simulations for the vibrationally induced photodissociation of HSO3Cl to SO3 and HCl (Figure 2). It is evident that with 20 events the distribution of reaction times is far from converged and does not even allow one to guess the true distribution: see Yosa Reyes et al., 2016 for details on the simulations. This is also why from ab initio MD simulations of vibrationally induced photodissociation, no rates were determined because widely different reaction times for individual trajectories were found when only considering ~100 trajectories (see Figure 2 of Miller and Gerber, 2006). It also remains unclear how the probability of 0.0026 was determined in Gapsys and de Groot (2019) (hereafter referred to as the comment).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig2-v1.jpg)
 
-**Figure 2.:** p(τ) for the decomposition HSO3Cl -> SO3+HCl from 20 (black), 500 (red) and 5000 (blue) reactive trajectories.With 20 trajectories the distribution is far from converged and even with 500 trajectories convergence appears to be incomplete. It is only for 5000 independent events that p(τ) approaches a smooth distribution.
+**Figure 2.:** With 20 trajectories the distribution is far from converged and even with 500 trajectories convergence appears to be incomplete. It is only for 5000 independent events that p(τ) approaches a smooth distribution.
 
-## Hydrophobic effect
+### Hydrophobic effect
 
 As stated in the abstract of the El Hage et al. (2018): ‘The results suggest that such a large box is required for the hydrophobic effect, which stabilizes the T(0) tetramer, to be manifested.’ We felt we did not have conclusive evidence for the role of the hydrophobic effect, and have been working with Adam Willard to investigate this point. We note that the comment includes a list of some differences in the simulation setups: these and other differences in the two sets of setups need to be investigated as possible contributors to the difference in the simulation results. A possible problem with the comparisons in Figure 3 of the comment concerns the fact that we only exchanged input files for the 90 Å box; the authors of the comment constructed the larger boxes used in their simulations. In that regard, it is interesting to note that their observed life time for the 90 Å box with its error bars essentially includes the one observed in our simulation. Point on which we do not agree with the constructs used in the comment to reanalyze our results include the following:
 
@@ -52,7 +50,7 @@ As stated in the abstract of the El Hage et al. (2018): ‘The results suggest t
 
 The normalization procedure of the radial distribution functions used in the comment remains unclear. It should be noted that the radial distribution functions in El Hage et al. (2018) follow the expectations for spherical cavities (Chandler, 2005). Figure 5 in El Hage et al. (2018) aims at highlighting that in a box not sufficiently large, water barely reaches bulk properties as judged from the g(r), whereas it readily does so when using a sufficiently large box (e.g. 150 Å). As no hydrophobic effect is expected for ubiquitin it is not clear what the data in Figure 2—figure supplement 1 of the comment contribute to relating the thermodynamic stability of the T(0) state of hemoglobin with the hydrophobic effect.
 
-## Kinetics as a function of box size
+### Kinetics as a function of box size
 
 This section raises questions as to the statistical significance of the results. As mentioned above and in Figure 2, converged reaction time distributions require hundreds to thousands of transitions. Given the fact that the T(0) state is unstable in the 90 Å and 120 Å boxes it is reasonable that starting from an ensemble of initial structures a distribution of decay times is found. Comparing two such distributions to provide evidence for the presence or absence of a box size dependence requires them to be converged to some degree which probably can not be achieved from 10 to 20 simulations.
 
@@ -64,35 +62,160 @@ It is stated in the comment that with the setup used in our simulations, 20 simu
 
 When we were still collaborating to investigate the origin of some of the results reported in the comment, we exchanged input files they used in their work and our input files. We note that a previous publication by one of the authors of the comment (Hub et al., 2010) does not provide details on the protonation states of the His, except for His146 for which they used either doubly protonated or protonation at ε. In another publication by one of the authors of the comment (Vesper and de Groot, 2013) it appears that the Kovalevsky protonation states that they sent us were not used. Thus we need more information to verify which protonation states were used in the various simulations. Our comparison showed that the protonation states of the histidine residues were very different (Table 1). We note that it is not sufficient to characterize the histidine residues as ‘protonated’ or ‘deprotonated’. Rather, it is also relevant whether protonation is at the δ or ε positions, for example His143 which should be ε-protonated as it anchors the water network stabilizing His146 (see Figure 6 in El Hage et al., 2018).
 
+**Table 1.**
+ Histidine protonation states in hemoglobin as used in simulations by the present authors (Zheng et al., 2013; El Hage et al., 2018), and the histidine protonation states in the files that were supplied to us by the authors of the comment (originally from Kovalevsky et al., 2010).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Zheng et al., 2013; El Hage et al., 2018</th>
+      <th colspan="2">Kovalevsky et al., 2010</th>
+      <th></th>
+      <th>Zheng et al., 2013; El Hage et al., 2018</th>
+      <th colspan="2">Kovalevsky et al., 2010</th>
+    </tr>
+    <tr>
+      <th>Res.</th>
+      <th>Chain A/C</th>
+      <th>Chain A</th>
+      <th>Chain C</th>
+      <th>Res.</th>
+      <th>Chain B/D</th>
+      <th>Chain B</th>
+      <th>Chain D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSE</td>
+      <td>2</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSE</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>63</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSE</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>HSD</td>
+      <td>HSD</td>
+      <td>HSP</td>
+      <td>77</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSE</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSE</td>
+      <td>92</td>
+      <td>HSD-Fe</td>
+      <td>HSD-Fe</td>
+      <td>HSD-Fe</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>HSD</td>
+      <td>HSP</td>
+      <td>HSP</td>
+      <td>97</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSP</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>HSD-Fe</td>
+      <td>HSD -Fe</td>
+      <td>HSD-Fe</td>
+      <td>116</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSP</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>117</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSE</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSP</td>
+      <td>143</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSP</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>HSE</td>
+      <td>HSP</td>
+      <td>HSP</td>
+      <td>146</td>
+      <td>HSP</td>
+      <td>HSP</td>
+      <td>HSP</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td>HSE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Further differences between the simulations concern the shape of the simulation box (cubic in El Hage et al., 2018 vs. dodecahedral), the center of mass of the protein was constrained to avoid periodic boundary effects (El Hage et al., 2018), and the terms for the dihedral parameters for the Fe-proximal histidine differed. Removing the angular center of mass motion is only warned against if the motion of the center of mass itself is not controlled (i.e., if the solute can cross the boundaries of the periodic box). However, this is not the case in our simulations, but appeared to happen in some of those performed by the authors of the comment. Concerning the effect of the box shape on the proteins simulated under periodic boundary conditions, it has been found that the box type can have a statistically significant effect on the outcome of a simulation, and that the magnitude of the effect depends on the protein considered (Wassenaar and Mark, 2006). Although all of the latter may contribute to the difference in the results, we believe that a possible difference in the His protonation states used in the simulations would play a major role and needs to be examined.
 
-## Kinetics rather than thermodynamics
+### Kinetics rather than thermodynamics
 
 A necessary but not sufficient criterion for thermodynamic stability is that the structure considered (here T(0)) does not decay on the time scale of the simulations (e.g., to R(0)). However, transition times from T to R can not be determined from such an approach. For this, either a very large number of independent simulations (on the order of hundreds to thousands; see Figure 2) are required, or free energy simulations need to be carried out. As pointed out in El Hage et al. (2018) from the available experimental data, the T(0) to R(0) transition time should be on the order of seconds. The transitions in simulation boxes of 75 Å, 90 Å, and 120 Å all were under one microsecond and increased with increasing box size (Figure 4). Panels (A), (B), and (D) show that the presence or absence of the Fe-His bond does not lead to substantial changes of the time series as far as they have been followed. Panel (B) also reports the changes for simulations with electrostatic cutoffs (green) and when simulations with the Kovalevsky protonation states were carried out (orange). With finite cutoff the T(0) state is stable for at least 150 nanoseconds, and with the Kovalevsky protonation it decays after 60 nanoseconds, in accord with earlier findings (Hub et al., 2010). The radial distribution functions around His146 in our original study (see Figure 6 in El Hage et al., 2018) and from our simulations using the Kovalevsky protonation in the 90 Å box suggest that with the latter protonation state His146 is typically overhydrated as compared with our (stable) simulation in the 150 Å box (see middle panel in Figure 5). Moreover, with the Kovalevsky protonation in the 90Å box, the height of the first and second peak of g(r) is comparable to that of our own simulation in the 90 Å box after T(0) has decayed (at 500 nanoseconds and later; see Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig4-v1.jpg)
 
-**Figure 4.:** 146B1 and His146B2 for the 75 Å box (A), 90 Å box (B), 120 Å box (C), and 150 Å box (D).In (A), (C), and (D) the black line reports the time series published and the red line shows the new time series obtained with the new simulation with the Fe–N bond. In (B) the black trace is from El Hage et al. (2018) the red trace for the bonded Fe–His simulations, the green line from using finite cutoffs for evaluating the electrostatics (cutoff 14 Å), and the orange line from using Kovalevsky protonation states for all histidines.
+**Figure 4.:** In (A), (C), and (D) the black line reports the time series published and the red line shows the new time series obtained with the new simulation with the Fe–N bond. In (B) the black trace is from El Hage et al. (2018) the red trace for the bonded Fe–His simulations, the green line from using finite cutoffs for evaluating the electrostatics (cutoff 14 Å), and the orange line from using Kovalevsky protonation states for all histidines.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig5-v1.jpg)
-
-**Figure 5.:** g(r) between the C-terminal (COO) of His146 and water H for box sizes 90 Å (top) and 150 Å (middle) data from Figure 6 of El Hage et al. (2018) and from before and after the transition, obtained when using the Kovalevsky protonation in the 90 Å box (bottom).
 
 Comparisons of simulations with and without a Fe–His bond show that the Fe–His bond lengths are comparable in all four subunits (see Figure 6). As to the Fe–Fe distances between the various heme groups, only the 120 Å and 150 Å box simulations gave results in agreement with experiment; the smaller boxes did not.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig6-v1.jpg)
 
-**Figure 6.:** His bond lengths in simulations without (left) and with (right) explicit bond.
-
 The 150 Å box in a T(0) state was also stable for at least 1.3 microseconds, the length of the simulation (Figure 1).
 
 An obvious improvement of our initial study is to run multiple simulations for each box, in particular if one is interested in the kinetics of the T-to-R transition. We are doing additional simulations to examine the box size dependence of the lifetime. However, we point out that it is very difficult to do a sufficient number of independent simulations to obtain converged statistical results for a system the size of hemoglobin. In ten simulations for the 120 Å box reported in the comment, 4 out of the 10 lasted longer than one microsecond, compared with 3 out of 10 for the 90 Å box. In simulation of kinetics hundreds to thousands of individual, reactive trajectories are required for converged reaction time distributions that can be compared with experiment (Yosa and Meuwly, 2011; Soloviov et al., 2016). The data in Figure 3 of the comment cannot report on the kinetics because the number of events observed is too small (Figure 2).
 
-## Kinetics as a function of box size
+### Kinetics as a function of box size
 
 We refer readers to our author response. We also note that previous work (Wassenaar and Mark, 2006) did find a dependence on box shape.
 
-## Thermodynamics as a function of box size
+### Thermodynamics as a function of box size
 
 The results for the other two systems are interesting but there is no reason to expect a box size dependence for the structural changes that were studied. Among other points, the surface area change is small and a hydrophobic effect is unlikely. There is no direct relationship to our findings for hemoglobin.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43387.001 Dravet syndrome (DS) is a form of epilepsy with a high incidence of sudden unexpected death in epilepsy (SUDEP). Respiratory failure is a leading cause of SUDEP, and DS patients’ frequently exhibit disordered breathing. Despite this, mechanisms underlying respiratory dysfunction in DS are unknown. We found that mice expressing a DS-associated Scn1a missense mutation (A1783V) conditionally in inhibitory neurons ( Slc32a1 cre/+ ::Scn1a ; defined as A1783V fl/+ Scn1a ) exhibit spontaneous seizures, die prematurely and present a respiratory phenotype including hypoventilation, apnea, and a diminished ventilatory response to CO ΔE26 2 . At the cellular level in the retrotrapezoid nucleus (RTN), we found inhibitory neurons expressing the Scn1a A1783V variant are less excitable, whereas glutamatergic chemosensitive RTN neurons, which are a key source of the CO 2 /H + -dependent drive to breathe, are hyper-excitable in slices from Scn1a mice. These results show loss of ΔE26 Scn1a function can disrupt respiratory control at the cellular and whole animal levels.
+Dravet syndrome (DS) is a form of epilepsy with a high incidence of sudden unexpected death in epilepsy (SUDEP). Respiratory failure is a leading cause of SUDEP, and DS patients’ frequently exhibit disordered breathing. Despite this, mechanisms underlying respiratory dysfunction in DS are unknown. We found that mice expressing a DS-associated Scn1a missense mutation (A1783V) conditionally in inhibitory neurons (Slc32a1cre/+::Scn1aA1783V fl/+; defined as Scn1aΔE26) exhibit spontaneous seizures, die prematurely and present a respiratory phenotype including hypoventilation, apnea, and a diminished ventilatory response to CO2. At the cellular level in the retrotrapezoid nucleus (RTN), we found inhibitory neurons expressing the Scn1a A1783V variant are less excitable, whereas glutamatergic chemosensitive RTN neurons, which are a key source of the CO2/H+-dependent drive to breathe, are hyper-excitable in slices from Scn1aΔE26 mice. These results show loss of Scn1a function can disrupt respiratory control at the cellular and whole animal levels.
 
 ## Introduction
 
@@ -28,41 +28,124 @@ The main goal of this study was to provide the first detailed characterization o
 
 ## Results
 
-## Scn1aΔE26 mice have spontaneous seizures and die prematurely
+### Scn1aΔE26 mice have spontaneous seizures and die prematurely
 
 To generate mice that heterologously express the Scn1a A1783V pathological variant conditionally in inhibitory neurons (Scn1aΔE26 mice), we crossed floxed stop Scn1aA1783Vfl/+ mice (Scn1afl/+) with those that express Cre recombinase targeted to Slc32a1, the gene that encodes the vesicular GABA transporter Vgat, to generate a Slc32a1cre/+:TdT+/- (Slc32a1cre/+) line (see Figure 1—figure supplement 1). To determine whether transcript containing the A1783V variant is expressed in control or experimental animals, we isolated brainstem tissue from 13 day old pups of each genotype for subsequent cDNA amplification and sequencing. We were able to detect the expected amplicon product size of 831 base pairs in tissue from each genotype (Figure 1Ai–Aii). Importantly, we also were able to detect the alanine to valine single nucleotide substitution at position 1772 (analogous to position 1783 in human) in 8 of 20 (40%) samples of Scn1aΔE26 tissue (Figure 1Aiii), indicating this missense mutation is expressed at the mRNA level. As expected, only wild type sequence was detected in Slc32a1cre/+ and Scn1afl/+ control tissue (Figure 1Aiii), suggesting there is minimal leaky expression of A1783V in the absence of Cre.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig1-v2.jpg)
+
+**Figure 1.:** (A) Construct design and validation of A1783V variant transcript expression. Note that this line was developed by Ana Mingorance (Chief Development Officer of the Loulou Foundation) and is available at JAX (sock # 026133). Ai, schematic shows loxP sites flanking wild type exon 26 followed by an edited version of exon 26 that contains the human A1783V pathological variant (ΔE26). When Cre recombinase is expressed, wild type exon 26 is removed, thus allowing transcription of ΔE26. Aii, Agarose gel shows detectable levels of Scn1a transcript (expected size of 831 bp) in brainstem tissue isolated from each genotype (primers span between exon 25 and 26, including residue 1783 of exon 26). Water was used as a no template negative control. Aiii, PCR products were sequenced to confirm that transcript containing A1783V is detectable in 40% of samples from Scn1aΔE26 tissue but was not detectable in samples from Slc32a1cre/+ and Scn1afl/+ control tissue. (B–C), fluorescent in situ hybridization (RNAScope) was performed to characterize expression of Scn1a transcript in inhibitory (Slc32a1+, Slc32a1) and glutamatergic (Vglut2+, Slc17a6) neurons in the RTN region in brainstem sections from control and Scn1aΔE26mice. (B) brainstem sections from Slc32a1cre/+ and Scn1aΔE26 mice containing the RTN show Scn1a labeling (green puncta) of both Vgat+ and Vglut2 +neurons. (C), summary data show Scn1a transcript expression (normalized to cell size) in Vgat+ and Vglut2 +RTN neurons from each genotype; channel transcript was reduced in Vgat+ cells from Scn1aΔE26 mice (0.43 ± 0.7 mRNA/area, n = 94 cells) compared to control (0.73 ± 0.9 mRNA/area, n = 82 cells) (p<0.05), whereas Vglut2 +cells showed low channel transcript across both genotypes. (D–E) Scn1aΔE26 mice did not show any obvious differences gross morphology (A) body weight (D) or temperature (E) compared to age-matched litter mate control mice. (F) (Figure 1—source data 1), survival curve shows that control mice (n = 57) survive to adulthood (30 days postnatal) while Scn1aΔE26 mice (n = 41) die prematurely starting at 9 days postnatal and reaching 100% lethality by 25 days (χ2 = 63.9, p<0.0001). These results were compared using a two-way ANOVA and Sidak multiple comparison test. *, p<0.05; ***p<0.001; ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Homozygous Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J reporter mice (Ai14; JAX no. 007914) on a 100% C57BL/6J background are bred with mice that express Cre recombinase targeted to Slc32a1, the gene encoding Vgat (Slc32a1Cre mice, JAX no. 016962), on a mixed background of 75%::25% C57BL/6J::129/SvJ to produce Slc32a1Cre:: TdT double-heterozygous mice with a 85% C57BL6/J: : 15% 129/SvJ background. These mice are then bred with Scn1aA1783Vfl/+ (JAX no. 026133) maintained on a 100% C57BL/6J background to produce experimental animals with a genotype of Slc32a1cre+/-::TdT+/-::Scn1afl/+ (Scn1aΔE26) and control animals of the following genotypes Slc32a1cre-/-::TdT+/-::Scn1afl/+ (Scn1afl/+) and Slc32a1cre+/-::TdT+/-::Scn1a+/+ (Slc32a1cre/+). Experimental and control mice had a common background of 90% C57BL6/J: : 10% 129/SvJ. The proportion of each background stain was determined by Genome scan analysis (JAX).
 
 To characterize the cellular distribution of Scn1a in the RTN, we prepared brainstem sections containing the RTN from Slc32a1cre/+ and Scn1aΔE26 mice (15 days old) for fluorescent in situ hybridization using probes for (1) Scn1a, which does not distinguish Scn1a channel variants; (2) Slc32a1 gene which encodes Vgat to identify GABAergic and glycinergic inhibitory neurons; and (3) Slc17a6 gene which encodes the vesicular glutamate transporter 2 (Vglut2) to identify excitatory glutamatergic neurons, including chemosensitive RTN neurons. We labeled all cell nuclei with DAPI. Inhibitory Vgat+ cells were present in the RTN region and were in close proximity to excitatory Vglut2+ neurons (i.e., putative RTN chemoreceptors). Both genotypes showed similar relative distributions of Vgat+ cells (T172 = 0.142, p=0.88). We also observed numerous bright fluorescent puncta, which corresponded to Scn1a transcript in the soma of Vgat+ cells and, to a lesser extent, in Vglut2+ cells in slices from control mice (F3,321 = 24.07, p<0.0001). In slices from Scn1aΔE26 mice, we found a modest reduction in Scn1a transcript in Vgat+ but not Vglut2+ cells (F3,321 = 24.07, p<0.05; see Figure 1B–C). Together with our sequencing data (Figure 1Aiii), these results suggest that the A1783V pathogenic variant is expressed by brainstem inhibitory neurons but possibly at slightly reduced levels compared to control. Therefore, cellular and behavioral phenotypes associated with Scn1aΔE26 mice (see below) may involve either reduced expression, impaired channel function, or both. In a separate experiment to validate cell-type-specific Cre expression, we confirmed that all TdT+ cells expressed Vgat, but not Vglut2, mRNA (not shown).
 
 Based on previous evidence showing that heterozygous deletion mutations can give rise to severe forms of DS (Yu et al., 2006; Miller et al., 2014) and since Scn1aΔE26 mice express Scn1a transcript, we expect Scn1aΔE26 mice to exhibit a mild epilepsy-like phenotype. Contrary to this expectation, Scn1aΔE26 mice show a severe SUDEP-like phenotype. Scn1aΔE26 mice were born in the expected ratios, were viable, and by ~15 days postnatal, were similar in terms of body weight (T46 = 1.62, p=0.11) and temperature (T26 = 0.77, p=0.44) as their Slc32a1cre/+ control littermates (Figure 1D–F). However, Scn1aΔE26 pups show seizure-like behavior by ~2 weeks of age (Table 1). More specifically, based on the Racine seizure-behavior scoring paradigm, only 22.7% of Slc32a1cre/+ control mice (N = 22) showed seizure-like behavior, which mainly manifested as head-bobbing (category 1). By contrast, 77.3% of Scn1aΔE26 mice (N = 22) showed severe seizure behavior, including forelimb tremor (category 3), rearing alone (category 4) or in conjunction with falling over, and full-body tonic-clonic seizure (category 5). Unlike Slc32a1cre/+control animals, several of the mutant mice exhibited behavioral arrest that may reflect absence seizure-like activity. Furthermore, since febrile seizures are considered a hallmark of DS, we also characterized the susceptibility of Slc32a1cre/+control and Scn1aΔE26 pups (mixed sex, 12–14 days old) to heat-induced seizures. When core body temperature was increased from 37°C to 42.5°C (0.5°C increments every 2 min) all Scn1aΔE26 mice (N = 9) developed tonic-clonic seizures (category 5) at an average body temperature of 41.1 ± 0.2°C (Table 2). Conversely, none of the Slc32a1cre/+- litter mate controls (N = 10) showed seizure activity up to the cut-off temperature of 42.5°C (Table 2). These results differ somewhat from previous work that showed heterozygous Scn1a knockout mice do not develop temperature-induced seizures until ~18 days of age (Oakley et al., 2009). In addition to increased febrile seizure propensity, Scn1aΔE26 also begin to die at ~12 days of age, reaching 100% lethality by 23 days postnatal (Figure 1F and Figure 1—source data 1). This early onset of premature death in Scn1aΔE26 mice occurs ~1 week prior to mortality in heterozygous Scn1a knockout mice on a pure C57BL/6J background (Yu et al., 2006; Catterall, 2012), suggesting Scn1aΔE26 mice (90% C57BL/6J background) have a particularly severe phenotype.
 
+**Table 1.**
+ Behavioral Assessment of Seizure activity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Racine score</th>
+      <th>N</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>Behavioral arrest</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slc32a1cre/+</td>
+      <td>22</td>
+      <td>17</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Scn1aΔE26</td>
+      <td>22</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Febrile seizure propensity.Table 2—source data 1.Febrile seizure propensity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>N</th>
+      <th>Weight</th>
+      <th>Induced seizure (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slc32a1cre/+</td>
+      <td>10</td>
+      <td>6.65 ± 0.3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Scn1aΔE26</td>
+      <td>9</td>
+      <td>6.71 ± 0.3</td>
+      <td>100****</td>
+    </tr>
+  </tbody>
+</table>
+
+_****Fisher’s exact test p<0.000_
+
 To determine whether Scn1aΔE26 mice exhibit abnormal brain activity, we made video electrocorticogram (ECoG) recordings from Slc32a1cre/+control and Scn1aΔE26 mice. We allowed mice 12 hr to recover after implanting them with the ECoG head stage. We continuously recorded animal behavior and ECoG activity over a two-hour period, between the hours of 9:00 AM – 2:00 PM. Consistent with frequent polyspike activity observed in the ECoG recordings of DS patients (Bender et al., 2012), Scn1aΔE26 mice showed large amplitude (at least twice baseline) polyspike activity that lasted for an average duration of 15.6 ± 0.8 s (Figure 2A–Bi). These events always occurred in conjunction with seizure activity (category 4–5) but were frequently preceded by brief behavioral arrest. The duration of these polyspike events were considerably shorter than spike wave discharges associated with absence epilepsy that typically last for >1 s (Letts et al., 2014). Conversely, Slc32a1cre/+ littermate control animals showed minimal large amplitude spike activity; any detectable events were of a short duration 7.55 ± 0.6 s (Figure 2A–Bi) and occurred when the animal was exhibiting exploratory behavior and less obvious seizure like activity (category 0–2) or freezing behavior. Based on this, we define epileptic spike activity for this model as abrupt onset polyspiking events with greater than twice baseline amplitude, minimum duration of 14 ms, and that occur in conjunction with seizure activity (category 3–5). Based on this criteria, Scn1aΔE26 and Slc32a1cre/+ control mice show epileptic spike activity with a frequency 9.167 ± 3.9 events/2 hr and of 0.25 ± 0.1 events/2 hr, respectively (T5 = 2.28, p<0.05) (Figure 2Bii). Note that three Slc32a1cre/+ animals showed a polyspike event that lasted longer than 14 ms and occurred with noticeable forelimb shaking and so were included in our analysis (Figure 2Biii). Power spectral analysis of poly-spike events in Slc32a1cre/+ and epileptic events in Scn1aΔE26 mice show that epileptic events were composed of high alpha and beta frequencies (F4, 840 = 5.605, p<0.001) (Figure 2C–D and Figure 2—source data 1). These results suggest Scn1aΔE26 mice are phenotypically similar to global and inhibitory neuron-specific Scn1a haploinsufficient models of DS (Yu et al., 2006; Kalume et al., 2013; Kim et al., 2018), but with an accelerated time course for manifestation of pathological features including spontaneous and heat-induced seizures as well as premature death. Based on the above results, we consider the Scn1aΔE26 mouse model to be useful for dissecting the mechanisms that underlie respiratory failure in DS.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig2-v2.jpg)
 
-**Figure 2.:** Scn1a exhibit frequent spontaneous seizures.ΔE26(A) traces of raw EcoG activity show that Scn1a mice but not ΔE26Slc32a1cre/+ mice exhibit frequent spontaneous burst of high amplitude poly-spike activity. The arrow identifies a typical seizure-like poly-spike event that was analyzed further by power spectral analysis in panel D. Polyspike events with a minimum duration of 14 ms were accompanied by seizure-like behavior and so were considered epileptic activity. (B), Scn1a mice showed more frequent epileptic poly-spike bursts of activity (Bi, dotted line designates duration threshold for epileptic activity); poly-spike bursts (>14 ms) occurred more frequently in ΔE26Scn1a mice (Bi-Bii) (control 0.13 ± 0.1 events/2 hr, n = 6; ΔE26Scn1a 0.37 ± 0.05 events/2 hr, n = 6; TΔE2610 = 3.009, p<0.01) and lasted for a longer duration (Biii) (control 7.6 ± 0.6 ms, n = 6; Scn1a 15.6 ± 0.8 ms, n = 6, TΔE2610 = 2.268, p<0.05) compared to control animals. Ci, representative power spectrum density (PSD) plots of spontaneous poly-spike burst events show typical strong activity in the theta-, alpha and beta frequency range in Scn1a but not control mice. Cii-Ciii (ΔE26Figure 2—source data 1), summary data (normalized to the maximum value at each event) show PSD peak (Cii) and PSD area under the curve (Ciii) of each frequency range for each genotype. Note that poly-spike burst events measured in Scn1a mice show increased activity in the theta, alpha and beta range. ΔE26Di-iii, poly-spike burst events recorded from a Scn1a mouse (arrow in panel A) plotted on an expanded time scale (Di) and corresponding time frequency distribution (Dii) and deconstructed spectrum into its various frequency domains (Diii). These results were compared using a two-way ANOVA and the Sidak multiple comparison test. *, p<0.05; **, p<0.01; ***p<0.001.ΔE2610.7554/eLife.43387.009Figure 2—source data 1.Slc32a1 and cre/+Scn1a mice.ΔE26
+**Figure 2.:** (A) traces of raw EcoG activity show that Scn1aΔE26 mice but not Slc32a1cre/+ mice exhibit frequent spontaneous burst of high amplitude poly-spike activity. The arrow identifies a typical seizure-like poly-spike event that was analyzed further by power spectral analysis in panel D. Polyspike events with a minimum duration of 14 ms were accompanied by seizure-like behavior and so were considered epileptic activity. (B), Scn1aΔE26 mice showed more frequent epileptic poly-spike bursts of activity (Bi, dotted line designates duration threshold for epileptic activity); poly-spike bursts (>14 ms) occurred more frequently in Scn1aΔE26 mice (Bi-Bii) (control 0.13 ± 0.1 events/2 hr, n = 6; Scn1aΔE26 0.37 ± 0.05 events/2 hr, n = 6; T10 = 3.009, p<0.01) and lasted for a longer duration (Biii) (control 7.6 ± 0.6 ms, n = 6; Scn1aΔE26 15.6 ± 0.8 ms, n = 6, T10 = 2.268, p<0.05) compared to control animals. Ci, representative power spectrum density (PSD) plots of spontaneous poly-spike burst events show typical strong activity in the theta-, alpha and beta frequency range in Scn1aΔE26 but not control mice. Cii-Ciii (Figure 2—source data 1), summary data (normalized to the maximum value at each event) show PSD peak (Cii) and PSD area under the curve (Ciii) of each frequency range for each genotype. Note that poly-spike burst events measured in Scn1aΔE26 mice show increased activity in the theta, alpha and beta range. Di-iii, poly-spike burst events recorded from a Scn1aΔE26 mouse (arrow in panel A) plotted on an expanded time scale (Di) and corresponding time frequency distribution (Dii) and deconstructed spectrum into its various frequency domains (Diii). These results were compared using a two-way ANOVA and the Sidak multiple comparison test. *, p<0.05; **, p<0.01; ***p<0.001.
 
-## Scn1aΔE26 mice hypoventilate under baseline conditions and have a reduced CO2/H+ ventilatory response
+### Scn1aΔE26 mice hypoventilate under baseline conditions and have a reduced CO2/H+ ventilatory response
 
 Recent evidence (Kim et al., 2018) showed that DS patients have post-ictal respiratory abnormalities, including hypoventilation, apnea and impaired CO2 chemoreception. These symptoms can last for several hours after seizure, which indicates that respiratory problems contribute to SUDEP in DS. Therefore, to determine whether Scn1aΔE26 mice exhibit respiratory problems, we used whole-body plethysmography to measure baseline breathing and the ventilatory response to CO2 in 15-day-old control and Scn1aΔE26 mice. Note that there were no measureable differences in respiratory activity between Slc32a1cre/+ (n = 16) and Scn1afl/+ (N = 5) mice (p=0.267). Therefore, these genotypes were pooled as controls for this set of experiments. We found that compared to control animals, Scn1aΔE26 mice show diminished respiratory output under room air conditions. Specifically, Scn1aΔE26 exhibit suppressed frequency (256 ± 11 bpm for control compared to 211 ± 16 bpm for Scn1aΔE26; T33 = 2.43; p<0.05); tidal volume (14.8 ± 2.0 μl/g for control compared to 8.9 ± 1.9 μl/g for Scn1aΔE26, T33 = 2.02, p<0.05); and minute ventilation (3.6 ± 0.5 μl/min/g for control compared to 2.7 ± 0.5 μl/min/g for Scn1aΔE26; T33 = 2.01, p<0.05; Figure 3A–D). Although both control and Scn1aΔE26 mice exhibit apneic events at similar frequencies (0.23 ± 0.1/min for control and 0.11 ± 0.04/min for Scn1aΔE26; p=0.6), the duration of these events were longer in Scn1aΔE26 mice (Figure 3E; 1,104 ± 58.6 ms for controls versus 1,350 ± 99.2 ms Scn1aΔE26; T51 = 2.135; p<0.05). We also found that Scn1aΔE26 mice had a diminished capacity to increase respiratory frequency in response to graded increases in CO2 (Figure 3F). Specifically, respiratory frequency in 7% CO2 (balance O2) was higher in controls (363.1 ± 7.7 bpm; N = 22) versus Scn1aΔE26 (300.7 ± 17.4 bpm; N = 17; F1,37 = 5.69, p<0.05). Although tidal volume responses to CO2/H+ are similar between genotypes (p=0.47), total respiratory output, as measured by minute ventilation— the product of respiratory frequency and tidal volume—was diminished in Scn1aΔE26 mice compared to controls (F3,111 = 3.167, p<0.05; Figure 3G–H and Figure 3—source data 1). Specifically, increasing inspired CO2 from 0% to 3% increased minute ventilation in control mice by 3.3 ± 0.5 μl/min/g (p<0.0001). These same conditions, however, led to a much smaller and non-significant increase in minute ventilation among Scn1aΔE26 mice (increase of 1.5 ± 0.5 μl/min/g; p=0.07). These results show that Scn1aΔE26 mice exhibit a respiratory phenotype similar to that observed in DS patients, and further supports the possibility that respiratory problems may contribute to mortality in this DS model.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig3-v2.jpg)
 
-**Figure 3.:** Scn1a mice show reduced respiratory output under control conditions and during exposure to high COΔE262.For these experiments Scn1a and fl/+Slc32a1cre/+ were used as control. (A) traces of respiratory activity from a control and Scn1a mouse during exposure to room air, 100% OΔE262 and 3–7% CO2 (balance O2). (B–D), summary data (n = 22 control; n = 17 Scn1a) show respiratory frequency (ΔE26B), tidal volume (C) and minute ventilation (D) are reduced in Scn1a mice compared to control under room air conditions. (ΔE26E), traces of respiratory activity (left) and summary data (right) show that under room air conditions both control and Scn1a mice exhibit periods of apnea; the frequency of these events were similar between genotypes, however, they lasted for a longer duration in ΔE26Scn1a mice compared to control. F-H (ΔE26Figure 3—source data 1), summary data shows the respiratory frequency (F), tidal volume (G) and minute ventilation response of control and Scn1a mice to graded increases in COΔE262 (balance O2). Scn1a mice showed a blunted respiratory frequency to 5% and 7% COΔE262 which resulted in a diminished CO2/H+-dependent increase in minute ventilation. These results were compared using either unpaired t test (panels B-E) or two-way ANOVA followed by the Holm-Sidak multiple comparison test (panels F-H). *, difference between means p<0.05, #, different interaction factor, p<0.05.10.7554/eLife.43387.011Figure 3—source data 1.Scn1a mice.ΔE26
+**Figure 3.:** For these experiments Scn1afl/+ and Slc32a1cre/+ were used as control. (A) traces of respiratory activity from a control and Scn1aΔE26 mouse during exposure to room air, 100% O2 and 3–7% CO2 (balance O2). (B–D), summary data (n = 22 control; n = 17 Scn1aΔE26) show respiratory frequency (B), tidal volume (C) and minute ventilation (D) are reduced in Scn1aΔE26 mice compared to control under room air conditions. (E), traces of respiratory activity (left) and summary data (right) show that under room air conditions both control and Scn1aΔE26 mice exhibit periods of apnea; the frequency of these events were similar between genotypes, however, they lasted for a longer duration in Scn1aΔE26 mice compared to control. F-H (Figure 3—source data 1), summary data shows the respiratory frequency (F), tidal volume (G) and minute ventilation response of control and Scn1aΔE26 mice to graded increases in CO2 (balance O2). Scn1aΔE26 mice showed a blunted respiratory frequency to 5% and 7% CO2 which resulted in a diminished CO2/H+-dependent increase in minute ventilation. These results were compared using either unpaired t test (panels B-E) or two-way ANOVA followed by the Holm-Sidak multiple comparison test (panels F-H). *, difference between means p<0.05, #, different interaction factor, p<0.05.
 
-## Disinhibition and altered RTN chemoreception in Scn1aΔE26 mice
+### Disinhibition and altered RTN chemoreception in Scn1aΔE26 mice
 
 The RTN regulates several aspects of breathing including chemoreception (Guyenet and Bayliss, 2015) and since the ventilatory response to CO2 is disrupted in DS patients (Kim et al., 2018), we wanted to determine whether activity of chemosensitive RTN neurons are disrupted in Scn1aΔE26 mice. Furthermore, evidence also suggests that inhibitory neurons in the RTN region contribute to respiratory drive (Ott et al., 2011). Therefore, we first sought to determine whether loss of Scn1a function in inhibitory neurons decreases inhibitory neuron activity and disinhibits excitatory, chemosensitive, neurons. Inhibitory neurons were identified by Cre-dependent TdT labeling of Vgat+ cells in both control and Scn1aΔE26 lines. Consistent with other Scn1a knockout (Tai et al., 2014) or missense knockin (Ogiwara et al., 2007; Mashimo et al., 2010; Hedrich et al., 2014) DS models, we found that loss of Scn1a function in inhibitory neurons suppressed inhibitory neural activity. For example, whole-cell current-clamp recordings from inhibitory neurons in the RTN region in slices from Slc32a1cre/+ or Scn1aΔE26 mice show that inhibitory neurons from Scn1aΔE26 mice have lower basal activity than those of Slc32a1cre/+ control mice (14.39 ± 1.5 Hz for Slc32a1cre/+ vs. 9.902 ± 0.64 Hz for Scn1aΔE26; T60 = 2.97, p<0.01; Figure 4A–B). Furthermore, Scn1aΔE26 inhibitory neurons fired fewer action potentials in response to depolarizing current steps (0–300 pA; Δ 20 pA) from a holding potential of −80 mV. This activity deficit became more pronounced during large (200–300 pA) sustained (1,000 ms) current injections where inhibitory neurons from Scn1aΔE26 mice showed pronounced spike amplitude and frequency decrement (Figure 4A,D and Figure 4—source data 1). That is, the number of spikes elicited by a + 300 pA current step (1,000 ms) was 53.7 ± 11 for Slc32a1cre/+ controls (N = 13) compared to 13.9 ± 6.4 for Scn1aΔE26 (N = 20; F15,465 = 9.536; p<0.0001). We also found that inhibitory neurons from each genotype had similar input resistance (517.6 ± 82.2 MΩ for Slc32a1cre/+ control vs. 519.2 ± 38.9 MΩ for Scn1aΔE26; T25 = 0.02; p=0.3; Figure 4C). These results show that inhibitory neurons in slices from Scn1aΔE26 mice have diminished spontaneous activity and a reduced ability to respond to a range of excitatory inputs.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig4-v2.jpg)
 
-**Figure 4.:** Scn1a show diminished basal activity and repetitive firing behavior during sustained depolarization.ΔE26(A) segments of membrane potential from inhibitory neurons in the RTN region in slices from control and Scn1a mice during depolarizing current injections (40 to 220 pA; 1 s duration) from a membrane potential of –80 mV. (ΔE26B) summary data shows inhibitory neurons in slices from Scn1a mice (n = 36) are less active under resting conditions (0 pA holding current) compared to inhibitory neurons in slices form ΔE26Slc32a1cre/+ control mice (n = 26 cells). (C), summary data and representative voltage responses to a −60 pA current injection show that inhibitory neurons from each genotype had similar input resistance. (D) (Figure 4—source data 1), input-output relationship show that inhibitory neurons from Scn1a mice generate fewer action potentials in response to moderate depolarizing current injections (1 s duration) and at more positive steps go into depolarizing block. Results were compared using t-test (ΔE26B–C) and two-way ANOVA and Sidak multiple comparison test (D). *, p<0.05; **, p<0.01; ***, p<0.001.10.7554/eLife.43387.013Figure 4—source data 1.Slc32a1 and cre/+Scn1a mice.ΔE26
+**Figure 4.:** (A) segments of membrane potential from inhibitory neurons in the RTN region in slices from control and Scn1aΔE26 mice during depolarizing current injections (40 to 220 pA; 1 s duration) from a membrane potential of –80 mV. (B) summary data shows inhibitory neurons in slices from Scn1aΔE26 mice (n = 36) are less active under resting conditions (0 pA holding current) compared to inhibitory neurons in slices form Slc32a1cre/+ control mice (n = 26 cells). (C), summary data and representative voltage responses to a −60 pA current injection show that inhibitory neurons from each genotype had similar input resistance. (D) (Figure 4—source data 1), input-output relationship show that inhibitory neurons from Scn1aΔE26 mice generate fewer action potentials in response to moderate depolarizing current injections (1 s duration) and at more positive steps go into depolarizing block. Results were compared using t-test (B–C) and two-way ANOVA and Sidak multiple comparison test (D). *, p<0.05; **, p<0.01; ***, p<0.001.
 
 The A1783V pathological variant is located in the S6 segment of domain 4 (Marini et al., 2007; Lossin, 2009), a region thought to regulate voltage-dependent inactivation (Catterall, 2000). Based on our evidence that A1783V is expressed in tissue form Scn1aΔE26 mice (Figure 1Aiii) and since inhibitory neurons from these animals show reduced excitability (Figure 4A–B), we hypothesized that the Scn1a A1783V variant results in loss of function, in part, by causing Nav1.1 channels to inactivate at more negative voltages. Consistent with this hypothesis, when examining spontaneous action potentials (as measured under resting conditions with a 0 pA holding current) in inhibitory neurons in slices of Scn1aΔE26 and Slc32a1cre/+ control mice, the latter showed a higher amplitude (73.5 ± 1.9 mV) than Scn1aΔE26 (61.9 ± 2.6 mV; F1,95 = 9.931, p<0.001). The maximum rate of depolarization was higher for Slc32a1cre/+ controls (134.4 ± 5.0 mV/mS) compared to Scn1aΔE26 (89.4 ± 5.3 mV/mS; F1,96 = 35.2, p<0.0001; see Figure 5A,D–F and Figure 5—source data 1). Action potential threshold was also higher in inhibitory neurons in slices from Scn1aΔE26 (−29.2 ± 0.9 mV) compared to Slc32a1cre/+ controls (−32.4 ± 0.6 mV; F1,95 = 7.403, p<0.05; Figure 5A,F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig5-v2.jpg)
 
-**Figure 5.:** Scn1a A1783V pathological variant may result in loss of channel function by increased voltage-dependent inactivation.(A) average spontaneous action (Slc32a1cre/+ control n = 24 spikes, Scn1a n = 29 spikes (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and ΔE26Scn1a mice (Ai) and corresponding phase plot (Aii) (dV/dt; Y-axis vs mV; X-axis) of the traces in panel Ai show that cells expressing ΔE26Scn1a A1783V depolarize slower compared to control cells (Figure 5—source data 1). (B), average first action potential following a hyperpolarizing pre-potential (−100 pA; 1 s) (Slc32a1cre/+ control n = 13 spikes, Scn1a n = 16 spikes) (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and ΔE26Scn1a mice (Bi) and corresponding phase plot (Bii) of traces in panel Bi show that holding cells at a negative pre-potential to remove sodium channel inactivation improved the depolarization kinetics of subsequent spikes (ΔE26Figure 5—source data 1). (C), average first action potential following a depolarizing pre-potential (+180 pA; 1 s) (control n = 9 spikes, Scn1a n = 11 spikes (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and ΔE26Scn1a mice (Ci) and corresponding phase plot (Cii) of traces in panel Ci show that holding cells at a depolarized pre-potential to increase sodium channel inactivation diminished genotype differences in action potential kinetics (ΔE26Figure 5—source data 1). (D–F), summary data showing the maximum rate of depolarization (D), action potential amplitude (E) and action potential threshold (F) of spontaneous action potentials and first spikes following positive or negative pre-potentials recorded in slices from control and Scn1a mice. Results were compared by two-way ANOVA and the Sidak multiple comparison test.. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.ΔE2610.7554/eLife.43387.015Figure 5—source data 1.Slc32a1 and cre/+Scn1a mice.ΔE26
+**Figure 5.:** (A) average spontaneous action (Slc32a1cre/+ control n = 24 spikes, Scn1aΔE26 n = 29 spikes (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and Scn1aΔE26 mice (Ai) and corresponding phase plot (Aii) (dV/dt; Y-axis vs mV; X-axis) of the traces in panel Ai show that cells expressing Scn1a A1783V depolarize slower compared to control cells (Figure 5—source data 1). (B), average first action potential following a hyperpolarizing pre-potential (−100 pA; 1 s) (Slc32a1cre/+ control n = 13 spikes, Scn1aΔE26 n = 16 spikes) (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and Scn1aΔE26 mice (Bi) and corresponding phase plot (Bii) of traces in panel Bi show that holding cells at a negative pre-potential to remove sodium channel inactivation improved the depolarization kinetics of subsequent spikes (Figure 5—source data 1). (C), average first action potential following a depolarizing pre-potential (+180 pA; 1 s) (control n = 9 spikes, Scn1aΔE26 n = 11 spikes (top) and first time derivative of average action potentials (bottom) recorded from inhibitory neurons in slices from control and Scn1aΔE26 mice (Ci) and corresponding phase plot (Cii) of traces in panel Ci show that holding cells at a depolarized pre-potential to increase sodium channel inactivation diminished genotype differences in action potential kinetics (Figure 5—source data 1). (D–F), summary data showing the maximum rate of depolarization (D), action potential amplitude (E) and action potential threshold (F) of spontaneous action potentials and first spikes following positive or negative pre-potentials recorded in slices from control and Scn1aΔE26 mice. Results were compared by two-way ANOVA and the Sidak multiple comparison test.. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
 Next, we characterized the properties of the first action potential elicited after holding cells at potentials that either remove or enhance Nav1.1 channel inactivation. We found that differences in action potential waveform properties between genotypes were minimized when cells are held at a negative voltage to remove Na+ channel inactivation. For example, holding inhibitory neurons in slices from Scn1aΔE26 mice at a negative pre-potential by injecting a hyperpolarizing current (−100 pA; 1,000 ms) increased action potential amplitude (78.01 ± 2.0 mV; F1, 95 = 9.931, p<0.0001) to an amount similar to spikes from Slc32a1cre/+ control cells (81.05 ± 1.2 mV; p=0.83) (Figure 5B,E). Under these conditions, the maximum rate of depolarization also increased 140.3 ± 5.441 mV/ms (F 1, 96 = 35.21, p<0.0001) (Figure 5B,D and Figure 5—source data 1); this rate was similar to that measured in spontaneous spikes from Slc32a1cre/+ control animals (p>0.99) but slower than spikes from Slc32a1cre/+ control cells following a negative pre-potential (166.6 ± 7.3 mV/mS, F1,96 = 35.21, p<0.05). Holding inhibitory neurons in slices from Scn1aΔE26 mice at a negative pre-potential also lowered the threshold for spike initiation (−35.68 ± 0.7 mV; F1, 95 = 7.403, p<0.001) to a level similar to Slc32a1cre/+ control cells (−37.2 ± 1.2 mV; F1, 95 = 7.403, p=0.06) (Figure 5B,F). We also found that delivering a + 180 pA current for 1,000 ms to enhance Na+ channel inactivation in inhibitory neurons in slices from Slc32a1cre/+ control mice resulted in similar action potential amplitude (F1, 95 = 9.931, p>0.99), rate of depolarization (F 1, 96 = 35.21, p=0.58) and spike threshold (F1, 95 = 7.403, p=0.97) as spikes measured in inhibitory neurons from Scn1aΔE26 slices under resting conditions (holding current = 0 pA) (Figure 5C,D–F and Figure 5—source data 1). Although it is possible that diminished expression of channel containing A1783V (Figure 1C) may also contribute to this electrophysiological phenotype; since transcript containing A1783V appears to be abundantly expressed (Figure 1Aiii), we speculate that loss of Scn1a function involves enhanced Nav1.1 inactivation.
 
@@ -70,7 +153,7 @@ Based on previous evidence suggests inhibitory neurons in the RTN region can reg
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/43387/elife-43387-fig6-v2.jpg)
 
-**Figure 6.:** Scn1a mice are hyper-excitable.ΔE26(A) firing rate traces from chemosensitive neurons in slices from control (top) and Scn1a mice (bottom) show that neurons from both genotypes respond to changes in COΔE262/H+; RTN neurons are spontaneously active under control conditions (5% CO2; pHo 7.3) and respond to 7% CO2 (pHo 7.2) and 10% CO2 (pHo 7.0) with a linear increase in activity, whereas exposure to 3% CO2 (pHo 7.6) decreases neural activity. However, basal activity and CO2/H+-dependent output of RTN chemoreceptors from Scn1a tissue is enhanced compared to RTN neurons in slices from ΔE26Slc32a1cre/+control mice. (B) double-immunolabeling shows that a Lucifer Yellow-filled CO2/H+-sensitive RTN neuron (green) is immunoreactive for phox2b (magenta), the merged image is shown to the right. We confirmed that all CO2/H+-sensitive neurons (Slc32a1cre/+ control n = 12; Scn1a n = 11) included in this study were phox2b-positive. (ΔE26C–D) (Figure 6—source data 1), summary data shows that RTN chemoreceptors in slices from Scn1a mice have higher basal activity (ΔE26C) and enhanced CO2/H+-dependent output between 3–10% CO2 (D). Results were compared by t-test (C) or ANCOVA test (D). *, p<0.05.10.7554/eLife.43387.017Figure 6—source data 1.2/H+-evoked activity in chemosensitive RTN neurons in slices from Slc32a1 and cre/+Scn1a mice.ΔE26
+**Figure 6.:** (A) firing rate traces from chemosensitive neurons in slices from control (top) and Scn1aΔE26 mice (bottom) show that neurons from both genotypes respond to changes in CO2/H+; RTN neurons are spontaneously active under control conditions (5% CO2; pHo 7.3) and respond to 7% CO2 (pHo 7.2) and 10% CO2 (pHo 7.0) with a linear increase in activity, whereas exposure to 3% CO2 (pHo 7.6) decreases neural activity. However, basal activity and CO2/H+-dependent output of RTN chemoreceptors from Scn1aΔE26 tissue is enhanced compared to RTN neurons in slices from Slc32a1cre/+control mice. (B) double-immunolabeling shows that a Lucifer Yellow-filled CO2/H+-sensitive RTN neuron (green) is immunoreactive for phox2b (magenta), the merged image is shown to the right. We confirmed that all CO2/H+-sensitive neurons (Slc32a1cre/+ control n = 12; Scn1aΔE26 n = 11) included in this study were phox2b-positive. (C–D) (Figure 6—source data 1), summary data shows that RTN chemoreceptors in slices from Scn1aΔE26 mice have higher basal activity (C) and enhanced CO2/H+-dependent output between 3–10% CO2 (D). Results were compared by t-test (C) or ANCOVA test (D). *, p<0.05.
 
 ## Discussion
 
@@ -90,29 +173,252 @@ In sum, our results show that expression of Scn1a A1783V in inhibitory neurons r
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Adtl. info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, Scn1a A1783V, C57BL6/J background)</td>
+      <td>B6(Cg)-Scn1atm1.1Dsf/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:026133</td>
+      <td>unpublished model</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, Vgat-iris-Cre, mixed 129/SvJ and C57BL6/J background)</td>
+      <td>Slc32a1tm2(cre)Lowl/J</td>
+      <td>PMID: 21745644</td>
+      <td>RRID:IMSR_JAX:016962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, tdTomato reporter Ai14, C57BL6/J background)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+      <td>PMID: 20023653</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M-MLV Reverse Transcriptase (200 U/µL))</td>
+      <td>MMLV RT first-strand reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>28025013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (GoTaq Flexi DNA Polymerase)</td>
+      <td>Taq polymerase</td>
+      <td>Promega</td>
+      <td>M8291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-Phox2b antibody</td>
+      <td>R and D Systems</td>
+      <td>AF4940; RRID:AB_10889846</td>
+      <td>used on fixed tissue, 1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Lucifer Yellow antibody</td>
+      <td>Invitrogen</td>
+      <td>A-5750; RRID:AB_2536190</td>
+      <td>used on fixed tissue, 1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>RNAscope Probe- Mm-Scn1a</td>
+      <td>ACDBio</td>
+      <td>434181</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>RNAscope Probe- Mm-Slc32a1-C2</td>
+      <td>ACDBio</td>
+      <td>319191-C2</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>RNAscope Probe- Mm-Slc17a6-C2</td>
+      <td>ACDBio</td>
+      <td>319171-C2</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Fresh Frozen Multiplex Fluorescent Kit</td>
+      <td>ACDBio</td>
+      <td>320851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB PCR Cloning Kit</td>
+      <td>New England BioLabs</td>
+      <td>E1202S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>28704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Kit</td>
+      <td>Qiagen</td>
+      <td>27104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MicroPrep</td>
+      <td>Zymo Research</td>
+      <td>R2061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lucifer Yellow</td>
+      <td>Sigma</td>
+      <td>B4261</td>
+      <td>0.10%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene Viewer</td>
+      <td>SnapGene</td>
+      <td>RRID:SCR_015053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ponemah</td>
+      <td>DSI</td>
+      <td>RRID:SCR_017107</td>
+      <td>Version 5.20</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike</td>
+      <td>Cambridge Electronic Design</td>
+      <td>RRID:SCR_000903</td>
+      <td>Version 5.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia</td>
+      <td>Pinnacile Technology</td>
+      <td>RRID:SCR_016183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2018</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Brainstorm</td>
+      <td>Tadel et al., 2011</td>
+      <td>RRID:SCR_001761</td>
+      <td>Version 3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 7.03</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 2.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All experiments were performed according to the guidelines described in the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee of the University of Connecticut, Storrs (Protocols A16-034 and A17-002).
 
-## Animals
+### Animals
 
 Scn1aΔE26 mice were generated by crossing offspring of Slc32a1cre+/+ (RRID:IMSR_JAX:016962) and homozygous Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J reporter mice (Ai14; RRID:IMSR_JAX:007914) with heterozygous Scn1aA1783Vfl/+ mice (RRID:IMSR_JAX:026133) to introduce the Scn1a variant A1783V conditionally in inhibitory neurons. Experimental animals heterologously express both the reporter and the Scn1a A1783V pathological variant (Scn1aΔE26 mice) and litter mate controls and litter mate controls used for experiments were Vgacre-/-::Tdt+/-:: Scn1aA1783Vfl/+ and Slc32a1cre+/-::Tdt+/-::Scn1a+/+ (on a common background of 90% C57BL/6J and 10% 129/SvJ). The proportion of each background stain was determined by Genome Scan Analysis performed by the Jackson Laboratory. Aged matched mice of each genotype and sex were used for all experiments included in this study.
 
-## PCR and sequencing
+### PCR and sequencing
 
 Somatosensory cortex and brainstem tissue was isolated from pups of each genotype (Scn1aΔE26, Scn1afl/+, and Slc32a1cre/+) and triturated to make a single cell suspension for RNA isolation using the Zymo RNA Microprep kit (Zymo, Cat # R2061). The RNA was converted to cDNA using the MMLV RT first-strand reagent (ThermoFisher, Cat. # 28025013). The cDNA was then amplified using Scn1a gene primers (both 5’ to 3’, exon 25 forward: GCATTATGTGACAAGCATTTTGTCACGC, exon 26 reverse: GCGCTCTAGAACCCCCTCTCATTTGCCAC) in a 24.5 uL reaction volume per sample containing: 5 uL of 5X buffer with loading dye (Promega M891A), 4 uL of MgCl2 (25 mM), 1 uL of dNTPs (10 mM), 12.3 uL of DEPC H2O, 0.2 uL of Taq polymerase (Promega M8291), 1 uL of each primer (30 pM/uL) and 0.5 uL of cDNA. The cycling protocol was 95°C for 2 min, 95°C for 30 s/58°C for 1 min/72°C for 1 min (repeated for 30 cycles total), 72°C for 5 min, 12°C hold. The PCR product was run on a 1.5% EtBr gel at 90 mV for 30 min.
 
 The amplified 831 bp product was excised and placed into a new DNase/RNase free micro-centrifuge tube. To extract the amplified cDNA we used the Qiagen Gel Extraction Kit (Cat 28704). The purified sequence was inserted into the linearized pMiniT 2.0 vector using the NEB PCR cloning kit and NEB 10-beta competent cells (Cat E1202S). The resulting transformed competent cells were then streaked out onto LB agar plates with ampicillin and grown out overnight at 37°C. Single colonies were selected and placed into 2 mL of LB broth with ampicillin in a 5 mL polystyrene round bottom tube and grown out for 16 hr/overnight, shaken at 250 rpm at 37°C. 1.5 mL of each bacterial sample was used for plasmid purification using the Qiagen Spin Miniprep Kit (Cat 27104) according to manufacture instructions. Samples were then sequenced at Eurofins Genomics using the forward or reverse primers for the pMiniT 2.0 vector provided in the NEB PCR cloning kit. Once sequences were returned from Eurofins Genomics, the SnapGene Viewer (RRID:SCR_015053) was used to map the sequence to the pMini.T 2.0 vector map; the sequence was then searched in NCBI BLAST to yield similar sequences from the mouse genome. All samples mapped back to the Scn1a gene, between exon 25 and 26. After mapping the inserted sequence to Scn1a, the A to V single nucleotide mutation was localized and identified at nucleotide 1772 mapped to the mouse genome. In total, a minimum of 15 samples were collected from each genotype for sequencing.
 
-## Fluorescent in situ hybridization (FISH)
+### Fluorescent in situ hybridization (FISH)
 
 To prepare fresh frozen slice, postnatal week 2 mice of both genotypes were anesthetized with isoflurane, decapitated, and brainstem tissues were rapidly frozen with dry ice and embedded with OCT compound. Brainstem slices (14 um thick) containing the RTN were crysectioned and collected onto SuperFrost Plus microscope slides. Slices were fixed with 4% paraformaldehyde and dehydrated with 50%,70% and 100% ethanol. FISH was processed with the instruction of RNAscope Multiplex Fluorescent Assay (ACD, 320850), the probes used in our study were designed and validated by ACD (Table 3). Confocal images of FISH experiments were obtained using a Leica TSC Sp8 and confocal image files containing image stacks were loaded into ImageJ (version 2.0.0, NIH, RRID:SCR_003070).
 
-## Unrestrained whole-body plethysmography
+**Table 3.**
+ Probes used for FISH.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Probe cat no.</th>
+      <th>Target region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scn1a</td>
+      <td>434181</td>
+      <td>1624–2967</td>
+    </tr>
+    <tr>
+      <td>Slc32a1</td>
+      <td>319191-C2</td>
+      <td>894–2037</td>
+    </tr>
+    <tr>
+      <td>Slc17a6</td>
+      <td>319171-C2</td>
+      <td>1986–2998</td>
+    </tr>
+  </tbody>
+</table>
+
+### Unrestrained whole-body plethysmography
 
 Respiratory activity was measured using a whole-body plethysmograph system (Data Scientific International; DSI), utilizing animal chamber (600 mL volume) maintained at room temperature and ventilated with air (1.3 L/min) using a small animal bias flow generator. Fifteen day old mice (~7 g) were individually placed into a chamber and allowed 2 hr to acclimate prior to the start of an experiment. Respiratory activity was recorded using Ponemah 5.20 software (DSI) for a period of 15 min in room air followed by exposure to graded increases in CO2 from 0% to 7% CO2 (balance O2). Body temperature was measured before and after each experiment and although body temperature tended to drop ~1 °C by the end of an experiment, there were no genotype difference in the degree of cooling (p=0.37). Parameters of interests include respiratory frequency (FR, breaths per minute), tidal volume (VT, measured in mL; normalized to body weight and corrected to account for chamber and animal temperature, humidity, and atmospheric pressure), and minute ventilation (VE, mL/min/g). A 20 s period of relative quiescence after 2 min of exposure to each condition was selected for analysis. Spontaneous apneic events, conservatively defined as three or more missed breaths not preceded by a sigh or augmented breath, were analyzed off-line. All experiments were performed between 9 a.m. and 6 p.m. to minimize potential circadian effects.
 
-## Acute slice preparation and in vitro electrophysiology
+### Acute slice preparation and in vitro electrophysiology
 
 Slices containing the RTN were prepared as previously described (Mulkey et al., 2007). In short, rats were anesthetized by administration of ketamine (375 mg/kg, I.P.) and xylazine (25 mg/kg; I.P.) and rapidly decapitated; brainstems were removed and transverse brain stem slices (300 μm) were cut using a microslicer (DSK 1500E; Dosaka) in ice-cold substituted Ringer solution containing the following (in mM): 260 sucrose, 3 KCl, 5 MgCl2, 1 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, 10 glucose, and one kynurenic acid. Slices were incubated for 30 min at 37°C and subsequently at room temperature in a normal Ringer’s solution containing (in mM): 130 NaCl, 3 KCl, 2 MgCl2, 2 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, and 10 glucose. Both substituted and normal Ringer’s solutions were bubbled with 95% O2 and 5% CO2 (pH = 7.30).
 
@@ -122,24 +428,24 @@ The firing response of chemosensitive RTN neurons to CO2(3–10% CO2) was assess
 
 To characterize action potential properties and repetitive firing behavior of inhibitory neurons, we made whole-cell current-clamp recordings from fluorescently labeled neurons located in the region of the RTN in slices from Vgat::TdTomato mice. Repetitive firing responses to 1 s depolarizing current steps from 0 to 300 pA (Δ 20 pA increments) were characterized from an initial holding potential of −80 mV. Action potential amplitude, threshold (dV/dT > 10 mV/mS) and the maximum rate of depolarization obtained from the peak of the first time derivative of the action potential were characterized for spontaneous spikes measured under resting conditions (holding current = 0 pA) and for the first spike elicited after delivering a positive (+200 pA) or negative (−100 pA) 1 s current step. All whole-cell recordings had an access resistance (Ra) <20 MΩ, recordings were discarded if Ra varied >10% during an experiment. A liquid junction potential of −14 mV was accounted for during each experiment.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Slices were fixed in 4% PFA over night after recording, and blocked with 5% normal horse serum in 1X PBS with 2.5% triton for 1 hr. Slices were incubated in goat anti-phox2b antibody (RRID:AB_10889846) and rabbit anti-lucifer yellow antibodies (RRID:AB_2536190) mixed in blocking solution under 4°C overnight. After washing the primary antibody a secondary antibody was applied for 2 hr followed by an additional wash and mounting with ProLong Gold Antifade Reagent (Invitrogen, P36934). Slices were imaged using a Leica SP8 confocal microscope (40x/1.3 HC oil objective) to identify cells that co-express Alex Fluor 647 for phox2b and Alex Fluor 488 for lucifer yellow.
 
-## Electrocorticography recording
+### Electrocorticography recording
 
 Subdural EcoG electrodes were implanted in 15 day old Slc32a1cre/+ and Scn1aΔE26 mouse pups. To minimize damage we used stainless steel wire electrodes (diameter = 0.003 in) (A-M system, 790900) inserted just under the skull for a length of 2 mm into each hemisphere near the fontal cortex. A reference wire electrode was placed in the posterior cortex. Each electrode was connected to a Mill-MAX miniature socket (digikey, ED11265-ND) and secured to the skull with super glue. Differential voltage signals were amplified 1000 × with a DAM-50 differential amplifier (1 Hz low filter, 10 kHz high filter), digitized at 5 kHz and recorded using Sirenia Software (RRID:SCR_016183).
 
 Mice were allowed to 12 hr to recover from surgery before recording EcoG activity for a period of 2 hr. We also video recorded all experiments to correlate animal behavior with EcoG recordings. Only spike wave discharge (SWD) activity that occurred in conjunction with observable seizure behavior was included in the analysis. Any data including movement artifacts were excluded from analysis. The same criteria for seizure events were used for both mutant mice and control group. The full duration of each seizure event was segmented and then down sampled from 600 Hz to 100 Hz to focus on the frequency range of interest (0–50 Hz) prior to performing the power spectral analysis in Matlab (RRID:SCR_001622). Frequency ranges of EcoG signals are defined as follows: delta, δ (1–5 Hz), theta, Θ (6–8 Hz), alpha, α (9–16 Hz), beta, β (17–36 Hz), and gamma, γ (37–50 Hz). Frequency analysis results were normalized to the maximum frequency amplitude at each event. For each frequency range, maximal amplitude and area under each frequency range were calculated to report the spectral power. To show the time-varying frequency distribution, time frequency analysis using Hilbert and Morlet transformations were also performed using Brainstorm 3.0 (Tadel et al., 2011, RRID:SCR_001761).
 
-## Seizure behavior scoring
+### Seizure behavior scoring
 
 We video monitored mice for 1 hr after placing them individually in a cage and giving them access to food and water ad lib. Seizure behavior during this time was evaluated using the Racine scoring system as follows: score 1, mouth and facial movements; score 2, head nodding; score 3, forelimb clonus; score 4, rearing with limb clonus; score 5, full body clonus, rearing and falling.
 
-## Thermal seizure induction
+### Thermal seizure induction
 
 To record febrile seizures mice were placed in a Plexiglas cylindrical chamber and we continuously monitor animal body temperature using a Type T thermocouple rectal probe connected to a feedback temperature controller and a heating lamp (Physitemp) that was positioned directly above the chamber. This system allowed us to maintain body temperature to within ±0.4°C of command temperature. Mice were held at 37°C for 10 min before body temperature was increased in 0.5°C increments every 2 min until a tonic-clonic seizure occurs or 42°C is reached. All experiments were video recorded for later conformation of seizure behavior.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are reported as mean ± SE. All experiments were performed blind to genotype and all statistical analysis was performed using Prism 7 (RRID:SCR_002798). Power analysis was used to determine sample size, all data sets were tested for normality using Shapiro-Wilk test, and comparisons were made using t-test, Chi Square test, Fisher’s exact test, one-way or two-way ANOVA followed by multiple comparison tests as appropriate. The specific test used for each comparison is reported in the figure legend and all relevant values used for statistical analysis are included in the results section.

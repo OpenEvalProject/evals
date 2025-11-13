@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.32548.001 Making decisions in sequentially structured tasks requires integrating distally acquired information. The extensive computational cost of such integration challenges planning methods that integrate online, at decision time. Furthermore, it remains unclear whether ‘offline’ integration during replay supports planning, and if so which memories should be replayed. Inspired by machine learning, we propose that (a) offline replay of trajectories facilitates integrating representations that guide decisions, and (b) unsigned prediction errors (uncertainty) trigger such integrative replay. We designed a 2-step revaluation task for fMRI, whereby participants needed to integrate changes in rewards with past knowledge to optimally replan decisions. As predicted, we found that (a) multi-voxel pattern evidence for off-task replay predicts subsequent replanning; (b) neural sensitivity to uncertainty predicts subsequent replay and replanning; (c) off-task hippocampus and anterior cingulate activity increase when revaluation is required. These findings elucidate how the brain leverages offline mechanisms in planning and goal-directed behavior under uncertainty.
+Making decisions in sequentially structured tasks requires integrating distally acquired information. The extensive computational cost of such integration challenges planning methods that integrate online, at decision time. Furthermore, it remains unclear whether ‘offline’ integration during replay supports planning, and if so which memories should be replayed. Inspired by machine learning, we propose that (a) offline replay of trajectories facilitates integrating representations that guide decisions, and (b) unsigned prediction errors (uncertainty) trigger such integrative replay. We designed a 2-step revaluation task for fMRI, whereby participants needed to integrate changes in rewards with past knowledge to optimally replan decisions. As predicted, we found that (a) multi-voxel pattern evidence for off-task replay predicts subsequent replanning; (b) neural sensitivity to uncertainty predicts subsequent replay and replanning; (c) off-task hippocampus and anterior cingulate activity increase when revaluation is required. These findings elucidate how the brain leverages offline mechanisms in planning and goal-directed behavior under uncertainty.
 
 ## Introduction
 
@@ -42,6 +42,14 @@ To test the hypothesis that offline replay supports integration of memories to s
 
 Here we used a 2-stage sequential decision task with a within-subject design that allowed us to manipulate whether or not revaluation was required for reward-maximizing choice behavior (Gershman et al., 2014; Momennejad et al., 2017). In both the revaluation and control conditions, participants (n = 24) repeatedly visited a starting stimulus (Stage I) and chose between two actions that would lead them to one of two subsequent stimuli depending on their choice (Stage II), as displayed in Figure 1. Once a participant reached either of those Stage II stimuli (or states), they selected one of two actions to obtain reward. We will refer to the Stage I stimulus as state one and the two Stage II stimuli as state 2 and state 3. As a cover story, participants were told they were playing a game as a thief, exploring different buildings to steal the most money. Participants were given four separate blocks of this task, each with a different reward structure; half these blocks were randomly assigned to the revaluation condition, and half the blocks were assigned to the control condition, as described below. To ensure that participants did not transfer what they learned from one block to another, each block had a different colored background that indicated they were in a different city, and different stimuli for the Stage I and Stage II actions (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig1-v2.jpg)
+
+**Figure 1.:** During the Learning phase, participants explored a 2-stage environment via button presses to learn optimal reward policy. During the Relearning phase, they only explored the Stage II states: on revaluation trials the optimally rewarding Stage II state changed during the Relearning phase; on control blocks the mean rewards did not change. The final phase was the Test phase: participants were asked to choose an action from the starting (Stage I) state that would lead to maximal reward. The red arrow denotes the action that provides access to the highest reward in the learning phase. The optimal policy during the Learning phase remains optimal in the control condition but is the suboptimal choice in the revaluation condition. (B) The time course of an example block. Stimuli images were downloaded from the public domain via Google images.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The cover story described each block, with its own Markov decision process (MDP), in terms of stealing money in a new building in a new city. For each participant, half of the cities were used in the revaluation condition and half in the control condition. In each of these conditions, one block had noiseless rewards (participants experienced the same reward each time they visited a state) and one block had noisy rewards (participants experienced the reward of a given state with variance around the fixed mean reward). Stimuli images were downloaded from the public domain via Google images.
+
 The task in both revaluation and control blocks consisted of three phases: a Learning phase (where the participant explored the entire decision tree), a Relearning phase (in which the participant visited Stage II but never Stage I), and a Test phase (where participants revisited Stage I). During the Learning phase, participants learned the structure of states and rewards.
 
 During the Relearning phase, the rewards associated with Stage II stimuli changed for the revaluation blocks (but not for the control blocks). The new reward amounts in revaluation blocks were chosen so as to require a change in the decision policy leading to optimal reward in Stage I (e.g., during the Learning phase, the optimal decision policy might be to go left at Stage I, but after taking into account the Stage II reward changes experienced during Relearning, the new optimal decision policy might be to go right at Stage I).
@@ -62,7 +70,7 @@ In addition to the revaluation vs. control manipulation, we also manipulated the
 
 This noise manipulation—that is the noiseless-rewards versus noisy-rewards conditions—ensured that the difference between revaluation and control condition blocks was not limited to the absence or presence of PEs or surprise in general. In particular, the inclusion of a noisy control block (in which there is elevated surprise but no actionable new information during the Relearning phase) further helps to control for nonspecific changes in preference (e.g., mediated by attention or motivation) that might be associated with surprise per se, rather than surprise enabling integrative planning. Note that under the Dyna and prioritized sweeping algorithms that underlie our hypotheses, replay by itself is not sufficient to produce change in preference. Our hypothesis, instead, is that surprise leads to replay later on (to investigate whether the surprising information has consequences for choice), but whether this replay leads to replanning/revaluation depends on whether the replayed experiences in fact support a change in preference. Accordingly, the inclusion of reward noise in the noisy-rewards condition (even in control blocks) allowed us to rule out the possibility that change in choice preferences is brought about by ‘any’ experience of uncertainty, whether or not experience actually supported replanning. However, given that our primary interest is in replanning per se, in what follows we mainly report revaluation vs. control effects, collapsing noiseless and noisy reward conditions, while reporting statistical differences and further fMRI analyses of the noise manipulation in the Supplementary material.
 
-## Instructions
+### Instructions
 
 Below is an example of instructions for one trial. Each trial had a separate city context (Berlin, Paris, London, Kyoto) and place (Theater, Museum, Subway, Garden).
 
@@ -86,13 +94,13 @@ Stealing as much money as possible requires that you successfully navigate from 
 
 Beware!! Press THUMB if you find yourself in a suspicious corridor where you may get caught!’
 
-## Forced choice catch stimuli
+### Forced choice catch stimuli
 
 It is worth noting that every trial consisted of a number of catch stimuli. These ‘catch states’ were included to control for attention and learning. There were two kinds of catch states: forced choice and police states. In forced choice catch states, participants faced the same choice but one of the actions was highlighted, thus they were forced to select the indicated response. Forced choices were included in the design in order to ensure (a) that they sample all parts of the state space and (b) that they are paying attention. On ‘police’ states, upon choosing an action for State 1, participants saw a ‘police face’ stimulus (if the second state stimuli were faces) or a ‘suspicious corridor’ stimulus (if the second state stimuli were scenes), which implied that they should not press the usual response and they need to press an extra key (to avoid being ‘caught’). Participants were trained and could distinguish police faces and suspicious corridors beforehand.
 
 The number of forced choice changed depending on the performance of the participant. Including forced-choice trials ensured that the distributions were adequately sampled during the experiment. Each participant’s choices were tracked, and actions that were not adequately sampled were presented in forced choice trials in which the participant had to take those actions. We included 4 ‘police’ catch trials and, on average, 3 ‘forced choice’ catch trials in phase 1 of each run. We included at least 1 of each less explored option. If the participant did not adequately explore options within a set period of time, more catch stimuli were inserted just to ensure participants encountered the value of those states. As a result of forced choice stimuli, participants sampled all options. As a result of police trials, we ensured that they did not merely rely on stimulus-independent motor sequence memory when making decisions (e.g. memorizing that pressing L-index then R-middle is rewarding). Instead, participants were directed to pay attention to the stimuli/states they observed in order to select the optimal action. They were told that these catch choices are important for their bonus. Note that we ensured all varieties of catch trials were category-congruent with the second stage stimuli.
 
-## Attention engagement during the relearning (control trials)
+### Attention engagement during the relearning (control trials)
 
 Participants were instructed at the beginning of each run that the rewarding choices may change and they needed to pay attention to changes. Furthermore, both the instructions as well as forced choice stimuli incentivized them to pay attention during the relearning phase: (a) The relearning phase had ‘forced choice’ trials where participants were instructed to select the option already highlighted by the experimenter. We used these trials to ensure they were paying attention and provided verbal feedback between the runs to pay attention to these forced choices. (b) Participants were told their choices during the relearning phase were also related to reward at the end of the experiment (maximizing rewards required maximizing performance as a ‘thief’ in the cover story). (c) Participants were sometimes given catch trials with ‘police’ stimuli that required a different response, as noted above. Taken together, all of these factors helped to ensure that participants were paying attention in both the revaluation and the control condition. Note also that participants were not directly told whether a particular block was a revaluation block or control block – they had to pay attention to experienced rewards in all blocks during relearning to assess whether they were changing.
 
@@ -102,15 +110,27 @@ Our main neural hypothesis was that offline replay would facilitate the integrat
 
 In our study, the Relearning phase of each block was interleaved with three separate rest periods of 30 s each. Thus, offline replay could be assessed using brain measurements during these off-task rest periods. To allow us to measure replay, we used image categories for Stage I and Stage II stimuli that were easy to decode with fMRI: All stimuli were either faces or scenes (Polyn et al., 2005). In particular, the Stage I (root) stimulus belonged to a different category than the two Stage II stimuli. This manipulation allowed us to operationalize ‘offline replay’ using classifier evidence of Stage I in separate category-selective regions of interest (ROI) during rest periods, as described below.
 
-## Replanning (revaluation) behavior
+### Replanning (revaluation) behavior
 
 To measure revaluation behavior, we computed a replanning magnitude score for each subject and block (Gershman et al., 2014; Momennejad et al., 2017; Russek et al., 2017), defined as the proportion of optimal Stage I choices during Test minus the proportion of choices for that same option during the Learning phase (see Equation 1 in Materials and methods). We use a score that indexes change in preferences here (Gershman et al., 2014), rather than raw Test phase choice behavior for two reasons. First, this is what our hypotheses concern: that replay updates pre-existing choice policies, driving a change. Second, this score controls for any confounding effects of initial learning performance on Test phase behavior. (For instance, subjects paying different amounts of attention might learn to varying degrees in the initial phases, leading to differences in both replay and Test phase behavior, even if replay itself doesn't affect later preferences.) In revaluation blocks, this replanning magnitude quantifies successful reversal of preference from Learning to Test, because the initially suboptimal option becomes optimal during the Test phase. The difference in preference captured by the replanning magnitude compares the frequency of taking the newly optimal action during the Test phase to the frequency of taking this action at the end of the Learning phase (when it was suboptimal), which adjusts for choice noisiness or failure to acquire the initial associations during the Learning phase. Thus, for revaluation blocks, a large replanning magnitude indicates consistent, successful reversal of an initially consistent, correct preference. Conversely, in control blocks (where the initially suboptimal option remains suboptimal at test) a large replanning magnitude indicates an unwarranted and suboptimal reversal of the initially trained preference, allowing us to control for preference change due to some other, nonspecific source of error such as decision noise or forgetting.
 
-## Behavioral results
+### Behavioral results
 
 Comparison of replanning magnitudes revealed that participants showed significant revaluation behavior (i.e., reversed their Stage I choice from Learning to Test, as indicated by positive replanning magnitudes) in revaluation blocks (t(23) = 4.89, p < 0.0001), but not during control blocks (t(23) = −0.10, p = 0.92), and the difference in magnitudes between the two conditions was significant (t(23) = 4.333, p = 0.0002) (Figure 2B). The comparison with the control condition verifies that this apparent revaluation behavior is not simply attributable to general forgetting or increased memory noise from Learning to the Test phase; rather, it is due to revaluation of past policies in the face of novel information in the revaluation condition—but not the control condition. A 2-way analysis of variance confirmed the main effect of the reward vs. control factor but revealed no significant main effect of the reward stability vs. noise manipulation (see Figure 2—figure supplement 1).
 
-## Replay-behavior relationships
+![Figure 2.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig2-v2.jpg)
+
+**Figure 2.:** (A) Behavioral results (n = 24). Participants significantly changed their choice from the Learning phase to the Test phase in the revaluation condition, but not the control condition. (B) Replay supports planning. Correlation between Stage I replay during off-task rest periods and replanning magnitude during the subsequent Test phase for Control (left) and Revaluation (right) blocks. Stage I replay was operationalized as MVPA evidence for the Stage I stimulus category, in category-selective regions of interest, during all rest periods of control and revaluation conditions (n = 24). The correlation was significant in the Revaluation blocks (Spearman rho = 0.54, p = 0.0068) but not Control blocks (Spearman rho = −0.13, p = 0.55), and it was significantly larger in Revaluation than Control blocks (p = 0.0230, computed using a bootstrap, computing Spearman rho 1000 times with replacement). Regression lines are provided for visualization purposes, but statistics were done on Spearman rho values. The bottom figures display both fitted lines as well as Spearman’s rho values for clarity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (B) Behavioral revaluation scores in the control and revaluation conditions, assessed separately in the noisy rewards vs. noiseless rewards conditions. Half of the trials in the control and revaluation conditions had fixed rewards (noiseless rewards condition) and half had noisy rewards (noisy rewards condition). We used an ANOVA to compare replanning behavior, evidenced by the revaluation magnitude, in the conditions with no variance in the rewards (noiseless condition) vs. conditions with noisy reward (noisy condition). Analysis of variance revealed a significant effect of the revaluation condition on behavior (F(1, 23) = 29.57, p < 0.0001) but no significant effect of the noise condition (F(1, 23) = 0.91, p = 0.34), and no significant interactions (F(1, 23) = 1.35, p = 0.25. Within each of the noise conditions (noiseless, noisy), participants significantly changed their choice from the Learning phase to the Test phase in the revaluation condition, but not the control condition: noiseless rewards condition: t(23) = 4.6, p = 0.00003; noisy rewards condition: t(23) = 3.06, p = 0.003. (C) Offline replay of distant past states predicts replanning. Breakdown of correlation between MVPA evidence for replay and subsequent replanning behavior, computed separately for the noisy and noiseless rewards conditions. All correlations were conducted using the last 10 TRs (out of 15 TRs) of each rest period, excluding the first 5 TRs to reduce residual effects of Stage II stimulus-presentation prior to rest. This breakdown revealed that MVPA evidence for Stage I replay was significantly correlated with subsequent replanning behavior in revaluation blocks in the noisy rewards condition (Spearman’s rho = 0.48, p = 0.016), but not the noiseless rewards condition (Spearman’s rho = 0.07, p = 0.75). We then ran bootstrap analyses to assess the differences in correlations between conditions. The difference in correlations between revaluation and control was trending but not significant in the noisy rewards condition (p = 0.066) and it was not significant in the noiseless condition (p = 0.16). There was no overall interaction between revaluation/control and noisy/noiseless; i.e., the revaluation vs. control difference was not significantly larger in the noisy condition than the noiseless condition (p = 0.34).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** We found no significant correlation. The Figure shows the correlation between replay of Stage two category during rest and subsequent revaluation scores, which is non-significant for both conditions (revaluation: rho = 0.2, p = 0.17; control: rho = -0.25, p = 0.22). Multiple regression did not reveal any significant effect of Stage two replay (ß = 0.84, p = 0.44) but only a significant effect of the Stage one replay on the revaluation scores (ß = 1.89, p = 0.04).
+
+### Replay-behavior relationships
 
 Next, we turned to the neuroimaging data to test our main hypothesis: whether neural evidence for offline replay during rest periods predicts subsequent replanning behavior. As noted above, we used MVPA to track replay of Stage I, leveraging the fact that Stage I and Stage II stimuli were always taken from different categories (faces and scenes). For example, in a trial where the Stage I stimulus was a face and Stage II stimuli were scenes, we used MVPA measures of face activity during rest periods to measure spontaneous replay of Stage I. Previous evidence suggests that multivariate pattern analysis (MVPA) can be used to measure offline replay and memory reactivation during post-task rest periods (Staresina et al., 2013; Cichy et al., 2012; Gruber et al., 2016). Specifically, it has been shown that imagery, reinstatement, and perception of faces and scenes elicit patterns in the temporal cortical regions associated with visual categories, roughly corresponding to the fusiform gyrus for the face category and the parahippocampal gyrus for the scene category (Polyn et al., 2005; Eichenbaum, 2004). Therefore, we first identified these category-selective regions using general linear models (GLMs) on a separate localizer run before the main task. The localizer run consisted of blocks of faces, scenes, objects, and rest. The faces and scenes, but not objects, were used later during the experiment. We then trained a classifier (using logistic regression) on face, scene, and object stimuli appearing during the separate localizer run. The main goal of the classifier was to classify the reinstatement of cortical patterns associated with the Stage I stimulus category during the rest periods. As a cortical measure of replay, for each participant, each block, and each of the 30 s rest periods, we used this logistic regression classification method to identify TR-by-TR classifier evidence for the cortical reinstatement of faces and scenes in category ROIs (regions of interest). To ensure that we could independently assess positive evidence for both face and scene categories (rather than competitively detect one at the expense of the other), we assessed classifier evidence for each category from an ROI that was selective for that category (see Methods for further discussion of this point).
 
@@ -122,23 +142,186 @@ Note that the crucial step for revaluation is retrieval of memory for the Stage-
 
 In short, we found that MVPA evidence of Stage I replay during rest correlates with subsequent replanning behavior. This fits with our hypothesis that offline memory processes can support planning. Next, we test the hypothesis that this replay is driven by the experience of prediction error.
 
-## The brain’s response to unsigned prediction error tags memories for replay
+### The brain’s response to unsigned prediction error tags memories for replay
 
 A key question for any account of learning from replay is how the brain selects which memories to replay. We thus explored what events favor replay, and ultimately successful revaluation. A general, appealing possibility is that events with some particular property when first experienced, like surprising ones, are privileged for later offline replay. (Mechanistically, this might occur either because they are ‘tagged’ for replay when first experienced, or because they are singled out later at retrieval.) We tested this idea in terms of one representative notion of surprise – neural sensitivity to unsigned PEs (i.e., the absolute value of PEs), as in the prioritized sweeping algorithm (Moore and Atkeson, 1993). Offline replay in turn would support updating past policies and hence predict future revaluation behavior (Figure 3, note the relationships indicated in the diagram, top left). We have shown in previous sections that offline replay during rest is correlated with revaluation during a later Test phase. To examine evidence for the hypothesized relationship between the brain’s response to PE and offline replay, as well as subsequent replanning behavior (Figure 3, top left), we ran parametric modulation analyses as follows.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig3-v2.jpg)
+
+**Figure 3.:** We propose that neural sensitivity to reward prediction errors during learning ‘tags’ or ‘prioritizes’ memories for replay during later rest periods. Replay during rest, in turn, allows the comparison of past policy with new simulated policy and updating of the past policy when needed. (Top right) Regions where sensitivity to unsigned PE in Revaluation blocks correlates with subsequent replay during rest (extent threshold p < 0.005, cluster family-wise error [FWE] corrected, p < 0.05, shown in purple) and revaluation behavior (extent threshold p < 0.005, cluster FWE corrected, p < 0.05, shown in blue). (Bottom) Green reveals the conjunction of regions where sensitivity to unsigned PE in Revaluation blocks correlates with subsequent replay during rest (extent threshold p < 0.005, cluster FWE corrected, p < 0.05) and revaluation behavior (threshold p < 0.005, cluster FWE corrected, p < 0.05) in those blocks; the conjunction is shown at a p < 0.05 threshold. We found that the sensitivity of broad regions in the basal ganglia, the cingulate cortex (including the ACC), and the posterior medial cortex (precuneus) to unsigned prediction errors (signaling increase in uncertainty) correlated with both future replay during rest as well as subsequent revaluation behavior. See Tables 1 and 2 for coordinates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Results are shown based on extent threshold p < 0.005 and cluster (family wise error) correction at p < 0.05. The only one of these analyses to yield any significant clusters was the correlation between PE and replay in the noisy condition (shown below), in which the magnitude of sensitivity to unsigned PE in the ventral tegmental area (VTA), the thalamus, and the basal ganglia (including the caudate and putamen) predicted subsequent replay during rest periods.
+
 For each participant, we conducted a parametric regression analysis within the Revaluation condition to identify regions with sensitivity to stimulus-by-stimulus unsigned PEs. Prediction errors were estimated from a Temporal Difference (TD) learning model (see Methods). We then tested, for each subject and each Revaluation block, the relationship between the magnitude of the brain’s PE response (in that block) and two different covariates: subsequent replay and subsequent replanning score (Figure 3, top right, purple and blue maps respectively). This allowed us to determine whether (and in which brain areas) the magnitude of activity in response to unsigned PE was related to off-line replay (Figure 3, regions indicated in purple, see Table 1 for coordinates) and subsequent replanning (Figure 3, regions indicated in Blue, see Table 2 for coordinates), as hypothesized (Figure 3, top left). In order to identify the combined effect and given the correlation between the two covariates, we used a conjunction analysis over the two resulting correlation brain maps (Figure 3, regions indicated in green). This conjunction analysis yielded regions where the brain’s response to unsigned PE on each block correlated with both (a) subsequent mean replay evidence (for Stage I stimuli) during rest, and (b) subsequent replanning magnitude of the choice behavior during that block’s Test phase (Figure 3).
+
+**Table 1.**
+ Coordinates of voxels where parametric modulation with unsigned PEs during learning predicted future replay of Stage I during rest periods, extent threshold p < 0.005, corrected at cluster level family-wise error p < 0.05 (these correspond to purple regions in Figure 3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Z score</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>K voxels</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Right Cuneus Left Cuneus Right Lingual Left Lingual Calcarine</td>
+      <td>3.31 3.29 3.21 3.15 3.14</td>
+      <td>-2 4 −14 16 6</td>
+      <td>−68 −66 −68 −46 −70</td>
+      <td>4 22 22 -8 4</td>
+      <td>1898</td>
+      <td>.000488</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Coordinates of voxels where parametric modulation with unsigned PEs during learning predicted future replanning behavior (revaluation magnitude), extent threshold p < 0.005, corrected at cluster level family-wise error p < 0.05 (these correspond to blue regions in Figure 3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Z score</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>K voxels</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Right precentral Orbitofrontal cortex (OFC) Supplementary motor area Right superior frontal cortex ACC Right OFC</td>
+      <td>3.67 3.62 3.59 3.49 3.49 3.42</td>
+      <td>26 0 -8 18 −14 6</td>
+      <td>−20 58 4 32 50 58</td>
+      <td>68 −12 48 38 0 −18</td>
+      <td>5240</td>
+      <td>1.36e-08</td>
+    </tr>
+    <tr>
+      <td>Right superior temporal Right supra-marginal Inferior parietal Right putamen Right superior temporal pole</td>
+      <td>3.67 3.6 3.58 3.39 3.35</td>
+      <td>56 34 36 26 46</td>
+      <td>−30 −36 −42 8 18</td>
+      <td>14 44 44 2 −16</td>
+      <td>5165</td>
+      <td>1.67e-08</td>
+    </tr>
+    <tr>
+      <td>Left superior temporal pole Left putamen</td>
+      <td>3.4 3.35</td>
+      <td>−46 −20</td>
+      <td>−10 18</td>
+      <td>0 8</td>
+      <td>2161</td>
+      <td>.00021</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ .Coordinates of peak voxels of regions with higher off-task activity during rest periods of revaluation > control condition.The clusters were selected with threshold p < 0.005, corrected at cluster level family-wise error p < 0.05 (these correspond to red regions in Figure 4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region (cluster)</th>
+      <th>Z score</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>K voxels</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left hippocampus</td>
+      <td>4.74</td>
+      <td>−20</td>
+      <td>−38</td>
+      <td>10</td>
+      <td>297</td>
+      <td>.014</td>
+    </tr>
+    <tr>
+      <td>Left insula Left superior temporal</td>
+      <td>4.57 4.57</td>
+      <td>−36 −42</td>
+      <td>-8 −24</td>
+      <td>6 6</td>
+      <td>1959</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td>Right superior temporal</td>
+      <td>4.11</td>
+      <td>44</td>
+      <td>−12</td>
+      <td>2</td>
+      <td>2249</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td>Right anterior cingulate, ventromedial PFC</td>
+      <td>4.65</td>
+      <td>2</td>
+      <td>38</td>
+      <td>6</td>
+      <td>238</td>
+      <td>.048</td>
+    </tr>
+    <tr>
+      <td>Left mid cingulate Left Supplementary motor area</td>
+      <td>3.31 3.33</td>
+      <td>−10 -6</td>
+      <td>−10 −12</td>
+      <td>46 62</td>
+      <td>258</td>
+      <td>.030</td>
+    </tr>
+  </tbody>
+</table>
 
 This conjunction analysis yielded multiple regions where neural sensitivity to unsigned PEs significantly predicted both future offline replay and revaluation magnitudes: the anterior cingulate cortex (ACC), the mid cingulate, posterior medial cortex (PMC) including dorsal and ventral precuneus, and the basal ganglia, especially the putamen (Figure 3, bottom). These results are consistent with the hypothesized relationship between sensitivity to prediction errors during learning, offline replay during rest, and revaluation behavior at test, and suggest an involvement of ACC, PMC, and basal ganglia in signaling the relevant PEs (see Figure 3—figure supplement 1 for breakdown of this analysis for the noisy-rewards and noiseless-rewards blocks).
 
-## Brain activity during revaluation vs. control rest
+### Brain activity during revaluation vs. control rest
 
 Next, we report a number of observations further unpacking the key results discussed above. Our hypothesis is that learning and updating take place during offline replay periods—indeed, we revealed above that replay in category-sensitive brain regions during rest periods of revaluation blocks (but not control blocks) predicted subsequent planning behavior. This hypothesis also implies that brain regions related to learning and memory should show more activity during the rest periods of revaluation trials, where engaging in offline replay could result in better choices, compared to control trials in which the most learning has already occurred during the Learning phase. To test this, we used a GLM to compare overall differences in univariate activity during the rest periods of revaluation vs. control trials. Contrasting rest periods from revaluation trials versus control trials (Restrevaluation> Restcontrol) revealed higher activity in the hippocampus/medial temporal lobe and the anterior cingulate cortex (p < 0.005, cluster corrected at p < 0.05, Figure 4, see Table 3 for coordinates, and Figure 4—figure supplement 1 for breakdown of this analysis for the noisy-rewards and noiseless-rewards blocks).
 
-## Learning during rest
+![Figure 4.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig4-v2.jpg)
+
+**Figure 4.:** The contrast reveals higher activity in the hippocampus, the anterior cingulate cortex, mid cingulate (shown above), as well as bilateral insula and superior temporal cortices (extent threshold p < 0.005, cluster level family-wise error corrected at p < 0.05). See Table 3 for coordinates, cluster size, and p values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** We compared the difference between univariate activation during the rest periods of control vs. revaluation blocks in all runs (top), in the noisy-rewards condition (middle), and the noiseless-rewards condition (bottom). The Rest(revaluation) > Rest(control) contrast in the noisy rewards conditions reveals lateral temporal cortices and the insula, whereas the noiseless condition did not reveal any significant regions (extent threshold p < 0.005, cluster FWE corrected, p < 0.05).
+
+### Learning during rest
 
 So far, we have shown that evidence for offline replay, across subjects and blocks, correlated with subsequent replanning behavior, and that regions broadly involved in memory and evaluation were more active during the rest period of revaluation trials. Finally, we broke down these effects over the course of the three rest periods in the Relearning phase to examine how they evolved over the progression of relearning and seek evidence of learning dynamics.
 
 A property of the learning model is that PEs during the Relearning period should decrease from the period preceding Rest 1 (when participants are first encountering the new rewards in the revaluation condition) to the period preceding Rest 3 (after participants have had more time to learn these new rewards); this was the case for the PE values estimated by the learning model (Figure 5, top left). Given the decreasing pattern in unsigned PE during re-learning, we predicted that this within-block variation might be echoed in patterns of replay across rest periods – reduced PE should lead to less replay. To focus the analysis on differences among rest periods within each block, we mean-centered MVPA evidence for the Stage I stimulus during the three rest periods for each block of each subject. This allowed us to compare patterns of within-block differences between replay in the three rest periods of revaluation and control trials. In control blocks, we found no differences in MVPA evidence for S1 replay during the three rest periods (Figure 5). During revaluation blocks, however, evidence for offline replay significantly decreased from Rest one to Rest 3 (t(23) = 2.9, p = 0.007), similar to the decreasing pattern of unsigned prediction errors (Figure 5). Furthermore, offline replay was higher during Rest 1 of revaluation blocks compared to the Rest 1 of control blocks (t(23) = 2.17, p = 0.039). Thus, consistent with our hypothesis, prediction errors and replay track each other over the course of the block, as well as across blocks (as previously shown in Figure 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig5-v2.jpg)
+
+**Figure 5.:** Dynamics of prediction errors prior to each rest period (left), MVPA evidence for Stage I replay during each rest period (middle), and replay-behavior correlation across the three rest periods of revaluation runs (right).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32548/elife-32548-fig5-figsupp1-v2.jpg)
 
 Analyzing the rest periods of revaluation trials in the noisy-rewards and noiseless-rewards conditions separately (Figure 5—figure supplement 1), we found a similar trend: In the noisy-rewards condition, replay was marginally higher during Rest one than both Rest 2 (t(23) = 2.07, p = 0.049) and Rest 3 (t(23) = 2.02, p = 0.05) – in the noiseless-rewards condition, replay levels were low overall and did not vary across rest periods.
 
@@ -174,11 +357,11 @@ To summarize, we have provided neural and behavioral evidence for the hypothesis
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We recruited 26 volunteers using the Princeton University recruitment system (SONA) to participate in the fMRI study. Two participants were excluded due to running out of time and not having sufficient number of runs. Please note that, logically, the analysis required each participant to learn the local dependencies of the task in the learning phase (indexed by their choice behavior) and there was one run per condition. If a participant did not learn the task structure during the learning phase, neither their replay during rest nor their subsequent choice behavior could be interpretable. That is, for any ‘replanning’ to occur later on, participants needed to learn sufficiently to be able to show ‘planning’ behavior in the learning phase, indexed by their choices. Therefore, based on this a priori requirement, any participant who did not learn the task structure during the learning phase was logically excluded. The remaining 24 participants’ data were further analyzed. The Princeton University Institutional Review Board approved the study (Protocol #6014, ‘Cognitive Control: Functional Imaging of Memory and Mental Representations’). All participants gave informed to participate in the fMRI study and signed a screening form that ensured they had normal or corrected to normal vision, had no metal in their body, and had no history of psychiatric or neurological disorders.
 
-## Stimuli and task
+### Stimuli and task
 
 Eight face, eight scene, and eight object stimuli were used in the face/scene/object functional localizers. The faces and scenes were subsequently used in the main experimental task. Before the beginning of the main experiment, participants were subjected to blocked functional localizer runs. In the localizer participants were exposed to separate blocks of scenes, faces, and objects. Each category was presented for four blocks that each lasted for 12 s, separated by rest periods of 12 s. In each block, every stimulus was presented for 3.5 s with an ISI of. 5 s. To ensure that participants were paying attention to the stimuli during the localizer, they were instructed to give responses to a cover task. In half of the localizer blocks participants were instructed to give responses with the left hand and in the other half of the blocks with the right hand.
 
@@ -186,19 +369,23 @@ The main experimental paradigm consisted of 4 runs, each of which corresponded t
 
 Additionally, we manipulated the variance in the rewards observed at each state. We wanted to ensure that, after learning, participants did not only experience prediction errors in the revaluation condition, but that the control condition also contained some degree of uncertainty with respect to rewards. To this end, the rewards in half of the runs, in other words one revaluation run and one control run, were sampled from a normal distribution with a fixed mean and variance, and in the other half of runs the rewards were completely deterministic.
 
-In each city, during the Learning phase participants were exposed to the stimuli associated with the three main states of the MDP about 70 times. The last 10 choices they made from the Stage I state were used to calculate their probability of choosing the optimal response (e.g. if the optimal policy was left: p(left) = #left choices/10). Following the Learning phase, participants entered the Relearning phase where they only visited Stage II stimuli and never the Stage I stimulus. During this phase in revaluation trials, the rewards associated with Stage II (state 2 and 3) choices changed – but not during control trials. After every six Stage II episodes each requiring a choice, a rest period of 30 s length followed for which no instructions were given. Each participant experienced three rest periods of 30 s each during the Relearning phase. Finally, during the Test phase, participants were once again exposed to state 1, four times. Replanning magnitudes were computed as the probability of choosing the other valid action in those four trials, minus the probability of choosing the same response during the Learning phase – thus detecting the actual change in performance by subtracting noisiness in decision at the end of the Learning phase. For instance, if the optimal policy at test was right: revaluation magnitude = (#right choices at test/4) - (#right during last 10 choices of learning/10).(1)replanning magnitude=nstestntest- nslearningnlearning
+In each city, during the Learning phase participants were exposed to the stimuli associated with the three main states of the MDP about 70 times. The last 10 choices they made from the Stage I state were used to calculate their probability of choosing the optimal response (e.g. if the optimal policy was left: p(left) = #left choices/10). Following the Learning phase, participants entered the Relearning phase where they only visited Stage II stimuli and never the Stage I stimulus. During this phase in revaluation trials, the rewards associated with Stage II (state 2 and 3) choices changed – but not during control trials. After every six Stage II episodes each requiring a choice, a rest period of 30 s length followed for which no instructions were given. Each participant experienced three rest periods of 30 s each during the Relearning phase. Finally, during the Test phase, participants were once again exposed to state 1, four times. Replanning magnitudes were computed as the probability of choosing the other valid action in those four trials, minus the probability of choosing the same response during the Learning phase – thus detecting the actual change in performance by subtracting noisiness in decision at the end of the Learning phase. For instance, if the optimal policy at test was right: revaluation magnitude = (#right choices at test/4) - (#right during last 10 choices of learning/10).
 
-Here ntest denotes the total number of valid responses (i.e., excluding missed responses or invalid button presses) during the Test phase, and nstestis the number of times that the optimal choice was made during the test phase; nlearningdenotes the total number of valid responses during the last 10 trials of the Learning phase, and nslearningis the number of times that the choice that was optimal at Test was selected during the last 10 trials of the learning phase (note that, in revaluation blocks, the response that is optimal during the Test phase was suboptimal during the Learning phase).
+$$
+replanningmagnitude=\frac{ns_{test}}{n_{test}}-\frac{ns_{learning}}{n_{learning}}
+$$
 
-## fMRI imaging protocol and preprocessing
+Here $n_{test}$ denotes the total number of valid responses (i.e., excluding missed responses or invalid button presses) during the Test phase, and $ns_{test}$is the number of times that the optimal choice was made during the test phase; $n_{learning}$denotes the total number of valid responses during the last 10 trials of the Learning phase, and $ns_{learning}$is the number of times that the choice that was optimal at Test was selected during the last 10 trials of the learning phase (note that, in revaluation blocks, the response that is optimal during the Test phase was suboptimal during the Learning phase).
+
+### fMRI imaging protocol and preprocessing
 
 Imaging data were acquired on a 3 Tesla Skyra scanner (Siemens, Erlangen, Germany) using a 20-channel head coil. Functional runs were acquired using T2*-weighted echo-planar sequence with 37 slices (interleaved order, ascending) with 3 mm thickness, an in-plane resolution of 3 × 3 m, TR = 2.08 s, echo time of 70 ms, anterior-to-posterior phase encoding direction, and no gaps. Slices were tilted for each participant by roughly 30 degrees to avoid the sinuses and optimize signal in the orbitofrontal cortex but avoid losing temporal cortex voxels. A T1-weighted structural volume was acquired with 1 × 1×1 mm resolution. Functional volumes were slice-time corrected, realigned to the mean of each run, and motion corrected. FMRI data processing was carried out using FEAT (FMRI Expert Analysis Tool) Version 6.00, part of FSL (FMRIB's Software Library, www.fmrib.ox.ac.uk/fsl). Higher-level analysis was carried out using FLAME (FMRIB's Local Analysis of Mixed Effects) stage 1 (Woolrich et al., 2004; Woolrich, 2008; Kuhl et al., 2011).
 
-## Behavioral and neuroimaging data analysis
+### Behavioral and neuroimaging data analysis
 
 Functional localization We designed a general linear model (GLM) to identify functional regions for each participant. We used regressors corresponding to face, scene, objects, and rest conditions, and applied Scene > Face and Face > Scene contrasts to identify face-selective and scene-selective regions for each participant (Eichenbaum, 2004); for these contrasts, we used a liberal voxel-wise threshold of p < 0.005, uncorrected, to ensure that we did not miss informative voxels. These regions of interest were used as a means of dimensionality reduction, allowing us to confine the multivariate analysis of experimental runs to these regions.
 
-## Multivariate pattern analysis
+### Multivariate pattern analysis
 
 As noted, Stage I stimuli were of a different category than Stage II stimuli. For each participant, Stage I stimuli were faces in half of the blocks and scenes in the other half. This ensured that identifying Stage I evidence was not confounded with simply a replay bias for faces and scenes, which might have been the case if the Stage I stimuli were from the same category across all trials. We used L2-regularized logistic regression (penalty = 1) to train a classifier on TRs when participants observed images of faces, objects, and scenes during the independent functional localizer run acquired prior to experiment (Polyn et al., 2005). Importantly, to detect face activation, we trained a face vs. other (scene, object) classifier only on voxels from the face-selective ROI identified in the localizer analysis above; conversely, to detect scene activation, we trained a scene vs. other (face, object) classifier only on voxels from the scene-selective ROI identified in the localizer analysis above. Our use of this approach (where we used separate sets of voxels for face detection and scene detection) was driven by our desire to obtain, to the greatest extent possible, independent readouts of face and scene activity. It is a well known issue with MVPA that, when face and scene classifiers are applied to the same voxels, face and scene classifier readouts tend to be artifactually anti-correlated because the face and scene labels are anti-correlated in the training data (i.e., the classifier learns that, in the training data, the presence of scene predicts the absence of face, and vice-versa) (Wilson and Niv, 2015). This problem can be mitigated to some degree by adding additional categories at training (this is why we added the object category), but we found that it can be mitigated even further by applying the classifiers to distinct sets of voxels – this carries a potential cost of losing sensitivity (by restricting the voxels going into a particular classifier) but we were willing to pay this price to address the anti-correlation problem described above: In our study, the correlation between the time course of face evidence (from face ROIs) and scene evidence (from scene ROIs) during the rest periods was positive (on average,. 36), not negative.
 
@@ -206,24 +393,32 @@ To measure replay of Stage I category information, we took the trained face and 
 
 The main goal of this analysis was to test whether evidence for offline replay of the root state (State 1) during the rest periods correlated with subsequent revaluation behavior during the Test phase. Therefore, we computed correlations between mean classification accuracy (evidence for offline replay of Stage I) and subsequent revaluation behavior separately for revaluation condition trials and control trials (Figure 2B).
 
-## Bootstrap comparison of replay-replanning correlation across conditions
+### Bootstrap comparison of replay-replanning correlation across conditions
 
 To compare the size of the correlation between replay and behavior across conditions (revaluation vs. control), we used a bootstrap approach in which we resampled participants with replacement 1000 times; for each bootstrap sample, we computed the difference in the size of the replay-behavior correlation across conditions, thereby giving us a bootstrap distribution of correlation differences.
 
-## Univariate analysis of rest periods
+### Univariate analysis of rest periods
 
-## Model-based analysis
+#### Model-based analysis
 
-In order to identify regions that were sensitive to reward prediction errors (RPE), we ran a parametric modulation analysis in which we regressed out mean signal change when participants received reward, and identified regions where variance around the mean was modulated by the magnitude of absolute RPEs experienced while receiving the reward. Unsigned prediction errors were calculated for each subject and each stimulus using Equation (2).(2)| δ =rs'+ γQs', a'- Q(s, a)|
+In order to identify regions that were sensitive to reward prediction errors (RPE), we ran a parametric modulation analysis in which we regressed out mean signal change when participants received reward, and identified regions where variance around the mean was modulated by the magnitude of absolute RPEs experienced while receiving the reward. Unsigned prediction errors were calculated for each subject and each stimulus using Equation (2).
 
-Here s refers to the current state and s’ to the next state, a is the current action and a’ the next action, and γis the temporal discounting parameter (here γ=1,since the temporal horizon in a 2-step Markov decision process (MDP) is limited to one step (42)). The reward prediction error is in turn used to update the state-action value as equation (3) below, where αdenotes the learning rate. We estimated a learning rate of. 7 based on analysis of previous pilot behavioral data (n=24) and used this learning rate for all participants.(3)Qs, a= Qs, a+ α δ
+$$
+|\delta=rs^{'}+\gammaQs^{'},a^{'}-Q(s,a)|
+$$
+
+Here s refers to the current state and s’ to the next state, a is the current action and a’ the next action, and $\gamma$is the temporal discounting parameter (here $\gamma=1,$since the temporal horizon in a 2-step Markov decision process (MDP) is limited to one step (42)). The reward prediction error is in turn used to update the state-action value as equation (3) below, where $\alpha$denotes the learning rate. We estimated a learning rate of. 7 based on analysis of previous pilot behavioral data (n=24) and used this learning rate for all participants.
+
+$$
+Qs,a=Qs,a+\alpha\delta
+$$
 
 We were interested in identifying regions where sensitivity to unsigned reward PEs, a measure of uncertainty used in the reinforcement learning literature, would correlate with future replay during rest periods and revaluation magnitude during the final Test phase.
 
-## Estimating learning rates
+### Estimating learning rates
 
 We estimated learning rates from a separate sample that performed the same task in a pilot study. The structure and rewards used in this pilot study were virtually identical to the fMRI task. As model-based fMRI analyses are typically performed using group-level (rather than individual level) parameter estimates, we estimated this learning rate from the pooled subject data using Maximum Likelihood Estimation, resulting in one best-fitting learning rate for the entire population (learning rate of. 7, n = 24). We confirmed a similar best-fitting learning rate in the fMRI sample (.78). With regard to the generalizability of the neural results to different values of the learning rate, it is worth noting that a previous systematic evaluation of this issue (51) found that substantive differences in learning rates in the model-based analysis of similar tasks lead to only minute changes in neural results.
 
-## The effect of volatility on prediction errors
+### The effect of volatility on prediction errors
 
 Here we have estimated prediction errors regardless of the noise conditions. However, theoretically the statistical volatility of, and hence the overall uncertainty about, the environment or context may change the extent to which prediction errors tag memories for offline replay. For instance in environments with high volatility or uncertainty, the brain may become less sensitive to PEs that are not larger than some threshold. One possibility to give a computational account of the effect of such contextual uncertainty (or reward volatility) is to divide the PE by the variance (e.g. in rewards) in future models. Such a simple computational step, and similar varieties using the hazard rate, would lead to lower prediction errors in contexts with higher variance. Our data only partially speaks to this point: the noisy revaluation condition (that includes uncertainty about the precise reward outcome) leads to worse replanning performance than the noiseless revaluation condition (that has no uncertainty about outcomes outside of the revaluation). A systematic investigation of the role of hazard rate or volatility of rewards on tagging of surprising memories for future replay merits a separate dedicated study. Such a study would benefit from a design where prediction errors are parametrically changed across conditions or groups.

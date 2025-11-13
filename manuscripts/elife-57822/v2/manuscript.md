@@ -42,7 +42,7 @@ TANGO1 is a single-pass transmembrane protein with two adjacent hydrophobic heli
 
 ## Results and discussion
 
-## TANGO1 membrane helices partition lipids
+### TANGO1 membrane helices partition lipids
 
 In order to investigate whether the membrane-associated helices of TANGO1 can contribute to the organisation of the ER-ERES boundary, we employed recombinant minimal transmembrane proteins that were reconstituted in model membranes. In order to mimic the marked changes in curvature that are encountered at this boundary, we employed micro-manipulation of giant unilamellar vesicles (GUV). Here, a tube with a diameter of 50–200 nm is pulled from the surface of the GUV, providing an ideal proxy to characterise membrane reorganisation and the role of membrane curvature and shape during transport intermediate biogenesis at the ER.
 
@@ -60,6 +60,14 @@ A micropipette was used to grab the GUV, and a streptavidin-coated silica bead w
 
 To observe lipid diffusion across the region of saddle-like curvature between the tube and the GUV, we photobleached Atto647N in the tube membrane and quantified its recovery after photobleaching. Fluorescence recovery in the tube was due to the diffusion of labelled lipids from the GUV into the tube. This experiment was carried out in GUVs under three conditions: with no protein (no protein), with TM_GFP (TM), and with IM-TM_GFP (IM-TM) as depicted schematically in Figure 2A. Images of Atto647N in the tube were acquired before bleaching (prebleach), immediately after the photobleach (0 min) and six minutes later (6 min) (Figure 2B). The recovery of fluorescence was plotted six minutes after photobleaching (Figure 2C). This single time point was chosen such that fluorescence recovery in the tube had plateaued (see Materials and methods section for details). Fluorescence recovered to 60 ± 6% (mean ±s.d.) of the prebleach intensity in tubes from GUVs with no protein. Similarly, in tubes pulled from GUVs with the transmembrane helix alone (TM), fluorescence recovered to 56 ± 12%. However, the two helices together (IM-TM), considerably inhibited fluorescence recovery. Now, the recovery was only 35 ± 5% (Figure 2C), showing that TANGO1 membrane helices together inhibited the exchange of lipids between the tube and the rest of the GUV.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the three conditions (no protein, TM, IM-TM) with protein reconstitution into a GUV showing a tube pulled from the GUV; (B) Atto647N-labelled lipids visualised in the pulled tube in all three conditions, before bleaching (prebleach), then immediately after bleaching (0 min) and six minutes later (6 min). (C) Box plot quantification of the fluorescence recovery after 6 min; (D) Frequency histogram showing the extent of fluorescence recovery in tubes pulled from GUVs with no protein or TM pooled (yellow) or GUVs with TM_IM (blue). Most trials with low recovery rates were those where tubes were pulled from GUVs with IM-TM (blue line vs green and red lines). ns – not significant or p<0.02 by ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the experiment. A bottom pole of a micromanipulated GUV is placed in the focal plane of the confocal microscope. The fluorescence in a disk-shaped region of interest is monitored before bleaching and during the recovery phase. The three pictures show the pole of the GUV delineated by the red circle, the region of interest delineated by the white circle (here, the diameter is 5 µm) before bleach, right after bleach and after recovery from left to right respectively. The graph shows the raw fluorescence recovery in the region of interest (blue points), the three data-point rolling average (orange) and the fit of the rolling average using the equation indicated in the Materials and methods section. (B) The square of the diameter of the region of interest is plotted vs. the raw values of τ (multiplied by a factor of 16), from the fit of 6 different FRAP experiments (three experiments performed twice on two different days). The slope is equal to the diffusion coefficient, D, here 0.69 µm²/s. At the bottom, the extreme values of D obtained from the data point (red lines) are indicated. Hence, D = 0.7 ± 0.3 µm²/s.
+
 Our observations will probably under-represent the magnitude of the effect; many trials showed no effect due to several confounds including, that proteins were disrupted by a movement of the membranes, drift of the pipette, slight variation of pressure in the pipette, convective flow in the buffer, etc. This is made clear in an alternate representation of the data, shown in a frequency histogram of all the trials together (Figure 2D). The two treatments, no protein and TM, are grouped as control, and compared with the trials with ‘IM-TM’. Results from the trials with IM-TM (blue bars) appear to divide into two peaks, one with a lower recovery rate and a second peak that looks like control trials. Most trials with low recovery rates were those observed in tubes pulled from GUVs with IM-TM. There were almost no trials in control conditions (either no protein, or TM alone) with slowed recovery. We expect that those trials that showed no effect might have been affected by one or more of the confounds described above.
 
 To make sure the low recovery in the tube is not due to a global reduced fluidity of the membrane of GUV with IM-TM, we performed fluorescence recovery after photobleaching (FRAP) experiments on the EGFP-labeled protein in the GUV (Figure 2—figure supplement 1A). We found a diffusion coefficient (0.7 ± 0.3 µm²/s), consistent with a protein that is monomeric or in the form of small oligomers (Figure 2—figure supplement 1B). These data show that the membrane (protein and lipid) is fully fluid without hindered diffusion, confirming that the low recovery in the tube is due to reduced crossing at the junction between the GUV and the tube.
@@ -70,11 +78,19 @@ Such a diffusion barrier could most likely form if the membrane helices are conc
 
 These results showed that the two TANGO1 helices were sufficient to partially restrict lipid exchange between the tube and the rest of the GUV. What role do the two helices play in how TANGO1 interacts with the ER membrane?
 
-## The intramembrane helix is not required to target TANGO1 to ERES
+### The intramembrane helix is not required to target TANGO1 to ERES
 
 Proteins that insert into the lipid bilayer can bend membranes by changing the local spontaneous curvature of the monolayer or, by being retained at a location, they can stabilise a specific shape of membrane (Kozlov et al., 2014). We envisage that TANGO1 helices together are retained at, and/or stabilise, the saddle-shape membrane at the junction of the tube and the GUV, as at the junction of the ERES and a transport intermediate. Thus, we propose that the pair of helices act as a membrane shape-sensing module.
 
 What could TANGO1 use this shape sensor for, in vivo? A first possibility we could test is that it promotes the correct localisation of TANGO1 in the ER. The ability to detect defined membrane shapes and curvatures could be utilised by TANGO1 to localise to the site of defined shape at an ERES, particularly the junction of the ER and an export intermediate. We have previously shown that TANGO1 is recruited to ERES via an interaction between its C-terminal proline rich domain (PRD) and ERES proteins Sec23A and Sec16A. Perhaps the membrane shape-sensitivity of TANGO1 would play an additional role in its localisation as well. To test the role of the putative shape sensor in targeting TANGO1 to an ERES, we deleted the IM helix (amino acids 1145–1165, TANGO1ΔIM) or the TM (amino acids 1177–1197, TANGO1ΔTM) from full length TANGO1 (schematic representation is shown in Figure 3A) and assayed for the ability of the resulting proteins to localise to ERES. We transfected these constructs in HeLa cells from which endogenous TANGO1 has been deleted using CRISPR/Cas9 methodology (named 2H5 cells), as described before (Raote et al., 2018; Santos et al., 2015), and observed their pattern of expression. Deletion of the IM helix had no discernible effect on the ability of TANGO1 (Figure 3B, green) to localise to ERES as visualised by its localisation to puncta of the ERES marker Sec16A (Figure 3B, red).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of TANGO1 constructs used in this study, showing the sequence of the transmembrane and intramembrane helices. (B) The three HA-epitope tagged constructs were expressed in 2H5 cells, which were then imaged for HA and Sec16A. Scale bar: 20μm, Inset: 2μm. (C) Plot of the Manders’ colocalization coefficients of the extent of overlap of HA (TANGO1 constructs) with Sec16A.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) TANGO1 or TANGO1ΔIM (green) form distinct puncta at procollagen VII (red) accumulations in the ER (ER marker calreticulin in white). TANGO1 lacking a transmembrane domain (TANGO1ΔTM) does not form ERES puncta at procollagen VII accumulations; instead it uniformly coats the collagen. Arrowheads indicate representative features in each channel. Scale bar: 20 μm, Inset: 2 μm. (B) Plot of the Manders’ colocalization coefficients of the extent of overlap of HA (TANGO1 constructs) with procollagen VII. ns: not significant, p<0.02 by Student’s t test.
 
 Deletion of the TM helix had a more substantive effect and resulted in a loss of TANGO1 localisation to ERES (Figure 3A,B, quantified in 3C). We have previously shown that when the TM in TANGO1 is deleted, the IM changes its topology and becomes a transmembrane. Deleting both hydrophobic helices leads to a soluble protein in the ER lumen (Saito et al., 2009).
 
@@ -82,9 +98,17 @@ As a control, we confirmed that deleting either helix had no effect on targeting
 
 Together, these data reveal that membrane curvature/shape sensitivity in TANGO1 membrane helices is not the dominant ERES-targeting device, instead the PRD is more important to target TANGO1 to its cellular location at an ERES. If the membrane shape sensor is not to target TANGO1 to ERES or collagen, what role does it play?
 
-## TANGO1 membrane helices confer direction to TANGO1 molecules in a ring
+### TANGO1 membrane helices confer direction to TANGO1 molecules in a ring
 
 TANGO1 and procollagen VII were co-expressed in HeLa cells from which TANGO1 has been knocked out using the CRISPR/Cas9 system (2H5 cells). As before, transfected cells were fixed and processed for super-resolution (STED) imaging and TANGO1 was imaged at accumulations of procollagen in the ER. TANGO1 can be visualised assembled into rings at ERES (Raote et al., 2017; Raote et al., 2018). TANGO1-HA was visualised with two different antibodies raised against two distinct epitopes in the full-length protein. One epitope is in the ER lumen (corresponding to amino acids 472–525 of TANGO1), while the other is a cytoplasmic C-terminal HA-epitope (for schematic, Figure 4A). Under these conditions there was a clear separation of the signal from antibodies directed against the two different epitopes and we could identify two distinct configurations of the ring of TANGO1. Either the C terminus coalesced into a single spot within a ring formed by the lumenal antibody, or both could be visualised as concentric/colocalized rings (Figure 4A red vs. green respectively).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig4-v2.jpg)
+
+**Figure 4.:** Two different epitopes on TANGO1 are visualised concomitantly. The ER-lumenal epitope in green, the c-terminal HA epitope in red (A) TANGO1, (B) TANGO1ΔIM. (C) Quantification of the number of rings observed in each configuration. Regions with diagonal bars refer to rings with HA signal (red) contained within the lumenal signal (green), while the dotted region refers to rings with at least some HA signal (red) contained outside, but apposed to, the lumenal signal (green). (D) Schematic model of the different configurations of TANGO1 molecules in a ring.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) TANGO1 Lumenal epitope (green), when visualised as a ring could have the C-terminal HA epitope (red) randomly oriented with respect to the ring, or encircled entirely within the ring. (B) Quantification of the number of rings observed in each configuration. Regions with diagonal bars refer to rings with HA signal (red) contained entirely within the lumenal signal (green), while the dotted region refers to rings with at least some HA signal (red) contained outside, but apposed to, the lumenal signal (green).
 
 We propose that these distinct sets of images represented discrete configurations of TANGO1 during the formation of a carrier at an ERES. Initially, the C termini of TANGO1 lie within the ring, overlying the site of the formation of a carrier. As the carrier grows, the C termini are gradually pushed apart (for a schematic, Figure 4D).
 
@@ -116,29 +140,29 @@ In sum, TANGO1 through its various parts select and bind cargoes like the procol
 
 ## Materials and methods
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HeLa cells were grown at 37°C with 5% CO2 in complete DMEM with 10% FBS unless otherwise stated. Plasmids were transfected in HeLa cells with TransIT-HeLa MONSTER (Mirus Bio LLC) or Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific) according to the manufacturer’s protocols. All cells in culture were tested every month to confirm they were clear of contamination by mycoplasma.
 
-## Molecular biology
+### Molecular biology
 
 All molecular cloning, of constructs with TANGO1, was carried out using MAX Efficiency Stbl2 Competent Cells (Thermo Fisher Scientific), following manufacturer’s instructions.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used procollagen VII (rabbit anti–human [Abcam]; mouse anti–human [Sigma-Aldrich]), Sec31A (mouse anti–human; BD), TANGO1 (rabbit anti–human; Sigma-Aldrich), sec16A (rabbit anti-human; Sigma-Aldrich), calreticulin (goat anti–human; Enzo Life Sciences), HA (mouse; BioLegend), TGN46 (sheep polyclonal, Bio-Rad), HA (mouse monoclonal, BioLegend; rat monoclonal BioLegend). Mounting media used in confocal and STED microscopy were either Vectashield (Vector Laboratories) or ProLong (Thermo Fisher Scientific, Waltham, Massachusetts).
 
-## Protein expression
+### Protein expression
 
 Proteins were purified as previously described (Ernst et al., 2018). In brief, Plasmid encoding for FLAG-tagged TM or IM-TM were transfected into EXPI293F cells according to the manufacturer (Thermo Fisher), and incubated at 37°C, 8% CO2 for 48 hr, pelleted, and resuspended in 50 mM HEPES/KOH pH 7.3, 175 mM NaCl, 5 mM EDTA, 1 mM PMSF, 1 mM TCEP, protease inhibitor cocktail, and 8% (v/v) TX-100. After a brief microtip sonication, the lysate was placed rotating at 4°C for 3 hr. After centrifugation of the cell debris, the lysate was incubated with FLAG-affinity resin for 2 hr at 4°C. The resin was added to a column, settled, and washed three times with 50 mM HEPES/KOH pH 7.3, 175 mM NaCl, 5 mM EDTA, 50 mM n-Octyl-β-D-glucopyranoside (OG), and proteinase inhibitor (Roche). Finally, the proteins were eluted by adding 125 ng/ml FLAG peptide to the OG-containing buffer (Sigma-Aldrich) and incubating the beads for 30 min per round of elution. Eluates were analysed on 4–20% Bis-Tris gradient gels, stained with Coomassie, and analysed on a LI-COR Odyssey infrared scanner.
 
-## Giant unilamellar vesicle (GUV) formation
+### Giant unilamellar vesicle (GUV) formation
 
 The GUVs contained 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine (POPC, Avanti Polar Lipids, product #850457C), 1,2-distearoyl-sn-glycero-3-phosphoethanolamine-N-[biotinyl(polyethylene glycol)−2000] (DSPE-PEG2000-Biotin, Avanti Polar Lipids, product # 880129C) and 1,2-Dioleoyl-sn-glycero-3-phosphoethanolamine were pro-Atto-647N (ATTO-647N-DOPE, Atto-tec) at a ratio 94.9:5:0.1 mol/mol. The first step was to prepare proteo-liposomes. 0.8 µmol of the lipid mixture (POPC:DSPE-PEG-biot:DOPE-Atto647N; 95: 5: 0.1) was deposited in a test tube and dried by nitrogen flow followed by desiccation for 30 min. 50 µl of either the TM or the IM-TM peptide were added to the tube and slowly vortexed at room temperature for 15 min to resuspend the lipids. 150 µl of 10 mM HEPES pH 7.4, 100 mM KCl buffer (190 mOsm) was then added to the tube while vortexing to ensure homogeneous mixing. This buffer addition formed proteo-liposomes by diluting OG below its micellar critical concentration (initial OG concentration: 50 mM, final concentration: 12.5 mM, CMC ~ 23 mM). The solution was then injected in a dialysis cassette, which was subsequently placed in a large container with 4 l of 10 mM HEPES pH 7.4, 100 mM KCl buffer (190 mOsm). The container was placed in a cold room and the buffer stirred overnight. This dialysis ensured optimum removal of OG from the proteo-liposomes, which were subsequently transferred in a 500 µl microcentrifuge tube.
 
 Guvs were produced using the osmotic shock method (Motta et al., 2015). In brief, a 2 µl drop of the proteo-liposomes was deposited on a MatTek dish (MatTek Corporation) and left to dry at room temperature. It was then rehydrated with a 2 µl water drop. The osmotic difference between the inside of the proteo-liposomes and the water drop immediately popped them and they resealed in a larger structure. The drying/rehydration cycle was repeated three more times to produce larger and more unilamellar proteo-GUVs (hereinafter called GUVs). The water drop was 6 µl for the third and fourth rehydration. After the last rehydration, water drops were deposited at the edge of the dish that was subsequently closed. This prevented any further evaporation while the GUVs are left to grow for an additional 30 min (or more). Afterwards, the water drops were removed and the MatTek dish was filled with the dialysis buffer diluted 2.5 times to slightly deflate the proteo-GUVs.
 
-## Quantification of protein to lipid ratio in the GUVs
+### Quantification of protein to lipid ratio in the GUVs
 
 We plotted fluorescence intensity along a straight line across the GUV and measured the intensities of the two peaks corresponding to the membrane. We compared the intensities of lipids and GFP from IM-TM and TM in the GUVs under the same conditions of microscope objective, laser power and gain. Measurements were carried out on eight different GUVs from four independent experiments for IM-TM and three different GUVs from two independent experiments for TM. The protein intensity can provide a very approximate value of the concentration using a separate calibration with Atto488 dyes. We measured that Atto488 dyes are twice as bright as Alexa488 (Figure 5A) which itself is twice as bright as EGFP (quantum yield and brightness). In addition, increasing the gain of image by 100 leads to approximately a twofold increase in intensity. We made GUVs with various concentrations of Atto488 (from 0.05% to 2% lipids) and observed them with 5% laser power and a gain of 500. The result is a linear variation with Atto488 concentration (Figure 5B).
 
@@ -148,11 +172,15 @@ We plotted fluorescence intensity along a straight line across the GUV and measu
 
 Using these calibration data and assuming a linear increase of the intensity with laser power, the value of 92 for the intensity of IM-TM with 20% laser power and 1250 gain leads to one protein per 18,000 lipids. It corresponds to an average of one protein per 6300 nm², that is a typical inter protein distance of 80 nm. With our experimental conditions and parameters, this density corresponds to one protein per pixel at the pole of the GUVs, and 10 proteins per pixel at the equator of the GUV (because of the vertical projection). This rough estimate seems realistic with regard to the low intensity observed in our GUV experiments (see for instance the FRAP experiments described in the Figure 2—figure supplement 1).
 
-Calculation of the protein density:(92∗2∗2∗5/(20∗)2.5(1250−500100)10768)=0.00056%
+Calculation of the protein density:
+
+$$
+(\frac{92∗2∗2∗5/(20∗)^{2.5}(\frac{1250−500}{100})}{10768})=0.00056%
+$$
 
 Note that we needed to go through Atto488 intermediate because this is a bright dye, commercially available on lipids.
 
-## Tube formation, bleaching and recovery
+### Tube formation, bleaching and recovery
 
 MatTek dishes were modified to have two diametrically opposed openings in the wall so that quasi-horizontal micropipettes can move downward and reach the bottom coverslip. After GUV formation, the MatTek dish was placed on a Leica SP8 confocal microscope and ~10,000 streptavidin coated silica beads (2 µm, Bangs Laboratories) were added. A first micropipette (inner diameter ~4 µm) was used to grab a proteo-GUV. A second one (inner diameter 1–2 µm) grabbed a bead. The aspiration in both micropipettes was controlled by a standard hydrostatic pressure system (relative accuracy: 1 Pa, absolute accuracy: 5 Pa, aspiration range: 5 Pa to 3,000 Pa). The GUV were then placed facing each other ~50 µm above the coverslip. The aspiration in the GUV was reduced to 5 Pa to lower the surface tension. Then, the bead was brought in contact with the GUV for a few seconds to ensure the formation of several streptavidin-biotin bonds. Upon separation of the bead from the GUV, a ~ 100 µm long tube of membrane was pulled, setting two connecting regions of very different curvature: the high curvature tube and the flat GUV membrane. The aspiration in the GUV micropipette was increased to the desired value and the system was left alone to relax for a couple of minutes. We varied the aspiration between 5 Pa and 100 Pa, which in our geometry corresponds to tube diameters between 200 nm and 50 nm. We did not observe any dependency of the fluorescence recovery on the aspiration; hence this is not discussed in the results section.
 
@@ -168,22 +196,26 @@ Being more quantitative requires a better modeling of the geometry. Namely, the 
 
 **Figure 6.:** (A) Schematic of the system. (B) Schematic of system under boundary conditions at time t = 0. (C) Kinetics of recovery.
 
-The 1D diffusion equation, ∂ρ∂t-D∂2ρ∂x2ρ=0, can then be resolved numerically. A plot of the position of the mid recovery x1/2 is a good representation of the kinetics (Figure 6C).
+The 1D diffusion equation, $\frac{\partialρ}{\partialt}-D\frac{\partial^{2}ρ}{\partialx^{2}}ρ=0$, can then be resolved numerically. A plot of the position of the mid recovery x1/2 is a good representation of the kinetics (Figure 6C).
 
 x1/2 reaches the end of the tube at t1/2 ~ 0.38 ltube²/D. The typical diffusion coefficient of a lipid in free membrane is ~5 µm²/s for which t1/2 is slightly more than 1 min. Even if the diffusion coefficient of the lipid is reduced five times (unlikely), 6 min would be sufficient to be close to the recovery plateau. Hence, the choice of 6 min is a good compromise between an optimum recovery and a minimal experimental risk (drift of the pipettes, rupture of the GUV, etc.).
 
 FRAP-based quantification of protein diffusion in the GUV membrane:
 
-Experiments were carried out using the protocol we previously described (Pincet et al., 2016). In brief, a GUV is micromanipulated and positioned slightly above the coverslip so that lower pole is positioned in the focal plane of the confocal microscope. A disk-shaped region of interest (ROI) with a known diameter d is chosen at the pole of the GUV. A couple of ‘prebleach’ images are acquired with the laser power adjusted at the minimum value providing an above-noise fluorescence signal from the ROI with minimal intrinsic bleaching. The EGFP signal from the GUV is dim, attesting the low protein concentration. This forced us to use high laser power, 20% of the maximum value and maximum gain. One image with 100% power was sufficient to completely bleach the fluorescence from the ROI. Then, recovery was recorded, typically at two images per second, at 20% of the laser power. The recovery phase was monitored over ~15–20 s. The raw data are very noisy (blue data points in Figure 2—figure supplement 1) but still display significant intrinsic bleaching, showing the difficulty to adjust the laser power and obtain quantifiable measurements. To resolve this issue, we performed the rolling average over three successive images (orange data points in Figure 2—figure supplement 1). The data were normalized to one before bleach and 0 right after bleach. The resulting curve was fitted using the standard recovery behavior for diffusive species:It=I∞ e-2τt+J02τt+J12τt
+Experiments were carried out using the protocol we previously described (Pincet et al., 2016). In brief, a GUV is micromanipulated and positioned slightly above the coverslip so that lower pole is positioned in the focal plane of the confocal microscope. A disk-shaped region of interest (ROI) with a known diameter d is chosen at the pole of the GUV. A couple of ‘prebleach’ images are acquired with the laser power adjusted at the minimum value providing an above-noise fluorescence signal from the ROI with minimal intrinsic bleaching. The EGFP signal from the GUV is dim, attesting the low protein concentration. This forced us to use high laser power, 20% of the maximum value and maximum gain. One image with 100% power was sufficient to completely bleach the fluorescence from the ROI. Then, recovery was recorded, typically at two images per second, at 20% of the laser power. The recovery phase was monitored over ~15–20 s. The raw data are very noisy (blue data points in Figure 2—figure supplement 1) but still display significant intrinsic bleaching, showing the difficulty to adjust the laser power and obtain quantifiable measurements. To resolve this issue, we performed the rolling average over three successive images (orange data points in Figure 2—figure supplement 1). The data were normalized to one before bleach and 0 right after bleach. The resulting curve was fitted using the standard recovery behavior for diffusive species:
+
+$$
+It=I_{∞}e^{-\frac{2\tau}{t}}+J_{0}\frac{2\tau}{t}+J_{1}\frac{2\tau}{t}
+$$
 
 Where J0 and J1 are the modified Bessel functions of order 0 and 1, I∞ is the fluorescence at t=∞ and τ is the characteristic diffusion time. The details of the calculation leading to Equation (1) are provided by Soumpasis, 1983. Note that I∞ is expected to be slightly below one when there is no intrinsic bleaching because a few percent of the total GUV area are bleached. Because of the spontaneous bleaching, the fit was performed over the first ~5 s of the recovery phase. The diffusion coefficient is equal to d²/(16τ).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Cells grown on coverslips were fixed with cold methanol for 8 min at −20°C or 4% formaldehyde (Ted Pella, Inc) for 15 min at room temperature. Cells fixed with formaldehyde were permeabilised with 0.1% Triton in PBS and then incubated with blocking reagent (Roche) or 2–5% BSA for 30 min at room temperature. Primary antibodies were diluted in blocking reagent or 2% BSA and incubated overnight at 4°C or at 37°C for 1 hr. Secondary antibodies conjugated with Alexa Fluor 594, 488, or 647 were diluted in blocking reagent and incubated for 1 hr at room temperature.
 
 Confocal images were taken with a TCS SP5 (63×, 1.4–0.6 NA, oil, HCX PL APO), TCS SP8 (63×, 1.4 NA, oil, HC PL APO CS2), all from Leica Microsystems, using Leica acquisition software. Lasers and spectral detection bands were chosen for the optimal imaging of Alexa Fluor 488, 594, and 647 signals. Two-channel colocalization analysis was performed using ImageJ (National Institutes of Health).
 
-## STED
+### STED
 
 STED images were taken on a TCS SP8 STED 3 × microscope (Leica Microsystems) on a DMI8 stand using a 100 × 1.4 NA oil HCS2 PL APO objective and a pulsed supercontinuum light source (white light laser). Images were acquired and deconvolved exactly as described before (Raote et al., 2017; Raote et al., 2018). In all images acquired and presented here, a goat-anti mouse secondary antibody, coupled to Abberior 635 was used to visualise anti-HA antibody localisation, while secondary antibody coupled to Alexa 594 was used to visualise the antibody targeted against the lumenal epitope of TANGO1. Axial resolution were found to be ∼60 nm for the Abberior 635 channel and 50 nm for the Alexa Fluor 594 channel as described before (Raote et al., 2017).

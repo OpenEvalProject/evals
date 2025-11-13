@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.28699.001 Scientists are under increasing pressure to do "novel" research. Here I explore whether there are risks to overemphasizing novelty when deciding what constitutes good science. I review studies from the philosophy of science to help understand how important an explicit emphasis on novelty might be for scientific progress. I also review studies from the sociology of science to anticipate how emphasizing novelty might impact the structure and function of the scientific community. I conclude that placing too much value on novelty could have counterproductive effects on both the rate of progress in science and the organization of the scientific community. I finish by recommending that our current emphasis on novelty be replaced by a renewed emphasis on predictive power as a characteristic of good science. DOI: http://dx.doi.org/10.7554/eLife.28699.001
+Scientists are under increasing pressure to do "novel" research. Here I explore whether there are risks to overemphasizing novelty when deciding what constitutes good science. I review studies from the philosophy of science to help understand how important an explicit emphasis on novelty might be for scientific progress. I also review studies from the sociology of science to anticipate how emphasizing novelty might impact the structure and function of the scientific community. I conclude that placing too much value on novelty could have counterproductive effects on both the rate of progress in science and the organization of the scientific community. I finish by recommending that our current emphasis on novelty be replaced by a renewed emphasis on predictive power as a characteristic of good science.
 
 ## Introduction
 

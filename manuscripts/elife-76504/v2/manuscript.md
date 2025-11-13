@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03c4mmv16 Department of Chemistry and Biomolecular Sciences, University of Ottawa Ottawa Canada
-2. https://ror.org/03c4mmv16 Centre for Chemical and Synthetic Biology, University of Ottawa Ottawa Canada
+1. Department of Chemistry and Biomolecular Sciences, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
+2. Centre for Chemical and Synthetic Biology, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
 
 † Corresponding author
 
@@ -36,17 +36,235 @@ Here, using single-channel measurements, we demonstrate that βAnc readily forms
 
 Our first inkling that βAnc may be able to form homomeric channels came from heterogeneity in single-channel recordings acquired after alterations to our original heterologous expression/transfection protocol. Typical cotransfection of cDNAs encoding human α-, δ-, and ε-subunits with a cDNA encoding βAnc leads to robust cell surface expression of βAnc-containing hybrid AChRs (Prinston et al., 2017). In an attempt to lower overall AChR expression with the purpose of facilitating single-channel analysis, we reduced the total amount of subunit cDNA in our transfections (~sixfold), while maintaining the same 2:1:1:1 subunit cDNA ratio (by weight; α:βAnc:δ:ε). Reducing the amount of cDNA lowered overall AChR expression as expected, but also led to heterogeneity in our patches (Figure 2A), which was not present in original single-channel recordings of βAnc-containing AChRs (Prinston et al., 2017). Instead of a single population of channels with a uniform amplitude of ~10 pA, and a burst behaviour indicative of βAnc-containing AChRs (Figure 2A; left inset), we also observed a second class of channels with a different kinetic signature, and an increased amplitude (Figure 2A; right inset). A similar trend was not observed when cDNA encoding the wild-type human β-subunit was cotransfected instead of βAnc (Figure 2—figure supplement 1), indicating that βAnc was the source of the heterogeneity. Consistent with this, lowering the proportion of βAnc cDNA in the transfection mixture reduced the fraction of high amplitude channels (Figure 2B and D), while transfecting exclusively with βAnc cDNA resulted in patches where all channel openings had a uniformly high amplitude (Figure 2C and D). This demonstrated that when transfected alone, βAnc forms functional ion channels. The present work stems from this unexpected observation and describes characterisation of these previously unobserved channels.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative continuous recording from a cell-attached patch where cells were transfected with cDNAs encoding human muscle-type α-, δ-, and ε-subunits, and an additional cDNA encoding βAnc at a cDNA ratio of 2:1:1:1 (α:βAnc:δ:ε). (B) Same as in (A), but where cells were transfected with an altered 2:0.25:1:1 cDNA ratio, making the βAnc subunit limiting, or (C) where cells were transfected with only the cDNA encoding βAnc. In all cases openings are upward deflections, in the presence of 30 µM acetylcholine, and with an applied voltage of –120 mV. Continuous recordings are digitally filtered to 5 kHz, and the scale bar (2 s, 10 pA) in (A) applies to (B) and (C). Insets are digitally filtered to 10 kHz, with boxes representing scale bars (300 ms, 25 pA). (D) Event-based amplitude histograms for single-channel bursts from each of the patches shown in (A), (B), and (C). In each case, the height of the bins was normalised to the total number of bursts in each patch (A: 40; B: 50; C: 41), with the scale bar representing the indicated fraction (0.20) of the total bursts.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative continuous recording from a cell-attached patch where cells were transfected with cDNAs encoding human muscle-type α-, β-, δ-, and ε-subunits at a cDNA ratio of 2:1:1:1 (α:β:δ:ε). Activity was recorded in the presence of 30 µM acetylcholine, with an applied voltage of –120 mV. Continuous trace (top) was digitally filtered to 5 kHz (scale bar = 2 s, 10 pA), while inset burst (boxed; bottom) was filtered to 10 kHz where box itself represents 300 ms and 25 pA. Openings are shown as upward deflections. (B) Event-based amplitude histogram for single-channel bursts for the patch shown in panel A. The height of the bins was normalised to the total number of bursts in the patch (29 total), with the scale bar representing 0.20 of the total number of bursts.
+
 The traces in Figure 2 were recorded in the presence of agonist (30 μM acetylcholine). In the human adult muscle-type AChR, the agonist-binding sites are located at the α–δ and α–ε interfaces, and the β-subunit is the only subunit that does not participate directly in agonist binding (Figure 1; Rahman et al., 2022; Rahman et al., 2020; Zarkadas et al., 2022). We were therefore surprised to see single-channel activity in patches from cells transfected exclusively with βAnc, as channels formed from a muscle-type β-subunit alone would not be expected to have intact agonist-binding sites. To determine if the activity of βAnc-alone channels was dependent upon acetylcholine, we recorded single-channel activity in the absence of acetylcholine (Figure 3). When no acetylcholine was present, patches from cells that were transfected exclusively with βAnc cDNA still displayed single-channel activity, indicating that βAnc-alone channels open spontaneously under these conditions (Figure 3A). Furthermore, spontaneous activity occurred as bursts of closely spaced openings, separated by brief closings (Figure 3B; Colquhoun and Hawkes, 1982). The briefest of these intervening closings were reminiscent of classic ‘nachschlag shuttings’ (Figure 3B, ‘i’ in inset), observed in early patch clamp recordings from frog end-plate nicotinic receptors, and originally thought to relate to agonist efficacy (Colquhoun and Sakmann, 1981). Thus, despite being homomeric and lacking agonist-binding sites, βAnc-alone channels display single-channel hallmarks of the muscle-type AChR.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative continuous recording of a cell-attached patch from cells transfected with a single cDNA encoding βAnc. Recording was made in the absence of acetylcholine and at an applied voltage of –120 mV. Data was digitally filtered to 5 kHz (scale bar = 2 s, 10 pA). (B) Single burst of openings from a homomeric βAnc channel, shown digitally filtered to 10 kHz (scale bar = 25 ms, 10 pA). Inset depicts (i) brief and (ii) long closings within bursts, where the former (i) are reminiscent of ‘nachschlag shuttings’ (scale bar = 1 ms, 5 pA). (C) Open and closed dwell duration histograms for the representative patch depicted in (B). Individual exponential components determined manually (dashed lines) and kinetic fits from MIL (solid lines) are overlaid. Global kinetic fitting was performed on three individual recordings, from two separate transfections. (D) The single-channel data fit a three-state scheme (Scheme 1), where C, C′, and O′ correspond to closed, closed-primed, and open-primed states. Rate constants with units s–1 are shown above and below corresponding arrow, with error estimates provided in Table 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Each scheme is shown on the left with the same open and closed duration histograms shown on the right. In each case, the resulting fit of the same data using the various schemes is overlaid (solid black lines). (A) The three-state linear scheme described in the main text is reproduced here for comparison with (B) an alternate three-state linear scheme, as well as (C) the three-state cyclic scheme. (D) A two-state scheme with a single closed state and a single open state was also fit to validate the need for a second closed state.
 
 To gain insight into the spontaneous activity of βAnc-alone channels, we performed kinetic analysis of our single-channel data. First, we determined a critical closed duration (τcrit) to define bursts arising from a single ion channel. Then we determined the minimum number of components in our apparent open and closed dwell duration histograms by fitting each with a sum of exponentials. Open duration histograms were fit well by a single exponential component, while closed duration histograms required at least two components (Figure 3C). This suggested that a minimal scheme with a single open state and two closed states is necessary and sufficient to describe the spontaneous activity of βAnc-alone channels. Based on this, we then fit the sequence of single-channel dwells using the three possible kinetic schemes, two linear and one cyclic, comprising a single open state and two closed states (Figure 3D; Figure 3—figure supplement 1). As a control, we also fit a simplified two-state scheme, where a single open state was connected to a single closed state, which, based on the relatively poor fit of the closed durations, confirmed that inclusion of a second closed state was justified (Figure 3—figure supplement 1). Overlaying the resulting fits on top of duration histograms revealed that each of the possible three-state schemes fits the observed dwells equally well, thus discriminating between the possible kinetic schemes is not trivial (Figure 3—figure supplement 1). We settled upon the simple linear scheme, where βAnc-alone channels transition from a closed state, C, to an intermediate closed state, C′, before opening to O′. The form of this scheme, with an intermediate closed state that precedes channel opening, is guided by models of AChR activation that include a single ‘flipping’ or multiple ‘priming’ steps (Lape et al., 2008; Mukhtasimova et al., 2016; Mukhtasimova et al., 2009). Given that for βAnc-alone channels there is a single intermediate closed state that precedes channel opening, we refer to this state in our scheme as ‘flipped’ or ‘primed’.
 
 In the presence of acetylcholine, the single-channel current traces appeared different (Figure 4A). As the concentration of acetylcholine increased from 10 to 100 μM, there was a progressive decrease in the duration of openings, as well as a reciprocal increase in the number of short-lived closings within each burst (Figure 4A). This can be observed as a leftward shift in the open duration histograms as the concentration of acetylcholine is increased. This single-channel behaviour is a hallmark of open-channel block, a ubiquitous property of AChR agonists, including acetylcholine (Lape et al., 2009; Mukhtasimova et al., 2016; Ogden and Colquhoun, 1985; Sine and Steinbach, 1984). Consistent with this blockage profile, the same trend, albeit with longer-lived blocking events, was observed with the well-characterized AChR open-channel blocker, 2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222) (Figure 4B; Charnet et al., 1990; Leonard et al., 1988; Pascual and Karlin, 1998).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig4-v2.jpg)
+
+**Figure 4.:** Representative single-channel activity of βAnc homomers in the presence of increasing concentrations of (A) acetylcholine and (B) QX-222. Openings are upward deflections. Recordings were obtained with an applied voltage of –120 mV. Data were filtered to 10 kHz (scale bars = 25 ms, 10 pA; applies to (A) and (B)). The sequence of dwells from each dataset, encompassing the full concentration range of the blocker, was globally fit to the same three-state scheme used for βAnc, where an additional fourth state corresponding to the open/blocked channel was added (Scheme 2). Global kinetic fits were performed on three individual recordings for each concentration of blocker, from at least two separate transfections, corresponding to 15 total patches for each global fit. Note that the recordings in the absence of blocker are the same for each dataset. Rate constants are overlaid on the scheme below each dataset, with error estimates presented in Table 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative bursts from single-channel recordings of the wild-type AChR over a full acetylcholine concentration range (left). Recordings were acquired in the cell-attached patch configuration, with an applied voltage of –120 mV. Openings are upward deflections, bursts are filtered to 10 kHz, and the scale bar represents 25 ms and 10 pA. Corresponding open and closed duration histograms are presented for each concentration (right), with overlaid fits (solid line) from global fitting of the entire dataset. (B) Representative openings interrupted by ‘nachschlag shuttings’ in the presence of 3 µM acetylcholine (see asterisk in ‘A’), where ‘C’ represents the closed, baseline current, and ‘O’ represents the current through a single open conducting AChR. Scale bar in (B) represents 1 ms and 5 pA. (C) Modified del Castillo and Katz kinetic scheme for the muscle-type AChR, containing two agonist binding steps (Colquhoun and Sakmann, 1985), and a single blocked state flanking the doubly-liganded open state (Scheme 3). Estimates of the rate constants from global fitting of the entire dataset are shown, with error estimates presented in Table 2. Global kinetic fits were performed on three individual recordings for each concentration of acetylcholine, from at least two separate transfections, corresponding to 24 total patches for the entire global fit.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Single-channel recordings were obtained with increasing concentrations of QX-222, while the concentration of agonist (acetylcholine [ACh]) was kept constant at either (A) 10 µM or (B) 30 µM. Single-channel recordings were obtained in the cell-attached configuration, with an applied voltage of –120 mV, where openings are upward deflections, and traces filtered to 10 kHz. Corresponding open and closed duration histograms are presented for all QX-222 concentrations with overlaid fits (solid line) from global fitting of the entire dataset. Kinetic scheme is the same presented in Figure 4—figure supplement 1, but with an additional open/blocked state (corresponding to QX-222 block) flanking the doubly-liganded open state (Scheme 4). All rates, except those describing QX-222 block, were fixed to that at the indicated acetylcholine concentration as estimated from original QX-222-free fits in Figure 4—figure supplement 1. For both concentrations of acetylcholine, estimates of the rate constants from global fitting of each dataset are shown, with error estimates presented in Table 2. Global kinetic fits were performed on three individual recordings for each concentration of QX-222 at both concentrations of ACh, and from at least two separate transfections, corresponding to 15 total patches for each global fit.
+
 The kinetics of open-channel block are determined by interactions between the blocking molecule and residues that line the channel pore in the open state, and therefore provide indirect structural insight into the open state. To compare the open state structures of βAnc-alone homomers with wild-type AChRs, we determined the kinetics of acetylcholine and QX-222 block for both types of channels (Figure 4; Figure 4—figure supplements 1 and 2). To fit our βAnc-alone single-channel data recorded in the presence of a blocker, we introduced an additional open, but blocked (i.e. non-conducting) state connected to our open state, where the forward rate of block was dependent upon the concentration of the blocking molecule (Figure 4A and B; Neher and Steinbach, 1978). We then globally fit each of our βAnc-alone datasets encompassing between 0 and 100 μM acetylcholine or QX-222. Initially, we restricted the rates of the core (C-C′-O′) scheme to those inferred in the absence of blocker; however, allowing all parameters to be estimated, led to negligible changes in the inferred rates of block. For βAnc-alone and wild-type channels, the rates of acetylcholine and QX-222 block were comparable (see Table 1 and Table 2). Of note, while the forward rate of QX-222 block (k+B) was almost the same for both types of channels, the reverse rate of QX-222 unblocking (k–B) was nearly twofold faster for βAnc-alone channels, indicating that the open pore of βAnc-alone channels has a slightly reduced affinity for QX-222. Regardless of this nuance, the similarity in the profiles of acetylcholine and QX-222 block suggests that the structure of the open pore in the two types of channels is similar.
+
+**Table 1.**
+ Single-channel kinetics of spontaneously opening βAnc homomers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Homomer</th>
+      <th>k+1′</th>
+      <th>k-1′</th>
+      <th>K′</th>
+      <th>β1</th>
+      <th>α1</th>
+      <th>Θ1</th>
+      <th>k+B</th>
+      <th>k-B</th>
+      <th>KB(μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No agonist(3 patches)</td>
+      <td>3900(110)</td>
+      <td>7600(450)</td>
+      <td>0.51</td>
+      <td>10,000(300)</td>
+      <td>310(3)</td>
+      <td>32.26</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Acetylcholine(15 patches)</td>
+      <td>3500(85)</td>
+      <td>5400(265)</td>
+      <td>0.65</td>
+      <td>8000(200)</td>
+      <td>330(3)</td>
+      <td>24.24</td>
+      <td>170*(1.8)</td>
+      <td>62,000(450)</td>
+      <td>364.71</td>
+    </tr>
+    <tr>
+      <td>QX-222(15 patches)</td>
+      <td>4000(110)</td>
+      <td>8000(440)</td>
+      <td>0.50</td>
+      <td>10,500(300)</td>
+      <td>320(3)</td>
+      <td>32.81</td>
+      <td>95*(0.5)</td>
+      <td>1400(7)</td>
+      <td>14.74</td>
+    </tr>
+    <tr>
+      <td>Acetylcholine (Constrained)(15 patches)</td>
+      <td>3900</td>
+      <td>7600</td>
+      <td>0.51</td>
+      <td>10,000</td>
+      <td>310</td>
+      <td>32.26</td>
+      <td>170*(1.5)</td>
+      <td>60,800(410)</td>
+      <td>357.65</td>
+    </tr>
+    <tr>
+      <td>QX-222 (Constrained)(15 patches)</td>
+      <td>3900</td>
+      <td>7600</td>
+      <td>0.51</td>
+      <td>10,000</td>
+      <td>310</td>
+      <td>32.26</td>
+      <td>95*(0.5)</td>
+      <td>1400(6.5)</td>
+      <td>14.74</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Rate constants were estimated from fitting Scheme 1 or Scheme 2 presented in Figures 3 and 4, respectively. Data were globally fit (number of patches indicated in each case) over a range of acetylcholine/2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222) concentrations, with rate constants and associated errors (parentheses) estimated by MIL (see Materials and methods). Priming (K′), gating (θ1), and blocking (KB) equilibrium constants represent k+1′/k-1′, β1/α1, and k-B/k+B, respectively. Association rate constants (*); (k+B) are presented in units of μM–1·s–1, while remaining rate constants are presented in units of s–1. Constrained rates (presented in italicized) were held constant at the values determined from the agonist-free dataset, while the blocking rate constants were estimated._
+
+**Table 2.**
+ Kinetics of acetylcholine (ACh) activation and 2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222) block of human adult muscle-type acetylcholine receptors (AChRs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>WT</th>
+      <th>k+1</th>
+      <th>k-1</th>
+      <th>K1(μM)</th>
+      <th>k+2</th>
+      <th>k-2</th>
+      <th>K2(μM)</th>
+      <th>β1</th>
+      <th>α1</th>
+      <th>Θ1</th>
+      <th>β2</th>
+      <th>α2</th>
+      <th>Θ2</th>
+      <th>k+B (ACh)</th>
+      <th>k-B(ACh)</th>
+      <th>KB(ACh)(μM)</th>
+      <th>k+B(QX-222)</th>
+      <th>k-B(QX-222)</th>
+      <th>KB(QX-222)(μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACh(24 pat.)</td>
+      <td>650*(35)</td>
+      <td>14,400(1000)</td>
+      <td>22.12</td>
+      <td>325*(20)</td>
+      <td>26,500(400)</td>
+      <td>81.54</td>
+      <td>33(2.5)</td>
+      <td>8750(650)</td>
+      <td>3.77 E-03</td>
+      <td>14,000(450)</td>
+      <td>1000(10)</td>
+      <td>14</td>
+      <td>215*(3)</td>
+      <td>110,000(800)</td>
+      <td>511.63</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>QX-222 (10μM ACh)(15 pat.)</td>
+      <td>6500</td>
+      <td>14,400</td>
+      <td>2.21</td>
+      <td>3250</td>
+      <td>26,500</td>
+      <td>8.15</td>
+      <td>33</td>
+      <td>8750</td>
+      <td>3.77 E-03</td>
+      <td>14,000</td>
+      <td>1000</td>
+      <td>14</td>
+      <td>2150</td>
+      <td>110,000</td>
+      <td>51.16</td>
+      <td>100*(0.5)</td>
+      <td>845(5.5)</td>
+      <td>8.45</td>
+    </tr>
+    <tr>
+      <td>QX-222 (30μM ACh)(15 pat.)</td>
+      <td>19,500</td>
+      <td>14,400</td>
+      <td>0.74</td>
+      <td>9750</td>
+      <td>26,500</td>
+      <td>2.72</td>
+      <td>33</td>
+      <td>8750</td>
+      <td>3.77 E-03</td>
+      <td>14,000</td>
+      <td>1000</td>
+      <td>14</td>
+      <td>6450</td>
+      <td>110,000</td>
+      <td>17.05</td>
+      <td>110*(0.5)</td>
+      <td>845(4.5)</td>
+      <td>7.68</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Rate constants were estimated from fitting Scheme 3 or Scheme 4 presented in Figure 4—figure supplements 1 and 2, respectively. Where ‘A’ represents agonist, and ‘R’, ‘R*’, and ‘R*B’ represent the closed, open, and open-blocked states of the human adult muscle-type acetylcholine receptor (AChR). Data were globally fit (number of patches indicated in each case) over a range of 2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222) concentrations with fixed concentration of acetylcholine (ACh: 10 μM or 30 μM), with rate constants and associated errors (parentheses) estimated with MIL (see Materials and methods). Apparent binding (Kn), apparent gating (θn), and blocking (KB) equilibrium constants represent k-n/k+n, βn/αn, and k-B/k+B, respectively. Association rate constants (k+1, k+2, and k+B) are presented in units of μM–1·s–1, while remaining rate constants are presented in units of s–1. Constrained rates (italicized) were held constant to the rates estimated from fitting of wild-type (WT) in the absence of QX-222, allowing the QX-222 blocking rates to be estimated independently._
 
 Given that βAnc-alone channels are expressed in the absence of other AChR subunits, a reasonable hypothesis is that they are homopentamers. To determine the subunit stoichiometry of βAnc-alone channels, we employed a single-channel electrical fingerprinting strategy, where mutations altering unitary conductance were used to count the number of individual βAnc subunits in βAnc-alone channels. A similar strategy has been employed with tetrameric potassium channels (Niu and Magleby, 2002), and other pLGICs (Andersen et al., 2011), including both the homopentameric α7 AChR (Andersen et al., 2013; daCosta et al., 2015; daCosta and Sine, 2013) and the heteropentameric muscle-type AChR (Emlaw et al., 2021). The approach relies on identifying high-conductance (HC) and low-conductance (LC) variants of the βAnc subunit, and then co-expressing them to reveal a number of amplitude classes. Openings in each amplitude class originate from channels incorporating the same ratio of HC to LC subunits, and based on the total number of amplitude classes, the number of βAnc subunits within βAnc-alone channels can be inferred.
 
 When βAnc is expressed alone, the resulting channels exhibit a single, uniform amplitude, distributed around a mean of ~16 pA (Figure 5A and D), making the wild-type βAnc subunit an ideal HC subunit for electrical fingerprinting. To identify a LC variant of βAnc, we took advantage of a structural feature inherent to eukaryotic pLGICs: as conducting ions exit the channel’s transmembrane pore, they are obliged to pass through one of five portals in the cytoplasmic domain (Rahman et al., 2020; Unwin, 2005). Framed by charged or polar residues from each subunit, these portals influence single-channel conductance. Mimicking the homologous 5-HT3A receptor, which has an unusually low single-channel conductance (Hales et al., 2006; Kelley et al., 2003; Peters et al., 2004), we substituted three arginine residues (E420R, D424R, and E428R) into this region of βAnc. When βAnc harbouring three arginines in this region was transfected by itself, the resulting channels exhibited a reduced single-channel amplitude centred around~1–2pA (Figure 5B and D). With its markedly reduced amplitude, βAnc harbouring three arginine residues is a suitable LC subunit for electrical fingerprinting.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig5-v2.jpg)
+
+**Figure 5.:** Representative single-channel activity from cells transfected with (A) cDNA encoding the wild-type high-conductance (HC) βAnc subunit, or (B) a mutant low-conductance (LC) βAnc variant harbouring substitutions that reduce single-channel amplitude. (C) Cotransfection of cDNAs encoding HC and LC βAnc variants led to patches (two shown) with heterogeneous amplitudes. (D) The amplitudes segregate into six well-defined amplitude classes (total of 495 bursts combined from the two patches in (C)), where the highest and lowest amplitude classes match that of the all-HC (1569 bursts) and all-LC classes (883 bursts), respectively. Plot of the mean amplitude of each class as a function of the presumed number of incorporated HC subunits (error bars = standard deviations of the mean but are smaller than the points themselves). Recordings were obtained with an applied voltage of –120 mV, and traces were digitally filtered to 1 kHz to facilitate amplitude detection (scale bar = 50 ms, 5 pA; applies to (A), (B), and (C)).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In each case, cotransfection of HC and LC βAnc subunits led to a distribution of amplitudes that segregated into distinct amplitude classes, where the proportion of events in each class was biased by the relative proportion of each type of cDNA transfected. These two patches with overlapping amplitude classes were combined to produce the plot in Figure 5D.
 
 When cDNAs encoding HC and LC variants of βAnc were transfected together, a variety of single-channel amplitudes were observed in each patch (Figure 5C). The relative proportion of channels with high versus low amplitude could, to some degree, be tuned by the ratio of HC to LC βAnc cDNA used for transfection (Figure 5—figure supplement 1). Constructing event-based amplitude histograms, and pooling amplitudes from more than one recording, revealed that the amplitudes segregated into as many as six amplitude classes, with the highest and lowest amplitude classes matching that of the HC and LC forms of βAnc-alone channels. The difference in amplitude between successive classes was somewhat regular, demonstrating five approximately equal contributions to single-channel conductance (Figure 5D), consistent with the hypothesis that βAnc-alone channels are homopentamers.
 
@@ -54,9 +272,58 @@ As noted previously, reconstruction of βAnc was based upon a molecular phylogen
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76504/elife-76504-fig6-v2.jpg)
 
-**Figure 6.:** AncS).(A) Representative continuous recording of a cell-attached patch from cells transfected with a single cDNA encoding βAncS. Recording was made in the absence of acetylcholine, at an applied voltage of –120 mV, where spontaneous openings are upward deflections. Data was digitally filtered to 5 kHz (scale bar = 2 s, 10 pA). (B) Bursts from homomeric βAncS channels, each exhibiting one of three different types (i, ii, iii) of openings (scale bar = 25 ms, 10 pA). The boxed burst at the bottom is an example of a single burst that contains more than one type of opening (ii/i). (C) Open and closed dwell duration histograms for the representative patch depicted in (B). Individual exponential components determined manually (dashed lines) and kinetic fits from MIL (solid lines) are overlaid. Global kinetic fitting was performed on three individual recordings, from two separate transfections. The exponential components (i, ii, iii) in the open duration histogram correspond to the different types of openings observed within the bursts in panel (B). (D) The three-state scheme in Figure 3 (Scheme 1) was expanded to include additional priming steps (‘singly’, ‘doubly’, and ‘triply’ primed), each with their own connected open state (Scheme 5). Rate constants are shown, with error estimates provided in Table 3.Figure 6—source data 1.Figure 6.Detected single-channel event durations of spontaneously opening βAncS homomers. Compressed file includes three TAC 4.3.3 event files (*.evt format) of the single-channel detections for the three recordings used in the presented kinetic analysis, as well as the associated R scripts (*.txt format) for defining and sorting bursts.Figure 6—source data 2.Figure 6.
+**Figure 6.:** (A) Representative continuous recording of a cell-attached patch from cells transfected with a single cDNA encoding βAncS. Recording was made in the absence of acetylcholine, at an applied voltage of –120 mV, where spontaneous openings are upward deflections. Data was digitally filtered to 5 kHz (scale bar = 2 s, 10 pA). (B) Bursts from homomeric βAncS channels, each exhibiting one of three different types (i, ii, iii) of openings (scale bar = 25 ms, 10 pA). The boxed burst at the bottom is an example of a single burst that contains more than one type of opening (ii/i). (C) Open and closed dwell duration histograms for the representative patch depicted in (B). Individual exponential components determined manually (dashed lines) and kinetic fits from MIL (solid lines) are overlaid. Global kinetic fitting was performed on three individual recordings, from two separate transfections. The exponential components (i, ii, iii) in the open duration histogram correspond to the different types of openings observed within the bursts in panel (B). (D) The three-state scheme in Figure 3 (Scheme 1) was expanded to include additional priming steps (‘singly’, ‘doubly’, and ‘triply’ primed), each with their own connected open state (Scheme 5). Rate constants are shown, with error estimates provided in Table 3.
 
 While βAncS forms homomers that open spontaneously, inspection of the βAncS single-channel activity revealed additional complexity not seen with βAnc. For βAncS, single-channel bursts were heterogeneous, displaying at least three distinct kinetic behaviours (Figure 6B). In some cases, the kinetic behaviour changed within a burst, demonstrating that the different kinetics were possible within the same channel (Figure 6B; boxed). This heterogeneity was also reflected in apparent open and closed duration histograms, with each displaying a minimum of three exponential components (Figure 6C). The increased number of exponential components indicated additional open and closed states relative to βAnc, and thus that the three-state scheme used to fit βAnc was insufficient to describe the spontaneous activity of βAncS. To account for the additional states, we expanded our original scheme to include two additional ‘priming’ steps, where openings could occur from one of three primed states (Figure 6D). This scheme, with multiple priming steps, builds directly upon the one used to fit muscle-type AChRs that had been engineered to open spontaneously (Mukhtasimova et al., 2009). Given the heterogeneity of the βAncS single-channel activity, and the complexity of this scheme, we caution against over interpretation of the inferred rates. Nevertheless, we note that in accord with the muscle-type AChR, the equilibrium gating constants appear to increase (Table 3; compare Θ1, Θ2, and Θ3), and thus the open states become more and more favoured, for each successive priming step. In any case, the fits suggest that a scheme of this form, with multiple stages of priming, is adequate to describe the complex spontaneous single-channel activity of βAncS homomers.
+
+**Table 3.**
+ Single-channel kinetics of spontaneously opening βAncS homomers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>k+1′</th>
+      <th>k-1′</th>
+      <th>β1</th>
+      <th>α1</th>
+      <th>Θ1</th>
+      <th>k+2′′</th>
+      <th>k-2′′</th>
+      <th>β2</th>
+      <th>α2</th>
+      <th>Θ2</th>
+      <th>k+3′′′</th>
+      <th>k-3′′′</th>
+      <th>β3</th>
+      <th>α3</th>
+      <th>Θ3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">βAncS(3 pat.)</td>
+      <td rowspan="2">2000(80)</td>
+      <td rowspan="2">2500(140)</td>
+      <td rowspan="2">11,500(450)</td>
+      <td rowspan="2">17,000(800)</td>
+      <td rowspan="2">0.676</td>
+      <td rowspan="2">13,650(400)</td>
+      <td rowspan="2">14,800(2000)</td>
+      <td rowspan="2">175,000(17,000)</td>
+      <td rowspan="2">6800(1400)</td>
+      <td rowspan="2">25.74</td>
+      <td rowspan="2">2000(300)</td>
+      <td rowspan="2">5000(450)</td>
+      <td rowspan="2">40,000(1550)</td>
+      <td rowspan="2">500(15)</td>
+      <td rowspan="2">80</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Rate constants were estimated from fitting Scheme 5 in Figure 6 (and below). Data were globally fit (three individual patches from two separate transfections) with rate constants and associated errors (parentheses) estimated within MIL (see Materials and methods). Gating equilibrium (θn) constants represent βn/αn. Rate constants are presented as s–1._
 
 ## Discussion
 
@@ -84,50 +351,192 @@ Modern mechanisms of AChR activation include intermediate closed states, which p
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BOSC 23</td>
+      <td>ATCC</td>
+      <td>CRL11270(discontinued)</td>
+      <td>Modified Homo sapiens embryonic kidney cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR α1</td>
+      <td>Provided by Steven M. Sine (Mayo Clinic)</td>
+      <td></td>
+      <td>Homo sapiens CHRNA1 (Accession: NM_000079.4)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR β1</td>
+      <td>Provided by Steven M. Sine (Mayo Clinic)</td>
+      <td></td>
+      <td>Homo sapiens CHRNB1(Accession: NM_000747.3)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR δ</td>
+      <td>Provided by Steven M. Sine (Mayo Clinic)</td>
+      <td></td>
+      <td>Homo sapiens CHRND(Accession: NM_000751.3)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR ε</td>
+      <td>Provided by Steven M. Sine (Mayo Clinic)</td>
+      <td></td>
+      <td>Homo sapiens CHRNE(Accession: NM_000080.4)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR βAnc</td>
+      <td>Custom gene synthesis</td>
+      <td></td>
+      <td>Construct originating from: PMID:28689969</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRBG4 – AChR βAncS</td>
+      <td>Custom gene synthesis</td>
+      <td></td>
+      <td>Construct originating from: PMID:33579823</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGreenLantern</td>
+      <td>Provided by Steven M. Sine (Mayo Clinic)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 DNA polymerase</td>
+      <td>New England Biolabs, inc</td>
+      <td>M0491</td>
+      <td>PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDM_AChRBAncLC_F</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>AGAACGCTGAAGAGAGACTGGCAGTACGTGGCCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDM_AChRBAncLC_R</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>ATAGTCCTCTCTTTTCTGCAGCTGCTCAGCGAT</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetylcholine Chloride</td>
+      <td>Sigma</td>
+      <td>A9101-10VL</td>
+      <td>Purity: 99%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-222</td>
+      <td>Tocris</td>
+      <td>1043/10</td>
+      <td>Purity:&gt;98%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TAC 4.3.3</td>
+      <td>Bruxton (https://www.bruxton.com/legacy.html)</td>
+      <td></td>
+      <td>Single-channel recording, detection, and analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td>Open-source statistical computing software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scbursts</td>
+      <td>https://cran.r-project.org/web/packages/scbursts/index.html</td>
+      <td></td>
+      <td>R Package – single-channel burst analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>extreme-values</td>
+      <td>https://cran.r-project.org/web/packages/extremevalues/index.html</td>
+      <td></td>
+      <td>R Package – outlier detection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MASS</td>
+      <td>https://cran.r-project.org/web/packages/MASS/index.html</td>
+      <td></td>
+      <td>R Package – function and statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xlsx</td>
+      <td>https://cran.r-project.org/web/packages/xlsx/index.html</td>
+      <td></td>
+      <td>R Package – read and write excel files</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 The 2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222) was purchased from Tocris Bioscience. All other chemicals, including acetylcholine chloride, were purchased from Sigma-Aldrich.
 
-## Molecular Biology
+### Molecular Biology
 
 cDNAs of human muscle-type AChR subunits (⍺1, β1, δ, and ε) in the pRBG4 plasmid were provided by Steven M. Sine (Mayo Clinic), while cDNAs encoding βAnc and βAncS were reconstructed and cloned into pRBG4 as described previously (Emlaw et al., 2021; Prinston et al., 2017). Mutations to produce the LC variant of βAnc (E420R, D424R, E428R) were introduced by inverse PCR (Silva et al., 2017). Sanger sequencing confirmed the entire reading frame for all constructs.
 
-## Mammalian cell expression
+### Mammalian cell expression
 
 Combinations of human and ancestral subunit cDNAs were transfected into BOSC 23 cells (Pear et al., 1993), originally from ATCC (CRL11270), but provided by Steven M. Sine (Mayo Clinic) (RRID:CVCL_4401). Cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM; Corning) containing 10% (vol/vol) fetal bovine serum (Gibco) at 37°C, until they reached 50–70% confluency. Cells were then transfected using calcium phosphate precipitation, and transfections terminated after 3–4 h by exchanging the medium. All experiments were performed one day post transfection (between 16 and 24 h after exchanging the medium). A separate plasmid encoding green fluorescent protein was included in all transfections to facilitate identification of transfected cells.
 
-## Cell line authentication and mycoplasma testing
+### Cell line authentication and mycoplasma testing
 
 Approximately 5 million confluent cells were harvested and their total DNA isolated (E.Z.N.A. Tissue DNA Kit), and then submitted to The Centre for Applied Genomics Genetic Analysis Facility (The Hospital for Sick Children, Toronto, Canada) for STR profiling using Promega’s GenePrint 24 System. A similarity search on the 8,159 human cell lines with STR profiles in Cellosaurus release 42.0 was conducted on the resulting STR profile, which revealed that the cell line shares closest identity (88%, CLASTR 1.4.4 STR Similarity Search Tool score) with cell line Anjou 65 (CVCL_3645). Anjou 65 is a child of CVCL_1926 (HEK293T/17) and is itself a parent line of CVCL_X852 (Bartlett 96). Bartlett 96 is the parent line of BOSC 23 (Pear et al., 1993). PCR tests confirmed that the cells were free from detectable mycoplasma contamination (Uphoff and Drexler, 2011, 2002).
 
-## Single-channel patch clamp recordings
+### Single-channel patch clamp recordings
 
 Single-channel patch clamp recordings were performed as previously described (Mukhtasimova et al., 2016). Recordings from BOSC 23 cells transiently transfected with cDNAs encoding wild-type, ancestral, or LC subunits, were obtained in a cell-attached patch configuration. All recordings were obtained with a membrane potential of –120 mV, with room temperature maintained between 20 and 22°C. The external bath solution contained 142 mM KCl, 5.4 mM NaCl, 0.2 mM CaCl2, and 10mM 4-(2-hydroxyethyl)–1-piperazineethanesulfonic acid (HEPES), adjusted to pH 7.40 with KOH. The pipette solution contained 80 mM KF, 20 mM KCl, 40 mM K-aspartate, 2 mM MgCl2, 1 mM ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid, and 10 mM HEPES, adjusted to a pH of 7.40 with KOH. Acetylcholine and QX-222 were added to pipette solutions at their desired final concentrations and stored at –80°C. Patch pipettes were fabricated from type 7052 or 8250 non-filamented glass (King Precision Glass) with inner and outer diameters of 1.15 and 1.65 mm, respectively, and coated with SYLGARD 184 (Dow Corning). Prior to recording, electrodes were heat polished to yield a resistance of 5–8 MΩ. Single-channel currents were recorded on an Axopatch 200B patch clamp amplifier (Molecular Devices), with a gain of 100 mV/pA and an internal Bessel filter at 100 kHz. Data were sampled at 1.0 μs intervals using a BNC-2090 A/D converter with a National Instruments PCI 6111e acquisition card and recorded by the program Acquire (Bruxton).
 
-## Dwell time and kinetic analysis
+### Dwell time and kinetic analysis
 
 Single-channel detections were performed using the program TAC 4.3.3 (Bruxton). Data were analysed with an applied 10 kHz digital Gaussian filter. Opening and closing transitions were detected using the 50% threshold crossing criterion, and open and closed dwell duration histograms were generated within the program TACfit 4.3.3 (Bruxton). Histograms were visually fit with a minimum sum of exponential components. From the closed duration histograms, the intersection of the slowest activation and fastest inactivation/desensitisation components was taken as the critical closed duration (τcrit) (Colquhoun and Hawkes, 1982; Sine et al., 1990). Closings longer than τcrit (corresponding to inter-burst closings) were removed from analysis. Events were imported into R using scbursts (Drummond et al., 2019), where individual durations were corrected for instrument risetime (Colquhoun and Sigworth, 1995), and bursts were defined by a τcrit (Sine et al., 1990). Bursts with fewer than three events were omitted from further analysis. The probability of being open within a burst (i.e. burst Popen) was calculated for each burst, and bursts with a Popen that did not fit within the normal distribution were removed using extremevalues (van der Loo, 2010). The distribution of burst Popen was then fit with a Gaussian distribution, and bursts within two standard deviations from the mean were used for further kinetic analysis (Drummond et al., 2019). A user-defined kinetic scheme (see Figure 3—figure supplement 1 for βAnc, and the modified del Castillo and Katz scheme (Colquhoun and Sakmann, 1985) for the human adult AChR in Figure 4—figure supplement 1) was fit to the sequence of single-channel dwells in the global dataset using maximum likelihood implemented within MIL (QUB suite, State University of New York, Buffalo, NY). With a user-defined dead time of 18.83 µs, MIL corrected for missed events, estimated model parameters by maximum likelihood, and gave standard errors of the estimated parameters (see Tables 1–3; Qin et al., 1996).
 
-## Electrical fingerprinting
+### Electrical fingerprinting
 
 The HC and LC variants of βAnc were transfected at 1:4 and 4:1 (HC:LC) cDNA ratios. Transfections and single-channel recordings were performed as described above. For detections, data were filtered to 1 kHz, and bursts defined by a uniform τcrit of 2 ms imposed upon all recordings. Using the program TAC 4.3.3 (Bruxton), amplitudes of single-channel bursts were measured as the difference between open- and closed-channel currents. Amplitudes of individual bursts were pooled from separate recordings to generate event-based amplitude histograms (EBAHs; Figure 5), which were fit with Gaussian distributions within TACfit (Bruxton).
 
-## Schemes
+### Schemes
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/76504/elife-76504-scheme1-v2.jpg)
 
-**Scheme 1.:** Anc homomers.
-
 ![Scheme 2.](https://cdn.elifesciences.org/articles/76504/elife-76504-scheme2-v2.jpg)
-
-**Scheme 2.:** Anc homomers in the presence of acetylcholine or 2-[(2,6-dimethylphenyl)amino]-N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222).
 
 ![Scheme 3.](https://cdn.elifesciences.org/articles/76504/elife-76504-scheme3-v2.jpg)
 
 ![Scheme 4.](https://cdn.elifesciences.org/articles/76504/elife-76504-scheme4-v2.jpg)
 
-**Scheme 4.:** N,N,N-trimethyl-2-oxoethaniminium chloride (QX-222).
-
 ![Scheme 5.](https://cdn.elifesciences.org/articles/76504/elife-76504-scheme5-v2.jpg)
-
-**Scheme 5.:** AncS homomers.

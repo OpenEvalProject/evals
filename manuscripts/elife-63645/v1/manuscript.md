@@ -22,6 +22,18 @@ In budding yeast, the mitotic exit network (MEN), a GTPase signaling cascade, in
 
 In cellular signaling, the sensing of signals (e.g. binding of signaling molecules at cell surface) and the response (e.g. transcription in the nucleus) often occur in different cellular compartments. Determining how signals are transmitted across compartments is thus essential for understanding signal transmission. The mitotic exit network (MEN), a Ras-like GTPase kinase signaling cascade and budding yeast homolog of the Hippo pathway (Hergovich and Hemmings, 2012), represents such an example for signaling across cellular compartments. The MEN-activating signal is sensed and processed at the cytoplasmic face of spindle pole bodies (SPBs; yeast functional equivalent of the centrosomes), whereas the MEN effector protein Cdc14 resides in the nucleolus (Figure 1A). Because budding yeast undergoes a closed mitosis without disassembling the nuclear envelope and nucleolus, the MEN must transmit a signal generated at the cytoplasmic face of SPBs, across the nuclear envelope and into the nucleolus to activate its effector Cdc14. The molecular mechanisms governing this cross-compartment signaling process remain largely unknown.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig1-v1.jpg)
+
+**Figure 1.:** (A) Major components of the mitotic exit network (MEN) and their subcellular localization. (B) Fluorescence recovery after photobleaching (FRAP) analysis of Mob1-eGFP (A39695). Red circles indicate the area of photo-bleaching. Cells were grown and imaged at room temperature in SC medium + 2% glucose. Graph to the right represents average measurements of double normalized fluorescence intensities (n = 6 cells) after correcting for photo-bleaching during acquisition. Red curve is the average fit and shaded area represents standard deviation (SD) of the fits. Half recovery time $t_{1/2}$ ± SD is indicated. (C) Localization of Mob1 during the cell cycle. A40257 (with Mob1-eGFP, Cfi1-mCherry and Spc42-mCherry) cells were grown at room temperature in SC medium + 2% glucose and imaged every minute for 2 hr. Arrows highlight the nucleolar localization. (D) Nucleolar localization of full-length (A39931) and N-terminally truncated (A39933 and A39935) Mob1. Cells were grown at room temperature in SC medium + 2% glucose and imaged every 3 min for 4 hr. Arrows highlight the nucleolar localization. (E) Enrichment of Mob1 (A41211, n = 62 cells), Mob1Δ78 (A41212, n = 60 cells), and Mob1Δ132 (A41213, n = 48 cells) at the daughter spindle pole body (dSPB; left) and in the nucleolus (right) as a function of cell cycle progression. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. Single cell traces were aligned based on anaphase onset, as defined as spindle length >3 μm (Figure 1—figure supplement 1F, measured based on SPB marker Spc42-mCherry), and averaged. Solid lines represent the average, and shaded areas represent 95% confidence intervals. (F) Maximum enrichment of full-length Mob1 (WT) and truncated Mob1 (Mob1Δ78 and Mob1Δ132) in the nucleolus in anaphase of cells in (E). Solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fivefold serial dilutions of cdc15-2 (A41424, A41425, A41426, A41427), tem1-3 (A41429, A41430, A41431, A41428), and cdc5-1 (A41432, A41433, A41434, A41435) harboring the indicated MOB1 constructs in YEP + 2% glucose at the indicated temperatures. (B) Immunoblot (top) and quantification (bottom) of untagged (A2587), full-length (A41351), and truncated GFP-Mob1 (A41352, A41353) as well as full-length GFP-Mob1 expressed from the pGPD/TDH3 promoter (A41350). (C) Localization of GFP-Mob1 expressed under the control of pGPD promoter (A41595) during the cell cycle. Cells were grown and imaged as in Figure 1E. Increased nuclear but not nucleolar localization of Mob1 was observed. (D) Enrichment of Mob1Δ132 (A41213, n = 14 cells) and pGPD-Mob1 (A41595, n = 17 cells) in the nucleolus (solid lines) compared to the nucleus (dashed lines) as a function of cell cycle progression. Cells were grown and imaged as in Figure 1E. (E) Kinetics of mitotic exit network (MEN) activation as measured by the release of NLSCdc14 reporter from the nucleus (see Figure 1—figure supplement 2) and anaphase progression as indicated by spindle length for cells harboring Mob1 (A41213, n = 62 cells) or pGPD-Mob1 (A41595, n = 43 cells). pGPD-Mob1 slightly delays MEN activation and exit from mitosis. (F) Kinetics of MEN activation and anaphase progression for experiments shown in Figure 1E. Mob1Δ78 slightly accelerated mitotic exit. For graphs in (D–F), single cell traces were aligned based on anaphase onset and averaged. Solid lines represent the average, and shaded areas represent 95% confidence intervals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Illustration of Mob1’s spindle pole body (SPB) localization and translocation of NLSCdc14 reporter in response to MEN activation. (B) Localization of Mob1Δ132 and the MEN activity reporter NLSCdc14 during the cell cycle. A41213 (GFP-MOB1Δ132, CFI1/NET1-mCherry, SPC42-mCherry, and NLSCdc14-ymiRFP670) cells were grown as in Figure 1E. Red square indicates anaphase. (C) Relative timing of nucleolar localization of Mob1 (black) and SPB localization of Mob1 (green) in cells harboring the indicated MOB1 alleles. (D) Relative timing of nucleolar localization of Mob1 (black) and release of the NLSCdc14 reporter from the nucleus (red) in cells harboring the indicated MOB1 alleles. (E) Localization of Mob1 and Cdc14 during the cell cycle. A40314 (MOB1-eGFP, SPC42-mCherry, and CDC14-mCherry) cells were grown at room temperature in SC medium + 2% glucose and imaged every 2 min for 4 hr. The colored squares indicate the frames where Cdc14 is released from the nucleolus mediated by either the Cdc fourteen early anaphase release (FEAR) network or the MEN. Yellow arrows highlight localization of Mob1 in the nucleolus.
+
 The central function of the MEN is to couple the final cell cycle transition, exit from mitosis (when the mitotic spindle is disassembled, chromosomes decondense and cytokinesis ensues), to nuclear/spindle position. In many organisms including budding yeast, fission yeast, and some plant species, the site of cytokinesis/division plane (i.e. the bud neck) is determined prior to mitosis (Guertin et al., 2002). Thus, the mitotic spindle in these organisms must be positioned appropriately to ensure accurate genome partitioning between the daughter cells. In addition, these organisms have evolved surveillance mechanisms to monitor spindle position and delay cell cycle progression in response to mispositioned spindles. This surveillance mechanism is best understood in budding yeast where spindle position controls the activity of the MEN.
 
 The MEN senses spindle position through a Ras-like GTPase Tem1. Tem1 is activated when a SPB enters the bud (Bardin et al., 2000; Pereira et al., 2000). Together with the Polo-like kinase Cdc5, Tem1 activates its effector, the Hippo-like protein kinase Cdc15, presumably by recruiting Cdc15 to the SPBs (Rock and Amon, 2011; Figure 1A). Cdc15 then activates the LATS/NDR kinase Dbf2-Mob1 via a two-step process (Rock et al., 2013). Cdc15 first phosphorylates the MEN scaffold Nud1, a core component of the SPB outer plaque. This phosphorylation creates a docking site for Dbf2-Mob1 on Nud1, facilitating phosphorylation and activation of Dbf2-Mob1 by Cdc15 (Mah et al., 2001; Rock et al., 2013).
@@ -40,11 +52,11 @@ Here, we demonstrate that Dbf2-Mob1 serves as a molecular messenger traveling be
 
 ## Results
 
-## Dbf2-Mob1 dynamically associates with SPBs
+### Dbf2-Mob1 dynamically associates with SPBs
 
 When the MEN is activated in anaphase, Dbf2-Mob1 is recruited to the outer plaque of SPBs by binding to Cdc15-phosphorylated Nud1 (Rock et al., 2013). However, immobilizing Dbf2-Mob1 at SPBs by fusing Mob1 to Nud1 disrupts MEN activity (Rock et al., 2013), suggesting that Dbf2-Mob1 is likely needed away from the SPBs for the MEN to function. Additionally, a small fraction of Dbf2-Mob1 was found to enter mitotic nuclei (Stoepel et al., 2005). Thus, we hypothesized that the MEN liberates Cdc14 from its nucleolar inhibitor through the dynamic shuttling of Dbf2-Mob1 between the outer plaque of the SPB and the nucleolus. We reasoned that as a messenger between the SPB and nucleolus, Dbf2-Mob1 needs to be mobile at the SPB. To test this hypothesis, we performed fluorescence recovery after photobleaching (FRAP) analysis on eGFP tagged Mob1 in anaphase cells (Figure 1B). We observed a rapid recovery of fluorescence with a half-recovery time of 4.6 ± 0.7 s (mean ± SD, n = 6 cells) after photobleaching of Mob1-eGFP fluorescence either at the daughter (dSPB) or the mother (mSPB) SPB. This fast turnover rate (~1/500 of the total duration for Dbf2-Mob1’s SPB localization in anaphase) indicates that localization of Dbf2-Mob1 to SPBs is highly dynamic.
 
-## Dbf2-Mob1 transiently localizes to the nucleolus during anaphase
+### Dbf2-Mob1 transiently localizes to the nucleolus during anaphase
 
 We next investigated whether Dbf2-Mob1 localizes to the nucleolus by live-cell fluorescence microscopy. Although subtle, we observed transient localization of Mob1-eGFP to the nucleolus in some cells as judged by co-localization with the nucleolar protein Cfi1/Net1. Importantly, this nucleolar localization was only observed in late anaphase cells after nucleolar segregation, when the MEN is normally active (Figure 1C).
 
@@ -52,19 +64,43 @@ It was reported previously that two N-terminally truncated Mob1 mutant proteins,
 
 To further characterize the cellular localization of Dbf2-Mob1, we quantified the relative enrichment of full-length and truncated GFP-Mob1 at SPBs and in the nucleolus during the cell cycle (Figure 1E). Full-length Mob1 localized to SPBs and the nucleolus during anaphase. Localization of Mob1Δ78 and Mob1Δ132 to SPBs was similar to that of full-length Mob1. The nucleolar localization of Mob1 and truncated Mob1 (Figure 1E) correlated with MEN activation, as judged by Mob1 association with SPBs, translocation of the MEN activity reporter NLSCdc14 (Campbell et al., 2019) into the cytoplasm, and MEN-mediated Cdc14 release from the nucleolus (Figure 1—figure supplement 2). Consistent with earlier observations, the Mob1 truncations displayed significantly greater nucleolar enrichment relative to full-length Mob1 in anaphase (~30% and 120% increase on average for Mob1Δ78 and Mob1Δ132 respectively, Figure 1F). Mob1Δ78 localization to the nucleolus was, like full-length Mob1, restricted to anaphase but accumulated in the nucleolus to higher levels. In contrast, Mob1Δ132 displayed both greater and earlier nucleolar enrichment, evident already in metaphase. We conclude that Dbf2-Mob1 localizes to the nucleolus during anaphase when the MEN is active. N-terminal truncation mutants of Mob1 exhibit enhanced nucleolar localization and are hypermorphic. Given that the nucleolar localization of full-length Mob1 is quite subtle, we used the Mob1 truncation mutants as tools to study Dbf2-Mob1’s nucleolar localization.
 
-## Dbf2-Mob1 localizes to the nucleolus through interacting with Cfi1/Net1
+### Dbf2-Mob1 localizes to the nucleolus through interacting with Cfi1/Net1
 
 To validate the nucleolar localization of Mob1 we observed by microscopy and to identify the potential nucleolar receptor for Dbf2-Mob1, we performed TurboID proximity-based labeling (Branon et al., 2018). We fused the promiscuous biotin ligase TurboID to the MEN components Mob1, Dbf2, Tem1, and Cdc15 and identified their protein interactors by streptavidin pull-down followed by mass spectrometry (MS) (Figure 2—figure supplement 1A). In this experiment, we identified the nucleolar protein Cfi1/Net1 as the top hit for Mob1- and Dbf2-TurboID labeling (Figure 2A, Figure 2—figure supplement 1B, Supplementary file 3). Biotinylation of Cfi1/Net1 by Mob1-TurboID was further confirmed by the detection of a biotinylated peptide of Cfi1/Net1 (Figure 2—figure supplement 1C). Importantly, Cfi1/Net1 was only detected in the labeling experiments where Mob1 or Dbf2 was tagged with TurboID but not when Tem1 or Cdc15 was used as baits (Figure 2A). In contrast, Nud1, the MEN scaffold protein at SPBs, was detected in the TurboID labeling experiments for all MEN proteins (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig2-v1.jpg)
+
+**Figure 2.:** (A) Results of proximity-based biotinylation with TurboID for mitotic exit network (MEN) proteins (A41367, A41370, A41368, A41369, and A2588). Cells were grown at room temperature in YEP + 2% glucose + 50 μM biotin. (B) Streptavidin gel-shift assays to probe the interactions of TurboID-labeled MEN proteins with the MEN scaffold Nud1 (left, A11869, A41381, A41382 and A41380) or Cfi1/Net1 (right, A1638, A41406, A41407 and A41372). Cells were grown at room temperature in YEP + 2% glucose and lysates were treated with streptavidin and immunoblotted as indicated. Red arrows highlight biotinylated proteins. (C and D) Representative images (C) and quantification (D) of Mob1Δ78 localization in wild-type CFI1/NET1 (A41344, n = 106 cells) or cfi1/net1Δ (A41347, n = 18 cells) cells and Mob1Δ132 localization in CFI1/NET1 (A41345, n = 95 cells) or cfi1/net1Δ (A41348, n = 18 cells) cells. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 5 min for 4 hr. Arrows highlight nucleolar localization. (E and F) Representative images (E) and quantification (F) of Mob1 localization in wild-type (A41343, n = 110 cells) or GAL-CFI1/NET1 expressing cells (A41340, n = 71 cells), Mob1Δ78 localization in wild-type (A41344, n = 103 cells) or GAL-CFI1/NET1 expressing cells (A41341, n = 68 cells), and Mob1Δ132 localization in wild-type (A41345, n = 71 cells) or cells expressing GAL-CFI1/NET1 (A41342, n = 53 cells). # denotes that the image was linearly contrast adjusted to avoid over-saturation for Mob1Δ78 and Mob1Δ132. Cells were first grown at room temperature in SC medium + 2% raffinose. Cells were then mounted onto agarose pads made with SC medium + 1% raffinose + 1% galactose and imaged every 5 min for 5 hr at 25°C. Arrows highlight nucleolar localization. Solid lines represent the average of single cell traces aligned to anaphase onset while shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. The solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Overview of TurboID proximity-based biotinylation to identify interaction partners of a target protein. (B) Number of total peptides detected for MS-identified proteins in cells with TurboID tagged baits relative to untagged control cells (source data for Figure 2A). Shaded red dots represent proteins (hits) identified as interaction partners of the bait protein. Solid yellow lines denote the mean ratio of total peptide detected for all proteins. Dashed lines denote the threshold used for identifying hits (10 standard derivations above the mean). (C) Biotinylated peptide of Cfi1/Net1 detected in cells harboring Mob1-TurboID. (D) Streptavidin gel-shift assay to probe the interaction between Mob1 and Cfi1/Net1. Lysates of A41379, A1638, and A41372 cells with or without streptavidin treatment were immunoblotted as indicated. Red arrows highlight biotinylated proteins.
 
 We validated these MS findings using streptavidin gel-shift assays (Fairhead and Howarth, 2015; Housley et al., 2014). To monitor whether a target protein was biotinylated by the TurboID-tagged bait protein in vivo, we treated the denatured cell lysates with excess streptavidin prior to immunoblotting. Biotinylated form(s) of the target protein will migrate more slowly in SDS-PAGE due to binding of streptavidin, with each added biotin molecule causing a theoretical size increase of up to 53 kD, the size of a streptavidin tetramer (Figure 2—figure supplement 1D). Using this assay, we observed a slower migrating form of Nud1 in cell lysates from cells expressing all TurboID-tagged MEN proteins (Figure 2B). Slower migrating forms of Cfi1/Net1 were only observed in lysates obtained from cells expressing Mob1-TurboID (Figure 2B).
 
 To determine whether Cfi1/Net1 was the sole receptor for Mob1 in the nucleolus, we characterized the localization of Mob1Δ78 and Mob1Δ132 in cells lacking CFI1/NET1. While still localized to SPBs, Mob1Δ78 and Mob1Δ132 no longer accumulated in the nucleolus during anaphase in cfi1/net1Δ cells (Figure 2C and D). Furthermore, when we overexpressed CFI1/NET1 from the strong galactose-inducible GAL1-10 promoter, nucleolar localization of both full-length and N-terminal truncation mutants of Mob1 was increased by at least 50% (full-length) and up to 300% (truncations) (Figure 2E and F). It is worth noting that the observed decrease in Mob1’s dSPB localization with CFI1/NET1 overexpression (Figure 2F) is likely the result of Cdc14 inhibition by Cfi1/Net1 (Visintin et al., 1999) leading to reduced MEN activation, similar to the decrease in Mob1’s dSPB localization observed when Cdc14 activity is reduced by the cdc14-3 mutation (Campbell et al., 2019). We conclude that Dbf2-Mob1 localization in the nucleolus during anaphase is mediated by interactions with Cfi1/Net1.
 
-## Nucleolar localization of Dbf2-Mob1 depends on MEN activation
+### Nucleolar localization of Dbf2-Mob1 depends on MEN activation
 
 The localization pattern of Dbf2-Mob1 leads to the model in which Dbf2-Mob1 is activated by Cdc15 at SPBs. Active Dbf2-Mob1 then binds to and phosphorylates Cfi1/Net1, promoting the dissociation of Cdc14 from its inhibitor to carry out mitotic exit. This model predicts that the nucleolar localization of Dbf2-Mob1 depends on MEN activity. To test this prediction, we employed an analog-sensitive allele of CDC15, cdc15-as1 (Bishop et al., 2000; D'Aquino et al., 2005). As expected, inhibition of cdc15-as1 (through addition of the analog 1-NA-PP1) prevented localization of Mob1 to SPBs and translocation of the MEN activity reporter NLSCdc14 into the cytoplasm (Figure 3A). Nucleolar localization of full-length Mob1 was also significantly reduced (Figure 3A). Nucleolar localization of the N-terminally truncated Mob1Δ78 and Mob1Δ132 mutants, on the other hand, was only moderately reduced (Figure 3A), which is consistent with the finding that these alleles partially suppress the temperature sensitive growth defect of cdc15-2 cells (Figure 1—figure supplement 1A). We conclude that Mob1 localization to the nucleolus depends on MEN activity. The N-terminal hyperactive truncation mutations in Mob1 are less reliant on upstream MEN kinases for their nucleolar localization.
 
-## Cdc15 regulates nuclear access of Dbf2-Mob1
+![Figure 3.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig3-v1.jpg)
+
+**Figure 3.:** (A) Enrichment of Mob1 at the daughter spindle pole body (dSPB), in the nucleolus, and Dbf2-Mob1’s kinase activity were determined in cells going through anaphase in CDC15 (A41211, A41212, and A41213; n = 74, 94, and 55 cells respectively) or cdc15-as1 (A41214, A41215, and A41216; n = 37, 63, and 30 cells respectively) cells. Cells were grown at 25°C in SC medium + 2% glucose and 10 μM 1-NA-PP1 and imaged every 3 min for 4 hr. (B) Probing Dbf2-Mob1’s nuclear access by recruiting Mob1 to the nucleolus with the PhyB-PIF optogenetics system. By anchoring PhyB to the nucleolus, diffuse nuclear Dbf2-Mob1, if present, can be visualized by recruiting Mob1-eGFP-PIF to the nucleolus. (C) Recruiting Mob1 to the nucleolus at different cell cycle stages. A40260 cells were grown at 25°C in SC medium + 2% glucose, imaged after a 2 hr incubation with 31.25 μM PCB in the dark. Red dot denotes the frame where 650 nm light was applied to activate PhyB. Yellow arrows highlight the light-induced recruitment. (D) Recruitment of Mob1 to the nucleolus in CDC15 (A41360) or cdc15-2 (A41361) cells. Quantifications of Mob1’s enrichment in the nucleolus as a function of PhyB activation time in CDC15 (A41360, n = 27 and 16 cells for pre-anaphase and anaphase respectively) or cdc15-2 (A41361, n = 14 and 36 cells for pre-anaphase and anaphase respectively) cells. Cells were grown at room temperature in SC medium + 2% glucose, incubated with 12.5 μM PCB for 2 hr in the dark, and shifted to 34°C for 50 min before imaging. (E) Nucleolar enrichment of full-length and truncated Mob1 in wild-type DBF2 or dbf2-L12A cells (A41394, A41395, and A41396; n = 32, 28, and 31 cells respectively). Wild-type traces for comparison were the same as in Figure 1E. Cells were grown similarly as in Figure 1E. For graphs in (A) and (E), solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. Solid lines represent the median. ****p<0.0001; ***p<0.001 by two-sided Wilcoxon rank sum test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The PhyB-PIF based light-inducible organelle targeting system. When exposed to 650 nm light, anchored PhyB interacts with PIF and thus targets protein of interest (POI) to designated subcellular regions. This interaction is reversed with exposure to 750 nm light. (B) Recruiting Mob1 to spindle pole bodies (SPBs; A40346) or the mitochondrial surface (A40354) with the PhyB-PIF optogenetics system. Cells were grown at room temperature in SC medium + 2% glucose, incubated with 31.25 μM PCB for 2 hr in the dark prior to imaging. Red dots indicate application of red light (650 nm) for 5 min to activate PhyB. (C) Recruiting Dbf2 (A40262) or Cdc15 (A40258) to the nucleolus with PhyB-Sik1. Cells were grown similar to (B). Yellow arrows highlight the light-induced recruitment. (D) Probing Mob1’s nuclear access during the cell cycle with PhyB-Sik1. A40260 cells were grown similar to (B) and imaged every 5 min while the red light (650 nm) was applied for 2 min every 15 min. Red dots denote frames where 650 nm light was applied to activate PhyB prior to imaging as indicated in the cartoon above. Yellow arrows highlight the light-induced recruitment. (E) Quantifications of enrichment of Mob1 in the nucleolus as a function of PhyB activation time for full-length Mob1 (A41360; n = 22, 14, and 21 cells for G1-S, metaphase and anaphase respectively), Mob1Δ78 (A41366; n = 11, 6, and 2 cells for G1-S, metaphase and anaphase respectively) at 25°C and for Mob1Δ78 in CDC15 (A41366; n = 25, 4, and 9 cells for G1-S, metaphase and anaphase respectively) or cdc15-2 cells (A41365; n = 39, 9, and 10 cells for G1-S, metaphase and anaphase respectively) at 34°C. Cells were grown similar to (B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Mob1’s cellular localization when nuclear export is inhibited. Left, cells (A39893, A41349) were grown at room temperature in SC medium + 2% glucose and leptomycin B (LMB). Red box indicates anaphase and yellow arrows highlight increased nuclear and nucleolar localization. Right, comparison of nucleolar enrichment of Mob1 in CRM1 (A41211, A41212, and A41213; n = 12, 18, and 11 cells respectively) and crm1T539C cells (A41373, A41374, and A41375; n = 13, 9, and 16 cells respectively). Cells were grown at 25°C in SC medium + 2% glucose with 100 ng/ml LMB and imaged every 3 min for 4 hr. (B) Localization of overexpressed Mob1-eGFP from the GAL1-10 promoter with (A41363) or without (A41364) co-overexpressing Dbf2 from the same promoter. Cells were grown in SC medium + 2% raffinose and mounted onto agarose pads made with SC medium + 1% raffinose and 1% galactose. (C) Localization of overexpressed Dbf2-eGFP with (A41383) or without (A41384) inhibiting Crm1 with LMB. Cells were grown in SC medium + 2% raffinose and mounted onto agarose pad made with SC medium + 1% raffinose, 1% galactose, and 100 ng/ml LMB. (D) Alignment of Dbf2 homologs in Saccharomycetes and S. pombe. (E–G) Localization of various Dbf2-eGFP mutants expressed from the GAL1-10 promoter (A41388, A41389, A41386, A41390, A41391, A41392, A41393, A41440, A41441, and A41442; n = 97, 98, 123, 135, 120, 88, 58, 76, and 79 cells respectively). Cells were grown as in (B) and analyzed after 5 hr of growth in galactose containing medium.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Nucleolar enrichment of full-length and truncated Mob1 in wild-type DBF2, dbf2-S17/20A or dbf2-S17/20D cells (A41614, A41617, A41620, A41615, A41618, A41621, A41616, A41619, A41622; n = 32, 28, 33,39, 43, 37, 31, 35, and 37 cells respectively). Cells were grown and imaged as in Figure 1E. Solid lines represent the average; shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. Solid lines represent the median. ****p<0.0001; *p<0.05 by two-sided Wilcoxon rank sum test. (B) Enrichment of Mob1 in the nucleolus as a function of PhyB activation time for cells expressing wild-type DBF2 (A41608; n = 42 and 24 cells for pre-anaphase and anaphase, respectively), dbf2-S17/20A (A41609; n = 55 and 41 cells for pre-anaphase and anaphase, respectively) or dbf2-S17/20D (A41610; n = 58 and 28 cells for pre-anaphase and anaphase, respectively). Cells were grown as in Figure 3—figure supplement 1. (C) Fivefold serial dilutions of cdc15-2 cells harboring wild-type DBF2 (A41624), dbf2-S17/20A (A41625), or dbf2-S17/20D (A41626) in YEP + 2% glucose at the indicated temperatures.
+
+### Cdc15 regulates nuclear access of Dbf2-Mob1
 
 How does Cdc15 cause Dbf2-Mob1 to localize to the nucleolus? To reach the nucleolus, Dbf2-Mob1 must first enter the nucleus. Considering that the size of the complex (102 kD) is above the passive diffusion limit of the nuclear envelope (~40–60 kD) (Knockenhauer and Schwartz, 2016), we hypothesized that nuclear access of Dbf2-Mob1 is regulated. We explored this possibility using the PhyB-PIF based light-inducible organelle targeting system (Yang et al., 2013; Figure 3—figure supplement 1A). We fused Mob1-eGFP to the PIF protein, which binds PhyB upon exposure to red light (650 nm). Using this system, we successfully recruited Mob1-eGFP-PIF to various subcellular locations such as SPBs or the outer mitochondrial membrane (Figure 3—figure supplement 1B).
 
@@ -72,7 +108,7 @@ To gauge Dbf2-Mob1’s nuclear access in different cell cycle stages, we created
 
 Because nuclear access of Dbf2-Mob1 correlates with MEN activation, we next tested whether it was regulated by the MEN by quantifying the relative enrichment of Mob1 in the nucleolus as a function of PhyB activation time (exposure to 650 nm light) in CDC15 or cdc15-2 cells. In cells with wild-type CDC15, light-induced nucleolar recruitment of Mob1 was higher in anaphase than pre-anaphase cells. In contrast, in cdc15-2 cells this difference was abolished (Figure 3D). We conclude that in addition to activating Dbf2’s kinase activity (Mah et al., 2001), Cdc15 regulates Dbf2-Mob1’s nuclear access. Consistent with this notion, we find that Mob1Δ78, which partially suppresses the temperature sensitivity of the cdc15-2 allele, displayed increased nuclear access in all cell cycle stages (Figure 3—figure supplement 1E).
 
-## Dbf2-Mob1 is exported from the nucleus by Crm1
+### Dbf2-Mob1 is exported from the nucleus by Crm1
 
 Dbf2-Mob1 is a substrate of the nuclear exportin Crm1 in vitro (Kırlı et al., 2015). To determine whether Crm1 plays a role in controlling Dbf2-Mob1 localization in vivo, we quantified the nucleolar localization of full-length and truncated Mob1 in cells carrying an allele of CRM1 (crm1T539C) that is sensitive to the nuclear export inhibitor leptomycin B (LMB) (Neville and Rosbash, 1999). Treatment of crm1T539C cells with LMB led to an increase in nucleolar localization of both full-length and N-terminally truncated Mob1 (Figure 3—figure supplement 2A), suggesting that Crm1 controls nuclear export of Dbf2-Mob1.
 
@@ -82,25 +118,57 @@ Sequence analysis identified a putative NES sequence in the N-terminus of Dbf2 b
 
 A previous phosphoproteomic study reported that S17 and S20 within the NES of Dbf2 are phosphorylated in anaphase-arrested cells (Holt et al., 2009). We found that mutating S17 and S20 to phospho-mimetic residues (S17,20D or S17,20E) disrupted the NES whereas mutating these residues to alanine (S17,20A) retained the NES activity of Dbf2 (Figure 3—figure supplement 2F and G). We propose that phosphorylation of S17 and S20 is regulated, possibly by Cdc15, to control nuclear access of Dbf2-Mob1. Nucleolar localization of Mob1, particularly of Mob1Δ78, was reduced in cells harboring the dbf2-S17,20A allele compared to cells with wild-type DBF2 (Figure 3—figure supplement 3A). However, cells carrying the dbf2-S17,20A allele, while exhibiting reduced nuclear access of Mob1 during all cell cycle stages, still showed differential nuclear access between pre-anaphase and anaphase, as is observed in DBF2 cells (Figure 3—figure supplement 3B). This observation suggests that additional regulatory mechanism(s) control Dbf2-Mob1’s nuclear access. In contrast, cells harboring the dbf2-S17,20D allele exhibited increased nuclear access of Mob1 during all cell cycle stages (Figure 3—figure supplement 3B), confirming that Dbf2-Mob1 is normally kept out of the nucleus through Dbf2’s NES. The NES sequence in Dbf2 is well conserved among Saccharomycetes (Figure 3—figure supplement 2D) suggesting that regulated nuclear access of Dbf2-Mob1 is conserved at least across this class of fungi.
 
-## Nucleolar localization of Dbf2-Mob1 is regulated by Cdc5
+### Nucleolar localization of Dbf2-Mob1 is regulated by Cdc5
 
 The analysis of nuclear access and nucleolar localization of the N-terminal truncations of Mob1 indicated that the MEN is not the only pathway controlling Dbf2-Mob1’s nucleolar localization. The truncation mutants localize to the nucleolus in a manner largely independent of the MEN, yet their nucleolar localization is still restricted to metaphase and anaphase (Figure 3A). This restriction of nucleolar localization is not due to limited nuclear access. Truncated Mob1 mutants have increased nuclear access prior to anaphase (Figure 3—figure supplement 1E). These data indicate that nucleolar localization or the interaction between Dbf2-Mob1 with Cfi1/Net1 is regulated by additional factors.
 
 An obvious candidate for this additional regulator is the Polo-like kinase Cdc5, which is active throughout mitosis and plays multiple essential roles in mitotic exit (Lee et al., 2005). As part of both the FEAR network (Rock and Amon, 2009; Stegmeier et al., 2002) and the MEN, Cdc5 is indispensable for Cdc14’s nucleolar release. However, the exact role(s) of Cdc5 during this process is not fully understood. To determine whether Cdc5 regulates binding of Dbf2-Mob1 to Cfi1/Net1, we examined the consequences of inhibiting Cdc5’s kinase activity on nucleolar localization of Dbf2-Mob1 using an analog-sensitive allele of CDC5 (cdc5-as1). Consistent with the known functions of Cdc5 in MEN activation, we observed loss of Mob1’s SPB localization and Dbf2-Mob1’s kinase activity as monitored by translocation of the NLSCdc14 reporter into the cytoplasm when Cdc5 was inhibited (Figure 4A). Nucleolar localization of Mob1, Mob1Δ78, and Mob1Δ132 was also lost in cells lacking Cdc5 activity (Figure 4A). This is in direct contrast to Cdc15 inhibition, where the nucleolar localization of N-terminal Mob1 truncation mutants particularly Mob1Δ132 was only partially reduced (Figure 3A). These results suggested that Cdc5 regulates Dbf2-Mob1’s nucleolar localization independently of its role in activating Cdc15.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig4-v1.jpg)
+
+**Figure 4.:** (A) Enrichment of Mob1 at the daughter spindle pole body (dSPB), in the nucleolus, and Dbf2-Mob1’s kinase activity in cells wild type for CDC5 (A41211, A41212, and A41213; n = 49, 60, and 47 cells respectively) or harboring a cdc5-as1 allele (A41334, A41335, and A41336; n = 23, 30, and 28 cells respectively). Cells were grown at 25°C in SC medium + 2% glucose and 5 μM CMK and imaged every 3 min for 4 hr. (B) Cells harboring GAL-CDC15(1-750) and cdc5-as1 either containing eGFP-MOB1 (A41211, A41334, A41376, and A41337; n = 44, 41, 58, and 61 cells respectively), or eGFP-MOB1Δ78 (A41212, A41335, A41377, and A41338; n = 54, 30, 12, and 22 cells respectively), or eGFP-MOB1Δ132 (A41213, A41336, A41378, and A41339; n = 62, 28, 26, and 22 cells respectively) were analyzed to determine Mob1 localization. Localization to the mother SPB (mSPB) instead of dSPB was quantified here because cells expressing GAL-CDC15(1-750) often exit from mitosis in the mother (without movement of a SPB into the bud). For cells exited with two SPBs in the mother cell, maximum intensities of the two SPBs were used. Cells were grown at 25°C in SC medium + 1% raffinose, 1% galactose, and 5 μM CMK and imaged every 5 min for 5 hr. Solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. Solid lines represent the median. ****p<0.0001; **p<0.01; *p<0.05 by two-sided Wilcoxon rank sum test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Enrichment of Mob1 at the daughter spindle pole body (dSPB), in the nucleolus, and Dbf2-Mob1’s kinase activity in wild-type (A41211, A41212 and A41213; n = 12, 18, 11) or slk19Δ (A41357, A41358, A41359; n = 26, 29, 22 cells) cells. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. Solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals. (B) Maximum enrichment of Mob1 in the nucleolus. Each dot represents a single cell. The solid lines represent the median. ns, not significant (p>0.05) by two-sided Wilcoxon rank sum test.
+
 To directly determine whether CDC5 regulated Dbf2-Mob1’s nucleolar localization independently of the MEN, we took advantage of a hyperactive CDC15 allele, GAL-CDC15(1-750) (Bardin et al., 2003), which is active even in the absence of CDC5 (Rock and Amon, 2011). When GAL-CDC15(1-750) was expressed, Mob1’s SPB localization and Dbf2-Mob1’s kinase activity was no longer restricted to anaphase but rather was high throughout the cell cycle as a result of MEN hyper-activation (Figure 4B). Interestingly, GAL-CDC15(1-750) did not abolish cell-cycle regulation of Mob1’s nucleolar localization but rather advanced it to early anaphase and metaphase (Figure 4B). In cells expressing GAL-CDC15(1-750), inactivation of CDC5 still abolished nucleolar localization of both full-length and the hyperactive N-terminally truncated Mob1 while Mob1 binding to SPBs was unaffected (Figure 4B). These results demonstrate that nucleolar localization of Dbf2-Mob1 directly depends on Cdc5 independently of its role in MEN activation.
 
 Could CDC5 regulate the nucleolar localization of Dbf2-Mob1 through its role in the FEAR network? To test this, we quantified Mob1’s nucleolar localization in cells lacking the FEAR network component SLK19 (slk19Δ). MEN activation (as determined by Mob1 localization to the dSPB and nuclear release of the NLSCdc14 reporter) and as a result mitotic exit were considerably delayed and more variable in slk19Δ cells (Figure 4—figure supplement 1A). Consistent with a delay in MEN activation, nucleolar localization of Mob1 and Mob1Δ78 but not Mob1Δ132 was also delayed. Importantly, maximum enrichment of Mob1 in the nucleolus was not reduced in slk19Δ cells for all three forms of Mob1 (Figure 4—figure supplement 1B). We conclude that Cdc5 regulates Dbf2-Mob1’s nucleolar localization through mechanisms in addition to its role in the MEN and the FEAR network.
 
-## Cdc5 and Dbf2-Mob1 phosphorylate Cfi1/Net1 at distinct sites
+### Cdc5 and Dbf2-Mob1 phosphorylate Cfi1/Net1 at distinct sites
 
 Our results suggest a model where Cdc5 promotes the interaction between Dbf2-Mob1 and its nucleolar receptor Cfi1/Net1, likely through phosphorylating Cfi1/Net1. This interaction then facilitates phosphorylation of Cfi1/Net1 by Dbf2-Mob1 to bring about the release of Cdc14 from Cfi1/Net1. Cfi1/Net1 is a highly phosphorylated protein with 64 known phosphorylation sites in vivo (Holt et al., 2009; Swaney et al., 2013). About one fifth of these sites were identified as CDK targets (Holt et al., 2009) including six key CDK sites whose phosphorylation is controlled by the FEAR network (Azzam et al., 2004). To map sites in Cfi1/Net1 that are phosphorylated in a CDC5 or MEN-dependent manner, we performed phosphoproteomic analyses on wild-type anaphase cells and cells in which Cdc5 or Cdc15 were inhibited using the cdc5-as1 and cdc15-as1 alleles, respectively (Figure 5—figure supplement 1A). This analysis identified 44 of the 64 previously known sites in Cfi1/Net1 and 18 new sites (Supplementary file 4). To achieve complete or close to complete coverage of Cfi1/Net1’s phosphorylation sites in anaphase, we also performed immunoprecipitation-mass spectrometry (IP-MS) for Cfi1/Net1 in anaphase enriched cultures and identified nine additional sites (Supplementary file 4) resulting in an astonishing total of 91 phosphorylation sites in Cfi1/Net1. These phosphorylation sites appear to cluster in regions of disorder as predicted by the PONDR score (Romero et al., 1997; Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of all, CDK sites, CDC15- and CDC5-dependent phosphorylation sites (Supplementary file 4) and disordered regions in Cfi1/Net1. For CDK sites, open circles represent sites identified and mutated in Azzam et al., 2004 (cfi1/net1-6Cdk) and filled circles represent sites identified in Holt et al., 2009. Dashed boxes denote the four zones. (B–E) Localization of Mob1Δ132 in CFI1/NET1 (A41411, n = 67 cells for B and C and 66 cells for D and E), cfi1-91A mutants (A41412 and A41413, n = 36 and 35 cells), cfi1-Cdc15(z2) (A41593, n = 34 cells) or cfi1-Cdc5only(z2) (A41594, n = 69 cells). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. (F) Streptavidin gel-shift assays to probe the interactions between TurboID-tagged Mob1 and different CFI1/NET1 alleles (from left to right: A2587, A41596, A41597, A41598, A41379, A41611, A41612, A41613). -, not tagged; WT, wild-type Cfi1-13myc; 15, Cfi1-Cdc15(z2)−13myc; 5, Cfi1-Cdc5only(z2)−13myc. Cells were grown at room temperature in YEP + 2% glucose and lysates were treated with streptavidin and immunoblotted as indicated. Red arrows highlight biotinylated proteins. (G) Enrichment of Mob1Δ132 (A41664, n = 50 cells) or Mob1Δ132-3RA (A41665, n = 85 cells) in the nucleolus. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. For graphs in (B–E and G), solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. Solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overview of the sample preparation for phosphoproteomics analysis to map CDC15 (MEN) and CDC5 dependent phosphorylation in anaphase. Paired wild-type (WT, A2587) and cdc15-as1 (A10991) or paired wild-type and cdc5-as1 (A40903) cultures were synchronized in G1 with α-factor (5 μg/ml). After 150 min cells were released into fresh medium with the corresponding inhibitors in the absence of pheromone at room temperature. After ~100 min cells were harvested to extract proteins and processed for data-independent acquisition mass spectrometry (DIA-MS) analysis with seven technical replicates for each sample. Immuno-fluorescence (IF) using an anti-tubulin antibody was performed on the collected cells to determine the percentage of cells with anaphase spindle (~70% for wild-type cells and ~95% for cdc5-as1 and cdc15-as1 cells). (B) Volcano plots of −log10 transformed FDR adjusted P-value versus log2(fold change or ratio) of intensities measured for peptides identified in anaphase cells with WT or analog-sensitive (as1) alleles of CDC15 or CDC5. Yellow dashed lines indicate the cutoff (R > 2 and padj<0.05) used to identify peptides whose phosphorylation depends on the corresponding kinase as marked with red shaded dots. (C) Correlations of peptide intensity in WT and as1 samples for Cdc15 and Cdc5 inhibition in anaphase. Data points on the axis represent peptides that were only detected in one sample but not the other. Red shaded dots denote hits for CDC15 or CDC5-dependent phosphopeptides identified based on the cutoff described in (B) and for peptides that were detected in at least five out of seven replicates in WT samples but were missing in as1 samples (thus no fold change could be calculated). (D and E) Summary of phosphorylation sites (D) and phospho-proteins (E) determined as CDC15- or CDC5-dependent. Potential Dbf2-Mob1 targets were identified as CDC15-dependent and to fit the Dbf2 phosphorylation consensus motif RXXS*, where * denotes the site of phosphorylation. Cdc5-only sites are sites that are CDC5-dependent but not CDC15-dependent. (F) CDC15- and CDC5-dependent sites in Mob1 and Dbf2. Light gray sites represent sites that were detected but were not determined as either CDC15- or CDC5-dependent.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A and B) Representative images of Mob1Δ132 localization in CFI1/NET1 (A41411), cfi1-91A (A41412 and A41413), cfi1-Cdc15(z2) (A41593), or cfi1-Cdc5only(z2) (A41594) cells.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Overview of the sample preparation for phosphoproteomic analysis to map CDC5-dependent phosphorylation sites in metaphase. Same procedures were followed as in Figure 5—figure supplement 1A except that following release of cells from the G1 arrest, cells were resuspended in medium containing the inhibitor CMK (5 μM) and nocodazole (15 μg/ml). (B) Volcano plot and correlation of peptide intensities with and without inhibition of Cdc5 (cdc5-as1 or WT) in metaphase. Yellow dashed lines indicate the cutoff (R > 2 and padj<0.05, or detected in at least four out of six replicates in WT sample but missing in cdc5as1 sample) used to identify peptides whose phosphorylation depends on CDC5 as marked with red shaded dots. (C and D) Summary and comparison of phosphorylation sites (C) and phospho-proteins (D) detected in metaphase and anaphase. (E) CDC5-only and CDC15-dependent sites in Cfi1/Net1 and Cdc14 mapped in metaphase and anaphase. Light gray sites in metaphase/anaphase represent phosphorylation sites that were detected but were not determined as CDC5-dependent.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Results of TurboID proximity-based biotinylation for Cdc5 (A41385 and A2588). (B) Biotinylated peptides of Cfi1/Net1 detected in cells with Cdc5-TurboID. (C) Streptavidin gel-shift assay to probe the interaction between Cdc5-TurboID and Cfi1/Net1 (A1638 and A41418). Cells were grown at room temperature in YPED. Lysates were treated with streptavidin and immunoblotted as indicated. Red arrows highlight biotinylated proteins.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Representative images of Mob1Δ132 (A41664) and Mob1Δ132-3RA (A41665) localization. (B) Enrichment of Mob1Δ132 (A41664, n = 50 cells) or Mob1Δ132-3RA (A41665, n = 85 cells) at the daughter spindle pole body (dSPB). Cells were grown like in Figure 5G. Solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals. For maximum enrichment, each dot represents a single cell. Solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test. (C) Enrichment of Mob1Δ132 (A41666, n = 54 cells) or Mob1Δ132-3RA (A41667, n = 77 cells) in the nucleus. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. Solid lines represent the average of single cell traces aligned to anaphase onset. Shaded areas represent 95% confidence intervals.
 
 By comparing the peptide signals between wild-type, cdc15-as1, and cdc5-as1 cells in our quantitative phosphoproteomics data set, we identified phosphorylation sites that depended on Cdc15 or Cdc5 activity or both (Figure 5—figure supplement 1B–E). Among them, we found 11 CDC15-dependent and 22 CDC5-dependent sites in Cfi1/Net1. Six of the CDC15-dependent sites fit Dbf2-Mob1’s preferred sequence motif RXXS* (* represents the phosphorylation site) (Mah et al., 2005), supporting our model that Dbf2-Mob1 phosphorylates Cfi1/Net1. Given that Cdc5 activates Cdc15, sites that depended on CDC15 ought to also depend on CDC5. This was indeed the case for 10 of the 11 CDC15-dependent phosphorylation sites in Cfi1/Net1.
 
 To identify sites that only depended on CDC5 but not CDC15, we subtracted CDC15-dependent sites from CDC5-dependent sites yielding 12 sites (denoted as CDC5-only, Figure 5A). Based on the distribution of all 91 phosphorylation sites and degree of disorder, we divided Cfi1/Net1 into four zones: residues 31–69 (z1, seven sites), 160–615 (z2, 53 sites), 676–840 (z3, 12 sites), and 1017–1166 (z4, 19 sites) (Figure 5A). CDC15-dependent phosphorylation sites were concentrated in zone 2, whereas CDC5-dependent sites were also found in zones 1 and 3. In contrast to Cfi1/Net1, all the CDC5-dependent phosphorylation sites in Dbf2 and Mob1 were also CDC15-dependent (Figure 5—figure supplement 1F). These data indicate that Cdc5 and Dbf2-Mob1 directly phosphorylate Cfi1/Net1. Dbf2-Mob1 on the other hand is a direct substrate of Cdc15 but not Cdc5.
 
-## Cdc5 promotes Dbf2-Mob1’s nucleolar localization by phosphorylating Cfi1/Net1
+### Cdc5 promotes Dbf2-Mob1’s nucleolar localization by phosphorylating Cfi1/Net1
 
 Having identified phosphorylation sites within Cfi1/Net1, we next asked whether they were important for the interaction between Cfi1/Net1 and Dbf2-Mob1. We generated a CFI1 allele in which all 91 phosphorylation sites were mutated to alanine (cfi1-91A). Cells harboring this allele as the sole source of CFI1/NET1 were viable and progressed through anaphase with only a slight delay in mitotic exit as judged by the timing of Mob1’s dissociation from the SPBs (Figure 5B). Interestingly, Mob1Δ132, which showed the most pronounced nucleolar localization among all Mob1 alleles analyzed, still localized to the SPBs during anaphase in cfi1-91A cells, but failed to accumulate in the nucleolus (Figure 5B and C, Figure 5—figure supplement 2A). We conclude that Cfi1/Net1 phosphorylation is required for interacting with Dbf2-Mob1.
 
@@ -110,15 +178,39 @@ Three lines of evidence indicate that Cdc5 directly phosphorylates Cfi1/Net1. Fi
 
 How does phosphorylation of Cfi1/Net1 by Cdc5 promote its binding to Dbf2-Mob1? Dbf2-Mob1 binds to Cdc15-phosphorylated Nud1 through Mob1’s phosphoserine-threonine binding domain (Rock et al., 2013). We propose that a similar mechanism might also mediate the interaction between Dbf2-Mob1 and Cdc5-phosphorylated Cfi1/Net1. To test this possibility, we introduced the mutation R253A,R254A,R257A (3RA), shown to abolish Mob1’s ability to bind phosphopeptides (Rock et al., 2013), to Mob1Δ132 and compared the localization of Mob1Δ132-eGFP and Mob1Δ132-3RA-eGFP expressed ectopically (Figure 5—figure supplement 5A). The 3RA mutation, while retaining nuclear access, abolished both the SPB and nucleolar localization of Mob1Δ132 (Figure 5G and Figure 5—figure supplement 5). These data strongly support a model in which Dbf2-Mob1 binds to Cdc5-phosphorylated Cfi1/Net1 via Mob1’s phosphoserine-threonine binding domain.
 
-## Dbf2-Mob1 promotes the release of Cdc14 from the nucleolus through Cdc5-mediated priming of Cfi1/Net1
+### Dbf2-Mob1 promotes the release of Cdc14 from the nucleolus through Cdc5-mediated priming of Cfi1/Net1
 
 To determine whether the CDC5 and MEN-dependent phosphorylation sites in Cfi1/Net1 regulate the interaction between Cfi1/Net1 and Cdc14 as our model predicted, we examined the consequences of disrupting these phosphorylation sites on the release of Cdc14 from the nucleolus. We first determined which region of Cfi1/Net1 was mediating phospho-regulation of this interaction. We mutated all phosphorylation sites in the individual zones as well as in combination and analyzed the effects on Cdc14 release from the nucleolus. This analysis revealed that only phosphorylation in zone 2 controlled Cdc14 release from Cfi1/Net1 (Figure 6—figure supplement 1A–B). It is important to note that mutating the phosphorylation sites in zone 2 also affected the ability of Cfi1/Net1 to bind Cdc14, as judged by the lower degree of Cdc14 nucleolar sequestration prior to anaphase and localization of Cdc14 to the dSPB prior to anaphase (Figure 6—figure supplement 1C). This finding indicates that the same residues involved in regulating the interaction between Cfi1/Net1 and Cdc14 are also important for forming the complex in the first place and mutating them to alanine weakens this interaction. Alternatively, mutating so many residues at once (53 sites in zone 2) could change the structure of Cfi1/Net1 and thus disrupt binding to Cdc14. Nevertheless, the increased level of free Cdc14 in the cell with cfi1-91A and the zone 2-phosphomutant explains why such severe defect in Cdc14 release from the nucleolus did not cause a significant anaphase delay as assayed by the kinetics of Cdc14 re-sequestration.
 
 Next, we examined kinase-specific phospho-mutants in Cfi1/Net1. There are three known kinases that phosphorylate Cfi1/Net1 to regulate binding to Cdc14: mitotic CDKs (mainly Clb2-Cdk1), Cdc5, and Dbf2-Mob1. CDK phosphorylation of Cfi1/Net1 during early anaphase underlies FEAR network-dependent release of Cdc14 from its inhibitor (Azzam et al., 2004). In FEAR network mutants such as slk19Δ, Cdc14 release from the nucleolus and anaphase progression are delayed and are accompanied by increased cell-to-cell variability (Figure 6A). As reported previously (Azzam et al., 2004), cells harboring a CFI1/NET1 allele with six CDK sites mutated to alanine, cfi1/net1-6Cdk, caused Cdc14 release defects similar to those of FEAR network mutants (Figure 6B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-v1.jpg)
+
+**Figure 6.:** (A) Cdc14 nucleolar release kinetics in wild-type (A41387, n = 134, 123, and 96 cells for each condition), slk19Δ (A41410, n = 86 cells), cdc15-as1 (A41408, n = 38 cells), or cdc5-as1 mutant (A41409, n = 61 cells). Cells were grown at 25°C in SC medium + 2% glucose with corresponding inhibitors and imaged every 5 min for 5 hr. Release of Cdc14 from the nucleolus was quantified as the ratio of fluorescence intensity of Cdc14-eGFP to Cfi1/Net1-mScarlet-I in the nucleolus (ICdc14/ICfi1). Relative degree of Cdc14 release from the nucleolus was calculated with the normalized minimal Cdc14 level in the nucleolus as 1 - (ICdc14(tmin)/ICfi1(tmin))/ (ICdc14(t-20)/ICfi1(t-20)), where tmin represents the frame with minimal Cdc14 level in the nucleolus and t-20 represents 20 min before movement of the spindle pole body (SPB) into bud. (B) Cdc14 nucleolar release kinetics in cells harboring wild-type CFI1/NET1 (A41387, n = 102 and 114 cells) or CFI1/NET1 phospho-mutants for CDK sites (A41420, n = 95 cells), Cdc15 sites (A41587, n = 104 cells), Cdc5 sites (A41588, n = 86 cells), and Cdc15&Cdc5 sites (A41589, n = 131 cells). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 5 min for 5 hr. (C) Distribution of anaphase duration and relative delay of nucleolar segregation for different CFI1/NET1 phospho-mutants (A41436, A41590, A41591, and A41592; n = 76, 85, 99, and 92 cells respectively) measured using the SPB marker Spc42-eGFP and the nucleolar marker Cfi1/Net1-mScarlet-I (see Figure 6—figure supplement 3 for details). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. (D) Intensities of Cdc14-eGFP at dSPBs in different CFI1/NET1 phospho-mutant cells (A41387, A41587, A41588, and A41589; n = 80, 82, 77, and 89 cells respectively). Cells were grown and imaged as in (B). (E) Genetic interactions between different CFI1/NET1 phospho-mutants and slk19Δ (A41645, A41646, A41647, A41648, A41649) or spo12Δ (A41650, A41651, A41652, A41653, A41654) analyzed by plasmid shuffling (see Materials and methods for details). Fivefold serial dilutions were spotted onto plates with or without 5’-fluoroorotic acid (5-FOA) and incubated at 25°C for 2–3 days. The presence of 5-FOA selects cells that are viable after losing the CFI1(URA3/CEN) plasmid. For all graphs, single cell traces were aligned to the frame where the dSPB entered the bud and averaged. Solid lines represent the average. Shaded areas represent 95% confidence intervals. For distributions, each dot represents a single cell. Solid lines represent the median for (A and B) and the mean for (C). ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05 by two-sided Wilcoxon rank sum test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A and B) Kinetics of Cdc14 release from the nucleolus in cells harboring wild-type CFI1/NET1 (A41387, n = 103 cells for A, n = 130 cells for B) or different CFI1/NET1 phospho-null mutants (A41398, A41399, A41400, A41401, A41404, A41405, A41397, A41402 and A41403; n = 95, 103, 146, 59, 102, 113, 128, 114, and 102 cells respectively). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 5 min for 5 hr. Release of Cdc14 from the nucleolus was quantified as in Figure 6A. Each dot represents a single cell and the solid lines represent the median. ****p<0.0001; **p<0.01; *p<0.05 by two-sided Wilcoxon rank sum test. (C) Representative images showing Cdc14 nucleolar release kinetics for cells harboring wild-type CFI1/NET1 (A41387) or CFI1/NET1 phospho-mutants with all 91 sites (A41404) or only sites in zone 2 (A41399) mutated to alanine. Yellow arrows highlight localization of Cdc14 at dSPB prior to anaphase.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Representative images showing Cdc14 nucleolar release kinetics for cells harboring wild-type CFI1/NET1 (A41387) or CFI1/NET1 phospho-mutants for Cdc15 sites (A41587), Cdc5 sites (A441588), and Cdc15 and Cdc5 sites (A41589). Red box highlights anaphase when Cdc14 is fully released in WT cells. Yellow arrows highlight localization of Cdc14 at daughter spindle pole body (dSPB) prior to anaphase.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Tracking anaphase progression and nucleolar segregation using Spc42-eGFP and Cfi1/Net1-mScarlet-I as markers, respectively. A41436 cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. (B) Quantification of spindle elongation (spindle length was estimated by measuring the distance between the two spindle pole bodies [SPBs]) and nucleolar segregation (nucleoli length was estimated by measuring the length of the major axis of the nucleolar mass) for CFI1/NET1 mutants using the SPB marker Spc42-eGFP and the nucleolar marker Cfi1/Net1-mScarlet-I (A41436, A41590, A41591, and A41592; same dataset as in Figure 6C). Single cell traces were aligned to anaphase onset (spindle length >3 μm) and averaged. Solid lines represent the average. Shaded areas represent 95% confidence intervals. (C) Cumulative density of anaphase duration (left) and delay of nucleolar segregation (right) for cells in (B). Anaphase duration was defined as the time from anaphase onset (spindle length >3 μm) to mitotic exit (spindle breakdown, determined as relaxation of the distance between SPBs). Delay of nucleolar segregation was defined as the time of nucleolar segregation (clear separation of two nucleolar masses) relative to anaphase onset.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Profiles (left) and relative degrees (right) of nuclear release of wild-type (A41584, n = 69 cells) and mutant NLSCdc14 reporters where all three potential Dbf2-Mob1 target sites (A41585, n = 59 cells) or only two out of three sites (A41586 and A41623, n = 77 and 55 cells) were mutated to alanine. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 5 min for 4 hr. Solid lines (right) represent the median. (B) Distribution of anaphase duration for CDC14 phospho-mutants in combination with CFI1 or cfi1-Cdc15&Cdc5(z2) measured using the spindle pole body (SPB) marker Spc42-eGFP (A41436, A41707, A41592, and A41708; n = 64, 65, 61, and 58 cells, respectively). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. Anaphase duration was defined as the time from anaphase onset (spindle length >3 μm) to mitotic exit (spindle breakdown). Solid lines represent the mean. ****p<0.0001; *p<0.05; ns, not significant (p>0.05) by two-sided Wilcoxon rank sum test.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/63645/elife-63645-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Cdc14 nucleolar release kinetics in cells harboring wild-type CFI1/NET1 (A41387, n = 39 cells) or CFI1/NET1 phospho-mutants for CDK sites combined with Cdc5 sites in zone 2 (A41691, n = 79 cells). Cells were grown at 25°C in SC medium + 2% glucose and imaged every 5 min for 5 hr. Single cell traces were aligned to the frame where the daughter spindle pole body (dSPB) entered the bud and averaged. Solid lines represent the average. Shaded areas represent 95% confidence intervals. Each dot represents a single cell. Solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test. (B) Distribution of anaphase duration and relative delay of nucleolar segregation for different CFI1/NET1 phospho-mutants (A41436, A41692, and A41694; n = 58, 55, and 44 cells respectively) measured using the SPB marker Spc42-eGFP and the nucleolar marker Cfi1/Net1-mScarlet-I. Cells were grown at 25°C in SC medium + 2% glucose and imaged every 3 min for 4 hr. Each dot represents a single cell. Solid lines represent the median. ****p<0.0001 by two-sided Wilcoxon rank sum test.
+
 Inactivation of the MEN using the cdc15-as1 allele led to the previously described pattern of Cdc14 localization, where Cdc14 is initially released from the nucleolus by the FEAR network during early anaphase but is then re-sequestered in the nucleolus during later stages of anaphase (Stegmeier et al., 2002; Figure 6A). Mutating the CDC15-dependent phosphorylation sites in zone 2 (cfi1-Cdc15(z2)) resulted in a significant reduction of Cdc14 release from the nucleolus but only recapitulated ~50% of the effect of inactivating CDC15 (compare Figure 6A and B). As previously reported (Visintin et al., 2008), inhibition of the analog sensitive cdc5-as1 allele caused defects in both FEAR network and MEN-mediated release of Cdc14 from the nucleolus (Figure 6A). Mutating the CDC5-only phosphorylation sites in zone 2 (cfi1-Cdc5only(z2)) resulted in a similar reduction of Cdc14 release from the nucleolus (Figure 6B) as inhibiting Cdc5. Finally, combining cfi1-Cdc5only(z2) with cfi1-Cdc15(z2) (cfi1-Cdc15&Cdc5(z2)) caused an even greater defect in Cdc14 release from the nucleolus than either mutant alone (Figure 6B, Figure 6—figure supplement 2). These results confirmed our model where Cdc5, in addition to activating the MEN, directly phosphorylates Cfi1/Net1 to target Dbf2-Mob1 to Cfi1/Net1. Phosphorylation of Cfi1/Net1 by Dbf2-Mob1 then promotes the dissociation of Cdc14 from Cfi1/Net1.
 
-## Phosphorylation of Cfi1/Net1 by Cdc5 and Dbf2-Mob1 promotes mitotic exit
+### Phosphorylation of Cfi1/Net1 by Cdc5 and Dbf2-Mob1 promotes mitotic exit
 
 Preventing the dissociation of Cdc14 from its inhibitor during anaphase ought to interfere with mitotic exit. Indeed, we observed a delay in all mutants analyzed (Figure 6C, Figure 6—figure supplement 3). Both cfi1-Cdc15(z2) and cfi1-Cdc5only(z2) mutant cells exited mitosis with an average delay of ~6 min (~25% increase, Figure 6C). In addition, consistent with Cdc5’s role in the FEAR network, we observed a significant delay in nucleolar segregation in cfi1-Cdc5only(z2) mutant cells (Figure 6C). Surprisingly, cfi1-Cdc15&Cdc5(z2) double mutant cells which had the most severe defect in Cdc14 release from the nucleolus exhibited a similar delay in mitotic exit as the cfi1-Cdc15(z2) and cfi1-Cdc5only(z2) single mutants and a less severe defect in nucleolar segregation compared to cfi1-Cdc5only(z2) (Figure 6C). This relatively short delay in mitotic exit is likely due to the fact that Cdc14 was not tightly sequestered in this mutant prior to anaphase. We observed elevated levels of Cdc14 at dSPB, indicating the presence of free Cdc14 not sequestered in the nucleolus, in both cfi1-Cdc15(z2) and cfi1-Cdc15&Cdc5(z2) cells prior to anaphase (Figure 6D, Figure 6—figure supplement 2). It appears that mutating CDC15-dependent sites in Cfi1/Net1 interferes with its ability to bind Cdc14. Nonetheless, the majority (>60%) of Cdc14 was not released during anaphase in cells harboring cfi1-Cdc15&Cdc5(z2).
 
@@ -134,31 +226,31 @@ As a model system for mitotic exit control and cellular signaling in eukaryotes,
 
 **Figure 7.:** In metaphase, Cdc5 phosphorylates Cfi1/Net1 in the nucleolus to prepare for Cdc14 release/activation in anaphase. Upon anaphase onset, the Cdc fourteen early anaphase release (FEAR) network promotes phosphorylation of Cfi1/Net1 by Clb2-Cdk1 which results in transient release of Cdc14 from the nucleolus. In the meantime, the mitotic exit etwork (MEN) kinase Cdc15 is activated by integrating inputs from both spindle position (via Tem1) and cell cycle progression (via Cdc5 and CDK activities). Activated (spindle pole body [SPB]-localized) Cdc15 phosphorylates the SPB outer plaque protein Nud1 which creates a dynamic docking site for the MEN terminal kinase complex Dbf2-Mob1 and facilitates phosphorylation and activation of Dbf2-Mob1 by Cdc15. Activated Dbf2-Mob1 gains access to the nucleus and is targeted to the nucleolus by interacting with Cdc5-primed Cfi1/Net1. Nucleolar Dbf2-Mob1 then phosphorylates Cfi1/Net1, keeping Cdc14 dissociated from its nucleolar inhibitor to trigger exit from mitosis. In addition, active Dbf2-Mob1 in the nucleolus and/or cytoplasm phosphorylates Cdc14 at its nuclear localization signal (NLS) resulting in cytoplasmic retention of Cdc14 to facilitate cytokinesis.
 
-## The role of the Polo-like kinase Cdc5 in regulating Cdc14 activation
+### The role of the Polo-like kinase Cdc5 in regulating Cdc14 activation
 
 The Polo-like kinase Cdc5 is essential for Cdc14 activation and is part of both the FEAR network and the MEN. However, the exact role(s) of Cdc5 in regulating Cdc14’s nucleolar release has remained elusive due to its multiple functions in the MEN and the FEAR network. Using an allele that bypasses CDC5’s role in MEN activation, we revealed a novel function of Cdc5 as a priming kinase that targets Dbf2-Mob1 to its substrate Cfi1/Net1.
 
 It was hypothesized that phosphorylation of Cfi1/Net1 by Cdc5 weakens the interaction between Cfi1/Net1 and Cdc14. Additional phosphorylation by mitotic CDKs or Dbf2-Mob1 was thought to further reduce the interaction resulting in the dissociation of Cdc14 from its inhibitor. Our results suggest an alternative model. Instead of, or at least in addition to, weakening the Cfi1/Net1-Cdc14 interaction, Cdc5 phosphorylation targets Dbf2-Mob1 to Cfi1/Net1. Mutating the Cdc5-only phosphorylation sites in Cfi1/Net1 abolished nucleolar enrichment of Dbf2-Mob1 and resulted in a reduction in MEN-mediated dissociation of Cdc14 from Cfi1/Net1. Interestingly, this mutation also caused severe defects in the FEAR network mediated release of Cdc14 from Cfi1/Net1. We thus propose that Cdc5 priming phosphorylation is required not only for Dbf2-Mob1 to phosphorylate Cfi1/Net1 but also for mitotic CDKs (Figure 7). Consistent with this hypothesis, we found that most Cdc5 phosphorylation sites in Cfi1/Net1 are already phosphorylated by Cdc5 in metaphase (Figure 5—figure supplement 3E). This observation indicates that the docking site(s) on Cfi1/Net1 for Dbf2-Mob1 (and mitotic CDKs) is already present in metaphase prior to the activation of the FEAR network and the MEN (Figure 7). This model is further supported by the observation that inhibition of Cdc5 eliminates CDK mediated phosphorylation of T212 in Cfi1/Net1 (Azzam et al., 2004). Cdc5 activity is regulated by the DNA damage checkpoint (Cheng et al., 1998; Sanchez et al., 1999). We speculate that making FEAR network and MEN-mediated release of Cdc14 from the nucleolus dependent on Cdc5’s priming activity ensures that DNA damage has been repaired and the checkpoint silenced prior to exit from mitosis.
 
-## The FEAR network and the MEN regulate Cdc14 binding to Cfi1/Net1 by different mechanisms
+### The FEAR network and the MEN regulate Cdc14 binding to Cfi1/Net1 by different mechanisms
 
 Although both mitotic CDKs and Dbf2-Mob1 appear to require CDC5-dependent priming phosphorylation of Cfi1/Net1, the mechanism whereby mitotic CDKs and Dbf2-Mob1 disrupt the interaction between Cfi1/Net1 and Cdc14 is quite different. Mitotic CDKs phosphorylate Cfi1/Net1 mainly on S166, T212, S252, T297, and T304; Dbf2-Mob1 targets sites S259, S295, S362, S439, and S497 (Figure 5A, Supplementary file 4). Given that mitotic CDKs and Dbf2-Mob1 target different sites, we propose that increasing the acidity of aa160–500 within Cfi1/Net1 rather than site-specific phosphorylation disrupts the interaction between Cdc14 and its inhibitor. Cfi1/Net1 is an integral part of the nucleolus, which has recently been described as a phase-separated structure (Feric et al., 2016; Shin and Brangwynne, 2017). Overall phosphorylation rather than phosphorylation of specific sites has been shown to disrupt interactions within such structures (Carpenter et al., 2018; Owen and Shewmaker, 2019). Perhaps extraction of Cdc14 from the nucleolar phase requires a similar mechanism.
 
-## The MEN as a model for cross-compartment signaling
+### The MEN as a model for cross-compartment signaling
 
 The MEN, most closely related to the Hippo pathway, employs most, if not all, of the principles governing classic receptor tyrosine signaling logic to convey a signal generated at SPBs to the MEN effector Cdc14 in the nucleolus: (1) scaffold-assisted signaling (at the SPB), (2) signal transmission across organelle boundaries – from the cytoplasm to the nucleus, and (3) activation of the effector in a sub-compartment (the nucleolus). As such, we believe that the molecular mechanisms governing MEN activity are broadly applicable to intracellular signal transmission in general.
 
-## (1) Dynamic scaffold-assisted signaling
+### (1) Dynamic scaffold-assisted signaling
 
 Scaffold-assisted assembly of signaling complexes is a widespread phenomenon in eukaryotic signal transduction cascades (Good et al., 2011). We find that in the MEN, assembly of Cdc15-(Dbf2-Mob1) signaling complex on the scaffold Nud1 is highly dynamic and this dynamicity is crucial for effector activation. We propose that this dynamicity also serves to amplify the signal. Cdc15 is the limiting enzyme of the pathway: it is the least abundant component of the MEN and hyperactivating Cdc15 increases Dbf2-Mob1’s kinase activity by >40 fold (Rock and Amon, 2011). We further hypothesize that the relatively low affinity of Mob1 for phosphorylated-Nud1 (Kd = 2.4 μM; note that for an optimal Mob1 binding phosphopeptide the Kd is 174 nM) (Rock et al., 2013) is selected for to facilitate the fast turnover rate of Dbf2-Mob1 at SPBs and thus to promote release of the kinase and signal amplification. In this model, the binding affinity/kinetics of kinases to their signaling scaffolds is an important parameter that cells fine-tune to generate desirable signaling properties of scaffold-assisted signaling pathways.
 
-## (2) Regulated compartment access
+### (2) Regulated compartment access
 
 Many signals, be they generated outside or within the cell, ultimately, result in a nuclear response. As such, signals have to be propagated from the cytoplasm into the nucleus. Our studies have led to the discovery that in the MEN, this nuclear access is cell cycle regulated. Prior to anaphase, Dbf2-Mob1 is actively exported out of the nucleus by Crm1 through the conserved NES within the N-terminus of Dbf2. Upon MEN activation, nuclear partitioning of Dbf2-Mob1 increases, likely a result of both increased nuclear import through modification of Mob1’s inhibitory N-terminus and decreased nuclear export through modification of Dbf2. One potential mechanism for the latter is via phosphorylation of Dbf2’s NES at S17 and S20, possibly by Cdc15. Our observation that mutating these two sites exacerbated the temperature sensitivity of cdc15-2 (Figure 3—figure supplement 3C) is consistent with this possibility.
 
 Disrupting the NES resulted in an increase in nuclear/nucleolar localization of Dbf2-Mob1 in all cell cycle stages, interestingly, including anaphase (Figure 3E). This increase of nuclear localization in anaphase suggests that only a small fraction of Dbf2-Mob1 is activated by Cdc15 to enter the nucleus at any given time during anaphase. Active Dbf2-Mob1 is also needed in the cytosol to phosphorylate substrates other than Cfi1/Net1 such as those involved in cytokinesis. We speculate that fine-tuning the balance of nuclear versus cytosolic Dbf2-Mob1, possibly through maintaining a dynamic shuttling of active Dbf-Mob1 between the nucleus and cytoplasm, is important for the timing of late cell cycle events. The dynamic shuttling of Dbf2-Mob1 in combination with the relatively small fraction of active Dbf2-Mob1 would also explain the absence of visible nuclear translocation of Dbf2-Mob1 upon activation. Interestingly, mammalian Dbf2, known as LATS and is thought to mainly function in the cytosol (Yu and Guan, 2013), has been found to localize to the nucleus (Britschgi et al., 2017; Li et al., 2014), indicating nuclear shuttling of kinases might play a role in Hippo signaling as well.
 
-## (3) Substrate targeting by priming phosphorylation
+### (3) Substrate targeting by priming phosphorylation
 
 Upon entry into the nucleus, Dbf2-Mob1 specifically functions in the nucleolus to promote the dissociation of Cdc14 from its inhibitor Cfi1/Net1. Priming phosphorylation by Cdc5 on Cfi1/Net1 ensures that Dbf2-Mob1 executes this function effectively. Dbf2-Mob1 binds to Cdc15-phosphorylated Nud1 through Mob1’s phosphoserine-threonine binding domain (Rock et al., 2013). We demonstrated that a similar mechanism mediates the interaction between Dbf2-Mob1 and Cdc5-phosphorylated Cfi1/Net1 (Figure 5G). Interestingly, during cytokinesis, phosphorylation of Dbf2-Mob1’s substrate Hof1 by Cdc5 has also been shown to facilitate the binding of Hof1 to Mob1 (Meitinger et al., 2011; Rock et al., 2013). Based on our observation that a quarter of potential Dbf2-Mob1 substrates are also targets of Cdc5 (Figure 5—figure supplement 1E) we further speculate that priming phosphorylation by Cdc5 is a general mechanism for targeting Dbf2-Mob1 to its substrates.
 
@@ -168,7 +260,234 @@ Priming phosphorylation is a widely used mechanism to ensure effective kinase ac
 
 ## Materials and methods
 
-## Construction of yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>See Supplementary file 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>W303</td>
+      <td>https://www.yeastgenome.org/strain/w303</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>See Supplementary file 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>See Supplementary file 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5α</td>
+      <td>New England Biolabs</td>
+      <td>Cat# C2987U</td>
+      <td>Chemical competent cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP [JL-8] (Mouse monoclonal)</td>
+      <td>Takara Bio</td>
+      <td>Cat# 632381; RRID:AB_2313808</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc [9E10] (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab32; RRID:AB_303599</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# R960-25; RRID:AB_255656</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kar2 (Rabbit polyclonal)</td>
+      <td>Gift from Mark Rose</td>
+      <td>N/A</td>
+      <td>WB (1:200,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgG (Sheep monoclonal)</td>
+      <td>GE</td>
+      <td>Cat# NA9310; RRID:AB_772193</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit IgG (Donkey monoclonal)</td>
+      <td>GE</td>
+      <td>Cat# NA934; RRID:AB_772206</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin [YOL1/34] (Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab6161; RRID:AB_305329</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-anti-Rat IgG (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 712-095-153; RRID:AB_2340652</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 189730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>α-factor</td>
+      <td>The Koch Institute Swanson Biotechnology Center – Biopolymers Core Facility</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E2611S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E05545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bradford protein assay</td>
+      <td>BioRad</td>
+      <td>Cat# 5000006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay</td>
+      <td>Pierce</td>
+      <td>Cat# 23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MyOne Streptavidin C1 dynabeads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M1404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B4639</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-NA-PP1</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CMK</td>
+      <td>MedChem Express</td>
+      <td>Cat# HY-52101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phycocyanobilin (PCB)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-396921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB_R2018b</td>
+      <td>Mathworks, Inc (2018)</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene v4.3</td>
+      <td>https://www.snapgene.com</td>
+      <td>RRID:SCR_015052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB codes</td>
+      <td>This paper</td>
+      <td>https://github.com/snow-zhou/Dbf2-Mob1 (copy archived at swh:1:rev:edb372c2e4ddf8eb2278536a7fa580abaa60acf1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mini Bead Beater</td>
+      <td>Biospec Products</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of yeast strains and plasmids
 
 All Saccharomyces cerevisiae yeast strains used in this study are derivatives of W303 (A2587) and are listed in Supplementary file 1. All plasmids used in this study are listed in Supplementary file 2. Yeast were cultured in standard YEP media (1% yeast extract, 2% peptone) with 2% D-glucose, or in standard Synthetic Complete (SC) media with either 2% D-glucose or 2% raffinose prior to induction of GAL1/10 promoters with 1% raffinose + 1% galactose as indicated in the figure legends. Cells were cultured at 25°C unless noted otherwise.
 
@@ -180,27 +499,27 @@ To generate CFI1/NET1 phospho-mutants, a fusion of wild-type CFI1/NET1 and mScar
 
 Phospho-mutants in the NLSCdc14 reporter were made by first introducing the point mutations into the integration plasmid (pA2735) with Q5 site-directed mutagenesis and then transformed and integrated at the ura3 locus. The triple mutants of CDC14 (S531,537,546A) were introduced at the endogenous locus in A2588 using Cas9-mediated gene editing as described above. The 20 bp complementary sequence for the gRNA used to target CDC14 was GGAGAGTAACGTCAGGGAGA. Ectopically expressed mob1Δ132-eGFP and mob1Δ132-3RA-eGFP were made by removing the first 132aa of Mob1 from pA2124 and pA2126 (Rock et al., 2013) with Q5 site-directed mutagenesis, generating pA2972 and pA2973. These plasmids were integrated at the trp1 locus and were expressed under the endogenous MOB1 promoter in the presence of a wild-type copy of MOB1.
 
-## FRAP analysis
+### FRAP analysis
 
-FRAP analysis was performed on a DeltaVision-OMX Super-Resolution Microscope (Applied Precision, GE Healthcare Bio-Sciences) using a 60× oil objective and a 488 nm laser adjusted to bleach an area of approximately 0.5 μm in radius. Two prebleach images were acquired followed by a laser pulse (100% intensity) of 0.02 s duration and postbleach images were acquired at 1 s per frame for 30 s. Images at each time points were maximum projections of 7 z stacks with 0.5 μm spacing. Images were analyzed with a custom MATLAB script. After subtracting the background, fluorescence intensities in the cytosol, Icytosol (t), and at the SPB, ISPB (t) were measured after segmenting the cell and SPBs. Photobleaching was corrected by normalizing ISPB (t) with Icytosol (t), ISPB_norm (t) = ISPB (t) / Icytosol (t). Double normalization for FRAP was calculated to scale the photobleaching effect between 0 and 1: ISPB_FRAP (t) = [ISPB_norm (t) − ISPB_norm (0)] / [ISPB_norm (pre) − ISPB_norm (0)], where t = 0 is the time point (frame) right after photobleaching and t = pre is the time point (frame) right before photobleaching. The double normalized FRAP curves were then fitted to a single exponential curve:  y=ymax1-e-ln2t1/2t, where ymax is the fraction recovered while t1/2 is the half-recovery time.
+FRAP analysis was performed on a DeltaVision-OMX Super-Resolution Microscope (Applied Precision, GE Healthcare Bio-Sciences) using a 60× oil objective and a 488 nm laser adjusted to bleach an area of approximately 0.5 μm in radius. Two prebleach images were acquired followed by a laser pulse (100% intensity) of 0.02 s duration and postbleach images were acquired at 1 s per frame for 30 s. Images at each time points were maximum projections of 7 z stacks with 0.5 μm spacing. Images were analyzed with a custom MATLAB script. After subtracting the background, fluorescence intensities in the cytosol, Icytosol (t), and at the SPB, ISPB (t) were measured after segmenting the cell and SPBs. Photobleaching was corrected by normalizing ISPB (t) with Icytosol (t), ISPB_norm (t) = ISPB (t) / Icytosol (t). Double normalization for FRAP was calculated to scale the photobleaching effect between 0 and 1: ISPB_FRAP (t) = [ISPB_norm (t) − ISPB_norm (0)] / [ISPB_norm (pre) − ISPB_norm (0)], where t = 0 is the time point (frame) right after photobleaching and t = pre is the time point (frame) right before photobleaching. The double normalized FRAP curves were then fitted to a single exponential curve: $y=y_{max}1-e^{\frac{-ln2}{t_{1/2}}t}$, where $y_{max}$ is the fraction recovered while $t_{1/2}$ is the half-recovery time.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 For live-cell microscopy, cells were imaged on agarose pads (2% agarose in SC medium + 2% glucose, unless otherwise noted) affixed to a glass slide and covered with a coverslip. Imaging was performed on a DeltaVision Elite platform (GE Healthcare Bio-Sciences) with an InsightSSI solid state light source, an UltimateFocus hardware autofocus system and a model IX-71, Olympus microscope controlled by SoftWoRx software. A 60× Plan APO 1.42NA objective and CoolSNAP HQ2 camera were used for image acquisition. For each time point, 7 z sections with 1 μm spacing were collected for each channel and were deconvolved. Maximum projections of the deconvolved z stack were used for fluorescence quantification.
 
 Image analysis was performed with custom scripts in MATLAB. First, yeast cells were segmented and tracked through time using the bright-field image stacks and a previously reported algorithm (Ricicova et al., 2013). A few modifications were made for the tracking process. Images were first aligned to correct for drift in the xy plane and cell segmentations in the last frame of the time-lapse series were used as the reference for tracking. Next, fluorescence images of cell cycle markers (such as Spc42 and or Cfi1/Net1) were segmented and tracked based on cell segmentation. Appearance of a cell cycle marker in a cell during the acquisition period was used to identify buds (daughter cells) and cell division events. Tracking of the cell cycle markers that migrated into the buds were used to identify the corresponding mother cells. Finally, for each division event identified, localization of Mob1 (or Cdc14) at regions defined by the cell cycle markers was quantified.
 
-For Mob1 localization at the SPBs (ISPB), maximum intensity of Mob1 at SPBs (dilated from the SPB area based on segmentation of Spc42) was used given that the size of SPBs (~100 nm) is within the diffraction limit of light microscopy. For Mob1 localization in the nucleolus (Inucleolus), the median intensity of Mob1 in the nucleolus as segmented by Cfi1/Net1 was used. To calculate the relative enrichment of Mob1 at the SPB or in the nucleolus, Mob1 intensities at these sites as defined above were normalized to the median intensity of Mob1 in the cytosol which was defined as the cell area with cell cycle marker area subtracted (Icytosol):ISPB or nucleolus / Icytosol−1. For the Dbf2-Mob1 kinase activity reporter, NLSCdc14, its translocation from the nucleus into the cytoplasm was quantified with the coefficient of variation (CV) of the pixel intensities within the dividing cell. CV is defined as the standard deviation divided by the mean.
+For Mob1 localization at the SPBs ($I_{SPB}$), maximum intensity of Mob1 at SPBs (dilated from the SPB area based on segmentation of Spc42) was used given that the size of SPBs (~100 nm) is within the diffraction limit of light microscopy. For Mob1 localization in the nucleolus ($I_{nucleolus}$), the median intensity of Mob1 in the nucleolus as segmented by Cfi1/Net1 was used. To calculate the relative enrichment of Mob1 at the SPB or in the nucleolus, Mob1 intensities at these sites as defined above were normalized to the median intensity of Mob1 in the cytosol which was defined as the cell area with cell cycle marker area subtracted $(I_{cytosol}):I_{SPB or nucleolus} / I_{cytosol}−1$. For the Dbf2-Mob1 kinase activity reporter, NLSCdc14, its translocation from the nucleus into the cytoplasm was quantified with the coefficient of variation (CV) of the pixel intensities within the dividing cell. CV is defined as the standard deviation divided by the mean.
 
-To quantify Cdc14 release from the nucleolus, the ratio of Cdc14 intensity to Cfi1/Net1 intensity  (ICdc14/ICfi1) was calculated for each pixel within the nucleolus as segmented using Cfi1/Net1 and averaged.
+To quantify Cdc14 release from the nucleolus, the ratio of Cdc14 intensity to Cfi1/Net1 intensity $(I_{Cdc14}/I_{Cfi1})$ was calculated for each pixel within the nucleolus as segmented using Cfi1/Net1 and averaged.
 
-Single cell traces were aligned based on the timing of anaphase onset or the movement of a SPB into the bud as indicated in figures and averaged. 95% confidence intervals were calculated as μ±1.96*σ/n, where µ and σ denote the mean and standard deviation respectively and n is the number of cells measured.
+Single cell traces were aligned based on the timing of anaphase onset or the movement of a SPB into the bud as indicated in figures and averaged. 95% confidence intervals were calculated as $\mu\pm1.96*\sigma/\sqrt{n}$, where µ and σ denote the mean and standard deviation respectively and n is the number of cells measured.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Log-phase cultures of cells grown in YEP + 2% glucose were harvested and treated with 5% trichloroacetic acid (TCA) at 4°C overnight. TCA treated cell pellets were washed with acetone, air dried, and resuspended in lysis buffer (10 mM Tris, 1 mM EDTA, 2.75 mM DTT, pH = 8). Cells were lysed by bead-beating using a Multivortexer (max speed, 20 min) and glass beads at 4°C and followed by boiling in SDS PAGE protein loading buffer for 5 min. Lysates were clarified by centrifugation and were resolved on a 15-well NuPAGE 4–12% Bis-Tris protein gel (Thermo Fisher Scientific) prior to transfer onto nitrocellulose membranes. GFP-Mob1 and variants were detected using an anti-GFP antibody (Clontech, JL-8) at a 1:1000 dilution. Nud1-13myc and Cfi1/Net1-3myc were detected using an anti-Myc antibody (Abcam, 9E10) at a 1:500 dilution. Mob1-V5-TurboID was detected using an anti-V5 antibody (Invitrogen) at a 1:2000 dilution. Kar2 was detected using a rabbit anti-Kar2 antiserum at a 1:200,000 dilution. Secondary antibodies were used at a 1: 10,000 dilution. Blots were imaged using the ECL Plus system (GE Healthcare).
 
-## TurboID-MS and streptavidin gel-shift assay
+### TurboID-MS and streptavidin gel-shift assay
 
 To identify biotinylated proteins as a result of interaction or physical proximity with TurboID tagged bait protein by mass spectrometry (MS), log-phase cells with TurboID tagged bait and untagged control cells were grown in YEP + 2% glucose + 50 μM biotin at room temperature for 3.5 hr (approximately two doublings). Approximately 40 OD of cells were harvested for each sample and were treated with 5% TCA at 4°C for a minimum of 10 min. TCA treated cells were pelleted, washed with 50 mM Tris (pH = 7.5) and acetone, and dried. Dried cell pellets were resuspended in lysis buffer (50 mM Tris, pH 7.5, 1 mM EDTA, 5 mM DTT, 1 mM PMSF, and complete mini protease inhibitor cocktail by Roche) and were lysed by bead-beating with chilled MiniBeadbeater (Biospec) and glass beads for 5 min followed by boiling in 1% SDS for 5 min. Lysates were diluted with RIPA buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 0.1% SDS, 0.5% sodium deoxycholate, 1% NP40) and clarified by centrifugation. Protein concentration of the lysates was measured by Bradford assay. 350 μl of MyOne streptavidin C1 dynabeads (Thermo Fisher Scientific) were washed twice with RIPA buffer, incubated with clarified lysates containing ~3 mg of total protein for each sample with rotation for 1 hr at room temperature, then moved to 4°C and incubated overnight with rotation. On the second day, the supernatants (flow through) were removed and the beads were washed twice with 1 ml of 0.1 M Na2CO3, once with 1 ml of 2 M urea in 10 mM Tris (pH = 7.5), and twice with 1 ml RIPA buffer. Bound proteins were eluted by boiling the beads in 30 μl of 3× protein loading buffer supplemented with 2 mM biotin. Small aliquots of samples were saved along the process to monitor for the enrichment for biotinylated proteins by immunoblotting for V5 (included in the TurboID tagged bait) and biotin.
 
@@ -212,11 +531,11 @@ There are several endogenous biotinylated proteins in yeast. To identify specifi
 
 For the streptavidin gel-shift assays, cell lysates were prepared as for typical immunoblotting experiments. Prior to loading samples onto protein gels, 20 μl of lysates for each sample was incubated with 2 μl of 10 mg/ml streptavidin for 10 min at room temperature with rotation. Treated samples were then resolved by SDS-PAGE gel at 4°C and processed for immunoblotting as described above.
 
-## PhyB-PIF based optogenetics
+### PhyB-PIF based optogenetics
 
-The PhyB-PIF based optogenetics experiments were performed based on previous reports (Jost and Weiner, 2015; Yang et al., 2013). Cells grown to log phase in 1× SC medium + 2% glucose were incubated with 31.25 μM (0.5 μl of 12.5 mM stock in 200 μl culture) Phycocyanobilin (PCB, Santa Cruz Biotechnology) for 2 hr at room temperature in the dark. Cells were then pelleted and resuspended in fresh medium without PCB and were mounted onto an agarose pad with 2× SC medium + 2% glucose for imaging. To apply the light, we attached one 650 nm and one 750 nm light-emitting diode (LED, Light-speed Technologies) onto the microscope condenser. Light was controlled manually during the experiments. For the continuous exposure of 650 nm light during time-course experiments, the light was briefly turned off for each image acquisition. To quantify the relative enrichment of target protein in the PhyB-anchored region, pixel intensities of the target protein (Mob1-eGFP-PIF, IPIF) and PhyB (PhyB-mCherry, IPhyB) inside the cell were fitted to a line (IPIF=α+βIPhyB). The slope of the fitted line (β) was used to assess the extent of co-localization or enrichment of the target protein in the PhyB-anchored region. This method is robust against both photobleaching of the target protein during the time-course and difference in the shape and size of the anchored region (the nucleolus) at different cell cycle stages.
+The PhyB-PIF based optogenetics experiments were performed based on previous reports (Jost and Weiner, 2015; Yang et al., 2013). Cells grown to log phase in 1× SC medium + 2% glucose were incubated with 31.25 μM (0.5 μl of 12.5 mM stock in 200 μl culture) Phycocyanobilin (PCB, Santa Cruz Biotechnology) for 2 hr at room temperature in the dark. Cells were then pelleted and resuspended in fresh medium without PCB and were mounted onto an agarose pad with 2× SC medium + 2% glucose for imaging. To apply the light, we attached one 650 nm and one 750 nm light-emitting diode (LED, Light-speed Technologies) onto the microscope condenser. Light was controlled manually during the experiments. For the continuous exposure of 650 nm light during time-course experiments, the light was briefly turned off for each image acquisition. To quantify the relative enrichment of target protein in the PhyB-anchored region, pixel intensities of the target protein (Mob1-eGFP-PIF, $I_{PIF}$) and PhyB (PhyB-mCherry, $I_{PhyB}$) inside the cell were fitted to a line ($I_{PIF}=\alpha+\betaI_{PhyB}$). The slope of the fitted line ($\beta$) was used to assess the extent of co-localization or enrichment of the target protein in the PhyB-anchored region. This method is robust against both photobleaching of the target protein during the time-course and difference in the shape and size of the anchored region (the nucleolus) at different cell cycle stages.
 
-## Phosphoproteomics
+### Phosphoproteomics
 
 To map phosphorylation events that depend on CDC5 or CDC15 (MEN) activity, we used the analog-sensitive alleles of CDC5 (cdc5-as1) or CDC15 (cdc15-as1) and compared phosphopeptides with and without inhibiting the kinase in anaphase (and metaphase for Cdc5) enriched cultures. To enrich for anaphase cells, we first synchronized cells in G1 with α-factor (5 μg/ml for 2.5 hr). α-factor arrested cultures were then washed and released into YEP + 2% glucose + inhibitor (5 μM CMK for CDC5/cdc5-as1 or 10 μM 1-NA-PP1 for CDC15/cdc15-as1) at room temperature to progress to anaphase (~100 min). Synchronization and cell cycle stage were assessed by monitoring budding and spindle length at various time points. Spindles were visualized by immunofluorescence using an anti-tubulin antibody (Abcam ab6161). Cultures collected for the anaphase experiment harbored 74% (WT + 1-NA-PP1), 95% (cdc15-as1, 1-NA-PP1), 69% (WT + CMK), and 94% (cdc5-as1 + CMK) cells with anaphase spindles.
 
@@ -226,10 +545,10 @@ The protein extraction was ultrasonically lysed at 4°C for 2 min with six round
 
 To identify peptides whose phosphorylation depended on CDC5 or CDC15, we calculated the ratio as well as the p-value of peptide intensities in WT versus as1 samples. The p-values were calculated using a two-sided Student’s t-test and were adjusted for false discovery rate (FDR) of multiple hypothesis testing using the linear step-up procedure (Benjamini–Hochberg procedure). A threshold of ratio R > 2 and padj<0.05 was used to identify hits. Additional hits were also included for peptides that were not defected in the as1 samples but were detected in at least five out of seven replicates (or four out of six replicates in the metaphase experiment) of the WT samples. Peptides that were only detected in one replicate of the as1 samples but were detected in at least five out of seven replicates (or four out of six replicates in the metaphase experiment) of the WT samples with a ratio >2 were also included. After we have identified hits for peptides, we mapped the peptides and phosphorylation sites in those peptides to proteins in the yeast proteome. For phosphorylation sites that were detected in multiple peptides, peptides with a single phosphorylation were given priority. We marked a site as a strong hit only when all single phosphorylation peptides for the specific site fit our selection criteria. If a site was only detected in multi-phosphorylation peptides that fit our selection criteria, we designated that site as a weak hit.
 
-## Plasmid shuffling
+### Plasmid shuffling
 
 To assess the genetic interactions between different CFI1/NET1 phospho-mutants and FEAR mutants (slk19Δ or spo12Δ), we constructed strains in the background of slk19Δ or spo12Δ with cfi1/net1Δ carrying a URA3-based CEN plasmid expressing wild-type CFI1/NET1 (pA2858) and different CFI1/NET1 phospho-mutants integrated at the leu2 locus (A41645-A41654). Growing these strains on plates with 5’-fluoroorotic acid (5-FOA) selects cells that are viable after losing the URA3 plasmid.
 
-## Data and code availability
+### Data and code availability
 
 The mass spectrometry phosphoproteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD020369. Custom MATLAB scripts are available at https://github.com/snow-zhou/Dbf2-Mob1 (copy archived at swh:1:rev:edb372c2e4ddf8eb2278536a7fa580abaa60acf1).

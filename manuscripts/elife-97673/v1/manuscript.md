@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Ophthalmology and Visual Science, Moran Eye Institute, University of Utah Salt Lake City United States
+1. Department of Ophthalmology and Visual Science, Moran Eye Institute, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 2. Regel Therapeutics Boston United States
 
 † Corresponding author
@@ -34,7 +34,7 @@ To facilitate the application of these inhibitory-neuron specific viral vectors 
 
 We validated three serotypes (1,7,9) of a pAAV-h56D-tdTomato (Mehta et al., 2019) and the AAV-PHP.eB-S5E2.tdTomato (Vormstein-Schneider et al., 2020). We report results from 10 viral injections, of which 3 injections of AAV-h56D-tdTomato, and 7 injections of AAV-PHP.eB-S5E2.tdTomato, made in 4 marmoset monkeys (see ‘Materials and methods’ and Supplementary file 1). Tissue sections through V1 were double immunoreacted for GABA and PV and imaged on a fluorescent microscope. We quantified the laminar distribution of viral-induced tdTomato (tdT) expression as well as of GABA+ and PV+ cells revealed by immunohistochemistry (IHC), and counted double- and triple-labeled cells to determine the specificity and coverage of viral-induced tdT expression across marmoset V1 layers (see ‘Materials and methods’).
 
-## V1 laminar distribution of GABA+ and PV+ neurons
+### V1 laminar distribution of GABA+ and PV+ neurons
 
 We first determined the V1 laminar distribution of GABA+ and PV+ neurons identified by IHC (Figure 1). To this goal, in each section used for analysis, we counted GABA+ and PV+ cells within 2 × 100-µm-wide regions of interest (ROIs) spanning all layers in dorsal V1 anterior to the posterior pole, for a total of six ROIs in three tissue sections selected randomly. Cortical layer boundaries were determined using DAPI and/or PV staining (Figure 1B and C), as we found that PV-IHC reveals laminar boundaries consistent with those defined by DAPI.
 
@@ -52,7 +52,7 @@ We compared the laminar distributions of GABA+ and PV+ cell density in marmoset 
 
 Counts of cells double labeled for GABA+ and PV+ revealed that 92.3% ± 1.9 of PV+ cells across all layers were GABA+, and that PV+ cells represent on average 61.4% ± 2.7 of all GABA+ cells, ranging from 54.5% ± 3.7 in L6 to 78.5% ± 5.6 in L4C (Figure 2E). This differs from mouse V1 in which PV+ cells represent about 40% of all GABA cells (Xu et al., 2010).
 
-## Laminar specificity and coverage of GABA-specific AAV-h56D
+### Laminar specificity and coverage of GABA-specific AAV-h56D
 
 Figure 3 shows tdT expression at three injection sites, each of a different serotype (9,7,1) of the GABA-specific AAV-h56D-tdT. Identical injection volumes of each serotype, delivered at three different cortical depths (see ‘Materials and methods’), resulted in viral expression regions that differed in both size as well as laminar distribution, suggesting the different serotypes may have different capacity of infecting cortical neurons and layers. The AAV7 injection resulted in the smallest expression region, which additionally was biased to the superficial and deep layers, with only a few cells expressing tdT in the middle layers (Figure 3B). AAV9 (Figure 3A) and AAV1 (Figure 3C) resulted in larger expression regions, which involved all cortical layers. Given identical volumes and titers used for the AAV9 and AAV7 injections (injected volume of the AAV1 was the same but titer was higher; see Supplementary file 1), as well as identical post-injection survival times for all three serotypes, the differences in the size of the expression region are likely due to different tropism and/or viral spread of the different serotypes. However, given that we only made a single injection per serotype, we cannot exclude that other factors may have contributed to the reduced spread of the AAV7.
 
@@ -70,7 +70,7 @@ To quantify the specificity of tdT expression induced by each serotype, that is,
 
 To quantify the efficiency of the virus in inducing tdT expression in GABA cells, for each serotype separately we measured the viral coverage as the percent of GABA+ cells within the viral injection site that colocalized with tdT expression (Figure 4C). Overall, across all layers, AAV9 and AAV1 showed significantly higher coverage (66.1% ± 3.9 and 64.9% ± 3.7) than AAV7, which showed much lower coverage values (34% ± 5.6; p=0.014 for both comparisons; Bonferroni-corrected independent-samples median test, n = 4 ROIs across two sections for each serotype). AAV9 and AAV1 coverage was similar across layers, and both showed slightly higher coverage in superficial (AAV9: 67.4% ± 2.5; AAV1: 69% ± 6.5) and middle layers (AAV9: 78.5% ± 9.1; AAV1: 76.9% ± 7.4), compared to deep layers (AAV9: 50–55%, AAV1: 44–60%). Instead, AAV7 showed very low coverage values in L4A/B (8.3% ± 8.3) and L4C (14.4% ± 6.7) and highest values in L6 (47.9% ± 4.3) followed by L2/3 (44.6% ± 9). AAV7 coverage was significantly lower than AAV9 coverage in L2/3 (p=0.014), L4A/B (p=0.014), and L4C (p=0.014), and was significantly lower than AAV1 in L4C (p=0.014; Bonferroni-corrected independent-samples median test, n = 4 ROIs for each serotype). Thus, our results suggest that AAV9 is the serotype of choice for marmoset studies of GABAergic neurons requiring highest specificity and coverage across all layers, but AAV7 may be a better choice for studies intending to restrict transgene expression to L6 or L2/3 GABA cells with good specificity.
 
-## Laminar specificity and coverage of PV-specific AAV-PHP.eB-S5E2
+### Laminar specificity and coverage of PV-specific AAV-PHP.eB-S5E2
 
 We assessed the laminar specificity and coverage of the AAV-PHP.eB-S5E2-tdT following injections of different viral volumes ranging from 90 nl to 585 nl (see Supplementary file 1). Figure 5 shows fluorescent images of tdT expression at the site of viral injection for an example 105 nl injection (Figure 5A) and an example 315 nl injection (Figure 5B).
 
@@ -88,9 +88,17 @@ The specificity of tdT expression induced by different injection volumes is quan
 
 The viral coverage resulting from each injection volume is quantified in Figure 6C separately for the three different volume groups and shown for each individual injection case in Supplementary file 2. Coverage of the AAV-PHP.eB-S5E2-tdT was high, did not depend on injection volume, and it was similar across layers for all volumes. Overall, across all layers coverage ranged from 78% ± 1.9 to 81.6% ± 1.8.
 
-## Reduced GABA and PV immunoreactivity at the viral injection site
+### Reduced GABA and PV immunoreactivity at the viral injection site
 
 Qualitative observations of tissue sections seemed to indicate slightly reduced expression of both GABA and PV immunoreactivity at the viral injection sites, extending beyond the borders of the injection core (Figure 7—figure supplement 1). To quantify this observation, we counted GABA+ and PV+ cells at the site of the viral injections (n = 12 ROIs across 6 sections for AAV-h56D injection sites [pooled across serotypes], and 28 ROIs across 14 sections for AAV-S5E2 injection sites) and at sites located several millimeters beyond the viral injection borders (n = 6 ROIs across three sections). We found that both the number and density of GABA+ and PV+ cells were reduced across all layers at the site of the AAV-h56D (Figure 7A–D) and AAV-S5E2 (Figure 7E–H) injections compared to control tissue away from the injection sites. The magnitude of the reduction in immunoreactivity depended on the viral type, with the AAV-h56D virus inducing an overall greater and more significant reduction in GABA immunoreactivity (28.1% and 21.5% reduction in mean GABA+ cell number and density across all layers, respectively, p=0.024 in Figure 7A and p=0.013 in Figure 7B, Mann–Whitney U test) than in PV immunoreactivity (20.5 and 10.2% reduction in mean PV cell number and density across all layers, respectively; p=0.041 in Figure 7C and p=0.125 in Figure 7D, Mann–Whitney U test) and vice versa for the AAV-S5E2 virus, which reduced PV immunoreactivity (33.3% and 25.4% reduction in mean PV+ cell number and density across all layers, respectively, p<0.001 in Figure 7G and p=0.013 in Figure 7H) more than GABA immunoreactivity (27.4% and 20.2% reduction in mean GABA+ cell number and density across all layers, respectively, p=0.005 in Figure 7E and p=0.042 in Figure 7F). The reduced GABA and PV immunoreactivity caused by the viruses imply that the specificity of the viruses we have validated in this study is likely higher than estimated in Figures 4 and 6. Moreover, reduced GABA and PV immunoreactivity could at least partly underlie the apparent reduction in specificity observed for larger PV-AAV injection volumes (see ‘Discussion’).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97673/elife-97673-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Number (A) and density (B) of GABA+ cells inside (pink; n = 12 regions of interest [ROIs] across six sections) and outside (red; n = 6 ROIs across three sections) the GABA-AAV injection sites. (C, D) Number (C) and density (D) of PV+ cells inside (light blue; n = 12 ROIs across six sections) and outside (dark blue; n = 6 ROIs across three sections) the GABA-AAV injection sites. (E, F) Number (E) and density (F) of GABA+ cells inside (pink; n = 28 ROIs across 14 sections) and outside (red; n = 6 ROIs across three sections) the PV-AAV injection sites. (G, H) Number (G) and density (H) of PV+ cells inside (light blue; n = 28 ROIs across 14 sections) and outside (dark blue; n = 6 ROIs across three sections) the PV-AAV injection sites. Error bars: s.e.m. Asterisks: statistically significant comparisons. In each panel, statistical comparisons across layers were performed using the Bonferroni-corrected Kruskal–Wallis or independent-samples median tests; comparisons between total IN and OUT populations in each panel were performed using the Mann–Whitney U test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97673/elife-97673-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Left: epifluorescent image of an example GABA-AAV injection site in V1. Middle: same section imaged under the green channel to reveal PV-IHC. Right: same section imaged under the red channel to reveal GABA-IHC. In all panels, solid white contours mark the top and bottom of the cortex, dashed contours outline the region of reduced immunoreactivity. Cortical layers are indicated in the middle panel. (B) Same as in (A) but for an example PV-AAV injected site. Scale bars in (A, B): 1 mm.
 
 ## Discussion
 
@@ -104,46 +112,46 @@ We compared laminar distribution, specificity, and coverage resulting from diffe
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
 Enhancer-AAV vectors carrying the gene for the reporter protein tdTomato (tdT) were injected in area V1 of marmoset monkeys. After an appropriate survival time, the animals were euthanized. The brains were processed for histology and IHC to identify GABA+ and PV+ cells and cortical layers. The laminar distribution of GABA+ and PV+ cells, and of viral-mediated tdT expression was analyzed quantitatively.
 
-## Animals
+### Animals
 
 Four female common marmosets (Callithrix jacchus) between the ages of 2 and 8 years old (weight about 500 g), obtained from the University of Utah in-house colony, were used in this study. All procedures were approved by the University of Utah Institutional Animal Care and Use Committee (IAUC protocol no. 21-12015) and conformed to the ethical guidelines set forth by the USDA and NIH.
 
-## Surgical procedures
+### Surgical procedures
 
 Animals were pre-anesthetized with alfaxalone (10 mg/kg, i.m.) and midazolam (0.1 mg/kg, i.m.) and an IV catheter was placed in either the saphenous or tail vein. To maintain proper hydration Lactated Ringers solution was continuously infused at 2–4 cc/kg/hr. The animal was then intubated with an endotracheal tube, placed in a stereotaxic apparatus, and artificially ventilated. Anesthesia was maintained with isoflurane (0.5–2.5%) in 100% oxygen. Throughout the experiment, end-tidal CO2, ECG, blood oxygenation, and rectal temperature were monitored continuously.
 
 Under aseptic conditions, the scalp was incised and several small (~2 mm) craniotomies and durotomies were made over dorsal V1. A single injection of a viral vector was made into each craniotomy. On completion of the injections, each craniotomy was filled with Gelfoam and sealed with dental cement, the skin was sutured, and the animal was recovered from anesthesia. Animals survived 3–4 weeks (one animal survived 2 weeks) post-injections (Supplementary file 1), to allow for viral expression, and were sacrificed with beuthanasia (0.22 ml/kg, i.p.) and perfused transcardially with saline for 2–3 min, followed by 4% paraformaldehyde in 0.1 M phosphate buffer for 15–20 min.
 
-## Injection of viral vectors
+### Injection of viral vectors
 
 A total of 10 viral injections were made in four marmosets (Supplementary file 1). Each of two animals received one injection, and one animal five injections (three in one hemisphere and two in the other hemisphere) of AAV-PHP.eB-S5E2.tdTomato, obtained from the Dimidschstein laboratory (Vormstein-Schneider et al., 2020). The fourth animal received three injections, each of a different AAV serotype (1, 7, and 9) of the AAV-h56D-tdTomato (Mehta et al., 2019), obtained from the Zemelman laboratory (UT Austin). Viral vectors were loaded in glass micropipettes (tip diameter 30–45 µm) and pressure injected using a PicoPump (World Precision Instruments). To ensure viral infection of all cortical layers, each injection was made at three depths within the cortical column: 1.2–1.5 mm from the cortical surface (deep), 0.8–1.0 mm (middle), and 0.4–0.6 mm (superficial). After injecting at each depth, the pipette was left in place for 2–4 min before being retracted to the next depth, and for 5 min before being fully retracted from the brain. The PV-specific AAV was injected at four different total volumes: 585 nl (one injection), 315 nl (two injections), 180 nl (two injections), and 90–105 nl (two injections). The AAV-h56D vectors were each injected at a total volume of 600 nl. One-third of each total volume per injection was slowly (6–15 nl/min) injected at each of the three depths. For animals that received multiple injections in the same hemisphere, injections were spaced at least 3 mm apart to ensure no overlap. Viral titers and volumes of each injection as well as post-injection survival times for each case are reported in Supplementary file 1.
 
-## Viral preparation
+### Viral preparation
 
-## AAV-PHP.eB-S5E2.tdT
+#### AAV-PHP.eB-S5E2.tdT
 
 Details about AAV- PHP.eB-S5E2.tdTomato cloning and production are provided in the original publication (Vormstein-Schneider et al., 2020). Briefly, the E2 enhancer sequence was amplified from mouse genomic DNA using the primer aatctaacatggctgctata and caattgctcagagttatttt (618 bp). Enhancer, reporter, and effector cloning was performed using the Gibson Cloning Assembly Kit (New England BioLabs, Cat# NEB-E5510S) following standard procedures. Specifically, for AAV-E2-SYP-dTomato, we amplified the SYP–tdTomato coding sequence from the plasmid Addgene no. 34881. The rAAVs were produced using standard production methods. Polyethylenimine was used for transfection and OptiPrep gradient (Sigma) was used for viral particle purification. Titer was estimated by quantitative PCR with primers for the WPRE sequence. The batch used in this study had a titer of 8.3 × 1012 viral genomes/ml.
 
-## AAV-h56D.tdT
+#### AAV-h56D.tdT
 
 Details about AAV-h56D.tdTomato cloning and production are provided in the original publication (Mehta et al., 2019). Briefly, viruses were assembled using a modified helper-free system (Stratagene) as the indicated serotypes (rep/cap). Viruses were purified on sequential cesium gradients according to published methods (Grieger et al., 2006). Titers were measured using a payload-independent qPCR technique (Aurnhammer et al., 2012). Typical titers were 1 × 1013 - 1 × 1014 viral genomes/ml.
 
-## Histology and Immunohistochemistry
+### Histology and Immunohistochemistry
 
 Area V1 was dissected away from the rest of the visual cortex. The block was postfixed for 3–12 hr in 4% paraformaldehyde, sunk in 30% sucrose for cryoprotection, and frozen sectioned in the parasagittal plane at 40 µm thickness. In one case (MM423, which received a 315 nl injection of AAV-PHP.eB-S5E2.tdTomato), the brain was sunk in a 20% glycerol solution and frozen at –80°C for 6 months prior to being sectioned. To locate the viral injection sites, a 1:5 series of tissue sections were wet-mounted and observed under microscopic fluorescent illumination. Sections containing each injection site had their coverslips removed, and fluorescent IHC was performed on free-floating sections to reveal both GABA+ and PV+ neurons. No IHC was performed to enhance reporter proteins signals as these were sufficiently bright. GABA and PV IHC was performed by incubating sections for 3 days at 4°C in primary antibody, followed by 12 hr incubation at room temperature in secondary antibody. The primary and secondary antibodies used for GABA-IHC were a rabbit anti-GABA antibody (1:200; Sigma-Aldrich, Burlington, MA; RRID:AB_477652) and an Alexa Fluor 647 AffiniPure Donkey Anti-Rabbit IgG (H+L) (1:200; Jackson ImmunoResearch Laboratory Inc, West Grove, PA; RRID:AB_2492288), respectively. The primary and secondary antibodies used for PV-IHC were a guinea pig anti-parvalbumin antibody (1:1000; Swant, Burgdorf, Switzerland; RRID:AB_2665495) and an Alexa Fluor 488 AffiniPure Donkey Anti-Guinea Pig IgG (H+L) (1:200; Jackson ImmunoResearch Laboratories Inc; RRID:AB_2340472), respectively. The sections were then mounted and coverslipped with Vectashield Antifade Mounting Medium with DAPI (Vector Laboratories, Newark, CA).
 
-## Data analysis
+### Data analysis
 
 Multi-channel wide-field fluorescent images of V1 tissue sections containing an injection site spanning all layers were acquired at 5–7 depths in the z plane using a Zeiss AxioImager Z2 fluorescent microscope equipped with a ×10 objective. Images were stitched, rotated, and cropped as necessary using Zen Blue software (Carl Zeiss AG) and loaded into Neurolucida software (MBF Bioscience) for data quantification. To quantify inhibitory neurons that expressed the viral-mediated reporter protein tdTomato, GABA+ and PV+ neurons revealed by IHC at the viral injection sites (i.e., the data shown in Figures 4 and 6, and the ‘IN’ data in Figure 7), we counted single-, double-, and triple-labeled cells across two 100-μm-wide ROIs extending through all layers at the injection site on each channel, yielding a total of four ROIs across two tissue sections being counted and analyzed for each viral injection site. All ROIs used for counts were positioned at the center of the viral expression region in sections where the latter encompassed all cortical layers. To quantify the distribution of GABA+ and PV+ immunoreactivity in control tissue (i.e., the data shown in Figure 2, and the ‘OUT’ data in Figure 7), we counted single- and double-labeled cells across two 100-μm-wide ROIs extending through all layers in each tissue section for a total of six ROIs across three sections. The ROIs for this analysis were selected to be millimeters away from the V1 region containing the viral injection sites. Cell counting was performed by two undergraduate researchers (AI, PB) and reviewed for accuracy by senior lab members (FF, AA). Cortical layer boundaries were determined using DAPI staining or PV-IHC (after confirming the layer boundaries based on PV-IHC matched those seen in DAPI). Data collected in Neurolucida were exported to Excel (Microsoft) and SPSS (IBM) software for quantitative and statistical analyses.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare cell counts and neuronal densities across different viral serotypes (for the GABA-AAVs), different viral volumes (for the PV-AAV), or different cortical layers, we used an ANOVA, when the data were normally distributed, and either the non-parametric independent-samples Kruskal–Wallis test, an independent-samples median test, or the Mann–Whitney U test for data that were not normally distributed, unless otherwise indicated in the ‘Results’ section. All multiple comparisons were Bonferroni-corrected.
 
-## Materials availability statement
+### Materials availability statement
 
 All materials used in this study are available commercially except for the AAV-h56D-tdTomato virus, which can be obtained directly from the Zemelman laboratory (UT Austin).

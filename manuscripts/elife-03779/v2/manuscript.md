@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03779.001 Plasma membrane lipid composition must be maintained during growth and under environmental insult. In yeast, signaling mediated by TOR Complex 2 (TORC2)-dependent protein kinase Ypk1 controls lipid abundance and distribution in response to membrane stress. Ypk1, among other actions, alleviates negative regulation of L-serine:palmitoyl-CoA acyltransferase, upregulating production of long-chain base precursors to sphingolipids. To explore other roles for TORC2-Ypk1 signaling in membrane homeostasis, we devised a three-tiered genome-wide screen to identify additional Ypk1 substrates, which pinpointed both catalytic subunits of the ceramide synthase complex. Ypk1-dependent phosphorylation of both proteins increased upon either sphingolipid depletion or heat shock and was important for cell survival. Sphingolipidomics, other biochemical measurements and genetic analysis demonstrated that these modifications of ceramide synthase increased its specific activity and stimulated channeling of long-chain base precursors into sphingolipid end-products. Control at this branch point also prevents accumulation of intermediates that could compromise cell growth by stimulating autophagy. DOI: http://dx.doi.org/10.7554/eLife.03779.001
+Plasma membrane lipid composition must be maintained during growth and under environmental insult. In yeast, signaling mediated by TOR Complex 2 (TORC2)-dependent protein kinase Ypk1 controls lipid abundance and distribution in response to membrane stress. Ypk1, among other actions, alleviates negative regulation of L-serine:palmitoyl-CoA acyltransferase, upregulating production of long-chain base precursors to sphingolipids. To explore other roles for TORC2-Ypk1 signaling in membrane homeostasis, we devised a three-tiered genome-wide screen to identify additional Ypk1 substrates, which pinpointed both catalytic subunits of the ceramide synthase complex. Ypk1-dependent phosphorylation of both proteins increased upon either sphingolipid depletion or heat shock and was important for cell survival. Sphingolipidomics, other biochemical measurements and genetic analysis demonstrated that these modifications of ceramide synthase increased its specific activity and stimulated channeling of long-chain base precursors into sphingolipid end-products. Control at this branch point also prevents accumulation of intermediates that could compromise cell growth by stimulating autophagy.
 
 ## Introduction
 
@@ -34,21 +34,913 @@ To gain further insight into how the TORC2-Ypk1 signaling axis contributes to PM
 
 ## Results
 
-## A three-tiered screen to identify new Ypk1 substrates
+### A three-tiered screen to identify new Ypk1 substrates
 
-We devised a three-step strategy (
+We devised a three-step strategy (Figure 1A) to pinpoint bona fide cellular targets of Ypk1, utilizing bioinformatics to predict potential Ypk1 substrates, then an in vivo genetic test involving a novel variation of the synthetic dosage lethality method to winnow the list to likely candidates, and finally biochemical analysis in vitro to confirm whether the identified gene product serves as a direct substrate of Ypk1. The physiological relevance of Ypk1-dependent modification of each protein on the resulting final list could then been evaluated.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig1-v2.jpg)
 
-**Figure 1.:** (A) The three-part screening strategy to identify Ypk1 substrates is shown schematically as a flow chart. Numbers indicate the number of hits/considered genes at each step in the screen. (B) The bioinformatic approach towards identifying Ypk1 substrates is schematized as a flowchart with each filter as a box. Genes were first filtered by MOTIPS on the basis of having likely phosphorylatable Ypk1 motifs. Subsequently, substrates were filtered by having many Ypk1 motifs or having a Ypk1 site known to be phosphorylated in published data sets. Lastly, genes were filtered by requiring the gene to have a published chemical sensitivity like Ypk1 does, or a published interaction with Ypk1, Ypk1 regulators (TORC2 or PP2A) or sphingolipid biosynthetic machinery. (C) A possible explanation for Ypk1 synthetic dosage lethality interactions is shown. Normally, the cell has enough kinase activity to buffer overexpression of a substrate (Substrate 2), so that essential substrates are regulated and normal growth is unperturbed. However, concurrent decrease in kinase activity coupled with substrate overexpression causes loss of regulation of essential substrate(s) (Substrate 1) leading to observable growth defects. (D) ypk1-as ypk2Δ (yAM135–A) cells were transformed with P-GFP (negative control), PGAL1-Orm1 or PGAL1-Orm2 (known Ypk1 substrates, positive SDL controls) plasmids. Overnight cultures were then serially diluted onto either dextrose (to repress substrate overexpression) or galatose (to induce substrate overexpression) containing media with increasing concentrations of the Ypk1-as inhibitor 3-MB-PP1. (GAL1E) GST-Orm1(1–85) (pFR203) and GST-Fps1(1–255) (pBT6) were purified from E. coli and incubated with [γ-32P]ATP and Ypk1-as, purified from S. cerevisiae, in the absence or presence of 3-MB-PP1. The products were then resolved by SDS/PAGE and analyzed as described in ‘Materials and methods’.DOI: http://dx.doi.org/10.7554/eLife.03779.003
+**Figure 1.:** (A) The three-part screening strategy to identify Ypk1 substrates is shown schematically as a flow chart. Numbers indicate the number of hits/considered genes at each step in the screen. (B) The bioinformatic approach towards identifying Ypk1 substrates is schematized as a flowchart with each filter as a box. Genes were first filtered by MOTIPS on the basis of having likely phosphorylatable Ypk1 motifs. Subsequently, substrates were filtered by having many Ypk1 motifs or having a Ypk1 site known to be phosphorylated in published data sets. Lastly, genes were filtered by requiring the gene to have a published chemical sensitivity like Ypk1 does, or a published interaction with Ypk1, Ypk1 regulators (TORC2 or PP2A) or sphingolipid biosynthetic machinery. (C) A possible explanation for Ypk1 synthetic dosage lethality interactions is shown. Normally, the cell has enough kinase activity to buffer overexpression of a substrate (Substrate 2), so that essential substrates are regulated and normal growth is unperturbed. However, concurrent decrease in kinase activity coupled with substrate overexpression causes loss of regulation of essential substrate(s) (Substrate 1) leading to observable growth defects. (D) ypk1-as ypk2Δ (yAM135–A) cells were transformed with PGAL1-GFP (negative control), PGAL1-Orm1 or PGAL1-Orm2 (known Ypk1 substrates, positive SDL controls) plasmids. Overnight cultures were then serially diluted onto either dextrose (to repress substrate overexpression) or galatose (to induce substrate overexpression) containing media with increasing concentrations of the Ypk1-as inhibitor 3-MB-PP1. (E) GST-Orm1(1–85) (pFR203) and GST-Fps1(1–255) (pBT6) were purified from E. coli and incubated with [γ-32P]ATP and Ypk1-as, purified from S. cerevisiae, in the absence or presence of 3-MB-PP1. The products were then resolved by SDS/PAGE and analyzed as described in ‘Materials and methods’.
 
-For initial bioinformatic search of the yeast proteome, we developed a position-weighted consensus sequence logo (Figure 1B) for the preferred Ypk1 phospho-acceptor site based on two primary criteria: (a) the known Ypk1 sites in five, validated in vivo targets (Fpk1, Fpk2, Orm1, Orm2, and Gpd1) (Roelants et al., 2010, 2011; Lee et al., 2012b; Niles et al., 2012; Sun et al., 2012); and, (b) the sequence preference displayed by Ypk1 for phosphorylation of synthetic peptides in vitro (Casamayor et al., 1999; Mok et al., 2010). All demonstrated substrates either in vivo or in vitro contain Arg at positions −5 and −3 with respect to the phosphorylated Ser (or Thr); thus, these positions were invariant in the search motif. Given that nearly all the verified sites within known in vivo targets possess a hydrophobic residue (V, I, F) at position +1, the search motif gave preference to sites with a hydrophobic residue at the +1 position. We then took advantage of the existing MOTIPS motif analysis package (Lam et al., 2010) to identify those S. cerevisiae gene products that contain occurrences of the search logo. Several authentic Ypk1 substrates (e.g., Fpk1, Orm1, and Orm2) contain multiple Ypk1 phosphorylation sites. Thus, we filtered our search further by prioritizing candidates containing multiple matches to the search logo, as predicted by MOTIPS. However, to avoid disregarding potential Ypk1 substrates with a single predicted match to the sequence logo, we also considered MOTIPS hits wherein there was existing evidence in the PhosphoGRID database (Sadowski et al., 2013) indicating that a predicted site is phosphorylated in vivo. To narrow down the list of potential substrates further, we chose to pursue those gene products containing matches to the sequence logo for which there was existing information in the literature suggesting a phenotypic relationship to known Ypk1-dependent processes: (a) a loss-of-function mutation in the candidate gene exhibits elevated sensitivity to agents (aureobasidin A, caspofungin, and/or myriocin) toward which a ypk1Δ mutant is also sensitive (Hillenmeyer et al., 2008); (b) the candidate gene product is reported to be involved in a genetic or biochemical interaction with Ypk1, as curated in YeastMine (Balakrishnan et al., 2012); (c) the candidate gene product is connected in some way to known Ypk1 regulators (e.g., TORC2, PP2A); and/or, (d) the candidate gene product is involved in a known Ypk1-regulated process (e.g., sphingolipid metabolism) (for further details, see ‘Materials and methods’). Reassuringly, our approach identified three known Ypk1 substrates (Fpk1, Orm1 and Orm2); absence of Fpk2 and Gpd1 from the list generated solely by the MOTIPS search criteria arose from the fact that these substrates contain only a single predicted site that is not presently recorded in PhosphoGRID. For this reason, we also restored for consideration additional gene products that contain a single match to the consensus sequence logo that YeastMine indicated are involved in processes in which Ypk1 is implicated. The resulting candidates, grouped via cellular process on the basis of current GO Slim terminology (http://www.geneontology.org/GO.slims.shtml), are cataloged in Table 1, and represent fewer than 100 gene products out of the approximately 6000 protein-coding genes in the yeast genome (Lin et al., 2013) [although the number of authentic open-reading-frames undergoes constant revision (http://www.yeastgenome.org/cache/genomeSnapshot.html)].10.7554/eLife.03779.004Table 1.Known Ypk1 substrates and potential substrates predicted by MOTIPS listed under GO Slim terms*DOI: http://dx.doi.org/10.7554/eLife.03779.004GeneMOTIPS sitesChemical Sensitivity/YeastMine Interaction(s)SDL scoreYpk1 dosage rescueIn vitro substrateKnown Ypk1 Substrates GPD1/YDL022W*24PYeastMine+++N/A+ FPK1/YNR047W37, 200, 244, 436, 481YeastMine+N/A+ FPK1(D621A) [Kinase-dead mutant]37, 200, 244, 436, 481YeastMine++N/A+ ORM1/YGR038W52, 53YeastMine+++N/A+ ORM2/YLR350W47, 48YeastMine++++N/A+Cytoskeleton Organization AVO1/YOL078W552P,597,1078YeastMine−N/AN/A AVO2/YMR068W273P, 305, 407YeastMine−N/AN/A BEM2/YER155C83, 168, 1810, 1813Myr, YeastMine−N/AN/A BNI1/YNL271C119, 1138P, 1533AbA, Casp, YeastMine−N/AN/A CDH1/YGL003C51, 195, 213PAbA, YeastMineTOXIC−N/A ENT1/YDL161W160PYeastMine−N/AN/A GIC2/YDR309C90, 312, 345PMyr, AbA−N/AN/A LSB3/YFR024C-A262PYeastMine−N/AN/A PAL1/YDR348C49P, 391, 436AbA, Casp++++N/A− SLA1/YBL007C445, 447P, 449P, 477YeastMine−N/AN/A TSC11/YER093C19P, 97, 188YeastMineN/AN/AN/A YHR097C58, 288P, 294PMyr+++N/A+/− YSC84/YHR016C274, 374PMyr, YeastMine−N/AN/ABiological Process Unknown COM2/YER130C251, 370, 380Myr, YeastMine−N/AN/A ECM3/YOR092W*312, 350Myr, AbA, YeastMine−N/AN/A ICS2/YBR157C14, 95, 136, 172PMyr−N/AN/A JIP4/YDR475C348, 352, 592, 649Myr, AbAN/AN/AN/A KKQ8/YKL168C83, 113, 144, 146, 212, 293YeastMine−N/AN/A RTS3/YGR161C*30, 238PYeastMine−N/AN/A SEG1/YMR086W56, 118P, 217, 634, 752PMyr+N/AN/A YDR186C334P, 540P, 542P, 620, 715PYeastMine−N/AN/A YHR080C401, 513, 667YeastMine−N/AN/A YNR014W54, 115, 156, 197YeastMine+++N/A+ YPK3/YBR028C72, 73, 90PMyr, Casp−N/AN/ATranscription from RNA Polymerase II Promoter EPL1/YFL024C24, 28, 61YeastMine−N/AN/A FKH1/YIL131C404Myr, YeastMineTOXIC−− GAL11/YOL051W1003PMyr, YeastMine−N/AN/A HCM1/YCR065W*80AbA, YeastMine−N/AN/A HOT1/YMR172W*387, 520, 586Myr−N/AN/A RLM1/YPL089C*20MyrTOXIC−N/A SMP1/YBR182C*20, 107YeastMineTOXIC++ SSN2/YDR443C608PMyr−N/AN/A YHP1/YDR451C*180, 182Myr−N/AN/AMitotic Cell Cycle BCK2/YER167W12, 38, 373, 430YeastMineTOXIC−N/A ESC2/YDR363W114, 143, 145YeastMine−N/AN/A PTK2/YJR059W59P, 82, 91, 171, 275Myr, YeastMine+N/AN/A SET3/YKR029C236, 405, 428YeastMine−N/AN/A SWI4/YER111C816PMyr, YeastMine−N/AN/A VHS2/YIL135C316, 318, 325PMyr, Casp−N/AN/A ZDS1/YMR273C*78, 370AbA, YeastMine−N/AN/A ZDS2/YML109W183, 267, 345YeastMine−N/AN/AProtein Phosphorylation HAL5/YJL165C17P, 217P, 233YeastMine−N/AN/A KIN1/YDR122W652, 791P, 879, 986PYeastMine+N/AN/A KIN2/YLR096W665P, 818, 1020Myr−N/AN/A KSP1/YHR082C594, 827P, 884PMyr, AbA, YeastMineTOXIC−N/A NPR1/YNL183C125P, 255P, 257P, 317PYeastMine++++N/A− SKY1/YMR216C383PMyr, YeastMine−N/AN/A YAK1/YJL141C128P, 206, 240Myr, Casp, YeastMine−N/AN/A YPL150W371P, 452, 890YeastMine−N/AN/ALipid Metabolic Process ADR1/YDR216W180, 230P, 756Myr, AbA−N/AN/A CDC1/YDR182W*9N/A−N/A+ CKI1/YLR133W14P, 25P, 30PMyr, AbA, YeastMine−N/AN/A GPT2/YKR067W27, 652Myr+++N/A+ LAC1/YKL008C*23, 24Myr, YeastMine+++N/A+ LAG1/YHL003C24PMyr, YeastMine+++N/A+ LCB3/YJL134W16PMyr, YeastMine−N/A+Cellular Ion Homeostasis and Transport AVT3/YKL146W55, 59P, 172, 174Myr, AbA, YeastMine−N/AN/A CCH1/YGR217W†146, 148, 347YeastMine−N/A+ FPS1/YLL043W147, 181, 185, 570PMyr, YeastMine+++++N/A+ MNR2/YKL064W165, 620, 621, 826AbA−N/AN/A NHA1/YLR138W*544, 830Myr, YeastMine−N/AN/A PPZ1/YML016C122, 203, 250PMyr, YeastMineTOXIC−N/ATranslation DED1/YOR204W84, 576PYeastMine−N/AN/A HCR1/YLR192C*223Myr, AbA, YeastMine−N/AN/A HEF3/YNL014W*898Myr, AbA, YeastMine−N/AN/A RPL3/YOR063W24P, 337Myr, AbA, YeastMine−N/AN/A SUI2/YJR007W*58Myr−N/AN/A TEF1/YPR080W*72PMyr−N/AN/ACell Wall Organization or Biogenesis BPH1/YCR032W1334, 1336, 1963Casp−N/AN/A CSR2/YPR030W61, 103, 525, 987Myr−N/AN/A ROM2/YLR371W76P, 193p, 396YeastMine−N/AN/A SSD1/YDR293C164P, 482P, 503Myr, AbA, YeastMineTOXIC−N/AGolgi Vesicle Transport BRE5/YNR051C398PMyr, YeastMine+++N/A− EXO84/YBR102C76, 313, 494, 554YeastMine−N/AN/A MUK1/YPL070W173, 184P, 185PMyr+++N/A+/− RGP1/YDR137W220, 364P, 450, 452YeastMine−N/AN/ASignaling IRA2/YOL081W882, 884, 1578, 1745, 3069YeastMineN/AN/AN/A GIS3/YLR094C*249, 333Myr, AbA−N/AN/A MDS3/YGL197W757, 824, 842, 851, 1204Myr, AbA, YeastMine+++N/A− SYT1/YPR095C277P, 410, 728YeastMineN/AN/AN/ADNA Replication CDC13/YDL220C314, 333PYeastMineTOXIC−N/A CTI6/YPL181W155, 216PMyr, YeastMine−N/AN/A RIM4/YHL024W93, 429, 525, 607YeastMine−N/AN/AEndocytosis ALY2/YJL084C166P, 201, 225, 803Myr−N/AN/A ROD1/YOR018W563, 617, 807, 823Myr+++N/A+/− ROG3/YFR022W425, 584, 718YeastMine−N/AN/AOther FRT1/YOR324C167, 201, 203, 228P, 385Myr, YeastMine−N/AN/A HER1/YOR227W28P, 102p, 157PMyr, AbATOXIC−+ YSP2/YDR326C326, 518, 1237Myr, YeastMine+++N/A+RNA Catabolic Process JSN1/YJR091C174, 275P, 600YeastMine−N/AN/A PUF2/YPR042C55, 143, 246, 902MyrN/AN/AN/ACytokinesis CYK3/YDL117W159, 207P, 746AbA, YeastMine+++N/A−Chromosome Segregation DSN1/YIR010W240, 250PYeastMine−N/AN/APeroxisome Organization PEX31/YGR004W432PYeastMine++N/A+Pseudohyphal Growth PAM1/YDR251W471, 553P, 625Myr, AbA, Casp, YeastMine−N/AN/AResponse to Starvation ATG21/YPL100W191, 237PMyr+++N/A+*Genes that are not bioinformatically predicted Ypk1 substrates, but contain Ypk1 motifs and were included in this study are marked with an asterisk. SDL assay results are listed for each bioinformatically predicted Ypk1 substrate. The scoring system reports growth phenotypes of the ypk1-as ypk2Δ strain transformed with the indicated PGAL1-SUBSTRATE plasmid upon overexpression on galactose with varying levels of 3-MB-PP1-imposed Ypk1-as inhibition. A growth phenotype is defined as at least 1 serial dilution spot less growth than YCpLG-GFP control at the given 3-MB-PP1 concentration. A strong growth phenotype is defined as no growth at the given 3-MB-PP1 concentration. (+++++) indicates a growth phenotype with no 3-MB-PP1. (++++) is a strong growth phenotype on 1 μM 3-MB-PP1. (+++) indicates a growth phenotype on 1 μM 3-MB-PP1. (++) is defined as no phenotype on 1 μM 3-MB-PP1, but a strong growth phenotype on 2 μM 3-MB-PP1. (+) indicates no phenotype on 1 μM 3-MB-PP1, but a detectable growth phenotype on 2 μM 3-MB-PP1. (−) indicates no growth phenotype at any concentration of 3-MB-PP1 tested. TOXIC indicates overexpression of the putative substrate on galactose-containing medium was deleterious to growth even in the wild-type control strain (BY4741). These toxic genes were then tested for Ypk1 dosage rescue (for details, see ‘Materials and methods’); here, (+) indicates that Ypk1 overexpression could at least partially rescue the overexpression toxicity of the indicated gene and (−) indicates that Ypk1 overexpression could not rescue the overexpression toxicity. Lastly, the results of testing the indicated purified predicted Ypk1 target as a substrtate in the in vitro protein kinase assay with purified Ypk1-as; here, (+) indicates that Ypk1-as- dependent (3-MB-PP1 inhibitable) incorporation was detectable for the substrate at a level comparable to incorporation into the positive control [the known Ypk1 substrate, GST-Orm1(1–85)]; (+/−) indicates that readily detectable Ypk1-as-dependent incorporation was found, but at a level lower than that seen for an equivalent amount of GST-Orm1(1–85) protein. (N/A) indicates that the indicated gene product was not tested in the indicated assay.†The SDL assay was performed with a plasmid constitutively overexpressing CCH1 under the TDH3 promoter [pBCT-CCH1H, (Iida et al., 2007)], as our efforts to generate a PGAL1-CCH1 vector failed.
+For initial bioinformatic search of the yeast proteome, we developed a position-weighted consensus sequence logo (Figure 1B) for the preferred Ypk1 phospho-acceptor site based on two primary criteria: (a) the known Ypk1 sites in five, validated in vivo targets (Fpk1, Fpk2, Orm1, Orm2, and Gpd1) (Roelants et al., 2010, 2011; Lee et al., 2012b; Niles et al., 2012; Sun et al., 2012); and, (b) the sequence preference displayed by Ypk1 for phosphorylation of synthetic peptides in vitro (Casamayor et al., 1999; Mok et al., 2010). All demonstrated substrates either in vivo or in vitro contain Arg at positions −5 and −3 with respect to the phosphorylated Ser (or Thr); thus, these positions were invariant in the search motif. Given that nearly all the verified sites within known in vivo targets possess a hydrophobic residue (V, I, F) at position +1, the search motif gave preference to sites with a hydrophobic residue at the +1 position. We then took advantage of the existing MOTIPS motif analysis package (Lam et al., 2010) to identify those S. cerevisiae gene products that contain occurrences of the search logo. Several authentic Ypk1 substrates (e.g., Fpk1, Orm1, and Orm2) contain multiple Ypk1 phosphorylation sites. Thus, we filtered our search further by prioritizing candidates containing multiple matches to the search logo, as predicted by MOTIPS. However, to avoid disregarding potential Ypk1 substrates with a single predicted match to the sequence logo, we also considered MOTIPS hits wherein there was existing evidence in the PhosphoGRID database (Sadowski et al., 2013) indicating that a predicted site is phosphorylated in vivo. To narrow down the list of potential substrates further, we chose to pursue those gene products containing matches to the sequence logo for which there was existing information in the literature suggesting a phenotypic relationship to known Ypk1-dependent processes: (a) a loss-of-function mutation in the candidate gene exhibits elevated sensitivity to agents (aureobasidin A, caspofungin, and/or myriocin) toward which a ypk1Δ mutant is also sensitive (Hillenmeyer et al., 2008); (b) the candidate gene product is reported to be involved in a genetic or biochemical interaction with Ypk1, as curated in YeastMine (Balakrishnan et al., 2012); (c) the candidate gene product is connected in some way to known Ypk1 regulators (e.g., TORC2, PP2A); and/or, (d) the candidate gene product is involved in a known Ypk1-regulated process (e.g., sphingolipid metabolism) (for further details, see ‘Materials and methods’). Reassuringly, our approach identified three known Ypk1 substrates (Fpk1, Orm1 and Orm2); absence of Fpk2 and Gpd1 from the list generated solely by the MOTIPS search criteria arose from the fact that these substrates contain only a single predicted site that is not presently recorded in PhosphoGRID. For this reason, we also restored for consideration additional gene products that contain a single match to the consensus sequence logo that YeastMine indicated are involved in processes in which Ypk1 is implicated. The resulting candidates, grouped via cellular process on the basis of current GO Slim terminology (http://www.geneontology.org/GO.slims.shtml), are cataloged in Table 1, and represent fewer than 100 gene products out of the approximately 6000 protein-coding genes in the yeast genome (Lin et al., 2013) [although the number of authentic open-reading-frames undergoes constant revision (http://www.yeastgenome.org/cache/genomeSnapshot.html)].
 
-As the secondary filter for the candidates recognized bioinformatically, we developed an in vivo approach to identify those gene products that manifested an expected hallmark of protein-substrate interaction. We reasoned that under conditions where the level of activity of an essential kinase, like Ypk1, is near-limiting for normal growth, high-level over-expression of an authentic substrate might tie up the available pool of active enzyme and prevent efficient phosphorylation of other cellular substrates necessary for growth and/or viability (
+**Table 1.**
+ Known Ypk1 substrates and potential substrates predicted by MOTIPS listed under GO Slim terms*
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>MOTIPS sites</th>
+      <th>Chemical Sensitivity/YeastMine Interaction(s)</th>
+      <th>SDL score</th>
+      <th>Ypk1 dosage rescue</th>
+      <th>In vitro substrate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Known Ypk1 Substrates</td>
+    </tr>
+    <tr>
+      <td>GPD1/YDL022W*</td>
+      <td>24P</td>
+      <td>YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>FPK1/YNR047W</td>
+      <td>37, 200, 244, 436, 481</td>
+      <td>YeastMine</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>FPK1(D621A) [Kinase-dead mutant]</td>
+      <td>37, 200, 244, 436, 481</td>
+      <td>YeastMine</td>
+      <td>++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ORM1/YGR038W</td>
+      <td>52, 53</td>
+      <td>YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ORM2/YLR350W</td>
+      <td>47, 48</td>
+      <td>YeastMine</td>
+      <td>++++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cytoskeleton Organization</td>
+    </tr>
+    <tr>
+      <td>AVO1/YOL078W</td>
+      <td>552P,597,1078</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>AVO2/YMR068W</td>
+      <td>273P, 305, 407</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>BEM2/YER155C</td>
+      <td>83, 168, 1810, 1813</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>BNI1/YNL271C</td>
+      <td>119, 1138P, 1533</td>
+      <td>AbA, Casp, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CDH1/YGL003C</td>
+      <td>51, 195, 213P</td>
+      <td>AbA, YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ENT1/YDL161W</td>
+      <td>160P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>GIC2/YDR309C</td>
+      <td>90, 312, 345P</td>
+      <td>Myr, AbA</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>LSB3/YFR024C-A</td>
+      <td>262P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PAL1/YDR348C</td>
+      <td>49P, 391, 436</td>
+      <td>AbA, Casp</td>
+      <td>++++</td>
+      <td>N/A</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>SLA1/YBL007C</td>
+      <td>445, 447P, 449P, 477</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>TSC11/YER093C</td>
+      <td>19P, 97, 188</td>
+      <td>YeastMine</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YHR097C</td>
+      <td>58, 288P, 294P</td>
+      <td>Myr</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+/−</td>
+    </tr>
+    <tr>
+      <td>YSC84/YHR016C</td>
+      <td>274, 374P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Biological Process Unknown</td>
+    </tr>
+    <tr>
+      <td>COM2/YER130C</td>
+      <td>251, 370, 380</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ECM3/YOR092W*</td>
+      <td>312, 350</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ICS2/YBR157C</td>
+      <td>14, 95, 136, 172P</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>JIP4/YDR475C</td>
+      <td>348, 352, 592, 649</td>
+      <td>Myr, AbA</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>KKQ8/YKL168C</td>
+      <td>83, 113, 144, 146, 212, 293</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RTS3/YGR161C*</td>
+      <td>30, 238P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SEG1/YMR086W</td>
+      <td>56, 118P, 217, 634, 752P</td>
+      <td>Myr</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YDR186C</td>
+      <td>334P, 540P, 542P, 620, 715P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YHR080C</td>
+      <td>401, 513, 667</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YNR014W</td>
+      <td>54, 115, 156, 197</td>
+      <td>YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>YPK3/YBR028C</td>
+      <td>72, 73, 90P</td>
+      <td>Myr, Casp</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Transcription from RNA Polymerase II Promoter</td>
+    </tr>
+    <tr>
+      <td>EPL1/YFL024C</td>
+      <td>24, 28, 61</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>FKH1/YIL131C</td>
+      <td>404</td>
+      <td>Myr, YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>GAL11/YOL051W</td>
+      <td>1003P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HCM1/YCR065W*</td>
+      <td>80</td>
+      <td>AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HOT1/YMR172W*</td>
+      <td>387, 520, 586</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RLM1/YPL089C*</td>
+      <td>20</td>
+      <td>Myr</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SMP1/YBR182C*</td>
+      <td>20, 107</td>
+      <td>YeastMine</td>
+      <td>TOXIC</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>SSN2/YDR443C</td>
+      <td>608P</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YHP1/YDR451C*</td>
+      <td>180, 182</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Mitotic Cell Cycle</td>
+    </tr>
+    <tr>
+      <td>BCK2/YER167W</td>
+      <td>12, 38, 373, 430</td>
+      <td>YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ESC2/YDR363W</td>
+      <td>114, 143, 145</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PTK2/YJR059W</td>
+      <td>59P, 82, 91, 171, 275</td>
+      <td>Myr, YeastMine</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SET3/YKR029C</td>
+      <td>236, 405, 428</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SWI4/YER111C</td>
+      <td>816P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>VHS2/YIL135C</td>
+      <td>316, 318, 325P</td>
+      <td>Myr, Casp</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ZDS1/YMR273C*</td>
+      <td>78, 370</td>
+      <td>AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ZDS2/YML109W</td>
+      <td>183, 267, 345</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Protein Phosphorylation</td>
+    </tr>
+    <tr>
+      <td>HAL5/YJL165C</td>
+      <td>17P, 217P, 233</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>KIN1/YDR122W</td>
+      <td>652, 791P, 879, 986P</td>
+      <td>YeastMine</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>KIN2/YLR096W</td>
+      <td>665P, 818, 1020</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>KSP1/YHR082C</td>
+      <td>594, 827P, 884P</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>NPR1/YNL183C</td>
+      <td>125P, 255P, 257P, 317P</td>
+      <td>YeastMine</td>
+      <td>++++</td>
+      <td>N/A</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>SKY1/YMR216C</td>
+      <td>383P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YAK1/YJL141C</td>
+      <td>128P, 206, 240</td>
+      <td>Myr, Casp, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>YPL150W</td>
+      <td>371P, 452, 890</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Lipid Metabolic Process</td>
+    </tr>
+    <tr>
+      <td>ADR1/YDR216W</td>
+      <td>180, 230P, 756</td>
+      <td>Myr, AbA</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CDC1/YDR182W*</td>
+      <td>9</td>
+      <td>N/A</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CKI1/YLR133W</td>
+      <td>14P, 25P, 30P</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>GPT2/YKR067W</td>
+      <td>27, 652</td>
+      <td>Myr</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LAC1/YKL008C*</td>
+      <td>23, 24</td>
+      <td>Myr, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LAG1/YHL003C</td>
+      <td>24P</td>
+      <td>Myr, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LCB3/YJL134W</td>
+      <td>16P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cellular Ion Homeostasis and Transport</td>
+    </tr>
+    <tr>
+      <td>AVT3/YKL146W</td>
+      <td>55, 59P, 172, 174</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CCH1/YGR217W†</td>
+      <td>146, 148, 347</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>FPS1/YLL043W</td>
+      <td>147, 181, 185, 570P</td>
+      <td>Myr, YeastMine</td>
+      <td>+++++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>MNR2/YKL064W</td>
+      <td>165, 620, 621, 826</td>
+      <td>AbA</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>NHA1/YLR138W*</td>
+      <td>544, 830</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PPZ1/YML016C</td>
+      <td>122, 203, 250P</td>
+      <td>Myr, YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Translation</td>
+    </tr>
+    <tr>
+      <td>DED1/YOR204W</td>
+      <td>84, 576P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HCR1/YLR192C*</td>
+      <td>223</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HEF3/YNL014W*</td>
+      <td>898</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RPL3/YOR063W</td>
+      <td>24P, 337</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SUI2/YJR007W*</td>
+      <td>58</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>TEF1/YPR080W*</td>
+      <td>72P</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cell Wall Organization or Biogenesis</td>
+    </tr>
+    <tr>
+      <td>BPH1/YCR032W</td>
+      <td>1334, 1336, 1963</td>
+      <td>Casp</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CSR2/YPR030W</td>
+      <td>61, 103, 525, 987</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ROM2/YLR371W</td>
+      <td>76P, 193p, 396</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>SSD1/YDR293C</td>
+      <td>164P, 482P, 503</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Golgi Vesicle Transport</td>
+    </tr>
+    <tr>
+      <td>BRE5/YNR051C</td>
+      <td>398P</td>
+      <td>Myr, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>EXO84/YBR102C</td>
+      <td>76, 313, 494, 554</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>MUK1/YPL070W</td>
+      <td>173, 184P, 185P</td>
+      <td>Myr</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+/−</td>
+    </tr>
+    <tr>
+      <td>RGP1/YDR137W</td>
+      <td>220, 364P, 450, 452</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Signaling</td>
+    </tr>
+    <tr>
+      <td>IRA2/YOL081W</td>
+      <td>882, 884, 1578, 1745, 3069</td>
+      <td>YeastMine</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>GIS3/YLR094C*</td>
+      <td>249, 333</td>
+      <td>Myr, AbA</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>MDS3/YGL197W</td>
+      <td>757, 824, 842, 851, 1204</td>
+      <td>Myr, AbA, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>SYT1/YPR095C</td>
+      <td>277P, 410, 728</td>
+      <td>YeastMine</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">DNA Replication</td>
+    </tr>
+    <tr>
+      <td>CDC13/YDL220C</td>
+      <td>314, 333P</td>
+      <td>YeastMine</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CTI6/YPL181W</td>
+      <td>155, 216P</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RIM4/YHL024W</td>
+      <td>93, 429, 525, 607</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Endocytosis</td>
+    </tr>
+    <tr>
+      <td>ALY2/YJL084C</td>
+      <td>166P, 201, 225, 803</td>
+      <td>Myr</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ROD1/YOR018W</td>
+      <td>563, 617, 807, 823</td>
+      <td>Myr</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+/−</td>
+    </tr>
+    <tr>
+      <td>ROG3/YFR022W</td>
+      <td>425, 584, 718</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Other</td>
+    </tr>
+    <tr>
+      <td>FRT1/YOR324C</td>
+      <td>167, 201, 203, 228P, 385</td>
+      <td>Myr, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HER1/YOR227W</td>
+      <td>28P, 102p, 157P</td>
+      <td>Myr, AbA</td>
+      <td>TOXIC</td>
+      <td>−</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>YSP2/YDR326C</td>
+      <td>326, 518, 1237</td>
+      <td>Myr, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="6">RNA Catabolic Process</td>
+    </tr>
+    <tr>
+      <td>JSN1/YJR091C</td>
+      <td>174, 275P, 600</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PUF2/YPR042C</td>
+      <td>55, 143, 246, 902</td>
+      <td>Myr</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cytokinesis</td>
+    </tr>
+    <tr>
+      <td>CYK3/YDL117W</td>
+      <td>159, 207P, 746</td>
+      <td>AbA, YeastMine</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td colspan="6">Chromosome Segregation</td>
+    </tr>
+    <tr>
+      <td>DSN1/YIR010W</td>
+      <td>240, 250P</td>
+      <td>YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Peroxisome Organization</td>
+    </tr>
+    <tr>
+      <td>PEX31/YGR004W</td>
+      <td>432P</td>
+      <td>YeastMine</td>
+      <td>++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="6">Pseudohyphal Growth</td>
+    </tr>
+    <tr>
+      <td>PAM1/YDR251W</td>
+      <td>471, 553P, 625</td>
+      <td>Myr, AbA, Casp, YeastMine</td>
+      <td>−</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="6">Response to Starvation</td>
+    </tr>
+    <tr>
+      <td>ATG21/YPL100W</td>
+      <td>191, 237P</td>
+      <td>Myr</td>
+      <td>+++</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Genes that are not bioinformatically predicted Ypk1 substrates, but contain Ypk1 motifs and were included in this study are marked with an asterisk. SDL assay results are listed for each bioinformatically predicted Ypk1 substrate. The scoring system reports growth phenotypes of the ypk1-as ypk2Δ strain transformed with the indicated PGAL1-SUBSTRATE plasmid upon overexpression on galactose with varying levels of 3-MB-PP1-imposed Ypk1-as inhibition. A growth phenotype is defined as at least 1 serial dilution spot less growth than YCpLG-GFP control at the given 3-MB-PP1 concentration. A strong growth phenotype is defined as no growth at the given 3-MB-PP1 concentration. (+++++) indicates a growth phenotype with no 3-MB-PP1. (++++) is a strong growth phenotype on 1 μM 3-MB-PP1. (+++) indicates a growth phenotype on 1 μM 3-MB-PP1. (++) is defined as no phenotype on 1 μM 3-MB-PP1, but a strong growth phenotype on 2 μM 3-MB-PP1. (+) indicates no phenotype on 1 μM 3-MB-PP1, but a detectable growth phenotype on 2 μM 3-MB-PP1. (−) indicates no growth phenotype at any concentration of 3-MB-PP1 tested. TOXIC indicates overexpression of the putative substrate on galactose-containing medium was deleterious to growth even in the wild-type control strain (BY4741). These toxic genes were then tested for Ypk1 dosage rescue (for details, see ‘Materials and methods’); here, (+) indicates that Ypk1 overexpression could at least partially rescue the overexpression toxicity of the indicated gene and (−) indicates that Ypk1 overexpression could not rescue the overexpression toxicity. Lastly, the results of testing the indicated purified predicted Ypk1 target as a substrtate in the in vitro protein kinase assay with purified Ypk1-as; here, (+) indicates that Ypk1-as- dependent (3-MB-PP1 inhibitable) incorporation was detectable for the substrate at a level comparable to incorporation into the positive control [the known Ypk1 substrate, GST-Orm1(1–85)]; (+/−) indicates that readily detectable Ypk1-as-dependent incorporation was found, but at a level lower than that seen for an equivalent amount of GST-Orm1(1–85) protein. (N/A) indicates that the indicated gene product was not tested in the indicated assay.†The SDL assay was performed with a plasmid constitutively overexpressing CCH1 under the TDH3 promoter [pBCT-CCH1H, (Iida et al., 2007)], as our efforts to generate a PGAL1-CCH1 vector failed._
+
+As the secondary filter for the candidates recognized bioinformatically, we developed an in vivo approach to identify those gene products that manifested an expected hallmark of protein-substrate interaction. We reasoned that under conditions where the level of activity of an essential kinase, like Ypk1, is near-limiting for normal growth, high-level over-expression of an authentic substrate might tie up the available pool of active enzyme and prevent efficient phosphorylation of other cellular substrates necessary for growth and/or viability (Figure 1C). This scheme is a novel variation on a genetic approach referred to as synthetic dosage lethality (SDL) (Sopko et al., 2006; Sharifpoor et al., 2012). To limit Ypk1 activity, we used ypk1-as ypk2Δ cells, which express from the YPK1 locus an analog-sensitive allele, Ypk1(L424A) (Roelants et al., 2011; Niles et al., 2012), and titrated down its activity by addition of a low concentration of an efficacious inhibitor,1-(tert-butyl)-3-(3-methylbenzyl)-1H-pyrazolo[3,4-d]pyrimidin-4-amine (3-MB-PP1) (Burkard et al., 2007) that has no effect on wild-type cells (see Figure 2C). To achieve high-level over-expression, each bioinformatic hit was expressed from the galactose-inducible GAL1 promoter on a CEN plasmid. As proof of concept, we used two known Ypk1 substrates, Orm1 and Orm2, as positive controls and GFP, which is not a Ypk1 substrate (data not shown), as a negative control. In the absence of limiting the activity of Ypk1(L424A) with inhibitor, overexpression of neither Orm proteins nor GFP was deleterious to cell growth (Figure 1D, left panels, compare lower to upper). However, in the presence of a low dose of 3-MB-PP1, overexpression of Orm1 and Orm2 on galactose medium prevented cell growth, whereas overexpression of GFP did not (Figure 1D, middle and right panels, compare lower to upper). We were able to test the majority of the candidates (90/96) that arose in the bioinformatic search in this same fashion [however, 10/90 caused toxicity upon over-expression even in wild-type cells and, hence, could not be scored].
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig2-v2.jpg)
 
-**Figure 2.:** (A) A diagram of the membrane topology of Lac1 and Lag1 derived from (Kageyama-Yahara and Riezman, 2006); Lac1 and Lag1 are experimentally determined to have eight transmembrane domains. The N terminus of these proteins is cytosolic and therefore accessible for Ypk1 phosphorylation. (B) Diagram of yeast de novo sphingolipid biosynthesis derived from (Dickson, 2008). Metabolites appear as boxes and enzymes as ovals. Metabolites in green are those directly produced or derived from ceramide synthase while those in red are alternative products at the ceramide synthase branch point. (C) SDL results for Lac1 and Lag1. ypk1-as ypk2Δ (yAM135–A) or wildtype (BY4741) cells were transformed with P-GFP (negative control), PGAL1-Lac1 or PGAL1-Lag1 plasmids. The SDL assay was then performed as described in ‘Materials and methods’. (GAL1D) GST-Lac1(1–76) (pAX131), GST-Lag1(1–80)(pFR29), GST-Lac1(1–76)(S23A S24A)(pAX132) and GST-Lag1(1–80)(S23A S24A)(pAX133) were purified from E. coli and Ypk1-as kinase assays were performed as in Figure 1D.DOI: http://dx.doi.org/10.7554/eLife.03779.005
+**Figure 2.:** (A) A diagram of the membrane topology of Lac1 and Lag1 derived from (Kageyama-Yahara and Riezman, 2006); Lac1 and Lag1 are experimentally determined to have eight transmembrane domains. The N terminus of these proteins is cytosolic and therefore accessible for Ypk1 phosphorylation. (B) Diagram of yeast de novo sphingolipid biosynthesis derived from (Dickson, 2008). Metabolites appear as boxes and enzymes as ovals. Metabolites in green are those directly produced or derived from ceramide synthase while those in red are alternative products at the ceramide synthase branch point. (C) SDL results for Lac1 and Lag1. ypk1-as ypk2Δ (yAM135–A) or wildtype (BY4741) cells were transformed with PGAL1-GFP (negative control), PGAL1-Lac1 or PGAL1-Lag1 plasmids. The SDL assay was then performed as described in ‘Materials and methods’. (D) GST-Lac1(1–76) (pAX131), GST-Lag1(1–80)(pFR29), GST-Lac1(1–76)(S23A S24A)(pAX132) and GST-Lag1(1–80)(S23A S24A)(pAX133) were purified from E. coli and Ypk1-as kinase assays were performed as in Figure 1D.
 
 Those candidates that, like Orm1 and Orm2, exhibited toxicity only on galactose medium and only when Ypk1(L424A) activity was limited in the presence of 3-MB-PP1, but not when inhibitor was absent, were designated SDL hits (Table 1, column 4). Moreover, use of a series of 3-MB-PP1 concentrations allowed for quantification of the strength of the SDL effect (from + to ++++). In one case (Fps1), a marked SDL effect was observed upon overexpression in the ypk1-as ypk2Δ cells in the absence of chemical inhibition; we considered this a valid SDL hit because GAL promoter-driven over-expression of Fps1 was not growth inhibitory in wild-type (YPK1+ YPK2+) cells. Thus, as summarized in Table 1 (column 4), a significant fraction (20/90) of the candidates identified bioinformatically that were tested in this fashion, but far from all, displayed an SDL phenotype. In this regard, it is important to note that all known Ypk1 substrates tested (Gpd1, Fpk1, Orm1 and Orm2) displayed an SDL phenotype, whereas nearly 80% of the bioinformatic hits, like GFP, did not. Consistent with the view that the SDL phenotype could arise from the over-expressed target serving as a decoy substrate that titers a limited pool of active Ypk1 away from acting on its essential substrates, we observed that over-expressed catalytically-inactive Fpk1 caused an SDL phenotype equivalent to or stronger than wild-type Fpk1 (Table 1). If such SDL phenotypes reflect occlusion of a limited pool of enzyme by over-expressed substrate, then, conversely, co-overexpression of Ypk1 or even of a kinase-dead allele Ypk1(K376A) (driven from the MET25 promoter) might rescue the toxicity. Indeed, the deleterious effect of Smp1 over-expression was rescued by co-overexpression of either Ypk1 or Ypk1(K376A) (Table 1), suggesting that the SDL phenotype of over-expressed Smp1 also arises from titration of a limited amount of Ypk1 away from essential substrates.
 
@@ -56,77 +948,77 @@ Lastly, to determine whether the gene products that displayed an SDL phenotype a
 
 Thus, we considered it very likely that the dozen candidates identified bioinformatically that also displayed an SDL phenotype and served as Ypk1 substrates in vitro (highlighted in bold in Table 1) would be functionally important Ypk1 substrates in vivo. To validate this conclusion and confirm that these candidates are indeed physiologically relevant Ypk1 targets, we chose to characterize Lac1 and Lag1, two of the dozen candidates (Table 1), because they are the catalytic subunits of the ceramide synthase complex and might further our understanding about how sphingolipid production is regulated by the TORC2-Ypk1 signaling axis.
 
-## Ceramide synthase components Lac1 and Lag1 are identified as Ypk1 substrates
+### Ceramide synthase components Lac1 and Lag1 are identified as Ypk1 substrates
 
 Lac1 (418 residues) and Lag1 (411 residues) are apparent paralogs at the primary sequence level (69% identity, 77% similarity) (Byrne and Wolfe, 2005) and are polytopic integral proteins in the ER membrane with the predicted Ypk1 site in each protein residing near its N-terminus (Figure 2A). It has been shown that the N-termini of these proteins are exposed to the cytosol (Kageyama-Yahara and Riezman, 2006). Along with a small accessory subunit Lip1 (150 residues), Lac1 and Lag1 are demonstrated constituents of the ceramide synthase complex (Schorling et al., 2001; Vallée and Riezman, 2005), which catalyzes N-acylation of the free amino group on the long-chain base (LCB), mainly phytosphingosine in yeast, using fatty acyl-CoA as the acyl donor, thereby forming phytoceramide (Figure 2B). Genetically, Lac1 and Lag1 appear to play overlapping functional roles; lac1Δ or lag1Δ single mutants are viable, whereas a lac1Δ lag1Δ double mutant is reportedly either inviable (Jiang et al., 1998) or extremely slow growing (Barz and Walter, 1999; Schorling et al., 2001; Vallée and Riezman, 2005). The ceramide synthase reaction lies at an important branch point in the sphingolipid metabolic network (Figure 2B) because de novo synthesis of ceramides both consumes LCBs and prevents conversion of LCBs to their 1-phosphorylated derivatives (LCBPs). Thus, the rate of ceramide synthesis is tightly coupled to the levels of both LCBs and LCBPs (Kobayashi and Nagiec, 2003); and, moreover, the balance between ceramides and total LCBs and LCBPs affects growth rate in both fungi (Kobayashi and Nagiec, 2003) and mammalian cells (Spiegel and Milstien, 2003). By virtue of their position in the pathway, Lac1 and Lag1 are situated to be important regulators of this balance.
 
 Among the bioinformatically predicted substrates, both Lac1 and Lag1 displayed a readily detectable SDL phenotype (Figure 2C) and both GST-Lac1(1–76) and GST-Lag1(1–80) served as in vitro substrates for Ypk1, albeit with the phosphorylation of Lac1 being reproducibly much more robust than Lag1 (Figure 2D). Site-directed mutagenesis confirmed that the Ypk1-mediated phosphorylation of both substrates occurred exclusively at the predicted phospho-acceptor site(s), specifically Ser23 and Ser24 in both proteins (Figure 2D).
 
-## Lac1 and Lag1 are phosphorylated by Ypk1 in vivo
+### Lac1 and Lag1 are phosphorylated by Ypk1 in vivo
 
-To determine whether both Lac1 and Lag1 are phosphorylated in vivo in a Ypk1-dependent manner and at their Ypk1 consensus sites, integrated 3xHA- or 3xFLAG-tagged versions of each protein and its corresponding S23A S24A mutant were expressed in yeast and extracts of the cells were analyzed by phosphate-affinity SDS-PAGE (Phos-tag gels) (
+To determine whether both Lac1 and Lag1 are phosphorylated in vivo in a Ypk1-dependent manner and at their Ypk1 consensus sites, integrated 3xHA- or 3xFLAG-tagged versions of each protein and its corresponding S23A S24A mutant were expressed in yeast and extracts of the cells were analyzed by phosphate-affinity SDS-PAGE (Phos-tag gels) (Kinoshita et al., 2009). In this separation technique, the more highly phosphorylated the protein, the more its migration is retarded. Both Lac1 (Figure 3A, left) and Lag1 (Figure 3A, right) migrated as two species, and the slower of the two could be attributed to phosphorylation because it was eliminated if the sample was pre-treated with calf intestinal phosphatase. This slower mobility species represented phosphorylation at S23 and S24 because the band was also eliminated in Lac1(S23A S24A) and Lag1(S23A S24A) mutants (Figure 3A). We noted that phosphatase treatment, even of the Lac1(S23A S24A) and Lag1(S23A S24A) mutants, resulted in appearance of a third, even faster migrating species, presumably due to removal of a phosphorylation(s) elsewhere in these proteins, consistent with indirect evidence that Lac1 and Lag1 might be subject to casein kinase II (yeast Cka2)-dependent modification (Kobayashi and Nagiec, 2003).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig3-v2.jpg)
 
-**Figure 3.:** (A) 3xHA-Lac1 (yAM165–A) 3xHA-Lac1(S23A S24A) (yAM166–A), 3xFLAG-Lag1 (yAM159–A) and 3xFLAG-Lag1(S23A S24A) (yAM163–A) strains were grown to mid-exponential phase in YPD. Cells were then harvested and whole-cell extracts were prepared. Extracts were split and one fraction was then treated with calf intestinal phosphatase. The extracts resolved by Phos-tag SDS-PAGE and immunoblotted with anti-HA, -FLAG or -Pgk1 (loading control) antibodies. P-Lac1 and P-Lag1 indicate the band corresponding to S23 S24 phosphorylation. * indicates a non-specific band that appears in HA blots of yeast whole cell extracts. (B) Wildtype (BY4741), ypk1Δ (JTY6142) and ypk2Δ (yAM120–A) strains were transformed with a plasmid centromeric plasmid encoding 3xHA-Lac1 expressed under control of its endogenous promoter (pAX136). Cells were grown to mid-exponential phase and then treated with a sublethal dose of myriocin (0.625 μM) or methanol (vehicle) for 2 hr. Cell extracts were then prepared, resolved by Phos-tag SDS-PAGE and blotted as above in (A). (C) TOR2 (yKL04) or tor2-as (yKL05) strains were transformed with a 3xHA-Lac1 expressing plasmid (pAX136). Cells were grown to mid-exponential phase and treated with 1 μM BEZ-235 for the indicated times. Cell extracts were then prepared, resolved by Phostag SDS-PAGE and blotted as above in (A).DOI: http://dx.doi.org/10.7554/eLife.03779.006
+**Figure 3.:** (A) 3xHA-Lac1 (yAM165–A) 3xHA-Lac1(S23A S24A) (yAM166–A), 3xFLAG-Lag1 (yAM159–A) and 3xFLAG-Lag1(S23A S24A) (yAM163–A) strains were grown to mid-exponential phase in YPD. Cells were then harvested and whole-cell extracts were prepared. Extracts were split and one fraction was then treated with calf intestinal phosphatase. The extracts resolved by Phos-tag SDS-PAGE and immunoblotted with anti-HA, -FLAG or -Pgk1 (loading control) antibodies. P-Lac1 and P-Lag1 indicate the band corresponding to S23 S24 phosphorylation. * indicates a non-specific band that appears in HA blots of yeast whole cell extracts. (B) Wildtype (BY4741), ypk1Δ (JTY6142) and ypk2Δ (yAM120–A) strains were transformed with a plasmid centromeric plasmid encoding 3xHA-Lac1 expressed under control of its endogenous promoter (pAX136). Cells were grown to mid-exponential phase and then treated with a sublethal dose of myriocin (0.625 μM) or methanol (vehicle) for 2 hr. Cell extracts were then prepared, resolved by Phos-tag SDS-PAGE and blotted as above in (A). (C) TOR2 (yKL04) or tor2-as (yKL05) strains were transformed with a 3xHA-Lac1 expressing plasmid (pAX136). Cells were grown to mid-exponential phase and treated with 1 μM BEZ-235 for the indicated times. Cell extracts were then prepared, resolved by Phostag SDS-PAGE and blotted as above in (A).
 
 In agreement with their relative efficacies as in vitro substrates (Figure 2D), we found that, reproducibly, the majority of Lac1 was present in the cell as the slower mobility isoform, whereas the opposite was true for Lag1 (Figure 3A). Because the behavior of Lac1 gave us greater sensitivity of detection, and for the sake of conciseness, some of our subsequent findings are illustrated with data for Lac1 only. However, all experiments were repeated with both proteins with virtually identical results and conclusions.
 
 To further confirm that Ypk1 is the protein kinase responsible for phosphorylation at Ser23 Ser24 in vivo, plasmids encoding 3xHA-tagged Lac1 and Lag1 were introduced by DNA-mediated transformation into wild-type, ypk1Δ, and ypk2Δ strains. Cultures of the resulting cells were grown in the absence or presence of a sub-lethal dose of myriocin, a condition which several previous studies have shown activates TORC2- and Ypk1-mediated signaling (Roelants et al., 2011; Berchtold et al., 2012; Sun et al., 2012), and the resulting extracts were analyzed on Phos-tag gels. As observed previously for two other bona fide substrates, Orm1 and Orm2 (Roelants et al., 2011), absence of Ypk1 totally abrogated the appearance of phosphorylated Lac1 (Figure 3B) and phosphorylated Lag1 (data not shown), whereas elimination of Ypk2 had no effect. Thus, Ypk1 is the paralog solely responsible for the observed in vivo phosphorylation of Lac1 and Lag1 at Ser23 and Ser24. Furthermore, under conditions that stimulate TORC2 activity, nearly all of the Lac1 (Figure 3B) and much more of the Lag1 (data not shown) were converted to the phosphorylated isoform indicating that TORC2 activation is relayed to ceramide synthase via Ypk1. To further confirm that TORC2 function is essential for Ypk1-mediated phosphorylation of ceramide synthase, Lac1 phosphorylation was monitored in TOR2 cells and in a tor2-as mutant after addition of a specific tor2-as inhibitor, BEZ-235 (Kliegman et al., 2013). TORC2 inhibition markedly reduced Lac1 phosphorylation within 20 min in tor2-as cells, but not in the otherwise isogenic control cells (Figure 3C), confirming that TORC2 activity is necessary for Ypk1-mediated ceramide synthase phosphorylation. Thus, our screening approach was successful in revealing two, previously uncharacterized, cellular targets of the TORC2-Ypk1 signaling axis.
 
-## Increased Lac1 and Lag1 phosphorylation is required for cell survival under stress
+### Increased Lac1 and Lag1 phosphorylation is required for cell survival under stress
 
-The fact that impeding LCB production with a sub-lethal dose of the SPT inhibitor myriocin stimulated Ypk1-mediated Lac1 and Lag1 phosphorylation suggested that this modification is important for their physiological function. As one means to confirm that reduction in sphingolipid biosynthesis capacity results in up-regulation of Lac1 and Lag1 phosphorylation, we subjected the pathway to blockade near its end by treating the cells expressing integrated 3xHA-tagged Lac1 or Lag1 with aureobasidin A (
+The fact that impeding LCB production with a sub-lethal dose of the SPT inhibitor myriocin stimulated Ypk1-mediated Lac1 and Lag1 phosphorylation suggested that this modification is important for their physiological function. As one means to confirm that reduction in sphingolipid biosynthesis capacity results in up-regulation of Lac1 and Lag1 phosphorylation, we subjected the pathway to blockade near its end by treating the cells expressing integrated 3xHA-tagged Lac1 or Lag1 with aureobasidin A (Heidler and Radding, 1995), an antibiotic that prevents formation of complex sphingolipids in yeast by inhibiting Aur1 (phosphatidylinositol:ceramide phosphoinositol transferase) (Nagiec et al., 1997). As observed for treatment with myriocin, the amount of phosphorylated Lac1 (Figure 4A) and Lag1 (data not shown) was markedly increased in response to treatment with aureobasidin A.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig4-v2.jpg)
 
-**Figure 4.:** (A) 3xHA-Lac1 (yAM165–A) cells were grown to early exponential phase in YPD. Cultures were then treated with sublethal doses of myriocin (0.625 μM) or methanol (vehicle) or aureobasidin A (1.8 μM) or ethanol (vehicle) for 2 hr. (B) 3xHA-Lac1 (yAM165–A) cells were grown to exponential phase in YPD at 30°C. A sample of this culture was then harvested. The remaining culture was then moved to 42°C to initiate heat shock and samples were harvested at the indicated time points. Whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as in Figure 3. P-Lac1 indicates the band corresponding to S23 S24 phosphorylation. * indicates a non-specific band that appears in HA blots of yeast whole cell extracts. (C) LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207B) and Lac1SSEE Lag1SSEE (yAM210) were grown to exponential phase in YPD. Serial dilutions of each culture were made and spotted on YPD plates containing vehicle or the indicated concentration of myriocin or aureobasidin A. Cells were allowed to grow for 3 days at 30°C prior to imaging. (D) 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) and 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag(S23E S24E)1::LEU2 (Lac1SSEE Lag1SSEE) (yAM192–A) cells were grown to mid-exponential phase and then treated with 1.0 μM myriocin or 18.2 nM aureobasidin A for 2 hr. Whole cell extracts were prepared from each sample, resolved by SDS-PAGE, and immunoblotted as indicated.DOI: http://dx.doi.org/10.7554/eLife.03779.007
+**Figure 4.:** (A) 3xHA-Lac1 (yAM165–A) cells were grown to early exponential phase in YPD. Cultures were then treated with sublethal doses of myriocin (0.625 μM) or methanol (vehicle) or aureobasidin A (1.8 μM) or ethanol (vehicle) for 2 hr. (B) 3xHA-Lac1 (yAM165–A) cells were grown to exponential phase in YPD at 30°C. A sample of this culture was then harvested. The remaining culture was then moved to 42°C to initiate heat shock and samples were harvested at the indicated time points. Whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as in Figure 3. P-Lac1 indicates the band corresponding to S23 S24 phosphorylation. * indicates a non-specific band that appears in HA blots of yeast whole cell extracts. (C) LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207B) and Lac1SSEE Lag1SSEE (yAM210) were grown to exponential phase in YPD. Serial dilutions of each culture were made and spotted on YPD plates containing vehicle or the indicated concentration of myriocin or aureobasidin A. Cells were allowed to grow for 3 days at 30°C prior to imaging. (D) 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) and 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag(S23E S24E)1::LEU2 (Lac1SSEE Lag1SSEE) (yAM192–A) cells were grown to mid-exponential phase and then treated with 1.0 μM myriocin or 18.2 nM aureobasidin A for 2 hr. Whole cell extracts were prepared from each sample, resolved by SDS-PAGE, and immunoblotted as indicated.
 
 Another perturbation that has been shown to transiently up-regulate TORC2-Ypk1-mediated signaling is heat shock (Sun et al., 2012). Consistent with that response, it has been shown previously that heat shock leads to a transient increase in sphingolipid production and that sphingolipid production is important for heat shock survival (Jenkins et al., 1997; Cowart et al., 2003). Moreover, measurement of pathway intermediates and mathematical modeling also suggested that a sharp spike of increased ceramide synthase activity may occur after heat shock (Chen et al., 2013). Therefore, we subjected the same cells to heat shock and monitored Lac1 and Lag1 phosphorylation at various times thereafter. Within 5 min, the amount of phosphorylated Lac1 (Figure 4B) and Lag1 (data not shown) increased markedly, but was back to the resting level by 30 min.
 
 If these changes in phosphorylation state at Ser23 and Ser24 in Lac1 and Lag1 are important for the metabolic adjustments that the cell needs to adapt appropriately, then preventing phosphorylation at these sites should impair cell survival. To test this prediction, we integrated as the sole source of ceramide synthase, mutant versions of Lac1 and Lag1 in which Ser23 and Ser24 were mutated to Ala and, hence, cannot be phosphorylated under any circumstances. As a control, we also generated integrated versions of Lac1 and Lag1 in which Ser23 and Ser24 were mutated to Glu, to mimic conversion of the entire population to the phosphorylated state, a response that we showed can be achieved for the wild-type protein (see, for example, Figure 3B). Indeed, we found that the cells co-expressing Lac1(S23A S24A) and Lag1(23A S24A) grew detectably less well when challenged with either myriocin or aureobasidin A than either otherwise isogenic wild-type cells or cells co-expressing Lac1(S23E S24E) and Lag1(S23E S24E) (Figure 4C). These growth differences could not be attributed to differences in the level of expression of these proteins, as immunoblot analysis demonstrated the wild-type and mutant ceramide synthase subunits were present in equivalent amounts under the conditions tested (Figure 4D). Thus, Ypk1-dependent phosphorylation of these sites in Lac1 and Lag1 is functionally important for cell survival in response to the stress of limiting sphingolipid biosynthesis. Furthermore, the fact that the Lac1(S23E S24E) Lag1(S23E S24E) strain phenocopied a LAC1+ LAG1+ strain under conditions that promote phosphorylation of Lac1 and Lag1 indicates that these mutations generated effective phosphomimetic alleles.
 
-## Calcineurin down-regulates Lac1 and Lag1 phosphorylation at Ser23 and Ser24
+### Calcineurin down-regulates Lac1 and Lag1 phosphorylation at Ser23 and Ser24
 
-As a means to delineate what cellular phosphatase is responsible for counteracting the Ypk1-mediated phospho-regulation of Lac1 and Lag1, plasmid-borne 3xHA-tagged Lac1 was expressed in a collection of deletion strains lacking each of the non-essential protein phosphatase genes or their associated factors, and the phosphorylation state of Lac1 was assessed using Phos-tag gels. By this approach, we were unable to find any phosphatase-deficient mutant that exhibited a significant increase in the amount of phosphorylated Lac1 compared to control cells (data not shown). However, considerable genetic evidence indicates a strong connection between Ca
+As a means to delineate what cellular phosphatase is responsible for counteracting the Ypk1-mediated phospho-regulation of Lac1 and Lag1, plasmid-borne 3xHA-tagged Lac1 was expressed in a collection of deletion strains lacking each of the non-essential protein phosphatase genes or their associated factors, and the phosphorylation state of Lac1 was assessed using Phos-tag gels. By this approach, we were unable to find any phosphatase-deficient mutant that exhibited a significant increase in the amount of phosphorylated Lac1 compared to control cells (data not shown). However, considerable genetic evidence indicates a strong connection between Ca2+ signaling and sphingolipid biosynthesis (Beeler et al., 1998). Moreover, it has been reported previously that TORC2-Ypk-dependent regulation of sphinglipid biosynthesis is antagonized by the action of the Ca2+/calmodulin-dependent protein phosphatase calcineurin (also known as phosphoprotein phosphatase 2B), although the level at which the phosphatase acted was unknown (Aronova et al., 2008). Hence, we conducted the converse experiment by stimulating the cells expressing 3xHA-tagged Lac1 acutely with 0.2 M CaCl2, a condition known to robustly activate calcineurin in yeast (Stathopoulos-Gerontides et al., 1999). Within <10 min, we found total abrogation of phospho-Lac1 (Figure 5A, left) and total abrogation of phospho-Lag1 (data not shown) in wild-type cells, whereas in otherwise isogenic cna1Δ cna2Δ mutants (which lack both calcineurin catalytic subunit paralogs) a substantial portion of the phosphorylated species remained (Figure 5A, right).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig5-v2.jpg)
 
-**Figure 5.:** (A) Wildtype (BY4741) or cna1Δ cna2Δ (JTY5574) strains were transformed with a centromeric plasmid encoding 3xHA-Lac1 expressed under control of its endogenous promoter (pAX136). Cultures were grown to mid-exponential phase in selective media and then treated with 200 mM CaCl2 for 10 min to activate calcineurin. Cultures were then harvested and whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as in Figure 3. (B) 3xHA-Lac1 (yAM165-A) cells were transformed with a centromeric plasmid encoding the hyperactive TORC2 independent Ypk1D242A allele expressed under its own promoter (pFR273) or vector (pRS316). Cultures were grown in selective media to mid-exponential phase before treatment with 200 mM CaCl2 for 10 min. Cultures were then harvested and whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as above. (C) 3xFLAG-Ypk1 (YDB379) cells were grown to mid-exponential phase in YPD. Cultures were treated with or without 200 mM CaCl2 for 10 min. Cells were then harvested and whole extracts prepared. Extracts were resolved by SDS-PAGE and blotted with anti-pSGK(T256), which recognizes Ypk1 T504 activation loop phosphorylation (Roelants et al., 2010) and anti-FLAG antibody (Ypk1 loading control). The blot is representative of triplicate samples and the quantitation of the ratio of pT504/FLAG from these replicates is shown below the blot.DOI: http://dx.doi.org/10.7554/eLife.03779.008
+**Figure 5.:** (A) Wildtype (BY4741) or cna1Δ cna2Δ (JTY5574) strains were transformed with a centromeric plasmid encoding 3xHA-Lac1 expressed under control of its endogenous promoter (pAX136). Cultures were grown to mid-exponential phase in selective media and then treated with 200 mM CaCl2 for 10 min to activate calcineurin. Cultures were then harvested and whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as in Figure 3. (B) 3xHA-Lac1 (yAM165-A) cells were transformed with a centromeric plasmid encoding the hyperactive TORC2 independent Ypk1D242A allele expressed under its own promoter (pFR273) or vector (pRS316). Cultures were grown in selective media to mid-exponential phase before treatment with 200 mM CaCl2 for 10 min. Cultures were then harvested and whole cell extracts were prepared from each sample, resolved by Phos-tag SDS-PAGE, and immunoblotted as above. (C) 3xFLAG-Ypk1 (YDB379) cells were grown to mid-exponential phase in YPD. Cultures were treated with or without 200 mM CaCl2 for 10 min. Cells were then harvested and whole extracts prepared. Extracts were resolved by SDS-PAGE and blotted with anti-pSGK(T256), which recognizes Ypk1 T504 activation loop phosphorylation (Roelants et al., 2010) and anti-FLAG antibody (Ypk1 loading control). The blot is representative of triplicate samples and the quantitation of the ratio of pT504/FLAG from these replicates is shown below the blot.
 
 These results suggested that calcineurin may directly reverse the phoshorylations introduced into Lac1 and Lag1 by Ypk1. However, it is also the case that two of the ancillary subunits associated with TORC2, Slm1 and Slm2, are demonstrated calcineurin-binding proteins (Bultynck et al., 2006; Tabuchi et al., 2006) and that calcineurin action appears to oppose TORC2-dependent signaling (Mulet et al., 2006; Daquinag et al., 2007; Berchtold et al., 2012). Hence, it was possible, therefore, that the observed loss of phospho-Lac1 and -Lag1 might be due to a Ca2+-stimulated and calcineurin-mediated reduction in their TORC2-Ypk1-dependent phosphorylation, rather than to direct action of calcineurin on phospho-Lac1 and -Lag1. To rule out the former possibility, we examined Lac1 and Lag1 phosphorylation in cells expressing constitutively-active Ypk1(D242A), which we have demonstrated bypasses the need for its TORC2-dependent activation (Roelants et al., 2011). We found that Ca2+ addition still led to nearly complete Lac1 and Lag1 dephosphorylation in these cells (Figure 5B). Furthermore, as judged by immunoblotting with a phospho-site specific antibody, Pkh1- and Pkh2-dependent phosphorylation of the activation loop in Ypk1 (Figure 5C) was not diminished in cells stimulated with Ca2+, confirming that there was no calcineurin-mediated decrease in the amount of active Ypk1 present. Therefore, it seems clear that calcineurin dephosphorylates the sites in Lac1 and Lag1 phosphorylated by Ypk1 directly, rather than through down-regulation of Ypk1 function.
 
-## Ypk1-mediated phosphorylation of Lac and Lag1 stimulates ceramide synthase activity
+### Ypk1-mediated phosphorylation of Lac and Lag1 stimulates ceramide synthase activity
 
-Given the phenotypic evidence that TORC2-Ypk1-dependent modulation of Lac1 and Lag1 is physiologically important (
+Given the phenotypic evidence that TORC2-Ypk1-dependent modulation of Lac1 and Lag1 is physiologically important (Figure 4C), we next conducted biochemical analysis to determine how Ypk1-mediated phosphorylation affects the function of Lac1 and Lag1 in ceramide synthesis. Toward that end, we first used LC-MS to monitor the levels of LCBs and LCBPs extracted from equivalent numbers of cells from exponentially-growing cultures of wild-type cells or otherwise isogenic cells expressing as the sole source of Lac1 and Lag1 either the non-phosphorylatable Lac1(S23A S24A) and Lag1(S23A S24A) mutants or the phosphomimetic Lac1(S23E S24E) and Lag1(S23E S24E) mutants. Relative to wild-type cells, the Lac1(S23A S24A) Lag1(S23A S24A) cells accumulated significantly more PHS (Figure 6A, top left), as well as more dihydrosphingosine (DHS) (Figure 6A, top right), which is a more minor LCB in yeast (note the difference in scale of the ordinate), whereas the Lac1(S23E S24E) Lag1(S23E S24E) cells displayed a level of both PHS and DHS that was somewhat lower, and a similar trend was observed even for PHS-1P, an even less abundant metabolite (Figure 6A, bottom left). The level of DHS-1P (Figure 6A, bottom right) was so low as to make reliable measurement difficult, but no differences between strains could be detected. Given that the ceramide synthase complex is responsible for the conversion of LCBs into ceramides, these findings indicate that, in the absence of Ypk1-mediated phosphorylation, the rate of LCB utilization is significantly reduced, consistent with the conclusion that Ypk1-dependent modification of Lac1 and Lag1 promotes ceramide synthase function.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig6-v2.jpg)
 
-**Figure 6.:** (A) Cultures of LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207B) and Lac1SSEE Lag1SSEE (yAM210) strains were grown to mid-exponential phase and then harvested. Sphingolipids were extracted and analyzed as described in ‘Materials and methods’. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. (B) Triplicate exponentially-growing cultures of LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207–B) and Lac1SSEE Lag1SSEE (yAM210) were grown overnight and duplicate cultures were diluted to OD600 = 1.0. Complex sphingolipids were labeled and analyzed by thin layer chromatography (TLC) as in ‘Materials and methods’. A representative TLC plate is shown with the origin at the bottom of the image. The assigned identity of species as IPCs and MIPCs was confirmed by pharmacological or genetic inhibition of the production of these species in control cultures (data not shown). Quantification of total complex sphingolipids was performed in ImageJ by integrating the Phosphorimager screen intensity across the lane for each sample and normalized to 1 for the wild-type ceramide synthase samples. (C) Upper, ceramide synthase was purified by FLAG immunopurification from 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) and 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag(S23E S24E)1::LEU2 (Lac1SSEE Lag1SSEE) (yAM192–A) cells. Immunoprecipitates were then split into three fractions and in vitro ceramide synthase assays (60 min reactions) were performed in triplicate. A small sample of each ceramide synthase assay was resolved by SDS-PAGE and immunoblotted. The signal intensity quantified from the immunoblot was then used to normalize ceramide synthase activity in each sample. Lower, ceramide synthase was immunopurified from 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 or 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) cells as above except cultures were treated with 1.0 μM myriocin or methanol (vehicle) prior to harvesting. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. Statistical significance of values (Student's t test): *p = <0.05, **p = <0.009; and, ***p < 0.0009.DOI: http://dx.doi.org/10.7554/eLife.03779.009
+**Figure 6.:** (A) Cultures of LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207B) and Lac1SSEE Lag1SSEE (yAM210) strains were grown to mid-exponential phase and then harvested. Sphingolipids were extracted and analyzed as described in ‘Materials and methods’. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. (B) Triplicate exponentially-growing cultures of LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207–B) and Lac1SSEE Lag1SSEE (yAM210) were grown overnight and duplicate cultures were diluted to OD600 = 1.0. Complex sphingolipids were labeled and analyzed by thin layer chromatography (TLC) as in ‘Materials and methods’. A representative TLC plate is shown with the origin at the bottom of the image. The assigned identity of species as IPCs and MIPCs was confirmed by pharmacological or genetic inhibition of the production of these species in control cultures (data not shown). Quantification of total complex sphingolipids was performed in ImageJ by integrating the Phosphorimager screen intensity across the lane for each sample and normalized to 1 for the wild-type ceramide synthase samples. (C) Upper, ceramide synthase was purified by FLAG immunopurification from 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) and 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag(S23E S24E)1::LEU2 (Lac1SSEE Lag1SSEE) (yAM192–A) cells. Immunoprecipitates were then split into three fractions and in vitro ceramide synthase assays (60 min reactions) were performed in triplicate. A small sample of each ceramide synthase assay was resolved by SDS-PAGE and immunoblotted. The signal intensity quantified from the immunoblot was then used to normalize ceramide synthase activity in each sample. Lower, ceramide synthase was immunopurified from 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2 (yAM168) 3xHA-Lac1(S23A S24A)::HIS3 or 3xFLAG-Lag1(S23A S24A)::LEU2 (Lac1SSAA Lag1SSAA) (yAM184) cells as above except cultures were treated with 1.0 μM myriocin or methanol (vehicle) prior to harvesting. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. Statistical significance of values (Student's t test): *p = <0.05, **p = <0.009; and, ***p < 0.0009.
 
 As an independent means to measure flux through the sphingolipid pathway, and because all complex sphingolipids in yeast contain inositol-phosphate, an equivalent number of cells of the same three strains in mid-exponential phase were pulse-labeled, in triplicate, with [32P]PO4−3, and the acidic sphingolipids extracted and analyzed by thin-layer chromatography. Strikingly, the amount of complex sphingolipids generated during the pulse was reproducibly higher in the Lac1(S23E S24E) Lag1(S23E S24E) cells than in the wild-type controls, and Lac1(S23A S24A) Lag1(S23A S24A) generated levels of complex sphingolipids lower than the wild-type controls (Figure 6B). These findings are again consistent with the conclusion that Ypk1-mediated phosphorylation of Lac1 and Lag1 stimulates the production of the ceramide precursors to complex sphingolipids.
 
 Ypk1-mediated phosphorylation could stimulate the ceramide synthase reaction in vivo by stabilizing Lac1 and Lag1 thereby increasing their steady-state level, by enhancing their association with the small ancillary subunit Lip1, and/or by direct activation. Immunoblotting of exponentially-growing cultures expressing the 3xHA-tagged versions of wild-type Lac1 and Lag1 and the Lac1(S23A S24A) Lag1(S23A S24A) and Lac1(S23E S24E) Lag1(S23E S24E) indicated no discernible difference in their steady-state level (see Figure 4D). Likewise, in cells co-expressing the same proteins and FLAG-tagged Lip1 (gift of Howard Riezman, Univ. of Geneva), we observed no difference in the efficiency of Lip1 co-immunoprecipitation between wild-type Lac1 and Lag1 and either the Lac1(S23A S24A) Lag1(S23A S24A) or Lac1(S23E S24E) Lag1(S23E S24E) mutants (data not shown). These results suggested that Ypk1-mediated phosphorylation may directly enhance the catalytic efficiency of Lac1 and Lag1. To test this possibility directly, 3xFLAG-tagged versions of Lac1 and Lag1 were immunopurified from detergent-solubilized microsomes isolated from exponentially-growing cells and equivalent amounts of the resulting protein assayed in vitro, monitoring the formation of ceramide from PHS and steroyl-CoA by LC-MS. No product was observed in the absence of added steroyl-CoA (data not shown), and product formation was reduced by 85% in the presence of PHS and steroyl-CoA if 1 μM australifungin, a demonstrated and specific ceramide synthase inhibitor (Mandala and Harris, 2000), was added (data not shown), confirming that the reaction measured was catalyzed by ceramide synthase. We found that the specific activity of the Lac1(S23E S24E) Lag1(S23E S24E) complex was reproducibly ∼2 higher than either the Lac1(S23A S24A) Lag1(S23A S24A) mutant or the wild-type complex (Figure 6C, upper panel), similar to the degree of difference in sphingolipid metabolites between these same strains that we measured by other means (Figure 6A,B). In two independent trials (each performed in triplicate), the identical trend was found when microsomes from these same cells were assayed directly (i.e. without detergent solubilization and enzyme enrichment by immunoprecipitation [data not shown]). Additionally, we found that immunopurified ceramide synthase from wild-type cultures treated with myriocin had higher activity than ceramide synthase prepared from untreated cells (Figure 6C, lower panel). Furthermore, this increase in ceramide synthase activity in response to myriocin treatment was not observed in Lac1(S23A S24A) Lag1(S23A S24A) cells (Figure 6C, lower panel), consistent with TORC2-Ypk1 signaling increasing ceramide synthase activity by phosphorylation at these residues. These findings are also in agreement with a reported ∼two-fold decrease in the rate of ceramide production by ceramide synthase complex isolated from TORC2-deficient yeast (Aronova et al., 2008). Hence, we conclude that Ypk1 phosphorylation directly increases the catalytic activity of ceramide synthase.
 
-## Ypk1-mediated stimulation of Lac1 and Lag1 prevents autophagy induction during TORC2-driven up-regulation of sphingolipid biosynthesis
+### Ypk1-mediated stimulation of Lac1 and Lag1 prevents autophagy induction during TORC2-driven up-regulation of sphingolipid biosynthesis
 
-The observed increase in ceramide synthase activity in response to Ypk1-mediated phosphorylation could serve two roles that are not mutually exclusive: (i) to produce more ceramide and the derived complex sphingolipids; and, (ii) to prevent inadvertent accumulation of LCBs and the derived LCBPs when TORC2-driven Ypk1 activation stimulates metabolic flow into the sphingolipid pathway by alleviating Orm1- and Orm2-imposed inhibition of SPT (
+The observed increase in ceramide synthase activity in response to Ypk1-mediated phosphorylation could serve two roles that are not mutually exclusive: (i) to produce more ceramide and the derived complex sphingolipids; and, (ii) to prevent inadvertent accumulation of LCBs and the derived LCBPs when TORC2-driven Ypk1 activation stimulates metabolic flow into the sphingolipid pathway by alleviating Orm1- and Orm2-imposed inhibition of SPT (Roelants et al., 2011). We reasoned that if the latter were one of the important physiological functions of Ypk1-dependent stimulation of ceramide synthase, then TORC2 activation would be detrimental to cells in which the Lac1(S23A S24A) Lag1(S23A S24A) mutant is the sole source of this enzyme. To mimic TORC2-stimulated elevation of Ypk1 activity, the constitutively-active Ypk1(D242A) allele (hereafter referred to as Ypk1*) was expressed from the YPK1 promoter on a CEN plasmid in either wild-type cells or the Lac1(S23A S24A) Lag1(S23A S24A) mutant. Indeed, compared to the empty vector control, expression of Ypk1* was well tolerated by cells containing wild-type Lac1 and Lag1, but deleterious to the growth of the Lac1(S23A S24A) Lag1(S23A S24A) mutant cells, whether measured on agar plates (Figure 7A, top) or in liquid culture (Figure 7A, bottom).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig7-v2.jpg)
 
-**Figure 7.:** (A) LAC1 LAG1 (yAM205–A) or Lac1SSAA Lag1SSAA (yAM207–B) were transformed with P-Ypk1YPK1D242A (shown as Ypk1*) (pFR273) or empty vector pRS316 (EV). Transformants were grown to exponential phase in synthetic complete medium and then diluted to OD600 = 0.1 and grown in microtiter plates (lower) or on agar plates (upper). For liquid cultures, each was grown in at least quadruplicate and the error bars indicate the SEM of replicates at each time point. (B) Cells from (A) were grown to mid-exponential phase in selective synthetic complete media and then harvested. Sphingolipids were extracted and analyzed as described in ‘Materials and methods’. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. (C) LAC1 LAG1 lcb4Δ (yAM237) or Lac1SSAA Lag1SSAA lcb4Δ (yAM238–A) were transformed with Ypk1* (pFR273) and growth experiments performed as in (A). (D) Liquid growth assays were performed as in (A) for LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207–B), Lac1SSEE Lag1SSEE (yAM210), LAC1 LAG1 lcb3Δ (yGT12), Lac1SSAA Lag1SSAA lcb3Δ (yGT13) and Lac1SSEE Lag1SSEE lcb3Δ (yGT14) strains. (E) LAC1 LAG1 (yAM205–A) or Lac1SSAA Lag1SSAA (yAM207–B) or LAC1 LAG1 lcb3Δ (yGT12) strains were transformed with Ypk1* (pFR273) or pRS316 (EV) and additionally PTPI1-GFP-Atg8. Growing cultures treated with vehicle or 2 μg/ml rapamycin for 2 hr and then harvested and whole extracts prepared. Extracts were resolved by SDS-PAGE and blotted with anti-GFP to detect GFP-Atg8 and free GFP arising from GFP-Atg8 autophagic processing and anti-Pgk1 antibody. The blot is representative of triplicate samples and the quantitation of the ratio of free GFP/Pgk1 from these replicates is shown below the blot. (F) LAC1 LAG1 atg1Δ (yAM239–A) or Lac1SSAA Lag1SSAA atg1Δ (yAM240–A) sensitivity to Ypk1* was measured as in (A). (G) Cells from (F) were grown to mid-exponential phase in selective synthetic complete media and then harvested. Sphingolipids were extracted and analyzed as described in (B).DOI: http://dx.doi.org/10.7554/eLife.03779.010
+**Figure 7.:** (A) LAC1 LAG1 (yAM205–A) or Lac1SSAA Lag1SSAA (yAM207–B) were transformed with PYPK1-Ypk1D242A (shown as Ypk1*) (pFR273) or empty vector pRS316 (EV). Transformants were grown to exponential phase in synthetic complete medium and then diluted to OD600 = 0.1 and grown in microtiter plates (lower) or on agar plates (upper). For liquid cultures, each was grown in at least quadruplicate and the error bars indicate the SEM of replicates at each time point. (B) Cells from (A) were grown to mid-exponential phase in selective synthetic complete media and then harvested. Sphingolipids were extracted and analyzed as described in ‘Materials and methods’. Values represent the mean of three independent experiments (each performed in triplicate) and error bars represent SEM. (C) LAC1 LAG1 lcb4Δ (yAM237) or Lac1SSAA Lag1SSAA lcb4Δ (yAM238–A) were transformed with Ypk1* (pFR273) and growth experiments performed as in (A). (D) Liquid growth assays were performed as in (A) for LAC1 LAG1 (yAM205–A), Lac1SSAA Lag1SSAA (yAM207–B), Lac1SSEE Lag1SSEE (yAM210), LAC1 LAG1 lcb3Δ (yGT12), Lac1SSAA Lag1SSAA lcb3Δ (yGT13) and Lac1SSEE Lag1SSEE lcb3Δ (yGT14) strains. (E) LAC1 LAG1 (yAM205–A) or Lac1SSAA Lag1SSAA (yAM207–B) or LAC1 LAG1 lcb3Δ (yGT12) strains were transformed with Ypk1* (pFR273) or pRS316 (EV) and additionally PTPI1-GFP-Atg8. Growing cultures treated with vehicle or 2 μg/ml rapamycin for 2 hr and then harvested and whole extracts prepared. Extracts were resolved by SDS-PAGE and blotted with anti-GFP to detect GFP-Atg8 and free GFP arising from GFP-Atg8 autophagic processing and anti-Pgk1 antibody. The blot is representative of triplicate samples and the quantitation of the ratio of free GFP/Pgk1 from these replicates is shown below the blot. (F) LAC1 LAG1 atg1Δ (yAM239–A) or Lac1SSAA Lag1SSAA atg1Δ (yAM240–A) sensitivity to Ypk1* was measured as in (A). (G) Cells from (F) were grown to mid-exponential phase in selective synthetic complete media and then harvested. Sphingolipids were extracted and analyzed as described in (B).
 
 Given that accumulation of LCBPs has been shown to be toxic to yeast cell growth (Kim et al., 2000), we reasoned that the most likely metabolic perturbation responsible for the observed decrease in growth in the Lac1(S23A S24A) Lag1(S23A S24A) cells expressing Ypk1* was the build-up of LCBs and derived LCBPs. Consistent with this conclusion, we found a reproducible and statistically significant increase in the LCBP level in Lac1(S23A S24A) Lag1(S23A S24A) cells, compared to LAC1+ LAG1+ controls, and a further increase in Lac1(S23A S24A) Lag1(S23A S24A) cells expressing Ypk1* (Figure 7B). If accumulation of LCBPs in Lac1(S23A S24A) Lag1(S23A S24A) co-expressing Ypk1* is indeed responsible for the poor growth, then reduction in LCBP synthesis by elimination of the gene LCB4, which encodes the major LCB kinase (Nagiec et al., 1998), should alleviate the growth inhibition. As expected, introduction of an lcb4Δ null mutation into the Lac1(S23A S24A) Lag1(S23A S24A) mutant suppressed the growth inhibitory effect of Ypk1* (Figure 7C). Conversely, and consistent with toxicity arising from accumulation of LCBPs when Lac1 and Lag1 cannot be stimulated by Ypk1, we found that the poor growth phenotype of cells lacking the gene (LCB3) encoding the major LCBP phosphatase (Mandala et al., 1998), was markedly exacerbated by introduction of the Lac1(S23A S24A) Lag1(S23A S24A) alleles, but not by introduction of the Lac1(S23E S24E) Lag1(S23E S24E) alleles (Figure 7D). In fact, and strikingly, presence of the Lac1(S23E S24E) Lag1(S23E S24E) allele afforded nearly complete rescue of the slow-growth phenotype of the lcb3Δ mutation (Figure 7D). Consistent with the toxicity of LCBPs when LCB utilization by ceramide synthase is inefficient, an elo3 mutation, which prevents efficient formation of C26-CoA (an acyl chain found in yeast ceramides), was synthetically lethal with lcb3Δ (Kobayashi and Nagiec, 2003).
 
-Finally, it has been reported that aberrant increases in LCBP level impede growth by triggering autophagy even under nutrient-rich conditions (
+Finally, it has been reported that aberrant increases in LCBP level impede growth by triggering autophagy even under nutrient-rich conditions (Zimmermann et al., 2013). In agreement with the poor growth arising from LCBP-evoked induction of autophagy, we found, first, that Lac1(S23A S24A) Lag1(S23A S24A) cells expressing Ypk1* exhibited a readily detectable increase in basal GFP-Atg8 processing, comparable to that in lcb3Δ cells (but, of course, much less than that occurring when cells were treated with the starvation mimetic rapamycin) (Figure 7E). Second, we found that preventing autophagy by ablating the gene ATG1, which encodes a protein kinase necessary for induction of autophagophore formation and its elongation (Papinski and Kraft, 2014), provided substantial rescue of the growth debilitating effect of Ypk1* expression in Lac1(S23A S24A) Lag1(S23A S24A) cells (Figure 7F, compare to Figure 7A). This rescue was not due to an indirect effect of the absence of Atg1 on LCBP level because introduction of the atg1Δ mutation did not prevent the observed hyper-accumulation of LCBP in Lac1(S23A S24A) Lag1(S23A S24A) cells expressing Ypk1* (Figure 7G). Collectively, these results indicate that, aside from stimulating ceramide synthesis per se, another physiologically important role of Ypk1-dependent ceramide synthase activation is, at least in part, to prevent hyper-accumulation of LCBPs and thereby avoid inadvertent induction of autophagy under nutrient-sufficient conditions (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/03779/elife-03779-fig8-v2.jpg)
 
-**Figure 8.:** (A) Diagram of yeast de novo sphingolipid biosynthesis shown is derived from (Dickson, 2008). Enzymes are in ovals. Metabolites are in boxes. Increased color intensity indicates level of metabolite increase in response TORC2-Ypk1 activation. TORC2-Ypk1 signaling globally activates de novo sphingolipid biosynthesis via derepression of the SPT complex (Roelants et al., 2011; Berchtold et al., 2012; Sun et al., 2012), potentially increasing levels of all metabolites. However, Ypk1 also upregulates ceramide synthesis via phosphorylation of Lac1 and Lag1, thus primarily directing this increased flux towards ceramides and away from LCBs and LCBPs. (B) In the absence of Ypk1 mediated ceramide biosynthesis regulation, increased sphingolipid flux raises LCB and LCBP levels. This slows cell growth by activating autophagy. Thus, TORC2-Ypk1 signaling not only activates sphingolipid biosynthesis in response to stress, but also insulates this flux towards ceramides to prevent metabolite mediated crosstalk to the autophagy machinery.DOI: http://dx.doi.org/10.7554/eLife.03779.011
+**Figure 8.:** (A) Diagram of yeast de novo sphingolipid biosynthesis shown is derived from (Dickson, 2008). Enzymes are in ovals. Metabolites are in boxes. Increased color intensity indicates level of metabolite increase in response TORC2-Ypk1 activation. TORC2-Ypk1 signaling globally activates de novo sphingolipid biosynthesis via derepression of the SPT complex (Roelants et al., 2011; Berchtold et al., 2012; Sun et al., 2012), potentially increasing levels of all metabolites. However, Ypk1 also upregulates ceramide synthesis via phosphorylation of Lac1 and Lag1, thus primarily directing this increased flux towards ceramides and away from LCBs and LCBPs. (B) In the absence of Ypk1 mediated ceramide biosynthesis regulation, increased sphingolipid flux raises LCB and LCBP levels. This slows cell growth by activating autophagy. Thus, TORC2-Ypk1 signaling not only activates sphingolipid biosynthesis in response to stress, but also insulates this flux towards ceramides to prevent metabolite mediated crosstalk to the autophagy machinery.
 
 ## Discussion
 
-## Identification of new TORC2-Ypk1 substrates
+### Identification of new TORC2-Ypk1 substrates
 
 Our approach identified Lac1 and Lag1 as potential Ypk1 targets, and our subsequent characterization demonstrated unequivocally that both Lac1 and Lag1 are bona fide Ypk1 substrates in vivo and that their Ypk1-dependent modification is biologically important for optimal modulation of sphingolipid metabolism. These findings validate the ability of our methods for discovery of physiologically relevant protein kinase substrates. Phospho-acceptor site motif pattern-matching alone, although useful in identifying kinase substrates in some cases (Yaffe et al., 2001; Manning et al., 2002; Mah et al., 2005; Holt et al., 2007; Linding et al., 2007; Rennefahrt et al., 2007; Gwinn et al., 2008; Hutti et al., 2009), can yield a large number of false positives. This possibility was a significant concern for us because certain features of the basophilic Ypk1 motif are shared with other protein kinases (Mok et al., 2010). As a means to avoid this problem, we devised a novel SDL-based genetic approach to apply as a secondary filter to parse the bioinformatically selected candidates further.
 
@@ -146,11 +1038,11 @@ Ypk1 function has also been implicated in regulating production of reactive oxyg
 
 Similarly, several other prospects that were identified by our screen as very likely Ypk1 substrates remain to be validated. Such candidates include Muk1, a GEF for yeast Rab 5-type small GTPases (Vps21, Ypt52, and Ypt53) involved in vesicle-mediated Golgi body-to-endosome trafficking (Paulsel et al., 2013), suggesting that Ypk1 may also control switches that direct the flow of lipids. Muk1 is also intriguing for another potential reason. In Schizosaccharomyces pombe, a Rab 5-like GTPase (Ryh1) and its Muk1-like GEF were identified in a screen for TORC2 activators (Tatebe et al., 2010). Thus, if Ypk1-mediated phosphorylation inhibits Muk1 function, it could represent a negative feedback mechanism exerted on TORC2; conversely, if Ypk1-mediated phosphorylation stimulates Muk1 function, it could represent a mechanism for self-reinforcing maintenance of TORC2 activity and, thus, a high level of activated Ypk1. Clearly, by further investigating the physiological relevance of these and other remaining candidates much new biology may be learned. Indeed, several gene products of totally unknown function, such as Yhr097c and Ynr014w, as well as gene products (e.g., Atg21 and Pex31) not previous linked to either TORC2 or Ypk1, if validated, may provide new mechanistic insight into additional cellular processes regulated by TORC2-Ypk1 signaling.
 
-## Mechanism of phosphoregulation of ceramide synthase
+### Mechanism of phosphoregulation of ceramide synthase
 
 As we have demonstrated here, TORC2-dependent Ypk1-mediated phosphorylation of Lac1 and Lag1 stimulates the function of the ceramide synthase complex. Consistent with our findings, a previous study found a consistent decrease in ceramide synthase activity in microsomal fractions isolated from cells in which TORC2 had been inactivated (and thus Ypk1 activity was presumably reduced) (Aronova et al., 2008), although indirect effects of the loss of TORC2 function on ceramide synthase activity could not be ruled out. Our findings make it clear that the role of TORC2 is to promote the Ypk1-dependent phosphorylation of Lac1 and Lag1 subunits of this enzyme. However, the precise molecular mechanism by which this post-translational modification stimulates this enzyme is still not completely clear. In this regard, it has been shown that mammalian ceramide synthase activity increases upon heterodimerization of different catalytic subunit isoforms (Laviad et al., 2012). However, as judged by co-immunoprecipitation, we found no difference in the state of Lac1-Lag1 association between the wild-type proteins and either our Lac1(S23A S24A) Lag1(S23A S24A) or Lac1(S23E S24E) Lag1(S23E S24E) mutants (data not shown). As mentioned in Results, we found no difference in the steady-state level of these same complexes or in their content of Lip1, a non-catalytic component of the complexes also essential for ceramide synthase activity (Vallée and Riezman, 2005). Thus, understanding of how phosphorylation of Ser23 and Ser24 in Lac1 and Lag1 stimulate ceramide synthase activity may require detailed structural information, which will be challenging to obtain for these polytopic integral membrane proteins.
 
-## TORC2-Ypk1 control of ceramide synthesis is conserved
+### TORC2-Ypk1 control of ceramide synthesis is conserved
 
 Although the enzymic steps that carry out sphingolipid biosynthesis have been largely elucidated, much less was known, until recently, about regulation of these enzymes (Breslow and Weissman, 2010; Breslow, 2013). The first insight came when it was demonstrated (Roelants et al., 2011; Berchtold et al., 2012; Sun et al., 2012) that, in response to PM stresses, including treatment with myriocin and aureobasidin A, TORC2-Ypk1 signaling is activated and alleviates inhibition of the SPT complex by phosphorylating the negative regulatory proteins Orm1 and Orm2 (Figure 8). As a direct consequence, the rate of de novo production of the LCB precursor to sphingolipids is increased. Although TORC2 signaling had been implicated in promoting synthesis of ceramide, the product of LCB N-acylation (Aronova et al., 2008), it was unknown whether that role was simply the result of TORC2-Ypk1-dependent stimulation of SPT function and the resulting increase in LCB supply. As we demonstrated here, Ypk1-mediated phosphorylation of Lac1 and Lag1 also increases in response to both myriocin and aureobasidin A, suggesting that ceramide synthesis per se, and not simply general elevation of LCB levels, is important for allowing the cells to cope with the effects of these antibiotics. Indeed, collectively, the findings we describe here demonstrate unequivocally that, in addition to up-regulation of SPT, TORC2-Ypk1 exerts direct control on the ceramide synthase step of the sphingolipid biosynthetic pathway by phosphorylating and stimulating the function of the Lac1 and Lag1 subunits of the ceramide synthase complex. Moreover, as we also demonstrated, the ceramide synthase reaction represents an important branch point in sphingolipid biosynthesis (Figures 2B and 8). LCBs produced by the SPT reaction can either be converted to ceramides or become phosphorylated by LCB kinase Lcb4 (and its paralog Lcb5) to form LCBPs (Nagiec et al., 1998). Accumulation of LCBPs has been shown to be toxic to yeast cell growth (Kim et al., 2000), as we have also confirmed here, at least in large part because, as is now known, these metabolites trigger inappropriate induction of autophagy (Zimmermann et al., 2013). Thus, the rate of ceramide production must be properly adjusted to maintain the pool of LCBs and derived LCBPs at a non-deleterious level, in agreement with evidence in yeast and other organisms that ceramides and LCBPs generally play antagonist roles and must be maintained in the proper dynamic balance (Kobayashi and Nagiec, 2003; Spiegel and Milstien, 2003; Kihara et al., 2007; Dickson, 2008; Breslow and Weissman, 2010; Bikman and Summers, 2011). Hence, the function we have discovered and described here for TORC2-Ypk1 in stimulating ceramide synthase promotes utilization of the increased LCB generated upon TORC2-Ypk1-mediated up-regulation of SPT. This metabolic control has multiple clear-cut physiological benefits to the cell: (a) directing flow in the sphingolipid pathway toward complex sphingolipids to populate the PM barrier; (b) reduction of the level of potentially toxic LCBPs; and, (c) avoidance of inappropriate induction of autophagy under nutrient-sufficient conditions (Figure 8). Indeed, our results indicate that a significant role for the coordination exerted by TORC2-Ypk1 between the level of SPT activity and the level of ceramide synthase activity is to prevent metabolic ‘cross-talk’ to the autophagy pathway.
 
@@ -158,7 +1050,7 @@ If this function of TORC2-Ypk1 signaling is important, then it should be conserv
 
 There is also evidence that Orm1 and Orm2, when phosphorylated at unique sites by protein kinase Npr1, promotes steps in the sphingolipid pathway that lead to more complex sphingolipids (Shimobayashi et al., 2013). In contrast to Ypk1, which is activated by TORC2, Npr1 is inhibited by TORC1 (MacGurn et al., 2011). Thus, this control mechanism will only be exerted under conditions that inactivate TORC1, such as amino acid starvation (Loewith and Hall, 2011), a condition that presumably requires adjustment of both PM lipid and protein composition to maximize the cell's ability to scavenge and assimilate nutrients. Under the same condition, autophagy is induced because, like Npr1, TORC1 also negatively regulates the autophagy-inducing protein kinase Atg1-Atg13 complex (Alers et al., 2014). Conversely, under nutrient sufficient conditions, TORC1 is active, and phosphorylates and stimulates protein kinase Sch9. Interestingly, Sch9 action should act in concert with TORC2-Ypk1 signaling to help keep the levels of LCBs and LCBPs low and ceramides high. This is likely because Sch9 promotes transcriptional repression of genes (YDC1 and YPC1) that encode ceramidases and inhibits a phosphosphingolipid phospholipase C (Isc1) that hydrolyzes complex sphingolipids (Swinnen et al., 2014). Such complex multi-component controls may be a general feature of signaling modalities that interface with biosynthetic pathways that have intermediates, like LCBPs, that are not inocuous, but are themselves bioactive metabolites.
 
-## Calcineurin negatively regulates ceramide synthase
+### Calcineurin negatively regulates ceramide synthase
 
 Prior studies had suggested that calcineurin negatively regulates sphingolipid production via effects on the function of the ancillary TORC2 subunits, Slm1 and Slm2 (Bultynck et al., 2006; Mulet et al., 2006; Tabuchi et al., 2006; Daquinag et al., 2007), although the molecular connection between Slm1 and Slm2 and sphingolipid biosynthesis was unclear. Subsequently, it was observed that, in cells lacking the regulatory subunit (Cnb1), there was an increase in C26-containing ceramides, suggesting that calcineurin somehow antagonizes TORC2-dependent signaling (Aronova et al., 2008). We found that calcineurin negatively regulates ceramide synthesis by directing the dephosphorylation of Lac1 and Lag1. This Ca2+-activated calcineurin-dependent dephosphorylation occurred even in cells expressing a TORC2-independent constitutively-active Ypk1 allele. Moreover, we showed here that calcineurin does not affect Pkh1- (and Pkh2-) mediated phosphorylation of the activation loop of Ypk1, and we demonstrated previously that presence or absence of calcineurin does not alter TORC2-mediated phosphorylation of Ypk1 or cause any substantial change in Ypk1 specific activity (Roelants et al., 2011). Thus, direct down-modulation of either TORC2 or Ypk1 by calcineurin cannot account for the negative regulation it exerts on sphingolipid biosynthesis. What our findings now make clear is that calcineurin negatively regulates the sphingolipid pathway at the level of ceramide synthesis, at least in large part, by direct dephosphorylation of the stimulatory phosphorylations in the ceramide synthase subunits Lac1 and Lag1 that are installed by TORC2-Ypk1 signaling. Calcineurin recognizes substrates via a docking motif (PxIxIT or variants thereof), typically also accompanied quite a distance upstream by a secondary docking site (LxVP) (Roy and Cyert, 2009). However, these sites can be quite degenerate; for example, the more hydrophobic variant PVIVIT is much more potent in recruiting calcineurin when it is used to replace the native ‘PxIxIT’ sequences in either the transcription factor Crz1 (PIISIQ) (Roy et al., 2007) or the endocytic adaptor Aly1 (PILKIN) (O'Donnell et al., 2013). In both Lac1 and Lag1, there is a similar hydrophobic sequence located at the identical position in both proteins (355PIVFVL360). Whether this or any other degenerate match represents a calcineurin-binding site remains to be determined.
 
@@ -166,19 +1058,381 @@ In conclusion, our screening approach has provided a number of new insights into
 
 ## Materials and methods
 
-## Construction of yeast strains
+### Construction of yeast strains
 
-All S. cerevisiae strains used in this study are listed in Table 2. Strains were constructed using standard yeast genetic manipulations (Burke et al., 2005). For all strains constructed, integration of the desired DNA fragment into the correct genomic loci was confirmed by PCR using an oligonucleotide complementary to the integrated DNA fragment and an oligonucleotide complementary to genomic sequence at least 150 bases away from the integration site.10.7554/eLife.03779.012Table 2.Saccharomyces cerevisiae strains used in this studyDOI: http://dx.doi.org/10.7554/eLife.03779.012StrainGenotypeSource/referenceBY4741MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0Research Genetics, Inc.BY4742MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0Research Genetics, Inc.yAM135-ABY4741 Ypk1(L424A)::URA3-ypk2Δ::KanMX4This studyJTY6142BY4741 ypk1Δ::KanMX4Research Genetics, Inc.yAM120-ABY4741 ypk2Δ::KanMX4This studyyAM159-ABY4741 3xFLAG-Lag1::LEU2This studyyAM163-ABY4741 3xFLAG-Lag1(S23A S24A)::LEU2This studyyAM165-ABY4742 3xHA-Lac1::HIS3This studyyAM166-ABY4742 3xHA-Lac1 (S23A S24A)::HIS3This studyJTY5574BY4741 cna1Δ::KanMX4 cna2Δ::KanMX4M.S. Cyert, Stanford Univ.YDB379BY4741 Ypk1-3xFLAG::natNT2J.S. Weissman, Univ. of California, San FranciscoyAM205-ABY4742 Lac1::LEU2 Lag1::LEU2This studyyAM207-BBY4742 Lac1(S23A S24A)::LEU2 Lag1(S23A S24A)::LEU2This studyyAM210BY4742 Lac1(S23E S24E)::LEU2 Lag1(S23E S24E)::LEU2This studyyGT12BY4742 LYS2+ Lac1::LEU2 Lag1::LEU2 lcb3Δ::natNT2This studyyGT13BY4742 LYS2+ Lac1(S23A S24A)::LEU2 Lag1(S23A S24A)::LEU2 lcb3Δ::natNT2This studyyGT14BY4742 LYS2+ Lac1(S23E S24E)::LEU2 Lag1(S23E S24E)::LEU2 lcb3Δ::natNT2This studyyAM168BY4741 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2This studyyAM184BY4741 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2This studyyAM192-ABY4741 MET15+ 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag1(S23E S24E)::LEU2This studyyKL4BY4741 TOR2+::HygrKristin Leskoske, this labyKL5BY4741 Tor2(L2178A)::HygrKristin Leskoske, this lab
+All S. cerevisiae strains used in this study are listed in Table 2. Strains were constructed using standard yeast genetic manipulations (Burke et al., 2005). For all strains constructed, integration of the desired DNA fragment into the correct genomic loci was confirmed by PCR using an oligonucleotide complementary to the integrated DNA fragment and an oligonucleotide complementary to genomic sequence at least 150 bases away from the integration site.
 
-## Plasmids and recombinant DNA methods
+**Table 2.**
+ Saccharomyces cerevisiae strains used in this study
 
-All plasmids used in this study (except the library of PGAL1 based overexpression plasmids for synthetic dosage lethality [SDL] screening) are listed in Table 3. All plasmids were constructed and maintained in E. coli using standard laboratory methods (Green and Sambrook, 2012). For SDL screening, the entire open reading frame of each predicted and known Ypk1 substrate was amplified by PCR from BY4741 genomic DNA and ligated into the multiple cloning site of YCpLG (CEN, PGAL1, LEU2), generating a vector allowing galactose inducible overexpression of each substrate. All constructs generated in this study were confirmed by sequence analysis covering all promoter and coding regions in the construct.10.7554/eLife.03779.013Table 3.Plasmids used in this studyDOI: http://dx.doi.org/10.7554/eLife.03779.013PlasmidDescriptionSource/referencepGEX6P-1GST tag, bacterial expression vectorGE Healthcare, Inc.pGEX4T-1GST tag, bacterial expression vectorGE Healthcare, Inc.YCpLGCEN, LEU2, PGAL1 vector(Bardwell et al., 1998)BG18052 µm, URA3, PGAL1, C-terminal tandem affinity (TAP) tag vectorOpen Biosystems, Inc.pRS313CEN, HIS3, vector(Sikorski and Hieter, 1989)pRS316CEN, URA3, vector(Sikorski and Hieter, 1989)pRS416CEN, URA3, vector(Sikorski and Hieter, 1989)pBC111CEN, LEU2, vector(Iida et al., 2007)CHp282pRS416 PMET25-GFPChau Huynh, this laboratorypLB215pRS416 PMET25-Ypk1(Niles et al., 2012)pAX53pRS416 PMET25-Ypk1(K376A)This studypAX50BG1805 Ypk1(L424A)This studypFR203pGEX4T-1 Orm1(1-85)(Roelants et al., 2011)pBT6pGEX6P-1 Fps1(1-255)This studypBT7pGEX6P-1 Fps1(531-669)This studypBT12pGEX6P-1 Smp1This studypAX55pGEX6P-1 Lcb3(1-79)This studypAX56pGEX6P-1 Cdc1(1-41)This studypAX58pGEX6P-1 Her1(1-224)This studypAX59pGEX6P-1 Rts3This studypAX62pGEX6P-1 Fkh1This studypAX63pGEX6P-1 Yhp1This studypAX66pGEX6P-1 YNR014WThis studypAX67pGEX6P-1 YHR097CThis studypAX94pGEX6P-1 Mds3(545-1016)This studypAX131pGEX4T-1 Lac1(1-76)This studypAX132pGEX4T-1 Lac1(1-76)(S23A S24A)This studypFR291pGEX4T-1 Lag1(1-80)This studypAX133pGEX4T-1 Lag1(1-80)(S23A S24A)This studypAX134pGEX6P-1 Muk1(1-305)This studypAX215pGEX6P-1 Cyk3This studypAX223pGEX6P-1 Gpt2(1-35)This studypAX224pGEX6P-1 Gpt2(570-743)This studypAX225pGEX6P-1 Bre5This studypAX226pGEX6P-1 Npr1(1-437)This studypAX227pGEX6P-1 Pal1This studypAX228pGEX6P-1 Ysp2(97-665)This studypAX229pGEX6P-1 Ysp2(1072-1282)This studypAX230pGEX6P-1 Atg21This studypAX231pGEX6P-1 Pex31(250-462)This studypAX136pRS313 PLAC1-3xHA-Lac1This studypFR273pRS316 PYPK1-Ypk1(D242A)(Roelants et al., 2011)pAX250pRS313 PTPI1-GFP-Atg8This studypBCT-CCH1HpBC111 PTDH3-Cch1(Iida et al., 2007)
 
-## Bioinformatic prediction of Ypk1 substrates
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source/reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BY4741</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>Research Genetics, Inc.</td>
+    </tr>
+    <tr>
+      <td>BY4742</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0</td>
+      <td>Research Genetics, Inc.</td>
+    </tr>
+    <tr>
+      <td>yAM135-A</td>
+      <td>BY4741 Ypk1(L424A)::URA3-ypk2Δ::KanMX4</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JTY6142</td>
+      <td>BY4741 ypk1Δ::KanMX4</td>
+      <td>Research Genetics, Inc.</td>
+    </tr>
+    <tr>
+      <td>yAM120-A</td>
+      <td>BY4741 ypk2Δ::KanMX4</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM159-A</td>
+      <td>BY4741 3xFLAG-Lag1::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM163-A</td>
+      <td>BY4741 3xFLAG-Lag1(S23A S24A)::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM165-A</td>
+      <td>BY4742 3xHA-Lac1::HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM166-A</td>
+      <td>BY4742 3xHA-Lac1 (S23A S24A)::HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JTY5574</td>
+      <td>BY4741 cna1Δ::KanMX4 cna2Δ::KanMX4</td>
+      <td>M.S. Cyert, Stanford Univ.</td>
+    </tr>
+    <tr>
+      <td>YDB379</td>
+      <td>BY4741 Ypk1-3xFLAG::natNT2</td>
+      <td>J.S. Weissman, Univ. of California, San Francisco</td>
+    </tr>
+    <tr>
+      <td>yAM205-A</td>
+      <td>BY4742 Lac1::LEU2 Lag1::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM207-B</td>
+      <td>BY4742 Lac1(S23A S24A)::LEU2 Lag1(S23A S24A)::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM210</td>
+      <td>BY4742 Lac1(S23E S24E)::LEU2 Lag1(S23E S24E)::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yGT12</td>
+      <td>BY4742 LYS2+ Lac1::LEU2 Lag1::LEU2 lcb3Δ::natNT2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yGT13</td>
+      <td>BY4742 LYS2+ Lac1(S23A S24A)::LEU2 Lag1(S23A S24A)::LEU2 lcb3Δ::natNT2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yGT14</td>
+      <td>BY4742 LYS2+ Lac1(S23E S24E)::LEU2 Lag1(S23E S24E)::LEU2 lcb3Δ::natNT2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM168</td>
+      <td>BY4741 3xHA-Lac1::HIS3 3xFLAG-Lag1::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM184</td>
+      <td>BY4741 3xHA-Lac1(S23A S24A)::HIS3 3xFLAG-Lag1(S23A S24A)::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAM192-A</td>
+      <td>BY4741 MET15+ 3xHA-Lac1(S23E S24E)::HIS3 3xFLAG-Lag1(S23E S24E)::LEU2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yKL4</td>
+      <td>BY4741 TOR2+::Hygr</td>
+      <td>Kristin Leskoske, this lab</td>
+    </tr>
+    <tr>
+      <td>yKL5</td>
+      <td>BY4741 Tor2(L2178A)::Hygr</td>
+      <td>Kristin Leskoske, this lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and recombinant DNA methods
+
+All plasmids used in this study (except the library of PGAL1 based overexpression plasmids for synthetic dosage lethality [SDL] screening) are listed in Table 3. All plasmids were constructed and maintained in E. coli using standard laboratory methods (Green and Sambrook, 2012). For SDL screening, the entire open reading frame of each predicted and known Ypk1 substrate was amplified by PCR from BY4741 genomic DNA and ligated into the multiple cloning site of YCpLG (CEN, PGAL1, LEU2), generating a vector allowing galactose inducible overexpression of each substrate. All constructs generated in this study were confirmed by sequence analysis covering all promoter and coding regions in the construct.
+
+**Table 3.**
+ Plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Description</th>
+      <th>Source/reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pGEX6P-1</td>
+      <td>GST tag, bacterial expression vector</td>
+      <td>GE Healthcare, Inc.</td>
+    </tr>
+    <tr>
+      <td>pGEX4T-1</td>
+      <td>GST tag, bacterial expression vector</td>
+      <td>GE Healthcare, Inc.</td>
+    </tr>
+    <tr>
+      <td>YCpLG</td>
+      <td>CEN, LEU2, PGAL1 vector</td>
+      <td>(Bardwell et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>BG1805</td>
+      <td>2 µm, URA3, PGAL1, C-terminal tandem affinity (TAP) tag vector</td>
+      <td>Open Biosystems, Inc.</td>
+    </tr>
+    <tr>
+      <td>pRS313</td>
+      <td>CEN, HIS3, vector</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+    </tr>
+    <tr>
+      <td>pRS316</td>
+      <td>CEN, URA3, vector</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+    </tr>
+    <tr>
+      <td>pRS416</td>
+      <td>CEN, URA3, vector</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+    </tr>
+    <tr>
+      <td>pBC111</td>
+      <td>CEN, LEU2, vector</td>
+      <td>(Iida et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>CHp282</td>
+      <td>pRS416 PMET25-GFP</td>
+      <td>Chau Huynh, this laboratory</td>
+    </tr>
+    <tr>
+      <td>pLB215</td>
+      <td>pRS416 PMET25-Ypk1</td>
+      <td>(Niles et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>pAX53</td>
+      <td>pRS416 PMET25-Ypk1(K376A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX50</td>
+      <td>BG1805 Ypk1(L424A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pFR203</td>
+      <td>pGEX4T-1 Orm1(1-85)</td>
+      <td>(Roelants et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pBT6</td>
+      <td>pGEX6P-1 Fps1(1-255)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pBT7</td>
+      <td>pGEX6P-1 Fps1(531-669)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pBT12</td>
+      <td>pGEX6P-1 Smp1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX55</td>
+      <td>pGEX6P-1 Lcb3(1-79)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX56</td>
+      <td>pGEX6P-1 Cdc1(1-41)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX58</td>
+      <td>pGEX6P-1 Her1(1-224)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX59</td>
+      <td>pGEX6P-1 Rts3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX62</td>
+      <td>pGEX6P-1 Fkh1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX63</td>
+      <td>pGEX6P-1 Yhp1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX66</td>
+      <td>pGEX6P-1 YNR014W</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX67</td>
+      <td>pGEX6P-1 YHR097C</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX94</td>
+      <td>pGEX6P-1 Mds3(545-1016)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX131</td>
+      <td>pGEX4T-1 Lac1(1-76)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX132</td>
+      <td>pGEX4T-1 Lac1(1-76)(S23A S24A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pFR291</td>
+      <td>pGEX4T-1 Lag1(1-80)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX133</td>
+      <td>pGEX4T-1 Lag1(1-80)(S23A S24A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX134</td>
+      <td>pGEX6P-1 Muk1(1-305)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX215</td>
+      <td>pGEX6P-1 Cyk3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX223</td>
+      <td>pGEX6P-1 Gpt2(1-35)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX224</td>
+      <td>pGEX6P-1 Gpt2(570-743)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX225</td>
+      <td>pGEX6P-1 Bre5</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX226</td>
+      <td>pGEX6P-1 Npr1(1-437)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX227</td>
+      <td>pGEX6P-1 Pal1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX228</td>
+      <td>pGEX6P-1 Ysp2(97-665)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX229</td>
+      <td>pGEX6P-1 Ysp2(1072-1282)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX230</td>
+      <td>pGEX6P-1 Atg21</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX231</td>
+      <td>pGEX6P-1 Pex31(250-462)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAX136</td>
+      <td>pRS313 PLAC1-3xHA-Lac1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pFR273</td>
+      <td>pRS316 PYPK1-Ypk1(D242A)</td>
+      <td>(Roelants et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pAX250</td>
+      <td>pRS313 PTPI1-GFP-Atg8</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pBCT-CCH1H</td>
+      <td>pBC111 PTDH3-Cch1</td>
+      <td>(Iida et al., 2007)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bioinformatic prediction of Ypk1 substrates
 
 A Nx20 position weight matrix defining Ypk1 phosphoacceptor site specificity was made merging previously published data sets defining Ypk1 primary sequence specificity (Casamayor et al., 1999; Mok et al., 2010). This position weight matrix was then used with MOTIPS (Lam et al., 2010) to identify proteins with likely phosphorylated occurrences of this motif. Yeastmine (Balakrishnan et al., 2012) was used to identify all S. cerevisiae genes that showed genetic interactions with Ypk1, Ypk2, any component of the sphingolipid biosynthetic pathway or any component of known Ypk1 regulators (TORC2 and PP2A). Genes that showed significant growth phenotypes on myriocin, aureobasidin A and caspifungin (all compounds that cause severe growth phenotypes in ypk1Δ strains) were identified from the literature (Hillenmeyer et al., 2008). Lastly, MOTIPS predicted Ypk1 phosphorylation sites were compared to Phosphogrid (Sadowski et al., 2013) to identify those sites known to be phosphorylated in vivo. To be considered a potential Ypk1 substrate in this study, a protein had to have a myriocin, aureobasidin or caspofungin phenotype or a Yeastmine identified genetic interaction and: (a) 4 or more MOTIPS predicted sites, (b) 3 sites with at least one above a MOTIPS likelihood score of 0.7 or a Phosphogrid identified site or (c) 1–2 sites with a MOTIPS likelihood score of 0.7 and a Phosphogrid identified site. We also considered for further analysis a limited number of proteins that did not meet these criteria, but which still contained Ypk1 motifs. These are indicated in Table 3.
 
-## Yeast growth assays and synthetic dosage lethality screening
+### Yeast growth assays and synthetic dosage lethality screening
 
 For SDL screening, yAM135-A and BY4741 strains were both transformed with each SDL plasmid. Transformants were then cultured overnight in SC media containing 2% raffinose and 0.2% sucrose. 10-fold serial dilutions of overnight cultures starting from OD600 = 1.0 were then made in sterile water and spotted onto SC solid media with 2% galactose (to induce protein expression) or 2% dextrose (no protein expression). These plates also contained 1:1000 DMSO, 1 μM 3-MB-PP1 or 2 μM 3-MB-PP1 to inhibit to varying degrees Ypk1-as kinase activity in yAM135-A. Serially spotted cultures were allowed to grow in the dark at 30°C for 3 days. Plates were then scanned on a flatbed scanner and growth phenotypes were assessed and scored.
 
@@ -186,7 +1440,7 @@ For all SDL overexpression constructs that caused toxicity upon overexpression i
 
 For broth growth assays, exponential phase cultures growing in rich YP (Burke et al., 2005) media with 2% dextrose were diluted to OD600 = 0.1. 100 μl of each culture was placed in a well in a 96 well plate with vehicle or drug at the indicated concentration. Cultures were grown with orbital shaking at 30°C in a Tecan Infinite M-1000 PRO plate reader (Tecan Systems Inc., San Jose, CA) for 24 hr. Absorbance measurements were taken every 15 min. Absorbance values were converted to OD600 values using a standard curve of absorbance values of cultures at known OD600 taken on the same plate reader.
 
-## Protein purification and in vitro Ypk1 kinase assay
+### Protein purification and in vitro Ypk1 kinase assay
 
 To purify Ypk1-as kinase, pAX50 (2 μ, PGAL1-Ypk1-as-TAP, URA3) transformed yAM135-A yeasts were diluted to OD600 = 0.125 in 3 l of SC 2% raffinose 0.2% sucrose and grown shaking at 30°C to mid-exponential phase. Expression was induced for ∼18 hr by the addition of 2% galactose. Cells were harvested by centrifugation and frozen in liquid nitrogen. The cells were then lysed cryogenically using Mixer Mill MM301 (Retsch, Düsseldorf, Germany). The lysate was resuspended at 2 ml/g in TAP-B (50 mM Tris-Cl pH 7.5, 200 mM NaCl, 1.5 mM MgOAc, 1 mM DTT, 2 mM NaVO4, 10 mM NaF, 10 mM Na-PPi, 10 mM β-glycerol phosphate, 1× complete protease inhibitor [Roche, Basel, Switzerland]). The lysate was clarified by centrifugation at 15×kg for 20 min. Clarified lysate was then further centrifuged at 100×kg for 1 hr and then brought to 0.15% NP-40 using 10% NP-40 detergent stock. Ypk1-as-TAP fusion was then affinity purified from the lysate using IgG-agarose resin (GE Healthcare). The resin was extensively washed with Protease 3C Buffer (50 mM Tris-Cl pH 7.5, 200 mM NaCl, 1.5 mM MgOAc, 1 mM DTT, 0.01% NP-40, 10% Glycerol, 2 mM NaVO4, 10 mM NaF, 10 mM Na-PPi, 10 mM β-glycerol phosphate) and then resuspended in 1 ml Protease 3C Buffer. Ypk1-as was eluted by the addition of 80 U Prescission Protease (GE Healthcare, Little Chalfont, UK) for 5 hr at 4°C. Protease 3C was removed by the addition of glutathione-agarose (GE Healthcare).
 
@@ -194,7 +1448,7 @@ Putative Ypk1 substrates were expressed as N terminal GST fusions in BL21 E. col
 
 For kinase assays 0.25 μg of Ypk1-as kinase was incubated with purified GST-substrate fusion in Kinase Assay Buffer (50 mM Tris-Cl pH 7.5, 200 mM NaCl, 10 mM MgCl2, 0.1 mM EDTA) with 2 μCi [γ-32P]ATP at 30°C in the presence of absence of 10 μM 3-MB-PP1 for 30 min. Reactions were terminated by the addition of SDS/PAGE sample buffer containing 6% SDS followed by boiling for 5 min. Labeled proteins were resolved by SDS/PAGE and analyzed Coomassie blue staining and autoradiography with Phosphorimager plates (Molecular Dynamics, Sunnyvale, CA) on a Typhoon imaging system (GE Healthcare).
 
-## Preparation of cell extracts and immunoblotting
+### Preparation of cell extracts and immunoblotting
 
 Cell extracts were made by alkaline lysis followed by trichloroacetic acid precipitation as previously described (Westfall et al., 2008). To resolve Lag1 and Lac1 phosphorylated species, 15 μl of TCA extract was resolved by SDS-PAGE (8% acrylamide, 35 µM Phos-tag [Wako Chemicals USA, Inc., Richmond, VA], 35 µM MnCl2 at 160 V). The gel was then transferred to nitrocellulose and incubated with primary antibody in Odyssey buffer (Licor Biosciences Inc., Lincoln, NE), washed, and incubated with IRDye680-conjugated anti-mouse IgG (Licor Biosciences) in Odyssey buffer with 0.1% Tween-20 and 0.02% SDS. Blots were imaged using an Odyssey infrared scanner (Licor Biosciences).
 
@@ -202,7 +1456,7 @@ Primary antibodies and dilutions used in this study were: 1:1000 mouse anti-HA (
 
 For phosphatase treatment of cell extracts, TCA extracts were made as above and the precipitated proteins were solubilized in 100 µl Solubilization buffer (50 mM Tris-Cl pH 8.0, 150 mM NaCl, 2% β-mercaptoethanol, 2% SDS). These extracts were then diluted with 900 µl CIP Dilution buffer (50 mM Tris-Cl pH 8.0, 150 mM NaCl, 11.1 mM MgCl2). 150 U calf intestinal phosphatase (New England Biolabs, Ipswich, MA) was then added and incubated for 2 hr at 37°C. Proteins were then TCA precipitated again and resolved by SDS-PAGE as above.
 
-## Analysis of sphingolipid species
+### Analysis of sphingolipid species
 
 Complex sphingolipids were analyzed by thin layer chromatography. Cultures of strains in mid-exponential phase were adjusted to OD600 = 1.0 and 2 ml cultures were labeled with 100 µCi of [32P] PO4–3 and cells allowed to grow for 3 hr. Lipids were extracted and resolved as previously described (Hanson and Lester, 1980; Momoi et al., 2004) with minor modifications. The cell pellet was washed twice with 2 ml water and treated with 5% trichloroacetic acid for 20 min on ice. Pellets were extracted twice with 0.75 ml of ethanol/water/diethyl-ether/pyridine/NH4OH (15:15:5:1:0.018) at 60°C for 1 hr. Glycerophospholipids in the extract were hydrolyzed by treating with 0.1 M monomethylamine at 50°C for 1 hr after which the base was neutralized by addition of 12 µl of glacial acetic acid. Lipids were extracted with 1 ml chloroform, 0.5 ml methanol and phases separated with addition of 1 ml water. For some samples 1 ml of 4 N NaCl was used, in order to facilitate the separation of the aqueous and organic phases. The organic layer was dried under vacuum and resuspended in 50 µl of chloroform/methanol/water (16:16:5) and resolved on a silica gel TLC plate with chloform/methanol/4.2 N NH4OH (9:7:2). Radioactivity on the TLC plate was visualized with a Phosphorimager screen and Typhoon imaging system.
 
@@ -216,7 +1470,7 @@ The column exit was connected to the ESI probe of the mass spectrometer using PE
 
 Exact masses of precursor ions in positive ion (M + H+) state obtained from LIPID MAPS Online Tools were as follows- phytosphingosine- 318.3003, dihydrosphingosine-302.3053, phytosphingosine-1 phosphate-398.2666 and dihydrosphingosine-1 phosphate- 382.2717. The ions were further confirmed by tandem MS and identification of the fragments; product ions for the phytosphingosine headgroup was 282.3 and dihydrosphigosine headgroup was 266.4.
 
-## In vitro ceramide synthase assay
+### In vitro ceramide synthase assay
 
 Yeast expressing 3xFLAG-Lag1 (wild-type and phospho-site mutations) were grown at 30°C to mid-exponential phase and microsomes were prepared as described previously (Schorling et al., 2001) and resuspended in B88 buffer (20 mM HEPES-KOH pH 6.8, 150 mM KAc, 5 mM MgOAc, and 250 mM sorbitol). Ceramide synthase was then immunopurified from these microsomes using anti-FLAG agarose (Sigma) as described previously (Vallée and Riezman, 2005). Prior to assembling ceramide synthase reactions, a small alioquot of each (15 μl) immunoprecipitate was taken and proteins were resolved by SDS-PAGE and immunoblotted with anti-FLAG to determine the relative amount of immunopurified ceramide synthase in each reaction. Recovered ceramide levels for each reaction were normalized to the amount of ceramide synthase determined by this procedure.
 

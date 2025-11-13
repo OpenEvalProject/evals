@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/056tb7j80 Laboratorio de Arbovirus, Instituto de Virología “Dr. J. M. Vanella” (InViV), Facultad de Ciencias Médicas (FCM), Universidad Nacional de Córdoba (UNC) Córdoba Argentina
-2. https://ror.org/03cqe8w59 Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) Ciudad Autónoma de Buenos Aires Argentina
-3. https://ror.org/02zvkba47 Instituto de Investigaciones en Biodiversidad y Medioambiente (INIBIOMA), CONICET - Universidad Nacional de Comahue (UNCo) San Carlos de Bariloche Argentina
+1. Laboratorio de Arbovirus, Instituto de Virología “Dr. J. M. Vanella” (InViV), Facultad de Ciencias Médicas (FCM), Universidad Nacional de Córdoba (UNC) Córdoba Argentina ([ROR:056tb7j80](https://ror.org/056tb7j80))
+2. Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) Ciudad Autónoma de Buenos Aires Argentina ([ROR:03cqe8w59](https://ror.org/03cqe8w59))
+3. Instituto de Investigaciones en Biodiversidad y Medioambiente (INIBIOMA), CONICET - Universidad Nacional de Comahue (UNCo) San Carlos de Bariloche Argentina ([ROR:02zvkba47](https://ror.org/02zvkba47))
 
 † Corresponding author
 
@@ -37,7 +37,423 @@ Explanations for the seasonal shift in mosquito host feeding focused on vector b
 
 A total of 1162 egg rafts were obtained for analysis, distributed across the eight treatments as follows: chicken:autumn-I: 260, chicken:autumn-II: 174, chicken:summer-I: 162, chicken:summer-II: 88, mouse:autumn-I: 146, mouse:autumn-II: 96, mouse:summer-I: 167, and mouse:summer-II: 69. The full count of egg rafts for each replicate (24 treatments), along with the means for fecundity, fertility, and hatchability, are summarized in Table 1. This sample size was sufficient to detect the observed effect with a statistical power of 0.8, indicating an 80% chance of detecting a true effect if it exists.
 
+**Table 1.**
+ Reproductive outcomes of Culex quinquefasciatus indicating average fecundity, fertility and hatchability for both gonotrophic cycles, accompanied with its respective standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Replicate</th>
+      <th>Blood source</th>
+      <th>Season</th>
+      <th>Gonotrophic cycle</th>
+      <th>No. engorged females</th>
+      <th>No. egg rafts</th>
+      <th>Fecundity (eggs/raft)</th>
+      <th>Fertility (larvae/raft)</th>
+      <th>Hatchability(larvae/eggs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>163</td>
+      <td>76</td>
+      <td>147.47±31.84</td>
+      <td>133.24±38.19</td>
+      <td>0.89±0.14</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>116</td>
+      <td>74</td>
+      <td>125.64±39.57</td>
+      <td>109.39±43.66</td>
+      <td>0.85±0.19</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>58</td>
+      <td>23</td>
+      <td>124.48±20.85</td>
+      <td>119.96±21.47</td>
+      <td>0.96±0.04</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>208</td>
+      <td>120</td>
+      <td>150.67±29.41</td>
+      <td>140.38±33.15</td>
+      <td>0.93±0.10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>73</td>
+      <td>36</td>
+      <td>142.14±36.59</td>
+      <td>129.09±43.62</td>
+      <td>0.87±0.18</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>38</td>
+      <td>27</td>
+      <td>138.23±30.27</td>
+      <td>117.27±37.99</td>
+      <td>0.85±0.18</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>23</td>
+      <td>15</td>
+      <td>89.13±19.33</td>
+      <td>73.29±28.09</td>
+      <td>0.84±0.24</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>92</td>
+      <td>45</td>
+      <td>106.68±31.97</td>
+      <td>99.16±31.18</td>
+      <td>0.93±0.10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>178</td>
+      <td>89</td>
+      <td>138.23±37.45</td>
+      <td>122.7±41.55</td>
+      <td>0.90±0.15</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>78</td>
+      <td>51</td>
+      <td>128.75±38.9</td>
+      <td>126.08±33.97</td>
+      <td>0.89±0.13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>110</td>
+      <td>69</td>
+      <td>103.04±19.01</td>
+      <td>91.32±22.96</td>
+      <td>0.89±0.16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>36</td>
+      <td>27</td>
+      <td>113.26±30.66</td>
+      <td>103.83±34.81</td>
+      <td>0.89±0.20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>86</td>
+      <td>66</td>
+      <td>127.4±37.07</td>
+      <td>116.35±39.9</td>
+      <td>0.89±0.16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>48</td>
+      <td>34</td>
+      <td>143.68±28.06</td>
+      <td>136.75±28.05</td>
+      <td>0.92±0.11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>63</td>
+      <td>52</td>
+      <td>88.87±19.65</td>
+      <td>77.86±22.88</td>
+      <td>0.88±0.15</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>18</td>
+      <td>14</td>
+      <td>78.29±25.77</td>
+      <td>67±25.79</td>
+      <td>0.87±0.18</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>150</td>
+      <td>96</td>
+      <td>147.22±33.4</td>
+      <td>129.33±39.45</td>
+      <td>0.88±0.16</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>67</td>
+      <td>38</td>
+      <td>145.03±44.39</td>
+      <td>136.03±45.49</td>
+      <td>0.90±0.14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>I</td>
+      <td>92</td>
+      <td>54</td>
+      <td>96.04±23.78</td>
+      <td>85.76±27.45</td>
+      <td>0.89±0.18</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>I</td>
+      <td>27</td>
+      <td>20</td>
+      <td>104.3±21.42</td>
+      <td>98.35±23.86</td>
+      <td>0.93±0.09</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>chicken</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>94</td>
+      <td>73</td>
+      <td>144.07±37.49</td>
+      <td>125.23±39.42</td>
+      <td>0.87±0.17</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>chicken</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>35</td>
+      <td>28</td>
+      <td>156.36±26.71</td>
+      <td>141±39.53</td>
+      <td>0.90±0.18</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>mouse</td>
+      <td>autumn</td>
+      <td>II</td>
+      <td>42</td>
+      <td>29</td>
+      <td>79.66±19.94</td>
+      <td>68.76±23.73</td>
+      <td>0.87±0.21</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>mouse</td>
+      <td>summer</td>
+      <td>II</td>
+      <td>17</td>
+      <td>11</td>
+      <td>100.36±22.82</td>
+      <td>96.1±24.06</td>
+      <td>0.94±0.06</td>
+    </tr>
+  </tbody>
+</table>
+
 In both models—fecundity and fertility—the interaction between blood source and seasonality was statistically significant (fecundity: LRT X²=5.69, p<0.05; fertility: LRT X²=4.37, p<0.05; Tables 2 and 3; Figures 1A and 2, Figure 1—figure supplement 1, Figure 2—figure supplement 1). Mosquitoes that fed on chicken blood had the highest fecundity (summer: 136.4 eggs/raft, autumn: 141.5 eggs/raft) and fertility (summer: 123.9 larvae/raft, autumn: 126 larvae/raft) in both seasons. In summer, fecundity and fertility were 7% and 11% higher, respectively, in chicken-fed mosquitoes compared to mouse-fed mosquitoes. In autumn, these differences increased to 46% for fecundity and 52% for fertility in favor of chicken-fed mosquitoes. No significant seasonal variation was observed in fecundity and fertility for chicken-fed mosquitoes, but both measures were statistically significant lower by 24% and 25%, respectively, in autumn compared to summer for mouse-fed mosquitoes.
+
+**Table 2.**
+ Analysis of deviance table for the generalized linear mixed model examining the effects of blood source, seasonality, gonotrophic cycle, and their interactions on the fecundity (eggs/raft) of Culex quinquefasciatus mosquitoes across three replicates.A random intercept for treatment was included to account for variability among the 24 treatments (variance = 0.006169). Abbreviations: LRT X2 = likelihood-ratio test; df = degrees of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>LRT X2</th>
+      <th>df</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>blood source</td>
+      <td>19.22</td>
+      <td>1</td>
+      <td>1.16 × 10–5</td>
+    </tr>
+    <tr>
+      <td>seasonality</td>
+      <td>1.50</td>
+      <td>1</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>gonotrophic cycle</td>
+      <td>0.47</td>
+      <td>1</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality</td>
+      <td>5.69</td>
+      <td>1</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>blood source × gonotrophic cycle</td>
+      <td>2.74</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>seasonality × gonotrophic cycle</td>
+      <td>2.07</td>
+      <td>1</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality × gonotrophic cycle</td>
+      <td>1.65</td>
+      <td>1</td>
+      <td>0.20</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Analysis of deviance table for the generalized linear mixed model examining the effects of blood source, seasonality, gonotrophic cycle, and their interactions on the fertility (larvae/raft) of Culex quinquefasciatus mosquitoes across three replicates.A random intercept for treatment was included to account for variability among the 24 treatments (variance = 0.007226). Abbreviations: LRT X2 = likelihood-ratio test; df = degrees of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>LRT X2</th>
+      <th>df</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>blood source</td>
+      <td>13.30</td>
+      <td>1</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>seasonality</td>
+      <td>0.36</td>
+      <td>1</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>gonotrophic cycle</td>
+      <td>0.28</td>
+      <td>1</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality</td>
+      <td>4.37</td>
+      <td>1</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>blood source × gonotrophic cycle</td>
+      <td>3.98</td>
+      <td>1</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>seasonality × gonotrophic cycle</td>
+      <td>0.92</td>
+      <td>1</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality × gonotrophic cycle</td>
+      <td>0.50</td>
+      <td>1</td>
+      <td>0.47</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89485/elife-89485-fig1-v1.jpg)
+
+**Figure 1.:** Points represent the predicted marginal mean ± 95% confidence intervals, obtained from a generalized linear mixed model (GLMM) with a negative binomial distribution and log link function, including treatment as a random intercept effect. Means sharing same letters are not statistically different (p>0.05), based on pairwise comparisons with Tukey's adjustment. Treatments: Summer-Chicken (n = 250), Summer-Mouse (n = 236), Autumn-Chicken (n = 434), Autumn-Mouse (n = 242).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89485/elife-89485-fig1-figsupp1-v1.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89485/elife-89485-fig2-v1.jpg)
+
+**Figure 2.:** Interaction plots showing the effect of blood meal source (chicken or mouse) and seasonality (autumn or summer) (A) or blood meal source and gonotrophic cycle (first or second) (B) on fertility (eggs/raft) of Culex quinquefasciatus. Points represent the predicted marginal mean ± 95% confidence intervals, obtained from a generalized linear mixed model (GLMM) with a negative binomial distribution and log link function, including treatment as a random intercept effect. Means sharing same letters are not statistically different (p>0.05), based on pairwise comparisons with Tukey's adjustment. Treatments: Summer-Chicken: (n = 250), Summer-Mouse (n = 236), Autumn-Chicken (n = 434), Autumn-Mouse (n = 242); Cycle I-Chicken (n = 422), Cycle I-Mouse (n = 313), Cycle II-Chicken (n = 262), Cycle II-Mouse (n = 165).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89485/elife-89485-fig2-figsupp1-v1.jpg)
 
 In the fertility model, there was also a significant interaction between blood source and gonotrophic cycle (LRT X²=3.98, p<0.05), indicating that the impact of blood type on larvae production differed between the first and second cycles (Table 3, Figure 2B). Chicken-fed mosquitoes showed no difference in fertility between cycles, while those fed on mouse blood had 25% lower fertility in the second cycle compared to the first. During the second cycle, fertility was 50% higher in chicken-fed mosquitoes compared to mouse-fed mosquitoes.
 
@@ -52,6 +468,113 @@ There was no statistical difference among treatments and replicates in terms of 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89485/elife-89485-fig4-v1.jpg)
 
 **Figure 4.:** Boxplots showing predicted hatchability median of Culex quinquefasciatus for the 24 treatments, combining replicate (1-3), blood meal source (chicken or mouse), seasonality (summer or autumn), and gonotrophic cycle (first or second) . Values obtained from a generalized linear model (GLM) with a quiasipoisson distribution and log link function. Treatments: Summer-Chicken-I (n = 162), Summer-Chicken-II (n = 88), Summer-Mouse-I (n = 167), Summer-Mouse-II (n = 69), Autumn-Chicken-I (n = 260), Autumn-Chicken-II (n = 174), Autumn-Mouse-I (n = 146), Autumn-Mouse-II (n = 96).
+
+**Table 4.**
+ Analysis of deviance table for the generalized linear model examining the effects of blood source, seasonality, gonotrophic cycle, replicate and their interactions on the hatchability (larvae/eggs) of Culex quinquefasciatus mosquitoes.Abbreviations: LRT X2 = likelihood-ratio test; df = degrees of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>LRT X2</th>
+      <th>df</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>blood source</td>
+      <td>2.50</td>
+      <td>1</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>seasonality</td>
+      <td>3.06</td>
+      <td>1</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>gonotrophic cycle</td>
+      <td>0.005</td>
+      <td>1</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>replicate</td>
+      <td>1.31</td>
+      <td>1</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality</td>
+      <td>0.12</td>
+      <td>1</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>blood source × gonotrophic cycle</td>
+      <td>3.64</td>
+      <td>1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>seasonality × gonotrophic cycle</td>
+      <td>0.07</td>
+      <td>1</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>blood source × replicate</td>
+      <td>2.42</td>
+      <td>1</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>seasonality × replicate</td>
+      <td>2.96</td>
+      <td>1</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>gonotrophic cycle × replicate</td>
+      <td>0.07</td>
+      <td>1</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality × gonotrophic cycle</td>
+      <td>2.73</td>
+      <td>1</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality × replicate</td>
+      <td>0.02</td>
+      <td>1</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>blood source × gonotrophic cycle × replicate</td>
+      <td>2.48</td>
+      <td>1</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>seasonality × gonotrophic cycle × replicate</td>
+      <td>0.43</td>
+      <td>1</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>blood source × seasonality × gonotrophic cycle × replicate</td>
+      <td>2.57</td>
+      <td>1</td>
+      <td>0.28</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -75,23 +598,23 @@ In summary, our study investigates a critical aspect of mosquito reproductive su
 
 ## Materials and methods
 
-## Establishment and maintenance of mosquitoes
+### Establishment and maintenance of mosquitoes
 
 Egg rafts of Culex quinquefasciatus were collected from a drainage ditch at Universidad Nacional de Córdoba Campus, Córdoba city, in February 2021. Each raft was individually maintained in plastic containers with one liter of distilled water. The hatched larvae were fed with 100 mg of liver powder three times per week until pupation. Pupae were then transferred to plastic emerging cages (21 cm x 12 cm) covered with a tulle-like fabric, containing distilled water but no food. Adults emerging from each raft were identified morphologically (Darsie, 1985) and molecularly (Smith and Fonseca, 2004) to ensure they corresponded to Cx. quinquefasciatus, since Cx. pipiens and its hybrids coexist sympatrically in Córdoba city (Branda et al., 2021). All adults were reared in a cardboard cage of 22.5 L (28 cm x 36.5 cm) and provided ad libitum with a 10% sugar solution soaked in cotton pads placed on plastic cups. For long-term maintenance of the colony, 24-hour-starved mosquitoes were offered a blood meal from a restrained chicken twice a month. Four days after feeding, a plastic container with distilled water was placed inside the cage to allow engorged females to lay egg rafts. Batches of egg were collected and transferred to plastic containers (30 cm x 25 cm x 7 cm) in a proportion of three rafts per container, filled with 3 L of distilled water. The hatched larvae were also fed with liver powder at the same proportion described above. Pupae were transferred to emerging cages, and adult mosquitoes were placed in the final cardboard cage. The colony has been maintained for over twenty generations in the Insectary of the Instituto de Virología ‘Dr. J.M. Vanella’ (InViV). Room conditions were controlled at 28 ± 1 °C, with a 12 L:12D photoperiod and 70% relative humidity.
 
-## Experimental design
+### Experimental design
 
-## Blood source
+#### Blood source
 
 For experimental trials, avian hosts (live chicks of the species Gallus gallus) and mammalian hosts (live mice of the species Mus musculus, strain C57BL/6) were used to evaluate the effect of blood meal source on fecundity, fertility, and hatchability. Chicks were generously donated by the Bartolucci poultry farm (Córdoba, Argentina), while mice were commercially obtained from the Instituto de Investigación Médica Mercedes y Martín Ferreyra (CONICET - Universidad Nacional de Córdoba). In each trial, 24-hour-starved adult female mosquitoes were provided with a blood meal from restrained chicks or mice. Vertebrate hosts were offered to mosquitoes one hour before the lights were turned off and were kept for 3 hr during two consecutive gonotrophic cycles.
 
 The experimental use of animals (mosquitoes and vertebrates) was approved by the ethical committee at Facultad de Ciencias Médicas, Universidad Nacional de Córdoba (FCM-UNC) in compliance with the legislation regarding the use of animals for experimental and other scientific purposes (accession code: CE-2022–00518476-UNC-SCT#FCM).
 
-## Seasonality
+#### Seasonality
 
 To assess the effect of seasonality (photoperiod + temperature) on fecundity, fertility, and hatchability, a ‘typical’ summer and autumn day from Córdoba city was simulated in an incubator, where mosquitoes were housed throughout the entire experiment. Summer conditions were as follows: T°min = 22°C, T°max = 28°C, photoperiod = 14 L:10D. Autumn conditions were characterized by: T°min = 16°C, T°max = 22°C, and photoperiod = 10 L:14D. The humidity levels were maintained at 60–70% for both conditions. Data for simulated conditions were obtained from Climate Data website (https://es.climate-data.org/).
 
-## Feeding trial design
+#### Feeding trial design
 
 The interaction effect of blood source (chicken or mouse) and seasonality (autumn or summer) was evaluated during two consecutive gonotrophic cycles (I and II). This combination produced eight colonies that were established using egg rafts collected from the maintenance colony: mouse:autumn-I, mouse:autumn-II, chicken:autumn-I, chicken:autumn-II, mouse:summer-I, mouse:summer-II, chicken:summer-I, chicken:summer-II. This set of eight colonies was repeated in triplicate (1-3) at different time points, generating a total of 24 treatments.
 

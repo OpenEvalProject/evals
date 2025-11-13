@@ -28,7 +28,7 @@ In the current study, we assessed IL-1β release from macrophages after inflamma
 
 ## Results
 
-## Pycard was identified as a strong candidate gene for the modulation of macrophage IL-1β secretion
+### Pycard was identified as a strong candidate gene for the modulation of macrophage IL-1β secretion
 
 DBA/2 vs. AKR BMDM release ~two fold more IL-1β after priming with LPS and subsequent inflammasome activation via ATP treatment (Figure 1A). To identify genetic loci responsible for the difference in BMDM IL-1β release (a measure of inflammasome activity) between these strains, QTL mapping was performed. Parental AKR and DBA/2 mice were crossed to generate an F1 population, and their progeny, as well as the progeny of subsequent generations, were brother-sister mated to produce a population of 122 genetically diverse AKRxDBA/2 F4 mice. These F4 mice were genotyped via a dense mouse SNP array, which revealed the desired tapestry of genetic recombination among the cohort (Hai et al., 2018), with an average of >2 recombination events per chromosome. BMDM were cultured from these mice and subjected to LPS priming and subsequent ATP treatment. The levels of secreted IL-1β normalized to cellular protein from the F4 BMDM were positively skewed, so a log10 transformation was performed to achieve a normal distribution, which is required for subsequent analyses that utilize linear regression models. There was no sex effect on IL-1β levels, thus both sexes were used. QTL mapping was performed to identify regions in the genome where genetic variation was significantly associated with phenotypic variation. A highly significant QTL mapped to distal chromosome 7 (log10 of the odds score (LOD) = 8.60, peak position = 134.80 Mb), which we named inflammatory response modulator 3 (Irm3) in accordance with Mouse Genome Informatics nomenclature conventions (Figure 1B). Loci on chromosome 2 (147Mb, LOD = 3.79) and chromosome 11 (73Mb, LOD = 3.85) were highly suggestive, falling just short of the genome-wide significance threshold of LOD = 4.02 (α = 0.05) determined by permutation analysis. After correcting for Irm3 by using its peak marker genotypes as an additive covariate, loci on chromosomes 2, 11, and 16 reached genome-wide significance, and were named Irm4, Irm5, and Irm6, respectively (Figure 1C).
 
@@ -38,37 +38,37 @@ DBA/2 vs. AKR BMDM release ~two fold more IL-1β after priming with LPS and sub
 
 Irm3 has a Bayesian credible interval (probability >0.95 for the causal gene(s) to reside in the interval) of 134.80–138.45 Mb, which contains 66 genes (Supplementary file 1a). Separating the F4 BMDM by their genotype at the Irm3 locus revealed an additive gene dose response for log IL-1β release, with an R2 value of 0.28 (p<0.0001 by ANOVA linear trend test) indicating that this locus is associated with 28% of the variance in IL-1β release among the F4 BMDM (Figure 1D). Pycard was selected as the top candidate gene based on its established role in inflammasome assembly, its proximity to the QTL peak (0.33 Mb), and the presence of a strong cis-expression QTL (eQTL, showing genetic variation near that gene is associated with its expression) with a LOD score of 20.0 determined in our prior BMDM transcriptomic study based on an independent intercross of the same two parental strains (Hsu and Smith, 2013). Only 3 of the 66 genes in this interval had nonsynonymous SNPs (Zfp646, Bag3, Dmbt1), but none of these SNPs were predicted to alter protein function based on in silico PROVEAN analysis (Choi and Chan, 2015; Supplementary file 1a). There was one other gene in this interval that we previously found to have a cis-eQTL (Rgs10), with a marginal LOD score of 2.6 (2). Taken together, these data suggest that genetic variability within or flanking the Pycard gene plays a causal role in manifesting the divergent levels of secreted IL-1β in AKR vs. DBA/2 BMDM, potentially due to differences in Pycard gene expression. There is only one SNP (rs33183533) within the Pycard gene between the AKR and DBA/2 parental strains, which resides in the 3’ UTR. There are also two known upstream SNPs (rs31253258, rs33187231; 5602 and 7736 bp upstream, respectively) and one downstream SNP (rs33182327; 913 bp distal to gene) within 10 kb of the gene. The Sanger Mouse Genomes Project (REL-1505) shows that the 3’ UTR SNP rs33183533 DBA/2 allele (T on the coding strand) is the same as the C57BL/6J reference genome allele. Additionally, 24 of the 36 other mouse strains sequenced had a T allele at the 3’UTR SNP, while the AKR allele (A on the coding strand) is shared by 12 of the 36 other mouse strains (Yalcin et al., 2012). We performed overlapping PCR (Supplementary file 1b) of AKR and DBA/2 genomic DNA covering the entire Pycard gene plus 456 bp and 2361 bp of upstream and downstream flanking region (5310 bp sequenced), which confirmed the presence of the 3’ UTR SNP rs33183533 and the downstream SNP rs33182327, with no other sequence variants in Pycard exons, introns, or flanking regions. The 3’UTR SNP is 3 bp downstream from the stop codon, and this region is perfectly conserved in rats, which have the DBA/2 allele. Thus, the DBA/2 allele is likely the ancestral mouse allele, but this region is not perfectly conserved in rabbits or primates (Figure 1E).
 
-## DBA/2 vs. AKR BMDM have higher Pycard expression and form more ASC specks
+### DBA/2 vs. AKR BMDM have higher Pycard expression and form more ASC specks
 
 Real-time quantitative PCR analysis showed that Pycard mRNA is expressed at ~2–3 fold higher levels in DBA/2 BMDM relative to AKR BMDM in several independent experiments (Figure 2A), in agreement with our prior cis-eQTL data. LPS priming had no effect on Pycard mRNA levels or the observed strain difference (Figure 2A). Western blotting showed 1.5-fold higher levels of the protein product of Pycard, ASC, in DBA/2 vs. AKR BMDM (Figure 2B, p<0.01). When inflammasome activation is triggered, ASC assembles into higher-order protein complexes termed ‘ASC specks’. Immunostaining for ASC in untreated BMDM showed an expected diffuse cytosolic distribution in both strains (Figure 2C). When inflammasomes were primed and activated by treatment with LPS (4 hr) and ATP (30 min), more ASC speck puncta were observed in DBA/2 vs. AKR BMDM (Figure 2C). The ASC specks in both strains appeared similar in size and shape, and displayed characteristic perinuclear localization. In a separate experiment, automated image analysis revealed that, after LPS and ATP treatment, 54 AKR BMDM had specks while 8664 did not (0.6% speck positive), and 850 DBA/2 BMDM had specks while 2357 did not (26.5% speck positive, p<0.0001 by Fisher’s exact test).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig2-v1.jpg)
 
-**Figure 2.:** Pycard/ACS expression and inflammasome speck formation.(A) Relative Pycard mRNA levels in AKR (magenta) and DBA/2 (green) BMDM, showing no induction by LPS (different letters above columns show p<0.05 by ANOVA Tukey posttest, mean and SD shown). Median of technical triplicates of biological triplicates plotted, representative of two independent experiments. (B) Western blot for ASC (top) and β-actin (bottom) in biological triplicate lysates from AKR and DBA/2 BMDM. Densitometric analysis revealed a 50% increase in the ASC/β-actin ratio (p<0.01 by two-tailed t-test). (C) Immunofluorescent staining for ACS specks (red) showing assembled inflammasomes and nuclei (blue) in AKR and DBA/2 BMDM with or without inflammasome priming and activation by LPS (4 hr)+ATP (30 min) treatment. For the fields shown in the lower panels, primed and activated AKR BMDM yielded 2 specks among 98 nuclei, while DBA/2 BMDM yielded 23 specks among 58 nuclei. Source data in file Source data 1. Unedited western blots in (B) unedited western blot source data.docx.
+**Figure 2.:** (A) Relative Pycard mRNA levels in AKR (magenta) and DBA/2 (green) BMDM, showing no induction by LPS (different letters above columns show p<0.05 by ANOVA Tukey posttest, mean and SD shown). Median of technical triplicates of biological triplicates plotted, representative of two independent experiments. (B) Western blot for ASC (top) and β-actin (bottom) in biological triplicate lysates from AKR and DBA/2 BMDM. Densitometric analysis revealed a 50% increase in the ASC/β-actin ratio (p<0.01 by two-tailed t-test). (C) Immunofluorescent staining for ACS specks (red) showing assembled inflammasomes and nuclei (blue) in AKR and DBA/2 BMDM with or without inflammasome priming and activation by LPS (4 hr)+ATP (30 min) treatment. For the fields shown in the lower panels, primed and activated AKR BMDM yielded 2 specks among 98 nuclei, while DBA/2 BMDM yielded 23 specks among 58 nuclei. Source data in file Source data 1. Unedited western blots in (B) unedited western blot source data.docx.
 
-## Pycard mRNA half-life is shorter in AKR vs. DBA/2 BMDM
+### Pycard mRNA half-life is shorter in AKR vs. DBA/2 BMDM
 
 We hypothesized that the Pycard 3’UTR SNP could influence Pycard mRNA turnover. To determine if Pycard mRNA turnover was different between DBA/2 and AKR BMDM, an actinomycin D time course study was performed. The study revealed that Pycard mRNA had a longer half-life (t1/2) in DBA/2 BMDM than in AKR BMDM (1.64 vs. 1.16 hr, respectively, Figure 3A), with two-way ANOVA showing significant time (p<0.0001), strain (p=0.031), and interaction effects (p=0.002). Similar results were obtained in an independent experiment. To test for differences in Pycard transcription rate, a nuclear run-on experiment was performed, which revealed no significant difference between AKR and DBA/2 BMDM (Figure 3B). The secondary structure of a 30 nucleotide sequence of Pycard mRNA encompassing the 3’UTR SNP was predicted using the RNAfold WebServer (http://rna.tbi.univie.ac.at/cgi-bin/RNAfold.cgi). There is a marked difference in predicted mRNA secondary structure near the SNP, where the AKR allele has a longer stem without a loop after the SNP, and the DBA/2 allele forms a shorter stem followed by a loop (Figure 3C). To determine potential allele-specific miRNA target sites, we searched the miRDB (Wong and Wang, 2015) for miRNAs predicted to bind to 150 nucleotide segments of Pycard mRNA centered on the 3’UTR SNP. Although we identified the target sequence CCAGCUA, eight nt after the SNP, which is predicted to bind to murine miR-7688–5 p, miR-7085–3 p, and miR7669-3p, no allele-specific miRNA targets were identified. To determine if the 3’UTR SNP altered mRNA splicing or isoform expression, we performed RNAseq on RNA isolated from AKR and DBA/2 BMDM. Assessment of the mapped reads using the IGV browser (Robinson et al., 2011) revealed that both strains express the identical 3-exon isoform (Figure 3D), although both the 5’ and the 3’UTRs are shorter than the canonical major transcript isoform (Pycard-201, ENSMUST00000033056.4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig3-v1.jpg)
 
-**Figure 3.:** Pycard mRNA turnover and structure.(A) Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of AKR (magenta) and DBA/2 (green) BMDM (***, p<0.001 by two-tailed t-test). Each point is the mean ± SD of biological triplicates using the mean of technical triplicates. (B) Relative level of Pycard mRNA run-on transcription in AKR (magenta) and DBA/2 (green) BMDM (not significant by two-tailed t-test). Biological triplicates, mean and SD shown. (C) Predicted structure of AKR and DBA/2 Pycard mRNA segments near the 3’UTR SNP. (D) Sashimi plot of exon junctional reads and read depth histogram (IGV browser view) of RNAseq from AKR and DBA/2 BMDM, with the Pycard gene exon-intron structure below (gene on lower strand, 5’ to 3’ from right to left). Source data in file Source data 1.
+**Figure 3.:** (A) Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of AKR (magenta) and DBA/2 (green) BMDM (***, p<0.001 by two-tailed t-test). Each point is the mean ± SD of biological triplicates using the mean of technical triplicates. (B) Relative level of Pycard mRNA run-on transcription in AKR (magenta) and DBA/2 (green) BMDM (not significant by two-tailed t-test). Biological triplicates, mean and SD shown. (C) Predicted structure of AKR and DBA/2 Pycard mRNA segments near the 3’UTR SNP. (D) Sashimi plot of exon junctional reads and read depth histogram (IGV browser view) of RNAseq from AKR and DBA/2 BMDM, with the Pycard gene exon-intron structure below (gene on lower strand, 5’ to 3’ from right to left). Source data in file Source data 1.
 
-## CRISPR/Cas9 editing of Pycard in embryonic stem cells
+### CRISPR/Cas9 editing of Pycard in embryonic stem cells
 
 To confirm the role of the Pycard 3’UTR SNP on Pycard expression and IL-1β release after inflammasome activation, CRISPR/Cas9 homology directed repair (HDR) gene editing was employed to change the DBA/2 allele (T on coding strand) to the AKR allele (A on coding strand) in the DBA/2J mouse embryonic stem (ES) cell line AC173/GrsrJ. We were able to enrich for HDR editing vs. non-homologous end joining (NHEJ) by using: (1) selection via an HDR-dependent GFP-stop codon reporter; (2) a NHEJ inhibitor; and, (3) cell cycle synchronization (Figure 4A). The Pycard guide RNA target sequence (on the antisense strand) contained the SNP (Figure 4B), so that successful HDR would eliminate the perfect match with the single guide RNA (sgRNA) and limit re-cutting of the edited allele. After co-transfection with sgRNAs and single-strand donor DNAs to correct the GFP stop codon and edit the Pycard SNP, we sorted GFP+ cells for clonal growth. We screened 49 colonies by allele-specific PCR (Figure 4B,C) and Sanger sequencing (Figure 4D). We obtained five colonies (10.2%) homozygous for the AKR allele, and three of these colonies (H2, H5, and H35) were expanded for functional testing.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig4-v1.jpg)
 
-**Figure 4.:** Pycard gene editing of ES cells to convert the DBA/2 allele to the AKR allele.(A) Strategy used to decrease NHEJ by use of HDR reporter and small molecules to modulate cell cycle and inhibit NHEJ. (B) Sequence of the AKR allele ss donor (3’UTR SNP highlighted in red) with 500 nt homology arm (HA), which will change the SNP from DBA/2 to AKR and eliminate Cas9 re-cutting, since the SNP is within the sgRNA sequence (underlined in the DBA/2 gene sequence). The sequence of the AKR and DBA/2 allele-specific PCR reverse primers are also shown with the SNP at the 3’ end, along with the positions of the common forward primer and the reverse PCR primer used for sequencing the edited clonally derived genomic DNA. (C) Example of allele-specific PCR using AKR and DBA/2 genomic controls, and DNA from expanded colonies after gene editing. Genotypes cannot all be distinguished, as one of both alleles may be edited by NHEJ precluding DNA amplification. (D) Sanger sequencing of DNA after gene editing showing a homozygous HDR conversion to the AKR allele (top) and a compound heterozygous with editing to one AKR allele and one indel allele due to NHEJ (bottom).
+**Figure 4.:** (A) Strategy used to decrease NHEJ by use of HDR reporter and small molecules to modulate cell cycle and inhibit NHEJ. (B) Sequence of the AKR allele ss donor (3’UTR SNP highlighted in red) with 500 nt homology arm (HA), which will change the SNP from DBA/2 to AKR and eliminate Cas9 re-cutting, since the SNP is within the sgRNA sequence (underlined in the DBA/2 gene sequence). The sequence of the AKR and DBA/2 allele-specific PCR reverse primers are also shown with the SNP at the 3’ end, along with the positions of the common forward primer and the reverse PCR primer used for sequencing the edited clonally derived genomic DNA. (C) Example of allele-specific PCR using AKR and DBA/2 genomic controls, and DNA from expanded colonies after gene editing. Genotypes cannot all be distinguished, as one of both alleles may be edited by NHEJ precluding DNA amplification. (D) Sanger sequencing of DNA after gene editing showing a homozygous HDR conversion to the AKR allele (top) and a compound heterozygous with editing to one AKR allele and one indel allele due to NHEJ (bottom).
 
-## Pycard 3’UTR SNP confirmed as a causal modifier via ES cell derived macrophage (ESDM) functional tests
+### Pycard 3’UTR SNP confirmed as a causal modifier via ES cell derived macrophage (ESDM) functional tests
 
 Macrophage-directed differentiation was performed on the three homozygous Pycard edited cell lines and their parental clonally derived DBA/2 ES cell line as previously described, and confirmed by acetylated LDL uptake (Hai et al., 2018). After LPS and ATP treatment the DBA/2 ESDM released about twofold more IL-1β vs. the three independent Pycard edited ESDM lines (p<0.05 or<0.01, Figure 5A). qPCR demonstrated that Pycard mRNA was ~3 fold higher in DBA/2 ESDM relative to Pycard edited ESDM lines (p=0.014, Figure 5B). This difference in Pycard mRNA was associated with mRNA t1/2 of 6.37 vs. 4.56 hr in DBA/2 ESDM vs. Pycard edited ESDM, respectively (Figure 5C). Western blot analysis showed greater heterogeneity in the levels of ASC protein among the three Pycard edited ESDM lines; however, all three edited ESDM lines had reduced ASC protein vs. DBA/2 ESDM (p<0.05 or p<0.001, Figure 5D). These results confirm that the Pycard 3’UTR SNP is a causal variant that alters Pycard mRNA turnover, Pycard mRNA levels, ASC protein levels, and IL-1β release. Of interest, compared to the BMDM, the absolute values of IL-1β secretion and the Pycard mRNA t1/2 were different in the ESDM, suggesting these macrophages may be less mature than BMDM.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig5-v1.jpg)
 
-**Figure 5.:** Pycard expression in ESDM.(A) IL-1β release from ESDM derived from DBA/2 ES (green) and three independent homozygous Pycard edited ES lines (magenta), in the absence or presence of inflammasome priming and activation with LPS +ATP (each point is a biological replicate; *, p<0.05; **, p<0.01 vs DBA/2 derived ESDM in the presence of LPS +ATP by ANOVA with Dunnett's multiple comparisons test, mean and SD shown). (B) Pycard mRNA levels in two DBA/2 ESDM differentiations and three independent homozygous Pycard edited ESDM (p=0.014 by two-tailed t-test). Each point is a biological replicate of qPCR technical triplicates, mean shown. (C) Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of ESDM derived from two differentiations of DBA/2 ES and three independent homozygous Pycard edited ES lines (magenta), (*, p<0.05 by two-tailed t-test). Each point is the average of biological triplicates of qPCR technical triplicates, mean and SD shown. (D) Left side, western blot for ASC (top) and β-actin (bottom) from ESDM lysates derived from DBA/2 ES and three independent homozygous Pycard edited ES lines. Right side, densitometry of western blot showing ASC levels are lower in all three Pycard edited cell lines (*, p<0.05; ***, p<0.001 vs. DBA/2 derived ESDM by ANOVA with Dunnett's multiple comparisons test, mean and SD shown).
+**Figure 5.:** (A) IL-1β release from ESDM derived from DBA/2 ES (green) and three independent homozygous Pycard edited ES lines (magenta), in the absence or presence of inflammasome priming and activation with LPS +ATP (each point is a biological replicate; *, p<0.05; **, p<0.01 vs DBA/2 derived ESDM in the presence of LPS +ATP by ANOVA with Dunnett's multiple comparisons test, mean and SD shown). (B) Pycard mRNA levels in two DBA/2 ESDM differentiations and three independent homozygous Pycard edited ESDM (p=0.014 by two-tailed t-test). Each point is a biological replicate of qPCR technical triplicates, mean shown. (C) Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of ESDM derived from two differentiations of DBA/2 ES and three independent homozygous Pycard edited ES lines (magenta), (*, p<0.05 by two-tailed t-test). Each point is the average of biological triplicates of qPCR technical triplicates, mean and SD shown. (D) Left side, western blot for ASC (top) and β-actin (bottom) from ESDM lysates derived from DBA/2 ES and three independent homozygous Pycard edited ES lines. Right side, densitometry of western blot showing ASC levels are lower in all three Pycard edited cell lines (*, p<0.05; ***, p<0.001 vs. DBA/2 derived ESDM by ANOVA with Dunnett's multiple comparisons test, mean and SD shown).
 
 ## Discussion
 
@@ -86,47 +86,260 @@ Our study identified an additional ASC regulatory mechanism in mice due to a Pyc
 
 ## Materials and methods
 
-## Generation and genotyping of AKRxDBA/2 F4 mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Pycard</td>
+      <td>Ensemble</td>
+      <td>ENSG00000103490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>AKR/J</td>
+      <td>JAX</td>
+      <td>648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>DBA/2J</td>
+      <td>JAX</td>
+      <td>671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>DBA/2J mouse ES cell line AC173/GrsrJ</td>
+      <td>JAX</td>
+      <td>000671C02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>(Puromycin-resistant MEF feeder cells)</td>
+      <td>Cell Biolabs</td>
+      <td>CBA-312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Neomycin-resistant MEF feeder cells (Cell Biolabs, CBA-311)</td>
+      <td>Cell Biolabs</td>
+      <td>CBA-311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. pyogenes)</td>
+      <td>Cas9 expression plasmid pSpCas9(BB)−2A-Puro</td>
+      <td>Addgene</td>
+      <td>PX459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Aequorea Victoria)</td>
+      <td>MSCV-miRE-shRNA IFT88-PGK-neo-IRES-GFP plasmid,</td>
+      <td>Addgene</td>
+      <td>73576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti Cas9 (Diagenode, C15200203)</td>
+      <td>Diagenode</td>
+      <td>C15200203</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-mouse AS</td>
+      <td>Cell Signalling</td>
+      <td>67824</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ASC N-terminus</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Sc-22514-R</td>
+      <td>IF (10 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal alexa Flour 568 anti-rabbit IgG</td>
+      <td>ThermoFisher</td>
+      <td>A-11011</td>
+      <td>IF (2 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonalHRP-conjugated anti β-actin</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Sc-47778-HRP</td>
+      <td>(WB (1:20,000))</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR for mouse Pycard</td>
+      <td>ThermoFisher</td>
+      <td>4331182, Assay ID: Mm00445747_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR for mouse Actb</td>
+      <td>ThermoFisher</td>
+      <td>4448484, Assay ID: Mm02619580_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nuclear run-on qPCR for mouse Pycard</td>
+      <td>ThermoFisher</td>
+      <td>4441114, Assay ID: AJMSHN7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA for GFP stop codon</td>
+      <td>Synthego</td>
+      <td>Custom</td>
+      <td>GGGCGAGGGCGAUGCCACCU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA for Pycard 3’ UTR</td>
+      <td>Synthego</td>
+      <td>Custom</td>
+      <td>AGAUACCUCAGCUCUGCUCC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leukaemia inhibitory factor</td>
+      <td>Millipore-Sigma</td>
+      <td>ESG1107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse IL-3</td>
+      <td>R and D Systems</td>
+      <td>403 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Il-1β ELISA</td>
+      <td>R and D Systems</td>
+      <td>MLB00C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA synthesis kit</td>
+      <td>ThermoFisher</td>
+      <td>1175505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>BioRad</td>
+      <td>1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS from E. coli O55:B5</td>
+      <td>Sigma</td>
+      <td>L6529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma</td>
+      <td>A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom special R functions</td>
+      <td>This paper</td>
+      <td>https://github.com/BrianRitchey/qtl</td>
+      <td>See Methods section</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>r/QTL</td>
+      <td>Reference 30 in this paper</td>
+      <td>https://rqtl.org/download/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>30 µm sterile filters</td>
+      <td>Sysmex</td>
+      <td>04-004-2326</td>
+      <td>To filter out embryonic bodies during ESDM differentiation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation and genotyping of AKRxDBA/2 F4 mice
 
 All animal studies were approved by the Cleveland Clinic Institutional Animal Care and Use Committee. Parental wild type male AKR/J and female DBA/2J mice, obtained from JAX (# 648 and 671), were crossed to create the F1 generation, fixing the Y chromosome from the AKR strain. Two breeding pairs of F1 mice were bred to generate F2 mice, and two breeding pairs of F2 mice were used to generate F3 mice. Six breeding pairs of F3 mice were used to generate the 122 F4 mice, which consisted of 70 males and 52 females. Healthy F4 mice were sacrificed at 8–10 weeks of age. Ear tissue was collected from each mouse and digested overnight at 55°C in lysis buffer containing 20 mg/mL proteinase K. DNA was ethanol precipitated and resuspended in 10 mM Tris 1 mM EDTA (pH = 8). Femurs were promptly flushed after sacrifice, and resultant bone marrow cells were washed, aliquoted, and cryopreserved. Cells were thawed and differentiated into macrophages at the time of experimentation, as described below. F4 mice were genotyped as described previously (Hai et al., 2018). Briefly, the GeneSeek MegaMUGA SNP array was used, and filtering for call frequency and strain polymorphism using parental and F1 DNA yielded 16,975 informative SNPs that were used for QTL analysis. All marker locations are based on NCBI Mouse Genome Build 37.
 
-## Bone-marrow-derived macrophages
+### Bone-marrow-derived macrophages
 
 Cryopreserved bone marrow cells were resuspended and plated in macrophage growth medium (DMEM, 10% FBS, 20% L-cell conditioned media as a source of Macrophage Colony Stimulating Factor). Media was renewed twice per week. Cells were used for experiments 11–14 days after plating, when the cells were confluent and fully differentiated into BMDM. Three of the 122 F4 frozen bone marrow cells did not generate macrophages yielding 119 samples assessed below.
 
-## IL-1β release assay
+### IL-1β release assay
 
 BMDM or ESDM were primed with 1 μg/mL LPS from Escherichia coli O55:B5 (Sigma, L6529) for 4 hr at 37°C and subsequently treated with 5 mM adenosine triphosphate (ATP) (Sigma; A2383) for 30 min at 37°C. Media were collected and briefly centrifuged to pellet any cellular debris and the resultant supernatant was collected. IL-1β levels were measured via a mouse IL-1β ELISA assay according to the manufacturer’s instructions (R and D Systems, MLB00C). Released IL-1β levels were normalized to cellular protein, as determined by the bicinchoninic acid protein assay (ThermoFisher, 23227) of total cell lysates prepared by incubation at 37°C for >4 hr in 0.2 N NaOH, 0.2% SDS.
 
-## Quantitative trait locus (QTL) mapping of macrophage IL-1β release
+### Quantitative trait locus (QTL) mapping of macrophage IL-1β release
 
 QTL mapping of log10 IL-1β released from 119 AKR x DBA/2 F4 BMDM was performed using R/qtl software (Broman et al., 2003). The ‘scanone’ function was utilized using Haley-Knott regression by specifying the ‘method’ argument as ‘hk’. False discovery rates (FDRs) were estimated via permutation analysis, using 10,000 permutations by specifying the ‘n.perm’ argument in the ‘scanone’ function. QTL credible intervals were determined using the Bayesian credible interval (‘bayesint’) function in R/qtl, with the ‘prob’ argument set at 0.95. QTL mapping for Irm4-6 was performed using the genotypes from the most strongly associated Irm3 marker as an additive covariate (‘addcovar’) in the ‘scanone’ function of R/qtl, and again subjected to 10,000 permutation analyses to determine FDRs. Loci that reached significance were designated Irm4-6 based on their occurrence scanning left to right across the genome. To aid in prioritizing candidate genes, a custom R function termed ‘flank_LOD’ was written (https://github.com/BrianRitchey/qtl/blob/master/flank_LOD.R). ‘flank_LOD’ utilizes the ‘find.flanking’ function in R/qtl and returns the LOD score of the nearest flanking marker for a given candidate gene position based on ‘scanone’ output data.
 
-## Pycard mRNA expression assay
+### Pycard mRNA expression assay
 
 RNA was extracted from BMDM or ESDM by scrapping cells in QIAzol reagent and homogenization by 5–10 passages through a 27 gauge syringe with subsequent phenol/chloroform extraction. RNA was purified using the miRNeasy Mini Kit (Qiagen, 217004) with on-column DNA digestion according to manufacturer’s instructions. cDNA was generated using SuperScript VILO Master Mix (ThermoFisher, 11755050) or IScript cDNA Synthesis Kit (BioRad, 1708891). mRNA levels were determined via TaqMan qPCR assays for mouse Pycard (ThermoFisher, 4331182, Assay ID: Mm00445747_g1), with Actb (4448484, Assay ID: Mm02619580_g1) serving as an internal control. Samples were run for 40 cycles on an Applied Biosystems StepOnePlus Real-Time PCR System using the comparative Ct method. Resultant data were analyzed using the 2^-ΔΔCt method relative to the average AKR ΔCt for BMDM, and the average DBA/2 ESDM ΔCt for ESDM. In some experiments, Pycard mRNA turnover was assessed by treating cells with 10 μg/mL Actinomycin D (Sigma, A1410) at various time points before cells were harvested.
 
-## Nuclear run-on
+### Nuclear run-on
 
 Previously published methods were followed (Roberts et al., 2015; Patrone et al., 2000). AKR and DBA/2 BMDM were first primed with 1 μg/mL LPS for 4 hr. Cells were collected into strain-specific pools, counted on a hemocytometer, and lysed in NP-40 lysis buffer to obtain nuclei. In vitro RNA synthesis with biotin-16-UTP was performed using 50 million nuclei per reaction, with triplicate concurrent reactions for each strain. Reactions were incubated at 30°C for 30 min, and RNA was extracted and purified using the miRNeasy Mini Kit. Newly synthesized transcripts were selected for biotin-16-UTP incorporation using streptavidin coated magnetic beads (ThermoFisher, Dynabeads M-280). Beads were extracted using QIAzol reagent, with subsequent phenol/chloroform extraction, and RNA was ultimately isopropanol precipitated with glycogen added as a carrier. cDNA was generated using SuperScript VILO Master Mix, and RNA levels were determined via TaqMan qPCR assays for mouse Pycard (ThermoFisher, 4441114, Assay ID: AJMSHN7), with Actb (ThermoFisher, 4448484, Assay ID: Mm02619580_g1) serving as an internal control. A custom TaqMan assay was designed for Pycard, with primers spanning an intron-exon boundary. The specific Actb TaqMan assay was selected because primers were within a single exon. These assays comply with the primer design guidelines for nascent transcript quantification as previously described (Roberts et al., 2015).
 
-## ASC western blot assay
+### ASC western blot assay
 
 Proteins were extracted from BMDM or ESDM in triplicate with RIPA buffer (Pierce, 89900) as previously described (Hai et al., 2018). Fifteen to 50 µg of each cell lysate was mixed with SDS sample buffer and incubated for 8 min at 95°C then immediately cooled on ice for 8 min. Proteins were separated by SDS-PAGE (ThermoFisher, XP04200BOX) for 2 hr at 110V, and then transferred to a PDVF membrane. After incubating with Casein Blocker in TBS (ThermoFisher, 37532) for 1 hr at room temperature, the membrane was incubated overnight at 4°C with primary rabbit ASC antibody (Cell Signaling, 67824) 1:500 in blocking buffer. After washing with PBS-0.05% Tween20, the membrane was probed with HRP-conjugated secondary antibody (goat anti-rabbit) 1:20,000 in blocking buffer for 1 hr at room temperature. The bands were visualized by HRP chemiluminescence detection Reagent (Millipore, WBKLS0500). The membrane was re-probed with HRP-conjugated anti β-actin (Santa Cruz Biotech, sc-47778-HRP) 1:20,000 in blocking buffer for 1 hr at room temperature and visualized in the same way. Densitometric analysis of bands was performed using ImageJ software.
 
-## ASC speck imaging and quantification
+### ASC speck imaging and quantification
 
 BMDM grown in 24-well plates were fixed in ethanol and blocked in 1% BSA. Immunostaining against ASC was performed using ASC (N-15) antibody (Santa Cruz Biotechnology; sc-22514-R) at 10 μg/mL for 1 hr at room temperature. Alexa Fluor 568 anti-rabbit (ThermoFisher; A-11011) was then incubated at 2 μg/mL for 1 hr at room temperature. DAPI (Simga; D9542) staining (300 nM) was performed for five minutes at room temperature. Images were captured using the Cytation 3 Cell Imaging Multi-Mode Reader (Biotek) using a ×20 objective lens. For one experiment, automated images were captured using the Cytation three instrument from triplicate LPS +ATP treated BMDM wells per strain using a 12 × 10 grid in each well (120 total images per well). Nuclei and ASC specks were counted using the cellular analysis feature in Gen5 software (Biotek). Nuclei and speck counts were compared in AKR vs. DBA/2 BMDM by Fisher’s exact test contingency table analysis.
 
-## RNA sequencing
+### RNA sequencing
 
 Total RNA was prepared from AKR and DBA/2 BMDM using miRNeasy Mini Kit (Qiagen; # ID 217004) with on-column DNA digestion according to manufacturer’s instructions. RNA integrity and RNAseq was performed by the University of Chicago Genomics Core. 30 million paired end reads were obtained using the Illumina NovaSeq 6000 with library preparation using the oligo dT directional method. Fasta files were preprocessed, aligned and quantified using the nf-core/rnaseq pipeline version 1.4.2, which is part of nf-core framework for community-curated bioinformatics pipelines (Ewels et al., 2020). Specifically, reads were aligned using the STAR aligner version 2.6.1d with the Gencode M25 transcriptome and GRCm38 primary assembly genome and all default values of the pipeline were used except read trimming was not performed before alignment. The BAM and BAM index files were viewed and Sashimi plots prepared using the Integrative Genomics Viewer (IGV) browser (Robinson et al., 2011).
 
-## Cell lines and cell culture
+### Cell lines and cell culture
 
 Puromycin-resistant MEF feeder cells (Cell Biolabs, CBA-312) and neomycin-resistant MEF feeder cells (Cell Biolabs, CBA-311) were cultured in DMEM high glucose supplemented with 10% fetal bovine serum and 1% PenStrep at 37°C, then inactivated with 10 µg/ml mitomycin C (Sigma, M4287) for 2 hr for mouse embryonic stem cell culture, as previously described (Hai et al., 2018). DBA/2J mouse ES cell line AC173/GrsrJ (JAX, 000671C02), was cultured on 0.1% gelatin-coated plates with mitomycin C inactivated MEFs, in ES culture medium (DMEM high glucose with 15% fetal bovine serum, 1% MEM Non-Essential Amino Acids, 1% PenStrep, 0.1 mM 2-mercaptoethanol, 103 unit/ml leukemia inhibitory factor (Millipore Sigma, ESG1107), 1 μM PD0325901 (Sigma, PZ0162) and 3 μM CHIR99021 (Sigma, 361571)), at 37°C. All cell lines were detached with trypsin and frozen with 80% ES culture medium supplemented with 10% DMSO and an additional 10% FBS. Only mouse cell lines used. No STR profiling methods are available to authenticate mouse cell lines. DNA sequencing was used to confirm editing of the DBA/2 allele to the AKR allele of the mouse ES cell line used. Mycoplasm testing was negative.
 
-## Gene editing by homology directed repair (HDR)
+### Gene editing by homology directed repair (HDR)
 
 CRISPR/Cas9 HDR was employed in DBA/2 ES to make a single base pair change in the Pycard 3’UTR SNP from the DBA/2 allele to the AKR allele. In order to enhance the low frequency of HDR, multiple strategies were employed, including reporter-dependent co-selection, non-homologous end joining (NHEJ) inhibition, and cell cycle control (Figure 4A,B). Five µg Cas9 expression plasmid pSpCas9(BB)−2A-Puro (Addgene, PX459) was stably transfected into 8 × 105 DBA/2 ES cells via electroporation, using a Lonza Amaxa nucleofector II with program A-24 and mouse ES cell nucleofector kit (Amaxa, VAPH-1001). Transfected cells were plated in 2 mg/ml puromycin in ES culture medium on the puromycin resistant MEFs in P100 tissue culture dishes. One week later, the medium was replaced with regular ES culture medium. Three to 7 days later individual colonies were picked and expanded and western blot was used to confirm Cas9 protein expression (Diagenode, C15200203). Cas9 expression in a high expressing line was confirmed by immunohistochemistry (Hai et al., 2018).
 
@@ -138,10 +351,10 @@ Electroporation for HDR was performed as described above on 2 × 106 Cas9+/GFPst
 
 Fifty-five clonally derived GFP+ cell lines were subjected to Pycard genotyping by allele-specific PCR. Genomic DNA was extracted from each cell line and used as a PCR template in separate reaction with AKR allele-specific primers (F: AACAGCCCCACCCCCAAAATCCAC; R: CCTGGAGCAGAGCTGAGGA) and DBA/2 allele-specific primer (F: AACAGCCCCACCCCCAAAATCCAC; R: CCTGGAGCAGAGCTGAGGT), which only differed from each other in the 3’ terminal nucleotide on the R primer (Figure 4B). Genomic DNA from AKR and DBA/2 mice was used as positive and negative controls for the respective allele-specific PCR reactions. The allele specific PCR reactions can also yield a false negative if an indel is introduced by NHEJ such that neither primer pair would work. Thus, samples yielding product only with the DBA/2 primers can be derived from unedited wild-type DBA/2 (WT) WT/WT alleles, or WT/NHEJ alleles (Figure 4C). Likewise, for samples yielding product only with the AKR primer set can be derived from homozygous AKR alleles derived by HDR, HDR/HDR alleles, or HDR/NHEJ alleles. To distinguish HDR/HDR from HDR/NHEJ genotypes we performed a non-allele-specific PCR reaction (F: AACAGCCCCACCCCCAAAATCCAC; R: GTGGCTTTCCTTGATTCT) for sequencing (Figure 4B). The PCR product was purified with ExoSAP-IT PCR Product Cleanup Reagent (ThermoFisher), and Sanger sequenced using the primer CATAACTTGGGTCTGTGG. If only one sequence was obtained corresponding to the HDR allele the genotype is homozygous HDR/HDR, that is mutated to the AKR allele at the Pycard 3’ UTR SNP (Figure 4D). In subsequent functional studies, three independent homozygous (H) HDR/HDR Pycard edited cell lines were used, named H2, H5, and H35.
 
-## ESDM differentiation
+### ESDM differentiation
 
 The macrophage differentiation protocol was adapted from previous publications (Zhuang et al., 2012; Yeung et al., 2015). Three homozygous Pycard edited cell lines and their parental Cas9+/GFPstop stably transfected DBA/2 ES cell line (DBA/2) were cultured on inactivated MEFs as described above. These cell lines were passaged without inactivated MEFs for two generations from low density to 80% confluence to decrease MEF contamination. To eliminate any possible residual MEFs, detached cells were bound to gelatin coated tissue culture plates in ES culture medium at 37°C for 30 min, such that MEFs stuck to the plate and ES cells remained in the supernatant. 6 × 105 ES cells from each cell line were resuspended in macrophage differentiation medium (MDM), which consists of DMEM high glucose, 15% FBS, 1% PenStrep, 1% MEM non-essential amino acids, 0.1 mM 2-mercaptoethanol, 3 ng/ml mouse IL-3 (R and D Systems), and 20% L-cell conditioned medium. These cells were cultured in petri dishes (low adherence) in a 37°C incubator while on a horizontal rocker at one cycle/3 s for 7 days to avoid attachment and aggregation of newly forming embryoid bodes. On day 8, the floating embryoid bodies were transferred to gelatin coated P-100 tissue culture plates in MDM. Five days later, floating macrophage progenitor cells were harvested and filtered through a 30 µm sterile filters (Sysmex, 04-004-2326) to remove any embryoid bodies, and plated on gelatin-coated tissue culture plates. This harvest of macrophage progenitors was repeated every other day. In order to determine the efficacy of differentiation into macrophages, we performed a DiI labeled acetlylated low-density lipoprotein (DiI-AcLDL) uptake 13 days after plating the macrophage progenitors. Cells were incubated with DiI-AcLDL for 30 min at 37°C and uptake was confirmed by fluorescent-microscopy as previously described (Hai et al., 2018). In addition, we compared ESDM with BMDM and found that they were similar by flow cytometry using antibodies against common mouse leukocyte markers: CD11b+, CD11c+, Ly6G-, and Ly6Clo. We also determined that undifferentiated DBA/2 ES cells were CD11b- and CD11c-.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Genes in QTL intervals were determined by custom written R functions (‘QTL_gene’ and ‘QTL_summary’) which utilize publicly available BioMart data from Mouse Genome Build 37. A custom written R function (‘pubmed_count’), which utilizes the rentrez package in R was used to determine the number of PubMed hits for Boolean searches of gene name and term of interest. Custom written R functions (‘sanger_AKRvDBA_missense_genes’ and ‘missense_for_provean’) were used to determine the number of missense (non-synonymous) mutations between AKR/J and DBA/2J mice in QTLs, as documented by the Wellcome Trust Sanger Institute’s Query SNP webpage for NCBIm37 (https://www.sanger.ac.uk/sanger/Mouse_SnpViewer/rel-1211). Custom written VBA subroutines (‘Provean_IDs’ and ‘Navigate_to_PROVEAN’) were used to automate PROVEAN software (http://provean.jcvi.org/seq_submit.php) queries for predicted functional effects of missense mutations in each QTL, with rentrez functions utilized to retrieve dbSNP and protein sequence data. Ultimately, custom R code was used to generate output tables. Deleterious mutations were designated as defined by PROVEAN parameters (Choi and Chan, 2015). All custom written code can be found at http://www.github.com/BrianRitchey/qtl, (Ritchey, 2021; copy archived at swh:1:rev:9792fef3dfa7ecdd62857d58ca3f9966456ae6b8).

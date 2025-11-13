@@ -31,7 +31,7 @@
 
 ## Abstract
 
-Dysfunction of the mitochondrial electron transport chain (mETC) is a major cause of human mitochondrial diseases. To identify determinants of mETC function, we screened a genome-wide human CRISPRi library under oxidative metabolic conditions with selective inhibition of mitochondrial Complex III and identified ovarian carcinoma immunoreactive antigen (OCIA) domain-containing protein 1 (OCIAD1) as a Complex III assembly factor. We find that OCIAD1 is an inner mitochondrial membrane protein that forms a complex with supramolecular prohibitin assemblies. Our data indicate that OCIAD1 is required for maintenance of normal steady-state levels of Complex III and the proteolytic processing of the catalytic subunit cytochrome c (CYC1). In OCIAD1 depleted mitochondria, unprocessed CYC1 is hemylated and incorporated into Complex III. We propose that OCIAD1 acts as an adaptor within prohibitin assemblies to stabilize and/or chaperone CYC1 and to facilitate its proteolytic processing by the IMMP2L protease. 1
+Dysfunction of the mitochondrial electron transport chain (mETC) is a major cause of human mitochondrial diseases. To identify determinants of mETC function, we screened a genome-wide human CRISPRi library under oxidative metabolic conditions with selective inhibition of mitochondrial Complex III and identified ovarian carcinoma immunoreactive antigen (OCIA) domain-containing protein 1 (OCIAD1) as a Complex III assembly factor. We find that OCIAD1 is an inner mitochondrial membrane protein that forms a complex with supramolecular prohibitin assemblies. Our data indicate that OCIAD1 is required for maintenance of normal steady-state levels of Complex III and the proteolytic processing of the catalytic subunit cytochrome c1 (CYC1). In OCIAD1 depleted mitochondria, unprocessed CYC1 is hemylated and incorporated into Complex III. We propose that OCIAD1 acts as an adaptor within prohibitin assemblies to stabilize and/or chaperone CYC1 and to facilitate its proteolytic processing by the IMMP2L protease.
 
 ## Introduction
 
@@ -43,9 +43,21 @@ Here, we use an unbiased genome-wide CRISPRi approach to screen for human genes 
 
 ## Results
 
-## Genome-wide CRISPRi screen for antimycin sensitivity identifies Complex III molecular determinants
+### Genome-wide CRISPRi screen for antimycin sensitivity identifies Complex III molecular determinants
 
 CRISPR screens have emerged as a powerful approach to identify key genes regulating molecular processes in human cells (Gilbert et al., 2014; Jost et al., 2017; To et al., 2019). To identify regulatory determinants of mitochondrial function, we screened for genes that either sensitized or protected against antimycin A, a selective inhibitor of mitochondrial respiratory Complex III. Candidate genes were identified using a genome-scale CRISPRi screen performed in human K562 cells stably expressing the dCas9-KRAB transcriptional repressor (Gilbert et al., 2013). Cells were infected with the hCRISPRi-v2 sgRNA pooled library containing 10 sgRNAs per gene (Horlbeck et al., 2016) and grown for 6 days in glucose-free media containing galactose, which favors oxidative metabolism over glycolysis. The cell population was then halved and subjected to four cycles of treatment with either vehicle or antimycin A (3.5–3.75 nM; 24 hr treatment, 48 hr post-washout recovery), which created a growth difference of ∼3–4 doublings between treated and untreated cells (Figure 1A). Following the final recovery phase, cells were harvested at ~750 cells per sgRNA and sgRNA-encoding cassettes were PCR-amplified from genomic DNA. The abundance of each individual sgRNA was then quantified by next-generation sequencing and a phenotype score (ρ) was calculated for each gene as described (Gilbert et al., 2014; Jost et al., 2017; Kampmann et al., 2013). This phenotype score represents the differential pressure each sgRNA exerts on cell growth in the presence versus absence of antimycin A. Positive ρ values indicate protection and negative ρ values indicate sensitization to antimycin A.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic overview of the genome-wide CRISPRi screen. K562 dCas9 cells stably expressing dCas9-KRAB were infected with a pooled genome-scale sgRNA library. After growth in galactose, cells were subjected to four pulses of antimycin A or vehicle treatment followed by a 48 hr recovery period. After the last antimycin A pulse, genomic DNA from each condition was isolated and sgRNA abundance was quantified by deep sequencing. (B) Volcano plot showing the statistical significance (y axis) versus phenotype scores (ρ, x axis) of control non-targeting and genome-wide targeting sgRNAs. Knockdown of Complex III structural proteins and assembly factors sensitized cells to antimycin A. Genes were considered a hit if they scored above a threshold of ρ z-score x−log10 p-value of 7 (dashed line). (C) CRISPRi knockdown of ovarian carcinoma immunoreactive antigen domain-containing protein 1 (OCIAD1) expression. Western blot showing the expression level of OCIAD1 in K562 dCas9-KRAB cells stably expressing either a control non-targeting sgRNA or two different sgRNAs against OCIAD1. CRISPRi-based silencing reduced OCIAD1 protein expression by ~90%. (D) Validation of the OCIAD1 phenotype. K562 dCas9 cells were mixed with an equal number of K562 dCas9-KRAB BFP + cells stably expressing a non-targeting sgRNA (brown bars) or an sgRNA against OCIAD1 (light blue bars). Cell mixtures were then treated with the drug or a vehicle for 24 hr. The percentage of BFP + cells in the cell mixtures was measured by flow cytometry before and 24 hr after treatment. OCIAD1 silencing selectively sensitized cells to antimycin treatment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top 10 categories from gene ontology (GO) enrichment analysis for protecting hit genes (ρ > 0). Mitochondrial terms related to Complex I, pyruvate metabolism, and the TCA cycle are specifically enriched in all three biological domains (CC: cellular component, BP: biological process, MF: molecular function). Terms are ordered by the maximum of −log10 p-value (elim algorithm with Fisher’s exact test). (B,D) Read count distribution of non-targeting control sgRNAs (gray circles) and sgRNAs related to Complex I structural subunits and assembly factors (B) or sgRNAs related to pyruvate metabolism and TCA cycle (D) in untreated and antimycin treated cells. Red squares represent the average read count of the top three targeting sgRNAs. Dashed blue lines represent the 95% prediction interval. (C,E) Tile plots displaying the phenotype scores (ρ) (first and middle columns) and associated p-values (right column) of both biological replicates for complex I related genes (C) and genes related to pyruvate and TCA metabolism (E). Complex I genes were grouped by module (N = N module; Q = Q module; Pp = proximal peripheral arm; Pd = distal peripheral arm) and assembly factors (AF). Significant genes are indicated by asterisks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sensitizing antimycin A genes. Top 10 categories from gene ontology (GO) enrichment analysis (ρ <0). Mitochondrial terms related to Complex III are enriched in all three biological domains (CC: cellular component, BP: biological process, MF: molecular function). Terms are ordered by the maximum of −log10 p-value (elim algorithm with Fisher’s exact test). (B) Read count distribution of non-targeting control sgRNAs (gray circles) and Complex III structural subunit and assembly factor sgRNAs (red squares, average of top three sgRNAs) in untreated and antimycin treated cells. Dashed blue lines represent the 95% prediction interval. (C) Tile plots displaying the phenotype scores (ρ) of each biological replicate (first and middle columns) and associated p-values (right column) for CIII2 structural genes (CIII) and assembly factors (AF). Significant genes are indicated by asterisks (n.d. = not determined).
 
 Using this approach, we identified 217 genes that significantly modulated sensitivity to antimycin A under oxidative conditions (Figure 1B, Supplementary file 1). Knockdown of 128 of these genes protected against antimycin A. Gene ontology (GO) enrichment analysis performed on this group identified an enrichment of genes encoding for mitochondrial respiratory chain Complex I. Complex I is the most upstream entry point into the electron transport chain and is composed of 44 unique subunits, 37 of which are encoded by the nuclear DNA with the remaining seven subunits encoded by the mitochondrial genome (Fiedorczuk et al., 2016; Guerrero-Castillo et al., 2017). Knockdown of about one-sixth of the nuclear-encoded Complex I subunits, as well as additional assembly factors, significantly protected against antimycin A treatment (Figure 1—figure supplement 1A–C). Complex I subunit hits were distributed on all Complex I assembly modules except the proximal portion of the peripheral arm, indicating that the protective response is likely dependent on a general loss of Complex I function. Knockdown of genes encoding components of the TCA cycle also protected against antimycin A treatment, including those encoding enzymes that participate in both forward flux through this pathway to maintain OXPHOS and reverse flux for reductive carboxylation. Other protective hits included a protective gene encoding an assembly factor of Complex II, which connects the TCA cycle to the respiratory chain, upstream of Complex III, as well as genes encoding the mitochondrial pyruvate carrier and pyruvate dehydrogenase, which connects glycolysis with the TCA cycle (Figure 1—figure supplement 1D,E). It was recently reported that the loss of mitochondrial Complex I activity suppressed toxicity caused by oligomycin, an ATP synthase inhibitor, and to a lesser extent by antimycin A, by promoting glycolysis and reductive carboxylation (To et al., 2019). However, the suppressive effect we observe is potentially inconsistent with this mechanism as our screen was performed under different metabolic conditions that promote oxidative metabolism and suppress glycolysis. Thus, it is possible that the mechanism of antimycin A toxicity suppression in our screen was a consequence of a reduction in respiratory chain activity upstream of Complex III to protect against production of ROS, further suggesting that multiple suppressive mechanisms for antimycin toxicity may exist, dependent on cellular metabolic status.
 
@@ -53,27 +65,59 @@ In our screen, knockdown of 89 genes sensitized cells to antimycin A treatment (
 
 In addition to genes encoding Complex III, OCIAD1 was identified as a strongly sensitizing hit (Figure 1B). OCIAD1 encodes a poorly characterized predicted transmembrane protein (Figure 3A) that is aberrantly expressed in ovarian carcinomas and implicated in the regulation of mitochondrial metabolism via Complex I (Shetty et al., 2018). We validated the antimycin A-sensitizing phenotype of OCIAD1 by performing a growth competition assay in K562 cells using CRISPRi cell lines stably expressing an individual sgRNA against OCIAD1 (sgRNA#2). This sgRNA was identified in our screen and effectively silenced OCIAD1 expression (Figure 1C). Silencing OCIAD1 selectively compromised growth of antimycin A-treated cells, but not growth of oligomycin-treated cells (Figure 1D), suggesting, together with our screen data, that OCIAD1 knockdown specifically sensitizes cells to inhibition of Complex III.
 
-## OCIAD1 is required for the assembly of Complex III
+### OCIAD1 is required for the assembly of Complex III
 
 We assessed whether OCIAD1 regulates the assembly and/or stability of mitochondrial respiratory complexes using blue-native polyacrylamide gel electrophoresis (BN-PAGE), followed by Western blotting using antibodies directed against core constituents of respiratory Complexes I–V (Figure 2). Mitochondria were isolated from K562 control or OCIAD1 knockdown cells grown in galactose and respectively expressing a non-targeting sgRNA or sgRNA#2 against OCIAD1. We also analyzed mitochondria isolated from K562 OCIAD1 knockdown cells in which OCIAD1 expression had been reintroduced to near endogenous levels using lentiviral delivery (Figure 2A). There were no significant defects observed in the assembly of Complex I, II, IV, or V (Figure 2B,C,E and F). By contrast, we observed a selective defect in Complex III assembly in cells depleted of OCIAD1 (Figure 2D). The abundance of Complex III was significantly reduced in mitochondria from OCIAD1 knockdown cells and restored to wildtype levels by OCIAD1 reintroduction, indicating that this defect is specific to loss of OCIAD1 function (Figure 2D, CIII2). At steady state, Complex III is an obligate dimer (CIII2) that participates with Complexes I and IV (CI and CIV) to form higher-order assemblies in mitochondria, known as supercomplexes (CIII2CIV, CICIII2, CICIII2CIV). We also observed a smaller but significant reduction in CIII2 supercomplex assemblies (Figure 2D, SC). Mitochondrial respiratory chain complexes proteins are unusually long-lived (Fornasiero et al., 2018) and thus, the smaller impact of OCIAD1 on supercomplexes might be a consequence of enhanced stability of supercomplexes compared to individual complexes. In mitochondria depleted of OCIAD1, we also observed a reduction in a species whose mass/migration was consistent with the CIII2CIV supercomplex (Figure 2D, #). However, we did not detect a coincidental decrease in abundance of the co-migrating Complex IV species by Western blot analysis of COX4, a Complex IV marker (compare # and CIII2CIV in Figure 2D and E). The identity of this higher-order OCIAD1-sensitive Complex III species remains unknown.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig2-v1.jpg)
 
-**Figure 2.:** 2 assembly.(A) Western blot showing CRISPRi silencing of OCIAD1 protein expression (12.47 ± 1.06% of control) in K562 cells. Rescue of OCIAD1 (141.20 ± 6.07% of control) by lentivirus transduction with a P2A multicistronic vector with high cleavage efficiency (98.89 ± 0.12%). The upper band (EGFP-OCIAD1) represents intact fusion gene product. ATP5A1 served as loading control. (B–F) OCIAD1 is selectively required for Complex III assembly. Blue-native polyacrylamide gel electrophoresis (BN-PAGE) analysis of digitonin-solubilized mitochondria followed by Western blotting using NDUFB8 (Complex I), SDHA (Complex II), UQCRC2 (Complex III), COXIV (Complex IV), and ATP5A1 (ATP synthase). The ATP5A1 signal from monomeric CV (F) was used as a loading control to quantify UQCRC2 intensities (D) as both proteins were probed on the same membrane. In panel B, both bands were used for quantification. Values represent normalized intensity ± SEM (n = 3 biological replicates). Asterisks (*p<0.05, **p<0.01, or ***p<0.001) correspond to the adjusted (false discovery rate [FDR]) p-values from the post-ANOVA (analysis of variance) pairwise t-test.
+**Figure 2.:** (A) Western blot showing CRISPRi silencing of OCIAD1 protein expression (12.47 ± 1.06% of control) in K562 cells. Rescue of OCIAD1 (141.20 ± 6.07% of control) by lentivirus transduction with a P2A multicistronic vector with high cleavage efficiency (98.89 ± 0.12%). The upper band (EGFP-OCIAD1) represents intact fusion gene product. ATP5A1 served as loading control. (B–F) OCIAD1 is selectively required for Complex III assembly. Blue-native polyacrylamide gel electrophoresis (BN-PAGE) analysis of digitonin-solubilized mitochondria followed by Western blotting using NDUFB8 (Complex I), SDHA (Complex II), UQCRC2 (Complex III), COXIV (Complex IV), and ATP5A1 (ATP synthase). The ATP5A1 signal from monomeric CV (F) was used as a loading control to quantify UQCRC2 intensities (D) as both proteins were probed on the same membrane. In panel B, both bands were used for quantification. Values represent normalized intensity ± SEM (n = 3 biological replicates). Asterisks (*p<0.05, **p<0.01, or ***p<0.001) correspond to the adjusted (false discovery rate [FDR]) p-values from the post-ANOVA (analysis of variance) pairwise t-test.
 
-## OCIAD1 is a mitochondrial inner membrane protein
+### OCIAD1 is a mitochondrial inner membrane protein
 
 OCIAD1 is annotated as a mitochondrial protein by the MitoCarta 3.0 inventory (Rath et al., 2021), but also has been reported to localize to endosomes and peroxisomes (Antonicka et al., 2020; Mukhopadhyay et al., 2003; Sinha et al., 2018). Consistent with the MitoCarta repository, we found that OCIAD1 primarily localized to mitochondria in U2OS cells, as evidenced by indirect immunofluorescence analysis using validated polyclonal OCIAD1 antibodies (Figure 3B). Following extraction of peripheral membrane proteins with carbonate treatment of increasing pH, OCIAD1 and the known inner membrane protein TIM50 (Yamamoto et al., 2002) both remained in the membrane pellet fraction isolated by differential centrifugation (Figure 3C). In contrast, the peripheral membrane proteins ATP5A1 and SDHA were readily extracted and found in the supernatant (Figure 3C). These data indicate that OCIAD1 is an integral membrane protein, consistent with the presence of two predicted transmembrane domains (Figure 3A). Recently, OCIAD1 was suggested to reside in the outer mitochondrial membrane (OMM) based on proximity labeling (Antonicka et al., 2020; Lee et al., 2017). To further investigate the localization of OCIAD1, we conducted proteinase K protection assays on freshly isolated mitochondria. Whereas the validated OMM protein TOM70 was digested by treatment of intact mitochondria with proteinase K, OCIAD1 was resistant to degradation (Figure 3D). OCIAD1 was however susceptible to proteolytic degradation after compromising OMM integrity by hypo-osmotic treatment, similar to other IMM proteins (Figure 3D). Overall, these results demonstrate that OCIAD1 is an integral IMM protein.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic illustration of OCIAD1 domain organization. (B) Representative images of fixed U2OS cells stained with Mitotracker (magenta) and immunolabeled using anti-OCIAD1 antibodies (green). Lower panel is a magnification of the inset shown in the upper panel. (C) OCIAD1 is an integral membrane protein. Sodium carbonate extraction fractions (pH 10.5–11.5) immunoblotted with anti-OCIAD1, anti-TIM50, anti-ATP5A1, and anti-SDHA antibodies. P and S indicate pellet and soluble fractions, respectively. (D) OCIAD1 localizes to the inner membrane. Protease protection assay fractions immunoblotted with anti-OCIAD1, anti-prohibitin 2 (PHB2), anti-TIM50, anti-ATP5A1, and anti-SDHA antibodies. (OMM: outer mitochondrial membrane, IMM: inner mitochondrial membrane, IMS: intermembrane space). (E) Schematic illustration of OCIAD1 topology within the inner membrane.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic illustrating the OCIAD1-GFP deletion constructs used for mapping the epitope of the anti-OCIAD1 polyclonal antibody. (B) Cell lysates from U2OS cells expressing either full-length or truncated OCIAD1-GFP were analyzed by Western blotting and immunoprobed using anti-OCIAD1 (Invitrogen, cat# PA5-20834) and anti-GFP antibodies. The anti-OCIAD1 polyclonal antibody recognizes an epitope located within the last 25 amino acids of OCIAD1 C-terminus. (C) Uncropped immunoblot for the OCIAD1 protease protection assay shown in Figure 3C alongside an over-exposed image of the same membrane. (D) U2OS cells stably expressing IMS- or matrix-targeted GFP1–10 were transiently transfected with various GFP11 constructs before assessing GFP complementation by flow cytometry analysis. No GFP1–10 and GFP1–10 alone (uppermost panel). CoQ9 tagged with C-terminal GFP11 expressed in matrix- or IMS-targeted GFP1–10 cells (second panel). MICUI tagged with C-terminal GFP11 expressed in matrix- or IMS-targeted GFP1–10 cells (third panel). N-terminal GFP11-tagged OCIAD1 construct (fourth panel) and C-terminal GFP11-tagged OCIAD1 construct (fifth panel) expressed in matrix- or IMS-targeted GFP1–10 cells.
+
 Next, we sought to determine the topology of the OCIAD1 protein within the IMM using proteinase K as the amino acid sequence between the two predicted OCIAD1 transmembrane domains contains predicted proteinase K cleavage sites. Analysis of OCIAD1 deletion constructs by Western blotting analysis using polyclonal rabbit anti-OCIAD1 antibodies identified the last 25 amino acids of the OCIAD1 C-terminus as the antigenic determinant (Figure 3—figure supplement 1A,B). OCIAD1 proteolytic fragments were not observed by Western analysis of mitoplasts treated with proteinase K (Figure 3—figure supplement 1C). Thus, given the location of the OCIAD1 epitope, this observation suggests that the C-terminus was degraded and therefore localized to the intermembrane space (IMS). We also tested OCIAD1 localization and topology using a bipartite split GFP complementation assay, in which the 11 stranded β-barrel GFP fluorophore is reconstituted from a separately expressed N-terminal β-strands (GFP1–10) and a C-terminal 16 amino acid β-strand (GFP11), as previously described (Hyun et al., 2015). Specifically, we created U2OS cells stably expressing GFP1–10 targeted either to the matrix or IMS and transiently expressed proteins tagged with GFP11. We validated this system by expressing known matrix and IMS proteins, CoQ9 and MICU1, respectively, with C-terminal GFP11 tags and measuring the efficiency of GFP complementation by flow cytometry (Figure 3—figure supplement 1D). CoQ9-GFP11 complemented GFP only when expressed in matrix-targeted GFP1–10 cells, consistent with its matrix localization (Johnson et al., 2005). Conversely, MICU1-GFP11 only produced GFP signal when expressed in IMS-targeted GFP1–10 cells, consistent with its localization to the IMS (Hung et al., 2014; Tsai et al., 2016). With a validated topology assay in hand, we transiently expressed OCIAD1 tagged with GFP11 at either the N- or C-terminus and observed GFP signal only in the IMS-targeted GFP1–10 cells (Figure 3—figure supplement 1D). Together, these data indicate that OCIAD1 is a transmembrane protein embedded in the mitochondrial inner membrane with its N- and C-termini facing the IMS (Figure 3E).
 
-## OCIAD1 interacts with the supramolecular prohibitin complex
+### OCIAD1 interacts with the supramolecular prohibitin complex
 
 To gain insight into how OCIAD1 facilitates steady-state Complex III assembly, we mapped its interactome using affinity enrichment mass spectrometry (AE-MS). We immunopurified OCIAD1 from DSP-crosslinked cell lysates prepared from K562 OCIAD1 knockdown cells and K562 OCIAD1 knockdown cells rescued with wildtype OCIAD1 and analyzed the eluates by label-free quantitative mass spectrometry (Figure 4A, Figure 4—source data 1). We identified Complex III subunits and assembly factors, which supports our BN-PAGE data indicating that OCIAD1 regulates Complex III assembly (Figure 4A, in green). In addition, we identified subunits of the prohibitin complex, PHB1 and PHB2, as potential OCIAD1 interactors (Figure 4A, in dark purple), consistent with previously published work (Richter-Dennerlein et al., 2014). We also identified several prohibitin interactors, including C1QBP, COX4I1, and DNAJC19, the mitochondrial m-AAA proteases AFG3L2 and SPG7, as well as the AFG3L2-interactor MAIP1, and the protease IMMP2L, all previously identified in published studies examining the prohibitin interactome (Richter-Dennerlein et al., 2014; Yoshinaka et al., 2019; Figure 4A, in light green). Prohibitins form large hetero-oligomeric ring complexes composed of assemblies of PHB1/PHB2 dimers in the inner membrane of mitochondria (Tatsuta et al., 2005). These complexes are thought to constitute molecular scaffolds that define functional domains to regulate the lateral distribution of membrane lipids and proteins within the IMM (Osman et al., 2009; Richter-Dennerlein et al., 2014). Prohibitin structures associate with the inner membrane m-AAA protease to modulate their activity in both the specific processing of inner membrane proteins and the targeted degradation of unassembled inner membrane proteins (Bonn et al., 2011; Ehses et al., 2009; Koppen et al., 2009; Li et al., 2019; Merkwirth et al., 2008; Steglich et al., 1999).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volcano plot showing the statistical significance (−log10 false discovery rate [FDR] adjusted p-value; y axis) versus log2 fold change (x axis) of proteins enriched in OCIAD1 pull-down performed on DSP-crosslinked K562 cell lysates from OCIAD1 knockdown cells and OCIAD1 knockdown cells rescued with wildtype OCIAD1. Proteins with a log2 fold change ≥ 1.5 and an adjusted p-value < 0.05 were considered significantly enriched (n = 3 biological replicates, n.s. = non significantly enriched). (B) Blue-native polyacrylamide gel electrophoresis (BN-PAGE) of lauryl maltose neopentyl glycol (LMNG) detergent-solubilized mitochondrial membranes isolated from U2OS control, OCIAD1 knockdown, and OCIAD1 knockdown cells rescued with wildtype OCIAD1. The membrane was immunoblotted with anti-OCIAD1 and anti-PHB2 antibodies. (C) BN-PAGE of LMNG detergent-solubilized mitochondrial membranes isolated from U2OS control cells (n = 3 biological replicates) and immunoblotted with anti-OCIAD1 and anti-PHB2 antibodies. Electrophoresis was stopped before elution of the migration front to calculate the fraction of OCIAD1 that associates with PHB2 assemblies (66.91 ± 0.35%). (D) Mitochondria from K562 cells solubilized with LMNG and pre-incubated with anti-Phb2 antibodies (solid line) or vehicle (dotted line) were analyzed by BN-PAGE and immunoblotted with anti-OCIAD1 and anti-prohibitin two antibodies. Line scan traces represent the distribution profile of P (brown) and OCIAD1 (light blue).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of predicted OCIAD1 and OCIAD2 topologies. (B) Representative images of fixed U2OS cells stained with Mitotracker (magenta) and immunolabeled for OCIAD2 (green). The bottom panel is a magnification of the inset shown in the upper panel. (C) OCIAD2 is an integral membrane protein. Sodium carbonate extraction fractions (pH 10.5–11.5) immunoblotted with anti-OCIAD1, anti-OCIAD2, anti-TIM50, anti-ATP5A1, and anti-SDHA antibodies. P and S indicate pellet and soluble fractions, respectively. This panel, without the OCIAD2 blot, was shown in Figure 3C. (E) OCIAD2 localizes to the inner membrane. Protease protection assay fractions immunoblotted with anti-OCIAD1, anti-OCIAD2, anti-prohibitin 2 (PHB2), anti-TIM50, anti-ATP5A1, and anti-SDHA antibodies (OMM: outer mitochondrial membrane, IMM: inner mitochondrial membrane, IMS: intermembrane space). This panel, without the OCIAD2 blot, was shown in Figure 3D. (F) Blue-native polyacrylamide gel electrophoresis (BN-PAGE) of lauryl maltose neopentyl glycol (LMNG) detergent-solubilized mitochondrial membranes isolated from U2OS cells and immunoblotted with anti-OCIAD2 and anti-prohibitin antibodies.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Read count distribution of all 10 sgRNAs targeting OCIAD1 (squares) and OCIAD2 (triangles) in untreated and antimycin-treated K562 cells. Gray circles represent non-targeting sgRNAs. Dashed blue lines represent the 95% prediction interval. (B) Western blot of U2OS and K562 cell extracts immunoblotted with anti-OCIAD2 and anti-ATP5A1 antibodies. (C) Western blot of cell extracts from U2OS cells expressing scramble or OCIAD2 shRNAs. The membrane was immunoblotted with anti-OCIAD2 and anti-β-actin antibodies. (D) Western blot of extracts from U2OS cells expressing OCIAD2 shRNA and OCIAD1gRNA. The membrane was immunoblotted with anti-OCIAD2 and anti-SDHA antibodies. SDHA was used as a loading control. (E) Blue-native polyacrylamide gel electrophoresis (BN-PAGE) analysis of digitonin-solubilized mitochondrial extracts from U2OS cells expressing OCIAD1 sgRNA#2 and OCIAD2 shRNA#1. ATP5A1 served as a loading control. Values represent normalized intensity ± SEM (n = 3 biological replicates). Asterisks (*p<0.05, **p<0.01, or ***p<0.001) correspond to the adjusted (false discovery rate [FDR]) p-values from the post-ANOVA (analysis of variance) pairwise t-test.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Western blot of wildtype U2OS cells or U2OS cells expressing a non-targeting sgRNA, sgRNA#2 against OCIAD1, or sgRNA#2 and wildtype OCIAD1 rescued by lentivirus expression. The upper band (EGFP-OCIAD1) represents intact fusion gene product. The non-targeting sgRNA used in this study does not affect OCIAD1 expression (compare control and wildtype lanes). (B) Blue-native polyacrylamide gel electrophoresis (BN-PAGE) results using two CIII2 core subunits (UQCRC1, left and UQCRC2, right) showing that OCIAD1 is also required for CIII2 assembly in U2OS cells grown in glucose-containing media. (C) BN-PAGE indicating that silencing OCIAD1, but not OCIAD2, disrupts CIII2 assembly in U2OS cells grown in glucose-containing media. ATP5A1 served as a loading control. Values represent normalized intensity ± SEM (n = 3 biological replicates). Asterisks (*p<0.05, **p<0.01, or ***p<0.001) correspond to the adjusted (false discovery rate [FDR]) p-values from the post-ANOVA (analysis of variance) pairwise t-test.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Hierarchical clustering of unbiased proteomic analysis performed on whole-cell lysate from U2OS control cells, OCIAD1 knockdown cells, OCIAD2 knockdown cells, OCIAD1 and OCIAD2 double knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1. The analysis identified a small cluster (red square) enriched for Complex III proteins selectively downregulated in the OCIAD1 and OCIAD1/OCIAD2 knockdown cells. (B) Western blot analysis showing that two Complex III subunits (UQCRC1 and UQCRC2) are downregulated in mitochondria isolated from OCIAD1 knockdown U2OS cells but not from OCIAD2 knockdown U2OS cells. SDHA served as a loading control.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Schematic showing the topology of the OCIAD1-TEV-StrepII isoforms with C-terminal tiled deletions. (B) Mitochondria were isolated from non-infected control and OCIAD1 knockdown cells, or OCIAD1 knockdown cells infected with a lentivirus expressing full-length or truncated OCIAD1 isoforms. Blue-native polyacrylamide gel electrophoresis (BN-PAGE) followed by Western blot analysis for OCIAD1 and UQCRC1 identified a small portion of the OCIA domain (a.a. 97–116) as putatively essential for CIII2 assembly. (C) Multiple sequence alignment of OCIAD1 protein sequences using Clustal Omega. Blue shading indicates over 50% of identical amino acids in all sequences. The red box indicates the location of the mutated residue.
+
 We also examined the molecular features of native OCIAD1 by BN-PAGE to assess potential interactors. Specifically, lauryl maltose neopentyl glycol (LMNG)-solubilized mitochondria isolated from K562 control and OCIAD1 knockdown cells, as well as K562 rescue cells expressing wildtype OCIAD1, were analyzed by BN-PAGE followed by Western analysis using anti-OCIAD1 antibodies (Figure 4B, left panel). This analysis demonstrated that the majority of OCIAD1 associates with large 0.9–1 MDa supramolecular assemblies that co-migrate with prohibitin (Figure 4B,C). To test whether OCIAD1 and prohibitin interact within the 0.9–1 MDa supramolecular assemblies, we performed an in-gel mobility shift assay. For this purpose, LMNG-solubilized mitochondrial membranes from K562 cells were incubated with either vehicle alone or with anti-PHB2 antibody and subjected to BN-PAGE, followed by Western analysis using anti-PHB2 or OCIAD1 antibodies. Pre-incubation of mitochondrial membranes with anti-PHB2 antibody, but not vehicle, retarded the migration of both PHB2 and OCIAD1 supramolecular assemblies to a similar degree (Figure 4D, compare dashed and solid lane line scans, respectively). Thus, together our data indicate that OCIAD1 associates with prohibitin complexes in the IMM.
 
-## The OCIAD1 paralog, OCIAD2, has similar topology and interacts with prohibitin but is not functionally redundant with OCIAD1
+### The OCIAD1 paralog, OCIAD2, has similar topology and interacts with prohibitin but is not functionally redundant with OCIAD1
 
 OCIAD1 has a paralog in vertebrates, OCIAD2, which likely arose from tandem gene duplication of a common ancestor around 435–500 million years ago (Sinha et al., 2018). The paralogs share domain structure and significant homology (Figure 4—figure supplement 1A) and have been reported to hetero-oligomerize (Sinha et al., 2018), suggesting a shared function. Using indirect immunofluorescence, carbonate extraction, and protease protection analysis, we showed that, as expected, OCIAD2 localized to mitochondria with a topology similar to OCIAD1 (Figure 4—figure supplement 1B–D).
 
@@ -81,9 +125,17 @@ We examined whether OCIAD2, like OCIAD1, functions in Complex III assembly. OCIA
 
 To gain insight into OCIAD1 and OCIAD2 function, we also used untargeted quantitative mass spectrometry to compare the whole-cell proteomes of control U2OS cells, U2OS cells with individual or double OCIAD1/OCIAD2 knockdown, and OCIAD1 knockdown U2OS cells in which OCIAD1 expression was reintroduced by lentiviral delivery. Overall, the proteome was resilient to loss of OCIAD1 and OCIAD2 expression, as only 40 proteins were significantly affected in at least one of the different cell lines (Figure 4—source data 2). As expected, OCIAD1 and OCIAD2 were significantly downregulated in the individual and double knockdown cell lines, while GFP was only observed in OCIAD1 knockdown cell line in which OCIAD1 expression was reintroduced by lentiviral transduction using GFP as a selection marker. Hierarchical clustering of significantly affected proteins identified a small cluster tightly associated with OCIAD1 (Figure 4—figure supplement 4A, red box), containing 4 of the 10 subunits of Complex III, including UQCRC1, UQCRC2, UQCRB, and CYC1, as well as COX7A2L, which regulates Complex III biogenesis by promoting the assembly of CIII2 with CIV to form the CIII2CIV supercomplex (Cogliati et al., 2016; Lapuente-Brun et al., 2013; Lobo-Jarne et al., 2018). All proteins in this cluster were selectively downregulated in the individual OCIAD1 knockdown and OCIAD1/OCIAD2 double knockdown cell lines, but unaffected in the OCIAD1 rescued cell line and in OCIAD2 knockdown cells (Figure 4—figure supplement 4A). We validated these observations using Western blotting and showed that steady-state levels of UQCRC1, UQCRC2, and CYC1 were reduced in mitochondria isolated from OCIAD1 knockdown cells, but not OCIAD2 knockdown cells (Figure 4—figure supplement 4B and Figure 5E,F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig5-v1.jpg)
+
+**Figure 5.:** (A) Western blot showing OCIAD1 expression levels in K562 OCIAD1 knockdown cells rescued with either wildtype OCIAD1 or mutant (F102A) OCIAD1. (B) Blue-native polyacrylamide gel electrophoresis (PAGE) analysis showing that the F102A point mutant fails to rescue the CIII2 assembly defect. (C) Volcano plot showing proteins enriched in OCIAD1 pull-down performed in DSP-crosslinked cell lysate from K562 OCIAD1 knockdown cells rescued with either wildtype or F102A OCIAD1. Proteins with a log2 fold change ≥1.5 and an adjusted p-value<0.05 were considered significantly enriched (n = 3 biological replicates, n.s. = non-significantly enriched). (D) Western blot analysis of U2OS mitochondrial membranes solubilized in digitonin. Heme was detected by chemiluminescence before immunoblotting the membrane with the indicated antibodies. (E) Quantification of CYC1 (left) and heme (middle) levels from blot shown in (E). Right panel shows the proportion of CYC1 that is hemylated. Values represent normalized intensity ± SEM (n = 3 biological replicates). Asterisks (*p<0.05, **p<0.01, or ***p<0.001) correspond to the adjusted (false discovery rate [FDR]) p-values from the post-ANOVA (analysis of variance) pairwise t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot analysis of mitochondria isolated from OCIAD1 knockdown cells rescued with truncated OCIAD1 isoforms shown in Figure 4—figure supplement 5A-B. Heme was detected by chemiluminescence before immunoblotting the membrane with an antibody against CYC1. Deleting the distal portion of the OCIA domain (Δ97–116) disrupted CYC1 maturation. (B) Clear-native polyacrylamide gel electrophoresis (PAGE) analysis of digitonin-solubilized mitochondrial membranes isolated from U2OS control cells, OCIAD1 knockdown cells, OCIAD2 knockdown cells, and OCIAD1 and OCIAD2 double knockdown cells. Heme was detected by chemiluminescence before immunoblotting the membrane with an antibody against CYC1. (C) Quantification of blots shown in B showing the proportion of hemylated CYC1 in CIII2 assemblies. Values represent normalized intensity ± SEM (n = 3 or 4 biological replicates). (D) Immunoblot analysis of the IMMP2L substrate GPD2 in mitochondria isolated from U2OS control cells, OCIAD1 knockdown cells, OCIAD2 knockdown cells, OCIAD1 and OCIAD2 double knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1. (E) Immunoblot analysis of the IMMP2L substrate AIF in mitochondria isolated from U2OS and K562 control cells, OCIAD1 knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1.
+
 Although OCIAD2 does not have a measurable effect on Complex III biogenesis under our conditions, BN-PAGE analysis and Western analysis of mitochondria from U2OS cells using anti-OCIAD2 antibody demonstrated that, like OCIAD1, OCIAD2 co-migrates with prohibitin complexes independent of OCIAD1 (Figure 4—figure supplement 1E). Reciprocally, OCIAD2 is not required for the association of OCIAD1 with prohibitin complexes as OCIAD1 migrated as 0.9–1 MDa assemblies in K562 cells that do not express OCIAD2 (Figure 4C). Therefore, our data suggest that OCIAD1 and OCIAD2 paralogs experienced functional diversification during evolution. However, as OCIAD1 and OCIAD2 have been reported to interact (Sinha et al., 2018), we cannot exclude the possibility that OCIAD2 may modulate the role of OCIAD1 in Complex III regulation in a context-dependent manner.
 
-## OCIAD1 is required for the processing of CYC1
+### OCIAD1 is required for the processing of CYC1
 
 To determine the functional significance of OCIAD1 interactors, we asked which interactions were modulated by OCIAD1 loss-of-function in Complex III assembly. To identify OCIAD1 loss-of-function alleles, we performed a structure-function analysis by initially creating tiled deletions along the C-terminus of OCIAD1 and identified a segment of the conserved OCIA domain essential for OCIAD1 function in CIII2 assembly (Figure 4—figure supplement 5A,B). Sequence alignments of OCIAD1 genes from distant phylogenetic species identified a highly conserved phenylalanine residue (F102) within this region (Figure 4—figure supplement 5C, red box), which we mutated to an alanine. Western blot analysis of mitochondria isolated from K562 OCIAD1 knockdown cells exogenously expressing either wildtype or mutated (F102A) OCIAD1 indicated that OCIAD1 F102A was expressed at near endogenous levels in rescued cells (Figure 5A). We examined Complex III assembly by BN-PAGE analysis of mitochondria isolated from K562 OCIAD1 knockdown cells rescued with either wildtype or OCIAD1 F102A. In contrast to cells expressing wildtype OCIAD1, cells expressing the F102A mutant had decreased levels of Complex III, indicating that F102A constitutes a loss-of-function mutation (Figure 5B).
 
@@ -97,7 +149,7 @@ To further investigate the role of OCIAD1 in CYC1 processing, we examined the st
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67624/elife-67624-fig6-v1.jpg)
 
-**Figure 6.:** c(CYC1).1 (A) 2D-native/SDS-PAGE analysis of mitochondrial membranes isolated from K562 control and OCIAD1 knockdown cells and immunoblotted with CYC1 and PHB2 antibodies. CIII2 assemblies from OCIAD1 knockdown cells contained immature CYC1 of higher molecular weight. PHB2 staining served as an internal molecular size reference. Light blue horizontal lines represent the size of putative precursor (p), intermediate (i), and mature (m) CYC1. White vertical lines represent the different high-order CIII2 assemblies. (B) Extracted MS2 fragment ion chromatograms (XIC) for three diagnostic CYC1 peptides detected by diaPASEF mass spectrometry in blue-native polyacrylamide gel electrophoresis (BN-PAGE) gel slices excised from control cells, OCIAD1 knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1. Individual peptides displayed highly correlated fragment ion co-elution profiles strongly supportive of peptide identification. The TPQAVALSSK++ peptide (bottom panel), located at the N-terminus of the CYC1 hydrophobic sorting sequence, was only identified in CIII2 assemblies from OCIAD1 knockdown cells. Conversely, the SDLELHPPSYPWSHR+++ peptide (middle panel), which uniquely identifies the N-terminus of mature CYC1 but is not present in the tryptic digest of the CYC1 precursor, was reliably detected in CIII2 assemblies from control and OCIAD1 knockdown cells rescued with wildtype OCIAD1, but not from OCIAD1 knockdown cells. An internal peptide (LFDYFPKPYPNSEAAR+++, top panel) common to all CYC1 species (precursor, intermediate, mature) was detected in all cell lines, albeit at lower levels in OCIAD1 cells as expected.
+**Figure 6.:** (A) 2D-native/SDS-PAGE analysis of mitochondrial membranes isolated from K562 control and OCIAD1 knockdown cells and immunoblotted with CYC1 and PHB2 antibodies. CIII2 assemblies from OCIAD1 knockdown cells contained immature CYC1 of higher molecular weight. PHB2 staining served as an internal molecular size reference. Light blue horizontal lines represent the size of putative precursor (p), intermediate (i), and mature (m) CYC1. White vertical lines represent the different high-order CIII2 assemblies. (B) Extracted MS2 fragment ion chromatograms (XIC) for three diagnostic CYC1 peptides detected by diaPASEF mass spectrometry in blue-native polyacrylamide gel electrophoresis (BN-PAGE) gel slices excised from control cells, OCIAD1 knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1. Individual peptides displayed highly correlated fragment ion co-elution profiles strongly supportive of peptide identification. The TPQAVALSSK++ peptide (bottom panel), located at the N-terminus of the CYC1 hydrophobic sorting sequence, was only identified in CIII2 assemblies from OCIAD1 knockdown cells. Conversely, the SDLELHPPSYPWSHR+++ peptide (middle panel), which uniquely identifies the N-terminus of mature CYC1 but is not present in the tryptic digest of the CYC1 precursor, was reliably detected in CIII2 assemblies from control and OCIAD1 knockdown cells rescued with wildtype OCIAD1, but not from OCIAD1 knockdown cells. An internal peptide (LFDYFPKPYPNSEAAR+++, top panel) common to all CYC1 species (precursor, intermediate, mature) was detected in all cell lines, albeit at lower levels in OCIAD1 cells as expected.
 
 To better characterize the nature of the CYC1 processivity defect in CIII2, we identified CYC1 peptides using mass spectrometry analysis of BN-PAGE gel slices containing CIII2 assemblies ranging from ~600 to 900 kDa excised from control cells, OCIAD1 knockdown cells, and OCIAD1 knockdown cells rescued with wildtype OCIAD1 (Figure 6B). An internal peptide from mature CYC1 (LFDYFPKPYPNSEAAR) was reliably identified in CIII2 assemblies from mitochondria isolated from all cell types, albeit at lower levels in knockdown cells. This is consistent with our whole-cell proteomics and Western blot results showing reduced steady-state levels of CYC1 in OCIAD1 knockdown cells and an overall reduction in CIII2 assemblies by BN-PAGE. We also identified a peptide (TPQAVALSSK), N-terminal to the CYC1 hydrophobic bipartite sequence, that was uniquely detected in CIII2 assemblies isolated from OCIAD1 knockdown cells (Figure 6B, lower panel), consistent with the accumulation of the precursor form of CYC1 in OCIAD1 knockdown cells. Conversely, a peptide (SDLELHPPSYPWSHR) representing the N-terminus of mature CYC1, as determined by N-terminome sequencing analysis of the human mitochondrial proteome (Vaca Jacome et al., 2015), was only reliably identified in CIII2 assemblies from control and rescued cells, but not from OCIAD1 knockdown cells (Figure 6B, middle panel). This peptide is not preceded by an arginine or lysine residue and thus was not produced by tryptic digestion of the CYC1 precursor. Therefore, this peptide distinctly identifies the N-terminus of the mature version of CYC1 (Vaca Jacome et al., 2015). Taken together, our results are consistent with OCIAD1 regulating the proteolytic processing and maturation of the holo-CYC1 precursor.
 
@@ -113,35 +165,346 @@ We demonstrate that under native conditions, a majority of OCIAD1 associates wit
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 dCas9-KRAB</td>
+      <td>Gilbert et al., 2014 doi:10.1016/j.cell.2014.09.029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 control</td>
+      <td>This paper</td>
+      <td></td>
+      <td>K562 dCas9-KRAB transduced with pControlsgRNA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 OCIAD1 sgRNA#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>K562 dCas9-KRAB transduced with pOCIAD1sgRNA2</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 OCIAD1 rescue</td>
+      <td>This paper</td>
+      <td></td>
+      <td>K562 OCIAD1 sgRNA#2 transduced with pUltra-OCIAD1</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 OCIAD1 (F102A) rescue</td>
+      <td>This paper</td>
+      <td></td>
+      <td>K562 OCIAD1 sgRNA#2 transduced with pUltra-OCIAD1(F102A)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS dCas9-KRAB</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS transduced with pMH0006 (Addgene, cat# 135448; Chen et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS control</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS dCas9-KRAB transduced with pControlsgRNA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS OCIAD1 sgRNA #2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS dCas9-KRAB transduced with pOCIAD1sgRNA2</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS OCIAD1 rescue</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS OCIAD1 sgRNA#2 transduced with pUltra-OCIAD1</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS scramble</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS control cells transduced with pLKO.1-blast-Scramble (Addgene, cat# 26701)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS OCIAD2 shRNA#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS control cells transduced with pLKO1-OCIAD2_shRNA1</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS double knockdown</td>
+      <td>This paper</td>
+      <td></td>
+      <td>U2OS OCIAD1 sgRNA#2 transduced with pLKO1-OCIAD2_shRNA1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-OCIAD1</td>
+      <td>Invitrogen</td>
+      <td>PA5-20834</td>
+      <td>RRID:AB_11155625 (1:2000-1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-OCIAD1</td>
+      <td>Proteintech</td>
+      <td>66698–1-Ig</td>
+      <td>RRID:AB_2882051 (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-OCIAD2</td>
+      <td>Invitrogen</td>
+      <td>PA5-59375</td>
+      <td>RRID:AB_2644946 (1:500-1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ATP5A1</td>
+      <td>Proteintech</td>
+      <td>66037–1-Ig</td>
+      <td>RRID:AB_11044196 (1:2000-1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NDUFB8</td>
+      <td>Proteintech</td>
+      <td>14794–1-AP</td>
+      <td>RRID:AB_2150970 (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-SDHA</td>
+      <td>SantaCruz Biotechnology</td>
+      <td>sc-166947</td>
+      <td>RRID:AB_10610526 (1:2000-1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-UQCRC2</td>
+      <td>Proteintech</td>
+      <td>14742–1-AP</td>
+      <td>RRID:AB_2241442 (1:2000-1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-UQCRC1</td>
+      <td>Invitrogen</td>
+      <td>459140</td>
+      <td>RRID:AB_2532227 (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CYC1</td>
+      <td>Proteintech</td>
+      <td>10242–1-AP</td>
+      <td>RRID:AB_2090144 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-COXIV</td>
+      <td>Proteintech</td>
+      <td>66110–1-1g</td>
+      <td>RRID:AB_2881509 (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PHB2</td>
+      <td>Proteintech</td>
+      <td>66424–1-Ig</td>
+      <td>RRID:AB_2811041 (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TIM50</td>
+      <td>Proteintech</td>
+      <td>22229–1-AP</td>
+      <td>RRID:AB_2879039 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TOM70</td>
+      <td>Proteintech</td>
+      <td>14528–1-AP</td>
+      <td>RRID:AB_2303727 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Proteintech</td>
+      <td>66002–1-Ig</td>
+      <td>RRID:AB_11182611 (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-β-actin</td>
+      <td>Proteintech</td>
+      <td>66009–1-1g</td>
+      <td>RRID:AB_2687938 (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GPD2</td>
+      <td>Proteintech</td>
+      <td>17219–1-AP</td>
+      <td>RRID:AB_2112476 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-AIF</td>
+      <td>Proteintech</td>
+      <td>17984–1-AP</td>
+      <td>RRID:AB_2224539 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Femto</td>
+      <td>Thermo Scientific</td>
+      <td>34094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Calbiochem</td>
+      <td>300410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl maltose neopentyl glycol (LMNG)</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dithiobis(succinimidyl propionate) (DSP)</td>
+      <td>Life Technologies</td>
+      <td>22585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysC/Trypsin</td>
+      <td>Promega</td>
+      <td>V5071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProteaseMAX</td>
+      <td>Promega</td>
+      <td>V2071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>μMACS protein A beads</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-071-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>μ Columns</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-042-701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>μMACS Separator</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-042-602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZipTip with 0.6 µL C18 resin</td>
+      <td>Millipore Sigma</td>
+      <td>ZTC18S096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Disposable gel cutter grids</td>
+      <td>The Gel Company</td>
+      <td>MEE2-7-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DIA-NN</td>
+      <td></td>
+      <td>Version 1.7.12 and 1.7.13 (beta 1)</td>
+      <td>https://github.com/vdemichev/DiaNN</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScreenProcessing</td>
+      <td></td>
+      <td></td>
+      <td>https://github.com/mhorlbeck/ScreenProcessing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 K562 cells and derivatives were cultured in ‘RPMI +glucose’ (RPMI 1640 from HyClone [cat# SH30255F] or Gibco [cat# 72400047] supplemented with 10% fetal bovine serum [FBS], 100 units/mL penicillin, and 100 µg/mL streptomycin) or glucose-free ‘RPMI +galactose’ (RPMI 1640 from Gibco [cat# 11879020] supplemented with 10 mM galactose, 25 mM HEPES, 10% FBS, 100 units/mL penicillin, 100 µg/mL streptomycin) where indicated. U2OS cells and derivatives, as well as HEK293T cells, were cultured in ‘DMEM + glucose’ (DMEM from Gibco [cat# 12430054] supplemented with 10% FBS, 100 units/mL penicillin, 100 µg/mL streptomycin) or glucose-free ‘DMEM + galactose’ (DMEM from Gibco [cat# 11966025] supplemented with 10 mM galactose, 10% FBS, 100 units/mL penicillin, 100 µg/mL streptomycin) where indicated. Cell lines tested negative for mycoplasma contamination using ATCC universal mycoplasma detection kit (cat# 30-1012K).
 
-## Cloning and plasmid construction
+### Cloning and plasmid construction
 
 Sequences of oligonucleotides used for cloning are provided in Supplementary file 3. Cloning was performed using Phusion or Platinum SuperFi high fidelity DNA polymerases (Thermo Scientific, cat# F530S and 12351010) and Gibson assembly master mix (New England BioLabs, cat# E2611). Individual OCIAD1 sgRNA and OCIAD2 shRNA vectors were generated by annealed oligo cloning of top and bottom oligonucleotides (Integrated DNA Technologies, Coralville, IA) into an optimized lentiviral pU6-sgRNA Ef1α-Puro-T2A-BFP vector digested with BstXI/BlpI (Addgene, cat# 84832) and a pLKO.1 backbone digested with AgeI/EcoRI (Addgene, cat# 26655), respectively. OCIAD1 was initially cloned from human cDNA into a pAcGFP-N1 vector (Clontech, Mountain View, CA). The GFP1–10 vectors were cloned by Gibson assembly into an FUGW lentiviral backbone (Addgene, cat# 14883) digested with BamHI/EcoRI. The MTS- and IMS-targeting sequences were ordered as gene blocks (Integrated DNA Technologies, Coralville, IA) and the GFP1–10 fragment was cloned from a pCMV-mGFP1–10 plasmid (Van Engelenburg and Palmer, 2010). The MTS from yeast COX4 (a.a. 1–21) (Friedman et al., 2011) and the IMS-targeting signal from MICU1 (a.a. 1–60) (Gottschalk et al., 2019; Hung et al., 2014; Tsai et al., 2016) were chosen to target GFP1–10 to the matrix or IMS, respectively. The pGFP11-N1 and pGFP11-C1 vectors were cloned by Gibson assembly into a pEGFP-N1 backbone (Clontech, Mountain View, CA) digested with BamHI/NotI to replace the GFP gene with the GFP11 β-barrel. The GFP11 fragments were ordered as gBlocks (Integrated DNA Technologies, Coralville, IA) and contained a strategically located BamHI cloning site for easy N- or C-terminal tagging. CoQ9 and MICU1 genes were cloned from human cDNA and inserted into a BamHI-digested pGFP11-N1 vector by Gibson assembly to generate the pCoQ9-GFP11 and pMICU1-GFP11 plasmids. Similarly, OCIAD1 was amplified from the pAcGFP-OCIAD1 plasmid and cloned into BamHI-digested pGFP11-N1 and pGFP11-C1 vectors to create the pOCIAD1-GFP11 and pGFP11-OCIAD1 plasmids, respectively. OCIAD1 was also amplified from the pAcGFP-OCIAD1 plasmid and cloned into a XbaI/BamHI-digested pUltra-EGFP backbone (Addgene, cat# 24129) to generate a lentiviral vector expressing the GFP-OCIAD1 fusion gene containing a ‘self-cleaving’ P2A sequence. The OCIAD1 F102A point mutant was generated from this pUltra-OCIAD1 vector using site-directed mutagenesis. We also generated an OCIAD1 construct with a C-terminal StrepII tag preceded by a TEV cleavage site. For this, OCIAD1 was amplified from the pAcGFP-OCIAD1 plasmid and inserted into a XbaI/BamHI-digested pUltra-EGFP vector by Gibson assembly, together with a gBlock (Integrated DNA Technologies, Coralville, IA) encoding the TEV-StrepII sequence. The OCIAD1 truncation constructs were generated by inverse PCR using the pAcGFP-OCIAD1 and pUltra-OCIAD1-TEV-StrepII vectors as templates. Finally, to generate lentiviral vectors expressing the truncated OCIAD1 isoforms with a C-terminal GFP tag, the entire OCIAD1-GFP cassette containing the deletion was amplified from the various pAcGFP-OCIAD1 truncated constructs and cloned by Gibson assembly into an FUGW plasmid digested with BamHI/EcoRI to remove its GFP gene.
 
-## Lentivirus production, infection, and generation of cell lines
+### Lentivirus production, infection, and generation of cell lines
 
 Lentivirus were generated by transfecting HEK293T cells with standard packaging vectors using TransIT-LT1 Transfection Reagent (Mirus Bio, Madison, WI) or Lipofectamine 2000 (Invitrogen, Carlsbad, CA) according to the manufacturer’s instructions. Briefly, HEK293T were plated in a six-wells plate on day 0 (0.5 × 106 cells per well) and transfected on day 1 with a liposome/DNA mixture containing the following packaging plasmids (0.1 µg of pGag/Pol, 0.1 µg of pREV, 0.1 µg of pTAT, and 0.2 µg of pVSVG) and 1.5 µg of lentiviral vector. On days 3 and 4, the media was replenished with 3 mL of fresh DMEM + glucose media. On days 4 and 5, the viral suspensions were harvested, pooled, pelleted at 1000 g for 5 min, and the supernatant was filtered through 0.45 μm PES filters (Thermo Scientific, cat# 725–2545). The viral suspension was either used directly or kept frozen at −80°C until transduction. For transduction, U2OS and K562 cells were plated in six-well plates (175,000 and 200,000 cells/well, respectively) and infected with 0.5–2 mL of viral suspension supplemented with polybrene at a final concentration of 8 µg/mL. Infected cells were grown for several days before selection with antibiotics or FACS.
 
 K562 dCas9-KRAB cells were previously published (Gilbert et al., 2013) and authenticated by ATCC using STR profiling. U2OS dCas9-KRAB cells were generated by lentiviral transduction of U2OS cells obtained from ATCC (HTB-96) with pMH0006 (Addgene, cat# 135448; Chen et al., 2019) and selected for BFP expression by FACS. CRISPRi knockdown and control cell lines were generated by subsequent lentiviral transduction of dCas9 lines with plasmids containing individual sgRNAs (pOCIAD1sgRNA1 or pOCIAD1sgRNA2) or a non-targeting sgRNA and selected for higher levels of BFP expression by FACS. OCIAD1 knockdown cell lines rescued with wildtype or F102A OCIAD1 were generated by lentiviral transduction with plasmids pUltra-OCIAD1 and pUltra-OCIAD1(F102A), respectively, and selected for GFP expression by FACS. The U2OS OCIAD2 shRNA knockdown cells were generated by lentiviral transduction with plasmids containing individual shRNAs and selected with 15 µg/mL blasticidin for 7 days. The U2OS OCIAD1/2 double knockdown cell line was generated by infecting stable U2OS CRISPRi cells stably expressing sgRNA#2 (above) with the lentivirus vector pLKO1-OCIAD2_shRNA1 and selecting infected cells with 15 µg/mL blasticidin for 7 days. A control cell line was generated by infecting U2OS cells stably expressing a non-targeting sgRNA (above) with the lentivirus vector pLKO.1-blast-Scramble (Addgene, cat# 26701) expressing a non-targeting shRNA sequence and selected with 15 µg/mL blasticidin for 7 days. Cell lines expressing truncated OCIAD1 constructs were generated by lentiviral infection of CRISPRi cells stably expressing sgRNA#2 (above) with the indicated pFUGW-OCIAD1 and pUltra-OCIAD1-TEV-StrepII lentiviral vectors. U2OS cells stably expressing matrix- or IMS-targeted GFP1–10 were generated by lentiviral transduction with the plasmids pMTS-GFP1-10 and pIMS-GFP1-10, respectively.
 
-## Genome-scale CRISPRi screening
+### Genome-scale CRISPRi screening
 
 Genome-scale CRISPRi screens were conducted on two biological replicates as previously described (Gilbert et al., 2014; Horlbeck et al., 2016; Jost et al., 2017). Briefly, K562 cells expressing dCas9-KRAB were transduced with the pooled hCRISPRi-v2 sgRNA library (Horlbeck et al., 2016) and selected for 2 days with 0.75 µg/mL puromycin. Cells were then allowed to recover for 2 days in puromycin-free media before freezing library-containing cell aliquots (150 × 106 cells per aliquot) under liquid nitrogen. After subsequent expansion and freezing while maintaining equivalent cell numbers, biological replicates were performed from two independent cell aliquots. Upon thawing, cells were recovered in RPMI +glucose for 4 days followed by 6 days conditioning in RPMI + galactose. At this point, t0 samples with a minimum 750× library coverage (150 × 106 cells) were harvested while 250 × 106 cells each were seeded in separate 3 L spinner flasks (500 mL of media at 0.5 × 106 cells/mL) for treatment. Cells were treated with four pulses of antimycin (3.5–3.75 nM) or vehicle (ethanol), consisting of 24 hr drug treatment, washout, and 48 hr recovery. For the duration of the screen, cells were maintained in RPMI + galactose at 0.5 × 106 cells/mL by daily media dilution (minimum daily coverage ∼1000 cells per sgRNA). At the end of the screen, endpoint samples from treated and vehicle-treated population (150 × 106 cells each) were harvested and frozen. Genomic DNA was isolated from frozen cell pellets at the indicated time points and the sgRNA-encoding region was enriched, amplified, and processed for sequencing on an Illumina HiSeq 4000 platform as described previously (Horlbeck et al., 2016).
 
 Sequencing reads were aligned to hCRISPRi-v2 library and counted using the Python-based ScreenProcessing pipeline (https://github.com/mhorlbeck/ScreenProcessing) (Horlbeck et al., 2016). Negative control genes were generated and phenotypes and Mann-Whitney p-values were calculated as described previously (Gilbert et al., 2014; Horlbeck et al., 2016; Jost et al., 2017). Briefly, antimycin A sensitivity phenotypes (ρ) were determined by calculating the log2 fold change in counts of an sgRNA in the treated and untreated samples, subtracting the equivalent median value for all non-targeting sgRNAs, and dividing by the number of population doubling differences between the treated and untreated populations (Gilbert et al., 2014; Jost et al., 2017; Kampmann et al., 2013). Phenotypes from sgRNAs targeting the same gene were collapsed into a single phenotype for each gene using the average of the three sgRNAs with the strongest phenotypes by absolute value and assigned a p-value using the Mann-Whitney test of all sgRNAs targeting the same gene compared to the non-targeting controls. For genes with multiple independent transcription start sites (TSSs) targeted by the sgRNA library, phenotypes and p-values were calculated independently for each TSS and then collapsed to a single score by selecting the TSS with the lowest Mann-Whitney p-value, as described previously (Gilbert et al., 2014; Horlbeck et al., 2016; Jost et al., 2017). Read counts and phenotypes for individual sgRNAs as well as gene-level phenotypes are available in Supplementary file 1.
 
-## Validation of individual sgRNA phenotypes
+### Validation of individual sgRNA phenotypes
 
 The antimycin screen phenotype was validated by a growth competition assay using K562 cells expressing individually cloned sgRNAs. In short, K562 dCas9-KRAB cells were mixed with an equal number of K562 CRISPRi cells expressing a non-targeting sgRNA or sgRNA against OCIAD1. The sgRNA expression construct expressed a BFP reporter to identify infected cells. Of note, the dCas9-KRAB construct also expressed BFP fused to dCas9, but the BFP fluorescent intensity was dim and sgRNA-infected cells were clearly distinguishable from dCas9 cells by flow cytometry. For simplicity, K562 CRISPRi cells are referred to as BFP+ in the text. Cells were grown for 24 hr in RPMI + galactose containing either antimycin (5 nM) or vehicle (ethanol), washed, and allowed to recover for 72 hr. The proportion of BFP-positive cells in each cell mixture was determined at the indicated time points using an Amnis Imagestream X (Luminex, Austin, TX) flow cytometer.
 
-## Mitochondria isolation
+### Mitochondria isolation
 
 For mitochondria isolation, all procedures were performed on ice or at 4°C. U2OS cells were grown to confluency in 150 mm Petri dishes and washed three times with 15 mL of cold homogenization buffer (10 mM HEPES, 1 mM EDTA, 210 mM mannitol, 70 mM sucrose, pH 7.4 at 4°C). Cells were harvested by scraping in cold homogenization buffer (0.75 mL per plate) supplemented with 1× protease inhibitor cocktail (MilliporeSigma, Burlington, MA) and lysed with 6–8 strokes of a glass Dounce homogenizer fitted with a tight pestle. At this point, a small fraction of homogenate was immediately snap-frozen on liquid nitrogen and stored at −80°C for whole-cell proteomics analysis as described below. For K562 suspension cells, cells were harvested by centrifugation (1000 g, 5 min), washed with cold homogenization buffer, re-pelleted (1000 g, 5 min), and incubated on ice for 20 min in swelling buffer (10 mM HEPES, 1 mM EDTA, pH 7.4 at 4°C) supplemented with 1× protease inhibitor cocktail (MilliporeSigma, Burlington, MA). Cells were then lysed with 25 strokes of a glass Dounce homogenizer fitted with a tight pestle and immediately diluted with 2× homogenization buffer (10 mM HEPES, 1 mM EDTA, 420 mM mannitol, 140 mM sucrose, supplemented with 1× protease inhibitor cocktail, pH 7.4 at 4°C) to a final concentration of 10 mM HEPES, 1 mM EDTA, 210 mM mannitol, 70 mM sucrose. The homogenate was centrifuged at ~1300 g for 5 min to remove nuclei, unbroken cells, and large cellular debris and the supernatant was centrifuged at ~14,000 g for 10 min at 4°C. The crude mitochondrial pellet was resuspended in homogenization buffer supplemented with 1× protease inhibitor cocktail prior to measuring protein concentration using a bicinchoninic acid (BCA) assay (Pierce, Waltham, MA). Mitochondrial samples were either used immediately or snap-frozen in 50 or 200 µg aliquots on liquid nitrogen and stored at −80°C.
 
-## Native PAGE analysis
+### Native PAGE analysis
 
 BN and clear-native (CN) PAGE analyses were performed as previously described (Wittig et al., 2007; Wittig et al., 2006). All procedures were performed on ice or at 4°C. Mitochondrial aliquots (200 µg) were thawed on ice, diluted with 1 mL of solubilization buffer (50 mM imidazole, 50 mM NaCl, 2 mM 6-aminohexanoic acid, 1 mM EDTA, pH7.0 at 4°C), and pelleted at 21,300 g for 10 min. The supernatant was removed and the mitochondrial pellet was resuspended in 20 µL of solubilization buffer supplemented with digitonin (Calbiochem, cat# 300410) or LMNG (Anatrace, Maumee, OH) to a final detergent-to-protein ratio of 4 and 1 g/g, respectively. Samples were solubilized on ice for ~15 min and centrifuged at 21,300 g for 20 min. The supernatant was collected and protein concentration was measured using a BCA assay kit (Pierce, Waltham, MA).
 
@@ -151,39 +514,39 @@ For 2D-native/SDS-PAGE analysis, individual gel lanes were excised from BN-PAGE 
 
 For the mobility shift assay, 400 µg of K562 mitochondria was solubilized with LMNG at a 1 g/g ratio as described above. The sample was halved and incubated with either mouse anti-PHB2 antibodies (Proteintech, cat# 66424–1-Ig, 70 ng, ~1.8 µL) or vehicle (PBS) on ice of 90 min. Samples were then analyzed by BN-PAGE as described above.
 
-## Protease protection and carbonate extraction analysis
+### Protease protection and carbonate extraction analysis
 
 Protease protection analysis was performed on mitochondria freshly isolated from U2OS cells as previously described (Hoppins et al., 2011) with the following modifications. Mitochondria (50 µg of total mitochondrial protein) were resuspended in 500 µL of one of the following solutions: homogenization buffer (210 mM mannitol, 70 mM sucrose, 10 mM HEPES, 1 mM EDTA, pH 7.4), mitoplast/swelling buffer (10 mM HEPES, pH 7.4), or solubilizing buffer (homogenization buffer with 1% Triton X-100). After 15 min incubation on ice, the mitoplast/swelling sample was gently pipetted up and down 15 times to disrupt the OMM. Proteinase K was then added to the indicated samples to a final concentration of 100 µg/mL, and samples were incubated on ice for 20 min. The digestion was stopped by adding PMSF to a final concentration of 2 mM and incubating the samples on ice for 5 min. TCA was then added to a final concentration of 12.5% and proteins were precipitated on ice for 1 hr. Proteins were then pelleted by centrifugation at 21,130 g for 15 min at 4°C, washed with acetone, dried, and resuspended in 100 µL of 1× Laemmli buffer. Samples (20 µL) were loaded on a 10% SDS-PAGE and analyzed by Western blotting with the indicated antibodies as described below.
 
 The carbonate extraction assay was performed as described (Hoppins et al., 2011) with the following modifications. Mitochondria isolated from U2OS cells (50 µg of total mitochondrial protein) were thawed on ice, pelleted at 15,000 g for 10 min at 4°C, and resuspended in 200 µL of one of the following solutions: 10 mM HEPES (pH 7.4), 100 mM sodium carbonate (pH 10.5), 100 mM sodium carbonate (pH 11), or 100 mM sodium carbonate (pH 11.5). Samples were incubated on ice for 30 min and centrifuged at 100,000 g for 1 hr in a TLA100 rotor. The supernatant was harvested and proteins were precipitated with TCA as described above. The pellet fraction and TCA-precipitated proteins were resuspended in 50 µL of 1× Laemmli buffer and 10 µL was loaded on a 10% SDS-PAGE and analyzed by Western blotting with the indicated antibodies as described below.
 
-## Western blotting analysis
+### Western blotting analysis
 
 For quantitative Western blot analysis, protein concentration was determined using a BCA assay kit (Pierce, Waltham, MA) and equivalent amount of proteins were diluted with 6× Laemmli sample buffer to a final concentration of 62.5 mM Tris pH 6.8, 2% SDS, 10% glycerol, 0.1M DTT, 0.01% bromophenol blue. Samples were heated for 2–5 min at 95°C and loaded on 10% Tris-glycine polyacrylamide gels. After electrophoresis, proteins were electroblotted on low fluorescent PVDF or nitrocellulose membranes, and immunoblotted with the following primary antibodies: rabbit anti-OCIAD1 (Invitrogen, cat# PA5-20834, 1:2000–1:5000), mouse anti-OCIAD1 (Proteintech, cat# 66698–1-Ig, 1:5000), rabbit anti-OCIAD2 (Invitrogen, cat# PA5-59375, 1:500–1:5000), mouse anti-ATP5A1 (Proteintech, cat# 66037–1-Ig, 1:2000–1:5000), rabbit anti-NDUFB8 (Proteintech, cat# 14794–1-AP, 1:2000), mouse anti-SDHA (SantaCruz Biotechnology, cat# sc-166947, 1:2000–1:5000), rabbit anti-UQCRC2 (Proteintech, cat# 14742–1-AP, 1:2000–1:5000), mouse anti-UQCRC1 (Invitrogen, cat# 459140, 1:2000), rabbit anti-CYC1 (Proteintech, cat# 10242–1-AP, 1:1000), mouse anti-COXIV (Proteintech, cat# 66110–1-1g, 1:2000), mouse anti-PHB2 (Proteintech, cat# 66424–1-Ig, 1:5000), rabbit anti-TIM50 (Proteintech, cat# 22229–1-AP, 1:1000), rabbit anti-TOM70 (Proteintech, cat# 14528–1-AP, 1:1000), mouse anti-GFP (Proteintech, cat# 66002–1-Ig, 1:2000), mouse anti-β-actin (Proteintech, cat# 66009–1-1g, 1:10,000), rabbit anti-GPD2 (Proteintech, cat# 17219–1-AP, 1:1000), rabbit anti-AIF (Proteintech, cat# 17984–1-AP, 1:4000). Secondary antibodies conjugated to DyLight 680 and DyLight 800 (Thermo Fisher Scientific, 1:5000) were used and visualized with an Odyssey Infrared Imaging System (LI-COR, Lincoln, NE). Densitometry analysis was done using the quantification software ImageStudio Lite (LI-COR, Lincoln, NE).
 
-## Heme detection
+### Heme detection
 
 Chemiluminescence was used to detect c-type heme on PVDF or nitrocellulose membranes as previously described (Dorward, 1993; Feissner et al., 2003). In short, membranes were rinsed with distilled water immediately after electrophoresis, incubated with SuperSignal West Femto chemiluminescent substrate (Pierce, Waltham, MA), and imaged on an ImageQuant LAS 4000 (GE, Boston, MA). Densitometry analysis was done using the quantification software ImageStudio Lite (LI-COR, Lincoln, NE).
 
-## GFP complementation assay
+### GFP complementation assay
 
 U2OS cells stably expressing GFP1–10 in the matrix (MTS) or IMS were plated in six-well plate (~300,000 cells/well) on day 0 and transfected on day 1 with 6 µL of Lipofectamine 2000 (Invitrogen, Carlsbad, CA), according to the manufacturer’s instructions. The cells were transfected with 250 ng of the following plasmids: CoQ9-GFP11, GFP11-MICU1, OCIAD1-GFP11, and GFP11-OCIAD1, and 750 ng of transfection carrier DNA (Promega, pGEM2 plasmid). Cells were expanded in 10 cm plate on day 2 and analyzed by fluorescent flow cytometry on day 3 with an Amnis Imagestream X (Luminex, Austin, TX).
 
-## Immunopurification
+### Immunopurification
 
 Cells were crosslinked with dithiobis(succinimidyl propionate) (DSP, Life Technologies, cat# 22585) made from a freshly prepared 0.25 M stock solution in DMSO. In short, 150 mL of confluent (~1×106 cells/mL) K562 cells of the indicated OCIAD1 background were harvested by centrifugation (1000 g, 5 min), washed with warm (37°C) PBS, and crosslinked at room temperature for 30 min with 0.5 mM DSP in PBS at ~1×106 cells/mL. DSP was then quenched by adding Tris-HCl (pH 7.5) to a final concentration of 100 mM. Cells were harvested by centrifugation (1000 g, 5 min), washed with cold PBS, harvested again, and solubilized in 2 mL of cold RIPA buffer supplemented with 1× protease inhibitor cocktail (MilliporeSigma, Burlington, MA) on ice for 30 min. Samples were centrifuged at 26,000 g for 30 min at 4°C in a TLA100.4 rotor. The supernatant was collected, protein concentration was measured using a BCA assay kit (Pierce, Waltham, MA), and aliquots were stored at −80°C.
 
 Immunopurification was performed on three independently DSP-crosslinked samples. Each sample was thawed on ice and adjusted to 7.8 mg of total protein in 2 mL of RIPA buffer containing 1× protease inhibitor cocktail (MilliporeSigma, Burlington, MA). OCIAD1 was immunocaptured overnight at 4°C with 3 µg of rabbit anti-OCIAD1 antibody (Thermo Fisher Scientific, cat# PA5-20834). Antibodies were captured with 100 µL of μMACS protein A beads (Miltenyi Biotec, San Diego, CA). Beads were isolated with μ columns and a μMACS separator (Miltenyi Biotec, San Diego, CA), washed five times with 1 mL of RIPA buffer and three times with 1 mL of 50 mM ammonium bicarbonate pH 8.0. Bait proteins were eluted with 25 µL of elution buffer (2 M urea, 0.67 M thiourea in 50 mM ammonium bicarbonate pH 8.0) containing LysC/Trypsin (Promega, Madison, WI, cat# V5071) to a final concentration of 5 µg/mL followed by two elution with 50 µL of elution buffer without LysC/Trypsin. Samples were reduced with 10 mM TCEP (Pierce, Waltham, MA) for 30 min at 37°C, alkylated with 15 mM 2-chloroacetamide (MilliporeSigma, Burlington, MA), digested overnight at 37°C, and desalted using ZipTip with 0.6 µL C18 resin (MilliporeSigma, Burlington, MA, cat# ZTC18S096) prior to LC-MS/MS analysis as described below.
 
-## Protein digestion on suspension traps
+### Protein digestion on suspension traps
 
 Protein digestion of U2OS lysates was done on suspension traps (S-Trap) as described (Ludwig et al., 2018) with the following modifications. Whole-cell and crude mitochondrial lysates (50 µg total protein) were boiled in 5% SDS, 50 mM ammonium bicarbonate (pH 7.55) for 5 min. Proteins were then reduced with 10 mM TCEP for 15 min at 37°C and alkylated in the dark for 30 min with 15 mM 2-chloroacetamide. The proteins were then acidified with phosphoric acid (final concentration of 1.2%) and diluted with six volumes of S-Trap buffer (90% methanol, 100 mM ammonium bicarbonate, pH 7.1). The colloidal suspension was loaded onto DNA miniprep spin columns used as ‘suspension traps’ (EZ-10 DNA spin columns, Biobasic, Amherst, NY) and washed with S-Trap buffer prior to overnight proteolysis at 37°C with LysC/trypsin (Promega, Madison, WI) in 50 mM ammonium bicarbonate (pH 8.0) at a protease/protein ratio of 1:40 (w/w). Peptides were successively eluted with 40 µL of 50 mM ammonium bicarbonate (pH 8.0), 40 µL of ultrapure Milli-Q water, 0.1% TFA, and 40 µL of 80% acetonitrile, 0.1% TFA in ultrapure Milli-Q water. Peptides were dried using a SpeedVac concentrator and resuspended in 30 µL of 2% acetonitrile, 0.1% TFA. Peptide concentration was measured using a fluorometric peptide assay kit (Pierce, Waltham, MA) and samples were analyzed by LC-MS/MS as described below.
 
-## In-gel protein digestion
+### In-gel protein digestion
 
 To minimize contamination, procedures were performed in a biosafety cabinet whenever possible. Mitochondria from U2OS cells of the indicated OCIAD1 background were solubilized with digitonin at a 4 g/g detergent/protein ratio and 100 µg of solubilized mitochondrial protein was resolved by BN-PAGE as described above. After electrophoresis, the gel was fixed with 40% methanol, 10% acetic acid at room temperature for 20 min and destained with 8% acetic acid for 20 min. Gel slices (2 mm × 7 mm) were excised along the entire lane using disposable gel cutter grids (The Gel Company, San Francisco, CA, cat# MEE2-7-25). Ten gel slices ranging from ~600 to 900 kDa were collected in 100 µL of 50 mM ammonium bicarbonate (pH 8.0) in a 96-well plate and destained/dehydrated with successive 5 min washes with 100 µL of the following solutions (three washes each): 50 mM ammonium bicarbonate (pH 8.0), 25% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), 50% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), 75% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), 100% acetonitrile. Proteins were then reduced with 50 µL of 10 mM TCEP for 30 min at 37°C, gel slices were dehydrated again with three washes with 100% acetonitrile, and alkylated with 15 mM 2-chloroacetamide in the dark for 20 min. Gel slices were dehydrated again and washed for 5 min with 100 µL of the following solutions (two washes each): 50 mM ammonium bicarbonate (pH 8.0), 25% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), 50% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), 75% acetonitrile in 50 mM ammonium bicarbonate (pH 8.0), and four washes with 100% acetonitrile. Gel slices were air-dried before overnight ProteaseMax-aided digestion as previously described (Saveliev et al., 2013). In short, dried gel pieces were rehydrated in 50 µL of 12 ng/µL LysC/Trypsin (Promega, Madison, WI), 0.01% ProteaseMAX surfactant (Promega, Madison, WI, cat# V2071) in 50 mM ammonium bicarbonate (pH 8.0) for 20 min on ice and overlaid with 50 µL of 0.01% ProteaseMAX surfactant in 50 mM ammonium bicarbonate (pH 8.0). Proteins were digested overnight at 37°C. The peptide-containing solution was collected in 1.5 mL eppendorf tubes and 100 µL of 75% acetonitrile, 1% TFA in 25 mM ammonium bicarbonate (pH 8.0) was added to each gel slice to elute remaining peptides. Both eluates were pooled and dried using a SpeedVac concentrator before LC-MS/MS analysis as described below.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 LC-MS/MS analysis was performed at the University of California, Davis, Genome Center Proteomics Core. Immunoprecipitation and whole-cell samples were run on a Thermo Scientific Fusion Lumos mass spectrometer in data-independent acquisition (DIA) mode. Peptides were separated on an Easy-spray 100 µm × 25 cm C18 column using a Dionex Ultimate 3000 nUPLC with 0.1% formic acid (solvent A) and 100% acetonitrile, 0.1% formic acid (solvent B) and the following gradient conditions: 2–50% solvent B over 60 min, followed by a 50–99% solvent B in 6 min, held for 3 min and finally 99–2% solvent B in 2 min. The total run time was 90 min. Six gas phase fractionated (GPF) chromatogram library injections were acquired using 4 Da staggered isolation windows (GPF 1: 400–500 m/z, GPF 2: 500–600 m/z, GPF 3: 600–700 m/z, GPF 4: 700–800 m/z, GPF 5: 800–900 m/z, and GPF 6: 900–1000 m/z). Mass spectra were acquired using a collision energy of 35, resolution of 30 K, maximum inject time of 54 ms, and an AGC target of 50 K. The analytical samples were run in DIA mode with 8 Da staggered isolation windows covering 400–1000 m/z.
 
@@ -195,14 +558,14 @@ Raw files acquired in diaPASEF mode on the timsTOF were analyzed similarly with 
 
 DIA-NN output files were imported and analyzed in R using MaxLFQ values quantified from proteotypic peptides only (Cox et al., 2014). For whole-cell proteomics and immunoprecipitation analysis, only proteins identified in all the replicates of at least one sample were selected. Missing values were imputed using the ‘MinDet’ deterministic minimal value approach from the MSnbase package prior statistical analysis as described below.
 
-## Confocal fluorescence microscopy
+### Confocal fluorescence microscopy
 
 U2OS cells were grown on 12 mm round glass coverslips (#1.5) and stained for 30 min with 100 nM of Mitotracker DeepRed (Invitrogen, Carlsbad, CA, cat# M22426), washed with PBS, and fixed in 4% PFA in PBS for 20 min at room temperature. Cells were washed again with PBS, permeabilized for 10 min with 0.1% Triton X-100 in PBS, blocked with 5% bovine serum albumine (BSA) in PBS for 1 hr at room temperature, and immunolabeled with rabbit anti-OCIAD1 (Invitrogen, cat# PA5-20834, 1:10000) or rabbit anti-OCIAD2 (Invitrogen, cat# PA5-59375, 1:5000) antibodies for 1 hr at room temperature in 1% BSA in PBS. Cells were washed again in PBS and incubated with donkey anti-rabbit IgG conjugated with AlexaFluor 488 (Invitrogen, Carlsbad, CA, cat# A21206, 1:1000) in 1% BSA in PBS for 1 hr at room temperature. Finally, cells were washed again in PBS and mounted on glass slides with ProLong Glass antifade mounting medium (Invitrogen, Carlsbad, CA, cat# P36980). Images were collected using the spinning disk module of a Marianas SDC Real Time 3D Confocoal-TIRF microscope (Intelligent Imaging Innovations; Denver, CO) fitted with a 100×, 1.46 NA objective and a Hamamatsu (Japan) Orca Flash 4.0 sCMOS camera. Images were captured with SlideBook (Intelligent Imaging Innovations) and linear adjustments were made using ImageJ.
 
-## Multiple sequence alignment
+### Multiple sequence alignment
 
 Multiple sequence alignment analysis was performed with the R package ‘msa’ (version 1.22.0) using the Clustal Omega method with default parameters.
 
-## Statistical analysis
+### Statistical analysis
 
 GO enrichment analysis was performed using the topGO R package (version 2.42.0) using the ‘elim’ method and Fisher’s exact test (Alexa et al., 2006; Grossmann et al., 2007). Western blot densitometry results were analyzed using one-way analysis of variance followed by pairwise t-test with Benjamini and Hochberg (FDR) correction. For LC-MS/MS immunoprecipitation and whole-cell proteomics data, relative changes between conditions were analyzed using limma’s function lmFit (Ritchie et al., 2015), followed by eBayes with FDR correction (Phipson et al., 2016). For whole-cell proteomics data, hierarchical clustering was performed using Euclidean distances of significant hit proteins. Error bars represent standard error and *p<0.05, **p<0.01, and ***p<0.001. All data were analyzed in R (version 4.0.3).

@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 EaStCHEM School of Chemistry, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/01nrxwf90 Genes to Cognition Program, Centre for Clinical Brain Sciences, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/03mstc592 EMBL Imaging Centre, European Molecular Biology Laboratory Heidelberg Germany
-4. https://ror.org/01nrxwf90 IRR Chemistry Hub, Institute for Regeneration and Repair, University of Edinburgh Edinburgh United Kingdom
-5. https://ror.org/01gghaa40 Simons Initiative for the Developing Brain (SIDB), Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom
-6. https://ror.org/01nrxwf90 The Patrick Wild Centre for Research into Autism, Fragile X Syndrome & Intellectual Disabilities, Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom
-7. https://ror.org/01nrxwf90 Centre for Inflammation Research, University of Edinburgh Edinburgh United Kingdom
+1. EaStCHEM School of Chemistry, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Genes to Cognition Program, Centre for Clinical Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. EMBL Imaging Centre, European Molecular Biology Laboratory Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))
+4. IRR Chemistry Hub, Institute for Regeneration and Repair, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+5. Simons Initiative for the Developing Brain (SIDB), Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01gghaa40](https://ror.org/01gghaa40))
+6. The Patrick Wild Centre for Research into Autism, Fragile X Syndrome & Intellectual Disabilities, Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+7. Centre for Inflammation Research, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 
 † Corresponding author
 
@@ -40,23 +40,118 @@ To address these questions, we have used single-molecule imaging of PSD95-contai
 
 ## Results
 
-## Imaging individual PSD95 supercomplexes isolated from mouse brain
+### Imaging individual PSD95 supercomplexes isolated from mouse brain
 
 Single-molecule and super-resolution (SR) approaches enable the heterogeneity in molecular complexes and supercomplexes to be distinguished (Jain et al., 2011; Saleeb et al., 2023; Szymborska et al., 2013), and therefore provide an invaluable tool for studying synaptic molecular supercomplexes isolated from brain homogenate. Forebrains from PSD95-eGFP homozygous mice were dissected and homogenized as described (Fernández et al., 2009) (Materials and methods) (Figure 1a). The supercomplexes were subsequently diluted and immobilized on a glass coverslip, and imaged on a TIRF microscope (Figure 1bi) (Materials and methods). Although this technique is diffraction-limited, the number of fluorescent proteins present in each supercomplex can be quantified by the stepwise photobleaching of each fluorophore (Dalton et al., 2016; Leake et al., 2006). The number of photobleaching steps per diffraction-limited spot was determined for a population of >6000 supercomplexes across three biological repeats (Figure 1bii, with examples of one-step and multi-step photobleaching traces presented in Figure 1biii). On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins. Given that not all eGFP will fold correctly (typical in vitro refolding yields for GFP are 50–60% Battistutta et al., 2000; Reid and Flynn, 1997; Ward and Bokman, 1982), this suggests that there is an abundant population of PSD95 supercomplexes that contain two PSD95 proteins. We validated our approach using purified eGFP, demonstrating that the vast majority of eGFP was monomeric (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-v1.jpg)
+
+**Figure 1.:** (a) Brain containing either endogenously tagged PSD95-eGFP or PSD95-mEoS2 was extracted from the genetically modified mouse, and the forebrain was homogenized to solubilize PSD95-containing supercomplexes. PSD95 supercomplexes were immobilized on glass coverslips and imaged using single-molecule and super-resolution approaches. (bi) Individual PSD95-eGFP supercomplexes (boxed) were imaged using total internal reflection fluorescence (TIRF) microscopy. Scale bar = 5 µm, inset scale bar = 500 nm. Photobleaching step counting revealed a distribution of PSD95 stoichiometries (bii) (10,178 PSD95-eGFP photobleaching steps were counted across 6461 supercomplexes). Representative intensity traces with fits shown in biii. (ci) Example photoactivated localization microscopy (PALM) images of individual PSD95 supercomplexes. Scale bar = 500 nm, inset scale bar = 50 nm. (cii) Subsequent analysis revealed that PSD95 exists at a range of stoichiometries within the supercomplexes (132,929 PSD95-mEoS2 molecules were detected in 82,501 individual supercomplexes). Plots show mean ± SD, n = 3 biological repeats. (ciii) Class averaging of the dimer population shows a distinct separation between the PSD95 proteins within the supercomplexes (class average of 9743 supercomplexes). (di) Example MINFLUX images of PSD95 supercomplexes. Scale bar = 100 nm, inset scale bar = 10 nm. (dii) Analysis of the supercomplexes containing two PSD95 molecules (1011 supercomplexes) showed a distribution of PSD95 separation distances. (diii) Class averaging of this population revealed two peaks separated by 12.7 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Stoichiometries of eGFP determined using the same approach as that for eGFP-tagged PSD95. (b) Example intensity trace with fitting.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Homogenate extracted from wild-type mice was processed using the same procedure as that for PSD95-eGFP mice. It was subsequently diluted 1:1000 and 100 µl of this solution was incubated on a plasma-cleaned coverslip for 30 min. The coverslip was washed three times with phosphate-buffered saline (PBS) and a mix of 2.5 pM AF647-tagged and 2.5 pM ATTO488-tagged FluoTag-X2 anti-PSD95 nanobody (NanoTag Biotechnologies) was added to the coverslip (total volume 100 µl) and incubated for 30 min. Following washing three times with PBS, the sample was imaged on the total internal reflection fluorescence (TIRF) microscope with 638 and 488 nm excitation. Coincident spots represent supercomplexes containing multiple PSD95 units. Scale bar = 2 µm, inset scale bar = 250 nm.
 
 To further verify the PSD95 stoichiometry in supercomplexes, we generated brain homogenate from PSD95-mEos2 heterozygous mice, and following immobilization, we imaged the supercomplexes using photoactivated localization microscopy (PALM) (Betzig et al., 2006). Each PSD95-mEos2 molecule within the supercomplexes was localized with a mean precision of 21.8 ± 6.5 nm (mean ± SD, n = 132,929 localizations across three biological repeats). Fourier ring correlation (Nieuwenhuizen et al., 2013) revealed that the acquired images had a mean resolution of 30 ± 4 nm (mean ± SD, n = 3 biological repeats). This enabled the spatial relationship between individual PSD95 molecules to be deduced. Examples of super-resolved supercomplexes are shown in Figure 1ci. The number of PSD95 molecules per supercomplex was quantified using custom-written code (Materials and methods), and the distribution of stoichiometries is shown in Figure 1cii. Over 130,000 PSD95-mEoS2 proteins were localized in 82,501 supercomplexes across three biological repeats. 76 ± 2% of the supercomplexes contained only one PSD95-mEoS2 protein, 12 ± 1% contained two PSD95-mEoS2 proteins, and the remainder (12 ± 2%) of the clusters contained more than two PSD95-mEoS2 proteins. Given that only half of the PSD95 proteins are fused to mEoS2 in heterozygous mice, and that not all mEoS2 will fold correctly, these results confirm the findings from the photobleaching analysis, suggesting that supercomplexes contain PSD95 protein at a range of stoichiometries, with the majority containing two or fewer. We also identified multimers in wild-type PSD95 supercomplexes using a mix of orthogonally labeled PSD95 nanobodies (Figure 1—figure supplement 2).
 
 We next determined the mean distance between PSD95 molecules by class averaging the 9,743 supercomplexes that contained two PSD95-mEoS2 proteins, revealing one dominant separation with a mean distance of 37.8 nm between PSD95 molecules (Figure 1ciii). As this separation distance is close to the spatial resolution that we were able to achieve using PALM, we further analyzed the supercomplexes using MINFLUX, which can attain a spatial resolution of 1–5 nm. We immobilized supercomplexes from brain homogenate containing PSD95-eGFP and added a GFP-nanobody tagged with Alexa Fluor 647 (Materials and methods. Details of MINFLUX imaging sequences are provided in Table 1). Example MINFLUX images are shown in Figure 1di. We were able to detect PSD95 within the supercomplexes at a range of stoichiometries, and selected for measurement those that contained two units of PSD95 (1011 supercomplexes). Class averaging the distribution of individual distances measured between two PSD95 molecules in the supercomplexes (Figure 1dii) shows two clear peaks separated by 12.7 nm (Figure 1diii).
 
-## Sequential replacement of PSD95 within supercomplexes
+**Table 1.**
+ MINFLUX iterations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1st</th>
+      <th>2nd</th>
+      <th>3rd</th>
+      <th>4th</th>
+      <th>5th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L size [nm]</td>
+      <td>300</td>
+      <td>300</td>
+      <td>150</td>
+      <td>75</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>TCP – pattern</td>
+      <td>Hexagon</td>
+      <td>Hexagon</td>
+      <td>Hexagon</td>
+      <td>Hexagon</td>
+      <td>Hexagon</td>
+    </tr>
+    <tr>
+      <td>Minimum number of collected photons</td>
+      <td>100</td>
+      <td>150</td>
+      <td>100</td>
+      <td>100</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Laser power factor</td>
+      <td>1x</td>
+      <td>1x</td>
+      <td>2x</td>
+      <td>4x</td>
+      <td>6x</td>
+    </tr>
+    <tr>
+      <td>TCP dwell time [ms]</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CFR</td>
+      <td>x</td>
+      <td>0.5</td>
+      <td>x</td>
+      <td>0.8</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Background threshold [kHz]</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequential replacement of PSD95 within supercomplexes
 
 We have previously measured the rate of PSD95 turnover across the mouse brain at single-synapse resolution, demonstrating that excitatory synapses have a wide range of protein lifetimes extending from a few hours to several months (Bulovaite et al., 2022). These findings led us to ask whether protein turnover could occur within individual intact molecular supercomplexes, or if the whole supercomplex needs to be replaced with new protein.
 
 Injecting the cell- and blood–brain barrier-permeable fluorescent ligand Silicon-Rhodamine-Halo (SiR-Halo) into the tail vein of 3-month-old PSD95-HaloTag homozygous mice labels all of the PSD95-HaloTag (Figure 2a; Bulovaite et al., 2022). Because SiR-Halo forms a covalent bond with the PSD95-HaloTag, the persistence of labeling over time after injection reports whether PSD95 has been replaced in individual supercomplexes. Brain tissue was obtained at 6 hr (day-0) or 7 days (day-7) post SiR-Halo injection. The homogenized forebrain tissue from each mouse was then incubated with a second HaloTag ligand, Alexa Fluor 488-Halo (AF488-Halo), to label any new PSD95-HaloTag protein generated after the earlier SiR-Halo injection. This allowed us to quantify the levels of PSD95 protein turned over in 7 days. Supercomplexes containing only SiR-Halo represent those in which no PSD95 replacement had occurred, whereas those with only AF488-Halo are either new supercomplexes or those in which all PSD95 has been replaced. A coincident signal of SiR-Halo and AF488-Halo represents supercomplexes in which a proportion of the PSD95 has been replaced (Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig2-v1.jpg)
+
+**Figure 2.:** (a) PSD95-HaloTag homozygous mice were injected with SiR-Halo ligand and culled 6 hr (day-0) or 7 days (day-7) post injection. The forebrains were homogenized and post hoc stained with AF488-Halo ligand to saturate remaining binding sites. At day-0, the vast majority of PSD95 is labeled with SiR-Halo only. After 7 days of protein turnover, three populations of supercomplex are possible: SiR-Halo only, AF488-Halo only, and both fluorophores. (b) Images of supercomplexes from homogenate at day-0 and day-7, showing increased AF488-Halo:SiR-Halo ratios at day-7, with increased coincidence. Scale bar is 5 μm and 500 nm in the zoom. (c) Quantified percentages of supercomplexes labeled only with SiR-Halo, AF488-Halo, or both. At day-0, 96% of supercomplexes were labeled with SiR-Halo only, indicating saturation of PSD95-HaloTag binding sites by injection. At day-7, this had decreased to 56%, with expansion of the AF488-Halo and co-labeled populations, indicating that PSD95 protein turnover had occurred over the 7 days.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Number of labeled supercomplexes at day-0 and day-7 containing only SiR-labeled ‘old’ protein (SIR), AF488-labeled ‘new’ protein (AF488), or both ‘mixed’. In total, 13,710 supercomplexes were analyzed at day-0 and 15,391 supercomplexes were analyzed at day-7.
+
 Example diffraction-limited images of the labeled PSD95 supercomplexes at the two time points are shown in Figure 2b. Most of the supercomplexes observed at day-0 contain only SiR-Halo, with few having AF488-Halo, and negligible coincidence. At day-7, fewer SiR-Halo supercomplexes were observed, indicating that some of the PSD95 protein present at the time of injection was degraded. An increase in the number of AF488-Halo-labeled supercomplexes indicates that the degraded protein has been replaced with new, label-free protein. An increase in coincidence can be seen in the merge of the two images. These results are shown quantitatively in Figure 2c (see also Figure 2—figure supplement 1). Approximately 40% of the old PSD95 protein is replaced by new protein between day-0 and day-7. Of the 13,710 supercomplexes analyzed at day-0, 96% of the supercomplexes were labeled with only SiR-Halo, indicating that the HaloTag binding sites were saturated by injection. At day-7, 56% of the 15,391 supercomplexes analyzed were labeled with only SiR-Halo. 32% of the supercomplexes were labeled with only AF488-Halo, indicating all copies of PSD95 within these supercomplexes had been turned over in the 7-day period. Interestingly, 12% of the supercomplexes were labeled with both AF488-Halo and SiR-Halo, indicating that some supercomplexes (hereafter referred to as ‘mixed supercomplexes’) contain both old and new protein. This indicates that supercomplexes can exchange old copies of PSD95 for new.
 
-## Comparison of synaptic PSD95 with total PSD95
+### Comparison of synaptic PSD95 with total PSD95
 
 PSD95 is synthesized in the neuronal cytosol and transported into synapses where it is concentrated in the postsynaptic density. We asked whether the exchange of PSD95 in supercomplexes differs between the synapse and the cytosol by comparing the synaptic (synaptosome) and total forebrains of mice injected with SiR-Halo at day-7 (Materials and methods). Supercomplexes were extracted from either the synaptosome fraction or the whole forebrain of SiR-Halo-injected mice and incubated with AF488-Halo and imaged using TIRF microscopy (Figure 3a).
 
@@ -66,11 +161,82 @@ PSD95 is synthesized in the neuronal cytosol and transported into synapses where
 
 Whereas the level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively), the percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21% versus 32% in the total forebrain homogenate) and there is a greater fraction of mixed supercomplexes (27% versus 12% in the total forebrain homogenate) (Figure 3b). This suggests that while the overall rate of PSD95 turnover is similar in synapses compared with the overall forebrain, there is a greater fraction of supercomplexes that retain at least one old PSD95 protein, underlying their importance in maintaining the overall molecular state of the postsynaptic density.
 
-## Slowest exchange of PSD95 in supercomplexes from the cortex
+### Slowest exchange of PSD95 in supercomplexes from the cortex
 
 Because the lifetime of PSD95 is longer in cortical regions than other brain regions (Bulovaite et al., 2022), we hypothesized that this region may have different rates of exchange of PSD95 within supercomplexes. The brains from six 3-month-old PSD95-HaloTag mice, culled 7 days after SiR-HaloTag ligand injection, were dissected into five major regions (isocortex, hippocampus, olfactory bulb, cerebellum, and subcortex), and homogenized to extract the supercomplexes. After incubation with AF488-HaloTag ligand, to label new PSD95-Halo proteins, they were imaged using TIRF microscopy (Figure 4a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-v1.jpg)
+
+**Figure 4.:** (a) Mouse brains were dissected into five broad regions. (b) The percentage of total PSD95 imaged contained in SiR-labeled (i), AF488-labeled (ii), and mixed (iii) supercomplexes. Error bars show the SD of 6 biological repeats. (c) The percentage of SiR-labeled (i), AF488-labeled (ii), and mixed (iii) PSD95 supercomplexes in each region of the brain. ANOVA tests for differences between the five brain region means was carried out for plots bi, bii, and biii. The ANOVA tests returned p-values of 0.71, 0.23, and 5.5 × 10−8, respectively. This indicates that there is no statistical significance in plots bi and bii, but there are statistical differences between some of the means in plot biii. Post hoc t-tests were carried out to identify the source of the significance. The p-values for comparisons between all regions are shown in Table 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Key showing the five dissected brain regions (i). Percentage of total PSD95 proteins in old-only (ii), new-only (iii), and mixed (iv) supercomplexes (mean ± SD, n = 3). (b) Mouse brain region heatmaps showing the same data as in a ii–iv.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The percentage of complexes that contain (a) old-only, (b) new-only, or (c) mixed old and new PSD95 (mean ± SD for % PSD95, and ± 95% CI for half-life, n = 3). There is no statistically significant correlation in a or b. However, R = 0.9536 and p = 0.01 from a Pearson’s correlation test, indicating a significant positive correlation between the percentage of PSD95 in mixed supercomplexes and PSD95 puncta half-life.
+
 In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas. Strikingly, the isocortex contained the highest percentage of mixed supercomplexes (19 ± 3%, mean ± SD), and the olfactory bulb the lowest (4 ± 3%, mean ± SD) (Figure 4b, c). Correspondingly, the region with the highest percentage of new complexes was the olfactory bulb (40 ± 16%, mean ± SD), whereas the isocortex had one of the lowest percentages (27 ± 8%, mean ± SD) (Figure 4b, c) (statistical significances shown in Table 2). This pattern was also seen in 3-week-old mice (Materials and methods, Figure 4—figure supplement 1).
+
+**Table 2.**
+ Post hoc t-tests to locate the source of significance between the means of the mixed supercomplexes in the five brain regions analyzed.Only p-values less than 0.05 are shown. There are high levels of significance between the means of the isocortex and all other regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Isocortex</th>
+      <th>Hippocampus</th>
+      <th>Olfactory bulb</th>
+      <th>Cerebellum</th>
+      <th>Subcortex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Isocortex</td>
+      <td></td>
+      <td>6.4 × 10−4</td>
+      <td>3.8 × 10−6</td>
+      <td>1.5 × 10−5</td>
+      <td>3.1 × 10−3</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td></td>
+      <td></td>
+      <td>3.8 × 10−3</td>
+      <td>1.0 × 10−2</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>Olfactory bulb</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N.S.</td>
+      <td>9.3 × 10−3</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>Subcortex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The correlation between the percentage of PSD95 proteins contained in old, new, and mixed supercomplexes in each brain region was compared with the previously published half-life of PSD95 in the same regions (Materials and methods, Figure 4—figure supplement 2; Bulovaite et al., 2022). Although there is limited correlation between the percentage of PSD95 proteins contained in old or new supercomplexes and the half-lives of PSD95 puncta in each region, there is a statistically significant correlation for mixed supercomplexes, with a Pearson’s correlation test value of R = 0.95 at a significance level of p = 0.01.
 
@@ -82,7 +248,7 @@ PSD95 is one of the most abundant synaptic proteins and is localized beneath the
 
 The maintenance of synaptic structure at the molecular level is necessary to maintain physiological stability of brain circuits. Brainwide mapping of the spatial distribution of PSD95-expressing synapses across the lifespan shows that between 3 and 9 months of age the remarkable synapse diversity and its organization into the synaptome architecture is very stable (Cizeron et al., 2020). However, when we measured the lifetime of PSD95 during this age window, we found that the vast majority of PSD95 is replaced every few weeks (Bulovaite et al., 2022). Thus, the synaptome architecture, which is comprised of molecularly diverse synapses, is stable despite its constituent proteins being replaced. Our present findings offer an explanation for how this stability can be maintained: the protein supercomplexes which are the building blocks of the synaptome architecture are not removed and replaced in toto, but are maintained by the sequential replacement of constituents including core scaffolding proteins.
 
-## Memory maintenance by sequential subunit replacement and protein lifetime
+### Memory maintenance by sequential subunit replacement and protein lifetime
 
 In the synaptome theory of behavior (Grant, 2018; Zhu et al., 2018), representations, memories, and behavioral programs are encoded in the synaptome architecture, and thus its stability is required to maintain these functional outputs. The stability conferred on the synaptome architecture by the sequential replacement of subunits in supercomplexes offers a stability mechanism. However, it is also necessary to have plasticity to learn new things and to forget unnecessary information. We propose that synapse diversity resolves this dilemma: there are some synapses that are very stable, and others that are less stable and more plastic. Our present findings indicate that the most stable synapses are those with long-protein lifetime in the cortex, and that these synapses undergo slow replacement of their supercomplex subunits. The processes of subunit replacement and protein turnover are synergistic mechanisms that produce stability of supramolecular entities, which together with synapse diversity can result in synapses with a range of memory durations and plasticity potential.
 
@@ -92,7 +258,7 @@ It is interesting to speculate how the exchange of PSD95 subunits could lead to 
 
 ## Materials and methods
 
-## Preparation of mouse brain homogenates
+### Preparation of mouse brain homogenates
 
 Homogenates were prepared from dissected brains or whole mouse forebrains, as described previously (Frank et al., 2016). Deoxycholate (DOC) extraction buffer (1% sodium deoxycholate, 50 mM tris(hydroxymethyl)aminomethane (tris) pH 9.0, 50 mM sodium fluoride, 20 µM zinc chloride, 1 mM sodium ortho-vanadate, 2 mM 4-(2-aminoethyl)-benzene-sulfonyl fluoride, and 1 Complete Protease Inhibitor Cocktail tablet (Roche, Germany) per 50 ml) was prepared and stored on ice prior to homogenization.
 
@@ -100,31 +266,31 @@ For whole brain homogenization, each forebrain was added to 5 ml DOC buffer and 
 
 For dissected brain homogenization, each dissected brain region was added to 0.6 ml DOC buffer. Homogenization and centrifugation were performed as above for whole brain specimens, except that pellet pestles (Fisher Scientific) were used instead of a Teflon homogenizer to homogenize the tissue.
 
-## Preparation of synaptosome fractions
+### Preparation of synaptosome fractions
 
 Adult (5-month-old) homozygous PSD95-HaloTag mice were injected with HaloTag ligand conjugated with SiR as described previously (Bulovaite et al., 2022). Seven days after injection, the mice were sacrificed with cervical dislocation and the forebrain was dissected, briefly rinsed with ice-cold phosphate-buffered saline (PBS), frozen with liquid nitrogen, and stored at −80°C before use. For synaptosome preparation, homogenization of tissue was performed by 12 strokes with Teflon-glass homogenizer in Homogenization buffer (0.32 M sucrose, 1 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) pH 7.4, and Complete EDTA-free Protease Inhibitor Cocktail (Merck)). Brain homogenate was centrifuged at 1400 × g for 10 min at 4°C to obtain the pellet and the supernatant fraction. The pellet fraction was resuspended in Homogenization buffer with three strokes of the homogenizer and centrifuged at 700 × g for 10 min at 4°C. The supernatant of the first and second centrifugation was pooled as an S1 fraction and subjected to centrifugation at 14,000 × g for 10 min at 4°C. The resulting pellet was resuspended with Homogenization buffer (P2 fraction) and centrifuged in a sucrose density gradient (0.85/1.0/1.2 M) for 2 hr at 82,500 × g. The fraction between 1.0 and 1.2 M was collected and used as synaptosome.
 
-## Dissection of mouse brain regions
+### Dissection of mouse brain regions
 
 Mice were culled by cervical dislocation and decapitated. The brains were removed from the skull and quickly washed with ice-cold PBS. Brains were dissected on ice, on a plastic plate covered with 3 MM filter paper soaked in ice-cold PBS. The cerebellum and olfactory bulbs were removed first, then the hippocampus and cortex were isolated from the rest of the brain. Brain samples were snap frozen in liquid nitrogen and stored at −80°C.
 
-## Protein turnover measurements
+### Protein turnover measurements
 
 For the protein turnover experiments, homozygous PSD95HaloTag/HaloTag knock-in mice were injected with 200 µl 1.5 mM SiR-Halo ligand diluted in saline and Pluronic F-127 (20% in dimethyl sulfoxide (DMSO)). As a control, some injected mice were culled 6 hr post injection to provide a 0 day time point with maximum saturation. The remainder of the mice were culled 7 days post injection. Their brains were extracted and prepared as forebrain or region-specific homogenates as described above. Prior to imaging, the turnover homogenates were incubated with 10 µM AF488-Halo ligand in a 1:1 volumetric ratio for 1 hr at 4°C.
 
-## TIRF microscopy
+### TIRF microscopy
 
 All diffraction-limited and PALM experiments were conducted on a home-built TIRF microscope described previously (de Moliner et al., 2023). Briefly, collimated laser light at 405 nm (Cobolt MLD 405-250 Diode Laser System, Cobalt, Sweden), 488 nm (Cobolt Fandango-300 DPSS Laser System, Cobalt, Sweden), 561 nm (Cobolt DPL561-100 DPSS Laser System, Cobalt, Sweden), and 638 nm (Cobolt MLD Series 638-140 Diode Laser System, Cobolt AB, Solna, Sweden) was aligned and directed parallel to the optical axis at the edge of a 1.49 NA TIRF objective (CFI Apochromat TIRF 60XC Oil), mounted on an inverted Nikon TI2 microscope. The microscope was fitted with a perfect focus system to auto-correct the z-stage drift during imaging. Fluorescence collected by the same objective was separated from the returning TIR beam by a dichroic mirror Di01-R405/488/561/635 (Semrock, Rochester, NY, USA), and was passed through appropriate filters (488 nm: BLP01-488R-25, FF01-525/30-25; 561 nm: LP02-568RS, FF01-587/35; 638 nm: FF01-432/515/595/730-25, LP02-647RU-25, Semrock, Rochester, NY, USA). Fluorescence was then passed through a 2.5× beam expander and recorded on an EMCCD camera (Delta Evolve 512, Photometrics) operating in frame transfer mode (EMGain = 11.5 e−/ADU and 250 ADU/photon). Each pixel was 103 nm in length. Images were recorded with an exposure time of 50 ms. The microscope was automated using the open-source microscopy platform Micromanager. Borosilicate glass coverslips (20 × 20 mm, VWR International) were cleaned using an Ar plasma cleaner (Zepto, Diener) for 30 min to remove any fluorescent residues. Frame-Seal slide chambers (9 × 9 mm2, Bio-Rad) were affixed to the glass to create a well in which samples (100 µl) were added. All samples in the wells were washed three times with PBS prior to imaging.
 
 For diffraction-limited photobleaching analysis of eGFP, the neat homogenate was diluted 1:100 in PBS and irradiated and imaged with 488 nm (68 W cm−2, 25 s), ensuring all molecules were photobleached. For diffraction-limited photobleaching analysis of SiR and AF488, whole forebrain homogenate and DOC-treated synaptosomes were diluted 1:100 in PBS. Homogenates from dissected brain regions were diluted 1:1000 to 1:10,000 in PBS. The samples were first irradiated and imaged with 638 nm light (850 W cm−2, 25 s), followed by 488 nm light (110 W cm−2, 25 s), ensuring all molecules were photobleached. For PALM imaging, the samples were diluted 1:100 in PBS and illuminated with 15 cycles of 405 nm (75 W cm−2, 1 s) and 561 nm (1500 W cm−2, 10 s) irradiation until all molecules were photobleached. In preparation for imaging, samples were incubated on the glass surface for 30 s prior to washing three times with 0.02 µm filtered PBS.
 
-## Coincidence analysis
+### Coincidence analysis
 
 Coincidence analysis was carried out using a custom-written MATLAB script. Initially, all spots in the diffraction-limited images were detected using the Find Maxima function in ImageJ. The prominences used varied depending upon the fluorophores and the power of the lasers, but generally were ~500–1000. The locations of all spots in both channels were loaded into MATLAB. The distances between the nth spot in the first channel and all spots in the second channel were calculated. Any spots with a separation distance less than the channel offset parameter (2 pixels in this work) were classed as being ‘coincident’. Finally, the number of spots in the first channel, the number of spots in the second channel, and the number of coincident spots were output by the script.
 
 All scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2023b.
 
-## Photobleaching analysis
+### Photobleaching analysis
 
 Photobleaching data were collected using the TIRF microscope described above, and analyzed using a published approach (Chappard et al., 2023; Choi et al., 2022). The intensity of the emitted fluorescence from all molecules was tracked over a period of 25 s. The intensity traces from each molecule were extracted by finding spots in the first frame of the image stack using the ImageJ Find Maxima function. The intensity at each spot location was then measured in all frames of the stack using a custom-written ImageJ macro. Chung–Kennedy filtering was performed on the resulting intensity traces using a custom-written MATLAB script, with a shuttling window size of 12. The Chung–Kennedy filter (Chung and Kennedy, 1991) shuttles two windows along the dataset either side of each data point. The output of the Chung–Kennedy filter is a weighted average of the mean of the two windows. The weighting shifts the output value toward the mean of the window with the lowest variance such that noise is reduced, but discontinuities in the data do not become blurred during the filtering process.
 
@@ -132,7 +298,7 @@ To detect photobleaching steps in the filtered traces, an approximate differenti
 
 All scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2022.
 
-## PALM analysis
+### PALM analysis
 
 The data were preliminarily analyzed using the Peak Fit function of the GDSC SMLM ImageJ plugin to output super-resolved localizations of the blinking fluorophores. A signal strength threshold of 20 was used, along with a precision threshold of 40 nm. Following this, the drift was corrected for using the Drift Calculator function in the GDSC SMLM ImageJ plugin. Once the localizations were extracted, a custom-written MATLAB clustering script was used. The clustering script sorted all localizations by precision from low precision to high precision. To correct for multiple blinks emanating from the same fluorophore, the script consolidated all localizations within the precision of another localization into one object. The distances between all objects were then calculated. Objects separated by less than 160 nm were grouped into clusters. The number of objects in each cluster was counted. Clusters containing one object were defined as ‘monomeric’, clusters containing two objects were defined as ‘dimeric’, etc. Information pertaining to the clusters (number of objects, x–y position of objects, average precision) was output as a text file.
 
@@ -140,7 +306,7 @@ Class averaging was performed on the class of clusters containing two objects by
 
 All scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2023a.
 
-## MINFLUX
+### MINFLUX
 
 MINFLUX imaging was conducted on an Abberior 3D-MINFLUX microscope (Abberior Instruments, Göttingen, Germany) equipped with a 100× oil immersion objective lens (UPL SAPO100XO/1.4, Olympus, Tokyo, Japan). MINFLUX imaging of Alexa 647 was performed using a 642-nm CW excitation laser at 22.6 µW/cm2 in the first MINLUX iteration. Laser powers were measured at the position of the objective lens back focal plane using a Thorlabs PM100D power meter equipped with a S120C sensor head. Fluorescence signal from Alexa 647 was detected using two avalanche photodiodes (SPCM-AQRH-13, Excelitas Technologies, Mississauga, Canada) with a detection range of 650–685 nm for the first detector and 685–760 nm for the second detector channel (detected photons were summed). The pinhole was set to a size corresponding to 0.78 airy units for all imaging experiments. The microscope was operated by Abberior Imspector software (version 16.3.13924-m2112). The build-in stabilization system was used to minimize drift of the sample for the duration of the measurement. Therefore, scattering from 200 nm gold nanoparticles (Nanopartz, Cat# A11-200-CIT-DIH-1-10, USA) which were deposited on the coverslip surface was used as a positional reference for the active sample stabilization.
 

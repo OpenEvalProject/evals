@@ -40,7 +40,7 @@
 
 ## Abstract
 
-Microsatellite expansions of CCTG repeats in the cellular nucleic acid-binding protein ( CNBP ) gene leads to accumulation of toxic RNA and have been associated with myotonic dystrophy type 2 (DM2). However, it is still unclear whether the dystrophic phenotype is also linked to CNBP decrease, a conserved CCHC-type zinc finger RNA-binding protein that regulates translation and is required for mammalian development. Here, we show that depletion of Drosophila CNBP in muscles causes ageing-dependent locomotor defects that are correlated with impaired polyamine metabolism. We demonstrate that the levels of ornithine decarboxylase (ODC) and polyamines are significantly reduced upon dCNBP depletion. Of note, we show a reduction of the CNBP-polyamine axis in muscles from DM2 patients. Mechanistically, we provide evidence that dCNBP controls polyamine metabolism through binding dOdc mRNA and regulating its translation. Remarkably, the locomotor defect of dCNBP-deficient flies is rescued by either polyamine supplementation or dOdc1 overexpression. We suggest that this dCNBP function is evolutionarily conserved in vertebrates with relevant implications for CNBP-related pathophysiological conditions.
+Microsatellite expansions of CCTG repeats in the cellular nucleic acid-binding protein (CNBP) gene leads to accumulation of toxic RNA and have been associated with myotonic dystrophy type 2 (DM2). However, it is still unclear whether the dystrophic phenotype is also linked to CNBP decrease, a conserved CCHC-type zinc finger RNA-binding protein that regulates translation and is required for mammalian development. Here, we show that depletion of Drosophila CNBP in muscles causes ageing-dependent locomotor defects that are correlated with impaired polyamine metabolism. We demonstrate that the levels of ornithine decarboxylase (ODC) and polyamines are significantly reduced upon dCNBP depletion. Of note, we show a reduction of the CNBP-polyamine axis in muscles from DM2 patients. Mechanistically, we provide evidence that dCNBP controls polyamine metabolism through binding dOdc mRNA and regulating its translation. Remarkably, the locomotor defect of dCNBP-deficient flies is rescued by either polyamine supplementation or dOdc1 overexpression. We suggest that this dCNBP function is evolutionarily conserved in vertebrates with relevant implications for CNBP-related pathophysiological conditions.
 
 ## Introduction
 
@@ -56,9 +56,130 @@ Given the conservation of CNBP primary structure and function between Drosophila
 
 ## Results
 
-## CNBP is essential for fly locomotion
+### CNBP is essential for fly locomotion
 
 To explore the role of CNBP, we conducted RNAi-mediated knockdown experiments of Drosophila dCNBP gene. As previously shown, the expression of two copies of the RNAi construct (2XUASdCNBPRNAi) under the control of ubiquitous promoters resulted in embryonic or larval lethality (Antonucci et al., 2014). Thus, to address the in vivo function of dCNBP, we drove the expression of 2XUASdCNBPRNAi using tissue-specific GAL4 drivers (Table 1). We did not observe any effect on viability or fly locomotion activity when dCNBP was silenced in neurons, motor neurons, or glia (Table 1). The efficacy of dCNBP knockdown with neuronal drivers was extremely efficient, as documented by dCNBP immunoblots from larval and adult brain lysates (Figure 1—figure supplement 1). Conversely, the expression of 2XUASdCNBPRNAi driven by the multi-tissue 69B-GAL4 or the muscle-specific myocyte enhancer factor 2 (Mef2)-GAL4 drivers caused early lethality at 29°C (Table 1). At 25°C or 18°C, lethality was reduced, allowing phenotypic analysis of adult ‘escapers’. Adult flies carrying 2XUAS-dCNBPRNAi and either Mef2-GAL4 or 69B-GAL4 showed strong locomotion defects, as denoted by the strong reduction of speed (0.01 versus 0.09 cm/s) and distance covered in 1 min (0.67 versus 8 cm) observed in silenced flies compared to controls (Figure 1A; Figure 1—video 1, 2, 3; Gulyás et al., 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig1-v1.jpg)
+
+**Figure 1.:** (A) Locomotion activity in escapers adult flies expressing (B) UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi) driven by the myocyte enhancer factor 2 (Mef2)-GAL4 at 25°C, compared to control flies (no UAS). Fly movements were recorded (Figure 1—video 1, 2, 3) and then analyzed by the animal tracker ImageJ plugin, to quantify both fly speed (average, cm/s) and distance covered in 1 min (Gulyás et al., 2016). (C) Climbing activity defects in adult flies expressing 2XdCNBPRNAi driven by the mhc-GAL4 at 29°C. The locomotion activity was measured by the Drosophila activity monitoring (DAM) system, as the number of climbing events in 30 min ≥ 80 males tested for each genotype. On the left, climbing performance of control flies (no UAS) or dCNBP-depleted flies (2XdCNBPRNAi) 7 days after eclosion represented as the average of climbing events (CEs) in 30 min (error bars represent SEM; ****p<0.0001, Mann-Whitney-Wilcoxon test). On the right, quantitative grouping of climbing performances in four different classes. Classes 1–20 (white area) and 20–50 (light gray area) CEs are highly represented in RNAi flies (2XdCNBPRNAi), while classes 50–100 CEs (dark gray area) are more frequent in control flies (no UAS). Only control flies have the ability to perform more than 100 CEs in 30 min (black area). Full data in Figure 1—source data 1. (D) Box plot representation of the distribution of peristaltic contraction rates performed in 1 min by control (no UAS) or UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi) third instar larvae under the control of either c179GAL4 or 24BGAL4 driver at 25°C (****p<0.0001, t-test); ≥10 larvae tested for each genotype in at least three independent experiments. Full data in Figure 1—source data 1. (E) Box plot representation of the distribution of peristaltic contraction rates performed by control (wild-type [WT]) or cnbpk mutant second instar larvae in 1 min; ≥30 larvae tested for each genotype (p < 0.0001, Mann-Whitney-Wilcoxon test). In (C and D) the line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range. Full data in Figure 1—source data 1. (F) Immunoblot showing the levels of dCNBP in extract obtained from cnbpk mutant second instar or from WT control larvae with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Actin, loading control. A.U., arbitrary unit.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunoblot showing the levels of dCNBP in extract obtained from larval brains or adult heads of UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi) individuals, where the knockdown is driven by either the n-syb or the elav GAL4 drivers at 25°C, compared to control (no UAS). On the right a graph showing the corresponding band quantification, normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Tubulin, loading control. A.U., arbitrary unit.
+
+**Table 1.**
+ Effects of dCNBP silencing using different tissue-specific GAL4 drivers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Driver line</th>
+      <th>Expression pattern</th>
+      <th>2XdCNBPRNAi at 29°C</th>
+      <th>2XdCNBPRNAi at 25°C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tubulin-GAL4</td>
+      <td>Constitutive-ubiquitous</td>
+      <td>Embryonic lethal</td>
+      <td>Larval lethal (third instar)</td>
+    </tr>
+    <tr>
+      <td>actin-GAL4</td>
+      <td>Constitutive-ubiquitous</td>
+      <td>Embryonic lethal</td>
+      <td>Larval lethal (third instar)</td>
+    </tr>
+    <tr>
+      <td>elav-GAL4</td>
+      <td>Pan-neuronal</td>
+      <td>No locom. phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>nrv-GAL4</td>
+      <td>Pan-neuronal specific in CNS and PNS</td>
+      <td>No locom. phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>D42-GAL4</td>
+      <td>Motor neurons</td>
+      <td>No locom. phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>n-syb-GAL4</td>
+      <td>Pan-neuronal</td>
+      <td>No locom. phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>repo-GAL4</td>
+      <td>Glia</td>
+      <td>No locom. phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>69B-GAL4</td>
+      <td>Embryonic epiderm, CNS, and imaginal discs</td>
+      <td>Larval lethal (first instar)</td>
+      <td>Larval lethal. Escapers with locom. defects at 18°C</td>
+    </tr>
+    <tr>
+      <td>mhc-GAL4</td>
+      <td>Myosin heavy chain promoter</td>
+      <td>Reduced climbing activity</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>Mef2-GAL4</td>
+      <td>Somatic muscle cells, embryonic mesoderm (stages 10–17), embryonic cardioblast</td>
+      <td>Embryonic lethal</td>
+      <td>Semi-lethal (pupal stage) Escapers with locom. defects</td>
+    </tr>
+    <tr>
+      <td>c179-GAL4</td>
+      <td>Embryonic mesoderm and larval muscles</td>
+      <td>Reduced larval activity</td>
+      <td>Pupal lethal</td>
+    </tr>
+    <tr>
+      <td>how24B-GAL4</td>
+      <td>Embryonic mesoderm. Precursors of the somatic muscles, visceral muscles, and cardiac cells. Larval nuclei of muscle fibers.</td>
+      <td>Reduced larval activity</td>
+      <td>Pupal lethal</td>
+    </tr>
+    <tr>
+      <td>GMR-GAL4</td>
+      <td>Eye imaginal disc</td>
+      <td>Retinal degeneration</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>nub-GAL4</td>
+      <td>Wing imaginal disc</td>
+      <td>Wing size reduction and lost of patterning elements</td>
+      <td>Wing size reduction</td>
+    </tr>
+    <tr>
+      <td>5053 GAL4</td>
+      <td>Embryonic longitudinal visceral muscle founder cells</td>
+      <td>Vital and no adult locomotor phenotype</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>srmd710-GAL4</td>
+      <td>Embryonic and larval tendon cells. No expression in muscle or muscle precursors</td>
+      <td>Vital and no adult locomotor phenotype</td>
+      <td>NT</td>
+    </tr>
+  </tbody>
+</table>
 
 To study the effects of CNBP knockdown in differentiated muscle, we utilized an mhc-GAL4 driver, which induces the expression of transgenes later during muscle development, compared to Mef2-GAL4. Although these flies were viable, they showed defective locomotion, indicating that the integrity of dCNBP expression is required for locomotor activity also at later stages of muscle development. Wild-type flies usually display a strong negative geotactic response: when tapped to the bottom of a vial they rapidly run to the top. As they get older or manifest locomotion dysfunction, flies no longer climb to the top of the vial, but make short abortive climbs and fall back to the bottom. The climbing activity of mhcGAL4>2XUASdCNBPRNAi flies was measured using the Drosophila activity monitoring (DAM) system (TriKinetics Inc, Waltham, MA; see Materials and methods), which allows to quantify fly locomotion capabilities based on their negative geotactic response. As shown in Figure 1B, mhcGAL4>2XUASdCNBPRNAi flies exhibited a strong reduction (~50%) in the number of climbing events performed in 30 min compared to control flies.
 
@@ -70,11 +191,11 @@ To further confirm that locomotor defects are a specific consequence of dCNBP de
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig2-v1.jpg)
 
-**Figure 2.:** dCNBP depletion.dCNBP knockdown in embryonic mesoderm causes a significant reduction of larval peristaltic waves rescued by the expression of either dCNBP or hCNBP transgenes (25°C). (A) Box plot representation of the distribution of peristaltic contraction rates performed by third instar larvae of the following genotypes: only c179GAL4 driver (no UAS), c179GAL4>UAS-dCNBP (2XRNAi-16283; UAS-dCNBPRNAi-16284dCNBP), RNAic179GAL4>2XdCNBP (a RNAi + UAS-dCNBP-3HA-resdCNBP-3HA transgene resistant to 2XUASdCNBP-induced RNAi), c179GAL4>2XdCNBP + UAS-RNAihCNBP-FLAG. The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (****p<0.0001, Kruskal-Wallis with post hoc Dunn’s test); ≥10 larvae tested for each genotype in at least three independent experiments. Full data in Figure 2—source data 1. (B) The expression levels of both UAS-dCNBP-3HA-res and UAS-hCNBP-FLAG were analyzed by immunoblotting using antibodies against either the HA or the FLAG tag, compared to controls (no UAS). Bands were quantified by IMAGE J 1.50i and normalized on the loading control (quantification data in source data for western blot [WB] quantification). Tubulin, loading control. A.U., arbitrary unit.Figure 2—source data 1.Figure 2A.
+**Figure 2.:** dCNBP knockdown in embryonic mesoderm causes a significant reduction of larval peristaltic waves rescued by the expression of either dCNBP or hCNBP transgenes (25°C). (A) Box plot representation of the distribution of peristaltic contraction rates performed by third instar larvae of the following genotypes: only c179GAL4 driver (no UAS), c179GAL4>UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi), c179GAL4>2XdCNBPRNAi + UAS-dCNBP-3HA-res (a dCNBP-3HA transgene resistant to 2XUASdCNBP-induced RNAi), c179GAL4>2XdCNBPRNAi + UAS-hCNBP-FLAG. The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (****p<0.0001, Kruskal-Wallis with post hoc Dunn’s test); ≥10 larvae tested for each genotype in at least three independent experiments. Full data in Figure 2—source data 1. (B) The expression levels of both UAS-dCNBP-3HA-res and UAS-hCNBP-FLAG were analyzed by immunoblotting using antibodies against either the HA or the FLAG tag, compared to controls (no UAS). Bands were quantified by IMAGE J 1.50i and normalized on the loading control (quantification data in source data for western blot [WB] quantification). Tubulin, loading control. A.U., arbitrary unit.
 
 We next investigated whether the human CNBP (hCNBP) orthologue could functionally rescue the prominent dCNBP phenotype, by expressing a UAS hCNBP-FLAG construct in the Drosophila muscle by using the c179-GAL4 driver. As shown in Figure 2A, hCNBP reversed the locomotion defects of the dCNBPRNAi-depleted larvae (Figure 2A), indicating that hCNBP locomotor function is evolutionarily conserved from fly to human. The expression level of both transgenes were verified and quantified by western blot (Figure 2B).
 
-## The ODC-polyamine pathway is involved in CNBP loss-of-function locomotor phenotype and is downregulated in muscles from DM2 patients
+### The ODC-polyamine pathway is involved in CNBP loss-of-function locomotor phenotype and is downregulated in muscles from DM2 patients
 
 Having found that the absence of dCNBP in muscle tissues causes significant locomotor defects, we next sought to identify the CNBP-regulated mechanisms responsible for the observed phenotype.
 
@@ -82,27 +203,91 @@ Since we had previously found that mammalian CNBP regulates polyamine metabolism
 
 We performed western blotting analysis of dCNBP-deficient larvae and observed that the levels of Odc are significantly reduced in larvae lacking dCNBP (in both dCNBP RNAi-expressing and cnbpk mutant larvae, Figure 3A and Figure 3—figure supplement 1, respectively), compared to wild-type controls. Accordingly, the content of putrescine, the downstream product of Odc enzymatic activity, was strongly reduced (Figure 3B and Figure 3—figure supplement 1), confirming that dCNBP also regulates Odc and polyamine levels in flies.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig3-v1.jpg)
+
+**Figure 3.:** Levels of both Odc and putrescine are significantly reduced in dCNBP-depleted larvae compared to wild-type controls. (A) Immunoblot showing the levels of both dCNBP and dOdc in extract obtained from tubGAL4>2XdCNBPRNAi third instar larvae compared to control (no UAS), with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Actin, loading control. A.U., arbitrary unit. (B) Columns represent the fold difference of putrescine content in third instar larvae bearing the c179GAL4 driver alone (no UAS) or in combination with double copy dCNBP RNAi-expressing larvae (UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284, named 2XdCNBPRNAi). Error bars represent SEM; ***p>0.001, ** p>0.002, in unpaired t-test. A pool of 10 larvae has been tested for each genotype in three independent experiments. Full data in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Levels ofOdc protein and polyamine are significantly reduced in dCNBP mutant larvae compared to wild-type (WT) controls. (A) Immunoblot showing the levels of both dCNBP and dOdc in extract obtained from WT and cnbpk mutant second instar larvae, with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Actin, loading control. (B) Columns represent the fold difference of putrescine content in second instar larvae of cnbpk mutant compared to controls (WT). Error bars represent SEM; **p>0.002, t-test. A pool of 10 larvae has been tested for each genotype in three independent experiments. Full data in Figure 3—source data 1.
+
 To determine whether the locomotion defect caused by CNBP deficiency is linked to this mechanism, we analyzed the consequences of dOdc loss-of-function. We achieved an RNAi-mediated repression of both fly Odc genes, singularly or together (dOdc1 and dOdc2; Rom and Kahana, 1993), by crossing RNAi lines (VDRC 30039 and 104597) to the c179GAL4 driver (Figure 4A). Odc depletion caused adult lethality while in larvae displayed a significant impairment of peristaltic waves linked to larval locomotion activity and reduction of putrescine levels (Figure 4—figure supplement 1). Interestingly, putrescine reduction was significant in both dOdc1 and dOdc2 single or double knockdown, but not additive. This latter observation was likely attributable to the activation of compensatory mechanisms, such as the increased uptake of extracellular polyamines through specific transporters and/or intracellular polyamine interconversion (Casero et al., 2018), which prevent the total depletion of intracellular polyamines even in case of complete ODC blockade.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig4-v1.jpg)
+
+**Figure 4.:** Box plot representation of the distribution of peristaltic contraction rates performed by third instar larvae of the reported genotypes in 1 min. (A) c179GAL4>no UAS, UAS-Odc1RNAi-30039, UAS-Odc2RNAi-10459, UAS-Odc2RNAi-10459; UAS-Odc1RNAi-30039, or UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284. In the graph legend UAS in transgenic RNAi lines is omitted for simplicity. (B) Controls (wild type) and dOdc1MI10996 mutant larvae. (C) Controls fed with standard fly food (wild type) or after DFMO treatment (5 mM/day; wild type + DFMO). The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (**p<0.001; ****p<0.0001; ns, not significant, Kruskal-Wallis with post hoc Dunn’s test for multiple comparison or Mann-Whitney-Wilcoxon test for); ≥10 larvae tested for each genotype in at least three independent experiments. All full data in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Columns represent the fold difference of putrescine content in third instar larvae of the following genotypes: only c179GAL4 driver (no UAS), c179GAL4>UAS-dOdc1RNAi-30039 (dOdc1RNAi), c179GAL4>UAS-dOdc2RNAi-10459 (dOdc2RNAi), c179GAL4>UAS-dOdc2RNAi-10459; UAS-dOdc1RNAi-30039 (dOdc1+2RNAi) (error bars represent SEM; ***p>0.001 with respect to the no UAS control, t-test). A pool of 10 larvae has been tested for each genotype in at least three independent experiments. Full data in Figure 4—source data 1.
 
 Similarly, dOdc1MI10996 (Bloomington #56103) mutant flies displayed significant locomotor defects associated with polyamine decrease (Figure 4B), and feeding of wild-type flies with DFMO, an irreversible ODC inhibitor, caused a significant reduction of larval motility (Figure 4C) demonstrating that genetic or pharmacological inhibition of dOdc strongly phenocopies dCNBP downregulation effects.
 
 To determine if the ODC-polyamine axis is impaired also in the human disease, we studied muscle biopsies obtained from DM2 patients compared to those from healthy individuals. Remarkably, immunoblot analysis showed that the levels of both CNBP and ODC were reduced in DM2 patients compared to controls (Figure 5A). Consistently, we found that the content of the ODC metabolite putrescine was also significantly reduced in DM2 patients, thus indicating that polyamine synthesis might indeed be downregulated in these patients (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig5-v1.jpg)
+
+**Figure 5.:** Cellular nucleic acid-binding protein (CNBP) and ornithine decarboxylase (ODC) content correlates with polyamine levels in muscle cells from DM2 patients. (A) Immunoblot showing the levels of both human CNBP (hCNBP) and human ODC (hODC) proteins in three DM2 or control muscle cells, with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Vinculin, loading control. A.U., arbitrary unit. (B) Columns represent putrescine content in muscle cells obtained from four DM2 patients (CTRL) or from four healthy individuals (DM2), expressed in ng/mg of tissue. Error bars represent SEM; **p>0.001, in unpaired t-test. Full data in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Immunoblot showing the levels of dCNBP in larval extract obtained from controls (no UAS) or UAS-(CCTG)200, UAS-(CCTG)475, UAS-(CCTG)525 driven by the c179GAL4 driver, with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Tubulin, loading control. A.U., arbitrary unit. A pool of 10 larvae has been tested for each genotype in at least two independent experiments.
+
 In contrast, the levels of CNBP were not altered in a transgenic fly model of DM2 that ectopically expresses pure, uninterrupted CCUG-repeat expansions ranging from 200 to 575 repeats in length (BDSC 79583-79584-79585) and recapitulates some key features of human DM2 including RNA repeat-induced toxicity, ribonuclear foci formation, and changes in alternative splicing (Yu et al., 2015; Figure 5—figure supplement 1). These results suggest that the observed CNBP downregulation in DM2 patients is not due to the toxic RNA accumulation, but is rather a consequence of a different mechanism, specifically related to the intronic alteration. Unfortunately, the limited amount of patient samples did not allow us to investigate the mechanism underlying this downregulation. Further studies with muscle samples from patients will be required to elucidate this issue.
 
-## dCNBP regulates dOdc translation
+### dCNBP regulates dOdc translation
 
 We next investigated the molecular mechanisms through which dCNBP controls dOdc expression and consequently polyamine metabolism.
 
 We did not observe any significant reduction of dOdc mRNA levels in dCNBP RNAi-depleted muscles (Figure 6A), indicating that CNBP does not regulate dOdc mRNA synthesis or stability but rather its protein levels. In this regard, since our previous data in mammalian cells indicated that CNBP regulates IRES-dependent translation of ODC (D'Amico et al., 2015), we wondered if this mechanism might also be operating in flies. To this end we cloned the 5’UTR of dOdc1 into a bicistronic renilla-luciferase reporter vector, which allows detection of IRES activity and tested the ability of dCNBP to induce dOdc1 IRES-mediated translation. However, ectopic expression of dCNBP did not result in any significant change of reporter activity in mammalian cells, while it significantly induced the activity of a bicistronic vector containing the 5’UTR of human ODC (hODC), thus excluding that dCNBP could regulate dOdc translation through an IRES-mediated mechanism (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig6-v1.jpg)
+
+**Figure 6.:** (A) dOdc1 mRNA levels (qPCR), normalized with the housekeeping RPL11 mRNA third instar larvae bearing c179GAL4 driver alone (no UAS) or in combination with UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi). ns, not significant in unpaired t-test. Dots correspond to four independent biological replicates; bars indicate the mean and SEM. (B) Cellular nucleic acid-binding protein (CNBP) binds dOdc1 mRNA. qRT-PCR analysis on mRNAs immunoprecipitated by anti-dCNBP antibody or control IgG antisera in S2 cells extracts (left graph), or in dCNBP-depleted (2XdCNBPRNAi) or not (no UAS) larval extracts (right graph). The results are indicated as fold difference, relative to IgG. Error bars represent SEM of three independent experiments; *p < 0.05, in t-test. The presence of dCNBP in c179GAL4>2XUASdCNBPRNAi or control (no UAS) larval carcasses was analyzed by western blotting (right). Tubulin, loading control. (C) Representative polysome profiles (of at least three independent experiments) of dCNBP-deficient (dCNBPRNAi) or control (CTRL) S2 cells. Cytoplasmic lysates were fractionated on 15–50% sucrose gradients. (D) qPCR analysis of dOdc1 mRNA loaded in the different polysome fractions, GADPH was used to normalize the values. (*p < 0.05, t-test. Error bars represent SEM of experiments performed in quadruplicates and repeated at least three times.) The presence of dCNBP in interfered or not interfered S2 cells was analyzed by western blotting (right). Tubulin, loading control. All full data in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic representation of the bicistronic CMV-renilla-TAA/dOdc1-IRES-firefly luciferase (dOdc1-luc) vector (top). The renilla ORF is translated via conventional cap-dependent mechanism, whereas translation of the luciferase ORF is controlled by the dOdc1 5’UTR sequence. IRES activity of dOdc1-luc which is not significantly modulated by dCNBP overexpression compared to the empty vector (bottom). Columns represent the fold changes of luciferase activity, normalized to the renilla expression. Error bars represent SEM; ns: no significant with Student’s t-test, of three independent experiments. (B) Schematic representation of a bicistronic CMV-renilla-TAA/hODC-IRES-firefly luciferase (hODC-luc) vector (top). IRES activity of hODC-luc which is significantly modulated by both dCNBP or hCNBP overexpression, compared to the empty vector (bottom). Columns represent the fold changes of luciferase activity, normalized to the renilla expression. Error bars represent SEM; p<0.05 with Student’s t-test, of three independent experiments. All full data in Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The dOdc1 transcript (FBtr0088863) was uploaded to the RBPmap web server for mapping binding sites. As criteria Drosophila genome, UGGAGNW consensus motif and high stringency level were used (Paz et al., 2014; http://rbpmap.technion.ac.il).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Quantification by IMAGE J 1.50i of the levels of dCNBP in extracts (A) obtained from control larvae (no UAS) or from larvae where the UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 constructs (2XdCNBPRNAi) are driven by the c179GAL4 driver (from the immunoblot shown in Figure 6B); or in extracts (B) obtained from untreated S2 cells (CTRL) or from S2 cells CNBP-interfered (dCNBPRNAi; from the immunoblot shown in Figure 6D). A.U., arbitrary unit. Quantification data in source data for western blot [WB] quantification.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Effect of human CNBP (hCNBP) depletion on both dOdc protein expression and mRNA level in 293T human cells. (A) Immunoblot showing a direct correlation of hCNBP depletion with a strong reduction of dOdc protein levels, with the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification). Actin, loading control. A.U., arbitrary unit. (B) dOdc1 mRNA levels (qPCR), normalized with the GFP mRNA levels. Error bars represent SEM of three independent experiments; ns, not significant in unpaired t-test. Full data in Figure 6—source data 1.
+
 In a previous report it was shown that mammalian CNBP regulates translation of several target mRNAs via an association with G-rich recognition elements (RRE), thereby resolving their G4 stable structures and promoting translational elongation (Benhalevy et al., 2017). Interestingly, one of the targets identified in that study was the mRNA of ODC and our in silico analysis by RBPmap (Paz et al., 2014; http://rbpmap.technion.ac.il) predicted the presence of several UGGAGNW motifs (the most common RRE bound by hCNBP; Figure 6—figure supplement 2) in the Drosophila Odc1 coding sequence. Thus, we tested if dCNBP regulates translational efficiency of dOdc1 by binding its mature mRNA. To this end, we performed RNA immunoprecipitation (RIP) assay on S2 insect cell extracts and found that CNBP efficiently binds Odc mRNA (Figure 6B, left). In addition, dCNBP was efficiently associated with dOdc mRNA in control (no UAS) but not in CNBP-deficient larval muscles (Figure 6B, right). The RNAi efficiency was confirmed by western blotting (Figure 6B right and Figure 6—figure supplement 3A), demonstrating the specificity of the binding. Furthermore, in a heterologous system, after transfection of a vector expressing the dOdc1 CDS, but lacking its UTRs, Odc protein synthesis was downregulated by CNBP depletion, while the mRNA levels remained unchanged (Figure 6—figure supplement 4), thus supporting the hypothesis that dCNBP regulates dOdc mRNA translation by acting on its coding region.
 
 To determine whether dCNBP influences translation of dOdc mRNA, we performed a sucrose fractionation of cytoplasmic lysates obtained from S2 cells in which dCNBP mRNA was knocked down or from control cells (Figure 6C and D). RNA was extracted from each fraction and analyzed by qRT-PCR (Figure 6D). The RNAi efficiency was confirmed by western blotting (Figure 6D right and Figure 6—figure supplement 3B). In line with our assumption, in control lysates we found significant levels of dOdc mRNA in polysome fractions, the same where dCNBP was detected and co-purified with the ribosomal protein RpS6 (Antonucci et al., 2014), indicating that Odc is actively translated. In contrast, the levels of dOdc mRNA were strongly reduced in the polysome fraction of dCNBP-deficient S2 cells, while they were significantly increased in the non-translating fractions (60–40S and free mRNA), demonstrating that dCNBP is required for dOdc mRNA loading into polysomes and therefore for its active translation (Figure 6C and D).
 
-## Restoration of polyamine metabolism in dCNBP-deficient flies rescues locomotor phenotypes
+### Restoration of polyamine metabolism in dCNBP-deficient flies rescues locomotor phenotypes
 
 To verify that the above-described mechanism leading to alteration of polyamine metabolism is truly responsible for the observed locomotor phenotype, we performed rescue experiments. We first fed dCNBP mutant or RNAi-expressing flies with putrescine dissolved into their food. As shown in Figure 7A and B, RNAi-expressing or dCNBP mutant larvae substantially recovered the locomotor defects after putrescine administration and, as expected, putrescine content significantly increased compared to controls reared on standard food (Figure 7—figure supplement 1A). Similar data were obtained with spermidine (Figure 7—figure supplement 1B). Then, we used the Mef2-GAL4 or the c179-GAL4 lines to drive simultaneous expression of UAS-dOdc1 (Gupta et al., 2013) and 2XUAS-dCNBPRNAi, and found that dOdc1 reconstitution significantly ameliorates the locomotor phenotype in dCNBP-depleted larvae (Figure 7C). The levels of the CNBP in these flies were very low and comparable to those observed in lines lacking only dCNBP (Figure 7—figure supplement 2 and Figure 3A). This indicates that the rescue of the locomotor defect can only be attributed to overexpression of dOdc1, and not to a potential dilution of the GAL4 driver.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) Rescue of locomotor phenotype in both dCNBP-depleted larvae (A) and dCNBP mutant larvae (B) by 1 mM putrescine feeding at 29°C. Box plot representation of the distribution of peristaltic contraction rates performed by the following genotypes: (A) c179GAL4 driving no UAS or UAS-dCNBPRNAi-16283; UAS-dCNBPRNAi-16284 (2XdCNBPRNAi) with (1 mM put) or without (no put) putrescine. Note how putrescine feeding of interfered individuals results also in a higher stage of pupal development with respect to individuals not treated (photo in A). (B) Control (wild-type) or cnbpk larvae with (1 mM put) or without (no put) putrescine. (****p<0.0001; ns, not significant, Kruskal-Wallis with post hoc Dunn’s test). (C) Rescue of locomotor defects in dCNBP-depleted larvae by dOdc1 overexpression under the control of either Mef2 or c179GAL4 driver. Box plot representation of the distribution of peristaltic contraction rates performed by the following genotypes: Mef2GAL4 or c179GAL4 (no UAS), Mef2GAL4 or c179GAL4>2XdCNBPRNAi, Mef2GAL4 or c179GAL4>2XdCNBPRNAi + dOdc1 (UASdCNBPRNAi-16283; Mef2GAL4/UASdCNBPRNAi-16284; UASdOdc1/TM6B or UASdCNBPRNAi-16283; c179GAL4/UASdCNBPRNAi-16284; UAS dOdc1/+). (A–B–C) The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (****p<0.0001; ns, not significant, Kruskal-Wallis with post hoc Dunn’s test); ≥10 larvae tested for each genotype in at least three independent experiments. (D) Mutants for dystrophin (Dysdet-1) present larval locomotor abnormalities that cannot be rescued by feeding larvae with 1 mM putrescine. Box plot representation of the distribution of peristaltic contraction rates performed by Dysdel-1 mutant larvae fed with or without putrescine (+1 mM put) with respect to wild-type control. The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (ns, not significant, ****p<0.0001, Kruskal-Wallis with post hoc Dunn’s test); ≥10 larvae tested for each genotype in at least two independent experiments. All full data in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Columns represent the fold difference of putrescine content in dCNBP-depleted larvae grown in absence or presence of 1 mM putrescine. c179GAL4 without putrescine (no UAS), c179GAL4>UASdCNBPRNAi-16283; UASdCNBPRNAi-16284 (2XdCNBPRNAi) with (1 mM put) or without putrescine. **p<0.01, ***p<0.001 with t-test. (B) Box plot representation of the distribution of peristaltic contraction rates performed by third instar larvae of c179GAL4 (no UAS) or by c179GAL4>UASdCNBPRNAi-16283; UASdCNBPRNAi-16284 (2XdCNBPRNAi) with (1 mM spd) or without (no spd) spermidine. The line inside the box indicates the median for each genotype and box boundaries represent the first and third quartiles; whiskers are min and max in the 1.5 interquartile range (****p<0.0001, ordinary one-way ANOVA post hoc Tukey’s test); ≥10 larvae tested for each genotype in at least two independent experiments. Error bars represent SEM. All full data in Figure 7—source data 1.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Immunoblot showing the levels of dCNBP in control larvae (no UAS), compared to larvae interfered for dCNBP (UASdCNBPRNAi-16283; UASdCNBPRNAi-16284; named 2XdCNBPRNAi), or overexpressing dOdc1 (UAS-dOdc1), or to larvae overexpressing dOdc1 and simultaneously interfered for dCNBP (UASdCNBPRNAi-16283; Mef2-GAL4/UASdCNBPRNAi-16284; UAS Odc1/TM6B; named 2XdCNBPRNAi+dOdc1) under the control of the Mef2-GAL4 driver. On the right, the corresponding band quantification normalized on the loading control (IMAGE J 1.50i; quantification data in source data for western blot [WB] quantification) is shown. Tubulin, loading control. A.U., arbitrary unit.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** mhcGAL4 (no UAS) or mhcGAL4 > UASdCNBPRNAi-16283; UASdCNBPRNAi-16284 (2XUASdCNBPRNAi) reared at 29°C, male flies were assayed for negative geotaxis measured by the Drosophila activity monitoring (DAM) system at the indicated ages (error bars represent SEM; ***p<0.001; ****p<0.0001, Kruskal-Wallis with post hoc Dunn’s test); ≥15 males tested for each genotype in at least two independent experiments. Full data in Figure 7—source data 1.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/69269/elife-69269-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** Muscle morphology and sarcomeric organization of the L2/L3 larval body wall muscles. Confocal images of larval muscles (segment A2; muscle 6/7) form wild-type (WT) controls, UASdCNBPRNAi-16283; UASdCNBPRNAi-16284 (2XdCNBPRNAi) driven by either how24BGAL4 or c179GAL4 as indicated (third instar larvae) or from cnbpk mutant (second instar larvae), stained with DAPI (green) and FITC phalloidin (red); ≥3 larvae have been tested for each genotype in at least two independent experiments.
 
 Of note, we showed that feeding with 1 mM putrescine mutants for dystrophin (Dysdet-1), a fly model of Duchenne muscle dystrophy (DMD), did not recover the Dys-dependent larval locomotor abnormalities (Figure 7D), indicating that the recovery of polyamine metabolism is specifically required for alleviating dCNBP loss-of-function locomotor defects.
 
@@ -144,7 +329,423 @@ In conclusion, we have identified an unprecedented mechanism whereby dCNBP contr
 
 ## Materials and methods
 
-## Drosophila strains and rearing conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>actin-GAL4</td>
+      <td>Bloomington</td>
+      <td>25374</td>
+      <td>y[1] w[*]; P{Act5C-GAL4-w}E1/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>tubulin-GAL4</td>
+      <td>Bloomington</td>
+      <td>5138</td>
+      <td>y[1] w[*]; P{w[+mC]=tubP-GAL4}LL7/TM3, Sb[1] Ser[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>elav-GAL4</td>
+      <td>Bloomington</td>
+      <td>77894</td>
+      <td>y[1] w[*] P{w[+mC]=elav(FRT.ewg)GAL4.eFeG}1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>nrv-GAL4</td>
+      <td>Bloomington</td>
+      <td>6799</td>
+      <td>w[*]; P{w[+mC]=nrv2-GAL4.S}8</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>D42-GAL4</td>
+      <td>Bloomington</td>
+      <td>8816</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}D42</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>n-syb-GAL4</td>
+      <td>Bloomington</td>
+      <td>51635</td>
+      <td>y[1] w[*]; P{w[+m*]=nSyb-GAL4.S}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>repo-GAL4</td>
+      <td>Bloomington</td>
+      <td>7415</td>
+      <td>w[1118]; P{w[+m*]=GAL4} repo/TM3, Sb[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>69B-GAL4</td>
+      <td>Bloomington</td>
+      <td>1744</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}69B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Mhc-GAL4</td>
+      <td>Bloomington</td>
+      <td>38464</td>
+      <td>; w[*]; P{w[+mC]=Mhc-RFP.F3-580}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Mef2-GAL4</td>
+      <td>Bloomington</td>
+      <td>26882</td>
+      <td>w[*]; Kr[If-1]/CyO, P{w[+mC]=GAL4-Mef2.R}2, P{w[+mC]=UAS-mCD8.mRFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>c179-GAL4</td>
+      <td>Bloomington</td>
+      <td>6450</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}c179</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>how24B-GAL4</td>
+      <td>Bloomington</td>
+      <td>1767</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}how[24B]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GMR-GAL4</td>
+      <td>Bloomington</td>
+      <td>9146</td>
+      <td>w[1118]; P{GMR-GAL4.w[-]}2/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>nub-GAL4</td>
+      <td>Bloomington</td>
+      <td>86108</td>
+      <td>w[*]; P{w[nub.PK]=nub-GAL4.K}2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>5053 GAL4</td>
+      <td>Bloomington</td>
+      <td>2702</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}tey[5053A]/TM6B, Tb[+]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>srmd710-GAL4</td>
+      <td>Bloomington</td>
+      <td>26663</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}sr[md710]/TM6B, Tb[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS dCNBPRNAi</td>
+      <td>VDRC</td>
+      <td>GD16283</td>
+      <td>CNBP long hairpin on chromosome X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS dCNBPRNAi</td>
+      <td>VDRC</td>
+      <td>GD16284</td>
+      <td>CNBP long hairpin on chromosome 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>2XUAS dCNBPRNAi</td>
+      <td>Antonucci et al., 2014</td>
+      <td>GD16283+ GD16284</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>dCNBP k</td>
+      <td>Kyoto</td>
+      <td>203535</td>
+      <td>y[1] w[67c23]; P{w[+mC]=GSV6}GS11716 / SM1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS dCNBP-HA RNAi resistant</td>
+      <td>This study</td>
+      <td>–</td>
+      <td>Injection stock #BL 8622</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS hCNBP-FLAG</td>
+      <td>This study</td>
+      <td>–</td>
+      <td>Injection stock #BL 8622</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS Odc1RNAi</td>
+      <td>VDRC</td>
+      <td>GD30039</td>
+      <td>Odc1 long hairpin on chromosome 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS Odc1RNAi</td>
+      <td>VDRC</td>
+      <td>GD30038</td>
+      <td>Odc1 long hairpin on chromosome 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS Odc2RNAi</td>
+      <td>VDRC</td>
+      <td>KK104597</td>
+      <td>Odc2 long hairpin on chromosome 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS Odc1+Odc2RNAi</td>
+      <td>This study</td>
+      <td>GD30038+ KK104597</td>
+      <td>Long hairpin for Odc2 on chromosome 2 and for Odc1 on chromosome 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>dOdc1 mutant</td>
+      <td>Bloomington</td>
+      <td>56103</td>
+      <td>y[1] w[*]; Mi{y[+mDint2]=MIC}Odc1[MI10996]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS dOdc1</td>
+      <td>Gupta et al., 2013</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CNBP (goat)</td>
+      <td>Abcam</td>
+      <td>ab48027, RRID:AB870003</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ODC (rabbit)</td>
+      <td>ENZO</td>
+      <td>BML-PW8880-0100 RRID:AB_2156495</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Actin goat</td>
+      <td>Santa Cruz</td>
+      <td>sc-1616, RRID:AB630836</td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse)</td>
+      <td>Santa Cruz</td>
+      <td>sc-9996, RRID:AB_627695</td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vinculin (mouse)</td>
+      <td>Santa Cruz</td>
+      <td>sc-73614, RRID:AB_1131294</td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG-HRP</td>
+      <td>Sigma</td>
+      <td>A8592, RRID:AB_439702</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CNBP (mouse)</td>
+      <td>Agrobio (this study)</td>
+      <td>–</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA-HRP (mouse)</td>
+      <td>Santa Cruz</td>
+      <td>sc-7392, RRID:AB_627809</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-vibrator (rabbit)</td>
+      <td>Giansanti et al., 2006</td>
+      <td>-</td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7 CNBP FW Drosophila melanogaster</td>
+      <td>This study</td>
+      <td>dsRNA primer</td>
+      <td>TAATACGACTCACTATAGGGAG GTCCGGGCGGCGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7 CNBP RV Drosophila melanogaster</td>
+      <td>This study</td>
+      <td>dsRNA primer</td>
+      <td>TAATACGACTCACTATAGGGAG ATGTGTCCGGTGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dOdc1 Fw Drosophila melanogaster</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>TGGCAGCGATGACGTAAAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dOdc1 Rv Drosophila melanogaster</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>TGGTTCGGCGATTATGTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH Fw Drosophila melanogaster</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>CCTGGCCAAGGTCATCAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH RvDrosophila melanogaster</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>ATGACCTTGCCCACAGCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dOdc1-IRES FW</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>TAAGAATTCCTCGGAAAGATCTCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dOdc1-IRES RW</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>TTAGAATTCACAAGTCGT TGACTGATAAC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DFMO</td>
+      <td>Sigma</td>
+      <td>#D193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RevertAid H Minus First Strand cDNA Synthesis kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>K1632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Putrescine</td>
+      <td>Sigma</td>
+      <td>#51799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spermidine</td>
+      <td>Sigma</td>
+      <td>#S2626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>plko SCR, plkoSh_cnbp</td>
+      <td>D'Amico et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>GFP</td>
+      <td>Coni et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>hODC-LUC</td>
+      <td>D'Amico et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>dOdc1-LUC</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>HA-dCNBP</td>
+      <td>Antonucci et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>FLAG-hCNBP</td>
+      <td>D'Amico et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>S2</td>
+      <td>DGRC</td>
+      <td>Cat# 181, RRID:CVCL_Z992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila strains and rearing conditions
 
 Drosophila stocks were maintained on standard fly food (25 g/L corn flour, 5 g/L lyophilized agar, 50 g/L sugar, 50 g/L fresh yeast, 2,5 mL/L Tegosept [10% in ethanol], and 2.5 mL/L propionic acid) at 25°C in a 12 hr light/dark cycle. All experiments were performed in the same standard conditions, at the temperature reported in figure legends.
 
@@ -154,23 +755,23 @@ The UAS-Odc1RNAi and the UAS-Odc2RNAi strains were also obtained from VDRC (ID 3
 
 Spermidine or putrescine was added to standard food to a final concentration of 1 mM. For experiments, parental flies mated on either normal or spd+ or put+ food, and their progeny was allowed to develop on the respective food. DFMO was added to normal food to a final concentration of 5 mM/day.
 
-## Climbing assays
+### Climbing assays
 
 The locomotion activity was measured by the DAM system (TriKinetics Inc, Waltham, MA), which allows a measure of fly locomotion capabilities based on their negative geotactic response, as the number of climbing performances in 30 min; 10–15 ageing-synchronized male flies (2–3 days, 7 days, or 15 days of age) were gathered and placed in each monitor for each genotype for each experiment. Briefly, the DAM system (TriKinetics Inc) records activity from individual flies maintained in sealed tubes placed in activity monitors. An infrared beam directed through the midpoint of each tube measures an ‘activity event’ each time a fly crosses the beam. The number of climbing events was scored for 30 min, tapping flies to the bottom every 40 s. Events detected over the course of each consecutive sampling interval are summed and recorded over the course of 30 min for each fly.
 
-## Drosophila larval locomotion analyses
+### Drosophila larval locomotion analyses
 
 Larval locomotor activity was measured by counting the number of peristaltic contractions of third instar larvae performed within 1 min on the surface of a 1% agarose gel in a Petri dish; measurements were repeated five times for each larva, at least 10 larvae per genotype in each experiment.
 
-## Immunoblot and antibodies
+### Immunoblot and antibodies
 
 Protein extracts were derived from five third instar larvae, or cultured Drosophila S2 or human 293 cells, lysed in sample buffer, fractionated by SDS-PAGE and transferred to nitrocellulose membrane. Primary antibodies were: anti-CNBP goat (1:500; Abcam, Ab 48027); anti-Actin goat (1:1000; Santa Cruz, sc-1616); anti-ODC rabbit (1:500; Enzo Life Science, BML-PW8880-0100); anti-CNBP mouse (1:1000; generated by Agrobio for this work), anti-HA HRP (1:500; Santa Cruz, sc-7392), anti-GFP mouse (1:500; Santa Cruz, sc-9996); anti-FLAG HRP (1:1000; Sigma, A8592); anti-Vinculin mouse (1:1000; Santa Cruz, sc-73614); anti-Tubulin mouse (1:7000; Sigma, T-5168). As a secondary antibody, we used the appropriate HRP-conjugated antibody (GE Healthcare) diluted 1:5000 in 5% milk/PBS-Tween 0.1% (GE Healthcare). Detection was performed by using WesternBright ECL (K-12045-D50, Advansta). Bands densitometric analysis was performed using the ImageJ software (version 1.50i). For DM2 patient biopsies, samples were lysed in SDS urea (50 mM Tris-HCl pH 7.8; 2% SDS, 10% glycerol, 1 mM EDTA, 6 M urea, 50 mM NaF, 5 mM Na2P2O7) sonicated for 10 s, quantified by using a nanodrop and loaded on polyacrylamide gel. The study was carried out in line with the principles of the Declaration of Helsinki, and ethical approval was obtained from the Ethics Committee of the Fondazione Policlinico Universitario A Gemelli IRCCS Rome, Italy. Muscle biopsies used for this study were performed primarily for diagnostic purposes, after receiving an informed consent and consent to publish from all patients.
 
-## RNA interference in S2 cell lines
+### RNA interference in S2 cell lines
 
 S2 cells (DGRC, RRID:CVCL_Z232; tested negative for mycoplasma) were cultured at 25°C in Schneider’s insect medium (Sigma) supplemented with 10% heat-inactivated fetal bovine serum (FBS, Gibco). RNAi treatments were carried out according to Somma et al., 2008. dsRNA-treated cells were grown for 4–5 days at 25°C, and then processed for biochemical analyses. PCR products and dsRNAs were synthesized as described in Somma et al., 2008. The primers used in the PCR reactions were 35 nt long and all contained a 5’ T7 RNA polymerase binding site (5’-TAATACGACTCACTATAGGGAGG-3’) joined to a gene-specific sequence.
 
-## RNA immunoprecipitation
+### RNA immunoprecipitation
 
 S2 cells were plated in 75 cm2 flask culture dishes and 72 hr later cells were crosslinked with 1% formaldehyde solution. Pellets were lysed with FA buffer (50 mM HEPES pH 7.5, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% sodium deoxycholate, protease inhibitors, and 50 U/mL RNase inhibitor SupeRNase, #AM2694 Thermo Fisher Scientific) and sonicated.
 
@@ -178,34 +779,34 @@ For in vivo analysis, approximately 50 larval carcasses were UV-crosslinked (3 �
 
 Immunoprecipitation was performed by incubating the samples with anti-CNBP antibody or IgG overnight. Then, the samples were washed with RCB buffer four times, or with three different solutions for S2 extracts: low salt solution: 0.1% SDS, 1% Triton X-100 2 mM, EDTA 20 mM Tris-HCl pH 8, 150 mM NaCl, and 0.005 U/mL SuperRNAse (Thermo Fisher Scientific); high salt solution: 0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8, 500 mM NaCl, and 0.005 U/mL SuperRNAse; LiCl buffer solution: 0.25 M LiCl, 1% NP40, 1% sodium deoxycholate, 1 mM EDTA, 10 mM Tris-HCl pH 8, and 0.005 U/mL SuperRNAse; TE wash buffer solution: 10 mM Tris-HCl pH 8, 1 mM EDTA, and 0.005 U/mL SuperRNAse, and then eluted with H2O or elution buffer solution for S2 extracts: 1% SDS, 0.1 M NaHCO3, SuperRNase 50 U/mL. RNA was purified using Trizol reagent (15596026, Thermo Fisher Scientific), it was reverse-transcribed and dOdc was amplified by qPCR. Results were normalized on RPL11.
 
-## RNA extraction and quantitative PCR
+### RNA extraction and quantitative PCR
 
 Total mRNA was isolated from S2 cells or Drosophila larvae by using Trizol reagent (15596026, Thermo Fisher Scientific) according to the manufacturer’s instructions. RNA was reverse-transcribed (1 µg each experimental point) by using SensiFAST cDNA Synthesis Kit (BIO-65053, Bioline) and qPCR was performed as described (Di Magno et al., 2020) using SensiFast Sybr Lo-Rox Mix (BIO-94020, Bioline). The run was performed by using the Applied Biosystems (Waltham, MA) ViiA 7 Real-Time PCR System 36 instrument.
 
 The following primers were used:
 
-## Polysome analysis
+### Polysome analysis
 
 Polysomal fractionation from S2 cells was performed as described previously (Coni et al., 2020); S2 cells (interfered or not) were incubated 5 min with 100 μg/mL CHX, then washed with PBS and lysed with TNM buffer (10 mM Tris-HCl pH 7.4 or 7.5, 10 mM NaCl, 10 mM MgCl2, 1% Triton X-100), supplemented with 10 mM dithiothreitol, 100 μg/mL CHX, 1× PIC (1187358001 complete, EDTA free, Roche), and RiboLock RNase inhibitor (EO0382, Thermo Fisher Scientific). Lysates were incubated on ice for 10 min and then centrifuged at 2000 rpm for 5 min. Supernatants were loaded onto 15–50% sucrose gradients and centrifuged for 120 min in a Beckman SW41 rotor at 37,000 rpm at 4°C. Fractions were automatically collected, using Biorad-BioLogic LP/2110 (Hercules) monitoring the optical density at 260 nm. RNA was extracted from each fraction by using Trizol Reagent and dOdc mRNA was amplified by RT-qPCR. GAPDH mRNA was used for normalization.
 
-## 293T lentiviral transduction and transfection
+### 293T lentiviral transduction and transfection
 
 Lentivirus production was performed as described in D'Amico et al., 2015. Then human 293T cells were transduced with lentiviral particles of plkoSCR (Mission plko.1 puro; SHC002) or shCNBP human (Mission plko.1 puro TRCN0000311158, Sigma-Aldrich) at an MOI=5 for 72 hr. Then 293T cells SCR and shCNBP were transfected with plasmids encoding for dOdc and GFP for extra 24 hr, by using Dreamfect reagent according to manufacturer (DF41000 OZ, Biosciences). Cell extracts were analyzed through western blot and qPCR as indicated.
 
-## Polyamine analysis
+### Polyamine analysis
 
 Polyamine content was determined by gas chromatography-mass spectrometry (GC-MS) and the values were normalized by the protein concentration. A pool of 10 third instar larvae for each genotype were resuspended in 0.2 M HClO and homogenized in an ice-bath using an ultra-turrax T8 blender. The homogenized tissue was centrifuged at 13,000× g for 15 min at 4°C; 0.5 mL of supernatant was spiked with internal standard 1,6-diaminohexane and adjusted to pH≥12 with 0.5 mL of 5 M NaOH. The samples were then subjected to sequential N-ethoxycarbonylation and N-pentafluoropropionylation. For DM2 samples, biopsies were also resuspended in 0.2 M HClO4 and processed as described above. GC-MS analyses were performed with an Agilent 6850A gas chromatograph coupled to a 5973N quadrupole mass selective detector (Agilent Technologies, Palo Alto, CA). Chromatographic separations were carried out with an Agilent HP-5ms fused-silica capillary column. Mass spectrometric analysis was performed simultaneously in TIC (mass range scan from m/z 50 to 800 at a rate of 0.42 scans s–1) and SIM mode (put, m/z 405; spd, m/z 580, N1-acetyl-spm, m/z 637; spm, m/z 709).
 
-## Immunostaining and confocal imaging
+### Immunostaining and confocal imaging
 
 Larvae were dissected in ice-cold Ca2+-free HL3 saline and fixed in 4% formaldehyde for 10 min and washed in PBS containing 0.05% Triton X-100 (PBST) for 30 min. After washing, larval fillets were stained with phalloidin-TRITC (1:300 diluted in PBST, Sigma) for 40 min at room temperature and subsequently washed for 3× 20 min with 0.05% PBST. Larvae were mounted in Vectashield containing DAPI (Vector Laboratories).
 
 Confocal microscopy was performed with a Leica SP8 confocal microscope (Leica Microsystems, Germany). Confocal imaging of larval fillets was done using a z step of 0.5 μm. The following objective was used: 63× 1.4 NA oil immersion for confocal imaging. All confocal images were acquired using the LCS AF software (Leica, Germany). Images from fixed samples were taken from third instar larval fillets (segment A2, muscle 6/7).
 
-## Luciferase assays
+### Luciferase assays
 
 For luciferase assays, 293T cells were seeded and transfected for 24 hr by using Dreamfect Reagent (DF45000, OZ Bioscience) with the dOdc or human ODC (hODC) luciferase-renilla bicistronic reporters, HA-dCNBP or FLAG-hCNBP expression vectors, or pcDNA3 as an empty vector. Luciferase reporter assay was performed by using the Firefly and Renilla Luciferase Single Tube Assay Kit (#30081–1, Biotium). Relative luciferase activity is expressed as the ratio of luciferase and renilla activity. The cloning of dOdc1 IRES was performed by PCR amplification of DNA from third instar larvae, by using the following oligos FW: TAAGAATTCCTCGGAAAGATCTCAAC, RW: TTAGAATTCACAAGTCGT TGACTGATAAC. The amplicon was cloned in the backbone plasmid prl-Sammons (D'Amico et al., 2015). The cloning product was checked on agarose gel after enzymatic restriction with the EcoR1 enzyme and the final plasmid was verified by sequencing.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analysis was performed using Prism six software (MacKiev). The Shapiro-Wilk test was used to assess the normal distribution of every group of different genotypes. Statistical differences for multiple comparisons were analyzed with the Kruskal-Wallis for non-parametric values or with one-way ANOVA for parametric values. The Dunn’s or the Tukey’s test was performed, respectively, as post hoc test to determine the significance between every single group. The Mann-Whitney U-test or the t-test were used for two groups’ comparison of non-parametric or parametric values, respectively. A p< 0.01 was considered significant.

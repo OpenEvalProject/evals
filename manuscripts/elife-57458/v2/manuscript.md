@@ -30,7 +30,7 @@ Recent studies have demonstrated the use of head-mounted cameras to measure eye 
 
 ## Results
 
-## Tracking eye and head movements during prey capture
+### Tracking eye and head movements during prey capture
 
 Food-restricted mice were habituated to hunt crickets in an experimental arena, following the paradigm of Hoy et al., 2016. To measure eye and head rotations in all dimensions, mice were equipped with two reversibly attached, lateral head-mounted cameras and an inertial measurement unit (IMU) board with an integrated 3-dimensional accelerometer and gyroscope (Figure 1A and B; Video 1). The estimated error in measurement of head and eye angle were both less than one degree (see Materials and methods). In addition, we recorded the behavior of experimental animals and the cricket prey with an overhead camera to compute the relative position of the mouse and cricket, as well as orientation of the head relative to the cricket. Following our previous studies (Hoy et al., 2016; Hoy et al., 2019), we defined approaches based on the kinematic criteria that the mouse was oriented towards the cricket and actively moving towards it (see Materials and methods). Together, these recordings and analyses allowed us to synchronously measure eye and head rotations along with cricket and mouse kinematics throughout prey capture behavior (Figure 1C; Video 1).
 
@@ -38,9 +38,13 @@ Food-restricted mice were habituated to hunt crickets in an experimental arena, 
 
 **Figure 1.:** (A) Unrestrained mice hunted live crickets in a rectangular plexiglass arena (45 × 38 × 30 cm). Using an overhead camera, we tracked the movement of the mouse and cricket. Example image with overlaid tracks of the mouse (cyan). (B) 3D printed holders house a miniature camera, collimating lens, an IR LED, and an IMU, and are reversibly attached to implants on the mouse’s head, with one camera aimed at each eye. (C) Synchronized recordings of measurements related to bilateral eye position and velocity, mouse position relative to cricket (distance and azimuth, as measured relative to the center of the head), mouse speed, and head rotation in multiple dimensions (analysis here focuses on yaw and pitch). (D) Average mouse locomotor speed did not differ across experimental and control experiments (no camera and IMU) for both non-approach and approach periods. Individual dots represent the average velocity per trial. (E) Average number of captures per 10 min session did not differ between experimental and control sessions (control N = 7 animals, 210 trials; cameras N = 7 animals, 105 trials; two-sample t-test, p=0.075).
 
+![Video 1.](https://cdn.elifesciences.org/articles/57458/elife-57458-video1.mp4.jpg)
+
+**Video 1.:** The direction of each eye is superimposed on the head (purple and light blue lines) based on calculated eye position and head angle.
+
 The cameras and IMU did not affect overall mouse locomotor speed in the arena or total number of crickets caught per 10 min session (paired t-test, p=0.075; Figure 1D/E), suggesting that placement of the cameras and IMU did not significantly impede movement or occlude segments of the visual field required for successful prey capture behavior.
 
-## Eye vergence is stabilized during approach periods
+### Eye vergence is stabilized during approach periods
 
 To determine whether mice make convergent eye movements to enhance binocular overlap during approaches, we first characterized the coordination of bilateral eye movements. We defined central eye position, that is 0°, as the average pupil location for each eye, across the recording duration. Measurement of eye position revealed that freely moving mice nearly constantly move their eyes, typically within a ± 20 degree range (Figures 1C, 2A and B), as shown previously (Meyer et al., 2020; Sakatani and Isa, 2007). Figure 2C shows example traces of the horizontal position of the two eyes (top), along with running speed of the mouse (bottom). As described previously (Wallace et al., 2013; Payne and Raymond, 2017; Meyer et al., 2018) and analyzed below (Figure 3D), the eyes are generally stable when the mouse is not moving. In addition, the raw traces reveal a pattern of eye movement wherein rapid correlated movements of the two eyes are superimposed on slower anti-correlated movements. The pattern of rapid congruent movements and slower incongruent movements was also reflected in the time-lagged cross-correlation of the change in horizontal position across the two eyes (Figure 2E), which was positive at short time lags and negative at longer time lags.
 
@@ -58,7 +62,7 @@ Previous studies have demonstrated that eye vergence varies with head pitch (Wal
 
 Strikingly, we found that while the relationship between head pitch and vergence was maintained during approaches (Figure 2H), the distribution of head pitch was more centered during approach periods (Figure 2H and I; paired t-test, p=0.0250), indicating a stabilization of the head in the vertical dimension. This can also be seen in the example trace in Figure 2G, where the head pitch becomes maintained around zero during approach. These data show that the increased alignment of the two eyes observed during approaches largely represents the stabilization of up/down head rotation, consequently reducing the need for compensatory vergence movements.
 
-## Coordinated horizontal eye movements are primarily compensatory for horizontal head rotations
+### Coordinated horizontal eye movements are primarily compensatory for horizontal head rotations
 
 Next, we aimed to understand the relationship between horizontal head movements (yaw) and horizontal eye movements during approach behavior. In order to isolate the coordinated movement of the two eyes, removing the compensatory changes in vergence described above, we averaged the horizontal position of the two eyes for the remaining analyses (Figure 3A). Changes in head yaw and mean horizontal eye position were strongly negatively correlated at zero time lag (Figure 3B), suggesting rapid compensation of head movements by eye movements, as expected for VOR-stabilization of the visual scene. The distribution of head and eye movements at zero lag (Figure 3C) shows that indeed changes in head yaw were generally accompanied by opposing changes in horizontal eye position, represented by the points along the negative diagonal axis. However, there was also a distinct distribution of off-axis points, representing a proportion of non-compensatory eye movements in which the eyes and head moved in the same direction (Figure 3C).
 
@@ -66,7 +70,7 @@ Many studies have reported a limited range of infrequent eye movements in head r
 
 We next compared the distribution of mean eye position during approaches and non-approach periods. In contrast to the stabilization of head pitch described above, the distribution of head yaw velocities was not reduced during approaches as shown (Figure 3E; paired t-test p=0.938), consistent with the fact that mice must move their heads horizontally as they continuously orient to pursue prey. For both non-approach and approach periods, eye position generally remained within a range less than the size of the binocular zone (±20 degrees; Figure 3F, paired t-test, p=0.156), suggesting that the magnitude of eye movements would not shift the binocular zone to an entirely new location. Comparison of horizontal eye velocity between non-approach and approach epochs revealed that the eyes move with similar dynamics across both behavioral periods (Figure 3G, panel 1; paired t-test, p=0.155). Additionally, at times when head yaw was not changing, horizontal eye position also did not change (Figure 3G, panel 2; paired t-test, p=0.229). Together, these observations suggest that most coordinated eye movements in the horizontal axis correspond to changes in head yaw, and that the eyes do not scan the visual environment independent of head movements or when stationary.
 
-## Non-compensatory saccades shift gaze position
+### Non-compensatory saccades shift gaze position
 
 Gaze position - the location the eyes are looking in the world - is a combination of the position of the eyes and the orientation of the head. Compensatory eye movements serve to prevent a shift in gaze, whereas non-compensatory eye movements (i.e., saccades) shift gaze to a new position. Although the vast majority of eye movements are compensatory for head movements, as demonstrated by strong negative correlation in Figure 3B/C, a significant number of movements are not compensatory, as seen by the distribution of off-axis points in Figure 3C. These eye movements will therefore shift the direction of the animal’s gaze relative to the environment. We next examined how eye movements, and particularly non-compensatory movements, contribute to the direction of gaze during free exploration and prey capture. In particular, are these gaze shifts directed at the target prey?
 
@@ -80,7 +84,7 @@ We next determined how compensatory and non-compensatory eye movements contribut
 
 Durations of fixations between saccades showed wide variation, with a median of 220 ms (Figure 4D). To quantify the degree of stabilization achieved, we compared the root mean square (RMS) deviation of gaze position and head yaw during stabilization periods (Figure 4E). This revealed that the gaze is nearly three times less variable than the head (Figure 4F; median head = 3.87 deg; median gaze = 1.58 deg; p=0), resulting in stabilization to within nearly one degree over extended periods, even during active approach toward the cricket.
 
-## Targeting of gaze relative to cricket during approach
+### Targeting of gaze relative to cricket during approach
 
 Saccade-and-fixate serves as an oculomotor strategy to sample and stabilize the visual world during free movement. In primates, saccades are directed towards specific targets of interest in the visual field. Is this true of the non-compensatory movements in the mouse? In other words, do saccades directly target the cricket? To address this, we next analyzed the dynamics of head and gaze movements relative to the cricket position during hunting periods, to compare how accurately the direction of the gaze and the head targeted the cricket during saccades.
 
@@ -89,6 +93,10 @@ Figure 5A shows example traces of head and eye dynamics across an approach perio
 ![Figure 5.](https://cdn.elifesciences.org/articles/57458/elife-57458-fig5-v2.jpg)
 
 **Figure 5.:** (A) Example traces of horizontal eye position, azimuth to cricket, head yaw, and gaze demonstrate a saccade-and-fixate pattern in gaze before and during an approach period. The head is pointed directly at the cricket when azimuth is 0°. Note the rapid decrease in azimuth, head yaw, and mean horizontal eye position creating a saccade immediately preceding the start of approach. (B) Average head yaw and gaze around the time of saccade as a function of azimuth to the cricket. Time = 0 is the saccade onset. (C) Histograms of head yaw and gaze position before and after saccades occur. (D) Medians of yaw and gaze distributions from C (paired t-test, ppre saccade=8.48x10−9; ppost saccade=0.979). (E) Cross correlation of azimuth and change in head yaw for non-approach and approach periods. (F) Cross correlation of azimuth and change in gaze for non-approach and approach periods. N = 105 trials, 7 animals.
+
+![Video 2.](https://cdn.elifesciences.org/articles/57458/elife-57458-video2.mp4.jpg)
+
+**Video 2.:** Note that during head turns the gaze is transiently offset from the head angle vector, due to compensatory eye movements, creating a stable image for the animal. Then, non-compensatory saccades shift the gaze position such that it aligns with the head to accurately target the cricket.
 
 To determine how head and eye movements target the prey, we computed absolute value traces of head and gaze angle relative to cricket (head and gaze azimuth), and aligned these to the onset of each non-compensatory saccadic eye movement. The average of all traces during approaches revealed that saccades are associated with a head turn towards the cricket, as shown by a decrease in the azimuth angle (Figure 5B). Immediately preceding a saccade, the gaze is stabilized while the head turns, and the saccade then abruptly shifts the gaze. Notably, following the saccade, the azimuth of gaze is the same as the azimuth of the head, suggesting that eye movements are not targeting the cricket more precisely, but simply ‘catching up’ with the head, by re-centering following a period of stabilization.
 
@@ -116,11 +124,56 @@ The saccade-and-fixate strategy generates a series of stable visual images separ
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57Bl/6J</td>
+      <td>JAX</td>
+      <td>JAX: 000664</td>
+      <td>Wild type animals</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Matlab</td>
+      <td>Matlab R2020a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>Mathis et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bonsai</td>
+      <td>Lopes et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were conducted in accordance with the guidelines of the National Institutes of Health and were approved by the University of Oregon Institutional Animal Care and Use Committee (protocol number 17–27). Animals used for this study were wild-type (C57 Bl/6J) males and females (3 males and four females) aged 2–6 months.
 
-## Prey capture behavior
+### Prey capture behavior
 
 Prey capture experiments were performed following the general paradigm of Hoy et al., 2016. Mice readily catch crickets in the homecage without any training or habituation, even on the first exposure to crickets. However, we perform a standard habituation process to acclimate the mice to being handled by the experimenters, hunting within the experimental arena, and wearing cameras and an IMU while hunting. Following six 3 min sessions (over 1–2 days) of handling, the animals were placed in the prey capture arena to explore with their cagemates. The duration of this group habituation was at least six 10 min sessions over 1–2 days. One cricket (Rainbow mealworms, 5 week old) per mouse was placed in the arena with the mice for the last half of the habituation sessions. For the subsequent habituation step, the mice were placed in the arena alone with one cricket for 7–10 min. This step was repeated for 2–3 training days (6–9 sessions) until most mice successfully caught crickets within the 10 min period.
 
@@ -130,15 +183,15 @@ The rectangular prey capture arena was a white arena of dimensions 38 × 45×30 
 
 Following the habituation process, cameras were attached and mice were placed in the prey capture arena with one cricket. Experimental animals captured and consumed the cricket before a new cricket was placed in the arena. The experimenters removed any residual cricket pieces in the arena before the addition of the next cricket. A typical mouse catches and consumes between 3–5 crickets per 10 min session. Control experiments were performed using the same methods, but with no cameras or IMU attached.
 
-## Surgical procedure
+### Surgical procedure
 
 To allow for head-fixation during initial eye camera alignment, before the habituation process mice were surgically implanted with a steel headplate, following Niell and Stryker, 2010. Animals were anesthetized with isoflurane (3% induction, 1.5–2% maintenance, in O2) and body temperature was maintained at 37.5°C using a feedback-controlled heating pad. Fascia was cleared from the surface of the skull following scalp incision and a custom steel headplate was attached to the skull using Vetbond (3M) and dental acrylic. The headplate was placed near the back of the skull, roughly 1 mm anterior of Lambda. A flat layer of dental acrylic was placed in front of the headplate to allow for attachment of the camera connectors. Carprofen (10 mg/kg) and lactated Ringer’s solution were administered subcutaneously and animals were monitored for three days following surgery.
 
-## Camera assembly and head-mounting
+### Camera assembly and head-mounting
 
 To measure eye position, we used miniature cameras that could be reversibly attached to the mouse’s head via a chronically implanted Millmax connector. The cameras (1000 TVL Mini CCTV Camera; iSecurity101) were 5 × 6 × 6mm with a resolution of 480 × 640 pixels and a 78 degree viewing angle, and images were acquired at 30 Hz. Some of the cameras were supplied with a built in NIR blocking filter. For these cameras, the lens was unscrewed and the glass IR filter removed with fine forceps. A 200 Ohm resistor and 3 mm IR LED were integrated onto the cameras for uniform illumination of the eyes. Power, ground, and video cables were soldered with lightweight 36 gauge FEP hookup wire (Cooner Wire; CZ 1174). A 6 mm diameter collimating lens with a focal distance of 12 mm (Lilly Electronics) was inserted into custom 3D printed housing and the cameras were then inserted and glued behind this (see Figure 1 for schematic of design). The inner side of the arm of the camera holder housed a male Mill-Max connector (Mill-Max Manufacturing Corp. 853-93-100-10-001000) cut to 5 mm (2 rows of 4 columns), used for reversible attachment of the cameras to the implants of experimental animals. A custom IMU board with integrated 3-dimensional accelerometer and gyroscopes (Rosco Technologies) was attached to the top of one of the camera holders (see Figure 1B). The total weight of the two cameras together, with the lenses, connectors, 3D printed holders, and IMU was 2.6 grams. Camera assemblies were fitted onto the head by attaching them to corresponding female Mill-Max connectors. Cameras were located in the far lateral periphery of the mouse’s visual field, roughly 100° lateral of the head midline and 40 degrees above the horizontal axis, and covered roughly 25 × 25° of the visual field. When the camera was appropriately focused on the eye, the female connectors were glued onto the acrylic implant using cyanoacrylate adhesive (Loctite). Because the connectors were each positioned during this initial procedure and permanently fixed in place, no adjustment of camera alignment was needed for subsequent experimental days. With this system, the average magnitude of camera shake jitter across experiments was 0.49 + / - 0.33 pixels (mean + / - s.d., N = 7 animals), as measured by computing the RMS frame-to-frame jitter of stationary points on the animal’s head (base of the implant) in the recorded videos.
 
-## Mouse and cricket tracking
+### Mouse and cricket tracking
 
 Video data with timestamps for the overhead camera were acquired at 30 frames per second (fps) using Bonsai (Lopes et al., 2015). We used DeepLabCut (Mathis et al., 2018) for markerless estimation of mouse and cricket position from overhead videos. For network training, we selected eight points on the mouse head (nose, two camera connectors, two IR LEDs, two ears, and center of the head between the two ears), and two points for the cricket (head and body). Following estimation of the selected points, analysis was performed with custom MATLAB scripts, available at Michaiel et al., 2020.
 
@@ -146,7 +199,7 @@ To determine periods when the animal was moving versus stationary, head movement
 
 Analog voltage signals from the IMU were recorded using a LabJack U6 at 50 Hz sampling rate. Voltages from the accelerometer channels were median filtered with a window of 266.7 ms to remove rapid transients and converted to m/sec2, providing angular head orientation. Voltages from the gyroscope channels were converted to radians/sec without filtering, providing head rotation velocity.
 
-## Eye tracking and eye camera calibration
+### Eye tracking and eye camera calibration
 
 Video data with timestamps for the two eyes were acquired at 30fps using Bonsai. The video data are delivered by the camera in NTSC format, an interlaced video format in which two sequential images (acquired at 60fps) are interdigitated into each frame on alternate horizontal lines. We therefore de-interlaced the video in order to restore the native 60fps resolution by separating out alternate lines of each image. We then linearly downsampled the resolution along the horizontal axis by a factor of two, to match spatial resolution in horizontal and vertical dimensions.
 
@@ -156,6 +209,6 @@ Following computation of kinematic variables (mouse, cricket, and eye position/r
 
 To characterize the robustness of the tracking system, we estimated the error in eye and head position measurements. As there is no ground truth measurement for eye position to compare to, we estimated an upper bound based on the stability of the eye when the head was stationary, as this is when eye movements are expected to be minimal. Specifically, we computed the standard deviation of horizontal eye position between frames during times when mouse speed was less than 1 cm/sec and head rotation <1 degree. We computed the error to be 0.51 + / - 0.25 degrees (mean + / - s.d., n = 105 trials). Similarly, to estimate the error of head angle measurements, we compared the independent estimates of head yaw rotation between frames as measured by both the IMU and DeepLabCut tracking. These measures have an RMS difference of 0.95 + / - 0.25 (mean+/-s.d., n = 105 trials), which represents an upper bound as it is based on the combined error of these two measurements separately. Thus, we infer that errors in estimating eye and head position are both less than one degree.
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 Two-tailed paired t-tests or Wilcoxon Rank sum tests were used to compare data between non-approach and approach epochs. For comparisons between experimental and control groups, two-sample tests (Kolmogorov-Smirnov or two-sample two-tailed t-test) were used. Significance was defined as p<0.05, although p-values are presented throughout. In all figures, error bars represent ±the standard error of the mean or median, as appropriate.

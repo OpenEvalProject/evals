@@ -61,7 +61,7 @@ In this study, we report the generation of a novel mouse-adapted SARS-CoV-2 viru
 
 ## Results
 
-## Generation of the mouse-adapted SARS-CoV-2 strain maVie16
+### Generation of the mouse-adapted SARS-CoV-2 strain maVie16
 
 To generate a virus pathogenic to mice, we infected BALB/c mice with a human SARS-CoV-2 isolate (BetaCoV/Munich/BavPat1/2020; from here on referred to as BavPat1; Rothe et al., 2020), followed by serial passaging of virus-containing cell-free lung homogenates of infected mice every 3 days (Figure 1A). Infectivity was quickly established after the first few passages, as indicated by increasing SARS-CoV-2 genome copies detected in the lungs of infected mice (Figure 1B). While the viral load did not further change after passage 3, a progressive loss of body weight of mice infected with later stage passaged SARS-CoV-2 indicated enhanced pathogenicity of the virus (Figure 1C). Weight loss is a sign of disease severity in many rodent models of infection and related to anorexia and/or cachexia (Baazim et al., 2021). Mice infected with passage 15 furthermore exhibited a severe drop in body temperature (Figure 1D), which is the regulatory response of mice to severe inflammation at room temperature (Garami et al., 2018). The transcriptional analysis of pulmonary inflammatory genes (including Il1b, Ifng, Il6, and Tnf) 3 days after infection with the different passages revealed a progressively increasing inflammatory response (Figure 1E). These results indicate that our serial passaging protocol has allowed us to generate a highly infectious and pathogenic mouse-adapted SARS-CoV-2 variant (isolated from lungs of mice infected with passage 15), which we refer to as maVie16.
 
@@ -69,21 +69,49 @@ To generate a virus pathogenic to mice, we infected BALB/c mice with a human SAR
 
 **Figure 1.:** (A) Experimental strategy for generation of maVie16. BALB/c mice were intranasally inoculated with BavPat1 (passage 0/P0), followed by serial passaging of virus-containing cell-free lung homogenates of infected mice every 3 days. Passaging was repeated 15 times. (B) Lung tissue virus genome copy numbers (determined by real-time PCR) of mice 3 days after infection with virus of different passages as indicated. (C) Body weight (percentage of initial) of mice 3 days after infection. (D) Body temperature before and 3 days after infection. (E) Lung tissue expression fold change (compared to P0 mean; analyzed by real-time PCR) of indicated genes 3 days after infection. (B–E) n = 1–3; (B, C, E) symbols represent individual mice; Kruskal–Wallis test (vs. P0) with Dunn’s multiple comparisons test; (D) mean ± SD; two-way ANOVA with Sidak test (vs. the respective initial body temperature); *p≤0.05; **p≤0.01; ***p≤0.001; numbers above bars show the actual p-value.
 
-## Genetic evolution of the maVie16 Spike protein
+### Genetic evolution of the maVie16 Spike protein
 
 To elucidate the mechanisms of mouse adaptation of maVie16, we sequenced SARS-CoV-2 genomes at all passages and compared the viral sequences to the original BavPat1 isolate. Despite the substantially increased virulence in mice, we found only a limited number of mutations with high (>0.5) allele frequencies, located in the Spike protein, open reading frame (ORF)1AB, and envelope (Figure 2A). Given the importance of Spike for SARS-CoV-2 infectivity, we were particularly interested in the three de novo mutations within its receptor binding domain (RBD) (Figure 2B). Most prominently, we observed the immediate appearance of Q498H after passage 1 (Figure 2B), which correlated with the early increase in viral load (and hence viral propagation) in infected mice (Figure 1B). After passage 12, we detected a glutamine to arginine exchange at position Q493R (Figure 2B). Importantly, mutations at Q493 and Q498 have been also reported in other mouse-adapted SARS-CoV-2 strains (Dinnon et al., 2020; Huang et al., 2021; Leist et al., 2020; Wang et al., 2020b), suggesting a critical role in Spike adaptation to the murine ACE2 receptor. With the appearance of Omicron/B.1.1.529, the most recent VOC, Q493, and Q498 mutations were detected in a human SARS-CoV-2 variant for the first time. Mutations in K417 (which appeared around passage 10; Figure 2B) have also been reported in Omicron/B.1.1.529 and two other human VOCs, that is, Beta/B.1.351 (K417N) (Tegally et al., 2020) and Gamma/P1 (K417T) (Voloch, 2020).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overview of allele frequencies of mutated amino acids detected in maVie16 by sequencing. Labels on top indicate the associated protein (SGP, Spike glycoprotein; ORF, open reading frame; MGP, membrane glycoprotein). (B) Spike protein mutation dynamics. (C) Modeling and location of Spike mutations. Spike trimer in cyan blue and green, mACE2 in magenta cartoon representation. Glycans in stick representations. (D) Modeling of specific BavPat1 (upper row) and maVie16 (lower row) amino acid regions in green (respective mutated positions are highlighted in yellow and labeled in green) and their interaction with mouse ACE2 (in magenta; positions of interest are labeled in magenta or black).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Surface representation of the binding interface of human (gray cartoon) and mouse (magenta cartoon) ACE2, colored according to the electrostatic potential. Red surface corresponds to a negative potential and blue surface to a positive potential. Note the more distinct pattern of negatively charged areas in the mouse ACE2 protein. A bundle of glycan conformations is shown in sticks for the glycans at N53 (blue), N90 (yellow), N322 (black), and N546 (red) in human ACE2 and at N53 (blue), N536 (green), and N546 (red) in mouse ACE2. (B) SARS-CoV-2 genome copy numbers in Vero and Caco-2 cells at indicated time points after infection with a multiplicity of infection (MOI) 0.5 of BavPat1 or maVie16.
+
 Structural analyses of mouse and human ACE2 (mACE2 and hACE2, respectively) have shown that the surface of mACE2 consists of more negative charged amino acids than that of hACE2 (Figure 2—figure supplement 1A; Rodrigues et al., 2020). Indeed, the exchange of two glutamines (Q493 and Q498) to arginine and histidine, respectively, in the maVie16 Spike results in a positive charged surface (Figure 2C). Detailed structural modeling of the BavPat1 versus the maVie16 Spike protein interface with mACE2 revealed that the maVie16 Spike Q498H mutation would strengthen its interaction with mACE2 at amino acid D38, otherwise forming an intramolecular salt bridge with mACE2 H353 (Figure 2D). Similarly, the newly introduced arginine at maVie16 Spike position 493 is predicted to efficiently interact with the negatively charged mACE2 amino acid E35, thus further stabilizing the maVie16 Spike/mACE2 interaction by neutralizing the otherwise unpaired negative charge of mACE2 glutamic acid (Figure 2D). Finally, the threonine at Spike position 417 (T417) of maVie16’s is predicted to enhance the interaction with the neutrally charged asparagine at position 30 of mACE2 while the aspartic acid at this position in hACE2 forms a salt bridge with lysine K417 of the original BavPat1 isolate. Since the observed Spike mutations are distant from putative cleavage sites (Takeda, 2022), it is likely that mACE2 affinity is increased without affecting proteolytic processing by proteases such as furin or TMPRSS2 (Takeda, 2022). Of note, maVie16 showed similar propagation kinetics in Vero and Caco-2 cells as compared to BavPat1 (Figure 2—figure supplement 1B). Thus, while the interaction with mACE2 is enhanced, the infectivity of human cells remained unchanged for maVie16 and both simian and human cells continue to serve as a useful tool for maVie16 propagation and titer determination. Taken together, our data indicate that only three distinct Spike RBD mutations introduced during passaging could substantially enhance interaction with mACE2, without obvious effects on the interaction with hACE2.
 
-## maVie16 causes severe pneumonia in BALB/c and C57BL/6 mice
+### maVie16 causes severe pneumonia in BALB/c and C57BL/6 mice
 
 We next performed dose–response experiments of maVie16 infections in BALB/c (B/c) and, as a commonly used mouse strain for genetic engineering, C57BL/6 (B/6) mice and monitored weight and body temperatures over 7 days. In BALB/c mice, maVie16 was highly pathogenic and caused profound weight loss, starting around day 3 post infection (p.i.) at a dose of 4 × 103 TCID50 (Figure 3A), whereas all tested higher doses caused an earlier weight loss (day 2 p.i.) and lethality starting at day 4 p.i. (Figure 3B). Notably, the loss of body weight correlated with hypothermia (Figure 3C). In contrast to BALB/c mice, maVie16 infection did not cause lethality nor significant hypothermia in C57BL/6 animals, albeit 1 × 105 (and higher) TCID50 induced a profound but transient body weight loss of about 15% (Figure 3D–F). Interestingly, both mouse strains infected with 1 × 105 TCID50 showed similar body weight loss (approximately 15%) at day 3 p.i., but while disease severity further increased in BALB/c animals, C57BL/6 mice recovered. In line with these data, BALB/c animals showed more severe lung pathologies compared to C57BL/6 mice, as revealed by histological analyses of lungs on day 3 (Figure 3G and H). While the cumulative histological score revealed no differences between the strains, diffuse alveolar damage, characterized by alveolar collapse and septal thickening, was more pronounced in BALB/c mice (Figure 3I).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig3-v2.jpg)
+
+**Figure 3.:** (A–C, G) BALB/c (B/c) or (D–F, H) C57BL/6 (B/6) mice were intranasally inoculated with different doses of maVie16 as indicated and monitored for (A, D) body weight, (B, E) survival and (C, F) body temperature over 7 days; dashed lines in (A) and (C) indicate trajectories of groups lacking full group size due to death of animals (see B). (G, H) Lung sections (hematoxylin and eosin stain) from mice 3 days after infection with 105 TCID50 maVie16; black rectangles in the upper pictures indicate the area magnified in the respective lower row picture; scale bars indicate 100 µm. (I) Histological score for analysis of lung sections as described in (G) and (H); symbols represent individual mice; (A, C, D, F) mean ± SD; (B) Mantel–Cox test (vs. 4 × 103 TCID50); **p≤0.01; the number next to the symbol shows the actual p-value.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) Mice expressing human ACE2 under control of the human KERATIN-18 promoter (KRT18-hACE2/+) and control animals (+/+) were intranasally inoculated with (A, C, E) 103 or (B, D, F) 104 TCID50 of BavPat1 and monitored over 7 days. (A, B) Survival; (C, D) body weight; (E, F) temperature; (A–F) n = 4–7; (E, F) mean ± SD.
+
 To compare our data with a widely used mouse model of COVID-19, we infected KRT18-hACE2 transgenic mice that express human ACE2 under control of the human keratin 18 promoter (McCray et al., 2007; Oladunni et al., 2020) with either 1 × 103 or 1 × 104 TCID50 of BavPat1 and monitored the disease course over 7 days. As expected (Oladunni et al., 2020), KRT18-hACE2 mice were most sensitive to infection and succumbed to BavPat1 infections (Figure 3—figure supplement 1A,B). However, the disease course was profoundly different to that of maVie16-infected wild-type animals. BavPat1-infected KRT18-hACE2 mice appeared healthy until day 4 p.i. and then progressively lost weight until day 7, accompanied by hypothermia and death (Figure 3—figure supplement 1C–F). Death in KRT18-hACE2 mice most likely results from severe encephalitis due to expression of hACE2 in neurons where ACE2 is normally not expressed (Hikmet et al., 2020). These results show that maVie16 causes severe pathology in BALB/c and profound, but transient, disease in C57BL/6 mice, recapitulating critical aspects (such as transient pneumonia and viral clearance) of human COVID-19.
 
-## Murine anti-SARS-CoV-2 immune responses
+### Murine anti-SARS-CoV-2 immune responses
 
 To better understand the pathophysiology of mouse COVID-19 (mCOVID-19), we next profiled immune cell dynamics in blood and lungs of C57BL/6 mice during acute infection and upon recovery. maVie16 (5 × 105 TCID50) infection caused severe blood leukopenia on day 2 p.i. with a prominent reduction of lymphocytes, monocytes, neutrophils, and NK cells (Figure 4A, Figure 4—figure supplement 1, Figure 4—figure supplement 2A). At the same time, we observed an expansion of peripheral plasmacytoid dendritic cells (pDCs) (Figure 4B), which are important antiviral effector cells capable of efficient and rapid type I IFN production (Swiecki and Colonna, 2015).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig4-v2.jpg)
+
+**Figure 4.:** C57BL/6 mice were intranasally infected with PBS ( = group 0) or 5 × 105 TCID50 maVie16 and sacrificed after 2, 5, 7, or 14 days for subsequent analysis. (A) Flow cytometry analysis of blood cell populations. (B) Density plot representation of blood plasmacytoid dendritic cells (pDCs; identified as live/CD45+/CD11c+/BST2+) analyzed by flow cytometry. (C) Flow cytometry analysis of whole lung cell populations (see Figure 4—figure supplement 1 for gating strategies). (D) Lung tissue expression fold change (compared to group 0 mean; analyzed by real-time PCR) of indicated genes from mice at the respective time points after infection. (A, C, D): symbols represent individual mice; Kruskal–Wallis test (vs. group 0) with Dunn’s multiple comparisons test; *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** C57BL/6 mice were intranasally infected with PBS ( = group 0) or 5 × 105 TCID50 maVie16 and sacrificed after 2, 5, 7, or 14 days for subsequent analysis. (A) Example of the flow cytometry gating strategy for immune cell populations (shown in Figure 4C and Figure 4—figure supplement 2B). The sample is derived from an infected mouse 2 days post infection.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** C57BL/6 mice were intranasally infected with PBS ( = group 0) or 5 × 105 TCID50 maVie16 and sacrificed after 2, 5, 7, or 14 days for subsequent analysis. (A) Flow cytometry analysis of blood cell populations. (B) Flow cytometry analysis of whole lung cell populations (see Figure 4—figure supplement 1 for gating strategies). (C) Lung tissue expression fold change (compared to group 0 mean; analyzed by real-time PCR) of indicated genes from mice at the respective time points after infection. (D) Spleen weight at indicated time points after infection. (A–D) symbols represent individual mice; Kruskal–Wallis test (vs. group 0) with Dunn’s multiple comparisons test; *p≤0.05; **p≤0.01; ***p≤0.001.
 
 Infection led to substantial pulmonary infiltration with leukocytes (Figure 4C), paralleling the development of pneumonia. A closer look at the inflammatory cell composition in the lungs revealed a remarkable infiltration with pDCs on day 2 p.i. (Figure 4C). Conventional dendritic cells (cDCs) transiently accumulated in the lung on day 5 p.i., followed by T helper and cytotoxic T cell infiltration and recruitment of monocytes on day 7 (Figure 4C and Figure 4—figure supplement 2B). The abundance of other analyzed immune cell populations did not change substantially, and lung neutrophil numbers dropped around day 2 p.i. to return to baseline levels over the remaining disease course (Figure 4—figure supplement 2B). Surprisingly, pulmonary NK cells, which fulfill important antiviral functions (Björkström et al., 2021), did not significantly expand in the lungs of maVie16 infected C57BL6 mice (Figure 4—figure supplement 2B). In line with an early lung pDC accumulation, we found rapid induction of type I IFN-inducible genes, such as Eif2ak2 (protein kinase R/PKR) and ifit1, accompanied by a profound Il6 response; the expression of Tnf, Il10, Il1b, and Tgfb peaked between day 5 and 7 p.i. (Figure 4D and Figure 4—figure supplement 2C). The Ifng induction reached a maximum on day 7, coinciding with the increased numbers of T cells that are prominent sources of IFNγ (Figure 4D).
 
@@ -93,19 +121,39 @@ In C57BL/6 mice infected with maVie16 (5 × 105 TCID50), lung weights significan
 
 **Figure 5.:** C57BL/6 mice were intranasally infected with PBS ( = group 0 or PBS) or 5 × 105 TCID50 maVie16 and sacrificed after 2, 5, 7, or 14 days for subsequent analysis. (A) Lung tissue virus genome copy numbers (determined by real-time PCR). (B) Lung tissue weight. (C) Representative lung immunohistochemistry (anti-SARS-CoV-2 nucleocapsid stain, counterstained with hematoxylin) pictures; black rectangles in the upper pictures indicate the area magnified in the respective lower row picture; scale bars represent 100 µm. (D) Lung pathology score based on histological analysis of lung tissue sections. (E) Analysis (by ELISA) of SARS-CoV-2 Spike-specific IgG1, IgG2b, and IgA plasma antibody titers 14 days after infection. (A, B, D, E) Mean + SD; symbols represent individual mice; (A, B, D): Kruskal–Wallis test (vs. [A] day 2 or [B, D] group 0) with Dunn’s multiple comparisons test; (E) Mann–Whitney test; *p≤0.05; **p≤0.01; ***p≤0.001.
 
-## Distinct differences in antiviral immunity of BALB/c vs. C57BL/6 mice
+### Distinct differences in antiviral immunity of BALB/c vs. C57BL/6 mice
 
 In an attempt to elucidate underlying mechanisms for the different susceptibility of BALB/c and C57BL/6 mice, we infected both mouse strains side by side with 1 × 105 TCID50 of maVie16 and monitored their respective immune responses 3 days later (as BALB/c and C57BL/6 mice showed comparable weight loss and no mortality at this dose and time point; Figure 3). Both mouse strains exhibited a decline in blood leukocytes, including lymphocytes and NK cells, upon infections with maVie16 (Figure 6A and Figure 6—figure supplement 1A). Also, pulmonary immune cell dynamics did not differ between the strains, except for an expansion of NK cells in BALB/c mice, and elevated pDC numbers in C57BL/6 animals (Figure 6B and Figure 6—figure supplement 1B). Higher NK cell abundance correlated with increased pulmonary IFNγ levels in BALB/c mice, whereas Il1b was slightly higher in C57BL/6 animals 3 days after infection (Figure 6C and Figure 6—figure supplement 1C). Plasma cytokine levels (Figure 6—figure supplement 1D), viral loads (Figure 6—figure supplement 1E), as well as spleen and lung weight (Figure 6—figure supplement 1F) were comparable between the two mouse strains. These data identify differences in the early local inflammatory response between maVie16-infected BALB/c as compared to C57BL/6 animals.
 
-## A pathogenic role of IFNγ and TNF in disease severity
+![Figure 6.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig6-v2.jpg)
+
+**Figure 6.:** BALB/c (B/c) and C57BL/6 (B/6) mice were intranasally inoculated with 105 TCID50 maVie16 (+) or PBS (-). Samples for analyses were collected 3 days after infection. (A) Flow cytometry analysis of blood cell populations. (B) Flow cytometry analysis of whole lung NK cells and plasmacytoid dendritic cells (pDCs). Density plots represent examples of respective cell populations (NK cells pre-gated from live/CD45+/Ly6G-/CD3-; pDCs pre-gated from live/CD45+) (C) Lung tissue expression fold change (compared to the respective mean of uninfected samples; analyzed by real-time PCR) of indicated genes. (D) Experimental scheme for (E–G). BALB/c mice were infected with 105 TCID50 maVie16 and treated intraperitoneally on days 1 and 3 post infection (p.i.) with a mix of 500 µg anti-IFNγ and anti-TNF or with isotype control antibody. (E) Body weight and (F) temperature kinetics over 5 days after infection. (G) Lung weight on day 5 after infection. (A–C, G) Mean + SD; symbols represent individual mice; differences between infected groups were assessed using the Mann–Whitney test; (E, F) mean ± SD; two-way ANOVA with Dunnett’s multiple comparisons test (vs. the respective initial body weight or temperature); in panels without respective labels, the groups were not significantly different (p<0.05); *p≤0.05; **p≤0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** BALB/c (B/c) and C57BL/6 (B/6) mice were intranasally inoculated with 105 TCID50 maVie16 (+) or PBS (-). Samples for analyses were collected 3 days after infection. (A) Flow cytometry analysis of blood cell populations. (B) Flow cytometry analysis of indicated lung cell populations in whole tissue. (C) Lung tissue expression fold change (compared to the respective mean of uninfected samples; analyzed by real-time PCR) of indicated genes. (D) Plasma levels of indicated cytokines (assessed by multiplex cytokine analysis). (E) Lung tissue virus genome copy numbers (determined by real-time PCR). (F) Weight of spleen and lung. (A–F) Mean + SD; symbols represent individual mice; differences between infected groups were assessed using the Mann–Whitney test; in panels without respective labels, the groups were not significantly different (p<0.05); *p≤0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Experimental scheme for (B) and (C). BALB/c mice were infected with 105 TCID50 maVie16 and treated intraperitoneally on days 1 and 3 post infection (p.i.) with a mix of 500 µg anti-IFNγ and anti-TNF or with isotype control antibody. (B) Lung viral load and (C) blood cell numbers 5 days p.i.; (D) experimental scheme for (E–I). C57BL/6 mice were infected with 5 × 105 TCID50 maVie16 and treated intraperitoneally on days 1 and 3 p.i. with a mix of 500 µg anti-IFNγ and anti-TNF or with isotype control antibody. (E) Body weight and (F) temperature kinetics over 5 days after infection. (G) Lung weight, (H) lung viral load, and (I) blood cell numbers 5 days p.i.; (B, C, G–I) mean + SD; Mann–Whitney test; (E, F) mean ± SD; two-way ANOVA with Dunnett’s multiple comparisons test (vs. the respective initial body weight or temperature); *p≤0.05; ns, not significant (p>0.05).
+
+### A pathogenic role of IFNγ and TNF in disease severity
 
 Several reports illustrated a correlation between systemic cytokine responses, lung injury, and prognosis in humans suffering from severe COVID-19. A particularly detrimental role was attributed to excessive IFNγ levels (Grant et al., 2021). Moreover, an earlier study showed that the combined activity of IFNγ and TNF caused inflammatory types of cell death, which was named PANoptosis, that is, pyroptosis, apoptosis, and necroptosis, and that blocking these cytokines improved disease outcomes in KRT18-hACE2 mice infected with human SARS-CoV-2 (Karki et al., 2021). In accordance with these reports and our finding of higher IFNγ levels in highly susceptible BALB/c mice, we tested if blocking IFNγ and TNF might reduce disease severity after maVie16 infection. maVie16-infected (1 × 105 TCID50) BALB/c mice treated intraperitoneally with a mixture of anti-IFNγ and anti-TNF antibodies (on days 1 and 3 p.i.; Figure 6D and Figure 6—figure supplement 2A) significantly improved weight loss (Figure 6E) and decreased lung weights (Figure 6G), the viral load (Figure 6—figure supplement 2B), as well as circulating monocyte levels (Figure 6—figure supplement 2C) while it had only minor effects on body temperature (Figure 6F). In C57BL/6 mice, the same treatment had no effects on body or lung weights, or viral load (Figure 6—figure supplement 2D, E, G and H), but significantly improved the altered body temperature and circulating leukocyte numbers (Figure 6—figure supplement 2F and I). Though other cytokines and chemokines must be involved, these results underline the therapeutic potential of IFNγ and TNF blockade as COVID-19 treatment.
 
-## ACE2 expression is essential for maVie16 infections
+### ACE2 expression is essential for maVie16 infections
 
 We have previously shown (using Ace2 mutant mice) that ACE2 is essential for in vivo SARS-CoV infections (Kuba et al., 2005). ACE2 is also an important receptor for SARS-CoV-2; however, other receptors have been critically proposed to mediate infections such as neuropilin-1 (Cantuti-Castelvetri et al., 2020; Daly et al., 2020) or CD147 (Wang et al., 2020a, Wang et al., 2020b). Having developed the maVie16 infection system, we could therefore ask one of the key questions to understand COVID-19: is ACE2 also the essential entry receptor for SARS-CoV-2 infections in a true in vivo infection model? To answer this question, we infected ACE2-deficient male Ace2-/y mice (Figure 7A and Figure 7—figure supplement 1A). In contrast to infected littermate control animals, Ace2-/y mice were fully protected against infection with 5 × 105 TCID50 maVie16, maintained stable body weight (Figure 7B) and temperature (Figure 7C), and were protected from pneumonia development as indicated by lower lung weight (Figure 7D) and the absence of any lung pathology (Figure 7E). Resistance to infection was further indicated by the complete absence of nucleocapsid-positive cells in lungs of Ace2-/y animals (Figure 7E). In conflict with this observation, we still detected similar viral genome copy numbers in both groups (Figure 7—figure supplement 1B), suggesting that this was reflective of initial maVie16 input rather than productive infection. Thus, genetic inactivation of ACE2 protects mice from productive SARS-CoV-2 infections and lung pathologies.
 
-## Inhalation of ACE2 can protect from maVie16 infections
+![Figure 7.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig7-v2.jpg)
+
+**Figure 7.:** (A) Experimental scheme for (B–E): male Ace2-deficient (Ace2-/y) or control (Ace2+/y) mice were infected with 5 × 105 TCID50 maVie16. (B) Body weight and (C) temperature kinetics over 3 days after infection. (D) Lung tissue weight 3 days post infection (p.i.). (E) Lung histology 3 days after infection (left panels: hematoxylin and eosin stain; right panels: anti-SARS-CoV-2 nucleocapsid immune-stain); black rectangles in the upper pictures indicate the area magnified in the respective lower row picture; scale bars represent 100 µm. (F) Experimental scheme for (G–L). BALB/c mice were infected with 105 TCID50 maVie16 and treated daily intranasally up to day 4 p.i. with 100 µg recombinant murine soluble (rms) ACE2 or vehicle (the first treatment was administered together with virus). (G) Body weight and (H) temperature kinetics over 5 days after infection. (I) Lung weight, (J) lung histology (hematoxylin and eosin stain), (K) lung viral load, and (L) blood cells on day 5 after infection. (M) Experimental scheme for (N) and (O). BALB/c mice were infected with 105 TCID50 maVie16 and treated daily, intranasally up to day 5 p.i. with 100 µg rms ACE2 or vehicle. The first treatment was administered either 12 hr, 24 hr, or 48 hr p.i. (N) Body weight and (O) survival over 7 days of infection. (B, C, G, H, N, O) mean ± SD; two-way ANOVA with Dunnett’s multiple comparisons test (vs. the respective initial body weight or temperature); (D, I, K, L) Mann–Whitney test; * p≤0.05; **p≤0.01; ***p≤0.001; ns, not significant (p>0.05).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74623/elife-74623-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Experimental scheme for (B): male Ace2-deficient (Ace2-/y) or control (Ace2+/y) mice were infected with 5 × 105 TCID50 maVie16. (B) Lung viral load 3 days post infection (p.i.). (C) Experimental scheme for (D). BALB/c mice were infected with 105 TCID50 maVie16 and treated daily intranasally up to day 4 p.i. with 100 µg recombinant murine soluble (rms) ACE2 or vehicle (the first treatment was administered together with virus). (D) Lung histology (anti-SARS-CoV-2 nucleocapsid immune stain) on day 5 after infection; black rectangles in the upper pictures indicate the area magnified in the respective lower row picture; arrowheads indicate infected (nucleocapsid-positive) cells; scale bars represent 100 µm. (E) Experimental scheme for (F–J). C57BL/6 mice were infected with 5 × 105 TCID50 maVie16 and treated daily intranasally up to day 4 p.i. with 100 µg rms ACE2 or vehicle (the first treatment was administered together with virus). (F) Body weight and (G) temperature kinetics over 5 days after infection. (H) Lung weight, (I) lung viral load, and (J) blood cells on day 5 after infection; (K) Experimental scheme for LBALB/c mice were infected with 105 TCID50 maVie16 and treated daily, intranasally up to day 5 p.i. with 100 µg recombinant murine soluble (rms) ACE2 or vehicle. The first treatment was administered either 12h, 24h or 48h p.i. (L) Body temperature over 7 days of infection. (B, H–J) mean + SD; Mann–Whitney test; (F, G, L) mean ± SD; two-way ANOVA with Dunnett’s multiple comparisons test (vs. the respective initial body weight or temperature); **p≤0.01; ***p≤0.001; ns, not significant (p>0.05).
+
+### Inhalation of ACE2 can protect from maVie16 infections
 
 To test whether ACE2 could also be used therapeutically to protect from maVie16-induced lung pathologies in BALB/c and C57BL/6 mice, we performed prophylactic inhalation treatments with recombinant murine soluble (rms) ACE2. maVie16-infected (1 × 105 TCID50) BALB/c mice that were treated with rmsACE2 (Figure 7F and Figure 7—figure supplement 1C) did not lose body weight (Figure 7G), developed less hypothermia (Figure 7H), exhibited lower lung weights (Figure 7I), and were largely protected from pneumonia (day 5 p.i.; Figure 7J), had lower lung viral loads (Figure 7K), and fewer blood neutrophils (Figure 7L) than vehicle-treated animals, indicating marked prevention of mCOVID-19 development. Further, we found fewer SARS-CoV-2 nucleocapsid-positive cells in lungs of BALB/c animals treated with rmsACE2 5 days after infection with maVie16 as compared to controls (Figure 7—figure supplement 1D). Similarly, rmsACE2 treatment of maVie16-infected (5 × 105 TCID50) C57BL/6 mice (Figure 7—figure supplement 1E) prevented weight loss and reduced the viral load (Figure 7—figure supplement 1F and G, respectively) while it did not affect temperature, lung weight, and blood leukocyte numbers (Figure 7—figure supplement 1G, H and J, respectively). Strikingly, inhalative ACE2 therapy was still fully protective when applied 12 hr post infection (Figure 7M–O). While mice that received inhalation therapy at later time points post infection still developed disease (Figure 7N), mortality was completely prevented or reduced when inhalative treatment was applied 24 hr or 48 hr post infection, respectively (Figure 7O). These data show that inhalation of rmsACE2 can markedly prevent maVie16-induced (m)COVID-19.
 
@@ -123,27 +171,982 @@ Overall, we here report the development of a novel mouse-adapted SARS-CoV-2, whi
 
 ## Materials and methods
 
-## Reagents and resources
+### Reagents and resources
 
-## Methods
+**Key resources table**
 
-## Animal studies
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>BALB/cJ</td>
+      <td>Own colony, Jackson Labs</td>
+      <td>JAX #000651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>C57BL/6J</td>
+      <td>Own colony, Jackson Labs</td>
+      <td>JAX #000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>KRT18-hACE2</td>
+      <td>Own colony, Jackson Labs</td>
+      <td>JAX #034860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>Ace2-/y</td>
+      <td>Own colony, Jackson Labs Crackower et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2)</td>
+      <td>BavPat1/2020</td>
+      <td>Charité, Berlin, Germany</td>
+      <td>European Virology Archive# 026V-03883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2)</td>
+      <td>maVie16</td>
+      <td>This study</td>
+      <td>This study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus)</td>
+      <td>Vero</td>
+      <td>ATCC</td>
+      <td>CCL-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus)</td>
+      <td>Vero TMPRSS2 (OE)</td>
+      <td>This study</td>
+      <td>This study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Caco-2</td>
+      <td>ATCC</td>
+      <td>HTB37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>Thermo Fisher, eBioscience</td>
+      <td>Cat# 65-0865-14</td>
+      <td>FC (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD16/32 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101320; RRID:AB_1574975</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV510 anti-mouse CD45 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103138; RRID:AB_2563061</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD45 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103106; RRID:AB_312971</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/dazzle 594 anti-mouse CD45.2 (monoclonal mouse)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109845; RRID:AB_2564176</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD45R (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103208; RRID:AB_312993</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse F4/80 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 123110; RRID:AB_893486</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-mouse CD11b (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101222; RRID:AB_493705</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 anti-mouse CD11b (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101215; RRID:AB_312798</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 605 anti-mouse CD11b (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101237; RRID:AB_11126744</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD11b (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101208; RRID:AB_312791</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD11c (monoclonal Armenian hamster)</td>
+      <td>BioLegend</td>
+      <td>Cat# 117310; RRID:AB_313779</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Texas Red anti-mouse CD11c (monoclonal Armenian hamster)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# MCD11C17;RRID:AB_10373971</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD11c (monoclonal Armenian hamster)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557401; RRID:AB_396684</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 510 anti-mouse Ly-6C (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128033; RRID:AB_2562351</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 anti-mouse Ly-6G (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127617; RRID:AB_1877262</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse Ly-6G (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127605; RRID:AB_1236488</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV510 anti-mouse Ly-6G (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127633; RRID:AB_2562937</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse Ly6G (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127608; RRID:AB_1186099</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 Siglec-F (monoclonal rat)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 565526; RRID:AB_2739281</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor 450 anti-mouse MHC Class II (I-A/I-E) (monoclonal rat)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 48-5321-82; RRID:AB_1272204</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-mouse CD115 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 135517; RRID:AB_2562760</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD19 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115506; RRID:AB_313641</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-mouse CD19 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115540; RRID:AB_2563067</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD19 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115507; RRID:AB_313642</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD3 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100204; RRID:AB_312661</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Dazzle 594 anti-mouse CD3 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100245; RRID:AB_2565882</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cy5.5 anti-mouse CD3 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100217; RRID:AB_1595597</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor450 anti-mouse CD3 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100213; RRID:AB_493644</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD3 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100205; RRID:AB_312662</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD4 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100406; RRID:AB_312691</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF700 anti-mouse CD4 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100429; RRID:AB_493698</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cy5.5 anti-mouse CD4 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100433; RRID:AB_893330</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD4 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100407; RRID:AB_312692</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF700 anti-mouse CD8a (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100729; RRID:AB_493702</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue anti-mouse CD8a (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100728; RRID:AB_493426</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD8a (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100707; RRID:AB_312746</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse TCRβ chain (monoclonal Armenian hamster)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109207; RRID:AB_313430</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse TCRγδ (monoclonal Armenian hamster)</td>
+      <td>BioLegend</td>
+      <td>Cat# 118107; RRID:AB_313831</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cy5.5 anti-mouse NK-1.1 (monoclonal mouse)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108727; RRID:AB_2132706</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse NK-1.1 (monoclonal mouse)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108709; RRID:AB_313396</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse FcεRIα (monoclonal Armenian hamster)</td>
+      <td>BioLegend</td>
+      <td>Cat# 134307; RRID:AB_1626104</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 anti-mouse CD117 (c-kit) (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 105813; RRID:AB_313222</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-mouse CD193 (CCR3) (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 144517; RRID:AB_2565743</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-mouse CD49b (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108912; RRID:AB_492880</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF700 anti-mouse CD49b (monoclonal rat)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 56-5971-80; RRID:AB_2574506</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Dazzle 594 anti-mouse CD64 (FCγRI) (monoclonal mouse)</td>
+      <td>BioLegend</td>
+      <td>Cat# 139319; RRID:AB_2566558</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF700 anti-mouse CD43 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 143213; RRID:AB_2800660</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD44 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103012; RRID:AB_312963</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV510 anti-mouse CD138 (monoclonal rat)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 563192; RRID:AB_2738059</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cy5.5 anti-mouse CD21/CD35 (CR2/CR1) (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 123416; RRID:AB_1595490</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF647 anti-mouse CD23 (monoclonal rat)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562826; RRID:AB_2737821</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7anti-mouse CD93 (AA4.1) (monoclonal rat)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 25-5892-82; RRID:AB_469659</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor450 anti-mouse CD90.2 (Thy1.2) (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 140305; RRID:AB_10645335</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse MERTK (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 151504; RRID:AB_2617035</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse MERTK (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 151505; RRID:AB_2617036</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-mouse CD127 (IL-7α) (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 135025; RRID:AB_2562114</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor450 anti-mouse IgM (monoclonal rat)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 48-5890-82;RRID:AB_10671539</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse IgD (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 405704; RRID:AB_315026</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse IgA (monoclonal rat)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 12-4204-83; RRID:AB_465918</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-mouse CD62L (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 104438; RRID:AB_2563058</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC/Cy7 anti-mouse TER-119 (monoclonal rat)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116223; RRID:AB_2137788</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin anti-mouse IgG1 (monoclonal rat)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 553441</td>
+      <td>ELISA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin anti-mouse IgG2b (monoclonal rat)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 553393</td>
+      <td>ELISA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin anti-mouse IgA (polyclonal goat)</td>
+      <td>Southern Biotech</td>
+      <td>Cat# 1040-08</td>
+      <td>ELISA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SARS nucleocapsid (polyclonal rabbit)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB100-56576</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin anti-rabbit IgG (polyclonal goat)</td>
+      <td>Vector Labs</td>
+      <td>Cat# BA-1000</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TNF (neutralizing) (monoclonal rat)</td>
+      <td>In house</td>
+      <td>Clone XT22</td>
+      <td>2 × 500 µg/200 µl/mouse i.p.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFNg (neutralizing) (monoclonal rat)</td>
+      <td>In house</td>
+      <td>Clone XMG 1.2</td>
+      <td>2 × 500 µg/200 µl/mouse i.p.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ß-galactosidase (IgG1 isotype control) (monoclonal rat)</td>
+      <td>In house</td>
+      <td>Clone GL113</td>
+      <td>2 × 500 µg/200 µl/mouse i.p.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-AcGFP1 (Plasmid)</td>
+      <td>Clontech</td>
+      <td>Cat# 632435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-SC2quant</td>
+      <td>This study</td>
+      <td></td>
+      <td>Plasmid containing a PCR-amplified sequence of BavPat1; used as standard for quantification of virus genome copy numbers</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBluescript KS(-)</td>
+      <td>Stratagene</td>
+      <td>Cat# 212208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBMN-I-GFP</td>
+      <td>Addgene</td>
+      <td>Plasmid 1736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBMN-TMPRSS2-I-GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Plasmid containing the PCR-amplified coding sequence of human TMPRSS2; used to transfect Vero cells to enhance in vitro virus propagation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CoV-F3_XhoI</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CTCGAGTTTCCTGGTGATTCTTCTTCAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CoV-R3_BamHI</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CCTAGGTCTGAGAGAGGGTCAAGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CoV-F3</td>
+      <td>Gu et al., 2020</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TCCTGGTGATTCTTCTTCAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CoV-R3</td>
+      <td>Gu et al., 2020</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TCTGAGAGAGGGTCAAGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CoV-P3</td>
+      <td>Gu et al., 2020</td>
+      <td>PCR primers, Microsynth</td>
+      <td>AGCTGCAGCACCAGCTGTCCA (FAM/TAMRA-labeled)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Adar1_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GATGACCAGTCTGGAGGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Adar1_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GCAGCAAAGCCATGAGATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Eif2ak2_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>AAGTACAAGCGCTGGCAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Eif2ak2_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GCACCGGGTTTTGTATCGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Ifng_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>ACTGGCAAAAGGATGGTGACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Ifng_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TGGACCTGTGGGTTGTTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Ifit1_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CAGCAACCATGGGAGAGAATGCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Ifit1_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GGCACAGTTGCCCCAGGTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il1b_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CAAAATACCTGTGGCCTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il1b_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TACCAGTTGGGGAACTCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il6_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CCACGGCCTTCCCTACTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il6_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TGCAAGTGCATCGTTGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il10_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TGAGGCGCTGTCATCGATTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il10_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>CATGGCCTTGTAGACACCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tgfb_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>AGCCCGAAGCGGACTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tgfb_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>TCCACATGTTGCTCCACACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tnf_fwd</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GCGTGGAGCTGAGAGATAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tnf_rev</td>
+      <td>This study</td>
+      <td>PCR primers, Microsynth</td>
+      <td>GATCCCAAAGTAGACCTGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human TMPRSS2_fwd</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AACCTGGGCGCCTGGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human TMPRSS2_rev</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ACGTCAAGGACGAAGACCATGTG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase I</td>
+      <td>Gibco/Thermo Fisher Scientific</td>
+      <td>17018029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNAse I</td>
+      <td>Sigma</td>
+      <td>DN25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant SARS-CoV-2 Spike protein ectodomain</td>
+      <td>Reingard Grabherr, BOKU Vienna Klausberger et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mrsACE2</td>
+      <td>In house (APEIRON Biologics) Monteil et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROTI Prep RNA Mini</td>
+      <td>Carl Roth</td>
+      <td>Cat# 8485.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp Viral RNA Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 52904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E.Z.N.A Viral RNA kit</td>
+      <td>Omega Bio-tek</td>
+      <td>Cat# R6874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA Synthesis Kit</td>
+      <td>Quantabio</td>
+      <td>Cat# 95047-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PerfeCTa SYBR Green SuperMix</td>
+      <td>Quantabio</td>
+      <td>Cat# 95055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VectastainABC kit</td>
+      <td>Vector Labs</td>
+      <td>Cat# PK-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAB Substrate kit</td>
+      <td>Vector Labs</td>
+      <td>Cat# SK-4100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex Macrophage/Microglia Panel</td>
+      <td>BioLegend</td>
+      <td>Cat# 740846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex MU Th Cytokine Panel V02</td>
+      <td>BioLegend</td>
+      <td>Cat# 740741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate (100 mM)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11360070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin streptomycin (10,000 U/ml)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEM nonessential amino acids (100×)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RLT Plus</td>
+      <td>QIAGEN</td>
+      <td>Cat# 1053393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M3148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antigen Unmasking Solution</td>
+      <td>Vector Labs</td>
+      <td>Cat# H3300-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hematoxylin solution (Mayer’s)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# MHS16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.1</td>
+      <td>GraphPad Software, Inc.</td>
+      <td>https://www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>Becton, Dickinson and Company</td>
+      <td>https://www.flowjo.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s Modified Eagle’s Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10564011</td>
+      <td>High glucose, GlutaMAX, HEPES</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Sigma</td>
+      <td>Cat# F9665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Goat serum</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP2-23475</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods
+
+#### Animal studies
 
 For passaging, dose–response and time-course experiments, male 10–12-week-old BALB/cJ and C57BL/6J mice obtained from Janvier or bred and maintained at the animal facility of the Medical University of Vienna were used. Mice expressing human ACE2 under control of the human KERATIN-18 (KRT18) promoter (Tg[KRT18-Ace2])2Prlmn (McCray et al., 2007) (herein referred to as KRT18-huACE2 mice) were obtained from Jackson Labs and bred in the local animal facility. Ace-2-deficient (Ace2-/-) mice were generated as described (Crackower et al., 2002) and bred at the animal facility of the Institute of Molecular Biotechnology Austria, Vienna. All experiments involving SARS-CoV-2 or its derivatives were performed in Biosafety Level 3 (BSL-3) facilities at the Medical University of Vienna and performed after approval by the institutional review board of the Austrian Ministry of Sciences (BMBWF-2020-0.253.770) and in accordance with the directives of the EU.
 
-## Cell lines
+#### Cell lines
 
 Simian kidney Vero cells were provided by Christoph Steininger (Medical University of Vienna, ATCC CCL81). To improve in vitro SARS-CoV-2 propagation (Matsuyama et al., 2020), Vero cells were transduced as previously described (Machacek et al., 2016) with the retroviral expression vector pBMN-I-GFP carrying human TMPRSS2, amplified from the human lung adenocarcinoma cell line Calu-3 (ATCC HTB-55, provided by Walter Berger, Medical University of Vienna) and subcloned via the pBluescript KS(-) plasmid. The transduced cell population was subsequently sorted based on GFP expression to >99% purity, creating VeroTMPRSS2 cells. Both cell lines were cultured in Dulbecco’s Modified Eagle’s medium (DMEM, Gibco/Thermo Fisher) supplemented with GlutaMAX, 10% fetal calf serum (FCS; Sigma), 1% MEM nonessential amino acids solution (Thermo Fisher), and 1% sodium pyruvate (Thermo Fisher) and grown at 37°C at 5% CO2.
 
-## SARS-CoV-2 strains, virus propagation, and growth curves
+#### SARS-CoV-2 strains, virus propagation, and growth curves
 
 The human SARS-CoV-2 isolate BetaCoV/Munich/BavPat1/2020 (referred to as BavPat1) was kindly provided by Christian Drosten, Charité, Berlin (Rothe et al., 2020), and distributed by the European Virology Archive (Ref-SKU: 026V-03883). maVie16 was generated in this study as described. To generate high titer viral stocks, TMPRSS2-overexpressing Vero cells (VeroTMPRSS2) were grown on 175 cm2 tissue culture flasks and were infected with BavPat1 or maVie16 at a multiplicity of infection (MOI) of 0.1 in Vero cell culture medium (described above) with reduced (2%) FCS content. The inoculum was calculated based on stock concentrations determined using TCID50 assays (described below) assuming that 1 * PFU/ml = 0.7 * TCID50/ml applying the Poisson distribution for the estimation of PFU. Supernatants from infected cells were collected after 48–72 hr, clarified by centrifugation (3820 × g, 15 min), and stored in aliquots at –80°C. To determine stock concentrations, TCID50 assays were conducted by infecting Vero cells with 150 µl of 10-fold serial dilutions of viral samples (cell supernatant, cell-free lung homogenate), followed by incubation at 37°C. Cytopatic effects were analyzed by microscopy after 72 hr and titers were calculated by the method of Reed and Muench, 1938. To compare infectivity and viral replication, Vero cells or Caco-2 cells were infected with BavPat1 or maVie16 at a MOI of 0.05 and incubated at 37°C. After 1 hr, the viral inoculum was removed and replaced with medium. At designated time points, supernatants were removed, cleared by centrifugation (500 × g, 5 min), and stored at –80°C until further processing for RNA isolation and quantification of genome copies.
 
-## Generation of a mouse-adapted SARS-CoV-2 virus, maVie16
+#### Generation of a mouse-adapted SARS-CoV-2 virus, maVie16
 
 Mouse adaptation of SARS-CoV-2 and generation of maVie16 were achieved by serial passaging through lungs of BALB/c mice (16 passages). Briefly, three anesthetized (isoflurane), male 10–12-week-old BALB/c mice were infected intranasally (i.n.) with 2 × 106 TCID50 BavPat1 in 50 µl. After 3 days, the mice were euthanized and their lungs were homogenized using a rotor/stator homogenizer in eightfold volume of DMEM. After removal of aliquots for RNA isolation (see below), the lung homogenates were cleared by centrifugation (3820 × g, 6 min), filtered using round-bottom tubes with cell-strainer cap (Falcon), pooled, and administered i.n. to the next group of anesthetized naïve male BALB/c mice. This process of i.n. infection and harvest was repeated 15 times, and weight loss and body temperature (measured with a rectal rodent thermometer; Braintree Scientific) were monitored as readouts of viral pathogenicity. Viral load was quantified by detection of SARS-CoV-2 RNA in the cleared lung homogenate described below. The maVie16 stock (collected from the lungs of mice infected with passage 15) was prepared in Vero cells as described above. maVie16 virus will be shared with research labs fulfilling respective safety requirements upon request and execution of a material transfer agreement.
 
-## Mouse model of COVID-19 (mCOVID-19) and tissue collection
+#### Mouse model of COVID-19 (mCOVID-19) and tissue collection
 
 For dose–response and time-course experiments, male 10–12-week-old BALB/c mice and C57BL/6 mice were infected i.n. with 50 µl DMEM containing indicated doses of maVie16. Clinical signs of disease (loss of body weight and/or temperature) were monitored at indicated time points. Mice were euthanized by cervical dislocation at indicated endpoints for sample collection or whenever they approached 75% of their starting body weight, in accordance with ethical guidelines.
 
@@ -151,48 +1154,48 @@ Blood was collected from euthanized animals from the vena cava and transferred t
 
 Whole lungs were harvested and weights recorded. The left lung was assigned to histology and fixed in 7.5% buffered formaline. At least 50 µg of the right lung were kept for tissue homogenization as described above. For total lung RNA, 80 µl of homogenized tissue was lysed in RLT Buffer (QIAGEN) containing 2-mercaptoethanol (Sigma-Aldrich) and stored at –80°C until further use. The remaining homogenized lung tissue was centrifuged (3820 × g, 6 min) and the cleared homogenate was frozen at –80°C for subsequent viral RNA isolation (see below). To reprepare lung single-cell suspensions for flow cytometry, the remaining right lungs were minced in gentleMACS tubes with the gentleMACS dissociator (Miltenyi Biotec; program m_lung_01) and digested in 2.5 ml of digestion medium (RPMI medium [Gibco] containing 5% FCS, 250 U/ml collagenase I [Gibco], and 20 U/ml DNase I [Sigma]) by shaking at 100 rpm for 30 min at 37°C. Digested samples were then homogenized with the gentleMACS dissociator (program m_lung_02) and filtered over a 70 µm cell strainer (BD Biosciences). After centrifugation (500 × g, 5 min, 4°C), the cell pellet was treated for 5 min with ACK to lyse erythrocytes. After stopping erythrocyte lysis by addition of PBS 1% bovine serum albumin (BSA; Sigma), cells were passaged over a 40 µm cell strainer (BD Biosciences) and resuspended for subsequent antibody staining (see below).
 
-## RNA isolation and gene expression analysis by real-time PCR
+#### RNA isolation and gene expression analysis by real-time PCR
 
 Total RNA was extracted from mouse lung homogenates, and viral RNA was extracted from cleared mouse lung homogenates and cell culture supernatants using the following commercially available kits according to the manufacturer’s instructions: for viral RNA extraction, QIAamp Viral RNA Mini Kit (QIAGEN) and E.Z.N.A Viral RNA kit (Omega Bio-tek) were used. Quantification of viral RNA was performed by quantitative reverse transcription PCR (RT-qPCR) as described below. For total RNA extraction, the samples were passed through a QIAshredder (QIAGEN) to reduce viscosity and subsequently RNA was isolated using the ROTI Prep RNA Mini kit (Carl Roth). After isolation, RNA concentration was measured using a NanoVue Plus Spectrophotometer (GE Healthcare). For cDNA synthesis, 0.5 µg RNA from each sample was reverse-transcribed using the qScript cDNA Synthesis Kit (Quantabio). For subsequent qPCR reactions, PerfeCTa SYBR Green SuperMix (Quantabio) was used in a total reaction volume of 15 µl. TaqMan primer/probes for mouse inflammatory genes were purchased from Microsynth and are listed below. RT-PCR was performed on a StepOnePlus Real-Time PCR System (Applied Biosystems) with the following conditions: 95°C for 3 min, followed by 45 amplification cycles (15 s at 95°C) and elongation (1 min at 60°C).
 
-## SARS-CoV-2 quantification by real-time PCR
+#### SARS-CoV-2 quantification by real-time PCR
 
 To generate a standard curve for quantification of virus genome copy numbers, a 144 bp fragment of the SARS-CoV-2 genome was amplified from BavPat1 cDNA (generated using the qScript XLT cDNA supermix [Quanta Bio] with RNA purified with the QIAamp Viral RNA Mini Kit) with simultaneous insertion of XhoI (5′ end) and BamHI (3′ end) restriction site overhangs by PCR (Touchdown from 70°C to 55°C over 35 cycles) using primers CoV-F3_XhoI and CoV-R3_BamHI and Q5 High-Fidelity DNA Polymerase (New England Biolabs). The purified PCR product was then cloned into pIRES2-GFP1 (Clontech) via directional restriction digest and ligation (XhoI and BamHI Fast Digest enzymes from Thermo Fisher; Ligase from New England Biolabs) to generate the plasmid pIRES2-SC2quant. pIRES2-SC2quant was transfected into One Shot TOP10 Chemically Competent Escherichia coli, followed by amplification from single-cell colonies, isolation of plasmid DNA (using QIAPrep Mini and Midi Prep Kits [QIAGEN]) and validation of the construct by sequencing (Microsynth). Based on the molecular weight of the pIRES2-SC2quant plasmid (3344181.19 Da), a log10 dilution series of the plasmid was prepared to contain 0–1010 plasmid copies. These dilutions were included on each plate for quantification of viral load in tissue samples by qPCR. The qPCR was performed on a StepOnePlus Real-Time PCR System (Applied Biosystems) using primers CoV-F3 and CoV-R3 with (FAM/TAMRA-labeled) probe CoV-P3 (all at 10 µM and all obtained from Microsynth) and the Ultraplex 1-Step ToughMix ROX (Quantabio), with an initial 10 min 50°C incubation for cDNA synthesis, followed by 40 amplification cycles of denaturation (15 s at 95°C) and elongation (1 min at 60°C) (Gu et al., 2020).
 
-## SARS-CoV-2 sequencing
+#### SARS-CoV-2 sequencing
 
 For SARS-CoV-2 genome sequencing, viral RNA was processed as described previously (Agerer et al., 2021; Popa et al., 2020). Briefly, viral RNA was reverse-transcribed with Superscript IV reverse transcriptase (Thermo Fisher Scientific) and viral sequences were amplified with modified primer pools (Itokawa et al., 2020). PCR reactions were pooled and processed for high-throughput sequencing. Amplicons were cleaned up with AMPure XP beads (Beckman Coulter) with a 1:1 ratio. Amplicon concentrations and size distribution were assessed with the Qubit Fluorometric Quantitation system (Life Technologies), and the 2100 Bioanalyzer system (Agilent). Amplicon concentrations were normalized, and sequencing libraries were prepared using the NEBNext Ultra II DNA Library Prep Kit for Illumina (New England Biolabs) according to the manufacturer’s instructions. Library concentrations and size distribution were again assessed as indicated previously and pooled into equimolar amounts for sequencing. Sequencing was carried out on the NovaSeq 6000 platform (Illumina) on a SP flow cell with a read length of 2 × 250 bp in paired-end mode at the Biomedical Sequencing Facility (BSF) of the Medical University of Vienna and CeMM (Research Center for Molecular Medicine of the Austrian Academy of Sciences). Following demultiplexing, FASTQ files were quality controlled using FastQC (v.0.11.8). Trimming of adapter sequences was performed with BBDUK from the BBtools suite (http://jgi.doe.gov/data-and-tools/bbtools). Overlapping read sequences within a pair were corrected for using BBMERGE function from BBTools. Read pairs were mapped on the combined Hg38 and SARS-CoV-2 genome (GenBank: MN908947.3; RefSeq: NC_045512.2) using the BWA-MEM software package with a minimal seed length of 17 (v0.7.17) (Li and Durbin, 2009). Only reads mapping uniquely to the SARS-CoV-2 viral genome were retained. Primer sequences were removed after mapping by masking with iVar (Grubaugh et al., 2019). From the viral reads BAM (binary alignment map) file, the consensus FASTA file was generated using Samtools (v1.9) (Li et al., 2009), mpileup, Bcftools (v 1.9) (Li et al., 2009), and SEQTK (https://github.com/lh3/seqtk, Li, 2021). For calling low-frequency variants, the viral read alignment file was realigned using the Viterbi method provided by LoFreq (v2.1.2) (Wilm et al., 2012). After adding InDel qualities, low-frequency variants were called using LoFreq. Variant filtering was performed with LoFreq and Bcftools (v1.9) (Li, 2011). Only variants with a minimum coverage of 75 reads, a minimum phred value of 90, and indels (insertions and deletions) with an HRUN (homopolymer length on the 3' of the variant) below 4 were considered. Based on control experiments described earlier (Agerer et al., 2021; Popa et al., 2020), all analyses were performed on variants with a minimum alternative frequency of 0.02. Annotations of the variants were performed with SnpEff (v4.3) (Cingolani et al., 2012b) and SnpSift (v4.3) (Cingolani et al., 2012a). Sequencing data of each sequenced passage were deposited at the European Nucleotide Archive (ENA; https://www.ebi.ac.uk/ena) under project accession PRJEB46926.
 
-## Flow cytometry
+#### Flow cytometry
 
 For surface staining, single-cell suspensions were treated with TruStain fcX (anti-mouse CD16/32; BioLegend) and Fixable Viability Dye eFluor 780 (eBioscience) according to the manufacturer’s instructions. Subsequently, fluorescently labeled antibodies were added to cells and incubated for 20 min at 4°C. Cells were then washed and fixed for 30 min at room temperature using the Fixation Medium of the Fix and Perm Cell Fixation and Permeabilization Kit (Nordic-MUbio). Stained and fixed cell suspensions were analyzed using an LSRFortessa (BD Biosciences). A flow cytometry gating strategy example (infected mouse lung) can be found in Figure 4—figure supplement 1. After gating for single/live/CD45+ cells (leukocytes), the following marker combinations have been used to identify the following cell types: lung: alveolar macrophages (AMs): CD11c+/MERTK+; neutrophils: non-AMs/CD11b+/Ly6g+; monocytes (Ly6c+ and Ly6c-): non-AMs/non-neutrophils/CD11b+/CD115+; NK cells: Ly6g- or MERTK-/NK1.1+/CD19-; B cells: Ly6g- or MERTK-/CD19+/NK1.1-; T helper cells: Ly6g- or MERTK-/CD19-/NK1.1-/CD3+ or MHCII+/CD4+/CD8-; cytotoxic T cells: Ly6g- or MERTK-/CD19-/NK1.1-/CD3+ or MHCII+/CD4+/CD8-; pDCs: Ly6g- or MERTK-/CD19-/NK1.1-/CD3+ or MHCII+/CD4-/CD8-/CD11c+/BST2+; cDCs: Ly6g- or MERTK-/CD19-/NK1.1-/CD3+ or MHCII+/CD4-/CD8-/BST2-/CD11c+; blood: neutrophils: CD3- or CD19-/CD11b+/Ly6g+; monocytes (Ly6c+ and Ly6c-): CD3- or CD19-/Ly6g-/CD115+/CD11b+; B cells: CD19+/CD3-; T helper cells: CD19-/CD3+/NK1.1-/CD4+/CD8-; cytotoxic T cells: CD19-/CD3+/NK1.1-/CD8+/CD4-; NK cells: CD19-/CD3-/NK1.1+; pDCs: CD19-/CD3-/NK1.1-/CD11c+/BST2+;.
 
 Data were analyzed using FlowJo software (FlowJo LLC) version 10.7. The fluorescently labeled anti-mouse antibodies (all obtained from BioLegend unless specifically indicated) listed in the Key resources table were used throughout this study.
 
-## Plasma cytokine analysis
+#### Plasma cytokine analysis
 
 Plasma cytokine levels were analyzed using the LEGENDplex MU Macrophage/Microglia and Th Cytokine (V02) panels (BioLegend) according to the manufacturer’s instructions and using an LSRFortessa. Before flow cytometry analysis, samples were fixed using Fixation Medium of the Fix and Perm Cell Fixation and Permeabilization Kit (Nordic-MUbio).
 
-## Analysis of SARS-CoV-2 Spike protein-specific antibodies
+#### Analysis of SARS-CoV-2 Spike protein-specific antibodies
 
 SARS-CoV-2 Spike-specific antibodies were detected by ELISA based on modified, previously described methodologies (Starkl et al., 2020). Briefly, Nunc MaxiSorp flat-bottom plates (Thermo Fisher) were coated overnight at 4°C with 50 µl of purified recombinant SARS-CoV-2 Spike protein ectodomain (Klausberger et al., 2021) (produced in CHO-K1 cells), 2 µg/ml in PBS. After washing 3× with PBS 0.05% Tween-20 (Sigma), plates were blocked by incubation with 100 µl of PBS 1% BSA for at least 2 hr at room temperature. Next, plates were washed 3×, followed by incubation with 50 µl of plasma diluted 1:50, 1:200, and 1:800 (for analysis of IgGs) or 1:40 (for analysis of IgA) for 2 hr at 37°C. After another three washing steps, 50 µl biotinylated detection antibodies specific of mouse IgG1 (clone A85-1; BD Pharmingen), IgG2b (clone R12-3; BD Pharmingen), or IgA (polyclonal; Southern Biotech; all diluted 1:1000 in PBS 1% BSA) were added, followed by incubation for 1 hr at room temperature. Plates were then washed again 3× and incubated with 50 µl of horseradish peroxidase-conjugated streptavidin (BD Pharmingen; 1:500 in PBS 1% BSA) for 20 min at room temperature. Finally, plates were washed 5× and detection was performed using the supersensitive TMB liquid substrate (Sigma) and measurement of (after stopping the reaction by addition of 50 µl 2N H2SO4) absorbance at 450 nm (620 nm reference) on a Sunrise microplate reader (Tecan). IgG titers were calculated by plotting the plasma dilution that gave half-maximal signal of a reference plasma (a plasma pool obtained from mice 14 days after infection with maVie16).
 
-## Histopathological analysis
+#### Histopathological analysis
 
 Lung samples were fixed in 7.5% formalin, embedded in paraffin, cut into 5-µm-thick sections, followed by staining with hematoxylin and eosin or Toluidine Blue. For staining of viral nucleocapsid protein, embedded samples were deparaffinized by immersion in xylene and rehydrated in graded ethanol. After blocking of endogenous peroxidase with 3% H2O2 in PBS for 10 min at room temperature, tissue sections were first subjected to antigen retrieval using Antigen Unmasking Solution (Vector Labs) for 10 min and then incubated with TRIS-buffered saline containing 0.01% Tween (TBST) and 5% goat serum for 10 min at room temperature. Afterwards, slides were incubated overnight at 4°C with SARS Nucleocapsid Protein Antibody (Novus Biologicals) 1:1000 in TBST 5% goat serum. Subsequently, histological slides were washed with TBST and incubated for 30 min with biotinylated goat anti-rabbit IgG (Vector Labs) 1:200 in TBST 5% goat serum at room temperature. After washing with TBST, tissue sections were processed using the Vectastain ABC kit (Vector Labs) and DAB Substrate kit (Vector Labs) according to the manufacturer’s instructions. Tissue sections were finally stained with hematoxylin solution (Mayer’s, Sigma-Aldrich), dehydrated, and coverslipped. Histopathological scoring was performed in a blinded fashion by a trained pathologist using the following parameters: alveolar collapse, intra-alveolar exudate, alveolar septal thickening, pneumocyte proliferation, bronchiolar epithelial alteration, bronchitis, peribronchiolar inflammation, interstitial and perivascular infiltrate, and interstitial fibrosis (0 = none, 1 = mild/focal/few, 2 = severe/diffuse).
 
-## Protein modeling
+#### Protein modeling
 
 A comparative model of mACE2 was created using the Swiss Modeller (Waterhouse et al., 2018), based on the cryoEM structure of hACE2 in complex with BOAT1 (PDB entry 6m18) (Yan et al., 2020). Sequence identity was at 82%, and a model with an overall QMEAN score of –1.28 was obtained. The model superimposed to a previous model of the trimeric Spike with hACE2 (https://covid.molssi.org//models/#spike-protein-in-complex-with-human-ace2-ace2-spike-binding) to obtain an initial model of the Spike mACE2 complex (Capraz et al., 2021). All proteins were fully glycosylated following our previously described protocols (Turupcu and Oostenbrink, 2017). Visualization of the maVie16 mutations in Spike was subsequently created using the mutagenesis wizard in PyMOL (Schrodinger, 2015).
 
-## In vivo treatment with recombinant mACE2
+#### In vivo treatment with recombinant mACE2
 
 rms ACE2 (amino acids 1–740) was produced in CHO cells and purified as described (Monteil et al., 2020). To test in vivo ACE2 interference, mice received daily intranasal treatments with 100 µg rmsACE2 (APEIRON Biologics) or the respective dilution of vehicle. Upon prophylactic treatment, the first dose was given as a mix with maVie16 in 50 µl. All remaining doses were administered in 40 µl endotoxin-free PBS (Gibco) to isoflurane anesthetized animals. Intranasal administration to anesthetized mice is an established method that allows administration of compounds to the lower airways via inhalation due to the anesthesia-related low breathing rate and, hence, deep breaths.
 
-## In vivo cytokine depletion
+#### In vivo cytokine depletion
 
 For in vivo depletion of IFNγ and TNF, mice were intraperitoneally injected on days 1 and 3 after maVie16 infection with 200 µl endotoxin-free PBS (Gibco) containing either 500 µg rat anti-mouse IFNγ (clone XMG1.2) and 500 µg rat anti-mouse TNF (clone XT22) or 500 µg rat IgG1 isotype control (clone GL113; specific for ß-galactosidase) obtained from Polpharma Biologics.
 
-## Statistical analysis
+#### Statistical analysis
 
 Sample size estimation was mainly based on our experience from influenza infection experiments and was performed with R 3.5.1 using relative body weight changes as the main parameter. t-test power was calculated using the power.t.test function (‘stats’ R package). Experimental replicates are always biological replicates. Technical replicates were performed for qPCR data and ELISA data, which are measured in quadruplicates. Statistical analysis was performed using GraphPad Prism 9.1 (GraphPad Software). Details regarding statistical analyses of experiments can be found in the respective figure legends. p-Values ≤ 0.05 were considered statistically significant.

@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/013q1eq08 Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious Disease and Biosecurity, Fudan University Shanghai China
-2. https://ror.org/04xfsbk97 National Clinical Research Center for Infectious Diseases, Shenzhen Third People's Hospital Shenzhen China
-3. https://ror.org/033vjfk17 School of Public Health, Public Health Research Institute of Renmin Hospital, Wuhan University Wuhan China
-4. https://ror.org/01p455v08 Department of Epidemiology and Biostatistics,School of Public Health, Xinjiang Medical University Urumqi China
-5. https://ror.org/02ntheh91 Instituto Venezolano de Investigaciones Cientificas (IVIC) Caracas Venezuela
+1. Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious Disease and Biosecurity, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
+2. National Clinical Research Center for Infectious Diseases, Shenzhen Third People's Hospital Shenzhen China ([ROR:04xfsbk97](https://ror.org/04xfsbk97))
+3. School of Public Health, Public Health Research Institute of Renmin Hospital, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
+4. Department of Epidemiology and Biostatistics,School of Public Health, Xinjiang Medical University Urumqi China ([ROR:01p455v08](https://ror.org/01p455v08))
+5. Instituto Venezolano de Investigaciones Cientificas (IVIC) Caracas Venezuela ([ROR:02ntheh91](https://ror.org/02ntheh91))
 
 † Corresponding author
 
@@ -32,23 +32,39 @@ To study the role of bacterial genomic determinants, other than drug resistance 
 
 ## Results
 
-## Characteristics of the study population and MTB isolates
+### Characteristics of the study population and MTB isolates
 
 The pooled study population from the three different sites in China consisted of 3496 new cases of drug-susceptible TB. The patients were divided into three groups based on their treatment outcomes: good outcomes (88.8%, 3105/3496), poor outcomes (2.6%, 91/3496), and other outcomes (8.6%, 300/3496). To explore the bacterial factors associated with poor TB treatment outcomes, we first excluded patients with outcomes unlikely to be associated with bacterial factors, including patients lost to follow-up, non-TB deaths, and unknown outcomes. Ultimately, a total of 3196 new cases with drug-susceptible TB were included in the study (Figure 1A): 3105 with good outcomes and 91 with poor outcomes (failure, 25; TB death, 15; transferred for MDR, 4; and relapse, 47). The study patients were recruited from Shanghai (49.1%, 1569/3196), Sichuan (30.6%, 979/3196), and Heilongjiang (20.3%, 648/3196) provinces, China (Figure 1A). They had a mean age of 42.1 ± 18.2 years and 72.4% (2313/3196) were male. WGS was performed on all 3196 isolates, with an average depth of 100×and average genome coverage of 98%. Phylogenetic analysis of WGS data showed that nearly three-quarters of the isolates were lineage 2 (74.2%, 2373/3196), with more than half belonging to the modern Beijing sublineage L2.3 (54.9%, 1754/3196) (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig1-v2.jpg)
 
-**Figure 1.:** Mycobacterium tuberculosis.(A) Geographic location of the samples analyzed and study cohort characteristics. (B) The phylogenetic tree of 3196 drug-susceptible tuberculosis strains. The different colors on the branches indicate different lineages and sublineages. The outside circle indicates the treatment outcomes of corresponding patients.
+**Figure 1.:** (A) Geographic location of the samples analyzed and study cohort characteristics. (B) The phylogenetic tree of 3196 drug-susceptible tuberculosis strains. The different colors on the branches indicate different lineages and sublineages. The outside circle indicates the treatment outcomes of corresponding patients.
 
-## Identification of a functional mutation set for predicting treatment outcomes
+### Identification of a functional mutation set for predicting treatment outcomes
 
 GWAS of the MTB isolates identified fourteen fixed nonsynonymous variants associated with poor treatment outcomes (Figure 2A). These variants were distributed in thirteen genes involved in intermediary metabolism, and respiration (cobN, dlaT, metA, Rv0648, and Rv1248c), cell wall and cell processes (ctpB, Rv2164c, and Rv1717) and virulence (otsB1 and Rv3168), with the otsB1 G559D mutation showing the strongest association (p=7.3 × 10–10) (Figure 2—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-v2.jpg)
+
+**Figure 2.:** (A) Manhattan plots of genome-wide association study (GWAS) for fixed single nucleotide polymorphisms (SNPs) associated with poor treatment outcomes. The dashed red line highlights the Bonferroni-corrected threshold (p=5.04 × 10–7). (B) Distribution of GWAS identified unfixed SNPs across gene functional categories. CWP, cell wall, and cell processes; IMR, intermediary metabolism, and respiration; CH, conserved hypotheticals; LM, lipid metabolism; IP, information pathways; RP, regulatory proteins; VDA, virulence, detoxification, adaptation; UN, unknown. (C) Gene prioritization strategies (based on p-value rank) for significantly associated unfixed SNPs. (D) Gene expression from RNA-seq (log2FPKM) of Rv2164c under drug pressure and hypoxia.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The top 50 unfixed mutations were annotated with the gene. The dashed red line highlights the Bonferroni-corrected threshold (p=4.82 × 10–6).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/84815/elife-84815-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The dashed red line highlights the Bonferroni-corrected threshold (p=2.66 × 10–6).
 
 Unfixed mutations are thought to represent adaptive mutations emerging within the host (Nimmo et al., 2020). To investigate whether unfixed mutations affect treatment outcomes, we performed a GWAS analysis of unfixed mutations and found that 237 mutations were associated with poor treatment outcomes (Figure 2—figure supplement 1). The frequency of these mutations was mostly in the range of 5–10%, and they were predominantly found in genes whose encoded proteins are involved in cell wall and cell processes, intermediary metabolism, and respiration (Figure 2B). When the genes carrying unfixed mutations were ranked according to the significance of their associations with poor outcomes, the highest ranked gene was gatA, which has been previously associated with rifampicin tolerance (Cai et al., 2020; Figure 2C).
 
 Gene expression patterns under stress conditions can provide important insights into the gene’s function (Bosch et al., 2021). We, therefore, analyzed the genes containing GWAS-identified fixed mutations for changes in expression after exposure to first-line drugs and hypoxic conditions. The expression of some of the genes increased under these conditions (drug-treated: Rv2164c, cobN, Rv0260c; hypoxia: Rv2164c, otsB1, papA1), but only Rv2164c (Figure 2D) contained both GWAS-identified fixed (Figure 2A) and unfixed (Figure 2C) mutations. The expression of other genes decreased (drug-treated: otsB1, Rv0648, Rv1248c, Rv3168; hypoxia: Rv0648) (Figure 2D; Figure 2—figure supplement 2), suggesting these genes could be involved in adaptation to drug and hypoxic stress.
 
-## Ongoing mutational signatures of ROS associated with TB treatment outcomes
+### Ongoing mutational signatures of ROS associated with TB treatment outcomes
 
 Previous reports have suggested that poor TB treatment outcomes may be associated with increased ROS mutational signatures (C>T/G>A mutations) (Liu et al., 2020b; Moreno-Molina et al., 2021). To determine whether the increased ROS signatures were the result of mutations that were fixed before the infection or were unfixed because they arose de novo during infection, we compared the distribution of six mutation types in fixed and unfixed mutations. In the fixed mutations, there was no significant difference in the proportions of ROS mutational signatures for isolates from patients with good or poor outcomes (43.9% vs 44.2%, t-test, p=0.364, Figure 3A). In the unfixed de novo mutations, however, the ROS mutational signatures were significantly more frequent in isolates from patients with poor outcomes (26.3% vs 22.9%, t-test, p=0.027, Figure 3A). A further analysis of the distribution of unfixed mutations across gene functional categories found no difference in the distribution of total unfixed mutations between good and poor outcomes (Figure 3B), but isolates from patients with poor outcomes showed a higher percentage of nonsynonymous mutations (5.7% vs 3.9%, t-test, p=0.048, Figure 3B) in genes belonging to the functional category ‘information pathway’.
 
@@ -58,7 +74,7 @@ Previous reports have suggested that poor TB treatment outcomes may be associate
 
 Nucleotide diversity and the characteristics of the different lineages of MTB are thought to be determinants of virulence and thus may affect TB treatment outcomes. (O’Neill et al., 2015; Tong et al., 2022). An analysis of nucleotide diversity revealed no significant differences between isolates from patients with good or poor outcomes (2.0 × 10–4 vs 2.6 × 10–4, t-test, p=0.156, Figure 3C). In contrast, an analysis of lineage distribution showed that strains belonging to the modern Beijing lineage L2.3 were significantly more prevalent in patients with good outcomes (55.5% vs 44.0%, chi-square test, p=0.038, Figure 3D). Although lineage L2.3 has been associated with high virulence and increased transmission (Tong et al., 2022), lineage was not associated with poor treatment outcomes in the populations studied.
 
-## GWAS-identified mutations help predict TB treatment outcomes
+### GWAS-identified mutations help predict TB treatment outcomes
 
 To identify the risk factors for poor TB treatment outcomes, we used logistic regression that included both the patients’ clinical characteristics and the bacterial factors associated with poor outcomes. We found that patient age, sex, duration of diagnostic delay, and the GWAS-identified fixed mutations were all independently associated with poor TB outcomes (Figure 4A). We then performed logistic regression with the identified risk factors to construct a clinical prediction model that is depicted graphically by the nomogram (Figure 4B). For example, in a 65-year-old male TB patient with a 4 month delay in diagnosis, the risk of poor outcome would increase from 5.4 to 17.4% if his MTB isolate contained at least one GWAS-identified mutation.
 
@@ -86,24 +102,24 @@ In conclusion, we found that there are bacterial genomic variants that are signi
 
 ## Materials and methods
 
-## Selection of patients and samples
+### Selection of patients and samples
 
 A strain database search was performed for TB patients treated during 2009–2020 at three study sites in Shanghai, Sichuan, and Heilongjiang, China. For each of the 4374 TB patients registered during this period, a pretreatment sputum sample was decontaminated and inoculated onto Löwenstein-Jensen (LJ) medium (Heilongjiang) or in liquid medium (Shanghai and Sichuan) and observed for 6–8 weeks. Culture-positive isolates were re-cultured on LJ medium for 3–4 weeks. Colonies were scraped from the surface of the LJ slopes and the DNA was isolated for WGS. WGS data and the patients’ demographic and clinical features were obtained from a published study (Li et al., 2022). All new cases susceptible to first-line drugs (rifampicin, isoniazid, pyrazinamide, ethambutol) by genotypic drug-susceptibility testing (gDST), and whose records contained treatment outcomes, were selected for the study.
 
 The WHO recommended treatment outcome definitions for TB are cured, treatment completed, treatment failed, died, lost to follow-up and not evaluated (Linh et al., 2021). Of these, patients who died were divided into deaths from TB and non-TB, and those not evaluated included cases transferred for treatment of multidrug-resistant tuberculosis (MDR-TB) and cases whose treatment outcome was unknown. For the current study, TB treatment outcomes were grouped into three categories: (1) good outcomes -- cured and treatment completed; (2) poor outcomes -- treatment failures, deaths from TB, transferred for MDR and relapse; and (3) other -- lost to follow-up, non-TB deaths and unknown outcome.
 
-## SNPs calling, resistance prediction, and phylogenetic reconstruction
+### SNPs calling, resistance prediction, and phylogenetic reconstruction
 
 A previously described pipeline was used for calling single nucleotide polymorphisms (SNPs) (Chen et al., 2021). Briefly, the Sickle tool was used to trim WGS data to retain reads with a Phred base quality above 20 and a length greater than 30 nucleotides. Reads were mapped to the MTB H37Rv reference strain (GenBank AL123456) with bowtie2 (v2.2.9), and then SAMtools (v1.3.1) was used for SNP-calling with a mapping quality greater than 30. Varscan (v2.3.9) was used to identify fixed (frequency, ≥75%) and unfixed (<75%) SNPs with at least 5 supporting reads and the strand bias filter option on. A previously validated pipeline was used to filter out false positives that may have arisen during the in vitro expansion of bacterial colonies or caused by PCR and sequencing errors (Liu et al., 2022). The drug-resistance profile and lineages were predicted from WGS data using SAM-TB (Yang et al., 2022). Phylogenetic trees were constructed using the maximum-likelihood method (RAxML-NG) (Kozlov et al., 2019) and visualized on the Interactive Tree of Life platform (https://itol.embl.de/).
 
-## Estimates of nucleotide diversity and GWAS analyses
+### Estimates of nucleotide diversity and GWAS analyses
 
 Nucleotide diversity (π) was estimated using the PoPoolation package (Kofler et al., 2011). Following O’Neill et al. (O’Neill et al., 2015), we randomly subsampled (n=10) read data from each sample to a uniform 50x coverage to limit the effects of differential coverage across samples. Using the subsampled data with uniform coverage, we then calculated nucleotide diversity in 100 kb sliding windows across the genome in 10 kb steps. GWAS analyses were performed using GEMMA software (v0.98.3) (Zhou and Stephens, 2012) to identify nonsynonymous variants associated with poor TB treatment outcomes. A linear mixed model was used to control for the confounding effects of MTB lineage, sublineage, and outbreak-based population structure (Coll et al., 2018). Host risk factors associated with poor treatment outcomes such as age, sex, and duration of diagnostic delay were included as covariates in the GWAS, and the significance threshold was adjusted with the Bonferroni correction.
 
-## RNA-seq data collection and analysis
+### RNA-seq data collection and analysis
 
 Raw RNA-Seq read data (GSE165581: INH, GSE166622: RIF, GSE118084: EMB, and GSE116353: hypoxia) from MTB laboratory strain H37Rv exposed to first-line drugs and hypoxic conditions was downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/). Sequencing reads passing quality control was aligned to the MTB H37Rv reference strain using bowtie2. Unique reads were selected and sorted using SAMtools, then quantitated using htseq-count (v0.11.3). FPKM values calculated by DESeq2 (v1.26.0) were used as measures of gene expression, and genes with |log2(fold change)|≥1 and p-values <0.05 were considered differentially expressed.
 
-## Statistical analysis
+### Statistical analysis
 
 The t-test was used for comparing the mutations across gene functional categories in TubercuList (Kapopoulou et al., 2011) nucleotide diversity and the ratios of the six mutation types between TB patients with good and poor treatment outcomes. The mean was given plus or minus standard error (mean ± SE). The chi-square test was used to assess whether the distribution of MTB lineages differed between patients with different treatment outcomes. Factors associated with poor treatment outcomes were tested with logistic regression in univariate and multivariate analyses. Variables found to have a p<0.2 in the univariate analyses were included in the multivariate models. We constructed logistic regression models with the selected bacterial and host factors as predictors of TB treatment outcome, and the ROC curves of the prediction models were compared using DeLong’s test.

@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Biochemistry, University of Wisconsin–Madison Madison United States
-2. https://ror.org/01y2jtd41 Integrated Program in Biochemistry, University of Wisconsin–Madison Madison United States
-3. https://ror.org/01y2jtd41 Department of Chemistry, University of Wisconsin–Madison Madison United States
-4. https://ror.org/04ywg3445 New England Biolabs Ipswich United States
+1. Department of Biochemistry, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Integrated Program in Biochemistry, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Chemistry, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. New England Biolabs Ipswich United States ([ROR:04ywg3445](https://ror.org/04ywg3445))
 
 † Corresponding author
 
 ## Abstract
 
-In eukaryotes, splice sites define the introns of pre-mRNAs and must be recognized and excised with nucleotide precision by the spliceosome to make the correct mRNA product. In one of the earliest steps of spliceosome assembly, the U1 small nuclear ribonucleoprotein (snRNP) recognizes the 5' splice site (5' SS) through a combination of base pairing, protein-RNA contacts, and interactions with other splicing factors. Previous studies investigating the mechanisms of 5' SS recognition have largely been done in vivo or in cellular extracts where the U1/5' SS interaction is difficult to deconvolute from the effects of trans -acting factors or RNA structure. In this work we used colocalization single-molecule spectroscopy (CoSMoS) to elucidate the pathway of 5' SS selection by purified yeast U1 snRNP. We determined that U1 reversibly selects 5' SS in a sequence-dependent, two-step mechanism. A kinetic selection scheme enforces pairing at particular positions rather than overall duplex stability to achieve long-lived U1 binding. Our results provide a kinetic basis for how U1 may rapidly surveil nascent transcripts for 5' SS and preferentially accumulate at these sequences rather than on close cognates.
+In eukaryotes, splice sites define the introns of pre-mRNAs and must be recognized and excised with nucleotide precision by the spliceosome to make the correct mRNA product. In one of the earliest steps of spliceosome assembly, the U1 small nuclear ribonucleoprotein (snRNP) recognizes the 5' splice site (5' SS) through a combination of base pairing, protein-RNA contacts, and interactions with other splicing factors. Previous studies investigating the mechanisms of 5' SS recognition have largely been done in vivo or in cellular extracts where the U1/5' SS interaction is difficult to deconvolute from the effects of trans-acting factors or RNA structure. In this work we used colocalization single-molecule spectroscopy (CoSMoS) to elucidate the pathway of 5' SS selection by purified yeast U1 snRNP. We determined that U1 reversibly selects 5' SS in a sequence-dependent, two-step mechanism. A kinetic selection scheme enforces pairing at particular positions rather than overall duplex stability to achieve long-lived U1 binding. Our results provide a kinetic basis for how U1 may rapidly surveil nascent transcripts for 5' SS and preferentially accumulate at these sequences rather than on close cognates.
 
 ## Introduction
 
@@ -30,13 +30,33 @@ U1 small nuclear ribonucleoprotein complex (snRNP) is responsible for 5ʹ SS sel
 
 Structural biology of both Saccharomyces cerevisiae (yeast) and human U1 snRNP has revealed how snRNP proteins could play key roles in 5ʹ SS recognition in addition to base pairing with the SSRS. In crystal structures of human U1 snRNP bound to a 5ʹ SS-containing RNA oligonucleotide (oligo), the conserved U1-C protein (Yhc1 in yeast) contacts the SSRS/5ʹ SS duplex in the minor groove at the pairing site between the nearly invariant 5ʹ SS G(+1) and U(+2) nucleotides with the snRNA (Kondo et al., 2015; Pomeranz Krummel et al., 2009). Similarly, in cryo-EM structures containing yeast U1 snRNP, Yhc1 contacts the SSRS/5ʹ SS duplex, also near G(+1), while a second yeast splicing factor, Luc7, contacts the snRNA strand opposite (Figure 1A and B; Bai et al., 2018; Li et al., 2019; Plaschka et al., 2018). The proximity of Yhc1 and Luc7 to the SSRS/5ʹ SS duplex are also consistent with genetic data supporting roles for these proteins in 5ʹ SS recognition (Chen et al., 2001; Fortes et al., 1999; Schwer and Shuman, 2015; Schwer and Shuman, 2014). Filter-binding competition assays using a reconstituted human U1 snRNP showed that U1-C contributes to the affinity and specificity of U1 for 5ʹ SS RNA oligos (Kondo et al., 2015). However, these assays are difficult to interpret with respect to a mechanism of 5ʹ SS discrimination since it is unclear if equilibrium was reached during the experiment (Jarmoskaite et al., 2020), the assay was limited in its ability to directly detect interactions with non-consensus 5ʹ SS, and it provided no information on how or if the kinetics of U1 interactions differed between different 5ʹ SS RNAs. Thus, it is unknown if recognition of 5ʹ SS originates from U1’s failure to bind mismatched RNAs or due to a selection event occurring after association.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cryo-EM structure of the yeast U1 snRNP obtained as part of the spliceosome A complex (PDB 6G90). U1 proteins are labeled and shown as either cartoons or spacefill (Yhc1 and Luc7). The U1 snRNA backbone is shown as a black ribbon. (B) Expanded view of the region within the dotted box in panel (A) showing the cleft formed by Yhc1 (purple) and Luc7 (red) that binds the U1 SSRS/5’ SS duplex. Nucleotides at the 5’ and 3’ ends of the of the SS and splice site recognition sequence (SSRS) are labeled. (C) Preparation of purified, fluorescently labeled yeast U1 snRNP using SNAP and TAP tags. In single-molecule experiments, U1 snRNP is immobilized to the slide surface and its interactions with Cy3-labeled RNA oligomers are observed using colocalization single-molecule spectroscopy (CoSMoS). The U1 SSRS that binds to the oligo is shown in red. (D) Images showing individual U1 snRNP molecules tethered to the slide surface (left field of view, FOV) and colocalized Cy3-labeled RNA-4+2 molecules (right FOV). Each FOV is ~50 µm in diameter. (E) Representative fluorescence trajectory of changes in Cy3 intensity (green) due to oligo binding to a single immobilized U1 molecule. RNA-binding events appear as spots of fluorescence in the recorded images (see inset). Also shown is the predicted pairing interactions (blue) between the RNA-4+2 oligo and the U1 SSRS. (F) Probability density histogram of dwell times for the RNA-4+2 oligo (N=367) and the fitted parameters of the data to an equation containing two exponential terms; the shaded region represents the uncertainty associated with the parameters. The dwell times are plotted as binned values, with bins values chosen that adequately represent the underlying distribution for visualization. The error bars of each bin are computed as the error or of a binomial distribution. The ordinate values are plotted on a log-scale to highlight the difference in short- and long-lived components (see Methods for more details). (G) Kinetic model with optimized rate constants describing the interaction between U1 snRNP and RNA-4+2. In this scheme, ‘Bound’ and ‘Bound*’ states correspond to the short- and long-lived bound time constants observed in the dwell time analysis, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Plotted are the number of peptide spectral matches observed for the indicated U1 small nuclear ribonucleoprotein (snRNP) proteins (blue) vs. the predicted molecular weight of the protein in kDa. The indicated U1 proteins were observed in all preparations of U1 analyzed by mass spectrometry. In some preparations, peptides corresponding to Cbp20 (two out of three preparations), Cbp80 (one out of three preparations), and Snu114 (one out of three preparations) were also observed (red). These were the only known non-U1 splicing factors observed in the samples and these factors were likely present at very low levels since few peptides were observed given the molecular weights of the proteins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The presence of the U1 splice site recognition sequence (SSRS) in the purified U1 snRNP was confirmed by dideoxy sequencing of the SSRS and comparison with sequencing of the snRNA present in total RNA isolated from yeast whole cell extract (yWCE). The dideoxynucleotide present in each reaction is noted above the corresponding lane. Lanes marked X did not contain any dideoxynucleotides. Similar patterns are obtained for the U1 snRNA present in the yWCE as in the isolated U1 and confirm presence of the SSRS. (B) Purified U1 can restore splicing activity of yWCE in which the endogenous U1 was ablated by addition of a complementary DNA oligo and RNase H cleavage. Relative splicing efficiencies shown were calculated as the amounts of mRNA products formed compared to the total of the observed RNA species. The bar graph represents the average of three replicate experiments ± SD.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Relative event densities of oligo binding to immobilized U1 molecules for RNA-C (little to no pairing with the splice site recognition sequence [SSRS]) and RNA-4+2 (the WT RP51A 5' splice site [5’ SS] with six predicted base pairs). Ordinate values are computed as the number of binding events (N) per area of interest (AOI) per minute (min). Plotted are the results from three replicate experiments (dots) along with the average ± SD (horizontal bars and vertical lines).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Fluorescence trajectories of changes in Cy3 intensity (green) due to oligo binding to a single immobilized U1 molecule for 10 nM of RNA-10, RNA-4+2, and RNA-C collected continuously at 1 frame per second (1 Hz). Probability density histograms of dwell times overlaid with maximum likelihood estimates of a double-exponential function for RNA-10 (B) and RNA-4+2 (C) (solid line). See Figure 1—source data 2 for estimated parameters and numbers of events (N).
+
 Colocalization single-molecule spectroscopy (CoSMoS) has previously been used to study the kinetics of both yeast and human U1/RNA interactions in cell extracts (Braun et al., 2018; Hoskins et al., 2011; Larson and Hoskins, 2017; Shcherbakova et al., 2013). In all cases, short- and long-lived, 5ʹ SS-dependent interactions were observed between U1 and immobilized pre-mRNAs. In previous work from our laboratory with yeast U1 in whole cell extract (WCE), we showed how the populations of short- and long-lived interactions as well as their lifetimes can vary depending on the presence of a consensus or weak (containing additional mismatches) 5ʹ SS or due to mutation of Yhc1 (Larson and Hoskins, 2017). These interactions were also strongly influenced by the presence or absence of trans-acting factors that bind elsewhere on the pre-mRNA, including the nuclear cap-binding complex (CBC) or the branch site bridging protein (BBP)/Mud2 complex, that together with U1 form the yeast E complex spliceosome or commitment complex (Larson and Hoskins, 2017; Séraphin and Rosbash, 1991; Seraphin and Rosbash, 1989). Our results were consistent with a two-step mechanism for 5ʹ SS recognition by U1 that involves reversible formation of an initial weakly bound complex with RNA that can transition to a more stably bound state, as was proposed previously by others (Du et al., 2004; McGrail and O’Keefe, 2008). Yet, neither our prior experiments nor those from other laboratories could exclude roles for other, non-U1 splicing factors present in the WCE in this process or potential influence of pre-mRNA structure on the observed kinetics.
 
 In this study, we use CoSMoS to directly observe how individual yeast U1 snRNP molecules interact with short RNA oligos. The short- and long-lived interactions observed in cell extracts with large pre-mRNA substrates are also observed when purified U1 snRNP binds cognate RNAs providing direct evidence for these kinetic features being inherent to 5ʹ SS recognition. By using RNA oligos with varying base-pairing strength to the snRNA as well as with different locations and types of mismatches, we show that 5ʹ SS recognition leading to long-lived complexes occurs subsequent to binding. RNAs with limited pairing to the SSRS are released quickly after association while those with extended complementarity and pairing at certain positions are more likely to be retained and form long-lived complexes. Significantly, formation of long-lived U1/RNA complexes does not always correlate with the predicted thermodynamic stabilities of the SSRS/5ʹ SS RNA duplexes, which likely reflects the importance of snRNP proteins in the process. We propose that U1 uses a multi-step kinetic pathway to discriminate between RNAs and that formation of long-lived complexes is dependent on multiple factors that together favor U1 accumulation on introns competent for splicing.
 
 ## Results
 
-## U1 forms short- and long-lived complexes with RNAs containing a 5ʹ SS sequence
+### U1 forms short- and long-lived complexes with RNAs containing a 5ʹ SS sequence
 
 Since we wished to study U1/5ʹ SS interactions in the absence of trans-acting factors, we first developed a protocol for purifying fluorophore-labeled U1 snRNP from yeast extract. We genetically encoded a tandem affinity purification (TAP) tag on the U1 protein Snu71 and a SNAP-tag on the U1 protein Snp1 in a protease-deficient, haploid yeast strain (Figure 1C). TAP-tagged Snu71 has previously been used to purify U1 snRNP (van der Feltz and Pomeranz Krummel, 2016; Rigaut et al., 1999), and SNAP-tagged Snp1 has been used to fluorescently label and visualize U1-binding events by single-molecule fluorescence in WCE (Hoskins et al., 2011; Larson and Hoskins, 2017). Extracts were prepared from the dual-tagged strain, and U1 snRNP purified using published protocols (van der Feltz and Pomeranz Krummel, 2016). Fluorophore labeling was carried out concertedly with TEV protease cleavage of the TAP tag, and excess fluorophore was removed during calmodulin affinity purification. In these experiments, a tri-functional SNAP-tag ligand containing a Dy649 fluorophore, biotin, and benzyl-guanine leaving group (Smith et al., 2013) was used to simultaneously fluorophore label and biotinylate U1 on the Snp1 protein.
 
@@ -54,13 +74,13 @@ Previous analysis of U1-binding events on immobilized RP51A pre-mRNAs in yeast W
 
 Together, our data indicate that short- and long-lived interactions with RNA substrates are an inherent property of U1. Since we purified and immobilized U1 and studied its interactions with small RNAs, the diversity of binding events cannot solely originate from the influence of trans-acting factors present in a WCE or folding/unfolding of large RNA substrates. We do not exactly know how these factors influence U1 binding in complex environments, but they may be the origins of differences we observed between experiments carried out with purified U1 and with U1 present in WCE.
 
-## Base-pairing potential accelerates U1/RNA complex formation
+### Base-pairing potential accelerates U1/RNA complex formation
 
 We next systematically studied how the base-pairing potential of the RNA oligo influenced binding by U1 snRNP. We carried out single-molecule binding assays with RNAs capable of forming between 4 and 10 contiguous base pairs with the snRNA (Figure 2A). All these substrates can form base pairs at the highly conserved G+1 and U+2 positions of the 5ʹ SS, and we extended base pairing outward from these positions toward the 5' and 3' ends of the SSRS. For several positions we also varied the duplex position with pairing extending away from or toward the 5' end of the U1 snRNA without altering the number of potential base pairs (e.g., RNA-6a vs. -6b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig2-v2.jpg)
 
-**Figure 2.:** (A) RNA oligos tested for interaction with U1 containing 4–10 predicted base pairs and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) Relative event densities of oligo binding to immobilized U1 molecules as a function of potential base pairs. Ordinate values are computed as the number of binding events (N) per area of interest (AOI) per minute (min). (C) Measured association rates of the oligos to U1 as a function of potential base pairs. For (B), the plotted points represent the average results from at least three replicate experiments ± SD. For (C), the plotted points represent the fitted parameters ± the uncertainties of the fits. Numbers of events (N) are reported in Figure 2—source data 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) RNA oligos tested for interaction with U1 containing 4–10 predicted base pairs and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) Relative event densities of oligo binding to immobilized U1 molecules as a function of potential base pairs. Ordinate values are computed as the number of binding events (N) per area of interest (AOI) per minute (min). (C) Measured association rates of the oligos to U1 as a function of potential base pairs. For (B), the plotted points represent the average results from at least three replicate experiments ± SD. For (C), the plotted points represent the fitted parameters ± the uncertainties of the fits. Numbers of events (N) are reported in Figure 2—source data 1.
 
 When the number of binding interactions to immobilized U1 and the apparent association rates were measured, the RNA oligos exhibited two observable and distinct classes of behavior. In the first class, RNA oligos capable of forming <6 contiguous base pairs showed very few colocalized binding events with U1 (Figure 2B). While these oligos may have been able to form sequence-specific interactions with U1, these interactions were either too rapid or infrequent for us to observe. The few measurable events were essentially indistinguishable in frequency to background binding of RNA-C. RNAs capable of forming ≥6 contiguous base pairs exhibited a second class of behavior. These RNAs had a 100-fold increase in detectable U1-binding event density compared to RNAs in the first class (Figure 2B). The dependence of the event density on the number of potential base pairs with the snRNA supports that the interactions are not only sequence dependent (Figure 1) but are also due to interactions with the U1 SSRS.
 
@@ -68,13 +88,13 @@ For RNAs with detectable U1 binding, we were able to calculate the observed asso
 
 Additionally, we observed that oligos capable of pairing toward the 3' end of the SSRS formed observable complexes more quickly than those where the pairing was shifted toward the 5' end (Figure 2C, RNAs-6a, -7a, and -8a vs. -6b, -7b, and -8b). This indicates that the 3' end of the SSRS might be either more accessible to the RNAs or can more easily facilitate nucleation of RNA interactions that lead to the observable binding events. This latter possibility may be related to the increased calculated thermodynamic stability of duplexes with pairing interactions closer to the 3' end of the SSRS due to the presence of a G/C pair in this region: RNAs-6a and -7a are predicted to form more stable duplexes than RNAs-6b and -7b (Figure 2A).
 
-## The abundance of short- and long-lived U1/RNA complexes depends on base pairing
+### The abundance of short- and long-lived U1/RNA complexes depends on base pairing
 
 We next studied the dwell times with U1 for the same series of RNA oligos. By visually inspecting the individual fluorescence time trajectories, we were immediately struck by apparent differences in binding behaviors. We frequently observed very short dwell times with RNAs capable of only forming a small number of base pairs (RNA-6a) and a mixture of short and long dwell times for RNAs capable of forming increasing numbers of base pairs (RNA-8a and RNA-10). When the individual dwell times from each experiment were combined and fit to single- or double-exponential functions, resulting probability density plots and kinetic parameters confirmed these observations (Figure 3B). RNA-6a is capable of only forming six base pairs with U1 and its distribution of dwell times could also be fit using only a single exponential (τS ≈ 12 s), consistent with short-lived binding. RNA-8a can make up to eight base pairs with U1 and its dwell times were best fit using an equation with two kinetic parameters describing short- (τS≈ 43 s) and long-lived binding events (τL ≈ 137 s). RNA-10 also require two exponential parameters to describe the data, yielding longer ‘short-lived’ events (τS ≈ 120 s) as well as increased dwell times for the longer-lived events (τL ≈ 355 s).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig3-v2.jpg)
 
-**Figure 3.:** (A) Representative fluorescence trajectories of changes in Cy3 intensity (green) due to oligo binding to a single immobilized U1 molecules for RNAs-6a, -8a, and -10. Also shown are the predicted pairing interactions (blue) between the oligos and the U1 SSRS. (B) Probability density histograms for dwell times for RNAs-6a, -8a, and -10 binding to U1. Lines represent the single- or double-exponential distribution obtained for the fitted parameter from each data set. (C) The average dwell time of each RNA oligomer in Figure 2A. The average dwell time is not determined (ND) for oligomers for which little binding was observed. (D–E) Bars shown the estimated parameters for short-lived binding (panel D, τS < 120 s) and long-lived binding (panel E, τL > 120 s) shown for each RNA oligomer in Figure 2A and correspond to the values on the left ordinate. If there is only one fit parameter, then the other is not applicable (NA). Orange markers show the amplitude of the time constant (AS and AL) across the fitted distribution and correspond to the values on the right ordinate (orange). Error bars in C–E are standard error of the estimated parameters determined by bootstrapping. Numbers of events (N) and fit parameters are listed in Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Representative fluorescence trajectories of changes in Cy3 intensity (green) due to oligo binding to a single immobilized U1 molecules for RNAs-6a, -8a, and -10. Also shown are the predicted pairing interactions (blue) between the oligos and the U1 SSRS. (B) Probability density histograms for dwell times for RNAs-6a, -8a, and -10 binding to U1. Lines represent the single- or double-exponential distribution obtained for the fitted parameter from each data set. (C) The average dwell time of each RNA oligomer in Figure 2A. The average dwell time is not determined (ND) for oligomers for which little binding was observed. (D–E) Bars shown the estimated parameters for short-lived binding (panel D, τS < 120 s) and long-lived binding (panel E, τL > 120 s) shown for each RNA oligomer in Figure 2A and correspond to the values on the left ordinate. If there is only one fit parameter, then the other is not applicable (NA). Orange markers show the amplitude of the time constant (AS and AL) across the fitted distribution and correspond to the values on the right ordinate (orange). Error bars in C–E are standard error of the estimated parameters determined by bootstrapping. Numbers of events (N) and fit parameters are listed in Figure 3—source data 1.
 
 When we examined all the RNAs in this series, we observed a trend: as the number of potential base pairs increased so did the average dwell time of the U1/RNA interaction (Figure 3C). RNAs that could only form a few potential base pairs possessed predominantly short-lived dwell times (defined here as τS < 120 s) with a small fraction of long-lived (τL > 120 s) binding events and correspondingly small amplitude for the long-lived kinetic parameter (Figure 3D and E). As the number of potential base pairs increased, generally so did the amplitude of τL. It is unlikely that these results arose from presence of two subpopulations of U1 snRNPs in our experiments (one capable of only making short-lived interactions and one capable of only making long-lived interactions) since we would not expect these subpopulations to change in abundance between experiments carried out with the same preparations of U1. Furthermore, hidden Markov modeling of RNA-4+2 (which considers the relationship between consecutive binding and unbinding events) favored a sequential scheme involving RNA binding followed by a transition to long-lived state (Figure 1G), likely due to a conformational change of the U1 snRNP, rather than direct formation of two different bound state complexes.
 
@@ -82,7 +102,7 @@ Instead, these data are most consistent with a mechanism in which U1 association
 
 Finally, it is interesting to note that RNAs in which the base pairing extends to the 3' end of the SSRS (Figure 3C, RNAs-8a and -9a) also had a larger average bound time than those capable of forming the same number of base pairs but not reaching the 3' end of the SSRS (RNAs-8b and -9b). This suggests that pairing within the 3'-most nt of the SSRS closest to the zinc finger of Yhc1 is not only important for increasing the rate of U1 binding but also contributes to formation of the longest-lived U1/RNA complexes. Combined, these results support formation of a short-lived, intermediate between U1 and RNAs that is dependent on base pairing for its formation. The RNA can then dissociate from this intermediate or the U1/RNA complex can transition to more tightly bound state.
 
-## Some U1/5ʹ SS duplexes are destabilized in the U1 snRNP
+### Some U1/5ʹ SS duplexes are destabilized in the U1 snRNP
 
 In addition to varying amplitudes, the short- and long-lived time constants from the fits (τS and τL) also varied (Figure 3D and E). The short-lived dwell time parameter (τS) ranged from 12 to 120 s for RNA oligos capable of forming 6–10 contiguous, potential base pairs. The long-lived dwell time parameter (τL) ranged from 137 to 388 s for RNA oligos capable of forming 7–10 base pairs. For both parameters, RNAs capable of forming more base pairs also tended to have longer dwell times. With the exception of τS for RNA-10, τS and τL parameters only varied within a range of two- to fourfold. This was surprising since a previous single-molecule fluorescence study of RNA oligo hybridization reported a 10-fold decrease in off-rate due to presence of one additional base pair (Cisse et al., 2012).
 
@@ -90,29 +110,29 @@ It is possible that protein components of the U1 snRNP, in addition to the SSRS/
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig4-v2.jpg)
 
-**Figure 4.:** (A). Schematic of a single-molecule assay for monitoring dissociation of RNA oligos from the RNA-only mimic of the U1 SSRS. Two mimics were used that contain pseudouridine (Ψ) or uridine (U) at two positions in the SSRS that have Ψ in the native U1 small nuclear RNA (snRNA). (B) The fraction of colocalized RNA oligos remaining was plotted over time to yield survival fraction curves for determining RNA oligo off-rates (black lines). The curves were then fit to exponential decay functions to yield off-rates as well as 95% confidence intervals for the fits (dashed lines and shaded regions, respectively). Shown are the survival fraction curves for RNA-10 dissociation (see Figure 2A). (C) Measured off-rates for RNA oligos to the SSRS mimics (see Figure 4—source data 1 for rates and numbers of events, N) plotted as a function of potential base pairs.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A). Schematic of a single-molecule assay for monitoring dissociation of RNA oligos from the RNA-only mimic of the U1 SSRS. Two mimics were used that contain pseudouridine (Ψ) or uridine (U) at two positions in the SSRS that have Ψ in the native U1 small nuclear RNA (snRNA). (B) The fraction of colocalized RNA oligos remaining was plotted over time to yield survival fraction curves for determining RNA oligo off-rates (black lines). The curves were then fit to exponential decay functions to yield off-rates as well as 95% confidence intervals for the fits (dashed lines and shaded regions, respectively). Shown are the survival fraction curves for RNA-10 dissociation (see Figure 2A). (C) Measured off-rates for RNA oligos to the SSRS mimics (see Figure 4—source data 1 for rates and numbers of events, N) plotted as a function of potential base pairs.
 
 For each of the RNAs, we were able to fit the dissociation data to equations containing a single exponential term (Figure 4—source data 1). This signifies that the RNAs are dissociating in a single observable step from the immobilized mimic and that dissociation was occurring from only a single type of RNA/mimic complex. The single-exponential kinetics are in contrast with results obtained for many of the same RNAs with U1 snRNP, for which multi-exponential kinetic equations were required to fit the dwell time data (RNA-7a,b; -8a,b; -9b, and -10). This was true for both a mimic that, like U1, contains pseudouridines in the SSRS as well as for one with uridine substitutions at those positions. While a comparison of the mimic and snRNP data is limited by the different experimental conditions (pre-annealing vs. equilibrium binding), the measured data are consistent with non-identical dissociation pathways for a given RNA oligo between the RNA-only mimic and the U1 snRNP.
 
 In addition to differences in the dissociation pathways, the amount of time the oligos remained bound differed dramatically between the RNA mimic and U1. Dissociation rates from the mimic varied linearly with base-pairing potential over 20-fold, a larger range than for binding of the same oligos to U1 snRNP (Figure 4C). Surprisingly, the lifetimes of many of the RNAs bound to the mimic were also much longer than their lifetimes bound to U1. For example, RNA-10 had a dissociation rate of 5.5×10–4 s–1 when bound to the pseudouridine-containing mimic. This corresponds to an average lifetime of 1818 s—more than fivefold larger than the τL obtained for binding of the same RNA to U1. Again, given the limitations of these experiments, the data are consistent with the possibility some U1/5' SS duplexes can be destabilized in the context of the U1 snRNP. Thus, the lifetimes of U1/5' SS interactions in the snRNP cannot be predicted from base-pairing potential or studies of model RNA duplexes alone.
 
-## Long-lived U1/RNA interactions are sensitive to the location and type of mismatches
+### Long-lived U1/RNA interactions are sensitive to the location and type of mismatches
 
 Splice sites with perfect and uninterrupted complementarity to U1 are very rare in yeast. In fact, only 14 annotated 5' SS in yeast contain six contiguous base pairs (corresponding to RNA-6b) and only one (a cryptic 5' SS in RPL18A) may contain more than seven contiguous base pairs (Grate and Ares, 2002). Most 5' SS are interrupted by one or more mismatches in complementarity to the U1 snRNA. We next tested how these mismatches impacted interactions of the RNA oligos with U1 snRNP. We analyzed and compared the binding interactions of RNAs capable of forming various numbers of contiguous base pairs between U1 SSRS nt +3 to +9. We incorporated mismatches systematically at each position resulting in RNAs that can form uninterrupted duplexes of seven or six base pairs (RNAs-7a, -6a, -6b) or interrupted duplexes of a total length of seven nucleotides (Figure 5A). One of the RNA oligos within this comparison group contains the U1 consensus 5' SS found within the well-spliced RP51A transcript (RNA-4+2, Figure 5A). Within this group, the mismatches result in a range of predicted duplex stabilities from –0.4 to 9.1 kcal/mol (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig5-v2.jpg)
 
-**Figure 5.:** (A) RNA oligos tested for interaction with U1 containing mismatches at the –1 to +6 positions and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) The value of the longest-lived parameter (τ0 or τL, see Figure 5—source data 1 for fit parameters and numbers of events , N) obtained by fits of the distributions of dwell times to U1 for each RNA oligomer in panel (A). The plotted bars represent the fitted parameters ± the uncertainties of the fits. Note that data for RNA oligos 7a, 6a, and 6b were replotted from Figure 3D and E for comparison.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) RNA oligos tested for interaction with U1 containing mismatches at the –1 to +6 positions and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) The value of the longest-lived parameter (τ0 or τL, see Figure 5—source data 1 for fit parameters and numbers of events , N) obtained by fits of the distributions of dwell times to U1 for each RNA oligomer in panel (A). The plotted bars represent the fitted parameters ± the uncertainties of the fits. Note that data for RNA oligos 7a, 6a, and 6b were replotted from Figure 3D and E for comparison.
 
 We observed long-lived complexes for RNA-7a, which has a 7 bp predicted duplex length, and only short-lived complexes for RNA-6a and -6b, which have only 6 bp predicted duplex lengths (Figure 5B; replotted from Figure 3D and E). Whether or not RNAs containing mismatches that disrupt the duplex with the SSRS showed long-lived interactions (like RNA-7a) or only short-lived interactions (like RNA-6a, -6b) depended on the position of the mismatch. Neither RNA oligos containing a C/C mismatch at the +1 site nor an A/A mismatch at the +2 site were able form long-lived complexes with U1. However, RNA oligos containing U/U mismatches at +3 or+4 or a C/C mismatch at +5 could form long-lived complexes (Figure 5B). From these data we conclude that long-lived complex formation is sensitive to the tested mismatches at some positions (+1, +2) and not others (+3, +4) within a substrate of 7 bp end-to-end length. In addition, the same type of mismatch (C/C) could either prevent or permit long-lived complex formation depending on its position within the 7 bp duplex. Consequently, formation of long-lived U1/5' SS interactions does not correlate with predicted duplex stabilities (cf., RNA-5+1 vs. RNA-2+4, -6a, or -6b in Figure 5B).
 
-## Long-lived U1/RNA interactions depend on base pairing at the G+1 position of the 5’ SS
+### Long-lived U1/RNA interactions depend on base pairing at the G+1 position of the 5’ SS
 
 We next tested if a single mismatch could eliminate long-lived binding even if all other positions within the 5' SS oligo could potentially pair with SSRS. We incorporated single mismatches at the +1 position of RNA-10 (Figure 6A). This results in a mismatch at the first position of the highly conserved 5' SS GU. All RNAs containing a mismatch at +1 were able to associate with U1 at rates ~100-fold greater than background binding by RNA-C (Figure 6B). However, none of them were able to form appreciable amounts of the long-lived complex (Figure 6C). The observed distributions of dwell times for RNAs containing mismatches at +1 could still be best fit to two exponential distributions containing short- and long-lived parameters (Figure 6—source data 1). However, the amplitudes of the long-lived parameters were very small as expected from the scarcity of the long-lived events. Consistent with data shown in Figure 5, the predicted thermodynamic stabilities again did not correlate with observation of the long-lived complexes. For example, RNA-2+7 (A+1) containing an A/C mismatch at the +1 position is predicted to form a more stable duplex than RNA-5+1 (ΔGo –4.4 to –2.7 kcal/mol). Yet, the amplitude of the long-lived parameter for RNA-5+1 is ~×14 greater than that for RNA-2+7 (A+1). These results show that long-lived complex formation between U1 and the RNA oligos is intolerant of mismatches at the +1 position. Failure of U1 to accumulate on RNAs with mismatches at the +1 site is not due to lack of association. Rather, recognition of a mismatch at +1 involves a discrimination step occurring after association and mismatched RNAs are rapidly released.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70534/elife-70534-fig6-v2.jpg)
 
-**Figure 6.:** (A) RNA oligos tested for interaction with U1 containing mismatches only at the +1 positions and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) Relative event densities of oligo binding to immobilized U1 molecules for RNAs shown in panel (A). Ordinate values are computed as the number of binding events (N) per area of interest (AOI) per minute (min). Plotted are averages from replicate experiments ± SD (dots and vertical lines). (C) Distribution of observed dwell times for U1 interactions with oligos from panel (A). Each dot corresponds to a single dwell time for N = 295, 518, 90, or 89 events for RNAs 10 and 2+7 variants A(+1), C(+1), and U(+1) , respectively.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) RNA oligos tested for interaction with U1 containing mismatches only at the +1 positions and the calculated free energy changes for duplex unwinding/formation based on nearest neighbor analysis. The regions shaded in blue are predicted to pair with the splice site recognition sequence (SSRS). (B) Relative event densities of oligo binding to immobilized U1 molecules for RNAs shown in panel (A). Ordinate values are computed as the number of binding events (N) per area of interest (AOI) per minute (min). Plotted are averages from replicate experiments ± SD (dots and vertical lines). (C) Distribution of observed dwell times for U1 interactions with oligos from panel (A). Each dot corresponds to a single dwell time for N = 295, 518, 90, or 89 events for RNAs 10 and 2+7 variants A(+1), C(+1), and U(+1) , respectively.
 
 ## Discussion
 
@@ -124,7 +144,7 @@ These results support a reversible multi-step binding process in which U1 first 
 
 **Figure 7.:** (A) U1 binding initially occurs by formation of a weakly interacting complex that is dependent on base-pairing potential between the RNA and U1 splice site recognition sequence (SSRS). Stable binding is dependent on presence of G+1 at the 5' SS and formation of an extended duplex with an end-to-end length of at least 7 bp or the presence of trans-acting splicing factors such as E complex proteins (Larson and Hoskins, 2017). (B) Sequence LOGO for annotated yeast 5' SS (Lim and Burge, 2001). (C) Histogram of end-to-end duplex lengths based on base-pairing potential between annotated yeast 5' SS (N=282) and the U1 SSRS. Most of these duplexes contain one or more mismatches with the SSRS.
 
-## Checkpoints during 5' SS recognition
+### Checkpoints during 5' SS recognition
 
 Combined, our data also indicate that binding involves several checkpoints before long-lived complexes are formed (Figure 7). This scheme is consistent with 5' SS recognition involving conformational proofreading as has been implicated in many other nucleic acid recognition events including ribosome assembly and translation (Rodgers and Woodson, 2019; Blanchard et al., 2004). In the case of U1, the conformational change that leads to proofreading (rapid release of the RNA) or stable binding may involve rearrangement of Yhc1 and Luc7 as discussed in the preceding paragraph. Thus, the conformational proofreading would involve formation of different states of the U1 snRNP with different kinetic properties. The initial barrier to forming short-lived complexes is low and requires limited complementarity to the SSRS. Formation of this complex is readily reversible which permits rapid surveillance of transcripts by U1 for 5' SS and prevents accumulation of U1 on RNAs lacking features necessary for splicing.
 
@@ -138,29 +158,368 @@ An additional consequence of this length requirement and the duplexes described 
 
 Together these observations also suggest that for many consensus SS, U1 can recognize and be retained on introns even if other intron features, such as the branch site, have not yet been transcribed in agreement with models for fast, co-transcriptional recruitment of U1 (Oesterreich et al., 2016; Tardiff et al., 2006). However, on weak SS it is likely that non-U1 splicing factors play a role in bypass of the molecular ruler to permit U1 accumulation. As an example of bypass, we previously observed that pre-mRNAs containing a weak 5’ SS with only a 5 bp end-to-end length can form long-lived complexes with U1 in WCE but only when either the CBC or BBP/Mud2 could also bind the pre-mRNA (Larson and Hoskins, 2017). One limitation of our model is that we do not yet know if these trans-acting factors can also bypass the need for pairing with G+1 in the assays used here. Regardless, it is notable that only the branch site-binding factors, BBP/Mud2, increased the probability of long-lived complex formation and not just its lifetime (Larson and Hoskins, 2017). This is consistent with the idea that retention of U1 on transcripts is governed through direct and indirect interactions with intronic sequences involved in splicing chemistry including both the 5' SS and branch site.
 
-## Base-pairing potential does not predict U1 interaction kinetics
+### Base-pairing potential does not predict U1 interaction kinetics
 
 Our data show that the lifetime of the U1/5' SS interaction cannot be predicted based on the thermodynamic stability of the base-pairing interactions alone likely due to the influence of snRNP proteins. Rather, strong positional effects lead to prioritization of base pairing at particular positions for stable retention of U1 (Figures 5 and 6). How kinetic stability of U1 at a particular 5' SS correlates with its subsequent use by the spliceosome has not yet been determined. If 5' SS usage does correlate with U1 lifetimes, then our results would be in strongest agreement with computational models for 5' SS identification that consider positional effects and interdependencies rather than simply the thermodynamic stabilities of the predicted base pairs (Roca et al., 2013; Yeo and Burge, 2004).
 
 Since failure to release U1 can inhibit splicing (Staley and Guthrie, 1999), we would expect that optimal promotion of splicing by yeast U1 would occur by balancing its recruitment and retention with release. This ‘Goldilocks’ model has previously been proposed for 5' SS recognition by human U1 (Chiou et al., 2013). Interestingly, we observed that the lifetimes of the longest-lived U1/RNA complexes were similar to one another (Figures 3 and 5) and lifetimes of the RNAs capable of making 9 or 10 base pairs were much shorter when bound to U1 than expected based on their off-rates from an RNA mimic of the SSRS given the limitations of our assay (Figures 3 and 4). U1 may equilibrate its interactions with 5' SS by both stabilizing and destabilizing RNA duplexes. As a result, U1’s interactions with sequence-diverse substrates may all be ‘just right’ for subsequent steps in splicing. This, in turn, may impact the ATP requirement for U1 release during activation (Staley and Guthrie, 1999).
 
-## Implications for human 5' SS recognition
+### Implications for human 5' SS recognition
 
 While much of the catalytic machinery of the spliceosome is well conserved between yeast and humans, we do not yet know if the mechanism of 5' SS recognition we propose also holds true for human U1. Chemical probing data of human U1 revealed allosteric modulation of the SSRS based on positioning of splicing regulatory elements (Shenasa et al., 2020). Differing conformations of the SSRS could lead to differences in binding behavior and give rise to short- or long-lived binding interactions like those we observe with yeast U1. Whether or not the SSRS of yeast U1 displays similar changes in conformation has not been determined. Ensemble binding data for human U1/RNA interactions also revealed a strong preference for formation of stable complexes on pairing at the G+1 site as well as position- and mismatch-dependent effects at other locations (Kondo et al., 2015; Tatei et al., 1987). This agrees with our single-molecule data on yeast U1 interactions. While it is possible that yeast and human U1 may have differing pathways for splice site recognition, the outcome of longer-lived binding on particular RNA sequences may be the same.
 
 Finally, the large number of non-obligate accessory factors that associate with human U1 may yield highly malleable pathways for RNA binding. Different factors may tune 5’ SS recognition by a holo-U1 complex to yield distinct kinetic mechanisms. This in turn could lead to enhancement or repression of U1 accumulation at particular sites or functional differences between U1 complexes involved in splicing or telescripting (Kaida et al., 2010; Oh et al., 2017). The mechanism we propose for yeast U1 may be most relevant for the subset of human U1 snRNPs that associate with alternative splicing factors such as LUC7L or PRPF39 that are homologs of obligate components of the yeast U1 snRNP (Li et al., 2017).
 
-## General features of nucleic acid recognition by RNPs
+### General features of nucleic acid recognition by RNPs
 
 Other cellular RNPs face similar challenges as U1 in finding specific nucleotide sequences and preventing accumulation on close cognates. While Cas9 (involved in bacterial CRISPR-based immunity), Hfq (involved in bacterial small RNA regulation) and Argonaute (AGO, involved in mRNA repression and silencing) RNPs are involved in very different biological processes than RNA splicing, single-molecule studies of each of these RNPs reveal striking similarities with yeast U1 (Globyte et al., 2019; Małecka and Woodson, 2021; Salomon et al., 2015; Sternberg et al., 2014). All these RNPs exhibit kinetic behaviors that lead to prioritization of certain sequences over others and are distinct from ‘all-or-nothing’ models for hybridization of nucleic acids in the absence of proteins (Cisse et al., 2012; Wetmur, 1991; Wetmur and Davidson, 1968). In the cases of AGO and Cas9, correct base pairing with the micro-RNA seed sequence (AGO) or PAM (Cas9) is necessary for fast and stable binding. Rapid reversibility of this interaction ensures that these RNPs can dissociate and find other targets if mismatches are detected within the priority region. Additional base pairing with the target then leads to the most stable binding interaction, consistent with binding occurring in multiple steps. These results are analogous to reversible interrogation of RNAs by U1 that prioritizes pairing at the G+1 site and formation of extended duplexes for stable interaction. Cas9 also accelerates target search by diffusion along DNA molecules (Globyte et al., 2019; Sternberg et al., 2014). While this has not been directly tested with U1, tethering of U1 to the pol II transcription machinery (Kotovic et al., 2003; Zhang et al., 2021), rather than RNAs themselves, may lead to similar acceleration in binding site identification. Indeed, our kinetic modeling of U1 interactions with a consensus 5' SS containing RNA shows that RNA association is relatively slow and on the order of ~105 M–1 s–1. Association of U1 with the transcription machinery may be needed to increase the effective local concentration of substrate RNAs and to explain in vivo observations of fast, co-transcriptional binding.
 
 ## Methods
 
-## TAP tagging of yeast U1 snRNP
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>BJ2168 (MATa prc1–407 prb1–1122 pep4–3 leu2 trp1 ura3–52 gal2)</td>
+      <td>Bruce Goode Lab Crawford et al., 2008</td>
+      <td>yAAH0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>U1-SNAP-TAP (BJ2168 +SNP1::SNP1-fSNAP-Hyg+SNU71::SNU71-TAP-URA)</td>
+      <td>This study</td>
+      <td>yAAH0393</td>
+      <td>See Methods, Tap Tagging of Yeast U1 snRNP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid for in vitro transcription of RP51A (pBS117)</td>
+      <td>Michael Rosbash Lab Séraphin and Rosbash, 1991</td>
+      <td>pAAH0016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U1 cOligo (DNA)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>JL-U1 5’ complement</td>
+      <td>5ʹ-CTT AAG GTA AGT AT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U1 RT Oligo (DNA)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>SRH15</td>
+      <td>5ʹ-TCA GTA GGA CTT CTT GAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U1 snRNA mimic (UU, RNA)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>SRH21</td>
+      <td>5ʹ-AUA CUU ACC UUA AGA UAU CAG AGG AGA UCA AGA AG /3Cy5Sp/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U1 snRNA mimic (ΨΨ, RNA)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>SRH36</td>
+      <td>5ʹ-AUA CΨΨ ACC UUA AGA UAU CAG AGG AGA UCA AGA AG /3Cy5Sp/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Handle for U1 mimic (DNA)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>SRH22</td>
+      <td>5ʹ-/Biotin/ TCT CTT CTT GAT CTC CTC TGA TAT CTT A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNA-Cy3 oligomers</td>
+      <td>Integrated DNA Technologies</td>
+      <td></td>
+      <td>See Figure 1—source data 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Criterion TGX Precast Gel (4–20%)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. No. 567-1093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Silver Stain Plus Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat. No. 161-0449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GE Healthcare IgG Sepharose 6 Fast Flow resin</td>
+      <td>VWR Scientific</td>
+      <td>Cat. No. 95017-050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calmodulin Affinity Resin</td>
+      <td>Agilent</td>
+      <td>Cat. No. 214303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rnasin Ribonuclease Inhibitor</td>
+      <td>Promega</td>
+      <td>Cat. No. N2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Protease Inhibitor Tablet</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. A32965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEV Protease</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. T4455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BG-649-PEG-biotin</td>
+      <td>Smith et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>m7G(5’)ppp(5’)G RNA Cap Structure Analog</td>
+      <td>New England BioLabs</td>
+      <td>Cat. No. S1404S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMV Reverse Transcriptase</td>
+      <td>Promega</td>
+      <td>Cat. No. M5101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RnaseH (2 U/μL)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. 18021014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectabond</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. NC9280699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-PEG-SVA (MW 5000)</td>
+      <td>Laysan Bio</td>
+      <td>Cat. No. Biotin-PEG-SVA-5000-100 mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mPEG-SVA (MW 5000)</td>
+      <td>Laysan Bio</td>
+      <td>Cat. No. mPEG-SVA-5000-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. P7890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose Oxidase from Aspergillus niger type VII</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. G2133-50KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Catalase from bovine liver</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. C40-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(±)–6-Hydroxy-2,5,7,8-tetramethylchromane-2-carboxylic acid (Trolox)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. 238813-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TransFluoSpheres Streptavidin-Labeled Microspheres (488/645), 0.04 μm, 0.5% solids</td>
+      <td>Life Technologies/ Invitrogen</td>
+      <td>Cat. No. T-10711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast tRNA (10 mg/mL)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. AM7119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin, 10 mg</td>
+      <td>Prozyme</td>
+      <td>Cat. No. SA10-10mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin sodium salt from porcine intestinal mucosa</td>
+      <td>Sigma-Aldrich</td>
+      <td>H4784-250MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MilliporeSigma Calbiochem BSA, 10% Aqueous Solution, Nuclease-Free</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. 12-661-525ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant TL 8.1 software</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>https://www.gelifesciences.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChemDraw Prime 15.0</td>
+      <td>PerkinElmer</td>
+      <td>http://www.cambridgesoft.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imscroll</td>
+      <td>Friedman and Gelles, 2015</td>
+      <td>https://github.com/gelles-brandeis/CoSMoS_Analysis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuB</td>
+      <td>Nicolai and Sachs, 2013</td>
+      <td>https://qub.mandelics.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DISC</td>
+      <td>White et al., 2020</td>
+      <td>https://github.com/ChandaLab/DISC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultra-clear centrifuge tubes (14 mL capacity)</td>
+      <td>Beckman Coulter</td>
+      <td>Cat. No. 344060</td>
+      <td>Ultracentrifuge tubes for preparing yeast splicing extract</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Precision Plus Protein All Blue Prestained Protein Standards</td>
+      <td>Bio-Rad</td>
+      <td>Cat. No. 161-0373</td>
+      <td>Protein molecular weight ladder for SDS-PAGE</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.8×4 cm Poly-Prep Chromatography Columns</td>
+      <td>Bio-Rad</td>
+      <td>Cat. No. 731-1550</td>
+      <td>Columns used for TAP purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10 kDa MWCO Slide-A-Lyzer dialysis cassette</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. 66380</td>
+      <td>Dialysis membranes used during purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra 100 kDa MWCO centrifugal filters</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. Z677906-24</td>
+      <td>Concentrators used during purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold Seal Cover Slips (#1, 24×60 mm)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. 5031132</td>
+      <td>Glass slides used in CoSMoS assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold Seal Cover Slips (#1, 25×25 mm)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. 3307</td>
+      <td>Glass slides used in CoSMoS assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fisherbrand Five-Slide Mailer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. HS15986</td>
+      <td>Slide holder used to clean slides</td>
+    </tr>
+  </tbody>
+</table>
+
+### TAP tagging of yeast U1 snRNP
 
 C-terminal TAP and fSNAP tags were appended to the endogenous SNU71 and SNP1 proteins, respectively, by homologous recombination in the protease-deficient S. cerevisiae strain BJ2168 and selection for growth in the absence of uracil (TAP) or in the presence of hygromycin (fSNAP) (Larson and Hoskins, 2017; Puig et al., 2001).
 
-## Purification of labeled U1 snRNP
+### Purification of labeled U1 snRNP
 
 A total of 10 L U1-SNAP-TAP yeast cultures were grown in 1 L batches of rich media (YPD) in a shaking incubator (30°C, 220 rpm) to late log stage. The cells were pelleted, washed, and resuspended in 3.5 mL (per 1 L culture) Lysis Buffer (10 mM Tris-Cl pH 8.0, 300 mM NaCl, 10 mM KCl, 0.2 mM EDTA, 5 mM imidazole, 10% v/v glycerol, 0.1% v/v NP40, 1 mM PMSF, 0.5 mM DTT). The resuspended cells were flash frozen in a drop-wise fashion in liquid nitrogen and stored at –80°C until lysed. The frozen pellets were lysed in batches using a Retsch Mixer Mill MM 400 (five rounds of 3 min at 10 Hz, with 2 min cooling in liquid nitrogen between rounds). The frozen lysate powder was stored at –80°C.
 
@@ -174,15 +533,15 @@ The resin slurry was divided between two 0.8×4 cm Poly-Prep Chromatography Colu
 
 Fractions were then analyzed by SDS-PAGE, and fractions E1-E3 typically had the highest concentrations of U1. These fractions were pooled and dialyzed in a 10 kDa MWCO Slide-A-Lyzer dialysis cassette in 1 L Dialysis Buffer (10 mM Tris-Cl pH 8.0, 150 mM NaCl, 10 mM KCl, 1 mM MgCl2, 5 mM imidazole, 10 mM β-mercaptoethanol) overnight at 4°C. In the morning, the cassette was moved to fresh Dialysis Buffer (1 L) for 4 hr. The dialyzed sample was concentrated in an Amicon Ultra 100 kDa MWCO centrifugal filter unit (14,000 rpm, 4°C, in 1 min intervals). The sample was mixed by pipetting up and down between spins and by addition of more dialyzed sample. The final sample volume (~100 μL) was divided into 5 μL aliquots, flash frozen, and stored at –80°C.
 
-## HPLC-ESI-MS/MS analysis
+### HPLC-ESI-MS/MS analysis
 
 Samples were analyzed by HPLC-ESI-MS/MS using a system consisting of a high-performance liquid chromatograph (nanoAcquity, Waters) connected to an electrospray ionization (ESI) Orbitrap mass spectrometer (LTQ Velos, Thermo Fisher Scientific). HPLC separation employed a 100×365 mm fused silica capillary micro-column packed with 20 cm of 1.7-µm-diameter, 130 Å pore size, C18 beads (Waters BEH), with an emitter tip pulled to approximately 1 µm using a laser puller (Sutter Instruments). Peptides were loaded on-column at a flow rate of 400 nL/min for 30 min and then eluted over 120 min at a flow rate of 300 nL/min with a gradient of 2–30% acetonitrile in 0.1% formic acid. Full-mass profile scans were performed in the orbitrap between 300 and 1500 m/z at a resolution of 60,000, followed by 10 MS/MS HCD scans of the 10 highest intensity parent ions at 42% relative collision energy and 7500 resolution, with a mass range starting at 100 m/z. Dynamic exclusion was enabled with a repeat count of two over the duration of 30 s and an exclusion window of 120 s.
 
-## Activity assays
+### Activity assays
 
 Splicing extracts (yWCE) were prepared from a BJ2168-derived strain of S. cerevisiae as previously described (Ansari and Schwer, 1995). Aliquots were flash frozen in liquid nitrogen, stored at –80°C, and thawed on ice once before use. Capped, [32P] -labeled RP51A pre-mRNA was prepared by in vitro transcription and gel purified and splicing conditions were adapted from previously described protocols (Crawford et al., 2008). Splicing reactions contained 100 mM potassium phosphate pH 7.3, 3% w/v PEG-8000, 2.5 mM MgCl2, 1 mM DTT, 2 mM ATP, 0.4 U/μL Rnasin, 40% v/v yWCE, 0.2 nM [32P]-labeled RP51A pre-mRNA, and 0.048 U/μL RnaseH. To ablate the U1 snRNA, these reactions were first prepared without ATP, Rnasin, [32P]-labeled RP51A, or U1 snRNP and with the inclusion of 0.016 μg/μL U1 cOligo (5’-CTTAAGGTAAGTAT-3’) so that RnaseH would digest the 5ʹ end of endogenous U1 snRNA in the yWCE (Du and Rosbash, 2001; Larson and Hoskins, 2017). After 30 min at 30°C, the remaining components of the splicing reaction were added along with 0.04 μg/μL purified U1 snRNP. As controls, reactions were prepared without purified U1 snRNP or without U1 cOligo in the ablation reaction. After 60 min at room temperature the reactions were stopped, and RNA was extracted as previously described (Crawford et al., 2008). The products were resolved on a 9% acrylamide (19:1) gel (8 M urea, ×1 TBE buffer). The gel was dried and imaged using a Phosphor Screen and a Typhoon FLA 9000. The bands were quantified using ImageQuant software.
 
-## 5' End analysis by dideoxynucleotide sequencing
+### 5' End analysis by dideoxynucleotide sequencing
 
 RNA from purified U1 snRNP or 40 μL U1-SNAP-TAP yWCE was isolated by phenol-chloroform extraction and ethanol precipitation. All of the RNA isolated from labeled, purified U1 snRNP was used for reverse transcription while only 10% of the isolated RNA from yWCE was necessary. The isolated RNA was combined with 1 pmol [32P]-labeled primer complementary to nucleotides 27–44 of U1 snRNA (5ʹ- TCAGTAGGACTTCTTGAT) in Annealing Buffer (250 mM KCl, 10 mM Tris pH 8.0) and the reaction was incubated at 90°C for 3 min, snap cooled on ice for 3 min, then pre-heated to 45°C for 5 min. A reverse transcriptase (×2 RT) master mix was prepared containing 1 U/μL AMV Reverse Transcriptase in 25 mM Tris pH 8.0, 8 μM DTT, and 0.4 mM dNTPs.
 
@@ -192,17 +551,17 @@ RNA oligo secondary structure prediction and calculation of free energy of unwin
 
 The approximate stability of the duplex between U1 snRNA or the U1 mimic RNAs and the Cy3-RNA oligomers was predicted by calculating the stability of hybridization of the uridine-substituted SSRS to the complementary sequence of the RNA oligo using the Hybridization function of DINAMelt (Markham and Zuker, 2005). We note that while base pairs with roloxridines are predicted to be more stable than those to uridine (Deb et al., 2019; also see Figure 4), thermodynamic parameters for base pairing to consecutive roloxridines bases, such as those found within the U1 SSRS (5’-AUACΨΨACCU-3’), have not to our knowledge been determined. Therefore, we were unable to use nearest-neighbor methods to calculate the thermodynamic stabilities for RNAs pairing to the U1 SSRS and instead approximated these stabilities using a uridine-substituted SSRS.
 
-## Microscope slide preparation
+### Microscope slide preparation
 
 Microscope slides and coverslips were cleaned and assembled into flow as previously described (Crawford et al., 2008). Briefly, top and bottom coverslips were cleaned by sonication for 60 min at 40°C in successive washes of 2% v/v Micro-90 solution, absolute ethanol, 1 M KOH and water with intermittent rinsing with MilliQ water between each wash step. The cleaned coverslips were silanized using freshly prepared 1% v/v Vectabond in acetone (~30 mL to cover) for 10 min at room temperature. After silanization, the slides were immediately and thoroughly rinsed with absolute ethanol. The coverslips were thoroughly dried again then assembled into flow cells using vacuum grease to demark lanes.
 
 Poly-L-lysine-graft-PEG copolymer (PLL-g-PEG) passivation was used to coat the slide surface and heparin was included in slide washing and imaging buffers to produce a negatively charged surface (Salomon et al., 2015). Dry aliquots (2 mg) of PLL-g-PEG were dissolved to a final concentration of 4 mg/mL PLL-g-PEG in 100 mM HEPES-KOH pH 7.4 just before use. The silanized lanes of the flow cell were filled with the PLL-g-PEG solution (~30 μL each) and incubated at room temperature overnight in the dark. For experiments using the U1 snRNA oligo mimic, slides were coated with PEG as previously described (Crawford et al., 2008).
 
-## U1 snRNA mimic preparation
+### U1 snRNA mimic preparation
 
 The U1 snRNA mimic, the biotinylated DNA handle, and an RNA oligomer, were annealed and the tripartite complex was immobilized on the slide surface. Annealing reactions consisted of 2 μM Cy5-labeled U1 mimic (UU or ΨΨ), 200 nM biotinylated DNA handle, and 10 μM Cy3-labeled RNA oligomer in 50 mM Tris-HCl pH 7.4, 400 mM NaCl. The reactions were heated to 95°C in a thermocycler and cooled by decreasing temperature in 5°C intervals every 2 min until the reaction reached 25°C. After heating, reactions were immediately stored on until use in single-molecule experiments.
 
-## Single-molecule microscopy
+### Single-molecule microscopy
 
 CoSMoS experiments were performed on a custom-built, objective-based micromirror total internal reflection fluorescence microscope (Larson et al., 2014). The red laser (633 nm) was set to 250 μW, and the green laser (532 nm) was set to 400 μW for data collection. The fluorescence signal was imaged at 1 s exposure at 5 s intervals unless otherwise specified. For all experiments, the imaging buffer included glucose, glucose oxidase, and catalase, as oxygen scavengers (OSS), and rolox as a triplet state quencher (TSQ) (Crawford et al., 2008). Drift correction was performed, as necessary, by tracking the movement of individual immobilized spots for the duration of the experiment. Auto-focusing was carried out using a 785 nm laser and was done every minute in-between exposures. Mapping files were generated each day using TransFluorSpheres (Thermo Fisher Scientific) fluorescent in both the <635 and >635 nm fields of view (FOV).
 
@@ -212,18 +571,32 @@ For experiments with U1 snRNP, prepared slides were first washed with 200 μL Mo
 
 Raw microscopy source data can be downloaded using Figshare at the link below: https://doi.org/10.6084/m9.figshare.c.6164067.
 
-## Data analysis
+### Data analysis
 
 Data analysis was performed as previously described (Hoskins et al., 2011; Shcherbakova et al., 2013). In brief, the fluorescence signal detected in the >635 FOV was used to select areas of interest (AOIs). After drift correction, these locations were mapped to the <635 FOV and the pixel intensity was integrated for each AOI using custom MATLAB software (Friedman and Gelles, 2015). Each colocalization event was manually inspected to confirm the presence of a colocalized spot in the AOI.
 
 For fitting dwell times of oligos binding to the U1 mimic, the distributions were analyzed using survival fraction plots and fit with single-exponential decay functions which generated a 95% confidence interval (CI) for the calculated koff and an R-square parameter for the fit. The reciprocal of koff is the mean lifetime (μ).
 
-For analysis of oligo binding to immobilized U1 snRNPs, the distribution of observed dwell times was visualized as a probability density plots. To construct these plots, the dwell times were binned, and the probability of each bin was divided by the product of the bin width and the total number of events in the data set to compute a probability density value. The ordinate values are plotted on the log-scale to clearly show the difference in fitted time constants. Bin values were chosen to adequately represent the underlying distribution. Error bars for each bin were calculated as previously described based on the error of binomial distributions (Hoskins et al., 2011). These plots are overlaid with maximum likelihood estimates of a single- or double-exponential distribution as described by Equations 1 and 2, respectively (Hoskins et al., 2011). In these equations, tm is the time between consecutive frames and tmax is the duration of the experiment; A1 and A2 are the fitted amplitudes for a bi-exponential distribution; and the ‘taus’ are the fitted dwell time parameters for single- (τ0) or bi-exponential (τ1 and τ2) distributions. Errors in the fit were determined by bootstrapping 1000 random samples of the data and determining the standard deviation of the resulting normal distribution.(1)[(A0⋅(e−tmτ0−e−tmaxτ0))]−1⋅[A0τ0⋅e−tτ0](2)[(A1⋅(e−tmτ1−e−tmaxτ1))+((A2)⋅(e−tmτ1−e−tmaxτ1))]−1⋅[A1τ1⋅e−tτ1+A1τ2⋅e−tτ2]whereA1+A2=1
+For analysis of oligo binding to immobilized U1 snRNPs, the distribution of observed dwell times was visualized as a probability density plots. To construct these plots, the dwell times were binned, and the probability of each bin was divided by the product of the bin width and the total number of events in the data set to compute a probability density value. The ordinate values are plotted on the log-scale to clearly show the difference in fitted time constants. Bin values were chosen to adequately represent the underlying distribution. Error bars for each bin were calculated as previously described based on the error of binomial distributions (Hoskins et al., 2011). These plots are overlaid with maximum likelihood estimates of a single- or double-exponential distribution as described by Equations 1 and 2, respectively (Hoskins et al., 2011). In these equations, tm is the time between consecutive frames and tmax is the duration of the experiment; A1 and A2 are the fitted amplitudes for a bi-exponential distribution; and the ‘taus’ are the fitted dwell time parameters for single- (τ0) or bi-exponential (τ1 and τ2) distributions. Errors in the fit were determined by bootstrapping 1000 random samples of the data and determining the standard deviation of the resulting normal distribution.
+
+$$
+[(A_{0}⋅(e^{−\frac{tm}{\tau_{0}}}−e^{−\frac{t_{max}}{\tau_{0}}}))]^{−1}⋅[\frac{A_{0}}{\tau_{0}}⋅e^{−\frac{t}{\tau_{0}}}]
+$$
+
+
+
+$$
+[(A_{1}⋅(e^{−\frac{t_{m}}{\tau_{1}}}−e^{−\frac{t_{max}}{\tau_{1}}}))+((A_{2})⋅(e^{−\frac{t_{m}}{\tau_{1}}}−e^{−\frac{t_{max}}{\tau_{1}}}))]^{−1}⋅[\frac{A_{1}}{\tau_{1}}⋅e^{−\frac{t}{\tau_{1}}}+\frac{A_{1}}{\tau_{2}}⋅e^{−\frac{t}{\tau_{2}}}]whereA_{1}+A_{2}=1
+$$
 
 To judge the goodness of the fits, the log likelihood ratio test was used to determine if the simplest model (single-exponential distribution) was sufficient to describe the data (Kaur et al., 2019).
 
-Kinetic modeling of RNA-4+2 was performed using QuB (Nicolai and Sachs, 2013) as previously described (White et al., 2021). Three different hidden Markov models were built, and the transition rates were globally optimized across all molecules using maximum idealized point estimation (Qin et al., 2000; Figure 1—source data 3). The goodness of fit of each model was assessed by the Bayesian information criterion (BIC) (Schwarz, 1978) in Equation 3 where k is the number of free parameters in the model, N is the number of data points (i.e., frames) and LL is the log likelihood of the fit returned by QuB. The model with the lowest average BIC score across a fivefold resampling of the data was considered the best fit.(3)BIC=k×ln⁡(N)−2 ×LL
+Kinetic modeling of RNA-4+2 was performed using QuB (Nicolai and Sachs, 2013) as previously described (White et al., 2021). Three different hidden Markov models were built, and the transition rates were globally optimized across all molecules using maximum idealized point estimation (Qin et al., 2000; Figure 1—source data 3). The goodness of fit of each model was assessed by the Bayesian information criterion (BIC) (Schwarz, 1978) in Equation 3 where k is the number of free parameters in the model, N is the number of data points (i.e., frames) and LL is the log likelihood of the fit returned by QuB. The model with the lowest average BIC score across a fivefold resampling of the data was considered the best fit.
 
-## Acquisition and analysis of higher frame rate data
+$$
+BIC=k\timesln⁡(N)−2 \timesLL
+$$
+
+### Acquisition and analysis of higher frame rate data
 
 To ensure that the lifetimes measured in these experiments are not limited by our acquisition rate of 0.2 Hz, additional U1 snRNP experiments were performed with a continuous exposure of the Cy3 signal at 1 Hz for select RNAs (RNA-10, RNA-4+2, RNA-C, Figure 1—figure supplement 4). These experiments were performed on a second custom-built, objective-based micromirror total internal fluorescence microscope. Data acquisition and analysis were carried as described above with the following modifications. Laser powers were set between 800 and 2000 µW for 633 nm and 1000 µW for 532 nm. Excitation and emission passed through a 60×1.49 NA oil immersion objective (Olympus). Emission was split with using a dual-view system built as previously described except that the optics were mounted in an optical cage (Larson et al., 2014). The images were projected onto two separate 2048×2048 sCMOS detectors (Hamamatsu ORCA-Flash4.0 V3) with 2×2 pixel binning. Imaging was controlled with Micro-Manager 2.0 (Edelstein et al., 2014). For these experiments, cleaned cover glasses were passivated with mPEG-SVA (MPEG-SVA-5K, Laysan Bio) and mPEG-biotin-SVA (BIO-PEG-SVA-5K, Laysan Bio) at a ratio of 1:100 w/w in 100 mM NaHCO3 (pH 8) overnight. Following passivation, slides were rinsed with PBS, incubated with PBS +1 mg/mL bovine serum albumin (BSA) for 30 min, and rinsed with Mock Splicing Buffer supplemented with 1 mg/mL BSA. Videos were sequentially collected at 633 nm for 30 frames to identify surface-tethered U1 snRNP molecules followed by 532 nm excitation for 30 min (1800 frames) at 1 Hz to monitor the Cy3 channel. All 532 nm videos were background subtracted in ImageJ (version 2.1.0). Data analysis was performed using custom code written in MATLAB. The 633 and 532 nm channels were aligned using a similarity transform computed from images containing fluorescent beads (Life Technologies). U1 snRNP molecules were detected using a generalized log likelihood ratio test (Sergé et al., 2008) and locations were refined with a two-dimensional Gaussian. Drift correction was performed by computing and applying a similarity transform every 10 frames which tracked the location of fluorescent beads on the surface. The time-dependent fluorescence intensity in each channel was integrated over a 3×3 pixel space for each frame. Events in each time series were detected using the DISC algorithm (White et al., 2020) and visually inspected to ensure only specific binding events were included in the analysis.

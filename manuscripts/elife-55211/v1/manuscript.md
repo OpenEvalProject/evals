@@ -31,7 +31,7 @@ Beyond PM20D1, other mammalian enzymes are also likely to contribute to N-acyl
 
 ## Results
 
-## Detection of a second, PM20D1-independent N-acyl amino acid hydrolysis activity
+### Detection of a second, PM20D1-independent N-acyl amino acid hydrolysis activity
 
 To characterize additional pathways of N-acyl amino acid metabolism in the absence of PM20D1, we analyzed tissue homogenates from wild-type and PM20D1-KO animals for a residual N-acyl amino acid hydrolysis activity. This assay was selected because of the high sensitivity and signal-to-noise ratio that it provides, which enables robust detection of any residual activities that might be present. Two different prototypical N-acyl amino acid substrates, N-arachidonoyl-phenylalanine (C20:4-Phe) and N-arachidonoyl-glycine (C20:4-Gly), were used as substrates. Following incubation with tissue lysates, the hydrolysis of these N-acyl amino acid substrates to free fatty acid product was quantified by liquid chromatography-mass spectrometry (LC-MS, Figure 1a). In wild-type mice, robust hydrolysis of C20:4-Phe was observed in eight of the ten tissues tested, with activities in the range of ~0.01 nmol/min/mg (lung) to 1.0 nmol/min/mg (liver). In PM20D1-KO tissues, the hydrolysis of C20:4-Phe was completely abolished (>99% reduction in each tissue), establishing that PM20D1 is the only enzyme responsible for C20:4-Phe hydrolysis activity (Figure 1b). The presence of PM20D1 activity in tissue homogenates reflects potential interactions of PM20D1 with the extracellular matrix or with cell surfaces, as has previously been observed with lipoprotein lipase and other secreted enzymes (Cryer, 1981). By contrast, using C20:4-Gly as a substrate, both brain and liver from PM20D1-KO mice maintained a robust second hydrolysis activity (Figure 1c). The second PM20D1-independent activity accounted for 70% and 11% of the total C20:4-Gly hydrolysis in brain and liver, respectively. In absolute terms, the residual activity in PM20D1-KO liver was higher (0.10 nmol/min/mg) than that observed in the knockout brain tissue (0.03 nmol/min/mg). These data demonstrate the presence of a second, PM20D1-independent hydrolysis activity in brain and liver for C20:4-Gly. That this residual activity is only present for C20:4-Gly but not C20:4-Phe suggested that this second enzyme might exhibit selectivity for regulating subsets of lipid species within the N-acyl amino acid family.
 
@@ -39,7 +39,7 @@ To characterize additional pathways of N-acyl amino acid metabolism in the absen
 
 **Figure 1.:** (a) Schematic of the enzymatic assay that monitors conversion of C20:4-Phe or C20:4-Gly into arachidonic acid. (b, c) C20:4-Phe (b) and C20:4-Gly (c) hydrolysis activities across the indicated wild-type (blue) or PM20D1-KO (orange) tissues. For (b) and (c), activity assays were conducted with 100 µM substrates and 100 µg tissue lysate in phosphate-buffered saline (PBS) for 1 hr at 37°C. Data are shown as means ± SEM, N = 3/group. All experiments were performed once, with N corresponding to biological replicates. *, p<0.05; **, p<0.01, ***, p<0.001 for the indicated comparison.
 
-## Molecular identification of fatty acid amide hydrolase (FAAH) as the residual N-acyl amino acid hydrolase
+### Molecular identification of fatty acid amide hydrolase (FAAH) as the residual N-acyl amino acid hydrolase
 
 Because liver homogenates exhibited the most robust PM20D1-independent hydrolysis activity, we initiated an effort to identify the enzyme responsible for this activity. We first began with a candidate approach. PM20D1 is one of five members of the mammalian M20 peptidase family, all of which exhibit peptide bond hydrolysis and condensation activity on a variety of small molecule substrates such as N-acetyl amino acids (Sass et al., 2006), N-lactoyl amino acids (Jansen et al., 2015), and other dipeptides (Kim et al., 2019; Teufel et al., 2003). However, it was not known whether any of the other mammalian M20 peptidases could also hydrolyze N-fatty acyl amino acids. We therefore recombinantly expressed each of the mammalian M20 peptidases by transient transfection into HEK293T cells. Cell lysates were harvested and total C20:4-Gly hydrolysis activity was determined by LC-MS. Only PM20D1-transfected cells exhibited robust conversion of C20:4-Gly to arachidonic acid (Figure 2a). These data therefore exclude any other mammalian M20 peptidases as a candidate enzyme for catalyzing the residual N-acyl amino acid hydrolysis activity in PM20D1-KO tissues.
 
@@ -53,27 +53,43 @@ The mammalian serine hydrolases are a large family of more than 250 enzymes (B
 
 To determine whether FAAH could contribute to the residual hydrolysis activity in PM20D1-KO livers, we tested the effects of the potent and selective FAAH inhibitor PF-3845 (Ahn et al., 2009). This Pfizer compound has previously been shown to be highly selective and to inhibit only FAAH across multiple tissues following administration to mice. Pre-treatment of PM20D1-KO liver membrane lysates with PF-3845 (10 µM) completely blocked the residual hydrolysis activity exactly as was previously observed with MAFP (Figure 2c). By contrast, a distinct serine hydrolase inhibitor that does not inhibit FAAH (WWL70, 10 µM) had no effect on the residual C20:4-Gly hydrolysis activity. A dose–response curve established an EC50 of 290 nM for PF-3845, a concentration consistent with the previously reported potency of this compound towards FAAH (Figure 2d). Taken together, these data establish FAAH as the enzyme responsible for the residual N-acyl amino acid hydrolysis activity in PM20D1-KO tissues.
 
-## PM20D1 and FAAH exhibit overlapping but distinct substrate specificity in vitro
+### PM20D1 and FAAH exhibit overlapping but distinct substrate specificity in vitro
 
 We next performed alignments of the primary amino acid sequences of mouse PM20D1 and mouse FAAH (Figure 3a). As additional comparisons, we also included QRSL1 (glutamyl-tRNA amidotransferase subunit A, mitochondrial), which is the closest murine homolog to FAAH (17% identity), as well as the other four members of the murine M20 peptidase family. PM20D1 was most closely related to ACY1 (24% identity) and shared little identity with FAAH (11%). Our clustering also revealed a closer relationship of PM20D2 with both FAAH and QRSL1 than with the other M20 peptidase family members (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55211/elife-55211-fig3-v1.jpg)
+
+**Figure 3.:** (a) Phylogenetic alignment of the five murine M20 peptidases with mouse FAAH and a FAAH-related enzyme, QRSL1. Orange, M20 peptidases; gray, FAAH-related sequences. (b) Anti-flag western blot for cell lysates (left) and conditioned media (right) transfected with the indicated plasmids. (c–f) N-acyl amino acid hydrolysis and synthase activities of FAAH- and mock-transfected cell lysates (b, c) or PM20D1-transfected and mock-transfected conditioned media (d, e). Activity assays were conducted with 100 µM substrates and 100 µg protein in PBS for 1 hr at 37°C. Data are shown as means ± SEM, N = 3/group. All experiments were performed once, with N biological replicates. *, p<0.05; **, p<0.01; ***, p<0.001 for the indicated comparison.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55211/elife-55211-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Hydrolysis activities using the indicated substrate from transfected cell lysates (FAAH) or transfected conditioned media (PM20D1). (b) C20:4-Gly hydrolysis activity with purified PM20D1 in the presence or absence of C20:4-NAT competitor (100 µM). Activity assays were conducted with 100 µM substrates and 100 µg protein in PBS for 1 hr at 37°C. Data are shown as means ± SEM, N = 3/group. All experiments were performed once, with N biological replicates. ***, p<0.001 for the indicated comparison.
 
 To determine whether N-acyl amino acids are direct FAAH substrates in vitro, we generated recombinant FAAH protein by transient transfection of a C-terminal flag-tagged FAAH construct into HEK293T cells. As a direct comparison, recombinant PM20D1 was generated in parallel. As expected, FAAH was localized entirely intracellularly, consistent with its previously described localization as an ER-associated transmembrane enzyme, whereas PM20D1 protein was largely found in the conditioned media, consistent with its known annotation as a classically secreted enzyme (Figure 3b). Using these transfected lysates (for FAAH) and conditioned media (for PM20D1), hydrolysis activity across a diverse panel of 14 N-acyl amino acid substrates was determined by LC-MS. These 14 substrates varied by both amino acid head group and fatty acid chain. FAAH-transfected cells showed robust hydrolysis activity for four N-acyl amino acids tested: C18:1-Gly, C18:1-Ser, C20:4-Gly, and C20:4-Ser (Figure 3c). A strong preference was observed for C20:4-Ser over the other three N-acyl amino acid substrates (~1.5 nmol/min/mg for FAAH hydrolysis of C20:4-Ser versus 0.05–0.15 nmol/min/mg for any of the other substrates), at least under these in vitro conditions. In the N-acyl amino acid synthase direction, FAAH also catalyzed the condensation of arachidonic acid with Gly and Ser, but not Phe (Figure 3d). By contrast, robust hydrolysis activity was observed for PM20D1 across nearly all members of this N-acyl amino acid substrate panel over mock-transfected background (Figure 3e). PM20D1 also efficiently catalyzed the condensation of arachidonic acid with all three Gly, Ser, and Phe amino acids (Figure 3f).
 
 To better understand FAAH-mediated N-arachidonoyl glycine hydrolysis activity in the context of its previously described amidase activities, we directly compared the hydrolytic activity of transfected FAAH on C20:4-Gly, anandamide (C20:4-NAE), and N-arachidonoyl-taurine (C20:4-NAT). As expected, FAAH showed robust hydrolysis activity with anandamide as a substrate (0.5 nmol/min/mg) and lower but similar activities with C20:4-NAT and C20:4-Gly (0.04 and 0.02 nmol/min/mg, respectively, Figure 3—figure supplement 1a). Conversely, PM20D1 exhibited robust hydrolysis activity only on C20:4-Gly (0.6 nmol/min/mg) and was unable to hydrolyze either anandamide or C20:4-NAT (Figure 3—figure supplement 1a). We also determined that C20:4-NAT was not a direct inhibitor for PM20D1 (Figure 3—figure supplement 1b). Taken together, these data establish that recombinant FAAH is an N-acyl amino acid synthase/hydrolase in vitro. Our findings also underscore the PM20D1–FAAH pair as an example of convergence in enzymatic activity despite divergence in primary sequence.
 
-## N-acyl amino acid metabolism in mice with selective FAAH blockade
+### N-acyl amino acid metabolism in mice with selective FAAH blockade
 
 Although FAAH is a dominant regulator of several classes of bioactive fatty acid amides in vivo (Cravatt et al., 2001; Grevengoed et al., 2019; Han et al., 2013; Saghatelian et al., 2004), the physiologic role of FAAH in regulating N-acyl amino acids has not been systematically explored. Furthermore, considering the intracellular localization of FAAH compared with PM20D1, whether FAAH has a broad role or whether it regulates specific pools of N-acyl amino acids remains unknown. To determine the relevance of the FAAH/N-acyl amino acid pathway in vivo, we measured endogenous N-acyl amino acid levels following blockade of FAAH in mice. Because both genetic and pharmacological reagents for selective FAAH blockade were available, we performed three independent comparisons: global FAAH-KO versus FAAH-WT mice, a single administration of PF-3845 versus vehicle (10 mg/kg intraperitoneally, ‘acute’), or a three-day administration of PF-3845 versus vehicle (10 mg/kg intraperitoneally once per day, ‘chronic’). These three comparisons were selected because they had previously been validated to cause dramatic accumulation of other physiologic FAAH substrates in vivo (Long et al., 2011).
 
 Liver and blood were harvested and N-acyl amino acids were extracted by homogenization in acetonitrile/methanol. We developed a targeted liquid chromatography-triple quadrupole mass spectrometry (LC-QQQ) method to measure a panel of oleoyl- or arachidonoyl-containing N-acyl amino acids, reasoning that such a set would broadly capture a diverse and representative panel of this lipid family. In these experiments, we were able to detect 26 and 14 N-acyl amino acid species in liver and blood, respectively (Figure 4a and Figure 4—source data 1 and 2). In the liver, distinct bidirectional changes in N-acyl amino acids were observed in each of the three perturbations. Those changes that were statistically significant across all three conditions of FAAH blockade were elevations in C20:4-Glu (by 2.1-fold) and decreases in C20:4-Gly (by 70%). In other cases, certain N-acyl amino acids changes were only observed in either the genetic (e.g., increased C20:4-Leu/Ile) or pharmacological (e.g., increased C18:1-Glu) model. In the blood, no N-acyl amino acids were significantly changed over controls across all three experiments (Figure 4b). We confirmed that PM20D1 activity is not altered in FAAH-KO plasma (Figure 4—figure supplement 1). By abundance, hepatic N-acyl amino acids levels were similar to N-acyl ethanolamine and N-acyl taurines in wild-type mice (Figure 4—source data 1 and 2). Taken together, these data demonstrate that FAAH is a bidirectional regulator of a subset of intracellular, but not extracellular, N-acyl amino acids.
 
-## Cooperative regulation of N-acyl amino acids by PM20D1 and FAAH in vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/55211/elife-55211-fig4-v1.jpg)
+
+**Figure 4.:** (a, b) Fold change of the indicated N-acyl amino acids compared to the control for each of the indicated comparisons from liver (a) or blood (b). For drug treatment, PF-3845 was administered intraperitoneally at 10 mg/kg once (acute) or for three consecutive days (chronic). Tissues were harvested 3 hr after the final dose. No bars are shown for N-acyl amino acids that were below the limit of detection. Data are shown as means ± SEM, N = 4–5 mice/group for each of the indicated comparisons. All experiments were performed once, with N biological replicates. *, p<0.05; **, p<0.01; ***, p<0.001 by ANOVA with Dunnett’s multiple comparisons test versus control animals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55211/elife-55211-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** C20:4-Gly hydrolysis activities in from WT, FAAH-KO, or PM20D1-KO plasma. Activity assays were conducted with 100 µM substrates and 100 µg plasma in PBS for 1 hr at 37°C. Data are shown as means ± SEM, N = 3/group. All experiments were performed once, with N biological replicates. ***, p<0.001 versus WT.
+
+### Cooperative regulation of N-acyl amino acids by PM20D1 and FAAH in vivo
 
 Our data establish that at least two enzymes, PM20D1 and FAAH, contribute to the regulation of endogenous N-acyl amino acid levels. Individual blockade of PM20D1 or FAAH resulted in bidirectional dysregulation of N-acyl amino acids. We therefore considered the possibility that dual inhibition of both PM20D1 and FAAH would result in a complete ablation of N-acyl amino acid synthase/hydrolase activities, and in concomitant global elevations or global depletions of endogenous N-acyl amino acid levels. To test this hypothesis, we used global PM20D1-KO animals in combination with a FAAH inhibitor to block both PM20D1 and FAAH simultaneously. PM20D1-KO animals were chronically treated with PF-3845 (10 mg/kg intraperitoneally once per day for three days). As controls, PM20D1-KO or PM20D1-WT littermates were administered vehicle control (saline) in parallel. First, we measured liver N-acyl amino acid hydrolysis activity from each of the three groups of mice. As we described previously, livers from vehicle-treated PM20D1-KO mice exhibited a residual C20:4-Gly hydrolysis activity when compared to livers from PM20D1-WT mice. Following PF-3845 treatment in PM20D1-KO mice, the residual hepatic C20:4-Gly hydrolysis activity was entirely abolished (Figure 5a). These data establish that PM20D1 and FAAH are the only two C20:4-Gly hydrolysis activities in liver, at least under the assay conditions used here, and further validate our previous in vitro studies (Figure 2c,d).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55211/elife-55211-fig5-v1.jpg)
 
-**Figure 5.:** (a) C20:4-Gly hydrolysis activity in livers from PM20D1-WT, PM20D1-KO, or PM20D1-KO treated with PF-3845. (b, c) Relative fold change of the indicated N-acyl amino acids in PM20D1-KO mice or in PM20D1-KO mice treated with PF-3845 versus wild-type mice in liver (b) or blood (c). For drug treatment, PF-3845 was administered intraperitoneally at 10 mg/kg for three consecutive days and tissues were harvested 3 hr after the final dose. No bars are shown for N-acyl amino acids that were below the limit of detection. Data are shown as means ± SEM, N = 4–5 mice/group for each of the indicated comparisons. All experiments were performed once, with N biological replicates. *, p<0.05; **, p<0.01; ***, p<0.001 in color are versus PM20D1-WT levels, whereas those in black are for the indicated comparison by ANOVA with Tukey’s multiple comparison test.Figure 5—source data 1.
+**Figure 5.:** (a) C20:4-Gly hydrolysis activity in livers from PM20D1-WT, PM20D1-KO, or PM20D1-KO treated with PF-3845. (b, c) Relative fold change of the indicated N-acyl amino acids in PM20D1-KO mice or in PM20D1-KO mice treated with PF-3845 versus wild-type mice in liver (b) or blood (c). For drug treatment, PF-3845 was administered intraperitoneally at 10 mg/kg for three consecutive days and tissues were harvested 3 hr after the final dose. No bars are shown for N-acyl amino acids that were below the limit of detection. Data are shown as means ± SEM, N = 4–5 mice/group for each of the indicated comparisons. All experiments were performed once, with N biological replicates. *, p<0.05; **, p<0.01; ***, p<0.001 in color are versus PM20D1-WT levels, whereas those in black are for the indicated comparison by ANOVA with Tukey’s multiple comparison test.
 
 Next, we measured endogenous N-acyl amino acid levels in both liver and blood. Under basal conditions, PM20D1-KO mice exhibit bidirectional dysregulation of several N-acyl amino acids compared to PM20D1-WT mice (Figure 5b and Figure 5—source data 1). Surprisingly, complete ablation of N-acyl amino acid synthase/hydrolase activities did not uniformly change N-acyl amino acids in a positive or negative direction. Instead, dual inhibition of PM20D1 and FAAH uncovered a remarkable cooperativity of these two enzymatic pathways in the regulation of N-acyl amino acids. In general, individual regulation by PM20D1 or FAAH were not predictive of those N-acyl amino acid species that were regulated by both enzymatic pathways together or even the directionality of change. For instance, hepatic N-acyl serines were largely unaltered by individual blockade of either FAAH or PM20D1 alone (Figure 4a and Figure 5b). Following dual blockade of both enzymes, C18:1-Ser and C20:4-Ser were dramatically accumulated by 13-fold and 26-fold, respectively (Figure 5b). In other cases, dual blockade resulted in changes to N-acyl amino acids in the opposite direction compared to individual blockade alone. For instance, C18:1-Gly was reduced in PM20D1-KO livers and unaltered by FAAH blockade, but nevertheless accumulated to 8-fold over controls when both enzymes were inhibited. In the blood, similar cooperative interactions could also be observed (Figure 5c). In some cases, the directionality of the N-acyl amino acid changes was concordant in blood and liver (e.g., N-acyl glycines and N-acyl leucines), whereas in other cases (e.g., C18:1-Met), the intracellular pools accumulated with a concomitant decrease in extracellular levels. These data establish that PM20D1 and FAAH engage in non-additive crosstalk in vivo to regulate intracellular and circulating levels of N-acyl amino acids .
 
@@ -91,42 +107,675 @@ Last, our findings suggest that additional biochemical pathways beyond PM20D1 an
 
 ## Materials and methods
 
-## General animal information
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse line (Mus musculus)</td>
+      <td>PM20D1-KO</td>
+      <td>Long et al., 2018 (PMID:29967167)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse line (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Labs</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>PM20D1-flag</td>
+      <td>Addgene</td>
+      <td>84566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>FAAH-flag</td>
+      <td>Origene</td>
+      <td>MR209084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>ACY1-flag</td>
+      <td>Origene</td>
+      <td>MR206415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>CNDP1-flag</td>
+      <td>Origene</td>
+      <td>MR219018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>CNDP2-flag</td>
+      <td>Origene</td>
+      <td>MR207616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>PM20D2-flag</td>
+      <td>Origene</td>
+      <td>MR222068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-flag M2, mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Ab6046</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PF-3845</td>
+      <td>Selleckchem</td>
+      <td>S2666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C20:4-Gly</td>
+      <td>Cayman</td>
+      <td>90051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C20:4-Ser</td>
+      <td>Cayman</td>
+      <td>10005455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C20:4-Phe</td>
+      <td>Abcam</td>
+      <td>Ab141612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Arachidonic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>10931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>WWL70</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Talabostat</td>
+      <td>R and D</td>
+      <td>3719</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MAFP</td>
+      <td>Fisher Scientific</td>
+      <td>14-21-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C20:4-NAT</td>
+      <td>Cayman</td>
+      <td>10005537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Anandamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>A0580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C16:0-Phe</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:0-Phe</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C20:0-Phe</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C22:6-Phe</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Asn</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Gly</td>
+      <td>Cayman</td>
+      <td>90269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Lys</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Met</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Ser</td>
+      <td>Cayman</td>
+      <td>13058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Trp</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Tyr</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>C18:1-Gln</td>
+      <td>Lin et al., 2018 (PMID:29533650)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### General animal information
 
 Animal experiments were performed according to procedures approved by the Stanford University IACUC. Mice were maintained in 12 hr light-dark cycles at 22°C and fed a standard irradiated rodent chow diet. All experiments on wild-type mice were performed with male C57BL/6J mice purchased from Jackson Laboratories (stock number 000664). Global Pm20d1 knockout mice were obtained from Bruce M. Spiegelman (Dana-Farber Cancer Institute) and are available from Jackson Laboratories (stock number 032193). PF-3845 was administered to mice in a solution of 18:1:1 saline:kolliphor EL:DMSO in a volume of 200 µl/mouse (intraperitoneally).
 
-## Materials
+### Materials
 
 N-arachidonoyl glycine, N-arachidonoyl serine, and N-arachidonoyl-taurine were purchased from Cayman. N-arachidonoyl phenylalanine was purchased from Abcam. Arachidonic acid, anandamide, and WWL70 were purchased from Sigma-Aldrich. PF-3845 was purchased from Selleckchem. MAFP and EDTA were purchased from Fisher. Talabostat was purchased from R and D. Non-commercially available N-acyl amino acids were synthesized as previously described (Lin et al., 2018; Long et al., 2016). Plasmids were obtained from the following sources: mouse PM20D1-flag (Addgene 132682), mouse FAAH-flag (Origene MR209084), mouse ACY1-flag (Origene MR206415), mouse CNDP1-flag (Origene MR219018), mouse CNDP2-flag (Origene MR207616), and mouse PM20D2-flag (MR222068).
 
-## Statistics, sample size estimation, and replicates
+### Statistics, sample size estimation, and replicates
 
 All statistical comparisons were performed using Student’s t-test or ANOVA with Tukey or Dunnett’s multiple comparison test. No explicit power analysis was used to determine sample sizes. Sample sizes were determined on the basis of previous literature for biochemical or animal studies. All experiments were performed once, with N corresponding to biological replicates. Outliers were not removed from analyses. The experimentalist was not blinded to sample or treatment conditions.
 
-## Cell culture
+### Cell culture
 
 HEK293T cells were obtained from ATCC (CRL-3216) and cultured in DMEM with L-glutamine, 4.5 g/L glucose and sodium pyruvate (Corning 10013CV) supplemented with 10% FBS (Corning 35010CV). Cells were incubated at 37°C in 5% CO2 for growth and tranfections. All cell lines were authenticated by DNA fingerprint STR analysis by ATCC. Mycoplasma was not tested. Authentication of cell lines beyond ATCC was not completed due to laboratory disruptions by COVID-19.
 
-## Production of recombinant enzymes
+### Production of recombinant enzymes
 
 Plasmids were transiently transfected into HEK293T cells using PolyFect (Qiagen) according to the manufacturer’s instructions. The medium was changed to serum-free DMEM one day post-transfection. After an additional 24 hr, the medium was collected and the cells were harvested by scraping.
 
-## Molecular studies
+### Molecular studies
 
 Western blotting was performed according to standard methods. The following antibodies were used: anti-flag M2 antibody (Sigma F1804, diluted 1:10,000), and tubulin (Abcam ab6046, diluted 1:10,000).
 
-## Enzyme activity assays in vitro
+### Enzyme activity assays in vitro
 
 Plasma was collected from mice and used directly for the activity assays. Tissues were homogenized using a Benchmark BeadBlaster Homogenizer in ice-cold PBS, centrifuged to remove debris (5 min at 1000 x g), and the supernatant was collected and used for activity assays. For assays using liver membranes, total liver homogenates were transferred into ultracentrifuge inserts and spun at 100,000 x g on a Beckman Centrifuge I8-70M for 1 hr at 4°C. In vitro enzymatic reactions were conducted in glass vials and initiated by the addition of 100 µg protein. Final reaction conditions for the hydrolase reactions were 100 µM substrate (C20:4-Gly or C20:4-Phe) and 100 µg protein in 100 µl PBS, and for the synthase reactions were 1 mM Phe, 1 mM oleic acid, and 100 µg protein in 100 µl PBS. After 1 hr at 37°C, reactions were quenched with 400 µl 2:1 v/v acetonitrile:methanol and vortexed. Reaction vials were centrifuged at 2000 x g to remove debris, and the supernatant was collected and analyzed by LC-MS as described below. For inhibitor assays, tissue lysates were treated with the indicated inhibitors for 10 min at room temperature before the introduction of the indicated substrates.
 
-## Extraction of N-acyl amino acids from blood and tissues
+### Extraction of N-acyl amino acids from blood and tissues
 
 Frozen plasma (30 μl) were extracted in 160 μl of 1:1 v/v acetonitrile:methanol. Liver tissues were extracted in 500 μl 2:2:1 v/v/v acetonitrile:methanol:water on a BeadBlaster homogenizer for 1 min. Extracts were centrifuged (10 min, 5000 x g) to remove debris. The supernatant was isolated and centrifuged again (10 min, 5000 x g). Finally, the twice-clarified supernatant was transferred to a mass spectrometry vial and analyzed by LC-MS as described below.
 
-## Measurements of N-acyl amino acids in vivo and enzyme activities in vitro by LC-MS
+### Measurements of N-acyl amino acids in vivo and enzyme activities in vitro by LC-MS
 
 Mass spectrometry analysis was performed with an electrospray ionization (ESI) source on an Agilent 6470 Triple Quadrupole (QQQ). For separation of metabolites, normal-phase chromatography was performed with a Luna 5 µm C5 100 Å LC column (Phenomenex 00B-4043-E0). The mobile phases were as follows: Buffer A, 95:5 water/methanol; Buffer B, 60:35:5 isopropanol/methanol/water with 0.1% ammonium hydroxide in both Buffer A and B for negative ionization mode. For AJS ESI ion source parameters, the drying gas temperature was set to 250°C with a flow rate of 12 l/min, and the nebulizer pressure was 25 psi. The sheath gas temperature was set to 300°C with a flow rate of 12 l/min. The capillary voltage was set to 2500 V and the fragmentor voltage was set to 135 V. For the measurement of in vitro enzyme activity assays, the flow rate for each run started at 95% A/5% B for 3 min at 0.6 ml/min, followed by a gradient starting at 95% A/5% B changing linearly to 5% A/95% B over the course of 3 min at 0.6 ml/min, followed by 5% A/95% B for 1.5 min at 0.6 ml/min. For the measurement of metabolites from blood and liver in vivo, the flow rate for each run started at 95% A/5% B for 1 min at 0.6 ml/min, followed by a gradient starting at 95% A/5% B changing linearly to 5% A/95% B over the course of 10 min at 0.6 ml/min, followed by 5% A/95% B for 3 min at 0.6 ml/min, and back to 95% A/5% B over 1 min at 0.6 ml/min.
 
 The QQQ acquisition parameters were as follows. For in vitro assays, the mass range was set from 100 to 500 m/z. For measurement of endogenous N-acyl amino acids, metabolites were detected by the SRM of the transition from precursor to product ions (corresponding to the amino acid fragment) at collision energy 20. The following table includes the list of transitions used. N-acyl taurines and N-acyl ethanolamines were measured as described previously (Long et al., 2011).
 
-Compound namePrecursor ionProduct ionDwellFragmentorCollision energyCell accelerator voltagePolarityC18:1-Trp467.3203.150135205NegativeC20:4-Tyr466.3180.150135205NegativeC20:4-Arg459.4173.150135205NegativeC20:4-Phe450.3164.150135205NegativeC18:1-Tyr444.3180.150135205NegativeC20:4-His440.3154.150135205NegativeC18:1-Arg437.4173.150135205NegativeC20:4-Met434.314850135205NegativeC20:4-Glu432.3146.150135205NegativeC20:4-Gln/Lys431.3145.150135205NegativeC18:1-Phe428.3164.150135205NegativeC18:1-His418.3154.150135205NegativeC20:4-Asp418.313250135205NegativeC20:4-Asn417.3131.150135205NegativeC20:4-Leu/Ile416.4130.150135205NegativeC18:1-Met412.314850135205NegativeC18:1-Glu410.3146.150135205NegativeC18:1-Gln/lys409.3145.150135205NegativeC20:4-Cys406.312050135205NegativeC20:4-Thr404.3118.150135205NegativeC20:4-Val402.3116.150135205NegativeC20:4-Pro400.3114.150135205NegativeC18:1-Asp396.313250135205NegativeC18:1-Asn395.3131.150135205NegativeC18:1-Leu/Ile394.4130.150135205NegativeC20:4-Ser390.310450135205NegativeC15-Phe388.3164.150135205NegativeC18:1-Cys384.312050135205NegativeC18:1-Thr382.3118.150135205NegativeC18:1-Val380.3116.150135205NegativeC18:1-Pro378.3114.150135205NegativeC20:4-Ala374.38850135205NegativeC18:1-Ser368.310450135205NegativeC20:4-Gly360.37450135205NegativeC18:1-Ala352.38850135205NegativeC18:1-Gly338.37450135205NegativeC20:4-Trp489.3203.150135205Negative
+<table>
+  <thead>
+    <tr>
+      <th>Compound name</th>
+      <th>Precursor ion</th>
+      <th>Product ion</th>
+      <th>Dwell</th>
+      <th>Fragmentor</th>
+      <th>Collision energy</th>
+      <th>Cell accelerator voltage</th>
+      <th>Polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C18:1-Trp</td>
+      <td>467.3</td>
+      <td>203.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Tyr</td>
+      <td>466.3</td>
+      <td>180.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Arg</td>
+      <td>459.4</td>
+      <td>173.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Phe</td>
+      <td>450.3</td>
+      <td>164.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Tyr</td>
+      <td>444.3</td>
+      <td>180.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-His</td>
+      <td>440.3</td>
+      <td>154.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Arg</td>
+      <td>437.4</td>
+      <td>173.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Met</td>
+      <td>434.3</td>
+      <td>148</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Glu</td>
+      <td>432.3</td>
+      <td>146.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Gln/Lys</td>
+      <td>431.3</td>
+      <td>145.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Phe</td>
+      <td>428.3</td>
+      <td>164.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-His</td>
+      <td>418.3</td>
+      <td>154.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Asp</td>
+      <td>418.3</td>
+      <td>132</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Asn</td>
+      <td>417.3</td>
+      <td>131.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Leu/Ile</td>
+      <td>416.4</td>
+      <td>130.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Met</td>
+      <td>412.3</td>
+      <td>148</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Glu</td>
+      <td>410.3</td>
+      <td>146.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Gln/lys</td>
+      <td>409.3</td>
+      <td>145.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Cys</td>
+      <td>406.3</td>
+      <td>120</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Thr</td>
+      <td>404.3</td>
+      <td>118.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Val</td>
+      <td>402.3</td>
+      <td>116.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Pro</td>
+      <td>400.3</td>
+      <td>114.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Asp</td>
+      <td>396.3</td>
+      <td>132</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Asn</td>
+      <td>395.3</td>
+      <td>131.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Leu/Ile</td>
+      <td>394.4</td>
+      <td>130.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Ser</td>
+      <td>390.3</td>
+      <td>104</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C15-Phe</td>
+      <td>388.3</td>
+      <td>164.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Cys</td>
+      <td>384.3</td>
+      <td>120</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Thr</td>
+      <td>382.3</td>
+      <td>118.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Val</td>
+      <td>380.3</td>
+      <td>116.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Pro</td>
+      <td>378.3</td>
+      <td>114.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Ala</td>
+      <td>374.3</td>
+      <td>88</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Ser</td>
+      <td>368.3</td>
+      <td>104</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Gly</td>
+      <td>360.3</td>
+      <td>74</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Ala</td>
+      <td>352.3</td>
+      <td>88</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C18:1-Gly</td>
+      <td>338.3</td>
+      <td>74</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>C20:4-Trp</td>
+      <td>489.3</td>
+      <td>203.1</td>
+      <td>50</td>
+      <td>135</td>
+      <td>20</td>
+      <td>5</td>
+      <td>Negative</td>
+    </tr>
+  </tbody>
+</table>

@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Carnegie Mellon-University of Pittsburgh PhD Program in Computational Biology Pittsburgh United States
-2. https://ror.org/01an3r305 Department of Computational Biology, University of Pittsburgh Pittsburgh United States
-3. https://ror.org/03r0ha626 Department of Human Genetics, University of Utah Salt Lake City United States
+1. Carnegie Mellon-University of Pittsburgh PhD Program in Computational Biology Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+2. Department of Computational Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+3. Department of Human Genetics, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-Body hair is a defining mammalian characteristic, but several mammals, such as whales, naked mole-rats, and humans, have notably less hair. To find the genetic basis of reduced hair quantity, we used our evolutionary-rates-based method, RERconverge, to identify coding and noncoding sequences that evolve at significantly different rates in so-called hairless mammals compared to hairy mammals. Using RERconverge, we performed a genome-wide scan over 62 mammal species using 19,149 genes and 343,598 conserved noncoding regions. In addition to detecting known and potential novel hair-related genes, we also discovered hundreds of putative hair-related regulatory elements. Computational investigation revealed that genes and their associated noncoding regions show different evolutionary patterns and influence different aspects of hair growth and development. Many genes under accelerated evolution are associated with the structure of the hair shaft itself, while evolutionary rate shifts in noncoding regions also included the dermal papilla and matrix regions of the hair follicle that contribute to hair growth and cycling. Genes that were top ranked for coding sequence acceleration included known hair and skin genes KRT2 , KRT35 , PKP1 , and PTPRM that surprisingly showed no signals of evolutionary rate shifts in nearby noncoding regions. Conversely, accelerated noncoding regions are most strongly enriched near regulatory hair-related genes and microRNAs, such as mir205 , ELF3 , and FOXC1 , that themselves do not show rate shifts in their protein-coding sequences. Such dichotomy highlights the interplay between the evolution of protein sequence and regulatory sequence to contribute to the emergence of a convergent phenotype.
+Body hair is a defining mammalian characteristic, but several mammals, such as whales, naked mole-rats, and humans, have notably less hair. To find the genetic basis of reduced hair quantity, we used our evolutionary-rates-based method, RERconverge, to identify coding and noncoding sequences that evolve at significantly different rates in so-called hairless mammals compared to hairy mammals. Using RERconverge, we performed a genome-wide scan over 62 mammal species using 19,149 genes and 343,598 conserved noncoding regions. In addition to detecting known and potential novel hair-related genes, we also discovered hundreds of putative hair-related regulatory elements. Computational investigation revealed that genes and their associated noncoding regions show different evolutionary patterns and influence different aspects of hair growth and development. Many genes under accelerated evolution are associated with the structure of the hair shaft itself, while evolutionary rate shifts in noncoding regions also included the dermal papilla and matrix regions of the hair follicle that contribute to hair growth and cycling. Genes that were top ranked for coding sequence acceleration included known hair and skin genes KRT2, KRT35, PKP1, and PTPRM that surprisingly showed no signals of evolutionary rate shifts in nearby noncoding regions. Conversely, accelerated noncoding regions are most strongly enriched near regulatory hair-related genes and microRNAs, such as mir205, ELF3, and FOXC1, that themselves do not show rate shifts in their protein-coding sequences. Such dichotomy highlights the interplay between the evolution of protein sequence and regulatory sequence to contribute to the emergence of a convergent phenotype.
 
 ## Introduction
 
@@ -36,13 +36,45 @@ Here, we further explored the genetic basis of hairlessness across the mammalian
 
 ## Results
 
-## Phenotype assignment
+### Phenotype assignment
 
 The hairless phenotype in mammals arose at least nine independent times along the mammalian phylogeny (Figure 1A, Figure 1—source data 1). Genomic regions that experienced evolutionary rate shifts in tandem with mammalian loss of hair were considered potentially associated with phenotype loss. Ten extant and one ancestral hairless species were identified based on species hair density (Figure 1A). Broadly, species with skin visible through hair were classified as hairless, namely, rhinoceros, elephant, naked mole-rat, human, pig, armadillo, walrus, manatee, dolphin, and orca. The cetacean (dolphin-orca) ancestor was also included because it was likely a hairless marine mammal.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree showing a subset of the 62 mammal species used for analyses. Note that all 62 species were included in analyses and only a subset are shown here for visualization purposes. Foreground branches representing the hairless phenotype are depicted in orange alongside photographs of the species. (B) Q-Q plots for uniformity of permulation p-values for association tests per genetic element for coding and noncoding elements. Shown are both positive associations that indicate accelerated evolution in hairless species and negative associations that indicate decelerated evolution in hairless species. The deviation from the red line (the identity) indicates an enrichment of low permulation p-values – there are more significant permulation p-values than we would observe under the uniform null expectation. This indicates significant evolutionary rate shifts for many genes and noncoding elements in hairless mammals. (C) Hair-related Mouse Genome Informatics (MGI) category genes are under significantly accelerated evolution in hairless species. Shown are the AUC (Area Under the Receiver Operating Characteristic curve) values minus 0.5 (maximum enrichment statistic = 0.5, minimum enrichment statistic = –0.5; statistic = 0 indicates no enrichment) for each hair- or skin-related pathway with a permulation p-value≤0.01. In parentheses are the statistic-based ranks of those pathways among all pathways under accelerated evolution in hairless mammals with permulation p-values≤0.01. (D) Skin- and hair-expressed genes are under significant evolutionary rate acceleration in hairless species. All genesets except hair follicle are from the GTEx tissue expression database. Hair follicle genes are the top 69 most highly expressed genes from Zhang et al., 2017 hair follicle RNA sequencing that are not ubiquitously expressed across GTEx tissue types.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) When considering either the state of being hairless as the foreground or the process of changing from haired to hairless as the foreground, enrichment of skin-related genes shows little difference. (B) When considering the elephant/manatee ancestor as haired or hairless, an area of uncertainty in phenotype evolution, enrichment of skin-related genes shows little difference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Size of nodes and numbers in nodes indicate the number of genes in the pathway. Width of lines connecting nodes indicates the number of genes shared between pathways. Values for node sizes and edge widths are given in Figure 1—source data 9. Visualization was generated using igraph (Csardi and Nepusz, 2006) with optimal clustering to identify groups shown with different colored nodes and shading.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Size of nodes and numbers in nodes indicate the number of genes in the pathway. Note that pathways with more than 200 genes were binned to the same node size for clarity of visualization. Width of lines connecting nodes indicates the number of genes shared between pathways. Values for node sizes and edge widths are given in Figure 1—source data 9. Visualization was generated using igraph (Csardi and Nepusz, 2006) with optimal clustering to identify groups shown with different colored nodes and shading.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp5-v2.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp6-v2.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp7-v2.jpg)
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp8-v2.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp9-v2.jpg)
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp10-v2.jpg)
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig1-figsupp11-v2.jpg)
+
 An ancestral point of phenotypic ambiguity existed at the ancestor of manatee and elephant. Considerable uncertainty exists as to whether the ancestral species had hair and independent trait losses occurred on the manatee and elephant lineages or, alternatively, whether the ancestral species lost hair prior to manatee–elephant divergence and regained hair along mammoth lineages post-divergence (Roca et al., 2009). Since foreground assignment of the manatee–elephant ancestor had little impact on skin-specific signal, we retained the parsimonious assignment of the ancestral species as haired with inferred independent losses in the manatee and post-mammoth elephant lineages (Figure 1—figure supplement 1B). Similarly, assigning foreground branches based on the state of being hairless or the transition from haired to hairless – that is, assigning the entire cetacean clade as foreground versus only assigning the cetacean ancestor as foreground – had little impact on skin-specific signal (Figure 1—figure supplement 1A). In the case of cetaceans, we retained all three branches (orca, dolphin, and the orca-dolphin ancestor) as foreground to maximize statistical power.
 
-## Phenotypic confounders
+### Phenotypic confounders
 
 Hairless species share other convergent characteristics that could confound associations between the hairless phenotype and evolutionary rate shifts. In particular, several hairless species are large and many are marine mammals. Therefore, any signal related to hairless species could be driven instead by confounders. Problems with these two confounders were handled in two different ways.
 
@@ -54,17 +86,144 @@ Marine status, on the other hand, is a trait of potential interest because marin
 
 **Figure 2.:** Depicted are precision-recall curves demonstrating how Bayes factors of the contrasting hairless and marine phenotypes rank genes related to skin, hair, and olfaction. Also plotted is a ranking based on the ratio of hairlessness and marine Bayes factors (hVSm = hairlessness Bayes factor/marine Bayes factor). The ratio of the Bayes factors quantifies the amount of support for the hairless phenotype beyond the support for the marine phenotype per gene. In other words, a high Bayes factor ratio indicates a signal of evolutionary convergence associated with hairlessness that is not only driven by signals of convergence in hairless marine mammals. The hairless phenotype had much greater power to enrich for genes expressed in skin (GTEx data) compared to the marine phenotype, indicating that accelerated evolution is driven more strongly by hairlessness. Both the marine and hairless phenotypes enriched for genes in hair follicle expression genes, indicating that both contribute to accelerated evolution of those genes. Olfactory genes, on the other hand, are expected to show acceleration only related to the marine phenotype. As expected, the marine phenotype is much more strongly enriched for olfactory genes than the hairless phenotype.
 
-## Species-specific analyses
+### Species-specific analyses
 
 In addition to conducting convergent evolution analyses to identify genetic elements evolving at different rates across all hairless species, we also conducted complementary analyses to detect elements evolving at different rates in individual hairless species to demonstrate the importance of convergent evolution in our analyses. Indeed, the strength of enrichment for hair follicle-related genes among top hits steadily increases as more hairless species share rate shifts in those genes, an indicator of the power of the convergent signal (Figure 3). Further, analyses on single species alone only show enrichment for hair follicle-related genes among top hits in 2 hairless species out of 10 – armadillo and pig (Figure 3—figure supplement 1). Together, these results demonstrate the importance of testing for convergent evolutionary rate shifts across all hairless mammals to best detect hair-related elements.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig3-v2.jpg)
+
+**Figure 3.:** Each hairless species was individually tested for a significant rate shift compared to non-hairless species using a Wilcoxon signed-rank test. Then a Fisher’s exact test was used to test for an enrichment of hair follicle genes (as shown in Figure 1D) with a minimum number of hairless species, ranging from 1 species to all 10 species, with significant rate shifts. Note that the odds ratio for an enrichment with a minimum of one species is not well defined because most genes genome-wide have at least one hairless species with a significant rate shift (18,582 genes out of 18,822 that could be tested), including all hair follicle genes, and their enrichment was not significant (p=0.64). Overall, enrichment strength increases moving from left to right on the plot as the geneset of interest becomes restricted to genes with a larger number of species with rate shifts, although p-values are less extreme because there are simply fewer genes in those categories with higher numbers of species. This demonstrates the convergent signal that allows for detection of hair-related genetic elements based on shared rate shifts.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76911/elife-76911-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** For each species listed (all 10 hairless species and 10 randomly selected non-hairless species), Wilcoxon signed-rank tests were run per gene to detect significant rate shift in the specified species compared to other species. A Fisher’s exact test was then run to test for enrichment of hair follicle genes (as shown in Figure 1D) among genes with significant rate shifts. Although two hairless species do show significant rate shifts, the trend is not consistent across all hairless species, most of which show similar enrichment to non-hairless species. This suggests that studying single species alone is often insufficient to identify hair-related genes. Further, genes with substantial changes in individual species may represent species-specific adaptation that do not apply globally across species that share similar phenotypes. Finally, single-species analyses are insufficient to distinguish genetic element functions may be related to a variety of species-specific adaptations and they are unable to prioritize function-related elements due to the large number of unique changes observed in each species (see Figure 3—source data 1, counts range from 5,641 for orca to 12,103 for manatee).
+
 Also of important note is that every individual hairless species has thousands of genes with significant rate shifts in that species (Figure 3—source data 1). It is impossible to tell which of those rate shifts is associated with hairlessness specifically because the species have many unique phenotypes other than hairlessness that could be responsible for rate shifts in their respective genes. Convergent analyses allow for more concrete identification of hair-related elements by weeding out rate shifts that are not shared across species with the convergent hairless phenotype.
 
-## Known hair-related genetic elements evolve faster in hairless species
+### Known hair-related genetic elements evolve faster in hairless species
 
 We used RERconverge to identify genes and noncoding elements evolving at significantly faster or slower rates in hairless species compared to haired species (see ‘Methods’). Briefly, the evolutionary rates of genetic elements were compared in hairless versus haired species using a rank-based hypothesis test, and we generated p-values empirically with a newly developed method, termed permulations, that uses phylogenetically constrained phenotype permutations (Saputra et al., 2020). The permulation method compares the correlation statistics from the true phenotype to correlation statistics that arise from randomized phenotypes that preserve the relative species relationships. Thus, small p-values indicate a specific association with the hairless phenotype.
 
 We find that quantile–quantile (Q-Q) plots of permulation p-values from hypothesis tests for all genetic elements indicate a large deviation from the expected uniform distribution and thus an enrichment of significant permulation p-values (Figure 1B, Figure 1—source data 2 and 3). Interestingly, noncoding regions appeared to show even stronger deviation from uniformity than coding regions, perhaps because regulatory changes more strongly underlie the convergent evolution of hairlessness. For both coding and noncoding regions, we show enrichment of significant p-values for both positive and negative evolutionary rate shifts, and the direction of the rate shifts is critical to interpretation. Positive rate shifts imply rate acceleration, which we interpret as a relaxation of evolutionary constraint. While positive rate shifts could theoretically be driven by positive selection, we demonstrate that this is not the case for our top-accelerated genes. Branch-site models to test for positive selection were performed using Phylogenetic Analysis by Maximum Likelihood (PAML) (Yang, 2007) on top-accelerated genes. Tests showed little evidence for foreground-specific positive selection; out of 199 genes tested, 27 genes demonstrated hairless acceleration, but all such genes also showed evidence for tree-wide positive selection, suggesting that positive selection was not specific to hairless species although perhaps stronger (Figure 1—source data 4). In fact, over half of our top genes from show evidence of pseudogenization, and therefore defunctionalized, in one or more hairless species (Table 1; Meyer et al., 2018). Thus, regions with positive rate shifts evolve faster in hairless species due to relaxation of evolutionary constraint, perhaps because of reduced functionality driving or in conjunction with the hairlessness phenotype. Negative rate shifts indicate increased evolutionary constraint in hairless species, which implies increased functional importance of a genomic region. While negative shifts are more difficult to interpret in the context of trait loss, they may represent compensatory phenotypic evolution in response to trait loss.
+
+**Table 1.**
+ Genes whose evolutionary rates are significantly associated with the hairless phenotype with significant parametric p-values, significant permulation p-values, positive statistic, and hairless versus marine Bayes factors (BF) greater than five.BF marine and BF hairless are BF for those phenotypes individually, while BF hairless/BF marine is the ratio of the two. The ratio of the BF quantifies the amount of support for the hairless phenotype beyond the support for the marine phenotype per gene. In other words, a high BF ratio indicates a signal of evolutionary convergence associated with hairlessness that is not only driven by signals of convergence in hairless marine mammals. Also shown are enrichment statistics for noncoding regions near top genes. Adjusted p-values are Benjamini–Hochberg corrected. Note that permulation p-values observed as 0 were adjusted to 0.001 (the smallest observable permulation p-value) prior to multiple hypothesis testing correction. Cells with missing values (for ‘Enrichment statistic (noncoding)’ and ‘Enrichment p-adj (noncoding)’) do not have enough observations to calculate enrichment statistics because too few conserved noncoding elements were detected in the vicinity of those genes. Pseudogene calls are based on premature stop codons reported in Meyer et al., 2018.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Statistic(gene)</th>
+      <th>p-adj(gene)</th>
+      <th>BF hairless/BF marine(gene)</th>
+      <th>BFhairless(gene)</th>
+      <th>BFmarine(gene)</th>
+      <th>Perm p-adj(gene)</th>
+      <th>Pseudogene (hairless species)</th>
+      <th>Enrichmentstatistic(noncoding)</th>
+      <th>Enrichment p-adj(noncoding)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FGF11</td>
+      <td>0.403</td>
+      <td>0.205</td>
+      <td>116.4</td>
+      <td>6354.7</td>
+      <td>54.6</td>
+      <td>0.201</td>
+      <td>Dolphin</td>
+      <td>–0.115</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td>GLRA4</td>
+      <td>0.332</td>
+      <td>0.179</td>
+      <td>22.6</td>
+      <td>1908.3</td>
+      <td>84.3</td>
+      <td>0.201</td>
+      <td>Manatee</td>
+      <td>–0.159</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>ANXA11</td>
+      <td>0.328</td>
+      <td>0.179</td>
+      <td>25.5</td>
+      <td>45.2</td>
+      <td>1.8</td>
+      <td>0.201</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PTPRM</td>
+      <td>0.326</td>
+      <td>0.179</td>
+      <td>51.7</td>
+      <td>4393.6</td>
+      <td>85.0</td>
+      <td>0.201</td>
+      <td>No</td>
+      <td>0.146</td>
+      <td>1.19e-9</td>
+    </tr>
+    <tr>
+      <td>PKP1</td>
+      <td>0.323</td>
+      <td>0.179</td>
+      <td>5.6</td>
+      <td>2669.0</td>
+      <td>478.9</td>
+      <td>0.201</td>
+      <td>No</td>
+      <td>0.117</td>
+      <td>0.410</td>
+    </tr>
+    <tr>
+      <td>KRT2</td>
+      <td>0.304</td>
+      <td>0.205</td>
+      <td>2235.7</td>
+      <td>27034.4</td>
+      <td>12.1</td>
+      <td>0.201</td>
+      <td>Armadillo,naked mole-rat, orca, manatee</td>
+      <td>0.175</td>
+      <td>0.181</td>
+    </tr>
+    <tr>
+      <td>MYH4</td>
+      <td>0.297</td>
+      <td>0.205</td>
+      <td>28.0</td>
+      <td>11447.2</td>
+      <td>409.3</td>
+      <td>0.201</td>
+      <td>Dolphin, orca</td>
+      <td>0.147</td>
+      <td>0.311</td>
+    </tr>
+    <tr>
+      <td>KRT35</td>
+      <td>0.293</td>
+      <td>0.205</td>
+      <td>8.6</td>
+      <td>1954.5</td>
+      <td>227.3</td>
+      <td>0.201</td>
+      <td>Dolphin</td>
+      <td>0.142</td>
+      <td>0.211</td>
+    </tr>
+  </tbody>
+</table>
 
 To demonstrate that the statistical signal from individual genes and noncoding regions is meaningful, we evaluated to what extent those RERconverge results enrich for known hair-related elements. We calculated pathway enrichment statistics using a rank-based test and statistics from element-specific results to evaluate whether genes or noncoding elements that are part of a predefined biologically coherent set are enriched in our ranked list of accelerated regions. Using numerous genesets associated with hair growth, such as KRTs, KRTAPs, hair follicle-expressed genes (Zhang et al., 2017), skin-expressed genes (Papatheodorou et al., 2018), and Gene Ontology (GO) (Ashburner et al., 2000), Mouse Genome Informatics (MGI) (Eppig et al., 2015), and canonical hair-annotated genes (Liberzon et al., 2011), we indeed find that our results are highly enriched for hair-related functions (Figure 1—source data 5). As shown in Figure 1C, many of the top-enriched MGI phenotypes are hair-related. Likewise, enrichment analyses using the GTEx tissue expression database (Papatheodorou et al., 2018) supplemented with hair follicle-expressed genes (Zhang et al., 2017) show strong enrichment for both skin and hair follicle genes, as well as signal for other epithelial tissues such as vagina and esophagus (Figure 1D). Note that while different MGI and tissue-annotated categories do not contain unique genesets, they are not totally overlapping and tend to cluster into logical higher-order functionalities (Figure 1—figure supplements 2 and 3, Figure 1—source data 9).
 
@@ -82,7 +241,7 @@ Investigating a focused list of genesets associated with specific structures of 
 
 Overall, these results indicate strong enrichment for hair-related function in both protein-coding genes and noncoding regions that are convergently accelerated in hairless species.
 
-## Analyses reveal novel putative hair-related genetic elements
+### Analyses reveal novel putative hair-related genetic elements
 
 After extensive filtering using RERconverge statistics, Bayes factors, and permulation statistics, several novel putatively hair-related genes were uncovered. As shown in Table 1 and Figure 1—figure supplements 4–11, the top-accelerated gene associated with hairlessness with strong support for hairless-related signal as opposed to marine-related signal was FGF11. While FGF11 has no known role in hair growth, its expression is highly enriched in the skin and other fibroblast growth factor genes are known to be related to hair growth (Kawano et al., 2005; Lee et al., 2019; Nakatake et al., 2001; Rosenquist and Martin, 1996; Suzuki et al., 2000). Together, these observations support FGF11 as another strong candidate for hair-related function.
 
@@ -126,7 +285,7 @@ This study has revealed a slew of fresh candidate genes, noncoding regions, and 
 
 ## Methods
 
-## Calculating body size-regressed relative evolutionary rates
+### Calculating body size-regressed relative evolutionary rates
 
 The RERconverge package in R was used to generate phylogenetic trees for each gene and noncoding region in which branch length represented the amount of evolutionary change, or the number of nonsynonymous substitutions, that occurred along that branch as described in several previous publications (Kowalczyk et al., 2019; Kowalczyk et al., 2020; Partha et al., 2019). Alignments for 19,149 genes in 62 mammal species were obtained from the UCSC 100-way alignment (Blanchette et al., 2004; Harris, 2007; Kent et al., 2002). The topology used to generate element-specific trees is included below under ‘Phylogenetic trees’.
 
@@ -138,7 +297,7 @@ The resulting relative evolutionary rates were used to calculate body size-regre
 
 RER matrices and phylogenetic trees are available on Dryad.
 
-## Defining hairless species
+### Defining hairless species
 
 Since all mammals have some hair during at least one stage of life, no species are truly hairless. Therefore, classification of species as ‘hairless’ versus ‘haired’ was qualitatively based on density of hair covering and quantitatively based on the impact of removing species on the hair-related signal detected during analyses. Tendency was to err on the side of leniency when assigning species as hairless – any species with reduced hair quantity was classified as hairless.
 
@@ -146,13 +305,13 @@ Extant species classified as hairless were armadillo, elephant, white rhinoceros
 
 Although some species are undeniably hairy (dog, cat, sheep, etc.) and some are undeniably relatively hairless (orca, dolphin, elephant, etc.), some species are borderline cases. For example, the tenrec and hedgehog appear to have ‘spikes’ rather than hair. However, tenrec and hedgehog spikes (as well as porcupine quills) are modified hairs (Leon Augustus, 1920), so we classified tenrec and hedgehog as hairy. Armadillo, pig, and human are likewise classified as hairless species but have relatively greater hair quantity than the other hairless species. The armadillo, like the tenrec and hedgehog, has a unique external modification, but unlike the tenrec and hedgehog, the armadillo’s shell is made of bone, not hair (Chen et al., 2011), so we classified the armadillo as hairless. Pig and human, on the other hand, have nonmodified skin that is nearly completely covered in hair (and in the case of humans, the hair is quite dense in some body areas), but both species have large swaths of body area where hair is so sparse that sun-exposed skin is clearly visible. Both species were classified as hairless due to this pervasive low hair density. To assess the impact of species assignment on skin- and hair-related signal, hairless species were systematically removed and relevant enrichment statistics were recalculated. No specific species has a consistently detrimental impact on enrichment for genesets of interest (Figure 4).
 
-## Calculating element-specific association statistics
+### Calculating element-specific association statistics
 
 For each genetic element, evolutionary rates for haired species versus hairless species were compared using Kendall’s tau. Haired species included ancestral species inferred to be haired in addition to extant haired species. Resulting p-values were multiple hypothesis testing corrected using a standard Benjamini–Hochberg correction (Benjamini and Hochberg, 1995).
 
 In addition to calculating parametric p-values, empirical p-values were calculated using a novel permulation strategy modified from a similar strategy developed for continuous phenotypes (Kowalczyk et al., 2020). First, 1000 null phenotypes were generated by using Brownian motion phylogenetic simulations and assigning the top 10 values as hairless species. Resulting phenotypes were backpropagated along the phylogeny to ensure that final null phenotypes contained a total of 11 foreground species with only a single ancestral species classified as hairless. Such a procedure matched the organization of null phenotype values to true phenotype values. Hypothesis testing was repeated using all null phenotypes, and the empirical p-values were calculated as the proportion of permulations with statistics as extreme or more extreme than the parametric statistic for the real phenotype values.
 
-## Calculating element-specific Bayes factors
+### Calculating element-specific Bayes factors
 
 In addition to calculating element-specific association statistics, Bayes factors were calculated for each gene using the marine and hairless phenotypes using the BayesFactor R package (Morey and Rouder, 2021). These values were calculated to disentangle the two phenotypes, which are heavily confounded since nearly all marine mammals in the genome alignment used for this work are hairless.
 
@@ -160,23 +319,23 @@ Briefly, Bayes factors are a Bayesian approach complementary to more standard st
 
 When considering the hairless phenotype, we use Bayes factors to quantify the support for a linear model predicting phenotype using evolutionary rate information from each gene, with a higher Bayes factor indicating greater support. We perform this calculation for two alternative hypotheses: (1) a gene shows different evolutionary rates in hairless versus hairy species, and (2) a gene shows different evolutionary rates in marine species versus nonmarine species. The ratio of Bayes factors between the hairless and marine phenotypes quantifies the level of support of one phenotype over the other and thus can be used to tease apart intricacies of the two heavily confounded phenotype. When the Bayes factor for the hairless phenotype is much larger than the Bayes factor for the marine phenotype, that indicates stronger support for signal driven by hairlessness.
 
-## Calculating enrichment statistics
+### Calculating enrichment statistics
 
 Enrichment statistics were calculated using MGI genesets (Blake et al., 2003), GTEx tissue annotations (Papatheodorou et al., 2018), GO annotations (Ashburner et al., 2000; Carbon et al., 2019), and genes highly expressed in hair follicles (Zhang et al., 2017). The 70 hair follicle-specific genes were obtained by selecting the top 200 hair follicle-expressed genes and removing genes that were included in the top 10,000 genes with the highest minimum median expression across GTEx tissues, that is, ubiquitously expressed genes. Noncoding regions were mapped to annotations via distance from relevant genes – regions within 10,000 bases of a gene were assigned to that gene and its pathways. Noncoding regions were also mapped to microRNA coordinates using the same distance-based metric. All annotations are available on Dryad.
 
 Pathway enrichment statistics were calculated using the Wilcoxon rank-sum test, which compares ranks of foreground values for elements in a pathway to background values for nonpathway elements. For each gene or noncoding element, the sign of the statistic times the log of the p-value were used to generate ranks. Empirical p-values from permulations were also generated using the same null phenotypes used for individual elements and detailed in previous work (Kowalczyk et al., 2020).
 
-## Permulations
+### Permulations
 
 In addition to computing parametric statistics directly from standard statistical tests, empirical p-values were also calculated using a permulation strategy. Permulations were used to generate null phenotype values, and the empirical p-value was calculated as the proportion of null statistics as extreme or more extreme than the observed parametric statistics. Such a strategy corrects for a nonuniform empirical null distribution at the gene level (Figure 1) and nonindependence among genetic elements at the pathway level (Saputra et al., 2020).
 
-## Positive selection tests
+### Positive selection tests
 
 For top-ranked genes under accelerated evolution in hairless species, all KRT and KRTAP genes, and various genes in top-ranked pathways under accelerated evolution in hairless species, branch-site models to test for positive selection were performed to identify whether rapidly evolving genes were undergoing positive selection or merely under relaxation of constraint. Such models were performed using a subset of the full 62 species mammalian phylogeny as shown in the ‘Phylogenetic trees’ section below.
 
 Significance of relaxation of constraint for hairless species was assessed using likelihood ratio tests (LRTs) between branch-site neutral (BS Neutral) and its nested null model M1 (sites neutral model) in PAML (Yang, 2007). Similarly, LRTs between branch-site selection model (BS Alt Mod) and its null BS Neutral were used to infer positive selection in hairless species. For each test, p-values were estimated using the chi-square distribution with 1 degree of freedom. Phylogeny-wide relaxation of constraint was additionally quantified using the LRTs between M2 (sites selection model) vs. M1 (sites neutral model) and M8 (sites selection model) vs. M8A (sites neutral model), respectively. Prior to performing the mammal-wide tests, hairless foreground species were removed to estimate significance of relaxation of constraint and positive selection from only the background mammalian branches. Removing hairless species allowed us to distinguish whether genes were under positive selection in all mammal species or only in hairless mammal species. Genes with significant signals of positive selection and nonsignificant signals of phylogeny-wide acceleration were inferred to be under positive selection (Kowalczyk et al., 2021).
 
-## Species-specific analyses
+### Species-specific analyses
 
 Further tests to identify genomic elements with evolutionary rate shifts in individual hairless species were conducted as follows. First, RERs from all extant species across all genes were retained and RERs for ancestral species were discarded. Next, RERs for hairless species were removed. Finally, for each gene, a Wilcoxon signed-rank test was run to individually compare the RER of each hairless species to the RERs for the non-hairless species.
 
@@ -184,12 +343,12 @@ Results of the Wilcoxon signed-rank test were pooled in two different ways. Firs
 
 A second set of enrichment statistics was calculated using the same annotations to test for an enrichment of hair genes with significant rate shifts in each hairless species individually. To complement these analyses, a second set of non-hairless species was selected and tested using the same procedure as the hairless species. In short, those species were removed from the set of all RERs and then each was individually compared to the background set of RERs from species not in the set using a Wilcoxon signed-rank test.
 
-## Phylogenetic trees
+### Phylogenetic trees
 
-## Master tree topology with average branch lengths
+#### Master tree topology with average branch lengths
 
 ((((((((((((((ailMel1:0.03854019703,((lepWed1:0.02002160645,odoRosDi:0.02064385875):0.01734764946,musFur1:0.04613997497):0.002879093616):0.009005888384,canFam3:0.05339127565):0.01185166857,felCat5:0.05020331605):0.03285617057,((((((bosTau7:0.02168740723,((capHir1:0.01157093136,oviAri3:0.01246322594):0.0049716126,panHod1:0.01522587482):0.01465511149):0.0662523666,(orcOrc1:0.006371664911,turTru2:0.01086552617):0.06014682602):0.01216198069,susScr3:0.0796745271):0.006785823323,(camFer1:0.01240650215,vicPac2:0.01096629635):0.06374554586):0.02551888691,(cerSim1:0.04977357056,equCab2:0.061454379):0.02510111297):0.00331214686,((eptFus1:0.03248546656,(myoDav1:0.02344332842,myoLuc2:0.01567729315):0.02193849809):0.09455328094,(pteAle1:0.005833353548,pteVam1:0.01611220178):0.07567400302):0.02385546003):0.002057771224):0.004845253848,(conCri1:0.1239823369,(eriEur2:0.1696142244,sorAra2:0.1934205791):0.02079474546):0.0235875333):0.01477733374,((((((chrAsi1:0.1017903453,echTel2:0.1749615473):0.01592632003,eleEdw1:0.1516860647):0.006610995228,oryAfe1:0.08326528894):0.008243787904,(loxAfr3:0.06812658238,triMan1:0.06198982615):0.0224994529):0.03384011363,dasNov3:0.1342602666):0.005989703247,(((macEug2:0.1270943532,sarHar1:0.09944141622):0.02717055443,monDom5:0.1181200712):0.1802966572,ornAna1:0.4322118716):0.2206952867):0.01316436193):0.01425600689,((((((cavPor3:0.09048639907,(chiLan1:0.05332953299,octDeg1:0.08476954109):0.01287861561):0.02118937782,hetGla2:0.08588673524):0.07432515556,speTri2:0.08896424642):0.006291577528,((((criGri1:0.04084640027,mesAur1:0.04456203524):0.02314125062,micOch1:0.06932402649):0.01947113467,(mm10:0.05273642272,rn5:0.05576007402):0.04435347588):0.08380065137,jacJac1:0.1438649666):0.04270536633):0.01663675397,(ochPri3:0.1256544445,oryCun2:0.07131655591):0.06535533418):0.009050428462,tupChi1:0.1191189141):0.003894252213):0.01379370868,otoGar3:0.108738222):0.04299750653,(calJac3:0.02474184521,saiBol1:0.02096868307):0.02784675729):0.0135408115,(chlSab1:0.007693724903,((macFas5:0.001292320552,rheMac3:0.00713015786):0.002951690224,papHam1:0.005199240711):0.002049749893):0.01566263562):0.007043113559,nomLeu3:0.01770384793):0.002187630666,ponAbe2:0.0164503644):0.005572327638,gorGor3:0.007765177171):0.001382639829,hg19:0.005957477577,panTro4:0.006721826689);
 
-## Subset of master tree used for branch-site models for positive selection
+#### Subset of master tree used for branch-site models for positive selection
 
 (((((((((((lepWed1:0.02002160645,odoRosDi:0.02064385875):0.01734764946,musFur1:0.04613997497):0.02373665057,felCat5:0.05020331605):0.03285617057,((((((bosTau7:0.02168740723,oviAri3:0.03208995002):0.0662523666,(orcOrc1:0.006371664911,turTru2:0.01086552617):0.06014682602):0.01216198069,susScr3:0.0796745271):0.006785823323,vicPac2:0.0747118422):0.02551888691,(cerSim1:0.04977357056,equCab2:0.061454379):0.02510111297):0.00331214686,(myoDav1:0.1399351075,pteAle1:0.08150735657):0.02385546003):0.002057771224):0.004845253848,(conCri1:0.1239823369,sorAra2:0.2142153246):0.0235875333):0.01477733374,(((eleEdw1:0.1582970599,oryAfe1:0.08326528894):0.008243787904,(loxAfr3:0.06812658238,triMan1:0.06198982615):0.0224994529):0.03384011363,dasNov3:0.1342602666):0.01915406518):0.01425600689,(((((cavPor3:0.1116757769,hetGla2:0.08588673524):0.07432515556,speTri2:0.08896424642):0.006291577528,((criGri1:0.08345878555,mm10:0.09708989861):0.08380065137,jacJac1:0.1438649666):0.04270536633):0.01663675397,oryCun2:0.1366718901):0.009050428462,tupChi1:0.1191189141):0.003894252213):0.01379370868,otoGar3:0.108738222):0.04299750653,calJac3:0.0525886025):0.0135408115,(chlSab1:0.007693724903,rheMac3:0.01213159798):0.01566263562):0.01618571169,hg19:0.005957477577,panTro4:0.006721826689);

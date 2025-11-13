@@ -50,21 +50,156 @@ Our model encodes these principles. We estimated its three central parameters fr
 
 ## Results
 
-## Empirical patterns of virus decay
+### Empirical patterns of virus decay
 
 Our data suggest that SARS-CoV-2 environmental persistence could vary meaningfully across the range of temperatures and humidities encountered in daily life, with posterior median [95% credible interval] half-lives as long as 27 hr [20, 39] (10°C, 40% RH) and as short as 1.5 hr [1.1, 2.1] (27°C, 65% RH), once droplets reach quasi-equilibrium with the ambient air conditions (Figure 1b, Appendix 1—table 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-v2.jpg)
+
+**Figure 1.:** (a) Example of medium evaporation and virus inactivation as a function of time since deposition; experiments at 22°C and 65% RH shown. Inactivation proceeds in two phases: an evaporation phase during which water mass is lost from the sample to evaporation and a quasi-equilibrium phase once the sample mass has plateaued. Light blue vertical line shows posterior median estimated time that quasi-equilibrium was reached. Top plot: medium evaporation. Dots show measured masses. Square shows measured final (quasi-equilibrium) mass; plotted at 24 hr for readability. Lines are 10 random draws from the posterior for the evaporation rate; horizontal section of line reflects the reaching of quasi-equilibrium (measured final mass). See figure supplements for all conditions. Bottom plot: virus inactivation. Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5TCID50/mL media. Three samples collected at each time-point. Lines are 10 random draws per measurement from the posterior distribution for the inactivation rates, estimated by a simple regression model (see Materials and methods). (b) Measured virus half-lives. Violin plots show posterior distribution of estimated half-lives, plotted on a logarithmic scale. Dots show posterior median value. Color indicates temperature. Measurements at 40%, 65%, and 85% RH reflect decay kinetics once the deposited solution has reached quasi-equilibrium with the ambient air. Estimated half-lives for the evaporation phase that occurs prior to quasi-equilibrium are plotted to the right, since conditions during this phase are mainly dilute, and thus analogous to high RH quasi-equilibrium conditions. See figure supplements for plots showing the fit of the regression used to estimate half-lives to the titer data. (c) Schematic of hypothesized effects of temperature and relative humidity on duration of virus viability. Virus half-lives are longer at lower temperatures, regardless of humidity, because inactivation reaction kinetics proceed more slowly. Relative humidity affects virus half-life by determining quasi-equilibrium solute concentration in the droplet containing the virus. Above the efflorescence relative humidity (ERH), solutes are concentrated by evaporation. The lower the ambient humidity, the more water evaporates, the more concentration occurs, and the faster inactivation reactions proceed. Below the ERH, solutes effloresce, forming crystals. Half-lives are thus not particularly sensitive to changes in sub-ERH relative humidity, and half-lives even slightly below the ERH may be substantially longer than half-lives slightly above it.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Fit of the regression model used to estimate half-lives to evaporation phase (pre-drying) SARS-CoV-2 titer data, according to method described in Empirical virus decay estimation (see Equation 44). We model evaporation phase decay of infectious virus at temperature $T⁢(i)$ as exponential at a rate $l_{T⁢(i)}$; this decay rate can therefore be estimated by fitting a line to the time series of estimated log10 virus titers. Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5 TCID50/mL media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the estimated decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Fit of the regression model used to estimate half-lives to quasi-equilibrium (post-drying) SARS-CoV-2 titer data, according to method described in Empirical virus decay estimation (see Equation 44). We model quasi-equilibrium decay of infectious virus in environmental condition $i$ as exponential at a rate $\lambda_{i}$; this decay rate can therefore be estimated by fitting a line to the time series of estimated log10 virus titers. Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay—denoted by a black dotted line at 100.5 TCID50/mL media—to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the estimated decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Evaporation of supplemented Dulbecco’s Modified Eagle Medium (DMEM) as a function of temperature and humidity. Dots show measured masses. Square shows measured final (quasi-equilibrium) mass; actual measurement times for final masses were upon removal of sample from chamber, but for readability they are plotted at 24 hr for all experiments. Lines are 100 random draws from the posterior distribution for the evaporation rate; horizontal section of line reflects the reaching of quasi-equilibrium (measured final mass). Transition point between evaporation phase and quasi-equilibrium phase inferred from data (see Modeling of medium evaporation and Evaporation model fitting). Note that final mass measurement is more accurate than time series measurements (see Materials and methods, Evaporation experiment).
+
 Minimal virus decay occurred during the evaporation phase (Figure 1a, Figure 1—figure supplement 1), when excess water was present. Estimated half-lives were long but exact values were highly uncertain, as the small amount of absolute virus inactivation during the brief evaporation phases, combined with the noise involved in sampling and titration, limits our inferential capacity. Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10°C, 12 hr [4.5, 160] at 22°C, and 5.8 hr [2.1, 130] at 27°C (Table 1).
+
+**Table 1.**
+ Estimated half-lives in hours of SARS-CoV-2 on polypropylene as a function of temperature (T) and relative humidity (RH).Estimated half-lives are reported as posterior median and the middle 95% credible interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>T (°C)</th>
+      <th>RH (%)</th>
+      <th>Median half-life (h)</th>
+      <th>2.5 %</th>
+      <th>97.5 %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Quasi-equilibrium phase</td>
+      <td>10</td>
+      <td>40</td>
+      <td>26.55</td>
+      <td>20.28</td>
+      <td>38.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>65</td>
+      <td>14.22</td>
+      <td>12.17</td>
+      <td>17.16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>85</td>
+      <td>13.78</td>
+      <td>10.67</td>
+      <td>19.70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>22</td>
+      <td>40</td>
+      <td>6.43</td>
+      <td>5.52</td>
+      <td>7.56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>22</td>
+      <td>65</td>
+      <td>2.41</td>
+      <td>2.03</td>
+      <td>2.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>22</td>
+      <td>85</td>
+      <td>7.50</td>
+      <td>6.22</td>
+      <td>9.24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>27</td>
+      <td>40</td>
+      <td>3.43</td>
+      <td>2.91</td>
+      <td>4.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>27</td>
+      <td>65</td>
+      <td>1.52</td>
+      <td>1.05</td>
+      <td>2.14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>27</td>
+      <td>85</td>
+      <td>2.79</td>
+      <td>2.12</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <td>Evaporation phase</td>
+      <td>10</td>
+      <td></td>
+      <td>42.08</td>
+      <td>10.97</td>
+      <td>334.34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>22</td>
+      <td></td>
+      <td>12.18</td>
+      <td>4.47</td>
+      <td>163.58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>27</td>
+      <td></td>
+      <td>5.76</td>
+      <td>2.14</td>
+      <td>125.85</td>
+    </tr>
+  </tbody>
+</table>
 
 Overall, virus decay became markedly faster as temperature increased for all humidities, with decay at 27°C roughly five to ten times faster than decay at 10°C. Across temperatures, virus decay was relatively rapid at 65% RH and tended to be slower either at lower (40%) or higher (85%) humidities, or when excess water was present during the evaporation phase (Figure 1b, Table 1).
 
-## Mechanistic model for temperature and humidity effects
+### Mechanistic model for temperature and humidity effects
 
 Many viruses, including SARS-CoV-2, exhibit exponential decay on surfaces and in aerosols (Marr et al., 2019; van Doremalen et al., 2020; Biryukov et al., 2020). We drew upon chemical principles of droplet evaporation and virus inactivation (Figure 1c) to create a minimal mechanistic model incorporating the effects of both temperature and relative humidity on exponential decay rates.
 
 We model virus inactivation at quasi-equilibrium on inert surfaces as a chemical reaction with first-order reaction kinetics; that is, the quantity of virus is the limiting reactant of the rate-determining step. This reflects the empirical pattern of exponential decay and is consistent with the fact that virions will be numerically rare in microdroplets compared to other reactants.
 
-We characterize the temperature dependence of this reaction with the Arrhenius equation, which describes a reaction rate (here the virus inactivation rate k) as a function of an activation energy Ea, an asymptotic high-temperature reaction rate A, the universal gas constant R, and the absolute temperature T: (1)k=A⁢exp⁡(-EaR⁢T)
+We characterize the temperature dependence of this reaction with the Arrhenius equation, which describes a reaction rate (here the virus inactivation rate $k$) as a function of an activation energy $E_{a}$, an asymptotic high-temperature reaction rate $A$, the universal gas constant $R$, and the absolute temperature $T$: 
+
+$$
+k=A⁢exp⁡(-\frac{E_{a}}{R⁢T})
+$$
 
 Prior work has found Arrhenius-like temperature dependence for virus inactivation on surfaces and in aerosols for many viruses (Adams, 1949), including human coronaviruses (Yap et al., 2020).
 
@@ -76,29 +211,75 @@ The exact quasi-equilibrium state reached will depend on the solutes present, si
 
 During the evaporation phase prior to quasi-equilibrium, reactants are less concentrated and decay is expected to be slower, as observed from our data (Figure 1a,b). If small initial droplet sizes are used—as in real-world depositions (predominantly < 10 µL; Johnson et al., 2011; Johnson et al., 2013; Thompson et al., 2013) and in some experiments—evaporative quasi-equilibration should be near instant, and so inactivation should follow the kinetics at quasi-equilibrium. Larger droplets, such as those used in our experiments, will take more time to equilibrate (depending on temperature and humidity); this allows us to distinguish the quasi-equilibrium phase from the evaporation phase.
 
-We partition inactivation at quasi-equilibrium into two humidity regimes, effloresced and solution, according to whether the ambient RH is below the ERH (effloresced) or above (solution). In either case, we approximate virus inactivation as a first-order reaction with inactivation rate keff or ksol, respectively. Based on observations of NaCl solutions at room temperature and atmospheric pressure (Mikhailov et al., 2004), we use an ERH of 45%. This means that 40% RH experiments are in the effloresced regime and 65% and 85% RH experiments are in the solution regime.
+We partition inactivation at quasi-equilibrium into two humidity regimes, effloresced and solution, according to whether the ambient RH is below the ERH (effloresced) or above (solution). In either case, we approximate virus inactivation as a first-order reaction with inactivation rate $k_{eff}$ or $k_{sol}$, respectively. Based on observations of NaCl solutions at room temperature and atmospheric pressure (Mikhailov et al., 2004), we use an ERH of 45%. This means that 40% RH experiments are in the effloresced regime and 65% and 85% RH experiments are in the solution regime.
 
-We model the effloresced and solution inactivation rates keff and ksol using two Arrhenius equations with a shared activation energy Ea but distinct asymptotic high-temperature reaction rates Aeff and Asol. In solution conditions, we further modulate ksol by a quasi-equilibrium ‘concentration factor’ [Seq][S0], which quantifies how concentrated the solution has become at quasi-equilibrium [Seq] relative to its initial state [S0].
+We model the effloresced and solution inactivation rates $k_{eff}$ and $k_{sol}$ using two Arrhenius equations with a shared activation energy $E_{a}$ but distinct asymptotic high-temperature reaction rates $A_{eff}$ and $A_{sol}$. In solution conditions, we further modulate $k_{sol}$ by a quasi-equilibrium ‘concentration factor’ $\frac{[S_{eq}]}{[S_{0}]}$, which quantifies how concentrated the solution has become at quasi-equilibrium $[S_{eq}]$ relative to its initial state $[S_{0}]$.
 
-Given our assumption of first-order kinetics, an n-fold increase in the non-virion reactant concentrations should translate directly into an n-fold increase in the inactivation rate. Lower relative humidity leads to higher quasi-equilibrium concentration and thus increases virus inactivation rate, until the ERH is reached. Below the ERH, inactivation rates may again be low due to crystallization, depending on Aeff. We do not force the relationship between RH and inactivation rate to be continuous at the ERH; there may be a discontinuity (see Appendix, Interpretation of the transition in inactivation rate at the ERH, for a discussion).(2)keff=Aeff⁢exp⁡(-EaR⁢T)(3)ksol=[Seq][S0]⁢Asol⁢exp⁡(-EaR⁢T)
+Given our assumption of first-order kinetics, an n-fold increase in the non-virion reactant concentrations should translate directly into an n-fold increase in the inactivation rate. Lower relative humidity leads to higher quasi-equilibrium concentration and thus increases virus inactivation rate, until the ERH is reached. Below the ERH, inactivation rates may again be low due to crystallization, depending on $A_{eff}$. We do not force the relationship between RH and inactivation rate to be continuous at the ERH; there may be a discontinuity (see Appendix, Interpretation of the transition in inactivation rate at the ERH, for a discussion).
 
-We estimated Ea, Aeff, and Asol from our data, constraining all to be positive. We treated evaporation phase data as governed by ksol, with a dynamic value of the concentration factor [S⁢(t)][S0] (Appendix, Modeling of virus decay dynamics during the evaporation phase). We computed the quasi-equilibrium concentration factor [Seq][S0] by fitting a theoretically-motivated curve to our evaporation data (Figure 2—figure supplement 1).
+$$
+k_{eff}=A_{eff}⁢exp⁡(-\frac{E_{a}}{R⁢T})
+$$
+
+
+
+$$
+k_{sol}=\frac{[S_{eq}]}{[S_{0}]}⁢A_{sol}⁢exp⁡(-\frac{E_{a}}{R⁢T})
+$$
+
+We estimated $E_{a}$, $A_{eff}$, and $A_{sol}$ from our data, constraining all to be positive. We treated evaporation phase data as governed by $k_{sol}$, with a dynamic value of the concentration factor $\frac{[S⁢(t)]}{[S_{0}]}$ (Appendix, Modeling of virus decay dynamics during the evaporation phase). We computed the quasi-equilibrium concentration factor $\frac{[S_{eq}]}{[S_{0}]}$ by fitting a theoretically-motivated curve to our evaporation data (Figure 2—figure supplement 1).
 
 The relationship between RH and quasi-equilibrium concentration factor depends on complex evaporative kinetics that will vary among media. For this reason, we do not attempt to predict it from first principles, but instead measure it directly and use the fitted curve to extrapolate to unmeasured RH conditions. We use this approach for the results presented in the main text; we refer to it as the ‘main model’.
 
 To check robustness of the main model results, we also estimated a version of the model without this theoretical curve–using only directly-measured equilibrium concentration factors. This model (referred to as the ‘directly-measured concentration model’) yielded similar results to the main model; see Appendix, Mechanistic model versions for details.
 
-We also considered a four-parameter variant of the model with distinct activation energies below the ERH (Eaeff) and above (Easol), placing the same prior on each. This accounts for the possibility that the rate-determining step of the inactivation reaction might be distinct in the two regimes. The estimated activation energies were very similar below and above the ERH (Appendix 1—figure 1). This suggests that the rate-determining reaction step—and thus the activation energy—is the same in both regimes. Accordingly, we report estimates from the three-parameter model with a shared Ea. We provide additional details and interpretation of our mechanistic inactivation modeling in the Appendix; see Mechanistic inactivation model interpretation and Mechanistic model estimation.
+We also considered a four-parameter variant of the model with distinct activation energies below the ERH ($E_{a}^{eff}$) and above ($E_{a}^{sol}$), placing the same prior on each. This accounts for the possibility that the rate-determining step of the inactivation reaction might be distinct in the two regimes. The estimated activation energies were very similar below and above the ERH (Appendix 1—figure 1). This suggests that the rate-determining reaction step—and thus the activation energy—is the same in both regimes. Accordingly, we report estimates from the three-parameter model with a shared $E_{a}$. We provide additional details and interpretation of our mechanistic inactivation modeling in the Appendix; see Mechanistic inactivation model interpretation and Mechanistic model estimation.
 
-## Model fitting and prediction of unobserved conditions
+### Model fitting and prediction of unobserved conditions
 
-Our dataset comprises nine experimental conditions, each with seven time-points that span the evaporation and quasi-equilibrium phases. We sought to explain the virus inactivation rates across this entire dataset using our mechanistic model with just three free parameters: the activation energy Ea and the asymptotic high-temperature reaction rates under effloresced and solution conditions, Aeff and Asol. The mechanistic function used and the constraint on the parameters to be positive means that inactivation rate must increase with temperature and with increasing solute concentration. Remarkably, the fit of the mechanistic model (Figure 2) is nearly as good as that of the simple regression, in which we estimate independent exponential decay rates for each condition to measure virus half-life (Figure 1—figure supplement 2, see Appendix, Simple regression model). Mechanistic model parameter estimates are given in Figure 2—figure supplement 2 and Appendix 1—table 1.
+Our dataset comprises nine experimental conditions, each with seven time-points that span the evaporation and quasi-equilibrium phases. We sought to explain the virus inactivation rates across this entire dataset using our mechanistic model with just three free parameters: the activation energy $E_{a}$ and the asymptotic high-temperature reaction rates under effloresced and solution conditions, $A_{eff}$ and $A_{sol}$. The mechanistic function used and the constraint on the parameters to be positive means that inactivation rate must increase with temperature and with increasing solute concentration. Remarkably, the fit of the mechanistic model (Figure 2) is nearly as good as that of the simple regression, in which we estimate independent exponential decay rates for each condition to measure virus half-life (Figure 1—figure supplement 2, see Appendix, Simple regression model). Mechanistic model parameter estimates are given in Figure 2—figure supplement 2 and Appendix 1—table 1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-v2.jpg)
+
+**Figure 2.:** Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay—denoted by a black dotted line at 100.5TCID50/mL media—to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment. See Figure 2—figure supplement 4 for a visualization of the mechanistic model fit using directly-measured concentration, rather with a curve estimating the humidity/concentration relationship.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Fitted curve estimating concentration factor at quasi-equilibrium a function of relative humidity. Points show estimates for quasi-equilibrium concentration factor based on empirically measured masses from the evaporation experiments (Figure 1—figure supplement 3) and the estimated initial solute mass fraction. Estimates shown for each temperature (point color) and ambient RH (x-axis value). Vertical lines around the points show a 68% (thick) and 95% (thin) credible interval. Blue curves show model predictions for concentration factor given parameters $\alpha_{c}$, $\alpha_{s}$ (see Solute concentration factor, Equation 12), and the initial solute mass fraction, all estimated jointly alongside mechanistic model parameters and evaporation rates. Each curve is an independent draw from the joint posterior distribution of the parameters, thus giving a sense of the distribution of possible curves; 100 curves plotted. Vertical dashed line shows the efflorescence relative humidity, 45%.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Posterior distributions for key mechanistic model parameters. Main model fit (with fitted curve relating RH to concentration factor) shown at left, directly-measured concentration factor model fit shown at right. Distributions are visualized as quantile dotplots (Kale et al., 2020); 100 representative dots are shown for each parameter. Black circle below shows posterior median, bars show 68% (thick) and 95% (thin) credible intervals. For $A_{eff}$ and $A_{sol}$, parameter values are plotted on a logarithmic scale. See Appendix 1—table 1 and Appendix 1—table 2 for posterior medians and 95% credible intervals; see Code and data availability for code to reproduce full set of posterior samples.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Comparison of directly-measured half-lives (left) with those predicted by the mechanistic model, either with a fitted curve relating RH to concentration (center), as in the main text, or using directly-measured concentration factors (right). Violin plots show posterior distribution of estimated half-lives, plotted on a logarithmic scale. Dots show posterior median value. Color indicates temperature. Measurements at 40%, 65%, and 85% RH reflect decay kinetics once the deposited solution has reached quasi-equilibrium with the ambient air.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Estimated titers and fit of the directly-measured concentration mechanistic model for SARS-CoV-2 stability on polypropylene at quasi-equilibrium (concentration factor taken from evaporation experiments, rather than from a fitted curve that relates RH to concentration). Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay—denoted by a black dotted line at 100.5 TCID50/mL media—to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Estimated titers and main mechanistic model fit for SARS-CoV-2 stability on polypropylene during the evaporation phase. Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5 TCID50/mL media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Estimated titers and fit of the directly-measured concentration mechanistic model for SARS-CoV-2 stability on polypropylene during the evaporation phase (concentration factor taken from evaporation experiments, rather than from a fitted curve that relates RH to concentration). Points show posterior median estimated titers in log10 TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5 TCID50/mL media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.
 
 We used the mechanistic model to predict SARS-CoV-2 half-life for unobserved temperature and humidity conditions from 0°C to 40°C, and from 0% to 100% RH. We chose these ranges to reflect environments encountered by human beings in daily life. We did not extrapolate to temperatures below 0°C since inactivation kinetics may be different when fluid containing the virus freezes. The exact freezing points of suspension medium and human fluids at sea level will depend on solute concentration, but will typically be below the 0°C freezing point of pure water.
 
 Median predicted SARS-CoV-2 half-life varies by more than three orders of magnitude, from less than half an hour at 40°C just above the modeled approximate ERH, to more than a month at 0°C and 100% RH (Figure 3a,c). We find good qualitative agreement between model predictions and model-free estimates from our data, including long half-lives prior to quasi-equilibrium. The U-shaped effect of humidity on virus half-life is readily explained by the regime-shift at the ERH (Figure 3a). In particular, half-lives become extremely long at cold temperatures and in very dilute solutions, which are expected at high RH (Figure 3a,b). Of note, the worst agreement between mechanistic model predictions and (independent) simple regression estimates is found at 10°C and 85% RH (Figure 3a). This is partially explained by the fact that the empirical quasi-equilibrium concentration reached under those conditions was higher than our model prediction based on RH (Figure 2—figure supplement 1). Accordingly, the half-life prediction for 10°C and 85% RH based on directly-measured concentrations is superior to the prediction based on an extrapolation from the relative humidity (Figure 2—figure supplement 3).
 
-As a stronger test of our model’s validity, we used our estimated Ea and A values to make out-of-sample predictions of the half-lives of five human coronaviruses reported from independent studies: four betacoronaviruses (SARS-CoV-2, SARS-CoV-1, MERS-CoV and HCoV-OC43) and one alphacoronavirus (HCoV-229E). We compiled data on the environmental stability of those viruses under conditions ranging from 4°C to 95°C, from 30% to 80% RH, and on a range of surfaces or bulk media, and computed empirical (regression) estimates of virus half-lives (Appendix 1—table 3). We also included data on stability of SARS-CoV-1 (van Doremalen et al., 2020) and MERS-CoV (same method as in van Doremalen et al., 2020) collected by our group during previous studies (Appendix 1—table 4).
+![Figure 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig3-v2.jpg)
+
+**Figure 3.:** (a) Predicted half-life as a function of relative humidity. Points show posterior median for measured half-lives, estimated without the mechanistic model (simple regression estimate for each temperature/humidity combination), lines show a 68% (thick) and 95% (thin) credible interval. Dashed line shows the ERH. Estimated evaporation phase half-lives are plotted at the right. Colored lines show predicted half-lives as a function of humidity at five temperatures: 0°C, 10°C, 22°C, 27°C, and 40°C. One hundred100 random draws from the posterior distribution are shown at each temperature to visualize uncertainty. Line and point colors indicate temperature. (b) Predicted half-life above the ERH as a function of quasi-equilibrium concentration factor. Points and lines as in a, but only solution (above ERH) conditions are shown. (c) Heatmap showing posterior median predicted half-lives as a function of temperature and relative humidity. Posterior median estimated half-lives for human coronaviruses from our study and from the literature plotted on top using the same color map (see also Appendix 1—table 3 and Figure 3—figure supplement 1). Shape indicates virus; measurements from our own group are shown slightly larger with a slightly thicker outline. Points of identical temperature and humidity are nudged slightly to avoid direct overplotting. (d) Relative within-study mechanistic model predictions (x-axis, see Appendix, Relative predictions) compared to simple regression measurements (y-axis) for human coronavirus half-lives. Points show posterior median for measured (horizontal) or predicted (vertical) half-lives and lines show a 68% (thick) and 95% (thin) credible interval. Shape indicates virus; datapoints come from studies in the literature for which there were measurements at at least two temperature and/or humidity conditions for the same virus and experimental material (e.g. plastic, steel, bulk medium).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mechanistic model predictions compared to half-lives estimated directly from data via simple regression. All inactivation studies in which both temperature and relative humidity were reported are included. (a) Half-life as a function of relative humidity at different temperatures. Colored lines show predicted half-life as a function of relative humidity (x-axis value) and temperature (color) according to the main model fit. 100 random draws from the posterior distribution are plotted for each of 20 evenly spaced temperatures between 0 and 40°C. Gray line shows the efflorescence relative humidity (ERH) assumed in the model, 45%. Points show posterior median for measured half-lives for human coronaviruses. Measurements included come from this study (Table 1), from our meta-analysis of the literature (Appendix 1—table 3), and from SARS-CoV-1 and MERS-CoV data collected by our group (Appendix 1—table 4). (b) Half-lives predicted from the mechanistic model (x-axis) compared to independent estimates (y-axis), for the same observations plotted in a. In both panels, half-life estimates are simple regression estimates (i.e. no mechanistic model; fitting of independent exponential decay rates to each condition). Shape indicates virus; in a, measurements from our own group are shown slightly larger. Black lines show a 68% (thick) and 95% (thin) credible interval for posterior estimates. Note that three SARS-CoV-2 points from a particular study (Harbourt et al., 2020) show consistently longer-than-predicted half-lives, and all MERS-CoV points show shorter-than-predicted half-lives. In both instances, our mechanistic model makes accurate relative predictions for these data once calibrated to a reference half-life within the same study (Figure 3d). Taken together, this indicates that there can be experiment- and/or virus- specific effects on absolute half-lives while the general mechanism remains: hotter, more concentrated solutions produce faster virus inactivation.
+
+As a stronger test of our model’s validity, we used our estimated $E_{a}$ and $A$ values to make out-of-sample predictions of the half-lives of five human coronaviruses reported from independent studies: four betacoronaviruses (SARS-CoV-2, SARS-CoV-1, MERS-CoV and HCoV-OC43) and one alphacoronavirus (HCoV-229E). We compiled data on the environmental stability of those viruses under conditions ranging from 4°C to 95°C, from 30% to 80% RH, and on a range of surfaces or bulk media, and computed empirical (regression) estimates of virus half-lives (Appendix 1—table 3). We also included data on stability of SARS-CoV-1 (van Doremalen et al., 2020) and MERS-CoV (same method as in van Doremalen et al., 2020) collected by our group during previous studies (Appendix 1—table 4).
 
 Where both temperature and RH were available, we compared these model-free estimates to predictions based on the mechanistic model parameterized with our SARS-CoV-2 data (Figure 3c, Figure 3—figure supplement 1). We found striking agreement for half-life estimates both above and below the ERH, and for temperatures ranging from 4°C to 37°C.
 
@@ -124,7 +305,7 @@ Our work has implications for the study of virus environmental stability and sea
 
 There may thus exist general principles that govern virus inactivation across enveloped viruses, and perhaps even more broadly. Similar empirical patterns of temperature and humidity dependence to what we measured, and modeled, for SARS-CoV-2 have been observed for other important viruses. In particular, the U-shaped dependence of inactivation on RH has been reported for animal coronaviruses (Songer, 1967; Casanova et al., 2010), as well as for influenza viruses, paramyxoviruses, rhabdoviruses, and retroviruses (Yang et al., 2012; Benbough, 1971; Prussin et al., 2018; Webb et al., 1963), suggesting the existence of a shared mechanism for the effect of humidity across enveloped RNA viruses. Some enveloped DNA viruses such as herpesviruses and poxviruses (Songer, 1967; Webb et al., 1963) and some encapsulated viruses such as polioviruses (de Jong and Winkler, 1968; Songer, 1967) also show similar empirical behavior. Experiments have found that heat treatment of viruses reduces infectivity principally by degrading surface proteins (Wigginton et al., 2012), lending further support to a chemical model of environmental virus inactivation.
 
-Individual enveloped viruses may be more or less stable than SARS-CoV-2 while still obeying our model’s basic principle: increased heat and concentration lead to faster inactivation. The values of model parameters (Ea, Aeff, Asol) may change while the mechanistic model itself remains valid. The data from our own group and from the literature on MERS-CoV is suggestive in this regard: our model predictions using SARS-CoV-2 parameters slightly overestimate the stability of MERS-CoV, but correctly predict the pattern of temperature and humidity effects (Figure 3—figure supplement 1).
+Individual enveloped viruses may be more or less stable than SARS-CoV-2 while still obeying our model’s basic principle: increased heat and concentration lead to faster inactivation. The values of model parameters ($E_{a}$, $A_{eff}$, $A_{sol}$) may change while the mechanistic model itself remains valid. The data from our own group and from the literature on MERS-CoV is suggestive in this regard: our model predictions using SARS-CoV-2 parameters slightly overestimate the stability of MERS-CoV, but correctly predict the pattern of temperature and humidity effects (Figure 3—figure supplement 1).
 
 Similarly, it is striking that our model for Arrhenius-like temperature dependence works well with a single estimated activation energy across the effloresced and solution regimes for our SARS-CoV-2 experiments and for experiments on a range of coronaviruses conducted in different conditions by other investigators. This suggests that the rate-limiting step in coronavirus inactivation may not necessarily depend on the exact inactivating reactant. We propose one simple potential mechanism for how this could be so: if inactivation depends on disruption of the virion once it has formed a complex with some inactivating reactant, the activation energy for that disruption event could depend mainly on the chemical properties of the virion itself (see Appendix, Interpretation of the single activation energy).
 
@@ -134,36 +315,36 @@ Despite years of research on virus stability as a function of temperature and hu
 
 ## Materials and methods
 
-## Laboratory experiments
+### Laboratory experiments
 
-## Viruses and titration
+#### Viruses and titration
 
 We used SARS-CoV-2 strain HCoV-19 nCoV-WA1-2020 (MN985325.1; Holshue et al., 2020) for this study. We quantified viable virus by end-point titration on Vero E6 cells as described previously (Fischer et al., 2020; van Doremalen et al., 2020), and inferred posterior distributions for titers and exponential decay rates directly from raw titration data using Bayesian statistical models (see Statistical analyses and mathematical modeling, below).
 
-## Virus stability experiment
+#### Virus stability experiment
 
 We measured virus stability on polypropylene (ePlastics, reference PRONAT.030X24X47S/M) as previously described (van Doremalen et al., 2020). We prepared a solution of Dulbecco’s Modified Eagle Medium (DMEM, a common cell culture medium) supplemented with 2 mM L-glutamine, 2% fetal bovine serum, and 100 units/mL penicillin/streptomycin, and containing 105 TCID50/mL SARS-CoV-2. Polypropylene disks were autoclaved for decontamination prior to the experiment. We then placed 50 μL aliquots of this SARS-CoV-2 suspension onto the polypropylene disks under nine environmental conditions: three RH (40%, 65%, and 85%) at each of three temperatures (10°C, 22°C, and 27°C). These controlled environmental conditions were produced in incubators (MMM Group CLIMACELL and Caron model 6040) with protection from UV-B or UV-C exposure. We prepared 216 disks corresponding to three replicates per eight post-deposition time-points (0, 1, 4, 8, and 24 hr, then daily for 4 days) for the nine conditions. At each time-point, samples were collected by rinsing the disks with 1 mL of DMEM and stored at −80°C until titration.
 
-## Evaporation experiment
+#### Evaporation experiment
 
-We measured the evaporation kinetics of suspension medium under the same temperature and humidity conditions as the virus stability experiments. We placed 50 μL aliquots of supplemented DMEM onto polypropylene disks in a Electro-Tech Systems 5518 environmental chamber. The polypropylene disks were rinsed three times 1M sulfuric acid, ethanol and DI H2O respectively before use. We measured medium mass m⁢(t) every 5 min for up to 20 hr or until a quasi-equilibrium was reached using a micro-balance (Sartorius MSE3.6P-000-DM, readability 0.0010 mg). The chamber of the micro-balance was half-opened to keep air circulating with the environmental chamber. The flow entering the balance chamber decreased the balance accuracy to around 0.01 mg. We measured initial droplet mass (m⁢(0)) and final droplet mass (m⁢(∞)) under closed-chamber conditions to increase accuracy.
+We measured the evaporation kinetics of suspension medium under the same temperature and humidity conditions as the virus stability experiments. We placed 50 μL aliquots of supplemented DMEM onto polypropylene disks in a Electro-Tech Systems 5518 environmental chamber. The polypropylene disks were rinsed three times 1M sulfuric acid, ethanol and DI H2O respectively before use. We measured medium mass $m⁢(t)$ every 5 min for up to 20 hr or until a quasi-equilibrium was reached using a micro-balance (Sartorius MSE3.6P-000-DM, readability 0.0010 mg). The chamber of the micro-balance was half-opened to keep air circulating with the environmental chamber. The flow entering the balance chamber decreased the balance accuracy to around 0.01 mg. We measured initial droplet mass ($m⁢(0)$) and final droplet mass ($m⁢(∞)$) under closed-chamber conditions to increase accuracy.
 
-## Statistical analyses and mathematical modeling
+### Statistical analyses and mathematical modeling
 
 We quantified the stability of SARS-CoV-2 under different conditions by estimating the decay rates of viable virus titers. We inferred individual titers using a Bayesian model we have previously described (Gamble et al., 2021). Briefly, the model treats titration well infection as a Poisson single-hit process. We inferred raw exponential decay rates by modifying a previously-described simple regression model (Gamble et al., 2021) to account for the evaporation phase. See the Appendix (Empirical virus decay estimation) for model description.
 
 We estimated parameters of our mechanistic models by predicting titers based on those models and then applying the same Poisson single-hit observation process to estimate parameters from the data. See Appendix (Mechanistic model estimation) for a complete description, including model priors.
 
-We estimated evaporation rates and corresponding drying times by modeling mass loss for each environmental condition i as linear in time at a rate βi until the final mass m⁢(∞) was reached. See Appendix (Modeling of medium evaporation and Evaporation model fitting) for a full description, including model priors.
+We estimated evaporation rates and corresponding drying times by modeling mass loss for each environmental condition $i$ as linear in time at a rate $\beta_{i}$ until the final mass $m⁢(∞)$ was reached. See Appendix (Modeling of medium evaporation and Evaporation model fitting) for a full description, including model priors.
 
 We drew posterior samples using Stan (Stan Development Team, 2018), which implements a No-U-Turn Sampler (a form of Markov Chain Monte Carlo), via its R interface RStan (Stan Development Team, 2016). We inferred all parameters jointly (e.g. evaporation parameters and mechanistic model parameters were inferred in light of each other).
 
-## Meta-analysis
+### Meta-analysis
 
 To test the validity of our model beyond the measured environmental conditions (i.e. beyond 10–27°C and 40–85% RH), we compiled data from 11 published studies on human coronaviruses, including SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, and HCoV-299E, under 17 temperature-RH conditions. We generated estimates of half-lives and uncertainties (Appendix 1—table 3) and compared those estimates to the half-lives predicted by the mechanistic model parametrized from our SARS-CoV-2 data. As data on evaporation kinetics were not available, we estimated a unique half-life for each experimental condition, covering both the evaporation and quasi-equilibrium phases. As virus decay during the evaporation phase is expected to be minimal, and the evaporation phase to be short, the estimated half-life can be used as a proxy for the quasi-equilibrium half-life. The complete data selection, extraction and analysis process is detailed in the Appendix (Meta-analysis of human coronavirus half-lives).
 
 We also included data from SARS-CoV-1 and MERS-CoV collected by our group during previous studies (van Doremalen et al., 2020). Those data were collected at 22°C and 40% RH on polypropylene using the protocol described previously (van Doremalen et al., 2020) and similar to the one used to collect the SARS-CoV-2 data. SARS-CoV-1 strain Tor2 (AY274119.3) (Marra et al., 2003) and MERS-CoV strain HCoV-EMC/2012 (Zaki et al., 2012) were used for these experiments. We calculated half-lives for evaporation and quasi-equilibrium phases using the same analysis pipeline used for SARS-CoV-2 (Appendix, Empirical virus decay estimation). These data were used only for out-of-sample prediction testing. We used the obtained evaporation phase half-lives as proxies for the half-life at 100% RH, as with SARS-CoV-2. See Appendix for a figure showing model fits (Appendix 1—figure 23) and a table of estimated half-lives (Appendix 1—table 4).
 
-## Visualization
+### Visualization
 
 We created plots in R using ggplot2 (Wickham, 2016), ggdist (Kay, 2020a), and tidybayes (Kay, 2020b), and created original schematics using BioRender.com.

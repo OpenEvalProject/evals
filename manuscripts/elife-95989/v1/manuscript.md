@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 MRC Laboratory of Molecular Biology, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom
+1. MRC Laboratory of Molecular Biology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 

@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 Department of Public Health Sciences, Pennsylvania State University Hershey United States
-2. https://ror.org/04twxam07 Department of Lymphoma and Myeloma, University of Texas MD Anderson Cancer Center Houston United States
-3. https://ror.org/04p491231 Department of Pharmacology, Pennsylvania State University Hershey United States
-4. https://ror.org/04p491231 Department of Pediatrics, Pennsylvania State University Hershey United States
-5. https://ror.org/04p491231 Department of Biochemistry and Molecular Biology, Pennsylvania State University Hershey United States
-6. https://ror.org/04p491231 Department of Surgery, The Pennsylvania State University Hershey United States
-7. https://ror.org/04twxam07 Department of Biostatistics, University of Texas MD Anderson Cancer Center Houston United States
+1. Department of Public Health Sciences, Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+2. Department of Lymphoma and Myeloma, University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+3. Department of Pharmacology, Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+4. Department of Pediatrics, Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+5. Department of Biochemistry and Molecular Biology, Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+6. Department of Surgery, The Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+7. Department of Biostatistics, University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
 
 † Corresponding author
 
@@ -50,7 +50,7 @@ Here, we introduce a novel approach to improving the quantitative assessment of 
 
 ## Results
 
-## REAP Shiny App
+### REAP Shiny App
 
 We developed a user-friendly analytic tool, coined ‘REAP’ (Robust and Efficient Assessment of Potency), for convenient application of the robust dose-response estimation to real-world data analysis. It is established in an agile modeling framework under the parameterization of the beta law to describe a continuous response variable with values in a standard unit interval (0.1). We further exploited a robust estimation method of the beta regression, named the minimum density power divergence estimators (MDPDE) (Ghosh, 2019), for dose-response estimation, with the tuning parameter optimized by a data-driven method (Ribeiro and Ferrari, 2020). The technical details are provided in the Materials and methods.
 
@@ -64,11 +64,11 @@ There are three sections in REAP: Introduction, Dataset and Output. Users can ha
 
 The open-sourced REAP is freely available and accessible at https://xinying-fang.shinyapps.io/REAP/. We demonstrated it in two real-world examples, after presenting the simulation results, to illustrate the functionality of REAP.
 
-## Simulations
+### Simulations
 
 We conducted simulation studies to investigate the robust beta regression model, in comparison to linear regression models with data transformation, either under a normal distribution error (implemented with R package ‘stats’) or a heavy-tailed t distribution error with 3 degrees of freedom (implemented with R package ‘heavy’), to characterize the median-effect equation under different scenarios. The model assessment is established based on both the point estimation and interval estimation derived from each method. Details on the simulation setting are described in the Appendix 1 - Data simulating process.
 
-With data simulated using normal error terms, the robust beta regression provides sensible estimation of IC50, IC90, β1, and β0 from median-effect equation (Figure 4, Appendix 1—table 1). Particularly, when there are extreme outcome observations, the robust beta regression manages much lower bias and root-mean-square error (RMSE) for point estimates and better coverage probability for interval estimates than the linear regression model with normal distribution error. For data without extreme values, their performance is comparable in bias, RMSE and coverage probability, but the linear regression model has much wider 95% CIs (Figure 4). Indeed, the wider 95% CIs occur across all the scenarios, indicating higher estimation efficiency of the robust beta regression approach. In contrast, the heavy-tailed linear regression model demonstrates improved bias and RMSE in point estimation from the standard linear regression, but the nominal 95% CIs are significantly underestimated with coverage probability below 50% in most cases (Appendix 1—table 1). Therefore, the heavy-tailed linear regression model, although sometimes provides good point estimations, cannot maintain consistently robust and statistically efficient estimations. Overall, the robust beta regression model is the most robust and stable in estimating the median-effect equation with reliable performance in both point estimations and 95% CI coverage probabilities.
+With data simulated using normal error terms, the robust beta regression provides sensible estimation of IC50, IC90, $\beta_{1}$, and $\beta_{0}$ from median-effect equation (Figure 4, Appendix 1—table 1). Particularly, when there are extreme outcome observations, the robust beta regression manages much lower bias and root-mean-square error (RMSE) for point estimates and better coverage probability for interval estimates than the linear regression model with normal distribution error. For data without extreme values, their performance is comparable in bias, RMSE and coverage probability, but the linear regression model has much wider 95% CIs (Figure 4). Indeed, the wider 95% CIs occur across all the scenarios, indicating higher estimation efficiency of the robust beta regression approach. In contrast, the heavy-tailed linear regression model demonstrates improved bias and RMSE in point estimation from the standard linear regression, but the nominal 95% CIs are significantly underestimated with coverage probability below 50% in most cases (Appendix 1—table 1). Therefore, the heavy-tailed linear regression model, although sometimes provides good point estimations, cannot maintain consistently robust and statistically efficient estimations. Overall, the robust beta regression model is the most robust and stable in estimating the median-effect equation with reliable performance in both point estimations and 95% CI coverage probabilities.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78634/elife-78634-fig4-v1.jpg)
 
@@ -78,17 +78,17 @@ In parallel, similar results are obtained consistently with data simulated using
 
 Overall, the simulation study suggests that the robust beta regression model produces well-calibrated dose-response curves while being more robust and powerful than the standard regression model and the heavy-tailed linear regression model in estimating the median effect equation.
 
-## B-cell lymphoma data
+### B-cell lymphoma data
 
 The first example of REAP application is dose-response curve estimation of the same agent under different cell lines. The data was originally from a study on using a drug called auranofin in treating B-cell lymphomas such as relapsed or refractory mantle cell lymphoma (MCL) (Wang et al., 2019). As an FDA-approved treatment of rheumatoid arthritis, auranofin targets thioredoxin reductase-1 (Txnrd1), and was repurposed as a potential antitumor drug to effectively induce DNA damage, reactive oxygen species (ROS) production, cell growth inhibition, and apoptosis in aggressive B-cell lymphomas, especially in TP53-mutated or PTEN-deleted lymphomas.
 
-In the experiment, the effect of auranofin was evaluated in six MCL cell lines (Z-138, JVM-2, Mino, Maver-1, Jeko-1, and Jeko-R) with auranofin in concentrations ranging from 0 to 5 μM for 72 hr and tested cell viability using a luminescent assay. The interval bars of observed dose-response in Figure 5 show that the sample variance of error from repeated measurements decreased with the increase of auranofin concentrations. To account for the heteroscedasticity and asymmetry in the variance, we enable a dose-dependent precision (proportional to inverse variance) in REAP, adding log⁡dose as an additional regressor for the precision parameter. Figure 5 shows the fitted dose-response curves with the dose-dependent precision. The test for homogeneity (p-value <0.0001) suggests distinct dose-response between cell lines. The estimation of intercepts, hill coefficients and pairwise comparisons of IC50 estimations are provided in Appendix 1—table 3.
+In the experiment, the effect of auranofin was evaluated in six MCL cell lines (Z-138, JVM-2, Mino, Maver-1, Jeko-1, and Jeko-R) with auranofin in concentrations ranging from 0 to 5 μM for 72 hr and tested cell viability using a luminescent assay. The interval bars of observed dose-response in Figure 5 show that the sample variance of error from repeated measurements decreased with the increase of auranofin concentrations. To account for the heteroscedasticity and asymmetry in the variance, we enable a dose-dependent precision (proportional to inverse variance) in REAP, adding $log⁡dose$ as an additional regressor for the precision parameter. Figure 5 shows the fitted dose-response curves with the dose-dependent precision. The test for homogeneity (p-value <0.0001) suggests distinct dose-response between cell lines. The estimation of intercepts, hill coefficients and pairwise comparisons of IC50 estimations are provided in Appendix 1—table 3.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78634/elife-78634-fig5-v1.jpg)
 
-**Figure 5.:** The dose-response curve was fitted with a dose-dependent precision with  as an additional regressor for the precision estimator. Observed dose effects are displayed with interval bars, which end with arrows when estimated intervals exceed (0,1). Triangles at the bottom indicate IClog⁡(dose)50 values for each MCL cell line. MCL: mantle cell lymphoma.
+**Figure 5.:** The dose-response curve was fitted with a dose-dependent precision with $log⁡(dose)$ as an additional regressor for the precision estimator. Observed dose effects are displayed with interval bars, which end with arrows when estimated intervals exceed (0,1). Triangles at the bottom indicate IC50 values for each MCL cell line. MCL: mantle cell lymphoma.
 
-## SARS-CoV-2 data
+### SARS-CoV-2 data
 
 The second example is on the dose-response curve estimation in antiviral drug development for coronavirus disease 2019 (COVID-19). At the beginning of 2020, COVID-19 broke out at an unprecedented pace internationally, but there were limited therapeutic options for treating this disease. Therefore, many compounds and their combinations were rapidly tested in vitro against the SARS-CoV-2 virus to identify potentially effective treatments and prioritize clinical investigation.
 
@@ -114,60 +114,104 @@ In summary, a good modeling strategy must effectively characterize the nature of
 
 ## Materials and methods
 
-## Median-effect equation and dose-response curve
+### Median-effect equation and dose-response curve
 
-The median-effect equation describes a popular model of the dose-response relationship based on the median effect principle of the mass action law in various biological systems (Chou, 1976). Assume fa and fu are the fractions of the system affected and unaffected by a drug concentration d. The median-effect equation states that(1)fafu=(dDm)m,
+The median-effect equation describes a popular model of the dose-response relationship based on the median effect principle of the mass action law in various biological systems (Chou, 1976). Assume $f_{a}$ and $f_{u}$ are the fractions of the system affected and unaffected by a drug concentration $d$. The median-effect equation states that
 
-where m is the Hill coefficient signifying the sigmoidicity of the dose-effect curve and Dm is the dose of a drug required to produce the median effect, which is analogous to the more familiar IC50 (drug concentration that causes 50% of the maximum inhibitory effect), ED50 (half-maximum effective dose), or LD50 (median lethal dose) values (Ghosh, 2019). For example, if an inhibitory substance is of interest, the parameter m measures the cooperativity in the binding of multiple ligands to linked binding sites, and the parameter Dm=IC50 , defined by the concentration that causes 50% of the maximum inhibitory effect.
+$$
+\frac{f_{a}}{f_{u}}=(\frac{d}{D_{m}})^{m},                                                                      
+$$
 
-Given fa+fu=1, the median-effect Equation 1 is equivalent to(2)logitfa=log⁡fafu=-logitfu=-log⁡fufa=mlog⁡d-log⁡ Dm,
+where $m$ is the Hill coefficient signifying the sigmoidicity of the dose-effect curve and $D_{m}$ is the dose of a drug required to produce the median effect, which is analogous to the more familiar $IC_{50}$ (drug concentration that causes 50% of the maximum inhibitory effect), $ED_{50}$ (half-maximum effective dose), or $LD_{50}$ (median lethal dose) values (Ghosh, 2019). For example, if an inhibitory substance is of interest, the parameter $m$ measures the cooperativity in the binding of multiple ligands to linked binding sites, and the parameter $D_{m}=IC_{50}$ , defined by the concentration that causes 50% of the maximum inhibitory effect.
 
-where logit(p) denotes the logit function log⁡p1-p . The Equation 2 shows a log-linear relationship between the drug dose d and its effect fa (or fu , if it is, for example, the % survival of interest) after a logit transformation. Because from a modeling perspective the identical strategy can be applied to model both fa and fu , for the effect on cell fraction E, we can rewrite Equation 2 to be:(3)logitE=log⁡E1-E=β1log⁡d+β0
+Given $f_{a}+f_{u}=1$, the median-effect Equation 1 is equivalent to
 
-where β0 is the intercept and β1 the slope of the response curve. A linear regression model (LRM) can be applied in the form of Equation 3 with a standard normal distribution error. In simulation studies, we also examine Equation 3 with a heavy-tailed t-distribution error, denoted by heavy-tailed linear regression model (HLRM).
+$$
+logitf_{a}=log⁡\frac{f_{a}}{f_{u}}=-logitf_{u}=-log⁡\frac{f_{u}}{f_{a}}=mlog⁡d-log⁡ D_{m},              
+$$
 
-In this presentation, the median effect dose(4)Dm= exp-β0β1,
+where $logit(p)$ denotes the logit function $log⁡\frac{p}{1-p}$ . The Equation 2 shows a log-linear relationship between the drug dose $d$ and its effect $f_{a}$ (or $f_{u}$ , if it is, for example, the % survival of interest) after a logit transformation. Because from a modeling perspective the identical strategy can be applied to model both $f_{a}$ and $f_{u}$ , for the effect on cell fraction $E$, we can rewrite Equation 2 to be:
 
-the Hill coefficient(5)m={β1−β1ifE=faE=fu
+$$
+logitE=log⁡\frac{E}{1-E}=\beta_{1}log⁡d+\beta_{0}                                               
+$$
 
-and the dose-response curve(6)E=logit-1β1log⁡d+β0,
+where $\beta_{0}$ is the intercept and $\beta_{1}$ the slope of the response curve. A linear regression model (LRM) can be applied in the form of Equation 3 with a standard normal distribution error. In simulation studies, we also examine Equation 3 with a heavy-tailed t-distribution error, denoted by heavy-tailed linear regression model (HLRM).
 
-where logit-1x=exp⁡(x)1+exp⁡(x) is the inverse-logit function.
+In this presentation, the median effect dose
 
-## Beta regression model for dose-response curve estimation
+$$
+D_{m}= exp-\frac{\beta_{0}}{\beta_{1}},                                                                 
+$$
 
-We will review the beta regression model which for the first time will be applied in dose-response estimation. The effect E and the parameters β=(β0,β1) in Equation 3 cannot be directly observed, but they can be estimated using experimental data, in which the observed sample cell fraction y produced by the drug dose d is a random variable with mean E. It is clear that effective estimation must properly account for random variation and be based upon a model that not only matches the nature of the response variable, but adequately characterizes the observed dose-response pattern (Lyles et al., 2008).
+the Hill coefficient
 
-Among all the unknown quantities, the parameters β could be first estimated and play a fundamental role in supporting the inference for others. In the standard estimation procedure based on linear regression, logity=log⁡y1-y is regressed on log⁡d to get the inference on parameters β. Subsequently, the dose-response curve can be estimated by Equation 6, and (Dm,m) can be derived based on Equations (4) and (5) for median-effect Equation 2. Because the extreme values of y close to 0 or 1 could yield very large values of logity (approaching to -∞ or +∞, respectively, if y→0 or 1), and induce significant bias in estimation of β, the accuracy of the estimated dose-response curve and median-effect equation is in question when there exist extreme values in the dataset.
+$$
+m={\beta_{1}−\beta_{1}ifE=f_{a}E=f_{u}
+$$
 
-The beta regression model describes a response variable y with continuous values restricted to the open standard unit interval (Johnson et al., 1995; Simas et al., 2010). In a classic beta regression framework, the beta regression model uses a parameterization of the beta law that is indexed by the mean parameter μ, and the precision parameter ϕ that controls the overall variation (Ferrari and Cribari-Neto, 2004). To model the dose-response relationship for the cell fraction E, we assume that the response y is a beta-distributed random variable and its mean μ=E has the form of Equation 6, where d is the dose producing effect E, β1 and β0 are the regression parameters. Estimation of regression parameters β can be performed using maximum likelihood method to derive point estimate β^ and covariance matrix Σ.
+and the dose-response curve
+
+$$
+E=logit^{-1}\beta_{1}log⁡d+\beta_{0},                                                        
+$$
+
+where $logit^{-1}x=\frac{exp⁡(x)}{1+exp⁡(x)}$ is the inverse-logit function.
+
+### Beta regression model for dose-response curve estimation
+
+We will review the beta regression model which for the first time will be applied in dose-response estimation. The effect $E$ and the parameters $\beta=(\beta_{0},\beta_{1})$ in Equation 3 cannot be directly observed, but they can be estimated using experimental data, in which the observed sample cell fraction $y$ produced by the drug dose $d$ is a random variable with mean $E$. It is clear that effective estimation must properly account for random variation and be based upon a model that not only matches the nature of the response variable, but adequately characterizes the observed dose-response pattern (Lyles et al., 2008).
+
+Among all the unknown quantities, the parameters $\beta$ could be first estimated and play a fundamental role in supporting the inference for others. In the standard estimation procedure based on linear regression, $logity=log⁡\frac{y}{1-y}$ is regressed on $log⁡d$ to get the inference on parameters $\beta$. Subsequently, the dose-response curve can be estimated by Equation 6, and $(D_{m},m)$ can be derived based on Equations (4) and (5) for median-effect Equation 2. Because the extreme values of $y$ close to 0 or 1 could yield very large values of $logity$ (approaching to $-∞$ or $+∞$, respectively, if $y→0$ or 1), and induce significant bias in estimation of $\beta$, the accuracy of the estimated dose-response curve and median-effect equation is in question when there exist extreme values in the dataset.
+
+The beta regression model describes a response variable $y$ with continuous values restricted to the open standard unit interval (Johnson et al., 1995; Simas et al., 2010). In a classic beta regression framework, the beta regression model uses a parameterization of the beta law that is indexed by the mean parameter μ, and the precision parameter $ϕ$ that controls the overall variation (Ferrari and Cribari-Neto, 2004). To model the dose-response relationship for the cell fraction $E$, we assume that the response $y$ is a beta-distributed random variable and its mean $\mu=E$ has the form of Equation 6, where $d$ is the dose producing effect $E$, $\beta_{1}$ and $\beta_{0}$ are the regression parameters. Estimation of regression parameters $\beta$ can be performed using maximum likelihood method to derive point estimate $\beta^$ and covariance matrix $Σ$.
 
 Beta regression is resistant to extreme values and provides reliable estimations (Figure 1). Compared with the standard approach, which applies a non-linear transformation in the response for an approximation to the normal distribution, the beta density can take on a variety of shapes to account for non-normality and skewness (Smithson and Verkuilen, 2006). In the presence of heteroskedasticity and asymmetry, two common problems frequently observed in limited range continuous response data, an empirical study showed that the beta regression provided the best estimation among several alternatives (Kieschnick and McCullough, 2016).
 
-## Robust beta regression model with MDPDE
+### Robust beta regression model with MDPDE
 
-We will present a modified robust beta regression approach in REAP implementation, which is established based on density power divergence for robust estimation (Ghosh, 2019), but further improved after we introduce a data-driven method to identify the optimal tuning parameter. The standard beta regression potentially could still be sensitive against outliers because its inference is based on the maximum likelihood estimation. Ghosh, 2019 developed the robust minimum density power divergence estimators (MDPDE) that address the problem by minimizing the average density power divergence (DPD)(7)dα(g^, g)=∫g1+α−1+αα∫g^gα+1α∫g^1+α,d0(g^, g)=limα→0dα(g^,g)∫g^log⟮g^g⟯,
+We will present a modified robust beta regression approach in REAP implementation, which is established based on density power divergence for robust estimation (Ghosh, 2019), but further improved after we introduce a data-driven method to identify the optimal tuning parameter. The standard beta regression potentially could still be sensitive against outliers because its inference is based on the maximum likelihood estimation. Ghosh, 2019 developed the robust minimum density power divergence estimators (MDPDE) that address the problem by minimizing the average density power divergence (DPD)
 
-between the empirical density g^ and the beta model density function g≡Betaμϕ, 1-μϕ with μ=logit-1β1log⁡d+β0 . α is a non-negative tuning parameter, smoothly connecting the likelihood disparity (at α = 0) to the L2-Divergence (at α = 1). The parameter of interest β is estimated by minimizing the DPD measure between gi and the density, g^i ,(8)n−1∑i=1ndα(g^i(⋅), gi(⋅,θ))
+$$
+d_{\alpha}(g^, g)=\intg^{1+\alpha}−\frac{1+\alpha}{\alpha}\intg^g^{\alpha}+\frac{1}{\alpha}\intg^^{1+\alpha},d_{0}(g^, g)=lim\alpha→0d_{\alpha}(g^,g)\intg^log⟮\frac{g^}{g}⟯,
+$$
 
-where θ=(β,ϕ)T. After mathematically simplifying Equation 8, (Ghosh, 2019), θ can be equivalently estimated by minimizing the objective function using the estimation equations:(9)Hn,αθ=n-1∑i=1n[Ki,αθ-1+ααgiyi,θα]
+between the empirical density $g^$ and the beta model density function $g≡Beta\muϕ, 1-\muϕ$ with $\mu=logit^{-1}\beta_{1}log⁡d+\beta_{0}$ . $\alpha$ is a non-negative tuning parameter, smoothly connecting the likelihood disparity (at $\alpha$ = 0) to the L2-Divergence (at $\alpha$ = 1). The parameter of interest $\beta$ is estimated by minimizing the DPD measure between $g_{i}$ and the density, $g^_{i}$ ,
 
-where Ki,αθ=B(1+αμiϕ, 1+α1-μiϕ-α)Bμiϕ, 1-μiϕα.
+$$
+n^{−1}\sumi=1nd_{\alpha}(g^_{i}(⋅), g_{i}(⋅,\theta))
+$$
 
-MDPDE improves the standard beta regression with the DPD measure and a fixed tuning parameter. The recommended α is around 0.3 to 0.4, but simply assigning a fixed α in [0.3, 0.4] is not applicable in many cases. Here we adopted a data-driven method (Ribeiro and Ferrari, 2020) to identify the optimal α. The search for the optimal α starts with a grid of α, a pre-defined αmax and grid size ρ, which generates a sequence of equally spaced {αk}k=0m (0=α0<α1<⋅⋅αm≤αmax). MDPDE calculates the corresponding θ and se(θ) with each α so that we get a vector of standardized estimates:zαk=(θ^αk1 nse(θ^αk1), …, θ^αkp nse(θ^αkp))T
+where $\theta=(\beta,ϕ)^{T}$. After mathematically simplifying Equation 8, (Ghosh, 2019), $\theta$ can be equivalently estimated by minimizing the objective function using the estimation equations:
 
-The standardized quadratic variations (SQV) are defined by:SQVαk=p-1||zαk-zαk+1||.
+$$
+H_{n,\alpha}\theta=n^{-1}\sumi=1n[K_{i,\alpha}\theta-\frac{1+\alpha}{\alpha}g_{i}y_{i},\theta^{\alpha}]                                     
+$$
 
-We compare each SQVαk with a pre-defined threshold L (L>0). If all αk satisfy the stability condition of SQVαk<L, then the optimal α equals the minimal α in αk . Otherwise, restart the search with a new grid of αk . The new grid of the same size p is picked from the sequence αkk=0m starting from the largest αk that fails the stability condition. Repeat searching until all αk in the current grid satisfy the stability condition or αmax is reached. If the stability condition is satisfied before αmax is reached then optimal α equals the minimal value in the grid of αk . If αmax is reached, then optimal α equals 0, which is equivalent to the maximum likelihood estimation. We denote this approach by robust beta regression model (BRM) in the simulation study.
+where $K_{i,\alpha}\theta=\frac{B(1+\alpha\mu_{i}ϕ, 1+\alpha1-\mu_{i}ϕ-\alpha)}{B\mu_{i}ϕ, 1-\mu_{i}ϕ^{\alpha}}$.
 
-## Point estimate and its confidence interval for drug activity measurements
+MDPDE improves the standard beta regression with the DPD measure and a fixed tuning parameter. The recommended α is around 0.3 to 0.4, but simply assigning a fixed α in [0.3, 0.4] is not applicable in many cases. Here we adopted a data-driven method (Ribeiro and Ferrari, 2020) to identify the optimal α. The search for the optimal α starts with a grid of α, a pre-defined αmax and grid size $ρ$, which generates a sequence of equally spaced ${\alpha_{k}}_{k=0}^{m} (0=\alpha_{0}<\alpha_{1}<⋅⋅\alpha_{m}\leq\alpha_{max})$. MDPDE calculates the corresponding θ and se(θ) with each α so that we get a vector of standardized estimates:
 
-The objective of analysis is to characterize the dose-response curves in equation (2) and quantify in vitro drug potency. Popular drug activity measurements include Hill coefficient m and median effect dose Dm . In some circumstances, other measurements such as instantaneous inhibitory potential (IIP), which directly quantifies the log decrease in single-round infection events caused by a drug at a clinically relevant concentration, are of special interest (Shen et al., 2009).
+$$
+z_{\alpha_{k}}=(\frac{\theta^_{\alpha_{k}}^{1} }{\sqrt{n}se(\theta^_{\alpha_{k}}^{1})}, …, \frac{\theta^_{\alpha_{k}}^{p} }{\sqrt{n}se(\theta^_{\alpha_{k}}^{p})})^{T}
+$$
 
-The MDPDE for beta regression model provides a robust strategy to estimate β, from which the point estimates and confidence intervals of relevant drug activity measurements can be derived. Mathematically, those drug activity quantities can be written as functions of parameters β with an explicit form. Subsequently, their point estimates and confidence intervals can be derived based on the inference of β. For example, given a point estimate β^=(β^0,β^1), the point estimate for m^ , D^m as a single value, and E^ as a function of dose d can be computed using Equations 4–6.
+The standardized quadratic variations (SQV) are defined by:
 
-It is important to construct the confidence interval around the point estimate to gauge the estimation uncertainty. With different levels of measurement error from either well-managed or lousy experiments, the levels of evidence vary for statistical inference, even if it derives the same point estimates for the intercept β0 , slope β1 and the corresponding dose-response curve. Given the point estimate β^ and its positive-definite covariance matrix Σ to account for variability in observed response, we apply the multivariate delta method and approximate the variance estimate after assuming asymptotic normality (Bickel and Doksum, 2015). As demonstrated in our simulation studies, the constructed 1-α×100% confidence interval consistently provides better results to quantify the 1-α×100% coverage probability. More importantly, the width of the constructed confidence interval was narrower than that from a linear regression model, suggesting that our approach is more efficient with a higher statistical power (Appendix 1—tables 1 and 2).
+$$
+SQV_{\alpha_{k}}=p^{-1}||z_{\alpha_{k}}-z_{\alpha_{k+1}}||.
+$$
 
-## Comparison of the dose-response curves
+We compare each $SQV_{\alpha_{k}}$ with a pre-defined threshold $L (L>0)$. If all $\alpha_{k}$ satisfy the stability condition of $SQV_{\alpha_{k}}<L$, then the optimal $\alpha$ equals the minimal $\alpha$ in $\alpha_{k}$ . Otherwise, restart the search with a new grid of $\alpha_{k}$ . The new grid of the same size $p$ is picked from the sequence $\alpha_{k}_{k=0}^{m}$ starting from the largest $\alpha_{k}$ that fails the stability condition. Repeat searching until all $\alpha_{k}$ in the current grid satisfy the stability condition or $\alpha_{max}$ is reached. If the stability condition is satisfied before $\alpha_{max}$ is reached then optimal $\alpha$ equals the minimal value in the grid of $\alpha_{k}$ . If $\alpha_{max}$ is reached, then optimal α equals 0, which is equivalent to the maximum likelihood estimation. We denote this approach by robust beta regression model (BRM) in the simulation study.
+
+### Point estimate and its confidence interval for drug activity measurements
+
+The objective of analysis is to characterize the dose-response curves in equation (2) and quantify in vitro drug potency. Popular drug activity measurements include Hill coefficient $m$ and median effect dose $D_{m}$ . In some circumstances, other measurements such as instantaneous inhibitory potential (IIP), which directly quantifies the log decrease in single-round infection events caused by a drug at a clinically relevant concentration, are of special interest (Shen et al., 2009).
+
+The MDPDE for beta regression model provides a robust strategy to estimate $\beta$, from which the point estimates and confidence intervals of relevant drug activity measurements can be derived. Mathematically, those drug activity quantities can be written as functions of parameters $\beta$ with an explicit form. Subsequently, their point estimates and confidence intervals can be derived based on the inference of $\beta$. For example, given a point estimate $\beta^=(\beta^_{0},\beta^_{1})$, the point estimate for $m^$ , $D^_{m}$ as a single value, and $E^$ as a function of dose $d$ can be computed using Equations 4–6.
+
+It is important to construct the confidence interval around the point estimate to gauge the estimation uncertainty. With different levels of measurement error from either well-managed or lousy experiments, the levels of evidence vary for statistical inference, even if it derives the same point estimates for the intercept $\beta_{0}$ , slope $\beta_{1}$ and the corresponding dose-response curve. Given the point estimate $\beta^$ and its positive-definite covariance matrix $Σ$ to account for variability in observed response, we apply the multivariate delta method and approximate the variance estimate after assuming asymptotic normality (Bickel and Doksum, 2015). As demonstrated in our simulation studies, the constructed $1-\alpha\times100%$ confidence interval consistently provides better results to quantify the $1-\alpha\times100%$ coverage probability. More importantly, the width of the constructed confidence interval was narrower than that from a linear regression model, suggesting that our approach is more efficient with a higher statistical power (Appendix 1—tables 1 and 2).
+
+### Comparison of the dose-response curves
 
 When we estimate multiple dose-response curves with the data collection experiments conducted in a similar setting, it is often of interest to statistically compare the drug potency and/or Hill coefficients. A typical comparison may occur when we examine the similarity of response from different drugs, explore the additional effect of a drug combined with certain monotherapy, or assess the homogeneity of a drug to different patient samples or cell lines. In the beta regression framework, the statistical comparison can be conducted by first comparing independent fits for each curve with a global fit that shares the common parameters among different groups. Subsequently, the likelihood ratio test can be applied to examine whether the same Hill coefficient or one dose-response curve can adequately fit all the data. The only exception is to assess whether median effect doses are the same in different groups, while an F test is used for the single parameter testing. If the global test for potency shows a significant p-value, a pairwise comparison can be conducted using two-sided t-test for the ordered groups with Benjamini-Hochberg correction for multiplicity.

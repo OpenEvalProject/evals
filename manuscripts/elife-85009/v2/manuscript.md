@@ -30,19 +30,19 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Cellular and Molecular Medicine, University of Bristol Bristol United Kingdom
-2. https://ror.org/036x6gt55 Academic Respiratory Unit, North Bristol NHS Trust Bristol United Kingdom
-3. https://ror.org/0524sp257 Diabetes and Metabolism, Bristol Medical School, University of Bristol Bristol United Kingdom
-4. https://ror.org/0524sp257 Bristol Veterinary School, University of Bristol Bristol United Kingdom
-5. https://ror.org/03y9bvk93 University Hospitals Bristol and Weston NHS Foundation Trust Bristol United Kingdom
-6. https://ror.org/01qgecw57 Department of Paediatric Immunology and Infectious Diseases, Bristol Royal Hospital for Children Bristol United Kingdom
-7. https://ror.org/0524sp257 School of Population Health Sciences, University of Bristol Bristol United Kingdom
+1. School of Cellular and Molecular Medicine, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Academic Respiratory Unit, North Bristol NHS Trust Bristol United Kingdom ([ROR:036x6gt55](https://ror.org/036x6gt55))
+3. Diabetes and Metabolism, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+4. Bristol Veterinary School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+5. University Hospitals Bristol and Weston NHS Foundation Trust Bristol United Kingdom ([ROR:03y9bvk93](https://ror.org/03y9bvk93))
+6. Department of Paediatric Immunology and Infectious Diseases, Bristol Royal Hospital for Children Bristol United Kingdom ([ROR:01qgecw57](https://ror.org/01qgecw57))
+7. School of Population Health Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
 ## Abstract
 
-Coronavirus disease-19 (COVID-19) causes immune perturbations which may persist long term, and patients frequently report ongoing symptoms for months after recovery. We assessed immune activation at 3–12 months post hospital admission in 187 samples from 63 patients with mild, moderate, or severe disease and investigated whether it associates with long COVID. At 3 months, patients with severe disease displayed persistent activation of CD4 + and CD8 + T-cells, based on expression of HLA-DR, CD38, Ki67, and granzyme B, and elevated plasma levels of interleukin-4 (IL-4), IL-7, IL-17, and tumor necrosis factor-alpha (TNF-α) compared to mild and/or moderate patients. Plasma from severe patients at 3 months caused T-cells from healthy donors to upregulate IL-15Rα, suggesting that plasma factors in severe patients may increase T-cell responsiveness to IL-15-driven bystander activation. Patients with severe disease reported a higher number of long COVID symptoms which did not however correlate with cellular immune activation/pro-inflammatory cytokines after adjusting for age, sex, and disease severity. Our data suggests that long COVID and persistent immune activation may correlate independently with severe disease.
+Coronavirus disease-19 (COVID-19) causes immune perturbations which may persist long term, and patients frequently report ongoing symptoms for months after recovery. We assessed immune activation at 3–12 months post hospital admission in 187 samples from 63 patients with mild, moderate, or severe disease and investigated whether it associates with long COVID. At 3 months, patients with severe disease displayed persistent activation of CD4+ and CD8+ T-cells, based on expression of HLA-DR, CD38, Ki67, and granzyme B, and elevated plasma levels of interleukin-4 (IL-4), IL-7, IL-17, and tumor necrosis factor-alpha (TNF-α) compared to mild and/or moderate patients. Plasma from severe patients at 3 months caused T-cells from healthy donors to upregulate IL-15Rα, suggesting that plasma factors in severe patients may increase T-cell responsiveness to IL-15-driven bystander activation. Patients with severe disease reported a higher number of long COVID symptoms which did not however correlate with cellular immune activation/pro-inflammatory cytokines after adjusting for age, sex, and disease severity. Our data suggests that long COVID and persistent immune activation may correlate independently with severe disease.
 
 ## Introduction
 
@@ -56,59 +56,331 @@ In this study we investigated whether patients who had COVID-19, 3 months post h
 
 ## Results
 
-## DISCOVER patients
+### DISCOVER patients
 
 To investigate immune profiles in convalescent COVID-19 patients, we obtained peripheral blood mononuclear cells (PBMCs) and plasma from 63 patients enrolled in the DISCOVER study at 3 months post admission for COVID-19, and where possible matched PBMCs at 12 months and plasma samples at 8 and 12 months. The demographics and clinical characteristics of the 63 patients included in this study are shown in Table 1. Patients were stratified into mild, moderate, and severe based on the type of respiratory support they required during the acute illness, as follows: mild patients did not require supplementary oxygen or intensive care; moderate patients required supplementary oxygen during admission, and severe patients required invasive mechanical ventilation, non-invasive ventilation, and/or admission to the intensive treatment unit. Of the 63 patients included in this analysis 17, 32, and 14 recovered from mild, moderate, and severe disease, respectively. Overall, a higher proportion of patients were male (40/63) and the median age (± SD) of patients was 53±14.5, 58±12.6, and 61.5±10 years for mild, moderate, and severe patients, respectively. Patient ethnicity was predominantly Caucasian with an Asian/Black minority. Body mass index (BMI) was largely within the unhealthy range across all disease severities (overweight, obese, and extremely obese) with 7.6%, 15.6%, and 14.3% of patients with respectively mild, moderate, and severe disease displaying healthy BMI. The comorbidities observed in these 63 patients were consistent with those known to be associated with higher risks for COVID-19 hospitalisation and included heart disease, diabetes (predominantly type-2), hypertension, and chronic lung disease. Overall, the percentage of patients with comorbidities tended to increase progressively with disease severity (mild: 52.9%; moderate: 56.2%, and severe: 85.7%). The duration of hospital admission ranged from 3.3±1.99 to 7.8±5.16 and 12±6.67 days (± SD) in mild, moderate, and severe patients, respectively. None of the patients had received COVID-19 vaccination at the time of blood collection.
 
-## Increased CD4+ and CD8+ T-cell activation in severe patients at 3 months
+**Table 1.**
+ Details of the patients included in the immunological analysis of this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Disease severity (n)</th>
+      <th>Mild</th>
+      <th>Moderate</th>
+      <th>Severe</th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th>(n=17)</th>
+      <th>(n=32)</th>
+      <th>(n=14)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Age (median, SD)</td>
+      <td>53±14.5</td>
+      <td>58±12.6</td>
+      <td>61.5±10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sex, % (n)</td>
+      <td>Female</td>
+      <td>35.3 (6)</td>
+      <td>31.2 (10)</td>
+      <td>50 (7)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>64.7 (11)</td>
+      <td>68.5 (22)</td>
+      <td>50 (7)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Ethnicity, % (n)</td>
+      <td>Caucasian</td>
+      <td>83.3% (14)</td>
+      <td>78.1% (25)</td>
+      <td>87.7% (12)</td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>11.7% (2)</td>
+      <td>12.5% (4)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>5.9% (1)</td>
+      <td>6.3% (2)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Missing data</td>
+      <td>0 (0)</td>
+      <td>3.1% (1)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>BMI, kg/m2, % (average, SD)</td>
+      <td>Healthy</td>
+      <td>7.6% (22.3±0.57)</td>
+      <td>12.5% (23.75±0.5)</td>
+      <td>14.3% (23±0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Overweight</td>
+      <td>35.3% (26.6±1.5)</td>
+      <td>28.1% (27±1.39)</td>
+      <td>28.6% (28.75±0.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Obese</td>
+      <td>35.3% (32.8±1.47)</td>
+      <td>46.9% (32.7±2.46)</td>
+      <td>28.6% (35±2.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Extremely obese</td>
+      <td>11.8% (61±28.2)</td>
+      <td>9.38% (46.3±6.02)</td>
+      <td>28.6% (46±7.34)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Missing data</td>
+      <td>0</td>
+      <td>3.1%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Comorbidity % (n)</td>
+      <td>None</td>
+      <td>47.1% (8)</td>
+      <td>43.75% (14)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Heart disease</td>
+      <td>23.5% (4)</td>
+      <td>15.6% (5)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>T1DM</td>
+      <td>0 (0)</td>
+      <td>3.1% (1)</td>
+      <td>7.14% (1)</td>
+    </tr>
+    <tr>
+      <td>T2DM</td>
+      <td>5.88% (1)</td>
+      <td>12.5% (4)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>17.65 (3)</td>
+      <td>18.75% (6)</td>
+      <td>50% (7)</td>
+    </tr>
+    <tr>
+      <td>Chronic lung disease</td>
+      <td>5.88% (1)</td>
+      <td>21.88% (7)</td>
+      <td>50% (7)</td>
+    </tr>
+    <tr>
+      <td>Kidney disease</td>
+      <td>5.88 (1)</td>
+      <td>9.37% (3)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Mental health</td>
+      <td>0 (0)</td>
+      <td>6.25% (2)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>5.88% (1)</td>
+      <td>3.1% (1)</td>
+      <td>7.14 (1)</td>
+    </tr>
+    <tr>
+      <td>Asthma</td>
+      <td>5.88% (1)</td>
+      <td>0 (0)</td>
+      <td>14.3% (2)</td>
+    </tr>
+    <tr>
+      <td>Total obesity</td>
+      <td>47.1% (8)</td>
+      <td>53.1% (17)</td>
+      <td>57.1% (8)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>47.1% (8)</td>
+      <td>28.1% (9)</td>
+      <td>50% (7)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Hospital stay (average days, SD)</td>
+      <td>3.3±1.99</td>
+      <td>7.8±5.16</td>
+      <td>12±6.67</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Ongoing symptomsat 3 months(n, %)</td>
+      <td>None</td>
+      <td>3 (17.65%)</td>
+      <td>8 (25%)</td>
+      <td>2 (14.3%)</td>
+    </tr>
+    <tr>
+      <td>Dyspnoea</td>
+      <td>7 (41.2%)</td>
+      <td>15 (47%)</td>
+      <td>9 (64.3%)</td>
+    </tr>
+    <tr>
+      <td>Excessive fatigue</td>
+      <td>5 (29.4%)</td>
+      <td>12 (37.5%)</td>
+      <td>9 (64.3%)</td>
+    </tr>
+    <tr>
+      <td>Muscle weakness</td>
+      <td>3 (17.65)</td>
+      <td>7 (22%)</td>
+      <td>5 (35.7%)</td>
+    </tr>
+    <tr>
+      <td>Sleeping difficulties</td>
+      <td>3 (17.65)</td>
+      <td>6 (18.75%)</td>
+      <td>8 (57%)</td>
+    </tr>
+    <tr>
+      <td>Psychiatric</td>
+      <td>2 (11.8%)</td>
+      <td>8 (25%)</td>
+      <td>6 (42.9%)</td>
+    </tr>
+    <tr>
+      <td>Anosmia</td>
+      <td>2 (11.8%)</td>
+      <td>4 (12.5%)</td>
+      <td>3 (21.4%)</td>
+    </tr>
+    <tr>
+      <td>Chest pain</td>
+      <td>2 (11.8%)</td>
+      <td>6 (18.75%)</td>
+      <td>2 (14.3%)</td>
+    </tr>
+    <tr>
+      <td>Cough</td>
+      <td>2 (11.8%)</td>
+      <td>4 (12.5%)</td>
+      <td>1 (7.14%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 (29.4%)</td>
+      <td>4 (12.5%)</td>
+      <td>3 (21.4%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Increased CD4+ and CD8+ T-cell activation in severe patients at 3 months
 
 To investigate the presence of ongoing immune activation following recovery from COVID-19, we assessed the phenotype and activation/proliferation profiles of conventional CD4+ and CD8+ T-cells, TCR-γδ T, NK, B-cells, and monocytes by flow cytometry in PBMC samples from 63 patients at 3 months post admission. T and NK cells were assessed for expression of markers of activation, differentiation, proliferation, and cytotoxicity (HLA-DR, CD38, CD69, CCR7, CD45RA, CXCR3, Ki67, granzyme B, CD56) after gating on single live cells, CD3+ CD4+ or CD3+ CD8+ T-cells and CD3- CD56bright CD16+/- or CD56dim CD16+ NK cell populations, respectively (Figure 1, gating strategies in Figure 1—figure supplement 1; list of antibodies in Key resources table). Data were analysed by FlowJo using a manual gating strategy as well as the dimensionality reduction algorithm uniform manifold approximation and projection (UMAP) for dimension reduction and cluster analysis using FlowSOM.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Percentage of CD4+ T-cells within the CD3+ gate (A), absolute number of CD4+ T-cells (cells/mm3) (B), and percentages of CD4+ T-cells expressing CXCR3 (C) and co-expressing Ki67/CD38 (D) are shown in mild, moderate, and severe patients. (E) Percentages of naïve (CCR7+ CD45RA+), T central memory (TCM, CCR7+ CD45RA-), T effector memory (TEM, CCR7- CD45RA-), and T effector memory RA re-expressing (TEMRA, CCR7- CD45RA+) CD4+ T-cells are shown for patients with mild, moderate, and severe disease. (F) Flow cytometry plot showing a representative staining from a mild, moderate, and severe patient of HLA-DR and CD38 expression in CD4+ TEM cells (overlaid and shown respectively in blue, black, and red). (G) Percentages of activated HLA-DR+CD38+ CD4+ T-cells within naïve, TCM, TEM, and TEMRA cells. (H) Flow cytometry plot with a representative staining from a mild, moderate, and severe patient of HLA-DR and Ki67 expression in CD4+ TEM cells. (I) Percentages of proliferating HLA-DR+ Ki67+ CD4+ T-cells within naïve, TCM, TEM, and TEMRA cells. (J) Flow cytometry plot with a representative staining from a mild, moderate, and severe patient of HLA-DR and granzyme B (GrzmB) expression in CD4+ TEM cells. (K) Percentages of proliferating HLA-DR+ GrzmB+ CD4+ T-cells within naïve, TCM, TEM, and TEMRA cells. (L) Unsupervised uniform manifold approximation and projection (UMAP) analysis showing the FlowSOM clusters in mild (N=17), moderate (N=25), and severe (N=14) patients. Plots are gated on CD4+ T-cells. (M) Heatmap with the expression of each analysed marker within the FlowSOM populations shown as mean fluorescence intensity (MFI). (N) Summary of the percentage of CD4+ T-cells within the indicated FlowSOM populations in mild, moderate, and severe patients. Data in graphs are visualised as mean ± SEM. Statistics are calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–F) Lymphocyte (A–C) and neutrophil (D–F) counts during acute illness, at 3 and 8 months post admission in patients with mild (A, D), moderate (B, E), and severe (C, F) disease. (G–L) Albumin (G–I) and CRP (J–L) levels during acute illness, at 3 and 8 months post admission in patients with mild (G, J), moderate (H, K), and severe (I, L) disease. Data from mild (acute: N=17; 3 months: N=17; 8 months: N=10), moderate (acute: N=32; 3 months: N=32; 8 months: N=21), and severe (acute: N=14; 3 months: N=14; 8 months: N=11) patients are indicated with white, grey, and black symbols. Data are shown as a mean ± SD; *p<0.05, **p≤0.01, ***p≤0.001. Statistics were calculated by one-way ANOVA, with Geisser-Greenhouse correction for multiple testing.
 
 Overall, at 3 months post admission patients’ blood lymphocyte and neutrophil counts, CRP, and albumin levels - which were mostly perturbated during the acute illness - had normalised to levels that remained similar at 8 months, suggesting a resolution of the peak inflammatory events occurring during the acute illness (Figure 1—figure supplement 2). The frequencies and absolute numbers of CD4+ T-cells were similar in patients across disease severities (Figure 1A and B). However, we observed an increased frequency of CD4+ T-cells expressing the peripheral homing receptor CXCR3 in severe compared to moderate patients and an increased frequency of CD4+ T-cells co-expressing the proliferation/activation markers Ki67 and CD38 in severe compared to mild patients (Figure 1C and D). The overall differentiation status of CD4+ T-cells, defined by the coordinated expression of CCR7 and CD45RA, was similar in mild, moderate, and severe patients, with high proportions of naïve (CCR7+ CD45RA+) and T central memory cells (CCR7+ CD45RA-, TCM) followed by detectable levels of T effector memory cells (CCR7- CD45RA-, TEM) and low frequencies of T effector memory re-expressing RA cells (CCR7- CD45RA+, TEMRA) (Figure 1E). The most abundant naïve and TCM CD4+ T-cell subsets contained significantly higher levels of cells co-expressing markers of activation, proliferation, and cytotoxic potential (HLA-DR+ CD38+, HLA-DR+ Ki67+, CD38+ granzyme B+) in severe compared to moderate/mild patients (Figure 1F–K). An unsupervised analysis by UMAP and FlowSOM revealed the presence of 15 distinct clusters of cells characterised by a unique, coordinated expression of the analysed markers (Figure 1L), shown as mean fluorescence intensity in the heatmap (Figure 1M). These analyses revealed significantly higher frequencies in severe compared to moderate patients of clusters of cells expressing HLA-DR, CD38, and Ki67 (populations 8 and 13) as well as of cells that express CCR7 but lack expression of all other markers analysed, and which resemble undifferentiated, resting CD4+ T-cells (population 2) (Figure 1N). The latter population accounted for a large proportion of CD4+ T-cells (up to 60% of cells in severe patients). A population characterised by low levels of expression of all markers analysed is decreased in severe compared to moderate patients (population 1, Figure 1N). In summary, both manual gating and unsupervised analysis reveal the presence of higher frequencies of CD4+ T-cell populations expressing markers of activation, proliferation, and peripheral tissue homing in patients who recovered from severe versus mild and/or moderate disease.
 
 Similarly, the analyses of CD8+ T-cells showed comparable frequencies and absolute numbers of circulating CD8+ T-cells in patients across disease severities and increased levels of CD8+ T-cells expressing markers of activation (HLADR+CD38+) in severe compared to moderate patients and cytotoxicity (granzyme B+) in severe compared to mild patients (Figure 2A–D). The overall differentiation status of CD8+ T-cells was comparable in patients across disease severities with detectable frequencies of naïve, TCM, TEM, and TEMRA cells (Figure 2E). CD8+ T-cells expressing markers of activation and cytotoxicity (HLADR+ CD38+ and CD38+ granzyme B+) could be detected at higher frequencies within TCM, TEM, and TEMRA subsets in severe compared to moderate and/or mild patients (Figure 2F–I). Unsupervised analysis by UMAP and FlowSOM of CD8+ T-cells showed the presence of 15 clusters of cells expressing the analysed markers (Figure 2J and K). The frequencies of a cluster of CD8+ T-cells expressing high levels of granzyme B and CD45RA (cluster 3) were significantly increased in both severe and moderate compared to mild patients and represented up to 50% of all CD8+ T-cells in severe/moderate groups and up to 30% in mild group (Figure 2L). CD8+ T-cells expressing high levels of CCR7 and intermediate levels of granzyme B, CXCR3, and CD56 were increased significantly in both mild and severe compared to moderate patients (cluster 12). In summary, manual and unsupervised analysis revealed the presence of CD8+ T-cells expressing markers of activation and cytotoxicity which are increased in severe compared to moderate and/or mild patients. Analysis of the T-cell phenotypes in the same patients at 12 months showed that CD4+ and CD8+ T-cell activation and proliferation decreased significantly from 3 to 12 months and activated/proliferating T-cells were largely absent at 12 months (Figure 2—figure supplement 1). Analysis by manual gating showed a significant decrease of activated/proliferating CD4+ and CD8+ T-cells (Ki67+ CD38+, HLA-DR+ CD38+) and of CD4+ and CD8+ T-cells expressing the peripheral tissue-homing receptor CXCR3+ from 3 to 12 months (Figure 2—figure supplement 1B-C,G-J ). An unsupervised analysis by UMAP revealed similar distribution of T-cell clusters in patients with mild, moderate, and severe disease at 12 months, while major differences were observed between patients from the three groups at 3 months (Figure 2—figure supplement 1K). Our data suggests that the ongoing T-cell activation observed at 3 months in patients with severe disease had recovered by 12 months post admission to levels similar to those observed in patients with mild and moderate disease.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Percentage of CD8+ T-cells within the CD3+ gate (A), absolute number of CD8+ T-cells (cells/mm3) (B), and percentages of CD8+ T-cells co-expressing the activation markers HLA-DR/CD38 (C) or granzyme B (D, shown as mean fluorescence intensity [MFI]) are shown in mild, moderate, and severe patients. (E) Percentages of naïve (CCR7+ CD45RA+), T central memory (TCM, CCR7+ CD45RA-), T effector memory (TEM, CCR7- CD45RA-), and T effector memory RA re-expressing (TEMRA, CCR7- CD45RA+) CD8+ T-cells in patients with mild, moderate, and severe disease. (F) Flow cytometry plot with a representative staining from a mild, moderate, and severe patient (overlaid and shown respectively in blue, black, and red) of HLA-DR and CD38 expression in CD8+ TEM cells. (G) Percentages of activated HLA-DR+ CD38+ CD8+ T-cells within naïve, TCM, TEM, and TEMRA cells. (H) Flow cytometry plot with a representative staining from a mild, moderate, and severe patient of HLA-DR and granzyme B (GrzmB) expression in CD8+ TEM cells. (I) Percentages of proliferating HLA-DR+ GrzmB+ CD8+ T-cells within naïve, TCM, TEM, and TEMRA cells. (J) Unsupervised uniform manifold approximation and projection (UMAP) analysis showing the FlowSOM clusters in mild (N=17), moderate (N=25), and severe (N=14) patients. Plots are gated on CD8+ T-cells. (K) Heatmap with MFI levels for each analysed marker within the FlowSOM populations. (L) Summary of percentage of CD8+ T-cells within the indicated FlowSOM populations in mild, moderate, and severe patients. Data in the graphs are shown as mean ± SEM. Statistics were calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–E) CD4+ T-cells in convalescent coronavirus disease-19 (COVID-19) patients at 3 and 12 months. Shown are the percentages of CD4+ T-cells within the CD3+ gate (A) and the percentages of CD4+ T-cells that are Ki67+ CD38+ (B), CXCR3+ (C), HLA-DR+CD38+ (D) and granzyme B+ (shown as mean fluorescence intensity [MFI]) (E).(F–J) CD8+ T-cells in convalescent COVID-19 patients at 3 and 12 months. Shown are the percentages of CD8+ T-cells within the CD3+ gate (F) and the percentages of CD8+ T-cells that are Ki67+ CD38+ (G), CXCR3+ (H), HLA-DR+CD38+ (I), and granzyme B+ (shown as MFI) (J). (K) Unsupervised uniform manifold approximation and projection (UMAP) analysis showing the density plot of cell distribution in mild (N=17), moderate (N=25), and severe (N=14) patients at 3 months and in matched mild (N=8), moderate (N=17), and severe (N=8) patients at 12 months post infection. Data in A–J are shown as mean ± SEM. Statistics in A–J were calculated by Mann-Whitney t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–F) Shown are the percentages of CD56dim (A), CD56bright NK cells (B), Ki67+CD38+ CD56dim (C), and Ki67+CD38+CD56bright NK cells (D). Granzyme B expression on CD56dim (E) and CD56bright (F) NK cells is shown as mean florescence intensity (MFI). (G–K) Shown are the percentages of classical (G: CD14+CD16-), intermediate (H: CD14+CD16+), and non-classical (I: CD14-CD16+) monocytes, activated CD14+CD80+CD86+ (J) and CD14+CD86+CD163+ cells (K). (L–N) TCR-γδ T-cells: frequencies of TCR-γδ T-cells (L), activated HLA-DR+CD38+ (M), and activated/proliferating Ki67+CD38+ TCR-γδ T-cells (N).(O–R) Shown are the percentages of CD3-CD19+ B cells (O), activated CD80+ (P), and HLA-DR+CD38+ B cells (Q) and proliferating Ki67+CD38+ B cells (R). Data are shown as mean ± SD in patients with mild (N=16), moderate (N=21) and severe (N=14) disease. Statistics were by calculated one-way ANOVA test (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
+
 Analysis of expression of the same markers of activation/proliferation in NK CD56dim and CD56bright cells did not show evidence of ongoing NK cell activation and NK cells were similar in patients who recovered from mild, moderate, and severe disease (Figure 2—figure supplement 2A-F). Similarly, analysis of the frequencies and expression of activation markers (CD80, CD68) of classical (CD14+ CD16-), intermediate (CD14+CD16+), and non-classical (CD14-CD16+) monocytes showed similar frequencies of these cells across the disease severities and lack of ongoing activation (Figure 2—figure supplement 2G-K). Similar frequencies of unconventional TCR-γδ T-cells were detected in patients with mild, moderate, and severe disease and these cells lacked expression of markers of activation/proliferation (Figure 2—figure supplement 2L-N). In contrast, CD19+ B cells from severe patients showed an increase in the expression of the activation marker CD80 compared to patients with mild disease, although expression of other markers of activation/proliferation did not differ (HLA-DR, CD38, and Ki67) (Figure 2—figure supplement 2O-R).
 
 In summary, both manual and unsupervised analysis showed increased frequencies of activated/proliferating CD4+ and CD8+ T-cells in severe compared to mild and/or moderate patients at 3 months post admission, suggesting the presence of ongoing immune activation in these patients. We did not find significant activation of other immune cells analysed (NK, TCR-γδ, monocytes), with the exception of CD19+ B cells from severe patients which expressed increased levels of CD80 compared to mild patients.
 
-## Elevated pro-inflammatory cytokines/chemokines in severe patients at 3 months
+### Elevated pro-inflammatory cytokines/chemokines in severe patients at 3 months
 
 To gain insights into the factors that may be driving CD4+ and CD8+ T-cell activation and proliferation and define the nature of any persistent inflammation in these patients, we investigated the presence of soluble circulating pro-inflammatory cytokines/chemokines in the plasma of COVID-19 patients 3 months after admission. The plasma levels of the following 23 cytokines/chemokines were measured using a Luminex platform: granulocyte macrophage colony stimulating factor (GM-CSF), IFN-γ, IFN-α, IL-1α, IL-1β, IL-10, IL-12 p70, IL-13, IL-15, IL-17A, IL-18, IL-2, IL-4, IL-5, IL-6, IL-7, IL-8, IP-10, MCP-1, macrophage inflammatory protein-1α (MIP-1α), MIP-1β, and TNF-α (Human Procarta plex). Our results show that at 3 months the levels of IL-4, IL-7, IL-17, and TNF-α were significantly increased in the plasma of patients with severe compared to mild and/or moderate disease, while IFN-γ was increased in moderate compared to mild patients. Interestingly, IFN-γ was largely undetectable in the plasma of severe patients (Figure 3A). A trend for increased levels of IL-18 was observed in the plasma of severe compared to mild and moderate patients but the difference was not significantly different. The plasma levels of other cytokines/chemokines tested did not differ between patients with different disease severities at 3 months (Figure 3—figure supplement 1). We next investigated the kinetics of expression of these cytokines in patients at 3, 8, and 12 months post admission and observed a statistically significant decrease of plasma levels of IL-4, IL-12, IL-13, and TNF-α from 3 to 8 and/or 12 months, suggesting that at 3 months the levels of these cytokines may still be affected by events occurring during the acute phase of infection. IL-15 levels were similar at 3 and 8 months and decreased thereafter (Figure 3B and C). IL-17 levels were higher at 3 months and progressively diminished over time, although differences were not statistically significant. In contrast, IP-10 levels were higher at 8 and 12 months compared to 3 months. The plasma levels of the other cytokines analysed including IL-7, IFN-γ, IL-18, and MCP-1 were comparable at 3–12 months post admission.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig3-v2.jpg)
+
+**Figure 3.:** (A) Plasma cytokines/chemokines measured at 3 months post admission which differed significantly between patients with mild, moderate, and severe disease are shown (N=63: mild: N=17; moderate: N=32; severe: N=14, depicted in white, grey, and black bars, respectively). (B–C) Cytokines/chemokines measured longitudinally in matched samples in patients at 3 (n=63), 8, and 12 months post admission (n=33 samples for each time point) are shown. Data from analytes that differed significantly between time points in B are shown in C for each patient. (D, E) Purified CD3+ T-cells from healthy donors (N=4 for 3 months; N=3 for 12 months) were co-cultured with plasma from 4 healthy donors, 4 mild, and 4 severe patients at 3 months post infection. Shown is IL-15R-α expression in T-cells from a representative donor at 3 months (D) and the average expression of IL-15Rα by T-cells from each peripheral blood mononuclear cell (PBMC) donor after co-culture with plasma from healthy, mild and severe patients, where each data point represents a single patient (E). Statistics were calculated by one-way ANOVA test (Kruskal-Wallis test) with Dunn’s multiple comparison test (A, E) and by ANOVA/repeated-measures one-way ANOVA, mixed-effects analysis with the Geisser-Greenhouse correction, Tukey’s multiple comparison test. (B, C) Data are visualised as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cytokines/chemokines were measured in the plasma of patients by Luminex. (A) Analyte levels (pg/ml) are shown for mild, moderate, and severe patients at 3 months post admission (63 samples: mild: N=17; moderate: N=32; severe: N=14, depicted in white, grey, and black symbols, respectively). Data are visualised as mean ± SEM. No statistical differences were detected for the cytokines included here, as calculated by one-way ANOVA test (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
 
 Based on our results in Figures 1–2 showing increased levels of circulating activated/proliferating CD4+ and CD8+ T-cells in severe patients and on the elevated levels of cytokines involved in T-cell proliferation (IL-7, IL-15, TNF-α) at 3 months, we asked whether factors present in the plasma of severe patients might render T-cells more susceptible to ‘bystander T-cell’ activation, which occurs during viral infection and is believed to be driven by IL-15. To address this, we co-cultured purified T-cells from healthy donors (n=4) for 7 days with plasma derived from either heterologous healthy donors (n=4, ‘HD plasma’) or patients with mild or severe COVID-19 at 3 and 12 months (n=4, ‘mild plasma’; n=4, ‘severe plasma’). We observed a significant upregulation of the IL-15Rα-chain, the IL-15R subunit that binds directly to IL-15, in T-cells co-cultured in the presence of plasma from severe patients at 3 months compared to healthy donors (Figure 3D and E). In contrast, serum from severe patients at 12 months failed to upregulate IL-15Rα-chain. These experiments suggest that 3 months after severe COVID-19, peripheral blood CD4+ and CD8+ T-cells are exposed in vivo to plasma factors that make them more responsive to IL-15 by inducing upregulation of the IL-15R, and that persistent T-cell activation observed ex vivo at 3 months may be driven by cytokines such as IL-15.
 
 In summary, at 3 months post admission we observe increased levels of IL-4, IL-7, IL-17, and TNF-α in the plasma of severe compared to mild and/or moderate patients. The levels of IL-4, TNF-α, and IL-17 gradually diminished from 3 to 12 months suggesting a resolution in the perturbations of immune cells that are secreting these cytokines, while those of IL-7 were comparable across these time points. Consistently, CD4+ and CD8+ T-cell activation also decreased from 3 to 12 months to levels that were largely undetectable at 12 months (Figure 2—figure supplement 1).
 
-## Robust SARS-CoV-2 memory T-cell and antibody responses
+### Robust SARS-CoV-2 memory T-cell and antibody responses
 
 To investigate the magnitude and functional features of SARS-CoV-2-specific T-cells and address potential associations with disease severity and long COVID, we performed IFN-γ Enzyme-Linked Immune absorbent Spot (ELISpot) assays with PBMC samples from 61 patients. IFN-γ production by ELISpot was measured in PBMCs after an overnight stimulation with overlapping 15-mer peptide pools spanning the sequences of the SARS-CoV-2 structural proteins spike (divided into two pools: spikes 1 and 2, which include peptides spanning the N and C terminal regions of spike, respectively), membrane and nucleocapsid. To investigate in parallel the T-cell response to a persistent virus that is commonly present in the UK population, PBMCs were stimulated with a 15-mer peptide pool spanning the human CMV pp65 protein. Positive (PMA/ionomycin) and negative control wells were included in the assay. The ELISpot results showed that the memory T-cell response to SARS-COV-2 spike, membrane and nucleocapsid was robust and comparable in mild, moderate, and severe patients at 3 months post admission. T-cell responses targeting CMV and polyclonal T-cell activation induced by PMA/ionomycin were also similar in mild, moderate, and severe patients (Figure 4A–F). The percentage of ‘responders’ to SARS-CoV-2, calculated as the percentage of patients who presented a response of >5 SFC/10 (Kuri-Cervantes et al., 2020) PBMCs to peptides spanning the indicated protein sequence, was higher in moderate versus severe patients but similar between mild and moderate patients (Figure 4G). We also assessed the capacity of mild, moderate, and severe patients to mount an antibody response targeting SARS-CoV-2 by using a highly sensitive plate-based luciferase immunoprecipitation assay to the spike receptor binding domain (RBD), which detects all antibody isotypes. SARS-CoV-2 antibody responses were detectable across all patient groups but were higher in patients with moderate compared to mild disease (Figure 4H).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig4-v2.jpg)
 
-**Figure 4.:** coronavirus 2 (SARS-CoV-2)-specific memory T-cell and antibody response at 3 months.(A–F) Interferon gamma (IFN-γ) release measured by Enzyme-Linked Immune absorbent Spot (ELISpot) in peripheral blood mononuclear cells (PBMCs) from mild, moderate, and severe patients (N=61) upon stimulation with 15-mer peptide pools spanning SARS-CoV-2 spike 1 (A), spike 2 (B), membrane (C), nucleocapsid (D), cytomegalovirus (CMV) pp65 (E), and PMA/ionomycin (F). Results are shown as spot forming cells (SFC) relative to 2×105 PBMCs. (G) Percentages of responders assessed as patients from each severity group who displayed a response to the indicated peptide pool >5 SFC/2×105 PBMCs. (H) SARS-CoV-2 receptor binding domain (RBD) antibody titers in patients expressed as RBD bridging LU units. Data in A–F are visualised as mean ± SEM. Statistics were calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
+**Figure 4.:** (A–F) Interferon gamma (IFN-γ) release measured by Enzyme-Linked Immune absorbent Spot (ELISpot) in peripheral blood mononuclear cells (PBMCs) from mild, moderate, and severe patients (N=61) upon stimulation with 15-mer peptide pools spanning SARS-CoV-2 spike 1 (A), spike 2 (B), membrane (C), nucleocapsid (D), cytomegalovirus (CMV) pp65 (E), and PMA/ionomycin (F). Results are shown as spot forming cells (SFC) relative to 2×105 PBMCs. (G) Percentages of responders assessed as patients from each severity group who displayed a response to the indicated peptide pool >5 SFC/2×105 PBMCs. (H) SARS-CoV-2 receptor binding domain (RBD) antibody titers in patients expressed as RBD bridging LU units. Data in A–F are visualised as mean ± SEM. Statistics were calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing.
 
 In summary, the overall magnitude of IFN-γ producing memory T-cells targeting SARS-CoV-2 spike, membrane and nucleocapsid assessed by ELISpot was comparable between mild, moderate, and severe patients at 3 months post admission. However, the proportion of patients who displayed a T-cell response to SARS-CoV-2 peptides (responders) was higher in moderate compared to severe patients. The titers of RBD-specific antibodies were also higher in moderate compared to mild patients, suggesting a superior capacity of patients with moderate disease to mount detectable memory T-cell and antibody responses to SARS-CoV-2.
 
-## Lower frequencies of IFN-γ+/TNF-α+ and/or CD107a+ SARS-CoV-2-specific T-cells in mild patients
+### Lower frequencies of IFN-γ+/TNF-α+ and/or CD107a+ SARS-CoV-2-specific T-cells in mild patients
 
 To evaluate the relative contribution of CD4+ and CD8+ T-cells to the SARS-CoV-2 T-cell response observed by ELISpot and to evaluate the cytokine profiles and phenotype of SARS-CoV-2-specific CD4+ and CD8+ T-cells in these patients in-depth, we performed intracellular cytokine staining (ICS) by flow cytometry in samples from 39 patients for which we had available PBMC samples, at 3 months post admission. PBMCs were briefly stimulated with or without SARS-CoV-2 peptides spanning the spike protein or with PMA/ionomycin as a positive control, and cells were subsequently stained with antibodies recognising T-cell markers of differentiation (CD45RA, CCR7), activation (HLA-DR, CD38), proliferation (Ki67), and tissue-homing (CXCR3) and assessed for the production of IFN-γ, TNF-α, and IL-2. Representative flow cytometry plots showing production of IFN-γ, TNF-α, and CD107a are shown in Figure 5A. Due to limited cell numbers we were able to comprehensively assess in all samples the T-cell response to only spike-1 peptide pool. Results following spike-2 peptide stimulations were similar to those obtained with spike-1, but were available for fewer patients (data not shown). Our results show that frequencies of spike-1-specific CD4+ memory T-cells producing IFN-γ and/or TNF-α or IFN-γ and/or CD107a upon encounter of SARS-CoV-2 spike-1 peptides were consistently higher in moderate compared to mild patients. In contrast, CD8+ T-cells producing IFN-γ and/or TNF-α were similar across the disease severities and those producing IFN-γ and/or CD107a were higher in moderate and severe compared to mild patients (Figure 5B). The polyfunctionality of T-cells, defined as their ability to simultaneously perform more than one function, has been associated with better viral control in chronic viral infections such as HIV. We therefore investigated the polyfunctionality of CD4+ and CD8+ T-cells specific for SARS-CoV-2 spike peptide pools. Across all patient groups monofunctional T-cells performing a single function dominated the response, representing 66–91% of total spike-1-specific T-cells, followed by T-cells performing two or three functions. T-cells performing four functions (IFN-γ+ IL-2+ TNF-α+ CD107a+) were largely absent (Figure 5C and D, and data not shown for IL-2). Across all patient groups, monofunctional CD4+ and CD8+ T-cells targeting spike-1 peptide pools were significantly higher than their polyfunctional counterparts (Figure 5E), suggesting that T-cell functionality of SARS-CoV-2 memory T-cells is not influenced by disease severity. Spike-1-specific CD4+ T-cells were mainly contained within the TEM population, while spike-1-specific CD8+ T-cells were contained within TEM and TEMRA populations (Figure 5F), and results were similar between patient groups. CXCR3 expression was also similar in CD4+ and CD8+ T-cells across patient groups (data not shown).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig5-v2.jpg)
 
-**Figure 5.:** coronavirus 2 (SARS-CoV-2)-specific CD4+ and CD8+ T-cells at 3 months.CD4+ and CD8+ T-cell responses targeting spike peptides were assessed by intracellular cytokine staining (ICS) in mild (N=11), moderate (N=17), and severe (N=11) patients. (A, B) Shown are representative flow cytometry plots of interferon gamma (IFN-γ) and tumor necrosis factor-alpha (TNF-α) or CD107a production by CD4+ and CD8+ T-cells (A) and the percentages of CD4+ (top panel) and CD8+ T (bottom panel) cells producing IFN-γ and/or TNF-α and IFN-γ and/or CD107a in the presence of spike-1 peptides (B). (C) Pie charts summarising the multifunctionality of T-cells specific for spike-1, defined as their capacity to produce 1, 2, 3, or 4 cytokines/CD107a (no. functions). (D) Spike-1 (S1) specific CD4+ (left panel) and CD8+ T-cells (right panel) that express 1–4 functions in mild, moderate, and severe patients. (E) Monofunctionality and polyfunctionality (>1 function) of CD4+ and CD8+ T-cells targeting spike-1 peptides in mild, moderate, and severe patients. (F) Expression of differentiation markers CD45RA/CCR7 by spike-1specific CD4+ and CD8+ T-cells in mild, moderate, and severe patients. Naïve cells = CCR7+CD45RA+ (white); T central memory cells (TCM)=CCR7+ CD45RA- (blue); T effector memory cells (TEM)=CCR7+ CD45RA- (red); T effector memory RA re-expressing cells (TEMRA)=CCR7+ CD45RA- (black). Data not significantly different between patient groups. (G) Percentage of spike-1-specific or CMV-specific CD4+ (left panel) and CD8+ T (right panel) cells that express Ki67. Data in A–B, D–G are visualised as mean ± SEM. Statistics were calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing or by Mann-Whitney t-test.
+**Figure 5.:** CD4+ and CD8+ T-cell responses targeting spike peptides were assessed by intracellular cytokine staining (ICS) in mild (N=11), moderate (N=17), and severe (N=11) patients. (A, B) Shown are representative flow cytometry plots of interferon gamma (IFN-γ) and tumor necrosis factor-alpha (TNF-α) or CD107a production by CD4+ and CD8+ T-cells (A) and the percentages of CD4+ (top panel) and CD8+ T (bottom panel) cells producing IFN-γ and/or TNF-α and IFN-γ and/or CD107a in the presence of spike-1 peptides (B). (C) Pie charts summarising the multifunctionality of T-cells specific for spike-1, defined as their capacity to produce 1, 2, 3, or 4 cytokines/CD107a (no. functions). (D) Spike-1 (S1) specific CD4+ (left panel) and CD8+ T-cells (right panel) that express 1–4 functions in mild, moderate, and severe patients. (E) Monofunctionality and polyfunctionality (>1 function) of CD4+ and CD8+ T-cells targeting spike-1 peptides in mild, moderate, and severe patients. (F) Expression of differentiation markers CD45RA/CCR7 by spike-1specific CD4+ and CD8+ T-cells in mild, moderate, and severe patients. Naïve cells = CCR7+CD45RA+ (white); T central memory cells (TCM)=CCR7+ CD45RA- (blue); T effector memory cells (TEM)=CCR7+ CD45RA- (red); T effector memory RA re-expressing cells (TEMRA)=CCR7+ CD45RA- (black). Data not significantly different between patient groups. (G) Percentage of spike-1-specific or CMV-specific CD4+ (left panel) and CD8+ T (right panel) cells that express Ki67. Data in A–B, D–G are visualised as mean ± SEM. Statistics were calculated by one-way ANOVA (Kruskal-Wallis test) with Dunn’s correction for multiple testing or by Mann-Whitney t-test.
 
 We next asked whether we could detect any ongoing activation and/or proliferation of SARS-CoV-2 or CMV-specific T-cells at 3 months post admission to understand whether these cells contributed to the total pool of activated/proliferating cells that were increased in severe patients. Our results showed that CMV-specific CD4+ but not CD8+ T-cells expressed Ki67 at significantly higher levels compared to their spike-1-specific counterparts, suggesting that CMV-specific CD4+ T-cells were proliferating albeit at low levels (Figure 5G). These data suggest that CMV-specific CD4+ T-cells may contribute to the pool of activated CD4+ T-cells detected in peripheral blood of COVID-19 patients at 3 months.
 
 In summary, SARS-CoV-2-specific CD4+ and CD8+ T-cells could be detected in the peripheral blood of patients 3 months after mild, moderate, and severe COVID-19. An in-depth analysis of SARS-CoV-2-specific T-cells producing IFN-γ, TNF-α, IL-2, and CD107a revealed an increased frequency of T-cells targeting spike-1 in moderate and/or severe compared to mild patients.
 
-## Associations between ongoing symptoms and immune response
+### Associations between ongoing symptoms and immune response
 
 At the 3 month follow-up clinic, patients were screened for a pre-defined list of symptoms in a clinician-led clinic, as reported elsewhere (Arnold et al., 2021). Patients also completed a 36-item Short Form Survey (SF-36), and physical component summary (PCS) and mental component summary (MCS) scores were calculated (Ware and Kosinski, 2001; Brazier et al., 1992). Of all patients included in this study, 79% (82%, 75%, and 86% of mild, moderate, and severe patients, respectively) reported at least one ongoing symptom with breathlessness and excessive fatigue being the most common. Symptoms also included muscle weakness, sleeping difficulty, psychiatric symptoms, anosmia, chest pain, and cough (Table 1). Patients who recovered from severe disease experienced each of these symptoms more frequently compared to patients from the mild and moderate groups, except for cough and chest pain which were reported by a minority of patients across all groups. The proportion of patients who did not report any symptoms was largely similar in mild, moderate, and severe patients (Figure 6A). Mild patients more frequently reported 1 symptom, while those from the severe group were more likely to report 4 symptoms. Moderate patients reported 0–2 symptoms with similar frequencies (Figure 6B). SF-36 PCS and MCS scores at 3 months were similar between mild, moderate, and severe patients (data not shown).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85009/elife-85009-fig6-v2.jpg)
 
-**Figure 6.:** (A, B) The percentage of patients with mild (N=17), moderate (N=32), and severe (N=14) coronavirus disease-19 (COVID-19) who reported the indicated symptom (A) or number of symptoms (B) at 3 months are indicated with white, grey, and black bars, respectively. Statistics were calculated using a Chi-square test. (C, D) Graphs depicting the association between number of symptoms and uniform manifold approximation and projection (UMAP) T-cells clusters in Poisson models, specifically CD4+ T-cell cluster 2 (C) and CD8+ T-cell cluster 4 (D).Figure 6—source data 1.A) or adjusted (B) Poisson regression models.p-Values are shown with or without FDR correction (fdr_p or p values, respectively) for both adjusted and unadjusted models. Highlighted in grey are the two immune parameters that significantly correlated with symptoms after FDR correction. Only parameters with FDR uncorrected p-values <0.05 are included in the tables.
+**Figure 6.:** (A, B) The percentage of patients with mild (N=17), moderate (N=32), and severe (N=14) coronavirus disease-19 (COVID-19) who reported the indicated symptom (A) or number of symptoms (B) at 3 months are indicated with white, grey, and black bars, respectively. Statistics were calculated using a Chi-square test. (C, D) Graphs depicting the association between number of symptoms and uniform manifold approximation and projection (UMAP) T-cells clusters in Poisson models, specifically CD4+ T-cell cluster 2 (C) and CD8+ T-cell cluster 4 (D).
 
 We next asked whether ongoing symptoms, PCS scores or MCS scores at 3 months associate with T-cell profiles and/or the plasma pro-inflammatory cytokines assessed in this study. Poisson regression was performed for these outcome measures against a set of immune parameters of interest including cytokines/chemokines that could be detected consistently across patients (IFN-γ, IL-12p70, IL-13, IL-15, IL-17A, IL-18, IL-4, IL-7, IP-10, and TNF-α) and T-cell profiles detected by flow cytometry (populations identified by manual gating and UMAP/FlowSOM). In the analyses that were unadjusted for sex, age, and severity the number of long COVID symptoms was found to associate significantly with two clusters of T-cells that were identified in the FlowSOM analyses (CD4+ T-cell cluster 2: FDR p=0.003 and CD8+ T-cell cluster 4: FDR p=0.015, Figure 6C and D, respectively; Figure 6—source data 1A). CD4+ T-cell cluster 2 represents a population of cells present at higher frequencies in severe compared to moderate patients, which expressed CCR7, CD38, and intermediate/low levels of Ki67, suggesting moderate/recent activation (Figure 2N). These cells represent on average approximately 50% of all CD4+ T-cells in severe patients. In contrast, CD8+ T-cell cluster 4 is present in similar frequencies across disease severities and represents a subset of cells that express HLA-DR, intermediate levels of CCR7 and CXCR3 and lacks granzyme B expression (Figure 3K). Other immune parameters including the frequencies of activated/proliferating CD4+ T-cell subsets and UMAP CD4+ T-cell cluster 11 (CD38 high, Ki67 intermediate CD4+ T-cells) associated inversely with the number of symptoms with uncorrected p-values <0.05, but these associations were not statistically significant after FDR correction. The ratio of CD4+/CD8+ T-cells correlated directly with the number of symptoms but similarly the association was not significant after FDR correction (Figure 6—source data 1A). In an analysis adjusted for sex, age, and severity none of the estimates displayed FDR p<0.05 (Figure 6—source data 1B). FlowSOM CD4+ T-cell cluster 2 and CD8+ T-cell cluster 4 that significantly associated with the number of symptoms in the unadjusted analysis failed to associate significantly after adjusting for age, sex, and severity. Other immune parameters including plasma cytokine levels of IP10, IL-4, IFN-γ, and IL-12, UMAP CD8+ T-cell cluster 8 and frequencies of Ki67+ HLA-DR+ CD4+ TEM cells directly correlated with number of symptoms (p<0.05), but p-values were >0.05 after FDR correction (Figure 6—source data 1B). There were no significant associations between PCS or MCS scores and T-cell profiles or cytokines/chemokines in either unadjusted or adjusted analyses after FDR correction.
 
@@ -130,46 +402,434 @@ In summary, our study highlights a complex recovery of the immune system followi
 
 ## Materials and methods
 
-## Patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD4 (RPA-T4)</td>
+      <td>Biolegend</td>
+      <td>Cat# 300535</td>
+      <td>FC (0.625:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human HLA-DR (L243)</td>
+      <td>Biolegend</td>
+      <td>Cat# 307640</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD38 (HIT2)</td>
+      <td>Biolegend</td>
+      <td>Cat# 303528</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human Ki-67 (Ki-67)</td>
+      <td>Biolegend</td>
+      <td>Cat# 350505</td>
+      <td>FC (3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD16 (3G8)</td>
+      <td>Biolegend</td>
+      <td>Cat# 302007</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD8 (SK1)</td>
+      <td>Biolegend</td>
+      <td>Cat# 344713</td>
+      <td>FC (3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD56 (NCAM16.2)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 564849</td>
+      <td>FC (0.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD3 (UCHT1)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557943</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human IFN-γ (B27)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560371</td>
+      <td>FC (3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD3 (UCHT1)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560835</td>
+      <td>FC (2:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD107a (H4A3)</td>
+      <td>Biolegend</td>
+      <td>Cat# 328610</td>
+      <td>FC (0.75:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human TNF-α (MAb11)</td>
+      <td>Biolegend</td>
+      <td>Cat# 502946</td>
+      <td>FC (3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD163 (GHI/61)</td>
+      <td>Biolegend</td>
+      <td>Cat# 333631</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD14 (M5E2)</td>
+      <td>Biolegend</td>
+      <td>Cat# 301833</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD68 (Y1/82A)</td>
+      <td>Biolegend</td>
+      <td>Cat# 333811</td>
+      <td>FC (5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD66b (G10F5)</td>
+      <td>Biolegend</td>
+      <td>Cat# 305122</td>
+      <td>FC (5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human TCR γ/δ (B1)</td>
+      <td>Biolegend</td>
+      <td>Cat# 331209</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD16 (3G8)</td>
+      <td>Biolegend</td>
+      <td>Cat# 302017</td>
+      <td>FC (0.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD80 (2D10)</td>
+      <td>Biolegend</td>
+      <td>Cat# 305219</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD69 (FN50)</td>
+      <td>Biolegend</td>
+      <td>Cat# 310931</td>
+      <td>FC (5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CXCR3 (G025H7)</td>
+      <td>Biolegend</td>
+      <td>Cat# 353714</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD45RA (HI100)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561882</td>
+      <td>FC (10:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CCR7 (G043H7)</td>
+      <td>Biolegend</td>
+      <td>Cat# 353226</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human CD19 (HIB19)</td>
+      <td>Biolegend</td>
+      <td>Cat# 302216</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-human IL-2 (MQ1-17H12)</td>
+      <td>Biolegend</td>
+      <td>Cat# 500322</td>
+      <td>FC (2:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human CD8a (RPA-T8)</td>
+      <td>Biolegend</td>
+      <td>Cat# 301014</td>
+      <td>FC (0.3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human IL-15Rα (JM7A4)</td>
+      <td>Biolegend</td>
+      <td>Cat# 330207</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human PD1 (EH12.1)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 612791</td>
+      <td>FC (3:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse recombinant anti-human Granzyme B (QA16A02)</td>
+      <td>Biolegend</td>
+      <td>Cat# 372219</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Peripheral blood mononuclear cells (PBMCs)</td>
+      <td>DISCOVER study, Bristol, UK</td>
+      <td></td>
+      <td>Frozen - isolated PBMCs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Plasma</td>
+      <td>DISCOVER study, Bristol, UK</td>
+      <td></td>
+      <td>Frozen plasma</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 spike protein overlapping peptide library (custom made)</td>
+      <td>Mimotopes</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 membrane protein overlapping peptide library (custom made)</td>
+      <td>Mimotopes</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 nucleocapsid protein overlapping peptide library (custom made)</td>
+      <td>Mimotopes</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CMV pp65 protein (AD169 strain) overlapping peptide library (custom made)</td>
+      <td>Mimotopes</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Spike-RBD Antibody Bridging LIPS assay</td>
+      <td>DOI: 10.3389/fimmu.2022.968317</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Nano-Glo</td>
+      <td>Promega</td>
+      <td>Cat# N1150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IFN-γ ELISpot BASIC kit</td>
+      <td>Mabtech</td>
+      <td>Cat# 34202A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProcartaPlex Mix&amp;\Match 23-plex</td>
+      <td>Invitrogen</td>
+      <td>Cat# PPX-23-MXWCXFA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pan T Cell Isolation Kit, human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-096-535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet Cell Proliferation Kit, for flow cytometry</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C34557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience Foxp3/Transcription factor fixation/permeabilisation buffer</td>
+      <td>Invitrogen</td>
+      <td>Cat# 00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie Aqua Fixable Viability Kit</td>
+      <td>Biolegend</td>
+      <td>Cat# 423102</td>
+      <td>FC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie NIR Fixable Viability Kit</td>
+      <td>Biolegend</td>
+      <td>Cat# 423105</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Human T-Activator CD3/CD28</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11131D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OneComp eBeads Compensation Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 01-1111-42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human TruStain FcX</td>
+      <td>Biolegend</td>
+      <td>Cat# 422302</td>
+      <td>FC (2.5:50)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Anti-Cytomegalovirus IgG ELISA Kit (CMV)</td>
+      <td>Abcam</td>
+      <td>Cat# ab108724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>v10.8.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>v4.0.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>v9.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xPONENT</td>
+      <td>Software for Luminex Instruments</td>
+      <td>The basic xPONENT software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioSpot Software Suite</td>
+      <td>ImmunoSpot S6 Ultra-V Analyzer</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients
 
 Patients hospitalised with COVID-19 (≥18 years of age) were recruited between 30 March and 3 June 2020 into the observational study DIagnostic and Severity markers of COVID-19 to Enable Rapid triage (DISCOVER), a single-centre prospective study based in Bristol (UK). Research Ethics Committee (REC) approval: REC:20/YH/1021. Survivors were invited at 3, 8, and 12 months post admission to attend outpatient follow-up clinics for a systematic clinical assessment (Arnold et al., 2021). For those patients attending a face-to-face follow-up, consent was taken to collect samples for research purposes (blood for PBMC isolation, plasma, and serum). When available serum collected from patients at admission was made available to the research team.
 
-## RT-PCR analysis
+### RT-PCR analysis
 
 RT-PCR analysis was performed on all plasma samples used for Luminex for biosafety reasons (acute, 3–12 months). SARS-CoV-2 test was performed by an in-house RT-PCR at the regional Southwest Public Health England Regional Virology laboratory, utilising a PHE-approved assay at the time of testing. All plasma samples were RT-PCR negative except for two samples taken at acute infection.
 
-## Isolation of PBMCs
+### Isolation of PBMCs
 
 Blood samples were collected from COVID-19 patients after informed consent in EDTA vacutainer tubes and PBMCs and plasma were isolated from peripheral blood using Leucosep tubes containing Ficoll and cryopreserved. PBMCs were resuspended in freezing media (10% DMSO, 90% FCS) prior to freezing in –80°C and frozen vials were transferred to liquid nitrogen 24–48 hr later.
 
-## Flow cytometry staining and PBMC stimulation
+### Flow cytometry staining and PBMC stimulation
 
 PBMCs were thawed and either stained ex vivo or stimulated in AIMV 2% FCS with or without peptide pools from SARS-CoV-2 spike, membrane (M), nucleocapsid (N), CMV pp65 (all 1 μg/ml), or with PMA/ionomycin (PMA 10 ng/ml, ionomycin 100 ng/ml, Sigma-Aldrich) for 5 hr at 37°C in the presence of brefeldin A (BD, 5 μg/ml). To assess degranulation, CD107a antibody was added to the cells at the beginning of the stimulation. Cells were stained with a viability dye Zombie Aqua (Biolegend) for 10 min at room temperature and then with antibodies targeting surface markers (20 min 4°C, diluted in PBS 1% BSA [Sigma-Aldrich]). Cells were fixed overnight in eBioscience Foxp3/Transcription factor fixation/permeabilisation buffer (Invitrogen), and intracellular staining was performed for detection of Ki67, granzyme B, or intracellular cytokines (30 min 4°C). Cells were acquired on a BD LSR Fortessa X20 and data analysed using FlowJo software v10.8.1. A complete list of antibodies is included in Key resources table.
 
-## Flow cytometry data analysis
+### Flow cytometry data analysis
 
 Flow cytometry data was analysed in parallel by manual gating methods and by using unsupervised multi-dimensional algorithms. For the latter analysis we concatenated the flow cytometry standard (FCS) files containing the data from 56 patient samples and performed a FlowSOM clustering analysis and visualised identified clusters using UMAP for different cell populations (e.g., CD3+, CD4+, and CD8+). FCS files from 56 patients were concatenated after downsampling and UMAP and FlowSOM analyses were done by using a plugin in FlowJo v10.8.1. All FCS files for the experiments included in this paper can be accessed in FlowRepository. Repository IDs: FR-FCM-Z5VC (T/NK-cell phenotyping); FR-FCM-Z5VB (innate cell phenotyping); FR-FCM-Z5VA (ICS); FR-FCM-Z5VD and FR-FCM-Z5VE (IL-15R co-culture experiments).
 
-## T-cell co-culture with patient plasma
+### T-cell co-culture with patient plasma
 
 PBMCs were isolated from the blood of healthy donors (N=4) and CD3+ T-cells were isolated with magnetic beads using Pan T-cell Isolation Kit (Miltenyi Biotec), according to the manufacturer’s instructions. Purified CD3+ T-cells from healthy donors were then labelled with CellTrace Violet (Thermo Fisher Scientific) and 3×105 purified T-cells were co-cultured in round-bottom 96-well plate with plasma derived from either a heterologous healthy donor (N=4 healthy plasma), severe (N=4 severe plasma), or mild patients (N=4 mild plasma) for 7 days. Each condition was performed in technical duplicates. Cells were also plated in the presence of anti-CD3/CD28 Dynabeads (Thermo Fisher Scientific) as a positive control. Following the incubation period, cells were stained with Zombie NIR (Biolegend) for 10 min at room temperature before staining cells for 20 min at 4°C with a cocktail of the following antibodies diluted in PBS 1% BSA (Sigma-Aldrich): anti-CD4 BV650, anti-CD8 APC, anti-CD215(IL-15Rα) PE, anti-CD3 Percy5.5. Details of the antibodies are reported in Key resources table. Cells were acquired on a BD LSR Fortessa X20 cytometer.
 
-## Synthetic peptides
+### Synthetic peptides
 
 15-mer peptides overlapping by 10 amino acid residues and spanning the SARS-CoV-2 spike, membrane and nucleocapsid protein and CMV pp65 (AD169 strain) proteins were purchased from Mimotopes (Australia). The purity of the peptides was >80% or >75%, respectively. Peptides were dissolved as described previously (Rivino et al., 2013).
 
-## ELISpot
+### ELISpot
 
 Human IFN-γ ELISpot assays were performed using a human IFN-γ ELISpot BASIC kit (Mabtech). MSIP4W10 PVDF plates (Millipore) were prepared by pre-coating wells in 35% ethanol for 30 s and washing them thoroughly with sterile water to remove any residual ethanol. Subsequently the plates were coated with capture antibody (mAb-1-D1K; 15 μg/ml) diluted in PBS and incubated overnight at 4°C. Cryopreserved PBMCs were thawed and rested at 37°C, 5% CO2 for 5–6 hr. Coated plates were washed five times in sterile PBS and blocked for 1–2 hr using R10 medium which is composed of 0.2 µm filtered RPMI 1640 medium supplemented with 10% FCS, 2 mM glutamine, penicillin (100 units/ml), and streptomycin (100 μg/ml). 2×105 PBMCs were added to each 96-well plate with or without peptide pools (as indicated) in a total volume of 100 µl in R10. PBMCs incubated with R10 medium alone were used as negative (unstimulated) controls. Peptide pools spanning spike (S1, S2, S3, and S4), nucleocapsid (N1 and N2), membrane protein (M), and CMV pp65 were used at a final concentration of 2 µg/ml. PBMC stimulated with PMA at 1 μg/ml and ionomycin at 10 μg/ml (Sigma-Aldrich) as a positive control. All conditions (positive and negative controls and peptide stimulated wells) were performed in duplicate. Plates were incubated for 16–18 hr at 37°C, 5% CO2 and developed as per manufacturer’s instructions. Developed plates were protected from light and dried for 24–48 hr before image acquisition using CTL ImmunoSpot S6 Ultra-V Analyzer. All plates were read using the same settings. Spot forming units for each peptide pool were calculated after subtraction of average background calculated from negative control wells. Negative values after background subtraction were adjusted to zero. Responses were considered antigen-specific when spot counts after background subtraction of relevant peptide pool exceeded 2× standard deviations of the unstimulated control wells, as described (Swadling et al., 2022).
 
-## Cytokine analysis
+### Cytokine analysis
 
 A customised Luminex assay was used to measure the following 23 analytes (cytokines/chemokines) in patients’ plasma samples: GM-CSF, IFN-α and IFN-γ, IL-1α, IL-1β, IL-2, IL-4, IL-5, IL-6, IL-7, IL-8 (CXCL8), IL-10, IL-12p70, IL-13, IL-15, IL-17A (CTLA-8), IL-18, IP-10 (or CXCL10), MCP-1 (or CCL2), MCP-4, MIP-1α, MIP-1β, and TNF-α. The ProcartaPlex Multiplex Immunoassay kit (Thermo Fisher Scientific, PPX-23-MXWCXFA) was used according to the manufacturer’s recommendations. Samples were acquired on Luminex200 Analyser Instrument using the xPONENT basic plus partner analytics. Data were analysed using Invitrogen ProcartaPlex Analysis App on the Thermo Fisher Connect Platform. The two plasma samples from the acute time points that were RT-PCR positive for SARS-CoV-2 were heat inactivated for 30 min at 56°C prior to their use in the Luminex assay. For the matching 3- to 12-month plasma samples, Luminex was performed in parallel on samples that had either been heat inactivated or not, and measurements of all detectable analytes were comparable in these two conditions. Only the data from the non-heat inactivated 3- to 12-month samples was included in Figure 3.
 
-## Spike-RBD antibody bridging LIPS assay
+### Spike-RBD antibody bridging LIPS assay
 
 This assay was performed as described previously (Halliday et al., 2022). Briefly, spike antigen diluted to 2.5 ng/µl in 40 µl PBS was pipetted into every well of a 96-well high-binding OptiPlate (Perkin-Elmer, Waltham, MA, USA) and incubated for 18 hr at 4°C. The plate was washed four times with 20 mM Tris 150 mM NaCl pH 7.4 with 0.15% vol/vol Tween-20 (TBST) and blocked with 1% Casein in PBS (Thermo Scientific, Waltham, MA, USA). The plate was left to air-dry for 2–3 hr before being stored with a sachet of desiccant in a sealed plastic bag at 4°C and used within 3 weeks. The Nluc-RBD antigen was diluted in TBST to 10×106 ± 5% LU per 25 µl. Sera (1.5 µl, 2 replicates) were pipetted into a 96-well plate and incubated with 37.5 µl diluted labelled antigen for 2 hr. Of this mixture, 26 µl was transferred into the coated OptiPlate and incubated shaking (~700 rpm) for 1.5 hr. The plate was washed eight times with TBST, excess buffer was removed by aspiration, then 40 µl of a 1:1 dilution of Nano-Glo substrate (Promega), and TBST was injected into each well before counting in a Hidex Sense Beta Luminometer (Turku, Finland). Units were interpolated from LU through a standard curve.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using either GraphPad Prism v9.4 (GraphPad Software, San Diego, CA, USA) or R version 4.0.4. The statistical tests and post hoc corrections for multiple testing used are indicated in each figure legend. p-Values are indicated as follows: *p<0.05, **p≤0.01, ***p≤0.001. For comparison of the immune data and long COVID symptoms, Poisson regression was used with number of symptoms, PCS scores or MCS scores at 3 months as the outcome variable, and each individual cellular marker/cytokine as the explanatory variable. Analyses were performed unadjusted and adjusted for age and sex. Due to the number of comparisons, FDR correction was performed at a value of 5%. Analysis was performed using the tidyverse package. The script and data are publicly available on GitHub (copy archived at Hamilton, 2022).

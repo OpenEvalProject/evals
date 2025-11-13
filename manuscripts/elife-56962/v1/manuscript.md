@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Only a limited number of animal species lend themselves to becoming model organisms in multiple biological disciplines: one of these is the great pond snail, Lymnaea stagnalis . Extensively used since the 1970s to study fundamental mechanisms in neurobiology, the value of this freshwater snail has been also recognised in fields as diverse as host–parasite interactions, ecotoxicology, evolution, genome editing and 'omics', and human disease modelling. While there is knowledge about the natural history of this species, what is currently lacking is an integration of findings from the laboratory and the field. With this in mind, this article aims to summarise the applicability of L. stagnalis and points out that this multipurpose model organism is an excellent, contemporary choice for addressing a large range of different biological questions, problems and phenomena.
+Only a limited number of animal species lend themselves to becoming model organisms in multiple biological disciplines: one of these is the great pond snail, Lymnaea stagnalis. Extensively used since the 1970s to study fundamental mechanisms in neurobiology, the value of this freshwater snail has been also recognised in fields as diverse as host–parasite interactions, ecotoxicology, evolution, genome editing and 'omics', and human disease modelling. While there is knowledge about the natural history of this species, what is currently lacking is an integration of findings from the laboratory and the field. With this in mind, this article aims to summarise the applicability of L. stagnalis and points out that this multipurpose model organism is an excellent, contemporary choice for addressing a large range of different biological questions, problems and phenomena.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Initially described by Linnaeus in 1758 as Helix stagnalis, the species now know
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56962/elife-56962-fig1-v1.jpg)
 
-**Figure 1.:** L. stagnalis.Places where this species of snail has been reported to occur (hexagons), shaded based on population density (white indicates low density and dark grey indicates high density; source data from GBIF Secretariat, 2019).
+**Figure 1.:** Places where this species of snail has been reported to occur (hexagons), shaded based on population density (white indicates low density and dark grey indicates high density; source data from GBIF Secretariat, 2019).
 
 L. stagnalis serves as the intermediate host for parasites including flatworms responsible for diseases such as fascioliasis (liver fluke and river rot) and cercarial dermatitis (swimmer’s itch) in humans (Adema et al., 1994; Davison and Blaxter, 2005; Ferté et al., 2005; Núñez et al., 1994; Skála et al., 2020). Laboratory and field studies showed that penetration of a parasite into a snail will initiate a chronic infection in which the parasite alters snail neurophysiology, metabolism, immunity, growth and reproduction (Kryukova et al., 2014; Langeloh and Seppälä, 2018; Vorontsova et al., 2019). These studies have also investigated how selection acts on immune defence traits (Langeloh et al., 2017). Investigations of the natural history of L. stagnalis, which focus on host-parasite associations, aid the development of novel control measures that reduce snail-mediated parasitic transmissions. Primary predators of juveniles and adults include leeches, crayfish and fish, some of which snails can detect via chemicals that the predators emit (Dalesman and Lukowiak, 2012).
 
@@ -45,7 +45,7 @@ The life cycle and reproductive biology of the species are well-characterised (I
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56962/elife-56962-fig2-v1.jpg)
 
-**Figure 2.:** L. stagnalis.(A) The embryonic development in the egg from zygote to hatching (over 11–12 days) is depicted in the white area of the life cycle and consists of six main stages: cleavage, blastula, gastrula, trochophore, veliger and metamorphosis (Source data from Ivashkin et al., 2015). The grey area of the life cycle depicts growth and development after hatching. Although L. stagnalis is a simultaneous hermaphrodite, the male reproductive organs are functional before the female ones (Koene and Ter Maat, 2004): specimens reach male and female maturation on average at an age of 30 and 60 days, respectively (based on Koene, 2010). (B) In the wild, generations only partly overlap, as depicted by the two dotted growth curves (top; based on Nakadera et al., 2015). Individuals that are born during spring and summer, overwinter as adults (light grey dotted line) after which they overlap with the adult generation of the next year (black dotted line). The external conditions such as light and temperature (middle), which strongly influence when egg laying occurs (bottom), are depicted for the situation in a typical temperate zone.
+**Figure 2.:** (A) The embryonic development in the egg from zygote to hatching (over 11–12 days) is depicted in the white area of the life cycle and consists of six main stages: cleavage, blastula, gastrula, trochophore, veliger and metamorphosis (Source data from Ivashkin et al., 2015). The grey area of the life cycle depicts growth and development after hatching. Although L. stagnalis is a simultaneous hermaphrodite, the male reproductive organs are functional before the female ones (Koene and Ter Maat, 2004): specimens reach male and female maturation on average at an age of 30 and 60 days, respectively (based on Koene, 2010). (B) In the wild, generations only partly overlap, as depicted by the two dotted growth curves (top; based on Nakadera et al., 2015). Individuals that are born during spring and summer, overwinter as adults (light grey dotted line) after which they overlap with the adult generation of the next year (black dotted line). The external conditions such as light and temperature (middle), which strongly influence when egg laying occurs (bottom), are depicted for the situation in a typical temperate zone.
 
 Its well-characterised embryonic and post-embryonic processes have promoted extensive use of L. stagnalis in the field of developmental biology. This snail has helped us to understand the mechanisms underlying shell formation (Hohagen and Jackson, 2013), the transfer of non-genetic information to the developing embryos (Ivashkin et al., 2015), and resource allocation during development (Koene and Ter Maat, 2004). Moreover, studies with L. stagnalis has also helped develop and evaluate models in physiology, such as the “dynamic energy budget” model (Zonneveld and Kooijman, 1989; Zimmer et al., 2014).
 
@@ -59,7 +59,7 @@ The relatively simple central nervous system of L. stagnalis is organised in a r
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56962/elife-56962-fig3-v1.jpg)
 
-**Figure 3.:** L. stagnalis.(A) Schematic map (dorsal view) of the isolated whole central nervous system that is formed of the paired (left and right) buccal (LB, RB), cerebral (LC, RC), pedal (LPe, RPe), pleural (LPl, RPl), parietal (LPa, RPa) and unpaired visceral (V) ganglia. (B) Isolated central nervous system showing the arrangement of the 11 interconnected ganglia. Brightly pigmented orange-coloured neurons are localised on the surfaces of the ganglia. (C) Identified single neurons: B4 (left), B3 (right; motor neurons responsible for the implementation of feeding), CGC (interneuron in cerebral ganglia modulating the feeding and learning) and RPeD1 (interneuron in pedal ganglia regulating the respiration and heartbeat).
+**Figure 3.:** (A) Schematic map (dorsal view) of the isolated whole central nervous system that is formed of the paired (left and right) buccal (LB, RB), cerebral (LC, RC), pedal (LPe, RPe), pleural (LPl, RPl), parietal (LPa, RPa) and unpaired visceral (V) ganglia. (B) Isolated central nervous system showing the arrangement of the 11 interconnected ganglia. Brightly pigmented orange-coloured neurons are localised on the surfaces of the ganglia. (C) Identified single neurons: B4 (left), B3 (right; motor neurons responsible for the implementation of feeding), CGC (interneuron in cerebral ganglia modulating the feeding and learning) and RPeD1 (interneuron in pedal ganglia regulating the respiration and heartbeat).
 
 Individual neurons (Figure 3C; Benjamin and Crossley, 2020) and their synaptic connectivity were identified as parts of circuits controlling behaviours (Audesirk et al., 1985; Benjamin, 2012; McCrohan and Benjamin, 1980a; McCrohan and Benjamin, 1980b; Syed and Winlow, 1991; Syed et al., 1990). Combining this knowledge with an understanding of the molecular mechanisms, often from laboratory studies, has helped produce an integrated picture of the processes underlying learning and memory, such as consolidation, reconsolidation, extinction and forgetting. The molecular pathways involved in memory formation in L. stagnalis were recently identified, providing further evidence the mechanisms of learning and memory consolidation are conserved across phylogenetic groups in a variety of learning paradigms, including non-associative or associative learning, and operant or classical conditioning (Benjamin and Kemenes, 2013; Fulton et al., 2005; Josselyn and Nguyen, 2005; Kemenes and Benjamin, 2009; Kemenes et al., 2002; Marra et al., 2013; Michel et al., 2008; Nikitin et al., 2008; Park et al., 1998; Pirger et al., 2010; Pirger et al., 2014a; Pirger et al., 2014b; Ribeiro et al., 2003; Rivi et al., 2020; Sadamoto et al., 1998; Sadamoto et al., 2010; Schacher et al., 1988; Vigil and Giese, 2018; Wan et al., 2010). Recently studies have also revealed differences in learning ability at the behavioural level between situations in the laboratory and the field (e.g., Dalesman and Lukowiak, 2012; Dalesman et al., 2015; Dalesman, 2018).
 
@@ -88,6 +88,143 @@ L. stagnalis has also played a crucial role in studies into the evolution of her
 From about 1980, continued attention was given to the physiological characterisation of L. stagnalis, but more recent research has focussed on an 'omics' approach to better understand the underlying molecular processes (Santama et al., 1993; Santama et al., 1995a; Santama et al., 1995b; Santama and Benjamin, 2000). Due to its pre-eminence as a model system in neuroscience, early molecular studies tended to focus on the central nervous system (Feng et al., 2009; Johnson and Davison, 2019). The favourable anatomical features enabled the accumulation of peptidomic data from the mass spectrometry of single neurons (Perry et al., 1999; Worster et al., 1998), making the neuropeptidergic system the most intensely studied part of the central nervous system (Buckett et al., 1990; Perry et al., 1998). Taking advantage of a variety of platforms available for nucleotide sequencing: Sanger (Davison and Blaxter, 2005; Sadamoto et al., 2004; Swart et al., 2019), Illumina (Korneev et al., 2018; Sadamoto et al., 2012; Stewart et al., 2016), BGISEQ (Jehn et al., 2018) and Oxford Nanopore (Fodor et al., 2020a), many sequencing methodologies have been successfully applied to this species.
 
 Extensive genomic, transcriptomic and peptidomic data for L. stagnalis are available in the NCBI database. Four major transcriptome datasets were established by sequencing mRNA from the central nervous system (Bouétard et al., 2012; Davison and Blaxter, 2005; Feng et al., 2009; Sadamoto et al., 2012), and then used to identify genes and proteins, thus providing a solid genetic background for L. stagnalis. Furthermore, an unannotated draft genome is already available and a collaborative effort is underway to produce an annotated genome (Johnson and Davison, 2019) which would largely solve the problem of the lack of molecular information that has so far inhibited research in the L. stagnalis model system (Rivi et al., 2020). Approximately 100 (neuro)peptides have been identified so far (Benjamin and Kemenes, 2020), encoded by genes involved in various regulatory processes (Table 1). These findings contributed to a global understanding of the natural history of L. stagnalis by characterising the molecular and cellular processes underlying chirality, reproduction, immune processes, host-parasite interaction, and acute and chronic adaptive responses to toxic substances in the environment.
+
+**Table 1.**
+ List of some of the most important (neuro)peptides identified in L. stagnalis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecule</th>
+      <th>Abbreviation</th>
+      <th>Function</th>
+      <th>Accession number</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>caudodorsal cell hormones</td>
+      <td>CDCH</td>
+      <td>reproduction</td>
+      <td>P06308</td>
+      <td>Vreugdenhil et al., 1988</td>
+    </tr>
+    <tr>
+      <td>FMRFamides</td>
+      <td>FMRF</td>
+      <td>reproduction, cardiac control</td>
+      <td>P19802</td>
+      <td>Linacre et al., 1990</td>
+    </tr>
+    <tr>
+      <td>conopressin</td>
+      <td>-</td>
+      <td>reproduction</td>
+      <td>AAB35220</td>
+      <td>Van Kesteren et al., 1995</td>
+    </tr>
+    <tr>
+      <td>neuropeptide Y</td>
+      <td>NPY</td>
+      <td>reproduction, development</td>
+      <td>CAB63265</td>
+      <td>De Jong-Brink et al., 1999</td>
+    </tr>
+    <tr>
+      <td>actin-related diaphanous genes (1, 2)</td>
+      <td>dia 1, dia 2</td>
+      <td>development, chirality</td>
+      <td>KX387869, KX387870 KX387871, KX387872</td>
+      <td>Kuroda et al., 2016</td>
+    </tr>
+    <tr>
+      <td>insulin-related peptides (I, II, III, V, VII)</td>
+      <td>MIPs</td>
+      <td>development</td>
+      <td>CAA41989; P25289; AAB28954; AAA09966; AAB46831</td>
+      <td>Smit et al., 1991; Smit et al., 1992; Smit et al., 1993b; Smit et al., 1996; Smit et al., 1998</td>
+    </tr>
+    <tr>
+      <td>sodium stimulating hormone</td>
+      <td>SIS</td>
+      <td>ion and water control</td>
+      <td>P42579</td>
+      <td>Smit et al., 1993a</td>
+    </tr>
+    <tr>
+      <td>small cardioactive peptide</td>
+      <td>SCP</td>
+      <td>feeding, cardiac control</td>
+      <td>AAC99318</td>
+      <td>Perry et al., 1999</td>
+    </tr>
+    <tr>
+      <td>myomodulin</td>
+      <td>MIP</td>
+      <td>feeding, cardiac control</td>
+      <td>CAA65635</td>
+      <td>Kellett et al., 1996</td>
+    </tr>
+    <tr>
+      <td>pituitary adenylate cyclase-activating polypeptide-like molecule</td>
+      <td>PACAP-like</td>
+      <td>learning and memory</td>
+      <td>-</td>
+      <td>Pirger et al., 2010</td>
+    </tr>
+    <tr>
+      <td>cAMP response element-binding proteins (1, 2)</td>
+      <td>CREB 1 CREB 2</td>
+      <td>learning and memory</td>
+      <td>AB041522; AB083656</td>
+      <td>Sadamoto et al., 2004</td>
+    </tr>
+    <tr>
+      <td>glutathione reductase and peroxidase</td>
+      <td>Gred Gpx</td>
+      <td>metabolic detoxification</td>
+      <td>FJ418794, FJ418796</td>
+      <td>Bouétard et al., 2014</td>
+    </tr>
+    <tr>
+      <td>catalase</td>
+      <td>CAT</td>
+      <td>metabolic detoxification</td>
+      <td>FJ418795</td>
+      <td>Bouétard et al., 2014</td>
+    </tr>
+    <tr>
+      <td>superoxide dismutase</td>
+      <td>SOD</td>
+      <td>metabolic detoxification</td>
+      <td>AY332385</td>
+      <td>Zelck et al., 2005</td>
+    </tr>
+    <tr>
+      <td>heat-shock protein</td>
+      <td>HSP70</td>
+      <td>stress response</td>
+      <td>DQ206432</td>
+      <td>Fei et al., 2007</td>
+    </tr>
+    <tr>
+      <td>molluscan defence molecule</td>
+      <td>MDM</td>
+      <td>immune system</td>
+      <td>AAC47132</td>
+      <td>Hoek et al., 1996</td>
+    </tr>
+    <tr>
+      <td>allograft inflammatory factor-1</td>
+      <td>AIF-1</td>
+      <td>immune system</td>
+      <td>DQ278446</td>
+      <td>van Kesteren et al., 2006</td>
+    </tr>
+  </tbody>
+</table>
 
 Furthermore, the CRISPR/Cas9 genome editing method has recently been applied to molluscs (Henry and Lyons, 2016; Perry and Henry, 2015). In L. stagnalis, it was used to knock out the gene responsible for coiling direction during development, leading to a better understanding of chirality in the life of the two morphs (Abe and Kuroda, 2019). The establishment of genome editing in L. stagnalis opens up significant opportunities for functional genomics to investigate the role of specific genes, for example, in snail developmental, toxicology and immunobiological studies.
 

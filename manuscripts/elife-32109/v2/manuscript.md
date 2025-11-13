@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.32109.001 We report that Histone Deacetylase 7 (HDAC7) controls the thymic effector programming of Natural Killer T (NKT) cells, and that interference with this function contributes to tissue-specific autoimmunity. Gain of HDAC7 function in thymocytes blocks both negative selection and NKT development, and diverts Vα14/Jα18 TCR transgenic thymocytes into a Tconv-like lineage. Conversely, HDAC7 deletion promotes thymocyte apoptosis and causes expansion of innate-effector cells. Investigating the mechanisms involved, we found that HDAC7 binds PLZF and modulates PLZF-dependent transcription. Moreover, HDAC7 and many of its transcriptional targets are human risk loci for IBD and PSC, autoimmune diseases that strikingly resemble the disease we observe in HDAC7 gain-of-function in mice. Importantly, reconstitution of iNKT cells in these mice mitigated their disease, suggesting that the combined defects in negative selection and iNKT cells due to altered HDAC7 function can cause tissue-restricted autoimmunity, a finding that may explain the association between HDAC7 and hepatobiliary autoimmunity.
+We report that Histone Deacetylase 7 (HDAC7) controls the thymic effector programming of Natural Killer T (NKT) cells, and that interference with this function contributes to tissue-specific autoimmunity. Gain of HDAC7 function in thymocytes blocks both negative selection and NKT development, and diverts Vα14/Jα18 TCR transgenic thymocytes into a Tconv-like lineage. Conversely, HDAC7 deletion promotes thymocyte apoptosis and causes expansion of innate-effector cells. Investigating the mechanisms involved, we found that HDAC7 binds PLZF and modulates PLZF-dependent transcription. Moreover, HDAC7 and many of its transcriptional targets are human risk loci for IBD and PSC, autoimmune diseases that strikingly resemble the disease we observe in HDAC7 gain-of-function in mice. Importantly, reconstitution of iNKT cells in these mice mitigated their disease, suggesting that the combined defects in negative selection and iNKT cells due to altered HDAC7 function can cause tissue-restricted autoimmunity, a finding that may explain the association between HDAC7 and hepatobiliary autoimmunity.
 
 ## Introduction
 
@@ -31,9 +31,25 @@ The potential significance of this peculiar pattern of HDAC7-mediated autoimmuni
 
 ## Results
 
-## Alteration of HDAC7 function dysregulates thymic innate effector programming and interferes with iNKT development
+### Alteration of HDAC7 function dysregulates thymic innate effector programming and interferes with iNKT development
 
 We previously showed that if a constitutively nuclear mutant of human HDAC7 (HDAC7-ΔP) is transiently expressed at normal levels during thymic T cell development but not in mature T cells, autoreactive cells that would normally die by negative selection instead exit the thymus as naïve Tconv (Kasler et al., 2012). However in our previous study we did not assess the fates of most cells destined to become innate effectors. Analyzing these populations, we noted a modest suppression of Treg (Kasler et al., 2012) and CD8αα IEL (Figure 1—figure supplement 1A), but the most striking observation we made was the near total absence of invariant Natural Killer T cells (iNKT), an oligoclonal population that is reactive to α-galactosyl ceramide (αGalCer) presented by the CD1D non-canonical MHC molecule (CD1D/αGalCer) (Kronenberg, 2014). Cells positive for staining with CD1D/αGalCer tetramers represent approximately 3% of TCRβ-positive cells in wild type C57BL/6 (B6) thymus and 30% in liver, however they are nearly undetectable in either of these tissues or in the spleens or livers of HDAC7-ΔP mice (Figure 1A,B; Figure 1—figure supplement 1B, for full gating see Figure 1—figure supplement 1A), suggesting a profound deficiency in iNKT development. There were however consistently more cells detected in the thymus of HDAC7-ΔP transgenic mice with αGalCer-loaded tetramer than with empty tetramer (Figure 1A, Figure 1—figure supplement 1C–D), suggesting that iNKT cells are not entirely absent in this background.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative flow cytometric plots of iNKT cells and conventional αβ T-cells, identified by staining with TCRβ and CD1D tetramer, empty or loaded with αGalCer as indicated, in thymocytes from WT (top) and HDAC7-ΔP (bottom) mice. Staining after magnetic enrichment of 2 × 107 cells with loaded tetramer is shown at right. (B) Quantification of iNKT cell frequency in Thymus (left), spleen (center), and liver (right) of WT (black symbols) and HDAC7-ΔP (blue symbols) mice (C) Representative flow plots showing conventional staging of iNKT development by CD44 and NK1.1 expression (left) and CD24 expression (right) in magnetically enriched Tet+ TCRβ+ thymic iNKT cells from WT and HDAC7-ΔP mice as indicated. (D) Quantification of difference in frequency of magnetically enriched iNKT cells at the indicated stages, as defined in (C), for five littermate pairs WT and HDAC7-ΔP mice. Difference is expressed as (% of live cells / % of live cells) * 100 for HDAC7-ΔP/WT. Numbers above each column indicate P-value by 2-tailed Student’s T-test. (E) Representative flow cytometric plots and of iNKT from thymus in WT (CD45.1): HDAC7-ΔP (CD45.2) mixed bone-marrow chimeras. Data in (B) are combined from eight independent experiments involving 1–3 littermate pairs; data in (C) are representative of 5 WT: HDAC7-ΔP littermate pairs. Data in (E) are representative of 3 sets of chimeras with 3–6 mice per group. Statistical significance was determined using unpaired two-tailed t tests; ****p≤0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative flow scatter plots showing expression of CD44 vs. TCRβ (left), CD4 vs. CD8α (center), and CD8α vs. CD8β (right) in intra-epithelial lymphocytes isolated from small intestines of WT littermate (top) and HDAC7-ΔP mice (bottom). Data are representative of 3 independent experiments. Plots at center and right show the populations indicated by arrows in the plots to their left. (B) Representative flow scatter plots showing staining of splenocytes (left) or liver-resident lymphocytes (right) from WT littermate (top) or HDAC7-ΔP (bottom) mice with αGalCer-loaded or empty CD1D tetramers, as indicated. (C) Data from five independent littermate pair comparisons showing the percent ratio (as percent of live cells/percent of live cells) of the frequency of total tetramer-positive cells or tetramer-positive cells at the indicated stages, based on the gating shown in Figure 1C. Graph at top shows percent ratios for empty/loaded CD1D tetramer in HDAC7-ΔP mice. Graph at bottom shows percent ratios for loaded tetramer in thymocytes from HDAC7-Δp/WT littermate mice. Numbers above columns indicate P-values by 2-tailed, paired Student’s T-test. (D) Representative flow plot showing CD44 vs. NK1.1 staining of tetramer-positive thymocytes from WT littermate (top) or HDAC7-ΔP (bottom) mice with αGalCer-loaded or empty CD1D tetramers, as indicated. Numbers at upper left of each plot indicate the total number of cells falling in the iNKT gate for approximately 2 million total events.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Log2 fold ratio of HDAC7-ΔP-derived (CD45.2) to WT-derived (CD45.1) cells at the indicated thymocyte stages. A composite DN1-4 engraftment ratio (Lin-CD4-CD8-) was calculated per mouse to normalize the ratio at each successive stage. (B) Proportion of T-cell subsets plotted as percentage of parent from HDAC7-ΔP-derived (CD45.2) or WT-derived (CD45.1) in mixed chimeras. CD4 naïve are defined as CD44loCD4+, CD4 memory as CD44hiCD4+, CD8 naïve as CD44loCD62LhiCD8+, CD8 central memory (TCM) as CD44hiCD62LhiCD8+, and CD8 effector memory (TEM) as CD44hiCD62LloCD8+. (C) Representative flow plots showing TCRβ vs. PBS-57 tetramer staining for WT and HDAC7-ΔP-derived populations in thymus (left) or spleen (right) of WT: HDAC7-ΔP Mixed Hematopoietic Chimeras. Frequency of iNKT cells and Tconv is indicated. (D) Quantification of iNKT cell frequency in mixed WT: HDAC7-ΔP mixed bone-marrow chimeras from thymus, spleen and liver. Bars on graphs indicate mean ±SEM; symbols represent individual mice. (E, F) Representative flow cytometric plots (E) from liver and total quantification (F) from liver and spleen of type II iNKT cells (Tet- CD44hi NK1.1+ TCRβ+) in mixed bone-marrow chimeras depending on bone marrow of origin. Data in (D) are derived from 3 sets of chimeras with 3–6 mice per group. Data in (F) are derived from 2 sets of chimeras with 3 and 4 mice. Statistical significance was determined using unpaired two-tailed t tests; ***p≤0.001, ****p≤0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Full gating for representative panels from thymus shown in Figure 1A and C. Bottom row of plots is as shown in Figure 1A and C. From left to right, top row shows gating for leukocytes by FSC area vs. SSC area, gating for singlets using chained FSC height vs. width and SSC height vs. width, then gating for live cells using eFluor 520 fixable viability dye vs. SSC. This scheme was employed for all data shown in Figures 1–4, Figure 8, and their associated supplements. (B) Full gating for analysis of liver-resident lymphocytes WT: HDAC7-ΔP Mixed Hematopoietic Chimeras. Last two panels in bottom row are as shown in Figure 1E. Top row shows gating for live single leukocytes as for (A). First panel in bottom row shows gating for WT and HDAC7-ΔP -derived cells using CD45.1 and CD45.2. HDAC7-ΔP cells are 45.2+/45.1-, WT cells 45.1+/45.2-, and host-derived cells are 45.1/45.2 double-positive.
 
 Analyzing these cells according to the conventional staging system for iNKT development (Stritesky et al., 2012), we found that rather than being predominantly CD44hi/NK1.1+ (Stage 3), as in the case of WT iNKT cells, the few thymic tetramer-reactive cells from HDAC7-ΔP mice were evenly distributed between the CD44hi/NK1.1+, CD44hi/NK1.1- (Stage 2), and CD44lo/NK1.1- (Stage 0–1) populations (Figure 1—figure supplement 1D). Further analysis of the Stage 0–1 population showed these cells to be predominantly CD24hi, indicating a profound reduction in numbers at all developmental stages that were detectable above background (Figure 1—figure supplement 1C). Examining these stages after ~20 fold enrichment of iNKT cells using tetramer and magnetic beads, we noted the same pattern, with all populations other than CD24 hi /CD44lo/NK1.1- cells being highly underrepresented (Figure 1C,D). These results are consistent with either a developmental block before Stage one or a severe defect in the survival or normal proliferation of iNKT cells from Stage one onwards. We also evaluated the prevalence of CD44/NK1.1-expressing T cells that were not tetramer-reactive, and noted a marked reduction in their numbers in liver and spleen as well (Figure 1—figure supplement 2E–F), suggesting a broad defect in the development of the NKT lineage.
 
@@ -41,13 +57,33 @@ To rule out cell-extrinsic mechanisms for this phenotype, we generated mixed hem
 
 We next examined the effects of loss of HDAC7 in the thymus on these phenotypes, using our previously characterized strain that deletes loxp-flanked Hdac7 under the control of the Lck proximal promoter (Hdac7flox:/:-::lckcre, henceforth Hdac7-KO) (Kasler et al., 2011). We previously reported that loss of HDAC7 during T cell development increased apoptosis of DP thymocytes leading to inefficient positive selection. This shortened thymocyte lifespan resulted in a truncation of the TCR Jα repertoire, with distal rearrangements underrepresented (Kasler et al., 2011). It was thus not surprising to find that Hdac7-KO mice with an endogenous TCR repertoire had fewer iNKT cells than WT controls; for example, Hdac7-KO thymus had a 2–5 fold lower abundance of iNKT cells than WT littermates (Figure 2A). This reduction, consistent with the degree of underrepresentation of the relatively distal Jα18 TCR segment we previously noted (Kasler et al., 2011), was similarly observed in the spleen and liver (Figure 3—figure supplement 1A,B). Importantly, unlike the residual tetramer-reactive cells in HDAC7-ΔP mice, when staged after magnetic enrichment, iNKT calls in Hdac7-KO mice had normal expression of CD44 and NK1.1, suggesting that their development was not functionally altered. (Fig, 2A, at right).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative flow plots showing CD4/CD8 expression (left), loaded and empty CD1D tetramer reactivity (center), and CD44/NK1.1 expression of magnetically enriched iNKT cells (right) from thymus of WT (top) and Hdac7-KO (bottom) thymocytes. (B) Representative flow plots showing an expanded CD44hi Eomes+ innate memory population in mature CD8SP thymocytes from Hdac7-KO mice. Mature CD8 SP thymocytes are identified as TCRβ+CD8+CD4-. (C) Expression of CD44 and CD62L in CD8 T-cells from spleens of WT and Hdac7-KO littermate mice. Data are representative of 3 independent experiments with N = 2–4 mice per group. (D, E) Representative flow plots (D) and total quantification (E) of peripheral naive, central memory (TCM), and effector memory (TEM) CD8 T-cell populations from WT (CD45.1) and Hdac7-KO (CD45.2) derived bone marrow in mixed hematopoietic chimeras. (F, G, H) Representative flow plots (F) and total quantification (G, H) of IFNγ secretion in ex vivo stimulated CD8 T-cells. Splenocytes were harvested from mixed WT (CD45.1)/Hdac7-KO (CD45.2) hematopoietic chimeras, and stimulated ex vivo for 4 hr with PMA/Ionomycin. Percent of cells secreting IFNγ (G) and median fluorescence intensity (MFI) of IFNγ secretion (H) are shown. Bars on graphs indicate mean ±SEM (error bars). Data in (E) are combined from three independent experiments with at least three mice per group; data in (G, H) are combined from three independent experiments with two mice per group. Statistical significance was determined using either unpaired two-tailed T-test (E, H) or two-way ANOVA (G); ***p≤0.001, ****p≤0.0001. A Bonferroni post-test was used for pairwise comparisons in (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative flow scatter plots showing analysis of WT (top) and HDAC7-ΔP TG (bottom) thymocytes for the frequency of γδ T cells (second column), and their Vδ6.3-positive (third column) and PLZF-positive (fourth column) subsets. (B) Quantification of CD44+/Eomes + cells among mature CD8SP thymocytes. Data are combined from four independent experiments with 1–2 mice per group. ****: p≤0.0001, 2-tailed Student’s T-test. (C) Quantification of total γδ T cells, as well as Vδ6.3-positive and PLZF-positive subsets, as represented in (A), based on six independent comparisons of WT and Hdac7-KO mice. Based on a 2-tailed Student’s T-test, p>0.05 for all comparisons except total γδ T cells (p=0.043). (C) Surface expression of Ly6C and CXCR3 from peripheral CD8 T-cells. Black unfilled histograms correspond to WT, blue-filled to Hdac7-KO. Plots represent three independent experiments with 2–4 mice per group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Bar chart showing log2 ratios of Hdac7-KO/WT cells present in WT: Hdac7-KO hematopoietic chimeras at the indicated thymic developmental stages. (B) Representative flow plots showing gating for analysis of memory markers and cytokine secretion in WT: Hdac7-KO mixed hematopoietic chimeras. (C) Quantification for 8 WT: Hdac7-KO mixed chimeras of total CD4/CD8 prevalence and expression of memory markers in CD4 cells (left), or for 6 chimeras of expression of IL-4 and IFNγ in CD4 cells (right). *: p=3.07×10−8, **: p=0.0083. ***: p=0.016.
+
 Although deletion of Hdac7 did not result in expansion of NK1.1-expressing T cells, we did observe significant abnormalities in the effector programming of non-tetramer-reactive thymocytes. We noted a substantial expansion of a CD44hi Eomes +population in the mature CD8 SP compartment in the thymus (Figure 2B, Figure 2—figure supplement 1B). Examination of the peripheral CD8 T cells in these animals also showed a substantial increase in CD44 expression, suggesting an expansion of innate effector CD8 cells (Figure 2C). These cells resemble Eomes +innate memory CD8 +cells that are typically generated in trans, in response to IL4 secretion by thymic-resident iNKT cells (Lee et al., 2013; Weinreich et al., 2010), however as previously noted iNKTcells are depleted rather than expanded in Hdac7-KO mice, and we did not observe a consistent increase in the proportion of PLZF- or Vγ6.3-positive γδ T cells (Figure 2—figure supplement 1A,C), suggesting a different mechanism.
 
 To clarify this question, we examined the phenotypes resulting from loss of HDAC7 in WT: Hdac7-KO mixed hematopoietic chimeras. In 1:1 chimeras, Hdac7-KO thymocytes competed equally through the ISP stage, but thereafter competed poorly and became steadily less abundant. This substantial underrepresentation of Hdac7-KO CD4 SP and mature CD8 SP thymocytes in 1:1 chimeras (Figure 2—figure supplement 2A–B) made analysis at this stage difficult, however their representation in the periphery was sufficient. In the spleen, we saw a strong increase in CD44 expression in the Hdac7-KO-derived vs. to the WT-derived CD8 T cell population (Figure 2D,E), duplicating what we saw in the intact mice and indicating that the phenotypes we observed are likely cell-autonomous. To further characterize the phenotype of these cells, we briefly stimulated splenocytes from these chimeras ex vivo, and found that Hdac7-KO-derived CD8 +T cells produced much more IFNγ than WT-derived CD8 +T cells in the same culture, assessed both as percent cytokine-positive (Figure 3F,G) and by median fluorescence intensity (MFI) of cytokine staining (Figure 3H). CD8 +T cells from Hdac7-KO population also had increased expression of the Eomes-associated chemokine receptor CXCR3 and the trafficking receptor Ly6C (Figure 2—figure supplement 1D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Representative flow cytometric plots showing TCRβ vs. PBS-57 tetramer staining (A), and CD44 vs. NK1.1 staining of iNKT cells (B) in thymus (top) and spleen (bottom) of littermate mice with the indicated genotypes. (C, D) Representative staining (C) and total quantification (D) of IFNγ and IL-4 secretion in total splenocytes from littermate mice of the indicated genotypes, stimulated ex vivo for 4 hr with PMA/Ionomycin. (E, F) Representative flow plots (E) showing surface expression of LFA-1 (CD11a/CD18) in splenic iNKT (Tet+/TCRβ+) cells, with quantification for four littermate pairs shown in (F). Bars on graphs indicate mean ±SEM. Data in (D, F) are from three independent experiments. Statistical significance was determined using one-way (E) or two-way (F) ANOVA; *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Tukey (E) or Bonferroni post-tests (F) were used for pairwise comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Restoration of iNKT cells (Tet + TCRβ+) in Hdac7-KO mice by expression of the Vα14-Jα18 TCR transgene (A, top row), as well as representative CD44/NK1.1 staging for each genotype (bottom row). Representative plots for the indicated genotypes shown in (A) with total quantification shown in (B) for liver (left), thymus (center), and spleen (right) for at least 3 pairs of littermate mice. (C) Proportion of iNKT cells expressed as percent of total TCRβ+T cells in thymus (left) and spleen (right) from WT, HDAC7-ΔP, Vα14, and Vα14 x HDAC7-ΔP mice. (D) Overlaid histograms of CD24 expression in the CD44-NK1.1- populations from thymocytes of the indicated genotypes, as shown in Figure 3B. (E) Proportion of iNKT cells expressed as percent of total TCRβ+T cells in thymus, spleen and liver from WT and Vα14 x HDAC7-ΔP mice. (F) Fold enrichment of iNKT cells in liver (% total TCRβ+) over spleen (% total TCRβ+) in WT and Vα14 x HDAC7-ΔP mice. Statistical significance was determined using unpaired two-tailed t tests; ***p≤0.001, ****p≤0.0001.
+
 Loss of HDAC7 thus appears to result in the aberrant adoption of innate effector programming by CD8 SP thymocytes that would otherwise have exited the thymus as naive Tconv. We observed a much more modest degree of abnormality in the CD4 compartment, comprising a 20–30% increase in the frequency of memory and IL4-secreting cells (Figure 2—figure supplement 2B–C), which we hypothesize is due to the greater similarity that CD8 thymic selection bears to NKT selection, in terms of both the similarity of CD1D to Class I MHC and the availability of selecting ligands on all thymocytes rather than just on specialized thymic APC. Loss of HDAC7 may thus allow some DP thymocytes to aberrantly adopt this lineage through some partial analogue of NKT selection. Collectively, our findings with both the Hdac7-KO and HDAC7-ΔP transgenic strains suggest that HDAC7 may function as a gatekeeper of innate effector programming, blocking the functional maturation of iNKT cells when constitutively expressed in the nucleus, and conversely allowing the aberrant acquisition of innate effector characteristics in Conventional T cells when it is conditionally deleted.
 
-## HDAC7 regulates the effector programming of NKT cells in a manner that mirrors the function of PLZF
+### HDAC7 regulates the effector programming of NKT cells in a manner that mirrors the function of PLZF
 
 To generate a larger population of iNKT precursors for more in-depth evaluation the role of HDAC7, we employed the Vα14-Jα18 TCRα transgene (henceforth ‘Vα14’), encoding the invariant TCRα chain that when paired with the appropriate endogenous β chains allows iNKT cells to bind glycolipids with high affinity (Griewank et al., 2007). Expressing this TCR transgene greatly increases the frequency of CD1D/αGalCer-reactive thymocytes, which arise naturally only at only around 1 in 104 cells. As expected, mice expressing only the Vα14 transgene had many more iNKT cells in thymus and spleen than WT mice (Figure 3A, Figure 3—figure supplement 1A–B). Also consistent with our expectations, when we crossed the Vα14 TCRα transgene into the Hdac7-KO strain, we observed a complete rescue of iNKT cell abundance in the thymus and periphery (Figure 3—figure supplement 1A–B), resulting in identical numbers between Vα14 and Vα14 Hdac7-KO mice. These cells were phenotypically similar to Vα14 iNKT cells in terms of CD44/NK1.1 expression (Figure 3—figure supplement 1A, bottom), suggesting that shortened thymocyte lifespan was indeed the main cause of the reduced iNKT abundance in Hdac7-KO mice.
 
@@ -63,9 +99,17 @@ When considering how both gain and loss of thymic HDAC7 function alter innate ef
 
 One possible mechanism for this inverse relationship is that nuclear HDAC7 represses the expression of PLZF, preventing HDAC7-ΔP thymocytes from expressing PLZF (Seiler et al., 2012). Indeed, we observed a pronounced reduction in PLZF expression in TCRβ+T cells from HDAC7-ΔP mice in all organs examined, including thymus, spleen and liver (Figure 4A,B). However, PLZF was still detected in CD4 +SP thymocytes from Vα14 x HDAC7-ΔP mice; although expression was restricted compared to Vα14-only thymus (Figure 4C), Interestingly, PLZF expression was maintained in roughly half of splenic Vα14 x HDAC7-ΔP iNKT cells (Figure 4D, right panel). Thus, transcriptional repression of PLZF expression by HDAC7 is probably insufficient to fully explain the iNKT phenotype, as even PLZF +Vα14 x HDAC7-ΔP iNKT cells exhibit naïve-like characteristics (Figure 3B).
 
-## HDAC7 and PLZF inversely regulate a shared innate effector gene network that is highly relevant to autoimmune disease
+### HDAC7 and PLZF inversely regulate a shared innate effector gene network that is highly relevant to autoimmune disease
 
 The remarkable inverse relationship between the phenotypes mediated by alterations of HDAC7 and PLZF function in iNKT cell development prompted us to take an unbiased, genome-wide approach to understanding how these two factors might coordinately regulate the transcriptional landscape of this process. To this end, we generated gene expression profiles by RNA-seq of PBS-57 tetramer-reactive Vα14 Tg and Vα14 X HDAC7-ΔP Tg thymocytes and splenocytes, as well as polyclonal naïve (i.e. CD44-) conventional CD4 SP thymocytes and splenocytes. Differential gene expression profiles were constructed for Vα14 Tg vs. naïve Tconv, Vα14 X HDAC7-ΔP Tg vs naïve Tconv, and Vα14 X HDAC7-ΔP vs. Vα14 Tg, by comparing the normalized scalar expression values for three biological replicates of each condition, based on roughly 40 million mapped reads per sample (See Supplementary file 1, Materials and methods). When we plotted significant expression changes for tetramer-reactive Vα14 Tg cell vs. Tconv (Figure 5A, left and right panels, horizontal axes) against the corresponding changes for Vα14 X HDAC7-ΔP vs Tconv (vertical axes), it was evident in both thymus and spleen that HDAC7-ΔP makes the overall gene expression pattern of tetramer-reactive cells more similar to that of Tconv, as shown by the clockwise shift of the plot trend line from the diagonal in both tissues (Figure 5A, solid plot diagonal vs. dotted trend line). Reflecting this effect, iNKT development-associated gene expression changes (both up and down) that were suppressed by HDAC7-ΔP (Figure 5A, green plot points and numbers) greatly outnumbered those enhanced by HDAC7-ΔP (Figure 5A, red plot points and numbers) in both spleen and thymus. Strongly induced genes involved in iNKT cell development that were suppressed by HDAC7-ΔP included Id2, Zbtb16 (PLZF), Klrb1c (NK1.1), Tbx21 (T-bet), Gata3, Il4, Ifng, and Zfp683, which encodes HOBIT, a zinc-finger transcription factor recently shown to be essential for the acquisition of tissue-resident effector function (Mackay et al., 2016) (Figure 5A, labeled points). This pattern of suppression was established in the thymus (Figure 5A, left), but persisted in the spleen (Figure 5A, right), after expression of HDAC7-ΔP was turned off. Blocking HDAC7 nuclear export in the thymus thus apparently programs a more naïve-like state of differentiation into tetramer-reactive cells that persists even after HDAC7-mediated repression is removed. Although some of the changes in gene expression that we observe, especially in the spleen, may be due to the different population distributions with respect to conventional iNKT staging that were sampled between the Vα14 Tg and Vα14 X HDAC7-ΔP tetramer-reactive cells, for many of the genes we identified (e.g. Hobit, T-bet, Figure 5A), the magnitude of the suppression, i.e. lower than in the WT cells, is still greater than could be accounted for by this explanation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scatter charts showing gene expression changes in Cd1d/αGalCer-reactive Vα14 Tg (X axis) and Vα14 X HDAC7-ΔP Tg (Y axis) thymocytes (left) or CD4 splenocytes (right) vs naïve CD4SP thymocytes or splenocytes, respectively. The solid gray line indicates the plot diagonal and the dotted gray line indicates the Least Squares best-fit line of the plotted data. Genes displayed were expressed at least 1.75-fold differentially between tetramer-reactive and naïve cells, with p<0.05 (2-tailed Student’s T test) for three biological replicates of each genotype. Colored plot points represent genes whose differential expression vs. naïve was enhanced (red points) or suppressed (green points) at least 1.75-fold by co-expression of HDAC7-ΔP (C, D) Scatter charts showing genes > 1.66 fold differentially expressed due to loss of PLZF function (C, horizontal axis), or due to transgenic expression of PLZF (D, horizontal axis) according to (Mao et al., 2016), plotted against effect of HDAC7-ΔP expression in PBS-57 tetramer-reactive Vα14 X HDAC7-ΔP vs Vα14 Transgenic thymocytes in Thymus (C, vertical axis) or spleen (D, vertical axis). Total number of genes > 1.67 fold differentially expressed along each axis are indicated in gray. Numbers of genes, with P-values (binomial distribution) of the overlap, for genes differentially expressed along both axes in each quadrant (blue symbols), are indicated in blue.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Related to Figure 5. (A) Table showing top putative upstream regulators (Column 1) of the genes from Figure 5A that were suppressed by HDAC7-ΔP, based on analysis with Ingenuity Pathway Analysis (IPA). Values shown in Columns 2–3 are averages of data from thymocytes and splenocytes. Column 2: average activation/inhibition z-score of putative upstream regulators. Column 3: Average log2 fold differential expression (log2 FDE) of indicated genes in Vα14 X HDAC7-ΔP vs. Vα14 iNKT cells. Column 4: Average (-log10P value) of upstream regulator for thymus and spleen. (B) Table of IPA overrepresented canonical signaling pathways in the set of genes analyzed in (A). Green-shaded pathways are involved in innate effector differentiation or function, purple-shaded pathways in inflammation and autoimmunity. (C) Seriated heat maps showing log2 FDE (red is upregulated, green downregulated) for our RNA-seq data and published data on PLZF in iNKT cell development (Mao et al., 2016). Columns 1–4 show our comparisons and columns 5–6 theirs, as indicated at the bottom of the figure. Heatmap at left shows 3541 genes that are differentially expressed in any comparison among the 11,470 genes sharing common IDs between all datasets. Heatmaps at center and right show data for 267 genes differentially expressed due to HDAC7-ΔP expression (columns 1–2), between Tconv and iNKT cells (columns 3–4), and due to gain/loss of PLZF function (columns 5–6). Among these genes, changes during iNKT development that are suppressed by HDAC7-ΔP are shown at center, and those enhanced by HDAC7-ΔP at right.
 
 These data were also helpful in identifying key candidate molecular targets of HDAC7. Ingenuity Pathway Analysis (IPA, Qiagen) analysis of putative upstream regulators of the HDAC7-affected gene set identified multiple targets highly relevant to iNKT development and function, including Zbtb16 (PLZF), Id2, Il4, Ifng, Tbx21 (T-bet), and Gata3 (Figure 5—figure supplement 1A, for a complete list of putative upstream regulators see Supplementary file 3). The downstream targets of these were almost universally affected in a manner that suggests inhibition rather than activation of the putative upstream regulator (Figure 5—figure supplement 1a, column 2). The expression of most of these upstream regulators was itself suppressed by HDAC7, suggesting an obvious mechanism of regulation (Figure 5—figure supplement 1A, column 3), however the Tec kinase Itk, the most highly correlated upstream regulator of HDAC7 targets in both thymus and spleen, was only modestly suppressed in spleen and not significantly suppressed in thymus, suggesting that HDAC7 might regulate its activation more than its expression. ITK has a well-characterized role in the maturation of conventional CD8 T cells, CD8 innate effectors, and iNKT cells (Atherly et al., 2006; Felices and Berg, 2008).
 
@@ -81,31 +125,47 @@ To gain a better understanding of the significance of this overlap, we evaluated
 
 These signaling networks are also heavily populated with HDAC7 targets that were not identified in the GWAS studies (Figure 6C, light-colored symbols), an observation that is confirmed by IPA analysis of canonical signaling pathways and upstream regulators among HDAC7 targets (Figure 5—figure supplement 1A,B). In nearly all cases, HDAC7 regulates these targets in a manner opposite to their regulation during iNKT cell development (Figure 6C, symbol border vs. fill colors). This regulation by HDAC7 by clearly suppresses downstream signaling in all cases except for TNF superfamily costimulatory signaling, which is mostly potentiated (Figure 6C, color of arrows per legend). Consistent with our phenotypic findings, nearly half of these genes have positive roles in NK/NKT development/function (Figure 6B), showing that HDAC7 broadly suppresses several key signaling pathways that are highly important in both NKT cells and in human autoimmune diseases that are similar to the pathology observed in HDAC7-ΔP transgenic mice. This remarkable concordance strongly supports the idea that the role of HDAC7 in these cells is involved in the pathogenesis of PSC and IBD, and identifies a few key signaling pathways as candidates for further interrogation.
 
-## HDAC7 physically binds to PLZF and modulates its transcriptional activity
+### HDAC7 physically binds to PLZF and modulates its transcriptional activity
 
 HDAC7 is a class IIA histone deacetylase that lacks intrinsic DNA binding capacity and requires binding to target transcription factors to modulate transcription at specific loci (Yang and Seto, 2008). Class IIA HDACs typically act as dominant corepressors, as in the case of MEF2, which is converted from a transcriptional activator to a repressor upon class IIA HDAC binding (McKinsey et al., 2000). PLZF belongs to the BTB-ZF family of transcription factors (Beaulieu and Sant'Angelo, 2011) previously reported to interact with class IIA HDACs (Verdin et al., 2003; Chauchereau et al., 2004); indeed, one group has even demonstrated in vitro and in vivo binding of HDAC7 to PLZF in a separate cell type (Lemercier et al., 2002). This suggested that HDAC7 might modulate PLZF activity in thymocytes through direct physical binding. Determining if this is the case directly is somewhat challenging however, as the abundance of PLZF in wild-type thymocytes is very low, being restricted to a small population of iNKT precursors. To circumvent this difficulty, we made cell lysates from PLZF-transgenic thymocytes and immunoprecipitated them with antibodies to endogenous HDAC7. These experiments showed a specific interaction between HDAC7 and PLZF in thymocytes (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig7-v2.jpg)
+
+**Figure 7.:** (A) Immuno-blots showing co-immunoprecipitation with endogenous HDAC7 of PLZF from PLZF-transgenic thymocytes. (B) Immunoblot showing Co-immunoprecipitation of HA-tagged full-length PLZF from transfected 293 T cells with the indicated FLAG-tagged truncation mutants of HDAC7 (C) Immunoblot showing Co-immunoprecipitation of HA-tagged PLZF truncations as indicated, with the FLAG-tagged HDAC7 1–497 (D), (E) Quantification of Immunoprecipitated protein/input protein for the pairs of constructs in (B) and (C) respectively. Ratios shown are normalized to the background signals for each individual experiment. Error bars indicate SEM of 4–7 individual experiments for each pair of constructs. Shaded areas in diagrams in (B) and (C) indicate areas defined as required for interaction based on this analysis. (F) Firefly luciferase activity from 293 T cells transfected with a Gal4(5)/SV40 minimal promoter reporter construct, normalized to Renilla luciferase values from an EF1α promoter-driven reporter construct. In addition to the reporters, cells were transfected with constructs encoding the Gal4 DNA-binding domain (1-142) fused to the indicated segments of PLZF, as well as empty vector, full-length HDAC7, or HDAC7 1–497 fused to the HSV VP16 transcriptional activation domain (410-490). Error bars represent SEM of four individual experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The GAL4 DBD-PLZF fusion and HDAC7 constructs shown were co-transfected into HEK293T cells, together with the 5XGAL4 site-containing pGL2 Promoter luciferase reporter shown at right.
 
 To further define this interaction, we co-transfected FLAG-tagged full-length or truncated HDAC7 with full length HA-tagged PLZF (Figure 7B,D), or conversely different truncations of PLZF with the (interacting) HDAC7 N-terminal adapter domain (residues 1–497, Figure 7C,E). After Immunoprecipitation of transfected lysates with anti-FLAG agarose beads, we quantified the amount of PLZF protein pulled down vs. input levels over 3–6 separate experiments for each construct, using the LiCor Odyssey system (Figure 7D–E). The results of this analysis identify residues 65–200 of HDAC7, containing the MEF2-interacting domain through the first PKD phosphorylation site, as the interacting region (Figure 7D). Analysis of the PLZF deletions identified a region from residues 320–450, encompassing a proline-rich tract and the first two zinc finger domains, as critical for interaction (Figure 7E).
 
 Although the precise mode of transcriptional regulation by PLZF remains unclear, with different domains exhibiting activating and repressive activity in varying contexts (Sadler et al., 2015; Puszyk et al., 2013; Melnick et al., 2002), we next wanted to examine if HDAC7 physical binding to PLZF could modulate its transcriptional activity. We transfected 293 T cells with fusions of the GAL4 DNA binding domain (residues 1–142) to full-length PLZF, an HDAC7-interacting mutant of PLZF (1-460), or a non-interacting mutant (1-318), together with a SV40 minimal promoter-Gal4(5)-firefly luciferase reporter and an EF-1α promoter-driven Renilla luciferase reporter (Figure 7F, see Figure 7—figure supplement 71 for a diagram). To these constructs were added empty vector (Figure 6F, light blue bars), a vector encoding full-length HDAC7 (Figure 7F, dark blue bars), or one encoding a fusion of the HDAC7 1–497 interacting domain with the VP16 transcriptional activation domain (HDAC7-VP16, Figure 7F, medium blue bars). Measurement of luciferase activity in lysates from these cells showed that co-transfection of FL HDAC7 with FL PLZF or the 1–460 truncation reduced transcription from the Gal4-luc construct, while it did not affect transcription when co-transfected with the non-interacting 1–318 mutant (Figure 7F). Conversely, HDAC7-VP16 increased transcription from the interacting PLZF constructs but not the non-interacting one (Figure 7F). These experiments, together with our characterization of the HDAC7-PLZF interaction and transcriptional targets above, provide strong evidence that in thymocytes HDAC7 regulates PLZF in the same manner as MEF2 and other transcription factors, functioning as a TCR signal-dependent co-repressor that helps to silence PLZF-associated promoters in the absence of appropriate signals. This mechanism is likely to account for at least part of the effect of HDAC7 on iNKT cells.
 
-## Restoring iNKT cells ameliorates Tissue-Specific autoimmunity
+### Restoring iNKT cells ameliorates Tissue-Specific autoimmunity
 
 We earlier reported that HDAC7-ΔP mice develop spontaneous tissue-specific autoimmunity, with about 80% developing obliterative exocrine pancreatitis and concomitant T-cell infiltration in stomach, liver and small intestine within eight months (Kasler et al., 2012). Although this had been previously attributed solely to a defect in negative selection of conventional thymocytes, the striking absence of iNKT cells in HDAC7-ΔP mice spurred us to consider whether disrupted innate effector development might also contribute to this autoimmune syndrome. Indeed, the very tissues vulnerable to T-cell infiltration in HDAC7-ΔP mice, notably the small intestine, liver and hepatobiliary mucosa, are typically populated by PLZF-dependent innate effectors such as iNKT and mucosal-associated invariant T (MAIT) cells (Fan and Rudensky, 2016). We thus set out to determine if restoring iNKT cells could alter the course of HDAC7-ΔP–induced autoimmunity.
 
 In our earlier studies, we found that that HDAC7-ΔP-mediated autoimmunity is dominantly transferable in mixed BM chimeras if a 5-fold excess of HDAC7-ΔP-derived bone marrow is used. While engraftment at these ratios produced comparable populations of WT and HDAC7-ΔP Tconv in peripheral tissues, we did not assess the reconstitution of the iNKT compartment in those studies (Kasler et al., 2012), leaving open the possibility that there was an uncharacterized recessive component to the autoimmunity. Attempts to adoptively transfer mature iNKT cells directly into HDAC7-ΔP mice failed to effectively restore tissue-resident iNKT populations (Figure 8—figure supplement 81A–C). Instead, we generated two sets of hematopoietic chimeras to determine if restoring iNKT cells using Vα14 bone marrow could ameliorate disease compared to WT bone marrow (Figure 8A). When irradiated recipients were reconstituted with a 1:5 mixture of Vα14: HDAC7-ΔP bone marrow, peripheral iNKT cells were effectively rescued to normal levels, while in recipients receiving a 1:5 WT: HDAC7-ΔP mixture they were still essentially absent (Figure 8B).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic of mixed BM chimeras used to monitor HDAC7-ΔP-mediated autoimmunity time course and severity. Lethally irradiated CD45.1 BoyJ recipients were reconstituted (6 × 106 cells) with a 1:5 mixture of either WT (CD45.1): HDAC7-ΔP (CD45.2) or Vα14 (CD45.1): HDAC7ΔP (CD45.2) bone marrow cells. (B) Vα14 bone marrow (bottom) robustly restores peripheral iNKT cells (Tet+ TCRβ+ in liver and spleen in mixed BM chimeras, while WT bone marrow does not. Plots are representative of two sets of independently made chimeras. (C) Plasma concentration of liver (ALT, AST) markers of tissue damage over time measured in WT mice compared to Vα14: HDAC7-ΔP and WT: HDAC7-ΔP BM chimeras. (D) Body weight (left) and survival (right) of mixed BM chimeras over time post-irradiation. Weights in (D) were normalized to starting weight on Day one post-irradiation and measured twice a week thereafter. Survival (D, right) was assessed by monitoring for spontaneous death twice a week or by euthanasia after reaching a clinical endpoint of at least 20% body weight loss compared to peak weight post-irradiation. Using Kaplan-Meier analysis, p=0.0616 by Gehan-Breslow-Wilcoxon tests. Bars on graphs indicate mean ±SEM (error bars); whiskers on box-and-whiskers plots represent min to max. Data in (C) were collected from N = 6 mice per group; data in (D) and (E) were combined from three independent experiments with N = 16 mice total per group. Statistical significance in (D) was determined using two-way ANOVA; *p≤0.05. Bonferroni post-tests were used for pairwise comparisons.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32109/elife-32109-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative flow scatters showing CD45.1 vs. CD45.2 expression in spleens and livers of WT CD45.1/.2 heterozygote recipients, three days after retro-orbital transfer of 5 × 106 CD45.2 iNKT cells. (B) Identification of CFSE-labeled adoptively transferred T-cells in liver and spleen of WT and HDAC7-ΔP in mice from (A). (C) Representative flow scatter plots showing, TCRβ+, PBS-57 tetramer-reactive cells in Livers of mice from (A). Transferred iNKT cells were isolated from spleens and livers of Vα14-Jα18 transgenic mice and enriched to 85+% before transfer. Data are representative of two independent experiments, N = 3 mice per group total. (D) Plasma concentration of lipase over time in WT mice versus Vα14-Jα18: HDAC7-ΔP and WT: HDAC7-ΔP BM chimeras. Samples were obtained from a subset of the cohorts described in Figure 7D–E, with N = 6 mice per group.
+
 Comparing these cohorts over time, we noted Vα14: HDAC7-ΔP chimeras had significantly lower peak plasma levels of ALT and AST, commonly used as an indication of liver damage, than WT: HDAC7-ΔP chimeras (Figure 8C). Both cohorts eventually perished from exocrine pancreatitis and had similar pancreatic lipase levels in plasma (Figure 8—figure supplement 81D), yet Vα14: HDAC7-ΔP chimeras exhibited significantly improved body weight maintenance in the first two months post-engraftment (Figure 8D, left) and a reduced overall mortality rate (Figure 8D, right) compared to WT: HDAC7-ΔP chimeras. These results provide evidence that disruptions in innate effector development, particularly the loss of iNKT cells in the hepatobiliary tract, exacerbates tissue specific autoimmunity in the HDAC7-ΔP setting. Restoring this missing innate effector population resulted in enhanced survival and a significant reduction in the severity of disease.
 
 ## Discussion
 
-## HDAC7 nuclear export licenses innate effector development
+### HDAC7 nuclear export licenses innate effector development
 
 The discovery and characterization of innate effector lymphocytes has transformed our understanding of T-cell receptor signaling, barrier protection at mucosal surfaces, and the evolutionary origins of the vertebrate immune system, yet the identification of key regulatory factors that control naïve versus innate effector development in thymocytes is far from complete. We demonstrate here that the epigenetic regulator HDAC7 serves as a gatekeeper of this developmental fate decision in the thymus. When HDAC7 is prevented from releasing its genomic targets in response to TCR stimulation, PLZF-dependent innate effector development appears to be blocked, and iNKT cells appear to become diverted to a naïve-like fate, characterized by lack of expression of memory or NK markers and a failure to produce effector cytokines. Conversely when HDAC7 function is lost, naïve development is reduced, more thymocytes develop as EOMES-expressing CD8 innate effectors, and the fraction of peripheral CD4 and CD8 T cells expressing memory markers and primed for cytokine production increases. Thus, appropriately regulated nuclear export of HDAC7 appears to be a licensing step that permits both negative selection and the acquisition of alternative cell fates, such as PLZF-dependent agonist selection to the iNKT lineage.
 
 In this study, we focused on iNKT cells due to their relatively high abundance and easy identification using CD1D tetramers, but we suspect that HDAC7-ΔP similarly abrogates development of other PLZF-dependent innate effector subtypes, including rare MR1-restricted MAIT cells and γδ NKT cells (Chandra and Kronenberg, 2015; Fan and Rudensky, 2016). In contrast, another well-described innate effector type, CD8αα + IELs localized in small intestine (Mayans et al., 2014), are only slightly reduced in HDAC7-ΔP mice (Figure 1—figure supplement 1A), consistent with their PLZF-independent derivation (Cheroutre et al., 2011). The identification of a committed precursor to innate lymphoid cells that transiently expresses high amounts of PLZF (Constantinides et al., 2014) also raises the intriguing possibility that development of these cell types may be regulated by class IIA HDACs as well. Furthermore, the main mechanism of action we investigate here, HDAC7 antagonism of PLZF via direct interaction, may be generalizable to other members of the BTB-POZ-ZF family. For example, the signature transcription factor of Tfh cells, Bcl6, is known to associate with HDAC4 (Lemercier et al., 2002) (Crotty, 2014). A class IIA HDAC/BTB-ZF axis may thus regulate T cell or ILC development at additional branch points. Additionally, in recent years a number of transcriptional regulators and epigenetic modifiers – including JARID2, NKAP, HDAC3, and EZH2 (Pereira et al., 2014; Thapa et al., 2013; Dobenecker et al., 2015) – have been identified that regulate iNKT ontogeny. At least one member, HDAC3, physically associates with class IIA HDACs as part of a larger co-repressive complex (Fischle et al., 2002). Devising systems to investigate these relationships as well as HDAC7 association with PLZF via ChiP-Seq and other genomic-scale approaches is a current priority in our laboratory.
 
-## HDAC7 control of iNKT cell development modulates the susceptibility of liver to autoimmune attack
+### HDAC7 control of iNKT cell development modulates the susceptibility of liver to autoimmune attack
 
 By restoring the missing iNKT population with the use of Vα14 donor bone marrow, we significantly attenuated the severity and time course of HDAC7-ΔP-mediated autoimmune liver disease, resulting in improved liver function, better body weight maintenance, and reduced overall mortality. Although specific rescue of iNKT cells did not provide protection in all tissues – almost all Vα14: HDAC7-ΔP chimeras eventually developed the same ultimately lethal exocrine pancreatitis as WT: HDAC7-ΔP chimeras – our studies nonetheless reveal an important new role for impaired iNKT development as an exacerbating factor in liver autoimmunity. Since both HDAC7 and PLZF influence the development of several non-iNKT innate effector subtypes that would not have been restored with Vα14 bone marrow, it is tempting to speculate that restoring these other subsets might ameliorate tissue destruction and T-cell infiltration due to HDAC7-ΔP in other organs.
 
@@ -115,31 +175,258 @@ Our findings likely hold considerable relevance to understanding the etiology an
 
 ## Materials and methods
 
-## Study Design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Histone Deacetylase 7 (HDAC7)</td>
+      <td>NA</td>
+      <td>HDAC7</td>
+      <td>Coding sequence used for HDAC7 expression constructs and the HDAC7-ΔP transgene.</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Promyelocytic Leukemia, Zinc Finger (PLZF)</td>
+      <td>NA</td>
+      <td>ZBTB16</td>
+      <td>Coding sequence used for PLZF expression constructs.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57/BL6</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock Number: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Boyj (B6.SJL-Ptprca Pepcb/BoyJ)</td>
+      <td>Jackson Laboratories; PMID: 11698303</td>
+      <td>Stock Number: 002014</td>
+      <td>B6 strain congenic for Cd45.1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Vα14/Jα18 Transgenic, Tg(Cd4-TcraDN32D3)1Aben</td>
+      <td>Jackson Laboratories; PMID: 18031695</td>
+      <td>MGI:4880641</td>
+      <td>Vα14/Jα18 Transgenic from Bendelac laboratory</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Lck-Cre Transgenic, Tg(Lck-cre)548Jxm</td>
+      <td>Jackson Laboratories; PMID: 8618846</td>
+      <td>MGI: 2176199</td>
+      <td>Cre strain for thymicHdac7 deletion</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Hdac7flox/flox, Hdac7tm2Eno</td>
+      <td>Eric Olson, UTSW; PMID: 16873063</td>
+      <td>MGI: 1891835</td>
+      <td>HDAC7 floxed allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Hdac7-/+, Hdac7tm1Eno</td>
+      <td>Eric Olson, UTSW; PMID: 16873063</td>
+      <td>MGI: 1891835</td>
+      <td>HDAC7 null allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Lck-PLZF transgenic, C57BL/6-Tg(Cd4-Zbtb16)1797Aben/J</td>
+      <td>Jackson Laboratories; PMID: 18703361</td>
+      <td>MGI:4881493</td>
+      <td>PLZF Transgenic strain from Bendelac Laboratory</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>HDAC7-ΔP Transgenic</td>
+      <td>Our laboratory; PMID: 23103766</td>
+      <td>NA</td>
+      <td>Transgenic expression of HDAC7-ΔP under control of Lcl proximal promoter/CD2 LCR in C57BL/6</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 FL</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FL FLAG-tagged human HDAC7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 1–497</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FLAG-tagged human HDAC7 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 65–497</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FLAG-tagged human HDAC7 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 120–497</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FLAG-tagged human HDAC7 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 1–220</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FLAG-tagged human HDAC7 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) FLAG-HDAC7 1–180</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FLAG-tagged human HDAC7 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF FL</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for FL HA-tagged human PLZF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 1–318</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 1–405</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 105–460</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 280–673</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 320–673</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 395–673</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) HA-PLZF 455–460</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for HA-tagged human PLZF truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) GAL4-PLZF FL</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for GAL4 DNA-binding domain (1-142) fused to full-length PLZF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) GAL4-PLZF 455–460</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for GAL4 DNA-binding domain (1-142) fused to PLZF1 - 460 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA 3.1(+) GAL4-PLZF 455–460</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Expression construct for GAL4 DNA-binding domain (1-142) fused to PLZF1 - 318 truncation mutant</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_008653</td>
+      <td>Tool for pathway mapping and other gene ontology analysis from RNAseq transcript abundance data.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2.0</td>
+      <td>Johns Hopkins University; PMID: 22388286</td>
+      <td>RRID:SCR_005476</td>
+      <td>Tool for aligning raw sequence reads to genome</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeqMonk</td>
+      <td>Babraham Institute</td>
+      <td>RRID:SCR_001913</td>
+      <td>Tool for calculating RNA transcript abundances from Bowtie-mapped sequence reads (.SAM files)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study Design
 
 The initial objective of this work was to investigate the molecular mechanisms behind the control of iNKT development by HDAC7, which was an observation we made incidentally in our prior characterization of the general role of HDAC7 in thymic T cell development. The idea that HDAC7 might do this at least in part via interaction with PLZF arose from the review of older literature on these molecules showing they interact. The notion that the role of HDAC7 in iNKT cells has a bearing on the tissue distribution of autoimmunity due to altered HDAC7 function arose from the concordance between NKT-populated tissues and those showing disease in HDAC7-ΔP transgenic mice. This idea was highlighted in importance by the publication of GWAS studies after the initiation of our work that statistically associated HDAC7 and its regulatory network with human diseases affecting the same tissues. We investigated these questions using a combination of cell culture and transgenic mouse models in which the function of HDAC7 and/or PLZF was altered in thymocytes. Parameters measured include cellular abundance in different tissues, T cell effector function after ex-vivo stimulation, luciferase expression, protein-protein interactions, global transcript abundance, and various clinical measures associated with autoimmune disease, as detailed in the following sections.
 
 With the exception of our RNA-seq study, which was done in one experiment using three biological replicates for each condition, all results depicted in this work are based on at least two completely independent trials, comprising at least three biological replicates, that is data from three separate animals of each genotype or from three separate transfections of reporter/expression constructs. Larger sample sizes than this were used as feasible, based on the availability of experimental genotypes of interest, prospective estimates of the statistical power required to show significance for effects of the magnitudes initially observed, and the constraints of time and resources required for analysis. No data that were collected were excluded from the study unless there was clear evidence of a technical failure in data collection, or in the case of the animal studies, morbidity/mortality that was clearly unrelated to the pathologic conditions under study. Except where otherwise indicated in the figure legends, all control-experimental pairs were composed of sex-matched littermates, and all primary immune phenotypes were measured in animals between 4 and 8 weeks of age.
 
-## Mouse Strains and procedures
+### Mouse Strains and procedures
 
 All mice were housed in a specific pathogen-free barrier facility at the Gladstone Institutes, in compliance with NIH guidelines and a UCSF IACUC animal use protocol. All experimental strains were on a C57BL/6 (B6) genetic background. B6, BoyJ, Vα14/Jα18 transgenic (Tg(Cd4-TcraDN32D3)1Aben) and PLZF transgenic (C57BL/6-Tg(Cd4-Zbtb16)1797Aben/J) mice were obtained from The Jackson Laboratory, Bar Harbor, ME. Mice deleting Hdac7 (Hdac7flox:-::lckcre) or expressing the HDAC7-ΔP transgene under the control of the Lck proximal promoter were prepared as described elsewhere (Kasler et al., 2011) (Kasler et al., 2012). Hematopoietic chimeras were prepared as follows: Recipients (8–10 wk-old BoyJ or BoyJ X B6) mice were irradiated with a split dose of 700 + 500 Rads, 3 hr. apart, from a 137Cs source (J.L. Shepherd and Associates, San Fernando, CA). Mice were reconstituted with 5 × 106 bone marrow cells from WT (Boyj or B6 X BoyJ heterozygote), HDAC7-ΔP TG (CD45.2), Hdac7-KO (CD45.2), or Vα14/Jα18 (CD45.2) transgenic donors, injected retro-orbitally in 200 μl of PBS. Bone marrow cell suspensions were prepared by crushing tibias and femurs, dissociating marrow cells in PBS, and purifying mononuclear cells by Ficoll gradient centrifugation. Serum for AST/ALT/lipase analysis was collected by tail vein incision and analyzed by the UCSF Clinical Laboratory at SFGH.
 
-## Flow cytometric analysis of immune cell populations
+### Flow cytometric analysis of immune cell populations
 
 Cell suspensions were prepared from mouse thymus and spleen by crushing, dissociation of cells by pipetting, straining through 40 μm nylon mesh, and ACK lysis. Magnetic enrichment of iNKT cells from ~2×107 thymocytes was performed using APC-conjugated PBS-57 tetramers with the Easy-Sep (StemCell Technologies, Cambridge, MA) APC Positive Selection Kit, according to the package directions. Lymphocytes were prepared from liver by mincing of the tissue, straining through a 40 μm nylon mesh, and discontinuous Percoll gradient centrifugation. Intestinal intra-epithelial lymphocytes were prepared by extensive flushing of whole small intestines with cold PBS, excision of Peyer’s patches under magnification using a Trypan Blue-filled pipet as contrast medium, cutting into ~5 mm longitudinally opened segments, and incubation at 37◦C with rocking in PBS with 2 mM DTT and 5 mM EDTA for 30 min. IEL were then further purified from the dissociated epithelium by Percoll gradient centrifugation. For analysis of cytokine expression, cells were cultured for 4 hr post-isolation with 50 ng/ml PMA (MilliporeSigma, St. Louis, MO) plus 0.5 μM ionomycin (MIlliporeSigma) and for 1 hr with 0.5 μg/ml Brefeldin A (MilliporeSigma) prior to staining. Viability staining was performed for 15 min in the dark at room temperature using eFluor 520 or eFluor 780 fixable viability dyes (Thermo Fisher Scientific, Waltham, MA) at 1:1000 in PBS. Surface staining with CD1D tetramers and fluorochrome-conjugated antibodies was performed for 30 min on ice in PBS with 2% FCS, followed by either fixation in PBS/1% PFA or fixation/permeabilization with the eBioscience FOXP3 intracellular staining kit (Thermo Fisher). Intracellular staining for cytokines or transcription factors was performed for 1 hr on ice in eBioscience FOXP3 Perm/wash buffer. Analytical flow cytometry was performed using a BD (Becton Dickinson, Franklin Lakes, NJ) LSRII Cytek (Cytek Bioscinces, Fremont, CA) FACS Calibur DxP8 instrument. Data processing for presentation was done using FlowJo 10.0 (BD). Cell sorting was performed using a BD FACS-Aria II instrument. CD1D-αGalCer tetramers (PBS-57), conjugated with either phycoerythrin (PE) or allophycocyanin (APC) were obtained from the NIH tetramer core (http://tetramer.yerkes.emory.edu/). The following commercial antibodies were used for flow cytometry: CD11a-PE-Cy7 (Thermo Fisher), clone M17/4; CD18-PE (Thermo Fisher), clone M18/2; CD24-PE-Cy7 (BD), clone M1/69; CD3-APC-EF780 (Thermo Fisher), clone 2C11; CD4-BV650 (BD), clone RM4-5; CD4-PE (BD), clone GK1.5; CD4-APC (BD), clone RM4-5; CD44-PE-Cy7 (Thermo Fisher), clone IM7; CD44-APC-Cy7 (BD), clone IM7; CD44-APC (Thermo Fisher, clone IM7; CD45.1-Pacific Blue (Thermo Fisher), clone A20; CD45.1-FITC (Thermo Fisher), clone A20; CD45.2-V500 (BD), clone 104; CD45.2-PE-Cy7 (BioLegend, San Diego, CA), clone 104; CD5-APC (BD), clone 53–7.3; CD62L-APC-Cy7 (BD), clone MEL-14; CD69-PE (Thermo Fisher), clone H1 2F3; CD8-Alexa 700 (Tonbo Biosciences, San Diego, CA), clone 53–6.7; CD8-PerCP (BioLegend), clone 53–6.7; CXCR3-PE (Thermo Fisher), clone cxcr3-173; Eomes-PE (Thermo Fisher), clone Dan11mag; Ly6C-APC (Thermo Fisher), clone hk1.4; NK1.1-PE-Cy7 (BD), clone pk136; NK1.1-APC-Cy7 (BD), clone pk136; PLZF-PE (Thermo Fisher), clone Mags.21f7; T-bet-PE-Cy7 (Thermo Fisher), clone ebio4b10; TCRβ-PerCP-5.5 (BD), clone H57-597; TCRβ-APC-Cy7 (BD), clone h57-597; TCRγδ-APC (BD), clone GL3; Vg6.3/6.2-PE (BD), clone 8f4h7b7.
 
-## RNA-seq analysis of gene expression
+### RNA-seq analysis of gene expression
 
 Cell suspensions were prepared from thymus and spleen of 6–8 week old wild type B6, Vα14/Jα18 transgenic, or Vα14/Jα18 X HDAC7-ΔP mice. iNKT cells were sorted by FACS using antibodies to TCRβ(+) and the PBS-57 CD1D-αGalCer tetramer(+). Naïve Tconv were sorted using antibodies to CD4(+), CD8(-), TCRβ(+), and CD44(-). Cells (250,000–2,000,000) were purified from three littermate triplets for each strain (18 samples total), and total RNA (200 ng to 4 μg) was prepared using the Rneasy Plus Mini Kit (Qiagen inc., Venlo, The Netherlands). Double-stranded cDNA libraries were prepared by the Gladstone Institutes Genomics Core using the Nugen Ovation kit (Nugen, San Carlos, CA). The Libraries were sequenced by the UCSF Center for Advanced Technology using the Illumina HiSeq 4000 instrument (Illumina, San Diego, CA). Six barcoded samples were loaded per lane. FASTQ files (approximately 5.5 × 107 reads each) were mapped to the UCSC Mouse genome Build 37 (Mm.9) using Bowtie2 (Johns Hopkins University). Approximately 4 × 107 (~75%) of reads per sample were mapped uniquely to the mouse genome. Gene-level tabulation, quality control, and expression analysis was done on. SAM format files generated by BOWTIE2 using SeqMonk 0.33 (http://www.bioinformatics.babraham.ac.uk/projects). Ontologic analysis and pathway mapping were performed using Ingenuity Pathway Analysis (http://www.ingenuity.com/). All primary data associated with these experiments have been deposited at GEO (https://www.ncbi.nlm.nih.gov/geo, accession GSE105026), and a summary of all gene expression data and statistics for differentially expressed genes is provided in Supplementary file 1.
 
-## Plasmids, transfections, and reporter assays
+### Plasmids, transfections, and reporter assays
 
 The human PLZF coding sequence (RCAS(B)-Flag-PLZF), deposited by Peter Vogt (Shi and Vogt, 2009) was obtained from Addgene. N-terminally HA-tagged full-length PLZF was amplified from this coding sequence using the following Primers: N-terminal PLZF Bam HI, HA tag, Eco RV, Bsa BI, Hpa I: 5’ aaaaaaggatccacc atg tat ccc tac gat gtt cca gat tat gcg ata tca atc gtt aac atg gat ctg aca aaa atg gg; C-terminal Swa 1, stop, Not 1: 5’ cct cta cct gtg cta tgt gtg att taa atgattagataagcggccgcaaaaaa 3’. This amplification product was subcloned into pCDNA3.1(+) (Thermo Fisher) using Bam H1 and Not one sites. Different PLZF truncations were amplified from this construct and sub-cloned into the introduced flanking sites (further details on request). For the GAL4 DNA-binding domain-PLZF fusion constructs, the GAL4 DNA-binding sequence was amplified from a plasmid template and inserted into the Eco RV sites of full-length or truncated PLZF expression constructs described above. Construction of full-length human HDAC7 and HDAC7-VP16 fusion-encoding expression vectors is described elsewhere (Dequiedt et al., 2003). Other truncated, FLAG-tagged HDAC7 constructs were amplified from these templates and re-ligated into pCDNA3.1(+). The GAL4 UAS(5) SV40-Firefly luciferase reporter construct was prepared by ligation of an oligonucleotide cassette containing 5 GAL4 recognition sites into the Sma 1 site of pGL2 Promoter (Promega Corp., Fitchburg, WI).
 
 For pulldown experiments, 10 cm dishes seeded the previous day with 3.2 × 106 HEK 293 T cells were transfected with 20 μg of total DNA, consisting of 10 μg each of PLZF and HDAC7 constructs or the corresponding empty vectors, using CaPO4/chloroquine. HEK-293T cells, were originally obtained from ATCC, and had been confirmed by PCR testing to be mycoplasma-free within 6 months of their use for these experiments. After 48 hr, cells were harvested for interaction analysis. For reporter assays, 6-well dishes seeded with 0.8 × 106 HEK 293 T cells/well were transfected using CaPO4/chloroquine with 6.1 μg of total DNA, consisting of 2 μg each of gal4(5) luc, gal4-PLZF fusion construct, and empty vector or HDAC7 expression construct, plus 100 ng of EF1α Renilla luciferase. Cells were harvested for luciferase assay 48 hr after transfection, and luciferase activity was measured using the Promega Dual-Luciferase assay kit.
 
-## Co-immunoprecipitations and western blots
+### Co-immunoprecipitations and western blots
 
 For the co-immunoprecipitation of endogenous HDAC7 with transgenic PLZF in thymocytes, thymocyte lysates from wild-type and PLZF transgenic mice were prepared using p300 lysis buffer (250 mM NaCl, 0.1% NP-40, 20 mM NaH2PO4, pH 7.5, 5 mM EDTA, 30 mM sodium pyrophosphate, 10 mM NaF, and HALT protease/phosphatase inhibitors (Thermo Fisher). After clarification (5 min, 13,000Xg) and pre-clearing (3 hr at 4°C with proteinA/G agarose beads), lysates were immunoprecipitated with either 1 µg/ml of α-HDAC7 antibody (H-273, Santa Cruz Biotechnology, Dallas, TX) or 1 µg/ml of rabbit IgG isotype control antibody (Cell Signaling Technologies, Danvers, MA) at 4°C overnight. The lysates were then incubated with 50 µl of protein A/G agarose beads (Santa Cruz Biotechnology) at 4°C for 4 hr, followed by washing five times with p300 lysis buffer. Immunoprecipitated proteins from the beads were eluted with non-reducing Laemmli SDS PAGE sample buffer by boiling for 3 min. For pulldown analysis of HDAC7-PLZF truncation mutants, 10 cm dished were harvested and lysed in 0.8 mL of P300 buffer, clarified by spinning 5 min. at 13,000 g, then incubated for 4 hr at 4°C with 30 μL/sample of FLAG M2-agarose beads (MilliporeSigma). After four washes with p300 buffer, bound proteins were eluted from the beads by addition of 100 μL of reducing Laemmli SDS-PAGE sample buffer, followed by a 5 min incubation at 95°C.
 

@@ -14,17 +14,17 @@
 
 ### Affiliations
 
-1. https://ror.org/012tb2g32 Tianjin Key Laboratory for Modern Drug Delivery & High-Efficiency; Collaborative Innovation Center of Chemical Science and Engineering; School of Pharmaceutical Science and Technology, Tianjin University Tianjin China
-2. https://ror.org/0152hn881 Department of Molecular Pharmacology, Tianjin Medical University Cancer Institute & Hospital; National Clinical Research Center for Cancer; Key Laboratory of Cancer Prevention and Therapy, Tianjin; Tianjin’s Clinical Research Center for Cancer Tianjin China
-3. https://ror.org/00zky9d41 Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences Wuhan China
-4. https://ror.org/03rmrcq20 Department of Biochemistry and Molecular Biology, The Life Sciences Centre, University of British Columbia Vancouver Canada
-5. https://ror.org/012tb2g32 School of Life Sciences, Tianjin University Tianjin China
+1. Tianjin Key Laboratory for Modern Drug Delivery & High-Efficiency; Collaborative Innovation Center of Chemical Science and Engineering; School of Pharmaceutical Science and Technology, Tianjin University Tianjin China ([ROR:012tb2g32](https://ror.org/012tb2g32))
+2. Department of Molecular Pharmacology, Tianjin Medical University Cancer Institute & Hospital; National Clinical Research Center for Cancer; Key Laboratory of Cancer Prevention and Therapy, Tianjin; Tianjin’s Clinical Research Center for Cancer Tianjin China ([ROR:0152hn881](https://ror.org/0152hn881))
+3. Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences Wuhan China ([ROR:00zky9d41](https://ror.org/00zky9d41))
+4. Department of Biochemistry and Molecular Biology, The Life Sciences Centre, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+5. School of Life Sciences, Tianjin University Tianjin China ([ROR:012tb2g32](https://ror.org/012tb2g32))
 
 † Corresponding author
 
 ## Abstract
 
-Several mutations identified in phospholamban (PLN) have been linked to familial dilated cardiomyopathy (DCM) and heart failure, yet the underlying molecular mechanism remains controversial. PLN interacts with sarco/endoplasmic reticulum Ca 2+ -ATPase (SERCA) and regulates calcium uptake, which is modulated by the protein kinase A (PKA)-dependent phosphorylation of PLN during the fight-or-flight response. Here, we present the crystal structures of the catalytic domain of mouse PKA in complex with wild-type and DCM-mutant PLNs. Our structures, combined with the results from other biophysical and biochemical assays, reveal a common disease mechanism: the mutations in PLN reduce its phosphorylation level by changing its conformation and weakening its interactions with PKA. In addition, we demonstrate that another more ubiquitous SERCA-regulatory peptide, called another-regulin (ALN), shares a similar mechanism mediated by PKA in regulating SERCA activity.
+Several mutations identified in phospholamban (PLN) have been linked to familial dilated cardiomyopathy (DCM) and heart failure, yet the underlying molecular mechanism remains controversial. PLN interacts with sarco/endoplasmic reticulum Ca2+-ATPase (SERCA) and regulates calcium uptake, which is modulated by the protein kinase A (PKA)-dependent phosphorylation of PLN during the fight-or-flight response. Here, we present the crystal structures of the catalytic domain of mouse PKA in complex with wild-type and DCM-mutant PLNs. Our structures, combined with the results from other biophysical and biochemical assays, reveal a common disease mechanism: the mutations in PLN reduce its phosphorylation level by changing its conformation and weakening its interactions with PKA. In addition, we demonstrate that another more ubiquitous SERCA-regulatory peptide, called another-regulin (ALN), shares a similar mechanism mediated by PKA in regulating SERCA activity.
 
 ## Introduction
 
@@ -42,17 +42,230 @@ Here, we report three crystal structures of the PKA catalytic domain (PKAc) in c
 
 ## Results
 
-## Structures of PKAc in complex with WT PLN and PLN R9C
+### Structures of PKAc in complex with WT PLN and PLN R9C
 
 R9C is the most well-known PLN mutation associated with DCM. Despite extensive functional studies, the structural basis of this disease-causing mutation remains elusive. Here we present the crystal structures of PKAc in complex with a peptide corresponding to residues 8–22 of WT PLN, at 2.1 Å resolution (Table 1, Figure 1A), and the R9C variant of this PLN peptide, at 3.4 Å resolution (Table 1, Figure 1B). Adenosine 5′-(β, γ-imido) triphosphate (AMP-PNP), a nonhydrolyzable analog of the ATP cosubstrate, is also bound to PKAc in both structures. The peptides contain the phosphorylation site. The WT PLN peptide has previously been shown to be a good model substrate that gets phosphorylated as efficiently as the full-length PLN protein (Masterson et al., 2010; Ceholski et al., 2012a). The electron densities for the majority of the peptides (corresponding to PLN residues 8–19) and AMP-PNP are well defined in the structures (Figure 4—figure supplement 1, Figure 1—figure supplement 1). Two Mg2+ atoms are observed in the catalytic site, similar to other reported PKA structures (Kovalevsky et al., 2012). In both cases, PKAc crystallized in a closed conformation with PLN docked to the large lobe and AMP-PNP bound with the small lobe.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig1-v2.jpg)
+
+**Figure 1.:** (A) Crystal structures of the ternary complex of PKAc, WT PLN, and AMP-PNP. Protein kinase A (PKA) is colored in pink, PLN in yellow, and AMP-PNP in cyan. (B) Crystal structures of the ternary complex of PKAc, R9C PLN, and AMP-PNP. PKA is colored in green, PLN in violet red, and AMP-PNP in cyan. (C) The interaction between PKAc and WT PLN. The van der Waals contacts (orange), the salt bridges (green), and the hydrogen bonds (purple) are indicated by the dash lines. (D) The superposition of PKAc-WT PLN (white-gray) with PKAc-R9C PLN (light green-green). R9C abolishes the electrostatic interaction between Arg9 and the helix dipole of helix 4, inducing conformational changes at the N-terminal region (NTR). (E) The superposition of PKAc:WT PLN (white-gray) with PKAc:PLN A11E (light blue-cyan). A11E forces the NTR to move away from PKAc without affecting the structure at the catalytic center.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Density maps for the AMP-PNP region (A), PKAc Gly-rich loop region (B), and phospholamban (PLN) peptides (C) from the crystal structures of PKAc–PLNs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Ensemble cluster views of the superposition of the top 20 lowest energy structures of WT PLN, R9C PLN, pS16 PLN, and pT17 PLN. The top 7 ranked clusters are colored in gray, forest green, cornflower blue, purple, sandy brown, light sea green, and hot pink, respectively. (B) The root mean square deviation (RMSD) between the representative structures from each ensemble cluster. WT PLN clearly shows a higher RMSD than the other four peptides, suggesting its higher flexibility. (C) A comparison of the top structures of WT PLN (white) with the ones from R9C PLN (light sea green), pS16 PLN (yellow), and pT17 PLN PLN (forest green). S16 is used for the superposition.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Identically conserved residues are colored in green, and weakly similar residues are coloured in grey. The protein kinase A (PKA)/calmodulin-dependent protein kinase II (CaMKII) phosphorylation site is colored in yellow and orange, respectively.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Both DCM mutations at the positions 9, 14, and 18 (red circles) and the CaMKII phosphorylation (brown circle) reduce the interaction between PLN (yellow) and PKAc (purple), and subsequently decrease the phosphorylation level of PLN.
+
+**Table 1.**
+ Data collection and refinement statistics for the PKAc–phospholamban (PLN) crystals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Crystal</th>
+      <th>PKAc-WT PLN</th>
+      <th>PKAc-A11E PLN</th>
+      <th>PKAc-R9C PLN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>λ for data collection (Å)</td>
+      <td>0.9795</td>
+      <td>0.9795</td>
+      <td>0.9795</td>
+    </tr>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 2 21 21</td>
+      <td>P 1 21 1</td>
+      <td>C 2 2 21</td>
+    </tr>
+    <tr>
+      <td>Cell dimension (Å)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>52.57, 70.49, 99.03</td>
+      <td>49.56, 69.37, 56.24</td>
+      <td>50.91, 104.88, 168.10</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00, 90.00, 90.00</td>
+      <td>90.00, 101.97, 90.00</td>
+      <td>90.00, 90.00, 90.00</td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td>42.14–2.16</td>
+      <td>33.12–2.80</td>
+      <td>44.19–3.43</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.194 (0.907)</td>
+      <td>0.139 (0.527)</td>
+      <td>0.165 (0.738)</td>
+    </tr>
+    <tr>
+      <td>Average I/σ(I)</td>
+      <td>9.9 (1.8)</td>
+      <td>8.5 (1.8)</td>
+      <td>10.3 (2.5)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>91.42 (68.22)</td>
+      <td>99.11 (94.08)</td>
+      <td>96.35 (95.02)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.9 (6.1)</td>
+      <td>3.3 (3.1)</td>
+      <td>5.4 (5.7)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>42.14–2.16</td>
+      <td>33.12–2.80</td>
+      <td>44.19–3.43</td>
+    </tr>
+    <tr>
+      <td>Highest resolution shells (Å)</td>
+      <td>2.24 (2.16)</td>
+      <td>2.78 (2.83)</td>
+      <td>3.56 (3.43)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>18,585</td>
+      <td>9242</td>
+      <td>6088</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>30.88</td>
+      <td>37.93</td>
+      <td>95.81</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>30.52</td>
+      <td>37.97</td>
+      <td>95.92</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>24.40</td>
+      <td>34.94</td>
+      <td>86.85</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>36.01</td>
+      <td>37.30</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.179 (0.230)</td>
+      <td>0.203 (0.294)</td>
+      <td>0.257 (0.339)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.227 (0.290)</td>
+      <td>0.252 (0.415)</td>
+      <td>0.317 (0.360)</td>
+    </tr>
+    <tr>
+      <td>RMSD length (Å)</td>
+      <td>0.008</td>
+      <td>0.002</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>RMSD angle (°)</td>
+      <td>1.20</td>
+      <td>0.490</td>
+      <td>0.370</td>
+    </tr>
+    <tr>
+      <td colspan="4">No. of atoms</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2780</td>
+      <td>2672</td>
+      <td>2775</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>33</td>
+      <td>33</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>238</td>
+      <td>23</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Ramachandran plot (%)</td>
+    </tr>
+    <tr>
+      <td>Most favored</td>
+      <td>95.85</td>
+      <td>95.18</td>
+      <td>94.07</td>
+    </tr>
+    <tr>
+      <td>Additionally allowed</td>
+      <td>4.15</td>
+      <td>4.82</td>
+      <td>5.64</td>
+    </tr>
+  </tbody>
+</table>
 
 In the complex of PKAc with WT PLN, the peptide substrate adopts an extended conformation. The N-terminal region (NTR) of WT PLN (Thr8 to Ile12) makes extensive interactions with helix 4 of the large lobe of PKAc. The binding is mainly mediated by an electrostatic interaction between the positively charged side chain of PLN Arg9 and the negative dipole moment of α-helix 4 and by a hydrophobic interaction between Ala11 of PLN and Phe129 of PKAc (Figure 1C). The hydroxyl group of the phosphorylation site, Ser16, is ~3.4 Å away from the γ-phosphate group of AMP-PNP, similar to other reported PKA structures (Kovalevsky et al., 2012). The asymmetric unit (ASU) of our structure contains one PKAc bound to one PLN (Figure 1A).
 
 In the structure of the PKAc complex with PLN R9C, the NTR diverges from the structure of WT PLN bound to the enzyme. The mutation to Cys abolishes the interaction between the positively charged side chain of Arg9 and the negatively charged helix dipole at the C-terminal end of helix 4 from PKAc and a hydrogen-bond between PLN Arg9 and the main chain of PKAc Arg134, which releases the NTR of PLN from binding to the large lobe (Figure 1C, D). R9C turns the NTR counter-clockwise by 26° around the hinge formed by Ala11 and shifts the Cβ of residue Thr8 by 5.2 Å. The surface area of the enzyme–peptide interface decreases by 62.9 Å2, as a consequence of the R9C mutation, which is predicted to strongly diminish the binding of PLN. The structural change in the NTR allosterically affects the conformation of the catalytic center. The Cα of Ser16 is shifted by 0.7 Å, which results in a conformational change of the side chain of Ser16, a displacement of AMP-PNP, and a subsequent ~0.4 Å increase in the distance between the γ-phosphate of AMP-PNP and the hydroxyl group of Ser16 (Figure 1D).
 
-## DCM mutations reduce the binding of PLN and activity of PKA
+### DCM mutations reduce the binding of PLN and activity of PKA
 
 To test whether the DCM mutations affect the binding between PKAc and the PLN-derived peptide, we characterized their interactions by SPR. To understand the interactions between the three components in the PKAc/AMP-PNP/substrate ternary complex, we first measured the affinity between PKAc and AMP-PNP in the absence of substrate. It shows a dissociation constant (KD) around 110 μM (Figure 2—figure supplement 1A). The binding affinity of WT PLN peptide to PKAc is clearly influenced by AMP-PNP: in the presence of 500 μM AMP-PNP the KD is ~180 μM (Figure 2A, Figure 2—figure supplement 1C), similar to the reported affinities for other PKA substrates such as kemptide and ryanodine receptor (RyR) (Haji-Ghassemi et al., 2019; Masterson et al., 2008), while in the absence of nucleotide, no binding could be detected (Figure 2—figure supplement 1B). Thus, we chose to include 1 mM of AMP-PNP for all the following SPR experiments involving the formation of ternary complexes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig2-v2.jpg)
+
+**Figure 2.:** (A–K) SPR sensorgrams of the binding of the PLN/ALN peptides onto immobilized PKAc. The calculated KD values are displayed above the corresponding sensorgrams. (L) The relative KD values of PKAc with different peptide substrates measured by SPR assay.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) SPR sensorgrams for the binding of AMP-PNP with immobilized PKAc. SPR sensorgrams for the binding of WT phospholamban (PLN) with immobilized PKAc in the absence (B) or presence (C) of AMP-PNP.
 
 The KD value of PLN R9C is about fourfold higher than that of WT PLN (Figure 2A, B). This difference confirms that the loss of interactions between the NTR of the peptide and the large lobe of PKAc is linked to a decrease in affinity for PLN R9C. We further tested the impact of four other DCM mutations, including R9H, R9L, ΔR14, and I18T, as well as an artificial mutation A11E, on the interaction between PKAc and PLN. Generally, all of them decrease the binding affinity compared to the WT PLN (Figure 2C–G). Among all the DCM mutations, R9H, the least deleterious of the disease-associated mutations, is the mildest, with an affinity 3.2-fold lower compared to WT. The replacement by histidine partially retains the positive charge at this position and might keep weak contact with the negatively charged helix dipole of helix 4 (Figure 1C). The R9C PLN peptide, which should lack any positive charge character at this position, has a slightly higher KD value compared to the R9H variant. In contrast, the replacement of Arg9 by leucine, which has a nonpolar side chain, shows a much larger weakening effect. Arg14, from the classic R-R-X-S/T motif, forms extensive interactions with PKAc, involving a salt bridge network with Glu170 and Glu230 and van der Waals contacts with Phe129, Thr201, Pro169, and Glu203 of PKAc (Figure 1C), similar to what was seen in previous studies with other peptides known to bind PKAc (Kovalevsky et al., 2012; Bossemeyer et al., 1993; Breitenlechner et al., 2005; Breitenlechner et al., 2004; Lauber et al., 2016; Pflug et al., 2012; Engh et al., 1996; Rouse et al., 2009). Therefore, it is not surprising that the deletion of Arg14 can cause a dramatic tenfold reduction in binding affinity because it will not only cause the change at Arg14, but also make all residues upstream of residue 14 out of register. The I18T mutation has a similar effect on the affinity as the deletion of Arg14. Ile18 forms extensive van der Waals contacts with Gln84 and Phe187 of PKAc. Replacement by the smaller and more hydrophilic threonine would cause the loss of contacts, which weakens the binding (Figure 1C). PLN A11E exhibits an approximately twofold elevated KD value, relative to WT PLN. Given the increases in side-chain size and polarity, this mutation likely disrupts the interaction between the methyl group of Ala with Phe129 on α-helix 4 of PKAc, causing the affinity to decrease.
 
@@ -64,9 +277,66 @@ The strength of the interactions between PKAc and substrate peptides was also ex
 
 The enzyme kinetic constants of PKAc for WT- and R9C-PLN peptides were determined by an ADP-Glo kinase assay (Figure 3C). The turnover numbers (kcat) are generally in the same ballpark with previously reported kcat values determined using PLN, kemptide, SP20, and RyR2, as substrates (Haji-Ghassemi et al., 2019; Masterson et al., 2010; Trafny et al., 1994; Mitchell et al., 1995). The kcat values for both PLN variants remain relatively unchanged, suggesting that the increased distance and altered orientation between the hydroxyl group of Ser16 in PLN R9C and the gamma-phosphate of AMP-PNP do not significantly impact transition state stabilization during catalysis of phosphate group transfer. The KM value for PLN R9C is twofold higher than WT PLN (Table 2, Figure 3C). This difference in KM and KD values is similar for these peptide substrates, which could indicate that the lower catalytic efficiency seen with PLN R9C is mostly due to decreased substrate binding to the enzyme. Our observations suggest that the phosphorylation level of R9C PLN should be lower compared to WT PLN under physiological conditions, which is consistent with previous measurements of their phosphorylation levels in cells made by western blot (Ha et al., 2011; Schmitt et al., 2003; Kim et al., 2015). Next we performed ADP-Glo assays with the other DCM-associated peptide variants, as well as PLN A11E, as substrates at a given concentration near the KM value of WT PLN. Among all mutants tested, R9H has the mildest effect, while ΔR14 shows the largest decrease of PKAc catalytic efficiency (Figure 3D). The enzyme activities of PKAc for different substrates show a roughly similar pattern with their binding affinities determined by our biophysical assays (Figure 3B, D), highlighting the importance of the binding affinity of PLN to PKA in DCM disease models.
 
-## Comparison of PKAc–PLN structure with a previously reported crystallographic model
+**Table 2.**
+ Enzyme kinetic parameters for PKAc-catalyzed phosphorylation of different phospholamban (PLN) substrates measured by ADP-Glo assay.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT PLN</th>
+      <th>PLN R9C</th>
+      <th>pThr17 PLN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vmax (μM/min)</td>
+      <td>4.1 ± 0.23</td>
+      <td>4.5 ± 0.33</td>
+      <td>3.6 ± 0.46</td>
+    </tr>
+    <tr>
+      <td>KM (μM)</td>
+      <td>85 ± 13</td>
+      <td>173 ± 25</td>
+      <td>223 ± 57</td>
+    </tr>
+    <tr>
+      <td>kcat (s−1)</td>
+      <td>6.9 ± 0.38</td>
+      <td>7.6 ± 0.6</td>
+      <td>6.0 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>kcat/KM (s−1 M−1)</td>
+      <td>8.1 × 104</td>
+      <td>4.4 × 104</td>
+      <td>2.7 × 104</td>
+    </tr>
+  </tbody>
+</table>
+
+### Comparison of PKAc–PLN structure with a previously reported crystallographic model
 
 Surprisingly, we find that our structure exhibits substantial differences compared to the previously published structure of the complex between PKAc and a peptide corresponding to the first 19 amino acids of human PLN complex structure (PDB ID 3O7L) (Figure 4A–C; Masterson et al., 2010). The overall root mean square deviation (RMSD) between 3O7L and our structure of the complex between PKAc and the WT PLN peptide (corresponding to amino acids 8–22 of human PLN) is only ~0.6 Å, but the RMSD between all modeled Cα atoms of the PLN portions is over 4.4 Å (Figure 4—figure supplement 2). Another significant difference is that the ASU of our structure contains only one PKAc bound to one WT PLN peptide (Figure 4A). In contrast, the ASU of 3O7L contains two PKAc molecules and one bound PLN whose NTR shows a substantially different conformation and interacts with both PKAc molecules. The second PKAc (Mol B) from the ASU is in a closed noncatalytic conformation. Nonetheless, PKAc Mol B makes extensive contacts with the PLN ligand, particularly with the side chains of Tyr6, Leu7, Thr8, and Ser10 (Figure 4B). An interface area calculation of 3O7L shows that 29% of the interactions between PLN and PKAc originate from Mol B. In contrast, the interactions of PLN with PKAc in our structure originate mainly from a single PKAc molecule within the same ASU (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig4-v2.jpg)
+
+**Figure 4.:** Crystal structures of the ternary complex of PKAc, PLN, and AMP-PNP from the current study (A) and a previous study (PDB ID 3O7L)58 (B). PLN interacts with a single PKAc in our structure and with two PKAc molecules in 3O7L. The N-terminal region (NTR) of PLN interacts extensively with the second PKAc (Mol B) in 3O7L. (C, D) Superposition of our structure (purple) and 3O7L (green) shows that PLNs adopt different conformation at both ends. The γ-phosphate group in AMP-PNP and Gly-rich Loop is missing from 3O7L. The electrostatic interaction between Arg9 and the helix dipole is indicated. The PKA phosphorylation sites are highlighted in yellow.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Comparison of the electron density maps for AMP-PNP region and PKA Gly-rich loop region from our structure (violet red), 3O7L (blue), and 3O7L re-refined by PDB-REDO (yellow) (https://pdb-redo.eu). The omit maps are displayed at contour level of 2σ, and the mFo-DFc difference maps are displayed at contour levels of 3σ.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Plots showing per residue RMSD for the PKAc (left) and phospholamban (PLN; right) from our structure relative to 3O7L.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75346/elife-75346-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Elution profiles of PKAc (A) or PKAc–phospholamban (PLN) complexes (B–E) filtration chromatography using a Superdex 200 16/600 column (GE Healthcare, USA). The right inset in A is a 15% sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel of purified PKAc. The left inset in A–E shows the plotted standard curve for this column. The molecular weight (MW) estimated from their elution volumes are ~40  kDa, suggesting monomeric forms in solution.
 
 In order to examine the quaternary structure in solution, purified PKAc complexes were subjected to analytical size-exclusion chromatography. PKAc elutes as expected for a monomer with or without PLN peptide in the presence of AMP-PNP (Figure 4—figure supplement 3A–C). The monomeric assembly of PKAc:PLN peptide complexes is unaffected by N-terminal truncation, as peptide ligands corresponding to amino acids 1–19 and 8–19 of human PLN eluted similarly. Likewise, the R9C mutation in the PLN sequence did not change the assembly state of the enzyme:peptide complex (Figure 4—figure supplement 3D, E). Therefore, the interactions that PLN makes with Mol B in the 3O7L structure do not exist in solution but only occur due to the crystal packing. In all other available complex structures of PKAc, there is also only one PKAc molecule bound with one substrate or inhibitor, suggesting the 1:1 ratio should be the common physiological form (Kovalevsky et al., 2012; Bossemeyer et al., 1993; Breitenlechner et al., 2005; Breitenlechner et al., 2004; Lauber et al., 2016; Pflug et al., 2012; Engh et al., 1996; Rouse et al., 2009; Oebbeke et al., 2021).
 
@@ -74,19 +344,19 @@ A further difference lies in the active site. Our model shows clear electron den
 
 The last difference is in the C-terminal region of PLN. One of the DCM mutation sites, Ile18 of PLN, shows extensive interactions with Gln84 and Phe187 of PKAc in our model; in contrast, it is mainly facing solvent in 3O7L (Figure 1C). The results from our functional assays (see above) show that the disease mutation I18T clearly reduces the phosphorylation level of PLN and its binding affinity with PKAc, which agrees with our structural model.
 
-## Structure of PKAc in complex with DCM PLN-mutant A11E
+### Structure of PKAc in complex with DCM PLN-mutant A11E
 
 Residue Ala11 forms hydrophobic interactions with the side chain of Phe129 and the β and γ carbons of Arg133 in our PKAc:WT PLN complex structure; in contrast, the same residue is solvent exposed and is not involved in any interaction with PKAc in 3O7L (Figure 1C). Therefore, to distinguish whether A11E mutation forms contact with PKA or not, we solved the structure of PKAc in complex with the A11E PLN peptide at 2.8 Å resolution (Table 1, Figure 1E). This complex confirms that the mutant PLN can still bind PKAc but with fewer interactions, which explains the decrease in affinity. The mutation flips the side chain of residue 11 and pushes the NTR of PLN away from the large lobe of PKAc (Figure 1E). The Cβ of Glu11 moves 5.9 Å away from PKAc compared to the Cβ of Ala11, but the structures of their catalytic centers, including the catalytic loop, gly-loop, two Mg2+, and AMP-PNP, are similar. Together with the clear functional effect of A11E (Figures 2E, 3B, D), we propose that Ala11 contributes to the binding of PLN to PKAc as seen in our crystal structure of the PKAc:WT PLN complex.
 
-## Phosphorylation at Ser16 and Thr17 reduce the binding of PLN and activity of PKA
+### Phosphorylation at Ser16 and Thr17 reduce the binding of PLN and activity of PKA
 
 Next, we tested whether phosphorylation at Ser16 (PKA site) and Thr17 (CaMKII site) would affect the binding of PLN with PKAc. The Ser16 side chain points directly to the catalytic center of PKAc. Thus, its phosphorylation would cause steric hindrance with Phe187 and charge repulsion with Asp166, Asp184, and also the gamma-phosphate group from ATP (Figure 1C). This is supported by the previous observation that the KD value of a phosphoserine containing peptide product of PKAc is increased by ~170-fold compared to the nonphosphorylated substrate (Granot et al., 1981). As expected, we could not detect any significant binding between PLN pSer16 and PKAc by SPR (Figure 2H). In comparison, the Thr17 side chain interacts with the side chain of Pro202 (Figure 1C), so we predict that its phosphorylation would also reduce the binding to PKAc, but to a lesser extent. Indeed, PKAc shows a 20-fold weaker binding toward the phosphorylated Thr17 peptide substrate, but still detectable by SPR, with a KD ~4 mM (Figure 2I). pSer16 shows a Tm value similar to the negative control (PKAc in the absence of PLN), while pThr17 shows a slightly higher Tm value (Figure 3A, B), which confirms their low affinities for PKAc found by SPR. The relative activity of PKAc on pThr17 is less than 1/3 of WT PLN, which is mostly due to an increased KM value for this substrate. Only a small residual activity was observed for pSer16, probably due to a small percentage of hydrolyzed pSer16 PLN substrate (Figure 3D). The kinetic behaviors of these substrate variants thus reflect their decreased affinities for PKAc.
 
-## Structural dynamics determined by NMR
+### Structural dynamics determined by NMR
 
 To find out how phosphorylation and sequence variations affect the conformation of PLN in the absence of PKA, we solved the structures of peptides corresponding to segments of WT PLN, R9C PLN, pSer16 PLN, and pThr17 PLN by NMR. We analyzed the 20 lowest energy conformations from all four peptide variants. The WT PLN peptide clearly shows a more dynamic conformation whose structures can be classified into five distinct conformations using Chimera Ensemble Cluster (Pettersen et al., 2004; Figure 1—figure supplement 2A). The dynamic nature of WT PLN can be reflected by the relatively high RMSD value calculated by comparing the representative structures from each ensemble (Figure 1—figure supplement 2B). In comparison, the R9C, pSer16, and pThr17 PLN variants show a relatively low RMSD among the 20 lowest energy conformations, indicating that these peptides are all less flexible than WT PLN. The structural differences between the R9C-, pSer16-, pThr17-, and WT-PLN peptides might be related to the local charge changes induced by the mutation or phosphorylation, which further affect the intramolecular electrostatic interactions with positively charged Arg13 and Arg14 (Figure 1—figure supplement 2C). The lower flexibility of R9C PLN and pThr17 PLN might further help to explain their decreased ability to bind PKAc. While none of the conformations of the four peptide variants seem to be significantly preorganized for binding to the PKA active site, we propose that it might take less energy to rearrange/restructure WT PLN to a proper ‘bound conformation’ before it can be phosphorylated by PKA. If so, both indirect (more energetically costly conformational rearrangement of the peptide during enzyme binding) and direct (loss of a stabilizing electrostatic interaction with the enzyme) effects might contribute to the lower binding affinity (higher KD value) and less efficient conversion to product (higher KM value) of R9C PLN.
 
-## General binding determinant in SERCA-regulating peptides
+### General binding determinant in SERCA-regulating peptides
 
 To study whether other SERCA-regulating peptides can also be phosphorylated by PKA, we tested its activity with another recently identified peptide, called ALN, which is ubiquitously expressed in many tissues. 11AIRRAST17 in human PLN aligns with 14RERRGSF20 in mouse ALN (Figure 1—figure supplement 3), and both segments contain the R-R-X-S/T PKA recognition motif. As expected, mouse ALN also acts as a PKA substrate, however, PKAc shows about 5-fold lower binding affinity and 1.5-fold lower activity toward mouse ALN compared to human PLN (Figures 2J and 3D). Our PKAc:PLN complex structures show that Ala11 forms a hydrophobic interaction with PKAc, and the replacement of arginine in mouse ALN at this position would introduce charge repulsion with the double arginine at position 133 and 134 of PKAc (Figure 1C). The substitution of Thr17 by the bulky hydrophobic Phe20 in mouse ALN might further cause a clash and reduce the interaction (Figure 1C). We also used human ALN, which lacks the serine phosphorylation site, as a negative control. As predicted, no binding and phosphorylation activity could be detected (Figures 2K, 3B, D).
 
@@ -114,32 +384,32 @@ ALN is a newly identified SERCA-regulating peptide that is expressed more ubiqui
 
 ## Methods
 
-## Cloning, expression, and purification of protein
+### Cloning, expression, and purification of protein
 
 The gene encoding mouse PKAc (gene accession number BC003238) was cloned into the pET-28a-HMT vector, which contains a hexahistidine tag, an MBP fusion protein and a TEV cleavage site at the N-terminus (Lobo and Van Petegem, 2009). For protein production, the plasmid was introduced into Escherichia coli BL21 (DE3) cells. Cells were grown at 37°C with shaking at 250 rpm in 2YT medium supplemented with 50 μg/ml kanamycin. When the OD600 reached ~0.6, protein production was induced with 0.4 mM isopropyl-β-D thiogalactopyranoside (IPTG) and incubated at 18°C for another 24 hr. The cells were harvested by centrifugation at 8000 × g for 10 min and disrupted via sonication in lysis buffer (10 mM 10 mM N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid [HEPES], pH 7.4, 250 mM KCl, 10 mM 10 mM beta-mercaptoethanol [BME], 25 mg/ml DNase I, 25 mg/ml lysozyme, 1 mM phenylmethanesulfonyl fluoride [PMSF]). The cell debris was removed by centrifugation at 40,000 × g for 30 min. The soluble fraction was filtered through a 0.22 μm filter and loaded onto a 5 ml His Trap HP column (GE Healthcare) pre-equilibrated with buffer A (10 mM HEPES, pH 7.4, 250 mM KCl, 10 mM BME). The column was eluted using a linear gradient of 20–250 mM imidazole in buffer A. The eluted PKAc was cleaved with recombinant TEV protease at 4°C overnight, followed by purification using an amylose resin column (New England Biolabs) to remove the His-MBP-tag. The samples were loaded to an amylose column pre-equilibrated with buffer A, and eluted with the same buffer plus 10 mM maltose. The flow-through from the amylose column was loaded onto another HisTrap HP column (GE Healthcare) to further remove the fusion tag. PKAc was further purified using a SP Sepharose high-performance column (GE Healthcare) with a linear gradient from 20 to 500 mM KCl in elution buffer (10 mM Tris, pH 6.8, 10 mM BME). Finally, the PKAc was concentrated using Amicon concentrators (10 K MWCO from Millipore) and run over a Superdex 200 16/600 gel filtration column (GE Healthcare) in buffer A. The protein purity was examined by sodium dodecyl sulfate–polyacrylamide gel electrophoresis with a 15% (wt/vol) acrylamide gel (Figure 4—figure supplement 3). The protein sample was concentrated to 10 mg/ml and exchanged to a buffer containing 10 mM HEPES, pH 7.4, 50 mM KCl, 10 mM BME for storage at −80°C.
 
-## Crystallization, data collection, and structure determination
+### Crystallization, data collection, and structure determination
 
 Peptide synthesis of WT and mutant PLN8-22 was performed by Genscript Biotech Corporation. The purities of the peptides were >98% as assessed by analytical high-performance liquid chromatography and their molecular masses were verified by ESI-MS. The PKAc:AMP-PNP:PLN8-22:Mg2+ complex was formed by combining a 1:10:10:10 molar ratio mixture of PKAc (6.5 mg/ml), AMP-PNP, PLN8-22, and MgCl2 in 10 mM HEPES (pH 7.4), 150 mM KCl, and 10 mM BME at room temperature for 5 min.
 
 Initial crystallization screening was performed by the sitting-drop vapor-diffusion method using commercial crystal sparse matrix screen kits from Hampton Research and Molecular Dimensions. The crystal setting was carried out in 96-well format using a 1:1 ratio with an automated liquid handling robotic system (Gryphon, Art Robbins). After obtaining the initial hits, optimization of crystallization conditions was carried out using hanging-drop vapor diffusion in a 24-well format. The best crystallization condition for the complex with WT PLN contains 0.1 M BIS-TRIS, pH 6.5, and 25% [wt/vol] PEG 3350; the best condition for the complex with R9C PLN contains 0.1 M HEPES, pH 7.5, 0.2 M MgCl2, and 25% PEG 3350; the best condition for the complex with A11E contains 0.1 M HEPES, pH 7.5, 0.2 M NaCl, and 25% PEG 3350. Crystals were mounted in Cryo-loops (Hampton Research) and flash-cooled in liquid nitrogen with a reservoir solution containing 25% glycerol as cryoprotectant. Diffraction data were collected on BL17U1 at Shanghai Synchrotron Radiation Facility (SSRF) to resolutions of 2.4 Å (PLNWT), 3.2 Å (PLNR9C), and 2.8 Å (PLNA11E), respectively. The dataset was indexed, integrated, and scaled using the HKL3000 suite (Minor et al., 2006). Molecular replacement was performed using the crystal structure of PKAc complexed with a 20-amino acid substrate analog inhibitor as a search model (PDB ID 2CPK) by PHENIX (Adams et al., 2010). After running Phaser-MR, we replaced the model sequence with the object sequences. The structure was further manually built into the modified experimental electron density using Coot (Emsley and Cowtan, 2004) and refined in PHENIX57 in iterative cycles. The data collection and final refinement statistics are shown in Table 1. All structure figures were generated using UCSF Chimera (Pettersen et al., 2004).
 
-## Determination of the oligomeric states of PKAc–PLN complexes
+### Determination of the oligomeric states of PKAc–PLN complexes
 
 The oligomeric states of PKAc–PLN complexes were determined by gel-filtration chromatography. 0.1 mM PKAc protein was preincubated with 5 mM WT or mutant PLN peptides for 1 hr at 4°C before loaded on a Superdex 200 16/600 gel-filtration column (GE Healthcare) in buffer A. The column was calibrated using the gel filtration calibration kit (Sigma-Aldrich). Blue dextran (MR = 2000 kDa) was used to determine V0. Thyroglobulin (MR = 669 kDa), apoferritin (MR = 443 kDa), β-amylase (MR = 200 kDa), alcohol dehydrogenase (MR = 150 kDa), albumin (MR = 66 kDa), and carbonic anhydrase (MR = 29 kDa) were used as protein standards. The predicted molecular weights of PKAc–PLN complexes were predicted using the plotted standard curve. Although the peptide concentrations in the samples were >sixfold higher than the KD value, which would probably make all peptides bound to PKA during the loading step, it is still possible that the peptide dissociates from PKA during the size exclusion run.
 
-## Fluorescence-based thermal shift assays
+### Fluorescence-based thermal shift assays
 
 The protein melting curves were measured using a fluorescence-based thermal shift assay (Nettleship, 2008). The Sypro orange dye (2×), PKAc (0.2 mg/ml), AMP-PNP (500 μM), and a PLN peptide variant (1 mM) were mixed in eight strip tubes (Axygen). The tubes were then transferred to a centrifuge and rotated to remove any bubbles and homogenize the system. The tubes were then placed into a Quant Studio 6 Flex real-time PCR machine (Life). The temperature was increased from 10 to 95°C with a ramping rate of 0.033°C/s. All measurements were performed in triplicate. The melting temperatures were obtained by taking the midpoint of each transition.
 
-## ADP-Glo kinase assay
+### ADP-Glo kinase assay
 
 The kinase activity of PKAc was measured using the ADP-Glo kinase kit (V9101; Promega) according to the manufacturer’s instructions. Phosphorylation of PLN peptides were performed at 30°C for 30 min in 50 μl kinase buffer (10 mM HEPES, pH 7.4, 150 mM KCl, 20 mM MgCl2, 2 mM DTT) supplemented with 200 μM ATP, 10 nM PKAc, and 90 μM peptide substrates. 25 μl samples were removed and terminated by adding 25 μl ADP-Glo reagent followed by incubation at room temperature for 40 min. Kinase detection reagent was prepared by combining kinase detection buffer with kinase detection substrate based on the manufacturer’s instructions. 50 μl kinase detection reagent was added and incubated at room temperature for 40 min to convert ADP to ATP. The luminescence signal was read by a Tecan Infinite M200 Pro plate reader. All measurements were performed in triplicate.
 
-## SPR analysis
+### SPR analysis
 
 SPR experiments were carried out to characterize the interaction between PKAc and substrate peptides using a Biacore T200 instrument (GE Healthcare). PKAc was immobilized via standard N-hydroxysuccinimide (NHS)/1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC) amine coupling on a CM5 (carboxyl methyl dextran) sensor chip (GE Healthcare). Before covalent immobilization of PKAc, the sensor surface was activated by a mixed solution of 0.4 M EDC and 0.1 M NHS (1:1) for 7 min at a flow rate of 10 μl/min. The purified PKAc protein was diluted to 35 µg/ml in 200 µl of immobilization buffer (10 mM sodium acetate, pH 5.5) and immobilized on the sensor chip to a level of 7000 response units (RU). Interactions between PKAc and substrate peptides were monitored by injecting various concentrations of peptides (twofold serial dilutions starting from 1 or 2 mM) in the running buffer containing 10 mM HEPES, pH 7.4, 150 mM KCl, 20 mM MgCl2, 1 mM AMP-PNP, and 0.005% (vol/vol) Surfactant P20 at a flow rate of 30 μl/min for 120 s. Dissociation was performed by running the buffer without peptides at the rate of 30 μl/min for 120 s. The RU was obtained by subtracting a control for unspecific binding (the signal from a blank flow cell without PKAc subunit).
 
-## NMR
+### NMR
 
 The PLN peptides were dissolved in 10% or 100% D2O. ROESY and TOCSY spectra were recorded at 298 K using an 850 MHz Bruker Avance NMR spectrometer equipped with a 5 mm cryogenic probe. NMR spectra were processed using NMRPipe (Delaglio et al., 1995) and analyzed using NMRFAM-Sparky (Lee et al., 2015). Distance constraints obtained from the assigned NOEs were divided into three classes based on the intensities of NOE crosspeaks: (1) strong: 1.8 Å < d < 2.8 Å; (2) medium: 1.8 Å < d < 3.4 Å; and (3) weak: 1.8 Å < d < 5.5 Å. The solution structure was calculated with cyana 2.1 (Güntert et al., 1997). Twenty conformers from a total of 100 calculated ensembles with the lowest energy were selected for analysis.

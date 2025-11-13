@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Phylogenetic relationships among extinct hominoids (apes and humans) are controversial due to pervasive homoplasy and the incompleteness of the fossil record. The bony labyrinth might contribute to this debate, as it displays strong phylogenetic signal among other mammals. However, the potential of the vestibular apparatus for phylogenetic reconstruction among fossil apes remains understudied. Here we test and quantify the phylogenetic signal embedded in the vestibular morphology of extant anthropoids (monkeys, apes and humans) and two extinct apes ( Oreopithecus and Australopithecus ) as captured by a deformation-based 3D geometric morphometric analysis. We also reconstruct the ancestral morphology of various hominoid clades based on phylogenetically-informed maximum likelihood methods. Besides revealing strong phylogenetic signal in the vestibule and enabling the proposal of potential synapomorphies for various hominoid clades, our results confirm the relevance of vestibular morphology for addressing the controversial phylogenetic relationships of fossil apes.
+Phylogenetic relationships among extinct hominoids (apes and humans) are controversial due to pervasive homoplasy and the incompleteness of the fossil record. The bony labyrinth might contribute to this debate, as it displays strong phylogenetic signal among other mammals. However, the potential of the vestibular apparatus for phylogenetic reconstruction among fossil apes remains understudied. Here we test and quantify the phylogenetic signal embedded in the vestibular morphology of extant anthropoids (monkeys, apes and humans) and two extinct apes (Oreopithecus and Australopithecus) as captured by a deformation-based 3D geometric morphometric analysis. We also reconstruct the ancestral morphology of various hominoid clades based on phylogenetically-informed maximum likelihood methods. Besides revealing strong phylogenetic signal in the vestibule and enabling the proposal of potential synapomorphies for various hominoid clades, our results confirm the relevance of vestibular morphology for addressing the controversial phylogenetic relationships of fossil apes.
 
 ## Introduction
 
@@ -46,13 +46,67 @@ Determining if and to what extent inner ear anatomy reflects phylogeny among ext
 
 ## Results
 
-## Semicircular canal shape variation among anthropoids
+### Semicircular canal shape variation among anthropoids
 
 In spite of a similar spatial configuration of the three SCs, their trajectory, stoutness and relative proportions are quite variable among anthropoids (Figure 1). A bgPCA performed among major anthropoid groups (platyrrhines, cercopithecoids, hylobatids, and hominids) enables their accurate distinction (Figure 2, Figure 2—figure supplement 1a, Figure 2—source data 1), as shown by classification results (more than 95% individuals correctly classified after cross-validation; Table 1). In particular, bgPC1 discriminates hylobatids from hominids and all the remaining taxa (Figure 2, Figure 2—figure supplement 1c). A landmark-based analysis applied to the same sample yields very similar results except for hylobatids, due to the reasons explained in the next section. Shape variation in the analyzed sample accounts for a strong phylogenetic signal (Kmult = 1.248, p<0.001), and this also holds for the first three bgPCs separately (see below).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig1-v1.jpg)
 
 **Figure 1.:** (a) Homo sapiens (EMBR 121); (b) Pan paniscus (MCZ 38019); (c) Pan troglodytes (AMNH.M 51204); (d) Gorilla gorilla (AMNH.M 167338); (e) Pongo pygmaeus (IPS 10647); (f) Hylobates lar (MCZ 41424); (g) Hoolock hoolock (AMNH.M 83425); (h) Symphalangus syndactylus (AMNH.M 106583); (i) Ateles geoffroyi (MCZ 29628); (j) Theropithecus gelada (AMNH.M 60568); (k) Erythrocebus patas (MCZ 47017); (l) Trachypithecus cristatus (MCZ 35597); (m) Piliocolobus badius (MCZ 24793); (n) Oreopithecus bambolii (BAC 208); (o) Australopithecus sp. (StW 573); (p) Australopithecus sp. (StW 578). Scale bars equal 5 mm.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig2-v1.jpg)
+
+**Figure 2.:** (a) bgPC2 vs. bgPC1. (b) bgPC3 vs. bgPC1. Variance explained by each bgPC is included within parentheses. Color code: dark green, platyrrhines; orange, hominids; red, hylobatids; brown, papionins; green, cercopithecins; blue, colobines. Colored stars correspond to: green, Oreopithecus; black, Australopithecus sp. (StW 573); red Australopithecus sp. (StW 578). Lateral (top/left), superior (middle), and posterior (bottom/right) views of deformation maximum (red) and minimum (blue) conformations for each bgPC are shown along each axis. Hominids are distinguished from hylobatids and cercopithecoids along bgPC1 (positive vs. mostly negative values, respectively), which is mainly driven by the volumetric proportions of the SCs and by their size relative to that of the vestibular recesses. bgPC2, driven by the size of the anterior and posterior SCs relative to the lateral one, distinguishes platyrrhines (more negative values) from catarrhines. Hylobatids (on positive values) differ from all other anthropoids along bgPC3 due to the reduced and posteriorly tilted posterior SC, as well as by the relative orientation among the canals. Oreopithecus does not match the variability of extant anthropoids as its morphology shows a mosaic of primitive and derived features. The two Australopithecus specimens match instead the range of extant hominids, with StW 573 being most similar to Pan, while StW 578 to Homo.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) bgPC1; (b) bgPC2; (c) bgPC3. Colored stars correspond to: green, Oreopithecus; black, Australopithecus sp. (StW 573); red Australopithecus sp. (StW 578).
+
+**Table 1.**
+ Percentage of correctly classified individuals with cross-validation according to the groups (hominids, hylobatids, cercopithecoids, platyrrhines) used in the between-group principal components analysis based on group-centroid distances.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cercopithecoidea</th>
+      <th>Hominidae</th>
+      <th>Hylobatidae</th>
+      <th>Platyrrhini</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cercopithecoidea</td>
+      <td>96.3%</td>
+      <td>3.8%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>3.3%</td>
+      <td>96.7%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>5.9%</td>
+      <td>0.0%</td>
+      <td>94.1%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Platyrrhini</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>100.0%</td>
+    </tr>
+  </tbody>
+</table>
 
 When analyzed individually, we recover a similarly strong phylogenetic signal (λ = 1 and K = 1.15; Table 2) for bgPC1 (68.8% of total variance). bgPC1 captures differences in thickness and cross-section of the SCs, and is also driven by the development of the macular organs relative to the canals. Great apes fall on positive values (Figure 2, Figure 2—figure supplement 1a) due to their stout and flattened SCs combined with an extensive vertical compression of the anterior canal, a more anterosuperior insertion of the lateral canal into the vestibule, and a greater volume of the vestibular recesses relative to the canals (Figures 3a–e, 4a–e and 5a–e). Hylobatids, as well as colobine and papionin cercopithecoids, showing slender and elongated canals but maintaining well developed ampullae, largely overlap on negative values, while cercopithecins and platyrrhines display intermediate values due to their slightly inflated SCs (Figures 2, 3f–h, 4f–h and 5f–h). bgPC2 (19.6% of total variance) also bears strong phylogenetic signal (λ = 0.91; K = 1.51; Table 2), with variance accumulating among rather than within clades (as indicated by K > 1). This axis separates platyrrhines—especially Ateles (Figure 1i)—from other anthropoids due to the more reduced lateral canal in the former, which is inversely proportional to anterior canal development and vertical elongation (Figure 2a). In contrast, Gorilla (Figures 1a, 3a, 4a and 5a) occupies the opposite end of the distribution due to its large lateral canal and reduced anterior one, the latter being also vertically compressed, whereas the remaining hominoids show intermediate values along bgPC2. bgPC3 (11.6% of variance), which is driven by both trajectory and relative size of the SCs (Figure 2b), still displays a strong and significant phylogenetic signal (λ = 1 and K = 1.16; Table 2). Hylobatids (Figures 1f–h, 3f–h, 4f–h and 5f–h) display the highest scores for bgPC3, as a result of the right to acute angle formed by the apex of the common crus (CC), the latter being also shorter, a more anterosuperiorly projecting and long anterior canal, an obtuse angle between the planes identified by the anterior and lateral canals, and a more developed lateral canal relative to the posterior one, which is also posteriorly oriented. Most of the taxa fall within moderate positive and moderate negative values, with some cercopithecoids (Cercopithecus, Macaca, Papio and Nasalis, among others) and Cebus occupying the negative end of the distribution. African apes, cercopithecines, and Nasalis occupy an intermediate position, being characterized by a well-developed and anteriorly inclined posterior canal, an obtuse to right angle of the CC apex, and an obtuse angle between the vertical canals, combined with a larger lateral canal. Orangutans fall on moderately positive values and are distinguished from other great apes and humans by an anterosuperiorly projecting anterior canal (less than in hylobatids).
 
@@ -68,6 +122,47 @@ When analyzed individually, we recover a similarly strong phylogenetic signal (�
 
 **Figure 5.:** Cumulative displacement variations are rendered by pseudocolor scale ranging from dark blue (<5.1 µm) to dark red (0.42 mm). Black arrows correspond to the vectors identifying the direction and amount of displacement. (a) Homo sapiens (EMBR 121); (b) Pan paniscus (MCZ 38019); (c) Pan troglodytes (AMNH.M 51204); (d) Gorilla gorilla (AMNH.M 167338); (e) Pongo pygmaeus (IPS10647); (f) Hoolock hoolock (AMNH.M 83425); (g) Symphalangus syndactylus (AMNH.M 106583); (h) Hylobates lar (MCZ 41424). Scale bars equal 5 mm. Homo (a), together with Gorilla (d), displays a markedly posterolaterally protruding posterior canal. The two species of Pan (b, c) can be distinguished from one another for the orientation of the anterior canal (more medially inclined in P. troglodytes, (c). Hylobatids (f–h) display a small posterior canal relative to the size of the anterior and lateral ones.
 
+**Table 2.**
+ Phylogenetic signal results for a between-group principal components analysis (bgPCA) applied to vestibular shape deformation fields in the analyzed sample of extant anthropoids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>bgPC1</th>
+      <th>bgPC2</th>
+      <th>bgPC3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variance</td>
+      <td>68.79%</td>
+      <td>19.60%</td>
+      <td>11.61%</td>
+    </tr>
+    <tr>
+      <td>Eigenvalue</td>
+      <td>0.821</td>
+      <td>0.234</td>
+      <td>0.138</td>
+    </tr>
+    <tr>
+      <td>Pagel’s λ</td>
+      <td>1.000 (p&lt;0.001)</td>
+      <td>0.921 (p&lt;0.001)</td>
+      <td>1.000 (p&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td>Blomberg’s K</td>
+      <td>1.152 (p&lt;0.001)</td>
+      <td>1.514 (p&lt;0.001)</td>
+      <td>1.163 (p&lt;0.001)</td>
+    </tr>
+  </tbody>
+</table>
+
 When fossil specimens are plotted a posteriori onto the tangent space identified by extant taxa, Oreopithecus (BAC 208; Figures 1n and 6a) falls on moderately positive scores for bgPC1 (where the distributions of hominids, cercopithecins, and platyrrhines overlap), while the two Australopithecus individuals (StW 573 and StW 578; Figures 1o,p and 6b–c) fall within the range of living great apes and humans (Figure 2, Figure 2—figure supplement 1a). This is due to the volumetric proportions of their SCs and the possession of voluminous vestibular recesses (although the latter character is less pronounced in Oreopithecus). In BAC 208, SC volume is greater on the lateral canal, while the two Australopithecus specimens possess stouter vertical canals. When the relative size of the SCs is taken into account, StW 573 shows more evenly developed canals than StW 578 and BAC 208, which both display a smaller lateral canal. Their position along the bgPC2 axis reflects these differences, with StW 573 falling on positive scores (close to the mean value for hominids and cercopithecoids; Figure 2a, Figure 2—figure supplement 1b) and the other two specimens occupying moderately negative values (within the range of extant catarrhines and approaching that of platyrrhines; Figure 2a, Figure 2—figure supplement 1b). This is caused by the comparatively smaller lateral canal and by the large vertical canal in StW 578 and in BAC 208. Due to the acute angles between the planes identified by the anterior and lateral canals and that between the planes of the posterior and anterior canals, Oreopithecus falls at the negative end of the extant anthropoid distribution for the bgPC3 (Figure 2b, Figure 2—figure supplement 1c). On the other hand, the two Australopithecus specimens occupy more intermediate values because of the possession of a right angle between the planes of the aforementioned canals.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig6-v1.jpg)
@@ -76,15 +171,541 @@ When fossil specimens are plotted a posteriori onto the tangent space identified
 
 When the bgPCs are considered at the same time (Figure 2), the australopith specimens fall well within the great ape and human range. This is further supported by their posterior probabilities of group membership based on the proximity of fossil specimen scores to groups centroids, with StW 573 and 578 being classified as hominids with p=0.678 and p=0.190, respectively (Table 3). StW 573 falls close to Pan and Homo, whereas StW 578 occupies an intermediate position between humans and orangutans due to its stouter volumetric proportions. When the posterior probabilities are computed using the centroids of the hominoid genera, StW 573 is classified as Pan as first option (p=0.368) and as Homo as second (p=0.264), while StW 578 is more clearly classified as Homo with p=0.727 (Table 4). These results suggest that both australopith specimens show vestibular similarities with extant humans, but that StW 573 display a more plesiomorphic (chimpanzee-like) morphology. In turn, Oreopithecus shows a mosaic of vestibular features (Pan-like volumetric proportions, small lateral canal, and acute angles between the anterior and both the posterior and the lateral canals) that does not match the condition of any extant taxon (Figure 2). The posterior probabilities indicate closest similarities with cercopithecoids, followed by hominids and platyrrhines, although in all instances it falls outside the variability of the extant members of these groups (p<0.05; Table 3). When comparisons are restricted to hominoid genera, Oreopithecus appears more similar to humans than to any ape genus, but again with a posterior probability that indicates significant differences with all of them (p<0.05; Table 4).
 
+**Table 3.**
+ Posterior probabilities of group membership based on the bgPC scores for fossil specimens in the analysis based on the anthropoid sample.Note that these are probability estimates of having a particular score given membership in a particular group, not the likelihood of group membership in each of a priori defined groups given a particular score. Highest probability for each specimen in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cercopithecoidea</th>
+      <th>Hominidae</th>
+      <th>Hylobatidae</th>
+      <th>Platyrrhini</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAC 208 (Oreopithecus)</td>
+      <td>p=0.046</td>
+      <td>p=0.013</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.012</td>
+    </tr>
+    <tr>
+      <td>StW 573 (Australopithecus)</td>
+      <td>p=0.005</td>
+      <td>p=0.678</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>StW 578 (Australopithecus)</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.190</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Posterior probabilities of group membership based on the bgPC scores for fossil specimens in the analysis restricted to hominoid genera.Note that these are probability estimates of having a particular score given membership in a particular group, not the likelihood of group membership in each of a priori defined groups given a particular score. The highest probability for each specimen in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hoolock</th>
+      <th>Hylobates</th>
+      <th>Symphalangus</th>
+      <th>Pongo</th>
+      <th>Gorilla</th>
+      <th>Pan</th>
+      <th>Homo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAC 208 (Oreopithecus)</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.002</td>
+      <td>p=0.026</td>
+    </tr>
+    <tr>
+      <td>StW 573 (Australopithecus)</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.019</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.368</td>
+      <td>p=0.264</td>
+    </tr>
+    <tr>
+      <td>StW 578 (Australopithecus)</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>p=0.062</td>
+      <td>p=0.077</td>
+      <td>p=0.030</td>
+      <td>p=0.727</td>
+    </tr>
+  </tbody>
+</table>
+
 The multivariate regression between shape (deformation fields) and size (log-transformed volume of the vestibule) shows a significant correlation (i.e., allometry) at p<0.001, but nevertheless explains only a limited portion of the variance (R2 = 0.192). Bivariate regressions of the bgPCs against log-transformed cube root of vestibular volume reveal a significant correlation only for bgPC1 (R2 = 0.635, p<0.001, Table 2). A visual inspection of the scatter of points (Figure 7a) suggests that allometry for bgPC1 is more marked in hominids. This is confirmed when separate regressions are performed for hominids (R2 = 0.480, p<0.001) and the rest of the sample (R2 = 0.058, p<0.01), with the former displaying also a higher slope (Table 5). When phylogeny is considered by means of PGLS regression (Table 5), the correlation for the whole sample is still significant but explains much less variance (R2 = 0.261, p<0.01), becoming non-significant for hominids and the rest of the sample separately. bgPC3 shows a low yet significant correlation with volume for non-hominids, which becomes non-significant after PGLS correction (Table 5). Both Australopithecus and Oreopithecus overlap with the hominid scatter of points, with the two australopith specimens falling above the hominid regression line, whereas BAC 208 falls slightly below (although well above that of non-hominid anthropoids).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig7-v1.jpg)
 
-**Figure 7.:** a) vestibular shape (as represented by bgPC1) and log-transformed cube root of vestibular volume (ln Vol), and (b) semicircular canal log-transformed cube root of volume (ln VolSC) vs.log-transformed length (ln L).Lines represent OLS best-fit lines for the whole anthropoid sample (black), hominids (red), and other anthropoid taxa (blue). Note that there is a significant correlation between bgPC1 (which captures differences in SC thickness and macular organ size) and vestibular volume, more marked in hominids than in the rest of the sample (see Table 3 for further details). Note as well that hominids and other anthropoids show a similar negatively allometric relationship between the cube root of volume and length of the SCs, but with a marked allometric grade shift—such hominids possess stouter canals than other anthropoid taxa at comparable lengths once size-scaling effects have been taken into account (see Table 3 for further details). Both australopiths fall above the regression line for hominids, while Oreopithecus is slightly below, yet well above the regression line for non-hominid taxa. Color code as in Figure 2.Figure 7—source data 1.Table provided as a separate Excel file.
+**Figure 7.:** Lines represent OLS best-fit lines for the whole anthropoid sample (black), hominids (red), and other anthropoid taxa (blue). Note that there is a significant correlation between bgPC1 (which captures differences in SC thickness and macular organ size) and vestibular volume, more marked in hominids than in the rest of the sample (see Table 3 for further details). Note as well that hominids and other anthropoids show a similar negatively allometric relationship between the cube root of volume and length of the SCs, but with a marked allometric grade shift—such hominids possess stouter canals than other anthropoid taxa at comparable lengths once size-scaling effects have been taken into account (see Table 3 for further details). Both australopiths fall above the regression line for hominids, while Oreopithecus is slightly below, yet well above the regression line for non-hominid taxa. Color code as in Figure 2.
+
+**Table 5.**
+ Bivariate regressions of vestibular shape vs. volume and of semicular canal volume vs. length.Both ordinary least-square linear regressions (OLS) and phylogenetic generalized least-square regressions (PGLS) are provided for the whole anthropoid sample, as well as hominids and non-hominids separately. Vestibular shape is represented by the first three principal components (bgPC), while vestibular volume (Vol) is represented by its log-transformed cube root. Semicular canal volume (VolSC) and length (L) are represented by the log-transformed cube root and the log-transformed length, respectively, of the three semicircular canals together. For each regression, the coefficient of determination (R2), the significance of the slope (p), and the slope and intercept values with their corresponding standard error (SE) and 95% confidence intervals (CI) are included. Regressions bolded when significant at p<0.05. For bgPCs vs. VOL regressions, a significant correlation denotes allometry, while for VOLSC vs. L regressions there is allometry when the correlation is significant and the 95% CI for the slope excludes unity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>R2</th>
+      <th>p</th>
+      <th>slope</th>
+      <th>SE</th>
+      <th colspan="2">95% CI</th>
+      <th>intercept</th>
+      <th>SE</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+    <tr>
+      <th>OLS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2"></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anthropoids (n = 142)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.635</td>
+      <td>&lt;0.001</td>
+      <td>5.257</td>
+      <td>0.335</td>
+      <td>4.600</td>
+      <td>5.914</td>
+      <td>−6.191</td>
+      <td>0.399</td>
+      <td>−6.973</td>
+      <td>−5.409</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.008</td>
+      <td>0.146</td>
+      <td>0.453</td>
+      <td>0.309</td>
+      <td>−0.154</td>
+      <td>1.060</td>
+      <td>−0.533</td>
+      <td>0.368</td>
+      <td>−1.254</td>
+      <td>0.188</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.000</td>
+      <td>0.385</td>
+      <td>0.192</td>
+      <td>0.220</td>
+      <td>−0.239</td>
+      <td>0.622</td>
+      <td>−0.226</td>
+      <td>0.261</td>
+      <td>−0.738</td>
+      <td>0.287</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.288</td>
+      <td>&lt;0.001</td>
+      <td>0.897</td>
+      <td>0.118</td>
+      <td>0.666</td>
+      <td>1.128</td>
+      <td>−2.328</td>
+      <td>0.429</td>
+      <td>−3.169</td>
+      <td>−1.487</td>
+    </tr>
+    <tr>
+      <td>Hominids (n = 30)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.480</td>
+      <td>&lt;0.001</td>
+      <td>6.496</td>
+      <td>1.233</td>
+      <td>4.079</td>
+      <td>8.913</td>
+      <td>−7.781</td>
+      <td>1.797</td>
+      <td>−11.303</td>
+      <td>−4.259</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.026</td>
+      <td>0.195</td>
+      <td>−1.400</td>
+      <td>1.054</td>
+      <td>−3.466</td>
+      <td>0.666</td>
+      <td>2.307</td>
+      <td>1.538</td>
+      <td>−0.708</td>
+      <td>5.322</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.039</td>
+      <td>0.153</td>
+      <td>−0.720</td>
+      <td>0.490</td>
+      <td>−1.681</td>
+      <td>0.240</td>
+      <td>1.036</td>
+      <td>0.714</td>
+      <td>−0.365</td>
+      <td>2.436</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.251</td>
+      <td>0.003</td>
+      <td>0.621</td>
+      <td>0.190</td>
+      <td>0.249</td>
+      <td>0.992</td>
+      <td>−1.084</td>
+      <td>0.705</td>
+      <td>−2.465</td>
+      <td>0.297</td>
+    </tr>
+    <tr>
+      <td>Non-hominids (n = 112)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.058</td>
+      <td>0.006</td>
+      <td>1.990</td>
+      <td>0.709</td>
+      <td>0.601</td>
+      <td>3.380</td>
+      <td>−2.645</td>
+      <td>0.785</td>
+      <td>−4.183</td>
+      <td>−1.108</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.010</td>
+      <td>0.152</td>
+      <td>−1.027</td>
+      <td>0.712</td>
+      <td>−2.422</td>
+      <td>0.368</td>
+      <td>1.061</td>
+      <td>0.788</td>
+      <td>−0.482</td>
+      <td>2.605</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.046</td>
+      <td>0.013</td>
+      <td>1.332</td>
+      <td>0.529</td>
+      <td>0.295</td>
+      <td>2.368</td>
+      <td>−1.466</td>
+      <td>0.585</td>
+      <td>−2.613</td>
+      <td>−0.319</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.219</td>
+      <td>&lt;0.001</td>
+      <td>0.454</td>
+      <td>0.080</td>
+      <td>0.297</td>
+      <td>0.611</td>
+      <td>−0.783</td>
+      <td>0.291</td>
+      <td>−1.352</td>
+      <td>−0.213</td>
+    </tr>
+    <tr>
+      <td>PGLS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anthropoids (n = 27)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.261</td>
+      <td>0.004</td>
+      <td>3.401</td>
+      <td>1.065</td>
+      <td>1.314</td>
+      <td>5.488</td>
+      <td>−3.719</td>
+      <td>1.376</td>
+      <td>−6.416</td>
+      <td>−1.022</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.003</td>
+      <td>0.416</td>
+      <td>0.625</td>
+      <td>0.756</td>
+      <td>−0.858</td>
+      <td>2.107</td>
+      <td>−1.27</td>
+      <td>0.962</td>
+      <td>−3.155</td>
+      <td>0.615</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.063</td>
+      <td>0.111</td>
+      <td>−0.727</td>
+      <td>0.440</td>
+      <td>−1.589</td>
+      <td>0.135</td>
+      <td>0.879</td>
+      <td>0.570</td>
+      <td>−0.238</td>
+      <td>1.996</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.437</td>
+      <td>&lt;0.001</td>
+      <td>0.502</td>
+      <td>0.109</td>
+      <td>0.288</td>
+      <td>0.716</td>
+      <td>3.144</td>
+      <td>0.124</td>
+      <td>2.901</td>
+      <td>3.388</td>
+    </tr>
+    <tr>
+      <td>Hominids (n = 5)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.221</td>
+      <td>0.240</td>
+      <td>4.440</td>
+      <td>3.042</td>
+      <td>−1.521</td>
+      <td>10.402</td>
+      <td>−4.627</td>
+      <td>4.499</td>
+      <td>−13.445</td>
+      <td>4.192</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.036</td>
+      <td>0.760</td>
+      <td>−1.144</td>
+      <td>3.421</td>
+      <td>−7.850</td>
+      <td>5.561</td>
+      <td>1.892</td>
+      <td>4.990</td>
+      <td>−7.888</td>
+      <td>11.672</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.062</td>
+      <td>0.687</td>
+      <td>−0.392</td>
+      <td>0.883</td>
+      <td>−2.122</td>
+      <td>1.338</td>
+      <td>0.596</td>
+      <td>1.309</td>
+      <td>−1.970</td>
+      <td>3.162</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.553</td>
+      <td>0.093</td>
+      <td>0.631</td>
+      <td>0.259</td>
+      <td>0.124</td>
+      <td>1.138</td>
+      <td>2.920</td>
+      <td>0.327</td>
+      <td>2.279</td>
+      <td>3.561</td>
+    </tr>
+    <tr>
+      <td>Non-hominids (n = 22)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bgPC1 vs. ln Vol</td>
+      <td>0.008</td>
+      <td>0.294</td>
+      <td>1.376</td>
+      <td>1.276</td>
+      <td>−1.125</td>
+      <td>3.877</td>
+      <td>−1.674</td>
+      <td>1.512</td>
+      <td>−4.639</td>
+      <td>1.290</td>
+    </tr>
+    <tr>
+      <td>bgPC2 vs. ln Vol</td>
+      <td>0.030</td>
+      <td>0.445</td>
+      <td>0.763</td>
+      <td>0.978</td>
+      <td>−1.154</td>
+      <td>2.679</td>
+      <td>−1.444</td>
+      <td>1.152</td>
+      <td>−3.701</td>
+      <td>0.814</td>
+    </tr>
+    <tr>
+      <td>bgPC3 vs. ln Vol</td>
+      <td>0.020</td>
+      <td>0.500</td>
+      <td>−0.419</td>
+      <td>0.610</td>
+      <td>−1.616</td>
+      <td>0.777</td>
+      <td>0.577</td>
+      <td>0.730</td>
+      <td>−0.854</td>
+      <td>2.008</td>
+    </tr>
+    <tr>
+      <td>ln VolSC vs. ln L</td>
+      <td>0.504</td>
+      <td>&lt;0.001</td>
+      <td>0.634</td>
+      <td>0.134</td>
+      <td>0.371</td>
+      <td>0.896</td>
+      <td>3.052</td>
+      <td>0.137</td>
+      <td>2.784</td>
+      <td>3.320</td>
+    </tr>
+  </tbody>
+</table>
 
 The bivariate regression between the log-transformed cube root of the SC volume and SC length shows in all instances a significant correlation that nevertheless only explains a limited (ca. 20–30%) amount of variance (Table 5, Figure 7b). Isometry cannot be rejected for anthropoids as a whole, but a negatively allometric relationship emerges (revealing that length increases faster than volume) when hominids and other taxa are analyzed separately (Table 5). The latter is confirmed by PGLS regressions for the whole sample and the two groups separately, which further explain a higher proportion of variance (Table 5), although the hominid regression is not significant with all probability due to small sample size. The bivariate plot (Figure 7b) shows an allometric grade shift between hominids and the remaining anthropoid taxa, which is confirmed by ANCOVA results—indicating no significant differences (F = 0.705, p=0.403) between the allometric slopes but significantly different intercepts (F = 263.26, p<0.001) between the two groups. This indicates that hominids possess more voluminous (i.e., stouter) canals than other anthropoids at equal lengths, with only minimal overlap. All the fossil specimens display hominid-like volumetric proportions (Figure 7b): StW 573 and 578 fall slightly above the hominid regression line, whereas BAC 208, due to its slenderer semicircular canals, falls below (although much closer than to the non-hominid regression line).
 
-## Exploration of a preexisting group structure in the tangent space of the vestibular shape
+### Exploration of a preexisting group structure in the tangent space of the vestibular shape
 
 Recently, caution has been advised regarding the use of between-group PCA (bgPCA) applied to 3D geometric morphometric (GM) data, as it could produce spurious grouping when there are fewer groups than variables (Cardini et al., 2019). However, the same study also highlighted that the presence of a strong covariance among the variables (as found in many biological structures) largely reduces the magnitude of the problem. Interestingly, due to the properties of diffeomorphisms, the set of momenta is expected to be highly correlated, as close momenta tend to covary.
 
@@ -92,15 +713,79 @@ Prior to computing the bgPCA, we explored the principal components resulting fro
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig8-v1.jpg)
 
-**Figure 8.:** Variance explained by each PC is included within parentheses. Convex hulls correspond to: hominids (orange), hylobatids (red), cercopithecoids (blue), platyrrhines (green). Color code: dark green, platyrrhines; orange, hominids; red, hylobatids; brown, papionins; green, cercopithecins; blue, colobines. Hominids are distinguished from hylobatids and other anthropoids along PC1 (mostly negative vs. positive values, respectively), while PC2 tends to distinguish platyrrhines (more negative values) from catarrhines. Even if slightly more overlapping, the groups identified when observing the morphospace obtained with bgPCA are already present in the PCA.Figure 8—source data 1.The variance explained by each PC is reported. Table provided as a separate Excel file.
+**Figure 8.:** Variance explained by each PC is included within parentheses. Convex hulls correspond to: hominids (orange), hylobatids (red), cercopithecoids (blue), platyrrhines (green). Color code: dark green, platyrrhines; orange, hominids; red, hylobatids; brown, papionins; green, cercopithecins; blue, colobines. Hominids are distinguished from hylobatids and other anthropoids along PC1 (mostly negative vs. positive values, respectively), while PC2 tends to distinguish platyrrhines (more negative values) from catarrhines. Even if slightly more overlapping, the groups identified when observing the morphospace obtained with bgPCA are already present in the PCA.
+
+**Table 6.**
+ Probability of correct classification of individuals from the hierarchical clustering analyses of deformation fields according to the groups (hominids, hylobatids, cercopithecoids, platyrrhines) used in the bgPCA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hominidae</th>
+      <th>Hylobatidae</th>
+      <th>Cercopithecoidae</th>
+      <th>Platyrrhini</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>90.0%</td>
+      <td>23.5%</td>
+      <td>65.0%</td>
+      <td>66.7%</td>
+    </tr>
+  </tbody>
+</table>
 
 Another way to ascertain that the group separation observed in our bgPCA is not the result of any bias is to compare different kind of analyses with a same data set and the same grouping factor. We thus compared our deformation-based results with those obtained from a configuration of 3D semilandmarks commonly used to investigate the vestibular shape (Gunz et al., 2012). Both analyses, based on the full primate sample, yielded a similar group separation (compare Figure 2 with Figure 9), as shown by the components resulting from the bgPCA. These results are also coherent with the biological reality, enabling the discrimination of major anthropoid clades in agreement with their phylogenetic relationships. In the landmark-based approach, hylobatids largely overlap with great apes in both bgPC1 (occupying an intermediate position) and bgPC2 (Figure 9a), but can be distinguished from them (and other anthropoids) to a large extent based on bgPC3 (Figure 9b). Shape variation in the analyzed sample, as captured by landmark-based 3DGM, accounts for a strong phylogenetic signal (Kmult = 0.973, p<0.001), and this also holds for the first three bgPCs separately (see below).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig9-v1.jpg)
 
-**Figure 9.:** Figure 2.(a) bgPC2 vs. bgPC1. (b) bgPC3 vs. bgPC1. Variance explained by each bgPC is included within parentheses. Lateral (top), superior (middle), and anterior (bottom) views of landmarks and semilandmark maximum (red) and minimum (blue) conformations for (c) bgPC1, (d) bgPC2, and (e) bgPC3. Color code as in Figure 2. Hominoids and cercopithecoids are distinguished along bgPC1 (mostly negative vs. positive values, respectively), which is mainly driven by the vertical compression of the anterior SC, as well as the position of the lateral (more anteriorly connecting with the vestibule) and the posterior (displaced posteromedially) canals. bgPC2, driven by the size of the anterior and posterior SCs relative to the lateral one, tends to distinguish platyrrhines (more negative values) from catarrhines, while bgPC3, driven by the size of the anterior and lateral SCs relative to that of the posterior canal, as well as by the relative orientation among the canals, tends to distinguish most hylobatids (more negative values) from great apes, humans, and cercopithecoids (more positive values). The two Australopithecus specimens fall within the hominid range, flanking that of hylobatids. Similarly to the deformation-based approach, StW 578 is more similar to humans (matching the distribution of Homo), while StW 573 is found within the scatter of points of Pan species. In the landmark-based analysis, Oreopithecus overlaps within cercopithecoids and also falls close to platyrrhines.Figure 9—source data 1.The variance explained by each bgPC is reported within parentheses. Table provided as a separate Excel file.
+**Figure 9.:** (a) bgPC2 vs. bgPC1. (b) bgPC3 vs. bgPC1. Variance explained by each bgPC is included within parentheses. Lateral (top), superior (middle), and anterior (bottom) views of landmarks and semilandmark maximum (red) and minimum (blue) conformations for (c) bgPC1, (d) bgPC2, and (e) bgPC3. Color code as in Figure 2. Hominoids and cercopithecoids are distinguished along bgPC1 (mostly negative vs. positive values, respectively), which is mainly driven by the vertical compression of the anterior SC, as well as the position of the lateral (more anteriorly connecting with the vestibule) and the posterior (displaced posteromedially) canals. bgPC2, driven by the size of the anterior and posterior SCs relative to the lateral one, tends to distinguish platyrrhines (more negative values) from catarrhines, while bgPC3, driven by the size of the anterior and lateral SCs relative to that of the posterior canal, as well as by the relative orientation among the canals, tends to distinguish most hylobatids (more negative values) from great apes, humans, and cercopithecoids (more positive values). The two Australopithecus specimens fall within the hominid range, flanking that of hylobatids. Similarly to the deformation-based approach, StW 578 is more similar to humans (matching the distribution of Homo), while StW 573 is found within the scatter of points of Pan species. In the landmark-based analysis, Oreopithecus overlaps within cercopithecoids and also falls close to platyrrhines.
 
 Shape differences along bgPC1 (53.3% of total variance) in the landmark-based approach embed a strong phylogenetic signal (λ = 1 and K = 1.26; Table 7). This component correlates with the insertion of the lateral canal on the vestibule, the size and shape of the posterior canal, and the roundness of the SCs. Great apes and humans fall on negative values for the first axis (Figure 9c), as they are characterized by smaller canals compared to the size of the vestibular recesses and less rounded SCs (particularly the anterior one, which is vertically compressed). Hylobatids stand on intermediate scores that largely overlap with the hominid range (Figure 9) due to a combination of long SCs, a vertically compressed anterior canal, and well separated lateral and posterior canals (since posterior canal is posteriorly displaced and the lateral canal inserts anteriorly in the vestibule). In contrast, Old world monkeys tend to be located on positive values of bgPC1 and display a protruding lateral canal that intersects the plane defined by the posterior canal.
+
+**Table 7.**
+ Phylogenetic signal results for a between-group principal components analysis (bgPCA) applied to vestibular shape procrustes residuals in the analyzed sample of extant anthropoids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>bgPC1</th>
+      <th>bgPC2</th>
+      <th>bgPC3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variance</td>
+      <td>53.34%</td>
+      <td>29.29%</td>
+      <td>17.37%</td>
+    </tr>
+    <tr>
+      <td>Eigenvalue</td>
+      <td>2.462</td>
+      <td>1.352</td>
+      <td>0.802</td>
+    </tr>
+    <tr>
+      <td>Pagel’s λ</td>
+      <td>1.000 (p&lt;0.001)</td>
+      <td>0.902 (p&lt;0.001)</td>
+      <td>0.932 (p=0.006)</td>
+    </tr>
+    <tr>
+      <td>Blomberg’s K</td>
+      <td>1.226 (p=0.001)</td>
+      <td>1.081 (p=0.001)</td>
+      <td>0.528 (p=0.01)</td>
+    </tr>
+  </tbody>
+</table>
 
 bgPC2 (29.3% of variance) separates platyrrhines—especially Ateles found in the most negative scores (Figure 1i)—from other anthropoids due to the more reduced lateral canal in the former, which is inversely proportional to anterior canal development and vertical elongation (Figure 9d). This pattern is shared, although to a lesser extent, by humans (Figure 1d) and Theropithecus (Figure 1j), which possess more developed anterior and posterior canals relative to the lateral one. In contrast, Gorilla (Figure 1a) occupies the positive end of the distribution due to its large lateral canal and reduced anterior one, the latter being also vertically compressed, whereas the remaining hominoids show intermediate values along bgPC2. The identified phylogenetic signal displayed by bgPC2 is slightly reduced as compared to bgPC1, but still significant and very high (λ = 0.9 and K = 1.08;).
 
@@ -112,7 +797,7 @@ In turn, along bgPC1 Oreopithecus displays more positive values than hominoids a
 
 Overall, the two 3DGM techniques used in this paper generally yielded similar results except for hylobatids and Oreopithecus (along bgPC1 alone). This is attributable to differences in the underlying methodological assumptions of each method when computing shape variation. In particular, our 3DGM landmark protocol measures the spatial trajectory of SCs based on their midline skeleton (Gunz et al., 2012) and hence it does not capture differences in volumetric proportions. In contrast, by comparing surfaces as a whole (Durrleman et al., 2012b; Durrleman et al., 2012a), the deformation analysis is particularly sensitive to volumetric differences. In addition, the amount of identified phylogenetic signal is very similar for both techniques, affecting the entire variance. Together with the results of the HCA, we confidently show that the separation found between the groups in the bgPCA of this study already exists in the shape data and that is not a spurious effect produced by the bgPCA method itself.
 
-## Hominoid phylomorphospace of the vestibule
+### Hominoid phylomorphospace of the vestibule
 
 The phylomorphospace approach applied to vestibular shape variation in hominoids infers different branch lengths for hominids and hylobatids from the ancestral morphology estimated for crown hominoids, which falls much closer to great apes and humans than to hylobatids for both bgPC1 and bgPC3 (Figure 10). According to our reconstructions based on the extant taxa (Figure 10), the crown hominoid LCA vestibular morphology (Figure 11a) would be characterized by equally developed and slightly inflated SCs, a fairly vertically compressed anterior canal, and by the slender portion of the lateral canal connecting more anteromedially with the vestibule. The estimated morphology for the LCA of hylobatids (Figure 11b) resembles to some extent that of the crown hominoid LCA (slightly vertically compressed anterior canal and lack of intersection between the lateral and posterior canals), combined with more monkey-like features (markedly slender canals with inflated ampullae), and others exclusive to hylobatids (an obtuse angle between a slightly anteriorly protruding anterior canal and a small posterior canal relative to the others). Hylobatid genera are generally less diverging from one other than great apes and humans. Hoolock (Figures 1f, 3f, 4f and 5f) apparently displays the most primitive morphology among hylobatids (with equally developed, rounded, almost orthogonal canals, and less anteriorly protruding anterior canal), while Hylobates (Figures 1h, 3h, 4h and 5h) and, to a lesser extent, Symphalangus (Figures 1g, 3g, 4g and 5g) show the slenderest SCs and an extremely anteriorly protruding anterior canal (as noted by Le Maître et al., 2017).
 
@@ -122,7 +807,7 @@ The phylomorphospace approach applied to vestibular shape variation in hominoids
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig11-v1.jpg)
 
-**Figure 11.:** Figure 7), in lateral (left), superior (middle), and posterior (right) views.Cumulative displacement variations are rendered by pseudocolor scale ranging from dark blue (<5.1 µm) to dark red (0.42 mm). Black arrows correspond to the vectors identifying the direction of displacement. The reconstructed LCAs depicted are the following: (a) crown hominoids; (b) crown hylobatids; (c) crown hominids; (d) crown hominines; (e) Pan-Homo clade; (f) Australopithecus-Homo clade.
+**Figure 11.:** Cumulative displacement variations are rendered by pseudocolor scale ranging from dark blue (<5.1 µm) to dark red (0.42 mm). Black arrows correspond to the vectors identifying the direction of displacement. The reconstructed LCAs depicted are the following: (a) crown hominoids; (b) crown hylobatids; (c) crown hominids; (d) crown hominines; (e) Pan-Homo clade; (f) Australopithecus-Homo clade.
 
 The reconstructed morphologies for LCAs of crown hominids (Figure 11c) and, to a lesser extent, crown hominines (Figure 11d) and the Pan-Homo clade (Figure 11e) are not very far from the crown hominoid ancestral condition (Figure 11a) for any of the first three bgPCs. The crown hominid LCA is characterized by a lateral insertion of the slender portion of the lateral canal on the vestibule, a moderate medioventral displacement of the posterior canal, and an increased vertical compression of the anterior canal, in combination with thick and bulgy canals and well-developed vestibular recesses. The hominine and Pan-Homo clade LCAs possess stouter canals and are very similar to one another, distinguished only by the size of the lateral and anterior canals. The LCA of the Pan-Homo clade shows a larger and less vertically compressed anterior canal, and a smaller lateral one, which also connects more anteriorly with the vestibule. The hominin (Australopithecus-Homo) LCA (Figure 11f) is closer to Homo, being characterized by the stoutest volumetric proportions, with larger vertical canals relative to the Pan-Homo clade LCA, yet smaller than those found in humans. Its anterior canal is more vertically compressed than in Homo, rather resembling the morphology of Pan, while the posterior canal is rounded, thus being intermediate between the human (laterally projecting) and the chimpanzee (laterally compressed) morphology.
 
@@ -139,6 +824,79 @@ Based on the analysis of the shape of the vestibular apparatus, we identify seve
 ![Figure 12.](https://cdn.elifesciences.org/articles/51261/elife-51261-fig12-v1.jpg)
 
 **Figure 12.:** See Table 8 for further details. character #1: (a) rounded (gray) and compressed (green) anterior canal; character #2: (b–c) non-posteriorly displaced posterior canal (gray), posteriorly displaced posterior canal (green); character #3: (b–c) lateral canal intersecting(dashed line) the posterior one (gray), lateral canal non-intersecting the posterior one (in green); character #4: (d-e) curved (gray) and straight (green) medial portion of the lateral canal; character #5: (f–g) flat (gray) and bent upwards (green) trajectory of the lateral canal ampullar portion; character #6: (h–i) anterior and posterior SCs forming an angle (dotted arc) close to the right angle (gray), anterior and posterior canals forming an obtuse angle (green); character #7: (h–i) posterior canal equal in size to the other SCs and forming a right angle with the lateral canal (gray), small posterior canal relative the other SCs and inclined posteriorly respective to the lateral canal (green); character #8: (j–k) slender SCs (gray), stout canals (green); character #9: (j–k) small vestibular recesses (gray), enlarged vestibular recesses (green).
+
+**Table 8.**
+ Phylogenetically informative discrete characters of vestibular morphology that represent potential synapomorphies of either hominoids or hominids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Character #</th>
+      <th>Character definition</th>
+      <th>Character statesa</th>
+      <th>Synapomorphic for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#1</td>
+      <td>Anterior SCb</td>
+      <td>0 = rounded; 1 = vertically compressed</td>
+      <td>Hominoidea</td>
+    </tr>
+    <tr>
+      <td>#2</td>
+      <td>Posterior SC</td>
+      <td>0 = non posteromedially displaced; 1 = posteromedially displaced</td>
+      <td>Hominoidea</td>
+    </tr>
+    <tr>
+      <td>#3</td>
+      <td>Insertion of the lateral SC slender portion on the vestibule</td>
+      <td>0 = posterior (lateral SC intersecting the posterior SC plane); 1 = anterior (not intersecting)</td>
+      <td>Hominoidea</td>
+    </tr>
+    <tr>
+      <td>#4</td>
+      <td>Lateral SC medial portion</td>
+      <td>0 = curved; 1 = straight</td>
+      <td>Hominoidea</td>
+    </tr>
+    <tr>
+      <td>#5</td>
+      <td>Trajectory of the lateral SC ampullar portion</td>
+      <td>0 = flat; 1 = bent upwards</td>
+      <td>Hominoidea</td>
+    </tr>
+    <tr>
+      <td>#6</td>
+      <td>Angle between the planes identified by the anterior and posterior SCs</td>
+      <td>0 = close to right angle, 1 = obtuse</td>
+      <td>Hylobatidae</td>
+    </tr>
+    <tr>
+      <td>#7</td>
+      <td>Inclination and size of the posterior SC relative to the size of the anterior and lateral SCs</td>
+      <td>0 = forming a right angle and equal or larger in size, 1 = posteriorly tilted and smaller</td>
+      <td>Hylobatidae</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Robusticity of SCs</td>
+      <td>0 = slender; 1 = stout</td>
+      <td>Hominidae</td>
+    </tr>
+    <tr>
+      <td>#9</td>
+      <td>Extension of vestibular recesses relative to that of the SCs</td>
+      <td>0 = smaller; 1 = similar in size</td>
+      <td>Hominidae</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: SC = semicircular canals.a Character state 0 represents the primitive condition reconstructed for the last common ancestor of crown catarrhines.b Some platyrrhines display a superior eccentricity of the anterior SC that might be apomorphic._
 
 The most evident character shared by extant apes and humans (even if somewhat variable in the latter and in Hoolock), and further displayed by the extinct genera analyzed here, is the vertical compression of the anterior canal (Figure 12a), as noted for great apes only in a previous analysis (Spoor and Zonneveld, 1998). Since the subarcuate fossa arguably constrains the shape of the anterior canal (Jeffery et al., 2008), the hominoid morphology might be related to the absence of the fossa in great apes and siamangs (Moyà-Solà and Köhler, 1993; Gannon et al., 1988; Spoor and Leakey, 1996). However, the combination of a well-developed fossa and marked vertical compression of the anterior SC found in Hylobates argues against this hypothesis. The latter is further rejected by the cercopithecoid morphology, characterized by a rounded anterior SC even in the largest terrestrial genera (Papio, Theropithecus, and Mandrillus), which unlike other cercopithecoids display a much reduced (or even absent) subarcuate fossa (Gannon et al., 1988; Spoor and Leakey, 1996).
 
@@ -166,11 +924,248 @@ In conclusion, our study provides new insight into the evolution of the vestibul
 
 ## Materials and methods
 
-## Sample composition and acquisition
+### Sample composition and acquisition
 
 The analyzed sample includes microcomputed tomography (µCT) scans of 142 dried anthropoid crania belonging to 27 species and 25 genera, including all extant great ape genera and a selection of hylobatids, cercopithecoids, and platyrrhines (Table 9 and Supplementary file 1). A few specimens are juveniles instead of adults, but this should not affect their vestibular morphology as the bony labyrinth ossifies in early prenatal stages, bounding its shape and size (Jeffery and Spoor, 2004; Perier et al., 2016). The hominoid subsample consists of 48 individuals belonging to 8 species and seven genera (Supplementary file 1). For each specimen, the bony labyrinth was virtually extracted (from the left side when possible, or otherwise from the right side and mirrored) by segmenting the µCT image stacks (voxel size reported in Supplementary file 1). Virtual 3D models were generated using Avizo 9.0.1 software (FEI Visualization Sciences Group). The fossil sample consists of one left bony labyrinth belonging to the late Miocene stem-hominoid Oreopithecus bambolii (Rook et al., 2004) and of two right inner ear that have been virtually extracted from the Australopithecus specimens StW 573 and StW 578 from Sterkfontein (Beaudet et al., 2019b).The vestibular apparatus was separated from the cochlea by cutting right under the oval window and the saccule, and filling the resulting hole with a flat surface in Geomagic Studio 2014 software (3D Systems).
 
-## Shape analysis
+**Table 9.**
+ Sample of extant anthropoid specimens analyzed in this paper based on µCT image stacks.See Supplementary file 1 for further details on each specimen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>Species</th>
+      <th>n</th>
+      <th>M</th>
+      <th>F</th>
+      <th>?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atelidae</td>
+      <td>Alouatta palliata</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Atelidae</td>
+      <td>Ateles geoffroyi</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cebidae</td>
+      <td>Cebus apella</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Cercocebus galeritus</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Cercopithecus mitis</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Chlorocebus pygerythrus</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Colobus guereza</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Erythrocebus patas</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Lophocebus albigena</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca fascicularis</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Mandrillus sphinx</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Miopithecus talapoin</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Nasalis larvatus</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Papio anubis</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Piliocolobus badius</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Presbytis hosei</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Presbytis rubicunda</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Theropithecus gelada</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Trachypithecus cristatus</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Hoolock hoolock</td>
+      <td>6</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Hylobates lar</td>
+      <td>7</td>
+      <td>0</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Symphalangus syndactylus</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Gorilla gorilla</td>
+      <td>7</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Homo sapiens</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pan paniscus</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pan troglodytes</td>
+      <td>7</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pongo pygmaeus</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: n, total number of specimens; M, males; F, females; ?, unknown sex._
+
+### Shape analysis
 
 Our 3DGM approach is based on deformation methods (Durrleman et al., 2012b; Durrleman et al., 2012a), which do not rely on a priori defined landmarks but consider instead the geometrical correspondences between continuous surfaces, and are particularly convenient for comparing overall shape and complex 3D surface changes (Durrleman et al., 2012b; Dumoncel et al., 2014; Beaudet et al., 2016a). This method relies on the construction of a sample-average surface model (template) and its deformation to the investigated surfaces (Durrleman et al., 2012b; Durrleman et al., 2012a; Beaudet et al., 2016b). Unlike in classical landmark-based 3DGM analyses, the surfaces are represented by a set of oriented faces and the comparisons do not assume a point-to-point correspondence between samples (Durrleman et al., 2012b). Prior to the analysis, the unscaled vestibular surfaces were aligned and scaled using the ‘Align Surface’ module of Avizo 9.0. Then, deformations between surfaces were mathematically modeled as a diffeomorphism (i.e., a one-to-one deformation of the 3D space that is smooth, invertible, and with a smooth inverse), and a set of momenta (vectors representing the flow of deformations from the initial position of the control points on the template to the target shape) were estimated with Deformetrica 3 software. Due to its high-demanding computational power, analyses were run in the CALMIP supercomputing center (Toulouse, France).
 
@@ -180,7 +1175,7 @@ Correlation between SC shape and size (allometry) was assessed using multivariat
 
 The hierarchical clustering analysis (HCA) of the deformation fields (used to identify preexisting group structure embedded in our shape data) has been computed caret v6.0–84 (Kuhn, 2008) and Factominer v1.34 (Le et al., 2008) R packages. The discrimination and the amount of overlap among the groups defined a priori for the bgPCA has been quantified by computing the number of correctly classified individuals with cross-validation using the Morpho v2.6 (Schlager, 2014) R package. Finally, we estimated the posterior probabilities of group membership for the fossil specimens based on the Mahalanobis distances between their bgPC scores and group centroids using the ‘typprobClass’ function of Morpho v2.6 (Schlager, 2014) R package. These probabilities, which were computed for both bgPCA (based on main anthropoid groups as well as on extant hominoid genera only) denote the likelihood of the specimens to belong to each group without assuming that it must belong to one of them (which is required when comparing the fossils with extant genera), so that the sum of probabilities for each specimen does not equal one. Probabilities < 0.05 indicate that the specimen falls outside the variability of that particular group. Further statistical analyses were carried out using different R packages in RStudio v.1.1.453 for R v.3.5.0: ape v5.1 (Paradis, 2012), phytools v0.6–60 (Revell, 2012), Morpho v2.6 (Schlager, 2014), caper v1.0.2 (Orme et al., 2013), and geomorph v3.1.1 (Adams et al., 2019).
 
-## Phylogenetic signal analysis
+### Phylogenetic signal analysis
 
 To assess phylogenetic signal, that is the degree to which related species resemble each other (Felsenstein, 1985; Harvey and Pagel, 1991), we used a phylogenetic tree (Figure 13) derived from a time-calibrated molecular phylogeny for the extant taxa (Springer et al., 2012). Estimated mean divergence dates for the various included extant clades are indicated in Figure 13 (see Table 1 and S1 in Springer et al. (2012) for 95% composite credibility intervals). The phylogenetic placement of Oreopithecus has been controversial; for our purposes here, we followed Nengo et al. (2017) in considering this taxon as a stem-hominoid, although other possibilities are discussed in the text. The node of the Oreopithecus-crown hominoid divergence has been placed 1 Ma older than the divergence of crown apes and humans and its tip corresponds to its last occurrence in the fossil record (7.0–6.5 Ma; Rook et al., 2000). For the South African Australopithecus sp., we used the published first appearance datum for Australopithecus africanus (4.02 Ma) that includes the Jacovec specimens into the taxon (Wood and Boyle, 2016).
 
@@ -190,6 +1185,6 @@ To assess phylogenetic signal, that is the degree to which related species rese
 
 We computed Pagel’s λ (Pagel, 1999), Blomberg’s K (Blomberg et al., 2003) and Kmult (Adams, 2014) using phytools v.0.6–44 (Revell, 2012) and geomorph v3.1.1 (Adams et al., 2019) R packages. These metrics compare the variance in the phylogenetic tree tips relative to that expected under a Brownian motion evolutionary model. Pagel’s λ is a scaling coefficient of the expected correlations between related species on the tree, and varies from 0 (no correlation due to absence of phylogenetic signal) to 1 (covariance proportional to phylogenetic distance, implying maximal phylogenetic signal). Blomberg’s K and its multivariate generalization Kmult inform on how precisely the variance-covariance patterns found in the data are matched by the phylogenetic tree and where variance accumulates: K ≈ one implies that the mode of evolution closely resembles that expected under Brownian motion; when K < 1, close relatives resemble each other less than expected (variance is accumulated within clades), implying an evolutionary pattern that departs from a purely stochastic model (which could be caused by adaptation uncorrelated with phylogeny, that is homoplasy); finally, K > 1 is found when close relatives are more similar than expected under Brownian motion (variance is among clades), which could indicate stabilizing selection.
 
-## Phylomorphospace and ancestral states analysis
+### Phylomorphospace and ancestral states analysis
 
 To quantify major patterns of vestibular shape variation along the branches of the phylogeny we relied on a phylomorphospace approach (Sidlauskas, 2008), which allows us to intuitively visualize the extent and direction of the inferred shape change by means of branch length and orientation. This method projects the phylogenetic tree (Figure 13) onto the tangent space computed from the bgPCA and estimates the position in the morphospace of the internal nodes (ancestral morphologies) via a maximum likelihood (ML) method for continuous characters (Felsenstein, 1988; Schluter et al., 1997) using the ‘fastAnc’ function of phytools v0.6–60 R package (Revell, 2012). Subsequently, the bgPC scores of the ancestral states are rotated and translated from the shape data back into the configuration space for interpolation and 3D visualization using Deformetrica 3 software.

@@ -22,13 +22,21 @@ The retina is about as complex as other regions of the vertebrate central nervou
 
 The basic plan of the retina is highly conserved among all vertebrates (Baden, 2020). Five neuronal classes are arranged in three cellular (nuclear) layers separated by two synaptic (plexiform) layers: photoreceptors (PRs) in an outer nuclear layer (ONL), three sets of interneurons (horizontal, bipolar, and amacrine cells; HCs, BCs, ACs) in an inner nuclear layer (INL), and output neurons (retinal ganglion cells, RGCs), along with some ACs, in a ganglion cell layer (GCL; Cajal, 1892; Masland, 2012; Figure 1A–B). PRs form synapses with HCs and BCs in an outer plexiform layer (OPL), while RGCs, BCs, and ACs form synapses in an inner plexiform layer (IPL). Axons of RGCs then exit the eye and travel through the optic nerve to a variety of retinorecipient areas in the brain (Dhande et al., 2015; Martersteck et al., 2017). Each of these classes is divided into types with specific patterns of connectivity among them endowing distinct RGC types with sensitivities to different visual stimuli, such as edges, moving or oriented objects, and color contrasts (Sanes and Masland, 2015). The retina also contains glial cells: Müller glia in the INL, and in many species, astrocytes and oligodendrocytes in and beneath the GCL (Reichenbach and Bringmann, 2013; Vecino et al., 2016). Altogether, transcriptomic and morphological studies have identified a total of >130 neural (neuronal and glial) cell types in mice and ~70 in primates (Yan et al., 2020a; Yan et al., 2020b; Peng et al., 2019).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cross-section of chick retina stained with NeuroTrace to mark somata. The retina consists of three cellular layers: outer nuclear layer (ONL), inner nuclear layer (INL), and ganglion cell layer (GCL) separated by two synaptic layers, outer plexiform (OPL) and inner plexiform (IPL). Bar, 10 µm. (B) Sketch showing retinal cell classes. The ONL contains photoreceptors (PR): double cones, single cones, and rods. The INL contains horizontal, bipolar, and amacrine cells (HC, BC, and AC) and Müller glia (MG). The GCL contains retinal ganglion cells (RGCs) and ACs. Oligodendrocytes (OL) are present in an axonal layer beneath the GCL. (C) Birthdates of each class, from Prada et al., 1991. Hatching (P0) is at embryonic day (E)21. Arrows denote ages at which cells were obtained for scRNA-seq. To generate the cell atlas, E16 data were used for RGCs and E18 data for all other classes. (D) Expression of a subset of marker genes used to allocate E18 retinal cells to classes. Plot shows scaled expression level in a randomly down-sampled subset of all cells. (E) UMAP of E16+18 scRNA-seq data with class names based on D. (F) Fraction of E18 cells in each cell class, as determined by expression of canonical markers in D. (G) Fraction of E16 RGC-enriched cells in each cell class, determined as in D, F. (H) Number of clusters (putative cell types) in each retinal cell class, based on reclustering each class separately. (I) Fraction of E12 RGC-enriched cells in each cell class, determined as in D, F.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression of housekeeping genes (Eisenberg and Levanon, 2013) in E18 retina. Clusters generated from initial unsupervised analysis are shown; following division into classes (Figure 1D,E), each class was reanalyzed to maximize the computational power in identifying clusters used in the remainder of the paper. Similar expression of these genes across clusters shows relatively uniform quality of cells analyzed. (B) Expression of house-keeping genes for E16 RGCs. (C) UMAP of E12 scRNA-seq data. (D) Expression patterns of a subset of marker genes used to allocate E12 retinal cells to classes, similar to Figure 1D. (E) Expression of house-keeping genes for E12 clusters.
+
 Although the basic retinal plan is conserved, cell types and patterns of connectivity vary among species, serving their visual needs (Baden et al., 2020). Birds are highly visual animals with sizable eyes, generally high acuity and sophisticated retinas (Cook, 2000; Seifert et al., 2020). For example, although most mammals have two cone PR types, most birds are tetrachromatic, with cone PRs selectively sensitive to red, green, blue, and ultraviolet light (Hart, 2001; Baden and Osorio, 2019). Many have regions specialized for high acuity vision, akin to the fovea found in primates. Indeed, histological and immunohistochemical studies have suggested that there may be more cell types in avian retinas than in those of mammals (Cajal, 1892; Mariani and Leure-DuPree, 1977; Hayes, 1982; Quesada et al., 1988; Naito and Chen, 2004; Karten and Brecha, 1983; Brecha et al., 1984; Karten et al., 1990).
 
 Among birds, the retina of the domestic chicken (Gallus gallus domesticus) has been the most intensively studied. In particular, it has been a favored model for developmental analyses, including studies on the generation and migration of retinal neurons, their diversification into classes and types, the growth and guidance of RGC axons to the optic tectum, and the capacity of retinal neurons and their axons to regenerate (Adler, 2000; Mey and Thanos, 2000; Thanos and Mey, 2001; Wilken and Reh, 2016; Wisely et al., 2017). To complement and facilitate these studies, we used scRNA-seq to profile cells from the chick retina. From ~40,000 single-cell transcriptomes, we identified cells of all six classes named above (PR, HC, BC, AC, RGC, and glia) and used unsupervised methods to divide them into ~150 clusters. We show that 136 of the groups represent putative cell types, with others corresponding to developmental intermediates. We then devised a method for CRISPR-based somatic cell integration of fluorescent reporters into genes shown by scRNA-seq to be expressed by specific types. Using this technique along with other histological methods, we matched molecular profiles to morphology for many neuronal types. We also found a positional signature in Müller glia, with distinct expression patterns based on their location along the anterior-posterior, dorsal-ventral, and central-peripheral retinal axes. Finally, we compared the cell classes and types of chick retina with those of three mammalian species – mouse, macaque, and human – demonstrating conserved molecular features of all classes and some types, along with multiple differences between chick and mammals. Together, our results provide new insights into retinal structure and evolution, as well as a foundation for anatomical, physiological, and developmental studies of avian retina.
 
 ## Results
 
-## Profiling chick retinal cells
+### Profiling chick retinal cells
 
 All known chick retinal cell types are born by E14, retinal structure is relatively mature by E18, and birds are visually competent at hatching (E21; Figure 1C; Hamburger and Hamilton, 1951; Prada et al., 1991; Cepko et al., 1996; Mey and Thanos, 2000; Yamagata and Sanes, 1995a; Yamagata and Sanes, 1995b; Drenhaus et al., 2003). We used a droplet-based method (Zheng et al., 2017) to obtain 30,022 high-quality single-cell transcriptomes from embryonic day 18 (E18) chick retina (Figure 1—figure supplement 1A). We assigned cells to classes based on expression of previously established markers, using methods described in Peng et al., 2019 and Yan et al., 2020a. We identified five neuronal classes (PRs, HCs, BCs, ACs, and RGCs) as well as two glial types, Müller glia and oligodendrocytes (Figure 1D,E,F).
 
@@ -38,7 +46,7 @@ We combined single-cell transcriptomes for all cells except RGCs from the E18 da
 
 As one approach to separating definitive types from developmental intermediates, we collected cells from E12 retina, obtaining single-cell transcriptomes from PRs, HCs, BCs, RGCs, and MGs as well as several putative precursor populations (Figure 1I; Figure 1—figure supplement 1C–E). These cells were not used to generate the atlas, but rather to test developmental hypotheses.
 
-## CRISPR-based cell type characterization
+### CRISPR-based cell type characterization
 
 Generation of a retinal cell atlas for mouse benefited from prior knowledge, numerous well-characterized antibodies, and many transgenic lines that express a reporter in one or a few types (Macosko et al., 2015; Shekhar et al., 2016; Tran et al., 2019; Yan et al., 2020a). Lacking these advantages for chick, we tested methods for inserting fluorescent reporters into genes shown by scRNA-seq to be expressed by specific types, thereby allowing us to visualize those cells’ morphology. In a method called SLENDR, guide RNAs, and plasmids encoding Cas9 and a reporter are delivered to somatic cells to insert the reporter into a chromosomal site determined by the sequence of the guide RNAs and homologous sequences appended to the reporter (Mikuni et al., 2016). We were unsuccessful in applying this method to chick retina, and therefore modified it. We used in ovo electroporation to deliver a mixture consisting of guide RNAs, Cas9 protein, and a single-strand DNA containing a reporter sequence flanked by ~70 bases gene-specific homology arms (Gurumurthy et al., 2019; Figure 2A). We co-electroporated this mixture with piggyBac transposon reporter/transposase constructs encoding a spectrally distinct reporter to monitor the site and efficiency of electroporation, and optimized reagents to enhance homologous recombination (see Materials and methods). We call the method eCHIKIN for electroporation- and CRISPR-mediated Homology-Instructed Knock-IN.
 
@@ -52,11 +60,23 @@ To efficiently label cells that expressed target genes at low levels, we inserte
 
 Thus, eCHIKIN provides a means of matching molecular identity to cellular position, morphology and lamination without germline manipulation.
 
-## Photoreceptors
+### Photoreceptors
 
 Chicks are tetrachromatic, with cone types that express red opsin (OPN1LW), green opsin (OPN1MSW), blue opsin (OPN2SW), or violet opsin (OPN1SW) (Kram et al., 2010; Enright et al., 2015). In addition to these conventional ‘single-cones’ (SCs), the retina also contains rods that express rhodopsin (RHO) and OPN1LW-expressing ‘double-cones’ (DCs) composed of tightly apposed principal and accessory cells, which together comprise about half of all PRs (Smith et al., 1985; López-López et al., 2008; Oishi et al., 1990). This composition is unlike that of rodent and primate retinas, which are rod-dominated and contain two or three SC types but no DCs.
 
 Reclustering of PRs revealed 12 clusters (numbered in order of descending abundance; Figure 3A; Figure 3—figure supplement 1A), including one each expressing RHO, OPN1MSW, OPN2SW, and OPN1SW (PR clusters 3, 5, 8, and 11), marking them as rods and green, blue, and violet SCs, respectively (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig3-v2.jpg)
+
+**Figure 3.:** (A) Clustering of E18 PRs displayed in UMAP. Identities of each cluster are indicated to the right. (B) Dot plots showing expression of selected genes expressed in all or subsets of PRs. In this and subsequent figures, dot size indicates the proportion of cells that express each gene, and color indicates expression level normalized to its max value among clusters. Numbers correspond to clusters in A. Dendrogram above dots shows transcriptional relationships of clusters. In this and subsequent figures, numbers labeled on the tree are p-values computed by multiscale bootstrap resampling, ranging from 0 to 100, higher value indicates higher reliability. (C–E) In situ hybridization of E16 sections (en face in C,D; vertical in E,F) with probes for cluster-specific genes. (C) OPN1LW and OPN1MSW. (D) OPN1LW and STRA6. Arrows show coexpression. (E) OPN1LW and CALB1. (F) Immunostaining of E16 section with antibodies to STRA6 and CALB1. (G) Double cones (DCs) labeled by eCHIKIN-mediated insertion of GFP into the CALB1 locus. Section is from E17 retina. G' is a high-power picture of a part of G, showing an accessary DC (a) and principal DC (p) based on their position in outer nuclear layer (ONL). Bar in F, 10 µm for C and D; 5 µm for E–G. (H) Relationship between immature and mature PR clusters assessed by XGBoost. Annotation of clusters is indicated in A. Dev, developing.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Frequency distribution of photoreceptor (PR) types. Cluster numbers are from Figure 3A. (B, C) Clustering of PRs from E12 and E18 together and visualized in the same UMAP, showing that the majority of E12 cells are immature types while the majority of E18 cells are mature types. In B, colors represent annotations from E18 PRs as shown in Figure 3A. In C, distinct colors show E12 and E18 cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) In situ hybridization of E12 retina (A,B) and E20 retina (C,D) for OPN1LW and ARGHAP18. (E–P) Central and peripheral staining of SLIT1 (E–G), STRA6 (H–J), OPN1LW (K–M), ARGHAP18 (N–P) at E16. D-peri, dorsal peripheral; V-peri, ventral peripheral. Bar, 10 µm. (Q) Summary sketch, showing expression of indicated genes at E16 and E18.
 
 As expected, in situ hybridizations to opsins labeled non-overlapping cells (Figure 3C and data not shown). These types were also distinguished by other differentially expressed genes, including PDE6B, PDE6G (phosphodiesterases), and MAFA (a transcription factor) in rods, SLC27A6 (a fatty acid transporter) in blue and violet SCs and LOC101750261 (a non-coding RNA) in green SCs.
 
@@ -70,17 +90,33 @@ To further test the idea that the opsin-negative PR-like cells represented immat
 
 Finally, we analyzed retinas from earlier (E12 and E16) and later (E20) stages by in situ hybridization with probes for ARHGAP18, and SLIT1, expressed by PR6 (immature DCs); OPN1LW (mature red SCs and DCs) and STRA6 (mature SCs). All PRs have been born by E12 (Prada et al., 1991), At E12, ARHGAP18 was expressed by PRs in the ONL, but OPN1LW was not detectable. Conversely, OPN1LW was expressed at E20 but ARGHAP18 was not (Figure 3—figure supplement 2A–D), suggesting that ARGHAP18 is transiently expressed in the ONL during development. At E16, consistent with the fact that retinal differentiation proceeds in a central-to-peripheral gradient (Kahn, 1974; Spence and Robson, 1989; Prada et al., 1991; Bruhn and Cepko, 1996), ARHGAP18 and SLIT1 were expressed by ONL cells selectively in peripheral retina, whereas OPN1LW and STRA6 were by ONL cells in central retina (Figure 3—figure supplement 2E–Q). Together, these results strongly suggest that immature and mature PR types co-exist at the same age but in different regions.
 
-## Horizontal cells
+### Horizontal cells
 
 Initial histological studies of avian retina distinguished two HC types: Type I, which bears an axon, and Type II, which does not (Cajal, 1892; Mariani and Leure-DuPree, 1977). Later studies combined immunohistochemical and morphological criteria to propose further subdivisions into three or four types (Fischer et al., 2007; Edqvist et al., 2008; Boije et al., 2016). Clustering of E18 HCs yielded five clusters, HC1-5 (Figure 4A, Figure 4—figure supplement 1A), all expressing the canonical HC marker ONECUT3. LHX1 and ISL1 were detected in exclusive populations and other markers distinguished each type (Figure 4B). Based on prior immunohistochemical analysis (Fischer et al., 2007; Edqvist et al., 2008), we hypothesized that HC1 and HC3 corresponded to Type I and HC2/HC4/HC5 to Type II HCs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig4-v2.jpg)
+
+**Figure 4.:** (A) Clustering of E18 HCs viewed by UMAP. (B) Dot plots showing expression of selected genes expressed in all or subsets of HCs. Numbers correspond to clusters in A. Dendrogram above dots shows transcriptional relationships of clusters. (C–L) In situ hybridization with indicated probes at E16. C–I are cross-sections; J–L are en face sections. Arrowheads in C–I mark OPL. (C) Double color in situ hybridization shows coexpression of OXT and IPCEF1. (D–F) Expression of NTRK (D), EGFR (E), and LTK (F) in subsets of HCs. (G–I) Double color in situ hybridization for NTKR/ EGFR (G), LTK/ NTRK (H), and LTK /EGFR (I). (J–L) In situ hybridization of E16 en face sections for NTRK (J), EGFR (K), and LTK (L) showing mosaics of each type. Bar in L, 5 µm for C, G–I; 10 µm for D–F, J–L.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Frequency distribution of horizontal cells (HCs). Cluster numbers are from Figure 4A,B. (B–M) In situ hybridization for OXT and IPCEF1 in central and peripheral retina at E14, E18, and E20. Bar in M, 10 µm for all parts. (N, O, P) Feature plots of E12 HCs, showing expression of markers that label HC types at E18.
 
 The two type I clusters (HC1 and HC3; LHX1+ ISL1-) were closely related, with few genes differentially expressed between them showing large differences (Figure 4B). In situ hybridization for two such genes – IPCEF1 enriched in HC1 and OXT enriched in HC3 – confirmed partially overlapping expression (Figure 4C). The differences between IPCEF1+OXT- and IPCEF1-OXT+ cells might reflect graded expression in time and/or space. Spatiotemporal analysis of expression similar to that described for PRs above, indicated that OXT (enriched in HC3) was expressed throughout the retina at E14, restricted to peripheral at E18, and disappeared at E20 (Figure 4—figure supplement 1B–G). In contrast, IPCEF1 (enriched in HC1) was expressed selectively in central retina at E14 and E18, and strongly throughout retina at E20 (Figure 4—figure supplement 1H–M). Consistent with this conclusion, most of the HCs identified in the E12 collection expressed OXT but not IPCEF1 (Figure 4—figure supplement 1N–P). Thus, we conclude that HC1 is a mature type and HC3 its immature counterpart.
 
 The ISL1+LHX1- types HC2, HC4, and HC5 were distinguished by selective and non-overlapping expression of distinct receptor-type tyrosine kinases, NTRK1, EGFR, and LTK, respectively (Figure 4B,D–I). In situ hybridization of en face sections demonstrated that these groups form mosaics of HCs, with the density of each mosaic corresponding roughly to the abundance of the type observed by scRNA-seq (NTRK1>EGFR>LTK; Figure 4J–L). NTRK1 (TrkA) is expressed by ‘Candelabrum’ axon-less HCs (Edqvist et al., 2008) which correspond to the abundant HC2.
 
-## Bipolar cells
+### Bipolar cells
 
 Using Golgi staining, Quesada et al., 1988 identified 14 types of BCs in chick based on dendritic morphology, and noted that further subdivisions might be possible if axonal morphology was also considered. Unsupervised clustering of our data identified 22 groups of BCs (Figure 5A) ranging in frequency from 1.5 to 10.4% of all BCs (Figure 5—figure supplement 1A). All expressed the canonical markers VSX2 and OTX2, and each was distinguished by selective expression of other genes (Figure 5B). Immunostaining and in situ hybridization for several of these genes confirmed their expression by BC subsets (Figure 5—figure supplement 1B–O).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig5-v2.jpg)
+
+**Figure 5.:** (A) Clustering of E18 BCs visualized by UMAP. (B) Dot plots showing expression of selected genes expressed in all or subsets of BCs. Numbers correspond to clusters in A. Dendrogram above dots shows transcriptional relationships of clusters. Putative ON and OFF types, based on markers in C, are indicated by color. (C) Expression of genes selectively expressed by ON (TRPM1, ISL1), OFF (GRIK1, FEZF1) and rod (PRKCA) BCs in rodents. OTX1 and SOX5 are uniquely expressed in putative ON clusters. (D–H) eCHIKIN-mediated labeling of cells expressing IRX3 (BC12, (D)), TPBGL (BC6, (E)), RRAD (BC7, (F)), SLC6A4 (BC15, (G)), and ANGPT2 (BC1, (H)). E14 sections at E14 were stained with anti-GFP. Each lamination was confirmed in 3–10 cases. Bar 10 µm. (I–K) Immunostaining with anti-TBBGL (I), anti-SLC6A4 (J), and anti-PRKCA (K). Bar 10 µm. (L) Summary of BC soma positions in INL and terminal positions in IPL.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Frequency distribution of bipolar cells (BCs). Cluster numbers are from Figure 5A,B. (B–O) In situ hybridization or immunostaining of E16 retina with indicated probes. (B,C) GRIK1 (B) and TRPM1 (B), which mark OFF and ON BC populations, respectively, in mammals. (D,E) Double staining with anti-VSX2 (D) and anti-OTX1 (E). (F–O) Expression of markers for BC subsets. In situ hyridization for ERBB4 (F), TPBGL (G), STRA6 (H), RRAD (I), SLC6A4 (K), PRKCA (L), MMEL1 (M), PENK (N), DACT2 (O). Immunostaining with anti-SOX5 (J). Positions of the BCs expressing ERBB4, SOX5, PENK, and DACT2 are indicated by asterisk because these are also expressed by amacrine cells (ACs) or horizontal cells (HCs). (P) Position of BC somata in the INL, calculated from micrographs such as those in B–Q. Positions of soma (dots) were measured, and plotted using the ggplot2 (R) showing the five number summary (the sample minimum, the lower quartile, the median, the upper quartile, and the sample maximum). Edge of OPL is 0% and edge of IPL is 100%. (Q, R) Section (E16) stained with anti-ERBB4 (Q), anti-STRA6 (R). Bar in O, 10 µm for A–O. Bar in R, 5 µm for Q, R.
 
 In mammals, BCs are conventionally divided into two groups, based on whether they respond to illumination with depolarizing (ON) or hyperpolarizing (OFF) responses; BCs innervated by cones can be either ON or OFF, whereas those innervated by rods are all ON type (Euler et al., 2014). In mammals, ON BCs are characterized by expression of TRPM1, ISL1, and GRM6; OFF BCs express GRIK1; and rod BCs express PRKCA in addition to canonical ON markers (Morgans et al., 2009; Morgans et al., 2010; Shekhar et al., 2016). In our dataset, the expression of GRIK1 was mutually exclusive with that of TRPM1 and ISL1 in all clusters but one, resulting in 11 likely ON types and 10 likely OFF types (Figure 5C). (GRM6, the canonical marker of mammalian ON BCs is missing in the current version of the chick genome, so we were unable to assess its expression.) In situ hybridization for GRIK1 and TRPM1 confirmed that these genes are also expressed in a largely non-overlapping pattern in chick retina (Figure 5—figure supplement 1B,C; see below). Supporting this assignment, FEZF2, which marks some OFF BC types in mice (Shekhar et al., 2016) was enriched in 5 OFF types. PRKCA was expressed at highest levels in BC19, a putative ON cluster, suggesting that it might represent rod BCs (Greferath et al., 1990). BC10, which expresses both ON and OFF markers might have mixed properties, as has been seen in fish (Yn et al., 2012). In general, ON BCs were transcriptomically more closely related to other ON BCs than to OFF BC and vice versa (Figure 5B,C), but the segregation was not as strict as in mice or primates, in which ON and OFF BCs form separate clades (Shekhar et al., 2016; Peng et al., 2019; Yan et al., 2020b).
 
@@ -90,9 +126,21 @@ In mammals, there is a relationship between the axonal lamination of BCs and the
 
 Finally, we asked whether the positions of BC somata in the INL were related to the positions of their axons in the IPL. Somata of putative OFF (GRIK1+) and ON (TRPM1+) BCs were situated in the outer and inner portions of the INL, respectively, corresponding to the positions of their axon terminals (Figure 5—figure supplement 1B,C). To assess correspondence for individual types, we determined somata position by in situ hybridization and axon position as described above. For most types, somata position in INL was correlated with terminal arborization position in IPL (quantified in Figure 5—figure supplement 1P, and summarized in Figure 5L). Interestingly, the somata of BC10, the putative ON-OFF type (see above), populate the interface between ON and OFF regions in the INL as revealed by SOX5 immunostaining (Figure 5—figure supplement 1J,P and Figure 5L). This correlation has not, to our knowledge, been observed for mammalian BCs.
 
-## Amacrine cells
+### Amacrine cells
 
 ACs are a diverse class of interneurons, most of which form inhibitory (GABAergic or glycinergic) synapses on BCs, RGCs, and other ACs. In mammals, ACs are the most heterogeneous retinal class (Yan et al., 2020a; Yan et al., 2020b; Peng et al., 2019). Similarly, ACs formed the most heterogeneous class in chicks, with 59 putative types (Figures 1G and 6A), ranging in frequency from 0.4 to 7.2% of all ACs (Figure 6—figure supplement 1A). All expressed SLC32A1, a transporter that loads both GABA and glycine into synaptic vesicles, and each type expressed either GABAergic markers (GABA transporter, SLC6A1, and the GABA synthetic enzymes, GAD1 and GAD2, 40 clusters) or glycinergic markers (glycine transporter 1, SCL6A9, 19 clusters) (Figure 6B). AC somata were present in both the INL and the GCL. Expression of two broadly expressed member of the AP2 family of transcription factors, TFAP2A and TFAP2B, distinguished these populations: TFAP2A expression was restricted to ACs in the INL, while TFAP2B was expressed by ACs in both locations (Figure 6B,D,E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig6-v2.jpg)
+
+**Figure 6.:** (A) Clustering of E18 ACs using UMAP. (B) Dot plots showing expression of the housekeeping gene, GAPDH; pan-AC genes PAX6 and SLC32A1; genes diagnostic of GABAergic ACs (SLC6A1, GAD1, GAD2) and glycinergic ACs (SLC6A9); and TFAP2 isoforms, TFAP2A and TFAP2B. Numbers correspond to clusters in A. Dendrogram above dots shows transcriptional relationships of clusters. (C) Genes expressed by subsets of ACs. (D,E) Immunostaining of E16 retina for TFAP2A (D) and TFAP2B (E). TFAP2A is expressed by multiple amacrine types in INL but not in GCL. (F) Immunostaining of E16 retina for CHAT, which is expressed by ON and OFF starburst ACs. Bar in E is 10 µm for D,E. Bar in F is 10 µm for F.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Frequency distribution of amacrine cells (ACs). Cluster Numbers are from Figure 6A,B. B–D, Immunostaining for NMB in AC17 (B), CHODL in AC40 (C), NPY in AC52 (D). (E–H) Double color in situ hybridization for NPY and NTS (E). NTS and PENK (F), NTS and MAFA (G) and PENK and MAFA (H). (I) Expression of NTS, PENK, MAFA, and NPY in selected AC clusters. (J,K) eCHIKIN-mediated labeling of NTS ACs. Two types of cells are labeled: PENK-expressing AC31 populate the top of the AC layer, and send arbors in S1–S3 (I), and MAFA-expressing AC58 is at the edge of IPL, and ramifies along S5 (J). Retinas are from E16 (B–H) or E14 (J,K). Bar in H is 10 µm for B–H. Bar in K is 10 µm for J and K.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Violin plots showing differentially expressed genes in two clusters of E18 chick starburst ACs which are characterized by similar expression of CHAT and ISL1. (B) Dot plots of SLC17A8 (VGLUT3), SDK2, SDK1, and ERBB4 expression in amacrine cells (ACs). (C,D) Double-color in situ hybridization of E16 retina for SLC17A8 (arrowheads) plus SDK2 (C), or SDK1 (D). (E) eCHIKIN-mediated GFP insertion in ERBB4 at E14. The visualized cell stratifies along S2/S4 (arrowheads) which correspondes to SDK2 localization (Yamagata et al., 2002). See Figure 5—figure supplement 1F for overall expression pattern of ERBB4. Bar in D is 5 µm for C,D. Bar in E is 10 µm.
 
 We identified markers selectively expressed by one or a few types (Figure 6C). Many were neuropeptides, consistent with classical immunohistochemical studies (Karten and Brecha, 1983; Brecha et al., 1984; Karten et al., 1990); they included TAC1 (substance P), NPY (neuropeptide Y), PENK (enkephalin), NTS (neurotensin), and NMB (neuromedin-B). We used in situ hybridization or immunohistochemistry to validate selective expression of several markers in AC subsets (e.g. NMB in AC17; CHODL in AC40; NPY in AC52; NTS in AC31 and 58; PENK highest in AC31, 34, and 42; and MAFA in AC35 and 58; Figure 6C and Figure 6—figure supplement 2B–E). Double label studies distinguished sets of NTS+PENK+ and NTS+MAFA+ double positive ACs, corresponding to AC31 and AC58, respectively (Figure 6—figure supplement 1F–H). An eCHIKIN probe for NTS also labeled two AC types, a more abundant one with broad processes that ramify in S1, S3, and S4, morphologically reminiscent of pigeon NTS+ ACs (Brecha et al., 1984), and a less abundant one with arbors in S5 (Figure 6—figure supplement 2J,K).
 
@@ -100,27 +148,63 @@ We further investigated two AC types that have been studied extensively in mamma
 
 The other is an unusual excitatory AC, the VG3 amacrine, which expresses the vesicular glutamate transporter 3 (SLC17A8, VGlut3). Two closely related chick AC clusters, AC37 and AC39 were SLC17A8-positive, with levels higher in AC37 than AC39 (Figure 6C and Figure 6—figure supplement 2B). AC37 also expressed the recognition molecule Sidekick 2 (SDK2; Yamagata et al., 2002), which is also a selective marker of mouse VG3 ACs (Krishnaswamy et al., 2015; Yamagata and Sanes, 2018), suggesting that AC37 is the authentic chick VG3 AC (Figure 6—figure supplement 2D). SDK1, the homolog of SDK2, is expressed at highest levels in AC38, but not in chick VG3 AC (Figure 6—figure supplement 2B,C). We generated an eCHICK probe from ERBB4, which is expressed at highest levels in AC37 and AC38 among ACs, and used it to mark these cells. They stratified in S2 and S4 (Figure 6—figure supplement 2E), consistent with Sdk1 and Sdk2 localization reported previously (Yamagata et al., 2002) but distinct from mouse VG3 ACs, which stratify in S3.
 
-## RGCs
+### RGCs
 
 From 8107 single RGC transcriptomes, we resolved 41 clusters (Figure 7A) ranging in abundance from 0.6 to 5.1% of all RGCs (Figure 7—figure supplement 1A). Like RGCs in mammals, all expressed the canonical RGC markers RBPMS and THY1, as well as one or more of the Brn3 (POU4F) transcription factors and the RBPMS homolog, RBPMS2 (Figure 7B). Each cluster could be specified by selective expression of one or, in some cases, a few genes (Figure 7B,C; Figure 7—figure supplement 1B–I). They include genes that are expressed by subsets of RGCs in mammals such as SATB1 and SATB2 (Peng et al., 2019; Figure 7D,E). Among the 41 putative RGC types, cluster 11 selectively expressed OPN4.1, a homolog gene to the defining marker of mammalian intrinsically photosensitive RGCs (ipRGCs), as well as the transcription factor EOMES (Tbr2) (Figure 7B; Figure 7—figure supplement 1I), which is expressed in all but not only ipRGCs (Chaurasia et al., 2005; Mao et al., 2014), indicating that GC11 is a chick ipRGC type. We used eCHIKIN to reveal morphologies of three RGC types: GC23 (TFAP2D), with dendrites in S5; GC18 (MC5R), with dendrites in S5; and GC15 and/or 13 (ETV1) with dendrites in S4; (Figure 7F–H). GC15 selectively expresses the recognition molecule SDK1, which we have shown to be concentrated in S4 (Yamagata et al., 2002; Figure 7—figure supplement 2A,B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig7-v2.jpg)
+
+**Figure 7.:** (A) Clustering of E16 RGCs using UMAP. (B) Dot plots showing expression of selected genes expressed in all or subsets of RGCs. Numbers correspond to clusters in A. Dendrogram above dots shows transcriptional relationships of clusters. (C) Dot plots showing expression of genes selectively expressed in RGC clusters. (D, E) Immunostaining of E16 retina for SATB2 and BRN3A/POU4F1 (D) and for SATB1 and SATB2 (E). (F–H) RGCs labeled by eCHIKIN-mediated GFP insertion in TFAP2D (GC23; F), MC5R (GC18; G), and ETV1 (GC15; H). Bars in E and H, 10 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Frequency distribution of RGCs. Cluster numbers are from Figure 7A,B. (B–I) In situ hybridization of E16 retina for MODX1 in GC34 (B), LOC419389 in GC32 (C), ZIC1 in GC3 (D), ETV1 in GC15 or 21 (E), RUNX1 in GC36 (F), RUNX2 in GC1 (G), MC5R in GC23 (H), and OPN4.1 in GC41 (I). Bar, 10 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Double-color in situ hybridization on E16 retina for RGC markers. Blue, DAPI.
+
 The main central target of chick RGCs is the optic tectum. Within the tectum axons of distinct RGC populations terminate in one of five retinorecipient laminae, called B, C, D upper, D lower and F (Yamagata and Sanes, 1995a; Yamagata and Sanes, 1995b; Yamagata et al., 2006). Based on expression of markers identified in previous studies, we conclude that GC25 targets tectal lamina B (TAC1[substance P]+, NMB [neuromedin B]+, SST [somatostatin I]+, and RELN [reelin]+) and GC1 targets tectal lamina F (CHRNB2 [neuronal acetylcholine receptor beta2 subunit]+, SS2 [somatostatin II], and EZR [ezrin]+) (Yamagata et al., 2006). GC1 is characterized by expression of a transcription factor RUNX2 (Figure 7B, Figure 7—figure supplement 2C–E).
 
-## Müller glia
+### Müller glia
 
 Müller glia, the major retinal glial type, has generally been viewed as a homogeneous population (see Discussion). However, we distinguished five clusters in the single-cell dataset of E18 chick retina (Figure 8A and B). In examining genes differentially expressed among these clusters (Figure 8C), we noted three that had been shown to exhibit topographically biased expression at early stages of retinal development, when most cells are still mitotically active: CHRDL1 (ventropin), expressed in ventral retina was enriched in cluster MG1 (Sakuta et al., 2001); and EPHA3 and FOXD1 (BF2), expressed in temporal retina, were enriched in MG5 (Cheng et al., 1995; Yuasa et al., 1996; Yamagata et al., 1999). This suggested that positional differences might underlie Müller glia heterogeneity.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig8-v2.jpg)
+
+**Figure 8.:** (A) Clustering of E18 MGs using UMAP. Inset shows relationship between clusters and retinal position. (B,C) Violin (B) and feature (C) plots of genes differentially expressed among MG clusters. B also shows that pan-MG genes SLC1A3 and RLBP1 are expressed at similar levels among clusters. (D, E) In situ hybridization for WIF1 (D) and CHRDL1(E) on whole mounts at E13 photographed from the posterior (top panels) or anterior (bottom panels). The black structure at the ventral edge in the bottom panels is the intrinsically pigmented pecten oculi. Bar, 1 mm. (F–Q) In situ hybridization on sections from indicated retinal regions to show position-selective of genes from C in Müller glia. F-I WIF1 and CHRDL1 on E16 dorsal and ventral sections. CHRDL1 is also in a subset of amacrine cells throughout the retina. (J–M) FOXG1 and FOXI2 on E14 nasal and temporal sections. (N–Q) PSCA and TMEM123 on E16 central and peripheral sections. Bar, 10 µm. (R) Summary of position-dependent expression of genes in Müller glia at E16, based on images such as those in D-Q.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–F) In situ hybridization for WIF1 (A), CHRDL1(B) at E16, FOXG1 (C), FOXI2 (D) at E14, PSCA (E), TMEM123 (F) at E16. Sections were co-stained with anti-glutamate synthetase (anti-GS), showing that these genes are selectively expressed in Muller glia. Bar, 10 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Co-expression in E18 (A) and E12 (B) retina. The x-axis and y-axis are the expression level of the marker genes, and each dot represents one Müller glial cell. Histogram plots on the top and right of each panel show the overall expression level of the two genes.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Feature plots with a set of positional genes at E12 (see Figure 8C for expression at E18). (B) In situ hybridization for FGF8 and PSCA at E16, showing co-expression of FGF8 and PSCA at the high acuity area (area centralis). The PSCA+ domain is broader than the FGF8 domain (arrowheads). Bar, 20 µm. (C) Schematic representation for expression of PSCA, FGF8, and TMEM123. Between E12 and E20, TMEM123 is progressively restricted to peripheral retina and is then downregulated; FGF8 is present in central retina then downregulated; and PSCA appears in central retina between E14 and E16.
 
 We used in situ hybridization to test this idea. We documented selective expression of CHRDL1 (MG1) in ventral retina, WIF1 (MG2) in dorsal retina, FOXI2 (MG5) in temporal retina, and FOXG1 (BF1) in nasal retina (Figure 8D–M). FOXG1 was detected in a subset of cells, that failed to form a single cluster but presumably comprise nasal cells (Figure 8C). Finally, in situ hybridization for genes selectively expressed in MG3 (PSCA) and MG4 (TMEM123) indicated that cells in these clusters were associated with central and peripheral retina, respectively (Figure 8N–Q). Expression of all markers was graded with position. Co-staining for glutamine synthetase, an MG marker (Linser and Moscona, 1979), showed that all these genes were selectively expressed in MG (Figure 8—figure supplement 1). Quantitative analysis confirmed both the distinct expression patterns of genes expressed by each cluster as well as the partial overlap expected for graded expression and the dual identity of, for example, cells in the ventral quadrant of central retina (Figure 8—figure supplement 2A). Together, these results reveal a striking positional map of gene expression in MG (Figure 8R).
 
 In light of the central-to-peripheral developmental gradient documented above we wondered whether MG3 (central) and MG4 (peripheral) represented authentic positional differences or different developmental stages. To distinguish these alternatives, we performed two additional analyses. First, we queried the E12 dataset. Markers of dorsal, ventral, nasal, and temporal retina were selectively expressed, but the peripheral marker at E18, TMEM123, was broadly expressed at E12, suggesting that it is a marker for an early developmental stage (Figure 8—figure supplement 2A,B; Figure 8—figure supplement 3A). PSCA was barely detectable expressed at this stage, but FGF8, known to mark a small central retinal region (da Silva and Cepko, 2017) was selectively expressed by a restricted group of cells (Figure 8—figure supplement 3A). Second, we used in situ hybridization to assess the distribution of key genes at E12 and E20. As development proceeds, PSCA and FGF8 are expressed in nested domains, suggesting further distinctions along the central-peripheral axis (Figure 8—figure supplement 3B). At later stages, FGF8 expression declines and TMEM123 is progressively restricted to peripheral regions (summarized in Figure 8—figure supplement 3C). Thus, MG3 represents a positionally restricted cell group, whereas MG4 may largely represente immature MGs. In summary, our analysis revealed a positional basis for the transcriptomic heterogeneity of MG.
 
-## Oligodendrocytes
+### Oligodendrocytes
 
 Reclustering of oligodendrocytes revealed five clusters (Figure 9A; Figure 9—figure supplement 1A). All expressed the oligodendrocyte marker OLIG2 (Zhou et al., 2001), but they exhibited differential expression of other known markers of developing and mature oligodendrocytes (reviewed in Goldman and Kuypers, 2015), suggesting that they represented different developmental stages. Pseudotime analysis arranged the clusters in the order: OL5, OL3, OL1, OL2, and OL4, and selectively expressed markers supported this order. For example, HES1, a marker of oligodendrocyte precursors is expressed in the order OL5>OL3,OL1>OL2,OL4; myelin components such as PLP1 and MBP are expressed at highest levels in OL2 and OL4; and CLDN11, a component of tight junctions formed in compacted myelin, is selectively expressed by OL4 (Figure 9B and Figure 9—figure supplement 1B). Several other genes exhibited similar differential expression, making them candidate markers of successive stages in oligodendrocyte differentiation (Figure 9—figure supplement 1C).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig9-v2.jpg)
+
+**Figure 9.:** (A) Clustering of E18 oligodendrocytes viewed in UMAP. (B) Dot plots showing expression of selected genes expressed in all or subsets of oligodendrocytes. Numbers correspond to clusters in A. (C-K) Double-label in situ hybridization showing that BCAS1 and PLP1 are co-expressed in the ganglion cell layer (C) while PDGFR and PLP1 exhibit nonoverlapping expression (I-K). (E-L) Graded distribution of BCAS1+ and PDGFR+ oligodendrocytes along the central-to-peripheral axis at E16. Positions of sections (E–L) are shown in D.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Frequency distribution of oligodendrocytes. Cluster Numbers are from Figure 9A,B. (B,C) Feature plots showing expression of oligodendrocyte-characteristic genes that have been studied in mammals (B) and that we found to be selectively expressed in chicks (C).
+
 We used in situ hybridization to localize oligodendrocytes in retina, using probes for PLP1 and BCAS1 (OL2 and OL4) and PDGFRA (OL1 and OL3). PLP1 and BCAS1 were co-expressed, whereas PDGFRA+ cells formed a distinct population (Figure 9B; Figure 9—figure supplement 1B,C). Both populations were confined to the GCL. BCAS1+PLP1+ cells were more abundant in central retina, near the optic disc, than in the periphery, whereas PDGFRA+ cells were more abundant peripherally than centrally (Figure 9C–L). These patterns are consistent with the idea that oligodendrocyte precursors enter from the optic nerve and migrate peripherally, with progeny maturing in a central-to-peripheral gradient (Ono et al., 1997; Fischer et al., 2010).
 
-## Comparison of avian and mammalian retinal cell classes
+### Comparison of avian and mammalian retinal cell classes
 
 As noted in the Introduction, the basic retinal plan, including the structure and placement of its main cell classes, is conserved among vertebrates. We asked whether this morphological conservation is accompanied by transcriptomic conservation. To this end, we combined data from the E18/E16 chick atlas with those from our previously published retinal atlases of mouse (Macosko et al., 2015; Shekhar et al., 2016; Tran et al., 2019; Yan et al., 2020a), macaque (Peng et al., 2019), and human (Yan et al., 2020b), and submitted the entire group for clustering. This procedure generated nine clusters, all of which contained cells from all species (Figure 10A,B). Each cluster could be identified with high confidence by expression of class-specific markers (Figure 10C) and by reference to prior assignments made when each species was analyzed individually (Figure 10D). Six of the clusters corresponded to major retinal cell classes: rods, cones, HCs, BCs, RGCs, and MG. The other three clusters were composed of ACs distinguished by neurotransmitter type: GABAergic, glycinergic, and cholinergic+GABAergic (SACs); these distinctions are discussed in the next section.
 
@@ -132,7 +216,102 @@ Transcriptomic relationship among classes are shown in Figure 10E. The highest l
 
 In contrast, relationships among species vary by class. Humans and macaques are each other’s closest relatives in only four of nine classes, and mice rather than chicks are outliers in seven of nine cases; both of these patterns are unexpected from phylogenetic considerations. The differences are small, however, and may result from technical considerations: the highly variable genes used for clustering may not be sufficient to distinguish cells within any individual class, as the high dimensional space is saturated by genes for other classes. Indeed, the relationship among species differ when each class is clustered separately (Figure 11, see below). Nonetheless, when all cells are combined and compared by species, retinal cells from chick and mouse are transcriptomically more similar to each other than either is to primates (Figure 10F). We have no explanation for this seeming anomaly. One possibility is that chick and mouse retina are both more complex in terms of numbers of cell types than either human or macaque retina (Table 1).
 
-## Comparison of avian and mammalian retinal cell types
+![Figure 11.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig11-v2.jpg)
+
+**Figure 11.:** Consensus dendrogram tree for PR (A), HC (B), and BC (C) types from chick, mouse, macaque, and human single-cell dataset. In C, ON and OFF types are globally separated by a dotted line, but three exceptions from chick BC types are indicated by asterisk.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) UMAP visualization of pooled amacrine cells (ACs) from chick, mouse, macaque, and human retina following unsupervised clustering. (B) The same as A, but colors code for species. (C) Relationship of clusters from A to AC types identified in each species separately. Consensus dendrogram tree, built as in Figure 11, is shown at the left. Three groups (VG3, SEG, and SAC) conserved between chick and mammals are highlighted.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/63907/elife-63907-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** (A) UMAP visualization of pooled RGCs from chick, mouse, macaque and human retina following unsupervised clustering. (B) The same as A, but colors code for species. (C) Relationship of clusters from A to RGC types identified in each species separately. Consensus dendrogram tree, built as in Figure 11, is shown at the left. A group of ipRGC types conserved among chick and mammals is highlighted.
+
+**Table 1.**
+ Numbers of cell types in mouse, primate (Macaque), and chick retina.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell class</th>
+      <th>Mouse</th>
+      <th>Macaque*</th>
+      <th>Chick (mature)</th>
+      <th>Chick (developing or topographic)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Photoreceptors</td>
+      <td>3</td>
+      <td>4</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Horizontal cells</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Bipolar cells</td>
+      <td>15</td>
+      <td>12</td>
+      <td>22</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Amacrine cells</td>
+      <td>63</td>
+      <td>34</td>
+      <td>59</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RGCs</td>
+      <td>46</td>
+      <td>18</td>
+      <td>41</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Müller glia</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6†</td>
+    </tr>
+    <tr>
+      <td>Oligodendrocytes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Astrocytes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>129</td>
+      <td>72</td>
+      <td>136</td>
+      <td>15†</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mouse: Macosko et al., 2015; Shekhar et al., 2016; Tran et al., 2019; Yan et al., 2020a.Macaque: Peng et al., 2019.*Peripheral retinal types plus foveal types not found in periphery.†We found six positional variants of a single MG type, so the number of MG groups is 6, not 5 and the total number of groups is 150 (136+14) not 151 (136+15)._
+
+### Comparison of avian and mammalian retinal cell types
 
 Finally, we examined the conservation of cell types within classes for the four species, using two methods: building a dendrogram based on similarity matrix of all types from all species (Figure 11 and Figure 11—figure supplements 1 and 2) or pooling cells within each class from all species and submitting the combined data for clustering (shown for ACs and RGCs in Figure 11—figure supplements 1 and 2). Only mature chick types were used for this analysis. Key findings by class are as follows:
 
@@ -152,11 +331,11 @@ RGCs (Figure 11—figure supplement 2): We showed previously that conservation o
 
 We used scRNA-seq to profile ~40,000 cells from the retina of late embryonic chick retina, at which time all retinal neurons have been born and, as assessed structurally, complex neural circuits have formed (Prada et al., 1991; Cepko et al., 1996; Mey and Thanos, 2000; Yamagata and Sanes, 1995a; Yamagata and Sanes, 1995b; Drenhaus et al., 2003; Figure 1C). We used computational methods to divide the cells into 148 clusters or putative cell types (Table 1). We then determined the morphology and positions of many types, and in some cases compared them to transcriptomes from cells collected at E12, at which time nearly all retinal neurons have been born but many are immature. We found that 136 of the clusters represent mature retinal types, or potentially small groups of types. The remaining 13 represent topographic variants or developmental intermediates. The mature types comprise what is to our knowledge the first retinal cell atlas for a non-mammalian vertebrate; the topographic variants demonstrate surprisingly long-lasting retention of positional information in Müller glia; and the developmental intermediates reveal stages in postmitotic maturation of several cell types. Finally, we compared the chick atlas to those we recently assembled for mice, monkeys, and humans (Macosko et al., 2015; Shekhar et al., 2016; Peng et al., 2019; Tran et al., 2019; Yan et al., 2020a; Yan et al., 2020b), providing novel insights into the evolution and conservation of neuronal cell classes and types.
 
-## eCHIKIN
+### eCHIKIN
 
 Germ-line transgenesis is well established in most commonly used model organisms (mice, zebrafish, Drosophila, C. elegans) making it possible to generate reporter lines that can be used to reveal the morphology of molecularly defined cell types. This approach has been a powerful one in our studies of mouse and fish retina (Shekhar et al., 2016; Tran et al., 2019; Yan et al., 2020a; Kölsch et al., 2020). Lacking this tool for chick, we modified methods for CRISPR-based genome modification in somatic cells (Mikuni et al., 2016; Matsuda and Oinuma, 2019; Mikuni, 2020) to insert reporters or Cre recombinase into genes identified as ‘cell-type specific’ in our dataset. The use of short (70 bp) homology arms to direct the reporter to appropriate loci made it straightforward to generate targeting fragments. The method can be used to assess the subcellular distribution of the gene product, by fusing the reporter to the coding sequence, or to assess cell morphology, by inserting a soluble fluorescent protein at the translational start site or coupling Cre with a cre-dependent reporter. Of 20 fragements tested, 16 (80%) labeled cells in predicted patterns, including all cases in which we validated the expression pattern by in situ hybridization or antibodies. One potential drawback of the current method is that gene disruption, particularly if both alleles were disrupted, could alter properties of the targeted cells, including their morphology, but we saw no evidence for this in the cells we examined.
 
-## Retinal atlas
+### Retinal atlas
 
 The 136 ‘mature’ cell types in our atlas are distributed among seven classes: 8 PRs, 4 HCs, 22 BCs, 59 ACs, 41 RGCs, 1 MG (lumping positional variants, as discussed below), and 1 oligodendrocyte. The number is substantially greater than that deduced from morphological surveys (11 BCs, 26 RGCs; Quesada et al., 1988; Naito and Chen, 2004; reviewed in Seifert et al., 2020). Nonetheless it may not be complete. First, we did not detect microglia, astrocytes or a variant glial type named diacytes (Rompani and Cepko, 2010), even though all are known to be present. Second, we do not know whether our RGCs include displaced types with somata in the INL, although these are known to be present in birds (Britto et al., 1988). Third, although the retina is quite mature at E16-18, we cannot exclude the possibility that additional types arise later.
 
@@ -170,11 +349,11 @@ Table 1 compares the number of cell types in the chick atlas to those in mouse, 
 
 As noted above, an additional 14 clusters represented developmental or positional variants. We do not include them in the atlas, consistent with current views on the distinction between cell type and cell state (Zeng and Sanes, 2017; Yuste et al., 2020).
 
-## Retinal cell types
+### Retinal cell types
 
 Many of the cell types we identified, such as PRs and HCs, could be matched to types previously characterized morphologically or immunohistochemically (e.g. Yamagata et al., 2002; Yamagata et al., 2006; Yamagata and Sanes, 2012; Fischer et al., 2007; Edqvist et al., 2008; Enright et al., 2015). For nearly all of these, we provide new markers that can be used to learn more about their structure, function, and development of each cell type. For example, HCs types are distinguished by selective expression of receptor-type tyrosine kinases that have been implicated in neuronal differentiation (LTK, EGFR and NTRK1), and could play roles in their type-specific development or function (Lemmon and Schlessinger, 2010). Other intriguing cell types include a putative ON-OFF bipolar type (BC10), a putative serotonergic bipolar type (BC15, expresses the serotonin transporter [SLC6A2]; see Millar et al., 1988), a glutamatergic amacrine type (AC37, expresses VGlut3 [SLC17A8]) related to the mammalian VG3 amacrine type (Krishnaswamy et al., 2015), and RGC types corresponding to types we showed previously to project to distinct retinorecipient sublaminae in the optic tectum (GC25, B-RGCs; GC1, F-RGCs) (Yamagata and Sanes, 1995a; Yamagata and Sanes, 1995b). There is a long-standing debate as to whether or not birds may have a ‘midget-like’ pathway akin to that in the primate retina (Seifert et al., 2020). This is an important issue, since midget RGCs comprise 80–90% of all RGCs in humans and other primates. We found a close relationship between chick BC18 and primate ‘flat midget bipolars,’ one of two BC types that innervate midget RGCs. We did not, however find convincing relationships of any chick RGCs to primate midget RGCs.
 
-## Retained positional information in Müller glia
+### Retained positional information in Müller glia
 
 To date, only a single Müller glial type has been identified in mice and primates using scRNAseq (Macosko et al., 2015; Shekhar et al., 2016; Peng et al., 2019; Yan et al., 2020b; Wang et al., 2017). In contrast, unsupervised analysis of chick Müller glia generated five clusters, which were, however, less well separated from each other than types in other classes. In situ hybridization with probes for genes differentially expressed among these clusters revealed a positional basis for the heterogeneity. The five clusters were enriched in cells derived from dorsal, ventral, temporal, central, and peripheral retina; and a sixth group, which did not cluster separately, contained cells from nasal retina. Several genes have been shown to exhibit position-dependent expression in early embryos (prior to E8; Cheng et al., 1995; Yuasa et al., 1996; Yamagata et al., 1999; Sakuta et al., 2001); in each case, their expression at E18 was consistent with prior data. Five of these six groups appear to be authentically position-dependent, based on studies at earlier ages, while the sixth (peripheral) may largely reflect the central-to-peripheral gradient of retinal development that has been observed in several species (Kahn, 1974; Spence and Robson, 1989; Prada et al., 1991; Bruhn and Cepko, 1996).
 
@@ -182,31 +361,443 @@ We sought, but failed to find, positional variants of other cell types. Müller 
 
 Recently, Hoang et al., 2020 reported single-cell transcriptomic data on P10 chicken retina. Reanalysis of their data suggests that similar graded expression of some of these topographic gene, such as CHRDL1, persist after hatching (data not shown). This result is tantalizing in light of recent reports on region- and lamina-selective differences in gene expression of mammalian astrocytes (Batiuk et al., 2020; Bayraktar et al., 2020). The positional map we describe for chick MG may provide a useful model for investigating the sources and roles of heterogeneity in glial types that were believed until recently to be indivisible.
 
-## Retinal development
+### Retinal development
 
 Although our aim was to profile mature retinal types, we found 10 clusters that fit within cell classes by our criteria, but lacked mature features: four PRrs, one HC, one Müller glia, and four oligodendrocytes. Several lines of evidence suggested that these clusters were composed of developmental intermediates. First, histological analysis showed that they were more abundant at earlier stages (E10-E12) than at E18 and, in some cases, less abundant still at E20. Second, at intermediate stages, their appearance and disappearance followed the known center to periphery gradient of retinal development (Kahn, 1974; Spence and Robson, 1989; Prada et al., 1991; Bruhn and Cepko, 1996) – that is, mature types were more abundant in central than peripheral retina and the opposite was true for the developmental intermediates. Third, we observed a larger proportion of immature PRs and HCs at E12. Finally, in some cases, their gene expression patterns were characteristic of immature cells. For example, immature PRs did not express opsin, but did express genes implicated in PR development (e.g. ARHGAP18, Maeda et al., 2011; SLIT1, Plump et al., 2002; PRDM1, Katoh et al., 2010; Brzezinski et al., 2013). Similarly, developing oligodendrocytes expressed genes previously associates with successive stages in oligodendrocyte maturation (Goldman and Kuypers, 2015) as well a variety of other genes that now become candidates for stage-specific markers.
 
 A recent study reported on ~5000 single-cell transcriptomes from chick retinas explanted at E1.5–3 and maintained in vitro for 2 days (Ghinia Tegla et al., 2020). As expected from the early stage, most of their cells appear to be progenitors, which we did not find at later stages. They did find two cone, two HC, and one RGC cluster, however, consistent with the early birth of these cells, as shown in Figure 1B.
 
-## Diversity and evolution of retinal cell types
+### Diversity and evolution of retinal cell types
 
 It has been known since the time of Cajal that the fundamental retinal plan is conserved throughout vertebrates: the same cell classes (PR, HC, BC, AC, RGC, and MG) are present in every species studied to date (Cajal, 1892; Lamb et al., 2007). Cajal also recognized that in the vast majority of cases, each class is divided into multiple types that differ in morphological detail. Our retinal atlas has now allowed us to address two unanswered questions: Does the resemblance of cell classes across orders extend from morphological to molecular similarity and are types within classes conserved across orders?
 
 The answer to first question is clearly yes. Despite the >300 million years since the mammalian and avian lineages diverged (Kumar and Hedges, 1998), all classes remained transcriptomically similar among species, and share expression of key genes that have been used to mark each class in mammals (Figure 10). In contrast, types within classes are less well conserved: in only a minority cases, such as PRs, SACs, VG3-ACs and ipRGCs, do chick types have orthologous mammalian types as their closest relatives. This differences between classes and types supports the idea that classes form a common plan within which species evolve distinct types to enable visual behaviors appropriate for their environment, behavioral repertoire, and other sensory capabilities. An open question is whether an underlying similarity might be discovered by examining additional species and/or probing type-specific transcriptional programs. Studies to test these possibilities are underway.
 
-## Conclusions
+### Conclusions
 
 The chick has been used for thousands of studies on the development, structure and function of the retina and its projections to central targets (Nicol, 2015; Cepko et al., 1996; Adler, 2000; Mey and Thanos, 2000; Wilken and Reh, 2016; Wisely et al., 2017; pubmed search for chick+retina retrieves >4000 papers). Two bottlenecks in moving this work forward have been (a) lack of a global classification and characterization of chick retinal cell types and (b) metrics that can be used to relate chick to mammalian retinal cell types. Our goal in the study reported here has been to address these two challenges. Using the powerful method of high-throughput scRNAseq, we provide the first chick retinal atlas since Cajal, 1892, and a gene-specific Golgi-like method to study neuronal morphology, discovering new features of retinal diversity and development as well as insights into the extent to which retinal cell classes and types are conserved between chick and mammals. We hope that our results will facilitate further use of chick as a model for retinal structure, function, and development.
 
 ## Materials and methods
 
-## Single-cell RNA-seq
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Gallus gallus)</td>
+      <td>GRCg6a</td>
+      <td>International Chicken Genome Consortium</td>
+      <td>GCF_000002315.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Species</td>
+      <td>Fertilized chicken eggs (specific pathogen free)</td>
+      <td>Charles River Laboratories</td>
+      <td>Cat# 10100326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Sequences of probes used for in situ hybridization</td>
+      <td>IDT</td>
+      <td>Supplementary file 1 in this study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Sequences of homology arms used to generate eCHIKIN probes</td>
+      <td>IDT, this study</td>
+      <td>Supplementary file 2 in this study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 crRNA (specific to each gene)</td>
+      <td>IDT</td>
+      <td>Supplementary file 2 in this study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXL-BacII-CAG-Zeocin-3xF2A</td>
+      <td>Martell et al., 2016 (doi:10.1038/nbt.3563)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-PBorf</td>
+      <td>Yamagata and Sanes, 2012 (doi:10.1523/JNEUROSCI.3193-12.2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXL-BacII-CAG-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXL-BacII--loxP-STOP-loxP-Venus</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXL-BacII-CAG-Venus</td>
+      <td>Yamagata and Sanes, 2012 (doi:10.1523/JNEUROSCI.3193-12.2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-Cre:GFP</td>
+      <td>Addgene</td>
+      <td>Addgene#13776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken Thy1 (Mouse monoclonal)</td>
+      <td>BSJ-1 (French and Jeffrey, 1986, doi:10.1002/jnr.490160304)</td>
+      <td></td>
+      <td>0.01 µ /ml for cell purification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (Rabbit polyclonal)</td>
+      <td>Swant</td>
+      <td>Cat# CB-38a; RRID:AB_10000340</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB3080P; RRID:AB_2630379</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brn3a (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB1585; RRID:AB_94166</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td rowspan="2">Anti-Calretinin (Rabbit polyclonal)</td>
+      <td rowspan="2">Millipore</td>
+      <td>Cat# AB5054;</td>
+      <td rowspan="2">IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>RRID:AB_2068506</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (Rabbit polyclonal)</td>
+      <td>Swant</td>
+      <td>Cat# CB38; RRID:AB_10000340</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Protein kinase C- α (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# P4334</td>
+      <td>IF(1/10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VSX2 (Rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX114143</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag (Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>Clone name: 3F10</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Satb1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab109122; RRID:AB_10862207</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Satb2 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab51502; RRID:AB_882455</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Neuropeptide Y (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab10980</td>
+      <td>IF(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AP2A (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: 3B5</td>
+      <td>IF(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AP2B (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: 2A4</td>
+      <td>IF(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OTX1 (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: 5F5</td>
+      <td>IF(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX5 (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: 1C12</td>
+      <td>IF(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PAX6 (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: PAX6</td>
+      <td>IF(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NMB (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone name: NMB1</td>
+      <td>IF(1/10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STRA6 (Mouse polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TPBGL (Mouse polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SLC6A4 (Mouse polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken choline acetyltransferase (Rabbit polyclonal)</td>
+      <td>Johnson and Epstein, 1986 (doi:10.1111/j.1471-4159.1986.tb13064.x)</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken glutamate synthetase (Rabbit polyclonal)</td>
+      <td>Linser and Moscona, 1979 (doi: 10.1073/pnas.76.12.6476)</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Papain Dissociation System, Without EBSS</td>
+      <td>Worthington</td>
+      <td>Cat# LK003160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 30Library and Gel Bead Kit v2, 10X Genomics Cat#120237 16rxns</td>
+      <td>10 X Genomics</td>
+      <td>Cat# 120237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-mouse IgG conjugated magnetic beads</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 484–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alt-R CRISPR-Cas9 tracrRNA</td>
+      <td>IDT</td>
+      <td>Cat# 1072533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alt-R S.p. Cas9 Nuclease V3</td>
+      <td>IDT</td>
+      <td>Cat# 1081058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alt-R Cas9 Electroporation Enhancer</td>
+      <td>IDT</td>
+      <td>Cat# 1075915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alt-R HDR Enhancer</td>
+      <td>IDT</td>
+      <td>Cat# 1081072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fast Green FCF</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F7252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Cyanine 3 Plus Evaluation Kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# NEL744E001KT (FP1170)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Fluorescein Plus Evaluation Kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# NEL741E001KT (FP1168)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-Digoxigenin-POD, Fab fragments</td>
+      <td>Roche</td>
+      <td>Cat# 11207733910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EconoTaq PLUS GREEN 2X Master Mix</td>
+      <td>Lucigen</td>
+      <td>Cat# 30033–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CIAquick-Gel Extraction Kit</td>
+      <td>Oiagen</td>
+      <td>Cat# 28704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MiniMACS Separation Unit</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 421–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MACS Multistand</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 423–03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Type WHM large cell separation columns</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 422–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BTX 830</td>
+      <td>BTX</td>
+      <td>Cat# 45–0662</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Genetrode</td>
+      <td>BTX</td>
+      <td>Cat# 45–0116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji) Version 2.1.0</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 3.6.2</td>
+      <td>The R foundation</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio 1.3.1056</td>
+      <td>Rstudio</td>
+      <td>https://rstudio.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop 20.0.9 release</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Single-cell RNA-seq
 
 Animals were used in accordance with NIH guidelines and protocols approved by Institutional Animal Use and Care Committee at Harvard University. Fertilized chicken eggs (specific pathogen free) were obtained from Charles River Laboratories (Wilmington, MA), and incubated in a 1550 HATCHER (GQF MFG, Savannah, GA) at 38°C. Retinas were dissected in Hanks’ balanced salt solution supplemented with 20 mM HEPES, pH 7.4 (HBSS). After removing pigment epithelial cells and pecten, whole retinae from both eyes were dissociated at 37°C for 30 min with papain (LK003160, Worthington, Lakewood, NJ). The same volume of Neurobasal medium (Thermo Fischer, Waltham, MA) and 10 µg of deoxyribonuclease I (DN25, Sigma, St. Louis, MO) were added, and cells were triturated. To remove debris, cells were then washed twice through a cushion of the ovomucoid protease inhibitor/BSA/HBSS in the papain dissociation medium. Cells were counted, resuspended in PBS with acetylated BSA, and processed with the Chromium Next GEM Single Cell 3’ Library Construction Kit (version 2) (10x Genomics, Pleasanton, CA; Zheng et al., 2017). Briefly, single cells are partitioned into oil droplets containing single oligonucleotide-derivatized beads followed by cell lysis, barcoded reverse transcription of RNA, amplification, shearing, and attachment of 5’ adaptor and sample index oligos. Libraries were sequenced on the Illumina HiSeq 2500 (Paired end reads: Read 1, 26 bp, Read 2, 98 bp).
 
 To enrich RGCs, cells dissociated as above were immunopurified with mouse monoclonal antibody to Thy-1 (BSJ-1: French and Jeffrey, 1986) using goat anti-mouse IgG conjugated magnetic beads (Miltenyi Biotec, Auburn, CA) (Yamagata et al., 2002). Cells were then resuspended in PBS with acetylated BSA and processed as above.
 
-## Analysis of scRNA-seq data
+### Analysis of scRNA-seq data
 
 We analyzed scRNA-seq data using a pipeline modified from Peng et al., 2019. Steps are as follows:
 
@@ -218,7 +809,7 @@ Initial assessment of the aligned data showed a complete absence of violet opsin
 
 A down-sampling test was performed by randomly sampling 10–90% of cells within each class in steps of 10% of the total number of cells used to generate the atlas. At each step, downsampling was performed 10 times, using different randomly selected subsets. Subsets were then clustered by the same methods as described above.
 
-## Antibodies and immunostaining
+### Antibodies and immunostaining
 
 Antibodies used in this study were: rabbit polyclonal antibodies to GFP (Millipore, AB3080P); mouse monoclonal anti-Brn3a (clone, 5A3.2, Millipore, MAB1585); rabbit anti-calretinin (Millipore, AB5054); rabbit anti-calbindin (Swant, CB38); rabbit anti-protein kinase C- α (PKCα) (Sigma, P4334); rabbit anti-VSX2 (Chx10, GeneTex, GTX114143); rat monoclonal anti-HA tag (Roche, 3F10); rabbit anti-Satb1(Abcam, ab109122); mouse monoclonal anti-Satb2 (Abcam, ab51502); rabbit anti-Met-enkephalin (ImmunoStar, 20065); rabbit anti-neuropeptide Y (Abcam ab10980). Mouse monoclonal antibodies AP2A (clone, 3B5), OTX1 (Otx-5F5), and PAX6 were from Developmental Studies Hybridoma Bank (Iowa City, IA). A mouse monoclonal antibody to neuromedin-B (NMB1) was previously described (Yamagata et al., 2006) and is available from Developmental Studies Hybridoma Bank.
 
@@ -230,7 +821,7 @@ In situ hybridization cDNA for generating RNA probes were amplified from cDNA ob
 
 RNA probes were generated from the linearized plasmids using T7 RNA polymerase (Thermo Fisher) and digoxygenin- or fluorescein-labeled nucleotides (Roche), and hydrolyzed to around 500 bp if needed. In situ hybridization using nitro-blue tetrazolium and 5-bromo-4-chloro-3′-indolyphosphate and double color in situ hybridization using TSA Plus (PerkinElmer) were performed as previously described (Yamagata et al., 1999; Yamagata and Sanes, 2012). For double-color in situ hybridization, slides were incubated with 0.1M glycine-HCl, pH 2.0, for 30 min at room temperature following the first color reaction to remove peroxidase-conjugated anti-hapten antibodies and thereby avoid cross-reactivity. Sections were mounted in and imaged with a Zeiss Meta510 confocal microscope.
 
-## eCHIKIN
+### eCHIKIN
 
 To label and visualize cells that express marker genes, we devised eCHIKIN (electroporation- and CRISPR-mediated Homology-Instructed Knock-IN). nBriefly, our method resembles in several respects two others that adapted the initial SLENDR technology (Mikuni et al., 2016) to mouse embryos (Ohtsuka et al., 2018; Miura et al., 2018; Gurumurthy et al., 2019). We introduced CRISPR/Cas9 ribonucleoprotein complexes and single-strand DNA to chick embryos by in ovo electroporation, using reagents from the Alt-R CRISPR-Cas9 System (IDT, Coralville, IA). Cas9 requires a CRISPR RNA (crRNA) to specify the DNA target sequence. The crRNA sequence was designed to target the sequence near the initiation codon (ATG) based on S. pyogenes PAM sequence and the MIT guide specificity score in the UCSC genome browser (https://genome.ucsc.edu) (Supplementary file 2). The crRNA (0.1nmole) was first annealed with an equimolar amount of transactivating crRNA (tracrRNA) in 5 µl in the annealing buffer (GenScript) by heating at 95°C for 5 min followed by rapid chilling. This product was then incubated with S. pyogenes Cas9 protein (5 µg) for 60 min at room temperature to prepare a ribonucleoprotein complex. This complex was mixed with a single-strand DNA (0.1–0.5 µg) and the other components described below. Each single-strand DNA contains ~70 base gene-specific homology arms at the both ends (Supplementary file 2). Short single strand DNAs were purchased from IDT (Coralville, Iowa). Longer single strand DNA was prepared by asymmentric PCR using a 1:100 ratio of two primers. Templates included Venus (Aequorea coerulescens GFP variant) or Cre (Addgene plasmid #14797). Following amplification with EconoTaq PLUS GREEN 2X Master Mix (Lucigen), products were agarose gel-purified to select single strand DNA using the QiaQuick Gel Extraction kit (Qiagen); 20%(v/v) isopropanol was added to the solubilization solution before binding to spin columns.
 
@@ -238,6 +829,6 @@ The mixture of ribonucleoprotein and single-strand DNA (0.1–0.5 µg) was elect
 
 Electroporation was with six square pulses of 7 V for 25 ms using ECM830 (Harvard Apparatus) after immersing electrodes with Hanks’ balanced salt solution supplemented with 50 µg/ml kanamycin. After sealing eggshells with plastic tapes, eggs were returned to 37°C incubator.
 
-## Image and statistical analysis
+### Image and statistical analysis
 
 Images were processed with Adobe Photoshop, and Image-J (Version 1.47d, Fiji). Position of spots were measured using Image-J. Single-cell RNA-Seq data were analyzed using R 3.6.2 (The R foundation, https://www.r-project.org/).

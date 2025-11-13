@@ -85,11 +85,7 @@ This could have been a concern if the analysis was carried out with a finer grai
 
 The authors state that different pseudo-absence models produced "similar results", but provide no means for reviewers to gauge that similarity.
 
-We simply did not want to flood the reader with supplementary information material. A long and complex modeling procedure as this one entails many choices made at different points. Showing, all the possible consequences of the choices become intractable and of somewhat limited use. The figures below show the predicted distribution of the pseudo-absences distributed according to human populations (Author response image 1) and poultry (Author response image 2), with the IsChina term set to 0.10.7554/eLife.19571.018Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.19571.01810.7554/eLife.19571.019Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.19571.019
-
-DOI: http://dx.doi.org/10.7554/eLife.19571.018
-
-DOI: http://dx.doi.org/10.7554/eLife.19571.019
+We simply did not want to flood the reader with supplementary information material. A long and complex modeling procedure as this one entails many choices made at different points. Showing, all the possible consequences of the choices become intractable and of somewhat limited use. The figures below show the predicted distribution of the pseudo-absences distributed according to human populations (Author response image 1) and poultry (Author response image 2), with the IsChina term set to 0.10.7554/eLife.19571.018Author response image 1.10.7554/eLife.19571.019Author response image 2.
 
 The differences are hardly noticeable (see, for example the small differences along the Iraq/Iran border) and we would be happy to add these predictions to the manuscript should the editor feel this is a necessity, alongside other results, but we feel this would simply add an extra load of results with limited added informational value.
 

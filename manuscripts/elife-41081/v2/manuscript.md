@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.41081.001 Relapses of Plasmodium dormant liver hypnozoites compromise malaria eradication efforts. New radical cure drugs are urgently needed, yet the vast gap in knowledge of hypnozoite biology impedes drug discovery. We previously unraveled the transcriptome of 6 to 7 day-old P. cynomolgi liver stages, highlighting pathways associated with hypnozoite dormancy (Voorberg-van der Wel et al., 2017). We now extend these findings by transcriptome profiling of 9 to 10 day-old liver stage parasites, thus revealing for the first time the maturation of the dormant stage over time. Although progression of dormancy leads to a 10-fold decrease in transcription and expression of only 840 genes, including genes associated with housekeeping functions, we show that pathways involved in quiescence, energy metabolism and maintenance of genome integrity remain the prevalent pathways active in mature hypnozoites.
+Relapses of Plasmodium dormant liver hypnozoites compromise malaria eradication efforts. New radical cure drugs are urgently needed, yet the vast gap in knowledge of hypnozoite biology impedes drug discovery. We previously unraveled the transcriptome of 6 to 7 day-old P. cynomolgi liver stages, highlighting pathways associated with hypnozoite dormancy (Voorberg-van der Wel et al., 2017). We now extend these findings by transcriptome profiling of 9 to 10 day-old liver stage parasites, thus revealing for the first time the maturation of the dormant stage over time. Although progression of dormancy leads to a 10-fold decrease in transcription and expression of only 840 genes, including genes associated with housekeeping functions, we show that pathways involved in quiescence, energy metabolism and maintenance of genome integrity remain the prevalent pathways active in mature hypnozoites.
 
 ## Introduction
 
@@ -47,7 +47,7 @@ Plasmodium vivax malaria puts 35% of the world’s population at risk of disease
 
 ## Results
 
-## Transcriptome analysis of malaria parasite liver stages after 9 to 10 days of in vitro culture
+### Transcriptome analysis of malaria parasite liver stages after 9 to 10 days of in vitro culture
 
 To gain further understanding of dormancy mechanisms described in hypnozoites at days 6 and 7, we FACS-purified hepatocytes containing GFP-expressing hypnozoites (GFPlow) and liver schizonts (GFPhigh) at later time points, 9 and 10 days after P. cynomolgi M strain sporozoite infection. Mean fluorescence intensities, a measure that depends on cell size and fluorescence intensity, slightly increased from day 6 to day 9 in the GFPlow samples, illustrating a small increase in the volume of hypnozoites over time (Mikolajczak et al., 2015). A more pronounced increase over time was observed in the GFPhigh samples, indicating significant parasite growth (Figure 1—figure supplement 1A). Microscopic analysis of quality control samples taken from the FACS-sorted parasites revealed advanced schizogony at day 9 (GFPhigh samples) and small forms that were, similar to day 6 sorted forms, in- or outside hepatocytes (GFPlow samples) (Figure 1—figure supplement 1B). The GFPlow samples contained substantial amounts of uninfected hepatocytes, possibly due to increased hepatocyte autofluorescence as a result of prolonged culture.
 
@@ -55,9 +55,31 @@ RNA-sequencing resulted in a dataset containing two independent schizont and hyp
 
 These results show that presence of schizont transcripts in the day 10 GFPlow samples requires careful in vitro validation for each transcript that is detected in hypnozoites. For this reason, we decided to exclude the day 10 timepoint from further analyses.
 
-## Late stage liver parasites reveal features of advanced schizogony and dormancy
+### Late stage liver parasites reveal features of advanced schizogony and dormancy
 
 We found that later stage (day 9) liver schizonts express a similar number of genes as those observed at days 6/7 (5640 genes at day 9 vs 5702 at day 6/7, with FPKM ≥1). However at day 9 genes are expressed at higher levels (5138 genes at day 9 vs 3582 at day 6/7, with FPKM ≥10) (Figure 1). Most of the genes (94%, 3380 out of total 3582) showing already high expression level at day 6/7 (≥10 FPKM) remain highly expressed at day 9. However, at day 9 we find an additional 1758 genes with increased expression levels (≥10 FPKM) compared to day 6/7. These include genes that are involved in merozoite formation (PALM) or required by merozoites for red blood cell invasion (RhopH3, AMA1, MSP1) and that are already reported to be expressed in late stage liver schizogony (Sherling et al., 2017; Haussig et al., 2011). Moreover, the sexual stage-specific marker Pvs16, which was previously shown to be expressed in late stage P. vivax liver schizonts, also shows upregulation at day 9 compared to day 6/7 (Figure 1—figure supplement 4) (Roth et al., 2018). In addition to invasion pathways, cytoskeleton motor protein pathways showed increased transcriptional activity at day 9 (97%) compared to day 6 (69%) (Supplementary file 4). These actin-myosin motor proteins play crucial roles in apicomplexan host cell invasion (Bargieri et al., 2014). It is well known in blood stages that these genes exhibit peak expression in late schizont stage only, which correlates with schizont maturation (Bozdech et al., 2003). The high transcription level of these motor protein genes in day 9 liver schizonts suggests near to complete schizont maturation at this time point. Overall, the increased transcriptional activity observed in the later stage liver schizonts reveals molecular events associated with progressing schizogony.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-v2.jpg)
+
+**Figure 1.:** Left panel: Distribution of average gene expression values in the schizont samples at day 6/7 (light blue; n = 3) and at day 9 (dark blue; n = 2), and distribution of average gene expression values in the hypnozoites samples at day 6/7 (light green; n = 4) and at day 9 (dark green; n = 2). FPKM, Fragments per kilobase of transcript per million mapped reads. Upper right panel: Venn diagrams show the overlap of genes expressed ≥1 FPKM and ≥10 FPKM, respectively, at day 6/7 and at day 9 in the schizont samples. Lower right panel: Venn diagrams show the overlap of genes expressed ≥1 FPKM and ≥10 FPKM, respectively, at day 6/7 and at day 9 in the hypnozoite samples.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Bar chart depicting the median fluorescence intensity (MFI) values of GFPhigh (schizonts) and GFPlow (hypnozoites) samples FACS-sorted at days 6, 9 and 10 post-sporozoite infection. MFI values are depicted as box whisker (min-max) plots. See Materials and methods for details. (B) FACS-purified GFPhigh and GFPlow fractions at day nine post sporozoite infection. GFPlow parasites were found both in- and outside hepatocytes after sorting (arrows). Day 9 GFPlow sorted parasite samples contained substantial amounts of uninfected hepatocytes. Scalebar 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scatter plot showing all pairwise log10 normalized CPM correlations between samples from (A) schizonts and (B) hypnozoites. The upper right part of the panel shows the value of the calculated Pearson correlation coefficients.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Venn diagrams show the overlap of genes expressed ≥3 FPKM at day 6/7 and 9 in the schizont samples (left, SZ) and in the hypnozoite samples (right, HZ), respectively. (B) Upper Table: Known merozoite-specific markers along with their mean expression levels (FPKM) in the schizont and hypnozoite samples at day 9 and day 10. Lower Table: Selected control genes along with their mean expression levels (FPKM) in the schizont and hypnozoite samples at day 9 and day 10. (C) RNA-FISH (RNAscope) of a hypnozoite and two liver schizonts at 10 days post-sporozoite infection. Staining of a hypnozoite (HZ) and a schizont (SZ2) probed with hsp70 (cy5). Staining was absent in fully mature schizonts (SZ1). Probing against msp1 (FITC) detected transcripts in schizonts only. Scalebar 10 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Table showing hypnozoite-specific genes previously identified in Voorberg-van der Wel et al., 2017 passing the cut-off of >2 fold change absolute value and 10% false discovery rate at day 6/7, along with their mean gene expression values (FPKM) in hypnozoites and schizonts at day 9. (B) Upper diagram: Mean gene expression values (FPKM) of 3 ApiAP2 factors in the hypnozoite samples at day 6/7 and day 9. Lower diagram: Mean gene expression values (FPKM) of known malaria drug targets (Voorberg-van der Wel et al., 2017) in the hypnozoite samples at day 6/7 and day 9.
 
 In contrast, day 9 hypnozoites showed a lower transcriptional activity compared to day 6/7 with only few genes expressed at higher levels (30 genes at day 9 vs 870 at day 6/7, with FPKM ≥10). This is also reflected in the significant 10-fold decrease of gene expression levels in hypnozoites (e.g. from 5.8 avg FPKM at day 6/7 down to 0.6 avg FPKM at day 9: Wilcoxon test p-value<0.02857). We observed that only 18% of genes expressed in days 6/7 hypnozoites (628 out of 3462 genes with FPKM ≥1) are as well expressed at day 9 (628 out of 840 genes with FPKM ≥1). This transcriptional decrease is even more pronounced for highly expressed genes where only 2.4% of genes expressed at day 6/7 (21 out of 870 genes with FPKM ≥10) show high transcriptional activity also at day 9 (21 out of 30 genes with FPKM ≥10) (Figure 1). The small number of highly expressed genes at day 9 is most likely the result of an overall reduced transcriptional activity ongoing during hypnozoite maturation. Indeed, the nine genes found to be highly expressed only in day 9 hypnozoites mostly encode ribosomal and histone proteins which are also expressed at day 6/7 but just below the cutoff of 10 FPKM. In contrast, over 70% of all genes expressed ≥10 FPKM at day 6/7 are expressed below 1 FPKM at day 9 (Supplementary file 3). These results provide for the first time a strong evidence that maturation of the dormant liver stage is associated with continued reduction of its transcriptional activity.
 
@@ -67,13 +89,21 @@ To evaluate the potential to apply insights from the transcriptome data for drug
 
 Taken together, our data suggest that while late schizogony at day 9 is associated with increased transcriptional activity compared to days 6/7, continued dormancy at day 9 is associated with a decrease in gene transcription.
 
-## Dormancy in maturing hypnozoites is associated with a general metabolic shutdown
+### Dormancy in maturing hypnozoites is associated with a general metabolic shutdown
 
 We previously reported that schizonts at days 6/7 express over 90% of the malaria pathways annotated in PlasmoDB (Voorberg-van der Wel et al., 2017). These included energy and glucose metabolism, such as pentose phosphate cycle enzymes, CoA biosynthesis and mannose/fructose metabolism, as well as some erythrocyte invasion pathways (Voorberg-van der Wel et al., 2017). In schizonts at day 9 this percentage is increased to 93% active pathways (Figure 2, Supplementary file 4). The only pathways with a decrease in gene activity compared to day 6/7 are involved in remodeling of the host erythrocyte, and expression of genes in the apicoplast. Indeed clustering of the pathways into higher level groups of similar functions (http://mpmp.huji.ac.il/; April, 2018) revealed that cytoadherence is the only function with expression of less than 70% of the genes (Figure 2—figure supplement 1A).
 
 In contrast, eight pathways with an increase of over 50% in gene activity at day 9 compared to day 6/7 represent almost exclusively functions involved in parasite invasion, DNA replication and homologous recombination (Supplementary file 4). Hence, we conclude that our data at day 9 reflects the maturation of merozoites in late schizogony.
 
 In contrast to schizonts, we previously showed that day 6/7 hypnozoites express less than half of the annotated malaria pathways reflecting the quiescent state and low metabolism that may be expected in dormant forms (Voorberg-van der Wel et al., 2017). With only 49 out of 257 (19.1%) pathways expressing more than half of their constituent genes above 1 FPKM, the total number of active pathways is even lower in hypnozoites at day 9 (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heat map representing expression of Plasmodium pathways in schizonts and hypnozoites at days 6/7 and 9. A total of 257 biological pathways annotated in P. falciparum were assigned to P. cynomolgi through orthology (see Materials and methods in Voorberg-van der Wel et al., 2017). Pathway expression is shown with a color gradient from white (where the fraction of genes detected above 1 FPKM is 0%) to red (where this fraction is 100%). (B) Overall percentage of active pathways in schizonts and hypnozoites at days 6/7 and 9.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Heat map of pathways clustered into higher-level groups of similar functions (http://mpmp.huji.ac.il/; April, 2018) in (A) Schizonts and (B) Hypnozoites at days 6/7 and 9. For each group the mean expression was calculated. Expression is shown with a color gradient from white (where the fraction of genes detected above 1 FPKM is 0%) to red (where this fraction is 100%). (C) Selected pathways, which show high expression levels in hypnozoites at days 6/7 and 9.
 
 For further analysis, the 257 pathways were clustered into higher-level groups of similar functions (http://mpmp.huji.ac.il/; April, 2018) and, for each group, the mean percentage of genes active in the pathways was calculated for hypnozoites at day 6/7 and day 9. This revealed lower transcription levels of genes involved in transcription, translation, replication and merozoite invasion in the day 9 hypnozoites. Functions such as chromatin structure and energy metabolism were less represented in hypnozoites at day 9, however, still showed a moderate expression level (Figure 2—figure supplement 1B).
 
@@ -83,9 +113,17 @@ Further, we show that functional processes such as cytoadherence were already ex
 
 To conclude, our data show that gene expression levels of housekeeping pathways in later stage, day 9 hypnozoites are dampened. Only pathways previously associated with quiescence and required for energy metabolism and maintenance of chromosome integrity remain expressed in hypnozoites.
 
-## Mature hypnozoites express genes involved in the export and transport of parasite proteins into the host-cell
+### Mature hypnozoites express genes involved in the export and transport of parasite proteins into the host-cell
 
 Although dormant, the hypnozoite may still interact with its host cell for survival. Two proteins at the parasite-host interface, the up-regulated in infective sporozoites gene 4 (UIS4) and the exported protein-1 (EXP-1), located at the site of the parasitophorous vacuole membrane (PVM), have indeed been shown to interact with host cell proteins in rodent malaria models (Sá E Cunha et al., 2017; Mueller et al., 2005; Petersen et al., 2017). In P. vivax, UIS4 was shown to be present in hypnozoites and schizonts throughout liver stage development, while EXP-1 expression was only observed in mid-stage schizonts (Mikolajczak et al., 2015). We found transcripts for those genes in both schizonts and hypnozoites in our day 9 transcriptome data and generated P. cynomolgi antibodies against these proteins for validation (Figure 3—figure supplement 1A). As expected, IFA with UIS4 antibodies showed signal in both hypnozoites and schizonts at day 9 (Figure 3A). However, we also observed EXP-1 staining in both parasite forms at day 9. Similar to P. vivax, EXP-1 staining was close to background at day 2, while UIS4 staining was clearly visible (Figure 3—figure supplement 1B). From day 3/4 onwards EXP-1 staining gradually increased over time and appeared to co-localize with the PVM, both in schizonts and hypnozoites. Further investigation of P. vivax liver stage parasites from a humanized mouse model confirmed the presence of EXP-1 in hypnozoites (Figure 3B, procedures were used as described in Mikolajczak et al. (2015)), indicating that our findings are not an artifact from cell culture. This shows that, while expression of most genes in the hypnozoite is decreased, other genes may be switched on during its maturation into true dormancy.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunofluorescent staining patterns of UIS4 (Alexa-594), EXP-1 (Alexa-594) and HSP70 (FITC) in day 9 P. cynomolgi hypnozoites (HZ) and liver schizonts (SZ). Scalebar 25 μm. (B) EXP-1 is expressed in P. vivax hypnozoites (HZ) and liver schizonts (SZ) at day 8 post sporozoite infection. Colocalization of EXP-1 and UIS4 suggests that EXP-1 is expressed on the PVM, in agreement with other Plasmodium species. DNA was localized with DAPI. Scalebar 5 μm (HZ) and 15 μm (SZ). (C) RNA-FISH staining of Alba1 (cy3) and PTEX150 (cy3) in day 10 P. cynomolgi hypnozoites (Hz) and liver schizonts (Sz). Scalebar 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41081/elife-41081-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Diagram showing mean gene expression values (FPKM) of UIS4 and EXP-1 in hypnozoites at day 6/7 and day 9. (B) Immunofluorescent staining patterns of UIS4 (Alexa), EXP-1 (Alexa) and HSP70 (FITC) in P. cynomolgi liver stage parasites at different times post sporozoite infection. Scalebar 25 μm. (C) Diagram showing mean gene expression values (FPKM) of genes coding for Alba1-4 and genes coding for components of the translocon PTEX in hypnozoites day 6/7 and day 9, respectively.
 
 In the RNA-seq data set of day 9, we found relatively high transcript levels for members of the Alba gene family in hypnozoites, which is in concordance with the previously published data of days 6/7 (Figure 3—figure supplement 1C) (Voorberg-van der Wel et al., 2017). This gene family plays a crucial role in transcriptional and translational regulation during zygote development as well as in the blood stage of infection (Reddy et al., 2015; Mair et al., 2010). Indeed we found strong signals for Alba1 transcripts by RNA-FISH at days 6 (not shown) and day 10, both in hypnozoites and schizonts (Figure 3C), indicating that this gene may also fulfill important regulatory roles in liver stage development, including hypnozoites.
 
@@ -123,31 +161,31 @@ To conclude, although we do not identify a specific transcriptional marker for h
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 Nonhuman primates were used because no other models (in vitro or in vivo) were suitable for the aims of this project. The research protocol was approved by the local independent ethical committee conform Dutch law (BPRC Dier Experimenten Commissie, DEC, agreement number #708). Details are described by Voorberg-van der Wel et al. (2017).
 
-## Transgenic Plasmodium cynomolgi sporozoite production
+### Transgenic Plasmodium cynomolgi sporozoite production
 
 P. cynomolgi M strain PcyC-PAC-GFPhsp70-mCherryef1α (Voorberg-van der Wel et al., 2013) sporozoites were produced as described previously (Voorberg-van der Wel et al., 2017).
 
-## Parasite liver stage culture and cell sorting
+### Parasite liver stage culture and cell sorting
 
 Procedures for liver cell isolation, liver stage culture and cell sorting were essentially as described previously (Voorberg-van der Wel et al., 2017). Briefly, transgenic P. cynomolgi salivary gland sporozoites were isolated and added to freshly isolated Macaca mulatta hepatocytes. Hepatocytes were seeded in 96-well collagen-coated plates at 90,000 hepatocytes per well and 2 days later 50,000 sporozoites were added per well. After 9 or 10 days of culture, infected cells were sorted with a BD FACSAria flowcytometer and fractions were collected in Trizol and stored at −80°C until RNA extraction. Median fluorescence intensity (MFI) values of GFPlow and GFPhigh samples were calculated using four separate recordings of 1 million cells per experiment (day 6, n = 4; days 9 and 10, n = 3).
 
-## Protein and antibody production
+### Protein and antibody production
 
 PcyM_0602100 (UIS4) aa20-166 and PcyM_0924700 (EXP-1) aa19-130 were expressed in E. coli, purified using a Ni-IMAC column followed by gel-filtration and used to immunize rats (Eurogentec, Belgium).
 
-## Immunofluorescence analysis (IFA)
+### Immunofluorescence analysis (IFA)
 
 IFA staining of methanol fixed liver stage parasites was carried out as before (Voorberg-van der Wel et al., 2017). Alternatively, parasites were fixed in 4% paraformaldehyde (30 min., room temperature), washed and incubated with primary and secondary antibodies diluted in 1% BSA/0.3% Triton X-100 in PBS.
 
-## RNAscope in situ hybridization
+### RNAscope in situ hybridization
 
 For RNA-FISH, P. cynomolgi liver stage cultures in 96-well collagen-coated CellCarrier plates (PerkinElmer) were washed once in PBS and fixed in 4% paraformaldehyde (Affymetrix) at room temperature for 30 min. Cultures were then washed, dehydrated and stored in 100% ethanol at −20°C until RNA-FISH was performed using a Tyramide Signal Amplification (TSA) based assay from Advanced Cell Diagnostics (RNAscope Multiplex Fluorescent Assay v2), essentially according to the manufacturer’s instructions. Following rehydration protease digestions were performed using pretreatment solution three from the kit at 1:10 dilution for 20 min. at room temperature. Hybridizations were 2 hr at 40°C. Probes used were directed against P. cynomolgi hsp70 (PcyM_0515400, region 606–1837 of XM_004221103.1), PTEX150 (PcyM_1315200 targeting 871–2360 of XM_004224250.1), Alba1 (PcyM_1427300; targeting 101–692 of PcyM_1427300) and MSP1 (PcyM_0731200 targeting 147–1127 of XM_004221774.1). After hybridization, TSA amplification steps were performed as described by the manufacturer. Following DAPI staining, cells were kept in PBS for imaging. Images were acquired with a Leica DMI6000B inverted fluorescence microscope equipped with a DFC365FX camera using a HC PL APO 63x/1.40–0.60 oil objective.
 
-## RNA sequencing
+### RNA sequencing
 
 Total RNA was isolated using the Direct-zol RNA MiniPrep Kit (Zymo Research) including on-column DNase digestion according to the manufacturer’s instructions. The quality of the RNA samples was assessed with the High Sensitivity RNA kit using the TapeStation 4200 instrument (Agilent Technologies).
 

@@ -16,12 +16,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02drdmm93 Department of Obstetrics and Gynecology, National Clinical Research Center for Obstetric and Gynecologic Diseases, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-2. https://ror.org/01skt4w74 School of Medical Technology，Beijing Institute of Technology Beijing China
-3. https://ror.org/03cve4549 Department of Medical Oncology，Beijing Tsinghua Changgung Hospital, School of Clinical Medicine, Tsinghua University Beijing China
-4. https://ror.org/02qrdc062 Department of Cancer Biology and Pharmacology, University of Illinois College of Medicine Peoria United States
-5. https://ror.org/02afcvw97 Institute of Reproductive Medicine, Medical School of Nantong University Nantong China
-6. https://ror.org/0207yh398 School of Basic Medical Sciences, Shandong University Jinan China
+1. Department of Obstetrics and Gynecology, National Clinical Research Center for Obstetric and Gynecologic Diseases, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+2. School of Medical Technology，Beijing Institute of Technology Beijing China ([ROR:01skt4w74](https://ror.org/01skt4w74))
+3. Department of Medical Oncology，Beijing Tsinghua Changgung Hospital, School of Clinical Medicine, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+4. Department of Cancer Biology and Pharmacology, University of Illinois College of Medicine Peoria United States ([ROR:02qrdc062](https://ror.org/02qrdc062))
+5. Institute of Reproductive Medicine, Medical School of Nantong University Nantong China ([ROR:02afcvw97](https://ror.org/02afcvw97))
+6. School of Basic Medical Sciences, Shandong University Jinan China ([ROR:0207yh398](https://ror.org/0207yh398))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ In this report, we utilized single-nucleus transcriptomic sequencing and perform
 
 ## Results
 
-## The overall changes in aged hypothalamus with or without long-term 17α-estradiol treatment via snRNA-seq profiling
+### The overall changes in aged hypothalamus with or without long-term 17α-estradiol treatment via snRNA-seq profiling
 
 To investigate the hypothalamus as a potential key target of 17α-estradiol’s effects on life extension, we performed snRNA-seq on the entire hypothalamus of aged and 17α-estradiol-treated aged Norway brown rats, using the hypothalamus from young adult male rats as a control. We identified 10 major cell types based on specific cell markers of the hypothalamus (Figure 1A–B). Notably, the proportions of all non-neural cells changed in O versus Y (Figure 1C). For instance, the proportions of oligodendrocytes (Oligo), oligodendrocyte precursor cells (OPC), and microglia (Micro) were found to be increased, while those of astrocytes (Astro), tanycytes (Tany), fibroblasts (Fibro), pars tuberalis cells (PTC), and endothelial cells (Endo) were decreased in O compared to Y. The proportions of Oligo, OPC, and Micro were also increased in 17α-estradiol-treated aged group (O.T) compared to those in Y. Furthermore, Endo was increased in O.T compared to both Y and O. The proportions of Astro, Tany, Epen, and PTC decreased more in O.T than those in O when compared to Y. These results indicated that 17α-estradiol treatment had extensive effects on the proportions of non-neural cells in hypothalamus.
 
@@ -53,19 +53,43 @@ Gene set enrichment analysis (GSEA) based on DEGs also corroborated the expressi
 
 Overall, these findings suggest that 17α-estradiol broadly reshapes cell populations, cellular communication, neuropeptide secretion, and synapse-related cellular processes in the aging hypothalamus, distinguishing it from both the young hypothalamus and the untreated aged hypothalamus.
 
-## The two opposing signaling networks in regulating metabolism and synapse activity, which can be balanced effectively by 17α-estradiol
+### The two opposing signaling networks in regulating metabolism and synapse activity, which can be balanced effectively by 17α-estradiol
 
 To monitor the metabolism and neural status affected by 17α-estradiol, we utilized the energy metabolism pathway MitoCarta OXPHOS subunits to calculate the positively or negatively correlated pathways in hypothalamic neurons (Figure 2—figure supplement 1). Our findings revealed that energy metabolism and synapse activity represent two opposing regulatory signaling networks in hypothalamic neurons, with 17α-estradiol strongly playing a significant role in balancing these networks (Figure 2A). At the core of these opposing signaling pathways are two categories of contrasting TFs (Figure 2B). For example, Calr, Clu, Peg3, Prnp, Ndufa13, Actb, Ywhab, Nfe2l1, Mtdh, Npm1, Bex2, Aft4, and Maged1 were positively correlated with pathways involved in OXPHOS subunits, lysosome function, protein export, mTorc1 signaling, and the unfolded protein response (UPR) in O, O.T, and Y neurons, while showing negative correlations with pathways related to ubiquitin-mediated proteolysis, endocytosis, tight junctions, focal adhesion, axon guidance, and MAPK signaling. Additionally, TFs Myt1l, Ctnnd2, Tenm4, Camta1, Med12l, Rere, Csrnp3, Erbb4, Jazf1, Dscam, Klf12, and Kdm4c exhibited opposite correlation patterns with these selected pathways in O, O.T, and Y neurons. These TFs may take conserved roles in regulating the two opposing biological processes in hypothalamic neurons.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig2-v1.jpg)
+
+**Figure 2.:** (A) Dot plot of the selected pathways representing the prominent changes of overall expression levels across Neuron.O, Neuron.O.T and Neuron.Y in metabolism, signaling, and synaptic activity. (B) Correlation heatmap showing transcription factors (TFs) that correlated with the two opposing regulatory signaling networks in the mixed neurons of O, O.T, and Y. (C) The shared unique markers of each quarter (c1–c4) in six pathways in hypothalamic neurons (O, O.T, and Y). The markers were then collected as c1-up-signature (19 genes) and c4-up-signature (12 genes). (D) The aging-related cell proportions of each quarter are shown by four pathways. (E) The correlation of c1-up-signature and c2-up-signature with the two opposing regulatory signaling networks.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Significant p-values (<0.05) are indicated by a star.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Dot plot of overall expression levels of selected pathways from the two opposing signaling networks in nine non-neural cell types.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Top 12 enriched GOBP pathways via DAVID Functional Annotation Tools in Micro (O vs Y, O.T vs O), Astro (O vs Y, O.T vs O), and Neuron (O vs Y, O.T vs O) in significantly down-regulated or up-regulated genes, which were calculated via FindMarker function in R package Seurat (test.use=bimod, min.pct=0.1, logfc.Threshold=0.25).
+
 We then attempted to establish gene signatures to represent these two opposing signaling networks, thereby displaying the cell status of aging and evaluating the effects exerted by 17α-estradiol. To achieve this, we evenly divided the expression levels of each of the six selected pathways from the two opposing signaling networks into four quarters (c1-c4) among the mixed neurons from O, O.T, and Y, calculating the shared unique markers in each quarter (Figure 2C and D). From the distribution patterns, we observed that the proportion of neurons in O decreased from c1 to c4 in metabolic pathways (MitoCarta OXPHOS subunits and Hallmark mTorc1 signaling), while this trend was reversed in the opposing signaling pathways (GOBP synapse organization and KEGG MAPK signaling pathway) (Figure 2C). In contrast, in Y, this trend was opposite, suggesting the expression levels from the four quarters (c1-c4) of the two opposing signaling networks can be used to monitor aging status. Treatment with 17α-estradiol alleviated this trend or even reversed it in O. We then screened the shared unique markers of each quarter from the six selected pathways in an attempt to establish the gene signatures representing the two opposing signaling networks. Unique markers in c1 (19 genes, c1-up-signature) and c4 (12 genes, c4-up-signature) were identified; however, c2 and c3 lacked unique markers shared by the six pathways (Figure 2D). Consequently, the 19 genes in c1-up-signature displayed an inverse correlation pattern with the 12 genes in c4-up-signature, indicating the two opposing gene signatures are capable of reflecting the two opposing signaling networks in hypothalamic neurons (Figure 2E). Conversely, the balance of the two opposing signaling networks affected by 17α-estradiol in non-neural cell types was less pronounced than in neurons, showing variable effects on non-neural cells (Figure 2—figure supplement 2). GOBP pathway enrichment analysis revealed that Micro exhibited lower levels of synapse-related cellular processes in O.T compared to O, which was distinct from the observations in neurons (Figure 2—figure supplement 3). Therefore, in this report, we primarily focused on hypothalamic neurons and their responses to aging and 17α-estradiol.
 
-## Supervised clustering revealed distinct responses of different subtypes of hypothalamic neurons to aging and 17α-estradiol
+### Supervised clustering revealed distinct responses of different subtypes of hypothalamic neurons to aging and 17α-estradiol
 
 The hypothalamus contains numerous neuron subtypes that release various neuropeptides and hormones to regulate fundamental body functions. To differentiate the changes occurring during aging and the effect of 17α-estradiol on each neuron subtype, we performed supervised clustering based on neuropeptides, hormones, or their receptors (Supplementary file 2) (Figure 3A). The cell counts in each neuronal subcluster classified by neuropeptide secretion (neuropeptide-secreting subtypes) and subclusters defined by neuropeptide or hormone receptor expression (receptor-expressing subtypes) were quantified and compared in sample Y (Figure 3B). Notably, neurons expressing Prlr, Esr1, and Ar ranked among the top 20 receptor-expressing subtypes across all analyzed neuron populations. The similarity indices among these cell subtypes were further calculated (Figure 3—figure supplement 1), revealing high positive correlations in neuron subtypes expressing Cartpt, Nxph4, Bdnf, Cck, Crh, Nppa, Adcyap1, and Penk, as well as those expressing Esr1, Calcrl, and Pth2r. These similarities may partially reflect cellular overlap between subtypes (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig3-v1.jpg)
+
+**Figure 3.:** (A) Diagram outlining the features of supervised clustering of neurons in the hypothalamus in comparison with traditional unsupervised clustering. (B) The ranks of cell counts in neuropeptide-secreting neuron subclusters (left panel) and subclusters expressing neuropeptide receptors or hormone receptors (right panel) in sample Y. The cell number (n) in each subset is ≥10. (C, D) The prioritization of the top 20 neuron subclusters across the three types of perturbation (O vs Y, O.T vs Y, and O.T vs O) calculated by the Augur algorithm, in neuropeptide-secreting neurons (C) and neuron subclusters expressing neuropeptide receptors or hormone receptors (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Heatmaps showing the similarity of neuropeptide-expressing subclusters (A) and receptor-expressing subclusters (B) in the hypothalamus of young rats (left panels). Each subcluster contains no fewer than 10 cells. Venn diagrams (right panels) display the overlap of cell barcodes among neuronal subclusters with higher similarity.
+
 We next calculated the prioritization of cellular perturbation induced by aging and/or 17α-estradiol treatment across these screened neuron subtypes (Figure 3C and D). The Gnrh1 neuron subtype ranked among the top perturbed neuropeptide-secreting subtypes in both O vs Y and O.T vs Y comparisons (purple arrows). Notably, Sct and Kiss1 neuron subtypes emerged as the top 2 perturbed populations in the O.T vs O analysis (red arrows), highlighting their heightened sensitivity to 17α-estradiol in the aged hypothalamus. Among receptor-expressing subtypes, Insr neurons showed the highest sensitivity to perturbation in both O vs Y and O.T vs Y comparisons (purple arrows, Figure 3D), while Adipor2 and Mlnr neurons (blue arrows) ranked as the top 2 sensitive subtypes in the O.T vs O analysis. Intriguingly, neurons expressing Ar and Esr1 ranked among the top 20 most perturbed receptor subtypes during aging (O vs Y), but were no longer ranked in this group following treatment (O.T vs Y and O.T vs O comparisons). This indicates that 17α-estradiol administration attenuated age-associated perturbation in these neuronal subtypes (Figure 3D).
 
-## Differential senescence or stress levels and subtype-specific susceptibility in aged hypothalamic neurons
+### Differential senescence or stress levels and subtype-specific susceptibility in aged hypothalamic neurons
 
 To gain a deeper understanding of the effects of 17α-estradiol treatment on the aged hypothalamus, we selected three gene signatures and two gene sets associated with aging, apoptosis, and stress to characterize the differential responses of distinct neuronal subtypes to aging and 17α-estradiol. These neuronal subtypes were then ranked separately based on neuropeptide-secreting subtypes and receptor-expressing subtypes (Figure 4A and B).
 
@@ -81,7 +105,7 @@ Regarding receptor-expressing subtypes, Mc3r-, Sstr1-, Kiss1r-, Ntsr2-, Mlnr-, N
 
 Notably, most of the five signatures or gene sets in top-ranked neurons exhibited alleviated senescence or stress following 17α-estradiol treatment, indicating that such treatment mitigates senescence or stress in these specific neuronal populations (Figure 4A and B).
 
-## The appetite-controlling neurons and hypothalamic–pituitary–adrenal (HPA) axis were altered by long-term 17α-estradiol treatment in the males
+### The appetite-controlling neurons and hypothalamic–pituitary–adrenal (HPA) axis were altered by long-term 17α-estradiol treatment in the males
 
 To further investigate the positive effects, potential side effects, or compensatory effects of 17α-estradiol treatment, we performed stricter screening by intersecting the top 20 and bottom 20 ranks of the scores of c1-up-signature, ferroptosis gene signature, UPR, Mtorc1 signaling, and OXPHOS subunits (Figure 5A). Neurons expressing Calcb, Edn3, Ucn, Ghrl, Nmu, Npff, Cnp, and Agrp ranked among the bottom 20 in at least 4 out of the 5 gene signatures or gene sets. These neurons are involved in stress responses, vascular activity, appetite regulation, and muscle contraction. Notably, the lower levels of Agrp- and Ghrl-expressing neurons in the Mitocarta_OXPHOS_subunits signature may also indicate reduced physiological activity of these potent appetite-promoting neurons during 17α-estradiol treatment, which could represent a key clue to its role in lifespan prolongation.
 
@@ -95,9 +119,21 @@ Notably, the HPA axis was altered by 17α-estradiol treatment, as evidenced by t
 
 In summary, 17α-estradiol treatment altered the activity of appetite-promoting neurons and the hypothalamic-pituitary-adrenal (HPA) axis in male BN rats, while also inducing enhanced stress responses in Crh neurons.
 
-## 17α-estradiol increased Oxt neuron proportion and secretion and its possible role in mediating the effect of 17α-estradiol on endocrine system
+### 17α-estradiol increased Oxt neuron proportion and secretion and its possible role in mediating the effect of 17α-estradiol on endocrine system
 
 In sample Y, the top four neuropeptide-secreting neuron subclasses, ranked by their proportion, are Rln1, Pomc, Npvf, and Agrp; conversely, the bottom 4 are Oxt-, Vip-, Avp-, and Grp-secreting neurons (Figure 6A). This pattern shows a reciprocal relationship: proportions of Oxt-, Vip-, and Avp-secreting neurons, among others, increase significantly in the O.T sample, with Oxt-secreting neurons accounting for the highest proportion. In contrast, the proportions of, Rln1-, Pomc-, Npvf-, and Agrp secreting neurons decrease substantially in the O.T sample. Notably, Agrp and Pomc neurons are well documented for their roles in regulating food intake and energy homeostasis. Specifically, within the arcuate nucleus (ARC) of the hypothalamus, Agrp neurons are activated by hunger, whereas Pomc neurons are activated by satiety . In terms of neurons expressing neuropeptide receptors or hormone receptors in sample Y, those with relatively high proportions are Calcrl-, Mc3r-, Ednrb-, and Ednra-expressing neurons. On the other hand, the receptor-expressing neurons with relatively low proportions include Rxfp3-, Rxfp2-, Mlnr-, Sstr2-, and Ntsr1-expressing neurons. 17α-estradiol treatment effectively elevated the expression levels of the c4-up-signature (blue arrows) and synapse-associated processes in neuron subtypes Agrp, Pomc, Oxt, and Glp2r in O.T compared to O (Figure 6B). This may mitigate the adverse effects of reduced cell populations in Pomc and Agrp neurons in aging hypothalamus. This finding indicates a potential role of 17α-estradiol in appetite control, as previously reported (Steyn et al., 2018). Notably, the proportions of Oxt and Glp2r neurons, both of which have anorexigenic effects (Inada et al., 2022; Dalvi and Belsham, 2012), increased in O.T. In addition to the increased number of Oxt-positive neurons, the expression level of Oxt also rose in O.T. Additionally, 17α-estradiol treatment altered two opposing signaling pathways—those linked to metabolic pathways and synapse-related pathways—in Agt, Vip, Avp, Npff, Calca, and Tacr1 neurons (Figure 6—figure supplement 1). Notably, all these neuron types are associated with blood pressure regulation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig6-v1.jpg)
+
+**Figure 6.:** (A) The relative cell proportions of peptide-expressing subclusters (upper panel) and receptor-expressing subclusters (lower panel) across Y, O, and O.T (sorted in descending order of proportions in Y). Only subclusters with a cell count of n≥10 in sample Y were included for calculation. (B) Dot plots showing the expression profiles of the selected pathways from the two opposing signaling pathways in four types of food uptake-related neurons, which decreased or increased among the top 10 ranks in (A) or (B). Blue arrows: c1-up-signature and c4-up-signature. (C) Volcanic plots showing the differentially expressed genes (DEGs) between Neuron.O.T and Neuron.O in the pathway synaptic membrane. (D) Enzyme immunoassay of the plasma levels of Oxt in three groups. (E) Top 25 transcription factor (TF) activities in neuron Oxt. (F) Significant causal effects (p<0.05, inverse-variance weighting IVW) between exposure OXT (id: prot-a-2159) and 204 endocrine-related outcomes, which were not significant in reverse Mendelian randomization (MR) analysis. Significant heterogeneity (Q_pval <0.05). Significant horizontal pleiotropy (pval <0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Among the 26 selected pathways, eight were metabolism-related pathways and usually elevated during aging (orange) and 18 were either negatively correlated with MitoCarta OXPHOS subunits or pathways related to synapse activity (dark green).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Significant causal effects (p<0.05, IVW) related to exposure Oxt (id: prot-a-2159) and 204 endocrine-related outcomes in both bidirectional Mendelian randomization (MR) analysis. (B) Significant causal effects (p<0.05, inverse-variance weighting IVW) related to 204 endocrine-related exposures and outcome Oxt (id: prot-a-2159) in both bidirectional MR analysis.
 
 In addition to the increased number of Oxt-positive neurons, the expression level of Oxt also rose in O.T (Figure 6B). The elevated expression of synapse-related pathways was supported by the increased DEGs in the enriched synaptic membrane pathway in Oxt neurons (Figure 6C). More importantly, the serum level of Oxt was significantly elevated in O.T compared to O (p=0.04), yet remained lower than those in Y (Figure 6D). Notably, the top TF activities in O.T and O differed markedly from those in Y (Figure 6E). The elevated levels of Hopx and Xbp1 may be associated with the response to 17α-estradiol treatment.
 
@@ -107,9 +143,19 @@ In contrast, we could not identify significant associations between OXT and estr
 
 The results suggest that elevated Oxt levels induced by 17α-estradiol may have positive associations with endocrine factors governing feeding behavior, glucose metabolism, male reproduction, and sex hormones. Therefore, OXT may serve as a potential mediator of 17α-estradiol.
 
-## 17α-estradiol activated HPG axis and the elevated Gnrh also took important roles in mediating the effect of 17α-estradiol on other endocrine factors
+### 17α-estradiol activated HPG axis and the elevated Gnrh also took important roles in mediating the effect of 17α-estradiol on other endocrine factors
 
 Given the sensitivity of GnRH- and sex hormone receptor-expressing neuron subtypes to 17α-estradiol treatment (Figure 3C and D), we analyzed their expression profiles alongside representative pathway genes from two opposing signaling networks - those related to metabolism and synapses - such as the c1-up-signature and c4-up-signature (Figure 7A). However, neither the c1-up-signature nor the c4-up-signature was up-regulated in Gnrh1 neuron in the O.T in comparison with Y. Ar and Esr2 neuron displayed decreased level of c1-up-signature in comparison with O. Only in Esr1 neuron was the c1-up-signature found to be up-regulated. Meanwhile, both Ar and Esr neurons displayed increased level of c4-up-signature in O.T comparing with O. Ar, Pgr, and Esr1 were also among the top 20 of c4-up-signature, suggesting long-term 17α-estradiol treatment did not impose significant stress on hypothalamic neurons expressing these hormone receptors (Figure 7—figure supplement 1). But Gnrh1 and Crh neurons were among the bottom 20, indicative of higher cellular stress by long-term 17α-estradiol treatment. However, based on these cellular perturbations, it’s difficult to define the precise physiological status of these subtypes of neurons, particularly regarding neuroendocrine activities. Consequently, we performed enzyme immunoassays of hormones from the serum of O, O.T, and Y. The treatment with 17α-estradiol significantly increased the plasma level of Gnrh compared to Y (p=0.0099) and approached significance when compared to O (p=0.096) (Figure 7B). More intriguingly, testosterone levels in serum were significantly increased in O.T compared to O (p=0.018) and approached significance when compared to Y (p=0.052). Additionally, the serum estradiol levels were significantly increased in O compared to Y (p=0.011) and significantly decreased in O.T compared to O (p=0.019), suggesting that 17α-estradiol treatment markedly altered the homeostasis of testosterone and estradiol.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig7-v1.jpg)
+
+**Figure 7.:** (A) The expression profiles of pathways from the two opposing signaling networks in Gnrh1-, Esr2-, Esr1-, or Ar-positive neurons. (B) Enzyme immunoassay of the serum levels of Gnrh, total testosterone (T), and estrogen (E) in Y, O, and O.T samples. Two-tailed unpaired t-test was performed. (C) Inflammation of seminiferous tubules in testes of O and O.T. Left two panels: representative HE staining of testis inflammation in O and the normal seminiferous tubules of O.T. Right panel: the mean testis inflammation index of O and O.T. Bar, 50 μm (D) The top 25 TF activities in Gnrh1 neurons in three groups. (E) The activities of 14 pathways in Gnrh1-, Esr2-, Esr1-, or Ar-positive neurons. (F) Significant causal effects (inverse-variance weighting IVW, p<0.05) between exposure GNRH1 (id: prot-a-1233) and 204 endocrine-related outcomes, which were not significant in reverse MR analysis. (G) Items with significant causal effects (IVW, p<0.05) in both directions of MR analysis between GNRH1 (id: prot-a-1233) and 204 endocrine-related outcomes.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/100346/elife-100346-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Significant causal effects (p<0.05, inverse-variance weighting IVW), which were not significant in reverse MR analysis between 204 endocrine-related exposures and outcome GNRH1 (id: prot-a-1233). (B) Significant causal effects (p<0.05, IVW) in both directions of MR analysis.
 
 Furthermore, most testes from 30-month-old male BN rats exhibited severe age-related inflammation and epithelial collapse of seminiferous tubules (Figure 7C). The testes without inflammation in O.T displayed normal morphology. 17α-estradiol treatment slightly decreased the testis inflammation in O.T compared to that in O (p=0.15), indicating a potential positive role of 17α-estradiol treatment in male reproductive system. The elevated TFs such as Sf1, Pparg, Litaf, Nupr1, Rxrg, E2f2, and Zfp42 may be involved in the transcriptional regulation by 17α-estradiol in O.T (Figure 7D). Importantly, the activities of androgen and estrogen pathways were decreased in Gnrh1 neurons in O.T compared to O, and were distinct from those in Ar, Esr1, and Esr2 neurons (Figure 7E). These signaling pathways are important for the feedback control of sex hormone secretion in Gnrh neurons, and these results may also reflect the strong effect of 17α-estradiol on Gnrh neurons.
 
@@ -135,19 +181,19 @@ In summary, our findings suggest that 17α-estradiol treatment positively influe
 
 ## Materials and methods
 
-## Animals, treatment, and tissues
+### Animals, treatment, and tissues
 
 Twelve Norway brown male rats (12-months-old) were acquired from Charles River, including 8 12- months-old and 4 1-month-old (Beijing). Older rats (12-months-old) were randomly allocated into control and 17α-estradiol-treated groups. Four aged rats treated with 17α-estradiol (Catalog #: E834897, Macklin Biochemical, Shanghai, China) were fed freely with regular diet mixed with 17α-estradiol at a dose of 14.4 mg/kg (14.4 ppm), starting at 24 months of age for 6 months according to prior reports (Harrison et al., 2021; Strong et al., 2016). The young rats were fed a regular diet without 17α-estradiol continuously for 3 months until 4 months old. All rats had ad libitum access to food and water throughout the experiments. The rats were then euthanized via CO2, hypothalami, testes, and blood serum were collected for subsequent experimental procedures. All blood samples were collected at 9:00-9:30 a.m to minimize hormone fluctuation between animals. All animal procedures were reviewed and approved by the Institutional Animal Care and Use Committee at Nantong University (approval number: S20210225-012).
 
-## Enzyme immunoassays
+### Enzyme immunoassays
 
 Enzyme immunoassay kits for rat Oxt (Catalog #: EIAR-OXT), Corticotropin Releasing Factor (Catalog #: EIAR-CRF), and gonadoliberin-1 (Catalog #: EIAR-GNRH) were obtained from Raybiotech (GA, USA). Enzyme immunoassay kits for rat serum total testosterone (Catalog #: ml002868), estradiol (Catalog #: ml002891), aldosterone (Catalog #: ml002876), and cortisol (Catalog #: ml002874) were obtained from Enzyme-linked Biotechnology (Shanghai, China). Sera from three animals per group were used and each was diluted 10 or 20 times for immunoassays.
 
-## Seminiferous tubule inflammation test
+### Seminiferous tubule inflammation test
 
 Eight testes were obtained from each sample group and then subjected to fixation in 4% formalin for at least 1 week. Formalin-fixed paraffin-embedded rat testis sections of 5 µm thickness were used for HE staining. At least 30 seminiferous tubules in each slide were examined for inflammation tests. Testis with at least 1 inflammatory seminiferous tubule was set as 1, and normal testis was set as 0 for inflammation index calculation.
 
-## snRNA-seq data processing, batch effect correction, and cell subset annotation
+### snRNA-seq data processing, batch effect correction, and cell subset annotation
 
 Intact hypothalami were cryopreserved in liquid nitrogen from sacrificed rats. Two (O) or three (Y and O.T) hypothalami were pooled within each group and homogenized in 500 µL ice-cold homogenization buffer (0.25 M sucrose, 5 mM CaCl2, 3 mM MgAc2, 10 mM Tris-HCl [pH 8.0], 1 mM DTT, 0.1 mM EDTA, 1× protease inhibitor, and 1 U/µL RiboLock RNase inhibitor) with Dounce homogenizer. Then, the homogenizer was washed with 700 µL ice-cold nuclei washing buffer (0.04% bovine serum albumin, 0.2 U/µL RiboLock RNase Inhibitor, 500 mM mannitol, 0.1 mM phenylmethanesulfonyl fluoride protease inhibitor in 1× phosphate buffer saline). Next, the homogenates were filtered through a 70 µm cell strainer to collect the nuclear fraction. The nuclear fraction was mixed with an equal volume of 50% iodixanol and added on top of a 30% and 33% iodixanol gradient. This solution was then centrifuged for 20 min at 10,000×g at 4 °C. After the myelin layer was removed from the top of the gradient, the nuclei were collected from the 30% and 33% iodixanol interface. The nuclei were resuspended in nuclear wash buffer and resuspension buffer and pelleted for 5 min at 500×g at 4 °C. The nuclei were filtered through a 40 µm cell strainer to remove cell debris and large clumps, and the nuclear concentration was manually assessed using trypan blue counterstaining and a hemocytometer. Finally, the nuclei were adjusted to 700–1200 nuclei/µL, and examined with a 10 X Chromium platform.
 
@@ -155,33 +201,33 @@ Reverse transcription, cDNA amplification, and library preparation were performe
 
 10 X Genomics Cell Ranger software (version 3.1.0) was used to convert raw BCL files to FASTQ files, and for alignment and counts quantification. Reads with low-quality barcodes and UMIs were filtered out and then mapped to the reference genome. Reads uniquely mapped to the transcriptome and intersecting an exon at least 50% were considered for UMI counting. Before quantification, the UMI sequences were corrected for sequencing errors, and valid barcodes were identified using the EmptyDrops method. The cell ×gene matrices were produced via UMI counting and cell barcodes calling. Cells with an unusually high number of UMIs (≥8000) or mitochondrial gene percent (≥15%) were filtered out. Batch effect correction was performed by harmony.
 
-## Pathways, gene signatures, TFs and TF cofactors, cell communication
+### Pathways, gene signatures, TFs and TF cofactors, cell communication
 
 Gene sets and pathways were derived from Hallmark gene sets of MSigDB collections, the KEGG pathway database, Reactome pathway database, and WikiPathways database, and some ontology terms derived from the Gene Ontology (GO) resource. Mitochondrial pathways were derived from MitoCarta3.0 (Rath et al., 2021). Pathways, gene sets, and gene signatures were evaluated with the PercentageFeatureSet function built into R package Seurat. TFs and TF cofactors were obtained from AnimalTFDB 3.0 (Hu et al., 2019). TFs and TF cofactors were further filtered with mean counts >0.1.
 
 The ligand–receptor pairs were calculated via R package CommPath (Lu et al., 2022).
 
-## Correlation analysis and ROC analysis
+### Correlation analysis and ROC analysis
 
 Pearson correlation coefficient was calculated with the linkET package (p<0.05). A total of 431 pathways from Hallmark, KEGG, and PID databases were used for correlation analysis with MitoCarta OXPHOS subunits in neurons and non-neural cells and the top 20 and bottom 20 items according to the correlation coefficient values in Neuron.O were shown (Figure 2—figure supplement 1). Fast Wilcoxon rank sum test and auROC analysis was performed with the wilcoxauc function in R package presto. The minimal cell number in either one of the comparing pairs should be no less than 15. Ranks of area under the curve (AUC) values were in descending order. A total of 97 pathways related to synapse activity were derived from GO, including GO cellular components, GO biological processes, and GO molecular functions (Supplementary file 1).
 
-## The division of expression level-dependent clusters in each pathway and their gene signatures
+### The division of expression level-dependent clusters in each pathway and their gene signatures
 
 The quarters of the mixed cell populations from O, O.T, and Y hypothalamic neurons were equally divided using the R function fivenum from the R package stats, based on pathway expression levels. Thus, the total number of neurons was evenly divided into four clusters (c1-c4) in terms of cell number. The cell proportions from O.T, O, and Y neurons in each cluster were weighted against the total number of neurons in the three groups. The unique markers of each cluster were calculated using the FindAllMarkers function from the Seurat package. The intersection of the unique markers from the six pathways was obtained for heatmap plotting. Nineteen genes that were highly expressed in c1 were identified as c1.up.signature via the PercentageFeatureSet function in the Seurat package. Twelve genes that were highly expressed in c4 were identified as c4.up.signature. There were no intersecting unique markers in clusters c2 and c3 among the six selected pathways.
 
-## TF and pathway activities
+### TF and pathway activities
 
 The TF resources were derived from CollecTRI, the pathway resource was from PROGENy, and the enrichment scores of TFs and pathways were performed with the Univariate Linear Model (ulm) method according to the pipeline in R package decoupleR (Badia-i-Mompel et al., 2022).
 
-## Subtypes of neurons generated by supervised clustering and cell prioritization
+### Subtypes of neurons generated by supervised clustering and cell prioritization
 
 Vast majority of these subtypes were clustered by neuropeptides, hormones, and their receptors within all the neurons with the subset function from R package Seurat (the target gene expression level >0). A total of 209 neuron subtypes were obtained, comprising 104 neuropeptide-secreting or hormone-secreting neurons and 105 neurons expressing a unique neuropeptide receptor or hormone receptor (Supplementary file 2). Further groupings may exist within the identified neuron subtypes, and the category of excitatory or inhibitory neurons was not discriminated further. The cell proportion of each neuron subtype was weighted according to the total number of neurons in O.T, O, and Y samples. The mean values ± standard deviation of pathways and gene signatures were performed for each subtype. The top 20 and the bottom 20 items were calculated. The cell type prioritization was performed using the R package Augur, with the subsample_size parameter of the calculate_auc function set to 6 (Skinnider et al., 2021). In each comparison pair, the minimum number of cells in a subcluster shall not be less than 6 when performing cell prioritization with function calculate_auc.
 
-## Differential expression and pathway enrichment analysis
+### Differential expression and pathway enrichment analysis
 
 DEGs between groups were identified via FindMarkers (test.use=bimod, min.pct=0.1, logfc.Threshold=0.25, avg_diff >0.1 or < −0.1). DEGs were then enriched in redundant GO terms via WebGestalt and filtered with false discovery rate <0.05 (Liao et al., 2019).
 
-## Bidirectional MR study
+### Bidirectional MR study
 
 The protein quantitative trait locus (pQTL) data of 204 human endocrine-related GWAS summary data with European ancestry were obtained from open-access MRC Integrative Epidemiology Unit (IEU) (Supplementary file 3; Hemani et al., 2018; Sun et al., 2018). Independent genome-wide significant SNPs for exposure OXT (id:prot-a-2159) or GNRH1 (id: prot-a-1233) were used as instrumental variables with genome-wide significance (p<1 × 10−5), independence inheritance (r2 <0.001) without linkage disequilibrium (LD) with each other for MR. For the reverse MR, independent genome-wide significant SNPs from 204 endocrine-related GWAS summary data (p<1 × 10−5, r2 <0.001) without LD with each other were obtained as exposures and human GWAS summary data of OXT (id:prot-a-2159) or GNRH1 (id:prot-a-1233) were used as outcomes. Weak instruments less than 10 were discarded via F-statistics.
 

@@ -19,15 +19,15 @@
 
 ### Affiliations
 
-1. https://ror.org/035rzkx15 Institute for Infectious Diseases and Infection Control, Jena University Hospital Jena Germany
-2. https://ror.org/035rzkx15 Center for Sepsis Control and Care, Jena University Hospital/Friedrich Schiller University Jena Jena Germany
+1. Institute for Infectious Diseases and Infection Control, Jena University Hospital Jena Germany ([ROR:035rzkx15](https://ror.org/035rzkx15))
+2. Center for Sepsis Control and Care, Jena University Hospital/Friedrich Schiller University Jena Jena Germany ([ROR:035rzkx15](https://ror.org/035rzkx15))
 3. SMA Development GmbH - epicinsights Agentur für Künstliche Intelligenz und Big Data Analytics Jena Germany
-4. https://ror.org/035rzkx15 Department of Anaesthesiology and Intensive Care, Jena University Hospital Jena Germany
+4. Department of Anaesthesiology and Intensive Care, Jena University Hospital Jena Germany ([ROR:035rzkx15](https://ror.org/035rzkx15))
 5. Thuringian State Authority for Consumer Protection, Department Health Protection Bad Langensalza Germany
-6. https://ror.org/01k5qnb77 Methodology and Research Infrastructure, Genome Competence Center (MF1), Robert Koch Institute Berlin Germany
-7. https://ror.org/01k5qnb77 Centre for Artificial Intelligence in Public Health Research, Robert Koch Institute Berlin Germany
-8. https://ror.org/00js75b59 Transmission, Infection, Diversification and Evolution Group, Max Planck Institute for Geoanthropology Jena Germany
-9. https://ror.org/03wysya92 Center for Applied Research, InfectoGnostics Research Campus Jena Jena Germany
+6. Methodology and Research Infrastructure, Genome Competence Center (MF1), Robert Koch Institute Berlin Germany ([ROR:01k5qnb77](https://ror.org/01k5qnb77))
+7. Centre for Artificial Intelligence in Public Health Research, Robert Koch Institute Berlin Germany ([ROR:01k5qnb77](https://ror.org/01k5qnb77))
+8. Transmission, Infection, Diversification and Evolution Group, Max Planck Institute for Geoanthropology Jena Germany ([ROR:00js75b59](https://ror.org/00js75b59))
+9. Center for Applied Research, InfectoGnostics Research Campus Jena Jena Germany ([ROR:03wysya92](https://ror.org/03wysya92))
 
 † Corresponding author
 
@@ -47,9 +47,23 @@ Here, we investigated whether mobile service data and fine-granular metadata (su
 
 ## Results and discussion
 
-## The Alpha lineage spread rapidly through Thuringia, showing a pattern similar to its nationwide spread
+### The Alpha lineage spread rapidly through Thuringia, showing a pattern similar to its nationwide spread
 
 Thuringia is a rural federal state in central Germany with a population of 2.1 million and no major airports (overview of Thuringia’s population density in Figure 1—figure supplement 2). We investigated if the spread of the Alpha lineage of SARS-CoV-2 behaved differently compared to the whole of Germany. To understand its spread, we used 289,487 public SARS-CoV-2 genomes from Germany (excluding Thuringia; including 137,024 Alpha genomes) and 7394 genomes from our own sequencing data for Thuringia (including 6307 Alpha genomes) to track Alpha’s occurrence from December 2020 to August 2021 (see Figure 1, Figure 1—figure supplement 1, and Figure 1—source data 1; Figure 1—source data 2; for details, see Methods section ‘Alpha spread datasets’). For Thuringia, district-level data (full postal code) per genome were available, whereas, for Germany, only postal code data of the sending laboratories (referred to as ‘primary diagnostic laboratory’ by the RKI where the SARS-CoV-2-positive sample was detected) and sequencing laboratories were publicly available.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig1-v1.jpg)
+
+**Figure 1.:** 289,487 publicly available German SARS-CoV-2 genomes and their metadata were used for the general German maps, excluding data from Thuringia. For Thuringia, we always used 7394 genomes and their metadata from our database for the German and Thuringian maps. Please note that for all states except Thuringia, we used the postal code of the sending laboratory as a proxy for the geographical location of a sample. A gray border on the maps of Germany highlights Thuringia.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** 289,487 publicly available German SARS-CoV-2 genomes and their metadata were used for the general German maps excluding data from Thuringia. For Thuringia, we always used 7394 genomes and their metadata from our database for both the German and the Thuringian maps. Please note that for all states except Thuringia, we used the postal code of the sending laboratory as a proxy for the geographical location of a sample. Thuringia is highlighted by a gray border on the maps of Germany.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The tree includes 64,131 German (non-Thuringian; blue) and 6298 Thuringian (red) Alpha genomes. Two genomes of the original Wuhan lineage are included as origin.
 
 In late December 2020, six federal states in Germany (from here on called states) reported the first cases of the Alpha variant. Although sequencing was initially low, it gradually increased in the following month. However, the Corona-Surveillance regulation was passed at the end of January 2021, leading to a rapid increase in sampling and sequencing by February since sequencing costs could be reimbursed. Even though Thuringia sequenced a similar amount of SARS-CoV-2 samples compared to other German states (as shown in Figure 1), the proportion of the Alpha variant to other lineages was relatively low. However, the proportion of Alpha increased heavily in February.
 
@@ -59,11 +73,104 @@ In summary, the spread of the Alpha lineage in Thuringia lagged roughly 2 weeks 
 
 All Thuringian genomes were evenly distributed between other German samples in the phylogenetic time tree (see Figure 1—figure supplement 3). However, due to its rapid spread from February onward, it is difficult to accurately track how the Alpha lineage specifically expanded (point of entries, exact origins, etc.). Consequently, we investigated whether ‘sublineages’ might be identifiable and trackable to address this.
 
-## Monitoring of Alpha subclusters in Thuringia reveals temporally and regionally restricted distribution patterns
+### Monitoring of Alpha subclusters in Thuringia reveals temporally and regionally restricted distribution patterns
 
 To identify possible clusters among the Alpha lineage spreading in Thuringia, we called each Alpha genome’s mutations via Nextclade by analyzing them using poreCov (Brandt et al., 2021; Aksamentov et al., 2021). We identified nine clusters out of 70,429 Alpha genomes, based on their mutation profile, time period, and phylogenetic distance (from here on called Alpha subclusters; for details, see Methods ‘Subcluster identification’). All subclusters, their time period, and sample size in Thuringia are summarized in Table 1. An overview of each subcluster (phylogenetic time tree, location, and period) is also provided here as interactive views (see Methods ‘Subcluster identification’). Note that our subcluster definition is similar to the definition of a sublineage. However, PANGO sublineages were rarely defined during the Alpha wave (PANGO designation: Q.1 to Q.8; compared to the Delta and Omicron waves).
 
+**Table 1.**
+ Overview of nine Alpha subclusters in Thuringia, their sample count, their time period, and their specific mutations that are shared across all members of the subcluster (excluding characteristic Alpha mutations that are shared across all subclusters).The mutation used to define the subcluster is highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Mutations</th>
+      <th>Number of samples</th>
+      <th>Time period</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>S:H49Y,ORF1a:I841V</td>
+      <td>44</td>
+      <td>Feb-May 2021</td>
+      <td>S:H49Y eases cell entry in S-pseudotyped lentiviral system (Ozono et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>S:N354K</td>
+      <td>63</td>
+      <td>Feb-May 2021</td>
+      <td>S:N354K slightly impaired mAb h11B11 (Du et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>S:G496S,ORF1a:E1013K</td>
+      <td>12</td>
+      <td>Mar-May 2021</td>
+      <td>S:G496S: compromises BA.1 replication fitness and changed mAb sensitivities, reduces ACE2 binding affinity, and increases immune evasion (Liang et al., 2022; Kimura et al., 2022; Asif et al., 2022)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>S:N703D,ORF1a:D1228G,ORF1a:A2123V</td>
+      <td>51</td>
+      <td>Mar-May 2021</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>S:T716V,N:G204P,ORF1a:D1600N</td>
+      <td>22</td>
+      <td>Apr-May 2021</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>S:S939F</td>
+      <td>206</td>
+      <td>Feb-May 2021</td>
+      <td>S:S939F: modulates T-cell propensity (Donzelli et al., 2022)</td>
+    </tr>
+    <tr>
+      <td>6.1†</td>
+      <td>S:V90F,S:S939F</td>
+      <td>55</td>
+      <td>Feb-May 2021</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>ORF1b:A520V</td>
+      <td>811</td>
+      <td>Feb-Jun 2021*</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>7.1 ‡</td>
+      <td>S:N185D,ORF1b:A520V,ORF1b:L1504F</td>
+      <td>40</td>
+      <td>Feb-May 2021</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Only one sample for June.†Branch from subcluster 6.‡Branch from subcluster 7._
+
 Eight of these subclusters are based around a specific spike protein mutation, while the other contains a mutation within the ORF1b region. The subcluster 7.1 ‘S:N185D’ branched out from the subcluster 7 ‘ORF1b:A520V’ and subcluster 6.1 ‘S:V90F’ is a branch of subcluster 6 ‘S:S939F’ (see Table 1). These two branched subclusters still carry the specific mutation of their originating subcluster. The subclusters 3, 4, and 5 were observable between two and three months, and the other subclusters over at least 4 months. To investigate these subclusters’ regional spread, each sample was mapped to its Thuringian district based on the resident’s postal code from which it was isolated. We then sorted the samples according to their subclusters and visualized them throughout the subcluster’s observed period. The spread of two representative subclusters is exemplary visualized in Figure 2a, and all the subclusters are available via Figure 2—figure supplement 1 and their data in Figure 2—source data 1. Additionally, all subclusters and their metadata are also available via Microreact (see Methods ‘Subcluster identification’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig2-v1.jpg)
+
+**Figure 2.:** (a) Accumulated number of sequenced samples for each subcluster per district and per month. (b) Combined visualization of each district’s ‘inbound mobility’ from other districts (color intensity) and the occurrence of a subcluster sample (red = sample found, blue = no sample found). The inbound mobility of each district (blue color intensity) is shown as a proportion of incoming mobility from other districts with or without an identified sample. The darker the blue color of a district, the higher the proportion of inbound mobility from other districts with an identified subcluster sample (red districts). The light blue color describes that most of the inbound mobility of a district comes from other districts without an identified subcluster sample (blue districts). Numbers refer to district types 1, 2, and 3, as further defined in the main text. The last month of subcluster ‘ORF1b:A520V’ is not visualized, as affected districts were unchanged.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The inbound mobility of each district (color intensity) is shown as a proportion of incoming mobility from other districts with or without an identified sample. The darker the color (red and blue) of a district, the higher the proportion of inbound mobility from other districts with an identified subcluster sample (red districts). The light blue color describes that most of the inbound mobility of a district comes from other districts without an identified subcluster sample (blue districts).
 
 In Thuringia, the seven main mutation variant clusters were initially identified from distinct districts. Subclusters 6.1 and 7.1 subsequently emerged from the same districts as their parent clusters (6 and 7) after 12 and 13 days, respectively. The subclusters mainly spread regionally confined and not across all of Thuringia (see Figure 2a, Figure 2—figure supplement 1) but were also identified in other states of Germany (see ‘https://microreact.org/’-project). For example, the ‘S:S939F’ subcluster spread across 15 states, with the first samples being isolated outside of Thuringia. The eight Spike-mutation subclusters had expanded between 4 and 12 of the 23 Thuringian districts within the observable time period of each subcluster. They expanded by one to six districts per month, with a greater expansion accompanied mainly by a larger increase in the subcluster sample number. In contrast, the ORF1b-variant even comprised 21 districts and expanded between 2 and 7 districts per month (see Figure 2a). Most of each subcluster’s samples were identified in their region of first occurrence, and no additional samples were found after the given periods.
 
@@ -71,7 +178,7 @@ Several limitations need to be considered. The identified subclusters may have m
 
 Our surveillance sampling heavily relies on various institutions and partners, and only a portion of the provided samples can be sequenced (see ‘Sampling’ in Methods). For example, the spread of subcluster ‘S:S939F’ revealed two districts in April where no respective samples were found (Figure 2a) despite being surrounded by districts with ‘S:S939F’-samples present. This could be due to the lack of samples sent to sequencing from those regions or the low prevalence. We, therefore, investigated if mobile service data of residents, in addition to molecular surveillance, might be utilized to counteract this issue.
 
-## Mobile service data indicates Alpha subcluster spread and sampling bias
+### Mobile service data indicates Alpha subcluster spread and sampling bias
 
 With the aim to predict the subcluster spread and, thereby, reduce surveillance-based sampling bias, we utilized anonymized mobile service data from T-Systems International GmbH. Around 200 million trips were used to determine the number of daily trips between the Thuringian districts. We then combined this information with our fine-granular genomic data to specify each district’s monthly proportion of inbound mobility from subcluster-affiliated districts (see Methods ‘Mobile service data’). The results are visualized in Figure 2b (complete overview in Figure 2—figure supplement 2; data provided in Figure 2—source data 2).
 
@@ -79,7 +186,7 @@ The mobile service data-based assumption of a subcluster’s spread aligned well
 
 Our previous analysis of the subclusters’ spreading pattern across the districts, based solely on identified variants, indicated putative missed identifications in some districts due to the seemingly illogical spread to districts without a connection to others (Figure 2a, subcluster ‘S:S939F’). The inclusion of mobile service data revealed some of these districts to be Type 2 districts. This suggests that the specific variant should be identifiable within these districts due to the observed high incoming mobility from districts with identified variants. Type 2 districts were mainly observed for subclusters with low prevalence and, consequently, low sample counts, which are usually more difficult to monitor. For example, we assumed missing identifications in some districts of subclusters 1, 2, and 3, which, through the mobile service data, are now partially identified as Type 2 districts. However, due to their low prevalence, it is also possible that these subclusters have not spread to the indicated districts. Despite analyzing the mobile service data of districts from other federal states than Thuringia, we could not apply them, as the lack of precise location data for samples outside of Thuringia prevented the correct calculation of the incoming mobility. Based on the nine observable clusters, we concluded that mobile service data is a good prediction marker for the spread of high-prevalence variants but, more importantly, a good indication of districts that should have an identified low-prevalence variant. Next, we investigated if mobile service data can improve active surveillance via guiding sample collection for genomic sequencing.
 
-## Proof of principle: mobile service data-guided sampling for genomic surveillance for Omicron BQ.1.1
+### Proof of principle: mobile service data-guided sampling for genomic surveillance for Omicron BQ.1.1
 
 Based on our previous findings, we implemented the ‘mobility-guided’ sampling approach under real pandemic circumstances over 1 month in addition to our active surveillance.
 
@@ -91,7 +198,7 @@ Following its first Thuringian identification, we utilized the latest available 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94045/elife-94045-fig3-v1.jpg)
 
-**Figure 3.:** a) compared to the default randomized sampling (surveillance) in October (b) and November 2022 (c).The randomized surveillance results in November 2022 (c) have been added to highlight the spreading progress of BQ.1.1. Dots reflect the location of each sample (based on residents’ zip codes). Orange dot: first identified BQ.1.1 sample; red dot: additionally identified BQ.1.1 sample; blue dot: another SARS-CoV-2 lineage. Purple triangles represent the number of one-way trips a community received from the community of the first BQ.1.1 occurrence (orange dot) based on mobility data from October 2020 and June 2021. The same mobility data from mobility-guided sampling (a) were added in grayscales to the randomized surveillance (b and c) as a visual reference only. Sampling dots are slightly scattered to improve visibility.Figure 3—source code 1.Figure 3.Figure 3—source data 1.Figure 3—source data 2.For each community, the incoming one-way trips from the community of BQ.1.1 origin in Thuringia based on the October 2020 and June 2021 datasets, the number of guided and randomized samples per community, and an indication of found BQ.1.1 samples are provided.
+**Figure 3.:** The randomized surveillance results in November 2022 (c) have been added to highlight the spreading progress of BQ.1.1. Dots reflect the location of each sample (based on residents’ zip codes). Orange dot: first identified BQ.1.1 sample; red dot: additionally identified BQ.1.1 sample; blue dot: another SARS-CoV-2 lineage. Purple triangles represent the number of one-way trips a community received from the community of the first BQ.1.1 occurrence (orange dot) based on mobility data from October 2020 and June 2021. The same mobility data from mobility-guided sampling (a) were added in grayscales to the randomized surveillance (b and c) as a visual reference only. Sampling dots are slightly scattered to improve visibility.
 
 As part of the general Thuringian surveillance, we collected 132 samples for October (covering dates between the 5th and 31st) and 69 samples in November (covering dates between the 1st and 25th; see Figure 3b and c). Randomized sampling was not influenced or adjusted based on the mobility-guided sample collection. Thus, it also contains samples from communities with a mobility link toward the first occurrence of BQ.1.1, as they were part of the regular random collection (see gray triangles in Figure 3b). A complete overview of all samples is provided in Figure 3—source data 1. The mobility datasets from October 2020 and June 2021 for all sampled communities are provided in Figure 3—source data 2.
 
@@ -101,7 +208,7 @@ During our attempt to implement the mobility-guided sampling approach in real-ti
 
 In summary, increasing the sampling depth in the suspected regions successfully identified the specified lineage using only a fraction of the samples from the randomized sampling. Conversely, randomized surveillance, the ‘gold standard’ acting as our negative control, did not identify additional samples with similar sampling depths in regions with no or low incoming mobility or even in high mobility regions with less sampling depth. Implementing such an approach effectively under pandemic conditions poses difficult challenges due to the fluctuating sampling sizes. Although the finding of the sample may have been coincidental, our proof-of-concept demonstrated how we can leverage the potential of mobile service data for targeted surveillance sampling.
 
-## Conclusion
+### Conclusion
 
 During the SARS-CoV-2 pandemic, diverse data sources like travel, wastewater, and mobility data have been employed in surveillance and transmission tracking (Alpert et al., 2021; O’Toole et al., 2021; Li et al., 2022; Kraemer et al., 2021; Chang et al., 2021; Schlosser et al., 2020). In the present study, we analyzed over 296,800 German SARS-CoV-2 genomes to examine whether mobile service data can predict the spatial distribution of the Alpha lineage in the German state of Thuringia and how they potentially benefit pandemic surveillance.
 
@@ -115,13 +222,13 @@ Additionally, while this approach is particularly useful for identifying low-pre
 
 ## Methods
 
-## Sampling
+### Sampling
 
 Starting mid-2020, we initially sequenced hospital-intern samples, transitioning by January 2021 to approximately 43 PCR-positive samples per week: 20 from the hospital’s microbiology department and 23 randomly sourced by the Thuringian State Authority for Consumer Protection (‘Thüringer Landesamt für Verbraucherschutz’ [TLV]).
 
 Until June 2023, our institute sequenced 3770 SARS-CoV-2 samples, and SYNLAB Holding Deutschland GmbH, Bioscientia Healthcare GmbH, and DIANOVIS GmbH provided additional 7800 Thuringian SARS-CoV-2 genomes and their metadata.
 
-## Sample preparation and sequencing
+### Sample preparation and sequencing
 
 RNA isolation used the ZymoResearch ‘Quick-RNA Viral Kit’ (Zymo Research Europe GmbH, Germany, Product-ID: R1035), according to the manufacturer’s instructions with 100 µl patient sample input and a centrifuge speed of 16,000×g.
 
@@ -131,7 +238,7 @@ From the amplified DNA, a sequencing library was prepared using the Nanopore SQK
 
 Sequencing data and the respective metadata (e.g. isolation date, sending laboratory details) were submitted to the RKI through DESH. We also collected the postal code of the isolation location or at least of the sending local health authority, storing all data additionally in a local database (Jundzill et al., 2023). Due to data protection, such data is limited on the RKI’s public GitHub repository (https://github.com/robert-koch-institut/SARS-CoV-2-Sequenzdaten_aus_Deutschland; Robert Koch-Institut, 2025), providing instead postal codes of the sequencing and sending laboratories.
 
-## Alpha spread datasets
+### Alpha spread datasets
 
 From our local database, we extracted 8397 samples with isolation dates before October 1, 2021. After adding federal state and district information, 993 entries with non-Thuringian locations were excluded. Further, 10 entries with unspecific isolation dates were excluded, yielding 7394 samples (including 6307 Alpha genomes [lineages B.1.1.7 and Q.1 to Q.8]).
 
@@ -139,28 +246,28 @@ The publicly available RKI SARS-CoV-2 dataset was downloaded, containing 1,091,6
 
 Analyzing both datasets, we calculated the monthly proportion of Alpha lineage samples in Thuringia and Germany per state/district, dividing December 20 and January 2021 into first and second halves.
 
-## Subcluster identification
+### Subcluster identification
 
 Using a total of 70,429 German and Thuringian Alpha genomes, a phylogenetic time tree was created (see Supplementary file 2, Supplementary file 3, Supplementary file 4, Supplementary file 5, Supplementary file 6, Supplementary file 7, Supplementary file 8 and Figure 1—figure supplement 3). We determined the frequency of all non-Alpha-specific mutations among the 6522 Thuringian Alpha genomes. We then manually screened for mutations present in at least 20 genomes with a small phylogenetic distance and a time occurrence of at least 2 months. This led to nine mutations, each of them creating a defined cluster covering between 12 and 811 closely related genomes. We only kept mutation information of these nine subclusters in the respective metadata, which, together with the tree file of the phylogenetic time tree, was uploaded to a ‘https://microreact.org/’-project, provided as Supplementary file 1 and found under the following link: here.
 
-## Mobile service data
+### Mobile service data
 
 T-Systems International GmbH collected and aggregated mobile service data via the Cell ID method, dividing a geographical area into the so-called traffic cells. Each cell is assigned to exactly one transmitter mast, with a spatial resolution from 500 m × 500 m up to 8 km × 8 km (depending on the transmitter mast network density). Cell phones always register to the closest traffic cell, which is recorded and stored in an origin-destination matrix (ODM). For population representation, the data was extrapolated with Deutsche Telekom’s market share. Due to data privacy, the registration data is combined into movement streams between traffic cells, the status resolution is reduced to 1 hr (greater time intervals = less resolution), and individual traffic cells are grouped into districts. The degree of anonymization (k-value=30, data privacy regulation) removed movement streams with less than 30 participants, resulting in approximately 200 Mio trips in the ODM. SMA Development GmbH analyzed all movements between the single Thuringian districts, adding each Alpha sample’s isolation time and location data (per subcluster). The movements were further divided by months and originating district (subcluster-affiliated vs. -unaffiliated), determining each district’s monthly inbound mobility proportion from cluster-affiliated districts.
 
-## Research in context
+### Research in context
 
-## Evidence before this study
+#### Evidence before this study
 
 We searched PubMed for studies about the use of mobile service data for surveillance written in English. For the broadest possible search, we included any publication covering mobile data and surveillance aspects, using the following search string: (‘cellular data’ OR ‘cell phone data’ OR ‘mobility data’ OR ‘movement data’ OR ‘migration data’ OR ‘phone data’) AND (‘Surveillance’ OR ‘Monitoring’ OR ‘Survey’ OR ‘Pandemic’ OR ‘Disease’ OR ‘Epidemic’ OR ‘Outbreak’). Our search yielded 1285 publications published between 1966 and 2023. We manually screened all these publications but found no study that applied mobile service data for active, targeted surveillance. Across all studies, the general focus was on tracking contacts or analyzing movements to assess, for instance, the efficiency of non-pharmaceutical interventions or generate prediction models. Some studies suggested targeted surveillance based on their results, but it was not yet applied. Additionally, we used ‘suite.ai’ and ‘chatGPT’ (with BING-search access) to let them search for ‘studies that utilize mobile service data to guide the sampling process for infectious disease surveillance’. While ‘suite.ai’ found two studies and ‘chatGPT’ found another ten studies and reviews, none covered the direct application of the mobility data in active surveillance.
 
-## Added value of this study
+#### Added value of this study
 
 This study highlights the value of combining mobile service data with fine-granular metadata for integrated genomic surveillance during the SARS-CoV-2 pandemic in a German federal state. We illustrated this strategy with the Omicron sublineage BQ.1.1 and how to guide the sampling processes toward areas where the new variant was expected to emerge. Additionally, we used mobile service data during the pandemic to assess our sampling coverage. Our study is the first to actively guide part of the genomic surveillance process during a pandemic.
 
-## Implications of all the available evidence
+#### Implications of all the available evidence
 
 Efficient molecular surveillance setups are crucial in managing outbreaks from the local to the global scale. Different data sources are investigated to increase this efficiency, addressing factors like the more efficient usage of scarce surveillance resources and the prediction of spread. Extending molecular surveillance with such data should improve the future management of pandemics and outbreaks.
 
-## Declaration of generative AI and AI-assisted technologies in the writing process
+### Declaration of generative AI and AI-assisted technologies in the writing process
 
 During the preparation of this work, the author(s) used Grammarly in order to correct general English and improve readability. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication.

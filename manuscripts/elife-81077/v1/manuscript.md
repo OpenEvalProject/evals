@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/048nfjm95 Hamilton Institute, Maynooth University Maynooth Ireland
+1. Hamilton Institute, Maynooth University Maynooth Ireland ([ROR:048nfjm95](https://ror.org/048nfjm95))
 
 † Corresponding author
 

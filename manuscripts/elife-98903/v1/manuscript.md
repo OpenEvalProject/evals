@@ -16,15 +16,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05v58y004 Department of Oncology, Shangyu People's Hospital of Shaoxing Shaoxing China
-2. https://ror.org/01wck0s05 Department of Pharmacy, School of Medicine, Hangzhou City University Hangzhou China
+1. Department of Oncology, Shangyu People's Hospital of Shaoxing Shaoxing China ([ROR:05v58y004](https://ror.org/05v58y004))
+2. Department of Pharmacy, School of Medicine, Hangzhou City University Hangzhou China ([ROR:01wck0s05](https://ror.org/01wck0s05))
 3. Department of Pharmacy, The Affiliated Hospital of Northwest University Shanxi China
-4. https://ror.org/05pkzpg75 Department of Pharmacy, Ningbo First Hospital Ningbo China
-5. https://ror.org/00rd5t069 Department of Clinical Medicine, The First School of Medicine, Wenzhou Medical University Wenzhou China
-6. https://ror.org/00a2xv884 College of Pharmaceutical Sciences, Zhejiang University Hangzhou China
-7. https://ror.org/00a2xv884 Department of Pharmacy, Zhejiang University of Technology Hangzhou China
-8. https://ror.org/01wck0s05 Hangzhou Lin’an Traditional Chinese Medicine Hospital , Affiliated Hospital, Hangzhou City University Hangzhou China
-9. https://ror.org/05hfa4n20 Department of Clinical Pharmacology, Key Laboratory of Clinical Cancer Pharmacology and Toxicology Research of Zhejiang Province, Affiliated Hangzhou First People's Hospital, School of Medicine, Westlake University Hangzhou China
+4. Department of Pharmacy, Ningbo First Hospital Ningbo China ([ROR:05pkzpg75](https://ror.org/05pkzpg75))
+5. Department of Clinical Medicine, The First School of Medicine, Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+6. College of Pharmaceutical Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+7. Department of Pharmacy, Zhejiang University of Technology Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+8. Hangzhou Lin’an Traditional Chinese Medicine Hospital , Affiliated Hospital, Hangzhou City University Hangzhou China ([ROR:01wck0s05](https://ror.org/01wck0s05))
+9. Department of Clinical Pharmacology, Key Laboratory of Clinical Cancer Pharmacology and Toxicology Research of Zhejiang Province, Affiliated Hangzhou First People's Hospital, School of Medicine, Westlake University Hangzhou China ([ROR:05hfa4n20](https://ror.org/05hfa4n20))
 
 † Corresponding author
 
@@ -42,11 +42,27 @@ N6-methyladenosine (m6A) is the most abundant RNA modification, and the process 
 
 ## Results
 
-## PDE1A overexpression predicts a poor prognosis in lung cancer patients
+### PDE1A overexpression predicts a poor prognosis in lung cancer patients
 
 First, immunohistochemistry analysis revealed that PDE1A expression was significantly higher in lung cancer tissues compared to normal lung tissues (Figure 1A, Figure 1—figure supplement 1; Uhlén et al., 2015; Uhlen et al., 2017). As shown in Figure 1B, overexpression of PDE1A was also observed in three NSCLC cell lines compared with normal human lung fibroblasts (HELF cells). Additionally, the overexpression of PDE1A was also observed in lung cancer from high-risk patients compared with low-risk patients (p<0.0001, Figure 1C). Lung cancer patients in the high-risk group had shorter survival times than those in the low-risk group (Figure 1D; Aguirre-Gamboa et al., 2013; Chitale et al., 2009). Furthermore, lung cancer patients with high levels of PDE1A in their tumors had shorter overall survival than those with low PDE1A expression, indicating that PDE1A overexpression was correlated with a poor prognosis in lung cancer patients (Figure 1E; Rousseaux et al., 2013; Goswami and Nakshatri, 2014). Thus, PDE1A might be a novel prognostic predictor in lung cancer treatment and contribute to lung cancer progression.
 
-## PDE1A promotes the metastasis and EMT of NSCLC cells both in vitro and in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig1-v1.jpg)
+
+**Figure 1.:** (A) The expression of PDE1A was detected in non-small cell lung cancer (NSCLC) and normal lung tissue. It was obtained from The Human Protein Atlas (https://www.proteinatlas.org/). IOD/area means integral optical density/area. t-Test was used to compare the difference between lung cancer and normal lung groups, **P < 0.01. (B) The expression of PDE1A in human lung fibroblasts (HELF), A549, NCI-H1299, and NCI-H460 cells was detected by western blot. (C and D) Box plot analysis of the PDE1A messenger RNA (mRNA) levels in clinical lung cancer tissue samples. It was collected, and statistical analyses were performed from SurvExpress (http://bioinformatica.mty.itesm.mx:8080/Biomatec/SurvivaX.jsp). Gene: PDE1A; Access database numbers: Chitale lung (n=185); Censored: recurrence months or survival months. (E) It was collected from PROGgene V2 Prognostic Database (http://www.progtools.net/gene/index.php). Survival analysis is done using backend R script which employs R library ‘survival’ to perform Cox proportional hazards analysis (function ‘coxph’) and to plot prognostic plots (function ‘survfit’). Single-user input genes: PDE1A; Cancer type: LUNG; Survival measure: death; Bifurcate gene expression at: median; GSE30219-Off-context gene expression in lung cancer identifies a group of metastatic-prone tumors.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** It was obtained from The Human Protein Atlas (https://www.proteinatlas.org/).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Data collected from LinkedOmics (https://www.linkedomics.org/admin.php) are shown. Overrepresentation enrichment analysis (ORA) (A) and gene set enrichment analysis (GSEA) (B) were performed to analyze the biological processes related to PDE1A in NSCLC. Sample cohort: TCGA_NSCLC; Institute: UNC; Data type: RNAseq; Platform: HiSeq RNA; Attribute: PDE1A; Statistical methods: Spearman’s correlation test; Patients: 515; Tools: ORA and GSEA; Gene Ontology analysis: biological process. (C) GSEA demonstrated that PDE1A participated in mesenchyme development and the cellular response to VEGF stimulus.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–B) NSCLC cells were transfected with PDE1A siRNA or control siRNA (A) and empty vector or PDE1A plasmid (B) for 24 hr in six-well plates, then transferred to 96-well plates for the indicated times, and finally subjected to sulforhodamine B (SRB) assay (n=3).
+
+### PDE1A promotes the metastasis and EMT of NSCLC cells both in vitro and in vivo
 
 To investigate the biological function of PDE1A in lung cancer development, gene set enrichment analysis (GSEA) and overrepresentation enrichment analysis (ORA) were performed to analyze the biological process of PDE1A in NSCLC using LinkedOmics (Vasaikar et al., 2018). As shown in Figure 1—figure supplement 2A, PDE1A might be involved in the adhesion, migration, and motility of NSCLC cells, which are critical parameters in the metastatic dissemination of cancer cells. Tumor angiogenesis, the recruitment of new blood vessels, enables a pre-existing tumor to grow and metastasize (Onn and Herbst, 2003). PDE1A might also participate in mesenchyme development, angiogenesis, vasculature development, cellular response to VEGF stimulus, blood vessel morphogenesis, and development (Figure 1—figure supplement 2). Thus, PDE1A is proposed to enhance the metastatic potential of NSCLC cells.
 
@@ -54,9 +70,25 @@ First, PDE1A silencing did not cause a significant decrease in the proliferation
 
 As shown in Figure 2A and B, suppression of PDE1A markedly reduced the migratory and invasive capacity of NSCLC cell lines. The wound healing assay also showed that NSCLC cells with PDE1A knockdown had a slower wound closure rate than control siRNA-transfected cells (Figure 2C and D). Furthermore, PDE1A knockdown increased E-cadherin expression and reduced N-cadherin expression, indicating that PDE1A silencing suppressed EMT progression in NSCLC cells (Figure 2E). Meanwhile, the PDE1 inhibitor vinpocetine significantly suppressed the migration and EMT of NSCLC cells (Figure 2F–H). To determine the effects of PDE1A on NSCLC cell migration and invasion in vivo, nude mouse models were established using PDE1A-shRNA- and control-shRNA-treated NCI-H1299 cells. As shown in Figure 2I, Figure 2—figure supplement 1C and D, the number of pulmonary metastatic nodules was decreased in the PDE1A-shRNA group compared with the control-shRNA group in nude mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) NSCLC cells were transfected with control siRNA and PDE1A siRNA for 24 hr. Cells were transferred to Transwell chambers without or with a Matrigel coating on the insert membrane, and the cell migrative and invasive abilities were determined, respectively (n=3). (C–D) NSCLC cells were transfected with control siRNA and PDE1A siRNA for 24 hr, and the wound healing assay was established in NSCLC cells (n=3). (E) NSCLC cells were transfected with control siRNA and PDE1A siRNA for 48 hr, and the expression of indicated proteins was detected. (F–G) NSCLC cells were treated with DMSO or vinpocetine (5, 10, 20 µM) for 24 hr, and the migrative ability of treated NSCLC cells was determined using the Transwell assay for 24 hr (n=3). (H) NSCLC cells were treated with DMSO or vinpocetine (5, 10, 20 µM) for 24 hr, and the expression of indicated proteins was determined. (I) The pulmonary metastatic nodules were stained using H&E staining and counted in nude mice harboring NCI-H1299 cells transfected with PDE1A shRNA and control shRNA (n=6). **P < 0.01, ***P < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) NSCLC cells were transfected with control siRNA, siPDE1A, siPDE1B, and siPDE1C for 24 hr, and cells were transferred to Transwell chambers without a Matrigel coating on the insert membrane, and the cell migration was determined after 24 hr, (n=3). (B) NSCLC cells were transfected with indicated siRNA for 48 hr, and the expression of the indicated proteins was detected. (C) The lungs of nude mice were separated and stained with Bouin’s solution, and the pulmonary metastatic nodules were counted. (D) The relative body weight of each group in the in vivo metastasis studies in Figure 2I, (n=6). (E) The lungs in nude mice were stained using H&E. ***P < 0.001.
+
 In contrast, PDE1A overexpression significantly enhanced the migratory and invasive capacities of NSCLC cells (Figure 3A and B). In addition, NSCLC cells with high PDE1A expression had a higher wound closure rate than those transfected with empty vector (Figure 3C). Meanwhile, PDE1A overexpression decreased E-cadherin expression and elevated N-cadherin expression, indicating that PDE1A promoted EMT progression of NSCLC cells (Figure 3D). NSCLC cell lines with varying invasive potential were generated via repeated Transwell selection to compare PDE1A expression between highly and poorly invasive cells (Figure 3E, Figure 3—figure supplement 1A and B). The protein and mRNA levels of PDE1A were higher in highly invasive NSCLC cells than in NSCLC cells with low invasive potential (Figure 3F and G). In an in vivo nude mouse experiment, NSCLC cells overexpressing PDE1A produced more pulmonary metastatic nodules than the parental NSCLC cells (Figure 3H, Figure 3—figure supplement 1C and D).
 
-## NSCLC cells overexpressing PDE1A promote angiogenesis in the TME
+![Figure 3.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) NSCLC cells were transfected with PDE1A plasmid and empty vector for 24 hr. Cells were transferred to Transwell chambers without (A) or with (B) a Matrigel coating on the insert membrane, and the cell migrative and invasive abilities were determined, respectively, (n=3). (C) NSCLC cells were transfected with PDE1A plasmid and empty vector for 24 hr, and the wound healing assay was established in NSCLC cells, (n=3). (D) NSCLC cells were transfected with PDE1A plasmid and empty vector for 48 hr, and the expression of indicated proteins was detected. (E) The highly invasive NSCLC cells were separated using the Transwell chamber assay, and P3 cells were obtained from P0 cells after three generations. (F–G) The messenger RNA (mRNA) (F) and protein (G) levels of indicated genes were determined in P3 and P0 NSCLC cells. (H) The pulmonary metastatic nodules were stained using H&E and Bouin’s solution and counted in nude mice harboring NCI-H1299 cells transfected with PDE1A plasmid and empty vector, (n=6). **P < 0.01, ***P < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The migrative abilities of P3 and P0 NSCLC cells were determined, (n=3). (B) The messenger RNA (mRNA) levels of indicated genes were determined in P3 and P0 NSCLC cells using quantitative real‑time PCR (qRT-PCR), (n=3). (C) Before the NSCLC cells were injected into the nude mice, the migrative abilities of NSCLC cells were determined using Transwell assay. (D) The relative body weight of each group in the in vivo metastasis studies in Figure 3H, (n=6). (E) The lungs in nude mice were stained using H&E. **P < 0.01, ***P < 0.001.
+
+### NSCLC cells overexpressing PDE1A promote angiogenesis in the TME
 
 GSEA demonstrated that PDE1A expression was positively correlated with angiogenesis in lung cancer (Figure 4A). To mimic the TME, a coculture system of NSCLC cells and vascular endothelial cells was established (Figure 4B). NSCLC cells overexpressing PDE1A promoted the migration of human umbilical vein endothelial cells (HUVECs), and NSCLC cells with low levels of PDE1A suppressed the migration of HUVECs (Figure 4C and D). Next, NSCLC cells were treated with GW4869 to reduce exosome release, and GW4869 suppressed the enhancement of the migratory ability of HUVECs induced by NSCLC cells overexpressing PDE1A (Figure 4E). Meanwhile, compared with negative control, shPDE1A significantly suppressed tumor angiogenesis of NSCLC in vivo (Figure 4F). Thus, NSCLC cells overexpressing PDE1A promote angiogenesis in the TME.
 
@@ -64,15 +96,31 @@ GSEA demonstrated that PDE1A expression was positively correlated with angiogene
 
 **Figure 4.:** (A) It was collected from LinkedOmics. Statistical tests in LinkFinder include Pearson’s correlation coefficient, Spearman’s rank correlation, Student’s t-test, Wilcoxon test, analysis of variance, Kruskal-Wallis analysis, Fisher’s exact test, Chi-squared test, Jonckheere’s trend test, and Cox’s regression analysis. Multiple-test correction is performed using the Benjamini and Hochberg method to generate the false discovery rate. (B–D) NSCLC cells were transfected with empty vector/PDE1A overexpressing plasmid or control siRNA/siPDE1A for 48 hr, and then NSCLC cells were placed on the upper panel of Transwell with 0.4 μm insert, human umbilical vein endothelial cells (HUVECs) were placed on the lower panel of Transwell, and wound healing assay was performed to determine the migrative abilities of HUVECs, (n=3). (E) NSCLC cells with PDE1A overexpression were treated with 10 µM GW4869, and a wound healing assay was performed to determine the migrative abilities of HUVECs, (n=3). (F) NSCLC cells were transfected with empty vector or shPDE1A, then cells were transplanted into nude mice via subcutaneous injection, and the blood vessels were counted after 60 days, (n=6). **P < 0.01, ***P < 0.001.
 
-## PDE1A promotes the metastasis of NSCLC cells via the STAT3 signaling pathway
+### PDE1A promotes the metastasis of NSCLC cells via the STAT3 signaling pathway
 
 Then, the dependence of PDE1A-enhanced metastasis on cAMP metabolic activity was investigated. As shown in Figure 5—figure supplement 1, the cAMP inhibitor SQ22536 failed to rescue the migrative ability suppressed by siPDE1A in NSCLC cells, indicating that the basic molecular function might not be involved in the metastasis of PDE1A. To better explore the mechanism of PDE1A in NSCLC progression, bioinformatic analysis of PDE1A coexpressed genes was performed, which revealed that PDE1A might be involved in the JAK/STAT3, Hedgehog, and TGF-β pathways in NSCLC (Figure 5A). Meanwhile, GSEA enrichment analysis demonstrated that PDE1A might participate in IL-6 production (Figure 5B). Thus, IL-6/JAK/STAT3 signaling is involved in PDE1A-mediated promotion of metastasis in NSCLC. As shown in Figure 5C, PDE1A overexpression increased the phosphorylation level of STAT3 in NSCLC cells. In contrast, PDE1A knockdown or the PDE1 inhibitor vinpocetine suppressed the phosphorylation of STAT3 in NSCLC cells (Figure 5D and E). Moreover, STAT3 suppression by siRNA or SH-4–54 significantly reversed the enhancement of NSCLC cell migration induced by PDE1A overexpression (Figure 5F and G). In addition, the suppression of STAT3 inhibited PDE1A-induced EMT progression in NSCLC cells (Figure 5H and I). Thus, PDE1A promoted the metastasis of NSCLC cells via activating the STAT3 signaling pathway, but the direct interaction between PDE1A and STAT3 could not be observed in NSCLC cells (Figure 5J). Moreover, PDE1A was mainly overexpressed in the cytoplasm in NSCLC cells (Figure 5K). Subsequently, the mechanism by which PDE1A promotes the STAT3 signaling pathway in the cytoplasm was further explored.
 
-## PDE1A physically interacts with YTHDF2 and promotes the metastasis of NSCLC cells
+![Figure 5.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig5-v1.jpg)
+
+**Figure 5.:** (A) A Venn diagram was generated using LinkedOmics, and overrepresentation enrichment analysis (ORA) was performed to analyze the molecular pathway regulated by PDE1A in NSCLC. Sample cohort: TCGA_NSCLC; Institute: UNC; Data type: RNAseq; Platform: HiSeq RNA; Attribute: PDE1A; Statistical methods: Spearman’s correlation test; Patients: 515; Tools: ORA; Gene Ontology analysis: WikiPathways and PANTHER Pathway; Select rank criteria: FDR; Select sign: Positively correlated; Significance level: 0.05; TOP40 was selected to generate the Venn diagram. (B) Gene set enrichment analysis (GSEA) was performed to analyze the biological process of PDE1A in NSCLC. (C) NSCLC cells were transfected with PDE1A plasmid and empty vector for 48 hr, and the expression of indicated proteins was detected. (D) NSCLC cells were transfected with control siRNA and PDE1A siRNA for 48 hr, and the expression of indicated proteins was detected. (E) NSCLC cells were treated with DMSO or vinpocetine (5, 10, 20 µM) for 24 hr, and the expression of indicated proteins was determined. (F) NSCLC cells overexpressing PDE1A were transfected with control siRNA and STAT3 siRNA for 48 hr, and the migrative abilities of NSCLC cells were determined by Transwell assay, (n=3). (G) NSCLC cells overexpressing PDE1A were treated with STAT3 inhibitor SH-4–54 (5 µM) for 24 hr. The migrative abilities of NSCLC cells were determined by Transwell assay, (n=3). (H) NSCLC cells overexpressing PDE1A were transfected with control siRNA and STAT3 siRNA for 48 hr, and the expression of indicated protein was detected by western blot. (I) NSCLC cells overexpressing PDE1A were treated with STAT3 inhibitor SH-4–54 (5 µM) for 24 hr, and the expression of indicated protein was detected by western blot. (J) The interaction between PDE1A and STAT3 was determined by immunoprecipitation. (K) NCI-H1299 cells were transfected with empty vector and PDE1A overexpressing plasmid for 48 hr, and the contribution of PDE1A in the cytoplasm and nucleus was determined.**P < 0.01, ***P < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Non-small cell lung cancer (NSCLC) cells were transfected with control siRNA and PDE1A siRNA. After 24 hr, cells were collected for Transwell assay. Cells were treated with DMSO or 5 µM SQ22536 for 24 hr, and the migrative abilities of NSCLC cells were determined, (n=3). ns, not significant, **P < 0.01.
+
+### PDE1A physically interacts with YTHDF2 and promotes the metastasis of NSCLC cells
 
 To investigate the mechanism by which PDE1A promotes NSCLC metastasis and activates the STAT3 pathway, the proteins interacting with PDE1A in NSCLC were determined using immunoprecipitation followed by mass spectrometry analysis (Supplementary file 3). To identify key proteins involved in PDE1A-mediated STAT3 activation, a Venn analysis revealed nine overlapping genes among STAT3-coexpressed genes in NSCLC samples, PDE1A-interacting proteins, and genes overexpressed in NSCLC compared to normal tissues (Figure 6A). Meanwhile, GO enrichment analysis of PDE1A-interacting genes was used to predict the molecular function of PDE1A, and PDE1A might participate in m6A-containing RNA binding in NSCLC progression (Figure 6B). Based on this, it was hypothesized that PDE1A may interact with YTHDF2 and be involved in the binding of m6A-modified RNA during NSCLC progression. The physical binding between PDE1A and YTHDF2 was confirmed by silver staining and immunoprecipitation (Figure 6C and D). Furthermore, YTHDF2 knockdown reversed the enhancement of NSCLC migration induced by PDE1A overexpression, indicating that PDE1A might interact with YTHDF2 and promote the metastasis of NSCLC (Figure 6E, Figure 6—figure supplement 1A and B). The mRNA and protein levels of YTHDF2 were upregulated in NSCLC compared with normal lung tissues (Figure 6—figure supplement 1C and D; Chandrashekar et al., 2017). In addition, YTHDF2 overexpression predicted poor outcomes in lung cancer patients (Figure 6—figure supplement 1E; Rousseaux et al., 2013; Goswami and Nakshatri, 2014). Meanwhile, the activation of STAT3 by PDE1A could be reversed by YTHDF2 knockdown in NSCLC cells (Figure 6F). Furthermore, PDE1A was positively correlated with YTHDF2 expression with a Pearson’s correlation coefficient above 0.3 in NSCLC tissues (Figure 6G; Chandrashekar et al., 2017). Thus, PDE1A might regulate the STAT3 signaling pathway via interacting with YTHDF2.
 
-## PDE1A interacts with YTHDF2 to regulate the SOCS2/STAT3 signaling pathway
+![Figure 6.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig6-v1.jpg)
+
+**Figure 6.:** (A) Venn diagram showing the overlap among PDE1A-interacting proteins (it was collected from mass spectrometry analysis in NSCLC cells), STAT3-coexpressed genes (collected from gene correlation using UALCAN), upregulated proteins in NSCLC compared with normal tissues (analyzed by UALCAN based on CPTAC database), and upregulated genes in NSCLC compared with normal tissues (analyzed by UALCAN based on TCGA database). Pearson’s correlation analysis of UALCAN was used to evaluate gene correlation analyses, and Welch’s t-test was estimated to detect the significance of differences in expression levels between two groups. (B) GO enrichment analysis of PDE1A-interacting genes. (C) Immunoprecipitation followed by silver staining was performed to identify protein and protein interaction using A549 cell lysate with the anti-PDE1A antibody. (D) Immunoprecipitation was used to confirm protein and protein interaction in NCI-H1299 cells. (E) NSCLC cells overexpressing PDE1A were transfected with control siRNA and YTHDF2 siRNA for 48 hr, and the migrative abilities of NSCLC cells were determined by Transwell assay, (n=3). (F) NSCLC cells overexpressing PDE1A were transfected with control siRNA and YTHDF2 siRNA for 48 hr, and the expression of indicated protein was detected by western blot. ***P < 0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98903/elife-98903-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Non-small cell lung cancer (NSCLC) cells were transfected with control siRNA and YTHDF2 siRNA for 48 hr, and the knockdown efficiency of YTHDF2 was confirmed by western blot (A) and quantitative real‑time PCR (qRT-PCR) (B), (n=3). (C–D) The messenger RNA (mRNA) and protein levels of phosphodiesterase 1A (PDE1A) in NSCLC and normal lung tissues are shown. It was collected from UALCAN and shown. Gene: YTHDF2; TCGA dataset: Lung adenocarcinoma (C); CPTAC dataset: Lung adenocarcinoma (D). (E) The prognostic value of YTHDF2 in NSCLC patients was identified using the PROGgeneV2 online tool (https://www.progtools.net/gene). ***P < 0.001.
+
+### PDE1A interacts with YTHDF2 to regulate the SOCS2/STAT3 signaling pathway
 
 To investigate how the PDE1A/YTHDF2 complex regulates STAT3 signaling, Venn analysis identified 33 genes overlapping among YTHDF2-bound RNAs and genes coexpressed with YTHDF2 and STAT3 in lung cancer (Shi et al., 2017; Bartha and Győrffy, 2021; Cerami et al., 2012; Gao et al., 2013; Figure 7A and Supplementary file 4). Then, the interactions between the YTHDF2 protein and the mRNAs of 33 overlapping genes were predicted by the RNA-Protein Interaction Prediction online tool. There were three predicted targets of YTHDF2 with high scores and highly correlated with STAT3 signaling as previously reported, including NRF2, SOCS2, and MET (Supplementary file 5; Muppirala et al., 2011). SOCS family members are cytokine-inducible negative regulators of the JAK/STAT pathway, and SOCS2 suppresses the binding of JAK2 and STAT3, the activity of JAK, and STAT3 activation (Sen et al., 2012). It was hypothesized that PDE1A might interact with YTHDF2, affect the stability of SOCS2 mRNA, and thereby regulate the STAT3 signaling pathway in NSCLC cells. As shown in Figure 7B, the interaction between YTHDF2 protein and SOCS2 mRNA was confirmed by RIP, and the binding between PDE1A protein and SOCS2 mRNA was also demonstrated using RIP. Meanwhile, siPDE1A significantly enhanced the stability of SOCS2 mRNA in NSCLC cells (Figure 7C). Furthermore, YTHDF2 or PDE1A negatively regulated the expression of SOCS2 mRNA in NSCLC cells, and YTHDF2 overexpression successfully reversed the siPDE1A-induced SOCS2 mRNA accumulation. In contrast, siYTHDF2 enhanced siPDE1A-induced SOCS2 mRNA accumulation (Figure 7D). Thus, YTHDF2 might negatively regulate the expression of SOCS2 mRNA via cooperating with PDE1A.
 
@@ -90,58 +138,58 @@ Collectively, PDE1A promotes metastasis in NSCLC cells, and PDE1A overexpression
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 Vinpocetine (V107535) was purchased from Aladdin (Shanghai, China). SH-4–54 (S7337), SQ22536 (S8283), and GW4869 (S7609) were obtained from Selleck Chemicals (Houston, TX, USA). Antibodies against β-actin (SC-1616) and GAPDH (SC-25778) were obtained from Santa Cruz Biotechnology (Dallas, TX, USA). Antibodies against N-cadherin (14215), STAT3 (9139), p-STAT3 (Y-705) (9145), Vimentin (5741), and JAK2 (3230S) were obtained from Cell Signaling Technology (Danvers, MA, USA). An antibody against α-tubulin (AT7819) was purchased from Beyotime Biotechnology (Shanghai, China). Antibodies against PDE1A (12442-2-AP), YTHDF2 (247441-AP), lamin B (12595-1-AP), and E-cadherin (20874-1-AP) were obtained from Proteintech (Rosemont, IL, USA).
 
-## Cell lines and cell culture
+### Cell lines and cell culture
 
 Human NSCLC cell lines (A549, NCI-H1299, and NCI-H460), HELF, and HUVECs were maintained in RPMI-1640 medium supplemented with 10% fetal bovine serum (FBS) and 100 U/ml penicillin/streptomycin. All the cell lines were purchased from the Shanghai Institute of Biochemistry and Cell Biology (Shanghai, China), cultured at 37°C with 5% CO2 and confirmed to be mycoplasma-free.
 
-## siRNA transfection
+### siRNA transfection
 
 Scramble siRNA, siPDE1A, siPDE1B, siPDE1C, siSTAT3, and siYTHDF2 were synthesized by GenePharma (Suzhou, China). Then, NSCLC cells were transfected with siRNA (40 nM) using PolyPlus-transfection reagent in accordance with the instructions. The sequences of siRNAs are summarized in Supplementary file 1.
 
-## SRB assay
+### SRB assay
 
 NSCLC cells were treated with the indicated compounds and subsequently fixed with ice-cold TCA and stained with 0.4% SRB (wt/vol) solution. Cell proliferation was determined by SRB assay according to the previously reported methods (Hu et al., 2020).
 
-## Wound healing assay
+### Wound healing assay
 
 NSCLC cells were seeded on a 24-well plate and cultured as a monolayer to 90% confluence. The monolayer was scratched with a 10 µl pipette tip, and then the cells were cultured with FBS-free culture medium for 24 hr. Images of the wounded cell monolayer were taken using a microscope (Olympus, Japan) at 0 and 24 hr. The wound closure rate was calculated as follows: (G0 – G24)/G0 × 100%, where G0 and G24 represent the gap areas at 0 and 24 hr, respectively.
 
-## Migration and invasion assays using Transwell
+### Migration and invasion assays using Transwell
 
 Migration and invasion assays were performed using a 24-well Transwell chamber system (pore size: 8 µm, Corning, USA). A total of 5×104 cells were seeded in the upper chamber of an insert with 0.4 ml serum-free culture media in 24-well plates. Then, 0.6 ml culture medium with 20% FBS was added to the lower chamber. For invasion assays, the upper transwell chamber of the insert was coated with Matrigel (BD Biosciences, Bedford, MA, USA) before plating cells. 50 μl of Matrigel was dissolved in 450 μl of culture medium and added 100 μl solution into the upper transwell chamber. After incubation for 24 hr, migratory or invasive cells were stained with 0.5% crystal violet and analyzed under a light microscope.
 
-## Protein extraction and western blotting analysis
+### Protein extraction and western blotting analysis
 
 Briefly, cells were washed three times with cold PBS and pelleted. The pellet was resuspended in lysis buffer (NP40 lysate), incubated on ice with frequent vortexing for 30 min, and the lysate was obtained by centrifugation at 10,000×g for 30 min. Proteins were fractionated by SDS-PAGE, transferred onto PVDF membranes, blocked in 5% nonfat milk in PBS/Tween-20, and then blotted with specific primary antibody overnight at 4°C, followed by incubation with secondary antibody for 1 hr at room temperature. Bands were detected by the Odyssey CLX Image Studio system (version 5.0.21, LiCor Odyssey, LI-COR Biosciences).
 
-## Immunoprecipitation and LC-MS/MS
+### Immunoprecipitation and LC-MS/MS
 
 For co-immunoprecipitation, the cells were lysed with IP buffer (20 mM HEPES, 25% glycerine, 210 mM NaCl, 1.5 mM MgCl2, 0.05 mM EDTA, 0.2% NP40, 1× cocktail, 1 mM PMSF, 2 mM DTT) and centrifuged at 10,000×g for 30 min at 4°C. The cell lysates were treated with protein G magnetic beads at 4°C for 1 hr. Subsequent immunoprecipitation reactions were set up with equal quantities of the lysates. Primary antibody was added to the lysate, and the mixture was incubated overnight with slow shaking at 4°C, and then incubated with protein G magnetic beads at 4°C for 1 hr. Subsequently, the lysates were centrifuged at 3000×g at 4°C for 5 min. The supernatant was aspirated, the protein G magnetic beads were washed three to four times with lysis buffer, and detection was performed using SDS-PAGE or LC-MS/MS (Micrometer Biotech Company, Hangzhou, China).
 
-## Extraction of RNA and qRT-PCR
+### Extraction of RNA and qRT-PCR
 
 Total RNA was extracted from cells by utilizing TRIzol Reagent (Invitrogen, Thermo Fisher Scientific). RNA was reverse-transcribed into cDNA using an iScript cDNA Synthesis kit (Bio-Rad, Hercules, CA, USA). qRT-PCR was performed using the PerfectStart Green qPCR SuperMix kit (TransGen Biotech, Beijing, China). The levels of mRNA were analyzed by the Bio-Rad CFX96 real-time PCR system (Bio-Rad, Hercules, CA, USA). GAPDH was used as an endogenous control for mRNA qualification, and the 2-ΔΔCt method was applied to calculate the relative expression. The primers used are listed in Supplementary file 2.
 
-## RNA binding protein immunoprecipitation
+### RNA binding protein immunoprecipitation
 
 RNA binding protein immunoprecipitation assays were performed using a Magna RIP Kit (17-701, Millipore, MA, USA) following the manufacturer’s instructions. In brief, magnetic beads precoated with 5 μg normal antibodies against PDE1A/YTHDF2 or rabbit IgG (Millipore) were incubated with cell lysates at 4°C overnight. The beads containing immunoprecipitated RNA-protein complexes were treated with proteinase K to remove proteins. Then, RNAs of interest were purified with TRIzol and measured by qRT-PCR.
 
-## Plasmid and shRNA transfection and infection
+### Plasmid and shRNA transfection and infection
 
 Two micrograms of overexpressing plasmid or shRNA of the indicated genes was transfected into cells using PolyPlus-transfection reagent. For shRNA used in lentivirus-mediated interference, complementary sense and antisense oligonucleotides encoding shRNAs targeting PDE1A were synthesized, annealed, and cloned into pLKO.TRC vector (Addgene, 10878). The PDE1A-FLAG overexpression plasmid was synthesized by GenScript (Nanjing, Jiangsu, China). YTHDF2-HA expression plasmids were synthesized via cloning YTHDF2 with an HA tag into the pcDNA3.1(-) vector.
 
-## In vivo animal experiment
+### In vivo animal experiment
 
 Female nude mice (BALB/c, 4–6 weeks of age) were obtained from Shanghai SLAC Laboratory Animal Co., Ltd. A total of 2 × 106 NCI-H1299 cells transfected with shPDE1A/control shRNA or PDE1A overexpressing plasmid/empty vector were suspended in 0.1 ml of PBS and injected into mice via the tail vein. After 60 days, the mice were sacrificed, and the lung tissues were collected to observe pulmonary nodules. The lung, liver, kidney, pancreas, and other tissues were separated, fixed in 4% paraformaldehyde, and stained using H&E. All animal procedures were conducted in accordance with the guidelines and regulations approved by the Institutional Animal Care and Use Committee (IACUC) of Zhejiang University City College. Ethical approval for the study was obtained under protocol number 22001.
 
-## mRNA stability assay
+### mRNA stability assay
 
 NSCLC cells were seeded in six-well plates and grown to approximately 30% confluence, followed by siRNA transfection and incubation for 24 hr. Then, cells were incubated with actinomycin D (5 μg/ml) for 0, 3, or 6 hr followed by RNA extraction. The half-life of mRNA was analyzed by qRT-PCR. The mRNA expression for each group at the indicated time was calculated and normalized to GAPDH.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as the mean ± SD from three independent experiments. Two-tailed Student’s t test was used to compare two groups. p-Values<0.05 were considered significant. *p<0.05; **p<0.01; ***p<0.001.

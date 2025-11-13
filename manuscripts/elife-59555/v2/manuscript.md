@@ -26,13 +26,274 @@ Unique among mammalian CLC transporters, CLC-7 requires a β-subunit, osteopetro
 
 ## Results
 
-## Structure of CLC-7
+### Structure of CLC-7
 
 Following an evaluation of multiple CLC-7 orthologues, we decided to focus our structural studies on the chicken and human CLC-7 proteins based on their expression levels and their biochemical stabilities. Full-length chicken CLC-7 (ggCLC-7) and human CLC-7, which are 86.4% identical, were expressed in HEK293S GnTI- cells as mEGFP-fusions, purified to homogeneity in the detergent lauryl maltose neopentyl glycol (LMNG), cholesterol hemisuccinate (CHS), 150 mM KCl and 50 mM Tris-HCl pH 8.0, and analyzed by cryo-EM. Vitrified human CLC-7 transporters displayed a strongly preferred orientation that was confirmed by two-dimensional classification (Figure 1—figure supplement 1). Because of the very limited views of the transporter, we were not able to reconstruct a three-dimensional density map of human CLC-7. In contrast, two-dimensional classification of ggCLC-7 revealed a wide range of views and was suitable for three-dimensional structure determination (Figure 1—figure supplement 2). Three-dimensional classification of the imaged ggCLC-7 transporters identified a single class that displayed both well-ordered transmembrane and cytosolic domains. Reconstruction of these particle images with twofold symmetry imposed yielded a structure of dimeric ggCLC-7 at a resolution of 2.9 Å that enabled model building (Figure 1A, Figure 1—figure supplement 2, Figure 1—figure supplement 3 and Table 1). The final refined model, which lacks the disordered N- and C-termini, fits well into the density with good geometry (Figure 1B and Figure 1—figure supplement 2, Figure 1—figure supplement 3 and Table 1). Each protomer of dimeric ggCLC-7 contains a transmembrane domain composed of 18-transmembrane helices and a cytoplasmic domain composed of an N-terminal domain and two C-terminal cystathionine β-synthase (CBS) domains (Figure 1C). Both the transmembrane and cytosolic domains contribute to the large (~3700 Å2) ggCLC-7 dimer interface (Figure 1D).
 
-## Chloride and proton conduction pathways
+![Figure 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Cryo-EM density map (A) and structure (B) of ggCLC-7 viewed from within the membrane (left), the cytoplasm (middle) and the lysosomal lumen (right) colored by domain with N-terminal domain in magenta, transmembrane domain in blue, CBS1 in cyan and CBS2 in green. Modeled non-protein densities are colored orange and unmodeled non-protein densities are colored grey in A. (C) Domain topology of ggCLC-7 colored by domain as in A. (D) Dimer interface with interacting residues colored in wheat.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative cryo-EM image of hsCLC-7. (B) Two-dimensional class averages.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative cryo-EM image of ggCLC-7. (B) Two-dimensional class averages. (C) Simplified image processing workflow. (D) Angular distribution and ThreeDFSC anisotropy plots. (E) Fourier shell correlation (FSC) of two unfiltered half-maps for ggCLC-7 (black), cross-correlation plot of two unfiltered half-maps following density modification (red) and FSC of map-to-model fit of ggCLC-7 with density modified map (blue). (F) ggCLC-7 density map colored by local resolution calculated with blocres (Heymann, 2018).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative sections of cryo-EM density shown as grey mesh displayed at 10 σ threshold. Refined coordinates are shown as sticks.
+
+**Table 1.**
+ Cryo-EM data acquisition, reconstruction and model refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ggCLC-7</th>
+      <th>hsCLC-7/OSTM1</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Consensus</td>
+      <td>Consensus</td>
+      <td>TMD Focus</td>
+      <td>LD Focus</td>
+      <td>CD Focus</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cryo-EM acquisition and processing</td>
+    </tr>
+    <tr>
+      <td>EMDB accession #</td>
+      <td>22386</td>
+      <td>22389</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Total electron</td>
+      <td>61</td>
+      <td>44</td>
+      <td>44</td>
+      <td>44</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td colspan="6">Exposure (e-/Å2)</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>8</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µM)</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.0723</td>
+      <td>1.064</td>
+      <td>1.064</td>
+      <td>1.064</td>
+      <td>1.064</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particles</td>
+      <td>4,020,225</td>
+      <td>15,288,379</td>
+      <td>15,288,379</td>
+      <td>15,288,379</td>
+      <td>15,288,379</td>
+    </tr>
+    <tr>
+      <td>Final particles</td>
+      <td>87,707</td>
+      <td>327,619</td>
+      <td>655,238</td>
+      <td>655,238</td>
+      <td>655,238</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked, Å)</td>
+      <td>2.93</td>
+      <td>2.82</td>
+      <td>2.85</td>
+      <td>2.79</td>
+      <td>3.04</td>
+    </tr>
+    <tr>
+      <td>Density modified CC (0.5, Å)</td>
+      <td>2.92</td>
+      <td>2.81</td>
+      <td>2.80</td>
+      <td>2.70</td>
+      <td>3.30</td>
+    </tr>
+    <tr>
+      <td colspan="6">Model refinement</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>7JM6</td>
+      <td>7JM7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>2.98/2.40</td>
+      <td>2.92/2.56</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.50/0.143</td>
+      <td>0.50/0.143</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model refinement resolution</td>
+      <td>300-2.9</td>
+      <td>300-2.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">RMS deviations</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.005</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.806</td>
+      <td>0.769</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.73</td>
+      <td>97.87</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.27</td>
+      <td>2.13</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotamer Outliers (%)</td>
+      <td>0.00</td>
+      <td>1.17</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.37</td>
+      <td>1.37</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>5.68</td>
+      <td>5.38</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chloride and proton conduction pathways
 
 The transmembrane domain of ggCLC-7 adopts the canonical CLC architecture with each protomer possessing discrete ion permeation pathways that extend from the cytosol to the lysosomal lumen (Figure 2A). Structural and functional analysis of CLC transporters and channels have defined the Cl--conduction pathway and its three conserved Cl--binding sites (Accardi et al., 2004; Accardi and Miller, 2004; Accardi et al., 2005; Basilio et al., 2014; Chavan et al., 2020; Dutzler et al., 2002; Dutzler et al., 2003; Feng et al., 2010; Feng et al., 2012; Park et al., 2017; Park and MacKinnon, 2018; Picollo et al., 2012; Wang et al., 2019; Zdebik et al., 2008), and this architecture is well-preserved in ggCLC-7. In the present conformation of ggCLC-7, constrictions too narrow to accommodate Cl- ions exist on both ends of the Cl--conduction pathway (Figure 2B,C). On the cytosolic side of the pathway between the central and internal Cl--binding sites, the side chains of Ser200, Tyr501 and Tyr598 form a constriction with a minimum radius of 0.6 Å (Figure 2B). The luminal side of the Cl--conduction pathway contains two additional constrictions (Figure 2C). The first constriction, which has a minimum radius of 0.7 Å is immediately adjacent to the external Cl--binding site and is formed by the side chains of Glu243, Ile511 and the backbone of Lys242 and Glu243. The second constriction (1.1 Å minimum radius) is at the luminal entrance and is formed by the side chains of Lys242, Glu467 and the backbone of Gly241. Together the three constrictions yield an occluded state for the transporter, sealing off the external and central Cl--binding sites from the cytosol and the lysosomal lumen.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig2-v2.jpg)
+
+**Figure 2.:** (A) Each protomer of ggCLC-7 contains a Cl--conduction pathway, displayed as a green surface, and a putative H+-conduction pathway, displayed as a red surface. The N-terminal domain is colored in magenta, transmembrane domain in blue, CBS1 in cyan and CBS2 in green. (B) The cytosolic constriction of the Cl--conduction pathway formed by Ser200, Tyr501 and Tyr598 narrows the pathway to a minimum radius of 0.6 Å. (C) Two constrictions exist near the luminal entrance to the pathway formed by Glugate (Glu243), Lys242 and Ile511 and by Gly241, Lys242, Glu467. (D) Cl--binding sites (shown as green spheres) in the ggCLC-7 ion conduction pathway. Experimental cryo-EM density is shown as blue mesh countered at 10 σ threshold. Conserved residues are shown in sticks. (E) Ordered water molecules (shown as red spheres) are resolved in the hydrophobic gap between Glugate and Gluin and in the solvent-filled cavity in which Gluin resides. Experimental cryo-EM density is shown as blue mesh contoured at 7 σ threshold. (F) A potential H+-conduction pathway, shown as red surface, extends from near the central Cl--binding site through into the hydrophobic gap. The access from the Cl- pathway is lined by Gly244, Phe297 and Phe510. The pathway is separated from the cytosol by a constriction formed by Ile202, Phe306 and Met556.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Structures of the Cl--conduction pathways of ecCLC (1OTS), ecCLC E148Q (1OTU), cmCLC (3ORG) and ecCLC QQQ (6V2J). Cl--binding sites are displayed as grey spheres. (B) Comparison of the Cl--conduction pathway of ggCLC-7 with the Cl--conduction pathways of ecCLC, ecCLC E148Q, cmCLC and ecCLC QQQ. ggCLC-7 is colored by domain and ecCLC, ecCLC E148Q, cmCLC and ecCLC QQQ are colored in grey. Cl--binding sites are displayed as spheres.
 
 The most dynamic residue in the ion transport pathways of CLC transporters is Glugate, whose conformation changes during the transport cycle. In previous structures of CLC transporters, the side chain carboxylic moiety of Glugate has occupied four different positions: ‘middle’ where it occupies the central Cl--binding site, ‘up’ where it moves toward the extracellular vestibule, ‘down’ where it occupies the central Cl- binding site and most recently ‘out’ where it reaches away from the Cl--conduction pathway toward the H+-conduction pathway (Chavan et al., 2020; Dutzler et al., 2002; Dutzler et al., 2003; Feng et al., 2010; Last et al., 2018; Figure 2—figure supplement 1). In ggCLC-7, the Glugate (Glu243) adopts the ‘up’ conformation, where it participates in establishing one of the luminal constrictions (Figure 2D and Figure 2—figure supplement 1). A non-protein density was resolved between Glugate and Glu467 that we assigned as a water molecule. This water may help to stabilize the conformations of Glugate and Glu467, which may both be protonated at pH 8.0.
 
@@ -40,9 +301,17 @@ Within the Cl--conduction pathway, non-protein densities that we attributed to C
 
 Near the center of the transporter, the H+-conduction pathway of CLC transporters diverges from the Cl--conduction pathway as they approach the cytosolic side of the transporter (Accardi et al., 2005; Chavan et al., 2020; Han et al., 2014; Leisle et al., 2020; Park and MacKinnon, 2018; Wang and Voth, 2009; Zdebik et al., 2008). This bifurcation occurs near the central Cl--binding site and is proposed to extend through a hydrophobic gap to the conserved Gluin (Chavan et al., 2020). In the ggCLC-7 structure, Gluin (Glu310) on helix αG is located more than 15 Å away from Glugate, where it extends into a solvent filled cavity between the transmembrane and cytosolic domains that is continuous with the cytosol (Figure 2E,F). Within the loosely packed hydrophobic gap between Glugate and Gluin, several non-protein densities were resolved that we have tentatively modeled as water molecules (Figure 2F). Water molecules have previously been detected within the hydrophobic gap in structures and in molecular dynamics simulations of CLC transporters and have been proposed to serve as a proton-conducting water-wire (Chavan et al., 2020; Han et al., 2014; Leisle et al., 2020; Wang and Voth, 2009). In ggCLC-7, the water molecules in the hydrophobic gap can access the Cl--conduction pathway through an opening with a minimum radius of ~1.4 Å between Gly244, Phe297 and Phe510 (Figure 2F). However, the pathway is not continuous with the cytosol as the hydrophobic gap is sealed near Gluin by a 1.0 Å constriction formed Ile202, Phe306 and Met558. In a recent structure of a mutant of ecCLC, the constrictions between Glugate and Gluin were both expanded, creating a continuous pathway that would facilitate H+ conduction (Chavan et al., 2020). It is possible that a similar conformational change may occur during the transport cycle of ggCLC-7 to open the constrictions and allow protons to pass through the hydrophobic gap.
 
-## Organization of the CLC-7 cytoplasmic domain
+### Organization of the CLC-7 cytoplasmic domain
 
 The cytoplasmic domain of CLC-7 is composed of the N-terminal domain and the two C-terminal CBS domains (Figure 3A). The N-terminal domain, which has not been resolved in previous CLC structures, is comprised of a 14-amino acid extended segment and helix αA that are well-defined in the ggCLC-7 density map (Figure 3B and Figure 1—figure supplement 3). The extended segment is positioned at the center of the three-way interface between the transmembrane domain, CBS1 and CBS2. Because of its central position, the N-terminal domain is a major contributor to the tertiary and quaternary structure of ggCLC-7. Indeed, the N-terminal domain forms a larger interface with the transmembrane domain than either of the CBS domains.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig3-v2.jpg)
+
+**Figure 3.:** (A) The N-terminal domain resides at the interface between the transmembrane domain, CBS1 and CBS2. N-terminal domain is colored in magenta, transmembrane domain in blue, CBS1 in cyan and CBS2 in green. (B) Sequence alignment of N-terminal domain of ggCLC-7 with human CLC-1, CLC-2, CLC-Ka, CLC-Kb, CLC-3, CLC-4, CLC-5, CLC-6, CLC-7. Positions of ATP coordinating Glu91 and Ser92 in ggCLC-7 are highlighted in magenta. (C) Two views of the ATP binding site in the cytoplasmic domain of ggCLC-7. Side chains that interact with ATP are shown as sticks. Experimental cryo-EM density is shown as blue mesh contoured at 12 σ threshold. Mg2+ ion shown as a pink sphere.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ATP-binding sites in ggCLC-7 (colored by domain) and hsCLC-5 (2J9L) (grey). Residues are labeled according to ggCLC-7 sequence. Mg2+ ion shown as a pink sphere.
 
 Immediately adjacent to the N-terminal domain in a groove between the two CBS domains is a large density that cannot be attributed to the protein (Figure 3C). We modeled this non-protein density as a Mg2+-bound ATP based on its shape and a comparison with the ATP-bound structure of the isolated CBS domains of CLC-5 (Meyer et al., 2007; Figure 3—figure supplement 1). Notably, no nucleotides were added during the 30-hour purification of ggCLC-7 so any ATP present must have been co-purified with the transporter. In the ggCLC-7 structure, the transporter forms multiple interactions with all three components of the ATP molecule (Figure 3C). The adenine base of the ATP is sandwiched between the side chains of His654 on CBS1, with which it forms π-stacking interactions, and Met778 on CBS2. The adenine base also forms polar interactions with the side-chain oxygen and backbone nitrogen of Thr632 and the backbone nitrogen of Gly656 that contribute to the specificity for adenine nucleotides (Meyer et al., 2007). The ribose sugar forms polar interactions with side chains of Ser628 and Asp783. The triphosphate group is coordinated by residues from both CBS domains as well as the N-terminal domain. The α-phosphate interacts with the side chain of His654 and the backbone oxygen of Asn653 of CBS1, the side chain of Lys782 of CBS2. Coordinating the α- and β-phosphate is a Mg2+ that is partially coordinated by Glu91 of the N-terminal domain. Additionally, the β-phosphate also interacts with the side chain of Asn655 and the backbone oxygen of His654 of CBS1 and the side chain of His765 of CBS2. The γ-phosphate interacts with the side chain and backbone nitrogen of Ser92 of the N-terminal domain and the side chain of Arg764 of CBS2. Together, the numerous interactions between ATP and ggCLC-7 and the slow-off rate of ATP during the purification are consistent with ATP binding to ggCLC-7 with high affinity.
 
@@ -50,15 +319,43 @@ The ATP-binding site in ggCLC-7 shares many features with the ATP-binding site r
 
 Sequence alignment of ggCLC-7 with the nine human CLC proteins reveals the N-terminal domain resolved in the ggCLC-7 structure (residues 87–114) is conserved in human CLC-7 as well as the closely-related human CLC-6 transporter (45% identity). The conservation is less clear in the more distantly related CLC-3, CLC-4 and CLC-5 transporters and no conservation is apparent in the CLC-1, CLC-2, CLC-Ka and CLC-Kb channels (Figure 3B). Furthermore, Glu91 and Ser92, the residues that interact with the triphosphate group of ATP in ggCLC-7, are only conserved in CLC-6 and CLC-7, indicating that ATP binding may vary among CLC proteins. We therefore speculate that ATP is the preferred ligand for CLC-7 and that further studies resolving the N-terminal domain of other CLC transporters will reveal to what extent CLC transporters bind specific adenine nucleotides.
 
-## Phosphatidylinositol binding site
+### Phosphatidylinositol binding site
 
 Non-protein densities that likely correspond to either ordered lipids or detergents were resolved around the periphery of the transmembrane domain of ggCLC-7 (Figures 1A and 4A,B). Because it is difficult to distinguish lipids from detergents based on cryo-EM density maps alone, we were able to assign only one of the densities. The well-resolved head group allowed us to model the density as a phosphoinositol-3-phosphate (PI3P), which is a low-abundance constituent of lysosomal membranes (Figure 4A). Similar to ATP, PI3P was co-purified with the transporter from the HEK293S GnTI- cell membranes. The PI3P molecule is located at the interface between the transmembrane domain and the cytosolic domain and interacts with residues from both domains. An amphipathic β-hairpin between helices αF and αG containing multiple positively charged residues surrounds the inositol phosphate head group and glycerol backbone, separating them from the rest of the membrane (Figure 4A–C). The head group also interacts with Lys213, Arg219 and Arg714, which coordinate the phosphate group at the 3 position of inositol ring, and with Val218, Leu220, Val252, Ala255, Ser262, Thr263 and Lys281. Two 8-carbon acyl chains were modeled into PI3P density in a groove on the surface of the transporter formed by helices αB, αE and αF.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig4-v2.jpg)
+
+**Figure 4.:** (A) PI3P molecule shown as sticks. ggCLC-7 N-terminal domain is colored in magenta, transmembrane domain in blue, CBS1 in cyan and CBS2 in green with residues that interact with PI3P shown as sticks. Experimental cryo-EM density for PI3P is shown as blue mesh contoured at 10 σ threshold. (B) Coordination of the PI3P by ggCLC-7. Residues that interact with PI3P head group are shown as sticks. Experimental cryo-EM density for PI3P is shown as blue mesh contoured at 10 σ threshold. (C) Sequence alignment of helices αF and αG in ggCLC-7 with human CLC-1, CLC-2, CLC-Ka, CLC-Kb, CLC-3, CLC-4, CLC-5, CLC-6, CLC-7 and A. thaliana CLC-a. Positions of lipid coordinating Lys266, Arg267, Lys270, Lys281 and Arg282 in ggCLC-7 are highlighted in blue.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coordination of the PI3P by ggCLC-7. Distance between Lys281 and the oxygen at the 5-position of the inositol ring is shown. (B) Modeled coordination of PI(3,5)P2 into the PI3P-binding site of ggCLC-7 with close bonds indicated by dashed lines.
+
 In ggCLC-7, PI3P is largely coordinated by helices αF and αG and the intervening β-hairpin (Figure 4). Among human CLCs, the elaborated loop between helices αF and αG present in ggCLC-7 is conserved in CLC-7 as well as CLC-6. The loop is also present in the vacuolar nitrate/H+ antiporter CLC-a from Arabidopsis thaliana (atCLC-a) (De Angeli et al., 2006; Figure 4C). Based on the structure of ggCLC-7 and alignment of the sequences, three positively charged residues were identified within the β-hairpin of the transporters that may facilitate access of the negatively-charged lipid into the binding pocket (Figure 4C). In addition, several other residues that participate in the coordination of the PI3P head group, including Lys281 and Arg714 from ggCLC-7, are also conserved among hsCLC-6, hsCLC-7 and atCLC-a. Together, these data suggest that the PI-binding site may be a conserved feature among a subset of CLC transporters.
 
-## Structure of the human CLC-7/OSTM1 complex
+### Structure of the human CLC-7/OSTM1 complex
 
 Unlike the other mammalian CLC transporters expressed in endosomes and lysosomes, CLC-7 is not active by itself. CLC-7 activity is dependent on the presence of its β-subunit, OSTM1 (Lange et al., 2006; Leisle et al., 2011). To better understand the role of OSTM1 in CLC-7-mediated Cl-/H+ exchange, we next co-expressed human CLC-7 and human OSTM1 in HEK293S GnTI- cells, purified the complex to homogeneity and analyzed its structure by cryo-EM. Similar to vitrified human CLC-7 by itself, human CLC-7/OSTM1 particles also adopted a preferred orientation in the ice. However, the effect was less severe for the CLC-7/OSTM1 particles and by collecting a large data set, we were able to resolve additional views. Two-dimensional and three-dimensional classification revealed the presence of intact CLC-7/OSTM1 complexes in the data set as well as a minor population of free CLC-7 dimers (Figure 5—figure supplement 1). Due to a low abundance and a preferred orientation of free CLC-7 particles, structural reconstitution of the CLC-7 homodimer was not possible. By employing a hierarchical classification approach, we were able to identify a population of intact CLC-7/OSTM1 complexes in which the cytoplasmic, transmembrane and luminal domains were all clearly resolved. Reconstruction of these particle images with two-fold symmetry imposed yielded a structure of CLC-7 in complex with OSTM1 at a resolution of 2.8 Å (Figure 5A, Figure 5—figure supplement 1 and Table 1). 3D variability analysis of the selected particles revealed that the luminal domain of OSTM1 is flexibly attached to the transmembrane domain and adopts a range of different orientations. We observed up to a 6 Å displacement of the peripheral regions of the luminal domain of OSTM1 when the different states were aligned by their transmembrane domains (Figure 5—figure supplement 2). We therefore applied masks and performed local refinements, which yielded separate density maps at resolutions between 2.8 and 3.1 Å with improved interpretability for the transmembrane and cytosolic domains of CLC-7 and OSTM1 and the luminal domain of OSTM1 (Figure 5—figure supplement 1 and Table 1). Despite the preferred orientation of the raw data set, the focus refined reconstructions determined with the selected particles display only minimal anisotropy and, following merging into a single composite map, were suitable for model building and coordinate refinement (Figure 5B, Figure 5—figure supplement 1, Figure 5—figure supplement 3 and Table 1). The final refined structure contains two symmetrical copies of both CLC-7 and OSTM1 that fit well into the density with good geometry. When viewed from the side, the two copies of OSTM1 wrap around three sides of the CLC-7 dimer (Figure 5). The luminal domains of OSTM1 form a dimeric cap-like structure that covers the luminal surface of CLC-7 while the transmembrane helices pack against the periphery of the CLC-7 transmembrane domain. The C-terminal cytoplasmic domain of OSTM1 is disordered and no cytoplasmic interactions with CLC-7 were resolved.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Cryo-EM density map (A) and structure (B) of CLC-7/OSTM1 complex viewed from within the membrane (left), the cytosol (middle) and the lysosomal lumen (right). CLC-7 is colored by domain with N-terminal domain in magenta, transmembrane domain in blue, CBS1 in cyan and CBS2 in green. OSTM1 is colored yellow. Modeled non-protein densities are colored orange and unmodeled non-protein densities are colored grey in A.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative cryo-EM image of hsCLC-7/OSTM1. (B) Two-dimensional class averages. (C) Simplified image processing workflow. (D) Fourier shell correlation (FSC) of two unfiltered half-maps for consensus (black), TMD focus refine (red), CD focus refine (green) and LD focus refine (orange) reconstructions. (E) Cross-correlation plot of two unfiltered half-maps following density modification for consensus (black), TMD focus refine (red), CD focus refine (green) and LD focus refine (orange) reconstructions. (F) FSC of map-to-model fit of human CLC-7/OSTM1 with composite density modified map. (G) Angular distribution. (H) ThreeDFSC anisotropy plots.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Cryo-EM density maps (A) and models (B) revealing three orientations of the OSTM1 luminal domain. The red map is the origin (frame 000) of the second major component of 3DVA, the yellow map represents the midpoint (frame 010) and the blue map represents the end point (frame 019). The largest displacement occurs in helix h6, which moves by ~6 Å between the two extreme states. CLC-7 is colored grey in B.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative sections of cryo-EM density shown as grey mesh displayed at 8 σ threshold. Refined coordinates are shown as sticks. (B) Density for modeled non-protein ligands. (C) Unmodeled density for potential lipid-binding site at the interface between CLC-7 and OSTM1. CLC-7 is colored by domain with, transmembrane domain in blue. OSTM1 is colored yellow.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) ATP-binding sites in ggCLC-7 (colored in grey) and hsCLC-7/OSTM1 (colored by domain). Black numbering is ggCLC-7 and colored numbering is hsCLC-7/OSTM1. (B) PI3P binding sites in ggCLC-7 (colored in grey) and hsCLC-7/OSTM1 (colored by domain). Black numbering is ggCLC-7 and colored numbering is hsCLC-7/OSTM1.
 
 The luminal domain of OSTM1 is composed of two three-helix bundles (Figure 6A). Connecting both within and between the helical bundles are five disulfide bonds that constrain the organization of the luminal domain. In the first bundle, a disulfide bond connects helix 1 to the short helix 3. In the second bundle, disulfide bonds connect helix 6 to helix 5 and to the linker between helix 7 and transmembrane helix 8. Between the two bundles, disulfide bonds connect the linker between helices 4 and 5 to helix 2 of the first bundle and to helix 7 of the second bundle (Figure 6A,B). The two helical bundles create a large dimer interface that buries ~4600 Å2 of shared surface area (Figure 6C). The core of the dimer interface is formed by an antiparallel packing of helices 1 and 4 with helices 3 and 7 and several of the inter-helical linkers also making substantial contributions. While most of the interactions that stabilize the OSTM1 dimer interface are hydrophobic including the entirety of the helix 1-helix 1 and helix 3-helix 3 interactions, several polar interactions are also present including an ionic interaction between Arg107 and Asp150 (Figure 6D).
 
@@ -68,9 +365,29 @@ The luminal domain of OSTM1 is composed of two three-helix bundles (Figure 6A). 
 
 At the periphery of the luminal domain, non-protein densities were resolved extending from seven exposed asparagine residues (93, 128, 163, 184, 194, 263 and 274) on OSTM1 (Figure 6A). As previous computational analysis had identified these residues as consensus sites for N-linked glycosylation (Lange et al., 2006), we modeled these non-protein densities as carbohydrate moieties. The quality and interpretability of the carbohydrate densities varied between the seven sites, allowing us to model chains of different length. For example, density for a single N-linked N-acetyl-glucosamine group was resolved for Asn93 and Asn163, while a branched five-sugar carbohydrate moiety was resolved for Asn263 (Figure 5—figure supplement 3). While only minimal carbohydrate moieties can be added to N-linked glycosylation sites in the HEK293S GnTI- cell line used for protein expression due to a mutation in N-acetyl-glucosaminyltransferase I, in non-glycoslyation-defective mammalian cells these glycosylation sites would be elaborately decorated and likely encase the entire surface of the luminal domain. Because CLC-7 lacks any N-linked glycosylation sites, the glycosylation shell surrounding the rigid, disulfide-linked core of OSTM1 likely protects the luminal domain of CLC-7 from the harsh degradative environment of the lysosomal lumen.
 
-## Effects of OSTM1 binding to CLC-7
+### Effects of OSTM1 binding to CLC-7
 
 We next compared the structure of ggCLC-7 with the structure of the human CLC-7/OSTM1 complex to determine how OSTM1 binding influences the conformation of CLC-7. Overall, the CLC-7 dimers show good alignment (RMSD 0.4 Å) in the presence and absence of OSTM1 (Figure 7A). The cytosolic domains and most of the transmembrane domains are essentially identical. Moreover, densities corresponding to ATP and PI3P molecules were resolved in their respective binding sites and the ligands interact with CLC-7 in a similar fashion regardless of the presence or absence of OSTM1 (Figure 5A, Figure 5—figure supplement 3 and Figure 5—figure supplement 4). The only detectable rearrangements in CLC-7 occur near interfaces where CLC-7 directly contacts OSTM1 (Figure 7A). The largest CLC-7/OSTM1 interface is formed between helix 8 of OSTM1 and the transmembrane domain of CLC-7 (Figure 7B). Binding of OSTM1 is accompanied by a bend in helix αB of CLC-7 at Gly149 that results in 9 Å shift of the luminal end of helix αB (measured at Cα of Glu168) toward helix αK (Figure 7—figure supplement 1). Small (<2 Å) movements are resolved in the luminal ends of the nearby helices αC and αK toward OSTM1 helix 8. The rearrangements in helices αB, αC and αK of CLC-7 allow helix 8 of OSTM1, which is slightly kinked near Pro296, to pack against the surface of CLC-7 (Figure 7B). The interaction between transmembrane domains is largely mediated by the packing of hydrophobic residues, but polar interactions are formed between Tyr300 of OSTM1 and Glu416 and Trp503 of CLC-7 that may contribute to the specificity of the CLC-7/OSTM1 interaction (Figure 7C). OSTM1 also contacts and stabilizes the linker between helices αK and αL, which was too poorly ordered to be modeled in absence of OSTM1 in the ggCLC-7 density map (Figure 7A,D). In the CLC-7/OSTM1 complex, the 25-residue linker between helices αK and αL forms two interactions with the luminal domain of OSTM1. Asp456 of CLC-7 forms a polar interaction with Tyr228 of helix 6. Gly443 and Gly444 of CLC-7 form a small interface with a portion of the loop between helices 6 and 7 that includes Pro250, Gly251 and His253. In addition to the direct protein-protein interactions, a non-protein density that may correspond to a cholesterol based on its size and shape was resolved at the interface between the transmembrane domains of CLC-7 and OSTM1 (Figure 5—figure supplement 3). Notably, no density was present at this site in the ggCLC-7 map, suggesting that CLC-7 and OSTM1 together may form an additional lipid-binding site.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig7-v2.jpg)
+
+**Figure 7.:** (A) Structure of hsCLC-7/OSTM1 with CLC-7 colored by Cα displacement compared to ggCLC-7 and OSTM1 colored in grey. (B) hsCLC-7/OSTM1 transmembrane domain interface. Residues that participate in the interaction are shown as sticks. CLC-7 is colored in blue and OSTM1 is colored yellow. (C) Polar interaction network in the transmembrane domain interface between CLC-7 and OSTM1. (D) Loop between αK and αL is stabilized by interactions with OSTM1 luminal domain. (E) Cl--conduction pathways of human CLC-7/OSTM1 (colored by domain) and ggCLC-7 (grey). Interacting side chains are shown as sticks and Cl- ions are shown as spheres. Blue residue numbers correspond to human CLC-7 and grey numbers correspond to ggCLC-7.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Superposition of hsCLC-7/OSTM1 (colored by domain) and ggCLC-7 (colored in grey) viewed from within the membrane. (B) Conformational changes in the CLC-7 transmembrane domain to accommodate OSTM1 binding viewed from the lysosomal lumen. HsCLC-7/OSTM1 is colored by domain and ggCLC-7 colored in grey.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A–B) Experimental cryo-EM density for helix αF in hsCLC-7/OSTM1 consensus (A) and transmembrane domain focus refined (B) maps is shown as blue mesh contoured at 7 σ threshold. (C–D) Density for Cl--binding sites in hsCLC-7/OSTM1 consensus (C) and transmembrane domain focus refined (D) maps is shown as blue mesh contoured at 7 σ threshold. Cl- ions are shown as green spheres.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A–B) Cryo-EM density for Phe514 in conformation one in hsCLC-7/OSTM1 composite map (A) and sharpened (B=-50) composite map (B). (C–D) Cryo-EM density for Phe514 modeled in conformation two in hsCLC-7/OSTM1 composite map (C) and sharpened (B=-50) composite map (D). Density maps are shown as blue mesh contoured at 7 σ threshold. (E–F) Cryo-EM density for Phe510 modeled in conformation two in ggCLC-7 map (E) and sharpened (B=-50) map (F). Density maps are shown as blue mesh contoured at 8 σ threshold.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/59555/elife-59555-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Cl-- and potential H+-conduction pathways through human CLC-7/OSTM1 shown as green and red surfaces, respectively. (B) The cytosolic constriction between the central and internal Cl--binding sites is formed by Ser204, Tyr505 and Tyr602 narrows the pathway to a minimum radius of 0.4 Å. (C) The luminal constrictions are formed by Glugate, Lys246 and Ile515 and by Lys246, Glu471 and Ile515 and narrow the pathway to a minimum radius of 1.0 Å. (D) Potential H+ conduction pathway between the central Cl- site and Gluin. The pathway is sealed from the Cl- pathway by Phe514 and Tyr602 and from the cytosol by Phe310 and Met560.
 
 To examine the influence of OSTM1 on Cl- and H+ transport, we compared the ion conduction pathways in the CLC-7/OSTM1 and ggCLC-7 structures (Figure 2, Figure 7E, Figure 7—figure supplement 2 and Figure 7—figure supplement 4). In both structures, the Cl--conduction pathways adopt similar occluded states with narrow constrictions present at either end and ions occupying the three binding sites. Superpositioning reveals that most of the pore-lining residues are positioned similarly in the presence and absence of OSTM1. The only residues that adopt differing conformations are Phe301 (Phe297 in ggCLC-7) and Phe514 (Phe510 in ggCLC-7), both of which are highly conserved among CLC family members and whose mutation in human CLC-7 leads to defects in Cl-/H+ exchange coupling, voltage-dependence and activation (Leisle et al., 2020). Inspection of the CLC-7/OSTM1 density map reveals that the side-chain density for Phe514 is distorted in a manner consistent with the side chain adopting both the modeled conformation (conformation 1) as well as a conformation similar to that resolved for Phe510 in ggCLC-7 (conformation 2) (Figure 7—figure supplement 3). Inspection of the ggCLC-7 density map revealed no density consistent with the alternative rotamer, indicating that conformation two is the predominant state for Phe510. While the existence of the two conformations for Phe514 in CLC-7/OSTM1 is clearer in a map sharpened to emphasize the high-resolution features, due to the limited resolution and the anisotropy present in the data, it is difficult to estimate occupancy of the different rotamers. Thus, while we modeled Phe514 as the predominant conformation 1, the data also supports the existence of conformation 2. Because Phe514 is located at the interface between the hydrophobic gap and the central Cl- binding site, changes in its conformation can modify the H+-conduction pathway. In CLC-7/OSTM1, the side chain of Phe514 (conformation 1) narrows the constriction of this pathway to a minimum radius of 0.8 Å, which is too narrow to allow water molecules to enter the hydrophobic gap (Figure 7—figure supplement 4). In contrast, the alternative conformation adopted by Phe510 in the ggCLC-7 structure widens the pathway sufficiently to allow water molecules to cross (1.4 Å minimum radius) (Figure 2F).
 
@@ -98,30 +415,208 @@ For decades CLC-7 was perhaps the most enigmatic CLC family member (Brandt and J
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Gallus gallus)</td>
+      <td>ggCLC-7</td>
+      <td>Synbio technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hsCLCN7</td>
+      <td>Synbio technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hsOSTM1</td>
+      <td>Synbio technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293S GnTi-</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenimine, Linear, MW 25000, Transfection Grade (PEI 25K)</td>
+      <td>Polysciences, Inc</td>
+      <td>23966–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma</td>
+      <td>8451440100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valproic acid</td>
+      <td>Sigma</td>
+      <td>P4543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl maltose neopentyl glycol</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind 4.1.10</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.1</td>
+      <td>Scheres, 2016</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v2</td>
+      <td>Structura Biotechnology</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Liebschner et al., 2019</td>
+      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger LLC, 2020</td>
+      <td>https://pymol.org/2/ RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MOLE</td>
+      <td>Pravda et al., 2018</td>
+      <td>https://mole.upol.cz RRID:SCR_018314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Blocres/Bsoft</td>
+      <td>Heymann</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Jalview</td>
+      <td>Waterhouse et al., 2009</td>
+      <td>https://www.jalview.org RRID:SCR_006459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>FEI Vitrobot Mark IV</td>
+      <td>FEI Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 The gene encoding CLCN7 from Gallus gallus was synthesized (SynBio) and subcloned into a BacMam expression vector with a C-terminal mEGFP-tag fused via a short linker containing a PreScission protease site (Goehring et al., 2014). The plasmid was mixed with PEI 25K (Polysciences, Inc) at a 1 : 3 ratio for 30 min and then used to transfect HEK293S GnTi– cells (ATCC: CRL-3022). For a 1 L cell culture 1 mg plasmid and 3 mg PEI 25K were used. After 24 hr incubation at 37 °C, sodium butyrate (Sigma) was added to a final concentration of 10 mM, and cells were allowed to grow at 37 °C for an additional 72 hr before harvesting. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Membrane proteins were solubilized in 2% lauryl maltose neopentyl glycol (LMNG, Anatrace), 0.2% cholesteryl hemisuccinate tris salt (CHS, Anatrace), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 μg/mL aprotinin, 2.5 μg/mL leupeptin, 1 μg/mL pepstatin A) and spatula of DNaseI for 1 hr. Solubilized proteins were separated by centrifugation 75,000 g for 40 mins, followed by binding to 2.5 ml anti-GFP nanobody resin for 1 hr, which was equilibrated with washing buffer containing 0.1% LMNG, 50 mM Tris-HCl pH 8, 150 mM KCl, 2 mM DTT (BufferA). Anti-GFP nanobody affinity chromatography was performed by 20 column volumes of washing with BufferA, followed by overnight PreScission digestion, and elution with wash buffer. Protein sample was concentrated to a volume of 500 µl using CORNING SPIN-X concentrators (100 kDa cutoff), followed by centrifugation 10,000 g for 10 mins. Concentrated proteins were further purified by size exclusion chromatography on a Superose 6 Increase 10/300 GL (GE healthcare) in BufferA. Peak fractions were pooled and concentrated to ~2 mg/mL using CORNING SPIN-X concentrators (100 kDa cutoff).
 
 Genes encoding human CLCN7 and OSTM1 were synthesized (SynBio) and subcloned into BacMam expression vectors with C-terminal mCerulean- and mVenus- tags, respectively, fused via a short linker containing a PreScission protease site (Goehring et al., 2014). Transient transfection was carried out as described above for chicken CLCN7, with a single modification; for gene expression, valproic acid (VPA, Sigma) was added to induce expression at a final concentration of 2.2 mM. Equal amounts of plasmids encoding CLCN7 and OSTM1 were added to the reaction mix. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Membrane proteins were solubilized in 2% lauryl maltose neopentyl glycol (LMNG, Anatrace), 0.2% cholesteryl hemisuccinate tris salt (CHS, Anatrace), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 μg/mL aprotinin, 2.5 μg/mL leupeptin, 1 μg/mL pepstatin A) and spatula of DNaseI for 1 hr. Solubilized proteins were separated by centrifugation 75,000 g for 40 min, followed by binding to 2.5 ml anti-GFP nanobody resin for 1 hr, which was equilibrated with washing buffer containing 0.01% LMNG, 50 mM Tris-HCl pH 8, 150 mM KCl, 2 mM DTT (BufferB). Anti-GFP nanobody affinity chromatography was performed by 20 column volumes of washing with BufferB, followed by overnight PreScission digestion, and elution with wash buffer. Protein sample was concentrated to a volume of 500 µl using CORNING SPIN-X concentrators (100 kDa cutoff), followed by centrifugation 10,000 g for 10 min. Concentrated proteins were further purified by size exclusion chromatography on a Superose 6 Increase 10/300 GL (GE healthcare) in BufferB. Peak fractions were pooled and concentrated to ~2.5 mg/mL using CORNING SPIN-X concentrators (100 kDa cutoff).
 
-## Electron microscopy sample preparation and data acquisition
+### Electron microscopy sample preparation and data acquisition
 
 For CLC-7 from Gallus gallus (ggCLC-7), 3 μl of purified protein at a concentration of 2 mg/ml was applied to glow-discharged Au 400 mesh QUANTIFOIL R1.2/1.3 holey carbon grids (Quantifoil), and then plunged into liquid nitrogen-cooled liquid ethane with a FEI Vitrobot Mark IV (FEI Thermo Fisher). Grids were transferred to a 300 keV FEI Titan Krios microscopy equipped with a K2 summit direct electron detector (Gatan). Images were recorded with Leginon (Suloway et al., 2005) in super-resolution mode at 22,5000x, corresponding to pixel size of 0.536 Å. Dose rate was eight electrons/pixel/s, and defocus range was −1.2 to −2.5 µm. Images were recorded for 8 s with 0.2 s subframes (total 40 subframes), corresponding to a total dose of 61 electrons/Å2.
 
 For the CLC-7/OSTM1 complex from Homo sapiens (hsCLC-7/OSTM1), 3 μl of purified protein at a concentration of 2 mg/ml was supplemented with 1 mM ATP and 0.1% LMNG and was applied to glow-discharged Au 400 mesh QUANTIFOIL R1.2/1.3 holey carbon grids (Quantifoil), and then plunged into liquid nitrogen-cooled liquid ethane with a FEI Vitrobot Mark IV (FEI Thermo Fisher). Grids were transferred to a 300 keV FEI Titan Krios microscopy equipped with a K3 summit direct electron detector (Gatan). Images were recorded with SerialEM (Mastronarde, 2005) in super-resolution mode at 22,5000x, corresponding to pixel size of 0.532 Å. Dose rate was 13 electrons/pixel/s, and defocus range was −1.2 to −2.7 µm. Images were recorded for 4 s with 100 ms subframes (total 40 subframes), corresponding to a total dose of 44 electrons/Å2.
 
-## Electron microscopy data processing
+### Electron microscopy data processing
 
 40-frame super-resolution movies (0.536 Å/pixel) of ggCLC-7 were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by MotionCor2 (Zheng et al., 2017) (1.0723 Å/pixel). Whole-frame CTF parameters were determined using CTFfind 4.1.10 (Rohou and Grigorieff, 2015). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion 3.0 (Scheres, 2016), resulting in 6,542,536 particles. False-positive selections and contaminants were excluded from the data using multiple rounds of heterogeneous classification in cryoSPARC v2 (Punjani et al., 2017) using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 343,094 particles. Heterogeneous classification in cryoSPARC v2 was then used to identify 137,234 particles displaying both the transmembrane and cytosolic domains. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a reconstruction was determined at resolution of 2.9 Å by non-uniform refinement in cryoSPARC v2 (Punjani et al., 2019). The final reconstruction was further improved by employing density modification on the two unfiltered half-maps with a soft mask in Phenix (Terwilliger et al., 2019).
 
 40-frame super-resolution movies (0.532 Å/pixel) of hsCLC-7/OSTM1 complex were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by MotionCor2 (1.064 Å/pixel). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion and autopicking using Relion, resulting in 15,288,379 particles. False-positive selections and contaminants were excluded through iterative rounds of heterogeneous classification in cryoSPARC v2 using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 932,232 particles. Heterogeneous classification in cryoSPARC v2 was then used to identify 327,619 particles displaying the luminal, transmembrane and cytosolic domains. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a reconstruction was determined to 2.8 Å. 3D variability analysis in cryoSPARC v2 was then employed to characterize conformational heterogeneity (Punjani and Fleet, 2020). To interpret the results of the 3D variability analysis, CLC-7 and the luminal domain of OSTM1 were rigid-body docked into the two extreme states and the midpoint. Masks were generated for the luminal domain and the transmembrane and cytosolic domains that were used for local refinement. Local refinements yielded a reconstruction for the luminal domain at an estimated resolution of 3.0 Å, a reconstruction for the transmembrane domain at an estimated resolution of 2.9 Å and the cytosolic domain at an estimated resolution of 2.8 Å. The final reconstructions were then further improved by employing density modification on the two unfiltered half-maps with a soft mask in Phenix (Terwilliger et al., 2019). A composite map was generated from the local refinement maps in Phenix that was used for model building and refinement (Terwilliger et al., 2019).
 
-## Model building and coordinate refinement
+### Model building and coordinate refinement
 
 The structure of CLC from Cyanidioschyzon merolae (cmCLC) (Feng et al., 2010) was manually docked into the ggCLC-7 density map using chimera (Pettersen et al., 2004). The model was then manually rebuilt according to the density using coot (Emsley et al., 2010). Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).
 
 The refined ggCLC-7 structure was manually docked into the CLC-7/OSTM1 density map using Chimera (Pettersen et al., 2004). The human CLC-7 model was manually rebuilt using COOT to fit the density. OSTM1 was manually built into the density by first placing poly-alanine helices and then using large side chains and glycosylation sites to register the helices. N-linked glycosylation trees were built and refined using the ‘carbohydrate’ module in COOT (Emsley and Crispin, 2018). Notably, the density for the carbohydrate residues was of poorer quality than the nearby protein and due to the difficulty in modeling carbohydrates in cryo-EM density maps (Emsley and Crispin, 2018) they are less precisely modeled than the protein. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).
 
-## Figures
+### Figures
 
 Figures were prepared with UCSF Chimera (Pettersen et al., 2004), UCSF ChimeraX (Goddard et al., 2018), MOLE (Pravda et al., 2018), PyMol (Schrödinger LLC, 2020) and Jalview (Waterhouse et al., 2009).

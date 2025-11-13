@@ -18,15 +18,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Environmental Genomics Group, School of Biosciences, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/03angcq70 School of Geography, Earth & Environmental Sciences, University of Birmingham Birmingham United Kingdom
-3. https://ror.org/04cvxnb49 Department Evolutionary Ecology & Environmental Toxicology, Faculty of Biological Sciences, Goethe University Frankfurt Frankfurt Germany
-4. https://ror.org/01aj84f44 Lake Group, Department of Ecoscience, Aarhus University Aarhus Denmark
-5. https://ror.org/006jb1a24 School of Natural Sciences, Environment Centre Wales, Deiniol Road, Bangor University Bangor United Kingdom
-6. https://ror.org/00te3t702 Department Marine Sciences and Institute of Bioinformatics, University of Georgia Athens United States
-7. https://ror.org/0396gab88 LOEWE Centre for Translational Biodiversity Genomics (LOEWE‐TBG) Frankfurt Germany
-8. https://ror.org/03j85fc72 Department Media-related Toxicology, Institute for Molecular Biology and Applied Ecology (IME) Frankfurt Germany
-9. https://ror.org/035dkdb55 The Alan Turing Institute, British Library London United Kingdom
+1. Environmental Genomics Group, School of Biosciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. School of Geography, Earth & Environmental Sciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+3. Department Evolutionary Ecology & Environmental Toxicology, Faculty of Biological Sciences, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+4. Lake Group, Department of Ecoscience, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+5. School of Natural Sciences, Environment Centre Wales, Deiniol Road, Bangor University Bangor United Kingdom ([ROR:006jb1a24](https://ror.org/006jb1a24))
+6. Department Marine Sciences and Institute of Bioinformatics, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
+7. LOEWE Centre for Translational Biodiversity Genomics (LOEWE‐TBG) Frankfurt Germany ([ROR:0396gab88](https://ror.org/0396gab88))
+8. Department Media-related Toxicology, Institute for Molecular Biology and Applied Ecology (IME) Frankfurt Germany ([ROR:03j85fc72](https://ror.org/03j85fc72))
+9. The Alan Turing Institute, British Library London United Kingdom ([ROR:035dkdb55](https://ror.org/035dkdb55))
 
 † Corresponding author
 
@@ -48,13 +48,136 @@ Recently, we have developed a conceptual framework that helps establish the link
 
 ## Results
 
-## Freshwater community dynamics across 100 years
+### Freshwater community dynamics across 100 years
 
 A sedimentary archive was collected from Lake Ring in November 2016 with a gravity corer; the core was sliced in 34 layers of 0.5 cm, which corresponded to a temporal resolution of about 3 years per layer across 100 years. This estimate was based on a radiometric chronology of the core completed in 2018 (see Materials and methods). Lake Ring has a well-known and documented history of human impact over the past century. The lake transitioned over time from a semi-pristine environment to eutrophication, and later to high pesticide pollution due to intensification of agricultural land-use in the area surrounding the lake. In modern times (>1999), the lake partially recovered (see Materials and methods for more details) (Cuenca Cambronero et al., 2018b). Hereafter, we refer to the lake transitions across these statuses as lake phases.
 
 We quantified community-level biodiversity over a century (1916–2016) by applying high-throughput multilocus metabarcoding (18S, 16SV1, 16SV4, COI and rbcL barcodes) to bulk environmental DNA (eDNA) extracted from layers of a dated sedimentary archive from Lake Ring. After denoising, the number of unique ASVs and total number of reads across all samples (including median number of reads per sample) found per barcode were as follows: 18S - 2,023 ASVs, 569,761 total reads (median 12,893 reads); 16SV1 - 4,022 ASVs, 842,619 total reads (median 20,798 reads); 16SV4 - 5,270 ASVs, 552,064 total reads (median 13,816 reads); COI - 822 ASVs, 362,616 total reads (median 9,595 reads); rbcL - 417 ASVs, 366,489 total reads (median 9,443 reads). Alpha diversity did not significantly vary across the lake phases for both prokaryotes and eukaryotes (Appendix 1—figure 1) and was proportionally higher in the prokaryotic (16 S barcodes) than in the eukaryotic community (18S barcode). Conversely, the invertebrate community (COI barcode), and the diatom community (rbcL barcode), showed significant changes over time across the lake phases, reflecting taxon-specific patterns over time (Appendix 1—figure 1). Even though the alpha diversity varied over time, it was not consistently lower in historical than modern communities across the barcodes, allowing us to exclude bias in the preservation state of environmental DNA.
 
 The community composition (beta diversity) changed significantly in the transition between lake phases (Table 1; Figure 2A; Appendix 1—figure 2). The overall eukaryotic community composition changed over time across all lake phases (Table 1; Figure 2A; 18S). However, the composition of the primary producers (e.g. rbcL) changed significantly only in the transition between the pesticide and the eutrophic phases, whereas the invertebrate’s community (e.g. COI) changed significantly only between the pesticide and the recovery phases (Table 1; Figure 2A; rbcL, COI). The significant changes in community composition identified by the PERMANOVA analysis were driven by two families of primary producers [Chlorophyceae (green algae), Mediophyceae (diatoms)] and seven families of invertebrates, [Monhysterida (nematode worms), Oligohymenophorea (ciliates), Calanoida (zooplankton), Ploimida (rotifers), Chaetonotida (gastrotrichs), Thoracosphaeraceae (dinoflagellates) and Calanoida (copepods)] (Figure 2B; 18S). In the transition from the semi-pristine to the eutrophic phase, the relative abundance of rotifers and green algae declined in favour of calanoids and diatoms, respectively (Figure 2B; 18S). The proportion of diatoms, worms and nematodes increased in the transition from the eutrophic to the pesticide phase, while the proportion of calanoids and gastrotricha declined (Figure 2B; 18S). The taxonomic composition of the recovery phase showed a relative increase in ciliates and gastrotricha as compared to the pesticide environment (Figure 2B; 18S). Vampirellidae (Vampire amoebae feeding on algae) were relatively more abundant in the eutrophic than in the other phases, in which primary producers were also more abundant (Figure 2B, 18S). The composition of the recovery and semi-pristine phases differed significantly, suggesting an incomplete recovery of the lake over time to this date (Table 1; Figure 2A;18S).
+
+**Table 1.**
+ PERMANOVA on beta diversity.Permutational Multivariate Analysis of Variance using weighted Unifrac distances ASV matrices testing for pairwise differences between lake phases across the five barcodes used in the study (16SV1, 16SV4, 18S, COI, rbcL) with 999 permutations. Significant terms (P-values <0.05 after applying Benjamini & Hochberg correction for multiple testing) are in bold. The lake phases are as follows: SP - semi-pristine; E - Eutrophic; P - pesticides; R - recovery.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th></th>
+      <th>16SV1</th>
+      <th></th>
+      <th>16SV4</th>
+      <th></th>
+      <th>18S</th>
+      <th></th>
+      <th>COI</th>
+      <th></th>
+      <th>rbcL</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>R2</td>
+      <td>p adj</td>
+      <td>R2</td>
+      <td>p adj</td>
+      <td>R2</td>
+      <td>p adj</td>
+      <td>R2</td>
+      <td>p adj</td>
+      <td>R2</td>
+      <td>p adj</td>
+    </tr>
+    <tr>
+      <td>SP</td>
+      <td>E</td>
+      <td>0.4349</td>
+      <td>0.0067</td>
+      <td>0.5533</td>
+      <td>0.0017</td>
+      <td>0.2968</td>
+      <td>0.0033</td>
+      <td>0.0432</td>
+      <td>0.705</td>
+      <td>0.2879</td>
+      <td>0.0914</td>
+    </tr>
+    <tr>
+      <td>SP</td>
+      <td>P</td>
+      <td>0.6290</td>
+      <td>0.0025</td>
+      <td>0.8515</td>
+      <td>0.0017</td>
+      <td>0.4459</td>
+      <td>0.0033</td>
+      <td>0.3868</td>
+      <td>0.0033</td>
+      <td>0.3920</td>
+      <td>0.0125</td>
+    </tr>
+    <tr>
+      <td>SP</td>
+      <td>R</td>
+      <td>0.6956</td>
+      <td>0.0025</td>
+      <td>0.9026</td>
+      <td>0.0017</td>
+      <td>0.3841</td>
+      <td>0.0033</td>
+      <td>0.3178</td>
+      <td>0.0033</td>
+      <td>0.5084</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>P</td>
+      <td>0.3959</td>
+      <td>0.006</td>
+      <td>0.7399</td>
+      <td>0.0017</td>
+      <td>0.1249</td>
+      <td>0.15</td>
+      <td>0.3198</td>
+      <td>0.005</td>
+      <td>0.1555</td>
+      <td>0.1511</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>R</td>
+      <td>0.5656</td>
+      <td>0.0025</td>
+      <td>0.8520</td>
+      <td>0.0017</td>
+      <td>0.1816</td>
+      <td>0.0075</td>
+      <td>0.2806</td>
+      <td>0.0033</td>
+      <td>0.6019</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>R</td>
+      <td>0.3026</td>
+      <td>0.0025</td>
+      <td>0.3724</td>
+      <td>0.0017</td>
+      <td>0.1029</td>
+      <td>0.15</td>
+      <td>0.1924</td>
+      <td>0.012</td>
+      <td>0.3605</td>
+      <td>0.0033</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86576/elife-86576-fig2-v1.jpg)
 
@@ -64,7 +187,7 @@ The prokaryotic community significantly changed at each major transition between
 
 Changes in the invertebrate community were driven by Brachionideae (rotifers) that were most abundant in the semi-pristine phase and declined over time; Chironomidae (lake flies) that were proportionally more abundant in the eutrophic and recovery phases and showed the lowest abundance in the pesticides phase; Chaoboridae (phantom midge larvae) that were only present in the semi-pristine and recovery phases; and Daphniidae (waterfleas) that were most abundant in the pesticide phase, but present throughout the 100 years of sampling (Figure 2B; COI). The diatom composition was stable over time, with only the semi-pristine phase having a more distinctive diatom assemblage profile dominated by Bacillariophyta (Figure 2B; rbcL). Diatoms are commonly used by regulators to derive the status of freshwater within the Water Framework Directive both for lakes and rivers (Agency, 2020). We used our rbcL data to derive a Lake Trophic Diatom Index (LTDI2) for Lake Ring following Bennion et al., 2014. This result confirmed our beta diversity analysis of non-significant changes over time of the diatom community (Appendix 1—figure 3).
 
-## Functional changes linked to community compositional shifts
+### Functional changes linked to community compositional shifts
 
 Changes in freshwater community composition corresponded to significant shifts in the predicted functioning of the prokaryotic community (Figure 3). We predicted different functions between each pair of lake phases by identifying molecular functions enriched as quantified by functional orthologs (KO terms). A functional ortholog was defined from functions experimentally assigned to the prokaryotes identified with the 16 S rRNA in each lake phase. We predicted a total of 6,257 Kegg Orthologs (KO) terms from the 16SV1 and 6,828 from the 16Sv4 barcode across the lake phases. Of the total number of KO terms, 1,418 were significantly differentially abundant across the lake phases in the 16SV1 and 1,064 terms in the 16SV4 dataset, respectively. The functional KEGG pathways enriched within these KO terms and significantly differentially enriched between lake phases (Fisher’s exact test, p <0.05) were 19 (17 for the 16SV4 and 2 for the 16SV1; Figure 3). Seven differentially enriched pathways were found between the semi-pristine and recovery phases and seven were found between the eutrophic and recovery phases (Figure 3; 16SV4). These pathways were linked to catabolic functions (purine and pyrimidine metabolism), RNA transport and biogenesis, fundamental for gene expression and protein folding. Six functional pathways were differentially enriched between the semi-pristine and the eutrophic phases that were linked to metabolism (including methane metabolism), degradation and biosynthesis (Figure 3; 16SV4). Three functional pathways that underpin carbohydrates metabolism, lysine biosynthesis and degradation were differentially enriched between the pesticide and recovery phases. The latter two functions are critical for mitochondrial function. A single pathway was differentially enriched between the semi-pristine and the pesticide phases, linked to lipid metabolism (glycosphingolipid biosynthesis; Figure 3; 16SV4). Two differentially enriched pathways were identified between the eutrophic and the recovery phases and underpin infection response and photosynthesis (Figure 3; 16SV1).
 
@@ -72,7 +195,7 @@ Changes in freshwater community composition corresponded to significant shifts i
 
 **Figure 3.:** Functional pathways that are significantly differentially enriched between lake phases are shown for the 16SV1 and the 16SV4 barcodes (Fisher’s exact test, p <0.05). The lake phases are as in Figure 2: SP - semi-pristine; E - eutrophic; P - pesticides; R - recovery. Odds ratios indicate the representation of each pathway in the pairwise comparisons.
 
-## Drivers of biodiversity change
+### Drivers of biodiversity change
 
 To discover drivers of biodiversity change we applied sparse canonical correlation analysis (sCCA) to community biodiversity data and other parameters measured from Lake Ring, namely climate records collected from a weather station proximal to the lake, and sales records of biocides in Denmark between 1955 and 2015 from the Danish national archives. The biocide sales records proved to be a good representation of persistent chemicals in the lake sediment, as the quantification of the persistent halogenated pesticide DDT in the sliced sedimentary archive showed, by producing a very similar profile as the sales records over time (see methods section).
 
@@ -96,7 +219,7 @@ The biocide types showing joint effects with environmental variables were ranked
 
 ## Discussion
 
-## Continuous long-term biomonitoring from a pristine baseline
+### Continuous long-term biomonitoring from a pristine baseline
 
 State-of-the-art paleoecological monitoring typically uses direct observations (light microscopy) of species remains to assess the ecological status of freshwater ecosystems. These approaches are low throughput and require specialist skills (Moraitis et al., 2019). Direct observations are inherently biased towards species that leave fossil remains; species identification is strongly reliant on well-preserved remains in environmental matrices; and cryptic species diversity cannot be resolved (Hirai et al., 2017). Recently, automated acquisition of microfossil data using artificial intelligence has been proposed as an alternative to human inspection for reconstructing long-term biological changes (Itaki et al., 2020). However, this approach relies on the completeness of reference databases and of the fossil remains, suffering from the same limitations of direct observations minus the low throughput aspects. Efforts to catalogue temporal changes in biodiversity have recently started to understand changes in species richness and assemblages in different geographic regions of the globe (Blowes et al., 2019). These efforts are important to understand the extent of overall biodiversity loss. However, there are only a handful of existing datasets that span more than 50 years and many of the multidecal biodiversity time series are limited to terrestrial and marine ecosystem, with freshwater ecosystems being marginally represented (Blowes et al., 2019). Moreover, long-term freshwater studies tend to focus on indicator species or specific taxonomic groups (e.g. invertebrates), rather than capturing community-level patterns (Dornelas et al., 2018). Developments in the field of sedaDNA have addressed the limitations of direct observations, utilising the properties of eDNA (Capo et al., 2019). However, sedaDNA studies have predominantly focused on microorganisms as proxies for ecosystems’ health [e.g. cyanobacteria (Picard et al., 2022); ciliates (Barouillet et al., 2022); parasitic taxa (Talas et al., 2021)], with other taxonomic groups less well represented. Our study addresses some of the challenges of direct observations as it is not reliant on fossil remains. However, the completeness of the community taxonomic assignment depends on the completeness of reference databases. We acknowledge that our taxonomic classification may be incomplete.
 
@@ -106,7 +229,7 @@ Studies of temporal dynamics typically start from an already shifted baseline an
 
 Although the overall species richness did not change significantly over time, species assemblages significantly changed over time. Non-significant changes in alpha diversity coupled with significant changes in beta diversity over time have been reported for existing time series of biodiversity data in marine and terrestrial environments, even if the length of the time series rarely exceeded four decades (Blowes et al., 2019).
 
-## Insecticides and extreme temperatures drive changes in functional biodiversity
+### Insecticides and extreme temperatures drive changes in functional biodiversity
 
 Threats to biodiversity pose a significant challenge because they change over time and may result in additive adverse effects (Bonebrake et al., 2019). Long-term continuous observations are preferable to short-term observations because they can reveal correlations and possible causation between biological changes and abiotic drivers of change (Gillson and Marchant, 2014). Using eDNA-based data on multitrophic biodiversity over the past 100 years, we identified the taxonomic groups within the prokaryotic and eukaryotic communities that significantly contributed to community assemblages shifts. Whereas the prokaryotic community was overall changing at each major transition between lake phases, changes in the eukaryotic community were driven by different taxonomic groups in the transition between lake phases. The diatom community, typically used by regulators as an indicator of freshwater ecological status, did not change significantly over time, as the beta diversity and the LTDI2 index revealed. These results strongly suggest that a system-level approach, like the one proposed here, may be more appropriate than species or taxon-specific approaches. Our approach showed that diatom communities are not a reliable representation of the ecological status of freshwater ecosystems and are not good indicators of environmental change. Our approach provides a major advantage over traditional direct observations by identifying both taxonomic and functional changes of freshwater biodiversity in a high-throughput fashion. The analysis of temporal trends of biodiversity from a semi-pristine baseline through impacted environments provides a new reference point for regulators to define biodiversity in semi-pristine conditions.
 
@@ -122,13 +245,13 @@ The resolution and reliability of our data-driven systemic approach goes beyond 
 
 A potential limitation of our approach is that correlations identified in field surveys do not demonstrate causation. However, they generate testable hypotheses that can be proven experimentally in controlled mesocosm experiments as explained in Eastwood et al., 2022, providing a potentially transformative approach.
 
-## Implications for conservation and management of biodiversity
+### Implications for conservation and management of biodiversity
 
 Some of the greatest challenges in biodiversity conservation faced by water resource managers is the limited information available on a time scale sufficient to assess long-term changes of aquatic ecosystems. Large-scale models that link environmental drivers to biological indicators are lacking (Solimini et al., 2005), even if some countries have tried to introduce semi-quantitative indices to assess the ecological status of freshwater (Archaimbault and Dumont, 2010). Regulators must rely on approaches ingrained into environmental law, even though they have been proven inadequate (e.g. TDI), as the continuous decline in biodiversity demonstrates (Pecl et al., 2017). Even when direct links between biological indicators and abiotic drivers can be established, these rely on indicator species (e.g. a fish, an alga and an invertebrate) used as proxies for ecosystem health (Kanno, 2016). Our data-driven approach provides a novel way to address regulatory needs. However, the use of data-driven, systemic approaches requires critical changes in current environmental practice and a shift to whole-system evidence-based approaches. The transition to the novel methodologies proposed here will require changes in regulatory frameworks, following a test and acceptance phase, as well as a buy-in from regulators. Our study is a proof of concept that the drivers of biodiversity loss can be identified with higher accuracy than currently possible, generating hypotheses that can be tested experimentally. Our data-driven approach enabled us to identify insecticides and temperature as strong drivers of biodiversity loss, both in prokaryotes and eukaryotes. The confirmation of these findings across multiple freshwater ecosystems has the potential to inform conservation and mitigation interventions, leading to an improved preservation of functional biodiversity.
 
 ## Materials and methods
 
-## Environmental and paleoecological profile of Lake Ring
+### Environmental and paleoecological profile of Lake Ring
 
 Lake Ring is a shallow mixed lake in Jutland, Denmark (55°57’51.83’’ N, 9°35’46.87’’ E) with a well-known history of human impact (Cuenca Cambronero et al., 2018b). A sedimentary archive was collected from Lake Ring in November 2016 with an HTH-type gravity corer; the core was sliced in 34 layers of 0.5 cm and stored in dark and cold (–20 °C) conditions. A radiometric chronology of this sediment was completed in 2018 by Goldsmith Ecology Ltd following standard protocols (Appleby, 2001), and provided an accurate dating of the sediment to the year 1916. According to this chronology the core covered 100 years at a resolution of ca. 3 years intervals. To reduce potential contamination when handling older sediment layers each layer of sediment was handled in a PCR-free and DNA-free environment. Dating of sediment was conducted by direct gamma assay, using ORTEC HPGe GWL series well-type coaxial low background intrinsic germanium detector. Sediment samples with known radionuclide profiles were used for calibration following Appleby, 2001.
 
@@ -136,13 +259,13 @@ We used, historical records, direct chemical analysis of sediment, and physico-c
 
 Physico-chemical variables were measured in the lake between 1970 and 2016, even though data are sparse and discontinuous, limiting their use in a machine learning or statistical framework. To complement the historical records, we obtained climate data from the Danish Meteorological Institute (Supplementary file 4). The climate data were collected from a weather station 80 km from Lake Ring. Air and water surface temperature typically have a positive correlation for shallow streams and lakes (Livingstone and Lotter, 1998; Preudhomme and Stefan, 1992). Hence, we used the data from the weather station as an estimate of the lake water temperature. We also observed a tight correlation between the recorded water temperature in Lake Ring and the summer air temperature recorded by the weather station. In addition, we procured sales records of biocides in Denmark between 1955 and 2015 from the Danish national archives (Supplementary file 4). To assess whether the biocide sales records were a good representation of persistent chemicals in the lake sediment, we quantified the persistent halogenated pesticide DDT in the sliced sedimentary archive of Lake Ring, applying gas chromatography with mass spectrometry analysis. Sediment samples were lyophilized and freeze dried in a lyophilizator using a Christ Beta 1–8 LSCplus freeze-dryer, (Martin Christ GmbH, Osterode am Harz, Germany), to avoid analyte loss during water removal. Following lyophilization, the sediment samples were sieved through 0.4 mm meshes and homogenised. Approximately 1 g of dry sediment was weighed into pre-cleaned glass tubes and spiked with 100 ng of deuterated [2H8- 4,4`- DDT], used as an internal (surrogate) standard, followed by 1 g of copper powder (Merck, Dorset, UK) for sulphur removal. The sediment samples were extracted using 5 ml of hexane: acetone (3:1 v/v), vortexed for 5 min, followed by ultrasonication for 15 min and centrifugation for 3 min at 5000 rpm. The supernatant was transferred to a clean, dry tube and the process was repeated twice for each sample. The combined extract was then evaporated to dryness under a gentle stream of N2 and reconstituted in 2 mL of hexane. Sulphuric acid (3 ml) was used to wash the reconstituted crude extract. The organic phase was allowed to separate on top of the acid layer then transferred to another clean dry test tube. The remaining acid layer was washed twice, each with 2 ml of Hexane. The combined clean extract and washes was evaporated under a gentle stream of Nitrogen, reconstituted into 150 µl of iso-octane containing 100 pg/µl of PCB 131 used as syringe (recovery) standard. Quantification of target DDTs was conducted on a TRACE 1310 GC coupled to an ISQ single quadrupole mass spectrometer (Thermo Fisher Scientific, Austin, TX, USA) operated in electron ionization (EI) mode according to a previously reported method (Wong et al., 2009).
 
-## Biodiversity fingerprinting across 100 years
+### Biodiversity fingerprinting across 100 years
 
-## eDNA extraction and metabarcoding sequencing
+#### eDNA extraction and metabarcoding sequencing
 
 We applied multilocus metabarcoding or marker gene sequencing to environmental DNA (eDNA) extracted from the 34 layers of sediment from the biological archive of Lake Ring using a laminar flow hood in a PCR-free environment to obtain a fine-grained temporal quantification of taxonomic diversity and relative abundance of taxonomic groups. eDNA was extracted from the dated sediment layers - sedaDNA - using the DNeasy PowerSoil kit (Qiagen), following the manufacturer’s instructions. Negative aerial and PCR controls were used; in addition, positive controls for PCR consisting of duplicates of three random samples from the sedimentary archive, were used. The duplicated samples were very similar, providing confidence in the approach used (Appendix 1—figure 2). Triplicates of each sedaDNA sample were amplified with a suite of five nuclear and mitochondrial PCR primers (barcodes) to capture presence and relative abundance of eukaryotes (18S) (Hadziavdic et al., 2014), macroinvertebrates (COI) (Leray et al., 2013), primary producers (focus on diatoms; rbcL) (Zimmermann et al., 2014), and prokaryotes (16SV1 and 16SV4) (Caporaso et al., 2011) using Q5 HS High-Fidelity Master Mix (New England Biolabs) and following the manufacturer’s instructions. A negative control in triplicate per plate was used. Paired end 250 bp amplicon libraries were obtained using a two-step PCR protocol with 96x96 dual tag barcoding to facilitate multiplexing and to reduce crosstalk between samples in downstream analyses (MacConaill et al., 2018) by EnviSion, BioSequencing and BioComputing at the University of Birmingham (https://www.envision-service.com/). PCR1 and PCR2 primers, as well as annealing temperatures per primer pair in PCR1 are in Supplementary file 5. Excess primer dimers and dinucleotides from PCR1 were removed using Thermostable alkaline phosphatase (Promega) and Exonuclease I (New England Biolabs). PCR2 amplicons were purified using High Prep PCR magnetic beads (Auto Q Biosciences) and quantitated using a 200 pro plate reader (TECAN) using qubit dsDNA HS solution (Invitrogen). A standard curve was created by running standards of known concentration on each plate against which sample concentration was determined. PCR2 amplicons were mixed in equimolar quantities (at a final concentration of 12 pmol) using a biomek FXp liquid handling robot (Beckman Coulter). The final molarity of the pools was confirmed using a HS D1000 tapestation screentape (Agilent) prior to 250 bp paired-end sequencing on an Illumina MiSeq platform.
 
-## Bioinformatics
+#### Bioinformatics
 
 The reads were demultiplexed using the forward PCR1 primer sequence and cutadapt 3.7.4 with an error rate of 0.07, equating to one allowed mismatch. The quality of sequences was assessed with FASTQC (Wingett and Andrews, 2018) and multiqc (Ewels et al., 2016). Sequences were then imported into QIIME2 v 2021.2 (Bolyen et al., 2019), trimmed, filtered, merged and denoised using the QIIME2 DADA2 module (Callahan et al., 2016) using default parameters and trimming low quality sections and reverse primer [forward read 0–10 trimmed front, 214–225 truncation; reverse read 17–26 trimmed front, 223–247 truncation]. After denoising, the following samples had zero reads remaining: 16SV1, 16SV4, rbcL, and COI-negative PCR controls; COI aerial negatives A and B; 16SV1 sampleID 8. The taxonomic assignment was completed with the naive-bayes taxonomic classifiers trained using different reference databases, depending on the barcode: the SILVA v138 database was used for the assignment of the 16SV1, 16SV4, and 18S reads (Yilmaz et al., 2014); the diat.barcode v9.2 was used for the assignment of rbcL reads (Rimet et al., 2019); and the Barcode of Life Database was used for the COI reads (Robeson et al., 2021). The taxonomy was assigned using qiime feature-classifier classify-sklearn and used at family level where possible (Pedregosa, 2011). When classification was not possible at family level, the lowest classification possible was used. The taxonomic barplots were plotted per barcode using ggplot2 v3.3.5 (Wickham, 2016) in R v4.0.2 (Anderson, 2001) and including the top 10 most abundant families. All other taxa were collapsed in the plots under ‘other taxa’.
 
@@ -150,7 +273,7 @@ All samples were rarefied (16SV1 at 10,250 reads; 16SV4 at 10,400 reads; 18S at 
 
 The function of the microbial communities across the four lake phases were predicted with PICRUST2 (Mandal et al., 2015) plugin in QIIME2 (Bolyen et al., 2019), using the rarefied reads. Differentially abundant KEGG Orthology (KO) terms between pairs of lake phases were identified using the ANCOM plugin (Lin et al., 2013) in QIIME2 (Bolyen et al., 2019) and were mapped onto KEGG pathways with enriched pathways identified using a Fisher Exact test.
 
-## Drivers of biodiversity change
+### Drivers of biodiversity change
 
 To identify correlations between biological assemblages (families identified through the sedaDNA sequencing) and drivers of change, we focused on biocides and climate variables, using sparse Canonical Correlation Analysis (sCCA; it can be thought of as consensus PCA on multiple data matrices) followed by Sliding Window (Pearson) Correlation (SWC) analysis (Appendix 1—figure 5). Physico-chemical variables were not used in this analysis because of their sparsity (data rarely met the Sliding Window correlation criteria of 5 continuous values) and low variation over time (Appendix 1—figure 4A). sCCA is a tool for integrating and discovering complex, group-wise patterns among high-dimensional datasets (Parkhomenko et al., 2009). While most forms of machine learning require large sample sizes, sCCA uses fewer observations to identify the most correlated components among data matrices and captures the multivariate variability of the most important features (Nakagawa and Cuthill, 2007).
 

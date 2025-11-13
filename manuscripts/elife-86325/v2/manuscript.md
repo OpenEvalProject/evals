@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 Institute for Immunology and Infection Research, School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/00vtgdb53 Wellcome Centre for Integrative Parasitology, School of Infection & Immunity, University of Glasgow Glasgow United Kingdom
+1. Institute for Immunology and Infection Research, School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Wellcome Centre for Integrative Parasitology, School of Infection & Immunity, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
 
 † Corresponding author
 
 ## Abstract
 
-African trypanosomes proliferate as bloodstream forms (BSFs) and procyclic forms in the mammal and tsetse fly midgut, respectively. This allows them to colonise the host environment upon infection and ensure life cycle progression. Yet, understanding of the mechanisms that regulate and drive the cell replication cycle of these forms is limited. Using single-cell transcriptomics on unsynchronised cell populations, we have obtained high resolution cell cycle regulated (CCR) transcriptomes of both procyclic and slender BSF Trypanosoma brucei without prior cell sorting or synchronisation. Additionally, we describe an efficient freeze–thawing protocol that allows single-cell transcriptomic analysis of cryopreserved T. brucei . Computational reconstruction of the cell cycle using periodic pseudotime inference allowed the dynamic expression patterns of cycling genes to be profiled for both life cycle forms. Comparative analyses identify a core cycling transcriptome highly conserved between forms, as well as several genes where transcript levels dynamics are form specific. Comparing transcript expression patterns with protein abundance revealed that the majority of genes with periodic cycling transcript and protein levels exhibit a relative delay between peak transcript and protein expression. This work reveals novel detail of the CCR transcriptomes of both forms, which are available for further interrogation via an interactive webtool.
+African trypanosomes proliferate as bloodstream forms (BSFs) and procyclic forms in the mammal and tsetse fly midgut, respectively. This allows them to colonise the host environment upon infection and ensure life cycle progression. Yet, understanding of the mechanisms that regulate and drive the cell replication cycle of these forms is limited. Using single-cell transcriptomics on unsynchronised cell populations, we have obtained high resolution cell cycle regulated (CCR) transcriptomes of both procyclic and slender BSF Trypanosoma brucei without prior cell sorting or synchronisation. Additionally, we describe an efficient freeze–thawing protocol that allows single-cell transcriptomic analysis of cryopreserved T. brucei. Computational reconstruction of the cell cycle using periodic pseudotime inference allowed the dynamic expression patterns of cycling genes to be profiled for both life cycle forms. Comparative analyses identify a core cycling transcriptome highly conserved between forms, as well as several genes where transcript levels dynamics are form specific. Comparing transcript expression patterns with protein abundance revealed that the majority of genes with periodic cycling transcript and protein levels exhibit a relative delay between peak transcript and protein expression. This work reveals novel detail of the CCR transcriptomes of both forms, which are available for further interrogation via an interactive webtool.
 
 ## Introduction
 
@@ -34,23 +34,55 @@ In this study, we profile the dynamic transcript changes during the cell cycle o
 
 ## Results
 
-## Cryopreservation of T. brucei for Chromium single-cell transcriptomics
+### Cryopreservation of T. brucei for Chromium single-cell transcriptomics
 
 Generating scRNA-seq data with droplet-based technology Chromium (10× Genomics) currently requires live trypanosome samples in order to recover a high number of transcripts per cell (Briggs et al., 2021b). To test whether T. brucei could be stored prior to processing, we compared the impact of cryopreservation using 10% glycerol on live cell recovery when using a slow thawing protocol (Figure 1—figure supplement 1, methods). Using motility as a measure of parasite viability indicated both BSF and PCF cells recovered with high viability after freezing with 10% glycerol, with each form maintaining at least 90% cellular motility after 28 days of cryostorage (Figure 1—figure supplement 1). When returned to culture, parasites showed a delayed return to normal growth rates (Figure 1—figure supplement 1) indicating samples should be processed for scRNA-seq immediately after thawing to reflect their transcript status when cryopreserved.
 
 Using this approach, replicating BSF and PCF T. brucei were processed for Chromium scRNA-seq ‘fresh’ from in vitro culture or after 13 days of storage with 10% glycerol in LN2, hereafter referred to as ‘frozen’ (Figure 1—figure supplement 2). Frozen samples were thawed on day 13 and processed alongside the fresh samples taken directly from culture, thus fresh and frozen samples contain biological replicates and were subjected to scRNA-seq in the same batch. Cryopreservation had little effect on the raw data quality (Figure 1; Supplementary file 1) with the total numbers of unique transcript counts (unique molecular identifiers; UMIs) and features (encoding genes) detected per cell unaffected for either BSF or PCFs (Figure 1A, B). Additionally, the percentage of transcripts derived from the mitochondrial kDNA maxicircle genome was unchanged by the freezing and recovery procedures (Figure 1C). The percentage of kDNA-derived transcripts was higher in PCF compared to BSF, as expected: only PCFs require complexes III and IV for oxidative phosphorylation (Smith et al., 2017), components for which are encoded on the kDNA maxicircle (Benne, 1985). Higher average UMIs and features per cell were also recovered in PCF compared to BSF, in both fresh and frozen samples, although it is unclear if this is a biological phenomenon or if RNA extraction and capture is more efficient from PCFs. After filtering the transcriptomes based on these parameters to remove those of low quality or likely multiplets (Figure 1), 81.7% and 81.04% of fresh and frozen BSFs cells were retained in the data leaving 2767 and 1599 total cells, respectively. For PCFs, 76.82% and 72.60% of fresh and frozen cells were retained, leaving 3305 and 4335 cells, respectively. The differences in total number of cells are likely due to variation in loading and cell capture between samples.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig1-v2.jpg)
+
+**Figure 1.:** (A) The unique molecular identifiers (UMI, x-axis) captured per cell (count, y-axis) by Chromium scRNA-seq with BSF and PCF taken fresh from in vitro culture (fresh) or after cryopreservation in liquid nitrogen (LN2) (frozen). Red dashed lines indicate threshold used for QC filtering of each sample. (B) Number of genes (features, x-axis) for which transcripts were capture per cell. (C) Percentage of transcripts captured per cell that are encoded by genes on the mitochondrial maxicircle kDNA genome (% maxicircle kDNA, y-axis). (D) Top 2 components (PC1 and PC2) identified with PC analysis after pseudobulking all counts for each sample. Fresh (red) and frozen (blue) samples are shown for BSFs (circle) and PCFs (triangles). (E) Average expression of each gene across all cells for BSF fresh (x-axis) and BSF frozen (y-axis) plotted as log(1 + mean average count). Correlation coefficient and p-value of one-tailed Wilcox test is indicated above. Gene with increased fold change (FC) >2 in frozen sample are coloured red and those decreased in blue. (F) Average gene expression of PCF samples, as in E. (G) Scaled expression of genes DE between fresh and frozen BSF scRNA-seq (adjusted p-value <0.05, FC >1.5). Gene names are given when available, otherwise gene IDs are shown. (H) as in G for PCF samples. (I) Raw transcript counts (expression level) for fructose-bisphosphate aldolase (ALD; Tb427_100060400) in BSF (upper) and PCF (lower).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The percentage of motile bloodstream form (BSF) and procyclic form (PCF) parasites after preservation in liquid nitrogen (LN2) for 3, 7, or 28 days. Growth curves of BSFs (B) and PCFs (C) after being recovered from cryopreservation by the slow thawing protocol and returned to culture after 28 days of storage. Error bars show the standard deviation from the mean of two biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Growth of BSF (A) and PCF (B) T. brucei passaged over 4 days prior to immediate scRNA-seq preparation of fresh (solid line) samples, or cryopreservation of frozen (dashed line) at the point indicated by an asterisk. Frozen samples were cryopreserved at this point, and later thawed and immediately processed for scRNA-seq. Flow cytometry analysis of PI samples stained at the point indicated by asterisk for BSFs (C) and PCFs (D).
+
 Principle component analysis (PCA) highlighted far great variability between samples of different life cycle forms (93% of variance), compared to the preparation method (i.e. fresh or frozen, 5% variance) (Figure 1D). Average transcript counts across cells for each gene were significantly correlated between fresh and frozen samples in both BSF and PCF forms (Pearson’s R = 0.977 and 0.985, respectively) (Figure 1E, F), with few genes (BSF: 0.80% of genes captured, PCF: 0.55%) showing greater than twofold difference (Supplementary file 2). DE analysis comparing single-cell transcriptomes of fresh and frozen samples using MAST (Finak et al., 2015) revealed 17 genes altered in BSF (14 upregulated in fresh, 3 in frozen) and 19 genes (13 in fresh and 6 in frozen) between PCFs (adjusted p-value <0.05, FC >1.5) (Figure 1G, H; Supplementary file 2). Only one gene, which putatively encodes fructose-bisphosphate aldolase class-I, was differentially expressed in both forms, with higher expression in fresh samples (Figure 1I). Notably, procyclin-associated genes (PAGs) 1–5 were all upregulated in frozen PCFs (Figure 1H).
 
 As no large-scale transcriptomic changes in response to cryopreservation were observed, and DE genes did not include those linked to cell cycle regulation, fresh and frozen samples were integrated as replicate samples to analyse the cell cycle of PCF and BSF T. brucei.
 
-## The CCR transcriptome of PCF T. brucei
+### The CCR transcriptome of PCF T. brucei
 
 PCF scRNA-seq data from fresh and frozen samples were integrated and dimensional reduction was performed. Transcriptomes were then plotted in low dimensional space as unifold manifold approximation and projection (UMAP; McInnes et al., 2018) plots, where cells are arranged by transcriptional similarities and differences (Figure 2A). Using cell cycle phase markers (Supplementary file 1) identified previously using bulk-RNA-seq (Archer et al., 2011), each cell was labelled by phase (Figure 2B). Grouping by phase was evident in both samples, with each population arranging in a logical order according to cell cycle progression. The proportion of cells in each phase was similar between samples (Figure 2C) and corresponded with the proportion of cells in G1 (1N), S (>1N <2N), and G2/M (2N) phases as assessed by flow cytometry analysis of DNA content (Figure 2D). Flow cytometry was performed prior to cryopreservation for frozen samples. A proportion of cells (fresh 6.23%, frozen 12.02%) did not elevate transcript levels of markers for any phase and so were named ‘unlabelled’ (grey; Figure 2B, C). The majority of unlabelled cells cluster with early G1 cells (Figure 2B). DE analysis between early G1 and unlabelled cells found 14 genes with adjusted p-value <0.05, yet none showed fold-change >1.5 (Supplementary file 3). These include three ribosomal proteins, a DEAD box helicase and a putative subunit of replicative protein A (RPA). It is possible that these cells are yet to re-enter the cell cycle and so do not over express any early G1 markers, or that the early G1 markers used here are insufficient to label all cells in this phase.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig2-v2.jpg)
+
+**Figure 2.:** (A) Unifold manifold approximation and projection (UMAP) plot of integrated PCF transcriptomes from fresh (blue) and frozen (red) samples. (B) UMAP of PCF transcriptomes coloured by inferred cell cycle phase. (C) Proportion of cells assigned to each phase by transcriptomics as in B. Legend as in B. (D) Proportion of cells with DNA content assessed by flow cytometry. (E) Histogram of transcriptomes arranged in pseudotime (anti-clockwise) representing cell cycle progression. Each line in inner circle indicates one transcriptome coloured by phase as in B. Outer circle histogram of showing number of cells at each point in pseudotime (0–1). (F) Scaled transcript levels of cell cycle regulated (CCR) genes (rows), ordered by peak time, plotted across transcriptomes (columns) ordered in pseudotime. Top annotation indicates cell phase, right annotation indicates phase with highest expression of each gene. (G) Scaled protein abundance for 129 genes identified as CCR by Crozier et al., plotted in the same order as F. Time points are indicated in top annotation, coloured by the most enriched cell cycle phase for each sample. Numbers of genes with highest transcript expression in each phase analysed by scRNA-seq (x-axis) and highest protein level identified by Crozer et al. (H) and Benz et al. (I) proteomics studies. (J) Transcript counts of three genes (y-axis) plotted across pseudotime (x-axis). Each dot shows one transcriptome coloured by phase as in B. Blue line shows smoothed expression across pseudotime. (K) Protein abundance for the same genes as in J, previously identify as CCR by Crozier et al. Time point and colour of most enriched phase for each sample (x-axis) as in G.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Total unique transcripts per cell is plotted on the y-axis (total RNA) over the inferred pseudotime (x-axis) for PCF (A) and BSF (B). Each cell is coloured by assigned cell cycle phase. Blue solid line indicates smoothed average RNA over pseudotime.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Violin plots indicate genes mean logFC over procyclic form (PCF) pseudotime (A) and Benjamini-Hochberg adjusted p-values (B) for genes (x-axis) grouped by whether they were previously identified at CCR using bulk RNA-seq (Archer et al., 2011). Red dashed lines indicate threshold used to define CCR genes in scRNA-seq analysis: FC >1.5 and adjusted p-value <0.01.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Venn diagram indicates the number of common genes identified in the procyclic form (PCF) scRNA-seq cell cycle analysis presented here, proteomic analysis from Crozier et al., 2018, proteomics analysis from Benz and Urbaniak, 2019, and bulk-RNA-seq from Archer et al., 2011. Genes were selected based on the same thresholds used in the original analysis of each study.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Scaled protein abundance for 118 genes identified as cell cycle regulated (CCR) by Benz et al. and scRNA-seq analysis of the PCF cell cycle, plotted in the same order as Figure 2F. Time points are indicated in the top annotation, coloured by the most enriched cell cycle phase for each sample. (B) Scaled protein abundance for CCR 112 genes identified as CCR by Benz et al. and scRNA-seq analysis of the bloodstream form (BSF) cell cycle, plotted in the same order as Figure 3F. (C) Protein abundance from Benz et al. study for the same genes as in Figure 2J, previously identifed as CCR in all studies compared. Time points are coloured and labelled by most enriched phase for each sample (x-axis). Protein abundance is scaled compared to early G1 (EG1), which is set to 0 for all genes.
+
 Pseudotime values were assigned using Cyclum, an autoencoder technique which projects cells on a nonlinear periodic trajectory (Liang et al., 2020). This is performed independently of the UMAP plotting and phase assignment described above. Cells ordered according to cell cycle progression and phases clearly separated in pseudotime, with the exception of early G1 and ‘unlabelled’ cells (Figure 2E). As expected, total RNA increased over pseudotime from early G1 (3221 median UMI per cell) to G2M (4077 median UMI) (Figure 2—figure supplement 1). Hence, DE analysis across pseudotime was performed using normalised counts to find CCR transcripts independent of total RNA increase. PseudotimeDE (Song and Li, 2021) was used to identify DE genes and thresholds for selecting significantly CCR genes were selected based on the detection of the previously identified CCR genes in PCF transcriptomic analysis (Archer et al., 2011; Figure 2—figure supplement 2). Using these cut-offs (false discovery rate [FDR] adjusted p-value <0.01, mean fold-change >1.5) 1550 significant CCR genes were identified (Supplementary file 4), including 399 of the 530 genes (75.28%) previously detected with the bulk RNA-seq approach (Archer et al., 2011; Figure 2—figure supplement 3, Supplementary file 4). Dynamic expression patterns were evident across the cell cycle (Figure 2F). Each gene was classified as peaking in a particular phase by comparing the average expression levels across cells for each phase. This revealed 77 (4.53%) genes with highest expression in early G1, 498 (29.31%) in late G1, 598 (35.20%) in S phase, and 526 (31.00%) in G2/M (Supplementary file 4, Figure 2F).
 
-## Relative temporal relationship between RNA and protein levels in PCFs
+### Relative temporal relationship between RNA and protein levels in PCFs
 
 To investigate the correlation between transcript and protein abundance during the PCF cell cycle, CCR genes defined by scRNA-seq above were compared with CCR proteins identified in two separate studies. Crozier et al., 2018 and Benz and Urbaniak, 2019 employed centrifugal elutriation to enrich for smaller G1 phase T. brucei PCFs which were then returned to culture and allowed to progress through the cell cycle in a semi-synchronised manner over time. Mass spectrometry was then employed to analyse protein samples taken as the cell population progressed through the cell cycle. Comparison of protein abundance in each sample then allowed CCR proteins to be identified. 427 and 370 genes (annotated in the WT427 2018 genome) were classified as encoding CCR proteins by Benz and Crozier, respectively, with 61 classed as CCR in both datasets. Of the 1550 genes with CCR transcripts in the present scRNA-seq data, 226 were classed as having CCR proteins in both or one of these studies (Figure 2—figure supplement 3). Proteomics analysis has lower sensitivity compared to transcriptomics, therefore not all scRNA-seq defined CCR genes are detected as proteins in these studies: 998 (64.39%) and 667 (43.03%) CCR genes were detected by Crozier and Benz, respectively. Of these, just 14.43% and 17.69% had been classified as CCR by Crozier (Figure 2G) and Benz (Figure 2—figure supplement 4), respectively. Thus, the majority of CCR transcripts do not result in CCR protein levels as defined by current methods. Proteins were not detected for 586 scRNA-seq CCR transcripts in either study, despite these not showing lower transcript abundance than those with detectable proteins, and so could not be compared (Supplementary file 4).
 
@@ -58,9 +90,17 @@ Plotting scaled CCR protein levels in the Crozier data (Figure 2G) and, to a les
 
 Just 24 genes were classified as CCR in scRNA-seq, bulk-RNA-seq (Archer et al., 2011), and both proteomic studies (Figure 2—figure supplement 3). These include genes with documented roles in the cell cycle: cyclin-dependent kinase CRK3 (Tb427_100054000), cyclin-dependent kinase regulatory subunit CKS1 (Tb427_110183500), cytokinesis initiation factors CIF1 (Tb427_110176500) and CIF2 (Tb427_090085100), and Cohesin subunit SCC3 (Tb427_100064300). Others include three homologues of S. cerevisiae Polymerase Suppressor PSP1 (Tb427_100090100, Tb427_110047000, and Tb427_110165900), and six genes encoding hypothetical proteins with no known function (Tb427_040026500, Tb427_040054600, Tb427_080009800, Tb427_100096800, Tb427_100120400, and Tb427_110082700). Transcript levels for these genes were raised (Figure 2J) prior to protein levels (Figure 2K, Figure 2—figure supplement 4).
 
-## The CCR transcriptome of BSF T. brucei
+### The CCR transcriptome of BSF T. brucei
 
 The same approach was taken to analyse transcript dynamics during the BSF cell cycle. Transcriptomes from both the fresh and frozen samples (Figure 3A) arranged in low dimensional space according to phase, as assigned using bulk RNA-seq defined markers (Figure 3B). Notably, S and G2M BSF cells display less separation in UMAP plots compared (Figure 3B) to PCFs (Figure 2B), indicating less distinction between the transcriptomes of these phases for BSFs. As observed in PCFs, early G1 and unlabelled BSF transcriptomes overlapped significantly (Figure 3B). DE analysis between these two phases identified 16 genes (adjusted p-value <0.05), yet none reaching a FC cut-off of >1.5 (Supplementary file 3). Of these, three were also DE between early G1 and unlabelled PCFs: a putative ribosomal protein S9/S16 (Tb427_070014300), a hypothetical protein (Tb427_010013900), and an RPA subunit (Tb427_050022800). The proportion of cells in each phase was similar between fresh and frozen samples (Figure 3C), as well as phases defined by DNA content (Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig3-v2.jpg)
+
+**Figure 3.:** (A) Unifold manifold approximation and projection (UMAP) plot of integrated BSF transcriptomes from fresh (blue) and frozen (red) samples. (B) UMAP of BSF transcriptomes coloured by inferred cell cycle phase. (C) Proportion of cells assigned to each phase by transcriptomics as in B. Legend as in B. (D) Proportion of cells with DNA content assessed by flow cytometry. (E) Histogram of transcriptomes arranged in pseudotime (anti-clockwise) representing cell cycle progression. Each line in inner circle indicated one transcriptome coloured by phase as in B. Outer circle histogram of showing number of cells at each point in pseudotime (0–1). (F) Scaled transcript levels of cell cycle regulated (CCR) genes (rows), ordered by peak time, plotted across transcriptomes (columns) ordered in pseudotime. Top annotation indicates cell phase, right annotation indicates phase with highest expression of each gene. (G) Scaled protein abundance for 137 genes identified as CCR by Crozier et al., plotted in the same order as F. Time points are indicated in top annotation, coloured by the most enriched cell cycle phase for each sample. (H) Transcript counts of three of the top CCR genes (y-axis) plotted across pseudotime (x-axis). Each dot shows one transcriptome coloured by phase as in B. Blue line shows smoothed expression level across pseudotime. (I) Fluorescent microscopy imaging of mNeonGreen (mNG) tagged top CCR proteins. DAPI (4′,6-diamidino-2-phenylindole) staining of DNA (cyan) and mNG fluorescence (magenta) are shown for the three genes as well as merged with DIC (merge). Scale bar = 10 µm. (J) The percentage of cells positive for mNG as detected by flow cytometry analysis. For each gene, counts are separated by cell cycle phase, inferred by DNA content detection (G1 = 2C, S = >2C < 4C, G2M = 4C). Error bars indicate the standard deviation from the mean of three (Tb427_080028700 and Tb427_110169500) or two (Tb427_060036900) biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Polymerase Chain Reaction (PCR) detection of integrated mNeonGreen (mNG) tag fragments for Tb427_060036900 (3406 bp), PRI1/Tb427_080028700 (3036 bp), and Tb427_110169500 (3015 bp). Lower band indicates the wild-type gene without an inserted tag for Tb427_060036900 (484 bp), PRI1/Tb427_080028700 (498 bp) and Tb427_110169500 (477 bp). * indicates fluorescence could not be detected for this heterozygous Tb427_060036900::mNG clone. (B) Fluorescent microscopy imaging of mNG tagged top cell cycle regulated proteins. DAPI staining of DNA (cyan) and mNG fluorescence (magenta) are shown for the three genes as well as merged with DIC (merge). Scale bar = 10 µm. (C) Scatter plots of parental Cas9 expressing WT427 BSFs (grey) and independently derived mNG tagged clones (pink, blue, and purple) for three genes: Tb427_060036900, PRI1/Tb427_080028700, and Tb427_110169500. DAPI staining (x-axes) and mNG fluorescence (y-axes) were detected for 10,000 events per sample. Clone 2 is excluded from Tb427_060036900 as no fluorescence was detected. Original gel images are available in Figure 3—figure supplement 1—source data 1.
 
 Using Cyclum to infer pseudotime during the cell cycle (Figure 3E), also indicated S and G2M BSF cells were less distinct in their transcriptome than in PCFs at this cell cycle transition. DE analysis over pseudotime identified 1864 CCR transcripts (FDR adjusted p-value <0.01, FC >1.5) with dynamic expression during the cell cycle (Figure 3F, Supplementary file 5). A remarkably similar proportion of genes peaking in each phase was found for BSF compared to PCF. In BSFs, 76 (4.08%) genes had highest expression in early G1, 588 (31.55%) in late G1, 678 (36.37%) in S phase, and 522 (28.00%) in G2M (Supplementary file 5, Figure 3F).
 
@@ -72,9 +112,21 @@ The top S phase peaking transcripts were two genes encoding histone H2B (Tb427_1
 
 The most significant gene peaking in G2M was Tb427_110169500, which also encodes a hypothetical protein (Figure 3H). N-terminal tagging revealed this protein is expressed in all cycle phases (Figure 3I, J) and localises to both the old and newly developing flagellum (Figure 3I, Figure 3—figure supplement 1). Transcript levels increase as cells progress from into S and peak in G2M, perhaps to meet increased protein requirement as the new flagella develops. Slightly increased fluorescence of mNG was evident for G2M cells compared to G1 (Figure 3—figure supplement 1).
 
-## Common CCR transcripts in BSF and PCF forms
+### Common CCR transcripts in BSF and PCF forms
 
 BSF and PCF CCR transcripts were compared to identify 1013 genes classed as CCR in both forms using a threshold of adjusted p-value <0.01 and FC >1.5 (Figure 4—figure supplement 1, Supplementary file 6). Expression patterns appeared to show greater coordination in the early stages of the cell cycle, whereas patterns in the S and G2M phase showed greater variability between forms (Figure 4A, B). 83.12% (842) of the common CCR genes showed highest transcript levels in the same cell cycle phase, and 16.19% (164) peaked in neighbouring phases (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scaled transcript levels of common CCR genes (rows), ordered by peak time and plotted across transcriptomes (columns) ordered in pseudotime of PCF (left) and BSF (right). Genes are ordered by peak time in the PCF cell cycle in both cases for direct comparison. Top annotation indicates cell cycle phase. (B) Number of genes peaking in each cell cycle phase for PCF (x-axis) and BSF (y-axis) transcriptomes. (C) Number of genes peaking in each BSF phase (x-axis) linked to a cell cycle defect (y-axis) in RIT-seq screen of BSFs by Marques et al., 2022. (D) Gene Ontology (GO) terms associated with common CCR grouped by peak phase in the BSF cell cycle. Fold change of detected genes is plotted on x-axis, points are sized by the number of genes and coloured by p-value. (E) Transcript levels of the most significantly differential expression (DE) gene associated with each cell cycle defect category (G1, S, G2M, and >4C). Counts per cell (y-axis) are plotted across PCF (left) and BSF (right) pseudotime (x-axis), coloured by phase as in A. Blue line shows smoothed expression level across pseudotime.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Scatter plot of genes classified as CCR in both life cycle forms (both, black), BSF only (red), or PCF only (blue). Genes are plotted by adjusted p-value for BSF (x-axis) and PCF (y-axis). (Axis was limited to show data distribution removing 88 points.) Red arrows indicate genes plotted in Figure 4E. (B) CCR genes plotted by mean logFC in smoothed expression over pseudotime for BSFs (x-axis) and PCFs (y-axis). (18 points were removed due to limiting axes.) (C) Venn diagram demonstrating the overlap in PCF (blue) and BSF (red) CCR genes, defined by cut-offs in A and B. (D) Number of kinetoplastida species reference proteomes containing at least one ortholog of the common CCR proteins, all proteins from the WT427 reference, and a random subset of 1000 proteins. (E) Comparison of the total number of orthologs present across all 44 proteomes for CCR genes, all genes and a random subset. p-values indicate the results of Mann–Whitney tests.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Transcript levels of genes encoding known cyclins (CYC4, CYC6, CYC8, and CYC9) and one un-investigated cyclin domain-containing gene (Tb427_110012500) found to be CCR in one or both forms. Counts per cell (y-axis) are plotted across procyclic form (PCF; left) and bloodstream form (BSF; right) pseudotime (x-axis), coloured by phase. Blue line plots smoothed expression level across pseudotime.
 
 Genes were classified based on the phase with highest expression in the BSF cell cycle (Supplementary file 4), and Gene Ontology (GO) analysis was performed to find biological processes associated with each set of genes (Figure 4D, Supplementary file 6). Few GO terms were enriched for early G1 genes, as only nine genes peak in this phase, and all of these are either labelled as ‘hypothetical’ or have been assigned descriptions based on putative functional domains. All GO terms, including ‘rRNA processing’, relate to one gene, Tb427_110120100, which shares sequence homology with UTP21, a component of the small-subunit processome (Barandun et al., 2017).
 
@@ -90,9 +142,21 @@ Recently, a genome-scale phenotypic genetic screen (RNA Interference Target sequ
 
 As mechanisms of cell cycle regulation and cyclical transcript changes are largely conserved across the eukaryotes, we hypothesised that genes with CCR transcript levels in T. brucei are more likely to be conserved. To investigate, we extracted the 819 orthogroups which contained the common CCR regulated genes and compared the orthogroup conservation across 44 kinetoplastid proteomes, including trypanosome and leishmania species (Oldrieve et al., 2022). CCR orthogroups were conserved across significantly (p < 0.0001) more proteomes (mean of 41.66 out of 44), compared all orthogroups of the T. brucei Lister427 proteome (Müller et al., 2018) (mean of 18.44), and a random subset of 1000 orthogroups (mean 18.43) (Figure 4—figure supplement 1). More proteins per orthogroup were also present across the kinetoplastid species for orthogroups containing CCR genes (mean of 50.79 proteins per orthogroup) compared to all orthogroups (mean of 23.31 proteins per orthogroup) and the random subset (mean of 22.45 proteins per orthogroup) (Figure 4—figure supplement 1). Of the highly conserved common CCR genes, 365 genes are described as encoding ‘hypothetical’ proteins (9.69% of the total hypothetical protein encoding genes located in the core chromosomes), indicating they may have central unknown roles in the kinetoplastida cell division cycle. Of these, 61 had a cell cycle defect identified by Marques et al.; depletion of 9 led to increased BSF in S phase, 23 in G2/M, 14 in G1, and 15 in >4C. The transcript levels for most significant genes for each defect are plotted across the PCF and BSF cell cycle (Figure 4E).
 
-## Unique CCR transcripts in PCF and BSF
+### Unique CCR transcripts in PCF and BSF
 
 Of the CCR transcripts in PCF, 540 were only significant in this form and showed varied expression across all phases of the cell cycle (Figure 5A, Supplementary file 7). GO term enrichment (Figure 5B, Supplementary file 7) of these genes uncovered terms including ‘lipid metabolic process’ attributed to 9 genes encoding putative proteins, including one encoding a putative triacylglycerol lipase which peaks in S phase, and a putative C-14 sterol reductase, for which transcripts are highest in late G1 (Figure 5—figure supplement 1). Genes relating to ‘ribonucleoprotein complex biogenesis’ include ribosome production factor 2 (RPF2), which is part of the 5S ribonucleoprotein (RNP) complex in PCFs (Jaremko et al., 2019), and 20S-pre-rRNA D-site endonuclease, NOB1, which matures the 3′ end of 18S rRNA (Kala et al., 2017; Figure 5—figure supplement 1). “DNA replication” associated genes include replication factors RPA2 and putative, RPC3 (Figure 5—figure supplement 1), both of which show growth defects in PCFs (Jones et al., 2014; Rocha-Granados et al., 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scaled transcript levels of unique CCR genes (rows), ordered by peak time, plotted across transcriptomes (columns) ordered in pseudotime across PCF cell cycle. Top annotation indicates cell phase. (B) Gene Ontology (GO) terms associated with CCR genes unique to PCFs. Fold change of detected genes is plotted on x-axis. Points are sizes by number of genes and coloured by p-value. (C) Scaled transcript levels for CCR unique to BSF cells cycle, as in A. (D) GO terms associated with unique BSF CCR genes, as in B. (E) Transcript levels of six genes with strong association bias to one life cycle form cell cycle. Counts per cell (y-axis) are plotted across PCF (left) and BSF (right) pseudotime (x-axis), coloured by phase as in A. Blue line shows smoothed expression level across pseudotime.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Transcript levels of discussed example genes associated with Gene Ontology (GO) terms ‘lipid metabolic process’ (A), ‘DNA replication’ (B), and ‘ribonucleoprotein complex biogenesis’ (C). Counts per cell (y-axis) are plotted across PCF (left) and bloodstream form (BSF; right) pseudotime (x-axis), coloured by phase. Blue line shows smoothed expression level across pseudotime.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86325/elife-86325-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Transcript levels of discussed example genes for the glucose/gluconeogenesis pathway (A), and Gene Ontology (GO) terms ‘phosphorylation’ (B), ‘DNA recombination’ (C), and ‘histone lysine methylation’ (D). Counts per cell (y-axis) are plotted across procyclic form (PCF; left) and BSF (right) pseudotime (x-axis), coloured by phase. Blue line shows smoothed expression level across pseudotime.
 
 The 851 uniquely DE genes in BSFs also showed varied expression dynamics over the cell cycle (Figure 5C). GO term analysis highlighted 52 genes linked to the term ‘phosphorus metabolic process’, 12 to ‘carbohydrate metabolic process’ and 7 specifically to ‘glycosyl compound metabolic process’. These metabolic associated genes include 24 components of the glycolysis/gluconeogenesis pathway, including glucose-6-phosphate isomerase (PGI), phosphoglycerate kinase (PGKC), and triosephosphate isomerase (TIM) (Figure 5—figure supplement 2). Enzymes linked to the term ‘phosphorylation’ included Repressor of Differentiation Kinases 1 (RDK1) and 2 (RDK2), both of which repress differentiation from BSF to PCFs (Jones et al., 2014), and a pseudokinase linked to slowed growth in BSFs when depleted in a kinase-specific RIT-seq screen (Jones et al., 2014). Interestingly, RDK1 and RDK2 show inverse expression patterns, with RDK1 transcripts at lower levels in late G1 before rising as the cell cycle progresses through S, G2M, and back into early G1 (Figure 5—figure supplement 2). Four genes are linked to ‘DNA recombination’: RPA1, KU80, RAD51, and RecQ helicase, each with a varied expression pattern (Figure 5—figure supplement 2). RPA1 transcripts peaked in late G1, in keeping with the finding at the CfRPA1 mRNA peaks at the G1–S boundary in Crithidia fasciculata (Pasion et al., 1994). Two histone-lysine n-methyltransferases, DOT1A and DOT1B, are also significantly CCR only in BSFs with these thresholds. However, both DOT1s do have a similar smoothed expression pattern in BSF and PCF (Figure 5—figure supplement 2) despite neither gene reaching the required thresholds in this analysis to be considered CCR in PCF (Supplementary file 7).
 
@@ -106,7 +170,7 @@ Thresholds for classifying CCR were selected based on the detection of previousl
 
 In this work, we provide the CCR transcriptomes of both BSF and PCF T. brucei, generated from asynchronously replicating populations. Computational reconstruction of the cell cycle with individual transcriptomes allowed us to ascertain the extent to which each gene’s transcript levels follow the periodic waves of the cell cycle and map their dynamic patterns. Comparison between transcript expression patterns and previously published protein abundance changes identified a relative delay in peak levels for transcript and protein for at least 50% of the genes that could be compared. Comparing BSF and PCF cyclic transcriptomes identified a common set of highly conserved CCR genes, enriched for known cell cycle-related genes and, thus, likely novel regulators of cell cycle in kinetoplastidae. Intriguingly, a key difference between forms appears at the S–G2 transition where the gene expression switch associated with these phases is more tightly regulated in PCFs compared to BSFs.
 
-## Cryopreservation as a method to capture transcriptomes
+### Cryopreservation as a method to capture transcriptomes
 
 In addition to specific analysis of the cell cycle, we provide evidence that scRNA-seq analysis of cryopreserved parasites is feasible without detrimentally altering the transcriptome of parasites providing a methodological development likely to be of utility in multiple scRNA-seq studies.
 
@@ -116,7 +180,7 @@ Here, we compare Chromium generated transcriptomes from PCF and BSF prepared imm
 
 Other than these isolated changes, we could not find significant differences between fresh and frozen transcriptomes in either form. Furthermore, freezing had little effect on the transcript recovery per cell, and samples could be fully integrated to study the biological process of interest without confounding results. Thus, cryopreservation is an appropriate method of storing T. brucei, and likely related parasite species, prior to scRNA-seq.
 
-## Global cell cycle analyses
+### Global cell cycle analyses
 
 Previously, profiling of the PCF cell cycle transcriptome relied on centrifugal elutriation or serum starvation (Archer et al., 2011). In both cases, parasites were returned to normal culture conditions and RNA was extracted from discrete time points for sequencing. Although time points were clearly enriched for cell cycle phases, samples still contained mixed populations to varying degrees. Now technological and analytical advances have made it possible to avoid these potentially stress inducing methods by performing scRNA-seq directly on asynchronous mixed populations, with their cell cycle phases then resolved computationally. We applied pseudotime inference and DE methods to profile cyclical transcript changes, rather than directly comparing discretely grouped phases. Although it is likely that genes with low transcript levels are missed in this analysis, as sensitivity of scRNA-seq is lower than bulk-RNA-seq (Lähnemann et al., 2020; Qiu, 2020; Mou et al., 2019), 1550 genes with dynamic transcript level changes reflective of the cell cycle were identified, including 1151 which had not been identified by bulk analysis. These CCR genes include new transcriptional markers of each phase, including those clearly distinguishing late G1 phase PCFs from early G1 phase parasites, for which previously identified early G1 markers were insufficient for labelling (Figure 2B, F).
 
@@ -124,11 +188,11 @@ scRNA-seq also allowed the characterisation of the BSF cycling transcriptome for
 
 A further notable difference between forms is the clear distinction of S and G2M phases in PCFs, compared to much less apparent separation in BSFs when using both UMAP and independent pseudotime inference approaches. This indicates that the switch in gene expression associated with the S–G2 transition is much more discrete or tightly regulated in PCFs than BSFs. Comparing the expression patterns of shared CCR genes in each form (Figure 4) further highlights that expression patterns of the G1 and S phase genes are highly comparable between forms, whereas after S phase the timing of gene expression is far less synchronised. Human cells display tight regulation of the S–G2 transition, with the mitotic gene network only expressing after the end of S phase (Saldivar et al., 2018). Here, ATR kinase remains in its active form throughout S phase and cells only progress to G2, and upregulate the associated gene programme, upon ATR inactivation at the end of S to ensure complete genome replication prior to mitosis (Saldivar et al., 2018). In the absence of ATR, human cells activate DNA replication origin firing aberrantly, and undergo premature and defective mitosis (Eykelenboom et al., 2013). Interestingly, ATR activity in T. brucei is required for normal S phase progression in both PCFs (Marin et al., 2020) and BSFs (Black et al., 2020), yet the proteins’ role in the S–G2 transition differs dramatically between forms. In BSFs, ATR depletion is lethal and within 24 hr increases the proportions of S and G2M phase parasites, as well as aberrant cells resulting from premature mitosis and cytokinesis events, indicating a putatively similar role to human ATR (Black et al., 2020). Yet in PCFs, ATR knockdown has little effect on the cell cycle indicating PCFs mostly undergo the S–G2 transition and complete mitosis and cytokinesis correctly without ATR activity (Marin et al., 2020). Thus, as highlighted by scRNA-seq investigations here, PCFs and BSFs appear to, at least partially, regulate the S–G2 transition differently. Why BSFs would not require the same level, or mechanism, of regulation of this transition is currently unclear. Intriguingly however, even in the presence of persistent DNA damage BSFs will continue to replicate DNA and proliferate (Glover et al., 2019). As BSFs require DNA damage at VSG expression sites to trigger HR and VSG switching, it is plausible that BSF allows continuation to G2 in the presence of DNA damage acquired during S phase, which could then be repaired to facilitate VSG recombination event in subsequent phases. Indeed, Rad51 transcripts peak at the S–G2M transition, a pattern not observed in PCFs ( Figure 5—figure supplement 2c), and in BSFs Rad51 foci form mainly in G2/M phase parasites (Glover et al., 2008).
 
-## Conservation of cell cycles between life stages
+### Conservation of cell cycles between life stages
 
 Interrogating the shared and unique CCR transcriptomes is likely to unveil new insights into T. brucei cell cycle regulation, for example by assess expression patterns of cyclins. In T. brucei, 13 cyclins have been investigated and several cyclin–CRK-binding pairs have been documented (Hammarton, 2007; Lee and Li, 2021; Li, 2012; Wheeler et al., 2019). Notably, we find just two cyclins with strong CCR transcript dynamics in both forms, CYC8 and CYC6. CYC6 binds CRK3 (Hammarton et al., 2003) and is well characterised as essential for mitosis (Hammarton et al., 2003; Li and Wang, 2003; Hayashi and Akiyoshi, 2018) in both forms, correlating with expression levels detected here at the S–G2M transition. CYC8 instead clearly peaks during late G1, despite RNAi depletion leading to a slight increase in G2/M cells in PCFs (Li and Wang, 2003). Thus, although both cyclins have roles in G2/M, CYC8 peak earlier in the cell cycle and is followed by the gradual rise in CYC6. Despite these different patterns, transcripts of both cyclins are reported to be bound by the RNA-binding protein RBP10 (Mugo and Clayton, 2017), highlighting that steady-state RNA levels are likely regulated by multiple factors beyond the individual RBPs. Additionally, RBP10 is not expressed in PCF (Wurst et al., 2012; Dejung et al., 2016), and so how matching cyclic expression patterns are regulated in both forms is unclear. CYC8 transcripts were previously identified as enriched in G1 (Archer et al., 2011), yet protein levels were undetectable (Crozier et al., 2018). Protein levels of CYC6 have been documented as CCR (Crozier et al., 2018), yet previously, CYC6 transcripts were not recorded as CCR (Archer et al., 2011), exemplifying the power of scRNA-seq over bulk transcriptomics. ScRNA-seq analysis finds only a slight CYC9 transcript increase in G2M, and only in PCFs. Yet, in BSFs CYC9 transcript depletion results in a clear cytokinesis defeat (Monnerat et al., 2013). Thus, transcript FC does not necessarily correlate with functional significance, as was also noted when comparing CCR genes to cell cycle defects profiled by the genome-scale screen in BSFs (Marques et al., 2022). Results of CYC9 RNAi depletion in PCFs are currently conflicting, possibly due to differences in knockdown efficiency, as one study observed a substantial cell cycle arrest in G2/M (Li and Wang, 2003), while another saw no specific arrest in any cell cycle phase (Monnerat et al., 2013). In both forms CYC4 transcript levels dip in late G1 before rising again in S phase through to G2M, but only reached an FC >1.5 in BSFs. Interestingly, RNAi against CYC4 in PCF highlighted the cyclin’s role in the G1/S transition (Liu et al., 2013), again indicating transcript regulation does not predict phenotypic outcome. Finally, a novel putative cyclin, Tb427_110012500, was detected with CCR transcripts in BSF form only, where transcripts peak between early and late G1. This gene contains a cyclin N-terminal domain, but no functional analysis has been published. Of the remain nine documented cyclins (Hammarton, 2007; Lee and Li, 2021; Li, 2012) in T. brucei, none reached significance thresholds in either form.
 
-## Transcript and protein periodicity
+### Transcript and protein periodicity
 
 Lastly, we compared transcript and protein abundance levels across the cell cycle. In the human cell cycle, just 15% of CCR proteins are encoded by genes which also have CCR transcripts (Mahdessian et al., 2021). In this study, we also observed little correlation between transcript and protein regulation during the T. brucei cell cycle. Thus, for most genes the cyclic protein abundance patterns are the result of mostly translational, and post-translation processes. Even accounting for experimental differences in approaches, why so many transcripts show cyclic expression patterns without resulting in significant protein changes, especially in the absence of transcriptional control due to polycistronic transcription in T. brucei (Clayton, 2019; Clayton, 2016), remains a puzzling question across eukaryotes. Of those genes that were identified as CCR for both transcript and protein abundance, a relative delay was observed for the majority of genes. A time delay between peak transcript and proteins levels was also observed in human cells (Mahdessian et al., 2021). Such a delay may allow T. brucei to prepare for the subsequent phase by upregulating transcripts, after which translation can rapidly generate the required proteins. A similar observation can be made during T. brucei life cycle progression: stumpy BSFs upregulate hundreds of transcripts related to PCF biology (Briggs et al., 2021a; Kabani et al., 2009; Queiroz et al., 2009; Silvester et al., 2018; Naguleswaran et al., 2018) in preparation for differentiation, but not all upregulated genes are detectable in proteomic analysis of stumpy forms and instead appear after the rapid development of PCFs once the environmental trigger to differentiate has been received (Dejung et al., 2016; Gunasekera et al., 2012).
 
@@ -136,49 +200,269 @@ In summary, the experiments discussed here exploit cryopreservation to preserve 
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Trypanosoma brucei brucei)</td>
+      <td>Lister427 bloodstream forms (BSF)</td>
+      <td>R.McCulloch stocks (University of Glasgow)</td>
+      <td>NA</td>
+      <td>https://tryps.rockefeller.edu/trypsru2_cell_lines.html</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei brucei)</td>
+      <td>Lister427 procyclic form (PCF)</td>
+      <td>R.McCulloch stocks (University of Glasgow)</td>
+      <td>NA</td>
+      <td>https://tryps.rockefeller.edu/trypsru2_cell_lines.html</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Trypanosoma brucei brucei)</td>
+      <td>J1339</td>
+      <td>Rojas et al., 2019 Cell 176, 306–317.e16</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.8.2550 Ntag_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>ATCTGAAGAAAATAATATACAAGAGACAAGgtataatgcagacctgctgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.8.2550 Ntag_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>TTGCTGTGATGGTAAGGTGATGCGGAGCATactacccgatcctgatccag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.8.2550 Ntag_sgRNA</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>gaaattaatacgactcactataggGCGGGACACGCAACACTACAgttttagagctagaaatagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.8.2550_tag_check_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>ATCTGAAGAAAATAATATACAAGAGACAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.8.2550_tag_check_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>TTGCTGTGATGGTAAGGTGATGCGGAGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.6.3180_Ctag_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>TTACGAGCGGGACTGCGACGTTCGTGCCTGggttctggtagtggttccgg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.6.3180_Ctag_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>AAGCCTCTGCCGACACGCACATTTCTTCCGccaatttgagagacctgtgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.6.3180_Ctag_sgRNA</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>gaaattaatacgactcactataggCAATGTGCAGAAGCATAAATgttttagagctagaaatagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.6.3180_Ctag_check_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>TTACGAGCGGGACTGCGACGTTCGTGCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.6.3180_Ctag_check_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>AAGCCTCTGCCGACACGCACATTTCTTCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.11.15100_Ntag_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>CTACTTACCCACTGCAGTTTTTTTATTATTgtataatgcagacctgctgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.11.15100_Ntag_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>CTACTTACCCACTGCAGTTTTTTTATTATTgtataatgcagacctgctgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.11.15100_Ntag_sgRNA</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>gaaattaatacgactcactataggCGGTATTACATCAAGTAAAGgttttagagctagaaatagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.11.15100_Ntag_check_F</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>CTACTTACCCACTGCAGTTTTTTTATTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tb927.11.15100_Ntag_check_R</td>
+      <td>The study</td>
+      <td>PCR primers</td>
+      <td>ATCGGCAAAGTTCTTGTGGACAACGGCCAT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3′ v3.1</td>
+      <td>10× Genomics</td>
+      <td>SCR_019326</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID: SCR_001905</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://www.graphpad.com</td>
+      <td>RRID: SCR_002798</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td>https://rstudio.com/</td>
+      <td>RRID: SCR_000432</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger version 7</td>
+      <td>10× Genomics</td>
+      <td>N/A</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat version 4.1.0</td>
+      <td>Hao et al., 2021</td>
+      <td>RRID: SCR_007322</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Complete scRNA-seq analysis code</td>
+      <td>This paper, Zenodo</td>
+      <td>DOI: 10.5281/zenodo.7508131</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TritrypDB database</td>
+      <td>http://tritrypdb.org/tritrypdb/</td>
+      <td>N/A</td>
+      <td>TritrypDB database for searching genome</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10× Genomics Chromium Plus Genetic Analyzer</td>
+      <td>10× Genomics</td>
+      <td>SCR_019326</td>
+      <td>10× controller for cell sorting into droplets</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SDM-79 Medium</td>
+      <td>Life Technologies</td>
+      <td>Cat# RR110008P1</td>
+      <td>Medium for PCF culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HMI-9 Medium</td>
+      <td>Life Technologies</td>
+      <td>Cat# 074-90915</td>
+      <td>Medium for BSF culture</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 Trypanosoma brucei brucei Lister 427 BSF and PCF cell lines were sourced from the R. McCulloch lab (University of Glasgow). scRNA-seq data made from these cell lines showed no evidence of contamination with sequence reads from Mycoplasma and confirmed the identity of these lines as T. brucei Lister427.
 
-## T. brucei culture
+### T. brucei culture
 
 For scRNA-seq experiments, BSF Lister 427 were cultured in HMI-9 (Hirumi and Hirumi, 1989) with 20% foetal calf serum (FCS) at 37°C with 5% CO2. PCF Lister 427 were cultured in SDM-79 (Brun, 1979) supplemented with 10% FCS and 0.2% hemin, at 27°C in sealed flasks without CO2. A haemocytometer was used for all cell density and motility counts. For mNeonGreen tagging experiments Lister 427 BSF expressing Cas9 were used (gifted, R. McCulloch). These had been transfected with J1339 plasmid (Rojas et al., 2019), which allows constitutive expression of Cas9.
 
 For cryopreservation of both PCF and BSF, fresh 2× freezing media with FCS and 20% glycerol was used for each sample. Cell density was adjusted to 2 × 106/ml before parasite culture and 2× freezing media were mixed 1:1 by slow addition of freezing media to culture and gentle resuspension. Cells were aliquoted into 1 ml cryopreservation tubes, wrapped in cotton wall to prevent rapid cooling and incubated at −80°C for 24 hr. Tubes were then moved to LN2 storage. 1 ml samples were thawed and used immediately for scRNA-seq library preparation. Tubes were placed at room temperature (RT) for 5–10 min before incubating at 37°C (BSF) or 27°C (PCF), until a small ice crystal was left in the tube. Cells were moved to RT until completely defrosted then pipetted with wide-bore pipette tips into 50 ml falcons. 1 ml of pre-warmed media with FCS (37 or 27°C as appropriate) was added drop-wise to falcon with and swirled gently. A further 1 ml of media was used to rinse the cryotube with a wide-bore tip and added drop-wise to falcon. Increasing volumes of pre-warmed media was added to the cells (3, 6, and 12 ml) drop-wise, with at least 1 min pause between each addition. Cells were pelleted by centrifugation at 400 × g, for 10 min at RT, and the supernatant was poured off. 10 ml of media was then added dropwise to wash cells. Cells were centrifuged again and supernatant poured off, before resuspending in 1 ml of 1× phosphate-buffered saline (PBS) supplemented with 1% D-glucose (PSG) and 0.04% bovine serum albumin (BSA), by gentle pipetting. Cells were strained through a 40-μm filter into a 1.5 ml Eppendorf. Cells were centrifuged at 400 × g for 10 min at RT and supernatant was removed with a pipette. Cells were suspended in 150 µL of PSG + 0.04% BSA. Sample was diluted 1:1 and in PSG + 0.04% BSA and loaded to haemocytometer to determine cell concentration. Cell concentration was adjusted to 1000 cells/µl and stored on ice.
 
-## scRNA-seq sample preparation of fresh in vitro cultured T. brucei
+### scRNA-seq sample preparation of fresh in vitro cultured T. brucei
 
 For both BSF and PCF T. brucei, 1 × 106 cells were transferred to a falcon tube and were centrifuged at 400 × g for 10 min at RT. The supernatant was poured off and pre-warmed media added dropwise to the sample to wash cells. Cells were centrifuged again and supernatant poured off, before resuspending in 1 ml of PSG + 0.04% BSA, by gentle pipetting with wide-bore pipette tips. Cells were strained through a 40-μm filter into a 1.5-ml Eppendorf before centrifuging again at 400 × g for 10 min at RT removing the supernatant with a pipette. Cells were suspended in 150 µl of PSG + 0.04% BSA and concentration adjusted to 1000 cells/µl before storing on ice.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 For PCFs, parasites were wash in 1 ml of wash buffer (1× PBS with 5 mM of ethylenediaminetetraacetic acid (EDTA) and 1% fetal bovine serum) before fixing in 70% cold methanol (in wash buffer) over night. PCFs were washed again before resuspending in wash buffer supplemented with 10 µg/ml of propidium iodide (PI) and 10 µg/ml of RNaseA and incubating at 37°C for 45 min. BSFs were instead fixed with 1% formaldehyde in wash buffer at room temperature for 10 min, before washing and permeablising with 0.01% Triton X-100 in wash buffer at room temperature for 30 min. BSFs were then washed and stained with 10 μg/ml of PI and 100 μg/ml of RNaseA as for PCFs. Samples were filtered with a pluriStrainer Mini (40 um) before 10,000 events were captured with BD Celesta to measure PI-stained DNA content. For frozen samples, flow cytometry was performed with samples at the point of freezing for future scRNA-seq using the same method.
 
-## Chromium (10× Genomics) library preparation and Illumina sequencing
+### Chromium (10× Genomics) library preparation and Illumina sequencing
 
 As BSF and PCF are easily identified by known transcriptional differences (Siegel et al., 2010; Kabani et al., 2009; Queiroz et al., 2009; Jensen et al., 2014; Naguleswaran et al., 2018; Vasquez et al., 2014), the two forms were multiplexed. Fresh BSF and PCF were combined in approximate equal ratio into sample 1, and cryopreserved BSF and PCF into sample 2. 14,000 cells of each sample were loaded onto the Chromium Control and library preparation was performed with the Chromium Single Cell 3′ chemistry version 3.1 kits. (L. major parasites were additionally multiplexed with each sample as performed previously with kinetoplastids (Briggs et al., 2021a), but are not analysed here.) Libraries were sequences with Illumina NextSeq 2000, to generate 28 × 130 bp paired reads to a depth of 46,561 and 43,332 mean reads per cell for samples 1 and 2, respectively. Library preparation and sequencing were performed by Glasgow Polyomics.
 
-## Data mapping and count matrix generation
+### Data mapping and count matrix generation
 
 To improve the proportion of mapped reads attributed to a feature for transcript counting, the UTR annotation of the Lister 427 2018 reference genome (Müller et al., 2018) were extended. 2500 bp were added to the end each annotated coding region of the gtf file (unless the annotation overlapped with the next genomic feature in which case the UTR was extended to the base before the next feature). The same approach was used to edit the L. major Friedlin reference genome annotation (Ivens et al., 2005). Reads were mapped to both the T. brucei WT427 2018 and L. major Friedlin references and counts matrix generated with Cell ranger v 7. L. major transcriptomes and those of multiplets containing transcripts from both species were removed from analysis. The resulting count matrices and samples summaries are available in Supplementary file 1 and at Zenodo (10.5281/zenodo.7508131).
 
-## Sample de-multiplexing and QC filtering
+### Sample de-multiplexing and QC filtering
 
 To de-multiplex the PCF and BSF transcriptomes, a set of high confidence marker genes was defined from published bulk-RNA-seq studies where two replicates are available for DE analysis. DE analysis was performed using TriTrypDB (Amos et al., 2022) which implements DESeq2 (Love et al., 2014) to compare datasets. DE between Lister 427 PCFs and Lister427 monomorphic BSFs (Jensen et al., 2014), and slender pleomorphic BSF EATRO 1125 (clone AnTat 1.1) and experimentally derived early PCFs (Naguleswaran et al., 2018), identified 238 BSF and 221 PCF marker genes (FC >2, p-value <0.05, Supplementary file 1). As PCFs and BSFs were expected to be present at around a 1:1 ratio, marker genes detected in 20–70% of the cells were selected as markers (Supplementary file 1). This gave 157 and 50 high confidence marker genes for PCFs and BSFs, respectively. scGate (Andreatta et al., 2022) was used to gate BSF, PCF, multiplets containing a mix of each life cycle form using marker genes and transcriptomes not enriched for either form (Supplementary file 1). Once, demultiplexed into each sample (BSF fresh, BSF frozen, PCF fresh, and PCF frozen) cells were filtered for homogenous multiples with higher-than-average UMI and feature counts, and poor-quality transcriptomes with low UMI and feature counts (Figure 1A, B). Finally, cells expressing higher than average mitochondrial transcripts encoded on the kDNA maxi circle were removed, as these were likely generated from lysing cells (Figure 1C). Full code is available for all steps at Zenodo (10.5281/zenodo.7508131).
 
-## Live vs cryopreserved T. brucei DE analysis
+### Live vs cryopreserved T. brucei DE analysis
 
 The AverageExpression function from Seruat v4.1.0 (Hao et al., 2021) was used to average expression of each gene across cells for each sample. Fold changed was calculated as average expression for frozen over fresh samples for each life cycle form separately. Genes with average expression <0.05 counts in each fresh or frozen were excluded from fold change analysis. For PCA analysis, data were ‘pseudobulked’ by summing counts across all cells for each gene, per condition. DESeq2 v1.32.0 was used to log2 scale counts and generate PCA plot. DE analysis between individual transcriptomes of each condition was performed with Seurat v4 (Hao et al., 2021) function FindAllMarkers using MAST test (Finak et al., 2015). Only genes detected in 25% of cells in tested condition and with FC >1.5 between fresh and frozen were considered.
 
-## Data integration and dimensional reduction
+### Data integration and dimensional reduction
 
 Each sample was normalised and log2 transformed using Scran v1.22.1 (Lun et al., 2016), as described previously (Briggs et al., 2021a). The top 3000 variable genes were identified in each sample using two independent methods (Scran, which using log2 counts and Seurat applied to raw counts), and results compared to select common variable genes. 1939 genes were identified for BSF fresh, 2063 for BSF frozen, 2000 for PCF fresh, and 1924 for PCF frozen (Supplementary file 1). For data integration, variable genes for fresh and frozen samples were compared and selected using SelectIntegrationFeatures before filtering for only those with standardised variance over 1 in both conditions. BSF and PCF samples were considered separately, identifying 1652 and 1738 variable genes for integration, respectively (Supplementary file 1). Integration was performed with fast mutual nearest neighbours (FastMNN), which performs batch correction by finding MNN pairs of cells between conditions with mutually similar gene expression and calculating correction between these pairs. MNN does not assume equal population composition between sample and only performs correction between the overlapping subsets of cells (Haghverdi et al., 2018). FastMNN first performs a PCA across all cells and finds MNN between cells in this deduced dimensional space to increase speed and remove noise. The default of 50 dimensions was used to integrate fresh and frozen samples for BSF and PCF independently, and nearest-neighbours were identified for 5% of cells in each case. Integrated cells were visualised using UMAP (McInnes et al., 2018) applied to the first 30 dimensions calculated by FastMNN, implemented by the Seurat package.
 
-## Cell cycle phase labelling
+### Cell cycle phase labelling
 
 Cell cycle phases were inferred using marker gene identified with bulk RNA-seq previously (Archer et al., 2011). Syntenic orthologs for each phase marker (originally identified in the TRUE927 genome) were found of Lister 427 2018 reference genome via TritrypDB (Amos et al., 2022), and those detected in at least 10% of transcriptomes were selected for PCF and BSF integrated datasets independently. An ‘expression score’ for each phase was found of each using MetaFeature function from Seurat using markers. The ratio of a cell’s expression score over the mean expression scores across cells was calculated for each phase. The phase with the highest ratio was assigned to each cell. If a cell has an expression score <1 for all phase (i.e. no enrichment over the average phase score), the cell was assigned ‘unlabelled’.
 
-## Pseudotime inference and DE analysis
+### Pseudotime inference and DE analysis
 
 For pseudotime inference the autoencoder approach from Cyclum (Liang et al., 2020) was used for BSF and PCF separately. Counts for the same variable genes used for integration steps, described above, were first scaled before the model was trained using 25% of total cells and default parameters. The model was then applied to the whole dataset to infer pseudotime values for each cell. To allow clear visualisation and comparison between PCF and BSF cell cycles, pseudotime was scaled between 0 and 1 for each form and in the case of PCFs, pseudotime was shifted to set 0 to be at approximated early G1.
 
@@ -186,14 +470,14 @@ PseudotimeDE (Song and Li, 2021) was used for DE analysis over pseudotime. This 
 
 For calculating FC in gene expression over pseudotime, the smoothed expression of each gene was predicted from the GAM fitted by PseudotimeDE. The ratio of the maximum value in this prediction over the minimum value was calculated as the FC in the average expression over pseudotime. Genes were considered CCR if adjusted p-value was below 0.01, and FC was over 1.5, based on the detection of known CCR genes (Archer et al., 2011; Figure 2—figure supplement 2). Predicted models were also used when plotting smoothed expression. All GO term enrichment analysis was performed using the TriTrypDB resource (Amos et al., 2022).
 
-## Dataset comparison
+### Dataset comparison
 
 For comparison with proteomics (Crozier et al., 2018; Benz and Urbaniak, 2019), bulk transcriptomics (Archer et al., 2011), and genome-scale cell cycle defect RNAi screen (Marques et al., 2022), all of which used the TRUE927 reference genome (Berriman et al., 2005), syntenic orthologs were identified in the Lister 427 2018 reference (Müller et al., 2018) using TriTrypDB implementation of OrthoMCL (Li et al., 2003). For each study, CCR genes were retained as those selected by original authors.
 
-## Gene conservation analysis
+### Gene conservation analysis
 
 Orthogroups were identified for each CCR gene common to both BSF and PCF cell cycles, and orthologous protein sequences across 44 kinetoplastida proteomes were extracted from previous analysis (Oldrieve et al., 2022). A distance matrix was created from orthologous protein sequences with ClutalOmega (Sievers et al., 2011). Using the distance matrix, FastME (Lefort et al., 2015) was used to calculate the tree length for each orthogroup which contained four or more protein sequences.
 
-## Expression profiling of mNeonGreen tagged proteins
+### Expression profiling of mNeonGreen tagged proteins
 
 CRISPR/Cas9 editing was used to added epitope tags to three genes in BSF WT427/Ca9 (Tb427_080028700, Tb427_060036900, and Tb427_110169500). Gene-specific primers were used to amplify the donor fragment containing mNeonGreen and G418 resistance gene from a pPOTv7 plasmid as previously designed (Beneke et al., 2017; Beneke and Gluenz, 1971). Primers were designed using the TREU927 syntenic homolog and the LeishGEdit.net resource (Beneke et al., 2017; Beneke and Gluenz, 1971), and are provided in the Key resources table. 30 ng circular plasmid, 0.2 mM dNTPs, 2 µM each of gene-specific forward and reverse primers and 1 unit Phusion polymerase (New England Biolabs) were mixed in 1× HF Phusion buffer and 3% (vol/vol) dimethyl sulfoxide (DMSO), up 50 µl total volume with H2O. The PCR was run as follows: 5 min at 98°C, 40 cycles of 98°C for 30 s, 65°C for 30 s , and 72°C for 2 min 15 s, followed by a final extension at 72°C for 7 min. To amplify the sgRNA, 2 µM of gene-specific forward primer, 2 µM of the generic G00 primer (Beneke et al., 2017), 0.2 µM of dNTPs, 1 unit of Phusion Polymerase were mixed with 1× HF Phusion buffer (NEB), and made up to 50 µl total volume with H2O. The PCR was run as follows: 98°C for 30 s, followed 35 cycles of 98°C 10 s, 60°C for 30 s, and 72°C for 15 s. 2 µl of each product was run on 1% agarose gel to confirm expected size and the products were both ethanol precipitated and eluted into 5 µl of H2O. 1 × 107 WT427/Cas9 BSFs were transfected in 100 µl of transfection buffer (90 mM NaH2PO4, 5 mM KCl, 150 µM CaCl2 and 500 mM HEPES (sodium 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethane-1-sulfonate, pH 7.3) plus the 5 µl donor and 5 µl sgRNA, using the Nucleofector 2b Device (Lonaz) using program X-100. Parasites were serially diluted and aliquoted into 24-well plated. G418 selection was added after 16–24 hr at final concentration of 2 µg/ml and clones were recovered after 5–7 days. To confirm tag integration with PCR, genomic DNA was extracted from WT427 cas9 BSFs and three clonal derivatives for each gene using the DNeasy Blood and Tissue extraction kit (QIAGEN). 5 µM each of gene-specific forward and reverse primers and 30 ng of gDNA was mixed with 0.4 µl Phire Hot Start II polymerase, 1× Phire Reaction Buffer, 0.2 mM dNTPs and up to 20 µl H2O. The two-step PCR was run as follows: 30 s at 98°C, 30 cycles of 98°C for 5 s, and 72°C for 1 min, followed by a final extension at 72°C for 1 min. For fluorescence and flow cytometry assays, cells were harvested by centrifugation at 400 × g for 10 min, washed in 1× PBS and fixed in 1% formaldehyde for 10 min at room temperature. Cells were pelleted and washed again in 1× PBS to remove formaldehyde. For microscopy, cells were attached to a poly-L-lysine treated slide before 5 μl of Fluoromount G with DAPI (Cambridge Bioscience, Southern Biotech) was added and coverslip applied. For flow cytometry, formaldehyde fixed cells were resuspended in 1× PBS supplemented with 5 mM EDTA and 0.1 µg/ml DAPI and incubated on ice for 30 min. DAPI and mNeonGreen fluorescence were detected for 10,000 events per sample.

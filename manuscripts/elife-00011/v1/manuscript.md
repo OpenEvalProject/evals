@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.00011.001 A substantial fraction of the metazoan transcriptome undergoes circadian oscillations in many cells and tissues. Based on the transcription feedback loops important for circadian timekeeping, it is commonly assumed that this mRNA cycling reflects widespread transcriptional regulation. To address this issue, we directly measured the circadian dynamics of mouse liver transcription using Nascent-Seq (genome-wide sequencing of nascent RNA). Although many genes are rhythmically transcribed, many rhythmic mRNAs manifest poor transcriptional rhythms, indicating a prominent contribution of post-transcriptional regulation to circadian mRNA expression. This analysis of rhythmic transcription also showed that the rhythmic DNA binding profile of the transcription factors CLOCK and BMAL1 does not determine the transcriptional phase of most target genes. This likely reflects gene-specific collaborations of CLK:BMAL1 with other transcription factors. These insights from Nascent-Seq indicate that it should have broad applicability to many other gene expression regulatory issues. DOI: http://dx.doi.org/10.7554/eLife.00011.001
+A substantial fraction of the metazoan transcriptome undergoes circadian oscillations in many cells and tissues. Based on the transcription feedback loops important for circadian timekeeping, it is commonly assumed that this mRNA cycling reflects widespread transcriptional regulation. To address this issue, we directly measured the circadian dynamics of mouse liver transcription using Nascent-Seq (genome-wide sequencing of nascent RNA). Although many genes are rhythmically transcribed, many rhythmic mRNAs manifest poor transcriptional rhythms, indicating a prominent contribution of post-transcriptional regulation to circadian mRNA expression. This analysis of rhythmic transcription also showed that the rhythmic DNA binding profile of the transcription factors CLOCK and BMAL1 does not determine the transcriptional phase of most target genes. This likely reflects gene-specific collaborations of CLK:BMAL1 with other transcription factors. These insights from Nascent-Seq indicate that it should have broad applicability to many other gene expression regulatory issues.
 
 ## Introduction
 
@@ -27,81 +27,81 @@ To address the genome-wide contribution of transcriptional and post-transcriptio
 
 ## Results
 
-## Genome-wide analysis of transcription in the mouse liver using Nascent-Seq
+### Genome-wide analysis of transcription in the mouse liver using Nascent-Seq
 
 To address the regulation of genome-wide transcription, we analyzed mouse liver nascent RNA expression, that is, RNA being transcribed by RNA Polymerase II (Pol II) prior to 3′ end formation (from 12 independent samples in LD, 6 time points per day done twice; see analysis of rhythmic transcription in mouse liver section). To this end, nascent RNA was extracted from purified nuclei using the high salt/urea/detergent buffer originally described by Wuarin and Schibler (1994). A very similar sequencing strategy was recently applied by Smale, Black and colleagues to macrophage nascent RNA (Bhatt et al., 2012). We then prepared illumina libraries with standard protocols for high-throughput sequencing (Nascent-Seq; Carrillo Oesterreich et al., 2010; Khodor et al., 2011). Removal of rRNA was unnecessary as approximately 65–70% of the sequences uniquely mapped to the genome (Table 1).
 
-Seventy six percent of these uniquely mapped sequences map to introns (
+Seventy six percent of these uniquely mapped sequences map to introns (Figure 1A). This contrasts dramatically with more conventional RNA-Seq; it has minimal intron reads as it assays polyadenylated (pA) RNA and therefore predominantly mature (spliced) mRNA (Figure 1A). Intronic Nascent-Seq reads are also more abundant in mouse compared to Drosophila (76% vs 45%), reflecting longer intron size and less efficient mouse co-transcriptional splicing (Khodor et al., 2012; Khodor et al., 2011). Many genes exhibit a 5′ to 3′ gradient in the Nascent-Seq dataset, presumably reflecting nascent RNAs of different lengths attached to elongating Pol II (Figure 1B). In addition, Nascent-Seq signals frequently extend past the polyadenylation site, reflecting RNA not yet cleaved by the cleavage/polyadenylation specificity factor (CPSF) and/or RNA molecules still associated with Pol II after cleavage but prior to degradation by the 5′ to 3′ exoribonuclease Xrn2 (Figure 1C). These features are absent from standard RNA-Seq data, and indicate that Nascent-Seq predominantly detects nascent RNA molecules attached to elongating Pol II (Figure 1B,C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig1-v1.jpg)
 
-**Figure 1.:** (A): Distribution of high-throughput sequencing signal within introns (green), exons (blue) and intergenic regions (grey) for Nascent-Seq and RNA-Seq datasets. (B): Visualization of Nascent-Seq and RNA-Seq signal at chr4: 40,730,000–41,002,500. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left. Nascent-Seq signal exhibits increased intron signal and a 5ʹ to 3ʹ gradient signal (arrow). Moreover, differences between Nascent-Seq signal and RNA-Seq signal are observed for many genes (e.g., Bag1 and B4galt1). (C): Nascent-Seq signal (brown), but not RNA-Seq signal (red), extends past the annotated 3ʹend of the genes B4galt1 and Nfx1. (D): Gene ontology of genes with high Nascent-Seq and low RNA-Seq signals (and inversely) is indicative of RNA with short or long half-lives, respectively (see ‘Materials and methods’ for details). (E): Distribution of the Nascent-Seq/RNA-Seq signal ratio for the classes of genes enriched in (D). (F): Nascent-Seq/RNA-Seq signal ratio significantly correlates with mRNA half-lives (values from Sharova et al., 2009), and genes with high ratio display shorter half-lives and inversely. (G) and (H): Strategy used to determine the gene signal cut-off threshold used in our analysis. Variation of gene signal coming from the sequencing of a Nascent-Seq library (G; ZT8, replicate 1) sequenced in two Illumina flow-cell lanes was assessed by calculating the z-score (H). Less than 5% of the genes with a read per base pair superior to three exhibit a 1.3-fold gene signal variation. See ‘Materials and methods’ for more details.DOI: http://dx.doi.org/10.7554/eLife.00011.003
+**Figure 1.:** (A): Distribution of high-throughput sequencing signal within introns (green), exons (blue) and intergenic regions (grey) for Nascent-Seq and RNA-Seq datasets. (B): Visualization of Nascent-Seq and RNA-Seq signal at chr4: 40,730,000–41,002,500. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left. Nascent-Seq signal exhibits increased intron signal and a 5ʹ to 3ʹ gradient signal (arrow). Moreover, differences between Nascent-Seq signal and RNA-Seq signal are observed for many genes (e.g., Bag1 and B4galt1). (C): Nascent-Seq signal (brown), but not RNA-Seq signal (red), extends past the annotated 3ʹend of the genes B4galt1 and Nfx1. (D): Gene ontology of genes with high Nascent-Seq and low RNA-Seq signals (and inversely) is indicative of RNA with short or long half-lives, respectively (see ‘Materials and methods’ for details). (E): Distribution of the Nascent-Seq/RNA-Seq signal ratio for the classes of genes enriched in (D). (F): Nascent-Seq/RNA-Seq signal ratio significantly correlates with mRNA half-lives (values from Sharova et al., 2009), and genes with high ratio display shorter half-lives and inversely. (G) and (H): Strategy used to determine the gene signal cut-off threshold used in our analysis. Variation of gene signal coming from the sequencing of a Nascent-Seq library (G; ZT8, replicate 1) sequenced in two Illumina flow-cell lanes was assessed by calculating the z-score (H). Less than 5% of the genes with a read per base pair superior to three exhibit a 1.3-fold gene signal variation. See ‘Materials and methods’ for more details.
 
 Another feature was apparent in the comparison of Nascent-Seq and RNA-Seq: gene expression was often different between the two datasets. Some genes have a high ratio of Nascent-Seq to RNA-Seq signal (e.g., B4galt1, Figure 1B), whereas others have a low ratio (e.g., Bag1, Figure 1B). Genes with a high ratio (top 10% of all genes) are dramatically enriched for specific functions, namely, non-coding RNA (ncRNA), G-coupled protein receptors, regulation of transcription and chromatin organization (Figure 1D,E). Genes with a low ratio are enriched for genes involved in ribosome function and mitochondrial respiration (Figure 1D,E). Because these genes are associated with short or long mRNA half-lives, respectively, we compared the Nascent-Seq to RNA-Seq ratios of genes with their published mRNA half-lives (Sharova et al., 2009). Not surprisingly, genes with a high ratio have relatively short half-lives, and genes with low ratios have longer mRNA half-lives (Figure 1F). These data indicates that mRNA stability contributes to the wide range of Nascent-Seq to RNA-Seq ratios.
 
-## Analysis of rhythmic transcription in mouse liver
+### Analysis of rhythmic transcription in mouse liver
 
-To identify genes that are rhythmically transcribed, we performed two independent six time-points rhythms of mouse liver Nascent-Seq. We found that some genes exhibit very high amplitude rhythms, with no detectable signal at low time points (e.g.,
+To identify genes that are rhythmically transcribed, we performed two independent six time-points rhythms of mouse liver Nascent-Seq. We found that some genes exhibit very high amplitude rhythms, with no detectable signal at low time points (e.g., Npas2; Figure 2A). About 15% of expressed genes manifest transcriptional rhythms (p<0.05: 6.3%, strong rhythms; 8.9% medium-strength rhythms; see ‘Materials and methods’ for analysis details; Figure 2B). Phases of maximal transcription are heterogeneous yet not uniformly distributed; very few genes peak at ZT16-20 in the mid-late night (Figure 2C,D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-v1.jpg)
 
-**Figure 2.:** (A): Visualization of Npas2 Nascent-Seq signal at six time points of the light:dark cycle (first replicate). Npas2 Nascent-Seq signal is rhythmic and peaks at ZT20-ZT0, contrary to the signal within the adjacent gene Rpl31. (B): Quantification of the number of genes that are rhythmically transcribed in the mouse liver. Genes with more than three reads per base pair for at least one time point were included for the analysis. Genes are considered to be rhythmically transcribed if signal amplitude (Amp) is greater than 1.5, if signals for the 12 time points follow a sinusoid curve (F24 > 0.45) and if the F24 value is in the top 5% of all F24 values calculated after time points were permutated 10,000 times (p<0.05). A rhythm was considered to be strong (dark red) if F24 > 0.6 and Ampl > 1.75. (C): Heatmap representation of Nascent-Seq signal for the 963 genes that are rhythmically transcribed in the mouse liver. High expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1). (D): Expression phase of rhythmically expressed nascent RNA (n = 936) was separated by bins of 2 hr. Analysis of their distribution reveals that fewer genes are transcribed at ZT16-20. (E) and (F): Rhythmic Nascent-Seq signal was detected for many precursors of non-coding RNAs such as pri-miRNA (d, pri-miR122a) and long non-coding RNA(e, lin-ncRNAs BC019819, AK157581, BC049268, BC056646).DOI: http://dx.doi.org/10.7554/eLife.00011.00410.7554/eLife.00011.005Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.00011.005
+**Figure 2.:** (A): Visualization of Npas2 Nascent-Seq signal at six time points of the light:dark cycle (first replicate). Npas2 Nascent-Seq signal is rhythmic and peaks at ZT20-ZT0, contrary to the signal within the adjacent gene Rpl31. (B): Quantification of the number of genes that are rhythmically transcribed in the mouse liver. Genes with more than three reads per base pair for at least one time point were included for the analysis. Genes are considered to be rhythmically transcribed if signal amplitude (Amp) is greater than 1.5, if signals for the 12 time points follow a sinusoid curve (F24 > 0.45) and if the F24 value is in the top 5% of all F24 values calculated after time points were permutated 10,000 times (p<0.05). A rhythm was considered to be strong (dark red) if F24 > 0.6 and Ampl > 1.75. (C): Heatmap representation of Nascent-Seq signal for the 963 genes that are rhythmically transcribed in the mouse liver. High expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1). (D): Expression phase of rhythmically expressed nascent RNA (n = 936) was separated by bins of 2 hr. Analysis of their distribution reveals that fewer genes are transcribed at ZT16-20. (E) and (F): Rhythmic Nascent-Seq signal was detected for many precursors of non-coding RNAs such as pri-miRNA (d, pri-miR122a) and long non-coding RNA(e, lin-ncRNAs BC019819, AK157581, BC049268, BC056646).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000098984. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.006
+**Figure 2—figure supplement 1.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000098984. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000086813. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.007
+**Figure 2—figure supplement 2.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000086813. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000086771. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.008
+**Figure 2—figure supplement 3.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the long non-coding RNA (lncRNA) precursor ENSMUSG00000086771. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp4-v1.jpg)
 
-**Figure 2—figure supplement 4.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA pri-Mir17hg. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.009
+**Figure 2—figure supplement 4.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA pri-Mir17hg. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp5-v1.jpg)
 
-**Figure 2—figure supplement 5.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA ENSMUSG00000077856. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.010
+**Figure 2—figure supplement 5.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA ENSMUSG00000077856. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig2-figsupp6-v1.jpg)
 
-**Figure 2—figure supplement 6.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA ENSMUSG00000093077. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.011
+**Figure 2—figure supplement 6.:** Visualization of Nascent-Seq signal (brown; six time points of replicate 1) for the pri-miRNA ENSMUSG00000093077. Enlargement of pri-miRNA signal reveals that pri-miRNA transcription units are not well annotated, precluding a rigorous quantification of the signal. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 Protein-coding genes dominate the cycling Nascent-Seq dataset (>85%, data not shown), but it also contains genes encoding ncRNAs, for example, pri-miRNAs and long non-coding RNAs (lncRNA) (Figure 2E,F; Figure 2—figure supplement 1–6). As previously described (Gatfield et al., 2009), pri-miRNA 122a is robustly rhythmic (Figure 2E). However, rigorous quantitation of rhythmic ncRNA transcription is precluded by the poor annotation of these transcription units.
 
-## Transcriptional rhythms overlap poorly with rhythms in mRNA expression
+### Transcriptional rhythms overlap poorly with rhythms in mRNA expression
 
-To address the relationship of cycling transcription to cycling mRNAs, we assayed two independent six time-points profiles of pA RNA by RNA-Seq. The comparison with Nascent-Seq was restricted to genes that were sufficiently expressed in both datasets (n = 5454 genes; see ‘Materials and methods’ for details). Using the identical statistical analysis and cut-offs to determine rhythmicity, the fraction of rhythmic mRNA was higher than the fraction of rhythmic nascent RNA (22.1% and 15.1%, respectively;
+To address the relationship of cycling transcription to cycling mRNAs, we assayed two independent six time-points profiles of pA RNA by RNA-Seq. The comparison with Nascent-Seq was restricted to genes that were sufficiently expressed in both datasets (n = 5454 genes; see ‘Materials and methods’ for details). Using the identical statistical analysis and cut-offs to determine rhythmicity, the fraction of rhythmic mRNA was higher than the fraction of rhythmic nascent RNA (22.1% and 15.1%, respectively; Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig3-v1.jpg)
 
-**Figure 3.:** (A): Rhythmic gene expression was assessed as in Figure 2B for genes sufficiently expressed in both Nascent-Seq and RNA-Seq datasets. Four categories of rhythmically expressed genes were determined by comparing the Nascent-Seq and RNA-Seq datasets: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). (B): Heatmap representation of genes with rhythmic nascent RNA and mRNA expression (n = 342). Classification is based on the phase of nascent RNA oscillations, and each lane corresponds to one gene. (C): Double-plotted phase distribution of rhythmic nascent RNA expression (brown) and rhythmic mRNA expression (red) for genes of the R-R gene set. Both phases are highly correlated (r = 0.92). (D): Distribution of the difference between the phase of mRNA expression rhythm and the phase of nascent RNA expression rhythm for the 342 R-R genes. (E): Amplitude of mRNA expression rhythms are correlated with nascent RNA expression rhythms (r = 0.76). (F) and (G): Similar representation to (B) for rhythmically transcribed genes with no mRNA expression rhythms (C, n = 480), and genes that exhibit mRNA oscillations but no rhythms of transcription (D, n = 862). For all three heatmaps, high expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1).DOI: http://dx.doi.org/10.7554/eLife.00011.01210.7554/eLife.00011.013Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.00011.01310.7554/eLife.00011.014Figure 3—source data 2.DOI: http://dx.doi.org/10.7554/eLife.00011.014
+**Figure 3.:** (A): Rhythmic gene expression was assessed as in Figure 2B for genes sufficiently expressed in both Nascent-Seq and RNA-Seq datasets. Four categories of rhythmically expressed genes were determined by comparing the Nascent-Seq and RNA-Seq datasets: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). (B): Heatmap representation of genes with rhythmic nascent RNA and mRNA expression (n = 342). Classification is based on the phase of nascent RNA oscillations, and each lane corresponds to one gene. (C): Double-plotted phase distribution of rhythmic nascent RNA expression (brown) and rhythmic mRNA expression (red) for genes of the R-R gene set. Both phases are highly correlated (r = 0.92). (D): Distribution of the difference between the phase of mRNA expression rhythm and the phase of nascent RNA expression rhythm for the 342 R-R genes. (E): Amplitude of mRNA expression rhythms are correlated with nascent RNA expression rhythms (r = 0.76). (F) and (G): Similar representation to (B) for rhythmically transcribed genes with no mRNA expression rhythms (C, n = 480), and genes that exhibit mRNA oscillations but no rhythms of transcription (D, n = 862). For all three heatmaps, high expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1).
 
-There was also a notably poor overlap between the two rhythmic gene sets: only 41.6% of rhythmically transcribed genes also manifest rhythmic mRNA expression (R-R gene set; 342/822;
+There was also a notably poor overlap between the two rhythmic gene sets: only 41.6% of rhythmically transcribed genes also manifest rhythmic mRNA expression (R-R gene set; 342/822; Figure 3A–C). However, the mRNA phase of these R-R genes was highly correlated to the nascent RNA phase (r = 0.92; Figure 3C), and more than half (57%) of these genes exhibit a phase difference of less than 2 hr (195/342; Figure 3D). The amplitudes of the nascent RNA rhythms were also correlated with those of mRNA (r = 0.76; Figure 3E), indicating that transcriptional regulation dominates these R-R rhythms. Not surprisingly, almost all clock genes (Figure 4) and well-characterized clock-controlled genes (e.g., Nocturnin, Por, Alas1, Upp2, Usp2, Inmt, Nfil3, etc; Figure 3—source data 1) are in this R-R gene set.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig4-v1.jpg)
 
-**Figure 4.:** Clock genes nascent RNA levels (brown; time points every 4 hr starting at ZT0) and mRNA levels (red; time points every 4 hr starting at ZT2) from the Nascent-Seq and RNA-Seq datasets. Relative levels between nascent RNA and mRNA expression profiles are identical for all genes to allow direct comparison.DOI: http://dx.doi.org/10.7554/eLife.00011.015
+**Figure 4.:** Clock genes nascent RNA levels (brown; time points every 4 hr starting at ZT0) and mRNA levels (red; time points every 4 hr starting at ZT2) from the Nascent-Seq and RNA-Seq datasets. Relative levels between nascent RNA and mRNA expression profiles are identical for all genes to allow direct comparison.
 
-The other 58.4% of rhythmically transcribed genes (480/822) do not show robust mRNA expression (R-AR gene set;
+The other 58.4% of rhythmically transcribed genes (480/822) do not show robust mRNA expression (R-AR gene set; Figure 3A,F). A simple explanation is that the mRNA half-lives of these R-AR genes are relatively long and therefore mask the transcriptional oscillations. However, these genes do not have altered nascent RNA to mRNA ratios compared to the whole genome (Figure 5A) or reported longer mRNA half-lives (assessed using the dataset from Sharova et al., 2009; Figure 5B). These considerations suggest that other mechanisms account for the poor mRNA oscillations of this gene set (e.g., the rhythmic Nascent-Seq signal of 25 R-AR genes results from rhythmic transcription of an adjacent gene that reads into the R-AR gene; Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig5-v1.jpg)
 
-**Figure 5.:** (A): Nascent-Seq/RNA-Seq signal ratio (used as inferred half-life) is similar for the four categories of rhythmically expressed genes: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). (B): Similar as (A), using the RNA half-life values from Sharova et al., 2009. (C): Nascent-Seq rhythms of 25 of the 480 R-AR genes can be attributed to the rhythmic transcription of an adjacent gene. This applies to Sphk2 Nascent-Seq rhythm, which likely results from rhythmic Dbp nascent RNA signal that extend the 3ʹend of Dbp gene and read through Sphk2. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left. (D): Gene ontology of three categories of rhythmically expressed genes: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R).DOI: http://dx.doi.org/10.7554/eLife.00011.016
+**Figure 5.:** (A): Nascent-Seq/RNA-Seq signal ratio (used as inferred half-life) is similar for the four categories of rhythmically expressed genes: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). (B): Similar as (A), using the RNA half-life values from Sharova et al., 2009. (C): Nascent-Seq rhythms of 25 of the 480 R-AR genes can be attributed to the rhythmic transcription of an adjacent gene. This applies to Sphk2 Nascent-Seq rhythm, which likely results from rhythmic Dbp nascent RNA signal that extend the 3ʹend of Dbp gene and read through Sphk2. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left. (D): Gene ontology of three categories of rhythmically expressed genes: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R).
 
 The opposite comparison is based on genes with rhythmic mRNA expression, of which only 28.4% (342/1204) have rhythmic transcription that meets the cycling criteria (Figure 3A,G). This surprising conclusion was similar when the analysis was restricted to genes with the strongest mRNA rhythms (121/435) and indicates that most cycling mRNAs (862/1204) likely undergo post-transcriptional regulation. This might include the circadian regulation of nuclear RNA processing, export, translational regulation and/or mRNA turnover, as described for the few circadian genes shown to be regulated post-transcriptionally (Kojima et al., 2011; Staiger and Koster, 2011; Zhang et al., 2011). Gene ontology analysis of this arrhythmic transcription-rhythmic mRNA (AR-R) gene set did not reveal any striking enrichment of particular gene functions (Figure 5D).
 
-## Transcriptional variability contributes to rhythmic mRNA expression
+### Transcriptional variability contributes to rhythmic mRNA expression
 
-There is a peculiar feature of the large number of genes within this AR-R category: visualization of RNA expression with heatmap indicates that many of these transcriptionally ‘arrhythmic’ genes manifest elevated transcription at times that match their cycling mRNA peaks (
+There is a peculiar feature of the large number of genes within this AR-R category: visualization of RNA expression with heatmap indicates that many of these transcriptionally ‘arrhythmic’ genes manifest elevated transcription at times that match their cycling mRNA peaks (Figure 3G; note that the heatmaps show that the transcription peak of many genes matches the peak phase of mRNA cycling). Further inspection of all individual expression profiles confirmed this correlation: many genes have matching peak phases despite large variations in nascent RNA expression (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig6-v1.jpg)
 
-**Figure 6.:** (A) and (B): Nascent RNA levels (brown; time points every 4 hr starting at ZT0) and mRNA levels (red; time points every 4 hr starting at ZT2) from the Nascent-Seq and RNA-Seq datasets for six genes of the AR-R gene set. While the majority of the AR-R genes exhibit variable nascent RNA expression (A), some of them exhibit a relatively constant transcription when compared to mRNA expression (B). (C): Standard deviation (SD; calculated using the 12 time points and normalized to the mean) of nascent RNA expression is higher than the SD normalized to the mean of mRNA levels for most AR-R genes. (D) and (E): Higher transcriptional variability (SD) of arrhythmically transcribed genes is associated with higher occurrence of rhythmic mRNA expression (D), but not to nascent RNA expression levels (E). (F): Higher variability of transcription for the genes of the AR-R group is associated with increase amplitude of rhythms at both Nascent RNA (brown) and mRNA (red) level. Genes of the AR-R group (n = 862) were binned into five quintiles of equal size (q1–q5). (G): Heatmap representation of 86 AR-R genes that exhibit high level of transcription at only one time point, and with rhythmic mRNA expression. High expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1). (H): Nascent RNA levels (brown) and mRNA levels (red) for four AR-AR genes with variable nascent RNA expression that is not associated to rhythmic mRNA expression. (I): Number of predicted miRNA target sites of AR-R genes with high transcriptional variability (q1, top 20% of the 826 AR-R genes) and low transcriptional variability (q5, bottom 20%). (J): Gene ontology of AR-R genes with high transcriptional variability (top 25%) when compared to all AR-R genes. Significant enrichment (top) and depletion (bottom) of biological functions for these genes are displayed. Values correspond to the number of genes within this top 25% of genes, when compared to all AR-R genes.DOI: http://dx.doi.org/10.7554/eLife.00011.01710.7554/eLife.00011.018Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.00011.018
+**Figure 6.:** (A) and (B): Nascent RNA levels (brown; time points every 4 hr starting at ZT0) and mRNA levels (red; time points every 4 hr starting at ZT2) from the Nascent-Seq and RNA-Seq datasets for six genes of the AR-R gene set. While the majority of the AR-R genes exhibit variable nascent RNA expression (A), some of them exhibit a relatively constant transcription when compared to mRNA expression (B). (C): Standard deviation (SD; calculated using the 12 time points and normalized to the mean) of nascent RNA expression is higher than the SD normalized to the mean of mRNA levels for most AR-R genes. (D) and (E): Higher transcriptional variability (SD) of arrhythmically transcribed genes is associated with higher occurrence of rhythmic mRNA expression (D), but not to nascent RNA expression levels (E). (F): Higher variability of transcription for the genes of the AR-R group is associated with increase amplitude of rhythms at both Nascent RNA (brown) and mRNA (red) level. Genes of the AR-R group (n = 862) were binned into five quintiles of equal size (q1–q5). (G): Heatmap representation of 86 AR-R genes that exhibit high level of transcription at only one time point, and with rhythmic mRNA expression. High expression is displayed in yellow (z-score > 1), low expression in blue (z-score < 1). (H): Nascent RNA levels (brown) and mRNA levels (red) for four AR-AR genes with variable nascent RNA expression that is not associated to rhythmic mRNA expression. (I): Number of predicted miRNA target sites of AR-R genes with high transcriptional variability (q1, top 20% of the 826 AR-R genes) and low transcriptional variability (q5, bottom 20%). (J): Gene ontology of AR-R genes with high transcriptional variability (top 25%) when compared to all AR-R genes. Significant enrichment (top) and depletion (bottom) of biological functions for these genes are displayed. Values correspond to the number of genes within this top 25% of genes, when compared to all AR-R genes.
 
 To substantiate this variability in nascent RNA expression, we calculated the standard deviation normalized to the mean (SD) for every gene using the two 6 time-points profiles as 12 independent samples. The reasoning was that low variability expression between time points should result in a low SD. The SD was noticeably higher in the Nascent-Seq dataset than in the RNA-Seq dataset, indicating that the transcription of most AR-R genes is indeed variable compared to the mRNA-Seq dataset (Figure 6C; note that most points are to the right of the diagonal line). Higher variability of nascent RNA expression is also observed for other categories, including the AR-AR set (data not shown), suggesting that it is a common feature of transcription vs mRNA comparisons independent of circadian considerations.
 
@@ -115,23 +115,23 @@ About 20% of the AR-R genes are exceptions and exhibit higher variability at the
 
 The separation of these AR-R genes between genes with high or low transcriptional variability is therefore likely to be linked to different modes of gene expression regulation. Interestingly, this separation also reflects distinct biological functions, as AR-R genes with highly variable transcription were enriched for responsive genes (GO: response to stimulus) and metabolic genes (Figure 6J), indicating that their intrinsic transcriptional responsiveness is linked to their variable transcriptional profiles.
 
-## Regulation of transcription by CLK:BMAL1
+### Regulation of transcription by CLK:BMAL1
 
 Genes within the R-R gene set include clock genes and many well-characterized clock controlled genes (see above). Because a large fraction of them are directly targeted by the core clock, we asked how CLK:BMAL1 regulates the transcription of its target genes at the genome-wide level. We also took advantage of our Nascent-Seq dataset to establish whether the phase differences between rhythmic CLK:BMAL1 DNA binding and rhythmic target gene mRNA expression (Rey et al., 2011) reflect transcriptional or post-transcriptional regulation.
 
-To this end, we first performed a ChIP-Seq analysis of CLK and BMAL1 at a time of high DNA binding (ZT8). As expected, CLK and BMAL1 target many DNA binding sites in mouse liver (759 and 1579, respectively) and significantly overlap on 211 of these peaks (
+To this end, we first performed a ChIP-Seq analysis of CLK and BMAL1 at a time of high DNA binding (ZT8). As expected, CLK and BMAL1 target many DNA binding sites in mouse liver (759 and 1579, respectively) and significantly overlap on 211 of these peaks (Figure 7A). Although highly significant (chi-square test, p<0.0001), the rather low fraction may indicate competition between CLK:BMAL1 and NPAS2:BMAL1 for binding sites. Importantly, about 90% of these 211 peaks have been previously characterized as rhythmic BMAL1 DNA binding sites in mouse liver (Rey et al., 2011).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig7-v1.jpg)
 
-**Figure 7.:** (A) and (B): Visualization (A) and quantification (B) of BMAL1 ChIP-Seq, CLK ChIP-Seq and input signal at BMAL1 and CLK significant peaks (analysis using MACS algorithm). BMAL1 ChIP-Seq, CLK ChIP-Seq and Input signals were retrieved based on the location of the BMAL1 peaks (center ± 1kb, for CLK:BMAL1 peaks and BMAL1 only peaks) or the CLK peaks (center ± 1kb, for CLK only peaks). Normalization was performed on the entire datasets by calculating the z-score ((x − mean)/SD). Heatmap displays high expression in red and low expression in blue. Quantification (B) was performed by averaging the z-score by bins of 25 bp for all CLK:BMAL1 peaks (n = 211), BMAL1 only peaks (n = 1368) and CLK only peaks (n = 548). (C): Enrichment of e-boxes (perfect CACGTG in red, degenerated e-boxes [one nucleotide mismatch, in orange]) within ±500 bp of CLK:BMAL1, BMAL1 only and CLK only peak centers. (D): Motifs enriched within CLK:BMAL1 peaks, BMAL1 only peaks and CLK only peaks, as revealed by MEME analysis. (E)–(H): Visualization of BMAL1 ChIP-Seq (blue), CLK ChIP-Seq (green) and Nascent-Seq (brown; six time points of replicate 1) signals for Rev-Erbα (E), Per1 (F), Cry1 (G) and a cluster of 4 lncRNA (AK079377, AK007907, AK036974, AK087624) (H) targeted by CLK:BMAL1. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.DOI: http://dx.doi.org/10.7554/eLife.00011.019
+**Figure 7.:** (A) and (B): Visualization (A) and quantification (B) of BMAL1 ChIP-Seq, CLK ChIP-Seq and input signal at BMAL1 and CLK significant peaks (analysis using MACS algorithm). BMAL1 ChIP-Seq, CLK ChIP-Seq and Input signals were retrieved based on the location of the BMAL1 peaks (center ± 1kb, for CLK:BMAL1 peaks and BMAL1 only peaks) or the CLK peaks (center ± 1kb, for CLK only peaks). Normalization was performed on the entire datasets by calculating the z-score ((x − mean)/SD). Heatmap displays high expression in red and low expression in blue. Quantification (B) was performed by averaging the z-score by bins of 25 bp for all CLK:BMAL1 peaks (n = 211), BMAL1 only peaks (n = 1368) and CLK only peaks (n = 548). (C): Enrichment of e-boxes (perfect CACGTG in red, degenerated e-boxes [one nucleotide mismatch, in orange]) within ±500 bp of CLK:BMAL1, BMAL1 only and CLK only peak centers. (D): Motifs enriched within CLK:BMAL1 peaks, BMAL1 only peaks and CLK only peaks, as revealed by MEME analysis. (E)–(H): Visualization of BMAL1 ChIP-Seq (blue), CLK ChIP-Seq (green) and Nascent-Seq (brown; six time points of replicate 1) signals for Rev-Erbα (E), Per1 (F), Cry1 (G) and a cluster of 4 lncRNA (AK079377, AK007907, AK036974, AK087624) (H) targeted by CLK:BMAL1. Genes above the scale bar are transcribed from left to right and those below the scale bar are transcribed from right to left.
 
 CLK and BMAL1 sites overlap at their peak center, consistent with binding to DNA as a heterodimer, and they are enriched for the canonical consensus sequence CACGTG (Figure 7B,C) The data therefore indicate that almost all of the 184 direct target genes identified by the 211 CLK:BMAL1 DNA binding sites (Figure 6—source data 1) are bona fide direct target genes. They include the expected core clock genes (Figure 7E–G) as well as other interesting targets. There are for example 12 ncRNA genes, which include a cluster of four rhythmically transcribed ncRNAs (Figure 7H). These cycling ncRNAs suggest novel mechanisms by which CLK:BMAL1 impact circadian rhythms.
 
-Although CLK:BMAL1 target genes are significantly enriched for rhythmically transcribed genes (chi-square test, p<0.0001;
+Although CLK:BMAL1 target genes are significantly enriched for rhythmically transcribed genes (chi-square test, p<0.0001; Figure 8A,C), there is a large discrepancy between the phases of rhythmic BMAL1 DNA binding and those of rhythmic transcription. This is because BMAL1 binding is essentially uniform at ZT3-5, whereas the transcription peaks are much more broadly distributed (Figure 8A,B). Remarkably, this is also true for the core clock genes. Whereas a small number have the expected phase similar to that of CLK:BMAL1 DNA binding (Rev-Erbα, Dbp; Figure 7E), the transcription of most target genes is significantly delayed. They include Per1 (Figure 7F), Cry1 (Figure 7G) and Per2 (8E). As recently proposed for Cry1 (Ukai-Tadenuma et al., 2011), this general delay in the peak of rhythmic transcription may be due to a collaboration of CLK:BMAL1 with other transcription factors (Rev-erbα and Dbp in the case of Cry 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig8-v1.jpg)
 
-**Figure 8.:** (A): Heatmaps representing BMAL1 ChIP-Seq signal (from Rey et al., 2011), Nascent-Seq and RNA-Seq signal for CLK:BMAL1 target genes (six time points in duplicate). Genes were classified in four categories: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). High expression is displayed in yellow, low expression in blue. (B): Peak phase distribution of rhythmic BMAL1 DNA binding (blue, from Rey et al., 2011), of nascent RNA (black) and of mRNA (red) for the direct target genes that are rhythmically expressed at both the nascent RNA and mRNA levels. (C): Distribution of CLK:BMAL1 target genes within the 4 different classes of rhythmically expressed genes and its comparison to the genome-wide distribution. Rhythmic nascent RNA and mRNA: R-R; rhythmic nascent RNA only: R-AR; rhythmic mRNA only: AR-R; arrhythmic nascent RNA and mRNA: AR-AR. (D): qPCR quantification of Rev-Erbα, Per1, Per2 and Cry1 pre-mRNA every 4 hr throughout the day in wild-type (black, n = 4 per time points) and Bmal1−/− mice (blue, n = 3 per time points). Error bar: s.e.m. (E): Visualization of BMAL1 ChIP-Seq (blue), CLK ChIP-Seq (green), Nascent-Seq (brown; six time points of replicate 1), Pol II ChIP-Seq signal (purple) at ZT10 and ZT22 (from Feng et al., 2011) and strand-specific Nascent-Seq signal for Per2 (plus strand, top; minus strand, bottom). Per2 is rhythmically transcribed (minus strand) with a peak at ZT16. An antisense transcript is rhythmically transcribed to Per2 RNA (plus strand), peaking at ZT4.DOI: http://dx.doi.org/10.7554/eLife.00011.020
+**Figure 8.:** (A): Heatmaps representing BMAL1 ChIP-Seq signal (from Rey et al., 2011), Nascent-Seq and RNA-Seq signal for CLK:BMAL1 target genes (six time points in duplicate). Genes were classified in four categories: rhythmic nascent RNA and mRNA (R-R), rhythmic nascent RNA only (R-AR), rhythmic mRNA only (AR-R) and arrhythmic nascent RNA and mRNA (AR-AR). High expression is displayed in yellow, low expression in blue. (B): Peak phase distribution of rhythmic BMAL1 DNA binding (blue, from Rey et al., 2011), of nascent RNA (black) and of mRNA (red) for the direct target genes that are rhythmically expressed at both the nascent RNA and mRNA levels. (C): Distribution of CLK:BMAL1 target genes within the 4 different classes of rhythmically expressed genes and its comparison to the genome-wide distribution. Rhythmic nascent RNA and mRNA: R-R; rhythmic nascent RNA only: R-AR; rhythmic mRNA only: AR-R; arrhythmic nascent RNA and mRNA: AR-AR. (D): qPCR quantification of Rev-Erbα, Per1, Per2 and Cry1 pre-mRNA every 4 hr throughout the day in wild-type (black, n = 4 per time points) and Bmal1−/− mice (blue, n = 3 per time points). Error bar: s.e.m. (E): Visualization of BMAL1 ChIP-Seq (blue), CLK ChIP-Seq (green), Nascent-Seq (brown; six time points of replicate 1), Pol II ChIP-Seq signal (purple) at ZT10 and ZT22 (from Feng et al., 2011) and strand-specific Nascent-Seq signal for Per2 (plus strand, top; minus strand, bottom). Per2 is rhythmically transcribed (minus strand) with a peak at ZT16. An antisense transcript is rhythmically transcribed to Per2 RNA (plus strand), peaking at ZT4.
 
 To validate this interpretation, we assayed the pre-mRNA levels in Bmal1−/− mice of four clock genes that exhibit different phases of transcription in wild-type mice (Figure 8D). Only the levels of Rev-Erbα pre-mRNA in the mutant mice conform to expectation and are at trough levels of wild-type mice. The levels of Per1, Per2 and Cry1 pre-mRNAs in Bmal1−/− mice are higher than the trough of expression in wild-type mice, indicating that other transcriptional regulators are indeed important for the transcription of these three clock genes (Figure 8D). This notion is also supported by the enrichment of other transcription factor motifs such as HNF3/FOXA1, SP1 and E4BP4 adjacent to CLK:BMAL1 binding sites (Figure 7D).
 
@@ -139,11 +139,11 @@ Notably, Per2 has a prominent anti-sense transcript at times of low Per2 sense t
 
 ## Discussion
 
-Rhythmic mRNA expression is a hallmark of circadian biology and commonly assumed to be a consequence of rhythmic transcription. However, the application here of Nascent-Seq to genome-wide mouse liver transcriptional rhythms indicates that about 70% of the genes that exhibit rhythmic mRNA expression do not have robust transcriptional rhythms (AR-R category), suggesting that post-transcriptional mechanisms are important for the generation of robust mRNA rhythms. Yet the transcription of most AR-R genes is variable, with elevated levels coinciding with the peak of the rhythmic mRNA profile. This suggests that post-transcriptional events buffer variable transcriptional output to generate robust and reproducible rhythms of mRNA expression (
+Rhythmic mRNA expression is a hallmark of circadian biology and commonly assumed to be a consequence of rhythmic transcription. However, the application here of Nascent-Seq to genome-wide mouse liver transcriptional rhythms indicates that about 70% of the genes that exhibit rhythmic mRNA expression do not have robust transcriptional rhythms (AR-R category), suggesting that post-transcriptional mechanisms are important for the generation of robust mRNA rhythms. Yet the transcription of most AR-R genes is variable, with elevated levels coinciding with the peak of the rhythmic mRNA profile. This suggests that post-transcriptional events buffer variable transcriptional output to generate robust and reproducible rhythms of mRNA expression (Figure 9). A similar Nascent-Seq vs RNA-Seq strategy for Drosophila head RNA (Joe Rodriguez and Michael Rosbash, personal communication) and a very recently published paper based on a different strategy for assessing liver transcriptional rhythms (Koike et al., 2012) come to a generally similar conclusion, namely, a widespread contribution of post-transcriptional regulation to circadian mRNA cycling.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/00011/elife-00011-fig9-v1.jpg)
 
-**Figure 9.:** Although rhythmic transcription plays a major role for approximately 30% of the genes that exhibit rhythmic mRNA expression, post-transcriptional events significantly contribute to the generation of mRNA rhythms for the majority of genes (∼70%). Many post-transcriptional cyclers exhibit highly variable transcription that is buffered to generate robust rhythmic mRNA expression. Few genes exhibit a relatively constant transcription when compared to mRNA expression. These post-transcriptional events may include roles for RNA binding proteins and miRNAs to regulate RNA stability, 3′ end formation and nuclei export.DOI: http://dx.doi.org/10.7554/eLife.00011.021
+**Figure 9.:** Although rhythmic transcription plays a major role for approximately 30% of the genes that exhibit rhythmic mRNA expression, post-transcriptional events significantly contribute to the generation of mRNA rhythms for the majority of genes (∼70%). Many post-transcriptional cyclers exhibit highly variable transcription that is buffered to generate robust rhythmic mRNA expression. Few genes exhibit a relatively constant transcription when compared to mRNA expression. These post-transcriptional events may include roles for RNA binding proteins and miRNAs to regulate RNA stability, 3′ end formation and nuclei export.
 
 Relevant mechanisms likely include RNA stability as well as other RNA processing events, as suggested in other systems such as the regulation of gene expression in Arabidopsis mitochondria (Giege et al., 2000) and after T-cell activation (Cheadle et al., 2005). Because the half-lives of nascent transcripts are generally much shorter than those of mRNA (Griffiths-Jones, 2007; Mattick, 2009; Mercer et al., 2009; Wang and Chang, 2011), a short burst of transcription can result in elevated mRNA expression that lasts several hours, as has been shown in systems involving an acute inflammatory response (Cheadle et al., 2005; Hao and Baltimore, 2009). However, generic mRNA stability cannot account for this buffering, as many genes with arrhythmic but variable transcription do not exhibit rhythmic mRNA expression (Figure 6H). This suggests that the post-transcriptional buffering is clock-controlled and selective for specific genes.
 
@@ -159,19 +159,19 @@ In summary, the application of Nascent-Seq and RNA-Seq to mammalian circadian ge
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 3- to 6-month-old male mice housed in a 12 hr-light:12 hr-darkness (LD12:12) schedule were used. Wild-type mice (C57BL/6 strain) and Bmal1−/− mice (originally from Christopher A Bradfield; Bunger et al., 2000) were used. All experiments were performed in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and approved by the Brandeis Institutional Animal Care and Use Committee (IACUC protocol #0809-03).
 
-## Isolation of nascent RNA
+### Isolation of nascent RNA
 
 Mice housed in LD12:12 were sacrificed every 4 hr (ZT0, 4, 8, 12, 16 and 20) by isoflurane anesthesia followed by decapitation. Mouse liver was then quickly removed and homogenized in 3.5 ml of 1× PBS and 3.5 ml of homogenization buffer (2.2 M sucrose, 10 mM Hepes pH 7.6, 15 mM KCl, 2 mM EDTA, 1× protease inhibitor cocktail [Roche, Basel, Switzerland], 0.15 mM spermine, 0.5 M spermidine, 0.5 mM DTT) with a dounce homogenizer (six strokes loose pestle, four strokes tight pestle). The liver homogenate was then mixed with 21.5 ml of homogenization solution and layered on the top of a 10 ml ice-cold cushion solution (2.05 M sucrose, 10 mM Hepes pH 7.6, 10% glycerol, 15 mM KCl, 2 mM EDTA, 1× protease inhibitor cocktail [Roche, Basel, Switzerland], 0.15 mM spermine, 0.5 M spermidine, 0.5 mM DTT) and centrifuged for 45 min at 2°C at 24,000 rpm (100,000×g) using a Bechmann SW27 rotor. Nuclei were resuspended in 1 ml of 20 mM Hepes pH 7.6, 150 mM NaCl, 2 mM EDTA, 1× protease inhibitor cocktail (Roche, Basel, Switzerland), 0.5 mM PMSF, 1 mM DTT, 0.5 U/ml of RNAseOUT/SUPERase-In (Invitrogen/Ambion), homogenized using a 1 ml dounce homogenizer (three times with loose pestle, two times with tight pestle), and divided into three samples of equal volume. One volume of 2× NUN buffer (50 mM Hepes pH 7.6, 2 M Urea, 2% NP-40, 600 mM NaCl, 2 mM DTT, 1× protease inhibitor cocktail [Roche, Basel, Switzerland], 0.5 mM PMSF, 0.5 U/ml of SUPERase-In [Ambion, Carlsbad, California]) was then added drop-by-drop while gently vortexing (level 2). Samples were left on ice for 20 min, then centrifuged at 24,000 rpm for 10 min at 4°C. The supernatant was removed and 1 ml of Trizol (Invitrogen, Carlsbad, California) was added to the DNA pellet. Samples were then incubated at 65°C for 15 min, and DNA pellet was then resuspended by gentle pipetting. Nascent RNA was then extracted using standard Trizol RNA extraction (Invitrogen, Carlsbad, California).
 
-## Isolation of total RNA
+### Isolation of total RNA
 
 Mice housed in LD12:12 were sacrificed by isoflurane anesthesia followed by decapitation every 4 hr (ZT2, 6, 10, 14, 18 and 22). Mouse liver was then quickly removed and cut into small pieces that were frozen on dry ice. Total RNA was extracted using standard Trizol extraction (Invitrogen, Carlsbad, California).
 
-## Generation of Nascent-Seq and mRNA-Seq libraries
+### Generation of Nascent-Seq and mRNA-Seq libraries
 
 Nascent RNA was first DNase-treated with TURBO DNase (Ambion, Carlsbad, California) using manufacturer's recommendation. Polyadenylated RNA was then removed from the nascent RNA using Dynabeads mRNA direct kit (Invitrogen, Carlsbad, California) following manufacturer's recommendations, and nascent RNA was precipitated (ethanol precipitation).
 
@@ -181,7 +181,7 @@ Strand-specific libraries were processed as above except for the following modif
 
 RNA-Seq libraries (e.g., mRNA) were made using Truseq RNA sample kit (Illumina, San Diego, California) following manufacturer's recommendations.
 
-## CLK and BMAL1 chromatin immunoprecipitation
+### CLK and BMAL1 chromatin immunoprecipitation
 
 Adult mice housed in LD12:12 were sacrificed at ZT8 by isoflurane anesthesia followed by decapitation. Mouse liver was then quickly removed and homogenized in 3.5 ml of 1× PBS supplemented with 1% formaldehyde. After 10 min incubation at room temperature, cross-linking was stopped by mixing liver homogenate with 25 ml of ice-cold quenching solution (2.2 M sucrose, 150 mM glycine, 10 mM Hepes pH 7.6, 15 mM KCl, 2 mM EDTA, 1× protease inhibitor cocktail [Roche, Basel, Switzerland], 0.15 mM spermine, 0.5 M spermidine, 0.5 mM DTT). Homogenate was then layered on top of a 10 ml ice-cold sucrose cushion (2.05 M sucrose, 125 mM glycine, 10 mM Hepes pH 7.6, 10% glycerol, 15 mM KCl, 2 mM EDTA, 1× protease inhibitor cocktail [Roche], 0.15 mM spermine, 0.5 M spermidine, 0.5 mM DTT) and centrifuged for 30 min at 2°C and 24,000 rpm (100,000×g) using a Bechmann SW27 rotor. Nuclei were resuspended in 1 ml of 20 mM Hepes pH 7.6, 150 mM NaCl, 2 mM EDTA and sedimented at 1500×g for 1 min. Washed nuclei were resuspended in 1.2 ml sonication buffer (20 mM Hepes pH 7.6, 1% SDS, 150 mM NaCl, 2 mM EDTA) and sonicated on ice using a Fisherbrand Sonic Dismembranator at setting 2 (57 W) for 5 × 15 s to obtain chromatin fragments of about 500–1000 bp in length. The resulting chromatin was centrifuged at 15,000×g for 10 min and the resulting supernatant was aliquoted in 200 μl samples for immunoprecipitation and 25 μl samples for input.
 
@@ -191,23 +191,403 @@ Following the overnight incubation, beads were washed once with IP buffer. The c
 
 The resulting supernatant was removed, supplemented with 200 μl of TE and 8 μl of 1 mg/ml RNAse A (Ambion Cat #2271) and incubated at 37°C for 30 min. Then, 4 μl of 10 mg/ml proteinase K was added and samples were incubated at 55°C for another 2 hr. DNA was then isolated with PCR purification kit (Qiagen) and eluted with 40 μl of elution buffer.
 
-## Generation of Illumina ChIP-seq libraries
+### Generation of Illumina ChIP-seq libraries
 
 BMAL1, CLK and input libraries were made from ChIPs performed from the same mouse liver extract. ChIP-seq libraries were made as described by Schmidt et al. (2009). Size-selected libraries of 200–300 bp length were used for Illumina deep-sequencing, whereas libraries with a 300–650 bp length were used for qPCR validation of the quality of the ChIP-seq libraries.
 
-## High-throughput sequencing of Illumina libraries
+### High-throughput sequencing of Illumina libraries
 
 High-throughput sequencing has been performed as follow:- ChIP-seq libraries: BMAL1, CLK and Input ChIP-seq libraries were sequenced using an Illumina Genome Analyzer (GAII) with a sequencing length of 36 nt. To increase depth coverage, libraries were sequenced on multiple lanes (BMAL1: four lanes, CLK: five lanes and Input: three lanes).- Nascent-Seq libraries: libraries (12 samples corresponding to two independent six-time points rhythms) were sequenced using an Illumina Genome Analyzer (GAII) with a sequencing length of 80 nt. Both replicates of the ZT8 and ZT20 time points were sequenced on two lanes and all other samples on one lane.- Nascent-Seq libraries, strand-specific: libraries (six samples corresponding to the first replicate of the six-time points rhythm) were generated using bar-coded adaptors, mixed in an equimolar ratio and sequenced on two lanes using a HiSeq2000 (Illumina) with a sequencing length of 101 nt.- RNA-Seq libraries: libraries (12 samples corresponding to two independent six-time points rhythms) were generated using bar-coded adaptors, mixed in an equimolar ratio and sequenced on two lanes using a HiSeq2000 (Illumina) with a sequencing length of 101 nt.
 
-High-throughput sequencing has been performed following manufacturer recommendations and 8–12 pmol of libraries were hybridized to each lane of the flow-cells. Data were extracted and processed following Illumina recommendations. Sequences were aligned to the mouse genome (UCSC version mm9 database). Number of the sequences obtained for each library can be found in Table 1. Datasets are deposited on the Gene Expression Omnibus database under the accession number GSE36916 (GEO, http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36916).10.7554/eLife.00011.022Table 1.Number of sequences and statistics for the different sequencing datasetsDOI: http://dx.doi.org/10.7554/eLife.00011.022Index numberBarcodeNumber of sequences (fastq file)Number of uniquely mapped sequencesPercentage of uniquely mapped sequencesNormaliz. factorChIP-Seq librariesInput——39,214,69618,846,30348.1%—CLK——75,944,49537,371,04749.2%—BMAL1——60,952,29328,920,75447.5%—Nascent-Seq librariesNorm. 40 mRep1_ZT0——27,845,32018,319,01165.8%2.184Rep1_ZT4——30,088,98120,931,03869.6%1.911Rep1_ZT8——57,719,17439,567,60968.6%1.011Rep1_ZT12——29,442,24419,485,10266.2%2.053Rep1_ZT16——27,645,10218,385,66866.5%2.176Rep1_ZT20——50,331,24234,703,72769.0%1.152Rep2_ZT0——30,243,85621,014,08769.5%1.903Rep2_ZT4——30,162,51421,082,49869.9%1.897Rep2_ZT8——51,471,47736,118,06870.2%1.107Rep2_ZT12——27,304,92117,815,97165.3%2.245Rep2_ZT16——27,196,80519,077,43370.2%2.097Rep2_ZT20——51,105,23633,547,43965.7%1.192RNA-Seq librariesNorm. 40 mRep1_ZT22CGATGT13,031,4968,693,55566.7%4.601Rep1_ZT64TGACCA13,197,07810,214,58077.4%3.916Rep1_ZT105ACAGTG13,479,6369,916,77473.6%4.034Rep1_ZT146GCCAAT10,366,7027,497,38672.3%5.335Rep1_ZT187CAGATC13,147,6499,600,12573.0%4.167Rep1_ZT2212CTTGTA11,182,7568,233,81573.6%4.858Rep2_ZT213AGTCAA14,645,2639,876,35967.4%4.050Rep2_ZT614AGTTCC15,836,01312,270,33877.5%3.260Rep2_ZT1015ATGTCA15,123,72611,507,85676.1%3.476Rep2_ZT1416CCGTCC12,127,1028,594,60970.9%4.654Rep2_ZT1818GTCCGC12,903,6789,512,76573.7%4.205Rep2_ZT2219GTGAAA13,438,8739,592,40471.4%4.170Strand-specific Nascent-Seq librariesNorm. 40 mRep1_ZT02CGATGT34,386,62215,930,80146.3%2.511Rep1_ZT44TGACCA45,356,90624,224,15153.4%1.651Rep1_ZT85ACAGTG44,309,21624,275,35754.8%1.648Rep1_ZT126GCCAAT49,118,10422,882,16346.6%1.748Rep1_ZT167CAGATC49,535,73821,835,60544.1%1.832Rep1_ZT2012CTTGTA54,905,00532,586,39659.4%1.228
+High-throughput sequencing has been performed following manufacturer recommendations and 8–12 pmol of libraries were hybridized to each lane of the flow-cells. Data were extracted and processed following Illumina recommendations. Sequences were aligned to the mouse genome (UCSC version mm9 database). Number of the sequences obtained for each library can be found in Table 1. Datasets are deposited on the Gene Expression Omnibus database under the accession number GSE36916 (GEO, http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36916).
 
-## Analysis of Nascent-Seq and RNA-Seq datasets
+**Table 1.**
+ Number of sequences and statistics for the different sequencing datasets
 
-## Alignment to the mouse genome (mm9 version)
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Index number</th>
+      <th>Barcode</th>
+      <th>Number of sequences (fastq file)</th>
+      <th>Number of uniquely mapped sequences</th>
+      <th>Percentage of uniquely mapped sequences</th>
+      <th>Normaliz. factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ChIP-Seq libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Input</td>
+      <td>—</td>
+      <td>—</td>
+      <td>39,214,696</td>
+      <td>18,846,303</td>
+      <td>48.1%</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>CLK</td>
+      <td>—</td>
+      <td>—</td>
+      <td>75,944,495</td>
+      <td>37,371,047</td>
+      <td>49.2%</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>BMAL1</td>
+      <td>—</td>
+      <td>—</td>
+      <td>60,952,293</td>
+      <td>28,920,754</td>
+      <td>47.5%</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Nascent-Seq libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Norm. 40 m</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>27,845,320</td>
+      <td>18,319,011</td>
+      <td>65.8%</td>
+      <td>2.184</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT4</td>
+      <td>—</td>
+      <td>—</td>
+      <td>30,088,981</td>
+      <td>20,931,038</td>
+      <td>69.6%</td>
+      <td>1.911</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT8</td>
+      <td>—</td>
+      <td>—</td>
+      <td>57,719,174</td>
+      <td>39,567,609</td>
+      <td>68.6%</td>
+      <td>1.011</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT12</td>
+      <td>—</td>
+      <td>—</td>
+      <td>29,442,244</td>
+      <td>19,485,102</td>
+      <td>66.2%</td>
+      <td>2.053</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT16</td>
+      <td>—</td>
+      <td>—</td>
+      <td>27,645,102</td>
+      <td>18,385,668</td>
+      <td>66.5%</td>
+      <td>2.176</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT20</td>
+      <td>—</td>
+      <td>—</td>
+      <td>50,331,242</td>
+      <td>34,703,727</td>
+      <td>69.0%</td>
+      <td>1.152</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>30,243,856</td>
+      <td>21,014,087</td>
+      <td>69.5%</td>
+      <td>1.903</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT4</td>
+      <td>—</td>
+      <td>—</td>
+      <td>30,162,514</td>
+      <td>21,082,498</td>
+      <td>69.9%</td>
+      <td>1.897</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT8</td>
+      <td>—</td>
+      <td>—</td>
+      <td>51,471,477</td>
+      <td>36,118,068</td>
+      <td>70.2%</td>
+      <td>1.107</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT12</td>
+      <td>—</td>
+      <td>—</td>
+      <td>27,304,921</td>
+      <td>17,815,971</td>
+      <td>65.3%</td>
+      <td>2.245</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT16</td>
+      <td>—</td>
+      <td>—</td>
+      <td>27,196,805</td>
+      <td>19,077,433</td>
+      <td>70.2%</td>
+      <td>2.097</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT20</td>
+      <td>—</td>
+      <td>—</td>
+      <td>51,105,236</td>
+      <td>33,547,439</td>
+      <td>65.7%</td>
+      <td>1.192</td>
+    </tr>
+    <tr>
+      <td>RNA-Seq libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Norm. 40 m</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT2</td>
+      <td>2</td>
+      <td>CGATGT</td>
+      <td>13,031,496</td>
+      <td>8,693,555</td>
+      <td>66.7%</td>
+      <td>4.601</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT6</td>
+      <td>4</td>
+      <td>TGACCA</td>
+      <td>13,197,078</td>
+      <td>10,214,580</td>
+      <td>77.4%</td>
+      <td>3.916</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT10</td>
+      <td>5</td>
+      <td>ACAGTG</td>
+      <td>13,479,636</td>
+      <td>9,916,774</td>
+      <td>73.6%</td>
+      <td>4.034</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT14</td>
+      <td>6</td>
+      <td>GCCAAT</td>
+      <td>10,366,702</td>
+      <td>7,497,386</td>
+      <td>72.3%</td>
+      <td>5.335</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT18</td>
+      <td>7</td>
+      <td>CAGATC</td>
+      <td>13,147,649</td>
+      <td>9,600,125</td>
+      <td>73.0%</td>
+      <td>4.167</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT22</td>
+      <td>12</td>
+      <td>CTTGTA</td>
+      <td>11,182,756</td>
+      <td>8,233,815</td>
+      <td>73.6%</td>
+      <td>4.858</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT2</td>
+      <td>13</td>
+      <td>AGTCAA</td>
+      <td>14,645,263</td>
+      <td>9,876,359</td>
+      <td>67.4%</td>
+      <td>4.050</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT6</td>
+      <td>14</td>
+      <td>AGTTCC</td>
+      <td>15,836,013</td>
+      <td>12,270,338</td>
+      <td>77.5%</td>
+      <td>3.260</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT10</td>
+      <td>15</td>
+      <td>ATGTCA</td>
+      <td>15,123,726</td>
+      <td>11,507,856</td>
+      <td>76.1%</td>
+      <td>3.476</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT14</td>
+      <td>16</td>
+      <td>CCGTCC</td>
+      <td>12,127,102</td>
+      <td>8,594,609</td>
+      <td>70.9%</td>
+      <td>4.654</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT18</td>
+      <td>18</td>
+      <td>GTCCGC</td>
+      <td>12,903,678</td>
+      <td>9,512,765</td>
+      <td>73.7%</td>
+      <td>4.205</td>
+    </tr>
+    <tr>
+      <td>Rep2_ZT22</td>
+      <td>19</td>
+      <td>GTGAAA</td>
+      <td>13,438,873</td>
+      <td>9,592,404</td>
+      <td>71.4%</td>
+      <td>4.170</td>
+    </tr>
+    <tr>
+      <td>Strand-specific Nascent-Seq libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Norm. 40 m</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT0</td>
+      <td>2</td>
+      <td>CGATGT</td>
+      <td>34,386,622</td>
+      <td>15,930,801</td>
+      <td>46.3%</td>
+      <td>2.511</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT4</td>
+      <td>4</td>
+      <td>TGACCA</td>
+      <td>45,356,906</td>
+      <td>24,224,151</td>
+      <td>53.4%</td>
+      <td>1.651</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT8</td>
+      <td>5</td>
+      <td>ACAGTG</td>
+      <td>44,309,216</td>
+      <td>24,275,357</td>
+      <td>54.8%</td>
+      <td>1.648</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT12</td>
+      <td>6</td>
+      <td>GCCAAT</td>
+      <td>49,118,104</td>
+      <td>22,882,163</td>
+      <td>46.6%</td>
+      <td>1.748</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT16</td>
+      <td>7</td>
+      <td>CAGATC</td>
+      <td>49,535,738</td>
+      <td>21,835,605</td>
+      <td>44.1%</td>
+      <td>1.832</td>
+    </tr>
+    <tr>
+      <td>Rep1_ZT20</td>
+      <td>12</td>
+      <td>CTTGTA</td>
+      <td>54,905,005</td>
+      <td>32,586,396</td>
+      <td>59.4%</td>
+      <td>1.228</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis of Nascent-Seq and RNA-Seq datasets
+
+#### Alignment to the mouse genome (mm9 version)
 
 Sequences (fastq format) were first mapped with tophat (Trapnell et al., 2009) using the following criteria: -m 1 -g 1 --microexonsearch --no-closure-search -I 500000 (command line: tophat -m 1 -F 0 -g 1 --microexon-search --no-closure-search -G ../exon20110528mm.gtf --phred64-quals -I 500000 -o ZT4_2_tophat.out /data/analysis/fasta/mm9 /data/sequence/Nascent_ZT4_2.fastq). About 65–70% of the Nascent-Seq sequences uniquely mapped to the mouse genome, even though no rRNA removal has been performed. Uniquely mapped sequences from the tophat output files (bam format) were then used for further analysis. Wig files, used for signal visualization with the Integrated Genome Browser (Nicol et al., 2009), were created as described in UCSC website (ftp://hgdownload.cse.ucsc.edu/apache/htdocs-rr/goldenPath/help/bedgraph.html) and normalized to uniquely mapped reads. The normalization factor used for normalization is indicated in the last column of the Table 1.
 
-## Quantification of gene signal
+#### Quantification of gene signal
 
 Quantification of nascent RNA and mRNA signal has been calculated from the Nascent-Seq and RNA-Seq datasets using custom-written perl and mysql scripts (see Source code 1). No quantification was performed using the strand-specific Nascent-Seq datasets. To allow direct comparison between the Nascent-Seq and RNA-Seq datasets, and because many genes have another gene coding for non-coding RNA expressed within their introns (e.g., Camk2b, Figure 2F), the gene signal was calculated by only considering the sequences mapping to exons. Moreover, because ‘only’ approximately 13% of the Nascent-Seq signal is mapped to exons (most of the signal is intronic), we reached a higher sequencing depth for the Nascent-Seq samples (>15,000,000 uniquely mapped sequences for all samples, representing a minimum of 160,000,000 nucleotides mapping to the transcriptome).
 
@@ -217,19 +597,116 @@ Determination of rpbp threshold: the rpbp threshold has been determined so that 
 
 We first assayed the correlation between gene signals of the two duplicates: the correlation is very good for high values of rpbp, and progressively decreases as the rpbp decreases (Figure 1G). The variation of gene signal that results from low sequencing depth was then determined by calculating the standard deviation to the mean (z-score) for every gene between the two duplicates (Figure 1H). As expected, the z-score is low for high rpbp and increases with lower gene signal, reflecting a progressive decrease of sequencing depth (Figure 1H).
 
-Analysis of this variation allowed us to determine the rpbp threshold. Indeed, among genes with a rpbp superior to 2, less than 6.7% display a variation of more than 1.3-fold between the two duplicates (432/6486) and only 88 genes (1.36%) display a variation of more than 1.5-fold (88/6486; see Table 2). Moreover, the majority of these genes are relatively short (<1 kb), hence contributing for some of the variability. This analysis therefore indicates that a rpbp of 2–3 (for datasets with ∼20,000,000 uniquely mapped sequences of 80 nt) can be used as a threshold to detect biological variation of nascent RNA expression.10.7554/eLife.00011.023Table 2.Determination of the rpbp threshold for the Nascent-Seq datasetDOI: http://dx.doi.org/10.7554/eLife.00011.023Fold differenceRpbp > 3Rpbp > 2.6786Rpbp > 2# Genes% Genes# Genes% Genes# Genes% Genes>200.0000.0020.03>1.5320.77440.93881.36>1.4671.61931.971802.78>1.31694.062244.744326.66>1.254313.0668914.57115917.87>1.1169840.83201542.62301246.441.0–1.1246159.17271357.38347453.56Total # genes415947286486
+Analysis of this variation allowed us to determine the rpbp threshold. Indeed, among genes with a rpbp superior to 2, less than 6.7% display a variation of more than 1.3-fold between the two duplicates (432/6486) and only 88 genes (1.36%) display a variation of more than 1.5-fold (88/6486; see Table 2). Moreover, the majority of these genes are relatively short (<1 kb), hence contributing for some of the variability. This analysis therefore indicates that a rpbp of 2–3 (for datasets with ∼20,000,000 uniquely mapped sequences of 80 nt) can be used as a threshold to detect biological variation of nascent RNA expression.
+
+**Table 2.**
+ Determination of the rpbp threshold for the Nascent-Seq dataset
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Fold difference</th>
+      <th colspan="2">Rpbp &gt; 3</th>
+      <th colspan="2">Rpbp &gt; 2.6786</th>
+      <th colspan="2">Rpbp &gt; 2</th>
+    </tr>
+    <tr>
+      <th># Genes</th>
+      <th>% Genes</th>
+      <th># Genes</th>
+      <th>% Genes</th>
+      <th># Genes</th>
+      <th>% Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&gt;2</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>&gt;1.5</td>
+      <td>32</td>
+      <td>0.77</td>
+      <td>44</td>
+      <td>0.93</td>
+      <td>88</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <td>&gt;1.4</td>
+      <td>67</td>
+      <td>1.61</td>
+      <td>93</td>
+      <td>1.97</td>
+      <td>180</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td>&gt;1.3</td>
+      <td>169</td>
+      <td>4.06</td>
+      <td>224</td>
+      <td>4.74</td>
+      <td>432</td>
+      <td>6.66</td>
+    </tr>
+    <tr>
+      <td>&gt;1.2</td>
+      <td>543</td>
+      <td>13.06</td>
+      <td>689</td>
+      <td>14.57</td>
+      <td>1159</td>
+      <td>17.87</td>
+    </tr>
+    <tr>
+      <td>&gt;1.1</td>
+      <td>1698</td>
+      <td>40.83</td>
+      <td>2015</td>
+      <td>42.62</td>
+      <td>3012</td>
+      <td>46.44</td>
+    </tr>
+    <tr>
+      <td>1.0–1.1</td>
+      <td>2461</td>
+      <td>59.17</td>
+      <td>2713</td>
+      <td>57.38</td>
+      <td>3474</td>
+      <td>53.56</td>
+    </tr>
+    <tr>
+      <td>Total # genes</td>
+      <td>4159</td>
+      <td></td>
+      <td>4728</td>
+      <td></td>
+      <td>6486</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Because of Nascent-Seq datsets were normalized to 40,000,000 reads, we used to threshold of 6 rpbp, as it corresponds to a rpbp of 2.6786 for the Nascent-Seq samples with the least coverage (ZT12, replicate 2). At this threshold, there is very low variation due to sequencing depth (e.g., <4.8% of the genes display a variation of >1.3-fold).
 
 A similar strategy was applied with the RNA-Seq datasets, and set up the threshold as 1–2 rpbp for 10,000,000 sequences (uniquely mapped). This threshold was inferior to the one used with Nascent-Seq datasets, largely because of the superior coverage of exons in the RNA-Seq datasets. Because our analysis was performed on datasets normalized to 40 million reads, we set up the threshold at 8 (which represents a minimum rpbp of 1.5 for the time point with the least coverage; Rep1, ZT14, 7,497,386 sequences).
 
-## Statistics about the levels of expression
+#### Statistics about the levels of expression
 
 Nascent-Seq ZT0, ZT4, ZT12 and ZT16 samples exhibit a relatively similar profile of expression, whereas Nascent-Seq ZT8 and ZT20 samples show higher values because of the higher sequencing depth. For samples with less sequencing coverage, a minimum of 8800 genes have a rpbp >1 (from 8868 for ZT16_rep2 to 10419 for ZT0_rep2), 5100 genes have a rpbp > 2 (from 5121 to 6999) and 3200 genes have a rpbp > 3 (from 3215 to 4795). More than 1000 genes have a rpbp > 10 in every samples. A file containing the normalized rpbp for all UCSC genes is available in supplementary material (Figure 2—source data 1). The normalization to sequencing depth (uniquely mapped sequences) was performed using the normalization factors displayed in the Table 1.
 
 All RNA-Seq samples exhibit a relatively similar profile of expression, reflecting the low variation in sequencing depth between the samples. A minimum of 8800 genes have a rpbp >1 (from 8868 for ZT16_rep2 to 10419 for ZT0_rep2), 5100 genes have a rpbp > 2 (from 5121 to 6999) and 3200 genes have a rpbp > 3 (from 3215 to 4795). More than 1000 genes have a rpbp > 10 in every sample. A file containing the normalized rpbp for all UCSC genes is available in supplementary material (Figure 3—source data 2). The normalization to sequencing depth (uniquely mapped sequences) was performed using the normalization factors displayed in the Table 1.
 
-## Analysis of ChIP-Seq datasets
+### Analysis of ChIP-Seq datasets
 
 Sequences from the different libraries (fastq format) were first mapped to the mouse genome (version mm9) using bowtie (Langmead et al., 2009) with the command line: bowtie –q –a –-best –m 1. Only those that mapped uniquely to the mouse genome were used for further analysis, and their number has been used for normalization to compare signal difference between libraries.
 
@@ -241,11 +718,11 @@ Quantification of the number of e-boxes within BMAL1 and CLK DNA binding peaks h
 
 Motif analysis has been performed using MEME suite (http://meme.sdsc.edu/meme/intro.html), using a 100 bp sequence for each peak (peak center ± 50 bp). Parameters were as follow: -dna -mod anr -nmotifs 20 -minw 6 -maxw 30. The background model contained the same nucleotide distribution as the input file. Significant motifs were then analyzed using TOMTOM from MEME suite.
 
-## Gene ontology of genes with high and low Nascent-Seq/RNA-Seq signal ratio
+### Gene ontology of genes with high and low Nascent-Seq/RNA-Seq signal ratio
 
 Gene signal (reads per base pair) was averaged for the 12 time points, and the ratio Nascent RNA/mRNA was calculated. Genes with a ratio over 2 SD from the average of all ratios were selected for gene ontology (GO) analysis; 302 genes had a Nascent-Seq/RNA-Seq ratio below 2 SD and 463 genes had a ratio over 2 SD. 13595 genes were considered for this analysis. GO analysis has been performed using GOToolBox (Martin et al., 2004) (http://genome.crg.es/GOToolBox/), using an hypergeometric test with Benjamini-Hochberg correction. The background model consisted of the entire list of genes.
 
-## Statistical analysis of rhythmic gene expression
+### Statistical analysis of rhythmic gene expression
 
 Only genes with more than three reads per base pair for at least one time point of the Nascent-Seq dataset and two read per base pair for the RNA-Seq dataset were further considered for subsequent analysis (see above). Rhythmically expressed genes were determined based on three parameters: amplitude, F24 (24-hr spectral power, see below) and p-value of the F24.
 
@@ -257,6 +734,6 @@ Transcripts were considered to be rhythmically expressed when meeting the three 
 
 The phase information from the Fourier transformation (which indicates the peak of the cosine curve) was further used to assess phase difference between rhythmic nascent RNA and mRNA expression (Figures 3C,4B).
 
-## Analysis of gene expression by real-time PCR
+### Analysis of gene expression by real-time PCR
 
 Total RNA from wild-type and Bmal1−/− mice was prepared from mouse liver using Trizol reagent (Invitrogen) and DNAse-treated using Turbo DNAse (Ambion) according to the manufacturer's protocols. cDNA derived from RNA (using Invitrogen Superscript II and random primers) was utilized as a template for quantitative real-time PCR performed with the Rotor-Gene 3000 real-time cycler (Qiagen). The PCR mixture contained Platinum Taq polymerase (Invitrogen), optimized concentrations of Sybr-green (Invitrogen) and specific primers for either Rev-Erbα, Per1, Per2 or Cry1 pre-mRNAs. Quantitative PCR using Actg1-specific primers was used as a loading control. Cycling parameters were 95°C for 3 min, followed by 40 cycles of 95°C for 30 s, 55°C for 45 s, and 72°C for 45 s. Fluorescence intensities were plotted vs the number of cycles by using an algorithm provided by the manufacturer. mRNA levels were quantified using a calibration curve based upon dilution of concentrated cDNA.

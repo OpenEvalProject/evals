@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05krs5044 The Bateson Centre, School of Medicine and Population Health, Faculty of Health, University of Sheffield Sheffield United Kingdom
-2. https://ror.org/02jx3x895 Division of Infection & Immunity, University College London London United Kingdom
+1. The Bateson Centre, School of Medicine and Population Health, Faculty of Health, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+2. Division of Infection & Immunity, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -39,17 +39,17 @@ Here, we show that Tribbles1 is expressed in human primary monocytes and its exp
 
 ## Results
 
-## TRIB1 is expressed in human monocytes and is upregulated after in vivo mycobacterial antigen stimulation
+### TRIB1 is expressed in human monocytes and is upregulated after in vivo mycobacterial antigen stimulation
 
 To explore whether Tribble pseudokinase expression is modulated by mycobacterial antigen exposure in humans, we initially focused on CD14+ monocytes stimulated in vitro with Mtb protein derivative (PPD). This revealed that mycobacterial antigen exposure induced the expression of TRIB1 isoform transcripts but not TRIB2, which had the lowest baseline expression, nor TRIB3, observations consistent across monocytes from either active or latent TB individuals (Figure 1A–C). To determine whether Tribbles play a role in human responses in vivo, we turned to the transcriptomic profiles of biopsies from the site of a tuberculin skin test (TST), a routine clinical investigation repurposed into a mycobacterial antigen challenge model (Bell et al., 2016). This revealed baseline expression of TRIB1 in control saline injected tissue samples (Figure 1D). Exposure to tuberculin-induced robust induction of TRIB1 expression in TST reactions for both active and latent TB individuals (Figure 1D). A more modest increase was seen for TRIB2 (Figure 1E) but not for TRIB3 (Figure 1F; Pollara et al., 2021).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig1-v1.jpg)
 
-**Figure 1.:** TRIB1 in human monocytes and tissues is elevated after mycobacterial antigen stimulation.(A–C) Expression of TRIB1, TRIB2, and TRIB3 transcripts in human CD14+ monocytes in patients with active or latent TB before and after 4 hr of Mtb protein derivative (PPD) stimulation in vitro. Each paired data point represents one individual, with active or latent TB (n = 9 and n = 7, respectively). Statistical significance determined by paired Wilcoxon tests. p values shown are: *p < 0.05 and **p < 0.01. (D–F) Expression of TRIB1, TRIB2, and TRIB3 within in saline injected human skin and from biopsies of the site of a tuberculin skin test (TST) in patients with active or latent TB. Each point represents one individual with bars for each group representing mean gene expression. n = 48 and 191 individuals with active or latent TB, respectively. Statistical significance determined via Kruskal–Wallis with multiple comparisons. p values shown are: ***p < 0.001 and ****p < 0.0001.Figure 1—source data 1.Figure 1A, left panel.Figure 1—source data 2.Figure 1A, right panel.Figure 1—source data 3.Figure 1B, left panel.Figure 1—source data 4.Figure 1B, right panel.Figure 1—source data 5.Figure 1C, left panel.Figure 1—source data 6.Figure 1C, right panel.Figure 1—source data 7.Figure 1D.Figure 1—source data 8.Figure 1E.Figure 1—source data 9.Figure 1F.
+**Figure 1.:** (A–C) Expression of TRIB1, TRIB2, and TRIB3 transcripts in human CD14+ monocytes in patients with active or latent TB before and after 4 hr of Mtb protein derivative (PPD) stimulation in vitro. Each paired data point represents one individual, with active or latent TB (n = 9 and n = 7, respectively). Statistical significance determined by paired Wilcoxon tests. p values shown are: *p < 0.05 and **p < 0.01. (D–F) Expression of TRIB1, TRIB2, and TRIB3 within in saline injected human skin and from biopsies of the site of a tuberculin skin test (TST) in patients with active or latent TB. Each point represents one individual with bars for each group representing mean gene expression. n = 48 and 191 individuals with active or latent TB, respectively. Statistical significance determined via Kruskal–Wallis with multiple comparisons. p values shown are: ***p < 0.001 and ****p < 0.0001.
 
 Together these data reveal that TRIB1, and to a lesser extent TRIB2, expression is increased in response to both in vitro and in vivo mycobacterial antigen exposure in humans, independent of clinical TB disease grouping. We interpret these data as signifying a potential functional role for these pseudokinase in regulation of mycobacterial infections in vivo, and indicating the need for a tractable in vivo model of mycobacterial infection to study this further.
 
-## Zebrafish Tribbles isoforms share homology with their human and mouse counterparts and are expressed in immune cell populations
+### Zebrafish Tribbles isoforms share homology with their human and mouse counterparts and are expressed in immune cell populations
 
 To explore the functional role in vivo for Tribbles in the control of mycobacterial infections in vivo, we developed a zebrafish model of M. marinum infection and tools to manipulate tribbles expression.
 
@@ -57,7 +57,7 @@ Zebrafish have a single orthologue of each mammalian tribbles isoforms, with tri
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig2-v1.jpg)
 
-**Figure 2.:** (A) The gene organisation of human (orange) TRIB1, mouse (blue) Trib1, and zebrafish (red). Exon maps produced from Ensembl database. Chromosome number location (chr) and transcript sizes in kilobases (kb) are shown. (B) Comparison of the three catalytic domains of Tribbles; the pseudokinase catalytic loop and mitogen-activated protein kinase kinase (MEK)/constitutive photomorphogenic 1 (COP1) bind sites, reveals high homology between species. (C) NCBI BLAST Global align revealed a high amino acid (AA) homology between zebrafish (zf) and human Tribbles protein sequences. Values described are positives/identities. (D) Protein sizes of the first and largest protein-coding transcript of each gene are depicted in the number of AA, values obtained from Ensembl and Uniprot databases. (E–G) Protein overlays of predicted structures (AlphaFold DB) of zebrafish (coloured) and human (black) sequences.Figure 2—source data 1.Figure 2E.Figure 2—source data 2.Figure 2F.Figure 2—source data 3.Figure 2G.
+**Figure 2.:** (A) The gene organisation of human (orange) TRIB1, mouse (blue) Trib1, and zebrafish (red). Exon maps produced from Ensembl database. Chromosome number location (chr) and transcript sizes in kilobases (kb) are shown. (B) Comparison of the three catalytic domains of Tribbles; the pseudokinase catalytic loop and mitogen-activated protein kinase kinase (MEK)/constitutive photomorphogenic 1 (COP1) bind sites, reveals high homology between species. (C) NCBI BLAST Global align revealed a high amino acid (AA) homology between zebrafish (zf) and human Tribbles protein sequences. Values described are positives/identities. (D) Protein sizes of the first and largest protein-coding transcript of each gene are depicted in the number of AA, values obtained from Ensembl and Uniprot databases. (E–G) Protein overlays of predicted structures (AlphaFold DB) of zebrafish (coloured) and human (black) sequences.
 
 Homology between Tribbles isoforms across species is not only observed at the genetic level, but also at the protein level (Hegedus et al., 2006). Tribbles have three key protein domains: an N terminal PEST domain, a pseudokinase domain, and a functional C terminal (Hegedus et al., 2007). The pseudokinase contains a substrate-binding site within its catalytic loop, and the functional C terminus contains two binding sites for either MEK or COP enzymes (Qi et al., 2006; Yokoyama et al., 2010). These three binding sites were compared across human, mice, and zebrafish using the NCBI BLAST Global align online tool (Figure 2B). The pseudokinase catalytic loops in all three Tribbles family proteins (TRIB1–3), are found in human, mouse, and zebrafish. In the case of TRIB1 and TRIB2, there is no variation in the amino acid sequence of the pseudokinase catalytic loop across the three species (Figure 2B). The pseudokinase catalytic loop of both mouse TRIB3 and zebrafish Trib3 differs slightly from human TRIB3 with two amino acids that are different in mouse TRIB3 and one amino acid difference is observed in zebrafish Trib3. The amino acid sequences of human and zebrafish Tribbles were compared using the NCBI global align tool. Zebrafish Trib1 had the highest percentage identity when compared with human TRIB1 (52%), but also shared sequence homology with human TRIB2 with the highest identities match (66%) (Figure 2C). Zebrafish Trib2 shared the highest percentage identity with human TRIB2 (47% and 54%, respectively). Zebrafish Trib3 had high identity matches for both human TRIB2 and TRIB3 (68% and 64%, respectively) (Figure 2C). The overall size of Tribbles proteins remains consistent between human and mouse isoforms, with both human and mice TRIB1 sized at 372 amino acids (aa), human and mouse TRIB2 sized at 343aa. Mouse TRIB3 is 4aa shorter than human TRIB3 (354aa compared to 358aa). The zebrafish Tribbles isoforms are generally smaller proteins compared to the human and mouse Tribbles, with zebrafish Trib1 23aa smaller (at 349aa), Trib2 136aa smaller (at 207aa), and Trib3 10aa (at 348aa) compared to the human TRIB isoforms (Figure 2D). Predicted Alphafold models of zebrafish sequences of Trib1 and Trib3 overlayed with human protein predications demonstrate gross fold and alpha helix similarities (Figure 2E, G). The Trib2 protein overlay was less well conserved, reflective of the smaller amino acid sequence of zebrafish Trib2 compared to human (Figure 2F).
 
@@ -65,45 +65,69 @@ To characterise the localisation of trib expression across the zebrafish larvae,
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig3-v1.jpg)
 
-**Figure 3.:** tribbles are located in the brain in larvae and in immune cell subpopulations in adults.(A) Whole-mount in situ hybridisation of the pan-leukocyte marker L-plastin was used as a positive control to stain leukocytes, present predominantly in the caudal hematopoietic tissue (CHT). Scale bar = 200 µm. (B) Representative images of antisense and sense (control) whole-mount in situ hybridisation of tribbles1. Numbers correspond to number of fish with depictured pattern out of total fish imaged. N = 19–20 fish. (C) Antisense and sense (control) whole-mount in situ hybridisation of tribbles2. N = 17–22 fish. (D) Antisense and sense (control) whole-mount in situ hybridisation of tribbles3. N = 17–20 fish. (E) Magnified dorsal views (×8 magnification) showing distinct expression of each trib isoform in the brain (representative images from each group shown). Scale bar = 200 µm. (F–H) Gene expression of adult zebrafish leukocytes determined using the Zebrafish Blood Atlas (Athanasiadis et al., 2017). Each point represents a separate scRNAseq sample (cell); replicates performed across multiple zebrafish wildtype and transgenic strains. Each arm of schematic indicates a separate blood cell population (labelled). Deeper colour indicates higher expression (log10 scale bars described for each gene).
+**Figure 3.:** (A) Whole-mount in situ hybridisation of the pan-leukocyte marker L-plastin was used as a positive control to stain leukocytes, present predominantly in the caudal hematopoietic tissue (CHT). Scale bar = 200 µm. (B) Representative images of antisense and sense (control) whole-mount in situ hybridisation of tribbles1. Numbers correspond to number of fish with depictured pattern out of total fish imaged. N = 19–20 fish. (C) Antisense and sense (control) whole-mount in situ hybridisation of tribbles2. N = 17–22 fish. (D) Antisense and sense (control) whole-mount in situ hybridisation of tribbles3. N = 17–20 fish. (E) Magnified dorsal views (×8 magnification) showing distinct expression of each trib isoform in the brain (representative images from each group shown). Scale bar = 200 µm. (F–H) Gene expression of adult zebrafish leukocytes determined using the Zebrafish Blood Atlas (Athanasiadis et al., 2017). Each point represents a separate scRNAseq sample (cell); replicates performed across multiple zebrafish wildtype and transgenic strains. Each arm of schematic indicates a separate blood cell population (labelled). Deeper colour indicates higher expression (log10 scale bars described for each gene).
 
 In summary, zebrafish, mouse, and human Tribbles share sequence similarity and have similar gene organisation and conserved catalytic binding sites, making zebrafish a viable model to explore a physiological role for human Tribbles in mycobacterial infections. Zebrafish express trib isoforms in immune cell subpopulations in resting conditions, suggestive of roles in regulating innate immunity.
 
-## Overexpression of trib1 is host protective in a zebrafish mycobacteria infection model
+### Overexpression of trib1 is host protective in a zebrafish mycobacteria infection model
 
 To better understand how Tribbles can influence innate immunity and infection, genetic tools were generated to manipulate expression of zebrafish trib isoforms. Overexpression of zebrafish tribbles isoforms was achieved by injection of RNA at the one-cell stage. Injection of either trib1, trib2, or trib3 RNA did not grossly affect larval development, with embryos developing with no obvious adverse effects (Figure 4—figure supplement 1A, B). To determine outcomes in infection, a zebrafish Mycobacterium marinum (Mm) larval model was used, in which trib RNAs were injected at the one-cell stage, leading to ubiquitous overexpression. Overexpression of trib1 significantly decreased bacterial burden of Mm by approximately 50% (p < 0.001 compared to the vehicle control, phenol red PR; Figure 4A, B). Dominant active hif-1α (DA1, an RNA shown to significantly reduce Mm burden by ~50% Elks et al., 2013) was used as a positive RNA control with dominant negative hif-1α (DN1, an RNA shown to have no significant effect on M. marinum burden) used as a negative RNA control (Elks et al., 2013). Overexpression of trib2 also significantly reduced bacterial burden compared to the PR control, but not to the same extent as the positive DA hif-1α control nor trib1 overexpression (Figure 4A, B). In contrast, overexpression of trib3 had no significant effect on the levels of bacterial burden compared to the vehicle PR control (Figure 4A, B). Together, these data demonstrate that overexpression of trib1 has the strongest host-protective effect compared to overexpression of other trib isoforms, reducing M. marinum burden by approximately 50%.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig4-v1.jpg)
+
+**Figure 4.:** (A) Stereo-fluorescence micrographs of Mm mCherry infected 4 dpi larvae after injection at the single-cell stage with dominant active hif-1α (DA1), dominant negative hif-1α (DN1), trib1, trib2, trib3 RNAs and phenol red (PR) as a negative vehicle control. DA1 and DN1 are RNA controls with DA1 having previously been shown to reduce infection levels (Elks et al., 2013). Scale bar = 200 µm. (B) Bacterial burden of larvae shown in (A). Data shown are mean ± standard error of the mean (SEM), n = 76–77 in trib1, n = 86–89 in trib2, and n = 43–95 in trib3, accumulated from three independent experiments for each trib gene. Statistical significance determined via one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons. p values shown are: **p < 0.01 and ***p < 0.001. (C) Stereo-fluorescence micrographs of Mm mCherry infected 4 dpi larvae after injection with tyrosinase (control), trib1 and trib3 CRISPR guides (CRISPants). Scale bar = 200 µm. (D) Bacterial burden of larvae shown in (C). Data shown are mean ± SEM, n = 87–90 fish accumulated from three independent experiments. Statistical significance determined via one-way ANOVA with Bonferroni’s multiple comparisons. p values shown are: ***p < 0.001. (E) Bacterial burden of trib1−/− stable knockout larvae compared to wildtype (trib1+/+) siblings. Data shown are mean ± SEM, n = 82–114 fish accumulated from four independent experiments. Statistical significance determined via an unpaired t-test. p values shown are: *p < 0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) cDNA sequences of zebrafish trib isoforms (trib1, trib2, and trib3) were cloned into the expression plasmid pCS2+. (B) mRNA of trib isoforms (100 ng/μl) was synthesised from pCS2+ plasmids and 1 nl was injected into one-cell stage zebrafish embryos, which resulted in healthy development. Larvae imaged at 2 dpf using stereoscope at ×4 magnification (head images at ×8 magnification). Scale bars = 100 µM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Electrophoresis gel of larvae injected with trib1 guide RNA with a SacII restriction digest. The undigested DNA band, obtained using the polymerase chain reaction (PCR), is 177 bp and the successfully digested band is 132 bp. Two uninjected fish were used as controls without (U) and with (D) digestion. Four tyrosinase (tyr) control guide injected larvae had conserved SacII sites while 6/6 trib1 larvae did not digest with SacII indicating a genomic disruption at the CRISPR PAM site. First and last lanes of gel images contain Low Molecular Weight DNA Ladder (New England Biolabs, N3233) for reference. (B) Electrophoresis gel of larvae injected with trib3 guide RNA with a MwoI restriction digest. The undigested PCR band is 186 bp and the successfully digested band is 103 bp. Two uninjected fish were used as controls without (U) and with (D) digestion. Four tyrosinase (tyr) guide injected larvae had conserved MwoI sites while 5/6 trib3 larvae did not digest with MwoI indicating a genomic disruption at the CRISPR PAM site. First and last lanes of gel images contain NEB Low Molecular Weight ladder for reference.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic of zebrafish trib1 gene exons, with arrowhead showing location of CRISPR guide RNA PAM site in exon 1. (B) Electrophoresis gel of larvae injected with trib1 guide RNA with a SacII restriction digest. The undigested PCR band is 177 bp and the successfully digested band is 132 bp. Two uninjected fish were used as controls without (U) and with (D) digestion. Four cas9 only injected larvae had conserved SacII sites while 6/6 trib1 larvae did not digest with SacII indicating a genomic disruption at the CRISPR PAM site. LMW = NEB Low Molecular Weight ladder for reference. (C) Sequencing trace of a trib1−/− mutant versus a wildtype sibling, demonstrating a 14-bp deletion (loss of AGCAGATGTCCGCG). (D) Schematic showing predicted truncated protein (Δ94aa) caused by trib1−/− mutation compared to the wildtype protein. (E) Stereo-fluorescence micrographs of Mm mCherry infected 4 dpi trib1−/− mutant and wildtype (trib1+/+) sibling larvae. Scale bar = 200 µM. (F) Sudan Black staining of neutrophils in 3 dpf trib1−/− mutant and wildtype (trib1+/+) sibling larvae. Scale bar = 200 µM. (G) Number of Sudan Black-positive neutrophils in the tail of 3 dpf trib1−/− mutant and wildtype (trib1+/+) sibling larvae. Data shown are mean ± standard error of the mean (SEM), n = 16–17 fish accumulated from two independent experiments. Statistical significance (no significance, ns) determined via an unpaired t-test.
+
 trib knockdown/knockout tools were developed using CRISPR–Cas9 technology. Guide RNAs for each trib isoform were designed targeting the first coding exon of each trib gene and were injected into one-cell stage embryos, with tyrosinase (a control CRISPant which has negligible effects on innate immunity; Isles et al., 2019) CRISPant as a negative control. CRISPant efficiency was tested using PCR and restriction enzyme digest, with successful CRISPants disrupting the restriction site. Efficient guide RNAs were developed for both trib1 and trib3 (Figure 4—figure supplement 2A, B), however guide RNAs for trib2 did not cause efficient knockdown. Trib1 CRISPants had a higher burden of Mm compared to tyrosinase and trib3 CRISPants (Figure 4C, D). To confirm the trib1 knockdown phenotype, a stable CRISPR–Cas9 mutant for trib1 was developed. Genotyping of F1 trib1 CRISPR–Cas9 mutants revealed a 14-bp deletion (AGCAGATGTCCGCG) at the start of exon 1 (Figure 4—figure supplement 3A–C). This 14 bp deletion is predicted to create a truncated protein that is 94aa in length compared to the full-length 349aa wildtype protein, lacking the catalytic loop in the pseudokinase domain (Figure 4—figure supplement 3D) assuming no nonsense-mediated decay. Heterozygous trib1+/− were in-crossed and larvae were infected with Mm in the caudal vein at 1 dpi, imaged at 4 dpi and subsequently genotyped. At 4 dpi Mm infected trib1−/− mutants had significantly higher levels of bacterial burden compared to trib1+/+ wildtype siblings (Figure 4E, Figure 4—figure supplement 3E).
 
-## trib1 manipulation does not affect total leukocyte numbers in larvae
+### trib1 manipulation does not affect total leukocyte numbers in larvae
 
 TRIB1 has previously been shown to affect immune cell differentiation, with full-body Trib1-deficient mice possessing a greater number of neutrophils and a reduced number of anti-inflammatory macrophages compared to wildtype (Satoh et al., 2013). Zebrafish trib isoforms 1 and 3 were manipulated in neutrophil and macrophage transgenic reporter lines Tg(mpx:GFP)i114 and Tg(mpeg:nlsclover)sh436 and whole-body fluorescent cell counts were performed at 2 dpf to assess whether trib manipulation influenced zebrafish leukocyte number. Neither trib1/trib3 overexpression nor trib1/trib3 CRISPant knockdown grossly affected neutrophil or macrophage numbers (Figure 5A–D). Due to neutrophil numbers being most affected in the Trib1-deficient mice, we further investigated at the later timepoint of 3 dpf to determine whether neutrophil differentiation was affected and found that Tg(mpx:GFP)i114-positive neutrophil numbers were unchanged with trib1 overexpression (Figure 5E) and trib1 CRISPant knockdown (Figure 5F). We confirmed these data using a second neutrophil reporter transgenic line Tg(lyz: nfsB.mCherry)sh260 with trib1 overexpression (Figure 5G) and trib1 CRISPant knockdown (Figure 5H) showing no differences in numbers at 2 and 3 dpf. These data suggest that the host-protective effect of trib1 overexpression is not due to an increase in number of innate immune cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig5-v1.jpg)
 
-**Figure 5.:** trib manipulation does not affect leukocyte number in zebrafish larvae.(A) Example brightfield and fluorescent micrographs of neutrophils (Tg(mpx:GFP)i114) in four 2 dpf larvae injected at the one-cell stage with either phenol red (PR), trib1 RNA overexpression (OE), trib1 CRISPant, trib3 RNA overexpression (OE), or trib3 CRISPant. Scale bars = 200 µM. (B) Example brightfield and fluorescent micrographs of macrophages (Tg(mpeg:nlsclover)sh436) in four 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (OE), trib1 CRISPant, trib3 RNA overexpression (OE), or trib3 CRISPant. Scale bars = 200 µM. (C) Wholebody neutrophil numbers (Tg(mpx:GFP)i114) in 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (T1 OE), trib1 CRISPant (T1 cpr), trib3 RNA overexpression (T3 OE), or trib3 CRISPant (T3 cpr). Data shown are mean ± standard error of the mean (SEM), n = 30 fish per group. (D) Wholebody macrophage numbers (Tg(mpeg:nlsclover)sh436) in 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (T1 OE), trib1 CRISPant (T1 cpr), trib3 RNA overexpression (T3 OE), or trib3 CRISPant (T3 cpr). Data shown are mean ± SEM, n = 30 fish per group. (E) Total tail neutrophil numbers (Tg(mpx:GFP)i114) in 3 dpf larvae injected at the one-cell stage with either PR or trib1 RNA overexpression (T1 OE). Data shown are mean ± SEM, n = 30 fish per group. (F) Total tail neutrophil numbers (Tg(mpx:GFP)i114) in 3 dpf larvae injected at the one-cell stage with either tyrosinase control CRISPant (tyr cpr) or trib1 CRISPant (T1 cpr). Data shown are mean ± SEM, n = 30 fish per group. (G) Total tail neutrophil numbers (Tg(lyz: nfsB.mCherry)sh260) in 2 and 3 dpf larvae injected at the one-cell stage with either PR or trib1 RNA overexpression (T1 OE). Data shown are mean ± SEM, n = 37–42 fish per group. (H) Total tail neutrophil numbers (Tg(lyz: nfsB.mCherry)sh260) in 2 and 3 dpf larvae injected at the one-cell stage with either tyrosinase control CRISPant (tyr cpr) or trib1 CRISPant (T1 cpr). Data shown are mean ± SEM, n = 60 fish per group.Figure 5—source data 1.Figure 5C.Figure 5—source data 2.Figure 5D.Figure 5—source data 3.Figure 5E.Figure 5—source data 4.Figure 5F.Figure 5—source data 5.Figure 5G.Figure 5—source data 6.Figure 5H.
+**Figure 5.:** (A) Example brightfield and fluorescent micrographs of neutrophils (Tg(mpx:GFP)i114) in four 2 dpf larvae injected at the one-cell stage with either phenol red (PR), trib1 RNA overexpression (OE), trib1 CRISPant, trib3 RNA overexpression (OE), or trib3 CRISPant. Scale bars = 200 µM. (B) Example brightfield and fluorescent micrographs of macrophages (Tg(mpeg:nlsclover)sh436) in four 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (OE), trib1 CRISPant, trib3 RNA overexpression (OE), or trib3 CRISPant. Scale bars = 200 µM. (C) Wholebody neutrophil numbers (Tg(mpx:GFP)i114) in 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (T1 OE), trib1 CRISPant (T1 cpr), trib3 RNA overexpression (T3 OE), or trib3 CRISPant (T3 cpr). Data shown are mean ± standard error of the mean (SEM), n = 30 fish per group. (D) Wholebody macrophage numbers (Tg(mpeg:nlsclover)sh436) in 2 dpf larvae injected at the one-cell stage with either PR, trib1 RNA overexpression (T1 OE), trib1 CRISPant (T1 cpr), trib3 RNA overexpression (T3 OE), or trib3 CRISPant (T3 cpr). Data shown are mean ± SEM, n = 30 fish per group. (E) Total tail neutrophil numbers (Tg(mpx:GFP)i114) in 3 dpf larvae injected at the one-cell stage with either PR or trib1 RNA overexpression (T1 OE). Data shown are mean ± SEM, n = 30 fish per group. (F) Total tail neutrophil numbers (Tg(mpx:GFP)i114) in 3 dpf larvae injected at the one-cell stage with either tyrosinase control CRISPant (tyr cpr) or trib1 CRISPant (T1 cpr). Data shown are mean ± SEM, n = 30 fish per group. (G) Total tail neutrophil numbers (Tg(lyz: nfsB.mCherry)sh260) in 2 and 3 dpf larvae injected at the one-cell stage with either PR or trib1 RNA overexpression (T1 OE). Data shown are mean ± SEM, n = 37–42 fish per group. (H) Total tail neutrophil numbers (Tg(lyz: nfsB.mCherry)sh260) in 2 and 3 dpf larvae injected at the one-cell stage with either tyrosinase control CRISPant (tyr cpr) or trib1 CRISPant (T1 cpr). Data shown are mean ± SEM, n = 60 fish per group.
 
-## trib1 overexpression increases production of proinflammatory factors
+### trib1 overexpression increases production of proinflammatory factors
 
 Zebrafish trib1 manipulation had a profound effect on host–pathogen interaction, with overexpression reducing Mm bacterial burden and CRISPant knockdown/CRISPR mutant increasing burden. We therefore investigated the roles of trib1 manipulation on the innate immune system. To investigate whether trib1 influenced the inflammatory profiles of zebrafish leukocytes, production of the proinflammatory factors, il-1β and NO were measured using a combination of transgenic reporter lines and immunostaining. Overexpression of trib1 increased the levels of il1β:GFP (in a Tg(il-1β:GFP)sh445 reporter line), to similar levels as the positive control DA Hif-1α, compared to PR injected controls (Figure 6A, B). trib3 overexpression did not increase levels of il1β:GFP and levels were similar to the negative controls DN Hif-1α and PR (Figure 6A, B). Similarly, trib1 overexpression increased the levels of anti-nitrotyrosine staining (a proxy for immune cell antimicrobial NO production; Forlenza et al., 2008) compared to PR controls, to similar levels as DA Hif-1α (Elks et al., 2014; Elks et al., 2013; Figure 6C, D). trib3 overexpression did not increase levels of proinflammatory nitrotyrosine (Figure 6C, D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig6-v1.jpg)
 
-**Figure 6.:** trib1 overexpression increases production of proinflammatory il-1β and nitrotyrosine in the absence of infection.(A) Fluorescent confocal micrographs of 2 dpf caudal vein region of TgBAC(il-1β:eGFP)sh445 transgenic larvae. il-1β:GFP expression was detected by GFP levels. Larvae were injected at the one-cell stage with dominant negative (DN) or dominant active (DA) Hif-1α or phenol red (PR) controls and trib1 and trib3 test RNAs. Scale bars = 25 μm. (B) Corrected fluorescence intensity levels of il-1β:GFP confocal z-stacks in uninfected larvae at 2 dpf of data shown in (A). Dominant active Hif-1α (DA1) controls and trib1 fish had significantly increased il-1β:GFP levels in the absence of Mm bacterial challenge compared to PR and dominant negative Hif-1α (DN1) injected controls and trib3 RNA injected embryos. Data shown are mean ± standard error of the mean (SEM), n = 108 cells from 18 embryos accumulated from 3 independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons post hoc test. p values shown are: ***p < 0.001. (C) Fluorescence confocal z-stacks of the caudal vein region of 2 dpf mpx:GFP larvae (neutrophils) immune labelled with anti-nitrotyrosine (cyan) in the absence of Mm infection. Larvae were injected at the one-cell stage with dominant negative (DN) or dominant active (DA) Hif-1α or PR controls and trib1 and trib3 test RNAs. Scale bars = 25 μm. (D) Corrected fluorescence intensity levels of anti-nitrotyrosine antibody confocal z-stacks shown in (C). Data shown are mean ± SEM, n = 108 cells from 18 embryos accumulated from 3 independent experiments. Statistical significance was determined using one-way ANOVA with Bonferroni’s multiple comparisons post hoc test. p values shown are: ***p < 0.001.Figure 6—source data 1.Figure 6B.Figure 6—source data 2.Figure 6D.
+**Figure 6.:** (A) Fluorescent confocal micrographs of 2 dpf caudal vein region of TgBAC(il-1β:eGFP)sh445 transgenic larvae. il-1β:GFP expression was detected by GFP levels. Larvae were injected at the one-cell stage with dominant negative (DN) or dominant active (DA) Hif-1α or phenol red (PR) controls and trib1 and trib3 test RNAs. Scale bars = 25 μm. (B) Corrected fluorescence intensity levels of il-1β:GFP confocal z-stacks in uninfected larvae at 2 dpf of data shown in (A). Dominant active Hif-1α (DA1) controls and trib1 fish had significantly increased il-1β:GFP levels in the absence of Mm bacterial challenge compared to PR and dominant negative Hif-1α (DN1) injected controls and trib3 RNA injected embryos. Data shown are mean ± standard error of the mean (SEM), n = 108 cells from 18 embryos accumulated from 3 independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons post hoc test. p values shown are: ***p < 0.001. (C) Fluorescence confocal z-stacks of the caudal vein region of 2 dpf mpx:GFP larvae (neutrophils) immune labelled with anti-nitrotyrosine (cyan) in the absence of Mm infection. Larvae were injected at the one-cell stage with dominant negative (DN) or dominant active (DA) Hif-1α or PR controls and trib1 and trib3 test RNAs. Scale bars = 25 μm. (D) Corrected fluorescence intensity levels of anti-nitrotyrosine antibody confocal z-stacks shown in (C). Data shown are mean ± SEM, n = 108 cells from 18 embryos accumulated from 3 independent experiments. Statistical significance was determined using one-way ANOVA with Bonferroni’s multiple comparisons post hoc test. p values shown are: ***p < 0.001.
 
-## Trib1 overexpression does not activate Hif signalling
+### Trib1 overexpression does not activate Hif signalling
 
 Tribbles regulation has been mechanistically linked to hypoxia and HIF-1α in a variety of cancer cells (Hong et al., 2019; Wennemers et al., 2011; Xing et al., 2020) and in Drosophila fat body tissue (Noguchi et al., 2022). Due to the host-protective effect of trib1 overexpression in Mm infection closely mimicking that of DA-Hif1α, a potential mechanistic link between the hif-1α and trib1 pathways was investigated. trib1 and trib3 were overexpressed in a Hif-α transgenic reporter line, Tg(phd3:GFP)i144 (phd3 is a downstream target of Hif-α signalling) (Santhakumar et al., 2012). Neither trib1 nor trib3 overexpression activated the phd3:GFP line to detectable levels, indicating that trib1 overexpression is not substantially increasing Hif-1α signalling to mediate Mm control (Figure 7A, B). These data suggest that the protective effects of trib1 act via a different mechanism than Hif-1α activation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig7-v1.jpg)
 
-**Figure 7.:** trib1 and trib3 overexpression do not induce expression of the Hif reporter phd3:GFP.(A) Stereo-fluorescence micrographs of 2 dpf phd3:GFP larvae injected with phenol red (PR), dominant active hif-1α (DA1) and dominant negative Hif-1α (DN1) RNA controls alongside trib1 (T1) and trib3 (T3) RNA. Scale bars = 200 µM. (B) Corrected fluorescence intensity levels of phd3:GFP (Hif reporter) larvae shown in (A). Data shown are mean ± standard error of the mean (SEM), n = 30 embryos accumulated from three independent experiments. Statistical significance determined through one-way analysis of variance (ANOVA) with multiple comparisons. p values shown are: ***p < 0.001.
+**Figure 7.:** (A) Stereo-fluorescence micrographs of 2 dpf phd3:GFP larvae injected with phenol red (PR), dominant active hif-1α (DA1) and dominant negative Hif-1α (DN1) RNA controls alongside trib1 (T1) and trib3 (T3) RNA. Scale bars = 200 µM. (B) Corrected fluorescence intensity levels of phd3:GFP (Hif reporter) larvae shown in (A). Data shown are mean ± standard error of the mean (SEM), n = 30 embryos accumulated from three independent experiments. Statistical significance determined through one-way analysis of variance (ANOVA) with multiple comparisons. p values shown are: ***p < 0.001.
 
-## The host-protective effect of trib1 is dependent on cop1
+### The host-protective effect of trib1 is dependent on cop1
 
 An important binding partner of the TRIB1 protein is the E3 ubiquitin ligase, COP1 (Jamieson et al., 2018; Kung and Jura, 2019; Murphy et al., 2015). To investigate whether the host-protective effects of trib1 overexpression in Mm infection were cop1-mediated, a cop1 CRISPant was generated. The zebrafish cop1 gene (ENSDARG00000079329) is located on the forward strand of chromosome 2 and has 20 exons, all of which are coding (Figure 8—figure supplement 1A, B). It has a single coding transcript, producing a Cop1 protein of 694 amino acids. The zebrafish cop1 gene shares synteny and conserved sequence with both the human COP1 and murine Cop1 (determined using the ZFIN database https://zfin.org/). Cop1 mutant larvae appeared normal with no gross developmental defect and had no change in wholebody neutrophil number at 2 dpf (Figure 8—figure supplement 1C).
 
 In order to investigate whether the protective effect of trib1 overexpression is cop1-mediated, trib1 overexpression was combined with cop1 CRISPants in Mm infected larvae. Overexpression of trib1 significantly reduced bacterial burden compared to PR controls when co-injected with tyrosinase guide (Figure 8A, B). The bacterial burden of cop1 CRISPants was not significantly different to the tyrosinase control group nor the tyrosinase control with trib1 overexpression group. When trib1 was overexpressed in cop1 CRISPants, there was no significant decrease in burden, with the protective effect of trib1 lost (Figure 8A, B) indicating that the protective effect of trib1 overexpression is dependent on cop1.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig8-v1.jpg)
+
+**Figure 8.:** (A) Stereo-fluorescence micrographs of Mm mCherry infected 4 dpi larvae after injection with trib1 RNA (overexpression, OE) and cop1 guide RNA (CRISPants, cpr) using phenol red (PR, vehicle) and tyrosinase (tyr cpr, unrelated guide RNA) CRISPants as negative controls. Scale bar = 200 µM. (B) Bacterial burden of larvae shown in (A). Data shown are mean ± standard error of the mean (SEM), n = 71–76 accumulated from three independent experiments. Statistical significance determined via one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons. p values shown are: **p < 0.01 and ***p < 0.001. (C) Fluorescence confocal z-stacks of the caudal vein region of 2 dpf mpx:GFP larvae (neutrophils) immune labelled with anti-nitrotyrosine (cyan) in the absence of Mm infection. Larvae were injected at the one-cell stage with trib1 RNA (overexpression, OE) and cop1 guide RNA (CRISPants, cpr) using PR (vehicle) and tyrosinase (unrelated guide RNA) CRISPants as negative controls. Scale bar = 30 μm. (D) Corrected fluorescence intensity levels of anti-nitrotyrosine antibody confocal z-stacks shown in (C). Data shown are mean ± SEM, n = 108 cells from 18 embryos accumulated from three independent experiments. Statistical significance was determined using one-way ANOVA with Bonferroni’s multiple comparisons post hoc test. p values shown are: ****p < 0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/95980/elife-95980-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) The zebrafish cop1 gene (ENSDARG00000079329) has one coding transcript which was used as a basis for CRISPR–Cas9 guide design. Exon map and gene information obtained from Ensembl database. The web tool ChopChop was used to design a cop1 guide RNA with suitable restriction enzyme bind site (black line). PAM cut site (NGG) denoted with blue line. (B) Electrophoresis gel of larvae injected with cop1 guide RNA (cpr) with a Hyp188I restriction digest. The undigested PCR band is 250 bp and the successfully digested band is 147 bp. Two uninjected fish were used as controls without (U) and with (D) digestion. Four tyrosinase (tyr) guide injected larvae had conserved SacII sites while 6/6 cop1 larvae did not digest with Hyp188I indicating a genomic disruption at the CRISPR PAM site. First and last lanes of gel images contain NEB Low Molecular Weight ladder for reference. (C) Wholebody Tg(mpx:GFP)i114 neutrophil numbers in 2 dpf larvae injected at the one-cell stage with either phenol red (PR), trib1 RNA overexpression (trib1), tyrosinase CRISPant (tyr), trib1 and tyrosinase CRISPant (tyr + trib1), cop1 CRISPant (cop1), or cop1 and trib1 CRISPant (cop1 + trib1). Data shown are mean ± standard error of the mean (SEM), n = 15 fish per group.
 
 The effect of cop1 knockdown on the production of antimicrobial NO production was investigated using the anti-nitrotyrosine antibody. Overexpression of trib1 significantly increased neutrophil anti-nitrotyrosine fluorescence levels compared to the PR control in the tyrosinase controls (Figure 8C, D). The cop1 CRISPant group possessed comparable anti-nitrotyrosine levels to both the PR and tyrosinase control groups. trib1 overexpression in the cop1 CRISPants did not increase anti-nitrotyrosine levels and instead was comparable with the cop1 CRISPants alone and both PR and tyrosinase controls (Figure 8C, D).
 
@@ -127,23 +151,299 @@ Together our findings show a potential therapeutic application of targeting Trib
 
 ## Materials and methods
 
-## Materials availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>TgBAC(mpx:EGFP)i114</td>
+      <td>Elks et al., 2011</td>
+      <td>i114TgRRID: ZFIN_ZDB-ALT-070118-2</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Tg(lyz:nfsβ-mCherry)sh260</td>
+      <td>Buchan et al., 2019</td>
+      <td>sh260Tg RRID: ZFIN_ ZDB-ALT-190925–14</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Tg(mpeg:nlsclover)</td>
+      <td>Bernut et al., 2019</td>
+      <td>sh436Tg RRID: ZFIN_ZDB-ALT-191219-4</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Tg(mpeg1:mCherryCAAX)</td>
+      <td>Bojarczuk et al., 2016</td>
+      <td>sh378Tg RRID: ZFIN_ZDB-ALT-160414–5</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Tg(phd3:GFP)</td>
+      <td>Santhakumar et al., 2012</td>
+      <td>sh144Tg RRID: ZFIN_ZDB-ALT-120925-1</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>TgBAC(il-1β:GFP)</td>
+      <td>Ogryzko et al., 2019</td>
+      <td>Sh445Tg RRID: ZFIN_ZDB-ALT-190307-8</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>trib1sh628/sh628 CRISPR mutant</td>
+      <td>This paper</td>
+      <td>sh628</td>
+      <td>CRISPR mutant</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>trib1 CRISPR–Cas9 guide RNA</td>
+      <td>This paper</td>
+      <td>trib1 CRISPR</td>
+      <td>AGCCCGTGAGCAGATGTCCGCGG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>trib3 CRISPR–Cas9 guide RNA</td>
+      <td>This paper</td>
+      <td>trib3 CRISPR</td>
+      <td>TCAACTCGCTTCAGTCGCAGTGG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>cop1 CRISPR–Cas9 guide RNA</td>
+      <td>This paper</td>
+      <td>cop1 CRISPR</td>
+      <td>CGAGCTGCTCCCGTTCTGAGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib1_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TACGGGCATTTCACTTTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib1_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTGAGGATCCCAGGAGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib3_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ACCTGTTCAATCTTGTTGTCACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib3_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGAAGGAGGCTGACTGAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cop1_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTCAATTATGTCAAGCACTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cop1_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAAGGGTCTTTTCCTGCTTAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib1cloning_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TACGGGCATTTCACTTTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib1cloning_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAGTCCTTAAACCCGACACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib2cloning_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CACCATGAACATACAGAGATCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib2cloning_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTGCTACATCACTCAACGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib3cloning_fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAACTAAGTGCGCCTGTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trib3cloning_rev</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TGCCCTTGAACTCTGCATAC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Danio rerio)</td>
+      <td>tyrosinase CRISPR-Cas9 guide RNA</td>
+      <td>Isles et al., 2019</td>
+      <td>tyr CRISPR</td>
+      <td>GGACTGGAGGACTTCTGGGG(AGG)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium marinum)</td>
+      <td>Mycobacterium marinum strain M (ATCC #BAA-535), containing the pSMT3-mCherry vector</td>
+      <td>van der Sar et al., 2009</td>
+      <td>Mycobacterium marinum strain M ATCC #BAA-535</td>
+      <td>Transgenic</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nitrotyrosine antibody (rabbit polyclonal)</td>
+      <td>Merck</td>
+      <td>06–284; Merck Millipore</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 633-conjugated secondary antibody (goat polyclonal)</td>
+      <td></td>
+      <td>A-21071; ThermoFisher</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DIG RNA Labeling Kit (SP6/T7)</td>
+      <td>Roche</td>
+      <td>11175025910; Roche, Merck</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mMessageMachine SP6 Transcription Kit</td>
+      <td>Invitrogen</td>
+      <td>AM1340; Invitrogen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>QIAGEN</td>
+      <td>28704; QIAGEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zero Blunt TOPO PCR Cloning Kit</td>
+      <td>Invitrogen</td>
+      <td>K280002; Invitrogen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BASiCz</td>
+      <td>Blood atlas of single cells in zebrafish</td>
+      <td>https://www.sanger.ac.uk/tool/basicz/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChopChop</td>
+      <td>ChopChop</td>
+      <td>http://chopchop.cbu.uib.no/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer3</td>
+      <td>ELIXIR</td>
+      <td>https://primer3.ut.ee/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LASX</td>
+      <td>Leica Microsystems</td>
+      <td>https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/downloads/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold DB</td>
+      <td>Deepmind/EMBL-EBI</td>
+      <td>https://alphafold.ebi.ac.uk/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>UCSF</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 10</td>
+      <td>Graphpad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability statement
 
 Further information and requests for resources and reagents developed here, including the newly created genetic tools for tribbles manipulation, should be directed to and will be fulfilled by the corresponding author Philip Elks (p.elks@sheffield.ac.uk).
 
-## Human transcriptomic dataset analysis
+### Human transcriptomic dataset analysis
 
 Expression of TRIB1 in human CD14+ monocytes and the site of a TST was derived from publicly available transcriptomic data deposited in EBI ArrayExpress repository (datasets E-MTAB-8162 and E-MTAB-6816, respectively – https://www.ebi.ac.uk/biostudies/arrayexpress) where the recruitment of patients with active and latent TB was approved by UK National Research Ethics Committees (reference numbers: 14/LO/0505, 16/LO/0776, and 18/LO/0680) and was subject to written informed consent (Pollara et al., 2021).
 
-## Protein structure predictions
+### Protein structure predictions
 
 Predicated protein structures were sourced from AlphaFold DB (Jumper et al., 2021; Varadi et al., 2022). Overlays of predicted protein structures were produced using UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, USA (Pettersen et al., 2021).
 
-## Zebrafish
+### Zebrafish
 
 Zebrafish were raised in The Biological Services Aquarium (University of Sheffield, UK) and maintained according to standard protocols (https://zfin.org/) in Home Office approved facilities. All procedures were performed on embryos pre 5.2 dpf which were therefore outside of the Animals (Scientific Procedures) Act, to standards set by the UK Home Office. Emybros/larvae from clutches were randomly allocated into groups pre manipulation. Adult fish were maintained at 28°C with a 14/10 hr light/dark cycle. Nacre zebrafish were used as a wildtype. Transgenic zebrafish lines used in this study were Tg(mpx:GFP)i114 (Renshaw et al., 2006), TgBAC(il-1β:GFP)sh445 (Ogryzko et al., 2019), Tg(mpeg:nlsclover)sh436 (Bernut et al., 2019), Tg(mpeg1:mCherryCAAX)sh378 (Bojarczuk et al., 2016), Tg(lyz:nfsB.mCherry)sh260 (Buchan et al., 2019), and Tg(phd3:GFP)i144 (Santhakumar et al., 2012).
 
-## CRISPR–Cas9 guide design and CRISPant generation
+### CRISPR–Cas9 guide design and CRISPant generation
 
 Transcript details for trib1 (current Ensembl entry code is ENSDARG00000110963, but previously coded as ENSDARG00000076142 which is the identifier code used in RNAseq datasets), trib2 (ENSDARG00000068179), and trib3 (ENSDARG00000016200) were obtained from Ensembl genome browser (https://www.ensembl.org/). Only one transcript was identified per gene which was used for CRISPR–Cas9 guide design. The web tool ChopChop (https://chopchop.cbu.uib.no) was used to design guide RNAs and primers (trib1: guide RNA: AGCCCGTGAGCAGATGTCCGCGG, F primer: TACGGGCATTTCACTTTCGG, R primer: GTGAGGATCCCAGGAGACC, restriction digest: SacII. trib3: guide RNA: TCAACTCGCTTCAGTCGCAGTGG, F primer: ACCTGTTCAATCTTGTTGTCACA , R primer: GGAAGGAGGCTGACTGAGTC, restriction digest: Mwol. cop1: guide RNA: CGAGCTGCTCCCGTTCTGAGCGG, F primer: TTCAATTATGTCAAGCACTCGG , R primer: CAAGGGTCTTTTCCTGCTTAAA, restriction digest: Hyp188I).
 
@@ -153,40 +453,79 @@ All guide RNAs (Sigma, Merck) were microinjected in the following injection mix:
 
 Generation of trib1−/− mutant zebrafish trib1−/− (trib1SH628/trib1SH628) mutant embryos were generated by CRISPR–Cas9-mediated mutagenesis targeted around a SacII restriction site in the first exon of trib1 (using the method described by Hruscha et al., 2013) and the trib1 guide RNA sequence shown in Table 1 and the Key resources table.
 
+**Table 1.**
+ Summary of CRISPR-Cas9 guideRNAs, relevant primers and restriction enzymes used for genotyping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>guideRNA (5’–3’)</th>
+      <th>F primer (5’–3’)</th>
+      <th>R primer (5’–3’)</th>
+      <th>Enzyme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>trib1</td>
+      <td>AGCCCGTGAGCAGATGTCCGCGG</td>
+      <td>TACGGGCATTTCACTTTCGG</td>
+      <td>GTGAGGATCCCAGGAGACC</td>
+      <td>SacII</td>
+    </tr>
+    <tr>
+      <td>trib3</td>
+      <td>TCAACTCGCTTCAGTCGCAGTGG</td>
+      <td>ACCTGTTCAATCTTGTTGTCACA</td>
+      <td>GGAAGGAGGCTGACTGAGTC</td>
+      <td>Mwol</td>
+    </tr>
+    <tr>
+      <td>cop1</td>
+      <td>CGAGCTGCTCCCGTTCTGAGCGG</td>
+      <td>TTCAATTATGTCAAGCACTCGG</td>
+      <td>CAAGGGTCTTTTCCTGCTTAAA</td>
+      <td>Hyp188I</td>
+    </tr>
+  </tbody>
+</table>
+
 Injected F0 generation were raised to adulthood (~3 months until breeding age) before individual fish were outcrossed with a wildtype (Nacre) zebrafish line. A selection of the offspring (F1, 24 embryos) was genotyped at 2 dpf by extracting the pooled genomic DNA of three embryos with 8 replicates per pair mating. From the genomic DNA, PCR was performed using trib1 primer pair and an overnight restriction digest with SacII (NEB) at 37°C (Key resources table). Digests were run on a 2% (wt/vol) agarose gel at 100 V, positive mutations identified by undigested sample bands.
 
 Batches of F1 embryos that were positive for mutations were pooled and raised. When raised F1 reached adulthood (~3 months), fish were fin clipped and genotyped. PCR was performed on the genomic DNA and purified using QIAquick PCR Purification Kit (QIAGEN) sequencing identified specific mutations in each founder. A male fish with a 14-bp deletion (loss of AGCAGATGTCCGCG) was outcrossed with female wildtype (Nacre) fish. Resulting F2 offspring were raised to adulthood and fin clipped and genotyped. Heterozygous trib1+/− mutant zebrafish (allele number sh628) were in-crossed to generate trib1+/+, trib1+/−, and trib−/− F3 sibling offspring that were used for Mm experiments.
 
-## Cloning and whole-mount in situ hybridisation of trib 1, 2, and 3
+### Cloning and whole-mount in situ hybridisation of trib 1, 2, and 3
 
 RNA probes for zebrafish trib1 (ENSDARG00000110963), trib2 (ENSDARG00000068179), and trib3 (ENSDARG00000016200) were designed and synthesised after cloning the full-length genes into the pCRBlunt II-TOPO vector according to the instructions (ThermoFisher). Plasmid was linearised with the relevant restriction enzyme (trib1: HindIII, trib2: BsrGI, trib3: BsrGI) (NEB) and probes were synthesised according to DIG RNA Labelling Kit (SP6/T7, Roche, Merck). Zebrafish larvae were anaesthetised in 0.168 mg/ml Tricaine (MS-222, Sigma, Merck) in E3 media, which was removed and replaced with 4% (vol/vol in phosphate-buffered saline [PBS]) paraformaldehyde solution (Thermo Fisher) overnight at 4°C to fix. Whole-mount in situ hybridisation was performed as previously described (Thisse and Thisse, 2008).
 
-## RNA injections for trib overexpression experiments
+### RNA injections for trib overexpression experiments
 
 Forward inserts of trib1, trib2, and trib3 were cut from the pCRBlunt II-TOPO constructs using a double restriction digest with BamHI and XbaI at 37°C for 1.5 hr. The expression vector pCS2+ (Addgene) was digested using the same restriction enzyme pair and all digests were gel extracted using QIAquick Gel Extraction Kit (QIAGEN). Gel extracts of vector and trib digests were ligated into pCS2+ via overnight incubation at room temperature with T4 DNA ligase according to the manufacturer’s instructions (NEB). Constructs were confirmed using sequencing performed by the University of Sheffield’s Genomics core facility. RNA of each trib isoform was transcribed using mMessageMachine kit (Invitrogen) and diluted to 100 ng/μl in PR (diluted 1:10 in RNAse free water) for microinjection. Embryos were microinjected with 1 nl of 100 ng/μl RNA (measured using a 10-mm graticule) at the single-cell stage as previously described (Elks et al., 2011). RNA of dominant active (DA) and negative (DN) hif-1ab variants (ZFIN: hif1ab) were used for controls (Elks et al., 2013; Elks et al., 2011).
 
-## Mycobacterium marinum culture and injection
+### Mycobacterium marinum culture and injection
 
 Bacterial infection experiments were performed using Mycobacterium marinum strain M (ATCC #BAA-535), containing the pSMT3-mCherry vector (van der Sar et al., 2009). Liquid cultures were prepared from bacterial plates before washing in PBS and diluting in 2% (wt/vol) polyvinylpyrrolidone40 (PVP40, Sigma, Merck) for injection as described previously (Benard et al., 2012). Injection inoculum was prepared to 100 colony-forming units (cfu)/nl for all burden experiments, loaded into borosilicate glass microcapillary injection needles (World Precision Instruments, pulled using a micropipette puller device, WPI) before microinjection into the circulation of 30 hpf zebrafish larvae via the caudal vein.
 
 Prior to injection, zebrafish were anaesthetised in 0.168 mg/ml Tricaine (MS-222, Sigma, Merck) in E3 media and were transferred onto 1% agarose in E3 + methylene blue plates, removing excess media. All pathogens were injected using a microinjection rig (WPI) attached to a dissecting microscope. A 10-mm graticule was used to measure 1 nl droplets of injection volume, and for consistency, droplets were tested every 5–10 fish and the needle recalibrated if necessary. After injection, zebrafish were transferred to fresh E3 media for recovery and maintained at 28°C.
 
-## Anti-nitrotyrosine immunostaining
+### Anti-nitrotyrosine immunostaining
 
 Larvae were fixed in 4% (vol/vol) paraformaldehyde in PBS overnight at 4°C, and nitrotyrosine levels were immune labelled using immunostaining with a rabbit polyclonal anti-nitrotyrosine antibody (Merck) and detected using an Alexa Fluor-conjugated secondary antibody (Thermo Fisher) as previously described (Elks et al., 2014; Elks et al., 2013).
 
-## Confocal microscopy
+### Confocal microscopy
 
 TgBAC(il-1β:GFP)sh445 larvae and larvae immune-stained for nitrotyrosine were imaged using a Leica DMi8 SPE-TCS microscope using a HCX PL APO 40×/1.10 water immersion lens. Larvae were anaesthetised in 0.168 mg/ml Tricaine and mounted in 1% (wt/vol) low-melting agarose (Sigma, Merck) containing 0.168 mg/ml tricaine (Sigma, Merck) in 15μ-Slide 4 well glass bottom slides (Ibidi).
 
-## Stereo microscopy
+### Stereo microscopy
 
 Zebrafish larvae were anaesthetised in 0.168 mg/ml Tricaine and transferred to a 50-mm glass bottomed FluoroDish (Ibidi). Zebrafish were imaged using a Leica DMi8 SPE-TCS microscope fitted with a Hamamatsu ORCA Flash 4.0 camera attachment using a HC FL PLAN 2.5×/0.07 dry lens. Whole-mount in situ staining was imaged using a Leica MZ10F stereo 14 microscope fitted with a GXCAM-U3 series 5MP camera (GT Vision).
 
-## Image analysis
+### Image analysis
 
 To calculate bacterial burden, fluorescent pixel count was measured using dedicated pixel count software (Stoop et al., 2011). For confocal imaging of anti-nitrotyrosine staining or transgenic lines, ImageJ (Schindelin et al., 2012) was used to quantify corrected total cell fluorescence (Elks et al., 2014; Elks et al., 2013).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was calculated and determined using GraphPad Prism 10.0. Quantified data figures display all data points, with error bars depicting standard error of the mean unless stated otherwise in the figure legend. Statistical significance was determined using one-way analysis of variance with Bonferroni’s multiple comparisons post hoc test/Kruskal–Wallis for experiments with three or more experimental groups, or paired/unpaired T-test/Wilcoxon matched pairs signed rank test for experiments with two experimental groups, unless stated otherwise in figure legend. p values shown are: *p < 0.05, **p < 0.01, and ***p < 0.001.

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.47550.001 Alvinocaridid shrimps are emblematic representatives of the deep hydrothermal vent fauna at the Mid-Atlantic Ridge. They are adapted to a mostly aphotic habitat with extreme physicochemical conditions in the vicinity of the hydrothermal fluid emissions. Here, we investigated the brain architecture of the vent shrimp Rimicaris exoculata to understand possible adaptations of its nervous system to the hydrothermal sensory landscape. Its brain is modified from the crustacean brain ground pattern by featuring relatively small visual and olfactory neuropils that contrast with well-developed higher integrative centers, the hemiellipsoid bodies. We propose that these structures in vent shrimps may fulfill functions in addition to higher order sensory processing and suggest a role in place memory. Our study promotes vent shrimps as fascinating models to gain insights into sensory adaptations to peculiar environmental conditions, and the evolutionary transformation of specific brain areas in Crustacea.
+Alvinocaridid shrimps are emblematic representatives of the deep hydrothermal vent fauna at the Mid-Atlantic Ridge. They are adapted to a mostly aphotic habitat with extreme physicochemical conditions in the vicinity of the hydrothermal fluid emissions. Here, we investigated the brain architecture of the vent shrimp Rimicaris exoculata to understand possible adaptations of its nervous system to the hydrothermal sensory landscape. Its brain is modified from the crustacean brain ground pattern by featuring relatively small visual and olfactory neuropils that contrast with well-developed higher integrative centers, the hemiellipsoid bodies. We propose that these structures in vent shrimps may fulfill functions in addition to higher order sensory processing and suggest a role in place memory. Our study promotes vent shrimps as fascinating models to gain insights into sensory adaptations to peculiar environmental conditions, and the evolutionary transformation of specific brain areas in Crustacea.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ The shrimp Rimicaris exoculata (Williams and Rona, 1986) is the most intensely s
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47550/elife-47550-fig1-v2.jpg)
 
-**Figure 1.:** Rimicaris exoculata.(A,B) Swarms of thousands of R. exoculata individuals are crowded along the walls of black smoker hydrothermal vents at the TAG vent site (3600 m depth), Mid-Atlantic Ridge (IFREMER/Nautile6000, BICOSE 2018 cruise). (C) Dorsal view of the cephalothorax of R. exoculata, showing voluminous gill chambers covered by the branchiostegites, dorsal eyes (i.e. ocular plate) with two elongated retinae fused in the anterior region, and sensory appendages (antennae 1 and 2). Scale bar = 5 mm. (D) Black-white inverted image from an X-ray micro-CT scan showing a dorsal overview of the R. exoculata cephalothorax, with 3D reconstruction of the brain and associated nerves. Abbreviations: see text and appendix 1.
+**Figure 1.:** (A,B) Swarms of thousands of R. exoculata individuals are crowded along the walls of black smoker hydrothermal vents at the TAG vent site (3600 m depth), Mid-Atlantic Ridge (IFREMER/Nautile6000, BICOSE 2018 cruise). (C) Dorsal view of the cephalothorax of R. exoculata, showing voluminous gill chambers covered by the branchiostegites, dorsal eyes (i.e. ocular plate) with two elongated retinae fused in the anterior region, and sensory appendages (antennae 1 and 2). Scale bar = 5 mm. (D) Black-white inverted image from an X-ray micro-CT scan showing a dorsal overview of the R. exoculata cephalothorax, with 3D reconstruction of the brain and associated nerves. Abbreviations: see text and appendix 1.
 
 A fundamental question regarding vent shrimp’s environment and lifestyle is how they detect hydrothermal emissions and further select their microhabitat. Both abiotic and biotic factors are important to determine the animal’s local distribution at hydrothermal vent sites (Le Bris et al., 2005; Luther et al., 2001). Several studies showed that R. exoculata possesses a range of morphological, anatomical and physiological adaptations to the hydrothermal environment, related for instance to ectosymbiosis with bacteria (Casanova et al., 1993; Ponsard et al., 2013; Zbinden et al., 2004), respiration in hypoxic conditions (Hourdez and Lallier, 2006; Lallier and Truchot, 1997), or thermal stress (Cottin et al., 2010; Ravaux et al., 2003). However, the sensory mechanisms and adaptations used by the shrimps to perceive their habitat have only been partially investigated (see references below) despite their importance in understanding the lifestyle of vent shrimp species and their long-term evolution.
 
@@ -41,11 +41,11 @@ Crustacean brain structure is best understood in crayfish, crabs, and clawed and
 
 ## Results
 
-## Gross morphology of the cephalothorax
+### Gross morphology of the cephalothorax
 
 The wide cephalothorax of Rimicaris exoculata displays large branchiostegites (bs) which surround voluminous gill chambers (Figure 1C). The animals do not possess eyestalks but rather have bilaterally paired, wing-shaped eyes with a conspicuous, whitish retina that is fused in the anterior region to form the ocular plate (ocp). The lateral parts of the eye extend further dorsally and towards the posterior region of the cephalothorax (Figures 1C and 2A). The first pair of antennae (A1) is biramous, with two flagella of similar length (Figure 1C). The second pair of antennae (A2) consists of a basal element, the scaphocerite (sc), and a long uniramous flagellum, slightly wider than those of the antennae 1 (Figure 1C). Micro-CT scans show that the brain is located in the anterior region of the cephalothorax, and receives main sensory afferences from the antenna 1 (A1Nv) and antenna 2 (A2Nv) nerves anteriorly, from the eye nerves (ENv) posterodorsally, from the tegumentary nerves (TNv) laterally, and from the oesophageal connectives (oc) posteriorly (Figure 1D).
 
-## Overview of the brain architecture
+### Overview of the brain architecture
 
 Decapod crustacean brains are subdivided into three successive neuromeres: proto-, deuto- and tritocerebrum. In R. exoculata, these regions form a single, medially located mass (i.e. the median brain) (Figures 1D and 2A). The visual neuropils are closely associated with the lateral protocerebrum (lPC), at a posterodorsal position (Figure 2A). This arrangement contrasts with other shallow-water carideans and most decapod crustaceans (see for example Cronin and Porter, 2008; Meth et al., 2017), in which the lateral protocerebrum is located at some distance from the median brain, in movable eyestalks (Figure 2B). The deutocerebrum (DC) is associated with the antenna one nerves, and the tritocerebrum (TC) is associated with the antenna two nerves (Figure 2). The brain’s neuraxis is not aligned with body axis in R. exoculata, but is bent dorsally so that the protocerebrum is situated posterodorsally to the deutocerebrum (Figure 2A).
 
@@ -57,13 +57,13 @@ Data from micro-CT scans and aligned serial paraffin sections provided a consist
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47550/elife-47550-fig3-v2.jpg)
 
-**Figure 3.:** R.exoculata.3D reconstruction (A) and schematic representations (B,C) of the brain and neuropils of R. exoculata viewed from a dorsal, slightly anterior direction. The open white arrow points towards anterior of the body axis. In (C), the clusters of cell somata associated with the neuropils are shown. The 3D reconstruction is based on an image stack obtained by serial sectioning of paraffin-embedded material; the sections were aligned manually by shifting and rotating each section using Amira. Abbreviations: see text and appendix 1.
+**Figure 3.:** 3D reconstruction (A) and schematic representations (B,C) of the brain and neuropils of R. exoculata viewed from a dorsal, slightly anterior direction. The open white arrow points towards anterior of the body axis. In (C), the clusters of cell somata associated with the neuropils are shown. The 3D reconstruction is based on an image stack obtained by serial sectioning of paraffin-embedded material; the sections were aligned manually by shifting and rotating each section using Amira. Abbreviations: see text and appendix 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/47550/elife-47550-fig4-v2.jpg)
 
-**Figure 4.:** R.exoculata.(A–D) 3D reconstruction of the brain of R. exoculata in anterior-left (A,B) and left (C, D) views, based on an image stack obtained by serial sectioning of paraffin-embedded material. (B and D) include the cell clusters. The brain orientation is sketched in the bottom right corners. (E,F) Lateral sections of the brain of R. exoculata from micro-CT scans (black-white inverted images). The section’s positions are depicted in the bottom left corners. White asterisk in (E) indicates the entrance of axons from the cell cluster (5) into the hemiellipsoid body. Black asterisk in (F) indicates the tract connecting the anterior region of the terminal medulla to the hemiellipsoid body. The open white arrows point towards anterior of the body axis. Scale bars = 100 µm. Abbreviations: see text and appendix 1.
+**Figure 4.:** (A–D) 3D reconstruction of the brain of R. exoculata in anterior-left (A,B) and left (C, D) views, based on an image stack obtained by serial sectioning of paraffin-embedded material. (B and D) include the cell clusters. The brain orientation is sketched in the bottom right corners. (E,F) Lateral sections of the brain of R. exoculata from micro-CT scans (black-white inverted images). The section’s positions are depicted in the bottom left corners. White asterisk in (E) indicates the entrance of axons from the cell cluster (5) into the hemiellipsoid body. Black asterisk in (F) indicates the tract connecting the anterior region of the terminal medulla to the hemiellipsoid body. The open white arrows point towards anterior of the body axis. Scale bars = 100 µm. Abbreviations: see text and appendix 1.
 
-## Lateral protocerebrum: the visual neuropils
+### Lateral protocerebrum: the visual neuropils
 
 R. exoculata presents three successive visual neuropils, which are the lamina (La), medulla (Me), and lobula (Lo), from distal to proximal (Figures 3, 4 and 5). The lamina is thin, flattened and elongated dorsally (Figures 4A,D and 5B-D). The cell cluster (1) dorsally covers the lamina (Figures 3C, 4B,D and 5C). Numerous axon bundles from the entire length of the retina (ENv) converge onto the lamina (Figures 3, 4A–D and 5D). The retina consists of photoreceptor organelles, the rhabdoms (dR) (for which the degradation is ascribed to the damaging exposure to intense light during sampling and manipulation of the specimens at the surface), which overlie a white layer of reflecting cells, the tapetum (T), and clusters of pigment cells (pc) (Figure 5D, Figure 11A; Nuckley et al., 1996; O'Neill et al., 1995). The medulla is spherical (Figures 3, 4A–D and 5B,C) and is connected by thin fibers to the lamina (Figure 5C), the lobula (Figure 5B) and by a dense fibers tract to the terminal medulla (Figure 5B, white arrowhead). The lobula is slightly larger than the medulla, and is adjacent to the posterior side of the terminal medulla (TM) (Figures 3, 4A–D,F, 5A and 11A). The merged cell clusters (2) and (3) cannot be clearly separated and cover both the medulla and the lobula (Figures 3C, 4B,D and 5A–C).
 
@@ -71,7 +71,7 @@ R. exoculata presents three successive visual neuropils, which are the lamina (L
 
 **Figure 5.:** (A–C) Frontal histological sections in the posterior region of the brain, from anterior to posterior, showing the visual neuropils, associated cell clusters, and part of the vascular system. The white arrow head in (B) shows the fiber tract connecting the medulla to the terminal medulla. (D) Sagittal histological section of the brain, showing the eye nerve fibers projecting from the anterodorsal retina to the lamina. White asterisks indicate the entrance of axons from the cell cluster (5) into the hemiellipsoid body intermediate layer. The open white arrow points towards anterior of the body axis. The section’s positions are sketched in the bottom left corners. Scale bars = 100 µm. Abbreviations: see text and appendix 1.
 
-## Lateral protocerebrum: the hemiellipsoid body and terminal medulla
+### Lateral protocerebrum: the hemiellipsoid body and terminal medulla
 
 The lateral protocerebrum dominates the R. exoculata brain, with the hemiellipsoid body (HN), the terminal medulla (TM), together with the cell clusters (4) and (5) representing about 25% of the brain volume. The hemiellipsoid body is well defined, with a voluminous, hemispherical cap region (HNcap) located dorsally (Figures 3, 4, 5D and 6A–F) and displaying synapsin-like immunoreactivity (SYNir) (Figure 6G–I). The core region of the hemiellipsoid body (HNcore) is fused posteriorly with the terminal medulla (Figures 4F and 6B,D,E). The cap and core regions are separated by an arcuate intermediate layer (IL) (Figures 4E and 6A,B,D,E,G–I) which receives parallel afferent fibers from the terminal medulla anteriorly (namely the HN-TM tract) (Figures 3A,B, 4F and 6A–C, black asterisks) and a massive bundle of neurites from somata in the cell cluster (5) at the medial side (Figures 4E, 5D and 6C–E, white asterisks). Some of the intermediate layer fibers display allatostatin-like immunoreactivity (ASTir) near the cap region (Figure 6G). The intermediate layer is devoid of SYNir (Figure 6J). The cap region is characterized by synaptic sites forming microglomeruli (Figure 6H’) and is also innervated by serotonergic neurons (Figure 6H). The cell cluster (5) is voluminous (Figures 3C, 4B and 6B–E,I,J) and contains approximately 30,000 cell somata of the so-called globuli cells (Wolff et al., 2017). The hemiellipsoid body receives input from the olfactory neuropils via the projection neuron tract (PNT) in the posterior region (Figures 3A and 6B,F).
 
@@ -81,7 +81,7 @@ The lateral protocerebrum dominates the R. exoculata brain, with the hemiellipso
 
 The terminal medulla is a large and complex neuropil. Anteriorly, it is shaped like a sphere (Figures 3, 4A,C,F and 6A–C), and it connects to the intermediate layer of the hemiellipsoid body via the HN-TM tract (Figures 3A,D, 4F and 6A–C, black asterisks). Posterior to this region, the terminal medulla is large, crossed by seemingly unstructured networks of fibers (Figures 3A, 4C,F and 6D–F) and displays SYNir (Figure 6I,J). It is innervated by neurites from the cell cluster (4) (Figure 6D, white arrowhead), and further connects again to the intermediate layer of the hemiellipsoid body via radiating fiber bundles (Figure 6E, black arrowheads).
 
-## Median protocerebrum
+### Median protocerebrum
 
 The median protocerebrum (mPC) comprises two medially fused neuropils, the anterior (AMPN) and posterior (PMPN) medial protocerebral neuropils. The AMPN connects to the terminal medulla of the lateral protocerebrum anteriorly via the protocerebral tract (PT) (Figures 3B and 6C,D) and the PMPN via the posterior protocerebral tract (PPT), the latter containing neurites with strong serotonin-immunoreactivity (5HTir) (Figure 7C) and seemingly interconnecting the terminal medulla of both hemispheres. Both, the AMPN and PMPN are separated by the unpaired central body neuropil (CB) (Figure 3), which displays ASTir (Figure 7B), weak SYNir (Figure 7A) and strong 5HTir (Figure 7C). Overall, the median protocerebrum contains many fibers from serotonergic neurons, partly from the cell cluster (x) (which likely refers to the cell clusters (12 , 13) and (17) according to Sandeman et al., 1992), which define well the elements of the central complex, that is the protocerebral bridge (PB) and the central body (CB), and also the posterior region associated to the posterior protocerebral tract. Posteriorly to the central body, fiber bundles of the projection neuron tracts from both hemispheres meet in a region with strong SYNir, that we will call the projection neuron tract central neuropil (PNTCN) (Figure 7A).
 
@@ -89,7 +89,7 @@ The median protocerebrum (mPC) comprises two medially fused neuropils, the anter
 
 **Figure 7.:** (A–C) Black-white inverted images of horizontal sections of the median protocerebrum labeled for synapsin immunoreactivity (A), allatostatin-like immunoreactivity (B) or serotonin immunoreactivity (C). The section’s positions are sketched in the bottom right corners. Black arrows point towards anterior of the body axis. Scale bars = 100 µm. Abbreviations: see text and appendix 1.
 
-## Deutocerebrum
+### Deutocerebrum
 
 In the deutocerebrum, a paired neuropil with a conspicuous structure is located laterally, the lobe-shaped olfactory neuropil (ON) (Figures 3, 4A–D,F, 5D and 8A–F). It is composed of approximately 180 wedge-shaped neuropil units, the olfactory glomeruli (og), which are arranged radially around the periphery of a non-synaptic core (Figures 3B, 4F, 5D and 8A–F). Each glomerulus shows strong SYNir (Figure 8E–F), as well as ASTir which highlights a subdivision of each glomerulus into a cap (c), subcap (sbc) and base (b) region (Figure 8E’). The sensory input of the olfactory neuropil comes from the olfactory sensory neurons innervating the aesthetasc sensilla on the lateral flagellum of the antenna 1. The somata of olfactory interneurons located in the cell cluster (9/11) innervate fibers of the olfactory neuropil, some of which display ASTir (Figure 8H). These fibers enter via the medial foramen (mF) into the core of the neuropil (Figure 8C,E), from where they target the glomerular base region (Figure 8E), or cross to the lateral foramen (lF) (Figure 8A,C,E) to spread out laterally and innervate the glomerular cap region (Figure 8E, white arrowhead). The medial foramen is also the place where efferent fibers exit from the olfactory neuropil. These are the axons of the olfactory projection neurons that form the projection neuron tract (Figure 8B,D). A projection neuron tract neuropil (PNTN) as known from other decapods (e.g. Sandeman et al., 1992; Harzsch and Hansson, 2008; Krieger et al., 2012a) is identifiable close to the ascending branch of the tract (Figure 8E,F). The projection neuron tract then transverses the median protocerebrum and projects to the lateral protocerebrum (see above).
 
@@ -99,11 +99,11 @@ In the deutocerebrum, a paired neuropil with a conspicuous structure is located 
 
 The lateral antenna one neuropil (LAN) is located medially to the olfactory neuropil. It is U-shaped (Figures 3 and 8A,B,H) and displays strong SYNir, as well as ASTir, which reveals a transversely stratified pattern (Figure 8G). This neuropil connects posterodorsally to the median protocerebrum (Figure 8G,H). The median antenna one neuropil (MAN) is small, poorly defined, and located in the center of the deutocerebrum, below the anterior region of the median protocerebrum and between the paired lateral antenna one neuropils (Figure 3A,B).
 
-## Tritocerebrum
+### Tritocerebrum
 
 The tritocerebrum comprises the antenna two neuropil (AnN), which has a cylindrical shape and lies in front of the oesophageal connectives (Figures 3 and 4, 8 HA). SYNir and ASTir show a transversely stratified pattern within this neuropil (Figure 8I). Poorly differentiated from the antenna two neuropil, the tegumentary neuropil (TN) is located posterodorsally (Figure 3).
 
-## The organ of Bellonci
+### The organ of Bellonci
 
 The organ of Bellonci (OB) is typical for many crustaceans but its sensory function remains unclear (Chaigneau, 1994). In R. exoculata, this organ is conspicuous and comprises onion bodies (Ob) structures connected to a well-developed nerve tract (OBNv). The onion bodies are situated on the anterolateral side of the brain, in front of the hemiellipsoid body (Figures 3, 4A–D, 5D and 9A). They represent a cluster of about fifty densely packed lobules (Figure 9A,B), many of them containing elements of granular appearance (Figure 9B’, white arrowhead). Some lobules are further located in the proximal region of OBNv (Figure 9B). This nerve is large in its proximal region, and progressively tapers as it draws away from the brain (Figure 9A). Anterodorsally, the nerve extends through the retinal layers and connects underneath the cuticle of the ocular plate (Figure 9C,C’).
 
@@ -111,7 +111,7 @@ The organ of Bellonci (OB) is typical for many crustaceans but its sensory funct
 
 **Figure 9.:** (A–B’) Frontal histological sections of the anterior region of the brain, showing conspicuous onion body-structures from which a nerve tract emanates (A,B), and which are seemingly closely associated to the cerebral vascular system (B’) and contain elements of granular appearance (B’), white arrowhead). The section’s positions are sketched in the bottom left corners. (C) Anterodorsolateral overview of the cephalothorax from micro-CT scan. Asterisks indicate the position where the organ of Bellonci nerve connects to the cuticle beneath the anterior region of the ocular plate. (C’) shows a 3D reconstruction of the brain and the organ of Bellonci nerve in this region. White arrow points towards anterior of the body axis. Scale bars = 100 µm. Abbreviations: see text and appendix 1.
 
-## The myoarterial formation and cerebral vascular system
+### The myoarterial formation and cerebral vascular system
 
 The myoarterial formation (maf) (or cor frontale, auxiliary heart) underlies the dorsal carapace and is located between the paired eyes, above the brain (Figure 10A,B,C). This organ is voluminous, being almost as long as the elongated retina, and extends ventrally towards the dorsal region of the brain (Figure 10B’,C’). Two adjacent and parallel muscle bundles (mafm) penetrate through the myoarterial formation (Figure 10A) and attach to the cuticle via tendons located either anteriorly (Ta) or dorsally (Td) (Figure 10B,C). Two thinner muscular bundles cross the myoarterial formation in its middle region, perpendicular to the main adjacent muscles, and are attached both to the dorsal and ventral cuticle of the cephalothorax, by secondary dorsal and ventral tendons (T’d, Figure 10B,C; T’v, Figure 10B’).
 
@@ -123,9 +123,243 @@ Anteriorly, below the junction of the ocular plate with the dorsal carapace, the
 
 The cerebral vascular system of R. exoculata is considerably developed, with blood vessels supplying all brain neuropils and cell clusters, as in other crustaceans, including large vessels that irrigate the visual neuropils (Figure 5A,C), the deutocerebrum (Figure 8B) and the lateral protocerebrum (Figure 9B,B’). The Azan staining reveals pink-to-purple cerebral arteries that enter the brain (CA) (Figures 5C,D, 8A,B and 10A), and orange vessels inside the brain (V) (Figures 5A,C, 8B and 9B).
 
-## Comparisons of the olfactory system and the higher integrative centers with other crustaceans
+### Comparisons of the olfactory system and the higher integrative centers with other crustaceans
 
 Table 1 presents a comparison of aesthetasc and olfactory neuropil characteristics in different taxa of crustaceans. The number of olfactory glomeruli and their unitary volume in R. exoculata fit within the ranges displayed by other decapods. However, this species presents relatively small olfactory neuropils (excluding the fibrous core) compared to other species with roughly the same body size, such as the caridean Palaemon elegans and the anomuran Coenobita clypeatus. Yet, other species of about the same body size (e.g. the crayfish Procambarus clarkii and the isopod Saduria entomon) possess olfactory neuropils of even smaller volume than those of R. exoculata.
+
+**Table 1.**
+ Comparative table summarizing characteristics of aesthetascs and olfactory neuropils in several malacostracan species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Aesthetascs</th>
+      <th colspan="3">Olfactory neuropils (ON)</th>
+      <th rowspan="2">References</th>
+    </tr>
+    <tr>
+      <th>Species (body length)</th>
+      <th>Total number</th>
+      <th>Length (µm)</th>
+      <th>Neuropil total volume (x10^6 µm3)</th>
+      <th>Mean glomerular volume (x10^3 µm3)</th>
+      <th>Glomerular number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leptostraca</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nebalia herbstii (1.4 cm)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>60</td>
+      <td>Kenning et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Stomatopoda</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neogonodactylus oerstedii (4 cm)</td>
+      <td>80</td>
+      <td>400</td>
+      <td>-</td>
+      <td>110</td>
+      <td>70</td>
+      <td>Derby et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Isopoda</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Saduria entomon (8 cm)</td>
+      <td>40–60</td>
+      <td>240</td>
+      <td>3</td>
+      <td>34</td>
+      <td>80</td>
+      <td>Kenning and Harzsch, 2013; Pynnönen, 1985</td>
+    </tr>
+    <tr>
+      <td>Dendrobranchiata</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Penaeus vannamei (7 cm)</td>
+      <td>280</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>&lt;100</td>
+      <td>Wittfoth and Harzsch, 2018; Zeng et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Caridea</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Palaemon elegans (7 cm)</td>
+      <td>280</td>
+      <td>230</td>
+      <td>120</td>
+      <td>225</td>
+      <td>530</td>
+      <td>Zbinden et al., 2017; this study*</td>
+    </tr>
+    <tr>
+      <td>Rimicaris exoculata (6 cm)</td>
+      <td>206</td>
+      <td>170</td>
+      <td>56</td>
+      <td>155</td>
+      <td>370</td>
+      <td>Zbinden et al., 2017; this study</td>
+    </tr>
+    <tr>
+      <td>Achelata</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Panulirus argus (20–60 cm)</td>
+      <td>3000</td>
+      <td>1000</td>
+      <td>154</td>
+      <td>118</td>
+      <td>1332</td>
+      <td>Beltz et al., 2003; Grünert and Ache, 1988</td>
+    </tr>
+    <tr>
+      <td>Homarida</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Homarus americanus (20–60 cm)</td>
+      <td>2000</td>
+      <td>600</td>
+      <td>141</td>
+      <td>592</td>
+      <td>249</td>
+      <td>Beltz et al., 2003; Guenther and Atema, 1998</td>
+    </tr>
+    <tr>
+      <td>Astacida</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Procambarus clarkii (9 cm)</td>
+      <td>133</td>
+      <td>-</td>
+      <td>10</td>
+      <td>20</td>
+      <td>503</td>
+      <td>Beltz et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Anomura</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Birgus latro (20 cm)</td>
+      <td>1700</td>
+      <td>-</td>
+      <td>375</td>
+      <td>280</td>
+      <td>1338</td>
+      <td>Krieger et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Coenobita clypeatus (6 cm)</td>
+      <td>519</td>
+      <td>-</td>
+      <td>120</td>
+      <td>154</td>
+      <td>799</td>
+      <td>Beltz et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Pagurus bernhardus (3 cm)</td>
+      <td>673</td>
+      <td>-</td>
+      <td>-</td>
+      <td>171</td>
+      <td>536</td>
+      <td>Tuchina et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Brachyura</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Carcinus maenas (9 cm)</td>
+      <td>200</td>
+      <td>750</td>
+      <td>-</td>
+      <td>247</td>
+      <td>-</td>
+      <td>Fontaine et al., 1982; Hallberg and Skog, 2011</td>
+    </tr>
+  </tbody>
+</table>
+
+_Estimates of the animal’s body lengths are given for comparison. Carapace width is given for B. latro and C. maenas, and total length is given for all other species.* The palaemonid shrimp Palaemon elegans was investigated in the present study for comparison, as a species closely-related to R. exoculata among the Caridea family._
 
 The higher integrative centers (i.e. the hemiellipsoid body and the terminal medulla, associated with cell cluster 5) are especially well-developed in R. exoculata in relation to the relative size of the olfactory neuropils, compared to other crustaceans (Figure 11). As an example, from relative volumes obtained from 3D reconstructions, the higher integrative centers in R. exoculata occupy approximately 25% of the total brain volume, similarly to the caridean shrimp P. elegans (22%) but twice more than in the giant robber crab Birgus latro (13%). However, the olfactory neuropils of P. elegans and B. latro occupy roughly two and six times more volume than those of R. exoculata, values that represent 4.2%, 17% and 2.7% of the total brain volume, respectively in these species.
 
@@ -135,15 +369,15 @@ The higher integrative centers (i.e. the hemiellipsoid body and the terminal med
 
 ## Discussion
 
-## General remarks
+### General remarks
 
 The alvinocaridid shrimp Rimicaris exoculata is an endemic species to hydrothermal vent habitats, well adapted to these deep sea environments with peculiar physicochemical conditions. The present study sets out to gain insights into adaptations to specific features of the vent habitat (e.g. low ambient light levels and steep variations of chemical concentrations). The analysis of the brain architecture in R. exoculata aims to highlight relative investments into certain neuronal subsystems, in relation with the animal’s habitat and lifestyle. The general anatomy of the brain of R. exoculata corresponds in many aspects to the ground pattern of the malacostracan crustacean brain (Kenning et al., 2013), including the subdivision into proto-, deuto- and tritocerebrum, the location of main nerves and the presence of distinct cell clusters. However, the brain of R. exoculata also exhibits morphological differences to other malacostracans, especially at the level of the lateral protocerebrum. The organ of Bellonci is especially conspicuous (also observed by Charmantier-Daures and Segonzac, 1998), but its sensory function remains elusive. In the following, we will focus on the structure of major sensory centers (i.e. the visual system, the olfactory system and the higher integrative centers). We will also discuss the evolution of the hemiellipsoid bodies as higher integrative brain centers, which are substantial in R. exoculata. We will begin our account by addressing the neurovascular system that supplies the brain.
 
-## The neurovascular system
+### The neurovascular system
 
 In crustaceans, the neurovascular system has been described mainly in crayfish (Chaves da Silva et al., 2013; Scholz et al., 2018), crabs (McGaw, 2005; McGaw and Reiber, 2002; Sandeman, 1967) and spiny lobsters (Steinacker, 1979) (reviews in McMahon, 2001; Steinacker, 1979; Steinacker, 1978; Wilkens, 1999). The brain and eyes are supplied with hemolymph via the anterior aorta system, which originates antero-medially from the heart and runs between the stomach and the dorsal integument (Scholz et al., 2018). Anteriorly, a dilatation of the anterior aorta, the myoarterial formation (Scholz et al., 2018; also named the cor frontale in for example McGaw (2005); Steinacker (1978) which functions as an auxiliary heart, pumps the hemolymph specifically towards the anterior part of the central nervous system. In malacostracan crustaceans, the myoarterial formation above the brain gives rise to a descending cerebral artery, which supplies the median brain, and to two ophthalmic arteries that turn laterally and extend into the eyestalks to supply the visual neuropils (Chaves da Silva et al., 2013; McGaw, 2005; Scholz et al., 2018). In R. exoculata, consistent with the absence of eyestalks, the myoarterial formation and its arteries differ in shape, size and position from those previously described in other malacostracans (Figure 10). Among the potential corollaries for the pronounced neurovascular system in R. exoculata, one is the more efficient hemolymph pumping to the brain. In crustaceans, the perfusion of the brain is modulated by physiological or environmental factors, such as hypoxia (Reiber and McMahon, 1998). Because the pure hydrothermal fluid is anoxic, the mixing of the fluid with the surrounding seawater can create hypoxic conditions for vent animals (Childress and Fisher, 1992; Schmidt et al., 2008). Known adaptations to hypoxia in vent crustaceans include an hemocyanin with a higher affinity for oxygen compared to shallow-water species (Chausson et al., 2004; Lallier and Truchot, 1997; Sanders et al., 1988). A very pronounced capillary network was also observed in hydrothermal vent alvinellid polychaetes (Hourdez and Lallier, 2006). Accordingly, the pronounced myoarterial formation and large cerebral arteries in R. exoculata could represent a particularly efficient system for oxygen delivery to the brain to cope with low availability of oxygen.
 
-## A visual system adapted to a dim light environment
+### A visual system adapted to a dim light environment
 
 Van Dover et al. (1989) described the R. exoculata eyes as a pair of large anteriorly fused organs that underlie the transparent dorsal carapace of the cephalothorax and demonstrated the presence of rhodopsin-like visual pigments in high quantity, with a maximum absorption at 500 nm. Subsequent analyses showed that the eyes comprise a smooth cornea located above a dense layer of hypertrophied rhabdoms, under which a white layer of reflective cells, the tapetum, is located and maximizes the absorption of light by the photoreceptors (Chamberlain, 2000; Jinks et al., 1998; Nuckley et al., 1996; O'Neill et al., 1995). These elements of the retina were all discernible in our histological sections (Figure 5D), although the rhabdoms were strongly degenerated, a process ascribed to the damaging exposure to intense light during sampling (Herring et al., 1999; Johnson et al., 1995). The eyes of R. exoculata lack the dioptric apparatus which characterizes the ommatidia of compounds eye of pelagic and shallow water crustaceans and thus cannot form images (Chamberlain, 2000; Jinks et al., 1998; Nuckley et al., 1996; O'Neill et al., 1995), but their highly sensitive naked retina seems adapted for the detection of low ambient light levels, to the detriment of spatial resolution (Chamberlain, 2000; Van Dover et al., 1989).
 
@@ -153,7 +387,7 @@ Many eyeless representatives of Crustacea have partially or totally lost their c
 
 However, the fact that neuronal elements indicative for a functional visual system are present in R. exoculata must mean that there is light to exploit as an environmental cue. Also, the unusual nature of the visual system of R. exoculata suggests that it exploits a specific type of signal. One prominent hypothesis refers to the thermal black body radiation emitted by the hot hydrothermal fluid at the chimney’s exit with a temperature of up to 350°C, which peaks in the infrared but part of its spectrum extends into the visible light (Pelli and Chamberlin, 1989; Van Dover et al., 1996; Van Dover et al., 1988; Van Dover and Fry, 1994). The ability to localize this radiation could serve both to attract the shrimp to optimal areas for supplying its symbionts with vital, reduced compounds of the hydrothermal fluid, and to allow avoidance of scorching fluid (Van Dover et al., 1989). Visual cues other than thermal radiation are likely to be also exploited by R. exoculata, related to turbulence, mixing and precipitation, such as chemi-, crystallo-, tribo- and sono-luminescence, for which the emission spectra lie between 450–800 nm (Reynolds and Lutz, 2001; Tapley et al., 1999; Van Dover et al., 1996; Van Dover and Fry, 1994; White, 2000; White et al., 2002).
 
-## The olfactory system
+### The olfactory system
 
 Two modes of chemoreception, linked to distinct chemosensory pathways, are distinguished in malacostracan crustaceans (Derby and Weissburg, 2014b; Schmidt and Mellon, 2010): olfaction, which is mediated by the aesthetasc sensilla located on the lateral flagellum of the antenna 1, and distributed chemoreception, which is mediated by the bimodal chemo- and mechanosensory sensilla located mainly on all antennal appendages, the mouthparts, and the walking appendages (Garm et al., 2005; Garm et al., 2003; Garm and Watling, 2013; Mellon, 2014; Mellon, 2012; Schmidt and Gnatzy, 1984). R. exoculata presents aesthetascs in similar number and dimensions to other caridean representatives (Table 1), as well as several bimodal sensilla with different morphologies on the antennal appendages (Zbinden et al., 2017).
 
@@ -161,7 +395,7 @@ Olfaction has been extensively studied in malacostracans (e.g. Ache, 2002; Derby
 
 Efficient olfactory abilities would have been especially relevant to probe the chemical environment of R. exoculata, which is dynamic, with strong concentration variations of hydrothermal fluid chemicals as the hydrothermal fluid dilutes with the surrounding seawater. Sulfide and other chemicals could serve as highly important environmental cues for R. exoculata (Renninger et al., 1995; Machon et al., 2018) to locate active edifices as optimal areas to supply its chemoautotrophic symbionts with reduced compounds. However, sulfide detection is likely mediated by distributed chemoreception, or both distributed chemoreception and olfaction, rather than exclusively olfaction, as it can be detected by the flagella of the antenna two which does not bear aesthetascs (Machon et al., 2018). Olfaction is also involved in the recognition of conspecifics (Breithaupt and Thiel, 2011) and the localization of sexual partners (Wyatt, 2014), but there is to date no detailed information on the inter-individual interactions in and out of the swarms of R. exoculata. The detection of chemical cues produced by bacteria could also appear especially relevant since the sensory antennal appendages of vent shrimp are often covered by a dense bacterial layer, whose roles are currently unknown (Zbinden et al., 2018).
 
-## Evolution of higher integrative brain centers: the hemiellipsoid body
+### Evolution of higher integrative brain centers: the hemiellipsoid body
 
 Malacostracan crustaceans display a rich repertoire of complex behavioral patterns related to finding food, shelter and mating partners, kin recognition and brood care, as well as orientation and homing. Decapod crustaceans are also known for complex social interactions such as communal defensive tactics, the occupation of common shelters, cooperative behavior during long-distance, offshore seasonal migration and the establishment of dominance hierarchies (Breithaupt and Thiel, 2011; Derby and Thiel, 2014a; Duffy and Thiel, 2007; Thiel and Watling, 2015). Because such complex behaviors most likely involve elements of learning and memory, higher integrative brain centers are suggested to provide the neuronal substrate for more sophisticated processing underlying such behaviors (review in Sandeman et al., 2014). Such centers receive input exclusively from second or higher order neurons but not from any primary sensory afferents (i.e. from the peripheral nervous system) and contain interneurons responding to the stimulation of several different sensory systems. In the malacostracan brain, the (bilaterally paired) terminal medulla, hemiellipsoid body, and accessory lobe seem to function as higher integrative centers, all three distinct neuropil areas which display a high level of complexity and are notable for their substantial volume (Sandeman et al., 2014). The terminal medulla and the closely associated hemiellipsoid body, are targeted by axons of the olfactory projection neurons as output pathway of the olfactory neuropil and accessory lobe (where present; reviews Derby and Weissburg, 2014b; Harzsch and Krieger, 2018; Schmidt, 2016). Because of these anatomical relationships, evolutionary (Sullivan and Beltz, 2004; Sullivan and Beltz, 2001) and functional considerations (Harzsch and Krieger, 2018; Sandeman et al., 2014; Strausfeld, 2012) have focused on possible roles of these centers in higher order olfactory processing. In addition to the olfactory projection neuron axons, the terminal medulla also receives input from the visual neuropils in several malacostracans (reviewed in Sandeman et al., 2014). A specific type of local interneuron associated to the medulla terminalis and the hemiellipsoid body are the parasol cells (Mellon and Alones, 1997; McKinzie et al., 2003; Mellon et al., 1992a; Mellon, 2000; Mellon et al., 1992b) which respond to olfactory, tactile, and visual stimuli, thus highlighting their role as elements in higher order integration (Mellon and Alones, 1997; Mellon, 2003; Mellon, 2000; Mellon and Wheeler, 1999). Recent evidence obtained from a brachyuran crab suggests an involvement of the crustacean hemiellipsoid body/terminal medulla complex in memory processes (Maza et al., 2016). Furthermore, considering anatomical similarities of the crustacean hemiellipsoid body and insect mushroom body, Wolff et al. (2017) suggested an involvement in place memory.
 
@@ -175,45 +409,45 @@ In the hemiellipsoid bodies of the stomatopod crustaceans Gonodactylus bredenii 
 
 In summary, the hemiellipsoid body displays more structural variations across the Malacostraca than many other elements of the crustacean brain areas which led Sandeman et al. (2014) to note that, within the Malacostraca, several different evolutionary trajectories are present to increase their brain’s capacity for integrating olfactory and multimodal stimuli. This diversity masks common motifs of hemiellipsoid body architecture, explaining why genealogical relationships of the crustacean and insect protocerebral multimodal centers have been discussed controversially for many years (reviews e.g. Loesel et al., 2013; Sandeman et al., 2014; Strausfeld, 2012; Strausfeld, 2009; Strausfeld, 1998). Recent evidence suggests that, despite many morphological differences, these protocerebral structures of insects and crustaceans nevertheless share common architectural, physiological and neurochemical features suggesting a homology of their very basic neuronal circuitry (Brown and Wolff, 2012; Maza et al., 2016; Wolff et al., 2012; Wolff et al., 2017; Wolff and Strausfeld, 2015).
 
-## Possible functions of the hemiellipsoid body: new lesson from R. exoculata?
+### Possible functions of the hemiellipsoid body: new lesson from R. exoculata?
 
 Because the projection neuron tract provides a massive input to the lateral protocerebrum, recent comparative considerations have suggested that the structural elaboration and size of hemiellipsoid bodies largely mirror the importance of the central olfactory pathway in a given brain, thus emphasizing their role in higher order olfactory processing (Harzsch and Krieger, 2018; Sandeman et al., 2014). Along these lines, Harzsch and Hansson (2008) and Krieger et al. (2010) noted that in representatives of the Coenobitidae, the architectural complexity and volume of the olfactory neuropil closely correlates to that of the hemiellipsoid body. The comparative plates (Figures 11 and 12) demonstrate that R. exoculata dramatically deviates from this pattern in that their disproportionally large hemiellipsoid body contrasts with inconspicuous and moderately developed olfactory neuropils. The observation that visual input is likely to also play a subordinate role in these animals compared to shallow-water relatives with fully developed compound eyes makes us suggest that in R. exoculata, their impressive hemiellipsoid body may fulfill functions in addition of higher order sensory processing. Although the size alone does not qualify to be better performing (Chittka and Niven, 2009) and caution must be taken to conclude about functional differences from differences in size of structures (Striedter, 2005), comparative anatomical studies may lead to functional hypotheses. Discussing anatomical similarities of the crustacean hemiellipsoid body and insect mushroom body, Wolff et al. (2017) suggested for these two neuropils a role in place memory, based on observations that insects with elaborate navigational skills display elaborate mushroom bodies. Considering recent experiments that suggest an involvement of the crustacean hemiellipsoid body/terminal medulla-complex in memory processes (Maza et al., 2016), we here propose that the hemiellipsoid body in R. exoculata is involved in the formation of place memory. This hypothesis is further supported by the presence of serotonergic tracts within the hemiellipsoid bodies (Figure 6H), since serotonin has a function for place memory and learning in the mushroom bodies of Drosophila melanogaster (e.g. Sitaraman et al., 2008). Spiny lobsters Panulirus argus are renowned for their extensive offshore migrations and their ability to orient accurately towards their home sites over long distances by using the direction of water movement (surge) caused by wave action, learned local structural features, and geomagnetic cues for navigation (reviewed in Sandeman et al., 2014). Using a GPS-based telemetric system, giant robber crabs, Birgus latro, were shown to form route memories and may use path integration as navigation strategy and in translocation experiments were shown to be capable of homing over large distances (Krieger et al., 2012b). The above mentioned crustacean species display hemiellipsoid bodies impressive in size or structure. For survival in the extreme, lightless habitat of R. exoculata, an excellent place memory may be essential for avoiding the dangerously hot vent chimneys and memorizing emission sites of hydrothermal fluids rich in those chemicals on which their endosymbiont bacteria depend.
 
-## Conclusion
+### Conclusion
 
 Our observations of the general brain architecture of R. exoculata highlight several unusual characteristics, which could be related to adaptations to the specific sensory landscape of the vent habitat. The well-developed neurovascular system could be particularly efficient for brain oxygenation, to cope with the low availability of oxygen in the close surroundings of active chimneys. The conservation of the visual pathway and neuropils in a mostly aphotic environment suggests that vision nevertheless is a relevant sense for vent shrimp. The olfactory system does not present unusual traits and olfaction is probably not a dominant sensory modality in this shrimp unlike what has been proposed so far (Renninger et al., 1995). On the other hand, the higher integrative centers are well-developed. The hemiellipsoid bodies are disproportionally large relative to the visual and olfactory neuropils size, and could be involved in complex integrative processes such as place memory. Overall, vent shrimp appear to be especially interesting models to investigate both sensory adaptations to extreme environmental conditions, and the evolution of the sensory centers among Crustacea.
 
 ## Materials and methods
 
-## Animal collection and fixation procedures
+### Animal collection and fixation procedures
 
 Specimens of alvinocaridid shrimp R. exoculata (Williams and Rona, 1986) were collected on the TAG vent site (MAR, 26°08’N-44°49’W, 3600 m depth) during the BICOSE 2018 cruise on the Research Vessel ‘Pourquoi Pas?’. Animals were sampled with the suction device of the Diving Support Vessel ‘Nautile 6000’, and recovered at their in situ pressure using the PERISCOP isobaric recovery device (Shillito et al., 2008). Immediately after retrieval, specimens were dissected to remove the hepatopancreas prior to fixation. The specimens for histology and x-ray micro-computed tomography (micro-CT) scans were stored in Bouin’s fixative (10% formaldehyde, 5% glacial acetic acid in saturated aqueous picrinic acid) at 4°C until use. The specimens for immunohistochemistry were fixed 24 to 48 hr in 4% formaldehyde (FA) in 0.1 M Phosphate buffered saline (PBS) at 4°C for 24 hr, and then stored in 0.1 M PBS with NaN3 at 4°C until use. All specimens were sexed using the sexual dimorphism from the second pair of pleopods. Specimens are females for all micro-CT and histology experiments, and are both females and males for immunohistochemistry.
 
 Caridean shallow water shrimp Palaemon elegans (Rathke, 1837) were collected from Saint-Malo Bay (France; 48°64’N,−2°00’W), in January 2018, using a shrimp hand net. Specimens were dissected and fixed as described above. Protocols for other species are described in the following: Nebalia herbstii, Kenning et al. (2013); Penaeus vannamei, Meth et al. (2017); Saduria entomon, Kenning and Harzsch (2013); Carcinus maenas, Krieger et al. (2012a); Birgus latro, Krieger et al. (2010).
 
-## Histology
+### Histology
 
 The heads of Bouin-fixed animals (six specimens) were dehydrated in a graded series of ethanol and embedded in paraffin wax mixed with 5% beeswax. Serial sections (7 µm) were taken in the frontal or sagittal plane with a microtome (Leica RM 2145; Leica Microsystems, Wetzlar, Germany). The sections were stained with Azan-novum according to Geidies (1954) using standard protocols (Welsch and Mulisch, 2010).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The brains of fixed animals (4% FA; five specimens) were dissected in PBS 0.1 M, pH 7.4, embedded in low-gelling agarose (Cat. A9414; Sigma-Aldrich Chemie GmbH, Munich, Germany) and sectioned (100 µm) with a vibratome (Hyrax V50; Carl Zeiss, Oberkochen, Germany). The sections were preincubated for 1.5 hr in PBT (PBS + 0.3% Triton X-100 +1% bovine serum albumine) to improve antibody penetration. Two sets of combinations of markers were used: 1. anti-synapsin +anti-allatostatin+nuclear marker; 2. anti-synapsin +anti-serotonin+nuclear marker. The sections were first incubated overnight in the primary antisera at room temperature. The antisera used were: monoclonal anti-SYNORF1 synapsin antibody (DSHB, 3C11; from mouse; 1:10 dilution; RRID: AB_2313867); polyclonal anti-A-allatostatin antiserum (A-type Dip-allatostatin I; Jena Bioscience, abd-062; from rabbit; 1:1000 dilution; RRID: AB_2314318); polyclonal anti-Serotonin (5-HT, Immunostar, Cat. No 20080, from rabbit, igG; 1:1000 dilution; RRID: AB_572263). After incubation, the sections were washed in several changes of PBT for 1 hr and afterwards incubated in the secondary antibodies (anti IgGs) conjugated to Alexa Fluor 488 (Alexa Fluor 488 goat anti-rabbit IgG Antibody, Invitrogen, Thermo Fisher Scientific; Waltham, MA, USA; RRID: AB_10374301) and Cy3 (Cy3-conjugated AffiniPure Goat Anti-Mouse IgG Antibody, Jackson ImmunoResearch Laboratories Inc.; West Grove, PA, USA; RRID: AB_2338000) overnight at room temperature. Additionally, HOECHST 33258 (Cat. 14530; Sigma-Aldrich Chemie GmbH, Munich, Germany) was used as a nuclear marker to show the cell clusters. The sections were finally washed in several changes of PBT for 2 hr and mounted in Mowiol 4–88 (Cat. 0713.2; Carl Roth, Karlsruhe, Germany).
 
-## Antibody specificity
+### Antibody specificity
 
-## Synapsin
+#### Synapsin
 
 The monoclonal anti-SYNORF1 synapsin antibody (DSHB Hybridoma Product 3C11; anti SYNORF1 as deposited to the DSHB by E. Buchner, University Hospital Würzburg, Germany; supernatant) was raised against a Drosophila melanogaster GST-synapsin fusion protein and recognizes at least four synapsin isoforms (70, 74, 80 and 143 kDa) in western blots of D. melanogaster head homogenates (Klagges et al., 1996). Sullivan et al. (2007) mention a single band at approx. 75 kDa in a western blot analysis of crayfish brain homogenate. Harzsch and Hansson (2008) conducted a western blot analysis comparing brain tissue of D. melanogaster and the hermit crab Coenobita clypeatus (Anomura, Coenobitidae). The SYNORF1 serum provided identical results for both species and it stained one strong band between 80 and 90 kDa and a second weaker band slightly above 148 kDa, suggesting that the epitope that SYNORF1 recognizes is strongly conserved between D. melanogaster and C. clypeatus (see Harzsch and Hansson, 2008). Similar to the fruit fly, the antibody consistently labels brain structures in other major subgroups of the malacostracan crustaceans (e.g., Beltz et al., 2003; Harzsch et al., 2002; Harzsch et al., 1999; Harzsch et al., 1998; Krieger et al., 2012b) in a pattern that is consistent with the assumption that this antibody labels synaptic neuropils in crustaceans.
 
-## Allatostatin
+#### Allatostatin
 
 The A-type allatostatins represent a large family of neuropeptides that were first identified from the cockroach Diploptera punctata; they additionally share the C-terminal motif -YXFGLamide (Christie et al., 2010; Nässel and Homberg, 2006; Stay et al., 1995; Stay and Tobe, 2007). In the shore crab Carcinus maenas (Brachyura), almost 20 native A-type allatostatin-like peptides were identified from extracts of the thoracic ganglia (Duve et al., 1997). Shortly afterwards, various other A-type allatostatin-like peptides were isolated from the Eastern Crayfish Orconectes limosus (Astacida; Dircksen et al., 1999). Meanwhile, A-type allatostatin peptides have been discovered in a wide range of malacostracan crustaceans, including Brachyura (e.g. Huybrechts et al., 2003), Astacida (e.g. Cape et al., 2008), the prawns Penaeus monodon (Duve et al., 2002), Macrobrachium rosenbergii (Yin et al., 2006) and also in the shrimp Penaeus vannamei (Ma et al., 2010; Meth et al., 2017). Christie (2016) identified a total of 29 peptides with the C-terminal motif, -YXFGLamide, in the latest analysis on the peptidome of the shore crab. The polyclonal rabbit allatostatin antiserum used in the present study was raised against the Diploptera punctata A-type Dip-allatostatin I,APSGAQRLYGFGLamide, coupled to bovine thyroglobulin using glutaraldehyde (Vitzthum et al., 1996). It has previously been used to localize A-type allatostatin-like peptides in crustacean and insect nervous systems (e.g., Kreissl et al., 2010; Polanska et al., 2012). In the following, the term ‘allatostatin-like immunoreactivity’ is used to indicate that the antibody most likely binds to various related peptides within this peptide family.
 
-## Serotonin
+#### Serotonin
 
 The antiserum against serotonin (ImmunoStar Incorporated; Cat. No. 20080, Lot No. 541016) is a polyclonal rabbit antiserum raised against serotonin coupled to bovine serum albumin (BSA) with paraformaldehyde. The antiserum was quality control tested by the manufacturer using standard immunohistochemical methods. According to the manufacturer, staining with the antiserum was completely eliminated by pretreatment of the diluted antibody with 25 μg of serotonin coupled to BSA per ml of the diluted antibody. We repeated this control with the serotonin-BSA conjugate that was used for generation of the antiserum as provided by ImmunoStar (Cat. No. 20081, Lot No. 750256; 50 μg of lyophilized serotonin creatinine sulfate coupled to BSA with paraformaldehyde). Preadsorption of the antibody in working dilution with the serotonin-BSA conjugate at a final conjugate concentration of 10 μg/ml at 4°C for 24 hr completely blocked all immunolabeling. We performed an additional control and preadsorbed the diluted antiserum with 10 mg/ml BSA for 4 hr at room temperature. This preadsorption did not affect the staining, thus, providing evidence that the antiserum does not recognize the carrier molecule alone. The manufacturer also examined the cross reactivity of the antiserum. According to the data sheet, with 5 μg, 10 μg, and 25 μg amounts, the following substances did not react with the antiserum diluted to 1:20,000 using the horse radish peroxidase (HRP) labeling method: 5-hydroxytryptophan, 5-hydroxyindole-3-acetic acid, and dopamine.
 
-## Imaging
+### Imaging
 
 The brain tissues processed for immunofluorescence were viewed with a Leica TCS SP5II confocal laser-scanning microscope equipped with DPSS, Diode- and Argon-lasers and operated by the Leica ‘Application Suite Advanced Fluorescence’ software package (LASAF) (Leica Microsystems, Wetzlar, Germany). Digital images were processed with Adobe Photoshop CS4 or ImageJ. Only global picture enhancement features (brightness and contrast) were used.
 
@@ -223,19 +457,19 @@ For frontal and sagittal sections, dorsal is always towards the top.
 
 In the figures, the following color-coded abbreviations were used to identify the markers: SYN, synapsin (magenta); AstA, allatostatin (green); 5HT, serotonin (green); NUC, nuclear counter stain (cyan). Colors were chosen according to Color Universal Design for accessibility to colorblind readers.
 
-## X-ray micro-computed tomography
+### X-ray micro-computed tomography
 
 Micro-CT scans were performed using an X-ray microscope (Xradia MicroXCT-200; Carl Zeiss Microscopy GmbH, Jena, Germany) that uses a 90-kV/8 W tungsten X-ray source and switchable scintillator-objective lens units as described by Sombke et al. (2015). The heads of fixed animals (Bouin; two specimens) were contrasted in iodine solution (2% iodine resublimated (Cat. #X864.1; Carl Roth GmbH, Karlsruhe, Germany) in 99.5% ethanol), critical point-dried using a fully automatic critical point dryer Leica EM CPD300 (Leica Microsystems, Wetzlar, Germany) and scanned dry (scan medium air). Tomography projections were reconstructed using the reconstruction software XMReconstructor (Carl Zeiss Microscopy GmbH, Jena, Germany), resulting in image stacks (DICOM format) with a pixel size of about 5.8 µm for the 4 × objective and 1.9 µm for the 10 × objective.
 
-## 3D reconstruction
+### 3D reconstruction
 
 The 3D reconstructions of brain and substructures are based on manual segmentation based on image stacks obtained either by the micro-CT scans or by the alignment of serial histological sections, and were performed using the software Amira (FEI Visualization Science Group, Burlington, VT, USA) as described in Sombke et al. (2015). The computed 3D surfaces were slightly smoothed.
 
-## Nomenclature
+### Nomenclature
 
 The neuroanatomical nomenclature used in this manuscript for neuropils, clusters of cell bodies and tracts is based on Sandeman et al. (1993) and Richter et al. (2010) with some modifications adopted from Krieger et al. (2015) and Loesel et al. (2013). The term ‘visual neuropils’ is used instead of ‘optic neuropils’ as suggested by Krieger et al. (2015). The terms lamina, medulla and lobula are used for the visual neuropils instead of the lamina ganglionaris, medulla externa and medulla interna (Harzsch, 2002). The term ‘olfactory neuropil’ refers to the deutocerebral chemosensory lobe in Loesel et al. (2013) and Krieger et al. (2015). The olfactory globular tract is named the projection neuron tract (PNT) according to Loesel et al. (2013). Cell clusters are referred by their given numbers in parentheses. Because no border was detectable between the cell clusters (9) and (11), they are collectively referred as cluster (9/11) (Krieger et al., 2015), and accordingly are the cell clusters (2) and (3), referred as cluster (2/3). (x) refers likely to the fusion of the cell clusters (12 , 13) and (17) according to the nomenclature from Sandeman et al. (1992).
 
-## Measurements
+### Measurements
 
 For the volumes of the HN-TM (hemiellipsoid body and terminal medulla complex in both hemispheres) and the olfactory neuropils relative to the total brain volume, measurements were made from 3D reconstructions of the relevant structures from micro-CT scans using the Amira software. For the calculation of total brain volume of P. elegans, the volume of the tissues connecting the lateral protocerebrum with the central brain in the eye peduncles was omitted, because by omitting the neurites connecting both brain regions, the total brain volume is better comparable with that of R. exoculata. Same calculations were applied on the Birgus latro data from Krieger et al. (2010).
 
@@ -243,7 +477,7 @@ The number of globuli cells (i.e. cell somata in the cell cluster (5)) was deter
 
 For the volume of the olfactory neuropils and the number of olfactory glomeruli, measurements and estimations were made from sections revealed by synapsin immunoreactivity as described in Beltz et al. (2003).
 
-## Data repository
+### Data repository
 
 The morphological raw data of our contribution have been deposited in the online repository MorphDBase (https://www.morphdbase.de/) under the following accession numbers :
 

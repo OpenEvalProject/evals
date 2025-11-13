@@ -40,7 +40,7 @@ In activated and proliferating cells, high levels of P-TEFb are found. In contra
 
 ## Results
 
-## Critical residues in CycT1 (Thr143 and Thr149) are required for its binding to CDK9
+### Critical residues in CycT1 (Thr143 and Thr149) are required for its binding to CDK9
 
 Previously, residues in the N-terminal region of CycT1 (positions 1–280, CycT1(280), including cyclin boxes, positions 30–248) (Figure 1A) were found to be required for interactions between CycT1 and CDK9 (Garber et al., 1998). In particular, a substitution of the leucine to proline at position 203 (L203P) or four substitutions from a glutamic to aspartic acid at position 137 and threonine to alanine at positions 143, 149, and 155 (4MUT) completely abolished this binding (Kuzmina et al., 2014; Figure 1A). We created a similar set of mutant CycT1 proteins in the context of the full-length CycT1 and truncated CycT1(280) proteins (Figure 1A). Next, we defined further critical residues involved in CycT1:CDK9 interactions, especially the three adjacent threonine residues in the cyclin box (CycT1T3A, Figure 1A). First, these mutant CycT1 proteins were expressed in 293T cells. Next, interactions between mutant CycT1 proteins and the endogenous CDK9 protein were analyzed by co-immunoprecipitation (co-IP) (Figure 1B–D).
 
@@ -52,9 +52,17 @@ Mutant CycT1 proteins were poorly expressed in 293T cells (Figure 1B, panel 1, l
 
 We further examined whether all these threonine residues are important for binding to CDK9 (Figure 1E). Thus, mutant CycT1 proteins with single threonine substitution were created and examined for CycT1:CDK9 interactions. As presented in Figure 1E, whereas mutant CycT1T143A and CycT1T149A proteins exhibited significantly impaired binding to CDK9, the mutant CycT1T155A protein did not (panel 1, compare lanes 4 and 5 to lanes 2 and 6, ~5.2-fold and ~3.7-fold reduction). These results indicate that Thr143 and Thr149, but not Thr155, are critical residues in CycT1 for binding to CDK9. Finally, the mutant CycT1(280) protein with double threonine substitution to alanine (CycT1(280)TT143149AA) demonstrated reduced binding to CDK9 to a similar extent as the mutant CycT1(280)T3A protein (Figure 1F, panel 1, compare lanes 4 and 5 to lane 2, ~7.2-fold and ~8.1-fold reduction). Taken together, we conclude that two threonine residues (Thr143 and Thr149) in CycT1 are critical for its binding to CDK9 to form P-TEFb, and that mutant CycT1 proteins that do not interact or poorly interact with CDK9 are rapidly degraded by the proteasome.
 
-## Phosphorylation of Thr143 and Thr149 in CycT1 contributes to its binding to CDK9
+### Phosphorylation of Thr143 and Thr149 in CycT1 contributes to its binding to CDK9
 
 Since threonine residues are potential phosphorylation sites, we examined whether phosphorylation of Thr143 and/or Thr149 in CycT1 contributes to P-TEFb assembly. 293T cells ectopically expressing CycT1 (Figure 2A) or CycT1(280) (Figure 2B) were treated with the potent protein phosphatase inhibitors okadaic acid for 1.5 hr or calyculin A for 1 hr prior to cell lysis. Following the co-IP of CDK9, its phosphorylation was analyzed with anti-phospho-threonine (pThr) antibodies by western blotting (WB). Phospho-threonine signals were increased in CycT1 and CycT1(280) proteins in the presence of high concentrations (1 μM) of okadaic acid and 150 nM calyculin A, which inhibit serine/threonine protein phosphatases (PP) 1 and 2A (Figure 2A and B, panel 3, lanes 4 and 5), but not by a low concentration (5 nM) of okadaic acid (Figure 2A and B, panel 3, lane 3), which only inhibits PP2A. Confirming these inhibitory effects by okadaic acid and calyculin A, CycT1 and CDK9 bands shifted upward by this treatment, and only these upper bands were detected with anti-pThr antibodies (Figure 2). Furthermore, interactions between CycT1 and CDK9 were increased by high concentrations of okadaic acid and calyculin A (Figure 2A, panel 1, compare lane 4 to lane 2 and lane 5 to lane 2, ~6.1-fold and ~4.2-fold increase). In addition, CycT1 co-IPed with CDK9 was heavily phosphorylated at threonine residues (Figure 2A, panel 3). Under the same conditions, CDK9 was also heavily phosphorylated (Figure 2A, panel 4). Similarly, interactions between CycT1(280) and CDK9 were also increased by high concentrations of okadaic acid and calyculin A (Figure 2B, panel 1, compare lane 4 to lane 2 and lane 5 to lane 2, ~5.1-fold and ~4.7-fold increase). Significant threonine phosphorylation of CDK9-associated CycT1(280) and CDK9 was also detected (Figure 2B, panels 3 and 4), although increased phosphorylation of CDK9 did not correlate with increased interactions with CycT1 (Figure 2A and B, compare lane 5 to lane 4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig2-v2.jpg)
+
+**Figure 2.:** (A) Threonine phosphorylation is detected in the full-length CycT1 protein. CycT1 was expressed in 293T cells untreated or treated with 5 nM or 1 μM okadaic acid, or 150 nM calyculin A (+/- signs on top). Co-IPs with CDK9 were then probed with anti-HA and anti-CDK9 antibodies in panels 1 and 2, with anti-phospho-threonine (pThr) antibodies in panels 3 and 4. Panels 5 and 6 contain input levels of CycT1 and CDK9 proteins. (B) Threonine phosphorylation is detected in CycT1(280). CycT1(280) protein was expressed in 293T cells untreated or treated with 5 nM or 1 μM okadaic acid, or 150 nM calyculin A (+/- signs on top). Co-IPs with CDK9 were then probed with anti-HA and anti-CDK9 antibodies in panels 1 and 2, with anti-pThr antibodies in panels 3 and 4. Panels 5 and 6 contain input levels of CycT1 and CDK9 proteins. (C) Thr143 and Thr149 are major phospho-threonine residues in CycT1(280). WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were expressed in the presence of bortezomib and 1 μM okadaic acid in 293T cells. IPs with CycT1 were then probed with anti-pThr and anti-HA antibodies in panels 1 and 2. Panel 3 contains input levels of CycT1 proteins. (D) Thr143 and Thr149 are major phosphorylated residues in CycT1(192). WT CycT1(192) or mutant CycT1(192)TT143149AA proteins were expressed in the presence of bortezomib and/or 1 μM okadaic acid (+/- signs on top) in 293T cells. After IPs with anti-HA antibodies, IPed samples were subjected to SDS-PAGE, then phosphorylated proteins were detected by in-gel Phospho-Tag staining, with unphosphorylated BSA protein as the negative control. (E) Direct detection of Thr143/Thr149 phosphorylation by phosphopeptide mapping analysis. WT CycT1(192) or mutant CycT1(192)TT143149AA proteins were expressed in the presence of bortezomib and/or 1 μM okadaic acid (+/- signs on top) in 293T cells. After IP with anti-HA antibodies. IPed samples were digested by trypsin and subjected to SDS-PAGE, followed by silver staining (left panel) in-gel Phospho-Tag staining (right panel), using phosphorylated β-casein protein as the positive control and unphosphorylated BSA protein as the negative control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Thr143 and Thr149 are predicted to be potential phosphorylation sites. Potential phosphorylation sites between 124 aa. to 166 aa. in CycT1 were analyzed by the NetPhos 3.1 program. Threshold was set to 0.5 (default value), indicated by the pink line. Thr143 and Thr149 scored highest as potential phosphorylation sites. (B) Levels of phospho-tyrosine and phospho-serine residues are similar in WT CycT1(280) and mutant CycT1(280)TT143149AA proteins. WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were expressed in the presence of bortezomib and okadaic acid in 293T cells, and IPed with anti-HA antibodies. IPed CycT1 proteins were then probed with anti-phospho-tyrosine (pTyr) and anti-phospho-serine (pSer) antibodies in panels 1 and 2. (C) Phosphorylation of WT CycT1(192) and mutant CycT1(192)TT143149AA proteins is also induced by high concentration of okadaic acid treatment. WT CycT1(192) or mutant CycT1(192)TT143149AA proteins were expressed in the absence or presence of okadaic acid and bortezomib (+/- signs on top) in 293T cells, and IPed with anti-HA antibodies, followed by western blotting (WB) with anti-HA antibodies by WB.
 
 An online database for phosphorylation site prediction (NetPhos 3.1, developed by Technical University of Denmark) scores Thr143 and Thr149 above the threshold value (default 0.5), indicating that these threonines are potential phosphorylation sites (Figure 2—figure supplement 1A). To examine whether Thr143 and Thr149 are phosphorylated in CycT1, levels of total threonine phosphorylation were compared between WT CycT1(280) and mutant CycT1(280)TT143149AA proteins in the presence of 1 μM okadaic acid. As presented in Figure 2C, levels of threonine phosphorylation were significantly reduced in the mutant CycT1(280)TT143149AA protein compared to WT CycT1(280) (panel 1, compare lane 3 to lane 2, ~4.7-fold reduction), indicating that Thr143 and Thr149 are phosphorylated within CycT1(280). Of note, the mutant CycT1(280)TT143149AA protein migrated to a similar extent as WT CycT1(280) in the presence of okadaic acid, which implies that there are additional phosphorylation sites in CycT1 besides these two threonines. Indeed, WBs with anti-phospho-serine and anti-phospho-tyrosine antibodies confirmed that WT CycT1(280) and the mutant CycT1(280)TT143149AA proteins were phosphorylated on these additional residues to similar levels (Figure 2—figure supplement 1B).
 
@@ -62,7 +70,7 @@ To further demonstrate that these two threonines in CycT1 are phosphorylated in 
 
 Finally, purified WT CycT1(192) and mutant CycT1(192)TT143149AA proteins were subjected to trypsin digestion, followed by separation by 4–20% SDS-PAGE. Tryptic peptides containing phosphorylated residues were detected by silver and in-gel Phospho-Tag staining. As presented in Figure 2E, actual sizes of tryptic peptides of WT CycT1(192) and mutant CycT1(192)TT143149AA proteins were confirmed by silver-stained PAGE (right panel, lanes 3 and 4, same as the prediction). Next, the in-gel Phospho-Tag staining of tryptic peptides of WT CycT1(192) detected a phosphorylated peptide with the same size as the top band in silver-stained PAGE (Figure 2E, right panel, lane 6). Importantly, no phosphorylated peptide of the corresponding size was detected with the same peptide from the mutant CycT1(192)TT143149AA protein (Figure 2E, right panel, lane 4) or undigested samples (Figure 2E, right panel, lanes 3 and 5). The phosphorylated β-casein served as the positive control (Figure 2E, right panel, lane 1) and unphosphorylated BSA served as the negative control (Figure 2E, right panel, lane 2).Thus, the phosphorylation of Thr143 and Thr149 was detected by two independent methods, WB with anti-phospho-threonine antibodies and direct Phospho-Tag staining of tryptic peptides. Taken together, these findings strongly indicate that CycT1 is phosphorylated at Thr143 and Thr149, which potentiates its binding to CDK9, and that PP1 is involved in the dephosphorylation of CycT1.
 
-## Residues in CycT1 and CDK9 that regulate the assembly of P-TEFb
+### Residues in CycT1 and CDK9 that regulate the assembly of P-TEFb
 
 Thr143 and Thr149 are located in the region of CycT1 that binds to CDK9. Spatial locations of these threonines are based on two published crystal structures of the human P-TEFb complex (PDB access code 3MI9) (Baumli et al., 2008; Tahirov et al., 2010). Since P-TEFb was expressed and purified from insect cells, CycT1 was most likely already phosphorylated. Importantly, no one has been able to assemble P-TEFb from prokaryotic cells, such as Escherichia coli (Baumli et al., 2008; Schulze-Gahmen et al., 2014; Schulze-Gahmen et al., 2013; Tahirov et al., 2010). To understand the role of CycT1 Thr143 and Thr149 phosphorylation in P-TEFb, the model was created by adding phosphates to Thr143 and Thr149 in the published crystal structure of P-TEFb (PDB ID 3MI9), followed by energy minimization and molecular dynamics (MD) simulations (Figure 3A). As presented in Figure 3A, the side chain of Thr143 is placed internally towards helices in the cyclin box 1 of CycT1, where Gln73 is its nearest contact residue, suggesting that Thr143 is involved in intramolecular interactions with Gln73. On the other hand, Thr149 is located in the interface between CycT1 and CDK9 where Lys68 in CDK9 is its nearest contact residue, suggesting that Thr149 is involved in intermolecular interactions between CycT1 and CDK9. The space between CycT1’s Gln73 and Thr143, and between CycT1’s Thr149 and CDK9’s Lys68 readily accommodates phosphate molecules on Thr143 and Thr149 in CycT1. Indeed, the predominant contribution to the increased binding energy of the complex comes from electrostatic (ΔEelec) and polar solvation (ΔEsolv−polar) energies, which is consistent with the stabilizing interactions described in previous figures. Further, we performed molecular mechanics/generalized born surface area calculations (MM-GBSA) (Pettersen et al., 2004), which predicted that the phosphorylation of Thr143 and Thr149 in CycT1 can be thermodynamically advantageous for interactions between CDK9 and CycT1 (Table 1). We then tested these predictions experimentally.
 
@@ -70,13 +78,74 @@ Thr143 and Thr149 are located in the region of CycT1 that binds to CDK9. Spatial
 
 **Figure 3.:** (A) Model of P-TEFb where CycT1 is phosphorylated at Thr143 and Thr149. The model was created by adding phosphates to Thr143 and Thr149 in the published crystal structure of P-TEFb (PDB ID 3MI9), followed by energy minimization and molecular dynamics (MD) simulations. Residues predicted to interact with Thr143 and Thr149 are Gln73 in CycT1 and Lys68 in CDK9, respectively. (B) Gln73 is targeted by phosphorylated Thr143 in CycT1. WT CycT1(280) or mutant CycT1(280)Q73A proteins and CDK9 were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1 and CDK9 proteins. (C) Lys68 in CDK9 is targeted by phosphorylated Thr149 in CycT1. WT CDK9 or mutant CDK9K68A proteins and CycT1(280) were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1 and CDK9 proteins. (D) Mutations of K68A in CDK9 and Q73A in CycT1 attenuate cooperatively the binding between CycT1 and CDK9, equivalently to the mutant CycT1TT143149AA protein. WT CycT1(280) or mutant CycT1(280)Q73A proteins and WT CDK9 or mutant CDK9K68A proteins were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1 and CDK9 proteins.
 
+**Table 1.**
+ Summary of binding energies calculated using molecular mechanics/generalized born surface area (MM-GBSA) calculations.The final binding energies (ΔGbind) are shown in bold. ΔEelec, ΔEwdV, ΔEGB, and ΔEsurf correspond to the electrostatic energy, van der Waals energy, polar solvation energy, and non-polar solvation energy contributions, respectively. Standard deviations of the mean are shown in parenthesis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Contribution</th>
+      <th>WT (kcal/mol)</th>
+      <th>PThr143 (kcal/mol)</th>
+      <th>PThr149 (kcal/mol)</th>
+      <th>PThr143,149 (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ΔGbind</td>
+      <td>–82.1 (11.4)</td>
+      <td>–85.0 (13.8)</td>
+      <td>–81.6 (12.8)</td>
+      <td>–98.5 (14.3)</td>
+    </tr>
+    <tr>
+      <td>ΔEelec</td>
+      <td>–480.8 (62.6)</td>
+      <td>–849.0 (98.1)</td>
+      <td>–863.1 (107.9)</td>
+      <td>–1249.1 (86.1)</td>
+    </tr>
+    <tr>
+      <td>ΔEwdV</td>
+      <td>–144.1 (10.8)</td>
+      <td>–158.1 (12.1)</td>
+      <td>–151.0 (12.4)</td>
+      <td>–142.6 (11.4)</td>
+    </tr>
+    <tr>
+      <td>ΔEGB</td>
+      <td>562.9 (62.4)</td>
+      <td>944.8 (99.0)</td>
+      <td>954.2 (105.5)</td>
+      <td>1315.3 (83.5)</td>
+    </tr>
+    <tr>
+      <td>ΔEsurf</td>
+      <td>–20.1 (1.6)</td>
+      <td>–22.7 (1.7)</td>
+      <td>–21.7 (1.6)</td>
+      <td>–22.1 (1.7)</td>
+    </tr>
+  </tbody>
+</table>
+
 WT CDK9 or mutant CDK9K68A proteins were coexpressed with WT CycT1(280) or mutant CycT1(280)Q73A proteins in the presence of bortezomib for 12 hr before co-IP. As presented in Figure 3B, compared to WT CycT1(280), the mutant CycT1(280)Q73A protein exhibited a lower affinity for CDK9 (panel 1, compare lane 3 to lane 2, ~5.3-fold reduction). Similarly, compared to WT CDK9, the mutant CDK9K68A protein exhibited a lower affinity for WT CycT1(280) (Figure 3C, panel 1, compare lane 3 to lane 2, ~5.9-fold reduction). Finally, interactions between mutant CycT1(280)Q73A and CDK9K68A proteins were reduced to a similar extent to those between the mutant CycT1(280)TT143149AA and WT CDK9 proteins, compared to the positive control with WT CDK9 and WT CycT1(280) (Figure 3D, panel 1, compare lanes 3 and 4 to lane 2, ~7.5-fold and ~8-fold reduction). Taken together, phosphates on Thr143 and Thr149 in CycT1 are essential for the assembly and stability of P-TEFb.
 
-## PKC inhibitors impair interactions between CycT1 and CDK9 and promote CycT1 degradation
+### PKC inhibitors impair interactions between CycT1 and CDK9 and promote CycT1 degradation
 
 In resting and memory T cells, levels of CycT1 are vanishingly low. In previous sections, we discovered that Thr143 and Thr149 are phosphorylated in the stable P-TEFb complex. Using kinase prediction programs (NetPhos 3.1), these residues lie in separate PKC consensus sites. While Thr143 received the highest score, Thr149 could also be a target for PKC or other kinases. These findings implied that PKC family members are kinases that phosphorylate Thr143 and/or Thr149.
 
 To examine whether PKC promotes the phosphorylation and stability of CycT1, several PKC inhibitors were introduced to different cells (Figure 4). Of these, staurosporine exhibited the most significant inhibition in 293T cells. As presented in Figure 1B and C, the exogenous CycT1 protein is very stable in cells. Next, increasing amounts of staurosporine were added to cells 12 hr prior to cell lysis. Staurosporine reduced levels of CycT1 in these cells in a dose-dependent manner (Figure 4—figure supplement 1A, , panel 1, compare lanes 2 and 3 to lane 1, ~4-fold and ~16-fold reduction). In addition, interactions between the exogenous CycT1 and endogenous CDK9 proteins were inhibited by staurosporine even under conditions where the expression of CycT1 was restored by bortezomib (Figure 4A, panel 1, compare lane 3 to lane 2, ~8.1-fold reduction). Similarly, interactions between CycT1(280) and CDK9 were decreased by staurosporine and two additional, more specific PKC inhibitors bisindolylmaleimide IX and HBDDE (Figure 4B, compare lanes 4–6 to lane 2, ~ 8.7-fold, 7.1-fold, and 6.5-fold decrease). In contrast, the MEK 1/2 inhibitor (MEK 1/2i) had no effect (Figure 4B, compare lane 3 to lane 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig4-v2.jpg)
+
+**Figure 4.:** (A) PKC inhibitors impair interactions between CycT1 and CDK9. CycT1 and CDK9 were coexpressed in the presence or absence of staurosporine and bortezomib (+/- signs on top) in 293T cells. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1 and CDK9 proteins. (B) PKC inhibitors impair interactions between CycT1(1–280) and CDK9. CycT1(280) was expressed in the presence or absence of bortezomib and indicated concentration of MEK 1/2i, staurosporine, bisindolylmaleimide IX, or HBDDE (+/- signs on top) in 293T cells. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1(280) and CDK9 proteins. (C) PKC inhibitors inhibit threonine phosphorylation of CycT1. CycT1(280) was expressed in the presence or absence of bortezomib and indicated concentration of MEK 1/2i, staurosporine, bisindolylmaleimide IX, or HBDDE (+/- signs on top) in 293T cells. IPs with CycT1 are presented in panels 1 and 2. Phosphorylated proteins were visualized with anti-pThr antibodies (panel 1). Panel 3 contains input levels of CycT1(280) proteins. (D) Staurosporine decreases CycT1 levels in a dose-dependent manner. Jurkat cells were untreated (lane 1) or treated with increasing doses of staurosporine (lanes 2–4) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) proteins were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by western blotting (WB). (E) PKC inhibitor bisindolylmaleimide IX decreases CycT1 levels in a dose-dependent manner. Jurkat cells were untreated (lane 1) or treated with increasing doses of bisindolylmaleimide IX (lanes 2–4) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) proteins were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by WB. (F) CycT1 levels in activated primary CD4+ T cells are decreased by PKC inhibitors in a dose-dependent manner. Activated primary CD4+ T cells were untreated (lane 1) or treated with increasing amounts of staurosporine (lanes 2–4), bisindolylmaleimide IX (lanes 5–7) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by WB.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Staurosporine decreases exogenous CycT1 levels in a dose-dependent manner. 293T cells expressing CycT1 were untreated (lane 1) or treated with increasing doses of staurosporine (lanes 2 and 3) for 12 hr before cell lysis. Levels of CycT1 (panel 1) and the loading control actin (panel 2) proteins were detected with anti-HA and anti-β-actin antibodies, respectively, by western blotting (WB). (B) PKC inhibitor H-7 decreases CycT1 levels in a dose-dependent manner. Jurkat cells were untreated (lane 1) or treated with increasing doses of bisindolylmaleimide IX (lanes 2–4) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) proteins were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by WB. (C) CycT1 levels in activated primary CD4+T cells (donor 2) are decreased by PKC inhibitors in a dose-dependent manner. Activated primary CD4+T cells were untreated (lane 1) or treated with increasing amounts of staurosporine (lanes 2–4), bisindolylmaleimide IX (lanes 5–7) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) proteins were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by WB. (D) Five different PKC inhibitors decrease levels of CycT1 in activated primary CD4+T cells in a dose-dependent manner. Activated primary CD4+ T cells were untreated (lane 1) or treated with increasing amounts of sotrastaurin (lanes 2 and 3), staurosporine (lanes 4 and 5), H-7 (lanes 6 and 7), bisindolylmaleimide IX (lanes 8 and 9), and HBDDE (lanes 10 and 11) for 12 hr before cell lysis. Levels of CycT1 (panel 1), CDK9 (panel 2), and the loading control actin (panel 3) proteins were detected with anti-CycT1, anti-CDK9, and anti-β-actin antibodies, respectively, by WB. (E) Effects of different PKC or unrelated kinase inhibitors on the expression of CycT1 in activated primary CD4+ T cells. Activated primary CD4+ T cells were untreated (lane 1) or treated with increasing amounts of MEK 1/2i (lanes 2 and 3), and indicated PKC inhibitors VTX-27 (lane 4), bisindolylmaleimide IV (lane 5), enzastaurin (lane 6), sotrastaurin (lane 7), H-7 (lane 8), bisindolylmaleimide IX (lane 9), or staurosporine (lane 10) for 12 hr before cell lysis. Levels of CycT1 (panel 1) and the loading control actin (panel 2) proteins were detected with anti-CycT1 and anti-β-actin antibodies, respectively, by WB.
 
 To examine whether PKC inhibition antagonizes the phosphorylation of CycT1(280) in the presence of the high concentration of okadaic acid, cells expressing the exogenous CycT1(280) protein in the presence of bortezomib were treated with the same set of kinase inhibitors before adding okadaic acid for another 1.5 hr. Levels of threonine phosphorylation of CycT1(280) were compared by WB after IPs with anti-HA antibodies. As presented in Figure 4C, three PKC inhibitors, but not MEK 1/2i, all antagonized the threonine phosphorylation of CycT1(280) (panel 1, compare lanes 4–6 to lane 2, ~13.3-fold, ~8.3-fold, and ~5.7-fold decrease). Thus, PKC inhibitors, especially staurosporine, inhibit the phosphorylation of CycT1 and its interactions with CDK9, which results in the degradation of CycT1 in 293T cells.
 
@@ -84,17 +153,33 @@ To validate further the specificity of such negative regulation by PKC inhibitor
 
 Staurosporine and bisindolylmaleimide IX were also used in activated primary CD4+ T cells to confirm further our findings (Figure 4F). In these cells, staurosporine depleted CycT1 up to 30-fold at 1.5, 3, and 6 μM (donor 1, Figure 4F, panel 1, compare lanes 2–4 to lane 1). Bisindolylmaleimide IX decreased them up to 20-fold at 3, 6, and 12 μM (Figure 4F, panel 1, compare lanes 5–7 to lane 1). In cells from donor 2, these compounds had similar effects on levels of CycT1 (Figure 4—figure supplement 1C, , panel 1). Levels of CDK9 were largely unaffected by these inhibitors (Figure 4F, Figure 4—figure supplement 1C, panel 2). Activated primary CD4+ T cells were also treated with three additional PKC inhibitors (sotrastaurin, H-7, and HBDDE) for 12 hr. As presented in Figure 4—figure supplement 1D, all these PKC inhibitors decreased levels of CycT1 in a dose-dependent manner (panel 1) without affecting those of CDK9 (panel 2). In sharp contrast, MEK 1/2i and three other PKC inhibitors (Figure 4—figure supplement 1E, compare lanes 2–6 to lane 1) had little effect on levels of CycT1 compared to the above four effective PKC inhibitors (Figure 4—figure supplement 1E, , compare lanes 7–10 to lane 1). Taken together, PKC inhibitors antagonize the phosphorylation of critical threonines in CycT1, which leads to the disassembly of P-TEFb and further degradation of CycT1.
 
-## PKCα and PKCβ bind to CycT1, promote interactions between CycT1 and CDK9, and increase the stability of CycT1
+### PKCα and PKCβ bind to CycT1, promote interactions between CycT1 and CDK9, and increase the stability of CycT1
 
 Analysis of target specificities of our PKC inhibitors indicated that PKCα, PKCβ, PKCε represent candidate PKC isoforms responsible for the phosphorylation of CycT1. To validate that these PKC isoforms can target CycT1 for phosphorylation and promote P-TEFb assembly, their Flag-epitope-marked versions were expressed in 293T cells. Different dominant (kinase) negative mutant PKC isoforms were also coexpressed with WT CycT1(280) or mutant CycT1(280)TT143149AA proteins in the presence of bortezomib for 12 hr. Co-IPs were performed with anti-Flag antibodies. As presented in Figure 5A, the mutant PKCαK368R (Soh and Weinstein, 2003) protein interacted with the mutant CycT1(280)TT143149AA protein more potently than with WT CycT1(280) (panel 1, compare lane 4 to lane 3, approximately threefold increase), while no interactions with CDK9 were detected (Figure 5A, panel 2, lanes 3 and 4). As PKCβ1 and PKCβ2 only differ in their C-terminal 50 residues (Kubo et al., 1987), we employed the dominant negative PKCβ2K371R protein to block WT PKCβ protein. The dominant negative mutant PKCβ2K371R protein (Soh and Weinstein, 2003) was coexpressed with WT CycT1(280) or mutant CycT1(280)TT143149AA proteins. Co-IPs were performed with anti-Flag antibodies. As presented in Figure 5B, interactions between the mutant PKCβ2K371R protein and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were detected (panel 1, compare lane 4 to lane 3, ~4.1-fold increase). Again, CDK9 did not interact with the mutant PKCβ2K371R protein (Figure 5B, panel 2, lanes 3 and 4). In contrast, significantly reduced interactions were detected between WT CycT1(280) or mutant CycT1(280)TT143149AA proteins and PKCε, PKCδ, PKCγ, and PKCθ (panel 1 in Figure 5; Figure 5—figure supplement 1A and B and 1C; data with PKCθ are not presented). We conclude that PKCα and PKCβ not only bind to but phosphorylate Thr143 and Thr149 in CycT1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig5-v2.jpg)
+
+**Figure 5.:** (A) PKCα binds to CycT1(280). Dominant negative mutant PKCαK368R and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with PKCα are presented in panels 1–3. Panels 4 and 5 contain input levels of CycT1(280) and PKCα proteins. (B) PKCβ binds to CycT1(280). Dominant negative mutant PKCβ2K371R and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with PKCβ are presented in panels 1–3. Panels 4 and 5 contain input levels of CycT1(280) and PKCβ proteins. (C) Dominant negative mutant PKCαK368R protein inhibits interactions between CDK9 and CycT1. PKCα or PKCαK368R, CycT1 and CDK9 were coexpressed in the presence of bortezomib (+/- signs on top) in 293T cells. Co-IPs with CycT1 are presented in panels 1 and 2. Panels 3–5 contain input levels of PKCα, CDK9, and CycT1 proteins. (D) PKCαK368R inhibits threonine phosphorylation of CycT1(280). CycT1(280) was expressed with or without PKCαK368R in the presence or absence of okadaic acid and bortezomib (+/- signs on top) in 293T cells. IPs with CycT1 were then probed with anti-pThr antibodies in panel 1 and with anti-HA antibodies in panel 2. Panels 3 and 4 contain input levels of PKCα and CycT1(280) proteins. (E) PKCαK368R decreases levels of CycT1 in cells. PKCα or PKCαK368R, and CycT1 were coexpressed in the presence or absence of bortezomib (+/- signs on top) in 293T cells. Levels of CycT1 (panel 1), PKCα (panel 2), CDK9 (panel 3), and the loading control actin (panel 4) were detected with anti-HA, anti-Flag, anti-CDK9, and anti-β-actin antibodies, respectively, by western blotting (WB). (F) PKCβ2K371R decreases levels of CycT1. PKCβ2 or PKCβ2K371R, and CycT1 were coexpressed in the presence or absence of bortezomib (+/- signs on top) in 293T cells. Levels of CycT1 (panel 1), PKCβ2 (panel 2), CDK9 (panel 3), and the loading control actin (panel 4) were detected with anti-HA, anti-Flag, anti-CDK9, and anti-β-actin antibodies, respectively, by WB. (G) PKCα and PKCβ phosphorylate Thr143 and Thr149 in CycT1 in vitro. WT CycT1(280) and mutant CycT1(280)TT143149AA proteins were expressed in the presence of bortezomib in 293T cells. After IP with anti-HA antibodies, equal levels of WT and mutant CycT1 proteins in IPed samples were detected by WB (panel 2). Immunoprecipitated proteins were incubated with purified constitutively active PKCα and PKCβ proteins for 2 hr and separated by SDS-PAGE, followed by in-gel Phospho-Tag staining. HA-tagged EGFP was used as the negative control for IP. Phosphorylated β-casein protein and unphosphorylated BSA protein represented positive and negative controls for in-gel Phospho-Tag staining, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PKCδ binds weakly to CycT1(280). Dominant negative mutant PKCδK376R and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were coexpressed in the presence of bortezomib in 293T cells. Co-IPs with PKCδ are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1(280) and PKCδ proteins. (B) PKCγ binds weakly to CycT1(280). Dominant negative mutant PKCγK380R and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were coexpressed in the presence of bortezomib in 293T cells. Co-IPs with PKCγ are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1(280) and PKCγ proteins. (C) PKCε binds weakly to CycT1(280). Dominant negative mutant PKCεK437W and WT CycT1(280) or mutant CycT1(280)TT143149AA proteins were coexpressed in the presence of bortezomib in 293T cells. Co-IPs with PKCε are presented in panels 1 and 2. Panels 3 and 4 contain input levels of CycT1(280) and PKCε proteins.
 
 To confirm further that PKCα and PKCβ contribute to the assembly and stability of P-TEFb, WT PKCα or mutant PKCαK386R proteins were coexpressed with CycT1(280) and CDK9 in the presence of bortezomib (12 hr) in 293T cells. Interactions between these proteins were analyzed by co-IPs with anti-HA antibodies. As presented in Figure 5C, while PKCα slightly increased CycT1:CDK9 interactions (Figure 5C, panel 1, compare lane 3 to lane 2), the mutant PKCαK386R protein inhibited them (panel 1, compare lane 4 to lanes 2 and 3, ~7.9-fold reduction). To confirm that decreased interactions between CycT1(280) and CDK9 by the mutant PKCαK386R protein were caused by the inhibition of PKC-dependent phosphorylation of CycT1(280), it was coexpressed with the mutant PKCαK386R protein in the presence of bortezomib (12 hr) and okadaic acid (1.5 hr). IPs were conducted with anti-HA antibodies. As presented in Figure 5D, the expression of the mutant PKCαK386R protein decreased levels of threonine phosphorylation in CycT1(280) by ~5.2-fold as detected with anti-pThr antibodies (panel 1, compare lane 4 to lane 3). To demonstrate if the mutant PKCαK386R protein also decreased levels of CycT1 protein, WT PKCα or mutant PKCαK386R proteins were coexpressed with the CycT1 protein in the presence or absence of bortezomib (12 hr). As presented in Figure 5E, CycT1 coexpressed with PKCα had similar levels of expression as CycT1 without PKCα coexpression, which was not affected by bortezomib (panel 1, compare lane 3 to lane 1; compare lane 3 to lane 4; compare lane 1 to lane 2). In sharp contrast, coexpression of the mutant PKCαK386R protein decreased greatly levels of CycT1 protein in these cells (Figure 5E, panel 1, compare lane 5 to lanes 1 and 3, ~9.1-fold reduction), which was reversed by bortezomib (Figure 5E, panel 1, compare lane 6 to lane 5). Similar to the mutant PKCαK386R protein, the coexpressed mutant PKCβ2K371R protein also significantly diminished levels of CycT1 protein (Figure 5F, panel 1, compare lane 5 to lanes 1 and 3, ~10.4-fold reduction), which was reversed by bortezomib (Figure 5F, panel 1, compare lane 6 to lane 5). Levels of PKCs were increased by bortezomib, which is consistent with the demonstrated instability of PKC (Lu et al., 1998; Figure 5E and F, panels 2, compare lanes 3 and 5 to lanes 4 and 6). Also, levels of the endogenous CDK9 protein were unaffected in these cells (Figure 5E and F, panel 3).
 
 Finally, we confirmed the phosphorylation of Thr143 and Thr149 of CycT1 by PKC in vitro. WT CycT1(280) and mutant CycT1(280)TT143149AA proteins were expressed in 293T cells and isolated by pull-down with HA-Ab-conjugated beads. They were incubated in the presence or absence of purified active PKC proteins (PKCα and PKCβ) in vitro. Phosphorylated proteins were separated by SDS-PAGE and detected by in-gel Phospho-Tag staining as in Figure 2D and E. As presented in Figure 5G, the WT CycT1(280), but not the mutant CycT1(280)TT143149AA protein, was detected by the in-gel Phospho-Tag staining in a manner that was dependent on the presence of PKC (panel 1, lanes 3–5, and 7). Taken together, CycT1 is phosphorylated by PKCα and PKCβ, which not only promote interactions between CycT1 and CDK9, but also stabilize CycT1 in cells.
 
-## Depletion of PKC leads to decreased levels of CycT1 in cells
+### Depletion of PKC leads to decreased levels of CycT1 in cells
 
 Previous papers demonstrated that isoforms of PKC are inactive or absent in resting cells (Heissmeyer et al., 2004; Pfeifhofer-Obermair et al., 2012). Moreover, phorbol esters (PMA) deplete PKC in most cells (Manger et al., 1987). In addition, HIV Tat, whose proteome first identified and whose coactivator is P-TEFb, no longer works in these cells (Jakobovits et al., 1990). Together with our data, it appears that PKC influences dynamic changes of P-TEFb in different cell types and under varying conditions. To examine this situation further, 100 ng/ml PMA was administered to Jurkat cells or activated primary CD4+ T cells for several days. As presented in Figure 6A, endogenous CycT1 protein levels were decreased up to ~6-fold at 72 hr and ~11-fold at 96 hr after the addition of PMA (panel 1, compare lanes 2 and 3 to lane 1). Levels of CDK9 protein were largely unaffected (Figure 6A, panel 2, lanes 1–3). Furthermore, the same PMA treatment was performed in activated primary CD4+ T cells from two different donors. Similar to Jurkat cells, activated primary CD4+ T cells from donor 1 lost CycT1 expression up to ~7-fold at 72 hr and ~16-fold at 96 hr after PMA treatment (Figure 6B, panel 1, compare lanes 2 and 3 to lane 1). Again, levels of CDK9 were largely unaffected (Figure 6B, panel 2, lanes 1–3). Levels of PKCα were equivalently decreased at 72 and 96 hr after the addition of PMA (Figure 6B, panel 3, compare lanes 2 and 3 to lane 2). Other PKC isoforms, PKCβ1 and PKCβ2, were also depleted at these timepoints (Figure 6B, fourth and panel 5, compare lanes 2 and 3 to lane 2). These cells do not express PKCε (Figure 6B, panel 6, lanes 1–3). Same changes were also observed in activated primary CD4+ T cells from donor 2 (Figure 6—figure supplement 1A). We also found that the addition of bortezomib for another 24 hr after 72 hr PMA incubation rescued most of these decreased levels of CycT1 in activated primary CD4+ T cells (Figure 6C, panel 3, compare lane 3 to lane 2). Co-IPs with anti-CDK9 antibodies were also conducted in cells treated with bortezomib alone or with PMA and bortezomib. As presented in Figure 6C, interactions between CycT1 and CDK9 were significantly decreased in PMA-treated cells (up to ~7.6-fold) compared to controls (Figure 6C, panel 1, compare lane 3 to lane 2). These data demonstrate that the depletion of PKC in Jurkat and activated primary CD4+ T cells by PMA treatment causes the dissociation of P-TEFb and depletion of CycT1. This finding explains the hereto puzzling observation that Tat does not work in cells treated with PMA (Jakobovits et al., 1990).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig6-v2.jpg)
+
+**Figure 6.:** (A) Prolonged PMA treatment decreases levels of CycT1 in Jurkat cells. Jurkat cells were untreated (lane 1) or treated with 100 ng/ml PMA for 72 and 96 hr (lanes 2 and 3) before cell lysis. Panels 1 and 2 contain levels of endogenous CycT1 and CDK9 proteins, and panel 3 contains the loading control actin protein. (B) Prolonged PMA treatment decreases levels of CycT1 and PKC in activated primary CD4+ T cells. Activated primary CD4+ T cells were untreated (lane 1) or treated with PMA for 72 and 96 hr (lanes 2 and 3) before cell lysis. Panels 1–6 contain levels of endogenous CycT1, CDK9, PKCα, PKCβ1, PKCβ2, and PKCε proteins. Panel 7 contains the loading control actin protein. (C) Depletion of PKC impairs interactions between CycT1 and CDK9 in activated primary CD4+ T cells. Activated primary CD4+ T cells were treated with or without PMA (+/- signs on top) for 96 hr. At 72 hr, bortezomib was added for additional 24 hr before cell lysis. Co-IPs with CDK9 are presented in panels 1 and 2. Panels 3 and 4 contain input CycT1 and CDK9 proteins. (D) CycT1 levels are decreased in mouse anergic T cells. T cells were selected from WT OTII (WT ZAP70) or mutant W131AOTII (ZAP70W131A) mice and lysed. Panels 1 and 2 contain levels of endogenous CycT1 and CDK9 proteins. Lanes are: lane 1, WT OTII mice; lane 2, mutant W131AOTII mice. Panel 3 contains the loading control actin protein. (E) mRNA levels of CycT1 and CDK9 are equal in mouse WT and anergic T cells. Relative mRNA levels of CycT1 (left two bar graphs) and CDK9 (right two bar graphs) are presented as -fold change in W131AOTII T cells (black bars) above levels of WT OTII T cells (white bars). Error bars represent standard error of average (n = 3). (F) Prolonged ionomycin treatment decreases levels of CycT1 in activated primary CD4+ T cells. Activated primary CD4+ T cells were untreated (lane 1) or treated with 1 μM ionomycin for 24, 48, and 72 hr (lanes 2–4) before cell lysis. Panels 1 and 2 contain levels of endogenous CycT1 and CDK9 proteins. Panel 3 contains the loading control actin protein.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68473/elife-68473-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Prolonged PMA treatment decreases levels of CycT1 and PKC in activated primary CD4+ T cells (donor 2). Activated primary CD4+ T cells were untreated (lane 1) or treated with PMA for 72 and 96 hr (lanes 2 and 3) before cell lysis. Panels 1–6 contain levels of endogenous CycT1, CDK9, PKCα, PKCβ1, PKCβ2, and PKCε proteins. Panel 7 contains the loading control actin protein. (B) Prolonged ionomycin treatment decreases levels of CycT1 in activated primary CD4+ T cells (donor 2). Activated primary CD4+ T cells were untreated (lane 1) or treated with ionomycin for 24, 48, and 72 hr (lanes 2–4) before cell lysis. Panels 1 and 2 contain levels of endogenous CycT1 and CDK9 proteins. Panel 3 contains the loading control actin protein.
 
 We observed previously that levels of CycT1 increase significantly in resting CD4+ T cells with the addition of bortezomib (Cary and Peterlin, 2020). Nevertheless, interactions between CycT1 and CDK9 remain lower than in activated primary CD4+ T cells. To extend these findings to anergic T cells that lose the ability to respond to agonist antigen or stimulation of the T cell antigen receptor, we examined W131AOTII T cells from mice where the endogenous ZAP70 protein was substituted by a constitutively active mutant ZAP70-W131A protein. Introduction of this mutant protein into the OTII transgenic background (W131AOTII) results in high numbers of anergic and CD4 regulatory T cells (Hsu et al., 2017). As presented in Figure 6D, levels of CycT1 protein were significantly lower in W131AOTⅡ than in control OTⅡ T cells (panel 1, compare lane 2 to lane 1, ~7.8-fold decrease). Levels of the CDK9 were largely unchanged in these cells (Figure 6D, panel 2, compare lane 2 to lane 1). Meanwhile, levels of CycT1 and CDK9 transcripts in W131AOTⅡ and OTⅡ cells remained unchanged (Figure 6E), which is consistent with previous observations that mRNA levels of CycT1 and CDK9 do not vary between resting and activated CD4+ T cells (Cary and Peterlin, 2020; Sung and Rice, 2006). Moreover, since these W131AOTII T cells exhibit impaired T cell receptor signaling (Nguyen et al., 2021), activating these cells with anti-CD3 and anti-CD28 antibodies did not increase levels of CycT1 (data not presented).
 
@@ -114,23 +199,313 @@ Finally, since our study revealed families of kinases and phosphatases that affe
 
 ## Materials and methods
 
-## Plasmids, antibodies, chemicals, and proteins
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>CycT1 (E-3) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-271348</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CDK9 (F-6) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-376646</td>
+      <td>WB (1:200);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKCα (H-7) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-8393</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKCβ1 (E-3) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-8049</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKCβ2 (F-7) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-13149</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKCε (E-5) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1681</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CDK9 (EPR22956-37) (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab239364</td>
+      <td>WB (1:2000);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (clone HA-7) (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H3663</td>
+      <td>WB (1:1000);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag (clone M2) (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804</td>
+      <td>WB (1:1000);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H6908</td>
+      <td>WB (1:1000);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F7425</td>
+      <td>WB (1:1000);IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CycT1 (D1B6G) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>81464S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (13E5) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4970S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-threonine (42H4) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9386S</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phosphoserine (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab9332</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-tyrosine (P-Tyr-100) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9411S</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal rabbit control IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2027</td>
+      <td>IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal mouse control IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2050</td>
+      <td>IP 4 μg per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Mouse IgG, HRP-linked whole Ab (from sheep)</td>
+      <td>Cytiva</td>
+      <td>NA931</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Rabbit IgG, HRP-linked whole Ab (from donkey)</td>
+      <td>Cytiva</td>
+      <td>NA934</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>Calbiochem</td>
+      <td>179324-69-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Okadaic acid</td>
+      <td>Cell Signaling Technology</td>
+      <td>5934S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>Selleckchem</td>
+      <td>S1421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sotrastaurin</td>
+      <td>Selleckchem</td>
+      <td>S2791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bisindolylmaleimide IX</td>
+      <td>Selleckchem</td>
+      <td>S7207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBDDE</td>
+      <td>Selleckchem</td>
+      <td>ab141573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H-7</td>
+      <td>Abcam</td>
+      <td>ab142308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide (CHX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bisindolylmaleimide IV</td>
+      <td>Selleckchem</td>
+      <td>S0754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>I9657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEK 1/2 inhibitor (MEK 1/2i)</td>
+      <td>Calbiochem</td>
+      <td>444967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Enzastaurin</td>
+      <td>Selleckchem</td>
+      <td>S1055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VTX-27</td>
+      <td>Selleckchem</td>
+      <td>S0069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calyculin A</td>
+      <td>Cell Signaling Technology</td>
+      <td>9902S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BSA</td>
+      <td>Invitrogen</td>
+      <td>AM2616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>β-Casein</td>
+      <td>Sigma-Aldrich</td>
+      <td>C6905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human PKCα protein (active)</td>
+      <td>Abcam</td>
+      <td>ab55672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human PKCβ1 protein (active)</td>
+      <td>Abcam</td>
+      <td>ab60840</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids, antibodies, chemicals, and proteins
 
 HA-CycT1 (h:CycT1), CDK9-Flag (CDK9:f), and plasmids containing mutated CycT1 or CDK9 sequences were constructed by cloning PCR fragments containing the coding sequences of CycT1 and CDK9 into pcDNA3.1 vector with indicated epitope tags. PKC plasmids (PKCα, β, γ, δ, ε, and θ) were obtained from Addgene, and their coding sequences were subcloned into the pcDNA3.1 vector containing the Flag epitope tag.
 
 All antibodies, chemicals, and proteins are listed in the Key resources table.
 
-## Cell culture
+### Cell culture
 
 Human embryonic kidney (HEK) 293T cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) (Corning) with 10% fetal bovine serum (FBS) (Sigma-Aldrich), Jurkat cells and peripheral blood mononuclear cells (PBMCs) were cultured in Roswell Park Memorial Institute (RPMI) 1640 (Corning) with 10% FBS at 37°C and 5% CO2. Resting CD4+ T cells were purified from bulk PBMCs by using Dynabeads Untouched Human CD4 T Cells Kit (Thermo Fisher Scientific). Selected CD4+ T cells were activated by Dynabeads Human T-Activator CD3/CD28 kit (Thermo Fisher Scientific) and were maintained in RPMI 1640 with 10% FBS, containing 30 U/ml IL-2 (Sigma-Aldrich).
 
-## Cell manipulation
+### Cell manipulation
 
 Transfection of plasmid DNA was conducted in 293T cells using Lipofectamine 3000 (Life Technologies) and X-tremeGENE HP DNA Transfection Reagent (Roche) according to the manufacturer’s instructions.
 
 293T cells were treated with 2 μM bortezomib for 12 hr, Jurkat cells were treated with 100 nM bortezomib for 12 hr, and activated CD4+ T cells were treated with 50 nM bortezomib for 12 hr before the cell lysis. 293T cells were treated with 5 nM or 1 μM okadaic acid for 1.5 hr, or with 150 nM calyculin A before the cell lysis. 293T cells, Jurkat cells, and activated CD4+ T cells were treated with MEK 1/2 inhibitor (MEK 1/2i) or different PKC inhibitors for 12 h before the cell lysis.
 
-## Co-IP and quantification of WBs
+### Co-IP and quantification of WBs
 
 293T, Jurkat, or CD4+ T cells were lysed on ice using RIPA buffer (50 mM Tris-HCl, pH 8.0, 5 mM EDTA, 0.1% SDS, 1.0% Nonidet P-40, 0.5% sodium deoxycholate, 150 mM NaCl) supplemented with the protease and phosphatase inhibitors, then for one-time sonication (level 4, 2 s), followed by a 10 min centrifugation (21,000 × g). The supernatant was precleared and incubated with indicated primary antibodies or control IgG overnight. Mixtures were then incubated with protein G-Sepharose beads for additional 2 hr, followed by five times’ wash with RIPA buffer (500 mM NaCl). Co-IP samples and input (1% of whole-cell lysates) were subjected to WB as described previously (Huang et al., 2018).
 
@@ -138,19 +513,19 @@ Phosphorylation of CycT1 was detected by co-IP or IP, followed by WB using anti-
 
 WBs were visualized by enhanced chemiluminescence (ECL) (PerkinElmer) produced by HRP-conjugated secondary antibodies, and chemiluminescent signals were directly captured by LI-COR image analyzer. Band intensities of WBs were quantified using Image Studio software (LI-COR). Relative protein expression in whole-cell lysates was calculated by normalizing the indicated proteins with loading control β-actin. Relative protein-protein interactions in IP and co-IP were calculated by normalizing the IPed proteins with indicated antibodies targeted proteins. Quantification data were presented as fold change over values obtained with control samples.
 
-## Trypsin digestion, in-gel silver staining, and phospho-staining
+### Trypsin digestion, in-gel silver staining, and phospho-staining
 
 293T cells were lysed with RIPA buffer on ice. Lysates were sonicated once (level 4, 2 s) and cleared by centrifugation (21,000 × g, 10 min). The supernatant was precleared and incubated with HA-Ab-conjugated beads for 4 hr, followed by washing with RIPA buffer (500 mM NaCl) for three times and twice with RIPA buffer without detergents. Proteins associated with anti-HA-beads were eluted by incubation with the HA peptide (1 mg/ml). The eluted proteins were subjected to trypsin digestion using Rapid Trypsin kit (Promega) according to the manufacturer’s instructions and separated in SDS-PAGE gel for silver staining by using Pierce Silver Stain Kit (Thermo) or phospho-staining by using Phospho-Tag Phosphoprotein Gel Stain Kit (ABP Biosciences) according to the manufacturer’s instructions.
 
-## In vitro PKC kinase assay
+### In vitro PKC kinase assay
 
 WT CycT1(280), mutant CycT1(280)TT143149AA, and EGFP proteins were expressed in 293T cells, isolated by HA-Ab-conjugated beads, and eluted from the beads by the HA-peptide (1 mg/ml). Eluted proteins were incubated with or without purified constitutively active PKC proteins (4 μg PKCα and PKCβ1) at 30°C for 1 hr in kinase buffer (20 mM HEPES, pH 7.4, 1.5 mM CaCl2, 1 mM dithiothreitol, 10 mM MgCl2, 5 mM ATP). Reaction mixtures were then subjected to SDS-PAGE gel, followed by in-gel Phospho-Tag staining.
 
-## W131AOTII and control OTII cells preparation
+### W131AOTII and control OTII cells preparation
 
 W131AOTII mice were described previously (Hsu et al., 2017). Control OTII TCR transgenic mice were purchased from The Jackson Laboratory. Peripheral naïve (CD44lowCD62L+) CD25-Va2+CD4+ T cells were sorted from combined lymphoid organs (spleens and lymph nodes) of OTII or W131AOTII mice (8–12 weeks of age). The cells (106 cells) were washed with PBS, the supernatant was aspirated, and the pelleted cells were lysed as described above, then subjecting to WB assay.
 
-## MD simulations and MM-GBSA binding energy calculations
+### MD simulations and MM-GBSA binding energy calculations
 
 To understand the role of phosphorylation of CycT1 residues Thr143 and Thr149, we performed all-atoms MD simulations of four CycT1:CDK9 complexes: WT, CycT1 phosphorylated at Thr143 and Thr149 (PThr143,149), CycT1 phosphorylated at Thr143 (PThr143), and CycT1 phosphorylated at Thr149 (PThr149). Models of the four P-TEFb complexes were built based on the crystallographic structure of the human P-TEFb complex (PDB code 3MI9) using the AmberTools leap tool. All systems were neutralized with Na+ and Cl- ions and solvate is a cubic box with periodic boundary conditions. Simulations were performed using the AMBER19 force-field (Case et al., 2005) and TIP3P water model (Jorgensen et al., 1983).
 

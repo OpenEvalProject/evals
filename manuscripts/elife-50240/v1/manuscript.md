@@ -28,15 +28,363 @@ Investigating microbiome alterations in multiple diseases across a wide age-rang
 
 ## Results
 
-## Influence of age on the microbiome and microbiome-disease signatures
+### Influence of age on the microbiome and microbiome-disease signatures
 
 We first adopted a stepwise methodology to reduce the confounding effects of DNA sequencing/extraction methodologies on the microbiome profiles from the different studies (See Materials and methods; Figure 1—figure supplement 1), and subsequently retained samples from individuals with age in the range of 20–89 years (excluding cohorts where the ‘controls’ also consisted of hospitalized patients) (Vincent et al., 2016). We supplemented this data set with 475 shotgun metagenome profiles from recently published studies on IBD (Franzosa et al., 2019) and CRC (as ‘Validation’ cohorts) (Thomas et al., 2019; Wirbel et al., 2019), finally assembling a collated set of microbiome taxonomic profiles from more than 2500 samples (including the 189 ELDERMET samples used later in the study) (see Materials and methods; Supplementary file 1 and Supplementary file 2; Figure 1—figure supplement 2).
 
 We next investigated the interaction of metadata with taxonomic profiles. After filtering out redundant and sparse metadata types (recorded for less than 30% of the samples), we performed PERMANOVA linking the effects of each metadata with the gut microbiome accounting for DNA extraction technique as a confounder (See Materials and methods; DNA extraction technique was still treated as a confounder as it still had a minor effect, R2 = 0.019, on the gut microbiome composition). Regional factors namely country and continent had the largest interaction with gut microbiome composition (Figure 1A). Regional factors reflect the ethnicity and other socio-economic properties of the study populations, which has a dominant effect on gut microbiome architecture and microbiome-based disease signatures (Deschasaux et al., 2018; He et al., 2018). Age followed by study-condition (disease versus control status) were the second major effect. We thus explored the variation of the apparently ‘healthy’ microbiome across the age landscape using Principal Component Analysis of 1175 gut microbiome profiles from exclusively ‘control’ individuals from the age-groups’ 20–39’ (categorized as ‘Young’),’ 40–59’ (‘Middle-Age’) and’ above 60’ (‘Elderly’). PERMANOVA analysis of the gut microbiome composition (after adjusting for country and the DNA extraction technique) indicated that the elderly controls had a significantly distinct microbiome composition compared to the young and the middle-aged (p<0.001) (Figure 1B), in line with our previous findings (Claesson et al., 2012). To further explore this effect, we then investigated the effect of subject age on the gut microbiome composition in five diseases, IBD, type II diabetes (T2D), intestinal polyps, CRC, and liver cirrhosis, for which substantial number of cases were available across at least two age-groups. Samples corresponding to different diseases were available in different cohorts (Table 1). Each cohort dataset comprised healthy controls and diseased individuals matched with respect to geographical region and environment (thereby reducing these confounding effects on the gut microbiome), so we were able to perform PERMANOVA to quantify the effect of both age group (‘Young’, ‘Middle-Aged’ and ‘Elderly’) and disease status (‘Control’ and ‘Disease’) on the gut microbiome (separately in each of the different disease-specific cohorts). For all five diseases, age had a significant effect. Notably, for three diseases (T2D, CRC and intestinal polyps), this effect was higher than that of the disease itself (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig1-v1.jpg)
+
+**Figure 1.:** (A) Bar plots showing the effect (denoted by R2 values computed using PERMANOVA after adjusting for the DNA extraction technique as the confounder) of host factors with microbiome composition in the ExperimentHub repository. Only metadata available for at least 30% of the samples are shown. The p-values for the significance of association are also indicated as ****: p<0.0001; ***: p<0.001, **: p<0.01, *: p<0.05. (B) Principal Co-ordinate Analysis (PCoA) plots of the species profiles of the ‘control’ samples grouped into three age ranges, Young (20–39 years), Middle (40–59 years) and Elderly (60 years and above). The significance (p-value) of the differences between the three groups, computed using PERMANOVA (adonis) after considering the country-specific differences and the DNA extraction technique, is also indicated. The boxplots on the top show the variation of the top three PCoA coordinates for the samples belonging to the three age-groups. The elderly harboured a significantly different microbiome compared to the young/middle-aged. (C) Barplots of PERMANOVA R2 values showing the variation of microbiome with disease (adjusting for age-group) and age-group (adjusting for disease status) in the five disease cohorts. The Cohort-specific analyses ensured that the variations observed were not due to country-specific regional differences in microbiome composition. However, within each cohort, there were skews in the representation of diseased and control samples from different age-groups (as seen in Table 1). Furthermore, in four out of the eight cohorts, there were significant differences in the age variation of control and diseased individuals, as shown by the beanplots in D.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PCoA Plot showing the relatedness of the microbiome profiles of the ExperimentHub datasets of different median read length ranges. The different read length categories (into which the datasets were grouped) were’ 30 to 90’ (base pairs) and ‘Greater than 90’ (base pairs). The R-squared value and P-value of the association obtained using bootstrapped envfit iterations (sub-sample size = 200 and number of iterations: 25) are indicated. (B) PCoA analysis of the effects of the DNA extraction methods on the microbiome profiles, indicating that the samples extracted using the method tagged as ‘Illuminakit’ (shown in Green) (used by SchirmerC_201635), had a profile significantly different from those used by other methods (‘Gnome’, ‘Mobio’ and ‘Qiagen’) (bootstrapped envfit median R-squared: 0.13 and median p-value<0.001). Removing these samples in (C) indicated that the rest of the samples had only a marginal effect on the profiles (p<0.08; R-squared = 0.019).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** While the datasets used in the core-analysis are highlighted in blue, the validation cohorts including the ELDERMET are highlighted in brown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Age-groups where the number of control/diseased samples are less than 15 are highlighted in red. The shortened notations for the different country used are ESP: Spain; USA: United States, CHN: China, SWE: Sweden, AUT: Austria, FRA: France (C) Boxplots comparing the PERMANOVA -log P-values obtained for the effects of the geographical factors, country and continent, by taking repeated subsets of control samples (n = 25, subset size = 20%). The overall R2 value obtained for the PERMANOVA is also indicated. While R2 was higher for country, the p-values obtained for continent was significantly lower as compared to country, indicating that the effect of continent is much more significant than the country. The results indicated that country and continent had similar effects on the microbiome. (D) The country and continent specific cohorts within which the analyses were restricted for each disease, to take into account the regional variations.
+
+**Table 1.**
+ Number of control and diseased individuals belonging to the different age-groups present in the continent-specific groups pertaining to each disease.Age-groups where the number of control/diseased samples are less than 15 are highlighted in red. The shortened notations for the different country used are ESP: Spain; USA: United States, CHN: China, SWE: Sweden, AUT: Austria, FRA: France.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="2">CRC Cohorts</td>
+      <td rowspan="2">Country</td>
+      <td colspan="2">Young</td>
+      <td colspan="2">Middle</td>
+      <td colspan="2">Elderly</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+    </tr>
+    <tr>
+      <td>ZellerG_2014</td>
+      <td>FRA</td>
+      <td>5</td>
+      <td>0</td>
+      <td>15</td>
+      <td>14</td>
+      <td>33</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>FengQ_2015</td>
+      <td>AUT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>10</td>
+      <td>57</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>VogtmannE_2016</td>
+      <td>USA</td>
+      <td>2</td>
+      <td>3</td>
+      <td>17</td>
+      <td>18</td>
+      <td>41</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cirrhosis Cohorts</td>
+      <td rowspan="2">Country</td>
+      <td colspan="2">Young</td>
+      <td colspan="2">Middle</td>
+      <td colspan="2">Elderly</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+    </tr>
+    <tr>
+      <td>QinN_2014</td>
+      <td>CHN</td>
+      <td>64</td>
+      <td>19</td>
+      <td>45</td>
+      <td>77</td>
+      <td>5</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">IBD</td>
+      <td rowspan="2">Country</td>
+      <td colspan="2">Young</td>
+      <td colspan="2">Middle</td>
+      <td colspan="2">Elderly</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+    </tr>
+    <tr>
+      <td>FranzosaCA_2018</td>
+      <td>USA</td>
+      <td>36</td>
+      <td>77</td>
+      <td>16</td>
+      <td>41</td>
+      <td>45</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>NielsenHB_2014</td>
+      <td>ESP</td>
+      <td>35</td>
+      <td>53</td>
+      <td>22</td>
+      <td>84</td>
+      <td>12</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">T2D Cohorts</td>
+      <td rowspan="2">Country</td>
+      <td colspan="2">Young</td>
+      <td colspan="2">Middle</td>
+      <td colspan="2">Elderly</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+    </tr>
+    <tr>
+      <td>KarlssonFH_2013</td>
+      <td>SWE</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>QinJ_2012</td>
+      <td>CHN</td>
+      <td>69</td>
+      <td>27</td>
+      <td>89</td>
+      <td>85</td>
+      <td>10</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Polyps Cohorts</td>
+      <td rowspan="2">Country</td>
+      <td colspan="2">Young</td>
+      <td colspan="2">Middle</td>
+      <td colspan="2">Elderly</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+      <td>Control</td>
+      <td>Disease</td>
+    </tr>
+    <tr>
+      <td>Feng_2015</td>
+      <td>AUT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>8</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>ZellerG_2014</td>
+      <td>FRA</td>
+      <td>5</td>
+      <td>0</td>
+      <td>15</td>
+      <td>13</td>
+      <td>41</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we investigated whether these age-related changes in microbiome composition influenced disease signatures. However, performing this investigation posed a specific challenge. Given that regional factors like country or continent had the highest effect on the gut microbiome composition, any investigation into age-group-specific microbiome signatures for the various diseases required the comparisons to be performed within geographically homogeneous sub-populations (or study cohorts) to ensure that any differences in disease signatures were not simply driven by regional variations in gut microbiome composition. However, focusing on specific disease cohorts (which belong to specific countries) also imposes limitations including reduction in sample size (and therefore statistical power) and bias for certain age-groups. Among the eight disease cohorts (in the curatedMetagenomicData) that we analyzed here, we discovered that half of these featured a significant difference in the age of the control and diseased individuals (i.e. they were not age matched) (Figure 1D). In addition, there were skews in the representation of specific age-groups for most of the disease cohorts. Adding ‘control’ samples from other cohorts that were collected from the same region (country or continent) as the corresponding disease cohorts was expected to circumvent this issue by increasing the number of available samples and thereby the statistical power of comparisons. We addressed this issue by grouping the samples into disease-specific country-/continent-level bins (See Materials and methods; Figure 1—figure supplement 3). This ensured sufficient representation of samples from the three different age-groups for all diseases.
 
 Next, we performed investigations using two different approaches to explore the effect of age on disease-microbiome signatures. In the first analysis, within each disease-specific country-level cohort, we performed PERMANOVA investigating the effect of the interaction between disease signatures and age-group, after adjusting for the effects of country (given that there were samples from different countries within the different disease cohorts) and the independent effects of disease and age-group (Table 2). Interaction between two metadata categories measures the extent to which the microbiome variation with respect one metadata (in this case, the disease) is influenced by the variation in the other (that is the age-group). For three of the diseases (IBD, CRC and Polyps), the effect of the interaction of disease with age-group was significant (all with p<0.05; PERMANOVA after adjusting for the confounders as above). The effect was also marginally significant for T2D (p<0.08; PERMANOVA). This indicated that (even after considering the regional variations and the individual influences of disease and age), for these diseases, the microbiome variation associated with disease was significantly influenced by the variations in the age-group of the individuals. Further investigation of these influences (measured by the R2) also indicated that, while IBD and CRC had the highest influence of age as a covariate of disease signatures, with T2D and Polyps relatively lower but significant influences (Table 2).
+
+**Table 2.**
+ Results of PERMANOVA analysis investigating the effect of the interaction between disease signatures and age-group, after adjusting for the effects of country (within the continent cohorts) and the independent effects of disease and age-group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Adonis</th>
+      <th colspan="3">T2D</th>
+      <th colspan="3">IBD</th>
+      <th colspan="3">CRC</th>
+      <th colspan="3">Polyps</th>
+      <th colspan="3">Cirrhosis</th>
+    </tr>
+    <tr>
+      <th>F.Model</th>
+      <th>R-Squared</th>
+      <th>P-Value</th>
+      <th>F.Model</th>
+      <th>R-Squared</th>
+      <th>P-Value</th>
+      <th>F.Model</th>
+      <th>R-Squared</th>
+      <th>P-Value</th>
+      <th>F.Model</th>
+      <th>R-Squared</th>
+      <th>P-Value</th>
+      <th>F.Model</th>
+      <th>R-Squared</th>
+      <th>P-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Country</td>
+      <td>16.69</td>
+      <td>0.029</td>
+      <td>0.001</td>
+      <td>11.34</td>
+      <td>0.017</td>
+      <td>0.001</td>
+      <td>7.63</td>
+      <td>0.027</td>
+      <td>0.001</td>
+      <td>4.65</td>
+      <td>0.022</td>
+      <td>0.001</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Disease</td>
+      <td>4.81</td>
+      <td>0.008</td>
+      <td>0.001</td>
+      <td>15.79</td>
+      <td>0.023</td>
+      <td>0.001</td>
+      <td>4.70</td>
+      <td>0.008</td>
+      <td>0.001</td>
+      <td>1.25</td>
+      <td>0.006</td>
+      <td>0.028</td>
+      <td>12.107</td>
+      <td>0.029</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Age-Group</td>
+      <td>1.38</td>
+      <td>0.005</td>
+      <td>0.001</td>
+      <td>2.51</td>
+      <td>0.007</td>
+      <td>0.001</td>
+      <td>3.80</td>
+      <td>0.007</td>
+      <td>0.001</td>
+      <td>1.00</td>
+      <td>0.004</td>
+      <td>0.408</td>
+      <td>1.239</td>
+      <td>0.006</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Disease:Age-Group</td>
+      <td>1.12</td>
+      <td>0.004</td>
+      <td>0.08</td>
+      <td>2.73</td>
+      <td>0.008</td>
+      <td>0.001</td>
+      <td>3.57</td>
+      <td>0.006</td>
+      <td>0.001</td>
+      <td>1.38</td>
+      <td>0.006</td>
+      <td>0.011</td>
+      <td>1.035</td>
+      <td>0.005</td>
+      <td>0.290</td>
+    </tr>
+  </tbody>
+</table>
 
 In the second analysis, we utilized Random Forest (RF) Classifier Models. Random Forest models belong to a category of ensemble-based machine learning methods (based on decision trees), that can be used to predict a given trait (in this case, disease status) based on a list of predictor features. Random Forests can not only be used to judge the strength of the association between the predictors and the response (based on the accuracy or area under the curve (AUC) of prediction), but also whether associations identified on one set of observations are extrapolatable to another. Consequently, Random Forest models have been routinely used in microbiome based studies to not only quantify and characterize the microbiome associations with various diseases (Feng et al., 2015; Karlsson et al., 2013; Pasolli et al., 2016; Qin et al., 2012), but also to study the transferability of the associations predicted in set of individuals on others (He et al., 2018; Thomas et al., 2019).
 
@@ -44,17 +392,55 @@ We specifically focused on the disease-specific country-level bins (to ensure re
 
 The data revealed large differences across age groups for the various diseases. Specifically, in 10 of the 13 disease-age group scenarios (covering five diseases), classifiers trained and tested on the same age-group had significantly higher disease prediction AUC than when tested on different age-groups (Figure 2), with the improvement of classification performance significantly higher than would be expected by random chance (obtained using the permutation test based strategy) (Figure 2—figure supplement 2). This confirmed that microbiome-disease associations had age-centric trends. Furthermore, the extent of the differences was pronounced for IBD, CRC and T2D (the above trend being reflected across all age-groups), reflecting the patterns observed in the PERMANOVA analysis (Table 2). CRC and Polyps were characterized by noticeably similar age-specific trends wherein the elderly age-groups had a noticeable decrease in classification AUCs (that is lower AUCs for classifiers trained or tested on the elderly age-groups), indicating that the microbiome-disease signatures for these diseases in the elderly age-groups are weaker (Figure 2). For these two diseases, the AUC difference between the Same Age-group and Different Age-group disease classification was also reduced in the elderly (in the case of Polyps, this difference was not significantly different what would be expected by random chance) (Figure 2—figure supplement 2).
 
-## Age-centric differences in microbiome-disease associations
+![Figure 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig2-v1.jpg)
+
+**Figure 2.:** Boxplots showing the variation of disease-classification area under the curve (AUCs) when classifiers trained on one age-group were tested on either the same (denoted as SameAge or Same Age-group classification) or different age-groups (denoted as DiffAge or Different Age-group classification) for (A) IBD (B) T2D (C) CRC (D) Polyps and (E) Cirrhosis. Each point denotes the median AUC (of 20 iterations) obtained using each of the 100 sub-sample based Random Forest classifier models when tested on samples from the Same Age-group (in blue) or Different Age-groups (in red). Median AUC values obtained for the same classifier for Same Age-group and Different Age-group classification are joined by grey lines. Scenarios where in the Same Age-group classification had a significant increase of classification AUC as compared to the Different Age-group are indicated (using the P-values of significance). The Wilcoxon signed rank test p-values of significance, after correction using Holm method, are indicated as ***: p<0.001, **: p<0.01, *: p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Workflow also describes the permutation test based strategy adopted to investigate whether the observed differences in classification AUCs (Same Age-group classification – Different Age-group classification) are significantly high than would be expected at random (Null distribution). The training set and test set sub-sample sizes are X and Y, respectively (refer to Figure 2—source data 1). A similar strategy was adopted for all the three age-groups and all the five diseases (refer to the Materials and methods for the detailed description).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** While the blue points denote the actual increase of the median AUCs obtained for the Same Age-group classification with respect to that obtained for the different age-group classification, the red points denote the differences of the AUCs observed between the permuted test sets. Scenarios where in the actual difference of AUC are significantly higher than would be expected by random (in the null distributions) are indicated (using the P-values of significance). The Wilcoxon signed rank test p-values of significance, after correction using Holm method, are indicated as ***: p<0.001, **: p<0.01, *: p<0.05.
+
+### Age-centric differences in microbiome-disease associations
 
 We next sought to identify differentially associated age-disease markers and how these corresponded with the currently known microbiome-disease associations. Besides quantifying the strength and extrapolatable nature of the microbiome signatures, iterative RF models also provided the list of taxa contributing to the models along with their relative importance scores (for each disease age-group scenario). Therefore, in the first step, based on the RF analysis (as described above) for each disease, we computed the age-group specific feature importance scores for each taxa and then shortlisted the taxa having marker scores in the top 85 percentile individually for each of the age-groups (See Materials and methods; Figure 3—figure supplement 1; Figure 3—source data 1). Comparing the top 85 percentile markers across the different age-groups revealed that the proportion of age-influenced markers (or markers differentially associated across at least one age-group) ranged from 30% in CRC to 50% in IBD (greater than 35% for the other three) (Figure 3—source data 1; Figure 3—figure supplement 2). The feature importance scores (obtained using the iterative RF models) were then compared across age-groups and taxa having significant differences in the feature importance scores (across age-group) (Benjamini FDR < 0.01 Kruskal-Wallis test for IBD, T2D and Cirrhosis and Mann-Whitney Tests for CRC and Polyps) were then identified (Figure 3—source data 1).
 
 These results indicate that the microbiome associations with disease have both an age-group-specific and an age-group-independent component. However, many of the age-group-specific changes in microbiome-disease association may also be reflections of changes that accompany ageing in general. Age had the second major effect on microbiome composition, and it was important to investigate these age-specific changes in disease-microbiome associations after deconvoluting for the effect of ageing. Secondly, while grouping samples into country-level bins ensured enough regional homogeneity of the compared groups, there were still biases in the representation of certain regions in certain age-groups for the different diseases (Figure 1—figure supplement 3). Given that RF models cannot intrinsically adjust for these confounding effects, we probed this using a linear regression-based strategy that compared the extent of influence that age-group had on the disease-association pattern of a taxon (Disease:Age-group) as compared to the individual influences of disease and age-group (see Materials and methods; Figure 3—figure supplement 3). We specifically investigated those taxa having significant differences in their feature importance scores (Figure 3—source data 1) and identified those having significantly higher influence of Disease interacting with Age-group than Age-group alone (Log likelihood test one sided p<0.05) (Figure 3—source data 2; Figure 3) as the final validated list of ‘strictly age-specific disease markers’. Notably, the percentage of taxa showing significant differences in their feature importance scores that were also validated in the Linear regression-based approach, showed disease-specific trends reflecting those observed in our PERMANOVA-based (Table 2) and RF-based analysis (Figure 2). Specifically, for IBD and CRC, more than 63% of features showing significant differences in their marker scores across age-groups were also validated in the linear-regression-based validation, indicating that for these diseases, a majority of age-group-specific disease associations persist even after accounting for the overall effect of ageing. In contrast, for Polyps and Cirrhosis these overlaps showed a progressive decrease (Figure 3—figure supplement 4A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig3-v1.jpg)
+
+**Figure 3.:** Heatmaps showing the marker scores for the list of taxa that are differentially associated with the indicated disease across the age-groups (Y: Young; M: Middle-aged and E: Elderly). For each disease, this list of species was selected as those which were among the top 85 percentile features in at least one age-group and which displayed significant variation in their feature importance scores across at least two age-groups. These taxa were further validated using a linear regression approach to ensure that their age-group specific association with disease was significant even after accounting for the independent changes associated with ageing. The font colors of the species indicate whether the species were reported in the original studies as being associated with the given disease (Dark blue: Associated Previously; Black: Not Associated). For each disease, heatplots (adjoining on the right side of the corresponding heatmap) shows the different taxa were identified within the top 85 percentile markers for each age-group (in blue color).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Frequency at which taxa with feature importance scores in different percentile were identified as markers (Mean Decrease of GINI > 0) in the iterative RF models for each of the 13 disease – age-group scenario. For all the 13 disease-age-group scenario, taxa features with scores above 85 percentile were identified as markers in at least 95% of the iterations. (B) Variation of the mean feature importance scores of taxa in various percentiles. For most of the 13 scenarios, the mean feature importance scores remain stable and low till the 80% mark and start increasing only after that. Given these two observations, the percentile threshold of 85 was identified to filter the top disease associated features.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The objective was to identify a core subset of differentially associated taxa whose age-group specific association was not a simple consequence of its abundance changing with ageing.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Percentage of taxa showing significant differences in their feature importance scores that are also validated in the Linear regression-based approach. (B) Percentage of known markers (that is those reported in previous studies) that were also identified in the list of taxa showing significant differences in their feature importance scores (C) Percentage of known markers that were also validated in the Linear regression approach. (D) Heatplots showing the age-group-specific variability in the association patterns of the known markers for CRC and T2D (that also showed differential associations with disease across age-groups). For each disease-age-group scenario, the value for a marker indicates the number of times (out of the 100 iterations) it was identified with feature rank score of greater than 85 percentile. Y: Young, M: Middle, E: Elderly.
+
 We next compared the age-linked disease markers identified here with the disease markers originally reported. For four of the diseases (i.e. not CRC), we compiled a list of known disease-associated markers from each of the original studies (Feng et al., 2015; Franzosa et al., 2019; Karlsson et al., 2013; Qin et al., 2012; Qin et al., 2014). For CRC, a recently study presented a meta-analysis of all major cohorts (encompassing those in curatedMetagenomicData) (Feng et al., 2015; Vogtmann et al., 2016; Zeller et al., 2014), along with three newly sequenced cohorts (Thomas et al., 2019), to produce a refined set of cross-cohort validated CRC markers. We utilized this list to compile the set of known markers for CRC. Comparing the list of these associations with a pre-compiled list of all known marker associations reported in the original studies (Figure 3—source data 3) (Feng et al., 2015; Franzosa et al., 2019; Karlsson et al., 2013; Qin et al., 2012; Qin et al., 2014; Vogtmann et al., 2016; Zeller et al., 2014), identified that 40% of taxa identified in the original study for Polyps, more than 63% for CRC and IBD, 58% for T2D and 25% for Cirrhosis, displayed significant differences in their feature importance scores across age-groups, thereby emphasizing that age-linked disease-microbiome associations are prevalent across diseases (Figure 3—figure supplement 4B). Even in the final list of ‘strictly age-specific markers’ that were deconvoluted for the effect of ageing, the overlap varied from 20% for T2D and Polyps to as high as 63% for CRC (Figure 3; Figure 3—figure supplement 4C). The effects were especially pronounced for IBD, where many of the known markers (species belonging to Lachnospiraceae, Escherichia, Clostridium clostridioforme, Clostridium nexile, Blautia producta) were not even identified in the top 85 percentile in certain age-groups (Figure 3). For CRC, some of the well-known markers Fusobacterium nucleatum, Parvimonas micra, Peptostreptococcus stomatis, and Porphyromonas asaccharolytica, although identified in the top 85 percentile across age-groups, the strength of the associations in terms of RF feature importance scores as well as the results of linear modelling showed age-specific trends. The same pattern was also observed for some of the signature taxa for T2D (Faecalibacterium prausnitzii, Roseburia intestinalis, Haemophilus parainfluenzae, Bacteroides intestinalis and Alistipes indistinctus) and Polyps (Bacteroides dorei). The variations in the strength and stability of these associations were further evident when we compared the percentage of times each marker is identified with scores greater than 85 percentile in different age-groups (within the 100 iterations for each age-group) (Figure 3—figure supplement 4D). Several known markers of CRC (Parvimonas micra, Eubacterium eligens) and T2D (Bacteroides intestinalis, Haemophilus parainfluenzae) are identified in the top 85 percentile across more than 80% iterations in certain age-groups, but less than 50% in others. This has implications for the efficacy of microbiome-directed diagnostic/therapeutic strategies across age groups.
 
-## Replicability of the age-centric microbiome-disease signatures across multiple cohorts in CRC
+### Replicability of the age-centric microbiome-disease signatures across multiple cohorts in CRC
 
 We next tested if the differential trends of disease association observed were affected by cohort-specific differences. For CRC, we observed the strongest effects of age-group influenced disease signatures which affected more than 63% known CRC markers, and that were validated even after considering country-specific representations and deconvoluting the effect of ageing. Furthermore, the three newly sequenced cohorts (referred to as ‘Cohort1’, ‘Cohort2’ and ‘WirbelJ_2019’, as a group ‘Validation Cohort’) had sufficient representation of samples from different age-groups (Supplementary file 1) (Thomas et al., 2019; Wirbel et al., 2019), and represented new data that had not been included in our initial identification of differentially associated markers. In the curatedMetagenomicData repository, the CRC disease samples were collected from three cohorts, namely ZellerG_2014, VogtmannE_2016 and FengQ_2015 (Feng et al., 2015; Vogtmann et al., 2016; Zeller et al., 2014). To explore the reproducibility of the associations (irrespective of the general effect of ageing) as well as to understand the biological basis for these differential associations, we validated the age-aware RF classification models designed on this cohort (referred to as the Training Set1) on the validation cohort (Figure 4A; upper panel) (using a similar strategies as described in Figure 2—figure supplement 1). The age-specific trends of disease classification were similar to those obtained earlier (Figure 2), that is, classifiers trained on the young/middle-aged individuals had the highest classification performance when tested on the same age-group, with a significant reduction in classification AUCs when tested on the elderly. In contrast, performance decreased significantly for those either trained or tested on elderly (where the difference between the Same Age-group and Different age-group testing was not observed to be significant) (Figure 4A; Figure 4—figure supplement 1). We further re-generated similar iterative age-group specific microbiome disease-prediction models by taking subsets of samples from within the ‘Validation Cohort’ (referred to as Training Set2) and testing on non-training subsets of the same. The classification pattern remained invariant (Figure 4A; lower panel versus upper panel). These results indicated that the variations in age-group specific microbiome-disease signatures remained stable and were not derived from biases in the training datasets.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig4-v1.jpg)
+
+**Figure 4.:** (A) The boxplot on the top panel shows the distribution of AUC values obtained when classifiers trained on different age-groups (YM: Young/Middle-aged; E: Elderly) in three cohorts of the curatedMetagenomicData (Training_Set1: ZellerG_2014, FengQ_2015 and VogtmannE_2016) are tested on the three datasets of the validation cohort (ThomasAJ_Cohort1, ThomasAJ_Cohort2 and WirbelJ_2019). The lower panel shows the same, but with age-group specific classifiers trained from within the validation cohort (Training_Set2). Both the classification models generated the same trends of classification, indicating age-group specific reproducibility of the disease signatures. The description of the point colors is the same as for Figure 2. (B) Age-group dependent associations of the known CRC markers in the two independent cohorts, namely Training_Set1 (curatedMetagenomicData) and Training_Set2 (Validation Cohort). Shades of blue indicate higher feature importance scores in the young/middle-aged and red indicates higher feature importance scores in the elderly. FDR p<0.15 indicates features identified as being high either in elderly of young/middle with Benjamini-Hochberg corrected Mann-Whitney test p-value<0.15. FDR p<0.25 indicates features identified as being high either in elderly of young/middle with Mann-Whitney test p-value<0.25. Out of the 19 known and validated CRC-markers (obtained from Thomas et al., 2019), 13 showed significant differences in their feature importance scores across the two age-groups (in the curatedMetagenomicData cohorts). For nine of these 13 markers, the pattern of associations could be reproduced in the Validation cohort, further indicating the replicability of the obtained results. The feature ranks of the top 10 markers obtained in Thomas et al. (2019) are also shown. Six of the top 10 markers show increased association, but only within the young/middle-aged. Only one of the markers associated with the elderly. This indicates a loss of disease-signature in the elderly. (C) Across cohort Spearman distances of feature rank profiles obtained for the disease classifiers trained on the different age-groups (See Materials and methods). A stable disease signature would result in reproducible species rank profiles across cohort and consequently lower Spearman distances. While this is the case for young/middle-aged, the elderly signatures obtained for the different cohorts show significantly high Spearman distances (showing significant variations and lack of disease signature). (D) The log ratios of the prevalence rates of the top six CRC-associated markers in elderly controls with respect to the young/middle-aged controls (in both the curatedMetagenomicData and CRC-specific cohorts). A positive value indicates higher prevalence rates in elderly controls. The significance of the increase is also indicated (p-values of fishers’ exact test combined using Fisher method) as ***: p<0.001, **: p<0.01, *: p<0.05. The increase in the elderly is characterized by a significant decrease in the effect-size differences between the controls and diseased in elderly, leading to masked signatures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The color of the points are as indicated previously (Figure 2—figure supplement 2). Scenarios where in the actual difference of AUC are significantly higher than would be expected by random (in the null distributions) are indicated (using the P-values of significance).
 
 We then examined the overlap of the age-dependent associations of the known CRC markers across the two training models (Figure 4B). From among the refined cross-cohort associated subset of 19 CRC-associated taxa (Thomas et al., 2019), 13 (67%) had differential association with either of the age-groups (with FDR corrected p-value<0.1) in Training Set 1. Nine of these (77%) could be replicated with the same directionality in the Training Set 2 (Figure 4B). Interestingly, from among the top CRC-predictive features reported in the recent meta-analysis, six were found to be associated with higher predictive power only in the young/middle age category (Figure 4B). Only one was observed to be associated with the elderly microbiome.
 
@@ -62,17 +448,41 @@ We next checked the stability of the feature-associations of CRC across the youn
 
 Although no specific trends were observed when comparing abundances of the known CRC-specific markers, five of the top ten markers (Fusobacterium nucleatum, Peptostreptococcus stomatis, Gemella morbillorum, Parvimonas micra and Parvimonas spp) showed significantly higher prevalence rates in the elderly controls (reproducibly across both datasets) (Figure 4D). This resulted in a significant reduction in the effect size of their differences (between control and diseased individuals) in the elderly age-group. Thus, ageing-associated changes may render elderly individuals susceptible to specific microbiome-related diseases like CRC.
 
-## Age-specific changes in the directionality of taxon abundance alterations for specific diseases, and the microbiome response shared by multiple diseases
+### Age-specific changes in the directionality of taxon abundance alterations for specific diseases, and the microbiome response shared by multiple diseases
 
 We next investigated if the diseases were characterized by distinct patterns of microbial taxon gain or loss, even across the different age-groups. We first focused on the individual study cohorts (Figure 1C). For each disease-age-group scenario, we determined the directionality (increased versus decreased in disease) of association of the corresponding top disease-predictors by comparing their abundance trends in (study-matched) control and diseased samples (Mann Whitney Test p<0.05). For four of the five diseases (i.e. except polyps), there was a significant change in the directionality of the microbiome alteration, characterized by a significant reduction in the number of gained features with older age (Fishers’ exact test p<0.05; Figure 5—figure supplement 1). To add statistical power and check whether the above trend is retained across a larger cohort, we performed the analysis using ‘continent-matched’ disease and controls (using reasonably stringent thresholds of Benjamini-Hochberg corrected P value < 0.1 obtained from Mann Whitney tests). The trend remained similar. For elderly, microbiome alterations (for all diseases except cirrhosis and polyps) were characterized by a significant increase in the number of lost taxa (Figure 5A). The list of disease-specific markers with significant directionality of disease association across age-groups are presented in Figure 5—source data 1. Thus, the microbiome alterations in most of these diseases are characterized by a gradual shift from a state dominated by gained microbiome components to an increasing loss of control-associated taxa in the elderly.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig5-v1.jpg)
+
+**Figure 5.:** (A) Comparison of the relative proportions of more abundant and less abundant disease-specific marker taxa across the young, middle-aged and elderly age-groups for the five diseases. For each disease-age-group scenario, we checked for the directionality (increased abundance in disease v/s decreased in disease) of association of the corresponding top disease-predictors by comparing their abundance trends in the control and diseased samples belonging to the specific age-groups (See Materials and methods). To ensure that the results thus obtained were not affected by regional variations in microbiome composition, we again restricted these comparisons to the disease-specific continent cohorts. (B) Comparison of the disease prediction AUCs, the disease classification sensitivity and control classification specificity of generic disease prediction models obtained for the elderly and young/middle-aged groups. Overall, the generic disease classifiers had a significant decrease in performance in the elderly age groups, indicating that shared microbiome response may be reduced in the elderly. Moreover, the loss of performance was especially significant with respect to the discrimination of control samples from disease (C) Heatmap of marker species showing consistent trends of either increase or decrease in at least two diseases in the elderly and young/middle-aged groups. Blue indicates consistent increase in two or more diseases, red indicates decrease in two or more diseases. Based on their patterns of increase or decrease across the two age-groups, the taxa could be classified into six groups, namely G1-G3 and L1-L3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** For each disease-age-group scenario, we checked for the directionality (increased abundance in disease v/s decreased in disease) of association of the corresponding top disease-predictors by comparing their abundance trends in the control and diseased samples belonging to the specific age-groups (Mann-Whitney Tests p<0.05; See Materials and methods). To ensure that the results thus obtained were not affected by regional variations in microbiome composition, we again restricted these comparisons to the study matched controls and diseased samples.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig5-figsupp2-v1.jpg)
 
 The overlap of altered taxa across diseases reported in one study was 51% (Duvallet et al., 2017), while another study reported that generic control versus disease classifiers trained by agglomerating disease samples from multiple studies could still distinguish controls from disease with an AUC of greater than 0.8 (Pasolli et al., 2016). Given that microbiome composition changes with age, we investigated the effect of age on the extent of these shared disease responses. We designed generic disease classifiers (using Random Forest), taking equally sized sub-samples of controls and diseased individuals (containing equal number of samples from each disease to prevent disease/age-group specific biases in classification performance) (See Materials and methods and Figure 1—figure supplement 3). While the performances of the generic disease prediction models in the young/middle-aged was high (median AUC: 0.79) and similar to those reported by earlier studies (Pasolli et al., 2016), the same models applied to data from elderly subjects had significantly lower performance AUC (p<1e-7) (Figure 5B). Moreover, in these models, while no significant differences were observed with respect to the disease prediction sensitivities (p<0.13), the specificity of prediction (that is the accuracy of identifying healthy individuals) was significantly lower for the elderly. This was not an effect of the differential representation of samples from the different diseases, as we had ensured equal representation of all diseases across all age-groups. Thus, in contrast to previous meta-analyses, the shared disease response was significantly lower across elderly subjects, primarily with respect to the discrimination of non-diseased individuals. Furthermore, our clarification of the effect of age on disease-associated taxa (Figure 3—source data 1; Figure 3—source data 2; Figure 5—source data 1) provides a refined set of features for improved microbiome-based diagnostics for these diseases. The above disease-independent changes in the pattern of microbial alterations as well as the inability of the generic disease classifiers to distinguish non-diseased controls were intriguing and could be a consequence of the loss of beneficial bacteria in the gut microbiome with ageing, which in turn could be driven by a multitude of factors like diet and medication. This increasing loss could lead to dysbiotic configurations characterized by higher inter individual variability, increased abundance of pathobionts (resulting in loss of disease signature) thereby making the microbiome more susceptible to diseases. Therefore, using intra age-group Spearman distances, we next checked whether the samples from elderly controls had significantly higher variability as compared to young/middle-aged controls, across the different continental regions (Figure 5—figure supplement 2). In line with our hypothesis, for both Europe and North America, the gut microbiome from elderly individuals was significantly more variable compared to young and middle-aged controls. However, this was not observed in the Asian (Chinese) cohort. Interestingly, the cirrhosis group neither shows an association with disease signatures nor the gain versus loss pattern contained only subjects from Asia.
 
 Next, we sought to characterize the elements of the shared disease response. Notably, closer inspection of the directionality of the associations indicated specific taxa with consistent trends of association with multiple diseases (based on the trend shown in Figure 5—source data 1). The overall patterns of taxon gain or loss encompassed several trends observed by earlier studies (Duvallet et al., 2017; Pasolli et al., 2016). For example, Streptococcus anginosus and Fusobacterium nucleatum were detected as gained in multiple diseases. Similarly, species belonging to Roseburia spp. (R. hominis) were lost. We identified a total of 61 taxa that showed consistent directionality of association with multiple diseases in either young/middle-aged or the elderly age-groups (Figure 5C). Based on their differential detection profiles in the shared response across age-groups, we assigned these into six different groups, namely G1 (increased in disease across all age groups), G2 (increased in disease only in the elderly), G3 (increased only in young/middle-aged), L1 (decreased in disease across both), L2 (decreased only in the elderly) and L3 (decreased only in the young/middle-aged groups) (Figure 5C). Many of the species previously reported as associated with shared gain or loss across multiple diseases (Duvallet et al., 2017; Pasolli et al., 2016) belonged to the G3 group, that is, they showed similar trends of gain or loss in disease (as reported earlier) in the young and the middle-aged groups, but not in the elderly. These included the Streptococci, Fusobacterium nucleatum, and Escherichia coli and Bacteroides fragilis. In contrast, a separate group of species including Ruminococcus torques, Solobacterium moorei and Streptococcus mitis were associated with multiple diseases only in the elderly. Finally, we identified a distinct group of species (G1) that was gained across diseases in both elderly and young/middle aged groups. These included a group of Clostridia (C. bolteae, C. symbiosum, C. hathewayi, C. citronae, C. asparagiforme) (Figure 5C; see Figure 5—source data 1 for individual diseases). These taxa have been identified in separate studies of different diseases and/or disease-like states (T2D, Polyps, CRC and autism) (Pequegnat et al., 2013; Qin et al., 2012; Sinha et al., 2019; Yu et al., 2017), but are shown here, for the first time to be part of a shared gain response across diseases. Based on these findings, we hypothesize that this specific G1 group of taxa constitute a shared disease response associated with a general patho-physiological failure in the affected individual.
 
-## Reproducible association of the G1 disease-positive markers with increased frailty in elderly individuals from the ELDERMET cohort
+### Reproducible association of the G1 disease-positive markers with increased frailty in elderly individuals from the ELDERMET cohort
 
 Frailty in the elderly is characterized by reduced function of multiple systems. We investigated if the taxon associations with frailty could be validated in the ELDERMET cohort (Supplementary file 2), for whom we had both shotgun metagenome and faecal metabolomic data. Using Random Forest regression (with five-fold cross validation), we could predict the frailty of an individual (testing both community- and residential care-dwelling subjects) based on the taxonomic composition of the gut microbiome (R = 0.79; Figure 6A; Figure 6—figure supplement 1). We then calculated the mean feature importance ranks in the frailty prediction model for the six gain/loss generic disease response groups (from Figure 5C). Validating our previous observations, the G1 group of taxa had the highest mean rank of feature importance scores for frailty (Functional Independence Measure (FIM)) prediction, indicating that this group had the highest predictive power for frailty in the ELDERMET subjects (Figure 6B), followed by the G2 group (increased across multiple diseases only in the elderly). Validating our earlier findings on the elderly-specific markers of shared microbiome response, this was followed by the L1 group. An optimal number of eight taxa had the highest frailty predictive ability (Figure 5C; Figure 6C; Figure 6—figure supplement 1). All these taxa were more abundant with frailty (negatively correlated with FIM and positively associated with Frailty) (Figure 6—source data 1A–B). Five of the eight taxa belonged to the G1 group (Figure 6C; Figure 5C). Thus, these findings independently validated in the ELDERMET cohort our earlier identification of specific elderly-associated generic disease response groups (Figure 5C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig6-v1.jpg)
+
+**Figure 6.:** (A) Actual FIM values versus FIMs predicted by Random forest of microbiome features of the elderly individuals of the ELDERMET cohort living in Community or Residential care (Longstay). (B) Mean ranks of the various taxonomic groups (identified in Figure 3) for the prediction of FIM (an inverse measure of frailty) in the ELDERMET cohort. (C) Variable Importance Scores of the eight markers with the highest predictive power in the Random Forest models for prediction of FIM. A comparison of the abundance of markers between HighFIM and LowFIM individuals indicated that all of these markers were associated with frailty state. (D) The network in the central panel indicates the 13 metabolite profiles significantly associated with the top markers. Taxon markers are indicated in the center. Consumption profiles are in the upper half (in pink octagons) and Production profiles are on the lower panel (in yellow octagons). Edges indicate presence. Second from the left in top panel are the correlations between predicted and actual FIM values obtained for iterative bootstrapped Random Forest models (training on 20% and testing on the rest 80%) using only the 13 metabolite profile markers of (D), all metabolite profiles and all metabolite profiles removing the 13 metabolite markers. Top and bottom panels show the validation (indicated by arrows) obtained for the predicted metabolite markers using either the measured metabolites, dietary consumption profiles, specific microbial pathway abundances as well as the CutC gene family abundances identified using humann2 (shown either as boxplot comparing the profiles between Frail and Non-Frail individuals or scatterplots showing correlations between the measured metabolite level and the FIM value of the individuals). A total of 11 of the 13 metabolites could be validated using either of these strategies.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Log Root Mean Squared Error of Random Forest prediction of Barthel Score (with five-fold cross validation) from microbiome species profile (obtained with different number of species arranged in decreasing order of their variable importance scores) (B) Scatterplot showing correlation between the Random Forest predicted Barthel and actual Barthel for Community + Longstay (C). Log Root Mean Squared Error of Random Forest prediction of FIM (with five-fold cross validation) from microbiome species profile (obtained with different number of species arranged in decreasing order of their variable importance scores). (D) Correlation values between Barthel Score and FIM and different number of top features.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The X axis shows the Spearman rhos and the Y-axis shows the -Log of FDR (with base 10).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/50240/elife-50240-fig6-figsupp3-v1.jpg)
 
 If microbiota alterations contribute to disease causation, microbial metabolites may be effector molecules. A distinguishing feature of the current study is that it is based on metagenomic data, as distinct from previous 16S-based meta-analyses of microbiome-disease (Duvallet et al., 2017). This allowed us to obtain taxonomic composition at finer taxa level, which in turn we could use to predict metabolite profiles of the microbiomes by exploiting experimentally validated functional profiles of the constituent taxa. For this purpose, we used the Virtual Metabolic Human database (Noronha et al., 2018), as well as a recent method to search experimentally-verified functional profiles representing the production and consumption patterns of different metabolites in various gut-associated species (Sung et al., 2017). We could thus collate more than 300 metabolic profiles (consumption/production/degradation) from 992 species (Figure 6—source data 2). A total of 82 metabolite profiles were observed to have significant association with FIM scores (Spearman Rho; FDR of less than 0.25) (Figure 6—figure supplement 2). We observed that this association analysis of metabolite profiles reflects frailty-associated changes with respect to bioavailability of specific compounds, many of which have been previously shown to have corresponding associations with health, thereby validating our findings (Claesson et al., 2012). Specifically, the onset of frailty is observed to be associated with an increase of SCFA consumption by gut-bacteria (accompanied by a concomitant decrease of the production of the SCFA butyrate), increased consumption of the beneficial amino acid Tryptophan as well as the increased production of the T2D-linked branched chain amino acid Threonine. We first focussed on the group of frailty marker taxa and identified 13 metabolic profiles (Figure 6D) that were significantly associated with the eight frailty-marker taxa (See Materials and methods). This subset of 13 metabolite profiles alone could predict frailty with a R value of 0.60 (between the actual and predicted FIM values), which is significantly higher than that obtained after removing these features from the metabolite profile (Figure 6D; Top panel second from left). The first set of key metabolic profiles included the degradation of primary bile acids, namely cholic acids (CA) and chenodeoxycholic acids (CDCA) to produce hydrophobic secondary bile acids (lithocholic acid: LA; deoxycholic acid: DCA). We validated this predicted metabolic functionality against the experimentally measured fecal metabolomic profiles for ELDERMET subjects, where the fecal metabolomes of frail individuals were characterized by significantly higher levels of LCA (along with its derivatives) and DCA (p<0.006) and significantly lower levels of CA and CDCA (p<0.02), as compared to the non-frail individuals (Figure 6D). The two species associated with this functionality, namely Clostridium scindens and Clostridium leptum, did not belong to either the G1 or G2 groups of species (contrary to their frailty-association in this study). These species were previously implicated in Clostridium difficile resistance and IBD, respectively (Buffie et al., 2015; Manichanh et al., 2006). Contrary to their therapeutic relevance, this specific functionality of these species, namely production of higher levels of hydrophobic bile acids, has also been associated with the onset of CRC and non-alcoholic fatty liver disease (NAFLD) (Tsuei et al., 2014). One of the recent meta-analyses of CRC gut microbiomes also predicted increased production of secondary bile-acids to be a key CRC-specific functional signature (Wirbel et al., 2019).
 
@@ -90,25 +500,56 @@ The last concern is methodological and pertains to the non-independence between 
 
 ## Materials and methods
 
-## Data collection from the curatedMetagenomicData repository
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software/Algorithm</td>
+      <td>curatedMetagenomic-Data</td>
+      <td>Pasolli et al., 2017 Available as a R-library</td>
+      <td></td>
+      <td>Version as in Oct, 2018</td>
+    </tr>
+    <tr>
+      <td>Software/Algorithm</td>
+      <td>R packages: 1. randomForest 2. pROC 3. lmtest 4. ade4 5. vegan 6. dunn.test</td>
+      <td>Availabe as R packages from CRAN.</td>
+      <td></td>
+      <td>Latest versions as on Oct, 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data collection from the curatedMetagenomicData repository
 
 Since the focus of investigation was the gut microbiome, we first selected a subset of the curatedMetagenomicData, containing 4195 stool samples (annotated as ‘body_site’: stool) (Pasolli et al., 2017). We subsequently removed the samples which have not defined age and study-condition, thereby filtering the dataset to 3580 samples. From this set, we removed samples having age less than 20 years of age (retaining 2564 samples). Notwithstanding the uniform bioinformatics analysis strategy applied to this data, two major factors that may contribute an artefactual bias in multi-cohort microbiome datasets (and which were available in the metadata) are the read-length (obtained from the sequencer) and DNA extraction methodologies (which are study-specific). To test the effect of these factors, we first removed the samples from Peruvian, African and Fijian individuals in order to remove the confounding effects of region/life-style-specific), along with those from hospitalized individuals. Subsequently, on the remaining subset, we evaluated the effect of these factors using envfit on the species level profiles by first visually comparing the differences using PCoA and then testing the confidence of these differences using envfit (https://cran.r-project.org/web/packages/vegan/vegan.pdf). For this purpose, we performed 20 boot-strapped envfit iterations, each time taking a subset of samples (sub-sample size: 200) and computing the R2 and the significance (P-value) of the differences, and then comparing the distribution obtained with that obtained using a null distribution obtained by taking 200 sub-samples (after permuting the labels). We established that while read lengths had a marginal effect (R = 9e-3, p<0.09) (Figure 1—figure supplement 1A), samples from one of the studies (SchirmerC_2016) (Schirmer et al., 2016), using a DNA extraction technique tagged as ‘Illuminakit’ in the metadata, had a distinct taxonomic profile. We removed the 465 samples of this study from all further analyses, thereby reducing the effect of extraction methodology on taxonomic profiles (p<0.06; Figure 1—figure supplement 1B–C). To this compiled list, we added the samples from four recently published datasets (one IBD-specific dataset of 220 samples, referred to as ‘FranzosaEA_2018’ [Franzosa et al., 2019]; three CRC-Specific datasets referred to as ‘WirbelJ_2019’, ‘ThomasAJ_Cohort1’ and ThomasAJ_Cohort2﻿’ [Thomas et al., 2019; Wirbel et al., 2019]). This repository, along with the 189 shotgun sequenced samples from the ELDERMET cohort, resulted in a total of 2564 samples. Schematic representation of the workflow used for preparing a core set of 2564 gut metagenomic samples derived from the publicly available datasets (curatedMetagenomicData and the four newly added cohorts) and the ELDERMET repository is provided in Figure 1—figure supplement 2. The details of the samples belonging to the curatedMetagenomicData and FranzosaEA_2018 dataset included in the current study are provided in Supplementary file 1. The clinical metadata of the ELDERMET samples are listed in Supplementary file 2. In this analysis, the taxonomic composition obtained using the metaphlan2 pipeline was obtained at the microbial species level. We have used the term ‘species’ and ‘taxa’ in this manuscript to refer to a taxonomic unit below the level of genus.
 
-## Effect of host-associated factors, including age groups on the microbiome profile
+### Effect of host-associated factors, including age groups on the microbiome profile
 
 We specifically investigated the metadata of the samples listed in Supplementary file 1. Some of the metadata were observed to be redundant and had similar associations (examples included groups like Country and Dataset Name; Age and Age-category; Study condition and Disease; Antibiotics current use and Antibiotics family). In these cases, we retained the former metadata and removed the latter ones. We added another region-specific metadata, namely Continent, for reasons explained in the subsequent section. Subsequently, we filtered out those metadata present in less than 30% of the samples. A total of six metadata remained. We obtained the association of each of these metadata using PERMANOVA (using the adonis function of the vegan R package). Given that DNA extraction methodologies still had a marginal effect on the gut microbiome composition (R2 = 0.019), the PERMANOVA analyses for each of the metadata were performed after adjusting for the DNA extraction method as a confounder. The PERMANOVA analysis (for each metadata) was performed using the adonis function of the vegan package using the following pseudocode formula: adonis(species ~ dna_extraction_method + metadata).
 
 For investigating the variation of the microbiome with age across the adult-hood landscape, the individuals were binned into three age groups namely young (20–39 years of age), middle-aged (40–59 years) and elderly (60 years and above). We removed the antibiotic-treated subjects from all subsequent analyses. Principal component analysis of the microbiome profiles of the samples belonging to the three age-groups was performed and plotted using dudi.pco and s.class function of the ade4 R package. The significance of the association was obtained using the PERMANOVA (adonis function) implemented in the ‘vegan’ R package (with ‘country’ and the DNA extraction method as a confounder).
 
-## Grouping samples into country-/continent-specific bins
+### Grouping samples into country-/continent-specific bins
 
 Given that regional factors had the highest effect on the microbiome composition, it was important to ensure regional homogeneity for comparative disease-association analysis. However, the majority of disease-specific cohorts either displayed significant differences in age difference in the age of the control and diseased individuals (i.e. they were not age matched) or biases for disease patients from specific age-groups (Figure 2). For each disease, collating samples from the same country or continent-level as the disease cohorts would bypass the issue of limited sample numbers across the age-groups, whilst maintaining regional homogeneity of the cohorts (Figure 1—figure supplement 3A–B). To compare the overall effects of the two regional factors, country and continent, on the microbiome profiles we performed bootstrapped PERMANOVAs (by taking 20% subsets) within the control individuals. The results indicated that, although continent was observed to have a marginally lower effect on the microbiome composition compared to nationality (country), performing repeated bootstrapped comparisons indicated the effect of continent to have a higher significance (calculated as -log of Adonis P-values) than the country on the microbiome profiles (Figure 1—figure supplement 3C). For each disease, the country/continent specific affiliations of the disease cohorts were first obtained. Subsequently, we performed all the investigations pertaining to each disease by pooling samples belonging to the same country as the corresponding disease cohorts (referring to them as disease-specific country-level bins) (Figure 1—figure supplement 3D). This was expected to optimally homogenize the region-specific variations, while ensuring enough representation of various diseases (and controls) across age-groups. Wherever applicable, we have adopted a similar disease-specific regional grouping strategy at the level of continents.
 
-## Investigating the interaction between disease signatures and age-group
+### Investigating the interaction between disease signatures and age-group
 
 For each disease, we performed PERMANOVA within the corresponding disease-specific country bins investigating the effect of the interaction of Disease and Age-group (Disease:Age-group) after adjusting for the effects of Country, and the independent effects of Disease and Age-group. Briefly, the pseudocode of the formula is provided below: adonis(species ~ country + disease + age-group + disease:age-group).
 
-## Disease classification using Random Forest (RF) Models
+### Disease classification using Random Forest (RF) Models
 
 If diseases have age-group specific signatures, then classifiers trained on the same age-group would have significantly better performance when tested on the same age-group as compared to that when tested on different age-groups. To evaluate the performance of disease classifiers trained on one age-group on disease prediction in either the same (Same Age-group classification) or different age-groups (Different Age-group classification), we adopted the following strategy (Figure 2—figure supplement 1). For each disease-age group combination, we performed 100 iterations, such that in each iteration, we trained the classifier on a subset of disease and the same number of control samples (50% of the minimum number of diseased samples across any age-group; denoted as ‘training subset’, the disease-specific training subset sizes as defined in Figure 2—source data 1). The evaluation of each of these disease classifiers for ‘Same Age-group’ and ‘Different Age-group’ classification was then performed using two approaches as mentioned below.
 
@@ -118,11 +559,11 @@ In the second approach, using Permutation test framework, we tested whether obse
 
 For a given disease, to ensure that the observed changes were not artefactual consequences of differences in sizes of training and testing subsets, we kept the training and testing subset sizes constant across all training age-groups. The classification AUCs, Specificities and Sensitivities were computed using the various modules in the pROC package.
 
-## Identifying the top disease-associated marker taxa for the different age-groups
+### Identifying the top disease-associated marker taxa for the different age-groups
 
 For each disease-age group scenario (as described above), we ranked the species-level taxa in decreasing order of their mean importance scores (mean decrease in GINI) across all 100 iterations. The iterative sub-sampling based Random Forest analysis avoided overfitting and, by virtue of the uniformity of training and test sizes for each disease across all age-groups, ensured that the differences across age-groups were not a simple consequence of differences in the number of diseased and control individuals. The objective of the iterative approach was also to identify taxa that showed stable association with disease irrespective of the sub-sampling population. This aimed to identify taxa that were always considered for the classification model irrespective of the sampled population of diseased and controls (Mean Decrease of GINI of at least 0 across at least 95% of iterations). So, for each disease/age-group scenario, we aimed to identify that minimum percentile threshold above which the taxa were considered for the classification model across at least 95% of the iterations (Figure 3—figure supplement 1A). We observed that for taxa, having a percentile score of at least 85, included in training models across at least 95% of the iterations across all the 13 disease age-group scenarios. Further plotting the mean feature scores of taxa arranged in terms of their percentile scores, we observed that the mean feature importance scores remained stable and low till the 80-percentile score and started increasing considerably only after that (Figure 3—figure supplement 1B). Based on these two results, the taxa having importance scores in the top 15 percentile (that is higher than 85 percentile) were identified as the top 85 percentile predictors/markers for a given disease in that age-group.
 
-## Validation of the shortlisted disease-associated taxonomic markers using linear models and identifying overlaps with taxa reported in original studies
+### Validation of the shortlisted disease-associated taxonomic markers using linear models and identifying overlaps with taxa reported in original studies
 
 In this linear model based validation strategy, within the disease-specific country-level bins, we modelled the (log transformed to the base 10) abundance of each species first as a function of disease-status and country and then as a function of the interaction of disease-status and age-group and country as an independent predictor as described below:
 
@@ -140,21 +581,21 @@ The goodness of fit of both models were quantified using adjusted R-squares and 
 
 In order to evaluate the prevalence of these age-linked markers in the known disease-microbiome associations, for four of the five diseases, we obtained the list of associated species (detected as either significantly different or as a marker with high disease predictive score) from the original published studies corresponding to each of the disease cohorts (Feng et al., 2015; Franzosa et al., 2019; Karlsson et al., 2013; Qin et al., 2012; Qin et al., 2014; Vogtmann et al., 2016; Zeller et al., 2014) (Figure 3—source data 3). For CRC, we utilized the list of markers provided in Thomas et al. (2019). We specifically utilized the list from this study, as it had already performed a multi-cohort meta-analyses of CRC-specific taxa adopting a similar metaphlan2-humann2 based classification scheme. The list (as created above) was then compared with list of age-linked markers specific to each disease (Figure 3—source data 3).
 
-## Reproducing the results of CRC-specific trends on the validation cohorts
+### Reproducing the results of CRC-specific trends on the validation cohorts
 
 Iterative age-group specific disease classifiers were devised and tested as described in Figure 2—figure supplement 1 (by specifically setting the ‘Training’ and ‘Testing’ cohorts). For classifiers designed on the validation cohort, the feature score importance scores of the top 85 percentile markers (obtained during the iterations) were compared using Mann-Whitney U-tests between each age-group (in each cohort). For testing the reproducibility of the associations, the directionality of the 19 known markers and the significance of their differences in the two training cohorts were then obtained and compared. For investigating the stability of the microbiome signatures (obtained for the different age-groups) across training cohorts, we profiled the mutual variations in the feature rank profiles obtained in cohort with respect to those obtained for the other. For a given feature rank profile (obtained in a given cohort for a specific age-group), its mean Spearman distance to all the feature rank profiles obtained for the same age-group in the other cohort was obtained. This was then collated for all feature profiles for the same age-group in both the cohorts. The distribution of the distances would indicate the stability of the microbiome signature across cohorts. Lower cross-cohort distances would indicate stable reproducible signatures and higher cross-cohort distances signify a relative lack of signature.
 
 The ageing associated changes in the prevalence of some of the CRC markers and their effect relative variation within disease and controls were profiled in the following manner. In the first step, we compared the prevalence rates of these markers in the elderly controls and the young-middle aged controls using Fishers’ Exact tests separately for the two cohorts. The p-values obtained for each cohort were then merged using the Fisher method. The effect size difference (disease v/s control) distribution for the markers computed using age-group specific iterations wherein each iteration, we compared 20 disease samples with 20 controls and computed the effect size using Cohens’ D. Empirically, a Cohens’ D values of less than 0.2 indicates low effect and greater than 0.2 indicates medium to high effect.
 
-## Determining the directionality of disease association in each disease-age group scenario
+### Determining the directionality of disease association in each disease-age group scenario
 
 To obtain the directionality (increased or decreased in disease) of the of the microbiome changes, Mann-Whitney U tests were first performed for all taxa to compare their abundances in ‘study-matched’ control and diseased samples (for ensuring regional homogeneity) from the specific age-group (ref to Figure 1C for the Study cohorts). The taxa having significant differences (Mann Whitney Test p<0.05) in their abundances between control and diseased samples were identified along with their directionality (ie. increased in disease or decreased in disease). These analyses were finally re-performed at the level of continent (that is between ‘continent-matched’ disease and control samples) to ensure statistical power to detect the gain versus loss patterns. For each disease age-group scenario, the top 85 percentile markers having significant change in their abundance with FDR corrected p-values<0.01 (for the continent level comparisons) were then filtered (Figure 5—source data 1). The directionality of these markers was assigned based on the trends of their abundance patterns, as either 'Increased' or 'Decreased' in disease.
 
-## Creation of generic disease prediction models and identification of shared disease markers
+### Creation of generic disease prediction models and identification of shared disease markers
 
 The generic disease prediction classifiers were developed in a manner similar to that shown in Figure 1—figure supplement 3. The only difference was the agglomeration of equal number (n = 10) samples from each of the diseases (rather those of a specific disease) as described below. For each age-group (young/middle-aged or elderly), a generic disease cohort was created by taking equally sized sub-samples from each disease (to remove biases in the classifiers originating from specific diseases). The sub-sample sizes were also kept the same across the age-groups to ensure uniformity in the testing and training sizes of the classifiers across all age-groups. The iteration was subsequently repeated five times using a different (but equally sized) subset of diseased and control samples (as described above). The AUC and sensitivities for the five repetitions were then merged and compared across the young/middle-aged and elderly. To remove regional biases in microbiome compositions affecting these results, all analyses were restricted within the disease-specific continent cohorts (Figure 1—figure supplement 3D).
 
-## Identification of Frailty-associated markers
+### Identification of Frailty-associated markers
 
 We used a random forest model to regress both the Functional Independence Measure (FIM) and the Barthel Score (both an inverse measure of frailty) of an individual from the microbiome profile. Random forest regression training was performed on 20% of the samples and tested on the remaining 80%. The ranked feature importance scores of the different species were then obtained. Microbiome features (that is the species) were ranked in decreasing order of their feature importance scores (mean decrease in GINI coefficient upon excluding the feature). The mean feature ranks for the different groups of species (G1-L3) were then calculated.
 
@@ -162,12 +603,12 @@ To identify the most predictive marker set, the regression was repeated by itera
 
 The median FIM values were computed for both the residential care cohort and the overall cohort (community + residential care). For each cohort, individuals having FIM values below and above the corresponding median were classified as ‘Frail’ and ‘Non-Frail’, respectively. To validate the metabolite signatures, measured levels of actual metabolites, abundances specific microbial pathways and gene-families (obtained using humann2) were then either compared between these groups of ‘Frail’ and ‘Non-Frail’ individuals or correlated with the FIM values.
 
-## Creating metabolite species maps and obtaining the frailty-associated metabolic signature of a given group of species
+### Creating metabolite species maps and obtaining the frailty-associated metabolic signature of a given group of species
 
 We utilized the literature-curated experimentally annotated species to metabolite (production/consumption) associations available as part of the Virtual Metabolic Human database as well as those obtained in a recent meta-analysis by Noronha et al. (2018); Sung et al. (2017), to create a species-to-metabolite map of more than 300 metabolite production and consumption profile corresponding to 992 species in a 0 (absent) and 1 (present) notation (Figure 6—source data 2). For each microbiome, the metabolite production/consumption capability was then obtained as the matrix inner product of the abundance profile of the species and the species-to-metabolite map thus obtained.
 
 Next, we identified the frailty-linked metabolites associated with the eight taxonomic markers of frailty using a two-step strategy. First, we performed a correlation analysis of each metabolite profile (i.e the cumulated abundance of taxa previously associated in literature with a given metabolic capability as obtained above) with FIM scores and identified metabolite profiles that showed significant association with FIM scores (Spearman Rho; FDR of less than 0.25). Next, we identified which of these identified metabolite profiles were detected in the taxonomic markers of frailty (based on previous literature) at a rate significantly higher than the background detection (using our Fishers’ exact test approach with FDR corrected p<0.25.
 
-## Data and code availability statement
+### Data and code availability statement
 
 The detailed description of the codes is provided in the methods section. The key in-house source codes used in this meta-analysis have been provided as Supplementary file 4. The shotgun data of the ELDERMET is available for download from the ELDERMET website at http://eldermet.ucc.ie/temp1/eldermet_shotgun_data_filtered_all_sample.tar. The shotgun data for the ELDERMET has also been uploaded at the European Nucleotide Archive (ENA) with the project accession number PRJEB37017.

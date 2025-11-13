@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Gokushoviruses are single-stranded, circular DNA bacteriophages found in metagenomic datasets from diverse ecosystems worldwide, including human gut microbiomes. Despite their ubiquity and abundance, little is known about their biology or host range: Isolates are exceedingly rare, known only from three obligate intracellular bacterial genera. By synthesizing circularized phage genomes from prophages embedded in diverse enteric bacteria, we produced gokushoviruses in an experimentally tractable model system, allowing us to investigate their features and biology. We demonstrate that virions can reliably infect and lysogenize hosts by hijacking a conserved chromosome-dimer resolution system. Sequence motifs required for lysogeny are detectable in other metagenomically defined gokushoviruses; however, we show that even partial motifs enable phages to persist cytoplasmically without leading to collapse of their host culture. This ability to employ multiple, disparate survival strategies is likely key to the long-term persistence and global distribution of Gokushovirinae .
+Gokushoviruses are single-stranded, circular DNA bacteriophages found in metagenomic datasets from diverse ecosystems worldwide, including human gut microbiomes. Despite their ubiquity and abundance, little is known about their biology or host range: Isolates are exceedingly rare, known only from three obligate intracellular bacterial genera. By synthesizing circularized phage genomes from prophages embedded in diverse enteric bacteria, we produced gokushoviruses in an experimentally tractable model system, allowing us to investigate their features and biology. We demonstrate that virions can reliably infect and lysogenize hosts by hijacking a conserved chromosome-dimer resolution system. Sequence motifs required for lysogeny are detectable in other metagenomically defined gokushoviruses; however, we show that even partial motifs enable phages to persist cytoplasmically without leading to collapse of their host culture. This ability to employ multiple, disparate survival strategies is likely key to the long-term persistence and global distribution of Gokushovirinae.
 
 ## Introduction
 
@@ -29,45 +29,140 @@ Here we detect a large number of gokushovirus prophages integrated into the geno
 
 ## Results
 
-## A new, diverse group of gokushovirus prophages
+### A new, diverse group of gokushovirus prophages
 
 Querying fully assembled bacterial genomes with the major capsid protein VP1 of gokushovirus Chlamydia-phage 4 (NCBI Gene ID 3703676) returned 95 high-confidence hits (E-value <0.0001) within the Enterobacteriaceae (91 from Escherichia, and one each from Enterobacter, Salmonella, Citrobacter and Kosakonia; Supplementary file 1). Although Gokushovirinae were previously known only as lytic phages, inspection of each of the associated genomic regions revealed the presence of integrated prophages 4300–4700 bp in length and having a conserved six-gene arrangement: VP4 (replication initiation protein), VP5 (switch from dsDNA to ssDNA replication protein), VP3 (scaffold protein), VP1 (major capsid protein), VP2 (minor capsid protein) and VP8 (putative DNA-binding protein). Most of the variation in both the genome size and sequence of these prophages is confined to three regions: (i) near the C-terminus of VP2, (ii) in the non-coding region between VP8 and VP2, and (iii) within VP1, whose hypervariability is characteristic of the Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genome organization and average pairwise nucleotide identities of the gokushovirus prophages detected in Escherichia. Integrated prophage genomes range from 4316 to 4692 bp in length, with genes indicated by grey arrows, and flanking phage and bacterial dif-motifs indicated by red and blue bars. Nucleotide sequence logos of phage and bacterial dif-motifs, with corresponding XerC- and XerD-binding sites are shown. (B) Phylogeny of gokushovirus prophages and their enterobacterial hosts. Single lineages or clades comprising strains sharing >95% average nucleotide identity are individually colored, with colors in the bacterial phylogeny corresponding to those of their associated prophages. Clades not colored in the bacterial phylogeny correspond to Escherichia coli collection reference (ECOR) strains. Clades with bootstrap support values below 70% are collapsed. Arrows denote prophage-host pairs in which the corresponding phage was tested againstE. coliK-12, with the solid arrow indicating the prophage-host pair whose phage formed plaques in E. coli K-12 and subsequently used in experimental analyses. Tree scale bars correspond to nucleotide or amino acid substitutions/site for prophage and host trees, respectively, and ancestral branches with hatch-marks are truncated by the length of two scale bars. Accession numbers and details of prophages and their corresponding hosts are listed in Supplementary files 1 and 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Average nucleotide identity values calculated from pairwise comparisons of whole prophage genomes indicated on a yellow-blue scale, with identical prophages indicated in black. Colors of individual lineages (or clades) bordering the similarity matrix correspond to those used in Figure 1B, with non-Escherichia prophages indicated separately.
 
 All detected prophages are flanked by dif-motifs, which are 28 bp palindromic sites that are known to be the targets of passive integration by phages and other mobile elements (Blakely et al., 1993; Das et al., 2013). The dif-motifs upstream of the insertions are highly conserved and individually differ by, at most, one nucleotide from the canonical dif-motif of Escherichia coli. These upstream dif-motifs consist of a central 6 bp spacer flanked by two 11 bp arms, previously been shown to bind tyrosine recombinases XerC/XerD during chromosome segregation and integration of mobile elements (Castillo et al., 2017). In contrast, the dif-motifs downstream of detected prophages are more variable, particularly in the spacer region and XerD-binding arms, representing the phage dif-motifs integrated along with the phage (Figure 1A).
 
 A whole genome phylogeny of gokushovirus prophages shows a number of well-differentiated (bootstrap support 70% or higher) lineages, forming clades A-J that each contains members with >95% average nucleotide identity, and 14 singleton lineages with no close relatives (Figure 1B, Figure 1—figure supplement 1). Comparing the topology of the phage phylogeny with that of their E. coli host strains shows examples of prophage clades found only in specific branches of the E. coli phylogeny and clades with wider distributions. For example, whereas prophages belonging to clade A-D are found dispersed across the host phylogeny, prophage clade I is confined to a single E. coli clade (possibly as a result of the limited number of detected prophages). In all but one case, each E. coli host harbors only a single gokushovirus prophage. Although phage attachment and infection sometimes depend on O-antigenicity, there is no obvious association between the presence of gokushovirus prophages and particular E. coli O-serotypes among those strains for which information on O-antigens is available (Zhou et al., 2020). For example, four identical prophages belonging to clade C could be detected in E. coli strains MOD1-EC5200 (O76:H19), MOD1-EC5181 (O132:H8), NCTC9043 (O43:H2) and MOD1-EC6266 (O124:H21) (Supplementary file 1). Most gokushovirus prophages were detected in diverse E. coli strains isolated from various animals, mainly cattle and marmots, but five prophages were detected in isolates from humans, including one from a urinary tract infection (Supplementary file 1).
 
-## Prophages of enterobacteria form a distinct gokushovirus clade
+### Prophages of enterobacteria form a distinct gokushovirus clade
 
 Phylogenetic analysis of available gokushovirus genomes based on an alignment of the conserved VP1 and VP4 proteins (n = 855; including the enterobacterial prophages discovered in this study, the previously sequenced lytic gokushoviruses from Chlamydia, Spiroplasma and Bdellovibrio, and the metagenomically assembled gokushovirus genomes available from NCBI) returned enterobacterial prophages as a well-supported (97% bootstrap support), monophyletic clade within the Gokushovirinae (Figure 2). The distinctiveness of this clade, whose members share a conserved (but not unique) gene order and display an average nucleotide identity of >50% (Figure 1—figure supplement 1 and Supplementary file 2), advocates the formation of a new proposed genus within the family Microviridae (subfamily Gokushovirinae), for which we suggest the name Enterogokushovirus on account of a distribution limited to members of the Enterobactericeae.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig2-v2.jpg)
 
-**Figure 2.:** Gokushovirinae.Maximum likelihood tree built from concatenated alignments of VP1 and VP4 protein sequences of 855 gokushovirus genomes. Tree is midpoint rooted, and branch support estimated with 100 bootstrap replicates. Branches with bootstrap support values below 70% are collapsed. Clades highlighted in grey indicate Enterogokushovirus prophages with recognizable dif-motifs; those highlighted in pink possess dif-motifs identified through an iterative HMM search. Outer ring indicates isolation source, with black triangles denoting the phylogenetic positions of officially described gokushoviruses. Scale bar corresponds to amino acid substitutions per site. Sample accession numbers are listed in Supplementary file 4.
+**Figure 2.:** Maximum likelihood tree built from concatenated alignments of VP1 and VP4 protein sequences of 855 gokushovirus genomes. Tree is midpoint rooted, and branch support estimated with 100 bootstrap replicates. Branches with bootstrap support values below 70% are collapsed. Clades highlighted in grey indicate Enterogokushovirus prophages with recognizable dif-motifs; those highlighted in pink possess dif-motifs identified through an iterative HMM search. Outer ring indicates isolation source, with black triangles denoting the phylogenetic positions of officially described gokushoviruses. Scale bar corresponds to amino acid substitutions per site. Sample accession numbers are listed in Supplementary file 4.
 
 Since a unique feature of enterogokushoviruses among the Gokushovirinae appears to be the ability to exist as lysogens, we searched all other gokushovirus MAGs in our dataset for dif-like sequence motifs that might be indicative of lysogenic ability. We detected similar motifs in 48 genomes distributed sporadically throughout the gokushovirus phylogeny. Aside from the enterogokushoviruses, there are two larger clades in which multiple genomes contain a dif-motif, with the rest of dif-bearing MAGs found largely as singletons (Figure 2; Supplementary file 4). The majority of these putative dif-motifs occurs in non-coding regions, and those detected within coding regions were typically at the 5’- or 3’-end of a predicted gene, with a nearby alternative start or stop codon that could preserve the genetic integrity of the phage through integration and excision. The overall dearth of dif-like sequences in gokushoviruses sampled from diverse geographic and ecological settings highlights the distinctiveness of Enterogokushovirus genomes and lifestyle.
 
 We further attempted to determine the prevalence of enterobacterial gokushoviruses by interrogating 1839 samples from eight metagenomic studies of human and cattle gut microbiomes for the presence of closely related prophages. From these data, we were able to fully assemble only two integrated prophages corresponding to E. coli gokushoviruses, one from the fecal metagenome of an Austrian adult (0,05% of all reads in ERR688616) and the other from a Danish infant (0,02% of all reads in ERR525761) (see also Supplementary file 4).
 
-## Reconstituting viable phage from integrated prophages
+### Reconstituting viable phage from integrated prophages
 
 The integrity of prophage structure in all enterobacteria and the lack of premature stop codons suggested that these sequences represent intact, functional insertions into bacterial hosts. To confirm the functionality of Escherichia gokushovirus prophages, characterize their biology and provide a type strain, we attempted to construct phages from genomic DNA of Escherichia strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163, selected to represent the diversity of gokushovirus prophages and hosts (Figure 1B).
 
 Sequences corresponding to prophages from these four Escherichia strains were amplified, circularized and transformed into E. coli DH5α (Figure 3A). Supernatants from the transformed DH5α culture were used in agar-overlay assays with E. coli K12 BW25113 hosts, resulting in plaques for only one of four reconstructed phage genomes (EC6098, derived from E. marmotae strain MOD1-EC6098 and belonging to prophage clade E (Figure 3B, Figure 3—figure supplement 1A). While both DH5α and BW25113 possess other prophages which could produce false positives when screening for gokushovirus production (Chen et al., 2018; Wang et al., 2010), DH5α alone did not produce plaques on BW25113 and vice versa (Figure 3—figure supplement 1). To corroborate the synthesis of EC6098 phages (and the inability to produce phages from the other three sequences), we additionally grew live cultures of MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163 and via PCR detected the presence of circularized gokushovirus genomes in all four, but only MOD1-EC6098 produced plaques resembling those derived from synthetic EC6098 (Figure 3—figure supplement 1B). As only EC6098 formed plaques on K12 strains, we used this phage for further experimental characterization.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scheme used to produce viable phage from prophage inserts. The prophage region, with genes colored in grey, is amplified from the bacterial genome (black) using primers that incorporate the phage dif-motif but exclude the bacterial dif-motif (indicated by bent arrows). Circularization of the amplification product results in a molecule corresponding to the replicative dsDNA form of the phage. Transformation of this circular molecule into electrocompetent E. coli DH5α cells leads to expression of phage proteins, replication and packaging of ssDNA into infective virions. (B) Plaques formed by constructed bacteriophage EC6098 after infecting E. coli BW25113. (C) TEM images of bacteriophage EC6098 viewed at 175,000x magnification. (D) TEM images of bacteriophage EC6098 viewed at 300,000x magnification.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Transformation and growth of four synthesized gokushovirus genomes (EC2703, EC5150, EC6098, EC6163) in E. coli DH5α. Gel image shows assay for circularized phage genomes in liquid cultures grown overnight at 37°C. Agar-plate pictured below gel shows screen for plaque formation in the corresponding host-phage combinations when plated on a lawn of E. coli BW25113. Plaques are evident in the positive control (+) of BW25113 producing EC6098 and in DH5α transformed with EC6098. – denotes negative control of DH5α without transformed genome. (B) Growth of four gokushoviruses (EC2703, EC5150, EC6098, EC6163) in their natural hosts. Gel image shows assay for circularized phage genomes in liquid cultures grown overnight at 37°C. Agar-plate pictured below gel shows screen for plaque formation in the corresponding host-phage combinations when plated on a lawn of E. coli DH5α. Plaques are evident in the positive control (+) of E. coli BW25113 producing EC6098 and in MOD1-EC6098. BW25113 in absence of gokushoviral genomes serves as negative control.
+
 Electron microscopic observation of pure EC6098 lysates recovered at a buoyant density of around 1.3 g/cm−3 in CsCl gradients (the range expected for members of the Microviridae, Thurber et al., 2009), revealed tailless icosahedral virions, 25–30 µm in size and displaying protrusions previously observed in other Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 3D,E). Because Gokushovirinae have only been recovered as lytic particles from intracellular bacteria, this represents the first isolation of a gokushovirus able to infect free-living bacteria as well as being able to integrate as a lysogen into bacterial genomes.
 
-## Mechanisms of enterobacterial gokushovirus integration into host genomes
+### Mechanisms of enterobacterial gokushovirus integration into host genomes
 
 We next investigated the process by which gokushoviruses integrate into the bacterial host chromosome (Figure 4A). The presence of circularized phage genomes could readily be detected from surviving colonies in confluent plaques derived from agar-overlay assays (Figure 4B). Using primers that flank both sides of the dif-motif in host strain BW25113, we recovered products that were enlarged by the length of the phage relative to colonies lacking the prophage (Figure 4A,C). Sequencing confirmed that, in accordance with the integration site of detected prophages, phage EC6098 integrates downstream of the BW25113 dif-motif, which remains unchanged (corresponding to position 3,046,436–3,046,463 in the closed genome with accession number CP009273).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig4-v2.jpg)
 
-**Figure 4.:** E. coli host genome.(A) Schematic representation of phage integration process, and detection of circularized EC6098 phage genome and integrated prophages in E. coli BW25113. Upon infection, phage EC6098 releases ssDNA, with dif-motif denoted in red, leading to formation of dsDNA replicative genomes that integrate downstream of the bacterial dif-motif (blue). Primers VP2_rev and VP5_fw (indicated by bent arrows on EC6098 genome) anneal to genes flanking the phage dif-motif and amplify a ~ 2.1 kb product from closed circular phage genomes (corresponding to bands in panel B). Primers MG1655dif_fw and MG1655dif_rev (indicated by bent arrows on host genome) anneal to sites flanking the bacterial dif-motif and amplify either a 210 bp region of bacterial DNA when there is no phage integration or a ~ 5 kb region denoting the presence of an integrated prophage (corresponding to bands in panel C). (B) Detection of fragments indicating the presence of circularized phage. Numbered lanes correspond to samples listed in the box below the gel photographs. (C) Detection of fragments indicating the presence or absence of integrated phage from lysogenic colonies after infection of BW25113 strains with wild type or mutant phage. Numbered lanes are the same as in panel B, and correspond to samples listed in the box below the gel photograph. (D) Proportion of cells with integrated prophages in clonal lysogenic colonies. Box-and-whiskers plot shows median, 25th and 75th percentiles, and 1.5 inter-quartile range as well as individual datapoints for 87 independently sampled clonal colonies.
+**Figure 4.:** (A) Schematic representation of phage integration process, and detection of circularized EC6098 phage genome and integrated prophages in E. coli BW25113. Upon infection, phage EC6098 releases ssDNA, with dif-motif denoted in red, leading to formation of dsDNA replicative genomes that integrate downstream of the bacterial dif-motif (blue). Primers VP2_rev and VP5_fw (indicated by bent arrows on EC6098 genome) anneal to genes flanking the phage dif-motif and amplify a ~ 2.1 kb product from closed circular phage genomes (corresponding to bands in panel B). Primers MG1655dif_fw and MG1655dif_rev (indicated by bent arrows on host genome) anneal to sites flanking the bacterial dif-motif and amplify either a 210 bp region of bacterial DNA when there is no phage integration or a ~ 5 kb region denoting the presence of an integrated prophage (corresponding to bands in panel C). (B) Detection of fragments indicating the presence of circularized phage. Numbered lanes correspond to samples listed in the box below the gel photographs. (C) Detection of fragments indicating the presence or absence of integrated phage from lysogenic colonies after infection of BW25113 strains with wild type or mutant phage. Numbered lanes are the same as in panel B, and correspond to samples listed in the box below the gel photograph. (D) Proportion of cells with integrated prophages in clonal lysogenic colonies. Box-and-whiskers plot shows median, 25th and 75th percentiles, and 1.5 inter-quartile range as well as individual datapoints for 87 independently sampled clonal colonies.
 
 Because none of the gokushovirus prophages encodes an integrase, we predicted that host factors XerC and XerD might be responsible for prophage integration, similar to what has been hypothesized for microvirus-prophages in Bacteroidetes (Krupovic and Forterre, 2011). Neither ΔxerC nor ΔxerD mutants of E. coli host strain BW25113 resulted in integration, but the ΔxerC mutant was restored by complementation with a plasmid expressing the intact version of xerC. Similarly, phages with incomplete (i.e., lacking either their XerC or XerD binding site within the dif-motif, termed here ΔdifC and ΔdifD) or no dif-motifs (ΔdifCD) successfully infected hosts (as evidenced by the presence of circularized phage genomes in host colonies that had survived infection), but failed to integrate into host genomes, demonstrating the need for cooperative XerC/XerD binding for successful lysogeny (Table 1, Figure 4B,C). However, the retention of dif-motifs after integration indicates that this process is reversible: As evident in Figure 4C, there is a smaller fragment, in addition to that indicating prophage insertion, that corresponds to those cells in the same colony that do not harbor the integrated prophage. These cells persisted even after multiple rounds of re-streaking, and the median ratio of lysogens to non-lysogenic cells derived from clonal colonies approaches 4:1 (Figure 4D). Even in pure cultures, phages are thus continuously being excised and reintegrated, presumably as a result of XerC/XerD activity.
 
-## Integration into host genomes facilitates but is not required for long-term persistence
+**Table 1.**
+ Percentage of lysogenic colonies after phage infection*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Phage</th>
+      <th>Plasmid</th>
+      <th>% Lysogens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BW25113</td>
+      <td>EC6098</td>
+      <td>-</td>
+      <td>17.71</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerC</td>
+      <td>EC6098</td>
+      <td>-</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerC</td>
+      <td>EC6098</td>
+      <td>pJN105::xerC (induced†)</td>
+      <td>14.58</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerC</td>
+      <td>EC6098</td>
+      <td>pJN105::xerC (uninduced)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerD</td>
+      <td>EC6098</td>
+      <td>-</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerD</td>
+      <td>EC6098</td>
+      <td>pJN105::xerD (induced†)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113ΔxerD</td>
+      <td>EC6098</td>
+      <td>pJN105::xerD (uninduced)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113</td>
+      <td>EC6098ΔdifC</td>
+      <td>-</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113</td>
+      <td>EC6098ΔdifD</td>
+      <td>-</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BW25113</td>
+      <td>EC6098ΔdifCD</td>
+      <td>-</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Assessed from screening 96 colonies for each strain.†Expression induced by addition of 0.1% arabinose._
+
+### Integration into host genomes facilitates but is not required for long-term persistence
 
 The removal of host factors xerC or xerD, the presence an incomplete phage dif-motif, or the lack of a dif-motif (as observed in the majority of Gokushovirinae) all prevent integration of phages into host genomes (Table 1, Figure 4C). However, almost all bacterial colonies that survived infections, regardless of whether they were lysogenized or not, were found to contain circular phage DNA (Figure 4B), and the presence of circular phage DNA alone, regardless of integration into the host genome, conferred superinfection immunity (Figure 5A). In addition, cultures in which phage DNA could only be detected in circularized form were capable of producing infectious particles at levels significantly higher than those of cultures containing integrated prophages (Figure 5B, Wilcoxon rank-sum test p<0.01).
 
@@ -95,33 +190,33 @@ The discovery of this group of phages offers several new directions for the stud
 
 ## Materials and methods
 
-## Detection and phylogeny of gokushovirus prophages and their hosts
+### Detection and phylogeny of gokushovirus prophages and their hosts
 
 Using blastp, we queried the NCBI nr database (April 2019) with the Chlamydia Phage four major capsid protein VP1 (NCBI Gene ID 3703676) and downloaded the complete genomes of 95 strains within the Enterobacteriaceae containing sequences returning E-values less than 0.0001 (Supplementary file 1). Chromosome contigs containing the VP1 gene were visually inspected in Geneious R9 (www.geneious.com) for the presence of prophage insertion boundaries by searching for identical 17 bp sequences within 5 kb regions upstream and downstream of the VP1 gene. Prophage genes were annotated with GLIMMER3 (Delcher et al., 2007) using default settings, specifying a minimum gene length of 110 bp and a maximum overlap of 50 bp. Initial alignments of prophage regions (ranging in size from 4047 to 4692 bp) were made with ClustalO 1.2.4 using standard settings (Sievers et al., 2011), and were refined manually to accommodate hypervariable regions and the phage insertion sites at the 3’ and 5’ ends of the alignment. Average pairwise nucleotide identity at each position in the alignment was calculated and visualized using Geneious R9. Maximum likelihood phylogenetic trees of enterobacterial prophages were generated with RAxML 8.0.26 (Stamatakis, 2014) using the GTR+GAMMA substitution model and 100 fast-bootstrap replicates and visualized with FigTree 1.4.3 (http://tree.bio.ed.ac.uk/software/figtree/).
 
 To evaluate the distribution of prophage hosts within the broad diversity of E. coli at large, we produced core genome alignments of prophage hosts and representative genomes from the Escherichia coli reference (ECOR) collection (Ochman and Selander, 1984; Supplementary files 1 and 3) based on protein families satisfying a 30% amino-acid identity cutoff (USEARCH 11, Edgar, 2010), which were aligned in MUSCLE 3.8.31 (Edgar, 2004) as implemented in the BPGA 1.3 pipeline (Chaudhari et al., 2016). The maximum likelihood phylogenetic tree of core genome alignments was built with IQTree 1.6.2 (Nguyen et al., 2015), using the JTT substitution model (Jones et al., 1992) and 100 bootstrap replicates.
 
-## Recovering prophages from metagenomes
+### Recovering prophages from metagenomes
 
 To assemble prophages from metagenomic datasets, we downloaded SRA files from BioProjects PRJEB29491 (viral human, Moreno-Gallego et al., 2019), PRJNA362629 (cellular bovine, unpublished), PRJNA290380 (cellular human, Kostic et al., 2015), PRJNA352475 (cellular human, Ferretti et al., 2018), PRJEB6456 (cellular human, Bäckhed et al., 2015), PRJNA385126 (viral human, Stockdale et al., 2018),PRJEB7774 (cellular human, Feng et al., 2015), and PRJNA545408 (human viral, Shkoporov et al., 2019). We performed initial trimming and quality filtering with BBDuk (Bushnell, 2014a) with options ktrim = r k = 23 mink = 11 hdist = 1 tbe tbo. Reads having a minimum nucleotide sequence identity of 50% to sequences of enterobacterial prophages, as determined by BBMap (Bushnell, 2014b), were assembled into contigs using MEGAHIT 1.1.3 (Li et al., 2015) implemented with default settings, and those contigs > 1000 bp were retained.
 
-## Phylogenetic analysis of gokushovirinae
+### Phylogenetic analysis of gokushovirinae
 
 We downloaded a total of 1284 metagenome-assembled genomes (MAGs) of microviruses (Supplementary file 4), which were then reannotated in GLIMMER3 (Delcher et al., 2007) using default settings, with a minimum gene length of 110 bp and a maximum overlap of 50 bp. We recovered homologues to the conserved major capsid protein VP1 and replication initiation protein VP4 in the set of metagenome-assembled microviruses using PSI-BLAST searches and querying with VP1 and VP4 proteins from detected enterobacterial gokushoviruses, gokushovirus genomes of Chlamydia, Spiroplasma and Bdellovibrio, and Bullavirinae phage phiX174. After individual protein alignments using Clustal Omega 1.2.4 (standard settings), we concatenated the VP1 and VP4 alignments, and removed all sites with >10% gaps to decrease the amount of spuriously aligned sites using Geneious R9, for an alignment of 485 aa in length. The initial phylogenetic tree of all microviruses was built with IQTree 1.6.2 using the LG+F+R10 substitution model as determined by ModelFinder (Kalyaanamoorthy et al., 2017), and branch support was tested using 1000 ultra-fast bootstrap replicates (Hoang et al., 2018) and 1000 SH-aLRT tests. Collapsing all branches with <95% bootstrap support and <80% SH-aLRT support yielded a single, well-supported clade containing all known Gokushovirinae, and all subsequent alignments and phylogenetic trees were refined by including only those genomes represented in this clade, with branch support assessed with 100 bootstrap replicates. To complement already existing annotations of gokushovirus genomes for the purpose of comparing gene order in various branches of the phylogeny, iterative tblastx searches of individual enterogokushovirus EC6098 genes agains members of select branches were conducted. Hits with e-value <0.001 (lower than initial searches used to identify prophages to account for the larger phylogenetic distance or analyzed genomes) were considered homologs to enterogokushoviral genes.
 
-## Identification of dif-motifs in gokushovirus MAGs
+### Identification of dif-motifs in gokushovirus MAGs
 
 To search for dif-motifs in enterobacterial prophages, we first performed an alignment of all enterobacterial prophage dif-motif sequences in the curated set of bacterial dif-motifs from Kono et al. (2011) using Clustal Omega 1.2.4. We used the resulting alignment to build a Hidden-Markov-Model using hmmer 3.2.1 (Wheeler and Eddy, 2013) and performed an iterative search for dif-like motifs in all gokushovirus-like MAGs. Due to the variation in phage and bacterial dif-motifs, the variation in these motifs among bacteria, and the short length of the target sites, only confirmed dif-motifs of enterobacterial prophages reached an E-value cutoff >0.005. A large number of hits fell below of this threshold and were treated as potential dif-motifs if they possessed at least 15 bp identical to confirmed dif-motifs and occurred in the short non-coding regions of MAGs. Hits within coding regions were removed as likely representing false positives (as integration would interrupt coding sequences), with the exception of those within the N-terminus of VP4 (as occasionally observed in Escherichia gokushovirus prophages).
 
-## Resurrection and modification of prophages
+### Resurrection and modification of prophages
 
 DNA fragments representing gokushovirus prophages were amplified from E. coli and E. marmotae strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163 (Supplementary file 1) with Phusion polymerase (NEB) from 10 ng of genomic DNA using primer pairs listed in Supplementary file 5 and under the following PCR conditions: 98°C for 3 min; 30 cycles of 98°C for 15 s, 50°C for 15 s, 72°C 2:30 min; followed by 72°C 10 min. Amplified fragments of ~4.5 kb corresponding to gokushovirus prophages were purified from agarose gels using the Monarch DNA Gel Extraction Kit (NEB) and eluted in 20 µl ddH2O. Blunt ends of the purified linear fragment were phosphorylated with T4 Polynucleotide Kinase (ThermoFisher) followed by overnight treatment with T4 DNA Ligase (NEB) to form circular genomes. Ligation mixtures were heat-inactivated, desalted, transformed into E. coli DH5α and incubated for 1 hr in 1 ml SOC medium at 37°C. After this recovery period, cultures were grown overnight in 5 ml of LB medium at 37°C with mild shaking (200 rpm). Viable bacteriophages were harvested by centrifuging the culture for 5 min at 5000 g to pellet bacterial cells and then by filtering the supernatant through 0.45 µm syringe filters. The presence and identity of phages were confirmed through standard spot assays (see below) and Sanger sequencing (see Supplementary file 5).
 
-## Plasmid construction and complementation of knockout mutants
+### Plasmid construction and complementation of knockout mutants
 
 To construct complementation plasmids, we first amplified the xerC and xerD genes from Escherichia coli BW25113 with primers XerC_fw_EcoRI and XerC_rev _SacI or XerD_fw_EcoRI and XerD_rev_SacI (Supplementary file 5) under the conditions listed above. PCR products were purified using the Monarch DNA Gel Extraction Kit (NEB) and eluted in 20 µl ddH2O. PCR products and expression plasmid pJN105 (Newman and Fuqua, 1999) were digested with EcoRI and SacI (NEB) for 37°C for 1 hr, followed by heat inactivation for 10 min at 80°C and overnight ligation at a 1:3 vector-to-insert ratio using T4 DNA Ligase (NEB) at 4°C. One microliter of ligation mixtures were transformed into electrocompetent BW25113ΔxerC or ΔxerD mutants, and transformants were selected for growth on LB agar plates supplemented with 10 µg/ml gentamycin.
 
-## Phage and bacterial culture
+### Phage and bacterial culture
 
 Environmental Escherichia strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163, Escherichia coli K12 derivates DH5α and BW25113, and KEIO collection strains BW25113ΔxerC (KEIO Strain JW3784-1), BW25133ΔxerD (KEIO Strain JW2862-1) BW25113ΔfhuA (KEIO strain JW0146-2) were grown at 37°C in LB liquid media (supplemented with of 50 µg/ml kanamycin for the KEIO knockout strains). Expression of xerC or xerD genes in BW25113ΔxerC and BW25133ΔxerD containing pJN::xerC or pJN::xerD was induced by addition of 0.1% arabinose.
 
@@ -129,12 +224,12 @@ To prepare agar-overlays, cells from 100 µl of overnight culture were pelleted,
 
 Serial transfers experiments were performed by inoculating lysogenic colonies (as identified by PCR, below) in LB, diluting overnight cultures to OD600 = 0.7, and then transferring 2 µl of the diluted culture into 2 ml of LB. After 18–24 hr incubation at 37°C with shaking, 2 µl of culture was transferred to 2 ml of fresh LB. This process was repeated for 28 days, and each day, phages were titered as described above.
 
-## Detection of circularized phages and prophages
+### Detection of circularized phages and prophages
 
 The presence of lysogens and circularized phage was determined by PCR assays of liquid overnight cultures from surviving colonies in agar-overlay assays showing confluent lysis, using primers MG1655_fw and MG1655_rev, which flank the bacterial dif-motif, and VP2_fw and VP5_rev, which anneal up- and downstream the phage dif-motif in circularized phage genomes (Supplementary file 5). Ratios of lysogenic to non-lysogenic cells in individual cultures were measured by re-streaking single lysogenic colonies three times, selecting and resuspending a single resulting colony in LB, and re-plating it onto LB-agar plates. Colonies were grown in liquid culture in a 96-well plate overnight and assayed by PCR with primers MG1655_fw and MG1655_rev to detect prophage integration, as described above. PCR products were resolved on 1% agarose gels, and the intensity of the PCR products representing integrated prophage and non-integrated sites was measured with ImageJ 1.52a (http://imagej.nih.gov/ij).
 
 Prophage integration sites were confirmed by inverse PCR (Ochman et al., 1988) as follows: 10 ng of DNA derived from colonies of BW25113 and BW25113ΔxerC infected with either EC6098 wild type or EC6098ΔdifC were cut with restriction enzyme HindIII (NEB) for 1 hr at 37°C. Reactions were heat inactivated at 80°C for 10 min, and then circularized with T4 DNA Ligase (NEB) overnight at 4°C. Primer VP2_rev, binding the 3’-end of VP2 and facing upstream, and primers Circle_1 and Circle_2, which bind to conserved regions downstream of VP2 and face downstream, were used to amplify circularized ligation products using Phusion polymerase (NEB) under the following PCR conditions described above. PCR products were resolved on 1% agarose gels, and all detected bands were extracted and Sanger-sequenced. Phage integration was confirmed by the presence phage and bacterial sequence in a single read.
 
-## Electron microscopy
+### Electron microscopy
 
 Two milliliters of high-titer phage lysate were resuspended in PBS, layered on top of a CsCl step gradient (2 ml each of p1.6 to p1.2 in PBS) and centrifuged in a Beckman Coulter Optima L-100k Ultracentrifuge at 24,000 rpm for four hours. After centrifugation, fractions were collected in 0.5 ml steps, and to determine which fractions contained phage, PCR was performed using primers nocode_fw and VP2_rev using 1 µl of each fraction as template. Fractions containing phage were desalted with an Amicon Ultra-2ml Ultracel-30k filter unit and resuspended in water. For electron microscopy, viral suspensions were pipetted onto carbon-coated grids, negatively stained with 2% uranyl acetate, and imaged with a Tecnai BioTwin TEM operated at 80kV.

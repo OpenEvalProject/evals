@@ -39,7 +39,7 @@ Despite the centrality of the WIPI2:ATG16L1 interaction to mammalian autophagy i
 
 ## Results
 
-## Structure determination of WIPI2d:ATG16L1-W2IR
+### Structure determination of WIPI2d:ATG16L1-W2IR
 
 In order to generate a crystallizable form of WIPI2d, the flexible hydrophobic loop in blade six and the putatively disordered C-terminal region were deleted (Figure 1A). The deletion construct removes the only regions whose sequence diverges between WIPI2b and WIPI2d; thus, the construct represents a WIPI2b/d consensus. A peptide corresponding to the WIPI2-interacting region (‘W2IR’) comprising residues 207–230 of ATG16L1 (Dooley et al., 2014) was synthesized. The crystal structure of the WIPI2d:ATG16L1 complex was determined at 1.85 Å (Figure 1B,C) by molecular replacement using the structure of Kluveromyces lactis Hsv2 (Baskaran et al., 2012) (PDB: 4EXV) as a search model. ATG16L1 was modeled de novo into the density (Figure 1D). The asymmetric unit contains two copies of the WIPI2d:ATG16L1 W2IR complex. One WIPI2d monomer is bound to one ATG16L1 peptide, and the two copies align with a Cα root-mean-square deviation (RMSD) of 0.3 Å. Statistics of crystallographic data collection and structure refinement are provided in Supplementary file 1. As expected on the basis of the Hsv2 (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012) and WIPI3 (Ren et al., 2020) structures, WIPI2d folds into a seven blade ß -propeller, with each blade containing four anti-parallel ß-strands. The propeller is ~50 Å wide and ~30 Å tall (Figure 1B,C). The FRRG motif that enables WIPI2d binding to phosphoinositides is distal to the ATG16L1 binding site.
 
@@ -47,7 +47,7 @@ In order to generate a crystallizable form of WIPI2d, the flexible hydrophobic l
 
 **Figure 1.:** Structure of WIPI2d bound to ATG16L1 W2IR. (A) Annotated WIPI2d and ATG16L1 domain schematics. WIPI2d construct for crystallography is shown and W2IR from ATG16L1. (B, C) The ribbon diagram of the WIPI2d complex with ATG16L1 W2IR from the (B) bottom and (C) side views. Each blade is colored in accordance with (A). (D) Composite omit map of ATG16L1 W2IR. Modeled ATG16L1 is shown as red carton and the composite omit 2mFo-DFc map contoured at 1σ is shown in gray.
 
-## Analysis of WIPI2d W2IR: ATG16L1 interface
+### Analysis of WIPI2d W2IR: ATG16L1 interface
 
 The ATG16L1 W2IR nestles between blades 2 and 3 of WIPI2d, burying ~550 Å2 of solvent-accessible surface area. Blades 2 and 3 are identical in all six WIPI2 isoforms; thus, we expect that conclusions concerning the ATG16L1 binding mode drawn here will pertain to all WIPI2 isoforms. The WIPI2d binding site for the ATG16L1 W2IR consists of a single deep groove with a mixed electropositive and hydrophobic character (Figure 2A,C). Hydrophobic side chains of Leu 64, Phe 65, Leu 69, Val 83, Ile 92, Cys 93, Ile 124, and Met 127 on WIPI2d contribute to the hydrophobic surface of the groove. The surfaces of Leu 220 and Leu 224 of the ATG16L1 W2IR are buried in this interface (Figure 2C,D). The side chains of WIPI2d His 85, Lys 88, Arg 108, and Lys 128 contribute to the electropositive character of the groove. The acidic side chains of Glu 226 and Glu 230 of ATG16L1 interact with the electropositive patch on WIPI2 (Figure 2E). The presence of WIPI2d Arg 108 and Arg 125, and ATG16L1 Glu 230 in the binding site was correctly predicted by the modeling efforts of Tooze and colleagues (Dooley et al., 2014). The nature of their interactions can now be defined on the basis of the crystal structure of the complex. Gln 217 of ATG16L1 forms a hydrogen bond with Lys 128 of WIPI2d at the N-terminus of the W2IR and WIPI2d, respectively. The C-terminus of the ATG16L1 W2IR, Glu 230 forms a salt bridge with Arg 108 of ATG16L1. Arg125 makes a water-mediated bridge to the W2IR peptide backbone in one of the two complexes in the asymmetric unit. Ser 66, Ser 67, and Ser 68 contribute additional polar interactions. The backbone of ATG16L1 near Ala 227 and Ala 228 forms a hydrogen bond with the backbone of WIPI2d between residues Ser 68 and Leu 69. This backbone binding favorably buries residues Leu 64, Phe 65, and Ser 67 within WIPI2d.
 
@@ -57,13 +57,13 @@ The ATG16L1 W2IR nestles between blades 2 and 3 of WIPI2d, burying ~550 Å2 of s
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig3-v3.jpg)
 
-**Figure 3.:** Key interacting residues shown as sticks in cartoon representation of WIPI2d:ATG16L1 interface shown from (A) the WIPI2d face or (B) down the ATG16L1 helix. (C) Inputs for the (D) Pull-down assays of mutant WIPI2d constructs and wild type with GST-ATG16L1 W2IR. GSH resin was used to pull-down GST-ATG16L1 W2IR from purified protein mixture. The pull-down results were performed in triplicates and visualized by SDS–PAGE and Coomassie blue staining.Figure 3—source data 1.Figure 3.Uncropped gel used in Figure 3C,D with lanes labeled similarly.
+**Figure 3.:** Key interacting residues shown as sticks in cartoon representation of WIPI2d:ATG16L1 interface shown from (A) the WIPI2d face or (B) down the ATG16L1 helix. (C) Inputs for the (D) Pull-down assays of mutant WIPI2d constructs and wild type with GST-ATG16L1 W2IR. GSH resin was used to pull-down GST-ATG16L1 W2IR from purified protein mixture. The pull-down results were performed in triplicates and visualized by SDS–PAGE and Coomassie blue staining.
 
-## Roles of WIPI2 interfacial residues
+### Roles of WIPI2 interfacial residues
 
 To evaluate the role of specific residues at the interface, we introduced single site mutations into WIPI2d to disrupt binding. H85E, K88E, and C93E were designed to perturb the electropositive WIPI2d surface on blade 2 (Figures 2B and 3A,B). L69E and I92E were designed to disrupt the hydrophobic groove for hydrophobic packing of ATG16L1 (Figures 2 and 3Figures 2D and 3A,B). K128E and R108E were chosen to abolish the interactions with Gln 217 and Glu 230 in ATG16L1, respectively (Figures 2E and 3A,B). R125E was designed to disrupt the bridging interaction to Lys88 (Dooley et al., 2014). Both R108E and R125E were previously shown to reduce binding within the cellular context; thus, these two mutants also served to confirm that our in vitro binding experiments support the findings of previously reported immunoprecipitations (Dooley et al., 2014). To investigate the effects of these mutants on complex formation, we purified the mutant proteins and performed a coprecipitation assay using immobilized GST-ATG16L1 W2IR (Figure 3C,D). It was observed that L69E and C93E were prone to aggregation and were therefore not characterized further. All other mutants expressed at near identical levels as wild type, were purified at equivalent yields, and so presumed not to have grossly perturbed structures and stabilities. H85E, K88E, and I92E completely abolished binding to ATG16L1, while R108E and R125E retained weak binding to ATG16L1 (Figure 3D). Interestingly, K128E is coprecipitated at similar levels to WT WIPI2d (Figure 3D). Lys128 is positioned within a flexible loop (Figure 3A) near the location of three disordered Arg residues in the N-terminal part of the ATG16L1 W2IR preceding Gln 217. The resulting charge repulsion might offset the contribution of the W2IR Gln 217 hydrogen bond. The presence of these apparent negative interactions suggests that the association of the wild-type complex has evolved to a moderate affinity to facilitate the dissolution of the complex during the course of autophagosome maturation.
 
-## The WIPI2d:ATG16L1 W2IR interface is required for LC3 lipidation in vitro
+### The WIPI2d:ATG16L1 W2IR interface is required for LC3 lipidation in vitro
 
 We next assessed the ability of WIPI2d mutants to activate E3 membrane recruitment and LC3 lipidation in a microscopy-based GUV assay (Chang et al., 2021b; Fracchiolla et al., 2020). In the presence of WIPI2d WT and the LC3 conjugation machinery (ATG7, ATG3, the ATG12–5-16 L, and a mCherry-LC3B construct corresponding to the ATG4-processed form) (Figure 4A), PI3KC3-C1 robustly triggered membrane recruitment of the E3-GFP complex and activated mCherry-LC3B lipidation (Figure 4B,C). Consistent with expectation, mutation of the previously characterized ATG16L1 binding sites R108E and R125E significantly reduced E3 membrane binding and LC3 lipidation (Figure 4B,C). The mutants H85E and I92E almost completely abolished E3 membrane binding and LC3 lipidation (Figure 4B,C). The K88E mutant also had an obvious defect in E3 recruitment and LC3 lipidation (Figure 4B,C). All of these observations are consistent with the loss of binding noted in the GST pull-down experiments. Consistent with the positive pull-down result, the K128E mutant fully retained the ability to recruit E3 to GUV membrane and activate subsequent LC3 lipidation (Figure 4). These data confirm that the ATG16L1 binding interface on WIPI2d is responsible for the E3 recruitment and activation that promotes LC3 membrane conjugation.
 
@@ -71,7 +71,7 @@ We next assessed the ability of WIPI2d mutants to activate E3 membrane recruitme
 
 **Figure 4.:** (A) The schematic drawing illustrates the reaction setting. Colors indicate fluorescent protein-fused components. Components in gray are not labeled but are present in the reaction. (B) Representative confocal images of GUVs showing E3 membrane binding and LC3B lipidation. PI3KC3-C1, WIPI2d WT or mutant, E3-GFP, ATG7, ATG3, mCherry-LC3B, and ATP/Mn2+ were incubated with GUVs (64.8% DOPC: 20% DOPE: 5% DOPS: 10% POPI: 0.2% Atto647 DOPE) at room temperature. Images taken at 30 min were shown. Scale bars, 10 µm. (C) Quantification of relative intensities of E3-GFP and mCherry-LC3B on GUV membranes in (A) (means ± SDs are shown; N = 40). p≥0.5: (ns); 0.01<p<0.05: (*); 0.001<p<0.01: (**); p<0.001 (***); p<0.0001 (****).
 
-## Mutations that disrupt the WIPI2:ATG16L1 W2IR interface impair starvation-induced autophagy
+### Mutations that disrupt the WIPI2:ATG16L1 W2IR interface impair starvation-induced autophagy
 
 These structural observations and in vitro reconstitutions cumulatively suggest that mutations disrupting the interface between WIPI2 and ATG16 might be expected to disrupt autophagosome formation. To test this hypothesis, we engineered Halo-tagged WIPI2B constructs containing H85E, K88E, and I92E mutations, as well as a construct containing all three of these mutations. In parallel, we expressed a Halo-tagged WIPI2B construct containing an R108E mutation, previously shown to disrupt the WIPI2B/ATG16 interaction (Dooley et al., 2014). Engineered WIPI2 constructs were expressed in WIPI2 KO HeLa cells generated by CRISPR/Cas9 gene editing and verified by Sanger sequencing and western blot (Fischer et al., 2020). The parent HeLa cell line was tested in parallel, transfected with a vector encoding the Halo-tag only. Autophagy was induced by incubating cells for 2 hr in 1× EBSS (starvation media). All EBSS contained 100 nM of bafilomycin A (BafA) to block autophagosome/lysosome fusion.
 
@@ -85,7 +85,7 @@ In addition to autophagosome number, we also analyzed the number of discrete WIP
 
 Altogether, these data support the model that the interface between WIPI2 and ATG16 mediates autophagosome formation under starvation conditions. Notably, autophagosome formation persists at higher levels in cells without WIPI2 than is observed upon expression of some mutated constructs of WIPI2. Therefore, these data also suggest a robust mechanism for autophagosome formation in which WIPI2 may be one component of the preferential, but not sole, machinery with the potential to orchestrate autophagosome formation.
 
-## In vitro reconstitution of WIPI2 membrane recruitment
+### In vitro reconstitution of WIPI2 membrane recruitment
 
 We examined whether WIPI2 recruitment to GUV membranes was perturbed by the W2IR binding site mutations. A simple system including PI3KC3-C1 and E3 was used to explore the possibility that even in the presence of PI(3)P, E3 binding might contribute to WIPI2 recruitment. K88E, R108E, and R125E decreased WIPI2 recruitment to a significant extent (Figure 6A,B), while other mutants did not. In order to determine whether the loss in recruitment resulted from decreased interactions with E3 or membranes, an even simpler model was tested in which 5% PI(3)P was included in the GUVs but no proteins other than WIPI2 were present (Figure 6C). K88E and K128E reduced binding to pure lipid membranes, but other mutants tested, including R108E and R125E, did not (Figure 6C). The effect of the K88E and K128E mutations on binding to PI(3)P-containing GUVs was unexpected, given that these residues are located distal to the FRRG motif involved in the known structural PI(3)P binding site (Baskaran et al., 2012; Krick et al., 2012), and suggests that membrane binding by WIPIs may be more complex than previously appreciated. The defects in autophagosome formation may thus represent a combination of defects in both lipid membrane and ATG16L1 binding. The unique effect of R108E and R125E on ATG16L1 binding and their strong autophagosome formation phenotype confirm the functional importance of ATG16L1 recruitment by WIPI2.
 
@@ -93,7 +93,7 @@ We examined whether WIPI2 recruitment to GUV membranes was perturbed by the W2IR
 
 **Figure 6.:** (A) Representative confocal images of GUVs showing membrane binding of mCherry-WIPI2d. PI3KC3-C1, mCherry-WIPI2d WT or mutant, E3-GFP were incubated with GUVs (64.8% DOPC: 20% DOPE: 5% DOPS: 10% POPI: 0.2% Atto647 DOPE) at room temperature. Images taken at 30 min were shown. Scale bars, 10 µm. (B) Quantification of relative intensities of mCherry-WIPI2d on GUV membranes in (A) membranes (means ± SDs are shown; N = 40). (C) Quantification of confocal images of GUVs (69.8% DOPC: 20% DOPE: 5% DOPS: 5% DOPI(3)P: 0.2% Atto647 DOPE) showing membrane binding of mCherry-WIPI2d. mCherry-WIPI2d WT or mutant were incubated with GUVs at room temperature for 30 min and then imaged. (Means ± SDs are shown; N = 40). p≥0.5: (ns); 0.01<p<0.05: (*); 0.001<p<0.01: (**); p<0.001 (***); p<0.0001 (****).
 
-## Comparison across the WIPI protein family
+### Comparison across the WIPI protein family
 
 The structure reported here was based on a construct corresponding to a consensus of the WIPI2b/d sequences for blades 1–7, since the C-terminal extension, the only region of divergence between the two proteins was deleted. These are the two WIPI2 isoforms that have been previously shown to bind ATG16L1 in immunoprecipitations from cells (Dooley et al., 2014). While the remaining WIPI isoforms diverge from the 2b/d consensus in blade 1, their sequences are identical in the blades 2 and 3 involved in ATG16L1 binding site. To the extent that these other isoforms were reported not to bind ATG16L1, these differences cannot be inherent in the W2IR binding groove itself, but rather must reflect other differences in the cellular context and modifications.
 
@@ -103,7 +103,7 @@ The only other human WIPI for which a structure is known is that of WIPI3 (Liang
 
 **Figure 7.:** Comparison of WIPI2d and WIPI3. Alignment of WIPI2d and WIPI3 (A) structure and (B) sequence based on structures with W2IR residues denoted with white squares, W34IR with black, and from both with gray. Electrostatic surface comparison of (C) WIPI2d and (D) WIPI3.
 
-## Comparison of yeast and human membrane recruitment of Atg16
+### Comparison of yeast and human membrane recruitment of Atg16
 
 A recently reported structure of the yeast WIPI2 ortholog K. lactis Atg21 (Munzel et al., 2021) bound to a fragment of yeast (A. gossypii) Atg16 allowed us to make a direct comparison of Atg16 membrane recruitment across species. Of the three yeast WIPI orthologs Atg18, Hsv2, and Atg21, it is Atg21 that recruits Atg12–5–16, the preautophagosomal membrane for Atg8 lipidation through its interaction with Atg16 in yeast (Juris et al., 2015). The two ß-propeller domains of KlAtg21 and WIPI2d align well with a Cα r.m.s.d. of 1.5 Å, and both contain a basic patch on blade 2 (Figure 8A,C). The Atg16 peptide is bound between blades two and three in both structures (Figure 8A). Atg16 residues involved in binding share a similar composition (Figure 8B,C). Both AgAtg16 and ATG16L1 interact through a salt bridge situated in the 3AB loop of the ß-propeller and hydrophobic residues that are favorably buried between blades two and three. Remarkably, despite these similarities, the N-terminal to C-terminal orientation of the Atg16 helix is reversed (Figure 8B,C). Atg21 orients the N-terminus of AgAtg16 towards the membrane, while WIPI2 orients ATG16L1 N-terminus away from the membrane (Figure 8D,E).
 
@@ -129,29 +129,444 @@ Orienting WIPI2d membrane in the edge-on geometry proposed on the basis of previ
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa human epithelial cell line</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td>Authenticated by STR profiling; tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WIPI2-KO cells: HeLa cell line gene-edited to knockout WIPI2 expression</td>
+      <td>Fischer et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHTC HaloTag</td>
+      <td>Promega</td>
+      <td>G7711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-WT (Homo sapiens) plasmid for transfection</td>
+      <td>Stavoe et al., 2019</td>
+      <td>Addgene 175025</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-H85E (Homo sapiens) plasmid for transfection</td>
+      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>
+      <td>Addgene 175027</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-K88E (Homo sapiens) plasmid for transfection</td>
+      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>
+      <td>Addgene 175028</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-I92E(Homo sapiens) plasmid for transfection</td>
+      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>
+      <td>Addgene 175029</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-R108E (Homo sapiens) plasmid for transfection</td>
+      <td>Stavoe et al., 2019</td>
+      <td>Addgene 176004</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-WIPI2-H85/K88/I92E (Homo sapiens) plasmid for transfection</td>
+      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>
+      <td>Addgene 175033</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3B, (Rabbit polyclonal) primary antibody</td>
+      <td>Abcam</td>
+      <td>Cat.#ab48394</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit AlexaFluor488, (Goat polyclonal) secondary antibody</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#A11034</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMRDirect Halo Ligand</td>
+      <td>Promega</td>
+      <td>Cat.#G2991</td>
+      <td>37.5 nM final concentration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilastik</td>
+      <td>PMID:31570887</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator 2021</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>35 mm #1.5 glass bottom imaging dishes</td>
+      <td>MatTek</td>
+      <td>Cat.# P35G-1.5–20 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EBSS</td>
+      <td>ThermoFisher</td>
+      <td>Cat.# 24010043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK GnTi</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2d-cs-TEV</td>
+      <td>Fracchiolla et al., 2020</td>
+      <td>Addgene 171419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2d10-364Δ263–295-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171830</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dH85E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171831</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dK88E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171832</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dI92E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171833</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dC93E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171834</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dR108E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171835</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dR125E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171836</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-WIPI2dK128E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171837</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2d-cs-TEV</td>
+      <td>Fracchiolla et al., 2020</td>
+      <td>Addgene 178912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dH85E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171838</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dK88E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171839</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dI92E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171840</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dC93E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171841</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dR108E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171842</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dR125E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171843</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-mcherry-WIPI2dK128E-cs-TEV</td>
+      <td>This paper</td>
+      <td>Addgene 171844</td>
+      <td>Materials and methods section: Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLEXm-GST-TEV-ATG14</td>
+      <td></td>
+      <td>Addgene 99329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-TSF-TEV-BECN1</td>
+      <td></td>
+      <td>Addgene 99328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-TSF-TEV-VPS34</td>
+      <td></td>
+      <td>Addgene 99327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-VPS15</td>
+      <td>Stjepanovic et al., 2017</td>
+      <td>Addgene 99326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBdest-ATG12-10xHis-TEV-ATG5-10xHis-TEVcs-ATG16L1-GFP-TEVcs-StrepII, ATG7, ATG10</td>
+      <td>Fracchiolla et al., 2020</td>
+      <td>Addgene 169077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFast BacHT(B)–6xHis-TEV-ATG7</td>
+      <td>Fracchiolla et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET Duet-1-6xHis-TEV-ATG3</td>
+      <td>Fracchiolla et al., 2020</td>
+      <td>Addgene 169079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET Duet-1-6xHis-TEV-mCherry-LC3B-Gly(∆5 C)</td>
+      <td>Zaffagnini et al., 2018</td>
+      <td>Addgene 169168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96–2 well,INTELLI-PLATE (original) tray</td>
+      <td>Molecular Dimensions, Maumee, OH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Greiner pre-greased 24 well Combo Plate (SBS format) with lid</td>
+      <td>Molecular Dimensions, Maumee, OH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon Elements microscope imaging software 4.60</td>
+      <td>Nikon Corporation, Tokyo, Japan</td>
+      <td colspan="2">https://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose 4B GST-tagged protein purification resin</td>
+      <td>GE healthcare, Chicago, IL</td>
+      <td>Cat# 17075605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-Tactin Superflow high capacity 50 % suspension</td>
+      <td>IBA Lifesciences,Göttingen, Germany</td>
+      <td>Cat# 2-1208-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phenix.refine</td>
+      <td>PMID:20124702, 22505256, 31588918</td>
+      <td>RRID:SCR_016736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>PMID:20124692</td>
+      <td>RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>POINTLESS</td>
+      <td>PMID:21460446</td>
+      <td>RRID:SCR_014218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHASER</td>
+      <td>PMID:19461840</td>
+      <td>RRID:SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>PyMol (pymol.org)</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>APBS</td>
+      <td>PMID:11517324</td>
+      <td>RRID:SCR_008387</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL</td>
+      <td>PMID:29788355</td>
+      <td>RRID:SCR_018123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:20383002</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 WIPI2d crystallography constructs and mutants were sub-cloned from a plasmid from a previous study (Fracchiolla et al., 2020) into the pCAG vector using restriction enzyme cloning. mCherry constructs were cloned similarly with an N-terminal mCherry tag. All constructs had a C-terminal TEV cleavage site followed by TwinStrep tags. WIPI2b WT and R108E plasmids for mammalian cell transfection were as previously described (Stavoe et al., 2019); additional point mutations H85E, K88E, I92E, and the triple mutation 85/88/108E were introduced into the WT construct and verified by sequencing. Protocol available at https://doi.org/10.17504/protocols.io.bxktpkwn (Strong, 2021a).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Purification of WIPI2d constructs used for crystallization, pull-down assays, and GUV assays were expressed in HEK GnTi cells. Constructs were transfected to cells using polyethylenimine (Polysciences). After 60 hr of expression, cells were harvested and lysed with lysis buffer (50 mM Hepes, pH 7.4, 1% Triton X-100, 300 mM NaCl, and 1 mM Tris(2-carboxyethyl)phosphine [TCEP]) supplemented with EDTA-free protease inhibitors (Roche). The lysate was clarified by centrifugation (17,000 rpm for 1 hr at 4°C) and incubated with StrepTactin Sepharose resin (IBA) for 2 hr at 4°C, applied to a gravity column, and washed extensively with wash buffer (50 mM Hepes, pH 7.4, 300 mM NaCl, and 1 mM TCEP). The protein complexes were eluted with wash buffer containing 10 mM desthiobiotin (Sigma) and treated with TEV protease at 4°C overnight. Cleaved protein was applied to a Superdex 200 column (16/60 prep grade) equilibrated with gel filtration buffer (25 mM Hepes, pH 7.4, 150 mM NaCl, and 1 mM TCEP). Peak fractions were collected, pooled, snap frozen in liquid nitrogen, and stored at –80°C. Purification of ATG12–5-16, PI3KC3-C1, ATG7, ATG3, and LC3 used for GUV assays were performed as previously described (Fracchiolla et al., 2020). Protocols are available at https://doi.org/10.17504/protocols.io.buxqnxmw (Strong, 2021b), https://doi.org/10.17504/protocols.io.br6qm9dw (Fracchiolla, 2021a), https://doi.org/10.17504/protocols.io.bseenbbe (Chang, 2021a), https://doi.org/10.17504/protocols.io.bsennbde (Fracchiolla, 2021b), https://doi.org/10.17504/protocols.io.btgknjuw (Turco and Fracchiolla, 2021), https://doi.org/10.17504/protocols.io.btiunkew (Fracchiolla, 2021c).
 
-## Crystallization and structural determination
+### Crystallization and structural determination
 
 WIPI2d10-364Δ263–295: ATG16L1 (207–230) complex was formed overnight with 5× molar excess peptide (GenScript). Crystals of the complex were grown using hanging drop vapor diffusion method at 4°C. One μL of the protein complex (2 mg/mL) was mixed with one μL reservoir solution and 0.3 µL of a crystal seed stock. This was suspended over a 500 µL reservoir of 22% w/v PEG 3,350 (Hampton Research), 2% v/v Tacsimate pH 7.0 (Molecular Dimension), and 100 mM Hepes pH 7.7. Crystals appeared within 2 days and were continued to grow for approximately a week. Crystals were cryoprotected in reservoir solution supplemented with 25% (v/v) glycerol. A native dataset was collected from a single crystal under cryogenic conditions (100 K) at a wavelength of 0.979 Å using a Dectris PILATUS 6 M/EIGER 16 M detector (beamline BL12-2, SSRL). The data was indexed and integrated using LABELIT and XDS (Kabsch, 2010). Integrated reflections were scaled, merged, and truncated using AIMLESS and TRUNCATE, respectively. Initial phases were determined by molecular replacement with the program PHASER (McCoy et al., 2007) using KIHsv2 (PDB: 4EXV) (Baskaran et al., 2012) as a search model. ATG16L1 peptide was manually modeled into the structure according to the 2Fo-Fc and Fo-Fc electron density maps using Coot (Emsley et al., 2010). Iterative rounds of manual model building and refinement were performed using Coot (Emsley et al., 2010) and Phenix Refine (Afonine et al., 2012), respectively (https://www.mrc-lmb.cam.ac.uk/public/xtal/doc/phenix/tutorials/mr_refine.html). Data collection and refinement statistics are listed in Supplementary file 1. WIPI2 ATG16L1 interface was analyzed using PDBePISA (Krissinel and Henrick, 2007). All figures were generated with PyMol (http://www.pymol.org). The electrostatic surface was calculated using APBS (Baker et al., 2001) https://github.com/Electrostatics/electrostatics.github.io; Nathan, 2021, in PyMOL. Hydrophobic surface was generated using YBR script in PyMOL (Hagemans et al., 2015). WIPI1 and WIPI4 homology models were generated in SWISS-Model (Bertoni et al., 2017; Bienert et al., 2017; Studer et al., 2020; Studer et al., 2021; Waterhouse et al., 2018) using WIPI2d10-364Δ263–295 and WIPI3 (PDB: 6KLR) as templates, respectively. Protocol available at https://doi.org/10.17504/protocols.io.bu7tnznn (Strong, 2021c).
 
-## Coprecipitation assay
+### Coprecipitation assay
 
 Ten micromolar purified WIPI2d was mixed with 20 μM of GST or GST-ATG16L1(207–230) and 10 μL Glutathione Sepharose 4B (GE Healthcare). The final buffer was 25 mM HEPES pH 7.4, 150 mM NaCl, 1 mM TCEP. The final volume was 150 μL. The system was gently rocked at 4°C for 2 hr before washing the protein-bound resin three times. Loading dye was added to the beads and bands were visualized using SDS–PAGE gel after coomassie staining. Three replicates were performed. Protocol available at https://doi.org/10.17504/protocols.io.bxkspkwe (Strong, 2021d).
 
-## GUV assay
+### GUV assay
 
 GUVs were prepared by hydrogel-assisted swelling as described previously (Chang et al., 2021b). The reactions were set up in an eight-well observation chamber (Lab Tek) that pre-coated with 5 mg/mL β casein for 30 min. For E3 membrane recruitment and LC3 lipidation assay, a final concentration of 50 nM PI3KC3-C1 complex, 250 nM WIPI2d or mutant proteins, 50 nM E3-GFP complex, 100 nM ATG7, 100 nM ATG3, 500 nM mCherry-LC3B, 50 µM ATP, and 2 mM MnCl2 were used. For WIPI2d membrane binding assay, a final concentration of 50 nM PI3KC3-C1, 400 nM mCherry-WIPI2d or mutant proteins, and 50 nM E3-GFP complex were used. A final volume of 120 µL mixture was made for all the reactions. Ten microliters GUVs were added to initiate the reaction. After 5 min incubation, during which random views were picked for imaging, time-lapse images were acquired in multitracking mode on a Nikon A1 confocal microscope with a 63× Plan Apochromat 1.4 NA objective. Three biological replicates were performed for each experimental condition. Identical laser power and gain settings were used during the course of all conditions.
 
 For quantification of protein intensity on GUV membranes, the outline of individual vesicle was manually defined based on the membrane channel. The intensity threshold was calculated by the average intensities of pixels inside and outside of the bead and then intensity measurements of individual bead were obtained. Averages and standard deviations were calculated among the measured values per each condition and plotted in a bar graph. The data were analyzed with GraphPad Prism nine by using one-way ANOVA with Dunn’s multiple comparisons test. Protocol available at https://doi.org/10.17504/protocols.io.bxm2pk8e (Chang, 2021b).
 
-## Starvation experiments in WT and WIPI2 knockout HeLa cells
+### Starvation experiments in WT and WIPI2 knockout HeLa cells
 
 WIPI2 knockout (KO) HeLa cells and their corresponding parent line were generously provided by Richard Youle (National Institute of Health). Cells were cultured in DMEM (10% FBS, 1% Pen/Strep, 1% GlutaMAX). Cells were authenicated by STR profiling and tested as myoplasma-free at the Penn Genomic Analysis Core. Cells were transfected with 0.75 μg of the indicated WIPI2 construct or soluble Halo-tag control 18 hr prior to starvation using FuGENE transfection reagent as recommended. To induce starvation, cells were washed twice in 1× Earle’s balanced salt solution (EBSS) and incubated for 2 hr in EBSS containing 100 nM baflomycin A and TMR Direct Halo Ligand. To visualize autophagosomes, cells were fixed in ice-cold MeOH at −20°C for 10 min. Cells were incubated in blocking solution (5% normal goat serum, 1% BSA, 0.05% NaN3 in 1× PBS) for 1.5 hr. Primary LC3 antibody (ab48394, 1 μg/mL) was diluted in blocking solution and used for 1 hr at room temperature. Cells were washed thrice in 1× PBS and incubated in AlexaFluor 488 (1:1000 in blocking buffer). Cells were then washed once in 1× PBS, incubated in PBS with Hoechst (4 μg/mL) for 10 min to allow for visualization of nuclei, washed thrice more, and stored at 4°C. HeLa cells were imaged in PBS on a Perkin Elmer spinning disk confocal setup with a Nikon Eclipse Ti inverted microscope, a Hamamatsu EMCCD 9100–50 camera, and an Apochromat 100 × 1.49 NA oil immersion objective. Images were acquired as z-stacks with a 200 nm step size.
 

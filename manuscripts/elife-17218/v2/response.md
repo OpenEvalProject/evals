@@ -99,11 +99,9 @@ We have made the following changes to address these concerns:
 
 We have replaced the images of vulval precursor morphology in wild type and lin-29 mutants in Figure 2B with higher quality (i.e., not pixelated) images.
 
-We are presenting the grayscale image for the laminin::mCherry channel for the image appearing in Figure 2B in the manuscript previously submitted on August 23, 2016 for further examination here (see Author response image 1):10.7554/eLife.17218.044Author response image 1.(A) and (B) Are the image panels from the manuscript submitted on August 23, 2016.(C) The single-channel image of laminin::mCherry showing the BM gap edge (solid arrow) and a puncta of laminin signal to the left (dotted arrow) that is discontinuous from the rest of the BM. D) A heatmap of the laminin::mCherry fluorescence showing an increase in laminin at the previously identified BM gap edge (arrowhead).DOI: http://dx.doi.org/10.7554/eLife.17218.044
+We are presenting the grayscale image for the laminin::mCherry channel for the image appearing in Figure 2B in the manuscript previously submitted on August 23, 2016 for further examination here (see Author response image 1):10.7554/eLife.17218.044Author response image 1.(A) and (B) Are the image panels from the manuscript submitted on August 23, 2016.(C) The single-channel image of laminin::mCherry showing the BM gap edge (solid arrow) and a puncta of laminin signal to the left (dotted arrow) that is discontinuous from the rest of the BM. D) A heatmap of the laminin::mCherry fluorescence showing an increase in laminin at the previously identified BM gap edge (arrowhead).
 
 (C) The single-channel image of laminin::mCherry showing the BM gap edge (solid arrow) and a puncta of laminin signal to the left (dotted arrow) that is discontinuous from the rest of the BM. D) A heatmap of the laminin::mCherry fluorescence showing an increase in laminin at the previously identified BM gap edge (arrowhead).
-
-DOI: http://dx.doi.org/10.7554/eLife.17218.044
 
 In addition, we have included the single-channel images of the laminin::mCherry for the new images in Figure 2B. Upon close examination of the new wild type image included in Figure 2B, there is also a small puncta of internalized laminin::mCherry, similar to the one noted by the reviewer in our previously submitted image. We have amended the legend for Figure 2, explaining that the presence of this laminin signal does not represent the BM gap boundary.
 

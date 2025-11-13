@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/046ak2485 Human Biology and Primate Evolution, Institute of Biology, Freie Universität Berlin Berlin Germany
-2. https://ror.org/046ak2485 Institute of Bioinformatics, Freie Universität Berlin Berlin Germany
-3. https://ror.org/03mxktp47 Institut de Biologie de l'École Normale Supérieure, Ecole Normale supérieure de Paris Paris France
+1. Human Biology and Primate Evolution, Institute of Biology, Freie Universität Berlin Berlin Germany ([ROR:046ak2485](https://ror.org/046ak2485))
+2. Institute of Bioinformatics, Freie Universität Berlin Berlin Germany ([ROR:046ak2485](https://ror.org/046ak2485))
+3. Institut de Biologie de l'École Normale Supérieure, Ecole Normale supérieure de Paris Paris France ([ROR:03mxktp47](https://ror.org/03mxktp47))
 
 † Corresponding author
 
@@ -32,27 +32,134 @@ Taken together, the study of the regulatory networks involving KRAB-ZNF genes an
 
 ## Results
 
-## TEKRABber: a software for cross-species comparative analysis of orthologs, TEs, and their co-expression
+### TEKRABber: a software for cross-species comparative analysis of orthologs, TEs, and their co-expression
 
 While computational tools for the analysis of TE expression in samples of a given species have already been developed (Table 1), to our knowledge, no tool exists yet that can compare TE expression across species, hampering the investigation of the impact of TEs on species evolution. Whereas the expression of orthologous genes can be compared between closely related species relatively easily, this task is more challenging for TEs, because the same TEs can be located in different regions on chromosomes and have different sequence lengths. Additionally, differences in the copy number of TEs between species can further complicate these comparisons. To gain functional evolutionary insights, it is further desired to estimate pairwise correlations between TEs and genes, which can be used to derive and compare regulatory networks involving TEs across species. We are aware of one method, TEffectR (Karakülah et al., 2019), that by providing mapped BAM files and specific locus regions, can be used for calculating TE and gene expression. Using a linear regression model with TE expression values, it subsequently predicts the impact of the TE on proximal gene expression in one species. However, it is not designed for contrasting correlations between pairwise orthologous genes and TEs across species directly from RNA-seq expression data. To better enable evolutionary studies on TEs, we developed an R Bioconductor software called TEKRABber (DOI: 10.18129/B9.bioc.TEKRABber). As a first use case for this new software, we investigated the interplay between TEs and KRAB-ZNF proteins, which can repress TE expression; hence the name TEKRABber. In a broader scope, TEKRABber addresses two primary challenges: comparing TE expression across species and efficiently calculating pairwise correlations between selected orthologous genes and TEs. With these features, it provides functionality not yet implemented in other tools (Table 1). It can also be used for exploring correlations of TEs with any other genes in any other species with genomes with TE annotations.
 
+**Table 1.**
+ Comparison of transposable element (TE) expression analysis software.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Software name</th>
+      <th>Description</th>
+      <th>Comparison feature</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RepEnrich</td>
+      <td>Combines different mapping strategies for differentially expressed TE analysis using RNA-seq and ChIP-seq data</td>
+      <td>Different conditions(same species)</td>
+      <td>Criscione et al., 2014</td>
+    </tr>
+    <tr>
+      <td>TETools</td>
+      <td>Compares TE expression from RNA-seq data</td>
+      <td>Different conditions(same species)</td>
+      <td>Lerat et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Telescope</td>
+      <td>Estimates TEs in specific genomic locations using RNA-seq data</td>
+      <td>One condition in one species</td>
+      <td>Bendall et al., 2019</td>
+    </tr>
+    <tr>
+      <td>TE Density</td>
+      <td>Provides a metric showing the presence of TEs relative to genes within flexible genomic distance</td>
+      <td>One condition in one species</td>
+      <td>Teresi et al., 2022</td>
+    </tr>
+    <tr>
+      <td>PlanTEenrichment</td>
+      <td>Calculates TE enrichment upon inputting a differentially expressed gene list and selection of a specific plant species</td>
+      <td>Different conditions(same species)</td>
+      <td>Eskier et al., 2023</td>
+    </tr>
+    <tr>
+      <td>GeneTEFlow</td>
+      <td>A nextflow pipeline for analyzing differential expression of genes and TEs</td>
+      <td>Different conditions(same species)</td>
+      <td>Liu et al., 2020</td>
+    </tr>
+    <tr>
+      <td>TEffectR</td>
+      <td>Estimates the proximal TE effects on gene expression using a linear regression model</td>
+      <td>Different conditions(same species)</td>
+      <td>Karakülah et al., 2019</td>
+    </tr>
+    <tr>
+      <td>TEKRABber</td>
+      <td>Computes differentially expressed genes/TEs and one-to-one correlations using RNA-seq data</td>
+      <td>Different conditions(same species)Across species comparison (different species)</td>
+      <td>Method presented here</td>
+    </tr>
+  </tbody>
+</table>
+
 TEKRABber is designed to handle various types of transcriptomic read counts and offers two distinct modes of analysis (Figure 1A). In the first mode, tailored for interspecies comparison, we utilized the Primate Brain Data as a demonstration. Initially, it retrieved annotations from Ensembl (Harrison et al., 2024) for orthologs and from RepeatMasker (Smit et al., 2013) for TEs to estimate normalizing factors, ensuring comparable expression levels between species. This approach minimizes the likelihood that differences in fold change for differential expression (DE) are caused by TE or gene length variations. It also guarantees that only orthologs and TEs with high orthology confidence are included in the comparison, avoiding bias toward any particular species (Figure 1—figure supplement 1). Subsequently, users can employ the output data object to conduct DE analysis and identify one-to-one correlations based on selected parameters. We demonstrate that the impact of scaling is most pronounced for comparisons between the most distantly related species in our study, with about 30% of TEs being detected as DE or not between humans and rhesus macaques, depending on whether the expression data were scaled or not for the comparison (Figure 1—figure supplement 1). The second mode is designed for comparing different conditions, such as control and disease states within the same species. In this scenario, we used the Mayo Data as an example. Users can bypass the interspecies normalization steps and directly generate data objects for DE and correlation analyses. Notably, TEKRABber (from version 1.8, Bioc3.19) includes a parallel computing option, significantly enhancing computational efficiency based on the number of cores a device can provide. Furthermore, TEKRABber offers an interactive user interface, providing users with an initial overview of their results before delving into the details (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig1-v1.jpg)
+
+**Figure 1.:** (A) Two independent RNA-seq datasets, Primate Brain Data and Mayo Data, were analyzed in this study. (1) Transcriptomic data were first preprocessed by removing adapters and low-quality reads and then mapped to their reference genome using STAR to generate BAM files. (2) TEtranscript was used to quantify the expression of genes and transposable elements (TEs). (3) Expression profiles were normalized across different species. (4) Differential expression (DE) analysis and pairwise correlations were calculated. Steps (3) and (4) were developed together in an R Bioconductor package, TEKRABber. (B) The user interface of TEKRABber features a dashboard layout that allows users to explore one-to-one gene-TE interactions, including correlation and differential expression results (more details in Materials and methods section).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** For across species comparison between humans and the NHPs indicated on the x-axis, using expression data from the primary and secondary cortices as an example. The y-axis shows the percentage of TEs that were only called using scaled or non-scaled data (the remainder needed to add up to 100% is the overlap of DE TEs between both methods). To be called DE, the TE needed to show an absolute log2foldchange larger than 1.5 and adjusted p-value < 0.05. The impact of scaling is the highest for the most distantly related species, the rhesus macaque, where more than 30% of TEs changed in assignment to being DE or not depending on the applied scaling.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig1-figsupp2-v1.jpg)
 
 In our study, we used TEKRABber to explore the putative functional connections between KRAB-ZNFs and TEs in the context of human brain evolution and AD. We conducted an analysis of KRAB-ZNF genes and TEs expression patterns and networks using two independent RNA-seq datasets: Primate Brain Data and Mayo Data (Figure 1A, Supplementary file 1, tables S1–S3). The Primate Brain Data contains genome-wide expression information from 33 brain regions classified into seven groups (Khrameeva et al., 2020) of four primate species, while the Mayo Data includes data from two brain regions (temporal cortex and cerebellum) of AD patients and controls. In brief, expression of all genes and TEs was quantified and normalized across samples of each dataset, and subsequently DE and correlations between KRAB-ZNFs and TEs were calculated using TEKRABber (Figure 1A, Figure 1—figure supplement 2).
 
-## Dynamics of expression across species and brain regions: strong species differences especially of evolutionary young KRAB-ZNF genes and TEs
+### Dynamics of expression across species and brain regions: strong species differences especially of evolutionary young KRAB-ZNF genes and TEs
 
 We obtained normalized expression values of KRAB-ZNF genes and TEs and assessed their variance across different species using t-SNE clustering (Figure 2A). The data labeled by species revealed distinct boundaries of variance, demonstrating clustering based on species. Specifically, humans and macaques formed their own clusters, while chimpanzees and bonobos were grouped in the same cluster, which agrees with phylogenetic distances among species. This finding indicated that clear differences in KRAB-ZNF genes and TE expression can be detected across species. For example, there were 12 upregulated and 42 downregulated KRAB-ZNF genes, along with 31 upregulated and 22 downregulated TEs in humans compared to chimpanzees in the primary and secondary cortices (Figure 2B; see Supplementary file 1, table S2 for information on Brodmann areas included in the group ‘primary and secondary cortices’). In contrast to the clear species differences, expression patterns of KRAB-ZNFs and TEs differed less across brain regions within the same species.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig2-v1.jpg)
+
+**Figure 2.:** (A) t-SNE plots of the expression of KRAB-ZNF genes and TEs from all 422 samples, including human, chimpanzee, bonobos, and macaques labeled by species and different brain regions. (B) Differentially expressed KRAB-ZNF genes and TEs comparing human and chimpanzee in primary and secondary cortices. (C) Species tree with the inferred numbers of TEs and KRAB-ZNFs that have evolved per branch. (Note: There are 247 relatively old TEs and 52 KRAB-ZNFs that were difficult to place into a specific branch. Thus, they are not presented in this panel.) (D) Expression of KRAB-ZNF genes and TEs in primary and secondary cortices across species. Both KRAB-ZNF genes and TEs were grouped into two groups based on their inferred evolutionary age, old (>44.2 million years ago [mya]) and young (≤44.2 mya). Young KRAB-ZNFs and young TEs have lower expression levels (Wilcoxon rank sum test, p<0.05). Expressions of all brain regions can be found in Figure 2—figure supplement 3. (E) Percentage of differentially expressed KRAB-ZNF genes and TEs in humans compared to chimpanzees in primary and secondary cortices and cerebellar white matter. (F) Human-specific differentially expressed (DE) (i.e. human-specifically changed) KRAB-ZNF genes and TEs in primary and secondary cortices compared to nonhuman primates (NHPs). Gray indicates no expression information. The colors for age inferences in (C), (D), (E), and (F) are the same: blue for evolutionary old and orange for evolutionary young KRAB-ZNFs and TEs, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The evolutionary age of KRAB-ZNFs was inferred from GenTree (Shao et al., 2019) and primate orthologous annotations (Jovanovic et al., 2021). The evolutionary young group (≤ 44.2 mya) is in orange and the evolutionary old group (> 44.2 mya) is in blue.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The age of TEs were estimated using Dfam subfamily species annotation. The evolutionary young group (≤ 44.2 mya) is in orange and the evolutionary old group (> 44.2 mya) is in blue.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Both KRAB-ZNF genes and TEs were grouped in two groups based on their inferred evolutionary age, old (> 44.2 mya) and young (≤ 44.2mya). Young KRAB-ZNFs and young TEs have lower expression levels (Wilcoxon Rank Sum Test, p < 0.05).
 
 Certain TEs are primate-specific and have been extensively used in phylogenetic studies. For example, a subset of recently evolved Alu subfamilies is found only in Simiiformes (Xing et al., 2007; Williams et al., 2010). We next investigated whether expression patterns differ between Simiiformes-specific KRAB-ZNF genes and TEs (called evolutionary young from here on), and KRAB-ZNFs and TEs that have also orthologs outside Simiiformes (called evolutionary old from here on). To this end, we dated these genomic elements and classified them into the two groups based on their inferred evolutionary age (see Materials and methods). The old group consists of 234 KRAB-ZNF genes and 955 TEs that evolved prior to the emergence of Simiiformes (>44.2 million years ago [mya]), while the young group consists of 103 KRAB-ZNF genes and 309 TEs that evolved less than 44.2 mya (Figure 2C, Figure 2—figure supplements 1 and 2). We first found that the young KRAB-ZNFs and young TEs exhibited significantly lower expression levels across all brain regions, regardless of species (Figure 2D, Figure 2—figure supplement 3). Next, there were proportionally more young KRAB-ZNF genes and young TEs differentially expressed between humans and chimpanzees compared to old KRAB-ZNF genes and old TEs (Figure 2E). The same holds true when comparing humans to all NHPs, implying that young TEs and young KRAB-ZNFs are still more dynamically changed between different primates.
 
 We further investigated if there are KRAB-ZNFs and TEs that are specifically changed in humans compared to the three NHPs. We detected 36 such KRAB-ZNF genes and 18 such TEs in the primary and secondary cortices. KRAB-ZNFs showed a trend toward more downregulation in humans, such as ZNF337 and ZNF394 (Figure 2F). Unlike this trend, some KRAB-ZNFs linked to cognitive disorders were human specifically upregulated, e.g., ZNF778, a candidate gene for autism spectrum disorder and cognitive impairment (Willemsen et al., 2010), and ZNF267, which is upregulated in the prefrontal cortex of AD patients (Patel et al., 2021). TEs tended to be more upregulated in humans compared to NHP. On the other hand, the LTR12B subfamily is one of the most downregulated TEs in humans. LTR12-related ERV subfamilies had been reported to be repressed by ZNF676 and ZNF728 in early human development (Iouranova et al., 2022).
 
-## Changes in correlations between TEs and KRAB-ZNF genes: increased connectivity in the human brain co-expression network with an enrichment for evolutionary young correlations
+### Changes in correlations between TEs and KRAB-ZNF genes: increased connectivity in the human brain co-expression network with an enrichment for evolutionary young correlations
 
 To systematically analyze the putative functional relationships between TEs and KRAB-ZNF genes, we conducted pairwise Pearson’s correlation analysis using normalized expression levels in seven clustered brain regions (Supplementary file 1, table S2 and Figure 1 in Khrameeva et al., 2020). We first analyzed the human samples. There were 324 KRAB-ZNFs and 895 TEs (subfamily level) expressed in Primate Brain Data (copy number provided in Supplementary file 1, table S4). In humans, we found 100,987 positive and 26,810 negative significant correlations between TEs and KRAB-ZNFs in the primary and secondary cortices and 38,295 positive and 11,475 negative significant correlations in the limbic and association cortices (adjusted p-value<0.01), while the other clusters have fewer or no correlations detected (Supplementary file 1, table S5). We will thus mainly focus on the primary and secondary cortices and the limbic and association cortices for our subsequent analyses.
 
 The numbers of correlations between TEs and KRAB-ZNFs are significantly more than expected by chance, as gauged by repeating the correlation analysis with randomly picked genes and TEs (p<0.001; see Materials and methods; Figure 3A, Figure 3—figure supplement 1), indicating that putative functional relationships between TEs and KRAB-ZNFs can be detected in the data. The high number of positive correlations might be surprising, given that KRAB-ZNFs are considered to repress TEs. However, the dataset contains in general more positive correlations, even when choosing random genes, and KRAB-ZNFs still have more negative correlations to TEs than random genes. It is also plausible that some relationships between older KRAB-ZNFs and no longer harmful TEs are positive, e.g., due to embedding into functional pathways, when a repression is no longer needed.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig3-v1.jpg)
+
+**Figure 3.:** (A) and (B) demonstrate the workflow for checking significant TE:KRAB-ZNF using the primary and secondary cortices as an example. (A) We used randomly selected gene sets and KRAB-ZNFs to calculate correlations with transposable elements (TEs). The violet dots indicate the correlation counts of TE:KRAB-ZNF based on comparing all correlations, positive correlations, and negative correlations. They are significantly higher than for random gene sets (boxplots below, 1000 iterations, p<0.001). (B) Overlaps between TE:KRAB-ZNF (y-axis) and the KRAB-ZNF protein ChIP-exo data (Imbeault et al., 2017) (x-axis). Note that we use absolute coefficient values for negative correlations. Correlations under the yellow area are selected (C) Jaccard similarity, demonstrating that the correlations between TEs and KRAB-ZNFs overlapped significantly more with ChIP-exo data than randomly selected TEs and KRAB-ZNFs (p<0.001). The points indicate the overlap with actual correlations and ChIP-exo data. The boxplots indicate the overlap between randomly selected TE and KRAB-ZNF pairs with ChIP-exo data. (D) Subsets of the number of positive and negative TE:KRAB-ZNF in the primary and secondary cortices (c1_p and c1_n) and the limbic and association cortices (c2_p and c2_n). (E) TE:KRAB-ZNF network in the primary and secondary cortices with five modules. Nodes are colored in five colors representing the five modules, and nodes in white do not belong to any module. Young links are in orange and old links are in blue. (F) Distribution of the normalized degree counts in TE and KRAB-ZNF nodes in TE:KRAB-ZNF network. (G) This is the subnetwork colored in pink from (E), showing that this module mainly consists of Alu subfamilies. (H) The log count of correlations classified by TEs and the categories of links, including positive-old (P-O), positive-young (P-Y), negative-old (N-O), and negative young (N-Y). Red stars indicate that the class distribution of the TEs is significantly different (Chi-squared test, p<0.001). The right-hand side barplot shows the exact count of Alu subfamilies from the first row in the heatmap.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This is the same method mentioned in Figure 3A and B. (A) Higher number of correlations comparing to KRAB-ZNFs (pink dot) and random selected genes (p < 0.001) (B) We use a threshold adjusted p-value < 0.01 and absolute coefficient larger than 0.4 to select TE:KRAB-ZNF for down-stream analysis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** We define it as a significant one-to-one correlation between TE and KRAB-ZNF based on the absolute coefficient being larger than 0.4 and the adjusted p-value being smaller than 0.01. We classify it as a young correlation when at least one of the components (TE or KRAB-ZNF gene) is evolutionary young. (A) A negative young example (young TE correlated with young KRAB-ZNF) (B) A negative young example (young TE correlated with old KRAB-ZNF) (C) An old example (old TE correlated with old KRAB-ZNF). X-axis is the log expression level of KRAB-ZNF and y-axis is the log expression of TE.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Nodes are colored based on 13 different modules. Nodes in white do not belong to any module. Links demonstrate the evolutionary age of the interaction (young link in orange; old link in blue). (A) primary and secondary cortices (cluster1) and (B) limbic and association cortices (cluster2). Violet dots indicating numbers of significant correlations of TE:KRAB-ZNF (adjusted p < 0.01). Box plots indicate the distribution of 1000 iterations of random selected genes correlated with TEs (hm: human, pt: chimpanzee, pp: bonobo, mm: macaque, all: positive and negative correlations, negative: negative correlations, positive: positive correlations).
 
 To remove weak correlations, we set a threshold with absolute correlation coefficients greater than 0.4 and adjusted p-value below 0.01 (Benjamini-Hochberg correction) (Figure 3B, Figure 3—figure supplements 1 and 2). In addition, we sought independent experimental confirmation of our detected putative relationships by overlapping the correlations with experimental ChIP-exo data obtained from KRAB-ZNF proteins in human embryonic stem cells (Imbeault et al., 2017). Note that although ChIP-exo was performed in different cell types than the brain samples we analyzed, the overlap was significant by calculating their Jaccard similarity (p<0.001, Figure 3C). This result supports that our correlations have significantly captured the interplay between TEs and KRAB-ZNFs. Focusing on the ChIP-exo-confirmed correlations, we obtained 869 correlations in the primary and secondary cortices and 399 correlations in limbic and association cortices. Of those, 201 positive correlations and 166 negative correlations overlapped between these two brain region groups (Figure 3D).
 
@@ -62,6 +169,16 @@ We divided TE:KRAB-ZNF into evolutionary young and old, calling a correlation as
 
 Next, we compared the TE:KRAB-ZNF between species and only considered the 178 KRAB-ZNFs and 836 TEs, which were expressed in all four species. Since the original study (Khrameeva et al., 2020) included four human individuals but only three individuals per NHP species, we performed a leave-one-out analysis of the human samples. For a fair comparison across species, we required that a correlation between KRAB-ZNFs and TEs in humans needed to be significantly detected in all human leave-one-out combinations (Figure 4A, Supplementary file 1, table S6). We then repeated our test of whether KRAB-ZNFs are more likely to correlate with TEs compared to randomly selected genes and found that human KRAB-ZNF still has a significantly higher number of correlations with TEs. In contrast, in NHPs, KRAB-ZNFs did not have more correlations to TEs than randomly selected genes (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig4-v1.jpg)
+
+**Figure 4.:** (A) Workflow for selecting TE:KRAB-ZNF comparing between species. First, there were 178 transposable elements (TEs) and 836 KRAB-ZNFs detected in all four species. Second, the leave-one-out test in the human sample was performed for a fair comparison since humans had four repeats and NHPs only had three (adjusted p<0.01 and absolute coefficient >0.4) (B) Number of positive and negative correlations in human and NHPs. Red brackets indicated the change of correlation between two species. For example, there are 276 human positive correlations which are negatively correlated in bonobos (suffix n: negative, p: positive; hs: Homo sapiens, pt: Pan troglodytes, pp: Pan paniscus, mm: Macaca mulatta). (C) Network of 276 TE:KRAB-ZNF that were all positively correlated in humans but negatively correlated in bonobos. This network demonstrates two hubs, ZNF528 and ZNF112, connecting to multiple TE subfamilies. Node size of TEs refers to the relative abundance of connections to the hubs. Details of this network can be found in Figure 4—figure supplement 2. (D) ZNF528 protein sequence difference in a zinc finger domain (ZF), where humans have glutamine (Q) while bonobos have histidine (H) at the –1 finger position. The lower part of the illustration indicates that the zinc finger domain binds to the DNA sequence using the –1, 3, and 6 finger positions. (E) Number of different TE subfamily nodes which form evolutionary old and young correlations in (C) network comparing humans to bonobos. (F) Distribution counts of human-specific correlations categorized based on TE subfamilies showing only young links. N-Y: negative and young correlations; P-Y: positive and young correlations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/103608/elife-103608-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** This bipartite network refers to the 276 TE:KRAB-ZNF network mentioned in Figure 4C. KRAB-ZNF nodes are in violet and TE nodes are in green. The colors of the border of nodes and the edges represent their evolutionary age. The evolutionary young nodes and edges are in orange and the evolutionary old nodes and edges are in blue.
+
 We subsequently determined human-specific and conserved TE:KRAB-ZNF interactions by assessing whether an interaction seen in humans also existed in any NHP. Remarkably, the results we obtained show that humans have a higher number of correlations and connectivity compared to NHPs (Figure 4B). This finding is not confounded by a lack of gene/TE annotations nor sample size, given that we only included KRAB-ZNF genes and TEs expressed in all four species, and that we used the same number of individuals per species; being even more conservative by requiring that all four permutations of human triples show a significant correlation.
 
 Interestingly, we found that some correlations had opposite signs between species. For example, 276 TE:KRAB-ZNF with positive correlations in humans were negatively correlated in bonobos (the seventh column in Figure 4B). Although not significant, out of the 276 TE:KRAB-ZNF, 104 were also negatively correlated in chimpanzees and rhesus macaques and might represent human-specific changes in the sign of the correlation. Constructing a network of those 276 TE:KRAB-ZNF, we detected that ZNF112 and ZNF528 are two hubs connected to TEs with mostly old links and young links, respectively (Figure 4C). We asked whether sequence differences exist between the orthologous zinc finger proteins that might explain this putative functional change. For ZNF112, there were 21 zinc finger domains. However, among 14 amino acid differences, none of them affected a position within the zinc finger domains (–1, 3, and 6) that directly contacts the DNA. Between the orthologs of human and bonobo ZNF528, we discovered an amino acid difference in one position that directly contacts nucleotides of the DNA (–1 position of the 15th zinc finger domain) (Figure 4D). While in bonobo ZNF528, there is a histidine at this position, it is a glutamine in human ZNF528. For other KRAB-ZNF proteins, it has been demonstrated that replacing DNA-contacting amino acids with alanine or glutamine reduces their repressor potency (Nunez et al., 2011). Therefore, we speculate that variations in the zinc finger domain of ZNF528, specifically at position 588, may explain why human ZNF528 is not as negatively correlated with TEs as bonobo ZNF528 (Figure 4D). Interestingly, this changed position represents a very rare human polymorphism (rs373201614), which seems to be under positive selection in humans, including Denisovans and Neanderthals (Harrison et al., 2024).
@@ -70,9 +187,51 @@ The distribution of young and old links was not random in the 276 TE:KRAB-ZNF bi
 
 Last, we checked the species-specific correlations based on TE subfamilies. For example, there are 24,063 positive and 2455 negative correlations in humans that were not detected in NHPs (the first column and the fifth column in Figure 4B). Interestingly, these human-specific correlations were all evolutionary young links, and many of them represented negative correlations involving TEs of the Alu subfamilies (Figure 4F).
 
-## Alterations in TE and KRAB-ZNF expression in brains of Alzheimer’s patients reflect brain region differences
+### Alterations in TE and KRAB-ZNF expression in brains of Alzheimer’s patients reflect brain region differences
 
 Several KRAB-ZNFs and TEs with human-specific expression patterns or correlations have been associated with AD. For example, ZNF267, which was upregulated in the human cortex compared to NHPs (Figure 2F), is a clear transcriptomic signature for the diagnosis of AD (Fehlbaum-Beurdeley et al., 2012), and the expression of AluYa5 subfamily leads to genetic dysregulation in AD (Kim et al., 2016). We thus hypothesized that the regulatory network of KRAB-ZNFs and TEs might be severely altered in the brains of AD patients. We utilized the Mayo Data to test this hypothesis (Table 2).
+
+**Table 2.**
+ Datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Categories(biological replicates)</th>
+      <th>Total number of samples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Primate Brain Data(GSE127898)</td>
+      <td>Human (4)</td>
+      <td>132</td>
+    </tr>
+    <tr>
+      <td>Chimpanzee (3)</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Macaque (3)</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Bonobo (3)</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mayo Data(syn5550404)</td>
+      <td>Control-temporal cortex</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>AD temporal cortexControl-cerebellumAD cerebellum</td>
+      <td>242322</td>
+    </tr>
+  </tbody>
+</table>
 
 To investigate if there were differences in the expression patterns of TEs and KRAB-ZNFs comparing different brain regions and disease status, we conducted t-SNE analysis using their expression levels from the temporal cortex and cerebellum of human control individuals and AD patients. Results showed that variances were primarily influenced by brain regions rather than AD status (Figure 5A). Similar to our previous results with the Primate Brain Data (Figure 2D), we found that evolutionary young KRAB-ZNF genes and young TEs were expressed at lower levels than their older counterparts (Figure 5B). Comparing expression levels between AD and control samples, we obtained for the temporal cortex 6 KRAB-ZNF genes and 4 TEs that were upregulated in AD and 6 TEs that were downregulated in AD (Figure 5C). In the cerebellum, there were 6 upregulated and 1 downregulated TEs, and 4 downregulated and 10 upregulated KRAB-ZNF genes (Figure 5D).
 
@@ -80,7 +239,7 @@ To investigate if there were differences in the expression patterns of TEs and K
 
 **Figure 5.:** (A) Variations in the expression of KRAB-ZNF genes and TEs using t-SNE analysis. cbe: cerebellum; tcx: temporal cortex. (B) Distributions of the expression of evolutionary old and young KRAB-ZNF genes and TEs. (C) and (D) Differentially expressed KRAB-ZNF genes and TEs (absolute log2FoldChange>0.5, p<0.05) in temporal cortex (tcx) and cerebellum (cbe). The expression of KRAB-ZNF genes and TEs in the cerebellum shared the same log expression scale.
 
-## Human-specific correlations limited to the healthy human temporal cortex: 21 TE:KRAB-ZNFs not detected in AD
+### Human-specific correlations limited to the healthy human temporal cortex: 21 TE:KRAB-ZNFs not detected in AD
 
 To select significant correlations (TE:KRAB-ZNF) between control and AD samples in the temporal cortex and cerebellum, we employed the same filtering criteria as described in the Primate Brain Data analysis (Figure 3A–C), requiring an adjusted p-value less than 0.01, absolute correlation coefficients higher than 0.4, and TE:KRAB-ZNF pairs detected in ChIP-exo data (Imbeault et al., 2017). The overlaps of TE:KRAB-ZNF pairs are depicted in Figure 6A, demonstrating a higher number of correlations in the control group. Next, we selected 21 TE:KRAB-ZNF, which are detected from the temporal cortex both in human Primate Brain Data and the healthy controls in Mayo Data, but not detected in any NHPs in Primate Brain Data. These correlations represented a subset of TE:KRAB-ZNF, which were specific to healthy adult human brain samples but not detected in AD progression (Figure 6B). Among these 21 TE:KRAB-ZNF, there are 14 evolutionary young and 7 evolutionary old interactions, and we found that Alu subfamilies accounted for 11 of these 21 interactions (Figure 6C). We further investigated why these TE:KRAB-ZNF were not detected in AD samples and found that most of the correlations were not significant based on our defined threshold. For instance, AluYc:ZNF182 exhibited a positive correlation in both control and AD samples in the temporal cortex. However, according to our selection criteria, this TE:KRAB-ZNF pair was not deemed significant in the AD sample (FDR = 0.34) (Figure 6D). The sole exception, showing opposite direction of correlation between groups, was L1MA6:ZNF211, which displayed a negative correlation in the control group but had a nonsignificant very weak positive correlation in the AD group (Figure 6D). This indicates weakening and loss of some correlations between TEs and KRAB-ZNFs in AD.
 
@@ -104,40 +263,40 @@ In response to the need for systematically comparing expression profiles of orth
 
 Nonetheless, it is crucial to recognize that our present approach is constrained by certain limitations. These constraints primarily stem from variations in the lengths and positions of the same TE across individual genomes of the same species, leaving some room for improving the normalization of TE expression levels. We only used the available reference genomes for our analysis; however, it becomes increasingly clear that substantial individual differences in the presence of TEs exist, which are not covered by a single reference genome of a species. Currently, there are emerging methods designed to detect TE expression, including tools for advancements in sequencing resolution like long-read sequencing (Marx, 2023), de novo TE annotations (Storer et al., 2022; Orozco-Arias et al., 2024), and locus-specific expression detection in single-cell RNA-seq analysis (Rodríguez-Quiroz and Valdebenito-Maturana, 2022). These developments hold promise for achieving a more precise depiction of the variations between samples and the reference, ultimately enhancing our understanding of TE-associated expression patterns. Hence, we acknowledge the significant potential of integrating improved TE orthologous information into our method.
 
-## Conclusion
+### Conclusion
 
 In summary, our findings underscore the intricate network of interactions between TEs and KRAB-ZNFs in both human evolution and neurodegenerative disease. To achieve a comprehensive understanding of TEs and KRAB-ZNFs functions, it is not enough to only examine expression levels, but network analysis as facilitated by TEKRABber needs to be leveraged. We found that the human brain exhibits a notably denser TE:KRAB-ZNF network compared to NHPs, particularly for more recently evolved TEs and KRAB-ZNFs. The healthy human brain TE:KRAB-ZNF network contains a distinct module composed exclusively of Alu subfamilies, which is an evolutionary novelty not observed in AD brains. These insights highlight the nuanced dynamics of TE:KRAB-ZNF interactions and their relevance in both evolutionary and disease contexts. We emphasize that TEs can have a role in species evolution and provide a tool, TEKRABber, to further investigate this across a larger number of taxa.
 
 ## Materials and methods
 
-## Primate Brain Data
+### Primate Brain Data
 
 For comparing humans with NHPs, we used published RNA-seq data (GSE127898) including 422 brain samples from biological replicates that consisted of 4 humans, 3 chimpanzees, 3 bonobos, and 3 macaques (Table 2). Samples from each individual were from 33 different brain regions, and total RNA was sequenced on the Illumina HiSeq 4000 system with a 150 bp paired-end sequencing protocol. More details about samples and the preparation steps can be found in Supplementary file 1, table S1 and Khrameeva et al., 2020. RNA-seq FASTQ data on Gene Expression Omnibus (Barrett et al., 2012) were retrieved using NCBI SRA Toolkit v3.0.3.
 
-## Mayo Data
+### Mayo Data
 
 The Mayo RNA-seq study (Allen et al., 2016) was utilized to compare human control and AD samples. Total RNA was sequenced from both control and AD samples collected from the temporal cortex and cerebellum. The preprocessed FASTQ files, which include only control and AD samples in the temporal cortex and cerebellum, were downloaded via Synapse consortium studies (accession: syn5550404). The number of samples can be found in Table 2 and more details, including biological sex, age, and Braak staging, are in Supplementary file 1, table S3.
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 Adapters and low-quality reads were removed from the FASTQ files using fastp v0.12.4 (Chen et al., 2018) with default parameters. The selected FASTQ files from both datasets were then mapped to their respective references downloaded from UCSC Table Browser, including hg38, panTro6, panPan3, and rheMac10 (Karolchik et al., 2004), using STAR v2.7.10b (Dobin et al., 2013) with the parameters ‘--outFilterMultimapNmax 100 --winAnchorMultimapNmax 100’. These parameters were chosen to increase the likelihood of capturing TE mapping by allowing for multiple alignments of reads and more loci anchors for mapping. The resulting BAM files were used to quantify counts of TEs and genes using TEtranscripts v2.2.3 (Jin et al., 2015) with the ‘--sortByPos’ parameter to determine the expression levels of genes and TEs. Gene and TE indices were created using UCSC gene annotations and the RepeatMasker track, enabling reads to match with these intervals. If a read overlapped with both a gene exon and a TE, we determined whether it had a unique alignment or multiple locations in the genome. If an annotation existed, the uniquely aligned read was assigned to the gene. Otherwise, it was assigned to the TE. For reads with ambiguous mappings, they were evenly weighted across TE or gene annotations using the expectation maximization algorithm (Dempster et al., 1977). Differentially expressed genes and TEs were quantified using DESeq2 v1.4.4 (Love et al., 2014), utilizing an absolute log2FoldChange threshold greater than 1.5 (adjusted p<0.05). However, the Mayo Data adopted an absolute log2FoldChange threshold greater than 0.5 due to a lower number of detected differentially expressed genes and TEs. Heatmaps and upset plots were visualized using ComplexHeatmap v2.2.0 (Gu et al., 2016; Gu, 2022).
 
-## Inferences about the evolutionary age of KRAB-ZNFs and TEs
+### Inferences about the evolutionary age of KRAB-ZNFs and TEs
 
 A total of 337 KRAB-ZNF genes were identified using the comprehensive KRAB-ZNF catalog (Huntley et al., 2006). The evolutionary age of these genes was inferred through annotations provided by GenTree (Shao et al., 2019), which employed a synteny-based pipeline to date primate-specific protein-coding genes and depicted their origins using a branch view. For KRAB-ZNF genes lacking direct dating annotations in GenTree, we incorporated complementary information from annotations of primate orthologs across 27 species, including humans (Jovanovic et al., 2021). This approach allowed us to assign evolutionary ages to all 337 KRAB-ZNF genes for our downstream analysis (Figure 2—figure supplement 1). The evolutionary age of TEs was derived from Dfam (Storer et al., 2021) by extracting species-specific information for each TE subfamily (Figure 2—figure supplement 2). Alu elements, which are primate-specific, have been extensively used in phylogenetic studies, and a subset of recently evolved Alu subfamilies is found in all Simiiformes (Xing et al., 2007; Williams et al., 2010). For downstream analyses, we classified both KRAB-ZNF genes and TEs into young and old groups based on their emergence around the divergence of Simiiformes (Figure 2C).
 
-## Development of the TEKRABber software
+### Development of the TEKRABber software
 
 To compare the expression of orthologous genes and TEs across species, we concatenated steps including normalization, DE, and correlation analysis into an R Bioconductor package, TEKRABber. The name was derived from the idea that TEs are bound (‘grabbed’) by KRAB-ZNF proteins. TEKRABber adapted the scale-based normalization method (Zhou et al., 2019) to normalize orthologous genes for comparison between two species. In brief, the conserved orthologous gene lengths from two species were selected from Ensembl data (Harrison et al., 2024) and combined with the expression data to find an optimal scaling factor that can normalize the data to achieve a minimization of deviation between empirical and nominal type I error in a hypothesis testing framework. The normalization step for TEs followed a similar concept. However, instead of using orthologous genes, we used the subset of TEs including LTR, LINE, SINE, SVAs, and DNA transposons (as defined by RepeatMasker, Smit et al., 2013), for which homologs can be found in other species, for scaling to normalize the expression of TEs (Figure 1—figure supplement 1). After normalization, differentially expressed orthologous genes and TEs were analyzed using DESeq2 v1.4.4 (Love et al., 2014). The one-to-one correlations between selected orthologous genes and TEs from each species were estimated. In this analysis, we used Pearson’s correlations with an adjusted p-value using the Benjamini-Hochberg correction (Benjamini and Hochberg, 1995) to obtain significant correlations.
 
-## Correlation analysis
+### Correlation analysis
 
 To obtain significant correlations of KRAB-ZNFs and TEs for downstream analysis, we used a workflow including the following steps. We first applied Pearson’s correlations on one-to-one gene and TE, using their normalized expression levels. Then, we tested whether KRAB-ZNFs statistically had more correlations with TEs than randomly selected genes (1000 iterations, p-value<0.001). Next, we investigated the relationships between the number of correlations and correlation coefficient values. From the distribution, we decided on a threshold with an absolute value for the coefficient of larger than 0.4 and with an adjusted p-value less than 0.01. Last, we cross-validated our results by comparing the pairs found with experimentally determined TE and KRAB-ZNF relationships using ChIP-exo data from a human embryonic stem cell line (Imbeault et al., 2017) and testing different correlation strengths. For notation, we use TE:KRAB-ZNF to signify a correlation between a TE and a KRAB-ZNF gene, i.e., AluYc:ZNF441 indicates a significant correlation between the expression of AluYc and ZNF441.
 
-## Constructing TE:KRAB-ZNF regulatory network
+### Constructing TE:KRAB-ZNF regulatory network
 
 Nodes and edges were selected from the TE:KRAB-ZNF results and processed into a dataframe object. The network structure was created using RCy3 v2.16 (Gustavsen et al., 2019) to import into Cytoscape v3.10.1 (Shannon et al., 2003) for visualization and editing. To visualize the regulatory networks, we applied the yFiles Organic Layout for an undirected graph by assigning nodes as objects that had repulsive or attractive forces between them (https://www.yworks.com).
 
-## Network analysis
+### Network analysis
 
 TE:KRAB-ZNF networks were analyzed as bipartite networks, consisting of two classes of nodes, KRAB-ZNF genes and TEs, with connections existing only between the two classes and no edges between elements from the same class. Node properties were first checked using a bipartite module in NetworkX software v2.8.4 (Hagberg et al., 2008). These values included bipartite degree centrality, bipartite strength centrality, and bipartite betweenness centrality for each KRAB-ZNF and TE node. The top 5% scoring genes were selected as hubs (bipartite degree and bipartite strength centrality). For cluster detection, leading eigenvector community methods (Csárdi et al., 2023) were used to specify unipartite community structures, and then bipartite modularity (Barber, 2007) was calculated with CONDOR v1.1.1 (Platig et al., 2016). To conduct enrichment analysis among clusters, a Fisher’s exact test using 1 million simulations with a p-value<0.05 was used.

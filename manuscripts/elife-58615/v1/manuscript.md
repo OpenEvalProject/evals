@@ -30,7 +30,7 @@ Despite the importance of the infinitesimal model in the development of the fiel
 
 The advent of GWAS, starting around fifteen years ago, completely transformed our understanding of the genetic basis of a wide variety of human complex traits and diseases (Claussnitzer et al., 2020). While early GWAS studies showed the power of this approach to identify significant and replicable signals, it quickly became clear that the lead variants generally explain only small fractions of the heritability of the corresponding traits (Weedon et al., 2008; Goldstein, 2009). The limited explanatory power of the detected loci became known as the ‘‘mystery of missing heritability’’ (Manolio et al., 2009): a mystery that was largely resolved by work showing that most of the heritability is due to the presence of many sub-significant causal variants (Purcell et al., 2009; Yang et al., 2010). Subsequent work has shown that for most traits the bulk of the SNP-based heritability is spread widely and surprisingly uniformly across the genome (Loh et al., 2015; Shi et al., 2016; O’Connor, 2020), and that most complex traits are in fact enormously polygenic, with various studies estimating >10,000 or even >100,000 causal variants per trait (Zhang et al., 2018; Frei et al., 2019; O'Connor et al., 2019).
 
-## Why are complex traits so polygenic?
+### Why are complex traits so polygenic?
 
 These findings raise a mechanistic question of how to understand the biological processes that link genotype to phenotype. How should we understand the observations that the lead variants for a typical trait contribute only a small fraction of the heritability, while most of the heritability is driven by tens of thousands of variants, presumably mediated through thousands of genes?
 
@@ -44,7 +44,7 @@ While the omnigenic model is broadly consistent with observations on cis and tra
 
 Here, we focus on three molecular traits that are unusually tractable in order to gain insights into the roles of core genes. This work illustrates two key parts of the model: (1) the existence and identity of sets of core genes for each trait and (2) that the core genes contribute only a small fraction of the heritability. We do not directly assess the role of trans-regulatory networks for these traits as well-powered trans-eQTL data do not exist for the relevant cell types.
 
-## GWAS of model traits: three vignettes
+### GWAS of model traits: three vignettes
 
 We investigate the genetic architecture underlying variation in three molecular traits: serum urate, IGF-1, and testosterone levels. For each of these traits, we know a great deal in advance about the key organs, biological processes and genes that might control these traits.
 
@@ -62,13 +62,21 @@ Our analyses make use of GWAS results that we reported previously on blood and u
 
 We then performed GWAS on the phenotype residuals in White British participants. For the GWAS we used variants imputed using the Haplotype Reference Consortium with MAF >0.1% and INFO >0.3 (Materials and methods), yielding a total of 16M variants. The final sample sizes were 318,526 for urate, 317,114 for IGF-1, 142,778 for female testosterone, and 146,339 for male testosterone. One important goal of our paper is to identify the genes and pathways that contribute most to variation in each trait. For gene set-enrichment analyses, we annotated gene sets using a combination of KEGG (Kanehisa and Goto, 2000) and previous trait-specific reviews, as noted in the text. We considered a gene to be ‘close’ to a genome-wide significant signal if it was within 100 kb of at least one lead SNP with p<5e-8. The annotations of lead signals on the Manhattan plots were generally guided by identifying nearby genes within the above-described enriched gene sets, or occasionally other strong nearby candidates.
 
-## Genetics of serum urate levels
+### Genetics of serum urate levels
 
-Urate is a small molecule (C5⁢H4⁢N4⁢O3) that arises as a metabolic by-product of purine metabolism and is released into the blood serum. Serum urate levels are regulated by the kidneys, where a set of transporters shuttle urate between the blood and urine; excess urate is excreted via urine. Urate is used as a clinical biomarker due to its associations with several diseases. Excessively high levels of urate can result in the formation of needle-like crystals of urate in the joints, a condition known as gout. High urate levels are also linked to diabetes, cardiovascular disease, and kidney stones.
+Urate is a small molecule ($C_{5}⁢H_{4}⁢N_{4}⁢O_{3}$) that arises as a metabolic by-product of purine metabolism and is released into the blood serum. Serum urate levels are regulated by the kidneys, where a set of transporters shuttle urate between the blood and urine; excess urate is excreted via urine. Urate is used as a clinical biomarker due to its associations with several diseases. Excessively high levels of urate can result in the formation of needle-like crystals of urate in the joints, a condition known as gout. High urate levels are also linked to diabetes, cardiovascular disease, and kidney stones.
 
 The genetics of urate have been examined previously by several groups (Woodward et al., 2009; Köttgen et al., 2013; Nakayama et al., 2017; Nakatochi et al., 2019; Boocock et al., 2019; Tin et al., 2019 and recently reviewed by Major et al., 2018). The three strongest signals for urate lie in solute carrier genes: SLC2A9, ABCG2, and SLC22A11/SLC22A12. A recent trans-ancestry analysis of 457 k individuals identified 183 genome-wide significant loci (Tin et al., 2019); their primary analysis did not include UK Biobank. Among other results, this study highlighted genetic correlations of urate with gout and various metabolic traits; tissue enrichment signals in kidney and liver; and genetic signals at the master regulators for kidney and liver development HNF1A and HNF4A.
 
 Performing GWAS of urate in the UK Biobank data set, we identified 222 independent genome-wide significant signals, summarized in Figure 1A (further details in Supplementary file 1). Remarkably, six of the 10 most significant signals are located within 100 kb of a urate solute transport gene. A recent review identified 10 genes that are involved in urate solute transport in the kidneys (Wright et al., 2010; Anzai et al., 2007); in addition to the six transporters with extremely strong signals, two additional transporters have weaker, yet still genome-wide significant signals (Figure 1B). Hence, GWAS highlights eight out of 10 annotated urate transporters, although some transporters were originally identified using early GWAS for urate levels. The two genes in the pathway that do not have hits (SMCT1 and SMCT2; also known as SLC5A8 and SLC5A12) do not directly transport urate, but instead transport monocarboxylate substrates for URAT1 to increase reabsorption rate (Bobulescu and Moe, 2012) and thus may be less direct regulators of urate levels.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genome-wide associations with serum urate levels in the UK Biobank. Candidate genes that may drive the most significant signals are indicated; in most cases in the paper, the indicated genes are within 100 kb of the corresponding lead SNPs. (B) Eight out of 10 genes that were previously annotated as being involved in urate transport (Wright et al., 2010; Anzai et al., 2007) are within 100 kb of a genome-wide significant signal. The signal at MCT9 is excluded from figure and enrichment due to its uncertain position in the pathway (Fisel et al., 2018). (C) Urate SNP-based heritability is highly enriched in kidney regulatory regions compared to the genome-wide background (analysis using stratified LD Score regression). Other tissues show little or no enrichment after removing regions that are active in kidney. See Figure 1—figure supplement 1 for the uncorrected analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Conditions represent naive multiple regression against all cell types simultaneously (left), multiple regression of non-kidney cell types after removing regions overlapping with kidney (middle), and multiple regression of non-kidney cell types excluding kidney regions along with the original kidney annotation (right). 95% confidence intervals are shown. The latter two results suggest that almost none of the urate SNP-based heritability lies specifically within any non-kidney cell type.
 
 Among the other top hits, five are close to transcription factors involved in kidney and liver development (HNF4G, HNF1A, HNF4A, HLF, and MAF). These are not part of a globally enriched gene set, but recent functional work has shown that the associated missense variant in HNF4A results in differential regulation of the urate solute carrier ABCG2 (Tin et al., 2019), while the MAF association has been shown to regulate SLC5A8 (Leask et al., 2018). Finally, two other loci show large signals: a missense variant in INHBC, a TGF-family hormone, and a variant in/near GCKR, a glucose-enzyme regulator. Both variants have highly pleiotropic effects on many biomarkers, although the mechanisms pertaining to urate levels are unclear.
 
@@ -82,13 +90,35 @@ Finally, while these signals emphasize the role of the kidneys in setting urate 
 
 Overall, we found that genes in the urate metabolic pathway show a modest enrichment for GWAS hits relative to all annotated, protein coding genes as a background (2.1-fold, p=0.017; Figure 2B). XDH, which catalyzes the last step of urate synthesis, has an adjacent GWAS hit, as do a number of upstream regulators of urate synthesis. Nonetheless, the overall level of signal in the synthesis pathway is modest compared to that seen for kidney urate transporters, suggesting that synthesis, while it plays a role in common variation in urate levels, is secondary to the secretion pathway. In contrast, remarkably, nearly all of the kidney urate transporter genes are close to genomewide significant signals; there are additional strong signals in kidney transcription factors, as well as a strong polygenic background in kidney regulatory regions.
 
-## Genetics of IGF-1 levels
+### Genetics of IGF-1 levels
 
 Our second vignette considers the genetic basis of IGF-1 (insulin-like growth factor 1) levels. The IGF-1 protein is a key component of a signaling cascade that connects the release of growth hormone to anabolic effects on cell growth in peripheral tissues (Laron, 2001). Growth hormone is produced in the pituitary gland and circulated around the body; in the liver, growth hormone triggers the JAK-STAT pathway leading, among other things, to IGF-1 secretion. IGF-1 binding to IGF-1 receptor, in turn, activates the RAS and AKT signaling cascades in peripheral tissues. IGF-1 is used as a clinical biomarker of growth hormone levels and pituitary function, as it has substantially more stable levels and a longer half-life than growth hormone itself. The growth hormone–IGF axis is a conserved regulator of longevity in diverse invertebrates and possibly mammals (van Heemst, 2010). In humans, both low and high levels of IGF-1 have been associated with increased mortality from cancer and cardiovascular disease (Burgers et al., 2011). We note that while IGF-1 rises sharply in puberty, our analyses are focused on middle-aged individuals. IGF-1 is a major effect locus for body size in dogs (Sutter et al., 2007), and IGF-1 levels are positively associated with height in UK Biobank (Figure 3—figure supplement 1).
 
 Previous GWAS for IGF-1, using up to 31,000 individuals, identified around half a dozen genome-wide significant loci (Kaplan et al., 2011; Teumer et al., 2016). The significant loci included IGF-1 itself and a signal close to its binding partner IGFBP3.
 
 In our GWAS of serum IGF-1 levels in 317,000 unrelated White British individuals, we found a total of 354 distinct association signals at genome-wide significance (Figure 3, further details in Supplementary file 2). Eight of the most significant signals are key parts of the IGF-1 pathway (Figure 4). The top hit is an intergenic SNP between IGFBP3 and another gene, TNS3 (Supplementary file 2; p=1e-837). IGFBP3 encodes the main transport protein for IGF-1 and IGF-2 in the bloodstream (Firth and Baxter, 2002). The next most significant hits are at the IGF-1 locus itself and at its paralog IGF-2. Two other lead hits are associated with the IGF transport complex IGFBP: IGFALS, which is an IGFBP cofactor that also binds IGF-1 in serum (Baxter et al., 1989), and PAPPA2, a protease which cleaves and negatively regulates IGFBPs (Overgaard et al., 2001). Three other lead hits lie elsewhere in the growth hormone–IGF axis: GHSR is a pituitary-expressed receptor for the signaling protein ghrelin which negatively regulates the growth hormone (GH) signaling pathway upstream of IGF-1 (Laron, 2001); and FOXO3 and RIN2 lie in downstream signaling pathways (Stitt et al., 2004).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-v1.jpg)
+
+**Figure 3.:** Manhattan plot showing the locations of major genes associated with IGF-1 levels in the IGF-1 pathway (yellow), transcription factor (blue), pleiotropic gene (red), or unknown function (black) genes sets.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** QQ-plot testing for epistasis plots all pairs of lead variants with $p<1⁢e-20$ for IGF-1 levels (Materials and methods).Inset is the corresponding plot for urate levels.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** All lead variants with $p<5⁢e-8$ passing quality control were tested for departures from an additive model (Materials and methods). Inset is the same analysis run on associations with serum urate levels.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Other than at the SLC2A9 locus, there are no genome-wide significant differences.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** 95% confidence intervals shown, and lines are drawn between homozygotes. Only chr1:15816768 CACAT>C, chr1:107563243 G>T, and chr4:22807237 A>G show substantial departure from additivity (revealing a recessive effect in all three cases).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig4-v1.jpg)
 
@@ -104,9 +134,9 @@ Lastly, given that most of the strongest hits lie in the same pathway, we were c
 
 In summary for IGF-1, we found 354 distinct associations that surpass genome-wide significance. The lead variants show strong enrichment across most components of the growth hormone-IGF axis, including the downstream AKT signaling arm, suggesting regulatory feedback. Among the strongest hits we also find involvement of one transcription factor (HNF1A) and two other genes of unclear functions (GCKR and KLF14) that have pleiotropic effects on multiple biomarkers, perhaps due to overall effects on liver and kidney development.
 
-## Testosterone
+### Testosterone
 
-Our third vignette describes the genetic basis of testosterone levels. Testosterone is a four carbon-ring molecule (C19⁢H28⁢O2) that functions as an anabolic steroid and is the primary male sex hormone. Testosterone is crucial for the development of male reproductive organs and secondary sex characteristics, while also having important functions in muscle mass and bone growth and density in both females and males (Tracz et al., 2006; Herbst and Bhasin, 2004). Circulating testosterone levels range from about 0.3 to 2 nmol/L in females and 8 to 33 nmol/L in males (Figure 5—figure supplement 1).
+Our third vignette describes the genetic basis of testosterone levels. Testosterone is a four carbon-ring molecule ($C_{19}⁢H_{28}⁢O_{2}$) that functions as an anabolic steroid and is the primary male sex hormone. Testosterone is crucial for the development of male reproductive organs and secondary sex characteristics, while also having important functions in muscle mass and bone growth and density in both females and males (Tracz et al., 2006; Herbst and Bhasin, 2004). Circulating testosterone levels range from about 0.3 to 2 nmol/L in females and 8 to 33 nmol/L in males (Figure 5—figure supplement 1).
 
 Testosterone is synthesized from cholesterol as one possible product of the steroid biosynthesis pathway. Synthesis occurs primarily in the testis in males, and in the ovary and adrenal glands in females. Testosterone production is stimulated by the hypothalmic-pituitary-gonadal (HPG) axis: gonadotropin-releasing hormone (GnRH) signals from the hypothalamus to the pituitary to cause production and secretion of luteinizing hormone (LH); LH in turn signals to the gonads to produce testosterone. The HPG axis is subject to a negative feedback loop as testosterone inhibits production of GnRH and LH by the hypothalamus and pituitary to ensure tight control of testosterone levels (Javorsky et al., 2017). Testosterone acts on target tissues via binding to the androgen receptor (AR) which in turn regulates downstream genes. Approximately half of the circulating testosterone (∼40% in males, ∼60% in females [Dunn et al., 1981]) is bound to sex hormone binding globulin (SHBG) and is generally considered non-bioavailable. Testosterone breakdown occurs primarily in the liver in both females and males.
 
@@ -114,17 +144,57 @@ Previous GWAS for serum testosterone levels studied up to 9000 males, together f
 
 Here, we performed testosterone GWAS in UKBB females (N = 142,778) and males (N = 146,339) separately. We discovered 79 and 127 independent genome-wide significant signals in females and males, respectively (Figure 5, further details in Supplementary file 3–4). We note that a recent paper reported larger numbers of independent genome-wide significant signals (245 and 231 in females and males, respectively); this was likely due to the inclusion of individuals with broader European ancestry, as well as a less stringent definition of independence used by Ruth et al (Ruth et al., 2020).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig5-v1.jpg)
+
+**Figure 5.:** (A) Females. (B) Males. Notice the low overlap of lead signals between females and males. FAM9A and FAM9B have been previously proposed as the genes underlying the KAL1 locus (Ohlsson et al., 2011).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Luteinizing hormone is from primary care records (Materials and methods), while Testosterone, SHBG, and CBAT are measured or derived from the baseline assessment center visit.
+
 In females, six of the most significant signals are close to genes involved in testosterone biosythesis (Figure 5A); together these results suggest that the steroid biosynthesis pathway is the primary controller of female testosterone levels. Among these, the top hit is at a locus containing three genes involved in hydroxylation of testosterone and estrone, CYP3A4, CYP3A5, and CYP3A7 (Kandel et al., 2017; Lee et al., 2003; Kuehl et al., 2001). Two other lead hits (MCM9 and FGF9) are involved in gonad development (Lutzmann et al., 2012; Wood-Trageser et al., 2014; Colvin et al., 2001).
 
 Strikingly, and in agreement with recent studies and in agreement with recent studies (Flynn et al., 2021; Ruth et al., 2020), the lead hits in males are largely non-overlapping with those from females. Overall, the male hits affect a larger number of distinct processes. Three of the most significant signals affect the steroid biosynthesis pathway (SRD5A2, UGT2B15, and AKR1C); three are involved in either upstream activation (NR0B2) (Vega et al., 2015) or downstream signaling (the androgen receptor, AR, and its co-chaperone FKBP4), respectively; and two have been implicated in the development of the GnRH-releasing function of the hypothalamus (KAL1) (Franco et al., 1991) or the gonads (NR2F2) (Qin et al., 2008). However, the largest category, including the most significant hit overall, is for a group of eight distinct variants previously shown to affect sex hormone binding globulin (SHBG) levels (Coviello et al., 2012). SHBG is one of the main binding partners for testosterone–we will discuss the significance of SHBG below.
 
-## Steroid biosynthesis
+### Steroid biosynthesis
 
 Given our observation of numerous lead hits near steroid hormone biosynthesis genes, we curated the female and male hits in the KEGG pathway (Figure 6). We observed that nearly all major steps of the pathway contained a gene near a genome-wide significant SNP in either females or males: 31 out of 61 genes are within 100 kb of a genome-wide significant signal in males, females or both. Indeed, the KEGG steroid hormone pathway shows strong enrichment for signals in both females and males (26-fold enrichment, p=2.5e-8 in females; 11-fold enrichment, p=1.2e-4 in males; Figure 6—figure supplement 1). While this pathway shows clear enrichment in both females and males, the major hits do not overlap. At two loci, AKR1C and PDE2A, female and male hits co-occur at the same locus, but are localized to different SNPs (Figure 7—figure supplement 1). More broadly, male hits and female hits tend to occur in different parts of the steroid hormone biosynthesis pathway: catalytic steps involved in progestagen and corticosteroid synthesis and metabolism only showed hits in females, while most male hits were concentrated within androgen synthesis, either upstream or downstream of testosterone itself (Figure 6).
 
-## Genetics of testosterone regulation in males versus females
+![Figure 6.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig6-v1.jpg)
+
+**Figure 6.:** The text color indicates genes within 100 kb of a genome-wide significant hit for females (orange), males (blue), or both females and males (black). Gray gene names or numbers indicates genes with no hits. Colored superscripts indicate multiple genes from the same locus (and hence may reflect a single signal). ‘S*’ indicates that an additional, sulfonated metabolite, along with the catalytic step and enzymes leading to it, is not shown. Pathway from KEGG; simplified based on a similar diagram in Wikipedia, 2012.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The enrichments for male hits in ‘Ascorbate/aldarate metabolism’ and ‘Pentose-glucuronate interconversion’ are almost entirely driven by the UGT genes, which are part of ‘Steroid hormone biosynthesis’.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig6-figsupp2-v1.jpg)
+
+### Genetics of testosterone regulation in males versus females
 
 One remarkable feature of the testosterone data is the lack of sharing of signals between females and males. This is true for genome-wide significant hits, for which there is no correlation in the effect sizes among lead SNPs (Figure 7A), as well as genome-wide, as the global genetic correlation between females and males is approximately zero (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-v1.jpg)
+
+**Figure 7.:** (A) When comparing lead SNPs (p<5e-8 ascertained in either females or males), the effects are nearly non-overlapping between females and males. Other traits show high correlations for the same analysis (see urate and SHBG in inset). (B) Schematic of HPG axis signaling within the hypothalamus and pituitary, with male GWAS hits highlighted. These variants are not significant in females. (C) Global genetic correlations, between indicated traits (estimated by LD Score regression). Thickness of line indicates strength of correlation, and significant (p<0.05) correlations are in bold. Note that LH genetic correlations are not sex-stratified due to small sample size in the UKBB primary care data (N = 10,255 individuals). (D) Proposed model in which the HPG axis and SHBG-mediated regulation of testosterone feedback loop is primarily active in males. Abbreviations for all panels: SHBG, sex hormone-binding globulin; CBAT, calculated bioavailable testosterone; LH, luteinizing hormone.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Both testosterone and calculated bioavailable testosterone (CBAT) show very little genetic correlation, in stark contrast to most other complex traits.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** ‘X’ indicates a non-significant genetic correlation.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Only points more significant in CBAT GWAS (i.e. positive values on y-axis) are shown. Genes with known roles in the HPG axis are annotated.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-figsupp4-v1.jpg)
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** For each GWAS indicated, 1000 sets of equally-sized random SNPs matched to GWAS SNPs for LD, allele frequency, and genic distance (see Materials and methods) were overlapped with the indicated core pathway with 100 kb windows. The.
 
 As we show below, two aspects of testosterone biology can explain these extreme sex differences in genetic architecture. First, the hypothalmic-pituitary-gonadal (HPG) axis plays a more significant role in regulating testosterone production in males than in females. This is due to sex differences in both endocrine signaling within the HPG axis and the tissue sources of testosterone production. Second, SHBG plays an important role in mediating the negative feedback portion of the HPG axis in males but not in females.
 
@@ -132,7 +202,7 @@ To assess the role of HPG signaling, we searched for testosterone GWAS hits invo
 
 We found hits for both male testosterone and male CBAT throughout the HPG signaling cascade (Figure 7B). These include genes involved in the direct response of the hypothalamus to testosterone (AR, FKBP4) (Smith et al., 2005); modulation of the signal by either autoregulation (TAC3, TACR3) (Skorupskaite et al., 2014) or additional extrinsic endocrine signals (LEPR) (Ahima et al., 1996; Barash et al., 1996); downstream propagation (KISS1) (Messager et al., 2005) and the development of GnRH-releasing neurons in the hypothalamus (KAL1, CHD7) (Cariboni et al., 2004; Layman et al., 2011); and LH-releasing gonadotropes in the pituitary (GREB1) (Li et al., 2017). All these hits showed more significant effects on CBAT as compared to total testosterone (Figure 7—figure supplement 3), suggesting that their primary role is in regulating bioavailable testosterone.
 
-Importantly, these HPG signaling hits do not show signals in females. To further investigate the different roles of the HPG axis in males versus females, we performed GWAS of LH levels using UKBB primary care data (N = 10,255 individuals). (Recall that LH produced by the pituitary signals to the gonads to promote sex hormone production.) If HPG signaling is important for testosterone production in males but not females, variants affecting LH levels should affect testosterone levels in males but not females. Consistent with this, we found significant positive genetic correlation between LH and male but not female testosterone (male rg=0.27, p=0.026; female rg=0.084, p=0.49; Figure 7C). These results were similar when considering measured testosterone and LH levels rather than genetic components thereof (Supplementary file 5).
+Importantly, these HPG signaling hits do not show signals in females. To further investigate the different roles of the HPG axis in males versus females, we performed GWAS of LH levels using UKBB primary care data (N = 10,255 individuals). (Recall that LH produced by the pituitary signals to the gonads to promote sex hormone production.) If HPG signaling is important for testosterone production in males but not females, variants affecting LH levels should affect testosterone levels in males but not females. Consistent with this, we found significant positive genetic correlation between LH and male but not female testosterone (male $r_{g}=0.27$, $p=0.026$; female $r_{g}=0.084$, $p=0.49$; Figure 7C). These results were similar when considering measured testosterone and LH levels rather than genetic components thereof (Supplementary file 5).
 
 Two known features of the HPG axis can explain the lack of association in females. First, the adrenal gland, which is not subject to control by HPG signaling, produces ∼50% of serum testosterone in females. Consistent with this idea, GWAS hits for female testosterone cluster in steroid hormone pathways involving progestagen and corticosteroid synthesis (Figure 6), processes known to occur largely in the adrenal. Female testosterone hits are also specifically enriched for high expression in the adrenal gland relative to male testosterone hits (Figure 7—figure supplement 4).
 
@@ -144,21 +214,81 @@ Combining these observations, we propose that increased SHBG leads to decreased 
 
 In summary, we find that many of the top signals for female testosterone are in the steroid biosynthesis pathway, and a smaller number relate to gonadal development. In contrast, the lead hits for male testosterone reflect a larger number of processes, including especially SHBG levels and signaling components of the HPG axis, in addition to biosynthesis and gonadal development. These differences in the genetic architecture of female and male testosterone are so extreme that these can be considered unrelated traits from a genetic point of view.
 
-## Polygenic architecture of the three traits
+### Polygenic architecture of the three traits
 
 We have shown that the lead signals for all three traits are highly concentrated near core genes and core pathways. As an additional confirmation of these enrichments, we found that (i) random sets of SNPs matched to urate, IGF-1, or testosterone GWAS hits showed far lower overlap with the corresponding core pathways (Figure 7—figure supplement 5), and (ii) an alternative approach (de Leeuw et al., 2015) showed highly similar gene-set enrichments to those we observed (Supplementary file 7). Given this observation, we wondered whether these traits might be genetically simpler than typical complex diseases–most of which are highly polygenic, and for which the lead pathways contribute relatively little heritability (Boyle et al., 2017; Shi et al., 2016).
 
 To address this, we first estimated how much of the SNP-based heritability is explained by variation at genes in enriched pathways (see Supplementary files 8–10 for pathways and genes used). We used HESS to estimate the SNP-based heritability in each of 1701 approximately-independent LD blocks spanning the genome (Shi et al., 2016; Berisa and Pickrell, 2016). Plotting the cumulative distribution of SNP-based heritability across the genome revealed that, across all four traits, most of the genetic variance is distributed nearly uniformly across the genome (Figure 8A).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-v1.jpg)
+
+**Figure 8.:** (A) Cumulative distribution of SNP-based heritability for each trait across the genome (estimated by HESS). The locations of the most significant genes are indicated. Insets show the fractions of SNP-based heritability explained by the most important genes or pathways for each trait. (B) Estimated fractions of SNPs with non-null associations, in bins of LD Score (estimated by ashR). Each point shows the ashR estimate in a bin representing 0.1% of all SNPs. The inset text indicates the estimated fraction of variants with a non-null marginal effect, that is, the fraction of variants that are in LD with a causal variant. (C) Simulated fits to the data from (B). X-axis truncated for visualization as higher LD Score bins are noisier. Simulations assume that $\pi_{1}$ of SNPs have causal effects drawn from a normal distribution centered at zero (see Materials and methods). The simulations include a degree of spurious inflation of the test statistic based on the LD Score intercept. Other plausible assumptions, including clumpiness of causal variants, or a fatter-tailed effect distribution would increase the estimated fractions of causal sites above the numbers shown here.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Variants are then filtered to those with minor allele frequency greater than 5%, and ashR is run on the beta and standard error to estimate the proportion of non-null associations. ‘‘UrateNoChr4’’ is the Urate GWAS with chromosome 4 excluded, where the two largest effect loci, SLC2A9 and ABCG2, are both located. Traits with the suffix ‘Half’ are 50% downsamplings of the White British cohort to approximate the sample sizes of the sex-stratified testosterone GWAS. ‘Randomized’ are random associations generated by evaluating shuffled versions of the Urate (n = 3 shuffles) and IGF-1 (n = 3 shuffles) phenotypes and represent estimates we might expect under the null distribution of no associations, where we observe some noise but consistently observe estimates well below that of un-shuffled traits. These global estimates represent the proportion of all variants in a given trait that are linked to causal sites.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Height, height without principal components regressed out of the GWAS, Urate with chromosome four excluded (where both SLC2A9 and ABCG2 are located, reducing SNP-based heritability to ≈20%), and random 50% downsamplings of height, IGF-1, and urate (including chromosome 4) are shown. See Figure 8—figure supplement 3 for additional sex hormone traits. Despite matching simulations for sample size, slight reductions in causal variant count are still observed in downsampled traits, suggesting that power is still possibly limiting, of particular relevance to the sex-stratified testosterone GWAS. As expected, excluding principal components from the GWAS dramatically increases the intercept. * 1.3 was the highest tested intercept and is still too low, but no more runs were completed as the curve is clearly shaped very differently than simulation runs regardless of intercept. We recommend performing GWAS while regressing out principal components to avoid difficult to interpret results. See Figure 8—figure supplement 3 for additional fits to sex hormone related traits.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** CBAT traits are similar to their testosterone counterparts and SHBG is estimated to have slightly more causal variants (≈0.2%).
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** For each study sample size (Full, full UK Biobank White British; Half, 50% downsample [and sex-stratified]) and SNP-based heritability (20% or 30%), simulations run with different causal variant proportions (n = 3 reps except infinitesimal, n = 5) were used as a background to estimate the causal site proportions for each complex trait. Complex trait non-linear least squares λ estimates are shown as horizontal lines.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** Rather than drawing SNPs uniformly at random from those with MAF >1% (Materials and methods), instead each megabase window was assigned a distinct probability ρ of SNPs being causal within that megabase window. For a given causal fraction c, ρ was drawn at random from $B⁢e⁢t⁢a⁢(\alpha,\alpha/c)$. Thus, the mean causal fraction across all megabase windows in the genome is still c, and this fraction is concentrated more in single windows under decreasing values of α. The standard results shown in main text correspond to $\alpha=∞$. As we decrease α, the estimates consistently increases, regardless of the same size or LD Score axis threshold. However, the results consistently stay above the randomized version of the trait, suggesting that the estimates remain non-zero even for very concentrated SNP-based heritability.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp6-v1.jpg)
+
+**Figure 8—figure supplement 6.:** A model where every variant in the genome is drawn from a one-degree-of-freedom T-distribution is shown in black across the different heritabilities and samples sizes. Because some small number of variants have very large effects in the T-distribution, and the total SNP-based heritability is normalized to this additional variance, the estimate is downward biased and suggests that rather than 100% of variants being causal, instead less than 0.01% are causal. In practice, most effect sizes are not as overdispersed as a T-distribution, although some traits (e.g. Urate) have a few variants with very large effect.
+
+![Figure 8—figure supplement 7.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp7-v1.jpg)
+
+**Figure 8—figure supplement 7.:** Simulated traits were generated with every variant with MAF >1% being causal (with effect size drawn from N(0,1) independently) and a GWAS was performed with $h^{2}=0.3$. Then, for each MAF bin, 100,000 variants were sampled at random, and ashR was run to estimate the proportion of causal variants (or variants in LD with a causal variant) within each bin. There is a strong relationship with minor allele frequency, suggesting that power might still be a consideration even at UK Biobank sample sizes. See also Figure 8—figure supplement 8.
+
+![Figure 8—figure supplement 8.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp8-v1.jpg)
+
+**Figure 8—figure supplement 8.:** Three choices are considered – MAF >1%, MAF >5%, and MAF between 1% and 5%. There is some attenuation of the estimates in the MAF between 1% and 5% analysis, and the infinitesimal estimates are below that of the models with fewer causal sites, supporting the notion that power is still limiting.
+
+![Figure 8—figure supplement 9.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp9-v1.jpg)
+
+**Figure 8—figure supplement 9.:** Within each causal site proportion (faceted), inflation added by systematically reducing standard errors was applied with ratios 0.9 through 1.3. For each, the parametric λ fit was calculated using non-linear least squares (Materials and methods). Across this range of inflation levels, there was no large or consistent change in λ estimates, suggesting the λ fit is relatively robust to population structure.
+
+![Figure 8—figure supplement 10.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp10-v1.jpg)
+
+**Figure 8—figure supplement 10.:** 50% downsampled height is used as an example. When changing the inflation, dramatic differences in the best fitting curve are possible in the simulation matching approach, ranging from greater than 3% at an inflation of 0.9 to around 0.2% for an inflation of 1.3. This is in part exacerbated by the reduced difference between the simulations with different causal percentages at high inflation levels. The best intercept is chosen on the basis of the closest fit at an LD Score of 0 (selected in black box, intercept = 1.1). Note that sample size can change this intercept for the same trait, as shown by the full sample height results (where best intercept = 1.15). However, the resulting estimate is the very similar conditional on intercept.
+
+![Figure 8—figure supplement 11.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp11-v1.jpg)
+
+**Figure 8—figure supplement 11.:** For female testosterone (left) and IGF-1 (right), the correct specification that corresponds to the trait is selected in black. All other estimates are given as well, revealing that the choice of SNP-based heritability and sample size does have a moderate effect on the resulting estimates. As such, we recommend matching the sample size and SNP-based heritability of the simulation GWAS as closely as possible to the traits under study.
+
+![Figure 8—figure supplement 12.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp12-v1.jpg)
+
+**Figure 8—figure supplement 12.:** As noted in Figure 8—figure supplement 2, not including principal components can meaningfully effect estimates and produce upward bias, so we recommend adjusting for principal components (or using a suitable mixed model). In addition, we evaluated testosterone traits using two covariate sets: the complete set and a minimal age, age2, genotyping array, and principal components 1–20 that were used for the CBAT GWAS (due to the derivation from albumin, SHBG, and testosterone, and the difference in batch between these, Materials and methods). For male testosterone the effect of different covariates was negligible, while for female testosterone, the estimate was slightly lower with the minimal covariates. We recommend optimizing covariates to the sample and traits under study to maximize the interpretability of the causal variant estimation.
+
+![Figure 8—figure supplement 13.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp13-v1.jpg)
+
+**Figure 8—figure supplement 13.:** For each binning option, urate, randomized urate, and urate 50% downsampled were run. 1000 bins, 5000 bins, and 200 bins were compared. Lower intercepts and smaller standard errors were observed with higher bin count. We recommend that as many bins as is practicable are used for these analyses.
+
+![Figure 8—figure supplement 14.](https://cdn.elifesciences.org/articles/58615/elife-58615-fig8-figsupp14-v1.jpg)
+
+**Figure 8—figure supplement 14.:** Points indicate means, error bars indicate two standard deviations.
+
 In aggregate, core genes contribute modest fractions of SNP-based heritability, with the exception of the SLC2A9 locus, which HESS estimates is responsible for 20% of the SNP-based heritability for urate. Aside from this outlier gene, the core pathways contribute between approximately 1–11 percent of the SNP-based heritability.
 
-## Numbers of causal variants
+### Numbers of causal variants
 
 We next sought to estimate how many causal variants are likely to contribute to each trait (Zhang et al., 2018; Frei et al., 2019; O'Connor et al., 2019). This is fundamentally a challenging problem, as most causal loci have effect sizes too small to be confidently detected. As a starting point we used ashR, which is an empirical Bayes method that estimates the fraction of non-null test statistics in large-scale experiments (Stephens, 2017). As described previously, we stratified SNPs from across the genome into bins of similar LD Score; we then used ashR to estimate the fraction of non-null associations within each bin (Boyle et al., 2017). (For this analysis, we used the 2.8M SNPs with MAF >5%.) We interpret this procedure as estimating the fraction of all SNPs in a bin that are in LD with a causal variant.
 
 For each trait, the fraction of non-null tests increases from low levels in the lowest LD Score bins to above 50% in the highest LD Score bins. Overall we estimate that around 45–50% of SNPs are linked to a non-zero effect variant for urate, IGF-1 and male testosterone, and 30% for female testosterone (Figure 8B). These estimates were robust to halving the sample size of the input GWAS, and were substantially higher than for randomized traits (simulated by permuting the IGF-1 and urate phenotypes) (Figure 8—figure supplement 1).
 
-We next conducted simulations to understand how these observations relate to the numbers of causal variants (Figure 8C). To make this identifiable, we assume that a fraction 1-π1 of all SNPs have an effect size that is exactly zero, while the remainer (π1) draw their effect size from a single normal distribution with mean zero. Our goal is to estimate π1. We simulated phenotypes for the UK Biobank individuals assuming a range of values of π1 (Materials and methods). Causal variants were chosen uniformly at random from among the 4.4M SNPs with MAF >1%; effect sizes were simulated from a normal distribution with mean zero, and variances set to produce the observed SNP heritabilities (0.3 for urate, IGF-1, and male testosterone, and 0.2 for female testosterone). We also allowed for a degree of over-inflation of the test statistics (i.e. allowing for an inflation factor as in Genomic Control [Devlin and Roeder, 1999])–this was important for fitting the positive ashR estimates at low LD Scores. We then matched the simulations to the observed ashR results to approximate the numbers of causal variants.
+We next conducted simulations to understand how these observations relate to the numbers of causal variants (Figure 8C). To make this identifiable, we assume that a fraction $1-\pi_{1}$ of all SNPs have an effect size that is exactly zero, while the remainer ($\pi_{1}$) draw their effect size from a single normal distribution with mean zero. Our goal is to estimate $\pi_{1}$. We simulated phenotypes for the UK Biobank individuals assuming a range of values of $\pi_{1}$ (Materials and methods). Causal variants were chosen uniformly at random from among the 4.4M SNPs with MAF >1%; effect sizes were simulated from a normal distribution with mean zero, and variances set to produce the observed SNP heritabilities (0.3 for urate, IGF-1, and male testosterone, and 0.2 for female testosterone). We also allowed for a degree of over-inflation of the test statistics (i.e. allowing for an inflation factor as in Genomic Control [Devlin and Roeder, 1999])–this was important for fitting the positive ashR estimates at low LD Scores. We then matched the simulations to the observed ashR results to approximate the numbers of causal variants.
 
 Overall, our estimates range from 0.1% of all 4.4M variants with MAF >1% in female and male testosterone (∼4000 causal sites) to 0.3% of variants for urate (∼12,000 causal sites). These results imply that all four traits are highly polygenic, though considerably less so than height (for which we estimate 2%, or 80,000 causal sites in UK Biobank; Figure 8—figure supplements 2 and 4).
 
@@ -176,7 +306,7 @@ In this study, we examined the genetic basis of three molecular traits measured 
 
 Our main results are as follows.
 
-## Understanding the architecture of complex traits
+### Understanding the architecture of complex traits
 
 One of our motivations in this study was to use these three traits as models to extend our understanding of the genetic architecture and types of genes underlying complex traits.
 
@@ -196,17 +326,17 @@ In summary, we have shown that for three molecular traits, the lead hits illumin
 
 ## Materials and methods
 
-## Population definition
+### Population definition
 
 We defined our GWAS population as a subset of the UK Biobank (Bycroft et al., 2018). We use ∼337,000 unrelated White British individuals as our cohort, filtering based on sample QC characteristics as previously described (Sinnott-Armstrong et al., 2021):
 
-## Trait definition
+### Trait definition
 
 We perform trait normalization and quality control similarly to previous work (Sinnott-Armstrong et al., 2021). Trait measurements are first log-transformed, then adjusted for genotype principal components, age indicator variables, sex, 5 year age (‘approximate age’) by sex interactions, self-identified ethnicity, self-identified ethnicity by sex interactions, fasting time, estimated sample dilution factor, assessment center, genotyping batch, 20-tile of time of sampling, month of assessment, and day of assay.
 
 Then, individuals were subset to the GWAS population (defined above), separated by sex for testosterone measurements. The final sample sizes were 318,526 for urate, 317,114 for IGF-1, 142,778 for female testosterone, and 146,339 for male testosterone.
 
-## GWAS
+### GWAS
 
 We performed GWAS in plink2 alpha using the following command (data loading arguments removed for brevity):plink2 --glm cols=chrom,pos,ref,alt,alt1,ax,a1count,totallele,a1freq, 
     machr2,firth,test,nobs,beta,se,ci,tz,p omit-ref 
@@ -217,7 +347,7 @@ We performed GWAS in plink2 alpha using the following command (data loading argu
 
 GWAS were then filtered to observed allele frequency greater than 0.001 and INFO score greater than 0.3 for further analyses.
 
-## GWAS for paired difference epistasis
+### GWAS for paired difference epistasis
 
 A GWAS was performed in two subsets of individuals – those with two C alleles at rs16890979 (N = 295209) and those with two T alleles at rs16890979 (N = 30184). The following command was used:plink2 --glm cols=chrom,pos,ref,alt,a1freq,firth,test, 
       nobs,beta,se,ci,tz,p hide-covar 
@@ -228,7 +358,7 @@ With covariates including adjusting for age, age squared, genotyping array, and 
 
 After GWAS completed, SNPs valid in both CC and TT individuals were compared for betas using a paired difference Z test. The test statistic was then converted to a p-value using a standard normal distribution.
 
-## LH trait definition
+### LH trait definition
 
 LH levels were extracted from UK Biobank primary care data using code XM0lv. Separately, LH levels extracted using code XE25I were also included for phenotypic correlation analyses. The median level across observations and log number of observations were recorded for covariate correction below. Individuals with median observations more than 10 times the interquartile range away from the median of medians were discarded. Once these individuals were removed, individuals with observations more than four standard deviations from the resulting mean were also discarded.
 
@@ -242,7 +372,7 @@ For the secondary LH code XE25I, the distribution of raw, cleaned, and covariate
 
 For GWAS, the cleaned phenotypes were log-transformed and adjustments were used as covariates.
 
-## LH GWAS
+### LH GWAS
 
 Age, sex, genotyping array, 10 PCs, log number of observations in primary care, and which primary care code produced a given observation were used as covariates.
 
@@ -262,18 +392,18 @@ On genotyped SNPs and imputed variants with a minor allele frequency greater tha
 
 GWAS were then filtered to MAF >1% and INFO >0.7. These higher threshold were chosen to reflect the much smaller sample size in the GWAS.
 
-## GWAS hit processing
+### GWAS hit processing
 
 To evaluate GWAS hits, we took the list of SNPs in the GWAS and ran the following command using plink1.9:plink --bfile [] --clump [GWAS input file] --clump-p1 1e-4 --clump-p2 1e-4 
   --clump-r2 0.01 --clump-kb 10000 --clump-field P --clump-snp-field ID
 
 We then took the resulting independent GWAS hits and examined them for overlap with genes. In addition, for defining the set of SNPs to use for enrichment analyses, we greedily merged SNPs located within 0.1 cM of each other and took the SNP with the minimum p-value across all merged lead SNPs. In this way, we avoided potential overlapping variants that were driven by the same, extremely large, gene effects.
 
-## Gene proximity
+### Gene proximity
 
 We annotated all genes in any Biocarta, GO, KEGG, or Reactome MSigDB pathway as our full list of putative genes (in order to avoid pseudogenes and genes of unknown function), and included the genes within each corresponding pathway as our target set. This resulted in 17,847 genes. We extended genes by 100 kb (truncating at the chromosome ends) and used the corresponding regions, overlapped with SNP positions, to define SNPs within range of a given gene. Gene positions were defined based on Ensembl 87 gene annotations on the GRCh37 genome build.
 
-## Pathway enrichment of GWAS hits
+### Pathway enrichment of GWAS hits
 
 GWAS hit pathway enrichment was evaluated using Fisher’s exact test. For each pathway for a given trait (Supplementary files 8–10), genes were divided into those within the pathway and those outside; and separately into genes within 100 kb of a GWAS hit and not. A 2 × 2 Fisher’s exact test was used to estimate the total enrichment for GWAS hits around genes of interest.
 
@@ -283,32 +413,36 @@ To quantify pathway enrichment expected from random sets of SNPs not associated 
 
 To quantify pathway enrichments using an alternative approach, we used MAGMA (de Leeuw et al., 2015) with a 10 kb gene window and with the default competitive mode. We tested enrichment for all gene sets in Biocarta, GO, KEGG, or Reactome MSigDB, as well as additional curated sets of core genes for the three traits.
 
-## Partitioned heritability
+### Partitioned heritability
 
 Partitioned SNP-based heritability estimates were generated using LD Score regression (Finucane et al., 2015). The BaselineLD version 2.2 was used as a covariate, and the 10 tissue type LD Score annotations were used as previously described (Finucane et al., 2015) in a multiple regression setup with all cell type annotations and the baseline annotations.
 
-## Pathway heritability estimation
+### Pathway heritability estimation
 
 We evaluated SNP-based heritability in pathways using two distinct strategies. Initially, we used partitioned LD Score regression (Finucane et al., 2015) but found that the estimates were somewhat noisy, likely because most pathways contain few genes. As such, we used alternative fixed-effect models for which there is increased power.
 
 Next, we calculated the SNP-based heritability in a set of 1701 approximately independent genomic blocks spanning the genome (Berisa and Pickrell, 2016) using HESS (Shi et al., 2016). Next, we overlapped blocks with genes in each pathway. The SNP-based heritability estimates for all blocks containing at least one SNP within 100 kb of a pathway gene were summed to estimate the SNP-based heritability in a given pathway. Pathway definitions were assembled based on a combination of KEGG pathways, Gene Ontology categories, and manual curation based on relevant reviews.
 
-## Causal SNP simulations
+### Causal SNP simulations
 
-All imputed variants with MAF >1% in the White British (4.1M) were used as a starting set of putative causal SNPs. Individual causal variants were chosen at random, with a fraction P of them marked as causal. Each causal variant was assigned an effect size:β∼N(0,1)
+All imputed variants with MAF >1% in the White British (4.1M) were used as a starting set of putative causal SNPs. Individual causal variants were chosen at random, with a fraction P of them marked as causal. Each causal variant was assigned an effect size:
 
-For our simulations, we used P∈{0.0001,0.001,0.003,0.01,0.03}.
+$$
+\beta∼N(0,1)
+$$
+
+For our simulations, we used $P\in{0.0001,0.001,0.003,0.01,0.03}$.
 
 Next, GCTA was used to simulate phenotypes based on the marked causal variants, using the following command:gcta64 --simu-qt --simu-causal-loci CausalVariantEffects 
   --simu-hsq 0.3 --bfile UKBBGenotypes"
 
-Producing predicted phenotypes with SNP-based heritability h2=0.3. GWAS were run within both the full set of 337,000 unrelated White British individuals and a randomly downsampled 50%, to approximate the sex-specific GWAS used for Testosterone, across the set of putative causal SNPs. GWAS for the traits, as well as a random permuting across individuals of urate and IGF-1 to act as negative controls, were repeated on this subset of variants as well. In this way, we have a directly comparable set of simulated traits to use, along with the corresponding true traits and negative controls, to ascertain causal sites in the genome.
+Producing predicted phenotypes with SNP-based heritability $h^{2}=0.3$. GWAS were run within both the full set of 337,000 unrelated White British individuals and a randomly downsampled 50%, to approximate the sex-specific GWAS used for Testosterone, across the set of putative causal SNPs. GWAS for the traits, as well as a random permuting across individuals of urate and IGF-1 to act as negative controls, were repeated on this subset of variants as well. In this way, we have a directly comparable set of simulated traits to use, along with the corresponding true traits and negative controls, to ascertain causal sites in the genome.
 
-For the infinitesimal simulations, instead plink was used to generate polygenic scores on the basis of the random assignment of effect sizes to SNPs, and these were then normalized with N⁢(0,σ2) environmental noise such that h2 was the given target SNP-based heritability.
+For the infinitesimal simulations, instead plink was used to generate polygenic scores on the basis of the random assignment of effect sizes to SNPs, and these were then normalized with $N⁢(0,\sigma^{2})$ environmental noise such that $h^{2}$ was the given target SNP-based heritability.
 
-## Causal SNP count fitting procedure using ashr
+### Causal SNP count fitting procedure using ashr
 
-LD Scores for the 489 unrelated European-ancestry individuals in 1000 Genomes Phase III (Bulik-Sullivan et al., 2015) were merged with the GWAS results along with LD Scores derived from unrelated European ancestry participants with whole genome sequencing in TwinsUK. TwinsUK LD Scores are used for all analyses. Then variants were filtered by minor allele frequency to either greater than 1%, greater than 5%, or between 1% and 5%. Remaining variants were divided into 1000 equal sized bins, along with 5000 and 200 bin sensitivity tests. Within each bin, the ashR estimates of causal variants, as well as the mean χ2 statistics, were calculated using the following line of R:data %>% filter(pmin(MAF, 1-MAF) > min.af, pmin(MAF, 1-MAF) < max.af) %>% 
+LD Scores for the 489 unrelated European-ancestry individuals in 1000 Genomes Phase III (Bulik-Sullivan et al., 2015) were merged with the GWAS results along with LD Scores derived from unrelated European ancestry participants with whole genome sequencing in TwinsUK. TwinsUK LD Scores are used for all analyses. Then variants were filtered by minor allele frequency to either greater than 1%, greater than 5%, or between 1% and 5%. Remaining variants were divided into 1000 equal sized bins, along with 5000 and 200 bin sensitivity tests. Within each bin, the ashR estimates of causal variants, as well as the mean $χ^{2}$ statistics, were calculated using the following line of R:data %>% filter(pmin(MAF, 1-MAF) > min.af, pmin(MAF, 1-MAF) < max.af) %>% 
     mutate(ldBin = ntile(ldscore, bins)) %>% group_by(ldBin) %>% 
     summarize(mean.ld = mean(ldscore), se.ld=sd(ldscore)/sqrt(n()), 
         mean.chisq = mean(T_STAT**2, na.rm=T), 
@@ -316,70 +450,76 @@ LD Scores for the 489 unrelated European-ancestry individuals in 1000 Genomes Ph
         mean.maf=mean(MAF), 
         prop.null = ash(BETA, SE)$fitted_g$pi[1], n=n())
 
-Thus, the within-bin χ2 and proportion of null associations π0 were each ascertained. Next, these fits were plotted as a function of mean.ld to estimate the slope with respect to LD Score, and true traits were compared to simulated traits, described below.
+Thus, the within-bin $χ^{2}$ and proportion of null associations $\pi_{0}$ were each ascertained. Next, these fits were plotted as a function of mean.ld to estimate the slope with respect to LD Score, and true traits were compared to simulated traits, described below.
 
-We use two fixed simulated heritabilities, h2=0.3 and h2=0.2, to approximately capture the set of heritabilites observed among our biomarker traits. Traits with true SNP-based heritability among variants with MAF >1% different than their closest simulation might have causal site count over-estimated (for ht⁢r⁢u⁢e2>hs⁢i⁢m2) or under-estimated (for ht⁢r⁢u⁢e2<hs⁢i⁢m2). In addition, most traits in reality have more than zero SNPs with MAF <1% contributing to the SNP-based heritability. Thus, we take these estimates as approximate and conservative.
+We use two fixed simulated heritabilities, $h^{2}=0.3$ and $h^{2}=0.2$, to approximately capture the set of heritabilites observed among our biomarker traits. Traits with true SNP-based heritability among variants with MAF >1% different than their closest simulation might have causal site count over-estimated (for $h_{t⁢r⁢u⁢e}^{2}>h_{s⁢i⁢m}^{2}$) or under-estimated (for $h_{t⁢r⁢u⁢e}^{2}<h_{s⁢i⁢m}^{2}$). In addition, most traits in reality have more than zero SNPs with MAF <1% contributing to the SNP-based heritability. Thus, we take these estimates as approximate and conservative.
 
-## Effect of population structure on causal SNP estimation
+### Effect of population structure on causal SNP estimation
 
 We expect that population structure might lead to test statistic inflation for causal variant and genetic correlation estimates (Berg et al., 2019). To evaluate this, we performed GWAS for height using no principal components, and evaluated the causal variant count (Figure 8—figure supplement 12).
 
 This suggests that the test statistic inflation is an important parameter in the estimation of causal variants, as is intuitive. As such, we generated estimated SNP counts for five different inflation values (0.9, 1, 1.05, 1.1, and 1.2) and plotted all of them, under the assumption that the best fitting intercept would have the most calibrated estimates. Plots are replicated across these intercepts in the sensitivity analyses shown, as in Figure 8—figure supplement 9.
 
-## Evaluating the calibration of causal SNP proportion estimation
+### Evaluating the calibration of causal SNP proportion estimation
 
 To evaluate calibration of causal SNP estimates, in addition to using simulated traits as the controls, we also generated a randomized control by shuffling the SHBG phenotype values across individuals (Figure 8—figure supplement 3). We performed this analysis using urate and IGF-1 to similar effect (data not shown).
 
 This suggests that the causal variant counts are well calibrated for the randomized traits, even though they lack structure with respect to covariates.
 
-## Effect of sample size on causal SNP estimation
+### Effect of sample size on causal SNP estimation
 
-It is important to note that these estimates are still likely power limited even in a study as large as UK Biobank. We make this note on the basis of observed π0 for M⁢A⁢F>5% variants being uniformly higher than 1%<M⁢A⁢F<5% variants in both simulations and observed data for high causal variant counts (Figure 8—figure supplement 8).
+It is important to note that these estimates are still likely power limited even in a study as large as UK Biobank. We make this note on the basis of observed $\pi_{0}$ for $M⁢A⁢F>5%$ variants being uniformly higher than $1%<M⁢A⁢F<5%$ variants in both simulations and observed data for high causal variant counts (Figure 8—figure supplement 8).
 
 As such, we anticipate that future studies with larger samples will yield increased, but asymptotic, estimates of causal SNP percentages among common variants, and treat our estimates as conservative bounds.
 
 Particularly for height (Figure 8—figure supplement 2), while the uncalibrated estimates with the full sample are substantially higher than the half sample, the calibrated estimates are nearly identical. This suggests that trait polygenicity might be an important factor in determining the power of this method at different sample sizes, as height is known to be highly polygenic (Shi et al., 2016).
 
-## Effect of binned variant count on causal SNP estimation
+### Effect of binned variant count on causal SNP estimation
 
 It is possible that the ashR algorithm itself, and not the GWAS, are the power limited step of the analysis. To evaluate this, we ran ashR on 200, 1000, and 5000 equally sized bins along the LD Score axis. We found that increasing bin counts both decrease the standard errors and the intercepts (Figure 8—figure supplement 13) and recommend as many bins as is practical.
 
-## Effect of minor allele frequency on causal SNP estimation
+### Effect of minor allele frequency on causal SNP estimation
 
 Because we only simulated causal effects among SNPs with MAF >1%, we were concerned that variant effect bins might be biased by the minor allele frequency cutoff. We previously ran with higher MAF cutoffs (25% and 40%) as calibrations on an earlier version of the model, and observed uniformly larger causal SNP percentages. We saw relative robustness to lower thresholds, but overall the fraction of causal variants was lower in the lower MAF bins (Figure 8—figure supplement 7).
 
-## Effect of concentrated SNPs on causal SNP estimation
+### Effect of concentrated SNPs on causal SNP estimation
 
-For each variant, the megabase bin it is contained within was used as a proxy for SNPs in local LD. A within-megabase causal SNP percentage parameter:P∼Beta⁢(α,α/ρ)was chosen such that ρ was the overall expected percentage of causal sites in the genome across a concentration parameter α. For our simulations, we used ρ∈{0.0001,0.0003,0.001,0.003,0.01,0.03,0.05} and α∈{10,3,0.3} to represent different degrees of ‘clumpiness’ along the genome.
+For each variant, the megabase bin it is contained within was used as a proxy for SNPs in local LD. A within-megabase causal SNP percentage parameter:
 
-## Genetic correlation between sex-stratified testosterone-related traits
+$$
+P∼Beta⁢(\alpha,\alpha/ρ)
+$$
+
+was chosen such that ρ was the overall expected percentage of causal sites in the genome across a concentration parameter α. For our simulations, we used $ρ\in{0.0001,0.0003,0.001,0.003,0.01,0.03,0.05}$ and $\alpha\in{10,3,0.3}$ to represent different degrees of ‘clumpiness’ along the genome.
+
+### Genetic correlation between sex-stratified testosterone-related traits
 
 LD Score regression [Bulik-Sullivan2015-tx] was used to generate genetic correlation estimates. The following command was used:ldsc.py --rg <traits> --ref-ld-chr eur_ref_ld_chr 
   --w-ld-chr eur_w_ld_chr
 
 where eur_*_ld_chr were downloaded from https://data.broadinstitute.org/alkesgroup/LDSCORE/.
 
-## Residual height comparison with IGF-1
+### Residual height comparison with IGF-1
 
 Height (adjusted for age and sex) and residualized log IGF-1 levels for unrelated White British individuals were plotted against each other, and visualized using geom_smooth.
 
-## Pathway diagrams
+### Pathway diagrams
 
 Diagrams were drawn using Adobe Illustrator and a Wacom graphics tablet.
 
-## PheWAS analysis
+### PheWAS analysis
 
 PheWAS were performed using the Oxford Brain Imaging Genetics (BIG) Server (Elliott et al., 2018).
 
-## Non-additivity tests
+### Non-additivity tests
 
 Residualized trait values were used as the outcome in all models. An ANOVA was performed between a model measuring the effect of genotype dosages versus a model with both genotype dosage effects and indicators for each rounded genotype. In this way, a large number of possible non-additive models are approximated with a single model. Analyses were performed in R 3.4 using lm.
 
-## Epistasis tests
+### Epistasis tests
 
 We estimated that for hits with p<1e-20 we would have power to detect interaction components that are at least 10% the magnitude of a main effect (see Materials and methods). Thus, we tested all pairwise interactions among the independent lead SNPs with p<1e-20. Residualized trait values were used as the outcome in all models. An ANOVA was performed between a model measuring the effect of indicators for each rounded genotype (4 degrees of freedom) versus the interaction between the two sets of indicators (8 degrees of freedom). In this way, a large number of possible non-additive models are approximated with a test. Alternative models with dominant-only effect interactions with fewer degrees of freedom were also tested with similar results. Analyses were performed in R 3.4 using lm.
 
-## LD score regression for partitioning SNP-based heritability
+### LD score regression for partitioning SNP-based heritability
 
 We used partitioned LD Score regression (Finucane et al., 2015) to estimate the enrichment of individual tissues. We used the ldsc package and the updated BaselineLD v2.2 annotations with the following command:ldsc.py --h2 <munged urate summary statistics> \ 
     --ref-ld-chr baselineLD.,<cell type annotations> \ 

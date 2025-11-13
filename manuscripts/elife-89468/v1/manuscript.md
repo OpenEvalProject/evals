@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
-2. https://ror.org/05vghhr25 Department of Computing, University of Turku Turku Finland
+1. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Department of Computing, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
 
 † Corresponding author
 

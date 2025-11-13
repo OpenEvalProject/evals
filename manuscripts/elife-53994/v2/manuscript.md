@@ -23,7 +23,7 @@
 
 ## Abstract
 
-How the brain controls the need and acquisition of recovery sleep after prolonged wakefulness is an important issue in sleep research. The monoamines serotonin and dopamine are key regulators of sleep in mammals and in Drosophila . We found that the enzyme arylalkylamine N-acetyltransferase 1 (AANAT1) is expressed by Drosophila astrocytes and specific subsets of neurons in the adult brain. AANAT1 acetylates monoamines and inactivates them, and we found that AANAT1 limited the accumulation of serotonin and dopamine in the brain upon sleep deprivation (SD). Loss of AANAT1 from astrocytes, but not from neurons, caused flies to increase their daytime recovery sleep following overnight SD. Together, these findings demonstrate a crucial role for AANAT1 and astrocytes in the regulation of monoamine bioavailability and homeostatic sleep.
+How the brain controls the need and acquisition of recovery sleep after prolonged wakefulness is an important issue in sleep research. The monoamines serotonin and dopamine are key regulators of sleep in mammals and in Drosophila. We found that the enzyme arylalkylamine N-acetyltransferase 1 (AANAT1) is expressed by Drosophila astrocytes and specific subsets of neurons in the adult brain. AANAT1 acetylates monoamines and inactivates them, and we found that AANAT1 limited the accumulation of serotonin and dopamine in the brain upon sleep deprivation (SD). Loss of AANAT1 from astrocytes, but not from neurons, caused flies to increase their daytime recovery sleep following overnight SD. Together, these findings demonstrate a crucial role for AANAT1 and astrocytes in the regulation of monoamine bioavailability and homeostatic sleep.
 
 ## Introduction
 
@@ -31,9 +31,17 @@ Characteristic features of sleep are conserved among species (Pimentel et al., 2
 
 We report here that AANAT1 is expressed in astrocytes and subsets of neurons in the adult Drosophila brain, with levels in astrocytes first rising then declining markedly overnight. In sleep deprived AANAT1 mutant flies, heightened recovery sleep is accompanied by increased serotonin and dopamine levels in the brain. With cell type selective AANAT1 knockdown, we find that AANAT1 functions in astrocytes, but not neurons, to limit the amount of recovery sleep that flies take in response to sleep deprivation (SD). These findings identify a critical role for astrocytes in the regulation of monoamine bioavailability and calibration of the response to sleep need.
 
-## Results and discussion
+### Results and discussion
 
 We generated antiserum to AANAT1 (known previously as Dopamine acetyltransferase (Dat)) and confirmed its specificity with immunohistochemistry (IHC) in the embryonic central nervous system (CNS). AANAT1 immunoreactivity was observed in the cytoplasm of many cells (Figure 1A) but was absent in age-matched ventral nerve cords of embryos that were homozygous for a deletion of the entire AANAT1 gene (Figure 1B). In adult brains co-immunostained with anti-Bruchpilot (nc82, Figure 1C), a presynaptic marker that labels neuropil regions, AANAT1 was present in distinct populations of cells throughout the brain. We found that AANAT1 was expressed in sub-populations of neurons (anti-Elav positive (+), Figure 1D,D') and glia (anti-Repo+, Figure 1E,E') throughout the brain. In glial cells AANAT1 was primarily cytoplasmic, but in neurons AANAT1 often appeared to localize to the nucleus. With the astrocyte-specific Alrm-Gal4 driving expression of a Red Fluorescent Protein (RFP) reporter (Alrm >nuRFP), we confirmed that all AANAT1-positive glial cells in the central brain are astrocytes (Figure 1F–F''). Only a subset of astrocytes in the optic lobes that reside between the medulla and lobula did not express AANAT1 (Figure 1—figure supplement 1A). With RNA interference (RNAi)-mediated knockdown of AANAT1 from all neurons using the driver nSyb-Gal4, the AANAT1-positive glial cells in the central brain could be identified more clearly as astrocytes by their ramified morphology, where AANAT1 could be observed in their thin, neuropil-infiltrating processes (Figure 1—figure supplement 1D,G,H).Their identity as astrocytes was further confirmed by the morphologies of single cells labeled with the Multi-Color Flp-OUT (MCFO) system (Figure 1G). In contrast to astrocytes, AANAT1 expression was absent from ensheathing glia marked by R56F03-Gal4 (Figure 1—figure supplement 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) AANAT1 IHC in the ventral nerve cords of age-matched embryos (stage 17) of a w1118 control (A) and an AANAT1-null homozygous for Df(BSC)356 (B). (C–M) AANAT1 IHC in the central brain of adults. (C) Z-stack projection showing AANAT1 (green) and neuropil marker nc82 (magenta) in Alrm-Gal4/+ control animals. (D–D') Single optical slice showing AANAT1 (magenta) and the pan-neuronal marker Elav (green). Yellow arrowheads point to neurons co-expressing both (D'). (E–E'). Single optical slice of AANAT1 (magenta) and the pan-glial marker Repo (green) in control animals where most glia express AANAT1 (E'; yellow arrowheads), but not all (E'; white arrowheads). AL = antennal lobe. Glia were labeled less intensely for AANAT1 than neurons, and so the adjusted imaging parameters reveal higher background levels in the antennal lobe than seen in D-D'. (F–F'') Single slice of AANAT1 (magenta), Elav (blue), and astrocyte marker Alrm-Gal4; UAS-nuRFP (Alrm >nuRFP, green) showing co-expression of AANAT1 and nuRFP in astrocytes (F''; yellow arrowheads) and with Elav (F''; yellow asterisk). (G–G'') MCFO-labeled single-cell astrocyte clones (anti-V5, green) co-labeled with AANAT1 (magenta). Yellow arrowheads indicate AANAT1-positive astrocyte cell bodies and cytoplasm. AL = antennal lobe. (H–M'') Z-stack projections and single=slice images of AANAT1 (magenta) and GFP (green) IHC in monoaminergic neurons labeled with type-specific Gal4 drivers. Dotted boxes in H, J and L show regions approximating those selected for imaging at higher power in animals of the same genotypes shown in I, K and M, respectively. AANAT1 is expressed in some serotonergic neurons (I''; yellow arrowhead), but not in dopaminergic or octopaminergic neurons (K'', M''; white arrowheads). (N) Quantification of the mean number of GFP-positive and GFP/AANAT1 double-positive cells in the central brains of animals where Gal4 is used to express GFP in serotonergic (green), dopaminergic (blue) or octopaminergic (red) neurons. Error bars represent standard deviation. (O) Summary of AANAT1 expression in cell types of the adult Drosophila central brain. Scale bars in A, B, D-G, I, K, M = 20 µm. Scale bars in C, H, J, L = 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Single optical slice showing AANAT1 (magenta), Elav (blue) and Alrm >nuRFP (green), with AANAT1-negative astrocytes (white arrowheads) in the optic lobe. (B) Single optical slice showing AANAT1 (magenta) and R56F03 > mCD8 GFP (green) showing absence of AANAT1 in ensheathing glia (white arrowheads). (C–F) AANAT1 expression upon AANAT1 knockdown with UAS-HMS01617 RNAi driven in all glia (C; Repo-Gal4;UAS-Dcr-2), all neurons (D; nSyb-Gal4), astrocytes (E; Alrm-Gal4,UAS-nuRFP), and both in neurons and astrocytes (F; nSyb-Gal4;Alrm-Gal4). Cyan arrowheads in C and E depict axonal bundles. Blue arrowhead in F shows background signal. (G, H) Single slices of IHC for AANAT1 (magenta) and Elav (green) showing loss of AANAT1 expression (white arrowheads) upon knockdown in neurons using nSyb-Gal4 to drive either UAS-HMS01617 (G; RNAi 1) or UAS-JF02142 (H; RNAi 2). (I, J) Single slices of IHC for AANAT1 (magenta) and Alrm >nuRFP (green) showing loss of AANAT1 expression (white arrowheads) upon knockdown in astrocytes using Alrm-Gal4 to drive RNAi 1 (I) or RNAi 2 (J). Yellow arrowheads indicate AANAT1 expression in neurons. (K–P) Z-stack projections showing AANAT1 (gray) expression in ellipsoid body (K,M,O) and fan-shaped body (L,N,P) neuropil regions in UAS-JF02142/+ controls (K,L) and upon knockdown of AANAT1 with AANAT1-RNAi2 driven in astrocytes using Alrm-Gal4 (M,N) or in neurons using Elav-Gal4 (O,P). (Q) Single-slice of AANAT1 IHC (gray) showing absence of AANAT1 expression in the α and βγ lobes of the mushroom body (outlined with dotted yellow line). (R–W'') Z-stack projections (R,T,V) and single-slice images (S-S'';U-U'';W-W'') of AANAT1 (magenta) and GFP (green) IHC in non-monoaminergic neurons labeled with type-specific drivers. Dotted boxes in R, T and V show regions approximating those selected for imaging at higher magnification in animals of the same genotypes shown in S-S'', U-U'' and W-W'', respectively. AANAT1 is expressed in subsets of glutamatergic, GABAergic and cholinergic neurons (S'', U'', W''; yellow arrowheads). Scale bars in A, C-F, R, T, V = 50 µm. Scale bars in B, G-J, K-P, S'', U'', W''=20 μm.
 
 Labeling of astrocytes was confirmed to be specific for AANAT1 because it was lost upon knockdown of AANAT1 from astrocytes with Alrm-Gal4 or Repo-Gal4 (Figure 1—figure supplement 1C,E,I,J). This also revealed more clearly the several clusters of AANAT1-positive neurons and their axon tracts in the central complex of the brain, which we examined in brain regions associated with sleep regulation (Figure 1—figure supplement 1C,E). AANAT1 expression was largely absent from the neuropils of the mushroom body (MB) and fan-shaped body (FSB), though there were scattered AANAT1-positive astrocytes nearby. AANAT1 expression in the neuropil of the ellipsoid body (EB) came almost exclusively from neurons, as revealed by neuron-selective RNAi knockdown (Figure 1—figure supplement 1K–Q). Elsewhere, it appeared that astrocytes contributed far more to AANAT1 labeling of brain neuropil regions than did neurons; for example, in the antennal lobe (Figure 1E,F) and subesophageal ganglion (Figure 1—figure supplement 1D), AANAT1 expression within neuropil regions came primarily from the infiltrative processes of astrocytes.
 
@@ -43,11 +51,35 @@ To identify the other types of neurons expressing AANAT1, we used a mCD8-GFP rep
 
 The AANAT1 gene produces two protein isoforms, the shorter of which (FlyBase AANAT1-PA, 240aa in length), previously known as aaNAT1b, is more predominant (Brodbeck et al., 1998). This shorter isoform was observed to be lost in AANAT1lo mutants (Hintermann et al., 1996). AANAT1lo is a spontaneous mutation that arose from insertion of a transposable element into the AANAT1 gene, and tissue extracts from these flies have reduced AANAT1 activity (Hintermann et al., 1996; Maranda and Hodgetts, 1977). Using our new AANAT1 antiserum to perform western blotting of brain extracts, we observed only the shorter isoform in controls (Figure 2A). In AANAT1lo homozygotes and hemizygotes (AANAT1lo/In(2LR)Px[4]), AANAT1 protein levels were reduced to 13 and 8% of iso31 controls, respectively (Figure 2A,B). This was confirmed with IHC in the brains of AANAT1lo flies (Figure 2C–E), where we noted residual AANAT1 expression in some Elav+ neurons, but complete loss of AANAT1 from astrocytes (Figure 2F–F', G–G').
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot of lysates prepared from dissected brains (ZT9-10) of iso31, AANAT1lo and AANAT1lo/Df(In(2LR)Px[4]) adult males. (B) Quantification of AANAT1 expression normalized to that of actin (mean + standard deviation, n = 3 biological replicates). (C–E) Z-stack images showing AANAT1 (gray) in iso31 (C), AANAT1lo (D) and AANAT1lo/Df(In(2LR)Px[4]) (E) animals. Blue arrowhead in E represents background signal. Scale bars = 50 µm. (F, G) Single optical slices showing AANAT1 (gray or magenta) and Elav (green) in iso31 (F, F') and AANAT1lo (G, G'). Yellow arrowhead shows AANAT1+ astrocytes. Scale bars = 20 µm. (H) Schematic of experiment for HPLC-MS analysis. (I) HPLC-MS measurement of serotonin (one-way ANOVA with Tukey’s post-hoc test, *p<0.05, **p<0.01,) and dopamine (Kruskal–Wallis test, Dunn’s multiple comparisons, *p<0.05,) in iso31 (black) and AANAT1lo (red) fly brains under control and sleep deprivation (SD) conditions. Box and whisker plots show 25–75% interquartile range (box), minimum and maximum (whiskers), median (horizontal line in box), and mean (+). n = 5 per genotype. (J) Western blot of lysates prepared from dissected brains (ZT24-25) of iso31 females in control (no SD) and SD conditions. (K) Quantification of AANAT1 (paired t-test, p=0.0831, n = 3) expression, normalized to actin levels in iso31 animals under control (no SD) and SD conditions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of Ebony expression normalized to that of actin (mean + standard deviation, n = 3 biological replicates, one-way ANOVA with Tuckey’s post-hoc test). (B) HPLC-MS measurement of octopamine (Mann-Whitney test, p<0.533) in AANAT1lo animals under control (n = 2) and SD (n = 5) conditions. Box and whisker plot as in Figure 2F. (C) Quantification of Ebony (paired t-test, p=0.7036, n = 3) expression normalized to actin levels in iso31 animals under control and SD conditions.
+
 In vitro studies have shown that serotonin and dopamine are substrates for AANAT1 with similar affinities (Hintermann et al., 1995). Whether the levels of these and/or other monoamines are regulated by AANAT1 in vivo remains to be determined. We used High Performance Liquid Chromatography - Mass Spectrometry (HPLC-MS) to measure levels of serotonin, dopamine, and octopamine in the brains of AANAT1lo flies and controls (iso31) (Figure 2H). Under baseline sleep-cycle conditions, where brain tissues were collected in a 3 hr window after lights-ON (ZT0), serotonin and dopamine levels in AANAT1lo flies were similar to controls (Figure 2I). Octopamine was undetectable in controls and was found at low levels in brains of AANAT1lo flies (Figure 2—figure supplement 1B). However, if this window was preceded by 12 hr (ZT12-ZT24) of SD overnight, AANAT1lo brains had a robust increase in the levels of serotonin and dopamine compared to controls (Figure 2I), but this had no effect on octopamine levels (Figure 2—figure supplement 1B). Importantly, in control animals the SD protocol itself did not appear to affect the levels of measured monoamines, or of AANAT1 itself (Figure 2J,K). Further, we did not observe changes in the levels of another monoamine catabolic enzyme known to be expressed in astrocytes (Ebony) in either AANAT1lo flies, or in flies subjected to SD (Figure 2—figure supplement 1A,C). We conclude that catabolism of serotonin and dopamine in the brains of flies lacking AANAT1 is severely compromised upon SD, leading to inappropriate accumulation of these monoamines.
 
 The AANAT1lo mutation increases homeostatic sleep following deprivation (Shaw et al., 2000), suggesting AANAT1 could be key to how the brain limits the homeostatic response to sleep need. AANAT1lo is also interesting because these flies were reported to have normal motor activity, and intact daily patterns of sleep (Shaw et al., 2000), allowing genetic dissection of homeostatic sleep- control independent of the regulation of baseline sleep. We wondered whether the increased recovery sleep seen in AANAT1lo animals could be explained by loss of AANAT1 function from neurons or astrocytes. To test this, we selectively knocked down AANAT1 in distinct cell types with RNAi and measured both baseline and homeostatic sleep with the Drosophila Activity Monitoring System (DAMS). To evaluate the contribution of neuronal AANAT1 to sleep, we tested nSyb-Gal4 >UAS-AANAT1-RNAi flies, using two independent RNAi lines that target the AANAT1 transcript at distinct sites. Knockdown of AANAT1 in neurons with either line resulted in normal patterns of baseline sleep (Figure 3A–H), as reported for the AANAT1lo allele (Shaw et al., 2000). While awake during daytime, these animals had lower levels of activity than controls carrying either the GAL4 or UAS transgene alone (Figure 3—figure supplement 1A,B), but their total daytime sleep amount was similar to at least one of the controls (Figure 3B,F), as were the length of daytime sleep bouts (Figure 3C,G) and their number (Figure 3D,H). When we examined the amount of nighttime sleep compared to controls, we found that one RNAi line (AANAT-RNAi 2, JF02142), but not the other (AANAT-RNAi 1, HMS01617), led to increased amount of nighttime sleep (Figure 3B,F). For knockdown with this RNAi line only, sleep bouts during the night were increased in duration and decreased in number, suggesting improved sleep consolidation at night (Figure 3C–D;G-H). We then assessed whether AANAT1 knockdown in neurons (nSyb >AANAT1 RNAi) would impact sleep recovery after SD, as was observed in AANAT1lo flies. For this, flies were subjected to overnight mechanical SD and we found, somewhat surprisingly, that these flies did not display enhanced recovery sleep the next day (Figure 3I–L).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Baseline sleep upon knockdown with UAS-HMS01617 (RNAi 1). 24 hr sleep profile showing light/dark conditions on X-axis (A), and quantification during day (ZT 0–12) versus night (ZT 12–24) of total sleep duration (B), sleep bout length (C) and bout number (D) for the nSyb-Gal4 control (black, n = 30), the UAS-HMS01617 control (blue, n = 32), and knockdown animals (nSyb >HMS01617, green, n = 32). (bar graphs show mean + standard deviation, one-way ANOVA with Tukey’s post-hoc test, *p<0.05, ***p<0.001, ****p<0.0001). (E–H) Baseline sleep upon knockdown with UAS-JF02142 (RNAi 2). (E) 24 hr sleep profile showing light/dark conditions on X-axis. Quantification of total sleep duration (F), sleep bout length (G) and bout number (H) for the nSyb-Gal4 control (black, n = 30), the UAS- JF02142 control (blue, n = 32), and knockdown animals (nSyb >JF02142, green, n = 32). The plotted nSyb-Gal4 control data is the same as in A-D, as the experiments were done simultaneously. (one-way ANOVA with Tukey’s post-hoc test, ***p<0.001, ****p<0.0001). (I, J) Recovery sleep upon knockdown with UAS-HMS01617 (RNAi 1). (I) 24 hr sleep profile of baseline and recovery days, and (J) the duration of sleep during ZT0-6 recovery period. nSyb-Gal4 control (black), the UAS-HMS01617 control (blue), and knockdown animals (nSyb >HMS01617, green). (n = 27 per genotype, one-way ANOVA with Tukey’s post-hoc test). (K, L) Recovery sleep upon knockdown with UAS-JF02142 (RNAi 2). (K) 24 hr sleep profile of baseline and recovery day, (L) duration of sleep during ZT0-6 recovery period (L). nSyb-Gal4 control (black), the UAS- JF02142 control (blue), and knockdown animals (nSyb >HMS01617, green). (n = 32 per genotype, one-way ANOVA with Tukey’s post-hoc test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Activity Index for knockdown with UAS-HMS01617 (RNAi 1) for the nSyb-Gal4 control (black; n = 30), the UAS-HMS01617 control (blue; n = 32), and knockdown animals (nSyb >HMS01617, green; n = 32). (B) Activity Index for knockdown with UAS-JF02142 (RNAi 2) for the nSyb-Gal4 control (black; n = 30), the UAS-JF02142 control (blue; n = 32), and knockdown animals (nSyb >HMS01617, green; n = 32).
+
 Next, we used Alrm-Gal4 to selectively deplete AANAT1 expression from astrocytes with RNAi (Alrm >AANAT1 RNAi). This had no effect on the numbers of astrocytes present in the brain (Figure 4A). These flies showed normal baseline patterns and amounts of daytime and nighttime sleep compared to controls (Figure 4B–E), but while awake they were less active than controls (Figure 4—figure supplement 1A,B). However, upon overnight mechanical SD, these flies had increased recovery sleep the next day (Figure 4F–I), mimicking AANAT1lo flies (Figure 4—figure supplement 1C–E). Like AANAT1 loss-of-function, AANAT1 overexpression in astrocytes also increased recovery sleep following deprivation (Figure 4—figure supplement 1F), underscoring the importance of regulated astrocytic AANAT1 levels in sleep homeostasis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig4-v2.jpg)
+
+**Figure 4.:** (A) Compared with Alrm-Gal4 controls (Alrm>), the number of nuRFP labeled astrocytes in the central brain is unaffected upon RNAi knockdown of AANAT1 with HMS01617 (AANAT1-RNAi 1) or JF02142 (AANAT1-RNAi 2). Box and whisker plot as in Figure 2F. One-way ANOVA with Tukey’s post-hoc test, n = 7–9 per genotype. (B, C) Baseline sleep upon knockdown with UAS-HMS01617 (RNAi 1). 24 hr sleep profile (B), and total sleep duration (C) for the Alrm-Gal4 control (black; n = 32), the UAS-HMS01617 control (blue; n = 26), and knockdown animals (Alrm >HMS01617, green; n = 32), (one-way ANOVA with Tukey’s post-hoc test). (D, E) Baseline sleep upon knockdown with UAS-JF02142 (RNAi 2). 24 hr sleep profile (D), and total sleep duration (E) for the Alrm-Gal4 control (black; n = 32), the UAS-JF02142 control (blue; n = 32), and knockdown animals (Alrm >JF02142, green; n = 30). The plotted Alrm-Gal4 control data is the same as in B and C, as the experiments were done simultaneously, (one-way ANOVA with Tukey’s post-hoc test). (F, G) Recovery sleep upon knockdown with UAS-HMS01617 (RNAi 1). 24 hr sleep profile of baseline day and recovery day (F), and the duration of sleep during ZT0-6 recovery period (G) for the Alrm-Gal4 control (black), the UAS-HMS01617 control (blue), and knockdown animals (Alrm >HMS01617, green). (n = 31 per genotype, Kruskal–Wallis one-way ANOVA with Dunn’s post-hoc test, ****p<0.0001). (H, I) Recovery sleep upon knockdown with UAS-JF02142 (RNAi 2). 24 hr sleep profile of baseline day and recovery day (H), and the duration of sleep during ZT0-6 recovery period (I) for the Alrm-Gal4 control (black), the UAS-JF02142 control (blue), and knockdown animals (Alrm >HMS01617, green). (n = 32 per genotype, error bars are mean + standard deviation, one-way ANOVA with Tukey’s post-hoc test, ****p<0.0001). (J) HPLC-MS measurement of serotonin (Mann-Whitney t-test) and dopamine (Mann-Whitney t-test) in Alrm-Gal4 control (black; n = 7 for dopamine; n = 5 for serotonin) and Alrm >JF02142 (green; n = 6) fly brains under sleep deprivation (SD) conditions. For UAS controls (not shown), some samples fell below the limit of detection, leaving too few data points for robust statistical analysis. Box and whisker plots show 25–75% interquartile range (box), minimum and maximum (whiskers), median (horizontal line in box), and mean (+). (K) AANAT1 levels in astrocyte cell bodies normalized to nuRFP at ZT12,15,18,21 and 24 time-points. (n = 3 per time-point, 10 cells per sample, mean+ SEM).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53994/elife-53994-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Activity Index for knockdown with UAS-HMS01617 (RNAi 1) for the Alrm-Gal4 control (black; n = 32), the UAS-HMS01617 control (blue; n = 26), and knockdown animals (Alrm >HMS01617, green; n = 32). (B) Activity Index for knockdown with UAS-JF02142 (RNAi 2) for the Alrm-Gal4 control (black; n = 32), the UAS-JF02142 control (blue; n = 32), and knockdown animals (Alrm >JF02142, green; n = 30). (C, D) Nighttime sleep (C) and activity index (D) for AANAT1lo/+ heterozygotes (gray; n = 16) and AANAT1lo homozygous mutants (red; n = 15). (Error bars are mean + standard deviation, Mann-Whitney t-test, p=0.0003). (E) Recovery sleep measured as the duration of sleep during ZT0-6 recovery period for AANAT1lo/+ heterozygous (gray; n = 32) and AANAT1lo homozygous mutants (red; n = 26). (Error bars are mean + standard deviation, Mann-Whitney t-test, p=0.0131). (F) Recovery sleep upon overexpression with UAS-AANAT1. The duration of sleep during ZT0-6 recovery period for the Alrm-Gal4 control (black), the UAS-AANAT1 control (blue), and overexpression animals (Alrm >AANAT1, brown). (n = 96 per genotype, error bars are mean + standard deviation, Kruskal-Wallis one-way ANOVA with Dunn’s post-hoc test, ****p<0.0001). (G–I'') Single slices of IHC for AANAT1 (magenta) and Alrm >nuRFP (green) showing AANAT1 expression above background levels (yellow arrowheads) in astrocytes during pupal development time 48 hr after puparium formation ( APF) (G–G''), 72 APF (H–H'') and 96 APF (I–I''). White arrowheads indicate astrocytes that do not express AANAT1. Scale bars in G'',H'',I''=20 μm. (J–K) Recovery sleep after adult-specific knockdown of AANAT1 with UAS-HMS01617 (RNAi 1) in astrocytes. 24 hr sleep profile of baseline and recovery day (J) and the duration of sleep during ZT0-6 recovery period (K). The duration of sleep during ZT0-6 recovery period (K) for the Eaat1-Gal4;tubGal80ts control (black, n = 42), the UAS-HMS01617 control (blue, n = 46), and knockdown animals (Eaat1-Gal4;tubGal80ts>HMS01617, green, n = 44). Kruskal–Wallis one-way ANOVA with Dunn’s post-hoc test, **p<0.01, ***p<0.001.
 
 We characterized AANAT1 expression in astrocytes during pupal development with immunochemistry, and found AANAT1 to be expressed weakly in only a few astrocytes at 48 hr after puparium formation (APF), then gradually more strongly in most but not all astrocytes at 72 hr and 96 hr APF (Figure 4—figure supplement 1G-I''). To investigate when AANAT1 functions in astrocytes for sleep recovery, we used the Temporal And Regional Gene Targeting (TARGET) system (McGuire et al., 2004) to knock down AANAT1 in adult astrocytes with Eaat1-Gal4. In the brain, Eaat1-Gal4 is a driver line for astrocytes (which express AANAT1) and cortex glia (which do not). When adult flies were raised at 32°C to deplete AANAT1 from glia using RNAi, these animals showed increased recovery sleep compared to the UAS control but not the Gal4 control (Figure 4—figure supplement 1J-K).
 
@@ -63,7 +95,262 @@ In neurons, AANAT1 may function to limit sleep consolidation at night, but evide
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>AANAT1</td>
+      <td>Flybase</td>
+      <td>FBgn0019643</td>
+      <td>Previously known as Dat. Also, speck (sp)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Trh-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_52249</td>
+      <td>FlyBase genotype: y1 w*; wgSp-1/CyO, P{Dfd-EYFP}2; P{Trh-GAL4.S}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TH-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_8848</td>
+      <td>FlyBase genotype: w*; P{ple-GAL4.F}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tdc2-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_52243</td>
+      <td>FlyBase genotype: y1 w*; wgSp-1/CyO, P{Dfd-EYFP}2; P{Tdc2-GAL4.S}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>10X-UAS-mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_32186</td>
+      <td>FlyBase genotype: w*; P{10XUAS-IVS-mCD8::GFP}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-RFP.nls</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_30558</td>
+      <td>FlyBase genotype: w[1118]; P{w[+mC]=GAL4-Act5C(FRT.CD2).P}S, P{w[+mC]=UAS RFP.W}3/TM3, Sb[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mi{MIC} VGlutMI04979</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_38078</td>
+      <td>FlyBase genotype: y1w*; Mi{MIC}VGlutMI04979</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gad1-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_51630</td>
+      <td>FlyBase genotype: P{Gad1-GAL4.3.098}2/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Cha-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_6793</td>
+      <td>FlyBase genotype: w*; P{ChAT-GAL4.7.4}19B P{UAS-GFP.S65T}Myo31DFT2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R56F03-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_39157</td>
+      <td>FlyBase genotype: w[1118]; P{y[+t7.7] w[+mC]=GMR56 F03-GAL4}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AANAT1lo</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_3193</td>
+      <td>FlyBase genotype: bw[1] AANAT1[lo]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(2R)BSC356</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_24380</td>
+      <td>FlyBase genotype: w[1118]; Df(2R)BSC356/SM6a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>In(2LR)Px4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_1473</td>
+      <td>FlyBase genotype: In(2LR)Px[4], dpy[ov1] b[1]/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubGal80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_7018</td>
+      <td>FlyBase genotype: w[*]; sna[Sco]/CyO; P{w[+mC]=tubP-GAL80[ts]}ncd[GAL80ts-7]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-HMS01617</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_36726</td>
+      <td>FlyBase genotype: y[1] sc[*] v[1] sev[21]; P{y[+t7.7] v[+t1.8]=TRiP.HMS01617}attP40/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-JF02142</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_26243</td>
+      <td>FlyBase genotype: y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.JF02142}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MCFO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_64085</td>
+      <td>FlyBase genotype: FlpG5.Pest; 10xUAS(FRT-stop)myr::smGdP-HA, 10xUAS(FRT-stop)myr::smGdP-V5-THS-10xUAS(FRT-stop)myr::smGdP-FLAG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Alrm-Gal4</td>
+      <td>Marc Freeman</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Eaat1-Gal4</td>
+      <td>Marc Freeman</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nSyb-Gal4</td>
+      <td>Julie Simpson, Stefan Thor</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-AANAT1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods: Fly stocks</td>
+    </tr>
+    <tr>
+      <td>Cell lines (Escherichia coli)</td>
+      <td>GH12636</td>
+      <td>Drosophila Genomic Research Centre</td>
+      <td>FBcl0129063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell lines (Escherichia coli)</td>
+      <td>pJFRC-MUH</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_26213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AANAT1 (Rabbit polyclonal)</td>
+      <td>MEDIMABS, Montreal</td>
+      <td>This paper</td>
+      <td>IHC(1:2000), WB (1:2500). See Materials and methods: Generation of AANAT1 antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Elav (Rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Elav-7E8A10</td>
+      <td>IHC(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Repo (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>8D12</td>
+      <td>IHC(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brp (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>nc82</td>
+      <td>IHC(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Mouse monoclonal)</td>
+      <td>Clontech</td>
+      <td>#632381</td>
+      <td>IHC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ebony (Rabbit polyclonal)</td>
+      <td>Sean Carroll</td>
+      <td></td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>#A4700</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HyGLO Chemiluminescent HRP Antibody Detection Reagent</td>
+      <td>Denville Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic acid</td>
+      <td>Fisher scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 6</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 Drosophila melanogaster stocks were obtained from the Bloomington Drosophila Stock Center (BSC): Trh-Gal4 (BSC-52249), TH-Gal4 (BSC-8848), Tdc2-Gal4 (BSC-9313), Ddc1-Gal4 (BSC-7010), UAS-mCD8-GFP (BSC-32186), UAS-RFP.nls (BSC-30558), Mi{MIC} VGlutMI04979 (BSC-38078), Gad1-Gal4 (BSC-51630), Cha-Gal4 (BSC-6793), R56F03-Gal4 (BSC-39157), AANAT1lo (BSC-3193), Df(2R)BSC356 (BSC-24380), deficiency In(2LR)Px4 (BSC-1473), tubGal80ts (BSC-7018), AANAT1 RNAi lines UAS-HMS01617 (BSC-36726), UAS-JF02142 (BSC-26243) and MCFO stock hs-FlpG5.Pest; 10xUAS(FRT-stop)myr::smGdP-HA, 10xUAS(FRT-stop)myr::smGdP-V5-THS-10xUAS(FRT-stop)myr::smGdP-FLAG (BSC-64085). Alrm-Gal4 and Eaat1-Gal4 was provided by Dr. Marc Freeman, and nSyb-Gal4 by Dr. Stefan Thor.
 
@@ -75,11 +362,11 @@ The morphology of single astrocytes was determined by the MCFO technique (Nern e
 
 To create UAS-AANAT1, the AANAT1 coding sequence from the cDNA clone GH12636 (Drosophila Genomic Research Centre) was PCR-amplified and cloned in- frame into a modified pJFRC-MUH vector (Pfeiffer et al., 2010). Transgenic flies with site-specific insertions at VK0005 site on chromosome three were generated using standard microinjection (BestGene, Inc).
 
-## Generation of AANAT1 antibody
+### Generation of AANAT1 antibody
 
 A KLH-coupled peptide RRPSPDDVPEKAADSC (amino acids (aa) 94–109 of isoform AANAT1-PA (FlyBase), or 129–144 of isoform AANAT1-PB) was synthesized and injected into rabbits according to guidelines of the Canadian Council for Animal Care (MEDIMABS, Montreal, QC).
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Adult fly brains were dissected between ZT3-9 (unless specified otherwise) in cold phosphate-buffered saline (pH 7.4) and fixed in 4% paraformaldehyde for 30 min (min). After three washes of 15 min each with PBS containing 0.3% Triton-X-100 (PBTx-0.3%), the tissues were blocked in 5% normal goat serum (Jackson Laboratories) in PBTx-0.5% for 45 min. Tissues were incubated in primary antibodies: rabbit anti-AANAT1 (1:2000; this study), rat anti-Elav (1:100); Developmental Studies Hybridoma Bank (DSHB), mouse anti-Repo (1:50; DSHB), mouse anti-nc82 (1:50; DSHB), mouse anti-GFP (1:200; Clontech #632381) overnight at 4°C. After three washes (15 min each, PBTx-0.3%), tissues were incubated with secondary antibodies overnight at 4°C: goat anti-mouse (Rhodamine Red-X, Jackson ImmunoResearch #115-295-146), goat anti-rabbit (Alexa Fluor 488, Thermo Fisher Scientific, #A11008), goat anti-mouse (Alexa Fluor 488, Thermo Fisher Scientific), goat anti-rat (Alexa Fluor 568, Thermo Fisher Scientific, #A11077), goat anti-rabbit (Alexa Fluor 647, Thermo Fisher Scientific, #A21245). Tissues were again washed (3 × 15 min, PBTx-0.3%), followed by a final wash in PBS. Tissues were mounted in SlowFade Diamond Antifade Mountant (Thermo Fisher Scientific, #S36964). Fluorescence images were acquired with an Olympus BX-63 Fluoview FV1000 confocal laser-scanning microscope and processed using Fiji.
 
@@ -87,18 +374,18 @@ For MCFO labeling, brains were dissected in ice-cold PBS, fixed with 4% paraform
 
 To quantify cells immuno-labeled for GFP and AANAT1, cells were manually counted from image stacks of the central brain near the antennal lobe and central complex regions (excluding optic lobes). We chose cell bodies in this dorsal - anterior region because it routinely showed excellent immunochemical signal and good cellular resolution.
 
-## Western blotting
+### Western blotting
 
 Lysates for western blots were prepared at ZT0.5–1.5 from dissected adult brains in 50 μl Laemmli buffer as reported in Parinejad et al., 2016. 10 brains were used per lysate and incubated at 90⁰C for 5 min. 15 μl of each sample was loaded per well, run on 15% SDS-PAGE gels, blotted to nitrocellulose membrane, and probed with rabbit anti-AANAT1 (1:2500) or anti-Ebony (1:3000; Sean Carroll, University of Wisconsin-Madison), and mouse anti-actin (1:3000; Sigma #A4700). HRP-conjugated secondary antibodies anti-rabbit (1:3000; Bio-Rad) and anti-mouse (1:3000; Promega #W4021) were used for detection with chemiluminescence (HyGLO Chemiluminescent HRP Antibody Detection Reagent, Denville Scientific). Mean signal intensity for AANAT1 or Ebony was quantified using Fiji and normalized to actin. We used three separate lysates for each genotype to analyze western blots. For sleep experiments, female brains were used for lysate preparation.
 
-## HPLC-MS
+### HPLC-MS
 
 To prepare samples for HPLC-MS, the brains of twenty female flies (1–2 weeks old) for each genotype were dissected into ice-cold PBS between ZT0.5 and 3.5. We dissected brain tissue to avoid cuticle contamination because serotonin and dopamine are intermediates in the sclerotization of Drosophila cuticle. Dissected brains were centrifuged, the PBS was removed, and samples were quickly homogenized with a motorized pestle into an aqueous solution of formic acid (0.1%). After centrifugation, the supernatant was collected and stored at −80°C. Preliminary analytical conditions were developed using reference standards in a solution containing either serotonin, dopamine, or octopamine. With LC-MS/MS (Thermo-Scientific Quantiva Triple Quadrupole Mass Spectrometer (QQQ)), the absolute values for each analyte were measured in picograms (pg) per brain, through the addition of deuterated reference standards to sample extracts. All samples within an experiment were treated identically, and in parallel wherever possible.
 
-## Monitoring and measurement of sleep in Drosophila
+### Monitoring and measurement of sleep in Drosophila
 
 Prior to experimentation, flies were kept on standard food in constant conditions (a 12 hr light/dark cycle, and 25°C). At least 5 days after eclosion, mated adult females were loaded into glass tubes with 5% sucrose/2% agar food for behavioral recordings. The Drosophila Activity Monitoring (DAM) system (Trikinetics, Waltham, MA) was used to quantify infrared beam breaks representing locomotor activity. Files were processed with PySolo (Gilestro and Cirelli, 2009) in 1 min bins, with sleep defined as five consecutive minutes without activity, as done previously (Hendricks et al., 2000). In SD experiments, flies were placed in DAM monitors on a vortexer that was mechanically shaken a random 2 of every 20 s over the course of the 12 hr of the dark period (ZT12-24). Recovery sleep was determined, per fly, as the difference between sleep amount in the period following deprivation and sleep amount in the same time period on the preceding baseline day in unperturbed conditions. Activity Index refers to the average number of beam crossings within an active bout.
 
-## Time-course of AANAT1 expression in astrocytes
+### Time-course of AANAT1 expression in astrocytes
 
 AANAT1 levels in astrocytes were quantified at 3 hr intervals between ZT12-24 with IHC, where AANAT1 fluorescence intensity in astrocyte cell bodies was measured and normalized to nuRFP intensity from 2 copies of a UAS-nuRFP transgene reporter driven by Alrm-Gal4. At each time-point, 10 astrocytes in the antennal lobe region were measured from each of three brains.

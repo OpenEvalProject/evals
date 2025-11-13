@@ -23,13 +23,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02bv3c993 State Key Laboratory of Pathogen and Biosecurity, Institute of Biotechnology, Academy of Military Medical Sciences Beijing China
-2. https://ror.org/04gw3ra78 Department of Pharmacy, Medical Supplies Center, Chinese PLA General Hospital Beijing China
-3. https://ror.org/033vnzz93 Center for Immune Ageing and Rejuvenation, Department of Rheumatology and Immunology, The First Affiliated Hospital of Chongqing Medical University Chongqing China
-4. https://ror.org/04gw3ra78 Department of General Surgery, First Medical Center, Chinese PLA General Hospital Beijing China
-5. https://ror.org/04gw3ra78 Department of Gastroenterology and Hepatology, First Medical Center, Chinese PLA General Hospital Beijing China
-6. https://ror.org/04gw3ra78 Department of Pathology, Fourth Medical Center, Chinese PLA General Hospital Beijing China
-7. https://ror.org/039713658 Department of Nephrology, First Medical Center of Chinese PLA General Hospital Beijing China
+1. State Key Laboratory of Pathogen and Biosecurity, Institute of Biotechnology, Academy of Military Medical Sciences Beijing China ([ROR:02bv3c993](https://ror.org/02bv3c993))
+2. Department of Pharmacy, Medical Supplies Center, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
+3. Center for Immune Ageing and Rejuvenation, Department of Rheumatology and Immunology, The First Affiliated Hospital of Chongqing Medical University Chongqing China ([ROR:033vnzz93](https://ror.org/033vnzz93))
+4. Department of General Surgery, First Medical Center, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
+5. Department of Gastroenterology and Hepatology, First Medical Center, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
+6. Department of Pathology, Fourth Medical Center, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
+7. Department of Nephrology, First Medical Center of Chinese PLA General Hospital Beijing China ([ROR:039713658](https://ror.org/039713658))
 
 † Corresponding author
 
@@ -49,45 +49,468 @@ This study aimed to reveal the diversity of the H. pylori infection-associated G
 
 ## Results
 
-## Single-cell transcriptomic architecture and molecular features of H. pylori infection-associated GC
+### Single-cell transcriptomic architecture and molecular features of H. pylori infection-associated GC
 
 In this study, we first classified the collected GC tissues into non-HpGC, HpGC, and ex-HpGC to accurately evaluate the H. pylori infection status of GC patients, which was defined by a combination of serology examinations along with the H. pylori DNA assay and histological examination (HE) of each gastric tissue (‘Materials and methods’, Table 1). The gastric tissues selected were collected from six healthy donors (HCs) and six non-HpGC, nine HpGC, and six ex-HpGC patients, who were recently diagnosed and did not receive chemotherapy and radiotherapy before surgery (Figure 1A). Viable cells with high quality were collected from each gastric tissue for further scRNA-seq using fluorescence-activated cell sorting (FACS). A total of 83,637 cells were retained for subsequent analysis after rigorous quality control, which yielded an average of 1358 genes and 3465 transcripts in each cell (Figure 1—figure supplement 1 A–D). We first employed the inferCNV to evaluate copy number variation (CNV) of autosomal genes among all cells to distinguish malignant and non-malignant cells (Figure 1—figure supplement 1E), We then identified and annotated nine main cell types according to the expression of canonical gene markers and CNV distribution, which were composed of the non-malignant epithelium (marked with MUC5AC, GKN1, and TFF1/2), malignant epithelium (KRT17, S100A9 and REG4), endothelium (marked with PECAM1, VWF, and PLVAP), fibroblasts (marked with DCN, LUM, and COL1A1), plasma cells (marked with JCHAIN and CD49A), monocyte/macrophage (marked with C1QA/B/C and IL1B), mast cells (marked with CPA3 and TPSAB1), B cells (marked with CD79A and MS4A1), and T cells (marked with CD2, CD3D, and CD3E) (Figure 1B–E, Figure 1—figure supplement 1F, and Supplementary file 1). To investigate the influence of H. pylori infection on the heterogeneity of gastric TME, we analyzed the dynamic cellular component changes of gastric TME in non-HpGC, ex-HpGC and HpGC compared with that of HC. The results revealed a significant increase in the proportion of T cells in GC, including non-HpGC, ex-HpGC, and HpGC, in contrast with HC (Figure 1F and G), which aligned with the consensus that tumorigenesis is accompanied by inflammation. In addition, the percentage of non-malignant epithelium significantly decreased in GC compared to normal HC. Whereas there was a significant increase in the proportion of malignant epithelium in GC compared with that of HC, which is closely related to the process of carcinogenesis. However, there is no significant difference in the proportion of non-malignant epithelium and malignant epithelium among the non-HpGC, ex-HpGC, and HpGC (Figure 1G). To further elucidate the correlation between H. pylori infection and the transformation of non-malignant epithelium into malignant epithelium during gastric carcinogenesis, we performed a comparative analysis of upregulated genes characteristics between non-malignant epithelial cells and malignant epithelial cells. The result revealed that upregulated genes in the non-malignant epithelium included MUC5AC, GKN1, and TFF2, which participate in the secretion of stomach mucus and digestive enzymes, whereas upregulated genes in the malignant epithelium included TM4SF1, IFITM3, IGFBP7, and KRT17 (Figure 1H, Figure 1—figure supplement 1F and G). Gene set enrichment analysis (GSEA) showed that the differentially upregulated genes in the malignant epithelium compared to non-malignant epithelium were enriched in pathways associated with tumor development and progression, such as hypoxia, tumor invasiveness, MYC targets, and epithelial–mesenchymal transition (EMT) (Figure 1I). In brief, our results provided a comprehensive landscape of the cellular and transcriptomic diversity within the cell components in gastric TME-associated H. pylori infection.
 
-## Cellular characterization of the malignant epithelium of H. pylori infection-associated GC
+**Table 1.**
+ Patient characteristics of each sample in gastric cancer (GC) scRNA-seq.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Stage</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Histopathological diagnosis</th>
+      <th>Site of origin</th>
+      <th>Lauren’s classification</th>
+      <th>H. pylori serum antibody</th>
+      <th>H. pylori DNA</th>
+      <th>H. pylori cagA</th>
+      <th>H. pylori on H&amp;E slide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>exHpGC1</td>
+      <td>III</td>
+      <td>62</td>
+      <td>F</td>
+      <td>Moderately differentiated adenocarcinoma</td>
+      <td>Gastric antrum and corpus</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>exHpGC2</td>
+      <td>III</td>
+      <td>61</td>
+      <td>M</td>
+      <td>Moderately differentiated adenocarcinoma</td>
+      <td>Gastric antrum</td>
+      <td>Mixed</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>exHpGC3</td>
+      <td>I</td>
+      <td>75</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma</td>
+      <td>Gastric antrum</td>
+      <td>Diffuse</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>exHpGC4</td>
+      <td>II</td>
+      <td>67</td>
+      <td>F</td>
+      <td>Signet ring cell carcinoma</td>
+      <td>Gastric body</td>
+      <td>Diffuse</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>exHpGC5</td>
+      <td>III</td>
+      <td>64</td>
+      <td>M</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Cardia</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>exHpGC6</td>
+      <td>I</td>
+      <td>65</td>
+      <td>M</td>
+      <td>Moderately differentiated adenocarcinoma</td>
+      <td>Gastric antrum</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HpGC1</td>
+      <td>II</td>
+      <td>73</td>
+      <td>M</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Stomach angle</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC2</td>
+      <td>IV</td>
+      <td>55</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma</td>
+      <td>Gastric antrum and corpus</td>
+      <td>Diffuse</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC3</td>
+      <td>I</td>
+      <td>49</td>
+      <td>F</td>
+      <td>Moderately-well differentiated adenocarcinoma</td>
+      <td>Gastric antrum and gastric angle</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC4</td>
+      <td>I</td>
+      <td>47</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma, mostly signet ring cell carcinoma</td>
+      <td>Gastric antrum</td>
+      <td>Diffuse</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC5</td>
+      <td>II</td>
+      <td>67</td>
+      <td>F</td>
+      <td>Signet ring cell carcinoma</td>
+      <td>Gastric antrum</td>
+      <td>Diffuse</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC6</td>
+      <td>I</td>
+      <td>58</td>
+      <td>M</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Greater curvature</td>
+      <td>Mixed</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC7</td>
+      <td>III</td>
+      <td>67</td>
+      <td>F</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Angular incisure</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC8</td>
+      <td>III</td>
+      <td>74</td>
+      <td>M</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Greater curvature</td>
+      <td>Intestinal</td>
+      <td>+</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HpGC9</td>
+      <td>II</td>
+      <td>62</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma, partial signet ring cell carcinoma</td>
+      <td>Angular incisure</td>
+      <td>Mixed</td>
+      <td>+</td>
+      <td>+</td>
+      <td>N/A</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>nonHpGC1</td>
+      <td>I</td>
+      <td>54</td>
+      <td>F</td>
+      <td>Poorly differentiated adenocarcinoma</td>
+      <td>Cardia</td>
+      <td>Diffuse</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>nonHpGC2</td>
+      <td>III</td>
+      <td>65</td>
+      <td>M</td>
+      <td>Moderately differentiated adenocarcinoma</td>
+      <td>Cardia</td>
+      <td>Intestinal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>nonHpGC3</td>
+      <td>III</td>
+      <td>56</td>
+      <td>M</td>
+      <td>Moderately differentiated adenocarcinoma</td>
+      <td>Cardia</td>
+      <td>Intestinal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>nonHpGC4</td>
+      <td>III</td>
+      <td>72</td>
+      <td>M</td>
+      <td>Moderately poorly differentiated adenocarcinoma</td>
+      <td>Angular incisure</td>
+      <td>Intestinal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>nonHpGC5</td>
+      <td>I</td>
+      <td>56</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma</td>
+      <td>Antrum</td>
+      <td>Mixed</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>nonHpGC6</td>
+      <td>II</td>
+      <td>63</td>
+      <td>M</td>
+      <td>Poorly differentiated adenocarcinoma</td>
+      <td>Angular incisure</td>
+      <td>Mixed</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC1</td>
+      <td>N/A</td>
+      <td>38</td>
+      <td>M</td>
+      <td>Normal</td>
+      <td>Greater curvature</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC2</td>
+      <td>N/A</td>
+      <td>43</td>
+      <td>F</td>
+      <td>Normal</td>
+      <td>Greater curvature</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC3</td>
+      <td>N/A</td>
+      <td>62</td>
+      <td>F</td>
+      <td>Chronic gastritis</td>
+      <td>Gastric body</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC4</td>
+      <td>N/A</td>
+      <td>61</td>
+      <td>F</td>
+      <td>Normal</td>
+      <td>Gastric antrum</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC5</td>
+      <td>N/A</td>
+      <td>25</td>
+      <td>M</td>
+      <td>Normal</td>
+      <td>Gastric antrum</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC6</td>
+      <td>N/A</td>
+      <td>32</td>
+      <td>F</td>
+      <td>Normal</td>
+      <td>Gastric antrum</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig1-v1.jpg)
+
+**Figure 1.:** (A) A general workflow of GC sample preparation and processing of single-cell suspensions for scRNA-seq analysis. In total, 27 gastric samples, including gastric tissues of healthy control (HC, n=6), GC without H. pylori infection (non-HpGC, n=6), GC with previous H. pylori infection (ex-HpGC, n=6), and GC with current H. pylori infection (HpGC, n=9), were collected to perform scRNA-seq. (B) Uniform Manifold Approximation and Projection (UMAP) plot for unbiased clustering and cell type annotation of 86,637 high-quality cells. EPI_M: malignant epithelium; EPI: non-malignant epithelium; Endo: endothelium; Fib: fibroblast; Mono/Mac: monocyte/macrophage; Plasma: plasma cells; Mast: mast cells; B: B cells; T: T cells. (C) The absolute quantities of nine different cell types. (D) Heatmap showing the top eight differentially expressed genes (DEGs) of nine main cell types. (E) Violin plots showing the expression of signature genes of nine cell types. (F) Pie plot revealing the proportions of nine cell types in HC, non-HpGC, ex-HpGC and HpGC. (G) Box plot showing statistical analysis of proportion of nine cell types in HC, non-HpGC, ex-HpGC, and HpGC. The p-value of Student’s t-test is shown. (H) Volcano plot displaying the differentially upregulated genes in EPI and EPI_M. (I) Gene set enrichment analysis (GSEA) showing the pathway activity (scored per cell by GSEA) in malignant epithelium (EPI_M) and non-malignant epithelium (EPI).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The number of detected genes and UMI counts in all the cells. (B) The percentage of mitochondria genome in gastric mucosal samples of HC, non-HpGC, ex-HpGC, and HpGC. (C) Uniform Manifold Approximation and Projection (UMAP) plot showing the sample (right) and pathological (left) distributions of 83,637 high-quality cells. (E) The copy number variation (CNV) signal across cell types, estimated using inferCNV. (F) The expression of differentially expressed genes (DEGs) in assumed non-malignant epithelium (EPI) and malignant epithelium (EPI_M). (G) Bar plot showing the percentage of EPI and EPI_M in each gastric mucosal sample of HC, non-HpGC, ex-HpGC, and HpGC.
+
+### Cellular characterization of the malignant epithelium of H. pylori infection-associated GC
 
 To further explore the molecular features of H. pylori infection-associated GC and the heterogeneity of the malignant epithelium, we performed a subclustering analysis of malignant cells and generated six distinct malignant epithelium subpopulations (M1−M6), in which clusters M1 and M2 were mainly derived from non-HpGC, whereas clusters M5 and M6 were mainly originated from H. pylori infection-associated GC samples including HpGC and ex-HpGC (Figure 2A and B, Figure 2—figure supplement 1A and B). The expression distribution of these clusters was validated in HpGC by deconvolution analysis using bulk RNA sequencing datasets (Wilcoxon test; Figure 2—figure supplement 1C; Cristescu et al., 2015). We found that malignant epithelium of M1/M2/M3/M4 exhibited high expression levels of epithelium differentiation-related genes, such as PHGR1 and KRT20 (Figure 2C), whereas M5/M6 or H. pylori infection-associated GC samples exhibited high expression levels of inflammation-related genes, such as CXCL1/2/3/8, S100A9, S100P, and EMT signature, such as SPARC and VIM (Figure 2C and D). In addition, among the H. pylori infection-associated GC samples, the expression of inflammation-related genes and IgG family members’ genes was much higher in HpGC (Figure 2D, Figure 2—figure supplement 1, and Supplementary file 2). Interestingly, GSEA of the upregulated genes in the HpGC malignant epithelium was mainly associated with EMT, epithelial cell proliferation, and inflammatory response pathways (Figure 2E). We also found that the malignant epithelium exhibited a high degree of differentiation inter- and intra-heterogeneity (Figure 2F and G), the differentiation score of ex-HpGC2 and ex-HpGC5 presented two distinct peaks, one of which is comparable to the peak observed in HpGC, while the another of which resembled the peak observed in non-HpGC sample (Figure 2F). The finding suggested that a history of H. pylori infection in GC can still contribute to the differentiation heterogeneity of malignant epithelium. Furthermore, malignant epithelium from ex-HpGC displayed low differentiation scores, which were even lower in malignant epithelium of HpGC (p<0.05, Wilcoxon test; Figure 2H). This further substantiates the correlation between the inflammatory and differentiation ability with the severity of H. pylori infection. Furthermore, the abundance of malignant epithelium clusters could predict different prognosis outcomes (Figure 2—figure supplement 1E), and the high differentiation score is highly associated with a better prognosis of GC and vice versa (Figure 2I).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig2-v1.jpg)
+
+**Figure 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) plot showing six subpopulations of malignant epithelium, colored by different cell types (upper) and different H. pylori infection status (lower). (B) Pie plot showing the proportion of six subsets of malignant epithelium in non-HpGC, ex-HpGC, and HpGC. (C) Heatmap displaying the differentially expressed genes (DEGs) among the six subsets of malignant epithelium. (D) Bubble plot showing the difference in representative molecular among the non-HpGC, ex-HpGC, and HpGC. (E) Gene set enrichment analysis (GSEA) showing the pathway activity (scored per cell by GSEA) in malignant epithelium of HpGC compared to that of non-HpGC. NES, normalized enrichment score. (F) The ridge plot showing the differentiation score (Diff Score) of malignant epithelium within each sample. (G) Heatmap showing the Diff Score of six subpopulations of malignant epithelium. (H) Box plot showing differentiation score among non-HpGC, ex-HpGC, and HpGC, p-values were assessed by Wilcoxon test, two-way ANOVA test is used for comparison of multiple groups. (I) Kaplan–Meier survival analysis of The Cancer Genome Atlas (TCGA) stomach adenocarcinoma (STAD) patients stratified by tumor sample differentiation scores, which was used to group samples into high and low groups based on 33rd and 67th percentile. The p-value of two-sided log-rank test is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Proportion of six malignant epithelium subtypes in each GC sample (A) and non-HpGC, ex-HpGC, and HpGC(B). (C) The malignant epithelium subtypes relative abundance in H. pylori infection-associated GC using The Cancer Genome Atlas (TCGA) stomach adenocarcinoma (STAD) samples (estimated by gene set variation analysis [GSVA]). p-Values were assessed by Wilcoxon test. (D) Heatmap showing expression of top 20 differentially expressed genes (DEGs) in distinct malignant epithelium subtypes. (E) Kaplan–Meier survival analysis of TCGA STAD patients stratified by the relative abundance of six malignant epithelium subclusters, which was used to group samples into high and low groups based on 33rd and 67th percentile. The p-value of two-sided log-rank test is shown.
+
 Collectively, the findings highlight the transcriptomic heterogeneity of malignant epithelium with different H. pylori infection status and the potential utility of the molecular features within the malignant epithelium to distinguish HpGC from non-HpGC, indicative of a high degree of tumor heterogeneity and the influence of the H. pylori infection on gastric carcinogenesis and prognosis.
 
-## Cellular characterization of the non-malignant epithelium of H. pylori infection-associated GC
+### Cellular characterization of the non-malignant epithelium of H. pylori infection-associated GC
 
 To determine the cellular phenotype and composition of the gastric mucosa during the progression of H. pylori infection, we performed a transcriptomic analysis of the non-malignant epithelium, and these cells were partitioned into nine cell types (Figure 3A), including chief cells (marked by PGA3 and PGA4), neck cells (marked by MUC6), spasmolytic polypeptide-expressing metaplasia (SPEM, marked by MUC6 and TFF2), intestinal metaplasia (IM, marked by MUC2), enterocytes (marked by APOC3 and FABP1), endocrine cells (marked by CHGA), pit mucous cell (PMC, marked by GKN1/2 and MUC5AC), pre-PMC (marked by medium expression level of MUC5AC and GKN2), and parietal cells (marked by ATP4A) (Figure 3B and C, Supplementary file 3). We compared the composition of cells in normal mucosae with that of GC mucosae and observed that the neck cell (p=0.034, Student’s t-test), chief cell (p=0.014, Student’s t-test), and parietal cells (p=0.0087, Student’s t-test) decreased dramatically in HpGC compared to HC, whereas the HpGC exhibited increase partition of metaplasia lineage SPEM (p=0.017, Student’s t-test) and intestinal-specific cell types, such as IM (p=0.036, Student’s t-test) and enterocytes (p=0.036, Student’s t-test). Furthermore, HpGC samples had even higher proportion of metaplasia lineage SPEM and intestinal-specific cell types and a lower proportion of neck cells and parietal cells than that of ex-HpGC and non-HpGC (Figure 3C). To conform the validity of our findings, we performed deconvolution analysis with independent microarray data (GSE2669), including 124 normal mucosa control (NC), chronic gastritis (CG), intestinal metaplasia (IM), GC associated with H. pylori infection samples to decipher the changes in the proportion of cell components with different stages of gastric tissue. Consistent with our scRNA-seq findings, the proportion of SPEM, IM, and enterocytes in GC increased gradually during the gastric carcinogenesis process, with even higher proportion in GC compared with that of CG and IM. In contrast, the proportion of chief cells, neck cells, and parietal cells decreased significantly in GC, with the lowest proportion in GC compared with that of CG and IM (p<0.05, Student’s t-test; Figure 3D and E). These findings further support the validity of our results and indicate that chronic atrophic gastritis induced by H. pylori infection is the main cause of premalignant lesions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig3-v1.jpg)
 
-**Figure 3.:** H. pylori infection status.(A) Unbiased clustering of non-malignant epithelium generated nine subtypes. (B) Heatmap showing the molecular feature of non-malignant epithelium according to the top five differentially expressed genes (DEGs). (C) Box plot showing the dynamic proportion of different cell types in non-malignant epithelium with different H. pylori infection status. (D) Heatmap showing the relative abundance (estimated by gene set variation analysis [GSVA]) of non-malignant epithelium subtypes in normal control (NC), chronic gastritis (CG), intestinal metaplasia (IM), GC samples (GSE2669). (E) Boxplot showing the relative abundance (estimated by GSVA) of non-malignant epithelium subtypes SPEM, IM, enterocytes, chief cells, neck cells, and parietal cells within NC, CG, IM, and GC samples (GSE2669). The p-value of Student’s t-test is shown. (F) The trajectory analysis shows potential differentiation and transition trajectories in non-malignant epithelium clusters. (G) The ridge plot showing the pseudotime of non-malignant epithelium revealed the gastric pre-lesion process. (H, I) Heatmap showing scaled expression of dynamic genes (G) and TFs (H) along cell pseudotime.
+**Figure 3.:** (A) Unbiased clustering of non-malignant epithelium generated nine subtypes. (B) Heatmap showing the molecular feature of non-malignant epithelium according to the top five differentially expressed genes (DEGs). (C) Box plot showing the dynamic proportion of different cell types in non-malignant epithelium with different H. pylori infection status. (D) Heatmap showing the relative abundance (estimated by gene set variation analysis [GSVA]) of non-malignant epithelium subtypes in normal control (NC), chronic gastritis (CG), intestinal metaplasia (IM), GC samples (GSE2669). (E) Boxplot showing the relative abundance (estimated by GSVA) of non-malignant epithelium subtypes SPEM, IM, enterocytes, chief cells, neck cells, and parietal cells within NC, CG, IM, and GC samples (GSE2669). The p-value of Student’s t-test is shown. (F) The trajectory analysis shows potential differentiation and transition trajectories in non-malignant epithelium clusters. (G) The ridge plot showing the pseudotime of non-malignant epithelium revealed the gastric pre-lesion process. (H, I) Heatmap showing scaled expression of dynamic genes (G) and TFs (H) along cell pseudotime.
 
 To explore the origin of the premalignant cellular lineage and possible transition mechanism, we performed a single-cell analysis to reveal the developmental trajectories of various cell types in the non-malignant epithelium of GC (Figure 3F). The results showed that chief cells would differentiate into necks, and then the developmental path would divide these cells into two branches, one of which would develop into SPEM, whereas the other represents SPEM that could further develop into IM and enterocytes through transition states under a persistent inflammatory stimulus (Figure 3G). In addition, the pattern of pseudotemporal dynamic expression of specific representative genes and transcription factors (TFs) also supports the transition of chief cells to SPEM and IM metaplasia status and finally enterocytes (Figure 3H and I).
 
 In brief, our results reveal the transition of GC non-malignant epithelium from chief cells to neck cells, SPEM and IM, and finally to enterocytes, under chronic inflammation at the single-cell level, which may deepen our understanding of the role of H. pylori infection in GC.
 
-## Cellular characterization of T lymphoid cells of H. pylori infection-associated GC
+### Cellular characterization of T lymphoid cells of H. pylori infection-associated GC
 
 Tumor-infiltrating lymphocytes (TILs) are highly heterogeneous lymphocyte subsets. The activation of the different subsets of effector T cells influences the clinical outcome of H. pylori infection. Subclustering of T lymphoid cells and natural killer (NK) cells generated 11 main cell clusters in HC, non-HpGC, ex-HpGC, and HpGC (Figure 4A), including innate lymphoid cell (ILC, marked by KIT, LST1, and ZBTB16), NK1 (marked by TYROBP, GZMA, and CEBPD), NK2 (marked by NKG7, CCL3, GZMH, and EOMES), Treg (marked by FOXP3, BATF, and TIGIT), proliferative CD8_MKI67 (marked by MK167 and CXCL13), exhausted CD8_CXCL13 (marked by CXCL13 and TIGIT), CD8_GZMK (marked by GZMK, CCL4, and YBX3), effective CD8_IFNG (marked by IFNG, ATF3), cytotoxic CD8_GZMB (marked by GZMB, KLRC1, and MYBL1), naïve CD4_IL7R (marked by CCR7, SELL, and CD40LG), and CD4_CCR7 (marked by CCR7, SELL, and CD40LG) (Figure 4B and C, Supplementary file 4). The organization of the T cell compartment showed great differences in GC with different H. pylori infection status (Figure 4D). The exhausted CD8_CXCL13, CD8_MKI67, and Tregs were prominently enriched in ex-HpGC and HpGC samples compared to those in HC (p<0.05, Student’s t-test; Figure 4E), with a higher percentage in ex-HpGC and HpGC than in non-HpGC. The cytotoxic CD8_GZMB level was significantly decreased in ex-HpGC and HpGC (p<0.05, Student’s t-test; Figure 4E), which coincides with previous research indicating immunosuppression in the TME. The deconvolution analysis using The Cancer Genome Atlas (TCGA) GC bulk dataset (Bass and Thorsson, 2014) indicated that the abundance of Treg and CD8_CXCL13 were elevated in HpGC than non-HpGC (p=0.018, and = 0.12, respectively, Wilcoxon test; Figure 4F). Next, we calculated the cytotoxic and inhibitory scores across various T lymphoid cell types, revealing that two subtypes of NK cells have the highest cytotoxic score, indicative of apoptosis, and Tregs have the highest inhibitory score, implying immunosuppression (Figure 4G). Overall survival analysis demonstrated that a high proportion of Tregs and CD8_CXCL13 represent a worse prognosis (p=0.022 and=0.22, respectively, log-rank test; Figure 4H). TIGIT, an important immune checkpoint with ligands including PVR and NECTIN2, is highly expressed in various immune cell types, particularly in Tregs within the TME, and is emerging as an immunotherapy target (Chauvin and Zarour, 2020; Harjunpää and Guillerey, 2020; Ge et al., 2021). Interestingly, we also found that the suppressive T cells, including Treg and CD8_CXCL13, interacted closely with the malignant epithelium through TIGIT-PVR/NECTIN2 ligand–receptor pairs, with even stronger interactions between suppressive T cells and malignant epithelium M4 and M6 (Figure 4I). Interestingly, NECTIN2 and PVR were more enriched in ex-HpGC and HpGC, compared with non-HpGC (Figure 4J). Immunostaining of HpGC also revealed that suppressive TIGIT+ T cells were located close to the pan-CK+ NECTIN2+ malignant epithelium (Figure 4K, Figure 4—figure supplement 1), which supported the transcriptional findings that suppressive T cells could interact with the malignant epithelium through TIGIT–NECTIN2/PVR pairs. Collectively, we found that HpGC and ex-HpGC exhibits high expression levels of NECTIN2, PVR, and its target TIGIT, which may participate in immune escape in GC, indicated that blockade of TIGIT-NECTIN or TIGIT-PVR axes may be a promising immunotherapy modality for H. pylori infection-associated GC.
 
-## Cellular characterization of myeloid cells of H. pylori infection-associated GC
+![Figure 4.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig4-v1.jpg)
+
+**Figure 4.:** (A) Unbiased clustering of T and NK cells generated 11 clusters. (B, C) Molecular features annotations according to the top five differentially expressed genes (DEGs) (B), and representative genes (C). (D) Pie plot showing the T/NK cell subtype abundance distribution in HC, non-HpGC, ex-HpGC, and HpGC. (E) The percentage contribution of T/NK cell subtype in HC, non-HpGC, ex-HpGC, and HpGC samples. p-Values were assessed by Student’s t-test. (F) The deconvolution analysis showing the relative abundance of CD8_CXCL13 and Tregs in GC with different H. pylori infection status with The Cancer Genome Atlas (TCGA) stomach adenocarcinoma (STAD) dataset, p-values were assessed by Wilcoxon test. (G) The cytotoxic and inhibitory expression scores in T and NK clusters. (H) Kaplan–Meier survival analysis of TCGA STAD patients stratified by CD8_CXCL13 and Tregs relative abundance, which was used to group samples into high and low groups based on 33rd and 67th percentile. The p-value of two-sided log-rank test is shown. (I) Bubble plot showing intercellular interactions between suppressive T cells and malignant cells. (J) Dot plot showing the expression of NECTIN2 and PVR in malignant non-HpGC, ex-HpGC, and HpGC cells. (K) Immunostaining showing the ligand TIGIT expressed in suppressive T cells and the receptor NECTIN2 expressed on the malignant epithelium, respectively, in one HpGC sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig4-figsupp1-v1.jpg)
+
+### Cellular characterization of myeloid cells of H. pylori infection-associated GC
 
 Myeloid cells are also an important component of tumor-infiltrating immune cells, which play an important role in the regulation of tumor inflammatory responses and angiogenesis. Subclustering analysis of various myeloid cells in GC and normal gastric tissues (Figure 5A) revealed mast cells (marked by CPA3), neutrophils (marked by CXCR2, IL1R2), monocytes (marked by S100A9, EREG, and VCAN), FOLR2_TAM (marked by LYVE1 and FOLR2), TREM2_TAM (marked by TREM2), C1QC_TAM (marked by C1QC), VEGFA+SPP1+ Angio-TAM (marked by VEGFA and SPP1), and three subsets of dendritic cells (DCs, marked by CD1C, LAMP3, IDO1, and IRF8) (Figure 5B and C, Figure 5—figure supplement 1A). The proportion of TREM2_TAMs was significantly increased in HpGC and ex-HpGC, and Angio-TAMs were higher in HpGC tissues than in normal gastric tissues (p<0.05, Student’s t-test; Figure 5D). TREM2_TAMs exhibited high expression levels of complement genes such as C1QA/C1QB/C1QC, which are predictive factors of prognosis, whereas Angio-TAMs expressed chemokines such as CXCL3, CXCL5, CXCL8, and IL1RN, which are involved in the immune escape (Lin et al., 2019; Figure 5E and Supplementary file 5). Further signature enrichment analysis revealed that Angio-TAMs exhibited high expression levels of angiogenesis signature, whereas TREM2_TAMs exhibited a high level of M2 signature (Figure 5F). Immunostaining revealed that Angio-TAMs were mainly located in the tumor vasculature, whereas TREM2_TAMs were mainly located in the tumor stroma (Figure 5G, Figure 5—figure supplement 2). Furthermore, gene set variation analysis (GSVA) of upregulated genes revealed that TREM2_TAMs were enriched for PD1 signaling, innate immune system, and GC chemosensitivity, whereas Angio-TAMs were enriched for tumor angiogenesis, chemokines, HIF, VEGF pathway, and ECM organization involved in promoting the development of vascular and hypoxic tumors (Figure 5H). Furthermore, we found that TREM2_TAMs and Angio-TAM abundance were both highly correlated with Treg abundance (Figure 5I, Figure 5—figure supplement 1B), which supports the notion that TAMs play crucial roles in the modulation of Treg maturation and recruitment. Interestingly, the intercellular crosstalk analysis revealed different ligand–receptor axes between TREM2_TAM-Tregs and Angio-TAM-Tregs. The SPP1-CD44 axis and the ‘do not eat me’ axis THBS1-CD47, which is an immune checkpoint controlling CD8+ T cell activation and immune escape, were mainly enriched in Angio-TAM and Tregs. Additionally, we found Angio-TAM derived from HpGC or exHpGC showed higher expression of THBS1, VEGFA, and SPP1 than Angio-TAM of non-HpGC, and HC (Figure 5—figure supplement 1D). The immune checkpoint axes NECTIN2-TIGIT, CD86-CD28, CD86-CTLA4, CXCL16-CXCR6, and LGALS9-HAVCR2 (TIM3) were exclusively enriched in TREM2_TAM and Tregs (Figure 5J, Figure 5—figure supplement 1C). Furthermore, the deconvolution analysis in TCGA bulk GC transcriptome dataset revealed that the enrichment of Angio-TAMs was more significant in HpGC compared with non-HpGC (p=0.047, Wilcoxon test; Figure 5K) and was associated with poor prognosis of GC (p=0.0035, log-rank test; Figure 5L). Overall, our results revealed the heterogeneity and function differences of myeloid cells of GC with different H. pylori infection status, and decipher distinct roles of TREM2_TAM and Angio-TAM involved in gastric carcinogenesis and prognosis.
 
-## Transcriptomic diversity of cancer-associated fibroblasts in H. pylori infection-associated GC
+![Figure 5.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Unbiased clustering of myeloid cells generated nine clusters (A), and molecular features were annotated according to the top seven differentially expressed genes (DEGs) (B) and representative genes (C). (D) The percentage contribution of each myeloid cell cluster in HC, non-HpGC, ex-HpGC, and HpGC. p-Values were assessed by Student’s t-test. (E) Volcano plot showing the DEGs between Angio-TAM and TREM2+ TAM. (F) Violin plot showing the expression of functional gene sets in myeloid clusters. (G) Immunostaining showing the distribution of Angio-TAM and TREM2+ TAM in one HpGC sample. (H) Bar plot showing the enriched signaling pathway between Angio-TAM and TREM2+ TAM. (I) The correlation of cell type (percentage) between Tregs and Angio-TAM and TREM2+ TAM. (J) Dotplot showing intercellular interactions among suppressive T cells and Angio-TAM and TREM2+ TAM. (K) The relative abundance of Angio-TAM in HpGC and non-HpGC in the The Cancer Genome Atlas (TCGA) stomach adenocarcinoma (STAD) dataset, p-values were assessed by the Wilcoxon test. (L) Kaplan–Meier survival analysis of TCGA STAD patients stratified by Angio-TAM relative abundance, which was used to group samples into high and low groups based on the 33rd and 67th percentiles. The p-value of the two-sided log-rank test is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap showing the top seven TFs in different myeloid cell subtypes. (B) Heatmap showing the Pearson correlation coefficient of myeloid cell types and T/NK cell subtype abundance. (C) Bubble plot showing the expression of ligand–receptor gene pairs associated with immune signaling pathway networks: CD86, SN, and CXCL signaling pathways involved in the interactions between TAM and T cell subtypes. (D) Dot plot showing the expression of THBS1, VEGFA, FLT1 (VEGFR1), and SPP1 in TAM derived from HC and GC with distinct H. pylori infection status.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig5-figsupp2-v1.jpg)
+
+### Transcriptomic diversity of cancer-associated fibroblasts in H. pylori infection-associated GC
 
 Cancer-associated fibroblasts (CAFs), another major component of the TME, not only produce ECM but also secrete various molecules, including cytokines, chemokines, and growth factors, which are correlated with migration, infiltration, and EMT, thereby playing a role in GC development and resistance to immunotherapy (Chen and Song, 2019). Therefore, we focused on the molecular characteristics of CAFs. CAFs can be divided into six subpopulations, including three subsets of vascular-related CAF (vCAF) featuring the expression of microvasculature genes MCAM, RGS5, and MYH11; and two subsets of matrix CAF (mCAF) characterized by high expression of extracellular matrix (ECM) genes including PDGFRA, LUM, and DCN and inflammatory CAF (iCAF), which was identified by high expression of TWIST1, VEGFA and inflammatory chemokine genes CXCL5/8, IL11 (Nishina et al., 2021), and IL24 (Figure 6A–C, Figure 6—figure supplement 1A and Supplementary file 6). Interestingly, iCAF shared highly consistent transcriptome phenotype of iCAFs derived from human intrahepatic cholangiocarcinoma (Figure 6—figure supplement 1B; Zhang et al., 2020). The organization of the CAF compartment showed great differences in GC with different H. pylori infection status (Figure 6D) and the ratio of iCAF was significantly higher in HpGC tissues than in normal gastric tissues (p=0.023, Student’s t-test; Figure 6E) and the ex-HpGC also showed an increase trend (p=0.083, Student’s t-test; Figure 6E). Further enrichment analysis revealed that iCAF enriched chemokines, TGFβ, ECM, IL6 pathway, PDGFRA pathway, inflammatory response, hypoxia, tumor angiogenesis, and VEGF signaling pathway (Figure 6F), which are crucial for tumor progression, metastasis, and immune escape (Nishina et al., 2021). Additionally, the abundance of iCAF significantly correlated with Angio-TAM and suppressive Treg cells (Figure 6G), and the above results indicated an important role of iCAF in tumor TME regulation and immune escape.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig6-v1.jpg)
+
+**Figure 6.:** (A) Unbiased clustering of CAF generated six clusters. (B, C) Molecular features annotations according to the top ten differentially expressed genes (DEGs) (B) and representative genes (C). (D) The pie plot showing the abundance distribution of six cancer-associated fibroblast (CAF) subset in HC, non-HpGC, ex-HpGC, and HpGC. (E) The percentage contribution of each CAF cluster in HC, non-HpGC, ex-HpGC, and HpGC. p-Values were assessed by Student’s t-test. (F) Heatmap showing the enriched signaling pathway among six CAF clusters. (G) The cell type percentage correlation between iCAF and Treg, Angio-TAM, and TREM2+ TAM. (H) Heatmap showing intercellular interaction strength among immune cells and different subsets of CAF. (I) Enriched signaling pathway among suppressive T cell, Angio-TAM, and TREM2+ TAM with iCAF. (J) The relative abundance of iCAF in HpGC and non-HpGC in TCGA STAD dataset. p-Values were assessed by Wilcoxon test. (K) Kaplan–Meier plot shows that the abundance of iCAF predicts poor prognosis of GC using two public bulk RNA sequencing dataset (left, TCGA; right, ACRG). The abundance of iCAF was used to group samples into high and low groups based on 33rd and 67th percentile. The p-value of two-sided log-rank test is shown. ACRG: Asian Cancer Research Group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heatmap showing the top five TFs in different CAF subtypes. (B) Heatmap showing the Pearson correlation coefficient of CAF subtypes in human GC and ICC (GSE138709). (C) Kaplan–Meier survival analysis of 881 GC patients (km plotter database) stratified by high and low expression of iCAF associated genes IL11, IL23, VEGFA, TWIST1. The p-value of two-sided log-rank test is shown. (D) Dot plot showing the expression of IL11, IL24, PVR, VEGFA, and NECTIN2 in CAF subtypes derived from HC and GC with distinct H. pylori infection status.
+
 Further intercellular crosstalk analysis showed that iCAF had the strongest interaction with suppressive T cells and TAM, indicative of complex roles in the TME (Figure 6H). Specifically, the THBS, NECTIN, TIGIT, ANGPTL, and VEGF signaling pathways were enriched in the cellular interplay between iCAF and suppressive T cells and TAM (Figure 6I). Detailed ligand–receptor crosstalk analysis showed that iCAF interacts with CD8_CXCL13, Tregs mainly by NECTIN2-TIGIT ligand–receptor pair (Figure 6I), which strongly implied that H. pylori infection upregulates the expression of NECTIN2 in stromal cells that competitively bind to the TIGIT receptor on T cells, leading to the inhibition of T cell responses and immune escape of GC. In addition, angiogenesis-associated ligand–receptor pairs such as VEGFA/B-VEGFR1 and ANGPTL4-SDC2 were mainly enriched between iCAF and Angio-TAMs (Figure 6I). Interestingly, we found iCAF derived from HpGC showed higher expression of NECTIN2, VEGFA, PVR and inflammatory chemokine genes IL11 and IL24 compared to ex-HpGC, non-HpGC, and HC. Additionally, we found that the elevated expression level of IL11, VEGFA, IL24, and TWIST1 was correlated with poor prognosis in GC (p=0.14, p<0.05, p<0.05, and p<0.05, respectively, log-rank test; Figure 6—figure supplement 1C and D). Furthermore, the validation results by virtue of two public GC bulk RNA datasets (Cristescu et al., 2015; Bass and Thorsson, 2014) revealed that the abundance of iCAF was elevated in HpGC samples than non-HpGC (p=0.035, Wilcoxon test; Figure 6J) and was highly associated with poor prognosis in two public bulk transcriptomic dataset (p=0.12 and=0.007, respectively, log-rank test; Figure 6K). The above results indicated that iCAFs promoted tumor angiogenesis and immune suppression in H. pylori infection-associated GC, by upregulation of VEGFA/B-VEGFR1 pathway, and NECTIN2-TIGIT pathway.
 
-## Association of immune and stromal composition abundance with GC immunotherapy
+### Association of immune and stromal composition abundance with GC immunotherapy
 
 H. pylori infection has multiple immunomodulatory effects on the host, which can not only activate the immune response but also negatively regulate it, causing immune escape. However, the key cell players and molecular features for predicting the GC immunotherapy response remains largely unknown. To reveal the detailed molecular features of the H. pylori infection-associated GC TME for predicting the outcomes of immunotherapy, we performed the devolution analysis to evaluate the cell type abundance, immune checkpoint, and angiogenic signature expression in GC immunotherapy-treated bulk RNA sequencing dataset (Kim et al., 2018). GSEA and devolution analysis demonstrated a high abundance of iCAF and Angio-TAM in anti-PD-1 immunotherapy non-responsive (NR) patients, while CD8_CXCL13, CD8_GZMB, CD8_IFNG, and CD8_MKI67 were more abundant in anti-PD-1-responsive cases (Figure 7A and p<0.05, Student’s t-test; Figure 7—figure supplement 1A). The relative abundance of several cell clusters such as CD8_CXCL13, CD8_MKI67 had a remarkable correlation with improved anti-PD-1 overall survival (OS) and progression-free survival (PFS), while the abundance of iCAF and Angio-TAM was significantly associated with poor survival (Figure 7B and C). Furthermore, we defined an anti-PD-1 immune signature and an angiogenic signature (Figure 7D, Figure 7—figure supplement 1B) derived from the cell type signatures of scRNA-seq result and found that the immune signature was highly correlated with CD8_GZMK and CD8_GZMB, while the angiogenic signature highly correlated with iCAF and Angio-TAM (Figure 7—figure supplement 1C). Interestingly, we found that the expression of immune signature was higher in immunotherapy responsive GC cases than non-responsive cases, while the angiogenic signature showed the opposite trend (p<0.05, Wilcoxon test; Figure 7E). To better understand the cellular and molecular characteristics that react to immunotherapy, we constructed a comprehensive model comprising cellular composition and signature to evaluate the immunotherapy response of different parameters (Figure 7—figure supplement 1D and F). The results showed that immune signatures such as CXCL13, LAG3, TIGIT, and PDCD1, and cell types such as CD8_CXCL13 and TREM2_TAM had high diagnostic power to distinguish between anti-PD-1-responsive cases and non-responsive cases (area under the curve [AUC] >0.75). Additionally, the immune signature we defined also effectively distinguished anti-PD-1-responsive cases from non-responsive cases to achieve better anti-PD-1 immunotherapy prognosis (AUC = 0.755, Figure 7F), whereas the angiogenic signature had poor diagnostic ability for identifying anti-PD-1 responses as well as poor anti-PD-1 immunotherapy prognosis (AUC = 0.367, Figure 7F). Further Kaplan–Meier survival analysis revealed that the defined immune signature was correlated with better immunotherapy efficacy in terms of OS and PFS in GC while the angiogenic signature linked with poor immunotherapy response (p<0.05, log-rank test; Figure 7G, Figure 7—figure supplement 1). In brief, by integrating our single-cell transcriptional results of GC with public bulk RNA-seq data of immunotherapy-treated GC, we identified several cell types and molecules that could serve as indicators to predict the immunotherapy response of GC, thus flagging up individualized GC therapy.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig7-v1.jpg)
+
+**Figure 7.:** (A) Gene set enrichment analysis (GSEA) plot showing the enrichment of iCAF, CD8_MKI67, Angio-TAM, and CD8_CXCL13 in anti-PD-1-responsive or non-responsive GC. NES, normalized enrichment score. (B, C) Bar chart showing the cell subtypes relative abundance, the immune signature, angiogenesis signature derived from scRNA-seq predicted GC immunotherapy outcome, progression-free survival (B), and overall survival (C). (D) Heatmap showing the expression of immune and angiogenesis signature derived from scRNA-seq in immunotherapy responsive and non-responsive GC. (E) Violin plot showing the expression of immune signature and angiogenesis signature in immunotherapy responsive and non-responsive GC. The p-value of Wilcoxon test is shown. (F) A model for evaluating the GC immunotherapy sensitivity and specificity using the immune signature and angiogenesis signature derived from scRNA-seq. (G) The Kaplan–Meier plot showing the immune signature and angiogenesis signature could efficiently predict prognosis of GC anti-PD-1 therapy. The p-value of two-sided log-rank test is shown.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/99337/elife-99337-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Relative abundances of cell types identified using scRNA-seq data predicts GC immunotherapy efficacy, R: responsive, NR: non-responsive. p-Values were assessed by Wilcoxon test. (B) The immune and angiogenesis signature identified using scRNA-seq data predicts GC immunotherapy efficacy, R: responsive, NR: non-responsive. p-Values were assessed by Wilcoxon test. (C) Heatmap showing the Pearson correlations between cell subtypes and immune and angiogenesis signature identified in the GC TME. (D−F) Evaluation of the sensitivity of GC to immunotherapy based on immune signature, angiogenesis signature, and cell component. (G) Kaplan–Meier plot shows that the expression of Angio and Immune signature predicts anti-PD1 immunotherapy response (PFS) of GC.
 
 ## Discussion
 
@@ -103,52 +526,52 @@ This study has some limitations, and the main findings should be validated in a 
 
 ## Materials and methods
 
-## Acquisition of fresh tissue materials and preparation of a single-cell suspension
+### Acquisition of fresh tissue materials and preparation of a single-cell suspension
 
 Normal gastric tissue biopsy specimens were obtained from 2 to 3 gastric antrum sites through conventional upper gastrointestinal endoscopy using biopsy forceps. GC tissues were obtained immediately after surgical resection with a scalpel. The fresh tissue samples were then washed with phosphate-buffered saline (PBS) and divided into two parts. One part was processed into a single-cell suspension, and the second part was used for other experiments, including the detection of H. pylori DNA, H&E, and immunofluorescence staining. The patients’ serum was used to detect the IgG antibody of H. pylori. Patients with positive serum antibody and genomic DNA of H. pylori, and H. pylori observed on H&E slides, were defined as GC patients with current H. pylori infection (HpGC). Patients with positive serum antibody but negative genomic DNA had a history of H. pylori eradication or antibiotic use before surgery, and H. pylori cannot be observed on H&E slides. They were defined as GC patients with previous H. pylori infection (ex-HpGC). The negative detection of serum antibody and genomic DNA, as well as H&E, indicated that the volunteers never had H. pylori infection, which was defined as GC patients or healthy volunteers without H. pylori infection (non-HpGC and HC).
 
 The biopsy and surgical samples used to prepare the single-cell suspension were immediately put into a tissue preservation solution (Miltenyi Biotec, Germany) and transported to the field laboratory in an ice bath for immediate preparation of the single-cell suspension. Fresh tissue samples were washed with 4°C precooled Dulbecco’s Phosphate-Buffered Salines (DPBS, Solarbio, Beijing) for 2–3 times, cut into small pieces with surgical scissors, and then transferred to a 1.5 ml centrifuge tube. The tissue samples were incubated in a shaker at 37°C for 30–50 min with an in-house prepared enzymolysis solution (1 mg/ml type IV collagenase [Solarbio] + 10 U/μl DNase I DNase I [Roches]) or MACS Human Tumor Dissociation kit (DS_130-095-929, Miltenyi Biotec). The incubation was terminated when the digestive fluid turned turbid and the tissue block disappeared. The cell suspension was filtered with a 40-µm cell sieve and centrifuged at 4°C at 300 r/min for 5 min. After the supernatant was discarded, the cells were resuspended in 1 ml of DPBS, and 3 ml of precooled red blood cell lysate (Solarbio) were added. The cells were evenly aspirated, incubated at 4°C for 5–10 min, and centrifuged again. The cells were stained with 7-aminoactinomycin D (7-AAD, eBioscience, Cat# 00-6993-50) staining solution (100 μl 1% BSA/PBS + 5 μl 7-AAD) at 25°C for 5 min. Consequently, the individual cells with high quality were sorted by FACS and performed with a BD Aira II instrument and checked by staining them with trypan blue under the microscope for single-cell transcriptomic library construction.
 
-## Detection of H. pylori nucleic acid in the gastric mucosa
+### Detection of H. pylori nucleic acid in the gastric mucosa
 
 H. pylori in the human gastric mucosa was detected using a H. pylori nucleic acid detection kit (PCR-fluorescent probe method, Daan Gene, Guangzhou, China), according to the manufacturer’s protocols. Briefly, the following steps were performed: (1) DNA extraction: DNA extraction solution was added to the negative/positive quality controls and the samples to be tested. The solutions were treated at a constant temperature of 100°C for 10 min and centrifuged at 12,000 r/min for 5 min for later use; (2) fluorescence PCR: 2 μl samples were briefly centrifuged at 8000 r/min and then placed in a PCR machine, 50°C for 8 min, 93°C for 2 min, 93°C for 45 s→55°C for 1 min (10 cycles), 93°C for 30 s→55°C for 45 s (30 cycles), and 50°C for 45 s to collect fluorescence values. The system automatically analyzed the results to calculate the threshold cycle value (CT value); (3) quality control and results calculation: the fluorescence signal of the negative control material did not increase, the growth curve of the positive control material was S-shaped, and the Ct value was ≤ 27.04. The sample results were compared to those of the quality control material. H. pylori cagA was detected with the Nucleic acid test kit of H. pylori type I (fluorescent PCR method, Beijing Xinji Yongkang, China), and the method was carried out according to the manufacturer’s protocols.
 
-## Detection of serum antibody against H. pylori
+### Detection of serum antibody against H. pylori
 
 H. pylori IgG ELISA kit (IBL, Germany) was used to detect the presence of anti-H. pylori antibodies in the serum of the subjects, following the manufacturer’s instructions. The cut-off index (COI) was determined by dividing the OD at 450 nm value of the sample by the OD450value of the cut-off standard. The serum was considered positive for H. pylori if the COI was > 1.2, while the serum was considered negative if the COI < 0.8.
 
-## Single-cell sequencing and pre-processing data
+### Single-cell sequencing and pre-processing data
 
 We prepared single-cell RNA-seq libraries on the Chromium platform (10X Genomics, Pleasanton, CA) using the Chromium Next GEM Single-Cell 3’ Kit v2 following the manufacturer’s protocol to generate a complementary deoxyribonucleic acid (cDNA) library in Biomarker Technologies and Capitalbio Technology Corporation (China). Briefly, viable cells (7-AAD negative) with high quality were pooled together and washed thrice with RPMI-1640, concentrated to 700–1000 cells per μl, and then immediately loaded onto a 10×microfluidic chip (10X Genomics, v4) to generate single-cell mRNA libraries and then sequenced across six lanes on an Illumina X Ten or NovaSeq 6000 system (Illumina, Inc, San Diego, CA). Raw sequencing data were aligned to the GRH38 reference genome using the cellranger (10X Genomics, v4) count function. The count matrixes of gene expression from each sample were imported into the Seurat v4.1 (Stuart et al., 2019). We selected high-quality cells for further analysis following three measurements: (1) cells had either over 2001 unique molecular identifiers (UMIs), fewer than 6000 or more than 301 expressed genes or fewer than 20% UMIs derived from the mitochondrial genome; (2) genes expressed in more than 10 cells in a sample; and (3) cell doublets were removed using the DoubletFinder R package (v2.0.3) (McGinnis et al., 2019). The cell-by-gene expression matrixes of the remaining high-quality cells were integrated with the RunFastMNN function provided by the SeuratWrappers R package (v0.4.0) and then normalized to the total cellular UMI count. The union of the top 2000 genes with the highest dispersion for each dataset was used to generate an integrated matrix. We then performed data normalization, dimension reduction, and cluster detection as previously reported (Zhang et al., 2021). Briefly, the gene expression matrices were scaled by regressing the total cellular UMI counts and percentage of mitochondrial genes. Principal component analysis was conducted using highly variable genes, and the top 30 significant principal components were selected to perform Uniform Manifold Approximation and Projection (UMAP) dimension reduction, and visualization of gene expression. We annotated cell subclusters with similar gene expression patterns as the same cell type, and cell types in the resulting two-dimensional representation were annotated to known biological cell types using canonical marker genes.
 
-## Detection of single-cell CNVs
+### Detection of single-cell CNVs
 
 We employed the inferCNV (Tirosh et al., 2016) R package (https://github.com/broadinstitute/inferCNV/wiki, v1.22.0, Georgescu C and Haas, 2025) to distinguish malignant and non-malignant epithelia of GC, and the initial CNV signal of each region was estimated based on the expression level from the scRNA-seq results with default parameters.
 
-## Pathway enrichment and cell type abundance deconvolution analysis
+### Pathway enrichment and cell type abundance deconvolution analysis
 
 To illustrate the enriched signaling pathways of fibroblast and myeloid subtypes, we used the GSVA (v2.0.6) (Hänzelmann et al., 2013) package to assess pathway differences using the C2 curated gene set provided by the Molecular Signatures Database, which was calculated with a linear model offered by the limma package. We used the GSVA (Hänzelmann et al., 2013) package to calculate the abundance of malignant epithelium subclusters in H. pylori-positive GC using the TCGA (Bass and Thorsson, 2014) and Asian Cancer Research Group (ACRG) cohorts (Cristescu et al., 2015). We used GSEA package to calculate the distribution of gene sets and cell type-specific signatures (top 30 DEGs) in lists of genes ordered by population expression differences.
 
-## Malignant epithelium differentiation score
+### Malignant epithelium differentiation score
 
 To assess the malignant epithelium differentiation heterogeneity at single cell level, we included a tumor differentiation-associated signature to evaluate the GC differentiation heterogeneity based on our previous study (Zhang et al., 2021), including PHGR1, MUC13, MDK, KRT20, LGALS4, GPA33, CLDN3, CLDN4, and CDH17, and then we employed the ‘AddModuleScore’ function of Seurat R package to calculate the differentiation degree of each tumor cell based on the expression level of differentiation-associated signature.
 
-## TCGA data analysis
+### TCGA data analysis
 
 For the analysis of the correlation of tumor differentiation score and cell subtypes abundance with patients’ clinical outcome, we employed the GSVA to calculate the differentiation score and cell subtypes abundance in each TCGA stomach adenocarcinoma (STAD) sample based on the tumor differentiation signature and the top 30 DEGs of each cell subtype, and then grouped samples into high and low groups based on 67th and 33rd percentile, respectively (Cheng et al., 2021). Kaplan–Meier survival curves were plotted using the R package ‘survminer’ (v0.4.9).
 
-## Immunotherapy response and prognosis analysis
+### Immunotherapy response and prognosis analysis
 
 GC immunotherapy bulk RNA-seq data, along with curated clinical data from patients, were obtained from a previous study (Kim et al., 2018). To evaluate the association between the signatures of immune and stromal subtypes identified in our study and immunotherapy response to GC patient survival, the GSVA (Cheng et al., 2021) was used to calculate the combined expression value of the cell type-specific signatures (top 30 DEGs). We classified the patients into high and low groups based on the 50th percentile of cell subtypes abundance. Kaplan–Meier survival curves were plotted using the R package ‘survminer’. Subsequently, a Cox proportional hazards model was conducted that included age and tumor stage. The results of the Cox regression model among the cell subtypes were visualized using weighted Z-scores.
 
-## Trajectory analysis
+### Trajectory analysis
 
 To explore the potential differentiation routines between the non-malignant epithelium of GC, we performed trajectory analysis using the monocle R package as previously reported (v3.0) (Trapnell et al., 2014). First, we constructed the monocle object using the ‘newCellDataSet’ function, and the differentially expressed genes calculated via the ‘differentialGeneTest’ function were selected for trajectory analysis. Then ‘DDRTree’ function was used for dimensionality reduction and the ‘plot_cell_trajectory’ function for visualization.
 
-## Intercellular crosstalk
+### Intercellular crosstalk
 
 We used the Cellchat (Jin et al., 2021) package (v0.0.2) to infer the intercellular communications and significant ligand–receptor pair of the H. pylori infection-associated GC TME, following a standard pipeline implemented in R (https://github.com/sqjin/CellChat; Jin, 2023). We first set the ligand–receptor interaction list in humans and projected the gene expression data onto the protein–protein interaction network by identifying the overexpressed ligand–receptor interactions. To obtain biologically significant cell–cell communication, the probability values for each interaction were calculated by performing permutation tests. The inferred intercellular communication network of each ligand–receptor pair and each signaling pathway was summarized and visualized using circle plots and heatmaps.
 
-## Multilabeled immunofluorescence staining and multispectral imaging
+### Multilabeled immunofluorescence staining and multispectral imaging
 
 A PANO 7-plex IHC kit (cat# 10004100100; Panovue, Beijing, China) was used to perform multiplexed immunofluorescence staining. Slides were placed in a 65°C oven overnight to for deparaffinization, and tissues were sequentially treated with xylene, ethanol, and distilled water. Slides were then microwaved (with antigen retrieval solution [citric acid solution, pH6.0/pH9.0]) and sequentially incubated with different primary antibodies and horseradish peroxidase-conjugated secondary antibodies (100 μl/tissue, Supplementary file 7). This incubation was followed by tyramide signal amplification (TSA Fluorescence Kits, Panovue). The slides were washed with 1× PBST after each incubation and microwaved after each round of TSA. After all the antigens were labeled, the nuclei were stained with 4'–6'-diamidino-2-phenylindole (DAPI, Sigma-Aldrich, MO). Stained slides were scanned using a Mantra system (PerkinElmer, Waltham, MA) to obtain multispectral images.

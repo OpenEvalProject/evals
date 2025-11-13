@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.49452.001 Rising and more variable global temperatures pose a challenge for biodiversity, with reproduction and fertility being especially sensitive to heat. Here, we assessed the potential for thermal adaptation in sperm and egg function using Tribolium flour beetles, a warm-temperate-tropical insect model. Following temperature increases through adult development, we found opposing gamete responses, with males producing shorter sperm and females laying larger eggs. Importantly, this gamete phenotypic plasticity was adaptive: thermal translocation experiments showed that both sperm and eggs produced in warmer conditions had superior reproductive performance in warmer environments, and vice versa for cooler production conditions and reproductive environments. In warmer environments, gamete plasticity enabled males to double their reproductive success, and females could increase offspring production by one-third. Our results reveal exciting potential for sensitive but vital traits within reproduction to handle increasing and more variable thermal regimes in the natural environment.
+Rising and more variable global temperatures pose a challenge for biodiversity, with reproduction and fertility being especially sensitive to heat. Here, we assessed the potential for thermal adaptation in sperm and egg function using Tribolium flour beetles, a warm-temperate-tropical insect model. Following temperature increases through adult development, we found opposing gamete responses, with males producing shorter sperm and females laying larger eggs. Importantly, this gamete phenotypic plasticity was adaptive: thermal translocation experiments showed that both sperm and eggs produced in warmer conditions had superior reproductive performance in warmer environments, and vice versa for cooler production conditions and reproductive environments. In warmer environments, gamete plasticity enabled males to double their reproductive success, and females could increase offspring production by one-third. Our results reveal exciting potential for sensitive but vital traits within reproduction to handle increasing and more variable thermal regimes in the natural environment.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ One of the most important abiotic environmental variables is temperature (Cossin
 
 ## Results
 
-## Sperm morphological divergence and plasticity
+### Sperm morphological divergence and plasticity
 
 Following 54 generations of experimental evolution under increased temperature, we found that at both development temperatures sperm length differed by an average of ~4% between long-term selection regimes, with males from lines evolved at 38°C producing significantly longer sperm than males from lines evolved at 30°C (effect size β = 3.4, t1,14 = 3.4, p=0.004; eight lines per regime, five males per line, and five sperm per male, Figure 2 and Table 1). In contrast, a within-generation increase in temperature during pupation and post-eclosion maturation reduced sperm length development irrespective of evolutionary background, with sperm produced at 38°C being ~7% shorter, and indicating developmental plasticity in sperm size (β = −6.3, t1,24 = -11.2, p<0.001; Figure 2). The interaction between selection regime and the development environment was not significant (β = 0.5, t1,24 = 0.4, p=0.672). Male body sizes of 30°C and 38°C thermal selection lines (TSLs) did not differ (F1,78 = 0.38, p=0.53), and similarly we found no evidence for body size divergence between 30°C or 38°C thermal environments from the pupal stage in the ancestral stock population (the Krakow Super Strain, KSS) (F1,46 = 0.90, p=0.35).
 
@@ -41,17 +41,189 @@ Following 54 generations of experimental evolution under increased temperature, 
 
 **Figure 2.:** Symbol fill colour represents long-term background (30°C TSLs in blue, 38°C TSLs in red and KSS in yellow) while outline colour represents short-term exposure temperature (30°C blue, 38°C red; Figure 1b). (a) Sperm length in µm ± SEM of the experimentally evolved TSLs, measured either following production from pupation in their long-term thermal environment (highlighted in shaded boxes) or at the reciprocal temperature. (b) Sperm length of mature KSS males exposed to either 30°C or 38°C from pupation through eclosion.
 
-## Egg morphological divergence and plasticity
+**Table 1.**
+ Sperm and egg length in relation to long-term selection and short-term exposure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Temperature</th>
+      <th>Sperm length</th>
+      <th>N</th>
+      <th>Egg length</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30°C TSL</td>
+      <td>30°C</td>
+      <td>88.4 ± 5.2</td>
+      <td>40</td>
+      <td>615.4 ± 51.5</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>30°C TSL</td>
+      <td>38°C</td>
+      <td>81.9 ± 7.9</td>
+      <td>40</td>
+      <td>685.5 ± 42.2</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>38°C TSL</td>
+      <td>30°C</td>
+      <td>91.5 ± 4.9</td>
+      <td>40</td>
+      <td>638.4 ± 48.3</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>38°C TSL</td>
+      <td>38°C</td>
+      <td>85.5 ± 4.3</td>
+      <td>40</td>
+      <td>682.7 ± 42.7</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>30°C</td>
+      <td>89.3 ± 4.1</td>
+      <td>26</td>
+      <td>662.6 ± 39.4</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>38°C</td>
+      <td>84.3 ± 4.8</td>
+      <td>26</td>
+      <td>697.9 ± 48.4</td>
+      <td>180</td>
+    </tr>
+  </tbody>
+</table>
+
+_Shown are mean, standard deviation and sample size (sperm: number of males; eggs: number of eggs) for sperm length and egg length measured in individuals from temperature selection lines (TSL) and the ancestral population (KSS), exposed to different temperatures from pupation onward (see main text and Figures 1–3)._
+
+### Egg morphological divergence and plasticity
 
 Egg size also showed divergence and plasticity in relation to thermal regime. In contrast to sperm, egg size showed an increase in response to a hotter proximate temperature (β = 70.0, t1,14 = 13.9, p<0.001; Figure 3a and Table 1). However, there was a significant interaction between long-term selection regime and short-term temperature exposure (β = −25.7, t1,14 = -3.6, p=0.003; Figure 3a). Following 58 generations of experimental evolution (logistic contraints prevented simultaneous measurement at generation 54 when sperm lengths were assayed), eggs of females from TSLs evolved at 38°C were larger than those of 30°C TSL females when produced at 30°C (β = 23.0, t1,14 = 3.2, p=0.006), but were very similar in size when produced at 38°C (β = −2.8, t1,14 = -0.4, p=0.677).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49452/elife-49452-fig3-v1.jpg)
+
+**Figure 3.:** Symbol fill colour represents long-term background (30°C TSLs in blue, 38°C TSLs in red and KSS in yellow) while outline colour represents short-term exposure temperature (30°C blue, 38°C red; Figure 1b). (a) Egg length in µm ± SEM of the experimentally evolved TSLs, measured either following production in their long-term thermal environment (highlighted in shaded boxes), or at the opposite temperature. (b) Egg length produced by mature KSS females exposed to either 30°C or 38°C for mating and oviposition, measured across three experimental replicates (grey lines). (c) Egg length of KSS females mated to a standard KSS male ovipositing individually either at 30°C or 38°C for 10 days in two-day intervals. The two bold-face lines indicate the averages across all females within a given treatment, while thin lines show average values for individual females. (d) Egg length of groups of 50 females, mated to standard KSS males, and ovipositing alternately at 30°C and 38°C for 12 days in two-day intervals. Egg width did not differ between thermal regimes, demonstrating that oviposition temperature increased egg volumes (Figure 3—figure supplements 1 and 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49452/elife-49452-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Additional points in the centre within the boxes indicate the sample means (N = 20 females; five eggs per female; 30°C = square; 38°C = circle). Average egg widths of individual females are indicated as jittered points within the box plots. Box plots indicate the median (horizontal line in the centre) and interquartile ranges (IQR), with whiskers indicating data within 1.5 IQR.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49452/elife-49452-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** There was no significant interaction between the two oviposition temperatures and egg morphology. We measured five eggs from each of 20 individual KSS females that had oviposited for 48 hr at either 30°C or at 38°C. Coloured lines represent linear regression predictions (blue = 30°C and red = 38°C). The volume of the egg (V) was calculated as 0.79 mm3 at 30°C and 1.00 mm3 at 38°C (i.e. a 21% change in egg volume), assuming egg shape is an oblate ellipsoid (formula; V = 4/3 π a2 b; a = length along the long axis [µm] and b = egg width [µm]).
+
 Egg size was also thermally plastic in standard ancestral stock Krakow Super Strain (KSS) females, and showed significant divergence according to adult rearing and oviposition temperature when assessed in three experimental repeats. KSS females produced larger eggs when ovipositing at 38°C compared to 30°C (β = 35.3, t1,356 = 8.2, p<0.001; 50 females per group and 60 eggs measured per group at either rearing temperature, Figure 3b). In addition, this plasticity was shown by individual females ovipositing alone at either 30°C or 38°C (β = 81.5, t1,42 = 11.6, p<0.001; Figure 3c), and was reversible when females were alternated between 30°C and 38°C thermal environments (β = 58.9, t1,4 = 7.3, p=0.002; Figure 3d). Egg width was not different between the oviposition temperatures (F1,198 = 0.1, p=0.686, Figure 3—figure supplements 1 and 2) and the interaction between oviposition temperature and egg length was not statistically significant (t = −0.77, p=0.44), demonstrating that oviposition temperature increased egg volumes (see Figure 3—figure supplement 2 for volume calculations).
 
-## Adaptive sperm plasticity
+### Adaptive sperm plasticity
 
 As for the selection lines, sperm size was thermally plastic in ancestral stock KSS males, and showed significant divergence according to rearing temperatures (two experimental repeats), with KSS males producing significantly shorter sperm when reared at 38°C compared to 30°C (β = −5.1, t1,49 = -7.0, p<0.001; Figure 2b and Table 1). To test for the adaptive value of any functional plasticity, the performance of sperm from males of the same ancestral KSS population reared from pupation at either 30°C or 38°C was tracked by comparing the total number of offspring sired across 100 days of oviposition by KSS females at either 30°C or 38°C (Figure 4a and Table 2), by which time all females in the experiment had exhausted their viable sperm stores (Michalczyk et al., 2010) and ceased to produce offspring (Figure 4b and c). Reproduction was generally sensitive to the proximal thermal environment, with on average 299 (± 20.8, mean ± s.e.m.) offspring eclosing at 30°C, compared with 135 (± 10.3, mean ± s.e.m.) at 38°C (β = −5.8, F1,104 = 69.8, p<0.001). Despite these overall differences, it was clear that the thermal regime in which sperm production and insemination took place also gave individual males a reproductive advantage when matched to the same thermal environment for fertilisation and offspring development (Figure 4a). Indeed, the interaction between spermatogenesis temperature (sperm production) and offspring production temperature was highly significant (β = 7.5, F1,104 = 29.6, p<0.001), while the main effect of male treatment was not significant (β = 0.7, F1,104 = 1.1, p=0.290). Sperm from males exposed as pupae and maturing adults to 30°C achieved greater reproductive success in the 30°C reproductive environment than sperm from males that completed development at 38°C. By contrast, in the 38°C reproductive environment sperm produced by males in the 38°C treatment achieved double the reproductive success compared with sperm from males developed through the 30°C treatment. Across 100 days of oviposition in the 30°C reproductive environment, males reared at 30°C sired an average of 349 (± 29.1, mean ± s.e.m.) offspring, while males reared at 38°C sired 249 (± 27.1, mean ± s.e.m.) offspring. Using the same protocols in the 38°C reproductive environment, males reared at 38°C sired 180 (± 12, mean ± s.e.m. offspring), while males reared at 30°C sired only 91 (± 12, mean ± s.e.m.) offspring (Figure 4a and Table 2). Exploration of the temporal patterns of these effects showed a clear decline in reproduction across consecutive 10-day blocks, and that sperm matched to the fertilisation and development temperature consistently outperformed sperm that were thermally mismatched (Figure 4b and c). Our model comparison based on AIC values confirmed that the interaction between male rearing temperature and fertilisation temperature was important: the best model included the main effects of male temperature, offspring temperature and time, and the interaction between male and offspring temperature for both parts of the model, and additionally the interaction between rearing temperature and time for the zero-inflation model (Supplementary files 1 and 2).
 
-## Adaptive egg plasticity
+![Figure 4.](https://cdn.elifesciences.org/articles/49452/elife-49452-fig4-v1.jpg)
+
+**Figure 4.:** Reproductive output of ancestral KSS males following a 24 hr mating bout with a single female. Symbol outline colour represents male short-term exposure temperature (30°C blue, 38°C red) while background colour indicates fertilisation and offspring development temperature (30°C blue, 38°C red; see Figure 1c). (a) Total offspring produced over a 100d period across ten 10 day blocks from sperm produced in either 30°C or 38°C conditions when functioning in either 30°C or 38°C reproductive environments. Temporal patterns in 30°C and 38°C environments are illustrated in (b and c), respectively (note the log-scale of the Y-axis). Analyses of individual male reproductive performance and average sperm length across a range of thermal regimes indicate a longer-sperm advantage in this system (Figure 4—figure supplement 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49452/elife-49452-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Point fill colour represents the temperature at which males were reared from pupation while outline and regression line colour represent fertilisation and offspring development temperature (30°C blue, 38°C red). Regression lines show back-transformed predictions from a linear model on log-transformed reproductive output with sperm length, unique combination of rearing and fertilisation temperature (four level factor) and their interaction as predictors (sperm length: F1,44 = 68.4, p<0.001; temperature: F3,44 = 68.4, p<0.001; interaction: F3,44 = 4.4, p=0.009).
+
+**Table 2.**
+ Adaptive thermal plasticity in sperm and eggs improves gamete performance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">Sperm</th>
+      <th colspan="2">Eggs</th>
+    </tr>
+    <tr>
+      <th>Line</th>
+      <th>Gamete production</th>
+      <th>Gamete performance</th>
+      <th>Offspring</th>
+      <th>N</th>
+      <th>Viability</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KSS</td>
+      <td>30°C</td>
+      <td>30°C</td>
+      <td>349.5 ± 151.5</td>
+      <td>27</td>
+      <td>90 ± 2%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>38°C</td>
+      <td>30°C</td>
+      <td>248.8 ± 140.9</td>
+      <td>27</td>
+      <td>80 ± 5%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>30°C</td>
+      <td>38°C</td>
+      <td>91.0 ± 61.8</td>
+      <td>27</td>
+      <td>78 ± 8%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>38°C</td>
+      <td>38°C</td>
+      <td>179.6 ± 61.8</td>
+      <td>27</td>
+      <td>80 ± 3%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>30°C</td>
+      <td>40°C</td>
+      <td></td>
+      <td></td>
+      <td>27 ± 5%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KSS</td>
+      <td>38°C</td>
+      <td>40°C</td>
+      <td></td>
+      <td></td>
+      <td>36 ± 5%</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+_Sperm performance was measured by mating focal males to tester females and counting all offspring produced over a 100d period. Egg performance was measured as the proportion of eggs that developed into adult offspring, tested in groups of 50 eggs (see main text and Figures 3 and 4)._
+
+### Adaptive egg plasticity
 
 The performance of eggs produced by ancestral stock KSS females (mated to 30°C-reared KSS males) ovipositing at either 30°C or 38°C was compared by measuring egg-to-adult offspring viability of pre-counted groups of 50 eggs when incubated and reared at either 30°C, 38°C or 40°C (Table 2). There was a significant interaction between oviposition thermal regime and the environmental temperature treatments at which the eggs were incubated, and offspring hatched and developed (z = −4.1, p<0.001; Figure 5). Thus, there was similar evidence of adaptive egg plasticity as for sperm, although this was only evident in the 30°C and 40°C environmental treatments (Figure 5 and Table 2). Post hoc testing showed that at 30°C eggs oviposited at 30°C achieved significantly greater egg-to-adult offspring viability rates than eggs oviposited at 38°C (z = 4.6, p<0.0001), whereas the opposite was true at 40°C (z = 3.01, p=0.01) where 30°C-oviposited eggs resulted in 25% fewer offspring than 38°C-oviposited eggs. In the 38°C environment, there was no evidence for any adaptive plasticity in egg biology, with the same relative number of eggs from the 30°C and 38°C regime females hatching and producing adult offspring (Figure 5 and Table 2).
 
@@ -81,7 +253,45 @@ In addition to the potential for adaptive plasticity within gamete function, rep
 
 ## Materials and methods
 
-## Model system, selection lines and thermal exposure
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Tribolium castaneum)</td>
+      <td>Krakow Super Strain ancestral stock and Thermal Selection Lines at 30°C and 38°C</td>
+      <td>KSS: Dickinson, 2018 Sales, 2019 TSL: this paper and Dickinson, 2018 Sales, 2019</td>
+      <td>KSS &amp; TSL30 or TSL38</td>
+      <td>Live beetles</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Tribolium castaneum)</td>
+      <td>Spermatozoa and ova</td>
+      <td>This paper</td>
+      <td>Sperm and eggs</td>
+      <td>Sperm recovered from sacrificed live males, eggs recovered from oviposition food medium</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Studio</td>
+      <td>R Studio (RStudio Team, 2016) in R (R Development Core Team, 2017) (version 3.4.1)</td>
+      <td>R Studio version 1.1.463 and R version 3.4.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Model system, selection lines and thermal exposure
 
 Tribolium castaneum flour beetles were maintained as previously described (e.g. Lumley et al., 2015; Godwin et al., 2017) in a 16 hr: 8 hr light: dark photoperiod at 60 ± 10% relative humidity in small stock populations in ad libitum fodder comprising 90% organic white flour, 10% brewer’s yeast and a sprinkling of rolled oats to aid traction. Approval for the research was granted by UEA's Animal Welfare and Ethical Review Board. To identify males from females in mating pairs, individuals were marked with a small dot on the dorsal thorax with correction fluid (Tippex, France) (Walker and Wineriter, 1981). We used beetles from the Krakow Super Strain (KSS) in this study, a wild-type outbred lab strain created in 2008 by breeding together eleven different strains, and maintained since at 30°C (see Dickinson, 2018).
 
@@ -89,7 +299,7 @@ The thermal selection lines were established in 2010 and maintained since as eig
 
 To measure the impacts of thermal regime on gamete biology, beetles were exposed to either 30°C, 38°C or 40°C temperatures in a controlled environment facility. Thermal exposure was regulated within a controlled environment facility held at 30°C, or in A.B. Newlife 75 Mk4 forced air egg incubators (A.B. Incubators, Suffolk, UK) at 38°C within the facility. 30°C is our standard rearing temperature, and the optimum laboratory temperature for population productivity in T. castaneum is 35°C (Sokoloff, 1974; Sales, 2019). 38°C approaches the upper thermal limit across more sensitive juvenile stages (Dickinson, 2018; Sales, 2019), and this temperature has been recorded in 150 countries (Mherrera, 2019). Our experimental exposure to this thermal regime will have relevance to more extreme thermal conditions and heatwaves, predicted to increase in frequency, severity and duration under climate change (e.g. Perkins et al., 2012), and which we know specifically constrain reproduction and sperm function in this system (Sales et al., 2018).
 
-## Gamete measurements
+### Gamete measurements
 
 Measures of mature sperm were performed following microdissection (see Godwin et al., 2017) and eggs were sieved from fodder following oviposition (Figure 6). Flour beetle eggs are oblong in shape, and size was quantified by measuring length across the long axis of rotational symmetry of the egg. Initial measures of length and width revealed a positive correlation between the two measures across 100 individual eggs, so a single length measure was used to quantify egg size. Eggs were sieved from the fodder using mechanical sieves (pore size: 300 µm, Endecotts Ltd, London, UK), and placed on a dark tile using a fine paintbrush. Eggs from the fodder were coated with a single layer of flour, and were measured at x30 magnification using a Zeiss Discovery V12 binocular microscope, AxioCam MRc5 camera and AxioVision V5.1 imaging software. Mature sperm were recovered from the base of the testicular follicles dissected out of males frozen at –6°C. Follicles were isolated on microscope slides in 30 µl drops of insect saline (0.9% NaCl), and then ruptured using fine forceps under an Olympus SZX9 binocular microscope. Once ruptured, sperm were dispersed by spreading out the area of the saline drop across the microscope slide using fine forceps, and the smears left to dry at room temperature so that the sperm cells lay in flat two-dimensional planes adhering to the glass. Images of intact spermatozoa were captured at 600X magnification under dark-field phase contrast using an Olympus BX41 microscope connected to a GT Vision GX CAM digital camera and GXCapture 8.2 software (GT Vision Ltd, UK). Sperm length was measured by creating a segmented line that traced the entire length of the cell using the ‘ImageJ’ analysis package and segmented line tool (Schneider et al., 2012). Previous work shows this approach has high repeatability (Godwin et al., 2017).
 
@@ -97,7 +307,7 @@ Measures of mature sperm were performed following microdissection (see Godwin et
 
 **Figure 6.:** Sperm length was measured at 600X magnification in Image J by drawing segmented lines along the backbone of the cell (a and b). Egg lengths were measured along the long axis of each ovoid at 30X magnification (c and d). Further details in Godwin et al. (2017).
 
-## Long-term and short-term gamete divergence (Figure 1a and b)
+### Long-term and short-term gamete divergence (Figure 1a and b)
 
 We assessed the impact of temperature on development of gamete sizes following both long-term and short-term variation in thermal regime. Responses to long-term variation were measured following five years of selection (50+ generations) within replicate lines maintained in either ‘warm’ (30 ± 1°C) or ‘hot’ (38 ± 1°C) conditions. To measure impacts of short-term thermal variation we created duplicates of each of the eight replicate 30°C and 38°C lines at generation 54 to measure sperm effects and 58 for egg effects, and reared these at both 30°C and 38°C (Figure 1b) using a balanced, factorial design. Logistic contraints prevented simultaneous measurement at generation 54. To measure effects on sperm, males were exposed to either temperature from the pupal stage in 6 cm Petri dishes containing 15 ml of standard fodder, with adults allowed to emerge in groups of 20 per dish at their treatment temperature (Figure 1b). Ten days later, when reproductively mature, they were frozen for dissection and sperm measurement. We also measured full body size of males from both regimes (N = 80; five males from each of eight lines across two regimes). Sperm length variation was measured in five males per replicate line, recovering sperm from frozen males and measuring the total length of five sperm per male (=200 sperm measures from 40 males across eight lines in each of four thermal x selection treatment combinations).
 
@@ -105,7 +315,7 @@ To measure temperature effects on eggs, mature adult females from eight replicat
 
 We also measured gamete size plasticity in the ancestral KSS stock population maintained at 30 ± 1°C, following methods for testing gamete size plasticity as above. Males were developed from pupae at either 30°C or 38°C and, ten days following emergence, five sperm and body length were measured from each of 26 males per treatment. Eggs were measured in three experimental blocks, within which two groups of 50 KSS females (eclosed and mated at 30°C with standard KSS males also developed at 30°C) oviposited at either 30°C or 38°C for two days in 100 ml jars with perforated lids and 80 ml of standard fodder. We measured 60 eggs per oviposition group (total N = 3600 eggs). Two additional tests measured short-term thermal impacts on egg size: the first measured egg size plasticity within individual females (N = 20 at 30°C and N = 20 at 38°C), with 40 KSS females mated to individual 30°C-developed KSS males for 24 hr at 30°C, after which 20 each were randomly allocated to oviposit at either 30°C or 38°C in 4 ml vials containing 0.5 g of standard fodder, transferring females to new vials every two days for a total of ten days, and eggs measured (length and width, µm) from vials immediately after females had been transferred on (Figure 1bi). The second test examined short-term reversibility of egg size in a group of 50 KSS mated females which were alternated for oviposition between 30°C and 38°C thermal regimes every two days for a total of 12 days, starting at 30°C (Figure 1bii). Females had been mated to standard 30°C-developed KSS males, and kept in 100 ml jars containing 80 ml of standard fodder, and 30 eggs per jar were measured immediately after transfers (total N = 180 eggs).
 
-## Assessing the adaptive significance of gamete plasticity (Figure 1c)
+### Assessing the adaptive significance of gamete plasticity (Figure 1c)
 
 To measure adaptive plasticity in sperm, we reared KSS male pupae through either 30 ± 1°C or 38 ± 1°C temperatures as described above, and then tested the relative performance of sperm from eclosed males within KSS females and ova that were maintained in either 30 ± 1°C or 38 ± 1°C fertilisation and oviposition regimes for 100 days. Male pupae were isolated from the KSS stock population and completed development to eclosion in groups of 20 in 6 cm plastic Petri dishes with ad libitum fodder at either 30 ± 1°C or 38 ± 1°C. Three of these male groups (N = 60 pupae) were reared and maintained at 30°C, and three (N = 60 pupae) at 38°C.
 
@@ -113,7 +323,7 @@ When sexually mature at 10 days post eclosion, individual males from either the 
 
 To measure the adaptive significance of egg plasticity, we isolated eggs that had been developed and laid at either 30 ± 1°C or 38 ± 1°C temperatures from KSS adults, and then tested their egg-to-adult viability through either 30 ± 1°C, 38 ± 1°C or 40 ± 1°C thermal regimes. To generate phenotypic divergence in egg biology, groups of 300 females previously mated to KSS males at 30°C oviposited for 2 days at either 30 ± 1°C or 38 ± 1°C (two groups at either temperature) in 1200 ml tubs containing 600 ml of standard fodder. 600 eggs per group were sieved and isolated from the flour, counted, and transferred in clutches of 50 to develop in 100 ml jars containing yeast-free fodder (applying stronger environmental selection on offspring development). Egg clutches produced at either 30°C or 38°C were transferred to hatch and develop at either 30°C, 38°C or 40°C, with eight groups assayed in each of these three temperature treatments (=2400 eggs assayed across a total of 48 treatment groups).
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were carried out using R Studio (RStudio Team, 2016) (v 1.1.463) in R (R Development Core Team, 2017) (version 3.4.1) with Rmisc (Hope, 2013), multcomp (Hothorn et al., 2008), car (Fox and Weisberg, 2011), MASS (Venables and Ripley, 2002), glmmTMB (Brooks et al., 2017) and lmerTest (Kuznetsova et al., 2017) packages for data exploration and analysis. Graphical figures were plotted using ggplot2 (Wickham, 2011). Unless otherwise specified, all data were analysed using Linear Mixed Models (LMM) and Generalised Linear Mixed models (GLMM) in lme4 (Bates et al., 2015), with the specific approach for each set of results described below. All data generated from the experiments described above were included for analysis, and all replication is biological.
 
@@ -129,6 +339,6 @@ Adaptive developmental plasticity in egg function was assessed by testing the re
 
 An overview of sample sizes is given in Tables 1 and 2. Box plots indicate the median and interquartile ranges (IQR), with whiskers indicating data within 1.5 IQR. A central filled marker indicates the mean of the sample.
 
-## Data accessibility statement
+### Data accessibility statement
 
 All data generated and analysed in this study, together with R codes, are openly provided as an associated source file in our Dryad Data Repository with the identifier: https://doi.org/10.5061/dryad.83bg17q.

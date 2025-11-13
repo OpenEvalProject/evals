@@ -7,10 +7,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02dqehb95 Department of Psychological Sciences, Purdue University West Lafayette West Lafayette United States
-2. https://ror.org/02dqehb95 Purdue Institute for Integrative Neuroscience, Purdue University West Lafayette West Lafayette United States
-3. https://ror.org/04fegvg32 Center for Neurobiology of Stress Resilience and Psychiatric Disorders, Rosalind Franklin University of Medicine and Science North Chicago United States
-4. https://ror.org/04fegvg32 Discipline of Physiology and Biophysics, Chicago Medical School, Rosalind Franklin University of Medicine and Science North Chicago United States
+1. Department of Psychological Sciences, Purdue University West Lafayette West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+2. Purdue Institute for Integrative Neuroscience, Purdue University West Lafayette West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+3. Center for Neurobiology of Stress Resilience and Psychiatric Disorders, Rosalind Franklin University of Medicine and Science North Chicago United States ([ROR:04fegvg32](https://ror.org/04fegvg32))
+4. Discipline of Physiology and Biophysics, Chicago Medical School, Rosalind Franklin University of Medicine and Science North Chicago United States ([ROR:04fegvg32](https://ror.org/04fegvg32))
 
 † Corresponding author
 

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.48119.001 Genes can encode multiple isoforms, broadening their functions and providing a molecular substrate to evolve phenotypic diversity. Evolution of isoform function is a potential route to adapt to new environments. Here we show that de novo, beneficial alleles in the nurf-1 gene became fixed in two laboratory lineages of C. elegans after isolation from the wild in 1951, before methods of cryopreservation were developed. nurf-1 encodes an ortholog of BPTF, a large (>300 kD) multidomain subunit of the NURF chromatin remodeling complex. Using CRISPR-Cas9 genome editing and transgenic rescue, we demonstrate that in C. elegans , nurf-1 has split into two, largely non-overlapping isoforms (NURF-1.D and NURF-1.B, which we call Yin and Yang, respectively) that share only two of 26 exons. Both isoforms are essential for normal gametogenesis but have opposite effects on male/female gamete differentiation. Reproduction in hermaphrodites, which involves production of both sperm and oocytes, requires a balance of these opposing Yin and Yang isoforms. Transgenic rescue and genetic position of the fixed mutations suggest that different isoforms are modified in each laboratory strain. In a related clade of Caenorhabditis nematodes, the shared exons have duplicated, resulting in the split of the Yin and Yang isoforms into separate genes, each containing approximately 200 amino acids of duplicated sequence that has undergone accelerated protein evolution following the duplication. Associated with this duplication event is the loss of two additional nurf-1 transcripts, including the long-form transcript and a newly identified, highly expressed transcript encoded by the duplicated exons. We propose these lost transcripts are non-functional side products necessary to transcribe the Yin and Yang transcripts in the same cells. Our work demonstrates how gene sharing, through the production of multiple isoforms, can precede the creation of new, independent genes.
+Genes can encode multiple isoforms, broadening their functions and providing a molecular substrate to evolve phenotypic diversity. Evolution of isoform function is a potential route to adapt to new environments. Here we show that de novo, beneficial alleles in the nurf-1 gene became fixed in two laboratory lineages of C. elegans after isolation from the wild in 1951, before methods of cryopreservation were developed. nurf-1 encodes an ortholog of BPTF, a large (>300 kD) multidomain subunit of the NURF chromatin remodeling complex. Using CRISPR-Cas9 genome editing and transgenic rescue, we demonstrate that in C. elegans, nurf-1 has split into two, largely non-overlapping isoforms (NURF-1.D and NURF-1.B, which we call Yin and Yang, respectively) that share only two of 26 exons. Both isoforms are essential for normal gametogenesis but have opposite effects on male/female gamete differentiation. Reproduction in hermaphrodites, which involves production of both sperm and oocytes, requires a balance of these opposing Yin and Yang isoforms. Transgenic rescue and genetic position of the fixed mutations suggest that different isoforms are modified in each laboratory strain. In a related clade of Caenorhabditis nematodes, the shared exons have duplicated, resulting in the split of the Yin and Yang isoforms into separate genes, each containing approximately 200 amino acids of duplicated sequence that has undergone accelerated protein evolution following the duplication. Associated with this duplication event is the loss of two additional nurf-1 transcripts, including the long-form transcript and a newly identified, highly expressed transcript encoded by the duplicated exons. We propose these lost transcripts are non-functional side products necessary to transcribe the Yin and Yang transcripts in the same cells. Our work demonstrates how gene sharing, through the production of multiple isoforms, can precede the creation of new, independent genes.
 
 ## Introduction
 
@@ -38,13 +38,25 @@ As a model for understanding the genetic basis of adaptive evolution in an anima
 
 For understanding short-term adaptation, we study two laboratory strains of C. elegans, called N2 and LSJ2, which descended from a single hermaphrodite isolated in 1951 (Figure 1A). These two lineages split from genetically identical populations between 1957 and 1958 and evolved in two very different laboratory environments – N2 grew on agar plates seeded with E. coli bacteria and LSJ2 in liquid cultures containing liver and soy peptone extracts (McGrath et al., 2009; McGrath et al., 2011; Sterken et al., 2015). By the time permanent means of cryopreservation were developed, approximately 300–2000 generations had passed, and ~ 300 new mutations arose and fixed in one of the two lineages (McGrath et al., 2011). Despite their genetic similarity, substantial divergence has occurred between these strains in terms of phenotype and fitness, including a large number of developmental, behavioral, and reproductive traits. Use of these strains allow us to identify causal genetic variants responsible for phenotypic and fitness changes. To date, five de novo, causal genetic variants have been identified in either the N2 or LSJ2 lineage (de Bono and Bargmann, 1998; McGrath et al., 2009; Persson et al., 2009; McGrath et al., 2011; Duveau and Félix, 2012; Large et al., 2016; Large et al., 2017; Zhao et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig1-v2.jpg)
+
+**Figure 1.:** (A) History of two laboratory adapted C. elegans strains N2 and LSJ2, which descend from the same individual hermaphrodite isolated in 1951. The N2 and LSJ2 lineage split sometime around 1958. N2 grew on agar plates with E. coli OP50 as a food source for around 11 years until they were cryopreserved. LSJ2 animals were cultured in liquid axenic media containing sheep liver extract and soy extract peptone as a food source for about around 51 years until they were cryopreserved. 302 genetic variations were fixed between these two strains, including two that fall in the nurf-1 gene – WBVar00601361 and WBVar00601565. (B) Genetic location of two nurf-1 variations. WBVar00601361 (in red box) is an N2-derived intron single nucleotide substitution T/A (N2/ancestral) in the 2nd intron of nurf-1. WBVar00601565 is an LSJ2-derived 60 bp deletion in the 3’ end of nurf-1 that removes the last 18 amino acids and part of the 3’-UTR. (C) Comparison of NURF-1 orthologs from Drosophila and humans showing position of protein domains and conserved regions as determined by Blastp and Clustal Omega. (D) Boxplot of pairwise evolutionary fitness differences between the indicated strains measured by directly competing the indicated strains against each other for five generations. PTM288 and PTM229 were created from the N2* and N2 strains, respectively, by a engineering DNA barcode in the dpy-10 gene. PTM417 is the same genotype as ARL(del_LSJ2>N2), with the exception of a background mutation in the spe-9 gene that occurred during the construction of the ARL(del_LSJ2>N2) strain (for details see Methods). This mutation was crossed out of the PTM417 strain and used as a barcode for the digital PCR reaction. The genotype of each nurf-1 allele (shown in B) is indicated by color. The NIL strain also contains LSJ2 alleles of additional linked mutations, which is indicated by the blue horizontal line. (E) Total brood size of the N2 and ARL(intron,LSJ2>N2) strains. (F) Number of differentially expressed genes between synchronized N2 and ARL(intron,LSJ2>N2) animals harvested 52 hr (L4 stage - when spermatogenesis is active) or 60 hr (young adults - when oogenesis is active) after hatching. For all figures, each dot represents an independent replicate, the box indicates the interquartile values of all data, and the line indicates the median of all data. Positive values indicate strain one is more fit than strain two. Negative values indicate strain two is more fit than strain one. For all figures, n.s. indicates p>0.05, one star indicates significant difference at p<0.05 level, two stars indicate significant difference at p<0.01 level, and three stars indicate significant difference at p<0.001 level.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Egg-laying rate was calculated at the indicated time points. Six L4 animals were picked onto each assay plate (time = 0) for the indicated times. The total number of eggs was counted for each plate and used to calculate the average number of eggs laid per hour for each animal. Each individual trial is shown as a dim line. The mean for each strain is shown as the bold, colored lines. The effect of the intron SNV on this trait was subtle, especially when compared to the difference in reproductive rate caused by the nurf-1 60 bp deletion (ARL(del,LSJ2>N2*)). We speculate this is explained by epistasis between the two nurf-1 mutations, with the LSJ2 combination of both alleles having a non-linear effect on reproductive rate. We are unable to test this hypothesis as we did not construct a double ARL strain containing LSJ2 alleles of both of the nurf-1 mutations due to the difficulty in creating the intron edit (see Methods). Alternatively, additional mutations in NIL(nurf-1,LSJ2>N2*) could contribute to reproductive rate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Multi-dimensional scaling analysis of transcriptional responses indicates that the N2 and ARL(intron,LSJ2>N2) strains show different expression patterns at 52 hr but not 60 hr. (B) Analysis of genes upregulated (top) or downregulated (bottom) at all four strain/conditions (left) and also by tissue-specific expression).
+
 One of these mutations is an LSJ2-derived, 60 bp deletion at the 3’ end the nurf-1 gene that reduces growth rate, slows reproductive output, and prevents development into the dauer diapause state in response to ascaroside pheromones (Figure 1B) (Large et al., 2016). This genetic variant is beneficial in the LSJ2 liquid cultures in which it arose and fixed, but places animals at a disadvantage in the agar plate environments in which N2 evolved, an example of gene-environment interaction (Large et al., 2016). We proposed that nurf-1 is a regulator of life-history tradeoffs. Life history tradeoffs represent competing biological traits requiring large energetic investments, such as the tradeoff between energy required for reproduction versus the energy required for individual survival. The difference in fitness of this allele in the two laboratory environments is potentially determined by how the life-history tradeoffs map into reproductive success.
 
 Studies of nurf-1 and its orthologs provide fundamental support for its role as a life history regulator. nurf-1 encodes an ortholog of mammalian BPTF, a subunit of the NURF chromatin remodeling complex (Barak et al., 2003) (Figure 1C). BPTF encodes a large protein containing a number of domains that facilitate recruitment of NURF to specific regions of the genome for chromatin remodeling (Alkhatib and Landry, 2011), including domains that interact with sequence-specific transcription factors and three PHDs and a bromodomain that facilitate interactions with modified nucleosomes (Li et al., 2006; Wysocka et al., 2006; Kwon et al., 2009; Ruthenburg et al., 2011). Through its DDT domain (Fyodorov and Kadonaga, 2002), BPTF cooperates with ISWI to slide nucleosomes along DNA, changing access of promoter regions to transcription factors that drive gene transcription. In mammals, BPTF regulates cellular differentiation and homeostasis of specific cell-types and tissues, including the distal visceral endoderm (Landry et al., 2008), ecoplacental cone (Goller et al., 2008), hematopoietic stem/progenitor cells (Xu et al., 2018), mammary stem cells (Frey et al., 2017), T-cells (Wu et al., 2016), and melanocytes (Koludrovic et al., 2015). In Drosophila, the ortholog to BPTF, NURF301, regulates the heat shock response, pupation, spermatogenesis, and innate immunity (Badenhorst et al., 2002; Badenhorst et al., 2005; Kwon et al., 2008; Kwon et al., 2009). Many of these traits can be viewed as life-history tradeoffs, e.g. large energetic investments in individual survival through the development of the immune system vs. energetic transfers to offspring in the placenta or mammary glands. The evolution of BPTF/NURF-1 function might also be relevant in human disease. Genetic alterations in BPTF have been reported in tumors, including gene amplification and point mutations (Buganim et al., 2010; Balbás-Martínez et al., 2013). In addition, BPTF has been shown to be required for the transcriptional activity of c-MYC, a major human oncogene (Richart et al., 2016).
 
 In this paper, we continue our studies of the evolution of the N2/LSJ2 laboratory strains. We demonstrate that an independent, beneficial mutation in the nurf-1 gene was fixed in the N2 lineage, suggesting that nurf-1 is a preferred genetic target for laboratory adaptation. To understand why nurf-1 might be targeted, we explored the in vivo role in C. elegans development by taking advantage of CRISPR-Cas9 to test causal relationships that inform laboratory evolution and fitness effects. Our work suggests that the large, full-length isoform of nurf-1, primarily studied in mammals, is dispensable for development. Instead, two, largely non-overlapping isoforms are both essential for reproduction, having opposing effects on cellular differentiation of gametes into sperm or oocytes. Our results suggest that the ability of nurf-1 to regulate life history tradeoffs is the result of exquisite regulation of NURF function through the balance of two competing isoforms, reminiscent of the principle of Yin and Yang. Finally, we demonstrate that these two isoforms have split into separate genes in a clade of related nematodes, potentially resolving transcriptional and functional conflict between the Yin and Yang isoforms transcription and function. Our work demonstrates how evolution of isoforms can precede the origin of a new gene, supporting a role for gene sharing in the origin of functionally novel proteins.
 
-## An N2-derived variant in the second intron of nurf-1 increases fitness and brood size in laboratory conditions
+### An N2-derived variant in the second intron of nurf-1 increases fitness and brood size in laboratory conditions
 
 We previously mapped differences in a number of traits (including reproductive rate, fecundity, toxin and anthelmintic sensitivity, and laboratory fitness) between N2 and LSJ2 to a QTL centered over nurf-1, which contains a derived mutation in both the N2 and LSJ2 lineages (Figure 1A and B) (Large et al., 2016; Large et al., 2017; Zhao et al., 2019). The LSJ2 allele of nurf-1 contains a 60 bp deletion in the 3’ end of the coding region of the gene, overlapping the stop codon and probably resulting in the translation of parts of the 3’ UTR. The N2 allele of nurf-1 contains an SNV that converts an A to a T in a homopolymer run of Ts in the 2nd intron (Figure 1B). Using CRISPR-Cas9-based genome editing, we previously demonstrated that the LSJ2-derived deletion accounted for a large portion of the trait variance in reproductive rate explained by the QTL. However, it did not explain the entire effect of this locus (Large et al., 2016). We decided to test whether this additional genetic variant or variants affected fitness of the animals in laboratory conditions using a previously described pairwise competition assay (Zhao et al., 2018). To do so, we took advantage of three strains we had previously created; CX12311 is a near isogenic line with ancestral (non-N2) alleles of npr-1 and glb-5 crossed into an otherwise N2 genetic background, which we have used to eliminate the fitness and phenotypic effect of derived (N2) alleles of npr-1 and glb-5 (Zhao et al., 2018) (Figure 1D - referred to as N2*), NIL(nurf-1,LSJ2>N2*) is a near isogenic line containing LSJ2 alleles of both nurf-1 mutations backcrossed into an N2* background (Large et al., 2016), and ARL(del,LSJ2>N2*) is an allelic replacement line containing the LSJ2-derived 60 bp deletion edited into the N2* strain using CRISPR-Cas9. Phenotypic differences between the NIL(nurf-1,LSJ2>N2*) and ARL(del,LSJ2>N2*) strains are caused by the N2-derived intron SNV in nurf-1, or one of the additional seven linked LSJ2-N2 genetic variants near nurf-1.
 
@@ -56,11 +68,108 @@ In C. elegans, brood-size of hermaphrodites is negatively correlated to the timi
 
 RNA-seq analysis identified transcriptional differences caused by the intron SNV during spermatogenesis, supporting our hypothesis that sperm development is affected by this SNV. We collected RNA from synchronized N2 and ARL(intron,LSJ2>N2) hermaphrodites at two timepoints, 52 and 60 hr after hatching, which occur during spermatogenesis (52 hr) or oogenesis (60 hr). Interestingly, a large number of genes are differentially expressed between the two strains but only during the 52 hr timepoint (3384 genes vs. 25 genes) (Figure 1F, Figure 1—figure supplement 2A, and Supplementary file 1). Inspection of these differentially-expressed genes in a single-cell RNAseq dataset (Cao et al., 2017) demonstrated that although a portion of these 3384 genes are expressed in the germline, these genes are also expressed in additional tissues (Figure 1—figure supplement 2B). Gene ontology analysis suggests that cuticle development and innate immune responses are regulated by nurf-1 (Supplementary file 2) consistent with the role of its orthologs in regulating immunity and melanocyte proliferation in Drosophila and humans (Kwon et al., 2008; Landry et al., 2011; Koludrovic et al., 2015; Wu et al., 2016). The restriction of most of these transcriptional changes to a specific timepoint (i.e. 52 hr) could reflect a specific-role for nurf-1 in regulating genes undergoing short bursts of transcriptional upregulation during this developmental timepoint (e.g. molting), a specific-role for nurf-1 in regulating cell number or activity of specific cell-types that are transiently present during this timepoint (e.g. spermatocytes), or some combination of both. These results suggest that the intron SNV regulates a number of developmental processes including spermatogenesis, molting, and innate immunity.
 
-## nurf-1 produces multiple transcripts encoding multiple protein isoforms
+### nurf-1 produces multiple transcripts encoding multiple protein isoforms
 
 Our results suggest that selection acted repeatedly on C. elegans nurf-1 during laboratory growth. The molecular nature of NURF-1, an essential subunit of the NURF chromatin remodeling complex, is surprising for a hotspot gene. In general, chromatin remodelers are thought of as ubiquitously expressed regulators with little variation in different cell types, akin to general function RNA polymerase proteins or ribosomes. Why would genetic perturbation of nurf-1 lead to increased fitness? One potential clue is the complexity of the nurf-1 locus. Previous cDNA analysis of nurf-1 identified four unique transcripts encoding four unique isoforms (Andersen et al., 2006), two of which have been shown to affect different phenotypes (summarized in Table 1).
 
+**Table 1.**
+ Summary of major nurf-1 transcripts identified in C. elegans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Evidence</th>
+      <th colspan="2">Size</th>
+      <th rowspan="2">Conservedc</th>
+      <th rowspan="2">Predicted biological role in C. elegansd</th>
+      <th rowspan="2">Other names</th>
+    </tr>
+    <tr>
+      <th>Transcripta</th>
+      <th>Proteinb</th>
+      <th>aa</th>
+      <th>kD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nurf-1.a</td>
+      <td>N</td>
+      <td>-</td>
+      <td>2197</td>
+      <td>252</td>
+      <td>M,D</td>
+      <td>None</td>
+      <td>Full-length</td>
+    </tr>
+    <tr>
+      <td>nurf-1.b</td>
+      <td>C,N,I</td>
+      <td>W</td>
+      <td>1621</td>
+      <td>186</td>
+      <td>D</td>
+      <td>Reproduction, vulval development</td>
+      <td>N-terminal or NURF-1.A</td>
+    </tr>
+    <tr>
+      <td>nurf-1.d</td>
+      <td>C,N,I</td>
+      <td>W</td>
+      <td>816</td>
+      <td>92</td>
+      <td>-</td>
+      <td>Size, dauer, reproduction, axon guidance</td>
+      <td>C-terminal or NURF-1.C</td>
+    </tr>
+    <tr>
+      <td>nurf-1.f</td>
+      <td>C,N,I</td>
+      <td>W</td>
+      <td>581</td>
+      <td>58</td>
+      <td>-</td>
+      <td>None</td>
+      <td>NURF-1.E</td>
+    </tr>
+    <tr>
+      <td>nurf-1.q</td>
+      <td>N,I</td>
+      <td>-</td>
+      <td>243</td>
+      <td>36</td>
+      <td>-</td>
+      <td>None</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_a C indicates full-length cDNA have been isolated for this transcript, N indicates evidence from direct sequencing of RNA or cDNA using Oxford Nanopore reads support this transcript, and I indicates evidence from Illumina short read RNA-seq supports this transcriptb W indicates evidence for the protein isoform was obtained using western blotc M or D indicates an analogous isoform is described in mammals (mice or humans) or Drosophila, respectivelydPredictions from Andersen et al. (2006), Large et al. (2016), or Mariani et al. (2016)_
+
 To identify other transcripts produced by nurf-1 and quantify the relative proportions of each that are produced, we analyzed previously published Illumina short-read (Brunquell et al., 2016) (isolated from synchronized L2 larval animals) and Oxford Nanopore long-read RNA sequencing reads (Roach et al., 2019) (isolated from mixed populations) (Figure 2—figure supplements 1–2). Our results support many of the conclusions of Andersen et al. (2006) but contain a few surprises. We identified five major transcripts (Figure 2A) - three previously isolated (nurf-1.b, nurf-1.d, and nurf-1.f) but also two newly identified (nurf-1.a and nurf-1.q) (mapping of transcript names used in Andersen et al. are listed in Table 1). nurf-1.a encodes a full-length 2197 amino acid isoform analogous to the primary isoform of BPTF in humans and NURF301 in Drosophila (Figure 1C). Despite the expectation that C. elegans would produce a similar protein, the Oxford Nanopore long-read data are the only evidence supporting its existence. The nurf-1.q transcript is predicted to produce a 243 amino acid unstructured protein. With the exception of the full-length nurf-1.a transcript, the overlap of these transcripts is quite minimal, resulting in predicted isoforms with unique protein domains and functions (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genomic position of the five nurf-1 transcripts supported by Illumina short read and Oxford Nanopore long reads. Each blue box is an exon. Exon number is indicated on the figure. Dark blue exons (10, 16, and 21) are alternatively spliced, resulting in a 6–9 bp difference in length (see Figure 2—figure supplement 1 for details). Genomic location of the HA and FLAG epitope tag insertion site are shown in black along with their associated allele names. (B) The predicted protein isoforms produced by each of the five major transcripts and along with the domains each isoform contains. Immunoblots only supported translation of the B, D, and F isoforms (see panel D for details). For reference, the spliced nurf-1.a transcript is also shown. (C) Relative expression levels of each transcript, determined by number of Oxford Nanopore reads from a mixed population (top panel) or analysis of Illumina short reads from L2 staged animals using kallisto (bottom reads). tpm = transcripts per million. (D) Western blots of N2 and PTM420 strains. PTM420 contains the HA and FLAG epitope tags shown in panel A. Anti-HA antibody detected a band matching the expected size of the NURF-1.B isoform (arrow). Anti-FLAG antibody detected bands matching the expected size of the NURF-1.D and NURF-1.F isoforms (arrows).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Coverage plot of reads from RNA. Note the high expression of the 14th, 15th, and 16th exons, supporting the existence of the nurf-1.q transcript. Reads covering the 23rd exon were also observed, supporting the expression of the nurf-1.f transcript. Zoomed in view of the 10th, 16th, and 21 st exons indicates alternative splicing sites are used at these exons. Clipped reads containing sl1 sequence support transcriptional start sites at the 1 st and 14th exon.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Subset of nurf-1 transcripts analyzed in this paper. Each blue box is an exon. Exon number is indicated on the figure. Dark blue exons are alternatively spliced, resulting in a 6–9 bp difference in length. (B) Nanopore sequencing reads aligned to nurf-1. Reads were grouped by the nurf-1 transcripts they support. Dark purple marks are mismatches from the reference sequence.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Strains and timepoints (relative to the L1 stage) are indicated on the x-axis. No significant difference in transcript levels was observed between the N2 and ARL(intron, LSJ2>N2) strains.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Reactivity of anti-BPTF antibodies with lysates from human cancer cells. Cell line-specific patterns were observed, with bands of the same mobility being detected across lines and detected with independent antibodies. The findings suggest the occurrence of multiple BPTF-related protein species in human cancer cells. A representative western blot is shown. (B) Gel bands selected for BPTF Mass Spectrometry identification according to the localization of the BPTF signal detected by western blotting in MCF-7 cells. (Left, NP-40 lysis buffer, gel bands A1 and A2; Right, Laemmli buffer, B1 and B2). The detection of low molecular weight species upon direct cell lysis in Laemmli buffer strongly supports the notion that the findings do not result from artifactual proteolysis. (C) Sequence coverage of BPTF protein. Peptides identified by LC-MS/MS are highlighted in color. (D) BPTF peptide intensity (arbitrary units) calculated by MaxQuant in the gel bands A1, A2/B1, B2.
 
 We quantified the relative expression of these five transcripts by either counting the number of Nanopore reads that matched the transcript or by using kallisto (Bray et al., 2016) to predict transcript abundance using Illumina short-read sequencing data (Figure 2C). These predictions qualitatively agreed in transcript ranking of expression strength (although quantitative variation in predictions were observed, reflective of the different technologies or developmental stages of the animals). Surprisingly, the newly described nurf-1.q transcript was the most highly expressed followed by the nurf-1.b transcript, and the nurf-1.a, nurf-1.d and nurf-1.f were expressed at similar lower levels.
 
@@ -70,11 +179,116 @@ Based upon these results, we speculated that the intronic SNV, which we have sho
 
 We also investigated whether similar isoforms could be expressed in human cells, using western blots on a small panel of human cancer cell lines. Interestingly, besides a band matching the expected size of the canonical full-length isoform, a number of additional bands were observed between 150–250 kD (Figure 2—figure supplement 4A). Using mass-spectrometry, we confirmed the presence of multiple BPTF peptides in the bands detected by western blotting (Figure 2—figure supplement 4), consistent with one or more of these bands representing novel BPTF isoforms. Potentially, these isoforms could play a role in cancer metastasis, although we provide no such evidence here. Despite the presence of these additional bands, the full-length version of BPTF is the most highly expressed isoform (Figure 2—figure supplement 4D), consistent with its importance in mammalian species.
 
-## The B and D isoforms are both essential for reproduction and the F isoform modifies the heat shock response
+### The B and D isoforms are both essential for reproduction and the F isoform modifies the heat shock response
 
 Genetic analysis of nurf-1 primarily relied on two deletion alleles, n4293 and n4295 (Figure 3A) (Andersen et al., 2006). The n4293 allele deletes the first exon and predicted transcriptional start site of the nurf-1.a and nurf-1.b transcripts. The n4295 allele deletes three exons of the nurf-1.a, nurf-1.d, and nurf.1.f transcripts that encode a C-terminal PHD domain (Figure 3—figure supplement 1) necessary for human BPTF function. Comparison of the phenotypes of the n4293 and n4295 homozygotes leads to the model that the B isoform is essential for reproduction and the A, D, and/or F isoforms have subtle effects on growth rate and reproductive rate (Table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig3-v2.jpg)
+
+**Figure 3.:** B is necessary for reproduction in C. elegans. (A) Genomic positions of nurf-1 classical deletion alleles and nine engineered stop codons created using CRISPR/Cas9 based gene editing. Each allele is color-coded by the reproductive ability of homozygous strains. Green is statistically indistinguishable from wild-type, yellow indicates slightly reduced brood size and change in reproductive rate, red indicates substantially reduced brood size in the first generation and eventual sterility after multiple generations of homozygosity, and dark red indicates sterility in the first generation of homozygosity. (B) Fecundity of indicated strains (shown in x-axis of panel) (C) Normalized body area of the indicated strains. Normalized body area was calculated by thresholding video recordings of each strain to segment individual animals and registered throughout each frame of the video. Each dot represents the average area of a single worm, normalized to the N2 data. For red or dark red strains (panel A), measurements were taken on animals homozygous for a single generation. (D) Predicted amino acid change of engineered stop codons and classical alleles on the NURF-1 isoforms. The kah11 mutation only affects the F isoform.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genomic position of CRISPR/Cas9 edits to modify conserved amino acids required for recognition of modified histone tails. (B) Partial protein alignment of the two C-terminal PHD domains and the bromodomain showing the conserved tryptophan (W) and aspagine amino acids (N). In other species, the W to E change impairs the PHD domain’s ability to bind H3K4me3 and the N to A change impairs the bromodomains ability to bind H4K16Ac. (C) Normalized body size of indicated strains. n4295 is a deletion allele predicted to delete both PHD domains and create a frame shift in the bromodomain. The 2PHDs strain contains both the 1,926 WtoE and 1,986 WtoE edits. The three domains strain contains all three edits shown in B. All animals were normalized to N2. (D) Egg laying rate of indicated strains at 36–42 hr and 60–66 hr after the L4 larval stage.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Six L4 animals from each strain were synchronized and placed on assay plates for the indicated timepoints. Progeny from each plate were counted to calculate the average reproductive output. Light colored lines indicate each replicate and solid colored lines show the average egg laying rate of each strain. For statistical significance, N2 vs. kah68 comparison is in green and N2 vs. n4295 comparison is in blue.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** kah96 and kah113 are CRISPR-induced STOP codon replacement mutations in exon 18 of nurf-1. Despite their identical nucleotide changes, in C. elegans nomenclature, they are given unique allele names to indicate their origin from independent CRISPR-Cas9 experiments.
+
 To further delineate the biological role of each isoform, we used CRISPR-Cas9 to engineer nine stop codons in eight exons of the nurf-1 gene: the first, second (two positions), 7th, 15th, 18th, 19th, 23rd, or 26th exons (Figure 3A). The predicted effects of these stop codons on each major isoform are shown in Figure 2—figure supplement 4 and Table 2. Homozygous animals for each mutation were assayed for total brood size and growth rate. Analysis of the phenotypes of these mutants indicated that our working model was incorrect. Instead, we propose that both the B and D isoforms are essential for reproduction.
+
+**Table 2.**
+ Predicted effect of stop codon mutations on NURF-1 isoforms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Isoform</th>
+      <th>kah90</th>
+      <th>kah91</th>
+      <th>kah106</th>
+      <th>kah142</th>
+      <th>kah93</th>
+      <th>kah96</th>
+      <th>kah99</th>
+      <th>kah11</th>
+      <th>kah68</th>
+      <th>Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NURF-1.A</td>
+      <td>5R</td>
+      <td>107P</td>
+      <td>147E</td>
+      <td>646A</td>
+      <td>1548G</td>
+      <td>1632T</td>
+      <td>1685Q, 1689P, 1693N</td>
+      <td></td>
+      <td>2056T</td>
+      <td>2197</td>
+    </tr>
+    <tr>
+      <td>NURF-1.B</td>
+      <td>5R</td>
+      <td>107P</td>
+      <td>147E</td>
+      <td>646A</td>
+      <td>1548G</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>1621</td>
+    </tr>
+    <tr>
+      <td>NURF-1.D</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>170G</td>
+      <td>254T</td>
+      <td>307Q, 311P, 315N</td>
+      <td></td>
+      <td>675T</td>
+      <td>816</td>
+    </tr>
+    <tr>
+      <td>NURF-1.F</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3L</td>
+      <td>440T</td>
+      <td>581</td>
+    </tr>
+    <tr>
+      <td>NURF-1.Q</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>170G</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>243</td>
+    </tr>
+  </tbody>
+</table>
 
 As expected, engineering stop codons in the first, second, and 7th exons greatly reduced fecundity, resulting in either sterility, or a mortal germline phenotype, initially reducing total brood size of animals, before eventually causing complete sterility after around three-to-five generations of homozygosity (Figure 3B and C). Although the qualitative phenotypes of these four alleles agreed, we observed interesting quantitative differences between them. The second stop codon in the second exon (kah106) and the stop codon in the 7th exon (kah142) reduced growth and fecundity more than the first exon stop codon (kah90) or the first stop codon in second exon (kah91) (Figure 3B and C). We suspect this result indicates the presence of an internal ribosome entry site in the middle of the second exon at the 122nd Methionine, causing the expression of two isoforms from a single transcript. The reduced severity of the first two stop codon alleles can be explained by their inability to affect the protein sequence of the second isoform. An alternative possibility is a difference in frequency of translational read-through of each stop codon, which are interpreted as sense codons at a low frequency (Jungreis et al., 2011).
 
@@ -82,27 +296,134 @@ Unexpectedly, engineering stop codons in the 18th and 19th exons also caused a m
 
 The most parsimonious explanation of our data is that either the A or D isoform is essential for reproduction in C. elegans. Compound heterozygote tests allowed us to distinguish between these possibilities, indicating that the D isoform is required for reproduction and wild-type growth rate, and the A isoform is dispensable for reproduction and development (Figure 4). We first verified that the kah93, kah96, and kah106 alleles were recessive by measuring the fecundity of heterozygous animals (Figure 4B). Next, we examined the fecundity of kah106/kah96 compound heterozygotes, which are predicted to lack only the A isoform, due to the production a single unaffected copy of the B isoform from the kah96 haplotype and a single unaffected copy of the D isoform from the kah106 haplotype. If the A isoform was essential for reproduction, we would expect these compound heterozygotes to be sterile or have severe defects in fecundity. However, these animals were indistinguishable from wild-type, suggesting that the full-length A isoform is not essential (Figure 4B). The kah106/kah93 compound heterozygotes showed similar results. These animals are predicted to encode one unaffected copy of the D isoform, one truncated copy of the B isoform, and zero unaffected copies of the A isoform. These animals were mostly wild-type, with a small reduction in total fecundity (Figure 4B). We interpret this to mean that the A isoform is not essential and the truncation of the B isoform slightly perturbs its function, causing a slight reduction in fecundity. Finally, we analyzed kah93/kah96 compound heterozygotes. These animals are predicted to encode zero wild-type copies of the D isoform, one wild-type copy of the B isoform, and zero wild-type copies of the A isoform. These animals were essentially sterile. Taken together, we conclude that the B and the D isoform are both essential for reproduction.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig4-v2.jpg)
+
+**Figure 4.:** B and NURF-1.D isoforms are essential for reproduction in C. elegans. (A) Genomic positions of stop codon or classical deletion mutations used for compound heterozygote or transgenic rescue analysis of B and C. kah3 is a CRISPR/Cas9 genomic edit of the LSJ2-derived 60 bp deletion. (B) Fecundity of homozygote (red), heterozygote (green), and compound heterozygote mutants (yellow) as indicated in the x-axis. The table below the x-axis is the predicted effect of each mutant strain on the indicated nurf-1 isoforms. The number in the table indicates the number of functional copies. The star indicates the milder predicted effect of kah93 on NURF-1.B, as it only truncates 73 of 1621 amino acids. The y-axis shows the fecundity for each strain. (C) Fecundity of indicated strains with and without the presence of an integrated nurf-1.d transgene. The genetic background is also indicated. N2* contains ancestral introgressions of the npr-1 and glb-5 genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Egg-laying rate was calculated at the indicated time points. Six L4 animals were picked onto each assay plates (time = 0) for the indicated times. The total number of eggs was counted for each plate and was used to calculate the average number of eggs laid per hour for each animal. Each individual trial is shown as a dim line. The mean for each strain is shown as the bold, colored lines.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Coverage of RNA-seq reads of control and heat shocked C. elegans animals aligned to the nurf-1 genomic location. These data were taken from Brunquell et al. (2016). The x-axis shows the genomic location where the sequencing reads mapped, including the location of nurf-1 transcripts. We also show the position a precise deletion of the 23rd exon edited into two strains, created using CRISPR/Cas9. In C. elegans genetic nomenclature, each independently generated genetic mutation is given a unique allele name, even if they are genetically identical. The deletion edited into the N2 strain is named kah149. The deletion edited into a strain containing an in-frame FLAG epitope tag (shown as a black box) is named kah144. The y-axis indicates the number of reads for at each location. (B) Quantification of RNA abundance for five nurf-1 transcripts in response to heat shock. Data taken from Li et al. (2016), who heat shocked L2 animals at 34°C for 30 min and Brunquell et al. (2016), who heat shocked L4 animals at 33°C for 30 min. The y-axis is the estimated transcripts per million (tpm) for each isoform in each condition. (C) Western blotting of a strain containing the FLAG-tag fused at the position shown in panel A using an anti-FLAG antibody. We detected two bands, one matching the predicted size of the NURF-1.F isoform, that were both upregulated by heat shock (34°C). (D) Western blotting of three strains either containing a FLAG-tag and/or deletion allele predicted to ablate the nurf-1.f transcript. The x-axis shows the presence or absence of the various alleles along with the environmental condition. We detected two bands that were induced by heat shock. Observation of these bands required the FLAG epitope tag and could be ablated by the 23rd exon deletion. (E) Multi-dimensional scaling plot (MDS) of the N2 (red) and a strain carrying the kah149 deletion of the 23rd exon (blue) in response to various heat shock conditions. No HS indicates no heat shock, 2 hr or 4 hr HS indicates two or four hours of heat shock at 34°C, and 2 hr HS + recovery indicates animals experiencing two hours of heat shock at 34°C followed by 0.5 hr of recovery at 20°C. The overall transcriptional response was the same in both strains. (F) Number of genes significantly up or down regulated between N2 and kah144 animals at the indicated conditions. (G) Scatter plot of all genes differentially expressed in four hour heat shock or two hour heat shock + recovery conditions. The R2 value was 0.4421.
+
 To confirm that the D isoform is essential, we also created a transgenic strain containing an integrated construct driving a nurf-1.d cDNA from its endogenous promoter. This transgene could fully rescue the fecundity phenotype of the kah96 allele and partially rescue the fecundity phenotype of the kah93 allele (Figure 4C). This transgene could also rescue the reproductive timing and fecundity changes of the n4295 allele and the LSJ2-derived 60 bp deletion (kah3) (Figure 4C and Figure 4—figure supplement 1). As expected, this transgene could not rescue the kah106 allele, which creates a stop codon in the B isoform. These data further support a requirement of both the B and D isoforms for reproduction.
 
 Although the F isoform does not seem to have an effect in normally developing animals, it is involved in the heat shock response. Multiple reports have demonstrated that nurf-1 is upregulated in response to heat shock (Brunquell et al., 2016; Li et al., 2016). By analyzing RNA-seq reads from these two papers, we found that the nurf-1.f transcript was specifically upregulated in both datasets, with increased coverage of the 23rd exon as well as the 24th through 28th exons (Figure 4—figure supplement 2A and B). We confirmed that the increased transcription of the nurf-1.f transcript also increased NURF-1.F protein abundance (Figure 4—figure supplement 2C and D). Transcriptional analysis of strains lacking the F isoform indicated that the initial transcriptional response to heat shock was largely the same, but the long-term transcriptional response of a subset of genes was affected (Figure 4—figure supplement 2E–G). We conclude that the F isoform is specifically up-regulated by heat shock and plays a modulatory role in determining the long-term transcriptional response to heat shock.
 
-## The B and D isoforms have opposite effects on cell fate during gametogenesis
+### The B and D isoforms have opposite effects on cell fate during gametogenesis
 
 Although the B and D isoforms are both required for reproduction, the molecular mechanism that these isoforms operate through could be different. One possibility is that the long-form of NURF-1 has split into two subunits - both isoforms participate as part of the NURF complex, cooperating together to regulate reproduction. However, the D isoform might instead modify NURF activity by competing for binding with transcription factors or regions of the genome to which NURF is recruited. A third possibility is that the D isoform acts through a NURF-independent pathway.
 
 To gain insights into the molecular nature of the D isoform, we decided to determine precisely how the B and D isoforms regulate reproduction, using three nurf-1 stop alleles (Figure 5A). For hermaphrodites to produce a fertilized egg, the gonads must produce both male and female gametes at different developmental times (Figure 5B). Initially, gametogenesis produces sperm, creating approximately 300 sperm at which point a permanent sperm-to-oocyte switch occurs. From this time, gametogenesis produces oocytes until the animal dies or the gonad ceases to function (Hubbard and Greenstein, 2005). A number of defects could cause sterility – inability to form gametes, inability to create sperm, inability to create oocytes, or defects in the sperm and/or oocyte function. We used DAPI staining to characterize the production of sperm and oocytes in three nurf-1 mutants (Figure 5C and D). We first tested kah106 mutants, which lack the B isoform (Figure 5A), for the ability to produce sperm. Compared with N2 animals, which create ~ 300 sperm per animal, the number of sperm produced by kah106 animals was greatly reduced, resulting in the production of only approximately 60 sperm (Figure 5D). These animals produced a normal number of oocytes, indicating that spermatogenesis seemed to be affected specifically (Figure 5E). We interpret these data as evidence that hermaphrodites that lack the NURF-1.B isoform spend less time in spermatogenesis before transitioning to oogenesis. We next tested kah96 mutants which lack the D isoform. These animals produced approximately 500 sperm and almost no oocytes (Figure 5C-E). We interpret these data as evidence that hermaphrodites that lack the D isoform are unable to transition from spermatogenesis to oogenesis. Finally, we performed similar experiments on kah93 mutants, which lack the D isoform and have a truncated B isoform. These animals showed an intermediate phenotype, with normal number of sperm but reduced number of oocytes (Figure 5D and E). The reduced activity of the B isoform due to its truncation potentially allows other factors to transition the animals to oogenesis, resulting in the milder defects found in the kah93 animals (Figure 3B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig5-v2.jpg)
+
+**Figure 5.:** (A) Genomic position of the previously-described stop codon mutants used in B and C. (B) Summary of gametogenesis of C. elegans. Animals undergo spermatogenesis during the late L4 and then transition to oogenesis stage during maturation to adulthood. The number of sperm produced during spermatogenesis can be determined by counting sperm in the spermatheca when oogenesis has begun. (C) Representative fluorescence images of one spermatheca for DAPI stained young adult animals. Each tiny dot represents the condensed chromosomes of a single sperm. (D) Sperm number of indicated strains. L4 animals were synchronized and allowed to develop for an additional 12 hr. DAPI staining was used to identify and count the number of sperm in each animal. Each dot represents a single animal. (E) Oocyte number of indicated strains. L4 animals were synchronized and allowed to develop for an additional 12 hr. DAPI staining was used to identify and count the number of oocytes in each animal.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Multi-dimensional scaling plot (MDS) of CX12311 (N2*), ARL(del,LSJ2>N2*) (PTM88), NIL(nurf-1,LSJ2>N2*) (PTM66) and LSJ2. The x-axis and y-axis are two dimensions used to separate samples from different biological conditions based upon the transcriptional change between different samples. (B) Scatter plot of all genes detected in RNA sequencing. The x-axis is the log2 of the relative expression changes of each gene in N2* vs. ARL(del,LSJ2>N2) (indicating transcriptional responses induced by the 60 bp deletion). The y-axis is the log2 of the relative expression of each gene in NIL(nurf-1,LSJ2>N2*) vs. ARL(del,LSJ2>N2*) (indicating transcriptional responses induced by other mutations linked to the 60 bp deletion including the LSJ2-derived intron SNV). The transcriptional changes are positively correlated with an R2 value of 0.63, indicating the genetic variation regulates a common subset of genes. fog-3 gene is shown in red.
+
 Although animals that lack either the B or D isoform are unable to reproduce, the cause of sterility is different at the cellular level. To further study the molecular effects of perturbing nurf-1 function, we transcriptionally profiled adult N2*, NIL(nurf-1,LSJ2>N2*), ARL(del, LSJ2, N2*), and LSJ2 animals, which contain various combinations of the N2 and LSJ2-derived nurf-1 mutations (Supplementary file 1). A multi-dimensional scaling plot indicated that the N2* and ARLdel replicates formed two unique clusters, and the LSJ2 and NILnurf-1 replicates largely overlapped in a third cluster (Figure 5—figure supplement 1A). The genetic variation surrounding the nurf-1 locus is responsible for the majority of transcriptional differences between adult LSJ2 and N2* animals, suggesting most of the fixed variants do not have a dramatic effect on transcription on N2-like growth conditions. Although the LSJ2-derived 60 bp deletion regulates transcription, additional genetic variation in the NILnurf-1 strain, presumably from the N2-derived intron variant, also regulates transcription in adult animals.
 
 To study the effects of the 60 bp deletion and intron SNV on transcription, we focused on two comparisons: 1) the N2* vs ARL(del, LSJ2>N2*), which will identify transcriptional changes caused by the 60 bp deletion and 2) the NIL(nurf-1, LSJ2>N2*) vs ARL(del, LSJ2>N2*), which will identify transcriptional changes caused by the intron SNV (as well as linked mutations in the NIL other than the 60 bp deletion). We expect that the latter comparison will mostly report the changes of the intron SNV, as it accounts for most of the fitness differences between the two strains. We observed a positive correlation between these two comparisons (Figure 5—figure supplement 1B). The most parsimonious explanation for this observation is that both the N2 and LSJ2-derived alleles in nurf-1 regulate the activity of a common molecular target, which is likely to be the NURF complex.
 
-## A duplication in a sister clade of Caenorhabditis species creates two separate nurf-1 genes
+### A duplication in a sister clade of Caenorhabditis species creates two separate nurf-1 genes
 
 Previous work in C. briggsae characterized the role of nurf-1 in reproduction, including the isolation of nurf-1 cDNAs in this species (Chen et al., 2014). Interestingly, although transcripts matching the nurf-1.b and nurf-1.d were isolated from this species, they no longer shared any exons with each other, suggesting that they were expressed from two separate genes (Figure 6A). Further, spliced leader sequences to the 5’ end of both transcripts matched sl1 sequence, suggesting that these two genes were not expressed as a single operon (Blumenthal, 2012). We compared the gene products using BLAST and found that the shared exons in C. elegans had duplicated in C. briggsae, with one set of each retained in each of the new genes (Figure 6A). Short-read transcriptomics data for this species matched the cDNA analysis; we found evidence for transcripts matching nurf-1.b, nurf-1.d, and nurf-1.f (Figure 6—figure supplements 1–3). Unlike C. elegans, C. briggsae seemed to have lost both the nurf-1.a and nurf-1.q transcripts.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-v2.jpg)
+
+**Figure 6.:** (A) Comparison of two species with different versions of nurf-1. In C. elegans, nurf-1.b and nurf-1.d overlaps in the 14th and 15th exon (shown in orange). In C.briggsae, a duplication of the orange exons resulted in separation of nurf-1.b and nurf-1.d into separate genes. C. briggsae has also lost expression of the nurf-1.a and nurf-1.q transcripts. (B) Distribution of the two versions of nurf-1 (shown in panel A) in 32 Caenorhabditis species. Red indicates the C. elegans version, blue indicates the C. briggsae version, and black indicates a nurf-1 version that could not be determined. The species phylogeny suggests that a duplication event occurred in the common ancestor of the brenneri/tribulationis clade. (C) The most well supported topology of the duplicated region is consistent with a single duplication event. Orange indicates protein sequence from the duplicated region in the nurf-1–1 gene, and turquoise indicates protein sequence from the duplicated region in the nurf-1–2 gene. Non-colored branches indicate unduplicated nurf-1 sequence. The rate of amino acid substitution in the nurf-1–1 duplicated region has also increased, as seen in the branch lengths. Scale is in substitutions per site.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** From the phylogenic tree of 32 Caenorhabditis species, we determined the nurf-1 gene structure of 22 species using genome and transcriptome information. Species with one nurf-1 gene (in red) are consistent with expression of five transcripts orthologous to C. elegans: nurf-1.a, nurf-1.b, nurf-1.q, nurf-1.d and nurf-1.f. Species with two nurf-1 genes (in blue) contain duplicated sequence and transcripts matching C. elegans nurf-1.b (nurf-1–1), nurf-1.d (nurf-1–2.d) and nurf-1.f (nurf-1–2 .f). Exons corresponding to the duplicated region were labeled in orange.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Only species with a published genome and transcriptome were plotted. Each peak shows the coverage for each exon, each trajectory shows exon-exon junctions supported by RNA-seq reads.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Only species with a published genome and transcriptome were plotted. Each peak shows the coverage for each exon, each trajectory shows exon-exon junctions supported by RNA-seq reads. These plots show that no reads support the splicing from nurf-1–1 to nurf-1–2, which further suggests the split of nurf-1 in these species.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Only those five topologies with the lowest log-likelihoods are shown. logL: log-likelihoods, AU: p-values of the approximately unbiased test. Orange circles indicate duplication events. Trees 3–5 were rejected by the AU test and are highlighted in red. Analyses were performed using IQ-TREE with the JTT substitution model with gamma-distributed rate variation among sites.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** The duplicated region was removed from the alignment prior to inference. Estimated using IQ-TREE using the JTT substitution model with gamma-distributed rate variation among sites. Bootstrap support values are indicated as labels on branches. Scale is in amino acid substitutions per site.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Estimated using IQ-TREE using the JTT substitution model with gamma-distributed rate variation among sites. Bootstrap support values are indicated as labels on branches. Scale is in amino acid substitutions per site.
 
 Analysis of the nurf-1 gene structure within the context of the Caenorhabditis phylogeny suggested that the exon duplication and separation of nurf-1 into separate genes occurred at the base of a clade containing 11 described species, including C. brenneri and C. tribulationis (Figure 6B). We determined the nurf-1 gene structure in 22 of the 32 Caenorhabditis species with published genomes and transcriptomes (Kiontke et al., 2011; Stevens et al., 2019) (Figure 6—figure supplements 1–3). Like C. briggsae, the species in the brenneri/tribulationis clade express a transcript matching nurf-1.b from a single gene (which we call nurf-1–1). These species also express two transcripts matching nurf-1.d and nurf-1.f from a second gene, called nurf-1–2. Analysis of the spliced leader sequence of the 5’ end of the nurf-1.d transcript only identified sl1 sequence, consistent with separation of these genes into distinct transcriptional units. None of these species appears to express nurf-1.a or nurf-1.q transcripts (Figure 6—figure supplements 1–3). RNA-seq data for species outside of this clade (Figure 6—figure supplements 1–3) matched the transcription pattern of C. elegans, suggesting that these species express five major transcripts from a single nurf-1 gene: nurf-1.a, nurf-1.b, nurf-1.d, nurf-1.f, and nurf-1.q. These data suggest that the C. elegans transcript structure is ancestral.
 
 Phylogenetic analysis of the duplicated ~ 200 amino acid sequence was used to evaluate different hypotheses surrounding the timing and number of duplication events. The analysis supported the model that the split of nurf-1 into two distinct genes happened once within the common ancestor of the brenneri/tribulationis clade (Figure 6C – additional possible trees shown in Figure 6—figure supplement 4). The topology recovered for the region of nurf-1 outside the duplication is congruent with the species tree (Figure 6—figure supplement 5). Interestingly, the rate of amino acid substitution in the duplicated region was accelerated in nurf-1–1 relative to nurf-1–2 (p<0.001; Welch's t-test) suggesting that this region experienced positive selection and/or relaxed selection after this duplication event occurred. Comparison of the synonymous vs. non-synonymous substitution rate in three closely-related species pairs was also consistent with an increase in the rate of protein evolution in the duplicated region following the separation of nurf-1 into independent genes (Table 3).
+
+**Table 3.**
+ dN/dS ratio in three Caenorhabditis species pairs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">nurf-1–1 or nurf-1.b</th>
+      <th colspan="3">nurf-1–2 or nurf-1.d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sp. pair</td>
+      <td>Duplicationa</td>
+      <td>Dup. Reg.b</td>
+      <td>Otherc</td>
+      <td>Ratiod</td>
+      <td>Dup. Reg.b</td>
+      <td>Otherc</td>
+      <td>Ratiod</td>
+    </tr>
+    <tr>
+      <td>C. afra/ C. sulstoni</td>
+      <td>N</td>
+      <td>0.136e</td>
+      <td>0.121</td>
+      <td>1.1</td>
+      <td>0.116e</td>
+      <td>0.072</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>C. nigoni/ C. briggsae</td>
+      <td>Y</td>
+      <td>0.249</td>
+      <td>0.085</td>
+      <td>2.9</td>
+      <td>0.111</td>
+      <td>0.019</td>
+      <td>5.8</td>
+    </tr>
+    <tr>
+      <td>C. remanei/ C. latens</td>
+      <td>Y</td>
+      <td>0.295</td>
+      <td>0.121</td>
+      <td>2.4</td>
+      <td>0.177</td>
+      <td>0.048</td>
+      <td>3.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Duplication indicates whether the species pair contain the duplicated exons that create two nurf-1 genesb Dup. Reg. indicates dN/dS was calculated using the region of the alignment that contains the duplicationc Other indicates dN/dS was calculated using the region of the alignment that does not contain the duplicationd Ratio was calculated by dividing the dN/dS value of the Dup. Reg. by the Othere The dN/dS values for the nurf-1.b and nurf-1.d in the duplicated region were different due to the b transcript encoding two additional amino acids in the 14th exon (before the M initiation codon in the d isoform) and the amino acids encoded by the 16th alternatively spliced exon._
 
 ## Discussion
 
@@ -110,9 +431,9 @@ In this paper, we make use of CRISPR/Cas9-enabled gene editing to characterize t
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/48119/elife-48119-fig7-v2.jpg)
 
-**Figure 7.:** nurf-1 isoforms in C. elegans.(A) Descriptive phylogeny with proposed major transitions in nurf-1 isoform evolution. Each dot indicates the timepoint of a major nurf-1 isoform evolution event. (B) Proposed molecular mechanism for NURF-1 isoforms. The NURF-1.B isoform interacts with ISWI through its DDT domain to form a NURF complex capable of remodeling chromatin at specific regions of the chromosome. NURF is recruited to these regions through interactions with specific transcription factors using protein domains encoded by the overlapping exons. This remodeling is necessary for transcriptional responses for spermatogenesis. Due to some unknown signal, after spermatogenesis has resulted in the production of ~ 300 sperm, the NURF-1 D isoform outcompetes the NURF complex away from its target loci, causing the loss of transcription of key spermatogenesis genes, resulting in gametogenesis transitioning from spermatogenesis to oogenesis. The binding affinity of PHD domains and bromodomainto histone strengthens this repression, but they are not completely necessary for the ability of the D isoform to outcompete the B isoform.
+**Figure 7.:** (A) Descriptive phylogeny with proposed major transitions in nurf-1 isoform evolution. Each dot indicates the timepoint of a major nurf-1 isoform evolution event. (B) Proposed molecular mechanism for NURF-1 isoforms. The NURF-1.B isoform interacts with ISWI through its DDT domain to form a NURF complex capable of remodeling chromatin at specific regions of the chromosome. NURF is recruited to these regions through interactions with specific transcription factors using protein domains encoded by the overlapping exons. This remodeling is necessary for transcriptional responses for spermatogenesis. Due to some unknown signal, after spermatogenesis has resulted in the production of ~ 300 sperm, the NURF-1 D isoform outcompetes the NURF complex away from its target loci, causing the loss of transcription of key spermatogenesis genes, resulting in gametogenesis transitioning from spermatogenesis to oogenesis. The binding affinity of PHD domains and bromodomainto histone strengthens this repression, but they are not completely necessary for the ability of the D isoform to outcompete the B isoform.
 
-## Evolution of NURF-1/BPTF across phyla
+### Evolution of NURF-1/BPTF across phyla
 
 In humans and Mus musculus, an abundance of evidence confirms that the long-form isoform of BPTF, which is orthologous to nurf-1, is the primary isoform in the NURF chromatin remodeling complex (Alkhatib and Landry, 2011). While a subset of BPTF exons are alternatively spliced, these events will not lead to the large changes in size we observe in the nurf-1 gene. One exception is the FAC1 isoform, which encompasses 801 N-terminal amino acids of BPTF (Bowser et al., 1995). While FAC1 is found in amyloid Alzheimer’s patients and enriched in the nervous system (Bowser et al., 1995; Landry et al., 2008), a biological role for this isoform has not been described. FAC1 is smaller and lacks conserved protein sequence found in the B isoform of nurf-1, suggesting an independent evolutionary origins and function.
 
@@ -122,7 +443,7 @@ Nematodes have retained the N-terminal isoform but seem to have lost use of the 
 
 We propose a molecular mechanism to explain the actions of the B and D isoforms to regulate transcription (Figure 7B). These two isoforms share 207 amino acids of protein sequence, which falls in a region that is thought to facilitate physical interactions with transcription factors (Alkhatib and Landry, 2011). NURF-1.B participates as part of the NURF complex, which is recruited to certain promoters by binding to transcription factors. At these loci, NURF promotes or represses expression of target genes by remodeling the chromatin surrounding promoters and gene bodies. For unknown molecular reasons, NURF-1.D preferentially binds to these transcription factors, displacing the NURF complex from these genomic regions, causing a change of chromatin state and gene expression.
 
-## Microevolution of NURF-1/BPTF
+### Microevolution of NURF-1/BPTF
 
 We showed that independent, beneficial alleles in nurf-1 were fixed in two laboratory strains of C. elegans that each experienced an extreme shift in environment from their natural habitats. The N2-derived SNV results in the change of a run of homopolymers in the 2nd intron of the nurf-1.b transcript. Such a change could act as an enhancer for the nurf-1.d promoter, but the nature of the genetic change and position is more consistent with a role in regulating the nurf-1.b transcript. Analysis of RNA sequencing data did not identify any obvious changes in levels of any of the nurf-1 transcripts and it is unclear by what molecular mechanism it regulates nurf-1 activity. Potentially, it could increase pausing of the RNA polymerase at the homopolymer run or could regulate RNA splicing by changing the secondary structure of the RNA molecule. In general, such a mutation would not be predicted by most bioinformatic approaches to have a phenotypic effect. Only the low genetic diversity between the LSJ2 and N2 strains allowed us to focus on this variant, and eventually demonstrate this particular variant is causal.
 
@@ -132,7 +453,7 @@ Targeting of nurf-1 is consistent with its role as a regulator of life history t
 
 In humans, genetic alterations in BPTF have been reported in several types of cancer and a role of BPTF in transcriptional regulation by c-MYC has been demonstrated, in agreement with its chromatin-binding function (Richart et al., 2016). Using well-characterized and validated antibodies against BPTF, we found several molecular species with unexpected electrophoretic mobilities in human cancer cells (Figure 2—figure supplement 4). Using mass-spectrometry, we confirmed the presence of multiple BPTF peptides in the bands detected by western blotting (Figure 2—figure supplement 4). These findings raise the possibility that these protein sequence variants have non-canonical functions. Given that stress adaptation is a hallmark of cancer - allowing tumor cells to survive and evolve following Darwinian selection processes - and the role of nurf-1 in C. elegans demonstrated here, it is tempting to speculate a role for such diversity of isoforms in the life histories of cancer cells. However, our work simply shows that additional forms of BPTF exist. Whether they have a biological role still needs to be determined.
 
-## Split of nurf-1 into separate genes potentially resolves conflict between the Yin and Yang isoforms caused by shared exons
+### Split of nurf-1 into separate genes potentially resolves conflict between the Yin and Yang isoforms caused by shared exons
 
 In a clade of Caenorhabditis nematodes, the nurf-1 gene has split into two separate genes, an example of gene birth resulting in the duplication of a portion of the nurf-1 gene. Multigene families are common in most species and protein domains are often shuffled between genes. While the importance of gene duplication is not controversial, the exact mutational events and evolutionary forces responsible for the fixation of independent genes with different functions is less understood. Here we seem to have uncovered an example of how gene sharing, specifically through the creation of unique isoforms, can contribute to this process. In the lineage that led to the C. elegans species, nurf-1 first evolved changes in isoform use, resulting in the creation and essential action of the nurf-1.d transcript, and the loss of essentiality of the long nurf-1.a transcript. In this case, partitioning of the biological function and protein domains in each nurf-1 isoform created diversification of protein products.
 
@@ -144,39 +465,581 @@ Multiple lines of evidence are consistent with the nurf-1.a and nurf-1.q transcr
 
 Second, duplication of the shared exons could facilitate future evolutionary change. Escape from adaptive conflict is a mechanism by which gene duplication can resolve the situation where a single gene is selected to perform multiple roles (Des Marais and Rausher, 2008). After duplication, each copy is free to improve its function independently. As organisms evolve, recruitment of NURF to specific loci could be accomplished by changing its binding with specific transcription factors through amino acid changes in NURF-1. The most rapidly evolving portion of the protein is within the 14th and 15th exons, suggesting positive selection acts on this region of the protein, potentially changing the transcription factors NURF-1 binds to. One issue that arises in species containing a single nurf-1 gene is the pleiotropy of genetic changes in the shared region; changing the amino acid sequence of the B isoform also changes the D isoform. Are there situations where modifying one isoform but not the other is preferred? In the clade of nematodes that have duplicated nurf-1, each gene is free to evolve independently. We present evidence that in these species, the duplicated region is free to evolve more rapidly. It should be interesting to characterize the exact function of this duplicated region and determine if these changes in protein sequence facilitate changes in transcription factor binding in an adaptive manner.
 
-## Conclusion
+### Conclusion
 
 A fundamental problem in evolutionary biology is understanding the genetic mechanisms responsible for phenotypic diversity in extant species. Here, we present one route to address this problem. Experimental evolution and genetic analysis can be used to identify evolutionary relevant genes and understand their function. This knowledge can be leveraged to understand patterns of evolution of these genes in other species. We believe that merging genetics, genomics, and molecular evolution is a powerful approach to understand the evolutionary mechanisms responsible for long-term adaptation and species level differences.
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source of reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>nurf-1</td>
+      <td>WormBase</td>
+      <td>Wormbase ID: WBGene00009180</td>
+      <td>Sequence: F26H11.2</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>BPTF</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 2186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>RRID: WB-STRAIN:OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX12311</td>
+      <td>PMID: 21849976</td>
+      <td>RRID: WB-STRAIN:CX12311</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM66</td>
+      <td>PMID: 21849976</td>
+      <td></td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM88</td>
+      <td>PMID: 21849976</td>
+      <td></td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM288</td>
+      <td>PMID: 30328811</td>
+      <td>RRID: WB-STRAIN:PTM288</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM229</td>
+      <td>PMID: 30328811</td>
+      <td>RRID:WB-STRAIN:PTM229</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM98</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM98</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM113</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM113</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM116</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM116</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM117</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM117</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM118</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM118</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM167</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM167</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM170</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM170</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM189</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM189</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM203</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM203</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM211</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM211</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM316</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM316</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM317</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM317</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM319</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM319</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM322</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM322</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM325</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM325</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM332</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM332</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM354</td>
+      <td>This paper</td>
+      <td>RRID: WB-STRAIN:PTM354</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM371</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM371</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM372</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM372</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM373</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM373</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM376</td>
+      <td>This paper</td>
+      <td>RRID: WB-STRAIN:PTM376</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM416</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM416</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM417</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM417</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM420</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM420</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM487</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM487</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM489</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM489</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM512</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM512</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM517</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM517</td>
+      <td>Strain Background: N2, Request a strain: please email the corresponding author</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>Colo-205</td>
+      <td>American Type Culture Collection (Rockville, MD)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MCF-7</td>
+      <td>American Type Culture Collection (Rockville, MD)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MDA-MB-231</td>
+      <td>American Type Culture Collection (Rockville, MD)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>Hela</td>
+      <td>American Type Culture Collection (Rockville, MD)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>A549</td>
+      <td>G. Roncador, CNIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pSM</td>
+      <td>Cori Bargmann Lab (Rockefeller University)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pDD162 PrU6::dpy-10_sgRNA</td>
+      <td>PMID: 27467070</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pDD162 Preft3::Cas9</td>
+      <td>PMID: 27467070</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pCFJ90</td>
+      <td>Addgene</td>
+      <td></td>
+      <td>http://www.wormbuilder.org/test-page/about-mossci/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pCFJ104</td>
+      <td>Addgene</td>
+      <td></td>
+      <td>http://www.wormbuilder.org/test-page/about-mossci/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pCFJ151</td>
+      <td>Addgene</td>
+      <td></td>
+      <td>http://www.wormbuilder.org/test-page/about-mossci/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pCFJ601</td>
+      <td>Addgene</td>
+      <td></td>
+      <td>http://www.wormbuilder.org/test-page/about-mossci/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-HA</td>
+      <td>Life Technologies</td>
+      <td>Cat. No.: 326700</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-DYKDDDDK</td>
+      <td>Life Technologies</td>
+      <td>Cat. No.: MA191878</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-FLAG</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. No.: F3165</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase-conjugated secondary antibodies</td>
+      <td>Dako Glostrup</td>
+      <td></td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BPTF</td>
+      <td>Novus Biologicals</td>
+      <td>Cat. No.: NB100-41418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Vinculin</td>
+      <td>Sigma</td>
+      <td>Cat. No.: V9131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Oligonucleotide)</td>
+      <td>dpy-10 (cn64)</td>
+      <td>PMID: 25161212</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman probe:dpy-10 (kah82/kah83)</td>
+      <td>Thermal: Custom TaqMan SNP Genotyping Assays</td>
+      <td>PTM09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEB Q5 site directed mutagenesis kit</td>
+      <td>NEB</td>
+      <td>Cat. No.: E0554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Next Ultra II Directional RNA Library Prep Kit</td>
+      <td>NEB</td>
+      <td>Cat. No.: E7760S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zymo DNA isolation kit</td>
+      <td>Zymo</td>
+      <td>Cat. No.: D4071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zymo DNA cleanup kit</td>
+      <td>Zymo</td>
+      <td>Cat. No.: D4064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ddPCR Supermix for Probes</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Droplet Generation Oils</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ddPCR Droplet Reader Oil</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>VECTASHIELD antifade Mounting Medium with DAPI</td>
+      <td>VECTOR</td>
+      <td>Cat. No.: H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>edgeR</td>
+      <td>PMID: 19910308</td>
+      <td>RRID:SCR_012802</td>
+      <td>Opensource: https://bioconductor.org/packages/release/bioc/html/edgeR.html</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>SARtools</td>
+      <td>PMID: 27280887</td>
+      <td>RRID:SCR_016533</td>
+      <td>Opensource: https://github.com/PF2-pasteur-fr/SARTools</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>IGV</td>
+      <td>PMID: 21221095</td>
+      <td>RRID:SCR_011793</td>
+      <td>https://software.broadinstitute.org/software/igv/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Kallisto</td>
+      <td>PMID: 27043002</td>
+      <td>RRID:SCR_016582</td>
+      <td>https://pachterlab.github.io/kallisto/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>HISAT2</td>
+      <td>PMID: 25751142</td>
+      <td>RRID:SCR_015530</td>
+      <td>https://ccb.jhu.edu/software/hisat2/index.shtml</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Samtools</td>
+      <td>PMID: 19505943</td>
+      <td>RRID:SCR_002105</td>
+      <td>http://samtools.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Jalview</td>
+      <td>PMID: 19151095</td>
+      <td>RRID:SCR_006459</td>
+      <td>http://www.jalview.org/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MAFFT</td>
+      <td>PMID: 23329690</td>
+      <td>RRID:SCR_011811</td>
+      <td>https://mafft.cbrc.jp/alignment/software/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>IQ-Tree</td>
+      <td>PMID: 25371430</td>
+      <td>RRID:SCR_017254</td>
+      <td>http://www.iqtree.org</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>ITOL</td>
+      <td>PMID: 27095192</td>
+      <td></td>
+      <td>https://itol.embl.de/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>PAL2NAL</td>
+      <td>PMID: 16845082</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 The following strains were used in this study:
 
-## Near isogenic lines (NILs)
+#### Near isogenic lines (NILs)
 
-## CRISPR-generated barcoded strains
+#### CRISPR-generated barcoded strains
 
-## CRISPR-generated epitope-tagged strain
+#### CRISPR-generated epitope-tagged strain
 
-## CRISPR-generated STOP codons replacement lines
+#### CRISPR-generated STOP codons replacement lines
 
-## CRISPR-generated domain replacement lines
+#### CRISPR-generated domain replacement lines
 
-## MosSCI transgenic strains
+#### MosSCI transgenic strains
 
-## CRISPR-generated deletion strains:
+#### CRISPR-generated deletion strains:
 
-## Other double mutants:
+#### Other double mutants:
 
-## Strain construction
+### Strain construction
 
-## Previously described strains
+#### Previously described strains
 
 CX12311, PTM66, and PTM88 were all previously described (McGrath et al., 2011; Large et al., 2016).
 
-## CRISPR-generated allelic replacement lines (ARLs)
+#### CRISPR-generated allelic replacement lines (ARLs)
 
 We used the coCRISPR protocol to generate all CRISPR-edited lines using single-strand oligonucleotides to make precise edits (Arribere et al., 2014; Paix et al., 2015).
 
@@ -214,7 +1077,7 @@ The 2nd homologous chromosome, containing the kyIR87 introgression was used as a
 
 After screening, the target genotype was made homozygous. This strain was named PTM410 kyIR1 (V, CB4856 > N2); qgIR1 (X, CB4856 > N2); nurf-1(kah127)II. PTM416 was created by backcrossing the PTM410 strain to the N2 background using an RFP fluorescent nurf-1 balancer (oxTi721) strain for four generations. We genotyped the npr-1 and glb-5 sites to verify that PTM416 did not carry the introgressions surrounding these genes.
 
-## CRISPR-generated isotope-tagged lines
+#### CRISPR-generated isotope-tagged lines
 
 To create the PTM420 epitope-tagged strain the following guide RNA and repair oligo was used to first add an HA epitope tag into the 16th exon:
 
@@ -226,21 +1089,21 @@ The following injection mix was used: 50 ng/μl Peft-3::Cas9, 10 ng/μl dpy-10 s
 
 We next added a 3xFLAG tag to the C-terminal of nurf-1 gene using purified Cas9 protein (IDT, Catalog #1074181) and in vitro synthesized RNAs (Synthego) using a modified protocol (Prior et al., 2017). The injection mix was prepared as follows: 2 μM dpy-10 sgRNA (RNA scaffold 5’- GCUACCAUAGGCACCACGAG −3’ + tracrRNA) and 4 μM of two sgRNAs that targeted this region (RNA scaffold: 5’- CUCAUAAGUUCGCAUCCAG −3’+ tracrRNA, 5’- UUCGGAUCAGCUGUUGCCAC −3’+ tracrRNA) were mixed and incubated in a thermocycler at 95°C for five minutes, then 2.5 μg/ul Cas9 protein was added and incubated at room temperature for five minutes. Finally, 0.2 μM dpy-10 repair oligo and 0.5 μM FLAG repair oligo were added to mix and incubate at room temperature for 60 min. This mix was injected into the HA-tagged strain to create the double epitope tagged line.
 
-## CRISPR-generated STOP codon replacement lines, PHD/bromodomain replacement lines, and deletion lines
+#### CRISPR-generated STOP codon replacement lines, PHD/bromodomain replacement lines, and deletion lines
 
 The following injection mix was used to create each of these strains: 50 ng/μl Peft-3::Cas9, 10 ng/μl dpy-10 sgRNA, 500 nM dpy-10(cn64) repair oligo, 25 ng/μl of sgRNA, and 500 nM repair oligonucleotide. For each strain/allele, each of the specific sgRNAs and repair oligos used to construct it are listed in Supplementary file 3. To facilitate the genotyping process, some of the repair oligos for STOP codon replacement sites contain restriction sites that will alter some of the amino acids, exact changes are listed in Supplementary file 4. In C. elegans nomenclature, Identical edits must be given different allele names if they were isolated independently.
 
 For mutants that were sterile (or lead to sterility), we balanced these mutations using a GFP (oxTi924) or mCherry (oxTi721) integrated marker near nurf-1.
 
-## MosSCI transgenic strains
+#### MosSCI transgenic strains
 
 MosSCI strain construction was done following standard protocol from Frøkjær-Jensen et. Al (Frøkjær-Jensen, 2015). Injection mix was prepared as following: 38 ng/ul pCFJ601 (Mos1 transposase), 30 ng/ul pCFJ151 - Pnurf-1.d::nurf-1.d-SL2-GFP (insertion vector with homologous arms), 2.5 ng/ul pCFJ90 (Pmyo-2::mCherry), 5 ng/ul pCFJ104). This was injected into EG6699 uncoordinated animals. Three injected animals were placed on a single plate at 30°C to facilitate starvation. After 5 days, coordinated animals with GFP fluorescence and no red fluorescence were singled to new NGM plates and allowed to proliferate. Their progenies were singled and a single homozygote without uncoordinated offspring was maintained. This homozygote was then backcrossed to N2 for four generations to remove unc-119(ed3) III to create the PTM337 strain containing the integrated rescue construct. This strain was then crossed to a variety of nurf-1 alleles using standard protocols.
 
-## Cell culture
+### Cell culture
 
 The following human cancer cell lines were used: Colo-205 (colorectal), MCF-7 and MDA-MB-231 (breast), and HeLa (cervix) were obtained from the American Type Culture Collection (Rockville, MD); A549 (lung) was kindly provided by G. Roncador, CNIO. Cells were authenticated using STR profiling, tested for mycoplasma contamination and negative. Cells were cultured in DMEM (Sigma-Aldrich) supplemented with 10% FBS (HyClone, Logan, UT, USA), except for A549 which were cultured in RPMI (Sigma-Aldrich) supplemented with 10% FBS and sodium pyruvate (Thermo Scientific).
 
-## Molecular biology
+### Molecular biology
 
 All sgRNAs were constructed using NEB Q5 site directed mutagenesis kit (E0554) using primers
 
@@ -250,29 +1113,29 @@ All sgRNAs were constructed using NEB Q5 site directed mutagenesis kit (E0554) u
 
 To create the pCFJ151 - Pnurf-1.d::nurf-1.d-sl2-GFP plasmid, a nurf-1.d cDNA was isolated from reverse transcribed RNA using primers containing NheI restriction sites. This PCR product was then digested and ligated to a pSM vector. A 2890 bp long promoter region immediately upstream of the nurf-1.d isoform was amplified with a forward primer including FseI and a reverse primer including AscI restriction sites. This PCR product was then digested and ligated into the vector constructed in step 1. Third, an SL2-GFP sequence from was cut and ligated into the new vector using KpnI and SpeI restriction sites. Finally, this entire sequence containing the promoter, cDNA and sl2::GFP sequence was inserted into the pCFJ151 vector using NEB Q5 site directed mutagenesis kit.
 
-## Nematode growth conditions
+### Nematode growth conditions
 
 The animals were cultured on 6 cm standard nematode growth medium (NGM) plates containing 2% agar seeded with 200 μl of an overnight culture of the E. coli strain OP50. Growth temperature was controlled using a 20°C incubator. Strains were grown for at least three generations without starvation before any experiments was conducted.
 
-## nurf-1 conserved regions
+### nurf-1 conserved regions
 
 The predicted protein sequence for the NURF-1.A protein isoform was BLAST-searched against human or Drosophila melanogaster protein databases using NCBI blastp (McGinnis and Madden, 2004). Regions with alignment scores above 50 were annotated as homologous regions. These homologous regions were further verified through multiple sequence alignmentwith Clustal Omega program (Chojnacki et al., 2017).
 
-## Competition experiment
+### Competition experiment
 
 Competition experiments were performed as described previously (Zhao et al., 2018).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
-## RNA-seq samples for comparing the effect of the nurf-1 intron SNV
+#### RNA-seq samples for comparing the effect of the nurf-1 intron SNV
 
 N2 and PTM416 worms were synchronized using a 3 hr hatch-off. Worms were observed every hour after 46 hr until the majority were in the L4 stage (which occurred at 48 hr). Four hours later, worms were collected and kept frozen in −80°C freezer until RNA extraction for the 52 hr timepoint. Eight hours later, young adult animals were collected and kept frozen in the −80°C freezer until RNA extraction for the 60 hr timepoint.
 
-## RNA-seq samples for comparing effect of the two derived nurf-1 mutations
+#### RNA-seq samples for comparing effect of the two derived nurf-1 mutations
 
 CX12311, PTM66, PTM88, LSJ2 L4 hermaphrodites were picked to fresh NGM agar plates. Their adult progeny were bleached using alkaline-bleach solution to isolate eggs for synchronization. The eggs were washed with M9 buffer for three times and placed on a tube roller overnight. About 400 hatched L1 animals were placed on NGM agar plates and incubated at 20°C until they reach young adulthood, as determined by when eggs were observed on assay plates. These worms were then harvested, washed 3 times with M9 buffer, and frozen in a −80°C freezer for later processing.
 
-## RNA-seq samples for heat shock
+#### RNA-seq samples for heat shock
 
 N2 and PTM416 worms were synchronized using a 3 hr hatch-off. Eggs were cultured at 20°C until they reached L4 stage. Heat shock assay plates were then wrapped with parafilm and placed in a water bath pre-heated to 34°C for 2 hr or 4 hr. Worms were either collected right after heat shock or after 30 min at 20°C for the recovery group.
 
@@ -280,7 +1143,7 @@ For each of the above experiments, RNA was isolated using Trizol. The RNA librar
 
 Kallisto was used to quantify abundances of nurf-1 transcripts (Bray et al., 2016). We first created our own reference transcriptome by modifying the transcripts in Wormbase published reference transcriptome to restrict our analysis to the nurf-1.a, nurf-1.b, nurf-1.d, nurf-1.f and nurf-1.q isoforms. Alternative splicing sites in the 10th, 16th, and 21st exons were also removed from this reference database to ensure they were consistent between all isoforms. We used wildtype L2 RNA-seq data from Brunquell et. al to quantify wildtype nurf-1 abundance (Brunquell et al., 2016) and extracted tpm(transcripts per million) data from Kallisto output abundance table. We used RNA-seq data from PRJNA311958 and PRJNA321853 (Brunquell et al., 2016) (Li et al., 2016) to quantify the heat shock response of nurf-1 isoforms in Figure 4—figure supplement 2B.
 
-## Western blot
+### Western blot
 
 4 N2 and PTM420 gravid hermaphrodites were picked to fresh 5.5 cm NGM agar plates. Worms were collected just prior to starvation using M9 buffer and stored at −80°C until protein extraction. At least 4 plates of worms were used for each protein isolation. Worms were condensed by centrifugation and 2x sample buffer (100 mM Tris-HCl pH 6.8M, 200 mM dithiothreitol, 4% SDS, 0.2% Bromophenol Blue, 20% glycerol) was added in 1:1 w/v ratio. 1 μl of 500 mM EDTA and 1 μl of Halt protease inhibitor cocktail (100x) (Catalog number: 78430) were added for every 100 ng of worm sample. The protein sample was vortexed for 90 s and incubated on ice for about 1 min. Samples were then sonicated in a Bransonic 0.5 gallon ultrasonic bath filled with hot water > 80°C for 10 min and immediately placed on ice for 2 min. We then boiled the samples for 5 min and placed on ice to cool down. The sample was centrifuged at 12,000 rpm for 5 min and the supernatant was transferred to new tubes.
 
@@ -290,7 +1153,7 @@ Each sample was loaded onto a freshly made 6% or 10% SDS-PAGE gel and run at 25 
 
 For western blots of cancer cell lines, cells were lysed in 1% NP-40 buffer supplemented with protease and phosphatase inhibitors. Following sonication, clearing by centrifugation, and protein quantification, samples (100 μg) were subjected to electrophoresis in NuPAGE 3–8% Tris-acetate precast polyacrylamide gels (Thermo Scientific). Samples were run under reducing conditions and then transferred to nitrocellulose membranes, which were blocked with TBST, 5% skim milk. Membranes were incubated with primary antibodies detecting the following proteins: BPTF (NB100-41418, Novus Biologicals) (1:1,000) and Vinculin (V9131-2ML, Sigma-Aldrich) (1:10,000). This was followed by incubation with horseradish peroxidase-conjugated secondary antibodies (Dako, Glostrup, Denmark) (1:10,000). Reactions were detected using an ECL detection system and Bio-Rad ChemiDoc MP Imaging System (Hercules, CA, USA).
 
-## Egg-laying analysis
+### Egg-laying analysis
 
 Egg laying assays were performed as previously described (Large et al., 2016). All egg-laying assays were carried out at 20°C using standard 3 cm NGM plates seeded with the OP50 strain of Escherichia coli. OP50 were prepared freshly by streaking a glycerol stock of OP50 on an LB plate and letting grow at 37°C overnight. A single colony was then picked to 5 ml fresh LB and cultured overnight in a shaking incubator at 200 rpm. 1 ml of the overnight culture was used to inoculate 200 ml of LB for 4–6 hr of growth at 37°C with shaking. The 200 ml OP50 culture was concentrated via centrifugation to an OD600 of 2.0 and this culture was used for seeding experimental plates with 50 μl aliquots. All experimental plates were prepared the week of the assay and left at 22.5°C 18–24 hr following seeding. Plates were then placed at 4°C until the day of the assay and warmed to 20°C for 12 hr before each time point.
 
@@ -300,29 +1163,29 @@ For other strains, six fourth larval stage (L4) nematode was transferred to the 
 
 Fecundity was calculated by summing up all eggs laid for each worm.
 
-## Analysis of growth rate using body sizes
+### Analysis of growth rate using body sizes
 
 For strains with mutations in PHD or bromodomains, growth analysis were performed as previously described (Large et al., 2016). For other strains, video recordings were analyzed similarly, with the exception that each animal was registered between each video frame and used to calculate an average area for each individual worm. For strains that were balanced with fluorescent markers, only non-fluorescent worms were picked for video tracking.
 
-## Sperm and oocyte counting analysis
+### Sperm and oocyte counting analysis
 
 4 N2, PTM332, PTM319 and PTM332 gravid hermaphrodites were picked to fresh 5.5 cm NGM agar plates. After 3 days, 20–30 non-fluorescent L4 worms were picked to a new NGM plate and let grow at 20°C for 12 hr. Worms were then picked to a drop of M9 buffer on a Fisher Superfrost Plus slide (22-037-246). Fixation was done through applying 95% ethanol for three times. A drop of Vector Laboratories Vectashield Mounting Medium with DAPI (H-1500) was added and a coverslip was applied and sealed with nail polish. Z-stack images were captured through a moving-stage Olympus IX73 microscope under 40x objective. Oocytes were counted while imaging and sperm number was measured manually by analyzing z-stack images on ImageJ through the CellCounter plugin.
 
-## Genomic and transcriptomic analysis of nurf-1 in additional Caenorhabditis species
+### Genomic and transcriptomic analysis of nurf-1 in additional Caenorhabditis species
 
 To identify nurf-1 orthologs, we used homology information included in www.wormbase.org or by BLAST-searching C. elegans protein sequences against protein data provided by the Caenorhabditis genome project (http://blast.caenorhabditis.org). Genomic regions that contain the identified nurf-1 orthologs and related gff3 annotation data were downloaded from download.caenorhabditis.org or the WormBase public FTP site (data from Stein et al., 2003) (Mortazavi et al., 2010; Fierst et al., 2015; Slos et al., 2017; Kanzaki et al., 2018; Yin et al., 2018; Lamelza et al., 2019). Species with public RNA-seq data were identified in the SRA database. These reads were downloaded and aligned to corresponding nurf-1 DNA reference sequence for each species using HISAT2 and further manipulated using SAMTOOLS (Li et al., 2009; Kim et al., 2015). Gene annotations were manually corrected by inspecting the RNA-seq predicted intron sequences and used to generate Sashimi plots using the IGV browser (Robinson et al., 2011; Katz et al., 2015). The Sashimi Plot parameter Junction Coverage Min was adjusted for each species to best visualize the exon-exon junctions based upon coverage data. To identify the duplicated region for the NURF-1.B and NURF-1.D isoforms, we blasted each B isoform against a database of the D isoforms, and vice-versa. The homologous regions for each protein were refined using a multiple sequence alignment of NURF-1.B and NURF-1.D proteins using Jalview (Waterhouse et al., 2009). For some of the species that we were unable to resolve the full nurf-1 region (due to missing sequence for part of the region), we were able to identify the duplicated region and included this in the phylogenetic analysis.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 We aligned the protein sequences of the duplicated region from the nurf-1 loci of 21 Caenorhabditis species using MAFFT (Katoh and Standley, 2013). We also aligned the protein sequences for regions outside the duplicated region. Maximum likelihood trees were estimated for each alignment along with 1000 ultrafast bootstraps (Hoang et al., 2018) using IQ-TREE (Nguyen et al., 2015), allowing the best-fitting substitution model to be automatically selected (Kalyaanamoorthy et al., 2017). We noted that the resulting topology recovered for the duplicated region was incongruent with the species tree, likely due to limited phylogenetic signal in the short alignment (Figure 6—figure supplement 6). To address this, we instead assessed the levels of support for alternative phylogenetic hypothesis surrounding the number and timing of duplication events that we congruent with the species tree. Log-likelihoods were calculated for each topology and an approximately unbiased (AU) test (Shimodaira, 2002) was performed using IQ-TREE. Newick trees were visualized using the iTOL web server (Letunic and Bork, 2016).
 
 For three pairs of closely-related sister taxa (C. briggsae/C. nigoni, C. latens/C. remanei, and C. afra/C. sulstoni), we aligned the protein sequences of both nurf-1–1 (nurf-1.b) and nurf1-2 (nurf-1.d) using MAFFT and converted the resulting alignments to nucleotide alignments using PAL2NAL (Suyama et al., 2006). We calculated the dN/dS ratio (Ka/Ks) separately for the duplicated and non-duplicated portions of each alignment using the dnds Python module (available at: https://github.com/adelq/dnds).
 
-## Statistics
+### Statistics
 
 Sample size was calculated by following replicate numbers using previously published assays. Each data point was considered a biological replicate. Animals for each replicate were grown independently for at least three generations. Significant differences between two means were determined using two-tailed unpaired t-test. To correct for multiple comparison, we used the Tukey multiple comparison test.
 
-## Proteomics
+### Proteomics
 
 MCF-7 whole cell extracts were obtained by lysis in either NP-40 (see above) or Laemmli buffer, in both cases supplemented with protease inhibitors and loaded in NuPAGE 3–8% Tris-acetate precast polyacrylamide gels (75 μg of protein per well). Gels were cut into two slices for western blotting and Coomassie staining. Gels bands running at the mobility of BPTF signals detected by western were digested with trypsin as previously described (Shevchenko et al., 2006). Briefly, gel bands were cut into 1 mm2 cubes and de-stained with 50 mM ammonium bicarbonate (ABC) solution. Then proteins were reduced with 15 mM TCEP and alkylated with 30 mM CAA at 45°C, for 45 min in the dark. Proteins were digested with 200 ng of Trypsin (Promega) overnight at 37°C in 50 mM ABC. Resulting peptides were desalted using homemade reversed phase micro-columns containing C18 Empore disks (3M) at the bottom of the tip. Samples were dried down using a Speed-Vac and dissolved in 22 µL of loading buffer (0.2% formic acid) prior LC-MS/MS analysis.
 

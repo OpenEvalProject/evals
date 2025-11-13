@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01y64my43 Department of Oral Biology, University at Buffalo, State University of New York Buffalo United States
-2. https://ror.org/03wmf1y16 Division of Pulmonary Sciences and Critical Care Medicine, Department of Medicine, University of Colorado Anschutz Medical Campus Aurora United States
-3. https://ror.org/032d4f246 Department of Periodontics, School of Stomatology, China Medical University Shenyang China
-4. https://ror.org/01y64my43 Department of Pharmaceutical Sciences, School of Pharmacy and Pharmaceutical Sciences, University at Buffalo, State University of New York Buffalo United States
+1. Department of Oral Biology, University at Buffalo, State University of New York Buffalo United States ([ROR:01y64my43](https://ror.org/01y64my43))
+2. Division of Pulmonary Sciences and Critical Care Medicine, Department of Medicine, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+3. Department of Periodontics, School of Stomatology, China Medical University Shenyang China ([ROR:032d4f246](https://ror.org/032d4f246))
+4. Department of Pharmaceutical Sciences, School of Pharmacy and Pharmaceutical Sciences, University at Buffalo, State University of New York Buffalo United States ([ROR:01y64my43](https://ror.org/01y64my43))
 
 † Corresponding author
 
 ## Abstract
 
-RAGE, a druggable inflammatory receptor, is known to function as an oligomer but the exact oligomerization mechanism remains poorly understood. Previously we have shown that heparan sulfate (HS) plays an active role in RAGE oligomerization. To understand the physiological significance of HS-induced RAGE oligomerization in vivo, we generated RAGE knock-in mice ( Ager AHA/AHA ) by introducing point mutations to specifically disrupt HS-RAGE interaction. The RAGE mutant demonstrated normal ligand-binding but impaired capacity of HS-binding and oligomerization. Remarkably, Ager AHA/AHA mice phenocopied Ager −/− mice in two different pathophysiological processes, namely bone remodeling and neutrophil-mediated liver injury, which demonstrates that HS-induced RAGE oligomerization is essential for RAGE signaling. Our findings suggest that it should be possible to block RAGE signaling by inhibiting HS-RAGE interaction. To test this, we generated a monoclonal antibody that targets the HS-binding site of RAGE. This antibody blocks RAGE signaling in vitro and in vivo, recapitulating the phenotype of Ager AHA/AHA mice. By inhibiting HS-RAGE interaction genetically and pharmacologically, our work validated an alternative strategy to antagonize RAGE. Finally, we have performed RNA-seq analysis of neutrophils and lungs and found that while Ager −/− mice had a broad alteration of transcriptome in both tissues compared to wild-type mice, the changes of transcriptome in Ager AHA/AHA mice were much more restricted. This unexpected finding suggests that by preserving the expression of RAGE protein (in a dominant-negative form), Ager AHA/AHA mouse might represent a cleaner genetic model to study physiological roles of RAGE in vivo compared to Ager −/− mice.
+RAGE, a druggable inflammatory receptor, is known to function as an oligomer but the exact oligomerization mechanism remains poorly understood. Previously we have shown that heparan sulfate (HS) plays an active role in RAGE oligomerization. To understand the physiological significance of HS-induced RAGE oligomerization in vivo, we generated RAGE knock-in mice (AgerAHA/AHA) by introducing point mutations to specifically disrupt HS-RAGE interaction. The RAGE mutant demonstrated normal ligand-binding but impaired capacity of HS-binding and oligomerization. Remarkably, AgerAHA/AHA mice phenocopied Ager−/− mice in two different pathophysiological processes, namely bone remodeling and neutrophil-mediated liver injury, which demonstrates that HS-induced RAGE oligomerization is essential for RAGE signaling. Our findings suggest that it should be possible to block RAGE signaling by inhibiting HS-RAGE interaction. To test this, we generated a monoclonal antibody that targets the HS-binding site of RAGE. This antibody blocks RAGE signaling in vitro and in vivo, recapitulating the phenotype of AgerAHA/AHA mice. By inhibiting HS-RAGE interaction genetically and pharmacologically, our work validated an alternative strategy to antagonize RAGE. Finally, we have performed RNA-seq analysis of neutrophils and lungs and found that while Ager−/− mice had a broad alteration of transcriptome in both tissues compared to wild-type mice, the changes of transcriptome in AgerAHA/AHA mice were much more restricted. This unexpected finding suggests that by preserving the expression of RAGE protein (in a dominant-negative form), AgerAHA/AHA mouse might represent a cleaner genetic model to study physiological roles of RAGE in vivo compared to Ager−/− mice.
 
 ## Introduction
 
@@ -40,59 +40,99 @@ To investigate the physiological significance of HS-RAGE interaction and HS-depe
 
 ## Results
 
-## Characterization of RAGE-AHA mutant and generation of AgerAHA/AHA knock-in mice
+### Characterization of RAGE-AHA mutant and generation of AgerAHA/AHA knock-in mice
 
 RAGE is a multidomain protein consisting of three extracellular immunoglobulin domains (V-C1-C2, also known as sRAGE), a single transmembrane domain, and a short cytoplasmic tail (Dattilo et al., 2007; Koch et al., 2010). We previously reported that HS can induce RAGE to form a hexamer (trimer of dimers) with 1:2 stoichiometry, and that the interaction involves five basic residues in the V domain and two residues (R216 and R218) in the C1 domain (Figure 1A; Xu et al., 2013). Here, we prepared a triple mutant of mouse RAGE VC1 domain bearing R216A, R217H, and R218A mutations (mVC1-AHA). As expected, the binding capacity of mVC1-AHA to the heparin Sepharose column was reduced significantly compared with wild-type mouse RAGE VC1 domain (WT-mVC1) (Figure 1B). Furthermore, mVC1-AHA was unable to form stable hexamer in the presence of HS dodecasaccharides (Figure 1C). Importantly, mVC1-AHA maintains WT-like binding affinity to RAGE ligand HMGB1 (apparent binding affinity 9.9 nM vs. 11.7 nM, Figure 1D), which is expected because binding of RAGE ligands predominantly occurs at the V domain. To generate a murine model to specifically disrupt HS-RAGE interaction, we introduced R216A-R217H-R218A triple mutations into the ager (synonymous with rage) locus by CRISPR-Cas9 mediated homologous recombination (Figure 1E). AgerAHA/AHA mice were born with normal litter size and grew normally without gross morphological abnormalities. The RAGE expression level in AgerAHA/AHA mice lungs was similar to WT mice, which suggested that the mutation did not negatively affect the expression of RAGE (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig1-v2.jpg)
 
-**Figure 1.:** 216R217R218 to A216H217A218) and generation of AgerAHA/AHA knock-in mice.(A) Cartoon diagram of HS-induced hexamer of RAGE V-C1 domains (PDB 4IMB). The hexamer is organized as trimer of dimers, with each dimer stabilized by one molecule of HS oligosaccharide. Oligosaccharides are shown in space-filling models. One dimer (salmon and green) is enlarged to show HS binding residues (in stick representation). R216 and R218 from both monomers (V-C1 and V’-C1’) are marked. (B) Binding of wild-type murine RAGE V-C1 domain (mVC1-WT) and RAGE-AHA mutant (mVC1-AHA) to heparin Sepharose column. RAGE-AHA mutant had reduced HS-binding capacity. (C) mVC1-WT or mVC1-AHA were incubated with HS dodecasaccharide (H12) and the mixtures were resolved on a Superdex 200 (10/300 mm) gel filtration column. H12 was unable to induce RAGE-AHA to form a stable RAGE hexamer. (D) Binding affinity of mVC1-WT and mVC1-AHA to immobilized HMGB1 was determined by enzyme-linked immunosorbent assay (ELISA). RAGE-AHA displayed WT-like binding affinity to ligand. (E) Targeting strategy for generating AgerAHA/AHA knock-in mice. Sequences of the targeting single guide RNA (sgRNA), the mutation sites in Ager exon 6, and the repairing template single-stranded donor oligonucleotides (ssODN) are shown. (F) Western blotting analysis of RAGE expression in lung lysate. Top panel, lung lysates from WT, AgerAHA/AHA, and Ager−/− mice were blotted with a rat anti-RAGE mAb (R&D system), which showed RAGE was expressed at normal level in AgerAHA/AHA mice. Bottom panel, as a protein loading control, the blot was reprobed with anti-HMGB1, which is universally expressed by all cells.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Cartoon diagram of HS-induced hexamer of RAGE V-C1 domains (PDB 4IMB). The hexamer is organized as trimer of dimers, with each dimer stabilized by one molecule of HS oligosaccharide. Oligosaccharides are shown in space-filling models. One dimer (salmon and green) is enlarged to show HS binding residues (in stick representation). R216 and R218 from both monomers (V-C1 and V’-C1’) are marked. (B) Binding of wild-type murine RAGE V-C1 domain (mVC1-WT) and RAGE-AHA mutant (mVC1-AHA) to heparin Sepharose column. RAGE-AHA mutant had reduced HS-binding capacity. (C) mVC1-WT or mVC1-AHA were incubated with HS dodecasaccharide (H12) and the mixtures were resolved on a Superdex 200 (10/300 mm) gel filtration column. H12 was unable to induce RAGE-AHA to form a stable RAGE hexamer. (D) Binding affinity of mVC1-WT and mVC1-AHA to immobilized HMGB1 was determined by enzyme-linked immunosorbent assay (ELISA). RAGE-AHA displayed WT-like binding affinity to ligand. (E) Targeting strategy for generating AgerAHA/AHA knock-in mice. Sequences of the targeting single guide RNA (sgRNA), the mutation sites in Ager exon 6, and the repairing template single-stranded donor oligonucleotides (ssODN) are shown. (F) Western blotting analysis of RAGE expression in lung lysate. Top panel, lung lysates from WT, AgerAHA/AHA, and Ager−/− mice were blotted with a rat anti-RAGE mAb (R&D system), which showed RAGE was expressed at normal level in AgerAHA/AHA mice. Bottom panel, as a protein loading control, the blot was reprobed with anti-HMGB1, which is universally expressed by all cells.
 
-## AgerAHA/AHA and AgerAHA/+ mice develop an osteopetrotic phenotype
+### AgerAHA/AHA and AgerAHA/+ mice develop an osteopetrotic phenotype
 
 As RAGE was reported to be associated with osteoclast maturation (Zhou et al., 2006), we first examined the bone phenotype of AgerAHA/AHA mice. Micro-computed tomography (micro-CT) analysis of the femoral trabecular bone morphology and microarchitecture showed that 10-week-old male AgerAHA/AHA mice exhibited increased trabecular bone mass (Figure 2A) and displayed a 49% increase in bone volume over tissue volume (BV/TV) (Figure 2B), 17% increase in trabecular thickness (Tb.Th), and 15% decrease in trabecular separation (Tb.Sp) (Figure 2—figure supplement 1). In addition, these AgerAHA/AHA mice also displayed a significant increase in the cortical bone thickness (from 0.182 to 0.205 mm) (Figure 2C). Similar phenotype was also observed in 10-week-old female AgerAHA/AHA mice, which displayed a 70% increase in bone volume compared to WT mice (Figure 2—figure supplement 2). Notably, all these parameters are highly similar to those of 10-week-old Ager−/− mice (Figure 2A-C and Figure 2—figure supplements 1–2). Interestingly, when they were 4 weeks old, the AgerAHA/AHA mice had normal bone mass, while Ager−/− mice had slightly lower bone mass compared to WT mice. By 4 months old, while the bone mass of AgerAHA/AHA mice was 26% higher than WT mice, the bone mass of Ager−/− mice was significantly higher (75% over WT). Taken together, these data indicate that the interaction between HS and RAGE, and HS-induced oligomer formation, are indispensable for RAGE to function in bone remodeling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative μCT images of the femurs from 10-week-old male WT, AgerAHA/AHA, AgerAHA/+, and Ager−/− mice. (B) Trabecular bone volume/tissue volume ratio (BV/TV), n=5–12, and (C) cortical bone thickness of femurs from 10-week-old male WT, AgerAHA/AHA, AgerAHA/+, Ager+/−, and Ager−/− mice, n=5–12. (D) Trabecular BV/TV of 4-week-old male WT, AgerAHA/AHA, and Ager−/− mice, n=6. (E) Trabecular BV/TV of 4-month-old male WT, AgerAHA/AHA, and Ager−/− mice, n=3–6. Error bars represent SD. *, **, and *** represent p<0.05, 0.01, and 0.001, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Trabecular thickness (Tb.Th) and (B) Trabecular separation (Tb.sp) as determined by µCT analysis. Error bars represent SD. *, **, and *** represent p<0.05, 0.01, and 0.001, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Trabecular bone volume/tissue volume ratio (BV/TV) and (B) cortical bone thickness of femurs from 10-week-old female WT, AgerAHA/AHA, AgerAHA/+, Ager+/−, and Ager−/− mice.
+
 To understand the potential contribution of haploinsufficiency and RAGE gene dosage in bone phenotype, we examined both strains of heterozygous mice. To our surprise, male AgerAHA/+ mice already manifested significant increase in BV/TV (30%) and in cortical bone thickness (from 0.182 to 0.198 mm) (Figure 2A–C). In contrast, although an upward trend was observed in male Ager+/− mice, they did not display significant increase in either parameter (Figure 2B–C). However, 10-week-old female Ager+/− mice displayed a significant increase in BV/TV (49%) which was almost identical to the increase observed in female AgerAHA/+ mice (51% increase) (Figure 2—figure supplement 2). Of note, while the BV/TV value was significantly different between Ager+/− and Ager−/− mice in both male and female mice, it was not significantly different between AgerAHA/+ and AgerAHA/AHA mice. Our findings suggest that RAGE-AHA mutation led to a haploinsufficient bone phenotype, and that gene dosage of RAGE also plays a role in determining the bone phenotype, especially in female mice.
 
-## Osteoclastogenesis is impaired in AgerAHA/AHA mice
+### Osteoclastogenesis is impaired in AgerAHA/AHA mice
 
 Tartrate-resistant acid phosphatase (TRAP) staining of tibia sections showed the number of osteoclasts in AgerAHA/AHA mice was reduced to a similar level as in Ager−/− mice (Figure 3A–B), which indicates a defect of osteoclast differentiation in AgerAHA/AHA mice. To confirm this defect, we performed an osteoblast/bone marrow macrophage (BMM) co-culture osteoclastogenesis assay in vitro. In this model, WT primary calvarial osteoblasts were co-cultured with BMMs from WT, AgerAHA/AHA, and Ager−/− mice to induce osteoclastogenesis from BMMs. Compared to the large and multinucleated TRAP-positive cells formed in cultures of WT BMMs, AgerAHA/AHA, and Ager−/− formed much smaller TRAP-positive cells (Figure 3C). To better quantify the differences in osteoclast numbers among the three genotypes, we sub-grouped the osteoclasts based on the number of nuclei number they contain (Figure 3D). Interestingly, while the number smaller osteoclasts (3–10 nuclei) were not significantly reduced in AgerAHA/AHA and Ager−/−, the number of larger osteoclasts (>11 nuclei) were substantially reduced (Figure 3D). Collectively, these results demonstrate that impaired HS-RAGE interaction leads to abnormal maturation of osteoclasts, which suggests a key role for RAGE-HS interaction in regulating osteoclastic differentiation and function. In addition, the mutagenesis in osteoblast lineage cells did not seem to have an impact on bone formation as examined by fluorochrome double labeling (Figure 3—figure supplement 1).
 
-## AgerAHA/AHA mice were protected from liver injury after APAP overdose
+![Figure 3.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig3-v2.jpg)
+
+**Figure 3.:** (A) TRAP staining of paraffin sections of WT, AgerAHA/AHA, and Ager−/− tibias. Mature osteoclasts were stained purple, and bone was counterstained with Fast Green. (B) Quantification of osteoclasts (OCs) in tibia sections. n=3 mice. (C) BMM isolated from WT, AgerAHA/AHA, or Ager−/− mice was co-cultured with WT osteoblasts. Mature osteoclasts are visualized by TRAP staining. (D) Quantification of the number of osteoclasts per 100× field. Osteoclasts were sub-grouped into four categories based on the number of nuclei they contain. n=3 wells. * and ** represent p<0.05 and 0.01, respectively. Data are representative of at least three separate assays. TRAP, tartrate-resistant acid phosphatase; WT, wild-type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Analysis of bone formation by calcein/Alizarin Red S double labeling in 8-week-old WT, AgerAHA/AHA, and Ager−/− tibia. (D) Mineral apposition rate (MAR) calculated from the double-labeling analysis in 8-week-old WT, AgerAHA/AHA, and Ager−/− tibia, n=6–8.
+
+### AgerAHA/AHA mice were protected from liver injury after APAP overdose
 
 We and others have previously reported that RAGE was responsible for neutrophil-mediated secondary injury (in an HMGB1-dependent manner) following acetaminophen (APAP)-induced liver necrosis (Arnold et al., 2020; Huebener et al., 2015). When subjected to a sublethal dose of APAP, Ager−/− mice displayed a reduction of neutrophil infiltration and liver damage compared with WT mice. We thus similarly used this APAP overdose model to examine the role of HS-RAGE interaction in mediating neutrophilic liver injury. As expected, we found that like Ager−/− mice, AgerAHA/AHA mice were also protected from APAP-induced liver injury. The plasma level of alanine aminotransferase (ALT), a biomarker of liver damage, was reduced by nearly 45% in AgerAHA/AHA mice (Figure 4A). Similarly, neutrophil infiltration into the liver was also significantly reduced in AgerAHA/AHA mice (Figure 4B). Histologic examination also confirmed that livers from AgerAHA/AHA mice had significantly reduced necrotic area compared to the injured WT livers (Figure 4C–D). Notably, these results were very similar to what we previously observed in Ager−/− mice (Arnold et al., 2020). Our data strongly suggest that in this drug-induced liver injury model, HS-RAGE interaction plays an essential role in mediating HMGB1-dependent neutrophil infiltration.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig4-v2.jpg)
 
-**Figure 4.:** AgerAHA/AHA mice were protected from liver injury after APAP overdose.(A) WT and AgerAHA/AHA mice were treated with 300 mg/kg APAP to induce liver injury and plasma ALT concentrations were measured 24 hr post injury, n=10–11. (B) Neutrophils recruitment into the liver after APAP-induced liver injury, n=5–10. (C) Hematoxylin and eosin (H&E) staining of paraffin-embedded liver tissues to show the extent of liver necrosis. (D) The necrotic area of H&E stained liver tissues was quantified with ImageJ, n=5.Figure 4—source data 1.AgerAHA/AHA mice were protected from liver injury after APAP overdose.
+**Figure 4.:** (A) WT and AgerAHA/AHA mice were treated with 300 mg/kg APAP to induce liver injury and plasma ALT concentrations were measured 24 hr post injury, n=10–11. (B) Neutrophils recruitment into the liver after APAP-induced liver injury, n=5–10. (C) Hematoxylin and eosin (H&E) staining of paraffin-embedded liver tissues to show the extent of liver necrosis. (D) The necrotic area of H&E stained liver tissues was quantified with ImageJ, n=5.
 
-## RNA-seq transcriptome analysis of neutrophils from AgerAHA/AHA mice and Ager−/− mice
+### RNA-seq transcriptome analysis of neutrophils from AgerAHA/AHA mice and Ager−/− mice
 
 To understand whether ablation of RAGE signaling has an impact on the general mobility of neutrophils, we performed an air pouch assay to examine LPS-induced neutrophil infiltration. Interestingly, in this assay, neutrophil infiltration was indistinguishable between WT, AgerAHA/AHA, and Ager−/− mice (Figure 5A). This result confirmed that AgerAHA/AHA and Ager−/− neutrophils have normal mobility when a different chemoattractant (other than HMGB1) was responsible for the infiltration. During this assay, we unexpectedly discovered that several common surface markers were dramatically upregulated on Ager−/− neutrophils with 100% penetrance. Compared to WT neutrophils, the expression level of Ly6C and CD45 on Ager−/− neutrophils were 10- to 15-fold higher (Figure 5B). Surprisingly, the expression levels of both markers were completely normal on AgerAHA/AHA neutrophils. The abnormal expression of Ly6C and CD45 was not restricted to neutrophils as we also found they are overexpressed in T and B cells from Ager−/− mice (Figure 5—figure supplement 1). The fact that two out of eight common leukocyte markers were highly elevated in Ager−/− (the other six markers were normal, including CD11b shown in Figure 5B), but were normal in AgerAHA/AHA neutrophils strongly suggests that complete removal of RAGE protein has a much broader global impact compared to mere point mutations of RAGE. To grasp the full scale of the alteration in gene expression caused by knocking out Rage, we performed an RNA-seq analysis of mature neutrophils from WT, AgerAHA/AHA, and Ager−/− mice.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig5-v2.jpg)
+
+**Figure 5.:** (A) LPS-induced neutrophil infiltration into air pouch in WT, AgerAHA/AHA, and Ager−/− mice, n=6–7. Neutrophils were quantified 4 hr after LPS injection. (B) Surface marker (CD45, Ly6C, and CD11b) analysis of air pouch neutrophils by FACS. Cells from six mice of each genotype were analyzed with identical result. (C–E) RNA-seq transcriptome analysis of AgerAHA/AHA and Ager−/− mice PMN. (C) Plot of up- and downregulated genes in AgerAHA/AHA and Ager−/− PMN. DEGs between AgerAHA/AHA and WT PMNs were determined based on Benjamin–Hochberg multicomparison correction p values. 178 genes were found to be significantly upregulated (padj value≤0.05, log2 fold change≥1) while 69 genes were found to be significantly downregulated (padj value≤0.05, log2 fold change≤–1). DEGs between Ager−/− and WT PMNs were determined similarly. 476 genes were found to be significantly upregulated (padj value≤0.05, log2 fold change≥1) while 107 genes were found to be significantly downregulated (padj value≤0.05, log2 fold change≤–1). (D) Volcano plot of DEGs between AgerAHA/AHA PMN and WT PMNs. Genes with most significant changes were marked in the plot. (E) Volcano plot of DEGs between Ager−/− PMN and WT PMNs. (F–H) RNA-seq transcriptome analysis of whole lungs from AgerAHA/AHA and Ager−/− mice. (F) Plot of up- and downregulated genes in AgerAHA/AHA and Ager−/− lungs. 14 genes were found to be significantly upregulated while 17 genes were found to be significantly downregulated in AgerAHA/AHA lungs. In Ager−/− lungs, 91 genes were found to be significantly upregulated while 111 genes were found to be significantly downregulated. (G) Volcano plot of DEGs between AgerAHA/AHA and WT lungs. Genes with most significant changes were marked in the plot. (H) Volcano plot of DEGs between Ager−/− and WT lungs. DEG, differentially expressed gene; PMN, polymorphonuclear; WT, wild-type.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CD3+ T cells and (B) CD3− B cells from WT, AgerAHA/AHA, and Ager−/− mice were stained with a rat anti-Ly6C-FITC mAb. (C) CD3+ T cells and (D) CD3− B cells were stained with a rat anti-CD45-FITC mAb. Cells isolated from four mice in each genotype were analyzed with almost identical result.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** PMN and lung transcriptome of WT, AgerAHA/AHA, and Ager−/− mice (3–4 mice for each) were analyzed by principal component analysis using DESeq2 R package (v1.30.1). Delineation of the PMN transcriptome suggests clear separation between AgerAHA/AHA and Ager−/− compared to WT mice while the lung transcriptome suggests overlap between AgerAHA/AHA and WT mice with Ager−/− having clear separation. PMN, polymorphonuclear; WT, wild-type.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–C) Expression levels of Gbp2b, Ifi44L, and Ifi44 in neutrophils, respectively, were plotted in FPKM (expected number of Fragments Per Kilobase of transcript sequence per Millions base pairs sequence). (D–F) Expression levels of Gbp2b, Ifi44L, and Ager in lungs, respectively, were plotted in FPKM.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–G) Expression levels of S100a8, S100a9, S100a11, S100a6, S100a10, S100a13, and hmgb1 in neutrophils were plotted in FPKM. (H–L) Expression levels of S100a11, S100a6, S100a10, S100a13, and hmgb1 in lungs were plotted in FPKM. * represents p<0.05. For all unlabeled bars, no significant difference was detected compared to WT level.
+
 Principle component analysis of the RNA-seq data found clear separation of transcriptomes of AgerAHA/AHA, Ager−/−, and WT mice, with all three biological replicates of each genotype closely clustering together (Figure 5—figure supplement 2). As expected, the overall number of differentially expressed genes (DEGs) in Ager−/− neutrophils were almost 2.5 times higher than in AgerAHA/AHA neutrophils (603 vs. 247). Significant overlap was found in upregulated genes, with 80% of upregulated genes in AgerAHA/AHA (143/178) also being upregulated in Ager−/− neutrophils (Figure 5C and Supplementary file 1). In contrast, the overlap was rather limited in downregulated genes, with merely 29% (20/69) of downregulated genes in AgerAHA/AHA also being downregulated in Ager−/−. Gene ontology (GO) analysis of upregulated genes found that genes related to regulation of leukocyte activation (43 genes), differentiation (27 genes), proliferation (29 genes), adhesion (34 genes), and regulation of cytokine production (30 genes) were highly enriched in Ager−/− neutrophils (Supplementary file 2). The same biological processes were also enriched in AgerAHA/AHA neutrophils, except that the number of genes involved were roughly half of the number of genes found in Ager−/− neutrophils (Supplementary file 3). These findings suggest that RAGE signaling plays a profound role in leukocyte biology. GO analysis of downregulated genes did not find any biological processes that are significantly differentially regulated in either Ager−/− and AgerAHA/AHA neutrophils. Curiously, we did identify several highly downregulated genes in AgerAHA/AHA neutrophils that were not found in Ager−/− neutrophils, including Gbp2b, Ifi44, and Ifi44l (Figure 5D and Figure 5—figure supplement 3A-C), all of which have been shown to be interferon γ-induced genes and play important roles in defense against infection (Santos and Broz, 2018; Kim et al., 2011; Busse et al., 2020). Many top DEGs in Ager−/− neutrophils were not found in AgerAHA/AHA neutrophils (Figure 5E), which include highly upregulated genes: Rps3a2, Rps3a3, Rps13_ps1, Rps15a_ps7, Tpm3_rs7, and Rnf5; and highly downregulated genes: Cxcl1, Muc1, Trim46, Ifi208, and BC147527. In addition, we also examined expression levels of seven most highly expressed RAGE ligands and found none of those were altered in AgerAHA/AHA neutrophils (Figure 5—figure supplement 4). In Ager−/− neutrophils, while we found expression levels of most RAGE ligands were unaltered, the expression levels of S100a8 and S100a11 were reduced by ~40%. To our surprise, Ly6C and CD45 were not among the DEGs in Ager−/− neutrophils, which suggest that either the posttranscriptional regulation or the secretion of Ly6C and CD45 were altered in Ager−/− neutrophils. If that were the case, we would expect that the global protein expression profile of Ager−/− neutrophils would perhaps be even more dramatically altered than what is apparent on RNA sequencing.
 
-## RNA-seq transcriptome analysis of lung tissues from AgerAHA/AHA mice and Ager−/− mice
+### RNA-seq transcriptome analysis of lung tissues from AgerAHA/AHA mice and Ager−/− mice
 
 To gain further insight into the impact of impaired RAGE signaling on gene transcription, we performed RNA-seq analysis of lung tissue, an organ in which RAGE is abundantly expressed. Surprisingly, the number of DEGs was much less in lungs compared to neutrophils in both strains. We found 202 DEGs in Ager−/− lungs and merely 31 DEGs in AgerAHA/AHA lungs (Figure 5F and Supplementary file 4). The difference between the two genotypes was however even more dramatic in lungs (7-fold) than we observed in neutrophils (2.5-fold). Similar to what we found in neutrophils, in AgerAHA/AHA lung significant overlap was found in upregulated genes, with 50% of upregulated genes in AgerAHA/AHA (7/14) were also upregulated in Ager−/− (Figure 5F and Supplementary file 4). In contrast, the overlap was very limited in downregulated genes, with merely 23.5% (4/17) of downregulated genes in AgerAHA/AHA were similarly downregulated in Ager−/−. Comparing the DEGs between lungs and neutrophils, we found that interestingly, many top DEGs appeared in both tissues in a genotype-specific manner. In AgerAHA/AHA, Gbp2b, Ifi44, and Gm28438 were highly downregulated in both lungs and neutrophils (Figure 5D and G, Figure 5—figure supplement 3). In Ager−/−, Rps3a2, Rps3a3, Rps13_ps1, Rps15a_ps7, Tpm3_rs7, Rf5, and BC147527 were differently regulated in both lungs and neutrophils to similar extent (Figure 5E and H). Furthermore, two genes, Rpl34_ps1 and Gm42031, were found to be highly downregulated in both genotypes and in both tissues. As expected, in Ager−/− lung, Ager (the gene that expresses RAGE) is one of the top downregulated genes (Figure 5H). Also consistent with our Western blot analysis (Figure 1F), in AgerAHA/AHA lung, Ager was expressed at a similar level as in WT lung on RNA sequencing (Figure 5—figure supplement 3F). GO analysis revealed genes related to regulation of cell killing (11 genes), canonical Wnt signaling (7 genes), and epithelial cell proliferation (11 genes), among others, was highly enriched in Ager−/− lung (Supplementary file 5). In contrast, none of these biological processes were enriched in AgerAHA/AHA lung due to limited number of DEGs.
 
-## Development of a rabbit mAb that binds specifically to the HS-binding site of RAGE
+### Development of a rabbit mAb that binds specifically to the HS-binding site of RAGE
 
 As AgerAHA/AHA mice phenocopy Ager−/− mice in both osteoclastogenesis and response to APAP-induced liver injury, inhibition of HS-RAGE interaction could be an effective means to block RAGE signaling. To this end, we developed a rabbit monoclonal antibody (mAb B2) to specifically target HS-RAGE interaction. The epitope of B2 includes the HS-binding residues R216 and R218. Compared to the apparent binding affinity between B2 and WT RAGE (0.1 nM), the affinity between B2 and R216A-R218A mutant was dramatically reduced to 4 nM (Figure 6A). Using a heparin Sepharose column, we confirmed that B2 was indeed able to significantly inhibit the binding of RAGE to heparin (Figure 6B). Importantly, while a polyclonal anti-RAGE antibody significantly inhibited the binding between RAGE and its ligands HMGB1 and S100B, B2 did not interfere with the binding between RAGE and its ligands (Figure 6C–D). The specificity of B2 was determined by immunostaining of lung sections from WT and Ager−/− mice. RAGE-specific staining was observed in WT lung section while no staining was shown on Ager−/− (Figure 6E). Western blot analysis of whole lung lysate from WT, AgerAHA/AHA, and Ager−/− mice further showed that B2 was highly specific for RAGE but failed to detect the RAGE-AHA mutant, which again confirmed the epitope of B2 includes R216 and R218 (Figure 6F).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig6-v2.jpg)
 
-**Figure 6.:** (A) Binding of rabbit mAb B2 to immobilized wild-type (WT) sRAGE or R216A-R218A mutant was determined by ELISA. The dramatically reduced binding affinity of B2 to R216A-R218A mutant (Kd=4 nM) compared to its affinity to WT sRAGE (Kd=0.1 nM) indicates that R216 and R218 are part of the epitope for B2. (B) B2 directly inhibits binding of RAGE to heparin. WT mouse RAGE VC1 domain (mVC1) were either directly loaded onto heparin Sepharose column, or loaded after 30 min incubation with Fab fragment of B2 at 1:1 molar ratio. B2-Fab bound mVC1 displayed greatly reduced binding to heparin column. (C) Binding of biotinylated sRAGE to immobilized HMGB1 was measured in the presence of anti-RAGE rabbit polyclonal Ab or B2 at 5 µg/ml. Binding of sRAGE to HMGB1 in the absence of antibodies was set to 100%. (D) Binding of biotinylated sRAGE to immobilized S100B was measured in the presence of anti-RAGE rabbit polyclonal Ab or B2 at 5 µg/ml. (E) Determine the specificity of B2 by immunostaining of lung sections from WT, AgerAHA/AHA, and Ager−/− mice with 1 µg/ml B2. (F) Western blot analysis of the specificity of B2 using lung lysate from WT, AgerAHA/AHA, and Ager−/− mice. Please note B2 failed to detect RAGE-AHA mutant, again confirming the epitope of B2. The loading ctrl is the same as shown in Figure 1F. (G) Binding of B2 IgG to untreated MDA-453 cells or cells pretreated with heparin lyase III (HL-III). Whole IgG form of B2 (bivalent) binds to cell surface RAGE in an HS-dependent manner. (H) Binding of B2 Fab fragment to untreated MDA-453 cells or cells pretreated with HL-III. Binding of the Fab form of B2 (monovalent) to RAGE was not sensitive to HL-III treatment. The shaded histograms in (G–H) are from cells stained only with control antibodies.Figure 6—source data 1.Figure 6—source data 2.AgerAHA/AHA, and Ager−/− mice.
+**Figure 6.:** (A) Binding of rabbit mAb B2 to immobilized wild-type (WT) sRAGE or R216A-R218A mutant was determined by ELISA. The dramatically reduced binding affinity of B2 to R216A-R218A mutant (Kd=4 nM) compared to its affinity to WT sRAGE (Kd=0.1 nM) indicates that R216 and R218 are part of the epitope for B2. (B) B2 directly inhibits binding of RAGE to heparin. WT mouse RAGE VC1 domain (mVC1) were either directly loaded onto heparin Sepharose column, or loaded after 30 min incubation with Fab fragment of B2 at 1:1 molar ratio. B2-Fab bound mVC1 displayed greatly reduced binding to heparin column. (C) Binding of biotinylated sRAGE to immobilized HMGB1 was measured in the presence of anti-RAGE rabbit polyclonal Ab or B2 at 5 µg/ml. Binding of sRAGE to HMGB1 in the absence of antibodies was set to 100%. (D) Binding of biotinylated sRAGE to immobilized S100B was measured in the presence of anti-RAGE rabbit polyclonal Ab or B2 at 5 µg/ml. (E) Determine the specificity of B2 by immunostaining of lung sections from WT, AgerAHA/AHA, and Ager−/− mice with 1 µg/ml B2. (F) Western blot analysis of the specificity of B2 using lung lysate from WT, AgerAHA/AHA, and Ager−/− mice. Please note B2 failed to detect RAGE-AHA mutant, again confirming the epitope of B2. The loading ctrl is the same as shown in Figure 1F. (G) Binding of B2 IgG to untreated MDA-453 cells or cells pretreated with heparin lyase III (HL-III). Whole IgG form of B2 (bivalent) binds to cell surface RAGE in an HS-dependent manner. (H) Binding of B2 Fab fragment to untreated MDA-453 cells or cells pretreated with HL-III. Binding of the Fab form of B2 (monovalent) to RAGE was not sensitive to HL-III treatment. The shaded histograms in (G–H) are from cells stained only with control antibodies.
 
 Using a human breast cancer MDA-MB-453 cell line, which was known to overexpress RAGE (Nasser et al., 2015), we examined B2 binding to cell surface RAGE by FACS. As expected, B2 stains 453 cells extremely well, displayed a two-log shift compared to IgG control (Figure 6G). Interestingly, when 453 cells were pretreated with heparin lyase III (HL-III) to remove cell surface HS, binding of B2 IgG was dramatically reduced by 20-fold (Figure 6G). Because removal of HS would dissociate cell surface oligomeric RAGE back to monomers, we suspect that B2 preferably binds to dimeric RAGE in a bivalent fashion. Indeed, when Fab fragment of B2 was tested on 453 cells, we found that its cell surface binding was much weaker (due to monovalent interaction), and the binding showed minimal sensitivity to HL-III treatment (Figure 6H).
 
-## B2 inhibits RAGE-dependent biological processes in cell and animal models
+### B2 inhibits RAGE-dependent biological processes in cell and animal models
 
 We first tested the inhibitory activity of B2 on RAGE-dependent osteoclastogenesis. BMMs were co-cultured with primary calvarial osteoblasts in the presence of 20 µg/ml of B2 or isotype-matched control antibody. As expected, cells treated with B2 formed fewer and smaller TRAP-positive cells, especially for cells with more than 10 nuclei (Figure 7A–B). Remarkably, the osteoclastogenic phenotype of WT BMM treated with B2 was essentially identical to that of AgerAHA/AHA BMMs (Figure 3C–D). In monoculture osteoclastogenesis assay, where BMMs were induced with m-CSF and RANKL, B2 was equally effective in inhibiting osteoclast formation (Figure 7C). The hepatoprotective effects of B2 were also examined in an APAP-induced acute liver failure model. In this experiment, mice were pretreated with B2 at 10 mg/kg before injection of sublethal dose of APAP. Compared to control IgG treated mice, B2 was able to reduce plasma ALT concentration by 40% and neutrophil infiltration by 50% (Figure 7D-E). Again, the level of protection provided by B2 was highly similar to what was observed in AgerAHA/AHA mice (Figure 4A–B). Collectively, these results validated our strategy of targeting the HS-binding site of RAGE as a means to inhibit RAGE signaling.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/71403/elife-71403-fig7-v2.jpg)
 
-**Figure 7.:** (A) B2 inhibits osteoclastogenesis in vitro. Representative images of TRAP staining of WT bone marrow cells co-cultured with WT osteoblasts in the presence of 20 µg/ml B2 or control IgG. Mature osteoclasts were stained pink. (B) Osteoclasts were sub-grouped into four categories based on the number of nuclei and quantified, n=3 wells. (C) B2 also inhibits osteoclastogenesis in monoculture assay, where differentiation of bone marrow macrophages was induced by exogenous RANKL and m-CSF, n=3 wells. (D, E) B2 was protective as a pretreatment in APAP-induced liver injury. WT mice were pretreated with 10 mg/kg of B2-IgG 12 h before APAP overdose (300 mg/kg). Plasma ALT concentrations (D) and neutrophils recruitment into to liver, n=8–9 (E) were quantified 24 hr post liver injury, n=8–9. TRAP, tartrate-resistant acid phosphatase; WT, wild-type.Figure 7—source data 1.
+**Figure 7.:** (A) B2 inhibits osteoclastogenesis in vitro. Representative images of TRAP staining of WT bone marrow cells co-cultured with WT osteoblasts in the presence of 20 µg/ml B2 or control IgG. Mature osteoclasts were stained pink. (B) Osteoclasts were sub-grouped into four categories based on the number of nuclei and quantified, n=3 wells. (C) B2 also inhibits osteoclastogenesis in monoculture assay, where differentiation of bone marrow macrophages was induced by exogenous RANKL and m-CSF, n=3 wells. (D, E) B2 was protective as a pretreatment in APAP-induced liver injury. WT mice were pretreated with 10 mg/kg of B2-IgG 12 h before APAP overdose (300 mg/kg). Plasma ALT concentrations (D) and neutrophils recruitment into to liver, n=8–9 (E) were quantified 24 hr post liver injury, n=8–9. TRAP, tartrate-resistant acid phosphatase; WT, wild-type.
 
 ## Discussion
 
@@ -114,94 +154,314 @@ In summary, by using AgerAHA/AHA mice, we presented strong evidence for an essen
 
 ## Materials and methods
 
-## Generation of AgerAHA/AHA knock-in mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>AgerAHA/AHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Knockin mouse created by CRISPR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(M. musculus)</td>
+      <td>Ager−/−</td>
+      <td>PMID:15173891</td>
+      <td>MGI:2451038</td>
+      <td>RAGE knockout mouse: Agertm1.1Arnd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Origami-B (DE3)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: 70837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Hamster)</td>
+      <td>Flp-In-CHO Cell Line</td>
+      <td>Invitrogen</td>
+      <td>Cat#: R75807RRID:CVCL_U424</td>
+      <td>Directly purchased from manufacture, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MDA-MB-453</td>
+      <td>ATCC</td>
+      <td>Cat#: HTB-131RRID:CVCL_0418</td>
+      <td>Identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAGE (rabbit monoclonal)</td>
+      <td>This paper</td>
+      <td>B2</td>
+      <td>WB: 1 µg/mlFunctional: 5–20 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAGE (human monoclonal)</td>
+      <td>This paper</td>
+      <td>B2, rabbit-human chimeric</td>
+      <td>IHC: 1 µg/mlFC: 10 µg/mlIn vivo: 10 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6G-PE (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561104RRID:AB_10563079</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-FITC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 103107RRID:AB_312972</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b-APC (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561690RRID:AB_10897015</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6C-FITC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 128005RRID:AB_1186134</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3-PE (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 100205RRID:AB_312662</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a-APC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 100711RRID:AB_312750</td>
+      <td>FC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse RAGE (rat monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#: MAB1179RRID:AB_2289349</td>
+      <td>WB: 2 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HMGB1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab79823RRID:AB_1603373</td>
+      <td>WB: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5⁄FRT(plasmid)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: V601020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21b (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: 69741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>m-CSF</td>
+      <td>PeproTech</td>
+      <td>Cat#: 315-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>RANKL</td>
+      <td>PMID:15173891</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>VC1 domain of mouse RAGE</td>
+      <td>PMID:23679870</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA</td>
+      <td>This paper</td>
+      <td>sgRNA</td>
+      <td>GGGGCCGCGTCTGGGGACTTGTG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Leukocyte Acid Phosphatase Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 387A-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#: 74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetaminophen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ(v1.50i)</td>
+      <td>PMID:22930834</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AnalyzePro 1.0</td>
+      <td>AnalyzeDirect Inc</td>
+      <td>RRID:SCR_005988</td>
+      <td>https://analyzedirect.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 R package (v1.30.1)</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler R package (v3.18.1)</td>
+      <td>PMID:22455463</td>
+      <td>RRID:SCR_016884</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of AgerAHA/AHA knock-in mice
 
 The knock-in project was performed at the Gene Targeting and Transgenic Shared Resource of Roswell Park comprehensive cancer center. Briefly, the synthesized sgRNA (which targets exon 6 of mouse rage gene as shown in Figure 1), repair template ssODN, and mRNA encodes for Cas9 were micro-injected into 1-cell stage fertilized egg of C57BL/6J strain, which were then surgically transferred into pseudopregnant foster mothers also of C57BL/6J background. Through CRIPSR-based homology-directed repair, the triple mutations were introduced into the rage locus. The pups were screened by next-generation sequencing, and the mice that bear correct mutations were mated to WT C57BL/6J mice to confirm germline transmission of the mutations. The F1 heterozygous mice were bred together to generate homozygous offspring. Ager−/− mice were originally gifted by A. Bierhaus (University of Heidelberg, Heidelberg, Germany).
 
-## MicroCT analysis
+### MicroCT analysis
 
 Mouse femurs from different ages of WT, AgerAHA/+, AgerAHA/AHA, Ager+/−, and Ager−/− mice were harvested, fixed for 48 hr in 10% neutral buffered formalin. A quantitative analysis of the gross bone morphology and microarchitecture was performed using ScanCo microCT 100 system (University at Buffalo). 3D reconstruction and bone microarchitecture analysis were performed using AnalyzePro (AnalyzeDirect Inc).
 
-## TRAP staining
+### TRAP staining
 
 Mouse tibia from 10-week-old male mice were harvested, fixed for 48 hr in 10% neutral buffered formalin, and decalcified in 10% EDTA for 2 weeks at room temperature (RT). The samples were embedded in paraffin and sectioned at 5 μm for TRAP staining. The sections were counter stained with Fast Green.
 
-## Osteoclastogenesis assay
+### Osteoclastogenesis assay
 
 Primary osteoblasts were isolated from calvaria of 5- to 8-day-old WT mice following an established protocol (Taylor et al., 2014). Osteoblasts (5×103 cells/well) were seeded in a 96-well plate the day before starting the co-culture. Freshly isolated bone marrow cells (from WT, AgerAHA/AHA, and Ager−/− mice) were suspended in 10 ml of α-MEM containing 10% fetal bovine serum and 1× penicillin/streptomycin, 10–7 M dexamethasone, and 10–8 M 1α- and 25-dihydroxyvitamin D3. About 100 µl of bone marrow cells were added to each well. The medium was replaced every 2 days thereafter until the appearance of giant osteoclasts. For B2 inhibition assay, 20 µg/ml B2-IgG or control IgG was included in the medium in selected wells. To visualize osteoclasts, the cells were fixed and stained for TRAP activity using a Leukocyte Acid Phosphatase Kit (Sigma-Aldrich). Osteoclasts were sub-grouped into four categories based on the number of nuclei and quantified to analyze the population of osteoclasts with different number of nuclei.
 
-## Mineral apposition rate measurement
+### Mineral apposition rate measurement
 
 Eight-week-old male mice of WT, AgerAHA/AHA, and Ager−/− were labeled at 9 days (20 mg/kg of calcein) and 2 days (30 mg/kg of Alizarin Red) prior to sacrifice via intraperitoneal injection. Tibias were fixed with 10% formalin for 48 hr, treated with 5% KOH for 96 hr, and then processed and sectioned followed an established method (Porter et al., 2017). Images were taken with a Nikon Ci-S fluorescence microscope and merged using ImageJ software. Mineral apposition rate is the distance between the midpoints of the two labels (measured at multiple locations using ImageJ and averaged) divided by the time between the dye injections.
 
-## Mouse model of APAP liver injury
+### Mouse model of APAP liver injury
 
 WT, AgerAHA/AHA, and Ager−/− mice were fasted overnight (12–15 hr) to deplete GSH stores before APAP (Sigma-Aldrich) administration. Fresh APAP was dissolved in warm (~50°C) sterile saline, cooled to 37°C, and injected intraperitoneally at 300 mg/kg. The plasma samples were collected 24 hr after APAP administrations for measuring ALT concentration. In general, the concentration of ALT reached its highest point at 24 hr after APAP overdose. For B2 protective treatment, WT mice were injected intraperitoneally with 10 mg/kg of B2-IgG 12 hr before APAP overdose (300 mg/kg). Plasma ALT was measured using the ALT Infinity reagent (Thermo Fisher Scientific) following the manufacturer’s instructions. Livers were harvested, fixed for 24 hr in 10% neutral buffered formalin. Samples were further embedded in paraffin and sectioned at 4 μm for hematoxylin and eosin staining. The necrosis area was quantified with ImageJ.
 
-## Neutrophil infiltration in liver necrosis
+### Neutrophil infiltration in liver necrosis
 
 The identical liver lobe from different mice was collected, minced, and digested with 0.2% collagenase A for 1 hr at 37° with shaking, and the digested tissue was further dissociated into single-cell suspension by pipetting several times. Cells passed through 70-µm cell strainer were pelleted, resuspended in 1 ml phosphate-buffered saline (PBS) and overlayed onto 4 ml of 33% Percoll gradient. After centrifugation at RT for 15 min at 1400×g, cell pellet was collected as leukocytes which include polymorphonuclear (PMN) cells. Leukocytes were further treated with ACK Lysing Buffer for a short time to remove red blood cells and counted. The number of neutrophils was quantified by FACS after staining with rat anti-mouse Ly-6G-PE, Clone 1A8 (BioLegend), rat anti-mouse CD45-FITC (BioLegend), and rat anti-mouse CD11b-APC (BioLegend) for 15 min at 4°. Ly-6G high cells were counted as neutrophils.
 
-## Air pouch model and neutrophil isolation
+### Air pouch model and neutrophil isolation
 
 About 3 ml of sterile air was injected under the dorsal skin of WT, AgerAHA/AHA, and Ager−/− mice. After 3 days, the pouch was refilled with 2 ml of sterile air. On the seventh day, 1 μg of LPS from Escherichia coli O111:B4 (Sigma-Aldrich) in 0.5% solution of carboxymethyl cellulose (sodium salt; Sigma-Aldrich) was injected into the air pouch. After 4 hr, mice were euthanized by isoflurane inhalation and the cells in the pouch were collected by washing with PBS. Cells were counted and stained with Ly-6G-PE to determine the percentage of PMNs.
 
-## Leukocyte cell surface marker analysis
+### Leukocyte cell surface marker analysis
 
 For analysis of PMNs, total cells collected from the air pouch were stained with Ly-6G-PE, Clone 1A8, rat anti-mouse CD45-FITC, and rat anti-mouse CD11b-APC, rat anti-mouse Ly-6C-PE, rat anti-mouse F4-80-PE for 15 min at 4°.
 
 For analysis of T and B cells, splenocytes were stained with rat anti-mouse CD45-FITC, rat anti-mouse Ly-6C-PE, rat anti-mouse F4-80-PE, rat anti-mouse CD3-PE, rat anti-mouse CD4-APC, and rat anti-mouse CD8-APC. CD3+ cells were gated as T cells (including both CD4+ and CD8+ cells), and CD3− cells were gated as B cells.
 
-## RNA-seq transcriptome analysis
+### RNA-seq transcriptome analysis
 
 LPS-induced leucocytes (>95% PMNs) were collected from air pouch as described above and used for RNA extraction. For lung tissue samples, 30 mg thoroughly perfused lungs were homogenized by bullet blender 5E (Next Advance). Total RNA was prepared using RNeasy Mini Kit (QIAGEN) following the protocol. cDNA library construction and RNA sequencing were performed at Novogene Co. Inc (Sacramento, CA). RNA integrity and quantitation were assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA). A total amount of 1 μg RNA per sample was used as input material for the RNA sample preparations. Sequencing libraries were generated using NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, USA) following the manufacturer’s recommendations. The clustering of the index-coded samples was performed on a cBot Cluster Generation System using PE Cluster Kit cBot-HS (Illumina) according to the manufacturer’s instructions. After cluster generation, the library preparations were sequenced on an Illumina platform PE150 and paired-end reads (150 bp) were generated. Reference genome and gene model annotation files were downloaded from genome website browser (NCBI/UCSC/Ensembl, mm10) directly. Paired-end clean reads were aligned to the reference genome using Spliced Transcripts Alignment to a Reference (STAR) (Dobin et al., 2013).
 
 DESeq2 R package (v1.30.1) was used for gene count normalization and differential expression analysis (Love et al., 2014). The list of AgerAHA/AHA and Ager−/− differentially expressed genes compared to WT was filtered by an absolute log2 fold change≥1 and a multiple testing corrected p value ≤0.05. This list of differentially expressed genes in AgerAHA/AHA and Ager−/− lungs or PMNs were further analyzed and annotated with GO analysis using clusterProfiler R package (v3.18.1) (Yu et al., 2012). A multiple testing corrected p value ≤0.05 cutoff was used for the applied conditional hypergeometric test for GO term overrepresentation of GO terms in molecular function and biological process ontologies. The used GO annotations were obtained from the Bioconductor Mus musculus annotation package. PMN and lung RNA-sequencing data have been deposited into the NCBI Gene Expression Omnibus database (accession number GSE174178).
 
-## Development of B2
+### Development of B2
 
 Rabbit monoclonal antibodies (mAbs) were raised against the murine RAGE V-C1 domain in its native conformation. The rabbit hybridomas were generated at Epitomics Inc (now part of Abcam). The hybridoma line 240 E-W3 was used to fuse with rabbit splenocytes. Out of the 4000 hybridoma clones that were screened, around 100 were able to detect mVC1 by direct ELISA. The supernatants of the positive clones were then screened for mAbs that specifically interacted with the HS-binding site. In this screening, instead of using WT mVC1, various mVC1 mutants (K43A-K44A, K39A-R104A, K107A, and R216A-R218A) were immobilized to ELISA plates. These mutants bear alanine mutations in the HS-binding residues. In this assay, mAbs were sought that show reduced binding to the mutants compared to the WT mVC1. In principle, the reduced binding would only occur if the residues that we mutated belong to the epitope recognized by the mAb. In this assay, the epitopes of B2 were found to include R216 and R218. Rabbit B2 was purified from hybridoma supernatant by Protein A chromatography.
 
-## Direct ELISA for screening RAGE-binding mAbs
+### Direct ELISA for screening RAGE-binding mAbs
 
 About 200 ng of human RAGE extracellular domain or R216A-R218A mutant were immobilized onto a 96-well high-binding ELISA plate. Plates were blocked with 5% bovine serum albumin (BSA) in PBS and incubated with 0.01–10 nM of rabbit B2 mAb for 1 hr at RT. Bound B2 mAbs were quantitated with anti-rabbit-HRP (Jackson ImmunoResearch) followed by the addition of HRP substrate (Thermo Fisher Scientific).
 
-## Recombinant expression of B2
+### Recombinant expression of B2
 
 To produce B2 mAbs in large quantity for in vivo studies, we cloned the variable regions of B2 from hybridoma cells and grafted them onto human IgG1 constant region. The chimeric antibody was expressed in Chinese hamster ovary (CHO) cells. The pcDNA5_FRT plasmid purchased from Invitrogen was modified to insert the variable regions of B2 heavy and light chains in human IgG1 constant regions. Then the plasmid was transfected into CHO_Flp cells using lipofectamine 3000 Reagent (Invitrogen), and the positive clones were screened out over 10 days in the presence of Hygromycin B (50 mg/ml, Gibco). Cells with positive expression of the antibody were grown in CD CHO AGT expression medium (Thermo Fisher Scientific) with supplemental glutamine, D+ glucose, and Pen/Strep for 2 weeks. The media was then harvested, and the secreted antibody (IHH-IgG) was purified using a 5-ml HiTrap protein G column (Cytiva). The antibodies were buffer exchanged into PBS, and the concentration was determined using NanoDrop Spectrophotometer (Thermo Fisher Scientific). The purity of each batch was examined using SDS-PAGE. Purified antibodies were stored at 4°C before experiments. For B2-Fab, human chimeric B2 were digested with immobilized papain using Pierce Fab Preparation Kit (Thermo Fisher Scientific) following the instructions.
 
-## Effect of B2 on RAGE binding on heparin
+### Effect of B2 on RAGE binding on heparin
 
 About 30 µg of mouse mVC1 was either directly loaded onto heparin Sepharose column, or loaded after 30 min incubation with 68 µg Fab fragment of B2 (1:1 molar ratio). B2-Fab bound mVC1 displayed greatly reduced binding to heparin column. The bound mVC1 was eluted with a salt gradient from 200 mM to 1.4 M NaCl, pH 7.1 in HEPES buffer.
 
-## B2 cell surface binding by FACS
+### B2 cell surface binding by FACS
 
 Breast tumor MDA-MB-453 was lifted from culture dish using Accutase (BioLegend) and incubated with human B2-IgG or B2-Fab in 100 μl PBS and 0.1% BSA for 45 min at 4°C. Bound B2-IgG was stained with goat anti-human IgG-Alexa 568 (1:1000; Invitrogen) for 30 min and analyzed by FACS. B2-Fab was stained with biotinylated goat anti-human IgG (1:1000, Invitrogen) followed by streptavidin-PE staining. In some experiments, cells were pretreated with recombinant heparin lyases III (5 milliunits/ml) for 15 min at RT prior to binding experiments. The MDA-MB-453 cell line was obtained from ATCC (HTB-131). Its identity was authenticated by SRT profiling, and it was tested negative for mycoplasma in the lab.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Lungs from WT and Ager−/− mice were perfused, harvested, and fixed for 24 hr in 10% neutral buffered formalin. Samples were further embedded in paraffin and sectioned at 5 μm for RAGE staining with 1 µg/ml human B2-IgG. After staining with biotinylated rabbit anti-human IgG secondary antibody (1:200), the sections were developed using the ABC system (Vector Laboratories) and the cell nuclei were counter stained with 15% Ehrlich’s hematoxylin (Electron Microscopy Sciences).
 
-## Effect of antibodies on RAGE-ligand binding
+### Effect of antibodies on RAGE-ligand binding
 
 HMGB1 or S100b (200 ng) was immobilized and the plate was blocked with 5% BSA. Biotinylated-mouse B2 V-C1 domain (200 ng/ml) was pre-incubated with rabbit IgG, polyclonal or monoclonal anti-RAGE (all at 5 μg/ml) for 30 min at RT before being added to the plate. The percentage of antibody inhibition was calculated by comparing the absorbance obtained in the presence of specific antibodies to the absorbance obtained in the presence of control rabbit IgG (which was set to 100%).
 
-## Expression of recombinant murine and human RAGE
+### Expression of recombinant murine and human RAGE
 
 WT mouse RAGE V-C1 domains (mVC1-WT) and human sRAGE (V-C1-C2 domains) were produced in E. coli cells. Purification was carried out using HiTrap SP cation exchange column at pH 7.8, followed by SEC on a Superdex 200 column (GE Healthcare). The recombinant protein was purified to >98% pure as examined by silver staining. Mouse RAGE triple mutant R216A-R217H-R218A (mVC1-AHA) was confirmed by sequencing and purified as described above for WT protein.
 
-## Heparin-Sepharose chromatography and analytical size-exclusion chromatography
+### Heparin-Sepharose chromatography and analytical size-exclusion chromatography
 
 To characterize the binding of mVC1 and mutant to heparin, 100 µg of purified mVC1-WT or mVC1-AHA were applied to a HiTrap heparin-Sepharose column and eluted with a salt gradient from 200 mM to 1.4 M NaCl, pH 7.1 (HEPES buffer). The conductivity measurements at the peak of the elution were converted to the concentration of NaCl based on a standard curve. For analyses of mVC1 and HS dodecasaccharide (H12) complex, purified mVC1-WT or mVC1-AHA (40 µg) was incubated with HS dodecasaccharide (H12, 4 µg) in 20 mM Tris, 150 mM NaCl, pH 7.4, at 4°C overnight. H12 is chemoenzymatically synthesized HS 12mer with NS, 2S, and 6S modification (gift from Dr. Jian Liu, UNC Chapel Hill). All complexes were resolved on a Superdex 200 (10/300 mm) gel filtration column using 20 mM Tris, 150 mM NaCl, pH 7.4, at 4°C.
 
-## HMGB1 binding ELISA
+### HMGB1 binding ELISA
 
 Binding affinity of mRAGE-WT and mRAGE-AHA to HMGB1 was measured by ELISA. Briefly, 96-well plate was coated by 200 ng of mRAGE-WT and mRAGE-AHA protein and blocked by 1% BSA. Biotinylated HMGB1 with concentrations from 50 ng/ml to 1000 ng/ml was added into wells and incubated for 2 hr followed by incubation with streptavidin-HRP for 30 min. About 50 µl of HRP substrate solution was added for developing, and the reaction was stopped by adding 50 µl of 1 M H2SO4. The absorbance at 450 nm was measured by a plate reader. Apparent Kd value was calculated using Prism software.
 
-## Western blot analysis
+### Western blot analysis
 
 One lung lobe from WT, AgerAHA/AHA, or Ager−/− mice was collected and homogenized/lysed in lysis buffer (50 mM Tris-HCl, pH 7.4, 1% Triton X-100). After clearing by centrifugation, the lysate was boiled in SDS sample with 5% β-mercaptoethanol and analyzed by gel electrophoresis using SureGel 4%–20% Bis-Tris gel (Genscripts). After transfer, the PVDF membrane was probed with a rat anti-RAGE mAb (R&D Systems), rabbit anti-HMGB1 mAb (Abcam), or our rabbit B2.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are expressed as means ± SEM. Statistical significance of differences between experimental and control groups was analyzed by two-tailed unpaired Student’s t-test, between multiple groups by one-way analysis of variance (ANOVA) followed by Dunnett’s or Tukey’s multiple comparisons test using Prism software (version 7.03; GraphPad Software Inc).

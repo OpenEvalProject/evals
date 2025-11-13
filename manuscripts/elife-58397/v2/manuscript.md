@@ -43,7 +43,7 @@ The detected climatic regions support the notion that similar climatic determina
 
 ## Results
 
-## Classification of climatic niches
+### Classification of climatic niches
 
 We first identified the species niche domains by calculating the proportion of observations of each species within each bin of a two-dimensional climatic space defined by potential evapotranspiration (PET) and annual precipitation (AP; Figure 1, 'Materials and methods' and Appendix 1). We represented this data as a weighted bipartite network, where climatic bins and species form two disjunct sets of nodes and the probabilities of finding the species in the bins form the link weights. Using a hierarchical network clustering algorithm (Rosvall and Bergstrom, 2008; Rosvall and Bergstrom, 2011), we obtained groups of climatic bins holding similar species, niche domains, and the species associated with them.
 
@@ -51,21 +51,80 @@ We found similarities among tetrapods classes in the detected niche domains but 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58397/elife-58397-fig2-v2.jpg)
 
-**Figure 2.:** The climatic niche domains of each group shown across a space defined by potential evapotranspiration (PET) as a surrogate of energy and annual precipitation (AP) as a surrogate of water inputs. Tetrapods’ domains are labeled so that E and W represent energy and water, respectively, and superscripts H, M, and L mean high, medium, and low, respectively. Numerical subscripts differentiate domains of similar climates. Numbers between 0 and 1 indicate the bootstrap support. The dotted line represents the domains at the highest hierarchical level. Domains of less than 50 species are colored dark gray. Domain colors across groups only indicate similar climatic regions. To characterize the climatic space, we used 17 divisions of both PET and AP for all groups except for amphibians, where we used 18 (see Appendix 1).Figure 2—source data 1.
+**Figure 2.:** The climatic niche domains of each group shown across a space defined by potential evapotranspiration (PET) as a surrogate of energy and annual precipitation (AP) as a surrogate of water inputs. Tetrapods’ domains are labeled so that E and W represent energy and water, respectively, and superscripts H, M, and L mean high, medium, and low, respectively. Numerical subscripts differentiate domains of similar climates. Numbers between 0 and 1 indicate the bootstrap support. The dotted line represents the domains at the highest hierarchical level. Domains of less than 50 species are colored dark gray. Domain colors across groups only indicate similar climatic regions. To characterize the climatic space, we used 17 divisions of both PET and AP for all groups except for amphibians, where we used 18 (see Appendix 1).
 
 Since uncertainties related to the ranges of species exist, we employed a bootstrap and a significance clustering procedure (Rosvall and Bergstrom, 2010; Calatayud et al., 2019a) to assess the domains’ robustness ('Materials and methods'). While several domains were well supported, we found that the niche domains corresponding to intermediate energy (between approximately 1000 and 1500 PET units; EM climates in Figure 2) and low to moderate water (up to approximately 800 ml; WL to WM) were less robust. This robustness analysis shows that these niche domains are more challenging to classify.
 
-## Animal vs previous plant-based climate regions
+### Animal vs previous plant-based climate regions
 
 While Köppen’s climate classification is based on expert knowledge on vegetation physiognomy and the distribution of vegetation types, its wide use makes it worthwhile to compare the climate regions derived from this classification system to the ones produced here. Hence, we studied the geographic location of the climatic conditions associated to niche domains, the climatic regions shown in Figures 1 and 3, which allowed for a more precise comparison between groups and Köppen’s plant-based regions. The similarities among the regions of tetrapods classes measured as adjusted mutual information (AMI) ranged from 0.57 to 0.68, with mean AMI = 0.62 (Table 1). Moreover, the regions based on the niche domains of all tetrapods together were to some extent congruent with the regions of its independent classes (mean AMI = 0.71, ranging from 0.66 to 0.77). Köppen’s regions were more dissimilar to the regions of all tetrapods together (AMI = 0.44) and the regions of each class of tetrapods independently (mean AMI = 0.44, ranging from 0.40 to 0.47).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58397/elife-58397-fig3-v2.jpg)
 
-**Figure 3.:** (A) Geographic location of tetrapods’ niche domains and Köppen’s climatic regions. See also Appendix 1—figure 1. Colors according to Figure 2. (B) Tetrapods’ climatic regions are labeled according to Figure 2.Figure 3—source data 1.
+**Figure 3.:** (A) Geographic location of tetrapods’ niche domains and Köppen’s climatic regions. See also Appendix 1—figure 1. Colors according to Figure 2. (B) Tetrapods’ climatic regions are labeled according to Figure 2.
+
+**Table 1.**
+ Similarity of climatic regions measured by adjusted mutual information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Köppen</th>
+      <th>Tetrapods</th>
+      <th>Amphibians</th>
+      <th>Reptiles</th>
+      <th>Birds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tetrapods</td>
+      <td>0.44</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Amphibians</td>
+      <td>0.40</td>
+      <td>0.66</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Reptiles</td>
+      <td>0.45</td>
+      <td>0.70</td>
+      <td>0.58</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Birds</td>
+      <td>0.45</td>
+      <td>0.77</td>
+      <td>0.61</td>
+      <td>0.64</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Mammals</td>
+      <td>0.47</td>
+      <td>0.72</td>
+      <td>0.57</td>
+      <td>0.66</td>
+      <td>0.68</td>
+    </tr>
+  </tbody>
+</table>
 
 Focusing on particular regions, we saw that climates of high energy (EH) were consistent among tetrapod groups and Köppen’s classification. Desert climates (high energy and low water, EHWL, Figure 3, and Appendix 1—figure 1) were the most similar across all groups. Tropical savanna and steppe climates (high energy and medium water, EHWM) were also consistently defined, though both of these Köppen regions were classified together for all groups but reptiles (Figures 2 and 3 and Appendix 1—figure 1). Similarly, Köppen’s tropical rainforest and tropical monsoon climates were for the most part well recovered (Appendix 1—figure 1). However, we found three different tropical-humid regions, each one mostly corresponding to one of the three larger masses of tropical rainforests: Amazonian, African, and Southeast Asian rainforests; EHWH1, EHWH2, and EHWH3, respectively (Figures 2 and 3). Regarding regions of low energy, we found a slightly higher level of disagreement between Köppen’s and tetrapods’ regions (Figure 3). Finally, temperate climates (medium energy EM) were the least congruent between tetrapod groups and Köppen’s regions. These regions of medium energy were at the same time the least congruent among groups and the least supported by the bootstrap analyses, suggesting that these climates could impose less restrictive conditions in general and allow the appearance of idiosyncratic and variable adaptations.
 
-## Climatic transition zones
+### Climatic transition zones
 
 A complete understanding of niche domains and their associated climatic regions entails the exploration of whether their boundaries represent abrupt or diffuse transitions. Climatic conditions corresponding to diffuse transitions should present low specificity levels to the domain where they belong (Figure 1). Hence, we can consider specificity as the opposite of transitivity. Our network approach allows us to calculate this specificity by the dual classification of climatic bins and species into the same niche domains (Figure 1). We computed the specificity of each climatic bin as the ratio between the link weights of the species classified in the same domain and the total link weights (Bernardo-Madrid et al., 2019; Calatayud et al., 2019b). Then, we projected these values geographically. As expected, lower specificity values were in general associated with the boundaries of the climatic regions (Figure 4A and Appendix 1—figure 2). Beyond boundaries, our results also revealed that harsh conditions, such as desert and continental-polar climates (EHWL and ELWL), present the highest specificity levels, regardless of the group (Figure 4A and Appendix 1—figure 2), reflecting the difficulty of colonizing these climates. Conversely, temperate regions showed the lowest levels of specificity. These regions were also weakly supported in the bootstrap analyses, and we found that bootstrap p-values and mean specificity were significantly correlated (standard generalized linear mixed model [GLMM] coeff. 6.21; p < 0.001 conditional = 0.29, see 'Materials and methods'). Together with the higher variability of these regions across groups, this result further supports the idea that these climatic conditions could impose less restrictive conditions to tetrapods.
 
@@ -73,7 +132,7 @@ A complete understanding of niche domains and their associated climatic regions 
 
 **Figure 4.:** (A) Geographic projection of the specificity of climatic bins to their niche domain. (B) An example showing a bird’s niche domain with a low geographical signal. The distribution of the climatic conditions (black line) and the species (colored richness values) belonging to the same niche domain was mostly congruent. (C) An example of an amphibian’s niche domain showing a high geographical signal, reflected in a substantial mismatch between the distribution of climatic conditions and species belonging to the same domain. (D) A quantitative approximation of the geographical signal, ranging between 0 and 1, for the different taxonomic groups (see 'Materials and methods').
 
-## Geographical signal in climatic regions
+### Geographical signal in climatic regions
 
 Historical and geographical processes may lead to species pools adapted to a given climate in some regions of the Earth but not in others. To search for this geographical signal, we first compared the distribution of the climatic conditions and species grouped within the same niche domain. A geographic mismatch between species and climate distributions would point to portions of the climatic regions that are defined by species occurring in other geographic areas. Exploring these patterns for each niche domain revealed notable geographic agreement between species and climatic conditions of the same domain (Figure 4B and Appendix 1—figures 3–7). Nevertheless, we found some differences across groups and regions. More extreme climates showed larger mismatches between the distribution of species and climates. For instance, for all groups but reptiles, desert climate (EHWL) was mostly defined by species inhabiting Australia and to a lesser extent by species from the Namibian desert and the Horn of Africa, with few or no species inhabiting the Sahara desert (Figure 4C and Appendix 1—figures 3–7). Similarly, the northern climatic regions of amphibians and reptiles were defined by species at lower latitudes (Appendix 1—figures 3 and 4). Approaching the geographical signal more quantitatively (see 'Materials and methods'), we found a stronger signal for the worst dispersers, amphibians and reptiles, than for mammals and birds (Figure 4D), suggesting that dispersal capabilities can contribute to the geographical signal in the niche domains. Finally, all tetrapods together showed the lowest geographical signal, which suggests that, in addition to dispersion, increased evolutionary time can reduce the geographical signal.
 
@@ -95,19 +154,19 @@ In conclusion, our data-driven climate classification reveals major climatic bou
 
 ## Materials and methods
 
-## Data
+### Data
 
 We obtained the distribution ranges of mammals and amphibians from the IUCN, 2015, of birds from BirdLife, 2015, and of reptiles from Roll et al., 2017. We included only the native range of terrestrial species in the analyses in all instances. In the case of birds, we only used the breeding ranges. Moreover, since there is a higher uncertainty when determining the realized niches of narrow-ranging species (Lehmann et al., 2002), we arbitrarily removed the species whose ranges were less than five grid cells of 0.5°. After this cleaning of the data, we used 3657 amphibians, 7204 reptiles, 4574 mammals, and 10,684 birds, for a total of 26,119 tetrapod species.
 
 We approximated the species’ Grinnellian niches (Soberón, 2007) with two climatic variables that represent energy and water inputs. While we could have used several other variables, we chose energy and water as they best explain climatic effects on species distributions (Hawkins et al., 2003). As surrogates for energy and water inputs, we used mean annual PET and AP, respectively. Both variables have been shown to be important factors for tetrapod species distributions (Currie, 1991; Tingley et al., 2009; Gouveia et al., 2014). Moreover, they have also been used in previous climate classifications (Thornthwaite, 1948) and are regularly used to derive other drivers of species distributions such as the UNEP aridity index (Unep and Thomas, 1992; Fuller et al., 2016). We obtained PET from Trabucco and Zomer, 2009 and AP from Fick and Hijmans, 2017, both at a 0.08° resolution. Finally, we obtained Köppen’s climatic regions from Kottek et al., 2006 and Rubel et al., 2017.
 
-## Niche characterization
+### Niche characterization
 
 We characterized the realized climatic niche of each species using an approach similar to the one proposed in Broennimann et al., 2012. We divided the climatic space formed by PET and AP into bins and calculated the proportion of occurrences a given species has in each climatic bin. Both the shape of the divisions and the number of divisions of each climatic axis affect the result. For instance, dividing the axis into regular intervals can destroy critical information if the climatic values more important for the species distributions are skewed toward any extreme of the distribution or if the climatic values are represented non-uniformly across the globe (as for AP, Appendix 1—figure 8). Similarly, the grain size to divide the climatic space may affect subsequent results (Levin, 1992; Daru et al., 2020). Dividing the space into too few intervals destroys information, whereas using too many divisions can generate niche domains with only a few species. To overcome the first issue, we divided the axes into quantiles based on the distribution of climatic values across the Earth. By doing so, we obtained an almost uniformly divided PET axis (Appendix 1—figure 8). Contrarily, the number of divisions of the AP axis was skewed toward low values, which resulted in a higher resolution over the presumably more relevant low-precipitation conditions (Appendix 1—figure 8). To solve the second issue, we selected the lowest number of divisions that maximized the gain in information (see Appendix 1). The optimal number of axis divisions was 17 in all cases but amphibians, where it was 18.
 
 Next we accounted for potential commission errors, which may affect the estimated climates a species experiences. Specifically, range maps can overestimate the area occupied by a species, which directly influences the niche characterization (Rondinini et al., 2006). Because range maps typically represent the species’ maximum geographical extent (Rondinini et al., 2006; La Sorte and Hawkins, 2007), extracting the climatic values that a species range covers from a well-fitting 0.08° high-resolution climatic raster can reduce commission errors at the species range’s borders. But with many pixels inside the species range, the noise from extreme and unrepresentative climatic values can increase the error (La Sorte and Hawkins, 2007). Conversely, extracting climatic values from a coarser raster can reduce the commission errors inside a range by averaging out extreme values at the cost of increasing commission errors over the borders. To alleviate the effects of these potential errors, we first extracted the climatic values from the high-resolution rasters (0.08°). Then, we computed the average climatic values among selected raster pixels located within cells of 0.5°. In this way, we reduced the effects of commission errors both at the borders of and inside species ranges. Finally, mean climatic values may not accurately represent the cells’ climates when there is high climate variability or the values are non-normally distributed. Comparing results obtained from different cell sizes is an indirect way to asses the influence of distorted mean values. Instead, we chose to directly explore the effects of high climatic variability and non-normal distributions with non-parametric bootstrap analysis: we resampled climatic values within 0.5° cells with replacement (see below).
 
-## Niche domains and climatic regions identification
+### Niche domains and climatic regions identification
 
 We employed a network community detection approach to identify the niche domains and the species mainly associated with them. For each group of species, we first generated a weighted bipartite network where species and climatic bins formed the disjoint sets of nodes, and the proportion of occurrences of species in intervals of the climatic values corresponding to the climatic bins formed the weighted links. To identify the niche domains, we used the hierarchical version of the community detection algorithm known as Infomap (Rosvall and Bergstrom, 2008). Infomap capitalizes on the minimum description length principle of information theory, which equates finding regularities and compression: the model that finds most regularities in a given set of data can compress the data the most (Rissanen, 1978). In our case, modules of highly interconnected climatic bins and species form the regularities, and describing the network with an optimal set of communities corresponds to minimizing the description length (Bernardo-Madrid et al., 2019; Rosvall and Bergstrom, 2008). Among the many community-detection algorithms available, we used Infomap because it can find hierarchically nested communities and is known for its high performance (Lancichinetti and Fortunato, 2009), also for regionalizations (Bernardo-Madrid et al., 2019; Bloomfield et al., 2018; Vilhena and Antonelli, 2015). We ran the algorithm 1000 times, selecting the network partition with the best quality.
 
@@ -115,20 +174,34 @@ To consider the uncertainty associated with both the species ranges and the comm
 
 With obtained niche domains, we detected the climatic regions by identifying areas across the Earth’s surface that hold the climatic conditions grouped within each niche domain. Finally, to compare climatic regions across tetrapod groups and with Köppen’s classification, we calculated the AMI. AMI measures the mutual information between two partitions, the classifications of raster pixels into climatic regions in this case, correcting for the similarity between partitions that are just due to chance (Vinh et al., 2010). The index is 1 when the partitions are equal and tends to 0 otherwise.
 
-## Climatic transition zones
+### Climatic transition zones
 
-The joint classification of climatic bins and species into domains D allowed us to calculate the bins’ specificity. Though species belong to single domains, typically together with the bins to which they have many and strong links, they may also have links to bins in other domains. Bins that contain species from different domains have low specificity and form a transition zone between domains (Figure 1; Calatayud et al., 2019b; Bernardo-Madrid et al., 2019). We calculated the specificity SiD of a climatic bin i in domain D as the sum of link weights wi,j from bin i to species j assigned to the same domain as the bin, divided by the sum of link weights from bin i to all species j such that(1)SiD=∑j∈Dwi,j∑jwi,j⁢ for ⁢i∈D.
+The joint classification of climatic bins and species into domains D allowed us to calculate the bins’ specificity. Though species belong to single domains, typically together with the bins to which they have many and strong links, they may also have links to bins in other domains. Bins that contain species from different domains have low specificity and form a transition zone between domains (Figure 1; Calatayud et al., 2019b; Bernardo-Madrid et al., 2019). We calculated the specificity $S_{i}^{D}$ of a climatic bin i in domain D as the sum of link weights $w_{i,j}$ from bin i to species j assigned to the same domain as the bin, divided by the sum of link weights from bin i to all species j such that
+
+$$
+S_{i}^{D}=\frac{\sum_{j\inD}w_{i,j}}{\sum_{j}w_{i,j}}⁢for ⁢i\inD.
+$$
 
 This index is 1 when the bin connects only to species in the same domain and tends to 0 otherwise.
 
-We projected the specificity values into the geographic space. To all geographical raster cells q with the climate of climatic bin i, which we call raster cell set Qi, we assigned bin i’s specificity. The projected specificity is SqP.
+We projected the specificity values into the geographic space. To all geographical raster cells q with the climate of climatic bin i, which we call raster cell set $Q_{i}$, we assigned bin i’s specificity. The projected specificity is $S_{q}^{P}$.
 
-Finally, we explored the relationship between the average SD and bootstrap support. We fitted a logistic GLMM of bootstrap p-values as a function of the mean SD and the taxonomic group. We used the R (R Development Core Team, 2018) package lme4 (Bates et al., 2015) with the mean SD as a fixed term and the taxonomic group as a random intercept term.
+Finally, we explored the relationship between the average $S^{D}$ and bootstrap support. We fitted a logistic GLMM of bootstrap p-values as a function of the mean $S^{D}$ and the taxonomic group. We used the R (R Development Core Team, 2018) package lme4 (Bates et al., 2015) with the mean $S^{D}$ as a fixed term and the taxonomic group as a random intercept term.
 
-## Geographical signal
+### Geographical signal
 
-To quantify the geographical signal, we compared the geographically projected specificity SP with the actual specificity based on the pool of species that co-occur geographically. Large differences between the species co-occurring in the climatic and geographic spaces indicate a strong geographic signal. For instance, when species assigned to the same domain co-occur only in a portion of the corresponding geographical space, geographical areas with mismatching species contribute to a strong geographical signal. Areas that host most of the species associated with a niche domain have a higher actual specificity than the projected indicates. Areas that are not, or only scarcely, colonized by these species have a lower actual specificity than the projected indicates.
+To quantify the geographical signal, we compared the geographically projected specificity $S^{P}$ with the actual specificity based on the pool of species that co-occur geographically. Large differences between the species co-occurring in the climatic and geographic spaces indicate a strong geographic signal. For instance, when species assigned to the same domain co-occur only in a portion of the corresponding geographical space, geographical areas with mismatching species contribute to a strong geographical signal. Areas that host most of the species associated with a niche domain have a higher actual specificity than the projected indicates. Areas that are not, or only scarcely, colonized by these species have a lower actual specificity than the projected indicates.
 
-Using Equation 1, we calculated the actual specificity of a geographical raster cell q, whose corresponding climatic bin i is in domain D (q∈Qi and i∈D), as the ratio between the sum of link weights from bin i to species in raster cell q that belong to its associated domain and the total link weight from bin i to all species in q,(2)SqA=∑j∈D,qwi,j∑j∈qwi,j⁢ for ⁢q∈Qi⁢ and ⁢i∈D.
+Using Equation 1, we calculated the actual specificity of a geographical raster cell q, whose corresponding climatic bin i is in domain D ($q\inQ_{i}$ and $i\inD$), as the ratio between the sum of link weights from bin i to species in raster cell q that belong to its associated domain and the total link weight from bin i to all species in q,
 
-To calculate the geographical signal G, we averaged the absolute difference between the projected and actual specificity of each climatic raster cell q at 0.5° resolution,(3)G=1N⁢∑q=1N|SqA-SqP|,where N is the total number of raster cells. This index is 0 when there is no geographical signal and tends to 1 for high signals.
+$$
+S_{q}^{A}=\frac{\sum_{j\inD,q}w_{i,j}}{\sum_{j\inq}w_{i,j}}⁢for ⁢q\inQ_{i}⁢and ⁢i\inD.
+$$
+
+To calculate the geographical signal G, we averaged the absolute difference between the projected and actual specificity of each climatic raster cell q at 0.5° resolution,
+
+$$
+G=\frac{1}{N}⁢\sumq=1N|S_{q}^{A}-S_{q}^{P}|,
+$$
+
+where N is the total number of raster cells. This index is 0 when there is no geographical signal and tends to 1 for high signals.

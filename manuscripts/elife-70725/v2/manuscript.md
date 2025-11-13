@@ -37,7 +37,7 @@ In this study, we demonstrate the application of Simoa for relative EV quantific
 
 ## Results
 
-## Framework for quantifying relative EV yield and purity
+### Framework for quantifying relative EV yield and purity
 
 We set out to quantify the relative difference in yield and purity for different EV isolation methods. Starting with aliquots of the same biofluid, we reasoned that by measuring the tetraspanins CD9, CD63, and CD81 using different isolation methods, we could directly compare EV yield. By also measuring albumin, the most abundant free protein in plasma and CSF, we could compare the purity of these methods. Using Simoa technology, an ultrasensitive digital ELISA, to measure all four of these proteins, we could compare EV yield and purity on one platform with high sensitivity (Figure 1a).
 
@@ -47,7 +47,7 @@ We set out to quantify the relative difference in yield and purity for different
 
 Although Simoa is generally used to quantify free proteins, it can also be used to analyze EV transmembrane proteins. In Simoa, unlike in traditional ELISA, individual immuno-complexes are isolated into femtoliter wells that fit only one bead per well. In a given sample, there are many more antibody-bound beads than target proteins, and therefore Poisson statistics dictate that only a single immuno-complex is present per well. This allows counting ‘on wells’ as individual protein molecules (Figure 1b). The percentage of ‘on wells’ can then be converted to protein concentration by comparing to a calibration curve of recombinant protein standard. We previously developed and validated Simoa assays for the proteins CD9, CD63, and CD81, showing that they are 1–3 orders of magnitude more sensitive than the corresponding standard ELISA assays with the same pairs of antibodies (Norman et al., 2021).
 
-## Comparison of existing EV isolation methods
+### Comparison of existing EV isolation methods
 
 We started by using Simoa to directly compare EV isolation methods commonly used in biomarker studies. For each method, we used identical 0.5 ml samples of human plasma or CSF that were pooled and aliquoted, allowing us to directly compare the different methods. To separate EVs from cells, cell debris, and large vesicles, all samples were first centrifuged and then filtered through a 0.45-μm filter. We compared three methods and chose two variations for each method: ultracentrifugation (with or without a wash step), two commercial precipitation kits (ExoQuick and ExoQuick ULTRA), and two commercially available SEC columns (Izon qEVoriginal 35 nm and 70 nm).
 
@@ -55,19 +55,93 @@ SEC separates EVs from free proteins based on size; proteins enter porous beads 
 
 We quantified EVs by measuring the levels of CD9, CD63, and CD81 across the different EV isolation methods in both plasma and CSF (Figure 2a). Since we are interested in all EVs, as opposed to subsets with a specific marker, we quantified EV yield by averaging the levels of the three tetraspanins. We first used the Simoa measurement (in picomoles, determined relative to a corresponding recombinant protein standard) to calculate EV recovery for each individual marker by normalizing the level of tetraspanin in each condition to the amount of that tetraspanin in fractions 7–10 of the Izon qEV 35 nm SEC column (the condition with the highest EV levels in plasma). Next, we averaged the relative tetraspanin recovery values across the three tetraspanins to calculate relative EV recovery.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic of experimental outline. (b–d) Individual tetraspanin yields using different isolation methods from plasma. (e) Relative EV recoveries from plasma were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of Izon qEVoriginal 35 nm EV fractions 7-10 and then averaging the three tetraspanin ratios. (f) Albumin levels using different EV isolation methods from plasma. (g–i) Individual tetraspanin yields using different isolation methods from CSF. (j) Relative EV recoveries in CSF were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of Izon qEVoriginal 35 nm fractions 7-10 and then averaging the three tetraspanin ratios. (k) Albumin levels using different EV isolation methods from CSF. CSF, cerebrospinal fluid; EV, extracellular vesicle.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Simoa results displaying average measurements of EV isolation on two different days with error bars representing standard deviation. (a–d) for tetraspanins and albumin for EV isolation in plasma. (e–h) for tetraspanins and albumin for EV isolation in CSF. CSF, cerebrospinal fluid; EV, extracellular vesicle; Simoa single-molecule array.
+
 After determining combined relative EV recovery and albumin concentration for each EV isolation method, we could directly compare EV recovery and purity in both plasma and CSF. In plasma, we found that the Izon qEVoriginal 35 nm SEC column (collecting fractions 7–10) yielded both the highest recovery of EVs and the highest purity (ratio of EVs to albumin) of EVs (Figure 2b–f). In contrast, in CSF, ExoQuick yielded the highest recovery of EVs while Izon qEVoriginal 70 nm yielded the highest purity (Figure 2g–k).
 
-## Application of Simoa for custom SEC column optimization
+### Application of Simoa for custom SEC column optimization
 
 Based on the promising results of commercial SEC columns relative to other methods, we sought to use our assays to further investigate SEC using custom columns. First, we designed an SEC stand that allows for reproducible collection of fractions and multiple columns to be run in parallel (Figure 3—figure supplement 1). We next took advantage of Simoa’s high throughput screening capability to help identify the EV-containing fractions in SEC. This enabled us to optimize EV isolation from 0.5 ml samples of plasma and CSF using SEC. We prepared our own columns to systematically test several parameters: column height (10 or 20 ml) and resin (Sepharose CL-2B, CL-4B, or CL-6B).
 
 This comprehensive comparison led us to several conclusions. First, we found that resins with smaller pore sizes led to higher yields of EVs. To confirm this result with another technique, we also observed the same result with Western blotting for the tetraspanins (Figure 3—figure supplement 2). Sepharose CL-6B, which has the smallest pore size, gave the highest yield, although it was accompanied by higher albumin contamination. For all SEC columns, higher purity could also be achieved by taking a smaller number of fractions (e.g., 7–9 instead of 7–10), albeit at the expense of lower EV yield. Additionally, we found that doubling the height of any given column from 10 to 20 ml resulted in better separation between EVs and free proteins, leading to higher purity but lower EV recovery (Figures 3 and 4). When we compared loading different sample volumes in a 10-ml Sepharose CL-6B column, we found that as expected, larger loading volumes led to lower purity in both plasma (Figure 3—figure supplement 3) and CSF (Figure 4—figure supplement 1).
 
-## Direct comparison of custom SEC and previous methods
+![Figure 3.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-v2.jpg)
+
+**Figure 3.:** (a) Levels of tetraspanins and albumin in plasma after fractionation with 10 ml custom columns filled with Sepharose CL-6B (top), Sepharose CL-4B (middle), and Sepharose CL-2B (bottom). (b) Levels of tetraspanins and albumin in plasma after fractionation with Izon qEVoriginal 35 nm column (top) and Izon qEVoriginal 70 nm column (bottom). (c) Levels of tetraspanins and albumin in plasma after fractionation with 20 ml custom columns; Sepharose CL-6B (top), Sepharose CL-4B (middle), and Sepharose CL-2B (bottom). EV, extracellular vesicle; SEC, size exclusion chromatography.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Image of SolidWorks file with custom SEC stand designed to run four SEC columns in parallel with ‘clickable’ sliding collection tube holder plates that allow for easy fraction collection. (b) Photograph of constructed, custom SEC stand holding four (empty) columns. SEC, size exclusion chromatography.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a–c) Western blot of tetraspanins in fractions 7–10 of 0.5 ml plasma isolated by SEC using Sepharose CL-2B, Sepharose CL-4B, and Sepharose CL-6B resins. SEC, size exclusion chromatography.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Simoa was performed to determine levels of CD9, CD63, CD81, and albumin after fractionating different volumes of plasma by SEC using a 10 mL Sepharose CL-6B column. Effect of sample volume on EV recovery and purity by SEC for (a) 0.1 ml, (b) 0.5 ml, (c) 1.0 ml. EV, extracellular vesicle; SEC, size exclusion chromatography; Simoa single-molecule array.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Comparison of plasma EV recovery and albumin contamination in plasma across all tested methods ranked by EV recovery. Relative EV recoveries were calculated by individually normalizing each tetraspanin to the sum of the tetraspanins in all fractions (Konoshenko et al., 2018; Théry et al., 2018; Sódar et al., 2016; Welton et al., 2015; Lee et al., 2019; Webber and Clayton, 2013; Johnsen et al., 2019; Simonsen, 2017; Osteikoetxea et al., 2015; Visnovitz et al., 2019; Lucchetti et al., 2020; Kuiper et al., 2021; Welsh et al., 2020; Coumans et al., 2017b; Rissin et al., 2010; Cohen and Walt, 2019) in the 10 ml Sepharose CL-6B condition. The three tetraspanin percentages were then averaged to calculate the relative EV recoveries. Similarly, albumin for each condition was calculated as a fraction of the albumin found in all fractions (Konoshenko et al., 2018; Théry et al., 2018; Sódar et al., 2016; Welton et al., 2015; Lee et al., 2019; Webber and Clayton, 2013; Johnsen et al., 2019; Simonsen, 2017; Osteikoetxea et al., 2015; Visnovitz et al., 2019; Lucchetti et al., 2020; Kuiper et al., 2021; Welsh et al., 2020; Coumans et al., 2017b; Rissin et al., 2010; Cohen and Walt, 2019) in the 10 ml Sepharose CL-6B condition. (a–b) All methods plotted in order of albumin contamination. (c–d) All methods plotted in order of EV recovery. EV, extracellular vesicle.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** CVs showing the reproducibility of the two technical replicates for all Simoa measurements of EV isolations used in Figures 2—5 for plasma. EV, extracellular vesicle; Simoa, single-molecule array.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig4-v2.jpg)
+
+**Figure 4.:** (a) Levels of tetraspanins and albumin in CSF after fractionation with 10 ml custom columns filled with Sepharose CL-6B (top), Sepharose CL-4B (middle), and Sepharose CL-2B (bottom). (b) Levels of tetraspanins and albumin in CSF after fractionation with Izon qEVoriginal 35 nm column (top) and Izon qEVoriginal 70 nm column (bottom). (c) Levels of tetraspanins and albumin in CSF after fractionation with 20 ml custom columns; Sepharose CL-6B (top), Sepharose CL-4B (middle), and Sepharose CL-2B (bottom). CSF, cerebrospinal fluid; EV, extracellular vesicle; SEC, size exclusion chromatography.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Simoa was performed to determine levels of CD9, CD63, CD81, and albumin after fractionating different volumes of CSF by SEC using a 10-ml Sepharose CL-6B column. Effect of sample volume on EV recovery and purity by SEC for (a) 0.1 ml, (b) 0.5 ml, (c) 1.0 ml. CSF, cerebrospinal fluid; EV, extracellular vesicle; SEC, size exclusion chromatography; Simoa, single-molecule array.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Comparison of plasma EV recovery and albumin contamination in CSF across all tested methods ranked by EV recovery. Relative EV recoveries were calculated by individually normalizing each tetraspanin to the sum of the tetraspanins in all fractions (Konoshenko et al., 2018; Théry et al., 2018; Sódar et al., 2016; Welton et al., 2015; Lee et al., 2019; Webber and Clayton, 2013; Johnsen et al., 2019; Simonsen, 2017; Osteikoetxea et al., 2015; Visnovitz et al., 2019; Lucchetti et al., 2020; Kuiper et al., 2021; Welsh et al., 2020; Coumans et al., 2017b; Rissin et al., 2010; Cohen and Walt, 2019) in the 10 ml Sepharose CL-6B condition. The three tetraspanin percentages were then averaged to calculate the relative EV recoveries. Similarly, albumin for each condition was calculated as a fraction of the albumin found in all fractions (Konoshenko et al., 2018; Théry et al., 2018; Sódar et al., 2016; Welton et al., 2015; Lee et al., 2019; Webber and Clayton, 2013; Johnsen et al., 2019; Simonsen, 2017; Osteikoetxea et al., 2015; Visnovitz et al., 2019; Lucchetti et al., 2020; Kuiper et al., 2021; Welsh et al., 2020; Coumans et al., 2017b; Rissin et al., 2010; Cohen and Walt, 2019) in the 10 ml Sepharose CL-6B condition. (a, b) All methods plotted in order of albumin contamination. (c, d) All methods plotted in order of EV recovery. CSF, cerebrospinal fluid; EV, extracellular vesicle.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** CVs showing the reproducibility of the two technical replicates for all Simoa measurements of EV isolations used in Figures 2—5 for CSF. CSF, cerebrospinal fluid; EV, extracellular vesicle; Simoa, single-molecule array.
+
+### Direct comparison of custom SEC and previous methods
 
 Since we used the same pools of biofluids for these experiments, combining all of the data we generated, we were able to perform a direct, quantitative comparison of the relative yields and purities of EVs across all methods tested. We analyzed these results for both plasma (Figure 3—figure supplement 4) and CSF (Figure 4—figure supplement 2). Since all Simoa measurements were performed with two technical replicates, we also confirmed that Simoa had high reproducibility between technical replicates (Figure 3—figure supplement 5 and Figure 4—figure supplement 1). Our analysis shows that 10 ml Sepharose CL-6B column demonstrated the highest recovery in both plasma and CSF. The 20 ml Sepharose CL-4B column gave the highest purity (ratio of EVs to albumin) for plasma, while for CSF, the 10 ml Sepharose CL-4B column had higher purity than the 20 ml Sepharose CL-4B column. Although the 10 ml column had more albumin contamination in the EV fractions than the 20 ml column, the relative ratio of EVs to albumin was higher. Based on these results, we could select the best custom SEC column for either high yield or high purity isolation (Table 1).
 
-## Comparison of top custom SEC methods for plasma and CSF
+**Table 1.**
+ Recommendations for SEC columns for EV isolation from plasma and CSF.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>High yield</th>
+      <th>High purity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plasma</td>
+      <td>Sepharose CL-6B10 ml column fractions 7–10</td>
+      <td>Sepharose CL-4B20 ml column fractions 14–17</td>
+    </tr>
+    <tr>
+      <td>CSF</td>
+      <td>Sepharose CL-6B10 ml column fractions 7–10</td>
+      <td>Sepharose CL-4B10 ml column fractions 7–10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Comparison of top custom SEC methods for plasma and CSF
 
 Based on our results surveying the different SEC resins and column heights, we performed additional experiments to more accurately quantify the best high yield and high purity SEC methods for plasma and CSF using another batch of biofluids with more replicates (four columns per condition). For both plasma and CSF, we compared the Sepharose CL-2B 10 ml column, used in the original SEC EV isolation publication (Böing et al., 2014) and in most subsequent SEC publications (Monguió-Tortajada et al., 2019), to the ‘high yield’ Sepharose CL-6B 10 ml column. We also included a Sepharose CL-4B column as the ‘high purity’ column but, as plasma has much higher protein concentration than CSF, used 20 ml of resin for plasma and 10 ml for CSF.
 
@@ -75,7 +149,7 @@ Our results allow us to directly quantify the difference in EVs and albumin acro
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70725/elife-70725-fig5-v2.jpg)
 
-**Figure 5.:** Error bars represent the standard deviations from four replicates of each column. (a–c). Individual tetraspanin yields using different isolation methods from plasma. (d) Relative EV recoveries from plasma were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of the Sepharose CL-2B 10 ml column (fractions 7–10) and then averaging the three tetraspanin ratios. (e) Albumin levels using different EV isolation methods from plasma. (f) EV purity for each method in plasma is calculated as the ratio of the sum of tetraspanin concentrations divided by albumin concentration. (g–i) Individual tetraspanin yield using different isolation methods from CSF. (j) Relative EV recoveries in CSF were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of Sepharose CL-2B 10 ml (fractions 7–10) and then averaging the three tetraspanin ratios. (k) Albumin levels using different EV isolation methods from CSF. (l) EV purity for each method in CSF is calculated as the ratio of the sum of tetraspanin concentrations divided by albumin concentration. CSF, cerebrospinal fluid; EV, extracellular vesicle; SEC, size exclusion chromatography.Figure 5—source data 1.
+**Figure 5.:** Error bars represent the standard deviations from four replicates of each column. (a–c). Individual tetraspanin yields using different isolation methods from plasma. (d) Relative EV recoveries from plasma were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of the Sepharose CL-2B 10 ml column (fractions 7–10) and then averaging the three tetraspanin ratios. (e) Albumin levels using different EV isolation methods from plasma. (f) EV purity for each method in plasma is calculated as the ratio of the sum of tetraspanin concentrations divided by albumin concentration. (g–i) Individual tetraspanin yield using different isolation methods from CSF. (j) Relative EV recoveries in CSF were calculated by first normalizing individual tetraspanin values (in pM) in each technique to those of Sepharose CL-2B 10 ml (fractions 7–10) and then averaging the three tetraspanin ratios. (k) Albumin levels using different EV isolation methods from CSF. (l) EV purity for each method in CSF is calculated as the ratio of the sum of tetraspanin concentrations divided by albumin concentration. CSF, cerebrospinal fluid; EV, extracellular vesicle; SEC, size exclusion chromatography.
 
 ## Discussion
 
@@ -95,34 +169,205 @@ The general experimental framework presented here could be easily applied to eva
 
 ## Methods
 
-## Human sample handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Plasma</td>
+      <td>BioIVT</td>
+      <td>Cat #HUMANPLK2PNN</td>
+      <td>Pooled gender, K2EDTA</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Cerebrospinal fluid</td>
+      <td>BioIVT</td>
+      <td>Cat# HMNCSFR-NODXR</td>
+      <td>Pooled gender, no diagnosis remnant</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD9 (Mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# CBL162RRID:AB_2075914</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD9 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab195422RRID:AB_2893477</td>
+      <td>Simoa capture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD9 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab58989RRID:AB_940926</td>
+      <td>Simoa detector</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD63 (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat# 556019RRID:AB_396297</td>
+      <td>Simoa detector;WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD63 (Mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# MAB5048RRID:AB_2275726</td>
+      <td>Simoa capture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD81 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10630DRRID:AB_2532984</td>
+      <td>WB (1:666)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD81 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab79559RRID:AB_1603682</td>
+      <td>Simoa capture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD81 (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 349502RRID:AB_10643417</td>
+      <td>Simoa detector</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Serum Albumin DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# DY1455</td>
+      <td>Simoa capture and detector</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CD9</td>
+      <td>Abcam</td>
+      <td>Cat# ab152262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CD63</td>
+      <td>Origene</td>
+      <td>Cat# TP301733</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CD81</td>
+      <td>Origene</td>
+      <td>Cat# TP317508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Albumin</td>
+      <td>Abcam</td>
+      <td>Cat# ab201876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExoQuick exosome precipitation solution</td>
+      <td>SBI</td>
+      <td>Cat# EXOQ5A-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExoQuick ULTRA EV isolation kit for plasma and serum</td>
+      <td>SBI</td>
+      <td>Cat# EQULTRA-20A-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qEVoriginal 70 nm</td>
+      <td>Izon</td>
+      <td>Cat# SP1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qEVoriginal 35 nm</td>
+      <td>Izon</td>
+      <td>Cat# SP5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sepharose CL-2B</td>
+      <td>Cytiva</td>
+      <td>Cat# 17014001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sepharose CL-4B</td>
+      <td>Cytiva</td>
+      <td>Cat# 17015001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sepharose CL-6B</td>
+      <td>Cytiva</td>
+      <td>Cat# 17016001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human sample handling
 
 Pre-aliquoted pooled human plasma (collected in K2 EDTA tubes) and CSF samples were ordered from BioIVT. The same pools were used for all main figures throughout the paper in order to ensure comparable analysis of methods. For all EV isolation technique comparisons, one 0.5-ml sample was used for each isolation method. Plasma or CSF was thawed at room temperature. After sample thawing, 100× Protease/Phosphatase Inhibitor Cocktail (Cell Signaling Technology) was added to 1×. The sample was then centrifuged at 2000×g for 10 min. The supernatant was subsequently centrifuged through a 0.45 μm Corning Costar SPIN-X centrifuge tube filter (Sigma-Aldrich) at 2000×g for 10 min to get rid of any remaining cells or cell debris.
 
-## Simoa assays
+### Simoa assays
 
 Simoa assays were developed and performed as previously described (Norman et al., 2021). A detailed protocol is available: https://www.protocols.io/view/simoa-extracellular-vesicle-assays-bm89k9z6. Capture antibodies were coupled to Carboxylated Paramagnetic Beads from the Simoa Homebrew Assay Development Kit (Quanterix) using EDC chemistry (Thermo Fisher Scientific). Detection antibodies were conjugated to biotin using EZ-Link NHS-PEG4 Biotin (Thermo Fisher Scientific). For CD9, ab195422 (Abcam) was used as capture antibody and ab58989 (Abcam) was used as detector antibody. For CD63, MAB5048 (R&D Systems) was used as capture antibody and 556019 (BD) was used as detector antibody. For CD81, ab79559 (Abcam) was used as capture antibody and 349502 (BioLegend) was used as detector antibody. For albumin, DY1455 (R&D Systems) was used as both capture and detector antibody. The following recombinant proteins were used for CD9, CD63, CD81, and albumin: ab152262 (Abcam), TP301733 (Origene), TP317508 (Origene), and ab201876 (Abcam). On-board dilution was performed with 4× dilution for each of the tetraspanins, while manual 20× dilution was used for albumin. All samples were raised to 160 μl per replicate in sample diluent. For tetraspanin assays, samples were incubated with immunocapture beads (25 μl) and biotinylated detection antibody (20 μl) for 35 min. Next, six washes were performed, and the beads were resuspended in 100 μl of Streptavidin labeled β-galactosidase (Quanterix) and incubated for 5 min. All bead washes were performed with Wash Buffer 1 (Quanterix). After incubation, an additional six washes were performed, and the beads were resuspended in 25 μl Resorufin β-D-galactopyranoside (Quanterix) before being loaded into the microwell array on the Quanterix HD-X instrument. For the albumin assay, samples were incubated first with immunocapture beads (25 μl) for 15 min and then washed six times. Subsequently, 100 μl detection antibody was incubated with the beads for 5 min. Next, six washes were performed, and the beads were resuspended in 100 μl of Streptavidin labeled β-galactosidase (Quanterix) for a final 5-min incubation. After an additional six washes, the beads were resuspended in 25 μl Resorufin β-D-galactopyranoside (Quanterix) and then loaded into the microwell array on the Quanterix HD-X instrument.
 
-## Construction of SEC stand
+### Construction of SEC stand
 
 The custom SEC rack was constructed from a total of 22 pieces using CNC milling tools. The rack is made of an aluminum frame (silver, Multipurpose 6061 Aluminum, McMaster-Carr) consisting of eight pieces, 4 sliding plates made from acetal (black, Wear-Resistant Easy-to-Machine Delrin Acetal Resin, McMaster-Carr), and 10 sliding plate grips made from UHMW Polyethylene (white, Slippery UHMW Polyethylene, McMaster-Carr). The rack frame is held together using 20 ¾″ screws (McMaster-Carr, 92210 A113), 20 ½″ screws (McMaster-Carr, 92210 A110), 10 0.375″ Dowel pins (McMaster-Carr, 90145 A470), and 10 0.5625″ Dowel pins (McMaster-Carr, 90145 A483), and includes 20 spring plungers (McMaster-Carr, 84895 A710) that allow the sliding plates to ‘click’ once aligned with the chromatography columns. Details for constructing the rack and SolidWorks files are included in the Supplementary materials.
 
-## Preparation of custom SEC columns
+### Preparation of custom SEC columns
 
 The resins Sepharose CL-2B, Sepharose CL-4B, and Sepharose CL-6B (all from GE Healthcare/Cytiva) were washed in phosphate-buffered saline (PBS). The volume of resin was washed with an equal volume of PBS in a glass container and then placed at 4°C in order to let the resin settle completely (several hours or overnight). The PBS was then poured off, and an equal volume of PBS was again added two more times for a total of three washes. Columns were prepared fresh on the day of use. Washed resin was poured into an Econo-Pac Chromatography column (Bio-Rad) to bring the bed volume (the resin without liquid) to 10 or 20 ml. When the desired amount of resin filled the column and the liquid dripped through, the top frit was immediately placed at the top of the resin without compressing the resin. PBS was then added again before sample addition.
 
-## Collection of size exclusion chromatography fractions
+### Collection of size exclusion chromatography fractions
 
 Once prepared, all columns were washed with at least 20 ml of PBS in the column. Immediately before sample addition, the column was allowed to fully drip out and, after last drop of PBS, sample (filtered plasma or CSF) was added to the column. As soon as sample was added, 0.5 ml fractions were collected in individual tubes. As soon as the plasma or CSF completely entered the column (below the frit), PBS was added to the top of column 1 ml at a time. Fraction numbers correspond to 0.5 ml increments collected as soon as sample is added. For Izon and 10 ml columns, fractions 6–21 were collected (since first few fractions correspond to void volume). For 20 ml columns, fractions 12–27 were collected (since void volume is larger for 20 ml columns than 10 ml columns). For Figure 5, only fractions 7–10 were collected.
 
-## Ultracentrifugation
+### Ultracentrifugation
 
 Samples of filtered 0.5 m plasma or CSF were added to 3.5 ml Open-Top Thickwall Polycarbonate ultracentrifuge tubes (Beckman Coulter), and PBS was added to fill tubes to the top. Samples were ultracentrifuged at 120,000×g for 90 min at 4°C in an Optima XPN-80 ultracentrifuge (Beckman Coulter) using an SW55 Ti swinging-bucket rotor (Beckman Coulter). Afterward, all supernatant was aspirated. Pellets were resuspended in PBS for the ‘Ultracentrifugation’ condition. For the ‘Ultracentrifugation with wash’ condition, the ultracentrifuge tubes were filled to the top with PBS, and samples were ultracentrifuged again at 120,000×g for 90 min. Supernatant was then aspirated, and pellets were resuspended in 500 µl PBS. For all ultracentrifugation samples, isolation was performed on 2 separate days and then resulting Simoa values were averaged.
 
-## ExoQuick and ExoQuick ULTRA
+### ExoQuick and ExoQuick ULTRA
 
 Samples of plasma or CSF were mixed with ExoQuick Exosome Precipitation Solution (System Biosciences) or ExoQuick ULTRA EV Isolation Kit for Serum and Plasma (System Biosciences), and protocols were performed according to the manufacturer’s instructions. For ExoQuick, 0.5 ml of plasma or CSF was mixed with 126 µl of ExoQuick and incubated at 4°C for 30 min, followed by centrifugation at 1500×g for 30 min. Supernatant was removed, and samples were centrifuged at 1500×g for an additional 5 min. Residual supernatant was removed, and pellets were resuspended in 500 µl PBS. For ExoQuick ULTRA, 250 µl of plasma or CSF was used in accordance with instructions, and Simoa values were corrected by multiplying by 2 to match the 0.5 ml volume used for other samples. For each sample, 500 µl of EVs was eluted per column. For all precipitations, isolation was performed on 2 separate days and then resulting Simoa values were averaged.
 
-## Western blotting
+### Western blotting
 
 Western blotting for tetraspanins was performed as previously described (Kowal et al., 2017), with minor modifications. 4× LDS was added to samples and samples were heated at 70°C for 10 min. Samples were run at 150 V for 1 hr on 4–12% Bolt Bis-Tris protein gels (Thermo Fisher Scientific) and transferred using iBlot two nitrocellulose mini transfer stack (Thermo Fisher Scientific) at 20 V for 3 min. Blocking buffer was made by dissolving milk powder (to 5% w/v) in PBS-T (PBS with 0.1% Tween). Nitrocellulose membranes were blocked on a shaker for 30 min at 4°C, and then incubated with primary antibody overnight. The following antibodies and dilutions were used: 1:1000 BD (H5C6) for CD63, 1:1000 Millipore Clone MM2/57 (CBL162) for CD9 and 1:666 Thermo Fisher Scientific (M38) for CD81. Membranes were washed three times with PBS-T and incubated with 1:2000 human cross-adsorbed, anti-mouse HRP conjugated secondary antibody (Rockland) in blocking buffer for 2 hr. Membranes were washed three times with PBS-T and WesternBright ECL-spray HRP substrate (Advansta) was added. Images were acquired with a Sapphire Biomolecular Analyzer (Azure Biosystems).

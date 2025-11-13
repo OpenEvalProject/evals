@@ -45,43 +45,246 @@ An alternative approach uses machine learning to decipher cellular features at h
 
 ## Materials and methods
 
-## iPSC culture, iPSC-CM differentiation, and blasticidin selection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WTC</td>
+      <td>Gladstone Institutes</td>
+      <td></td>
+      <td>Human iPSC line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Primary Anti-MYBPC3 Mouse (monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Sc-137237</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Primary Anti-ACTN2 Rabbit (monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>701914</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary Donkey anti-Rabbit IgG (H+L) Alexa Fluor 594</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21202</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary Donkey anti-Mouse IgG (H+L) Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21207</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH7</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs01110632_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH6</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs01101425_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNNI3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00165957_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNNI1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00913333_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYBPC3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00165232_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNNT2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00943911_m1</td>
+      <td>TaqMan qPCR probe, cardiac marker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs99999905_m1</td>
+      <td>TaqMan qPCR probe, housekeeping marker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR-99021</td>
+      <td>Selleckchem</td>
+      <td>S1263</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Selleckchem</td>
+      <td>S1049</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IWP2</td>
+      <td>Sigma</td>
+      <td>I0536</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidine S hydrochloride</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15205</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>Selleckchem</td>
+      <td>S1013</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin</td>
+      <td>Selleckchem</td>
+      <td>S1208</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Givinostat</td>
+      <td>Selleckchem</td>
+      <td>S2170</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin</td>
+      <td>Selleckchem</td>
+      <td>S1413</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxol</td>
+      <td>Selleckchem</td>
+      <td>S1150</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cisapride</td>
+      <td>Selleckchem</td>
+      <td>S4751</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sorafenib</td>
+      <td>Selleckchem</td>
+      <td>S7397</td>
+      <td>Small molecule</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FDA-approved Drug Library</td>
+      <td>Selleckchem</td>
+      <td>L1300</td>
+      <td>Compound library</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Discovery Diversity Set</td>
+      <td>Enamine</td>
+      <td>DDS-10-Y-10</td>
+      <td>Compound library</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma</td>
+      <td>D8418</td>
+      <td>Solvent</td>
+    </tr>
+  </tbody>
+</table>
+
+### iPSC culture, iPSC-CM differentiation, and blasticidin selection
 
 WTC iPSCs (Mandegar et al., 2016) and derivative lines were maintained under feeder-free conditions on growth factor-reduced Matrigel (BD Biosciences) and fed daily with E8 medium (STEMCELL Technologies) (Ludwig et al., 2006). Accutase (STEMCELL Technologies) was used to enzymatically dissociate iPSCs into single cells. To promote cell survival during enzymatic passaging, cells were passaged with p160-Rho-associated coiled-coil kinase (ROCK) inhibitor Y-27632 (10 μM; Selleckchem) (Watanabe et al., 2007). iPSCs were frozen in 90% fetal bovine serum (HyClone) and 10% dimethyl sulfoxide (Sigma). iPSCs were differentiated into iPSC-CMs using the Wnt modulation-differentiation method (Lian et al., 2012) with 7 μM CHIR (Selleckchem) and 5 μM IWP2 (Sigma) in RPMI media supplemented with B27 (Thermo Fisher Scientific). iPSC-CMs were purified using 1 μM blasticidin (Thermo Fisher Scientific). Then, 15 days after adding CHIR, iPSC-CMs were frozen in 90% fetal bovine serum (FBS) with 10% dimethyl sulfoxide (DMSO). iPSC-CMs were thawed in RPMI with B27% and 10% FBS directly onto Matrigel-coated 384-well plates at a density of 20,000 cells/well. The next day, the media was switched to Tenaya’s cardiomyocyte (TCM) media for 6 days before screening. TCM media comprises Dulbecco's Modified Eagle Medium (DMEM) without glucose, 10% dialyzed FBS, 10 mM D-(+)-galactose, and 1 mM sodium pyruvate. To compare TCM against previously published maturation protocols, iPSC-CMs were cultured in RPMI without glucose, supplemented with 4 mM L-lactic acid and 100 nM triiodo-l-thyronine (RPMI/LT3 media) (Lin et al., 2017).
 
-## Generation of blasticidin-selectable iPSC line
+### Generation of blasticidin-selectable iPSC line
 
 A plasmid containing the Bsd open reading frame and a selectable marker containing puromycin and green fluorescent protein was knocked into the 3′ end of the MYH6 locus of WTC iPSCs. Cells were selected with puromycin. After the first round of selection, the selectable marker was removed using a plasmid expressing Cre recombinase (Figure 1—figure supplement 1A). Clones were isolated and verified using colony polymerase chain reaction (PCR) to ensure the presence of the Bsd marker and absence of the selectable cassette. Finalized clones showing the appropriate iPSC morphology were sent to WiCell for single-nucleotide polymorphism karyotyping (Figure 1—figure supplement 1B).
 
-## Compound library screening
+### Compound library screening
 
 A library containing 1280 bioactive compounds consisting of FDA-approved drugs, tool compounds, and pre-clinical drug candidates was sourced from Selleck Chemicals (Houston, TX). Screening and validation studies on the bioactive compounds were performed at three doses of 0.3 μM, 1.0 μM, and 3.0 μM in 0.1% DMSO. The library of diverse compounds was sourced from Enamine (Kyiv, Ukraine) and screened at 1.0 μM. StarDrop version 6.6.4.23412 (https://www.optibrium.com/stardrop/) was used to analyze data from the screen of diverse compounds.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 iPSC-CMs were fixed for 15 min in 4% (v/v) paraformaldehyde (Thermo Fisher Scientific) in phosphate buffered saline (PBS) and permeabilized in 0.1% (v/v) Triton X-100 (Thermo Fisher Scientific) for 15 min. Cells were blocked in 5% (w/v) bovine serum albumin (BSA) (Sigma) with 0.1% (v/v) Triton X-100 in PBS for 60 min. Primary antibodies were diluted in 5% (w/v) BSA and 0.1% (v/v) Triton X-100 in PBS and incubated overnight at 4°C. After treatment with primary antibodies, cells were washed three times in PBS for 15 min each. Secondary antibodies were diluted in 5% (w/v) BSA and 0.1% (v/v) Triton X-100 in PBS, and then incubated for 1 hr at room temperature. After treatment with the secondary antibody, cells were washed three times in PBS for 15 min each. Nuclei were stained using Hoechst 33342 (Thermo Fisher Scientific) (1:1000 dilution). Images were taken using a Cytation 5 microscope (BioTek Instruments) at 10× magnification (nine images per 384-well plate). A list of primary and secondary antibodies with the appropriate dilution is listed in Supplementary file 4.
 
-## Sarcomere analysis using scanning gradient Fourier transform
+### Sarcomere analysis using scanning gradient Fourier transform
 
 Sarcomere organization and alignment were assessed using scanning gradient Fourier transform (SGFT) with a pattern size of 1.8, scanning resolution of 16, and a Fourier threshold of >0.8 (Salick et al., 2020). Briefly, SGFT performs gradient analysis on ACTN2 images to determine the myofibril directionality and then one-dimensional fast Fourier transforms to determine sarcomere organization and alignment. The code for this SGFT algorithm is available on GitHub: https://github.com/maxsalick/SGFT (Grafton, 2021 copy archived at swh:1:rev:1413b18726172659dcb9a09e6f91653063ab3361).
 
-## Contractility measurements
+### Contractility measurements
 
 Contractility video measurements were taken with an SI8000 Cell Motion Imaging System (Sony Biotechnology) and analyzed using Pulse software (Maddah et al., 2015).
 
-## Construction of deep learning models and neural network architecture
+### Construction of deep learning models and neural network architecture
 
-To avoid complications associated with cell segmentation, we used block image segmentation and seeded a confluent monolayer of iPSC-CMs. Deep learning artificial intelligence models were built using the PhenoLearn platform (https://www.phenolearn.com/). We used PyTorch as the framework for the deep learning library, and a ResNet50 architecture, a 50-layer-deep convolutional neural network. Images from the DMSO control group were trained against the toxic groups (defined as either mildly toxic, toxic, or highly toxic). Each input image was divided into 12 square sub-images to have sizes ranging from 224 × 224 pixels to 300 × 300 pixels (Maddah et al., 2020). Each sub-image was flipped and rotated to create seven more augmented sub-images, and then fed into the input layer of ResNet50. Pseudo-image generation by rotation and flipping ensures enough diversity is seen by the network so that the algorithm is not biased based on the orientation of the images (Moen et al., 2019). We used 80% of the images to construct the neural network and the remaining 20% to validate the deep learning model. A consistent set of parameters were used for all training operations, including an initial learning rate of 0.01 and 20 epochs. For each training, the final neural network was selected from the epoch with the highest validation accuracy. Z-factor was calculated using the following formula:Z–factor=1-3(σp–σn)μp–μn
+To avoid complications associated with cell segmentation, we used block image segmentation and seeded a confluent monolayer of iPSC-CMs. Deep learning artificial intelligence models were built using the PhenoLearn platform (https://www.phenolearn.com/). We used PyTorch as the framework for the deep learning library, and a ResNet50 architecture, a 50-layer-deep convolutional neural network. Images from the DMSO control group were trained against the toxic groups (defined as either mildly toxic, toxic, or highly toxic). Each input image was divided into 12 square sub-images to have sizes ranging from 224 × 224 pixels to 300 × 300 pixels (Maddah et al., 2020). Each sub-image was flipped and rotated to create seven more augmented sub-images, and then fed into the input layer of ResNet50. Pseudo-image generation by rotation and flipping ensures enough diversity is seen by the network so that the algorithm is not biased based on the orientation of the images (Moen et al., 2019). We used 80% of the images to construct the neural network and the remaining 20% to validate the deep learning model. A consistent set of parameters were used for all training operations, including an initial learning rate of 0.01 and 20 epochs. For each training, the final neural network was selected from the epoch with the highest validation accuracy. Z-factor was calculated using the following formula:
 
-## proBNP assay
+$$
+Z–factor=1-\frac{3(\sigma_{p}–\sigma_{n})}{\mu_{p}–\mu_{n}}
+$$
+
+### proBNP assay
 
 The proBNP/NPPB human sandwich ELISA kit (Invitrogen) was used to determine the level of secreted human proBNP. Cell culture media was collected from wells containing approximately 105 iPSC-CMs exposed to cardiotoxic drugs for 4 days. Media was diluted to obtain a proBNP concentration between 0.137 and 100 ng/mL (1:3-1:5). A standard mixture of recombinant human proBNP was diluted 1:3 from 0.137 to 100 ng/mL. Then 100 μL of diluted sample and standards were added to the human proBNP solid-phase sandwich ELISA microplate and incubated at room temperature for 2.5 hr with gentle shaking. The plate was then washed four times with 300 μL of 1× wash buffer. Next, 100 μL/well of biotin conjugate was added to a microplate and incubated at room temperature for 1 hr with gentle shaking. The plate was then washed four times with 300 μL 1× wash buffer. Next, 100 μL/well of streptavidin-horseradish peroxidase solution was added to the microplate and incubated at room temperature for 45 min with gentle shaking. The plate was then washed four times with 300 μL 1× wash buffer. Next, 100 μL/well of TMB substrate was added, and the plate was incubated in the dark at room temperature for 30 min. Then, 50 μL of stop solution was added directly to the TMB substrate and gently mixed. Absorbance was measured using a Cytation 5 microscope at 450 nm and 550 nm. For analysis, background signal was removed by subtracting the 550 nm signal from the 450 nm signal. A linear regression was fit to the standard absorbance measurements. ProBNP values from experimental samples were extrapolated from linear regression. Initial sample dilutions were accounted for when determining the final proBNP concentration.
 
-## RNA extraction and TaqMan qPCR analysis
+### RNA extraction and TaqMan qPCR analysis
 
 Approximately 105 to 106 iPSC-CMs were lysed with TRI Reagent (Zymo Research) and frozen at −80°C to ensure complete cell lysis. Total RNA was extracted and washed from lysed cells using the Direct-zol-96 RNA Kit (Zymo Research) according to the manufacturer’s instructions. Samples were treated with DNase I for 15 min at room temperature. cDNA was reverse transcribed from 1 μg of RNA through random hexamers using the SuperScript-III kit (Invitrogen) according to the manufacturer’s instructions. Real-time qPCR reactions were performed using the TaqMan universal PCR master mix (Applied Biosystems) with the TaqMan probes listed in Supplementary file 5 (Life Technologies). RT-qPCR reactions were performed using the QuantStudio7 Flex Real-Time PCR systems (Life Technologies). Each reaction was performed in triplicate for a given RT-qPCR run, and each condition had four experimental replicates. Relative expression of the gene of interest was normalized to glyceraldehyde 3-phosphate dehydrogenase (GAPDH) as the housekeeping control using the 2–ΔΔCT method (Schmittgen and Livak, 2008).
 
-## High-throughput transcriptional analysis using RNA-seq
+### High-throughput transcriptional analysis using RNA-seq
 
 Raw RNA-seq reads were aligned with Salmon (Patro et al., 2017) (version 1.3.0) to the GENCODE (Frankish et al., 2019) version 33 reference transcript assembly (hg38 v.13) using best practice parameters to ensure mapping validity and reproducibility (--seqBias --gcBias --posBias --useVBOpt --rangeFactorizationBins 4 --validateMappings --mimicStrictBT2). Next, tximport (Soneson et al., 2015) was used to generate an expression matrix normalized to transcripts per million (TPM). To ensure consistency, we limited our analysis to genes with detectable expression in at least 90% of the samples. Protein-coding genes were determined using Ensembl release 100 human annotation (Cunningham et al., 2019) (GRCh38, Apr 2020) and extracted by biomaRt (Durinck et al., 2009) (version 2.45.9); non-protein-coding and mitochondrial genes were omitted from the analysis. After this step, expression values were re-normalized to TPM. After adding 1 as the pseudo-count, the expression matrix was log2-transformed. For the initial assessment, principal component analysis (PCA) models were generated in the R environment using the prcomp function, and the first two principal components were used for visualization. To quantify the distances between each drug’s samples and generate a PCA-based similarity matrix, we used Euclidean distance in the PCA space, as calculated by the pca2euclid function from the tcR package. We calculated the distance using all replicates and used the averaged expression in replicates for each drug. Visualizations were generated in R using the ggplot2 and ComplexHeatmap packages.
 
@@ -89,31 +292,55 @@ To compare the differential gene expression analysis of these clusters with the 
 
 To evaluate functional perturbations in each cluster, we limited our analysis to two gene sets: those labeled with a ‘cardiac’ annotation in MSigDB (Liberzon et al., 2011) version 7.2 (127 gene sets), and the top 100 gene sets that significantly overlapped with our curated cardiac-rich expression gene set as defined by false discovery rate (FDR) q-value. The FDR q-value is the FDR analog of the hypergeometric p-value after correcting for multiple hypothesis testing according to the Benjamini and Hochberg method. In each drug cluster, Welch’s t-test statistical values were used to identify and compare most perturbed gene sets to the DMSO-treated group. A p-value < 0.05 was considered significant. We deposited our RNA-seq data on the Gene Expression Omnibus (GEO) database: GEO Submission (GSE172181), https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172181.
 
-## Seahorse assay
+### Seahorse assay
 
 The Agilent Seahorse XFe96 Analyzer was used to measure mitochondrial function in iPSC-CMs. The 96-well Seahorse plates were coated with Matrigel (1/100 dilution) in a phenol-free medium overnight. WTC iPSC-CMs were seeded at 30,000 cells per XFe96 well and recovered in TCM media for 1 week. Cardiotoxic compounds were diluted to 3 µM, 1 µM, 0.3 µM, and 0.1 µM in 1.0% DMSO in TCM media. Drugs were administered in fresh media for 4 days. Following 4 days of exposure to drugs, the cells were washed and incubated for 1 hr before the assay with Seahorse XF DMEM Basal Medium supplemented with 2 mM glutamine, 2 mM pyruvate, and 10 mM glucose. The Seahorse XFe96 cartridge was prepared according to the manufacturer’s guidelines. First, basal oxygen consumption rate (OCR) was measured. Next, the Mito Stress Test was performed with inhibitors injected in the following order: oligomycin (2.5 µM), carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone (FCCP; 1 µM), and rotenone and antimycin A (0.5 µM). OCR values were normalized to the total nuclear count per well as quantified by Hoechst staining. Basal respiration was calculated as (last rate measurement from the first oligomycin injection) – (minimum rate measurement after rotenone/antimycin A). Maximal respiration was calculated as (maximum rate measurement after FCCP injection) – (minimum rate measurement after rotenone/antimycin A). Spare respiratory capacity was calculated as (maximal respiration) – (basal respiration). ATP production was calculated as (last measurement before oligomycin injection) – (minimum rate after oligomycin injection).
 
-## Proteasome activity assay
+### Proteasome activity assay
 
 Proteasome activity was measured in iPSC-CMs using the Proteasome-Glo Chymotrypsin-Like Assay according to the manufacturer’s instructions (Promega). Cells were incubated with the inhibitors (ranging from 2 to 5000 nM) for 1 hr before running the assay. IC50s were calculated using PRISM 8 software.
 
 ## Results
 
-## iPSC-CM production, selection, and recovery after thaw
+### iPSC-CM production, selection, and recovery after thaw
 
 To efficiently and reproducibly assess cardiotoxicity in a highly enriched population of cardiomyocytes, we generated a blasticidin-selectable iPSC line by targeting the MYH6 locus (Figure 1—figure supplement 1A, B). Following standard differentiation of iPSC-CMs (Figure 1A), blasticidin selection reproducibly enriched a heterogenous population of iPSC-CMs to greater than 95% pure iPSC-CMs as measured by ACTN2, TNNT2, and MYBPC3 immunostaining (Figure 1B, C). Compared to previously published protocols, recovery in culture media leads to improved maturity metrics based on quantitative polymerase chain reaction (qPCR) markers, contractility (beat rate and velocity), and immunostaining (Figure 1—figure supplement 1C–F). To optimize recovery time of iPSC-CMs before screening, daily contractility metrics were performed using Pulse (Maddah et al., 2015). Then, 6–8 days after thaw, iPSC-CMs fully recovered and had stabilized contractility readings (Figure 1D).
 
-## Known cardiotoxic compounds used to establish the extent of functional damage to iPSC-CMs
+![Figure 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of protocol for iPSC-CM differentiation, selection, and cryopreservation for high-content screening. (B) iPSC-CMs taken from a representative differentiation stained with ACTN2, TNNT2, and MYBPC3 before and after blasticidin (Bsd) selection. (C) Representative immunostaining of an unpurified population of iPSC-CMs before and after selection with blasticidin. iPSC-CMs were seeded as a monolayer for screening. Hoechst stain represented as pseudocolored-to-white for better visualization. Scale bars = 100 μm. (D) Blasticidin-purified iPSC-CMs from a representative batch were thawed and recovered for 7 days. Daily contractility metrics were performed to identify the optimal time for recovery of iPSC-CMs after thaw. n = 15–32 technical replicates per day. Error bars = SD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of knockin strategy of the blasticidin (Bsd) selection cassette into the endogenous MYH6 locus and subsequent Cre-excision of the Puro-selectable marker. (B) Single-nucleotide polymorphism karyotyping of the WTC-Bsd line showed no aberrant karyotypic abnormalities after genome engineering and clonal expansion. (C) Induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) cultured in Tenaya’s cardiomyocyte (TCM) media showed significantly upregulated maturity markers (MYH7 and TNNI3) and downregulated neonatal myosin isoform (MYH6) compared with iPSC-CMs cultured in RPMI/LT3 media. Error bars = SD. ns: not significant. (D, E) iPSC-CMs recovered and cultured in TCM media showed a reduced spontaneous beat rate and increased velocity of contractions. Data collected from five independent differentiations (n = 40 technical replicates per differentiation). Error bars = SD. (F) A representative batch of iPSC-CMs recovered in TCM media, leading to greater intensity of cardiac sarcomere markers (MYBP3 and TNNT2) without affecting cell survival in culture. (G) Representative immunostaining of iPSC-CMs recovered in PRMI/LT3 media vs. TCM media. TCM media improved recovery of iPSC-CMs after thaw. Scale bars = 100 μm.
+
+### Known cardiotoxic compounds used to establish the extent of functional damage to iPSC-CMs
 
 To establish training sets for deep learning models, we treated iPSC-CMs with bortezomib (proteasome inhibitor), doxorubicin (topoisomerase inhibitor), cisapride (serotonin 5-HT4 receptor agonist), sorafenib (tyrosine kinase inhibitor), givinostat (histone deacetylase inhibitor), bafilomycin (vacuolar-type H+-ATPase), paclitaxel (microtubule stabilizer), and JQ1 (bromodomain and extraterminal domain inhibitor) (Lamoureux et al., 2014). These compounds disrupt a diverse set of cellular pathways, so we included them to ensure that our deep learning models can identify a broad range of cardiotoxic compounds in an HCS.
 
 To determine the level of drug-induced toxicity, we measured beat rate, velocity of contraction, and displacement as a function of dose and duration of exposure (Figure 2—figure supplement 1). Results from three representative cardiotoxins (bortezomib, doxorubicin, and bafilomycin) are displayed as a heatmap (Figure 2A). For each compound, beats per minute and velocity measured on the fourth day of drug exposure are displayed as a function of drug dose (Figure 2B, C). We observed that the cardiotoxins had both a dose- and time-dependent effect on contractility measurements. In most cases, the contraction velocity and displacement declined, and the beat rate reduced as a function of dose and time (Figure 2—figure supplement 1). In some instances (e.g., doxorubicin), immediately before spontaneous contractility completely stopped, we observed an increased beat rate and reduced contraction velocity and displacement. This change may reflect a compensatory mechanism by which the cells increase beat rate to induce more ‘output’ while the velocity and displacement are reduced (Burridge et al., 2016; Maddah et al., 2015).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig2-v2.jpg)
+
+**Figure 2.:** (A) Displacement of iPSC-CMs was measured as a function of dose and duration of exposure to drug. Results from three representative cardiotoxins (bortezomib, doxorubicin, and bafilomycin) are displayed as a heatmap. (B, C) Contractility measures of beats per minute and velocity on the fourth day of drug exposure as a function of drug dose. Data indicate a time- and dose-dependent decline in contractility. Error bars = SD; n = 8 technical replicates per drug dose, n = 26 for dimethyl sulfoxide (DMSO) group. (D) Signal intensities of sarcomeres stained with antibodies against MYBPC3 and ACTN2 were measured using total fluorescent staining and normalized to DMSO control. Nuclear count was quantified and normalized to DMSO control. Dashed gray line, DMSO control condition. Error bars = SD; n = 8 technical replicates per drug dose, n = 26 for DMSO group. (E) Relative sarcomere organization quantified using scanning gradient Fourier transform and normalized to DMSO control. The organizational index refers to the average Fourier strength measured across the image. Error bars = SD; n = 8 technical replicates per drug dose, n = 26 for DMSO group. (F) Levels of structural toxicity for each drug were binned into the three categories of highly toxic (class 3), toxic (class 2), and mildly toxic (class 1). (G) Representative immunostaining of levels of structural toxicity in iPSC-CMs treated with bortezomib (30 nM), doxorubicin (100 nM), and bafilomycin (100 nM). Magenta, MYBPC3; green, ACTN2. Scale bars = 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Eight known cardiotoxins that target various biological processes were used to establish training for deep learning models. The cardiotoxins included bortezomib (proteasome inhibitor), doxorubicin (topoisomerase inhibitor), cisapride (serotonin 5-HT4 receptor agonist), sorafenib (tyrosine kinase inhibitor), givinostat (histone deacetylase inhibitor), bafilomycin (vacuolar-type H+-ATPase), paclitaxel (microtubule stabilizer), and JQ1 (BET bromodomain inhibitor). For each drug, beat rate, velocity of contraction, and displacement were measured as a function of dose and time of exposure to the drug. Measurements are displayed as a heatmap. In most cases, the contraction velocity and displacement time- and dose-dependently declined alongside reduced beat rate.
+
 Next, we assessed sarcomere organization and cell survival. Sarcomere staining intensity was measured using antibodies against MYBPC3 and ACTN2, and cell survival was measured using Hoechst nuclear stain (Figure 2D). To assess the structural integrity of the sarcomere and myofibril, which are negatively impacted by cardiotoxin-induced damage (Burridge et al., 2016; Judge et al., 2017; Maillet et al., 2016), sarcomere organization and alignment were also analyzed with the SGFT. This method can quantify subcellular myofibril alignment through one-dimensional fast Fourier transforms following sarcomere mapping (Salick et al., 2020; Figure 2E). Based on contractility metrics, sarcomeric staining, and nuclear count, we define three levels of structural toxicity binned into the three categories: highly toxic (class 3), toxic (class 2), and mildly toxic (class 1). DMSO-treated cells were designated as non-toxic (class 0) (Figure 2F and Supplementary file 1). Representative immunostaining of iPSC-CMs stained with MYBPC3 and ACTN2 show various levels of structural toxicity (Figure 2G).
 
-## Optimizing the deep learning model
+### Optimizing the deep learning model
 
 Frozen iPSC-CMs were thawed and allowed to recover in 384-well plates to enable high-content screening. These plates were divided into three categories: a training plate, a validation plate, and library plates. The cells were then immunostained using MYBPC3 before capturing images. Images from the training plate (dosed with known cardiotoxins ranging from 10 nM to 10 μM for 4 days) were used to establish the deep learning models. Images from the validation plate were used to test the accuracy of the deep learning models. And images from the library plates were used to test the toxicity level of compounds. iPSC-CMs in the library plates were exposed to 1280 bioactive compounds at three doses (0.3 μM, 1.0 μM, and 3.0 μM for 4 days) (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig3-v2.jpg)
+
+**Figure 3.:** (A) Induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) were thawed and allowed to recover for 6 days. Two plates were designated for training and validating the deep learning models. iPSC-CMs were then treated with known cardiotoxins (doses ranging from 10 nM to 10 μM) in the training and validation plates for 4 days. In parallel, a library of 1280 bioactive compounds was added to iPSC-CMs at three doses (0.3 μM, 1.0 μM, and 3.0 μM) for 4 days. (B) Deep learning accuracies compared across the three models. All models show more than 95% accuracy in identifying the non-toxic dimethyl sulfoxide (DMSO)-treated condition (class 0). Model accuracies were lower when attempting to distinguish mildly toxic, toxic, and highly toxic classes. (C) The three deep learning models compared in a two-dimensional plot on the validation plate. Regardless of how each model was trained (based on the defined images fed into the neural network), all models were strongly correlated when analyzing the validation dataset (R2 > 0.93). The DMSO-treated cells scored the lowest in toxicity, and doxorubicin-treated (1 μM) cells scored the highest. The mildly toxic class (doxorubicin at 0.3 μM) showed an intermediate toxicity separated from the non-toxic and highly toxic classes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) were seeded at various densities in a 384-well plate and treated with dimethyl sulfoxide (DMSO; 0.1%), bortezomib (0.1 μM), and doxorubicin (1.0 μM) for 4 days. The 2-class deep learning models were established (DMSO vs. cardiotoxin), and model accuracies were plotted as a function of cell seeding density. Validation accuracies and Z-factors increased with greater cell density. A minimum threshold of approximately 1500 cells per well is required to obtain high validation accuracies and a suitable screening Z-factor of approximately 0.5. (C) Training and validation accuracies are plotted as a function of epochs. Two representative cell seeding densities are plotted, showing a higher cell density leads to significantly better model performance. (D) Cells were scored against models built with various input numbers of cells showing that higher cell density leads to better separation of the DMSO vs. cardiotoxin controls. Lower cell density leads to significant overlap between the DMSO vs. cardiotoxin controls, while higher cell densities show maximal separation. Bort, bortezomib; Doxo, doxorubicin. Error bars = SD.
 
 Based on defined criteria for reduced contractility, loss of immunostaining, and nuclear count when cells were treated with various doses of cardiotoxins (Figure 2F and Supplementary file 1), we developed three deep learning models: 4-class, 3-class, and 2-class. The 4-class model distinguished highly toxic, toxic, and mildly toxic compound doses from the non-toxic DMSO-treated condition. The 3-class model combined highly toxic and toxic compound doses and kept mildly toxic compound doses separate. The 2-class model binned highly toxic and toxic compound doses from the non-toxic DMSO-treated condition. The total number of images used per class is outlined in Supplementary file 2.
 
@@ -121,39 +348,67 @@ We compared the deep learning accuracies across the three models. All models sho
 
 After training, the three deep learning models were independently used to score the validation plate (which the neural network had not seen before). The results from the three models on the validation plate are compared in a 2D plot in Figure 3C. The data suggested that all three models showed a strong correlation upon validation (R2 > 0.93, p<0.0001), regardless of how each deep learning model was trained (Figure 3C). As expected, the DMSO-treated cells scored the lowest on the cardiotoxicity scale. Cells treated with 1 µM doxorubicin showed the highest toxicity score, and cells treated with 0.3 µM doxorubicin (the mildly toxic class) showed an intermediate toxicity score separated from the non-toxic and highly toxic class.
 
-## Higher cell seeding densities lead to a higher model accuracy and screening window
+### Higher cell seeding densities lead to a higher model accuracy and screening window
 
 We hypothesized that there may be an optimal cell density for screening that leads to best model performance and Z-factor. The Z-factor is a statistical measure of assay variability and reproducibility (Zhang et al., 1999). We posited that using a cell density that was too high would tightly pack cells and mask features, whereas using a cell density that was too low would not generate sufficient features for training. Interestingly, as we increased the cell density, we did not observe a bell-shaped effect in the performance of the deep learning models. We found that the higher the cell density, the higher the model accuracy and, most importantly, the higher the Z-factor. At approximately 3000 cells per well of a 384-well plate, the model accuracy and Z-factor plateaued and did not decline with increasing cell density (Figure 3—figure supplement 1A, B).
 
 We also found that a minimum cell density is needed to ensure an appropriate screening window. For example, a minimum number of 1500 iPSC-CMs per well of a 384-well plate was required to reach a Z-factor of approximately 0.5, which is an acceptable level for an HCS in cell-based assays (Figure 3—figure supplement 1B). Training and validation accuracies were tracked as a function of epochs, or the number of times the entire training dataset passed through the neural network. Two representative cell seeding densities were analyzed, which showed that a higher cell density supports improved model performance (Figure 3—figure supplement 1C). Higher cell densities yielded higher cellular content for feature training, and they reduced cell edges and background. In addition, more cell-cell contact between iPSC-CMs led to sarcomere alignment that may reduce heterogeneity in training images. Given these factors, higher cell densities achieved a Z-factor greater than 0.5, which is ideal for HCS (Figure 3—figure supplement 1D).
 
-## Deep learning enables detection of toxic compounds in an HCS format
+### Deep learning enables detection of toxic compounds in an HCS format
 
 We calculated the dynamic range and Z-factors on the screening plates treated with DMSO (non-toxic control) as well as bortezomib and doxorubicin (cardiotoxic controls) (Figure 4A). With enough technical replicates, we saw significant differences in the nuclear count and sarcomere staining intensities (Figure 4A). However, when performing an HCS, only one or two technical replicates per test article are used. Thus, using parameters such as nuclear count and staining intensity will not be reliable for identifying hits in high-throughput screening (HTS) (Figure 4—figure supplement 1A, B). In this case, the associated Z-factors are far lower than a minimum de facto cutoff of 0.5 for HTS (Bray and Carpenter, 2017; Zhang et al., 1999). By using deep learning and the appropriate cell seeding density, we can increase the dynamic range and reduce the variability between treatment groups. These changes would increase the screening window coefficient (Z-factor > 0.5) for an HCS (Figure 4B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig4-v2.jpg)
+
+**Figure 4.:** (A) Comparison of Z-factor of nuclear count and MYBPC3 and ACTN2 staining intensities for dimethyl sulfoxide (DMSO) vs. bortezomib (Bort; 0.1 μM) and doxorubicin (Doxo; 1 μM). The Z-factors (< 0) and the limited dynamic range of the nuclear count and sarcomere intensities prevent reliable separation of positive and negative controls. Error bars = SD. (B) While using deep learning (regardless of how the models are trained), the dynamic range and Z-factors (> 0.5) enable identification of the toxic controls from the DMSO condition. Error bars = SD. (C) Cardiotoxicity scores from all screening wells at three doses of DMSO, bortezomib, and doxorubicin controls are compared in various deep learning models. Regardless of how each deep learning model was trained, cardiotoxicity scores from all three models had strong correlation when applied to the screening plates (R2 > 0.95).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Signal intensity and sarcomere content in screening plates using antibodies against MYBPC3 and ACTN2. Nuclear count was measured using Hoechst stain. (B) Two-dimensional plots of MYBPC3 and ACTN2 signal intensity show a good correlation between the two sarcomeric stains. Dimethyl sulfoxide (DMSO) (0.1%), bortezomib (0.1 μM), and doxorubicin (1.0 μM) are used as internal controls.
+
 We compared the cardiotoxicity scores from all screening wells at three doses, including the DMSO, bortezomib, and doxorubicin controls. Regardless of how each deep learning model was trained, all three models showed strong correlation (R2 > 0.95, p<0.0001) when applied to the screening plates (Figure 4C). All three models also accurately identified the non-toxic DMSO condition and enabled detection of the toxic controls (0.1 μM bortezomib and 1 μM doxorubicin). This result points to the robustness of hit detection and power of deep learning for analyzing large datasets. Given that the 4-class model was trained to separate the toxic and highly toxic classes, this model enables separation between the conditions treated with 0.1 μM bortezomib and 1 μM doxorubicin. To maximize assay sensitivity, it is more valuable to identify mildly toxic compounds than to distinguish highly toxic compounds from toxic compounds (given that highly toxic and toxic compounds show similarly strong phenotypes). To avoid overlooking a mildly toxic compound during the HCS, we proceeded to use the 3-class model to identify and further validate hits.
 
-## Screening using deep learning identifies compounds with cardiotoxic liabilities
+### Screening using deep learning identifies compounds with cardiotoxic liabilities
 
 We analyzed cardiotoxicity scores by screening 1280 bioactive compounds at three doses using our three deep learning models (Figure 5—figure supplement 1A, B). As mentioned, we focused on the 3-class model for further studies and validation rounds (Figure 5A). The cardiotoxicity scores from the top 25 hits are displayed as a heatmap from a scale of 0 to 2, such that the most cardiotoxic drugs have scores nearing 2 (red) and the non-toxic class have scores of nearly 0 (blue). For comparison, MYBPC3 and ACTN2 staining intensity and nuclear count are also displayed on a scale of 0 to 1. Most toxic compounds received a score of 1 (red), and least toxic compounds received a score of 0 (blue) (Figure 5B). Details about the identified cardiotoxic compounds are listed in Supplementary file 3.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cardiotoxicity score from screening 1280 bioactive compounds at three doses. Data from the 3-class deep learning model are plotted. Higher scores correspond to a higher probability of a cardiotoxicity signature. Bortezomib and doxorubicin were used as cardiotoxic controls (Cntrls). (B) Cardiotoxicity heatmap scores of top 25 cardiotoxic hits based on deep learning signal. The immunostaining signal is also displayed as a heatmap. Drugs and doses with cardiotoxicity signals in induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) are indicated in red and yellow, while non-toxic drugs are indicated in blue. Signal intensity from immunostaining and nuclear count was normalized to the dimethyl sulfoxide (DMSO) control and converted to a toxicity scale. Based on the generated heatmaps, phenotypic screening with deep learning is more sensitive in detecting signals than pure immunostaining assays. (C) Target class composition of top cardiotoxic hits from the screen, including DNA intercalators and ion channel blockers, as well as epidermal growth factor receptor (EGFR), cyclin-dependent kinase (CDK), and multi-kinase inhibitors. (D) Search Tool for the Retrieval of Interacting Genes/Proteins (STRING) protein-protein interaction network was used to identify interactions between drug targets (nodes) identified through the PRISM repurposing dataset. Seven clusters in four protein families of DNA (green), multi-kinase (light blue), ion channels (dark blue), and CDK (red) were found based on the highest number of interactions. The minimum required interaction score was set to 0.4, and the edge thickness indicated the degree of data support.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cardiotoxicity scores of putative hits from screening 1280 compounds at three doses using the 2-class, 3-class, and 4-class deep learning models. Based on the cardiotoxicity score across the three doses, putative hits were clustered into high-risk, medium-risk, and low-risk categories. (B) Toxicity scores based on immunostaining data using MYBPC3 and ACTN2 antibodies, and cytotoxicity based on nuclear count.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Cardiotoxicity scores of six putative hits from the primary screen show a dose-dependent increase in the cardiotoxicity score. Loss of MYBPC3 and ACTN2 immunostaining signal intensity failed to identify a strong toxicity signal (except the 3 μM dose for BI-2536, daunorubicin, and solifenacin).
 
 A number of identified hits clustered based on mechanism of action and molecular pathways. The top hits showing a cardiotoxicity signal in iPSC-CMs included epidermal growth factor receptor (EGFR) inhibitors (WZ8040, AG-1478), cyclin-dependent kinase 1 (CDK1) inhibitors (BI-2536, PHA-767491), DNA intercalators and synthesis inhibitors (Adrucil, daunorubicin, streptozotocin), ion channel blockers (chlorpromazine, nitrendipine), and other multi-kinase inhibitors (regorafenib). The characterization of hits into target classes is summarized in Figure 5C. We classified the protein targets of our top 25 cardiotoxic hits with a PRISM repurposing dataset. Next, we built a protein-protein interaction network using the Search Tool for the Retrieval of Interacting Genes/Proteins (STRING). In the resulting network, we identified seven clusters of protein families, including DNA interactors, ion channel blockers, multi-kinase inhibitors, and cyclin-dependent kinase (CDK) inhibitors (Figure 5D).
 
 The top compounds demonstrating a cardiotoxicity signal in iPSC-CMs included several FDA-approved drugs that clinical and pre-clinical studies have linked to adverse cardiovascular events (Supplementary file 3). For example, Adrucil (DNA synthesis inhibitor) had a side effect of cardiac toxicity (RxList, 2020). Betamethasome (oral glucocorticoid) was identified as a risk factor for heart failure (Souverein, 2004). Regorafenib (sorafenib analog, a multi-kinase inhibitor) was linked to increased risk of cardiovascular events in patients with solid tumors (Chen and Wang, 2018). Chlorpromazine (dopamine and potassium channel inhibitor) was linked to fast and irregular heart rate (WebMD, 2020). Anagrelide (PDE3 inhibitor) may cause cardiovascular effects, including fast, irregular, pounding, or racing heartbeat or pulse (Clinic M, 2020). Sotalol (beta-blocker and anti-arrhythmic) has serious cardiac side effects, including QT prolongation, heart failure, or bronchospasm (FDA.gov, 2020). Solifenacin (muscarinic receptor antagonist) overdose may cause fast heartbeat (Plus M, 2020). Daunorubicin (doxorubicin analog, topoisomerase II inhibitor, and DNA intercalator) causes cardiotoxicity (Menna et al., 2012; Sawyer et al., 2010). Rosiglitazone (PPAR-γ agonist used to treat patients with type 2 diabetes) was associated with a significant increase in the risk of myocardial infarction (Nissen and Wolski, 2007). These reports support the value of screening with deep learning and iPSC-CMs to detect early signs of cardiotoxicity.
 
-## Validation studies using deep learning and orthogonal assays
+### Validation studies using deep learning and orthogonal assays
 
 We further evaluated a subset of hits that showed cardiotoxic liabilities using deep learning analysis but did not show a strong toxic liability using immunostaining image analysis (Figure 5—figure supplement 2). This subset included six compounds that showed a cardiotoxic signal in iPSC-CMs: three pre-clinical compounds (WZ8040 [EGFR inhibitor], BI-2536 [CDK inhibitor], and PHA-767491 [CDK inhibitor]) and three FDA-approved compounds (danorubicin [DNA intercalator], nitrendipine [Ca2+-channel blocker], and solifenacin [muscarinic receptor antagonist]). As a positive control, we also included tegaserod (5-HT4 agonist), which was withdrawn from the market in 2007 due to adverse cardiovascular effects (MayoClinic, 2020). With these seven compounds, we performed a secondary round of validation using deep learning and additional orthogonal assays. This validation showed that all seven compounds had cardiotoxic liability (Figure 6A and Figure 6—figure supplement 1A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cardiotoxicity heatmap scores for validation of seven compounds: six cardiotoxic hits from the primary screen and tegaserod (known to cause cardiotoxicity and withdrawn from the market). (B) Kinetic plots of oxygen consumption rates for the seven compounds and bortezomib as another control. Kinetic data from only the 1 μM dose is plotted. Error bars = SD. (C) Heatmaps for basal respiration, adenosine triphosphate (ATP) production, maximal respiration, and spare respiratory capacity. BI-2535, daunorubicin, nitrendipine, and bortezomib had the largest effect on basal respiration, ATP production, and maximal respiration. The oxygen consumption rate (OCR) was measured as pmol/min/nuclear count. (D) All seven compounds show significantly different basal respiration and ATP production (one-way ANOVA). All drugs, except tegaserod, show significantly different maximal respiration. SRC: spare respiratory capacity. (E) Heatmaps for ProBNP levels show that PHA-767491 elevates ProBNP levels at all three doses. All other drugs showed no change or a slight decrease in ProBNP levels, suggesting that ProBNP is the least-sensitive marker to assess cardiotoxicity and cellular stress.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Deep learning validation of cardiotoxicity scores of six putative hits from the primary screen, along with tegaserod and known toxic controls (bortezomib [Bort], doxorubicin [Doxo], and JQ1). The higher the cardiotoxicity score, the higher the toxicity of the compound. n = 3–8 technical replicates per compound per dose. Error bars = SD. (B) Kinetic plots for oxygen consumption rates for six cardiotoxic hits, along with tegaserod and bortezomib as controls. Kinetic data from all three tested doses (0.3–3 μM) is plotted. Error bars = SD. (C) Orthogonal validation was performed using mitochondrial respiration assay after exposure to the identified toxic drugs and known controls. Basal respiration, ATP production, and maximal respiration show a significant decline compared to the dimethyl sulfoxide (DMSO)-treated condition. Error bars = SD.
+
 To further assess those seven validated compounds, we treated iPSC-CMs with the compounds and measured their mitochondrial respiration 4 days later using the Seahorse XFe96 Analyzer. Based on real-time OCR, all seven compounds dose-dependently reduced basal respiration in iPSC-CMs (Figure 6B and Figure 6—figure supplement 1B), suggesting decreased respiratory function compared to the DMSO control. To indirectly measure OCR, we treated iPSC-CMs with the compounds and oligomycin (ATP synthase [complex V] inhibitor) and then measured their capacity to produce adenosine triphosphate (ATP). Similarly, we found a dose-dependent decrease in the capacity of iPSC-CMs to produce ATP. Finally, we measured whether these compounds affect the spare respiratory capacity (maximum OCR subtracted by basal OCR) in iPSC-CMs. The spare respiratory capacity represents the cell’s ability to respond to an energetic stress. When compared to DMSO control, all compounds resulted in a dose-dependent decrease in maximal respiration and spare respiratory capacity (Figure 6C, D and Figure 6—figure supplement 1C). These data suggest that all seven compounds dose-dependently impair mitochondrial bioenergetics. Thus, by analyzing mitochondrial respiration, we validated the cardiotoxic compounds that were identified by deep learning but not by immunostaining image analysis.
 
-## ProBNP levels are not a reliable marker for detecting cardiotoxicity in iPSC-CMs
+### ProBNP levels are not a reliable marker for detecting cardiotoxicity in iPSC-CMs
 
 BNP is natriuretic peptide and hormone secreted from cardiac tissue. During heart failure, BNP secretions are elevated (Bay et al., 2003; Doust et al., 2006; Januzzi et al., 2005). BNP is also expressed in iPSC-CMs, which secrete the hormone into their culture media.
 
 We used a ProBNP ELISA kit as an orthogonal, follow-up assay on media collected from iPSC-CMs treated with the seven validated cardiotoxic compounds and evaluated the levels of BNP. We found an inconsistent pattern of ProBNP levels and cardiotoxicity signal in the media of treated cells. Only PHA-767491 (at all three doses) elevated ProBNP. In contrast, WZ8040, daunorubicin, nitrendipine, and solifenacin dose-dependently reduced ProBNP (Figure 6E). This reduction may be due to poor health of iPSC-CMs after treatment with the cardiotoxic compounds. We found that BI-2536 did not alter the levels of ProBNP and that tegaserod only reduced BNP at the highest dose (3 μM) (Figure 6E).
 
-## RNA-seq analysis confirms drug-specific changes in key pathways that regulate cardiac muscle contraction, development, and identity
+### RNA-seq analysis confirms drug-specific changes in key pathways that regulate cardiac muscle contraction, development, and identity
 
 To delineate perturbed transcriptional profiles in iPSC-CMs treated with drugs, we performed RNA sequencing on samples treated with our previously defined nine cardiotoxic compounds (two replicates/drug) and DMSO-treated iPSC-CMs (six replicates). Using PCA, four drugs (bortezomib, daunorubicin, doxorubicin, and BI-2536) fell into three distinct clusters, whereas the other five drugs (nitrendipine, PHA-767491, solifenacin, tegaserod, and WZ8040) clustered more closely with DMSO-treated controls (Figure 7A). Based on hierarchical clustering on each sample’s projected location in the PCA space with 23 components, we classified the transcriptomic profiles into four clusters (n = 24; cluster 1: bortezomib; cluster 2: doxorubicin and daunorubicin; cluster 3: BI-2536; cluster 4: nitrendipine, PHA-767491, solifenacin, tegaserod, and WZ8040). We generated the heatmap in Figure 7B by selecting the top overexpressed and underexpressed genes in each cluster that intersected with a curated set of 310 genes with enriched expression in cardiac tissue. We did not see any major difference in the clustering structure between these two methods. For simplicity, we show the averaged PCA-based similarity matrix for each drug cluster in Figure 7B.
 
@@ -167,15 +422,15 @@ BI-2536-related cardiotoxicity in cluster 3 was associated with reduced expressi
 
 To evaluate functional perturbations in each cluster, we performed single-sample gene set enrichment analysis (ssGSEA) (Subramanian et al., 2005) and normalized enrichment score for each sample. Normalized enrichment scores were scaled and centered on the average scores of the DMSO group (Figure 7D).
 
-## Deep learning detects structural frameworks that cause cardiotoxicity in iPSC-CMs
+### Deep learning detects structural frameworks that cause cardiotoxicity in iPSC-CMs
 
 To identify chemical structure frameworks that lead to cardiotoxicity in iPSC-CMs, we used our deep learning approach to assess a library of 1280 diverse compounds with no known targets. We used the same conditions as the bioactive library screen. However, to optimize the accuracy and applicability of the diverse library screen, we established a new set of training images and developed a new deep learning model that incorporated all generated datasets. From the 1280 diverse compounds, our deep learning approach identified 33 hits to cause cardiotoxicity in iPSC-CMs (Figure 8A, B). Analysis of the structure-activity relationship revealed three structural frameworks with two compounds (also classified as matched pairs) in each framework set (Figure 8C). For example, Framework 2a (cardiotoxicity score: 1.41) and its matched pair Framework 2b (cardiotoxicity score: 0.69) showed that adding an ethylene spacer increased the cardiomyocyte toxicity score by twofold (Figure 8C). Based on this result, high-content phenotypic analysis using deep learning is a powerful approach to identifying chemical frameworks with cardiotoxic liabilities. By using this approach during the lead optimization process, we can de-risk a clinical development program and potentially reduce drug attrition in late-stage clinical trials.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/68714/elife-68714-fig8-v2.jpg)
 
-**Figure 8.:** (A) Cardiotoxicity scores of 1280 diverse compounds screened at 1 µM. Sorted data from the 3-class deep learning model are plotted. Higher scores correspond to a higher probability of a cardiotoxicity signature. Bortezomib and doxorubicin were used as cardiotoxic controls (Cntrls). (B) Cardiotoxicity heatmap scores of top 33 cardiotoxic hits based on deep learning signal. The immunostaining signal is also displayed as a heatmap. Drugs and doses with cardiotoxicity signals in induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) are indicated in red and yellow, whereas non-toxic drugs are indicated in blue. Signal intensity from immunostaining and nuclear count was normalized to the dimethyl sulfoxide (DMSO) control and converted to a toxicity scale. (C) Three structural frameworks with matched pairs were identified to lead to cardiotoxicity in iPSC-CMs: Framework 1 (1a and 1b, tetrahydronaphthalene-2-sulfonamide core), Framework 2 (2a and 2b, 4-benzylpiperidine core), and Framework 3 (3a and 3b, 3-azabicycloheptane core). (D) Heatmap of chymotrypsin-like biochemical activity of 10 proteasome inhibitors profiled in iPSC-CMs. (E) Cardiotoxicity scores of 10 proteasome inhibitors plotted as a function of chymotrypsin-like biochemical IC50. Six of the proteasome inhibitors showed a similar range of biochemical potencies (dashed box). Delanzomib showed the lowest cardiotoxicity score; carfilzomib, bortezomib, and epoxomicin showed the highest cardiotoxicity scores.Figure 8—source data 1.
+**Figure 8.:** (A) Cardiotoxicity scores of 1280 diverse compounds screened at 1 µM. Sorted data from the 3-class deep learning model are plotted. Higher scores correspond to a higher probability of a cardiotoxicity signature. Bortezomib and doxorubicin were used as cardiotoxic controls (Cntrls). (B) Cardiotoxicity heatmap scores of top 33 cardiotoxic hits based on deep learning signal. The immunostaining signal is also displayed as a heatmap. Drugs and doses with cardiotoxicity signals in induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) are indicated in red and yellow, whereas non-toxic drugs are indicated in blue. Signal intensity from immunostaining and nuclear count was normalized to the dimethyl sulfoxide (DMSO) control and converted to a toxicity scale. (C) Three structural frameworks with matched pairs were identified to lead to cardiotoxicity in iPSC-CMs: Framework 1 (1a and 1b, tetrahydronaphthalene-2-sulfonamide core), Framework 2 (2a and 2b, 4-benzylpiperidine core), and Framework 3 (3a and 3b, 3-azabicycloheptane core). (D) Heatmap of chymotrypsin-like biochemical activity of 10 proteasome inhibitors profiled in iPSC-CMs. (E) Cardiotoxicity scores of 10 proteasome inhibitors plotted as a function of chymotrypsin-like biochemical IC50. Six of the proteasome inhibitors showed a similar range of biochemical potencies (dashed box). Delanzomib showed the lowest cardiotoxicity score; carfilzomib, bortezomib, and epoxomicin showed the highest cardiotoxicity scores.
 
-## Deep learning identifies proteasome inhibitors with reduced cardiotoxicity in iPSC-CMs
+### Deep learning identifies proteasome inhibitors with reduced cardiotoxicity in iPSC-CMs
 
 Bortezomib and carfilzomib are FDA-approved proteasome inhibitors used for oncology indications, including multiple myeloma and mantle cell lymphoma (Dimopoulos et al., 2016; Richardson et al., 2003). Patients given these drugs can develop cardiomyopathy, worsening heart rhythm, heart failure, and death due to cardiac arrest (Moslehi, 2016). To identify proteasome inhibitors that may reduce cardiotoxic liability, we profiled the potency of 10 proteasome inhibitors using the Proteasome-Glo biochemical assay (Figure 8D). For each inhibitor, we calculated the biochemical IC50 and measured the cardiotoxicity score using deep learning. We identified six inhibitors with a similar range of biochemical potencies (~12 to ~25 nM): carfilzomib, bortezomib, epoxomicin, delanzomib, ixazomib, and oprozomib. Carfilzomib, bortezomib, and epoxomicin had the highest cardiotoxicity score; delanzomib showed the lowest cardiotoxicity liability; and ixazomib and oprozomib showed medium levels of cardiotoxicity (Figure 8E). This analysis is an example of how this type of phenotypic screening would help to de-risk a small-molecule program at an early stage. By focusing on a chemical series (or pathway) that shows high levels of potency for the intended target, we can identify compounds in that series that limit undesired toxicity in a specific cell type with a major liability (such as cardiomyocytes and hepatocytes).
 

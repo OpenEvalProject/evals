@@ -71,6 +71,105 @@ Here we describe some of the recent developments in wheat genomics, focussing on
 
 A high-quality genome reference sequence is an essential resource for functional genetics and genomics in any species. Several hexaploid wheat genome assemblies have been released over the past eight years (Brenchley et al., 2012; Mayer et al., 2014; Chapman et al., 2015; Clavijo et al., 2017; Zimin et al., 2017). The most comprehensive assembly, called RefSeqv1.0, is a chromosome-level genome assembly annotated with high and low confidence gene models (The International Wheat Genome Sequencing Consortium (IWGSC) et al., 2018). Two tetraploid wheat genomes have also been sequenced, assembled, and annotated to the same standard as RefSeqv1.0 — the wild tetraploid progenitor of wheat, wild emmer (Avni et al., 2017), and a modern durum wheat variety (Maccaferri et al., 2019). Diploid ancestral progenitor species have also been assembled to varying levels of completeness (Luo et al., 2017; Zhao et al., 2017; Ling et al., 2018; Miki et al., 2019). We summarise the annotated assemblies for polyploid wheat in Table 1; in this review we will focus mainly on the RefSeqv1.0 assembly.
 
+**Table 1.**
+ Comparison of annotated genome assemblies in hexaploid and tetraploid wheat.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CSS</th>
+      <th>TGACv1</th>
+      <th>RefSeqv1.0</th>
+      <th>Durum wheat</th>
+      <th>Wild emmer wheat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Publication</td>
+      <td>Mayer et al., 2014</td>
+      <td>Clavijo et al., 2017</td>
+      <td>The International Wheat Genome Sequencing Consortium (IWGSC) et al., 2018</td>
+      <td>Maccaferri et al., 2019</td>
+      <td>Avni et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Contigs/Chromosomes</td>
+      <td>&gt;1 million</td>
+      <td>735,943</td>
+      <td>21 chromosomes + ChrU</td>
+      <td>14 chromosomes + ChrU</td>
+      <td>14 chromosomes + ChrU</td>
+    </tr>
+    <tr>
+      <td>Mean scaffold size</td>
+      <td>7.7 kbp</td>
+      <td>88.7 kbp</td>
+      <td>Chromosomes</td>
+      <td>Chromosomes</td>
+      <td>Chromosomes</td>
+    </tr>
+    <tr>
+      <td>Assembly Size</td>
+      <td>10.2 Gbp</td>
+      <td>13.4 Gbp</td>
+      <td>14.6 Gbp</td>
+      <td>10.5 Gbp</td>
+      <td>10.5 Gbp</td>
+    </tr>
+    <tr>
+      <td>Order</td>
+      <td>Synteny/genetic order†</td>
+      <td>Large Bins</td>
+      <td>Physical order</td>
+      <td>Physical order</td>
+      <td>Physical order</td>
+    </tr>
+    <tr>
+      <td>Coding genes*</td>
+      <td>133,090 HC 88,998 LC</td>
+      <td>104,091 HC 103,660 LC</td>
+      <td>107,891 HC 161,537 LC</td>
+      <td>66,559 HC 303,404 LC</td>
+      <td>67,182 HC 271,179 LC</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Assembly-related resources</td>
+      <td>Archive Ensembl Plants</td>
+      <td>Archive Ensembl Plants</td>
+      <td>Ensembl Plants GrainGenes, URGI</td>
+      <td>Ensembl Plants GrainGenes</td>
+      <td>Ensembl Plants GrainGenes</td>
+    </tr>
+    <tr>
+      <td>TILLING mutants</td>
+      <td></td>
+      <td>TILLING mutants</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>expVIP, wheatExp</td>
+      <td>expVIP</td>
+      <td>expVIP, eFP</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Accession</td>
+      <td>Chinese Spring</td>
+      <td>Chinese Spring</td>
+      <td>Chinese Spring</td>
+      <td>Svevo</td>
+      <td>Zavitan</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of high confidence (HC) and low confidence (LC) genes which are defined based on multiple criteria outlined in the published papers. Care must be taken when interpreting their nomenclature (see Figure 3).†Chromosome arm assignment was derived from chromosome flow-sorting, while approximate intra-chromosomal ordering was established using synteny derived from grasses (GenomeZipper) and genetic mapping (POPSEQ) (Mascher et al., 2013; Mayer et al., 2014)._
+
 RefSeqv1.0 is the most widely used assembly and annotation of hexaploid wheat (available on Ensembl Plants https://plants.ensembl.org/wheat). The information from previous assemblies and annotations (Chromosome Survey Sequence (CSS) and TGACv1) are also available in the Ensembl Plants archive (https://oct2017-plants.ensembl.org) or as tracks in the Ensembl Plants genome browser interface. Ensembl Plants enables access to additional information such as SNP variation, gene trees, homoeolog assignments, and TILLING (Targeting Induced Local Lesions in Genomes) mutant information. Through this interface users can also combine knowledge from the bread, durum and wild emmer wheat genomes.
 
 Like most of the previous hexaploid assemblies, RefSeqv1.0 is derived from the wheat landrace ‘Chinese Spring’. A combination of multiple Illumina and mate pair libraries were sequenced and assembled into scaffolds. Using a method of chromosome conformation capture called Hi-C, these scaffolds were further connected into pseudomolecules representing the 21 nuclear chromosomes of wheat, plus one additional ‘pseudo-chromosome’ (ChrU) containing all unassigned sequences (The International Wheat Genome Sequencing Consortium (IWGSC) et al., 2018).
@@ -79,7 +178,7 @@ The gene models for the RefSeqv1.0 assembly were annotated using two prediction 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55646/elife-55646-fig3-v1.jpg)
 
-**Figure 3.:** Here, one gene is used as an example to highlight the differences in gene ID nomenclature. Fields represented in the nomenclature are shown at the top with matching colours for the corresponding features in the gene names. Yellow background shows the CSS gene names with dark grey arrows pointing towards the corresponding field in the TGAC gene annotation (TGACv1, green background). Blue backgrounds show the gene nomenclatures for RefSeqv1.0 and v1.1 annotations (as used in Ensembl Plants), while the lilac background shows the nomenclature for Svevo v1.0 (modern durum wheat). (1) Two annotation versions are available for the RefSeqv1.0 genome assembly: RefSeqv1.0 (release annotation) and RefSeqv1.1 (improved annotation). These are differentiated by the annotation version number; ‘01’ for RefSeqv1.0 and ‘02’ for RefSeqv1.1. Otherwise, the annotations follow the same rules. (2) In the RefSeq and Svevo annotations, the biotype is represented by an additional identifier, where G = gene. (3) In the RefSeqv1.0 and v1.1 annotation, identifiers are progressive numbers in steps of 100 reflecting the relative position between gene models. For example, gene TraesCS5B02G236400 would be adjacent to gene TraesCS5B02G236500. However, it is important to note that the relative positions of genes may change in future genome releases as the assembly is improved, for example, if scaffolds are rearranged. In these cases, the gene order would no longer be retained. In the gene annotation for the tetraploid durum wheat cv. Svevo, the species name is TRITD () and gene identifiers increase in steps of 10, rather than by steps of 100 as in the RefSeq hexaploid wheat annotation. Note that RefSeqv1.0 and v1.1 comprises High Confidence (HC) and Low Confidence (LC) gene models. Low Confidence gene models are flagged by the ‘LC’ at the end (not shown). HC and LC genes which otherwise display the same unique identifier are TRITicum Durum the same locus and are not in sequential order. Hence, notTraesCS5B02G236400 and TraesCS5B02G236400 are both located on chromosome 5B, but are not the same gene nor are they physically adjacent. Similarly, genes from homoeologous chromosomes with the same subsequent numeric identifier are not necessarily homoeologous genes. For example, LCTraesCS5A02G236400, TraesCS5B02G236400 and TraesCS5D02G236400 are  homoeologous genes.not
+**Figure 3.:** Here, one gene is used as an example to highlight the differences in gene ID nomenclature. Fields represented in the nomenclature are shown at the top with matching colours for the corresponding features in the gene names. Yellow background shows the CSS gene names with dark grey arrows pointing towards the corresponding field in the TGAC gene annotation (TGACv1, green background). Blue backgrounds show the gene nomenclatures for RefSeqv1.0 and v1.1 annotations (as used in Ensembl Plants), while the lilac background shows the nomenclature for Svevo v1.0 (modern durum wheat). (1) Two annotation versions are available for the RefSeqv1.0 genome assembly: RefSeqv1.0 (release annotation) and RefSeqv1.1 (improved annotation). These are differentiated by the annotation version number; ‘01’ for RefSeqv1.0 and ‘02’ for RefSeqv1.1. Otherwise, the annotations follow the same rules. (2) In the RefSeq and Svevo annotations, the biotype is represented by an additional identifier, where G = gene. (3) In the RefSeqv1.0 and v1.1 annotation, identifiers are progressive numbers in steps of 100 reflecting the relative position between gene models. For example, gene TraesCS5B02G236400 would be adjacent to gene TraesCS5B02G236500. However, it is important to note that the relative positions of genes may change in future genome releases as the assembly is improved, for example, if scaffolds are rearranged. In these cases, the gene order would no longer be retained. In the gene annotation for the tetraploid durum wheat cv. Svevo, the species name is TRITD (TRITicum Durum) and gene identifiers increase in steps of 10, rather than by steps of 100 as in the RefSeq hexaploid wheat annotation. Note that RefSeqv1.0 and v1.1 comprises High Confidence (HC) and Low Confidence (LC) gene models. Low Confidence gene models are flagged by the ‘LC’ at the end (not shown). HC and LC genes which otherwise display the same unique identifier are not the same locus and are not in sequential order. Hence, TraesCS5B02G236400 and TraesCS5B02G236400LC are both located on chromosome 5B, but are not the same gene nor are they physically adjacent. Similarly, genes from homoeologous chromosomes with the same subsequent numeric identifier are not necessarily homoeologous genes. For example, TraesCS5A02G236400, TraesCS5B02G236400 and TraesCS5D02G236400 are not homoeologous genes.
 
 The RefSeqv1.0 assembly and the RefSeqv1.1 gene models, as well as the durum and wild emmer assemblies and gene models, have been integrated into the publicly available Ensembl Plants genome browser (https://plants.ensembl.org) (Bolser et al., 2015; Howe et al., 2020). Existing variation data, both natural and induced, has been mapped to the RefSeqv1.0 hexaploid assembly and deposited in Ensembl Plants databases for visualisation via the genome browser. Integrating resources into a common reference facilitates their use and in the following sections we will discuss how to best access and utilise these resources.
 
@@ -111,19 +210,186 @@ KnetMiner is a web-application for searching and visualising genome-scale knowle
 
 With the availability of the wheat genome, increasing interest has turned towards the wheat epigenome, that is heritable modifications to the genome that do not affect the DNA sequence itself, such as histone and DNA methylation. The global DNA methylome of polyploid wheat has been explored in multiple studies (Gardiner et al., 2015; Gardiner et al., 2018; Li et al., 2019). The methylome of the reference cultivar Chinese Spring was initially captured at the seedling stage (Gardiner et al., 2015), with more recent work focussing on the variation present in the seedling methylome of the 104 landraces from the Watkins core collection (Table 2; Gardiner et al., 2018). Researchers have also examined the changes in DNA methylation status as a result of biotic stress in wheat seedlings (Geng et al., 2019). The raw bisulfite sequencing data from these experiments is available through public archives, however it is not immediately accessible on genome browsers. More recently, new epigenomic data from Chinese Spring seedlings has been released which includes a wide variety of epigenetic marks such as DNA methylation, seven histone modifications, and chromatin accessibility (Li et al., 2019). This data has been made publicly available through a bespoke genome browser (http://bioinfo.sibs.ac.cn/cs_epigenome) and can be readily accessed by researchers to gain insight into the epigenomic landscape surrounding their genes of interest.
 
+**Table 2.**
+ Natural variation resources available in wheat.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection</th>
+      <th>Short description</th>
+      <th>Number of accessions</th>
+      <th>Genotyping</th>
+      <th>Data/seed availability</th>
+      <th>More information/Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Wild wheat relatives and progenitor species</td>
+    </tr>
+    <tr>
+      <td>Seeds of Discovery</td>
+      <td>Wheat and wild relative accessions held by ICARDA and CIMMYT</td>
+      <td>80,000 accessions: 56,342 domesticated hexaploid (eight taxa); 18,946 domesticated tetraploid (eight taxa); 3,903 crop wild relatives included all known 27 wild species from Aegilops-Triticum species complex and 11 genomic constitutions.</td>
+      <td>DArT-seq</td>
+      <td>CIMMYT Dataverse http://hdl.handle.net/11529/10548030 Germinate data warehouse http://germinate.cimmyt.org/wheat. Records for all germplasm accessions can also be accessed at https://ssl.fao.org/glis/</td>
+      <td>https://seedsofdiscovery.org/</td>
+    </tr>
+    <tr>
+      <td>Open Wild Wheat</td>
+      <td>Accessions of Aegilops tauschii (D genome progenitor)</td>
+      <td>265 accessions</td>
+      <td>Whole genome shotgun sequenced (10-30x)</td>
+      <td>Sequencing: https://opendata.earlham.ac.uk/wheat/under_license/toronto/; Seed: https://www.seedstor.ac.uk/search-browseaccessions.php?idCollection=38</td>
+      <td>www.openwildwheat.org; Arora et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Wild wheat introgression lines</td>
+      <td>Introgression lines from Aegilops caudata, Aegilops speltoides, Amblyopyrum muticum, Thinopyrum bessarabicum, Thinopyrum elongatum, Thinopyrum intermedium, Thinopyrum ponticum, Triticum timopheevii, Triticum urartu, rye and wheat cultivars (Chinese Spring, Higbury, Paragon, Pavon 76)</td>
+      <td>153 stable homozygous introgression lines available</td>
+      <td>35K Axiom Wheat Relative Genotyping array + 710 KASP markers (Grewal et al., 2020)</td>
+      <td>Genotype: https://www.nottingham.ac.uk/wrc/germplasm-resources/genotyping.aspx; Seed: https://www.seedstor.ac.uk/ (accessions WR0001-WR0155)</td>
+      <td>www.nottingham.ac.uk/WISP; Grewal et al., 2018a; Grewal et al., 2018b, King et al., 2018, King et al., 2017</td>
+    </tr>
+    <tr>
+      <td colspan="6">Synthetic hexaploid wheat</td>
+    </tr>
+    <tr>
+      <td>Synthetic hexaploid wheat</td>
+      <td>Sythetic hexaploid wheats generated using Aegilops tauschii (DD) + European tetraploid (AABB) wheat</td>
+      <td>50 synthetic hexaploid wheats + pre-breeding accessions; backcross populations with Robigus and Paragon also available</td>
+      <td>35K Axiom breeders array</td>
+      <td>Genotype: https://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/axiom_download.php Seed: https://www.seedstor.ac.uk/ (store codes WS0001-WS0232)</td>
+      <td>https://www.niab.com/research/research-projects/designing-future-wheat</td>
+    </tr>
+    <tr>
+      <td colspan="6">Wheat diversity panels</td>
+    </tr>
+    <tr>
+      <td>Watkins historic collection of landrace wheats</td>
+      <td>World collection of wheat landraces grown as farmer saved seed before the 1930s. Genetically stable collection developed by two generations of single seed descent</td>
+      <td>829 accessions (core set of 119 represent majority of assayed genotypic variation). F4:5 mapping populations against Paragon, mainly for the core set.</td>
+      <td>35K Axiom breeders array (Allen et al., 2017); subset exome sequenced (Gardiner et al., 2018)</td>
+      <td>Genotype: https://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/axiom_download.php Seed: https://www.seedstor.ac.uk/ (store codes WATDE0001-WATDE1063)</td>
+      <td>http://wisplandracepillar.jic .ac.uk/results_resources.htm ; Wingen et al., 2014; Wingen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>GEDIFLUX (Genetic Diversity Flux) collection</td>
+      <td>Western European winter wheat varieties that individually occupied over 5% of national acreage from 1945 to 2000. Bi-parental populations with Paragon (ongoing)</td>
+      <td>479 accessions</td>
+      <td>35K Axiom breeders array</td>
+      <td>Genotype: https://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/axiom_download.php; Seed: https://www.seedstor.ac.uk/ (store codes WGED0001- WGED0729)</td>
+      <td>http://wisplandracepillar.jic.ac.uk/results_resources.htm; Wingen et al., 2014</td>
+    </tr>
+    <tr>
+      <td>NIAB wheat association mapping panel</td>
+      <td>Bread wheat varieties released between 1916–2007. Predominantly UK varieties (68%), also other North Western European countries e.g. France (10%) and Germany (8%)</td>
+      <td>480 accessions</td>
+      <td>90K SNP array</td>
+      <td>Seed, Genotype and Pedigree: https://www.niab.com/research/research-projects/resources</td>
+      <td>Fradgley et al., 2019</td>
+    </tr>
+    <tr>
+      <td>OzWheat diversity panel</td>
+      <td>Genetic diversity in Australian wheat breeding (colonial landraces 1860s, first Australian-bred cultivars 1890s, CIMMYT-derived semi dwarfs 1960s, post 2000 wheat)</td>
+      <td>285 accessions</td>
+      <td>90K SNP array + additional 26K SNPs from transcriptome data</td>
+      <td>Seed and Genotype: contact Shannon Dillon from CSIRO (Shannon.Dillon@csiro.au)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vavilov wheat collection</td>
+      <td>Hexaploid wheat accessions including landraces, historic breeding lines and cultivars. Pure lines generated by single seed descent</td>
+      <td>295 accessions</td>
+      <td>DArtT-seq (34,311 polymorphic markers)</td>
+      <td>Genotype: Lee Hickey at The University of Queensland (l.hickey@uq.edu.au) Seed: Australian Grains Genebank (sally.norton@ecodev.vic.gov.au)</td>
+      <td>Riaz et al., 2017</td>
+    </tr>
+    <tr>
+      <td>WHEALBI wheat panel</td>
+      <td>Worldwide wheat accessions including diploid and tetraploid wild relatives, old hexaploid landraces and modern elite cultivars</td>
+      <td>487 accessions</td>
+      <td>Exome capture (~600,000 genetic variants in ~40,000 genes; 12,000 genes identified as putative presence/absence variation compared to RefSeqv1.0)</td>
+      <td>Genotype:https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Annotations/v1.0/iwgsc_refseqv1.0_Whealbi_GWAS.zip; Seed: https://www.gbif.org/dataset/a52ca10a-136a-4072-a6de-3ec6e7852365</td>
+      <td>Pont et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Global Durum Wheat (GDP) panel</td>
+      <td>Diversity used in durum wheat breeding programs globally, including landraces and modern varieties</td>
+      <td>1,056 accessions</td>
+      <td>90K SNP array</td>
+      <td>Genotype: ms in preparation; Seed: ICARDA genebank http://indms.icarda.org Filippo Bassi, F.Bassi@cgiar.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tetraploid wheat Global Collection (TGC)</td>
+      <td>Wild emmer wheat, domesticated emmer, durum wheat landraces and other tetraploid wheat sub-species (Triticum aethiopicum, Triticum carthlicum, Triticum polonicum, Triticum turanicum, Triticum turgidum, Triticum karamyschevii and Triticum petropavlovsky)</td>
+      <td>1,856 accessions</td>
+      <td>90K SNP array</td>
+      <td>Genotype: GrainGenes; Seed: on request for non-commercial use from University of Bologna (marco.maccaferri@unibo.it and roberto.tuberosa@unibo.it)</td>
+      <td>Maccaferri et al., 2019</td>
+    </tr>
+    <tr>
+      <td colspan="6">MAGIC populations</td>
+    </tr>
+    <tr>
+      <td>CSIRO, Aus</td>
+      <td>4-way (parents Baxter, Chara, Westonia, Yitpi); 8-way (parents Baxter, Westonia, Yitpi, AC Barrie (Canada), Xiaoya54 (China), Volcani (Israel), Pastor (Mexico), Alsen (USA))</td>
+      <td>1,500 (4-way) and 3,000 (8-way) RILs</td>
+      <td>90K SNP array, microsatellite and DArT markers &gt; 20,000 SNPs mapped in each population</td>
+      <td>Seed and Genotype: on request from CSIRO (Bill.Bovill@csiro.au)</td>
+      <td>Huang et al., 2012; Shah et al., 2019</td>
+    </tr>
+    <tr>
+      <td>NIAB, UK</td>
+      <td>8-way (parents Alchemy, Brompton, Claire, Hereward, Rialto, Robigus, Xi19, Soissions); 16-way (Banco, Bersee, Brigadier, Copain, Cordiale, Flamingo, Gladiator, Holdfast, Kloka, Maris Fundin, Robigus, Slejpner, Soissons, Spark, Steadfast, Stetson)</td>
+      <td>NIAB 8-way MAGIC:&gt;1,000 RILs; NIAB 16-way MAGIC: ~600 RILs</td>
+      <td>35K Axiom breeders array. Genome sequence (Claire, Robigus, others underway). Exome capture sequence of 16-way parents. Skim-seq of all RILs underway.</td>
+      <td>Claire and Robigus genomes: https://opendata.earlham.ac.uk/opendata/data/Triticum_aestivum/EI/v1.1/ Genotyping and Seed: https://www.niab.com/research/research-projects/resources</td>
+      <td>Mackay et al., 2014; Gardner et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>8-way (Event, Format, BAYP4535, Potenzial, Ambition, Bussard, Firl3565, Julius)</td>
+      <td>394 F6:8 RILs</td>
+      <td>5,435 SNPs from SNP array</td>
+      <td>Genotype and pedigree: http://doi.org/10.14459/2018mp1435172 (click the ‘open attachment browser’ link); Seed: Bavarian State Research Centre for Agriculture (Freising, Germany)</td>
+      <td>Stadlmeier et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>WM-800, 8-way (Patras, Meister, Linus, JB Asano, Tobak, Bernstein, Safari, Julius)</td>
+      <td>910 F4:6 RILs</td>
+      <td>15K Infinium iSelect SNP array</td>
+      <td>Genotype and pedigree: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6069784; Seed: on request from Martin Luther University, Germany (klaus.pillen@landw.uni-halle.de)</td>
+      <td>Sannemann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Durum</td>
+      <td>4-way (Claudio (Italy), Colosseo (Italy), Neodur (France), Rascon/2*Tarro (advanced CIMMYT line))</td>
+      <td>334 F7:8 RILs</td>
+      <td>90K SNP array</td>
+      <td>Genotype and pedigree: https://onlinelibrary.wiley.com/doi/full/10.1111/pbi.12424; Seed: on request for non-commercial use from University of Bologna (marco.maccaferri@unibo.it and roberto.tuberosa@unibo.it)</td>
+      <td>Milner et al., 2016</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Functional studies
 
 After identifying a gene of interest there are now several options and resources available for functional characterisation and validation in wheat (Figure 2). These include resources based both on natural and induced variation and can involve both transgenic and non-transgenic approaches. It is important to remember that due to the polyploid nature of wheat, there is often functional redundancy between homoeologs (Borrill et al., 2015). This means that it may be necessary to manipulate all homoeologs and paralogs simultaneously to measure a strong phenotypic effect (see the ‘Strategies for Use’ section below for more information).
 
-## Induced variation
+### Induced variation
 
-## TILLING
+#### TILLING
 
 Polyploid species, such as wheat, are well suited to mutational approaches as the functional redundancy in their genomes allows for the tolerance of a higher mutational load compared with diploid species (Tsai et al., 2013; Uauy et al., 2017). Bespoke mutant populations can be developed and screened for desired mutations in a gene of interest, though the screening process is arduous and time-consuming. To overcome this barrier, an in silico wheat TILLING resource has been developed (Krasileva et al., 2017). This resource consists of two ethyl methanesulphonate (EMS) mutagenised populations: 1,535 lines of the tetraploid durum wheat variety ‘Kronos’ and 1,200 lines of the hexaploid bread wheat variety ‘Cadenza’. Exome capture and Illumina sequencing of these 2,735 mutant lines was then carried out. The raw data was originally aligned to the CSS reference, mutations were identified, and their effects predicted based on the CSS gene models (Krasileva et al., 2017). Alleles predicted in silico to be deleterious (e.g. premature stop codons, splice site mutations, non-synonymous amino acid substitutions with SIFT score <0.05), were identified for ~90% of the captured wheat genes (Krasileva et al., 2017), thus making this a powerful resource for rapidly identifying mutations in a gene of interest (Figure 2). The raw data has now been aligned to the RefSeqv1.0 genome, allowing mutation identification and effect prediction based on the RefSeqv1.1 gene models. These updated data are publicly available on Ensembl Plants (see Case Study for details). For legacy purposes, the mutations called against the CSS reference remain available via www.wheat-tilling.com. However, caution should be exercised as the mutation effects here are predicted based on the CSS gene models, which are known to be less reliable than the RefSeq gene models (Brinton et al., 2018).
 
 There are several important considerations when selecting a mutant line for characterisation. First, it is essential to check the predicted effect of mutations in the context of a complete and experimentally validated gene model. Second, in most cases, crossing is necessary to combine mutations in homoeologous genes in order to generate a complete null individual. Third, mutant lines will contain a high level of background mutations: a typical mutant line has between 50 (tetraploid) and 110 (hexaploid) mutations predicted to result in a truncated protein. Depending on the phenotype of interest (i.e. qualitative vs. quantitative) several rounds of backcrossing may be required before the phenotype can be assessed (see ‘Strategies for Use’). Lastly, if the gene of interest is missing or is already a null allele in Kronos or Cadenza (which can be determined using the full genome sequences of the two cultivars), mutant populations of other genotypes are available (e.g. Dong et al., 2009; Chen et al., 2012; Bovina et al., 2014; Sestili et al., 2015; Colasuonno et al., 2016), although these would need to be screened using conventional PCR-based approaches. Additional practical information about selecting mutant lines and downstream analyses can be found at www.wheat-training.com/functional-studies and in Uauy et al. (2017).
 
-## Transgenic approaches
+#### Transgenic approaches
 
 Stable transformation of wheat is possible and can be performed using a variety of methods including both particle bombardment (Vasil et al., 1992; Sparks and Jones, 2009) and Agrobacterium-mediated transformation (Cheng et al., 1997; Sparks et al., 2014). Generating stable transgenic lines in wheat most commonly involves transforming immature wheat embryos and subsequent callus regeneration (Harwood, 2012). Reports in the literature of Agrobacterium-mediated wheat transformation generally describe low transformation efficiencies with average efficiencies of around 5%. An efficient, but patented, transformation system is available through licence from Japan Tobacco (www.jti.co.jp). Transformation by overexpression of transcription factors such as maize Baby Boom and Wuschel2 has also yielded improved transformation efficiencies in monocots (Lowe et al., 2016), although there are no formal reports yet in wheat. Recently, an open-access wheat transformation system with transformation efficiencies of up to 25% was published (Hayta et al., 2019), albeit for a single cultivar.
 
@@ -133,13 +399,13 @@ Recent developments in genome editing technologies provide new opportunities for
 
 A major limitation of using transgenic approaches to manipulate agronomically relevant traits is the associated legal and regulatory constraints. To overcome these, the nuclease transgene can be segregated away from the edited gene(s) in subsequent generations. However, in Europe, and in contrast to many other countries in the world, the resulting plants would be regulated as transgenics due to the 2018 ruling on genome editing by the European Court of Justice (ECJ). Some studies have documented CRISPR/Cas9-editing in wheat without transgene integration, for example, by delivering the CRISPR/Cas9 components as ribonucleoproteins (RNPs). As no foreign DNA is used in CRISPR/Cas9 RNP-mediated genome editing, the wheat mutants obtained are completely transgene free (Liang et al., 2017), although still not exempt from the ECJ regulation.
 
-## Virus-Induced Gene Silencing
+#### Virus-Induced Gene Silencing
 
 Virus-Induced Gene Silencing (VIGS) involves transient knock-down of expression of target genes followed by assessment of the resulting phenotype (Lee et al., 2012). The most widely used vectors for VIGS in wheat are those derived from barley stripe mosaic virus (BSMV), a plant virus with a tripartite RNA genome that readily spreads throughout tissues following mechanical rub-inoculation onto the leaves. All three BSMV genomic RNAs, RNAα, RNAβ and RNAγ, are required to cause infection. RNAγ has been modified to allow insertion of short (up to 350 bp) plant mRNA derived sequences. Infection of plants with the resulting recombinant virus induces a natural post-transcriptional gene silencing defence mechanism that targets the viral RNA, but also the endogenous plant mRNA having high level (>70%) nucleotide identity with the plant sequence inserted into RNAγ, for degradation. A detailed protocol for VIGS is available at www.wheat-training.com (Figure 2).
 
 VIGS in wheat has been used primarily to investigate disease resistance in a range of varieties, and has been restricted to a few tissue types such as leaf (Lee et al., 2015), young seedlings (Zhang et al., 2017a) and spikes (Ma et al., 2012). However, in principle, BSMV-mediated VIGS can be applied to any wheat genotype and to almost any gene of interest. This functional genomics tool is particularly useful when analysing multiple candidate genes, for example in map-based cloning projects (i.e. when physical intervals contain several candidate genes), or from RNA-Seq differentially expressed datasets. VIGS is also useful in wheat genotypes that are difficult to transform and in those for which mutant/TILLING populations are unavailable. VIGS can be used for simultaneous silencing of all homoeologs or, in principle, entire small gene families without the need for further genetic crosses.
 
-## Natural Variation
+### Natural Variation
 
 Although using induced variation presents a clear route to understand the function of specific genes in wheat, the wealth of natural variation in wheat lines, and populations based on this variation, presents an alternative route to discover genes and correlate them with function. For example, populations differing for alleles of the gene of interest could be used to rapidly infer the role of the gene. In order to capture the diversity within wheat and create populations to test gene function, natural variation has been extensively documented. Most studies have focused on SNPs between varieties that can be quickly assayed through SNP arrays designed from gene coding sequences and untranslated regions (UTRs) (Wang et al., 2014a; Winfield et al., 2016; Allen et al., 2017), described in Borrill et al. (2015) and www.wheat-training.com. Thousands of varieties and landraces have been processed using these arrays and datasets are available through websites such as TCAP (https://triticeaetoolbox.org/wheat) (Blake et al., 2016) and CerealsDB (http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB) (Wilkinson et al., 2016). Given that all SNPs from the latter have been incorporated into Ensembl Plants, this means that large in silico allelic series are readily available for many genes of interest.
 
@@ -147,41 +413,180 @@ Beyond SNP variation, two recent studies (He et al., 2019; Pont et al., 2019) ap
 
 Therefore, despite this wealth of data, the challenge remains to define the functional significance of this variation. Traditionally, mapping populations or association panels would need to be developed or assembled, and then genotyped, to assess how particular SNPs or haplotypes affect the trait of interest. In wheat, many of these resources are now publicly available (Figure 2), thus facilitating the functional characterisation of genes of interest. We describe some of these resources below and include links to access genotypes, sequences and seeds in Table 2. Further details are available at www.wheat-training.com.
 
-## Wild wheat relatives and progenitor species
+#### Wild wheat relatives and progenitor species
 
 There is relatively low genetic variation in elite bread wheat varieties, especially on the D genome. This typically reflects adaptation and selection from landraces over a long time period, combined with the genetic bottleneck effects associated with the rare natural hybridisation events between the diploid and tetraploid ancestral wheat species that led to the evolution of hexaploid wheat. Wheat is related to several other grass species, many of which are wild and uncultivated. These wild relatives provide a vast and largely untapped reservoir of genetic variation for many agronomically important traits. A wealth of cytogenetic stocks for these wild relatives have been created over the last 100 years by researchers globally, reviewed by Mujeeb-Kazi et al. (2013). The recent genotyping and sequencing of some of these resources makes them especially suitable for gene functional characterisation (Table 2).
 
-## Synthetic hexaploid wheat
+#### Synthetic hexaploid wheat
 
 Another approach to capture variation in wheat progenitors is via ‘re-synthesis’, the process used to create synthetic hexaploid wheat (SHW). SHWs are typically created by crossing tetraploid durum wheat with the diploid D-genome progenitor Aegilops tauschii. Approximately 400 SHWs were developed at CIMMYT in Mexico during the 1990s (Mujeeb-Kazi et al., 1996) and these have been extensively utilised in CIMMYT and international wheat breeding programmes (e.g. Gororo et al., 2002; Ogbonnaya et al., 2007). More recently, NIAB (UK) have developed a new SHW resource encompassing 50 SHWs along with pre-breeding derivatives. This germplasm, alongside marker data, is publicly available (Table 2).
 
-## Wheat diversity panels
+#### Wheat diversity panels
 
 Numerous collections of wheat landraces, varieties and breeders’ lines are available from research centres around the world. These panels represent valuable sources of potential genetic variation for targeted exploitation within wheat research and pre-breeding pipelines, especially when associated with existing genotypic and phenotypic datasets (Table 2). Further details are available at www.wheat-training.com.
 
-## Multiparent Advanced Generation Inter-Cross (MAGIC) populations
+#### Multiparent Advanced Generation Inter-Cross (MAGIC) populations
 
 MAGIC populations have been developed for many crop species (Huang et al., 2015; Cockram and Mackay, 2018). The multiple generations of inter-crossing required to create MAGIC populations results in highly recombined chromosomes, which enables the use of approaches such as genome wide association scans (GWAS) and whole-genome average interval mapping (WGAIM; Verbyla et al., 2007) to define small genetic intervals for traits of interest as reviewed by Verbyla et al. (2014). Likewise, the use of multiple parents allows more allelic variation to be examined compared to typical bi-parental populations (Cockram and Mackay, 2018). In wheat, seven MAGIC populations are currently publicly available which are constructed from 4, 8 or 16 founders. Parent information and further details can be found in Table 2.
 
-## Combining induced and natural variation for a holistic picture of gene function
+### Combining induced and natural variation for a holistic picture of gene function
 
 To date, natural variation has largely been used for forward genetics approaches such as mapping genetic regions underlying a phenotypic trait of interest. However, there is now an opportunity to apply natural variation in wheat for reverse genetics studies to complement transgenic, gene editing and induced variation approaches. For example, the pre-harvest sprouting locus Phs-A1 was reported by two independent studies to be underpinned by different genes: in one case by a pair of tandem duplicated Plasma Membrane 19 (PM19-A1 and PM19-A2) genes (Barrero et al., 2015), and in the other by a mitogen-activated protein kinase kinase 3 (TaMKK3-A) gene (Torada et al., 2016). Transgenic approaches seemed to validate the role of both PM19 and TaMKK3-A to influence pre-harvest sprouting. However, by using eleven bi-parental populations and a MAGIC population segregating for the Phs-A1 locus, it was possible to break the linkage with the polymorphism in PM19 and confirm that the causal gene in all populations was TaMKK3-A (Shorinola et al., 2017). This example illustrates the power of natural variation to validate the causal variants underpinning phenotypes in wheat.
 
 Populations exploiting natural variation can also be used to validate gene function. For example, TEOSINTE BRANCHED1 (TB1) was identified as a regulator of wheat spike architecture using a 4-parent Australian MAGIC population, and this function was confirmed using induced variation (TILLING and transgenic overexpression) and natural variation in the 8-parent UK MAGIC population (Dixon et al., 2018). Interestingly, whilst TB1 was important in both MAGIC populations, different homoeologs underpinned the variation: TB1-D1 in the Australian population and TB1-B1 in the UK population. This study suggests that by using natural variation, we can start to understand the nuanced regulation of phenotypes in wheat elicited by individual homoeologs. Together, these examples show that researchers now have at their disposal a powerful toolkit to combine induced and natural variation to study gene function in wheat.
 
-## Moving towards a wheat pangenome
+### Moving towards a wheat pangenome
 
 Increases in DNA sequencing outputs and related technologies have allowed the assembly of chromosome scale assemblies for multiple cultivars in major crops such as maize (https://nam-genomes.org/), rice (Zhou et al., 2019) or oilseed rape (Song et al., 2020). For wheat, 16 hexaploid (eight with spring habit, and eight with winter habit), and three tetraploid varieties/accessions have been assembled, several to a similar standard as the reference Chinese Spring genome (Table 3). Annotation of most of these varieties is ongoing through the 10+ Wheat Genomes Project (http://www.10wheatgenomes.com) and will provide information on the core (genes shared by all assembled varieties) and dispensable genes (genes shared among a few varieties). In addition, presence absence variation, copy number variation, structural rearrangements (inversions/translocations), and variation across non-coding regions are being quantified. Importantly, several of these genotypes are part of the resources outlined above, for example sequenced TILLING populations (Kronos and Cadenza). These assemblies will be integrated into Ensembl Plants and are available for download under Toronto Agreement (https://wheat.ipk-gatersleben.de/).
 
+**Table 3.**
+ Tetraploid and hexaploid wheat genome assemblies that are currently available, in addition to the Chinese Spring reference hexaploid genome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variety</th>
+      <th>Habit</th>
+      <th>Origin</th>
+      <th>Availability †</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Hexaploid wheat</td>
+    </tr>
+    <tr>
+      <td>CDC Landmark</td>
+      <td>spring</td>
+      <td>Canada</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>CDC Stanley</td>
+      <td>spring</td>
+      <td>Canada</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Paragon</td>
+      <td>spring</td>
+      <td>UK</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Cadenza</td>
+      <td>spring</td>
+      <td>UK</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>LongReach Lancer</td>
+      <td>spring</td>
+      <td>Australia</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Mace</td>
+      <td>spring</td>
+      <td>Australia</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Synthetic W7984</td>
+      <td>spring</td>
+      <td>Mexico</td>
+      <td>Chapman et al. (2015)</td>
+    </tr>
+    <tr>
+      <td>Weebill</td>
+      <td>spring</td>
+      <td>Mexico</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>ArinaLrFor</td>
+      <td>winter</td>
+      <td>Switzerland</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Julius</td>
+      <td>winter</td>
+      <td>Germany</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Jagger</td>
+      <td>winter</td>
+      <td>US</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Robigus</td>
+      <td>winter</td>
+      <td>UK</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Claire</td>
+      <td>winter</td>
+      <td>UK</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Norin61</td>
+      <td>winter</td>
+      <td>Japan</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>SY Mattis</td>
+      <td>winter</td>
+      <td>France</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td>Spelt (PI190962)</td>
+      <td>winter</td>
+      <td>Europe</td>
+      <td>10+ Genome Project</td>
+    </tr>
+    <tr>
+      <td colspan="4">Tetraploid wheat</td>
+    </tr>
+    <tr>
+      <td>Zavitan*</td>
+      <td>-</td>
+      <td>Israel</td>
+      <td>Avni et al. (2017)</td>
+    </tr>
+    <tr>
+      <td>Svevo</td>
+      <td>spring</td>
+      <td>Italy</td>
+      <td>Maccaferri et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Kronos</td>
+      <td>spring</td>
+      <td>US</td>
+      <td>10+ Genome Project</td>
+    </tr>
+  </tbody>
+</table>
+
+_*‘Zavitan’ is a tetraploid wild emmer (T. dicoccoides) accession.†Varieties included within the 10+ Wheat Genomes Project can be accessed through the Earlham Grassroot Genomics portal (https://wheatis.tgac.ac.uk/grassroots-portal/blast) and the 10+ Wheat Genomes project portal (http://webblast.ipk-gatersleben.de/wheat_ten_genomes) (subset of varieties in each). The ‘Svevo’ genome can be accessed through https://www.interomics.eu/durum-wheat-genome and Ensembl Plants. ‘Synthetic W7984’ and ‘Zavitan’ can be accessed through the Grassroot Genomics, and Ensembl Plants, respectively._
+
 ## Strategies for use
 
-## Variety selection and growth conditions
+### Variety selection and growth conditions
 
 Whilst resources are now available for the functional validation of target genes in wheat, practical knowledge is also required to maximise the value of these resources. Firstly, wheat varieties are adapted to different growing conditions (e.g. daylength and vernalisation requirements) making it important to consider the conditions under which functional validation will be conducted. If phenotyping will be undertaken in greenhouse or controlled environment conditions then most varieties will be suitable, although varieties without vernalisation requirements are faster to grow (details on wheat growth conditions at www.wheat-training.com). If field trials are required for phenotypic characterisation (e.g. yield-related traits), local adaptation is often necessary for correct interpretation of results given genotype x environment interactions. For example, the sequenced TILLING populations (Kronos and Cadenza) do not require vernalisation, facilitating greenhouse experiments, and originate from different regions of the world, allowing field trials under different environments (Kronos is a Californian variety adapted to warm dry weather whereas Cadenza is a UK variety adapted to cooler conditions).
 
 For CRISPR/Cas9 and other non-transient transgenic approaches several varieties may be used, although relatively few wheat varieties have been shown to display high enough transformation efficiencies to be practical. This means that traditionally most transgenic studies in wheat have been limited to a few varieties, such as ‘Fielder’, Cadenza, ‘Bobwhite’, ‘Kenong 199’ and Kronos (Li et al., 2012; Richardson et al., 2014; Liang et al., 2017; Hayta et al., 2019). This is now changing thanks to work by groups at NIAB (UK), CAAS (China) and CSIRO (Australia) who have successfully transformed 39 (Wallington, 2015), 15 (Wang et al., 2017) and six (Richardson et al., 2014) varieties, respectively. However, the Agrobacterium-mediated transformation efficiencies in all these studies still differ between varieties. Correct varietal selection for transformation is critical for functional studies, given that some varieties might not be suitable to study a particular phenotype (e.g. if the variety is resistant to a disease and hence cannot be used to test a candidate resistance gene). Similarly, it is important to assess whether the gene of interest is present/functional in the chosen variety, for example through PCR amplification and sequencing of the gene. For several varieties this can now be done quickly by direct examination of their genome sequence (Table 3).
 
-## Combining mutations for complete knock-outs in polyploid wheat
+### Combining mutations for complete knock-outs in polyploid wheat
 
 As we noted earlier, the polyploid nature of wheat means that it normally has multiple homoeologous copies of every gene. These copies typically have highly similar coding DNA sequence and may have redundant functions (Borrill et al., 2015). Therefore, to characterise the function of a gene in wheat it is often necessary to knock out all three homoeologs. This may be achieved by simultaneously targeting all three copies using either RNAi (e.g. Uauy et al., 2006) or CRISPR/Cas9 (e.g. Zhang et al., 2017b). A large number of transformants need to be screened to identify a null in all three genomes from a CRISPR construct (Zhang et al., 2017b; Howells et al., 2018). If the targets are more divergent it may not even be possible to use a single guide RNA to target all three homoeologs, in which case several guides may be used through multiplexing. Alternatively, separate knock-outs for each homoeolog can be generated by CRISPR/Cas9 or identified in TILLING populations. The mutations in each homoeolog can be combined by crossing (for details see www.wheat-training.com), with two crosses necessary to combine knock-out mutations in each of the three homoeologs in hexaploid wheat (Figure 4). Tetraploid wheat, with only two homoeologs, can be used to accelerate functional characterisation as it requires just one cross to create complete knock-out mutants (Figure 4). After self-pollination of this F1, phenotyping of the trait of interest can be initiated in the F2 generation by comparing homozygous double knock-out mutants to the sibling wild type plants. It is important to note that TILLING lines contain many background mutations and backcrossing may be required to overcome the confounding effects of background mutations on target phenotype. More details on these strategies are published in Uauy et al. (2017).
 
@@ -189,11 +594,11 @@ As we noted earlier, the polyploid nature of wheat means that it normally has mu
 
 **Figure 4.:** In tetraploid wheat, mutations in the A and B genome homoeologs can be combined through a single cross. The F1 plants are self-pollinated to produce a segregating F2 population which contains homozygous double and single mutants, as well as wild type plants (screening using molecular markers required; only four genotypes shown). These F2 progeny can be characterised for the phenotype of interest. The use of ‘speed breeding’ (Watson et al., 2018), reduces the time taken to reach this phenotyping stage from 12 (yellow) to 7.5 months (green). In hexaploid wheat, a second round of crossing is required to combine the mutant alleles from all three homoeologs. The F2 progeny segregating for the three mutant alleles can be genotyped using molecular markers to select the required combination of mutant alleles (only five genotypes shown; all factorial combinations are possible). Speed breeding reduces the time taken to generate triple homozygous mutants for phenotyping to 10 months (green), compared to 16 months in conventional conditions (yellow). Self-pollination is represented by an X inside a circle. Combinations of wild type alleles from the A (AA), B (BB) and D (DD) genomes, as well as the mutant alleles from each genome (aa, bb and dd, respectively) are indicated.
 
-## Accelerating crossing, generation time, and phenotyping
+### Accelerating crossing, generation time, and phenotyping
 
 The need to combine multiple mutations/alleles and carry out backcrossing to remove background mutations takes a considerable amount of time, with at least four months required per generation in a spring wheat genetic background. Recently, the ‘speed breeding’ technique has been implemented in wheat (and other crops such as barley, canola and chickpea), which uses extended day lengths of 22 hr and improved light quality to accelerate the generation time in wheat (Ghosh et al., 2018; Watson et al., 2018). Reduction of generation times to 8–10 weeks is achieved through an accelerated growth rate and harvesting of immature seeds 2–3 weeks post anthesis. The immature seeds are dried and then imbibed in the cold, resulting in nearly 100% germination. Incorporating speed breeding within crossing programmes can reduce the time required to produce and phenotype double mutants in tetraploid wheat to less than 7.5 months and triple mutants in hexaploid wheat to less than 10 months (Figure 4). In addition to reducing generation times, it has been shown that several traits of interest such as disease resistance, height and flowering time can be properly characterised under speed breeding conditions (Watson et al., 2018).
 
-## Homoeolog-specific PCR markers
+### Homoeolog-specific PCR markers
 
 To carry out the crossing schemes described above, it is essential to be able to select for the mutations of interest. In polyploid wheat it is necessary to track mutations in each homoeolog separately, which can be achieved using homoeolog-specific genetic markers. Primers can be designed to include a homoeolog-specific SNP at the 3’ end of the primer. The primer will amplify the targeted homoeolog more efficiently than the non-targeted homoeolog(s) resulting in genome-specific amplification. Rapid design of homoeolog-specific primers can be achieved using the PolyMarker pipeline (Ramirez-Gonzalez et al., 2015) and webserver (http://www.polymarker.info/). Routinely, genotyping of SNPs is carried out using Kompetitive Allele Specific PCR (KASP) markers which are relatively high throughput, inexpensive and can be used in individual lab settings equipped with PCR machines and widely available fluorescence plate readers (Allen et al., 2011). The SNP to be genotyped (e.g. between mutant and wild type) is located at the 3’ end of the two alternative allele-specific primers used in the KASP reaction (one for the mutant and one for the wild type allele), whilst the homoeolog-specific SNP is located at the 3’ end of the common primer. Amplification should thus be both homoeolog-specific and allele-specific. Further guidance on the design of genome-specific primers and KASP markers is available at www.wheat-training.com.
 
@@ -213,7 +618,7 @@ Further investigation of these homoeologs can be performed using the KnetMiner k
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55646/elife-55646-fig6-v1.jpg)
 
-**Figure 6.:** TBF1 orthologs in responding to abiotic stress.The wheat orthologs of the Arabidopsis gene TBF1, here depicted as three copies of the gene HSFB1 (light blue triangles) fall in expression module three (brown arrow; WGCNA module 3). The genes in this module are enriched for GO terms such as ‘Response to Stress’ and ‘Response to Abiotic Stimulus’ (dark green pentagons). The HFSB1 homoeologs are predicted to regulate other genes (blue triangles) in the GENIE3 network (purple connecting arrows) which are associated with the drought tolerance trait ontology terms (light green pentagon). PTC mutations are available for all three HFSB1 homoeologs (dark green stars connecting with STOP GAINED SNP effect) in the Cadenza population.
+**Figure 6.:** The wheat orthologs of the Arabidopsis gene TBF1, here depicted as three copies of the gene HSFB1 (light blue triangles) fall in expression module three (brown arrow; WGCNA module 3). The genes in this module are enriched for GO terms such as ‘Response to Stress’ and ‘Response to Abiotic Stimulus’ (dark green pentagons). The HFSB1 homoeologs are predicted to regulate other genes (blue triangles) in the GENIE3 network (purple connecting arrows) which are associated with the drought tolerance trait ontology terms (light green pentagon). PTC mutations are available for all three HFSB1 homoeologs (dark green stars connecting with STOP GAINED SNP effect) in the Cadenza population.
 
 After evaluating in silico expression levels, we can then characterise the phenotype of wheat TBF1 mutants using the exome-sequenced wheat TILLING mutant populations (Figure 2). We suggest to initially use the Kronos population, as it is based on a tetraploid line and thus contains only two copies of the gene (A and B homoeologs). This means that only two mutants need to be crossed to generate a full knockout. The hexaploid Cadenza TILLING population could also be used, but this would require an additional generation to combine mutant alleles across all three homoeologs (Figure 4).
 

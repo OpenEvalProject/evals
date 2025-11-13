@@ -33,9 +33,17 @@ The possibility of specific inhibitory feedback balancing highly specific and po
 
 ## Results
 
-## Optogenetic perturbation to detect inhibitory stabilized networks
+### Optogenetic perturbation to detect inhibitory stabilized networks
 
 Networks with high excitatory connectivity which are balanced by a strong inhibitory feedback are called inhibitory stabilized networks (ISNs). The strong recurrent interaction between excitation and inhibition in these networks manifests itself in a dynamical signature, which is the paradoxical change in the activity of inhibitory neurons upon their perturbation (Tsodyks et al., 1997). That is, if the input to inhibitory neurons are increased, the activity of inhibitory neurons is decreased, in a paradoxical manner. ISNs –and their associated paradoxical effects– have mainly been studied for simple connectivity profiles, by assuming a uniform connectivity between excitatory and inhibitory subpopulations. Recent experimental studies, on the other hand, have revealed a highly specific connectivity profile between excitatory neurons (Ko et al., 2011; Cossell et al., 2015), which is likely to be balanced by a specific inhibitory feedback (Znamenskiy et al., 2018). However, the precise effect of such specific connectivity (Figure 1A) on dynamic responses of ISNs remains understudied, both theoretically and experimentally.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of network with specific EI connectivity. (B) Optogenetic perturbation of inhibition can either be non-specific (independent of preferred features of the perturbed inhibitory neurons) or patterned (specifically addressing inhibitory neurons with similar feature selectivity). (C) Non-specific perturbation only reveals the average paradoxical effect in an ISN (black circle), by revealing that the average activity of perturbed inhibitory neurons is changing in the opposite direction of perturbations. In non-ISNs (gray circle), perturbations and response changes have the same sign. (D) Patterned perturbation of specific ISNs reveals specific paradoxical effects, where inhibitory neurons with more (negative) perturbations show more (positive) response changes. The negative correlation of perturbations and response changes is indicated by the dashed line with a negative slope. The mean activity of inhibitory neurons (filled orange circle) still shows the non-specific paradoxical effect, similar to (C). The specific paradoxical effect is, however, reflected in the slope of the pattern, and cannot be distinguished by the mean activity. (E) Expected patterns for the response changes of inhibitory neurons versus their perturbations under four scenarios: non-specific or specific perturbation of non-specific of specific ISNs. Similar to (D), open circles denote the response change of individual inhibitory neurons upon perturbation, the filled circle is the average across those neurons, and the dashed line indicates the slope of correlation. While all combinations show non-specific paradoxical effect (reflected in the similar behaviour of the mean response), only specific perturbation of specific ISNs reveal the specific paradoxical effect (reflected in the negative slope of the line).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Effect of perturbing the inhibitory population in networks with weak coupling of excitatory and inhibitory populations (non-ISNs). Here, increasing the activity of inhibitory neurons (demonstrated by the shift in the I nullcline from the solid blue line to the dashed one) leads to a new fixed point with higher inhibitory and lower excitatory activity, in the expected direction. (B) In networks with strong coupling of excitation and inhibition, increasing the input to inhibition leads to a new fixed point with lower activity of both excitation and inhibition. Perturbation of inhibition, therefore, changes the activity of the inhibitory population in a paradoxical direction. (C) In specific ISNs, patterned stimulation of the network can change the fixed point (in the specific direction; ‘specific fixed point’) either in ISN or non-ISN fashion, depending on the alignment of the perturbation pattern with the specific eigenmode of the network. Perturbation patterns aligned with the specific eigenmode (magenta) change the specific fixed point in the ISN direction (similar to (B)), hence leading to the specific paradoxical effect. Perturbation patterns orthogonal to the specific eigenmode (purple) change the specific fixed point in the non-ISN direction (similar to (A)), hence failing to reveal the specific paradoxical effect.
 
 Experimental optogenetics paradigms typically perturb inhibitory neurons randomly and uniformly to probe the presence of ISN networks (‘non-specific’ perturbation; Figure 1—figure supplement 1). This is performed by, for example, reducing the input to many inhibitory neurons expressing channelrhodopsins and measuring the change in the activity of the perturbed inhibitory population (Atallah et al., 2012) or the change in the input to pyramidal cells (Adesnik, 2017). If the average change is in the opposite direction of perturbation, that is an overall increase in the activity when reducing the input (Adesnik, 2017; Kato et al., 2017), the effect of perturbation is called paradoxical, which is the signature of ISN regimes of activity (Tsodyks et al., 1997; Figure 1B,C; Figure 1—figure supplement 1A,B).
 
@@ -45,9 +53,41 @@ If inhibitory stabilization is specific to subnetworks, that is the excessive ex
 
 Four possible scenarios are thus conceivable out of the interaction of nonspecific/specific perturbations and nonspecific/specific ISNs (Figure 1E). Only in one of them, namely specific perturbations of specific ISNs, the negative slope would be expected. In all other combinations, the extra perturbations around the mean change the response of inhibitory neurons in the same direction. That is, if an inhibitory neuron is perturbed more than the mean perturbation, it would obtain an extra response change more than the mean value; and vice versa. This is because the vector of residual perturbations around the mean is not aligned with the feature-specific dynamics of the network (in non-specific perturbations), or simply because the network lacks such feature-specific dynamics (in non-specific ISNs). The result is a positive slope: although the mean response changes still show the non-specific paradoxical effect, the differential response changes around the mean behave in the same direction as differential perturbations.
 
-## Specific perturbation to detect feature-specific inhibitory stabilization
+### Specific perturbation to detect feature-specific inhibitory stabilization
 
 To study how specific ISNs behave under different patterns of perturbations, we first simulated large-scale rate-based networks of excitatory and inhibitory neurons (Figure 2). Neurons were assigned initial preferred orientations and the weight matrix was constructed such that pairs of neurons (E-to-E, E-to-I, I-to-E and I-to-I) with similar preferred orientations were more strongly connected to each other (see Materials and methods). Under both paradigms of perturbation (perturbations independent of neuron’s preferred orientation or in accordance to it; Figure 1B), the average activity of the network showed the conventional paradoxical effect. That is, negative perturbations of inhibitory neurons (induced by decreasing the input to them) increased the activity of both inhibitory and excitatory populations, on average (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-v2.jpg)
+
+**Figure 2.:** (A) Activity of individual excitatory (magenta) and inhibitory (blue) neurons, and their average activity (black), in the baseline state and during perturbation (from T = 300 to 700) applied by reducing the input to inhibitory neurons (see Materials and methods). Perturbations are induced either non-specifically (upper) or in a patterned manner (lower), where the decrease in the input is proportional to the preferred orientation of respective inhibitory neurons (Figure 1B). Both modes of optogenetic perturbations lead to the non-specific paradoxical effect, as reducing the input to inhibitory neurons paradoxically increases their average activity. (B) Average activity of individual excitatory and inhibitory neurons during baseline (black dots) and perturbed states as a function of their preferred orientations. The amount of perturbation of the input to each inhibitory neuron is plotted on the right side (orange) for comparison. The non-specific perturbation is the same pattern as the specific perturbation but randomized over neurons. (C) Response change as a result of perturbation (calculated as the difference in the average activity of neurons in the perturbed states compared to the baseline) for inhibitory neurons as a function of their input perturbation. This is shown for specific EI networks in response to nonspecific perturbation (upper) and patterned perturbations (lower). Solid red lines show the best fitted regression line to the data points, with the slope of the line indicted on top (red). The dashed line in (upper) illustrates how a non-ISN would have behaved under a similar perturbation (Figure 2—figure supplement 2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) Similar plots as in Figure 2A-C, respectively, for neuronal networks without feature-specific EI connectivity. Here, both nonspecific and patterned perturbation fail to yield a specific paradoxical effect (as quantified by lack of negative slopes in C), consistent with lack of specific ISNs in networks without specific connectivity. Note that the nonspecific paradoxical effect is still present, as reflected in the increase in the average activity of inhibitory neurons despite negative perturbations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A,B) Similar plots as Figure 2A,C, respectively, for a network operating in a non-ISN regime of activity.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A,B) Similar to Figure 2B,C, respectively, for positive patterned perturbations. The pattern of perturbation of inhibitory neurons is the same but reversed in sign. (C,D) Similar as (A,B) for a 10 times smaller perturbation size. The slope of the best fitted regression line is denoted on the top (red) in each case. (E,F) The slope of the best fitted lines to response changes versus input perturbations, for positive (E) and negative (F) perturbations of different size.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Response change versus input perturbations (similar to Figure 2C), in a network with fewer inhibitory neurons. The network is the same as in Figure 2, but it has $N_{I}=200$ inhibitory and $N_{E}=800$ excitatory neurons, and $J_{EE}=J_{EI}=0.025$, $J_{IE}=J_{II}=-0.15$. Upper: Patterned perturbation; Lower: Randomized patterns over neurons. (B) Same as (A) for the network with broader inhibitory connectivity. The network is the same as Figure 2, but the specificity of all weights other than EE connections has reduced by 20% (i.e., $m_{EE}=1$ and $m_{EI}=m_{IE}=m_{II}=0.8$), and $J_{EE}=J_{EI}=0.01$, $J_{IE}=J_{II}=-0.015$. (C) Same as (A), for a network with fewer inhibitory neurons and broader connectivity of inhibition. Differing parameters from Figure 2 are the following: $N_{E}=800$, $N_{I}=200$, $J_{EE}=J_{EI}=0.005$, $J_{IE}=J_{II}=-0.03$, $m_{EE}=1$, $m_{EI}=m_{IE}=m_{II}=0.8$. Red lines denote the best fitted regression lines to the data in each case, with the slope of the regression indicated in red.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Left: Distribution of connection specificity (m) of synapses in the network. Instead of a single value (e.g. m = 1 in Figure 2), connection specificity is now drawn from a uniform distribution between 0 (non-specific) to 1 (highly specific). Right: The weight matrix of the EE subnetwork generated with connection specificity as shown on the left. Neurons are sorted according to their initial preferred orientations. (B) Average activity of neurons in the network during baseline and perturbed states (c.f. Figure 2) as a function of their initial preferred orientation. Conventions are the same as Figure 2B. (C) Average response change of neurons versus their input perturbations for patterned perturbations (as in (B)) (upper) and a randomized version of the input perturbations (lower). Conventions similar to Figure 2C. Red lines denote the best fitted regression lines to the data, with the slope of the regression indicated in red.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Response change as a function of input perturbation of inhibitory neurons in rate-based networks with nonlinear transfer function (see Materials and methods). The power of expansive nonlinearity of the transfer function is specified by n, with n = 1 recapitulating the same dynamics as in Figure 2. Other conventions are the same as Figure 2C. Note different scales of y-axes. (B) Left: Sample activity of excitatory and inhibitory neurons before, during and after patterned perturbation, for n = 4 (similar to Figure 2A). Right: Average activity of individual excitatory and inhibitory neurons during baseline state and during perturbation, as a function of their initial preferred orientation. Conventions the same as Figure 2B.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A–C) Response change as a function of input perturbations for perturbed inhibitory neurons under patterned perturbations (similar to Figure 2C). Different fraction of inhibitory neurons are perturbed in (A): 30%, (B): 50% and (C): 70%. Other parameters and conventions are otherwise the same as Figure 2. (D) The slope of regression line fitted to the data (red lines in (A-C), with the slope denoted with the numbers in red) for different fractions of patterned perturbation. More than 50% of the inhibitory population should be perturbed to observe the specific paradoxical effect (assayed by the negative slope of the regression).
 
 The difference between the two types of perturbation, however, became evident when the response changes were plotted in terms of the feature-selectivity of neurons (Figure 2B). Nonspecific perturbations increased the activity of inhibitory neurons without any obvious pattern in terms of their preferred orientations (Figure 2B). In contrast, patterned perturbations invoked inverse patterns of response changes, such that inhibitory neurons with larger (more negative) perturbations showed higher increase in their activity (Figure 2B, lower). This ‘feature-specific paradoxical effect’ was clearly evident in the negative correlation between the response change of inhibitory neurons and their input perturbations (Figure 2C, lower), and could be quantified by the negative slope of the regression line fitted to the data points (Figure 2C). We used this metric in the rest of the study to quantify the presence of feature-specific ISNs.
 
@@ -55,37 +95,45 @@ The negative slope was missing for the nonspecific pattern of perturbation (Figu
 
 Note that, while the nonspecific paradoxical effect is reflected in the mean population behaviour of the network (i.e., in the average response change and the average perturbation of inhibitory population), the specific paradoxical effect can be inferred from the second-order statistics. That is, the slope of the relationship between the input perturbations and output response changes across inhibitory neurons should be considered, rather than their population average values. In all three conditions discussed above (Figure 2C, upper and Figure 2—figure supplement 1C), the mean activity of the inhibitory population shows the conventional, nonspecific paradoxical effect. For comparison, such a nonspecific paradoxical effect would be absent in non-ISN networks, as their inhibition shows average response changes in the same direction as input perturbations (Figure 2—figure supplement 2, and dashed line in Figure 2C, upper). Lack of an inverse second-order relationship (negative slope) is, however, present in all these four conditions (specific ISNs with randomized patterns (Figure 2C), nonspecific ISNs in response to patterned or randomized perturbations (Figure 2—figure supplement 1C), and non-ISNs (Figure 2—figure supplement 2)) because none of them shows the second-order paradoxical effects. We therefore concluded that networks with feature-specific EI connectivity can show specific paradoxical effects in response to patterned perturbations, but nonspecific perturbations fail to uncover such effects even in specific ISNs.
 
-## Positive versus negative perturbations of inhibitory neurons
+### Positive versus negative perturbations of inhibitory neurons
 
 We decreased the input to inhibitory neurons in our perturbations, because neurons in strongly connected excitatory-inhibitory networks (similar to those found in the cortex) typically operate at low firing rates. As a result, the paradoxical effect would be observed better if perturbations lead to increases in activity of inhibitory neurons to avoid the ‘floor effect’, which would be possible by decreasing the input to inhibitory neurons. To demonstrate this, we probed the presence of the specific paradoxical effect with positive patterned perturbations. We used the same patterns of perturbations, but instead of decreasing the input to inhibitory neurons (negative perturbation) we increased the input (positive perturbation). Positive perturbations with similar size revealed a weak specific paradoxical effect and negative slope (Figure 2—figure supplement 3A,B). However, decreasing the size of perturbation by 10 times led to strong negative slopes (Figure 2—figure supplement 3C,D), due to less rectification of network activity. Systematic analysis of the slope of the response changes versus input perturbations revealed that smaller perturbations in fact revealed higher negative slopes (Figure 2—figure supplement 3E). Negative perturbations, in contrast, always revealed the specific paradoxical effect with strong negative slopes, independent of the strength of perturbation (Figure 2—figure supplement 3F). We, therefore, concluded that, although the specific paradoxical effect can be revealed by small positive perturbations, negative patterned perturbations are better poised for probing specific ISNs.
 
-## Networks with more biologically realistic inhibition
+### Networks with more biologically realistic inhibition
 
 We used equal numbers of excitatory and inhibitory neurons with similar tuning properties in our simulations, but it is known that there are fewer inhibitory neurons (than excitatory neurons) in real cortical networks (Braitenberg and Schüz, 1998). Moreover, experimental studies suggest broader tuning of inhibitory neurons than excitatory ones (Ma et al., 2010; Bock et al., 2011). We therefore asked if our main results also hold in networks with such biologically realistic architectures. To address this issue, we first simulated networks with fewer inhibitory neurons, matching the fraction of excitation/inhibition (80% E, 20% I) as reported in the neocortex (Braitenberg and Schüz, 1998). To account for the decrease in the overall level of inhibition resulting from the decrease in their number, we increased the average weight of inhibition by a similar factor (4 times stronger), consistent with stronger weights reported for inhibition (Hofer et al., 2011). As before, feature-specific paradoxical effect was also observed in such networks, but only when patterned perturbation of inhibition was delivered (Figure 2—figure supplement 4A).
 
 We next addressed broader tuning of inhibition. This can either affect the input to neurons (broader input to inhibitory neurons than excitatory ones) or the specificity of connections (more specificity of excitatory compared to inhibitory connections). Different inputs to different neuron types do not change our results, as patterned perturbation is only delivered to inhibitory neurons; this would be an issue if both subtypes were subject to perturbations or external stimuli. We therefore investigated the effect of broader connectivity of inhibitory neurons. To simulate this, we allowed for a broader connectivity of I→E, I→I and E→I connections compared to E→E weights. Moreover, we recalibrated the weights such that the network still has dynamic stability despite the decrease in specific inhibition. For stable networks with broader inhibitory connectivity, we obtained similar feature-specific paradoxical effects in response to patterned perturbations (Figure 2—figure supplement 4B). We also combined the two conditions in a third set of simulations, where the network had both fewer inhibitory neurons and broader inhibitory connectivity, and obtained similar results (Figure 2—figure supplement 4C). Therefore, fewer inhibitory neurons and broader tuning or connectivity of inhibition would not compromise the presence of feature-specific paradoxical effects, as long as the specific neuronal dynamics remain stable.
 
-## Networks with heterogeneous specificity of excitatory and inhibitory connections
+### Networks with heterogeneous specificity of excitatory and inhibitory connections
 
 We so far considered EI connectivity profiles where all synaptic connections had the same tuning width. However, balanced states and ISN dynamics can be achieved with different profiles of E and I connections. Under such heterogenous connectivity profiles, the relationship between the specific activity dynamics and connectivity might be less clear, as the heterogeneity adds ‘noise’ which may weaken the specific effect of patterned perturbations. We therefore studied whether specific paradoxical effects can also be observed in neuronal networks with heterogenous specificity of E and I connections (Figure 2—figure supplement 5). To this end, we modified the specificity of synaptic connections to have a random value between 0 (non-specific) and 1 (highly specific) (Figure 2—figure supplement 5A). Simulation results showed that patterned perturbations of inhibition induced the same inverse pattern of activity on inhibitory and excitatory neurons, but with a more noisy behaviour (Figure 2—figure supplement 5B). This reflected itself in a more spread in the distribution of response changes versus input perturbations; however, the overall trend remained the same and manifested itself in the negative slope for patterned perturbations, but not for randomized input patterns (Figure 2—figure supplement 5C). The heterogeneity of synaptic connections can, therefore, add more scatter to the manifestation of the specific paradoxical effect, but seems unlikely to mask it in the average slope of the perturbation curve.
 
-## Networks with nonlinear dynamics
+### Networks with nonlinear dynamics
 
 As we considered a threshold-linear nonlinearity in our rate-based model, it is possible that our main results were derived mostly in the linear regime of dynamics. More complicated nonlinearities can create interactions amongst the eigenmodes and hence may mitigate the specific paradoxical effects. Specifically, in inhibitory-stabilized networks with supra-linear transfer functions, the dynamic range is divided into non-ISN and ISN regions by a transition from the sub-linear to supra-linear dynamics (Ahmadian et al., 2013; Rubin et al., 2015). We therefore extended our model to study how such nonlinear dynamics might affect our results. We investigated the effect of response nonlinearity on our results by simulating rate-based networks with difference expansive nonlinearities (similar to Ahmadian et al., 2013) (see Materials and methods). We changed the power of nonlinearity from n = 1 (corresponding to our previous networks, for example in Figure 2) to higher powers.
 
 We observed similar feature-specific paradoxical effects in nonlinear networks with different powers of nonlinearity (Figure 2—figure supplement 6A). The expansive nonlinearity in fact seems to amplify the specific paradoxical effect, as inhibitory neurons with more negative perturbations show more positive response changes in networks with higher exponents. This effect was concomitant with a higher activation of excitation in networks with higher exponents, which necessitates a more potent specific inhibition in turn (Figure 2—figure supplement 6B). Expansive nonlinearity of neuronal transfer function therefore seems to amplify the specific mode in such networks, and as a result the feature-specific paradoxical effects, as long as the dynamics remain stable. In fact, networks with too large nonlinearity (n = 5) showed signatures of such instability in terms of pathological oscillations of excitation and inhibition (not shown). We also tested our results with smaller size of perturbations (up to 10 fold smaller) and found that feature-specific paradoxical effects could still be observed in all nonlinear networks (not shown). Thus, the main signature of feature-specific paradoxical effect can also be observed in networks with nonlinear transfer functions.
 
-## Partial perturbation of inhibition
+### Partial perturbation of inhibition
 
 Previous experimental (Li et al., 2019; Sanzeni, 2019) and theoretical (Sadeh et al., 2017) studies have shown that the fraction of inhibitory neurons perturbed is important to reveal the (non-specific) paradoxical effects in ISNs. We therefore asked whether similar dependence on the proportion of perturbed inhibitory neurons also plays a role in revealing specific paradoxical effects in feature-specific ISNs. Patterned perturbations based on a small fraction of inhibitory neurons in fact failed to reveal any specific paradoxical effect (Figure 2—figure supplement 7A). When the patterned perturbation was delivered to half of the inhibitory population the positive regression slope disappeared, but still no sign of feature-specific paradoxical effect (as assayed by a significant negative slope) was present (Figure 2—figure supplement 7B). We found that patterned perturbations based on a large fraction of inhibitory population was indeed needed to reveal the feature-specific paradoxical effect, as shown by the negative slope in the example perturbation (70%) (Figure 2—figure supplement 7C), and characterized for a larger parameter space (Figure 2—figure supplement 7D). We therefore conclude that similar dependence of the paradoxical effect on the fraction of perturbed inhibitory population would be expected also in the case of feature-specific paradoxical effect. However, patterned perturbations can be tuned to be delivered more specifically or more broadly (with non-specific perturbations reflecting one end of the spectrum). It might, therefore, be possible to optimize the experimental protocols, and need a smaller fraction of perturbed inhibition, if partial patterned perturbations are targeted to the most functionally similar units.
 
-## Perturbations based on receptive field similarity to reveal specific inhibitory stabilization
+### Perturbations based on receptive field similarity to reveal specific inhibitory stabilization
 
 Realistic neurons in visual cortex do not only respond to a single one-dimensional feature like preferred orientation, and the specific connectivity between them is not only a function of their preferred orientation (Cossell et al., 2015). Instead, correlations between two-dimensional visual receptive field (RF) of neurons have been reported to be a good predictor of the connection probability and the strength of weights (Cossell et al., 2015). We therefore asked whether specific ISN behaviour can be observed in specific EI networks with more realistic RFs and connectivity profiles, resembling cortical networks. To answer this question, we simulated a more realistic version of our model networks, where neurons had Gabor-like RFs (Figure 3A), and the specific connectivity between them was modulated by their respective RF correlations (Figure 3B; Materials and methods), as suggested by experimental recordings (Cossell et al., 2015).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig3-v2.jpg)
+
+**Figure 3.:** (A) Sample neuronal RFs for excitatory (magenta) and inhibitory (blue) neurons and schematics of connectivity between neuronal pairs. (B) Upper: Distribution of RF similarity of all neuronal pairs in the network, as quantified by pairwise correlations of RFs. Lower: Weights of connections between neurons as a function of their RF similarity. (C1) Activity of excitatory and inhibitory neurons in response to patterned perturbation along the 1D dimension of orientation (similar to Figure 2A). (C2) The average activity of neurons during baseline and perturbed states, along with the profile of inhibitory perturbation, as a function of the preferred orientation of neurons (similar to Figure 2B). (D1,D2) Similar to (C1,C2) for patterned perturbation along RF similarity (see Materials and methods). The average activity of neurons in (D2) is plotted against the RF similarity of respective neurons to a reference inhibitory cell. (E) Response change of individual inhibitory neurons as a result of perturbation versus their respective input perturbations, along with the best fitted regression line (red), similar to (C). Patterned perturbation along the 1d feature of orientation does not reveal a negative slope, although it yields a nonspecific paradoxical effect (average increase of inhibition as a result of negative perturbations). (F) Patterned perturbation along RF similarity (with regard to a reference cell) shows the specific paradoxical effect (negative slope). (G) Same pattern of perturbation as in (F) but randomized over inhibitory neurons, does not lead to a specific paradoxical effect (lack of negative slope).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Connectivity matrix of the excitatory subpopulation (E-to-E) in a network with feature-specific connectivity based on a one-dimensional feature (preferred orientation, PO), as in Figure 2. (B) Connectivity matrix of excitatory neurons based on RF similarity (similar to networks in Figure 3). Neurons are sorted according to their preferred orientations (PO) in both (A) and (B). (C) Spectrum of weight matrix in (B), when specific connectivity is only preserved within excitatory (EE) subnetwork. Connectivity between other connection subtypes (E-to-I, I-to-E, and I-to-I) is replaced with the mean value of the respective subpopulation. The eigenvalue marked in red thus reveals the most unstable eigenmode resulting from specific E-to-E connectivity. (D) Structure of the first specific eigenmode of E-to-E (i.e., the eigenvector corresponding to the eigenvalue marked in red in (C)) versus different features of excitatory neurons: their preferred orientation (Pref. orient.) in left and RF similarity of neurons to a reference neuron in the network on right. Correlation coefficient (CC) between the specific eigenvector and neuronal features are indicated in red in each case. Red lines show the best fitted regression line to the data. (E) Distribution of the absolute value of the correlation coefficient (|CC|) between the specific eigenvector and the vector of RF similarity of neurons to different excitatory neurons in the network. (F,G) Similar to (D,E) for another specific eigenvector (the third unstable eigenvalue marked in blue in (C)).
+
 To assess whether specific paradoxical effects are present in the network, we perturbed the input to inhibitory neurons following two protocols: (1) along the 1D dimension of preferred orientation of neurons (similar to Figure 1) (Figure 3C), and (2) along the dimension of RF similarity (with regards to a reference neuron, see Materials and methods) (Figure 3D). The uniform paradoxical effect was present in both perturbations (Figure 3C1,D1). However, the specific paradoxical effect was absent for 1D perturbations (Figure 3C2) and was only evident in the perturbations along the RF similarity (Figure 3D2). This difference could be quantified by the slope of the regression lines fitted to response change versus input perturbation (Figure 3E,F). As a control, randomizing (over inhibitory neurons) the same perturbation protocol as in Figure 3D did not lead to the specific paradoxical effect and hence did not reveal specific ISNs (Figure 3G). These results suggest that, for realistic neuronal networks, perturbation of the inhibitory population based on their RF similarity might be necessary to reveal specific ISNs, and the reduction of RF properties to 1D features like orientation may not be conclusive in uncovering the specific paradoxical effect.
 
-## Spectral analysis of feature-specific perturbations
+### Spectral analysis of feature-specific perturbations
 
 Although the perturbation of the network along the 1D dimension of preferred orientation was a specific perturbation, it did not lead to a specific paradoxical effect, and hence failed to reveal the specific ISN nature of the network. To understand why and how this happened, we resorted to theoretical analysis of the network connectivity (Figure 3—figure supplement 1). The network connectivity based on RF similarity does not show a strong specific modulation along the dimension of preferred orientation, compared to networks with 1D feature-specific connectivity (Figure 3—figure supplement 1A,B). This is due to the fact that neurons with 2d RFs are tuned to multiple features, therefore, even if a pair of neurons are highly similar in their preferred orientation, they might still be different in other respects (e.g. preferred phase or spatial frequency). As a result, feature-specific connectivity based on full RF similarity would be diluted when projected over individual 1D dimensions. Hence, delivering optogenetics perturbations along 1D features might not be strong enough to activate the actual specific mode(s) of the network that would result from its specific connectivity.
 
@@ -93,9 +141,21 @@ To uncover the specific eigenmode of the network along which the perturbations w
 
 By focusing on the largest eigenvalue in the spectrum of the weight matrix (Figure 3—figure supplement 1C) we can now reveal the structure of the specific eigenmode. We found that the corresponding eigenvector had high correlations along the dimension of RF similarity. This is shown for one example cell as reference in Figure 3—figure supplement 1D, and for all excitatory cells as different reference RFs in Figure 3—figure supplement 1E. In contrast, such a high correlation was not observed when sorting neurons according to their preferred orientation (Figure 3—figure supplement 1D). Similar results were obtained when a smaller, but still unstable specific eigenvector was analysed (Figure 3—figure supplement 1F,G). These results show that the specific eigenmodes of the weight matrices based on RF similarity of neurons with multiple features may not have strong projections over their individual features. Patterned perturbation protocols based on a single feature like orientation might, therefore, not recruit the specific eigenmode of the network effectively and hence fail to reveal specific paradoxical effects even in the presence of feature-specific ISNs.
 
-## Perturbation patterns based on response similarity to reveal specific ISN
+### Perturbation patterns based on response similarity to reveal specific ISN
 
 Mapping the RF of inhibitory neurons might be difficult in practice to guide the optogenetics perturbation, especially given that a large population of inhibitory neurons should be imaged and perturbed to reveal specific ISNs. However, experimental studies have shown that both RF similarity and response similarity (namely, how similarly they respond to similar stimuli) are good predictors of the specificity of connections (Cossell et al., 2015). We, therefore, explored the possibility that response similarity of neurons, rather than their RF similarity, could be used as a proxy for specific connectivity to guide the patterned perturbation (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: RF similarity (quantified as pairwise RF correlation) of responsive inhibitory neurons in the network. Right: Response similarity of same inhibitory neurons, calculated as correlation of activity in response to a sequence of stimuli, composed of RFs with similar statistics as the neuronal RFs (see Materials and methods). Responsive units are identified as neurons with average activity more than the 20th percentile of the population and sorted according to their preferred orientation (PO sorted). (B) Marginal distribution of response similarity of all neuronal pairs in (A). (C) Response correlation of the neuronal pairs versus their RF correlation. (D) Response change of inhibitory neurons versus their input perturbation, when patterned perturbation is applied according to response similarity with regard to an example reference inhibitory cell. Red line shows the best fitted regression line and the slope is denoted in red. (E) The slope of the fitted regression line to the data points (as in (D)) for different inhibitory neurons used as the reference. Only significant regression lines (p-value<0.05) have been included. Negative slopes denote specific paradoxical effects. (F) Fraction of inhibitory neurons that would reveal a specific paradoxical effect (significant negative slope; red) or not (significant positive slope; black), if used as reference for delivering patterned perturbations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Example stimuli used to probe the response similarity of inhibitory neurons. Full-field gratings with different orientation, but with a fixed spatial frequency (0.04 cpd), are interleaved with gray images, to measure the activity of neuronal networks. (B) Response correlation of neuronal pairs obtained from the responses to stimuli in (A) versus their RF correlations. (C) Left: Distribution of inhibitory neurons that would elicit significant negative regression slopes (specific paradoxical effect) or significant positive slopes, if the patterned perturbation is delivered according to response similarity with regard to them (similar to Figure 4E, but when stimuli as in (A) are used to probe neuronal responses). Right: Fraction of reference inhibitory neurons with specific paradoxical effects or normal. (D-F) Similar to (A-C) when stimuli with different orientations and a wide range of spatial frequencies (examples shown in (D)) are used to probe the neuronal responses and response similarities guiding patterned perturbations. Same as in Figure 4, all results are shown for responsive inhibitory neurons, identified as neurons with average activity of more than the 20th percentile of the population.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Example natural images used to probe the response similarity of inhibitory neurons. (B) Distribution of response similarity of responsive inhibitory neurons, when the network is stimulated with natural images (see Materials and methods). (C) Response similarity versus RF similarity. (D) Distribution of patterned perturbations based on reference inhibitory neurons leading to a significant negative slope (specific paradoxical effect; red) or not (significant positive slope; black). (E) Fraction of patterned perturbations (based on response similarity to reference inhibitory cells) leading to paradoxical effect or not. Other conventions are the same as Figure 4.
 
 We stimulated the activity of the network in response to visual stimuli with the same statistics as the ensemble of neuronal RFs (see Materials and methods). The similarity of neuronal responses was then quantified by the correlation of activity traces in response to the entire stimulus set. Overall, neuronal pairs with more RF similarity showed more response similarity, although the match was not perfect (Figure 4A–C). However, when we perturbed the inhibitory network in a patterned manner based on response similarity, we observed the specific paradoxical effect (an example is shown in Figure 4D). Here, inhibitory neurons with more response similarity (rather than RF similarity as in Figure 3D) to a reference cell received more negative perturbations (i.e., decreased external input), and inhibitory neurons with more negative perturbations in fact showed increased activity in a paradoxical manner.
 
@@ -105,15 +165,31 @@ Interestingly, we found that when full-field oriented gratings were used as visu
 
 The reason why such stimuli are not as effective could be due to strong co-activation of cells with similar preferred orientations. Response correlations resulting from such full-field gratings are overemphasizing the oriented feature of RFs rather than other features, while the specific connectivity (and hence the specific dynamics of the network) is in fact governed by multiple features of RFs. The pattern of perturbation based on such response similarity thus resembles specific perturbations based on 1D features described before (c.f. Figure 3), and hence similar arguments in terms of weaker projection of the specific eigenmode over individual features (Figure 3—figure supplement 1) might be responsible here too for the failure of such patterned perturbations to invoke the specific paradoxical effect. These results suggest that the choice of stimuli to probe response similarity would be important in designing optogenetic experiments to reveal specific ISNs, with stimuli matching the statistics of RFs having higher statistical power. To test this hypothesis more directly, we used natural images (Figure 4—figure supplement 2A) as stimuli to probe the response correlation of neurons in the network (Figure 4—figure supplement 2B,C). We found that patterned perturbations based on such response similarity led to specific paradoxical effects for a majority of reference inhibitory cells (Figure 4—figure supplement 2D,E). We therefore conclude that naturalistic stimuli, which contain multiple visual features like neuronal RFs, would provide the best protocol to assay response correlations needed for patterned perturbations.
 
-## Specific inhibitory stabilization in spiking networks
+### Specific inhibitory stabilization in spiking networks
 
 So far, we have established that large-scale networks of rate-based model neurons with highly specific EI connectivity behave as feature-specific ISNs, and that this property can be revealed by specific paradoxical effects in response to proper patterns of perturbation. Rate-based models are useful theoretical tools to approximate the average activity of more realistic neuronal networks, and they are especially suited to describe the collective dynamics of such networks (Destexhe and Sejnowski, 2009). However, biological neurons communicate with spikes, and spiking networks are known to show richer and more complex activity dynamics (Brunel, 2000). Direction demonstration of the presence of specific ISNs, and the associated specific paradoxical effect in them, thus remains to be provided in spiking networks.
 
 To this end, we extended our previous models to simulate large-scale networks of spiking neurons with specific EI connectivity (Figure 5; see Materials and methods). We simulated a spiking version of our model (Figure 5A), where patterned perturbation was delivered by reducing the baseline input to inhibitory neurons according to their similarity profile. The model showed both uniform and specific paradoxical effects in the average firing rates of neurons (Figure 5B). The specific paradoxical effect could be quantified by the negative slope of rate changes versus input perturbations (Figure 5C). We also tested whether our results hold in spiking networks with fewer inhibitory neurons and found that this is indeed the case (Figure 5—figure supplement 1). These results corroborate that specific paradoxical effects can also be revealed in more realistic spiking networks with specific EI connectivity, if patterned perturbation is delivered to probe that.
 
-## Spontaneous transitions between selective patterns of neural activity
+![Figure 5.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sample raster plot of spiking activity of excitatory (red) and inhibitory (blue) neurons in the baseline states (gray) and during patterned perturbation (orange). The network has all-to-all connectivity and connection weights are modulated as a function of the preferred orientation of neurons (see Materials and methods). (B) Average activity of excitatory and inhibitory neurons during the baseline and perturbed states, across 10 repetitions of the simulation in (A). Input perturbation of inhibitory neurons is shown on the right for comparison. (C) Average response change of inhibitory neurons versus their input perturbation. The red line shows the best fitted regression line to the data points.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A-C) Same as Figure 5A-C, respectively, for a network with 20% inhibitory and 80% excitatory neurons ($N_{I}=500,N_{E}=2000$). E-to-E connection probability is 25%, while other connections (E-to-I, I-to-E, I-to-I) are all-to-all as before. Other parameters and conventions are the same as Figure 5.
+
+### Spontaneous transitions between selective patterns of neural activity
 
 Recent work in mouse visual cortex has suggested that spontaneous activity is not random. Instead, distinct subpopulations of neurons are active together in the absence of direct visual stimulation (Miller et al., 2014). These spontaneously emerging neuronal activity patterns are, however, similar to those arising during evoked states (Miller et al., 2014). Similar observations had been reported before in other species with structured visual maps (Kenet et al., 2003). It is, therefore, not clear which structural or connectivity motifs leads to such intrinsically generated patterns of activity. We next asked if such specific dynamics of spontaneous activity can emerge in networks with highly specific EI connectivity, and whether specific ISNs show similarity between their spontaneous and evoked activity. To study this, we simulated our spiking network models with different levels of connection specificity and probed the network responses to spontaneous and evoked activity (Figure 6). Spontaneous activity was emulated by providing unspecific input to all neurons independent of their respective selectivity (i.e., their initial preferred orientations here). Evoked activity, in contrast, was measured in response to tuned inputs with different degrees of specificity (quantified by the fraction of the tuned component of the input to its unspecific part; see Materials and methods).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig6-v2.jpg)
+
+**Figure 6.:** (A) Sample raster plots of spontaneous spiking activity of excitatory and inhibitory neurons for network with nonspecific EI connectivity. Neurons are sorted according to their preferred orientation (from 0 to 180 degrees). Population preferred orientation (pop. PO, black) and population orientation selectivity index (pop. OSI, red) are shown at the bottom, for the activity of the excitatory population rendered in bins of 10 ms (Materials and methods). Only bins in which at least five excitatory neurons are active are included in the analysis. (B) Same as (A) for the spontaneous activity of networks with specific EI connectivity (Specific connectivity: 100%, corresponding to m = 1; see Materials and methods). Neurons show clustered activity around different preferred orientations, in the absence of a tuned external input with a specific orientation. The transition between highly selective states with different neuronal patterns (clustering of activity around different POs) is highlighted for two example regions (shaded). Note population activity patterns with different pop. POs and high pop. OSI in the vicinity of each other. (C,D) Same as (A,B), respectively, for evoked activity. During evoked activity, stimulus with a specific orientation (90°) is shown, conveying tuned input (Specific input: 100%) to neurons according to their preferred orientations. See Materials and methods for details.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52757/elife-52757-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Pattern correlations of excitatory neurons as a function of the time interval between each pair of patterns. For each pair of highly selective excitatory population patterns (defined as pop. OSI > 0.5), the correlation coefficient between the population activity and the time interval between their occurrence is calculated (black dots). Average pattern correlations are calculated for different pairs of population activity patterns at a given time interval (red). Right: A zoomed in version to show shorter time scales of pattern correlations. Parameters of connectivity are the same as Figure 6B (mEE = mEI = mIE=mII = 1). J = 1 and simulation time is 5s. Other parameters are the same as Figure 6. (B) Same as (A), but for a network connectivity with sharper EE connectivity than the rest: mEE = 1, mEI = mIE = mII=0.5.
 
 Networks without specific EI connectivity showed uniform activity patterns in the spontaneous state (Figure 6A) and highly selective responses even to weakly tuned inputs in the evoked state (Figure 6B). In contrast, networks with specific EI connectivity showed fast transitions between highly selective states (as quantified by the selectivity of population responses; see Materials and methods) (Figure 6C), while preserving their selectivity in response to weakly tuned inputs in the evoked state (Figure 6D). The fast time scale of spontaneous transitions can be characterized by calculating the correlations between selective patterns of the excitatory population as a function of the time interval between their occurrences (Figure 6—figure supplement 1). Networks with balanced specific EI connections, where the specificity of EE connections was matched by the specificity of other connections, showed a very fast fall off of pattern correlations (Figure 6—figure supplement 1A). In contrast, networks with broader inhibition exhibited very long time scales of pattern correlations (Figure 6—figure supplement 1B). These results demonstrate that, although networks with highly specific excitatory connectivity can show selective spontaneous activity, fast transitions between these selective states only appear in networks that are balanced in EI connection specificity.
 
@@ -161,92 +237,411 @@ In summary, our study of networks with strong and specific excitatory-inhibitory
 
 ## Materials and methods
 
-## Network modelling
+### Network modelling
 
-## Rate-based simulations
+#### Rate-based simulations
 
-We simulated networks of rate-based neurons with dynamics described as:(1)τdrEdt = −rE+[WEE rE + WEI rI + sE]+τdrIdt = −rI+[WIE rE + WII rI + sI]+
+We simulated networks of rate-based neurons with dynamics described as:
 
-Here, rE and rI are the vectors of firing rates of NE excitatory (E) and NI inhibitory (I) neurons, respectively. W is the matrix of connection weights, including connections between E-to-E (WEE), E-to-I (WIE), I-to-E (WEI), and I-to-I (WII) neurons. s is the external input, with sE and sI denoting inputs to E and I neurons, respectively. τ is the effective time constant of the network, with a default value of τ= 10 in our simulations. []+ denotes half-wave rectification. We used forward Euler method to solve for the firing rates of neurons.
+$$
+\tau\frac{dr_{E}}{dt} = −r_{E}+[W_{EE} r_{E} + W_{EI} r_{I} + s_{E}]_{+}\tau\frac{dr_{I}}{dt} = −r_{I}+[W_{IE} r_{E} + W_{II} r_{I} + s_{I}]_{+}
+$$
 
-To simulate networks with expansive nonlinearity, we solved a more generalized dynamics, described by τdr/dt = −r+([Wr + s]+)n, where n determines the power of nonlinearity.
+Here, $r_{E}$ and $r_{I}$ are the vectors of firing rates of $N_{E}$ excitatory (E) and $N_{I}$ inhibitory (I) neurons, respectively. $W$ is the matrix of connection weights, including connections between E-to-E ($W_{EE}$), E-to-I ($W_{IE}$), I-to-E ($W_{EI}$), and I-to-I ($W_{II}$) neurons. $s$ is the external input, with $s_{E}$ and $s_{I}$ denoting inputs to E and I neurons, respectively. $\tau$ is the effective time constant of the network, with a default value of $\tau=10$ in our simulations. $[]_{+}$ denotes half-wave rectification. We used forward Euler method to solve for the firing rates of neurons.
 
-## Spiking network simulations
+To simulate networks with expansive nonlinearity, we solved a more generalized dynamics, described by $\taudr/dt = −r+([Wr + s]_{+})^{n}$, where n determines the power of nonlinearity.
 
-Spiking networks were modelled by simulating the equations describing the membrane potential dynamics of leaky integrate-and-fire neurons:(2)τm dVmdt = −Vm(t)+s(t)
+#### Spiking network simulations
 
-Here, Vm denotes the membrane potential of a neuron, and τm=RC is the time constant of integration of the membrane potential, where R and C are the membrane resistance and capacitance, respectively. Spiking mechanism is implemented as follows: when the membrane potential reaches a voltage threshold, Vth=20 mV, a spike is elicited and the membrane potential is reset to the reset voltage, Vreset=0. We used exact integration method (Rotter and Diesmann, 1999) to solve for the membrane potential and spiking activity of neurons.
+Spiking networks were modelled by simulating the equations describing the membrane potential dynamics of leaky integrate-and-fire neurons:
 
-The momentary input to the neuron is described by s(t) = R I(t), which arises from incoming spikes to the neuron and comprises two components: external input from feedforward and background sources (reflecting stimulus-induced input and input from non-local sources, respectively), and internally generated input from recurrent activity. Once a spike is emitted in a presynaptic source, an instantaneous change in the membrane potential of all postsynaptic sources is emulated in the next simulation time step, by the value of J mV. Note that J is already expressed in units of volts and not current, and hence describes the effect of RI simultaneously. The total input at time t for a postsynaptic neuron i can therefore be written as s(t) = Σj Jijδj(t), where δj(t) denotes the presence (1) or absence (0) of spike in all presynaptic sources (including external input or input from presynaptic neurons in the recurrent network), and Jij describes the weight of connection (in mV) from the j-th presynaptic source.
+$$
+\tau_{m }\frac{dV_{m}}{dt} = −V_{m}(t)+s(t)
+$$
 
-## Neuronal receptive fields
+Here, $V_{m}$ denotes the membrane potential of a neuron, and $\tau_{m}=RC$ is the time constant of integration of the membrane potential, where $R$ and $C$ are the membrane resistance and capacitance, respectively. Spiking mechanism is implemented as follows: when the membrane potential reaches a voltage threshold, $V_{th}=20mV$, a spike is elicited and the membrane potential is reset to the reset voltage, $V_{reset}=0$. We used exact integration method (Rotter and Diesmann, 1999) to solve for the membrane potential and spiking activity of neurons.
+
+The momentary input to the neuron is described by $s(t)=RI(t)$, which arises from incoming spikes to the neuron and comprises two components: external input from feedforward and background sources (reflecting stimulus-induced input and input from non-local sources, respectively), and internally generated input from recurrent activity. Once a spike is emitted in a presynaptic source, an instantaneous change in the membrane potential of all postsynaptic sources is emulated in the next simulation time step, by the value of $J$ mV. Note that $J$ is already expressed in units of volts and not current, and hence describes the effect of $RI$ simultaneously. The total input at time $t$ for a postsynaptic neuron $i$ can therefore be written as $s(t)=Σ_{j}J_{ij}\delta_{j}(t)$, where $\delta_{j}(t)$ denotes the presence (1) or absence (0) of spike in all presynaptic sources (including external input or input from presynaptic neurons in the recurrent network), and $J_{ij}$ describes the weight of connection (in mV) from the $j$-th presynaptic source.
+
+#### Neuronal receptive fields
 
 The identity and stimulus preference of neurons is assigned in two ways:
 
-(3)gλ,θ,ϕ,σ,γ (x,y)= exp⁡(− x′2+γy′22σ2)cos⁡(2πx′λ+ϕ),where(4)x′ = xcos⁡(θ) + ysin⁡(θ)y′ = −xsin⁡(θ) + ycos⁡(θ).
+$$
+g_{\lambda,\theta,ϕ,\sigma,\gamma }(x,y)= exp⁡(− \frac{x^{′}^{2}+\gammay^{′}^{2}}{2\sigma^{2}})cos⁡(2\pi\frac{x^{′}}{\lambda}+ϕ),
+$$
 
-Here, x and y specify the position on the 2D visual field, and θ is the preferred orientation of the RF. The standard deviation σ determines the size and γ controls the aspect ratio of the receptive field, the parameter λ determines the wavelength (with 1/λ determining the spatial frequency, ω), and ϕ is the spatial phase of the field.
+where
 
-Default parameters are chosen as follows: θ and ϕ are drawn randomly from a uniform distribution between [0,π), σ=2.5, γ=0.5, spatial frequency (ω=1/λ) is drawn from a gamma distribution with shape parameter 2 and scale parameter 0.04. RFs are instantiated in a L×L field, where L=50 specifies the extent of the visual field in each direction in degrees. The resolution of the instantiated fields was 4 pixels per degree (ppd). Each RF was centreed at a specific position, (x0,y0), which was close to the centre of the field, (0, 0), but with some random variation, (δx,δy), which were in turn drawn randomly from [−1.25, 1.25] degrees.
+$$
+x^{′} = xcos⁡(\theta) + ysin⁡(\theta)y^{′} = −xsin⁡(\theta) + ycos⁡(\theta).
+$$
 
-## Network connectivity
+Here, $x$ and $y$ specify the position on the 2D visual field, and $\theta$ is the preferred orientation of the RF. The standard deviation $\sigma$ determines the size and $\gamma$ controls the aspect ratio of the receptive field, the parameter $\lambda$ determines the wavelength (with $1/\lambda$ determining the spatial frequency, $\omega$), and $ϕ$ is the spatial phase of the field.
 
-Network connectivity is implemented similarly in rate-based and spiking networks, with the entry of the weight matrix W corresponding to presynaptic neuron j and postsynaptic neuron i (wij) denoting the strength of connections in both. This quantity is in arbitrary units for rate-based networks, and it is expressed in mV for spiking networks. In both networks, all neurons are connected to each other (all-to-all connectivity) and the specific connectivity is obtained by modulating the connection weights based on the similarity of pre- and postsynaptic neurons. The similarity of neuronal pairs is defined based on their RF type:
+Default parameters are chosen as follows: $\theta$ and $ϕ$ are drawn randomly from a uniform distribution between $[0,\pi)$, $\sigma=2.5$, $\gamma=0.5$, spatial frequency ($\omega=1/\lambda$) is drawn from a gamma distribution with shape parameter 2 and scale parameter 0.04. RFs are instantiated in a $L\timesL$ field, where $L=50$ specifies the extent of the visual field in each direction in degrees. The resolution of the instantiated fields was 4 pixels per degree (ppd). Each RF was centreed at a specific position, $(x_{0},y_{0})$, which was close to the centre of the field, (0, 0), but with some random variation, $(\deltax,\deltay)$, which were in turn drawn randomly from [−1.25, 1.25] degrees.
 
-For neurons with RFs based on 1D features (e.g. orientation selective neurons in Figure 2), the weight matrix is constructed as 1D feature-specific (e.g. orientation-specific) connectivity. Connection weights between neurons i and j are modulated according to the difference of their preferred orientation as the following:(5)wij = J (1 + m cos⁡[2(θi∗−θj∗)])where θ* is the preferred orientation in radians, and m specifies the degree of specific connectivity (ranging from 0%, for nonspecific, to 100%, for maximum specific connectivity). To add randomness, each weight is multiplied by ζ, which is a random number between 0 and 2. Note that this procedure does not change the mean weights, while randomly amplifying or attenuating the deterministic weights between 0 to 100%.
+#### Network connectivity
 
-For neurons with 2D visual RFs (e.g. as in Figure 3), the specific connectivity was constructed based on RF similarity of neuronal pairs. Connection weights between neuronal pairs are modulated as a function of their respective RF correlations according to:(6)wij = J (0.1 +m exp⁡(η ψij))where ψij is the pairwise correlation coefficient of visual RFs of neurons i and j, m denotes the degree of specific connectivity as before, and η determines the sharpness of the exponential dependence of weights on RF correlations (see e.g. Figure 3B with η=2).
+Network connectivity is implemented similarly in rate-based and spiking networks, with the entry of the weight matrix $W$ corresponding to presynaptic neuron $j$ and postsynaptic neuron $i$ ($w_{ij}$) denoting the strength of connections in both. This quantity is in arbitrary units for rate-based networks, and it is expressed in mV for spiking networks. In both networks, all neurons are connected to each other (all-to-all connectivity) and the specific connectivity is obtained by modulating the connection weights based on the similarity of pre- and postsynaptic neurons. The similarity of neuronal pairs is defined based on their RF type:
 
-## Network stimulation and perturbation
+For neurons with RFs based on 1D features (e.g. orientation selective neurons in Figure 2), the weight matrix is constructed as 1D feature-specific (e.g. orientation-specific) connectivity. Connection weights between neurons $i$ and $j$ are modulated according to the difference of their preferred orientation as the following:
+
+$$
+w_{ij} = J (1 + m cos⁡[2(\theta_{i}^{∗}−\theta_{j}^{∗})])
+$$
+
+where $\theta^{*}$ is the preferred orientation in radians, and $m$ specifies the degree of specific connectivity (ranging from 0%, for nonspecific, to 100%, for maximum specific connectivity). To add randomness, each weight is multiplied by $ζ$, which is a random number between 0 and 2. Note that this procedure does not change the mean weights, while randomly amplifying or attenuating the deterministic weights between 0 to 100%.
+
+For neurons with 2D visual RFs (e.g. as in Figure 3), the specific connectivity was constructed based on RF similarity of neuronal pairs. Connection weights between neuronal pairs are modulated as a function of their respective RF correlations according to:
+
+$$
+w_{ij} = J (0.1 +m exp⁡(η ψ_{ij}))
+$$
+
+where $ψ_{ij}$ is the pairwise correlation coefficient of visual RFs of neurons $i$ and $j$, $m$ denotes the degree of specific connectivity as before, and $η$ determines the sharpness of the exponential dependence of weights on RF correlations (see e.g. Figure 3B with $η=2$).
+
+#### Network stimulation and perturbation
 
 During baseline state, all neurons in the networks received similar levels of input from external sources. This was emulated as a constant input with some random variation for rate-based models or a sequence of spikes generated from a Poisson process with a fixed rate for spiking simulations. Upon perturbation, the input to inhibitory neurons was reduced, either by decreasing the input (in rate-based simulations) or decreasing the rate of incoming spikes (in spike-based models) to inhibitory neurons. Perturbations were either performed randomly, by ignoring the identity of inhibitory neurons and decreasing the input to them with a random value generated from a uniform distribution, or according to a pattern respecting neuronal identity (e.g. as in Figure 2B, lower). To control for the distribution of perturbations, we also randomized the same pattern over neurons, and used it as a randomized control for perturbations (c.f. Figure 2B, upper).
 
-Patterned perturbations according to 1D feature selectivity (e.g. in Figure 2) was delivered by changing the baseline input to inhibitory neurons with respect to their orientation selectivity:(7)δsI = −γ [sin⁡(2θI∗)−1]
+Patterned perturbations according to 1D feature selectivity (e.g. in Figure 2) was delivered by changing the baseline input to inhibitory neurons with respect to their orientation selectivity:
 
-Here, δsI is the vector of perturbation of inhibitory neurons, θI* is the vector of preferred orientation of inhibitory neurons, and γ denotes the size of perturbation. For networks containing neurons with 2D RFs (e.g. in Figure 3), patterned perturbation was delivered with regard to RF similarity of inhibitory neurons to a reference inhibitory neuron, k, as follows:(8)δsI = −γ [exp⁡(ψIk)]where ψkI represents the vector of RF correlation of inhibitory neurons to the reference cell, and γ denotes the size of perturbation as before. We also delivered patterned perturbations based on response similarity for these networks (Figure 4), where ψkI was replaced by the response correlation of neurons in response to a sequence of stimuli, as described below.
+$$
+\deltas_{I} = −\gamma [sin⁡(2\theta_{I}^{∗})−1]
+$$
 
-To probe response similarity or neurons in the network, we simulated the networks (as in Figure 4, and Figure 4—figure supplement 1) with four different stimulus sets. First, stimuli were generated following the same procedure used to generate 2D Gabor fields for neuronal RFs, with the same parameters as described above. Therefore, RFs and stimuli had the same statistics although they were obviously different. Two other sets of stimuli consisted of full-field gratings (examples shown in Figure 4—figure supplement 1) with different orientations and spatial phases, both randomly drawn from the range [0,π]. One set has a fixed spatial frequency of ω=0.04, while the other had a wide range of spatial frequencies matching the distribution of spatial frequencies of RFs. The fourth set of stimuli consisted of natural images, which were taken from the McGill calibrated image database (http://tabby.vision.mcgill.ca). The central part of each image was chosen, with the same size (in pixels) as RFs (that is, the central 200x200 pixels).
+Here, $\deltas_{I}$ is the vector of perturbation of inhibitory neurons, $\theta_{I}^{*}$ is the vector of preferred orientation of inhibitory neurons, and $\gamma$ denotes the size of perturbation. For networks containing neurons with 2D RFs (e.g. in Figure 3), patterned perturbation was delivered with regard to RF similarity of inhibitory neurons to a reference inhibitory neuron, $k$, as follows:
 
-For each stimulus type, a sequence of 200 stimuli was presented to the network. Upon presentation of each stimulus (for 200 ms), the external input to each neuron was modulated by the correlation of its RF with the stimulus field, according to s=1+βψijst, where ψijst denotes the correlation of the i-th stimulus field with the j-th RF, and β specifies the depth of modulation. The activity trace of neurons in response to the full sequence of stimuli was then correlated with each other to generate a measure of response similarity. The parameters of Equation 8 were chosen to be γ= 0.25 and κ=2 for all four stimulus types. β=1 for full-field gratings and natural images (Figure 4—figure supplement 1 and Figure 4—figure supplement 2), but we chose a smaller value for RF-like stimuli (β=0.5), as they had higher correlations with RFs on average (Figure 4).
+$$
+\deltas_{I} = −\gamma [exp⁡(ψ_{I}^{k})]
+$$
+
+where $ψ^{k}_{I}$ represents the vector of RF correlation of inhibitory neurons to the reference cell, and $\gamma$ denotes the size of perturbation as before. We also delivered patterned perturbations based on response similarity for these networks (Figure 4), where $ψ^{k}_{I}$ was replaced by the response correlation of neurons in response to a sequence of stimuli, as described below.
+
+To probe response similarity or neurons in the network, we simulated the networks (as in Figure 4, and Figure 4—figure supplement 1) with four different stimulus sets. First, stimuli were generated following the same procedure used to generate 2D Gabor fields for neuronal RFs, with the same parameters as described above. Therefore, RFs and stimuli had the same statistics although they were obviously different. Two other sets of stimuli consisted of full-field gratings (examples shown in Figure 4—figure supplement 1) with different orientations and spatial phases, both randomly drawn from the range $[0,\pi]$. One set has a fixed spatial frequency of $\omega=0.04$, while the other had a wide range of spatial frequencies matching the distribution of spatial frequencies of RFs. The fourth set of stimuli consisted of natural images, which were taken from the McGill calibrated image database (http://tabby.vision.mcgill.ca). The central part of each image was chosen, with the same size (in pixels) as RFs (that is, the central 200x200 pixels).
+
+For each stimulus type, a sequence of 200 stimuli was presented to the network. Upon presentation of each stimulus (for 200 ms), the external input to each neuron was modulated by the correlation of its RF with the stimulus field, according to $s=1+\betaψ_{ij}^{st}$, where $ψ_{ij}^{st}$ denotes the correlation of the i-th stimulus field with the j-th RF, and $\beta$ specifies the depth of modulation. The activity trace of neurons in response to the full sequence of stimuli was then correlated with each other to generate a measure of response similarity. The parameters of Equation 8 were chosen to be $\gamma=0.25$ and $κ=2$ for all four stimulus types. $\beta=1$ for full-field gratings and natural images (Figure 4—figure supplement 1 and Figure 4—figure supplement 2), but we chose a smaller value for RF-like stimuli ($\beta=0.5$), as they had higher correlations with RFs on average (Figure 4).
 
 Other parameters of network simulations are provided in Table 1 and Table 2, for rate-based and spiking networks, respectively.
 
-## Data analysis
+**Table 1.**
+ Parameters of rate-based networks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Symbol</th>
+      <th>Figure 2</th>
+      <th>Figure 2—figure supplement 2</th>
+      <th>Figure 2—figure supplement 1</th>
+      <th>Figure 3, 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Number of neurons</td>
+      <td>E</td>
+      <td>NE</td>
+      <td>400</td>
+      <td>400</td>
+      <td>400</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>NI</td>
+      <td>400</td>
+      <td>400</td>
+      <td>400</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Time constant</td>
+      <td>E and I</td>
+      <td></td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Synaptic weight</td>
+      <td>E→E</td>
+      <td>JEE</td>
+      <td>0.05</td>
+      <td>0.001</td>
+      <td>0.05</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>E→I</td>
+      <td>JIE</td>
+      <td>0.05</td>
+      <td>0.001</td>
+      <td>0.05</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>I→E</td>
+      <td>JEI</td>
+      <td>−0.075</td>
+      <td>−0.0015</td>
+      <td>−0.075</td>
+      <td>−0.075</td>
+    </tr>
+    <tr>
+      <td>I→I</td>
+      <td>JII</td>
+      <td>−0.075</td>
+      <td>−0.0015</td>
+      <td>−0.075</td>
+      <td>−0.075</td>
+    </tr>
+    <tr>
+      <td>Synaptic specificity</td>
+      <td>E→E</td>
+      <td>mEE</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>E→I</td>
+      <td>mIE</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I→E</td>
+      <td>mEI</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I→I</td>
+      <td>mII</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Specificity exponent</td>
+      <td></td>
+      <td>η</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Parameters of spiking networks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Symbol</th>
+      <th>Figure 5</th>
+      <th>Figures 6–8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Number of neurons</td>
+      <td>E</td>
+      <td>NE</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>NI</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>Membrane time constant</td>
+      <td>E and I</td>
+      <td>τm (ms)</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Threshold voltage</td>
+      <td>E and I</td>
+      <td>Vth (mV)</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Reset voltage</td>
+      <td>E and I</td>
+      <td>Vreset (mV)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Synaptic weight</td>
+      <td>E→E</td>
+      <td>JEE (mV)</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>E→I</td>
+      <td>JIE (mV)</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>I→E</td>
+      <td>JEI (mV)</td>
+      <td>-4</td>
+      <td>-4</td>
+    </tr>
+    <tr>
+      <td>I→I</td>
+      <td>JII (mV)</td>
+      <td>-4</td>
+      <td>-4</td>
+    </tr>
+    <tr>
+      <td>Synaptic specificity</td>
+      <td>E→E</td>
+      <td>mEE</td>
+      <td>1</td>
+      <td>[0 … 1]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>E→I</td>
+      <td>mIE</td>
+      <td>1</td>
+      <td>[0 … 1]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I→E</td>
+      <td>mEI</td>
+      <td>1</td>
+      <td>[0 … 1]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I→I</td>
+      <td>mII</td>
+      <td>1</td>
+      <td>[0 … 1]</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data analysis
 
 To quantify the specific paradoxical effect (e.g., as in Figure 2C), we fitted lines to response changes (obtained as the difference of the average activity during perturbation and baseline states, after discarding the initial transient period) versus respective input perturbations. The slope and the significance of the best fitted linear regression was used, with significantly negative slopes denoting specific paradoxical effects.
 
-Preferred orientation (PO) and orientation selectivity index (OSI) of population responses in Figure 6 was calculated by first computing the circular mean of the population activity in each time window as(9)R=∑j=1Nrj exp(2πiθj∗)∑j=1Nrj.
+Preferred orientation (PO) and orientation selectivity index (OSI) of population responses in Figure 6 was calculated by first computing the circular mean of the population activity in each time window as
 
-Here, θj∗ is the preferred orientation (in radians) of neuron j. rj is the average activity of the neuron, which is calculated from the number of spikes emitted within a specific time window (10 ms in Figures 6–8). Only windows with a minimum number of active neurons (5 neurons emitting at least one spike for Figures 6–8) are included in the analysis. Population PO (pop. PO) is calculated as the angle of the resultant, arg⁡(R), and the length of it, |R|, returns the population OSI (pop. OSI) (Ringach et al., 2002).
+$$
+R=\frac{\sumj=1Nr_{j} exp(2\pii\theta_{j}^{∗})}{\sumj=1Nr_{j}}.
+$$
 
-To quantify the transitions of population activity between different states, we developed a spontaneous transition (ST) index. This was calculated from histograms of population POs with high population OSI (OSI>0.5), H(θ). The histogram was obtained in the range from 0 to π, with bin sizes π/24 (as shown in Figure 7A). The OSI of H(θ) was, in turn, used to quantify the spread of specific states seen by the population activity:(10)Hosi=|∑θ H(θ) exp(2πiθ)∑θH(θ)|
+Here, $\theta_{j}^{∗}$ is the preferred orientation (in radians) of neuron j. $r_{j}$ is the average activity of the neuron, which is calculated from the number of spikes emitted within a specific time window (10 ms in Figures 6–8). Only windows with a minimum number of active neurons (5 neurons emitting at least one spike for Figures 6–8) are included in the analysis. Population PO (pop. PO) is calculated as the angle of the resultant, $arg⁡(R)$, and the length of it, $|R|$, returns the population OSI (pop. OSI) (Ringach et al., 2002).
 
-The higher the Hosi, the more selective the distribution of highly selective population POs, meaning that population activity is concentrated around specific orientations. On the other hand, lower values of Hosi imply that the distribution is less selective and hence wider specific states (preferred orientations) are visited by the population activity. We therefore used (1-Hosi) as a measure of switch between a wide range of specific states. We further multiplied that measure with the average population OSI (<pop. OSI>) to quantify how selective the visited states were on average, and defined the ST index as:(11)STI=(1−Hosi)× <pop. OSI>.
+To quantify the transitions of population activity between different states, we developed a spontaneous transition (ST) index. This was calculated from histograms of population POs with high population OSI (OSI>0.5), $H(\theta)$. The histogram was obtained in the range from 0 to $\pi$, with bin sizes $\pi/24$ (as shown in Figure 7A). The OSI of $H(\theta)$ was, in turn, used to quantify the spread of specific states seen by the population activity:
+
+$$
+Hosi=|\frac{\sum\theta H(\theta) exp(2\pii\theta)}{\sum\thetaH(\theta)}|
+$$
+
+The higher the $Hosi$, the more selective the distribution of highly selective population POs, meaning that population activity is concentrated around specific orientations. On the other hand, lower values of $Hosi$ imply that the distribution is less selective and hence wider specific states (preferred orientations) are visited by the population activity. We therefore used $(1-Hosi)$ as a measure of switch between a wide range of specific states. We further multiplied that measure with the average population OSI (<pop. OSI>) to quantify how selective the visited states were on average, and defined the ST index as:
+
+$$
+STI=(1−Hosi)\times <pop. OSI>.
+$$
 
 To evaluate how our results are affected by random transitions of the population activity and different levels of noise, we calculated a bootstrapped STI. For the bootstrap analysis, we shuffled the vector of activity of each neuron in time, and the ST index was recalculated for the shuffled population activity. This procedure was repeated for 100 times to obtain the mean and std of the shuffled estimate (plotted in red in Figure 7B). The bootstrapped measure of spontaneous transitions (bootstrapped STI; Figure 8) was calculated by subtracting the mean of the STI distribution obtained from the shuffled procedure, as the random baseline.
 
-## Theoretical analysis
+### Theoretical analysis
 
 We start by analysing the dynamics of excitatory and inhibitory activity as described in Equation 1.
 
-Solving for the stationary state solution of the responses we have:(12)rE = WEE rE + WEI rI + sErI = WIE rE + WII rI + sI
+Solving for the stationary state solution of the responses we have:
 
-The activity of inhibitory neurons can thus be expressed in terms of the inputs as:(13)rE =(I−WEE)−1(WEI rI+sE)⇒rI = WIE (I−WEE)−1(WEI rI+sE) + WII rI + sI⇒(I − WIE(I−WEE)−1WEI−WII) rI=WIE(I−WEE)−1sE + sIwhere I is the identity matrix. If we perturb the input to inhibitory neurons alone, the output change in the activity of inhibitory neurons can be calculated as:(14)δrI = [I-WEE (I-WEE)-1 WEI - WII]-1 δsI
+$$
+r_{E} = W_{EE} r_{E} + W_{EI} r_{I} + s_{E}r_{I} = W_{IE} r_{E} + W_{II} r_{I} + s_{I}
+$$
 
-Let us consider a simplified condition where excitatory and inhibitory populations have the same size, and the outgoing excitatory connections (to both E and I neurons; E→E and E→I) have a similar profile (which we refer to as W). Moreover, we assume that inhibitory outgoing connections have the same profile, up to an inhibition dominance factor of -g (that is, it can be expressed as -gW). Equation 14 can now be expressed in terms of W and g as:(15)δrI=[I-W(I-W)-1(-gW)+gW]-1 δsI
+The activity of inhibitory neurons can thus be expressed in terms of the inputs as:
 
-Nonspecific/uniform patterns of perturbation to probe the presence of (nonspecific) inhibitory stabilized networks can now be described as a situation where the vector of inhibitory perturbation, δsI, has more or less similar entries for all inhibitory neurons and, hence, perturbs the uniform mode of the network. Specific patterns of perturbation, in contrast, corresponds to the scenario where the pattern of perturbation is aligned with the specific eigenvector, ν*, of the network, corresponding to the eigenvalue, λ, of the weight matrix W:(16)W v* =λ v*
+$$
+r_{E} =(I−W_{EE})^{−1}(W_{EI} r_{I}+s_{E})⇒r_{I} = W_{IE} (I−W_{EE})^{−1}(W_{EI} r_{I}+s_{E}) + W_{II} r_{I} + s_{I}⇒(I − W_{IE}(I−W_{EE})^{−1}W_{EI}−W_{II}) r_{I}=W_{IE}(I−W_{EE})^{−1}s_{E} + s_{I}
+$$
+
+where $I$ is the identity matrix. If we perturb the input to inhibitory neurons alone, the output change in the activity of inhibitory neurons can be calculated as:
+
+$$
+\deltar_{I}=[I-W_{EE}(I-W_{EE})^{-1}W_{EI}-W_{II}]^{-1}\deltas_{I}
+$$
+
+Let us consider a simplified condition where excitatory and inhibitory populations have the same size, and the outgoing excitatory connections (to both E and I neurons; E→E and E→I) have a similar profile (which we refer to as W). Moreover, we assume that inhibitory outgoing connections have the same profile, up to an inhibition dominance factor of -g (that is, it can be expressed as -gW). Equation 14 can now be expressed in terms of W and g as:
+
+$$
+\deltar_{I}=[I-W(I-W)^{-1}(-gW)+gW]^{-1}\deltas_{I}
+$$
+
+Nonspecific/uniform patterns of perturbation to probe the presence of (nonspecific) inhibitory stabilized networks can now be described as a situation where the vector of inhibitory perturbation, $\deltas_{I}$, has more or less similar entries for all inhibitory neurons and, hence, perturbs the uniform mode of the network. Specific patterns of perturbation, in contrast, corresponds to the scenario where the pattern of perturbation is aligned with the specific eigenvector, $ν^{*}$, of the network, corresponding to the eigenvalue, $\lambda$, of the weight matrix W:
+
+$$
+Wv^{*}=\lambdav^{*}
+$$
 
 For a one-dimensional ring network with specific connectivity according to a 1D feature of neuronal pairs (e.g. the difference of their preferred orientations), this specific mode entails a pattern of perturbation with stronger perturbation of neurons with similar preferred orientations. For networks of neurons with 2D receptive fields, where the weights of connections are modulated by RF similarity (assayed by RF correlations in our simulations), the specific mode can be described in a multi-feature space. To effectively perturb it in a 1D space, we can stimulate it by perturbing neurons in proportion to their RF correlation with a reference neuron.
 
-Assuming such a specific mode exists in networks with feature-specific connectivity, Equations 15,16 can be combined to write:(17)δrI=[I+W(I−W)−1gW+gW]−1 v∗⇒δrI=[1+λ(1−λ)−1gλ+gλ]−1 v∗⇒δrI=1−λ1−(1−g)λ v∗.
+Assuming such a specific mode exists in networks with feature-specific connectivity, Equations 15,16 can be combined to write:
 
-λ specifies the strength of the specific mode, arising from feature-specific connectivity, in the network. In feature-specific ISNs, the feature-specific connectivity between excitatory neurons, in the absence of specific inhibition to balance it, is unstable. This translates to λ>1.
+$$
+\deltar_{I}=[I+W(I−W)^{−1}gW+gW]^{−1} v^{∗}⇒\deltar_{I}=[1+\lambda(1−\lambda)^{−1}g\lambda+g\lambda]^{−1} v^{∗}⇒\deltar_{I}=\frac{1−\lambda}{1−(1−g)\lambda} v^{∗}.
+$$
 
-g denotes the level of inhibition-dominance along the specific mode: g=1 indicates the perfect balance; g<1 leads to unstable dynamics along the specific mode; and g>1 ensures a surplus of inhibition to keep the specific excitation in check by a dominant specific inhibition.
+$\lambda$ specifies the strength of the specific mode, arising from feature-specific connectivity, in the network. In feature-specific ISNs, the feature-specific connectivity between excitatory neurons, in the absence of specific inhibition to balance it, is unstable. This translates to $\lambda>1$.
 
-Networks with specific ISN properties can therefore be described, mathematically, by λ>1 and g>1.
+$g$ denotes the level of inhibition-dominance along the specific mode: $g=1$ indicates the perfect balance; $g<1$ leads to unstable dynamics along the specific mode; and $g>1$ ensures a surplus of inhibition to keep the specific excitation in check by a dominant specific inhibition.
 
-We can therefore express λ and g by(18)g=1+α, α>0,λ=1+β, β>0,and rewrite the vector of changes in inhibitory activity in response to specific perturbations as:(19)δrI=−β1+αλv∗.
+Networks with specific ISN properties can therefore be described, mathematically, by $\lambda>1$ and $g>1$.
 
--β1+αλ analytically describes the slope of the line fitted to response changes versus input perturbations in our numerical simulations (e.g. as in Figures 2, 4, 5 and 8). Since −β1+αλ<0, this slope will be negative in specific ISNs. This means that perturbation of inhibitory neurons aligned with specific eigenvectors of the weight matrix changes the activity of inhibitory neurons in the opposite direction:(20)δrI ∝ −v∗.
+We can therefore express $\lambda$ and $g$ by
+
+$$
+g=1+\alpha, \alpha>0,\lambda=1+\beta, \beta>0,
+$$
+
+and rewrite the vector of changes in inhibitory activity in response to specific perturbations as:
+
+$$
+\deltar_{I}=\frac{−\beta}{1+\alpha\lambda}v^{∗}.
+$$
+
+$\frac{-\beta}{1+\alpha\lambda}$ analytically describes the slope of the line fitted to response changes versus input perturbations in our numerical simulations (e.g. as in Figures 2, 4, 5 and 8). Since $\frac{−\beta}{1+\alpha\lambda}<0$, this slope will be negative in specific ISNs. This means that perturbation of inhibitory neurons aligned with specific eigenvectors of the weight matrix changes the activity of inhibitory neurons in the opposite direction:
+
+$$
+\deltar_{I} ∝ −v^{∗}.
+$$

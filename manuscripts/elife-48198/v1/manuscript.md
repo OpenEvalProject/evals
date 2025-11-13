@@ -47,7 +47,7 @@ We trained each of these monkeys to grasp a two-link planar manipulandum and mak
 
 **Figure 2.:** Monkey controls a cursor on screen (yellow) with a two link manipulandum to reach to visually presented targets (red). We track the locations of different colored markers (see Materials and methods) on the monkey’s arm (here shown green) during the task, using a Microsoft Kinect.
 
-## Somatosensory area 2 represents the movement of the whole arm during reaching
+### Somatosensory area 2 represents the movement of the whole arm during reaching
 
 Previous literature has characterized area 2 primarily in terms of the hand's trajectory through space (London and Miller, 2013; Prud'homme and Kalaska, 1994; Weber et al., 2011), likely in part due to the difficulty of tracking the motion of the full arm, and the then recent finding that motor cortex could be well explained simply by the direction of hand movement (Caminiti et al., 1991; Georgopoulos et al., 1982). Given advances in motion tracking capability and subsequent observations of the dependence of M1 on arm posture (Morrow et al., 2007; Scott and Kalaska, 1995), we set out to characterize more fully, how neural activity in area 2 corresponds to reaching movements.
 
@@ -61,13 +61,13 @@ To deal with this problem, we trained the monkeys to reach to randomly-generated
 
 This idea is exemplified in Figure 3D. When tested in the two workspaces, this example neuron changed both its tuning curve and the direction in which it fired maximally (its preferred direction, or PD), as did many neurons we recorded. The corresponding predictions of the hand-only and whole-arm models differed, which allowed us to compare the accuracy of the two models. We recorded three of these two-workspace sessions with each of Monkeys C and H and two sessions with Monkey L.
 
-## Model overview
+#### Model overview
 
 We tested several kinematic models of area 2 activity that could be divided into hand-only and whole-arm models (see Materials and methods for a full description of all the models). We’ve chosen to represent the two sets with two of the models, which we termed, for simplicity, the ‘hand-only’ and ‘whole-arm’ models. The hand-only model stems from classic, endpoint models of limb movement-related neural activity (Bosco et al., 2000; Georgopoulos et al., 1982; Prud'homme and Kalaska, 1994). It assumes neurons relate only to the Cartesian coordinates of hand position and velocity. The whole-arm model builds on the hand-only model by adding the Cartesian kinematics (position and velocity) of the elbow, in order to account more fully for movement of the whole arm. Surprisingly, the performance of this representation of the whole arm was similar to, or even better than more complicated biomechanical models based on the seven degree-of-freedom joint kinematics or musculotendon lengths (see Appendix 1). We aimed to test how well the hand-only and whole-arm models predicted features of neural activity during reaching, in order to determine the importance of whole-arm kinematics for explaining neural activity.
 
 For us to consider the whole-arm model to be an effective one for area 2, it should satisfy three main criteria. First and most direct, it should explain the variance of neural firing rates across the two workspaces better than the hand-only model, as is the case in the example in Figure 3C. Second, the mapping between neural activity and whole-arm kinematics should not change between the individual workspaces, meaning that the accuracy of a model trained over both workspaces should be similar to that trained in a single workspace. Last, the model should be able to capture features of neural activity that it was not explicitly trained on, for example, the changes in directional tuning shown in Figure 3D.
 
-## Whole-arm model explains more variance of area 2 neural activity than hand-only model
+#### Whole-arm model explains more variance of area 2 neural activity than hand-only model
 
 To assess how well our models fit area 2 neural activity, we used repeated k-fold cross-validation (see Materials and methods for more details). Goodness-of-fit metrics like R2 or variance-accounted-for (VAF) are ill-suited to the Poisson-like statistics of neural activity; instead, we used the likelihood-based pseudo-R2 (Cameron and Windmeijer, 1997; Cameron and Windmeijer, 1996; McFadden, 1977). Like VAF, pseudo-R2 has a maximum value of 1, but it can be negative for models that fail even to predict the mean firing rate during cross-validation. In general, the values corresponding to a good fit are lower for pR2 than for either R2 or VAF, with a value of 0.2 usually considered a 'good' fit (McFadden, 1977). We found that for this measure, the whole-arm model out-performed the hand-only model (Figure 4). Of the 288 neurons recorded across the 8 sessions, 238 were significantly better predicted by the whole-arm model than the hand-only model, and for the other 50, there was no significant difference (using p < 0.05; see Materials and methods for more details).
 
@@ -75,7 +75,7 @@ To assess how well our models fit area 2 neural activity, we used repeated k-fol
 
 **Figure 4.:** Scatter plots compare the pseudo-R2 (pR2) of the whole-arm model to that of the hand-only model for each monkey. Each point in the scatter plot represents the pR2 values of one neuron, with whole-arm pR2 on the vertical axis and hand-only pR2 on the horizontal. Different colors represent neurons recorded during different sessions. Filled circles represent neurons for which one model’s pR2 was significantly higher than that of the other model. In this comparison, all filled circles lie above the dashed unity line, indicating that the whole-arm model performed better than the hand-only model for every neuron in which there was a significant difference.
 
-## Whole-arm model captures a consistent relationship between area 2 and arm kinematics
+#### Whole-arm model captures a consistent relationship between area 2 and arm kinematics
 
 A reasonable benchmark of how well the whole-arm model fits the two-workspace data is its ability to match the accuracy of models trained in the individual workspaces. It is possible to imagine a scenario in which a model might achieve a good fit by capturing a global relation across the two workspaces without capturing much information local to either workspace. This situation is akin to fitting a line to data distributed along an exponential curve. In this analogy, we would expect a piecewise linear fit to each half of the data to achieve significantly better goodness-of-fit.
 
@@ -85,7 +85,7 @@ We tested this scenario by training whole-arm models on the individual workspace
 
 **Figure 5.:** Each panel compares a model trained and tested in the same workspace (either near or far) to a model trained on data from both workspaces. Each dot corresponds to a single neuron, where color indicates the recording session. Dashed line is the unity line.
 
-## Whole-arm model captures changes in area 2 directional tuning between workspaces
+#### Whole-arm model captures changes in area 2 directional tuning between workspaces
 
 From previous studies of area 2, we know that at least within a single workspace, neural activity is tuned approximately sinusoidally to the direction of hand movement (London and Miller, 2013; Prud'homme and Kalaska, 1994; Weber et al., 2011). Figure 3D shows the directional tuning curves for an example neuron, along with the tuning curves predicted by both models. Because we trained each model on data from both workspaces, they needed to capture a single relationship between movement and neural activity. As shown in the example in Figure 3D, the hand-only model predicted essentially the same tuning curve for both workspaces, with the exception of a baseline shift due to the position component. In contrast, the whole-arm model predicted altered tuning curves, which matched the actual ones well.
 
@@ -101,7 +101,7 @@ Of the 288 recorded neurons, 260 were significantly tuned to movement direction 
 
 **Figure 7.:** (A) Scatter plots of model-predicted PD shifts plotted against actual PD shifts. Each dot represents the actual and modeled PD shifts of a single neuron, where different colors correspond to neurons recorded during different sessions. Dashed diagonal line shows perfect prediction. Horizontal histograms indicate distributions of actual PD shifts for each monkey. Vertical histograms indicate distributions of modeled shifts. Note that both horizontal and vertical axes are circular, meaning that opposing edges of the plots (top/bottom, left/right) are the same. Horizontal histograms show that the distribution of actual PD shifts included both clockwise and counter-clockwise shifts. Clustering of scatter plot points on the diagonal line for the whole-arm model indicates that it was more predictive of PD shift. (B) Plot showing circular VAF (cVAF) of scatter plots in A, an indicator of how well clustered points are around the diagonal line (see Materials and methods for details). Each point corresponds to the average cVAF for a model in a given session (indicated by color), and the horizontal dashed lines indicate the cVAF for perfect prediction. Error bars show 95% confidence intervals (derived from cross-validation – see Materials and methods). Pairwise comparisons between model cVAFs showed that the whole-arm model out-performed the hand-only model in all but one session, in which the two models were not significantly different.
 
-## Area 2 represents passive movements differently from active reaches
+### Area 2 represents passive movements differently from active reaches
 
 Given our success at modeling neural activity across workspaces with the whole-arm model, we set out to examine its effectiveness in a task that compared area 2 activity during active reaches and passive limb perturbations.
 
@@ -119,13 +119,13 @@ There is thus a clear analogy between this experiment and the two-workspace expe
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/48198/elife-48198-fig9-v1.jpg)
 
-**Figure 9.:** Figure 4).Each dot represents a single neuron, with color indicating the recording session. Filled circles indicate neurons that are significantly far away from the dashed unity line.
+**Figure 9.:** Each dot represents a single neuron, with color indicating the recording session. Filled circles indicate neurons that are significantly far away from the dashed unity line.
 
 As in the two-workspace experiment, we compared models trained within an individual (active or passive) condition, to those trained in both conditions (Figure 10). A number of neurons had consistent relationships with arm kinematics, indicated by the dots with positive pR2 values lying close to the unity line. Surprisingly however, unlike our results from the two-workspace experiment (see Figure 5), many neurons in the active/passive task did not have this consistent relationship, indicated by the many neurons with negative pR2 values for the model trained over both conditions.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/48198/elife-48198-fig10-v1.jpg)
 
-**Figure 10.:** Figure 5).Plots in the upper row contain colored arrows at the edges indicating neurons with pR2 value beyond the axis range, which we omitted for clarity.
+**Figure 10.:** Plots in the upper row contain colored arrows at the edges indicating neurons with pR2 value beyond the axis range, which we omitted for clarity.
 
 The initial question of this experiment remains, however: does the neural separability index stem simply from arm kinematics? If this were true, then neurons with high separability index should have a consistent relationship to arm kinematics. To test this, we compared each neuron’s pR2 value when trained on both conditions (our proxy for model consistency) against its separability index (Figure 11). Interestingly, we found the opposite result—model consistency actually correlated negatively with the separability index. Essentially, this means that neurons responding to active and passive movements differently are likely not drawing this distinction based on arm kinematics, as those are the neurons for which we could not find a consistent whole-arm model. Instead, this suggests that neurons in area 2 distinguish active and passive movements by some other means, perhaps an efference copy signal from motor areas of the brain (Bell, 1981; London and Miller, 2013; Nelson, 1987).
 
@@ -135,11 +135,11 @@ The initial question of this experiment remains, however: does the neural separa
 
 ## Discussion
 
-## Summary
+### Summary
 
 In this study, we explored, in two separate experiments, how somatosensory area 2 represents arm movements. In the first experiment, a monkey reached to targets in two separate workspaces. We found that a model incorporating whole-arm kinematics explained area 2 neural activity well, especially when compared to the hand-only model typically used to explain these neurons’ responses. Our results from the experiment thus suggest that area 2 represents the state of the whole arm during reaching. In the second experiment, we tested the whole-arm model’s ability to explain area 2 neural activity both during reaching, and when the hand was unexpectedly displaced passively. As in the first experiment, these two conditions differed both kinematically and in the neural responses to movement. However, we found that while some neurons maintained a consistent relationship with arm kinematics across the two conditions, many others did not. Furthermore, those neurons most sensitive to movement type were also those most poorly modeled across conditions. The results from this second experiment suggest that for some neurons, area 2 relates to arm kinematics differently for active and passive movements.
 
-## Model complexity
+### Model complexity
 
 A significant difference between the hand and whole-arm models is their number of parameters, which make the whole-arm models more complex and expressible. There are two concerns with testing models of differing complexity, the first dealing with model training and evaluation, and the second with interpretation of the results.
 
@@ -147,7 +147,7 @@ In training and evaluating our models, we had to make sure that the complex mode
 
 The second concern is in interpreting what it means when the more complex models perform better. One interpretation is that this is an obvious result; if the added degrees of freedom have anything at all to do with area 2 neural activity, then the more complex models should perform better. In fact, our main goal was primarily to improve our understanding of this area of S1 by exploring how incorporating measurements of whole-arm kinematics could help explain its function. As a result, we found that the whole-arm model not only out-performed the hand-only model, but it also predicted changes in PD across the two workspaces well in its own right. Furthermore, as demonstrated by the findings from our second experiment, the more complex model does not necessarily lead to a satisfactory fit. Despite its increased complexity and its success in the two-workspace task, the whole-arm model could not find a consistent fit for many neurons over both active and passive movements. As such, the active/passive experiment serves as a useful control for the two-workspace findings.
 
-## Coordinate frame vs. informational content
+### Coordinate frame vs. informational content
 
 Because of their differing dimensionality, the signals from the hand-only model and those from whole-arm model do not have a one-to-one relationship: there are many different arm configurations that result in a given hand position. Thus, a comparison between the hand-only and whole-arm models is mainly a question of information content (do area 2 neurons have information about more than just the hand?). In contrast, signals predicted by the various whole-arm models (see Appendix 1) do have a one-to-one (albeit nonlinear) relationship to each other. Knowledge of the hand and elbow position should completely determine estimated joint angles and musculotendon lengths, indicating that these models should have the same informational content. As such, a comparison between these models (as in the Appendix 1) is purely one of coordinate frame. While the interpretation for a comparison of information content is straightforward, interpreting the results of a comparison between coordinate frames is not. One major issue is that these comparisons only make sense when using linear models to relate neural activity to behavior. Once nonlinear models are considered, as in our study with artificial neural networks (Lucas et al., 2019), coordinate frames with one-to-one correspondence become nearly equivalent, and much more difficult to compare meaningfully.
 
@@ -155,13 +155,13 @@ Clear parallels exist between this and earlier studies seeking to find a unique 
 
 A major question this study leaves open is that of how information about reaching is processed by different areas of the proprioceptive neuraxis. While we might expect a muscle spindle-like representation at the level of the dorsal root ganglia (DRG) or the cuneate nucleus, downstream from the receptors by only one and two synapses, respectively, this representation likely changes as the signals propagate through thalamus and into S1. Different areas of S1 may also have different representations. Area 3a, which receives input mostly from muscle afferents (Heath et al., 1976; Kaas et al., 1979; Phillips et al., 1971; Yamada et al., 2016), seems more likely to retain a muscle-like representation than is area 2, which integrates muscle afferent input with that from cutaneous receptors (Hyvärinen and Poranen, 1978; Padberg et al., 2019; Pons et al., 1985). Likewise, area 5 may have an even higher-level representation, as it receives input from both somatosensory (Mountcastle et al., 1975) and motor cortices (Padberg et al., 2019), and appears to depend on attention (Chapman et al., 1984; Omrani et al., 2016). As it becomes increasingly feasible to record from several of these areas simultaneously (Richardson et al., 2016; Suresh et al., 2017; Weber et al., 2006), future experiments could examine how these areas project information to each other, as has been explored in motor and premotor cortices (Churchland et al., 2010; Elsayed et al., 2016; Kaufman et al., 2014; Perich et al., 2018), without modeling the more complex cortical areas explicitly in terms of particular behavioral variables ‘encoded’ by single neurons.
 
-## Possible evidence of efference copy in area 2
+### Possible evidence of efference copy in area 2
 
 Our inability to find a consistent model across conditions suggests a difference between neural activity during active and passive movements that can’t be captured by either model. One possible explanation for this is that area 2 may represent arm kinematics nonlinearly. Because we modeled area 2 activity with a generalized linear model (GLM; see Materials and methods), we implicitly discounted this possibility. The fact that the whole-arm kinematics for the two conditions are highly discriminable (89% separable on average) means that the different conditions correspond to different zones of kinematic space. Following the analogy of fitting a line to data distributed on an exponential curve, it is possible that the neurons with inconsistent linear relationships to arm kinematics may simply reflect a single nonlinear relationship, requiring different linear approximations in the two zones. Indeed, several of these neurons had high pR2 for models trained within condition (top left quadrants of Figure 10).
 
 Another possible explanation for this finding is that voluntary movements may change the afferent activity from the moving limb. This could be caused by altered descending gamma drive to muscle spindles that changes their sensitivity (Loeb et al., 1985; Prochazka and Wand, 1981; Prochazka et al., 1976). Another possibility is that of an efference copy signal sent to the brainstem or S1 from motor areas during active movements (Bell, 1981; London and Miller, 2013; Nelson, 1987). Many studies suggest that we use internal forward models of our bodies and the environment to coordinate our movements and predict their sensory consequences (Shadmehr and Mussa-Ivaldi, 1994; Wolpert et al., 1995). A key piece of this framework is comparing the actual feedback received following movement with the feedback predicted by the internal model, which generates a sensory prediction error. Recent studies suggest that S1 is important for updating the internal model using a sensory prediction error (Mathis et al., 2017; Nasir et al., 2013). Thus, one potential avenue to study the effect of efference copy in S1 would be to examine how motor areas communicate with area 2 during active and passive movements.
 
-## Relevance for BCI
+### Relevance for BCI
 
 One motivation for this work is its potential to augment brain-computer interfaces (BCI) for restoring movement to persons with spinal cord injury or limb amputation. As BCI for motor control gets more advanced (Collinger et al., 2013; Ethier et al., 2012; Kao et al., 2015; Young et al., 2019), it will become more necessary to develop a method to provide feedback about movements to the brain, potentially using intracortical microstimulation (ICMS) to activate somatosensory areas. While the use of ICMS in S1 has led to some success in providing feedback about touch (Flesher et al., 2016; Romo et al., 1998; Armenta Salas et al., 2018; Tabot et al., 2013), the path towards providing proprioceptive feedback remains relatively unexplored. At least one study did use electrical stimulation in S1 for feedback during movement, using the stimulation to specify target direction with respect to the evolving hand position (Dadarlat et al., 2015). However, this target-error information is very different from the information normally encoded by S1, and the monkeys required several months to learn to use it. To our knowledge, no study has yet shown a way to use ICMS to provide more biomimetic proprioceptive feedback during reaching.
 
@@ -169,15 +169,39 @@ Previously, our lab attempted to address this gap by stimulating electrodes in a
 
 Another important consideration is the difference between sensation for perception versus action, which which is thought to arise from processing in two distinct pathways (Dijkerman and de Haan, 2007; Mishkin and Ungerleider, 1982; Sedda and Scarpina, 2012). Most studies using ICMS have tended to engage the perceptual rather than the action stream of proprioception, either by using perceptual reporting of the effects of ICMS (Armenta Salas et al., 2018; Tomlinson and Miller, 2016; Zaaimi et al., 2013), or by using ICMS as a conscious sensory substitute for prorioceptive feedback (Dadarlat et al., 2015). However, as we better characterize how S1 represents movements, we hope to forge a way towards a stimulation paradigm in which we can engage both streams, to enable users of a BCI both to perceive their limb, and to respond rapidly to movement perturbations.
 
-## Conclusion
+### Conclusion
 
 Our goal in conducting this study was to improve our understanding of how area 2 neural activity represents arm movements. We began by asking what we would learn about area 2 when we tracked the movement of the whole arm, rather than just the hand. The results of our first experiment showed that a model built on these whole-arm kinematics was highly predictive of area 2 neural activity, suggesting that it indeed represents the kinematic state of the whole arm during reaching. In our second experiment, we sought to extend these findings to similar movements when the limb is passively displaced. There, we found that while some neurons consistently represented arm kinematics, others did not, suggesting that the area may process active and passive movements differently, possibly with the addition of efference copy inputs.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>All code developed for this paper available on GitHub (See relevant sections of Materials and methods)</td>
+    </tr>
+  </tbody>
+</table>
+
 All surgical and experimental procedures were fully consistent with the guide for the care and use of laboratory animals and approved by the institutional animal care and use committee of Northwestern University under protocol #IS00000367.
 
-## Behavior
+### Behavior
 
 We recorded data from a monkey while it used a manipulandum to reach for targets presented on a screen within a 20 cm x 20 cm workspace. After each successful reaching trial, the monkey received a pulse of juice or water as a reward. We recorded the position of the handle using encoders on the manipulandum joints. We also recorded the interaction forces between the monkey’s hand and the handle using a six-axis load cell mounted underneath the handle.
 
@@ -185,73 +209,131 @@ For the two-workspace experiment, we partitioned the full workspace into four 10
 
 For the active vs. passive experiment, we had the monkey perform a classic center-out (CO) reaching task, as described in London and Miller (2013). Briefly, the monkey held in a target at the center of the full workspace for a random amount of time, after which one of four outer targets was presented. The trial ended in success once the monkey reached to the outer target. On 50% of the trials (deemed ‘passive’ trials), during the center hold period, we used motors on the manipulandum to deliver a 2 N perturbation to the monkey’s hand in one of the four target directions. After the bump, the monkey returned to the center target, after which the trial proceeded like an active trial. From only the successful passive and active trials, we analyzed the first 120 ms after movement onset. Movement onset was determined by looking for the peak in handle acceleration either after the motor pulse (in the passive condition) or after 200 ms post-go cue (in the active condition) and sweeping backwards in time until the acceleration was less than 10% of the peak.
 
-## Motion tracking
+### Motion tracking
 
 Before each reaching experiment, we painted 10 markers of four different colors on the outside of the monkey’s arm, marking bony landmarks and a few points in between, a la (Chan and Moran, 2006). Using a custom motion tracking system built from a Microsoft Kinect, we recorded the 3D locations of these markers with respect to the camera, synced in time to the other behavioral and neural data. We then aligned the Kinect-measured marker locations to the spatial lab frame by aligning location of the Kinect hand marker to the location of the handle in the manipulandum coordinate frame. Code for motion tracking can be found at https://github.com/limblab/KinectTracking.git (Chowdhury, 2020a; copy archived at https://github.com/elifesciences-publications/KinectTracking).
 
-## Neural recordings
+### Neural recordings
 
 We implanted 100-electrode arrays (Blackrock Microsystems) into the arm representation of area 2 of S1 in these monkeys. For more details on surgical techniques, see Weber et al. (2011). In surgery, we roughly mapped the postcentral gyrus by recording from the cortical surface while manipulating the arm and hand to localize their representations. To record neural data for our experiments, we used a Cerebus recording system (Blackrock). This recording system sampled signals from each of the 96 electrodes at 30 kHz. To conserve data storage space, the system detected spikes online using a threshold set at −5x signal RMS, and only wrote to disk a time stamp and the 1.6 ms snippet of signal surrounding the threshold crossing. After data collection, we used Plexon Offline Sorter to manually sort these snippets into putative single units, using features like waveform shape and inter-spike interval.
 
-## Sensory mappings
+### Sensory mappings
 
 In addition to recording sessions, we also occasionally performed sensory mapping sessions to identify the neural receptive fields. For each electrode we tested, we routed the corresponding recording channel to a speaker and listened to multi-unit neural activity while manipulating the monkey’s arm. We noted both the modality (deep or cutaneous) and the location of the receptive field (torso, shoulder, humerus, elbow, forearm, wrist, hand, or arm in general). We classified an electrode as cutaneous if we found an area of the skin, which when brushed or stretched, resulted in an increase in multi-unit activity. We classified an electrode as deep if we found activity to be responsive to joint movements and/or muscle palpation but could not find a cutaneous field. As neurons on the same electrode tend to have similar properties (Weber et al., 2011), we usually did not separate neurons on individual electrodes during mapping. However, when we did, we usually found them to have similar receptive field modality and location.
 
 In Monkeys C and H, we found a gradient of receptive field location across the array, corresponding to a somatotopy from proximal to distal. To quantify this gradient, we assigned each receptive field location a score from 1 to 7 (with 1 being the torso and 7 being the hand), and we fit a simple linear model relating this location on the limb to the x and y coordinates of electrodes on the array. We show the calculated gradients for Monkeys C and H as black arrows in Figure 1 (both significant linear fits with p < 0.05). Monkey L’s array had too few neurons to calculate a significant linear model.
 
-## Neural analysis
+### Neural analysis
 
 Code for the following neural analyses can be found at https://github.com/raeedcho/s1-kinematics.git (Chowdhury, 2020b; copy archived at https://github.com/elifesciences-publications/s1-kinematics).
 
-## Preferred directions
+#### Preferred directions
 
-We used a simple bootstrapping procedure to calculate PDs for each neuron. On each bootstrap iteration, we randomly drew timepoints from the reaching data, making sure that the distribution of movement directions was uniform to mitigate the effects of any potential bias. Then, as in Georgopoulos et al. (1982), we fit a cosine tuning function to the neural activity with respect to the movement direction, using Equation 1a, b.(1a)fi(τ)=b0+b1∗sin⁡(θm(τ))+b2∗cos⁡(θm(τ))(1b)=b0+ri∗cos⁡(θm(τ)−PDi)wherePDi=atan2(b1,b2)andri=b12+b22
+We used a simple bootstrapping procedure to calculate PDs for each neuron. On each bootstrap iteration, we randomly drew timepoints from the reaching data, making sure that the distribution of movement directions was uniform to mitigate the effects of any potential bias. Then, as in Georgopoulos et al. (1982), we fit a cosine tuning function to the neural activity with respect to the movement direction, using Equation 1a, b.
 
-Here, fiτ is the average firing rate of neuron i for a given time point τ, and θmτ is the corresponding movement direction, which for the active/passive task was the target or bump direction, and for the two-workspace experiment was the average movement direction over a time bin. We took the circular mean of PDi and mean of ri over all bootstrap iterations to determine the preferred direction and the modulation depth respectively, for each neuron.
+$$
+f_{i}(\tau)=b_{0}+b_{1}∗sin⁡(\theta_{m}(\tau))+b_{2}∗cos⁡(\theta_{m}(\tau))
+$$
 
-As the PD analysis is meaningless for neurons that don’t have a preferred direction of movement, we only analyzed the PDs of neurons that were significantly tuned. We assessed tuning through a separate bootstrapping procedure, described in Dekleva et al. (2018). Briefly, we randomly sampled the timepoints from reaching data, again ensuring a uniform distribution of movement directions, but this time also randomly shuffled the corresponding neural activity. We calculated the ri for this shuffled data on each bootstrap iteration, thereby creating a null distribution of modulation depths. We considered a neuron to be tuned if the true ri was greater than the 95th percentile of the null distribution.
 
-## Models of neural activity
 
-For the two-workspace analyses, both behavioral variables and neural firing rate were averaged over 50 ms bins. For the active/passive analyses, we averaged behavioral variables and neural firing rates over the 120 ms period following movement onset in each trial. We modeled neural activity with respect to the behavior using Poisson generalized linear models (outline in Truccolo et al., 2005) shown in Equation 2a, below.(2a)f∼Poisson(λ), λ=exp(Xβ)
+$$
+=b_{0}+r_{i}∗cos⁡(\theta_{m}(\tau)−PD_{i})
+$$
 
-In this equation,  f is a T (number of time points) x N (number of neurons) matrix of average firing rates, X is a T x P (number of behavioral covariates, explained below) matrix of behavioral correlates, and β is a P x N matrix of model parameters. We fit these GLMs by finding maximum likelihood estimation of the parameters, β^. With these fitted models, we predicted firing rates (f^) on data not used for training, shown in Equation 2b, below.(2b)f^=exp(Xβ^)
+where
 
-We tested six firing rate encoding models, detailed below. Of these six models, the first two (hand-only and whole-arm) were the ones shown in the main text, with results from the other models detailed in Appendix 1. Note that each model also includes an offset term, increasing the number of parameters, P, by one.
+$$
+PD_{i}=atan2(b_{1},b_{2})andr_{i}=\sqrt{b_{1}^{2}+b_{2}^{2}}
+$$
 
-We used repeated 5-fold cross-validation to evaluate our models of neural activity, given that the models had different numbers of parameters, P. On each repeat, we randomly split trials into five groups (folds) and trained the models on four of them. We used these trained models to predict neural firing rates (fi^) in the fifth fold. We then compared the predicted firing rates from each model to the actual firing rates in that test fold, using analyses described in the following sections. This process (including random splitting) was repeated 20 times, resulting in n=100 sample size for each analysis result. Thus, if a more expressive model with more parameters performs better than a simpler model, it would suggest that the extra parameters do provide relevant information about the neural activity not accounted for by the simpler models.
+Here, $f_{i}\tau$ is the average firing rate of neuron $i$ for a given time point $\tau$, and $\theta_{m}\tau$ is the corresponding movement direction, which for the active/passive task was the target or bump direction, and for the two-workspace experiment was the average movement direction over a time bin. We took the circular mean of $PD_{i}$ and mean of $r_{i}$ over all bootstrap iterations to determine the preferred direction and the modulation depth respectively, for each neuron.
 
-## Statistical tests and confidence intervals
+As the PD analysis is meaningless for neurons that don’t have a preferred direction of movement, we only analyzed the PDs of neurons that were significantly tuned. We assessed tuning through a separate bootstrapping procedure, described in Dekleva et al. (2018). Briefly, we randomly sampled the timepoints from reaching data, again ensuring a uniform distribution of movement directions, but this time also randomly shuffled the corresponding neural activity. We calculated the $r_{i}$ for this shuffled data on each bootstrap iteration, thereby creating a null distribution of modulation depths. We considered a neuron to be tuned if the true $r_{i}$ was greater than the 95th percentile of the null distribution.
 
-To perform statistical tests on the output of repeated 5-fold cross-validation, we used a corrected resampled t-test, outlined in Ernst (2017) and Nadeau and Bengio (2003). Here, sample mean and variance are calculated as in a normal t-test, but a correction factor needs to be applied to the standard error, depending on the nature of the cross-validation. Equation 3a-c shows a general case of this correction for R repeats of K-fold cross-validation of some analysis result dkr.(3a)μ^d=1K×R∑k=1K∑r=1Rdkr(3b)σ^d2=1(K×R)−1∑k=1K∑r=1R(dkr−μ^d)2(3c)tstat=μ^d(1K×R+1/K1−1/K)σ^d2
+#### Models of neural activity
 
-We then compare the t-statistic here (tstat) to a t-distribution with K×R-1 degrees of freedom. The correction applied is an extra term (i.e., 1/K1-1/K) under the square root, compared to the typical standard error calculation. Note that we performed all statistical tests within individual sessions or for individual neurons, never across sessions or monkeys.
+For the two-workspace analyses, both behavioral variables and neural firing rate were averaged over 50 ms bins. For the active/passive analyses, we averaged behavioral variables and neural firing rates over the 120 ms period following movement onset in each trial. We modeled neural activity with respect to the behavior using Poisson generalized linear models (outline in Truccolo et al., 2005) shown in Equation 2a, below.
 
-## Bonferroni corrections
+$$
+f∼Poisson(\lambda), \lambda=exp(X\beta)
+$$
 
-At the beginning of this project, we set out to compare three of these six models: hand-only, egocentric, and muscle kinematics. In making pairwise comparisons between these models, we used α=0.05 and a Bonferroni correction of 3, for the three original comparisons. In this analysis, we found that the muscle model performed best. As we developed this project, however, we tried the three other models to see if they could outperform the muscle kinematics model, eventually finding that the whole-arm model, built on Cartesian kinematics of the hand and elbow outperformed it. As this appeared to be primarily due to modeling and measurement error in the muscle model (see Appendix 1), we decided to focus on the hand-only and whole-arm model. Despite only making one pairwise comparison in the main text, we chose to use a Bonferroni correction factor of 6: three for the original three pairwise comparisons and one more for each additional model we tested, which were compared against the best model at the time, and could have changed the end result of this project.
+In this equation, $f$ is a $T$ (number of time points) x $N$ (number of neurons) matrix of average firing rates, $X$ is a $T$ x $P$ (number of behavioral covariates, explained below) matrix of behavioral correlates, and $\beta$ is a $P$ x $N$ matrix of model parameters. We fit these GLMs by finding maximum likelihood estimation of the parameters, $\beta^$. With these fitted models, we predicted firing rates ($f^$) on data not used for training, shown in Equation 2b, below.
 
-## Goodness-of-fit (pseudo-R2)
+$$
+f^=exp(X\beta^)
+$$
 
-We evaluated goodness-of-fit of these models for each neuron by using a pseudo-R2 (pR2) metric. We used a formulation of pseudo-R2 based on a comparison between the deviance of the full model and the deviance of a 'null' model, that is, a model that only predicts the overall mean firing rate (Cameron and Windmeijer, 1997; Cameron and Windmeijer, 1996; Heinzl and Mittlböck, 2003; Perich et al., 2018).(4a)pR2=1−D(fi;fl^)D(fi;fi¯)(4b)=1−logL(fi)−logL(fl^)logL(fi)−logL(fi¯)
+We tested six firing rate encoding models, detailed below. Of these six models, the first two (hand-only and whole-arm) were the ones shown in the main text, with results from the other models detailed in Appendix 1. Note that each model also includes an offset term, increasing the number of parameters, $P$, by one.
 
-When computing the likelihood of a Poisson statistic, this is:(4c)=1−∑τ=1Tfi(τ)log⁡(fi(τ)fl^(τ))−(fi(τ)−fl^(τ))∑τ=1Tfi(τ)log⁡(fi(τ)fi¯)−(fi(τ)−fi¯)
+We used repeated 5-fold cross-validation to evaluate our models of neural activity, given that the models had different numbers of parameters, $P$. On each repeat, we randomly split trials into five groups (folds) and trained the models on four of them. We used these trained models to predict neural firing rates ($f_{i}^$) in the fifth fold. We then compared the predicted firing rates from each model to the actual firing rates in that test fold, using analyses described in the following sections. This process (including random splitting) was repeated 20 times, resulting in n=100 sample size for each analysis result. Thus, if a more expressive model with more parameters performs better than a simpler model, it would suggest that the extra parameters do provide relevant information about the neural activity not accounted for by the simpler models.
 
-This pR2 metric ranges from -∞ to 1, with a value of 1 corresponding to a perfectly fit model and a value of 0 corresponding to a model that only fits as well as the 'null' model. In contrast with the general intuition for regular R2, a pR2 of ~0.2 is considered a 'good' fit (McFadden, 1977).
+#### Statistical tests and confidence intervals
 
-## Tuning curves
+To perform statistical tests on the output of repeated 5-fold cross-validation, we used a corrected resampled t-test, outlined in Ernst (2017) and Nadeau and Bengio (2003). Here, sample mean and variance are calculated as in a normal t-test, but a correction factor needs to be applied to the standard error, depending on the nature of the cross-validation. Equation 3a-c shows a general case of this correction for R repeats of K-fold cross-validation of some analysis result $d_{kr}$.
+
+$$
+\mu^_{d}=\frac{1}{K\timesR}\sumk=1K\sumr=1Rd_{kr}
+$$
+
+
+
+$$
+\sigma^_{d}^{2}=\frac{1}{(K\timesR)−1}\sumk=1K\sumr=1R(d_{kr}−\mu^_{d})^{2}
+$$
+
+
+
+$$
+t_{stat}=\frac{\mu^_{d}}{\sqrt{(\frac{1}{K\timesR}+\frac{1/K}{1−1/K})\sigma^_{d}^{2}}}
+$$
+
+We then compare the t-statistic here ($t_{stat}$) to a t-distribution with $K\timesR-1$ degrees of freedom. The correction applied is an extra term (i.e., $\frac{1/K}{1-1/K}$) under the square root, compared to the typical standard error calculation. Note that we performed all statistical tests within individual sessions or for individual neurons, never across sessions or monkeys.
+
+#### Bonferroni corrections
+
+At the beginning of this project, we set out to compare three of these six models: hand-only, egocentric, and muscle kinematics. In making pairwise comparisons between these models, we used $\alpha=0.05$ and a Bonferroni correction of 3, for the three original comparisons. In this analysis, we found that the muscle model performed best. As we developed this project, however, we tried the three other models to see if they could outperform the muscle kinematics model, eventually finding that the whole-arm model, built on Cartesian kinematics of the hand and elbow outperformed it. As this appeared to be primarily due to modeling and measurement error in the muscle model (see Appendix 1), we decided to focus on the hand-only and whole-arm model. Despite only making one pairwise comparison in the main text, we chose to use a Bonferroni correction factor of 6: three for the original three pairwise comparisons and one more for each additional model we tested, which were compared against the best model at the time, and could have changed the end result of this project.
+
+#### Goodness-of-fit (pseudo-R2)
+
+We evaluated goodness-of-fit of these models for each neuron by using a pseudo-R2 ($pR^{2}$) metric. We used a formulation of pseudo-R2 based on a comparison between the deviance of the full model and the deviance of a 'null' model, that is, a model that only predicts the overall mean firing rate (Cameron and Windmeijer, 1997; Cameron and Windmeijer, 1996; Heinzl and Mittlböck, 2003; Perich et al., 2018).
+
+$$
+pR^{2}=1−\frac{D(f_{i};f_{l}^)}{D(f_{i};f_{i}¯)}
+$$
+
+
+
+$$
+=1−\frac{logL(f_{i})−logL(f_{l}^)}{logL(f_{i})−logL(f_{i}¯)}
+$$
+
+When computing the likelihood of a Poisson statistic, this is:
+
+$$
+=1−\frac{\sum\tau=1Tf_{i}(\tau)log⁡(\frac{f_{i}(\tau)}{f_{l}^(\tau)})−(f_{i}(\tau)−f_{l}^(\tau))}{\sum\tau=1Tf_{i}(\tau)log⁡(\frac{f_{i}(\tau)}{f_{i}¯})−(f_{i}(\tau)−f_{i}¯)}
+$$
+
+This pR2 metric ranges from $-∞$ to 1, with a value of 1 corresponding to a perfectly fit model and a value of 0 corresponding to a model that only fits as well as the 'null' model. In contrast with the general intuition for regular R2, a pR2 of ~0.2 is considered a 'good' fit (McFadden, 1977).
+
+#### Tuning curves
 
 We binned the trajectory into 16 bins, each 22.5 degrees wide, based on the mean direction across 50 ms of hand motion. For each directional bin, we calculated the sample mean and 95% confidence interval of the mean. In figures, we plotted this mean firing rate against the center-point of the bin.
 
-## Preferred direction shift
+#### Preferred direction shift
 
 We calculated PDs for each neuron in each workspace and found the predicted change in PD from the contralateral workspace to the ipsilateral workspace, given each model. We compared these changes to those observed for each neuron. The values of these PD shifts are shown in Figure 7 for all neurons tuned to movements in both workspaces, averaged over all 100 test folds.
 
-We computed a variance-accounted-for (VAF) metric, here called the 'circular VAF' (cVAF) for each neuron (i) in each fold as:(5)cVAFi=cos(ΔθPD,i−Δθ^PD,i)
+We computed a variance-accounted-for (VAF) metric, here called the 'circular VAF' (cVAF) for each neuron ($i$) in each fold as:
 
-As the cVAF metric is essentially the inner product of unit vectors with direction ΔθPD,i and Δθ^PD,i, it accounts for the circular domain of the PD shifts. Like regular VAF, the cVAF has a maximum value of 1 when ΔθPD,i and Δθ^PD,i are the same, and decreases in proportion to the squared difference between ΔθPD,i and Δθ^PD,i. We took the average cVAF over all neurons as the cVAF for the fold. In total, given the 20 repeats of 5-fold cross-validation, this gave us 100-samples of the cVAF for each model in a given session.
+$$
+cVAF_{i}=cos(Δ\theta_{PD,i}−Δ\theta^_{PD,i})
+$$
 
-## Separability index
+As the cVAF metric is essentially the inner product of unit vectors with direction $Δ\theta_{PD,i}$ and $Δ\theta^_{PD,i}$, it accounts for the circular domain of the PD shifts. Like regular VAF, the cVAF has a maximum value of 1 when $Δ\theta_{PD,i}$ and $Δ\theta^_{PD,i}$ are the same, and decreases in proportion to the squared difference between $Δ\theta_{PD,i}$ and $Δ\theta^_{PD,i}$. We took the average cVAF over all neurons as the cVAF for the fold. In total, given the 20 repeats of 5-fold cross-validation, this gave us 100-samples of the cVAF for each model in a given session.
+
+#### Separability index
 
 In the active/passive experiment, we calculated the separability index for each neuron by fitting a linear discriminant analysis (LDA) classifier, predicting trial type (active or passive) from the neuron’s average activity in the 120 ms after movement onset. As with the other neural analyses, we fit and evaluated each LDA classifier using our repeated 5-fold cross-validation scheme, calling the average test set classification percentage the neuron’s separability index.
 

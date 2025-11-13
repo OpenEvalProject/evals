@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.15392.001 Rapid and stable control of pupil size in response to light is critical for vision, but the neural coding mechanisms remain unclear. Here, we investigated the neural basis of pupil control by monitoring pupil size across time while manipulating each photoreceptor input or neurotransmitter output of intrinsically photosensitive retinal ganglion cells (ipRGCs), a critical relay in the control of pupil size. We show that transient and sustained pupil responses are mediated by distinct photoreceptors and neurotransmitters. Transient responses utilize input from rod photoreceptors and output by the classical neurotransmitter glutamate, but adapt within minutes. In contrast, sustained responses are dominated by non-conventional signaling mechanisms: melanopsin phototransduction in ipRGCs and output by the neuropeptide PACAP, which provide stable pupil maintenance across the day. These results highlight a temporal switch in the coding mechanisms of a neural circuit to support proper behavioral dynamics. DOI: http://dx.doi.org/10.7554/eLife.15392.001
+Rapid and stable control of pupil size in response to light is critical for vision, but the neural coding mechanisms remain unclear. Here, we investigated the neural basis of pupil control by monitoring pupil size across time while manipulating each photoreceptor input or neurotransmitter output of intrinsically photosensitive retinal ganglion cells (ipRGCs), a critical relay in the control of pupil size. We show that transient and sustained pupil responses are mediated by distinct photoreceptors and neurotransmitters. Transient responses utilize input from rod photoreceptors and output by the classical neurotransmitter glutamate, but adapt within minutes. In contrast, sustained responses are dominated by non-conventional signaling mechanisms: melanopsin phototransduction in ipRGCs and output by the neuropeptide PACAP, which provide stable pupil maintenance across the day. These results highlight a temporal switch in the coding mechanisms of a neural circuit to support proper behavioral dynamics.
 
 ## Introduction
 
@@ -43,51 +43,158 @@ To date, the precise behavioral contributions of rod, cone, and melanopsin input
 
 ## Results
 
-## ipRGC behavioral responses are composed of both transient and sustained phases
+### ipRGC behavioral responses are composed of both transient and sustained phases
 
-To measure ipRGC responses in real time, we measured the pupillary light response (PLR). Importantly, we used a novel experimental setup that mimics environmental light using overhead light with spectral composition similar to daylight in an unanesthetized mouse (
+To measure ipRGC responses in real time, we measured the pupillary light response (PLR). Importantly, we used a novel experimental setup that mimics environmental light using overhead light with spectral composition similar to daylight in an unanesthetized mouse (Figure 1A and Figure 1—figure supplement 1), unlike previous studies that used monochromatic light delivered to a single eye (Delwig et al., 2013; Gooley et al., 2012; Güler et al., 2008; Kawaguchi et al., 2010; Lall et al., 2010; Lucas et al., 2003).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig1-v3.jpg)
 
-**Figure 1.:** (A) Approximate light intensity ranges (lux) at different times of day. (B) Transient constriction in response to a 10 lux overhead stimulus (mean ± SD). Boxes contain representative pupil images at time 0 and 30 s. (C) Continued monitoring of pupil constriction from b for 60 min of continuous light at 5 min intervals with representative images. (D) Intensity-response curve for transient and sustained constriction (30 s and 60 min, respectively). Data fit with a sigmoidal curve (n = 5, mean ± SD). (E) Light intensity required for half-maximal constriction (EC50) determined for both transient and sustained phases of the PLR. EC50 extracted from the sigmoidal curve fits for each mouse (points are individual mice, line is mean). Statistical significance determined with a student’s t test. (F) Half-life of PLR decay at 1, 10, and 100 lux. Statistical significance determined by main effect of light intensity from one-way ANOVA. See also Figure 1—figure supplement 1, Figure 1—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.15392.003
+**Figure 1.:** (A) Approximate light intensity ranges (lux) at different times of day. (B) Transient constriction in response to a 10 lux overhead stimulus (mean ± SD). Boxes contain representative pupil images at time 0 and 30 s. (C) Continued monitoring of pupil constriction from b for 60 min of continuous light at 5 min intervals with representative images. (D) Intensity-response curve for transient and sustained constriction (30 s and 60 min, respectively). Data fit with a sigmoidal curve (n = 5, mean ± SD). (E) Light intensity required for half-maximal constriction (EC50) determined for both transient and sustained phases of the PLR. EC50 extracted from the sigmoidal curve fits for each mouse (points are individual mice, line is mean). Statistical significance determined with a student’s t test. (F) Half-life of PLR decay at 1, 10, and 100 lux. Statistical significance determined by main effect of light intensity from one-way ANOVA. See also Figure 1—figure supplement 1, Figure 1—figure supplement 2.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Environmental light intensity measured in lux across one day (April 2, 2015) in Baltimore, Maryland, USA. The light meter used is unable to measure light intensities below 1 lux, indicated with the gray box. Dotted lines refer to the meteorological sunrise and sunset. Data is fit with a hand-drawn curve for ease of visualization. (B) Mice are unanesthetized and restrained by hand under a light bulb with a broad spectrum similar to sunlight (C). Spectral power is normalized to the most highly represented wavelength in sunlight. Breaking down the fraction of light into 50 nm bins for each light source, the daylight bulbs are very similar to sunlight across all wavelengths (D), while incandescent bulbs lack short wavelengths and are enriched in long wavelengths. Pupils are continuously recorded in darkness and light using an infrared video camera.DOI: http://dx.doi.org/10.7554/eLife.15392.004
+**Figure 1—figure supplement 1.:** (A) Environmental light intensity measured in lux across one day (April 2, 2015) in Baltimore, Maryland, USA. The light meter used is unable to measure light intensities below 1 lux, indicated with the gray box. Dotted lines refer to the meteorological sunrise and sunset. Data is fit with a hand-drawn curve for ease of visualization. (B) Mice are unanesthetized and restrained by hand under a light bulb with a broad spectrum similar to sunlight (C). Spectral power is normalized to the most highly represented wavelength in sunlight. Breaking down the fraction of light into 50 nm bins for each light source, the daylight bulbs are very similar to sunlight across all wavelengths (D), while incandescent bulbs lack short wavelengths and are enriched in long wavelengths. Pupils are continuously recorded in darkness and light using an infrared video camera.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig1-figsupp2-v3.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Diagram displaying how the negative feedback model works (7 s light in example) (See Online Methods for step-by-step explanation). The model assumes that packets of light information are discrete and are relayed to the PLR circuit to result in pupil constriction at later timepoints. We determined the kinetics of light information relay using a 1-s light pulse-chase. Then, we simply modulate the relative light intensity reaching the retina based on assuming continuous 1-s packets of information. At each new 1-s interval, the model samples the assumed pupil sizes currently driven by each previous packet of light information, uses the maximum value as the current pupil size, and then reduces the stimulus intensity using that pupil size. We then use this new intensity to determine constriction caused at that time. This iterates every second. (B) Putative kinetics of feedback’s impact on PLR at several light intensities (0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, and 10,000 lux). (C) Magnitude of PLR decay caused by feedback as modeled with (D) EC50. Note that our model predicts minor PLR decay as a result of PLR feedback. (E) Experimental investigation of feedback’s role in PLR decay. Atropine was applied to the left eye to inhibit pupil constriction and thus feedback. No enhancement of sustained PLR of the right eye was observed (paired two-tailed t-test).DOI: http://dx.doi.org/10.7554/eLife.15392.005
+**Figure 1—figure supplement 2.:** (A) Diagram displaying how the negative feedback model works (7 s light in example) (See Online Methods for step-by-step explanation). The model assumes that packets of light information are discrete and are relayed to the PLR circuit to result in pupil constriction at later timepoints. We determined the kinetics of light information relay using a 1-s light pulse-chase. Then, we simply modulate the relative light intensity reaching the retina based on assuming continuous 1-s packets of information. At each new 1-s interval, the model samples the assumed pupil sizes currently driven by each previous packet of light information, uses the maximum value as the current pupil size, and then reduces the stimulus intensity using that pupil size. We then use this new intensity to determine constriction caused at that time. This iterates every second. (B) Putative kinetics of feedback’s impact on PLR at several light intensities (0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, and 10,000 lux). (C) Magnitude of PLR decay caused by feedback as modeled with (D) EC50. Note that our model predicts minor PLR decay as a result of PLR feedback. (E) Experimental investigation of feedback’s role in PLR decay. Atropine was applied to the left eye to inhibit pupil constriction and thus feedback. No enhancement of sustained PLR of the right eye was observed (paired two-tailed t-test).
 
 Following light onset, we observed rapid pupil constriction that is maintained for the duration of the 30-s recording (Figure 1B), with greater constriction under higher light intensities (Figure 1D). Previous studies have noted a PLR decay during a sustained light stimulus lasting minutes (Gooley et al., 2012; Loewenfeld, 1993; McDougal and Gamlin, 2010), prompting us to systematically monitor the pupil across a range of times and light intensities. We observed a decay in pupil constriction over time that reached a new steady state (Figure 1C), resulting in two phases in the PLR: transient and sustained (mean intensity to reach 50% constriction (EC50) for transient PLR = 0.53 lux, sustained PLR = 7.9 lux)(Figure 1D,E). Because pupil constriction itself lowers the amount of light reaching the retina and therefore limits the drive to continued pupil constriction, the PLR is a form of negative feedback. To test if PLR decay is a consequence of negative feedback, we measured the effect of negative feedback both computationally and experimentally, and found that it has little role in PLR decay (Figure 1—figure supplement 2). Furthermore, we observed full PLR decay at dim light intensities (≤1 lux) within the first 5 min of light stimulation (Figure 1C,F), but full maintenance of pupil constriction at high light intensities (≥1000 lux), with apparently slower decay rates at higher light intensities (half-life: ~2–5 min, Figure 1F). These results suggest that ipRGCs possess temporally distinct inputs and/or outputs for transient and sustained signaling.
 
-## Transient input to ipRGCs is mediated by rods
+### Transient input to ipRGCs is mediated by rods
 
-To identify the photoreceptor(s) inputs that contribute to transient ipRGC responses (
+To identify the photoreceptor(s) inputs that contribute to transient ipRGC responses (Figure 2A), we tested the PLR in mutant mouse lines that lack the function of a single photoreceptor type, leaving the function of the other photoreceptors intact (Table 1, for references on production and initial characterization of each line); we refer to these lines as cone knockout, rod knockout, and melanopsin knockout mice. To corroborate our findings, we tested a variety of mutant mouse lines that silence each photoreceptor type in unique ways (Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-v3.jpg)
 
-**Figure 2.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves of the PLR in each of the photoreceptor mutant mouse lines (mean ± SD): wildtype (n = 6), Rod KO (Gnat1 = 6), Melanopsin KO (-/- nOpn4 = 8), and Cone KO (-/- nGnat2 = 7). Representative pupil images for each mouse line at 10 lux. (-/- nC) Gene schematic comparison of endogenous mouse M-cone allele and human red cone knock-in allele as well as the spectral sensitivity shift observed. Notice that cones are more sensitive to red light in Red cone KI line. (D) The PLR to red light (626-nm LED) is identical in mice with cones that are more sensitive to red light (Red cone KI, n = 6) compared to littermate WT (n = 5), mean ± SD. (E) Removing rod function abolishes the PLR in response to red light (626-nm LED), even in mice with cones with enhanced sensitivity to red light. WT n = 7, Red cone KI (Opn1mw = 8, Rod KO (red) nGnat1 = 8, Red cone KI; Rod KO (-/-)- nGnat1 = 4. Light intensity is 14.3 log photons/cm-/-; Opn1mwred) n2/s. (F) Intensity-response curves in mutant mice with each photoreceptor isolated (Rod-only: Cnga3 = 6)(Cone-only: (-/-; Opn4-/- nGnat1 = 6)(Mel.-only: -/-; Opn4-/- nGnat1 = 7) Data is mean ± SD, statistical significance determined using a one-way ANOVA with Sidak’s post-test. (right) Representative pupil images at 100 lux. (-/-; Gnat2-/- nG) Kinetics of transient pupil constriction (100 lux) in mice with only rod, cone, or melanopsin function, same genotypes and number of animals as in F. Traces of individual mice are shown behind curve-fits. One-phase decays were fit to all except cone-only which was fit with a two-phase decay due to its rapid pupil decay within 30 s. Melanopsin-only kinetic fit was offset from 0 by 3 s to account for delay in constriction. See also Figure 2—figure supplements 1–5.DOI: http://dx.doi.org/10.7554/eLife.15392.006
+**Figure 2.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves of the PLR in each of the photoreceptor mutant mouse lines (mean ± SD): wildtype (n = 6), Rod KO (Gnat1-/- n = 6), Melanopsin KO (Opn4-/- n = 8), and Cone KO (Gnat2-/- n = 7). Representative pupil images for each mouse line at 10 lux. (C) Gene schematic comparison of endogenous mouse M-cone allele and human red cone knock-in allele as well as the spectral sensitivity shift observed. Notice that cones are more sensitive to red light in Red cone KI line. (D) The PLR to red light (626-nm LED) is identical in mice with cones that are more sensitive to red light (Red cone KI, n = 6) compared to littermate WT (n = 5), mean ± SD. (E) Removing rod function abolishes the PLR in response to red light (626-nm LED), even in mice with cones with enhanced sensitivity to red light. WT n = 7, Red cone KI (Opn1mwred) n = 8, Rod KO (Gnat1-/-)- n = 8, Red cone KI; Rod KO (Gnat1-/-; Opn1mwred) n = 4. Light intensity is 14.3 log photons/cm2/s. (F) Intensity-response curves in mutant mice with each photoreceptor isolated (Rod-only: Cnga3-/-; Opn4-/- n = 6)(Cone-only: (Gnat1-/-; Opn4-/- n = 6)(Mel.-only: Gnat1-/-; Gnat2-/- n = 7) Data is mean ± SD, statistical significance determined using a one-way ANOVA with Sidak’s post-test. (right) Representative pupil images at 100 lux. (G) Kinetics of transient pupil constriction (100 lux) in mice with only rod, cone, or melanopsin function, same genotypes and number of animals as in F. Traces of individual mice are shown behind curve-fits. One-phase decays were fit to all except cone-only which was fit with a two-phase decay due to its rapid pupil decay within 30 s. Melanopsin-only kinetic fit was offset from 0 by 3 s to account for delay in constriction. See also Figure 2—figure supplements 1–5.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** Dark-adapted pupil sizes of all mouse lines used for photoreceptor investigation. Pupil size was recorded before light onset and pupil area (mm2) is reported. No statistical difference was found for any genotype compared to wildtype (p>0.05 for all comparisons). Statistical significance was determined by one-way ANOVA followed by Sidak’s post-test.DOI: http://dx.doi.org/10.7554/eLife.15392.007
+**Figure 2—figure supplement 1.:** Dark-adapted pupil sizes of all mouse lines used for photoreceptor investigation. Pupil size was recorded before light onset and pupil area (mm2) is reported. No statistical difference was found for any genotype compared to wildtype (p>0.05 for all comparisons). Statistical significance was determined by one-way ANOVA followed by Sidak’s post-test.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-figsupp2-v3.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Diagram of the retina labeling the photoreceptors. For experiments in B–D, WT n = 14, Opn4 = 8, -/- nCnga3 = 4, -/- nGnat2 = 7, Cone-DTA -/- nn = 7, Gnat1 = 6, Rod-DTA -/- nn = 9. (B) Kinetics of rapid constriction in response to dim light (10 lux). Rod KO mice are the only photoreceptor mutants to display a deficit. Cone and Mel. KO mice are identical to wildtype. (C) Intensity-response curves of the PLR in each of the photoreceptor mutant mouse lines (mean ± SD). The bar on top of the figure denotes the estimated sensitivities of rods and cones. (D) Rod mutant animals are the only mutants that display a sensitivity (EC50) deficit compared to WT (p<0.0001). In fact, Cone-DTA mice are moderately more sensitive than WT (*p=0.011). Points indicate individual mice, line indicates mean. Statistical significance determined using a one-way ANOVA with Sidak’s post-test.DOI: http://dx.doi.org/10.7554/eLife.15392.008
+**Figure 2—figure supplement 2.:** (A) Diagram of the retina labeling the photoreceptors. For experiments in B–D, WT n = 14, Opn4-/- n = 8, Cnga3-/- n = 4, Gnat2-/- n = 7, Cone-DTA n = 7, Gnat1-/- n = 6, Rod-DTA n = 9. (B) Kinetics of rapid constriction in response to dim light (10 lux). Rod KO mice are the only photoreceptor mutants to display a deficit. Cone and Mel. KO mice are identical to wildtype. (C) Intensity-response curves of the PLR in each of the photoreceptor mutant mouse lines (mean ± SD). The bar on top of the figure denotes the estimated sensitivities of rods and cones. (D) Rod mutant animals are the only mutants that display a sensitivity (EC50) deficit compared to WT (p<0.0001). In fact, Cone-DTA mice are moderately more sensitive than WT (*p=0.011). Points indicate individual mice, line indicates mean. Statistical significance determined using a one-way ANOVA with Sidak’s post-test.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-figsupp3-v3.jpg)
 
-**Figure 2—figure supplement 3.:** Transient PLR determined under 3 different experimental light conditions. (Left) Blue (474-nm) LED light presented to contralateral eye (1.9 × 1016 photons/cm2/s). (Middle) White halogen light presented to contralateral eye (27.58 W/m2). (Right) 1000 lux white compact fluorescent light presented overhead to both eyes (4.4 W/m2). Line represents mean and points are individual mice. Statistical significance determined by one-way ANOVA followed by Sidak’s post-test. No difference observed when light presented overhead. Control (Opn4 = 7 and +/-) nOpn4 = 9.-/- nDOI: http://dx.doi.org/10.7554/eLife.15392.009
+**Figure 2—figure supplement 3.:** Transient PLR determined under 3 different experimental light conditions. (Left) Blue (474-nm) LED light presented to contralateral eye (1.9 × 1016 photons/cm2/s). (Middle) White halogen light presented to contralateral eye (27.58 W/m2). (Right) 1000 lux white compact fluorescent light presented overhead to both eyes (4.4 W/m2). Line represents mean and points are individual mice. Statistical significance determined by one-way ANOVA followed by Sidak’s post-test. No difference observed when light presented overhead. Control (Opn4+/-) n = 7 and Opn4-/- n = 9.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-figsupp4-v3.jpg)
 
-**Figure 2—figure supplement 4.:** (A) Cartoon representation of a cone and a diagram of its phototransduction cascade. Different aspects of this cascade are disrupted in the various ‘rod-only’ lines we use. (B) Multiple mouse lines with rods as the only functional photoreceptors. For the experiments in C and D: WT n = 6, Rod-only type 1 (RO1: Cnga3 = 6, Rod-only type 2 (RO2: -/-; Opn4-/-) nGnat2 = 8, Rod-only type 3 (RO3: Cone-DTA; -/-; Opn4-/-) nOpn4 = 5. (-/-) nC) Intensity-response curve of the PLR in all of the rod-only lines, which are all similar to wild-type at all light intensities (mean ± SD). At 1000 lux, only RO2s are statistically different from wildtype (p=0.006 by one-way ANOVA with Sidak‘s post-test). (D) Sensitivity (EC50) in each of the mutant lines. No statistical differences were observed between the mouse lines (compared to WT, RO1 p=0.956, RO2 p=0.340, RO3 p=0.141 using a one-way ANOVA with Sidak’s post-test), although the RO2 line had more variability and trended toward lower sensitivity. (E and F) Kinetic comparison of rod-only lines at dim (E) and bright (F) light intensities. RO1 and RO3 lines are identical to wildtype under both light intensities, however, RO2 mice display PLR decay within 30s. All statistics are one-way ANOVA with Sidak’s post-test, line indicates mean.DOI: http://dx.doi.org/10.7554/eLife.15392.010
+**Figure 2—figure supplement 4.:** (A) Cartoon representation of a cone and a diagram of its phototransduction cascade. Different aspects of this cascade are disrupted in the various ‘rod-only’ lines we use. (B) Multiple mouse lines with rods as the only functional photoreceptors. For the experiments in C and D: WT n = 6, Rod-only type 1 (RO1: Cnga3-/-; Opn4-/-) n = 6, Rod-only type 2 (RO2: Gnat2-/-; Opn4-/-) n = 8, Rod-only type 3 (RO3: Cone-DTA; Opn4-/-) n = 5. (C) Intensity-response curve of the PLR in all of the rod-only lines, which are all similar to wild-type at all light intensities (mean ± SD). At 1000 lux, only RO2s are statistically different from wildtype (p=0.006 by one-way ANOVA with Sidak‘s post-test). (D) Sensitivity (EC50) in each of the mutant lines. No statistical differences were observed between the mouse lines (compared to WT, RO1 p=0.956, RO2 p=0.340, RO3 p=0.141 using a one-way ANOVA with Sidak’s post-test), although the RO2 line had more variability and trended toward lower sensitivity. (E and F) Kinetic comparison of rod-only lines at dim (E) and bright (F) light intensities. RO1 and RO3 lines are identical to wildtype under both light intensities, however, RO2 mice display PLR decay within 30s. All statistics are one-way ANOVA with Sidak’s post-test, line indicates mean.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig2-figsupp5-v3.jpg)
 
-**Figure 2—figure supplement 5.:** Multiple mouse lines with ipRGCs as the only functional photoreceptors (melanopsin-only) or a mouse line with cones as the only functional photoreceptors (cone-only) were tested. For the experiments in A and B: WT n = 9, Gnat1-/-n = 10, Melanopsin-only type 1 (MO1: Gnat1 = 7, Melanopsin-only type 2 (MO2: -/-; Cnga3-/-) nGnat1 = 9, Melanopsin-only type 3 (MO3: Rod-DTA; Cone-DTA) -/-; Gnat2-/-) nn = 6, Cone-only (Gnat1 = 6. (-/-; Opn4-/-) nA) Intensity-response curve of the PLR in all of the melanopsin-only lines and in the cone-only mouse line (mean ± SD). (B) EC50 in each of the lines. All mutant lines are less sensitive than WT (p<0.0001) by >2 log units. Cone-only mice are additionally less sensitive than Rod KO mice (p<0.0001), but no melanopsin-only line is significantly different from Rod KO (Compared to RKO: MO1 p=0.201, MO2 p=0.625, MO3 p=0.591). All statistics are one-way ANOVA with Sidak’s post-test, line indicates mean.DOI: http://dx.doi.org/10.7554/eLife.15392.011
+**Figure 2—figure supplement 5.:** Multiple mouse lines with ipRGCs as the only functional photoreceptors (melanopsin-only) or a mouse line with cones as the only functional photoreceptors (cone-only) were tested. For the experiments in A and B: WT n = 9, Gnat1-/-n = 10, Melanopsin-only type 1 (MO1: Gnat1-/-; Cnga3-/-) n = 7, Melanopsin-only type 2 (MO2: Gnat1-/-; Gnat2-/-) n = 9, Melanopsin-only type 3 (MO3: Rod-DTA; Cone-DTA) n = 6, Cone-only (Gnat1-/-; Opn4-/-) n = 6. (A) Intensity-response curve of the PLR in all of the melanopsin-only lines and in the cone-only mouse line (mean ± SD). (B) EC50 in each of the lines. All mutant lines are less sensitive than WT (p<0.0001) by >2 log units. Cone-only mice are additionally less sensitive than Rod KO mice (p<0.0001), but no melanopsin-only line is significantly different from Rod KO (Compared to RKO: MO1 p=0.201, MO2 p=0.625, MO3 p=0.591). All statistics are one-way ANOVA with Sidak’s post-test, line indicates mean.
+
+**Table 1.**
+ Description of photoreceptor mutant mouse lines used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse line</th>
+      <th>Genotype</th>
+      <th>Effect on retinal function</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rod KO</td>
+      <td>Gnat1-/-</td>
+      <td>No rod phototransduction</td>
+      <td>(Calvert et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>Rod-DTA</td>
+      <td>rdta</td>
+      <td>No rod cell bodies; cones present early in life</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cone KO1</td>
+      <td>Cnga3-/-</td>
+      <td>No cone phototransduction</td>
+      <td>(Biel et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>Cone KO2</td>
+      <td>Gnat2cpfl3/cpfl3</td>
+      <td>No cone phototransduction</td>
+      <td>(Chang et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>Cone-DTA</td>
+      <td>h.red DT-A</td>
+      <td>Ablation of all M cones; &gt;95% loss of S cones</td>
+      <td>(Soucy et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>Melanopsin KO</td>
+      <td>Opn4-/-</td>
+      <td>No melanopsin phototransduction</td>
+      <td>(Lucas et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Cone-only</td>
+      <td>Gnat1-/-; Opn4-/-</td>
+      <td>No rod/melanopsin phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rod-only 1</td>
+      <td>Cnga3-/-; Opn4-/-</td>
+      <td>No cone/melanopsin phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rod-only 2</td>
+      <td>Gnat2-/-; Opn4-/-</td>
+      <td>No cone/melanopsin phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rod-only 3</td>
+      <td>h.red DT-A; Opn4-/-</td>
+      <td>No cone cells nor melanopsin phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Melanopsin-only 1</td>
+      <td>Gnat1-/-; Cnga3-/-</td>
+      <td>No rod/cone phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Melanopsin-only 2</td>
+      <td>Gnat1-/-; Gnat2-/-</td>
+      <td>No rod/cone phototransduction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Melanopsin-only 3</td>
+      <td>rdta; h.red DT-A</td>
+      <td>No rod or cone cell bodies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Red cone KI</td>
+      <td>Opn1mwred</td>
+      <td>Cones have shifted sensitivity to red</td>
+      <td>(Smallwood et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Red cone KI; Rod KO</td>
+      <td>Opn1mwred;Gnat1-/-</td>
+      <td>Cones have shifted sensitivity to red, no rod phototransduction</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Importantly, these mutant mouse lines have been extensively tested for visual function (Alam et al., 2015; Altimus et al., 2010; Biel et al., 1999; Cahill and Nathans, 2008; Calvert et al., 2000; Naarendorp et al., 2010; Nathan et al., 2006; Zhao et al., 2014). Rod sensitivity and function is unchanged in cone mutant animals and cone sensitivity and function is unchanged in rod mutant animals (Alam et al., 2015; Altimus et al., 2010; Biel et al., 1999; Cahill and Nathans, 2008; Calvert et al., 2000; Naarendorp et al., 2010; Nathan et al., 2006). Electrophysiological recordings of ipRGCs show functional rod input in cone mutants and functional cone input in rod mutants (Zhao et al., 2014). Additionally, all of the photoreceptor mutant lines we used have similar pupil sizes in darkness (Figure 2—figure supplement 1). Therefore, these mouse lines allow precise separation of rod, cone, and melanopsin activation while leaving the function of the other photoreceptors intact.
 
@@ -101,53 +208,106 @@ In marked contrast to rod input, cone and melanopsin inputs were severely defici
 
 Collectively, these results show that rods serve as the primary input to ipRGCs for transient PLR responses, especially at low to moderate light intensities. At bright light intensities, additional input originates predominantly from melanopsin phototransduction.
 
-## Glutamaterigic output provides precise and rapid transient signaling
+### Glutamaterigic output provides precise and rapid transient signaling
 
-To investigate how ipRGCs relay transient light detection to the brain, we tested the transient PLR in mice lacking glutamatergic neurotransmission in ipRGCs (
+To investigate how ipRGCs relay transient light detection to the brain, we tested the transient PLR in mice lacking glutamatergic neurotransmission in ipRGCs (Opn4Cre/+ ; Slc17a6fl/fl, also known as Vglut2fl/fl) or mice lacking PACAP in ipRGCs (Opn4Cre/+ ; Adcyap1fl/-) (Figure 3A and Table 2). See Figure 3—figure supplement 2 for details on design of the conditional PACAP allele (Adcyap1fl).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig3-v3.jpg)
 
-**Figure 3.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves of the PLR in each of the neurotransmitter mutant mouse lines (Wildtype n = 6) (ipRGC glu. KO: Opn4 = 4) (ipRGC PACAP KO: Cre/+ ; Slc17a6fl/fl nOpn4 = 6)(mean ± SD). (Cre/+ ;Adcyap1fl/- nC) Sensitivity (EC50) in each of the mutant lines. Statistical significance determined by one-way ANOVA with Sidak’s post-test. (D) Kinetics of transient pupil constriction (1000 lux) in mice lacking glutamatergic or PACAPergic neurotransmission. Traces of individual mice are shown behind one-phase decay curve-fits. Half-lives: Wildtype (1.1 s), ipRGC glu. KO (4.8 s), ipRGC PACAP KO (1.1 s). (E) Representative pupil images at 5 s and 30 s post-illumination (1000 lux). Figure 3—figure supplements 1–3.DOI: http://dx.doi.org/10.7554/eLife.15392.013
+**Figure 3.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves of the PLR in each of the neurotransmitter mutant mouse lines (Wildtype n = 6) (ipRGC glu. KO: Opn4Cre/+ ; Slc17a6fl/fl n = 4) (ipRGC PACAP KO: Opn4Cre/+ ;Adcyap1fl/- n = 6)(mean ± SD). (C) Sensitivity (EC50) in each of the mutant lines. Statistical significance determined by one-way ANOVA with Sidak’s post-test. (D) Kinetics of transient pupil constriction (1000 lux) in mice lacking glutamatergic or PACAPergic neurotransmission. Traces of individual mice are shown behind one-phase decay curve-fits. Half-lives: Wildtype (1.1 s), ipRGC glu. KO (4.8 s), ipRGC PACAP KO (1.1 s). (E) Representative pupil images at 5 s and 30 s post-illumination (1000 lux). Figure 3—figure supplements 1–3.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig3-figsupp1-v3.jpg)
 
-**Figure 3—figure supplement 1.:** Dark-adapted pupil sizes of all mouse lines used for neurotransmitter investigation. Pupil size was recorded before light onset and pupil area (mm2) is reported. ipRGC glutamate KO mice are the only line used which display a significant difference in dark-adapted pupil size suggesting that glutamatergic signaling is important for setting pupil size in darkness (p=0.0001). Statistical significance was determined by one-way ANOVA followed by Sidak’s post-test.DOI: http://dx.doi.org/10.7554/eLife.15392.014
+**Figure 3—figure supplement 1.:** Dark-adapted pupil sizes of all mouse lines used for neurotransmitter investigation. Pupil size was recorded before light onset and pupil area (mm2) is reported. ipRGC glutamate KO mice are the only line used which display a significant difference in dark-adapted pupil size suggesting that glutamatergic signaling is important for setting pupil size in darkness (p=0.0001). Statistical significance was determined by one-way ANOVA followed by Sidak’s post-test.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig3-figsupp2-v3.jpg)
 
-**Figure 3—figure supplement 2.:** Schematic of the conditional PACAP allele (Adcyap1). Boxes indicate exons (1–5). Grey indicates UTR while black indicates protein coding sequence. A single FRT site remains after removal of selection cassette. LoxP sites flank exon 2. Cre-mediated excision results in a frameshift and production of a truncated protein. See Materials and methods for further information of allele generation and confirmation. A more detailed description of the generation and use of the allele will appear in a manuscript that is in preparation (Ross and Lowell, unpublished).loxDOI: http://dx.doi.org/10.7554/eLife.15392.015
+**Figure 3—figure supplement 2.:** Schematic of the conditional PACAP allele (Adcyap1lox). Boxes indicate exons (1–5). Grey indicates UTR while black indicates protein coding sequence. A single FRT site remains after removal of selection cassette. LoxP sites flank exon 2. Cre-mediated excision results in a frameshift and production of a truncated protein. See Materials and methods for further information of allele generation and confirmation. A more detailed description of the generation and use of the allele will appear in a manuscript that is in preparation (Ross and Lowell, unpublished).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig3-figsupp3-v3.jpg)
 
-**Figure 3—figure supplement 3.:** Transient constriction was monitored in neurotransmitter mutant mice under high light (5000 lux). Data from each mouse is shown with the mean (black bar). ipRGC glutamate KO mice (Opn4 = 4) display a significant reduction in transient phase pupil constriction compared to wildtype (Cre/+ ; Slc17a6fl/fl: nn = 6)(p<0.0001) while ipRGC PACAP KO (Opn4 = 6) and PACAP KO (Cre/+;Adcyap1fl/-: nn = 4) mice are indistinguishable from wildtype (p>0.999). Statistical signficance determined via one-way ANOVA followed by Sidak’s post-test.DOI: http://dx.doi.org/10.7554/eLife.15392.016
+**Figure 3—figure supplement 3.:** Transient constriction was monitored in neurotransmitter mutant mice under high light (5000 lux). Data from each mouse is shown with the mean (black bar). ipRGC glutamate KO mice (Opn4Cre/+ ; Slc17a6fl/fl: n = 4) display a significant reduction in transient phase pupil constriction compared to wildtype (n = 6)(p<0.0001) while ipRGC PACAP KO (Opn4Cre/+;Adcyap1fl/-: n = 6) and PACAP KO (n = 4) mice are indistinguishable from wildtype (p>0.999). Statistical signficance determined via one-way ANOVA followed by Sidak’s post-test.
+
+**Table 2.**
+ Description of neurotransmitter mutant mouse lines used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse line</th>
+      <th>Genotype</th>
+      <th>Effect on retinal function</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Melanopsin-Cre</td>
+      <td>Opn4Cre/+</td>
+      <td>Cre expression in ipRGCs</td>
+      <td>(Ecker et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Slc17a6-flox</td>
+      <td>Slc17a6fl/fl</td>
+      <td>Exon 2 flanked by loxP sites</td>
+      <td>(Hnasko et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>ipRGC glutamate KO</td>
+      <td>Opn4Cre/+; Slc17a6fl/fl</td>
+      <td>Silences ipRGC glutamatergic release</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PACAP KO</td>
+      <td>Adcyap1-/-</td>
+      <td>Whole animal PACAP removal</td>
+      <td>(Hamelink et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>PACAP-flox</td>
+      <td>Adcyap1fl/fl</td>
+      <td>Exon 2 flanked by loxP sites</td>
+      <td>See Figure 3—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>ipRGC PACAP KO</td>
+      <td>Opn4Cre/+ ; Adcyap1fl/-</td>
+      <td>Silences ipRGC PACAP release</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Though ipRGC glutamate knockout mice (Opn4Cre/+ ; Slc17a6fl/fl) exhibited a small decrease in resting pupil size (Figure 3—figure supplement 1) (Delwig et al., 2013), we observed that they had minimal transient PLR at all light intensities (Figure 3B–E), with more robust PLR at very bright light intensities (Figure 3—figure supplement 3), in agreement with previous studies (Delwig et al., 2013; Purrier et al., 2014). This indicates that ipRGC glutamatergic neurotransmission is a critical transient signal for the PLR. Presumably, the residual transient response is PACAPergic.
 
 In contrast to ipRGC glutamate knockout mice, ipRGC PACAP knockout mice had no deficits in transient PLR sensitivity or kinetics (Figure 3B–E), as observed previously (Kawaguchi et al., 2010), suggesting that glutamate is sufficient for the entirety of the transient PLR. Additionally, these results show that any potential modulation of glutamatergic signaling by PACAP (Chen et al., 1999; Toda and Huganir, 2015) is dispensable for the transient PLR. Together, these data derived from retinal mutants for photoreceptors and neurotransmitters identify rods as the principal input and glutamate as the principal output of ipRGC-mediated transient PLR signaling.
 
-## Melanopsin/rod synergy supports PLR under sustained conditions
+### Melanopsin/rod synergy supports PLR under sustained conditions
 
-Since wildtype responses decay over time (
+Since wildtype responses decay over time (Figure 1), we next asked how ipRGC inputs and outputs drive the PLR across longer times (Figure 4A). Strikingly, when we measured the sustained PLR in melanopsin knockout mice, which have a normal transient PLR (Figure 2B), there was virtually no pupil constriction (Figure 4B), even at bright light intensities (up to 10,000 lux, Figure 4—figure supplement 1A). We observed that melanopsin knockout mice lose pupil constriction in minutes (half-life: ~4 min, Figure 4C), similar to the wildtype PLR decay rate at lower light intensities (WT half-life range: ~2–4 min at 1–100 lux, Figure 1F). This suggests that melanopsin phototransduction maintains robust light input in ipRGCs during the day (Figure 4—figure supplement 1B), after rods adapt to background light.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig4-v3.jpg)
 
-**Figure 4.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves for wildtype and melanopsin knockout mice (Opn4): transient (dotted lines for reference) and sustained (60 min: solid lines) (WT -/-n = 6, Opn4 = 12). (right) Representative pupil images under 1000 lux persistent light. (-/- nC) 60-min time course of pupil constriction under constant light (1000 lux). Data fit with a one-phase association curve (WT n = 5, Opn4 = 7). (-/- nD) Sustained pupil constriction monitored every 5 min for 1 hr in melanopsin knockout mice (Opn4) expressing the GCre/Creq-coupled DREADD (hM3D) specifically in ipRGCs (AAV2-hSyn-DIO-hM3D(Gq)-mCherry). CNO injection IP (blue) caused robust constriction within 5–10 min that was sustained for 60 min, whereas PBS injection (black) did not. CNO data is fit with a one-phase association curve and PBS data is fit with a linear regression (n = 6, mean ± SD). (E) (top) Diagram showing viral eye injection in only one eye. (bottom) Confocal microscope images of an Opn4retina injected with AAV2-CMV-DIO-mRuby-P2A-Melanopsin-FLAG showing infection and expression (mRuby, top; anti-OPN4, bottom). Scale bar = 50 µm. (Cre/Cre F) Successful rescue of pupil constriction by virally restored melanopsin expression in a single eye of adult mice (WT n = 6, Mel. KO n = 12, Mel.-Rescue n = 4). (right) Representative pupil images of Mel. KO and Mel.-Rescue mice at 1000 lux. (G) PLR intensity-response curves of Wildtype (n = 6), Mel.-only (Rod-DTA; Cone-DTA n = 8), Cone KO (Cnga3 = 4), and Rod KO (Rod-DTA -/-nn = 5) mice (mean ± SD). Melanopsin is sufficient at high light (≥1000 lux), however, rods are required at lower light intensities. Cone KO mice are similar to wildtype. (top) Representative pupil images at 1000 lux. See also Figure 4—figure supplement 1–4.DOI: http://dx.doi.org/10.7554/eLife.15392.018
+**Figure 4.:** (A) Diagram of ipRGC behavioral circuit. (B) Intensity-response curves for wildtype and melanopsin knockout mice (Opn4-/-): transient (dotted lines for reference) and sustained (60 min: solid lines) (WT n = 6, Opn4-/- n = 12). (right) Representative pupil images under 1000 lux persistent light. (C) 60-min time course of pupil constriction under constant light (1000 lux). Data fit with a one-phase association curve (WT n = 5, Opn4-/- n = 7). (D) Sustained pupil constriction monitored every 5 min for 1 hr in melanopsin knockout mice (Opn4Cre/Cre) expressing the Gq-coupled DREADD (hM3D) specifically in ipRGCs (AAV2-hSyn-DIO-hM3D(Gq)-mCherry). CNO injection IP (blue) caused robust constriction within 5–10 min that was sustained for 60 min, whereas PBS injection (black) did not. CNO data is fit with a one-phase association curve and PBS data is fit with a linear regression (n = 6, mean ± SD). (E) (top) Diagram showing viral eye injection in only one eye. (bottom) Confocal microscope images of an Opn4Cre/Cre retina injected with AAV2-CMV-DIO-mRuby-P2A-Melanopsin-FLAG showing infection and expression (mRuby, top; anti-OPN4, bottom). Scale bar = 50 µm. (F) Successful rescue of pupil constriction by virally restored melanopsin expression in a single eye of adult mice (WT n = 6, Mel. KO n = 12, Mel.-Rescue n = 4). (right) Representative pupil images of Mel. KO and Mel.-Rescue mice at 1000 lux. (G) PLR intensity-response curves of Wildtype (n = 6), Mel.-only (Rod-DTA; Cone-DTA n = 8), Cone KO (Cnga3-/-n = 4), and Rod KO (Rod-DTA n = 5) mice (mean ± SD). Melanopsin is sufficient at high light (≥1000 lux), however, rods are required at lower light intensities. Cone KO mice are similar to wildtype. (top) Representative pupil images at 1000 lux. See also Figure 4—figure supplement 1–4.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig4-figsupp1-v3.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Sustained constriction at 10,000 lux (WT n = 6, only 1 is plotted due to inability to see extremely small pupils in very bright light, Mel. KO n = 6). (B) Time course of pupil constriction under 12 hr of constant light corresponding to circadian day (room lighting = 350 lux) using wildtype (n = 3) and melanopsin knockout mice (n = 4) (line is smoothed mean).DOI: http://dx.doi.org/10.7554/eLife.15392.019
+**Figure 4—figure supplement 1.:** (A) Sustained constriction at 10,000 lux (WT n = 6, only 1 is plotted due to inability to see extremely small pupils in very bright light, Mel. KO n = 6). (B) Time course of pupil constriction under 12 hr of constant light corresponding to circadian day (room lighting = 350 lux) using wildtype (n = 3) and melanopsin knockout mice (n = 4) (line is smoothed mean).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig4-figsupp2-v3.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Schematic of the method to activate exclusively ipRGCs using an exogenous GPCR (hM3D(Gq)) and its ligand (CNO). (B) Confocal microscope image showing infection of ipRGCs observed by mCherry expression following administration of a Cre-dependent AAV injected into the vitreous of melanopsin-Cre knockout mice (Opn4). (Cre/CreC–E) Confirmation of ipRGC-specific expression of melanopsin from AAV-DIO-mRuby-P2A-Melanopsin-FLAG viral injections. Opn4 mice were used to colocalize viral (Cre/+ C) mRuby with (D) endogenous and exogenous melanopsin expression. (E) We observe specific expression of mRuby in a significant portion of ipRGCs, although some ipRGCs lack mRuby staining, presumably due to lack of infectivity (arrows show mRuby-negative ipRGCs). Scale bars = 50 μm. (F) Quantification of fraction of ipRGCs (melanopsin-antibody) which are mRuby-positive. Quantification shown for three mice (A single 20x field was quantified for each mouse). Approximately 90% of melanopsin-positive cells express mRuby.DOI: http://dx.doi.org/10.7554/eLife.15392.020
+**Figure 4—figure supplement 2.:** (A) Schematic of the method to activate exclusively ipRGCs using an exogenous GPCR (hM3D(Gq)) and its ligand (CNO). (B) Confocal microscope image showing infection of ipRGCs observed by mCherry expression following administration of a Cre-dependent AAV injected into the vitreous of melanopsin-Cre knockout mice (Opn4Cre/Cre). (C–E) Confirmation of ipRGC-specific expression of melanopsin from AAV-DIO-mRuby-P2A-Melanopsin-FLAG viral injections. Opn4Cre/+  mice were used to colocalize viral (C) mRuby with (D) endogenous and exogenous melanopsin expression. (E) We observe specific expression of mRuby in a significant portion of ipRGCs, although some ipRGCs lack mRuby staining, presumably due to lack of infectivity (arrows show mRuby-negative ipRGCs). Scale bars = 50 μm. (F) Quantification of fraction of ipRGCs (melanopsin-antibody) which are mRuby-positive. Quantification shown for three mice (A single 20x field was quantified for each mouse). Approximately 90% of melanopsin-positive cells express mRuby.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig4-figsupp3-v3.jpg)
 
-**Figure 4—figure supplement 3.:** (A) PLR intensity-response curves of wildtype and mice with only melanopsin phototransduction intact (‘melanopsin-only’: Gnat1 = 4, -/-; Gnat2-/- nGnat1 = 4, Rod-DTA; Cone-DTA -/-; Cnga3-/- nn = 8) (mean ± SD). (B) Sustained PLR intensity-response curves of wildtype (n = 11) and rod mutant mice (Gnat1 = 5, Rod-DTA -/- nn = 5) (mean ± SD). (C) Sustained PLR intensity-responses of wildtype and cone mutant mice (‘cone mutants’: Gnat2 = 4), -/- (nCnga3(n = 4), Cone-DTA (-/-n = 4)). (D) Sustained EC50 for wildtype and cone mutant, rod mutant and melanopsin-only mice (line = mean). All rod mutant and melanopsin-only mouse lines display significnt loss of sensitivity (p<0.0001). Two of three cone mutant mouse lines were not significantly different from wildtype (Cnga3p=0.57, Cone-DTA p>0.999), though -/-Gnat2 displayed a 0.69 log-unit decrease in sustained PLR EC-/-50 (Gnat2 = 0.004). Additionally, all rod mutant lines were similar to their corresponding melanopsin-only line (p>0.706) while all cone mutant lines were significantly more sensitive than their corresponding melanopsin-only line (p≤0.0001). Statistical significance determined via one-way ANOVA with Sidak’s post-test.-/-PDOI: http://dx.doi.org/10.7554/eLife.15392.021
+**Figure 4—figure supplement 3.:** (A) PLR intensity-response curves of wildtype and mice with only melanopsin phototransduction intact (‘melanopsin-only’: Gnat1-/-; Gnat2-/- n = 4, Gnat1-/-; Cnga3-/- n = 4, Rod-DTA; Cone-DTA n = 8) (mean ± SD). (B) Sustained PLR intensity-response curves of wildtype (n = 11) and rod mutant mice (Gnat1-/- n = 5, Rod-DTA n = 5) (mean ± SD). (C) Sustained PLR intensity-responses of wildtype and cone mutant mice (‘cone mutants’: Gnat2-/- (n = 4), Cnga3-/-(n = 4), Cone-DTA (n = 4)). (D) Sustained EC50 for wildtype and cone mutant, rod mutant and melanopsin-only mice (line = mean). All rod mutant and melanopsin-only mouse lines display significnt loss of sensitivity (p<0.0001). Two of three cone mutant mouse lines were not significantly different from wildtype (Cnga3-/-p=0.57, Cone-DTA p>0.999), though Gnat2-/- displayed a 0.69 log-unit decrease in sustained PLR EC50 (Gnat2-/-P = 0.004). Additionally, all rod mutant lines were similar to their corresponding melanopsin-only line (p>0.706) while all cone mutant lines were significantly more sensitive than their corresponding melanopsin-only line (p≤0.0001). Statistical significance determined via one-way ANOVA with Sidak’s post-test.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig4-figsupp4-v3.jpg)
 
-**Figure 4—figure supplement 4.:** (A) Sustained PLR dose-responses for wildtype (n = 11), melanopsin knockout (Opn4 = 12) and mice with only rod phototransduction intact (‘rod-only’: -/-, nCnga3 = 4) (mean ± SD). (right) Scatter plot of 1000 lux sustained PLR. Melanopsin knockout and ‘rod-only’ mice not statistically different by one-way ANOVA with Sidak’s post-test (p=0.983) (line indicates mean). (-/-; Opn4-/- nB) Sustained PLR intensity-responses for wildtype (n = 11), melanopsin knockout (Opn4 = 12) and mice with only cone phototransduction intact (‘cone-only’: -/- nOpn4 = 6, mean ± SD). (right) Scatter plot of 1000 lux sustained PLR. Melanopsin knockout and ‘cone-only’ mice are statistically different by one-way ANOVA followed by Sidak’s post-test.-/-; Gnat1-/-, nDOI: http://dx.doi.org/10.7554/eLife.15392.022
+**Figure 4—figure supplement 4.:** (A) Sustained PLR dose-responses for wildtype (n = 11), melanopsin knockout (Opn4-/-, n = 12) and mice with only rod phototransduction intact (‘rod-only’: Cnga3-/-; Opn4-/- n = 4) (mean ± SD). (right) Scatter plot of 1000 lux sustained PLR. Melanopsin knockout and ‘rod-only’ mice not statistically different by one-way ANOVA with Sidak’s post-test (p=0.983) (line indicates mean). (B) Sustained PLR intensity-responses for wildtype (n = 11), melanopsin knockout (Opn4-/- n = 12) and mice with only cone phototransduction intact (‘cone-only’: Opn4-/-; Gnat1-/-, n = 6, mean ± SD). (right) Scatter plot of 1000 lux sustained PLR. Melanopsin knockout and ‘cone-only’ mice are statistically different by one-way ANOVA followed by Sidak’s post-test.
 
 The severe deficits we observed in the sustained PLR in melanopsin knockout mice raised the possibility that these animals may have developmental deficits that affect their signaling (Rao et al., 2013; Renna et al., 2011). To directly address this issue, we rescued ipRGC function in adult melanopsin knockout mice using either chemogenetics or restoration of melanopsin expression. Using our mouse line with Cre introduced into the melanopsin locus (Opn4Cre/Cre) and a Cre-dependent chemogenetic DREADD virus (AAV2-hSyn-DIO-hM3D(Gq)-mCherry) (Figure 4—figure supplement 2), we administered the selective DREADD agonist CNO (Armbruster et al., 2007) and observed robust and sustained pupil constriction for at least one hour (Figure 4D). This result demonstrates that ipRGCs and their downstream circuits remain competent for sustained signaling in melanopsin knockout mice. Furthermore, we acutely restored melanopsin in the majority of ipRGCs of melanopsin-Cre knockout mice (Opn4Cre/Cre) using a virus that expresses melanopsin in a Cre-dependent manner (Figure 4E and Figure 4—figure supplement 2C–E, AAV2-CMV-DIO-mRuby-P2A-Melanopsin-FLAG). Following melanopsin restoration, we observed a rescue of the sustained PLR (Figure 4F). These results demonstrate for the first time that the effect of melanopsin loss can be rescued in adulthood, indicating that melanopsin-based light detection is directly required for ipRGCs to signal sustained PLR.
 
@@ -157,33 +317,37 @@ As with the transient PLR, we found that cone knockout mice had no deficit in su
 
 These results show that melanopsin signaling dominates sustained light input to ipRGCs, but rods, which are thought to be nonfunctional under continuous bright light, are intimately involved in supporting the sustained PLR. Notably, rod contributions to the sustained PLR occur predominantly at light intensities above their presumed saturation (~40 lux), showing that rods are indeed capable of contributing to visual function above previously defined limits (Alam et al., 2015; Altimus et al., 2010; Naarendorp et al., 2010). Therefore, sustained ipRGC responses are not a simple consequence of a single photoreceptive system, but instead require rod/melanopsin synergy for highest sensitivity.
 
-## PACAP is essential for the sustained PLR
+### PACAP is essential for the sustained PLR
 
-Studies of ipRGC neurotransmitters, in combination with our transient PLR results presented here, suggest that glutamate is the primary ipRGC neurotransmitter, and that PACAP plays a minor, or modulatory, role (
+Studies of ipRGC neurotransmitters, in combination with our transient PLR results presented here, suggest that glutamate is the primary ipRGC neurotransmitter, and that PACAP plays a minor, or modulatory, role (Beaulé et al., 2009; Colwell et al., 2004; Delwig et al., 2013; Gompf et al., 2015; Kawaguchi et al., 2010, 2003; Purrier et al., 2014). However, when we tested the sustained PLR in ipRGC glutamate knockout mice, we found that their pupil constriction improved over time compared to their transient PLR sensitivity (Figure 5B,C). In contrast, PLR sensitivity either stays the same or declines in all other mutant lines, suggesting that the remaining signal in glutamate knockout mice, presumably PACAP, becomes more effective with longer stimulus duration. Intriguingly, ipRGC glutamate knockout mice showed pulsatile or periodic pupil constriction over time, potentially due to waves of neuropeptide vesicle delivery and release from ipRGC axons (Video 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig5-v3.jpg)
 
-**Figure 5.:** (A) Diagram of ipRGC behavioral circuit. (B) PLR intensity-response curves of sustained constriction in mice lacking glutamatergic or PACAPergic neurotransmission (WT n = 6, ipRGC glu. KO n = 4, ipRGC PACAP KO n = 6)(mean ± SD). Both mutants display deficits at 10, 100, and 1000 lux as compared to wildtype (wildtype v. ipRGC Glu. KO: 10 and 100 lux p<0.0001, 1000 lux p=0.0004 by two-way ANOVA with Sidak’s post-test)(wildtype v. ipRGC PACAP KO: 10, 100, and 1000 lux p<0.0001 by two-way ANOVA with Sidak’s post-test). (C) Representative pupil images of sustained constriction at 1000 lux. (D) Comparison of transient and sustained constriction under high light (1000 lux). ipRGC glu. KO mice (red) show an increase in pupil constriction with time whereas ipRGC PACAP KOs (blue) display a significant loss of constriction over time (ipRGC glu. KO transient v. sustained p<0.0001, ipRGC PACAP KO transient v. sustained p=0.0003, wildtype transient v. sustained p=0.9921 by one-way ANOVA with Sidak’s post-test). (E) Pupil constriction of neurotransmitter mutant mice after sustained 5000 lux light. Data from individual mice shown with mean (black bar). Statistical significance determined by one-way ANOVA with Sidak’s post-test. See also Figure 5—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.15392.023
+**Figure 5.:** (A) Diagram of ipRGC behavioral circuit. (B) PLR intensity-response curves of sustained constriction in mice lacking glutamatergic or PACAPergic neurotransmission (WT n = 6, ipRGC glu. KO n = 4, ipRGC PACAP KO n = 6)(mean ± SD). Both mutants display deficits at 10, 100, and 1000 lux as compared to wildtype (wildtype v. ipRGC Glu. KO: 10 and 100 lux p<0.0001, 1000 lux p=0.0004 by two-way ANOVA with Sidak’s post-test)(wildtype v. ipRGC PACAP KO: 10, 100, and 1000 lux p<0.0001 by two-way ANOVA with Sidak’s post-test). (C) Representative pupil images of sustained constriction at 1000 lux. (D) Comparison of transient and sustained constriction under high light (1000 lux). ipRGC glu. KO mice (red) show an increase in pupil constriction with time whereas ipRGC PACAP KOs (blue) display a significant loss of constriction over time (ipRGC glu. KO transient v. sustained p<0.0001, ipRGC PACAP KO transient v. sustained p=0.0003, wildtype transient v. sustained p=0.9921 by one-way ANOVA with Sidak’s post-test). (E) Pupil constriction of neurotransmitter mutant mice after sustained 5000 lux light. Data from individual mice shown with mean (black bar). Statistical significance determined by one-way ANOVA with Sidak’s post-test. See also Figure 5—figure supplement 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Intensity-response curves of the transient PLR (30s light) in each of the neurotransmitter mutant mouse lines (Wildtype n = 6)(ipRGC glu. KO: Opn4 = 4)(PACAP KO: Cre/+ ; Slc17a6fl/fl nAdcyap1 = 4)(mean ± SD). (-/- nB) Sensitivity (EC50) in each of the mutant lines. Statistical significance determined by one-way ANOVA with Sidak’s post-test. (C) Comparison of transient and sustained (60 min. light) constriction under high light (1000 lux). ipRGC glu. KO mice (red) show an increase in pupil constriction with time whereas PACAP KOs (blue) display a significant loss of constriction over time. (D) PLR intensity-response curves of sustained constriction in mice lacking glutamatergic or PACAPergic neurotransmission (WT n = 6, ipRGC glu. KO n = 4, PACAP KO n = 4)(mean ± SD). Both mutants display similar deficits until 1000 lux where PACAP KO mice show a further deficit (PACAP KO v. ipRGC Glu. KO: p=0.0019 by one-way ANOVA with Sidak’s post-test). (right) Representative pupil images of sustained constriction at 1000 lux. (E) Pupil constriction of neurotransmitter mutant mice after sustained 5000 lux light. Data from individual mice shown with mean (black bar). Statistical significance determined by one-way ANOVA with Sidak’s post-test. (F) 60-min. time course of pupil constriction under constant light (1000 lux). Data fit with a one-phase association curve (WT n = 5, PACAP KO n = 4). (mean ± SD).DOI: http://dx.doi.org/10.7554/eLife.15392.024
+**Figure 5—figure supplement 1.:** (A) Intensity-response curves of the transient PLR (30s light) in each of the neurotransmitter mutant mouse lines (Wildtype n = 6)(ipRGC glu. KO: Opn4Cre/+ ; Slc17a6fl/fl n = 4)(PACAP KO: Adcyap1-/- n = 4)(mean ± SD). (B) Sensitivity (EC50) in each of the mutant lines. Statistical significance determined by one-way ANOVA with Sidak’s post-test. (C) Comparison of transient and sustained (60 min. light) constriction under high light (1000 lux). ipRGC glu. KO mice (red) show an increase in pupil constriction with time whereas PACAP KOs (blue) display a significant loss of constriction over time. (D) PLR intensity-response curves of sustained constriction in mice lacking glutamatergic or PACAPergic neurotransmission (WT n = 6, ipRGC glu. KO n = 4, PACAP KO n = 4)(mean ± SD). Both mutants display similar deficits until 1000 lux where PACAP KO mice show a further deficit (PACAP KO v. ipRGC Glu. KO: p=0.0019 by one-way ANOVA with Sidak’s post-test). (right) Representative pupil images of sustained constriction at 1000 lux. (E) Pupil constriction of neurotransmitter mutant mice after sustained 5000 lux light. Data from individual mice shown with mean (black bar). Statistical significance determined by one-way ANOVA with Sidak’s post-test. (F) 60-min. time course of pupil constriction under constant light (1000 lux). Data fit with a one-phase association curve (WT n = 5, PACAP KO n = 4). (mean ± SD).
+
+![Video 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-media1.mp4.jpg)
+
+**Video 1.:** This video is at 5x speed. 1000 lux white light (6500K) turns on at approximately 1s.
 
 Neuropeptides have been shown to require high frequency neuronal activity for release and have relatively slow signaling kinetics compared to classical neurotransmitters (Vaaga et al., 2014), suggesting that PACAP may be involved in sustained ipRGC signaling at bright light intensities. In support of a role for PACAP in sustained PLR signaling, we find that even though ipRGC PACAP knockout mice show normal transient PLR, they have an attenuated sustained PLR (Figure 5B–E). This deficit in ipRGC PACAP knockout mice occurs even at moderate light intensities (10 and 100 lux). ipRGC PACAP KO mice display decaying constriction over time at 1000 lux as opposed to maintained constriction in wildtype mice and enhanced constriction in ipRGC glutamate KOs (Figure 5D). At the brightest light intensity tested, 5000 lux, ipRGC PACAP KO mice display significantly worse sustained constriction than ipRGC glutamate KO mice (Figure 5E), suggesting that PACAP is more important than glutamate for maintained responses under daylight conditions (1000–100,000+ lux).
 
 Additionally, we observed similar yet more pronounced deficits in full body PACAP KO mice (Adcyap1-/-; Figure 5—figure supplement 1). They display wildtype transient responses (Figure 5—figure supplement 1A,B) and severely attenuated sustained responses (Figure 5—figure supplement 1C–E). Interestingly, these PACAP knockout mice exhibit PLR decay on a similar timescale as melanopsin knockout mice (half-life: ~5 min, Figure 4C and Figure 5—figure supplement 1F). These results provide evidence that PACAP allows ipRGCs to communicate sustained input to downstream neurons. As observed with the photoreceptor contributions, the highest sensitivity of sustained PLR requires PACAP/glutamate synergy.
 
-## Model of ipRGC circuit transitions
+### Model of ipRGC circuit transitions
 
-Based on our results, we generated a quantitative representation of the distinct roles played by each photoreceptor input and neurotransmitter output of ipRGCs for the PLR over a range of light intensities and light stimulus durations (
+Based on our results, we generated a quantitative representation of the distinct roles played by each photoreceptor input and neurotransmitter output of ipRGCs for the PLR over a range of light intensities and light stimulus durations (Figure 6, see Materials and methods for detailed explanation). We integrated individual necessity (i.e. from knockout lines) and sufficiency (i.e. from ‘–only’ lines) of rods, cones, and melanopsin in driving the PLR (Figure 6—figure supplement 1) to generate a merged heat map representing each photoreceptor’s input to the PLR (Figure 6A,B). We then performed the same technique to represent the neurotransmitter outputs of ipRGCs for the PLR (Figure 6C,D and Figure 6—figure supplement 1) using only the necessity heat maps because we cannot rule out the possibility that other neurotransmitters contribute to ipRGC function. These heat maps provide a comprehensive visualization of the contribution made by each photoreceptor’s input and each neurotransmitter’s output for ipRGC signaling at any particular time or environmental light intensity. ipRGC transient signaling for the PLR is dominated by input from rods (Figure 6A, red) and output by glutamate (Figure 6C, green). In contrast, sustained PLR signaling is dominated by melanopsin (Figure 6B, blue) and PACAP (Figure 6D, blue). Together, these experiments and our model highlight a mechanistic transition in the ipRGC circuit supporting transient and sustained behavioral outputs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig6-v3.jpg)
 
-**Figure 6.:** (A and B) Heat maps of (A) transient and (B) sustained PLR as duration and intensity vary. Night, dawn/dusk, and daytime light intensities indicated by ticks on right side of plot. (top) Heat maps of individual photoreceptor contributions (grayscale). Black represents no contribution and degree of white represents increasing contribution. Each photoreceptor contribution heat map is a combination of necessity (individual photoreceptor transduction knockouts) and sufficiency (‘photoreceptor-only’) heat maps (for example: Input Contributionrod = Max(Necessityrod, Sufficiencyrod)). (middle) Rod (red), cone (green), melanopsin (blue) contributions are combined into a single heat map. (bottom) Color combination guide for reference when viewing heat map. (C and D) Same as above for neurotransmitter contributions to transient (C) and sustained (D) ipRGC signaling. Glutamatergic contribution is in green and PACAPergic contribution is in blue. See the Materials and methods section for details on heat map generation. Note that the axes are the same for the individual and combined heatmaps. See also Figure 6—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.15392.026
+**Figure 6.:** (A and B) Heat maps of (A) transient and (B) sustained PLR as duration and intensity vary. Night, dawn/dusk, and daytime light intensities indicated by ticks on right side of plot. (top) Heat maps of individual photoreceptor contributions (grayscale). Black represents no contribution and degree of white represents increasing contribution. Each photoreceptor contribution heat map is a combination of necessity (individual photoreceptor transduction knockouts) and sufficiency (‘photoreceptor-only’) heat maps (for example: Input Contributionrod = Max(Necessityrod, Sufficiencyrod)). (middle) Rod (red), cone (green), melanopsin (blue) contributions are combined into a single heat map. (bottom) Color combination guide for reference when viewing heat map. (C and D) Same as above for neurotransmitter contributions to transient (C) and sustained (D) ipRGC signaling. Glutamatergic contribution is in green and PACAPergic contribution is in blue. See the Materials and methods section for details on heat map generation. Note that the axes are the same for the individual and combined heatmaps. See also Figure 6—figure supplement 1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/15392/elife-15392-fig6-figsupp1-v3.jpg)
 
-**Figure 6—figure supplement 1.:** Heat maps of necessity and sufficiency of each input (top: rods, cones, melanopsin) as stimulus duration and intensity vary. The necessity/sufficiency heat maps for a particular component were subsequently used to generate a photoreceptor contribution heat map (See Figure 6). Black indicates no necessity/sufficiency and white indicates full necessity/sufficiency.DOI: http://dx.doi.org/10.7554/eLife.15392.027
+**Figure 6—figure supplement 1.:** Heat maps of necessity and sufficiency of each input (top: rods, cones, melanopsin) as stimulus duration and intensity vary. The necessity/sufficiency heat maps for a particular component were subsequently used to generate a photoreceptor contribution heat map (See Figure 6). Black indicates no necessity/sufficiency and white indicates full necessity/sufficiency.
 
 ## Discussion
 
@@ -201,11 +365,11 @@ The complementary arrangement of inputs and outputs for the PLR we describe here
 
 ## Materials and methods
 
-## Animal husbandry
+### Animal husbandry
 
 C57Bl/6 × Sv129 hybrid mice were used in all experiments except PACAP KO mice which were C57Bl/6. All mice were housed according to guidelines from the Animal Care and Use Committee of Johns Hopkins University. Male and female mice age 2–8 months were housed in plastic translucent cages with steel-lined lids in an open room. Ambient room temperature and humidity were monitored daily and tightly controlled. Food and water were available ad libitum. All mice were maintained in a 12 hr:12 hr light-dark cycle with light intensity around 100 lux for the entirety of their lives.
 
-## Pupillometry
+### Pupillometry
 
 All mice were dark-adapted for at least 30 min prior to any experiments and all PLR experiments were performed between Zeitgeber times (ZT) 2 and 10. For all experiments, mice were unanesthetized and restrained by hand. Because stress can affect pupil size, we ensured that the mice were not stressed during these experiments. To do so, we handled the mice for several days prior to the experiments to get them accustomed to the researchers and to being scruffed. Any mice that showed signs of stress, including vocalizations and wriggling during the experiments, were not used and were subjected to more handling sessions before use in experiments.
 
@@ -215,33 +379,37 @@ For the monochromatic light PLR experiments, an LED light (SuperBrightLEDs) was 
 
 Videos of the eye were taken using a Sony Handycam (DCR-HC96) mounted on a tripod a fixed distance from the mouse. Manual focus was maintained on the camera to ensure that only one focal plane existed for each mouse and that therefore variable distance from the camera should not contribute to differences in relative pupil area throughout the video. Pupil size was first recorded under dim red light and the endogenous infrared light source of the camera to capture the dark-adapted pupil size. Following at least 5 s of recording in dark, the pupil was continuously recorded for at least 30 s of a light step stimulus. For all sustained PLR, animals were kept in a cage for 60 min under the light stimulus. Animals were removed from the cage after 60 min and held in front of the camera for 30 s as for the transient PLR. All pupil images presented in the paper were cropped to a fixed square area (generally 100 × 100 pixels) surrounding the eye using GNU Image Manipulation Program (GIMP). The images were made grayscale and then brightness and contrast were adjusted to enhance visibility of the pupil and exported as PNG files.
 
-## Data analysis
+### Data analysis
 
 Videos were transferred from the camera to a computer as Audio Video Interleave (AVI) files and individual frames were taken using VLC media player (www.videolan.org/vlc/) and saved in portable network graphics format (PNG). Images were taken in the dark, at 5 s, and 30 s following stimulus onset. Pupil area was then quantified manually in ImageJ (http://rsbweb.nih.gov/ij/) software. The pupil area was measured in pixels using the oval tool in which the 4 cardinal points of the oval were touching their respective edges of the pupil. The relative pupil area was calculated using LibreOffice Calc or Microsoft Excel in which the area during the light stimulus was divided by the area prior to lights onset. For the transient PLR, the minimum relative pupil size of either 5 s or 30 s after stimulus was used for all genotypes.
 
 The intensity-response curve was fit using a variable slope sigmoidal dose-response curve in Graphpad Prism 6. The top and bottom of the fit were constrained to 1.0 and between 0 and 0.10, respectively, to ensure the EC50 for each genotype was represented by similar curves. For genotypes that never showed evidence of reaching between 0 and 0.10 relative pupil size, the bottom was not constrained. The sensitivity for each genotype was calculated using the same process of fitting each individual animal’s data points with a sigmoidal dose-response curve to generate EC50.
 
-## Conditional PACAP allele
+### Conditional PACAP allele
 
 The lox-modified PACAP (Adcyap1) targeting construct was made by recombineering technology. To engineer the targeting vector, 5’ homology arm, 3’ homology arm and CKO region were amplified from mouse Sv129 BAC genomic DNA and confirmed by end sequencing (Cyagen biosciences, Santa Clara, CA). The two loxP sites flank the second exon and when recombined, create a frameshift mutation and truncated protein. The plasmid was electroporated into W4 ES cells and cells expanded from targeted ES clones were injected into C57BL6 blastocysts. Germline transmitting chimeric animals were obtained and then mated with flpE mice to delete the frt-site flanked neomycin selection cassette. The resulting heterozygous offspring were crossed to generate homozygous PACAPlox/lox study subjects. All mice are thus on a mixed C57Bl6/J and 129Sv background. Offspring were genotyped by PCR using 2 primers (F: CCGATTGATTGACTACAGGCTCC and R: GTGTTAAACACCAGTTAGCCACGC) which detect the presence or absence of the 5’ loxP site and a 3rd primer was used in conjunction with the forward primer (CKO-R GGGCTTTGATCTGGGAACTGAAG) to detect the recombination event. By generating mice homozygous for a germline deleted cre-deleted allele, we have established that the cre-deleted allele does not express intact PACAP mRNA (by PCR and by ISH). A more detailed description of the generation and use of the allele will appear in a manuscript that is in preparation (Ross and Lowell, unpublished).
 
-## Viral infection
+### Viral infection
 
 Mice were anesthetized by intraperitoneal injection of avertin (2, 2, 2-Tribromoethanol) and placed under a stereo microscope. 1 μl of AAV2-hSyn-DIO-hM3DGq-mCherry (4.6 × 1012 viral particles/ml, Roth lab, UNC Vector Core) or AAV2-CMV-DIO-mRuby-P2A-Melanopsin-FLAG (Robinson lab, UMBC) was placed on a piece of Parafilm and drawn into a 10-μl microcapillary tube (Sigma P0674) that had been pulled to a needle (Sutter Instruments, Model P-2000). The loaded needle was then placed in the holster of a pico-injector (Harvard Apparatus PLI-90). The needle punctured the eye posterior to the ora serrata and air pressure was used to drive the viral solution into the vitreous chamber of the eye to ensure delivery specifically to the retina. Mice recovered from surgery on a heating pad until they woke from anesthesia. All PLR experiments and confocal imaging were done at least 3 weeks following viral injection.
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 Mice that had been infected with the AAVs were anesthetized with avertin and then euthanized using cervical dislocation. The eyes were removed and the retinas were dissected in PBS and then fixed in 4% paraformaldehyde for 1–2 hr on ice. The retinas were then washed in PBS at least three times before mounting on a microscope slide (Fisher, Hampton, NH) in Fluoromount (Sigma, St. Louis, MO) with DAPI (2-(4-amidinophenyl)-1H -indole-6-carboxamidine). Some retinas were co-stained for melanopsin using rabbit anti-OPN4 (Advanced Targeting Systems, San Diego, CA, AB-N38, 1:1000) in 4% goat serum with secondary antibody Alexa Fluor 488 goat anti-rabbit (Life Technologies, Carlsbad, CA, A11008, 1:1000). Images were taken on a Zeiss LSM 710 confocal microscope using a 20× objective. After imaging, images were made grayscale, background subtracted, and brightness and contrast were adjusted in FIJI (http://fiji.sc) for the image presented in the paper.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical tests were performed in Graphpad Prism 6. Specific statistical comparisons are listed in the figure captions. Because the EC50 data appears to be a normal distribution on a log scale (log-normal distribution), all statistical tests and data analysis involving EC50 were performed on the log transformed data set.
 
-## Heat map generation
+### Heat map generation
 
-The photoreceptor contribution heat map was generated by first creating estimated pupil size matrices for the both the rapid and sustained PLR at every light intensity and time for wildtype mice (x axis = time, y axis = intensity). To do so, we applied the equation for a one-phase association:Y=Y0+(Plataeu−Y0)∗(1−e(−K∗x))
+The photoreceptor contribution heat map was generated by first creating estimated pupil size matrices for the both the rapid and sustained PLR at every light intensity and time for wildtype mice (x axis = time, y axis = intensity). To do so, we applied the equation for a one-phase association:
 
-In our case, Y is the relative pupil area generated at time, x. For the WT rapid PLR heat map, Y0rapid is set to 1 for every light intensity and the Krapid was extracted from the wildtype rapid constriction kinetics curve at 100 lux. The Plateaurapid value at each light intensity is the rapid PLR value extracted from the WT rapid intensity-response curve fit. This allows us to generate a full matrix of WT pupil sizes at every intensity and time by knowing the final pupil size (Plateau) and the rate of constriction (K). This then generates a full matrix of values for every time and intensity for WT mice.
+$$
+Y=Y0+(Plataeu−Y0)∗(1−e^{(−K∗x)})
+$$
+
+In our case, $Y$ is the relative pupil area generated at time, $x$. For the WT rapid PLR heat map, $Y0_{rapid}$ is set to 1 for every light intensity and the $K_{rapid}$ was extracted from the wildtype rapid constriction kinetics curve at 100 lux. The $Plateau_{rapid}$ value at each light intensity is the rapid PLR value extracted from the WT rapid intensity-response curve fit. This allows us to generate a full matrix of WT pupil sizes at every intensity and time by knowing the final pupil size ($Plateau$) and the rate of constriction ($K$). This then generates a full matrix of values for every time and intensity for WT mice.
 
 The same method was applied to make the sustained PLR heat map. However, in this case, Y0sustained was set to the value of the rapid PLR at each light intensity (e.g. the same value as Plateaurapid). The Plateausustained value is extracted from the sustained intensity-response curve fit at each intensity. The Ksustained was extracted from our wildtype sustained time courses (Figure 1c). Because the decay rate for sustained constriction appeared to change with intensity (Figure 1f) we used a sigmoidal curve fit to our experimentally determined decay rates (1, 10, 100 lux) to generate decay rates for a range of light intensities. We constrained the top and bottom of this curve to the decay rates determined for 1 and 100 lux respectively.
 
@@ -251,7 +419,7 @@ The matrices generated for the wildtype mice were also done to the photoreceptor
 
 Finally, matrices generated above were exported as heat map images with MATLAB.
 
-## Negative feedback modeling
+### Negative feedback modeling
 
 In order to isolate negative feedback’s impact on the PLR, we generated a computational model. Computational modeling was performed with MATLAB using two experimentally determined parameters. First, the relative pupil area (RPA) values for the wildtype intensity-response curve (Figure 1d). These values give us the response driven when the pupil starts fully open. We will later multiply the environmental intensity by the new relative pupil area to determine the new retinal intensity. We will use this new retinal intensity to extract the pupil size from the rapid intensity-response curve to find the constriction driven by that new intensity under baseline conditions. The model does this recalculation of retinal intensity and the PLR driven by it every second for 956 s.
 
@@ -263,12 +431,24 @@ With these pieces of experimental data in hand, the model does the following at 
 
 *Source code and materials used are available on Github (https://github.com/keenanw27/PLR-Decay-Model).
 
-## Mathematical description of the negative-feedback model of PLR decay
+### Mathematical description of the negative-feedback model of PLR decay
 
-At a given environmental light intensity: luxo. The effect of pupillary negative-feedback during a 956s stimulation is modeled as follows:(1)for time t=1, 2, 3…956       max(RPA→(:,t))×luxo=luxt
+At a given environmental light intensity: $lux_{o}$. The effect of pupillary negative-feedback during a 956s stimulation is modeled as follows:
 
-In equation (1) above, we determine the retinal light intensity, luxt, that is, the intensity of light after modulation by pupil size at time t. At t = 1 there is no pupil constriction and therefore no light intensity modulation (luxo=luxt). RPA→ is a 956 × 956 matrix which stores subsequent pupil constriction values. With luxt we determine the constriction driven by light sensed at time, t: (2)α→(luxt)×ω→=RPA→(t,t:t+30)
+$$
+for time t=1, 2, 3…956       max(RPA→(:,t))\timeslux_{o}=lux_{t}
+$$
 
-In equation (2), we calculate the amount of constriction driven by luxt, α→(luxt), and approximate the temporal characteristics of that constriction with ω→. ω→ is based on a 1s light pulse-chase experiment where we followed the constriction driven by 1 s of light for 30 s. Again, we store calculated constriction values: RPA→(t,t:t+30). Finally, we extract the highest constriction value at t:(3)max(RPA→(:,t))=Model→luxo(1,t)
+In equation (1) above, we determine the retinal light intensity, $lux_{t}$, that is, the intensity of light after modulation by pupil size at time t. At t = 1 there is no pupil constriction and therefore no light intensity modulation ($lux_{o}=lux_{t}$). $RPA→$ is a 956 × 956 matrix which stores subsequent pupil constriction values. With $lux_{t}$ we determine the constriction driven by light sensed at time, t: 
 
-After completing t = 956, Model→luxo is a vector containing the model-predicted timecourse of pupil constriction when negative-feedback is the only source of PLR decay.
+$$
+\alpha→(lux_{t})\times\omega→=RPA→(t,t:t+30)
+$$
+
+In equation (2), we calculate the amount of constriction driven by $lux_{t}$, $\alpha→(lux_{t})$, and approximate the temporal characteristics of that constriction with $\omega→$. $\omega→$ is based on a 1s light pulse-chase experiment where we followed the constriction driven by 1 s of light for 30 s. Again, we store calculated constriction values: $RPA→(t,t:t+30)$. Finally, we extract the highest constriction value at t:
+
+$$
+max(RPA→(:,t))=Model→_{lux_{o}}(1,t)
+$$
+
+After completing t = 956, $Model→_{lux_{o}}$ is a vector containing the model-predicted timecourse of pupil constriction when negative-feedback is the only source of PLR decay.

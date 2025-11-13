@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0534re684 Max Planck Institute for Evolutionary Biology Plön Germany
-2. https://ror.org/02v51f717 Biomedical Pioneering Innovation Center, Peking University Beijing China
+1. Max Planck Institute for Evolutionary Biology Plön Germany ([ROR:0534re684](https://ror.org/0534re684))
+2. Biomedical Pioneering Innovation Center, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
 ## Abstract
 
-Sexual dimorphism in phenotypes is largely driven by genes with sex-biased expression, spanning from key regulators to numerous organ-specific effectors. Current understanding is limited regarding the evolutionary dynamics of these genes in somatic tissues that generate the adult phenotype versus gonadal organs that are required for reproduction. Here, we investigate sex-biased gene expression and micro-evolutionary patterns of these genes in populations of subspecies and species of wild mice (genus Mus ) that were raised under controlled conditions. We find a faster evolutionary turnover of sex-biased gene expression in somatic tissues, but not in the gonads, when compared to the turnover of non-sex-biased genes. We introduce a sex-biased gene expression index (SBI) to quantify individual variances. We find a range from binary to overlapping SBI patterns across individuals. SBI values do not correlate between organs of the same individuals, thus supporting a mosaic model of somatic sex determination. Comparison with data from humans shows mostly fewer sex-biased genes compared to mice and strongly overlapping SBI distributions between the somatic organs of the sexes. We conclude that adult individuals are composed of a mosaic spectrum of sex characteristics in their somatic tissues that should not be cumulated into a simple binary classification.
+Sexual dimorphism in phenotypes is largely driven by genes with sex-biased expression, spanning from key regulators to numerous organ-specific effectors. Current understanding is limited regarding the evolutionary dynamics of these genes in somatic tissues that generate the adult phenotype versus gonadal organs that are required for reproduction. Here, we investigate sex-biased gene expression and micro-evolutionary patterns of these genes in populations of subspecies and species of wild mice (genus Mus) that were raised under controlled conditions. We find a faster evolutionary turnover of sex-biased gene expression in somatic tissues, but not in the gonads, when compared to the turnover of non-sex-biased genes. We introduce a sex-biased gene expression index (SBI) to quantify individual variances. We find a range from binary to overlapping SBI patterns across individuals. SBI values do not correlate between organs of the same individuals, thus supporting a mosaic model of somatic sex determination. Comparison with data from humans shows mostly fewer sex-biased genes compared to mice and strongly overlapping SBI distributions between the somatic organs of the sexes. We conclude that adult individuals are composed of a mosaic spectrum of sex characteristics in their somatic tissues that should not be cumulated into a simple binary classification.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Here, we use the house mouse radiation to address the evolution of sex-biased ge
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig1-v1.jpg)
 
-**Figure 1.:** The top left of the plot shows the phylogenetic relationships of the taxa in the study. The other plots show the numbers of sex-biased genes as bar plots, female-biased in red, male-biased in green. DOM = M. m. domesticus, MUS = M. m. musculus, SPR = M. spretus, SPI = M. spicilegus. The Y-axes show the number of genes. Note that there are two different Y-axis scales for the somatic organs and the gonadal organs. All numbers are provided in Figure 1—source data 1, full data are provided in Supplementary Data D1.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.Based on the values provided in Supplementary Data D1, all plotted in log-scale.Figure 1—source data 5.
+**Figure 1.:** The top left of the plot shows the phylogenetic relationships of the taxa in the study. The other plots show the numbers of sex-biased genes as bar plots, female-biased in red, male-biased in green. DOM = M. m. domesticus, MUS = M. m. musculus, SPR = M. spretus, SPI = M. spicilegus. The Y-axes show the number of genes. Note that there are two different Y-axis scales for the somatic organs and the gonadal organs. All numbers are provided in Figure 1—source data 1, full data are provided in Supplementary Data D1.
 
 Most previous studies on sex-biased genes have given special emphasis to the evolution of gene expression in gonadal tissues even when somatic tissues were co-sampled, since the gonads harbor the largest numbers of sex-biased genes (Dean et al., 2017; Harrison et al., 2015; Pointer et al., 2013; Todd et al., 2018). In contrast, our study is mostly focused on somatic tissues that occur in both sexes, but we complement it with comparisons to gonadal tissues that are specific for each sex. Since the gonadal tissues are composed of different cell types for each sex, a comparison of expression patterns is always a composite between gene expression and cell-type composition. This is different for somatic organs, where one can expect that the cell types are much more similar between the sexes.
 
@@ -57,13 +57,13 @@ Female-biased genes outnumber male-biased genes in all comparisons, which could 
 
 Among the somatic organs, brain has the lowest numbers of genes with sex-biased expression, and kidney has the highest. Most notably, the numbers of sex-biased genes are subject to fast turnover between the taxa for the somatic organs. For example, DOM has an unusually high number of sex-biased genes in the heart, compared to the other taxa. On the other hand, the kidney bias is much stronger in DOM and MUS than in SPR and SPI, and liver has the highest number of female-biased genes in SPI. For the gonadal organs, the overall numbers remain more similar between the taxa.
 
-## Fast evolutionary turnover of sex-biased gene expression
+### Fast evolutionary turnover of sex-biased gene expression
 
 The evolutionary turnover of genes that become subject to sex-biased expression in any given taxon is very high, even between the closely related taxa that are studied here. Figure 2A shows which fractions of genes with sex-biased expression are shared between the taxa for each organ in any pairwise comparison. The turnover is particularly high for the somatic tissues. In brain and heart, fewer than 10% of the genes occur in more than one taxon; for the other organs, fewer than half occur in more than one taxon. Note that two of the taxa (DOM and MUS) have a subspecies-level status (M. m. domesticus and M. m. musculus), yet the majority of somatic sex-biased genes changed their sex-biased expression between them. When compared between all four taxa, only between 0.3% and 5.3% of genes have a conserved sex-biased expression in all four of them (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig2-v1.jpg)
 
-**Figure 2.:** (A) Plots of percentages of genes shared as sex-biased across the four taxa for each organ comparison (including the Y-chromosomal genes for the male-biased gene sets). Numbers are normalized to ‘one taxon’ which represents the sum of all unique genes in at least one taxon (set to 100%), ‘two taxa’, ‘three taxa’, and ‘four taxa’ represent the percentages of the sums of shared genes for any pairwise comparison between the taxa for all sex-biased genes. Data for the figure are provided in Figure 2—source data 1. (B) Percentage turnover differences between sex-biased genes versus resampling averages from all genes as female gene swaps or male gene swaps in three groups of taxa comparisons. See text for further details. Note that standard deviations from the resampling were too small to show them in the graphic as error bars (all in the order of 0.015). Data for the figure are provided in Figure 2—source data 2 and for all data and statistics in Supplementary Data D2.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A) Plots of percentages of genes shared as sex-biased across the four taxa for each organ comparison (including the Y-chromosomal genes for the male-biased gene sets). Numbers are normalized to ‘one taxon’ which represents the sum of all unique genes in at least one taxon (set to 100%), ‘two taxa’, ‘three taxa’, and ‘four taxa’ represent the percentages of the sums of shared genes for any pairwise comparison between the taxa for all sex-biased genes. Data for the figure are provided in Figure 2—source data 1. (B) Percentage turnover differences between sex-biased genes versus resampling averages from all genes as female gene swaps or male gene swaps in three groups of taxa comparisons. See text for further details. Note that standard deviations from the resampling were too small to show them in the graphic as error bars (all in the order of 0.015). Data for the figure are provided in Figure 2—source data 2 and for all data and statistics in Supplementary Data D2.
 
 The fractions of shared genes are higher for the gonadal tissues (Figure 2A), but even these tissues show a substantial turnover of sex-biased genes. Interestingly, many of the sex-biased genes reverse their state in at least one taxon from female-bias to male-bias or vice versa. This includes 596 genes for somatic organs and 3895 for the gonadal organs (Figure 1—source data 1). Hence, although the overall numbers of sex-biased genes do not change much between the taxa for the gonadal organs, the actual composition of the gene sets evolves substantially.
 
@@ -73,7 +73,7 @@ This analysis shows that somatic sex-biased gene expression changes occur much m
 
 The gonadal turnover of sex-biased gene expression, on the other hand, is not faster than the gene expression levels of the non-sex-biased genes in most comparisons. This implies also that the sex-biased status in the gonads has a more conserved function, most likely since it is linked to different cell types in these tissues.
 
-## Variance patterns
+### Variance patterns
 
 The fast turnover of genes with sex-biased expression implies that they are continuously subject to intra- or inter-sexual selection processes. This should also be reflected in the variance patterns within the populations of each taxon, since at least a subset of them would be subject to ongoing selection processes that would create a higher allelic diversity until new equilibria are reached. We have therefore analyzed the variance patterns both at the gene expression level and at the protein divergence level.
 
@@ -83,7 +83,7 @@ We find that sex-biased genes show in most cases higher variances than non-biase
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig3-v1.jpg)
 
-**Figure 3.:** (A) Variances of expression in sex-biased and non-biased genes for each organ. The ranges of relative variances (interquartile range [IQR]/median ratios for transcripts per million [TPM] counts) for the four taxa are displayed as box plots; note that these constitute all values from the four taxa. The ‘reciprocal’ values are for the orthologous genes that are sex-biased in one taxon, but not in the other for M. m. domesticus (DOM)-M. m. musculus (MUS) comparisons and M. spretus (SPR)-M. spicilegus (SPI) comparisons. The data for this sub-figure are provided in Figure 3—source data 1. Most pairwise comparisons are significant (p<<0.01), the ones which are not significant are marked with ‘x’ (all p-values are included in Figure 3—source data 1). (B) Results of the McDonald-Kreitman (MK) test for positive selection at coding positions for the sex-biased genes in DOM and MUS. The ‘reciprocal’ values are for the orthologous genes that are sex-biased in one taxon, but not in the other. Note that this corresponds to different gene sets in DOM and MUS, since they have different sets of sex-biased genes each. The alpha values represent the fraction of amino acid substitutions that are predicted to be driven by positive selection. The violin plots are derived from the range of alpha values obtained in 1000 bootstrap replications. The boxes show the averages and quartiles of the data distribution. The averages between all distributions are significantly different from each other (p<<0.01). All data, including the gene numbers in the analysis and statistical values, are provided in Figure 3—source data 2.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Variances of expression in sex-biased and non-biased genes for each organ. The ranges of relative variances (interquartile range [IQR]/median ratios for transcripts per million [TPM] counts) for the four taxa are displayed as box plots; note that these constitute all values from the four taxa. The ‘reciprocal’ values are for the orthologous genes that are sex-biased in one taxon, but not in the other for M. m. domesticus (DOM)-M. m. musculus (MUS) comparisons and M. spretus (SPR)-M. spicilegus (SPI) comparisons. The data for this sub-figure are provided in Figure 3—source data 1. Most pairwise comparisons are significant (p<<0.01), the ones which are not significant are marked with ‘x’ (all p-values are included in Figure 3—source data 1). (B) Results of the McDonald-Kreitman (MK) test for positive selection at coding positions for the sex-biased genes in DOM and MUS. The ‘reciprocal’ values are for the orthologous genes that are sex-biased in one taxon, but not in the other. Note that this corresponds to different gene sets in DOM and MUS, since they have different sets of sex-biased genes each. The alpha values represent the fraction of amino acid substitutions that are predicted to be driven by positive selection. The violin plots are derived from the range of alpha values obtained in 1000 bootstrap replications. The boxes show the averages and quartiles of the data distribution. The averages between all distributions are significantly different from each other (p<<0.01). All data, including the gene numbers in the analysis and statistical values, are provided in Figure 3—source data 2.
 
 To assess whether sex-biased genes are recruited from genes with higher general expression variances, we created reciprocal gene sets with the orthologous sex-biased and non-sex-biased genes in pairwise taxa comparisons (DOM-MUS and SPR-SPI). These show variance levels more comparable to those found among the sex-biased genes (Figure 3A), implying that their generally higher variation might help them to become more easily sex-biased, as it has also been suggested for plant sex-biased genes (Scharmann et al., 2021).
 
@@ -95,13 +95,13 @@ The results are shown in Figure 3B. Both female-biased and male-biased genes sho
 
 To assess whether we can also trace lineage-specific effects with this test, we asked whether the genes that are exclusively sex-biased in either DOM or MUS also show higher alpha values. However, for this test, we needed to combine female- and male-biased genes to have a sufficiently large number of genes to render the test meaningful. We find that the genes that are sex-biased only in DOM have an alpha value of 0.22, while the non-sex-biased orthologs of these genes in MUS (the ‘reciprocal’ gene set) have an alpha value of 0.12. The corresponding numbers for MUS are 0.14 and 0.11 (see Figure 3—source data 2). This contrasts with alpha values of 0.35 and 0.37 for genes that are sex-biased in both taxa. Hence, we can indeed trace signs of a lineage-specific elevation of adaptive substitutions in genes that become sex-biased, although the effect is stronger when they were sex-biased for a longer evolutionary time.
 
-## Module analysis of sex-biased genes
+### Module analysis of sex-biased genes
 
 We were interested to assess whether sex-biased genes represent a subset of all genes expressed in a given organ or whether they are derived from particular co-regulated modules. The summary results are provided in Figure 4. We used weighted gene co-expression network analysis (WGCNA) (Langfelder and Horvath, 2008) to determine gene expression modules for each organ, based on a set of transcriptomes from 48 DOM females that were prepared in parallel to the remainder of the samples, because WGCNA requires such large sample sets to generate reasonably robust results. The analysis of the scale independence and mean connectivity plots for the different organs in this dataset shows that saturation is reached at levels of soft power β between 4 and 8 (Figure 4—source data 2; see also Methods). Since a similarly large set is currently not available for males, we restrict the further analysis to the female-biased genes, which actually constitute the larger fraction of sex-biased genes between the sexes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig4-v1.jpg)
 
-**Figure 4.:** The plots show for four somatic organs the fractions of total genes (row ‘all’ at the top - black color) that are assigned to modules in a weighted gene co-expression network analysis (WGCNA). The rows below represent the fraction differences of sex-biased genes for each taxon (DOM, MUS, SPR, SPI) compared to all genes. Positive values show an excess and negative values a deficiency compared to the fraction of all genes. Plotted in red are the differences for all sex-biased genes in the organ, in blue for the sex-biased genes that occur only in the respective taxon, i.e., can be considered as having a newly evolved sex-bias expression in this taxon. A maximum of 15–16 modules plus the 0 bin are plotted for each organ. Higher-numbered modules are plotted only when they include a difference of larger than 3% in at least one taxon. The full data are provided in Figure 4—source data 1. Note that the module numbers can only be compared within an organ, not between the organs. Bin number ‘0’ is the sum of all genes that cannot be assigned to one of the other modules. The brain is not included in this figure, since it has too few sex-biased genes to make the comparison meaningful. DOM, M. m. domesticus; MUS, M. m. musculus; SPR, M. spretus; SPI, M. spicilegus.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.
+**Figure 4.:** The plots show for four somatic organs the fractions of total genes (row ‘all’ at the top - black color) that are assigned to modules in a weighted gene co-expression network analysis (WGCNA). The rows below represent the fraction differences of sex-biased genes for each taxon (DOM, MUS, SPR, SPI) compared to all genes. Positive values show an excess and negative values a deficiency compared to the fraction of all genes. Plotted in red are the differences for all sex-biased genes in the organ, in blue for the sex-biased genes that occur only in the respective taxon, i.e., can be considered as having a newly evolved sex-bias expression in this taxon. A maximum of 15–16 modules plus the 0 bin are plotted for each organ. Higher-numbered modules are plotted only when they include a difference of larger than 3% in at least one taxon. The full data are provided in Figure 4—source data 1. Note that the module numbers can only be compared within an organ, not between the organs. Bin number ‘0’ is the sum of all genes that cannot be assigned to one of the other modules. The brain is not included in this figure, since it has too few sex-biased genes to make the comparison meaningful. DOM, M. m. domesticus; MUS, M. m. musculus; SPR, M. spretus; SPI, M. spicilegus.
 
 The individual module assignments for all genes in each of the five somatic organs are listed in Figure 4—source data 3. We found between 21 and 64 modules in the different organs. The numbers of genes in each module for each taxon and tissue are provided in Figure 4—source data 4 (note that module number assignments are not comparable between the organs - they are always only determined for a given organ). The comparisons show that the sex-biased genes are not simply a proportional reflection of all modules, but are enriched for some subsets of modules. To directly visualize this, we subtracted the normalized fraction of gene numbers in each module from the normalized fraction of sex-biased genes for each taxon. A subset of the data is plotted in Figure 4. This subset is restricted to four somatic organs, since brain has too few sex-biased genes overall. Further, we did not include higher-numbered modules with few genes only, unless the differences to the fractions of all genes are more than 3% in the sex-biased genes.
 
@@ -117,9 +117,13 @@ For mammary, it is module 6 that is most strongly enriched for sex-biased genes.
 
 We conclude from this analysis that sex-biased genes tend to be expressed in a subset of modules and that evolutionary turnover may sometimes occur by recruiting previously not sex-biased genes from the same module to become sex-biased. However, this pattern is clearly heterogeneous between organs and taxa. It applies to some comparisons, but not to all.
 
-## A sex-biased gene-expression index (SBI)
+### A sex-biased gene-expression index (SBI)
 
-Given that the sex-biased expression of genes is thought to be the basis for the generation of the sex-specific phenotypes, we were interested in assessing the individual variation in the cumulative expression of sex-biased genes for each organ. To do this with a single factor for every individual, we have developed an SBI based on the normalized expression values of the genes. This is calculated as:SBI=(MEDIAN of all female-biased TPM)−(MEDIAN of all male-biased TPM)\begin{document}$$\displaystyle \text{SBI} = \text{(MEDIAN of all female-biased TPM)} {-} \text{(MEDIAN of all male-biased TPM)}$$\end{document}
+Given that the sex-biased expression of genes is thought to be the basis for the generation of the sex-specific phenotypes, we were interested in assessing the individual variation in the cumulative expression of sex-biased genes for each organ. To do this with a single factor for every individual, we have developed an SBI based on the normalized expression values of the genes. This is calculated as:
+
+$$
+SBI=(MEDIAN of all female-biased TPM)−(MEDIAN of all male-biased TPM)
+$$
 
 For the male-biased genes, we exclude the ones encoded on the Y-chromosome, since they have no equivalent in females. The MEDIANs are used to reduce the influence of outlier values (Xie and Tautz, 2025).
 
@@ -131,11 +135,11 @@ The normalized distributions of individual sex-bias indices are plotted as densi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig5-v1.jpg)
 
-**Figure 5.:** Plots for all organs are grouped according to organ for each taxon. Males are represented by blue shading, females by red shading. The taxon designations are on the top, the organ designations to the left. The Y-axis represents the density scale of the smoothed distribution; the X-axis represents the relative maleness <--> femaleness scores centered around zero. All individual SBI values are included in Figure 5—source data 1.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** Plots for all organs are grouped according to organ for each taxon. Males are represented by blue shading, females by red shading. The taxon designations are on the top, the organ designations to the left. The Y-axis represents the density scale of the smoothed distribution; the X-axis represents the relative maleness <--> femaleness scores centered around zero. All individual SBI values are included in Figure 5—source data 1.
 
 Given that the same sets of organs were retrieved from each individual, it is possible to ask whether SBIs might correlate between organs of the same individual. For example, an individual with a strong femaleness score in one organ might also have a strong femaleness score in another organ. However, this is not the case. There is no significant correlation in any pairwise comparison between organs for a given sex (Spearman’s rank correlation test, all p-values with multiple testing correction >0.05) (Figure 5—source data 2). This implies that the femaleness and maleness status of an individual is not homogeneous throughout the body - each organ can be somewhat different in this respect.
 
-## Mosaic patterns of sex-biased gene expression
+### Mosaic patterns of sex-biased gene expression
 
 The comparative analysis of sex-biased brain structures based on MRI datasets of more than 1400 human brains has suggested that brains are usually composed of a mosaic of sex-biased structures (Joel et al., 2015; Joel et al., 2020). The above correlation analysis of SBI values between mouse organs has also suggested that such a mosaic pattern could apply (see above). To visualize this more directly, we use the heatmap approach developed by Joel et al., 2015, to plot the SBI values for each individual and organ via a normalized color scale (Figure 6). These plots show that the SBIs differentiate the individuals such that each has a more or less unique combination. While the patterns of males and females are distinct, they also show overlaps for individual values in the middle ranges.
 
@@ -143,13 +147,13 @@ The comparative analysis of sex-biased brain structures based on MRI datasets of
 
 **Figure 6.:** Each individual (numbered 1–9 for each sex) is represented by the normalized SBI values for the somatic organs organized in rows. The color scale represents the normalized SBI value in the range from 1 (maximal femaleness, dark red) to –1 (maximal maleness, dark blue). The mouse data are provided for the individuals from all four taxa. All individual SBI values are included in Figure 5—source data 1.
 
-## Sex-biased gene expression in humans
+### Sex-biased gene expression in humans
 
 The SBI can be applied to any comparative transcriptome data of population samples from both sexes. The GTEx consortium has generated such data for humans (Aguet et al., 2020) and these have previously been analyzed with respect to sex-specific expression patterns (Gershoni and Pietrokovski, 2017; Khodursky et al., 2022; Oliva et al., 2020). Unfortunately, these data are much more heterogeneous than the mouse data, with variable age distributions, data quality, and death reasons. Various statistical procedures are therefore usually employed to control for confounding variables (Aguet et al., 2020; Khodursky et al., 2022; Oliva et al., 2020; Wolf et al., 2023). The largest problem is the overdispersion of the data, including the frequent occurrence of outlier values. The procedure that we have used for the mouse data addresses these problems stringently (see Methods), and we therefore apply it to the human data as well. For comparison, we also use the lists of the sex-biased genes generated by the GTEx consortium that were generated with a more permissive procedure across all samples (Oliva et al., 2020). We focus here on individuals younger than 49 who did not die after a long disease phase. These individuals are relatively rare in the GTEx data, given the strong bias for older individuals in the dataset. But we could retrieve nine females and males each for most organs and organ subsets for the analyses shown in Figure 7 (the full set of data includes 27 female-male comparison sets; Figure 7—source data 2; Supplementary Data D3), making the patterns directly comparable to the mouse patterns. Our overall results are qualitatively very similar to the previously published results on these data, but given our more stringent filtering due to including an FDR step and an explicit cutoff, the overall numbers are lower, especially in comparison to Oliva et al., 2020; Figure 7—source data 3.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig7-v1.jpg)
 
-**Figure 7.:** (A) and (B) Bar plots representing the numbers of sex-biased genes in tissues that show at least five such genes per sex (excluding the Y-chromosomally encoded genes). Note the different Y-axis scale for the numbers of genes in (B). (C) SBI plots for the nine individuals of each sex based on the set of organs and genes shown in (A) and (B). The Y-axis represents the density scale; the X-axis represents the relative maleness <--> femaleness scores centered around zero. (D) SBI plots for the same individuals and organs as in (C), but based on the sex-biased gene lists from Oliva et al., 2020. Note that these authors have not included a comparison for OvaTes. All SBI values are listed in Figure 7—source data 1.Figure 7—source data 1.Figure 7—source data 2.Figure 7—source data 3.
+**Figure 7.:** (A) and (B) Bar plots representing the numbers of sex-biased genes in tissues that show at least five such genes per sex (excluding the Y-chromosomally encoded genes). Note the different Y-axis scale for the numbers of genes in (B). (C) SBI plots for the nine individuals of each sex based on the set of organs and genes shown in (A) and (B). The Y-axis represents the density scale; the X-axis represents the relative maleness <--> femaleness scores centered around zero. (D) SBI plots for the same individuals and organs as in (C), but based on the sex-biased gene lists from Oliva et al., 2020. Note that these authors have not included a comparison for OvaTes. All SBI values are listed in Figure 7—source data 1.
 
 Compared to the mouse, we find generally fewer sex-biased genes in most human tissues. Among 27 tissues included, only 10 have at least five sex-biased genes in either sex (Figure 7A). The tissues with the largest numbers of sex-biased genes are ‘Adipose Subcutaneous’ and ‘Breast Mammary Tissue’ (Figure 7B - note that the Y-axis scale of this figure is 15-fold expanded compared to Figure 7A). Further, the comparison between ovary and testis (OvaTes) between males and females shows large numbers of sex-biased genes, but the tissues have evidently also very different cell compositions for these organs.
 
@@ -157,11 +161,160 @@ The calculation of the SBI is limited when there are only very few sex-biased ge
 
 When using the lists of sex-biased genes from Oliva et al., 2020, to calculate SBIs for the same individuals and same organs, we find qualitatively similar results but an even higher overlap between the sexes (Figure 7D). This is due to the inclusion of many additional genes that fall below our threshold of 1.25-fold change (compare numbers in Figure 7—source data 3).
 
-## Sex-biased expression in human single-cell data
+### Sex-biased expression in human single-cell data
 
 Gene expression in organs is measured from complex aggregations of diverse cell types, making it difficult to distinguish between sex differences in expression that are due to regulatory rewiring within similar cell types and those that are simply a consequence of developmental differences in cell-type abundance (Darolti and Mank, 2023). It has actually been shown that only a subset of cells in a given tissue may express the sex-biased genes (Rodríguez-Montes et al., 2023). In complex organs with many cell types, such as the brain, it is therefore possible that the sex-bias signal is blurred by different sets of genes expressed in different cell types. Unfortunately, suitable datasets from single-cell studies that include sufficient numbers of individuals where one could approach this question are still rare. We have analyzed here data from a study with patients that have developed Alzheimer’s disease. This study also included non-disease control individuals, and we have used the datasets from these individuals, yielding comparisons between six individuals of each sex for single cells from dorsolateral prefrontal cortex (DLPFC) samples and seven individuals of each sex for single cells from middle temporal gyrus (MTG) samples (Gabitto et al., 2024). There are 15 different cell types with sufficient coverage for an analysis in the DLPFC data and 13 in MTG data (Table 1; Table 1—source data 1). A subset of 12 cell types overlaps and can therefore be compared between the tissues with the results shown in Table 1 and detailed in Table 1—source data 1. Sex-biased expression is still at a low level in these data, similar to what was found for brain tissues in general and too low to generate meaningful SBI distribution plots. While this may be partly due to the age of the individuals and/or insufficient coverage of low-level expressed genes in single-cell datasets, it still implies that there is not any particular cell type with very strong male-female differentiation.
 
-## Conserved genes with sex-biased expression
+**Table 1.**
+ Numbers of genes with sex-biased expression in human single-cell data.Table 1—source data 1.Comparison of genes shared in the single-cell data between the two brain tissues, dorsolateral prefrontal cortex (DLPFC) and middle temporal gyrus (MTG).Additional tabs include lists of sex-biased genes for the cell types in DLPFC samples and MTG samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Female-biased</th>
+      <th></th>
+      <th colspan="3">Male-biased*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell type</td>
+      <td>MTG</td>
+      <td>DLPFC</td>
+      <td>Overlap</td>
+      <td></td>
+      <td>MTG</td>
+      <td>DLPFC</td>
+      <td>Overlap</td>
+    </tr>
+    <tr>
+      <td>Astrocyte</td>
+      <td>4</td>
+      <td>7</td>
+      <td>4</td>
+      <td></td>
+      <td>2+4</td>
+      <td>0+4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L2_3_IT</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+4</td>
+      <td>1+4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L4_IT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L5_IT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L6_IT</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td></td>
+      <td>0+4</td>
+      <td>2+4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Lamp5_Lhx6</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Microglia-PVM</td>
+      <td>5</td>
+      <td>10</td>
+      <td>4</td>
+      <td></td>
+      <td>1+6</td>
+      <td>7+6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Oligodendrocyte</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3</td>
+      <td></td>
+      <td>1+4</td>
+      <td>0+4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>OPC</td>
+      <td>7</td>
+      <td>3</td>
+      <td>2</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Pvalb</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sst</td>
+      <td>1</td>
+      <td>7</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Vip</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>0+5</td>
+      <td>0+5</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Non-Y-chromosomal+Y-chromosomal._
+
+### Conserved genes with sex-biased expression
 
 While most studies on sex-biased genes have reported that only a subset of them is conserved across larger evolutionary distances, they still report sometimes substantial numbers of genes with conserved sex-biased expression (Harrison et al., 2015; Khodursky et al., 2022; Naqvi et al., 2019). In contrast, the study by Rodríguez-Montes et al., 2023, found much fewer conserved sex-biased genes between mammalian taxa but a conservation of cell types with sex-biased expression in each tissue. Given the high turnover of genes that we observe already within mouse lineages that are only at most 2 million years apart, it seems well possible that the seeming conservation of genes with sex-biased expression between lineages with larger evolutionary distances is due to convergence, i.e., independent recruitment of genes into sex-biased expression in different lineages. This has also been suggested in a phylogenetic study on sex-biased genes in plants (Scharmann et al., 2021).
 
@@ -169,7 +322,7 @@ We have therefore sought to generate a set of genes with conserved sex-biased ex
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/99602/elife-99602-fig8-v1.jpg)
 
-**Figure 8.:** The different organs analyzed are listed to the left. The analysis of conserved mouse genes is included in Figure 8—source data 1. The green boxes designate sex-biased expression in the respective tissues.Figure 8—source data 1.
+**Figure 8.:** The different organs analyzed are listed to the left. The analysis of conserved mouse genes is included in Figure 8—source data 1. The green boxes designate sex-biased expression in the respective tissues.
 
 Four of the conserved genes (Kdm5c, Kdm5d, Kdm6a, and Uty) are involved in histone methylation and demethylation, thereby triggering gene regulatory cascades that are known to be involved in setting up the sex-specific expression networks (Deegan et al., 2019; Samanta et al., 2022). Hence, the balancing of the interplay between these epigenetic regulators may well contribute to the fast evolution of sex-biased gene expression in their target genes. However, while all four are broadly expressed in adult tissues, they are themselves subject to differential sex-biased expression in a subset of the tissues (Figure 8), implying that they also depend on sex-bias controlling expression networks.
 
@@ -177,7 +330,7 @@ Four of the conserved genes (Kdm5c, Kdm5d, Kdm6a, and Uty) are involved in histo
 
 The present study is the first micro-evolutionary study on the evolution of sex-biased gene expression in outbred animals that includes sufficient data to allow within-population comparisons in parallel to phylogenetic comparisons between closely related taxa. Further, its focus is on somatic sex-biased expression of genes, which is of special relevance for understanding the variances of sex-related phenotypes of adult individuals in populations. The data show that somatic sex-biased gene expression evolves very fast, even between the closely related taxa studied here. Moreover, many genes reverse their role by switching between their sex-bias to the other sex. Similar results were found for the evolution of sex-biased genes in the Drosophila brain (Khodursky et al., 2020) and in sex-biased genes expressed in sexually dimorphic leaves of plants (Scharmann et al., 2021). Variances of sex-biased gene expression between individuals are often overlapping between the sexes, which can be shown by plotting SBI values.
 
-## Neutral or adaptive?
+### Neutral or adaptive?
 
 Patterns of fast evolution of molecular characters such as gene expression or substitution rates always raise the question of which fraction could be due to neutral divergence versus adaptive processes, i.e., positive selection for new variants. This question has previously been studied in the same system of mouse populations and taxa that are used here. These studies showed that the overall patterns of gene expression changes between these populations are mostly compatible with neutral divergence models, based on tests of intra-group variability with between-group divergence (Bryk et al., 2013; Staubach et al., 2010; Voolstra et al., 2007).
 
@@ -191,7 +344,7 @@ The alternative for explaining the module patterns would be that transcription f
 
 In the combination of these considerations, we favor an interpretation where positive selection may drive sex-biased gene expression, probably including transacting regulatory genes to explain the module patterns. It is generally known from selective sweep studies (Ihle et al., 2006; Staubach et al., 2012; Teschke et al., 2008) and amino acid substitution comparisons (Halligan et al., 2010) that the mouse populations are subject to massive positive selection. The high propensity for positive selection in mice is likely due to their short generation times and large effective population sizes.
 
-## Role of sexual selection
+### Role of sexual selection
 
 The sexual selection theory assumes that males and females have different interests in their reproductive strategies, which results in a continuous evolutionary conflict due to divergent trait optima expressed in adults of either sex (Darwin, 1871; Hamilton, 1967; Mank, 2017a; Parsch and Ellegren, 2013; Price et al., 2023). The resulting sexual dimorphisms can occur at many levels, not only as prominent major phenotypic differences, but also as very many cryptic differences, as has, e.g., been shown in a systematic survey of the phenotypes of mouse knockout strains (van der Bijl and Mank, 2021). Many of these cryptic differences are expected to be caused by the sex-biased expression of genes (Grath and Parsch, 2016; Mank, 2017b). Hence, there is much room for the adaptive evolution of sex-biased gene expression due to the existence of continuous sexual conflict (Cox and Calsbeek, 2009) or sex-specific selection, e.g., Oliver and Monteiro, 2011.
 
@@ -201,7 +354,7 @@ Many previous studies on sex-specific expression have focused on differences bet
 
 Yet, gonads also produce the hormones that are required for the sex-specific differentiation of the tissues, including the gonads themselves. Hence, in populations where individuals assume intermediate reproductive tactics between males and females, it was also possible to correlate this intermediacy with corresponding patterns of sex-biased gene expression in the gonads (Dean et al., 2017; Pointer et al., 2013; Todd et al., 2018). In a study in fish that show individuals with female mimicry, it was also possible to find differences in brain expression patterns and modules according to reproductive tactics (Cardoso et al., 2018). Accordingly, there is an interplay between gonadal and sex-biased gene expression patterns, but gonadal molecular evolutionary patterns cannot be directly compared to somatic patterns.
 
-## Intragroup variation and the SBI
+### Intragroup variation and the SBI
 
 Our results show that somatic sex-biased genes do not only evolve fast between lineages, but they also represent the fraction of genes that are more variable within lineages. This implies that they contribute more to individual variation than non-sex-biased genes. Interestingly, in humans, environmentally responsive genes also show higher variances than genes involved in regulating fundamental cellular processes (Wolf et al., 2023), and a subset of genes shows differential variability depending on which sex expresses them (Khodursky et al., 2022).
 
@@ -221,35 +374,140 @@ The generally broader overlaps in somatic SBI distribution in humans compared to
 
 Our results show that most of the transcriptional underpinnings of somatic sex differences show little long-term evolutionary stability. This fast evolution is accompanied by high individual variability of sex-biased gene expression with overlapping distributions and different sex-biases in different organs. This parallels the general observation that sex-dimorphic character distributions, e.g., body height, are overlapping between the sexes. Adult individuals are therefore composed, in many somatic tissues, of a spectrum of sex characteristics that are not always captured by a simple binary classification (Ainsworth, 2015; Maney, 2016; Sharpe et al., 2023). This is also relevant for the consideration of sex-specific medical treatments. While average differences in disease etiology between sexes are well documented (Mauvais-Jarvis et al., 2020), the decision on where a given individual falls into the spectrum of maleness/femaleness differences becomes more difficult, the more the variances overlap. The fast evolution of sex-biased expression is also a warning sign that mouse models may not be suitable for developing gender-specific medicinal treatments for humans, especially in view of the fact that humans have a much less sex-biased transcriptome than mice.
 
-## Conclusions
+### Conclusions
 
 The present study reports the largest systematic dataset so far on the micro-evolutionary patterns of sex-biased gene expression in outbred animals. It is also the first that explores the patterns of individual variation in sex-biased gene expression, and the SBI is a new procedure to directly visualize these variance patterns in an intuitive way. Previous papers on the evolution of sex-biased gene expression in animals have mostly concentrated on gonadal organs and have suggested that the turnover of sex-biased expression is fast. Interestingly, at least at the micro-evolutionary level that we study here, the turnover of gonadal sex-biased expression of the genes is not faster than the corresponding non-sex-biased expression in the same organs. This is different for the somatic patterns, most of which evolve much faster for the sex-biased genes than for the corresponding non-sex-biased genes. This suggests that the effects of sexual selection are stronger in the somatic tissues than in the gonadal tissues. Since many genes are involved in this, this implies that evolutionary changes driven by sexual selection on somatic characters are continuously acting, even in taxa that show no strong overt sexual dimorphism. Our data also show that the turnover of many genes involved in sex-biased expression occurs within regulatory modules. We find that the very few genes that have a conserved sex-biased expression between mice and humans in more than one organ are general epigenetic regulator genes. It will therefore be interesting in the future to focus on their roles in generating the differences between the somatic sexual phenotypes in given species.
 
 ## Methods
 
-## Mouse organ samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus domesticus)</td>
+      <td>Somatic and gonadal organs</td>
+      <td>MPI for Evolutionary Biology, Plön</td>
+      <td>FRA</td>
+      <td>Freshly dissected from animals</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus musculus)</td>
+      <td>Somatic and gonadal organs</td>
+      <td>MPI for Evolutionary Biology, Plön</td>
+      <td>KAZ</td>
+      <td>Freshly dissected from animals</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus spretus)</td>
+      <td>Somatic and gonadal organs</td>
+      <td>MPI for Evolutionary Biology, Plön</td>
+      <td>SPR</td>
+      <td>Freshly dissected from animals</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus spicilegus)</td>
+      <td>Somatic and gonadal organs</td>
+      <td>MPI for Evolutionary Biology, Plön</td>
+      <td>SPI</td>
+      <td>Freshly dissected from animals</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy 96 Universal Tissue Kit</td>
+      <td>QIAGEN</td>
+      <td>Catalog no. 74881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Kit</td>
+      <td>Illumina</td>
+      <td>2×150 bp</td>
+      <td>Used in sequencing center Kiel</td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>asymptoticMK (downloaded on 2023-2-20)</td>
+      <td>Haller and Messer, 2017; Haller and Leinweber, 2017</td>
+      <td>https://github.com/MesserLab/asymptoticMK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>snpEff (4.3t)</td>
+      <td>Cingolani et al., 2012a; Cingolani et al., 2012b</td>
+      <td>https://pcingola.github.io/SnpEff/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>Trimmomatic (0.38)</td>
+      <td>Bolger et al., 2014; Bolger et al., 2021</td>
+      <td>https://www.usadellab.org/cms/?page=trimmomatic</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>HISAT2 (2.2.1)</td>
+      <td>Kim et al., 2015; Kim et al., 2019</td>
+      <td>https://daehwankimlab.github.io/hisat2/download/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>featureCounts (2.0.3)</td>
+      <td>Liao et al., 2014; Liao et al., 2021</td>
+      <td>https://subread.sourceforge.net/featureCounts.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software/algorithm</td>
+      <td>WGCNA (1.71)</td>
+      <td>Langfelder and Horvath, 2008; Langfelder et al., 2022</td>
+      <td>https://edo98811.github.io/WGCNA_official_documentation/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse organ samples
 
 Gene expression data were collected from outbred individuals from two M. musculus subspecies, DOM (population FRA) and MUS (population KAZ), as well as two sister species, SPR and SPI. For further origin details on DOM, MUS, and SPR see Table S1 in Harr et al., 2016. SPI individuals were derived from catches of wild mound-building mice caught at two different locations in Western Slovakia (Bohelov: 47°54’26” N, 17°41’58” E; Sasa 48°03' N; 17°25'E - founder mice were provided by Kerstin Musolf, first described in Musolf et al., 2015).
 
 All replicates for a population are biological replicates, and the number of replicates was based on power analysis considerations discussed in Xie et al., 2020. Nine age-matched adult females and adult males were chosen from each of the four taxa, 72 individuals are included in total in the overall analysis. As somatic organs, we included brain (whole brain), heart, liver (left medial lobe), kidney (right), and mammary gland (fourth, right). Note that the mammary glands in mice have similar sizes in both sexes before lactation and are therefore directly comparable. As gonadal organs, we chose ovary (both ovaries), oviduct (both oviducts), and uterus (right uterine horn) from females and testis (right), epididymis (right), and vas deferens (right) from males. All organs were always retrieved from the same individuals, allowing expression comparisons between organs within each individual. In total, 576 samples were included (Figure 1—source data 2).
 
-## RNA sequencing and data analysis
+### RNA sequencing and data analysis
 
 The organs were carefully prepared and immediately frozen in liquid nitrogen. Total RNA was purified using QIAGEN RNeasy 96 Universal Tissue Kit (Catalog no. 74881), and prepared using Illumina TruSeq Stranded mRNA Kit, and sequenced using Illumina NovaSeq S4 (2×150 bp) in Kiel Sequencing Center. All procedures were performed in a standardized and parallel way to reduce experimental variance.
 
 Raw sequencing reads were trimmed using Trimmomatic (0.38) (Bolger et al., 2014; Bolger et al., 2021). Only paired-end reads left were used for following analyses. The trimmed reads were mapped to mouse genome GRCm39 (Martin et al., 2023; Mouse Genome Sequencing et al., 2002) using HISAT2 (2.2.1) (Kim et al., 2015; Kim et al., 2019) with default parameter settings, except for ‘--score-min’ set as ‘L,0.0,–0.6’, in order to compensate the sequence divergences of individuals from various taxa. Fragments mapped to the genes annotated by Ensembl (Version 104) were counted using featureCounts (2.0.3) (Liao et al., 2014; Liao et al., 2021).
 
-## Assignment of sex-biased gene expression
+### Assignment of sex-biased gene expression
 
 Various methods have been used to identify genes with sex-biased expression, also depending on whether the focus of the study was on gonadal differences or on other organ comparisons (Blekhman et al., 2010; Harrison et al., 2015; Naqvi et al., 2019; Oliva et al., 2020; Reinius et al., 2008; Rodríguez-Montes et al., 2023; Yang et al., 2006). Most of these methods apply some form of parametric statistics, such as a negative binomial distribution, which is necessary when only few samples are available per group. However, this is problematic in two ways. First, transcriptome data are well known for showing outliers, and second, the variances of expression can be different among different genes with similar expression level, and between males and females. Thus, these parametric methods usually lead to exaggerated false positives (Li et al., 2022). We used here at least nine individuals per sex, which allows us to perform nonparametric statistics, combined with setting cutoff criteria with an FDR correction. For each organ and each taxon, we normalized the fragment counts to TPM values and added one to all TPM values (‘TPM +1’) to avoid dealing with zeros in ratio calculations. Only genes with a median of ‘TPM+1’ in at least one sex >2 were kept for analysis. The sex-bias ratio for each gene is calculated as ‘MEDIAN of females/MEDIAN of males’. We have explored a range of cutoffs and found that a sex-bias ratio of 1.25-fold difference of MEDIAN expression values combined with a Wilcoxon rank sum test and Benjamini-Hochberg FDR correction (using FDR<0.1 as cutoff) (Benjamini and Hochberg, 1995) yields the best compromise between sensitivity and specificity. This was assessed by comparing sex-randomized datasets with the actual data. In these pre-tests, we found that the inclusion of the Wilcoxon test with FDR correction was most effective in increasing the contrast between randomized scores and actual scores to at least 20-fold difference. For controls with non-biased genes, we chose a cutoff of a <1.05-fold ratio without Wilcoxon test.
 
 For the somatic organs, we used the comparison between nine females and males each to identify genes with sex-biased expression. For the gonadal organs, we chose ovary versus testis (OvaTes), oviduct versus epididymis (OviEpi), and uterus versus vas deferens (UteVas) for the pairwise comparisons. Except for ovary versus testis, the other two pairs are not really considered to be homologous, but they serve very roughly comparable general functions.
 
-## SBI calculation
+### SBI calculation
 
 The calculation of the SBI is based on the following principles:
 
-This is achieved by using the following overall formula:SBI=(MEDIAN of all female-biased TPM)−(MEDIAN of all male-biased TPM)\begin{document}$$\displaystyle \text{SBI} = \text{(MEDIAN of all female-biased TPM)} {-} \text{(MEDIAN of all male-biased TPM)}$$\end{document}
+This is achieved by using the following overall formula:
+
+$$
+SBI=(MEDIAN of all female-biased TPM)−(MEDIAN of all male-biased TPM)
+$$
 
 Since the SBI is meant to visualize only the variances between the individuals, we normalize the values to center the distributions around 0, applying the following transformation: normalized value = ((2 × ([original value] – [smallest value in data range]))/([largest value in the data range] – [smallest value in the data range])) – 1.
 
@@ -257,19 +515,19 @@ The individual normalized SBI values can be plotted as density plots that reflec
 
 In this display, the females should show a range of positive values representing their individual variation, and the males should show an analogous range of negative values. The corresponding density functions can range from strong overlap to strong separation.
 
-## Lists of all steps of the full sex-bias analysis procedures
+### Lists of all steps of the full sex-bias analysis procedures
 
-## Identification of sex-biased genes
+#### Identification of sex-biased genes
 
-## Calculation of the SBI
+#### Calculation of the SBI
 
-## Calculation of sex-specific variances
+#### Calculation of sex-specific variances
 
-## Calculation of regulatory turnover of all genes between taxa
+#### Calculation of regulatory turnover of all genes between taxa
 
 Note: this procedure is based on the same overall statistic as it is done for identifying sex-biased genes; a changed regulation is defined as a at least 1.25-fold difference in TPM values, plus Wilcoxon test with FDR<0.1.
 
-## MK test
+### MK test
 
 The asymptotic MK test (Messer and Petrov, 2013) was performed based on the single nucleotide variants (SNVs) of wild mouse samples derived from the whole-genome sequencing data of eight mice of each of the three taxa: DOM, MUS, and SPR (downloaded from https://wwwuser.gwdguser.de/~evolbio/evolgen/wildmouse/vcf/; Harr et al., 2016). The SNVs were annotated as synonymous and nonsynonymous using snpEff (4.3t) (Cingolani et al., 2012a; Cingolani et al., 2012b). For each SNV in each taxon, its type, polymorphic or fixed, was determined; and the allele frequency was calculated if it is polymorphic. A fixed SNV in M. spretus was considered to be the ancestral allele, and only such sites were used for the analysis. When such a site showed a fixed difference in either DOM or MUS, it was classified as derived substitution. Similarly, when the site was polymorphic, the derived allele was determined according to the fixed SNV in M. spretus. Variants in DOM and MUS were analyzed independently. Only SNVs on the autosomes were included for the analysis. The numbers of synonymous and nonsynonymous substitution sites and the numbers of synonymous and nonsynonymous polymorphic sites at each derived allele frequency were used as input for the adapted R script ‘asymptoticMK_local.R’ downloaded from https://github.com/MesserLab/asymptoticMK (Haller and Leinweber, 2017).
 
@@ -277,11 +535,11 @@ The asymptotic MK test was performed on eight sets of genes: DOM female-biased g
 
 To obtain the distribution of alpha in each MK test, we used 1000 rounds of resampling via bootstrapping from variants. The results are included in Figure 3—source data 2.
 
-## WGCNA
+### WGCNA
 
 In order to assess co-regulatory modules among the sex-biased genes, we used the WGCNA (1.71) approach (Langfelder and Horvath, 2008; Langfelder et al., 2022) to generate module assignments. According to its manual, our sample size, nine, is too low to generate biologically meaningful gene networks. We made, therefore, use of data from a parallel study (Xie et al., 2025) for which we obtained 39 additional DOM female samples for each of the somatic organs in the present analysis (brain, heart, kidney, liver, and mammary gland). Note that all the samples were obtained in parallel at the same time by the same people and with the same procedure. The total sample size, 48, is sufficient for a reliable WGCNA. Following the standard procedure, we first removed the outlier samples: none for brain and mammary, and one for each of heart (H35232), kidney (H35331), and liver (H35302). Then, we chose the parameter ‘power’ with the help of its ‘pickSoftThreshold’ function as 4 for brain, 8 for heart, kidney, and mammary, and 6 for liver. Finally, we ran its main function ‘blockwiseModules’ to get module assignments of genes in each organ with parameters as “corType = ‘bicor’, maxPOutliers = 0.1, networkType = ‘signed hybrid’, TOMType = ‘signed’”. The module assignments for all genes are included in the Supplementary Data D1.
 
-## Data from humans
+### Data from humans
 
 The human bulk RNA-Seq data were retrieved from the GTEx project (Lonsdale et al., 2013) as TPM files for each organ. To make them best comparable with the mouse data, we chose nine females and nine males for each organ, using the following criteria: maximum age 49 years, death reason category not 0. The full sample list is provided in Figure 7—source data 2. Note that in contrast to the mouse data, the different organ data come from different sets of individuals.
 

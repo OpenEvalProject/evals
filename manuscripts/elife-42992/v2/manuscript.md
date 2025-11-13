@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.42992.001 Although midbrain dopamine (DA) neurons have been thought to primarily encode reward prediction error (RPE), recent studies have also found movement-related DAergic signals. For example, we recently reported that DA neurons in mice projecting to dorsomedial striatum are modulated by choices contralateral to the recording side. Here, we introduce, and ultimately reject, a candidate resolution for the puzzling RPE vs movement dichotomy, by showing how seemingly movement-related activity might be explained by an action-specific RPE. By considering both choice and RPE on a trial-by-trial basis, we find that DA signals are modulated by contralateral choice in a manner that is distinct from RPE, implying that choice encoding is better explained by movement direction. This fundamental separation between RPE and movement encoding may help shed light on the diversity of functions and dysfunctions of the DA system.
+Although midbrain dopamine (DA) neurons have been thought to primarily encode reward prediction error (RPE), recent studies have also found movement-related DAergic signals. For example, we recently reported that DA neurons in mice projecting to dorsomedial striatum are modulated by choices contralateral to the recording side. Here, we introduce, and ultimately reject, a candidate resolution for the puzzling RPE vs movement dichotomy, by showing how seemingly movement-related activity might be explained by an action-specific RPE. By considering both choice and RPE on a trial-by-trial basis, we find that DA signals are modulated by contralateral choice in a manner that is distinct from RPE, implying that choice encoding is better explained by movement direction. This fundamental separation between RPE and movement encoding may help shed light on the diversity of functions and dysfunctions of the DA system.
 
 ## Introduction
 
@@ -34,15 +34,58 @@ Ultimately, our results show that DMS-projecting DA neurons’ signals are indee
 
 ## Results
 
-## Task, behavior and DA recordings
+### Task, behavior and DA recordings
 
 Mice were trained on a probabilistic reversal learning task as reported previously (Parker et al., 2016). Each trial began with an illumination in the nose port, which cued the mouse to initiate a nose poke (Figure 1a). After a 0–1 second delay, two levers appeared on both sides of the nose port. Each lever led to reward either with high probability (70%) or low probability (10%), with the identity of the high probability lever swapping after a block of variable length (see Materials and methods for more details, Figure 1b). After another 0–1 second delay, the mouse either received a sucrose reward and an accompanying auditory stimulus (positive conditioned stimulus, or CS+), or no reward and a different auditory stimulus (negative conditioned stimulus, or CS-).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of a mouse performing the task. The illumination of the central nosepoke signaled the start of the trial, allowing the mouse to enter the nose port. After a 0–1 second jitter delay, two levers were presented to the mouse, one of which result in a reward with high probability (70%) and the other with a low probability (10%). The levers swapped probabilities on a pseudorandom schedule, unsignaled to the mouse. (b) The averaged probability of choosing the lever with high value before the switch, 10 trials before and after the block switch, when the identity of the high value lever reversed. Error bars indicate ±1 standard error (n = 19 recording sites). (c) We fit behavior with a trial-by-trial Q learning mixed effect model. Example trace of 150 trials of a mouse's behavior compared to the model’s results. Black bars above and below the plot indicate which lever had the high probability for reward; Orange dots indicate the mouse’s actual choice; Blue dots indicate whether or not mouse was rewarded; Grey line indicates the difference in the model’s Q values for contralateral and ipsilateral choices. (d) Surgical schematic for recording with optical fibers from the GCaMP6f terminals originating from VTA/SN. (e) Example recording from VTA/SN::DMS terminals in a mouse expressing GCaMP6f (top) or GFP (bottom). (f, g) Previous work has reported contralateral choice selectivity in VTA/SN::DMS terminals (Parker et al., 2016) when the signals are time-locked to nose poke (f) and lever presentation (g). ‘Contra’ and ‘Ipsi’ refer to the location of the lever relative to the side of the recording. Colored fringes represent ±1 standard error (n=12 recording sites).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Surgical schematic for recording with optical fibers from the GCaMP6f VTA/SN::DMS cell-bodies. (b) Sample GCaMP6f traces from VTA/SN::DMS cell bodies. (c) Contralateral choice selectivity was also observed in DMS DA cell bodies when the signals were time-locked to nose poke (top) and lever presentation (bottom). Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 7).
+
 Given that block transitions were not signaled to the mouse, mice gradually learned to prefer the lever with the higher chance of reward after each transition. To capture this learning, we fit their choices using a standard trial-by-trial Q-learning model that predicted the probability of the animal's choice at each trial of the task (Figure 1c, Table 1). In the model, these choices were driven by a pair of decision variables (known as Q-values) putatively reflecting the animal’s valuation of each option.
+
+**Table 1.**
+ Fitted Parameters for Q-learning model from PyStan.25th, 50th, and 75th percentile of the alpha, beta, and stay parameters of the Q-learning mixed effect model. These are the the group-level parameters that reflect the distribution of the subject-level parameters.Table 1—source data 1.Mixed effect Q-learning model parameters.Parameters from the mixed effect Q-learning model, including group-level and individual-level parameters, and the mean and range of data across samples from the model. See 'Q Learning Mixed Effect Model' in the Materials and methods section for more details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>25th percentile</th>
+      <th>50th percentile (median)</th>
+      <th>75th percentile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alpha (learning rate)</td>
+      <td>0.581607</td>
+      <td>0.611693</td>
+      <td>0.639946</td>
+    </tr>
+    <tr>
+      <td>Beta (inverse temperature)</td>
+      <td>0.926501</td>
+      <td>0.990275</td>
+      <td>1.058405</td>
+    </tr>
+    <tr>
+      <td>Stay</td>
+      <td>0.883670</td>
+      <td>0.945385</td>
+      <td>1.008465</td>
+    </tr>
+  </tbody>
+</table>
 
 As mice performed this task, we recorded activity from either the terminals or cell bodies of DA neurons that project to DMS (VTA/SN::DMS) using fiber photometry to measure the fluorescence of the calcium indicator GCaMP6f (Figure 1d,e; Figure 1—figure supplement 1a,b). As previously reported, this revealed elevated activity during contralateral choice trials relative to ipsilateral choice trials, particularly in relation to the nose poke and lever presentation events (Figure 1f,g; Figure 1—figure supplement 1c) (Parker et al., 2016).
 
-## Predictions of contralateral and chosen value models
+### Predictions of contralateral and chosen value models
 
 In order to examine how value-related activity might (or might not) explain seemingly movement-related activity, we introduced two hypothetical frames of reference by which the DMS DA neurons’ activity may be modulated by predicted value during trial events prior to the outcome: the DA signals could be modulated by the value of the contralateral option (relative to ipsilateral; Figure 2a) or by the value of the chosen option (relative to unchosen; Figure 2b). Note that both of these modulations could be understood as the anticipatory component (occasioned at lever presentation) of a temporal difference RPE, with respect to the respective action’s value.
 
@@ -56,9 +99,41 @@ The second possibility is that value modulation is relative to the chosen (versu
 
 If DMS-projecting DA neurons indeed display chosen value modulation (Figure 2b), rather than contralateral value modulation, the value modulation for both contralateral and ipsilateral choices would be similar. In this case, value modulation could not in itself account for the neurons’ elevated activity during contralateral trials, which we have previously observed (Figure 1f,g). Therefore, to account for contralateral choice preference, one would have to assume DA neurons are also selective for the contralateral action itself (unrelated to their value modulation; Figure 2c).
 
-## DA in dorsomedial striatum is modulated by chosen value, not contralateral value
+### DA in dorsomedial striatum is modulated by chosen value, not contralateral value
 
 Next, we determined which type of value modulation better captured the signal in DA neurons that project to DMS by comparing the GCaMP6f signal in these neurons for high and low value trials. We focused on the lever presentation since this event displayed a clear contralateral preference (Figure 1g). As a simple and objective proxy for the value of each action (i.e., the component of the RPE at lever presentation for each action), we compared signals when the animal was rewarded (high value), or not (low value) on the previous trial. (To simplify the interpretation of this comparison, we only included trials in which the mice made the same choice as the preceding trial, which accounted for 76.6% of the trials.) The traces (Figure 3a) indicated that the VTA/SN::DMS terminals were modulated by the previous trial’s reward. The value-related signals reflected chosen value — responding more when the previous choice was rewarded, whether contralateral or ipsilateral — and therefore did not explain the movement-related effect. This indicated that the DMS-projecting DA neurons represented both chosen value and movement direction (similar to Figure 2c). The effect of contralateral action modulation was also visible in individual, non-z-scored data in both VTA/SN::DMS terminals (Figure 3—figure supplement 1) and VTA/SN::DMS cell-bodies (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-v2.jpg)
+
+**Figure 3.:** (a) GCaMP6f signal time-locked to lever presentation for contralateral trials (blue) and ipsilateral trials (orange), as well as rewarded (solid) and non-rewarded previous trial (dotted) from VTA/SN::DMS terminals. Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 12). (b) GCaMP6f signal for contralateral trials (blue) and ipsilateral trials (orange), further binned by the difference in Q values for chosen and unchosen action. Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 12). (c) Mixed effect model regression on each datapoint from 3 seconds of GCaMP6f traces. Explanatory variables include the action of the mice (blue), the difference in Q values for chosen and unchosen actions (orange), their interaction (green), and an intercept. Colored fringes represent ±1 standard error from estimates (n = 12 recording sites). Black diamond represents the average latency for mice pressing the lever, with the error bars showing the spread of 80% of the latency values. Dots at bottom mark timepoints when the corresponding effect is significantly different from zero at p<0.05 (small dot), p<0.01 (medium dot), p<0.001 (large dot). P values were corrected with Benjamini Hochberg procedure. (d-f) Same as (a-e), except with signals from VTA/SN::DMS cell bodies averaged across recording sites (n = 7) instead of terminals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sample, not Z-scored ∆F/F recording from VTA/SN::DMS Terminal. Each row is an example session from a different mouse. Traces are time-locked to the lever presentation for contralateral trials (left column) and ipsilateral trials (right column). White dotted vertical line indicate lever presentation. Colorbars are provided for each row for each example session.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Sample, not Z-scored ∆F/F recording from VTA/SN::DMS Cell-bodies. Each row is an example session from a different mouse. Traces are time-locked to the lever presentation for contralateral trials (left column) and ipsilateral trials (right column). White dotted vertical line indicate lever presentation. Colorbars are provided for each row for each example session.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Same analysis as Figure 3c, except explanatory variables include the action of the mice (blue), the difference in Q values for contralateral and ipsilateral choices (orange), their interaction (green), and an intercept. Colored fringes represent ±1 standard error from estimates (n = 12 recording sites). Dots at bottom mark timepoints where the corresponding effect is significantly different from zero at p<0.05 (small dot), p<0.01 (medium dot), p<0.001(large dot). P values were corrected with Benjamini Hochberg procedure.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) GCaMP6f signal time-locked to nose poke for contralateral trials (blue) and ipsilateral trials (orange), as well as rewarded (solid) and non-rewarded previous trial (dotted) from VTA/SN::DMS terminals. Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 12). (b) GCaMP6f signal for contralateral trials (blue) and ipsilateral trials (orange), and further binned by the difference in Q values for chosen and unchosen action. Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 12). (c) Mixed effect model regression on each datapoint from 3 seconds of GCaMP6f traces. Explanatory variables include the action of the mice (blue), the difference in Q values for chosen vs unchosen actions (orange), their interaction (green), and an intercept. Colored fringes represent ±1 standard error from estimates (n = 12 recording sites). Black diamond represents the average latency for lever presentation from nose poke, with the error bars showing the spread of 80% of the latency values. Dots at bottom mark timepoints when the corresponding effect is significantly different from zero at p<0.05 (small dot), p<0.01 (medium dot), p<0.001 (large dot). P values were corrected with Benjamini Hochberg procedure. (d-f) Same as (a-e), except with signals from VTA/SN::DMS cell bodies averaged across recording sites (n = 7) instead of terminals.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Nose poke kernel output from linear regression model using GCaMP6f from VTA/SN::DMS terminals. Each line is the kernel for a combination of contralateral (blue) and ipsilateral (orange) trials, as well as rewarded (solid) and non-rewarded (dotted) trials. Colored fringes represent ±1 standard error from activity averaged across recording sites (n = 12). Black diamond represents the average latency for lever presentation from nose poke with the error bars showing the spread of 80% of the latency values. (b) Lever presentation kernels, with the black diamond representing the average latency from lever press to lever presentation. (c) Lever press kernels, with the black diamond representing the average latency from CS +or CS- to lever press. (d-f) Same as (a-e), except with signals from VTA/SN::DMS cell bodies averaged across recording sites (n = 7) instead of terminals.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** GCaMP6f signal relative to the lever presentation time for contralateral trials (blue) and ipsilateral trials (orange), as well as rewarded (solid) and non-rewarded previous trial (dotted) from VTA/SN::DMS terminals. Colored fringes represent ±1 standard error from activity averaged across trials. Each row represents averaged data from a distinct mouse (n = 4 total), with left and right column representing the left and right hemisphere recordings.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/42992/elife-42992-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** (a). Mixed effect model regression with log latency of lever press (red) as additional nuisance covariate for VTA/SN::DMS terminal data (n = 12 recording sites). As with in Figure 3c,f, the mixed effect model’s other explanatory variables include the action of the mice (blue), the difference in Q values for chosen vs unchosen actions (orange), their interaction (green), and an intercept. Colored fringes represent ±1 standard error from estimates. Dots at bottom mark timepoints when the corresponding effect is significantly different from zero at p<0.05 (small dot), p<0.01 (medium dot), p<0.001 (large dot). P values were corrected with Benjamini Hochberg procedure. (b) Same as (a), except with signals from VTA/SN::DMS cell bodies averaged across recording sites (n = 7) instead of terminals. .
 
 We repeated this analysis using trial-by-trial Q values extracted from the model, which we reasoned should reflect a finer grained (though more assumption-laden) estimate of the action’s value. (For this analysis, we were able to include both stay and switch trials.) Binning trials by chosen (minus unchosen) value, a similar movement effect and value gradient emerged as we have seen with the previous trial outcome analysis (Figure 3b). Trials with higher Q values had larger GCaMP6f signals, regardless which side was chosen, again suggesting that VTA/SN::DMS terminals were modulated by the expected value of the chosen (not contralateral) action, in addition to being modulated by contralateral movement.
 
@@ -70,7 +145,7 @@ To verify the robustness of these findings, we conducted further followup analys
 
 Next, we examined a few other factors that might have affected movement-specific activity. Taking advantage of the fact that the VTA/SN::DMS cell-bodies data had recordings from both hemispheres in three animals, we directly compared signals across hemispheres in individual mice and observed that the side-specific effects reversed within animal (Figure 3—figure supplement 6). This speaks against the possibility that they might reflect animal-specific idiosyncrasies such as side biases. Finally, we considered whether the contralateral action modulation might in part reflect movement vigor rather than action value. We addressed this by repeating the analysis in Figure 3c,f, but including as an additional covariate the log lever-press latency as a measure of the action’s vigor. For both VTA/SN::DMS terminals and cell-bodies data, the lever-press latency was not a strong predictor for GCaMP6f signals, and the effect of the original predictors largely remained the same (Figure 3—figure supplement 7).
 
-## Direction of movement predicts DMS DA signals
+### Direction of movement predicts DMS DA signals
 
 An additional observation supported the interpretation that the contralateral choice selectivity in DMS-projecting DA neurons is related to the direction of movement and not the value of the choice. When the signals were time-locked to the lever press itself, there was a reversal of the signal selectivity between contralateral and ipsilateral trials, shortly after the lever press (Figure 4). Although body tracking is not available, this event coincided with a reversal in the animal’s physical movement direction, from moving towards the lever from the central nosepoke before the lever press, to moving back to the central reward port after the lever press. In contrast, there is no reversal in value modulation at the time of lever press. The fact that the side-specific modulation (and not the value modulation) followed the mice's movement direction during the trial further indicated that movement direction explains the choice selectivity in these DA neurons, and resists explanation in terms of RPE-related signaling.
 
@@ -100,7 +175,7 @@ An important limitation of the study is the use of fiber photometry, which asses
 
 ## Materials and methods
 
-## Mice and surgeries
+### Mice and surgeries
 
 This article reports new analysis on data originally reported by (Parker et al., 2016). We briefly summarize the methods from that study here. This article reports on data from 17 male mice expressing Cre recombinase under the control of the tyrosine hydroxylase promoter (ThIRES-Cre), from which GCaMP6f recordings were obtained from DA neurons via fiber photometry.
 
@@ -110,7 +185,7 @@ In the case of VTA/SN::DMS cell body recordings, Cre-dependent GCaMP6f virus (AA
 
 One mouse was used for the GFP recordings as a control condition for VTA/SNc::DMS terminals recordings (Figure 1e).
 
-## Instrumental reversal learning task
+### Instrumental reversal learning task
 
 The recordings were obtained while the mouse performed a reversal learning task in an operant chamber with a central nose poke, retractable levers on each side of the nose poke, and reward delivery in a receptacle beneath the central nose poke.
 
@@ -118,7 +193,7 @@ Each trial began with the illumination of the center nose port. After the mouse 
 
 For the reversal learning, each of the levers either had a high probability for reward (70%) or low probability for reward (10%). Throughout the session, the identity of the high probability lever changed in a pseudorandom schedule; specifically, each block consisted of at least 10 rewarded trials plus a random number of trials drawn from a Geometric distribution of p=0.4 (mean 2.5). On average, there were 23.23 ± 7.93 trials per block and 9.67 ± 3.66 blocks per session. Both reported summary statistics are mean ± standard deviation.
 
-## Data processing
+### Data processing
 
 All fiber photometry recordings were acquired at 15 Hz. 2–6 recording sessions were obtained per recording site (one session/day), and these recordings were concatenated across session for all analyses. On average, we had 1307.0 ± 676.01 trials per mouse (858.09 ± 368.56 trials per mouse for VTA/SN::DMS Terminals recordings and 448.91 ± 455.61 trials per mouse for VTA/SN::DMS Cell-bodies recordings).
 
@@ -126,18 +201,30 @@ The signals from each recording site were post-processed with a high-pass FIR fi
 
 The VTA/SN::DMS terminals data consisted of 10108 total trials across 12 recording sites, and VTA/SN::DMS cell-bodies consisted of 4938 total trials across 7 recording sites.
 
-## Q learning mixed effect model
+### Q learning mixed effect model
 
-We fit a trial-by-trial Q-learning mixed effect model to the behavioral data from each of the 12 mice on all recording sites and combined data across mice with a hierarchical model. The model was initialized with a Q value of 0 for each action and updated at each trial according to:Qt+1(ct)=Qt(ct)+α(rt−Qt(ct))where Q is the value for both options, ct is the option chosen on trial t (lever either contralateral or ipsilateral to recording site), and 0 <= α <= 1 is a free learning rate parameter. The subject's probability to choose choice c was then given by a softmax equation:P(ct=c)∝exp(β⋅Qt(c)+stay⋅I(c,ct−1))where β is a free inverse temperature parameter, stay is a free parameter encoding how likely the animal will repeat its choice from the last trial, and I is a binary indicator function for choice repetition (1 if c was chosen on the previous trial; 0 otherwise). The three free parameters of the model were estimated separately for each subject, but jointly (in a hierarchical random effects model) with group-level mean and variance parameters reflecting the distribution, over the population, of each subject-level parameter.
+We fit a trial-by-trial Q-learning mixed effect model to the behavioral data from each of the 12 mice on all recording sites and combined data across mice with a hierarchical model. The model was initialized with a Q value of 0 for each action and updated at each trial according to:
+
+$$
+Q_{t+1}(c_{t})=Q_{t}(c_{t})+\alpha(r_{t}−Q_{t}(c_{t}))
+$$
+
+where $Q$ is the value for both options, $c_{t}$ is the option chosen on trial t (lever either contralateral or ipsilateral to recording site), and 0 <= α <= 1 is a free learning rate parameter. The subject's probability to choose choice c was then given by a softmax equation:
+
+$$
+P(c_{t}=c)∝exp(\beta⋅Q_{t}(c)+stay⋅I(c,c_{t−1}))
+$$
+
+where $\beta$ is a free inverse temperature parameter, stay is a free parameter encoding how likely the animal will repeat its choice from the last trial, and I is a binary indicator function for choice repetition (1 if c was chosen on the previous trial; 0 otherwise). The three free parameters of the model were estimated separately for each subject, but jointly (in a hierarchical random effects model) with group-level mean and variance parameters reflecting the distribution, over the population, of each subject-level parameter.
 
 The parameters were estimated using Hamiltonian Monte Carlo, as implemented in the Stan programming language (version 2.17.1.0; Carpenter et al., 2017). Samples from the posterior distribution over the parameters were extracted using the Python package PyStan (Carpenter et al., 2017). We ran the model with 4 chains of 1000 iterations for each (of which the first 250 were discarded for burn-in), and the parameter adapt_delta set to 0.99. We verified convergence by visual inspection and by verifying that the potential scale reduction statistic Rhat (Gelman and Rubin, 1992) was close to 1.0 (<0.003 for all parameters) (Table 1).
 
 We used the sampled parameters to compute per-trial Q values for each action, trial, and mouse. We calculated the difference between the Q values for the chosen action and unchosen action for each trial. We binned the difference in these Q values for each trial and plotted the average GCaMP6f time-locked to lever presentation for each bin (Figure 3b,e).
 
-## Regression model
+### Regression model
 
 In Figure 3c,f, we performed a linear mixed effect model regression to predict GCaMP6f signal at each time point based on Q-values, choice (contralateral vs ipsilateral), their interaction, and an intercept. We took the difference in Q values for the chosen vs unchosen levers, then we standardized the difference in Q values for each mouse and each recording site. GCaMP6f was time-locked to lever presentation, regressing to data points 1 second before and 2 seconds after the time-locked event for 45 total regressions. The regression, as well as the calculation of p values, was performed with the MixedModels package in Julia (Bezanson et al., 2014). The p values were corrected for false discovery rate over the ensemble of timepoints for each regression variable separately, using the procedure of Benjamini and Hochberg (Benjamini and Hochberg, 1995) via the MultipleTesting package in Julia (Bezanson et al., 2014).
 
-## Multiple event kernel analysis
+### Multiple event kernel analysis
 
 In Figure 3—figure supplement 5, we fit a linear regression model to determine the contributions to the ongoing GCaMP6f signal of three simultaneously modeled events (nose poke, lever presentation, lever press). To do this, we used kernels, or sets of regressors covering a series of time lags covering the period from 1 second before to 2 seconds after each event. Each event had four kernels, corresponding to the four conditions from Figure 3a,c (all combinations of contralateral vs ipsilateral trials and previous reward vs no previous reward trials). We solved for the kernels by regressing the design matrix against GCaMP6f data using least squares in R with the rms package (Harrell, 2018). The standard error (colored fringes) was calculated using rms’ robcov (cluster robust-covariance) function to correct for violations of ordinary least squares assumptions due to animal-by-animal clustering in the residuals.

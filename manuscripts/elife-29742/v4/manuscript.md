@@ -37,29 +37,35 @@ We simulate microcircuit activity using a four population firing rate model. The
 
 Populations are connected according to the microcircuit scheme in Figure 1a which contains the connections reported in both Jiang et al., 2015 and Pfeffer et al. (2013). We also consider three sources of input: (i) top-down modulation that targets VIP cells (ii) local recurrent input and (iii) constant background input set so that the populations have some fixed baseline activity (see Materials and methods for details).
 
-## Response to top-down modulation depends on baseline activity
+### Response to top-down modulation depends on baseline activity
 
 To illustrate possible complex behaviors displayed by the network, we first focused on the circuit responses to top-down modulation. The simulation results from our model allow us to identify two qualitatively different scenarios depending on the baseline activity of the network (the baseline activity is the activity before the onset of top-down modulation and we control it by changing the constant background input, see Materials and methods for details). On the one hand, when the baseline activity is low, top-down modulation will result in a decrease of the rate of the SST population and an increase of the rates of the other populations (E, PV and VIP) (see Figure 1c). On the other hand, when baseline activity is high, the rate of all populations increases with top-down modulation (see Figure 1d). These simulations reveal that population responses to top-down modulation depend in a complex way on the initial state of the network.
 
 The striking behavior exhibited by the SST population can be explained heuristically by analyzing the response of the different populations to external excitatory input targeting VIP cells. When the top-down modulation starts, the rate of the VIP population increases. By calculating the time derivatives of the rates right after the onset of the top-down modulation (see Materials and methods) one can see that this effect always results in a transient reduction of SST activity and therefore a reduction of inhibition to VIP, PV and E cells. When baseline activity is low the E population is below threshold and this change in net input has a small effect in the output. In that situation, all populations quickly reach a stationary state. However, when the baseline activity is high, the E population is above threshold and a small change in input from SST cells has a big effect on the rate of the E population. If the recurrent excitation in the microcircuit is strong enough, it can reverse the initial response of the SST population making it increase its activity to a higher rate than the baseline.
 
-## Circuit behavior explained by response matrix
+### Circuit behavior explained by response matrix
 
-In order to formally characterize the steady state response of a population to external input we introduce the response matrix M. The intuition behind the response matrix is that if we change the input to population j (where j=E,P,S,V for excitatory, PV, SST and VIP populations respectively) by a small amount δ⁢Ij, then the change in rate of the population i will be δ⁢ri=δ⁢Ij⁢Mi⁢j. If Mi⁢j is positive (negative), an increase of the external excitation to j will result in an increase (decrease) of the rate of population i (see Materials and methods and Table 3 for details). In contrast to the connectivity matrix, which takes into account only the direct path from population j to i, the response matrix contains information about all the possible ways in which population j can affect population i, namely through indirect connections j-h-i. Due to the complexity of these indirect pathways, for different values of the connectivity matrix (but preserving the excitatory/inhibitory structure) Mi⁢j can be positive or negative irrespective of whether the connection from j to i is inhibitory or excitatory. Furthermore, due to the nonlinearities in the f-I curve, the response depends on the baseline rate of each of the populations and, as shown before, it can reverse its sign.
+In order to formally characterize the steady state response of a population to external input we introduce the response matrix $M$. The intuition behind the response matrix is that if we change the input to population $j$ (where $j=E,P,S,V$ for excitatory, PV, SST and VIP populations respectively) by a small amount $\delta⁢I_{j}$, then the change in rate of the population $i$ will be $\delta⁢r_{i}=\delta⁢I_{j}⁢M_{i⁢j}$. If $M_{i⁢j}$ is positive (negative), an increase of the external excitation to $j$ will result in an increase (decrease) of the rate of population $i$ (see Materials and methods and Table 3 for details). In contrast to the connectivity matrix, which takes into account only the direct path from population $j$ to $i$, the response matrix contains information about all the possible ways in which population $j$ can affect population $i$, namely through indirect connections $j$-$h$-$i$. Due to the complexity of these indirect pathways, for different values of the connectivity matrix (but preserving the excitatory/inhibitory structure) $M_{i⁢j}$ can be positive or negative irrespective of whether the connection from $j$ to $i$ is inhibitory or excitatory. Furthermore, due to the nonlinearities in the f-I curve, the response depends on the baseline rate of each of the populations and, as shown before, it can reverse its sign.
 
-As an example, we analyze in detail the response of the SST population to external input to VIP cells. As we show in the Materials and methods section, this term of the response matrix is given by:MS⁢V=C⁢wS⁢V⁢((wE⁢E-dE)⁢(wP⁢P+dP)-wE⁢P⁢wP⁢E),where wi⁢j are the absolute values of the connection weights and therefore are positive by definition and for the system to be stable C has to be positive (see Materials and methods for details). The terms di are proportional to the inverse of the first derivative of the f-I curves and are always positive. In particular, dE becomes arbitrarily large when the input is very low and tends monotonically to a positive constant dE∞ for high input. Therefore, if wE⁢E≤dE∞ then MS⁢V will always be negative. However, for wE⁢E>dE∞ the behavior is much richer: if input is high then dE will be close to its minimum dE∞ and wE⁢E>dE allowing for MS⁢V to be positive (provided that the product wE⁢P⁢wP⁢E is small enough). Instead if the input is low, dE will become very large and MS⁢V will be negative.
+As an example, we analyze in detail the response of the SST population to external input to VIP cells. As we show in the Materials and methods section, this term of the response matrix is given by:
+
+$$
+M_{S⁢V}=C⁢w_{S⁢V}⁢((w_{E⁢E}-d_{E})⁢(w_{P⁢P}+d_{P})-w_{E⁢P}⁢w_{P⁢E}),
+$$
+
+where $w_{i⁢j}$ are the absolute values of the connection weights and therefore are positive by definition and for the system to be stable $C$ has to be positive (see Materials and methods for details). The terms $d_{i}$ are proportional to the inverse of the first derivative of the f-I curves and are always positive. In particular, $d_{E}$ becomes arbitrarily large when the input is very low and tends monotonically to a positive constant $d_{E}^{∞}$ for high input. Therefore, if $w_{E⁢E}\leqd_{E}^{∞}$ then $M_{S⁢V}$ will always be negative. However, for $w_{E⁢E}>d_{E}^{∞}$ the behavior is much richer: if input is high then $d_{E}$ will be close to its minimum $d_{E}^{∞}$ and $w_{E⁢E}>d_{E}$ allowing for $M_{S⁢V}$ to be positive (provided that the product $w_{E⁢P}⁢w_{P⁢E}$ is small enough). Instead if the input is low, $d_{E}$ will become very large and $M_{S⁢V}$ will be negative.
 
 It is remarkable that this change in the interaction between VIP and SST populations depends on the activation level of E: modifying the state of one population has a impact in the interactions between other populations. The heuristic explanation is that if the recurrent excitation is strong enough and the E population is already strongly excited (above threshold), a small decrease in the inhibition from SST to the E population can boost its activity and therefore strongly drive the whole microcircuit. If instead, the E population is in a low activation state the change in inhibition will have a weak effect that will not be able to reverse the response of SST.
 
-This observation provides an explanation to the reversal of the response of SST to VIP activation when the baseline activity is changed: as we show in Figure 2a and c for low baseline activity, MS⁢V is negative and the presence of an external excitatory current targeting VIP cells will result in a negative response of SST cells and positive response of E, PV and VIP cells, conforming to the disinhibitory hypothesis. On the other hand, for high baseline activity (panels 2b and 2d), the response of the SST population to input to VIP cells becomes positive leading to the response reversal regime.
+This observation provides an explanation to the reversal of the response of SST to VIP activation when the baseline activity is changed: as we show in Figure 2a and c for low baseline activity, $M_{S⁢V}$ is negative and the presence of an external excitatory current targeting VIP cells will result in a negative response of SST cells and positive response of E, PV and VIP cells, conforming to the disinhibitory hypothesis. On the other hand, for high baseline activity (panels 2b and 2d), the response of the SST population to input to VIP cells becomes positive leading to the response reversal regime.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig2-v4.jpg)
 
 **Figure 2.:** (a–b) Tuning curves for the different populations and baseline activity in both scenarios (low and high). In the low baseline activity scenario (a) all populations are below threshold (flat part of the fI curve), instead in the high baseline activity scenario (b) all populations are above threshold, where small changes in input result in large changes in rate. (c–d) Response matrices for the two scenarios. In (c) the response of SST to external excitation of VIP is negative, while the responses of E and PV are positive. This corresponds to the disinhibition regime. In (d) the responses of all populations to external excitation of VIP are positive, in particular, the response of SST is reversed with respect to (c) corresponding to the response reversal regime.
 
-A similar analysis can be conducted for all terms in M. For example, another case of response reversal in this circuit is that of ME⁢E which can have different signs for different baseline activity levels, meaning that the excitatory population can have a negative response to excitatory input to itself. Intuitively, if an external excitatory current targets the E population, its rate will increase transiently and thus the excitation that SST and VIP receive will also increase. If this effect is stronger in SST than in VIP the rate of the VIP population will decrease and therefore the inhibition that SST receives will decrease as well resulting in stronger inhibition to E cells. Note that for this to happen both SST and VIP have to be in the high activity baseline (i.e. dS, dV have to be small) and wS⁢V, wV⁢S have to be strong. The explicit expression of ME⁢E (see Table 3) reveals that if the SST-VIP-SST loop is not strong enough or if dS, dV are large ME⁢E will always be positive.
+A similar analysis can be conducted for all terms in $M$. For example, another case of response reversal in this circuit is that of $M_{E⁢E}$ which can have different signs for different baseline activity levels, meaning that the excitatory population can have a negative response to excitatory input to itself. Intuitively, if an external excitatory current targets the E population, its rate will increase transiently and thus the excitation that SST and VIP receive will also increase. If this effect is stronger in SST than in VIP the rate of the VIP population will decrease and therefore the inhibition that SST receives will decrease as well resulting in stronger inhibition to E cells. Note that for this to happen both SST and VIP have to be in the high activity baseline (i.e. $d_{S}$, $d_{V}$ have to be small) and $w_{S⁢V}$, $w_{V⁢S}$ have to be strong. The explicit expression of $M_{E⁢E}$ (see Table 3) reveals that if the SST-VIP-SST loop is not strong enough or if $d_{S}$, $d_{V}$ are large $M_{E⁢E}$ will always be positive.
 
-## Random network model
+### Random network model
 
 Experimental recordings showed a great diversity across neural responses even when recording from the same class of cells (Pyramidal, SST, PV or VIP) (Pakan et al., 2016). Although this diversity can have many origins, such as intrinsic heterogeneity in the cells within the same class, we proposed that random connectivity alone is sufficient to explain it. To do so we develop an extension of our model where each population is composed of multiple identical randomly connected rate units and where the probability that one connection exists from one unit to another depends on the populations of the presynaptic and postsynaptic units according to data extracted from Jiang et al. (2015); Pfeffer et al. (2013) (see Materials and methods for details).
 
@@ -69,7 +75,7 @@ For each unit, we measure the rate modulation (rate during top-down modulation m
 
 **Figure 3.:** (a) Schematic of the model. Each population is composed of several rate units and the connectivity between units is random with probabilities extracted from experimental data in the literature. (b) Rate modulation (rate after the onset of the modulatory current minus baseline rate) for low and high baseline activities. Each colored point corresponds to one unit. Unit responses are very variable and, in particular within the same population different units might have responses with different sign. White points correspond to the population average. Despite the variability of individual responses the population average corresponds to the population responses in the single unit model in Figure 1.
 
-## Model of mouse V1 accounts for experimental measurements
+### Model of mouse V1 accounts for experimental measurements
 
 Our framework allows us to easily understand the counterintuitive behavior of V1 during locomotion. In the experiments mice with their head fixed face a screen where different visual stimuli are presented and can run freely on a treadmill (Fu et al., 2014; Pakan et al., 2016). Different visual stimuli result in different baseline activities in V1 and top-down modulation is triggered when the mice start running.
 
@@ -81,19 +87,35 @@ Our simulations of this V1 circuit model reproduce the phenomena described in th
 
 To show that our results do not rely on a fine tuning of the connectivity parameters or even on certain details of the microcircuit structure, we have run the model with several connectivity matrices and perturbations of them (Figure 4—figure supplement 2) and we find that different connectivity parameters can reproduce the same circuit behavior as has been shown before in other systems (Marder et al., 2015). We have also considered other microcircuit structures to account for the differences between studies ([Pfeffer et al., 2013] reports projections from PV to VIP and (Jiang et al., 2015) from PV to SST) and we also consider thalamic input to PV (Figure 4—figure supplement 3). In all these cases, the results were consistent with our original findings showing that the phenomenon and the analysis are robust and not a peculiarity of one specific circuit.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-v4.jpg)
+
+**Figure 4.:** (a) Schematic of the microcircuit. Visual input targets E and SST cells. Behavior related top-down modulation targets VIP cells. (b) Response of E and SST populations when a weak visual stimulus (6 deg) is presented for locomotion and immobility. The E population always shows a higher response with locomotion. On the other hand, before the visual stimulation the SST population has higher activity for immobility than for locomotion and when the visual stimulus is presented, the activity of the SST population is higher for locomotion. (c) Relative change in calcium fluorescence for three levels of visual stimulation (darkness, gray screen and grating) and two behavioral states: immobility (empty bars) and locomotion (filled bars) extracted from Pakan et al. (2016). (d) Rates (in Hz) of the populations in the V1 simulation for the same conditions as in (c). Comparison of (c) with (d) shows that our simulations reproduce qualitatively the activity of neural populations in mice V1. Namely the activity of all populations is higher during locomotion than during immobility whenever there is visual stimulation and for E, PV and VIP also in the absence of visual stimulation. Our model shows a decrease in activity of SST during locomotion as reported in Fu et al. (2014) (the change in activity of the SST population in darkness in Pakan et al. (2016) is not statistically significant). The quantitative differences might be related to the fact that changes in calcium fluorescence are not proportional to changes in rate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Relative change in calcium fluorescence for gratings of diameters ranging from 10 deg to 60 deg for the two behavioral states: immobility (empty dots) and locomotion (filled dots) extracted from the preprint (Dipoppa et al., 2017) (b) Rates (in Hz) of the populations in the V1 simulation for the same conditions as in (a). As in Figure 4, our simulations reproduce qualitatively the activity of neural populations in mice V1. Our model also exhibits surround suppression for all populations.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** Top: Example of three connectivity matrices that have the same qualitative behavior (in pAs). Bottom: rate modulation (rate during locomotion minus rate for immobility). Each bar corresponds to the average rate modulation of 20 random perturbations of the matrices on the top where each entry has been multiplied by a random variable uniformly distributed in $[0.9,1.1]$, which corresponds to random changes of up to ±10%. Error bars correspond to the minimum and maximum rate modulations of the 20 realizations. Despite quantitative variations, the qualitative behavior is always the same: rate modulation of SST population in darkness is always negative; rate modulation for all other cases is always positive.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp3-v4.jpg)
+
+**Figure 4—figure supplement 3.:** Two alternative microcircuits with visual input targeting E, SST and PV populations and PV to VIP (a) and PV to SST (b) connections exhibit the same qualitative behavior as the circuit in Figure 1 and Figure 4—figure supplement 1.
+
 ## Discussion
 
 We have developed a theoretical model of cortical circuit with multiple interneuron types that accounts for newly identified complex interactions between cell types. The model has been used to reproduce and explain two counterintuitive phenomena observed in mouse cortex. First, in certain cases the activation of VIP cells results in an overall positive response of the SST population (Pakan et al., 2016). Second, the sign of the SST population response to excitation of VIP cells depends on the baseline activity of the circuit (Fu et al., 2014). Two features of the system lead to this behavior: the presence of multiple interneuron populations and the nonlinearity of f-I curves.
 
 We explained heuristically the response reversal by closely looking at transient dynamics of the circuit. One experimentally testable prediction of our analysis is that, as Figure 1d and our calculations of the transient behavior show, in the response reversal regime, the overall SST population response to top-down modulation should initially decrease and later increase until reaching a higher rate than the baseline.
 
-Based on our model, we introduced the response matrix M, which is a comprehensive framework to understand counterintuitive steady state responses. It provides explicit information about the contribution of each individual connection. For example by looking at the elements in MS⁢V (see Table 3), one can readily see that if the recurrent excitation between pyramidal cells is not large enough, MS⁢V can only be negative and therefore response reversal of SST would not happen. This statement can be easily tested by repeating the experiments while suppressing the activation of the E population. As we discussed before, another example is that if both SST and VIP populations have high baseline activities and if the SST-VIP-SST loop is strong enough, ME⁢E can be negative, that is the excitatory population can have a negative response to excitatory input (see Table 3 for the explicit expression of ME⁢E). If the connections between the SST and the VIP populations are removed (or weakened) or if their baseline activities are sufficiently lowered ME⁢E will always be positive. This constitutes another interesting prediction that can be experimentally tested.
+Based on our model, we introduced the response matrix $M$, which is a comprehensive framework to understand counterintuitive steady state responses. It provides explicit information about the contribution of each individual connection. For example by looking at the elements in $M_{S⁢V}$ (see Table 3), one can readily see that if the recurrent excitation between pyramidal cells is not large enough, $M_{S⁢V}$ can only be negative and therefore response reversal of SST would not happen. This statement can be easily tested by repeating the experiments while suppressing the activation of the E population. As we discussed before, another example is that if both SST and VIP populations have high baseline activities and if the SST-VIP-SST loop is strong enough, $M_{E⁢E}$ can be negative, that is the excitatory population can have a negative response to excitatory input (see Table 3 for the explicit expression of $M_{E⁢E}$). If the connections between the SST and the VIP populations are removed (or weakened) or if their baseline activities are sufficiently lowered $M_{E⁢E}$ will always be positive. This constitutes another interesting prediction that can be experimentally tested.
 
-Our calculations also revealed sign correlations between entries of M, for example MS⁢V and MS⁢S have opposite signs for any connectivity matrix (given the microcircuit) and for any baseline activity. This predicts that in the regime where SST activity has a positive response to excitatory input targeting VIP, SST has to have a negative response to external input targeting SST. In addition, our results are in line with experimental studies that show that VIP interneurons play an important role in cortical activity modulation (Mesik et al., 2015; Ibrahim et al., 2016; Jackson et al., 2016).
+Our calculations also revealed sign correlations between entries of $M$, for example $M_{S⁢V}$ and $M_{S⁢S}$ have opposite signs for any connectivity matrix (given the microcircuit) and for any baseline activity. This predicts that in the regime where SST activity has a positive response to excitatory input targeting VIP, SST has to have a negative response to external input targeting SST. In addition, our results are in line with experimental studies that show that VIP interneurons play an important role in cortical activity modulation (Mesik et al., 2015; Ibrahim et al., 2016; Jackson et al., 2016).
 
-Our approach constitutes a general conceptual framework in which previous work regarding complex cortical interactions can be better understood (Tsodyks et al., 1997; Ozeki et al., 2009; Litwin-Kumar et al., 2016). The analysis of the response matrix shows that for the given microcircuit structure all terms of the matrix can be positive or negative. This is not the case in E-I networks (networks with one excitatory (E) population and only one inhibitory (I) population) (Tsodyks et al., 1997; Ozeki et al., 2009). In that case ME⁢E and MI⁢E are always positive, ME⁢I is always negative and only MI⁢I can have both signs (see Materials and methods). In this sense, having more than one inhibitory population results in a much more versatile network. Another important point that can be derived from our calculations is the relationship between response reversal and inhibition stabilized networks (ISN) (Ozeki et al., 2009). Looking at the terms of the response matrix for an E-I network, we can see that the condition to have response reversal and the condition to be an ISN is the same: WE⁢E has to be larger than dE∞. When analysing networks with more than one inhibitory population the relationship is not necessarily bidirectional any more. In the network that we analyzed, we found that in the high baseline activity the network is in the ISN regime and MS⁢V is positive (as observed in [Litwin-Kumar et al., 2016), whereas in the low baseline activity the network is not in the ISN regime and MS⁢V is negative, so in this case there is a clear relationship between being an ISN and exhibiting response reversal. However, the condition for other cases of response reversal such as ME⁢E do not involve WE⁢E and therefore do not require the network to be an ISN.
+Our approach constitutes a general conceptual framework in which previous work regarding complex cortical interactions can be better understood (Tsodyks et al., 1997; Ozeki et al., 2009; Litwin-Kumar et al., 2016). The analysis of the response matrix shows that for the given microcircuit structure all terms of the matrix can be positive or negative. This is not the case in E-I networks (networks with one excitatory (E) population and only one inhibitory (I) population) (Tsodyks et al., 1997; Ozeki et al., 2009). In that case $M_{E⁢E}$ and $M_{I⁢E}$ are always positive, $M_{E⁢I}$ is always negative and only $M_{I⁢I}$ can have both signs (see Materials and methods). In this sense, having more than one inhibitory population results in a much more versatile network. Another important point that can be derived from our calculations is the relationship between response reversal and inhibition stabilized networks (ISN) (Ozeki et al., 2009). Looking at the terms of the response matrix for an E-I network, we can see that the condition to have response reversal and the condition to be an ISN is the same: $W_{E⁢E}$ has to be larger than $d_{E}^{∞}$. When analysing networks with more than one inhibitory population the relationship is not necessarily bidirectional any more. In the network that we analyzed, we found that in the high baseline activity the network is in the ISN regime and $M_{S⁢V}$ is positive (as observed in [Litwin-Kumar et al., 2016), whereas in the low baseline activity the network is not in the ISN regime and $M_{S⁢V}$ is negative, so in this case there is a clear relationship between being an ISN and exhibiting response reversal. However, the condition for other cases of response reversal such as $M_{E⁢E}$ do not involve $W_{E⁢E}$ and therefore do not require the network to be an ISN.
 
-Finally, this study provides a parsimonious yet powerful explanation to striking observations of interneuronal circuits in V1 (Fu et al., 2014; Pakan et al., 2016; Lee et al., 2017) without requiring the assumption of top-down excitatory inputs explicitly targeting SST or PV neurons. Both our computational neural network model and the approach presented here (the response matrix analysis) go beyond circuit dynamics in mice V1 and can be easily applied to other species and cortical areas. By extending previous works (Tsodyks et al., 1997; Ozeki et al., 2009), it naturally explains the response reversal observed in cat visual cortex (Ozeki et al., 2009). It could also be applied to explain similar phenomena observed in mouse primary auditory cortex (Seybold et al., 2015; Kuchibhotla et al., 2017). In particular, in Kuchibhotla et al. (2017), the authors find that locomotion reduces the activity of excitatory cells. Assuming that the main modulation in the circuit is mediated by VIP cells this observation implies that ME⁢V<0 which is the case when the connections WE⁢P and WP⁢S are strong enough. In mouse somatosensory cortex, activating VIP neurons results in an intuitive decrease in SST activity, instead of a response reversal (Lee et al., 2013). As our results suggest, this qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures: in a recent study the authors showed that cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses (Kim et al., 2017). These responses can be readily understood using the response matrix.
+Finally, this study provides a parsimonious yet powerful explanation to striking observations of interneuronal circuits in V1 (Fu et al., 2014; Pakan et al., 2016; Lee et al., 2017) without requiring the assumption of top-down excitatory inputs explicitly targeting SST or PV neurons. Both our computational neural network model and the approach presented here (the response matrix analysis) go beyond circuit dynamics in mice V1 and can be easily applied to other species and cortical areas. By extending previous works (Tsodyks et al., 1997; Ozeki et al., 2009), it naturally explains the response reversal observed in cat visual cortex (Ozeki et al., 2009). It could also be applied to explain similar phenomena observed in mouse primary auditory cortex (Seybold et al., 2015; Kuchibhotla et al., 2017). In particular, in Kuchibhotla et al. (2017), the authors find that locomotion reduces the activity of excitatory cells. Assuming that the main modulation in the circuit is mediated by VIP cells this observation implies that $M_{E⁢V}<0$ which is the case when the connections $W_{E⁢P}$ and $W_{P}⁢S$ are strong enough. In mouse somatosensory cortex, activating VIP neurons results in an intuitive decrease in SST activity, instead of a response reversal (Lee et al., 2013). As our results suggest, this qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures: in a recent study the authors showed that cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses (Kim et al., 2017). These responses can be readily understood using the response matrix.
 
 In this work, we mainly focused on steady-state responses. However, neural responses in many cortical areas, including primary auditory cortex, are largely transient and dynamical (Wehr and Zador, 2003). In addition, synaptic connections to and from interneurons are often subject to short-term plasticity (Reyes et al., 1998). Understanding transient dynamics in nonlinear, multi-type interneuronal circuits would be an important topic for future research.
 
@@ -101,48 +123,364 @@ We have shown that similar to the now well-known paradoxical effect that the pre
 
 ## Materials and methods
 
-## Firing-rate-based population model
+### Firing-rate-based population model
 
-The state of the system is characterized by the rates ri. To model the average rate of each population we use a function of the input Vi as the one introduced in Abbott and Chance (2005) (1)ri=f⁢(Vi)=Vi-Vt⁢hτ⁢(Vt⁢h-Vr)⁢11-e-(Vi-Vt⁢h)/vwhere Vt⁢h=-50 mV and Vr=-60 mV are the threshold and reset potentials respectively, τ is the membrane time constant and v=1 mV. Vi is the average input to each of the populations and is given by(2)Vi=Vl+(∑jWi⁢j⁢rj+Ii+Ib⁢k⁢gi)/gliwhere Vl=-70 mV is the reversal potential and gli is the membrane conductance. W is the connectivity matrix and therefore ∑jWi⁢j⁢rj is the recurrent local input. Ii is the external input current and Ib⁢k⁢gi is a constant current that is tuned to obtain the desired baseline activity and we find the specific values by solving the system ri=f(Vl+(∑jWijrj+Ii+Ibkgi)/gli). For example, for the baseline activity steady-state the background currents needed to obtain the desired rates (1, 10, 3 and 2 Hz for pyramidal, PV, SST and VIP, respectively) are 114.7, 233.6, 94.3 and 89.9 pA. The rate dynamics are given by(3)τr⁢d⁢rid⁢t=-ri+f⁢(Vi)where τr=2 ms (Gerstner, 2000). Since the parameters of the f-I curve are population dependent (see Table 2), different populations will have different rates for the same input. The nonlinearity of the f-I curve has very important consequences. Namely, for low input f⁢(Vi) is almost flat, and therefore changes in the input will have almost no effect on the rate. By contrast, for strong input f⁢(Vi) tends asymptotically to a straight line with slope 1τi⁢(Vt⁢h-Vr) and changes in the input will elicit a large change in the rate. As we will show later, this feature is key to reproduce the response reversal observed in the experiments.
+The state of the system is characterized by the rates $r_{i}$. To model the average rate of each population we use a function of the input $V_{i}$ as the one introduced in Abbott and Chance (2005) 
 
-The connectivity matrix W used in the simulations is generated by rejection sampling, that is by generating random matrices that have the microcircuit structure given in Figure 1a and selecting the ones that produce the desired responses. The simulations of Figures 1 and 2 were done with the connectivity matrix given in Table 1.
+$$
+r_{i}=f⁢(V_{i})=\frac{V_{i}-V_{t⁢h}}{\tau⁢(V_{t⁢h}-V_{r})}⁢\frac{1}{1-e^{-(V_{i}-V_{t⁢h})/v}}
+$$
 
-Behavioral state is modeled with a constant top-down modulatory current of 10 pA that targets VIP cells. The constant background inputs Ib⁢k⁢gi are set so that in the absence of the top-down modulatory current, the E, PV, SST and VIP populations will have spontaneous average rates of 1, 10, 3 and 2 Hz, respectively, for the low baseline activity scenario and 30, 50, 30 and 20 Hz for the high baseline activity.
+where $V_{t⁢h}=-50$ mV and $V_{r}=-60$ mV are the threshold and reset potentials respectively, $\tau$ is the membrane time constant and $v=1$ mV. $V_{i}$ is the average input to each of the populations and is given by
 
-## Time derivatives of the rates after the onset of modulation
+$$
+V_{i}=V_{l}+(\sumjW_{i⁢j}⁢r_{j}+I_{i}+I_{b⁢k⁢g}^{i})/g_{l}^{i}
+$$
+
+where $V_{l}=-70$ mV is the reversal potential and $g_{l}^{i}$ is the membrane conductance. $W$ is the connectivity matrix and therefore $\sum_{j}W_{i⁢j}⁢r_{j}$ is the recurrent local input. $I_{i}$ is the external input current and $I_{b⁢k⁢g}^{i}$ is a constant current that is tuned to obtain the desired baseline activity and we find the specific values by solving the system $r_{i}=f(V_{l}+(\sumjW_{ij}r_{j}+I_{i}+I_{bkg}^{i})/g_{l}^{i})$. For example, for the baseline activity steady-state the background currents needed to obtain the desired rates (1, 10, 3 and 2 Hz for pyramidal, PV, SST and VIP, respectively) are 114.7, 233.6, 94.3 and 89.9 pA. The rate dynamics are given by
+
+$$
+\tau_{r}⁢\frac{d⁢r_{i}}{d⁢t}=-r_{i}+f⁢(V_{i})
+$$
+
+where $\tau_{r}=2$ ms (Gerstner, 2000). Since the parameters of the f-I curve are population dependent (see Table 2), different populations will have different rates for the same input. The nonlinearity of the f-I curve has very important consequences. Namely, for low input $f⁢(V_{i})$ is almost flat, and therefore changes in the input will have almost no effect on the rate. By contrast, for strong input $f⁢(V_{i})$ tends asymptotically to a straight line with slope $\frac{1}{\tau_{i}⁢(V_{t⁢h}-V_{r})}$ and changes in the input will elicit a large change in the rate. As we will show later, this feature is key to reproduce the response reversal observed in the experiments.
+
+The connectivity matrix $W$ used in the simulations is generated by rejection sampling, that is by generating random matrices that have the microcircuit structure given in Figure 1a and selecting the ones that produce the desired responses. The simulations of Figures 1 and 2 were done with the connectivity matrix given in Table 1.
+
+**Table 1.**
+ Connectivity matrix (in pAs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">From</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>E</th>
+      <th>PV</th>
+      <th>SST</th>
+      <th>VIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">to</td>
+      <td>E</td>
+      <td>2.42</td>
+      <td>−0.33</td>
+      <td>−0.80</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PV</td>
+      <td>2.97</td>
+      <td>−3.45</td>
+      <td>−2.13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>4.64</td>
+      <td>0</td>
+      <td>0</td>
+      <td>−2.79</td>
+    </tr>
+    <tr>
+      <td>VIP</td>
+      <td>0.71</td>
+      <td>0</td>
+      <td>−0.16</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+Behavioral state is modeled with a constant top-down modulatory current of 10 pA that targets VIP cells. The constant background inputs $I_{b⁢k⁢g}^{i}$ are set so that in the absence of the top-down modulatory current, the E, PV, SST and VIP populations will have spontaneous average rates of 1, 10, 3 and 2 Hz, respectively, for the low baseline activity scenario and 30, 50, 30 and 20 Hz for the high baseline activity.
+
+### Time derivatives of the rates after the onset of modulation
 
 In this section, we calculate analytically the changes in rate right after the onset of the modulatory current. The intuition behind these calculations is that the initial change in activity of a population is driven by the fastest path from the external input to the neurons in that population.
 
-We assume that the system is at a fixed point (therefore d⁢rid⁢t=0 for all populations) and that at time t=0 an excitatory top-down modulatory current targets the VIP population. Taking into account that the time derivatives of the rates are given by Equation (3) and since f⁢(V) is monotonously increasing and the modulatory current IV>0, then d⁢rVd⁢t⁢(0) will be positive and all other derivatives will still be 0. In order to estimate the behavior of the initial slope of d⁢rid⁢t, we calculate the second derivatives at t=0:(4)d2ridt2=1τiddt(−ri+f(Vi))=1τi(−dridt+dfdVi∑jdVidrjdrjdt)=1τi(−dridt+dfdViWiVglidrVdt)where in the last step we used the fact that d⁢ri⁢(0)d⁢t=0 except for VIP. Since d⁢fd⁢Vi, gli and d⁢rVd⁢t are positive, the sign of d2⁢rid⁢t2 will depend on the sign of Wi⁢V. In particular, for SST we obtain(5)d2⁢rSd⁢t2=1τS⁢d⁢fd⁢VS⁢WS⁢VglS⁢d⁢rVd⁢t⁢(0)<0,meaning that in all regimes the initial (transient) response of the SST population to top-down modulation targeting VIP cells will be negative.
+We assume that the system is at a fixed point (therefore $\frac{d⁢r_{i}}{d⁢t}=0$ for all populations) and that at time $t=0$ an excitatory top-down modulatory current targets the VIP population. Taking into account that the time derivatives of the rates are given by Equation (3) and since $f⁢(V)$ is monotonously increasing and the modulatory current $I_{V}>0$, then $\frac{d⁢r_{V}}{d⁢t}⁢(0)$ will be positive and all other derivatives will still be 0. In order to estimate the behavior of the initial slope of $\frac{d⁢r_{i}}{d⁢t}$, we calculate the second derivatives at $t=0$:
 
-## Response matrix and response reversal
+$$
+\frac{d^{2}r_{i}}{dt^{2}}=\frac{1}{\tau_{i}}\frac{d}{dt}(−r_{i}+f(V_{i}))=\frac{1}{\tau_{i}}(−\frac{dr_{i}}{dt}+\frac{df}{dV_{i}}\sumj\frac{dV_{i}}{dr_{j}}\frac{dr_{j}}{dt})=\frac{1}{\tau_{i}}(−\frac{dr_{i}}{dt}+\frac{df}{dV_{i}}\frac{W_{iV}}{g_{l}^{i}}\frac{dr_{V}}{dt})
+$$
 
-In order to characterize the response of a population to external excitatory input to the network we calculate how its rate will change for a small change in external input. We focus on stationary states ri=f⁢(Vi). If we apply a small perturbation to the external input δ⁢Ii, the network will reach a new stationary state(6)ri+δ⁢ri=f⁢(Vi+δ⁢Vi)=f⁢(Vi)+f′⁢(Vi)⁢δ⁢Vi+O⁢(δ⁢Vi2)where f′⁢(Vi) is the derivative of f with respect to V and(7)δ⁢Vi=(∑jWi⁢j⁢δ⁢rj+δ⁢Ii)/gli.
+where in the last step we used the fact that $\frac{d⁢r_{i}⁢(0)}{d⁢t}=0$ except for VIP. Since $\frac{d⁢f}{d⁢V_{i}}$, $g_{l}^{i}$ and $\frac{d⁢r_{V}}{d⁢t}$ are positive, the sign of $\frac{d^{2}⁢r_{i}}{d⁢t^{2}}$ will depend on the sign of $W_{i⁢V}$. In particular, for SST we obtain
 
-Since ri=f⁢(Vi), when we linearize f around V and ignore terms of order δ⁢V2 and higher we obtain the following self-consistent equation(8)δ⁢ri=f′⁢(Vi)⁢(∑jWi⁢j⁢δ⁢rj+δ⁢Ii)/gli.
+$$
+\frac{d^{2}⁢r_{S}}{d⁢t^{2}}=\frac{1}{\tau_{S}}⁢\frac{d⁢f}{d⁢V_{S}}⁢\frac{W_{S⁢V}}{g_{l}^{S}}⁢\frac{d⁢r_{V}}{d⁢t}⁢(0)<0,
+$$
 
-We define the entries of response matrix as the derivative Mi⁢j=∂⁡ri∂⁡Ij, which can be obtained from the limit δ⁢Ij→0 in the system of equations given by (Equation 8) and in matrix form can be written as(9)M=(D-W)-1where D is a diagonal matrix with entries Di⁢i=gl,i/f′⁢(Vi). As it was explained in the results section, the nonlinear behavior of the terms Di⁢i is essential to explain the response reversal regime. Di⁢i becomes arbitrarily large as Vi→-∞ and decreases monotonically to di∞=τi⁢(Vt⁢h-Vr)/gli when Vi→∞.
+meaning that in all regimes the initial (transient) response of the SST population to top-down modulation targeting VIP cells will be negative.
 
-In Table 3, we give the explicit formulas to all the entries of the response matrix in terms of the entries of the connectivity matrix W and D (we denote w=|W|, di=Di⁢i and C=det⁢(D-W)-1). Note that, because of the complex interactions in the network, the sign of Mi⁢j is never determined exclusively by that of Wi⁢j.
+### Response matrix and response reversal
 
-## Random network model
+In order to characterize the response of a population to external excitatory input to the network we calculate how its rate will change for a small change in external input. We focus on stationary states $r_{i}=f⁢(V_{i})$. If we apply a small perturbation to the external input $\delta⁢I_{i}$, the network will reach a new stationary state
 
-We consider a network with 800 E units, 100 PV units, 50 SST units and 50 VIP units. Each unit within a population has the same f-I curve with the parameters in Table 2. The probabilities pi⁢j of a connection from each unit in population j to each unit in population i are estimated from data (Pfeffer et al., 2013; Jiang et al., 2015) and are given in Table 4.
+$$
+r_{i}+\delta⁢r_{i}=f⁢(V_{i}+\delta⁢V_{i})=f⁢(V_{i})+f^{′}⁢(V_{i})⁢\delta⁢V_{i}+O⁢(\delta⁢V_{i}^{2})
+$$
 
-The strengths of the connections are rescaled so that the average input of a unit in population i from all units in population j is Wi⁢j as given in Table 1. More specifically, each unit in population i will receive in average mi⁢j=pi⁢j⁢Nj projections from population j (where Nj is the number of units in population j) and therefore the weight of these connections will be Wi⁢j/mi⁢j.
+where $f^{′}⁢(V_{i})$ is the derivative of $f$ with respect to $V$ and
+
+$$
+\delta⁢V_{i}=(\sumjW_{i⁢j}⁢\delta⁢r_{j}+\delta⁢I_{i})/g_{l}^{i}.
+$$
+
+Since $r_{i}=f⁢(V_{i})$, when we linearize $f$ around $V$ and ignore terms of order $\delta⁢V^{2}$ and higher we obtain the following self-consistent equation
+
+$$
+\delta⁢r_{i}=f^{′}⁢(V_{i})⁢(\sumjW_{i⁢j}⁢\delta⁢r_{j}+\delta⁢I_{i})/g_{l}^{i}.
+$$
+
+We define the entries of response matrix as the derivative $M_{i⁢j}=\frac{\partial⁡r_{i}}{\partial⁡I_{j}}$, which can be obtained from the limit $\delta⁢I_{j}→0$ in the system of equations given by (Equation 8) and in matrix form can be written as
+
+$$
+M=(D-W)^{-1}
+$$
+
+where $D$ is a diagonal matrix with entries $D_{i⁢i}=g_{l,i}/f^{′}⁢(V_{i})$. As it was explained in the results section, the nonlinear behavior of the terms $D_{i⁢i}$ is essential to explain the response reversal regime. $D_{i⁢i}$ becomes arbitrarily large as $V_{i}→-∞$ and decreases monotonically to $d_{i}^{∞}=\tau_{i}⁢(V_{t⁢h}-V_{r})/g_{l}^{i}$ when $V_{i}→∞$.
+
+In Table 3, we give the explicit formulas to all the entries of the response matrix in terms of the entries of the connectivity matrix $W$ and $D$ (we denote $w=|W|$, $d_{i}=D_{i⁢i}$ and $C=det⁢(D-W)^{-1}$). Note that, because of the complex interactions in the network, the sign of $M_{i⁢j}$ is never determined exclusively by that of $W_{i⁢j}$.
+
+### Random network model
+
+We consider a network with 800 E units, 100 PV units, 50 SST units and 50 VIP units. Each unit within a population has the same f-I curve with the parameters in Table 2. The probabilities $p_{i⁢j}$ of a connection from each unit in population $j$ to each unit in population $i$ are estimated from data (Pfeffer et al., 2013; Jiang et al., 2015) and are given in Table 4.
+
+**Table 2.**
+ Population-dependent parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>E</th>
+      <th>PV</th>
+      <th>SST</th>
+      <th>VIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6.25 nS</td>
+      <td>10 nS</td>
+      <td>five nS</td>
+      <td>five nS</td>
+      <td>gl</td>
+    </tr>
+    <tr>
+      <td>28 ms</td>
+      <td>8 ms</td>
+      <td>16 ms</td>
+      <td>16 ms</td>
+      <td>τ</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Entries of the respone matrix.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>ME⁢E=C⁢(wP⁢P+dP)⁢(dS⁢dV-wS⁢V⁢wV⁢S)</td>
+    </tr>
+    <tr>
+      <td>MP⁢E=C⁢(wP⁢E⁢(dS⁢dV-wS⁢V⁢wV⁢S)-wP⁢S⁢(wS⁢E⁢dV-wS⁢V⁢wV⁢E))</td>
+    </tr>
+    <tr>
+      <td>MS⁢E=C⁢(wP⁢P+dP)⁢(wS⁢E⁢dV-wS⁢V⁢wV⁢E)</td>
+    </tr>
+    <tr>
+      <td>MV⁢E=C⁢(wP⁢P+dP)⁢(wV⁢E⁢dS-wS⁢E⁢wV⁢S)</td>
+    </tr>
+    <tr>
+      <td>ME⁢P=-C⁢wE⁢P⁢(dS⁢dV-wS⁢V⁢wV⁢S)</td>
+    </tr>
+    <tr>
+      <td>MP⁢P=-C⁢((wE⁢E-dE)⁢(dS⁢dV-wS⁢V⁢wV⁢S)+wE⁢S⁢(wS⁢E⁢dV-wS⁢V⁢wV⁢E))</td>
+    </tr>
+    <tr>
+      <td>MS⁢P=-C⁢wE⁢P⁢(wS⁢E⁢dV-wS⁢V⁢wV⁢E)</td>
+    </tr>
+    <tr>
+      <td>MV⁢P=-C⁢wE⁢P⁢(wV⁢E⁢dS-wS⁢E⁢wV⁢S)</td>
+    </tr>
+    <tr>
+      <td>ME⁢S=-C⁢dV⁢(wE⁢S⁢(wP⁢P+dP)-wE⁢P⁢wP⁢S)</td>
+    </tr>
+    <tr>
+      <td>MP⁢S=-C⁢dV⁢(wE⁢S⁢wP⁢E-(wE⁢E-dE)⁢wP⁢S)</td>
+    </tr>
+    <tr>
+      <td>MS⁢S=-C⁢dV⁢((wE⁢E-dE)⁢(wP⁢P+dP)-wE⁢P⁢wP⁢E)</td>
+    </tr>
+    <tr>
+      <td>MV⁢S=-C⁢(wV⁢E⁢(wE⁢S⁢(wP⁢P+dP)-wE⁢P⁢wP⁢S)+wV⁢S⁢((wE⁢E-dE)⁢(wP⁢P+dP)-wE⁢P⁢wP⁢E))</td>
+    </tr>
+    <tr>
+      <td>ME⁢V=C⁢wS⁢V⁢(wE⁢S⁢(wP⁢P+dP)-wE⁢P⁢wP⁢S)</td>
+    </tr>
+    <tr>
+      <td>MP⁢V=C⁢wS⁢V⁢(wE⁢S⁢wP⁢E-(wE⁢E-dE)⁢wP⁢S)</td>
+    </tr>
+    <tr>
+      <td>MS⁢V=C⁢wS⁢V⁢((wE⁢E-dE)⁢(wP⁢P+dP)-wE⁢P⁢wP⁢E)</td>
+    </tr>
+    <tr>
+      <td>MV⁢V=C⁢(wE⁢S⁢(wE⁢S⁢(wP⁢P+dP)-wE⁢P⁢wP⁢S)-dS⁢((wE⁢E-dE)⁢(wP⁢P+dP)-wE⁢P⁢wP⁢E))</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Connection probabilities for the random network model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">From</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>E</th>
+      <th>PV</th>
+      <th>SST</th>
+      <th>VIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.02</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td rowspan="4">to</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>1</td>
+      <td>0.85</td>
+      <td>0</td>
+      <td>PV</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>0</td>
+      <td>0</td>
+      <td>−0.55</td>
+      <td>SST</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>0</td>
+      <td>0.5</td>
+      <td>0</td>
+      <td>VIP</td>
+    </tr>
+  </tbody>
+</table>
+
+The strengths of the connections are rescaled so that the average input of a unit in population $i$ from all units in population $j$ is $W_{i⁢j}$ as given in Table 1. More specifically, each unit in population $i$ will receive in average $m_{i⁢j}=p_{i⁢j}⁢N_{j}$ projections from population $j$ (where $N_{j}$ is the number of units in population $j$) and therefore the weight of these connections will be $W_{i⁢j}/m_{i⁢j}$.
 
 Top-down modulatory current and background input is identical to all units within the same population and has the same value as in the population based model.
 
-## Mouse V1 model
+### Mouse V1 model
 
 In the simulations of V1 activity, we use the connectivity matrix given in Table 5.
 
-We model visual input with an external excitatory current that targets E and SST cells. In the experiments in Pakan et al. (2016) and in the preprint (Dipoppa et al., 2017) the authors consider three levels of visual stimulation which are: darkness, gray screen and grating. To model darkness condition, we assume a total absence of visual stimulation (therefore IE=0 pA, IS=0 pA). For gray screen, we use a small input current to the excitatory population (IE=50 pA, IS=0 pA). Finally to model different grating diameters the value of the input is a sigmoid function of the grating diameter θ:(10)Ii(θ)=ai1+e−θ/bi+5where bE=2, bS=6, aE=100 pA, aS=20 pA. With this parameters E cells receive center input (input saturates for diameters ∼20 deg) and SST cells receive surround input (input to SST saturates for diameters of ∼60 deg) (Dipoppa et al., 2017).
+**Table 5.**
+ Connectivity matrix for the mouse V1 model (in pAs).
 
-To demonstrate that our results do hold for a wide range of connectivity matrices and do not have to be fine tuned, we simulate several different connectivity matrices that produce the same qualitative behavior. We also make perturbations of these matrices by multiplying each entry by a random variable uniformly distributed in the interval [0.9,1.1]. This amounts to randomly modifying each connection within ±10% of its original value (see Figure 4—figure supplement 2).
 
-In the alternative models of Figure 4—figure supplement 3 where visual stimulus input also targets PV cells, we use IP=0 pA for darkness, IP=10 pA for gray screen and bP=2, aP=20 pA for gratings.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">From</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>E</th>
+      <th>PV</th>
+      <th>SST</th>
+      <th>VIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">to</td>
+      <td>E</td>
+      <td>3.30</td>
+      <td>−3.48</td>
+      <td>−2.98</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PV</td>
+      <td>1.73</td>
+      <td>−4.25</td>
+      <td>−1.07</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>3.50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>−4.51</td>
+    </tr>
+    <tr>
+      <td>VIP</td>
+      <td>0.53</td>
+      <td>0</td>
+      <td>−0.13</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
-## Response matrix for an E-I network
+We model visual input with an external excitatory current that targets E and SST cells. In the experiments in Pakan et al. (2016) and in the preprint (Dipoppa et al., 2017) the authors consider three levels of visual stimulation which are: darkness, gray screen and grating. To model darkness condition, we assume a total absence of visual stimulation (therefore $I_{E}=0$ pA, $I_{S}=0$ pA). For gray screen, we use a small input current to the excitatory population ($I_{E}=50$ pA, $I_{S}=0$ pA). Finally to model different grating diameters the value of the input is a sigmoid function of the grating diameter $\theta$:
 
-For the sake of completeness, here we analyze the response matrix for a fully connected E-I network (Tsodyks et al., 1997, Ozeki et al., 2009) . The connectivity matrix is(11)W=[wE⁢E-wE⁢IwI⁢E-wI⁢I]and therefore the response matrix is(12)M=(D-W)-1=C⁢[wI⁢I+dI-wE⁢IwI⁢E-wE⁢E+dE],where C=((dE-wE⁢E)⁢(wI⁢I+dI)+wE⁢I⁢wI⁢E)-1. Note that the only term that can change sign is MI⁢I so the only population that can exhibit response reversal is the I population. Furthermore, note that the condition for having response reversal (wE⁢E>dE∞) is the same that defines the ISN regime, so this two properties are equivalent in the E-I network.
+$$
+I_{i}(\theta)=\frac{a_{i}}{1+e^{−\theta/b_{i}+5}}
+$$
+
+where $b_{E}=2$, $b_{S}=6$, $a_{E}=100$ pA, $a_{S}=20$ pA. With this parameters E cells receive center input (input saturates for diameters $∼20$ deg) and SST cells receive surround input (input to SST saturates for diameters of $∼60$ deg) (Dipoppa et al., 2017).
+
+To demonstrate that our results do hold for a wide range of connectivity matrices and do not have to be fine tuned, we simulate several different connectivity matrices that produce the same qualitative behavior. We also make perturbations of these matrices by multiplying each entry by a random variable uniformly distributed in the interval $[0.9,1.1]$. This amounts to randomly modifying each connection within ±10% of its original value (see Figure 4—figure supplement 2).
+
+In the alternative models of Figure 4—figure supplement 3 where visual stimulus input also targets PV cells, we use $I_{P}=0$ pA for darkness, $I_{P}=10$ pA for gray screen and $b_{P}=2$, $a_{P}=20$ pA for gratings.
+
+### Response matrix for an E-I network
+
+For the sake of completeness, here we analyze the response matrix for a fully connected E-I network (Tsodyks et al., 1997, Ozeki et al., 2009) . The connectivity matrix is
+
+$$
+W=[w_{E⁢E}-w_{E⁢I}w_{I⁢E}-w_{I⁢I}]
+$$
+
+and therefore the response matrix is
+
+$$
+M=(D-W)^{-1}=C⁢[w_{I⁢I}+d_{I}-w_{E⁢I}w_{I⁢E}-w_{E⁢E}+d_{E}],
+$$
+
+where $C=((d_{E}-w_{E⁢E})⁢(w_{I⁢I}+d_{I})+w_{E⁢I}⁢w_{I⁢E})^{-1}$. Note that the only term that can change sign is $M_{I⁢I}$ so the only population that can exhibit response reversal is the $I$ population. Furthermore, note that the condition for having response reversal ($w_{E⁢E}>d_{E}^{∞}$) is the same that defines the ISN regime, so this two properties are equivalent in the E-I network.

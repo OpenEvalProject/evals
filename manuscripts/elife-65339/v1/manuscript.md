@@ -43,53 +43,168 @@ Here, we determine the mode of action for two reported inhibitors of BLM – ML2
 
 ## Results
 
-## Compound identification and screening
+### Compound identification and screening
 
 A series of compounds that targeted the helicase activity of human BLM were identified in a quantitative high-throughput screen (qHTS) (Rosenthal, 2010), where the results were made publicly available from the PubChem data repository [https://pubchem.ncbi.nlm.nih.gov/bioassay/2528]. Filtering the 627 reported active compounds for preferential physicochemical properties (e.g. Lipinski’s rule of five) and excluding those with potential pan-assay interference activity (PAINS) allowed us to group the compounds into several distinct clusters according to chemical similarity. The inhibitory activity of exemplars from each cluster were tested in a fluorescence-based DNA unwinding assay (Rosenthal, 2010) against recombinant human BLM-HD (HD = helicase domain; amino acids 636–1298). However, only a single compound produced an IC50 lower than 10 µM (compound 1, IC50 = 4.0 µM; Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig1-v1.jpg)
+
+**Figure 1.:** (A, left) Chemical drawings for compounds 1, 2, and ML216. (A, right) Dose response curves from fluorescence-based DNA unwinding assays with BLM-HD. Experimental data were fitted with a four parameter, log(inhibitor) vs. response model with variable slope. Calculated values for IC50, Hill slope (nH) and 95% confidence intervals (95% CI) are given in each case. (B) Turnover of ATP by BLM-HD, as measured by a malachite-green end-point assay, is strongly stimulated in the presence of a 20-base single-stranded oligonucleotide. (C) Dose response curves from ATP-turnover assays with BLM-HD. Data were fitted as for (A). In each case data points are the mean of three technical replicates, with error bars representing one standard deviation (1 SD).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (Top) Chemical drawings for compounds 3 to 7. (Middle) Dose response curves from fluorescence-based DNA unwinding assays with BLM-HD. Data points are the mean of three technical replicates with error bars representing 1 SD. (Bottom) Dose response curves from ATP turnover assays with BLM-HD. Data points represent the mean from at least two individual experiments, each containing three technical replicates. Error bars represent the standard error of the mean (SEM). Experimental data were fitted with a four parameter, log(inhibitor) vs. response model with variable slope. Calculated values for IC50, Hill slope (nH) and 95% confidence intervals (95% CI) are reported in Table 1. Data points excluded from fitting are coloured red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Fitted lines are intended as visual aids only, as the data only represent values from a single preliminary experiment.
+
 We synthesised and purified six close analogues of this compound with the aim of generating preliminary structure-activity relationship data and confirmed their inhibitory activity in the unwinding assay (Materials and methods, Appendix 1). Compounds 2 to 6 inhibited the 3’ → 5’ helicase activity of recombinant human BLM-HD with IC50 values ranging from 2.2 to ~60 µM, whereas 7 did not inhibit BLM-HD over the concentration range tested (Figure 1A and Figure 1—figure supplement 1, Table 1). An IC50 of 4 µM was determined for ML216, a compound reported to be a semi-selective inhibitor of human BLM (Nguyen et al., 2013; Rosenthal, 2010), which was included as a positive control (Figure 1A).
+
+**Table 1.**
+ Summary of inhibition data for seven exemplars from the identified compound series.IC50 values were determined by fitting of experimental data to log (inhibitor) vs response models provided in GraphPad Prism. Data for the unwinding assay correspond to three technical replicates from a single experiment. For the ATP-turnover assay data correspond to at least two independent experiments, each containing three technical replicates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>unwinding</th>
+      <th>turnover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#</td>
+      <td>Chemical drawing</td>
+      <td>IC50 [95% CI]; µM</td>
+      <td>IC50 [95% CI]; µM</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td>2.2 [1.7–2.7]</td>
+      <td>3.2 [2.3–4.0]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>3.5 [2.4–5.2]</td>
+      <td>5.3 [4.7–6.1]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td>6.6 [3.4–12.7]</td>
+      <td>11.2 [8.3–15.3]</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td>12.8 [4.5–36.8]</td>
+      <td>47.86 [18.28–180.7]</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td></td>
+      <td>56.9 [25.4–171.3]</td>
+      <td>40.94 [15.9–139.8]</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td>No inhibition</td>
+      <td>No inhibition</td>
+    </tr>
+    <tr>
+      <td>ML216</td>
+      <td></td>
+      <td>4.0 [3.7–4.3]</td>
+      <td>4.4 [4.0–4.8]</td>
+    </tr>
+  </tbody>
+</table>
 
 In a malachite green-based assay that measures ATP turnover, we observed robust stimulation of hydrolysis by BLM-HD when the protein was incubated with a short single-stranded 20-base oligonucleotide (Figure 1B). Here, we determined IC50 values ranging from 3.2 to ~50 µM for each of our active analogues and 4.4 µM for ML216 (Figure 1C and Figure 1—figure supplement 1, Table 1). Whilst the values of IC50 obtained in our orthogonal assay did not agree in absolute value with those determined in the first, it ranked each analogue with a similar order of potency.
 
-## Biophysical analysis of compound binding
+### Biophysical analysis of compound binding
 
 We could readily observe changes in fluorescence, indicative of binding, upon titration of both ADP and ATP-γS into BLM-HD using microscale thermophoresis (MST, Figure 1—figure supplement 2). We could not, however, observe any interaction for our most potent compound 2. In the absence of biophysical evidence for binding, we sought to confirm that 2 wasn’t just a false positive generated by interference with the fluorescent readout of the unwinding assay. An alternative gel-based assay allowed direct visualisation of the conversion of a forked DNA-duplex into its component single-stranded oligonucleotides via the helicase activity of BLM-HD (Figure 2A). Titration of 2 clearly inhibited production of the single-stranded DNA product in a dose-dependent manner, with a calculated IC50 of 1.8 µM (Figure 2B).
 
-## ML216 interacts with DNA
+![Figure 2.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig2-v1.jpg)
+
+**Figure 2.:** (A) Titration of BLM-HD with 2 prevents the unwinding of a forked-50mer dsDNA substrate into its component strands, as judged by native gel electrophoresis. (B) Quantification of inhibitory activity by 2 in the gel-based activity assay. Experimental data were fitted with a four parameter, log(inhibitor) vs. response model with variable slope. Calculated values for IC50, nH and 95% CI are given in each case. (C) Representative results from a Topoisomerase I (Topo I) DNA-unwinding assay. M = molecular mass maker; DMSO = buffer supplemented with dimethyl sulfoxide control; mAMSA = mAmsacrine; ML216, ML216-A, ML216-B = refer to the three independent sources of the compound as described in the main text of the manuscript (D) Dose response curves from SYBR-Green II dye displacement assays, using a forked-50mer DNA duplex incubated with ML216 for a period of 20 (open circles), 45 (filled circles), and 60 min (crossed circles). Fitted lines are intended as visual aids only. (E) Lineweaver-Burk plot for data generated at three compound concentrations (0, 5, and 10 µM) in a colourimetric ATP turnover assay. Linear regression produces an intercept of all data on the X-axis indicating that 2 is a non-competitive inhibitor (i.e. same Km, altered Vmax parameter). (F, G) Binding isotherms for binding of BLM-HD to ssDNA-15mer and −20mer, or to compound 2 in the presence of either oligonucleotide, as determined by microscale thermophoresis (MST). Experimental data were fitted with a one-site, specific binding model. Values for Kd and 95% CI are given in each case. For all plots, data represent the mean of three technical replicates with error bars representing 1 SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Experimental data were fitted with a four parameter, log(inhibitor) vs. response model with variable slope. Calculated values for IC50, Hill slope (nH) and 95% confidence intervals (95% CI) are given in each case. Data points represent the mean of three technical replicates, with error bars representing 1 SD.
+
+### ML216 interacts with DNA
 
 Another potential false positive could be generated by compounds that bind directly to DNA, thus preventing BLM-HD from productively engaging with its substrate. To test this hypothesis, we used a commercial assay that utilises recombinant Topoisomerase I (Topo I) to relax a supercoiled plasmid. Compounds that intercalate or bind to the major or minor groove of the plasmid DNA prevent relaxation. At the manufacturer’s recommended concentration of 200 µM, the positive control m-Amsacrine (mAMSA) strongly inhibited relaxation of the supercoiled plasmid. In contrast, no effect was observed with 2 at the same concentration. However, partial inhibition of relaxation could be observed for a reaction containing ML216 (Figure 2C). To confirm this observation, we purchased ML216 from an alternative commercial supplier (ML216-A) and also resynthesised and purified the compound in-house (ML216-B; Materials and methods, Appendix 1). In both cases, a similar level of inhibition was observed when the compounds were included in the relaxation assay, indicating that this was both a real and reproducible effect (Figure 2C).
 
 To explore further the possibility that ML216 might interact directly with DNA, we tested its ability to displace SYBR Green II (SG2) from a DNA substrate in a dye displacement assay (Del Villar-Guerra et al., 2018; Tse and Boger, 2004). When SG2 binds to DNA, a concomitant increase in its fluorescence can be measured. If an added compound can compete with the dye for binding to the DNA, a corresponding decrease in the fluorescent signal is observed. We titrated ML216 into a forked-50mer dsDNA substrate, that had been pre-incubated with SG2, observing a clear time- and dose-dependent displacement of the dye, indicating that ML216 can directly interact with a DNA substrate (Figure 2D).
 
-## Compound 2 does not interfere with ATP-binding
+### Compound 2 does not interfere with ATP-binding
 
 With confidence that 2 was, in fact, a bona fide inhibitor of BLM, we repeated the unwinding assay in the presence a 10-fold higher concentration of ATP to examine if the compound was directly competitive with nucleotide binding to the active site of the enzyme. As the resulting IC50 value was identical to that previously determined, it ruled out this mode of inhibition, and suggested that the compound bound elsewhere (Figure 2—figure supplement 1).
 
-## Compound 2 is a non-competitive inhibitor
+### Compound 2 is a non-competitive inhibitor
 
 ATP-turnover experiments, under Michealis-Menten conditions, allowed us to generate a Lineweaver-Burk plot with data taken from DNA substrate titrations in the presence of 0, 5, and 10 µM of 2. The resultant plot indicated a non-competitive (allosteric) mode of inhibition for 2 (Figure 2E). With this information, we postulated that 2 might only bind to BLM-HD when it was engaged with a DNA substrate. We therefore revisited MST, first confirming the interaction of BLM-HD with the single-stranded 20mer used in our malachite green assay, plus a shorter 15mer that would be taken into crystallographic trials (Figure 2F). We next titrated 2 into the two pre-formed BLM-HD/ssDNA complexes. This time changes in fluorescent signal could be detected, confirming our hypothesis, with dissociation constants of 1.7 and 2.6 µM determined for the interaction with the 15mer and 20mer, respectively (Figure 2G).
 
-## Enabling structural biology with the expression construct BLM-HDΔWHD
+### Enabling structural biology with the expression construct BLM-HDΔWHD
 
 We created the expression construct BLM-HDΔWHD to remove the conformationally flexible Winged Helix domain (WH) that requires the presence of either a stabilising nanobody, or interaction with a large DNA substrate to facilitate crystallogenesis (Newman et al., 2015; Swan et al., 2014) replacing it with a short poly-(glycine/serine) linker that serves to connect the Zinc-binding domain (Zinc) directly to the Helicase and RNAse C-terminal domain (HRDC, Figure 3A). In validation of this approach, we were able to crystallise the protein in complex with ADP and magnesium co-factor, and to determine its structure at a resolution of 1.53 Å; a significant increase in resolution over structures previously deposited in the PDB (4CDG, 2.8 Å; 4CGZ, 3.2 Å; 4O3M, 2.3 Å; see Appendix 1—table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the domain composition and respective amino acid boundaries for full-length human BLM and the two expression constructs used in this study BLM-HD and BLM-HDΔWHD. D1 and D2 = domains 1 and 2 of the helicase core; Zn = zinc-binding domain; WH = winged-helix; HRDC = Helicase and RNaseD C-terminal domain; RQC = RecQ C-terminal domain. (B and B inset) Molecular secondary structure cartoon highlighting components of a ‘pseudo-symmetrical’ dimer found in the asymmetric unit of BLM-HDΔWHD/Mg-ADP/2/ssDNA crystals, driven by partial complementarity of the single-stranded 15mer oligonucleotide at its 5’ end (DNA1 and DNA2, coloured orange and cyan respectively). Compound 2 (yellow-coloured spheres) binds to a small pocket found on the opposite side to that which binds nucleotide (grey-coloured spheres). (C, left) Molecular cartoon representation highlighting interactions made between 2 and BLM-HDΔWHD. Key amino acid residues are labelled and shown in stick representation, with carbon atoms coloured according to the schematic shown in panel A. Compound 2 is shown in stick representation, with carbon atoms coloured yellow. Potential hydrogen bonds are indicated by black dotted lines. (C, right) Modified LIGPLOT+ (Laskowski and Swindells, 2011) diagram of protein-compound interactions. See associated key for additional detail.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Values for rmsd in Angstrom are shown, calculated over the indicated number of equivalent atoms. See associated key for details of colour scheme.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Values for Kd and 95% CI are given in each case. For all plots, data represent the mean of three technical replicates with error bars representing 1 SD.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Interaction network determined through by the PDBsum Generate webserver (PDBsum, 2021). Green solid lines represent hydrophobic / stacking interactions. Black dotted lines represent potential hydrogen bonds.
+
 Superposition of the structures of BLM-HD (PDB: 4CDG) and BLM-HDΔWHD produces a rmsd of 0.86 Å over 2450 atom positions (D1 + D2 + Zn; PyMOL), indicating the overall conformation and geometry of the two recombinant proteins is highly similar, despite deletion of the WH domain (Figure 3—figure supplement 1). Furthermore, BLM-HDΔWHD binds both ssDNA-15mer and 2 with a similar affinity to that of BLM-HD (Figure 3—figure supplement 2).
 
-## Crystal structure of BLM-HDΔWHD in complex with compound 2 and ssDNA
+### Crystal structure of BLM-HDΔWHD in complex with compound 2 and ssDNA
 
 We crystallised 2 in complex with BLM-HDΔWHD, ADP/magnesium co-factor, and ssDNA-15mer (liganded complex); determining its structure at a resolution of 3.0 Å (Appendix 1—table 1). The complex crystallised in space group P1, with six molecules of BLM-HDΔWHD and associated ligands forming the asymmetric unit. Interestingly, the co-crystallised ssDNA-15mer helped drive formation of the crystal lattice, due to its partial self-complementary at the 5’ end (5’-CGTAC-3’) that serves to form four consecutive base pairs between two oligonucleotides (Figure 3B); the cytosine at the 5’ end of the oligonucleotide is not readily discernible in electron density maps and is therefore likely to be disordered. An extensive series of interactions are made to the bound nucleic acid by amino acids from all four sub-domains of the BLM-HDΔWHD expression construct (Figure 3—figure supplement 3).
 
 Compound 2 sits in a small pocket found on the opposite face of the protein to that which binds nucleotide (Figure 3B, inset), and integrates amino acid side chains from both the D1 and D2 subdomains of the helicase core, as well as several from the Zn-binding domain. The oxygen of the amino group at the centre of the compound is hydrogen-bonded to the side chain of Asn1022, whilst the nitrogen of the same moiety is in hydrogen-bonding distance to both the backbone oxygen and side chain of Ser801. The side chains of His805 and Thr1018 stack up against, and provide Van der Waals contacts to, the central ring system of the 3-amino-4,5-dimethylbenzenesulfonamide pendant group as part of a pocket lined by the side chains of residues Asp806, His1014, Thr1015, His1019 (Figure 3C). The nitrogen of the sulphonamide group is hydrogen-bonded to the side chain of Asp840, which itself is bonded to the side chain of His805. The 2-methyl-thiazole moiety of 2 sits against the surface of the alpha-helix containing Gly972 and is sandwiched by additional packing interactions with the side chains of Gln802 and Glu971. The side chains Thr832 and His798 also contribute to this section of the binding pocket, which is ‘capped’ by Gln975. The central benzene ring of 2 is also contacted by the side chains of Gln802 and Glu971.
 
-## Reconfiguration of the aromatic-rich loop
+### Reconfiguration of the aromatic-rich loop
 
 The aromatic-rich loop (ARL) is a highly conserved motif in RecQ helicases that serves as a molecular ‘sensor’, detecting binding of single-stranded DNA and coupling it to structural rearrangements that enable ATP hydrolysis (Manthei et al., 2015; Zittel and Keck, 2005). In our high-resolution structure of BLM-HDΔWHD, the ARL is disordered and is not visible in electron-density maps (Figure 4A). By contrast, it can be fully modelled in the liganded complex, but its conformation is distinct from that observed in PDB entries 4CDG and 4CGZ where the single-stranded extension of bound nucleic acid substrates does not extend across to the D1 domain (Figure 4B, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig4-v1.jpg)
+
+**Figure 4.:** (A) Molecular secondary structure cartoons for the region surrounding the aromatic rich loop (ARL) of BLM-HDΔWHD (top), PDB entry 4CGZ; BLM-HD in complex with DNA (middle) and liganded complex; BLM-HDΔWHD in complex with ADP, ssDNA-15mer and 2 (bottom). The side chains for key amino acid residues are shown in stick representation, with carbon atoms coloured according to their respective domains (see associated key). Bound ADP and 2 are also shown in stick representation, with carbon atoms coloured grey and yellow, respectively. (B) Expanded and rotated view highlighting the interactions made between the ARL and ssDNA-15mer oligonucleotide (cartoon coloured cyan) in the liganded complex, also showing the relative position of compound 2. Potential hydrogens bonds are represented by black dotted lines.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Amino acid numbering is provided for the start and end of the region compared, with the identity of key residues also provided.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Additional details for the colour scheme can be found in the associated key. The distance between the C-alpha positions of Ser729 and Asn936 is also shown, highlighting a widening of the pocket in our liganded complex (and 4TMU) that would normally serve to accept the HRDC in its ‘parked’ position (4CGZ/4O3M).
 
 Structures with a high degree of structural similarity to the liganded complex were identified with PDBeFold (Krissinel and Henrick, 2004). The search produced PDB entries 6CRM and 4TMU, with Q-scores of 0.47 and 0.46 respectively, which both describe structures of the catalytic core of Cronobacter sakazakii RecQ helicase (CsRecQ) in complex with different DNA substrates (Manthei et al., 2015; Voter et al., 2018). Comparison, in each case, reveals a close to identical conformation of the ARL to that observed in our liganded complex, as well as nucleic acid interactions that include the D1 domain (Figure 4—figure supplements 1, 2 and 3).
 
 For CsRecQ, Manthei et al., 2015 described concerted movements of residues Phe158 and Arg159, within the ARL to interact with the 3’ single-stranded extension of their co-crystallised DNA substrate in our liganded complex the equivalent residues undergo a similar transition (Phe807 and Arg808, respectively). We observe that Phe158 moves to make base-stacking interactions with G8 and A9 of the bound ssDNA-15mer. By comparison to 4CGZ, we also see that Arg808 switches from interacting with Asp806 of the ARL to the backbone oxygen of Pro715 and the side chain of Glu768 (Figure 4A and B). Notably, mutation of residues equivalent to Arg808 or Glu768 in EcRecQ (Arg159 and Glu124) have been shown to perturb enzyme function (Manthei et al., 2015; Zittel and Keck, 2005). Interestingly, in BLM, Asp806 is ‘freed’ to interact with the side chain of His1019, a residue within the Zn-binding domain (Figure 4A and B).
 
-## Movement of the HRDC from parked to DNA-engagement
+### Movement of the HRDC from parked to DNA-engagement
 
 The HRDC (Helicase and RNase D C-terminal domain) was originally identified as a putative nucleic-acid binding motif in both BLM and WRN (Werner syndrome helicase) and named in part for its similarity to a domain found at the C-terminus of E. coli RNase D (Morozov et al., 1997). However, only very weak ssDNA binding (Kd ~100 µM) has been reported for this domain in isolation (Kim and Choi, 2010).
 
@@ -101,23 +216,31 @@ In their paper describing the crystal structure of BLM in complex with DNA, Newm
 
 Each of these interactions is consistent with chemical shift changes previously observed in HSQC spectra – as a result of titrating ssDNA into 15N-labelled BLM-HRDC (Kim and Choi, 2010) – suggesting that the observed interactions have biological relevance, and that our structure represents the first to capture HRDC interactions with ssDNA. Furthermore, amino acids residues Lys1227, Tyr1237, Thr1243, and Asn1239 are also in close proximity to the bound DNA (Figure 5B) and could be expected to undergo changes in chemical environment upon interaction; again consistent with the reported perturbations in HSQC spectra (Kim and Choi, 2010). Asn1239 might also be expected to pick up an additional contact with the 5’-phosphate of a subsequent nucleotide in an extended substrate.
 
-## Examining the selectivity profile of compound 2
+### Examining the selectivity profile of compound 2
 
 With a robust molecular understanding for the binding mode for 2, we next examined if the compound displayed selectivity for members of the RecQ-helicase family. In our ATP-turnover assay, we saw no inhibition of recombinant helicase domains (HD) from human WRN, human RecQ5 or the unrelated E. coli helicase UvrD over the concentration range tested, whilst at higher concentrations inhibitory effects started to appear against human RecQ1. In contrast, ML216 robustly inhibited all four RecQ-family helicases tested and at higher concentrations also affected UvrD; in line with, and in support of, our observation that ML216 is non-specific and elicits at least part of its inhibitory effect by binding directly to DNA (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig6-v1.jpg)
+
+**Figure 6.:** (A) Dose response curves from ATP-turnover assays for titration of compounds 2 and ML216 against purified recombinant BLM-HD, WRN-HD, RecQ1-HD, RecQ5-HD and UvrD respectively. Calculated values for IC50, nH and 95% CI are given in each case. (B) MST-derived binding isotherms for the interaction of BLM-HD with ssDNA-20mer in the presence of increasing concentrations of 2. Calculated values for Kd and 95% CI are given in each case. For all plots, data represent the mean of three technical replicates with error bars representing 1 SD.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65339/elife-65339-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Only a small movement of Thr691 would be necessary to accommodate the gamma phosphate group (as indicated by the dotted line / arrowhead). Only the D1 domain of each protein is shown in order to improve clarity.
+
 Whilst compound solubility prevented generation of a complete inhibition curve for UvrD and thus a robust estimate of IC50, the estimated Hill coefficient (nH) was close to 1 — in contrast to those calculated for titrations of ML216 against the RecQ helicases, which were generally steeper (ranging from 1.8 to 4.3), again suggesting that instead of a forming a 1:1 protein to inhibitor complex, there is in fact, a more complex (possibly mixed) mode of binding for this compound to this class of enzymes.
 
-## Conformational trapping by compound 2
+### Conformational trapping by compound 2
 
 As binding of 2 has no direct effect on the ability of BLM-HDΔWHD to bind either ssDNA or nucleotide, we hypothesised that it might act to ‘lock’ the helicase into a conformational state where DNA substrates remain bound but cannot be unwound. In support of this idea, we undertook MST assays with a labelled single-stranded oligonucleotide in both the presence and absence of 2. Here, we observed a clear concentration-dependent decrease in Kd when 2 was added, consistent with a decrease in the off-rate for DNA-binding, supporting our hypothesis that the compound acts to ‘trap’ BLM in its interaction with ssDNA (Figure 6B).
 
 ## Discussion
 
-## Conformational cycle of RecQ helicases
+### Conformational cycle of RecQ helicases
 
 During their catalytic cycle, the RecQ-family of helicases undergo a sequential set of conformational transitions, driven by ATP-binding and hydrolysis, then the subsequent release of inorganic phosphate and ADP (Newman et al., 2017). An initial ‘encounter’ complex is generated when the D2 domain of a RecQ-helicase binds to single-stranded DNA (ssDNA). This then leads to a set of motif / domain movements, including the ARL, that serve to couple ATP-binding and hydrolysis to movement of the bound ssDNA, such that it is now functionally engaged with the D1 domain. The process of DNA-unwinding is thought to proceed via an ‘inchworm’ type of mechanism, where the D2 domain sequentially binds and releases the DNA substrate, in order to ‘feed’ it onto the D1 domain, translocating it one base at a time. The WHD and HRDC domains of the RecQ helicase-family appear to contribute to the binding, recognition and unwinding of different DNA substrates via their ability to bind to ds and ssDNA respectively.
 
-## Inhibition via the allosteric binding site
+### Inhibition via the allosteric binding site
 
 As noted earlier, our liganded complex is structurally most similar to PDB entry 4TMU (CsRecQ)—a structure that has been previously characterised as representing a ‘pre-ATP hydrolysis’ conformation in the catalytic cycle of RecQ-family helicases (Newman et al., 2017). Although we have co-crystallised BLM-HDΔWHD with ADP, we can see that the active site of the liganded complex is also compatible with ATP-binding, through comparison to the crystal structure of E. coli RecQ in complex with ATP-γ-S (Figure 6—figure supplement 1; Bernstein et al., 2003). This in turn suggests that binding of compound 2—to a small pocket hereinafter referred to as the allosteric binding site (ABS)—acts to ‘trap’ or stall BLM by blocking the set of conformational changes required for progression to the next step of the catalytic cycle.
 
@@ -127,7 +250,7 @@ The side chains of amino acids Gln975 and His798 contribute to the ABS (Figure 3
 
 It is clear that more detailed kinetic studies would be required to unambiguously distinguish between a ‘passive’ or ‘induced’ mode of binding for 2. However, compounds bound stably to the ABS should sterically prevent the ARL from reverting to its initial conformation/structurally disordered state found at the beginning of the catalytic cycle (Figure 4A,B). The observed hydrogen bond between Asp806 and His1019 may also act to stablise the ternary interaction between BLM-HDΔWHD, 2 and ssDNA (Figure 4).
 
-## Achieving selectivity by Helical Hairpin interactions
+### Achieving selectivity by Helical Hairpin interactions
 
 In addition to the ARL, several other regions of BLM interact with 2 when it is bound to the ABS, including amino acids from helicase motifs I and III, plus a short region just upstream of motif IV (Gorbalenya and Koonin, 1993; Hall and Matson, 1999) (pre-motif IV, Figure 4A). Unsurprisingly, the amino acid sequence identity of each region across the RecQ-family is extremely high, and do not therefore provide a facile explanation for the observed selectivity of 2 (Figure 7A). In particular, two of the amino acid side chains involved in hydrogen bonds with 2 are absolutely conserved in identity (motif I, Ser801; motif III, Asp840, Figures 7A and 3C). Likewise, amino acids within these motifs involved in hydrophobic contacts with 2 are also highly conserved in identity/chemical property. However, the third hydrogen bonding interaction (made by Asn1022 to 2) and its position within the ‘Helical Hairpin’ of the Zn-binding domain provides some insight, as both the length and amino acid composition of this loop is highly divergent across the RecQ-family and absent from RecQ4 (Figure 7A). There is no obvious consensus for any of the residues, in equivalent positions to those in BLM, involved in compound interaction. This observation provides a plausible route, although the addition or alteration of chemical groups to the core scaffold of 2, for generating potent and highly selective inhibitors for the individual members of the RecQ-family of helicases.
 
@@ -135,11 +258,11 @@ In addition to the ARL, several other regions of BLM interact with 2 when it is 
 
 **Figure 7.:** (A) The observed selectivity of compound 2 appears to arise from interactions made with amino acids of the Zn-binding domain ‘Helical Hairpin’ that are poorly conserved (or absent) from the other RecQ-family helicases. For each multiple amino acid sequence alignment shown, highly conserved amino acids are coloured in red. Those conserved in at least two RecQ family members (low consensus) are coloured blue. Amino acids residues of human BLM involved in interactions with 2 are additionally highlighted. Please see associated key for additional information. (B) A speculative model for how the HRDC domain may contribute to the unwinding of a DNA duplex or a Holliday junction (inset) via transient interactions with the passive or ‘inactive’ strand. See associated key for additional details.
 
-## Release of the HRDC
+### Release of the HRDC
 
 During the catalytic cycle, it is clear that the HRDC must be ‘released’ in order to interact with ssDNA, indeed amino acid residues within the aforementioned ‘hydrophobic 310 helix’ contribute to both the ‘parked’ and ‘engaged’ interfaces; as exemplified by the side chain of Phe1238 that moves from a packing interaction with Pro956, a residue in the D1 domain, to an interaction with a base in the bound ssDNA-15mer (Figure 5A). As a consequence of the extended ssDNA interface visualised in our liganded complex (also seen in PDB entry 4TMU), we can see that the size and shape of the pocket that serves to bind the HRDC is substantially altered. Interaction of the D1 domain with ssDNA alters its spatial relationship with the D2 domain, leading to a widening of the pocket and to disruption of the hydrogen bonds that have previously been described to anchor the HRDC in place (Newman et al., 2015; Figure 4—figure supplement 3). Binding and release of the HRDC has previously been linked to nucleotide-status, indicating that the domain only becomes disengaged when BLM is not bound to ADP or ATP (Newman et al., 2015). Our data suggest an additional nuance: if the HRDC is able to engage in an ssDNA interaction, it is prevented from re-binding to the catalytic core, thus isolating it from the catalytic cycle of the enzyme.
 
-## A speculative model for the involvement of the HRDC in unwinding DNA substrates
+### A speculative model for the involvement of the HRDC in unwinding DNA substrates
 
 During model building and evaluation of our liganded structure, we found that the nucleic-acid interactions made by the different sub-domains of BLM-HDΔWHD explain how the HRDC might contribute to the ability of BLM to unwind different types of DNA substrate—incorporating information taken from our own structure, as well as that for the interaction of the WHD with dsDNA from PDB entry 4CGZ (Figure 7B).
 
@@ -155,51 +278,229 @@ However, as the first described bona fide selective allosteric inhibitor of huma
 
 ## Materials and methods
 
-## Compound synthesis and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BLM</td>
+      <td>UniProt</td>
+      <td>P54132</td>
+      <td>BLM_HUMAN</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>RECQL</td>
+      <td>UniProt</td>
+      <td>P46063</td>
+      <td>RECQ1_HUMAN</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>WRN</td>
+      <td>UniProt</td>
+      <td>Q14191</td>
+      <td>WRN_HUMAN</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>RECQL5</td>
+      <td>UniProt</td>
+      <td>O94762</td>
+      <td>RECQ5_HUMAN</td>
+    </tr>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>uvrD</td>
+      <td>UniProt</td>
+      <td>P03018</td>
+      <td>UVRD_ECOLI</td>
+    </tr>
+    <tr>
+      <td>Strain (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>C2527I</td>
+      <td>Competent Cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ssDNA-15mer</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGTACCCGATGTGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ssDNA-20mer</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGTACCCGATGTGTTCGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forked-50mer: FORK A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>XGAACGAACACATCGGGTACG TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT X = Black Hole Quencher 2 or none</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forked-50mer: FORK B</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT CGTACCCGATGTGTTCGTTCY Y = Tetramethylrhodamine or none</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-17b</td>
+      <td>Novagen Merck Millipore</td>
+      <td>69663</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNIC28-Bsa4</td>
+      <td>Addgene</td>
+      <td>26103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ML216</td>
+      <td>Merck KGaA Caymen Chemical</td>
+      <td>SML0661 15186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PiColorLock Gold Phosphate Detection System</td>
+      <td>Novus Biologicals</td>
+      <td>303–0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA Unwinding Assay Kit</td>
+      <td>Inspiralis</td>
+      <td>DUKSR001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BUSTER</td>
+      <td>Global Phasing</td>
+      <td>RRID:SCR_015653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>CCP4</td>
+      <td>RRID:SCR_007255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Coot</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>Phaser</td>
+      <td>RRID:SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PHENIX</td>
+      <td>RRID:SCR_014224S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>XDS</td>
+      <td>RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Compound synthesis and purification
 
 Details for synthesis and purification of compounds is provided in Appendix 1.
 
-## Expression constructs
+### Expression constructs
 
 Synthetic genes, codon-optimised for expression in E. coli, were purchased from GeneArt (ThermoFisher Scientific, Loughborough, UK). With the exception of RECQ5 (see below) the coding sequence was subcloned into an in-house modified pET-17b vector at the NdeI and EcoRI sites of the multiple cloning site.
 
-## BLM-HD, BLM-HDΔWHD
+#### BLM-HD, BLM-HDΔWHD
 
 pAWO-STREP-3C; a pET-17b expression vector modified to encode an N-terminal human rhinovirus 3C-protease (HRV-3C) cleavable StrepII-affinity tag. BLM-HD encodes amino acids 636–1298 of human BLM (UniProt ID: BLM_HUMAN), whereas BLM-HDΔWHD encodes amino acids 636–1074 and 1231–1298.
 
-## RECQ1-HD
+#### RECQ1-HD
 
 pAWO-His-TRX-3C; a pET-17b expression vector modified to encode an N-terminal His6-tagged E. coli Thioredoxin HRV-3C cleavable affinity/solubility tag. RECQ1-HD encodes amino acids 49–616 of human RECQ1 (Uniprot ID: RECQ1_HUMAN).
 
-## WRN-HD
+#### WRN-HD
 
 pAWO-His-SUMO-3C; a pET-17b expression vector modified to encode an N-terminal His6-tagged S. cerevisiae Smt3 (SUMO) HRV-3C cleavable affinity/solubility tag. WRN-HD encodes amino acids 480–1251 of human WRN (Uniprot ID: WRN_HUMAN).
 
-## RECQ5-HD
+#### RECQ5-HD
 
 The expression construct pNIC28-Bsa4-RecQL5 was obtained from the Structural Genomics Consortium, Oxford (see https://www.thesgc.org/tep/RECQL5 for full details). RECQ5-HD encodes amino acids 11–526 of human RECQ5 (Uniprot ID: RECQ5_HUMAN).
 
-## Expression and purification
+### Expression and purification
 
-## BLM-HD, BLM-HDΔWHD
+#### BLM-HD, BLM-HDΔWHD
 
 E. coli strain BL21(DE3) [New England Biolabs, Hitchin, UK] was transformed with the required expression plasmid. A ‘starter’ culture was generated by inoculating a 250 ml glass Erlenmeyer flask with 100 ml of Turbo-broth [Molecular Dimensions, Sheffield, UK] supplemented with 50 μg/ml ampicillin. The culture was allowed to grow in an orbital-shaking incubator set at 37°C, 220 rpm, until the absorbance at 600 nm reached 1.5. The culture was then stored at 4°C until the following day. Twelve ml of the ‘starter’ culture was used to inoculate a 2 l Erlenmeyer containing 1lL of Turbo-broth supplemented with antibiotic as before. The culture was grown until the absorbance at 600 nm reached 1.5, when the flask containing the culture was placed on ice for a period of 30 min. During this time, the incubator temperature was reduced to 20°C. After incubation on ice, isopropyl-β-D-thiogalactoside (IPTG) was added to a final concentration of 0.4 mM, to induce protein expression. The flask was then returned to the incubator, and the culture allowed to grow overnight at the reduced temperature of 20°C. Cells were harvested by centrifugation after a period of 16 hr. The resultant cell pellet was stored at −20°C until required.
 
 The cell pellet arising from 2 l of culture was resuspended, on ice, in 25 ml of Buffer A (50 mM HEPES-NaOH, pH 7.5, 1 M NaCl, 0.5 mM TCEP, 0.5 mM EDTA) supplemented with a protease inhibitor tablet (cOmplete EDTA-free Protease Inhibitor Cocktail Tablet; Roche, Burgess Hill, UK). The cells were lysed by sonication and insoluble material removed by centrifugation. The resultant supernatant was applied to a 5 ml Strep-Tactin Superflow Plus Cartridge (Qiagen, Manchester, UK), pre-equilibrated with Buffer A. Unbound material was application of 10 column volumes (CV) of Buffer A (50 ml). Retained proteins were then eluted from the column by application of 5 CV of Buffer B (Buffer A supplemented with 5 mM desthiobiotin). Fractions containing the required protein were identified by SDS-PAGE, pooled, and then concentrated to a final volume of 2.5 ml using centrifugal concentrators (Vivaspin 20, 5000 MWCO; Sartorius Stedim Biotech GmBH, Goettingen, Germany). After overnight cleavage of the affinity tag with human rhinovirus 3C-protease, the sample was diluted to reduce the NaCl concentration to below 250 mM. This was applied to a 5 ml HiTrap Heparin HP cartridge (GE Healthcare Life Sciences, Little Chalfont, UK), pre-equilibrated in Buffer C (50 mM HEPES-NaOH, pH 7.5, 250 mM NaCl, 0.5 mM TCEP, 0.5 mM EDTA). Unbound material was removed by washing the column with 10 CV of buffer C. A linear NaCl gradient starting at a concentration of 250 mM and ending at 2000 mM, over 50 CV, was applied to the column. Fractions containing the desired recombinant protein were identified, pooled and concentrated as before. The concentrated sample was then applied to an HiLoad 26/600 Superdex 200 size exclusion chromatography column [GE Healthcare] pre-equilibrated in Buffer D (20 mM HEPES-NaOH pH7.5, 250 mM NaCl, 0.5 mM TCEP). Again, fractions containing the desired recombinant protein were identified, pooled and concentrated, then flash-frozen in aliquots in liquid nitrogen and stored at −80°C until required.
 
-## RecQ1-HD, RecQ5-HD, WRN-HD
+#### RecQ1-HD, RecQ5-HD, WRN-HD
 
 Expression and purification of RecQ1-HD, RecQ5-HD and WRN-HD were achieved using procedures similar to that used for BLM-HD, but with initial capture achieved using an IMAC column. Samples were applied to a HiTrap 5 ml TALON Crude column (GE Healthcare) pre-equilibrated in Buffer A (50 mM HEPES-NaOH pH 7.5, 500 mM NaCl, 0.5 mM TCEP, 10 mM imidazole). The column was washed with five column volumes of Buffer A, with retained protein eluted by the addition of 5 CV of Buffer B (50 mM HEPES-NaOH pH 7.5, 500 mM NaCl, 0.5 mM TCEP, 300 mM imidazole). Affinity/solubility tags were removed by incubation with either HRV-3C (RecQ1, WRN) or TEV protease (RecQ5).
 
-## UvrD
+#### UvrD
 
 Purified recombinant E. coli UvrD was kindly provided by Dr. Mohan Rajasekaran (Sussex Drug Discovery Centre, University of Sussex, UK).
 
-## REAGENTS
+### REAGENTS
 
-## Solutions
+#### Solutions
 
-## Oligonucleotides
+#### Oligonucleotides
 
 Reverse-phase purified oligonucleotides were purchased from either Kaneka Eurogentec S.A. (Seraing, Belgium) or Eurofins Genomics Germany GmbH (Ebersberg, Germany).
 
@@ -207,13 +508,13 @@ Where X and Y are the following modifications:
 
 FORK-A and FORK-B were annealed at a concentration of 200 μM using a slow-cooling cycle programmed into a PCR thermal cycler, in a buffer containing 20 mM HEPES.NaOH pH 7.5, 50 mM NaCl and 1 mM MgCl2.
 
-## Commercially sourced ML216
+### Commercially sourced ML216
 
 ML216 was purchased from Merck KGaA (Darmstadt, Germany), product code: SML0661. ML216-A was purchased from Cayman Chemical (Ann Arbor, Michigan, USA), product code: 15186.
 
-## Biochemical assays
+### Biochemical assays
 
-## Fluorescence-based DNA unwinding assay
+#### Fluorescence-based DNA unwinding assay
 
 Methodology is based on that previously reported by Rosenthal, 2010. Briefly, assays were carried out in 384-well black plates, with measurements taken at emission and excitation wavelengths of 540 and 590 nm respectively, in a PHERAstar multimode plate reader (BMG Labtech). Assay buffer: 50 mM Tris-HCl pH 8.0, 50 mM NaCl, 2 mM MgCl2, 0.01% v/v Tween-20, 2.5 µg/ml poly(dI-dC), 1 mM DTT.
 
@@ -223,7 +524,7 @@ Assay conditions (compounds 2 to 7 and ML216): 0.375 nM BLM-HD, 10 nM annealed D
 
 Data for compound 1 are taken from an earlier iteration of the assay and were measured used the conditions: 3.75 nM BLM-HD, 75 nM annealed DNA substrate, 120 µM Mg-ATP in a reaction volume of 40 µl over a 20-min incubation period.
 
-## Malachite-green ATP turnover assay
+### Malachite-green ATP turnover assay
 
 Assay uses the PiColorLock Gold Phosphate Detection System from Novus Biologicals following the manufacturer’s recommended protocol. Briefly, assays were carried out in 96-well clear flat-bottomed plates, with absorbance measurements taken at a wavelength of 630 nm in a CLARIOstar multimode plate reader (BMG Labtech). Assay buffer: 50 mM Tris-HCl pH 7.5, 50 mM NaCl, 2 mM MgCl2, 0.05% v/v Tween-20, 0.5 mM TCEP.
 
@@ -231,44 +532,44 @@ Assay uses the PiColorLock Gold Phosphate Detection System from Novus Biological
 
 Assay conditions: 2 nM BLM-HD, 100 nM ssDNA-20mer and 2 mM Mg-ATP in a reaction volume of 200 µl over a 20-min incubation period.
 
-## Gel-based assay
+### Gel-based assay
 
 Assay buffer: 50 mM Tris-HCl pH 8.0, 50 mM NaCl, 2 mM MgCl2, 0.01% v/v Tween-20, 2.5 µg/ml poly(dI-dC), 1 mM DTT. 28 μl of BLM-HD (at a concentration of 2.9 nM) was pre-incubated with 2 μl of compound (2 mM stock dissolved in 100 % v/v DMSO, over a range of concentrations up to 100 µM) for a period of 15 min at room temperature. Next, 10 μl of substrate (300 nM forked-50mer dsDNA and 4.8 mM Mg-ATP) were added. After 10 min, reactions were terminated by the addition of 1 x loading dye (6 x solution: 10 mM Tris-HCl pH 7.5, 0.03% w/v bromophenol blue, 60% v/v glycerol, 60 mM EDTA). The samples were then loaded onto a 15% native gel (29:1 acrylamide:bis-acrylamide, 0.5 x TBE), separated by electrophoresis, and then visualised using a FLA-1500 fluorimager [Fujifilm, Bedford, UK]. The intensity of each species on the gel was quantified using the analysis tools provided in the software package Fiji (Schindelin et al., 2012).
 
-## Topoisomerase I DNA-unwinding assay
+### Topoisomerase I DNA-unwinding assay
 
 Assay uses the DNA Unwinding Assay Kit from Inspiralis (Norwich, UK) following the manufacturer’s recommended protocol. Resultant samples were applied to a 1% w/v agarose gel (in 1 x TAE buffer), separated by electrophoresis, stained with ethidium bromide, and then visualised with a UV-transilluminator/digital gel documentation system.
 
-## Dye-displacement assay
+### Dye-displacement assay
 
 Fluorescence intensity was measured in a CLARIOstar multi-mode plate reader (BMG Labtech) with excitation and emission wavelengths of 485 nm and 520 nm respectively, in 384-well black plates. Twenty-eight µl of forked-50mer dsDNA (at a final concentration of 800 nM) was pre-incubated with 10 μl of SYBR Green II (1:200 dilution) for a period of 20 min at room temperature. Two µl of compound (1 mM stock dissolved in 100 % v/v DMSO, over a range of final concentrations up to 50 µM) was then added. Measurements were taken after incubation times of 20, 45, and 60 min. Assay buffer: 50 mM Tris-HCl pH 8.0, 50 mM NaCl, 2 mM MgCl2, 0.01% v/v Tween-20, 1 mM DTT.
 
 Assay conditions: 800 nM annealed DNA substrate and 1:800 SYBR Green II in a reaction volume of 40 µl over a 20-min incubation period.
 
-## Biophysical assays
+### Biophysical assays
 
-## Microscale thermophoresis (MST)
+#### Microscale thermophoresis (MST)
 
 Experiments were performed in a Monolith NT.115 instrument from NanoTemper Technologies GmbH (München, Germany). Purified recombinant protein was labelled using a Monolith NT RED-Maleimide Protein Labelling Kit supplied by the manufacturer, following the recommended protocol. A total of 19 µl of BLM-HD (at a final concentration of 75 nM) was mixed with 1 µl of the required ‘ligand’ solution (ssDNA and / or compound) and incubated for 15 min at room temperature, before being transferred to ‘premium’ capillaries for measurement. Experiments were performed at a temperature of 25°C, with settings of 20% excitation power, 20% MST power. Assay buffer: 50 mM Tris-HCl pH 7.5, 100 mM NaCl, 2 mM MgCl2, 0.05% v/v Tween-20, 0.5 mM TCEP.
 
-## Crystallography
+### Crystallography
 
-## BLM-HDΔWHD / ADP
+#### BLM-HDΔWHD / ADP
 
 Prior to setting up of crystallisation screens BLM-HDΔWHD at a concentration of 15 mg/ml was combined with glycerol (100% v/v) and Mg-ADP (50 mM) to produce final concentrations of 10% v/v and 2 mM, respectively. Of the prepared complex, 150 nl was combined with 150 nl of crystallisation reagent in MRC2 sitting drop vapour diffusion experiments against a reservoir volume of 50 µl. Crystals were obtained in condition A8 of the Morpheus HT-96 screen (0.06 M divalents, 37.5% Buffer System 2% and 37.5% Precipitant Mix 4); Molecular Dimensions [Sheffield, UK] at 4°C after a period of approximately 1 week.
 
 Cryoprotection for data collection was achieved by stepwise soaking of crystals in buffers containing increasing amounts of ethylene glycol, to a final concentration of 20% (v/v). Diffraction data to a resolution of 1.53 Angstrom were collected from a single crystal, on beamline I04 at the Diamond Light Source (Didcot, UK). Crystals were in space group P21 with one molecule of BLM-HDΔWHD plus associated ligands forming the asymmetric unit.
 
-## BLM-HDΔWHD / ADP / ssDNA-15mer / compound 2
+#### BLM-HDΔWHD / ADP / ssDNA-15mer / compound 2
 
 BLM-HDΔWHD was mixed with ssDNA-15mer at a 1:1.2 molar ratio (protein:DNA) to produce a final concentration of 15 mg/ml with respect to protein. Compound 2 was then added to a final concentration of 3 mM (from a stock at 100 mM in 100% v/v DMSO) and incubated with the protein:DNA complex overnight at 4°C. Prior to setting up crystallisation trials the complex was combined with glycerol (100% v/v) and Mg-ADP (50 mM) to produce final concentrations of 10% v/v and 2 mM, respectively. 150 nl of the prepared complex was combined with 150 nl of crystallisation reagent in MRC2 sitting drop vapour diffusion experiments against a reservoir volume of 50 µl. Crystals were obtained in condition C9 of the Morpheus HT-96 screen (0.09 M NPS, 0.1M Buffer System, 30% Precipitant Mix 1, Molecular Dimensions) at 4°C after a period of approximately 1 week.
 
 Cryoprotection for data collection was achieved by stepwise soaking of crystals in buffers containing increasing amounts of ethylene glycol, to a final concentration of 20% (v/v). Diffraction data to a resolution of 3.0 Angstrom were collected from a single crystal, on beamline I03 at the Diamond Light Source (Didcot, UK). Crystals were in space group P1 with six molecules of BLM-HDΔWHD plus associated ligands forming the asymmetric unit.
 
-## Data processing and model building
+### Data processing and model building
 
 Diffraction data were automatically processed at the synchrotron by the xia2 pipeline (Winter et al., 2013), using software packages DIALS (Beilsten-Edmands et al., 2020; Winter et al., 2018) or XDS (Kabsch, 2010) and Aimless (Winn et al., 2011). For BLM-HDΔWHD/ADP, coordinates corresponding to the helicase domain were extracted from PDB entry 4O3M and provided as a search model for molecular replacement using Phaser (McCoy et al., 2007). For BLM-HDΔWHD/ADP/ssDNA-15mer/compound 2, the rebuilt and refined coordinates for BLM-HDΔWHD were used as the search model. Initial models were extended and improved by iterative rounds of building in Coot (Emsley and Cowtan, 2004) and refinement in either PHENIX (Liebschner et al., 2019) or BUSTER (Bricogne, 2020) to produce the final deposited models. Crystallisation and refinement statistics are provided in Appendix-table 1.
 
-## Data plotting and analysis
+### Data plotting and analysis
 
 All experimental data were plotted and analysed using GraphPad Prism, 2020.

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03gf8rp76 National Centre for Biological Sciences, Tata Institute of Fundamental Research Bangalore India
+1. National Centre for Biological Sciences, Tata Institute of Fundamental Research Bangalore India ([ROR:03gf8rp76](https://ror.org/03gf8rp76))
 
 † Corresponding author
 
@@ -43,45 +43,225 @@ For our study we chose a total of six representative circuit configurations, con
 
 We used these broad categories as representatives to explore possible regimes for grouped and sequence computation in feedforward networks with random connectivity (Figure 1).
 
-## Grouped convergence of inputs
+**Table 1.**
+ Example network configurations and parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>p, Probability of connectivity</th>
+      <th>Tpre, #neurons in the local network</th>
+      <th>R, Background input rate (Hz)</th>
+      <th>D, Time window for each input (s), also corresponds to the timescale of ensemble activity</th>
+      <th>Z, Zone length (for groups) (µm)</th>
+      <th>S, Spacing between inputs (for sequences) (µm)</th>
+      <th>Δ,Delta,Available window for convergence of input (for sequences) (µm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hippo-chem</td>
+      <td>0.05</td>
+      <td>400,000</td>
+      <td>0.01</td>
+      <td>2</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Hippo-CICR</td>
+      <td>0.05</td>
+      <td>400,000</td>
+      <td>0.01</td>
+      <td>0.2</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Hippo-elec</td>
+      <td>0.05</td>
+      <td>400,000</td>
+      <td>0.1</td>
+      <td>0.004</td>
+      <td>50</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Cortex-chem</td>
+      <td>0.2</td>
+      <td>100,000</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Cortex-CICR</td>
+      <td>0.2</td>
+      <td>100,000</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Cortex-elec</td>
+      <td>0.2</td>
+      <td>100,000</td>
+      <td>1</td>
+      <td>0.004</td>
+      <td>50</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Grouped convergence of inputs
 
 Clustered input is capable of eliciting stronger responses than the same inputs arriving in a dispersed manner (Polsky et al., 2004; Schiller et al., 2000; Gasparini and Magee, 2006). In principle, several electrical and signaling mechanisms with high order reactions or high cooperativity support such selectivity (Schiller et al., 2000; Kumar et al., 2018; Bhalla, 2003). We illustrated this using a simple model of Calmodulin activation by Ca2+ influx (Figure 2A) from grouped and spaced synapses, respectively. Grouped inputs arriving at a spacing of 2 μm resulted in a higher concentration of activated Calmodulin (CaM-Ca4) when compared to inputs that arrived in a dispersed manner, at a spacing of 10 μm (Figure 2B). Since grouped inputs can indeed lead to larger responses at the postsynaptic dendritic branch, we investigated the likelihood of inputs converging in a grouped manner in the presence of random connectivity.
 
-## Sparse representation of fully mixed groups of three to four inputs is likely in randomly connected networks
+![Figure 2.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig2-v1.jpg)
+
+**Figure 2.:** (A) A simple, biologically inspired model of Ca-Calmodulin reaction pathway. (B) The Ca-Calmodulin model shows selectivity for grouped inputs. Inputs arriving in a grouped manner (2 μm spacing) lead to a higher concentration of Ca4_CaM as opposed to dispersed inputs (10 μm spacing). (C) Different kinds of stimulus-driven groups. ‘Stimulus-driven groups’ receive M or more connections from neurons belonging to any of the ensembles. They could be of three kinds: (1) ‘fully mixed groups’ that receive at least one connection from each ensemble; (2) ‘partially mixed groups’ that contain multiple inputs from the same ensemble while missing inputs from others; ‘homogeneous groups’ that receive inputs from a single ensemble. (D) Active and inactive groups, and noise groups. In an active group, all inputs constituting a group are received, whereas an inactive group may be missing one or more inputs in the duration of occurrence of a group, in spite of being connected with the ensembles. ‘Noise groups’ are formed of M or more background inputs; a group composed of M or more inputs of any kind, either from the ensembles or from noise or a combination of both is referred to as ‘any group’. (E) Neurons classified as per the types of groups they receive. Note that the schematic is a qualitative representation. The sizes of the circles do not correspond to the cardinality of the sets. (F) Probability of occurrence of connectivity-based fully mixed group due to local convergence of ensemble inputs. Group size is the number of different ensembles. It also corresponds to the number of different ensembles that send axons to a group of zone length ‘Z’. The calcium-induced calcium release (‘CICR)’ configuration overlaps with the ‘chem’ configuration of the corresponding network in F, G, J and K as they share the same zone length. (G) Probability of occurrence of connectivity-based stimulus-driven group, which receives connections from any of the ensembles. Group size in G refers to the number of connections arriving from any of the ensemble neurons within zone length ‘Z’. (H) Probability of occurrence of noise group due to local noisy activation of synapses. Here, the group size refers to the number of synapses activated within the zone of length ‘Z’. (I) Probability of occurrence of a group due to the convergence of either stimulus-driven inputs or noisy inputs or a combination of both. Hippo-chem overlaps with cortex-CICR as they have same value for R*D. (J, K) Probability of occurrence of active fully mixed and active stimulus-driven groups respectively, wherein all inputs constituting a group are active. Shaded regions in F, G, H, I, J, K represent lower and upper bounds on the analytical equations for probability based on non-overlapping and overlapping cases, i.e., $κ=\frac{L}{Z}$ and $κ=\frac{L}{\sigma}$ in the equations. (L) Frequency distribution of groups based on the number of unique ensembles they receive connections from, for stimulus-driven groups that receive four or more ensemble inputs. Here, the total number of active ensembles in the presynaptic population is four. (M) Ratio of the probability of occurrence of an active stimulus-driven group to the probability of occurrence of any group on a neuron. This gives an indirect measure of signal to noise in the population. The mismatch seen between the analytical and simulated traces in the case of cortex-CICR is due to low sampling at higher group sizes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Group of length 5 for the cortex-calcium-induced calcium release (cortex-CICR) configuration is chosen as the base model and each parameter is varied while keeping the others fixed. (A) Probability of groups increases with increase in connection probability between the layers in the feedforward network. Groups containing inputs from background activity are far more likely than stimulus-driven or fully mixed groups in this case. (B) Probability of groups vs ensemble participation probability. (C) Effect of input zone length on the probability of groups. Longer zone lengths imply higher probability of group. (D) Probability of grouped convergence increases with increase in ensemble size. (E) Probability of noise group at different rates of background activity and grouped input timescales. Noise groups are more likely in networks with higher background activity and/or with mechanisms operating at slower timescales. (F) Probability of any group at different rates of background activity and grouped input timescales. Likelihood of occurrence of any group also increases with increase in the rate of background activity and/or with mechanisms operating at slower timescales.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Probability of connectivity-based fully mixed groups as a function of connection probability and ensemble size for groups receiving inputs from just two ensembles over chemical and calcium-induced calcium release (CICR) length scales. (B) Same as A, for the case of electrical length scale.
+
+### Sparse representation of fully mixed groups of three to four inputs is likely in randomly connected networks
 
 We formulated an analytical expression to estimate the bounds for the probability of convergence for grouped inputs in feedforward networks with random connectivity. Our approach is to ask how likely it is that a given set of inputs lands on a short segment of dendrite, and then scale it up to all segments on the entire dendritic length of the cell. Consider a neuron of total dendritic length L. L is in the range of 10 mm for CA1 pyramidal neurons in rats (Vitale et al., 2023; Bannister and Larkman, 1995), which we collapse into a single long notional dendrite. Our analysis does not consider electrotonic effects, hence all synapses are equivalent. Assume activity of M ensembles, each containing N neurons. We refer to groups of synapses within the target zone receiving at least one connection from each ensemble as connectivity-based fully mixed groups (cFMG), because they hold the potential to associate information from all these ensembles (Figure 2C). We seek the probability PcFMG, that there is at least one synaptic projection from each of the M ensembles to a target zone of length Z (a group) occurring anywhere on a single target neuron of total dendritic arbor length L. The parameter p is the probability of any given neuron from the presynaptic population to connect onto a given postsynaptic cell. Values of p for the hippocampal CA3-CA1 projections have been estimated at 5% (Bolshakov and Siegelbaum, 1995; Sayer et al., 1990), and for cortical circuits in the range of 5–50% (Brown and Hestrin, 2009; Holmgren et al., 2003; Ko et al., 2011; Table 1, Table 2).
 
-The probability of occurrence of at least one zone of length Z anywhere along on the dendritic arbor, such that it receives at least one input from each ensemble is given by:(1)PcFMG≈1−(1−PcFMG_Z)κcFMG
+**Table 2.**
+ Parameters used in the analytical derivations.
 
-where κcFMG lies between LZ and Lσ depending on degree of overlap across zones in different network configurations. Here, σ denotes the inter-synapse interval which is 0.5 μm in all our network configurations. In Figure 2F, we compare the analytical form obtained by fitting Equation 1 with κ as the free parameter to the probabilities calculated from our connectivity-based simulations (check Methods). The values of κcFMG vary for different network configurations (Supplementary file 1c).
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Represents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p</td>
+      <td>Connection probability, i.e., probability of a neuron in the postsynaptic population being connected with a neuron in the presynaptic population</td>
+    </tr>
+    <tr>
+      <td>pe</td>
+      <td>Ensemble participation probability, i.e., probability that a neuron part of an ensemble is active in a single occurrence of the stimulus.</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>Number of neurons in an ensemble</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Total dendritic arbor length of a postsynaptic neuron</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>Zone length for dendritic group computation</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>Number of ensembles; also corresponds to the number of inputs relevant for grouped computation (in certain scenarios) or sequence computation</td>
+    </tr>
+    <tr>
+      <td>Tpre</td>
+      <td>Number of neurons in the presynaptic population</td>
+    </tr>
+    <tr>
+      <td>Tpost</td>
+      <td>Number of neurons in the postsynaptic population</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>Inter-synapse interval; also equal to Tpre*p</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>Minimum spacing between two inputs that are are part of a sequence</td>
+    </tr>
+    <tr>
+      <td>Δ</td>
+      <td>Available window where the next input can arrive to combine sequentially with the previous input</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Duration of correlated activity among neurons constituting an ensemble</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Rate of background activity in the presynaptic population</td>
+    </tr>
+    <tr>
+      <td>pbg</td>
+      <td>Probability of a synapse being hit by background activity in duration D; equal to 1–e–RD</td>
+    </tr>
+  </tbody>
+</table>
+
+The probability of occurrence of at least one zone of length Z anywhere along on the dendritic arbor, such that it receives at least one input from each ensemble is given by:
+
+$$
+P_{cFMG}≈1−(1−P_{cFMG_Z})^{κ_{cFMG}}
+$$
+
+where $κ_{cFMG}$ lies between $\frac{L}{Z}$ and $\frac{L}{\sigma}$ depending on degree of overlap across zones in different network configurations. Here, σ denotes the inter-synapse interval which is 0.5 μm in all our network configurations. In Figure 2F, we compare the analytical form obtained by fitting Equation 1 with κ as the free parameter to the probabilities calculated from our connectivity-based simulations (check Methods). The values of $κ_{cFMG}$ vary for different network configurations (Supplementary file 1c).
 
 Thus, the probability of occurrence of groups that receive connections from each of the M ensembles (PcFMG) is a function of the connection probability (p) between the two layers, the number of neurons in an ensemble (N), the relative zone length with respect to the total dendritic arbor (Z/L), and the number of ensembles (M).
 
-Ensemble neurons may not be 100% reliable in representing a stimulus. If we assume that each ensemble neuron is active with a probability pe during the presence of the corresponding stimulus, a connected fully mixed group may not always receive all inputs that constitute the group in a single occurrence of the stimulus (Figure 2D). Hence, the probability of a neuron receiving an active fully mixed group where there is at least one active input arriving from each of the M ensembles is given by(2)PaFMG≈1−(1−PaFMG_Z)κaFMG
+Ensemble neurons may not be 100% reliable in representing a stimulus. If we assume that each ensemble neuron is active with a probability pe during the presence of the corresponding stimulus, a connected fully mixed group may not always receive all inputs that constitute the group in a single occurrence of the stimulus (Figure 2D). Hence, the probability of a neuron receiving an active fully mixed group where there is at least one active input arriving from each of the M ensembles is given by
 
-wherePaFMG_z≈(1−e−vaFMG)MandvaFMG=ppeNZL
+$$
+P_{aFMG}≈1−(1−P_{aFMG_Z})^{κ_{aFMG}}
+$$
 
-where κaFMG again lies between LZ and Lσ depending on the degree of overlap between zones.
+where
+
+$$
+P_{aFMG_z}≈(1−e^{−v_{aFMG}})^{M}andv_{aFMG}=\frac{pp_{e}NZ}{L}
+$$
+
+where $κ_{aFMG}$ again lies between $\frac{L}{Z}$ and $\frac{L}{\sigma}$ depending on the degree of overlap between zones.
 
 We validated these analytic expressions using simulations of network connectivity as described in the Methods (Figure 2). The simulations checked for the occurrence of such groups on each neuron in the postsynaptic population simulated through random connectivity. The simulation estimates matched the analytic expressions.
 
 To interpret these relationships (Figure 2) we stipulate that pattern discrimination via dendritic grouped computation requires that at least one neuron in the downstream population receives convergent connections from all the M ensembles. Hence, if PcFMG<1/Tpost, where Tpost = the total number of neurons in the postsynaptic population, such projections are unlikely to happen anywhere in the network. Conversely, if PcFMG~1, then all the neurons in the postsynaptic population receive similar grouped inputs, leading to very high redundancy in representation. A sparse population code would be ideal for this scenario with a few neurons receiving such convergent grouped inputs from each pattern of ensemble activity. With ensembles of 100 neurons in the presynaptic population, we find that in a downstream population of 100,000 neurons, fully mixed groups of three to four inputs are likely to occur in four out of the six network configurations we tested (hippo-elec, cortex-chem, cortex-CICR, cortex-elec) (Figure 2F). Since PaFMG is exponentially related to M, the probability of groups with greater number of inputs drops steeply as the number of ensembles increases. Large fully mixed groups of up to seven inputs are likely only in the cortex-electrical configuration which has higher connection probability and longer zone length. Thus, grouped convergence of three to four inputs from a specific neural activity pattern seems likely as well as potentially non-redundant, in most network configurations.
 
-## End-effects limit convergence zones for highly branched neurons
+### End-effects limit convergence zones for highly branched neurons
 
 Neurons exhibit considerable diversity with respect to their morphologies. How synapses extending across dendritic branch points interact in the context of a synaptic cluster/group is a topic that needs detailed examination via experimental and modeling approaches. However, for the sake of analysis, we present calculations under the assumption that selectivity for grouped inputs might be degraded across branch points.
 
-Zones beginning close to a branch point might get interrupted. Consider a neuron with B branches. The length of the typical branch would be L/B. As a conservative estimate if we exclude a region of length Z for every branch, the expected number of zones that begin too close to a branch point is(3)Eend≈ZBL
+Zones beginning close to a branch point might get interrupted. Consider a neuron with B branches. The length of the typical branch would be L/B. As a conservative estimate if we exclude a region of length Z for every branch, the expected number of zones that begin too close to a branch point is
+
+$$
+E_{end}≈\frac{ZB}{L}
+$$
 
 For typical pyramidal neurons B~50, so Eend~0.05 for values of Z of ~10 µm. Thus, pyramidal neurons will not be much affected by branching effects. Profusely branching neurons like Purkinje cells have B~900 for a total L of ~7800 µm (McConnell and Berry, 1978), hence Eend~1 for values of Z of ~10 µm. Thus, almost all groups in Purkinje neurons would run into a branch point or terminal. For the case of electrical groups, this estimate would be scaled by a factor of 5 if we consider a zone length of 50 µm. However, it is important to note that these are very conservative estimates, as for clusters of four to five inputs, the number of synapses available within a zone are far greater (~100 synapses within 50 µm).
 
-## Random connectivity supports stimulus-driven groups that mix information from different ensembles to varying extents
+#### Random connectivity supports stimulus-driven groups that mix information from different ensembles to varying extents
 
 Since ensembles typically consist of more than one neuron which show correlated activity, this could lead to neurons receiving different combinations of ensemble inputs. For example, neurons could receive fully mixed groups that associate inputs from five different ensembles {A, B, C, D, E}, or partially mixed groups such as {A, B, A, A, D} where inputs from one or more active ensembles are missing, or homogeneous groups such as {B, B, B, B, B} which are still correlated and contain the same number of inputs, but all inputs come from a single ensemble. We refer to the superset consisting of all these different kinds of groups as stimulus-driven groups (Figure 2C).
 
 With presynaptic ensembles of 100 neurons, stimulus-driven groups are more frequent than fully mixed groups (compare Figure 2F with 2G and 2J with 2K; derivations in Appendix 1). This gap increases further as the group size increases owing to the increasing number of permutations possible with repeating inputs (compare slopes of Figure 2F and G). We found that even with ensembles of 100 neurons, there is enough redundancy in input representation such that the combinatorics yield a greater proportion of partially mixed groups, relative to fully mixed and homogeneous groups (Figure 2L).
 
-## Background activity can also contribute to grouped activity, resulting in false positives
+#### Background activity can also contribute to grouped activity, resulting in false positives
 
 Networks are noisy, in the sense of considerable background activity. False positives arise when noisy inputs combine with other noisy inputs or with one or more inputs from the ensembles to trigger the same dendritic nonlinearities as true positives. We assumed the background activity to be Poisson in nature, with synapses receiving inputs at a rate R. We chose R in the range of random background activity, ~0.1 Hz for CA3 pyramidal neurons and ~1 Hz for the prefrontal cortex (Table 1). For chemical inputs we require strong, Ca-influx triggering bursts, which are likely to be rare. Here, we assume that R is about 10% of the network background activity rate, or ~0.01 Hz for CA3 and 0.1 Hz for cortex (Buzsáki and Mizuseki, 2014; Mizuseki and Buzsáki, 2013).
 
@@ -91,7 +271,7 @@ The influence of various parameters on the probabilities of different kinds of g
 
 Based on these calculations, it would be near impossible to identify neurons receiving stimulus-driven groups from other neurons in the population under high noise conditions (compare cortex-chem in Figure 2K with 2H and 2I). A comparison of the probability of active stimulus-driven groups to the probability of any groups shows that the hippo-elec configuration is the best suited for grouped computation as it has the best ‘signal-to-noise’ ratio. Hence, we chose the hippo-elec as a case study below, to understand how dendritic nonlinearities influence neuronal output in our postsynaptic neurons.
 
-## Strong dendritic nonlinearities are necessary to distinguish neurons receiving stimulus-driven groups from other neurons
+#### Strong dendritic nonlinearities are necessary to distinguish neurons receiving stimulus-driven groups from other neurons
 
 What significance would grouped activity on a small dendritic zone have on neuronal output, given multiple other inputs synapsing onto the dendritic arbor? The strength of dendritic nonlinearity could influence the relative contribution of grouped inputs to the output of a neuron. We evaluated how nonlinearities could distinguish neurons that receive stimulus-driven groups from other neurons in the population based on their somatic activity profiles.
 
@@ -107,29 +287,53 @@ Even in the presence of strong nonlinearities, neurons receiving fully mixed gro
 
 In summary, we find that strong nonlinearities are necessary to distinguish the activity of neurons that receive relevant grouped connectivity from other neurons in the network. However, even in the presence of strong nonlinearities, it is not possible to distinguish neurons that receive fully mixed groups from partially mixed/homogeneous groups, on the basis of responses to a single pattern of ensemble activations.
 
-## Sequential convergence of inputs
+### Sequential convergence of inputs
 
-## Sequences of three to five inputs are likely, but require the presence of larger ensembles
+#### Sequences of three to five inputs are likely, but require the presence of larger ensembles
 
 We next performed a similar calculation with the further requirement that the ensembles are active in a certain order in time, and that the projections arrive on the target neuron in the same spatial order as their activity. This form of computation has been observed for electrical discrimination of sequences (Branco et al., 2010) and has been proposed for discrimination based on chemical signaling (Bhalla, 2017). Here, we estimate the likelihood of the first ensemble input arriving anywhere on the dendrite, and ask how likely it is that succeeding inputs of the sequence would arrive within a set spacing. We stipulate that each successive input lies within a spacing of S to S+Δ µm with respect to the previous input. We assume that each ensemble is active over a duration D. Mean spine spacing is 0.3–1 µm in rat and mouse pyramidal neurons both in cortex and hippocampus (Bannister and Larkman, 1995; Konur et al., 2003). The typical spacing S between inputs is of the order of 2 μm for chemical/CICR sequences and ~10 μm for electrical sequences. We assume Δ to be ~1.5 μm for chemical/CICR and ~5 μm for electrical sequences. Hence, there can be intervening synapses between the stimulated ones.
 
 First, we estimate the probability of connectivity-based perfectly ordered stimulus sequences (cPOSS), which receive connections in an ordered manner from each of the ensembles (Figure 4A and B).
 
-Using Poisson approximation, the probability of one or more cPOSS which receive axons from M different ensembles, occurring anywhere along the dendritic length of a neuron, is(4)PcPOSS≈1−e−EcPOSS
+![Figure 4.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig4-v1.jpg)
+
+**Figure 4.:** (A) Different kinds of sequences. True sequences are formed of ensemble inputs alone, noise sequences are formed of background inputs while gap-fills consist of a combination of ensemble and background inputs. (B) Active and inactive sequences. An active sequence receives all constituting inputs, whereas an inactive sequence may be missing one or more inputs in the duration of occurrence of a sequence, in spite of receiving axonal connections from the ensembles. (C) Neurons classified as per the types of sequences they receive. Note that the schematic is a qualitative representation. The sizes of the circles do not correspond to the cardinality of the sets. (D) Probability of occurrence of connectivity-based perfectly ordered stimulus sequence which receives connections from all active ensembles in an ordered manner. The calcium-induced calcium release (‘CICR’) configuration overlaps with the ‘chem’ configuration of the corresponding network as they share the same values for S and Δ. (E) Probability of occurrence of noise sequences due to local noisy activation of synapses in an ordered fashion. (F) Probability of occurrence of gap-fill sequences that receive one or more, but not all inputs from ensembles. Background activity arriving at the right location time compensates for the inputs missing to make a perfect sequence. (G) Probability of occurrence of activity-based perfectly ordered stimulus sequence which receives inputs from all active ensembles in an ordered manner. (H) Probability of occurrence of a sequence due to the ordered convergence of either stimulus-driven inputs or noisy inputs or a combination of both. (I) Ratio of the probability of occurrence of active perfectly ordered stimulus sequences to the probability of occurrence of any sequence.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Sequence of length 5 for the cortex-calcium-induced calcium release (cortex-CICR) configuration is chosen as the base model and each parameter is varied while keeping the others fixed. (A) Probability of sequential convergence increases with increase in connection probability between the layers in the feedforward network for the different kinds of sequences. (B) Probability of sequences vs ensemble participation probability. (C) Effect of input zone width, Δ, on the probability of sequential convergence. Longer zone widths imply higher probability of sequence. (D) Probability of sequential convergence increases with increase in ensemble size. (E) Probability of noise sequences at different levels of background activity and sequential input timescales. Noise sequences are more likely in networks with higher background activity and/or with mechanisms operating at slower timescales. (F) Expectation number of gap-fill sequences plotted against the expectation number of false positives (gap-fill sequences + noise sequences) for different ensemble sizes. Dot diameter scales with ensemble size. With increase in ensemble size, gap-fills constitute the major fraction of false positives.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Probability of connectivity-based perfectly ordered stimulus sequences as a function of connection probability and ensemble size for sequences receiving inputs from just two ensembles over chemical and calcium-induced calcium release (CICR) length scales. (B) Same as A, for the case of electrical length scale.
+
+Using Poisson approximation, the probability of one or more cPOSS which receive axons from M different ensembles, occurring anywhere along the dendritic length of a neuron, is
+
+$$
+P_{cPOSS}≈1−e^{−E_{cPOSS}}
+$$
 
 Thus, the probability of occurrence of sequences that receive sequential connections (PcPOSS) from each of the M ensembles is a function of the connection probability (p) between the two layers, the number of neurons in an ensemble (N), the relative window size with respect to the total dendritic arbor (Δ/L), and the number of ensembles (M).
 
-Here, we assume a specific ordering of at least one projection from each of the M ensembles. The original calculations (Bhalla, 2017) for chemical sequence selectivity were symmetric, thus the ordering could be distal-to-proximal, or vice versa. This would introduce a factor of 2 if there were no other source of symmetry breaking in the system:2pN(νcPOSS)M−1=EcPOSS
+Here, we assume a specific ordering of at least one projection from each of the M ensembles. The original calculations (Bhalla, 2017) for chemical sequence selectivity were symmetric, thus the ordering could be distal-to-proximal, or vice versa. This would introduce a factor of 2 if there were no other source of symmetry breaking in the system:
+
+$$
+2pN(ν_{cPOSS})^{M−1}=E_{cPOSS}
+$$
 
 For the purposes of further analysis, we assume that the neuronal system is not symmetric and hence the ordering remains unidirectional as in Equation 4.
 
-If one considers only activity-based perfectly ordered stimulus sequences (aPOSS) (Figure 4B) where all inputs constituting a sequence are received in a single instance of sequential stimulation of the ensembles, we get(5)PaPOSS≈1−e−EaPOSS
+If one considers only activity-based perfectly ordered stimulus sequences (aPOSS) (Figure 4B) where all inputs constituting a sequence are received in a single instance of sequential stimulation of the ensembles, we get
 
-where EaPOSS=pepN(pepNΔL)M−1, assuming that neurons in the ensemble participate with a probability of pe.
+$$
+P_{aPOSS}≈1−e^{−E_{aPOSS}}
+$$
+
+where $E_{aPOSS}=p_{e}pN(\frac{p_{e}pNΔ}{L})^{M−1}$, assuming that neurons in the ensemble participate with a probability of pe.
 
 When the additional constraint of order was imposed, much larger ensembles (~1000 neurons), as opposed to 100 neurons in the case of groups, were required to obtain sequential connectivity (Figure 4D) and sequential activation (Figure 4G) of three to five inputs in a population of ~100,000 neurons. Hence, sequence discrimination required greater redundancy in input representation in the form of larger ensembles.
 
-## Background activity can fill gaps in partial sequences to yield false positives
+#### Background activity can fill gaps in partial sequences to yield false positives
 
 We next estimated the probability of occurrence of different kinds of sequences: noise sequences which receive background inputs alone (Figure 4A), any sequences which receive either background inputs or ensemble inputs or a combination of both, and gap-fill sequences which contain one more ensemble inputs that make up a partial sequence, with the missing inputs being filled in by background activity arriving in the right location at the right time (Figure 4A) (derivations in Appendix 1).
 
@@ -139,11 +343,15 @@ The influence of various parameters on the probabilities of different kinds of s
 
 Our results indicate that sequential convergence of three to five inputs is likely with ensembles of ~1000 neurons. Low noise conditions seem more suitable to the computation as gap-fills and noise sequences are less likely. Given the uncorrelated nature of background activity, noisy inputs arriving out of order (i.e. ectopic inputs) with respect to the sequence can influence the overall selectivity for the sequence. In the next sections we examined this question in two steps. First, using chemical and electrical models, we tested the effect of ectopic inputs arriving on or nearby an ongoing sequence. Next, we simulated neuronal sequence selectivity in a network including multiple patterns of ensemble stimulation, and noise, using an abstract formulation of sequence selectivity on dendrites.
 
-## Ectopic inputs within the stimulus zone degrade selectivity for chemical sequences
+#### Ectopic inputs within the stimulus zone degrade selectivity for chemical sequences
 
 A key concern with any estimate of selectivity in a network context is the arrival of extra inputs which interfere with sequence selectivity. We used computer models to estimate the effect of ectopic inputs on sequence selectivity. In this section we describe the outcomes on selectivity mediated by chemical mechanisms. We assume that the results apply both to biochemical signaling mechanisms and to CICR, using different timescales for the respective signaling steps.
 
-We used a published sequence-selective reaction-diffusion system (Bhalla, 2017) involving a Ca-stimulated bistable-switch system with inhibitory feedback (molecule B) which slowly turns off the activated switch (molecule A) (Figure 5A). This system is highly selective for ordered/sequential stimuli in which the input arrives on successive locations spaced 3 μm apart along the simulated dendrite, at successive times (2 s intervals) as compared to scrambled input in which successive locations were not stimulated in sequential order (Figure 5B and C). We introduced ectopic input at points within as well as flanking the zone of regular sequential input (Figure 5D). We did this for three time points: at the start of the stimulus, in the middle, and at the end of the stimulus. In each case we assessed selectivity by comparing response to ordered input with response to a number of scrambled input patterns. Selectivity was calculated as(6)Selectivity=(Aseq−Amean)Amax
+We used a published sequence-selective reaction-diffusion system (Bhalla, 2017) involving a Ca-stimulated bistable-switch system with inhibitory feedback (molecule B) which slowly turns off the activated switch (molecule A) (Figure 5A). This system is highly selective for ordered/sequential stimuli in which the input arrives on successive locations spaced 3 μm apart along the simulated dendrite, at successive times (2 s intervals) as compared to scrambled input in which successive locations were not stimulated in sequential order (Figure 5B and C). We introduced ectopic input at points within as well as flanking the zone of regular sequential input (Figure 5D). We did this for three time points: at the start of the stimulus, in the middle, and at the end of the stimulus. In each case we assessed selectivity by comparing response to ordered input with response to a number of scrambled input patterns. Selectivity was calculated as
+
+$$
+Selectivity=\frac{(A_{seq}−A_{mean})}{A_{max}}
+$$
 
 where Aseq was the response to an ordered sequence, Amean was the mean of responses to all patterns, Amax was the maximum response obtained among the set of patterns tested.
 
@@ -157,9 +365,21 @@ These calculations were for a sequence length of 5. We next asked how ectopic in
 
 Overall, ectopic inputs severely degraded selectivity for short sequences but had a smaller effect on long ones. Selectivity was not strongly affected by ectopic inputs even as close as 3 μm away from the sequence zone.
 
-## Ectopic inputs at the distal end degrade selectivity to a greater extent for electrical sequences
+#### Ectopic inputs at the distal end degrade selectivity to a greater extent for electrical sequences
 
 We next performed a similar analysis for electrical sequence selectivity, based on published experimental and modeling work from Branco et al., 2010. We adapted the Branco model of dendritic sequence selectivity to test the effect of ectopic input. We replicated the observation that synaptic inputs arriving in a distal-to-proximal (inward) manner at ~2.5 μm/ms elicited a higher depolarization than those arriving in a proximal-to-distal (outward) direction, or inputs that arrived in a scrambled order (Figure 6B). The selectivity we obtained is slightly lower than observed by Branco et al., 2010, since we tested a shorter sequence of five inputs as opposed to the longer sequence of length 9 that was used by the authors. Even though a 5-length sequence elicited relatively small EPSPs (4–6 mV) at the soma, the EPSPs elicited in the dendrite were sufficiently large (20–45 mV) to engage the NMDA-mediated nonlinearity mechanism (Figure 6—figure supplement 2). As a baseline, we obtained ~8–10% selectivity for sequences of length 5–9, where inputs arrived at a spacing of ~10 μm on a 99 μm long dendrite (Figure 6D and E - reference selectivity). Selectivity was maximum at input velocities between 2 and 4 μm/ms, similar to what was observed experimentally (Branco et al., 2010) for sequences of length 5–9 (Figure 6C). Another key distinction is that we measured selectivity as defined by Equation 6 where A represented the peak potential recorded at the soma, whereas (Branco et al., 2010), referred to direction selectivity primarily as the difference between the responses to inward and outward input patterns.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig6-v1.jpg)
+
+**Figure 6.:** (A) Neuronal morphology used for examining the effect of ectopic input in an electrical model. The selected dendrite for examining selectivity has been indicated in magenta. (B) Soma response to three different input patterns containing five inputs: perfectly ordered inward sequence, outward sequence, and scrambled pattern. (C) Dependence of selectivity on stimulus speed, i.e., how fast successive inputs were delivered for a sequence of five inputs. (D) Effect of ectopic input at different stimulus locations along the dendrite, for sequence of length 5. Shaded cyan region indicates the location of the regular synaptic input. Stimuli were given at time t_start: the start of the regular stimulus sequence; t_mid: the middle of the sequence, and t_end: the end of the sequence. (E) Effect of single ectopic input as a function of sequence length. Selectivity drops when there is a single ectopic input for sequences with ≥ 5 inputs. Dots represent mean selectivity over different spatiotemporal combinations of the ectopic input and error bars represent standard deviation. Significance testing was done using Wilcoxon one-sample left-tailed test by comparing the 1-ectopic case with the reference selectivity for each sequence length (p-values have been included in Supplementary file 1e).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Same as Figure 6D. Effect of a single ectopic input on sequence selectivity at different locations along the dendrite. (B, C) The distribution of responses of different input patterns in the absence (reference) and presence of ectopic input arriving at different time points (t_start, t_mid, t_end). The inverted triangle symbol marks the response to the inward sequence. (B) is a violin plot representation, whereas (C) depicts the same information as a swarm plot.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B, C, D) Inward (A) and outward (B) somatic EPSP responses to a sequence of five inputs, in the presence of both NMDAR and AMPAR conductances. Inward (C) and outward (D) somatic EPSP responses to a sequence of five inputs, in the presence of only AMPAR conductance. Different colored traces represent stimuli arriving at different time intervals. (E, F, G, H) Similar to A, B, C, D for a sequence of nine inputs. (I, J, K, L) Similar to A, B, C, D for a sequence of nine inputs, simulated directly using the code provided by Branco et al., 2010, at https://modeldb.science/140828. (M, N, O) The difference between the inward and outward EPSP peaks in the presence and absence of NMDAR for a 5-length sequence (M), 9-length sequence (N), and 9-length sequence simulated directly from the Branco et al., 2010, code (O). (P, Q, R, S) Inward (P) and outward (Q) dendritic EPSP responses to a sequence of five inputs, in the presence of both NMDAR and AMPAR conductances. Inward (R) and outward (S) dendritic EPSP responses to a sequence of five inputs, in the presence of only AMPAR conductance. Different colored traces dendritic EPSPs recorded at different distances from the soma.
 
 We introduced ectopic synaptic input at different locations and times on the dendrite for ordered and scrambled sequences of five inputs (Figure 6D). Ectopic inputs both within and outside the zone degraded selectivity. Selectivity was most strongly disrupted by ectopic inputs arriving at the distal end. Due to the high input impedance at the distal end, ectopic inputs arriving there were not just amplifying the inward sequence response, but were boosting responses to scrambled patterns as well. The resulting narrower distribution of peak somatic EPSPs led to a further drop in selectivity (Figure 6—figure supplement 1).
 
@@ -167,7 +387,7 @@ We further tested the effect of ectopic inputs on sequences of different lengths
 
 In summary, ectopic inputs degraded electrical sequence selectivity even in the flanking regions, particularly when they were delivered closer to the distal end of the dendrite. Again, longer sequences were less perturbed than mid-length ones.
 
-## Strong selectivity for sequences at the dendrite translates to weak selectivity at the soma
+#### Strong selectivity for sequences at the dendrite translates to weak selectivity at the soma
 
 Neurons receive a wide range of inputs across their dendritic arbors. Since our previous simulations indeed showed that ectopic inputs can affect sequence selectivity, we wanted to assess how selective neurons are for sequential activity occurring on a short segment of dendrite, in the midst of all the other activity that they receive, particularly in a network scenario. In the context of a randomly connected feedforward network, can neurons receiving perfect sequential connectivity from stimulus-driven neurons (PSCSD neurons) be distinguished from other neurons based on their selectivity for sequential inputs? Since chemical sequences showed stronger reference selectivity (~0.8) when compared to the electrical case (~0.1) and owing to the low noise conditions, we chose the hippo-CICR configuration with four sequentially active ensembles to estimate sequence selectivity at the neuron level.
 
@@ -175,13 +395,21 @@ To test this, we devised an abstract formulation to calculate a neuron’s activ
 
 Neurons receiving sequential connectivity for the ordered stimulus [1,2,3,4] (PSCSD neurons) showed slightly higher activations on average relative to neurons that did not receive such connectivity (PSCSDC neurons) (Figure 7A, D, and E). PSCSD neurons also showed higher activation to sequential stimuli than to scrambled stimuli, e.g., [3,1,2,4] (compare reds in Figure 7A with B, F with G) or reverse stimuli [4,3,2,1] (compare reds in Figure 7A with C, F with H). PSCSD neurons showed slightly higher selectivity for the ordered sequence (Figure 7J) than PSCSDC neurons (Figure 7K).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig7-v1.jpg)
+
+**Figure 7.:** (A, B, C) Representative total neuronal activation across 48 trials of three neurons that receive perfect sequential connections from stimulus-driven neurons (PSCSD) (red) and three neurons that do not receive such connections from stimulus-driven neurons (PSCSDC) (gray) for three stimulus patterns: Perfect ordered activation of ensembles (A), scrambled activation (B), and activation of ensembles in the reverse order (C). Gray dots mark the occurrence of any sequence. (D, E) Representative activation values across trials for pattern #1 for the first neuron in each group: the PSCSD group shown in red (D) and the PSCSDC group shown in gray (E). Neurons are riding on high baseline activation, with small fluctuations when a complete active sequence occurs. (F, G, H) Trial-averaged neuronal activation of PSCSD vs PSCSDC neurons, for the three stimulus patterns indicated in A, B, C respectively. (I) Trial-averaged neuronal activation of neurons classified as PSCSD vs PSCSDC in the presence of background activity alone, i.e., when the ensembles are not stimulated. (J) Trial-averaged neuronal activation of 19 PSCSD neurons (depicted in different colors) in response to 24 different stimulus patterns. Pattern #1 corresponds to the ordered sequence, while pattern #24 is the reverse sequence. (K) Sequence selectivity of PSCSD and PSCSDC neurons, without (one-sided Mann-Whitney U test, p=2.18*10–14) and with background activity subtraction (one-sided Mann-Whitney U test, p=2.18*10–14).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B, C) Representative total neuronal activation across 48 trials of three neurons that receive perfect sequential connections from stimulus-driven neurons (PSCSD) (red) and three neurons that do not receive such connections from stimulus-driven neurons (PSCSDC) (gray) for three stimulus patterns: Perfect ordered activation of ensembles (A), scrambled activation (B) and activation of ensembles in the reverse order (C). Gray dots mark the occurrence of any sequence. (D, E) Representative activation values across trials for pattern #1 for the first neuron in each group: the PSCSD group shown in red (D) and the PSCSDC group shown in gray (E). Neurons are riding on high baseline activation, with small fluctuations when a complete active sequence occurs. (F, G, H) Trial-averaged neuronal activation of PSCSD vs PSCSDC neurons, for the three stimulus patterns indicated in A, B, C, respectively. (I) Trial-averaged neuronal activation of neurons classified as PSCSD vs PSCSDC in the presence of background activity alone, i.e., when the ensembles are not stimulated. (J) Trial-averaged neuronal activation of 20 PSCSD neurons (depicted in different colors) in response to 24 different stimulus patterns. Pattern #1 corresponds to the ordered sequence, while pattern #24 is the reverse sequence. (K) Sequence selectivity of PSCSD and PSCSDC neurons, without and with background activity subtraction.
+
 Despite using a model that was tuned to show high sequence selectivity (~0.8) at the dendrite, we observed weak somatic selectivity in the range of 0.05–0.0.08 (mean = 0.06, std = 0.01), when we accounted for all the inputs they received across their arbor. This was because the total activation of background activity and other non-sequential inputs over the entire dendritic tree overwhelmed the small signal elicited by the occurrence of a sequence. Specifically, each neuron receives ~160 inputs from background activity over the duration of the sequence. In the presence of ensemble activity, it receives an additional ~200 inputs scattered over the dendritic arbor. Hence, a sequence of four inputs has a relatively small effect on this high baseline, even when it is scaled by strong nonlinearities at the local dendritic zone encompassing all the inputs in the sequence. We postulated that this problem can be alleviated when the neurons are in a balanced state, where the excitation is precisely balanced with inhibition (Hennequin et al., 2017; Bhatia et al., 2019). A previous model for sequence selectivity (Bhalla, 2017) included inhibition. To nullify the effect of background activity as a proxy for the EI balanced state, we subtracted the trial-averaged activation under conditions of background activity from the trial-averaged activation value seen when ensembles are stimulated in addition to the background activity. This improved the selectivity to the range 0.13–0.22 (mean = 0.17, std = 0.02).
 
 As a comparison, we ran the same simulation for the cortex-CICR configuration with 4× denser connectivity and 10× higher background activity. Under these high noise conditions, even PSCSDC show frequent occurrences of false positive (noise/gap-fill sequences). Further, after subtracting the baseline activation levels observed with background activity alone, the PSCSD neurons showed poor selectivity in the range of –0.03 to 0.07 (mean = 0.02, std = 0.02) (Figure 7—figure supplement 1). Hence, sequence selectivity operates best under conditions of low noise.
 
 Overall, in this section we find that even strong dendritic selectivity may yield only small somatic responses which may require additional constraints such as EI balance and low background activity in order to be resolved at the soma.
 
-## A single model exhibits multiple forms of nonlinear dendritic selectivity
+#### A single model exhibits multiple forms of nonlinear dendritic selectivity
 
 We implemented all three forms of selectivity described above, in a single model which included six voltage and calcium-gated ion channels, NMDA, AMPA, and GABA receptors, and chemical signaling processes in spines and dendrites. The goal of this was threefold: To show how these nonlinear operations emerge in a mechanistically detailed model, to show that they can coexist, and to show that they are separated in timescales. We implemented a Y-branched neuron model with additional electrical compartments for the dendritic spines (Methods). This model was closely based on a published detailed chemical-electrical model (Bhalla, 2017). We stimulated this model with synaptic input corresponding to the three kinds of spatiotemporal patterns described in figures: Figure 8—figure supplement 1 (sequential synaptic activity triggering electrical sequence selectivity), Figure 8—figure supplement 2 (spatially grouped synaptic stimuli leading to local Ca4_CaM activation), and Figure 8—figure supplement 3 (sequential bursts of synaptic activity triggering chemical sequence selectivity). We found that each of these mechanisms show nonlinear selectivity with respect to both synaptic spacing and synaptic weights. Further, these forms of selectivity coexist in the composite model (Figure 8—figure supplements 1–3), separated by the timescales of the stimulus patterns (~100 ms, ~1 s, and ~10 s, respectively). Thus, mixed signaling in active nonlinear dendrites yields selectivity of the same form as we explored in simpler individual models. A more complete analysis of the effect of morphology, branching, and channel distributions deserves a separate in-depth analysis, and is outside the scope of the current study.
 
@@ -189,7 +417,7 @@ We implemented all three forms of selectivity described above, in a single model
 
 We have shown using cortical and hippocampal statistics that random feedforward connectivity, along with large enough ensembles (~100 neurons for groups and ~1000 neurons for sequences), is sufficient to lead to the convergence of groups or sequences consisting of three to five inputs. This does not require further mechanisms for activity or proximity-driven axonal targeting in a population of ~100,000 postsynaptic neurons. Such convergence provides a substrate for downstream networks to decode arbitrary input patterns.
 
-## Testing connectivity predictions using structural connectivity
+### Testing connectivity predictions using structural connectivity
 
 Considerable advances have been made in establishing structural connectivity based on EM reconstruction (Takemura et al., 2013; Lee et al., 2016a; Zheng et al., 2018), viral projection-labeling (Ugolini, 1995; Wickersham et al., 2007; Wall et al., 2010; Eastwood et al., 2019; Oh et al., 2014), and RNA barcoding (Chen et al., 2019; Sun et al., 2021) approaches. There have been numerous critiques of such approaches in understanding network computation (Bargmann and Marder, 2013; Gomez-Marin, 2021). Our analysis bridges such structural observations of connectivity and their functional implications. We focus on connectivity and activity of dendritic clusters as a potential computational motif (Pulikkottil et al., 2021). This focus is supported both by the known occurrence of such connectivity including functional readouts (Ju et al., 2020; Adoff et al., 2021; Kerlin et al., 2019; Fu et al., 2012) and by postsynaptic mechanisms for detecting such clustered activity (Gasparini and Magee, 2006; Branco et al., 2010).
 
@@ -203,7 +431,7 @@ Based on these calculations, we predict that optogenetic stimulation of combinat
 
 A similar analysis may be applicable to other neuronal circuits such as the barrel cortex and other somatosensory regions as places where the anatomy may lend itself to following up such a connectivity analysis. However, our analysis is general and applies to any circuit where computation-specific ensembles arise and connectivity is approximately random, even if they lack the convenient anatomical demarcation of ensembles provided by the olfactory bulb or somatosensory regions.
 
-## Random connectivity in conjunction with strong dendritic nonlinearities supports mixed selectivity of three to four different inputs
+### Random connectivity in conjunction with strong dendritic nonlinearities supports mixed selectivity of three to four different inputs
 
 Mixed selectivity, wherein neurons are selective to combinations of task variables as opposed to single variables, has gained a lot of interest recently (Rigotti et al., 2013; Fusi et al., 2016; Eichenbaum, 2018). Neurons showing mixed selectivity have been observed in the vibrissal cortex (Ranganathan et al., 2018), hippocampus (Stefanini et al., 2020), prefrontal cortex (Kobak et al., 2016) (based on Romo et al., 1999; Brody et al., 2003) among other brain regions. Nonlinear mixed selectivity, wherein a neuron’s activity is not a simple weighted linear combination of the different stimuli, has the potential to expand the dimensionality of neural representations (Fusi et al., 2016). Such high-dimensional representations are particularly helpful in tasks involving the mixing of multiple stimuli/variables because they enable simple downstream linear readout mechanisms to decode patterns.
 
@@ -211,7 +439,7 @@ How do neurons achieve mixed selectivity? A possible avenue is through dendritic
 
 We show that under conditions of low noise, random connectivity coupled with strong dendritic nonlinearities provides an excellent substrate for neurons to mix different sources of information. Stimulus-driven groups of three to five inputs are likely with ensembles of 100 neurons (Figure 2G) in four of the six network configurations tested. This mixing occurs over short segments of dendrites, enabling each neuron to potentially mix multiple different combinations of three to five inputs. Since partially mixed groups are more likely than fully mixed groups, decoding the identity of patterns would require further processing based on the population response of all such neurons.
 
-## Effective pattern representation through dendritic computation needs more than structural and functional connectivity
+### Effective pattern representation through dendritic computation needs more than structural and functional connectivity
 
 A key prediction of our study is that structural and even functional connectivity are necessary but not sufficient conditions to achieve postsynaptic computation in clusters and sequences. Several additional factors influence the effective selectivity for clustered/sequential computation. Our analysis of the hippocampal and cortical configurations occurring over three spatiotemporal scales (electrical, CICR, and chemical) indicates that background activity plays a pivotal role in determining the ability of the network to extract useful information from activity patterns. Hence, we found that the hippocampal configurations are better suited for grouped as well as sequential computations, as compared to the cortex (Figures 2 and 4).
 
@@ -229,27 +457,47 @@ The derivations for the equations have been included in the main text and in App
 
 For simulations shown in Figures 2B, 5, and 8, and their corresponding figure supplement, the MOOSE Simulator (Ray and Bhalla, 2008) version 4.0.0 was used. The NEURON simulator was used for Figure 6. Version numbers of all the Python packages used are available in the requirements.txt file on the GitHub repository mentioned above.
 
-## Connectivity-based simulations
+![Figure 8.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig8-v1.jpg)
+
+**Figure 8.:** (A) Model of Y-branched neuron with dendritic spines. The inset shows the morphology of the full neuron with the zoomed-in section highlighted in red. (B, D, F) Nonlinearity in electrical (Vm), Ca4-CaM, and MAPK-p responses as a function of synaptic spacing. (C, E, G) Nonlinearity in electrical (Vm), Ca4-CaM, and MAPK-p responses as a function of synaptic weight, expressed as AMPAR and NMDAR maximal conductances.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A, B) Dendritic Ca2+ concentration in response to sequential and scrambled stimuli respectively, with individual inputs separated by 10 ms. (C, D) Ca4-CaM response monitored for the above-mentioned sequential and scrambled stimuli respectively. (E, F) MAPK-P response monitored for the above-mentioned sequential and scrambled stimuli respectively. (G, H) Somatic and dendritic membrane potentials for the above-mentioned sequential and scrambled stimuli respectively.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Inputs were delivered at 10 Hz for 1 s. (A, B) Dendritic Ca2+ concentration in response to grouped and dispersed stimuli respectively. (C, D) Ca4-CaM response monitored for the above-mentioned grouped and dispersed stimuli respectively. (E, F) MAPK-P response monitored for the above-mentioned grouped and dispersed stimuli respectively. (G, H) Somatic and dendritic membrane potentials for the above-mentioned grouped and dispersed stimuli respectively.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/100664/elife-100664-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A, B) Dendritic Ca2+ concentration in response to sequential and scrambled stimuli respectively, with individual inputs as bursts at 20 Hz for 2 s, separated by 3 s. (C, D) Ca4-CaM response monitored for the above-mentioned sequential and scrambled stimuli respectively. (E, F) MAPK-P response monitored for the above-mentioned sequential and scrambled stimuli respectively. (G, H) Somatic and dendritic membrane potentials for the above-mentioned sequential and scrambled stimuli respectively.
+
+### Connectivity-based simulations
 
 For both sequences and groups, we considered a feedforward network containing a presynaptic population of Tpre neurons. Connectivity to neurons in the postsynaptic population was simulated by sampling inputs randomly from the presynaptic population onto a single long dendrite of length L, which was discretized into p*Tpre(=20,000) uniformly distributed synapses. Here, p is the connection probability between the two layers. In each run connectivity is sampled for 4000 neurons. Hence, the connectivity to the dendrite was represented as a matrix of 4000 neurons × 20,000 inputs. As simulating connectivity and examining groups/sequences for the whole postsynaptic population in a serial manner was computationally time-consuming, we parallelized the process by breaking down the simulation into 100 runs consisting of 4000 postsynaptic neurons per run. This does not affect the results since the connectivity to each neuron is sampled independently, and the presynaptic activity was kept the same across different runs by initializing the same seed for generating it. However, since we wanted neurons with different connectivity, the seed for generating connectivity was changed in each run. Hence, we sampled connectivity for a total of 400,000 postsynaptic neurons in all simulations except for Figure 7, where we sampled 1,000,000 neurons.
 
-## Generating presynaptic activity
+### Generating presynaptic activity
 
 The first N*M neurons in the presynaptic population represented the activity of M ensembles consisting of N neurons each. The remaining neurons participated in background activity, showing Poisson firing. A total of 100 trials, consisting of three trial types (connectivity-based, stimulus trials, and background-only trials as defined below), were simulated. In the connectivity-based trial, the ensemble participation probability, pe, is set to 1, and there is no background activity. A single trial of this type was run to estimate connectivity-based groups/sequences. In stimulus trials, pe was set to 0.8 and the non-ensemble neurons are considered to be firing with a rate R in a Poisson manner. Background-only trials had no ensemble activity. All neurons in background-only trials were considered to be participating in background activity with a firing rate R. With the Poisson assumption, the probability of a neuron firing in duration D due to background activity was considered to be pbg = 1–e–RD. In each trial, the activity of each presynaptic neuron was sampled from a Bernoulli distribution with p=pe or p=pbg depending on whether it was an ensemble neuron or was participating in background activity. The activity of every neuron in the presynaptic (input) population was represented as a one, minus one, or zero, where ones specified that the neuron participated in ensemble activity, minus ones represented background activity, and zeros represented no activity.
 
-## Estimating the probability of occurrence of groups
+### Estimating the probability of occurrence of groups
 
 In the case of groups, neurons in all M ensembles were co-active within duration D with a probability of pe = 0.8 in stimulus trials and pe = 1 in connectivity-based trials. For each postsynaptic neuron an input array was generated where the entry at index i represented the ensemble ID of input arriving at position i on the dendrite if the input belonged to one of the ensembles. It was –1 if the input was due to background activity, and 0 if the synapse was inactive. The input array is scanned for the occurrences of groups by sliding a window of length Z, one synapse at time. For a group of size M, if there was at least one input from each of the M ensembles within zone Z, it was considered a fully mixed group. A stimulus-driven group was defined as one that received M or more inputs in zone Z from neurons belonging to any of the ensembles. If there were M or more inputs from background activity in a window of length Z, it was considered a noise group. We defined any group as one consisting of M or more inputs, either from the ensembles or from background activity or a combination of the two, arriving in a zone of length Z. The sum of the number of groups occurring on the dendrite was calculated for each group type (true, stimulus-driven, noise, and any). The probability of a group occurring on a neuron was estimated by calculating the mean number of neurons in the postsynaptic population that received at least one group of that specific type somewhere along the dendrite.
 
-## Estimating neuronal activation for the context of grouped computation
+### Estimating neuronal activation for the context of grouped computation
 
-To explore the effect of nonlinear grouped dendritic computation on neuronal response, we applied a nonlinear function on local dendritic inputs. Using the input array generated in the previous step for detecting groups, the stretched exponential function depicted in the inset in Figure 3A was applied to the total number of inputs arriving on the dendrite within a zone of length Z. In this manner, using a rolling window approach the local dendritic activation at each location on the dendrite was estimated as the output of this nonlinearity. Finally, the net activation of the neuron was measured as the summed activation across the whole dendritic arbor of length L, normalized by the total number of synapses in the zone of length Z.Neuronalactivation=σZ∑i=0i=Lσω(∑x=ix=i+Zσδ(x))
+To explore the effect of nonlinear grouped dendritic computation on neuronal response, we applied a nonlinear function on local dendritic inputs. Using the input array generated in the previous step for detecting groups, the stretched exponential function depicted in the inset in Figure 3A was applied to the total number of inputs arriving on the dendrite within a zone of length Z. In this manner, using a rolling window approach the local dendritic activation at each location on the dendrite was estimated as the output of this nonlinearity. Finally, the net activation of the neuron was measured as the summed activation across the whole dendritic arbor of length L, normalized by the total number of synapses in the zone of length Z.
+
+$$
+Neuronalactivation=\frac{\sigma}{Z}\sumi=0i=\frac{L}{\sigma}\omega(\sumx=ix=i+\frac{Z}{\sigma}\delta(x))
+$$
 
 where ω represents the nonlinear function, δ(x)=1 if an input arrived at location x, else it is 0. L is the total dendritic length, Z the zone length, and σ the inter-synapse spacing.
 
 The nonlinearity adopted here was inspired from the cumulative distribution function of the Weibull distribution. It has the following useful properties:
 
-## Estimating the probability of occurrence of sequences
+### Estimating the probability of occurrence of sequences
 
 A key difference between groups and sequences was that the presynaptic activity was simulated for a single time step in the case of groups. However, it was simulated over MAX_M (=9) time steps which was the maximum sequence length we considered. Hence, the presynaptic activity for sequences was represented as a matrix of ones, minus ones, and zeros of dimensions Tpre × 9, where ones represented ensemble activity, minus ones represented background activity, and zeros represented no activity. In stimulus trials, at any given time step, only one ensemble was considered to be active. Neurons belonging to inactive ensembles in a particular time step were considered to participate in background activity in that time step. Although the presynaptic activity was simulated for a total of MAX_M time steps, while counting the number of sequences for a sequence of length M, only the activity from the first M time steps was used, as that was the length of the sequence we were interested in. Connectivity was simulated between the pre- and postsynaptic neurons as described earlier.
 
@@ -257,33 +505,45 @@ Using this setup, we looked for the occurrence of different kinds of sequences. 
 
 Since the pairwise relationships between inputs occurring in adjacent time steps was sufficient to capture whether two inputs followed the S to S+Δ spacing, identifying synapses that followed this rule across adjacent time steps aids in determining whether they participated in a sequence. Hence, we constructed distance matrices between synapses that followed the above spacing rule for adjacent time windows wherein the Xt->(t+1)[i,j] entry in the matrix was 1 if synapse j received input in the time window t+1, following the arrival of input at synapse i in time window t, provided synapse j occurred within a spacing of S to S+Δ of synapse i. The total number of sequences consisting of M inputs occurring between different pairs of synapses was obtained by multiplying all pairwise distance matrices and summing the entries in the product.
 
-Total number of sequences that occurred on a neuron = ∑i,j∏t=1t=M−1Xt→(t+1).
+Total number of sequences that occurred on a neuron = $\sumi,j\prodt=1t=M−1X_{t→(t+1)}$.
 
 Distance matrices were constructed separately for the cases of true, noise, and all sequences for each neuron and the number of different sequences in each case was calculated using the above equation. The probability of a sequence occurring on a neuron was estimated by calculating the mean number of neurons in the postsynaptic population that received at least one sequence of that specific type somewhere along the dendrite.
 
-## Estimating neuronal selectivity for the context of sequence computation
+### Estimating neuronal selectivity for the context of sequence computation
 
-In order to estimate neuronal selectivity for ordered sequences, we stimulated the same set of ensembles in the presynaptic population in different temporal orderings, and measured the activation of neurons in the postsynaptic population. An input matrix was constructed, wherein the M[i,j]th entry was 1 if synapse j received an input at time step i. The local activation Q, at location x on the dendrite at time t, was modeled as:Q(t,x)=γQ(t−1,x)+δ(t,x)+ψ(∑x−Sσ−Δσx−Sσ((1+γQ(t−1,x)δ(t,x))η−1))
+In order to estimate neuronal selectivity for ordered sequences, we stimulated the same set of ensembles in the presynaptic population in different temporal orderings, and measured the activation of neurons in the postsynaptic population. An input matrix was constructed, wherein the M[i,j]th entry was 1 if synapse j received an input at time step i. The local activation Q, at location x on the dendrite at time t, was modeled as:
 
-Here, the first term captures the decay of local activation in the absence of new input, i.e., γ<1. The second term represents the baseline contribution of inputs, (δ(t,x))=1 if an input arrived at location x at time t, else it is 0. The third term represents the nonlinear contribution of sequential input. Prior activation Q within a region of Δ a distance S away from location x is combined multiplicatively with input arriving at x at time t and is scaled nonlinearly using η. It is also passed ψ which keeps the sequential contribution within bounds.ψ(y)=2Vmax((11+e−cx)−0.5)
+$$
+Q(t,x)=\gammaQ(t−1,x)+\delta(t,x)+ψ(\sumx−\frac{S}{\sigma}−\frac{Δ}{\sigma}x−\frac{S}{\sigma}((1+\gammaQ(t−1,x)\delta(t,x))^{η}−1))
+$$
+
+Here, the first term captures the decay of local activation in the absence of new input, i.e., γ<1. The second term represents the baseline contribution of inputs, (δ(t,x))=1 if an input arrived at location x at time t, else it is 0. The third term represents the nonlinear contribution of sequential input. Prior activation Q within a region of Δ a distance S away from location x is combined multiplicatively with input arriving at x at time t and is scaled nonlinearly using η. It is also passed ψ which keeps the sequential contribution within bounds.
+
+$$
+ψ(y)=2V_{max}((\frac{1}{1+e^{−cx}})−0.5)
+$$
 
 For the analysis in Figure 7, the parameters for this formulation were chosen such that in the absence of any ectopic inputs, the local selectivity for the perfectly ordered sequence was ~0.8. This value is close to the value we obtained for chemical selectivity shown in Figure 5.
 
-The total activation of a neuron was obtained by integrating Q over all synapses across time to give the response Ap for each pattern p. Selectivity for the ordered sequence is measured asSelectivity=(Aseq−Amean)Amax
+The total activation of a neuron was obtained by integrating Q over all synapses across time to give the response Ap for each pattern p. Selectivity for the ordered sequence is measured as
+
+$$
+Selectivity=\frac{(A_{seq}−A_{mean})}{A_{max}}
+$$
 
 where Aseq is the response to an ordered pattern, Amean was the mean of responses to all patterns, Amax was the maximum response obtained among the set of patterns tested.
 
-## Ca2+-Calmodulin simulation
+### Ca2+-Calmodulin simulation
 
 With the help of MOOSE Simulator, we used the Ca2+-CaM system to model selectivity for grouped inputs. The model involves Ca2+ binding to Calmodulin in a series of steps resulting in activated Ca2+-Calmodulin (Figure 2a). Ca2+ stimulus was delivered in a spatially localized manner with synapses spaced at 2 μm, or in a dispersed manner, with inputs spaced at 10 μm on a 100 μm long dendrite which had a diameter of 5 μm. The dendrite was discretized into one-dimensional voxels of length 0.5 μm. The mean concentration of CaM-Ca4 in the dendrite, wherein each CaM molecule is bound to four Ca2+, was measured over time for the clustered and dispersed input cases. The parameters of the model have been provided in Supplementary file 1a and b.
 
-## Chemical simulation - bistable-switch model
+### Chemical simulation - bistable-switch model
 
 The bistable-switch model was adapted from Bhalla, 2017, which was available on ModelDB at https://modeldb.science/227318. We modified the original model to include an expression for parsing ectopic inputs. The original set of parameters from Bhalla, 2017, were retained for the bistable-switch model. Simulations were performed using MOOSE. For Figure 5B, inputs were delivered either as an ordered pattern [0, 1, 2, 3, 4] or a scrambled pattern [4, 1, 0, 3, 2] with consecutive inputs spaced at a distance of 3 μm on a 100 μm long dendrite that had a diameter of 10 μm. The time interval between inputs was 2 s. The directionality (Q score) used in Figure 5C was measured as Q=mR2, where m is the slope and R2 is the coefficient of determination of the linear regression fit of each pattern with respect to perfect ordering [0, 1, 2, 3, 4], as used in Bhalla, 2017. For Figure 5E and F, an additional set of 23 scrambled patterns obtained from different permutations of the perfectly ordered sequence were also tested. Since permutations of a sequence of length M can yield a total of M! patterns, we sub-sampled from this set to select every M!/(M–4)!th pattern to get a total of 24 patterns for M>3. Within this set the first pattern was the ordered sequence itself. For the case of M=3, only the six available patterns (=3! permutations) were used. Response was measured as the total amount of molecule A present in the dendrite summed over time. Using these responses selectivity was calculated with the help of Equation 6.
 
 In Figure 5E, the reference selectivity was estimated using the above formula for a set of patterns made of five inputs each. Further, in addition to the inputs constituting a sequence, an ectopic input was delivered. Different spatiotemporal combinations of the position and time of arrival of the ectopic input were tested. For Figure 5F, we repeated this exercise for patterns of different lengths either without any ectopic (reference), with a single ectopic, or with two ectopic inputs. A smaller set of spatiotemporal pattern combinations was used in Figure 5F to keep the computational complexity within reasonable bounds. In addition, we restricted the analysis to ectopics occurring within the zone of the sequence.
 
-## Effect of ectopic inputs on electrical sequences
+### Effect of ectopic inputs on electrical sequences
 
 We chose the model published on ModelDB (https://modeldb.science/140828) for examining the effect of ectopic inputs on the selectivity of electrical sequences (Branco et al., 2010). The base code from ModelDB was modified and run using the NEURON Simulator. The original channel kinetics parameters post the fix to NMDA_Mg_T initialization, and the dendrite used for testing were retained as is from the ModelDB GitHub repository (https://github.com/ModelDBRepository/140828, Morse, 2020). We removed the timing jitter between the inputs and positioned the inputs slightly closer (~11%) to avoid end-effects. We tested out the effects of ectopics using the passive version of the model.
 
@@ -293,7 +553,7 @@ For Figure 6D and E the base code was slightly modified to accommodate an ectopi
 
 This exercise was repeated for sequences of three to nine inputs with a subset of spatiotemporal combinations of the ectopic input. We sampled a combination of three locations (start, middle, and end) relative to the zone of the regular inputs, and three time points (start, middle, and end) for the ectopic input. For sequences of ≥ 6 inputs, 121 pattern combinations of the regular inputs were sampled since sampling all permutations of the sequence was computationally expensive.
 
-## Integrated multiscale model
+### Integrated multiscale model
 
 We integrated each of the illustrated forms of spatial and temporal pattern selectivity into a single multiscale model that incorporated both electrical and chemical signaling. The model mechanisms and parameters were identical to those used in Bhalla, 2017, with a few small changes. First, this was a reduced geometry neuron with a Y-shaped dendritic structure, on which one arm of the Y was ornamented with 80 dendritic spines spaced at 2 µm. Second, the diffusion constant for CaM and its calcium-bound forms were set to 20 µm2/s. Third, the K_DR levels at the soma were up from 250 to 360 S/m2. Fourth, the resting potential was lowered from –60 to –70 mV.
 

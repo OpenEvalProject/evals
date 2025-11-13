@@ -13,21 +13,21 @@
 
 ### Affiliations
 
-1. https://ror.org/027m9bs27 Division of Evolution, Infection and Genomics, School of Biological Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom
-2. https://ror.org/00he80998 Manchester Royal Eye Hospital, Manchester University NHS Foundation Trust Manchester United Kingdom
-3. https://ror.org/05krs5044 Department of Neuroscience, Sheffield Institute for Translational Neuroscience (SITraN), University of Sheffield Sheffield United Kingdom
-4. https://ror.org/004y8wk30 Statistical Genetics, QIMR Berghofer Medical Research Institute Brisbane Australia
-5. https://ror.org/027m9bs27 Centre for Biostatistics, Division of Population Health, Health Services Research and Primary Care, School of Health Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom
-6. https://ror.org/027m9bs27 Division of Pharmacy and Optometry, Faculty of Biology, Medicine and Health, School of Health Sciences, University of Manchester Manchester United Kingdom
-7. https://ror.org/030qtrs05 MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom
-8. https://ror.org/00he80998 Manchester Centre for Genomic Medicine, Saint Mary’s Hospital, Manchester University NHS Foundation Trust Manchester United Kingdom
-9. https://ror.org/02catss52 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus Cambridge United Kingdom
+1. Division of Evolution, Infection and Genomics, School of Biological Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+2. Manchester Royal Eye Hospital, Manchester University NHS Foundation Trust Manchester United Kingdom ([ROR:00he80998](https://ror.org/00he80998))
+3. Department of Neuroscience, Sheffield Institute for Translational Neuroscience (SITraN), University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+4. Statistical Genetics, QIMR Berghofer Medical Research Institute Brisbane Australia ([ROR:004y8wk30](https://ror.org/004y8wk30))
+5. Centre for Biostatistics, Division of Population Health, Health Services Research and Primary Care, School of Health Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+6. Division of Pharmacy and Optometry, Faculty of Biology, Medicine and Health, School of Health Sciences, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+7. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:030qtrs05](https://ror.org/030qtrs05))
+8. Manchester Centre for Genomic Medicine, Saint Mary’s Hospital, Manchester University NHS Foundation Trust Manchester United Kingdom ([ROR:00he80998](https://ror.org/00he80998))
+9. European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus Cambridge United Kingdom ([ROR:02catss52](https://ror.org/02catss52))
 
 † Corresponding author
 
 ## Abstract
 
-Age-related macular degeneration (AMD) is a leading cause of blindness in the industrialised world and is projected to affect >280 million people worldwide by 2040. Aiming to identify causal factors and potential therapeutic targets for this common condition, we designed and undertook a phenome-wide Mendelian randomisation (MR) study. We evaluated the effect of 4591 exposure traits on early AMD using univariable MR. Statistically significant results were explored further using: validation in an advanced AMD cohort; MR Bayesian model averaging (MR-BMA); and multivariable MR. Overall, 44 traits were found to be putatively causal for early AMD in univariable analysis. Serum proteins that were found to have significant relationships with AMD included S100-A5 (odds ratio [OR] = 1.07, p-value = 6.80E−06), cathepsin F (OR = 1.10, p-value = 7.16E−05), and serine palmitoyltransferase 2 (OR = 0.86, p-value = 1.00E−03). Univariable MR analysis also supported roles for complement and immune cell traits. Although numerous lipid traits were found to be significantly related to AMD, MR-BMA suggested a driving causal role for serum sphingomyelin (marginal inclusion probability [MIP] = 0.76; model-averaged causal estimate [MACE] = 0.29). The results of this MR study support several putative causal factors for AMD and highlight avenues for future translational research. This project was funded by the Wellcome Trust (224643/Z/21/Z; 200990/Z/16/Z); the University of Manchester’s Wellcome Institutional Strategic Support Fund (Wellcome ISSF) grant (204796/Z/16/Z); the UK National Institute for Health Research (NIHR) Academic Clinical Fellow and Clinical Lecturer Programmes; Retina UK and Fight for Sight (GR586); the Australian National Health and Medical Research Council (NHMRC) (1150144).
+Background:Age-related macular degeneration (AMD) is a leading cause of blindness in the industrialised world and is projected to affect >280 million people worldwide by 2040. Aiming to identify causal factors and potential therapeutic targets for this common condition, we designed and undertook a phenome-wide Mendelian randomisation (MR) study.Methods:We evaluated the effect of 4591 exposure traits on early AMD using univariable MR. Statistically significant results were explored further using: validation in an advanced AMD cohort; MR Bayesian model averaging (MR-BMA); and multivariable MR.Results:Overall, 44 traits were found to be putatively causal for early AMD in univariable analysis. Serum proteins that were found to have significant relationships with AMD included S100-A5 (odds ratio [OR] = 1.07, p-value = 6.80E−06), cathepsin F (OR = 1.10, p-value = 7.16E−05), and serine palmitoyltransferase 2 (OR = 0.86, p-value = 1.00E−03). Univariable MR analysis also supported roles for complement and immune cell traits. Although numerous lipid traits were found to be significantly related to AMD, MR-BMA suggested a driving causal role for serum sphingomyelin (marginal inclusion probability [MIP] = 0.76; model-averaged causal estimate [MACE] = 0.29).Conclusions:The results of this MR study support several putative causal factors for AMD and highlight avenues for future translational research.Funding:This project was funded by the Wellcome Trust (224643/Z/21/Z; 200990/Z/16/Z); the University of Manchester’s Wellcome Institutional Strategic Support Fund (Wellcome ISSF) grant (204796/Z/16/Z); the UK National Institute for Health Research (NIHR) Academic Clinical Fellow and Clinical Lecturer Programmes; Retina UK and Fight for Sight (GR586); the Australian National Health and Medical Research Council (NHMRC) (1150144).
 
 ## Introduction
 
@@ -41,43 +41,43 @@ In this study, we developed a systematic, broad (‘phenome-wide’) MR-based an
 
 ## Methods
 
-## Data sources
+### Data sources
 
-## Outcome data
+#### Outcome data
 
 Two AMD phenotypes were used as outcome measures in this study. The first one was early AMD. The GWAS summary statistics for this phenotype were taken from a meta-analysis by Winkler et al., 2020. This meta-analysis focussed on populations of European ancestries and used data from the ARIC, AugUR, CHS, GHS, IAMDGC, KORA S4, LIFE-Adult NICOLA, UKBB, and WHI studies (14,034 early AMD cases and 91,214 controls overall). A full description of how these studies classified participants as ‘early AMD’ can be found in the relevant publication Winkler et al., 2020; briefly, a number of approaches considering drusen size/area and the presence or absence of pigmentary abnormalities were utilised including the 3 Continent Consortium (3CC) severity scale (Klein et al., 2014), the Rotterdam Eye Study classification (Korb et al., 2014), the Beckman clinical classification (Ferris et al., 2013), and the AREDS-9 step classification scheme (Davis et al., 2005). All relevant studies used colour fundus photography for grading purposes. The second phenotype that we studied was advanced AMD. For this trait, we drew on GWAS summary statistics from a multiple trait analysis of GWAS (MTAG) study by Han et al., 2020a. This meta-analysis also focussed on individuals with European ancestries and derived data from the IAMDGC 2013 (17,181 cases and 60,074 controls) (Fritsche et al., 2013) and IAMDGC 2016 (16,144 advanced AMD cases and 17,832 controls) (Fritsche et al., 2016) studies as well as the GERA study (4017 cases and 14,984 controls) (Kvale et al., 2015). The relevant summary statistics are primarily reflective of advanced AMD, but the GERA cohort included both advanced and intermediate AMD cases. Advanced AMD was broadly defined by the presence of geographic atrophy or choroidal neovascularisation, although there was a degree of variability in the criteria used in the included studies. Notably, the MTAG approach can leverage the high genetic correlation between the input phenotypes to detect genetic associations relevant only to advanced AMD.
 
-## Exposure data
+#### Exposure data
 
 A phenome-wide screen was performed to make causal inferences on the role of a wide range of traits in early and advanced AMD. To achieve this, both published and unpublished GWAS data from the IEU open GWAS database were used; these were accessible via the TwoSampleMR programme in R (Hemani et al., 2018). All European GWAS within this database were included with the exception of imaging phenotypes and expression quantitative trait locus related data which were removed. The restriction to European datasets limits the generalisability of the results to other populations but is necessary to produce reliable findings. In the early AMD analysis, studies from the ‘ukb’ and ‘met-d’ batches were excluded as data for these studies were entirely from the UK Biobank resource and, as a result, there was extensive population overlap with the early AMD GWAS (Sudlow et al., 2015). In the advanced AMD analysis, the ‘ukb’ and ‘met-d’ batches were included. The early AMD analysis was conducted on 30/12/2021 and a total of 10,979 traits were considered for analysis. The advanced AMD analysis was conducted on 08/01/2022. On 26/01/2022 we added the newly published ‘finn-b’ (n = 2803) traits to the analysis in place of the outdated ‘finn-a’ traits (n = 1489). It was impractical to manually inspect the degree of population overlap for all traits prior to conducting the analysis; instead, the degree of overlap for all significant traits was inspected after the analysis.
 
-## Instrument selection
+### Instrument selection
 
 A statistically driven approach to instrumental variable selection was used. Typically, an arbitrary p-value threshold is set for the identification of appropriate single-nucleotide variants (SNVs); these are subsequently used as instrumental variables (referred to thereafter as instruments). A conventional p-value threshold for the selection of instruments is >5E−08. This approach however can, in some cases, be problematic. For example, when the number of instruments exceeding this threshold is small, the analysis can be underpowered or, in certain cases of unbiased screens, the results can be inflated (Boddy et al., 2022). With this in mind, the p-value for instrument selection for each trait was set to the level where >5 instruments were available for each analysis. More specifically, for each trait, the analysis would first be conducted with a p-value threshold for inclusion of 5E−8 before sequentially increasing the threshold by a factor of 10 each time until >5 eligible instruments are identified. A predefined maximum p-value of 5E−05 was used and the final range of pvalues for inclusion was 5E−06 to 5E−08.
 
-## Proxies
+### Proxies
 
 Where an exposure instrument was not present in the outcome dataset, a suitable proxy was identified (Hartwig et al., 2016). In the early AMD analysis, this was achieved by using the TwoSampleMR software with a linkage disequilibrium R2 value of ≥0.9 (Purcell et al., 2007). For the advanced AMD phenotype, data that were not derived from the TwoSampleMR resource were used and therefore the Ensembl server was utilised to identify proxies (Cunningham et al., 2022; Hemani et al., 2018).
 
-## Clumping
+### Clumping
 
 SNVs were clumped using a linkage disequilibrium R2 value of 0.001 and a genetic distance cut-off of 10,000 kilo-bases. A European reference panel was used for clumping.
 
-## Harmonisation
+### Harmonisation
 
 The effects of instruments on outcomes and exposures were harmonised to ensure that the beta values (i.e. the regression analysis estimates of effect size) were expressed per additional copy of the same allele (Hartwig et al., 2016). Palindromic alleles (i.e. alleles that are the same on the forward as on the reverse strand) with a minor allele frequency >0.42 were omitted from the analysis in order to reduce the risk of errors.
 
-## Removal of pleiotropic genetic variants and outliers
+### Removal of pleiotropic genetic variants and outliers
 
 Pleiotropic instruments and outliers were removed from the analysis by using a statistical approach that removes instruments which are found to be more significant for the outcome than for the exposure (Hemani et al., 2017). Radial MR, a simulation-based approach that detects outlying instruments, was also utilised (Bowden et al., 2018).
 
-## Causal inference
+### Causal inference
 
 MR relies on three key assumptions with regard to the instrumental variable: (1) the instrumental SNV should be associated with the exposure; (2) the SNV should not be associated with confounders; (3) the SNV should influence the outcome only through the exposure (Julian et al., 2021).
 
 MR estimation was primarily performed using a multiplicative random effects (MRE) inverse variance weighted (IVW) method. MRE IVW was selected over a fixed effects (FE) approach as it allows inclusion of heterogeneous instruments (this was certain to occur within the breadth of this screen) (Burgess et al., 2019). A range of ‘robust measures’ were used to increase the accuracy of the results and to account for violations of the above key MR assumptions (Burgess et al., 2019); these measures included weighted median (Bowden et al., 2016a), Egger (Burgess and Thompson, 2017), weighted mode (Hartwig et al., 2017), and radial MR with modified second-order weights (Bowden et al., 2018).
 
-## Further quality control
+### Further quality control
 
 The instrument strength was determined using the F-statistic (which tests the association between the instruments and the exposure) (Burgess and Thompson, 2011). F-Statistics were calculated against the final set of instruments that were included. A mean F-statistic >10 was considered sufficiently strong.
 
@@ -89,21 +89,21 @@ The I2 statistic was calculated as a measure of heterogeneity between variant-sp
 
 Leave-one-out cross-validation was performed for every analysis to determine if any particular SNV was driving the significance of the causal estimates.
 
-## Management of duplicate traits
+### Management of duplicate traits
 
 As the GWAS database that was used contained multiple different GWAS for certain traits, some exposures were analysed on multiple occasions. Where this occurred, the largest sample size study was considered to be the primary analysis. Where there were duplicate studies in the same population, the study with the largest F-statistic was used.
 
-## Identification of significant results
+### Identification of significant results
 
 Before considering an MR result to be significant, the results of a range of causal inference and quality control tests should be taken into account. Notably, it is not necessary for a study to find significance in all measures to determine a true causal relationship. MR is a low power study type and, as such, an overly conservative approach to multiple testing can be excessive (Burgess et al., 2019). However, in the context of the present study the results of the early AMD phenome-wide screen were considered significant only if they remained: significant after false discovery rate (FDR) correction in the MRE IVW; nominally significant in weighted mode and weighted median; and nominally significant throughout the leave-one-out analysis (MRE IVW) (Benjamini and Hochberg, 1995). This conservative approach was selected as a large number of phenotypes was studied and because we wanted to focus on high confidence signals.
 
 Where causal traits for early AMD were identified, the relationship between these traits and advanced AMD was studied. These two AMD classifications are phenotypically distinct but are generally part of the same disease spectrum. When traits failed to replicate as causal factors in the advanced AMD dataset, it could not be inferred that these traits are not truly causal for early AMD. However, significance in both AMD phenotypes provided support for the detected causal links and evidence that a factor plays a role across the disease spectrum.
 
-## Multivariable MR
+### Multivariable MR
 
 Multivariable MR was performed in circumstances where it was important to estimate the effect of >1 closely related (and/or potentially confounding) exposure trait (Sanderson et al., 2019). P-values for the inclusion of instruments for the exposures of interest were optimised to obtain sufficiently high (>10) conditional F-statistics for reliable analysis (Sanderson et al., 2021). With this in mind, selection for exposures began at a p-value threshold of >5E−08. Where trait’s instruments had a conditional F-statistic <10, the p-value for selection was reduced in an automated manner by factor of 10 until an F-statistic >10 was obtained. The same clumping procedure as in the univariable MR analysis was used. Adjusted Cochran’s Q-statistics were calculated, with a p-value of <0.05 indicating significant heterogeneity. Where the Cochran’s Q-statistic indicated heterogeneity, a Q-statistic minimisation procedure was used to evaluate the causal relationship; testing assumed both high (0.9) and low (0.1) levels of phenotypic correlation (Sanderson et al., 2021).
 
-## Two-sample multivariable Mendelian randomisation approach based on Bayesian model averaging (MR-BMA)
+### Two-sample multivariable Mendelian randomisation approach based on Bayesian model averaging (MR-BMA)
 
 Multivariable MR can be used to obtain effect estimates for a few (potentially related) traits. However, it cannot be directly applied when many traits need to be considered. In contrast, Mendelian randomisation Bayesian model averaging (MR-BMA), a Bayesian approach first described by Zuber et al., 2020, can search over large sets of potential risk factors to determine which are most likely to be causal.
 
@@ -113,23 +113,306 @@ MR-BMA for immune cell and complement phenotypes was additionally performed. In 
 
 For the MR-BMA analysis, the prior probability was set to 0.1 and the prior variance was set to 0.25. A stochastic search with 10,000 iterations was undertaken and empirical pvalues with 100,000 permutations were calculated.
 
-## Presentation of effect sizes
+### Presentation of effect sizes
 
 Effect sizes are presented to enable appraisal of the impact of putative risk factors. For the univariable MR analysis, these are presented as OR per 1 standard deviation of change in the exposure for continuous traits, and as beta values for binary exposure traits. This approach was selected because ORs are uninformative for binary exposure traits (Burgess and Labrecque, 2018). Furthermore, beta values are not presented by all MR authorities where an exposure variable is binary and it is often highlighted that these values are only indicative. Multivariable MR effect sizes are presented as beta value estimates irrespective of the nature of the exposure variable (given that the role of multivariable MR within this study was purely to identify confounders).
 
 MR-BMA effect sizes are presented in the form of a model-averaged causal estimate (MACE). The MACE is a conservative estimate of the direct causal effect of an exposure on an outcome averaged across models. It is noted that the primary function of MR-BMA is to highlight the probable causal trait among a number of candidate causal risk factors. Although the MR-BMA findings can be used to interpret the direction of effect, they should not be necessarily viewed as an absolute guide to magnitude (Zuber et al., 2020).
 
-## Software
+### Software
 
 ## Results
 
-## Overview
+### Overview
 
 Focussing on early AMD, univariable MR analysis was applied to a broad range of traits. Following quality control, significant results were replicated in an advanced AMD dataset and further analyses were conducted using multivariable MR and MR-BMA (Zuber et al., 2020).
 
 Overall, 4591 traits were eligible for analysis. Among these, 44 were found to be putatively causal for early AMD (Table 1, Source data 1). Most of these causal traits were serum lipoprotein concentration and compositional measures (n = 29). Other significant traits identified included immune cell phenotypes (n = 5), serum proteins (n = 6), and disease phenotypes (n = 4).
 
-## Lipoprotein metabolism is linked to AMD risk
+**Table 1.**
+ Significant results detected in a phenome-wide univariable Mendelian randomisation (MR) analysis of early age-related macular degeneration (AMD).Only traits passing the conservative quality control criteria described in the methods are listed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait name</th>
+      <th>Odds ratio</th>
+      <th>FDR-adjusted IVW p value</th>
+      <th>MRE IVW beta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rheumatoid arthritis</td>
+      <td>NA</td>
+      <td>1.51E−06</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Unswitched memory B cell % B cell</td>
+      <td>1.11</td>
+      <td>5.40E−05</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>CD62L− dendritic cell % dendritic cell</td>
+      <td>0.95</td>
+      <td>3.32E−02</td>
+      <td>−0.05</td>
+    </tr>
+    <tr>
+      <td>Effector memory CD8+ T cell absolute count</td>
+      <td>1.08</td>
+      <td>1.79E−04</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>CD25 on IgD+CD38− naive B cell</td>
+      <td>0.93</td>
+      <td>1.25E−04</td>
+      <td>−0.07</td>
+    </tr>
+    <tr>
+      <td>CD80 on plasmacytoid dendritic cell</td>
+      <td>0.96</td>
+      <td>1.63E−02</td>
+      <td>−0.04</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in IDL*</td>
+      <td>0.80</td>
+      <td>6.48E−08</td>
+      <td>−0.22</td>
+    </tr>
+    <tr>
+      <td>Free cholesterol in IDL*</td>
+      <td>0.80</td>
+      <td>5.51E−08</td>
+      <td>−0.22</td>
+    </tr>
+    <tr>
+      <td>Total lipids in IDL*</td>
+      <td>0.79</td>
+      <td>3.35E−09</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Concentration of IDL particles*</td>
+      <td>0.80</td>
+      <td>9.83E−09</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Phospholipids in IDL*</td>
+      <td>0.79</td>
+      <td>1.86E−09</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in IDL*</td>
+      <td>0.84</td>
+      <td>2.40E−07</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in large LDL*</td>
+      <td>0.83</td>
+      <td>9.85E−08</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Cholesterol esters in large VLDL*</td>
+      <td>0.83</td>
+      <td>1.41E−07</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Free cholesterol in large LDL*</td>
+      <td>0.83</td>
+      <td>7.07E−07</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Total lipids in large LDL*</td>
+      <td>0.83</td>
+      <td>1.04E−07</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Concentration of large LDL particles*</td>
+      <td>0.83</td>
+      <td>2.40E−07</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Phospholipids in large LDL*</td>
+      <td>0.83</td>
+      <td>1.33E−06</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Cholesterol esters in large VLDL*</td>
+      <td>0.82</td>
+      <td>6.55E−03</td>
+      <td>−0.20</td>
+    </tr>
+    <tr>
+      <td>18:2 linoleic acid (LA)*</td>
+      <td>0.80</td>
+      <td>2.93E−07</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in LDL*</td>
+      <td>0.82</td>
+      <td>4.46E−08</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in medium LDL*</td>
+      <td>0.82</td>
+      <td>3.64E−09</td>
+      <td>−0.20</td>
+    </tr>
+    <tr>
+      <td>Cholesterol esters in medium LDL*</td>
+      <td>0.82</td>
+      <td>5.93E−09</td>
+      <td>−0.20</td>
+    </tr>
+    <tr>
+      <td>Total lipids in medium LDL*</td>
+      <td>0.81</td>
+      <td>3.35E−09</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Concentration of medium LDL particles*</td>
+      <td>0.81</td>
+      <td>3.64E−09</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Phospholipids in medium LDL*</td>
+      <td>0.81</td>
+      <td>1.86E−09</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in small LDL*</td>
+      <td>0.81</td>
+      <td>9.85E−08</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Total lipids in small LDL*</td>
+      <td>0.81</td>
+      <td>2.65E−07</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol in small VLDL*</td>
+      <td>0.85</td>
+      <td>2.54E−02</td>
+      <td>−0.16</td>
+    </tr>
+    <tr>
+      <td>Serum total cholesterol*</td>
+      <td>0.77</td>
+      <td>3.67E−08</td>
+      <td>−0.26</td>
+    </tr>
+    <tr>
+      <td>Total phosphoglycerides*</td>
+      <td>0.81</td>
+      <td>3.93E−03</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in very large HDL*</td>
+      <td>0.87</td>
+      <td>4.37E−04</td>
+      <td>−0.14</td>
+    </tr>
+    <tr>
+      <td>Total lipids in very small VLDL*</td>
+      <td>0.84</td>
+      <td>1.97E−03</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Concentration of very small VLDL particles*</td>
+      <td>0.84</td>
+      <td>9.04E−04</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Phospholipids in very small VLDL*</td>
+      <td>0.83</td>
+      <td>3.63E−03</td>
+      <td>−0.19</td>
+    </tr>
+    <tr>
+      <td>Interferon alpha-10</td>
+      <td>1.14</td>
+      <td>1.83E−02</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Protein S100-A5</td>
+      <td>1.07</td>
+      <td>6.94E−04</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Serine palmitoyltransferase 2</td>
+      <td>0.86</td>
+      <td>3.17E−02</td>
+      <td>−0.15</td>
+    </tr>
+    <tr>
+      <td>CD59 glycoprotein</td>
+      <td>1.10</td>
+      <td>1.77E−03</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Complement factor H-related protein 5</td>
+      <td>1.09</td>
+      <td>9.30E−05</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Cathepsin F</td>
+      <td>1.10</td>
+      <td>4.44E−03</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Benign neoplasm: skin, unspecified</td>
+      <td>NA</td>
+      <td>8.23E−03</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Psychiatric diseases</td>
+      <td>NA</td>
+      <td>8.54E−05</td>
+      <td>−0.43</td>
+    </tr>
+    <tr>
+      <td>Myotonic disorders</td>
+      <td>NA</td>
+      <td>2.32E−02</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_FDR, false discovery rate; IVW, inverse variance weighted; MRE, multiplicative random effects; %, as a proportion of; NA, not applicable (as exposure traits of binary nature do not produce accurate odds ratios; beta values can be used instead to infer direction of effect but not necessarily magnitude).*These traits (trait ID group ‘met-c’ in Source data 1) had 1.9% sample overlap with the early AMD dataset, a minor degree of overlap which is unlikely to bias results; the remaining causal traits had no sample overlap with early AMD._
+
+### Lipoprotein metabolism is linked to AMD risk
 
 Univariable MR demonstrated significant causal relationships for 28 serum lipoprotein measures and 1 serum fatty acid concentration (18:2 linoleic acid) in early AMD (Table 1). These relationships were also strongly supported by the results of our advanced AMD analysis (Source data 1).
 
@@ -143,23 +426,122 @@ Serum metabolites are highly correlated traits, and the instruments for serum li
 
 **Figure 2.:** Plots (A) and (C) present Cook’s distance while plots (B) and (D) present Cochran’s Q. Outlier instruments are annotated. The Cochran’s Q is a measure which serves to identify outlier variants with respect to the fit of the linear model. The Q-statistic is used to identify heterogeneity in a meta-analysis, and to pinpoint specific variants as outliers. The contribution of variants to the overall Q-statistic is measured (defined as the weighted squared difference between the observed and predicted association with the outcome) in order to identify outliers. Cook’s distance on the other hand is utilised to identify influential observations (i.e. those variants which have a strong association with the outcome). Such variants are removed from the analysis because they may have an undue influence over variable selection, leading to models which fit that variant well but others poorly.
 
+**Table 2.**
+ Lead causal traits identified by Mendelian randomisation Bayesian model averaging (MR-BMA) of lipid-related phenotypes in early age-related macular degeneration (AMD) ranked according to their marginal inclusion probability (MIP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Risk factor (trait ID)</th>
+      <th>MIP</th>
+      <th>Average effect</th>
+      <th>Nominal p-value</th>
+      <th>FDR-adjusted p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Sphingomyelins (met-c-935)</td>
+      <td>0.76</td>
+      <td>0.30</td>
+      <td>2.40E−04</td>
+      <td>5.76E−03</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Phospholipids in very small VLDL (met-c-955)</td>
+      <td>0.63</td>
+      <td>−0.31</td>
+      <td>1.00E−05</td>
+      <td>7.20E−04</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Triglycerides in IDL (met-c-872)</td>
+      <td>0.32</td>
+      <td>−0.16</td>
+      <td>2.10E−04</td>
+      <td>5.76E−03</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Free cholesterol (met-c-858)</td>
+      <td>0.20</td>
+      <td>0.07</td>
+      <td>2.83E−03</td>
+      <td>5.09E−02</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Omega-3 fatty acids (met-c-855)</td>
+      <td>0.07</td>
+      <td>0.01</td>
+      <td>3.70E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Free cholesterol in very large HDL (met-c-944)</td>
+      <td>0.07</td>
+      <td>0.01</td>
+      <td>2.74E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Total lipids in very small VLDL (met-c-953)</td>
+      <td>0.06</td>
+      <td>−0.02</td>
+      <td>2.08E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Cholesterol esters in medium VLDL (met-c-910)</td>
+      <td>0.05</td>
+      <td>0.01</td>
+      <td>3.66E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Cholesterol esters in very large HDL (met-c-943)</td>
+      <td>0.05</td>
+      <td>0.01</td>
+      <td>4.87E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Ratio of bisallylic groups to double bonds (met-c-844)</td>
+      <td>0.05</td>
+      <td>0.01</td>
+      <td>4.41E−02</td>
+      <td>2.34E−01</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/82546/elife-82546-fig3-v1.jpg)
 
 **Figure 3.:** The studied phenotypes are ranked according to their marginal inclusion probability (MIP); four likely causal traits are highlighted.
 
 Serine palmitoyltransferase 2, an enzyme which catalyses the first committed step in sphingolipid biosynthesis, was robustly associated with early AMD. The detected effect size highlighted that genetic liability to increasing serum enzyme levels is protective of AMD (Table 1,Source data 1; OR 0.86, p-value = 1.00E−03). It is of interest that increasing serum levels of the related enzyme serine palmitoyltransferase 1 also appeared to be protective of early AMD in most measures (OR 0.94, IVW p-value = 2.00E−03, FDR-adjusted IVW p-value = 0.05, weighted median p-value = 0.05; significant throughout leave-one-out analysis). Serine palmitoyltransferase enzymes were not significantly related to the risk of advanced AMD (Source data 1).
 
-## Reinforcing a causal role for complement
+### Reinforcing a causal role for complement
 
 Increasing serum levels of the complement proteins CD59 glycoprotein (OR 1.10, IVW p-value = 2.04E−05) and complement factor H-related protein 5 (OR 1.10, IVW p-value = 7.70E−07) were found to be associated with genetic liability to early AMD and passed multiple testing correction. Whilst complement C4, complement factor B and complement factor I were also related to early AMD risk at nominal level of significance, they did not exceed the conservative criteria for causal inference imposed in this study with respect to robust measures (Source data 1). In subsequent advanced AMD analyses (Source data 1), CD59 glycoprotein remained related to disease risk (OR 1.07, IVW p-value = 0.04, weighted median p-value = 9.00E−04, MR-Egger p-value = 2.00E−03, weighted mode p-value = 7.00E−03). Complement factor I reached a nominal level of significance in the IVW measure (OR 0.95, p-value = 0.05) but did not remain significant in other tests. No other complement measures that were nominally significant for early AMD were found to be significantly related to advanced AMD.
 
 Complement traits are correlated with one another, and as such MR-BMA analysis was performed. In the initial analysis, the relationship between complement proteins was strongly suggested to be driven by complement factor H (posterior probability = 0.83, MIP = 1.00, MACE = −0.68). However, rs2274700 (CFHR3, Cook’s distance 26.26–55.24 and Cochran’s Q 0.87–2.12 across models) and rs10824796 (MBL2, Cook’s distance 0.13–9.93 and Cochran’s Q 0.87–22.12 across models) were identified as outlier instruments and therefore warranted removal from subsequent analyses. Rs2274700, a genetic variant known to be associated with AMD risk (Liao et al., 2016), represented the only instrument strongly associated with complement factor H in the MR-BMA analysis and, as such, its removal precluded an informative high-throughput analysis of the complement cascade. Whilst it is clear that there is a causal relationship between complement and AMD, it is not possible to comment with precision about the specific complement-related molecule driving this.
 
-## Other immune traits have mixed protective and causal effects in AMD
+### Other immune traits have mixed protective and causal effects in AMD
 
 Our screen identified other serum immune traits with potential causal roles in early AMD, with several of these related to dendritic cell populations. These traits were: Unswitched memory B cell as a proportion of B cells (OR = 1.11, p-value = 4E−07); CD62L− dendritic cell as a proportion of dendritic cells (OR = 0.95, p-value = 1.22E−03); Effector memory CD8+ T cell absolute count (OR = 0.95, p-value = 1.56E−06); CD80 on plasmacytoid dendritic cell (OR = 0.96, p-value = 4.20E−04); and Interferon alpha 10 (OR = 1.14, p-value = 5.38E−04). Notably, numerous immune cell traits were also found to be significantly associated with advanced AMD (Source data 1 ). As with lipids, these traits are highly correlated and it is not possible to confidently pinpoint which immune cell trait is truly causal in a univariable analysis due to potential overlap in terms of genetic instruments. MR-BMA (using data from a GWAS by Orrù et al., 2020) for the above immune traits was not possible due to the presence of too few genetic variants strongly instrumenting across the exposure variables which, in turn, led to a failure to construct a meaningful model. For this reason, it was not possible to determine which of these specific factors are driving the casual relationship between immune cell traits and AMD (though dendritic cell traits dominate the univariable analysis).
 
-## Disease phenotypes are related to AMD risk
+### Disease phenotypes are related to AMD risk
 
 There are four disease phenotypes/groups which were found to be significant at a level which satisfy the criteria for causal inference defined in this study. These traits are rheumatoid arthritis (beta = 0.08, IVW p-value = 9.86E−09), psychiatric diseases (beta = −0.43, IVW p-value = 6.88E−07), ‘benign neoplasm: skin, unspecified’ (beta = 0.07, IVW p-value = 1.76E−04), and myotonic disorders (beta = −0.003, IVW p-value = 7.49E−04). None of these disorders were significant in advanced AMD. The very broad and non-specific definitions encapsulated in the GWAS of benign skin neoplasms, psychiatric disease, and myotonic disorder make it challenging to apply further analyses within the scope of this study, but these may be interesting phenotypes for exploration in future studies.
 
@@ -167,7 +549,7 @@ In univariable MR, rheumatoid arthritis was identified to be causally related to
 
 With respect to the relationship between AMD and psychiatric disease, no reverse causation was identified (p = 0.31). More specific psychiatric traits which could be analysed were not significantly related to genetic liability to early AMD (Source data 1). An extensive range of psychiatric disorders were also explored in the advanced AMD dataset but no significant relationships were detected (Source data 1). Due to the broad nature of this trait, and the negative results for all disorders explored, it was not possible to discern the driving signal behind the significant result for psychiatric disease. It appears probable that psychiatric disease is a false-positive result given that it lacks: the supporting evidence of biological plausibility; validation in an advanced AMD dataset; or supportive evidence through significance of other similar traits in the early AMD analysis.
 
-## Serum cathepsin F and S100 proteins have a causal role in AMD
+### Serum cathepsin F and S100 proteins have a causal role in AMD
 
 In addition to the four previously mentioned molecules (Table 1: Interferon alpha-10, CD59 glycoprotein, complement factor H-related protein and serine palmitoyltransferase 2) a further two serum proteins were identified to have likely causal effects. These are S100-A5 (OR 1.07, IVW p-value = 6.80E−06) and cathepsin F (OR = 1.10, IVW p-value = 7.16E−05).
 

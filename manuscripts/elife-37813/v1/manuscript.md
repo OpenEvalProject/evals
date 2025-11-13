@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.37813.001 Tauopathies have diverse presentation, progression, and neuropathology. They are linked to tau prion strains, self-replicating assemblies of unique quaternary conformation, whose origin is unknown. Strains can be propagated indefinitely in cultured cells, and induce unique patterns of transmissible neuropathology upon inoculation into mice. DS9 and DS10 cell lines propagate different synthetic strains that derive from recombinant tau. We previously observed that tau monomer adopts two conformational states: one that is inert (M i ) and one that is seed-competent (M s ) ( Mirbaha et al., 2018 ). We have now found that M s itself is comprised of multiple stable ensembles that encode unique strains. DS9 monomer inoculated into naive cells encoded only DS9, whereas DS10 monomer encoded multiple sub-strains. Sub-strains each induced distinct pathology upon inoculation into a tauopathy mouse model (PS19). M s purified from an Alzeimer's disease brain encoded a single strain. Conversely, M s from a corticobasal degeneration brain encoded three sub-strains, in which monomer from any one re-established all three upon inoculation into cells. Seed competent tau monomer thus adopts multiple, stable seed-competent conformations, each of which encodes a limited number of strains. This provides insight into the emergence of distinct tauopathies, and may improve diagnosis and therapy.
+Tauopathies have diverse presentation, progression, and neuropathology. They are linked to tau prion strains, self-replicating assemblies of unique quaternary conformation, whose origin is unknown. Strains can be propagated indefinitely in cultured cells, and induce unique patterns of transmissible neuropathology upon inoculation into mice. DS9 and DS10 cell lines propagate different synthetic strains that derive from recombinant tau. We previously observed that tau monomer adopts two conformational states: one that is inert (Mi) and one that is seed-competent (Ms) (Mirbaha et al., 2018). We have now found that Ms itself is comprised of multiple stable ensembles that encode unique strains. DS9 monomer inoculated into naive cells encoded only DS9, whereas DS10 monomer encoded multiple sub-strains. Sub-strains each induced distinct pathology upon inoculation into a tauopathy mouse model (PS19). Ms purified from an Alzeimer's disease brain encoded a single strain. Conversely, Ms from a corticobasal degeneration brain encoded three sub-strains, in which monomer from any one re-established all three upon inoculation into cells. Seed competent tau monomer thus adopts multiple, stable seed-competent conformations, each of which encodes a limited number of strains. This provides insight into the emergence of distinct tauopathies, and may improve diagnosis and therapy.
 
 ## Introduction
 
@@ -33,31 +33,223 @@ The existence of Ms as a unique conformational ensemble raised the question of w
 
 ## Results
 
-## Tau monomer dictates strain identity
+### Tau monomer dictates strain identity
 
 We previously characterized in detail two tau strains, DS9 and DS10 (Sanders et al., 2014). We hypothesized that if Ms acts as an ‘unrestricted’ building block, monomer derived from either DS9 or DS10 would produce a diversity of strains. We isolated total lysate or monomer from DS9 by using size exclusion chromatography (SEC) or by passage through a 100kD size-exclusion filter, methods that we have previously determined to faithfully exclude larger assemblies (Mirbaha et al., 2018). We then inoculated DS1 cells, which lack any aggregates, and used FACS to isolate single aggregate-containing cells, with which we established monoclonal lines for further analysis. We initially used epifluorescence microscopy to characterize the various colonies for inclusion morphology, which serves as a rough surrogate for strain identity (Sanders et al., 2014; Kaufman et al., 2016). For Ms derived from DS9, we observed no variation—each of 52 clones exhibited the speckled conformation previously observed for DS9 (Sanders et al., 2014) (Figure 1A). We isolated six typical ‘sub-strains,’ termed DS9.1–9.6, for further characterization in detail. In addition, we passed the lysate through a 100 kD size exclusion filter and used it to inoculate DS1 cells, creating 31 monoclonal lines. All were indistinguishable from DS9 by confocal microscopy. Inoculation using unfractionated DS9 lysate, or lysate of any of the sub-strains produced a single population of clones, all identical to DS9 in morphology (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/37813/elife-37813-fig1-v1.jpg)
 
-**Figure 1.:** s from DS9 retains strain identity.(A) Clones isolated from DS9 monomer (9.1–9.6) show morphological characteristics similar to DS9. (B) Limited proteolysis digests all the monomer from DS1, but reveals similar protease resistant band patterns for DS9 and DS9.1–9.6. Both DS9 and its sub-strains exhibited a band around 10 kD, and a second band between 20 and 25 kD. (C) Sedimentation analysis was performed on DS1, 9, and its substrains DS9.1–9.6. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. DS1 had tau in the supernatant, whereas DS9 and its substrains had tau predominantly in the pellet. The band represents RD-YFP at ~45 kD. (D) DS9 and sub-strains had similar seeding activities upon transduction into P301S FRET biosensor cells. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.10.7554/eLife.37813.003Figure 1—source data 1.Figure 1D.
+**Figure 1.:** (A) Clones isolated from DS9 monomer (9.1–9.6) show morphological characteristics similar to DS9. (B) Limited proteolysis digests all the monomer from DS1, but reveals similar protease resistant band patterns for DS9 and DS9.1–9.6. Both DS9 and its sub-strains exhibited a band around 10 kD, and a second band between 20 and 25 kD. (C) Sedimentation analysis was performed on DS1, 9, and its substrains DS9.1–9.6. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. DS1 had tau in the supernatant, whereas DS9 and its substrains had tau predominantly in the pellet. The band represents RD-YFP at ~45 kD. (D) DS9 and sub-strains had similar seeding activities upon transduction into P301S FRET biosensor cells. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.
 
 We have previously used proteolysis of insoluble tau to discriminate distinct strains. This reveals variation in the protease resistant ‘cores’ of tau aggregates (Sanders et al., 2014; Kaufman et al., 2016). DS1 had no protease resistant species. DS9 and DS9.1–9.6 exhibited very similar limited proteolysis patterns, with bands at 10 kD, and between 20 and 25 kD (Figure 1B). Next we used sedimentation analysis to differentiate the clones by subjecting the clarified lysate to high-speed centrifugation to separate the soluble from insoluble species. DS9 and DS9.1–9.6 exhibited similar fractionation patterns, with most tau being insoluble (Figure 1C). Finally, we used an established biosensor cell line that expresses tau RD (P301S) fused to cyan and yellow fluorescent proteins (RD-CFP/YFP) to monitor the ability of strains to trigger intracellular aggregation. DS9 and DS9.1–9.6 had identical maximal seeding, with variation in the dose responses within ~1 log of concentration, which is typical for independent isolates of the same strain (Figure 1D). Thus, monomer from DS9 faithfully encoded six identical DS9 sub-strains.
 
-## DS10 monomer encodes multiple sub-strains
+### DS10 monomer encodes multiple sub-strains
 
 Extending our studies with DS9, we isolated total lysate or Ms from DS10, transduced DS1 cells, and isolated multiple monoclonal inclusion-bearing lines. As we have previously reported, inoculation with unfractionated DS10 lysate produced a single population of clones, all identical to DS10 (Sanders et al., 2014). However, DS10 monomer created five distinct sub-strains, easily discerned by inclusion morphology: 36% were ordered (and indistinguishable from the parent strain) termed DS10.1; 21% were speckled, termed DS10.2; 13% were thread-like, termed DS10.3; 9% were disorganized, termed DS10.4 (Figure 2A, Table 1). Approximately 21% of cells formed a fifth strain, DS10.5, that rapidly ‘sectored,’ that is, lost its inclusions, and thus could not be further characterized. All strain images were analyzed by a blinded reviewer (D.R.W.). DS10 monomer was also isolated using a 100 kD cutoff filter. After transduction into DS1 cells we isolated monoclonal lines, and obtained similar strain diversity (Table 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/37813/elife-37813-fig2-v1.jpg)
 
-**Figure 2.:** s from DS10 creates multiple sub-strains.(A) Clones isolated from DS10 monomer give rise to cells with multiple morphologies. Four sub-strains were discriminated based on multiple tests. (B) Limited proteolysis of RD-YFP using pronase differentiated the protease resistant cores in the sub-strains. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (C) Sedimentation analysis of RD-YFP was performed on DS1, 10, and DS10.1–4. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. DS1 had RD-YFP in the supernatant; DS10, 10.1 and 10.2 had most RD-YFP in the pellet; DS10.3 and DS10.4 had mixed RD-YFP solubility. (D) DS10 sub-strains had distinct seeding activities upon transduction into P301S FRET biosensor cells. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.10.7554/eLife.37813.005Figure 2—source data 1.Figure 2D.
+**Figure 2.:** (A) Clones isolated from DS10 monomer give rise to cells with multiple morphologies. Four sub-strains were discriminated based on multiple tests. (B) Limited proteolysis of RD-YFP using pronase differentiated the protease resistant cores in the sub-strains. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (C) Sedimentation analysis of RD-YFP was performed on DS1, 10, and DS10.1–4. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. DS1 had RD-YFP in the supernatant; DS10, 10.1 and 10.2 had most RD-YFP in the pellet; DS10.3 and DS10.4 had mixed RD-YFP solubility. (D) DS10 sub-strains had distinct seeding activities upon transduction into P301S FRET biosensor cells. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.
+
+**Table 1.**
+ Sub-strains generated from DS9 monomer isolated by SEC or cutoff filter.Tau RD-YFP monomer (Ms) was isolated from DS9 either by SEC or 100kD cutoff filter and inoculated into DS1 to create sub-strains. Multiple clones were isolated and characterized by morphology. Columns indicate the number of clones identified (n) and the percentage this represents of the total (%). A single sub-strain was observed regardless of purification method. Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ms</th>
+      <th colspan="2">SEC</th>
+      <th colspan="2">100kD filter</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9.1</td>
+      <td>52</td>
+      <td>100</td>
+      <td>31</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Sub-strains generated from DS10 monomer isolated by SEC or cutoff filter.Tau RD-YFP monomer (Ms) was isolated from DS10 by either by SEC or 100kD cutoff filter and inoculated into DS1 to create sub-strains. Multiple clones were isolated and characterized by morphology. Columns indicate the number of clones identified (n) and the percentage this represents of the total (%). Isolation of Ms from DS10 by SEC or 100 kD cutoff filter each enabled a similar proportion of sub-strains to form. Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ms</th>
+      <th colspan="2">SEC</th>
+      <th colspan="2">100kD filter</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.1</td>
+      <td>19</td>
+      <td>36</td>
+      <td>12</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>10.2</td>
+      <td>11</td>
+      <td>21</td>
+      <td>3</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>10.3</td>
+      <td>7</td>
+      <td>13</td>
+      <td>5</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>10.4</td>
+      <td>5</td>
+      <td>9</td>
+      <td>3</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>10.5 (sectored)</td>
+      <td>11</td>
+      <td>21</td>
+      <td>4</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>53</td>
+      <td>100</td>
+      <td>27</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
 
 We used limited proteolysis to compare the four monoclonal DS10 sub-strains (Figure 2B). DS10 and DS10.1 exhibited similar protease resistant doublets around 10 kD and a relatively light band around 20 kD. DS10.2 exhibited bands at 10 kD and between 20 and 25 kD. DS10.3 and 10.4 exhibited a band at 15 kD. DS10.3 exhibited a band at 10 kD, which was mostly absent in DS10.4. Sedimentation analysis helped further discriminate the sub-strains: DS10, DS10.1 and DS10.2 primarily contained an insoluble fraction and a small soluble fraction. By contrast, DS10.3 and DS10.4 exhibited mixed solubility, with about half soluble and insoluble tau (Figure 2C). DS10 sub-strains also had very different seeding efficiency that spanned >2 log orders of concentration (Figure 2D). DS10 and DS10.1 had almost identical seeding profiles, with an EC50 of 300 ng for clarified lysate. DS10.2 had an EC50 of 10 ng. DS10.3 had a much weaker seeding activity with an EC50 at >10 μg (unable to be determined accurately), and reduced maximal seeding efficiency at ~50%. DS10.4 had an EC50 of 100 ng. Based on multiple measures, we concluded that unlike DS9, DS10 monomer encoded distinct sub-strains, each with unique morphological and biochemical characteristics.
 
-## Conformational ensembles of Ms
+### Conformational ensembles of Ms
 
 Sub-strains of DS10 could arise because multiple distinct monomers co-exist, each constrained to form only a single sub-strain. In this case, Ms from each sub-strain would be predicted to recreate only that sub-strain (as for DS9.1–9.6). Alternatively, Ms derived from DS10 might exist as a conformationally restricted ensemble, with relatively low kinetic and energetic barriers between various states that become ‘locked in’ upon higher-order assembly. In this case, monomer from any sub-strain would establish all of the others upon re-inoculation. To test these ideas, we isolated monomer from each of the DS10 sub-strains, re-introduced them into DS1, and isolated n = 47–51 monoclonal cell lines bearing inclusions from each inoculation. We analyzed each of these using blinded scoring of intracellular inclusion morphology. In 49 sub-strains derived from DS10.1 monomer, 45 appeared identical to DS10.1, except for four that formed DS10.5 (sectored) (Table 3). This suggested Ms from DS10.1 was relatively restricted in its conformation. We obtained very different results with the other DS10 sub-strains. Ms derived from each of DS10.2, DS10.3, or DS10.4 gave rise to all sub-strains, including DS10.1, with predomination of the original sub-strain (Table 3). This indicated that Ms from these DS10 substrains existed as conformational ensemble. Taken together, our experiments revealed that while multimeric assemblies from total lysate exhibit consistent strain behavior in all cases, that is, faithful replication, tau monomer (Ms) is less constrained. While Ms derived from DS9 was completely restricted to forming a single strain, and Ms from DS10.1 predominantly encoded one sub-strain, others (DS10.2, DS10.3, DS10.4) adopted a defined set of strains in which Ms from any could give rise to all five.
 
-## Sub-strains induce distinct pathologies in PS19 mice
+**Table 3.**
+ Quantification of second generation of sub-strains obtained from DS10.Ms from each sub-strain of DS10 (10.1–10.5) was inoculated into DS1, and clones of the induced strains were characterized. DS10.1 largely produced a single predominant strain identical to DS10.1 (92%) and another strain DS10.5 that rapidly sectored (8%). DS10.2–10.4 each recreated all other strains. Columns indicate the number (n) of clones characterized and the percentage of the total (%) in each case. Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="13">Induced clone</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">10.1</th>
+      <th colspan="2">10.2</th>
+      <th colspan="2">10.3</th>
+      <th colspan="2">10.4</th>
+      <th colspan="3">10.5 (sectored)</th>
+      <th colspan="2">Total</th>
+    </tr>
+    <tr>
+      <th>Ms</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th colspan="2">%</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.1</td>
+      <td>45</td>
+      <td>92</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td colspan="2">0</td>
+      <td>4</td>
+      <td>8</td>
+      <td>49</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>10.2</td>
+      <td>3</td>
+      <td>6</td>
+      <td>37</td>
+      <td>79</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td colspan="2">4</td>
+      <td>3</td>
+      <td>7</td>
+      <td>47</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>10.3</td>
+      <td>11</td>
+      <td>21</td>
+      <td>3</td>
+      <td>6</td>
+      <td>21</td>
+      <td>42</td>
+      <td>4</td>
+      <td colspan="2">8</td>
+      <td>12</td>
+      <td>23</td>
+      <td>51</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>10.4</td>
+      <td>17</td>
+      <td>35</td>
+      <td>3</td>
+      <td>7</td>
+      <td>13</td>
+      <td>27</td>
+      <td>12</td>
+      <td colspan="2">24</td>
+      <td>3</td>
+      <td>7</td>
+      <td>48</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sub-strains induce distinct pathologies in PS19 mice
 
 Bona fide tau prion strains create distinct and predictable pathologies in vivo. We previously used inoculation into PS19 mice that express full-length (1N,4R) human tau with a P301S mutation (Yoshiyama et al., 2007) to study the pathology of strains (Sanders et al., 2014; Kaufman et al., 2016). To test the activities of sub-strains, we inoculated n = 5 replicates of DS9, DS9.1, DS10, DS10.1–10.4 into the left hippocampus of PS19 mice at 3mos. Mice were age- and gender-matched to the extent possible, and derived from multiple independent litters. 4 weeks after inoculation, we analyzed the brains of the mice by staining with AT8 antibody, which recognizes p-Ser202 and p-Thr205 of tau (Figure 3).
 
@@ -67,23 +259,214 @@ Bona fide tau prion strains create distinct and predictable pathologies in vivo.
 
 Mice inoculated with DS1 controls exhibited no tau pathology in the hippocampus, CA1, or CA3. DS9, DS10, and all sub-strains induced different types of pathology. DS9 and DS9.1 induced tangle-like inclusions throughout CA1 and CA3 in patterns that were indistinguishable from one another, consistent with prior observations (Sanders et al., 2014). As expected, DS10 induced AT8-positive puncta in mossy fiber tracts of the hippocampus with strong staining patterns in the cell body, and AT8-positive puncta in CA3. DS10.1 induced pathology similar to DS10 in both CA1 and CA3. DS10.2 induced tangle-like inclusions throughout CA1, but with little or no pathology in CA3. DS10.3 had very low seeding efficiency and induced pathology only in CA1. DS10.4 also had low seeding and induced pathology only in CA1. A blinded reviewer (O.M.K.) analyzed slides derived from all inoculations (n = 40), and classified them by group. DS9 and DS9.1 were indistinguishable. DS10.1–10.3 were all easily distinguished, with a single error for DS10.4, which was misclassified in one instance (Table 4).
 
-## Distinct Ms conformations in AD and CBD brains
+**Table 4.**
+ Analysis of AT8 signal in hippocampi of injected mice.PS19 mice were inoculated with sub-strains from DS9 and DS10 at 3 months into the hippocampus (n = 5 each). After 8 weeks, coronal sections of hippocampus were analyzed by a blinded reviewer educated on different sections as to the characteristics of each clone. One error occurred in analysis of 40 brains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain inoculated</th>
+      <th>Blinded analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DS1</td>
+      <td>DS1 were correctly classified.</td>
+    </tr>
+    <tr>
+      <td>DS9</td>
+      <td rowspan="2">DS9 and DS9.1 were indistinguishable.</td>
+    </tr>
+    <tr>
+      <td>DS9.1</td>
+    </tr>
+    <tr>
+      <td>DS10</td>
+      <td rowspan="2">DS10 and DS10.1 were indistinguishable.</td>
+    </tr>
+    <tr>
+      <td>DS10.1</td>
+    </tr>
+    <tr>
+      <td>DS10.2</td>
+      <td>DS10.2 were correctly classified</td>
+    </tr>
+    <tr>
+      <td>DS10.3</td>
+      <td>DS10.3 were correctly classified.</td>
+    </tr>
+    <tr>
+      <td>DS10.4</td>
+      <td>DS10.4 correctly classified 4/5 times, 1/5 incorrectly classified as DS10.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Distinct Ms conformations in AD and CBD brains
 
 The preceding studies with DS9 and DS10 were based on tau RD-YFP fusions, and left uncertain whether tau monomer derived from human tauopathies would similarly encode strains. We have previously determined strain composition in AD and CBD patient brains to be quite distinct (Sanders et al., 2014). Thus we used a representative brain from each as a source of tau monomer. We gently lysed the brains by dounce homogenization, a method previously determined not to liberate Ms from pre-existing fibrils (Mirbaha et al., 2018), and used an anti-tau antibody directed at the N-terminus (HJ8.5) to purify full-length tau and resolve monomer by SEC. We inoculated DS1 cells with total lysate from an AD patient and recovered a single clonal morphology, AD(t). We also used AD Ms isolated by SEC to inoculate DS1 cells and recovered an identical clonal morphology, AD(m). As we had previously observed (Sanders et al., 2014), each clone exhibited a single ‘speckled’ conformation, indicating that we had most likely propagated a single strain (Figure 4A). We also isolated AD Ms by passage through a 100 kD cutoff filter and inoculated DS1 cells, isolating 23 monoclonal lines. All clones had similar morphological characteristics to AD(t) and AD(m) (Table 5). To better characterize the tau prions, we performed limited proteolysis on the lysates from AD(t) and AD(m) clones. This revealed identical digestion patterns (Figure 4B). We also compared them using sedimentation analysis. Strains derived from AD(m) or AD(t) consisted of both soluble and insoluble protein (Figure 4C). Seeding analyses from the cell lines also revealed very similar potencies (Figure 4D). We concluded that tau Ms from the AD patient encoded the same single strain as total lysate.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/37813/elife-37813-fig4-v1.jpg)
 
-**Figure 4.:** s derived from an AD patient produces a single strain.(A) Clonal cell lines derived from AD-derived total lysate, AD(t), and Ms, AD(m) exhibited identical inclusion morphologies. (B) RD-YFP derived from AD(t) and AD(m) had similar solubility profiles. RD-YFP in DS1 was only present in the supernatant fraction. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. (C) Limited proteolysis of RD-YFP aggregates from AD(t) and AD(m) clonal lines produced identical band patterns. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (D) Lysates of AD(t) and AD(m) clonal lines had similar seeding profiles. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.10.7554/eLife.37813.012Figure 4—source data 1.Figure 4D.
+**Figure 4.:** (A) Clonal cell lines derived from AD-derived total lysate, AD(t), and Ms, AD(m) exhibited identical inclusion morphologies. (B) RD-YFP derived from AD(t) and AD(m) had similar solubility profiles. RD-YFP in DS1 was only present in the supernatant fraction. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. (C) Limited proteolysis of RD-YFP aggregates from AD(t) and AD(m) clonal lines produced identical band patterns. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (D) Lysates of AD(t) and AD(m) clonal lines had similar seeding profiles. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.
+
+**Table 5.**
+ Sub-strains generated from AD monomer isolated by SEC or cutoff filter.Tau monomer (Ms) from AD brain was purified by immunoprecipitation followed by SEC or passage through a 100kD cutoff filter, prior to inoculation into DS1 cells. Columns indicate the number of clones identified (n) and the percentage this represents of the total (%). A single AD sub-strain was identified regardless of purification method. Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ms</th>
+      <th colspan="2">SEC</th>
+      <th colspan="2">100kD filter</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AD(m)</td>
+      <td>47</td>
+      <td>100</td>
+      <td>23</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
 
 Next we evaluated strains derived from total lysate or monomer from a CBD patient. Upon transduction of the DS1 cells, the total CBD lysate produced two distinct strains: CBD1(t) and CBD2(t). Ms from the CBD brain created two strains identical to those derived from total lysate CBD1(m) and CBD2(m), plus a third strain, CBD3(m) (Figure 5A, Table 6). CBD Ms was also isolated using 100 kD cutoff filter and transduced into the DS1 line to produce distinct clones. Based on morphology, the proportion of sub-strains was similar to that obtained using gel filtration (Table 6). Whether derived from total lysate or monomer, tau from clones CBD1(t) and CBD1(m), or CBD2(t) and CBD2(m) exhibited similar sedimentation properties (Figure 5B), proteolysis patterns (Figure 5C), and seeding activities (Figure 5D). CBD3(m) exhibited a unique morphology, with ordered aggregates (Figure 5A), distinct sedimentation (Figure 5B), proteolysis pattern (Figure 5C), and higher seeding activity (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37813/elife-37813-fig5-v1.jpg)
 
-**Figure 5.:** s derived from a CBD patient produces three distinct strains.(A) Clonal lines derived from CBD total lysate had two distinct inclusion patterns, CBD1(t), CBD2(t). Clonal lines derived from CBD Ms had two patterns identical to those from the total lysate, CBD1(m), CBD2(m), and a third, CBD3(m). (B) RD-YFP from CBD1(t) and CBD1(m) had mixed solubility. In CBD2(t) and CBD2(m), most RD-YFP was present in the supernatant. CBD3(m) had mixed solubility with most RD-YFP in the insoluble fraction. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (C) RD-YFP aggregates from CBD1(t) and CBD1(m) exhibited similar patterns of proteolysis, with protease-resistant bands around 10–15 kD and a strong band around 15 kD. Proteolysis of RD-YFP from CBD2(t) and CBD2(m) only produced a strong band around 15 kD. CBD3(m) had a unique proteolysis pattern with a band around 10–15 kD. (D) Lysates from clones CBD1(t), CBD1(m), CBD2(t) and CBD2(m) had similar seeding profiles, while lysate from CBD3(m) had more potent seeding activity. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.10.7554/eLife.37813.015Figure 5—source data 1.Figure 5D.
+**Figure 5.:** (A) Clonal lines derived from CBD total lysate had two distinct inclusion patterns, CBD1(t), CBD2(t). Clonal lines derived from CBD Ms had two patterns identical to those from the total lysate, CBD1(m), CBD2(m), and a third, CBD3(m). (B) RD-YFP from CBD1(t) and CBD1(m) had mixed solubility. In CBD2(t) and CBD2(m), most RD-YFP was present in the supernatant. CBD3(m) had mixed solubility with most RD-YFP in the insoluble fraction. Total (T) lysate was resolved into supernatant (S) and pellet (P) fractions by ultracentrifugation. Supernatant to pellet ratio loaded on the gel was 1:1 for all samples. Lane 1 represents DS1, which is comprised of RD-YFP monomer that is completely digested. (C) RD-YFP aggregates from CBD1(t) and CBD1(m) exhibited similar patterns of proteolysis, with protease-resistant bands around 10–15 kD and a strong band around 15 kD. Proteolysis of RD-YFP from CBD2(t) and CBD2(m) only produced a strong band around 15 kD. CBD3(m) had a unique proteolysis pattern with a band around 10–15 kD. (D) Lysates from clones CBD1(t), CBD1(m), CBD2(t) and CBD2(m) had similar seeding profiles, while lysate from CBD3(m) had more potent seeding activity. Images are representative of thousands similar cells. Western blots are representative of at least three replicates. Seeding assays represent an individual experiment in which each data point represents a sample analyzed in triplicate. Error bars represent the standard deviation.
+
+**Table 6.**
+ Sub-strains generated from CBD monomer isolated by SEC or cutoff filter.Ms from CBD brain was purified by immunoprecipitation followed by SEC or passage through a 100kD cutoff filter, prior to inoculation into DS1 cells. CBD sub-strains, CBD1-3(m), were quantified. Isolation of Ms from CBD brain by SEC or cutoff filter enabled a similar proportion of sub-strains to form. Columns indicate the number of clones identified (n) and the percentage this represents of the total (%). Ms created similar strain patterns regardless of filtration method. Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ms</th>
+      <th colspan="2">SEC</th>
+      <th colspan="2">100kD filter</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBD1(m)</td>
+      <td>20</td>
+      <td>36</td>
+      <td>4</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>CBD2(m)</td>
+      <td>18</td>
+      <td>33</td>
+      <td>7</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>CBD3(m)</td>
+      <td>17</td>
+      <td>31</td>
+      <td>7</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>55</td>
+      <td>100</td>
+      <td>18</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
 
 We concluded that Ms from CBD could be comprised of three independent seed-competent monomers, or that it could occupy a limited conformational ensemble before forming larger assemblies of a particular structure. In the first case, we predicted that Ms from each of the three CBD sub-strains would only produce the parent strain. Conversely, if a conformational ensemble could form three different strains, then Ms from any one of the CBD sub-strains would recreate the entire panel. We isolated monomer from the three CBD sub-strains, re-inoculated DS1, and evaluated the resultant clones by morphology. Ms derived from each sub-strain CBD1 preferentially encoded the parent strain, but also the other two (Table 7). These data indicated that Ms derived from CBD represented a conformational ensemble (analogous to DS10) that encoded a defined subset of strains. Conversely, Ms derived from the AD patient had a more restricted conformational state that only encoded a single strain.
 
-## Discussion
+**Table 7.**
+ Quantification of strains derived from CBD-derived sub-strains.Monomeric RD-YFP derived from each CBD sub-strain was used to inoculate DS1. The resultant clones were then characterized by morphology. Ms from each sub-strain recreated all three, with a preference for the strain of origin. Columns indicate the number of clones identified (n) and the percentage this represents of the total (%). Classification of cell morphology was performed using blinded analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Induced clone</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">CBD1</th>
+      <th colspan="2">CBD2</th>
+      <th colspan="2">CBD3</th>
+      <th colspan="2">Total</th>
+    </tr>
+    <tr>
+      <th>Input Ms</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+      <th>n</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBD1(m)</td>
+      <td>30</td>
+      <td>57</td>
+      <td>7</td>
+      <td>15</td>
+      <td>10</td>
+      <td>20</td>
+      <td>47</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CBD2(m)</td>
+      <td>9</td>
+      <td>17</td>
+      <td>29</td>
+      <td>62</td>
+      <td>10</td>
+      <td>20</td>
+      <td>48</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CBD3(m)</td>
+      <td>13</td>
+      <td>26</td>
+      <td>11</td>
+      <td>23</td>
+      <td>31</td>
+      <td>60</td>
+      <td>55</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Discussion
 
 We have previously defined two conformational ensembles of tau: Mi, which is inert, and Ms, which is competent for self-assembly and seeding (Mirbaha et al., 2018). It has been unclear whether monomeric tau encodes strain information, or if this is determined by multimeric assemblies. We now conclude that Ms represents an ensemble of structures, in which each encodes a restricted set of strains. Ms derived from artificially derived strains (DS9 and DS10) replicated the parent strain exclusively (DS9), or a series of sub-strains, one of which closely resembled the parent strain (DS10). These sub-strains each produced unique pathology upon inoculation into the PS19 tauopathy mouse model. Turning to patient-derived samples, we observed that, like total brain lysate, Ms from an AD patient encoded a single strain. Conversely, while total lysate from a CBD patient encoded two strains, Ms derived from CBD lysate encoded these two strains, plus a third. Thus we hypothesize that tau, despite being unstructured by classical biophysical measures, can adopt multiple, stable conformational ensembles in its seed-competent form, Ms. These may restrict subsequent assembly to a single fibril conformation (as for Ms derived from DS9 and AD), or may enable formation of a limited number of assembly structures that constitute individual strains (as for Ms derived from DS10 and CBD).
 
@@ -101,66 +484,188 @@ In summary, we present a model to explain how diverse aggregate structures form 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>tau RD (LM)-YFP</td>
+      <td>PMID: 24857020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>DS1; DS9; DS10</td>
+      <td>PMID: 24857020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Tau RD P301S FRET Biosensor</td>
+      <td>PMID: 25261551, ATCC</td>
+      <td>ATCC CRL-3275, RRID:CVCL_DA04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>DS9.1; DS10.1; DS10.2; DS10.3,DS10.4, AD(t); AD(m); CBD1(t); CBD2(t); CBD1(m); CBD2(m); CBD3(m)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>These are cell lines created from tau seeds (total lysate and/or seed-competent monomer) that derived either from clonal cell lines DS9 and DS10, or Alzheimer’s or Corticobasal Degeneration disease brain samples that were inoculated into DS1 cell lines, as described in the Materials and Methods, and Results sections.</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>TauA (polyclonal against QTAP…KIGSTENL)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Antibodies used at dilution indicated in Materials and Methods section (1:1000).</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>Anti-GFP (polyclonal)</td>
+      <td>Rockland Inc.</td>
+      <td>Rockland antibodies: 600-401-215, RRID:AB_828167</td>
+      <td>Antibodies used at dilution indicated in Materials and Methods section (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse)</td>
+      <td>HJ 9.3 (monoclonal against tau RD)</td>
+      <td>PMID:24075978, PMID:29566794</td>
+      <td>RRID:AB_2721235</td>
+      <td>Antibodies used at dilution indicated in Materials and Methods section (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (donkey)</td>
+      <td>ECL Anti-Rabbit</td>
+      <td>GE Lifesciences</td>
+      <td>NA9340V,</td>
+      <td>Antibodies used at dilution indicated in Materials and Methods section (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (sheep)</td>
+      <td>ECL Anti-Mouse</td>
+      <td>GE Lifesciences</td>
+      <td>NA931V</td>
+      <td>Antibodies used at dilution indicated in Materials and Methods section (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Amersham ECL Western Blotting reagent</td>
+      <td>GE Lifesciences</td>
+      <td>GE Lifesciences: RPN2236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>100 kD Spin filter</td>
+      <td>Corning Spin-X UF</td>
+      <td>Corning: 431481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Agarose beads</td>
+      <td>Pierce protein A/G Plus</td>
+      <td>Thermo fisher: 20423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad software LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FlowJo</td>
+      <td>FlowJo LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermofisher</td>
+      <td>Thermo fisher: 11668019</td>
+      <td>transfection reagent</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 All cells were grown in Dulbecco’s Modified Eagle’s medium (Gibco) supplemented with 10% fetal bovine serum (HyClone), 1% penicillin/streptomycin (Gibco), and 1% Glutamax (Gibco). Cells were maintained at 37°C, 5% CO2, in a humidified incubator.
 
-## Liposome-mediated transduction of tau seeds
+### Liposome-mediated transduction of tau seeds
 
 Stable cell lines were plated at a density of 30,000 cells per well in a 96-well plate. After 18 hr, at 60% confluency, cells were transduced with protein seeds. Transduction complexes were made by combining [11.75 µL Opti-MEM (Gibco) +0.75 µL Lipofectamine 2000 (Invitrogen) with cell lysate at a total volume of 25 µL per well. Liposome complexes were incubated at room temperature for 20 min before adding to cells. Cells were incubated with transduction complexes for 48 hr.
 
-## Monoclonal cell isolation
+### Monoclonal cell isolation
 
 DS1 cells were treated with clarified lysate and monomer using liposome-mediated transduction of tau seeds. After 48 hr, the cells were harvested and re-suspended in flow buffer (1XHBSS, 1%FBS, 1 mM EDTA). Aggregate-containing cells were identified based on their particularly bright YFP signal using FACS Aria II SORP cell sorter. Cells were sorted individually into a 96-well plate and grown until confluency to derive clonal lines. Lines stably maintaining aggregates were moved to larger plates and amplified for further studies.
 
-## Western blot
+### Western blot
 
 Cell pellets were thawed on ice, lysed by triturating in PBS containing 0.05% Triton-X and a cOmplete mini protease inhibitor tablet (Roche), and clarified by 5 min sequential centrifugations at 500 x g and 1000 x g. Total protein concentration of the clarified lysate was measured using Bradford Assay (Bio-Rad). Clarified lysate was mixed with 2X SDS buffer (final SDS concentration 4%) and run on NuPAGE 4–12% Bis-Tris Gel at 150V for ~75 min. The gel was then transferred onto Immobilon P membrane for 1 hr at 20V using a semi-dry transfer apparatus (Bio-Rad). The membrane was then blocked with 5% non-fat dry milk in TBST for 1 hr before primary rabbit anti-tau monoclonal antibody (Tau A, which was raised against QTAP…KIGSTENL) was added at 1:1000 and placed in a shaker overnight at 4°C. The membrane was then washed four times with TBST at 10 min intervals. The membrane was then re-probed with goat anti-rabbit secondary antibody for 1.5 hr at room temperature. The membrane was then washed four times with TBST. Finally, the membrane was exposed to ECL Prime western blot detection kit (GE Lifesciences) for 2 min and imaged with a Syngene digital imager. Images are representative of at least three similar replicates.
 
-## Sonication and size exclusion chromatography
+### Sonication and size exclusion chromatography
 
 Clarified lysate was sonicated using a Q700 Sonicator (QSonica) at a power of 100–110 watt (Amplitude 50) at 4°C for 1 hr. Samples were then centrifuged at 21000 x g for 10 min and 1 mL of supernatant was loaded into a Superdex 200 Increase 10/300 GL column (GE Healthcare) and eluted in PBS buffer at 4°C. After measuring the protein content of each fraction with a Bradford assay using a plate reader (Tecan M1000), we aliquoted and stored samples at −80°C until further use. Each aliquot was thawed immediately before use. The molecular weight/radius of gyration of proteins in each fraction was estimated by running gel filtration standards (Bio-Rad): Thyroglobulin (bovine) 670 kD/845 nm; γ-globulin (bovine) 158 kD/5.29 nm; ovalbumin (chicken) 44 kD/3.05 nm; myoglobin (horse) 17 kD/2.04 nm; and vitamin B121.35 kD/0.85 nm.
 
-## Size cutoff filtration
+### Size cutoff filtration
 
 Monomer fraction from SEC was passed through a 100 kDa MWCO filter (Corning) as instructed by the manufacturer (centrifuged at 15,000 x g for 15 mins at 4°C). Filtered material was immediately collected and protein concentration was determined. The filtrate was aliquoted and frozen in −80°C.
 
-## Monomer isolation
+### Monomer isolation
 
 Clarified lysate was ultra-centrifuged at 186,000 x g for 1 hr, followed by washing the pellet with 1 mL PBS. The sample is ultra-centrifuged again at 186,000 x g for 30 mins and the supernatant aspirated. The pellet is re-suspended in 200 μL PBS. The pellet is then sonicated using a Q700 Sonicator (QSonica) at a power of 100–110 watt (Amplitude 50) at 4°C for 1 hr. Samples were then centrifuged at 21,000 x g for 10 min and 1 mL of supernatant was loaded into a Superdex 200 Increase 10/300 GL column (GE Healthcare) and eluted in PBS buffer at 4°C. The eluate was quantified using BSA assay. The monomer fraction showed no seeding in the absence of lipofectamine but showed seeding in its presence (data not shown).
 
-## FRET flow cytometry
+### FRET flow cytometry
 
 Tau P301S Biosensor cells (RRID:CVCL_DA04) were harvested with 0.05% trypsin and fixed in 2% paraformaldehyde (Electron Microscopy Services) for 10 min, then resuspended in flow cytometry buffer. The MACSQuant VYB (Miltenyi) was used to perform FRET flow cytometry. To measure CFP and FRET, cells were excited with a 405 nm laser, and fluorescence was captured with 405/50 nm and 525/50 nm filters, respectively. To measure YFP, cells were excited with a 488 nm laser and fluorescence was detected with a 525/50 nm filter. To quantify FRET, we used a gating strategy similar to that previously described (Holmes et al., 2014). Percent FRET positivity was used to determine the fraction of cells containing aggregates. For each experiment,~10,000 cells were analyzed in triplicate. Analysis was performed using FlowJo v10 software (Treestar). Error bars represent the standard deviation.
 
-## Protease digestion
+### Protease digestion
 
 Pronase (Roche) was diluted in PBS to a final concentration of 1 mg/mL and single-use aliquots were stored at −80°C. Clarified cell lysate was prepared as previously described and protein concentrations were normalized to 4 μg/μL, unless otherwise noted. 40 μg (10 μL) of cell lysate was added to 10 μL of pronase at a concentration of 60 μg/mL (diluted in PBS) for a final volume of 20 μL and a final pronase concentration of 30 μg/mL. Cell lysates were digested at 37°C for 90 min. Reactions were quenched by addition of 20 μL of 2x sample buffer (final SDS concentration of 4%) and boiling for 5 min. 15 μL of each sample was loaded onto a 10% Bis-Tris NuPAGE gel (Novex by Life Technologies) and run at 150 V for 65 min. Protein was transferred to Immobilon P (Millipore) using a semi-dry transfer apparatus (Bio-Rad) and membranes were probed for tau RD as described above.
 
-## Sedimentation analysis
+### Sedimentation analysis
 
 Clarified cell lysate was prepared as described previously. 10% of the lysate was set aside as the total fraction; the rest was centrifuged at 186,000 x g for 1 hr. The supernatant was placed aside and the pellet was washed with 1 mL PBS prior to ultracentrifugation at 186,000 x g for 30 min. The supernatant/wash from this step was aspirated and the pellet was re-suspended by boiling in RIPA buffer with 4% SDS and 100 mM DTT. Bradford assay (Bio-Rad) with BSA standard curve was used to normalize all protein concentrations. 1 μg of total protein was loaded per well on a 4–12% Bis-Tris gel (Invitrogen). For all samples 1:1 ratio of supernatant to pellet was used. Gels were analyzed by western blot.
 
-## Confocal microscopy
+### Confocal microscopy
 
 96-well plates (Costar 3603) were coated with 1X Poly D-Lysine (PDL), incubated overnight at 37°C. Plates were then washed with PBS and cells were plated and grown in DMEM media for 24 hr. Media was then removed and replaced with 4% PFA for 10 min. PFA was removed and washed 2x with PBS followed by staining with DAPI for 10 min in 0.05% Triton-X. Cells were washed and stored in PBS. The plate was imaged with In Cell Analyzer 6000 at 40x resolution with the assistance of the UTSW high-throughput screening core facility. Images were coded and a blinded counter scored aggregate morphology, blinded to conditions.
 
-## Cell lysate production for animal inoculation experiments
+### Cell lysate production for animal inoculation experiments
 
 The cell lines were grown in 10 cm dishes until 80% confluency. The cells were then washed, trypsinized, resuspended in media and centrifuged at 1000 x g. Cell pellets were washed with PBS. The pellet was then stored at −80°C. Prior to analysis, pellets were thawed on ice and re-suspended in 1x PBS with cOmplete protease inhibitors (Roche) and sonicated using an Omni-Ruptor 250 probe sonicator at 40% power for 35 × 3 s cycles. The probe sonicator was washed with 10% bleach, 100% ethanol and ddH2O between cell lines. Strains were subsequently centrifuged at 1000 x g, normalized to 7 µg/μL by Bradford assay (Bio-Rad) and stored in aliquots at −80°C.
 
-## Animal maintenance
+### Animal maintenance
 
 We obtained transgenic mice that express 4R1N P301S human tau under the murine prion promoter (Yoshiyama et al., 2007) from Jackson Laboratory, and maintained them on a B6C3 background. Transgenic mice and wild-type littermates were housed under a 12 hr light/dark cycle, and were provided food and water ad libitum. All experiments involving animals were approved by the University of Texas Southwestern Medical Center institutional animal care and use committee.
 
-## Inoculation of mouse brain
+### Inoculation of mouse brain
 
 P301S mice were anesthetized with isoflurane and kept at 37°C throughout the inoculation. Mice were injected with separate 10 μL gas-tight Hamilton syringes for each strain at a rate of 0.2 μL/min. Animals were inoculated with 10 μg (1.428 μL) of cell lysate in the left hippocampus (from bregma: −2.5 mm posterior, −2 mm lateral, −1.8 mm ventral). Animals were then allowed to recover and monitored for 40 days prior to tissue collection.
 
-## Animal tissue collection
+### Animal tissue collection
 
 P301S or WT mice were anesthetized with isoflurane and perfused with chilled PBS + 0.03% heparin. Brains were post-fixed in 4% paraformaldehyde overnight at 4°C and then placed in 30% sucrose in PBS until further use.
 
-## Histology
+### Histology
 
 Brains were sectioned at 50 μm using a freezing microtome. Slices were first blocked for 1 hr with 5% non-fat dry milk in TBS with 0.25% Triton X-100 (blocking buffer). For DAB staining, brain slices were incubated with biotinylated AT8 antibody (1:500, Thermo Scientific) overnight in blocking buffer at 4°C. Slices were subsequently incubated with the VECTASTAIN Elite ABC Kit (Vector Labs) in TBS prepared according to the manufacturer’s protocol for 30 min, followed by DAB development using the DAB Peroxidase Substrate Kit with the optional nickel addition (Vector Labs). Slices were imaged using the Olympus Nanozoomer 2.0-HT (Hamamatsu).

@@ -34,7 +34,7 @@ We then build a probabilistic model to predict authors’ contribution to public
 
 ## Results
 
-## Contribution statements and predicting variables
+### Contribution statements and predicting variables
 
 Five types of contribution statements are identified in the contribution dataset: wrote the paper (WR), conceived and designed the experiments (CE), performed the experiments (PE), analyzed the data (AD), and contributed reagents/materials/analysis tools (CT). The number of contributions (NC), that is, the sum by paper of the contributorships each author reports, is also considered. These contributions are assumed to be related with author order (Milojević et al., 2018; Mongeon et al., 2017; Sauermann and Haeussler, 2017), with first and last positions in author order reflecting leadership (Chinchilla-Rodríguez et al., 2019), as per the recommendations of the International Committee of Medical Journal Editors, 2015. Figure 1 relates career stage and author order with contribution role. We define four career stages: junior (< 5 years since first publication), early-career (≥ 5 and < 15 years since first publication), mid-career (≥ 15 and < 30 years since first publication) and late-career (≥ 30 years since first publication). These four stages are defined in consistency with other classifications of career stages in the literature (Laudel and Gläser, 2008; Milojević et al., 2018; European Commission, 2016).
 
@@ -48,7 +48,15 @@ Bibliometric indicators are employed as predictors of contributorship. Two types
 
 Figure 2A depicts the coefficients of a mixed correlation matrix of the contributorship and bibliometric data, while Figure 2B illustrates the Bayesian network used for predicting the contribution of a researcher for a given publication. The highest correlations within types of contributorship are between writing the manuscript and conceiving and designing the experiments (0.71), while the rest of contributorship variables exhibit low correlations. In the case of bibliometric variables, there is a moderate positive correlation between number of countries and institutions (0.66), author position and number of authors (0.68), and number of authors and number of institutions (0.72). A strong positive monotone relation between the number of contributions and either writing the manuscript (0.85), conceiving the experiments (0.82) or analyzing the data (0.79) is observed. The number of contributions seem therefore to be associated with those type of contributions. Weak monotone negative relationships are suggested by correlations between the number of contributorships and bibliometric variables. Negative correlations are observed between performing the experiments and position in authors list, years since publication and average number of publications. Weak to moderate negative correlations are observed between contributorship variables and the number of countries and institutions, author’s position, and number of authors of a publication.
 
-## Bayesian network model for predicting contributorship
+![Figure 2.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig2-v2.jpg)
+
+**Figure 2.:** Contribution variables are in green, bibliometric variables are in blue. Bibliometric variables: PO (author’s position); AU (number of authors); DT (document type); CO (number of countries); IN (number of institutions); YE (years since first publication); PU (average number of publications). Contribution variables: WR (wrote the paper); AD (analyzed the data); CE (conceived and designed the experiments); CT (contributed reagents/materials/analysis tools); PE (performed the experiments); NC (number of contributions).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Contribution variables are in green, bibliometric variables are in blue. Red arcs correspond to white listed relations, that is, those arcs which, although identified by the algorithm, have modified directionality to allow predictions on contributorship based on bibliometric information.
+
+### Bayesian network model for predicting contributorship
 
 We model our dataset using a Bayesian network (BN) to be able to predict contribution roles of scientists for their publications based on the bibliometric information of the given publications. The aim here is to expand our original dataset to the complete publication history of the 347,136 researchers from the Medical and Life Sciences who had published at least one paper in our PLOS seed dataset. A BN is a probabilistic graphical tool used to model multivariate data (Nielsen and Jensen, 2009). The variables are denoted as nodes in the network, whereas the arcs denote influences between variables, typically quantified as dependencies. BN accounts not only for dependencies between the predictor variables and variables of interest, but also for dependencies between predictor variables. This characteristic, along with the forthright graphical representation, makes BNs an attractive choice to model dependent multivariate data.
 
@@ -62,11 +70,17 @@ When distinguishing by career stage (Figure 3), the densities clearly depict dif
 
 **Figure 3.:** Distributions are aggregated by career stage. (A) Probability distributions for the contributorship Wrote the manuscript. (B) Probability distributions for the contributorship Analyzed the data. (C) Probability distributions for the contributorship Conceived and designed the experiments. (D) Probability distributions for the contributorship Contributed with tools. (E) Probability distributions for the contributorship Performed the experiments. (F) Probability distributions for estimated Number of contributions of an author. Red color refers to scientists’ junior stage, green to early-career stage, blue to mid-career stage and purple to late-career stage.
 
-## Profiling scientists using robust archetypal analysis
+### Profiling scientists using robust archetypal analysis
 
 We aggregate the predicted contributorships at the individual level and by career stage to profile scientists based on their contributorship patterns. To avoid the effect of contributorship outliers, we aggregate researchers’ contributorships by choosing the median predicted contributorship of publications for each career stage. We perform a robust archetypal analysis (RAA) to identify types of scientists based on their contributorships (Eugster and Leisch, 2011). Archetypes accentuate distinct features of scientists based on contribution data. Robust archetypal analysis identifies ‘‘prototypical types’’ of the multivariate aggregated contributorship dataset, correcting for outlier effects in the data. Each of these ‘‘prototypical types’’ or archetypes is represented as a convex combination of researchers in the aggregated contributorship dataset and, in turn, each researcher is well described by a convex combination of these archetypes.
 
 We consider archetypes of scientists at each career stage. A residual sum of squares (RSS) analysis for different archetypes reveals that using two archetypes for the junior and late-career stages, and three for early-career and mid-career stages results in significantly smaller RSS. Figure 4—figure supplement 1 reveals the screeplots of RSS per career stage, where the elbow criterion supports the choice of number of archetypes per career stage. The influence of contributorships within each archetype is captured by corresponding coefficient values. Coefficients of each archetype (Leading, Specialized and Supporting) per career stage are presented in Figure 4. Low values indicate low prevalence of corresponding type of contributorship, whereas high values indicate a high contribution to the archetype.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig4-v2.jpg)
+
+**Figure 4.:** Two archetypes are identified in the junior stage (Specialized and Supporting), three have been identified for the early- and mid-career (Leader, Specialized and Supporting) and two have been identified for the late-career stage (Leader and Supporting). Uncertainty intervals of coefficients are shown in brackets. Color grades reflect the value of the parameters. Contributions statements: WR, wrote the manuscript; AD, analyzed data; CE, conceived and designed the experiments; PE, performed the experiments; CT, contributed with tools.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig4-figsupp1-v2.jpg)
 
 A first notable observation is that differences in contributions are remarkably small for certain archetypes throughout career stages. Given that the archetypes at each stage have common characteristics, we maintain the same profile naming across stages. Three archetypes are identified. The Leader is characterized by high coefficient values for all contributions, except for PE, indicating a high prevalence of each contribution role, and especially on WR and CE. The Specialized archetype is characterized by high coefficient values for PE and AD. A trend analysis for this archetype indicates a shift between PE and AD contributions. The third archetype is referred to as the Supporting, and is characterized by generally low values for all contributorships. This is the least discriminatory archetype.
 
@@ -74,27 +88,59 @@ At the junior stage, we observe two archetypes: Specialized and Supporting. Both
 
 Uncertainty of the coefficient values has been accounted for to illustrate the robustness of the obtained archetypes, per career stage. The uncertainty intervals display small variations around the initial coefficients, which confirms the robustness of the archetypes. The large differences as well as similarities in contributions are well preserved by the uncertainty intervals.
 
-## Career paths, productivity and citation impact
+### Career paths, productivity and citation impact
 
 Similarities between the archetypes are identified at each career stage, demonstrating the stability of the classification by scientific age (Figure 4). In turn, each scientist can be represented as a weighted combination of the archetypes. For a given scientist, the weights, or α scores, corresponding to each archetype determine the researchers’ assignment to one of the two or three archetypes. Here, we assign researchers to archetypes based on the highest weight. The assignment can be done for each career stage, which naturally leads to a career path.
 
 Figure 5A presents the assignment of researchers to the archetypes and their evolution over the four career stages, using the maximum coefficients and the median aggregation method. However, we observe some patterns by archetype. Out of the 222,295 scientists included in the dataset, 27,714 reached the late-career stage. We observe that there is little attrition, regardless of the archetype to which scientists belong, between the junior and early-career stage (93% for junior Specialized and 83% for Supporting authors). At the early-career stage, when the Leader archetype emerges, the advantage of those exhibiting a Leader profile becomes evident: 84% of scientists who belong to the Leader archetype in their early-career reach the next career stage, while 30% and 16% of Specialized and Supporting scientists progress to mid-career stage respectively. The cost is even higher from mid-career to late-career, with 37% of Leader profile scientists, and only 1% and 2% of Specialized and Supporting authors reaching the last career stage.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sankey diagrams indicating the number of scientists by archetype at each career stage and transitions from one stage to the next, including changes on researchers’ archetype. (B) Productivity boxplots, by archetype and career stage. This is calculated based on the cumulative number of publications scientists had authored at each given stage. (C) Share of highly cited publications boxplots by archetype and career stage. Highly cited publications are defined as those which are among the 10% most highly cited publications in their field and year of publication. Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Colored areas provide descriptive interpretation. Yellow indicates a small effect size, green indicates medium and purple indicates a large effect size. size.
+
 Furthermore, 98% of scientists reaching the late-career stage exhibited a Specialized archetype in their junior stage, and 67% of those reaching this last career stage have consistently displayed a Leader profile in early- and mid-career stages. Shifts across archetypes appear more likely at earlier career stages, as well as from the Leader archetype to the other two archetypes (but not vice versa). Even though most of the scientists reaching the late-career stage belong to the Leader archetype in their mid-career stage, 66% of late-career researchers are in a Supporting role, although they remain involved in more than one contributorship type.
 
 When comparing archetypes by number of publications (Figure 5B), we observe almost no differences in publication rates in the junior stage. Nonetheless, differences emerge for later career stages. Except for the late-career stage, where Supporting scientists are the most productive, the Leader archetype exhibits higher productivity, followed by Supporting. Specialized scientists appear to be much less productive than scientists assigned to the other two archetypes in the early- and mid-career stages. This pattern is also observed for Specialized, in the case of citation impact. However, differences in terms of share of highly cited publications between the Leader and the Supporting archetypes are much smaller, with the latter exhibiting higher values.
 
-We investigated whether the differences are statistically significant using Wilcoxon rank sum test (Wilcoxon, 1945). All group comparisons between archetypes within each career stage reveal statistically significant differences. Furthermore, effect sizes to evaluate the strength of the differences are reported in Figure 5—figure supplement 1, along with their confidence intervals. We observe large effect sizes on the differences in productivity for early- and mid-career stages, a medium effect size for late-career and a small effect-size for junior stage. Despite the low p-values (all below 2.2⁢E-16) and the apparent difference in median share of highly cited publications between the specialized archetype and the other two archetypes of the mid-career stage, we observe that the effect sizes are small across all career stages.
+We investigated whether the differences are statistically significant using Wilcoxon rank sum test (Wilcoxon, 1945). All group comparisons between archetypes within each career stage reveal statistically significant differences. Furthermore, effect sizes to evaluate the strength of the differences are reported in Figure 5—figure supplement 1, along with their confidence intervals. We observe large effect sizes on the differences in productivity for early- and mid-career stages, a medium effect size for late-career and a small effect-size for junior stage. Despite the low p-values (all below $2.2⁢E-16$) and the apparent difference in median share of highly cited publications between the specialized archetype and the other two archetypes of the mid-career stage, we observe that the effect sizes are small across all career stages.
 
-## Archetypes and gender
+### Archetypes and gender
 
 Figure 6 shows that scientists are unevenly distributed by gender in each archetype. Note that scientists from different generations are included in the analysis, therefore, caution should be expressed in drawing any conclusion on the number of scientists by gender that reach the late-career stage. The share of women who reach the late-career stage is affected by the generational diversity of scientists and hence we make comparisons only within career stage. We observe a gender disparity especially in the early- and mid- career stages. The share of men is higher for the Specialized archetype at the junior stage, and for the Leader archetype at the early- and mid-career stages. The second most frequent is the Specialized archetype, with few men in the Supporting archetype, except for the late-career stage. Women are less likely to appear as the Leader archetype in the early- and mid-career stages. Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile. The gender distribution becomes more balanced again at the late-career stage, where 35% of men and 31% of women are in the Leader archetype. In summary, women appear to group within the Specialized archetype in the early-career stage, and show similar distributions to that of men at the other career stages, although the shares of the Leader archetype are consistently lower to that of men. These differences on the distribution of scientists by archetype and gender and how they might affect their trajectory is made more evident in Figure 6—figure supplement 1 and 2.
 
-We employed two-proportion z tests, based on Pearson’s chi-squared test statistic, to investigate whether the differences in proportions within career stage are statistically significant. A 95% confidence interval of the differences in proportion allowed us to compute confidence intervals around the estimated percentages. As expected, the confidence intervals along with the very small p-values (all below 2.2⁢E-16) indicate that the differences are statistically significant, hence it is unlikely that the observed differences to have occurred by chance. Effect sizes have been computed using Cohen, 2013. We observe a medium effect size on differences by gender for Leader and Specialized profiles at the early- and mid-career stages (Figure 6—figure supplement 3).
+![Figure 6.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-v2.jpg)
 
-## Archetypes and author position
+**Figure 6.:** Top-left panel refers to the junior stage in which only two archetypes are present: specialized and supporting. Top-right refers to the early-career stage. Bottom-left refers to the mid-career stage. Bottom-right refers to the late-career stage, again here only two archetypes are observed: leader and supporting. Blue refers to women scientists and yellow to men scientists.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype. .
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Colored areas provide descriptive interpretation. Yellow indicates small effect size, green indicates medium and purple indicates large effect. Values for all archetypes in junior and late-career stage are overlapping.
+
+We employed two-proportion z tests, based on Pearson’s chi-squared test statistic, to investigate whether the differences in proportions within career stage are statistically significant. A 95% confidence interval of the differences in proportion allowed us to compute confidence intervals around the estimated percentages. As expected, the confidence intervals along with the very small p-values (all below $2.2⁢E-16$) indicate that the differences are statistically significant, hence it is unlikely that the observed differences to have occurred by chance. Effect sizes have been computed using Cohen, 2013. We observe a medium effect size on differences by gender for Leader and Specialized profiles at the early- and mid-career stages (Figure 6—figure supplement 3).
+
+### Archetypes and author position
 
 We analyze the relationship between author order and archetypes by career stage. Figure 7 shows the share of papers by archetype and career stage of scientists based on their author position. Middle authorships occupy a larger share of publications irrespective of the archetype or career stage, which is a consequence of the fact that any paper with more than three authors, most authors are in middle positions. We do observe, however, variation in middle authorship by career stage. At the junior stage, middle authorships account for half of the papers from Specialized scientists, while Supporting scientists occupy a middle position in almost 75% of their publications. In the early-career stage, the Leader archetype emerges, exhibiting a more balanced share of publications between first (32%), middle (37%) and last positions (32%). Specialized scientists publish a slightly higher share as first authors (36%) but almost in half of their papers appear in middle positions (48%). The Supporting archetype publishes more than half of their papers as middle authors (53%), evenly distributed between first and last authored publications.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig7-v2.jpg)
+
+**Figure 7.:** Top-left panel refers to the junior stage in which only two archetypes are present: specialized and supporting. Top-right refers to the early-career stage. Bottom-left refers to the mid-career stage. Bottom-right refers to the late-career stage, again here only two archetypes are observed: leader and supporting. Blue refers to share of scientists publishing as first authors, green refers to those publishing as middle authors, and pink refers to those publishing as last authors.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Colored areas provide descriptive interpretation. Yellow indicates small effect size, green indicates medium and purple indicates large effect. Values for specialized and supporting and the junior stage and leader and supporting at the late-career are overlapped.
 
 At the mid-career stage, Leader scientists start to shift to last positions (36%), with only 26% of their publications being first authored. Specialized scientists become the middle authors in 55% of their publications and are last authors on 23% of their publications. Supporting scientists, however, position themselves as last authors in 35% of their publications. The Specialized archetype disappears in the late-career stage. The Leader and Supporting archetypes show similar distributions of publications according to their author position, revealing that at this stage, author position is more related with seniority than contributorship.
 
@@ -122,31 +168,178 @@ Our analysis is based on two datasets: a seed dataset of contributorship stateme
 
 This dataset is used to train a predicting model of contributorship based on bibliometric variables. The full publication histories dataset contains the complete publication history of the 222,925 authors selected from the list of publications of the first dataset. This dataset is used to predict authors’ contributorship per paper and is later aggregated at the individual level to identify archetypes of scientists per career stage. The analyses were conducted on an Intel Core i7-8550U CPU with 16GB RAM, running Microsoft Windows 10 Home Edition. The total computational time of the analyses took around 30 hours, with 20 hours being required for the data modelling.
 
-## Contributorship statements
+### Contributorship statements
 
 We used a dataset of 85,260 distinct PLoS papers published during the 2006-2013 period. This dataset was gathered from the PLoS website in combination with Web of Science data. Full account of the complete extraction procedure is provided in a previous study (Larivière et al., 2016). For each publication and author, a dummy value is assigned based on the tasks they performed. Table 2 shows the list of journals together with the number of publications per journal. 88% of the publications have been published in PLoS One. Seven types of contributions were originally included in the dataset. Only five of those contributorships are being used consistently throughout the dataset. "Approved final version of the manuscript" and "Other contributions" are present in less than 5% and 20% of the papers respectively. While the former is a requirement of the ICMJE and therefore is used mostly in PLoS Medicine, the latter is not an individual category, but an aggregate containing nearly 20,000 different types of contributions. The low incidence of the "Approved final version" contribution together with the difficulties in interpreting the "Other" contributorship led to their exclusion from the analysis.
 
-## Bibliometric data
+#### Bibliometric data
 
 The bibliometric data is obtained from the CWTS (Leiden University) in-house version of the Web of Science. This database contained at the moment of analysis all publications included in the Science Citation Index Expanded, Social Science Citation Index, and Arts and Humanities Citation Index for the 1980-2017 period. Furthermore, an author name disambiguation algorithm (Caron and van Eck, 2014) is applied to the complete database, allowing to identify a scientist’s complete publication history. This allowed us to retrieve, for each paper contained in the contribution dataset, bibliometric variables at the publication and at the author level. A set of seven bibliometric variables is considered, which is described in Table 1 by author-publication combination. Here, we highlight the use of the variable years since first publication (YE). This variable is used to determine the age of scientists and is used later to estimate the different career stages of the individuals identified. Our use of the year of first publication as an indicator for academic age is based on previous research (Nane et al., 2017), in which the year of first publication is found to be the best predictor for the academic age of scientists. In the case of productivity, we use a full counting approach. While fractional counting can be considered as being more accurate from a mathematical point of view (Waltman, 2016), the focus here is on the previous publication experience of the author and how that might influence their role in future publications. Hence we consider full counting to suit best the purposes of the analysis.
 
-## Merging of bibliometric and contribution data
+**Table 1.**
+ Definition of variables included in the dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Acronym</th>
+      <th>Definition</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Bibliometric variables</td>
+    </tr>
+    <tr>
+      <td>PO</td>
+      <td>Author’s position in the paper</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>AU</td>
+      <td>Total number of authors in the paper</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>DT</td>
+      <td>Document type. Letters are excluded</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>Number of countries to which authors of the paper are affiliated</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>Number of institutions to which authors of the paper are affiliated</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>YE</td>
+      <td>Number of years since first publication at the time the paper was published</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td>PU</td>
+      <td>Average number of publications (full counting) per year</td>
+      <td>WoS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>of the author at the time the paper was published</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Contribution variables</td>
+    </tr>
+    <tr>
+      <td>WR</td>
+      <td>Wrote the paper</td>
+      <td>PLoS</td>
+    </tr>
+    <tr>
+      <td>AD</td>
+      <td>Analyzed the data</td>
+      <td>PLoS</td>
+    </tr>
+    <tr>
+      <td>PE</td>
+      <td>Performed the experiments</td>
+      <td>PLoS</td>
+    </tr>
+    <tr>
+      <td>CE</td>
+      <td>Conceived and designed the experiments</td>
+      <td>PLoS</td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>Contributed reagents/materials/analysis tools</td>
+      <td>PLoS</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>Number of contributions</td>
+      <td>PLoS</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Merging of bibliometric and contribution data
 
 The merging process was undertaken by matching documents by their DOI identifier and authors who had the same initials and surname in both datasets. We only included papers for which all authors were successfully matched. After this process was undertaken, we ended up with a total of 77,749 publications, containing a total of 369,537 disambiguated unique authors.
 
-## Subject field identification
+#### Subject field identification
 
 We assigned a subject field to each publication and filtered only those publications that belong to the Medical and Life Sciences to ensure consistency on publication patterns and distribution of contributorships. For this, we used the Dutch NOWT Classification which introduces three levels of categorization: 7 broad areas, 14 fields, and 34 subjects. This classification is linked to the the Web of Science subject categories (see correspondence here https://www.cwts.nl/pdf/nowt_classification_sc.pdf). The classification is made at the journal level, which implies that, given the high incidence of the PloS One papers in our data set, most publications would be categorized as Multidisciplinary. To overcome this issue, publications in Multidisciplinary were reclassified into other more specific fields based on their reference lists. We identified the journal to which each of the references of the publications in our data set belong to. Then, we assigned to each publication the field from which most of its references come from. Finally, we only include those which are assigned to the Medical and Life Sciences fields. A total of 70,694 publications and 347,136 distinct authors were extracted from this process, constituting the ‘‘seed data set’’.
 
-## Publication history of individual scientists
+### Publication history of individual scientists
 
 We reconstructed the publication histories of scientists, and predicted their contributions throughout their careers. The set of authors identified is retrieved from the seed dataset to ensure consistency on the predictions of the Bayesian Network model. But a series of thresholds are imposed. First, we retrieve authors’ gender using the following sources to identify gender: Gender API, Genderize.io and Gender Guesser. We apply a 90% accuracy threshold before assigning gender and only include those authors who surpass such threshold. By promoting accuracy over recall, we assume some selection biases derived from limitations on the identification of gender. By doing so, we minimize potentially misclassified authors due to the assumption of gender as a binary variable. Second, we include only authors whose first publication occurred from 1980 onwards. While the CWTS in-house database includes publications prior to 1980, it does not contain metadata of sufficient quality as to rely on the name disambiguation algorithm. Hence, authors with their first publication prior to 1980 are discarded. Third, we include only authors who have contributed to at least five publications. We do this for two reasons. On the one hand, we remove transient authors, that is, those who have published sporadically, and focus only on scientists that have more chances of being pursuing a research career. On the other hand, this increases the accuracy of the author name disambiguation performed on those researchers. This is specially relevant since the algorithm adopts a conservative approach: when confronted with individuals having outlier patterns of behavior, such as rapid shifts across publication venues, disciplines and co-authors, it will consider them as different authors and consequently split their publications across different ‘‘individuals’’. Hence, by including a publication threshold, we focus on those individuals for whom the algorithm is more robust and accurate at identifying them uniquely. Last, we remove the publications classified as letters to ensure consistency between the two datasets with respect to the document type. As a result, the final dataset contains a total of 222,925 individuals and 6,236,239 distinct publications. The reason for the much larger set of publications is that for those scientists identified in the Seed dataset, we have expanded to all their other publications identified by the algorithm (and not just those from Table 2).
 
-## Bayesian networks for predicting contributorships
+**Table 2.**
+ Distribution of papers by journal of the seed dataset on contributions.
 
-Bayesian networks (BNs) graphically depict interactions among dependent multivariate data. The network structure represents a directed acyclic graph (DAG), where nodes represent random variables and arcs encode direct influences. Along with dependence statements, a BN encodes conditional independence statements among random variables. These conditional independencies are described by the d-separation concept (Nielsen and Jensen, 2009) and are captured graphically by the BN structure. The Markov property ensures a convenient factorization of the joint distribution of the multivariate data. Say n continuously distributed random variables X1,X2,…,Xn are modeled by a Bayesian network. Then, the joint probability density function can factorize in the following manner(1)f⁢(x1,x2,…,xn)=∏i=1nf⁢(xi|Pa⁢(Xi)),where P⁢a⁢(Xi), for i=1,…,n, represents the parent set of node Xi, that is, the set of nodes (variables) whose arcs are directed at Xi. The conditional densities f⁢(xi|Pa⁢(Xi)), for i=1,…,n, of each random variable conditioned on its set of parent nodes encode the Markov property. The joint density factorization therefore depends on the structure of the network, that is, on the presence or absence of arcs and their directions.
 
-There are numerous structures that can be considered, and the number of structures grows super-exponentially with the number of variables (Robinson, 1977). Let an denote the number of BNs with n random variables. Then(2)an=∑k=1n(-1)k+1⁢(nk)⁢2k⁢(n-k)⁢an-k,where a0=1. The structure of a BN can be learned from data or from experts, or from mixing data-driven algorithms with expert input.
+<table>
+  <thead>
+    <tr>
+      <th>Journal</th>
+      <th>No. of papers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PLOS ONE</td>
+      <td>62,174</td>
+    </tr>
+    <tr>
+      <td>PLOS GENETICS</td>
+      <td>2408</td>
+    </tr>
+    <tr>
+      <td>PLOS PATHOGENS</td>
+      <td>1882</td>
+    </tr>
+    <tr>
+      <td>PLOS COMPUTATIONAL BIOLOGY</td>
+      <td>1684</td>
+    </tr>
+    <tr>
+      <td>PLOS NEGLECTED TROPICAL DISEASES</td>
+      <td>1432</td>
+    </tr>
+    <tr>
+      <td>PLOS BIOLOGY</td>
+      <td>697</td>
+    </tr>
+    <tr>
+      <td>PLOS MEDICINE</td>
+      <td>417</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bayesian networks for predicting contributorships
+
+Bayesian networks (BNs) graphically depict interactions among dependent multivariate data. The network structure represents a directed acyclic graph (DAG), where nodes represent random variables and arcs encode direct influences. Along with dependence statements, a BN encodes conditional independence statements among random variables. These conditional independencies are described by the d-separation concept (Nielsen and Jensen, 2009) and are captured graphically by the BN structure. The Markov property ensures a convenient factorization of the joint distribution of the multivariate data. Say $n$ continuously distributed random variables $X_{1},X_{2},…,X_{n}$ are modeled by a Bayesian network. Then, the joint probability density function can factorize in the following manner
+
+$$
+f⁢(x_{1},x_{2},…,x_{n})=\prodi=1nf⁢(x_{i}|P_{a}⁢(X_{i})),
+$$
+
+where $P⁢a⁢(X_{i})$, for $i=1,…,n$, represents the parent set of node $X_{i}$, that is, the set of nodes (variables) whose arcs are directed at $X_{i}$. The conditional densities $f⁢(x_{i}|P_{a}⁢(X_{i}))$, for $i=1,…,n$, of each random variable conditioned on its set of parent nodes encode the Markov property. The joint density factorization therefore depends on the structure of the network, that is, on the presence or absence of arcs and their directions.
+
+There are numerous structures that can be considered, and the number of structures grows super-exponentially with the number of variables (Robinson, 1977). Let $a_{n}$ denote the number of BNs with $n$ random variables. Then
+
+$$
+a_{n}=\sumk=1n(-1)^{k+1}⁢(\frac{n}{k})⁢2^{k⁢(n-k)}⁢a_{n-k},
+$$
+
+where $a_{0}=1$. The structure of a BN can be learned from data or from experts, or from mixing data-driven algorithms with expert input.
 
 Data driven learning algorithms of a BN structured are broadly categorized into constraint-based and score-based learning algorithms (Scutari and Denis, 2014). Constraint-based methods rely on conditional independence tests, whereas score-based methods employ likelihood-based metrics to evaluate structures. Both types of algorithms also contain a search procedure, such as a local search in the space of network structure (Scutari and Denis, 2014; Koller and Friedman, 2009). We employ the Max-Min Hill-Climbing (MMHC) algorithm (Tsamardinos et al., 2006), which combined techniques from constraint and score-based algorithms, along with an initial local discovery algorithm of edges without any orientation.
 
@@ -154,50 +347,136 @@ We have employed a mixed approach, which imposed, via a white list, the direct i
 
 Finally, the BN structure has been subjected a robustness check by employing a bootstrap procedure, by which bootstrap replications of the data have been sampled 50 times from the initial data, with replacement. The bootstrap samples had the same size as the initial dataset. The MMHC algorithm has provided network structures and the arcs that have appeared in at least 80% of the structures have been retained. Figure 2B illustrates the resulting network.
 
-## Cross-validation
+### Cross-validation
 
 To validate the BN used to predict contributions, we perform a k-fold cross-validation. The data are split in 10 subsets. For each subset, in turn, the BN is fitted on the other k - 1 subsets and a predictive loss function is then computed using that subset. Loss estimates for each of the k subsets are then combined to give an overall predictive loss. Since we are interested in predicting whether a scientist had a certain contributorship for the publications in the dataset, we translate the predictive loss into classification error. That is, we quantify the classification error rate of the BN in predicting a certain contributorship, given the bibliometric information of scientists and publications. The classification error rates obtained for each contributorship with a cut-off value of 0.5 are shown in Table 3. While the error rates obtained are quite low, it is true that this validation is performed using data which is of the same nature as the data on which the BN has been quantified. This means that the extent to which contribution patterns in our dataset can be inferred to other datasets should be further investigated using different journals or fields.
 
-## Constructing scientific profiles
+**Table 3.**
+ Classification error rates from cross-validation of Bayesian Network model for the contribution variables.For contributorships, the percentage of mis-classified predictions is shown, while for NC, the mean squared error between the predicted and the observed values is reported.
 
-## Data aggregation
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Min.</th>
+      <th>Median</th>
+      <th>Mean</th>
+      <th>Max.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WR</td>
+      <td>0.062</td>
+      <td>0.064</td>
+      <td>0.064</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>AD</td>
+      <td>0.064</td>
+      <td>0.067</td>
+      <td>0.067</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td>PE</td>
+      <td>0.072</td>
+      <td>0.075</td>
+      <td>0.075</td>
+      <td>0.077</td>
+    </tr>
+    <tr>
+      <td>CE</td>
+      <td>0.062</td>
+      <td>0.064</td>
+      <td>0.064</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>0.077</td>
+      <td>0.078</td>
+      <td>0.078</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>0.120</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>0.127</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructing scientific profiles
+
+#### Data aggregation
 
 Predicted probabilities of all contributorship types obtained from the BN are available for each author-publication combination. We aim to aggregate those prediction at the author level, that is, to derive, for each scientist, the probability of fulfilling each contribution role. For this, we used the median probability value per contribution type. Furthermore, we grouped the publications by career stage, that is, publications within 5 years from the first publication (junior stage), publications between 5 and 15 years from first publication (early-career), publications between 15 and 30 years from first publication (mid-career) and publications after 30 years from first publication (late-career). Here must note that the selection of the time periods was selected for convenience and that any other division could have been selected. For each researcher, we obtain a median probability per contribution type and career stage.
 
-Suppose within career stage i, with i=1,…,4, a scientist has k publications. Let pji the probability that the scientist performs contributorship j within career stage i, for j=1,…,5 denoting the five different types of contributions (WR, CT, CE, PE, AD). Then(3)pji=M⁢e⁢d⁢i⁢a⁢n⁢(pj,1i,pj,2i,…,pj,ki),where pj,1i is the predicted probability for contribution j of scientist’s first publication in career stage i. For the number of contributions (NC), the same aggregation rule is applied(4)N⁢Ci=M⁢e⁢d⁢i⁢a⁢n⁢(N⁢C1i,…,N⁢Cki)where N⁢C1i is the predicted number of contributions for the first paper in career stage i.
+Suppose within career stage $i$, with $i=1,…,4$, a scientist has $k$ publications. Let $p_{j}^{i}$ the probability that the scientist performs contributorship $j$ within career stage $i$, for $j=1,…,5$ denoting the five different types of contributions (WR, CT, CE, PE, AD). Then
 
-## Robust archetypal analysis
+$$
+p_{j}^{i}=M⁢e⁢d⁢i⁢a⁢n⁢(p_{j,1}^{i},p_{j,2}^{i},…,p_{j,k}^{i}),
+$$
 
-Profiles of researchers, by career stage, are obtained using a robust archetypal analysis. Archetypal analysis aims to identify archetypes that emerge from the given contribution data for scientists. This approach has been previously applied to identify scientists’ profiles based on citation and publication data (Seiler and Wohlrabe, 2013). The archetypes are extreme observations in a multivariate dataset and represented as convex combinations of the observations in the dataset that result from a least squares problem (Cutler and Breiman, 1994). For multivariate data with n observations (scientists, per career stage, in our case) and m random variables (types of contributorships, in our case), then X is a n×m matrix denoting the aggregated dataset. For given k archetypes, denote by Z the k×m the matrix of archetypes, represented in terms of the types of contributorships. Then, the residual sum of squares (RSS) plotted in Figure S1 is denoted by(5)R⁢S⁢S=||X-α⁢ZT||2,with Z=XT⁢β, where α,β are positive coefficients and where ||⋅||2 denotes the Euclidean matrix norm. In turn, each observation in the dataset can be represented as a convex combination of the archetypes(6)X≈α⁢ZT.
+where $p_{j,1}^{i}$ is the predicted probability for contribution $j$ of scientist’s first publication in career stage $i$. For the number of contributions (NC), the same aggregation rule is applied
 
-In the standard approach of archetypal analysis, each residual contributes to the RSS with equal weight. The archetypal analysis is thus sensitive to outliers, whose large residuals can contribute significantly to the RSS. A robust archetypal analysis (Eugster and Leisch, 2011) has been proposed to weight down the influence of outliers to the construction of archetypes. By letting W be a n×n matrix of weights, we define the weighted RSS(7)R⁢S⁢S=∣∣W⁢(X-α⁢ZT)∣∣2.
+$$
+N⁢C^{i}=M⁢e⁢d⁢i⁢a⁢n⁢(N⁢C_{1}^{i},…,N⁢C_{k}^{i})
+$$
+
+where $N⁢C_{1}^{i}$ is the predicted number of contributions for the first paper in career stage i.
+
+#### Robust archetypal analysis
+
+Profiles of researchers, by career stage, are obtained using a robust archetypal analysis. Archetypal analysis aims to identify archetypes that emerge from the given contribution data for scientists. This approach has been previously applied to identify scientists’ profiles based on citation and publication data (Seiler and Wohlrabe, 2013). The archetypes are extreme observations in a multivariate dataset and represented as convex combinations of the observations in the dataset that result from a least squares problem (Cutler and Breiman, 1994). For multivariate data with n observations (scientists, per career stage, in our case) and m random variables (types of contributorships, in our case), then X is a n×m matrix denoting the aggregated dataset. For given k archetypes, denote by Z the k×m the matrix of archetypes, represented in terms of the types of contributorships. Then, the residual sum of squares (RSS) plotted in Figure S1 is denoted by
+
+$$
+R⁢S⁢S=||X-\alpha⁢Z^{T}||_{2},
+$$
+
+with $Z=X^{T}⁢\beta$, where α,β are positive coefficients and where $||⋅||_{2}$ denotes the Euclidean matrix norm. In turn, each observation in the dataset can be represented as a convex combination of the archetypes
+
+$$
+X≈\alpha⁢Z^{T}.
+$$
+
+In the standard approach of archetypal analysis, each residual contributes to the RSS with equal weight. The archetypal analysis is thus sensitive to outliers, whose large residuals can contribute significantly to the RSS. A robust archetypal analysis (Eugster and Leisch, 2011) has been proposed to weight down the influence of outliers to the construction of archetypes. By letting W be a n×n matrix of weights, we define the weighted RSS
+
+$$
+R⁢S⁢S=∣∣W⁢(X-\alpha⁢Z^{T})∣∣_{2}.
+$$
 
 The weights can be chosen by the user or can be chosen to depend on each observation’s residual. The robust archetypal analysis proposed by Eugster and Leisch, 2011 proposes an iterative re-weighted least squares algorithm. Unlike the k-means clustering approach, which engages averaging when profiling out clusters, archetypal analysis focuses on extremes and explore the heterogeneity of complex multivariate data. Furthermore, archetypes are not forced to be mutually exclusive, as principal components are, nor do they remain the same when the number of considered archetypes is changing. The archetypal analysis has been performed using the archetypes package in R (Eugster and Leisch, 2009).
 
-## Confidence intervals, hypothesis testing and effect sizes
+#### Confidence intervals, hypothesis testing and effect sizes
 
 In this section we report how confidence intervals were constructed for Figures 4, 6 and 7, as well as additional analyses conducted for those figures which are reported in supplement figures.
 
 Neither the BN’s predictions, nor the RAA coefficient or alpha values account for uncertainty in the form of confidence intervals. Nevertheless, accounting for uncertainty in reporting the coefficient values of the archetypes would inform about the potential varying influence of contributions within each archetype. To construct those uncertainty intervals for the coefficient values of contributions (Figure 4), we have used the classification error rates as uncertainty bounds of our predicted probability of contribution. We have extracted and added the mean classification error rate to our predicted values, creating two additional datasets of predicted probabilities of contributorships: one for the upper value and the other one for the lower value. We have then conducted a RAA for each of the two new datasets, for each career stage. The same number of archetypes have been obtained as for the initial dataset. The coefficient values obtained for the upper and lower datasets are reported as uncertainty intervals in Figure 4.
 
-When analyzing the distributions of number of publications and share of highly cited papers by archetype across career stages (Figure 5), we tested if the differences in medians are statistically significant. We performed a Wilcoxon rank sum hypothesis test. Very low p-values (p-v⁢a⁢l⁢u⁢e<2.2⁢E-16 for all paired hypothesis tests), suggest that the differences in median are statistically significant within each career stage. However, this was expected, given the large sample sizes across the career stages. To evaluate the strength of the differences, we also investigated the effect size using the epsilon squared measure (Kelley, 1935), which are displayed, along with confidence intervals, in Figure 5—figure supplement 1.
+When analyzing the distributions of number of publications and share of highly cited papers by archetype across career stages (Figure 5), we tested if the differences in medians are statistically significant. We performed a Wilcoxon rank sum hypothesis test. Very low p-values ($p-v⁢a⁢l⁢u⁢e<2.2⁢E-16$ for all paired hypothesis tests), suggest that the differences in median are statistically significant within each career stage. However, this was expected, given the large sample sizes across the career stages. To evaluate the strength of the differences, we also investigated the effect size using the epsilon squared measure (Kelley, 1935), which are displayed, along with confidence intervals, in Figure 5—figure supplement 1.
 
 In the case of gender and author position (Figures 6 and 7), we investigated whether the differences in proportions within each career stage are statistically significant by using the two-proportion z-test (Cohen, 2013). The Pearson’s chi-squared test statistics allowed us to determine 95% confidence intervals for the differences in proportions, which, in turn, has been used to construct 95% confidence intervals for each proportion. Also, we reported effect sizes using Cohen, 2013.
 
-## Limitations of the study
+### Limitations of the study
 
-## Representativeness of the sample of scientists
+#### Representativeness of the sample of scientists
 
 The analysis is based on a set of publications and a sample of scientists which may not represent accurately the whole population of scientists. This means that, despite the robustness of the results, any inference to the whole population should be done with caution. Furthermore, the thresholds imposed to introduce such scientists in the archetypal analysis further restricts such inference endeavour. If we compare the productivity distributions of our set of researchers and for the whole population of the Web of Science, we observe that while we still retain a high skewness of productivity, this is much lower than the overall one.
 
-## Identification of scientists
+#### Identification of scientists
 
 The study relies heavily on the competence of an author name disambiguation algorithm to correctly identify disambiguated authors. As previously noted, this algorithm has some limitations which are partially overcome by the production thresholds imposed. However, inaccurate assignments can still occur.
 
-## Author age
+#### Author age
 
 We estimate researchers’ age based on the year of first publication and build the four career stages based on such year. However, alternative approaches could have been adopted and these could have some impact on the results. For instance, first year of first-authored publication could have been used instead. The selection of the first year of publication is based on empirical data suggesting that it is the best proxy for PhD year (Nane et al., 2017).
 
-## Taxonomy of contributorships
+#### Taxonomy of contributorships
 
 In this paper, contributions are classified into five types. These types are obtained from the data itself. However, one may question the appropriateness of the number and contribution types. The ones used in this paper are consistent with those used in other studies (Larivière et al., 2016), but different from those implemented in the CRediT initiative, which defines up to 14 types of contributions. Furthermore, evidence suggests that author self-reporting on contributorship is not exempt of limitations (Ilakovac et al., 2007). Questions like the extent to which contribution types are field-dependent are still unsolved. With this respect, our predictions already point towards some of these issues. Despite the low error rates, we observe that the distribution of predicted probabilities exhibits a normal distribution for writing the manuscript (Figure 2A). This could be due to the ambiguity of the statement. As observed in the CRediT intitiative, this statement is disclosed into two: wrote the first draft and wrote parts of the manuscript and revised. Such distinction might help the model to better discriminate contributorships.

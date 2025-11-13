@@ -11,12 +11,12 @@
 
 ### Affiliations
 
-1. https://ror.org/05dxps055 Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States
-2. https://ror.org/03taz7m60 University of Southern California Los Angeles United States
+1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+2. University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 3. EIT Food Northwest Reading United Kingdom
-4. https://ror.org/03taz7m60 Zilkha Neurogenetic Institute, Keck School of Medicine, University of Southern California Los Angeles United States
-5. https://ror.org/00wt7xg39 Westat Rockville United States
-6. https://ror.org/05k8wg936 Genome Institute of Singapore Singapore Singapore
+4. Zilkha Neurogenetic Institute, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+5. Westat Rockville United States ([ROR:00wt7xg39](https://ror.org/00wt7xg39))
+6. Genome Institute of Singapore Singapore Singapore ([ROR:05k8wg936](https://ror.org/05k8wg936))
 
 † Corresponding author
 

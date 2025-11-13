@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/047426m28 Department of Comparative Biosciences, University of Illinois at Urbana-Champaign Urbana United States
-2. https://ror.org/000e0be47 The Chemistry of Life Processes Institute, Northwestern University Evanston United States
-3. https://ror.org/000e0be47 Division of Reproductive Science in Medicine, Department of Obstetrics and Gynecology, Feinberg School of Medicine, Northwestern University Chicago United States
-4. https://ror.org/00za53h95 Biochemistry and Molecular Biology Departments, Johns Hopkins University Bloomberg School of Public Health Baltimore United States
-5. https://ror.org/04r3kq386 Biochemistry and Molecular Biology Department, School of Medicine, Uniformed Services University of the Health Sciences Bethesda United States
-6. https://ror.org/000e0be47 Department of Molecular Biosciences, Northwestern University Evanston United States
-7. https://ror.org/000e0be47 Department of Physics and Astronomy, Northwestern University Evanston United States
+1. Department of Comparative Biosciences, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+2. The Chemistry of Life Processes Institute, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Division of Reproductive Science in Medicine, Department of Obstetrics and Gynecology, Feinberg School of Medicine, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+4. Biochemistry and Molecular Biology Departments, Johns Hopkins University Bloomberg School of Public Health Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+5. Biochemistry and Molecular Biology Department, School of Medicine, Uniformed Services University of the Health Sciences Bethesda United States ([ROR:04r3kq386](https://ror.org/04r3kq386))
+6. Department of Molecular Biosciences, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+7. Department of Physics and Astronomy, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -40,25 +40,45 @@ Aging can also induce significant changes in chromosomes, potentially leading to
 
 ## Results
 
-## Chromosome stiffness measurement for metaphase I and metaphase II mouse oocytes
+### Chromosome stiffness measurement for metaphase I and metaphase II mouse oocytes
 
 To measure oocyte chromosome stiffness, we isolated chromosomes from oocytes collected from 3- to 4-week-old mice. These oocytes were cultured for 6 hr to reach metaphase I (MI) or 14 hr to reach metaphase II (MII). The zona pellucida was removed by treating the oocytes with Tyrode’s solution for approximately 3 min (Figure 1A). The oocyte membranes were then lysed via microspraying Triton X-100, allowing the oocyte contents to flow out spontaneously. Using this technique, we successfully isolated the spindle from the oocytes (Figure 1B, left) and subsequently separated the chromosomes from the spindle (Figure 1B, middle).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig1-v1.jpg)
+
+**Figure 1.:** (A) Oocytes after zona pellucida removal. Left panel: metaphase I (MI) oocyte. Right panel: metaphase II (MII) oocyte with visible polar body. Scale bar = 10 μm. (B) Spindle isolation process. Left panel: spindle flowing out from the oocyte after oocyte lysis. Middle panel: a chromosome being isolated from the spindle–chromosome complex. Right panel: chromosome captured between two pipettes. Scale bar = 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Left panel: metaphase I (MI) oocyte chromosome stretching. Right panel: metaphase II (MII) oocyte chromosome stretching. The black line (representing the stretching process) and the yellow line (representing the retraction process) almost overlap with each other, which indicates that oocyte chromosomes display elastic properties, and the stretching process is reversible.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Left panel: chromosome stiffness immediately after isolation (1.000 ± 0.2419, n = 9) is not significantly different from that sitting in PBS for 1 hr (0.8951 ± 0.2563, n = 9, p = 0.7697). Right panel: chromosome stiffness immediately after isolation (1.000 ± 0.2049, n = 7) shows no significant change after treatment with 0.05% Triton X-100 for 10 min (1.057 ± 0.2226, n = 7, p = 0.8527). Data are presented as mean ± SEM, with statistical analysis performed using t-test.
+
 Next, we used two pipettes with small openings to grasp the two ends of the chromosome (Figure 1B, right). This setup allowed us to measure chromosome stiffness by moving one pipette and observing and calibrating the bending of the other (see Materials and methods for further details). We stretched and relaxed the chromosomes to monitor its length change under an applied force, ultimately determining their Young’s modulus (a measure of material stiffness which is independent of geometry, i.e., chromosome thickness or number of chromatids). These experiments were carried out with extensions of less than twice the chromosome’s native length, ensuring a reversible mechanical response—that is, the force versus extension curve was similar during both stretching and retraction (Figure 1—figure supplement 1).
 
-## Chromosome stiffness in MI oocytes is about 10 times higher than that in mitotic cells
+### Chromosome stiffness in MI oocytes is about 10 times higher than that in mitotic cells
 
 Chromosome stiffness has been studied for a variety of mitotic cells, revealing similarities and differences across different cell types (Hornick et al., 2015; Sun et al., 2018; Strom et al., 2021). However, a comprehensive analysis of chromosome stiffness through either mitotic or meiotic cell cycles has not been done. For comparison with the meiotic case, we measured the chromosome stiffness of mouse embryonic fibroblasts (MEFs) at late pro-metaphase (just slightly before their attachment to the mitotic spindle) and found that the average Young’s modulus was 340 ± 80 Pa (Figure 2B). The value is consistent with our previously published data, where the modulus for MEFs was measured to be 370 ± 70 Pa (Biggs et al., 2020).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig2-v1.jpg)
+
+**Figure 2.:** (A) Example images of chromosome isolation. Left: metaphase II (MII) oocyte chromosome. Right: metaphase I (MI) oocyte chromosome. Scale bar = 10 μm. (B) Chromosome stiffness comparison across different cell types: mitotic cells (n = 8), wild-type (WT) spermatocytes at prophase I (n = 8), MI oocytes (n = 8), and MII oocytes (n = 8). Young’s modulus of MI oocyte chromosomes (3790 ± 700 Pa) is much higher than that of mitotic cells (370 ± 70 Pa, p = 0.0002) and MII oocytes (670 ± 130 Pa, p = 0.0006). Data are presented as mean  ± SEM. All statistical analyses were performed via t-test, n.s, non-significant, (p >  0.05), *p <  0.05, **p <  0.01 and ***p <  0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Chromosome doubling force comparison between mitotic cells (n = 8), wild-type (WT) spermatocytes at prophase I (n = 8), metaphase I (MI) oocytes (n = 8), and metaphase II (MII) oocytes (n = 8). n.s, non-significant, **p <  0.01 and ***p <  0.001.
+
 Next, we isolated chromosomes from mouse MI oocytes and measured their stiffness (Figure 2A), obtaining a Young’s modulus of 3790 ± 700 Pa, roughly tenfold higher than that of MEF chromosomes (Figure 2B). This finding was comparable to previous results demonstrating that spermatocyte prophase I chromosomes are approximately 10 times stiffer than MEF chromosomes (Biggs et al., 2020). These results suggest that the high chromosome stiffness observed in meiotic cells is a feature of gametes, common to both sexes. To further explore this, we investigated chromosome stiffness in MII oocytes and explored potential factors that might contribute to the high stiffness observed for gamete chromosomes.
 
-## The stiffness of chromosomes in MI mouse oocytes is significantly higher than that of MII oocytes
+### The stiffness of chromosomes in MI mouse oocytes is significantly higher than that of MII oocytes
 
 To study the effect of meiotic cell cycle stage on chromosome stiffness, we measured the chromosome stiffness for the MII oocytes, as we did for the MI chromosomes. We found that chromosome stiffness in MII oocytes was significantly lower than that in MI oocytes: the Young’s modulus of MII oocytes was 670 ± 130 Pa, while that of MI oocytes was 3790 ± 700 Pa (p < 0.001; Figure 2B). Surprisingly, despite this reduction, the stiffness of MII oocyte chromosomes was still significantly higher than that for mitotic cells (Figure 2B). This finding challenges the conventional view that meiosis II is closely analogous to mitosis, since we observe that chromosome mechanics in meiosis II quantitatively differs from that observed in mitotic cells (Hochwagen, 2008). Our results affirm that chromosome stiffness varies dynamically across different cell cycle stages.
 
 To verify the consistency of chromosome measurements, we compared our data with previously published results (Biggs et al., 2020), in terms of the ‘doubling force’ (the force required to double the length of a chromosome, which is expected to be dependent on chromosome thickness). MEF chromosomes in the published study exhibited a doubling force of 190 ± 40 pN, while wild-type (WT) prophase I spermatocytes had a doubling force of 2130 ± 440 pN (Biggs et al., 2020). Our independent measurements of these quantities closely agreed with the prior results, giving a doubling force of 210 ± 40 pN for mitotic MEFs and 1690 ± 450 pN for WT prophase I spermatocytes (Figure 2—figure supplement 1), indicating quantitative reproducibility of the results (notably, different researchers carried out the two sets of experiments). Here, we found that the doubling forces of chromosomes from MI and MII oocytes are 3770 ± 940 and 510 ± 50 pN, respectively. Chromosomes from MI oocytes are much stiffer than those from both mitotic cells and MII oocytes (Figure 2—figure supplement 1), in terms of either Young’s modulus or doubling force.
 
-## Meiosis-specific cohesins do not contribute to chromosome stiffness
+### Meiosis-specific cohesins do not contribute to chromosome stiffness
 
 We previously demonstrated that the central elements of the SC do not contribute to longitudinal chromosome stiffness, so we shifted our focus to the role of meiosis-specific cohesins during meiosis I (Biggs et al., 2020). Cohesin can load onto chromosomes before SCs form (de Vries et al., 2005). During mammalian mitosis, cohesin proteins bind along the chromosome axis during S phase, staying at the centromeres until anaphase, when they are cleaved by separase. Most chromosome-arm cohesion proteins are removed early before metaphase–anaphase transition by a separase-independent pathway (McGuinness et al., 2005). During meiosis I, cohesin proteins are removed from chromosome arms at anaphase I by separase, and only a small amount remains at the centromere until anaphase II (Lee et al., 2003). While cohesin proteins disappear from chromosome arms by metaphase in both mitosis and MII, they are retained along chromosome arms during MI.
 
@@ -66,23 +86,31 @@ Given the higher cohesion levels along chromosome arms during MI, we hypothesize
 
 We isolated chromosomes from Rec8−/− prophase I spermatocytes, which displayed large and round cell size and thick chromosomal threads, indicative of advanced chromosome compaction after stalling at a zygotene-like prophase I stage (Figure 3B). The combination of large cell size and degree of chromosome compaction allowed us to reliably identify Rec8−/− prophase I chromosomes. Using micromanipulation, we measured chromosome stiffness by stretching the chromosomes (Figure 3B; Biggs et al., 2019). Surprisingly, there was no significant difference in chromosome stiffness between wild-type (WT) control and Rec8−/− mutant (2710 ± 610 Pa in WT spermatocytes vs. 2580 ± 620 Pa in Rec8−/− spermatocytes, p = 0.8884) (Figure 3E).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig3-v1.jpg)
+
+**Figure 3.:** (A) Images of chromosome isolation from wild-type (WT) spermatocytes. Scale bar = 10 μm. (B) Images of chromosome isolation from Rec8−/− spermatocytes. Scale bar = 10 μm. (C) Images of chromosome isolation from Stag3−/− spermatocytes. Scale bar = 10 μm. (D) Images of chromosome isolation from Rad21l−/− spermatocytes. Scale bar = 10 μm. (E) Chromosome stiffness comparison across various cell types: WT spermatocytes at prophase I (n = 8), Rec8−/− spermatocytes at prophase I (n = 8), Stag3−/− spermatocytes at prophase I (n = 9), and Rad21l−/− spermatocytes at prophase I (n = 10). Young’s modulus of WT spermatocyte chromosomes (2710 ± 610 Pa) is not significantly different from that of Rec8−/− spermatocyte chromosomes (2580 ± 620 Pa, p = 0.8884), Stag3−/− spermatocyte chromosomes (2240 ± 210 Pa, p = 0.4533), and Rad21l−/− spermatocyte chromosomes (2050 ± 370 Pa, p = 0.3514). Data are presented as mean  ± SEM. All statistical analyses were conducted using t-test. n.s, non-significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Young’s modulus of chromosomes was measured and compared between CD-1 mice (n = 8) and C57BL/6 mice (n = 8). There are no significant stiffness differences between these two mouse lines (2710 ± 610 Pa in CD-1 vs. 3290 ± 610 Pa in C57BL/6J, p = 0.512). Data are presented as mean  ± SEM, with statistical analysis performed using t-test. n.s, non-significant.
+
 Similarly, for both Stag3−/− (2710 ± 610 Pa in WT spermatocytes vs. 2240 ± 210 Pa in Stag3 mutant spermatocytes, p = 0.4533) and Rad21l−/− (2710 ± 610 Pa in WT spermatocytes vs. 2050 ± 370 Pa in Rad21l−/− spermatocytes, p = 0.3514) mutants, no significant difference in chromosome stiffness relative to WT was observed (Figure 3C–E). We concluded that meiosis-specific cohesins do not play a dominant role in determining chromosome stiffness.
 
 We also note that we compared prophase I chromosome mechanics for WT CD-1 spermatocytes with mutants from a C57BL/6J background. To check whether strain might be a factor, we conducted additional experiments to compare the spermatocyte chromosome stiffness between WT CD-1 and C57BL/6J mice. The results showed no significant difference (2710 ± 610 Pa in CD-1 vs. 3290 ± 610 Pa in C57BL/6J, p = 0.512), suggesting that chromosome stiffness is consistent across strains (Figure 3—figure supplement 1).
 
-## Chromosomes from older MI oocytes have higher stiffness than those from younger MI oocytes
+### Chromosomes from older MI oocytes have higher stiffness than those from younger MI oocytes
 
 We next examined the effects of aging on chromosome mechanics. Initially, we hypothesized that chromosomes from aged oocytes would be less stiff based on previous findings that aging is associated with decreased levels of cohesin, particularly REC8 (Tian et al., 2021; Tsutsumi et al., 2014). To test this hypothesis, we isolated chromosomes from MI oocytes of 48-week-old mice (nearing the end of fertility, roughly equivalent to 40-year-old humans) and compared them to chromosomes from 3- to 4-week-old mice (Figure 4A). Contrary to our hypothesis, our measurement revealed that chromosomes from older mice were much stiffer than those from younger mice (8150 ± 1590 Pa in older MI oocytes vs. 3790 ± 700 Pa in younger MI oocytes, p = 0.0150) (Figure 4B). This result further supports the conclusion that cohesins are not the main contributors to chromosome stiffness.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig4-v1.jpg)
 
-**Figure 4.:** (A) Images showing the isolation of chromosomes from an aged metaphase I (MI) oocyte. Left panel: aged MI oocyte images. Middle panel: spindle isolated from aged MI oocyte. Right panel: MI chromosome isolated from the spindle–chromosome complex. Scale bars = 10 μm. (B) Chromosome stiffness comparison between MI oocytes from 3- to 4-week-old mice (n = 8) and 48-week-old mice (n = 5). Young’s modulus of 3- to 4-week-old MI oocyte chromosomes (3790 ± 700 Pa) is significantly lower than that of 48-week-old MI oocyte chromosomes (8150 ± 1590 Pa, p = 0.0150). Data are presented as mean  ± SEM and statistical analysis was performed using t-test. *p < 0.05.Figure 4—source data 1.Figure 4B.
+**Figure 4.:** (A) Images showing the isolation of chromosomes from an aged metaphase I (MI) oocyte. Left panel: aged MI oocyte images. Middle panel: spindle isolated from aged MI oocyte. Right panel: MI chromosome isolated from the spindle–chromosome complex. Scale bars = 10 μm. (B) Chromosome stiffness comparison between MI oocytes from 3- to 4-week-old mice (n = 8) and 48-week-old mice (n = 5). Young’s modulus of 3- to 4-week-old MI oocyte chromosomes (3790 ± 700 Pa) is significantly lower than that of 48-week-old MI oocyte chromosomes (8150 ± 1590 Pa, p = 0.0150). Data are presented as mean  ± SEM and statistical analysis was performed using t-test. *p < 0.05.
 
 Our findings are consistent with previous observations of increased chromosome stiffness in aged MII oocytes when compared to their counterparts from younger oocytes (Hornick et al., 2015). The doubling force for chromosomes in 3- to 4-week-old MII oocytes was measured at 510 ± 50 pN (see Figure 2—figure supplement 1), while for 6- to 8-week-old MII oocytes, it was significantly higher at 830 ± 100 pN (Hornick et al., 2015). These findings underscore a trend of increased chromosome stiffness with advancing age, common to both MI and MII oocytes.
 
 At the MII stage, most cohesin complexes have already dissociated from chromosome arms, and only a small amount remains, connecting sister chromosomes at their centromeres until anaphase II. Therefore, the observed age-related increase in chromosome stiffness is unlikely to be driven by cohesin levels. This suggests that other age-related factors, possibly linked to chromosome structural changes, contribute to the increased stiffness in older oocytes. Future investigations are needed to identify these age-related factors and their impact on chromosome mechanics.
 
-## DNA damage reduces chromosome stiffness in oocytes
+### DNA damage reduces chromosome stiffness in oocytes
 
 Oocytes from older individuals are known to exhibit higher levels of DNA damage compared to those from younger individuals (Marangos et al., 2015; Horta et al., 2020). In response to DNA damage on chromosomes, several DNA repair mechanisms are activated, which recruit various DNA repair proteins to the damage sites (Marcon and Moens, 2005). We hypothesized that this recruitment could affect chromosome stiffness. To test this hypothesis, we used etoposide, a chemotherapy drug used to treat a variety of cancers, including testicular and ovarian cancer (Hoskins and Swenerton, 1994; Hainsworth and Greco, 1995). We treated the oocytes with etoposide to introduce DNA damage and investigated its impact on chromosome stiffness (Marangos et al., 2015).
 
@@ -90,7 +118,7 @@ We cultured oocytes from the GV (germinal vesicle) stage for 6 hr to MI stage in
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97403/elife-97403-fig5-v1.jpg)
 
-**Figure 5.:** (A) Images of chromosome isolation from metaphase I (MI) oocyte treated with 50 μg/ml etoposide. Left panel: a spindle after cell lysis. Middle panel: a spindle captured with pipettes. Right panel: chromosome isolation. Scale bar = 10 μm. (B) 4′,6-Diamidine-2′-phenylindole dihydrochloride (DAPI) staining of control and 50 μg/ml etoposide-treated MI oocytes. Scale bar = 10 μm. (C) Chromosome stiffness comparison between mitotic cells (n = 8), control MI oocytes (n = 8), 5 μg/ml etoposide-treated MI oocytes (n = 8), 25 μg/ml etoposide-treated MI oocytes (n = 8), and 50 μg/ml etoposide-treated MI oocyte (n = 8). Young’s modulus of control MI oocyte chromosomes (3790 ± 700 Pa) did not differ significantly from that of 5 μg/ml etoposide-treated MI oocyte chromosomes (3930 ± 400 Pa, p = 0.8624). However, it was significantly higher than that of 25 μg/ml etoposide-treated MI oocyte chromosomes (1640 ± 340 Pa, p = 0.015) and 50 μg/ml etoposide-treated MI oocyte chromosomes (1710 ± 430 Pa, p = 0.0245). Data are presented as mean  ± SEM, with statistical analysis conducted using t-test. n.s, non-significant, *p < 0.05 and ***p < 0.001.Figure 5—source data 1.Figure 5C.
+**Figure 5.:** (A) Images of chromosome isolation from metaphase I (MI) oocyte treated with 50 μg/ml etoposide. Left panel: a spindle after cell lysis. Middle panel: a spindle captured with pipettes. Right panel: chromosome isolation. Scale bar = 10 μm. (B) 4′,6-Diamidine-2′-phenylindole dihydrochloride (DAPI) staining of control and 50 μg/ml etoposide-treated MI oocytes. Scale bar = 10 μm. (C) Chromosome stiffness comparison between mitotic cells (n = 8), control MI oocytes (n = 8), 5 μg/ml etoposide-treated MI oocytes (n = 8), 25 μg/ml etoposide-treated MI oocytes (n = 8), and 50 μg/ml etoposide-treated MI oocyte (n = 8). Young’s modulus of control MI oocyte chromosomes (3790 ± 700 Pa) did not differ significantly from that of 5 μg/ml etoposide-treated MI oocyte chromosomes (3930 ± 400 Pa, p = 0.8624). However, it was significantly higher than that of 25 μg/ml etoposide-treated MI oocyte chromosomes (1640 ± 340 Pa, p = 0.015) and 50 μg/ml etoposide-treated MI oocyte chromosomes (1710 ± 430 Pa, p = 0.0245). Data are presented as mean  ± SEM, with statistical analysis conducted using t-test. n.s, non-significant, *p < 0.05 and ***p < 0.001.
 
 Upon measuring the stiffness of the chromosomes, we found that those from 50 μg/ml etoposide-treated MI oocytes were significantly less stiff than those from untreated control oocytes (1710 ± 430 vs. 3780 ± 700 Pa, p = 0.0245) (Figure 5C). Results at lower etoposide concentrations revealed that chromosome stiffness in untreated control oocytes was not significantly different from that in oocytes treated with 5 μg/ml etoposide (3780 ± 700 vs. 3930 ± 400 Pa, p = 0.8624). However, chromosome stiffness in untreated oocytes was significantly higher than that in oocytes treated with 25 μg/ml etoposide (3780 ± 700 vs. 1640 ± 340 Pa, p = 0.015) (Figure 5C).
 
@@ -124,27 +152,142 @@ A well-documented characteristic of aged oocytes is their higher rate of aneuplo
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>CD-1</td>
+      <td>Charles River Laboratories, Wilmington, MA</td>
+      <td>RRID:IMSR_CRL:022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6</td>
+      <td>This paper and papers from Dr. Philip W. Jordan’s lab</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Mutant mouse lines maintained in Dr. Jordan’s lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Mouse embryonic fibroblasts</td>
+      <td>Dr. John Marko’s lab</td>
+      <td>ATCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etoposide</td>
+      <td>Cayman Chemical</td>
+      <td>Item No. 12092</td>
+      <td>50 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>M2 medium</td>
+      <td>Sigma-Aldrich</td>
+      <td>M7167-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>M16 medium</td>
+      <td>Sigma-Aldrich</td>
+      <td>M7292-50ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EmbryoMax Acidic Tyrodes Solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>MR-004-D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IBMX</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5879</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>US Biological</td>
+      <td>9002-93-1</td>
+      <td>0.05%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9542</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW</td>
+      <td></td>
+      <td>RRID:SCR_014325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td></td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 WT CD-1 mice (Charles River Laboratories, Wilmington, MA) were used for all chromosome measurements, except for Rec8, Stag3, and Rad21l mutants, which were maintained on a C57BL/6 background. All mice were housed in the Pancoe CCM rooms of Northwestern University under a 12-hr dark/light cycle at 22 ± 1°C, with unrestricted access to food and water. All animal handling and experimental procedures were approved by the Institutional Animal Care and Use Committee (IACUC) at Northwestern University.
 
-## Mouse oocyte in vitro culture
+### Mouse oocyte in vitro culture
 
 Oocytes were harvested from 3- to 4-week-old mice (48-week-old mice for aging studies) and culture in vitro. Both ovaries were immediately dissected and washed with M2 medium. The ovaries were then placed in prewarmed M2 medium containing 100 μM IBMX at 37°C. Sterilized needles were used to release cumulus–oocyte complexes (COCs). Next, COCs were pipetted in and out several times with a mouth pipette under dissection microscope to remove the cumulus cells surrounding the oocyte, yielding denuded oocytes at the GV stage. These oocytes were then placed in prewarmed M2 medium containing 100 μM IBMX.
 
 Oocytes with irregular shapes and abnormal sizes were discarded, while healthy oocytes were selected and washed three times in M16 medium. The oocytes were then transferred to small drops of M16 medium covered with mineral oil in a petri dish and incubated at 37°C in a 5% CO2 incubator. Depending on the experimental plan, oocytes were cultured with or without additional chemicals for 6 hr to reach the MI stage or 14 hr to reach the MII stage. After culture, the oocytes were rinsed three times with M2 medium and transferred to Tyrode’s solution to remove the zona pellucida. Finally, the oocytes were transferred to PBS solution for chromosome stiffness measurements.
 
-## Mitotic cell culture
+### Mitotic cell culture
 
 MEFs were used for mitotic chromosome measurements. The MEF cells were cultured in DMEM (Corning) supplemented with 10% fetal bovine serum (HyClone) and 1% penicillin–streptomycin (100×, Corning). Cultures were maintained at 37°C in a 5% CO2 incubator and passaged every 3–5 days, with a maximum of 20 passages.
 
 For chromosome measurements, cells were transferred to prepared culture wells, which were made by fixing rubber rings on coverslips using wax. Each well was filled with 2 ml of culture media. The cells were cultured in these wells for 1–3 days to allow attachment to the coverslips. Chromosome measurements were conducted directly within these culture wells.
 
-## Spermatocyte preparation
+### Spermatocyte preparation
 
 Testes were dissected from adult mice (Biggs et al., 2020). After removing the tunica albuginea, small clusters of seminiferous tubules were isolated and rinsed in PBS solution. These tubules were then finely chopped with a surgical blade to release spermatocytes, which were transferred into a culture well containing 2 ml of PBS. The spermatocytes were allowed to settle at the bottom of the well and subsequently used for chromosome measurements.
 
-## Chromosome isolation
+### Chromosome isolation
 
 Hold pipettes, force pipettes, and stiff pipettes were prepared for manipulating chromosomes. They were made using a micropipette puller (Sutter P-97) and cut to appropriate sizes (Biggs et al., 2020). Chromosomes were isolated and measured under an inverted microscope (IX-70; Olympus) with a ×60 1.42 NA oil immersion objective and a ×1.5 magnification pullout. All experiments were conducted at room temperature (RT) within 3 hr to minimize the effects of water evaporation from the culture well.
 
@@ -154,7 +297,7 @@ To isolate individual chromosomes, a force pipette was used to attach and extrac
 
 For oocytes, a notable difference was that the spindle, along with its chromosomes, could be isolated as a unit. In this case, a force pipette was inserted into the spindle to capture chromosomes and drag them out from the spindle. After isolation, the chromosomes were ready for measurements.
 
-## Chromosome stiffness measurement and calculation
+### Chromosome stiffness measurement and calculation
 
 Once the chromosome was held between the floppy force and moving stiff pipettes, it was stretched by moving the stiff pipettes perpendicularly. The process was recorded by LabVIEW software (Biggs et al., 2020). Before stretching, an image of the chromosome was captured to calculate the deflection of the force pipette. The stiff pipette was moved around 6.0 µm and then returned to its original position at a constant rate of 0.20 µm/s, with 0.04 µm steps controlled by the LabVIEW program. This measurement process was repeated six times.
 
@@ -162,6 +305,6 @@ The position of the stiff and force pipettes were recorded during the experiment
 
 All measurements of meiotic chromosome stiffness were conducted in PBS solution. To investigate the effects of PBS exposure on chromosome stiffness, the Young’s modulus of spermatocyte chromosomes was measured and compared before and after 1 hr of incubation in PBS (Figure 1—figure supplement 2, left panel). Similarly, to assess the impact of Triton X-100, the Young’s modulus of spermatocyte chromosomes was measured and compared before and after microspraying with 0.05% Triton X-100 for 10 min (Figure 1—figure supplement 2, right panel). We observed no significant change of chromosome stiffness in either of these cases, leading us to the conclusion that chromosome stiffness is not strongly affected by exposure to PBS or to Triton X-100.
 
-## Chromosome staining
+### Chromosome staining
 
 Isolated oocytes were fixed in 4% (wt/vol) paraformaldehyde in PBS solution for 30 min at RT. The oocytes were then washed three times with a washing buffer (0.1% Tween-20 and 0.01% Triton X-100 in PBS). Next, the oocytes were permeabilized in PBS containing 0.5% Triton X-100 for 20 min at RT. After that, the oocytes were transferred into 3% bovine serum albumin for blocking for 1 hr at RT. After blocking, the oocytes were washed three times and counterstained with 1 μg/ml of DAPI for 10 min at RT. Finally, the oocytes were washed twice with the washing buffer, mounted on glass slides in 80% glycerol, and examined using a Nikon A1R confocal microscope. Images were processed with NIS-Elements software.

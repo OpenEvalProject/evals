@@ -37,7 +37,7 @@ Taken together, our findings implicate a previously unappreciated constitutive f
 
 ## Results
 
-## Age-related progressive choroidal thinning and vascular atrophy are associated with alterations in choroidal macrophages
+### Age-related progressive choroidal thinning and vascular atrophy are associated with alterations in choroidal macrophages
 
 Aging has previously been associated with negative changes in the human choroid, including reductions in choroidal thickness on in vivo imaging (Entezari et al., 2018; Gattoussi et al., 2019; Wakatsuki et al., 2015) and decreased choriocapillaris density on histopathological analysis (Ramrattan et al., 1994), however mechanisms underlying this association are largely unelucidated. To examine whether similar age-related choroidal changes were present in our model of the mouse choroid, we examined and compared the vascular structure of the young adult (3 month-old) with aged (24 month-old) BALB/cJ mice. Consistent with observations in human subjects, the choroid of aged mice showed significantly decreased thickness on in vivo enhanced-depth OCT imaging in both the nasal and temporal quadrants relative to young adult mice (Figure 1A,B). Quantitative analysis of choriocapillaris structure in sclerochoroidal flatmounts of DiI-perfused animals also showed decreased vascular area coverage (Figure 1C,D). We observed that these age-related changes in choroidal vasculature were associated with alterations in macrophages located in the perivascular space of the vascular choroid. Examination of MHCII-immunopositive macrophages in sclerochoroidal flatmounts showed that these were significantly increased in overall density in the aged choroid (Figure 1E,F) compared with the young choroid, but the macrophages in the aged choroid demonstrated decreased ramification as evidenced by significantly decreased cell area, dendritic field area, and number of cellular processes per cell (Figure 1G,H). This association suggested that age-related changes in choroidal macrophages may be contributory to negative alterations of the vascular choroid.
 
@@ -45,7 +45,7 @@ Aging has previously been associated with negative changes in the human choroid,
 
 **Figure 1.:** (A) Young adult (3 month old) and aged (24 month-old) wild type BALB/cJ mice were imaged with enhanced depth imaging optical coherence tomography (EDI OCT) imaging; measurements made of choroidal thickness (indicated by I-bars). Scale bar = 100 µm. (B) Choroidal thickness measurements, assessed in the temporal and nasal quadrants (300 µm temporal and nasal respectively from the optic nerve on the horizontal meridian), were significantly decreased in the aged group. (C) Choriocapillaris vascular structure was analyzed in sclerochoroidal flatmounts following systemic DiI perfusion. Scale bar = 50 µm. (D) The fractional area coverage by choriocapillaris vessels was significantly reduced in the aged animals. (E) Choroidal macrophages were visualized by immunohistochemical staining for MHCII in sclerochoroidal flatmounts. Scale bar = 100 µm. Panels show representative images with insets showing high-magnification views. Ellipses mark the position of the optic nerve. (F) Macrophage density was markedly increased in the aged group. n = 3 animals per group. (G) High magnification images of choroidal macrophages showing reduced ramification in aged vs. young adult animals. Scale bar = 20 µm. (H) Quantitative morphological analyses of macrophages from aged animals showed decreased mean cell size (defined as the area of MHCII-immunopositivity per cell), cell coverage (dendritic field area subtended by a single cell), and mean process number (number of terminal processes per cell). P values indicate comparisons relative to control with an unpaired t-test with Welch’s correction, n = 4 animals per group.
 
-## Sustained depletion of resident macrophages in the choroid is accompanied by progressive choroidal thinning and vascular atrophy
+### Sustained depletion of resident macrophages in the choroid is accompanied by progressive choroidal thinning and vascular atrophy
 
 To investigate the endogenous contribution of resident macrophages to the structure of the adult mouse choroid, 3 month old young adult mice were administered a diet containing PLX5622, an inhibitor of the macrophage-expressed receptor CSF1R, which regulates macrophage survival (MacDonald et al., 2010). Compared with the choroid of control animals fed a regular diet, which had a typical network of ramified MHCII+ and IBA1+ resident macrophages (Kumar et al., 2014; McMenamin, 1999a), the choroid in PLX5622-administered animals demonstrated a widespread depletion of macrophages in all topographical areas, and possessed only a small number of residual MHCII+, IBA1+ cells showing a non-ramified morphology (Figure 2A). Following 1 week of PLX5622 administration, the density of MHCII+, IBA1+ macrophage decreased to ≈10% of that in control animals and was sustained at these levels with continuous PLX5622 administration for up to 7 weeks (Figure 2B). Expression of Iba1 mRNA in sclerochoroidal tissue was correspondingly decreased from baseline levels at week 1 and week 7 of PLX5622 administration (Figure 2C), indicating that CSF1R inhibition resulted in a rapid and comprehensive depletion of resident myeloid cells from the choroid.
 
@@ -55,25 +55,61 @@ To investigate the endogenous contribution of resident macrophages to the struct
 
 As macrophage depletion has been causally associated with vascular changes in pathological contexts in the retina (Sakurai et al., 2003) and elsewhere (Jarosz-Biej et al., 2018), but is of lesser consequence to normal adult retinal vasculature (Wang et al., 2016), we investigated whether choroidal macrophages exert a trophic influence in the healthy adult vascular choroid by examining the effects of macrophage depletion. In vivo enhanced-depth OCT images captured in a longitudinal manner before and during PLX5622 administration revealed significant and progressive reductions in choroidal thickness across the entire area of the choroid; measurements made in both the nasal and temporal quadrants showed time-dependent decreases with sustained PLX5622 administration, declining to ≈70% of baseline values by 7 weeks (Figure 3A,B). By contrast, the structure of the laminated retina and total retinal thickness measurements in the same experimental animals were unchanged during PLX5622 administration (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig3-v2.jpg)
+
+**Figure 3.:** (A) Animals administered PLX5622-containing diet continuously over 7 weeks were followed with longitudinal in vivo enhanced depth imaging optical coherence tomography (EDI OCT) imaging; I-bars show the measurements made of choroidal thickness. Scale bar = 100 µm. (B) Choroidal thicknesses measured in the temporal and nasal quadrants (at 300 µm temporal and nasal respectively from the optic nerve at the horizontal meridian) demonstrated progressive and significant decreases from baseline. (C) Total retinal thickness (measured from the RPE layer to the vitreal surface at the internal limiting membrane) were stable over the same period. P values in B, C were computed for comparisons relative to baseline using 1-way ANOVA test, n = 10 eyes from five animals at each time-points. (D–F) Comparative histological analysis of the choroid in control and depleted animals showed decreases in overall choroidal thickness and vascular density. Panels show representative images with insets (yellow boxes) showing high-magnification views. Scale bar = 50 µm. Mean total choroidal thickness was significantly reduced with macrophage depletion (E), as was the mean cross-sectional area of vascular lumina (F), with a trend towards decreased density of choroidal vessels. n = 6 eyes from three animals per treatment group. (G, H) Choriocapillaris vascular structure was imaged in flat-mounted sclerochoroidal tissue following vascular labeling with DiI perfusion; the fractional area coverage by vessels in the choriocapillaris was significantly reduced following 7 weeks of macrophage depletion. Scale bar = 50 µm. n = 8 eyes from four animals per treatment group. P values in E), (F), and H) were computed with an unpaired t-test with Welch’s correction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Albino transgenic mice possessing a transgene containing an α-SMA promoter driving the expression of green fluorescent protein (GFP) were used to visualize perivascular cells of the choroidal vasculature. The choroidal vasculature was visualized by systemic DiI perfusion (red). (A) Perivascular smooth muscle cells of adult 3 month old mice administered diet containing PLX5622 for 7 weeks to deplete choroidal macrophages were compared with those in controls (age-matched mice fed standard diet). Orthogonal views of confocal images demonstrated complete coverage of large choroidal vessels (red) with contiguous perivascular cells (green) that were largely unaltered with choroidal macrophage depletion. (B) Confocal images of the choriocapillaris visualized enface demonstrated a similar presence and coverage of ramified pericytes on the sclerad surface of choriocapillaris vasculature in depleted and control animals. Scale bars = 20 µm, n = 3 animals each treatment group.
+
 Histological analyses of choroidal vascular structure in stained retinochoroidal methacrylate-embedded sections demonstrated corresponding significant decreases in the mean thickness of the vascular layer of the choroid (Figure 3D,E). Quantitative analysis of vascular lumina found reductions in the mean cross-sectional area of vascular lumina and the mean density of choroidal vessels (Figure 3F). To visualize the choriocapillaris, vessels were perfused and labeled with Dil lipophilic dye. Quantitative analysis of choriocapillaris structure in sclerochoroidal flatmounts of DiI-perfused animals showed decreased vascular area coverage by choriocapillaris vessels (Figure 3G,H). Together these findings demonstrate that sustained depletion of choroidal macrophages was associated with generalized vascular atrophy in the adult mouse choroid, a feature not observed in the adult retina. These vascular changes were not associated with a marked loss and disorganization of the population of smooth muscle actin (SMA)-expressing choroidal perivascular cells in the choroid (Condren et al., 2013), as evidenced by their maintained organization and morphology in macrophage-depleted animals (Figure 3—figure supplement 1A,B).
 
-## Sustained depletion of choroidal macrophages is associated with aberrant RPE structure, gene expression, and function
+### Sustained depletion of choroidal macrophages is associated with aberrant RPE structure, gene expression, and function
 
 As choroidal macrophages have been implicated in influencing RPE physiology in the context of macrophage-RPE-vascular interactions (Shi et al., 2011; Wang et al., 2015), we investigated whether macrophage depletion from the healthy adult choroid exerted influences on the overlying RPE layer. Following 7 weeks of PLX5622 administration, immunohistochemical analysis of the RPE layer showed decreased immunopositivity of RPE65, a constitutively expressed, RPE-specific enzyme that is required to maintain visual cycle function (Redmond et al., 1998). Immunopositivity for RPE65, which was prominent and uniform in control animals, was decreased in depleted animals in a patchy, heterogenous manner, with a reduction in overall expression (Figure 4A,B). These changes corresponded to a decrease in Rpe65 mRNA expression (Figure 4—figure supplement 1A), as well as in significantly decreased mRNA expression of genes mediating visual cycle function (Lrat, Rlbp1), RPE differentiation (Mitf), and tight junction structure (Tjp1/Zo1) (Figure 4—figure supplement 1A–C). Electron microscopic analysis of RPE cell structure showed disrupted apical microvilli structure and increased vacuolation in depleted animals relative to control animals (Figure 4C). In depleted animals, increased irregularity in the cell areas of individual RPE cells was noted on F-actin labeling; the mean overall RPE cell density was significantly decreased, corresponding to an increased proportion of enlarged cells (cell area >900 µm2) (Figure 4D). Enlarged cells in depleted animals showed an abnormal increase in cellular nuclei (usually 3–4 nuclei), a feature not observed in control animals (Figure 4E). While the proportions of mono- and binucleated cells which constituted the majority of RPE cells were unchanged with depletion, RPE cells demonstrated a generally increased intracellular vacuolation on light microscopy. These changes in RPE morphology and expression of genes mediating RPE function were associated with concurrent reductions in electroretinographic responses in the form of decreased scotopic a- and b-wave amplitudes (Figure 4F). Together, these data indicate that resident choroidal macrophages constitutively maintain aspects of RPE organization and gene expression that are important for RPE function in the healthy adult animal.
 
-## Altered angiogenic factor expression in the RPE-choroid complex is associated with choroidal macrophage depletion
+![Figure 4.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunohistochemical analyses of the RPE monolayer in sclerochoroidal flatmounts in control and PLX5622-treated animals (for 7 weeks) were performed with RPE65 (green), conjugated phalloidin to stain F-actin (red), and DAPI (blue). High-magnification views (yellow box inset) highlight large multinucleated (>3 nuclei) cells (asterisk *), local reductions of RPE65 immunopositivity (arrow), and generally increased intracellular vacuolation. Scale bar = 20 µm. (B) Quantitative analysis of RPE65 immunopositivity in RPE. (C) Transmission electron microscopic analysis of RPE cells show in PLX5622-treated animals disrupted RPE apical microvilli structure (arrow) and increased intracellular vacuolation (arrowhead). Quantitative comparison of RPE morphological features from control and depleted animals of (D) RPE cell density, mean and distribution, and (E) the proportion of multinucleated (≥3 nuclei), mononucleated and binucleated RPE cells. P values in B, D, E correspond to comparisons made using an unpaired t-test with Welch's correction. n = 4 to 6 animals in each treatment group. (F) Comparison of scotopic electroretinographic responses between control and depleted animals showed significantly decreased a- and b-wave amplitudes in the PLX5622-treated group. P values correspond to comparisons made using a 2-way ANOVA test, n = 10 to 16 eyes from 5 to 8 animals in each treatment group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Changes in mRNA expression of RPE-specific genes in sclerochoroidal tissue following 1 and 7 weeks of continuous PLX5622 administration were evaluated with RT-PCR. Age-matched untreated animals served as controls. (A) RPE genes related to visual cycle function demonstrated general decreases; Rpe65 expression was markedly decreased beginning at 1 week of treatment, with smaller relative changes were observed for Lrat and Rlbp1. Mitf, a transcriptional factor important for RPE differentiation (B), and Tjp1 (ZO1), a tight-junctional protein between RPE cells (C), also showed significant decreases. P values correspond to comparisons relative to control made using a 1-way ANOVA test, n = 4–6 animals each treatment group.
+
+### Altered angiogenic factor expression in the RPE-choroid complex is associated with choroidal macrophage depletion
 
 As vascular structure of the adult choroid requires constitutive trophic support provided by angiogenic factors, in particular vascular endothelial growth factor (VEGF), for homeostatic maintenance (Kurihara et al., 2012; Saint-Geniez et al., 2009), we investigated whether choroidal macrophage depletion influences endogenous angiogenic factor expression in the RPE-choroid complex. We found that mRNA levels of Vegfa and Vegfc (Figure 5A) and protein levels of VEGF (Figure 5B) were significantly reduced in the RPE-choroid complex following 7 weeks of macrophage depletion. Consistent with this, we observed that immunopositivity for VEGF in cross-sections of the RPE-choroid complex, which is detected predominantly in the RPE layer in control animals, was decreased following macrophage depletion (Figure 5C). We also analyzed the expression of pigment epithelium-derived factor (PEDF), a secreted, multi-functional anti-angiogenic agent capable of suppressing choroidal neovascularization (Amaral and Becerra, 2010; Mori et al., 2001). We found that Serpinf1 (Pedf) mRNA and PEDF protein levels (Figure 5D,E), as well as PEDF immunopositivity in the RPE layer, were all significantly increased following macrophage depletion (Figure 5F). In contrast, mRNA and protein expression levels of platelet-derived growth factor (PDGF) ligands, PDGF-AA and PDGF-BB, factors implicated in pericyte recruitment and vascular stabilization in the retina (Lindahl et al., 1997), were not markedly altered by macrophage depletion (Figure 5G,H). These data suggest that altered expression of trophic factors generally, and a decrease in the ratio of VEGF/PEDF secretion specifically (Pollina et al., 2008), occurs in the RPE-choroid with macrophage depletion, and may constitute a mechanism contributing to the choroidal vascular atrophy observed.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig5-v2.jpg)
+
+**Figure 5.:** Total mRNA and protein were isolated from RPE-choroid complexes of animals treated with PLX5622-containing diet for 1 or 7 weeks and untreated control animals. mRNA levels of Vegfa and Vegfc (A), and protein level of VEGF (B) were all significantly reduced following 7 weeks of depletion. Immunohistochemical localization demonstrated VEGF expression at the level of the RPE that was decreased following macrophage depletion (C). Serpinf1 mRNA (D) and PEDF protein (E) were increased following macrophage depletion; immunohistochemical analyses demonstrated increased PEDF immunopositivity in the RPE layer and choroid (F). Pdgfa and Pdgfb mRNA levels (G) and PDGF-AA and PDGF-BB protein levels (H) were largely unaltered with macrophage depletion. P values were from a 1-way ANOVA, n = 4 to 8 animals per treatment group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Changes in mRNA expression of Tgfb1 in sclerochoroidal tissue were evaluated with RT-PCR following 7 weeks of continuous PLX5622 administration. Age-matched untreated animals served as controls. mRNA level of Tgfb1 (A) was significantly reduced following 7 weeks of macrophage depletion. Immunohistochemical localization demonstrated decreased TGFβ1 immunopositivity in the RPE layer and choroid following macrophage depletion (B). P values represent comparison to control level using an unpaired t-test with Welch’s correction. Scale bars = 20 µm, n = 4 to 8 animals per treatment group.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Choroidal sections were labeled with primary antibodies to VEGF, PEDF, TGFβ1. Negative controls constituted sections labeled with the secondary antibody only, in the absence of primary antibodies. n = 3 animals in each treatment group.
+
 Past studies had indicated that RPE-derived VEGF are required for vascular survival in the choroid (Marneros et al., 2005; Saint-Geniez et al., 2009), and that TGF-β1 can induce VEGF expression in the RPE cells (Nagineni et al., 2003). We found that Tgfb1 mRNA levels and TGFB1 immunopositivity were reduced in the choroid following 7 weeks of macrophage depletion (Figure 5—figure supplement 1A,B). Taken together, these data suggested that changes in angiogenic factor expression may underlie macrophage-mediated vascular support.
 
-## Macrophages in the choroid demonstrate spontaneous regeneration to repopulate the choroid following depletion
+### Macrophages in the choroid demonstrate spontaneous regeneration to repopulate the choroid following depletion
 
 We and others have previously demonstrated that microglia normally resident in the adult retina can demonstrate spontaneous repopulation following depletion (Huang et al., 2018; Zhang et al., 2018). However, whether choroidal macrophages in the adult choroid can regenerate is unknown. To investigate this, we depleted choroidal macrophages in young adult mice using a PLX5622-containing diet for 3 weeks, a time-point when significant choroidal thinning has occurred (depletion phase), and then reverted these animals to a standard diet for another 4 weeks (repopulation phase) (Figure 6A). An age-matched group fed a standard diet served as a control. We observed that when macrophage-depleted animals were returned to a standard diet, MHCII+, IBA1+ macrophages reappeared rapidly in the choroid, with cell density reaching 50% of control levels after 1 week of repopulation, attaining 100% of control levels at 4 weeks, and remaining stable at that level thereafter (Figure 6B,C). This increase in macrophage cell numbers was at least in part enabled by local proliferation of residual IBA1+ cells; while resident macrophages in the choroid of control animals were mostly non-proliferative and negative for the proliferation marker Ki67, prominent numbers of Ki67+,IBA1+ cells were detected at 1 week of repopulation when macrophage numbers were rising sharply (Figure 6—figure supplement 1A,B). At 4 weeks repopulation, Ki67+ cell counts decreased back to control levels at a time when macrophage numbers have recovered to control levels. We cannot rule out that infiltrating monocytes from the circulation may contribute to the repopulation process, but it is likely that repopulated macrophages are, at least in part, originating from the proliferation of the local residual macrophages. These observations reveal a previously uncharacterized regenerative capability of choroidal macrophages in which local proliferation of myeloid cells in the choroid likely contributes to the recovery of the macrophage population following depletion.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig6-v2.jpg)
+
+**Figure 6.:** (A) Adult 3 month old mice were administered a diet containing PLX5622 for 3 weeks to achieve depletion of choroidal macrophages (depletion phase), and then returned to a standard diet for another 4 weeks (repopulation phase). The control group consisted of age-matched animals maintained on a standard diet. (B) Sclerochoroidal flatmounts were immunolabeled with MHCII (green) and IBA1 (red) to visualize the resident macrophages. Panels show representative images and yellow box marking the areas showing high-magnification views. Scale bar = 1 mm. (C) The total number of macrophages in the choroid that were immunopositive for both IBA1 and MHCII markedly decreased after 3 weeks of PLX5622 administration but progressively increased following PLX5622 cessation to reach baseline levels after 4–6 weeks. (D) While all IBA1+ macrophages were immunopositive for MHC at baseline, a small fraction of IBA1+ macrophages were immunonegative for MHCII early in the repopulation phase (at 1 week following resumption of a standard diet). This phenotype was transient as all IBA1+ macrophages reacquired MHCII immunopositivity when repopulation neared completion at 6 weeks of repopulation. P values were from a 1-way ANOVA, n = 3 animals per treatment group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Ki67 immunopositivity was absent in MHCII+ repopulating macrophages in undepleted control animals but was prominent at 1 week of repopulation. The proportion of Ki67+ in MHCII+ cells declined to control levels by 4 weeks. Scale bar = 20 µm. (C) High magnification images of choroidal macrophages showing deramified morphologies during depletion and a progressive recovery of ramified morphologies during macrophage repopulation. Scale bar = 20 µm. Quantitative morphological analyses of repopulating macrophages showed progressive enlargement of cell size (defined as the area of IBA1-immunopositiviey per cell) (D), increasing ramification (in terms of number of terminal processes per cell) (E), and increasing dendritic field size (defined as the area of the bounding polygon around each cell) (F). Full recapitulation of these morphological measures back to baseline levels was achieved at 6 weeks into the repopulation phase. P values represent comparisons to control levels, 1-way ANOVA with Tukey’s correction for multiple comparisons. n = 4 animals each treatment group.
+
 During the repopulation process, choroidal macrophages demonstrated features of phenotypic maturation in situ. Although all choroidal macrophages in the control animals showed immunopositivity for both MHCII and IBA1, we observed that a fraction of IBA1+ macrophages at 1 week in the repopulation phase were MHCII-negative, while no MHCII+ macrophages were IBA1-negative (Figure 6D). This fraction of MHCII-, IBA1+ macrophages diminished with time and was undetectable at 6 weeks of repopulation, indicating MHCII as a later marker acquired by repopulating macrophage during maturation in situ. Repopulating macrophages also demonstrate maturation in terms of their morphological features. At 1 week of repopulation, although IBA1+ cell numbers had risen substantially to about 50% of control levels, most macrophages showed a deramified morphology with only a few short rudimentary processes. From 2 to 6 weeks of repopulation, macrophages developed progressively increased ramification, increasing in cell area, number of cellular processes, and dendritic field area, to acquire morphological features that were similar from choroidal macrophages in control animals (Figure 6—figure supplement 1C–F).
 
-## Recovery of macrophages via regeneration is accompanied by an arrest in depletion-related degenerative changes in the RPE-choroid
+### Recovery of macrophages via regeneration is accompanied by an arrest in depletion-related degenerative changes in the RPE-choroid
 
 To investigate the functional implications of choroidal macrophage regeneration following depletion, we evaluated the structure of the RPE-choroid complex during and following repopulation. We compared (1) animals that were subjected to macrophage depletion for 3 weeks and then allowed to repopulate for another 4 weeks (the depletion/repopulation group) with (2) animals subjected to continuous depletion for a total of 7 weeks (the continuous depletion group) (Figure 7A). We found on OCT imaging that while choroidal thicknesses in the continuous depletion group declined progressively over 7 weeks, those in the depletion-repopulation group stabilized upon the initiation of macrophage repopulation, and were significantly higher than those in the continuous depletion group at the end of the 7 week experiment (Figure 7B). Assessment of choriocapillaris structure in choroidal flatmounts also found that areal coverage by choriocapillaris vessels decreased progressively over 7 weeks in the continuous depletion group, those in the depletion-repopulation group stabilized between 3 to 7 weeks during macrophage repopulation (Figure 7C). These findings suggested that repopulating macrophages functionally support the vascular structure of the choroid, further implicating the constitutive contribution of choroidal macrophages to vascular maintenance.
 
@@ -83,7 +119,27 @@ To investigate the functional implications of choroidal macrophage regeneration 
 
 We similarly assessed the function of repopulating macrophages in the support of RPE layer in these two experimental groups (Figure 8A). In the continuous depletion group, mean RPE density at 3 weeks of depletion were similar to untreated controls but decreased at 7 weeks of depletion; in the depletion-repopulation group, mean RPE density was largely unchanged across 7 weeks (Figure 8B). Analysis of the distribution of individual RPE cell areas showed that while RPE cells in continuously depleted animals showed a corresponding shift towards an increased prevalence of larger cells at 7 weeks depletion, those in the depletion-repopulation group were similar to those in untreated controls (Figure 8C). Further, macrophage repopulation also prevented the increase of multinucleated cells (≥3 nuclei) induced with 7 weeks depletion (Figure 8D). These findings indicated that structural changes in RPE cells, a phenotype of later onset apparent at 7 weeks but not at 3 weeks of depletion, can be prevented if the choroidal macrophage population were reinstated by repopulation.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig8-v2.jpg)
+
+**Figure 8.:** (A) Immunohistochemical analyses of the RPE-sclerochoroidal flatmounts from (1) untreated control animals (white bars), (2) animals continuously treated for 3 weeks of PLX5622-containing diet (pink bars), (3) animals continuously treated for 7 weeks of PLX5622-containing diet (red bars), and (4) animals treated for 3 weeks of PLX5622 containing diet and then followed by 4 weeks of standard diet (green bars); were performed with RPE65 (green), conjugated phalloidin (red), and DAPI (blue). The progressive patchy decrease in RPE65 immunopositivity and increase of large multinucleated (≥3 nuclei) cells were observed in animals in the 3- and 7 weeks depletion groups, however these changes were recovered upon the onset of repopulation. High-magnification views in the inset (yellow boxes) demonstrated the presence of large cells (>500 µm2 in area, asterisks) with multiple nuclei in the 7 week depleted group but was less prominent in the repopulated group. (B) Quantitative analysis of RPE morphology revealed that repopulation of choroidal macrophages after 3 weeks of depletion prevented further decrease in RPE cell density evident on 7 weeks of depletion. (C) Analysis of the distribution of RPE cell areas revealed that the increase in the proportion of large cells (>500 µm2 in area) induced with 7 weeks depletion was prevented in the repopulation group, which resembled the control and 3 week depletion groups in their distribution. (D) Analysis of the proportion of multinucleated RPE cells (≥3 nuclei) showed that the increased proportion of multinucleated cells induced with 7 weeks depletion was prevented in the repopulation group. (E) Quantitation of mean intensity of RPE65 immunopositivity showed that the significant decrease in RPE65 staining induced by depletion was partially restored after macrophage repopulation. P values indicate comparisons computed from a 1-way ANOVA, n = analysis of 4 imaging field from each animal, four animals per treatment group.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Changes in mRNA expression of RPE-specific genes in sclerochoroidal tissue from the following experimental groups were evaluated with RT-PCR: (1) untreated age-matched controls, (2) macrophage-depleted for 3 weeks, (3) macrophage-depleted for 7 weeks (continuous depletion group), and (4) macrophage-depleted for 3 weeks, followed by 4 weeks of macrophage repopulation (depletion-repopulation group). (A) RPE genes related to visual cycle function (Rpe65, Lrat, Rlpb1), (B) Mitf, and (C) Tjp1/Zo1, demonstrated decreases with depletion that were ameliorated or reversed with macrophage repopulation. P values correspond to comparisons relative to control made using a 1-way ANOVA test, n = 3 to 6 animals each treatment group.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The scotopic electroretinographic responses showed significantly decreased a- and b-wave amplitudes at 3 weeks of depletion in both continuous depletion and depletion-repopulation groups. Slight decrease of scotopic b-wave was observed in the continuous depletion group at 7 weeks of depletion. Scotopic a- and b-wave amplitudes were stable between 3 to 7 weeks during macrophage repopulation. n = 10 eyes from five animals in each treatment group.
+
 The effects of macrophage repopulation on RPE structure were also observed in analyses of RPE gene expression. Relative to the continuous depletion group, the depletion repopulation group showed amelioration in depletion-induced decreases in mRNA (Figure 8—figure supplement 1A) and protein (Figure 8E) expression of RPE65, and mRNA expression of visual cycle genes (Lrat and Rlbp1), Mitf, and Tjp1/Zo1 (Figure 8—figure supplement 1A–C). In addition to the RPE morphology and gene expression changes, the scotopic a- and b-wave amplitudes decreased significantly at 3 weeks of depletion in the continuous depletion group and decreased slightly further in the scotopic b-wave amplitude at 7 weeks of depletion while the scotopic a-wave amplitude remained stable. However, in the depletion-repopulation group, while similar decrease in the scotopic a- and b-wave amplitudes were observed at 3 weeks of depletion, the scotopic a- and b-wave amplitudes were unchanged between 3 to 7 weeks during macrophage repopulation (Figure 8—figure supplement 2A). Depletion-induced reductions in Vegfa and Vegfc mRNA and VEGF protein expression were largely reversed with repopulation (Figure 9A), while there was a trend towards a reversal of depletion-induced increases of Serpinf1 (Pedf) mRNA and PEDF protein expression (Figure 9B). Taken together, these data demonstrate that structural and gene expression changes induced in the RPE-choroid complex upon macrophage depletion were significantly ameliorated or stabilized upon macrophage repopulation, supporting the notion of a homeostatic supportive function for choroidal macrophages.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig9-v2.jpg)
+
+**Figure 9.:** mRNA and total protein were isolated from the RPE-choroid complex of (1) control animals maintained on a standard diet (white bars), (2) depleted animals treated continuously with a PLX5622-containing diet for 7 weeks (red bars), and (3) repopulated animals treated with PLX5622-containing diet for 3 weeks and then switched to a standard diet for 4 weeks (green bars). mRNA and protein levels of angiogenic factors were analyzed by qrt-PCR and multiplex assay/ELISA respectively. (A) mRNA levels of Vegfa and Vegfc, and protein level of VEGFA, which were all decreased in the depleted group relative to the control group, were recovered back to control levels in the repopulated group. (B) mRNA levels of Serpinf1, and protein levels of PEDF, which were increased in the depleted group relative to the control group, were found at intermediate levels in the repopulated group. P values were from a 1-way ANOVA, n = 4 to 6 animals per treatment group.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/55564/elife-55564-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (Left) In the normal adult choroid, angiogenic signals (VEGF, PEDF) secreted from the RPE cell layer regulate local choroidal vascular structure. Choroidal macrophages produce potential trophic signals that influence RPE structure and angiogenic secretion (e.g. TGFB1), secondarily influencing vascular maintenance. Potential uncharacterized angiogenic signals may also originate from choroidal macrophages to impinge onto choroidal vasculature to maintain them. (Right) With the ablation of choroidal macrophages, macrophage trophic signals are diminished, leading to RPE cell structure changes and altered balanced of angiogenic factor production by RPE cells. These induce choroidal vascular atrophy, reducing choroidal thickness and decreasing choriocapillaris coverage.
 
 ## Discussion
 
@@ -103,52 +159,272 @@ Taken together, our results here have significant relevance to understanding cho
 
 ## Materials and methods
 
-## Experimental animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Iba1 Rabit polyclonal</td>
+      <td>Wako</td>
+      <td>Cat# 019–19741 RRID:AB_839504</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MHC-II Rat monoclonal</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 556999 RRID:AB_396545</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPE65 Mouse monoclonal</td>
+      <td>Millipore</td>
+      <td>Cat# MAB5428 RRID:AB_571111</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VEGFa Rabit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab46154 RRID:AB_2212642</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PEDF Rabit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab180711 RRID:AB_2827998</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse SERPINF1/PEDF ELISA kit</td>
+      <td>LifeSpan BioSciences</td>
+      <td>LS-F36110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Magnetic Luminex Assay kit for VEGF, PDGF-AA and PDGF-BB</td>
+      <td>R and D Systems</td>
+      <td>LXSAMSM-11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfa_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TGTGCGCAGACAGTGCTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfa_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCTGGGACCACTTGGCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfc_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GGGAAATGTGCCTGTGAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfc_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GTTCAGATGTGGCCTTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Serpinf1_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CACCCAAGTGGAACACAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Serpinf_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TTAAGTACTACTGGGGTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpe65_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCCAATTTACGTGAGAATTGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpe65_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGTCCATGGAAGGTCACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lrat_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCGTCCCTATGAAATCAGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lrat_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>ATGGGCGACACGGTTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rlbp1_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GGCACTTTCCGCATGGTT C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rlbp1_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCGGGTCTCCTCCTTTTCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mitf_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGCCATAAACGTCAGTGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mitf_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GAGTGAGCATAGCCATAGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tjp1_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GAGAAAGGTGAAACTCTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tjp1_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GTGGTCAATCAGGACAGAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdgfa_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCCAGCCTTCACGGGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdgfa_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCTCACATCTGTCTCCTCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdgfb_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CTGCAAGTGTGAGACAGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdgfb_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CTAGGCTCCGAGGGTCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCCGCCTGGAGAAACCTGCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GGGGTGGGTGGTCCAGGGTTT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental animals
 
 Experiments were conducted according to protocols approved by the National Eye Institute Animal Care and Use Committee and adhered to the Association for Research in Vision and Ophthalmology statement for the use of animals in ophthalmic and vision research. Animals were housed in a National Institutes of Health (NIH) animal facility under a 12 hr light/12 hr dark cycle with food ad libitum.
 
 Adult 3 month-old female wild type BALB/cJ mice (The Jackson Laboratory, Bar Harbor, ME) and 3 month-old albino transgenic mice, containing a transgene with a α-smooth muscle actin (αSMA) promoter driving the expression of green fluorescent protein in perivascular cells in the choroid (Condren et al., 2013), were used to analyze cellular changes in the choroid and the RPE following macrophage depletion.
 
-## Model for macrophage depletion-repopulation in the choroid
+### Model for macrophage depletion-repopulation in the choroid
 
 We employed a model for macrophage depletion in the adult mouse choroid which involved the dietary administration of PLX5622 (Plexxikon, Berkeley, CA), a potent and selective inhibitor of the CSF1R that we previously demonstrated to deplete microglia in the retina (Zhang et al., 2018). Animals were placed on a rodent chow containing PLX5622 (at 1200 parts per million, formulated by Research Diets Inc New Brunswick, NJ) for up to 7 weeks to induce depletion macrophages resident in the choroid. To allow for the repopulation of choroidal macrophages, animals subjected to depletion with PLX5622-containing diet for 3 weeks were switched back to a standard diet; the first day of control diet resumption was designated day 0 of the repopulation phase.
 
-## Immunohistochemical analysis of sclerochoroidal tissue
+### Immunohistochemical analysis of sclerochoroidal tissue
 
 Mice were euthanized by CO2 inhalation. Enucleated eyes were dissected to form posterior segment eyecups which were then fixed in 4% paraformaldehyde in PBS for 1 hr at room temperature. Eyecups were either processed for vibratome sectioning (100 µm thick sections, VT1000, Leica) or dissected to obtain sclerochoroidal flatmounts, which were then immersed for 1 hr in a blocking buffer (1 × PBS containing 10% normal goat serum and 0.5% Triton X-100) at room temperature. Primary antibodies, which included IBA1 (1:200; Wako), MHC-II (1:200; BD Pharmingen), RPE65 (1:200; Millipore), VEGFA (1:200; Abcam), or PEDF (1:200; Abcam) were diluted in blocking buffer and added to sections/flat-mounts to incubate for 24 hr at 4°C. After washing in 1 × PBS with 0.2% Triton X-100, sections/flat-mounts were then incubated overnight with secondary antibodies (Alexa Fluor 488– or 568–conjugated anti-rabbit, rat or mouse IgG). Phalloidin (1:500; Invitrogen) was added and incubated for 4 hr label F-actin that enables visualization of RPE cell morphology. DAPI (1:500; Sigma-Aldrich) was added to label cell nuclei. Stained samples were imaged with confocal microscopy (Zeiss LSM700). To visualize macrophage distributions over the entire choroid, tiled images of sclerochoroidal flatmounts were obtained under a 10x objective and stitched together with image analysis software (Zen, Carl Zeiss Microscopy). For visualization of RPE monolayer, multiplane z-series were captured under a 40x oil-immersion objective. Resulting images were subjected to computer-assisted analysis (ImageJ, NIH); the density of choroidal macrophages was assessed across the entire choroid and expressed as number per unit area. The number of nuclei per RPE cells were manually assessed from high-magnification images of RPE flat-mounts captured at or near the midpoint between the optic nerve and the peripheral edge of the flat-mount.
 
-## Automated RPE morphological analysis
+### Automated RPE morphological analysis
 
 Sclerochoroidal flatmounts immunolabeled with RPE65 and phalloidin were imaged with confocal microscopy (Zeiss LSM880) and multiplane z-series images were captured under a 40x oil-immersion objective. Morphological analyses of RPE mosaics were performed in an automated manner using REShAPE software, as previously described (Sharma et al., 2019). Briefly, individual RPE cells were segmented at their borders using MATLAB and a binary ‘mask’ has been generated to measure cell morphological features. RPE cell density was calculated as cell numbers per unit area and the area of individual RPE cells was determined from cell segmentation.
 
-## In vivo optical coherence tomography (OCT) imaging of the choroid
+### In vivo optical coherence tomography (OCT) imaging of the choroid
 
 Mice were anesthetized with intraperitoneal ketamine (90 mg/kg) and xylazine (8 mg/kg) and their pupils were dilated. Choroidal and retinal structure was assessed using OCT imaging (Spectralis, Heidelberg Engineering) in anesthetized animals through a dilated pupil. OCT images in the enhanced depth imaging (EDI)-mode were captured longitudinally in individual experimental animals in the same matched fundus location (with images captured using ‘follow-up’ mode in the instrument software). The imaging was performed using a 30x objective (Heidelberg) and scan fields, measuring 6.5 by 4.4 mm and centered on the optic nerve (1000 A-scans/horizontal B-scan, 25 horizontal B-scans, average of three frames per B-scan, each spaced 182 µm apart) were captured in each imaging session. Repeat OCT imaging was performed at 1, 3, 5, and 7 weeks following the initiation of PLX5622. Thickness measurements in OCT images were made using the instrument manufacturer software; choroidal thickness measurements (defined as the axial distance from the Bruch’s membrane to the outer edge of the choroid) were measured at 300 µm temporal and nasal from the optic nerve on the horizontal meridian, and average retinal thickness measurements per eye (defined as the axial distance from the vitreal surface to the Bruch’s membrane) were made at 300 µm temporal and nasal from the optic nerve in corresponding locations.
 
-## Direct labeling and visualization of choroidal vessels
+### Direct labeling and visualization of choroidal vessels
 
 Choroidal vessels are labeled by cardiac perfusion of an aqueous solution containing 1,19-dioctadecyl-3,3,39,39-tetramethylindocarbocyanine perchlorate (DiI, D-282, Invitrogen/Molecular Probes, Carlsbad, CA), a lipophilic dye that incorporates into membranes of endothelial cells revealing the structure of choroidal vessels as previously described (Kumar et al., 2014). Briefly, experimental mice were euthanized by carbon dioxide inhalation and the thoracic cavity opened to expose the heart. A volume of 100 µL of DiI stock solution (6 mg/ml in 100% ethanol) was dissolved in 5 ml of diluent comprising 1xPBS and 5% glucose in a 1:4 ratio and the resulting solution delivered via cardiac perfusion at a rate of 1–2 mL/min. This was immediately followed by the perfusion of 6 mL of PBS. The animals were immediately enucleated and the retinal pigment epithelium (RPE)-sclera-choroid complex dissected from the harvested globes after fixation with 4% paraformaldehyde. These flat-mount preparations were mounted on glass slides in Fluoromount (Sigma-Aldrich) with the RPE cell layer uppermost. Confocal multiplane z-stack images of Dil-labeled endothelial cells were obtained with confocal microscopy (Zeiss LSM700) under a 63x oil-immersion objective at 300–600 µm temporal and nasal from the optic nerve. Images of labeled vessels in the choriocapillaris were used to compute the fraction of vascular coverage as the fractional area of the imaging field occupied by DiI-labeled vessels using ImageJ Software (NIH).
 
-## Quantitative reverse transcription PCR analysis
+### Quantitative reverse transcription PCR analysis
 
 Quantitative reverse transcription-PCR analysis of isolated mouse choroid was performed to identify the molecular changes after macrophage depletion. RPE-sclerochoroidal tissue were acutely isolated from euthanized animals and total RNA was extracted using a RNeasy Mini kit (Qiagen) and amplified to cDNA using the PrimeScript 1st strand cDNA synthesis kit (TaKaRa Bio) per manufacturers’ instructions. cDNA in 1 µL volume was used for real-time PCR analysis using SYBR Green PCR Mastermix (Affymetrix) on the CFX96 Real-Time System (Bio-Rad). Levels of mRNA expression were normalized to those in controls as determined using the comparative CT (2ΔΔCT) method. GAPDH was used as an internal control. Tgfb1 primer was purchased from Bio-Rad (Assay ID qMmuCID0017320), and other oligonucleotide primer pairs used are listed in the Key Resources Table.
 
-## Histological analysis of Choroid-RPE sections
+### Histological analysis of Choroid-RPE sections
 
 Eyes from control and 7 weeks PLX5622-treated animals were isolated and fixed for 30 min in 4% glutaraldehyde followed by 10% formalin for at least 24 hr. Fixed eyes were embedded in methacrylate, serially sectioned and stained with hematoxylin and eosin. Images were taken with a Zeiss microscope and mean thickness of the choroid from temporal and nasal quadrants and mean cross-sectional area of vascular lumina were measured using ImageJ software (NIH).
 
-## Transmission Electron Microscopy of RPE sections
+### Transmission Electron Microscopy of RPE sections
 
 The eyes from control and PLX5622-treated mice were isolated and fixed in 2.5% glutaraldehyde. The specimens were prepared for transmission electron microscopy (TEM) as previously described (Ogilvy et al., 2014). Briefly, specimens were embedded in Spurr's epoxy resin and processed into ultrathin sections (90 nm) which were then stained with uranyl acetate and lead citrate and imaged with a transmission electron microscope (JEOL, JM-1010).
 
-## Protein quantitation in choroid-RPE-complex
+### Protein quantitation in choroid-RPE-complex
 
 Mouse RPE-choroidal samples were isolated from the following groups: untreated control group, group treated with 7 weeks of PLX5622, group treated with 3 weeks of PLX5622 and switched to regular diet for another 4 weeks to allow macrophage repopulation. Four biological replicates were obtained for each group. Pigment epithelium-derived factor (PEDF) protein levels were measured in the samples using the Mouse SERPINF1/PEDF ELISA kit (LifeSpan BioSciences; LS-F36110). Protein levels of VEGF, PDGF-AA and PDGF-BB were analyzed using a Magnetic Luminex Assay kit (R and D Systems, LXSAMSM-11).
 
-## Electroretinographic (ERG) analysis
+### Electroretinographic (ERG) analysis
 
 ERGs were recorded using an Espion E2 system (Diagnosys). Mice were dark-adapted for 12 hr and their pupils were dilated prior to ERG assessment. Mice were anesthetized and flash ERG recordings were obtained simultaneously from both eyes using gold wire loop electrodes, with the reference electrode placed in the animal’s mouth and the ground subdermal electrode at the tail. ERG responses were obtained at increasing light intensities over the ranges of 1 × 10−4 to 10 cd·s/m2 under dark-adapted conditions, and 0.3 to 100 cd·s/m2 under a background light that saturates rod function. The stimulus interval between flashes varied from 5 s at the lowest stimulus strengths to 60 s at the highest ones. Two to ten responses were averaged depending on flash intensity. ERG signals were sampled at 1 kHz and recorded with 0.3 Hz low-frequency and 300 Hz high-frequency cutoffs. Analysis of a-wave and b-wave amplitudes was performed using customized Espion ERG Data Analyzer software (v2.2) that digitally filters out high-frequency oscillatory potential wavelets. The a-wave amplitude was measured from the baseline to the negative peak and the b-wave was measured from the a-wave trough to the maximum positive peak. ERGs were recorded before and after macrophage depletion. The a- and b-wave measurements of animals with or without macrophage depletion were compared using a two-way ANOVA.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism 7.0d (GraphPad). For comparisons involving two data columns, t tests (paired or unpaired) or nonparametric tests (Mann–Whitney U) were used, depending on whether the data followed a Gaussian distribution as determined by normality tests. A normality test (D’Agostino and Pearson) was used to analyze the distribution of all datasets. For comparisons involving three or more data columns, a one-way ANOVA (with Dunnett’s multiple-comparisons test) was used if the data in an experimental group were found in a Gaussian distribution, and a nonparametric Kruskal–Wallis test (with Dunn’s multiple-comparisons test) was used otherwise.

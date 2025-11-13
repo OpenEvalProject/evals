@@ -22,21 +22,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02ey6qs66 Department of Immunization Program, Zhejiang Provincial Center for Disease Control and Prevention Hangzhou China
-2. https://ror.org/03et85d35 School of Medicine, Ningbo University Ningbo China
-3. https://ror.org/05t45gr77 Xihu District Center for Disease Control and Prevention Hangzhou China
-4. https://ror.org/005mgvs97 Shangyu District Center for Disease Control and Prevention Shaoxing China
-5. https://ror.org/02yr91f43 Kaihua District Center for Disease Control and Prevention Quzhou China
-6. https://ror.org/05t45gr77 Yuecheng District Center for Disease Control and Prevention Shaoxing China
-7. https://ror.org/02yr91f43 Department of Immunization Program, Jiaxing Center for Disease Control and Prevention Jiaxing China
-8. https://ror.org/00dr1cn74 Longyou District Center for Disease Control and Prevention Quzhou China
-9. https://ror.org/00mcjh785 School of Public Health, Xiamen University Xiamen China
+1. Department of Immunization Program, Zhejiang Provincial Center for Disease Control and Prevention Hangzhou China ([ROR:02ey6qs66](https://ror.org/02ey6qs66))
+2. School of Medicine, Ningbo University Ningbo China ([ROR:03et85d35](https://ror.org/03et85d35))
+3. Xihu District Center for Disease Control and Prevention Hangzhou China ([ROR:05t45gr77](https://ror.org/05t45gr77))
+4. Shangyu District Center for Disease Control and Prevention Shaoxing China ([ROR:005mgvs97](https://ror.org/005mgvs97))
+5. Kaihua District Center for Disease Control and Prevention Quzhou China ([ROR:02yr91f43](https://ror.org/02yr91f43))
+6. Yuecheng District Center for Disease Control and Prevention Shaoxing China ([ROR:05t45gr77](https://ror.org/05t45gr77))
+7. Department of Immunization Program, Jiaxing Center for Disease Control and Prevention Jiaxing China ([ROR:02yr91f43](https://ror.org/02yr91f43))
+8. Longyou District Center for Disease Control and Prevention Quzhou China ([ROR:00dr1cn74](https://ror.org/00dr1cn74))
+9. School of Public Health, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))
 
 † Corresponding author
 
 ## Abstract
 
-Although inactivated COVID-19 vaccines are proven to be safe and effective in the general population, the dynamic response and duration of antibodies after vaccination in the real world should be further assessed. We enrolled 1067 volunteers who had been vaccinated with one or two doses of CoronaVac in Zhejiang Province, China. Another 90 healthy adults without previous vaccinations were recruited and vaccinated with three doses of CoronaVac, 28 days and 6 months apart. Serum samples were collected from multiple timepoints and analyzed for specific IgM/IgG and neutralizing antibodies (NAbs) for immunogenicity evaluation. Antibody responses to the Delta and Omicron variants were measured by pseudovirus-based neutralization tests. Our results revealed that binding antibody IgM peaked 14–28 days after one dose of CoronaVac, while IgG and NAbs peaked approximately 1 month after the second dose then declined slightly over time. Antibody responses had waned by month 6 after vaccination and became undetectable in the majority of individuals at 12 months. Levels of NAbs to live SARS-CoV-2 were correlated with anti-SARS-CoV-2 IgG and NAbs to pseudovirus, but not IgM. Homologous booster around 6 months after primary vaccination activated anamnestic immunity and raised NAbs 25.5-fold. The neutralized fraction subsequently rose to 36.0% for Delta (p=0.03) and 4.3% for Omicron (p=0.004), and the response rate for Omicron rose from 7.9% (7/89)–17.8% (16/90). Two doses of CoronaVac vaccine resulted in limited protection over a short duration. The inactivated vaccine booster can reverse the decrease of antibody levels to prime strain, but it does not elicit potent neutralization against Omicron; therefore, the optimization of booster procedures is vital. Key Research and Development Program of Zhejiang Province; Key Program of Health Commission of Zhejiang Province/ Science Foundation of National Health Commission; Major Program of Zhejiang Municipal Natural Science Foundation; Explorer Program of Zhejiang Municipal Natural Science Foundation.
+Background:Although inactivated COVID-19 vaccines are proven to be safe and effective in the general population, the dynamic response and duration of antibodies after vaccination in the real world should be further assessed.Methods:We enrolled 1067 volunteers who had been vaccinated with one or two doses of CoronaVac in Zhejiang Province, China. Another 90 healthy adults without previous vaccinations were recruited and vaccinated with three doses of CoronaVac, 28 days and 6 months apart. Serum samples were collected from multiple timepoints and analyzed for specific IgM/IgG and neutralizing antibodies (NAbs) for immunogenicity evaluation. Antibody responses to the Delta and Omicron variants were measured by pseudovirus-based neutralization tests.Results:Our results revealed that binding antibody IgM peaked 14–28 days after one dose of CoronaVac, while IgG and NAbs peaked approximately 1 month after the second dose then declined slightly over time. Antibody responses had waned by month 6 after vaccination and became undetectable in the majority of individuals at 12 months. Levels of NAbs to live SARS-CoV-2 were correlated with anti-SARS-CoV-2 IgG and NAbs to pseudovirus, but not IgM. Homologous booster around 6 months after primary vaccination activated anamnestic immunity and raised NAbs 25.5-fold. The neutralized fraction subsequently rose to 36.0% for Delta (p=0.03) and 4.3% for Omicron (p=0.004), and the response rate for Omicron rose from 7.9% (7/89)–17.8% (16/90).Conclusions:Two doses of CoronaVac vaccine resulted in limited protection over a short duration. The inactivated vaccine booster can reverse the decrease of antibody levels to prime strain, but it does not elicit potent neutralization against Omicron; therefore, the optimization of booster procedures is vital.Funding:Key Research and Development Program of Zhejiang Province; Key Program of Health Commission of Zhejiang Province/ Science Foundation of National Health Commission; Major Program of Zhejiang Municipal Natural Science Foundation; Explorer Program of Zhejiang Municipal Natural Science Foundation.
 
 ## Introduction
 
@@ -50,7 +50,7 @@ We explored the dynamic responses and durations of antibodies against SARS-CoV-2
 
 ## Materials and methods
 
-## Study design and participants
+### Study design and participants
 
 The cross-sectional investigation was conducted in five counties of Zhejiang Province, mainland China (Xihu, Yuecheng, Shangyu, Kaihua, and Longyou Districts), after nationwide COVID-19 vaccinations from May to October 2021. Potential participants aged 18–59 years who had no prior vaccinations or were vaccinated with one or two doses of CoronaVac (Sinovac Life Sciences, Beijing, China) were recruited from the community. Individuals with a history of infection with SARS-CoV-2 (based on epidemic surveillance system) or the use of blood products or immunosuppressive drugs were excluded. We randomly enrolled 1067 volunteers, including those on day 0 (V-0, no vaccination), day 14±2 (V1-14d), and day 28±3 (V1-28d) after the first vaccine dose, and day 30±3 (V2-1m), day 90±7 (V2-3m), day 180±14 (V2–6 m), day 270±14 (V2-9m), and day 365±30 (V2-12m) after the second dose and collected their venous blood samples (3–5 ml) to detect serum antibody levels (Figure 1A). This was not a longitudinal survey, as different subjects were enrolled at each point in time. We employed a questionnaire survey at blood drawing visits to gather demographic information.
 
@@ -60,37 +60,225 @@ The cross-sectional investigation was conducted in five counties of Zhejiang Pro
 
 In the prospective cohort study, we recruited 90 healthy adults aged 18–80 years from Jiaxing city, Zhejiang, in June 2021. The main exclusion criteria included previous or later SARS-CoV-2 infection; allergy to any ingredient included in the vaccine; those who had received any blood products or any research medicines or vaccines in the past month; those who had uncontrolled epilepsy or other serious neurological diseases, acute febrile disease, acute onset of chronic diseases, or uncontrolled severe chronic diseases; and those who were unable to comply with the study schedule. Subjects were administered 4 µg/0.5 mL of CoronaVac following a 3-shot vaccine schedule 28 days and 6 months apart. Following that, venous blood (3–5 ml) was collected from recipients at five time points: day 0 (Pre-V, before vaccination), day 30±3 (V2-1m), day 90±7 (V2-3m), and day 180±14 (V2-6m) after the second dose, and day 30±3 (V3-1m) after the third dose (Figure 1B).
 
-## SARS-CoV-2-specific IgG and IgM assay
+### SARS-CoV-2-specific IgG and IgM assay
 
 The commercial detection kit iFlash-2019-nCoV NAb assay (Shenzhen YHLO Biotech Co. Ltd., Shenzhen, China) was employed to measure the levels of IgG and IgM against SARS-CoV-2 spike glycoprotein (S) and nucleocapsid protein (N) by chemiluminescence immunoassay. Briefly, serum samples were allowed to form a complex with SARS-CoV-2 S- and N-protein antigen-coated paramagnetic microparticles, then an acridinium-ester-labeled ACE2 conjugate was added to competitively combine with the particles, forming another reaction mixture. The analyzer converted relative light units (RLUs) into an antibody titer (AU/mL) through a two-point calibration curve. An inverse relationship existed between the amount of SARS-CoV-2 NAb in the sample and the RLUs detected by the iFlash optical system. According to the manufacturer, titers of ≥10.0 AU/mL and ≥1.0 AU/mL are considered positive (or reactive) for IgG and IgM, respectively. IgG and IgM against SARS-CoV-2 receptor binding domain (RBD) were detected using a commercial ELISA kit (Bioscience Biotech Co. Ltd., Chongqing, China). The positive cutoff values for RBD-specific IgG and IgM antibodies were defined as titers of ≥1.0 AU/mL. All tests were performed according to the manufacturer’s protocols (Chan et al., 2021; Li et al., 2021).
 
-## Live virus neutralization antibody assays
+### Live virus neutralization antibody assays
 
 The levels of neutralizing antibodies to live SARS-CoV-2 were assessed by the reduction in the cytopathic effect (CPE) in Vero cells with infectious SARS-CoV-2 strain 19nCoVCDC-Tan-HB01 (HB01) in a BSL-3 laboratory (Zhang et al., 2021). Briefly, serum samples were heat-inactivated for 30 min at 56 °C and successively diluted from 1:4 to the required concentration in a twofold series. An equal volume of challenge solution containing 100 TCID50 virus was added. After neutralization in a 37 °C incubator for 2 h, a 1.5–2.5×105 /ml cell suspension was added to the wells. The CPE (cytopathic effect) on VeroE6 cells was analyzed at 4 days post-infection. NT50 (50% neutralization titer, the reciprocal of the highest dilution protecting 50% of the cells from virus challenge) was used to show the neutralization titers. NT50 above 1:4 was defined as positive.
 
-## Pseudovirus-based neutralization test
+### Pseudovirus-based neutralization test
 
 Serum samples were also quantified for their content of SARS-CoV-2-neutralizing antibodies to wildtype (Wuhan), Delta (B.1.617.2), and Omicron (B.1.1.529) using the pseudovirus-based virus neutralization test (Nie et al., 2020). Briefly, serum samples and a positive or negative reference sample were each diluted 50 times with phosphate-buffered saline combined with 50 µl of pseudovirus diluent per well in a 96-well plate. The mixed sample/pseudovirus was incubated at 37 °C and 5% CO2 for 1 hr. A 2×105 /ml BHK-21-ACE2 cell suspension was added to each well of the plate containing the sample/pseudovirus mixture, then the plate was incubated in a 37 °C and 5% CO2 cell incubator for 48 hr. Finally, the number of green-fluorescence-protein-positive cells per well was read with a porous plate imager (Tecan, Shanghai, SparkCyto). The results were determined by comparing the neutralized fraction using the following calculation: (1 – (fluorescence value of each well/average virus control value))×100% (Karaba et al., 2022). At least four wells were left blank for calibration to 0% inhibition.
 
-## Statistical analysis
+### Statistical analysis
 
 Sex, age, BMI, and other clinical characteristics were collected for each vaccination recipient. We used the medians and interquartile ranges (IQR) for age, and numbers (percentages) for categorical variables. Specific binding antibodies against SARS-CoV-2 (IgG, IgM) and neutralized fraction of SARS-CoV-2-neutralizing antibodies are presented as mean ± standard error (SEM). Neutralizing antibodies are presented as geometric mean titers (GMT), and their 95% confidence interval (CI) was calculated with Student’s t distribution on log-transformed data and then back-transformed. Comparisons of titer-level differences between the two groups were performed using the paired Student’s t-test. One-way analysis of variance (one-way ANOVA) was used to analyze the differences between the mean values at different timepoints. Correlations between NAb titers, neutralized fraction, and IgG/IgM levels were evaluated by Pearson’s correlation coefficient. Statistical tests were two-sided, and we considered p-values of less than 0.05 as statistically significant. All statistical analyses were conducted in SPSS 18.0 (IBM Corporation, Armonk, NY, USA) and GraphPad Prism 9 (San Diego CA, USA).
 
 ## Results
 
-## Study participant characteristics
+### Study participant characteristics
 
 We conducted a cross-sectional survey and recruited 1067 volunteers who had no vaccination or were vaccinated with one or two doses of CoronaVac in October 2020 or later in this multicenter study. Participants ranged in age from 18 to 59 years, with a median age of 40 years (IQR, [32-48]), and there was a balanced distribution of males (43.3%) and females (56.7%). Samples were collected at eight timepoints, including V-0 (n=91), V1-14d (n=125), and V1-28d (n=91) after vaccination with the first dose and V2-1m (n=100), V2-3m (n=110), V2-6m (n=160), V2-9m (n=190), and V2-12m (n=200) after vaccination with the second dose (Figure 1A). Demographic data for the vaccine recipients are summarized in Table 1.
 
+**Table 1.**
+ Baseline characteristics and anti-S/N antibody levels in the cross-sectional study.Table 1—source data 1.Baseline characteristics and anti-S/N antibody levels in the cross-sectional study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>V-0N=91</th>
+      <th>V1-14dN=125</th>
+      <th>V1-28dN=91</th>
+      <th>V2-1mN=100</th>
+      <th>V2-3mN=110</th>
+      <th>V2-6mN=160</th>
+      <th>V2-9mN=190</th>
+      <th>V2-12mN=200</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median age (IQR), years</td>
+      <td>38(31,47)</td>
+      <td>39(34,47)</td>
+      <td>38(31,47)</td>
+      <td>40(32,50)</td>
+      <td>41(33,55)</td>
+      <td>41(31,48)</td>
+      <td>41(31,48)</td>
+      <td>41(34,49)</td>
+    </tr>
+    <tr>
+      <td colspan="9">Sex</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>37</td>
+      <td>45</td>
+      <td>37</td>
+      <td>49</td>
+      <td>54</td>
+      <td>80</td>
+      <td>85</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>54</td>
+      <td>80</td>
+      <td>54</td>
+      <td>51</td>
+      <td>56</td>
+      <td>80</td>
+      <td>105</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td colspan="9">IgM</td>
+    </tr>
+    <tr>
+      <td>Concentration (AU/ml)</td>
+      <td>0.4±0.02</td>
+      <td>5.1±1.0</td>
+      <td>5.1±0.9</td>
+      <td>1.4±0.2</td>
+      <td>0.4±0.1</td>
+      <td>0.3±0.04</td>
+      <td>0.3±0.04</td>
+      <td>0.2±0.03</td>
+    </tr>
+    <tr>
+      <td>Seropositivity (%)</td>
+      <td>3.3</td>
+      <td>57.6</td>
+      <td>75.8</td>
+      <td>33.0</td>
+      <td>3.6</td>
+      <td>4.4</td>
+      <td>4.7</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td colspan="9">IgG</td>
+    </tr>
+    <tr>
+      <td>Concentration (AU/ml)</td>
+      <td>0.6±0.1</td>
+      <td>3.7±0.5</td>
+      <td>64.3±5.8</td>
+      <td>79.7±5.7</td>
+      <td>29.4±2.4</td>
+      <td>10.5±0.9</td>
+      <td>8.9±1.0</td>
+      <td>6.8±0.9</td>
+    </tr>
+    <tr>
+      <td>Seropositivity (%)</td>
+      <td>0.0</td>
+      <td>7.2</td>
+      <td>97.8</td>
+      <td>97.0</td>
+      <td>88.2</td>
+      <td>32.5</td>
+      <td>22.1</td>
+      <td>13.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are n (%) or median (IQR), or mean  ± SEM. The seropositivity rate is when positive concentration of anti-S/N antibody is 10.0 AU/mL (IgG) and ≥1.0 AU/mL (IgM) or more._
+
 In the prospective cohort study, we recruited 90 healthy adults who met all inclusion criteria and no exclusion criteria, including 40 (44.4%) males and 50 (56.6%) females with a median age of 64 years (IQR, [39-70]), 33.3% of whom had a BMI of ≥24.0 kg/m2, and 33.3% had ≥1 underlying comorbidity (most commonly hypertension and diabetes) (Table 2). The participants were administered a standard dose of the CoronaVac vaccine on days 0 and 28 and a booster dose after month 7. Blood samples were collected at study visit 0 (Pre-V) before vaccination; visit 1 (V2-1m), visit 2 (V2-3m), and visit 3 (V2-6m) after vaccination with the second dose; and visit 4 (V3-1m) after the third dose (Figure 1B). None of participants had a history of laboratory-confirmed SARS-CoV-2 infection.
 
-## Dynamics of antibody responses to primary vaccination
+**Table 2.**
+ Baseline characteristics for the prospective cohort.Table 2—source data 1.Baseline characteristics for the prospective cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N=90</th>
+      <th>P (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Age group (years)</td>
+    </tr>
+    <tr>
+      <td>18–44</td>
+      <td>28</td>
+      <td>31.1</td>
+    </tr>
+    <tr>
+      <td>45–64</td>
+      <td>21</td>
+      <td>23.3</td>
+    </tr>
+    <tr>
+      <td>65–80</td>
+      <td>41</td>
+      <td>45.6</td>
+    </tr>
+    <tr>
+      <td colspan="3">Sex</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>40</td>
+      <td>44.4</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>50</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <td colspan="3">BMI (kg/m2)</td>
+    </tr>
+    <tr>
+      <td>&lt;18.5</td>
+      <td>3</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>18.5–23.9</td>
+      <td>57</td>
+      <td>63.4</td>
+    </tr>
+    <tr>
+      <td>≥24</td>
+      <td>30</td>
+      <td>33.3</td>
+    </tr>
+    <tr>
+      <td colspan="3">Chronic conditions</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>30</td>
+      <td>33.3</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>60</td>
+      <td>66.7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dynamics of antibody responses to primary vaccination
 
 To explore the dynamic changes in humoral immune responses to the inactivated COVID-19 vaccine, we first evaluated the recipients’ anti-S/N IgM and IgG development at different timepoints (Figure 2A). The titer of anti-S/N-IgM on day 0 increased to 5.1±1.0 AU/ml on day 28 after the first dose, though the seropositivity rate was 57.6%. The seropositivity rates of anti-S/N-IgM reached a peak of 75.8% (5.1±0.9 AU/ml) approximately 28 days after the first dose, while the seropositivity of anti-S/N-IgG reached 97.0% (79.7±5.7 AU/ml) approximately 28 days after the second dose. The titer of anti-S/N-IgM rapidly declined to 1.4±0.2 AU/ml, which is close to the threshold value, 28 days after the second dose, while anti-S/N-IgG declined to 10.5±0.9 AU/ml during month 6 after the second dose. A small percentage of the population still had anti-S/N IgG antibodies, with seropositivity rates of 22.1% and 13.5%, respectively, during months 9 and 12 after the second dose (Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84056/elife-84056-fig2-v2.jpg)
 
-**Figure 2.:** (A, B) Dynamic changes in anti-S/ N- (A) and anti-RBD- (B) specific IgM/IgG in serum samples from CoronaVac-vaccinated participants at V-0, V1-14d, V1-28d, V2-1m, V2-3m, V2-6m, V2-9m, and V2-12m. (C) Correlation between levels of anti-S/anti-N- and anti-RBD-specific antibodies in IgM (left) or IgG (right) at V2-1m. Dates are presented as mean ± SEM. One-way analysis of variance was used for comparison. Correlations were assessed using Pearson’s correlation coefficient. Two-tailed p values were calculated. ns, not significant, * p<0.05, **p<0.01, ***p<0.001.Figure 2—source data 1.
+**Figure 2.:** (A, B) Dynamic changes in anti-S/ N- (A) and anti-RBD- (B) specific IgM/IgG in serum samples from CoronaVac-vaccinated participants at V-0, V1-14d, V1-28d, V2-1m, V2-3m, V2-6m, V2-9m, and V2-12m. (C) Correlation between levels of anti-S/anti-N- and anti-RBD-specific antibodies in IgM (left) or IgG (right) at V2-1m. Dates are presented as mean ± SEM. One-way analysis of variance was used for comparison. Correlations were assessed using Pearson’s correlation coefficient. Two-tailed p values were calculated. ns, not significant, * p<0.05, **p<0.01, ***p<0.001.
 
 S protein RBD binding to the angiotensin converting enzyme 2 (ACE2) receptor is a critical initial step in the entry of SARS-CoV-2 into target cells (Zuo et al., 2022). We detected the anti-RBD IgM and IgG levels in the serum samples at several timepoints after the second dose (Figure 2B). The results were similar to those for anti-S/N antibodies, showing peak levels of anti-RBD-IgM (1.8±0.4 AU/ml) and anti-RBD-IgG (18.0±1.6 AU/ml) 1 month after the second dose, after which, the levels of both gradually waned. Furthermore, analysis showed a good correlation between IgM or IgG and anti-S/N and anti-RBD antibodies (R2=0.7364, p<0.001; R2=0.7170, p<0.001, Figure 2C).
 
@@ -98,27 +286,184 @@ Participants were tested with a live virus-based and pseudovirus-based neutraliz
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84056/elife-84056-fig3-v2.jpg)
 
-**Figure 3.:** (A, B) Dynamic changes in GMT of NAb titer (A) and neutralized fraction (B) in serum samples from CoronaVac-vaccinated participants at V-0, V2-1m, V2-3m, V2-6m, V2-9m, and V2-12m. (C) Correlation among levels of anti-SARS-CoV-2-IgM and IgG, GMT of NAb titer, and neutralized fraction at V2-1m. One-way analysis of variance was used for comparison. Correlations were assessed using Pearson’s correlation coefficient. Two-tailed p values were calculated. ns, not significant, * p<0.05, **p<0.01, ***p<0.001.Figure 3—source data 1.
+**Figure 3.:** (A, B) Dynamic changes in GMT of NAb titer (A) and neutralized fraction (B) in serum samples from CoronaVac-vaccinated participants at V-0, V2-1m, V2-3m, V2-6m, V2-9m, and V2-12m. (C) Correlation among levels of anti-SARS-CoV-2-IgM and IgG, GMT of NAb titer, and neutralized fraction at V2-1m. One-way analysis of variance was used for comparison. Correlations were assessed using Pearson’s correlation coefficient. Two-tailed p values were calculated. ns, not significant, * p<0.05, **p<0.01, ***p<0.001.
 
-## Antibody responses before and after booster immunization
+### Antibody responses before and after booster immunization
 
 With the dampening of antibody responses to the CoronaVac vaccine, we gave the cohort of 90 individuals booster immunizations up to 6 months after the second dose, and the antibody-titer-level distributions are shown in the violin plot in Figure 4. At month 1 after the second dose, the seropositivity of anti-S/N and anti-RBD IgGs were 96.7% and 100.0% and reached peak levels of 67.4±5.0 AU/ml and 9.4±0.8 AU/ml, respectively. After which point, they slowly diminished over time to 9.4±1.6 AU/ml and 2.8±0.2 AU/ml, respectively, in month 6. Injection of the booster dose stimulated these levels back to 131.3±8.6 AU/ml and 21.7±1.8 AU/ml at month 1 post-booster, 14.0- and 7.8-fold increases from the lowest point, respectively (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84056/elife-84056-fig4-v2.jpg)
 
-**Figure 4.:** (A, B) Dynamic changes in anti-S/N IgM and IgG (A), GMT of NAb titer, and neutralized fraction (B) in serum samples from CoronaVac-vaccinated participants at V-0, V2-1m, V2-3m, V2-6m, and V3-1m. One-way analysis of variance was used for comparison. Two-tailed P values were calculated. ns, not significant, * p< 0.05, **p < 0.01, ***p < 0.001.Figure 4—source data 1.
+**Figure 4.:** (A, B) Dynamic changes in anti-S/N IgM and IgG (A), GMT of NAb titer, and neutralized fraction (B) in serum samples from CoronaVac-vaccinated participants at V-0, V2-1m, V2-3m, V2-6m, and V3-1m. One-way analysis of variance was used for comparison. Two-tailed P values were calculated. ns, not significant, * p< 0.05, **p < 0.01, ***p < 0.001.
 
 After the primary two doses and the third booster dose, a similar increasing trend was observed in the two neutralization test results (Figure 4B). The GMT of the NAb titer peaked at 29.4 (95% CI: 23.5–24.2) and dropped to 6.6 (95% CI: 5.4–8.0) at month 6, which was a 4.5-fold attenuation of the peak value, with the total seropositivity dropping from 98.9% to 57.8%. After the booster dose, the GMT increased to 168.2 (95% CI: 139.7–202.6), that is, 25.5-fold higher, at month 6, which was 5.7-fold higher than the first peak. The result showed that the neutralized fraction for the pseudovirus peaked at 72.7% ± 1.6% before gradually decreasing to 21.4% ± 1.7% in month 6 but increased to 84.3% ± 1.7% after the booster.
 
 The levels of antibodies grouped by age (i.e. 18–44 y.o., 45–64 y.o., and≥65y.o.), sex, BMI, and chronic conditions at each monitoring point are presented in Table 3. The Nab titer showed a statistically significant difference among age groups during months 1–6 after the primary vaccination, but there was no significant difference (p=0.369) after the booster dose. Females exhibited a higher NAb titer than males [199.3 (95% CI: 159.2–249.5) vs 136.1 (95% CI: 99.9–185.4), p=0.039] after the booster vaccination. However, there were no statistically significant differences in antibody titer levels between the different BMI or chronic conditions groups.
 
-## Antibody responses to Delta and Omicron variants
+**Table 3.**
+ The influence of age to GMT and Seropositivity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time point</th>
+      <th>Statistic</th>
+      <th>Total</th>
+      <th>18–44 years</th>
+      <th>45–64 years</th>
+      <th>≥65 years</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-V</td>
+      <td>GMT</td>
+      <td>2.1</td>
+      <td>2.2</td>
+      <td>2.1</td>
+      <td>2.1</td>
+      <td>0.908</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% CI</td>
+      <td>2.0–2.2</td>
+      <td>1.9–2.4</td>
+      <td>1.9–2.4</td>
+      <td>2.0–2.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Seropositivity (%)</td>
+      <td>3.3</td>
+      <td>3.6</td>
+      <td>4.8</td>
+      <td>2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V2-1m</td>
+      <td>GMT</td>
+      <td>29.4</td>
+      <td>33.2</td>
+      <td>36.8</td>
+      <td>24.3</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% CI</td>
+      <td>23.5–24.2</td>
+      <td>25.3–43.4</td>
+      <td>24.3–55.7</td>
+      <td>20.0–29.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Seropositivity (%)</td>
+      <td>98.9</td>
+      <td>100</td>
+      <td>95.2</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V2-3m</td>
+      <td>GMT</td>
+      <td>15.5</td>
+      <td>22.9</td>
+      <td>16.0</td>
+      <td>11.5</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% CI</td>
+      <td>13.3–18.0</td>
+      <td>17.0–30.9</td>
+      <td>12.5–20.5</td>
+      <td>9.4–14.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Seropositivity (%)</td>
+      <td>95.5</td>
+      <td>100</td>
+      <td>95.2</td>
+      <td>92.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V2-6m</td>
+      <td>GMT</td>
+      <td>6.6</td>
+      <td>10.2</td>
+      <td>7.9</td>
+      <td>4.4</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% CI</td>
+      <td>5.4–8.0</td>
+      <td>7.0–14.7</td>
+      <td>5.1–12.3</td>
+      <td>3.5–5.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Seropositivity (%)</td>
+      <td>57.8</td>
+      <td>82.1</td>
+      <td>66.7</td>
+      <td>35.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V3-1m</td>
+      <td>GMT</td>
+      <td>168.2</td>
+      <td>217.2</td>
+      <td>152.3</td>
+      <td>148.7</td>
+      <td>0.369</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% CI</td>
+      <td>139.7–202.6</td>
+      <td>165.7–287.7</td>
+      <td>97.3–238.5</td>
+      <td>110.7–199.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Seropositivity (%)</td>
+      <td>100.0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_The seropositivity rate is when positive NT50 is above 1:4.GMT, geometric mean titers._
+
+### Antibody responses to Delta and Omicron variants
 
 Mutations in the RBD may lead to a reduction in the antibody neutralization susceptibility of VOC (Liu et al., 2021). We furthermore measured the levels of neutralizing antibodies against the Delta (B.1.617.2) and Omicron (B.1.1.529) variants from serum samples in month 1 after the primary and booster immunizations (Figure 5). Of note, in individuals vaccinated with two doses of the inactivated vaccine, the neutralized fraction for the pseudovirus against the Delta variant and, in particular, the Omicron variant were much lower compared with that against the Wuhan strain (28.4% vs 72.4%, 0.5% vs 72.4%, p≤0.001). However, the booster vaccination gave rise to a slight increase in neutralizing activity against the variants. The neutralized fraction subsequently rose to 36.0% for Delta (p=0.03) and 4.3% (p=0.004) for Omicron after booster dose of inactivated vaccine. The response rate (neutralized fraction >0%) for Omicron rose from 7.9% (7/89) in the primary two doses to 17.8% (16/90) after booster dose. Therefore, our results showed that the booster of Coronavac did not elicit potent neutralization against Omicron BA.1, although booster dose slightly increased antibody responses.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84056/elife-84056-fig5-v2.jpg)
 
-**Figure 5.:** Neutralized fraction of Wuhan strain, Delta (B.1.617.2), and Omicron (B.1.1.529) variants for CoronaVac primary- and booster-vaccinated participants, as evaluated by pseudovirus-based neutralization test. The paired Student’s t-test and one-way analysis of variance were used for comparison. Two-tailed p values were calculated. * p<0.05, **p<0.01, ***p<0.001.Figure 5—source data 1.
+**Figure 5.:** Neutralized fraction of Wuhan strain, Delta (B.1.617.2), and Omicron (B.1.1.529) variants for CoronaVac primary- and booster-vaccinated participants, as evaluated by pseudovirus-based neutralization test. The paired Student’s t-test and one-way analysis of variance were used for comparison. Two-tailed p values were calculated. * p<0.05, **p<0.01, ***p<0.001.
 
 ## Discussion
 

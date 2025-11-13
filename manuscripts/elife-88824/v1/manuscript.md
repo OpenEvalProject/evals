@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02ks53214 Max Planck Institute for Chemical Ecology, Department of Evolutionary Neuroethology Jena Germany
-2. https://ror.org/05b50ej63 Instituto de Investigaciones Biológicas Clemente Estable, Departamento de Biología del Montevideo Uruguay
-3. https://ror.org/00tw3jy02 Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom
-4. https://ror.org/05qpz1x62 Institute of Applied Physics, Abbe Center of Photonics, Friedrich Schiller University Jena Jena Germany
+1. Max Planck Institute for Chemical Ecology, Department of Evolutionary Neuroethology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
+2. Instituto de Investigaciones Biológicas Clemente Estable, Departamento de Biología del Montevideo Uruguay ([ROR:05b50ej63](https://ror.org/05b50ej63))
+3. Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+4. Institute of Applied Physics, Abbe Center of Photonics, Friedrich Schiller University Jena Jena Germany ([ROR:05qpz1x62](https://ror.org/05qpz1x62))
 
 † Corresponding author
 
@@ -42,29 +42,257 @@ By using a correlative workflow that combines transgenic markers with FIB-SEM to
 
 ## Results
 
-## Volume-based EM of two different olfactory glomeruli
+### Volume-based EM of two different olfactory glomeruli
 
 To compare the synaptic circuitries of two olfactory glomeruli known to belong to either narrowly or broadly tuned glomerular types in D. melanogaster, we mapped all synapses of glomeruli DA2 (right AL) and DL5 (left AL) in a single female fly (Figure 1A, B) with the aid of FIB-SEM. A partial reconstruction of a second DA2 in another fly was used to measure neuronal volume (see Methods). The reconstructions were based on high resolution (4 × 4 × 20 nm) datasets (Figure 1; Figure 1—video 1), thus allowing reconstruction of the finest neuronal branches (~20 nm diameter; Figure 1C, D) as well as mapping chemical synapses (example in Figure 1E) in the two volumes of interest (VOIs). To restrict the imaging volume to the target VOIs, we employed a correlative approach for the first time for a Drosophila EM volume reconstruction. Glomeruli DA2 and DL5 were identified by their size, shape, and location in brains of transgenic flies (Orco-GAL4; UAS-GCaMP6s) using the glomerular map of Grabe et al., 2015. The flies expressed the green fluorescent protein GCaMP6 coupled with calmodulin and M13 (a peptide sequence from myosin light-chain kinase; Figure 1A, B). Subsequently, the identified glomeruli were marked by laser branding using a two-photon laser (Bishop et al., 2011). These fiducial marks were apparent under both light microscopy (Figure 1A, B) and EM (Figure 1C, D) and facilitated the delimitation of the VOIs during FIB-SEM scanning. We produced two complete FIB-SEM datasets: one for glomerulus DA2 and one for DL5 (pure imaging time for both glomeruli: ~60 hr) and a partial dataset for DA2 in a second fly, which was used for volumetric analysis (see data availability).
 
-## Skeleton-based neuron reconstruction and synapse identification
+![Figure 1.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Two-photon laser scans of the antennal lobe in Orco-Gal4; UAS-GCaMP6s flies where Orco-positive olfactory sensory neurons (OSNs) in the glomerular neuropil were labeled by GCaMP (green fluorescence). Glomeruli DA2 (A) and DL5 (B) are encircled. Schematics show their relative position in the antennal lobe. Once the glomerulus of interest was identified, its boundaries were delineated using fiducial marks (white triangles) via laser branding, which enabled their identification at the ultrastructural level. Representative images of the same glomeruli (DA2 in C and DL5 in D) obtained with focused ion beam-scanning electron microscopy (FIB-SEM), showing their ultrastructure. Asterisks indicate the main neurite of uniglomerular projection neurons entering the glomerulus. White triangle shows a two-photon laser mark (see also A and B). (E) FIB-SEM image of a polyadic synapse: the presynaptic site (red arrowhead) is composed of a T-bar shaped presynaptic density, surrounded by small vesicles, and is opposed to several postsynaptic profiles (cyan dots). Scheme of a tetrad synapse: a presynaptic site with its T-bar (red arrowhead) forms four output connections (arrows) with four postsynaptic input sites (cyan dots). (F) A skeleton-based reconstruction of an OSN axon terminal (green line) with presynaptic (red dots) and postsynaptic sites (cyan dots). The dark gray shading surrounding the OSN trace represents the volume-based reconstruction of the same neuron. Tracing and reconstruction were performed within the FIB-SEM dataset (light gray area).
+
+### Skeleton-based neuron reconstruction and synapse identification
 
 We reconstructed all neurons within the two VOIs (example neuron: Figure 1F) and mapped all their synaptic connections using an iterative skeleton-based reconstruction approach, similar to previously reported procedures (Berck et al., 2016; Schneider-Mizell et al., 2016; Zheng et al., 2018) with the aid of the web-based neuron reconstruction software CATMAID (https://catmaid.readthedocs.io/en/stable/); RRID:SCR_006278; (Cardona et al., 2009; Schneider-Mizell et al., 2016; Figure 1—video 1). Synapses were identified by their presynaptic transmitter release site, which in Drosophila is composed of a presynaptic density called a T-bar, surrounded by synaptic vesicles and apposed postsynaptic elements (Figure 1E), as previously described (Trujillo-Cenóz, 1969; Fröhlich, 1985; Rybak et al., 2016b; Huang et al., 2018; Li et al., 2020b). All synapses observed in our FIB-SEM datasets were polyadic, that is, each presynaptic site connected to multiple postsynaptic sites (see example in Figure 1E), a feature of insect brain synapses (Meinertzhagen and O’Neil, 1991; Malun et al., 1993; Prokop and Meinertzhagen, 2006; Hartenstein, 2016; Rybak et al., 2016b). Some synapses had up to 16 postsynaptic sites, that is, one T-bar and 16 single synaptic profiles (i.e., sixteen 1:1 single output–input connections). Short neuronal fragments (<10 µm), which could not be connected to any neuronal fiber were designated as ‘orphans’. These fragments represented 4% of the total length of all traced neuronal fibers in DA2 and 6% in DL5 and contained about ~12% of all synaptic contacts in both glomeruli.
 
-## Glomerular neurons: classification, description, and inventory
+### Glomerular neurons: classification, description, and inventory
 
 Previous descriptions of the ultrastructural characteristics of the AL in Drosophila helped to classify AL neurons into three main classes (Figure 2A): OSNs, uPNs, and MGNs (cells that interconnect multiple glomeruli). MGNs are further subdivided into mPNs and LNs (Berck et al., 2016; Rybak et al., 2016b; Gruber et al., 2018; Horne et al., 2018; Zheng et al., 2018; Schlegel et al., 2021). Most of the neuronal profiles within the MGN neuron class probably belong to inhibitory local neurons, as this cell type is the most numerous and broadly arborizing of the multiglomerular cell types in the AL (Chou et al., 2010; Lin et al., 2012). In addition, we observed a few neuronal fibers with an electron-dense and vesicle-rich cytosol, which we interpreted to be either peptidergic neurons (Nässel and Homberg, 2006; Eckstein et al., 2024) or the contralaterally projecting, serotonin-immunoreactive deutocerebral (CSD) neuron (Dacks et al., 2006; Goyal and Chaudhury, 2013; Zheng et al., 2018; Coates et al., 2020; Eckstein et al., 2024). Except for these neuronal fibers containing abundant electron-dense vesicles, all other neuronal fibers were assigned to either OSNs, uPNs, or MGNs based on their morphology (Figure 2A, B; see Methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative examples of each neuron class in glomeruli DA2 and DL5. Shown are focused ion beam-scanning electron microscopy (FIB-SEM) images (left column), volumetric neuronal reconstructions (middle column), and skeleton-based neuron traces (right column) for olfactory sensory neurons (OSNs, green), uniglomerular projection neurons (uPNs, magenta), and multiglomerular neurons (MGNs, blue). Key ultrastructural features, including T-bars (black triangle), mitochondria (asterisks), and spinules (white triangle) are indicated on the FIB-SEM images. Volumetric reconstructions (middle column) depict the general morphology of each neuron class. On the skeleton traces, pre- and postsynaptic sites are marked with red and cyan dots, respectively (right column). (B) Average branching intensity (branching points per µm of neuronal fiber length) for each neuron class OSNs, uPNs, and MGNs in DA2 and DL5. Data represent mean + standard deviation (error bars). Data points represent single values. Means were compared using the Wilcoxon two-sample test. No significant differences in branching points/µm were observed for OSNs or MGNs between glomeruli (significance was not tested for uPNs due to the presence of a single uPN in DL5). (C) Schematic summary, for each glomerulus, showing its volume (in µm3), the number of neurons per class (excluding MGNs), the total fiber length of all neurons for each neuron class and the total number of individual synaptic contacts.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ratio between neuronal fiber volume and length in glomerulus DA2. Data represent mean + standard deviation (error bars) (olfactory sensory neurons [OSNs] n = 30; uniglomerular projection neurons [uPNs] n = 5; multiglomerular neurons [MGNs] n = 15). Frequency of T-bars associated with a number of postsynaptic contacts (polyadicity) in OSNs (B), uPNs (C), and MGNs (D) in DA2 (dark shade) and DL5 (light shade).
+
 OSNs formed large, elongated synaptic boutons (Figure 2A), had the largest volume/length ratio of all three neuron classes (Figure 2—figure supplement 1) and displayed the lowest degree of branching intensity of all neurons in both glomeruli (Figure 2B). In agreement with what had been observed in other glomeruli (Rybak et al., 2016b), the majority of output synapses formed by OSN terminals were triads (1:3) and tetrads (1:4). However, the T-bars of OSN synapses showed considerable size variation, with some of them large enough to accommodate up to 16 postsynaptic contacts (Figure 2—figure supplement 1). The frequency of large T-bars was much higher in OSNs than in other neuron classes with an average polyadicity (average number of postsynaptic sites at each T-bar) of 6 (1:6; Table 1, row 14). As OSNs had the greatest T-bar and output density along their axons (Table 1, rows 10 and 11) they also displayed the largest synaptic ratios (both for the T-bars/input sites and output sites/input sites) of all neuron classes (Table 1, rows 12 and 13), which was in line with previous observations (Rybak et al., 2016b).
+
+**Table 1.**
+ Glomerular innervation and synaptic composition.Quantitative comparison of neuronal and synaptic parameters between glomeruli DA2 and DL5 for each neuron class – olfactory sensory neurons (OSNs, green), uniglomerular projection neurons (uPNs, magenta), and multiglomerular neurons (MGNs, blue) – as well as the combined totals. Row 1: Total length of all neurons per neuron class and the overall total length for all neurons for each glomerulus. Rows 2–4: Synapse counts: number of input sites (inputs), output sites (outputs), and T-bars. Row 5: Innervation density: calculated as total neuron length (µm; row 1)/glomerular volume (µm3); glomerular volumes: DA2 = 1500 µm3 and DL5 = 2600 µm3 (see Figure 1C). Rows 6–8: Synaptic density per unit glomerular volume (µm3): total number of all input sites (inputs), output sites (outputs), and T-bars for each neuron class and all neurons divided by glomerular volume. Rows 9–11: Average synaptic density along neuronal fibers (see also Figure 3—figure supplement 1): number of inputs, outputs, or T-bars per µm of neuron length. Rows 12 and 13: Average synaptic ratios: T-bars-to-inputs or outputs-to-inputs. Row 14: Polyadicity: the average number of postsynaptic sites at each T-bar in DA2 and DL5. The ratios in rows 12–14 were calculated based on synaptic counts normalized to neuron length (rows 9–11). The color shading highlights values with a relative difference greater than 20% between DA2 and DL5 (see relative differences, Supplementary file 1). Highlighted values greater in DA2 than DL5 are underlined.Table 1—source data 1.Measurements and analysis of neuronal features (olfactory sensory neurons [OSNs], uniglomerular projection neurons [uPNs], and multiglomerular neurons [MGNs]) in DA2 and DL5 (X_DA2_rAl and X_DL5_lAl), summarized in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Row</th>
+      <th>Values</th>
+      <th>Unit</th>
+      <th colspan="2">OSNs</th>
+      <th colspan="2">uPNs</th>
+      <th colspan="2">MGNs</th>
+      <th colspan="2">All neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>DA2</td>
+      <td>DL5</td>
+      <td>DA2</td>
+      <td>DL5</td>
+      <td>DA2</td>
+      <td>DL5</td>
+      <td>DA2</td>
+      <td>DL5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Total neuronal length</td>
+      <td>µm</td>
+      <td>2012</td>
+      <td>2727</td>
+      <td>4652</td>
+      <td>5015</td>
+      <td>10,705</td>
+      <td>14,411</td>
+      <td>17,370</td>
+      <td>22,153</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td rowspan="3">Total synaptic counts</td>
+      <td>inputs</td>
+      <td>868</td>
+      <td>1083</td>
+      <td>3887</td>
+      <td>3955</td>
+      <td>7229</td>
+      <td>9018</td>
+      <td>11,984</td>
+      <td>14,056</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>outputs</td>
+      <td>6671</td>
+      <td>6828</td>
+      <td>1624</td>
+      <td>3108</td>
+      <td>5659</td>
+      <td>6749</td>
+      <td>13,954</td>
+      <td>16,685</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>T-bars</td>
+      <td>1063</td>
+      <td>1213</td>
+      <td>322</td>
+      <td>602</td>
+      <td>1263</td>
+      <td>1572</td>
+      <td>2648</td>
+      <td>3387</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Total innervation density (sum of length of all neuronal fibers/glomerular volume)</td>
+      <td>µm/µm3</td>
+      <td>1.26</td>
+      <td>1.05</td>
+      <td>2.91</td>
+      <td>1.93</td>
+      <td>6.69</td>
+      <td>5.54</td>
+      <td>10.86</td>
+      <td>8.52</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td rowspan="3">Total glomerular synaptic density (total synaptic counts/glomerular volume)</td>
+      <td>inputs/µm3</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>2.43</td>
+      <td>1.52</td>
+      <td>4.52</td>
+      <td>3.47</td>
+      <td>7.49</td>
+      <td>5.41</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>outputs/µm3</td>
+      <td>4.17</td>
+      <td>2.63</td>
+      <td>1.02</td>
+      <td>1.20</td>
+      <td>3.54</td>
+      <td>2.60</td>
+      <td>8.72</td>
+      <td>6.42</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>T-bars/µm3</td>
+      <td>0.66</td>
+      <td>0.47</td>
+      <td>0.20</td>
+      <td>0.23</td>
+      <td>0.79</td>
+      <td>0.60</td>
+      <td>1.66</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td rowspan="3">Neuronal synaptic density (synaptic counts/neuronal length)</td>
+      <td>inputs/µm</td>
+      <td>0.42</td>
+      <td>0.39</td>
+      <td>0.83</td>
+      <td>0.79</td>
+      <td>0.62</td>
+      <td>0.59</td>
+      <td>0.59</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>outputs/µm</td>
+      <td>3.37</td>
+      <td>2.62</td>
+      <td>0.33</td>
+      <td>0.62</td>
+      <td>0.52</td>
+      <td>0.51</td>
+      <td>1.06</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>T-bars/µm</td>
+      <td>0.53</td>
+      <td>0.46</td>
+      <td>0.07</td>
+      <td>0.12</td>
+      <td>0.12</td>
+      <td>0.12</td>
+      <td>0.19</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td rowspan="2">Synaptic ratio</td>
+      <td>T-bars/inputs</td>
+      <td>1.31</td>
+      <td>1.27</td>
+      <td>0.08</td>
+      <td>0.15</td>
+      <td>0.23</td>
+      <td>0.24</td>
+      <td>0.43</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>outputs/inputs</td>
+      <td>8.29</td>
+      <td>7.29</td>
+      <td>0.40</td>
+      <td>0.79</td>
+      <td>1.04</td>
+      <td>1.11</td>
+      <td>2.40</td>
+      <td>2.17</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Polyadicity</td>
+      <td>outputs/T-bars</td>
+      <td>6.35</td>
+      <td>5.70</td>
+      <td>4.95</td>
+      <td>5.16</td>
+      <td>3.23</td>
+      <td>2.64</td>
+      <td>3.85</td>
+      <td>3.17</td>
+    </tr>
+  </tbody>
+</table>
 
 The uPNs exhibited the highest degree of branching intensity of the three neuron classes in both glomeruli (Figure 2A, B). They showed numerous very fine apical branches that frequently connected multiple times via spines to the same presynaptic site, leading to an entangled 3D shape typical for this neuron class (Figure 2A; Rybak et al., 2016b; Tobin et al., 2017; Schlegel et al., 2021). uPNs had the smallest volume/length ratio of all neuron classes (for the DA2: Figure 2—figure supplement 1A). In addition to having many fine branches, uPN dendrites also had enlarged regions with almost no cytosol that were packed with large mitochondrial profiles extending over considerable distances. These enlarged profiles showed a larger degree of mitochondria fission (dividing and segregating mitochondrion organelles; personal observation) than the other neuron classes with rather round and compact mitochondria (Figure 2A; FIB-SEM image; see data availability). Seven uPNs were found in DA2, confirming light microscopy findings (Grabe et al., 2016). Two of them (PN#1, PN#2; see data availability) branched broadly and innervated the full glomerulus and received more synaptic input than the other 5 uPNs (PN#3–#7; see Figure 5—source data 3), which branched exclusively in sub-regions of the glomerulus, with partial overlap. In addition to abundant clear small vesicles (~20 nm in diameter) (Yasuyama et al., 2003; Strutz et al., 2014; Bates et al., 2020), uPN dendrites also displayed small electron-dense vesicles, as previously reported for PN axon terminals in the mushroom body calyx (Butcher et al., 2012; Yang et al., 2022). These electron-dense vesicles are packed with different types of neuropeptides that act as neuromodulators or co-transmitters (Gondré-Lewis et al., 2012; Croset et al., 2018; Eckstein et al., 2024). In both glomeruli, uPNs had the highest neuronal synaptic input density and the lowest T-bar and output density of the three neuron classes (Table 1, rows 9–11; DA2 and DL5 differences: see next section). The synaptic ratios (T-bars/input sites and output sites/input sites) were much lower for uPNs than for the other neuron classes (Table 1, rows 12 and 13). The majority of uPN dendritic output synapses (feedback synapses) were tetrads in both glomeruli, with an average polyadicity of around 5 lower than in OSNs; (Figure 2—figure supplement 1; Table 1, row 14).
 
 The majority of the neuronal fibers in both glomeruli belonged to MGNs (Figure 2A). MGNs exhibited variable morphology and ultrastructure, as expected, but also shared some ultrastructural features. Their synaptic boutons were formed by thin fibers, thus the volume/length ratio of MGNs was lower than that of OSNs but greater than that of uPNs (Figure 2—figure supplement 1A). A similar relationship was found for the number of output sites and the T-bar density along MGN fibers, which were smaller than in OSNs but larger than in uPNs (Table 1, rows 10 and 11). In contrast, branching intensity in MGNs was larger than in OSNs but smaller than in uPNs (Figure 2B). The synaptic ratio of output-to-input sites was around one (Table 1, rows 12 and 13). MGNs had the lowest polyadicity (~3) of the three neuron classes (Table 1, row 14) and their synapses were mainly triads. Interestingly, besides the abundant clear small vesicles (~20 nm in diameter), some MGNs had small electron-dense vesicles, most likely housing neuropeptides (Carlsson et al., 2010; Croset et al., 2018; Nässel, 2018).
 
-## DA2 is more densely innervated and has a higher synapse density than DL5
+### DA2 is more densely innervated and has a higher synapse density than DL5
 
 In our FIB-SEM datasets, the volume of glomerulus DA2 was 45% smaller than that of glomerulus DL5 (1500 vs. 2640 µm3), which is in agreement with measurements based on light microscopy DA2 = 1600 µm3, DL5 = 2900 µm3 (Grabe et al., 2016). We also confirmed that a similar number of OSNs (44–46 OSNs) innervated both glomeruli (Figure 2C), and that each glomerulus received input from OSNs originating in both the ipsilateral and contralateral antennae (Vosshall et al., 2000; Grabe et al., 2016). Consistent with previous findings (Grabe et al., 2016), the DA2 glomerulus was innervated by seven uPNs, whereas DL5 had a single uPN (Figure 2C). MGN cell numbers could not be determined in our study due to their multiglomerular morphology, which also prevented us from tracing MGN fibers to their soma due to our partial volume acquisition (see Methods).
 
 To investigate differences between DA2 and DL5, we turned our attention to their glomerular innervation and synaptic composition. We measured the total length (sum in µm) of all neuronal fibers of each neuron class within the DA2 and DL5 (Figure 2C; Table 1, row 1). In addition, we counted all T-bars and their output sites (1:1 synaptic contacts) as well as all postsynaptic sites (input sites) for all neuron fibers together and for each neuron class individually (Table 1, rows 2–4). We counted in total ~14,000 synaptic contacts and 2648 T-bars in DA2 and ~17,000 contacts and 3387 T-bars in DL5 (Figure 2C, Table 1, row 4). Most of these synapses were triads and tetrads (Figure 2—figure supplement 1B–D). In order to compare DA2 and DL5, we normalized neuronal length and synaptic numbers to glomerular volume. We then analyzed (1) the innervation density, that is, the length of neuronal fibers per glomerular volume (µm/µm3) and (2) the glomerular synaptic density (T-bar #, output site or input site #/µm3). Data are reported in total for all neuronal fibers of each neuron class (Table 1, rows 5–8) and as an average for neuronal fibers of the respective neuron class (Figure 3). In addition, we compared (3) the average polyadicity for each neuron class (Figure 3) and (4) the average neuronal synaptic density (T-bar, output, and input site density along each neuronal fiber) (#/µm) (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig3-v1.jpg)
+
+**Figure 3.:** Quantification of average glomerular innervation density of olfactory sensory neurons (OSNs) (A), uniglomerular projection neurons (uPNs) (B), multiglomerular neurons (MGNs) (C), and all glomerular neurons combined (D) and synaptic density of input sites (inputs), output sites (outputs), T-bars, and average polyadicity. Innervation density: total length (µm) of each neuronal fiber normalized to one µm3 of glomerular (glom.) volume. Synaptic density: number of input sites, output sites, or T-bars for each neuronal fiber normalized to 1 µm3 of glomerular volume. Polyadicity: average number of single output sites per T-bar for each neuronal fiber. Data for DA2 is shown in dark colors and for DL5 in light colors. Number of neurons in DA2: OSNs (green) n = 44; uPNs (magenta) n = 7; MGNs (blue) n = 180; all neurons n = 231, in DL5: OSNs n = 46; uPN n = 1; MGNs n = 221; all neurons n = 268. Data are presented as mean with standard deviation (error bars). Data points represent single neuron values. Means were compared using either Student’s t-test (OSNs) or Wilcoxon two-sample test (MGNs and all neurons). uPNs were not compared to the single uPN of the DL5 glomerulus. Significance value: p > 0.05 (not significant, no star), p ≤ 0.05 (*), p ≤ 0.01 (**), p ≤ 0.001 (***). Values are provided at data availability; polyadicity values are listed in Table 1, row 14.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Counts of synaptic inputs, synaptic outputs, and T-bars normalized to 1 µm of neuronal length along olfactory sensory neuron (OSN) (A), uniglomerular projection neuron (uPN) (B), or multiglomerular neuron (MGN) (C) fibers and collectively sampled for all neurons (D) within the glomeruli DA2 (dark colors) and DL5 (light colors). DA2: OSNs (green) n = 44; uPNs (magenta) n = 7; MGNs (blue) n = 180; all neurons n = 231. DL5: OSNs n = 46; uPN n = 1; MGNs n = 221; all neurons n = 268. Data represent mean + standard deviation (error bars). Data points represent single values. Means are compared using either Student’s t-test (in OSNs) or Wilcoxon two-sample test (in MGNs and all neurons). The uPNs of the DA2 are not compared to the single uPN of the DL5. Significance value: p > 0.05 (not significant, no star), p ≤ 0.01 (**), p ≤ 0.001 (***). Values are listed in Table 1, rows 9–11.
 
 We observed that the average neuron innervation density of OSNs was 20% higher in DA2 than in DL5 (Figure 3A, Supplementary file 1). Also, the glomerular synaptic density of input sites, output sites, and T-bars along OSNs was significantly higher in DA2 than in DL5 (Figure 3A). OSNs in DA2 formed therefore more input sites, and much more T-bars and output sites per glomerular volume than in DL5 (Table 1, rows 7 and 8; relative differences: Supplementary file 1). In contrast, the density of input sites distributed along the length of OSN fibers was similar in DA2 and DL5, whereas T-bar and output site density along the OSN axons was significantly higher in DA2 (Figure 3—figure supplement 1B).
 
@@ -74,9 +302,17 @@ We then hypothesized that DA2 would exhibit a lower innervation density of MGNs 
 
 In summary, the DA2 glomerulus is more densely innervated than DL5 and has a more densely packed neuropil with more synaptic contacts relative to the DL5. The DA2 has a significantly higher innervation density and higher density of T-bars, output and input sites per volume (Figure 3D, Table 1, rows 5–8). The degree of synapse polyadicity is also significantly higher in DA2 than in DL5 (Figure 3D, Table 1, row 14) due to a shift to higher polyadicity among OSN (Figure 3A) and MGN synapses (Figure 3C). OSNs show the strongest shift in polyadicity, with tetrads being the most abundant synapse type in DA2 whereas triads are the most abundant in DL5 OSNs (Figure 2—figure supplement 1B).
 
-## Lateralization of OSN glomerular connectivity
+### Lateralization of OSN glomerular connectivity
 
 In D. melanogaster, the majority of olfactory glomeruli receive bilateral OSN input (Stocker et al., 1983; Stocker et al., 1990; Vosshall et al., 2000; Silbering et al., 2011) (see scheme in Figure 4A). Recent studies have shown that ipsi- and contralateral OSNs are asymmetric in their synaptic connectivity to other neurons in the majority of the glomeruli (Tobin et al., 2017; Schlegel et al., 2021) and that ipsi- and contralateral OSNs activate uPNs in an asymmetric way (Gaudry et al., 2013; Tobin et al., 2017). However, not all glomeruli appear to have the same degree of lateralized OSN connectivity (Schlegel et al., 2021). At least for one narrowly tuned pheromonal glomerulus (DA1), there is functional evidence that in female flies (but not in males) its uPNs are evenly activated by either ipsi- or contralateral antennal stimulation (Agarwal and Isacoff, 2011). We hypothesized that this lack of lateralization could be a feature of other narrowly tuned glomeruli in female flies.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig4-v1.jpg)
+
+**Figure 4.:** (A) Illustration of an ipsilateral (dark green) and a contralateral (light green) OSN with dendrites in the corresponding antennae and their axonal projections to the ipsilateral olfactory glomerulus in the AL (dashed rectangle). (B) Exemplary skeleton traces of an ipsilateral (dark green) and a contralateral (light green) OSN terminal inside glomerulus DA2. The ipsilateral OSN axons reach the glomerulus via the ipsilateral antennal nerve (arrow down) and leave the glomerulus toward the AL commissure (arrow up) while OSN axons originating at the contralateral antenna reach the glomerulus via the AL commissure. Red dots: presynaptic sites; blue dots: postsynaptic sites. (C) Boxplots showing the fraction of synaptic output to uniglomerular projection neurons (uPNs, in magenta), to OSNs (in green), or to multiglomerular neurons (MGNs) (in blue), for the ipsilateral OSNs (dark green boxplot) and contralateral OSNs (light green), respectively, in the DA2, DL5, and VA1v glomeruli. (D) Boxplots showing the fraction of synaptic input of the same ipsilateral and contralateral OSNs that they receive from OSNs and MGNs. Connection polarity is indicated by arrows in the schematic neuronal drawings on the left of each plot. Dots represent single values. Means were compared using Student’s t-test. Significance value: p > 0.05 (not significant, no star), p ≤ 0.01 (**), p ≤ 0.001 (***). Mean and median values are provided at data availability. The data for glomerulus VA1v was extracted from Horne et al., 2018.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Boxplots depicting the total neuronal fiber length and synaptic density (measured as the number of inputs, outputs, T-bars per unit of neuronal fiber length) for ipsilateral (dark green) and contralateral OSN terminals (light green) for the DA2 (A) and the DL5 (B) glomerulus, respectively. Dots represent single values. Means were compared using Student’s t-test. Significance value: p ≤ 0.05 (*), p ≤ 0.01 (**), p ≤ 0.001 (***).
 
 Ipsi- and contralateral OSNs in DA2 and DL5 were identified based on the location and trajectory of their axons (Figure 4B). In both glomeruli, ipsilateral OSN terminals were longer than their contralateral counterparts within the VOI, while polyadicity was stronger in contralateral axons. Synaptic density was not consistently higher or lower in ipsilateral OSNs compared to contralateral ones in DA2 and DL5 (Figure 4—figure supplement 1).
 
@@ -88,13 +324,13 @@ The OSN input, from either sister OSNs or MGNs, was asymmetric in DL5 but not in
 
 In summary, our data add to the knowledge of lateralized connectivity within olfactory glomeruli and support the hypothesis that narrowly tuned glomeruli have a lower degree of lateralization of OSN connectivity compared with broadly tuned glomeruli.
 
-## Glomeruli DA2 and DL5 differ in several features of their circuitry
+### Glomeruli DA2 and DL5 differ in several features of their circuitry
 
 Next, we asked whether the synaptic circuitries of DA2 and DL5 differ from each other. We counted each synaptic contact (Figure 5—source data 3 and 4) and categorized the distinct connection motifs according to the neuron class to which the output and input neuron belonged (Figure 5A; Figure 5—source data 1). Each connection motif (for example OSN > uPN, i.e., the OSN-to-uPN feedforward connection) was then assessed for its relative synaptic strength, that is, how many synaptic contacts of this particular connection motif were found compared to the total number of synaptic contacts within the respective circuitry (Figure 5A–D; see Methods).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic representation of the principal connection motifs among the neuron classes olfactory sensory neurons (OSNs, green), uniglomerular projection neurons (uPNs, magenta), and multiglomerular neurons (MGNs, blue). Synaptic connections directed toward uPNs are defined as feedforward and those directed toward OSNs or from uPNs to MGNs are classified as feedback connections (indicated by arrows). Alluvial diagrams of the glomerular circuitry in DA2 (B), DL5 (C), and VA1v (D). Each diagram shows the relative synaptic strength calculated as the proportion of 1:1 single synaptic contact between each neuron class in relation to the total number of synaptic contacts in their respective glomerulus. The synaptic strength between each neuron class, given as a percentage, is indicated by the thickness of the lines. The proportions (as percentage) of output (left side) or input (right side) are illustrated by colored rectangles to the left or right of each alluvial diagram. The total number of synaptic contacts is indicated below the diagrams. Percentages of the relative synaptic strength and synaptic counts are listed in the Figure 5—source data 1. (E) Stacked bar charts depict output (E’) and input (E’’) fractions (given as percentages) of each neuron class: OSNs (green), uPNs (magenta), MGNs (blue), schematically illustrated next to the bar charts, respectively, to each of the other neuron classes for glomeruli DA2, DL5, and VA1v. Fractions are color-coded according to the neuron class of the respective connecting partner.Figure 5—source data 1.Synapse counts and synaptic strength of each connection type in the DA2, DL5, and VA1v glomerulus. Three pairwise comparisons are shown: DA2 vs. DL5 (top table), VA1v vs. DL5 (middle table), and VA1v vs. DA2 (bottom table). The relative synaptic strength (rel syn strength) of each connection type (listed on the left) and the relative differences (rel differences) (listed on the right) are color-coded.Figure 5—source data 2.Horne et al., 2018.Figure 5—source data 3.Figure 5—source data 4.
+**Figure 5.:** (A) Schematic representation of the principal connection motifs among the neuron classes olfactory sensory neurons (OSNs, green), uniglomerular projection neurons (uPNs, magenta), and multiglomerular neurons (MGNs, blue). Synaptic connections directed toward uPNs are defined as feedforward and those directed toward OSNs or from uPNs to MGNs are classified as feedback connections (indicated by arrows). Alluvial diagrams of the glomerular circuitry in DA2 (B), DL5 (C), and VA1v (D). Each diagram shows the relative synaptic strength calculated as the proportion of 1:1 single synaptic contact between each neuron class in relation to the total number of synaptic contacts in their respective glomerulus. The synaptic strength between each neuron class, given as a percentage, is indicated by the thickness of the lines. The proportions (as percentage) of output (left side) or input (right side) are illustrated by colored rectangles to the left or right of each alluvial diagram. The total number of synaptic contacts is indicated below the diagrams. Percentages of the relative synaptic strength and synaptic counts are listed in the Figure 5—source data 1. (E) Stacked bar charts depict output (E’) and input (E’’) fractions (given as percentages) of each neuron class: OSNs (green), uPNs (magenta), MGNs (blue), schematically illustrated next to the bar charts, respectively, to each of the other neuron classes for glomeruli DA2, DL5, and VA1v. Fractions are color-coded according to the neuron class of the respective connecting partner.
 
 We found that neurons from each class made synaptic contacts with each other in DA2 and DL5, as previously reported for other glomeruli (Berck et al., 2016; Rybak et al., 2016b; Tobin et al., 2017; Horne et al., 2018; Schlegel et al., 2021). In both DA2 and DL5, OSNs provided the strongest relative synaptic output, that is, 49% of all synaptic connections in DA2 and 43% in DL5 were formed by OSNs (Figure 5B, C). Thus, even though DA2 and DL5 had similar numbers of OSNs (44 and 46, respectively), those in DA2 provided a stronger circuit output (14% stronger; Figure 5—source data 1) than those in DL5 (Figure 5B, C). In both glomeruli, the main output partners of OSNs were MGNs and uPNs, that is, 27% of all circuitry connections in DA2 and 24% in DL5 were OSN > MGN connections, while 20% in DA2 and 18% in DL5 were OSN > uPN connections (Figure 5B, C). In DA2, interestingly, each of the seven uPNs received input from almost all OSNs and so could maintain a high degree of convergent signal transmission Figure 5—source data 3. In contrast, OSNs received the lowest relative input of all neuron classes in DA2 and DL5 (7% and 8% respectively; Figure 5B, C). In line with previous observations in other glomeruli (Horne et al., 2018; Schlegel et al., 2021), OSNs also made abundant axo-axonic synapses with sister OSNs (2.6% in DA2 and 1.5% in DL5; Figure 5B, C). Thus, the relative synaptic strength of the OSN > OSN connection was 70% stronger in DA2 than in DL5 (Figure 5B, C; Figure 5—source data 1).
 
@@ -116,21 +352,29 @@ In summary, the two narrowly tuned glomerular circuits studied here shared five 
 
 **Figure 6.:** (A) Schematic representation of synaptic connection motifs (arrows) between olfactory sensory neurons (OSNs, green), uniglomerular projection neurons (uPNs, magenta), and multiglomerular neurons (MGNs, blue) in glomeruli DA2, DL5, and VA1v. The number of neurons of each class – or truncated neuronal fibers (indicated in brackets) – is shown within the corresponding circle. (B) Diagrams of connection motifs (left) that are consistently stronger or weaker in DA2 and VA1v compared to DL5. Relative differences (expressed as percentages) between DA2 and DL5, and between VA1v and DL5 are illustrated as upward (stronger) or downward (weaker) arrows, with arrow intensity indicating the magnitude of the difference (see legend at the bottom) from the perspective of the target glomerulus (as defined in the table header). All relative difference values are provided in Figure 5—source data 1.
 
-## Autapses in the large DL5 uPN connect distant regions of its dendritic tree
+### Autapses in the large DL5 uPN connect distant regions of its dendritic tree
 
 Autapses (synapses made by a neuron upon itself) have seldom been reported in the Drosophila central nervous system (Takemura et al., 2015; Horne et al., 2018). In the DA2 glomerulus, we found few autapses in uPNs and MGNs (Figures 5C and 7A). In contrast, within the dendritic tree of the single DL5 uPN, three observers independently identified 54 autaptic connections (see Methods). This represents 3% of the output connections of this neuron and 0.4% of all synaptic contacts in the whole glomerulus (Figures 5C, E’, 7A). We found that these autapses were not distributed evenly along the dendritic tree of the DL5 uPN. Some dendritic branches received several autaptic inputs, whereas others had no autaptic input (Figure 7A) and we hypothesized that these autapses could connect distant parts of this very large dendritic tree. We thus analyzed the exact location and distribution of their pre- and postsynaptic sites (Figure 7A). We discovered a difference in the distribution of the pre- and postsynaptic elements of DL5 autapses. While their presynaptic T-bars were evenly distributed at basal (Strahler order: 5) and at distal regions (Strahler order: 1–4), 95% of their postsynaptic sites were located in the most distal region (Strahler order 2–1; Figure 7B, C). We also calculated the geodesic distance (i.e., along-the-arbor distance) from pre- and postsynaptic sites to the basal root node, which is the node point where the DL5 uPN enters the glomerulus and is equivalent to the closest point to the soma in our reconstruction. The geodesic distance to the basal root node from the presynaptic site was significantly shorter than for postsynaptic sites (Figure 7—figure supplement 1B). The pre- and postsynaptic sites of each autapse were either close to each other along the dendritic tree or distant from each other (see examples in the dendrogram depicted in Figure 7D). Thus, the geodesic distance between pre- and postsynaptic sites (see scheme in Figure 7E), as well as the number of branching points between pre- and postsynaptic partners, was bimodally distributed (Figure 7F, G). Autapses that connected distant dendritic branches were more frequent than those that connected close dendritic branches (Figure 7E–G). In summary, we found abundant autapses within the uPN dendrite of DL5, and they were unevenly distributed, with many output sites located in a few sub-branches connecting distal dendritic regions.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig7-v1.jpg)
+
+**Figure 7.:** (A) Distribution of autaptic presynaptic (red dots) and postsynaptic (cyan dots) sites mapped onto a dendrogram of the single uPN dendrite in glomerulus DL5. The basal root node (black dot) marks the entry site of the uPN dendrite into the glomerulus (i.e., the point closest to its soma). Clusters of autaptic input sites along specific branches are encircled. (B) Simplified dendrogram of the uPN illustrating distinct Strahler orders, with distal branches (orders 1–4) and at basal branches (orders 5–8); see legend on the right. (C) Distribution of autaptic presynaptic (left) and postsynaptic (right) input sites along the dendrite, shown as proportions at each corresponding Strahler order (color-coded). Note that autaptic postsynaptic sites are located almost exclusively at the most distal dendritic branches. (D) Dendrogram of the DL5-uPN showing the locations of presynaptic sites (triangles) and postsynaptic sites (circles) for selected autapses (color-matched pairs). Autapses with large geodesic distance between their components are labeled with numbers; those with short distances are encircled and labeled with letters. (E) Schemes of the dendrogram illustrating the location of the presynaptic (red dot) and postsynaptic (cyan dot) sites of individual autapses, the geodesic distance between them (measured along the dendrite in µm), and the number of branching points (orange dots) separating the pre- and postsynaptic components. (F) Histogram showing the number of autapses grouped by geodesic distance between their pre- and postsynaptic sites (as illustrated in E). (G) The number of autapses categorized by the number of branch points between their pre- and postsynapses along the uPN dendrite (as illustrated in E).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88824/elife-88824-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** 3D reconstruction of the dendritic tree of the single uPN in glomerulus DL5, shown as a skeleton trace with artificial thickness scaled according to Strahler order. Autapses are indicated as cyan dots. The entry site of the uPN main dendrite into the glomerulus (the point closest to the soma) is defined as the basal root node. (B) Number of autaptic presynaptic (magenta) and postsynaptic (cyan) sites plotted against their geodesic distance from the basal root node (indicated by a black circle in A). (C) Proportional distribution of all pre- and postsynaptic sites (excluding autaptic connections) across Strahler orders in the DL5 uPN dendritic tree (see legend inset). Note the high proportion of postsynaptic sites located on the most distal dendritic branches.
 
 ## Discussion
 
 We hypothesized that specialized, narrowly tuned olfactory glomeruli differ in their ultrastructure and microcircuitry from broadly tuned glomeruli. By comparing data from dense reconstructions of two narrowly tuned olfactory glomeruli with that of a broadly tuned glomerulus in D. melanogaster, we identified prominent features of narrowly tuned glomeruli related to synaptic composition, lateralization of sensory input, and synaptic circuitry.
 
-## Glomerular circuit analysis: a correlative approach
+### Glomerular circuit analysis: a correlative approach
 
 The small size of olfactory glomeruli in Drosophila gave us the opportunity to reconstruct and analyze the dense connectome of entire glomeruli with volume-based EM in a reasonable time period. Here, we developed a correlative workflow that combines transgenic neuron labeling with near-infra-red-laser branding for precise volume targeting. We then used FIB-SEM (Bishop et al., 2011) to resolve glomerular networks at the synaptic level. A similar procedure was used recently to investigate single cellular organelles (Ronchi et al., 2021). An advantage of this approach is that it facilitates localization of the VOI with high precision and consequently limits to a minimum the volume to be scanned and reconstructed. At the same time, the limitation in volume is a drawback of our workflow, as it was impossible to reconstruct neurons back to their soma. This fact prevented the identification of individual neurons as in other connectome studies (Berck et al., 2016; Eichler et al., 2017; Horne et al., 2018; Zheng et al., 2018; Bates et al., 2020; Scheffer et al., 2020; Xu et al., 2020; Schlegel et al., 2021).
 
 We provide data on innervation and synapse density of OSNs, uPNs, and MGNs in the Drosophila AL. We observed a higher innervation density of all neuron types – primarily uPNs and MGNs – as well as higher density of synaptic contacts along OSN terminals in the narrowly tuned DA2 compared with DL5. These results suggest that narrowly tuned glomeruli have a more densely packed neuropil, with more numerous synaptic connections in the feedforward motifs OSN > uPN and OSN > MGN. Overall, our observations on synapse density were comparable with previous reports (Mosca and Luo, 2014; Rybak et al., 2016b; Horne et al., 2018).
 
-## Specific features of narrowly tuned glomerular circuits
+### Specific features of narrowly tuned glomerular circuits
 
 Our analysis ultimately revealed six circuit features shared by the narrowly tuned glomeruli DA2 and VA1v (with VA1v data analyzed from Horne et al., 2018) that distinguish them from the circuitry of the broadly tuned DL5 and may represent adaptations specific to such dedicated glomerular circuits (see summary in Figure 8). However, future studies analyzing the precise number of synaptic connections across a larger number of individuals are needed to assess intra- and inter-animal variability (Schlegel et al., 2024). In addition, combining these anatomical observations with physiological studies and computational modeling is essential to evaluate the functional relevance of the observed connectivity differences and to test our hypothesis regarding generic circuit-level distinctions between narrowly and broadly tuned olfactory glomeruli (Figure 8).
 
@@ -138,7 +382,7 @@ Our analysis ultimately revealed six circuit features shared by the narrowly tun
 
 **Figure 8.:** Graphic summary of key circuit features that distinguish the two narrowly tuned olfactory glomeruli studied here (dark gray circle) from a broadly tuned on (light gray circle). Olfactory glomeruli are the first relay station where olfactory information is processed before being transmitted to higher brain centers, including the lateral horn (LH) and mushroom body calyces (MBc). The model is based on a comparative analysis of the narrowly tuned circuits of DA2 and VA1v and the broadly tuned circuit of DL5. Circuit components include uniglomerular projection neurons (uPNs, magenta), local interneurons (LNs, blue), and olfactory sensory neurons (OSNs, green) from both ipsilateral and contralateral brain hemispheres. In the narrowly tuned circuits, multiple uPNs are present, whereas in the broadly tuned circuit LNs are more numerous, as indicated by the number of circles. Connectivity strength between neuronal types is inferred from synaptic counts (1:1 presynaptic–postsynaptic sites) and is represented by the size of the connecting triangles. Differences in neuron number are indicated by the number of circles. In narrowly tuned circuits, OSNs exhibit stronger synaptic output (1) and form stronger reciprocal connections with sister OSNs (2) and uPNs (3). The lateralization of OSN connectivity is reduced compared to broadly tuned circuits, where ipsilateral output to uPNs and contralateral output to the LNs dominates (4). Feedback synapses from uPNs to LNs (5) and from LNs to OSNs (6) are weaker in narrowly tuned circuits. In contrast, the broadly tuned circuit DL5 exhibits weaker OSN output and stronger lateralization of OSN inputs. Additionally, autapses are observed in the single uPN of DL5, whereas reciprocal uPN connections are a feature of narrowly tuned circuits. The model attributes to LNs the features quantified for a larger group of neurons (multiglomerular neurons, MGNs), of which the great majority are LNs, as discussed in the main text.
 
-## The OSN > uPN feedforward connection is stronger in narrowly tuned glomeruli
+### The OSN > uPN feedforward connection is stronger in narrowly tuned glomeruli
 
 Presynaptic OSN terminals provide the major input to uPNs in insect olfactory glomeruli (Hansson and Anton, 2000; Chen and Shepherd, 2005; Kazama and Wilson, 2008; Lei et al., 2010; Tobin et al., 2017; Horne et al., 2018; Rybak and Hansson, 2018; Schlegel et al., 2021). Here, we showed that this connection is stronger in DA2 and VA1v than in DL5 (Figures 5 and 6). A strong OSNs > uPN synaptic connection will drive non-linear signal amplification, which improves signal detection at low odor concentrations (Ng et al., 2002; Bhandawat et al., 2007; Kazama and Wilson, 2008; Masse et al., 2009). A larger number of synapses of this type could be an adaptation to improve this amplification effect, as shown by artificial increase of synaptic sites in the AL (Acebes and Ferrús, 2001) and in lateral horn dendrites (Liu et al., 2022).
 
@@ -146,7 +390,7 @@ Each of the seven uPNs in DA2 received convergent synaptic input from almost all
 
 From our study, we hypothesize that in narrowly tuned glomerular circuits, which have more uPNs, the maintained strong OSN > uPN convergence, improves signal transmission accuracy. Second, a stronger OSN > uPN connection might compensate for the lack of OSN > uPN signal transmission sites in the case of odorants activating OSNs in a single glomerulus.
 
-## Reciprocal connections between sister OSNs and sister uPNs are stronger in narrowly tuned glomeruli
+### Reciprocal connections between sister OSNs and sister uPNs are stronger in narrowly tuned glomeruli
 
 The reciprocal OSN–OSN synapse is generally stronger in narrowly tuned glomeruli DA1, DL3, and DL4, compared with broadly tuned glomeruli DL5, DM1, DM4, and DM6 (Suh et al., 2004; Knaden et al., 2012; Dweck et al., 2015; Ebrahim et al., 2015; Grabe et al., 2016; Seki et al., 2017; Tobin et al., 2017; Schlegel et al., 2021). A high degree of axo-axonic synapses between sister OSNs was also found in VA1v (Horne et al., 2018; Schlegel et al., 2021) and DA2 but not in the DL5 (this study). Hence, we suggest that a strong OSN–OSN connection is a characteristic feature of the synaptic circuitry of narrowly tuned olfactory glomeruli. Axo-axonic connections have also been reported between gustatory and mechanosensory neurons in Drosophila larvae (Miroschnikow et al., 2018) and in the olfactory epithelium and the olfactory bulb of vertebrates (Hirata, 1964; Shepherd et al., 2021). In vertebrates, axo-axonic synapses between excitatory sensory neurons are involved in correlated transmitter release (Cover and Mathur, 2021), reminiscent of correlated uPN activity due to reciprocal synaptic and electric coupling in the Drosophila AL and LH (Kazama and Wilson, 2009; Huoviala et al., 2020). A strong OSN–OSN connection also has the potential to increase the correlation of OSN spiking events and therefore facilitate a robust OSN signal (De la Rocha et al., 2007).
 
@@ -154,7 +398,7 @@ Reciprocal dendro-dendritic synapses between sister uPNs are reported here for t
 
 In summary, our data give evidence that reciprocal OSN–OSN and uPN–uPN connections are a prominent feature of the synaptic circuit of narrowly tuned glomeruli. We suggest that those reciprocal OSN–OSN and uPN–uPN connections support correlation of neuronal activity and therefore boost signal-induced depolarization events. This will, in turn, enhance the signal-to-noise ratio (accuracy) and transmission probability of weak and/or irregular odorant input, increasing processing speed.
 
-## Less lateralization in the OSN bilateral connectivity in narrowly tuned glomeruli
+### Less lateralization in the OSN bilateral connectivity in narrowly tuned glomeruli
 
 In Drosophila, most OSN axons project bilaterally and form synapses in their corresponding glomerulus on both the left and right brain hemispheres (Stocker et al., 1990; Vosshall et al., 2000; Couto et al., 2005; Kazama and Wilson, 2009; Silbering et al., 2011; Tobin et al., 2017; Schlegel et al., 2021). This is rarely observed in other insects and absent in vertebrates (Stocker et al., 1983; Masson and Mustaparta, 1990; Galizia et al., 1998; Hansson and Anton, 2000; Anton et al., 2003; Parthasarathy and Bhalla, 2013; Dalal et al., 2020). In the mammalian olfactory system, bilateral comparison of olfactory input only occurs in higher brain centers (Dalal et al., 2020). In flies, bilateral sensory input enables them to discriminate odor sources of different spatial origin through bilateral comparison of olfactory stimulation (Borst and Heisenberg, 1982; Duistermars et al., 2009; Gaudry et al., 2013; Mohamed et al., 2019a; Taisz et al., 2023). Asymmetric OSN connectivity, shown for many olfactory OSNs (Tobin et al., 2017; Schlegel et al., 2021), seems to be the origin of a bilateral contrast in the uPN response (Agarwal and Isacoff, 2011; Gaudry et al., 2013; Tobin et al., 2017; Taisz et al., 2023), and is most likely the key to precise odor source localization (Taisz et al., 2023). Bilateral comparison is also used in the lateral horn (a higher olfactory brain center in Drosophila) for odorant position coding (Mohamed et al., 2019a). However, not all glomeruli are similar in the magnitude of bilateral asymmetry with respect to their OSN connectivity (Schlegel et al., 2021) or their uPN responses (Agarwal and Isacoff, 2011).
 
@@ -164,7 +408,7 @@ We also observed that the degree of bilateral OSN asymmetry in DA2 and VA1v was 
 
 Why do these narrowly tuned glomeruli have weaker bilateral contrast than broadly tuned glomeruli? The answer could lie in the ecological significance of the individual odorants. Geosmin, encoded by glomerulus DA2 (Stensmyr et al., 2012), and the pheromone methyl laurate, encoded by glomerulus VA1v (Dweck et al., 2015), act at short distances, mainly when the fly is walking and not flying. Perhaps the behavioral response to geosmin or methyl laurate does not need a precise odor source location. On the other hand, food odor detection at a distance, which happens mainly at flying conditions, needs continuous processing of odor position and body alignment to navigate toward the odor source (Thoma et al., 2015; Demir et al., 2020). The bilateral OSN projection onto uPNs in DA2 and VA1v potentially has a distinct function other than odor position coding and could, via the enhancement of the effect of convergence of OSN > uPN signal transmission, enhance odor signal amplification (Bhandawat et al., 2007; Kazama and Wilson, 2009; Masse et al., 2009; Jeanne and Wilson, 2015).
 
-## Distinct synaptic integration of local modulatory neurons in narrowly tuned glomeruli
+### Distinct synaptic integration of local modulatory neurons in narrowly tuned glomeruli
 
 MGNs are composed of mPNs that project directly to the LH (Jefferis et al., 2007; Strutz et al., 2014; Bates et al., 2020) and inhibitory and excitatory LNs that interconnect the AL glomeruli (Masse et al., 2009; Okada et al., 2009; Chou et al., 2010; Seki et al., 2010; Liu and Wilson, 2013). Since LNs are the most numerous and broadly arborizing of the multiglomerular cell types in the AL (Chou et al., 2010; Lin et al., 2012), we focus our discussion on these neurons. A quantitative analysis of MGN connectivity in the VA1v glomerulus – where LNs and mPNs were classified separately – supports this focus. It shows that 84% of the MGN output originates from LNs, and 57% of MGN input is received by LNs. When excluding the major OSN > mPN and OSN > LN input, the majority of remaining MGN input is from LNs (73%) data source: (Horne et al., 2018). Multiglomerular LNs play a crucial role in modulating OSN-to-uPN signal transmission within the olfactory glomeruli (Masse et al., 2009; Chou et al., 2010; Seki et al., 2010; Galizia, 2014; Szyszka and Galizia, 2015).
 
@@ -178,7 +422,7 @@ In summary, narrowly tuned circuits are probably influenced more strongly by int
 
 Above, we discussed putative generic features of narrowly tuned glomerular circuits. Besides these circuit features, we found a strong MGN > MGN connection in the aversive glomerular circuits DA2 and DL5 in contrast to a much weaker MGN > MGN connection in the attractive glomerulus VA1v (Knaden et al., 2012; Stensmyr et al., 2012; Knaden and Hansson, 2014; Dweck et al., 2015; Mohamed et al., 2019b). Why do aversive olfactory circuits have a stronger MGN > MGN connection than attractive circuits? In the larval Drosophila AL, reciprocal LN > LN synapses induce disinhibition induced by a strong connection between the pan-glomerular LNs and a bilateral projecting LN, the Keystone LN, which synapses strongly onto pan-glomerular LNs and selectively onto OSNs, which are activated by attractive food odors. This is thought to be a key feature to switch from homogeneous to heterogeneous presynaptic inhibition and therefore to a selective gain control enhancing contrast between attractive and aversive odor activation (Berck et al., 2016). Such balanced inhibitory systems could also be present in the adult Drosophila AL, reflected in the strong LN > LN connection in DA2 and DL5. Disinhibition of interglomerular presynaptic inhibition in aversive glomeruli circuits might be important for the fly to stay vigilant to aversive odors, while perceiving attractive cues, for example during feeding conditions so that a fast switch in behavior can be initiated if necessary.
 
-## Autaptic connection within the dendritic tree of a single uPN
+### Autaptic connection within the dendritic tree of a single uPN
 
 We observed autapses along the large dendritic tree of the single DL5-uPN. To our knowledge, this is the first report of bulk dendro-dendritic autapses in the Drosophila olfactory system, indicating a cell-type specific occurrence of autapses in the DL5-uPN as reported for other cell types in the optic lobe (Takemura et al., 2015). Autapses are also reported to be present at different frequencies in different types of neurons in the mammalian brain (Van der Loos and Glaser, 1972; Tamás et al., 1997; Bekkers, 1998; Bacci and Huguenard, 2006; Ikeda and Bekkers, 2006; Bekkers, 2009; Saada et al., 2009). In Drosophila, most uPNs are cholinergic (Yasuyama and Salvaterra, 1999; Yasuyama et al., 2003; Kazama and Wilson, 2008; Tanaka et al., 2012; Croset et al., 2018) and the DL5-uPN autapses reported here might activate either nicotinic or muscarinic acetylcholine postsynaptic receptors. Muscarinic acetylcholine receptors have an inhibitory effect in the Kenyon cells of the mushroom body (Bielopolski et al., 2019), but mediate excitation in the AL (Rozenfeld et al., 2019).
 
@@ -190,43 +434,109 @@ In conclusion, we provide a comprehensive comparative analysis of the ultrastruc
 
 ## Materials and methods
 
-## Fly line and fly rearing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Orco-GAL4; UAS-GCaMP6s</td>
+      <td>Vosshall et al., 2000</td>
+      <td></td>
+      <td>https://bdsc.indiana.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td></td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_008606</td>
+      <td>https://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>blender</td>
+      <td></td>
+      <td>RRID:SCR_008606</td>
+      <td>https://www.blender.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrakEM2</td>
+      <td></td>
+      <td>RRID:SCR_008954</td>
+      <td>https://imagej.net/TrakEM2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATMAID</td>
+      <td></td>
+      <td>RRID:SCR_006278</td>
+      <td>http://www.catmaid.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>neuroboom</td>
+      <td></td>
+      <td></td>
+      <td>https://pypi.org/project/neuroboom/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly line and fly rearing
 
 Flies of the genotype Orco-GAL4; UAS-GCaMP6s (Vosshall et al., 2000) were obtained from the Bloomington Drosophila Stock Center (https://bdsc.indiana.edu/) and reared on standard Drosophila food at 25°C and 70% humidity on a 12:12 hr day: night cycle. Seven-day-old female flies were used. In these flies, Orco-positive olfactory sensory cells emit green fluorescence, making it possible to identify individual glomeruli.
 
-## Brain dissection and fixation for FIB-SEM
+### Brain dissection and fixation for FIB-SEM
 
 Two 7-day-old female flies were anesthetized with nitric oxide (with Sleeper TAS; INJECT+MATIC, Switzerland) and decapitated with forceps. Heads were dipped for 1 min in 0.05% Triton X-100 in 0.1 M Sorensen’s phosphate buffer, pH 7.3 and transferred to a droplet of freshly prepared ice-cooled fixative 2.5% glutaraldehyde and 2.0% paraformaldehyde in 0.1 M Sørensen’s phosphate buffer, pH 7.3; as in Karnovsky, 1965. The proboscis was removed and the back of the head was opened to improve fixative penetration. After 5–10 min, the brain was dissected out of the head capsule and post-fixed for 2 hr on ice. Fixation was stopped by rinsing the brain several times in ice-cooled 0.1 M Sørensen’s phosphate buffer, pH 7.3 (after Rybak et al., 2016b).
 
-## Laser branding of glomeruli for identification during FIB-SEM
+### Laser branding of glomeruli for identification during FIB-SEM
 
 To identify the glomeruli of interest at the ultrastructural level and to limit to a minimum the volume of tissue to be scanned with FIB-SEM, near-infrared laser branding NIRB (Bishop et al., 2011). Glomeruli of interest were first located with light microscopy in brains of Orco-GAL4; UAS-GCaMP6s flies using a confocal microscope (ZEISS LSM 710 NLO, Carl Zeiss, Jena, Germany), a 40x water immersion objective (W Plan-Apochromat 40x/1.0 DIC VIS-IR, Carl Zeiss, Jena, Germany), a laser wavelength of 925 nm at 30% laser power and ZEN software (Carl Zeiss, Jena, Germany). Once glomeruli DA2 or DL5 were identified by means of location, shape, and size, the VOI was tagged with fiducial marks (laser-branded) close to the borders of the glomerulus (Figure 1A, B), using an infrared Chameleon Ultra diode-pumped laser (Coherent, Santa Clara, USA) at wavelength 800 nm and at 75–90% of laser power. Two laser scan rounds were performed for each induced fiducial brand. DA2 (right AL) and DL5 (left AL) were laser-branded in the same fly. A second glomerulus DA2 was marked in the right AL of another fly.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Brains were fixed using the Karnovsky’s fixative as described above and rinsed with 0.1 M sodium-cacodylate buffer and post-fixed in 1% osmium tetroxide and 1% potassium ferrocyanide in cacodylate buffer for 2 hr. After rinsing with cacodylate buffer, the brains were dehydrated with a graded acetone series (30–100% acetone), including an additional en bloc staining step in-between, in which the brains were incubated in 1% uranyl acetate in 50% acetone for 30 min in the dark and gradually infiltrated with Araldite (glycerol-based aromatic epoxy resins; Serva, Germany). In the final step, the tissue was embedded in pure resin and left in a 60°C incubator to polymerize for 48 hr. Resin blocks were trimmed with a Reichert UltraTrim microtome (Leica, Deer Park, USA), and the fiducial laser marks were then located in semi-thin sections. To check tissue quality before performing high-resolution volume-based EM, serial sections 50 nm in thickness were cut with a diamond knife (Ultra 45°, Diatome, Switzerland) on a Reichert Ultracut S ultramicrotome (Leica, Deer Park, Germany), collected on single slot grids (2 × 1 mm), and imaged with a JEM 1400 electron microscope (Jeol, Freising, Germany) operated at 80 kV. Digital micrographs were obtained with a Gatan Orius SC 1000 CCD camera (Gatan Orius SC 1000; Gatan, Pleasanton, USA) controlled with the Gatan Microscopy Suite software Vers. 2.31.734.0.
 
-## Focused ion beam-scanning electron microscopy
+### Focused ion beam-scanning electron microscopy
 
 Before serial FIB milling and SEM imaging (Knott et al., 2008; Xu et al., 2017), the surface of the trimmed block was coated with a conductive carbon layer to prevent charging artifacts. A FEI Helios NanoLab G3 UC (FEI, Hillsboro, USA) was used for FIB-SEM process. The laser marks used to landmark the VOI were visible across the surface of the block. The VOI surface was protected via a local deposition of platinum using a gas injection system for subsequent ion and electron beam deposition. The material surrounding the VOI at the front and the side was removed to reduce re-deposition of material during FIB-SEM. Serial images across the entire VOI were generated by repeated cycles of milling slices orthogonal to the block surface via FIB and imaging via SEM the newly exposed surface. The tissue was milled with a focused beam of gallium ions using FEI’s Tomahawk ion column (accelerating voltage: 30 kV, beam current: 790 pA, milling steps: 20 nm). FEI’s Elstar electron column was used to create the backscattered electron contrast images using an In-Column Detector (accelerating voltage: 3 kV; 1.6 nA; dwell time: 10 µs). The DA2 and DL5 volumes in the first fly were imaged with a resolution of 4.9 × 4.9 × 20 nm3/vox (DA2: 769 images with 4096 × 3536 pix; DL5: 976 images with 5218 × 3303 pix). The volume of a second DA2 in a second fly was imaged with a resolution of 4.4 × 4.4 × 20 nm3/vox (571 images with 4096 × 3536 pix). The milling/imaging cycles were controlled with the Auto Slice and View 4.0 software (FEI, Hillsboro, USA).
 
-## Image alignment, 3D reconstruction, and segmentation
+### Image alignment, 3D reconstruction, and segmentation
 
 FIB-SEM image stacks were aligned by maximizing the Pearson correlation coefficient of the central part of two consecutive images using template matching from the openCV library (https://imagej.net/TrakEM2). Dense reconstructions of the glomeruli were produced by manually tracing all neuronal fibers and by annotating all synapses within the two glomeruli, using a skeleton-based reconstruction procedure similar to previous approaches (Berck et al., 2016; Schneider-Mizell et al., 2016; Zheng et al., 2018). Up to five independent tracers and two reviewers participated in an iterative reconstruction process using the web-based reconstruction software CATMAID (http://www.catmaid.org; RRID:SCR_006278; Saalfeld et al., 2009; Schneider-Mizell et al., 2016; Figure 1D, Figure 1—video 1), performing a dense reconstruction of synaptic neuropil. In a second fly, neurons of a DA2 glomerulus were manually reconstructed with the volume-based reconstruction method TrakEM2 (Cardona et al., 2012), an ImageJ (Fiji) plugin (https://imagej.net/TrakEM2).
 
-## Neuron visualization
+### Neuron visualization
 
 Reconstructed neurons were visualized using CATMAID 3D visualization (http://www.catmaid.org) and using Blender 3D, an open-source 3D software (https://www.blender.org/; Figure 7—figure supplement 1). Neuron data from CATMAID were imported and shaded by Strahler order using an existing CATMAID plugin for Blender (https://github.com/schlegelp/CATMAID-to-Blender; Schlegel et al., 2016). Volume-based reconstructions were visualized as surface shapes in CATMAID imported from TrakEM2 (https://imagej.net/TrakEM).
 
-## Glomerular border definition
+### Glomerular border definition
 
 The definition of the boundary between olfactory glomeruli was based on the combination of several structural features: the spatial position of pre- and postsynaptic elements along OSN axons, the position of the majority of uPN postsynaptic sites, the faint glial leaflets scattered at the periphery of the glomerulus, and the fiducial laser marks (Figure 1B, D).
 
-## Neuron identification
+### Neuron identification
 
 Neuronal fibers were assigned to one of three pre-defined neuron classes: OSNs, uPNs, and MGNs. The classification was based on their 3D shape (Figure 2A), their branching intensity (Figure 2B), the average diameter of their fibers (neuronal profiles: Figure 2A – FIB-SEM image; exemplary volume-based reconstruction), the ratio of T-bars-to-input sites and the size of their T-bars, which were either ‘small’ (few postsynaptic connections) or ‘large’ (many postsynaptic connections Figure 2—figure supplement 1). In addition, several intracellular features helped to classify neuron classes: the shape and appearance of mitochondria, the size and electron density of vesicles, and the amount of synaptic spinules (small filopodia-like invaginations of neighboring cells) (Figure 2A – FIB-SEM image; Gruber et al., 2018). OSNs and uPNs could be counted, due to their uniglomerular character, by means of the identification of the axons (OSNs) or main dendrites (uPNs) entering the glomerulus. The number of MGNs could not be counted because of their pan-glomerular projection patterns in the AL. Ipsi- and contralateral OSNs in DA2 and DL5 were identified based on the trajectory of axonal fibers and their entry location in each glomerulus (example neurons: Figure 4B). Ipsilateral OSNs reach the glomerulus from the ipsilateral antennal nerve and leave the glomerulus toward the antennal lobe commissure (ALC: Tanaka et al., 2012). Contralateral OSNs reach the glomerulus projecting from the ALC.
 
-## Data analysis
+### Data analysis
 
 With the aid of the web-based software CATMAID (http://www.catmaid.org/) the following properties were quantified: glomerular volume, neuronal fiber length (in µm), number of fiber branching points, number of synaptic input and output sites, and T-bars (see data availability). In a second fly, the volume of neurons in DA2 was measured (Figure 2—figure supplement 1) with the aid of TrakEM2 (Cardona et al., 2012), an ImageJ (Fiji) plugin (https://imagej.net/TrakEM2). The following calculations were performed:
 
@@ -234,6 +544,6 @@ Graphs were made with the programming language R and RStudio (R Development Core
 
 Statistical analysis was performed with R Studio (RStudio Team, 2016) using the packages ‘ggsignif’ (https://www.r-project.org/). Differences between samples DA2 and DL5 or between ipsilateral and contralateral OSNs were tested for significance with a two-sided Student’s t-test if sample size was normally distributed, or with Wilcoxon two-sample test if the data was not normally distributed (noted in figure legend). Data is in all cases represented as mean + standard deviation.
 
-## Analysis of autapses
+### Analysis of autapses
 
 The location of autapses, the measurement of their geodesic distance (distance along the neuronal dendrite), and the number of branching points from point A (presynaptic site) to B (postsynaptic profile) were analyzed with Python using the package ‘neuroboom’ (Pleijzier, 2022; see also data availability).

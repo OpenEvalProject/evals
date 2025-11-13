@@ -45,7 +45,7 @@
 
 ## Abstract
 
-Early identification of severe dengue patients is important regarding patient management and resource allocation. We investigated the association of 10 biomarkers (VCAM-1, SDC-1, Ang-2, IL-8, IP-10, IL-1RA, sCD163, sTREM-1, ferritin, CRP) with the development of severe/moderate dengue (S/MD). We performed a nested case-control study from a multi-country study. A total of 281 S/MD and 556 uncomplicated dengue cases were included. On days 1–3 from symptom onset, higher levels of any biomarker increased the risk of developing S/MD. When assessing together, SDC-1 and IL-1RA were stable, while IP-10 changed the association from positive to negative; others showed weaker associations. The best combinations associated with S/MD comprised IL-1RA, Ang-2, IL-8, ferritin, IP-10, and SDC-1 for children, and SDC-1, IL-8, ferritin, sTREM-1, IL-1RA, IP-10, and sCD163 for adults. Our findings assist the development of biomarker panels for clinical use and could improve triage and risk prediction in dengue patients. This study was supported by the EU's Seventh Framework Programme (FP7-281803 IDAMS), the WHO, and the Bill and Melinda Gates Foundation.
+Background:Early identification of severe dengue patients is important regarding patient management and resource allocation. We investigated the association of 10 biomarkers (VCAM-1, SDC-1, Ang-2, IL-8, IP-10, IL-1RA, sCD163, sTREM-1, ferritin, CRP) with the development of severe/moderate dengue (S/MD).Methods:We performed a nested case-control study from a multi-country study. A total of 281 S/MD and 556 uncomplicated dengue cases were included.Results:On days 1–3 from symptom onset, higher levels of any biomarker increased the risk of developing S/MD. When assessing together, SDC-1 and IL-1RA were stable, while IP-10 changed the association from positive to negative; others showed weaker associations. The best combinations associated with S/MD comprised IL-1RA, Ang-2, IL-8, ferritin, IP-10, and SDC-1 for children, and SDC-1, IL-8, ferritin, sTREM-1, IL-1RA, IP-10, and sCD163 for adults.Conclusions:Our findings assist the development of biomarker panels for clinical use and could improve triage and risk prediction in dengue patients.Funding:This study was supported by the EU's Seventh Framework Programme (FP7-281803 IDAMS), the WHO, and the Bill and Melinda Gates Foundation.
 
 ## Introduction
 
@@ -61,11 +61,11 @@ The aims of this study were: (1) to investigate the association of these ten bio
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 We conducted a nested case-control study using the samples and clinical information from a large multi-country observational study named ‘Clinical evaluation of dengue and identification of risk factors for severe disease’ (IDAMS study, NCT01550016) (Jaenisch et al., 2016). The IDAMS study and the blood sample analysis were approved by the Scientific and Ethics Committees of all study sites (Hospital for Tropical Diseases [Ho Chi Minh City, Vietnam] Ref No 03/HDDD-05/01/2018; Angkor Hospital for Children [Siem Reap, Cambodia] Ref No 0146/18-AHC; University of Malaya Medical Centre [Kuala Lumpur, Malaysia] Ref No 201865–6361) and by the Oxford Tropical Research Ethics Committee (OxTREC Ref No 502–18). There were 7428 participants in eight countries across Asia and Latin America enrolled in the IDAMS study. Patients were eligible for inclusion if they were aged 5 years or older, had fever or history of fever for less than 72 hr, and had symptoms consistent with dengue, with no features strongly suggestive of another disease. Participants were followed daily with a standard schedule of clinical examination and blood samples. Individual management (including hospitalization) was in accordance with routine practice at each study site. All diagnostic samples were processed and stored following specific protocols, and later transferred to designated sites for diagnostic testing in order to ensure consistency. Laboratory-confirmed dengue was defined by a positive reverse transcriptase polymerase chain reaction (RT-PCR) or a positive NS1 enzyme-linked immunosorbent assay (ELISA) result. Immune status was classified based on capture IgG results on paired samples. A probable primary infection was defined by two negative IgG results on two consecutive specimens taken at least 2 days apart, with at least one specimen obtained during the convalescent phase (after illness day 5). A probable secondary infection was defined by a positive IgG result identified during either or both the febrile and convalescent phases. In all other cases with the absence of suitable specimens at the appropriate time points immune status was classified as inconclusive. Each participant was given an overall severity grade (severe, moderate, or uncomplicated dengue), using all available information and a grading system in line with current guidelines and recommendations to classify clinical endpoints in dengue clinical trials (Tomashek et al., 2018).
 
-## Study population
+### Study population
 
 Of the 2694 laboratory-confirmed dengue cases in the IDAMS study, 38 and 266 cases were classified as severe and moderate dengue respectively. For this study, we selected all severe and moderate cases from five study sites in four countries (Vietnam, Cambodia, Malaysia, and El Salvador), as residual plasma from these countries’ sample sets was available at the Oxford University Clinical Research Unit (OUCRU) in Ho Chi Minh City, Vietnam. For the control group, we selected patients with uncomplicated dengue with similar geographic and demographic characteristics at a 2:1 ratio. In total 281 cases and 556 controls were included in the analysis (Figure 1).
 
@@ -73,15 +73,15 @@ Of the 2694 laboratory-confirmed dengue cases in the IDAMS study, 38 and 266 cas
 
 **Figure 1.:** *The IDAMS study was performed in eight countries across Asia and Latin America. For this study, we selected cases in four countries (Vietnam, Cambodia, Malaysia, and El Salvador) as the blood samples were stored at the laboratory of the Oxford University Clinical Research Unit in Ho Chi Minh City, Vietnam.
 
-## Laboratory evaluation (details in Appendix 1)
+### Laboratory evaluation (details in Appendix 1)
 
 The biomarkers were measured at two time points: at enrollment (illness day 1–3) and after recovery (day 10–31 post-symptom onset), if available. Eight biomarkers (CRP and ferritin excepted) were combined in a premixed magnetic bead panel (Cat No. LXSAHM; R and D). CRP was measured using a separate commercial magnetic bead panel (Cat. No. HCVD3MAG-67K; EMD Millipore Corporation). These panels were analyzed using the Luminex200 analyzer with the Luminex calibration (Cat. No. LX200-CAL-K25) and verification kits (Cat. No. LX200-CON-K25). Ferritin was measured using the Human Ferritin ELISA kit (Cat. No. ARG80501, Arigo). All tests were done according to the manufacturer’s specifications.
 
-## Study endpoints (details in Appendix 2)
+### Study endpoints (details in Appendix 2)
 
 The primary endpoint was combined severe and moderate dengue (S/MD), defined by the development of severe or moderate grades of any of the following – plasma leakage, haemorrhage, or organ impairment (including neurologic, hepatic, or cardiac involvement) (Appendix 2—table 1). We combined severe and moderate dengue to form the primary endpoint (S/MD) as severe dengue events were rare; this combined endpoint is relevant to clinical practice since the moderate group is likely to develop complications and therefore may also require medical intervention and hospitalization. We studied three secondary endpoints: severe dengue alone, severe dengue or dengue with warning signs according to the 2009 WHO classification, and hospitalization. These endpoints were selected as they also reflect the disease burden and severity and are generalizable across different settings. The decision to hospitalize was based only on clinical judgement and local guidelines particular to each study site, without use of any biomarker information.
 
-## Statistical analysis (details in Appendix 3)
+### Statistical analysis (details in Appendix 3)
 
 Plasma levels of all biomarkers were transformed to the base-2 logarithm (log-2) before analysis as a right skewed distribution was apparent. We used a logistic regression model for all endpoints. We investigated the non-linear effects of all biomarkers and age on the endpoints, using restricted cubic splines with three knots at the 10th, 50th, and 90th percentiles.
 
@@ -95,11 +95,300 @@ All analyses were done using the statistical software R version 3.6.3 (R Core De
 
 ## Results
 
-## Patient characteristics
+### Patient characteristics
 
 The majority of the patients were from Vietnam (640 cases, 76%). Median (1st, 3rd quartiles) age of the case and control groups were 12 (9, 22) and 16 (10, 24) years. Among the S/MD group, 127 cases (45%) were children and 154 cases (55%) were adults. Male gender was predominant (60% and 54% in the case and control groups respectively). Serotype distribution was similar between the S/MD and control groups, with DENV-1 predominating (42%), particularly in children (48%). Host immune status however differed: there was a higher proportion of secondary infections in the S/MD group compared with controls (78% versus 64%, respectively) and this was consistent in both children and adults. The S/MD had a slightly lower percentage of obese patients than the control group (10% versus 14%). As expected, hospitalization was more common in the S/MD group (57% versus 31%) (Table 1). Overall, 38 patients developed severe dengue, most were severe plasma leakage (33/38 cases, 87%) and 29/38 (76%) were children. Most of the moderate dengue cases were plasma leakage and/or hepatic involvement (Appendix 4—table 1).
 
-## Biomarker levels
+**Table 1.**
+ Summary of clinical data by primary outcome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">All patients</th>
+      <th colspan="2">Children</th>
+      <th colspan="2">Adults</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Uncomplicated dengue (N = 556)</th>
+      <th>Severe/moderate dengue (N = 281)</th>
+      <th>Uncomplicated dengue (N = 337)</th>
+      <th>Severe/moderate dengue (N = 127)</th>
+      <th>Uncomplicated dengue (N = 219)</th>
+      <th>Severe/moderate dengue (N = 154)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Country, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Cambodia</td>
+      <td>39 (7)</td>
+      <td>30 (11)</td>
+      <td>37 (11)</td>
+      <td>29 (23)</td>
+      <td>2 (1)</td>
+      <td>1 (1)</td>
+    </tr>
+    <tr>
+      <td>- El Salvador</td>
+      <td>23 (4)</td>
+      <td>18 (6)</td>
+      <td>23 (7)</td>
+      <td>18 (14)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>- Malaysia</td>
+      <td>58 (10)</td>
+      <td>29 (10)</td>
+      <td>3 (1)</td>
+      <td>1 (1)</td>
+      <td>55 (25)</td>
+      <td>28 (18)</td>
+    </tr>
+    <tr>
+      <td>- Vietnam</td>
+      <td>436 (78)</td>
+      <td>204 (73)</td>
+      <td>274 (81)</td>
+      <td>79 (62)</td>
+      <td>162 (74)</td>
+      <td>125 (81)</td>
+    </tr>
+    <tr>
+      <td>Age (years), median (1st, 3rd quartiles)</td>
+      <td>12 (9, 22)</td>
+      <td>16 (10, 24)</td>
+      <td>10 (8, 12)</td>
+      <td>10 (7, 12)</td>
+      <td>26 (20, 34)</td>
+      <td>22 (18, 30)</td>
+    </tr>
+    <tr>
+      <td>Gender male, n (%)</td>
+      <td>299 (54)</td>
+      <td>170 (60)</td>
+      <td>173 (51)</td>
+      <td>80 (63)</td>
+      <td>126 (58)</td>
+      <td>90 (58)</td>
+    </tr>
+    <tr>
+      <td>Illness day at enrolment, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 1</td>
+      <td>91 (16)</td>
+      <td>49 (17)</td>
+      <td>57 (17)</td>
+      <td>25 (20)</td>
+      <td>34 (16)</td>
+      <td>24 (16)</td>
+    </tr>
+    <tr>
+      <td>- 2</td>
+      <td>260 (47)</td>
+      <td>130 (46)</td>
+      <td>156 (46)</td>
+      <td>52 (41)</td>
+      <td>104 (47)</td>
+      <td>78 (51)</td>
+    </tr>
+    <tr>
+      <td>- 3</td>
+      <td>205 (37)</td>
+      <td>102 (36)</td>
+      <td>124 (37)</td>
+      <td>50 (39)</td>
+      <td>81 (37)</td>
+      <td>52 (34)</td>
+    </tr>
+    <tr>
+      <td>Serotype, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- DENV-1</td>
+      <td>228 (41)</td>
+      <td>121 (43)</td>
+      <td>161 (48)</td>
+      <td>61 (48)</td>
+      <td>67 (31)</td>
+      <td>60 (39)</td>
+    </tr>
+    <tr>
+      <td>- DENV-2</td>
+      <td>74 (13)</td>
+      <td>47 (17)</td>
+      <td>22 (7)</td>
+      <td>16 (13)</td>
+      <td>52 (24)</td>
+      <td>31 (20)</td>
+    </tr>
+    <tr>
+      <td>- DENV-3</td>
+      <td>59 (11)</td>
+      <td>29 (10)</td>
+      <td>43 (13)</td>
+      <td>18 (14)</td>
+      <td>16 (7)</td>
+      <td>11 (7)</td>
+    </tr>
+    <tr>
+      <td>- DENV-4</td>
+      <td>161 (29)</td>
+      <td>70 (25)</td>
+      <td>91 (27)</td>
+      <td>26 (20)</td>
+      <td>70 (32)</td>
+      <td>44 (29)</td>
+    </tr>
+    <tr>
+      <td>- Unknown</td>
+      <td>34 (6)</td>
+      <td>14 (5)</td>
+      <td>20 (6)</td>
+      <td>6 (5)</td>
+      <td>14 (6)</td>
+      <td>8 (5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Immune status, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Probable primary</td>
+      <td>124 (22)</td>
+      <td>41 (15)</td>
+      <td>86 (26)</td>
+      <td>15 (12)</td>
+      <td>38 (17)</td>
+      <td>26 (17)</td>
+    </tr>
+    <tr>
+      <td>- Probable secondary</td>
+      <td>355 (64)</td>
+      <td>218 (78)</td>
+      <td>202 (60)</td>
+      <td>100 (79)</td>
+      <td>153 (70)</td>
+      <td>118 (77)</td>
+    </tr>
+    <tr>
+      <td>- Inconclusive</td>
+      <td>77 (14)</td>
+      <td>22 (8)</td>
+      <td>49 (15)</td>
+      <td>12 (9)</td>
+      <td>28 (13)</td>
+      <td>10 (6)</td>
+    </tr>
+    <tr>
+      <td>Obesity*, n (%)</td>
+      <td>78 (14)</td>
+      <td>29 (10)</td>
+      <td>62 (18)</td>
+      <td>19 (15)</td>
+      <td>16 (7)</td>
+      <td>10 (6)</td>
+    </tr>
+    <tr>
+      <td>Diabetes, n (%)</td>
+      <td>4 (1)</td>
+      <td>1 (0)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>4 (2)</td>
+      <td>1 (1)</td>
+    </tr>
+    <tr>
+      <td>WHO 2009 classification, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Mild dengue</td>
+      <td>266 (48)</td>
+      <td>49 (17)</td>
+      <td>168 (50)</td>
+      <td>17 (13)</td>
+      <td>98 (45)</td>
+      <td>32 (21)</td>
+    </tr>
+    <tr>
+      <td>- Dengue with warning signs</td>
+      <td>288 (52)</td>
+      <td>186 (66)</td>
+      <td>169 (50)</td>
+      <td>81 (64)</td>
+      <td>119 (54)</td>
+      <td>105 (68)</td>
+    </tr>
+    <tr>
+      <td>- Severe dengue</td>
+      <td>0 (0)</td>
+      <td>43 (15)</td>
+      <td>0 (0)</td>
+      <td>27 (21)</td>
+      <td>0 (0)</td>
+      <td>16 (10)</td>
+    </tr>
+    <tr>
+      <td>- Unknown</td>
+      <td>2 (0)</td>
+      <td>3 (1)</td>
+      <td>0 (0)</td>
+      <td>2 (2)</td>
+      <td>2 (1)</td>
+      <td>1 (1)</td>
+    </tr>
+    <tr>
+      <td>Hospitalization, n (%)</td>
+      <td>175 (31)</td>
+      <td>161 (57)</td>
+      <td>127 (38)</td>
+      <td>83 (65)</td>
+      <td>48 (22)</td>
+      <td>78 (51)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Obesity is defined as body mass index of higher than 30 kg/m2 (for patients of older than 18 years) or two standard deviations of the median of body mass index for age (for patients of 18 years or below). WHO: World Health Organization._
+
+### Biomarker levels
 
 On average, the patients who progressed to S/MD had higher levels of the biomarkers in both children and adult patients, both at enrollment and at follow-up (Figure 2, Appendix 4—table 2). For most individuals, the levels of five biomarkers (VCAM-1, IL-8, IP-10, IL-1RA, and CRP) decreased between enrollment and follow-up, whereas SDC-1 increased slightly and the other markers showed no clear trends (Appendix 4—figure 1). In some of the cases the biomarkers did not return to normal at convalescence. Moderate-to-strong positive correlations were evident for some markers, in particular IP-10 and IL-1RA, and IP-10 and VCAM-1, both with Spearman’s rank correlation coefficients above 0.6 (Appendix 4—figure 2).
 
@@ -107,7 +396,7 @@ On average, the patients who progressed to S/MD had higher levels of the biomark
 
 **Figure 2.:** VCAM-1: vascular cell adhesion molecule-1; SDC-1: syndecan-1; Ang-2: angiopoietin-2; IL-8: interleukin-8; IP-10: interferon gamma-induced protein-10; IL-1RA: interleukin-1 receptor antagonist; sCD163: soluble cluster of differentiation 163; sTREM-1: soluble triggering receptor expressed on myeloid cells-1; CRP: C-reactive protein. Y-axes are transformed using the fourth root transformation.
 
-## Associations between biomarker levels and the endpoints
+### Associations between biomarker levels and the endpoints
 
 In the single models, higher levels of each biomarker on illness days 1, 2, or 3 increased the risk of developing S/MD, with the exception of ferritin in adults where there was a downward trend at higher values (Figure 3, Table 2). We observed differences between children and adults for several biomarkers, the most pronounced being SDC-1, IL-8, ferritin, and IL-1RA. Associations between SDC-1 and IL-8 and the S/MD endpoint were stronger in adults than children, while the effects of IL-1RA and ferritin were stronger in children than adults.
 
@@ -115,15 +404,694 @@ In the single models, higher levels of each biomarker on illness days 1, 2, or 3
 
 **Figure 3.:** The odds ratio of severe/moderate dengue (the red and blue lines) and 95% confidence interval (the red and blue regions) are estimated from multivariable logistic regression models allowing for a non-linear relation of log-2 of the biomarker level with severe/moderate dengue using restricted cubic splines. Each single model contains the corresponding biomarker, age and their interaction, while the global model contains all biomarkers and their interaction with age. The reference values for the odds ratios (where the odds ratio is equal to 1) are represented by the vertical gray dashed lines. They are chosen as the median of the biomarker levels of the whole study population (VCAM-1: 1636 ng/ml; SDC-1: 2519 pg/ml; Ang-2: 1204 pg/ml; IL-8: 14 pg/ml; IP-10: 3093 pg/ml; IL-1RA: 6434 pg/ml; sCD163: 295 ng/ml; sTREM-1: 85 ng/ml; ferritin: 243 ng/ml; and CRP: 28 mg/l). The x-axis represents biomarker levels; it is transformed using log-2 and its range truncated by the 5th and 95th percentiles of the biomarker levels of the whole study population. The rug plot on the x-axis represents the distribution of individual cases; the bottom rug plot represents the uncomplicated dengue cases and the top rug plot represents the severe/moderate dengue cases (children [<15 years of age] are in red and adults [≥15 years of age] are in blue). The red line and region represent children; results are shown for children at age of 10 years. The blue line and region represents adults; results are shown for adults at age of 25 years. VCAM-1: vascular cell adhesion molecule-1; SDC-1: syndecan-1; Ang-2: angiopoietin-2; IL-8: interleukin-8; IP-10: interferon gamma-induced protein-10; IL-1RA: interleukin-1 receptor antagonist; sCD163: soluble cluster of differentiation 163; sTREM-1: soluble triggering receptor expressed on myeloid cells-1; CRP: C-reactive protein.
 
+**Table 2.**
+ Results from models for the primary endpoint (severe or moderate dengue).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Single models</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Global model</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Children OR (95% CI)</th>
+      <th>Adults OR (95% CI)</th>
+      <th>Poverall</th>
+      <th>Pinteraction</th>
+      <th></th>
+      <th>Children OR (95% CI)</th>
+      <th>Adults OR (95% CI)</th>
+      <th>Poverall</th>
+      <th>Pinteraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VCAM-1 (ng/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.715</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.441</td>
+      <td>0.213</td>
+    </tr>
+    <tr>
+      <td>- 1636 vs 818</td>
+      <td>1.20 (1.04–1.38)</td>
+      <td>1.35 (1.15–1.58)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.90 (0.73–1.10)</td>
+      <td>1.22 (0.96–1.57)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 3272 vs 1636</td>
+      <td>1.25 (1.02–1.53)</td>
+      <td>1.48 (1.19–1.85)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.87 (0.66–1.15)</td>
+      <td>1.30 (0.93–1.80)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDC-1 (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.088</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.002</td>
+      <td>0.588</td>
+    </tr>
+    <tr>
+      <td>- 2519 vs 1260</td>
+      <td>2.67 (1.31–5.43)</td>
+      <td>3.33 (1.32–8.42)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.03 (0.77–5.34)</td>
+      <td>5.11 (1.56–16.78)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 5039 vs 2519</td>
+      <td>1.71 (1.18–2.47)</td>
+      <td>3.71 (2.09–6.58)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.76 (0.98–3.14)</td>
+      <td>2.52 (1.17–5.42)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ang-2 (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.524</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.039</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>- 1204 vs 602</td>
+      <td>1.64 (1.39–1.94)</td>
+      <td>1.51 (1.26–1.82)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.67 (1.23–2.25)</td>
+      <td>1.01 (0.74–1.38)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 2409 vs 1204</td>
+      <td>2.21 (1.58–3.10)</td>
+      <td>2.00 (1.40–2.85)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.95 (1.25–3.05)</td>
+      <td>1.01 (0.65–1.57)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IL-8 (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>- 14 vs 7</td>
+      <td>1.42 (1.05–1.91)</td>
+      <td>2.18 (1.47–3.24)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.91 (0.63–1.34)</td>
+      <td>1.69 (1.05–2.71)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 28 vs 14</td>
+      <td>0.99 (0.78–1.25)</td>
+      <td>2.33 (1.63–3.33)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.53 (0.36–0.77)</td>
+      <td>2.05 (1.34–3.13)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IP-10 (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.984</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.206</td>
+      <td>0.630</td>
+    </tr>
+    <tr>
+      <td>- 3093 vs 1546</td>
+      <td>1.46 (1.26–1.68)</td>
+      <td>1.45 (1.21–1.73)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.94 (0.73–1.19)</td>
+      <td>0.80 (0.57–1.12)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 6186 vs 3093</td>
+      <td>1.68 (1.35–2.09)</td>
+      <td>1.69 (1.29–2.22)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.08 (0.77–1.51)</td>
+      <td>0.82 (0.52–1.29)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IL-1RA (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.082</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>- 6434 vs 3217</td>
+      <td>1.69 (1.42–2.03)</td>
+      <td>1.48 (1.21–1.81)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.07 (1.52–2.84)</td>
+      <td>1.45 (0.98–2.15)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 12868 vs 6434</td>
+      <td>1.82 (1.46–2.27)</td>
+      <td>1.70 (1.29–2.24)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.16 (1.53–3.05)</td>
+      <td>1.47 (0.94–2.30)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sCD163 (ng/ml)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.551</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.217</td>
+      <td>0.341</td>
+    </tr>
+    <tr>
+      <td>- 295 vs 147</td>
+      <td>1.57 (1.14–2.15)</td>
+      <td>1.49 (1.13–1.98)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.40 (0.89–2.22)</td>
+      <td>1.27 (0.84–1.91)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 589 vs 295</td>
+      <td>1.46 (1.10–1.93)</td>
+      <td>1.61 (1.09–2.37)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.21 (0.87–1.69)</td>
+      <td>1.39 (0.89–2.18)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sTREM-1 (pg/ml)</td>
+      <td></td>
+      <td></td>
+      <td>0.059</td>
+      <td>0.997</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.555</td>
+      <td>0.393</td>
+    </tr>
+    <tr>
+      <td>- 85 vs 42</td>
+      <td>1.87 (1.23–2.84)</td>
+      <td>1.79 (1.10–2.93)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.13 (0.70–1.81)</td>
+      <td>1.21 (0.65–2.26)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 169 vs 85</td>
+      <td>1.12 (0.91–1.38)</td>
+      <td>1.12 (0.82–1.53)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.89 (0.65–1.21)</td>
+      <td>0.61 (0.38–0.99)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ferritin (ng/ml)</td>
+      <td></td>
+      <td></td>
+      <td>0.042</td>
+      <td>0.054</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.008</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>- 243 vs 122</td>
+      <td>1.18 (1.01–1.38)</td>
+      <td>1.06 (0.89–1.27)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.30 (1.04–1.64)</td>
+      <td>0.78 (0.61–0.99)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 487 vs 243</td>
+      <td>1.26 (1.00–1.58)</td>
+      <td>0.90 (0.66–1.23)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.22 (0.89–1.67)</td>
+      <td>0.66 (0.44–1.00)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRP (mg/l)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.031</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.184</td>
+      <td>0.138</td>
+    </tr>
+    <tr>
+      <td>- 28 vs 14</td>
+      <td>1.26 (1.12–1.41)</td>
+      <td>1.25 (1.03–1.52)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.08 (0.93–1.25)</td>
+      <td>1.10 (0.85–1.44)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- 56 vs 28</td>
+      <td>1.13 (0.95–1.34)</td>
+      <td>1.38 (1.11–1.71)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.93 (0.75–1.15)</td>
+      <td>1.36 (1.02–1.81)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Poverall is derived from Wald test for the overall association of the biomarker with the endpoint; Pinteraction is from the test for the interaction between the biomarker and age. The odds ratios are estimated at age of 10 and 25 years, represented as children and adults respectively._
+
 In the global model there were some differences compared to the single models (Figure 3, Table 2). The biomarkers SDC-1 and IL-1RA were the most stable relative to the single models for both children and adults. However, for IP-10 the trend of the association with S/MD changed from positive to negative in both children and adults. In children, VCAM-1 changed the trend from positive to weakly negative and IL-8 changed the trend from weakly positive to negative. Other biomarkers showed weaker associations with the endpoint in the global model based on the ORs. In addition, the differences of the associations between children and adults were more marked, particularly for Ang-2, IL-8, and ferritin.
 
 The sensitivity analysis showed that the association between the biomarkers and S/MD did not differ between DENV-1 and other serotypes (Appendix 5—figure 1; Appendix 5—figure 2; Appendix 5—table 1; Appendix 5—table 2). Similar patterns were observed in the various analyses related to the secondary endpoints, as described in detail in the Appendix 6 (Appendix 6—figure 1; Appendix 6—figure 2, Appendix 6—table 1; Appendix 6—table 2, Appendix 6—table 3).
 
-## Best combinations of biomarkers associated with the primary endpoint
+### Best combinations of biomarkers associated with the primary endpoint
 
 For children, the best subset that showed the clearest association with S/MD was the combination of the six markers IL-1RA, Ang-2, IL-8, ferritin, IP-10, and SDC-1 with an AIC of 465.9. This model was selected most often in the bootstrap procedure, but was not highly robust (it was selected in 134 of the 1000 samples) (Table 3, Appendix 7—table 1). Over the 1000 samples, the six variables had an inclusion frequency ranging from 73.5% for SDC-1 to 100% for IL-1RA. The most important biomarkers in order were IL-1RA, Ang-2, IL-8, and ferritin (Appendix 7—table 2). The best combination of two biomarkers was IL-1RA and ferritin, the best of three added Ang-2, the best of four added IP-10, and the best of five added IL-8. The best combinations of two and five variables were most robust with a selection percentage of 43.7% and 44%. The best of five had almost the same AIC as the best subset of six markers (467.6 versus 465.9) (Table 3). The coefficients of the selected biomarkers were similar to the initial model estimates (Appendix 7—table 2).
 
+**Table 3.**
+ Best combinations of biomarkers associated with severe or moderate dengue for children.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Best of all combinations</th>
+      <th>Best combination of 2 variables</th>
+      <th>Best combination of 3 variables</th>
+      <th>Best combination of 4 variables</th>
+      <th>Best combination of 5 variables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- VCAM-1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- SDC-1</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Ang-2</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- IL-8</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- IP-10</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- IL-1RA</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- sCD163</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- sTREM-1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Ferritin</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- CRP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIC of the selected model</td>
+      <td>465.9</td>
+      <td>484.7</td>
+      <td>480.0</td>
+      <td>473.7</td>
+      <td>467.6</td>
+    </tr>
+    <tr>
+      <td>Bootstrap results</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Model selection frequency, n (%)</td>
+      <td>134 (13.4)</td>
+      <td>437 (43.7)</td>
+      <td>239 (23.9)</td>
+      <td>317 (31.7)</td>
+      <td>440 (44.0)</td>
+    </tr>
+    <tr>
+      <td>- Rank by selection frequency of the selected model</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_VCAM-1: vascular cell adhesion molecule-1; SDC-1: syndecan-1; Ang-2: angiopoietin-2; IL-8: interleukin-8; IP-10: interferon gamma-induced protein-10; IL-1RA: interleukin-1 receptor antagonist; sCD163: soluble cluster of differentiation 163; sTREM-1: soluble triggering receptor expressed on myeloid cells-1; CRP: C-reactive protein; AIC: Akaike information criterion._
+
 For adults, the best subset included the seven markers SDC-1, IL-8, ferritin, sTREM-1, IL-1RA, IP-10, and sCD163. This model was selected 79 times among 1000 bootstrap samples, but still was selected more often than the other models (Table 4, Appendix 7—table 3). Over the 1000 samples, the seven variables had a bootstrap inclusion frequency ranging from 59.1% for sCD163 to 99.2% for SDC-1. The three most important biomarkers in order were SDC-1, IL-8, and ferritin (Appendix 7—table 4). The best combination of two biomarkers included SDC-1 and IL-8, the best of three added ferritin, the best of four added IL-1RA, and the best of five added sTREM-1. The best combination of two was the most robust with a selection percentage of 56.7%, followed by the best of three variables (43.2%) (Table 4). The coefficients of the selected markers were also similar to the initial model estimates (Appendix 7—table 4).
+
+**Table 4.**
+ Best combinations of biomarkers associated with severe or moderate dengue for adults.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Best of all combinations</th>
+      <th>Best combination of 2 variables</th>
+      <th>Best combination of 3 variables</th>
+      <th>Best combination of 4 variables</th>
+      <th>Best combination of 5 variables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- VCAM-1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- SDC-1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- Ang-2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- IL-8</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- IP-10*</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- IL-1RA</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- sCD163</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- sTREM-1</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- Ferritin</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>- CRP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIC of the selected model</td>
+      <td>430.5</td>
+      <td>441.1</td>
+      <td>434.2</td>
+      <td>431.6</td>
+      <td>430.7</td>
+    </tr>
+    <tr>
+      <td>Bootstrap results</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Model selection frequency, n (%)</td>
+      <td>79 (7.9)</td>
+      <td>567 (56.7)</td>
+      <td>432 (43.2)</td>
+      <td>202 (20.2)</td>
+      <td>161 (16.1)</td>
+    </tr>
+    <tr>
+      <td>- Rank by selection frequency of the selected model</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_VCAM-1: vascular cell adhesion molecule-1; SDC-1: syndecan-1; Ang-2: angiopoietin-2; IL-8: interleukin-8; IP-10: interferon gamma-induced protein-10; IL-1RA: interleukin-1 receptor antagonist; sCD163: soluble cluster of differentiation 163; sTREM-1: soluble triggering receptor expressed on myeloid cells-1; CRP: C-reactive protein; AIC: Akaike information criterion.*Variable is kept as non-linear effect using natural cubic splines with three knots._
 
 In the sensitivity analysis, viremia was not selected in any of the best combinations for children, and the marker combinations remained the same as the main analysis. For adults, the best subset included five markers SDC-1, IL-8, ferritin, viremia and sCD163. The best of two and three were the same as the main analysis; viremia was selected in the best of four and five (Appendix 8—figure 1; Appendix 8—table 1; Appendix 8—table 2; Appendix 8—table 3).
 

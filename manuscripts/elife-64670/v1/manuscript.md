@@ -43,25 +43,25 @@ We expand the existing framework of Garske et al., 2014 for Africa to account fo
 
 **Figure 1.:** Occurrence since 1984 is shown in yellow.
 
-## Data
+### Data
 
 We combine multiple data sets within a Bayesian framework to account for areas with sparse data and under-reporting. The model is estimated at province level, to match the available occurrence data. All data was from secondary sources, and ethics approval was thereby not required. Figure 2 summarises the included data.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig2-v1.jpg)
 
-**Figure 2.:** denotes the force of infection.λCircles denote a product of calculation or inference; square boxes denote data sources. Adapted from Gaythorpe et al., 2019.
+**Figure 2.:** Diagram of models and data sources where $\lambda$ denotes the force of infection.Circles denote a product of calculation or inference; square boxes denote data sources. Adapted from Gaythorpe et al., 2019.
 
-## Global yellow fever occurrence
+### Global yellow fever occurrence
 
 A database of yellow fever occurrence was collated. This was compiled in two parts: occurrence in Africa was compiled originally in Garske et al. and has been subsequently maintained and updated (Garske et al., 2014; Gaythorpe et al., 2019; Jean et al., 2020). Occurrence of yellow fever in South America was collated by Hamlet et al., 2019. Reports of yellow fever in humans were assembled for both continents from sources including the weekly epidemiological record (World Health Organization, 2009), disease outbreak news (World Health Organization, 1996), WHO yellow fever surveillance database (YFSD), Brazilian Ministry of Health, and Pan-American Health Organisation (PAHO). The outbreak dataset for Africa up to 2018 is available to download from: https://github.com/kjean/YF_outbreak_PMVC/tree/main/formatted_data (Gaythorpe, 2021; copy archived at swh:1:rev:14703d7c5c7f63df6de04b81d5a48751604a906a). The cases of yellow fever were included if they were lab-confirmed through polymerase chain reaction. The YFSD includes confirmed and suspected yellow fever occurrence. Due to the low proportion of suspected cases in the database being due to yellow fever, this is used as a measure of surveillance effort where the incidence of suspected cases is aggregated to country level and divided by population to be used as a covariate in the GLM, following Garske et al., 2014.
 
-## Vaccination coverage and demography
+### Vaccination coverage and demography
 
 We use the methodology of Hamlet et al. and Garske et al. with updated data sets and additional data for South America in order to estimate vaccination coverage across the regions (Garske et al., 2014; Hamlet et al., 2018). The coverage estimates using this methodology are visualised and available to download at district level from 1940 to 2050 in the POLICI shiny application (Hamlet et al., 2018). The coverage is informed by historic data on mass-vaccination activities, reactive campaigns, recent preventive mass vaccination campaigns, and routine infant vaccination (Durieux, 1956; Moreau et al., 1999; World Health Organization/ UNICEF, 2015). Further data was provided by the Ministry of Health for Brazil.
 
 Demographic data was obtained from the United Nations World Population Prospects (UNWPP), which provides country-level population sizes (World population prospects, 2017). These were disaggregated to province level using Landscan data on population distributions (Dobson et al., 2000; LandScan, 2017). Age distributions were assumed to be the same across all provinces, and population distributions were assumed not to substantially vary over the observation period. Landscan provides population size estimates at 1/120 degree resolution. Combining this with UNWPP, we arrive at the total number of individuals in each age group and province over time.
 
-## Environmental and species occurrence data
+### Environmental and species occurrence data
 
 The GLM of yellow fever occurrence was developed to account for dependence on environmental conditions, habitat suitability, and occurrence of the NHPs. Covariates include measures of enhanced vegetation index, altitude, temperature, precipitation, and land cover types as well as NHP species occurrence, Ae. aegypti and Ae. albopictus occurrence , and Ae. aegypti temperature suitability (Fick and Hijmans, 2017; NASA, L. D, 2001; Xie and Arkin, 1996; Kraemer et al., 2015).
 
@@ -69,53 +69,105 @@ Covariate data sets were available as gridded datasets of various spatial resolu
 
 Prior to fitting, all variables were scaled to unit variance.
 
-## Serological surveys
+### Serological surveys
 
 We use serological surveys to assess transmission intensity in specific regions. Unfortunately, these are only available in the African endemic region. We include all surveys included in Gaythorpe et al. as well as a newly published survey undertaken in Kenya (Gaythorpe et al., 2019; Chepkorir et al., 2019; Diallo, 2010; Kuniholm et al., 2006; Merlin et al., 1986; Omilabu et al., 1990; Tsai et al., 1987; Werner et al., 1984). In the majority of surveys, individuals known to have been vaccinated are omitted; however, in south Cameroon, this information is unavailable and so we estimate an additional vaccination factor. In the study of Chepkorir et al., we include vaccinated proportions as stated in their evaluation after omitting those with unknown status. Where it is possible to determine whether there had been outbreaks affecting the survey, surveys describing outbreak seroprevalence were omitted.
 
-## Covariates for GLM
+### Covariates for GLM
 
 A full list of covariates is provided below; these are aggregated per province:
 
 Further details on how the NHP data was aggregated and how the temperature suitability was calculated are provided below.
 
-## Non-human primates
+### Non-human primates
 
 NHP data was acquired from the IUCN redlist (IUCN, 2019). This provided presence range maps at species level as polygons. NHP species whose range polygon covered more than 10% of a province were considered to be present in that province. In order to produce maps of primate species richness, we perform a count of all species belonging to a family in each province. We include all NHP primate families in the covariate selection process. If a primate family is included in the resulting model, the primate species richness is classed as the number of primate species in that family that are present in the province.
 
-## Temperature suitability
+### Temperature suitability
 
-Temperature suitability was calculated as in Gaythorpe et al., 2020. The form of the temperature suitability index is given by:z⁢(T)=a⁢(T)2⁢exp⁡(-μ⁢(T)⁢ρ⁢(T))μ⁢(T)where the bite rate, extrinsic incubation period, and mosquito mortality, given by a,ρ, and µ, respectively, are affected by temperature T in the following ways:a⁢(T)=ac⁢T⁢(T-aT0)⁢(aT⁢m-T)0.5ρ⁢(T)=1/(ρc⁢T⁢(T-ρT0)⁢(ρT⁢m-T)0.5)μ⁢(T)=1/(-μc⁢(T-μT0)⁢(μTm-T))following (Mordecai et al., 2017). The subscripts c,0, and m represent the positive rate constant, minimum temperature, and maximum temperature for each thermal response model. These were estimated within a Bayesian framework, and we retain the point estimates shown in Table 2 (Gaythorpe et al., 2020).
+Temperature suitability was calculated as in Gaythorpe et al., 2020. The form of the temperature suitability index is given by:
 
-## Models
+$$
+z⁢(T)=\frac{a⁢(T)^{2}⁢exp⁡(-\mu⁢(T)⁢ρ⁢(T))}{\mu⁢(T)}
+$$
+
+where the bite rate, extrinsic incubation period, and mosquito mortality, given by $a,ρ$, and µ, respectively, are affected by temperature T in the following ways:
+
+$$
+a⁢(T)=a_{c}⁢T⁢(T-a_{T_{0}})⁢(a_{T⁢m}-T)^{0.5}ρ⁢(T)=1/(ρ_{c}⁢T⁢(T-ρ_{T_{0}})⁢(ρ_{T⁢m}-T)^{0.5})\mu⁢(T)=1/(-\mu_{c}⁢(T-\mu_{T_{0}})⁢(\mu_{T_{m}}-T))
+$$
+
+following (Mordecai et al., 2017). The subscripts $c,0$, and m represent the positive rate constant, minimum temperature, and maximum temperature for each thermal response model. These were estimated within a Bayesian framework, and we retain the point estimates shown in Table 2 (Gaythorpe et al., 2020).
+
+### Models
 
 We extend the model of Garske et al., 2014 to account for yellow fever burden in South America as well as Africa. We update currently included data and include further data where necessary to expand the scope of the modelling.
 
-## Seroprevalence
+### Seroprevalence
 
-We assume a constant force of infection for each province over the observation period. This is the same as Garske et al. and was found to be a better reflection of available data than that another, dynamic, model variant (Gaythorpe et al., 2019). We assume homogeneous mixing and account for vaccination using the following form for s⁢(λ,u), the expected seroprevalence in age group u given force of infection λ:s⁢(λ,u)=1-(1-∑a∈u(1-e⁢x⁢p⁢(-λ⁢a)⁢pa)∑a∈u(pa))⁢(1-∑a∈uva⁢pa∑a∈upa),where a indexes the annual age groups, pa is the population age distribution, and va is the vaccination coverage in age group a. The binomial log likelihood is then given by the following:log⁡Lsero=∑ulog⁡(NuKu)s(λ,u)Ku(1−s(λ,u)Nu),where Nu is the number of samples in age group u and Ku is the number of positive samples in age group u.
+We assume a constant force of infection for each province over the observation period. This is the same as Garske et al. and was found to be a better reflection of available data than that another, dynamic, model variant (Gaythorpe et al., 2019). We assume homogeneous mixing and account for vaccination using the following form for $s⁢(\lambda,u)$, the expected seroprevalence in age group u given force of infection $\lambda$:
 
-## GLM of the presence/absence of yellow fever reports
+$$
+s⁢(\lambda,u)=1-(1-\frac{\sum_{a\inu}(1-e⁢x⁢p⁢(-\lambda⁢a)⁢p_{a})}{\sum_{a\inu}(p_{a})})⁢(1-\frac{\sum_{a\inu}v_{a}⁢p_{a}}{\sum_{a\inu}p_{a}}),
+$$
 
-A GLM was fitted to the data set of yellow fever occurrence from 1984 to 2019 at province level. The data is assumed to be binomially distributed and a complementary log–log link function is used such that model predictions in province i, qi, are given byq=1-e⁢x⁢p⁢(-eX⁢β),where X denotes the matrix of covariates and β indicates the parameter vector to be fitted. The log-likelihood is given bylog⁡Lg⁢l⁢m=∑i(yi⁢log⁡(qi)+(1-yi)⁢log⁡(1-qi)),where yi denotes the presence/ absence in province i.
+where a indexes the annual age groups, pa is the population age distribution, and va is the vaccination coverage in age group a. The binomial log likelihood is then given by the following:
+
+$$
+log⁡L_{sero}=\sumulog⁡(\frac{N_{u}}{K_{u}})s(\lambda,u)^{K_{u}}(1−s(\lambda,u)^{N_{u}}),
+$$
+
+where $N_{u}$ is the number of samples in age group u and $K_{u}$ is the number of positive samples in age group u.
+
+### GLM of the presence/absence of yellow fever reports
+
+A GLM was fitted to the data set of yellow fever occurrence from 1984 to 2019 at province level. The data is assumed to be binomially distributed and a complementary log–log link function is used such that model predictions in province i, qi, are given by
+
+$$
+q=1-e⁢x⁢p⁢(-e^{X⁢\beta}),
+$$
+
+where X denotes the matrix of covariates and $\beta$ indicates the parameter vector to be fitted. The log-likelihood is given by
+
+$$
+log⁡L_{g⁢l⁢m}=\sumi(y_{i}⁢log⁡(q_{i})+(1-y_{i})⁢log⁡(1-q_{i})),
+$$
+
+where yi denotes the presence/ absence in province i.
 
 The occurrence of yellow fever depends on a number of environmental factors as well as the abundance and distribution of the vector and NHP hosts. We consider many of these variables as potential covariates in the model. As with Garske et al., the number of covariates to consider is large and has been extended for the current work by the inclusion of NHPs and temperature suitability. As such we perform a selection process, detailed below:
 
 All models then included a measure of surveillance quality. For the 21 countries within the yellow fever surveillance database, specific data on reporting per capita was available. For countries not covered by the yellow fever surveillance database, and thus without an independent estimate of surveillance, individual country factors were fitted. However, countries not considered at risk were grouped together in order to have one country factor. This is in order to avoid infinite parameter estimates in areas which are known not to have yellow fever reports.
 
-## Transmission intensity
+### Transmission intensity
 
-The transmission intensity estimates arising from the serology allow us to calculate the number of infections over the observation period in the areas where surveys were conducted. We link this to the probability of yellow fever report through a Poisson reporting process with a probability of the detection. This is calculated by comparing the GLM to predictions of the seroprevalence models in the following way:qi=1-(1-ρi)ni⁢n⁢f,i,where ρc is the per-country probability of detection, qi is the probability of a report in province i, provided by the GLM, and ni⁢n⁢f,i is the number of infections in province i, provided by the seroprevalence model. This means that the probability of detection can be linked to the GLM covariates by:ni⁢n⁢f,i⁢log⁡(1-ρc)=exp⁡(X⁢β),and in terms of the country factors, GLM covariates βc, and b, the baseline surveillance quality by:log⁡(-log⁡(1-ρc))=βc+b.
+The transmission intensity estimates arising from the serology allow us to calculate the number of infections over the observation period in the areas where surveys were conducted. We link this to the probability of yellow fever report through a Poisson reporting process with a probability of the detection. This is calculated by comparing the GLM to predictions of the seroprevalence models in the following way:
+
+$$
+q_{i}=1-(1-ρ_{i})^{n_{i⁢n⁢f,i}},
+$$
+
+where $ρ_{c}$ is the per-country probability of detection, qi is the probability of a report in province i, provided by the GLM, and $n_{i⁢n⁢f,i}$ is the number of infections in province i, provided by the seroprevalence model. This means that the probability of detection can be linked to the GLM covariates by:
+
+$$
+n_{i⁢n⁢f,i}⁢log⁡(1-ρ_{c})=exp⁡(X⁢\beta),
+$$
+
+and in terms of the country factors, GLM covariates $\beta_{c}$, and b, the baseline surveillance quality by:
+
+$$
+log⁡(-log⁡(1-ρ_{c}))=\beta_{c}+b.
+$$
 
 Once the probability of detection has been estimated for each province with a serological study, we take the mean over each and use the resulting probability to extrapolate transmission intensity in areas where there are currently no seroprevalence studies.
 
-## Estimation
+### Estimation
 
 The best-fitting models, according to BIC, were estimated within a Bayesian framework described in Gaythorpe et al., 2019 including code used. The estimation is divided into two phases. The GLMs are estimated using adaptive Markov chain Monte Carlo (MCMC) sampling, whereas the seroprevalence models are estimated within a product space framework with the probability of the force of infection model set to 1; as such, the estimation becomes an adaptive MCMC with log-transformed parameters.
 
-Prior distributions were chosen in many cases to match those of Garske et al. Country factors retain the Gaussian prior distribution with mean 0 and standard deviation 2 except for the countries considered low risk, whose country factor had truncated normal prior with mean 0 and standard deviation 30 and limits [0, ∞], designed to be uninformative and positive. The same prior was used for the GLM coefficient for the aggregated NHP species richness and the converse for the GLM coefficients for temperature range and altitude which were assumed to be negative. All other GLM coefficient priors were normal with mean 0 and standard deviation 30 to be uninformative. The force of infections for each seroprevalence study had exponential priors with rate parameter 0.001, although this was varied in earlier estimation, and the vaccine efficacy had truncated normal prior with mean 0.975 and standard deviation 0.05, according to Jean et al., 2016; this was truncated to [0,1].
+Prior distributions were chosen in many cases to match those of Garske et al. Country factors retain the Gaussian prior distribution with mean 0 and standard deviation 2 except for the countries considered low risk, whose country factor had truncated normal prior with mean 0 and standard deviation 30 and limits [0, $∞$], designed to be uninformative and positive. The same prior was used for the GLM coefficient for the aggregated NHP species richness and the converse for the GLM coefficients for temperature range and altitude which were assumed to be negative. All other GLM coefficient priors were normal with mean 0 and standard deviation 30 to be uninformative. The force of infections for each seroprevalence study had exponential priors with rate parameter 0.001, although this was varied in earlier estimation, and the vaccine efficacy had truncated normal prior with mean 0.975 and standard deviation 0.05, according to Jean et al., 2016; this was truncated to [0,1].
 
-## Ensemble predictions
+### Ensemble predictions
 
 We propagate uncertainty from both the parameter estimation and model structure. This is done through sampling proportionally from the posterior distributions of all 20 of the best-fitting models to produce 500 force of infection and thus burden predictions. We sample proportional to the area under the curve (AUC) of each model fit. We also considered sampling proportional to likelihood; however, the AUC was used to compare our models with previous works such as Garske et al., 2014 and was more computationally efficient for larger sample sizes. In order to produce estimates of the number of severe infections and deaths per province and year, we scale the model output, infections, by sampling from the full uncertainty ranges of Johansson et al., 2014 for the proportion of infections considered severe and, of those, the proportion that will then die of yellow fever.
 
@@ -123,17 +175,432 @@ Whilst we propagate structural and parameter uncertainty to the predictions from
 
 All analyses, estimation, and the original draft of the manuscript were performed in R version 3.5.1.
 
-## Role of funding source
+### Role of funding source
 
 This work was carried out as part of the Vaccine Impact Modelling Consortium, which is funded by Gavi, the Vaccine Alliance and the Bill and Melinda Gates Foundation. The views expressed are those of the authors and not necessarily those of the Consortium or its funders. The final decision on the content of the publication was taken by the authors. We acknowledge joint Centre funding from the UK Medical Research Council and Department for International Development. The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication.
 
 ## Results
 
-## Regression model fitting and variable selection
+### Regression model fitting and variable selection
 
-All of the models included log (surveillance quality) and country factors for which country-specific surveillance information was not available. A total of 50 covariates were considered, all of which were significantly related to the data with threshold p=0.1. These were clustered into 39 groups leading to approximately 2.03×1046 model permutations. Following the use of a step function based on BIC, we reduce this number to 13 covariates and retain the 20 best models including these, shown in Table 1.
+All of the models included log (surveillance quality) and country factors for which country-specific surveillance information was not available. A total of 50 covariates were considered, all of which were significantly related to the data with threshold p=0.1. These were clustered into 39 groups leading to approximately $2.03\times10^{46}$ model permutations. Following the use of a step function based on BIC, we reduce this number to 13 covariates and retain the 20 best models including these, shown in Table 1.
+
+**Table 1.**
+ Composition of the 20 best-fitting generalised linear models of yellow fever reports.Surveillance quality is also included in all models. If an entry is 1, that covariate is included, if an entry is 0, that covariate is not included. Abbreviations used: MIR = middle infrared reflectance, Temp. = temperature., occ. = occurrence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Cercopithecidae occ.</th>
+      <th>Cebidae occ.</th>
+      <th>Population (log)</th>
+      <th>Temp. suitability (mean)</th>
+      <th>Grasslands</th>
+      <th>Savanna</th>
+      <th>Evergreen broadleaf forests</th>
+      <th>Ae. aegypti occ.</th>
+      <th>Aotidae occ.</th>
+      <th>Woody savanna</th>
+      <th>Temp. range</th>
+      <th>Maximum MIR</th>
+      <th>Altitude</th>
+      <th>BIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>870</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>872</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>872</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>872</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>874</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>874</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>874</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>875</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>876</td>
+    </tr>
+  </tbody>
+</table>
 
 Similar to Garske et al., all of the 20 best-fitting models included the log of population size, relating the probability of a report with the human population. All 20 models also included the temperature suitability at mean temperature which will limit the models in areas where the temperatures are too extreme to sustain vector transmission dynamics; Table 2 shows the parameters for the temperature suitability model. The species richness of three NHP families were included in all variants. These were aggregated in order to balance the contribution of the NHP host with the competence of vectors and human dynamics and populations. All model covariates are shown in Figure 3. Covariates such as Ae. aegypti occurrence, temperature range, altitude and barren, cropland, shrubland, and water body land cover were only included in some of the best models.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig3-v1.jpg)
+
+**Figure 3.:** Species richness is the sum of all NHP species present per province from families listed in Table 1 and will vary as families are included/excluded. See Figure 3—figure supplement 1–4 for trace plots of all parameters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig3-figsupp3-v1.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig3-figsupp4-v1.jpg)
+
+**Table 2.**
+ Temperature suitability index parameter values.The subscripts $c,0$, and m represent the positive rate constant, minimum temperature, and maximum temperature for each thermal response model. Parameter a corresponds to bite rate, $ρ$ corresponds to extrinsic incubation period, and µ corresponds to mosquito mortality.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ac</th>
+      <th>aT0</th>
+      <th>aTm</th>
+      <th>ρc</th>
+      <th>ρT0</th>
+      <th>ρTm</th>
+      <th>μc</th>
+      <th>μT0</th>
+      <th>μTm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Value</td>
+      <td>2.72e-4</td>
+      <td>2.24</td>
+      <td>40.13</td>
+      <td>−0.75</td>
+      <td>12.71</td>
+      <td>38.05</td>
+      <td>1.36e-4</td>
+      <td>17.33</td>
+      <td>42.20</td>
+    </tr>
+  </tbody>
+</table>
 
 The 20 best-fitting models were also fit with full MCMC and the AUC calculated. These are shown in Figure 4. The AUCs of model variants are very similar with variant six generally the best. All model variants exceed the AUC of Gaythorpe et al., 2019 which had point estimate of 0.916.
 
@@ -141,7 +608,7 @@ The 20 best-fitting models were also fit with full MCMC and the AUC calculated. 
 
 **Figure 4.:** The AUC are calculated for 500 samples from the posterior of each model variant.
 
-## Yellow fever occurrence
+### Yellow fever occurrence
 
 We predict yellow fever occurrence over the observation period in Figure 5. These ensemble predictions indicate high probabilities of report in the Amazon region of Brazil and West Africa. Note the results shown also include a measure of surveillance effort emphasising countries such as Angola.
 
@@ -149,25 +616,179 @@ We predict yellow fever occurrence over the observation period in Figure 5. Thes
 
 **Figure 5.:** This applies over the observation period 1984–2019.
 
-## Seroprevalence
+### Seroprevalence
 
 The model prediction captured the wide range of transmission intensity, see Figure 6. However, in certain conditions such as in Kenya area 1, the fit is affected by uncertainty concerning the vaccination status of included individuals. These results show similar qualitative fits to Gaythorpe et al., 2019. Indeed, there are only two additional included studies, those found in Kenya of Chepkorir et al., 2019. In some cases, some of the data points lie outside the 95% Crl, these generally align with areas where there is uncertainty in the vaccination status of included individuals or where it is indicative of an outbreak.
 
-## Transmission intensity
+![Figure 6.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig6-v1.jpg)
+
+**Figure 6.:** Central blue line indicates median posterior predicted seroprevalence; blue area indicates 95% CrI. Dots indicate the data with error bar representing binomial confidence intervals. Countries are named by their ISO code with different ecological zones indexed ‘zone x’. See Figure 6—figure supplement 1 for posterior distribution of vaccine efficacy and vaccine factor for CMRs; see Figure 6—figure supplement 2 for comparison of force of infection estimates under different prior distributions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The first, used throughout the manuscript, is exponential with rate = 0.001. The comparitor is exponential with rate = 0.1.
+
+### Transmission intensity
 
 In Figure 7, we show the median ensemble predictions of transmission intensity. In comparison to Garske et al., the force of infection in West Africa is slightly lower, and provinces in the Democratic Republic of the Congo (DRC) are highlighted as areas of high transmission intensity. However, the main area highlighted is that of Amazon in Brazil. See Figure 7—figure supplement 1 for the coefficient of variation between 100 samples from each of the 20 models, sampled equally; this further highlights areas of low transmission intensity such as the Sahara having higher degrees of uncertainty.
 
-## Burden
+![Figure 7.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig7-v1.jpg)
+
+**Figure 7.:** Force of infections are assumed to be time invariant as such, these do not correspond to a particular year. See Figure 6—figure supplement 1 for coefficient of variation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig7-figsupp1-v1.jpg)
+
+### Burden
 
 The annual potential number of deaths and severe infections are shown in Table 3 with deaths per country in 2018 given in Figure 8. We estimate that in 2018 there were approximately 109,000 (95% CrI [67,000–173,000]) severe infections and 51,000 (95% CrI [31,000–82,000]) deaths due to yellow fever in these two regions. Burden is distributed unevenly between countries and continents. The highest burden is seen in the DRC due to a high force of infection and low vaccination coverage. In contrast, Brazil sees the fourth highest burden purely due to high force of infection in the Amazon region rather than low vaccination coverage. The majority of the burden occurs in Africa, which holds for all years shown.
 
+**Table 3.**
+ Potential deaths and severe infections per year in Africa and South America from ensemble model projections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Continent</th>
+      <th>Year</th>
+      <th>Severe infections, median</th>
+      <th>Severe infections, 95% CrI low</th>
+      <th>Severe infections, 95% CrI high</th>
+      <th>Deaths, median</th>
+      <th>Deaths, 95% CrI low</th>
+      <th>Deaths, 95% CrI high</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Africa</td>
+      <td>1995</td>
+      <td>102,972</td>
+      <td>62,162</td>
+      <td>160,700</td>
+      <td>48,474</td>
+      <td>28,672</td>
+      <td>76,998</td>
+    </tr>
+    <tr>
+      <td>Africa</td>
+      <td>2005</td>
+      <td>122,101</td>
+      <td>74,915</td>
+      <td>192,773</td>
+      <td>57,182</td>
+      <td>34,446</td>
+      <td>90,736</td>
+    </tr>
+    <tr>
+      <td>Africa</td>
+      <td>2013</td>
+      <td>98,148</td>
+      <td>62,083</td>
+      <td>150,953</td>
+      <td>45,973</td>
+      <td>28,680</td>
+      <td>72,380</td>
+    </tr>
+    <tr>
+      <td>Africa</td>
+      <td>2018</td>
+      <td>100,952</td>
+      <td>63,001</td>
+      <td>158,362</td>
+      <td>47,318</td>
+      <td>29,162</td>
+      <td>74,981</td>
+    </tr>
+    <tr>
+      <td>Americas</td>
+      <td>1995</td>
+      <td>14,349</td>
+      <td>6528</td>
+      <td>26,016</td>
+      <td>6652</td>
+      <td>3026</td>
+      <td>12,577</td>
+    </tr>
+    <tr>
+      <td>Americas</td>
+      <td>2005</td>
+      <td>10,254</td>
+      <td>4988</td>
+      <td>18,436</td>
+      <td>4827</td>
+      <td>2265</td>
+      <td>8779</td>
+    </tr>
+    <tr>
+      <td>Americas</td>
+      <td>2013</td>
+      <td>8559</td>
+      <td>4264</td>
+      <td>15,043</td>
+      <td>3999</td>
+      <td>1969</td>
+      <td>7162</td>
+    </tr>
+    <tr>
+      <td>Americas</td>
+      <td>2018</td>
+      <td>8331</td>
+      <td>4306</td>
+      <td>14,608</td>
+      <td>3883</td>
+      <td>1971</td>
+      <td>7033</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 8.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig8-v1.jpg)
 
-## Impact of mass vaccination campaigns in Africa
+### Impact of mass vaccination campaigns in Africa
 
 It has been shown that mass vaccination campaigns can produce long-lasting effects on disease burden. We examine the effects of mass vaccination activities from 2006 until 2019 in countries in Africa, to continue the analysis of Garske et al., 2014, in Figure 9 and in the figure supplement for 2013. We find large reductions in all countries with mass vaccination campaigns. In 2018, the largest reductions are of approximately 73% (95% CrI [64–79]) in Benin, 73% (95% CrI [60–81]) in Togo, and 61% (95% CrI [52–68]) in Liberia. This demonstrates the continued benefit of those campaigns.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig9-v1.jpg)
+
+**Figure 9.:** Yellow represents the number of deaths without mass vaccination campaigns since 2006, and black represents deaths with current vaccination coverage levels. The points denote median and the line shows the 95% credible interval. See Figure 9—figure supplement 1 for results in 2013.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64670/elife-64670-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Yellow represents the number of deaths without mass vaccination campaigns since 2006, and black represents deaths with current vaccination coverage levels. The mid line denotes median, and the box range shows the 95% credible interval.
+
 Overall, the reductions in the number of deaths per year are substantial, shown in Table 4. These amount to approximately 10,000 (95% CrI [6,000–17,000]) deaths averted in 2018 due to mass vaccination activities in Africa, corresponding to a 47% reduction (95% CrI [10–77]) in deaths.
+
+**Table 4.**
+ Deaths averted per year due to mass vaccination activites occurring from 2006 onwards in Africa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Median deaths averted</th>
+      <th>Deaths averted, 95% CrI low</th>
+      <th>Deaths averted, 95% CrI high</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2013</td>
+      <td>11,414</td>
+      <td>6400</td>
+      <td>19,369</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>10,140</td>
+      <td>5781</td>
+      <td>17,307</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -191,6 +812,6 @@ Modelling yellow fever is inherently uncertain. We have attempted to quantify th
 
 We have refined an established model but have also inherited some of its limitations, one of which is constancy. We assume that dynamics do not change substantially over the observation period in each province. As such, the variation over time is dominated by changes in demography and vaccination. In reality, the epidemiology of yellow fever is likely to change and has seen changes over recent years. Brazil experienced some of the largest outbreaks in its history with yellow fever in 2017 and 2018; this was suggested to have been caused by changing patterns of human behaviour, such as urbanisation and movement, or changes in epidemiology in the sylvatic cycle; however, the full list of causes remains unclear (Couto-Lima et al., 2017; Moreira-Soto et al., 2018; Chen et al., 2019; Possas et al., 2018; Saúde, 2019). Spillover is also inherently stochastic, whereas, due to the focus on long-term burden, we assume a constant risk of spillover. As such, the model will not capture outbreak dynamics over a short time window but may highlight areas at most risk of outbreaks. The resulting estimates of burden and vaccine impact are thus the potential number of deaths given the conditions in each province and each country given the environmental conditions but may vary year on year due to outbreaks and stochastic spillover events.
 
-## Conclusion
+### Conclusion
 
 We have refined and extended an established model to update estimates of disease burden for yellow fever. We find consistent results that 92.2% (95% CrI [88.8–95%]) of global burden occurs in Africa and that mass vaccination activities have substantially reduced the number of cases and deaths we see today. We also highlight areas when burden is potentially high, in part due to lower-than-optimal vaccination coverages. The optimal route to avert deaths and potential yellow fever outbreaks is through tackling areas, and sub-populations, with low vaccination coverage. This is because vaccination is the main intervention for yellow fever, both as a preventative measure coupled with surveillance and as an outbreak response intervention. However, uncertainty in current data sources, and their interpretation, will limit the effectiveness of planning strategies. Our modelling approach underscores the need to examine background immunity, due to both natural infection and vaccination, in order to address not only the risk of future deaths but also assess how much of yellow fever is actually visible. For an old disease with an effective vaccine, yellow fever still poses new threats and, allowed to run unchecked, will provide a substantial health burden in many tropical areas as well as posing a significant global exportation risk.

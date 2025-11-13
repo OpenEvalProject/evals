@@ -122,11 +122,9 @@ As suggested by the reviewer we have now performed NANOG ChIP-seq in the Brg1fl/
 
 Is it possible that actually Nanog and may be Sox2 are recruiting Oct4 and Brg1/BAF complex to these sites?
 
-It is likely that SOX2 contributes to the occupancy of OCT4 at its binding sites given the previously described co-operative and synergistic DNA binding by OCT4 and SOX2 in vitro (Reményi et al., 2003). However, OCT4 can bind to its target sites on nucleosomal DNA independently of SOX2 (Soufi et al., 2015), suggesting that binding with SOX2 may function to stabilise OCT4 binding as opposed to directing its initial binding. Consistent with these in vitro observations, our in vivo experiments suggest that SOX2 or NANOG are not sufficient to recruit BRG1 as SOX2 and/or NANOG are retained at some target sites following depletion of OCT4, yet BRG1 binding is either completely lost or substantially reduced (Author response image 1).10.7554/eLife.22631.019Author response image 1.BRG1/BAF occupancy relies upon OCT4 but not SOX2 and NANOG binding.Genomic snapshots of OCT4 targets that retain SOX2 and NANOG binding in the absence of OCT4, but lose BRG1 and SS18 ChIP-seq signal.DOI: http://dx.doi.org/10.7554/eLife.22631.019
+It is likely that SOX2 contributes to the occupancy of OCT4 at its binding sites given the previously described co-operative and synergistic DNA binding by OCT4 and SOX2 in vitro (Reményi et al., 2003). However, OCT4 can bind to its target sites on nucleosomal DNA independently of SOX2 (Soufi et al., 2015), suggesting that binding with SOX2 may function to stabilise OCT4 binding as opposed to directing its initial binding. Consistent with these in vitro observations, our in vivo experiments suggest that SOX2 or NANOG are not sufficient to recruit BRG1 as SOX2 and/or NANOG are retained at some target sites following depletion of OCT4, yet BRG1 binding is either completely lost or substantially reduced (Author response image 1).10.7554/eLife.22631.019Author response image 1.BRG1/BAF occupancy relies upon OCT4 but not SOX2 and NANOG binding.Genomic snapshots of OCT4 targets that retain SOX2 and NANOG binding in the absence of OCT4, but lose BRG1 and SS18 ChIP-seq signal.
 
 Genomic snapshots of OCT4 targets that retain SOX2 and NANOG binding in the absence of OCT4, but lose BRG1 and SS18 ChIP-seq signal.
-
-DOI: http://dx.doi.org/10.7554/eLife.22631.019
 
 4) To resolve these issues, the authors should carry out time scale experiments to test which factor(s) is leaving the first from the Oct4 occupied sites after Oct4 knock-down.
 

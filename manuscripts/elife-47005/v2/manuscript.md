@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.47005.001 Activation of systemic acquired resistance in plants is associated with transcriptome reprogramming induced by the unstable coactivator NPR1. Immune-induced ubiquitination and proteasomal degradation of NPR1 are thought to facilitate continuous delivery of active NPR1 to target promoters, thereby maximising gene expression. Because of this potentially costly sacrificial process, we investigated if ubiquitination of NPR1 plays transcriptional roles prior to its proteasomal turnover. Here we show ubiquitination of NPR1 is a progressive event in which initial modification by a Cullin-RING E3 ligase promotes its chromatin association and expression of target genes. Only when polyubiquitination of NPR1 is enhanced by the E4 ligase, UBE4, it is targeted for proteasomal degradation. Conversely, ubiquitin ligase activities are opposed by UBP6/7, two proteasome-associated deubiquitinases that enhance NPR1 longevity. Thus, immune-induced transcriptome reprogramming requires sequential actions of E3 and E4 ligases balanced by opposing deubiquitinases that fine-tune activity of NPR1 without strict requirement for its sacrificial turnover.
+Activation of systemic acquired resistance in plants is associated with transcriptome reprogramming induced by the unstable coactivator NPR1. Immune-induced ubiquitination and proteasomal degradation of NPR1 are thought to facilitate continuous delivery of active NPR1 to target promoters, thereby maximising gene expression. Because of this potentially costly sacrificial process, we investigated if ubiquitination of NPR1 plays transcriptional roles prior to its proteasomal turnover. Here we show ubiquitination of NPR1 is a progressive event in which initial modification by a Cullin-RING E3 ligase promotes its chromatin association and expression of target genes. Only when polyubiquitination of NPR1 is enhanced by the E4 ligase, UBE4, it is targeted for proteasomal degradation. Conversely, ubiquitin ligase activities are opposed by UBP6/7, two proteasome-associated deubiquitinases that enhance NPR1 longevity. Thus, immune-induced transcriptome reprogramming requires sequential actions of E3 and E4 ligases balanced by opposing deubiquitinases that fine-tune activity of NPR1 without strict requirement for its sacrificial turnover.
 
 ## Introduction
 
@@ -30,19 +30,43 @@ While transcription-coupled degradation of unstable (co)activators is an attract
 
 ## Results
 
-## The E4 ligase UBE4 regulates SA- and NPR1-mediated plant immunity
+### The E4 ligase UBE4 regulates SA- and NPR1-mediated plant immunity
 
 To examine if stepwise ubiquitination of NPR1 plays a role in plant immune responses we examined a potential role for E4 ligases. Unlike E3 ligases, the E4 class do not contribute towards initial ubiquitination of substrates but rather extend pre-existing ubiquitin chains (Hoppe, 2005; Koegl et al., 1999). In Arabidopsis the E4 ligase UBE4/MUSE3 has been implicated in the degradation of NLR (nucleotide binding and leucine-rich repeat) immune receptors. Mutant ube4/muse3 plants exhibited enhanced disease resistance but this phenotype could only be explained in part by the increased stability of an NLR receptor (Huang et al., 2014). Therefore we investigated if UBE4 is involved in downstream NPR1-dependent immune signalling by acquiring a loss-of-function T-DNA insertion mutant (Figure 1—figure supplement 1). Like mutants in CRL3 ligase that fail to degrade NPR1 (Spoel et al., 2009), adult ube4 plants displayed enhanced expression of immune genes in absence of pathogen challenge (Figure 1A). In agreement with this, when the potential for enhanced disease resistance was examined by using a high inoculum of Psm ES4326, adult ube4 mutants showed autoimmunity (Figure 1B). To establish if these phenotypes were dependent on SA signalling, ube4 mutant plants were crossed with SA-deficient ics1 mutants (Wildermuth et al., 2001). The constitutive immune gene expression observed in ube4 was abolished in ube4 ics1 double mutant plants (Figure 1C). Furthermore, a low inoculum dosage of Psm ES4326 that does not cause disease in wild-type (WT) and mutant ube4 plants, did result in bacterial proliferation in mutant ics1 plants. In agreement with the gene expression data, enhanced susceptibility was maintained in ube4 ics1 double mutants (Figure 1D), indicating the autoimmune phenotype of adult ube4 plants is completely dependent on SA. Because SA-dependent immunity is largely regulated by the transcription coactivator NPR1 (Cao et al., 1997), we crossed ube4 with npr1-1 mutant plants. Constitutive immune gene expression in ube4 plants was abolished in ube4 npr1 plants (Figure 1E) and this double mutant was equally susceptible to a low Psm ES4326 inoculum as npr1 single mutants (Figure 1F). Collectively, these data suggest that in unchallenged plants UBE4 suppresses the expression of SA-mediated NPR1 target genes and prevents autoimmunity, conceivably by altering the stability of upstream NLR immune receptors as well as the downstream NPR1 coactivator.
 
-## UBE4 polyubiquitinates NPR1 coactivator and targets it for degradation
+![Figure 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression of NPR1 target genes normalised relative to constitutively expressed UBQ5 in four-week old plants of the indicated genotypes. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (B) Adult plants were treated with or without 0.5 mM SA 24 hr prior to inoculation with 5 × 106 colony forming units (cfu)/ml Psm ES4326. Leaf discs were analysed for bacterial growth 4 days post-infection (dpi). Error bars represent 95% confidence limits, while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 8). (C) Expression of NPR1 target genes was analysed as in (A). (D) Adult plants were inoculated with 5 × 105 cfu/ml Psm ES4326 and leaf discs were analysed for bacterial growth at four dpi. Error bars represent 95% confidence limits, while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 8). (E) Basal expression of NPR1 target genes were analysed as in (A). (F) Adult plants of indicated genotypes were infected and analysed as in (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Expression of UBE4 was analysed by RT-PCR in the stated genotypes using primers specific to UBE4 or UBQ10 as a loading control.
+
+### UBE4 polyubiquitinates NPR1 coactivator and targets it for degradation
 
 Because ube4 mutant phenotypes resemble those of mutants in CRL3 ligase (Spoel et al., 2009), we investigated if UBE4 also controls NPR1 stability in the nucleus. Expression of a YFP-UBE4 fusion protein in Arabidopsis protoplasts confirmed it is indeed partly localised to the nucleus (Figure 2—figure supplement 1A). We used the protein synthesis inhibitor cycloheximide to examine if UBE4 controls the stability of SA-induced NPR1.Both SA-induced constitutively expressed NPR1-GFP (Figure 2—figure supplement 1B) (Kinkema et al., 2000) and endogenous NPR1 from WT plants were degraded within a few hours after exposure to cycloheximide (Figure 2A and B). By contrast, both proteins were considerably more stable in the ube4 mutant genetic background. These findings were further confirmed by quantifying the amount of NPR1-GFP or endogenous NPR1 protein remaining after exposure to cycloheximide (Figure 2—figure supplement 1C and D). Stabilisation of endogenous NPR1 also occurred in the previously described muse3 mutant allele of UBE4 (Figure 2—figure supplement 1E) (Huang et al., 2014). Taken together these results indicate that UBE4 promotes NPR1 degradation. Recruitment of NPR1 to CRL3 for ubiquitination and subsequent degradation requires phosphorylation at residues Ser11 and Ser15 (Spoel et al., 2009). Therefore we examined if ube4 mutants were impaired in NPR1 Ser11/15 phosphorylation. However, Ser11/15 phosphorylation of NPR1-GFP was unaffected by the ube4 mutation (Figure 2C), indicating UBE4 mediates NPR1 turnover downstream of CRL3-mediated ubiquitination.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig2-v2.jpg)
+
+**Figure 2.:** (A) Seedlings expressing 35S::NPR1-GFP in the indicated genetic backgrounds were treated with 0.5 mM SA for 24 hr before addition of 100 μM CHX to inhibit protein synthesis. NPR1-GFP protein levels were monitored by immunoblot analysis, while S5a levels confirmed equal loading. (B) Seedlings were treated with 0.5 mM SA for 24 hr before addition of 100 μM CHX. Endogenous NPR1 protein levels were then monitored at the indicated times by immunoblot analysis, while GAPDH levels confirmed equal loading. (C) Seedlings expressing 35S::NPR1-GFP in the indicated genetic backgrounds were pre-treated with 0.5 mM SA for 2 hr followed by addition of vehicle (DMSO) or 100 μM MG132 for an additional 4 hr. Phosphorylated Ser11/15 (pS11/15) and total NPR1-GFP levels were then determined by immunoblotting. (D) Seedlings expressing 35S::NPR1-GFP in the indicated genetic backgrounds were pre-treated with 0.5 mM SA for 6 hr followed by addition of 100 μM MG132 for an additional 18 hr before ubiquitinated proteins were pulled down using GST-TUBEs. Input and ubiquitinated NPR1-GFP (NPR1-Ubn) were detected by immunoblotting with a GFP antibody. (E) Seedlings expressing 35S::NPR1-GFP in the indicated genetic backgrounds were pre-treated with 0.5 mM SA for 2 hr followed by addition of 100 μM MG132 for an additional 4 hr before ubiquitinated proteins were pulled down (PD) using His6-V5-S5a-UIMs. Unmodified and long-chain polyubiquitinated NPR1-GFP (NPR1-Ubn>4) were detected by immunoblotting with GFP antibodies. (F) Seedlings expressing 35S::NPR1-GFP in the indicated genetic backgrounds were treated for 6 hr with 0.5 mM SA followed by addition of 100 μM MG132 for a further 18 hr. Polyubiquitinated NPR1-GFP protein was then purified with GFP-Trap agarose and incubated for 2 hr with in vitro synthesised FLAG-UBE4. NPR1-GFP was detected by immunoblotting with GFP antibodies, while FLAG-UBE4 was detected using FLAG antibodies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 35S::YFP-UBE4 was transformed into protoplasts and subcellular localization analysed by confocal microscopy. Left: Auto-fluorescence of protoplasts. Middle: 35S::YFP-UBE4. Right: Merged image. (B) Seedlings of the indicated genotypes were treated with 0.5 mM SA for 24 hr before determining NPR1-GFP transgene expression normalised relative to constitutively expressed UBQ5. Data points represent mean ± SD with no statistically significant difference observed between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (C–E) Seedlings of the indicated genotypes were treated with 0.5 mM SA for 24 hr to induce NPR1 before addition of either DMSO (vehicle control) or 100 μM CHX for 4 hr. Endogenous NPR1 protein levels were quantified relative to GAPDH levels by quantitative immunoblotting and expressed as % remaining of the DMSO treated samples of each genotype. Data points represent mean ± SD (n = 3) with Student’s t-test p value indicated. Immunoblot images are shown with each replicate included.
+
 We then investigated if UBE4 is involved in polyubiquitination of NPR1. Pulldown of polyubiquitinated proteins using tandem-repeated ubiquitin-binding entities (TUBE) (Hjerpe et al., 2009) followed by detection of NPR1-GFP, revealed that SA stimulated polyubiquitination of NPR1-GFP (Figure 2D). By contrast, SA-induced polyubiquitination of NPR1-GFP was compromised in ube4 mutants (Figure 2D), but ubiquitinated NPR1 was still detected at high-molecular weight. Therefore we sought to distinguish if in ube4 mutants, NPR1 was modified by long ubiquitin chains or multiple shorter chains, both of which yield high-molecular weights on SDS-PAGE. Thus, we performed pull down experiments with recombinant S5a ubiquitin interacting motifs (S5aUIM) that preferentially bind chains of four or more ubiquitin molecules (Deveraux et al., 1994; Young et al., 1998). Compared to plants carrying wild-type UBE4 alleles, the amount of SA-induced polyubiquitinated NPR1-GFP pulled down with recombinant S5aUIM was strikingly lower in ube4 mutants (Figure 2E), indicating that UBE4 promotes formation of long ubiquitin chains on NPR1 leading to its proteasomal degradation. To determine if UBE4 may act directly on NPR1, we assessed the ability of UBE4 to physically interact with ubiquitinated NPR1. We isolated ubiquitinated NPR1-GFP from SA and MG132-treated ube4 mutants and subsequently incubated with recombinant FLAG-UBE4. As shown in Figure 2F, NPR1-GFP specifically pulled down FLAG-UBE4, indicating that UBE4 physically binds to polyubiquitinated NPR1 to facilitate ubiquitin chain extension.
 
-## Progressive ubiquitination controls transcriptional activity of NPR1
+### Progressive ubiquitination controls transcriptional activity of NPR1
 
 Because UBE4 enhanced polyubiquitination of NPR1 and controlled its stability (Figure 2), we investigated if similar to CRL3 (Spoel et al., 2009), it also promotes transcriptional activity of NPR1. In stark contrast to cul3a cul3b mutants that were compromised in SA-induced expression of NPR1 target genes, plants carrying two different ube4 mutant alleles exhibited elevated expression levels that were much higher than in WT (Figure 3A and B, Figure 3—figure supplement 1A). To explore the effect of UBE4 on the NPR1-dependent transcriptome, we performed RNA Seq on SA-treated WT, ube4 and npr1 plants. Among 2612 genes whose expression changed by ≥2 fold in response to SA in WT or ube4 mutants, 75% were stringently dependent on NPR1 (i.e. ≥1.5 fold difference compared to npr1) (Figure 3—source data 1). We separated these genes into two categories: (1) genes that were regulated by SA in both WT and mutant ube4 plants, and (2) genes that did not make the ≥2 fold change cut-off in WT but were highly regulated by SA in ube4 mutants. The majority of SA-induced genes in category 1, including PR1 and WRKY marker genes, received a boost in expression when UBE4 was knocked out (Figure 3C). This positive effect was even clearer for category two genes (Figure 3C and D). Similarly, genes suppressed by SA treatment displayed further downregulation in ube4 mutants compared to WT (Figure 3C). By contrast, SA-regulated genes that were not dependent on NPR1 behaved similarly in WT and mutant ube4 plants (Figure 3—figure supplement 1B), suggesting UBE4 exerts its effects predominantly through NPR1. Together these data suggest that in absence of UBE4-mediated long-chain polyubiquitination, NPR1 remains in a highly active transcriptional state.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig3-v2.jpg)
+
+**Figure 3.:** (A) WT, cul3a cul3b (cul3), ube4 and npr1 seedlings were treated with 0.5 mM SA for 6 hr before determining PR1 gene expression normalised relative to constitutively expressed UBQ5. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (B) Heat map of the expression of additional NPR1 target genes analysed as in (A). (C) Seedlings treated with water (Ctrl) or 0.5 mM SA for 12 hr were analysed by RNA-Seq. Only genes that were induced ≥2 fold by SA in WT and/or ube4 plants and showed ≥1.5 fold difference in expression in npr1 mutants are shown (Benjamini Hochberg FDR, 2-way ANOVA p≤0.05). Graphs indicate genes that are up or down regulated in both WT and ube4 or only in ube4. PR-1, WRKY18, WRKY38 and WRKY62 marker genes are indicated by green lines, whereas mean expression patterns are indicated by black lines. (D) Heat map representation of genes from (C) that were upregulated by SA. (E) WT, cul3a cul3b (cul3), ube4 and npr1 seedlings were treated with water (-) or 0.5 mM SA (+) for 6 hr. Endogenous NPR1 protein levels were monitored by immunoblot analysis, while GAPDH levels confirmed equal loading. (F) Adult plants expressing 35S::NPR1-GFP in the indicated genetic backgrounds were treated with 0.5 mM SA for 8 hr before analysing either PR1 gene expression (left panel) or NPR1-GFP binding to the as-1 motif of the PR1 promoter (right panel). Mutant npr1 plants served as a negative control. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (G) As in (F) except plants were treated with 0.5 mM SA for 24 hr. (H) WT, cul3a cul3b (cul3) double, ube4 single, cul3a cul3b ube4 (cul3 ube4) triple and npr1 single mutant seedlings were treated with 0.5 mM SA for 6 hr and PR1 gene expression determined by normalising against constitutively expressed UBQ5. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (I) Heat map of the expression of additional NPR1 target genes analysed as in (H). (J) WT (closed circles) and mutant ube4 (open circles) seedlings expressing 35S:NPR1-GFP were treated with 0.5 mM SA for 4 hr followed by the addition of indicated concentrations of MG132 for an additional 2 hr. PR1 gene expression was determined and normalised relative to constitutively expressed UBQ5. MG132 treatments as well as a control (Ctrl) that received 4 hr of water treatment followed by the addition of vehicle (DMSO), were plotted relative to maximal SA-induced PR1 expression. Data points represent mean ± SD (n = 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) WT, ube4, muse3 and npr1 seedlings were treated with 0.5 mM SA for 6 hr before determining PR1 gene expression normalised relative to constitutively expressed UBQ5. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (B) Expression profiles of SA-responsive, NPR1-independent genes. Seedlings treated with water (Ctrl) or 0.5 mM SA for 12 hr were analysed by RNA-Seq. Only genes that were induced (left) or repressed (right) ≥2 fold by SA in WT and/or ube4 plants and showed ≤1.5 fold difference in expression in npr1 mutants are shown (Benjamini Hochberg FDR, 2-way ANOVA p≤0.05). Mean expression patterns are indicated by black lines. (C) Morphological phenotypes of 4-week-old plants of the indicated genotypes. (D) Inflorescence phenotypes of 7-week-old plants of the indicated genotypes. (E) WT (closed circles) and mutant ube4 (open circles) seedlings expressing 35S:NPR1-GFP were treated with 0.5 mM SA for 4 hr followed by the addition of indicated concentrations of MG132 for a further 2 hr. PR1 gene expression was determined and normalised relative to constitutively expressed UBQ5. MG132 treatments as well as a control (Ctrl) that received 4 hr of water treatment followed by the addition of vehicle (DMSO), were plotted relative to maximal SA-induced PR1 expression. Data points represent mean ± SD (n = 3).
 
 To understand the opposing effects of CRL3 and UBE4 on transcriptional activity of NPR1, we examined endogenous NPR1 protein levels. Compared to WT plants, SA-induced NPR1 accumulated to elevated levels in both cul3a/b and ube4 mutants (Figure 3E). Thus, NPR1 protein levels cannot explain differences in transcriptional output of NPR1. We then examined if changes in polyubiquitin chain length regulate NPR1 association with its target promoters. To that end we performed chromatin immunoprecipitation experiments on plants that constitutively expressed NPR1-GFP, thereby eliminating genotype-dependent differences in NPR1 protein level. Coinciding with elevated PR1 gene expression, at 8 hr after SA treatment more NPR1-GFP was bound to the PR1 promoter in ube4 mutants compared to plants carrying wild-type UBE4 alleles (Figure 3F). This indicates that in absence of long polyubiquitin chains, early occupancy by transcriptionally competent NPR1 is increased at target promoters. We also examined a later time point after SA treatment (24 hr) and found that NPR1-GFP was still associated with the PR1 promoter in plants expressing wild-type UBE4, but not in ube4 mutants (Figure 3G). Nonetheless, PR1 gene expression remained at elevated levels in these mutants (Figure 3G), implying that in absence of long-chain polyubiquitination NPR1 strongly switches on target genes without the need for long-term residency at their promoters.
 
@@ -50,25 +74,53 @@ To investigate if CRL3 and UBE4 act independently or in tandem, we crossed ube4 
 
 We then examined if in ube4 mutants NPR1 lingered in a highly transcriptional active state that does not require proteasome-mediated turnover. To negate any feedback effects of loss of UBE4 activity on endogenous NPR1 expression, seedlings constitutively expressing NPR1-GFP were treated with SA plus a range of MG132 concentrations. SA-induced PR1 and WRKY gene expression was inhibited by increasing concentrations of MG132 in NPR1-GFP (in npr1) plants (Figure 3J and Figure 3—figure supplement 1E). By contrast, the SA-induced expression of these NPR1 target genes was largely unresponsive to MG132 in ube4 mutants, especially at lower concentrations. Thus, loss of UBE4 largely uncoupled NPR1 target gene expression from proteasome activity, demonstrating the importance of progressive ubiquitination for NPR1 activity. In summary, our findings indicate that initial CRL3-mediated ubiquitination is required for NPR1 to attain its full transcriptional activity, while the stepwise formation of long ubiquitin chains mediated by UBE4 inactivates NPR1 and promotes its degradation by the proteasome.
 
-## Deubiquitinases regulate NPR1-dependent transcription
+### Deubiquitinases regulate NPR1-dependent transcription
 
 Trimming or removal of ubiquitin chains is performed by deubiquitinases (DUBs) and may provide another layer of regulation of NPR1 activity. The Arabidopsis genome is predicted to encode for at least 65 DUBs (Vierstra, 2009; Yang et al., 2007) with high likelihood of redundancy among gene families. Therefore identifying candidate genes that potentially regulate NPR1 by genetically screening mutant collections was not feasible. Instead, we used a range of pharmacological broad-spectrum and selective DUB inhibitors and assessed their effect on SA-induced gene expression. The broad-spectrum inhibitors PR-619 (Altun et al., 2011) and NSC632839 (Aleo et al., 2006) strongly impaired SA-induced gene expression across all NPR1 target genes tested (Figure 4A), suggesting that DUB activity is required for their optimal expression. Furthermore, while treatment with PR-619 or NSC632839 did not affect SA-induced transcription of the NPR1 gene, it depleted NPR1 protein levels (Figure 4B). Thus, DUB activity may not only be required for NPR1-dependent gene expression but also for increasing NPR1 stability.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig4-v2.jpg)
+
+**Figure 4.:** (A) WT seedlings were treated for 6 hr with either vehicle control (DMSO) or the indicated DUB inhibitors (50 μM) in presence or absence of 0.5 mM SA before analysing the expression of NPR1 target genes. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (B) WT seedlings were treated as in (A) before endogenous NPR1 and GAPDH (loading control) protein levels were analysed by immunoblotting (top panel). NPR1 gene expression was also analysed from the same samples (bottom panel). Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (C) WT seedlings were treated for 6 hr with vehicle (DMSO) or either the indicated DUB inhibitors (50 μM) or MG132 (100 μM) in presence or absence of 0.5 mM SA before immunoblotting against conjugated ubiquitin (FK2). Ponceau S staining indicated equal loading. (D) WT seedlings were treated as in (C) and NPR1 target gene expression analysed. Data points represent mean ± SD while asterisks denote statistically significant differences between the indicated samples and the DMSO + SA treated sample (Tukey Kramer ANOVA; α = 0.05, n = 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Arabidopsis seedlings were treated with SA in combination with increasing concentrations of the indicated DUB inhibitors. The expression levels of the NPR1 target genes PR1, WRKY18, WRKY38 and WRKY62 were analysed by qPCR and normalised against constitutively expressed UBQ5. Data points represent mean relative expression as compared to SA treatment alone ± SD (n = 3).
+
 Next we tested more selective inhibitors that more specifically target one or a few DUBs. First we treated WT seedlings with various DUB inhibitors and compared the cellular levels of global ubiquitin conjugates with control-, and MG132-treated seedlings. While NSC632839 and MG132 treatments dramatically enhanced accumulation of ubiquitin conjugates, especially in combination with SA treatment, all other inhibitors had little effect on cellular ubiquitination levels (Figure 4C). We then examined the effect of these DUB inhibitors on SA-induced gene expression. All inhibitors strongly suppressed SA-induced expression of NPR1 target genes (Figure 4D). Furthermore, most inhibitors were effective at low micromolar concentrations and suppressed NPR1 target genes in a dose-dependent manner (Figure 4—figure supplement 1). Collectively these data provide a first indication that DUB activity may be crucial for NPR1 stability and efficient activation of SA-induced NPR1 target genes.
 
-## Identification of DUBs that regulate NPR1-dependent transcription
+### Identification of DUBs that regulate NPR1-dependent transcription
 
 The more selective inhibitors used in experiments described above have been shown to target DUBs in mammalian cells (Figure 5—figure supplement 1A) (Altun et al., 2011; Kapuria et al., 2010; Liu et al., 2003). To find potential homologues we used the sequences of these mammalian DUBs to search the Arabidopsis genome using BLASTp. The identified Arabidopsis DUBs included members of the ubiquitin-specific protease (UBP) and ubiquitin C-terminal hydrolase (UCH) multi-gene families (Figure 5—figure supplement 1A). We then searched mutant collections to identify T-DNA knockouts for each of these DUBs. UBP14 knockouts are lethal in Arabidopsis (Doelling et al., 2001), while no T-DNA insertions were identified for either UCH1 or UCH2 in mutant collections of the Col-0 genetic background. Therefore we did not pursue these DUBs further. The DUB inhibitor TCID is thought to target mammalian UCH-L3 for which we identified a single Arabidopsis homologue, UCH3. We acquired a T-DNA insertion line that displayed complete knockout of UCH3 expression (Figure 5—figure supplement 1B) and analysed SA-induced NPR1 target gene expression. Figure 5A shows that SA-induced PR1 and WRKY gene expression was generally comparable between uch3 and WT plants, indicating UCH3 is unlikely to play a major role. Next we identified UBP12 and UBP13 as potential plant targets of both WP1130 and P22077 inhibitors (Figure 5—figure supplement 1A). Previous research has suggested a role for these two proteins in plant immunity, as ubp12 ubp13 double knockdown RNAi plants exhibited elevated expression of PR1 and increased resistance to the virulent pathogen P. syringae pv. tomato (Ewan et al., 2011). Single knockout mutants of UBP12 and UBP13 have no observable phenotype and double knockouts are seedling lethal (Cui et al., 2013; Ewan et al., 2011). However we acquired the ubp12-2w allele, previously described as a weak ubp12 ubp13 double mutant (Cui et al., 2013), and analysed this mutant for SA-induced gene expression. Similar to a previous report (Ewan et al., 2011), we observed elevated PR1 expression in ubp12-2w plants but other NPR1 target genes were activated to a slightly lesser extent as in WT (Figure 5B). This phenotype does not explain the suppressive effects we observed with pharmacological DUB inhibitors. Finally, we acquired T-DNA knockout lines for the mammalian USP14 homologues, UBP6 and UPB7 that are potentially targeted by the WP1130 inhibitor (Figure 5—figure supplement 1A and C). SA-induced expression of PR1 was slightly lower in these mutants but WRKY gene expression was largely comparable to WT plants (Figure 5C). Since UBP6 and UBP7 are close homologues (Figure 5—figure supplement 2A and B), we generated ubp6 ubp7 double knockout mutants (Figure 5—figure supplement 1C) that were viable and showed no observable developmental phenotypes. However, ubp6 ubp7 mutants were impaired in activation of SA-induced gene expression (Figure 5D). This indicates that UBP6 and UBP7 are functionally redundant and required for NPR1 target gene expression.
 
-## UBP6 is a proteasome-associated DUB that deubiquitinates NPR1
+![Figure 5.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig5-v2.jpg)
+
+**Figure 5.:** (A) WT and uch3-1 seedlings were treated for 6 hr with 0.5 mM SA followed by analysis of NPR1 target gene expression. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (B) WT and ubp-12–2 w seedlings were treated and analysed as in (A). (C) WT, ubp6-1 and ubp7-1 plants were treated with 0.5 mM SA for 24 hr before analysis of NPR1 target gene expression. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (D) WT and ubp6-1 ubp7-1 double mutant plants were treated and analysed as in (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Structures and proposed human and Arabidopsis targets of DUB inhibitors used in this study. (B) Expression of UCH3 was analysed by RT-PCR in the stated genotypes using primers specific to UCH3 or UBQ10 as a loading control. (C) The expression of UBP6 and UBP7 was analysed by qPCR and normalised relative to constitutively expressed UBQ5 in plants of the indicated genotypes. Data points represent mean ± SD (n = 3).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Domain structures of human USP14, and Arabidopsis UBP6 and UBP7. (B) Sequence alignments of human USP14, Saccharomyces cerevisiae UBP6, Arabidopsis UBP6 and Arabidopsis UBP7. The active site Cys residue is highlighted in green while the conserved His and Asp residues making up the catalytic triad are highlighted in red.
+
+### UBP6 is a proteasome-associated DUB that deubiquitinates NPR1
 
 Human USP14 and its yeast homologue Ubp6 have both been shown to associate with the 26S proteasome, which is necessary for their activity (Borodovsky et al., 2001; Leggett et al., 2002). We tested if this is also the case for Arabidopsis UBP6 by constitutively expressing FLAG-tagged UBP6 in the ubp6 ubp7 double mutant background followed by co-immunoprecipitation experiments. The proteasomal subunits S5a and RPN6 both co-immunoprecipitated with FLAG-tagged UBP6 (Figure 6A), indicating UBP6 is also a proteasome-associated DUB in plants.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig6-v2.jpg)
+
+**Figure 6.:** (A) FLAG-UBP6 was immunoprecipitated (IP) from ubp6 ubp7 plants transformed with or without 35S::FLAG-UBP6. Co-immunoprecipitates were analysed by immunoblotting against FLAG as well as the proteasome subunits S5a and RPN6. Input protein levels are shown in the bottom panel. (B) Purified recombinant His6-T7-UBP6 was preincubated with or without WP1130 and 26S proteasomes before labelling with HA-UbVS. Immunoblotting with HA antibodies detected active, labelled UBP6 while immunoblotting with T7 antibodies detected total levels of UBP6. (C) 35S::NPR1-GFP seedlings were treated for 6 hr with 0.5 mM SA followed by addition of 100 μM MG132 for a further 18 hr. Polyubiquitinated NPR1-GFP protein was then purified with GFP-Trap agarose and incubated for the indicated times with recombinant UBP6 in presence or absence of 26S proteasomes. Remaining polyubiquitinated NPR1-GFP and released ubiquitin species were detected by immunoblotting using an antibody against ubiquitin (P4D1), while unmodified NPR1-GFP was detected with an anti-GFP antibody. (D) 35S::NPR1-GFP seedlings were treated for 2 hr with 0.5 mM SA followed by addition of 50 μM WP1130 or DMSO vehicle for a further 4 hr. Ubiquitinated proteins were pulled down using GST-TUBEs. Input and ubiquitinated NPR1-GFP (NPR1-Ubn) were detected by immunoblotting with a GFP antibody. (E) Seedlings were treated with SA for 24 hr to induce NPR1 before addition of 100 μM CHX. Endogenous NPR1 protein levels were monitored by immunoblotting and GAPDH levels confirmed equal loading. (F) 35S::NPR1-GFP seedlings were treated for 2 hr with 0.5 mM SA followed by addition of 50 μM WP1130 or DMSO vehicle for a further 4 hr. NPR1-GFP binding to the as-1 motif of the PR1 promoter element was quantified by ChIP with npr1 seedlings serving as a negative control. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (G) Plants of the stated genotypes were treated with 0.5 mM SA for 24 hr before the expression of NPR1 target genes was analysed by qPCR. Data points represent mean ± SD while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 3). (H) Plants were treated with or without 0.5 mM SA 24 hr prior to inoculation with 5 × 106 colony forming units (cfu)/ml Psm ES4326. Leaf discs were analysed for bacterial growth at three dpi. Error bars represent 95% confidence limits, while letters denote statistically significant differences between samples (Tukey Kramer ANOVA; α = 0.05, n = 8).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47005/elife-47005-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) K48-linked Ub chains of 3–7 in length were incubated with the indicated reaction components for 2 or 16 hr. Ub species were then detected by SDS-PAGE and immunoblot using antibodies against ubiquitin (P4D1). (B) As in (A) but using K63-linked Ub chains. (C) As in (A) but using K48- or K63-linked di-ubiquitin as a substrate. (D) 35S::NPR1-GFP or npr1-1 seedlings were treated with water or 0.5 mM SA for 6 hr followed by addition of 100 μM MG132 for a further 18 hr. Polyubiquitinated NPR1-GFP protein was then purified with GFP-Trap agarose and incubated for the indicated times with or without recombinant UBP6 in the presence of 26S proteasomes. Remaining polyubiquitinated NPR1-GFP and released ubiquitin species were detected by immunoblotting using an antibody against ubiquitin (P4D1), while unmodified NPR1-GFP was detected with an anti-GFP antibody. (E) Seedlings of the indicated genotypes were treated with 0.5 mM SA for 24 hr to induce NPR1 before addition of either DMSO (vehicle control) or 100 μM CHX for 4 hr. NPR1 protein levels were monitored by immunoblot analysis, while GAPDH levels confirmed equal loading.
 
 Next we examined if UBP6 exhibits typical DUB activity. We produced recombinant T7-tagged UBP6 and incubated it with HA-tagged ubiquitin vinyl sulfone (HA-UbVS), an ubiquitin mimic that cannot be hydrolysed upon irreversible binding to DUB active sites (Borodovsky et al., 2001). HA-UbVS readily labelled T7-UBP6 but only upon addition of 26S proteasomes (Figure 6B), indicating UBP6 has proteasome-activated DUB activity. Moreover, addition of WP1130 inhibitor completely blocked HA-UbVS labelling (Figure 6B), illustrating the effectiveness of this inhibitor on Arabidopsis UBP6.
 
 To examine if UBP6 can cleave ubiquitin chains we incubated recombinant UBP6 with free ubiquitin chains or with di-ubiquitin of different linkage types and compared it to activity of recombinant human USP14. Similar to human USP14, Arabidopsis UBP6 displayed very little deubiquitination activity on free ubiquitin chains or di-ubiquitin of K48 and K63 linkage types (Figure 6—figure supplement 1A–1C). Only wild-type UBP6 but not UBP6(C113S) in which the catalytic cysteine residue was mutated, was weakly capable of trimming K63-linked chains in presence of 26S proteasomes, although this activity required very long incubation times (Figure 6—figure supplement 1B). These findings mirror the poor in vitro activity of human USP14 on free ubiquitin chains (Lee et al., 2016). Instead, human USP14 deubiquitinates anchored ubiquitin chains of various linkage types, including K48 linkages that target proteins for proteasome-mediated degradation (Lee et al., 2016). Therefore we proceeded to investigate if UBP6 activity cleaves ubiquitin chains anchored to NPR1. Indeed, incubation of purified polyubiquitinated NPR1-GFP with recombinant UBP6 and 26S proteasomes led to the release of ubiquitin conjugates of approximately hexa-ubiquitin chain length (Figure 6C). This release of ubiquitin conjugates was dependent on SA treatment, suggesting that UBP6 counteracts SA-induced polyubiquitination of NPR1 (Figure 6—figure supplement 1D). Together, these results demonstrate that UBP6 is an active DUB capable of removing ubiquitin chains en bloc from NPR1.
 
-## Deubiquitination by UBP6 and UBP7 regulates NPR1 stability and transcriptional activity
+### Deubiquitination by UBP6 and UBP7 regulates NPR1 stability and transcriptional activity
 
 So what is the effect of UBP6- and UBP7-mediated deubiquitination on NPR1 function? We found that treatment of NPR1-GFP (in npr1) seedlings with WP1130 inhibitor increased the levels of SA-induced polyubiquitinated NPR1-GFP while reducing the unmodified amount of this protein (Figure 6D). This suggests that UBP6 and UBP7 activities are required for deubiquitination of SA-induced NPR1-GFP, thereby rescuing it from degradation. To further examine this possibility, we analysed the stability of endogenous NPR1 protein in SA-treated ubp6 ubp7 double mutants. CHX chase experiments revealed that compared to WT plants, NPR1 was destabilised in ubp6 ubp7 mutants (Figure 6E). Accordingly, expression of FLAG-tagged UBP6 in the ubp6/7 mutant background restored NPR1 stability (Figure 6—figure supplement 1E). These results demonstrate that UBP6 and UBP7 serve to stabilise NPR1 by removing ubiquitin chains that signal for its proteasome-mediated degradation.
 
@@ -98,7 +150,339 @@ In summary, we report that disparate ubiquitin modifying enzymes play important 
 
 ## Materials and methods
 
-## Plant maintenance, transformation, chemical treatments and pathogen infection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>cul3a cul3b</td>
+      <td>(Spoel et al., 2009)</td>
+      <td>SALK_046638 SALK_098014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ics1/sid2-2</td>
+      <td>(Wildermuth et al., 2001)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ube4-2</td>
+      <td>(Sessions et al., 2002)</td>
+      <td>SAIL_713_A12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>npr1-1</td>
+      <td>(Cao et al., 1994)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>npr1-0</td>
+      <td>This paper, (Alonso et al., 2003)</td>
+      <td>SALK_204100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>35S::NPR1-GFP npr1-1</td>
+      <td>(Kinkema et al., 2000)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ubp12-2w</td>
+      <td>(Cui et al., 2013)</td>
+      <td>GABI_742C10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>uch3-1</td>
+      <td>This paper, (Alonso et al., 2003)</td>
+      <td>SALK_140823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ubp6-1</td>
+      <td>This paper, (Alonso et al., 2003)</td>
+      <td>SALK_108832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ubp7-1</td>
+      <td>This paper, (Alonso et al., 2003)</td>
+      <td>SALK_014223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>35S::FLAG-UBP6 ubp6/7</td>
+      <td>This paper</td>
+      <td>SALK_108832 SALK_014223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Roche</td>
+      <td>Cat# 11814460001</td>
+      <td>(1:1000 – 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-S5a</td>
+      <td>Abcam</td>
+      <td>Cat# ab60101</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NPR1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GAPDH</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# G9545</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pS11/15 NPR1</td>
+      <td>(Spoel et al., 2009)</td>
+      <td>N/A</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP (ChIP grade)</td>
+      <td>Abcam</td>
+      <td>Cat# ab290</td>
+      <td>(1:500 for ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Ubiquitin (FK2)</td>
+      <td>Millipore</td>
+      <td>Cat# 04–263</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2220</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F7425</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RPN6</td>
+      <td>Upstate</td>
+      <td>Cat# 11814460001</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Ubiquitin (P4D1)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-8017</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 26183</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-T7</td>
+      <td>Millipore</td>
+      <td>Cat# 69522</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR-D-TOPO</td>
+      <td>Invitrogen</td>
+      <td>Cat# K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEarleyGate 202</td>
+      <td>ABRC (Earley et al., 2006)</td>
+      <td>Cat# CD3-688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28-9546-48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a</td>
+      <td>Novagen</td>
+      <td>Cat# 69865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>USP2 Catalytic Domain</td>
+      <td>Boston Biochem</td>
+      <td>Cat# E-504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>26S Proteasome (Ub-VS treated)</td>
+      <td>Ubiquigent</td>
+      <td>Cat# 65-1020-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Poly-ubiquitin (Ub3-7) K48-linked</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UC-220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Poly-ubiquitin (Ub3-7) K63-linked</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UC-320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Di-ubiquitin K48-linked</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UC-200B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Di-ubiquitin K63-linked</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UC-300B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HA-Ubiquitin-Vinyl sulfone</td>
+      <td>Boston Biochem</td>
+      <td>Cat# U-212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript II</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18064014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 200519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap A</td>
+      <td>Chromotek</td>
+      <td>Cat# gta-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PR-619</td>
+      <td>Abcam</td>
+      <td>Cat# ab144641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NSC632839</td>
+      <td>Abcam</td>
+      <td>Cat# ab144599</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WP1130</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 15227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P2207</td>
+      <td>LifeSensors</td>
+      <td>Cat# SI9699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCID</td>
+      <td>LifeSensors</td>
+      <td>Cat# SI9679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10012628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Strand NGS</td>
+      <td>Avadis</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant maintenance, transformation, chemical treatments and pathogen infection
 
 All Arabidopsis plants used in this study were in the Columbia genetic background, with WT referring to wild-type Col-0 throughout. Plants were grown under long day conditions (16 hr photoperiod) on soil in controlled-environment growth chambers at 65% humidity and 22°C unless otherwise stated. Seeds were stratified at 4–8°C in darkness for 2 days before moving to growth chambers. Plants were grown in a soil mix composed of peat moss, vermiculite and sand at a ratio of 4:1:1 respectively, and illumination was provided by fluorescent tube lighting at an intensity of 70–100 μmol m−2sec−1. For experiments on seedlings, seeds were sterilised by washing in 100% ethanol for 2 mins before incubating in 50% household bleach for 20 mins. After removal of bleach, seeds were washed at least 3 times with sterile H2O before use. Sterilised seeds were spotted on Murashige and Skoog agar media and stratified before placing under lighting conditions as above. All T-DNA insertion mutants used were genotyped by PCR using standard conditions with gene specific primers in combination with left-border primers specific to each mutant collection (Supplementary file 1).
 
@@ -108,19 +492,19 @@ For SA treatments, adult plants were sprayed with, while seedlings were immersed
 
 Psm ES4326 was grown in LB media supplemented with 10 mM MgCl2 and 50 μg/ml streptomycin. Cultures were grown overnight then centrifuged at 4,000 rpm for 10 mins. Cells were resuspended in 10 mM MgCl2 and absorbance was measured at 600 nm before necessary dilutions were made to adjust concentrations to those indicated in figure legends. Plants were infected by pressure infiltration with a syringe through the abaxial leaf surface. For measurement of bacterial growth, a single leaf disc per plant was cut from infected leaves at the stated dpi and ground in 10 mM MgCl2. Serial dilutions were plated on LB supplemented with 10 mM MgCl2 and 50 μg/ml streptomycin and colonies were counted after 2 days incubation at 30°C.
 
-## RNA extraction, cDNA synthesis and qPCR
+### RNA extraction, cDNA synthesis and qPCR
 
 Leaf tissue or whole seedlings were frozen and ground to a fine powder in liquid nitrogen. Samples were homogenised in RNA extraction buffer (100 mM LiCl, 100 mM Tris pH 8, 10 mM EDTA, 1% SDS) before addition of an equal volume of phenol/chloroform/isoamylalcohol (25:24:1). The homogenate was vortexed and centrifuged at 13,000 rpm for 5 min. The aqueous phase was transferred to an equal volume of 24:1 chloroform/isoamylalcohol, vortexed and then centrifuged at 13,000 rpm for 5 min. This step was repeated once before the aqueous layer was added to a 1/3 vol of 8 M LiCl and incubated overnight at 4°C. The extract was then centrifuged at 13,000 rpm for 5 min at 4°C. The resulting pellet was washed with ice cold 70% ethanol then rehydrated and dissolved in 400 μl H2O for 30 min on ice. Finally, 40 μl of NaAc (pH 5.3) and 1 ml of ice cold 96% ethanol was added before incubating for 1 hr at −20°C. The precipitate was then centrifuged at 13,000 rpm for 5 min at 4°C, the pellet was washed with ice cold 70% ethanol and resuspended in 50 μl of H2O. Before cDNA synthesis, RNA samples were quantified using a NanoDrop spectrophotometer (Thermo Scientific) and appropriate dilutions were made to ensure all samples contained equal amounts of RNA. Reverse transcription was then performed using SuperScript II reverse transcriptase (Invitrogen) according to the manufacturers’ instructions. qPCR was carried out on 20-fold diluted cDNA using Power SYBR Green (Life Technologies) and gene-specific primers (Supplementary file 1) on a StepOne Plus Real Time PCR machine (Life Technologies).
 
-## RNA-Seq
+### RNA-Seq
 
 RNA was extracted from biological duplicate samples as described above and further purified using an RNeasy Mini Kit (Qiagen) according to the manufacturer’s instructions. qPCR was carried out to confirm appropriate induction of SA-responsive marker genes. RNA was then quantified and submitted to GATC Biotech/Eurofins (Constance, Germany) for RNA sequencing. The RNA-Seq reads were aligned to the Arabidopsis thaliana TAIR10 genome using Bowtie. TopHat identified potential exon-exon splice junctions of the initial alignment. Strand NGS software in RNA-Seq workflow was used to quantify transcripts. Raw counts were normalised using DESeq with baseline transformation to the median of all samples. Data were then expressed as normalised signal values (i.e. log2[RPKM] where RPKM is read count per kilobase of exon model per million reads) for all statistical tests and plotting. Genes were then filtered by expression (20%–100%) and differentially expressed genes determined by Benjamini Hochberg FDR with 2-way ANOVA (p=0.05). Additionally, we required SA-induced genes to meet a ≥ 2 fold change cut-off, whereas NPR1-dependent genes required ≥1.5 fold change in Col-0 or ube4 plants when compared to npr1 mutants. RNA Seq data have been deposited in Array Express at EMBL-EBIunder accession code E-MTAB-7369.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Chromatin immunoprecipitation was performed on leaf tissue of 4 week-old soil-grown adult plants essentially as described (Yamaguchi et al., 2014) but with minor modifications. 500 mg tissue was crosslinked with 1% formaldehyde by vacuum infiltration for 30 mins at room temperature. Glycine was added to a final concentration of 100 mM to quench crosslinking and vacuum infiltrated for a further 10 mins. Crosslinked tissue was washed twice with ice-cold PBS before all liquid was removed and tissue was frozen in liquid nitrogen. Nuclei were isolated and lysed as described (Yamaguchi et al., 2014) while sonication was performed using a BioRuptor Plus (Diagenode). Sonication consisted of 15 cycles of 30 s ON, 30 s OFF at high power. NPR1-GFP was immunoprecipitated using ChIP grade anti-GFP (Abcam) before capture of immune complexes with Protein A agarose (Millipore). Crosslink reversal and protein removal was performed as described previously (Nelson et al., 2006), by boiling in the presence of Chelex 100 resin (BioRad) before incubation at 55°C with Proteinase K. Finally, DNA was cleaned up using PCR purification columns (Qiagen) and analysed by qPCR using primers listed in Supplementary file 1.
 
-## Protein analysis
+### Protein analysis
 
 For protein degradation assays and analysis of NPR1 levels, seedlings were frozen and ground to a fine powder in liquid nitrogen before homogenising in protein extraction buffer (PEB) (50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 5 mM EDTA, 0.1% Triton X-100, 0.2% Nonidet P-40, and inhibitors: 50 μg/ml TPCK, 50 μg/ml TLCK, 0.6 mM PMSF) (Spoel et al., 2009). For analyses of NPR1 phosphorylation PEB buffer was supplemented with 1X phosphatase inhibitor cocktail 3 (Sigma). Samples were centrifuged at 13,000 rpm for 15 min at 4°C to clarify extracts, and the resulting supernatant was used for SDS-PAGE and immunoblot analysis. All antibodies used are listed in the Key Resources Table.
 
@@ -130,7 +514,7 @@ For analysis of long chain polyubiquitination, seedlings were ground to a fine p
 
 For proteasome co-immunoprecipitation with FLAG-UBP6, seedlings were frozen and ground to a fine powder in liquid nitrogen before homogenising in proteasome extraction buffer (50 mM Tris-HCl (pH 7.4), 25 mM NaCl, 2 mM MgCl2, 1 mM EDTA, 10 mM ATP, 5% glycerol, and inhibitors: 50 μg/ml TPCK, 50 μg/ml TLCK, 0.6 mM PMSF). Extracts were centrifuged at 13,000 rpm at 4°C for 20 mins to remove cellular debris and filtered through 0.22 µm filters. Anti-FLAG M2 affinity gel was washed with the above buffer before incubating with samples overnight with rotation at 4°C. The resin was washed 3 times with the same buffer before immunoprecipitated proteins were eluted by boiling in 1X SDS-PAGE sample buffer including 50 mM DTT. FLAG-UBP6 was detected using rabbit anti-FLAG antibodies while co-immunoprecipitating proteins were detected with indicated antibodies.
 
-## Recombinant protein and NPR1 antibody production
+### Recombinant protein and NPR1 antibody production
 
 N-terminal GST-tagged TUBE was generated by cloning the coding sequence of hHR23A into pGEX-6P-1 using EcoRI and SalI restriction sites. Primers used are listed in Supplementary file 1. GST-TUBE expression was induced in BL21(DE3) E. coli cells with the addition of 1 mM IPTG and cultures were incubated for a further 4 hr at 28°C before collecting by centrifugation. Cells were then lysed in 1X PBS supplemented with 1 mg/ml lysozyme, 25 U/ml Benzonase nuclease, 0.1% Triton-X-100 and a protease inhibitor cocktail before GST-TUBE was purified using Protino Glutathione Agarose 4B according to the manufacturers’ instructions. Purified GST-TUBE was dialysed against 1X PBS and stored with the addition of 10% glycerol at −80°C until use.
 
@@ -142,7 +526,7 @@ Recombinant FLAG-UBE4 was produced using cell-free synthesis via two-step PCR (N
 
 The anti-NPR1 polyclonal antibody was generated by immunising rabbits with a synthetic peptide based on a region of the NPR1 protein with the sequence N’-SALAAAKKEKDSNNTAAVKL-Cys. Rabbits were subsequently bled and antibodies were enriched by affinity purification (Proteintech, USA).
 
-## HA-UbVS labelling and in vitro deubiquitination assays
+### HA-UbVS labelling and in vitro deubiquitination assays
 
 For HA-UbVS labelling, 10 μl reactions were prepared in 50 mM Tris-HCl pH 7.4, 5 mM MgCl2, 1 mM DTT and 1 mM ATP. Before labelling, 350 nM His6-T7-UBP6 was pre-incubated with 50 μM WP1130 or DMSO control for 10 mins before addition of 10 nM Ub-VS treated 26S proteasomes (Ubiquigent). Reactions were incubated for a further 20 mins before addition of 700 nM HA-UbVS and further incubation for 30 mins. All steps were carried out at room temperature. Labelling was terminated with the addition of SDS-PAGE sample buffer including 50 mM DTT. Samples were heated at 70°C for 10 mins before SDS-PAGE and immunoblot analyses.
 
@@ -150,6 +534,6 @@ All in vitro deubiquitination assays were performed in DUB buffer (50 mM Tris-HC
 
 For in vitro deubiquitination of NPR1-GFP isolated from plants, seedlings were treated with SA and MG132 as described in figure legends. Seedlings were frozen and ground to a fine powder in liquid nitrogen before homogenising in protein extraction buffer (PEB) (50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 5 mM EDTA, 0.1% Triton X-100, 0.2% Nonidet P-40, and inhibitors: 50 μg/ml TPCK, 50 μg/ml TLCK, 0.6 mM PMSF). Extracts were centrifuged at 13,000 rpm at 4°C for 20 mins to remove cellular debris and filtered through 0.22 µm filters. GFP-Trap A agarose (Chromotek) was incubated with extracts for 2 hr with rotation at 4°C before washing 10 times with PEB (without inhibitors) then twice with DUB buffer. Supernatant was completely removed before DUB reactions were set up as described above but with NPR1-GFP immobilised on GFP-Trap A as the substrate. Proteins were eluted by boiling in 1X SDS-PAGE sample buffer including 50 mM DTT, before analysis by immunoblotting.
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 For pathogen growth experiments confidence intervals that would allow acceptance or rejection of the null hypothesis were used to estimate sample size, while no statistical methods were used to predetermine sample sizes elsewhere, nor were any methods of randomization. All experiments were repeated a minimum of two times with similar results. For quantitative immunoblotting, band intensities were acquired using Image Studio software and a LI-COR Odyssey FC imaging device (LI-COR Biosciences). NPR1 signal was normalised to GAPDH signal for three replicates, each of which consisted of an independent pool of at least 50 seedlings. For qPCR and ChIP-qPCR experiments with adult plants, samples consisted of a pool of at least six different plants while for seedlings, samples consisted of a pool of at least 50 seedlings. qPCR data is shown for three technical replicates of a representative repeated experiment. For pathogen growth experiments, replicates represent eight separate plants. In all figure legends, the statistical tests applied are stated while n refers to sample size.

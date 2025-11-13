@@ -35,7 +35,7 @@ The taxilin family (i.e. α-taxilin, β-taxilin, and γ-taxilin) have been repor
 
 ## Results
 
-## Screening of α-taxilin and γ-taxilin as new SDA components
+### Screening of α-taxilin and γ-taxilin as new SDA components
 
 APEX2-mediated proximal labeling is an approach that uses hydrogen peroxide (H2O2) as an oxidant to catalyze biotin-phenol (BP), a small molecular substrate, to produce the reactive BP radical that conjugates to the endogenous proteins that are proximal to APEX2 (Hung et al., 2016b). To search for new SDA components, we labeled two previously identified SDA components CCDC68 and CCDC120 (Huang et al., 2017) by infusing them with V5-tagged APEX2. When overexpressed in HeLa cells, the V5 immunostained CCDC68 and CCDC120 fusion proteins showed a ring (top view) (Figure 1—figure supplement 1A) or three dots (side view) (Figure 1—figure supplement 1B) at the centrosome, results that were consistent with their SDA locations when they had been stained by their specific antibodies (Huang et al., 2017). After treatment with BP and H2O2, the biotinylated endogenous proteins co-localized and encircled V5-tagged CCDC120 or V5-tagged CCDC68 (Figure 1—figure supplement 1A-B), thus indicating that APEX2-mediated biotinylation had successfully marked the endogenous proteins around CCDC68 or CCDC120 at the centrosomes. As a negative control, samples without BP or H2O2 showed no biotinylation signal. Furthermore, immunoblotting results also confirmed the endogenous biotinylated proteins mediated by CCDC68 and CCDC120 proximal labeling (Figure 1—figure supplement 1C-D). Finally, the biotinylated proteins were enriched by Streptavidin-coated beads and sent for mass spectrographic (MS) analysis to search for CCDC68 and CCDC120 proximal candidates.
 
@@ -45,53 +45,97 @@ Among the proteins that showed centrosomal localization, α- and γ-taxilin are 
 
 Detailed α- and γ-taxilin localization at the centrosome was determined using super-resolution microscopy with a 3D-structured illumination system (SIM). In the G1 phase, the top views of α- and γ-taxilin showed their ring-like patterns encompassing one centrin-3 dot that resides in the distal lumen of centrioles (Middendorp et al., 1997; Figure 1A–B). The α- and γ-taxilin side views showed three dots occupying two levels with one level (two dots) beside ODF2 and thus at the SDA (Figure 1A–B), and the other level (one dot) assumed to be at the proximal end (Figure 1A–E). Those patterns resembled those of the ninein group, such as ninein and CEP170 (Mazo et al., 2016). Indeed, α-taxilin clearly co-localized with the ninein and CEP170 rings in the top view, and with the three ninein and/or CEP170 dots in the side view (Figure 1C and E). Corresponding γ-taxilin patterns resembled those of α-taxilin by containing a smaller ring that resided inside the ninein and CEP170 signals (Figure 1D and F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig1-v1.jpg)
+
+**Figure 1.:** (A) Immunostained α-taxilin (green) and centrin-3 (magenta) in RPE-1 cells transfected with ODF2-Scarlet (red). Scale bar, 1 µm. The cartoons to the right of each set of images graphically depict the merge images. (B) Immunostained ODF2 (red) and centrin-3 (magenta) in RPE-1 cells transfected with GFP-γ-taxilin (green). Scale bar, 1 µm. (C) Immunostained α-taxilin (red) and ninein (magenta) in RPE-1 cells transfected with centrin-3-GFP (green). Scale bar, 1 µm. (D) Immunostained γ-taxilin (red) and ninein (magenta) in RPE-1 cells transfected with centrin-3-GFP (green). Scale bar, 1 µm. (E) Immunostained α-taxilin (red) and CEP170 (magenta) in RPE-1 cells transfected with centrin-3-GFP (green). Scale bar, 1 µm. (F) Immunostained γ-taxilin (red) and CEP170 (magenta) in RPE-1 cells transfected with centrin-3-GFP (green). Scale bar, 1 µm. (G–H) Schematic showing full-length (FL) and deletion mutants (Δ) of α-taxilin (G) and γ-taxilin (H). N, N terminus; M, middle; C, C terminus; +, positive; −, negative; SDA, subdistal appendages; PE, proximal end. (I) Immunofluorescence images of HA-tagged FL α-taxilin and deletion mutants (green) in (G) and CEP170 (red) in RPE-1 cells. Scale bar, 1 µm. (J) Immunofluorescence images of CEP170 (red) in RPE-1 cells transfected with GFP-tagged FL γ-taxilin and deletion mutants (green) in (H). Scale bar, 1 µm. Arrowheads in (I) and (J) show α-taxilin and γ-taxilin SDA localizations, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Structured illumination microscopy (SIM) images of HeLa cells expressing CCDC68-V5-APEX2 (red) targeted to the SDA (top view), co-localized and surrounded by biotin-labeled endogenous centrosome proteins (green, line 1). Samples omitting biotin-phenol (BP) or H2O2 were set as negative controls (lines 2 and 3). Scale bar, 1 µm. (B) SIM images of HeLa cells expressing CCDC120-V5-APEX2 (red) targeted to SDA (side view), co-localized and surrounded by biotin-labeled endogenous centrosome proteins (green, line 1). Samples omitting BP or H2O2 were set as negative controls (lines 2 and 3). Scale bar, 1 µm. (C–D) Immunoblots showing CCDC68-V5-APEX2 (C) and CCDC120-V5-APEX2 (D) mediated biotinylation of endogenous proteins with anti-Biotin antibody (left panel). HEK-293T cells were transfected with CCDC68-V5-APEX2 (C) and CCDC120-V5-APEX2 (D) and labeled as in A and B. The right panels show Ponceau S staining of the same membranes. Samples omitting BP or H2O2 were set as negative controls (lines 2 and 3). (E) List of centrosomal proteins identified using mass spectrometric examination of APEX2-mediated biotin proximal labeled CCDC68-V5-APEX2 and CCDC120-V5-APEX2. (F) Confocal images of the indicated fusion proteins (green) co-localized with immunostained centrosome markers CP110 (red) or γ-tubulin (red) in U2OS cells. DNA was stained with DAPI (blue). Scale bar, 5 µm. The right-hand images are enlargement of the indicated white box. Scale bar, 2.5 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) α-Taxilin and γ-taxilin schematic showing their N-terminus, M region (coiled-coil domain), and C-terminus. (B) Immunoblots showing the anti-α-taxilin antibody specificity in control and α-taxilin siRNA-treated U2OS cells. GAPDH was the loading control. (C) Immunoblots showing the anti-γ-taxilin antibody specificity in control and α-taxilin siRNA-treated U2OS cells. GAPDH was the loading control. (D) Confocal images and comparisons of the centrosomal localizations of endogenous α-taxilin or γ-taxilin (green) in control- or siRNA-treated RPE-1 cells. Immunostained γ-tubulin (red) served as the centrosome marker. DNA was stained with DAPI (blue). Scale bar, 5 µm. The right-hand images were enlargement of the indicated white box. Scale bar, 1 µm. Data are Mean ± SEM. Statistical significance was determined by one-way ANOVA from three independent experiments. n > 100. ***, p < 0.001. (E) Immunoblot showing the HA-tagged α-taxilin full-length (FL) and the deletion mutants described in Figure 1G. GAPDH was the loading control. (F) Immunoblot showing the GFP-γ-Taxilin FL and the deletion mutants described in Figure 1H. GAPDH was the loading control. (G) Structured illumination microscopy (SIM) images of immunostained HA-tagged α-taxilin deletion mutants (green) and CEP170 (red) in RPE-1 cells. Scale bar, 1 µm. (H) SIM images of immunostained CEP170 (red) in RPE-1 cells transfected with GFP-tagged γ-taxilin deletion mutants (green). Scale bar, 1 µm. The cartoons to the right of the images in (G) and (H) graphically depict the merge images.
+
 We continued by asking which segments of α-taxilin and γ-taxilin were responsible for their SDA and proximal localizations. To examine that, we expressed a series of deletion mutants in RPE-1 cells and assayed their immunofluorescence using CEP170 as a marker (Figure 1G–H, Figure 1—figure supplement 2E-F). The immunofluorescence assay showed that the M2 deletion (261–300 aa) in α-taxilin eliminated its localization at the SDA, and deletion of M3 (301–350 aa) and M4 (351–400 aa) eliminated its localization at the proximal end (Figure 1I and Figure 1—figure supplement 1G). Other deletion mutants (i.e. the N-terminus [1–185 aa], the C-terminus [492–546 aa] and M1 [186–260 aa]) did not affect α-taxilin’s centrosomal localization patterns (Figure 1—figure supplement 1G). These data suggest that α-taxilin’s M2 is responsible for its SDA localization, while M3 and M4 are required for its proximal end localization. For γ-taxilin, M1 (228–270 aa) is responsible for its localization at the proximal end, while M2 (271–317 aa) is responsible for its SDA localization (Figure 1J and Figure 1—figure supplement 1H).
 
-## The precise SDA localizations of α-taxilin and γ-taxilin
+### The precise SDA localizations of α-taxilin and γ-taxilin
 
 Using stimulated emission depletion (STED) nanoscopy, we further characterized α- and γ-taxilin rings, comparing them with those of other SDA proteins. The STED images showed that the rings resembled those of the other SDA proteins, including ODF2, CCDC68, CCDC120, ninein, and CEP170 (Figure 2A). Of those, the ODF2 ring had the smallest diameter and the rest of those proteins’ rings increased in size in this order: CCDC68, CCDC120, γ-taxilin, α-taxilin, ninein, and CEP170 (Figure 2A–B). Therefore, those SDA proteins formed ordered concentric circles beginning with ODF2 and ending with CEP170 in the following order: ODF2, CCDC68, CCDC120, γ-taxilin, α-taxilin, ninein, and CEP170.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative simulated emission depletion (STED) super-resolution images showing top views of the subdistal appendage (SDA) protein distribution patterns. For ODF2, α-taxilin, ninein and CEP170, RPE-1 cells were immunostained with appropriate antibodies. For CCDC68, CCDC120 and γ-taxilin, RPE-1 cells overexpressed with 3×FLAG-tagged CCDC68, CCDC120 or γ-taxilin full-length were immunostained with FLAG antibody. Scale bar, 500 nm. (B) Diameter analysis of SDA proteins showing ring size diameter. Data are Mean ± SD. n ≥ 7, box = 25th and 75th percentiles. (C) Representative two-color STED super-resolution images showing side view of the SDA proteins (green) and the centriole proximal end protein C-Nap1 (red). Scale bar, 500 nm. (D) A scatter plot describing the distance of SDA proteins relative to C-Nap1. Data are Mean ± SD. n ≥ 11, box = 25th and 75th percentiles. (E) Relative localization of SDA proteins in radial and lateral directions of the mother centriole. The upper dotted lines reveal the slanted arrangement of distal appendage (DA) and the lower dotted lines represent the triangular SDA structure, respectively. Data are Mean ± SD.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A) Representative simulated emission depletion (STED) super-resolution images showing top views of the subdistal appendage (SDA) protein distribution patterns. For ODF2, α-taxilin, ninein and CEP170, RPE-1 cells were immunostained with appropriate antibodies. For CCDC68, CCDC120 and γ-taxilin, RPE-1 cells overexpressed with 3×FLAG-tagged CCDC68, CCDC120 or γ-taxilin full-length were immunostained with FLAG antibody. Scale bar, 500 nm. (B) Diameter analysis of SDA proteins showing ring size diameter. Data are Mean ± SD. n ≥ 7, box = 25th and 75th percentiles. (C) Representative two-color STED super-resolution images showing side view of the SDA proteins (green) and the centriole proximal end protein C-Nap1 (red). Scale bar, 500 nm. (D) A scatter plot describing the distance of SDA proteins relative to C-Nap1. Data are Mean ± SD. n ≥ 11, box = 25th and 75th percentiles. (E) Relative localization of SDA proteins in radial and lateral directions of the mother centriole. The upper dotted lines reveal the slanted arrangement of distal appendage (DA) and the lower dotted lines represent the triangular SDA structure, respectively. Data are Mean ± SD.
 
 We then measured SDA proteins’ longitudinal positions by co-immunostaining with the proximal end protein C-Nap1 (Vlijm et al., 2018), which serves as a position reference (Figure 2C–D). ODF2 covered a wide range, occupying between about 360 nm and 589 nm distances from C-Nap1, and so it supposedly resides at the base of both the DA and SDA, respectively. This is comparable to the data obtained by a dSTORM super-resolution microscopy study (Chong et al., 2020). Expect for CCDC120, the rest of the SDA proteins had two layered positions with one layer proximal to C-Nap1 and the other localizing between the two ODF2 layers. The side view of CCDC120 showed a three-layered pattern. At the proximal end, one layer resembled ninein group proteins; while the other two layers settled about 458 nm and 636 nm from C-Nap1 and were assumed to reside at the SDA and DA structures, respectively (Figure 2C–D).
 
 By combining those SDA diameter and longitudinal position measurements seen in STED images, the relative localization of each SDA protein was established at the mother centriole. First, ODF2 resides closest to the centriole wall, while ninein and CEP170 reside at the tip of SDA. At the SDA structure, CCDC68 and CCDC120 localize close to ODF2, and α-taxilin and γ-taxilin are located in concentric circles between CCDC120 and ninein (Figure 2B and E). In the longitudinal position, γ-taxilin was higher than CCDC68, CCDC120, ninein and CEP170, while α-taxilin was lower than those proteins (Figure 2D–E).
 
-## α-Taxilin and γ-taxilin localization at the SDA depends on ODF2
+### α-Taxilin and γ-taxilin localization at the SDA depends on ODF2
 
 To reveal the assembly manners of α- and γ-taxilin in the SDAs, the interactions between them and other SDA proteins were characterized through immunoprecipitation. Since ODF2 is the innermost SDAs layer, it is the starting point for assembly of the other SDA components (e.g. TCHP, CCDC68, CCDC120, etc.) (Ibi et al., 2011; Huang et al., 2017). The immunoprecipitation results revealed that endogenous ODF2 interacted with both α- and γ-taxilin in RPE-1 cells (Figure 3A–B). Correspondingly, the specific localization of ODF2 and α- or γ-taxilin via STED nanoscopy is consistent with their specific localization as indicated in Figure 2. The top view of the SDA region showed that α- and γ-taxilin encircled the ODF2 ring (Figure 3C–D). When viewed from the side, α- and γ-taxilin localized proximal to ODF2’s upper level (Figure 3C–D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunoblots of the endogenous immunoprecipitation (IP) assay of ODF2 and α-taxilin using anti-α-taxilin antibody in lysates of RPE-1 cells. IgG was the control. (B) Immunoblots of the endogenous IP assay of ODF2 and γ-taxilin using anti-γ-taxilin antibody in lysates of RPE-1 cells. (C) Simulated emission depletion (STED) images of RPE-1 cells immunostained with α-taxilin-HA (green) and ODF2 (red). Scale bar, 500 nm. (D) STED images of immunostained ODF2 (red) in RPE-1 cells transfected with GFP-γ-taxilin (green). The cartoons to the right of each set of images in (C) and (D) graphically depict the merge images. Scale bar, 500 nm. (E) Immunoblots of α-taxilin and γ-taxilin protein levels in control- or ODF2-siRNA treated RPE-1 cells. GAPDH was the loading control. (F–G) Comparisons of α-taxilin (F) and γ-taxilin (G) band intensities in (E). Data are Mean ± SEM. Statistical significance was determined by two-tailed Student’s t-tests of six independent experiments. n.s., not significant. (H) Structured illumination microscopy (SIM) images of immunostained α-taxilin (green) and centrin-3 (magenta) in control- or ODF2-siRNA treated RPE-1 cells and those cells rescued by transfection with either siRNA-resistant scarlet-tagged ODF2 full-length (FL) or the 1–59 aa ODF2 deletion mutant (red). Scale bar, 1 µm. (I) SIM images of immunostained γ-taxilin (green) and centrin-3 (magenta) in control- or ODF2-siRNA treated RPE-1 cells and those cells rescued by transfection with either siRNA-resistant scarlet-tagged ODF2 FL or the 1–59 aa ODF2 deletion mutant (red). Scale bar, 1 µm. Arrowheads in (H) and (I) show α-taxilin and γ-taxilin SDA localizations, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Confocal images and comparisons of immunostained α-taxilin (A) and γ-taxilin (B) (green) at the centrosome in control- or ODF2-siRNA treated RPE-1 cells. Immunostained centrin-3 (red) served as the centrosome marker. (C–D) Confocal images and comparisons of α-taxilin (C) and γ-taxilin (D) (green) at the centrosome in control- or CCDC68-siRNA treated RPE-1 cells. Immunostained centrin-3 (red) served as the centrosome marker. (E–F) Confocal images and comparisons of α-taxilin (E) and γ-taxilin (F) (green) at the centrosome in control- or CCDC120-siRNA treated RPE-1 cells. Immunostained centrin-3 (red) served as the centrosome marker. For (A–F), scale bars, 5 µm. Data are Mean ± SEM. Statistical significance was determined by two-tailed Student’s t-tests. n > 50. ***, p < 0.001; n.s., not significant. (G) Lysates of HEK-293T cells co-overexpressing CCDC68-V5 and α-taxilin-HA were subjected to immunoprecipitation (IP) with anti-V5 antibody and immunoblotted (IB) with anti-V5 and anti-HA antibodies. (H) Lysates of HEK-293T cells co-overexpressing CCDC120-GFP and α-taxilin-HA were subjected to IP with anti-GFP antibody and IB with anti-GFP and anti-HA antibodies. (I) Lysates of HEK-293T cells co-overexpressing CCDC68-V5 and 3×FLAG-γ-taxilin were subjected to IP with anti-FLAG and IB with anti-V5 and anti-FLAG antibodies. EV, empty vector. (J) Lysates of HEK-293T cells co-overexpressing CCDC120-GFP and 3×FLAG-γ-taxilin were subjected to IP with anti-FLAG and IB with anti-GFP and anti-FLAG antibodies. (K) Endogenous IP assay of α-taxilin and γ-taxilin with TCHP using anti-TCHP antibody in lysates of HEK-293T cells and IB with anti-α-taxilin, anti-γ-taxilin, and anti-TCHP antibodies. IgG was the control.
 
 Furthermore, immunoblot analysis showed that when ODF2 was depleted by siRNA knockdown, α- and γ-taxilin levels in those cells did not change significantly (Figure 3E–G). However, fluorescence intensity of both α- and γ-taxilin decreased at the centrosomes after ODF2 depletion (Figure 3—figure supplement 1A-B), suggesting that ODF2 affects their centrosomal localizations without affecting their protein levels. As shown by 3D-SIM images, ODF2 depletion by siRNA treatment resulted in α-taxilin or γ-taxilin signal loss at the SDA region, while their proximal end signals were not affected (Figure 3H–I). Moreover, those lost SDA signals could be rescued by overexpressing full-length ODF2. However, the 1–59 aa deletion mutant, which affects ODF2 localization at the SDA (Tateishi et al., 2013) and recruitment of other SDA components (Huang et al., 2017), could not rescue SDA localization of either α-taxilin or γ-taxilin after siRNA treatment (Figure 3H–I). These data further illuminate the role of ODF2 in α- and γ-taxilin assembly at the SDAs.
 
 In contrast, depleted CCDC68 or CCDC120 did not affect α-taxilin or γ-taxilin fluorescence intensity at centrosomes in RPE-1 cells (Figure 3—figure supplement 1C-F), and ectopically expressed CCDC68 and CCDC120 could not be immunoprecipitated from cell lysates by ectopically expressed α-taxilin or γ-taxilin in HEK-293T cells (Figure 3—figure supplement 1G-J). Previously, TCHP was reported to reside at the SDA midzone and to interact with ODF2 and ninein (Ibi et al., 2011). Here, endogenous TCHP did not interact with either α-taxilin or γ-taxilin in HEK-293T cells (Figure 3—figure supplement 1K). Therefore, the proper localization of α-taxilin and γ-taxilin at the SDA depends on ODF2, but not on CCDC68, CCDC120, or TCHP.
 
-## α-Taxilin and γ-taxilin form a complex at the SDA via their coiled-coil domains
+### α-Taxilin and γ-taxilin form a complex at the SDA via their coiled-coil domains
 
 We then moved on to determine the relationship between α-taxilin and γ-taxilin, which belong to the taxilin family and each possesses a coiled-coil domain in their middle regions (Nogami et al., 2004). First, we detected an interaction between those two proteins after immunoprecipitation in HEK-293T cells (Figure 4A). So, we then generated α-taxilin or γ-taxilin knockout (KO) RPE-1 cells using the CRISPR-Cas9 approach (Figure 4—figure supplement 1A-F and Figure 4B–C). Compared with that of wild-type (WT) cells, α-taxilin fluorescence intensity was less at the γ-taxilin KO cell centrosomes (Figure 4D). Conversely, α-taxilin depletion did not affect centrosomal γ-taxilin fluorescence intensity (Figure 4D). Mapping with ectopically expressed γ-taxilin and α-taxilin truncated mutants indicated that they interact with each other via their coiled-coil domains (Figure 4E–H). This was further confirmed via an in vitro binding assay using a purified bacteria-produced MBP-fused γ-taxilin M region (153–464 aa) and a GST-tagged α-taxilin M region (186–491 aa) (Figure 4I). These data suggest that γ-taxilin directly recruits α-taxilin to centrosomes via its coiled-coil domain.
 
-## α-Taxilin recruits CEP170 to SDAs
+![Figure 4.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig4-v1.jpg)
+
+**Figure 4.:** (A) Endogenous immunoprecipitation (IP) assays of α-taxilin with γ-taxilin, CEP170, and ninein using anti-α-taxilin antibody in lysates of HEK-293T cells and were immunoblotted with the indicated antibodies. IgG was the control. (B–C) Immunoblots showing knockout of α-taxilin (B) and γ-taxilin (C) in RPE-1 knockout (KO) cells. β-Actin or GAPDH was used as loading controls. (D) Confocal images of immunostained α-taxilin (green) in wild-type (WT) and γ-taxilin KO RPE-1 cells, as well as immunostained γ-taxilin (green) in WT and γ-taxilin KO RPE-1 cells. Immunostained Centrin-3 (red) was used as a centrosome marker. Data were analyzed by two-tailed Student’s t-tests with three experimental replicates and expressed as Mean ± SEM. n > 80; ***, p < 0.001; n.s., not significant. (E) Schematic showing the interactions of full-length (FL) α-taxilin and its truncated mutants (N terminus, [M] Middle, and C terminus) with γ-taxilin. +, positive; −, negative. (F) Lysates of HEK-293T cells co-overexpressing GFP-tagged FL α-taxilin or its truncated mutants from (E) with 3× FLAG-γ-taxilin were subjected to IP and immunoblotted (IB) with anti-GFP and anti-FLAG antibodies. EV, empty vector. The stars marked the indicated bands in (E). (G) Schematic showing FL γ-taxilin and its truncated mutants’ interactions with α-taxilin. (H) Lysates of HEK-293T cells co-overexpressing GFP-tagged FL γ-taxilin or its truncated mutants from (G) with 3×FLAG-α-taxilin were subjected to IP with anti-GFP and IB with anti-GFP and anti-FLAG antibodies. The stars marked the indicated bands in (G). (I) In vitro binding assay of MBP-γ-taxilin-M from (G) (expressed in E. coli, purified, and stained with Coomassie brilliant blue [CBB]) with GST-α-taxilin-M from (E) (expressed in E. coli and pulled down and detected by IB using the GST antibody).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Sequence alignments of partial α-taxilin (A) and γ-taxilin (B) coding sequences from their WT and KO RPE-1 cells. The protospacer adjacent motif (PAM) sequences are in green font, the sgRNA target sequences are underlined, and mutated sequences are in red font. (C) Confocal images of immunostained α-taxilin (green) in WT and α-taxilin KO RPE-1 cells. Immunostained γ-tubulin (red) served as the centrosome marker. DNA was stained with DAPI (blue). Scale bar, 5 µm. (D) Comparisons of the percentages of cells with centrosomes separated by >2 μm in the WT and α-taxilin KO RPE-1 cells in C. Data are Mean ± SEM. Statistical significance was determined by Student’s t-test of three independent experiments. n > 100. **, p < 0.01. (E) Confocal images of immunostained γ-taxilin (green) in WT or γ-taxilin KO RPE-1 cells. Immunostained γ-tubulin (red) served as the centrosome marker. DNA was stained with DAPI (blue). Scale bar, 5 µm. (F) Comparison of the percentages of cells with centrosomes separated by >2 μm in the WT and γ-taxilin KO RPE-1 cells in E. Data are Mean ± SEM. Statistical significance was determined by Student’s t-test of three independent experiments. n > 100. *, p < 0.05.
+
+### α-Taxilin recruits CEP170 to SDAs
 
 The SDA marker proteins ninein and CEP170 occupy the peripheral region of the SDA structure (Huang et al., 2017; Chong et al., 2020), and based on the SDA protein localization pattern, α-taxilin is located upstream of those two proteins (Figure 2A). So, we investigated whether α-taxilin is involved in recruiting ninein and CEP170 to the SDAs. An endogenous immunoprecipitation assay showed that α-taxilin interacted with CEP170 but not with ninein (Figure 4A). Also, α-taxilin and CEP170 co-localized at both the SDAs and the proximal ends, as observed with STED nanoscopy (Figure 5A). To identify which segment of α-taxilin was responsible for that association, we overexpressed truncated mutants of HA-tagged α-taxilin in HEK-293T cells and mapped the mutants’ interactions with CEP170. CEP170 interacted with α-taxilin in cells overexpressing full-length α-taxilin, as well as the M (186–491 aa) region and C-terminus (491–546 aa) deletion mutant constructs (ΔC), but not with the N-terminus construct (1–185 aa) (Figure 5B–C). This suggests that the α-taxilin M region, but not the N- or C-terminal regions, is required for its interaction with CEP170. An in vitro binding assay using GST-tagged α-taxilin-M and 3×FLAG-CEP170 purified from bacteria and HEK-293T cells (Figure 5D), respectively, suggesting that α-taxilin may directly bind CEP170.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig5-v1.jpg)
 
-**Figure 5.:** (A) Simulated emission depletion (STED) images of RPE-1 cells immunostained with α-taxilin (green) and CEP170 (red). Scale bar, 500 nm. The cartoons to the right of the images graphically depict the merge images. (B) Schematic showing the full-length (FL) α-taxilin and the truncated mutants (N terminus, [M] Middle, deleted C terminus). +, positive; −, negative. (C) Lysates of HEK-293T cells co-overexpressing HA-tagged α-taxilin-FL or the indicated truncated mutants in (B) with 3×FLAG-CEP170 were immunoprecipitated (IP) with anti-FLAG and immunoblotted (IB) with anti-HA and anti-FLAG antibodies. EV, empty vector. (D) In vitro binding of GST-α-taxilin-M from (B) (expressed in E. coli and purified) with 3×FLAG-CEP170 (expressed in HEK-293T cells and purified). The GST-α-taxilin-M was stained with Coomassie brilliant blue (CBB) and the 3×FLAG-CEP170 was pulled down and IB using FLAG antibody. (E) Confocal images of immunostained CEP170 (red) and γ-tubulin (magenta) in control- or α-taxilin-siRNA treated RPE-1 cells, and those cells rescued with siRNA-resistant GFP-tagged α-taxilin-FL or the α-taxilin M2 deletion mutant (△261–300 aa) (green). Scale bar, 5 µm. (F) Comparisons of CEP170 fluorescence intensities at the centrosomes in (E). Statistical significance was determined with one-way ANOVA with three replicates. Data are Mean ± SEM. n > 100; *, p < 0.05; ***, p < 0.001; n.s., not significant.Figure 5—source data 1.Figure 5—source data 2.Figure 5C and D.
+**Figure 5.:** (A) Simulated emission depletion (STED) images of RPE-1 cells immunostained with α-taxilin (green) and CEP170 (red). Scale bar, 500 nm. The cartoons to the right of the images graphically depict the merge images. (B) Schematic showing the full-length (FL) α-taxilin and the truncated mutants (N terminus, [M] Middle, deleted C terminus). +, positive; −, negative. (C) Lysates of HEK-293T cells co-overexpressing HA-tagged α-taxilin-FL or the indicated truncated mutants in (B) with 3×FLAG-CEP170 were immunoprecipitated (IP) with anti-FLAG and immunoblotted (IB) with anti-HA and anti-FLAG antibodies. EV, empty vector. (D) In vitro binding of GST-α-taxilin-M from (B) (expressed in E. coli and purified) with 3×FLAG-CEP170 (expressed in HEK-293T cells and purified). The GST-α-taxilin-M was stained with Coomassie brilliant blue (CBB) and the 3×FLAG-CEP170 was pulled down and IB using FLAG antibody. (E) Confocal images of immunostained CEP170 (red) and γ-tubulin (magenta) in control- or α-taxilin-siRNA treated RPE-1 cells, and those cells rescued with siRNA-resistant GFP-tagged α-taxilin-FL or the α-taxilin M2 deletion mutant (△261–300 aa) (green). Scale bar, 5 µm. (F) Comparisons of CEP170 fluorescence intensities at the centrosomes in (E). Statistical significance was determined with one-way ANOVA with three replicates. Data are Mean ± SEM. n > 100; *, p < 0.05; ***, p < 0.001; n.s., not significant.
 
 Next, we examined the effect of α-taxilin depletion on CEP170’s centrosomal localization and detected a significant decrease in CEP170 fluorescence intensity in RPE-1 cells treated with α-taxilin siRNA, compared with control siRNA (Figure 5E–F). Additionally, overexpressed siRNA-resistant full-length α-taxilin could rescue the CEP170 fluorescence intensity at the centrosomes, whereas the α-taxilin deletion mutant (ΔM2) lacking the region responsible for its SDA localization (Figure 1G and I) failed (Figure 5E-F). These results indicate that α-taxilin participates with CEP170 in SDA assembly.
 
-## α-Taxilin and γ-taxilin are responsible for SDA structural integrity and centrosome microtubule anchoring during interphase
+### α-Taxilin and γ-taxilin are responsible for SDA structural integrity and centrosome microtubule anchoring during interphase
 
 To investigate the functions of α-taxilin and γ-taxilin at the SDA, we analyzed transmission electron microscope (TEM) images of centrioles in WT, α-taxilin KO and γ-taxilin KO RPE-1 cells (Figure 6A; Figure 6—figure supplement 1A). In WT RPE-1 cells, the side view showed that SDA stems were beside centriole wall and that they occupied a wide range at the subdistal position of the mother centriole (Figure 6A). The TEM images showed that a relatively narrower range of SDAs with smaller sizes appeared in α-taxilin KO RPE-1 cells and the smallest in γ-taxilin KO RPE-1 cells (Figure 6A; Figure 6—figure supplement 1A). These results suggest an indispensable role of α-taxilin and γ-taxilin in maintaining SDA integrity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig6-v1.jpg)
+
+**Figure 6.:** (A) Transmission electron microscope (TEM) images of the mother centriole of wild-type (WT), α-taxilin and γ-taxilin KO RPE-1 cells. Red stars marked subdistal appendages. Scale bar, 200 nm. (B) Confocal images of microtubule reformation at 0, 5, and 10 min after rewarming. Wild-type (WT), α-taxilin KO RPE-1 cells, and those cells rescued with 3×FLAG-tagged full-length (FL) α-taxilin and the α-taxilin M2 deletion mutant (△261–300 aa, shown in Figure 1G) were immunostained with antibodies against α-tubulin (green) and centrosome marker γ-tubulin (red). DNA was stained with DAPI (blue). Scale bars, 5 µm. (C) Comparisons of α-tubulin fluorescence intensities around the centrosome in (B). Statistical significance was determined by one-way ANOVA. n > 30. Data are mean ± SEM. *, p < 0.05; **, p < 0.01; ***, p < 0.001; n.s., not significant. (D) Confocal images of microtubule reformation at 0, 5, and 10 min after rewarming. WT, γ-taxilin KO RPE-1 cells, and those cells rescued with 3×FLAG-tagged γ-taxilin-FL and the γ-taxilin M2 deletion mutant (△271–317 aa, shown in Figure 1H) were immunostained with antibodies against α-tubulin (green) and centrosome marker γ-tubulin (red). DNA was stained with DAPI (blue). Scale bars, 5 µm. (E) Statistical analyses of α-tubulin fluorescence intensity around the centrosome in (D). Statistical significance of α-tubulin fluorescence intensity at 0, 5, and 10 min was determined by one-way ANOVA. n > 40. Data are Mean ± SEM. *, p < 0.05; **, p < 0.01; ***, p < 0.001; n.s., not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparisons of subdistal appendage (SDA) areas from Figure 6A. Statistical significance was determined by one-way ANOVA. Data are Mean ± SEM. n = 8. **, p < 0.01; ***, p < 0.001. (B) Confocal images of microtubule reformation with immunostained α-tubulin (green) in control-, α-taxilin- or γ-taxilin-siRNA treated RPE-1 cells. Immunostained γ-tubulin (red) was used as the centrosome marker. DNA was stained with DAPI (blue). Scale bars, 10 µm. (C–E) Comparisons of α-tubulin fluorescence intensity at 0 (C), 5 (D), and 10 min (E) post-warming was determined by one-way ANOVAs of three independent experiments per time period. n > 100. Data are Mean ± SEM. ***, p < 0.001; n.s., not significant. (F) Confocal images of immunostained γ-tubulin (green) and centrin-3 (red) in control-, α-taxilin-, or γ-taxilin-siRNA treated RPE-1 cells. Scale bar, 5 μm. (G) Comparisons of γ-tubulin fluorescence intensities at the centrosomes in (F). Statistical significance was determined by one-way ANOVA. n > 90. Data are Mean ± SEM. n.s., not significant.
 
 Since SDAs serve mainly as microtubule anchoring sites at the centrosome, we then examined whether α- and γ-taxilin are involved in microtubule organization. We began with a microtubule regrowth assay using α-taxilin KO or γ-taxilin KO RPE-1 cells (Figure 4—figure supplement 1A-F and Figure 4B–C). After ice-induced microtubule depolymerization, an immunofluorescence assay detected microtubule dynamics after rewarming. RPE-1 cells were fixed at different periods of time (0, 5, and 10 min), during which microtubules formed arrays radiating from the centrosomes (Figure 6B–E). The centrosomal microtubule aster in normal RPE-1 cells was visible 5 min after rewarming; and at 10 min, an extensive array of microtubules centering on the centrosome had formed (Figure 6, B and D). However, the microtubule asters were significantly impaired in the α-taxilin and γ-taxilin KO RPE-1 cells and the microtubule array densities were obviously less (Figure 6, B and D). To confirm this phenomenon, we further conducted microtubule regrowth assays in control and in α-taxilin and γ-taxilin siRNA-depleted RPE-1 cells. Those results displayed compromised microtubule reformation in the experimental cells, compared with that in the control cells (Figure 6—figure supplement 1B-E). The compromised microtubule regrowth, triggered by depletion of α-taxilin or γ-taxilin, could be partly rescued by overexpression of 3×FLAG-tagged full-length α-taxilin or γ-taxilin, but not by the M2 region (Figure 1G–H) deletion mutants of either taxilin (Figure 6B–E). This suggests that the SDA localization of both α-taxilin and γ-taxilin have indispensible roles in controlling microtubule anchoring at the interphase centrosome.
 
 The centrosome acts as an MTOC by controlling microtubule nucleation and anchoring. γ-Tubulin, as a member of the γ-TuRC complex, plays a major role in microtubule nucleation (Schatten and Sun, 2018). To determine the causes of the compromised microtubule reformation observed in both α- and γ-taxilin depleted cells, we examined γ-tubulin at the interphase centrosome in control-, α-taxilin, and γ-taxilin-siRNA treated RPE-1 cells. The γ-tubulin fluorescence intensity at the interphase centrosome remained unchanged following both α-taxilin and γ-taxilin siRNA-induced depletion (Figure 6—figure supplement 1F-G), thus suggesting that microtubule nucleation may not be affected.
 
-## α-Taxilin and γ-taxilin are required for proper spindle orientation during metaphase
+### α-Taxilin and γ-taxilin are required for proper spindle orientation during metaphase
 
 In proliferating cells, centrosomes act as spindle poles when cells enter mitosis. Therefore, we investigated whether α-taxilin or γ-taxilin loss affected spindle formation. For this, we generated α-taxilin KO and γ-taxilin KO HeLa cells using the CRISPR-Cas9 approach (Figure 7—figure supplement 1A-F and Figure 7A–B). Although bipolar spindle formation was not affected in both α- and γ-taxilin KO cells (Figure 7C), changes in the orientation of the spindle to the substratum were obvious (Figure 7C–E). The average spindle angle increased from 5.13 (SE 0.43)° in WT cells to 11.92 (0.95)° in α-taxilin KO cells, and from 4.94 (0.46)° in WT cells to 10.94 (0.93)° in γ-taxilin KO cells (Figure 7D–E). Spindle misorientations were rescued by overexpression of either 3× FLAG-tagged full-length α-taxilin or γ-taxilin, as well as by the similarly tagged α-taxilin M3 deletion mutant or the γ-taxilin M1 deletion mutant (Figure 1G–H), but not by the M2 deletion mutant for each taxilin (Figure 7C–E; Figure 1G–H). These results confirm α- and γ-taxilin roles in maintaining proper spindle orientation during metaphase.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) Immunoblots showing wild-type (WT) and KO α-taxilin (A) and γ-taxilin (B) in HeLa cells. GAPDH was the loading control. (C) Representative orthogonal views (x–z) of metaphase HeLa cells stained for microtubules (α-tubulin, green) and spindle poles (γ-tubulin, red). Views showed WT, α-taxilin, or γ-taxilin KO cells, and cells overexpressed with 3×FLAG-tagged full-length α-taxilin or γ-taxilin and the indicated deletion mutants (Δ) described in Figure 1G and H, respectively. Scale bars, 10 µm. (D) Comparisons of raw spindle angles in WT, α-taxilin KO HeLa cells, and cells overexpressed with 3×FLAG-tagged full-length α-taxilin or the indicated deletion mutants (Δ). Data are represented as Mean ± SEM. Statistical significance was determined by one-way ANOVA of three individual experiments. n ≥ 60. *, p < 0.05; **, p < 0.01; ***, p < 0.001; n.s., not significant. (E) Comparisons of raw spindle angles in WT, γ-taxilin KO HeLa cells, and cells overexpressed with 3×FLAG-tagged full-length γ-taxilin or the indicated deletion mutants (Δ). Data are represented as Mean ± SEM. Statistical significance was determined by one-way ANOVA of three individual experiments. n ≥ 60. *, p < 0.05; **, p < 0.01; ***, p < 0.001; n.s., not significant. (F) Confocal images of aster microtubules immunostained with EB1 in WT, α-taxilin, or γ-taxilin KO HeLa cells. Scale bars, 5 µm. (G) Comparisons of the aster microtubule lengths in (F). Data are mean (SEM). Statistical significance was determined by one-way ANOVA of three replicates. n ≥ 60. ***, p < 0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73252/elife-73252-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Sequence alignments of partial α-taxilin (A) and γ-taxilin (B) coding sequences from their wild-type (WT) and KO HeLa cells. The protospacer adjacent motif (PAM) sequences are in green font, the sgRNA target sequences are underlined, and mutated sequences are in red font. (C) Confocal images of immunostained α-taxilin (green) in WT and α-taxilin KO HeLa cells. Immunostained γ-tubulin (red) served as the centrosome marker. DNA was stained with DAPI (blue). Scale bar, 5 µm. (D) Comparisons of the percentages of cells with centrosomes separated by >2 μm in WT and α-taxilin KO HeLa cells in C. Data are Mean ± SEM. Statistical significance was determined by Student’s t-test of three independent experiments. n > 100. **, p < 0.01. (E) Confocal images of immunostained γ-taxilin (green) in WT or α-taxilin KO HeLa cells. Immunostained γ-tubulin (red) served as the centrosome marker. DNA was stained with DAPI (blue). Scale bar, 5 µm. (F) Comparisons of the percentages of cells with centrosomes separated by >2 μm in WT and γ-taxilin KO HeLa cells in (E). Data are Mean ± SEM. Statistical significance was determined by Student’s t-test of three independent experiments. n > 100. ***, p < 0.001.
 
 Finally, because astral microtubule loss causes spindle misorientation (Hung et al., 2016a), we examined possible losses by staining the plus-end microtubule binding protein EB1 (Honnappa et al., 2009) in WT and in α-taxilin KO and γ-taxilin KO HeLa cells. While the WT’s aster microtubule length was 3.09 (SE 0.07) μm, those lengths in the α-taxilin (2.20 [0.07] μm) and γ-taxilin (2.19 [0.07] μm) KO HeLa cells were significantly less (Figure 7F–G). These data suggest that the changes in spindle orientation observed in α-taxilin and γ-taxilin KO HeLa cells are likely caused by decreased astral microtubule length.
 
@@ -117,19 +161,295 @@ In conclusion, our results both show α-taxilin and γ-taxilin to be new SDA pro
 
 ## Materials and methods
 
-## Cell cultures and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>CCDC68</td>
+      <td>GenBank</td>
+      <td>NM_025214.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>CCDC120</td>
+      <td>GenBank</td>
+      <td>NM_001163321.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>α-taxilin</td>
+      <td>GenBank</td>
+      <td>NM_175852.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>γ-taxilin</td>
+      <td>GenBank</td>
+      <td>XM_024452398.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>SWAP2</td>
+      <td>GenBank</td>
+      <td>AY358944.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>DACT1</td>
+      <td>GenBank</td>
+      <td>NM_016651.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo-sapiens)</td>
+      <td>ODF2</td>
+      <td>GenBank</td>
+      <td>NM_001242352.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td>Cell line authenticated by ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td>Cell line authenticated by ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Cell line authenticated by ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>RPE-1</td>
+      <td>ATCC</td>
+      <td>CRL-4000</td>
+      <td>Cell line authenticated by ATCC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-taxilin (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>27558–1-AP</td>
+      <td>IF(1:100), IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-tubulin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9026</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-actin(Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8H10D10</td>
+      <td>IB (1: 10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γ-taxilin(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>22357–1-AP</td>
+      <td>IF(1:100), IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γ-tubulin(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3559</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>BN-34</td>
+      <td>IB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-FITC(Goat polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F6762</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Centrin-3(Mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>ABN-H00001070-M01</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP170(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab72505</td>
+      <td>IF (1:100); IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP170(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>27325–1-AP</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP170(Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>72-413-1</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EB1(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17717–1-AP</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>IB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH(Mouse monoclonal)</td>
+      <td>ABclonal</td>
+      <td>AC002</td>
+      <td>IB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP(Rabbit polyclonal)</td>
+      <td>Laboratory produced</td>
+      <td></td>
+      <td>IB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GST(Rabbit polyclonal)</td>
+      <td>Laboratory produced</td>
+      <td></td>
+      <td>IB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9658</td>
+      <td>IF (1:1000); IB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ninein(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab231181</td>
+      <td>IF (1:100); IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ninein(Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>79.160–7</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ODF2(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>12058–1-AP</td>
+      <td>IF (1:100); IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TCHP(Rabbit polyclonal)</td>
+      <td>ATLAS antibodies</td>
+      <td>HPA038638</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>V5(Mouse monoclonal)</td>
+      <td>Innovative Research</td>
+      <td>R960CUS</td>
+      <td>IF (1:1000); IB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>α-taxilin gRNA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>gRNA (5’-GCAGTAGAAGCAGAAGGTCC-3’)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>γ-taxilin gRNA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>gRNA (5’-CTGTTCGAGCTTCTCCCCCA-3’)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH (Schneider et al., 2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cultures and transfection
 
 HeLa (ATCC, CCL-2), U2OS (ATCC, HTB-96), and HEK-293T (ATCC, CRL-3216) cells were purchased from ATCC (Manassas, VA, USA) and cultured in DMEM (GIBCO, Thermo Fisher Scientific, Waltham, MA, USA) with 10% FBS (CellMax, Lanzhou Minhai Bio-Engineering, Lanzhou, China), while RPE-1 cells (ATCC, CRL-4000) were cultured in DMEM/F12 (1:1) (GIBCO) with 10% FBS. The identity of the cell lines has been authenticated by ATCC with a 100% match. Cells were validated to be negative for mycoplasma contamination. All cells were incubated at 37 °C with a 5% CO2 atmosphere. The HeLa, U2OS, and HEK-293T cells were transfected using polyethylenimine (#23966–1, Polysciences, Inc, Warrington, PA, USA), while the RPE-1 cells were transfected using Lipofectamine 3000 (#L3000-015, Invitrogen), both according to the manufacturer’s instructions.
 
-## Plasmid construction
+### Plasmid construction
 
 To obtain CCDC68-V5-APEX2 and CCDC120-V5-APEX2 constructs, human CCDC68 (NM_025214.3) and CCDC120 (NM_001163321.4), respectively, were amplified by PCR from human cDNA and cloned into mito-V5-APEX2 (Lam et al., 2015). Mito-V5-APEX2 was a gift from Alice Ting (Addgene plasmid # 72480; http://n2t.net/addgene:72480; RRID: Addgene_72480). Human γ-taxilin (XM_024452398.1), SWAP2 (AY358944.1), and DACT1 (NM_016651.6) were amplified by PCR from human cDNA and cloned into pmNeonGreenHO-G (Tanida-Miyake et al., 2018), a gift from Isei Tanida (Addgene plasmid # 127912; http://n2t.net/addgene:127912; RRID: Addgene_127912). Human ODF2 (NM_001242352.1) and its deletion mutant (Δ1–59 aa) were amplified by PCR from human cDNA and cloned into pScarletN1, a gift from Oskar Laur (Addgene plasmid # 128060; http://n2t.net/addgene:128060; RRID: Addgene_128060). Using PCR, α-taxilin (NM_175852.4) and its truncated segments were amplified from human cDNA and cloned into pcDNA3.1(+) (Invitrogen). Full-length α-taxilin and γ-taxilin were also cloned into p3×FLAG-CMV-14 (Sigma-Aldrich, St. Louis, MO, USA). Ninein-GFP, 3×FLAG-CEP170, and CCDC120-GFP were obtained from a previous study (Huang et al., 2017).
 
-## APEX2-mediated proximal labeling of CCDC68 and CCDC120
+### APEX2-mediated proximal labeling of CCDC68 and CCDC120
 
 Once CCDC68-V5-APEX2 and CCDC120-V5-APEX2 were constructed, a large-scale proteomic experiment was conducted in cultured HEK-293T cells in which both constructs were over-expressed for 24 hr. Following treatment with BP (final concentration of 50 µM) for 30 min and H2O2 (final concentration of 1 mM) for 1 min, the biotinylated proteins were enriched by Streptavidin-coated beads (Streptavidin Sepharose High Performance, #17-5113-01, Cytiva, Marlborough, MA, USA) for mass spectrographic analysis.
 
-## Mass spectrometry
+### Mass spectrometry
 
 To identify proteins, the Coomassie-stained proteins bands of each sample were cut out of the gels and destained with a solution of 25 mM ammonium bicarbonate in 50% acetonitrile. After dithiothreitol reduction and iodoacetamide alkylation, the proteins were digested with porcine trypsin (Sequencing grade modified; Promega, Madison, WI, USA) overnight at 37 °C. The resulting tryptic peptides were extracted from the gel pieces by using 200 µl of acetonitrile (with 0.1% formic acid). The samples were dried in a vacuum centrifuge concentrator at 30 °C and re-suspended in 10 µl of 0.1% formic acid.
 
@@ -137,46 +457,46 @@ The peptides, resolved using 0.1% formic acid, were loaded into a trap column (A
 
 Proteomic analyses were performed on a Thermo Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) using a nano-electrospray ion source with electrospray voltages of 2.2 kV. Xcalibur software in profile spectrum data type was used for data-dependent acquisition. The MS1 full scan was set at a resolution of 60,000 at m/z 200, AGC target 5e4 and maximum IT 50 ms by an Orbitrap mass analyzer (300–1,500 m/z), and that was followed by MS2 scans generated by HCD fragmentation at a resolution of 15,000 at m/z 200, AGC target 5e4 and maximum IT 45 ms. The fixed first mass of the MS2 spectrum, the isolation window, and the normalized collision energy (NCE) were set at 110.0 m/z, 1.6 m/z, and NCE 30%, respectively.
 
-## Mass spectrometry data analysis
+### Mass spectrometry data analysis
 
 Proteome Discoverer 2.1 software (Thermo Fisher Scientific) was used to align the mass spectrometry data with Uniprot Homo sapiens (Human). Enzyme specificity was set to trypsin, with a maximum of 2 missed trypsin cleavage sites. Precursor mass tolerance was set to 10 ppm and the fragment ion mass tolerance to 0.02 Da. Also, carbamidomethylation of cysteine was the fixed modification, while oxidation of methionine and protein N-terminal acetylation were variable modifications. Percolator algorithm was used to calculate a 1% false discovery rate at the peptide and protein levels.
 
-## Gene silencing by siRNA
+### Gene silencing by siRNA
 
 The siRNAs used in this study (Suzhou GenePharma Co., Ltd, Suzhou, China) consisted of the following sequences: ODF2, 5’-AUCUUUAUGUCGCUGAATT-3’; CCDC68, 5’-CUGCGUGAGUCUUAUUUAU-3’; CCDC120, 5’-GGGAGUGGCUAGUCAUGAU-3’; γ-taxilin #1, 5’-GAAGCAACUGCACAUUUCCAGAUUA-3’; γ-taxilin #2, 5’-GGCAAGAAGCAAGCUAGAAUCUCUU-3’ (Makiyama et al., 2018); α-taxilin #1, 5’- GCCUGAACCAACUCCAGUA-3’; α-taxilin #2, 5’-GCGAGGAGCAUAUCGACAA-3’; and α-taxilin #3, 5’-GCGAGGUAUUCACCACAUU-3’. The negative control was set as 5’- UUCUCCGAACGUGUCACGU-3’. All siRNAs were transfected into RPE-1 or HeLa cells by using Lipofectamine 3,000 (Thermo Fisher Scientific) according to the manufacturer’s instructions. The cells were analyzed 72 hr post-transfection.
 
-## Establishment of α-taxilin and γ-taxilin knockout cell lines
+### Establishment of α-taxilin and γ-taxilin knockout cell lines
 
 The CRISPR-Cas9 approach was used to generate α- and γ-taxilin KO cell lines (Ran et al., 2013). Each protein’s 20-nt guide sequence was designed using the online CRISPR Design Tool at http://www.e-crisp.org/E-CRISP/. α-Taxilin was designed as 5’-GCAGTAGAAGCAGAAGGTCC-3’ and γ-taxilin was designed as 5’-CTGTTCGAGCTTCTCCCCCA-3’. The oligo pairs encoding the 20-nt guide sequences were annealed and ligated into a U6-sgRNA plasmid. The U6-sgRNA plasmid, SpCas9-pcDNA3.1, and pcDNA3.1(+)-PuroR were then transfected at a concentration ratio of 2:1:0.5 into HeLa or RPE-1 cells, and puromycin was used to screen or select transfected cells. Clonal cell lines were isolated using Flow cytometry (MoFlo Astrios EQ, Beckman Coulter, Indianapolis, IN, USA) and mutations were detected by subsequent sequencing and immunoblotting.
 
-## Electron microscopy
+### Electron microscopy
 
 RPE-1 cells grown on ACLAR 33 C film were fixed by adding double-strength fixative (i.e. 1× fixative: 2.5% glutaraldehyde in 0.1 M PB buffer [pH 7.4]) with an equal volume of culture medium for 3 min at room temperature (RT). After removing the mixed fixative, cells were fixed with 1× fixative for 1 hr at RT, then held overnight at 4 °C. Then, the cells were washed four times (8 min each) with 0.1 M PB buffer, then post-fixed in 1% OsO4 and 0.8% K₄Fe(CN)₆ for 1 hr at RT in the dark. After rinsing four times (8 min each) with distilled water, the cells were stained in 1% aqueous uranyl acetate overnight at 4 °C. Following several washes with distilled water, the cells were dehydrated by first using a graded alcohol series (30%, 50%, 70%, 85%, 95%, and 100%, 5 min for each) and then 100% acetone (twice at 5 min each). Subsequently, the cells were infiltrated, embedded in EMbed 812 resin (Electron Microscopy Sciences, Hatfield, PA, USA), and polymerized at 65 °C for 24 hr. After removing the ACLAR 33C film, the resin blocks were trimmed and sectioned using an EM UC7 ultramicrotome (Leica Microsystem, Wetzlar, Germany) with an ultra 35° diamond knife (Diatome Ltd, Nidau, Switzerland). Single-slot copper grids were used to collect 70-nm-thick serial sections that were double stained with uranyl acetate and lead citrate. The grids were then inspected using a Tecnai G2 Spirit BioTWIN transmission electron microscope (Thermo Fisher Scientific) at 120 kV, and images were captured with an attached Orius 832 CCD camera (Gatan, Inc, Pleasanton, CA, USA).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells grown on 18 × 18 mm coverslips were fixed and permeabilized in pre-chilled methanol for 10 min at –20 °C, and then washed three times (10 min each time) in PBS. The cells were then blocked with 4% BSA for 30 min at RT, and then incubated with the first antibody (diluted in 4% BSA) at 4 °C overnight. The slides were then washed three times in PBS buffer for 10 min each time, blocked with 4% BSA for 30 min at RT, and then incubated with the second antibody (Alexa Fluor [Invitrogen, Carlsbad, CA, USA]) for 1 hr at RT. Finally, the cells were stained with DAPI.
 
 Confocal and STED images were acquired using either a TCS SP8 STED 3 X microscopy system with a 100 × 1.4 NA APO oil objective lens and LAS X v.2.0 software (Leica Microsystem), or a STEDYCON microscope platform (Abberior Instruments, Göttingen, Germany). Huygens v.14.10 software (Scientific Volume Imaging, Hilversum, Netherlands) was used for STED nanoscopy image deconvolution. An N-SIM Microscope system equipped with a 100 × 1.49 NA APO oil objective lens (Nikon, Tokyo, Japan) was used to acquire 3D-SIM images. NIS-Elements AR v.4.51 software (Nikon) was used both to acquire the images and for three-dimensional reconstruction. Images were then processed in Photoshop (Adobe, San Jose, CA, USA).
 
-## Immunoprecipitation and immunoblots
+### Immunoprecipitation and immunoblots
 
 For immunoprecipitation, HEK-293T or RPE-1 cells were lysed in immunoprecipitation lysis buffer (50 mM HEPES, 250 mM NaCl, 0.1% Nonidet P-40, 1 mM DTT, 1 mM EDTA, and 10% glycerol, pH = 7.4) on ice for 30 min and then the lysates were centrifuged at 12,000 g for 15 min at 4 °C. Then, either Protein A-Sepharose beads or Protein G Sepharose beads (ab193259 and ab193256, respectively, Abcam, Cambridge, United Kingdom Amersham Biosciences) were added to the supernatants, which were then individually incubated with the appropriate antibodies overnight at 4 °C. The beads were then washed with immunoprecipitation lysis buffer and collected in SDS loading buffer (50 mM Tris-HCl, pH = 7.4, 2% SDS, 100 mM DTT, 0.025% bromo blue, 10% glycerol), which was then boiled at 100 °C for 10 min to obtain the immunoprecipitation samples.
 
 For immunoblots, SDS-PAGE was used to separate protein samples, which were then transferred onto polyvinylidene difluoride membranes (Sigma, Burlington, MA, USA). The membranes were blocked with 5% non-fat milk for 30 min, and then incubated with primary antibodies either overnight at 4 °C or for 2 hr at room temperature. After incubation, the membranes were then incubated with peroxidase-AffiniPure goat anti-rabbit or goat anti-mouse IgG (H + L) secondary antibodies (1:5000) (#111-035-003 and #115-035-003, respectively, Jackson ImmunoResearch, WestGrove, PA, USA) for 1 hr at RT.
 
-## GST pull-down assay
+### GST pull-down assay
 
 For the GST pull-down assay, bacterial-expressed GST and GST-α-Taxilin-M (expressed in Escherichia coli strain BL21) were bound to glutathione-Sepharose 4B beads (Cytiva) and incubated with bacterial-expressed MBP-γ-Taxilin-M or HEK-293T cell expressed and purified 3×FLAG-CEP170 at 4 °C overnight. After reaction, the complexes were washed at least five times with GST-binding buffer (20  mM HEPES, pH 7.5, 75  mM KCl, 0.1  mM EDTA, 2.5  mM MgCl2, 1  mM DTT, 0.05% Triton X-100), eluted by boiling in SDS-PAGE loading buffer, and subjected to immunoblot with the indicated antibodies.
 
-## Microtubule regrowth assay
+### Microtubule regrowth assay
 
 RPE-1 cells were grown on 18 × 18 mm coverslips and then the coverslips were embedded on ice for 30 min to depolymerize the cytoplasmic microtubules. The cells were then brought back to 37 °C to allow the microtubules to reform. Cells at 0, 5, and 10 min after rewarming were fixed in 4% paraformaldehyde (pre-warmed to 37 °C) for 10 min at 37 °C. The cells were immunostained with α- and γ-tubulin antibodies.
 
-## Spindle orientation analysis
+### Spindle orientation analysis
 
 Spindle orientation was measured from the centrosome pairs’ x, y, and z coordinates relative to the slide. Spindle angles measurements were derived from the fixed and immunostained HeLa cells, which were immunostained with an anti-γ-tubulin antibody for spindle poles (red) and an anti-α-tubulin antibody for mitotic spindles (green). The z-stacks and the spindle pole coordinates were measured usinge LAS X v.2.0 software (Leica Microsystem). The spindle angles were then measured using 3D coordinate geometry.
 
-## Measurements and statistical analysis
+### Measurements and statistical analysis
 
 Immunofluorescence intensities and the diameters of the ring-like SDA protein structures were measured using Image J software v.1.48 (NIH) (Schneider et al., 2012). The statistical significances among different groups were determined by two-tailed Student’s t-tests or one-way ANOVAs. The data were graphed in Prism 5 (GraphPad, San Diego, CA, USA).

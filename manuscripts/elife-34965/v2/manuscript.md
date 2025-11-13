@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.34965.001 New data from the NIH reveal that the scientific return on its sponsored research reaches a maximum at around $400,000 of annual support per principal investigator. We discuss the implications of this 'sweet spot' for funding policy, and propose that the NIH should limit both the minimum and maximum amount of funding per researcher.
+New data from the NIH reveal that the scientific return on its sponsored research reaches a maximum at around $400,000 of annual support per principal investigator. We discuss the implications of this 'sweet spot' for funding policy, and propose that the NIH should limit both the minimum and maximum amount of funding per researcher.
 
 ## Systemic disparities in funding
 

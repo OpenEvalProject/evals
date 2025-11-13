@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.15614.001 Previous studies had shown that the integration of genome wide expression profiles, in metabolic tissues, with genetic and phenotypic variance, provided valuable insight into the underlying molecular mechanisms. We used RNA-Seq to characterize hypothalamic transcriptome in 99 inbred strains of mice from the Hybrid Mouse Diversity Panel (HMDP), a reference resource population for cardiovascular and metabolic traits. We report numerous novel transcripts supported by proteomic analyses, as well as novel non coding RNAs. High resolution genetic mapping of transcript levels in HMDP, reveals both local and trans expression Quantitative Trait Loci (eQTLs) demonstrating 2 trans eQTL 'hotspots' associated with expression of hundreds of genes. We also report thousands of alternative splicing events regulated by genetic variants. Finally, comparison with about 150 metabolic and cardiovascular traits revealed many highly significant associations. Our data provide a rich resource for understanding the many physiologic functions mediated by the hypothalamus and their genetic regulation. DOI: http://dx.doi.org/10.7554/eLife.15614.001
+Previous studies had shown that the integration of genome wide expression profiles, in metabolic tissues, with genetic and phenotypic variance, provided valuable insight into the underlying molecular mechanisms. We used RNA-Seq to characterize hypothalamic transcriptome in 99 inbred strains of mice from the Hybrid Mouse Diversity Panel (HMDP), a reference resource population for cardiovascular and metabolic traits. We report numerous novel transcripts supported by proteomic analyses, as well as novel non coding RNAs. High resolution genetic mapping of transcript levels in HMDP, reveals both local and trans expression Quantitative Trait Loci (eQTLs) demonstrating 2 trans eQTL 'hotspots' associated with expression of hundreds of genes. We also report thousands of alternative splicing events regulated by genetic variants. Finally, comparison with about 150 metabolic and cardiovascular traits revealed many highly significant associations. Our data provide a rich resource for understanding the many physiologic functions mediated by the hypothalamus and their genetic regulation.
 
 ## Introduction
 
@@ -45,49 +45,245 @@ Mouse is the primary model organism for many cardiovascular traits, including at
 
 In this study, we explored the transcriptional landscape of mouse hypothalamus using RNAseq from 282 mice, representing 99 inbred and recombinant inbred strains from the HMDP. We first focused on quantifying gene expression in a transcript specific manner, the discovery of novel expressed regions and isoforms, and the contribution of genetic factors to expression variance. We also sought qualitative support for translation of new isoforms and genes. We then examined and quantified RNA modifications, such as alternative splicing events and editing in our data and used the data to map genetic variants affecting these events. Finally, we used the extensive phenotyping available for the HMDP, to look for associations between the expression of genes and transcripts, and physiologic phenotypes. All of the expression data and transcriptome assembly are publicly available from the Gene Expression Omnibus database, accession number GSE79551.
 
-## Hypothalamic gene expression and proteomic data reveal multiple new isoforms and novel genes
+### Hypothalamic gene expression and proteomic data reveal multiple new isoforms and novel genes
 
-Similar to other large-scale RNAseq studies (Mutz et al., 2013) we identified thousands of novel transcripts, with the vast majority of them only expressed at low levels in a small subset of samples (Table 1). Nevertheless, in the robust set of transcripts that are expressed at appreciable levels (FPKM >1 in 50+ samples and FPKM>0 in 100+ samples), we still identified 21,234 novel isoforms and 485 transcripts originating from 407 novel expressed genes (Supplementary file 1). Interestingly, the number of novel isoforms in our study is comparable to the number of previously annotated transcripts passing the same filtering criteria (n = 29,305, Table 1).10.7554/eLife.15614.003Table 1.Transcriptome assembly and filtering.DOI: http://dx.doi.org/10.7554/eLife.15614.003NoneFilter #1*Filter #2†NR‡Loci (genes)40472375911407914079Transcripts3834203570665102450347 known (=) coding9965820721 known (=) non coding8584 novel isoform (j)25957021234 novel locus (u)11753485 other status12439TSS100073944173253720013CDS4624246242186877643Total features57020753531611632792082*Filter #1: Expression values of <1e–6 were rounded to zero, and novel transcripts with all zero values were removed both from expression table and from merged file. Also, all transcripts with class code not "=", "j" or "u" were removed.†Filter #2: Implementation of detection and expression thresholds (detected in more than 100 samples and expressed (fpkm>1) in more than 50) on each feature separately.‡Filter_NR: Non redundant features count (those that do not have 1_2_1 correlation to a gene).
+Similar to other large-scale RNAseq studies (Mutz et al., 2013) we identified thousands of novel transcripts, with the vast majority of them only expressed at low levels in a small subset of samples (Table 1). Nevertheless, in the robust set of transcripts that are expressed at appreciable levels (FPKM >1 in 50+ samples and FPKM>0 in 100+ samples), we still identified 21,234 novel isoforms and 485 transcripts originating from 407 novel expressed genes (Supplementary file 1). Interestingly, the number of novel isoforms in our study is comparable to the number of previously annotated transcripts passing the same filtering criteria (n = 29,305, Table 1).
+
+**Table 1.**
+ Transcriptome assembly and filtering.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>None</th>
+      <th>Filter #1*</th>
+      <th>Filter #2†</th>
+      <th>NR‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loci (genes)</td>
+      <td>40472</td>
+      <td>37591</td>
+      <td>14079</td>
+      <td>14079</td>
+    </tr>
+    <tr>
+      <td>Transcripts</td>
+      <td>383420</td>
+      <td>357066</td>
+      <td>51024</td>
+      <td>50347</td>
+    </tr>
+    <tr>
+      <td>known (=) coding</td>
+      <td>99658</td>
+      <td></td>
+      <td>20721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>known (=) non coding</td>
+      <td></td>
+      <td></td>
+      <td>8584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>novel isoform (j)</td>
+      <td>259570</td>
+      <td></td>
+      <td>21234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>novel locus (u)</td>
+      <td>11753</td>
+      <td></td>
+      <td>485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other status</td>
+      <td>12439</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TSS</td>
+      <td>100073</td>
+      <td>94417</td>
+      <td>32537</td>
+      <td>20013</td>
+    </tr>
+    <tr>
+      <td>CDS</td>
+      <td>46242</td>
+      <td>46242</td>
+      <td>18687</td>
+      <td>7643</td>
+    </tr>
+    <tr>
+      <td>Total features</td>
+      <td>570207</td>
+      <td>535316</td>
+      <td>116327</td>
+      <td>92082</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Filter #1: Expression values of <1e–6 were rounded to zero, and novel transcripts with all zero values were removed both from expression table and from merged file. Also, all transcripts with class code not "=", "j" or "u" were removed.†Filter #2: Implementation of detection and expression thresholds (detected in more than 100 samples and expressed (fpkm>1) in more than 50) on each feature separately.‡Filter_NR: Non redundant features count (those that do not have 1_2_1 correlation to a gene)._
 
 There are several possible interpretations to as why the 407 genes could be missing from the genomic annotation. First, the 407 novel genes expressed in our data potentially constitute transcripts that are unique to the hypothalamus. Second, the GENCODE M2 annotation used in this study was the most recent available when we started to analyze the data. Since then, however, the annotation has been augmented based on more recently published datasets and improved prediction pipelines. Thus, while the 407 genes are novel relative to the M2 version, they may have been added later. To explore that possibility, we compared our assembly to the latest version of annotation released by GENCODE – M10 (released January 2016, http://www.gencodegenes.org/) and find that 193 out of 407 loci are still novel. Some of the genes may also represent genomic DNA contamination. However, we consider this possibility less likely since we used stringent filtering criteria based on the number of samples that the genes were expressed in.
 
-In terms of genomic properties, such as putative open reading frame length, transcript length or splicing complexity, the novel genes seem to resemble known non-coding genes, suggesting that the majority of the novel genes likely belong to this class. On the other hand, the properties of novel isoforms are consistent with known coding transcripts (
+In terms of genomic properties, such as putative open reading frame length, transcript length or splicing complexity, the novel genes seem to resemble known non-coding genes, suggesting that the majority of the novel genes likely belong to this class. On the other hand, the properties of novel isoforms are consistent with known coding transcripts (Figure 1). To explore the translational potential of newly identified isoforms and genes, we compared our RNA-Seq data to proteomic data generated from additional hypothalamus samples from the HMDP. Specifically, we translated all known and newly identified transcripts in 6 potential open reading frames, and compared this dataset to the hypothalamic peptide sequences. As expected, >95% of the identified peptides (Supplementary file 1) matched at least one known transcript with the vast majority of these (>99%) corresponding to known protein coding transcripts, suggesting high accuracy of the peptide data. In addition, 430 peptides matched either novel isoforms (n = 401), or novel genes (n = 29) exclusively (Table 2). Since the genomic properties of the novel genes hint that the majority of them are likely non coding, we do not find their low representation in peptide data surprising. Moreover, manual in-depth characterization of the 29 peptides matching novel genes, with UCSC and NCBI database revealed that almost all of them represent processed pseudogenes, rather than proteins with novel functions. This finding both supports the previously published reports of wide spread transcription of pseudogenes, and their translation (Kim et al., 2014; Tay et al., 2015), while strengthening the suggestion that the majority of novel genes identified in this work are not protein coding.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig1-v2.jpg)
 
-**Figure 1.:** Novel genes and isoforms are defined by Cufflinks class code 'u' and 'j' respectively. Distributions of transcript length (A), and maximal hypothetical peptide length (B) of novel genes (yellow), new isoforms (purple), known non coding transcripts (dashed line) and known coding transcripts (solid line). Transcriptional complexity (number of transcripts per locus, (C) and splicing complexity (number of exons per transcript, (D) of novel genes, novel isoforms, known coding and know non coding transcripts.DOI: http://dx.doi.org/10.7554/eLife.15614.004
+**Figure 1.:** Novel genes and isoforms are defined by Cufflinks class code 'u' and 'j' respectively. Distributions of transcript length (A), and maximal hypothetical peptide length (B) of novel genes (yellow), new isoforms (purple), known non coding transcripts (dashed line) and known coding transcripts (solid line). Transcriptional complexity (number of transcripts per locus, (C) and splicing complexity (number of exons per transcript, (D) of novel genes, novel isoforms, known coding and know non coding transcripts.
+
+**Table 2.**
+ Summary of peptide support for transcripts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide matching*</th>
+      <th>All</th>
+      <th>Uniquely mapped</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Known transcripts</td>
+      <td>9913</td>
+      <td>1016</td>
+    </tr>
+    <tr>
+      <td>Protein_coding</td>
+      <td>9839</td>
+      <td>1002</td>
+    </tr>
+    <tr>
+      <td>ncRNAs</td>
+      <td>74</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Novel isoforms</td>
+      <td>401</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Novel genes</td>
+      <td>29</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Total number</td>
+      <td>10343</td>
+      <td>1134</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Peptides are counted towards supporting novel isoforms only if they do not match any known transcript, and towards supporting novel genes if they do not match either known or novel isoform transcripts. All peptides matching known transcripts were also assigned the most likely transcript. Non coding status was assigned only to peptides that do not match any coding transcripts (for full details please see Materials and methods)._
 
 We further examined whether multi-mapping reads are a substantial contributor to the measured expression of the novel identified genes. For that purpose, we re-quantified 3 samples from C57BL/6J strain, using uniquely mapping reads only (mapping quality = 255), and compared the quantification of the novel genes between the two approaches. Not surprisingly, the proportion of uniquely mapped reads contributing to the expression of the genes matched very well between the 3 samples, suggesting that it is an intrinsic gene property and not unique to the individual samples. Importantly, while the low uniqueness of mapping reads may indicate false results, we also noted that among the 29 peptides matching to the novel genes exclusively and uniquely, 18 match genes that do not pass our threshold. In fact, many of gene families share sequence motifs and are homologues, and as such some of the reads would be multi-mapping between them. Thus we chose not to remove these genes from the annotation.
 
-## Genetic regulation of gene expression
+### Genetic regulation of gene expression
 
-We examined expression QTLs in terms of type of the affected features and identified SNPs affecting expression of all transcripts at a locus (eQTL), specific transcript isoforms (isoQTLs), transcription start sites (tssQTLs) or open reading frame (cdsQTLs) (
+We examined expression QTLs in terms of type of the affected features and identified SNPs affecting expression of all transcripts at a locus (eQTL), specific transcript isoforms (isoQTLs), transcription start sites (tssQTLs) or open reading frame (cdsQTLs) (Hasin-Brumshtein et al., 2016). Since the linkage disequilibrium (LD) is extensive in the mouse genome, we distinguish between three types of QTLs: local (within 2 Mb of the gene), distant (on the same chromosome as the gene, distance >2 Mb) and trans (SNP and gene reside on different chromosomes). The number of identified interactions, and genes affected by such regulation depends on the statistical cutoff of p-value for the interaction one chooses. We examined a set of thresholds ranging from very liberal to stringent. The liberal threshold was previously established by permutation from microarray expression data in the HMDP, i.e. p<1.4E–3 for local variants and p<6E–6 for distant and trans. The most stringent threshold used a Bonferroni corrected threshold (i.e 0.01 divided by the number of tests, p<1E-12). As expected, different thresholds resulted in different numbers of QTLs, with local and distant QTLs being more robust to threshold stringency than trans QTLs. However, 85–95% of the genes regulated by distant variants, were also regulated by local variants, suggesting that most of the distant QTLs reflect local signals emulated at a distance as a result of wide-ranging LD, rather than independent regulatory elements. In contrast, 70% of the trans interactions involved genes lacking local signal over the entire set of thresholds. Since distant regulation was mostly redundant to local, and it would be very difficult to determine whether that signal is a result of independent regulation versus extended LD, we chose to focus our analysis on trans and local interactions only, defining trans as trans-chromosomal interactions. If we look at regulation types over a wide range of thresholds, the local signal predominates at the more stringent thresholds reflecting the larger typical effect size in this group (Figure 2A). We identified local and trans QTLs for all expressed feature types, with the most common being eQTLs and isoQTLs (Figure 2B). Notably, while we used kinship matrix specific for our strains, still several genes in our dataset show extensive trans regulation (horizontal lines in Figure 2B) suggesting a residual influence of population structure on our mapping results. We also note that regulation of gene expression often occurs at the gene level, than at transcript specific levels (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig2-v2.jpg)
 
-**Figure 2.:** (A) Number of genes affected by trans (blue), local (yellow) or both (striped) variants as a function of statistical threshold. (B) Gene level expression quantitative trait loci (eQTL, top) but not transcript specific (isoQTL, bottom) show trans eQTL hotspots. Density shows the number of interactions at lower statistical thresholds (1e–6), red shows interactions passing 1E-12 threshold. Yellow indicates cis acting variants. (C). Genetic regulation occurs on every level, but gene level regulation is more prevalent than transcript specific cases. Supplementary figure shows correlations between allele expression in F1 and local eQTLs identified in HMDP hypothalamus.DOI: http://dx.doi.org/10.7554/eLife.15614.006
+**Figure 2.:** (A) Number of genes affected by trans (blue), local (yellow) or both (striped) variants as a function of statistical threshold. (B) Gene level expression quantitative trait loci (eQTL, top) but not transcript specific (isoQTL, bottom) show trans eQTL hotspots. Density shows the number of interactions at lower statistical thresholds (1e–6), red shows interactions passing 1E-12 threshold. Yellow indicates cis acting variants. (C). Genetic regulation occurs on every level, but gene level regulation is more prevalent than transcript specific cases. Supplementary figure shows correlations between allele expression in F1 and local eQTLs identified in HMDP hypothalamus.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.15614.007
-
 Classical genome-wide eQTL studies used association analysis of total gene expression levels to map local eQTL, assuming that variation linked to proximal genetic variant indicates cis regulation. Recently, several studies have exploited the single base resolution of RNA-Seq to examine this assumption. RNA-Seq permits the identification allele expression (ASE), a hallmark of functional cis acting regulation, in heterozygotes, such as humans or in mouse F1s. Notably, these studies generally show poor concordance between ASE ratios and previously identified local eQTLs, which had been attributed mostly to different technical aspects of RNAseq and ASE analysis (Hasin-Brumshtein et al., 2014; Lappalainen et al., 2013; Grundberg et al., 2012). To examine the concordance between local eQTLs obtained from ASE and genome-wide association, we performed RNA-Seq on brain tissue from 20 mice representing two F1 crosses between three of the classical inbred strains used to construct the HMDP. The parental strains were C57Bl/6 (B), A/J (A) and C3H (H), and the F1 offspring were BxA and HxB. We compared the effect size of ~2600 local eQTLs, to the average ASE effect in both crosses. While local eQTLs were significantly positively correlated with ASE (p<2E-16) correlation estimates were modest (R2 = 0.2), and lower than between the ASEs in the two sets of F1 mice (R2 = 0.4, Figure 2—figure supplement 1).
 
-## RNA-Seq shows extensive alternative splicing in the hypothalamus, with complex regulation pattern
+### RNA-Seq shows extensive alternative splicing in the hypothalamus, with complex regulation pattern
 
-Using a previously established pipeline for analysis of alternative splicing events, SUPPA (see Materials and methods), we identified 7564 alternative splicing events affecting 3599 genes (
+Using a previously established pipeline for analysis of alternative splicing events, SUPPA (see Materials and methods), we identified 7564 alternative splicing events affecting 3599 genes (Table 3). An alternative first exon was most common, accounting for the majority of alternative splicing events with several genes exhibiting multiple alternative first exons (Figure 3A). For other types of events, each most often affected one gene, with some of the genes exhibiting a combination of alternative splicing events. The extent of alternative splicing in each sample was quantified as a percent spliced in (PSI) of every event (Figure 3B). This quantification can be regarded as a quantitative trait; however, the distribution of PSI for every type of event suggests an excess of 0 or 1 values (never or always spliced in, respectively Figure 3E). This observation is consistent with alternative splicing being often bimodal rather than a normally distributed continuous measure (e.g. present or absent splice site), however, it also shows that quantitative regulation plays a significant role in ratio of isoforms that arise from the inclusion or exclusion of a splicing event.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig3-v2.jpg)
 
-**Figure 3.:** Alternative splicing events were classified (see Materials and methods) into 7 types: alternative 3’ splice (A3, blue), alternative 5’ splice (A5, purple), alternative first exon (AF, orange), alternative last exon (AL, brown), mutually exclusive exons (MX, black), retained intron (RI, green), and skipped exon (SE, dark red). All events were quantified in each sample for percent spliced in (PSI). (A) Number of alternative splicing events of each type (solid color), and number of genes affected by these events (light color). (B) Example of partial exon skipping in Colq gene. DBA shows the complete inclusion of the exon (therefore PSI = 1), while in C57BL/6 there is partial exon skipping (PSI = 0.78). (C) Number of alternative splicing events with and without local QTL signal (solid and light color respectively). (D) Alternative splice QTLs are mapping to the same chromosome, for all types of events, indicating that most of genetic regulation is by local (and likely cis acting) variants. (F) Distance between most significant SNP for each event and gene start. The largest effect is typically within 1 Mb of the gene. (G) An example of mapping of mutually exclusive exon event in Nnat gene mapping to SNP rs32019082. (E) Distribution of all PSI values of each event type in all samples.DOI: http://dx.doi.org/10.7554/eLife.15614.008
+**Figure 3.:** Alternative splicing events were classified (see Materials and methods) into 7 types: alternative 3’ splice (A3, blue), alternative 5’ splice (A5, purple), alternative first exon (AF, orange), alternative last exon (AL, brown), mutually exclusive exons (MX, black), retained intron (RI, green), and skipped exon (SE, dark red). All events were quantified in each sample for percent spliced in (PSI). (A) Number of alternative splicing events of each type (solid color), and number of genes affected by these events (light color). (B) Example of partial exon skipping in Colq gene. DBA shows the complete inclusion of the exon (therefore PSI = 1), while in C57BL/6 there is partial exon skipping (PSI = 0.78). (C) Number of alternative splicing events with and without local QTL signal (solid and light color respectively). (D) Alternative splice QTLs are mapping to the same chromosome, for all types of events, indicating that most of genetic regulation is by local (and likely cis acting) variants. (F) Distance between most significant SNP for each event and gene start. The largest effect is typically within 1 Mb of the gene. (G) An example of mapping of mutually exclusive exon event in Nnat gene mapping to SNP rs32019082. (E) Distribution of all PSI values of each event type in all samples.
+
+**Table 3.**
+ Alternative splicing events.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All events</th>
+      <th>Cis QTL events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alternative 3' splice site (A3)</td>
+      <td>316 (266)</td>
+      <td>155 (134)</td>
+    </tr>
+    <tr>
+      <td>Alternative 5' splice site (A5)</td>
+      <td>365 (304)</td>
+      <td>220 (189)</td>
+    </tr>
+    <tr>
+      <td>Alternative first exon (AF)</td>
+      <td>5288 (1874)</td>
+      <td>2776 (1278)</td>
+    </tr>
+    <tr>
+      <td>Alternative last exon (AL)</td>
+      <td>507 (320)</td>
+      <td>283 (208)</td>
+    </tr>
+    <tr>
+      <td>Mutually exclusive exons (MX)</td>
+      <td>44 (36)</td>
+      <td>29 (27)</td>
+    </tr>
+    <tr>
+      <td>Retained Intron (RI)</td>
+      <td>645 (476)</td>
+      <td>356 (285)</td>
+    </tr>
+    <tr>
+      <td>Skipped exon (SE)</td>
+      <td>399 (323)</td>
+      <td>221 (189)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>7564 (3599)</td>
+      <td>4040 (2310)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table 2: Number in parenthesis indicates number of distinct genes affected by the events._
 
 Contrary to gene expression, all forms of alternative splicing were predominantly regulated by local variants (Figure 3C,D). This is not unexpected, since variation in alternative splicing is most likely to arise from particular sequence variants in the RNA itself. Across all examined categories of alternative splicing, 50–60% of the events were significantly associated with local variants, the strongest signal often residing within 1 Mb of the event (Figure 3F). We observe that for many of the genetically regulated splicing events the data show an excess of 0 or 1 PSI values that correlate with the genetic variant (e.g Figure 3G), rather than a shift in a continuous quantitative distribution. This observation suggests that many of the genetically regulated events in alternative splicing sequence play a deterministic role.
 
-## Trans eQTL hotspots
+### Trans eQTL hotspots
+
+Trans eQTLs are not uniformly distributed across the genome, clustering into potential hotspots of genome wide regulation. Such hotspots have been observed in several datasets (Orozco et al., 2015; Orozco et al., 2012; Tian et al., 2015), and they are thought to represent cases where a cis acting variant affects a regulatory gene, e.g. transcription factor, subsequently affecting expression of multiple targets. To identify trans hotspots we divided the genome into bins of 100 kb, and counted the number of distinct genes which exhibit a trans interaction associated with any of the SNPs in the bin (Figure 4A). Importantly, the bins do not necessarily contain the same number of SNPs, and are an order of magnitude shorter than the typical LD blocks in the inbred mouse genome. Just counting the number of SNPs in a bin that are associated in trans would be confounded by SNP density. However, since LD essentially recapitulates the same interactions over and over again, counting the number of genes per bin, rather than the number of SNPs, is not significantly affected by LD.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig4-v2.jpg)
 
-**Figure 4.:** (A) Mouse genome was broken into 100 kb bins. The plot presents genome wide counts of genes which expression is associated with SNPs in that region, in trans. (B) Zoom of trans eQTL locus on chromosome 15. Peak SNP (associated with most genes in trans, rs31703733) is shown in red, color of other SNPs indicates r2 to rs31703733. Lower track shows the 10 genes which expression is associated with rs31703733 locally. C,D,E pertain to the 10 genes associated locally with rs31703733 and therefore potentially mediate the trans effects. (C) Summary table about each gene. (D) Heatmap showing correlation of expression between genes associated with rs31703733 locally, and genes associated with rs31703733 in trans. Color indicates Pearson correlation coefficient. (E) Example correlation between potential regulator (RApgef3) and trait (HDL levels).DOI: http://dx.doi.org/10.7554/eLife.15614.010
+**Figure 4.:** (A) Mouse genome was broken into 100 kb bins. The plot presents genome wide counts of genes which expression is associated with SNPs in that region, in trans. (B) Zoom of trans eQTL locus on chromosome 15. Peak SNP (associated with most genes in trans, rs31703733) is shown in red, color of other SNPs indicates r2 to rs31703733. Lower track shows the 10 genes which expression is associated with rs31703733 locally. C,D,E pertain to the 10 genes associated locally with rs31703733 and therefore potentially mediate the trans effects. (C) Summary table about each gene. (D) Heatmap showing correlation of expression between genes associated with rs31703733 locally, and genes associated with rs31703733 in trans. Color indicates Pearson correlation coefficient. (E) Example correlation between potential regulator (RApgef3) and trait (HDL levels).
 
 There are clearly two very strong trans acting hotspots on chromosome 1 and 15, which are observable for eQTLs, but not for isoQTLs, tssQTLs or cdsQTLs. Each of the two hotspots span 5–6 Mb and include >500 SNPs regulating >400 genes in trans (Figure 4B, Supplementary file 2). Functional enrichment analysis of gene targets of these hotspots suggests that the hotspot on chr1 regulates multiple genes involved in nucleotide binding, while genes regulated by chr15 locus are clearly associated with ion transport in synapse activity (Figure 4C, Supplementary file 2). Moreover, consistent with the hypothesis that trans regulation is mediated by local effects, the trans acting SNPs in these hotspots, are also associated with expression of several local genes (Figure 4B,C, Supplementary file 2).
 
@@ -95,43 +291,240 @@ To identify potential mediators of trans regulation, we examined the trans eQTL 
 
 Genetic association does not necessarily imply that the associated allele is causative for the change in expression. In fact, the majority of the eQTL SNPs fall into regions with poor or no annotation, making it unlikely to be the actual causative variant. However, surprisingly, peak SNPs in the chr15 hotspot (SNPs rs31703733 and rs31780670) are located within a H3K4me1 histone methylation mark associated with enhancers, and which was detected in all neuronal tissues probed by ENCODE in adult mice (cortex, cerebellum, olfactory bulb), but not in other metabolic tissues such as liver, heart, intestine or lung (UCSC genome browser). Based on this preliminary and indirect evidence one may hypothesize that rs31703733 and rs31780670 potentially affect the enhancer activity and the expression of nearby genes. However, to reach any functional conclusion based on our data would require experimental validation in model systems.
 
-## Long non-coding RNAs in the mouse hypothalamus
+### Long non-coding RNAs in the mouse hypothalamus
 
 Long non coding RNA (lncRNAs) are a generally poorly characterized class of RNA molecules, with sometimes unclear classification (St Laurent et al., 2015). Commonly used criteria for identification of lncRNAs are a transcript >200 bp long without an obvious potential open reading frame. In contrast to the relative paucity of data regarding the functionality of most lncRNAs, several specific lncRNAs (e.g. Xist, HOTAIR or H19) had been studied extensively and shown to play an essential role in cellular function (Quek et al., 2015). Recent large RNA-Seq studies and integrative projects such as ENCODE suggest that lncRNAs likely constitute up to 60% of the transcribed RNAs (Djebali et al., 2012). Moreover, in recent years an increasing number of functional studies have shown that lncRNAs play an important role in the regulation of transcription and translation, as well as in cell differentiation, signaling and other processes (Sun et al., 2013; Guttman et al., 2011; Ramos et al., 2015). Further, lncRNAs are enriched for genetic association signals in genome wide association studies (Iyer et al., 2015; Kumar et al., 2013).
 
-GENCODE M2 annotation classifies 4540 lncRNA transcripts into at least 5 biotypes, based on their overlap with protein coding genes (
+GENCODE M2 annotation classifies 4540 lncRNA transcripts into at least 5 biotypes, based on their overlap with protein coding genes (http://www.gencodegenes.org/mouse_releases/2.html). The two most common biotypes - long intergenic non coding RNAs (lincRNAs) and antisense RNAs, account for 97% of all the annotated lncRNAs. Since our data were generated without retaining strand specificity, we focused on lincRNAs only. LincRNAs have been shown to be highly tissue specific (Cabili et al., 2011), and therefore it is not surprising that although there are 2417 annotated lincRNA transcripts, we found only 381 expressed in the mouse hypothalamus at our filtering criteria. The 381 transcripts represent 237 known and 144 novel isoforms of 181 lincRNA genes, with both novel and known isoforms showing similar expression levels (Figure 5A,B). We also used length and open reading frame criteria to examine the novel loci. Notably, the RNA length criteria of >200 bp is a commonly accepted parameter, while the length of minimal potential open reading frame varies between 30–100 aa in different studies. Based on these criteria we can identify up to 129 potentially novel lincRNAs expressed in the mouse hypothalamus, with 49 of them being spliced. Since lincRNAs have been shown to be often highly tissue specific, we consider the novel lincRNAs to be good candidates for hypothalamus specific transcripts.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig5-v2.jpg)
 
-**Figure 5.:** (A) Expression of heatmap known non coding RNAs and novel isoforms of these genes n the HMDP. Six lncRNAs (top cluster, Meg3, Gm26924, Snhg4, Miat, 6330403K07Rik, and Malat1) are highly expressed in almost all samples. (B) Novel isoforms of lncRNAs are expressed at a similar level of known ones. (C) Long non coding RNAs are associated with multiple phenotypes in the HMDP. (D) An example of association between a non coding RNA C330006A16Rik and average food intake.DOI: http://dx.doi.org/10.7554/eLife.15614.011
+**Figure 5.:** (A) Expression of heatmap known non coding RNAs and novel isoforms of these genes n the HMDP. Six lncRNAs (top cluster, Meg3, Gm26924, Snhg4, Miat, 6330403K07Rik, and Malat1) are highly expressed in almost all samples. (B) Novel isoforms of lncRNAs are expressed at a similar level of known ones. (C) Long non coding RNAs are associated with multiple phenotypes in the HMDP. (D) An example of association between a non coding RNA C330006A16Rik and average food intake.
 
 We used gene expression levels to explore the correlation of 310 lincRNAs (181 known and 129 novel genes) with metabolic traits in HMDP. Up to 35% of lincRNA transcripts significantly (p<1e–3) correlated to at least one phenotype in the HMDP, with a few lincRNAs associated with a multitude of related phenotypes (Figure 5C,D). The statistical threshold was determined by permutations in previous studies of gene expression in HMDP, is less stringent than a Bonferroni correction, and reflects interdependencies among phenotypes. Expression of >30% of lincRNAs is associated with a significant local eQTL, suggesting that a considerable number of lincRNAs in the hypothalamus are playing an important role in translation of genetic regulatory variance into physiologic phenotypes. Notably, six lincRNAs – Meg3, Gm26924, Snhg4, Miat, 6330403K07Rik, and Malat1– were highly expressed in most strains (Figure 5A upper cluster). Meg3 is a known imprinted tumor suppressor gene (Zhang et al., 2010) and was recently implicated in hepatic insulin resistance (Zhu et al., 2016). Miat and Malat1 are both part of nuclear bodies. Knockout models of Malat1 are all viable and normal (Zhang et al., 2012; Eißmann et al., 2012; Nakagawa et al., 2012), however their response to metabolic challenges, such as high fat diet, had not been assessed. Myocardial infarction associated transcript (Miat) was initially linked to myocardial infarction through a genetic association study(Ishii et al., 2006). Subsequently, Miat was shown to regulate development of neuronal progenitors, involved in schizophrenia pathogenesis and fear response(Aprea et al., 2013; Liao et al., 2016). Although all of the six highly expressed lincRNAs are not novel, none of them were previously reported to be expressed in the hypothalamus, or to play an established role in the metabolic or reproductive system.
 
 Previous investigations have documented several examples of lincRNAs that code for short translated open reading frames (Anderson et al., 2015). In addition, recent work has shown that lincRNAs can be associated with ribosomes, and their occupancy is similar to that of protein coding transcripts (Ingolia et al., 2014; Ruiz-Orera et al., 2014). We detected 6 peptides which mapped uniquely to 3 different lincRNAs (Gm26825, Gm16295, and Gm26593), suggesting that translation of lincRNAs occurs rarely, and that their association with ribosomes is more likely to be in the context of translational regulation of other protein coding transcripts.
 
-## RNA editing in the mouse hypothalamus
+### RNA editing in the mouse hypothalamus
 
-RNAseq provides the opportunity to look at RNA sequence modifications in a quantitative manner. In this study, we examined RNA editing patterns of all possible substitution types over the genome. A recent study showed that genetic variation affects C to U editing in the intestine, both in site specific and genome wide manners in the mouse Diversity Outbred cross (
+RNAseq provides the opportunity to look at RNA sequence modifications in a quantitative manner. In this study, we examined RNA editing patterns of all possible substitution types over the genome. A recent study showed that genetic variation affects C to U editing in the intestine, both in site specific and genome wide manners in the mouse Diversity Outbred cross (Gu et al., 2015). We hypothesized that genetic variation may contribute to the extent of RNA editing either in a site specific (e.g. by altering editing sites in cis) or genome wide manner (e.g. by altering the expression or specificity of editing enzymes). Altogether we detected 8462 potential editing sites in 3319 genes. As expected, the majority of edits (>70%) were A-to-G modifications, and the total number of detected sites in each strain varied between several hundred to over a thousand (Figure 6A). A comparison of our findings to previously reported editing sites in two databases - DARNED and RADAR - suggests that 75% of these are novel. We then used the proportion of edited reads per site, or per substitution type, across strains as a quantitative trait for mapping genetic variants that contribute to editing. We did not detect any significant genetic association for genome-wide levels of editing, which is consistent with both lack of genetic variation in ADAR in our panel and its very stable expression level across samples (49 ± 0.27 FPKM).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig6-v2.jpg)
 
-**Figure 6.:** (A) A total of 8462 editing sites were identified in the HMDP, with A to G accounting for >70% of the modifications. (B) Number of sites identified in each strain (color coding as in A). (C) Editing level at 90 sites, that were detected in at least 70% of the samples, were mapped. Heatmap shows variation in editing in these sites among the strains. (D) An example of an edited site in Ociad1 gene, and its genome wide mapping result.DOI: http://dx.doi.org/10.7554/eLife.15614.012
+**Figure 6.:** (A) A total of 8462 editing sites were identified in the HMDP, with A to G accounting for >70% of the modifications. (B) Number of sites identified in each strain (color coding as in A). (C) Editing level at 90 sites, that were detected in at least 70% of the samples, were mapped. Heatmap shows variation in editing in these sites among the strains. (D) An example of an edited site in Ociad1 gene, and its genome wide mapping result.
 
 Most editing sites were detected only in a small number of strains, which precluded meaningful mapping. For the site specific mapping we therefore focused on 90 sites that were detected in >70% of the strains (Figure 6C). We detected editing QTLs for 3 specific sites. For example, one of the editing sites in Ociad1 (on chr5 at 73312444) had a strong association (p<1e–8) with genetic variation residing on the same chromosome (Figure 6D). Altogether our data suggest that RNA editing occurs at low level in thousands of genes, however the impact of genetic variation on the editing level in mouse brain is limited.
 
-## Association of hypothalamic expression and phenotypes
+### Association of hypothalamic expression and phenotypes
 
-There are 150 phenotypes available for the HMDP, reflecting many clinically relevant traits as well as various metabolic measures (
+There are 150 phenotypes available for the HMDP, reflecting many clinically relevant traits as well as various metabolic measures (Parks et al., 2013). We used several approaches to examine the potential role of hypothalamic expression in the various phenotypes. We began by identifying the top 500 transcripts that were significantly correlated with each of the phenotypes (correlation p values ranged from 4e–3 to <2e–16, Supplementary file 3). We then analyzed each of these expression sets for enrichment of potential pathways and functional annotation, using DAVID (Huang et al., 2009a, 2009b). Surprisingly, only a few of those expression sets showed moderate to strong enrichment (Figure 7B). For example, fat mass accumulation between 4 and 8 weeks, was distinctly associated with pathways related to oxidative phosphorylation and energy metabolism, while genes associated with food intake were enriched for ribosome related pathways. Clustering of phenotypes based on the proportion of shared genes associated with each trait (Figure 7A), clearly showed that related phenotypes also shared expression dependencies. For example, up to 70% of the genes most correlated with 'esterified cholesterol', were also correlated with 'total cholesterol', and more than 30% were shared with 'HDL'. Together these data validate the notion that related phenotypes share underlying molecular mechanisms, yet these shared genetic correlations may not necessarily correspond to specific readily identifiable pathways.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig7-v2.jpg)
 
-**Figure 7.:** (A) Fraction of co-shared genes among the 500 genes most associated with a phenotype. (B) Enrichment analysis of the top 500 genes associated with each of the 150 phenotypes results in a small number of significant associations.DOI: http://dx.doi.org/10.7554/eLife.15614.013
+**Figure 7.:** (A) Fraction of co-shared genes among the 500 genes most associated with a phenotype. (B) Enrichment analysis of the top 500 genes associated with each of the 150 phenotypes results in a small number of significant associations.
 
 We then analyzed whether the novel genes and isoforms we uncovered potentially contribute to phenotypic diversity. We found 232 novel transcripts associated with at least one phenotype (Supplementary file 3). For example TCONS_00279690, was strongly associated with several metabolic traits, such as total mass in response to a high fat, high carbohydrate dietary challenge, initial mouse insulin levels, as well as weight and fat mass (Supplementary file 3). Similar to known isoforms, expression of ~30% of the novel isoforms was significantly correlated with phenotypes. Correlation coefficients and p values were also similar between known and novel isoforms, suggesting that novel isoforms are as likely to contribute to mouse diversity as previously identified transcripts.
 
-## Expression of cell population markers in the hypothalamus
+### Expression of cell population markers in the hypothalamus
 
-The hypothalamus is a heterogeneous brain region containing multiple nuclei that affect different aspects of metabolism and endocrine physiology. One of the drawbacks of our approach, dictated by practical considerations, is that we performed RNA-Seq on the entire hypothalamus rather than particular cell populations or nuclei. This approach likely results in dilution of signals from any one population of cells. Nevertheless, the sensitivity of RNA-seq allows examination of expression of particular cellular markers that are specific to certain cell types. To assess which cell populations are well represented in our data, we examined the expression, genetic regulation and association with phenotypes of some of the known markers of hypothalamic cell populations (Table 4). Our data show high expression of well-known hypothalamic neuronal markers, such as Agouti-related protein (Agrp), pro-opiomelanocortin (Pomc), hypocretin (orexin, Hcrt) and steroidogenic factor-1 (SF1). In addition, we detect high expression of oligodendrocyte markers and microglia, but only modest expression of epithelial markers.10.7554/eLife.15614.014Table 4.Expression of hypothalamic markers.DOI: http://dx.doi.org/10.7554/eLife.15614.014GeneMarker forMean expressionlocal eQTLAgRPARC neurons119.040NDNPYARC neurons18.162NDFoxo1ARC neurons4.736NDPOMCARC neurons271.9542.618E-04Hcrt (orexin)LHA neurons128.8982.053E-05Sf1VMHvl neurons65.333NDNkx2-1VMHvl neurons6.0671.100E-05Tac-1VMHvl neurons36.3731.624E-09BDNFVMHvl neurons4.464NDEsr1Multiple2.658NDLEPRMultiple1.6442.041E-04INSRMultiple9.496NDCX3CR1Microglia9.7901.400E-05AIF-1Microglia98.598NDCD68Microglia4.162NDItgamMicroglia3.599NDMyD88Microglia2.3691.942E-17Aqp4Astrocytes30.041NDSlc1a3Astrocytes120.203NDAldh1l1Astrocytes16.787NDGfapAstrocytes72.5022.140E-06VEGF-ATanycytes39.559NDCX3CL1Neurons99.4119.836E-09MogOligodendrocytes34.5691.807E-04MbpOligodendrocytes1266.574NDPlp1Oligodendrocytes569.620NDCar4Endothelial10.694NDEsamEndothelial11.6233.184E-04Flt1Endothelial9.538NDCldn5Endothelial15.594ND
+The hypothalamus is a heterogeneous brain region containing multiple nuclei that affect different aspects of metabolism and endocrine physiology. One of the drawbacks of our approach, dictated by practical considerations, is that we performed RNA-Seq on the entire hypothalamus rather than particular cell populations or nuclei. This approach likely results in dilution of signals from any one population of cells. Nevertheless, the sensitivity of RNA-seq allows examination of expression of particular cellular markers that are specific to certain cell types. To assess which cell populations are well represented in our data, we examined the expression, genetic regulation and association with phenotypes of some of the known markers of hypothalamic cell populations (Table 4). Our data show high expression of well-known hypothalamic neuronal markers, such as Agouti-related protein (Agrp), pro-opiomelanocortin (Pomc), hypocretin (orexin, Hcrt) and steroidogenic factor-1 (SF1). In addition, we detect high expression of oligodendrocyte markers and microglia, but only modest expression of epithelial markers.
+
+**Table 4.**
+ Expression of hypothalamic markers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Marker for</th>
+      <th>Mean expression</th>
+      <th>local eQTL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AgRP</td>
+      <td>ARC neurons</td>
+      <td>119.040</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>NPY</td>
+      <td>ARC neurons</td>
+      <td>18.162</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Foxo1</td>
+      <td>ARC neurons</td>
+      <td>4.736</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>POMC</td>
+      <td>ARC neurons</td>
+      <td>271.954</td>
+      <td>2.618E-04</td>
+    </tr>
+    <tr>
+      <td>Hcrt (orexin)</td>
+      <td>LHA neurons</td>
+      <td>128.898</td>
+      <td>2.053E-05</td>
+    </tr>
+    <tr>
+      <td>Sf1</td>
+      <td>VMHvl neurons</td>
+      <td>65.333</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Nkx2-1</td>
+      <td>VMHvl neurons</td>
+      <td>6.067</td>
+      <td>1.100E-05</td>
+    </tr>
+    <tr>
+      <td>Tac-1</td>
+      <td>VMHvl neurons</td>
+      <td>36.373</td>
+      <td>1.624E-09</td>
+    </tr>
+    <tr>
+      <td>BDNF</td>
+      <td>VMHvl neurons</td>
+      <td>4.464</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Esr1</td>
+      <td>Multiple</td>
+      <td>2.658</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>LEPR</td>
+      <td>Multiple</td>
+      <td>1.644</td>
+      <td>2.041E-04</td>
+    </tr>
+    <tr>
+      <td>INSR</td>
+      <td>Multiple</td>
+      <td>9.496</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>CX3CR1</td>
+      <td>Microglia</td>
+      <td>9.790</td>
+      <td>1.400E-05</td>
+    </tr>
+    <tr>
+      <td>AIF-1</td>
+      <td>Microglia</td>
+      <td>98.598</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>CD68</td>
+      <td>Microglia</td>
+      <td>4.162</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Itgam</td>
+      <td>Microglia</td>
+      <td>3.599</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>MyD88</td>
+      <td>Microglia</td>
+      <td>2.369</td>
+      <td>1.942E-17</td>
+    </tr>
+    <tr>
+      <td>Aqp4</td>
+      <td>Astrocytes</td>
+      <td>30.041</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Slc1a3</td>
+      <td>Astrocytes</td>
+      <td>120.203</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Aldh1l1</td>
+      <td>Astrocytes</td>
+      <td>16.787</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Gfap</td>
+      <td>Astrocytes</td>
+      <td>72.502</td>
+      <td>2.140E-06</td>
+    </tr>
+    <tr>
+      <td>VEGF-A</td>
+      <td>Tanycytes</td>
+      <td>39.559</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>CX3CL1</td>
+      <td>Neurons</td>
+      <td>99.411</td>
+      <td>9.836E-09</td>
+    </tr>
+    <tr>
+      <td>Mog</td>
+      <td>Oligodendrocytes</td>
+      <td>34.569</td>
+      <td>1.807E-04</td>
+    </tr>
+    <tr>
+      <td>Mbp</td>
+      <td>Oligodendrocytes</td>
+      <td>1266.574</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Plp1</td>
+      <td>Oligodendrocytes</td>
+      <td>569.620</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Car4</td>
+      <td>Endothelial</td>
+      <td>10.694</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Esam</td>
+      <td>Endothelial</td>
+      <td>11.623</td>
+      <td>3.184E-04</td>
+    </tr>
+    <tr>
+      <td>Flt1</td>
+      <td>Endothelial</td>
+      <td>9.538</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Cldn5</td>
+      <td>Endothelial</td>
+      <td>15.594</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
 
 Interestingly, we identified genetic variation affecting the expression of some key functional molecules for metabolic regulation and response to high fat diet. For example, myeloid differentiation primary response 88 factor (Myd88), is a Toll-like receptor (TLR) adaptor molecule. This protein mediates fatty acid induced inflammation and leads to leptin and insulin resistance in the central nervous system. Mice with CNS specific deletion of Myd88, are protected from high fat diet induced weight gain, and development of leptin resistance induced by acute central application of palmitate (Kleinridders et al., 2009). Our data show that there is a strong eQTL (p value 1.9e–17, Table 4) modulating expression of Myd88. In addition, we detect genetic variations that affect expression of key molecules such as leptin receptor (LepR) and Pomc. Together, these data suggest that the genetic background of inbred mice is an important factor in functional studies, and that the results of molecular perturbations of hypothalamic metabolic pathways can be modulated by genetics.
 
@@ -159,23 +552,23 @@ To summarize, our data fill a substantial gap and will be useful to the research
 
 ## Materials and methods
 
-## Samples, library preparation and sequencing
+### Samples, library preparation and sequencing
 
 Altogether we sequenced 285 samples, from 99 strains of the HMDP. A total of 87 strains had 3 samples per strain, 11 strains had 2 samples per strain, and 2 strains had 1 sample per strain (a detailed list is in Supplementary file 1). RNA was extracted using Qiazol followed by miRNAeasy kit from Qiagen (RRID:SCR_008539). Unstranded mRNA libraries were prepared by the UCLA Neuroscience Genomics Core with Illumina standard kits (TruSeq v3) according to standard protocols. All samples were barcoded, and sequenced with ~18 samples per lane, with HiSeq2000 using 50 bp paired-end sequencing protocol. A round robin design was implemented such that biological replicates were sequenced on different lanes, and each sample was part of more than one sequencing pool. Samples were demultiplexed by sequencing facility, forward and reverse read fastq files were supplied for each sample.
 
-## Data quality control (QC) and mapping
+### Data quality control (QC) and mapping
 
 Read QC was done using FastQC (RRID:SCR_005539) in batch mode. The samples had excellent quality, with all bases exceeding median quality score of 28, and >98% of the sequences with a mean quality score >28. The average number of reads per sample was 26.3 M. All reads were passed to mapping as is, without trimming or filtering. Samples were mapped to the mm10 genome using STAR aligner version 2.3.1 (https://github.com/alexdobin/STAR/releases/tag/STAR_2.3.1z9). The mm10 sequence was downloaded from http://cufflinks.cbcb.umd.edu/igenomes.html (UCSC annotation files). Reference sequences were built using known splice junctions (–sjdbGTFfile option) from known genes annotation file. Mapping was performed allowing up to 3 mismatches per read (--outFilterMismatchNmax 3), removing non canonical un-annotated junctions (--outFilterIntronMotifs RemoveNoncanonicalUnannotated) and allowing up to 10 multiple mappings per read (--outFilterMultimapNmax 10). Alignment files from all samples of the same strain were merged into one alignment file per strain using the 'merge' function of the samtools package. On average 94.1% of the reads mapped, and of the mapped reads 96.4% mapped uniquely. STAR also detected on average 2.8 M splices per sample, with 98% of them previously annotated. Detailed mapping counts for each sample are in Supplementary file 1.
 
-## Transcript assembly and quantification
+### Transcript assembly and quantification
 
-Our pipeline is summarized in
+Our pipeline is summarized in Figure 8. For the purpose of transcript assembly, sample specific alignment files were pooled into unified BAM alignment files by strain which were then sorted and indexed using samtools. Transcript assembly was done on each strain specific alignment file with Cufflinks v2.2.0., with mouse genome version mm10, and gtf file of known transcripts as a reference guide (-g option, reference file downloaded from UCSC genome browser), together with bias and multimap option corrections (-b and –u respectively). This step resulted in 99 strain specific transcript assemblies. We then used Cuffmerge to compare those assemblies to GENCODE M2 annotation (http://www.gencodegenes.org/), and to consolidate them into one unified assembly file representing all transcripts from GENCODE M2 and from the strain specific assemblies (merged.gtf). To obtain FPKM expression values, we run Cuffquant and Cuffnorm v2.2.1 with default parameters, using the sample specific alignment files and unified assembly (merged.gtf) file.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15614/elife-15614-fig8-v2.jpg)
 
-**Figure 8.:** General workflow used for analysis of RNA-Seq data in this study. Initial demultiplexed samples (fastq files) were aligned to the mouse genome with STAR, merged in one file per strain, and transcripts assembeled with cufflings. The resulting assembly files (one from each strain) were merged with GENECODE M2 annotation into unified assembly. The abundance of each transcript in the unified assembly was estimated in sample specific alignment files.DOI: http://dx.doi.org/10.7554/eLife.15614.015
+**Figure 8.:** General workflow used for analysis of RNA-Seq data in this study. Initial demultiplexed samples (fastq files) were aligned to the mouse genome with STAR, merged in one file per strain, and transcripts assembeled with cufflings. The resulting assembly files (one from each strain) were merged with GENECODE M2 annotation into unified assembly. The abundance of each transcript in the unified assembly was estimated in sample specific alignment files.
 
-## Filtering of the expressed features for subsequent analyses
+### Filtering of the expressed features for subsequent analyses
 
 Cufflinks assembly and abundance estimation results in assessment of gene expression at multiple levels of genomic resolution - transcripts, transcription start sites, coding sequence and loci (genes). We implemented 3 filtering steps:
 
@@ -195,26 +588,26 @@ Third, expression values (FPKM) of transcription start sites, coding sequences a
 
 Altogether, this filtering reduced the number of explored features to ~ 93,000.
 
-## Allele-specific expression and cis eQTL
+### Allele-specific expression and cis eQTL
 
 All features that passed the described above filtering criteria, were analyzed for eQTLs using expression estimates in 282 individual mice representing 100 strains, 193,400 SNPs and the fastLMM algorithm using an appropriate kinship matrix that accounts for the HMDP population structure. Cis acting eQTLs were identified by allele expression (ASE) as described previously (Hasin-Brumshtein et al., 2014). Briefly, allele-specific counts at each exonic SNP, filtered for quality control criteria, were summed in a genespecific manner. The resulting counts were normalized and analyzed for differential expression between the alleles using the DEseq package.
 
-## Identification of RNA editing sites
+### Identification of RNA editing sites
 
 To identify RNA editing sites, we re-aligned the reads to the mouse genome (mm10) and transcriptome using the single nucleotide variant-sensitive aligner RASER (Ahn and Xiao, 2015) with the parameters –m 0.06 and –b 0.03. We then detected likely mismatch positions considering the read sequence quality score at that position and its position within in a read. We further required potential editing sites to be covered by >=5 total and >=3 edited reads and excluded positions that overlap SNPs or are located in homopolymers, simple repeats, and within 4nts of splice junctions (Lee et al., 2013).
 
-## LC-MS proteomics
+### LC-MS proteomics
 
 Proteomic data were collected on 110 samples representing the 99 strains used in this study, plus 10 C57Bl/6 samples. All samples were independent biological replicates of the strains used in this study fed on the high fat, high sugar diet, and not the same hypothalami used for RNA extraction.
 
-## Sample preparation
+#### Sample preparation
 
 The preparation of 110 mouse hypothalamus samples for LC-MS/MS analysis was performed according to the protocol described before (Ghazalpour et al., 2011). Briefly, the samples were split evenly across two 96-well plates, and homogenized using TissueLyser (QIAGEN, Hilden, Germany) in (8 M urea, 50 mM NH4HCO3 pH 7.8 and 10 mM DTT) at 20 Hz for 2 min with two repetitions. Upon denaturation for 1 hr at 37°C the extracted protein concentrations were measured using coomassie assay and readjusted using aforementioned denaturation buffer to 1.5 mg/ml. Equal aliquots of 150 μg were taken further into cysteine alkylation and trypsin digestion steps. After purification of peptides by solid phase extraction using C18 columns the average recovered peptide amount was 68 μg. The resulting peptide solutions were normalized to 0.5 μg/μL for LC-MS/MS analysis
 
-## Instrumental analysis
+#### Instrumental analysis
 
 Samples were analyzed on an Orbitrap Velos mass spectrometer (Thermo Fisher, Waltham, MA) that was interfaced with a 75 μm i.d.×65 cm long LC column packed with 3 μm Jupiter C18 particles (Phenomenex) and a 5 μL injection loop. The mobile phase solvents consisted of (A) 0.2% acetic acid and 0.05% TFA in water and (B) 0.1% TFA in 90% acetonitrile. An exponential gradient was used for the separation, which started with 100% A and gradually increased to 60% B over 100 min.
 
-## Data analysis
+#### Data analysis
 
 The acquired MS/MS spectra datasets were preprocessed with DeconMSn [18304935] and DtaRefinery [20019053] software followed by spectra interpretation using MSGFplus [25358478] software by matching against custom protein fasta file build based on RNA-Seq data. The fasta file included sequences of known genes, newly discovered isoforms and novel genes. The MSGFplus MS/MS search settings were as follows: tryptic peptides only, 10 ppm parent ion mass tolerance, static cysteine carbamylation and maximum charge state 4+. The resulting mzIdentML files were analyzed using MSnID Bioconductor package [http://www.bioconductor.org/packages/release/bioc/html/MSnID.html] to confidently isolate identifications of know genes, isoforms and novel genes. The prior probabilities that the know genes, isoforms and novel genes are real and exist in the protein form are substantially different. Therefore the corresponding identifications were considered separately employing a process effectively emulating the proposed earlier cascade search [26084232]. Briefly, in the first pass we considered peptide identifications matching only to the protein sequences of the known genes (highest prior probability). The filtering criteria on peptide-to-spectrum matching (Spectrum E-Value <9.4e-11 and parent ion mass measurement tolerance <2.4 ppm) were optimized to achieve maximum peptide identifications whilst not exceeding 1% FDR based on reverse sequence identifications. Next, the spectra that match confidently identified 9910 peptide sequences of the known genes were removed from further consideration. In the next round we applied filtering criteria (Spectrum E-Value <2.5e–13 and parent ion mass measurement tolerance <10 ppm) that allowed to confidently identify 236 unique peptide sequences matching to isoforms. After further removing peptides matching to isoforms and applying 1% FDR optimized criteria (Spectrum E-Value <2.3e–9 and parent ion mass measurement tolerance <0.2 ppm) we identified 20 peptide sequences matching novel genes.

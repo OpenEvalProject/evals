@@ -36,21 +36,61 @@ Structural features of plants, including cell walls and the cuticle, most plants
 
 Here, we show that TurboID and miniTurbo enable effective PL in a wide variety of tissues and expression levels in plants. We use TurboID to identify partners of the stomatal guard cell transcription factor FAMA and to obtain the nuclear proteome of a rare cell type in Arabidopsis seedlings – young stomatal guard cells. Our work indicates high sensitivity of the new PL enzymes in plants and is complementary to recent work (Zhang et al., 2019) demonstrating high specificity in a plant-pathogen signaling context. To enable adoption by the plant research community, we provide reagents and a broadly applicable workflow for PL experiments under different experimental conditions in a variety of tissues in Arabidopsis and Nicotiana benthamiana and highlight critical steps in experimental design and execution.
 
-## Highlights
+### Highlights
 
 ## Results
 
-## TurboID and miniTurbo can biotinylate plant proteins under conditions appropriate for plant growth
+### TurboID and miniTurbo can biotinylate plant proteins under conditions appropriate for plant growth
 
 With increased efficiency, BioID-based PL would be a valuable tool to study protein interactions and local proteomes on a cell-type-specific level in plants. We therefore made an initial diagnosis of whether the improved BirA* variants TurboID and miniTurbo (hereafter called TbID and mTb) are appropriate for PL applications in plants, by testing their activity in the nucleus and cytosol of two plant model systems: transiently transformed N. benthamiana leaves and young seedlings of stably transformed Arabidopsis. To enable a comparison with previous experiments in the literature, we also included the original BirA* in our experiments and expressed all three versions under the ubiquitous UBIQUITIN10 (UBQ10) promoter. A YFP tag was added to confirm correct expression and localization of the TbID and mTb biotin ligases (Figure 1—figure supplements 1 and 2).
 
 To test biotin ligase activities, we treated leaf discs from N. benthamiana leaves or whole 5-day-old transgenic Arabidopsis seedlings, each expressing TbID or mTb, with biotin and subsequently monitored biotinylation in total protein extracts using streptavidin immunoblots. For biotin treatment, we briefly vacuum infiltrated the plant tissue with the biotin solution and then incubated the tissue submerged in the solution for 1 h at room temperature (approximately 22°C). Mock- or untreated plants were used as controls (Figure 1A). In TbID- and mTb-expressing N. benthamiana and Arabidopsis, biotin treatment induced strong labeling of proteins, demonstrating that the new biotin ligases work under our chosen conditions in plants. As was observed in other organisms, both TbID and mTb showed greatly increased activity compared to BirA*, which mainly achieved weak self-labeling within 1 h of biotin treatment (Figure 1B–C, Figure 1—figure supplements 3 and 4). Since plants produce and store free biotin in their cells, we were concerned about 'background’ labeling in the absence of exogenous biotin. Although it did appear, background labeling was in most cases negligible. Direct comparison of TbID and mTb in our plant systems revealed little difference in either activity or background labeling in N. benthamiana (Figure 1B, Figure 1—figure supplement 3), possibly due to the high expression levels of the constructs. In Arabidopsis, however, TbID was clearly more active than mTb but also produced more background. Enhanced activity of TbID in the absence of exogenous biotin was especially evident in lines that express TbID and mTb at low levels (Figure 1C, Figure 1—figure supplement 4). Comparing nuclear and cytosolic constructs, we did not observe any significant differences in labeling efficiency at the resolution of immunoblots (Figure 1—figure supplements 3 and 4).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-v3.jpg)
+
+**Figure 1.:** (A) Overview of the experimental setup. UBQ10pro::BirA*/TbID/mTb-YFP constructs with an NLS or NES for nuclear or cytosolic localization were used for transient and stable transformation of N. benthamiana and A. thaliana, respectively. Tobacco leaf discs or whole Arabidopsis seedlings were submerged in a 250 µM biotin solution, briefly vacuum infiltrated, incubated for 1 h at room temperature (RT,~22°C) and frozen. Untreated controls were infiltrated with H2O or frozen directly. Expression and activity of the BirA versions were analyzed by immunoblotting. (B–C) Biotin ligase activity in N. benthamiana (B) and Arabidopsis (C). Streptavidin (SA) and anti-GFP immunoblots (IB) of protein extracts from tobacco leaf discs and Arabidopsis expressing the cytosolic BirA variants without (-) and with (+) biotin treatment. Untransformed tobacco leaves and Col-0 wild-type (WT) seedlings were used as controls. Each sample is a pool of 3 leaf discs or ~ 30 seedlings. Coomassie Brilliant Blue-stained membranes (CBB) are shown as a loading controls. Asterisks mark the positions of naturally biotinylated proteins. For microscopy images showing the subcellular localization of the BirA variants in N. benthamiana and Arabidopsis see Figure 1—figure supplements 1 and 2. For immunoblots showing the activity and expression of both cytosolic and nuclear BirA versions in N. benthamiana and Arabidopsis see Figure 1—figure supplements 3 and 4. For a schematic overview over the generation and composition of the available vectors in the ‘PL toolbox’ see Figure 1—figure supplement 5.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Epifluorescence images of N. benthamiana leaves transformed with UBQ10pro::BirA-YFPNLS or UBQ10pro::BirA-NESYFP expression vectors (BirA = BirA*, mTb or TbID) 2 days after transformation. Shown are the YFP and brightfield (BF) channels and an overlay. Scale bar = 50 µm. Constructs are indicated on the left. Nuclear targeted BirA-YFP (NLS) constructs were largely nuclear and cytosol targeted BirA-YFP versions (NES) constructs largely cytosolic.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Confocal microscopy images of the cotyledon epidermis of 5-day-old Arabidopsis seedlings transformed with UBQ10pro::BirA-YFPNLS or UBQ10pro::BirA-NESYFP expression vectors (BirA = BirA*, mTb or TbID). Shown are the YFP channel (yellow), the cell walls stained with propidium iodide (purple) and an overlay. Scale bar = 50 µm. Constructs and lines used for images are indicated on the left. Nuclear targeted BirA-YFP (NLS) constructs were mostly nuclear, and cytosol targeted (NES) constructs were excluded from the nucleus.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** N. benthamiana leaves were transformed with UBQ10pro::BirA-YFPNLS or UBQ10pro::BirA-NESYFP expression vectors (BirA = BirA*, mTb or TbID). Two days after infiltration, leaf discs expressing either of the six constructs or non-transformed leaves (not transf.) were briefly vacuum infiltrated with 50 µM biotin and incubated for 10, 30 or 60 min at room temperature (~22°C). Untreated samples were used as controls to visualize the background activity of the biotin ligases with endogenous biotin. Each sample is a pool of two leaf discs. Activity and expression of the BirA-YFP variants were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. Coomassie Brilliant Blue-stained membranes (CBB) are shown as loading controls. Asterisks mark the positions of naturally biotinylated proteins.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Five-day-old Arabidopsis seedlings expressing UBQ10pro::BirA-YFPNLS or UBQ10pro::BirA-NESYFP constructs (BirA = BirA*, mTb or TbID) were submerged in 250 µM biotin, briefly vacuum infiltrated and incubated at room temperature (22°C) for one hour (+). Non-treated seedlings were used as controls (-) to visualize the background activity of the biotin ligases with endogenous biotin. Activity and expression of the BirA-YFP variants were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. Coomassie Brilliant Blue-stained membranes (CBB) are shown as loading controls. Asterisks mark the positions of naturally biotinylated proteins. Each sample is a pool of ~30 seedlings. At least two lines were tested per construct; strong cytosolic lines and a strong nuclear TbID line are on the left, weak nuclear lines and WT are on the right. Blots were made and exposed in parallel. Different exposure times are shown to enable comparison of weak and strong lines. Short exposure times were 5 s, long exposures times were 30 s (SA blot) and 70 s (anti-GFP blot). mTb is less active than TbID, but has less background labeling with endogenous biotin, especially in low-expressing lines. WT samples and samples from lines 3, 10 and 3 of the BirA*-NESYFP, mTb-NESYFP and TbID-NESYFP plants, respectively, were also used for the blots shown in Figure 1C.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Schematic overview over cloning steps involved in the generation of the PL toolbox and over the available vectors (highlighted as orange boxes). Analogous constructs for different biotin ligase variants are summarized (indicated by BirA*/TbID/mTb or TbID/mTb). Primers and restriction sites used for PCR and restriction cloning are indicated on the top or bottom of the constructs. V5 = V5 tag, L = 8 amino acid linker (GGGGSGGG), NES = nuclear export signal, NLS = nuclear localization signal, POI = protein of interest. Available plasmids include: ❶ eight entry vectors for N- and C-terminal tagging of proteins of interest with TbID or mTb plus a fluorophore, ❷ six entry vectors for expressing any of the three BirA variants under a promoter of interest with a NES or NLS and a fluorophore, and ❸ six binary plant transformation vectors for expressing any of the three BirA variants with an NES or NLS under the UBQ10 promoter. A detailed description and primer sequences are included in the Materials and methods section. A list of available plasmids with Addgene catalogue number can also be found in the Materials and methods section.
+
 From these experiments, we conclude that both TbID and mTb are well suited for use in plants. Which version is more suitable may depend on the individual question and whether high sensitivity (TbID) or tighter control over labeling time (mTb) is important. For this current study, we generated a versatile set of gateway-compatible entry and destination vectors that can be used to express TbID or mTb alone or as fusion with a protein of interest under a promoter of choice (Figure 1—figure supplement 5). This ‘toolbox’ is accessible through Addgene (available vectors are listed in the Materials and methods section).
 
-## Testing boundaries with TurboID – effects of labeling time, temperature, biotin concentration and application
+### Testing boundaries with TurboID – effects of labeling time, temperature, biotin concentration and application
 
 Achieving an optimal enzyme efficiency by using the right experimental conditions, like labeling time, temperature, biotin concentration and mode of application, can be key for using PL with low-abundant proteins in plants. We therefore tested the effect of those parameters on biotin labeling in 4- to 5-day-old Arabidopsis seedlings expressing TbID and mTb under the UBQ10 promoter. In mammalian cell culture, 10 min of labeling with TbID were sufficient to visualize biotinylated proteins by immunoblot and to perform analysis of different organellar proteomes (Branon et al., 2018). Using immunoblots, we observed similarly fast labeling in plants. TbID induced labeling of proteins over background levels within 15–30 min of treatment with 250 or 50 µM biotin at room temperature (22°C) and labeling steadily increased over the next 3 to 5 h (Figure 2A, Figure 2—figure supplement 1). An increase in self-labeling of TbID was evident even earlier, after as little as 5 min (compare Figure 4—figure supplement 3). Time course experiments in N. benthamiana suggest that mTb is equally fast, with clear labeling of proteins visible within 10 min of treatment with 50 µM biotin (Figure 1—figure supplement 3). This is a significant improvement over BirA*, for which labeling times of 24 h were applied in all three published plant experiments (Khan et al., 2018; Conlan et al., 2018; Lin et al., 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig2-v3.jpg)
+
+**Figure 2.:** (A–D) Dependency of TbID and mTb activity on labeling time, temperature, biotin concentration and biotin application. Four- to 5-day-old seedlings were treated with biotin as described below. Activity and expression of the TbID/mTb-YFP constructs were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. Coomassie Brilliant Blue-stained membranes (CBB) are shown as a loading controls. Asterisks mark the positions of naturally biotinylated proteins. Each sample is a pool of ~30–50 seedlings. (A) Labeling time. Wild-type (WT) and UBQ10pro::TbID-YFPNLS (TbID-YFP) seedlings were submerged in 250 µM biotin, briefly vacuum infiltrated and incubated for the indicated time at room temperature (22°C). A control sample was taken before treatment (0’). (B) Temperature-dependency. WT, UBQ10pro::TbID-YFPNLS (TbID-YFP) and UBQ10pro::mTb-NESYFP (mTb-YFP) seedlings were submerged in 250 µM biotin and incubated for 1 h at the indicated temperature. Control samples (-) were incubated in H2O at 22°C. (C) Biotin concentration. UBQ10pro::TbID-NESYFP (TbID-YFP) and UBQ10pro::mTb-NESYFP (mTb-YFP) seedlings were submerged in 0.5 to 250 µM biotin and incubated for 1 h at room temperature. A control sample was taken before treatment (0 µM). (D) Biotin application. WT and UBQ10pro::TbID-YFPNLS (TbID-YFP) seedlings were submerged in 250 µM biotin, briefly vacuum infiltrated (vac. inf.) or not and incubated for 1 h at room temperature. A control sample was taken before treatment. For a longer time course in Arabidopsis and quantification of the immunoblots shown in (C) see Figure 2—figure supplements 1 and 3. For a short time course and temperature dependency of TbID and mTb in N. benthamiana see Figure 1—figure supplement 3 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Labeling time course with TbID in 4-day-old Arabidopsis seedlings expressing the UBQ10pro::TbID-YFPNLS construct (TbID-YFPNLS). Seedlings were submerged in 50 μM biotin, briefly vacuum infiltrated and incubated for the indicated time at room temperature (22°C). A control sample and a wild-type (WT) sample were taken before biotin treatment. Activity of TbID over time was analyzed by immunoblot (IB) with streptavidin-HRP (SA). The Coomassie Brilliant Blue-stained membrane (CBB) is shown as loading control. Asterisks mark the positions of naturally biotinylated proteins. Each sample is a pool of seedlings. The increase of labeling between 3 and 5 hof biotin treatment demonstrates that labeling of nuclear proteins is not saturated after 3 h.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Streptavidin-HRP (SA) and anti-GFP immunoblots (IB) showing the activity and expression of TbID and mTb at room temperature (22°C), 30°C and 37°C. N. benthamiana leaves were transformed with UBQ10pro::TbID-NESYFP (TbID-NESYFP) or UBQ10pro::mTb-NESYFP (mTb-NESYFP) expression vectors. Two days after infiltration, leaf discs expressing the TbID and mTb constructs and non-transformed leaves were briefly vacuum infiltrated with H2O (-) or 250 µM biotin (+) and incubated at the indicated temperature for 1 h. Each sample is a pool of three leaf discs. The Coomassie Brilliant Blue-stained membrane (CBB) is shown as loading control. Asterisks mark the positions of naturally biotinylated proteins.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Quantification of the streptavidin-HRP (SA) immunoblots (IB) shown in Figure 2C. Five-day-old seedlings transformed with UBQ10pro::TbID-NESYFP (TbID-NESYFP) and UBQ10pro::mTb-NESYFP (mTb-NESYFP) were submerged in 0.5 to 250 µM biotin and incubated for 1 h at room temperature (22°C). A control sample was taken before treatment (0 µM). The anti-GFP blot shows expression of the YFP fusion proteins. Quantification was done in FIJI (ImageJ) by drawing five parallel vertical lines through each of the lanes at different positions and reading out the signal intensity along the line. The graphs on the right show the average signal intensity of the five lines along the length of the gel. The peaks associated with TbID-YFP and mTb-YFP are indicated and the positions of naturally biotinylated proteins are marked by asterisks.
 
 We systematically tested the effect of different biotin treatment temperatures on TbID and mTb activity in Arabidopsis seedlings. Encouragingly, the activity of both variants was nearly as high at 22°C as at 30°C. Moreover, TbID showed only a moderate increase of activity at 37°C, while mTb activity was actually reduced at this temperature (Figure 2B). High activity at ambient temperatures was also observed in N. benthamiana (Figure 2—figure supplement 2). Increasing temperatures above plant growth conditions to improve labeling is therefore not needed.
 
@@ -58,19 +98,67 @@ The biotin concentration used for PL is an important consideration. Endogenous l
 
 In initial experiments, we vacuum infiltrated the plant material with the biotin solution to maximize biotin uptake. At least in Arabidopsis seedlings, this is not necessary. Simply submerging the plantlets in the biotin solution resulted in the same amount of labeling as vacuum infiltration followed by incubation in the biotin solution did (Figure 2D). This finding is very important since it not only simplifies handling of the experiment, but also improves isolation of labeled proteins by reducing the amount of free biotin in the tissue.
 
-## TurboID works in a wide variety of developmental stages and tissues
+### TurboID works in a wide variety of developmental stages and tissues
 
 For TbID to be widely applicable, it must be able to biotinylate proteins in many developmental stages and plant tissues. One initial concern, especially with TbID, was that background labeling from endogenous biotin would accumulate over time, making timed experiments with older tissues unfeasible. This was, however, not the case. Labeling worked well in 4- to 14-day-old plate-grown seedlings without significant increase of background (Figure 3—figure supplement 1). The same was true for separated roots and shoots of 6- to 14-day-old seedlings and even for rosette leaves and flower buds of adult Arabidopsis plants grown on soil (Figure 3, Figure 3—figure supplements 2 and 3). Background activity was low, especially in leaf tissue, and labeling worked well. Vacuum infiltration was not required for the tested plant sample types, except for unopened floral buds, where infiltration improved labeling relative to submergence in the biotin solution (Figure 3). This is likely because petals and reproductive tissues are not in direct contact with the biotin solution. Overall, our experiments suggest that TbID will be applicable in a wide range of developmental stages and tissues. Since TbID and mTb behaved similar in most experiments, it is likely that the same is true for mTb.
 
-## Testing TurboID’s potential to identify partners of a very low-abundant transcription factor and to explore the nuclear proteome of a rare and transient cell type
+![Figure 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig3-v3.jpg)
+
+**Figure 3.:** TbID activity in shoots and roots of 10-day-old plate-grown UBQ10pro::TbID-YFPNLS (TbID-YFP) seedlings, and in rosette leaves and unopened flower buds of mature soil-grown plants. Col-0 wild-type (WT) was used as control. The plant material was submerged in a 250 µM biotin solution, briefly vacuum infiltrated until air spaces were filled with liquid or not vacuum infiltrated and incubated at room temperature (22°C) for 1 h. Control samples were taken before biotin treatment. Samples are pools of three shoots or roots, two rosette leaves or four inflorescences. Activity and expression of TbID-YFP were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. Coomassie Brilliant Blue-stained membranes (CBB) are shown as a loading controls. Asterisks mark the positions of naturally biotinylated proteins. Epifluorescence images of seedlings and mature tissues of the TbID-YFP line are shown on top. For immunoblots showing TbID activity and background in 4- to 14-day-old whole seedlings and shoots and roots of 6- to 14-day-old seedlings see Figure 3—figure supplements 1 and 2. For further microscopy images of the TbID-YFP line see Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Plate-grown Arabidopsis wild-type (WT) and UBQ10pro::TbID-YFPNLS (TbID-YFPNLS) seedlings of the indicated age (dpg = days post germination) were submerged in a 250 µM biotin solution, briefly vacuum infiltrated and incubated for 1 h at room temperature (22°C; + biotin). Non-treated control samples (- biotin) were taken at the same time. Each sample is a pool of seedlings. Activity and expression of TbID-YFPNLS were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. Coomassie Brilliant Blue-stained membranes (CBB) are shown as a loading controls. Asterisks mark the positions of naturally biotinylated proteins.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Six, 10 and 14 days post germination (dpg), plate-grown Arabidopsis wild-type (WT) and UBQ10pro::TbID-YFPNLS (TbID-YFPNLS) seedlings were divided into a shoot and root section. Shoots and roots were submerged separately in a 250 µM biotin solution, briefly vacuum infiltrated and incubated for 1 h at room temperature (22°C; +). Non-treated control samples (-) were taken at the same time. Each sample is a pool of seedlings. Activity and expression of TbID-YFPNLS were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies, respectively. Coomassie Brilliant Blue-stained membranes (CBB) are shown as a loading control. Asterisks mark the positions of naturally biotinylated proteins.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Epifluorescence microscopy images of plate-grown Arabidopsis seedlings and soil-grown mature tissues from the strong TbID-YFPNLS line used in Figures 2 and 3 and the PL experiments in Figures 4–6. Shown are the YFP and brightfield (BF) channel and an overlay. Scale bar = 100 μm. Abbreviations: P, petal; S, sepal; A, anther; St, stigma; O, ovary. The overlay images of the 5-day-old cotyledon and root and of mature flowers are also used in Figure 3.
+
+### Testing TurboID’s potential to identify partners of a very low-abundant transcription factor and to explore the nuclear proteome of a rare and transient cell type
 
 After confirming general applicability of TbID for PL in plants, we wanted to test its performance for the identification of rare protein complexes and the characterization of cell-type-specific organellar proteomes in a real experiment. For this purpose, we chose a cell-type-specific transcription factor (FAMA) and a subcellular compartment of a rare cell type (nuclei of FAMA-expressing stomatal cells) for a case study. FAMA is a nuclear basic helix-loop-helix (bHLH) transcription factor (TF) that is expressed in young stomatal guard cells (GCs) in the epidermis of developing aerial tissues (Ohashi-Ito and Bergmann, 2006). The low abundance of FAMA and FAMA-expressing cells renders identification of interaction partners and cell-type-specific nuclear proteins by traditional methods challenging and makes it well suited for a proof-of-concept experiment. Potential FAMA interaction partners were previously identified in yeast-2-hybrid (Y2H) and bimolecular fluorescence complementation studies (Chen et al., 2016; Kanaoka et al., 2008; Lee et al., 2014; Li et al., 2018; Matos et al., 2014; Ohashi-Ito and Bergmann, 2006), but only few have been confirmed by in vivo functional data.
 
 For our study, we generated plants expressing TbID and a fluorescent tag for visualization under the FAMA promoter, either as a FAMA-protein fusion or alone with a nuclear localization signal (NLS) (Figure 4A, Figure 4—figure supplement 1). By comparing proteins labeled in the FAMApro::FAMA-TbID-Venus (FAMA-TbID) and FAMApro::TbID-YFPNLS (FAMAnucTbID) plants to each other and to wild-type (WT) plants and UBQ10pro::TbID-YFPNLS (UBQnucTbID) plants, we can test the ability of the system to identify (1) proteins in close proximity to FAMA (FAMA complexes), (2) the nuclear protein composition during the FAMA-cell stage, (3) the nuclear proteome in general, and (4) possible FAMA-stage-specific nuclear proteins. The FAMA-TbID-Venus construct is functional, since it complements the seedling-lethal phenotype of the fama-1 mutant (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-v3.jpg)
+
+**Figure 4.:** (A) Plant lines generated for the ‘FAMA interactome’ and ‘nuclear proteome’ experiments. Line names and genotypes are given on the top, schematic expression of the TbID fusion proteins (yellow dots) in a leaf and confocal microscopy images of the epidermis of 5-day-old seedlings are shown below (TbID fusion protein = yellow; propidium iodide-stained cell wall = purple; scale bar = 50 μM). FAMA-TbID and FAMAnucTbID constructs are expressed in young guard cells, while the UBQnucTbID construct is expressed ubiquitously. (B) Time course to optimize time points for the experiments. Five-day-old wild-type (WT) and FAMA-TbID seedlings were submerged in 250 µM biotin, briefly vacuum infiltrated and incubated for the indicated time at room temperature 22°C). Control samples were taken before treatment (0’). Samples are pools of ~30 seedlings. Activity and expression of FAMA-TbID were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. The Coomassie Brilliant Blue-stained membrane (CBB) is shown as loading control. Asterisks and circles mark the positions of naturally biotinylated proteins and putative FAMA-TbID targets, respectively. (C–D) Scheme of samples and comparisons used in the ‘FAMA interactome’ (C) and ‘nuclear proteome’ (D) experiments. (E) Simplified workflow of the experimental procedure from biotin labeling to protein identification by liquid chromatography coupled to mass spectrometry (LC-MS/MS). Three biological replicates were used. Abbreviations: SA, streptavidin; LFQ, label free quantification. For larger extracts of the confocal microscopy images of the plant lines used in the PL experiments shown in (A) see Figure 4—figure supplement 1. For complementation of the fama-1 phenotype by the FAMApro::FAMA-TbID-Venus construct see Figure 4—figure supplement 2. For another labeling time course with the FAMA-TbID line using shorter labeling times with and without vacuum infiltration of biotin see Figure 4—figure supplement 3. For immunoblots showing successful labeling and purification of proteins for the ‘FAMA interactome’ and ‘nuclear proteome’ experiments see Figure 4—figure supplements 4 and 5. For immunoblots demonstrating the importance of the biotin depletion step and a comparison of different biotin depletion strategies see Figure 4—figure supplements 6 and 7.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Confocal microscopy images of the cotyledon epidermis of 5-day-old Arabidopsis seedlings. Shown are the YFP channel (yellow), the cell walls stained with propidium iodide (purple) and an overlay. Scale bar = 50 µm. Excerpts of the overlay images were used in Figure 4A. FAMA-TbID-Venus and TbID-YFPNLS controlled by the FAMA promoter are expressed in developing guard cells (GCs). Expression is highest in dividing and young GCs and decreases as GCs mature. We did not see expression in developing myrosin cells (Li and Sack, 2014), but cannot rule out expression at growth stages that were not used in our experiments. TbID-YFPNLS controlled by the UBQ10 promoter is expressed ubiquitously (see also Figure 3—figure supplement 3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) FAMA-TbID-Venus rescues the seedling-lethal growth phenotype of fama-1. Col-0 wild-type (WT), fama-1 -/- and the FAMA-TbID rescue line (FAMApro::FAMA-TbID-Venus in fama-1 - /- background) were grown on ½ MS plates supplemented with 0.5% sucrose. Pictures of the seedlings were taken after 9 and 12 days. (B) FAMA-TbID-Venus rescues the stomatal development phenotype of fama-1. Brightfield images of the cotyledon epidermis of seedlings 5 and 9 days post germination (dpg). Scale bar = 50 μm. In the fama-1 mutant, guard cell precursors continue dividing and fail to differentiate into stomata with a central pore, resulting in clusters of guard cell precursors (black arrowheads).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Time course to determine time points for the PL experiments with FAMA-TbID. Five-day-old wild-type (WT) and FAMApro::FAMA-TbID-Venus (FAMA-TbID-Venus) seedlings were submerged in 250 µM biotin, briefly vacuum infiltrated or not and incubated for the indicated time at room temperature (22°C). Control samples were taken before treatment (0 min). Activity and expression of TbID were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. The Coomassie Brilliant Blue-stained membrane (CBB) is shown as loading control. Asterisks and circles mark the positions of naturally biotinylated proteins and putative FAMA-TbID targets, respectively. Each sample is a pool of ~20 seedlings.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** For the PL experiments shown in Figures 4–6, 5-day-old wild-type (WT), FAMA-TbID, FAMAnucTbID and UBQnucTbID seedlings were submerged in a 50 μM biotin solution for 0, 0.5 and 3 h and washed repeatedly with ice cold water. Activity and expression of the TbID constructs at the three time points were analyzed by immunoblots (IB) with streptavidin-HRP (SA) and anti-GFP antibodies. The Coomassie Brilliant Blue-stained membrane (CBB) is shown as loading control. Asterisks mark the positions of naturally biotinylated proteins. See Figure 4—figure supplement 5 for affinity purification of the biotinylated proteins.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** Five-day-old wild-type (WT), FAMA-TbID, FAMAnucTbID and UBQnucTbID seedlings were treated with biotin for 0, 0.5, and 3 h (see Figure 4—figure supplement 4) and used for affinity purification (AP) of biotinylated proteins. Samples were taken at different steps of the AP procedure and used for immunoblots (IB) with streptavidin-HRP (SA) to confirm successful biotin depletion and binding of biotinylated proteins to the beads (A–D). One of three biological replicates is shown for each sample. The positions of the TbID fusion proteins are indicated on the right and naturally biotinylated proteins are marked by asterisks. Protein extracts before (extract) and after biotin depletion (after PD-10) confirm that no significant sample loss occurred at this step. The protein extracts after AP (supern.) were depleted of biotinylated proteins, indicating binding of these proteins to the beads. Small aliquots of the beads were used for elution of bound proteins. In most cases, only the naturally biotinylated proteins could be eluted, presumably because TbID targets are biotinylated on multiple sites and bind the beads more strongly.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** Four-day-old wild-type (WT) and UBQ10pro::TbID-YFPNLS (TbID-YFPNLS) seedlings were submerged in H2O (-) or 50 μM biotin for 1 h and used for affinity purification of biotinylated proteins with streptavidin (SA) beads. Protein extracts before and after overnight incubation with the beads and proteins eluted from the beads were used for immunoblotting (IB) with streptavidin-HRP (SA) (A) and for SDS-PAGE (B) to analyze binding of biotinylated proteins to the beads. Biotin treatment led to an increase of labeling in the TbID-YFPNLS line, but also inhibited AP of biotinylated proteins as can be seen both in the protein extracts after incubation with the beads and in the eluates. Coomassie Brilliant Blue-stained membranes (CBB) are shown as loading controls for the IB. Asterisks mark the positions of naturally biotinylated proteins. The positions of TbID-YFPNLS, as well as of BSA (beads used in this experiment are blocked with BSA) and SA monomers that are eluted from the beads, are indicated.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig4-figsupp7-v3.jpg)
+
+**Figure 4—figure supplement 7.:** Five-day-old seedlings expressing the UBQ10pro::TbID-YFPNLS construct were submerged in a 50 μM biotin solution for 3 h and used for biotin depletion-affinity purification (AP) experiments. For biotin depletion, protein extracts were either filtered through one (1x) or two consecutive (2x) PD-10 desalting columns or concentrated repeatedly using an Amicon Ultra centrifugal filter. Samples were taken before and after this step to check for protein loss. From the biotin-depleted extracts, a volume corresponding to 1/5 of the amount used for the PL experiments shown in Figures 4–6 was used for AP with the indicated amount of streptavidin (SA) beads. Samples of the supernatants after AP and of the proteins eluted from the beads were taken to determine the ratio of biotinylated proteins remaining in the protein extract and bound to the beads. All samples were analyzed by immunoblotting (IB) with SA-HRP. The amount of protein extracts and bead eluates loaded correspond to 0.05% and 0.5% of the total volumes, respectively. The Coomassie Brilliant Blue-stained membranes (CBB) are shown as loading controls for the IBs. Asterisks mark the positions of naturally biotinylated proteins. Biotin depletion with the Amicon Ultra Centrifugal filter, but not with PD-10 columns resulted in considerable protein loss. Increasing the amount of beads increased the AP efficiency.
+
 Determining suitable incubation times is crucial since too short an incubation can yield insufficient protein amounts for identification but excessive incubation could label the whole subcellular compartment. We therefore performed labeling time-courses with the FAMA-TbID line, using immunoblots as a readout. FAMA auto-labeling could be observed after as little as 5 min but clear labeling of other proteins required approximately 15 to 30 min. Longer incubation led to further increase in labeling up to 3 h, both in the form of stronger discrete bands and of diffuse labeling, but stayed more or less the same thereafter (Figure 4B, Figure 4—figure supplement 3). Based on these observations, we chose 0.5 and 3 h biotin treatments, after which we would expect abundant and most FAMA interactors to be labeled, respectively, for the ‘FAMA interactome’ experiment (Figure 4C). For the ‘nuclear proteome’ experiment (Figure 4D), only the longer 3 h time point was used, since over-labeling of the compartment was not a concern. Accordingly, the FAMA-TbID, FAMAnucTbID and WT lines were treated for 0, 0.5 and 3 h, and the UBQnucTbID line only for 3 h. As plant material, we chose seedlings 5 days post germination, which corresponds to a peak time in FAMA promoter activity, as determined empirically by microscopy. We used three biological replicates per sample. To make the datasets as comparable as possible, all steps preceding data analysis were done together for the two experiments, as described in the next section.
 
-## From labeling to identification of biotinylated proteins – identifying critical steps
+### From labeling to identification of biotinylated proteins – identifying critical steps
 
 Through empirical testing of experimental conditions using the UBQnucTbID line, we identified steps and choices that have a big impact on success of protein purification and identification after PL with TbID. These include sample choice to maximize bait abundance, removal of free biotin, optimizing the amount of streptavidin beads for affinity purification (AP) and choosing among MS sample prep procedures. Below, we describe our experimental procedure (Figure 4E) and highlight key choices.
 
@@ -78,13 +166,489 @@ We first labeled 5-day-old seedlings, by submerging them in a 50 µM biotin solu
 
 Following AP, we performed liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) analysis to identify and quantify the captured proteins. Tryptic digest for LC-MS/MS analysis was done on-beads, since test experiments revealed that elution from the beads using two different methods (Cheah and Yamada, 2017; Schopp and Béthune, 2018) and subsequent in-gel digestion of biotinylated proteins yielded significantly lower protein amounts and less protein identifications (data not shown). This apparent sample loss is caused by the strong biotin-streptavidin interaction, which allows for stringent washing conditions but also prevents efficient elution of biotinylated proteins from the beads. Notably, highly biotinylated proteins, which likely comprise the most interesting candidates, will interact with more than one streptavidin molecule and will be especially hard to elute. After MS analysis, we identified and quantified the proteins by label-free quantification and filtered for significantly enriched proteins. This part was done separately for the ‘FAMA interactome’ and ‘nuclear proteome’ experiments and is described in the following sections.
 
-## Proximity labeling is superior to AP-MS for identification of candidate interactors of FAMA
+### Proximity labeling is superior to AP-MS for identification of candidate interactors of FAMA
 
 FAMA acts as both an activator and repressor for hundreds of genes (Hachez et al., 2011), suggesting a need for coordinated action with other TFs, co-activators and -repressors (Matos et al., 2014). Identifying such proteins through classical affinity purification-mass spectrometry approaches is hampered by the low overall abundance of FAMA. Apart from INDUCER OF CBF EXPRESSION 1 (ICE1), which is a known heterodimerization partner of FAMA (Kanaoka et al., 2008), we failed to identify any transcriptional (co-)regulators by AP-MS with FAMA-CFP, despite the use of crosslinking agents and large amounts of plant material (15 g of 4-day-old seedlings per sample). Moreover, less than 20% of the AP-MS-derived ‘candidates’ were predicted to be nuclear, and one quarter were chloroplast proteins (Figure 5—figure supplement 1, Supplementary file 2 – Table 5). We therefore wanted to see if PL would improve the identification of biologically relevant FAMA interactors.
 
 For the ‘FAMA interactome’ experiment we compared proteins purified from plants expressing the FAMA-TbID fusion (FAMA-TbID) with proteins from WT and with proteins from plants expressing nuclear TbID (FAMAnucTbID) after 0, 0.5 and 3 h of biotin treatment. In total, we identified 2511 proteins with high confidence (quantified in all three replicates of at least one sample). Principal component analysis (PCA) showed a clear separation of the samples by genotype and time point (Figure 5—figure supplement 2). Despite this clear separation, the majority of proteins were common to all samples, including the untreated WT control (Supplementary file 2 – Table 1), and moreover, were unchanged between samples (Figure 5—figure supplements 2 and 3). This indicates that a large proportion of identified proteins bound to the beads non-specifically. This is not uncommon for affinity purification experiments, and underlines the importance of appropriate controls and data filtering pipelines.
 
+**Table 1.**
+ FAMA complex candidates from Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Enriched at time point</th>
+      <th rowspan="2">AGI</th>
+      <th rowspan="2">Gene name</th>
+      <th rowspan="2">Functional annotation</th>
+      <th rowspan="2">Subcellular localization</th>
+    </tr>
+    <tr>
+      <th>0 h</th>
+      <th>0.5 h</th>
+      <th>3 h</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT3G26744</td>
+      <td>ICE1, SCRM</td>
+      <td>bHLH transcription factor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT2G46510</td>
+      <td>AIB, JAM1</td>
+      <td>bHLH transcription factor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G16430</td>
+      <td>JAM3</td>
+      <td>bHLH transcription factor</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G08130</td>
+      <td>BIM1</td>
+      <td>bHLH transcription factor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G75080</td>
+      <td>BZR1</td>
+      <td>Transcription factor</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT5G11060</td>
+      <td>KNAT4</td>
+      <td>Homeobox transcription factor</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT2G41900</td>
+      <td>OXS2, TCF7</td>
+      <td>Zinc finger transcription factor</td>
+      <td>(N), C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G79000</td>
+      <td>HAC1, PCAT2</td>
+      <td>Transcriptional co-activator (histone acetyltransferase)</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G04920</td>
+      <td>MED16, SFR6</td>
+      <td>Transcriptional co-activator (mediator complex)</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G43850</td>
+      <td>SEU</td>
+      <td>Transcriptional co-repressor adapter</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G32551</td>
+      <td>LUG, RON2</td>
+      <td>Transcriptional co-repressor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT2G32700</td>
+      <td>LUH, MUM1</td>
+      <td>Transcriptional co-repressor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G15880</td>
+      <td>TPR4, WSIP2</td>
+      <td>Transcriptional co-repressor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G27030</td>
+      <td>TPR3</td>
+      <td>Transcriptional co-repressor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G02500</td>
+      <td>HSP70-1</td>
+      <td>HSP70 chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT5G02490</td>
+      <td>HSP70-2</td>
+      <td>HSP70 chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G09440</td>
+      <td>HSP70-3</td>
+      <td>HSP70 chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G12580</td>
+      <td>HSP70-4</td>
+      <td>HSP70 chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G22060</td>
+      <td>J2</td>
+      <td>HSP70 co-chaperone</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G44110</td>
+      <td>J3</td>
+      <td>HSP70 co-chaperone</td>
+      <td>N, C, MA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G62740</td>
+      <td>HOP2</td>
+      <td>HSP90/70 co-chaperone</td>
+      <td>(N), C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G25230</td>
+      <td>FKBP62, ROF1</td>
+      <td>HSP90/70 co-chaperone</td>
+      <td>(N), C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G22670</td>
+      <td>HIP1, TPR11</td>
+      <td>HSP90/70 co-chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT4G02450</td>
+      <td>P23-1</td>
+      <td>HSP90 co-chaperone</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT5G56460</td>
+      <td></td>
+      <td>Putative protein kinase</td>
+      <td>PM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G35410</td>
+      <td>SOS2, CIPK24</td>
+      <td>Protein kinase</td>
+      <td>N, C, PM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G54170</td>
+      <td>FIP37</td>
+      <td>m6A methyltransferase complex component</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G02140</td>
+      <td>HAP1, MAGO</td>
+      <td>Exon-junction complex component</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G41880</td>
+      <td>POLA3, POLA4</td>
+      <td>Putative DNA polymerase alpha subunit</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G22380</td>
+      <td>TIC</td>
+      <td>Nuclear clock regulation factor</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT2G41100</td>
+      <td>TCH3, CAL12</td>
+      <td>Calcium-binding protein</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G72390</td>
+      <td>PHL</td>
+      <td>Nuclear receptor/co-activator</td>
+      <td>N, C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT1G20110</td>
+      <td>FREE1, FYVE1</td>
+      <td>ESCRT-I complex component</td>
+      <td>C, ES, N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G18660</td>
+      <td>IAP1</td>
+      <td>C3HC4-type RING-finger domain protein</td>
+      <td>MA, N</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT1G12200</td>
+      <td>FMO</td>
+      <td>Putative flavin monooxygenase</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>AT3G53260</td>
+      <td>PAL2</td>
+      <td>Phenylalanine ammonia-lyase</td>
+      <td>N, C, EX</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT3G23840</td>
+      <td>CER26-LIKE</td>
+      <td>acyl‐CoA‐dependent acyltransferase</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G13710</td>
+      <td>CPH, SMT1</td>
+      <td>C‐24 sterol methyl transferase</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G63180</td>
+      <td>UGE3</td>
+      <td>UDP-Glucose 4-Epimerase</td>
+      <td>C*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G17990</td>
+      <td>PAT1, TRP1</td>
+      <td>Phosphoribosylanthranilate transferase</td>
+      <td>CP*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G15980</td>
+      <td>NDH48, NDF1</td>
+      <td>Chloroplast NAD(P)H dehydrogenase complex subunit</td>
+      <td>CP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G30720</td>
+      <td>PDE327</td>
+      <td>Putative oxidoreductase/electron carrier</td>
+      <td>CP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G50570</td>
+      <td></td>
+      <td>Undescribed protein</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT1G30070</td>
+      <td></td>
+      <td>Undescribed protein</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G15680</td>
+      <td></td>
+      <td>Undescribed protein</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT5G53330</td>
+      <td></td>
+      <td>Undescribed protein</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>AT4G25290</td>
+      <td></td>
+      <td>Undescribed protein</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_Column labels: Enriched at time point: time points at which a protein was significantly enriched are marked with Y. AGI: Arabidopsis gene identifier. Subcellular localization: as described for fluorescent protein fusions in literature unless marked with * (localization inferred from functional annotation): N, nucleus; (N), nucleus under heat or other stress; C, cytosol; EX, extracellular; PM, plasma membrane; ES, endosomes; MA, membrane (associated); CP, chloroplast; N/A, localization unknown (no experimental evidence found and localization cannot be clearly inferred from function).For further information on the candidate proteins and selected references see Supplementary file 2 – Table 4._
+
 To remove these ‘background proteins’ from our dataset and to narrow down the number of FAMA complex candidates, we applied three consecutive filtering steps (Figure 5, for details see Materials and methods section). First, we removed proteins that were not significantly enriched in the FAMA-TbID samples compared to WT. These comprise sticky proteins that bind the beads non-specifically and a handful of proteins that are biotinylated natively by Arabidopsis plant biotin ligases (Alban, 2011; Nikolau et al., 2003). This was done by pair-wise comparison of FAMA-TbID and WT samples at each time point, using only proteins that were found in all three replicates of the corresponding FAMA-TbID samples, and resulted in a list of 73, 85 and 239 significantly enriched proteins (including FAMA) at the 0, 0.5 and 3 h time points, respectively (Figure 5—figure supplement 2 – Table 2). Since TbID is highly active and endogenous levels of biotin are sufficient for low-level labeling, there is a risk that proteins are labeled stochastically and that, over time, the whole nuclear proteome would be labeled. Notably, more than half of the proteins enriched in the FAMA-TbID plants at any of the time points were also enriched in the FAMAnucTbID plants (Figure 5, Figure 5—figure supplement 4, Supplementary file 2 – Table 2). We therefore applied a second filtering step to remove proteins that were not significantly enriched in the FAMA-TbID versus the FAMAnucTbID samples. Pair-wise comparison of FAMA-TbID and FAMAnucTbID samples at the three time points, further reduced the dataset to 6, 15 and 57 proteins (including FAMA) (Figure 5—figure supplement 2, Supplementary file 2 – Table 2). Finally, we removed proteins that were not significantly enriched after biotin treatment compared to the untreated samples, since these proteins are likely genotype-specific contaminations. One protein, which was only enriched in the absence of exogenous biotin but not after biotin treatment, was removed as well.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-v3.jpg)
+
+**Figure 5.:** Workflow (left) and results (right) of the experimental setup and data filtering process. Biotinylated proteins from seedlings expressing FAMA-TbID or nuclear TbID in FAMA-stage cells (FAMAnucTbID) and from wild-type (WT) after 0, 0.5 and 3 h of biotin treatment were affinity purified (AP) with streptavidin beads and analyzed by mass spectrometry (MS). Proteins that were identified in all three biological replicates of at least one genotype and time point (2511 proteins) were used to filter for FAMA-complex candidates by three consecutive filtering steps: First, proteins enriched in FAMA-TbID compared to WT were determined for each time point using unpaired two-sided t-tests with a permutation-based FDR for multiple sample correction to remove background from non-specific binding to the beads. Only proteins that were identified in all three replicates of FAMA-TbID at this time point (high confidence identifications) were used for the test (cutoff: FDR = 0.05, S0 = 0.5; ❶). Significantly enriched proteins were then filtered for enrichment compared to FAMAnucTbID (same t-test parameters; ❷) to remove stochastically labeled proteins. Finally, the remaining proteins were filtered for enrichment in biotin-treated versus untreated FAMA-TbID samples (t-test: p<0.05; ❸) to remove proteins that were not labeled in response to biotin treatment. The Venn diagram on the bottom left shows the distribution of the 47 candidates between time points (see Table 1 for candidate list). Scatter plots on the right show log2-fold changes and -log10 p-values from t-test comparisons between FAMA-TbID and WT (top) and FAMA-TbID and FAMAnucTbID (center). Proteins significantly enriched in FAMA-TbID are shown in yellow, orange and red. All filtering steps and statistical analyses were done in Perseus. Subcellular localization and functional distribution of the candidate proteins is shown as pie charts on the bottom right. Data were manually curated from literature. Abbreviations: Nuc, nucleus; Cyt, cytosol; CP, chloroplast; PM, plasma membrane; +, and other. For hierarchical clustering and PCA of samples used in this experiment, see Figure 5—figure supplement 2. For a multi scatterplot of all samples, scatterplots and heatmaps of proteins enriched in FAMA-TbID and FAMAnucTbID compared to WT and for enrichment of proteins over time in all three genotypes, see Figure 5—figure supplements 3, 4 and 6, respectively. For tables summarizing all identified and enriched proteins, see Supplementary file 2 – Tables 1-4. For an overview over the workflow and proteins identified by affinity purification of FAMA-interacting proteins using a classical AP-MS strategy with GFP-Trap beads, see Figure 5—figure supplement 1 and Supplementary file 2 – Table 5. For small-scale validation of selected candidates by Y2H and pairwise PL in N. benthamiana, see Figure 5—figure supplement 5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Simplified workflow of the AP-MS experiments. Four-day-old seedlings of a FAMA-CFP line (FAMApro::FAMA-CFP in fama-1) and two lines expressing nuclear GFP under stomatal lineage-specific promoters (SPCHpro::GFPNLS and MUTEpro::GFPNLS) were treated with MG-132 to stabilize proteins and with formaldehyde (FA) to cross-link (X-link) proteins. X-linking was done with 0.25% FA in experiment 1 and with 0.125% in experiment 2. Proteins extracted from 15 g of plant material per sample were used for AP with GFP-Trap beads and purified proteins were identified by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS). Two biological replicates of each line were used in experiment 1, and four of the FAMA-CFP line and two of each control in experiment 2. (B) Significantly enriched proteins. Scatterplots show the log2-fold change and -log10 p-value from unpaired two-sided t-tests between FAMA-CFP samples and the controls with a permutation-based FDR for multiple sample correction (cutoff: AP-MS 1: FDR = 0.2, S0 = 0.5; AP-MS 2: FDR = 0.01, S0 = 0.5; N = number of proteins used in each test). Significantly enriched proteins are shown in orange and FAMA and its heterodimerization partner ICE1 are indicated. The Venn diagram shows the overlap between the candidate proteins identified in the two experiments (inlcuding FAMA). Only FAMA and ICE1 were enriched in the PL experiment shown in Figure 5. Filtering and statistical analysis was done in Perseus. (C) Subcellular and functional distribution of candidates. Candidates were classified into nuclear and non-nuclear proteins based on localization predictions (SUBA4 consensus prediction) and experimentally determined localization data and nuclear localized proteins were further divided into such that are involved in transcriptional regulation (two proteins, including FAMA) or have a different function (six proteins). For a list of identified proteins and the localization predictions see Supplementary file 2 – Table 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Hierarchical clustering. Proteins that were identified in all three replicates of at least one time point of one genotype were used for average linkage clustering with Euclidian distance. Rows and columns represent individual proteins and samples. In the sample dendrogram, genotypes, replicate numbers and time points are labeled with differently colored and numbered triangles, circles and square (same designations as in (B)). In the heatmap, proteins are colored according to their abundance (label free quantification value). White areas represent proteins not identified in a sample. (B) Principal component analysis (PCA). Missing value were imputed (from normal distribution) and the data matrix was used for PCA. Principal component 1 (PC1) was plotted against PC2 or 3. The PC1-PC3 plot (top) shows separation of the samples by genotype and time. Areas where samples cluster by genotypes and time point are shaded. A batch effect separating replicate 1 from replicates 2 and 3 is visible in PC2 (bottom) as well as in (A). Clustering and PCA analysis were done in Perseus using built-in functions.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Proteins that were identified in all three replicates of at least one time point of one genotype were used for a multi scatter plot. For each pair-wise comparison, LFQ values of individual proteins in sample A (labeled on top, x-axis) and sample B (labeled on the left, y-axis) are plotted against each other. Plots are scaled equally. Pearson correlation coefficients for each comparison are given in the upper left corner of the plots in blue.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** For each time point, proteins that were significantly enriched in FAMA-TbID or FAMAnucTbID compared to wild-type (WT) were determined by two-sided t-tests with a permutation-based FDR for multiple sample correction (cutoff: FDR = 0.05, S0 = 0.5). Only proteins identified in all three biological replicates of either FAMA-TbID (A) or FAMAnucTbID (B) at the indicated time point were used for these tests (N = number of proteins used in each test). Scatterplots on the left show log2-fold changes and -log10 p-values from t-tests (plots in (A) are also shown in Figure 5). Significantly enriched proteins are shown in orange/yellow (A) or dark/light blue (B) and increase with the duration of biotin treatment. Known FAMA interactors (ICE1 and RBR1) and nuclear proteins in guard cells (FAMA and SCAP1) are indicated. The heatmaps on the right of each scatter plot show average linkage clustering of significantly enriched proteins in this plot. Proteins are colored according to their abundance (Z-transformed label free quantification values). White areas represent proteins not identified in a sample.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** Y2H (A–B) and pairwise proximity labeling assays (C) to test direct interaction and relative proximity of four putative FAMA interaction candidates: co-repressor complex components SEU and LUH and BR signaling TFs BZR1 and BIM1. ICE1 and MUTE were used as positive and negative controls, respectively. (A–B) Y2H assays: Yeast strain AH109 was co-transformed with pairwise combinations of BD (Gal4 DNA binding domain) or BD-FAMA and AD (Gal4 activation domain) or AD-bait protein fusions. Successful transformation and bait-prey interactions were tested for by growth on synthetic defined media (-LT: selection for transformants, -LTHA: selection for interaction) (A). To overcome the autoactivation activity of BD-FAMA (see -LTHA plates), 3-AT was added to the plates at two different concentrations to increase selection stringency. For each combination, three dilutions were spotted on the plates and pictures were taken after 6 days. Three clones per combination were tested with the same result. One replicate is shown. We noticed that both ICE1 and SEU cause a delay in yeast growth. Therefore, the clones used for the growth-based interaction assay shown in (A), were also streaked on a selective plate containing X-α-Gal for blue/white selection (B). Blue color indicates positive interaction. The picture was taken after 2 days. (C) Pairwise proximity labeling assays: FAMA-TbID-Venus or TbID-YFPNLS were co-transformed with HA- or myc-tagged versions of ICE1, MUTE, SEU and LUH (all under the control of the UBQ10 promoter) into N. benthamiana leaves. After 2 days, expression of the TbID construct was verified by fluorescent microscopy (see images on the right) and samples were frozen for pulldowns of biotinylated proteins with streptavidin (SA) beads. To avoid over-labeling due to high expression of bait and prey proteins and to label only close interactors of FAMA, no exogenous biotin was added to the leaves. Immunoblots on the right show total amounts of FAMA-TbID-Venus or TbID-YFPNLS (IB: GFP) and the prey proteins (IB: myc, IB: HA) in the protein extracts before pulldowns (input) and as biotinylated proteins eluted from the SA beads (IP). Coomassie stained membranes (CBB) are shown as a loading control. Red arrowheads mark evidence of biotinylation of the bait protein by FAMA-TbID. (D) Summary of observed interactions: Positive interactions with FAMA in (A–C) are indicated by arrows. Line thickness indicates interaction strength. LUH shows weak interaction in the Y2H but was not biotinylated in the PL assay, which could indicate that it is not a direct interactor of FAMA.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig5-figsupp6-v3.jpg)
+
+**Figure 5—figure supplement 6.:** Proteins that were significantly enriched in wild-type (WT), FAMA-TbID or FAMAnucTbID samples after 0.5 and after 3 h of biotin treatment compared to untreated samples were determined by two-sided t-tests with a permutation-based FDR for multiple sample correction (cutoff: FDR = 0.05, S0 = 0.5). Only proteins identified in all three biological replicates of wild-type (WT) (A), FAMA-TbID (B) or FAMAnucTbID (C) at any of the two time points were used for the tests (N = number of proteins used in each test). Scatterplots show log2-fold changes and -log10 p-values from t-tests. Significantly up-and down-regulated proteins are shown in red and blue and their number and percentage of all analyzed proteins are given. Only few proteins are enriched in any of the genotypes after 0.5 h of biotin treatment.
 
 This left us with 47 ‘high confidence’ candidates (Figure 5, Table 1), 35 of which were previously demonstrated to be in the nucleus using fluorescent protein fusions or were found in MS-based nuclear proteome studies (Figure 5, Table 1, Supplementary file 2 – Tables 2 and 4). Notably, more than half of the candidates have a role in regulation of transcription or are chaperones which could assist in FAMA’s role as a TF or in protein folding and stabilization, respectively (Figure 5, Table 1, Supplementary file 2 – Table 4). Moreover, several of these proteins have previously been shown to interact with each other, which suggests that they could be part of the same FAMA complexes. This is a huge improvement compared to our AP-MS experiment, which could only confirm FAMA’s interaction with its obligate heterodimerization partner ICE1. The transcriptional regulators we found with PL can be roughly divided into two categories: TFs and transcriptional co-regulators. Among the TFs we again found ICE1 (as well as peptides shared between ICE1 and its orthologue SCRM2). We also found three other bHLH TFs (AIB/JAM1, JAM3, and BIM1) and the non-canonical bHLH-type TF BZR1. AIB and JAM3 play partially redundant roles in negative regulation of jasmonic acid (JA) signaling (Sasaki-Sekimoto et al., 2013; Fonseca et al., 2014), while BIM1 and BZR1 mediate brassinosteroid (BR) signaling (Yin et al., 2002; Wang et al., 2002). Both JA and BR signaling play roles in stomatal function or development (Acharya and Assmann, 2009; Gudesblat et al., 2012; Kim et al., 2012).
 
@@ -96,11 +660,31 @@ For a small-scale validation of candidates biotinylated by FAMA-TbID, we tested 
 
 Overall, our ‘FAMA interactome’ experiment demonstrates the usefulness of PL to identify potential interaction partners of rare proteins. We identified several good FAMA-complex candidates which could support FAMA in its role as a key TF and provide a possible mechanism for FAMA to induce fate-determining and lasting transcriptional changes in developing GCs. Some of the FAMA-complex candidates identified through PL are also slightly enriched in FAMA AP-MS samples compared to their controls. However, the enrichment is not enough to call any of them, except ICE1, significant in the AP-MS experiment. PL therefore not only gave us higher specificity for nuclear proteins than the AP-MS did, but it is potentially more sensitive as well. It is worth noting, that most FAMA interaction candidates were identified at the 3 h time point and that longer biotin treatment greatly improved identification of biotinylated proteins (Figure 5, Figure 5—figure supplement 4, Supplementary file 2 – Table 3).
 
-## Proximity labeling can be used to analyze the nuclear proteome in rare FAMA-expressing cells during GC development
+### Proximity labeling can be used to analyze the nuclear proteome in rare FAMA-expressing cells during GC development
 
 The second question our PL experiment should answer was whether TbID could be used to take a snapshot of the nuclear proteome of FAMA-expressing cells. Traditional tools to study organellar proteomes are not well-suited for such an endeavor, since they require isolation of the cell type and organelle of interest and therefore lack the required sensitivity. (Branon et al., 2018), showed that TbID can be used to efficiently and specifically purify proteins from different subcellular compartments without prior cell fractionation. Their work was done using a homogeneous population of cultured mammalian cells, however, so it remained to be shown whether it would be possible to isolate an organellar proteome from an individual cell type, especially a rare or transient one, in a complex multicellular organism.
 
 To identify nuclear proteins in FAMA-expressing young GCs and compare them to the global nuclear proteome at this growth stage, we purified proteins from seedlings expressing nuclear TbID under the FAMA (FAMAnucTbID) and UBQ10 (UBQnucTbID) promoter and from WT after three hours of biotin treatment. PCA, hierarchical clustering and multi scatterplots showed a clear separation of the three genotypes (Figure 6—figure supplements 1 and 2). In total, we identified 3176 proteins with high confidence (Supplementary file 3 – Table 1). 2215 proteins were significantly enriched in UBQnucTbID compared to WT (Figure 6, Figure 6—figure supplement 3, Supplementary file 3 – Table 2). These proteins comprise our ‘global’ nuclear protein dataset. Despite the relative rareness of FAMA-expressing cells, the FAMAnucTbID dataset yielded 394 proteins that were enriched compared to WT (Figure 6, Figure 6—figure supplement 3, Supplementary file 3 – Table 3). Notably, most of them overlap with our global nuclear protein dataset (Figure 6), as would be expected since the UBQnucTbID dataset also contains FAMA-stage cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig6-v3.jpg)
+
+**Figure 6.:** Workflow (left) and results (right) of the experimental setup and data filtering process. Biotinylated proteins from seedlings expressing nuclear TbID under the FAMA (FAMAnucTbID) and UBQ10 (UBQnucTbID) promoters and from wild-type (WT) after 3 h of biotin treatment were affinity purified (AP) with streptavidin beads and analyzed by mass spectrometry (MS). Proteins that were identified in all three replicates of at least one genotype (3,176) were used to filter for the FAMA cell- and global nuclear proteomes: proteins enriched in FAMAnucTbID or UBQnucTbID compared to WT were determined by unpaired two-sided t-tests with a permutation-based FDR for multiple sample correction. Only proteins that were identified in all three replicates of the respective nucTbID line (high confidence identifications) were used for the test (cutoff: FDR = 0.05, S0 = 0.5; ❶). Scatter plots of the log2-fold changes and -log10 p-values from the t-test comparisons are on the top right. Significantly enriched proteins are shown in blue and green. Overlap of the enriched proteins and subcellular distribution are shown as Venn diagrams and pie charts on the center right. Proteins previously found in the nucleus in MS- or fluorescent protein (FP) fusion-based experiments, and proteins predicted to be in the nucleus (SUBA4 consensus prediction) are depicted in different shades of blue (N, nucleus; C, cytosol; CP, plastid; MT, mitochondrion; ER, endoplasmic reticulum; G, golgi; P, peroxisome; V, vacuole; PM, plasma membrane; EX, extracellular; #N/A, not available). Proteins that are highly enriched in or even specific to FAMA nuclei were identified through further filtering by comparing the abundance of the 394 FAMA nuclear proteins between FAMAnucTbID and UBQnucTbID using a two-sided t-test with a permutation-based FDR for multiple sample correction (FDR = 0.01, S0 = 0.1; ❷). Proteins that were not enriched in the UBQnucTbID samples (higher in FAMAnucTbID or equally abundant) were considered ‘FAMA nuclei enriched/specific’. A scatterplot of the t-test results with ‘FAMA nuclei enriched/specific’ proteins in purple is shown at the center bottom. For hierarchical clustering and PCA of samples used in this experiment, see Figure 6—figure supplement 1. For multi scatterplots, scatterplots and heatmaps of proteins enriched in FAMAnucTbID and UBQnucTbID, see Figure 6—figure supplements 2 and 3. For a visualization of enriched GO terms, see Figure 6—figure supplement 4. For tables summarizing all identified and enriched proteins, published nuclear proteins and guard cell proteins, the localization data used for the pie charts in Figure 6, enriched GO terms of the nuclear proteomes and examples of identified proteins from different nuclear compartments, see Supplementary file 3 – Tables 1-8.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Hierarchical clustering. Proteins that were identified in all three replicates of at least one genotype were used for average linkage clustering with Euclidian distance. Rows and columns represent individual proteins and samples. In the sample dendrogram, genotypes and replicate number are labeled with differently colored and numbered circles. In the heatmap, proteins are colored according to their abundance (label free quantification value). White areas represent proteins not identified in a sample. (B) Principal component analysis (PCA). Missing value were imputed (from normal distribution) and the data matrix was used for PCA. Principal component 1 (PC1) was plotted against PC2 or 3. The PC1-PC2 plot (top) shows clear separation of the samples by genotype. Areas where samples cluster are shaded. A batch effect separating replicate 1 from replicates 2 and 3 is visible in PC3 (bottom). Clustering and PCA analysis were done in Perseus using built-in functions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Proteins that were identified in all three replicates of at least one genotype were used for a multi scatter plot. For each pair-wise comparison, LFQ values of individual proteins in sample A (labeled on top, x-axis) and sample B (labeled on the left, y-axis) are plotted against each other. Plots are scaled equally. Pearson correlation coefficients for each comparison are given in the upper left corner of the plots in blue.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** Proteins that were significantly enriched in FAMAnucTbID or UBQnucTbID compared to wild-type (WT) were determined by two-sided t-tests with a permutation-based FDR for multiple sample correction (cutoff: FDR = 0.05, S0 = 0.5). Only proteins identified in all three biological replicates of FAMAnucTbID (A) or UBQnucTbID (B) were used for these tests (N = number of proteins used in each test). Proteins that were enriched in FAMA nuclei compared to all nuclei (C) were determined by a two-sided t-tests with an FDR of 0.01 (S0 = 0.1) using only proteins significantly enriched in FAMAnucTbID compared to WT. Scatterplots on the left are from Figure 6 and show log2-fold changes and -log10 p-values from t-tests. Significantly enriched proteins are shown in blue (A) and green (B) and FAMA nuclei-enriched proteins in purple (C). Known FAMA-nuclei enriched proteins (FAMA, SCAP1, HDG2) are indicated. The heatmaps on the right of each scatter plot show average linkage clustering of significantly enriched proteins in this plot (A–B) or FAMA nuclei-enriched proteins (C). Proteins are colored according to their abundance (Z-transformed label free quantification values). White areas represent proteins not identified in a sample.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/47864/elife-47864-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** GO terms enriched for global and FAMA nuclear proteins (Figure 6) were determined with AgriGO v2 and visualized with REViGO. Shown is the TreeMap plot of enriched ‘biological processes’ in global (UBQ10 promoter, top) and FAMA (bottom) nuclei. Related GO-terms are clustered into same colored boxes and given summary titles.
 
 To estimate how ‘pure’ our nuclear proteomes are, we curated published nuclear and subnuclear compartment proteomes (Bae et al., 2003; Bigeard et al., 2014; Calikowski et al., 2003; Chaki et al., 2015; Palm et al., 2016; Pendle et al., 2005; Sakamoto and Takagi, 2013; Goto et al., 2019) and searched the Arabidopsis protein subcellular localization database SUBA (version 4, Hooper et al., 2017, http://suba.live/) for proteins that were observed in the nucleus as fluorescent-protein fusions. This resulted in a combined list of 4,681 ‘experimentally determined nuclear proteins’; 4021 from MS and 975 from localization studies (Supplementary file 3 – Table 4). More than three quarters of the proteins enriched in our UBQnucTbID and FAMAnucTbID datasets are either experimentally verified nuclear proteins or are predicted to be localized in the nucleus (Supplementary file 3 – Tables 2, 3 and 5). This suggests that most identified proteins are indeed nuclear proteins. Of the remaining proteins, most are predicted to be in the cytosol and could have been labeled by TbID right after translation and before nuclear import of the biotin ligase or by a small mis-localized fraction of TbID. Chloroplast proteins, which are a major source of contamination in plant MS experiments, make up only about 4% of our identified proteins based on experimental and prediction data (Supplementary file 3 – Table 5). For a comparison, about 12% and 6% of the proteins identified in the two most recent Arabidopsis nuclear proteome studies (Palm et al., 2016; Goto et al., 2019), are predicted to be in the chloroplast (SUBAcon prediction, SUBA4). Gene ontology (GO) analysis is also consistent with nuclear enrichment in both nuclear TbID datasets (Figure 6—figure supplement 4, Supplementary file 3 – Tables 2, 3 and 7). Importantly, our nuclear TbID successfully labeled all major sub-nuclear compartments and domains, including the nuclear pore complex, the nuclear envelope, the nuclear lamina, the nucleolus and other small speckles, as well as DNA- and chromatin-associated proteins (subdomain markers from Petrovská et al., 2015; Tamura and Hara-Nishimura, 2013, see Supplementary file 3 – Table 8 for examples).
 
@@ -110,7 +694,7 @@ Overall, this experiment demonstrates the usefulness of TbID as a tool for study
 
 ## Discussion
 
-## Suitability of TurboID and miniTurbo for application in plants and performance of TurboID in FAMA-complex identification and nuclear proteome analysis
+### Suitability of TurboID and miniTurbo for application in plants and performance of TurboID in FAMA-complex identification and nuclear proteome analysis
 
 Our experiments presented in this study demonstrate that the new biotin ligase versions TbID and mTb drastically improve the sensitivity of PL in plants, compared to previously used BirA*, and tolerate a range of experimental conditions. We observed rapid labeling of proteins by TbID and mTb in different species, tissues and at different growth stages from seedlings to mature plants, using a simple biotin treatment protocol at room temperature. This greatly broadens the range of possible PL applications for plants and will allow to address hitherto inaccessible or hard to address questions in the future. To test the usefulness of TbID for identification of protein interactors and organellar proteomes, we aimed to identify FAMA protein complexes and the nuclear proteome in FAMA-expressing cells. We deliberately picked a rare protein and cell type to observe its performance under conditions that make the use of traditional methods challenging or unfeasible.
 
@@ -120,7 +704,7 @@ Interestingly, we did not confirm all of FAMA’s previously postulated interact
 
 PL of FAMA-expressing nuclei and comparison with a general nuclear proteome in our ‘nuclear proteome’ experiment showed that TbID is suitable to capture subcellular proteomes at a cell-type-specific level, even when the cell type is rare. We identified 2232 proteins in both nuclear datasets combined, which is 25% more than the most recent nuclear proteome obtained from cultured Arabidopsis cells (1528 proteins, Goto et al., 2019). Judging from experimentally determined and predicted localization of the identified proteins and functional annotation with GO analysis, we obtained high specificity for nuclear proteins and identified proteins from all major nuclear subdomains. The biggest ‘contamination’ stems from the cytosol, which could be caused by a fraction of TbID in the cytosol (e.g. right after translation) or from activated biotin diffusing out of the nucleus. Chloroplast-predicted proteins made up only a small fraction. Among FAMA-nuclei enriched proteins, we identified several known nuclear markers of young GCs, confirming our ability to detect cell-type-specific proteins, as well as proteins that have not yet been linked to GC development or function but could be interesting to investigate further. One of them is SHL (SHORT LIFE), which is a histone reader that can bind both H3K27me3 and H3K4me3 histone marks and has been implicated in seed dormancy and flower repression (Müssig et al., 2000; Qian et al., 2018). Interaction of FAMA with RBR1 and with newly identified co-repressors and co-activators from this study, strongly suggests that chromatin marks are important to lock GC in their terminally differentiated state (Matos et al., 2014; Lee et al., 2014) and SHL could be involved in this process.
 
-## Considerations for a successful PL experiment
+### Considerations for a successful PL experiment
 
 When designing a PL experiment, several things should be considered in order to achieve the best possible result. First, a choice has to be made which biotin ligase to use. Whether TbID or mTb is more suitable will depend on the research question. TbID is more active, which is an advantage for low abundant proteins, for cases where over-labeling is not a concern or when labeling times should be kept as short as possible. mTb is less active in the presence of endogenous levels of biotin and will give less background labeling, which could be beneficial in tissues with higher than average endogenous biotin levels (Shellhammer and Meinke, 1990) or when a more restricted and controlled labeling time is desired. Additional factors that should be considered when choosing a biotin ligase are whether one version works better in a specific subcellular compartment (as was the case in human HEK cells; Branon et al., 2018) and whether the larger TbID interferes with the activity or correct subcellular targeting of the protein of interest (POI). We added a fluorophore to all our biotin ligase constructs. This is very useful to confirm correct expression and subcellular localization of the TbID or mTb fusion protein, but may in some cases affect the activity of the ligase or the tagged protein. Interference with activity and targeting can depend on the position of the biotin ligase relative to the POI (N- or C-terminal tag). Another decision at the construct-design phase is the choice of linker length. For our experiments we added a short flexible linker to TbID. For identification of large protein complexes, increasing the linker length may improve labeling of more distal proteins.
 
@@ -134,7 +718,7 @@ For AP, different kinds of avidin, streptavidin or neutravidin beads are availab
 
 Finally, some consideration should also be given to the MS strategy. For example, digesting the proteins on the streptavidin beads instead of eluting them can increase the peptide yield. For data analysis, label-free quantification produces a more quantitative comparison of samples than comparison of peptide counts. Care should be taken that an appropriate data normalization method is chosen, especially when samples are very different, as can be the case when different cellular compartments are compared. Isotopic labeling, which allows samples to be analyzed together, can further improve quantitative comparison.
 
-## Potential applications and challenges for PL in plants
+### Potential applications and challenges for PL in plants
 
 We can see many potential applications for PL in plants, extending beyond the ones presented in this work. One that has the potential to be widely used is in vivo confirmation of suspected protein interactions or complex formation. The strategy is comparable to currently used co-immunoprecipitation (Co-IP) experiments but has the benefit that weak and transient, as well as other hard-to-purify interactions, are easier to detect. For this approach, proteins closely related to the bait can be used as controls for interaction specificity.
 
@@ -152,142 +736,1024 @@ Going forward, it will be interesting to see how TbID and mTb perform for differ
 
 ## Materials and methods
 
-## Generation of the ‘PL toolbox’ vectors
+**Key resources table**
 
-## Cloning of gateway-compatible entry vectors containing different BirA variants
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (E. coli - modified)</td>
+      <td>BirA*</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td></td>
+      <td>R118G mutant of BirA; promiscuous bacterial biotin ligase</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli - modified)</td>
+      <td>TurboID; TbID</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td></td>
+      <td>more active variant of BirA*</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli - modified)</td>
+      <td>miniTurbo; mTb</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td></td>
+      <td>smaller and more active variant of BirA*</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>FAMA</td>
+      <td>NA</td>
+      <td>TAIR:AT3G24140</td>
+      <td>transcription factor involved in stomatal development</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>SPCH</td>
+      <td>NA</td>
+      <td>TAIR:AT5G53210</td>
+      <td>transcription factor involved in stomatal development</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>MUTE</td>
+      <td>NA</td>
+      <td>TAIR:AT3G06120</td>
+      <td>transcription factor involved in stomatal development</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>SEU</td>
+      <td>NA</td>
+      <td>TAIR:AT1G43850</td>
+      <td>component of transcriptional co-repressor complex</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>LUH</td>
+      <td>NA</td>
+      <td>TAIR:AT2G32700</td>
+      <td>component of transcriptional co-repressor complex</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>BZR1</td>
+      <td>NA</td>
+      <td>TAIR:AT1G75080</td>
+      <td>transcription factor involved in brassinosteroid signaling</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>BIM1</td>
+      <td>NA</td>
+      <td>TAIR:AT5G08130</td>
+      <td>transcription factor involved in brassinosteroid signaling</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>ICE1</td>
+      <td>NA</td>
+      <td>TAIR:AT3G26744</td>
+      <td>transcription factor involved in stomatal development and cold adaptation</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>TOP10</td>
+      <td>other</td>
+      <td></td>
+      <td>chemically competent E. coli, can be obtained from Invitrogen</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>AH109</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Agrobacterium thumefaciens)</td>
+      <td>GV3101</td>
+      <td>other</td>
+      <td></td>
+      <td>electrocompetent A. thumefaciens</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Nicotiana benthamiana)</td>
+      <td>NB-1</td>
+      <td>NA</td>
+      <td></td>
+      <td>standard lab strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Arabidopsis thaliana)</td>
+      <td>Columbia-0; Col-0</td>
+      <td>ABRC</td>
+      <td>ABRC:CS28166</td>
+      <td>can be obtained from ABRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>fama-1</td>
+      <td>Ohashi-Ito and Bergmann, 2006; DOI: 10.1105/tpc.106.046136</td>
+      <td>ABRC:SALK_100073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::BirA*-YFPNLS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::TbID-YFPNLS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::mTb-YFPNLS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::BirA*-NESYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::TbID-NESYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10pro::mTb-NESYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>FAMApro::FAMA-TbID-mVenus</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in fama-1 - /- background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>FAMApro::TbID-YFPNLS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in Col-0 wild-type background; see Materials and methods for line generation</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>FAMApro::FAMA-CFP</td>
+      <td>Weimer et al., 2018; DOI: 10.1242/dev.160671</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>SPCHpro::GFPNLS</td>
+      <td>Adrian et al. (2015); DOI: 10.1016/j.devcel.2015.01.025</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>MUTEpro::GFPNLS</td>
+      <td>Adrian et al. (2015); DOI: 10.1016/j.devcel.2015.01.025</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin-HRP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:S911</td>
+      <td>0.2 µg/ml; 5% BSA in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-GFP antibody</td>
+      <td>Chromotek</td>
+      <td>Chromotek:3H9</td>
+      <td>1:2000; 1–5% skim milk in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA High Affinity from rat IgG1</td>
+      <td>Roche</td>
+      <td>Roche:11867423001</td>
+      <td>1:1000; 3–5% skim milk in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myc-Tag (71D10) Rabbit mAb</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling:2278S</td>
+      <td>1:1000; 5% BSA in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure Donkey Anti-Rat IgG-HRP</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>Jackson Immuno Research Laboratories:712-035-153</td>
+      <td>1:10000; 1–5% skim milk in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Rat IgG-HRP</td>
+      <td>Sigma</td>
+      <td>Sigma:A5795</td>
+      <td>1:10000; 1–5% skim milk in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H and L), HRP conjugated</td>
+      <td>Agrisera</td>
+      <td>Agrisera:AS09 602</td>
+      <td>1:20000; 3–5% skim milk in TBS-T</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601 (plasmid)</td>
+      <td>Nakamura et al., 2010; DOI: 10.1271/bbb.100184</td>
+      <td>RIKEN BRC:pdi00133</td>
+      <td>obtained from the Nakagawa lab (http://shimane-u.org/nakagawa/gbv.htm)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB613 (plasmid)</td>
+      <td>Nakamura et al., 2010; DOI: 10.1271/bbb.100184</td>
+      <td>RIKEN BRC:pdi00099</td>
+      <td>obtained from the Nakagawa lab (http://shimane-u.org/nakagawa/gbv.htm)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB616 (plasmid)</td>
+      <td>Nakamura et al., 2010; DOI: 10.1271/bbb.100184</td>
+      <td>RIKEN BRC:pdi00102</td>
+      <td>obtained from the Nakagawa lab (http://shimane-u.org/nakagawa/gbv.htm)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pB7m34GW,0 (plasmid</td>
+      <td>Karimi et al., 2005; DOI: 10.1016/j.tplants.2005.01.008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pK7m34GW,0 (plasmid)</td>
+      <td>Karimi et al., 2005; DOI: 10.1016/j.tplants.2005.01.008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR5'/TOPO (plasmid)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Gateway entry vector for promoters</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR/D-TOPO (plasmid</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Gaterway entry vector for tags/genes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR-P2R-P3 (plasmid)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Gateway entry vector for tags/genes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW (plasmid)</td>
+      <td>Lu et al., 2010; DOI: 10.1111/j.1365-313X.2009.04048.x</td>
+      <td>Addgene:61702</td>
+      <td>Gateway compatible Y2H prey vector (Gal4 activation domain)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXDGATcy86 (plasmid)</td>
+      <td>Ding et al., 2007;DOI: 10.1385/1-59259-966-4:85</td>
+      <td></td>
+      <td>Gateway compatible Y2H bait vector (Gal4 DNA-binding domain)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V5-hBirA(R118G)-NES_pCDNA3 (plasmid)</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td></td>
+      <td>obtained from Ting lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V5-hBirA-Turbo-NES_pCDNA3 (plasmid)</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td>Addgene:107169</td>
+      <td>obtained from Ting lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V5-hBirA-miniTurbo-NES_pCDNA3 (plasmid)</td>
+      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>
+      <td>Addgene:107170</td>
+      <td>obtained from Ting lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_BirA(R118G)-NES-YFP (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127363</td>
+      <td>UBQ10 promoter (2 kb), BirA* (cDNA) with nuclear export signal, YFP in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_BirA(R118G)-YFP-NLS (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127365</td>
+      <td>UBQ10 promoter (2 kb), BirA* (cDNA), YFP with nuclear import signal in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_Turbo-NES-YFP (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127366</td>
+      <td>UBQ10 promoter (2 kb), TurboID (cDNA) with nuclear export signal, YFP in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_Turbo-YFP-NLS (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127368</td>
+      <td>UBQ10 promoter (2 kbA), TurboID (cDNA), YFP with nuclear import signal in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_miniTurbo-NES-YFP (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127369</td>
+      <td>UBQ10 promoter (2 kb), miniTurbo (cDNA) with nuclear export signal, YFP in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_UBQ10p_miniTurbo-YFP-NLS (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene:127370</td>
+      <td>UBQ10 promoter (2 kb), miniTurbo (cDNA), YFP with nuclear import signal in Gateway vector R4pGWB601; see Materials and methods for cloning and Addgene for vector map</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pB7m34GW,0_FAMAp_gFAMA-Turbo-Venus (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FAMA promoter (2.4 kb), FAMA (genomic DNA), TurboID, Venus in Gateway vector pB7m34GW,0; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB601_FAMAp_Turbo-YFP-NLS (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FAMA promoter (2.4 kb), TurboID, YFP with nuclear import signal in Gateway vector R4pGWB601; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pK7m34GW,0_UBQ10p_cFAMA-TbID-Venus (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UBQ10 promoter (2 kb), FAMA (cDNA), TurboID, Venus in Gateway vector pB7m34GW,0; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB613_UBQ10p_ICE1-3xHA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UBQ10 promoter (2 kb), ICE1 (cDNA) in Gateway vector R4pGWB613; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB613_UBQ10p_MUTE-3xHA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UBQ10 promoter (2 kb), MUTE (cDNA) in Gateway vector R4pGWB616; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB313_UBQ10p_SEU-4xmyc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UBQ10 promoter (2 kb), SEU (cDNA) in Gateway vector R4pGWB616; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R4pGWB613_UBQ10p_LUH-3xHA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UBQ10 promoter (2 kb), LUH (cDNA) in Gateway vector R4pGWB613; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXDGATcy86-FAMA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FAMA (cDNA) in Gateway compatible Y2H bait vector pXDGATcy86; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-ICE1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ICE1 (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-MUTE (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MUTE (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-SEU (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SEU (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-LUH (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>LUH (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-BZR1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BZR1 (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-GW-BIM1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BIM1 (cDNA) in Gateway compatible Y2H prey vector pGADT7-GW; see Materials and methods for cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Additional plasmids</td>
+      <td></td>
+      <td></td>
+      <td>for list of Gateway compatible vectors to generate N- and C-terminal fusions with TbID or mTb ('PL toolbox') see table in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td></td>
+      <td></td>
+      <td>see primer table in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Biotin powder</td>
+      <td>Sigma</td>
+      <td>Sigma:B4639</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BioRad protein assay</td>
+      <td>BioRad</td>
+      <td>BioRad:5000006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Novex Colloidal blue staining kit</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: LC6025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher:65002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin T1</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher:65601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GFP-Trap_MA beads</td>
+      <td>ChromotTek</td>
+      <td>ChromoTek:gtma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>Tyanova et al., 2016a; DOI: 10.1038/nprot.2016.136</td>
+      <td></td>
+      <td>version 1.6.2.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Tyanova et al., 2016b; DOI: 10.1038/nmeth.3901</td>
+      <td></td>
+      <td>version 1.6.2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Normalyzer</td>
+      <td>Chawade et al., 2014; DOI: 10.1021/pr401264n</td>
+      <td></td>
+      <td>version 1.1.1.1 (web interface: http://normalyzer.immunoprot.lth.se/)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R studio</td>
+      <td>RStudio Team, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SUBA4</td>
+      <td>Hooper et al., 2017; DOI: 10.1093/nar/gkw1041</td>
+      <td></td>
+      <td>web interface: http://suba.live/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AgriGO v2</td>
+      <td>Tian et al., 2017; DOI: 10.1093/nar/gkx382</td>
+      <td></td>
+      <td>web interface: http://systemsbiology.cau.edu.cn/agriGOv2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REViGO</td>
+      <td>Supek et al., 2011; DOI: 10.1371/journal.pone.0021800</td>
+      <td></td>
+      <td>web interface:http://revigo.irb.hr/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PD-10 Sesalting Column</td>
+      <td>GE-Healthcare</td>
+      <td>Fisher Scientific:45-000-148</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of the ‘PL toolbox’ vectors
+
+#### Cloning of gateway-compatible entry vectors containing different BirA variants
 
 BirA* (R118G), TurboID (TbID) or miniTurbo (mTb) were amplified from V5-hBirA(R118G)-NES_pCDNA3, V5-hBirA-Turbo-NES_pCDNA3 or V5-hBirA-miniTurbo-NES_pCDNA3 (Branon et al., 2018) using primers BirA-fw and BirA-rv or BirA-fw and BirA-NES-rv, thereby retaining the N-terminal V5 tag, either removing or retaining the C-terminal NES and adding a GGGGSGGG linker and an AscI restriction site to both ends. The TbID and mTb PCR products were then cloned into a pENTR vector containing YFP between the attL1 and L2 sites to generate YFP-TbID and YFP-mTb fusions or into a pDONR-P2R-P3 vector containing mVenus-STOP between the attR2 and L3 sites to generate TbID-mVenus-STOP and mTb-mVenus-STOP fusions by restriction cloning with AscI. The AscI site in the pDONR-P2R-P3 vector was first introduced by mutagenesis PCR using primers pDONR-mut-AscI-fw and pDONR-mut-AscI-rv. These vectors can be used for three-way gateway recombination with a promoter and gene of choice as described below. For two-way recombination with a promoter of choice, TbID and mTb (with and without NES) were further amplified from the pDONR-P2R-P3 plasmids described above using primers BirA-YFPnls-fw and BirA-YFPnls-rv to remove the N-terminal linker and to add a NotI and NcoI site at the N-and C-terminus, respectively. BirA* was directly amplified from the PCR products with BirA-fw and BirA-rv or BirA-NES-rv in the same way. The resulting PCR products were either cloned into a pENTR vector containing YFP followed by a stop codon (versions with NES) or a YFP followed by an NLS and a stop codon (versions without NES) between the attL1 and L2 sites using NotI and NcoI to generate BirA-NESYFP and BirA-YFPNLS fusions (BirA = BirA*, TbID or mTb). For a schematic overview over the cloning process and the composition of the vectors, see Figure 1—figure supplement 5. For a list of vectors for three- and two-way recombination see the ‘PL toolbox’ vectors table at the end of the Materials and methods section.
 
-## Cloning of binary vectors for proximity labeling
+#### Cloning of binary vectors for proximity labeling
 
 The UBQ10pro::BirA-YFPNLS (BirA = BirA*, TbID or mTb) and FAMApro::TbID-YFPNLS constructs were generated by LR recombination of the R4pGWB601 backbone (Nakamura et al., 2010) with either a pENTR5’/TOPO containing the 2 kb UBQ10 promoter or a pJET containing 2.4 kb of the FAMA (AT3G24140) upstream sequence (positions −2420 to −1, flanked by attL4 and R1, cloned from pENTR/D-TOPO (Ohashi-Ito and Bergmann, 2006) by changing attL1 and L2 to L4 and R2) and the pENTR-BirA-YFPNLS plasmids described above. The UBQ10pro::NESYFP-BirA constructs were generated by LR recombination of the R4pGWB601 backbone with a pENTR5’/TOPO containing the 2 kb UBQ10 promoter and the pENTR-BirA-NESYFP plasmids described above. For a schematic overview over the cloning process and composition of the vectors, see Figure 1—figure supplement 5. For a list of vectors, see ‘PL toolbox’ vectors table at the end of the Materials and methods section. The FAMApro::FAMA-TbID-Venus construct was generated by LR recombination of the pB7m34GW,0 backbone (Karimi et al., 2005) with the pJET containing 2.4 kb of the FAMA upstream sequence, with pENTR containing the genomic sequence of FAMA without stop codon flanked by attL1 and L2 (amplified from genomic DNA with primers gFAMA-fw and gFAMA-rv and recombined with pENTR/D-TOPO) and with pDONR-P2R-P3-TbID-mVenus (described above).
 
-## Cloning of FAMA interaction partner candidates for Y2H and PL assays in N. benthamiana
+#### Cloning of FAMA interaction partner candidates for Y2H and PL assays in N. benthamiana
 
 SEU (AT1G43850), LUH (AT2G32700), BZR1 (AT1G75080), BIM1 (AT5G08130), ICE1 (AT3G26744) and MUTE (AT3G06120) were amplified from Col-0 cDNA with the primers listed in the primer table and cloned into pENTR/D-TOPO. FAMA in pENTR was cloned as described in Ohashi-Ito and Bergmann (2006). For Y2H assays, FAMA was recombined with Gateway compatible pXDGATcy86 (Ding et al., 2007), containing the Gal4 DNA-binding domain, and SEU, LUH, BZR1, BIM1, ICE1 and MUTE were recombined into Gateway compatible pGADT7-GW (Lu et al., 2010), containing the Gal4 activation domain. For PL assays in tobacco, pENTR5’/TOPO containing the 2 kb UBQ10 promoter, pENTR containing FAMA cDNA and pDONR-P2R-P3-TbID-mVenus were recombined with pK7m34GW,0 (Karimi et al., 2005) to generare UBQ10pro::cFAMA-TbID-mVenus. Entry vectors carrying ICE1, MUTE and LUH and the entry vector carrying SEU were recombined with pENTR5’/TOPO containing the 2 kb UBQ10 promoter and R4pGWB613 (3x HA tag) and R4pGWB616 (4x myc tag), respectively (Nakamura et al., 2010). UBQ10pro::TbID-YFPNLS in R4pGWB601 is described above.
 
-## Transformation and biotin activity assays in N. benthamiana
+### Transformation and biotin activity assays in N. benthamiana
 
 N. benthamiana ecotype NB-1 was transformed with UBQ10pro::BirA-YFPNLS and UBQ10pro::BirA-NESYFP (BirA = BirA*, TbID or mTb) by infiltrating young leaves with a suspensions of Agrobacteria (strain GV3101) carrying one of the binary vectors. Agrobacteria were grown from an overnight culture for 2 h, supplemented with 150 µM Acetosyringone, grown for another 4 h, pelleted and resuspended in 5% sucrose to an OD600 of 2. For more stable expression, Agrobacteria carrying a 35S::p19 plasmid (tomato bushy stunt virus (TBSV) protein p19) were co-infiltrated at a ratio of 1:1 for the temperature-dependency experiment. Two days after infiltration, expression was confirmed by epifluorescence microscopy and 5 mm wide leaf discs were harvested. Two to three discs were combined per sample. They were submerged in a 50 or 250 μM biotin solution, quickly vacuum infiltrated until the air spaces were filled with liquid and incubated at the indicated temperature for 1 h. Control samples were not treated or were infiltrated with H2O. After biotin treatment, leaf discs were dried and flash-frozen for later immunoblotting. All experiments were done in duplicates with leaf discs for each of the two replicates taken from different plants if possible. Only one replicate is shown. Activity of different BirA variants was compared in four independent experiments, with similar results, temperature dependency of TbID and mTb was tested in two and one experiment, respectively.
 
-## Arabidopsis lines used in this study
+### Arabidopsis lines used in this study
 
 Arabidopsis thaliana Col-0 was used as wild-type (WT). The fama-1 mutant line is SALK_100073 (Ohashi-Ito and Bergmann, 2006). Plant lines for testing the activity of BirA*, TbID and mTb (UBQ10pro::BirA*-YFPNLS, UBQ10pro::TbID-YFPNLS, UBQ10pro::mTb-YFPNLS, UBQ10pro::BirA*-NESYFP, UBQ10pro::TbID-NESYFP, UBQ10pro::mTb-NESYFP) and for the ‘FAMA interactome’ and nuclear proteome’ experiments (FAMApro::FAMA-TbID-mVenus in fama-1, FAMApro::TbID-YFPNLS) were generated by floral dip of WT or fama-1 +/- plants with the plasmids described above using agrobacterium strain GV3101. Selection was done by genotyping PCR (fama-1) and segregation analysis. We did not observe any obvious decrease in viability or developmental delay in our transgenic Arabidopsis plants. All lines had a single insertion event and were either heterozygous T2 or homozygous T3 or T4 lines. While screening for biotin ligase lines with the UBQ10 promoter, we observed that most regenerants had very weak YFP signal, especially the nuclear constructs. This was not observed with any of the cell-type-specific promoters we tested. Lines used for the FAMA-CFP AP-MS experiments were previously described in other studies: FAMApro::FAMA-CFP (Weimer et al., 2018), SPCHpro::GFPNLS and MUTEpro::GFPNLS (Adrian et al., 2015).
 
-## Plant growth conditions and biotin assays in Arabidopsis
+### Plant growth conditions and biotin assays in Arabidopsis
 
 Seeds were surface sterilized with ethanol or bleach and stratified for 2 to 3 days. For biotin treatment in whole Arabidopsis seedlings or roots and shoots, seedlings were grown on ½ Murashige and Skoog (MS, Caisson labs) plates containing 0.5% sucrose for 4 to 14 days under long-day conditions (16 h light/8 h dark, 22°C). For treatment of rosette leaves and flowers, seedlings were transferred to soil and grown in a long-day chamber (22°C) until the first flowers emerged, at which point medium sized rosette leaves (growing but almost fully expanded) and inflorescences with unopened flower buds were harvested. All samples were pools from several individual plants. Biotin treatment was done by submerging the plant material in a biotin solution (0.5–250 μM biotin in water) and either vacuum infiltrating the tissue briefly until the air spaces were filled with liquid (approximately 5 min) or not, followed by incubation at room temperature (22°C), 30°C or 37°C for up to 5 h. Controls were either treated with H2O or not treated. Following treatment, the plant material was dried and flash-frozen for later immunoblotting. To confirm reproducibility of the experiment, most experiments were done in duplicates (only one replicate shown) or repeated more than once with similar results. Comparison of all different BirA variants in Arabidopsis was done once with two independent lines for each NLS and NES constructs. Difference in activity and background between TbID and mTb matches other comparisons done with varying temperature and biotin concentration. Comparison of TbID and mTb at different temperatures was done three times. Comparison of the biotin ligase activity with different biotin concentrations was done twice for TbID and once for mTb. Three time courses with up to three or five hours of biotin treatment were done with the UBQ10pro::TbID-YFPNLS line and time courses with the FAMA-TbID line were done in duplicates. Experiments testing the effect of biotin application with and without vacuum infiltration in different tissues were done in duplicates. Activity of TbID in 4- to 14-day-old seedlings was tested in two independent experiments. Activity of TbID in roots and shoots of 6- to 14-day-old seedlings was tested once.
 
-## Optimization of streptavidin (SA) pulldown conditions
+### Optimization of streptavidin (SA) pulldown conditions
 
-## Saturation of SA beads by free biotin
+#### Saturation of SA beads by free biotin
 
 To test the impact of free biotin from biotin treatment on the affinity purification (AP) efficiency with SA-coupled beads, WT and UBQ10pro::TbID-YFPNLS seedlings were submerged in H2O or 50 μM biotin for 1 h, washed twice and frozen. AP was done in essence as described in Schopp et al. (2017). Briefly, 1 ml of finely ground plant material was resuspended in an equal volume of ice cold extraction buffer (50 mM Tris pH 7.5, 500 mM NaCl, 0.4% SDS, 5 mM EDTA, 1 mM DTT, 1 mM PMSF and 1x complete proteasome inhibitor), sonicated in an ice bath four times for 30 s on high setting using a Bioruptor UCD-200 (Diagenode) with 1.5 min breaks on ice and supplemented with Triton-X-100 to reach a final concentration of 2%. 2.3 ml of ice cold 50 mM Tris pH 7.5 were added to dilute the extraction buffer to 150 mM NaCl and samples were centrifuged at top speed for 15 min. The supernatant was mixed with 50 μl Dynabeads MyOne Streptavidin T1 (Invitrogen) that were pre-washed with equilibration buffer (50 mM Tris pH 7.5, 150 mM NaCl, 0.05% Triton-X-100, 1 mM DTT) and incubated over night at 4°C on a rotor wheel. The beads were washed twice each with wash buffer 1 (2% SDS), wash buffer 2 (50 mM Hepes pH 7.5, 500 mM NaCl, 1 mM EDTA, 1% Triton-X-100, 0.5% Na-deoxycholate), wash buffer 3 (10 mM Tris pH 8, 250 mM LiCl, 1 mM EDTA, 0.5% NP-40, 0.5% Na-deoxycholate) and wash buffer 4 (50 mM Tris pH 7.5, 50 mM NaCl, 0.1% NP-40). Protein were eluted by boiling the beads for 15 min at 98°C in elution buffer (10 mM Tris pH 7.5, 2% SDS, 5% beta mercaptoethanol, 2 mM biotin) and used for immunoblotting and SDS-PAGE. Two experiments with similar results were done.
 
-## Testing of biotin depletion strategies and optimization of the SA bead amount
+#### Testing of biotin depletion strategies and optimization of the SA bead amount
 
 To compare different biotin depletion strategies and determine the required bead amount for the PL experiments, 5-day-old UBQ10pro::TbID-YFPNLS seedlings were submerged in a 50 μM biotin solution for 3 h, washed three times with ice cold water, frozen and later used for biotin depletion and AP experiments. Proteins were extracted as described later in ‘Affinity purification of biotinylated proteins’. For biotin depletion with one or two PD-10 gel filtration columns (GE-Healthcare), the columns were equilibrated according to the manufacturer’s instructions with extraction buffer without PMSF and complete protease inhibitor (50 mM Tris pH 7.5, 150 mM NaCl, 0.1% SDS, 1% Triton-X-100, 0.5% Na-deoxycholate, 1 mM EGTA, 1 mM DTT). 2.5 ml protein extract were loaded ono the column. For the trial with one PD-10 column, the gravity protocol was used, eluting with 3.5 ml equilibration buffer. For the trial with two PD-10 columns, the proteins were eluted from the first column with 2.5 ml equilibration buffer using the spin protocol. The flow through was applied to a second PD-10 column and eluted with 3.5 ml equilibration buffer using the gravity protocol. For biotin depletion with an Amicon Ultra-4 Centrifugal filter (Millipore Sigma), 625 μl protein extract were concentrated three times to 10–20% of the starting volume by centrifuging in a swinging bucket rotor at 4,000 g and 4°C and diluted with extraction buffer to the initial volume. To test bead requirements, a volume equivalent to 1/5 of the amount used in the ‘FAMA interactome’ and ‘nuclear proteome’ PL experiments was incubated with 5 to 30 μl Dynabeads MyOne Streptavidin C1 (Invitrogen) over night at 4°C on a rotor wheel. The beads were either washed once with 1 M KCl and with 100 mM Na2CO3 and twice with extraction buffer (1x PD-10) or just twice with extraction buffer (Amicon Ultra, 2x PD-10) before elution of bound proteins by boiling for 10 min at 95°C in 4x Leammli buffer supplemented with 20 mM DTT and 2 mM biotin. Each biotin depletion strategy was tested once.
 
-## ‘FAMA interactome’ and ‘nuclear proteome’ PL experiments
+### ‘FAMA interactome’ and ‘nuclear proteome’ PL experiments
 
-## Seedling growth and biotin treatment
+#### Seedling growth and biotin treatment
 
 Approximately 120 µl of seeds per sample and line were surface sterilized with ethanol and bleach and stratified for 2 days. The seeds were then spread on filter paper (Whatman Shark Skin Filter Paper, GE Healthcare 10347509) that was placed on ½ MS plates containing 0.5% sucrose and grown in a growth chamber under long-day conditions for 5 days. For biotin treatment, seedlings were carefully removed from the filter paper, transferred into beakers, covered with 40 ml of a 50 µM biotin solution and incubated in the growth chamber for 0.5 or 3 hr. The biotin solution was removed and seedlings were quickly rinsed with ice cold water and washed tree times for 3 min in approximately 200 ml of ice cold water to stop the labeling reaction (Branon et al., 2018) and to remove excess biotin. The seedlings were then dried with paper towels, a sample was taken for immunoblots and the remaining seedlings were split into aliquots of about 1.5 g fresh weight for the three biological replicates, frozen in liquid nitrogen, ground to a fine powder and stored at −80°C until further use. Untreated 0 h samples were frozen directly after harvest. Treatment was timed to keep harvesting times as close together as manageable. Small samples for immunoblots were taken after treatment. The number of replicates was chosen to provide statistical power but to keep the experimental cost and sample handling in a feasible range.
 
-## Affinity purification of biotinylated proteins
+#### Affinity purification of biotinylated proteins
 
 For the affinity purification with streptavidin beads, 3 ml of densely packed ground plant material were resuspended in 2 ml extraction buffer (50 mM Tris pH 7.5, 150 mM NaCl, 0.1% SDS, 1% Triton-X-100, 0.5% Na-deoxycholate, 1 mM EGTA, 1 mM DTT, 1x complete, 1 mM PMSF) and incubated on a rotor wheel at 4°C for 10 min. 1 µl Lysonase (Millipore) was added to digest cell walls and DNA/RNA and the suspension was incubated on the rotor wheel at 4°C for another 15 min. The extracts were then distributed into 1.5 ml reaction tubes and sonicated in an ice bath four times for 30 s on high setting using a Bioruptor UCD-200 (Diagenode) with 1.5 min breaks on ice. The suspension was centrifuged for 15 min at 4°C and 15,000 g to remove cell debris and the clear supernatant was applied to a PD-10 desalting column (GE healthcare) to remove excess free biotin using the gravity protocol according to the manufacturer’s instructions. Briefly, the column was equilibrated with five volumes of ice cold equilibration buffer (extraction buffer without complete and PMSF), 2.5 ml of the protein extract were loaded and proteins were eluted with 3.5 ml equilibration buffer. The protein concentration of the protein extract was then measured by Bradford (BioRad protein assay). The protein extract was diluted 1:5 to avoid interference of buffer components with the Bradford assay. A volume of each protein extract corresponding to 16 mg protein was transferred into a new 5 ml LoBind tube (Eppendorf) containing Dynabeads MyOne Streptavidin C1 (Invitrogen) from 200 µl bead slurry that were pre-washed with extraction buffer. Complete protease inhibitor and PMSF were added to reach final concentrations of 1x complete and 1 mM PMSF, respectively, and the samples were incubated on a rotor wheel at 4°C overnight (16 h). The next day, the beads were separated from the protein extract on a magnetic rack and washed as described in Branon et al. (2018) with 1 ml each of the following solutions by incubating on the rotor wheel for 8 min and removing the wash solution: 2x with cold extraction buffer (beads were transferred into a new tube the first time), 1x with cold 1 M KCl, 1x with cold 100 mM Na2CO3, 1x with 2M Urea in 10 mM Tris pH 8 at room temperature and 2x with cold extraction buffer without complete and PMSF. 2% of the beads were boiled in 50 µl 4x Laemmli buffer supplemented with 20 mM DTT and 2 mM biotin at 95°C for 5 min for immunoblots. The rest of the beads was spun down to remove the remaining wash buffer and stored at −80°C until further processing. Sample prep was done in three batches with one replicate of each sample in each batch. Samples from replicate 2 (batch 2) were used for immunoblots to confirm the success of the procedure.
 
-## MS sample preparation
+#### MS sample preparation
 
 For on-beads tryptic digest, the frozen streptavidin beads were thawed and washed twice each with 1 ml 50 mM Tris pH 7.5 (transferred to new tube with first wash) and 1 ml 2 M Urea in 50 mM Tris pH 7.5. The buffer was removed and replaced by 80 µl Trypsin buffer (50 mM Tris pH 7.5, 1 M Urea, 1 m M DTT, 0.4 µg Trypsin). The beads were then incubated for 3 h at 25°C with shaking, and the supernatant was transferred into a fresh tube. The beads were washed twice with 60 µl 1 M Urea in 50 mM Tris pH 7.5 and all supernatants were combined (final volume 200 µl). The combined eluates were first reduced by adding DTT to a final concentration of 4 mM and incubating at 25°C for 30 min with shaking and then alkylated by adding Iodoacetamide to a final concentration of 10 mM and incubating at 25°C for 45 min with shaking. Finally, another 0.5 µg Trypsin were added and the digest completed by overnight (14.5 h) incubation at 25°C with shaking. The digest was acidified by adding formic acid to a final concentration of ~ 1% and desalted using OMIX C18 pipette tips (10–100 µL, Agilent). C18 desalting tips were first activated by twice aspiring and discarding 200 µl buffer B2 (0.1% formic acid, 50% acetonitrile) and equilibrated by four times aspiring and discarding 200 µl buffer A2 (0.1% formic acid). Peptides were bound by aspiring and dispensing the sample eight times. Then, the tip was washed by 10 times aspiring and discarding 200 µl buffer A2 and the peptides were eluted by aspiring and dispensing 200 µl buffer B2 in a new tube for eight times. The desalted peptides were dried in a speed vac and stored at −80°C until further processing.
 
-## LC-MS/MS
+#### LC-MS/MS
 
 For LC-MS/MS analysis, peptides were resuspended in 0.1% formic acid. Samples were analyzed on a Q-Exactive HF hybrid quadrupole-Orbitrap mass spectrometer (Thermo Fisher), equipped with an Easy LC 1200 UPLC liquid chromatography system (Thermo Fisher). Peptides were separated using analytical column ES803 (Thermo Fisher). The flow rate was 300 nl/min and a 120 min gradient was used. Peptides were eluted by a gradient from 3% to 28% solvent B (80% acetonitrile, 0.1% formic acid) over 100 min and from 28% to 44% solvent B over 20 min, followed by short wash at 90% solvent B. Precursor scan was from mass-to-charge ratio (m/z) 375 to 1600 and top 20 most intense multiply charged precursors were selection for fragmentation. Peptides were fragmented with higher energy collision dissociation (HCD) with normalized collision energy (NCE) 27.
 
-## MS data analysis – protein identification and label-free quantification
+#### MS data analysis – protein identification and label-free quantification
 
 Protein identification and label-free quantification (LFQ) were done in MaxQuant (version 1.6.2.6) (Tyanova et al., 2016a) using default settings with minor modifications. The datasets for the ‘FAMA interactome’ and ‘nuclear proteome’ experiments were searched separately. For the ‘FAMA interactome’ PL experiment, all samples were sufficiently similar (majority of proteins expected to be equally abundant across samples). Therefore (global) data normalization was done in MaxQuant as part of the LFQ algorithm (Cox et al., 2014). For the ‘nuclear proteome’ PL experiment, in which the UBQnucTbID samples were markedly different from the other samples (majority of proteins cannot be assumed to be equally abundant across samples), normalization was skipped during LFQ and done separately as described later in the data analysis section. MaxQuant settings for LFQ were as follows. Methionine oxidation and N-terminal acetylation were set as variable modifications and Carbamidomethylcysteine as fixed modification. Maximum number of modifications per peptide was five. Trypsin/P with a maximum of two missed cleavages was set as digest. Peptides were searched against the latest TAIR10 protein database containing a total of 35,386 entries (TAIR10_pep_20101214, updated 2011-08-23, www.arabidopsis.org) plus a list of likely contaminants containing Trypsin, human Keratin, streptavidin, YFP, TbID-mVenus and TbID-YFP and against the contaminants list of MaxQuant. Minimum allowed peptide length was seven. FTMS and TOF MS/MS tolerance were 20 ppm and 40 ppm, respectively, and the peptide FDR and protein FDR were 0.01. Unique and razor peptides were used for protein quantification. LFQ minimum ratio count was set to 2 and fast LFQ was active with a minimum and average number of neighbors of 3 and 6, respectively. For the ‘nuclear proteome’ experiment ‘skip normalization’ was enabled to produce non-normalized LFQ values. Match between runs and second peptides were checked. The mass spectrometry proteomics data (raw data, MaxQuant analysis, normalization results (only ‘nuclear proteome’ experiment) and the following data analysis in Perseus) have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository (Vizcaíno et al., 2013) with the dataset identifiers PXD015161 (‘FAMA interactome’ experiment) and PXD015162 (‘nuclear proteome’ experiment).
 
-## MS data analysis – identification of enriched proteins in the ‘FAMA interactome’ experiment
+#### MS data analysis – identification of enriched proteins in the ‘FAMA interactome’ experiment
 
 Filtering and statistical analysis were done with Perseus (version 1.6.2.3) (Tyanova et al., 2016a). The ‘proteinGroups.txt’ output file from MaxQuant was imported into Perseus using the LFQ intensities as Main category. The data matrix was filtered to remove proteins marked as ‘only identified by site’, ‘reverse’ and ‘potential contaminant’. LFQ values were log2 transformed and proteins that were not identified/quantified in all three replicates of at least one time point of one genotype (low confidence) were removed. The clustering analysis shown in Figure 5—figure supplement 2 and the multi scatterplot shown in Figure 5—figure supplement 3, were done at this point, using the built-in ‘Hierarchical clustering’ function with the standard settings (Euclidean distance with average linkage, no constraints and preprocessing of k-means) and the ‘Multi scatter plot’ function (equal ranges, Pearson correlation values displayed), respectively. Next, missing values were imputed for statistical analysis using the ‘Replace missing values from normal distribution’ function (settings: width = 0.3, down shift = 1.8, mode = total matrix) and principal component analysis was done.
 
-## Protein enrichment in FAMA-TbID samples
+##### Protein enrichment in FAMA-TbID samples
 
 To identify proteins enriched in TbID-expressing samples versus the WT control and to remove proteins that bind the beads non-specifically, unpaired two-sided Students t-tests were performed comparing the FAMA-TbID or FAMAnucTbID with the corresponding WT samples at each time point. An FDR of 0.05 (integrated modified permutation-based FDR (‘Significance Analysis of Microarrays’ (SAM) method)) and an S0 of 0.5 with 250 randomizations were chosen as cutoff for multiple sample correction. As an additional filter, only proteins that were quantified in all three replicates of the FAMA-TbID or FAMAnucTbID samples at this time point were used for the tests (identified with high confidence; see Supplementary file 2 – Table 2 for number of proteins used in each test). Significantly enriched proteins were used for hierarchical clustering with standard settings, using Z-transformed non-imputed LFQ values. To further identify proteins that are significantly enriched in FAMA-TbID versus FAMAnucTbID and to remove proteins that are stochastically labeled by FAMA-TbID, corresponding t-tests were performed on the reduced dataset using the same parameters as for the first t-tests. Finally, to filter out proteins that were not enriched in at least one of the two treatments compared to untreated FAMA-TbID, unpaired two-sided Students t-tests were performed on the remaining proteins comparing the samples at the 0.5 and 3 h time points to the 0 h time point using a p-value of 0.5 as cutoff.
 
-## Protein enrichment over time
+##### Protein enrichment over time
 
 To identify proteins enriched after short or long biotin treatment, unpaired two-sided Students t-tests were performed comparing the 0.5 and 3 h treatment samples of WT, FAMA-TbID and FAMAnucTbID to the corresponding 0 h samples. An FDR of 0.05 and an S0 of 0.5 with 250 randomizations were chosen as cutoff for multiple sample correction. Only proteins that were quantified in all three replicates of at least one of the two groups were tested (see Supplementary file 2 – Table 3 for number of proteins used in each test).
 
-## Plots and heatmaps
+##### Plots and heatmaps
 
 Scatterplots and PCA plots were made in RStudio (version 1.1.463, RStudio Team, 2016, R version 3.5.1, R Development Core Team, 2018) using t-test and PCA results exported from Perseus. Hierarchical clustering was done in Perseus and the plots were exported as pdf.
 
-## MS data analysis – data normalization and identification of enriched proteins in the ‘nuclear proteome’ experiment
+#### MS data analysis – data normalization and identification of enriched proteins in the ‘nuclear proteome’ experiment
 
 Since the samples of the ‘nuclear proteome’ experiment were quite different in the number and abundance of identified proteins (majority of proteins cannot be assumed to be equally abundant across samples) and each sample was measured as one fraction, normalization was skipped in MaxQuant and done after peptide identification and quantification using the non-normalized LFQ values. Search for a suitable normalization method and normalization were done with Normalyzer (version 1.1.1) (Chawade et al., 2014), a tool to help select an optimal normalization method for a given dataset from a set of commonly used global and local normalization methods. Subsequent data filtering and statistical analysis were done with Perseus (version 1.6.2.3) (Tyanova et al., 2016b). First, the ‘proteinGroups.txt’ output file from MaxQuant was imported into Perseus using the LFQ intensities as Main category. The data matrix was filtered to remove proteins marked as ‘only identified by site’, ‘reverse’ and ‘potential contaminant’ (reduction of the dataset from 5038 proteins to 4964 proteins) and the LFQ values of all remaining proteins were exported for normalization with Normalyzer (http://normalyzer.immunoprot.lth.se/normalize.php). Based on the assumption that the majority of proteins in our dataset is differentially abundant and on the performance of the supported normalization methods, we determined that LOESS-R (local normalization) is most suitable for the dataset. LOESS-R normalized LFQ values were then imported back into Perseus and log2 transformed. Proteins that were not identified/quantified in all three replicates of at least one genotype (low confidence) were removed. The clustering analysis shown in Figure 6—figure supplement 1, as well as the multi scatterplot shown in Figure 6—figure supplement 2, were done at this point, using the built-in ‘Hierarchical clustering’ and ‘Multi scatter plot’ functions as described for the ‘FAMA interactome’ experiment. Next, missing values were imputed for statistical analysis using the ‘Replace missing values from normal distribution’ function (settings: width = 0.3, down shift = 1.8, mode = total matrix) and principal component analysis was done.
 
-## Protein enrichment in nuclear TbID samples
+##### Protein enrichment in nuclear TbID samples
 
 To identify proteins enriched in nuclear TbID-expressing samples versus the WT control, unpaired two-sided Students t-tests were performed comparing the UBQnucTbID or FAMAnucTbID with WT samples. An FDR of 0.05 (integrated modified permutation-based FDR (‘Significance Analysis of Microarrays’ (SAM) method)) and an S0 of 0.5 with 250 randomizations were chosen as cutoff for multiple sample correction. As an additional filter, only proteins that were quantified in all three replicates of the UBQnucTbID or FAMAnucTbID sample were used for the tests (identified with high confidence; see Supplementary file 3 – Tables 2 and 3 for number of proteins used in each test). To further identify proteins that are specific for or highly enriched in FAMA nuclei compared to all nuclei, we looked for proteins that were equally or slightly more abundant in the FAMAnucTbID than the UBQnucTbID samples, by performing unpaired two-sided t-tests between FAMAnucTbID and UBQnucTbID on the reduced dataset. As cutoff, an FDR of 0.01 and S0 of 0.1 were chosen. Protein not significantly enriched in the UBQnucTbID samples were used for hierarchical clustering with standard settings, using Z-transformed non-imputed LFQ values.
 
-## Plots and heatmaps
+##### Plots and heatmaps
 
 Scatterplots and PCA plots were made as described for the ‘FAMA interactome’ experiment.
 
-## Classification of the subcellular localization of nuclear proteins form PL
+#### Classification of the subcellular localization of nuclear proteins form PL
 
 Proteins identified by PL with nuclear TbID were divided into three broad categories: (1) previously identified in the nucleus experimentally, (2) not found experimentally but predicted to be in the nucleus and (3) predicted to be elsewhere. To determine proteins in the first category, a list of proteins identified in published nuclear- or subnuclear proteomics studies and of proteins detected in the nucleus in localization studies with fluorescent proteins (from SUBA4; Hooper et al., 2017; http://suba.live/; date of retrieval: February 5 2019) was compiled (see Supplementary file 3 – Table 4). Localization predictions for proteins not identified experimentally in the nucleus was done using the SUBAcon prediction algorithm (Hooper et al., 2014) on SUBA4 (date of retrieval: February 5 2019). SUBAcon provides a consensus localization based on 22 different prediction algorithms and available experimental data.
 
-## Gene ontology analysis
+#### Gene ontology analysis
 
 Proteins that were significantly enriched in FAMAnucTbID and UBQnucTbID compared to WT (FAMA- and global nuclear proteins) were used for GO analysis with AgriGO v2 (Tian et al., 2017) with the following settings: Singular enrichment analysis (SAE) with TAIR10_2017 as background, statistical method: fisher, multi-test adjustment: Yekutieli (FDR), significance level: 0.05, minimum number of entries: five. Significantly enriched GO terms from AgriGO v2 (see Supplementary file 3 – Table 7) were visualized using REViGO (Supek et al., 2011) with the following settings: list size = medium, associated numbers = p-values, database with GO term size = Arabidopsis thaliana, semantic similarity measure = SimRel. The R script provided by REViGO was used to draw the TreeMap plot in RStudio. Very small labels were removed and label size was adjusted in Adobe Illustrator.
 
-## Evaluation of selected FAMA interaction partner candidates by Y2H and PL assays in N. benthamiana
+### Evaluation of selected FAMA interaction partner candidates by Y2H and PL assays in N. benthamiana
 
-## Y2H assays
+#### Y2H assays
 
 FAMA in pXDGATcy86 (Gal4 DNA binding domain) was tested for interaction with ICE1, MUTE, SEU, LUH, BZR1 and BIM1 in pGADT7-GW (Gal4 activation domain). Transformation of yeast strain AH109 with bait and prey plasmids (empty or containing one of the listed genes), selection for transformants and testing of pair-wise interactions by growth complementation assays on nutrient selective media and with X-α-Gal was done as described in the Matchmaker GAL4 Two-Hybrid System three manual (Clontech). To compensate for autoactivation of BD-FAMA, 3-AT was added to selective plates at different concentrations for growth complementation assays.
 
-## PL assays in N. benthamiana
+#### PL assays in N. benthamiana
 
 N. benthamiana ecotype NB-1 was co-transformed with three or four constructs as described before by infiltrating young leaves with suspensions of Agrobacteria carrying the following vectors: (1) one of UBQ10pro::cFAMA-TbID-Venus in pK7m34GW,0 or UBQpro::TbID-YFPNLS in R4pGWB601, (2) one or two of UBQ10pro::ICE1-3xHA, UBQ10pro::MUTE-3xHA, UBQ10pro::LUH-3xHA in R4pGWB613 and UBQ10pro::SEU-4xmyc in R4pGWB616 (Agrobacterium strain GV3101) and (3) an Agrobacterium strain carrying a 35S::p19 plasmid (tomato bushy stunt virus (TBSV) protein p19) for protein stabilization. Two days after infiltration, expression was confirmed by epifluorescence microscopy and 5 mm wide leaf discs were harvested and flash frozen. 2 × 15 leaf discs from two different leaves were used per sample for the pulldown experiments. Leaf discs were ground to a fine powder in a ball mill. Proteins were extracted by adding 600 µl ice cold extraction buffer (50 mM Tris pH 7.5, 150 mM NaCl, 0.1% SDS, 0.5% sodium deoxycholate, 1% Triton-X-100, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, 1 mM PMSF, 1x complete protease inhibitor). Extracts were sonicated in an ice bath four times for 30 s on high setting using a Bioruptor UCD-200 (Diagenode) with 1.5 min breaks. Suspensions were centrifuged twice for 10 min at 4°C and 15,000 g to remove cell debris. The cleared supernatants were mixed with pre-washed Dynabeads MyOne Streptavidin C1 (Invitrogen) from 20 µl bead slurry and incubated on a rotor at 4°C for 2 h. Beads were washed tree times with 300 µl cold extraction buffer, once with 2 M Urea in 10 mM Tris pH 8 (room temperature) and once more with cold extraction buffer. Proteins were eluted by boiling the beads in 4x Leammli buffer supplemented with 20 mM DTT and 2 mM biotin for 10 min. Protein abundance in the extracts and bead elutions were tested by immune blotting.
 
-## Microscopy
+### Microscopy
 
 Brightfield and epifluorescence images of N. benthamiana leaves and Arabidopsis seedlings, leaves and flowers were taken with a Leica DM6B microscope using a Leica CRT6 LED light source. Confocal microscopy images of Arabidopsis seedlings expressing different biotin ligase constructs were taken with a Leica SP5 microscope. For confocal microscopy, cell walls were stained with propidium iodide (Molecular Probes) by incubating in a 0.1 mg/ml solution for three to five minutes. Images were processed in FIJI (ImageJ) (Schindelin et al., 2012). Several independent Arabidopsis lines and transiently transformed N. benthamiana leaves were analyzed. Images shown in figures and figure supplements are representative.
 
-## Immunoblots
+### Immunoblots
 
 Samples for immunoblots were prepared by resuspending frozen and ground plant material from biotin treatment assays with 1x Leammli buffer (60 mM Tris pH 6.8, 2% SDS, 10% glycerol, 2.5% beta-mercaptoethanol, 0.025% bromphenol blue) or mixing protein extracts 1:1 with 2x Leammli buffer and boiling the samples for five minutes at 95°C. Proteins bound to SA or GFP-Trap beads were eluted from the beads as described in the respective Materials and methods sections. Proteins were separated by SDS-PAGE and blotted onto Immobilon-P PVDF membrane (0.45 µm, Millipore) using a Trans-Blot Semi-Dry transfer Cell (BioRad). The following antibodies were used: Streptavidin-HRP (S911, Thermo Fisher Scientific), Rat monoclonal anti-GFP antibody (3H9, Chromotek), Rat Anti-HA High Affinity (11867423001, Roche), Myc-Tag (71D10) Rabbit mAb (2278 S Cell Signaling), AffiniPure Donkey Anti-Rat IgG-HRP (712-035-153, Jackson Immuno Research Laboratories), Rabbit Anti-Rat IgG-HRP (A5795, Sigma), Goat anti-Rabbit IgG-HRP (AS09 602, Agrisera). Blots were probed with primary antibodies overnight at 4°C or for up to 1 h at room temperature and with the secondary antibody for 1 h at room temperature and incubated with ECL Western blotting substrates according to the manufacturer’s instructions. Signals were detected on X-ray films or on a ChemiDoc MP Imaging System (BioRad).
 
-## FAMA-CFP AP-MS experiments
+### FAMA-CFP AP-MS experiments
 
-## Seedling growth and crosslinking
+#### Seedling growth and crosslinking
 
 For the two FAMA-CFP AP-MS experiments, FAMApro::FAMA-CFP complementing the homozygous fama-1 mutant and two lines expressing nuclear GFP under an early and late stomatal lineage specific promoter (SPCHpro::GFPNLS and MUTEpro::GFPNLS) were used. Large amounts of seedlings were grown for four days in liquid culture in ½ MS + 0.5% sucrose (AP-MS experiment 1) or on filter paper that was placed on ½ MS + 0.5% sucrose plates (AP-MS experiment 2). Seedlings were then treated with the proteasome inhibitor MG-132 by submerging them in liquid ½ MS + 0.5% sucrose and 10 μM MG-132 for 2.5 (AP-MS 1) or 2 (AP-MS 2) hours to increase the abundance of FAMA and other unstable proteins and crosslinked with formaldehyde. Crosslinking was done by removing excess liquid, submerging the seedlings in crosslinking buffer (25 mM Hepes pH 7.5, 0.5 mM EDTA, 1 mM PMSF, 10 mM MgCl2, 75 mM NaCl) containing 0.25% (AP-MS 1) or 0.125% (AP-MS 2) formaldehyde and vacuum infiltrating for 15 min on ice. Crosslinking was stopped by adding glycine to a final concentration of 120 mM and vacuum infiltrating for another 10 min. Seedlings were washed with 800 ml ice cold H2O and frozen in liquid nitrogen. Seedlings were treated in two batches per experiment.
 
-## Affinity purification
+#### Affinity purification
 
 For AP, the frozen plant material was ground to a fine powder. Two biological replicates per genotype were used for AP-MS 1 and four replicates of the FAMA-CFP line and two of each of the control lines were used for AP-MS 2. AP-MS 1 was done to test overall performance of the experimental setup before doing a larger scale experiment. Therefore, only a small number of replicates was used. To increase statistical power in AP-MS 2, the replicate number was doubled. Approximately 15 g plant material (from one or two of the treatment batches) per sample were resuspended in 25 ml extraction buffer (25 mM Tris pH 7.5, 10 mM MgCl2, 0.5 mM EGTA, 75 mM NaCl, 0.5/1% Triton-X-100, 1 mM NaF, 0.5 mM Na3VO4, 15 mM beta glycerophosphate, 1 mM DTT, 1 mM PMSF, 1x complete proteasome inhibitor) and incubated on a rotor wheel at 4°C for 30 to 45 min to thaw. The extracts were sonicated in 15 ml tubes in an ice bath using Bioruptor UCD-200 (Diagenode) on high setting. For experiment 1, samples were sonicated twice for five minutes with a 30 s on/off interval and a five-minute break on ice. For experiment 2, the sonication cycles were reduced to 2.5 min with a 30/60 s on/off interval. After sonication, 15 μl Lysonase (Millipore) were added and the extracts were incubated for another 30 min on a rotor wheel at 4°C before centrifuging at 12,000 g and 4°C for 10 min. The supernatants were filtered through two layers of Miracloth (Millipore) and incubated with 25 μl of GFP-Trap_MA beads (ChromoTek), pre-washed with extraction buffer, for five (AP-MS 1) or three (AP-MS 2) hours at 4°C on a rotor wheel. The beads were then washed six times with extraction buffer containing 100 mM NaCl (1 × 15 ml, 5 × 1 ml), resuspended in 50 μl 2x Leammli buffer and boiled for 5 min at 95°C. Samples were stored at −80°C until further processing.
 
-## MS sample preparation
+#### MS sample preparation
 
 Affinity purified proteins were separated by SDS-PAGE using Mini-PROTEAN TGX gels (BioRad) and stained with the Novex colloidal blue staining kit (Invitrogen). About 1 cm long sample areas were excised from the gel, and used for in-gel Tryptic digestion. Peptides were desalted using C18 ZipTips (Millipore). LC-MS/MS was done as described for the PL experiments.
 
-## MS data analysis
+#### MS data analysis
 
 Protein identification and label-free quantification (LFQ) were done for both experiments together. RAW files from LC-MS/MS were searched in MaxQuant (version 1.6.2.6) (Tyanova et al., 2016a) using the same settings as described for the PL experiments with one difference: LFQ minimum ratio count was set to 1 instead of 2. The mass spectrometry proteomics data (RAW files, MaxQuant search results and Perseus data analysis file) have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository (Vizcaíno et al., 2013) with the dataset identifier PXD015212.
 
 Filtering and statistical analysis were done with Perseus (version 1.6.2.3) (Tyanova et al., 2016a). The ‘proteinGroups.txt’ output file from MaxQuant was imported into Perseus using the LFQ intensities as Main category. The data matrix was filtered to remove proteins marked as ‘only identified by site’, ‘reverse’ and ‘potential contaminant’. LFQ values were log2 transformed and samples from AP-MS 1 and AP-MS 2 were separated for individual analysis. Proteins that were not identified/quantified in at least two (AP-MS 1) or three (AP-MS 2) FAMA-CFP or control samples (low confidence) were removed. Missing values were imputed for statistical analysis using the ‘Replace missing values from normal distribution’ function with the following settings: width = 0.3, down shift = 1.8 and mode = total matrix. Significantly enriched proteins were identified by unpaired two-sided Students t-tests comparing the FAMA-CFP with the control samples and using the integrated modified permutation-based FDR with 250 randomizations for multiple sample correction. Only proteins that were identified in two (AP-MS 1) or at least three (AP-MS 2) replicates of the FAMA-CFP samples were used for the test. FDR/S0 combinations were chosen to get a minimum number of ‘false negatives’ (statistically enriched proteins in controls). For AP-MS 1, the FDR was 0.2 and S0 was 0.5 and for AP-MS 2, the FDR was 0.01 and S0 was 0.5. Scatterplots with log2-fold changes and -log10 p-values form t-tests were done in RStudio.
 
-## Primers
+### Primers
 
-Primer namePurposeSequenceBirA-fwCloningCAGGCGCGCCGGTGGAGGCGGTTCAGGAGGTGGCATGGGCAAGCCCATCCCCAACBirA-NES-rvCloningCTGGCGCGCCCACCTCCGCCGCTTCCACCGCCTCCGTCCAGGGTCAGGCGCTCCAGBirA-rvCloningTGGCGCGCCCACCTCCGCCGCTTCCACCGCCTCCCTTTTCGGCAGACCGCAGACTGATTTpDONR-mut-AscI-fwCloningGTACAAAGTGGCTGGGCGCGCCTCCATGGTGAGCAAGGpDONR-mut-AscI-rvCloningCCAGCCACTTTGTACAAGAAAGTTGAACGAGgFAMA-fwCloningCACCATGGATAAAGATTACTCGGTACGTACGgFAMA-rvCloningAGTAAACACAATATTTCCCAGGTTAGAGCBirA-YFPnls-fwCloningGCATGCGGCCGCATGGGCAAGCCCATCBirA-YFPnls-rvCloningGATACCATGGAACCTCCGCCGCTTCCMUTE-fwCloningCACCATGTCTCACATCGCTGTTGAAAGGAATCGMUTE-rvCloningATTGGTAGAGACGATCACTTCATCAGACICE1-fwCloningCACCATGGGTCTTGACGGAAACAATGGICE1-rvCloningGATCATACCAGCATACCCTGCTSEU-fwCloningCACCATGGTACCATCAGAGCCGCCSEU-rvCloningCGCGTTCCAATCAAAATTGTTGAAACLUH-fwCloningCACCATGGCTCAGAGTAATTGGGAAGLUH-rvCloningCTTCCAAATCTTTACGGATTTGTCATGBZR1-fwCloningCACCATGACTTCGGATGGAGCTACGBZR1-rvCloningACCACGAGCCTTCCCATTTCBIM1-fwCloningCACCATGGAGCTTCCTCAACCTCGTCBIM1-rvCloningCTGTCCCGTCTTGAGCCGTTfama1-RPGenotypingCAATACAAAAAGCTCCCCTCACfama1-LBb1.3GenotypingATTTTGCCGATTTCGGAAC
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Purpose</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BirA-fw</td>
+      <td>Cloning</td>
+      <td>CAGGCGCGCCGGTGGAGGCGGTTCAGGAGGTGGCATGGGCAAGCCCATCCCCAAC</td>
+    </tr>
+    <tr>
+      <td>BirA-NES-rv</td>
+      <td>Cloning</td>
+      <td>CTGGCGCGCCCACCTCCGCCGCTTCCACCGCCTCCGTCCAGGGTCAGGCGCTCCAG</td>
+    </tr>
+    <tr>
+      <td>BirA-rv</td>
+      <td>Cloning</td>
+      <td>TGGCGCGCCCACCTCCGCCGCTTCCACCGCCTCCCTTTTCGGCAGACCGCAGACTGATTT</td>
+    </tr>
+    <tr>
+      <td>pDONR-mut-AscI-fw</td>
+      <td>Cloning</td>
+      <td>GTACAAAGTGGCTGGGCGCGCCTCCATGGTGAGCAAGG</td>
+    </tr>
+    <tr>
+      <td>pDONR-mut-AscI-rv</td>
+      <td>Cloning</td>
+      <td>CCAGCCACTTTGTACAAGAAAGTTGAACGAG</td>
+    </tr>
+    <tr>
+      <td>gFAMA-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGGATAAAGATTACTCGGTACGTACG</td>
+    </tr>
+    <tr>
+      <td>gFAMA-rv</td>
+      <td>Cloning</td>
+      <td>AGTAAACACAATATTTCCCAGGTTAGAGC</td>
+    </tr>
+    <tr>
+      <td>BirA-YFPnls-fw</td>
+      <td>Cloning</td>
+      <td>GCATGCGGCCGCATGGGCAAGCCCATC</td>
+    </tr>
+    <tr>
+      <td>BirA-YFPnls-rv</td>
+      <td>Cloning</td>
+      <td>GATACCATGGAACCTCCGCCGCTTCC</td>
+    </tr>
+    <tr>
+      <td>MUTE-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGTCTCACATCGCTGTTGAAAGGAATCG</td>
+    </tr>
+    <tr>
+      <td>MUTE-rv</td>
+      <td>Cloning</td>
+      <td>ATTGGTAGAGACGATCACTTCATCAGAC</td>
+    </tr>
+    <tr>
+      <td>ICE1-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGGGTCTTGACGGAAACAATGG</td>
+    </tr>
+    <tr>
+      <td>ICE1-rv</td>
+      <td>Cloning</td>
+      <td>GATCATACCAGCATACCCTGCT</td>
+    </tr>
+    <tr>
+      <td>SEU-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGGTACCATCAGAGCCGCC</td>
+    </tr>
+    <tr>
+      <td>SEU-rv</td>
+      <td>Cloning</td>
+      <td>CGCGTTCCAATCAAAATTGTTGAAAC</td>
+    </tr>
+    <tr>
+      <td>LUH-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGGCTCAGAGTAATTGGGAAG</td>
+    </tr>
+    <tr>
+      <td>LUH-rv</td>
+      <td>Cloning</td>
+      <td>CTTCCAAATCTTTACGGATTTGTCATG</td>
+    </tr>
+    <tr>
+      <td>BZR1-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGACTTCGGATGGAGCTACG</td>
+    </tr>
+    <tr>
+      <td>BZR1-rv</td>
+      <td>Cloning</td>
+      <td>ACCACGAGCCTTCCCATTTC</td>
+    </tr>
+    <tr>
+      <td>BIM1-fw</td>
+      <td>Cloning</td>
+      <td>CACCATGGAGCTTCCTCAACCTCGTC</td>
+    </tr>
+    <tr>
+      <td>BIM1-rv</td>
+      <td>Cloning</td>
+      <td>CTGTCCCGTCTTGAGCCGTT</td>
+    </tr>
+    <tr>
+      <td>fama1-RP</td>
+      <td>Genotyping</td>
+      <td>CAATACAAAAAGCTCCCCTCAC</td>
+    </tr>
+    <tr>
+      <td>fama1-LBb1.3</td>
+      <td>Genotyping</td>
+      <td>ATTTTGCCGATTTCGGAAC</td>
+    </tr>
+  </tbody>
+</table>
 
-## ‘PL toolbox’ vectors generated for common use
+### ‘PL toolbox’ vectors generated for common use
 
-Entry vectors for creating protein of interest-TbID/mTb + YFP/mVenus fusionsPlasmid nameGateway sitesApplicationAddgene IDpENTR_L1-YFP-Turbo-NES-L2attL1-attL2For N-terminal YFP-TbID fusion to non-nuclear proteins127349pENTR_L1-YFP-Turbo-L2attL1-attL2For N-terminal YFP-TbID fusion to nuclear proteins127350pENTR_L1-YFP-miniTurbo-NES-L2attL1-attL2For N-terminal YFP-mTb fusion to non-nuclear proteins127351pENTR_L1-YFP-miniTurbo-L2attL1-attL2For N-terminal YFP-mTb fusion to nuclear proteins127352pDONR_P2R-P3_R2-Turbo-NES-mVenus-STOP-L3attR2-attL3For C-terminal TbID-mVenus fusion to non-nuclear proteins127353pDONR_P2R-P3_R2-Turbo-mVenus-STOP-L3attR2-attL3For C-terminal TbID-mVenus fusion to nuclear proteins127354pDONR_P2R-P3_R2-miniTurbo-NES-mVenus-STOP-L3attR2-attL3For C-terminal mTb-mVenus fusion to non-nuclear proteins127355pDONR_P2R-P3_R2-miniTurbo-mVenus-STOP-L3attR2-attL3For C-terminal mTb-mVenus fusion to nuclear proteins127356Entry vectors for expressing BirA*/TbID/mTb + YFP under a promoter of choicePlasmid nameGateway sitesapplicationAddgene IDpENTR_L1-BirA(R118G)-NES-YFP-STOP-L2attL1-attL2For expressing cytosolic BirA* under a promoter of choice127357pENTR_L1-Turbo-NES-YFP-STOP-L2attL1-attL2For expressing cytosolic TbID under a promoter of choice127358pENTR_L1-miniTurbo-NES-YFP-STOP-L2attL1-attL2For expressing cytosolic mTb under a promoter of choice127359pENTR_L1-BirA(R118G)-YFP-NLS-STOP-L2attL1-attL2For expressing nuclear BirA* under a promoter of choice127360pENTR_L1-Turbo-YFP-NLS-STOP-L2attL1-attL2For expressing nuclear TbID under a promoter of choice127361pENTR_L1-miniTurbo-YFP-NLS-STOP-L2attL1-attL2For expressing nuclear mTb under a promoter of choice127362Binary plant transformation vectors for ubiquitous expression of BirA*/TbID/mTb + YFP/mVenusPlasmid nameResistance in plantsapplicationAddgene IDR4pGWB601_UBQ10p-BirA(R118G)-NES-YFPBASTAFor expressing cytosolic BirA* under the UBQ10 promoter127363R4pGWB601_UBQ10p-BirA(R118G)-YFP-NLSBASTAFor expressing nuclear BirA* under the UBQ10 promoter127365R4pGWB601_UBQ10p-Turbo-NES-YFPBASTAFor expressing cytosolic TbID under the UBQ10 promoter127366 R4pGWB601_UBQ10p-Turbo-YFP-NLSBASTAFor expressing nuclear TbID under the UBQ10 promoter127368R4pGWB601_UBQ10p-miniTurbo-NES-YFPBASTAFor expressing cytosolic mTb under the UBQ10 promoter127369R4pGWB601_UBQ10p-miniTurbo-YFP-NLSBASTAFor expressing nuclear mTb under the UBQ10 promoter127370
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Entry vectors for creating protein of interest-TbID/mTb + YFP/mVenus fusions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plasmid name</td>
+      <td>Gateway sites</td>
+      <td>Application</td>
+      <td>Addgene ID</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-YFP-Turbo-NES-L2</td>
+      <td>attL1-attL2</td>
+      <td>For N-terminal YFP-TbID fusion to non-nuclear proteins</td>
+      <td>127349</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-YFP-Turbo-L2</td>
+      <td>attL1-attL2</td>
+      <td>For N-terminal YFP-TbID fusion to nuclear proteins</td>
+      <td>127350</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-YFP-miniTurbo-NES-L2</td>
+      <td>attL1-attL2</td>
+      <td>For N-terminal YFP-mTb fusion to non-nuclear proteins</td>
+      <td>127351</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-YFP-miniTurbo-L2</td>
+      <td>attL1-attL2</td>
+      <td>For N-terminal YFP-mTb fusion to nuclear proteins</td>
+      <td>127352</td>
+    </tr>
+    <tr>
+      <td>pDONR_P2R-P3_R2-Turbo-NES-mVenus-STOP-L3</td>
+      <td>attR2-attL3</td>
+      <td>For C-terminal TbID-mVenus fusion to non-nuclear proteins</td>
+      <td>127353</td>
+    </tr>
+    <tr>
+      <td>pDONR_P2R-P3_R2-Turbo-mVenus-STOP-L3</td>
+      <td>attR2-attL3</td>
+      <td>For C-terminal TbID-mVenus fusion to nuclear proteins</td>
+      <td>127354</td>
+    </tr>
+    <tr>
+      <td>pDONR_P2R-P3_R2-miniTurbo-NES-mVenus-STOP-L3</td>
+      <td>attR2-attL3</td>
+      <td>For C-terminal mTb-mVenus fusion to non-nuclear proteins</td>
+      <td>127355</td>
+    </tr>
+    <tr>
+      <td>pDONR_P2R-P3_R2-miniTurbo-mVenus-STOP-L3</td>
+      <td>attR2-attL3</td>
+      <td>For C-terminal mTb-mVenus fusion to nuclear proteins</td>
+      <td>127356</td>
+    </tr>
+    <tr>
+      <td colspan="4">Entry vectors for expressing BirA*/TbID/mTb + YFP under a promoter of choice</td>
+    </tr>
+    <tr>
+      <td>Plasmid name</td>
+      <td>Gateway sites</td>
+      <td>application</td>
+      <td>Addgene ID</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-BirA(R118G)-NES-YFP-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing cytosolic BirA* under a promoter of choice</td>
+      <td>127357</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-Turbo-NES-YFP-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing cytosolic TbID under a promoter of choice</td>
+      <td>127358</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-miniTurbo-NES-YFP-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing cytosolic mTb under a promoter of choice</td>
+      <td>127359</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-BirA(R118G)-YFP-NLS-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing nuclear BirA* under a promoter of choice</td>
+      <td>127360</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-Turbo-YFP-NLS-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing nuclear TbID under a promoter of choice</td>
+      <td>127361</td>
+    </tr>
+    <tr>
+      <td>pENTR_L1-miniTurbo-YFP-NLS-STOP-L2</td>
+      <td>attL1-attL2</td>
+      <td>For expressing nuclear mTb under a promoter of choice</td>
+      <td>127362</td>
+    </tr>
+    <tr>
+      <td colspan="4">Binary plant transformation vectors for ubiquitous expression of BirA*/TbID/mTb + YFP/mVenus</td>
+    </tr>
+    <tr>
+      <td>Plasmid name</td>
+      <td>Resistance in plants</td>
+      <td>application</td>
+      <td>Addgene ID</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-BirA(R118G)-NES-YFP</td>
+      <td>BASTA</td>
+      <td>For expressing cytosolic BirA* under the UBQ10 promoter</td>
+      <td>127363</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-BirA(R118G)-YFP-NLS</td>
+      <td>BASTA</td>
+      <td>For expressing nuclear BirA* under the UBQ10 promoter</td>
+      <td>127365</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-Turbo-NES-YFP</td>
+      <td>BASTA</td>
+      <td>For expressing cytosolic TbID under the UBQ10 promoter</td>
+      <td>127366</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-Turbo-YFP-NLS</td>
+      <td>BASTA</td>
+      <td>For expressing nuclear TbID under the UBQ10 promoter</td>
+      <td>127368</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-miniTurbo-NES-YFP</td>
+      <td>BASTA</td>
+      <td>For expressing cytosolic mTb under the UBQ10 promoter</td>
+      <td>127369</td>
+    </tr>
+    <tr>
+      <td>R4pGWB601_UBQ10p-miniTurbo-YFP-NLS</td>
+      <td>BASTA</td>
+      <td>For expressing nuclear mTb under the UBQ10 promoter</td>
+      <td>127370</td>
+    </tr>
+  </tbody>
+</table>

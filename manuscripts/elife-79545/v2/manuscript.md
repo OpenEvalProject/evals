@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05abbep66 Neuroscience Program, Brandeis University Waltham United States
-2. https://ror.org/05abbep66 Department of Psychology, Brandeis University Waltham United States
-3. https://ror.org/05abbep66 Volen National Center for Complex Systems, Brandeis University Waltham United States
+1. Neuroscience Program, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+2. Department of Psychology, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+3. Volen National Center for Complex Systems, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
 
 † Corresponding author
 
@@ -34,17 +34,37 @@ To elucidate these mechanisms, we employed an odor-place association task in whi
 
 ## Results
 
-## Odor-place associative memory and decision-making task
+### Odor-place associative memory and decision-making task
 
 The odor-cued spatial associative memory task required rats to sniff at an odor port where one of two possible odors was presented using a calibrated olfactometer (see Methods). The rats were required to choose the correct associated reward arm on the T-maze based on the sampled odor identity, where they would receive a reward of evaporated milk (Figure 1a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of the odor-cued T-maze task. Odors 1 (heptanol) and 2 (ethyl butyrate) were delivered at the odor port in pseudo-random order. Presentation of Odors 1 and 2 was associated with milk reward at Reward locations 1 and 2, respectively. Animals had to recall odor-space associations on each trial and utilize the association to choose the correct reward location. (b) Performance of each animal (n = 8) on the odor-cued T-maze task (animals 1–5) or truncated odor-cued task (animals 6 - 8; truncated task, without spatial delay period) across multiple sessions (grey dots). Animal average is indicated by black bars. Dashed line indicates chance level. (c) Odor sampling duration across all sessions (n = 38) on correct and incorrect trials (signed-rank test, p = 0.71). (d) Turn direction away from odor port in relation to chosen reward well. Pie charts indicate the fraction of trials in which, at the odor port, animals turned in the same direction versus the opposite direction as the reward well that they would ultimately choose. Sessions in which animals ran the truncated task without spatial delay period were excluded (correct trials: n = 1,624 same direction, 32 opposite direction, binomial test, p = 0; incorrect trials: n = 499 same direction, 21 opposite direction, p = 1.4e-108).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Histogram of decision latencies. Mean: 0.82 s ± 0.25 s.d. (b) Mean run velocity across the full task for an example session from one animal, aligned to odor offset. Area between dashed lines indicates average odor-sampling period, solid line indicates average reward onset time. Shaded area indicates s.d. (c) Average change in speed across different task epochs, for all animals that ran on the full maze (and not the truncated maze) (n = 5). Error bars indicate s.d. (d) Distance from odor port over time aligned to odor port offset time. Grey lines are individual sessions, black line is mean across sessions (n = 38 sessions). (e) Sniff rate as measured by the thermocouple signal, during odor (7.1 ± 0.39 Hz, mean ± s.e.m.) and time matched pre-odor periods (6.2 ± 0.29 Hz, mean ± s.e.m.). Box plots indicate interquartile ranges (signed-rank test, n = 11 sessions across 2 animals, p = 9.8e-4***). (f) Performance of three animals on the odor-cued task (n = 24 sessions) versus the air-cued task (n = 4 sessions) in which animals were presented with only air as a neutral stimulus instead of two distinctodors. Black bars indicate mean. Dashed line indicates chance level (Rank-sum test, p = 0.002**).
 
 Rats were habituated to the maze and pre-trained on the task. Rats were initially shaped using blocked trials on a truncated maze before progressing to the long-stem T-maze (see Methods). After reaching criterion (80% performance for 3 consecutive days), animals were surgically implanted with a tetrode microdrive array for recording neural data. Recordings in three animals were performed only on the truncated maze without the long center stem (spatial delay) (Methods, animals 6–8). Following post-operative recovery and during electrophysiological recording, animals maintained a high level of performance on the task, indicating accurate decision making based on cued recall of odor-place associations (Figure 1b, n=8 rats, 77.0% ± 1.3%, mean ± s.e.m.). Rats were required to hold their nose in the odor port for a minimum of 0.50 s on each trial, but could continue sniffing the odor for any length of time after the minimum threshold was reached. The odor was continuously dispensed for the entire duration of time that the rat held its nose in the odor port and was only turned off once the rat disengaged from the odor-port. The average odor-sampling duration before odor port disengagement and odor offset was 0.82±0.02 s (mean ± s.e.m. across sessions), and this duration was similar between correct and incorrect trials (Figure 1c; within-session signed-rank test, p=0.71, distribution for all trials shown in Figure 1—figure supplement 1a). The animals’ average velocity during the task showed a decrease in speed from the pre-odor period to the odor sampling period in the odor port, followed by an increase in speed after they left the odor port to run to the reward location (Figure 1—figure supplement 1b–c). We observed rapid movement away from the odor-port after odor-port disengagement (Figure 1—figure supplement 1d). In two animals, a thermocouple was implanted in the nasal cavity to measure the sniff rhythm (see Methods). There was a small but significant increase in sniff rate during the odor sampling period (within-session increase 7.1±0.39 Hz, mean ± s.e.m.) compared to time matched pre-odor periods (6.2±0.29 Hz, mean ± s.e.m.) (Figure 1—figure supplement 1e).
 
 Notably, we observed that on a majority of trials (95.4% ± 0.12%), the animals’ turn direction away from the odor port matched the direction of the T-maze reward arm that they would ultimately choose on that trial. This behavioral phenomenon was not required for successful performance of the task, and it occurred regardless of whether the trial was correct or incorrect (Figure 1d; within-session binomial tests, correct trials: p=0; incorrect trials: p=1.4e-108). This observation indicates that the rats recall the odor-place association and choose the reward location for each trial during the odor sampling period, before exiting the odor port to run toward the reward. The time of disengagement from the odor port thus provides a trial-by-trial estimate of the moment at which the animal executes the decision. The odor sampling period thus corresponds to odor-cued recall of the learned association and priming of the subsequent decision to turn toward the reward location, with a behavioral report of the decision occurring at odor port offset. We therefore termed this odor sampling period as ‘the decision-making period’, since it provides a temporal window between odor onset and odor port exit to investigate mechanisms underlying odor-cued decision making.
 
-## Beta and RR coherence is elevated during odor sampling and decision making
+### Beta and RR coherence is elevated during odor sampling and decision making
 
 We first focused on the decision-making period and first sought to determine the network dynamics that underlie coordination of brain regions during this period. We used a tetrode microdrive array to record local field potentials (LFPs) and single units from the dorsal CA1 region of the hippocampus, the prelimbic region of the prefrontal cortex (PFC, primarily prelimbic area), and the olfactory bulb (OB, only LFP) in rats as they performed the odor-place association task (see Methods; Figure 2—figure supplement 1a–b). The thermocouple signal and LFP traces from CA1, PFC, and OB from an example trial are shown in Figure 2a, along with the same LFP signals filtered in the 20–30 Hz band (additional example shown in Figure 2—figure supplement 1c).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig2-v2.jpg)
+
+**Figure 2.:** (a) Examples of thermocouple and LFP traces from one tetrode in each region during presentation of odor from one trial, aligned to odor port disengagement. Area between dashed lines indicates odor sampling period. Top to bottom: Respiratory rhythm recorded via thermocouple, CA1 signal, beta band (20–30 Hz) filtered CA1 signal, PFC signal, beta band filtered PFC signal, OB signal, beta band filtered OB signal. (b) Time-frequency plot showing power spectra aligned to odor offset. Color scale represents z-scored power. Area between dashed lines indicates average odor sampling period. Beta band is marked by blue bracket (20–30 Hz). RR band is marked by pink bracket (7–8 Hz). Thermocouple signal (TC), n = 12 sessions, max 0.69, min –0.31; CA1: n = 39 sessions, max 0.26, min –0.35; PFC: n = 38 sessions, max 0.60, min –0.16; and OB: n = 39 sessions, max 2.17, min –0.24. (c) Top: CA1-PFC coherence spectra for one animal during the full task time window from odor sampling (area between white dashed lines, aligned to odor offset) to average reward onset time (solid line) (n = 4 sessions, max 0.84; min –0.41). Bottom: CA1-PFC coherence aligned to odor offset across all animals (n = 38 sessions, max 0.51; min –0.34). Color scale: z-scored coherence. (d) Top: Change in PFC, CA1 and OB LFP power from pre-to-post odor onset (signed-rank tests, n = 38 sessions, Beta band: CA1 p=2.84e-3, PFC p=1.80e-4, OB p=8.3e-6, RR band: CA1 [decrease] p=3.94e-3, PFC p=0.551, OB p=0.949). Middle: Change in LFP Power from odor-to-reward period (signed-rank tests, Beta: sign rank tests, CA1 p=0.0012, PFC p=5.3e-4, OB p=4.4e-4, RR: CA1 p=0.11, PFC p=0.062, OB p=4.4e-4). Bottom: change in LFP power from incorrect-to-correct trials (trial-count matched, ranksum test on session, no difference were found for either band). Shaded regions represent SEM. (e) Top: change in coherence between region-pairs from pre-to-post odor onset (signed-rank test, n=38 sessions, Beta: CA1-PFC p=2.84e-3, CA1-OB p=5.1e-5, PFC-OB p=3.67e-5; RR: CA1-PFC p=3.94e-3, CA1-OB p=6.35e-4, PFC-OB p=2.43e-4). Middle: change in coherence between region-pairs from reward period to odor sampling period (signedrank tests, Beta; CA1-PFC p-0.01, CA1-OB 0=0.0012, PFC-OB p=0.0024, RR: CA1-PFC p=0.57, CA1-OB p=0.0044, PFC-OB p=0.64e-4).Bottom: change in coherence from incorrect-to-correct trials (trial-count matched, ranksum test on sessions, no significant difference were found for either band). Shaded regions represent SEM. (f) Number of SWR events per trial during odor sampling and reward consumption on correct trials (signed-rank test, n = 38 sessions, p = 1.1e-7***). (g) Left: Beta Z-scored coherence between CA1-PFC, CA1-OB and PFC-OB on correct trials with odors (n = 3174) and randomly rewarded trials with only air presented at the odor port (n = 134). Right: same as left, but for RR. Correct trials were randomly subsampled to match the number of incorrect trials 1000 times. Error bars indicate s.d. (Bootstrap tests: beta: CA1-PFC: p < 0.001***, CA1-OB, p < 0.001***, PFC-OB: p = 0.002**; RR: CA1-PFC: p = 0.49, CA1-OB, p = 0.30, PFC-OB, p = 0.12).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Recording locations for 8 rats (color coded) where tetrode locations were recovered. The recording sites were reconstructed from the electrolytic lesions in post hoc Nissl-stained coronal brain sections and mapped onto the stereotaxic atlas1. Electrodes were localized to target areas in dorsal area CA1, medial prefrontal cortex (PFC), and granule cell layer of OB after histology (PFC electrodes localized primarily to prelimbic cortex, with a few electrodes in anterior cingulate cortex (ACC)). (b) Sample Nissl-stained brain sections showing final tetrode placement in hippocampus (top), PFC (middle), and olfactory bulb (bottom). Arrows indicate tetrode lesions. Scale bars each represent 1 mm. (c) Examples of thermocouple and LFP traces from one tetrode in each region during presentation of odor from one trial, aligned to odor port disengagement. Area between dashed lines indicates odor sampling period. Top to bottom: Respiratory rhythm recorded via thermocouple, CA1 signal, beta band (20-30 Hz) filtered CA1 signal, PFC signal, beta band filtered PFC signal, OB signal, beta band filtered OB signal. (d) Time-frequency plots showing power spectra across all animals aligned to odor onset (at time 0). Color scale represents z-scored power. Area between dashed lines indicates average odor sampling period. Beta band is marked by blue bracket, and RR band is marked by pink bracket. Thermocouple signal (TC), n = 12 sessions, max 0.92, min –0.30; CA1: n = 38 sessions, max 0.29, min -0.33; PFC: n = 38 sessions, max 0.58, min –0.15; and OB: n = 38 sessions, max 2.28, min -0.20. (e) Time-frequency spectrograms across animals that ran on the full maze, aligned to odor port disengagement (at time 0) and extending into the run period on the track. Color scale represents z- scored power for each region: CA1: max 0.45; min -0.34, PFC: max 0.21; min –0.14, and OB: max 0.72; min –0.16. Dashed line indicates odor port disengagement time. RR band is marked by pink bracket. (f) Phase-amplitude coupling between RR and beta, in CA1 (left), PFC (middle), and OB (right). Top row: normalized phase-amplitude histograms. Bottom row: modulation index (MI)2 of real data compared to the MI from a trial-shuffled dataset (500 shuffles). Dashed line indicates significance level (alpha = 0.05, p < 0.001***).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) CA1-PFC coherence across animals that ran on the full maze, aligned to odor port disengagement and extending into the run period on the track (n = 19). Color scale represents z-scored coherence. Min = –0.18, max = 0.50. (b) Left:CA1-OB coherence spectra across all animals and all tetrode pairs (n = 38 sessions). Area between vertical dashed lines indicates mean decision-making period aligned to odor port disengagement. Color scale represents z-scored coherence (max 0.41, min -0.25). Right: As in left, but for PFC-OB coherence (max 0.45, min -0.28). (c) Illustration depicting a positive offset and negative offset resulting from the second signal leading or lagging the first, respectively. Note that offsets are in radians rather than seconds. (d) Phase-offsets in beta(top) or RR(bottom) between each pair of regions. Shaded colors indicate mean and 99% CI, Grey lines illustrate individual sessions. Y axis notes sign of values at which each region would lead the other. During the full odor sampling window, CA1 beta lead PFC (p = 2e-4) and there was no consistent phase difference between OB and PFC or CA1 beta (all p>0.05). Similarly, CA1 RR lead PFC RR (p < 1e-5), as well as OB (p < 1e-5) but no consistent phase difference was found between OB and PFC or CA1 RR (all p >0.05).
 
 We observed a strong increase in power in the beta band (20–30 Hz) during this decision-making period compared to a time-matched pre-odor period across all three regions (Figure 2b and d, Wilcoxon signed-rank test, n=38 sessions, CA1 P=2.84e-3, PFC P=1.80e-4, OB P=8.3e-6). Power spectra aligned to odor offset are shown in Figure 2d (alignment to odor onset in Figure 2—figure supplement 2d). Similar increases in beta power during odor discrimination tasks have been reported previously in OB, CA1, and lateral entorhinal cortex (Frederick et al., 2016; Igarashi et al., 2014; Kay and Beshel, 2010; Rangel et al., 2016). The respiratory rhythm (RR, 7–8 Hz) was also prominent in the LFP in all three regions but did not increase significantly following odor onset (Figure 2d). This rhythm, which corresponds to the respiration rate during odor sampling, has previously been shown to be physiologically and mechanistically distinct from the 6–12 Hz hippocampal theta rhythm (Lockmann et al., 2016; Nguyen Chi et al., 2016), although there is overlap between the two frequency bands. Following odor port disengagement and the initiation of running down the track, we observed a small shift in the dominant LFP frequency from RR to the theta band in CA1 and PFC, reflecting the change in behavioral state (Figure 2—figure supplement 1e).
 
@@ -60,9 +80,17 @@ CA1-PFC-OB beta coherence was thus specifically enhanced during the odor samplin
 
 We next investigated the relationship between beta and RR power and coherence and performance on the task. There was no significant change in the level of coherence or power in the CA1-PFC-OB network in either frequency band between correct and incorrect trials (Figure 2e bottom, signed-rank tests; all p’s>0.05). Therefore, the strength of overall oscillatory coordination in the network as measured by coherence and power may not directly enable a correct decision. This result leaves open the possibility that oscillatory phase modulation of neuronal activity may instead play a role.
 
-## Single neurons in CA1 and PFC exhibit choice selectivity during decision-making period
+### Single neurons in CA1 and PFC exhibit choice selectivity during decision-making period
 
 In addition to LFP, we assessed neuronal activity in the task by recording single units from hippocampal area CA1 (n=1,309 units) and PFC (n=717 units) (distribution of neurons across animals shown in table in Supplementary file 1). Many of these units fired too sparsely on the maze or only during sleep, and were excluded from further analyses. Therefore we first selected units that fired at least 100 spikes during the run epochs (Figure 3g–h, ‘Active Cells’, 934 in CA1, 508 in PFC) and categorized them into pyramidal cells and interneurons based on firing rate and spike width (see Methods, CA1: 813 (87%) pyramidal, 121, (13%) interneurons; PFC: 464 (91%) pyramidal, 44 (9%) interneurons). For analyses during the decision-making period, we then selected for cells that were active during the odor period with the criterion that they fired at least as many spikes as there were trials (‘Odor Period Active’, see Methods, CA1: 170/813,21% PFC: 234/464, 50%). The majority of these active cells were also task responsive and exhibited significant changes in firing rate following the onset of odor sampling (see Methods and Figure 3g–h; n=138/170, 81% task-responsive CA1 cells, n=185/234, 79%, task-responsive PFC cells).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig3-v2.jpg)
+
+**Figure 3.:** (a) Example PSTH and raster plot for a single choice-selective CA1 neuron on correct trials, aligned to odor-port disengagement. Shaded areas indicate s.e.m. Firing rates are shown in Hz, referring to spikes/second. (b) Same as for a, but for incorrect trials. (c) Same as a but for PFC cell. (d) Same as C but for incorrect trials. (e) Selectivity index (SI) of all choice-selective cells in CA1 on correct trials (top) and incorrect trials (bottom), aligned to odor-port engagement(left) and odor-port disengagement(right). SI is calculated as the difference in firing rate between Odor 1 trials and Odor 2 trials, divided by the sum of these firing rates. SI is color coded, where blue indicates an SI of 1 (absolute Choice 1 preference), red indicates an SI of -1 (absolute Choice 2 preference) and grey indicates an SI of 0 (not selective). Cells are sorted according to peak selectivity on correct trials and sorting order is the same for both plots. (f) Same as E, but for all PFC choice-selective cells. (g) Sankey diagram showing the number of CA1 pyramidal cells that were classified into different categories, sizes of partitions are proportional to raw numbers. (h) Same as g, but for PFC cells. (i) Correlation between Correct trial SI and incorrect trial SI for CA1 selective cells (n=47, p=0.1.82e-5). (j) Same as for I, but for PFC cells (n=59, p=3.47e-9).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Spiking probability during decision-making period for all task-responsive cells in CA1 (left, n = 138 cells) and PFC (right, n = 157 cells). Area between the dashed lines represents decision-making period. (b) Spiking probability during decision-making period for all cells (task-responsive and task unresponsive, putative pyramidal cells and interneurons combined) in CA1 (left, n = 917 cells) and PFC (right, n = 507 cells). Area between the dashed lines represents decision-making period. (c) Firing rates of task-responsive pyramidal neurons during odor sampling and reward consumption (Signed-rank tests. CA1 (left): n = 138 cells, p = 5.1e-13; PFC (right): n = 185 cells, p = 0.009). Error bars represent SEM. (d) Selectivity index (SI) of all task-responsive but not choice-selective pyramidal cells in CA1 (left 2 panels) and PFC (right 2 panels) on correct trials and incorrect trials, aligned to odor port disengagement. Cells are sorted according to peak selectivity on correct trials and sorting order is the same for both plots. (e) Correlation between correct trial SI and incorrect trial SI for all task-responsive non-choice-selective pyramidal neurons. (CA1 (left): n = 91 cells, r = -0.34, p = 0.001**; PFC (right): n = 126 cells, r = -0.34, p = 3.0e-4***). (f) Histograms showing absolute selectivity indices for choice selective vs. non-choice-selective pyramidal cell populations in CA1 (left) and PFC (right).
 
 A subset of task-responsive cells was selective for specific choices, based on the identity of the odor and the associated choice. Selectivity was calculated by generating a selectivity index (SI), in which the difference between the average firing rate response to each odor on correct trials was divided by the sum of the two responses, giving a value between –1 and 1 (see Methods). To determine significance, the SI value for each task responsive pyramidal cell was compared to a distribution of SIs generated by shuffling the odor identities across trials (n=47/138, 34% CA1 selective cells, n=59/185, 31% PFC selective cells) (Figure 3 and Figure 3—figure supplement 1). These fractions are consistent with other studies examining single unit responses to odor stimuli in these regions (Otto and Eichenbaum, 1992b; Schoenbaum and Eichenbaum, 1995a; Taxidis et al., 2020).
 
@@ -76,9 +104,21 @@ Putative interneurons were also divided into task-responsive and task-unresponsi
 
 To investigate whether there was evidence of coordination between ensembles in CA1 and PFC, we wanted to determine whether the spiking of neuronal ensembles in the two regions were temporally linked (Jadhav et al., 2016; Siapas et al., 2005). In order to examine this, we computed the normalized spiking cross-correlation for all CA1-PFC pairs of task-responsive neurons during odor sampling (Figure 4d, see Methods). Significant peak time lags of cross-correlations were quantified for all CA1-PFC task-responsive putative pyramidal cells (n=224 pairs), all pairs of task-responsive interneurons (n=87 pairs), as well as pairs of CA1 interneurons and PFC pyramidal cells (n=283 pairs), and vice versa (n=111 pairs). We found a significant skew in CA1-PFC interneuron pairs towards the PFC interneurons leading (sign rank test, x=–0.028, p=3.5e-8) (Figure 4d), as well as for CA1 pyramidal cell - PFC interneuron pairs in the same direction (sign rank test, x=–0.013, p=0.0034). Additionally, we found a large cluster of CA1 interneuron- PFC pyramidal cell pairs whose cross-correlations peaked around –0.035 s and one at +0.01 s, or approximately the period of a beta cycle. These results further illustrate temporal relationships during the decision making period, and suggest that CA1 interneurons show temporal coordination with PFC task-responsive ensembles in the beta range.
 
-## CA1 and PFC cells phase lock to beta and respiratory rhythms during decision making
+### CA1 and PFC cells phase lock to beta and respiratory rhythms during decision making
 
 We next asked whether there was any relationship between oscillatory phase modulation of neuronal activity and decision accuracy. We observed numerous pyramidal cells and interneurons in CA1 and PFC whose spikes were locked to local rhythms. Spike-phase histograms for example beta-phase and RR-phase locked cells in CA1 and PFC are shown in Figure 5a–b (Rayleigh Z test alpha = 0.05, CA1: n=242 spikes, z=15.4, p=1.5e-7; PFC: n=99 spikes, z=40.9%, p=0.007), and the preference for all cells is shown in polar plots (Figure 5g–h). A large subset of cells within the population of task-responsive cells in CA1 (Figure 5c, CA1 Pyr locked to local RR n=113/138, 82%, interneurons to local RR n=74/83, 89%) and a smaller population of cells in PFC were significantly locked to the local RR (Figure 5c, PFC Pyr to local RR n=42/185, 23%, PFC interneurons to local RR n=12/28, 43%). Surprisingly though, while a modest but significant proportion of CA1 pyramidal cells were also coherent to local beta (28/138, 20% binomial test p=4.6e-11) a large fraction of CA1 interneurons were coherent to local beta (36/83, 43%). Conversely, there were very few PFC cells locked to beta overall, as we detected no more cells than chance to be locked to the local beta rhythm (PFC pyr n=8/185 4.3% PFC interneurons n=2/28, or 7%). When we assessed cross-regional spike-beta coherence, we found that there were significantly more CA1 interneurons locked to PFC beta than chance (Figure 5c–d, Binomial test on significantly (Bonferonni adjusted alpha = 0.0167) coherent proportion, see Methods; CA1 interneurons coherent maximally to PFC beta n=9/83 11%, p=1.7e-20 to OB beta 2/138 1.5% p=0.2), but no high degree of cross regional spike-phase coherence for CA1 Pyramidal cells (CA1 pyr coherent maximally to PFC beta n=11/138, 8.0%, to OB beta 10/138, 7.3%, all p>0.0167) or for PFC cells (Figure 5c–d, PFC: pyr maximally coherent to CA1 beta n=10/185, 5.4%, to OB beta n=3/138, 2.2% PFC interneurons maximally coherent to CA1 beta n=3/28 10.7%, to OB beta n=0/28 0%, all p>0.0167). These proportions were higher in the task-responsive population of neurons than in the overall active population (compare Figure 5c to Figure 5—figure supplement 1c). Overall, CA1 interneurons showed a high degree of both local beta coherence and PFC beta coherence, implicating an important role in cross-regional coordination.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig5-v2.jpg)
+
+**Figure 5.:** (a) Example spike-phase histograms from two example cells that are phase locked to the beta rhythm. Top: CA1 cell (Rayleigh Z test, n = 242 spikes, z = 15.5, p = 1.5e-7); bottom: PFC cell (n = 99 spikes, z = 4.86, p = 0.007). Phase axes are duplicated for visibility. (b) Example spike-phase histograms from two example cells that are phase locked to RR. Top: CA1 cell (Rayleigh Z test, n = 870 spikes, z = 135.3, p = 6.3e-62); bottom: PFC cell (n = 172 spikes, z = 73.9, p = 3.9e-37). (c) Percentage of task responsive cells in PFC and CA1 that were locked to local Beta or RR rhythms (CA1 Pyramidal cells n = 138, INs = 96, PFC Pyramidal cells n = 185, INs n = 36). (d) Percentage of task responsive cells in PFC and CA1 locked primarily to Beta in any region. Cells were counted only once and if locked to multiple regions assigned to that which they were locked most significantly(n = same as above). (e) Rate Adjusted Vector Lengths (top) and histogram of change in vector length from correct to incorrect trials(bottom) for beta locked task responsive cells in PFC and CA1 that were significantly locked to the local beta rhythm (even if better locked to other regions' LFP) (signed-rank tests, signed-rank tests, CA1: pyr n = 28, p = 0.014, IN n=36, p=0.038; PFC: pyr n = 8, p = 0.039, IN n=2, p>.05). (f) Same as e, but for cells that were significantly locked to the Respiratory Rhythm (Signed Rank test CA1 Pyr n=113, n.s, INs n=74, n.s., PFC pyr n=42, n.s. INs n=12, n.s.). (g) Polar histogram of preferred beta phases for all task responsive CA1 pyramidal cells and Interneurons (left)(pyr n=138, p=5.4e-5, IN n=96, p=2.6e-4) and PFC pyramidal cells and interneurons (right) (pyr n=185, p=0.648, IN n=36, p=0.50). (h) As in (f), but for all cells relative to local RR (CA1 pyr n=138, p=5.9e-4, IN n=96, p=5.6e-6. PFC pyr n=185 p=0.79, IN n=36, p=0.3.1e-5). (Asterisks indicate significance; *<0.05, **<0.01, ***<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Rayleigh Z scores for spike-phases of task-responsive cells for beta and RR (rank-sum test; CA1: n = 138 cells, p = 3.2e-26***; PFC: n = 185 cells, p = 0.002**). (b) Percentage of task responsive cells in PFC and CA1 locked primarily to RR in any region. Cells were counted only once and if locked to multiple regions assigned to that which they were locked most significantly (CA1 Pyramidal cells n=138, INs=96, PFC Pyramidal cells n=185, INs n=36). (c) Percentage of all active units in CA1 and PFC significantly locked to local Beta and RR across time epochs. Dotted line illustrates chance levels. (d) Percentage of task-responsive pyramidal cells in CA1 and PFC that were phase locked to beta, RR, or both beta and RR. Grey bars indicate chance level of cells being phase locked to both rhythms, error bars indicate the range of cell percentages that fall within the 95% bounds of the chance binomial distribution (Binomial tests, CA1: p = 0.08; PFC: p = 0.06). (e) As in (d), but for interneurons (Binomial tests, CA1: p = 0.11; PFC: p = 0.20). (f) Percentage of task-responsive pyramidal cells that were choice-selective (solid bars), phase-locked to the beta rhythm (outlined bars), and both choice-selective and phase-locked (striped bars). Grey bars indicate chance level of cells being both choice-selective and phase-locked, error bars indicate the range of cell percentages that fall within the 95% bounds of the chance binomial distribution (binomial tests, CA1: p = 0.08; PFC: p = 0.16). (g) As in (f), but for interneurons (Binomial tests, CA1: p=.4; PFC p=.7). (h) Percentage of task-responsive pyramidal cells that were choice-selective (solid bars), phase-locked to RR (outlined bars), and both choice-selective and phase-locked (striped bars). Grey bars indicate chance level of cells being both choice-selective and phase-locked, error bars indicate the range of cell percentages that fall within the 95% bounds of the chance binomial distribution (Binomial tests, CA1: p = 0.077; PFC: p = 0.10). (i) Cross-regional Beta and RR phase preference for pyramidal cells in CA1 and PFC (Rayleigh tests, p values less than 0.05 are illustrated with a 'P*' on plots). (j) As in (i), but for interneurons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Cross regional beta coherence of CA1 pyramidal (left) and interneurons (right) for correct and incorrect trials(bottom), and the difference between the two (top) (CA1 Interneurons to PFC beta p=0.0031, all others p>0.05). (b) As in (a) but for PFC cells (all p>0.05).
 
 When looking at all task responsive cells regardless of the significance of their spike-phase modulation, phase preference across cells was consistent in CA1 for both rhythms (Figure 5g–h, Rayleigh Z-test, CA1: pyr n=138, beta p=5.4e-5, RR P=5.9e-4, int n=83 beta p=2.62e-4 RR p=5.61e-6) even though a higher percentage of cells in both regions were phase locked to RR (Figure 5c and z-test for proportions, CA1: p=6.8e-23; PFC: p=8.8e-9) and depth of this modulation was much stronger for RR compared to beta (Figure 5—figure supplement 1a). However, in PFC only interneurons showed a consistent phase preference to RR (PFC pyr n=185 in n=36, all p>0.05 except for IN to RR p=3.1e-5). The degree of phase-locking for CA1 and PFC neurons is stronger for CA1 or PFC beta than to OB beta (Figure 5d, Figure 5—figure supplement 1b, i, j), suggesting that this phase-coherent firing is not simply due to common inputs from OB. Furthermore, more cells in CA1 and PFC pyramidal cells were locked to rhythms in CA1 than to those in PFC or in OB (Figure 5d). Together with the greater degree of CA1 interneuron coherence to beta across regions, these data suggest a network mechanism wherein CA1 interneurons and CA1 beta play a key role in coordinating CA1-PFC-OB interactions to support odor guided decision making. This beta-driven network is likely different than the RR-driven network, as in both CA1 and PFC, the proportion of cells that were phase locked to both beta and RR was no different than chance, given the percentages of cells that were modulated by either rhythm (Figure 5—figure supplement 1d–e).
 
@@ -86,7 +126,7 @@ Are cells that are modulated by beta the same population of cells that are selec
 
 We next asked whether the strength of phase locking to the rhythms was still indicative of decision accuracy by comparing correct versus incorrect trials. To do this, we compared each cells mean vector length (MVL) after adjusting for rate differences (Rangel et al., 2016), a measure of non-uniformity in the spike-phase distribution, on correct versus incorrect trials for phase-coherent cells. For each cell, we calculated the MVL for the spike-phase distribution on correct trials and incorrect trials separately after correcting for trial count and compared these two paired distributions. We found that both pyramidal cells and interneurons in CA1 and pyramidal cells in PFC that were phase-locked to the local beta rhythm exhibited a lower MVL on incorrect trials (Figure 5e, signed-rank tests, CA1: pyr n=28, p=0.014, IN n=36, p=0.038; PFC: pyr n=8, p=0.039, in n=2, these few interneurons did show a decrease). There was no significant effect for local RR phase locking (Figure 5f, signed-rank test, no significance found). Interestingly, cross-region spike-phase coherence showed a similar relationship to decision accuracy for CA1 phase-coherent interneurons (Figure 5—figure supplement 2 n=20, p=0.0023) suggesting a central role for CA1 interneurons in synchronizing PFC-CA1 activity and enabling a correct choice. This suggests that a sub-population of beta modulated cells across PFC and CA1 may play a role in supporting accurate utilization of odor-place associations for making decisions.
 
-## Neural ensemble responses in CA1 and PFC during decision making predict the upcoming choice
+### Neural ensemble responses in CA1 and PFC during decision making predict the upcoming choice
 
 We next examined how ensemble dynamics underlie the neural representation of decisions informed by odor-cued recall. We first considered only pyramidal cells that were task-responsive for the ensemble analyses. For this population of task-responsive cells, we found that the distribution of the peak response times in both CA1 and PFC tiled the entire decision time window (Figure 6a).
 
@@ -98,9 +138,17 @@ The temporal evolution of CA1 and PFC ensemble responses in individual sessions 
 
 To determine whether the animal’s upcoming behavior could indeed be predicted by neural ensembles before the decision was executed, we trained a generalized linear model (GLM) to predict the animal’s choice based on ensemble activity during the decision-making period (See Methods). When we performed this analysis using task-responsive putative pyramidal cells we found that reward choice could be accurately predicted 0.1 s prior to odor port disengagement by CA1 ensembles, and 0.3 s prior by PFC ensembles (Figure 6e left). We also performed the same analysis but after included both task-responsive pyramidal and interneurons in the ensembles (Figure 6e right). In this case, we found an improvement in prediction for CA1 ensembles: reward prediction was now accurate starting earlier, at 0.2 s prior to decision execution. Prediction by PFC ensembles remained the same. To control for the possibility that inclusion of interneurons improved prediction latency for CA1 simply due to the larger number of cells in the training set, we performed this analysis again by resampling the pyramidal cells to match the total number of pyramidal cells plus interneurons. In this control analysis, we found that the choice could again only be predicted at 0.1 s prior to the decision execution, the same as what we observed with the original sample of pyramidal cells. These results confirm that the animals utilize the recalled odor-place association and make a spatial choice during this odor-sampling period, which is reflected in the activity of task-responsive neural ensembles.
 
-## Representations of choice and space are maintained independently during stem running
+### Representations of choice and space are maintained independently during stem running
 
 Finally, we investigated whether there was any relationship between the activity of CA1 and PFC ensembles during the odor-cued decision-making period and their spatial activity on the maze (excluding the odor sampling and reward periods) as the animals ran through the common central arm on the T-maze on the central and side arms toward reward. We examined units only from sessions in which animals traversed a long T-maze track (see Methods, 26 sessions from 6 rats) in order to assess spatial firing characteristics. A large fraction of cells in CA1 and PFC exhibited spatial activity on the maze (see Methods for details on spatial parameters, n=344 out of 585 CA1 cells; n=159 out of 288 PFC cells had fields on the track), including units that were both active during the odor period (choice selective and non-selective) and inactive during these periods (Figure 7a and b; examples of CA1 and PFC choice-selective cells with spatial fields in Figure 7a, examples of CA1 and PFC odor active but non-selective cells with spatial fields shown in Figure 7—figure supplement 1a).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig7-v2.jpg)
+
+**Figure 7.:** (a) Example choice-selective units (CA1, first two columns, PFC, last two columns) with spatial fields on the track. Top row: Heat map illustrating spatial fields during run bouts. Middle row: Linearized spatial tuning curves for outbound left and right run trajectories. Bottom row: PSTHs showing odor responses during decision-making period (Odor selectivity indices, left to right: 0.92,–0.43, −0.40,–0.57). (b) Spatial field prevalence in odor period inactive and odor period active cells in CA1 (left) and PFC (right). CA1: 273/477 (57%) of inactive cells, and 71/108 (66%) of active cells had spatial fields (binomial test: p = 0.03*); PFC: 76/160 (48%) of inactive cells, and 83/128 (66%) of active cells had spatial fields (binomial test: p = 2.7e-5***). (c) Spatial field width for odor period inactive and odor period active units in CA1 (left) and PFC (right). If a unit had a spatial field on both outbound trajectories, each field was counted separately. (Rank-sum tests; CA1: n = 452 fields, p = 0.15; PFC: n = 207 fields, p = 0.92). (d) Trajectory selectivity scores of choice-selective units according to preferred choice (Rank sum tests, CA1: p = 0.26; PFC: p = 0.20). Boxplots represent interquartile range and stems represent 95% percentile bounds. (e) Decoding of choice identity by naïve Bayesian classifier according to CA1 (left) and PFC (right) task-responsive ensemble activity at five equally sized spatial quintiles along the full run trajectory of the maze. 1 spatial quintile = 24.6 cm (123 cm / 5). Colored error bars indicate real data mean ± s.d. whereas grey error bars indicate shuffled data mean ± s.d. Stars indicate quintiles where the fraction of correctly decoded trials was significantly higher than the fraction from the shuffled data (rank-sum tests, * = p < 0.05). (f) As in (e), but decoding of choice identity according to CA1 (left) and PFC (right) spatially-modulated ensemble activity at each spatial quintile (rank-sum tests, * = p < 0.05, ** = p < 0.01).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/79545/elife-79545-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Example task-responsive (but not choice-selective) units from CA1 (left) and PFC (right) with spatial fields on the track. Top row: Heat map of firing fields during run bouts. Middle row: Linearized spatial tuning curves for outbound left and right run trajectories. Bottom row: PSTHs showing odor responses during decision-making period. (b) Mean firing rate of odor period inactive units during running on the maze, excluding decision-making periods (Rank-sum tests: CA1 (left): n = 585 cells, p = 2.8e-14***; PFC (right): n = 288 cells, p = 1.3e-5***). (c) Place field peak rate for odor period inactive and odor period active cells. (Rank sum tests, CA1 (left): n = 452 fields, p = 0.14; PFC (right): n = 207 fields, p = 0.08). (d) Place field sparsity for odor period inactive and odor period active cells. (Rank sum tests, CA1 (left): p = 0.70; PFC (right): p = 0.88). (e) Percentage of trajectory selective and non-trajectory selective cells that that were also odor period active (Binomial tests: CA1 (left): n = 108 odor active units, p = 3.0e-4***; PFC (right): n = 128 odor active units, p = 0.02*). (f) Mean ensemble firing rate of odor period active units in CA1 and PFC during outbound runs. Solid line indicates mean, shaded area represents s.d. Thick colored bar above marks positions in which the ensemble rate exceeds the 99th percentile of a bootstrap randomized null mean ensemble rate.
 
 Cells that were odor period active were more likely to have spatial fields on the track (odor sampling periods were excluded in spatial responses, see Methods), compared to cells that were not (Figure 7b, binomial test, CA1: p=0.029; PFC: p=2.7e-5). Additionally, for both CA1 and PFC neurons, we found odor period active cells had higher firing rates overall (Figure 7—figure supplement 1b), suggesting a possible relationship between cell activity during decision making and maintenance of the decision during the central stem run. To examine this question further, we asked whether the spatial fields in either CA1 or PFC exhibited different characteristics based on whether or not they were active during the decision-making period. Surprisingly however, we found no difference in field width (Figure 7c, rank-sum tests, CA1: p=0.15; PFC: p=0.92), field peak rate (Figure 7—figure supplement 1c), or field sparsity (Figure 7—figure supplement 1d) between cells that were odor period active or inactive in either region.
 
@@ -134,15 +182,102 @@ The stronger local beta phase modulation of spiking activity during correct tria
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rat)</td>
+      <td>Long Evans</td>
+      <td>Charles River</td>
+      <td>Cat#: Crl:LE 006; RRID: RGD_2308852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl Butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: H2805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heptanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: E15701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 50-00-0,67561,7732-18-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks, MA</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mountainsort</td>
+      <td>Barnett et al., 2016; Chung et al., 2017</td>
+      <td>https://github.com/magland/mountainlab;RRID: SCR_017446</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chronux</td>
+      <td>Partha Mitra</td>
+      <td>http://www.chronux.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>128-channel data acquisition system</td>
+      <td>SpikeGadgets</td>
+      <td>http://www.spikegadgets.com</td>
+      <td>Electrophysiology data acuisition system</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olfactometer</td>
+      <td>MedAssociates Inc</td>
+      <td>Cat#: PHM-275</td>
+      <td>Two Channel Dilution Olfactometer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>12.7 μm NiCr tetrode wire</td>
+      <td>Sandvik</td>
+      <td>Cat#: PX000004</td>
+      <td>Insulated wire to make electrodes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experimental procedures were approved by the Brandeis University Institutional Animal Care and Usage Committee (IACUC) and conformed to US National Institutes of Health guidelines. Eight male Long-Evans rats (3–6 months, 450–650 g, RRID: RGD_2308852) were used for experiments. Animals were housed individually in a dedicated climate-controlled animal facility on a 12 hr light/dark cycle. All experiments were carried out during light cycle. Upon arrival, animals were provided ad libitum access to food and water and handled regularly to habituate them to human contact.
 
-## Behavior apparatus
+### Behavior apparatus
 
 An olfactometer (MedAssociates Inc) was used for dispensing odors. The olfactometer continuously dispensed clean air to the odor port until receiving a signal to open a solenoid valve which caused air to flow through liquid odorants, resulting in odorized air dispensed to the odor port. A vacuum tube attached to the odor port was used to continuously collect any residual odorized air between trials. Infrared beams were used at the odor port and reward wells to determine the precise timing of entry and exit from these areas.
 
-## Odor-place association task training
+### Odor-place association task training
 
 Once rats reached a minimum threshold weight of 450 g, they were food restricted to no less than 85% of their free-feeding baseline weight. For initial behavioral training, rats were familiarized with the behavior room, the sleep box, running on a raised track to receive evaporated milk reward, and sniffing odors presented in the odor port. Following this habituation, rats were trained to hold their nose in the odor port for a minimum of 500ms, with an auditory tone indicating when this 500 ms time threshold was reached. However, the rats could continue to sniff the odor for any longer duration of time, and odor would be continuously dispensed until they disengaged from the odor port. Throughout all training and experiments, if the rat exited the odor port before this threshold was reached, no reward was dispensed regardless of the rat’s choice and the rat was required to re-initiate the trial. These prematurely terminated trials were excluded from all analyses. For each trial, the odor sampling period was defined as the time from the onset when rat’s nose broke the infrared beam to offset when the beam break was terminated, and odor stimulus was stopped.
 
@@ -152,77 +287,81 @@ Associative trace memory training was shaped in steps. The rats first learned th
 
 Once training was complete, animals were once again provided with ad libitum access to food until they reached at least 600 g, before undergoing surgery. After surgery but before recording, rats were briefly re-trained on the association until they could again perform the task with at least 80% accuracy. On recording days, animals were allowed to continue performing the task until they reached satiation, about 100–150 trials per day. Task epochs were interleaved by sleep epochs, in which rats spent about 20 min in an opaque sleep box, with a sleep epoch as the first and last epoch of each day.
 
-## Un-cued air sessions
+### Un-cued air sessions
 
 Four of the animals were tested on one session each in which for every trial clean air was dispensed at the odor port, instead of two distinct odors. This session was always between two above criterion performing sessions to reduce the likelihood of the rat not sniffing or not knowing the task rules. Reward was available at a randomly chosen reward port on each trial; although, since the trials were un-cued, the animals would often randomly choose the ‘incorrect’ side and no reward was dispensed (Figure 1—figure supplement 1f). All other aspects of the task were the same as the odor-cued task.
 
-## Surgical procedures
+### Surgical procedures
 
 Surgical implantation techniques were performed as described previously (Shin et al., 2019; Tang et al., 2017; Tang et al., 2021). Briefly, animals were implanted with a microdrive array containing 30 independently moveable tetrodes (12.7 μm NiCr tetrode wire) targeting right dorsal hippocampal region CA1 (–3.6 mm AP and + 2.2 mm ML, 10–12 tetrodes), right PFC (+3.0 mm AP and + 0.7 mm ML10-13 tetrodes), and right olfactory bulb (+7.2 mm AP and + 0.8 mm ML, 1–4 tetrodes). Post-operative analgesic care was provided for 48 hr after surgery to minimize pain and discomfort. In two of the eight animals used for experiments, a nasal thermocouple was implanted in addition to the microdrive array to record the respiratory rhythm. The thermocouple was placed in the left nostril though a hole drilled in the skull at + 7.5 mm anterior to the cribriform suture. The thermocouple wire was secured using dental acrylic and soldered to the same printed circuit board as the tetrodes.
 
-## Tetrode recordings
+### Tetrode recordings
 
 For 1–2 weeks following surgery, tetrodes were gradually lowered to the desired depths. Hippocampal tetrodes were targeted to the pyramidal layer of CA1 using characteristic EEG patterns (sharp wave polarity, theta modulation) and neural firing patterns as previously described (Jadhav et al., 2012; Jadhav et al., 2016). The final placement of tetrodes was confirmed in histological preparations using Nissl staining post-mortem. One tetrode in corpus callosum served as hippocampal reference, and another tetrode in overlying cortical regions with no spiking signal served as PFC reference. A ground screw (GND) installed in the skull overlying cerebellum also served as a reference, and LFP was recorded relative to this GND. All spiking activity was recorded relative to the local reference tetrode. Only LFP activity was recorded from the olfactory bulb. Electrodes were not moved at least 4 hr before and during the recording day to reduce drift, and were micro-adjusted at the end of each recording day to sample new cell populations.
 
 Data were collected using a SpikeGadgets 128-channel data acquisition system and software (SpikeGadgets LLC). Spike data were sampled at 30 kHz and bandpass filtered between 600 Hz and 6 kHz. LFP signals were sampled at 1.5 kHz and bandpass filtered between 0.5 Hz and 400 Hz. The animal’s position and running speed were recorded with an overhead color CCD camera (30 fps) and tracked by color LEDs affixed to the headstage.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 All data analysis was performed in MATLAB using custom code unless otherwise noted. Error bars indicate standard deviation unless otherwise noted. Significance was defined using an alpha of 0.05. Statistical details including tests used, p-values, and n values can be found in figure legends, and are described in-depth below.
 
-## Local field potential
+### Local field potential
 
 Trial-averaged spectrograms and coherograms were calculated using multi-taper spectral methods included in the Chronux package for MATLAB (http://www.chronux.org/). To get the beta filtered local field potential (LFP) signal, raw LFP (with respect to GND) was band pass filtered at 20–30 Hz using a zero-phase IIR filter. Amplitude, phase, and envelope magnitude of the signals were obtained using a Hilbert transform (for each rhythm zero phase was defined as the peak of the sine wave). Beta power and coherence were z-scored to the epoch mean. Similarly, the respiratory rhythm signal was obtained by band pass filtering the raw LFP at 7–8 Hz. All comparisons between conditions (pre-post odor period, correct vs incorrect, and odor vs air or reward period) were calculated as within-session difference in coherence or power, and the mean and SEM of those difference values across sessions were plotted.
 
-## Bootstrap tests
+### Bootstrap tests
 
 Bootstrap tests for Figure 2g were performed when coherence on odor-cued and air-cued trials were compared, to account for the much larger percentage of odor-cued trials. Data points on odor trials were randomly down-sampled with replacement to match the number of air trials, and the mean was calculated for this new set of datapoints. This down-sampling was done 1000 times, to create a new, bootstrapped distribution of means. The observed mean value for the air trial distribution was compared to the bootstrapped distribution. p-Values were calculated by counting the number of values in the bootstrapped distribution that were greater than or equal to the observed mean value, and dividing by the total number of re-samples (1000). p-Values less than 0.05 were considered statistically significant, and thus rejected the null hypothesis that the two observed distributions had equal means.
 
-## Sharp-wave ripple detection
+### Sharp-wave ripple detection
 
 Hippocampal sharp-wave ripples were detected as previously described (Jadhav et al., 2016; Shin et al., 2019; Tang et al., 2017). Briefly, the locally referenced LFP signal from CA1 tetrodes was filtered in the ripple band (150–250 Hz), and the envelope of the ripple-filtered LFPs was determined using a Hilbert transform. SWR events were detected as contiguous periods when the envelope stayed above 3 SD of the mean on at least one tetrode for at least 15ms.
 
-## Cross-frequency coupling
+### Cross-frequency coupling
 
 Phase-amplitude coupling between RR and beta was computed for Figure 2—figure supplement 1f as previously described (Tort et al., 2010). In brief, the phases of RR were divided into 20 degree bins, and the mean amplitude of the beta rhythm at each phase was calculated. The mean amplitudes were then normalized by dividing each bin by the sum of amplitudes across all bins. The strength of phase-amplitude coupling was determined by comparing the amplitude distribution to a uniform distribution by calculating the modulation index (MI), which is based on the Kullback–Leibler (KL) distance but normalized so that values fall between 0 and 1, where a value of 0 indicates a uniform distribution of beta amplitudes across RR phases. Significance was determined by comparing the calculated MI to a null distribution generated by shuffling the trial number assignments of the RR phase series; this maintains the structure of the underlying rhythm but randomly aligns the beta amplitudes on each trial to each trial sequence RR phases.
 
-## Single unit analysis
+### Single unit analysis
 
 Spike sorting was done semi-automatically using MountainSort (Barnett et al., 2016; Chung et al., 2017), with manual curation. Only well-isolated units were used for analysis. Putative interneurons and pyramidal cells were classified based on average firing rate and spike width, as described previously (Shin et al., 2019; Tang et al., 2017). Units were classified as interneurons if they had an average firing rate exceeding 7 Hz and an average spike width under 0.3ms. All other units were considered putative pyramidal cells. Units were excluded from analysis if they had fewer than 100 spikes across all task epochs. A number of pyramidal cells only had spikes during sleep epochs, and these were excluded from analysis (Jadhav et al., 2016; Karlsson and Frank, 2009). For analyses during the odor-sampling and decision-making period (Figures 3—6), cells were included with the criterion of spikes at least equal to the number of trials (Figure 3g–h, ‘Odor Period Active’ and ‘Inactive Cells’), since all analysis done here focused exclusively on the task periods.
 
-## Task responsiveness
+### Task responsiveness
 
 Task responsiveness was calculated as a change in firing rate following odor onset, compared to a pre-stimulus period of the same length of time as the odor sampling period on each trial leading up to odor port engagement. Sampling events were only considered if the animal held its nose in the odor port for longer than 0.50 s and proceeded to a reward port. Statistical significance was determined from the Wilcoxon signed rank test of those trial-matched rate differences for each odor identity separately. If a cell showed a significant change up or down from baseline for at least one of the odors, it was considered task responsive. Of note, there was only a single unit analyzed whose firing rate changed in opposite directions from baseline for the two odors, the remainder showed the same direction of change in firing rate for the two odors.
 
-## Choice selectivity
+### Choice selectivity
 
-Firing rates during odor sampling were calculated as the number of spikes as a function of time from odor-port engagement to odor-port disengagement. Choice selectivity was calculated using the following equation:SI=λ1-λ2λ1+λ2
+Firing rates during odor sampling were calculated as the number of spikes as a function of time from odor-port engagement to odor-port disengagement. Choice selectivity was calculated using the following equation:
 
-Where λ1 is the firing rate vector for Odor 1 trials, and λ2 is firing rate vector for Odor 2 trials. SI = 1 indicates that the cell only responded on Odor 1 trials, whereas SI = –1 indicates that the cell only responded on Odor 2 trials. To determine significance, a null distribution was generated in which the odor identities were shuffled across trials. Cells were considered choice-selective if the SI fell outside of 1.5 s.d. from the mean of the null distribution.
+$$
+SI=\frac{\lambda_{1}-\lambda_{2}}{\lambda_{1}+\lambda_{2}}
+$$
 
-## Corrected spike cross-correlogram
+Where $\lambda_{1}$ is the firing rate vector for Odor 1 trials, and $\lambda_{2}$ is firing rate vector for Odor 2 trials. SI = 1 indicates that the cell only responded on Odor 1 trials, whereas SI = –1 indicates that the cell only responded on Odor 2 trials. To determine significance, a null distribution was generated in which the odor identities were shuffled across trials. Cells were considered choice-selective if the SI fell outside of 1.5 s.d. from the mean of the null distribution.
+
+### Corrected spike cross-correlogram
 
 To correct for the triangular shape in the cross-correlogram, we utilized a spike-shuffling procedure similar to that previously described (Kay et al., 2020). In brief, all spikes from one cell were jittered randomly +/- 50 ms and the cross correlogram was recalculated from –0.15 seconds to.15 s in 2.5 ms bins. This procedure was performed 1000 times, and the pointwise z-score of the real cross-correlogram was calculated from the shuffle. The highest peak within +/- 100 ms that achieved significance (p<0.05), was chosen as the significant peak in the ccg, and only those cross correlograms in which there was a significant peak were displayed (and smoothed with a Gaussian kernel with σ=1 bin).
 
-## Phase locking
+### Phase locking
 
 For all phase-locking analyses, the tetrode in each region with the most cells on each given day was used to measure oscillatory phase of either beta or RR. Phase locking of individual cells to the beta and respiratory rhythms was calculated by pooling the spike phases of each cell during the odor-sampling periods and performing a Rayleigh Z test for circular non-uniformity. When comparing phase coherence during correct trials versus that during incorrect trials, we adopted a down sampling strategy to adjust for rate differences, as described previously (Rangel et al., 2016). First, we matched the number of spikes during correct trials to that during incorrect trials. We then bootstrapped a mean vector length for the downsampled correct trials 1000 times and directly compared that to the MVL during incorrect trials. For calculation of the mean phase preference of each cell, we calculated the mean phase of all spikes during correct trials assuming a Von-Mises distribution.
 
-## Principal component analysis (PCA)
+### Principal component analysis (PCA)
 
 We used PCA to visualize population activity of CA1 and PFC ensembles over time individual sessions. Spiking activity in the decision-making period aligned to odor onset was binned (binsize = 100ms, window = 0–1 s), and a firing rate matrix was constructed where each row represents a bin and each column represents a neuron. Only sessions with at least four task-responsive neurons (threshold applied for both CA1 and PFC; CA1 and PFC ensembles were examined separately) were used for analyses. We used PCA to find the principal component coefficients of the matrix and applied the coefficients to the population activity for left-bound vs. right-bound trials. Population activity was projected onto the PC space. The first 3 PCs were used for visualization and analysis. The Euclidean distance between left-bound and right-bound average trajectories was compared to a chance-level distance distribution computed by shuffling the trial identities across trials and creating a null distribution. The timepoint at which the population responses were considered significantly distinct from each other was defined as the first timepoint at which the real distance between trajectories surpassed the 95% confidence interval of the null (shuffled) distribution. Similar results were obtained for Euclidean distance computed with the first 3 PCs and for Euclidean distance computed for all neurons without dimensionality reduction.
 
-## GLM
+### GLM
 
 A generalized linear model (GLM) with a log link function was constructed to predict reward choice based on neural activity during the odor sampling period. Activity from all task-responsive neurons that were active on at least 10 trials was included. Neural population activity from different length time bins from 0.1 s to 1 s aligned to odor onset was used for prediction, that is 0–0.1 s, 0–0.2 s … 0–1.0 s. Fivefold cross validation was used to test prediction. For each fold, the session’s trials were randomly partitioned into five equally sized sets. Four of the five sets were used to train the GLM model and the remaining set was used to test. The prediction accuracy was calculated by dividing the number of correctly predicted trials by the total number of trials used for testing for each fold.
 
 Significance was determined by performing the same procedure as described above but shuffling the trial outcomes to obtain a null distribution. At each time bin used for the prediction, a rank-sum test was performed on the prediction accuracy using the real data compared to the shuffled data.
 
-## Occupancy maps
+### Occupancy maps
 
 For all spatial field analyses, only the five animals that were trained on the full T-maze were used; the three animals trained on the truncated maze were excluded due to insufficient spatial data. Two-dimensional occupancy maps were generated by calculating occupancy in 2 cm square spatial bins from epochs in which the animals running speed exceeded 3 cm/s and convolving with a 2d Gaussian (σ=2 pixels).
 
-## Place field determination
+### Place field determination
 
 2-D occupancy-normalized firing rate maps were generated by dividing the spikes at each 2-D pixel by the unsmoothed occupancy at that pixel, and then smoothing with a Gaussian kernel of (σ=2 pixels, or 4 cm).
 
@@ -230,18 +369,22 @@ Linearized trajectory occupancy maps were calculated as previously described (Ja
 
 Place field peak was calculated as the peak rate bin on the smoothed, linearized rate map, and place fields were only considered for trajectories in which the cell had a peak firing rate of at least 1 Hz. Place field width was calculated using a flood fill-algorithm in which the edges were defined as the closest bins to the peak bin in which the rate fell below 25% of the peak rate. Place field sparsity and information scores were calculated as previously described (Skaggs et al., 1993). A cell was determined to have a place field if its peak firing rate along that trajectory was ≥2 S.D. above the mean of a bootstrapped distribution generated by circularly shifting the spikes in time for each individual run, and if the field covered less than 75% of the linearized trajectory. When analyzing the place field characteristics of choice-selective cells (Figure 7, Figure 7—figure supplement 1), the field of each outbound journey was analyzed separately so as to prevent ‘choosing’ certain fields over others.
 
-## Trajectory selectivity
+### Trajectory selectivity
 
 Trajectory selective cells were identified using a previously validated method (Shin et al., 2019). Briefly, the linearized spatial tuning curve was calculated separately for each outbound trajectory and the correlation between those trajectories was computed. A cell was identified as trajectory selective if this correlation value was lower than the 5th percentile of a distribution wherein each outbound trajectory identity was shuffled and the correlation recalculated. Thus, trajectory selectivity was deduced if there was an anticorrelation in the spatial patterns of firing between the two runs.
 
 To measure trajectory selectivity as it related to decision period selectivity, we used an analogous method to the odor selectivity index. Briefly, we calculated the mean firing rate along each run beginning one half second following odor port exit and once the animal’s speed exceeded 3 cm/s to the end of that run (when the animal either reached the goal or its velocity fell below 3 cm/s for more than ½ second). The difference in these mean firing rates across runs was divided by the sum of those two mean rates to generate a trajectory selectivity index.
 
-## Bayesian decoder
+### Bayesian decoder
 
-Choice identity decoding was performed as previously described (Karlsson and Frank, 2009). Briefly, a memoryless Bayesian decoder was built for each of the two choice identities from spikes occurring in the odor sampling period. Then, the likelihood of each choice (x) was reconstructed from their posterior probabilities given the spikes occurring at each segment along the maze on each run (p(x | spikes)=p(spikes | x) * p(x) / p(spikes)). Run activity was defined as contiguous bouts following the odor sampling period when the animal was traveling above 3 cm/sec. Additionally, to prevent overlap between odor-period spiking and run spiking, the run periods were defined beginning 0.5 s following odor port disengagement time. We assumed that the N active cells fired independently and followed a Poisson process, giving the following equation.P(X|spikes)=C∗(∏i=1Nfi(X)spikesi)∗e−τ∑i=1Nf(X)
+Choice identity decoding was performed as previously described (Karlsson and Frank, 2009). Briefly, a memoryless Bayesian decoder was built for each of the two choice identities from spikes occurring in the odor sampling period. Then, the likelihood of each choice (x) was reconstructed from their posterior probabilities given the spikes occurring at each segment along the maze on each run (p(x | spikes)=p(spikes | x) * p(x) / p(spikes)). Run activity was defined as contiguous bouts following the odor sampling period when the animal was traveling above 3 cm/sec. Additionally, to prevent overlap between odor-period spiking and run spiking, the run periods were defined beginning 0.5 s following odor port disengagement time. We assumed that the N active cells fired independently and followed a Poisson process, giving the following equation.
+
+$$
+P(X|spikes)=C∗(\prodi=1Nf_{i}(X)^{spikes_{i}})∗e^{−\tau}\sumi=1Nf(X)
+$$
 
 where C is a normalization constant across the two choice identities. The p-value was calculated from the Gaussian statistics of a Monte Carlo random shuffle (200 shuffles) of choice identity during the odor sampling period. When choice identity decoding was calculated from the likelihoods of activity from each run, the decoding was performed in the same fivefold leave-one-out fashion as was used in the GLM analyses, and the p value was calculated from the same Monte Carlo random shuffle of the training set route identities as the odor period based decoding.
 
-## Code Availability
+### Code Availability
 
 All data processing, analyses and statistics in this study were conducted using open-source package Mountainsort (https://github.com/flatironinstitute/mountainsort), and custom code in MATLAB (R2018), unless otherwise noted. All custom code is available on GitHub at:, (copy archived at swh:1:rev:88d5f8d2bb39796b8656dc42bd42969a7bbe8697; Bladon, 2022).

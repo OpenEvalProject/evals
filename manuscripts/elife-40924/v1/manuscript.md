@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.40924.001 The contrast sensitivity function (CSF), how sensitivity varies with the frequency of the stimulus, is a fundamental assessment of visual performance. The CSF is generally assumed to be determined by low-level sensory processes. However, the spatial sensitivities of neurons in the early visual pathways, as measured in experiments with immobilized eyes, diverge from psychophysical CSF measurements in primates. Under natural viewing conditions, as in typical psychophysical measurements, humans continually move their eyes even when looking at a fixed point. Here, we show that the resulting transformation of the spatial scene into temporal modulations on the retina constitutes a processing stage that reconciles human CSF and the response characteristics of retinal ganglion cells under a broad range of conditions. Our findings suggest a fundamental integration between perception and action: eye movements work synergistically with the spatio-temporal sensitivities of retinal neurons to encode spatial information.
+The contrast sensitivity function (CSF), how sensitivity varies with the frequency of the stimulus, is a fundamental assessment of visual performance. The CSF is generally assumed to be determined by low-level sensory processes. However, the spatial sensitivities of neurons in the early visual pathways, as measured in experiments with immobilized eyes, diverge from psychophysical CSF measurements in primates. Under natural viewing conditions, as in typical psychophysical measurements, humans continually move their eyes even when looking at a fixed point. Here, we show that the resulting transformation of the spatial scene into temporal modulations on the retina constitutes a processing stage that reconciles human CSF and the response characteristics of retinal ganglion cells under a broad range of conditions. Our findings suggest a fundamental integration between perception and action: eye movements work synergistically with the spatio-temporal sensitivities of retinal neurons to encode spatial information.
 
 ## Introduction
 
@@ -31,6 +31,14 @@ It has long been established that sensitivity varies in a specific manner with t
 A popular theory directly links the low-frequency attenuation in visual sensitivity to the neural mechanisms of early visual encoding (Atick and Redlich, 1990; Atick and Redlich, 1992). Building on theories of efficient coding (Barlow, 1961), it has been argued that this attenuation reflects a form of matching between the characteristics of the natural visual world and the response tuning of neurons in the retina: retinal ganglion cells (henceforth RGCs) respond less strongly at low spatial frequencies so as to counterbalance the spectral distribution of natural scenes. According to this proposal, this filtering eliminates part of the redundancy intrinsic in natural scenes and enables more efficient (i.e. more compact) visual representations.
 
 Although very influential, this proposal conflicts with experimental data. Neurophysiological recordings have long shown that the way the responses of retinal ganglion cells vary with spatial frequency deviates sharply from the CSF. The CSF of macaques is very similar to that of humans (De Valois et al., 1974); yet neurons in the macaque retina respond much more strongly at low spatial frequencies than one would expect from behavioral measurements of the CSF (Figure 1A). This deviation cannot be reconciled with standard models of retinal ganglion cells. It persists even when one takes into account obvious differences in the stimuli often used in neurophysiological and behavioral measurements (i.e. drifting gratings vs. temporally modulated gratings), as well as the nonlinear attenuation in responsiveness at low spatial frequencies exhibited by some retinal ganglion cells (Derrington and Lennie, 1984; Croner and Kaplan, 1995; Benardete and Kaplan, 1997a). This mismatch between neuronal and behavioral sensitivity indicates that additional mechanisms contribute to the CSF.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig1-v1.jpg)
+
+**Figure 1.:** (A) Behavioral and neurophysiological measurements of contrast sensitivity. The contrast sensitivity functions (CSF) of humans and macaques (black curves; De Valois et al., 1974) are compared to the receptive fields profiles of magno- (M) and parvo-cellular (P) retinal ganglion cells (red curves; Croner and Kaplan, 1995). (B) Fixational eye movements (FEMs; red curve in magnified inset and black and gray traces in Cartesian graph), which include small saccades (microsaccades; red-shaded interval) and fixational drift (green), continually displace the stimulus on the retina.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Spatial sensitivity of magno- (A) and parvo-cellular neurons (B) as a function of the ratio between the strengths of their center and surround. The responses of both M and P cells were re-normalized to the maximum of the behavioral CSF (curve labeled "Human", replotted from ) Figure 1A for comparison purposes. 'DL' and 'CK' label the ratios measured experimentally by Derrington and Lennie (1984) and Croner and Kaplan (1995) respectively, from the medians of their reported values. All other parameters were set as described in the Materials and methods section. (C, D) Full parametric analysis of the difference in slope at low spatial frequencies between the human CSF and the spatial sensitivity of difference-of-Gaussians models. Each point in the map shows the slope deviation resulting from a particular ratio between surround and center amplitudes ($A_{s}/A_{c}$, horizontal axis) and between radii ($r_{s}/r_{c}$, vertical axis) in the models (Equation 3). A value of zero represents perfect matching between the CSF and the receptive fields profile; negative/positive values indicate that the neuronal filter is less/more attenuated than the CSF. Values of the parameters for which the slope could not be computed because the receptive field did not exhibit a band-pass behavior are indicated by white. The magenta and greed dots mark parameters measured experimentally by Croner and Kaplan (1995) and Derrington and Lennie (1984) respectively (dashed lines). (D) Ratio between center/surround excitation and inhibition. A value of 1 indicates that center and surround have the same strength. Legends and symbols are as in C. Comparison of panels C and D shows that a slope similar to that of the human CSF can only be obtained for close balance between excitation and inhibition. These values differ greatly from those measured experimentally (magenta dot).
 
 A fundamental difference between neurophysiological and behavioral measurements of contrast sensitivity is the presence of eye movements in the latter. Under natural viewing conditions, humans and other primates incessantly move their eyes (Kowler, 2011; Cherici et al., 2012). Small movements, known as fixational eye movements (FEMs), occur, even when attempting to maintain steady gaze on a single point (Figure 1B). Although humans often tend to suppress saccades of all sizes, including microsaccades, during measurements of contrast sensitivity (Mostofi et al., 2016), ocular drift—the seemingly erratic motion in between saccades/microsaccades—keeps the stimulus on the retina always in motion and may cover an area as large as that of the foveola (Rucci and Poletti, 2015a). Critically, this retinal image motion is completely eliminated or markedly attenuated in many neurophysiological preparations, where the retina is studied in a dish, or eye muscles are paralyzed as a result of anesthesia and/or neuromuscular blockade.
 
@@ -48,6 +56,14 @@ While a difference-of-Gaussians model can yield reduced responses at low spatial
 
 The response of a neuron, however, does depend not only on the cell’s spatial preference but also on its temporal sensitivity. Temporal transients are always present in the input signals to the retina during behavioral measurements of contrast sensitivity. Experimenters often take great care to minimize these transients, for example by slowly ramping up the stimulus at the beginning and down at the end of a trial and by enforcing fixation to prevent visual changes caused by saccadic eye movements (Figure 2A). Yet, despite these precautions, fixational eye movements are always present and modulate the visual flow impinging on the retina even when the stimulus does not change on the monitor. Could sensitivity to these oculomotor fluctuations reconcile neurophysiological and behavioral measurements of spatial sensitivity?
 
+![Figure 2.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig2-v1.jpg)
+
+**Figure 2.:** (A) Temporal modulations in the stimulus. Measurements of contrast sensitivity often change gradually the contrast of the stimulus during the course of the trial. In this case, the stimulus is a static grating. (B) Fixational jitter modulates input signals in a way that depends on the spatial frequency of the stimulus. The same amount of fixational drift yields larger temporal fluctuations with gratings at higher spatial frequencies (vertical arrows). (C) Input power with gratings at 1 and 8 cycles/deg (left panel). Higher spatial frequencies lead to broader temporal distributions (right panel). (D) Total power available at non-zero temporal frequencies with and without fixational drift. In this latter case, temporal modulations are only caused by the temporal contrast envelope of stimulus presentation. Shaded regions represents one standard deviation (see inset). Data represent averages over $N=5$ observers. (E) Temporal sensitivities of modeled retinal ganglion cells. Model parameters are reported in Tables 1 and 2 in Materials and methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Data represent averages over $N=5$ observers. Symbols are as in Figure 2D.
+
 To investigate this question, we recorded eye movements in human observers, as they carried out a grating detection task at threshold and exposed spatiotemporal filters approximating the receptive fields of retinal ganglion cells to the luminance signals experienced by the retina in each individual trial. Figure 2B shows the temporal modulations impinging onto retinal neurons during a typical measurement of contrast sensitivity. In the absence of any transient, the power of a stationary visual stimulus would be confined to the DC (0 Hz) temporal frequency axis. In practice, however, both eye drift and the turning of the stimulus on and off on the display introduce temporal modulations. These modulations effectively redistribute part of the stimulus DC power to nonzero temporal frequencies, that is they transform static power (the original power at 0 Hz) into dynamic power (power at non-zero temporal frequencies).
 
 As shown in Figure 2C–D, because of the characteristics of ocular drift, the resulting dynamic power increases with spatial frequency, up to approximately 30 cpd (magenta line in Figure 2D), which, interestingly, roughly corresponds to the frequency limit given by the spatial resolution of photoreceptors in the fovea. In contrast, unlike drift, contrast modulations due to the onset/offset of the stimulus on the display cause power redistributions that do not depend on the spatial frequency of the stimulus (black line in Figure 2D). It is important to keep in mind that eye movements do not generate new power in the retinal input. They only redistribute the original DC power of the stimulus, so that a complementary frequency-dependent attenuation of power occurs along the 0 Hz axis (Figure 2—figure supplement 1).
@@ -56,13 +72,29 @@ Both eye drift and contrast changes yield temporal modulations that are well wit
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig3-v1.jpg)
 
-**Figure 3.:** Predicted CSFs in the presence (Drift; solid line) and absence (No Drift; dashed line) of eye movements. Stimuli were stationary gratings. (A) A linear combination of the responses of M and P cells closely matches classical measurements (circles; data from De Valois et al., 1974) only when eye drift occurs. (B–C) CSFs predicted separately from the responses of M (panel B) and P (panel C) cells.10.7554/eLife.40924.009Figure 3—source data 1.Figures 3 and 4 loaded by Source code 1 and 2.
+**Figure 3.:** Predicted CSFs in the presence (Drift; solid line) and absence (No Drift; dashed line) of eye movements. Stimuli were stationary gratings. (A) A linear combination of the responses of M and P cells closely matches classical measurements (circles; data from De Valois et al., 1974) only when eye drift occurs. (B–C) CSFs predicted separately from the responses of M (panel B) and P (panel C) cells.
 
 In contrast, in the absence of eye movements, when the only temporal modulations were those given by the onset/offset of the stimulus on the monitor, the CSF predicted by the same linear combination of neural responses exhibited a low-pass behavior that deviated considerably from human contrast sensitivity, especially at low spatial frequencies (dashed lines in Figure 3). In fact, no linear combination of modeled responses could approximate the CSF in this condition. This happened because, unlike the luminance modulations resulting from ocular drift, the amplitude of the contrast modulations of the stimulus on the display does not depend on the spatial frequency of the stimulus (black line in Figure 2D). Thus, without taking ocular drift into account, neuronal models exhibit a higher level of response at low spatial frequencies, as dictated by the spatial sensitivity of their kernels — and this strongly deviates from the CSF (Figure 1A).
 
 In sum, standard models of the responses of M and P RGCs well predict the shape of the human CSF as measured with stationary gratings, but only when one considers sensitivity to the temporal modulations caused on the retina by fixational drift.
 
 Contrast sensitivity is a function not only of the spatial frequency of the stimulus but also of its temporal frequency. Measurements with gratings modulated in time have long shown that the CSF in humans is not space-time separable: the way contrast sensitivity varies with spatial frequency depends on the temporal frequency of the modulation (Robson, 1966). As the temporal frequency increases, the CSF changes its shape, transitioning from band-pass to low-pass (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig4-v1.jpg)
+
+**Figure 4.:** (A) Human CSFs measured with static (0 Hz; data from De Valois et al., 1974 and sinusoidally modulated (6 Hz; data from Robson, 1966) gratings. (B) Contrast sensitivity functions predicted by our model in the presence of temporally modulated gratings are compared with measurements from Robson (1966). See Figure 4—figure supplement 3 for the separate contributions of M and P cells. (C) Power spectra of the response of modeled retinal ganglion cells during viewing of gratings temporally modulated at 6 Hz. Each point in the map represents the amount of power at a given temporal frequency resulting from translating the modeled receptive fields over a grating at the corresponding spatial frequency following the recorded eye drift trajectories.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** With respect to Figure 4B, this figure shows a finer sampling of temporal frequencies.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Predicted CSF for two different temporal frequency thresholds. Results in the main text were obtained by discarding temporal power below 0.63 Hz. Results vary little when this threshold is lowered to 0.55 Hz (left panel) or 0.39 Hz (right panel). (B) Predicted CSF when the temporal sensitivity of P cells below 2 Hz was modeled as a power law and power was integrated across all temporal frequencies (no low-frequency threshold). Results are robust with respect to the slope of the power law (1 and 0.7 in the left and right panel, respectively) and virtually identical to those obtained with different integration ranges (cfg. panel (A)).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Legends and symbols are as in Figure 4B.
 
 To investigate whether our model also accounts for this change in shape, we repeated our simulations using gratings modulated at various temporal frequencies. The same linear combination of the responses of M and P cells as in Figure 3 continued to closely match human performance when the stimulus was temporally modulated on the display, and the predicted CSF replicated the low-pass to band-pass transition observed in primates, as the frequency of the modulation increased (Figure 4B).
 
@@ -76,7 +108,15 @@ In real experiments, however, elimination of oculomotor-induced luminance modula
 
 To examine whether sensitivity to temporal transients accounts for the changes in the CSF measured under retinal stabilization, we exposed modeled neurons to reconstructions of the visual input signals experienced in these experiments. Previous studies have established that a Brownian model well captures the characteristics of retinal image motion during fixation (Kuang et al., 2012; Poletti et al., 2015). Building on this previous finding, we modeled the residual motion of the retinal image in stabilization experiments as a Brownian process, but with greatly reduced diffusion coefficients relative to that present during normal, unstabilized fixation.
 
-Figure 5A shows how the spatial frequency content of the luminance fluctuations experienced by retinal receptors (the power available at nonzero temporal frequencies) varies with the scale of the Brownian motion process (i.e. its diffusion coefficient, D). Changing the amount of retinal image motion has interesting repercussions on the characteristics of temporal modulations. As expected, a smaller diffusion constant delivers less dynamic power to the retina within the range of neural sensitivity, a direct consequence of the fact that luminance modulations are now smaller. However, a smaller D also has the effect of shifting the range of amplification to higher spatial frequencies by a factor of D. This happens because reducing the scale of retinal image motion is functionally equivalent to spatially stretching the stimulus, which translates, in the Fourier domain, to a compression of the axis of spatial frequencies that moves the amplification range toward higher spatial frequencies.
+Figure 5A shows how the spatial frequency content of the luminance fluctuations experienced by retinal receptors (the power available at nonzero temporal frequencies) varies with the scale of the Brownian motion process (i.e. its diffusion coefficient, $D$). Changing the amount of retinal image motion has interesting repercussions on the characteristics of temporal modulations. As expected, a smaller diffusion constant delivers less dynamic power to the retina within the range of neural sensitivity, a direct consequence of the fact that luminance modulations are now smaller. However, a smaller $D$ also has the effect of shifting the range of amplification to higher spatial frequencies by a factor of $\sqrt{D}$. This happens because reducing the scale of retinal image motion is functionally equivalent to spatially stretching the stimulus, which translates, in the Fourier domain, to a compression of the axis of spatial frequencies that moves the amplification range toward higher spatial frequencies.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig5-v1.jpg)
+
+**Figure 5.:** (A) Spatial spectral density of the luminance modulations resulting from a Brownian model of retinal image motion with different diffusion constants. Lowering $D$ both attenuates the power available at each spatial frequency (vertical arrow) and shifts the distribution to higher spatial frequencies (horizontal arrow). (B) Predicted contrast sensitivity under retinal stabilization. Sensitivity is reduced and shifted to higher spatial frequencies. Dashed vertical lines mark the maxima of the two curves (color coded according to their $D$ in panel A). Results quantitatively match classical experimental data from Kelly (1979). CSFs predicted separately from the responses of M and P neurons are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40924/elife-40924-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Legends and symbols are as Figure 5B, respectively.
 
 These effects in the spectral distributions of the retinal flow well match the changes in contrast sensitivity observed in retinal stabilization experiments. Figure 5B compares classical retinal stabilization data from Kelly (1979) to the sensitivity predicted by our model when the diffusion constant of the retinal image motion was attenuated by a factor of 125, which corresponds to shrinking the spatial scale of eye movements by approximately one order of magnitude. Model predictions closely followed psychophysical measurements: a reduction in the amount of retinal image motion attenuated contrast sensitivity while maintaining its band-pass shape and shifted its peak sensitivity to higher spatial frequencies from 4 Hz to 5.5 Hz (Figure 5B).
 
@@ -110,42 +150,152 @@ Our study also has clinical implications, as it predicts that disturbances in fi
 
 ## Materials and methods
 
-## Data collection and analysis
+### Data collection and analysis
 
 To examine the influences of eye movements on visual sensitivity, neuronal models were exposed to reconstructions of the input signals typically experienced by observers in experiments of contrast sensitivity. To this end, we used oculomotor traces recorded in measurements of contrast sensitivity to move the stimuli presented as input to the models. Methods for the collection and analysis of eye movements data, as well as perceptual results have already been described in previous publications and are only briefly summarized here (see Mostofi et al., 2016 and Boi et al., 2017). This section focuses on the methods that are novel to this study.
 
-## Subjects
+#### Subjects
 
 Eye movements were recorded from five observers (all females, age range 21–31). To optimize the precision of the recordings, only subjects with normal, uncorrected vision took part in the study. Informed consent was obtained from all participants following the procedures approved by the Boston University Charles River Campus Institutional Review Board (protocol number 1062E).
 
-## Apparatus
+#### Apparatus
 
-Stimuli were displayed on a gamma-corrected fast-phosphor CRT monitor (Iyama HM204DT) in a dimly-illuminated room. They were observed monocularly with the left eye patched, while movements of the right eye were recorded by means of a Dual Purkinje Image eyetracker (Fourward Technology) and sampled at 1 KHz. This system has a resolution – measured by means of an artificial eye – of approximately 1′(Crane and Steele, 1985; Ko et al., 2016). A dental imprint bite bar and a head-rest prevented head movements. Stimuli were rendered by means of EyeRIS, a custom system that enables precise synchronization between oculomotor events and the refresh of the image on the monitor (Santini et al., 2007).
+Stimuli were displayed on a gamma-corrected fast-phosphor CRT monitor (Iyama HM204DT) in a dimly-illuminated room. They were observed monocularly with the left eye patched, while movements of the right eye were recorded by means of a Dual Purkinje Image eyetracker (Fourward Technology) and sampled at 1 KHz. This system has a resolution – measured by means of an artificial eye – of approximately $1^{′}$(Crane and Steele, 1985; Ko et al., 2016). A dental imprint bite bar and a head-rest prevented head movements. Stimuli were rendered by means of EyeRIS, a custom system that enables precise synchronization between oculomotor events and the refresh of the image on the monitor (Santini et al., 2007).
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
-As in typical psychophysical CSF measurements, we used a standard grating-detection paradigm (see Mostofi et al., 2016 for the behavioral data). In a forced-choice procedure, observers detected 2D Gabor patterns oriented at ±45∘. Their contrast varied across trials following PEST (Taylor and Creelman, 1967). The frequency and standard deviation of the Gabor were 10 cycles/deg and 2.25∘ respectively. Stimuli were displayed over a uniform field with luminance of 21 c⁢d/m2. Oculomotor traces were segmented in complementary periods of drift and saccades based on a speed threshold of 2o/s (Mostofi et al., 2016). Only oculomotor traces collected around threshold levels of sensitivity and that contained no saccades, microsaccades or blinks were used in this study.
+As in typical psychophysical CSF measurements, we used a standard grating-detection paradigm (see Mostofi et al., 2016 for the behavioral data). In a forced-choice procedure, observers detected 2D Gabor patterns oriented at $\pm45^{∘}$. Their contrast varied across trials following PEST (Taylor and Creelman, 1967). The frequency and standard deviation of the Gabor were 10 cycles/deg and $2.25^{∘}$ respectively. Stimuli were displayed over a uniform field with luminance of 21 $c⁢d/m^{2}$. Oculomotor traces were segmented in complementary periods of drift and saccades based on a speed threshold of $2^{o}$/s (Mostofi et al., 2016). Only oculomotor traces collected around threshold levels of sensitivity and that contained no saccades, microsaccades or blinks were used in this study.
 
-Modeled neurons were exposed to the same retinal input experienced by human participants, identically replicated at all spatial frequencies. Gratings were presented for 3.2 s. They were smoothly ramped up and down in contrast at the beginning and end of the trial by means of the modulating function M⁢(t) and also modulated in time at frequency ωt (ωt = 0, 1, 6, 16, or 22 Hz). The reconstructed retinal input was thus given by:(1)I(x,t|fs,ωt,αs,ϕs)=sin(2πfs⋅(x−ξ(t))T+ϕs)⋅sin(2πωtt)⋅M(t)where 𝝃⁢(𝒕)=[ξx⁢(t),ξy⁢(t)] represents eye movements and fs=[fscos(αs),fssin(αs)] the stimulus frequency (0.1–60 cycles/deg). The orientation αs and the phase ϕs uniformly spanned the range [0 2⁢π).
+Modeled neurons were exposed to the same retinal input experienced by human participants, identically replicated at all spatial frequencies. Gratings were presented for 3.2 s. They were smoothly ramped up and down in contrast at the beginning and end of the trial by means of the modulating function $M⁢(t)$ and also modulated in time at frequency $\omega_{t}$ ($\omega_{t}$ = 0, 1, 6, 16, or 22 Hz). The reconstructed retinal input was thus given by:
 
-## Neural models
+$$
+I(x,t|f_{s},\omega_{t},\alpha_{s},ϕ_{s})=sin(2\pif_{s}⋅(x−ξ(t))^{T}+ϕ_{s})⋅sin(2\pi\omega_{t}t)⋅M(t)
+$$
 
-The mean instantaneous rate of retinal ganglion cells (RGCs) were simulated by means of standard space-time separable linear filters with transfer function:(2)R⁢F⁢(𝒇,ω)=K⁢(𝒇)⋅H⁢(ω)where 𝒇 and ω indicate spatial and temporal frequencies respectively. The spatial kernel K⁢(𝒇) was modeled as in Croner and Kaplan (1995) with a standard difference of Gaussians:(3)K(f)=C(Kcπrc2e−πrc|γf|2−Ksπrs2e−πrs|γf|2)with parameters adjusted based on neurophysiological recordings from macaques (Table 1 in Croner and Kaplan, 1995). The scaling factor γ was set to 0.5 to model the smaller receptive fields of the fovea following cortical magnification (Eq.8 in Van Essen et al., 1984).
+where $𝝃⁢(𝒕)=[ξ_{x}⁢(t),ξ_{y}⁢(t)]$ represents eye movements and $f_{s}=[f_{s}cos(\alpha_{s}),f_{s}sin(\alpha_{s})]$ the stimulus frequency (0.1–60 cycles/deg). The orientation $\alpha_{s}$ and the phase $ϕ_{s}$ uniformly spanned the range $[0 2⁢\pi)$.
 
-The temporal sensitivity function H(ω) consisted of a series of low-pass filters and a high-pass stage as propose by Victor (1987):(4)H⁢(ω)=A⁢e-i⁢ρ⁢2⁢π⁢ω⁢D⁢(1-Hs1+i⁢ρ⁢2⁢π⁢ω⁢τS)⁢(11+i⁢ρ⁢2⁢π⁢ω⁢τL)N
+#### Neural models
 
-Parameters were taken from neurophysiological studies that fitted this model to recorded neurons (M cells: median values in Table 2 in Benardete and Kaplan, 1999; P cells: median values in Table 2 in Benardete and Kaplan, 1997a). The scaling factor ρ was set to 1/1.6 to include the effects of large stimuli on retinal responses (Figure 7B in Alitto and Usrey, 2015).
+The mean instantaneous rate of retinal ganglion cells (RGCs) were simulated by means of standard space-time separable linear filters with transfer function:
 
-## Estimating contrast sensitivity
+$$
+R⁢F⁢(𝒇,\omega)=K⁢(𝒇)⋅H⁢(\omega)
+$$
+
+where $𝒇$ and $\omega$ indicate spatial and temporal frequencies respectively. The spatial kernel $K⁢(𝒇)$ was modeled as in Croner and Kaplan (1995) with a standard difference of Gaussians:
+
+$$
+K(f)=C(K_{c}\pir_{c}^{2}e^{−\pir_{c}|\gammaf|^{2}}−K_{s}\pir_{s}^{2}e^{−\pir_{s}|\gammaf|^{2}})
+$$
+
+with parameters adjusted based on neurophysiological recordings from macaques (Table 1 in Croner and Kaplan, 1995). The scaling factor $\gamma$ was set to $0.5$ to model the smaller receptive fields of the fovea following cortical magnification (Eq.8 in Van Essen et al., 1984).
+
+**Table 1.**
+ Parameters used in Equation 3 to model the spatial kernels of magno- (upper row) and parvo-cellular (bottom row) neurons.Data are from Croner and Kaplan (1995).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>rc</th>
+      <th>Kc</th>
+      <th>rs</th>
+      <th>Ks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.10</td>
+      <td>148</td>
+      <td>0.72</td>
+      <td>1.1</td>
+      <td>M cells</td>
+    </tr>
+    <tr>
+      <td>0.03</td>
+      <td>353.2</td>
+      <td>0.18</td>
+      <td>4.4</td>
+      <td>P cells</td>
+    </tr>
+  </tbody>
+</table>
+
+The temporal sensitivity function $H(\omega)$ consisted of a series of low-pass filters and a high-pass stage as propose by Victor (1987):
+
+$$
+H⁢(\omega)=A⁢e^{-i⁢ρ⁢2⁢\pi⁢\omega⁢D}⁢(1-\frac{H_{s}}{1+i⁢ρ⁢2⁢\pi⁢\omega⁢\tau_{S}})⁢(\frac{1}{1+i⁢ρ⁢2⁢\pi⁢\omega⁢\tau_{L}})^{N}
+$$
+
+Parameters were taken from neurophysiological studies that fitted this model to recorded neurons (M cells: median values in Table 2 in Benardete and Kaplan, 1999; P cells: median values in Table 2 in Benardete and Kaplan, 1997a). The scaling factor $ρ$ was set to 1/1.6 to include the effects of large stimuli on retinal responses (Figure 7B in Alitto and Usrey, 2015).
+
+**Table 2.**
+ Parameters used in Equation 4 to model the temporal kernels of magno- (upper row) and parvo-cellular (bottom row) neurons.Data are from Benardete and Kaplan (1997a); Benardete and Kaplan (1999).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>A</th>
+      <th>D</th>
+      <th>Hs</th>
+      <th>τL</th>
+      <th>τS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>499.77</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1.1</td>
+      <td>2.23</td>
+      <td>M cells</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>67.59</td>
+      <td>3.5</td>
+      <td>0.69</td>
+      <td>1.27</td>
+      <td>29.36</td>
+      <td>P cells</td>
+      <td>38</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Estimating contrast sensitivity
 
 The main hypothesis of our study is that the visual system is insensitive to temporal stimulation at 0 Hz so that spatial sensitivity is entirely driven by temporal transients. For this reason, we estimated the predicted CSF on the basis of cell responses to input changes.
 
-For each spatial frequency fs of the grating, we first estimated the space-time power spectrum of the retinal input PI⁢(𝒇,ω) by averaging the square of the absolute value of the Fourier transform of Equation 1 across trials, stimulus’ orientations αs and phases ϕs. Since both PI⁢(𝒇,ω) and the spatial kernels K⁢(𝒇) possess circular symmetry in spatial frequency, we reduced the spatial dimensionality from 2D to 1D by radial averaging. We then computed the power spectrum of neuronal responses O⁢(f,ω) by multiplying the space-time power spectrum of the retinal input PI⁢(f,ω) by the transfer functions of the cells’ filters:(5)Oζ(f,ω)=PI(f,ω)⋅|RFζ(f,ω)|2where R⁢Fζ⁢(f,ω), with ζ=M or P, represents the Fourier transform of M or P cells’ receptive fields (Equation2).
+For each spatial frequency $f_{s}$ of the grating, we first estimated the space-time power spectrum of the retinal input $P_{I}⁢(𝒇,\omega)$ by averaging the square of the absolute value of the Fourier transform of Equation 1 across trials, stimulus’ orientations $\alpha_{s}$ and phases $ϕ_{s}$. Since both $P_{I}⁢(𝒇,\omega)$ and the spatial kernels $K⁢(𝒇)$ possess circular symmetry in spatial frequency, we reduced the spatial dimensionality from 2D to 1D by radial averaging. We then computed the power spectrum of neuronal responses $O⁢(f,\omega)$ by multiplying the space-time power spectrum of the retinal input $P_{I}⁢(f,\omega)$ by the transfer functions of the cells’ filters:
 
-Finally, we evaluated the CSF at each spatial frequency f, by computing the square root of the integrated temporal power across all non-zero temporal frequencies:(6)C⁢S⁢Fζ⁢(f)=∫o+∞Oζ⁢(f,ω)⁢d⁢ωwhere Oζ represents the power spectrum of M or P responses. The integral in Equation 6 was computed numerically. To avoid artifacts from finite bandwidth, the first two temporal samples of the spectrum were discarded so that integral over temporal frequency started from ω=0.63⁢H⁢z. However, virtually identical results were obtained when we used lower thresholds or when we modeled the low-frequency range of temporal sensitivity as a power law (Figure 4—figure supplement 2).
+$$
+O_{ζ}(f,\omega)=P_{I}(f,\omega)⋅|RF_{ζ}(f,\omega)|^{2}
+$$
 
-The predicted CSF was then estimated, for each condition, by a linear combination of the contrast sensitivities of the two types of neurons, C⁢S⁢FM⁢(f) and C⁢S⁢FP⁢(f) :(7)C⁢S⁢Fe⁢s⁢t⁢(f)=A⋅[λ⁢C⁢S⁢FM⁢(f)+(1-λ)⋅C⁢S⁢FP⁢(f)]where λ (λ=0.57 for all conditions) weighs the contributions of the M and P populations and A is a global rescaling coefficient.
+where $R⁢F_{ζ}⁢(f,\omega)$, with $ζ=M$ or $P$, represents the Fourier transform of M or P cells’ receptive fields (Equation2).
 
-Note that the parameters A and λ were merely used to quantitatively align model predictions with classical data, but had no role in explaining our findings. That is, the emergence of a space-time inseparability in the CSF, was neither caused by the specific value of λ (both M and P cells show this transition; Figure 4—figure supplement 3) nor by the global scaling factor A, which had no effect on the shape of the predicted CSF. We chose to linearly combine the contributions of M and P neurons because this was the simplest model. However, use of other models (e.g. the maximum of either population at each spatial frequency f) produced virtually the same results given the robustness of the underlying phenomenon.
+Finally, we evaluated the CSF at each spatial frequency $f$, by computing the square root of the integrated temporal power across all non-zero temporal frequencies:
 
-The same procedure was used to estimate the CSF in the case of no eye movements and retinal stabilization (Figures 3, 4 and 5). In the former condition (no eye movements), 𝝃⁢(𝒕) was set to zero in Equation 1. In the latter condition (retinal stabilization), we modeled the retinal image motion by means of a 2D random walk process, but with reduced diffusion coefficient (D = 2 rather than the normal value D = 250). Brownian motion, with D in the range 100–350, is known to be a good model for the normal retinal image motion when the head is not immobilized (Aytekin et al., 2014).
+$$
+C⁢S⁢F_{ζ}⁢(f)=\sqrt{\int_{o^{+}}^{∞}O_{ζ}⁢(f,\omega)⁢d⁢\omega}
+$$
+
+where $O_{ζ}$ represents the power spectrum of M or P responses. The integral in Equation 6 was computed numerically. To avoid artifacts from finite bandwidth, the first two temporal samples of the spectrum were discarded so that integral over temporal frequency started from $\omega=0.63⁢H⁢z$. However, virtually identical results were obtained when we used lower thresholds or when we modeled the low-frequency range of temporal sensitivity as a power law (Figure 4—figure supplement 2).
+
+The predicted CSF was then estimated, for each condition, by a linear combination of the contrast sensitivities of the two types of neurons, $C⁢S⁢F_{M}⁢(f)$ and $C⁢S⁢F_{P}⁢(f)$ :
+
+$$
+C⁢S⁢F_{e⁢s⁢t}⁢(f)=A⋅[\lambda⁢C⁢S⁢F_{M}⁢(f)+(1-\lambda)⋅C⁢S⁢F_{P}⁢(f)]
+$$
+
+where $\lambda$ ($\lambda=0.57$ for all conditions) weighs the contributions of the M and P populations and $A$ is a global rescaling coefficient.
+
+Note that the parameters $A$ and $\lambda$ were merely used to quantitatively align model predictions with classical data, but had no role in explaining our findings. That is, the emergence of a space-time inseparability in the CSF, was neither caused by the specific value of $\lambda$ (both M and P cells show this transition; Figure 4—figure supplement 3) nor by the global scaling factor $A$, which had no effect on the shape of the predicted CSF. We chose to linearly combine the contributions of M and P neurons because this was the simplest model. However, use of other models (e.g. the maximum of either population at each spatial frequency $f$) produced virtually the same results given the robustness of the underlying phenomenon.
+
+The same procedure was used to estimate the CSF in the case of no eye movements and retinal stabilization (Figures 3, 4 and 5). In the former condition (no eye movements), $𝝃⁢(𝒕)$ was set to zero in Equation 1. In the latter condition (retinal stabilization), we modeled the retinal image motion by means of a 2D random walk process, but with reduced diffusion coefficient ($D$ = 2 rather than the normal value $D$ = 250). Brownian motion, with $D$ in the range 100–350, is known to be a good model for the normal retinal image motion when the head is not immobilized (Aytekin et al., 2014).

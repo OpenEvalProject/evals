@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39649.001 The assembly of neurotransmitter receptors in the endoplasmic reticulum limits the number of receptors delivered to the plasma membrane, ultimately controlling neurotransmitter sensitivity and synaptic transfer function. In a forward genetic screen conducted in the nematode C. elegans , we identified crld-1 as a gene required for the synaptic expression of ionotropic acetylcholine receptors (AChR). We demonstrated that the CRLD-1A isoform is a membrane-associated ER-resident protein disulfide isomerase (PDI). It physically interacts with AChRs and promotes the assembly of AChR subunits in the ER. Mutations of Creld1, the human ortholog of crld-1a, are responsible for developmental cardiac defects. We showed that Creld1 knockdown in mouse muscle cells decreased surface expression of AChRs and that expression of mouse Creld1 in C. elegans rescued crld-1a mutant phenotypes. Altogether these results identify a novel and evolutionarily-conserved maturational enhancer of AChR biogenesis, which controls the abundance of functional receptors at the cell surface.
+The assembly of neurotransmitter receptors in the endoplasmic reticulum limits the number of receptors delivered to the plasma membrane, ultimately controlling neurotransmitter sensitivity and synaptic transfer function. In a forward genetic screen conducted in the nematode C. elegans, we identified crld-1 as a gene required for the synaptic expression of ionotropic acetylcholine receptors (AChR). We demonstrated that the CRLD-1A isoform is a membrane-associated ER-resident protein disulfide isomerase (PDI). It physically interacts with AChRs and promotes the assembly of AChR subunits in the ER. Mutations of Creld1, the human ortholog of crld-1a, are responsible for developmental cardiac defects. We showed that Creld1 knockdown in mouse muscle cells decreased surface expression of AChRs and that expression of mouse Creld1 in C. elegans rescued crld-1a mutant phenotypes. Altogether these results identify a novel and evolutionarily-conserved maturational enhancer of AChR biogenesis, which controls the abundance of functional receptors at the cell surface.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Here we demonstrate that crld-1 is required for AChR biogenesis and behaves as a
 
 ## Results
 
-## Disruption of the evolutionarily conserved gene crld-1 confers partial resistance to the cholinergic agonist levamisole
+### Disruption of the evolutionarily conserved gene crld-1 confers partial resistance to the cholinergic agonist levamisole
 
 To identify genes regulating the activity of L-AChRs in C. elegans, we used Mos1-mediated insertional mutagenesis (Boulin and Bessereau, 2007; Williams et al., 2005) and screened for mutants with only partially decreased sensitivity to levamisole, because screens for complete resistance are likely saturated. Such mutants completely paralyze on high levamisole concentrations within a few hours but subsequently adapt within 12–16 hr and recover motility in contrast to the wild type (Gally et al., 2004; Lewis et al., 1980). We isolated two independent strains containing a Mos1 insertion in the F09E8.2 locus (Figure 1A,B), which we tentatively named crld-1 because it is the sole C. elegans gene encoding proteins of the CRELD family (Rupp et al., 2002). Crld-1 generates two transcripts, crld-1a and crld-1b, by alternative splicing of the last exons. Surprisingly, resistance to levamisole of the kr133 mutants, that contain a Mos1 insertion in the fourth exon shared by both transcripts, was less pronounced than in kr132 mutants, which contain a Mos1 insertion in the last crld-1a-specific exon. RT-PCR analysis of the crld-1(kr133) transcripts revealed that cryptic splice donor sites present in the Mos1 kr133 transposon were used at low frequency to generate in-frame mRNAs (Figure 1—figure supplement 1). Therefore, kr133 is likely to be a hypomorphic mutation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structure of the crld-1 locus, which generates two isoforms (crld-1a and crld-1b) by alternative splicing of the last exon (exon 9a and exon 9b). The different Mos1 transposon insertions and the mutant alleles are indicated. kr303 and kr308 mutations specifically express only crld-1b and crld-1a, respectively. HySOG = hygromycinB miniSOG dual selection cassette (length = 2.8 kb). The green box indicates the position of the GFP sequence inserted in the first exon of crld-1 to generate the gfp-crld-1(kr298) knock-in allele. (B) Domain organization of CRLD-1A and CRLD-1B. SP = signal peptide, WE domain = tryptophan (W) and glutamic acid (E) enriched domain, EGF = Epidermal Growth Factor-like domain, EGF Ca2+ = Ca2+binding epidermal growth factor-like domain, TM = transmembrane domain, KDEL = Lys-Asp-Glu-Leu ER retention signal. (C) crld-1 is necessary for wild-type sensitivity to levamisole. Gray bars indicate the percentage of moving animals after overnight exposure to 1 mM levamisole, and black bars indicate the percentage of paralyzed animals. Experiments were repeated three times, n = number of animals tested. p=0,2465, ns = not significant, ***p<0.001, after Bonferroni correction, Fisher exact probability test. (D) Body wall muscle expression of crld-1a but not crld-1b rescues levamisole sensitivity in creld-1(tm3993) mutants. Gray bars indicate the percentage of moving animals after overnight exposure to 1 mM levamisole, and black bars indicate the percentage of paralyzed animals. Two independent transgenic lines were tested for each condition. Experiments were repeated four times, n = number of animals tested. p=0,2504 and 0,5369, ns = not significant, ***p<0.001, after Bonferroni correction, Fisher exact probability test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Wild-type crld-1 and crld-1(kr133) genomic loci. Only a part of the exon 4 and exon 5 sequence is shown (bold). Regions of the intron sequence (in grey) and of the Mos1 sequence (red box) have been omitted (annotated as ‘…”). The Mos1 insertion in kr133 is located in the fourth exon of crld-1. Cryptic splice donor sites (in red) present within the Mos1 sequence are used at low frequency to generate in-frame messenger RNAs (a, b, c and d indicated by black lines). (B) Alternative crld-1 mRNAs detected by RT-PCR in crld-1(kr133) alleles (a, b, c, and d) and conceptual protein translations. The single-letter amino acid code is under the second nucleotide of the corresponding codon. Wild-type protein sequence is in green and mutated residues introduced by alternative splicing of the Mos1 transposon are in orange.
 
 To fully inactivate crld-1, we used the tm3993 allele, which contains a deletion of the first three exons, and we also engineered a null allele by inserting a 2.8 kb HySOG dual selection cassette in the first crld-1 coding exon (kr297). None of the crld-1 mutants exhibited a grossly abnormal phenotype. Specifically, locomotion remained coordinated and only a slight decrease of the thrashing frequency in liquid could be detected in tm3993 mutants but not in Mos1 alleles. The most dramatic phenotype was a decreased sensitivity to levamisole since almost 100% of the crld-1 mutant animals fully adapted overnight to 1 mM levamisole while all the wild-type animals were paralyzed (Figure 1C).
 
@@ -49,15 +57,23 @@ Since the kr132 mutation was predicted to only impair the crld-1a transcript, we
 
 Altogether, these data demonstrate that the transmembrane isoform CRLD-1A was the only isoform required for levamisole sensitivity and might act cell-autonomously to regulate L-AChR functional expression in body-wall muscle.
 
-## CRLD-1A and CRLD-1B are ubiquitously expressed and localize to the ER
+### CRLD-1A and CRLD-1B are ubiquitously expressed and localize to the ER
 
 Analysis of crld-1 expression using gfp-crld-1 knock-in strains indicated that CRLD-1 was a ubiquitous protein (Figure 2A–C), as suggested initially by the expression of GFP from a crld-1 transcriptional reporter in a multicopy transgene (Figure 2—figure supplement 1A). CRLD-1A and CRLD-1B were expressed in most, if not all cells including body-wall muscles, neurons, pharynx, hypodermis, seam cells, intestine and gonad (Figure 2A–C). In every cell type GFP-CRLD-1 had a reticular pattern.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of GFP-CRLD-1A (left) and GFP-CRLD-1B (right) in muscle cells of gfp-crld-1 isoform-specific knock-in worms. (B) Localization of CRLD-1A (left) and CRLD-1B (right) in the pharynx and in the lateral ganglion (encircled in yellow). The middle panel shows a schematic representation of the locations of neurons and ganglia in the head, adapted from: http://www.wormatlas.org/ver1/MoW_built0.92/nervous_system.html. (C) Localization of CRLD-1A (left) and CRLD-1B (right) in the epithelial seam cells of gfp-crld-1 isoform-specific knock-in worms. Dashed lines, seam cell outlines. (D) Expression of the ER marker TagRFP-T::KDEL in gfp-crld-1a (left) and gfp-crld-1b (right) isoform-specific knock-in strains. TagRFP-T::KDEL displays a reticular pattern throughout the cytoplasm surrounding the nucleus that co-localizes with both CRLD-1A and CRLD-1B signals. (E) CRLD-1A and CRLD-1B from gfp-crld-1a (left) and gfp-crld-1b (right) knock-in animals do not co-localize with a Golgi-resident TagRFP-T-tagged Mannosidase II protein (MANS::TagRFP-T). In (D) and (E), the Pmyo-3 promoter was used for expression of both TagRFP-T::KDEL and MANS::TagRFP-T in body wall muscles. In all panels, scale bars equal 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Confocal images of transgenic animals expressing GFP under the control of crld-1 promoter (pTB208 Pcrld-1::SL2::gfp). CRLD-1 is expressed in several tissues: pharynx, intestine and muscles. Scale bars: 10 μm. (B) Localization of CRLD-1 in muscle cells from gfp-crld-1(kr298) knock-in worms expressing both crld-1a and crld-1b isoforms. CRLD-1 reticular network is present in combination with a punctate pattern. Scale bar 10 μm. (C) Localization of CRLD-1 in muscle cells from gfp-crld-1(C30A) knock-in worms expressing both crld-1a and crld-1b isoforms. CRLD-1 reticular network is present in combination with a punctate pattern. Scale bar: 10 μm.
 
 We focused our analysis on body-wall muscles and found that the transmembrane CRLD-1A isoform localized to a perinuclear network highly reminiscent of ER localization. CRLD-1B distribution was similar, yet the perinuclear localization was less intense and a punctate pattern was superimposed onto the network distribution (Figure 2A). As expected crld-1(kr298::gfp) animals expressing both crld-1a and crld-1b isoforms tagged with gfp displayed a combination of the two patterns (Figure 2—figure supplement 1B).
 
 To confirm that CRLD-1A and −1B did localize in the ER, we expressed a TagRFP-T fused to the ER retention signal KDEL in the muscle cells of gfp-crld-1 knock-in animals. Both isoforms co-localized with the TagRFP-T-KDEL (Figure 2D). Interestingly, the TagRFP-T-KDEL had a punctate distribution very similar to CRELD-1B, suggesting that CRELD-1B is indeed retrieved to the ER by a KDEL-dependent mechanism. Conversely the Golgi marker α-MannosidaseII-TagRFP-T did not colocalize with either CRLD-1 isoforms (Figure 2E). These data demonstrated that both CRLD-1 isoforms primarily localized to the ER. The fact that CRLD-1A is likely to be in the ER membrane and CRLD-1B is likely in the ER lumen might account for the partially different distribution of the two isoforms within the muscle ER.
 
-## CRLD-1 is required for cell surface expression of L-AChRs
+### CRLD-1 is required for cell surface expression of L-AChRs
 
 The resistance of crld-1 mutants to levamisole suggested that crld-1 was required for the proper expression of functional L-AChRs at NMJs. To test this hypothesis, we used immunofluorescence to characterize cholinergic NMJs (Figure 3A). The number of cholinergic boutons, stained by the vesicular acetylcholine transporter UNC-17, was similar in the wild type and in crld-1(tm3993) mutants. In contrast, we observed an obvious decrease of synaptic L-AChRs stained by anti-UNC-38 antibodies in crld-1(tm3993) as compared to the wild type (Figure 3A). To quantify L-AChR content at NMJs we used a knock-in strain in which the red fluorescent protein TagRFP is fused to the essential L-AChR subunit UNC-29 (Richard et al., 2013). We found that the fluorescence intensity of L-AChRs present at the ventral nerve cord was decreased by 85% in crld-1 mutant as compared to the wild type (Figure 3F,G). This could be due to reduced expression of L-AChRs by the muscle cells or to a redistribution of the receptors outside of the synapse. To discriminate between these hypotheses, we recorded the electrophysiological response of body-wall muscle to pressure-ejected levamisole and found a 65% decrease in the response of crld-1(tm3993) mutants compared to the wild type (Figure 3B). These results suggested that disrupting crld-1 impairs surface expression of functional L-AChRs.
 
@@ -69,9 +85,17 @@ To test if crld-1 was required for the expression or function of other ligand-ga
 
 Altogether these data showed that crld-1 disruption impacts the expression of functional L-AChRs independently from NMJ formation but does not affect the expression of other ligand-gated ion channels at the NMJ.
 
-## CRLD-1 stabilizes unassembled L-AChR subunits in the ER
+### CRLD-1 stabilizes unassembled L-AChR subunits in the ER
 
 The reduction of L-AChR at the NMJ of crld-1(tm3993) mutants might result from decreased synthesis or from intracellular retention of receptors. To distinguish between these hypotheses we quantified the overall amount of UNC-29 L-AChR subunit by western blot analysis. UNC-29 expression was decreased by approximately 50% in crld-1(tm3993) mutants as compared to the wild type (Figure 4A). To determine whether decreased L-AChR levels were due to defects at transcriptional or post-transcriptional steps, we quantified the levels of three mRNAs coding for L-AChR subunits and did not detect significant differences between the wild type and crld-1(tm3993) mutants (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig4-v2.jpg)
+
+**Figure 4.:** (A) L-AChR expression is reduced in crld-1(tm3993) mutants. Levels of unassembled UNC-29 L-AChR subunits detected in unc-63(kr13) are further decreased in unc-63(kr13);crld-1(tm3993) double mutants. UNC-29 levels were quantified by western blot using anti-UNC-29 antibodies and normalized to tubulin levels. Significance is indicated compared to the wild type. The significance between unc-63(kr13);crld-1(tm3993) and crld-1(tm3993) is indicated by an horizontal line. Five independent experiments were quantified (mean ± SEM). p=0.6825, ns (not significant); **p=0.0079; after Bonferroni correction, Mann-Whitney test. TUB = tubulin. (B) Remaining L-AChRs exit the ER in crld-1(tm3993). Treatments with EndoH or N-Glycosidase F (PNGase) were performed on protein extracts of mixed-stage animals before SDS-PAGE analysis. Black arrowheads indicate glycosylated forms resistant to EndoH, gray arrowheads indicate glycosylated forms partially resistant to EndoH, and white arrowheads indicate deglycosylated forms sensitive to EndoH. (C) CRLD-1 interacts with UNC-29 subunit of L-AChR in vivo. gfp-crld-1(kr298) animals were crossed with rfp-unc-29(kr208) or rfp-unc-49(kr306) to co-express CRLD-1 with RFP-tagged AChR or GABAAR subunits, respectively. Immunoprecipitation of GFP-CRLD-1 using GFP-Trap beads co-immunoprecipitated RFP-UNC-29, but not UNC-49-RFP. As a control, GFP-CRLD alone was not immunoprecipitated by anti-RFP antibody. A vertical line indicates that the lanes are not adjacent in the gel.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Transcript levels of ionotropic receptor subunits are not significantly decreased in crld-1(tm3993). Quantitative real-time PCR measurements of mRNA levels for heteromeric levamisole-sensitive AChRs (L-AChR; unc-29, unc-63, and unc-38), homomeric nicotine-sensitive AChRs (N-AChR; acr-16), and GABAA receptors (unc-49). mRNA samples were collected from synchronized L4 larvae. Fold-change, mean ± SEM in crld-1(tm3993) relative to WT is shown in four independent experiments. P values are indicated on the figure, ns (not significant), after Bonferroni Holm correction, Wilcoxon signed-rank test.
 
 Since CRLD-1 is an ER-resident protein, it might be involved in the assembly of the L-AChR subunits into a mature pentameric receptor or it might promote exit from the ER after assembly. To address this question, we analyzed UNC-29 levels in an unc-63(kr13) null mutant background: in the absence of the obligatory AChR subunit UNC-63, the remaining unassembled subunits, such as UNC-29, are retained in the ER and can be readily detected by western blot analysis (Figure 4A) (Eimer et al., 2007; Richard et al., 2013). Therefore, if CRLD-1 is required in the ER for stability and/or assembly of L-AChR subunits, UNC-29 levels will be decreased in a crld-1;unc-63 double mutant as compared to the unc-63 single mutant. By contrast, if CRLD-1 is required for the stability of L-AChRs after they exit the ER, UNC-29 levels will not be decreased in crld-1;unc-63 animals. We found that UNC-29 levels are strongly decreased in crld-1;unc-63 double mutant compared to single mutants, suggesting that CRLD-1 is important in the ER for the stability of unassembled subunits (Figure 4A).
 
@@ -81,7 +105,7 @@ We then tested if CRLD-1 and L-AChRs could physically interact. Using immunoprec
 
 Altogether, these data suggested that CRELD-1 promotes L-AChR assembly in the ER through physical interaction with individual subunit(s) or L-AChR assembly intermediates.
 
-## C. elegans CRLD-1 exhibits a PDI activity required for L-AChR assembly
+### C. elegans CRLD-1 exhibits a PDI activity required for L-AChR assembly
 
 It was recently shown that human CRELD2 is a putative protein disulphide isomerase (PDI) (Hartley et al., 2013). PDIs catalyze thiol-disulphide oxidation, reduction and isomerisation. They are critical for the correct formation of disulphide bonds or for the re-arrangement of incorrect bonds. These reactions involve CXXC amino-acid motifs in which cysteines are engaged in mixed disulphide complexes between the enzyme and the substrate. Mutation of the C-terminal cysteine in the active CXXC site generates a substrate trapping mutant by stabilizing covalent enzyme-substrate intermediate complexes (Jessop et al., 2007). Sequence comparison between human CRELD proteins and C. elegans CRLD-1 identified a conserved C27XXC30 motif in the N-terminal region of the CRLD-1 WE domain (Figure 5A).
 
@@ -91,39 +115,51 @@ It was recently shown that human CRELD2 is a putative protein disulphide isomera
 
 Using a combination of genome engineering techniques, we introduced the C30A mutation in the previously generated gfp-crld-1 knock-in (Figure 5A) to generate a potential substrate trapping mutant. GFP-CRLD-1(C30A) was ubiquitously expressed and displayed a localization pattern similar to the wild-type GFP-CRLD-1, yet its function was impaired based on the partial levamisole resistance of mutant animals (Figure 5B and Figure 2—figure supplement 1C). We then used a biochemical approach to test if CRLD-1 had a PDI-like activity in C. elegans. Total worm lysate proteins from both gfp-crld-1(kr298) (wild type) and gfp-crld-1(kr302) (C30A mutant) were separated by SDS-PAGE under reducing and non-reducing conditions. GFP-CRLD-1 was revealed by western blot analysis using an anti-GFP antibody. Under non-reducing conditions we detected high molecular weight species containing the mutated GFP-CRLD-1(C30A) that were absent in the non-mutated GFP-CRLD-1 (Figure 5C). These high-molecular weight complexes were resolved under reducing conditions. Altogether these data demonstrated that GFP-CRLD-1(C30A) behaved as a substrate trapping protein, strongly suggesting that CRLD-1 contains PDI activity required for proper synthesis of L-AChR.
 
-## Creld1 function is conserved across evolution
+### Creld1 function is conserved across evolution
 
 In mouse, the orthologous gene of Crld-1a is Creld1. To test for functional conservation between these two genes, we expressed a mouse Creld1 cDNA in C. elegans body-wall muscle and found that the murine construct could rescue the levamisole sensitivity of the crld-1(kr297) null mutant (Figure 6—figure supplement 1). These data suggested that the function of Creld1 was conserved across evolution and we decided to extend our analysis to mammalian systems.
 
 CRELD1 was reported to be expressed in human muscle tissue (Rupp et al., 2002). We confirmed the expression of CRELD1 proteins and transcripts in murine C2C12 myoblasts by Western blot and qPCR. These cells can be differentiated into myotubes and provide an established model to analyze AChR expression. We then stably transformed these cells with vectors expressing small hairpin RNAs (shRNAs) against mouse Creld1 to achieve long-term knockdown of Creld1 (Figure 6A,B). To test if CRELD1 was required for proper assembly of AChR in mouse muscle cells, we quantified the total amount and the surface fraction of AChRs after Creld1 knock-down. Specifically, differentiated cells were incubated with biotin-α Bungarotoxin (α BT), receptors were then solubilized, pulled-down with streptavidin and quantified by western blot. As compared to control cells (shScramble), shCreld1 caused a 50% decrease of AChR expression and further decreased the ratio of surface vs total AChR by 50% (Figure 6A–E). These changes were due neither to a transcriptional down-regulation of AChRα nor to a delay in differentiation since we found by qPCR that the mRNA levels of both AChRα subunit and Myogenin (marker of differentiation) were not affected by Creld1 downregulation (Figure 6F–G and Figure 6—figure supplement 2). These results were highly consistent with what was found in the nematode and showed that CRELD1 is a limiting factor for AChR expression in mammals.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig6-v2.jpg)
+
+**Figure 6.:** (A–E) Measurement of mouse CRELD1 and AChR α subunit protein levels. C2C12 cells expressing shRNA against Creld1 (shCreld1) or scrambled (shScramble) sequences were differentiated for 5 days and then subjected to surface labeling with αBT-biotin for AChRα. N.T. = non transfected cells. Streptavidin precipitates (surface) and total lysates were separated by SDS/PAGE and probed for indicated proteins (A and C). CRELD1 protein levels were reduced by 75% in cells expressing shCreld1 as compared to shScramble (B). Quantitation of total AChRα levels (D) and of the surface to total AChRα ratio (E) in shScramble (100%) and shCreld1 cells from n = 5 independent experiments. Error bars, SEM; **p=0,0079, Mann-Whitney test. (F–G) Measurement of mouse Creld1 and AChRα subunit mRNA levels. C2C12 cells expressing shScramble or shCreld1 were differentiated for 5 days and then subjected to RNA extraction. Quantitative real-time PCR measurements of mRNA levels for Creld1 (F) and AChRα subunit (G). Creld1 mRNA is decreased in shCreld1 cells compared to shScramble cells, whereas AChRα subunit mRNA is not significantly decreased in shCreld-1 cells. Mean ± SEM is shown in six independent experiments. *p=0,0411; p=0,4740, ns (not significant), Mann–Whitney test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Expression of mouse Creld1 in C. elegans muscle cells under the control of the Pmyo-3 promoter rescues levamisole sensitivity in kr297 mutants. Gray bars indicate the percentage of moving animals after overnight exposure to 1 mM levamisole, and black bars indicate the percentage of paralyzed animals. three independent transgenic lines were tested. Experiment was repeated three times, n = number of animals tested. ***p<0.001, after Bonferroni correction, Fisher exact probability test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39649/elife-39649-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** C2C12 cells expressing Scramble or Creld1 shRNA were differentiated for 5 days, and then subjected to RNA extraction. Quantitative real-time PCR measurements of mRNA levels shows that Myogenin is not significantly decreased in shCreld-1 cells. Fold-change, mean ± SEM in shCreld-1 relative to shScramble (100%) is shown in four independent experiments. p>0,9999, ns (not significant), Mann–Whitney test.
+
 ## Discussion
 
 CRLD-1 was identified in a genetic screen for mutants partially resistant to the cholinergic agonist levamisole. This gene is evolutionarily conserved and our results show that the membrane-associated isoform of CRLD-1 (CRLD1-A in C. elegans, CRELD1 in mouse) is cell-autonomously required in both nematode and mammalian muscle cells to promote the surface expression of AChRs. We propose that this protein could act in the ER as a maturational enhancer to stabilize unassembled AChR subunits and to promote AChR assembly.
 
-## CRLD-1A membrane topology
+### CRLD-1A membrane topology
 
 The transmembrane isoform CRLD-1A (ortholog of vertebrate CRELD1) contains two conserved transmembrane regions located at the C-terminus of the protein. Bioinformatic analysis of human CRELD1 suggests that both N- and C-termini reside in the extracellular spaces with a short intervening cytoplasmic loop (Rupp et al., 2002). In contrast, it was recently proposed that murine CRELD1 is localized at the ER membranes with the C- and N-termini facing the cytoplasm, based on differential sensitivity to proteases after partial cell permeabilization (Mass et al., 2014). Analysis of CRLD-1 in C. elegans suggests that CRLD-1A is an intrinsic ER-membrane protein with the C- and N-termini facing the ER lumen.
 
 First, CRLD-1A and CRLD-1B isoforms are identical except for their short C-terminal regions (70 and 25 amino acids, respectively). Bioinformatic analyses identify a signal peptide at the N-terminus of CRLD-1, which predicts that the N-terminal region of CRLD-1 is translocated into the ER lumen. This is fully consistent with the localization of CRLD-1B, which behaves as a luminal ER protein. Second, over the course of our experiments, we overexpressed in muscle cells CRLD-1A fused to GFP at its N-terminus and we detected fluorescence at the plasma membrane of muscle cells, probably because some protein could escape the ER-retention machinery. In these transgenic worms, we injected fluorescently-labeled anti-GFP antibodies into the pseudo-coelomic cavity, a means to label cell-surface exposed epitopes (Gottschalk and Schafer, 2006) and we could stain the GFP at the muscle cell surface (MD, unpublished observation). Both results strongly suggest that the CRLD-1 N-terminal region, which represents most or the whole protein in CRLD-1A or −1B, respectively, localizes within the exoplasmic compartment. This is in full agreement with our results indicating the N-terminal region of CRLD-1 contains PDI activity, which most likely functions in the ER lumen. Since mouse Creld1 cDNA rescues C. elegans crld-1 mutants, it seems reasonable to propose that both mouse and nematode proteins have the same topology.
 
-## CRLD-1 might act as a L-AChR maturational enhancer through chaperone and PDI functions
+### CRLD-1 might act as a L-AChR maturational enhancer through chaperone and PDI functions
 
 We found by substrate trapping experiments that CRLD-1 displays PDI activity. This PDI function is conserved through evolution, since human CRELD2 also has PDI activity. The PDI function of CRELD proteins relies on conserved CXXC motifs in the WE domain. These CXXC motifs are a common feature of thiol/disulphide oxidoreductases (Hartley et al., 2013). CRLD-1 has several CXXC motifs but we selected a conserved amino-terminal CXXC motif to generate a substrate-trapping mutant, similar to those characterized for mammalian Creld2 (Hartley et al., 2013). The CXXA mutation does not totally impair the function of CRLD-1, although the mutant protein behaves as a bona fide substrate-trapping protein based on biochemical experiments. The residual activity of the protein could be explained by the activity of other CXXC sites present in the CRLD-1 protein. However, we do not favor this hypothesis because the CXXC motifs that are present more C-terminally localize in predicted EGF domains and the cysteines are likely engaged in structural disulphide bonds that stabilize EGF domains. Consistently, Hartley et al. demonstrated that the carboxy-terminal CXXC motifs of CRELD2 do not possess isomerase activity. Therefore, the residual activity of CXXA CRLD-1 mutants might indicate that CRLD-1 also behaves as a chaperone that stabilizes partially assembled AChRs, as shown for other PDIs (Hatahet and Ruddock, 2007).
 
-## CRELD1 and CRELD2 are evolutionarily-conserved ER resident proteins
+### CRELD1 and CRELD2 are evolutionarily-conserved ER resident proteins
 
 CRELD proteins are highly conserved across species. Similarity is not restricted to the genetically mobile EGF domains but also to the conserved WE domain, which contains a high content of tryptophan and glutamic acid residues (Rupp et al., 2002). Most vertebrate genomes contain two separate paralogous genes, Creld1 and Creld2. CRELD1 is an integral membrane protein containing two transmembrane segments in its carboxy-terminal region, while CRELD2 is secreted in the exoplasmic compartment and contains the ER-retention motif RDEL at its C-terminus. In C. elegans, and likely in Drosophila, there is only one gene, crld-1, coding for both CRELD versions. Two transcripts are generated by alternative splicing of the last exons and code for two proteins, namely CRLD-1A, which ends with two transmembrane domains and is similar to vertebrate CRELD1, and CRLD-1B, which ends with a KDEL sequence and is similar to vertebrate CRELD2.
 
 Although the two CRLD-1 isoforms are nearly identical and expressed in the same cells in C. elegans we demonstrated that they are not redundant. First, the two isoforms localize in the ER in muscle cells, yet CRLD-1A has a more pronounced perinuclear localization and CRLD-1B has a more punctate pattern, in agreement with the predicted localization of CRLD-1A in the ER membrane and CRLD-1B in the ER lumen. Second, the transmembrane isoform CRLD-1A is the only isoform necessary and sufficient to regulate L-AChR biogenesis in muscle cells. CRLD-1A can interact, directly or indirectly, with AChR subunits in the ER based on co-immunoprecipitation experiments. This might involve an interaction of the transmembrane regions of CRLD-1A with AChR subunits. Alternatively, targeting the luminal domain of CRLD-1 to the ER membrane might favor the interaction with AChR subunits by increasing the apparent concentration of CRLD-1 at the membrane. It is also possible that CRLD-1A might be recruited to specific chaperoning domains of the ER membrane where AChRs are assembled. Interestingly, CRELD2 was suggested to behave as a negative regulator of α4β2 AChR expression during nicotine-induced up-regulation (Hosur et al., 2009). Whether CRELD1 and CRELD2 have antagonistic functions in some cellular contexts remains to be investigated.
 
-## Specific requirement of general protein synthesis factors for L-AChR biogenesis
+### Specific requirement of general protein synthesis factors for L-AChR biogenesis
 
 From this work, CRLD-1 seems to support a very specific function since its disruption severely impairs the expression of the heteromeric L-AChR but does not affect the synthesis of homomeric N-AChRs nor of GABAARs. However, CRLD-1 is also expressed in C. elegans cells that do not synthesize L-AChRs. It is therefore extremely likely that CRLD-1 is involved in the biogenesis of additional proteins that remain to be identified. Since C. elegans crld-1 null mutants are viable and display no obvious abnormal phenotypes, it suggests that pathways redundant to CRLD-1 can compensate for crld-1 inactivation, maybe by using other members of the PDI family. If this is the case, the apparent specificity of CRLD-1 for L-AChR synthesis would rather arise from the intrinsic characteristics of AChR folding and assembly. Because these steps were shown in other species to be slow and inefficient, defects in factors required in the ER for protein biogenesis might be more difficult to compensate for in the case of L-AChRs, hence providing justification to use L-AChR expression as a sensitive proxy to identify new components along its biogenesis pathway.
 
 Accordingly, previous genetic screens in C. elegans identified auxiliary proteins absolutely required for receptor biosynthesis, namely RIC-3, UNC-50, and UNC-74. RIC-3 is required for assembly of all AChRs in the ER, including L-AChRs and N-AChRs (Boulin et al., 2008; Halevi et al., 2002; Jospin et al., 2009). It is conserved in flies and mammals and can either promote or inhibit the expression of AChRs and 5-HT3 receptors in heterologous systems (Millar and Harkness, 2008). UNC-50 is orthologous to GMH1, a protein conserved from yeast to humans, which interacts with a guanine nucleotide exchange factor of the small G protein Arf. In C. elegans UNC-50 localizes to the Golgi and promotes the targeting of L-AChRs to the plasma membrane, thereby preventing their degradation in lysosomes (Abiusi et al., 2017; Eimer et al., 2007). UNC-74 is a predicted thioredoxin homologous to TMX-3 (Boulin et al., 2008). It is necessary for L-AChR expression, but its detailed function remains uncharacterized. Screens for mutants with only partially decreased sensitivity to levamisole also identified the gene emc-6 that is required for the assembly of AChR but also GABAA receptor subunits (Richard et al., 2013). The EMC-6 protein is part of the EMC complex. Initially identified in yeast (Jonikas et al., 2009), the EMC has been extremely well conserved throughout evolution (Wideman, 2015). Interestingly, EMC subunits were shown to be required in the ER for the synthesis of multi-pass transmembrane proteins in Drosophila (Satoh et al., 2015), suggesting that the EMC might be chaperoning transmembrane proteins at early steps. A recent study performed in both yeast and human cells demonstrates that the EMC complex initiates client interaction cotranslationally and remains associated after completion of translation. This prevents premature degradation and promotes recruitment of substrate-specific and general chaperones(Shurtleff et al., 2018). We can hypothesize that CRLD-1A acts downstream the EMC complex to assist the maturation of the L-AChR in the ER.
 
-## CRELD1 displays a conserved function in the regulation of AChR
+### CRELD1 displays a conserved function in the regulation of AChR
 
 All the genes identified in C. elegans as being involved in L-AChR synthesis are conserved in mammals, yet their requirement for AChR biogenesis has not been systematically tested. RIC-3 mostly regulates neuronal α7 AChRs and might interfere with α4β2 AChR expression (Alexander et al., 2010; Dau et al., 2013). A mutation in the human gene UNC50 was recently associated with arthrogryposis, a severe fetal disease that can be caused by impairment of neurotransmission at the NMJ. This suggested that the UNC-50 ortholog might also be required in humans for muscle AChR expression (Abiusi et al., 2017). CRLD-1A has been widely conserved during evolution and here we demonstrate that its function was also conserved. First, murine Creld1 controls the expression of AChR in mouse muscle cells in a very similar way as in C. elegans. Second, the mouse Creld1 gene can rescue the defects of crld-1 mutants, suggesting that the molecular mechanisms that we analyzed in detail in nematodes are relevant for CRELD1 function in mammals. Mutations in CRELD1, the human ortholog of CRLD-1A, are linked to atrioventricular septal defects, which represent more than 7% of all congenital heart defects in human. The molecular mechanisms that we identified may trigger novel research directions to elucidate the physiopathology of these diseases.
 
@@ -131,13 +167,506 @@ Altogether, our results indicate that the early steps of AChR biogenesis rely on
 
 ## Materials and methods
 
-## Strains and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th colspan="2">Source or reference</th>
+      <th colspan="2">Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td colspan="2">crld-1, F09E8.2</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2">WormBase ID: WBGene00 008624</td>
+      <td colspan="2">See Results, Disruption of the evolutionarily conserved gene crld-1 confers partial resistance to the cholinergic agonist levamisole.</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td colspan="2">Creld1, cysteine rich with EGF like domains 1</td>
+      <td colspan="2">PMID:12137942, PMID: 25328912, PMID: 24697899</td>
+      <td colspan="2">GeneID: 171508</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN13</td>
+      <td colspan="2">doi:10.1534 /genetics. 104.038265</td>
+      <td colspan="2">WormBase ID:WBVar 00088264</td>
+      <td colspan="2">Strain background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">ZZ29</td>
+      <td colspan="2">PMID:3668616</td>
+      <td colspan="2">WormBase ID: WBV ar00275223</td>
+      <td colspan="2">Strain background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN208</td>
+      <td colspan="2">PMID:24896188</td>
+      <td colspan="2">WormBase ID: WBV ar02125731</td>
+      <td colspan="2">Strain background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">CB407</td>
+      <td colspan="2">PMID:10377345</td>
+      <td colspan="2">WormBase ID:WBVar00143186</td>
+      <td colspan="2">Strain background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN296: unc-49(kr296:: tagRFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN132: creld-1 (kr132::Mos1)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN133: crld-1 (kr133::Mos1)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2169: crld-1(tm3993)</td>
+      <td colspan="2">PMID:23173093</td>
+      <td colspan="2">WormBase ID: WBVar00252554</td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN297: crld-1 (kr297::HySOG)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN298: crld-1 (kr298::GFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN302: crld-1 (kr302::GFPC30A)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN303: crld-1b (kr303::GFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN308: crld-1a (kr308::GFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: N2. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2097: crld-1 (tm3993);unc-29 (kr208::tagRFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169, EN308. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN4059: crld-1 (tm3993);unc-49 (kr296::tagRFP)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169, EN296. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2544: crld-1 (tm3993); krEx870 [Pmyo-3::crld-1b cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2545:  crld-1(tm3993); krEx870[Pmyo-3 ::crld-1b cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2546: crld-1(tm3993); krEx870[Pmyo-3:: crld-1b cDNA;  myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2548: crld-1(tm3993); krEx871[Pmyo-3:: crld-1a cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2549: crld-1(tm3993); krEx871[Pmyo-3:: crld-1a cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN2550:  crld-1(tm3993); krEx871[Pmyo-3:: crld-1a cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN2169. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3790:crld-1(kr297);  krEx1277[Pmyo-3:: mouse-creld-1 cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN297. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3791:crld-1 (kr297);  krEx1277 [Pmyo-3::mouse- creld-1 cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN297. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3793: crld-1(kr297); krEx1277[Pmyo-3:: mouse-creld-1 cDNA; myo-2::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN297. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN1700: crld-1(kr132: :Mos1);krEx456 [pTB208; punc- 122::gfp]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN132. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3465: crld-1b(kr303:: GFP);krEx1245 [Pmyo-3::MANS:: TagRFP-T (pMR61), rol-6(su1006, panneuronal DsRed2 (pCB101)]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN303. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3504: crld-1b(kr303::GFP); krEx1250 [Pmyo-3:: tagRFP-T::KDEL (pMR68), rol-6(su1006, panneuronal DsRed2 (pCB101)]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN308. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3478: crld-1a(kr308::GFP); krEx1246 [Pmyo-3::MANS::TagRFP-T (pMR61), rol-6(su1006, panneuronal DsRed2 (pCB101)]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN308. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td colspan="2">EN3501:crld-1a(kr308:: GFP);krEx1249 [Pmyo-3::TagRFP-T::KDE;,  rol-6(su1006) panneuronal DsRed2]</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">Strain background: EN308. See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td colspan="2">C2C12 mouse myoblasts</td>
+      <td colspan="2"></td>
+      <td colspan="2">RRID:CVCL_0188</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">MSF037586-3-CU6(OS262215) shRNA against mouse Creld1 (plasmid)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2">GeneCopoeia</td>
+      <td colspan="2">(gccttggctactttgaggc) See M and M, Cell Culture and Western Blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-UNC-38</td>
+      <td colspan="2">PMID: 19794415</td>
+      <td colspan="2"></td>
+      <td colspan="2">(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-UNC-49</td>
+      <td colspan="2">PMID: 12684444</td>
+      <td colspan="2"></td>
+      <td colspan="2">(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-VAChT/UNC-17</td>
+      <td colspan="2">PMID: 15457263</td>
+      <td colspan="2"></td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Cy3- labeled goat anti-rabbit</td>
+      <td colspan="2">Jackson Immuno Research Laboratories</td>
+      <td colspan="2"></td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">A488-labeled goat anti- mouse</td>
+      <td colspan="2">Molecular Probes</td>
+      <td colspan="2">Cat. No.: A32723</td>
+      <td colspan="2">(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">A488-labeled goat anti-rat</td>
+      <td colspan="2">Molecular Probes</td>
+      <td colspan="2">Cat. No.: A-11006</td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-Creld1</td>
+      <td colspan="2">Abcam</td>
+      <td colspan="2">Cat. No.: ab140346</td>
+      <td colspan="2">(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">purified mouse Anti-Acetylcholine Receptor alpha</td>
+      <td colspan="2">BD Transduction Laboratories</td>
+      <td colspan="2">Cat. No.: 610989</td>
+      <td colspan="2">(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti GAPDH</td>
+      <td colspan="2">Merck</td>
+      <td colspan="2">Cat. No.: MAB374</td>
+      <td colspan="2">(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Goat anti-Mouse IgG (H + L) Secondary Antibody, HRP</td>
+      <td colspan="2">Thermo Fisher Scientific</td>
+      <td colspan="2">Cat. No.: 62–6520</td>
+      <td colspan="2">(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Goat anti- Rabbit IgG (H + L) Secondary Antibody, HRP</td>
+      <td colspan="2">Thermo Fisher Scientific</td>
+      <td colspan="2">Cat. No.: 65–6120</td>
+      <td colspan="2">(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-UNC-29</td>
+      <td colspan="2">PMID:23431131</td>
+      <td colspan="2"></td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-TUBULIN</td>
+      <td colspan="2">Sigma</td>
+      <td colspan="2">Cat. No.:T9026- 2ML</td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">mouse anti-GFP</td>
+      <td colspan="2">Roche</td>
+      <td colspan="2">Cat. No.: 11814460001</td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">RFP mouse monoclonal</td>
+      <td colspan="2">ThermoFisher Scientific</td>
+      <td colspan="2">Cat. No.:MA5- 15257</td>
+      <td colspan="2">(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNAreagent</td>
+      <td colspan="2">pTB205:Pmyo-3::crld-1a cDNA</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pTB206: Pmyo-3:: crld-1b cDNA</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pTB208: 4,6 kb genomic fragment containing crld-1 and upstream regulatory regions fused to SL2-GFP</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMR61: Pmyo-3::RFP::MANS</td>
+      <td colspan="2">PMID:23431131</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMR68: Pmyo-3::RFP::KDEL</td>
+      <td colspan="2">PMID:23431131</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD20: Pmyo-3:: mouse-creld-1 cDNA.</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD1: Pcrld-1:: HySOG-crld-1:: unc-54 3’UTR.</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pHZ34: Pcrld-1 ::GFP-creld-1:: unc-54 3’UTR.</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD3: this plasmid was created on the basis of pHZ34; the C30A point mutation (TGC &gt; GCT) was introduced in the sequence of crld-1 gene.</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD5: (1 st I-SceI sgRNA)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD7: (2nd I-SceI sgRNA)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pPT02</td>
+      <td colspan="2">PMID: 28280212</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD8: (dpy-10 sgRNA)</td>
+      <td colspan="2">PMID:25161212, this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD10: (exon9a sgRNA)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pMD11: (exon9b sgRNA)</td>
+      <td colspan="2">this paper</td>
+      <td colspan="2"></td>
+      <td colspan="2">See M and M, Strains and Genetics</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">TURBO DNA free kit, Ambion</td>
+      <td colspan="2">Fisher,</td>
+      <td colspan="2">Cat. No.:AM1907</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">iScript cDNA synthesis kit</td>
+      <td colspan="2">BioRad</td>
+      <td colspan="2">Cat. No.:1708891</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">αBT-biotin</td>
+      <td colspan="2">Molecular probes/fisher</td>
+      <td colspan="2">Cat. No.:B1196</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Streptavidin (Sepharose Bead Conjugate)</td>
+      <td colspan="2">Cell Signaling technology/ ozyme</td>
+      <td colspan="2">Cat. No.:3419S</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">levamisole</td>
+      <td colspan="2">Sigma</td>
+      <td colspan="2">Cat. No.:L9756 (10G)</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and genetics
 
 C. elegans strains were cultured as described previously (Brenner, 1974) and kept at 20°C, unless indicated otherwise. The following mutations were used in this study: LG I: unc-29(x29), unc-63(kr13); LG IV: crld-1(kr132, kr133, tm3993, kr297).
 
 Strains, expression constructs, transgenic animals and generation of knock-in worms are listed and described below.
 
-## List of strains
+### List of strains
 
 The following mutant alleles and transgenes were used in this study:
 
@@ -161,11 +690,11 @@ Extrachromosomal array in crld-1b(kr303::GFP): krEx1245 [Pmyo-3::MANS::TagRFP-T 
 
 Extrachromosomal array in crld-1a(kr308::GFP): krEx1246 [Pmyo-3::MANS::TagRFP-T (pMR61), rol-6(su1006, panneuronal DsRed2 (pCB101)], krEx1249 [Pmyo-3::TagRFP-T::KDEL (pMR68), rol-6(su1006, panneuronal DsRed2 (pCB101)].
 
-## C. elegans germline transformation
+### C. elegans germline transformation
 
 Transformation was performed by microinjection of DNA mixture in the gonad of young adults. The total DNA concentration of the injection mix was normalized at 100 ng/μL using 1kb + ladder (Invitrogen). The following plasmids were used for C. elegans germline transformation:
 
-## Generation of deletion and single-copy insertion alleles by MegaTIC
+### Generation of deletion and single-copy insertion alleles by MegaTIC
 
 The final gfp-crld-1(kr298) knock-in was generated using the MegaTIC technique, this protocol consists of 2 steps (Ji, T., Ibanez-Cruceyra, P., D'Alessandro, M., Bessereau JL, in preparation).
 
@@ -173,11 +702,11 @@ In the first step, the crld-1(kr297) molecular null allele was generated by usin
 
 In the second step, the HySOG cassette was excised by meganuclease-induced chromosomal breaks on each I-Sce-I site in the presence of pHZ34 as a repair template. pHZ34 contains gfp fused to the 5’ of the crld-1 gene. In pHZ34, a 1,5-kilobase (kb) left crld-1 homology sequence and a 4 kb right homology sequence flank the gfp. Gfp-crld-1(kr298) knock-ins were identified based on their resistance to blue light illumination, followed by PCR analysis.
 
-## Generation of single-copy insertion mutant allele by combining Co-CRISPR and MegaTIC
+### Generation of single-copy insertion mutant allele by combining Co-CRISPR and MegaTIC
 
 The gfp-crld-1(kr302) knock-in containing the C30A point mutation was generated using a combination of Co-CRISPR and MegaTIC techniques. The starting point was the excision of the HySOG cassette from the crld-1(kr297) by using sgRNAs against each I-Sce-I site and in presence of the pMD3 repair template. pMD3 contains gfp fused to the 5’ of the crld-1 gene and the mutation TGC >GCT (C30A point mutation). In pMD3, a 1,5-kilobase (kb) left crld-1 homology sequence and a 4 kb right homology sequence flank the gfp. We chose dpy-10 as a co-conversion marker to introduce a dominant mutation causing a visible Rol/Dpy phenotype(Arribere et al., 2014). Rol/Dpy F1 worms were preselected for negative selection by blue light illumination and confirmed by PCR analysis.
 
-## Generation of single-copy insertion mutant allele by Co-CRISPR
+### Generation of single-copy insertion mutant allele by Co-CRISPR
 
 The gfp-crld-1(kr298) knock-in was injected with sgRNAs against the splicing acceptor site of either exon 9a or exon 9b of crld-1 gene. Linear repair templates with short (≈30–40 bases) homology arms (Paix et al., 2014) were injected as a rescue template into gfp-crld-1(kr298). The linear repair templates contained PmeI restriction site followed by a STOP codon in place of the AG splicing acceptor site of either exon 9a or exon 9b. Dpy-10 was used as a co-conversion marker to introduce a dominant mutation causing a visible Rol/Dpy phenotype (Arribere et al., 2014). Engineered worms were identified by PCR.
 
@@ -195,39 +724,39 @@ The linear templates used as repair template contained PmeI restriction site (GT
 
 CAATAAAATGTAGAATATTTTCATTTTTTCAAAATTTGCGTTTAAACTAACCTTGAAAGCAACGGAACAGCAAGCTCATGAAGATG
 
-## Levamisole assay
+### Levamisole assay
 
 Assays for levamisole sensitivity after overnight exposure were performed as previously described in (Richard et al., 2013). Tetramisole hydrochloride (Sigma-Aldrich) was dissolved in water and added to 55 °C-equilibrated nematode growth medium (NGM) agar at the concentration of 1 mM just before plates were poured. Levamisole-containing plates were seeded with OP50 Escherichia coli. Young adult worms were put on plates containing levamisole, animals were left overnight at 20°C, and paralyzed animals were then scored.
 
-## Quantitative Real-Time PCR assays
+### Quantitative Real-Time PCR assays
 
 Quantitative Real-Time PCR assays were performed as previously described (Richard et al., 2013). In C. elegans, total RNA was isolated from a synchronized population of worms using the RNeasy Kit (Qiagen) according to the manufacturer’s instructions. In C2C12, myoblasts were cultured in 35 mm dishes and differentiated for 6 days before total RNA extraction using Trizol reagent (ThermoFisher). All samples were treated with DNase (Fermentas). First-strand cDNA was synthesized from 200 ng of total RNA using an oligo(dT) primer and a Moloney murine leukemia virus reverse transcriptase (Fermentas) at 42°C for 1 hr. Quantitative PCR was performed using LightCycler 480 SYBR Green I Master (Roche). A relative quantification model was used to evaluate the relative expression ratio of the target genes and RNA levels were normalized to three housekeeping genes (cdc-42, pmp-3, and Y45F10D.4 for C.elegans RNAs; HPRT1, CycloB and glyceraldehyde 3-phosphate dehydrogenase (Gapdh),for mouse RNAs).
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological methods were performed as previously described by (Richmond and Jorgensen, 1999) and (Richard et al., 2013).
 
-## Immunocytochemical staining
+### Immunocytochemical staining
 
 Worms were prepared by the freeze-crack method described previously (Gendrel et al., 2009). Methanol/acetone fixation was used for all staining conditions. The antibodies were used at the following dilutions: anti-UNC-38, 1:500 (Gendrel et al., 2009); anti-UNC-49, 1:500 (Gally and Bessereau, 2003); anti-VAChT/UNC-17, 1:1000 (Gally et al., 2004); the secondary antibodies were used at the following dilutions: Cy3-labeled goat anti-rabbit (1:1,000; Jackson ImmunoResearch Laboratories), A488-labeled goat anti-mouse (1:500; Molecular Probes), and A488-labeled goat anti-rat (1:1,000; Molecular Probes). Incubation conditions were the following: anti-UNC-38 and anti-UNC-49 overnight at 4°C, anti-UNC-17 for 1 hr at room temperature. Secondary antibodies were incubated together for 3 hr at room temperature.
 
-## Cell culture and western blot
+### Cell culture and western blot
 
 C2C12 cell lines were differentiated in myotubes and RT-PCR with primers specific for murine muscle was performed for cell identity confirmation. The cells were subjected to MycoAlert Mycoplasma detection kit from Lonza (LT07-318). C2C12 myoblasts were plated on Matrigel (Corning)-coated 35 mm dishes and grown in Hyclone DMEM (GE healthcare) containing 4.5 g/l glucose, supplemented with 15% FBS (PAA) and penicillin/streptomycin. Cells were maintained at 37°C in a saturated humidity atmosphere containing 5% CO2. For the differentiation of C2C12 myoblasts, fetal bovine serum was replaced by 2% horse serum (Biowest) when myoblasts reached 70–80% confluence. Cells were differentiated for 6 days.
 
 Sh-Creld1 and control myoblast lines were obtained by selecting puromycin-resistant clones of C2C12 myoblasts, respectively transfected with shRNA clone set against mouse Creld1 or scrambled control clone (GeneCopoeia).
 
-## Western blot in C2C12 cells
+### Western blot in C2C12 cells
 
 C2C12 cells were lysed in RIPA buffer (Abcam) supplemented with Complete protease inhibitor cocktail (Roche) and passed through a needle (Qiagen) to disrupt DNA. Protein concentration was measured with a DC Protein Assay according to manufacturer instructions (Bio-Rad). 30 μg of sample were boiled in 40 μl sample buffer and were loaded on 4‐12% pre‐cast gel (Biorad) and fast‐transferred into nitrocellulose membrane (Bio-Rad). Membrane was blocked with blocking buffer (5% Non Fat Dry Milk, 0.002% Tween in PBS). Incubation with primary antibodies was done overnight in blocking buffer at 4 C. After three washes with PBS‐ Tween 0.002%, membranes were incubated with secondary antibodies coupled with HRP for 1 hr at room temperature. Proteins were visualized using LumiLight reagents (Roche).
 
 Western blot membranes were probed with rabbit antibody anti-Creld1 (1:500 dilution; Abcam), mouse commercial antibody anti-αAchR (1:500 dilution; BD Transduction Laboratories), mouse commercial anti-GAPDH (1:10000 dilution, Merck Millipore), and secondary HRP-conjugated goat anti-rabbit or goat anti-mouse antibody (1:3000 dilution; ThermoFisher Scientific).
 
-## Surface labeling
+### Surface labeling
 
 For surface labeling of AChR, C2C12 cells were incubated with 200 nM αBT-biotin (Invitrogen) in PBS for 30 min on ice. Cells were intensively washed in PBS after αBT-biotin and lysed in RIPA lysis buffer (as described above). Streptavidin-agarose (Cell Signaling Technology) was used to recover biotinylated proteins. Quantitation of the Western blots was done by using the ChemiDoc MP Imaging System (Bio-Rad).
 
-## Biochemistry in C. elegans
+### Biochemistry in C. elegans
 
 Protein extraction and Western blotting were performed as described (Richard et al., 2013); and coimmunoprecipitation of C. elegans extracts are described in (Tu et al., 2015). Further details are provided below.
 
@@ -237,15 +766,15 @@ Mixed-stage populations were collected from OP50-seeded NGM plates. Worms were r
 
 Western blot membranes were probed with affinity-purified rabbit antibody anti-UNC-29 (1:1000 dilution; custom antibody), mouse commercial antibody anti-TUBULIN (1:1000 dilution; Sigma), mouse commercial anti-GFP (1:1000 dilution, Roche), and secondary HRP-conjugated goat anti-rabbit or goat anti-mouse antibody (1:3000 dilution; ThermoFisher Scientific) and revealed with LumiLight reagents (Roche).
 
-## Co-immunoprecipitation of C. elegans extracts
+### Co-immunoprecipitation of C. elegans extracts
 
 A mixed stage population of worms (5 mL) was frozen at −80°C until use. For extraction, worm pellets were ground under liquid nitrogen and thawed in an equal volume of ice-cold worm lysis buffer (WLB: 50 mM HEPES, 50 mM KCl, 100 mM NaCl, 1 mM EDTA, 2% Triton X-100, 2 mM PMSF and one tablet of complete Protease inhibitor cocktail (Roche) in 10 mL) (Tu et al., 2015). The suspension was rotated gently for two hours at 4°C and centrifuged at 15,000 g for 20 min at 4°C to remove worm debris. The supernatant was diluted to a final concentration of 0.2% Triton X-100 with WLB. A prewashed 50 μL of anti-GFP-Trap-A beads (Chromotek, gta-100) was added and incubated overnight at 4°C with gentle rotation. The anti-GFP Trap A beads were collected by centrifugation at 1,000 g for 3 min at 4°C. The beads were washed three times with washing buffer (50 mM HEPES, pH 7.7, 50 mM NaCl) without Triton X-100. The immunoprecipitated proteins were eluted in Laemmli buffer with beta-mercaptoethanol, boiled for 10 min at 95°C, centrifuged for 10 min at 15,700 × g, separated by running 4–20% gradient Precise Protein Gel (ThermoScientifc, 25224) and analysed further by Western blotting. The primary anti-GFP mouse monoclonal antibody (Roche) and anti-RFP mouse monoclonal antibody (ThermoFisher Scientific, MA5-15257) were used at a 1:1000 dilution. Horseradish peroxidase (HRP)-conjugated goat anti-mouse (K4000, Dako) was used as a secondary antibody at a 1:50 dilution.
 
-## Identification of putative mixed disulphides using substrate-trapping mutants
+### Identification of putative mixed disulphides using substrate-trapping mutants
 
 Worm extracts were prepared as described in the protocol of co-immunoprecipitation with the exception that 200 mM NEM (N-Ethylmaleimide) were added to the WLB buffer during protein extraction of samples in order to assay under not reducing conditions. Moreover sample tested under not reducing conditions were eluted in Laemmli buffer without beta-mercaptoethanol.
 
-## Microscopy and fluorescence quantification
+### Microscopy and fluorescence quantification
 
 Animals were mounted on 2% agarose pads, anaesthetized with 5 ml of M9 buffer containing 100 mM sodium azide and examined with either a Leica 5000B microscope equipped with a spinning disk CSU10 (Yokogawa) and a Coolsnap HQ2 camera, or a Nikon Eclipse Ti equipped with a spinning disk CSUX1-A1 (Yokogawa) and an Evolve EMCCD camera. Image analysis was performed with ImageJ.
 

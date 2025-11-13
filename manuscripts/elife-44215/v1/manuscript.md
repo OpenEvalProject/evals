@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.44215.001 Clathrin-mediated endocytosis in budding yeast requires the formation of a dynamic actin network that produces the force to invaginate the plasma membrane against the intracellular turgor pressure. The type-I myosins Myo3 and Myo5 are important for endocytic membrane reshaping, but mechanistic details of their function remain scarce. Here, we studied the function of Myo3 and Myo5 during endocytosis using quantitative live-cell imaging and genetic perturbations. We show that the type-I myosins promote, in a dose-dependent way, the growth and expansion of the actin network, which controls the speed of membrane and coat internalization. We found that this myosin-activity is independent of the actin nucleation promoting activity of myosins, and cannot be compensated for by increasing actin nucleation. Our results suggest a new mechanism for type-I myosins to produce force by promoting actin filament polymerization.
+Clathrin-mediated endocytosis in budding yeast requires the formation of a dynamic actin network that produces the force to invaginate the plasma membrane against the intracellular turgor pressure. The type-I myosins Myo3 and Myo5 are important for endocytic membrane reshaping, but mechanistic details of their function remain scarce. Here, we studied the function of Myo3 and Myo5 during endocytosis using quantitative live-cell imaging and genetic perturbations. We show that the type-I myosins promote, in a dose-dependent way, the growth and expansion of the actin network, which controls the speed of membrane and coat internalization. We found that this myosin-activity is independent of the actin nucleation promoting activity of myosins, and cannot be compensated for by increasing actin nucleation. Our results suggest a new mechanism for type-I myosins to produce force by promoting actin filament polymerization.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ By combining quantitative live-cell imaging with genetic perturbations in buddin
 
 ## Results
 
-## Deletion of MYO5 slows down invagination growth and delays scission
+### Deletion of MYO5 slows down invagination growth and delays scission
 
 Previous studies have shown that deletion of both MYO3 and MYO5 results in a complete block in endocytosis (Geli and Riezman, 1996; Goodson et al., 1996; Sun et al., 2006), making it difficult to narrow down how these proteins contribute to each subsequent phase of the endocytic process. Therefore, we decided to quantitatively assess the impact of deleting a single myosin-I gene on the endocytic machinery.
 
@@ -45,7 +45,7 @@ To assess how Myo5 contributes to membrane invagination, we analyzed the dynamic
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig1-v1.jpg)
 
-**Figure 1.:** myo5Δ cells.(A) Top: Sla1-EGFP distribution in WT and myo5Δ cells, bottom: kymographs of Sla1-EGFP patch movement. scalebars: 2 μm. (B–I) Inward movement (top graphs) and number of molecules (bottom graphs) of eight different endocytic proteins in WT (darker, solid line) and myo5Δ cells (lighter, dashed line). Within each genotype (WT or myo5Δ) traces are aligned to each other based on co-alignment with Abp1-mCherry, and plotted such that t = 0 is the onset of Abp1 assembly, and y = 0 is the start of the Sla2 trajectory, marking the position of the plasma membrane. The peak in Rvs167 molecule numbers, representing scission, is marked by dashed vertical lines for the WT dataset, and dotted lines for myo5Δ. Shading represents 95% confidence interval.10.7554/eLife.44215.003Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Top: Sla1-EGFP distribution in WT and myo5Δ cells, bottom: kymographs of Sla1-EGFP patch movement. scalebars: 2 μm. (B–I) Inward movement (top graphs) and number of molecules (bottom graphs) of eight different endocytic proteins in WT (darker, solid line) and myo5Δ cells (lighter, dashed line). Within each genotype (WT or myo5Δ) traces are aligned to each other based on co-alignment with Abp1-mCherry, and plotted such that t = 0 is the onset of Abp1 assembly, and y = 0 is the start of the Sla2 trajectory, marking the position of the plasma membrane. The peak in Rvs167 molecule numbers, representing scission, is marked by dashed vertical lines for the WT dataset, and dotted lines for myo5Δ. Shading represents 95% confidence interval.
 
 For the coat module, we analyzed two coat proteins Sla1 and Sla2. Sla1 is an abundant component of the endocytic coat and can be used to track the tip of the growing invagination and the newly formed vesicle (Kaksonen et al., 2003; Kukulski et al., 2012a). In addition, we chose to analyze N-terminally-tagged Sla2, since the fluorophore is located near Sla2’s membrane binding domain, meaning it reports the position of the plasma membrane (Picco et al., 2015).
 
@@ -53,7 +53,15 @@ Deletion of MYO5 resulted in a decrease in Sla1 inward movement speed (Figure 1B
 
 To assess the invagination length at the moment of scission, we followed Rvs167, a BAR-domain-containing protein which assembles around the invagination neck, and whose abrupt disassembly coincides with scission in WT cells (Kukulski et al., 2012a; Picco et al., 2015). In myo5Δ the onset of Rvs167 assembly was delayed relative to the onset of Abp1 assembly (Figure 1D, WT: 3.1 s, myo5Δ: 5.5 s). However, in both myo5Δ and WT cells, Rvs167 was recruited once Sla2 reached an inward depth of ~45 nm (Figures 1C and 2A, WT: 39 ± 6 nm, myo5Δ: 47 ± 7 nm, p=0.381). This suggests that Rvs167 recruitment is triggered when the invagination reaches a certain length. In WT cells, the length of the accumulation period of Rvs167 molecules was 3.1 ± 0.1 s (median ± SE, n = 103) while in myo5Δ it was extended to 5.5 ± 0.3 s (median ± SE, n = 29), resulting in similar peak amounts of Rvs167 molecules (peak number of molecules and standard error for WT: 136 ± 16, for myo5Δ: 110 ± 15, p=0.234). The lengths of accumulation periods for Rvs167 molecules in the two samples were different (Mann-Whitney U-test, p value < 0.0001 ). Therefore, Rvs167 molecules accumulated at a slower pace in myo5Δ cells, in line with the hypothesis that the invagination growth rate is reduced in myo5Δ. At the moment when Rvs167 molecule numbers peaked (indicated by dashed and dotted vertical lines for WT and myo5Δ respectively), Sla2 had reached an inward depth of ~150 nm in both WT and myo5Δ (Figures 1C and 2A, WT: 145 ± 6 nm, myo5Δ: 169 ± 9 nm). Taken together these results indicate that in myo5Δ the invagination growth rate is reduced, but since the growth phase is prolonged, similar final invagination lengths are reached.
 
-## Myo5 is required for efficient actin network growth
+![Figure 2.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sla2 centroid position at different timepoints in WT (circles) and myo5Δ (squares). (B) Assembly rates for the five different actin network components in WT (darker, solid bars) and myo5Δ (lighter, open bars), calculated from trajectories plotted in Figure 1. (C) Centroid movement speed for the same proteins. (D) Peak number of molecules for the same proteins. Error bars represents the 95% confidence interval. WT and myo5Δ data were compared using 2-sided z-tests. NS: not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Maximum projection of a Z-stack of WT cells expressing Nuf2-mCherry (cells with red spot) and myo5Δ cells, stained with fluorescent phalloidin (green). (B) Quantification of the phalloidin staining. ND: not determined, F.I.: fluorescence intensity, *: p≤0.05. Scalebar = 5 μm.
+
+### Myo5 is required for efficient actin network growth
 
 As myosins are known to interact with actin, we decided to investigate how the actin network is affected by deletion of MYO5. We analyzed the dynamics of the actin binding protein Abp1, the capping protein subunit Cap1, the Arp2/3-subunit Arc18, the crosslinker Sac6, and Act1, the actin monomer, in WT and myo5Δ cells (Figure 1E–I). As genomic tagging of Act1 is not tolerated (Wu and Pollard, 2005), GFP-Act1 was expressed from a plasmid on top of endogenous Act1 expression (Picco et al., 2015). Furthermore, Arc18 was tagged with myEGFP, a better tolerated fluorophore by the Arp2/3 complex than EGFP (Picco et al., 2015).
 
@@ -65,11 +73,23 @@ The absence of Myo5 also resulted in a decrease in centroid movement speed for A
 
 Taken together these results show that Myo5 stimulates the addition of components to the growing actin network, leading to its expansion.
 
-## Myo3 and Myo5 assemble at the same place and time, but in different amounts
+### Myo3 and Myo5 assemble at the same place and time, but in different amounts
 
 While it is known that Myo5 is recruited to the base of the endocytic invagination at the start of the actin assembly phase (Idrissi et al., 2008; Picco et al., 2015; Sun et al., 2006), Myo3’s dynamics have not been quantified. In order to compare Myo3 and Myo5, we performed live-cell imaging and centroid tracking on Myo3-EGFP or Myo5-EGFP together with Abp1-mCherry (Picco et al., 2015; Picco and Kaksonen, 2017). C-terminal tagging did not detectably affect myosin function as Abp1-mCherry lifetimes were not significantly affected (Figure 3—figure supplement 1). Myo3 and Myo5 started to assemble at the endocytic site at the same place and time (Figure 3A,B). However, the accumulation rate was higher for Myo5, peaking at about twice as many Myo5 molecules than Myo3 (median number of molecules over the lifetime of the patch and standard error for Myo5: 77 ± 8, Myo3: 38 ± 4, p<0.001 in 1-sided z-test). The overall similarity in Myo3 and Myo5 recruitment timing and positioning is in line with their reported functional redundancy.
 
-## Myo3 and Myo5 contribute to invagination in a dose-dependent way
+![Figure 3.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig3-v1.jpg)
+
+**Figure 3.:** (A) Top: Myo3-EGFP or Myo5-EGFP patches in WT cells, bottom: kymographs. Scalebar: 1 μm. (B) Inward movement (top) and number of molecules (bottom) of Myo3-EGFP and Myo5-EGFP over time at endocytic sites. Traces are aligned in time based on co-alignment with Abp1-mCherry, and plotted such that t = 0 is the peak in Rvs167 molecule numbers (scission). Shading represents 95% confidence interval. (C) Average Sla1-EGFP centroid inward movement in WT, myo3Δ and myo5Δ. Traces are plotted so that the initial position is y = 0, and are aligned in time to the onset of inward movement. Shading represents 95% confidence interval. One of two independent replicates for each genotype is shown. WT and myo5Δ trajectories are the same as in Figure 1. (D) The median number of Myo3-EGFP and/or Myo5-EGFP molecules over the lifetime of an endocytic site are plotted for several haploid and diploid genotypes (gray boxes). Error bars reflect SEM. Molecule numbers were compared using 2-sided z-tests. (E) Sla1-EGFP centroid inward movement is plotted over time for WT and MYO5 duplication cells. (F) Sla1-EGFP centroid movement in WT haploids, WT diploids and diploids carrying one or no MYO5 alleles. (G) Sla1 centroid inward movement speed is plotted as a function of the total number of myosins per endocytic site (the sum of the median number of Myo3 and Myo5 molecules). Purple datapoints originate from haploid cells, blue from diploids. The datapoints are labeled with their genotype. Horizontal errorbars are SEM, vertical errorbars SE. mov. = movement, dupl. = duplication, NS = not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The Abp1-mCherry lifetime is measured in cells expressing no EGFP tag, Sla1-EGFP, Myo3-EGFP, or Myo5-EGFP.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Median number of endocytic proteins recruited over the lifetime of the endocytic site in wildtype haploid and diploid cells. Error bars are SEM. NS = not significant.
+
+### Myo3 and Myo5 contribute to invagination in a dose-dependent way
 
 Next we assessed whether the deletion of MYO3 results in the same endocytic defects as the deletion of MYO5. We imaged Sla1-EGFP in WT, myo3Δ and myo5Δ cells, and found that in myo3Δ Sla1 dynamics were similar to WT (Figure 3C). Because Myo3 and Myo5 are highly similar and are recruited with similar dynamics to the endocytic site, we were surprised to find that deletion of MYO5, but not deletion of MYO3, had a strong effect on Sla1 inward movement. We wondered if the lack of phenotype in myo3Δ was a result of a compensatory increase in Myo5 recruitment, which could mask the effects of the absence of Myo3. We quantified Myo5-EGFP recruitment in myo3Δ cells and found it was unaffected by the absence of Myo3 (Figure 3D), nor was Myo3 recruitment increased when MYO5 was deleted. This general lack of feedback may indicate that Myo3 and Myo5 have different binding sites within the endocytic machinery, or that their amounts are not saturating all the binding sites available. The cytoplasmic concentrations of Myo3 and Myo5 have been reported as 152 nM and 172 nM respectively (Boeke et al., 2014). We used these values to calculate that on average 34% of the total pool of Myo3 molecules in the cell is located at endocytic sites, compared to 59% of Myo5 molecules (see Materials and methods for calculations). Therefore, Myo5 has a higher affinity than Myo3 for endocytic sites.
 
@@ -81,23 +101,23 @@ Intriguingly, we found that Sla1 inward movement speed increased with higher tot
 
 To summarize, we found a strong dose-dependent correlation between the number of myosin proteins at the endocytic site, and the Sla1 inward movement rate (Figure 3G). This suggests that myosins control the speed of membrane invagination, potentially via controlling actin network growth.
 
-## The motor activity of Myo5 is necessary for membrane invagination
+### The motor activity of Myo5 is necessary for membrane invagination
 
 To test the role of the motor activity in the endocytic invagination process we introduced a glycine 132 to arginine point mutation into the MYO5 locus. This mutation (Myo5-G132R) is a rigor mutant, which has been reported to inhibit endocytosis and has been suggested to prevent membrane invagination (Sun et al., 2006; Lewellyn et al., 2015). Consistently, we observed that in Myo5-G132R cells, the Sla1-EGFP invagination movement was completely absent (Figure 4A). An average of ~40 Myo5-G132R molecules was recruited to endocytic sites (Figure 4B), which is significantly less than the number of Myo5 molecules. However, the reduction of the number of Myo5 molecules by about 50% is not enough to explain the observed strong phenotype. These data suggest that the motor activity is critical for the function of myosins in endocytic membrane invagination.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig4-v1.jpg)
 
-**Figure 4.:** myo5-G132R cells.(A) Left: Sla1-EGFP distribution in WT and myo5-G132R cells (scale bars: 2 μm) and kymographs of Sla1-EGFP patch movement (scale bars: 20 s). Right: Examples of Sla1-EGFP trajectories tracked in WT (top row) and myo5-G132R cells (bottom row). The trajectories are oriented so that the x-axis is parallel to the cell plasma membrane. The start and the end of each trajectory are marked by a green triangle and a red square respectively. (B) The median number of myo5-G132R-EGFP molecules recruited at the endocytic sites plotted aside the median number of Myo5-EGFP molecules as a comparison. Error bars are SEM.10.7554/eLife.44215.014Figure 4—source data 1.Figure 4A trajectory source data.
+**Figure 4.:** (A) Left: Sla1-EGFP distribution in WT and myo5-G132R cells (scale bars: 2 μm) and kymographs of Sla1-EGFP patch movement (scale bars: 20 s). Right: Examples of Sla1-EGFP trajectories tracked in WT (top row) and myo5-G132R cells (bottom row). The trajectories are oriented so that the x-axis is parallel to the cell plasma membrane. The start and the end of each trajectory are marked by a green triangle and a red square respectively. (B) The median number of myo5-G132R-EGFP molecules recruited at the endocytic sites plotted aside the median number of Myo5-EGFP molecules as a comparison. Error bars are SEM.
 
-## Myo5’s effect on invagination speed is independent of the NPF activity
+### Myo5’s effect on invagination speed is independent of the NPF activity
 
 Deletion of MYO5 results in a decrease in invagination speed and negatively affects actin network buildup and movement. Myo5 has a C-terminal CA-domain, which has been shown to possess NPF-activity in vitro (Geli et al., 2000; Idrissi et al., 2002; Sun et al., 2006). To test whether the defects in myo5Δ can be explained by a decrease in NPF-activity, we created a truncated Myo5 lacking the CA-domain (myo5-CAΔ) (Galletta et al., 2008; Sun et al., 2006) and measured actin network buildup and invagination rates. Intriguingly we found a slight decrease in the amount of Arc18 at endocytic sites (Figure 5A, p=0.043 vs WT), similar to myo5Δ. However, while in myo5Δ the amount of actin (Act1) was strongly reduced, in myo5-CAΔ it was unchanged (Figure 5B, p=0.647 vs WT, p=0.001 vs myo5Δ). Furthermore, Sla1 inward movement was essentially identical to WT, in contrast to the full MYO5 deletion (Figure 5C). This indicates that the defects in actin network growth and invagination speed in the myo5Δ strains cannot be attributed to a decrease in NPF-activity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig5-v1.jpg)
 
-**Figure 5.:** myo5-CAΔ.(A) Median number of Arc18 molecules per endocytic site in WT (black), myo5Δ (gray) and myo5-CAΔ (turquoise) cells. Error bars represent SEM. Molecule numbers were compared using 2-sided z-tests. (B) Act1 molecules in the same genotypes. (C) Sla1 centroid movement in the same genetic backgrounds (only the inward movement phase is plotted). WT and myo5Δ data are the same as in Figure 1. Shaded area depicts the 95% confidence interval. NS: not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.10.7554/eLife.44215.016Figure 5—source data 1.Figure 5C average trajectory source data.10.7554/eLife.44215.017Figure 5—source data 2.Figure 5A and B.
+**Figure 5.:** (A) Median number of Arc18 molecules per endocytic site in WT (black), myo5Δ (gray) and myo5-CAΔ (turquoise) cells. Error bars represent SEM. Molecule numbers were compared using 2-sided z-tests. (B) Act1 molecules in the same genotypes. (C) Sla1 centroid movement in the same genetic backgrounds (only the inward movement phase is plotted). WT and myo5Δ data are the same as in Figure 1. Shaded area depicts the 95% confidence interval. NS: not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.
 
-## Extra actin cannot compensate for a lack of myosin motors
+### Extra actin cannot compensate for a lack of myosin motors
 
 We wondered if the reduction in Sla1 speed in myo5Δ could be rescued by artificially increasing actin polymerization at the endocytic site. Bbc1 is an inhibitor of NPF-activity of Las17 in vitro (Sun et al., 2006), and deletion of BBC1 results in increased Las17 recruitment to the endocytic site and excessive actin polymerization (Kaksonen et al., 2005; Picco et al., 2018). In bbc1Δ, Sla1 centroid movement is initially unperturbed, but accelerates around the time of scission (Picco et al., 2018).
 
@@ -105,31 +125,39 @@ Combining the deletions of MYO5 and BBC1 balanced out their opposing effects on 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig6-v1.jpg)
 
-**Figure 6.:** myo5Δ bbc1Δ double deletion.(A) Median number of Act1 molecules per endocytic site in WT, myo5Δ, bbc1Δ and myo5Δ bbc1Δ cells. Error bars are SEM. Values were compared using 2-sided z-tests. WT and myo5Δ data are the same as in Figure 1. (B) Centroid movement of Sla1-EGFP in the same genetic backgrounds. Only the inward movement phase is plotted. WT and myo5Δ trajectories are the same as in Figure 2. Shaded area represents 95% confidence interval. NS: not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.10.7554/eLife.44215.019Figure 6—source data 1.Figure 6B average trajectory source data.10.7554/eLife.44215.020Figure 6—source data 2.Figure 6A.
+**Figure 6.:** (A) Median number of Act1 molecules per endocytic site in WT, myo5Δ, bbc1Δ and myo5Δ bbc1Δ cells. Error bars are SEM. Values were compared using 2-sided z-tests. WT and myo5Δ data are the same as in Figure 1. (B) Centroid movement of Sla1-EGFP in the same genetic backgrounds. Only the inward movement phase is plotted. WT and myo5Δ trajectories are the same as in Figure 2. Shaded area represents 95% confidence interval. NS: not significant, *: p≤0.05, **: p≤0.01, ***: p≤0.001.
 
-## Ultrastructural analysis reveals subtle changes in endocytic site morphology in myo5Δ
+### Ultrastructural analysis reveals subtle changes in endocytic site morphology in myo5Δ
 
 As deletion of MYO5 affects actin network buildup and coat inward movement, we wondered how the overall ultrastructure of both the actin network and the plasma membrane were impacted. We used superresolution microscopy as described in Mund et al. (2018) to measure the dimensions of the actin network in WT and myo5Δ cells. For this, we determined the radial density profiles of Abp1, Cap1 and Arc18, and found that the overall protein distributions are very similar (Figure 7). However, deletion of MYO5 resulted in a slight but significant reduction in the outer radii of these proteins, indicating that the actin network on average was narrower.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig7-v1.jpg)
 
-**Figure 7.:** myo5Δ.(A) Individual endocytic sites (small pictures) and average protein distributions (big pictures) imaged at the bottom focal plane of the cell for Abp1-mMaple, Cap1-mMaple or Arc18-mMaple in WT (top row) and myo5Δ (bottom row) cells. (B) Outer radii of the actin network components. Genotypes were compared using 2-sided t-tests. Scalebars: 100 nm. n = number of individual endocytic sites analyzed. ***: p≤0.001. WT data is from Mund et al. (2018).10.7554/eLife.44215.022Figure 7—source data 1.Figure 7B.
+**Figure 7.:** (A) Individual endocytic sites (small pictures) and average protein distributions (big pictures) imaged at the bottom focal plane of the cell for Abp1-mMaple, Cap1-mMaple or Arc18-mMaple in WT (top row) and myo5Δ (bottom row) cells. (B) Outer radii of the actin network components. Genotypes were compared using 2-sided t-tests. Scalebars: 100 nm. n = number of individual endocytic sites analyzed. ***: p≤0.001. WT data is from Mund et al. (2018).
 
 We were interested in how the defects in actin network assembly and coat motility seen in myo5Δ impacted the membrane reshaping during endocytosis. We used correlated light and electron microscopy (CLEM) to investigate membrane shapes in myo5Δ cells expressing Sla1-EGFP and Abp1-mCherry, using the protocol described in Kukulski et al. (2012a); Kukulski et al. (2012b). The myo5Δ dataset contained both invaginations and vesicles, indicating that productive scission had taken place (Figure 8). Intriguingly, the invaginations had larger tip diameters than were reported for WT cells (p=0.003, Figure 8C; Kukulski et al., 2012a). This increase did not correlate with invagination length (Figure 8—figure supplement 1), indicating that the expansion of the invagination tip is present throughout the whole invagination process. Overall, these results indicate that myosin activity impacts the actin network architecture and endocytic membrane morphology.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig8-v1.jpg)
+
+**Figure 8.:** (A) and (B): Gallery of light microscopy (top) and electron tomography (bottom) images of invaginations (A) and vesicles (B) found in myo5Δ Sla1-EGFP Abp1-mCherry cells. The correlated fluorescent spots are indicated by arrows. Note that in (B) the same fluorescent spot correlated with two vesicles. The color of the border corresponds to the markers that were present in the endocytic spot (yellow: Sla1-EGFP + Abp1 mCherry, red: only Abp1-mCherry). Scalebars: 2 μm in light microscopy images, 100 nm in electron tomogram slices. (C) Diameter of the invagination tip. Only invaginations longer than 40 nm were included. WT data (green) from Kukulski et al. (2012a). **: p≤0.01.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/44215/elife-44215-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Only invaginations longer than 40 nm were included. WT data from Kukulski et al. (2012b).
+
 ## Discussion
 
-## Myo3 and Myo5 recruitment
+### Myo3 and Myo5 recruitment
 
 Several binding partners have been shown to participate in the recruitment of Myo3 and Myo5 to the endocytic site, including Vrp1 and actin. However, it was unknown whether the two myosins themselves influence each other’s recruitment. We found that Myo3 and Myo5 are recruited to the endocytic site at the same time and location, but in different amounts (Figure 3). Deletion or overexpression of one myosin paralog generally did not affect the recruitment of the other myosin paralog, suggesting that at these expression levels Myo3 and Myo5 do not compete for binding sites. The exception was the MYO5 gene duplication, where deletion of the MYO3 allele further increased Myo5 recruitment. Intriguingly, the total number of recruited myosin molecules (Myo3 + Myo5) in these two MYO5-duplication strains was the same at ~150 myosins, which may reflect the total number of available myosin binding sites within the endocytic machinery.
 
-## Myo3 and Myo5 regulate actin network growth and invagination speed
+### Myo3 and Myo5 regulate actin network growth and invagination speed
 
 Myo3 and Myo5 interact with the endocytic actin network, which is thought to produce the majority of the force that drives membrane bending. We found that deletion of MYO5 strongly decreased the rate of recruitment for all five actin network proteins tested (Figures 1 and 2). This results in a slower inward expansion of the actin network. Although the rate by which new actin components are added is strongly reduced, the peak number of actin network components is generally not affected, as the length of the accumulation phase is extended.
 
 The inward movement rate of coat proteins, which occupy the tip of the invagination and couple it to the expanding actin network, also depends on the amount of myosin-I present at endocytic sites (Figures 1, 2 and 3). We found a strong positive correlation between the total amount of myosins at the endocytic site and coat motility (Figure 3G). Note that all haploid data points, except the double deletion, lie on a straight line, implicating that the difference in Sla1 inward movement rate in myo3Δ and myo5Δ can be explained by the difference in recruitment levels of Myo3 and Myo5. This suggests that there is no functional difference between Myo3 and Myo5 under our experimental conditions.
 
-## Temporal coordination in the endocytic machinery
+### Temporal coordination in the endocytic machinery
 
 One remarkable feature of the endocytic machinery is the regularity by which endocytic proteins assemble, move and disassemble. Since invagination growth in myo5Δ is slower, yet still productive in generating vesicles, we decided to look at how the recruitment and disassembly of different endocytic modules are coordinated. We were especially interested to see if the timing of scission depends on the invagination state of the membrane; or in other words, if scission occurs after a set amount of time or at a set invagination length.
 
@@ -137,7 +165,7 @@ In WT cells, invaginations grow up to ~150 nm long before scission occurs, resu
 
 The absence of Myo5 results in a slowdown of nearly all aspects of endocytic vesicle budding, including actin network assembly and invagination elongation. Intriguingly, the onset of disassembly of the actin and scission modules is also delayed. Therefore, at the crucial moment of scission, in myo5Δ most endocytic proteins have reached both similar amounts and positions as they would have in WT cells, suggesting that these modules are interconnected and/or respond to the membrane invagination state. Though in the WT cells the peak of actin assembly coincides almost exactly with the peak in Rvs167 assembly, a slight shift can be observed in the myo5Δ cells, suggesting perhaps a defective coupling between the actin and scission modules. Strikingly, the disassembly of the coat does not seem to be tightly connected to scission, as the disassembly of the coat protein Sla1 is linked to the onset of actin assembly or membrane bending rather than scission. At the time of scission in myo5Δ, Sla1 disassembly is nearly complete and will only continue for ~1.5 s, compared to ~3.7 s in WT cells. This premature coat disassembly can potentially explain the increased invagination tip diameter we found in our myo5Δ CLEM dataset, as fewer coat proteins are present to maintain the diameter of the invagination tip. A similar expansion of invagination tip diameter was also found in the sac6Δ strain, and was attributed to the same cause (Picco et al., 2018).
 
-## Myosins contribute to force production by stimulating actin polymerization
+### Myosins contribute to force production by stimulating actin polymerization
 
 How do type-I myosins stimulate actin network growth and force production at the endocytic site? The myosin motor activity is critical for their function in endocytosis (Figure 4; Sun et al., 2006; Lewellyn et al., 2015). A recent study proposed that Myo5 stabilizes the actin network by restraining actin filaments to the vicinity of the endocytic site (Lewellyn et al., 2015). According to this hypothesis, without myosins the actin network collapses and splays out over the plasma membrane, which would severely interfere with force production. However, our superresolution microscopy data showed the actin network in myo5Δ is slightly but significantly narrower (Figure 7), which does not support this model.
 
@@ -151,25 +179,25 @@ Branched actin networks are thought to produce force via a ‘Brownian ratchet�
 
 ## Materials and methods
 
-## Strains, media and plasmids
+### Strains, media and plasmids
 
 Yeast strains and plasmids are listed in supplementary tables 3 and 4 respectively. Strains were created via homologous recombination with PCR cassettes (Janke et al., 2004), and by mating and sporulation. Gene duplications were created according to the protocol described in Huber et al. (2014). EGFP-tagging, gene duplications and truncations were confirmed by sequencing.
 
-## Live cell imaging
+### Live cell imaging
 
 Yeast strains were grown to OD600 = 0.3–0.8 in SC-TRP or SC-TRP-URA medium. Cells were adhered to ConA-covered coverslips and transferred to the microscope where the CherryTemp spacer and microfluidics chip were added on top. Cells were imaged in SC-TRP or SC-TRP-URA media at 24°C using the CherryTemp temperature controller. Images were acquired using Olympus IX81 or IX83 wide-field microscopes equipped with 100× 1.45 or 150x 1.45 oil objectives. For single-color imaging, the IX81 and IX83 microscopes were equipped with a single-band emission set GFP-3035c filter (Semrock Brightline) or with the 49002-ET-EGFP (FITC/Cy2, Chroma) set, respectively. We excited the cells with a 488 nm laser line using an 80 ms exposure time and we captured 500-frame long movies using an EMCCD camera ImageEM on the IX81 and ImageEMX2 on the IX83 (Hamamatsu). For dual-color imaging, the IX81 was equipped with a FITC-TRITC dual-band excitation filter set (Olympus) and the and IX83 was equipped with an Olympus BX2/IX3 mounting a ZT488/561rpc and a ZET488/561 m (Chroma). We illuminated the cells for 250 ms using both the 488 and 561 nm laser lines. The emission light was split using a DUAL-view beam splitter (Optical Insights) mounted on the IX81, which we equipped with emission filters 650/75 and 525/50 (Chroma), or with a Gemini (Hamamatsu) mounted on the IX83, which we equipped with emission filters FF03-525/50-25 and FF01-630/92-25 and dichroic Di03-R488/561-t1−25 × 36 (Semrock Brightline). We captured 300-frame long movies using the microscope respective EMCCD cameras. To correct two color images for chromatic aberration we acquired TetraSpecs samples. To quantify the number of molecules, the strain of interest was mixed in a 1:1 ratio with a Nuf2-EGFP strain of the same mating type. We imaged the sample on the IX81 equipped with a U-MGFPHQ (Olympus) filter using a X-CITE 120 PC (EXFO) fluorescent lamp as illumination. We captured 21-frame Z-stacks with 200 nm vertical spacing; each plane was illuminated for 400 ms.
 
-## Image analysis
+### Image analysis
 
 Single-color and two-color movies were analyzed and average trajectories were obtained as described previously (Picco et al., 2018; Picco et al., 2015; Picco and Kaksonen, 2017); a summary of the number of analyzed trajectories can be found in Supplementary file 1 table 5. Molecule numbers were calculated as described previously (Picco et al., 2018; Picco et al., 2015) and an overview can be found in Supplementary file 1 table 6. For Figures 1 and 3B, the average trajectories for each protein within one genotype (either WT or myo5Δ) were aligned to each other using the dual-color alignments. The two genotypes were subsequently plotted so that for each genotype y = 0 marks the onset of the Sla2 trajectory, and t = 0 was the start of Abp1 assembly. In the other figures, Sla1 trajectories are aligned in time by eye based on the onset of inward movement. Trajectories were smoothened using a Savitzky-Golay filter and plotted using python or R (Picco and Kaksonen, 2017).
 
 To calculate the Sla1 inward movement rates a custom script was used. All Sla1 trajectories were read into R (www.R-project.org). For each trajectory the first timepoint where the patch had moved for ≥50 nm was determined, and a linear regression was fitted through the data starting 1 s before this timepoint and ending 1 s after this timepoint. All individual slopes were pooled, poorly fitted slopes were excluded (st. error of fit ≥8, 0–3 per dataset), and the mean and standard error were calculated. To calculate inward movement rates for the other proteins we fitted a linear regression through the centroid trajectory from the start until the timepoint where the number of molecules peaked. The assembly rates are calculated with a linear regression of the number of molecules over time from the onset of protein assembly until its peak in the number of molecules.
 
-## Correlative light and electron microscopy
+### Correlative light and electron microscopy
 
 Correlated light and electron microscopy was performed as described previously (Kukulski et al., 2012a; Kukulski et al., 2012b; Kukulski et al., 2011). Briefly, MKY3168 cells were grown to OD600 = 0.6–1.2 at 24°C, high pressure frozen using an EMPACT2 (Leica) or HPH010 (BAL-TEC) and embedded in Lowycryl HM20 resin (Polysciences, Inc) using an AFS2 (Leica) with robot head for automated pipetting. Using a diamond knife (Drukker), 300 nm thick sections were cut on a microtome (Leica Ultracut) and deposited on carbon-coated copper grids (CF200-Cu, Electron Microscopy Sciences). On the same day, 50 nm TetraSpecks (Life Technologies) were adhered to the sections before fluorescence images were acquired in the red, green and blue channels. Next, 15 nm gold fiducials were adhered to the sections, which was then treated stained with lead citrate. Low-magnification single-axis tilt series (3° increments) and high-magnification single-axis tilt series (1° increments) were acquired over a range from −60° to 60° on a FEI Tecnai F30 operated at 300 kV using serialEM (Mastronarde, 2005) and captured on a FEI 4 k Eagle camera or a Gatan OneView 4 k camera. Tomograms were reconstructed using the IMOD package (Kremer et al., 1996), and correlations between the light microscopy images and tomograms were performed as described (Kukulski et al., 2012a). An overview of the acquired tomograms can be found in Supplementary file 1 table 7. Invagination sizes were measured using IMOD in a tomographic slice bisecting the invagination.
 
-## Superresolution microscopy
+### Superresolution microscopy
 
 Superresolution imaging and image analysis were performed as described previously (Mund et al., 2018; Mund et al., 2014). Yeast strains were grown to OD600 = 0.6–0.8 in YPAD medium. 1 mL of culture was gently spun down 2.5 min at 500 rcf and 900 uL of medium was removed. The cells were gently resuspended in the remaining medium and allowed to settle onto a ConA coated coverslip for 15 min. The coverslip was then fixed for 15 min in 4 mL of fixation solution (4% formaldehyde, 2% sucrose, PBS). Fixation was stopped by two 15 min incubations in quenching solution (50 mM NH4Cl in PBS), and coverslips were subsequently washed three times for 5 min in PBS.
 
@@ -181,13 +209,35 @@ From the localizations, images were reconstructed in the same software. Localiza
 
 Cells and endocytic sites were segmented in the superresolution images. The radial distribution of proteins at the endocytic site was determined by fitting each individual image with a geometric model that describes the structures either as rings or patches (Mund et al., 2018). The images were then translationally aligned by the center coordinates obtained from the fit, and the average radial density was calculated. Sites with outer radii smaller than 30 nm and fewer than 30 localizations were excluded, because these structures were too small to obtain geometric information.
 
-## Calculating the number of myosin molecules in the cytoplasm and at the endocytic sites
+### Calculating the number of myosin molecules in the cytoplasm and at the endocytic sites
 
-We assumed that all Myo3 or Myo5 molecules were either in the cytoplasm or at endocytic sites, and not at other locations in the cell. To calculate the number of Myo (Myo3 or Myo5) molecules in the cytoplasm, we used the following formulaMyocyto=Vcell*fractioncyto*Myo*NA  in which Myocyto is the number of myosin molecules in the cytoplasm, Vcell is the volume of a haploid yeast cell (42 μm3, BNID 100427, http://bionumbers.hms.harvard.edu), fractioncyto is the cytoplasmic volume fraction (0.29; Boeke et al., 2014), [Myo] is the cytosolic concentration of Myo3 or Myo5 (172 nM resp. 152 nM; Boeke et al., 2014) and NA is Avogadro’s constant. To calculate the number of Myo molecules at endocytic site, we used the following formulas:ESla1=pSla1*acellf=lMyolSla1 Myoendo=ESla1*f*NMyo
+We assumed that all Myo3 or Myo5 molecules were either in the cytoplasm or at endocytic sites, and not at other locations in the cell. To calculate the number of Myo (Myo3 or Myo5) molecules in the cytoplasm, we used the following formula
 
-ESla1 is the average number of Sla1 endocytic patches in a yeast cell; it is calculated as the product of pSla1, the number of Sla1 patches per surface area (0.65 μm−1; Brach et al., 2014), and aSla1, the area of a haploid yeast cell (58.8 μm2, surface area of a 4x4x5 μm prolate sphere). f is the fraction of Sla1 endocytic patches that contain also Myosin molecules; as Myosin and Sla1 lifetimes overlap, it is calculated as the ratio of the two (lSla1 and lMyo are the lifetime of Sla1 and Myosin, respectively). Myoendo is the number of Myosin molecules at the endocytic sites. It is calculated as the average number of Sla1 endocytic patches in yeast cell (ESla1) multiplied by the fraction of those endocytic patches that contain also Myosin molecules (f), and NMyo, the average number of myosin molecules at an endocytic site, which is calculated as the median number of Myo molecules over the lifetime of a patch (Myo3: 38, Myo5: 77, this paper). We find that an average yeast cell contains 1262 cytoplasmic Myo3 molecules and 654 Myo3 molecules at endocytic sites, giving a total of 1916 Myo3 molecules. Of the total pool of 2732 Myo5 molecules, 1115 are cytoplasmic and 1617 are endocytic.
+$$
+Myo_{cyto}=V_{cell}*fraction_{cyto}*Myo*N_{A}
+$$
 
-## Phalloidin staining
+in which Myocyto is the number of myosin molecules in the cytoplasm, Vcell is the volume of a haploid yeast cell (42 μm3, BNID 100427, http://bionumbers.hms.harvard.edu), fractioncyto is the cytoplasmic volume fraction (0.29; Boeke et al., 2014), [Myo] is the cytosolic concentration of Myo3 or Myo5 (172 nM resp. 152 nM; Boeke et al., 2014) and NA is Avogadro’s constant. To calculate the number of Myo molecules at endocytic site, we used the following formulas:
+
+$$
+E_{Sla1}=p_{Sla1}*a_{cell}
+$$
+
+
+
+$$
+f=\frac{l_{Myo}}{l_{Sla1}}
+$$
+
+
+
+$$
+Myo_{endo}=E_{Sla1}*f*N_{Myo}
+$$
+
+$E_{Sla1}$ is the average number of Sla1 endocytic patches in a yeast cell; it is calculated as the product of $p_{Sla1}$, the number of Sla1 patches per surface area (0.65 μm−1; Brach et al., 2014), and $a_{Sla1}$, the area of a haploid yeast cell (58.8 μm2, surface area of a 4x4x5 μm prolate sphere). $f$ is the fraction of Sla1 endocytic patches that contain also Myosin molecules; as Myosin and Sla1 lifetimes overlap, it is calculated as the ratio of the two ($l_{Sla1}$ and $l_{Myo}$ are the lifetime of Sla1 and Myosin, respectively). $Myo_{endo}$ is the number of Myosin molecules at the endocytic sites. It is calculated as the average number of Sla1 endocytic patches in yeast cell ($E_{Sla1}$) multiplied by the fraction of those endocytic patches that contain also Myosin molecules ($f)$, and $N_{Myo}$, the average number of myosin molecules at an endocytic site, which is calculated as the median number of Myo molecules over the lifetime of a patch (Myo3: 38, Myo5: 77, this paper). We find that an average yeast cell contains 1262 cytoplasmic Myo3 molecules and 654 Myo3 molecules at endocytic sites, giving a total of 1916 Myo3 molecules. Of the total pool of 2732 Myo5 molecules, 1115 are cytoplasmic and 1617 are endocytic.
+
+### Phalloidin staining
 
 Alexa Fluor 488 phalloidin (Mol. Probes, A12379, 300 U) was dissolved in methanol to a final concentration of 6.6 μM. MKY3185 (myo5Δ) and MKY0224 (NUF2-mCherry) were separately inoculated in 5 mL cultures in SC-TRP O/N at 24°C. These cultures were used to inoculate fresh 5 mL cultures at OD600 = 0.25 and allowed to grow for ~4 hr before being mixed in a 1:1 ratio. 0.5 mL 4% formaldehyde (analytical grade, Fisher Chemical) in PBS was added to 4.5 mL culture mix and incubated for 1.5 hr at 24°C. The fixed cells were washed 3x in PBS and resuspended in 45 uL PBS + 0.1% Triton-X (Roth). 5 uL Alexa488-phalloidin (Alexa Fluor 488 phalloidin, Mol. Probes, A12379, 300 U, dissolved in methanol to a final concentration of 6.6 μM) was added before incubation at RT for 30 min. The cells were washed gently with 500 uL PBS and resuspended in 20 uL PBS. Z-stacks were acquired using the fluorescent lamp in both the GFP and RFP channels, using 200 ms exposure times.
 

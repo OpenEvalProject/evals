@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.46347.001 Cohesin mediates higher order chromosome structure. Its biological activities require topological entrapment of DNA within a lumen(s) formed by cohesin subunits. The reversible dissociation of cohesin’s Smc3p and Mcd1p subunits is postulated to form a regulated gate that allows DNA entry and exit into the lumen. We assessed gate-independent functions of this interface in yeast using a fusion protein that joins Smc3p to Mcd1p. We show that in vivo all the regulators of cohesin promote DNA binding of cohesin by mechanisms independent of opening this gate. Furthermore, we show that this interface has a gate-independent activity essential for cohesin to bind chromosomes. We propose that this interface regulates DNA entrapment by controlling the opening and closing of one or more distal interfaces formed by cohesin subunits, likely by inducing a conformation change in cohesin. Furthermore, cohesin regulators modulate the interface to control both DNA entrapment and cohesin functions after DNA binding.
+Cohesin mediates higher order chromosome structure. Its biological activities require topological entrapment of DNA within a lumen(s) formed by cohesin subunits. The reversible dissociation of cohesin’s Smc3p and Mcd1p subunits is postulated to form a regulated gate that allows DNA entry and exit into the lumen. We assessed gate-independent functions of this interface in yeast using a fusion protein that joins Smc3p to Mcd1p. We show that in vivo all the regulators of cohesin promote DNA binding of cohesin by mechanisms independent of opening this gate. Furthermore, we show that this interface has a gate-independent activity essential for cohesin to bind chromosomes. We propose that this interface regulates DNA entrapment by controlling the opening and closing of one or more distal interfaces formed by cohesin subunits, likely by inducing a conformation change in cohesin. Furthermore, cohesin regulators modulate the interface to control both DNA entrapment and cohesin functions after DNA binding.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ We used the Smc3p Mcd1p fusion to test gate-dependent functions of three protein
 
 To assess the importance of the dissociation of Smc3 Mcd1 interface for these three regulatory proteins, we first built haploid strains bearing the fusion gene as the sole source of both Smc3p and Mcd1p function. We then replaced the endogenous SCC2, SCC3, PDS5 genes with conditional alleles containing a C-terminal 3V5 tag and an auxin-inducible degron (AID) called SCC3-AID, SCC2-AID or PDS5-AID. The AID degron enabled the rapid degradation of each of these proteins upon auxin addition (Eng et al., 2014). As a control, we placed the same AID constructs in an otherwise wild-type haploid strain to compare the effects of their depletion with and without the fusion. For clarity, strains that express the normal configuration of Smc3p and Mcd1p as separate subunits are referred to as normal strains or as having normal cohesin. Strains that have the Smc3p-Mcd1p fusion are referred to as fusion strains or as having fusion cohesin.
 
-## Fusion strains still require Scc2p, Scc3p and Pds5p for viability and sister chromatid cohesion
+### Fusion strains still require Scc2p, Scc3p and Pds5p for viability and sister chromatid cohesion
 
 We first assessed whether the fusion bypasses the need for Scc2p, Scc3p and Pds5p for cell viability. Normal and fusion strains with or without AID tagged proteins were grown to saturation and then plated in 10-fold serial dilution either in the presence or absence of auxin. As expected, normal strains depleted for Scc2p-AID, Scc3p-AID or Pds5p-AID were inviable (Figure 2A and B top panel) (Eng et al., 2014). Depletion of these same proteins in fusion strains was also lethal (Figure 2A and B bottom panels). The inviability of fusion strains indicates that Scc2p, Scc3p and Pds5p are required for an essential cohesin biochemical activity other than blocking exit through the putative Smc3p Mcd1p gate.
 
@@ -57,27 +57,55 @@ To begin to understand the exit gate-independent molecular functions of Scc2p, S
 
 As expected, mid-M arrested cells with normal cohesin had cohesion so two GFP spots were detected in only 5–10% of cells. Whereas, cells depleted of Scc2p-AID, Scc3p-AID, or Pds5p-AID had a major cohesion defect as evidenced by more than 75% of cells having two GFP spots, consistent with previous results (Figure 3A–B, top panels) (Eng et al., 2014). Most mid-M arrested cells with fusion cohesin had cohesion, although a modest cohesion defect was observed (~25% cells with two GFP spots) similar to that seen in previous studies (Figure 3A–B, bottom panels) (Gruber et al., 2006; Bloom et al., 2018). In contrast, fusion cells depleted for Scc2p, Scc3p or Pds5p had severe cohesion defects similar in magnitude to that seen after depletion in cells with normal cohesin (Figure 3A–B, bottom panels). These results show that the all three proteins play critical roles in sister chromatid cohesion independent of any putative role in keeping the Smc3p Mcd1p interface closed.
 
-## The Smc3p Mcd1p fusion does not suppress the effects of Scc2p, Scc3p and Pds5p depletion on cohesin binding to DNA
+![Figure 3.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig3-v3.jpg)
+
+**Figure 3.:** Haploids strains with normal cohesin or fusion cohesin from Figure 2 were grown to mid-log phase then arrested in G1 using α factor, auxin added to induce loss of AID-tagged proteins then released into media containing nocodazole and auxin to arrest in mid-M phase under AID depletion conditions as described for synchronous mid-M phase arrest in Materials and methods. Cells were fixed and processed to monitor loss of sister chromatid cohesion and for ChIP to monitor cohesin DNA binding. (A-B) Cohesion loss monitored in mid-M phase cells. The number of GFP spots was scored in G1 arrested cells and mid-M phase cells. The percentage of cells with 2 GFP spots was plotted. 100–200 cells were scored for each data point and data was generated from two independent experiments. (A) Scc2p-AID or Scc3p-AID depletion induces cohesion loss in strains with normal or fusion cohesin. Top panel is strains with normal cohesin and bottom panel is fusion cohesin strains. WT (White), SCC2-AID (black) and SCC3-AID (gray). (B) Pds5p-AID depletion induces cohesion loss in strains with normal or fusion cohesin. Top panel is strains with normal cohesin and bottom panel is fusion cohesin strains. WT (White) and PDS5-AID (black). (C-D) mid-M phase arrested cells fixed and processed for ChIP using anti-Mcd1p antibodies as described in Materials and methods. Mcd1p binding was assessed by qPCR and presented as percentage of total DNA using the same primer pairs at each site. Left Panel is chromosome III peri-centric region (CARC1), middle panel is chromosome IV arm CAR region (TRM1) and right panel is regions immediately adjacent to CEN4 and CEN14. (C) Scc2p-AID or Scc3p-AID depletion induces loss of fusion cohesin and normal cohesin binding to DNA. Top panel is strains with normal cohesin and bottom panel is fusion cohesin strains. WT (gray), SCC2-AID (black) and SCC3-AID (red). (D) Pds5p-AID depletion reduces the amount of fusion cohesin and normal cohesin binding to DNA. Top panel is strains with normal cohesin and bottom panel is fusion cohesin strains. WT (gray), PDS5-AID (black) and SMC3-AID (red).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of regimen used to synchronously arrest cells in mid-M phase. (B–D) Strains with normal cohesin or fusion cohesin alone or bearing Scc2p-AID or Scc3p-AID from Figure 2A were synchronously arrested in mid-M then processed to generate data presented in Figure 3A and C. (B) FACS to confirm arrest of cells. (C–D) Assessing depletion of Scc2p-AID and Scc3p-AID assessed. Protein extracts were made from G1 arrested cells before and after auxin treatment and from cells synchronous arrested in mid-M then subjected to SDS-PAGE and analyzed by western blot. 3V5-AID-tagged protein depletion was monitored using mouse antibodies against V5 (aV5) and rabbit anti-tubulin for a loading control (αTUB2). (C) Scc2p-3V5-AID depletion. (D) Scc3p-3V5-AID depletion (E) Mcd1p and Smc3pMcd1p fusion levels in mid-M arrested cells. Protein extracts from mid-M phase cells in C and D were analyzed by western blot. Mcd1p and fusion Smc3-Mcd1p fusion protein levels were monitored using rabbit antibodies against Mcd1p (aMCD1) and rabbit anti-tubulin for a loading control (αTUB2).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Strains with normal cohesin or fusion cohesin alone or bearing Pds5p-AID from Figure 2B were synchronously arrested in mid-M then processed to generate data presented in described in Figure 3B and D. (A) FACS to confirm arrest of cells. (B) Assessing depletion of Pds5p-AID. Protein extracts were made from G1 arrested cells before and after auxin treatment and from synchronous arrest in mid-M were subjected to SDS-PAGE and analyzed by western blot. (B) Pds5p-3V5- AID depletion was monitored using mouse antibodies against V5 (αV5) and rabbit anti-tubulin for a loading control (aTUB2) (C) Mcd1p and Smc3p-Mcd1p fusion levels in mid-M arrested cells. Protein extracts from mid-M phase cells in B were analyzed by western blot. Mcd1p and Smc3-Mcd1p fusion protein levels were monitored using rabbit antiMcd1p antibodies (αMCD1) and rabbit anti-tubulin for a loading control (αTUB2). (D) Pds5p binding to chromosomes using ChIP. Mid-M phase cells from B-C were fixed and processed for ChIP to assess Pds5p binding after Pds5p depletion as described in Figure 3. Pds5p binding was assayed using rabbit anti-Pds5p antibodies (αPDS5). WT (gray), PDS5-AID (black) and SMC3-AID (red).
+
+### The Smc3p Mcd1p fusion does not suppress the effects of Scc2p, Scc3p and Pds5p depletion on cohesin binding to DNA
 
 To understand further the molecular basis for the gate-independent functions of cohesin regulators, we compared the effect of Scc2p-AID and Scc3p-AID depletion on normal and fusion cohesin binding to chromosomes in cells subjected to our regimen of synchronous arrest. These cells were processed for chromatin immunoprecipitation (ChIP) using anti-Mcd1p antibodies (Materials and methods). In wild-type cells, fusion cohesin bound with the same pattern as normal cohesin at a pericentric CAR (CARC1) and an arm CAR (TRM1) locus as well as immediately adjacent to CEN4 and CEN14. (Figure 3C). Thus, the minor defect in cohesion observed in the fusion strain was not due to effects on fusion cohesin levels or distribution on chromosomes. For both normal and fusion cohesin, depletion of Scc2p-AID or Scc3p-AID completely abolished cohesin binding at peri-centric CARC1 and arm CAR TRM1 and dramatically reduced binding near CEN4 and CEN14 (Figure 3C). The lack of cohesin binding to DNA was not due to loss of either Mcd1p or Smc3p Mcd1p fusion as shown by western blot analysis (Figure 3—figure supplement 1E). Thus, Scc2p and Scc3p are essential for both normal and fusion cohesin to bind chromosomes. The robust fusion cohesin binding to DNA means the Smc3p Mcd1p interface is not the sole an entry gate for DNA. The fact that Scc2p and Scc3p are required for fusion cohesin binding to DNA means they do not function solely to prevent DNA escape through the putative Smc3p Mcd1p ‘exit’ gate.
 
 We also assessed the effect of Pds5p-AID depletion on cohesin binding in mid-M arrested cells bearing normal cohesin or with fusion cohesin. Pds5p-AID depletion was confirmed by both western blot and loss of Pds5p binding to chromosomes as assayed by ChIP (Figure 3—figure supplement 2B,D). There was a decrease in Mcd1p of normal cohesin and a more modest decrease of fusion protein (Figure 3—figure supplement 2C). This result is consistent with Pds5p serving partially to protecting Mcd1p from factors that degrade it (Stead et al., 2003; D'Ambrosio and Lavoie, 2014). At the pericentric CARC1, Pds5p-AID depletion reduced normal and fusion cohesin by 60–75%, but the reduction for normal and fusion cohesin was more severe at TRM1 (Figure 3D). Adjacent to CENs, normal cohesin binding was unperturbed whereas fusion cohesin binding was reduced ~50%. Thus, the fusion did not suppress the decrease in cohesin binding to DNA caused by Pds5p-AID depletion. These results show that Pds5p promotes cohesion and cohesin binding to DNA by a mechanism other than preventing DNA exit through the putative Smc3p Mcd1p gate.
 
-## Smc3 head acetylation in the fusion is required for efficient generation of sister chromatid cohesion but not for cell viability
+### Smc3 head acetylation in the fusion is required for efficient generation of sister chromatid cohesion but not for cell viability
 
 The exit gate model posited that Wpl1p opens the Smc3p Mcd1p interface to allow DNA escape from cohesin, but gate opening is blocked by Eco1p mediated acetylation of Smc3p at K112 K113 (Chan et al., 2012; Beckouët et al., 2016). Loss of Eco1p function is lethal and causes defects in cohesion and condensation in budding yeast (Skibbens et al., 1999; Tóth et al., 1999; Bloom et al., 2018). Previous work showed that the fusion suppressed the lethality and condensation defects of eco1∆ (Chan et al., 2012; Bloom et al., 2018). However, the eco1∆ fusion strain had an increased defect in sister chromatid cohesion compared to the wild-type fusion (Bloom et al., 2018). Eco1p acetylates Smc3p at multiple sites (Unal et al., 2008). We wanted to see whether the partial suppressive effects of the fusion were due solely to bypassing the requirement for acetylation at the essential K112 K113 residues.
 
 We addressed whether the fusion suppresses the need for K112 K113 acetylation by placing the smc3 K112R K113R (RR) mutant in the fusion and assessing the effect on cohesin function. If Smc3p K112 K113 acetylation functions solely to keep this interface closed, then the fusion should completely suppress the inviability and cohesion defects caused by the RR mutations. Strains bearing the RR fusion as the sole Smc3p and Mcd1p source are viable but are sensitive to cold and microtubule destabilizing drug benomyl (Figure 4A and B). Thus, the fusion suppressed the inviability that occurs when Smc3p head acetylation is blocked, just as it suppressed inviability of an eco1∆, but defects in cohesin function remained. Therefore, Smc3p K112 K113 acetylation has biological functions in addition to controlling the dissociation of the Smc3p Mcd1p interface.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig4-v3.jpg)
+
+**Figure 4.:** (A–B) Fusion cohesion bearing smc3-K112R, K113R (RR) mutations are viable but cold sensitive and benomyl sensitive. Haploid strains with wild-type fusion cohesin (VG3940-2D) or RR fusion (VG3930-5C) were grown to saturation at 30°C then plated at 10-fold serial dilution onto (A) YPD at either 23°C or 30°C and incubated for 3 days. (B) YPD alone or YPD containing benomyl at 12.5 μg/ml (BEN) then incubated for 23°C for 4 days. (C–D) Strains in A-B were synchronously arrested in mid-M as described in Figure 3 above except cells were grown at 30°C and auxin was omitted. Cells were fixed and processed to assess cohesion and for ChIP. (C) The RR mutation in fusion cohesin causes an increased defect in cohesion fusion. Cohesin was scored and plotted as described in Figure 3. Fusion cohesin (White) and RR fusion cohesin (black). (D) Fusion and RR fusion cohesin bind DNA at similar levels. mid-M phase arrested cells were fixed and processed for ChIP using anti-Mcd1p antibodies as described in Materials and methods and Figure 3. Left Panel is chromosome III peri-centric region (CARC1), middle panel is chromosome IV arm CAR region (TRM1) and right panel is regions immediately adjacent to CEN4 and CEN14. WT fusion (gray), RR fusion (black) and SMC3-AID (red).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Strains with fusion cohesin or RR fusion cohesin in Figure 4 were grown treated as described. (A) FACS to confirm arrest of cells. (B) Smc3p-Mcd1p fusion levels in mid-M arrested cells. Protein extracts from mid-M phase cells were analyzed by western blot. Smc3﻿- Mcd1p fusion protein levels were monitored using rabbit anti-Mcd1p antibodies (αMCD1) and rabbit anti-tubulin for a loading control (αTUB2).
+
 We also examined sister chromatid cohesion and cohesin binding to chromosomes in fusion wild-type and RR strains. Cells were synchronously arrested in mid-M phase as described for AID depletion experiments above except auxin was omitted and cells grown at 30°C due to the severe growth defect of RR fusion strains at 23°C. Forty-five percent of the smc3p-RR fusion bearing cells had a cohesion defect, an ~2 fold increase compared to wild-type fusion cells (Figure 4C). This increase suggests that Smc3 head acetylation regulates cohesion by a mechanism other than or in addition to blocking DNA exit through the putative gate. The cohesion defect could also explain the benomyl sensitivity as microtubule destabilization would abrogate early S phase bipolar attachments necessary for proper segregation in cells with severe cohesion defects (Guacci and Koshland, 2012). Finally, wild-type fusion and smc3p-RR fusion cohesin bound to chromosomes at similar levels and these fusion proteins are also present in cells at similar levels (Figure 4D, Figure 4—figure supplement 1A–B). This similarity means the increased cohesion defects in the RR fusion was not due to decreased cohesin binding to DNA. These results indicate that Smc3p head acetylation promotes efficient sister chromatid cohesin independent of stabilizing DNA binding by keeping Smc3p Mcd1p interface closed.
 
-## Smc3p Mcd1p interface controls the integrity of another cohesin interface to allow cohesin binding to DNA
+### Smc3p Mcd1p interface controls the integrity of another cohesin interface to allow cohesin binding to DNA
 
 Having established that key cohesin regulators function independently of preventing DNA exit through the Smc3p Mcd1p interface, we turned to characterize the function of the interface itself. Mutations in Mcd1p or Smc3p that affect residues in the interface are lethal (Arumugam et al., 2006; Eng et al., 2014; Gligoris et al., 2014; Robison et al., 2018). One such mutation, smc3-L1029R was thought to prevent cohesin binding to DNA because when tagged with GFP, it failed to immunolocalize to the cohesin-rich centromere cluster (Gligoris et al., 2014). This mutation also abolished a chemical crosslink normally detected between Smc3p and Mcd1p (Gligoris et al., 2014). These results were interpreted to mean that interface mutants eliminated Smc3p Mcd1p association, thereby allowing DNA to escape from cohesin entrapment. However, our results with fusion cohesin show that Pds5p and Scc3p promote DNA binding by mechanisms independent keeping this interface ‘gate’ closed. Their binding proximal to the Smc3p Mcd1p interface raised the alternative possibility that this interface has a gate-independent biochemical property that regulates cohesin binding to DNA.
 
 To test this possibility, we examined mutations that alter amino acids of the interface from both Mcd1p (mcd1-L75K and mcd1-L89K) and Smc3p (smc3-I1026R and smc3-L1029R). All four mutations were previously shown to be unable to support viability (Arumugam et al., 2006; Gligoris et al., 2014). Three possible outcomes are expected from the fusion mutants. If all these mutations abrogate cohesin function solely by preventing closure of a putative Smc3p Mcd1p interface exit gate, then all four mutants should be suppressed by the fusion. Alternatively, if the fusion fails to suppress all these mutants, then these residues must modulate cohesin in a way distinct from keeping a putative exit gate closed. Finally, the fusion could suppress mutants in only Smc3p or only Mcd1p. For example, if Mcd1p residues only promote association with Smc3p, whereas Smc3p residues have a second function, then the fusion would suppress only the mcd1 mutations.
 
 Before testing these mutants in the fusion, we further characterized them in normal cohesin to provide a baseline for judging their effects on fusion cohesin. The smc3 mutants were placed into a haploid strain bearing SMC3-3V5-AID (SMC3-AID) as the sole SMC3 whereas the mcd1 mutants were placed in a haploid bearing MCD1-AID as the sole MCD1. The wild-type SMC3 allele or MCD1 allele was placed into the SMC3-AID or MCD1-AID strain for positive controls, respectively. The parent SMC3-AID or MCD1-AID strain alone served as the negative controls. Strains were tested by dilution plating on auxin containing media to assess viability under AID depletion conditions. As expected, SMC3-AID alone or MCD1-AID alone were inviable on auxin, whereas those also containing wild-type alleles are viable (Figure 5A and B and (Eng et al., 2014). None of the mutant alleles rescued the inviability of the AID strains, corroborating previous studies that these interface residues provide an essential cohesin function (Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig5-v3.jpg)
+
+**Figure 5.:** (A) Viability loss of Smc3p interface mutant strains. Haploid SMC3-AID strain alone (VG3651-3D) or containing either wild-type (WT; BRY474), smc3-I1026R (VG3905-7A) or smc3-L1029R (BRY492) were grown and plated as described in Figure 2. (B) Viability loss of Mcd1p interface mutant strains. Haploid MCD1-AID strain alone (VG3902-3A) or containing, either wild-type (WT; VG3914-2C), mcd1-L75K (VG3916-5B) or mcd1-L89K (VG3918-9D) were grown and plated as described in Figure 2. (C–D) Haploids in A and B were synchronously arrested in mid-M phase as described in Figure 3. The number of GFP spots was scored in G1 arrested cells and mid-M phase cells. The percentage of cells with 2 GFP spots was plotted. 100–200 cells were scored for each data point and data was generated from two independent experiments. (C) Cohesion loss in smc3 interface mutant mid-M cells. SMC3-AID alone (white), or containing WT (gray), smc3-I1026R (dark blue) and smc3-L1029R (light blue). (D) Cohesion loss in mcd1 mutant mid-M cells. MCD1-AID strain alone (white) or containing, either WT (gray), mcd1-L75K (dark blue) or mcd1-L89K (light blue). (E–F) Protein extracts from the synchronous arrest regimen in A and B were made from G1 cells, auxin treated G1 cells and mid-M cells then subjected to western blot analysis. (E) Mcd1p is degraded in mid-M phase smc3 interface mutants. Top panel detects Smc3p-3V5-AID (αV5), middle panel detects Mcd1p (αMcd1). Tubulin (αTub2p; bottom panel) was used as a loading control. As a control we showed in (Figure 6—figure supplement 2) that the smc3-L1029R mutation did not affect its protein levels by comparing 6 HA-epitope-tagged Smc3p (VG3943-1C) and Smc3p-L1029R (VG3944-3D). (F) Mcd1p interface mutants are degraded in mid-M cells. Top panel detects Mcd1p (αMcd1) with star indicating Mcd1p-AID and arrow head Mcd1p WT and interface mutants, bottom panel detects Tubulin (αTub2p). .
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Strains with normal cohesin alone or bearing interface mutants were synchronously arrested in mid-M as described in Figure 3. (A) smc3 interface mutants in normal cohesin strains from Figure 5. (B) mcd1 interface mutants in normal cohesin strains from Figure 5.
 
 We next examined whether the four interface mutants compromised sister chromatid cohesion. Cells were synchronously arrested in mid-M phase under AID depletion conditions and arrest confirmed by FACS (Materials and methods; Figure 5—figure supplement 1A–B). We assessed cohesion at the LYS4 locus using the LacO-GFP, LacI system. As expected, almost all SMC3-AID and MCD1-AID cells had 2 GFP spots indicating a total loss of cohesion, whereas cells with the respective wild-type alleles promote cohesion so few cells had 2 GFP (Figure 5C and D). All four mutant alleles were totally defective in cohesion, similar to what was seen in the AID alone strains (Figure 5C and D).
 
@@ -88,6 +116,30 @@ We used this readout to assess the impact of smc3 and mcd1 interface mutants on 
 The Mcd1p degradation explained the loss of all cohesin function in the smc3 and mcd1 mutants but also complicated interpretations of the function of the interface. These mutations could indeed abrogate stable association of Smc3p and Mcd1p leading to Mcd1p degradation, or simply alter the interface in a way that allowed protease accessibility to the Mcd1p N terminus leading its degradation. In either case, the loss of Mcd1p in the normal strains precluded determining whether the interface performs another function distinct from an exit gate.
 
 With this foundation, we examined the properties of fusions containing either smc3-I1026R or smc3-L1029R in an SMC3-AID background, and either mcd1-L75K or mcd1-L89K mutations in an MCD1-AID background. These strains allowed us to examine the properties of the mutated fusions in the absence of the corresponding wild-type normal (unfused) subunit after auxin addition. Dilution plating onto auxin containing media revealed that the fusion failed to suppress the inviability of any of the smc3 or mcd1 interface mutants (Figures 6A and 7A). We then tested whether the fusion suppressed the degradation of Mcd1p in smc3 and mcd1 interface mutants. All four mutant fusion proteins were present in mid-M cells, although the mcd1p fusion mutants were slightly less abundant than the wild-type fusion (Figure 6B and 7B). Cell cycle arrest was confirmed by FACS (Figure 6—figure supplement 1, Figure 7—figure supplement 1). The presence of the mutant fusion proteins demonstrated that the complete Mcd1p loss observed when normal cohesin contains interface mutations depended upon a free N terminus of Mcd1p. More importantly, the inviability of the fusion mutants was not due to absence of fusion protein, but rather due to some other biochemical defect caused by the mutations.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig6-v3.jpg)
+
+**Figure 6.:** (A) Viability loss of Smc3p coiled coil mutant fusion strains. Haploid SMC3-AID strain alone (VG3651-3D) or containing fusion cohesin, either wild-type (WT; VG3694-7C), smc3-I1026R (VG3908-17B) or smc3-L1029R (VG3872-3B) were grown and plated as described in Figure 2. (B–D) Haploids in A were synchronously arrested in mid-M phase as described in Figure 3. (B) Fusion WT and smc3 interface mutant proteins are present in mid-M cells. Protein extracts from G1 and auxin treated G1 and mid-M phase arrested cells were subjected to western blot analysis using antibodies against V5 to detect Smc3p-3V5-AID (αV5; top panel) and against Mcd1p (αMcd1p; middle panel). Arrow head indicates fusion protein and star (*) indicates normal Mcd1p. Tubulin (αTub2p; bottom panel) was used as a loading control. (C) Cohesion is completely lost in smc3 mutant fusion mid-M phase arrested cells. The number of GFP spots was scored in G1 arrested cells and mid-M phase cells. The percentage of cells with 2 GFP spots was plotted. SMC3-AID alone (white), or containing fusion WT (gray), smc3-I1026R (dark blue) and smc3-L1029R (light blue). 100–200 cells were scored for each data point and data was generated from two independent experiments. (D) fusion smc3 interface mutant cohesin fails to bind DNA in mid-M phase. Fusion cohesin binding to chromosomes was assayed by ChIP using anti-Mcd1p antibodies as described in Figure 3. WT fusion (gray), smc3-I1026R fusion (blue) and smc3-L1029R fusion (red).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Strains with fusion cohesin alone or bearing smc3 interface mutants from Figure 6 were synchronously arrested in mid-M as described. FACS analysis was used to confirm arrest.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Haploid normal cohesin strains bearing Smc3p-3V5-AID alone (VG3651-3D) or containing either Smc3p-6HA (VG3943-1C) or Smc3p-6HAL1029R (VG3944-3D) were grown asynchronously, auxin added and cells incubated 1 hr. Protein extracts were made before after auxin addition and analyzed by western blot. Smc3p-6HA tagged proteins were monitored using mouse anti-HA antibodies (αHA), Smc3p-3V5-AID depletion was using mouse anti-V5 antibodies (αV5) and rabbit antitubulin for a loading control (αTUB2).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Fusion wild-type and L1029R mutant cohesin both co-IP with Scc2p. Haploid strain Scc2p-6MYC, Smc3p-3V5-AID bearing wild-type fusion cohesin (VG3952-14C) or fusion L1029R mutant (VG3953-17D) were grown asynchronously then auxin added and cells incubated 1 hr. An co-IP control without any MYC-tagged proteins (VG3694-7C; wild-type fusion and Smc3p-3V5-AID) was also used. Protein extracts were made before after auxin addition. Mouse anti-MYC antibodies were used to immunoprecipitate MYC tagged proteins and analyzed by western blot. Mouse anti-MYC antibodies detected MYC tagged Scc2p (αMYC), rabbit anti-Mcd1p antibodies detected fusion cohesin co-IP detected (αMCD1). (B) Fusion wild-type and L1029R mutant cohesin both co-IP with Scc3p. Haploid strain Scc3p-6MYC, Smc3p-3V5-AID bearing wild-type fusion cohesin (VG3949-5C) or fusion L1029R mutant (VG3950-8D) as well as control without any MYC-tagged proteins (VG3694-7C; wild-type fusion and Smc3p-3V5-AID) were grown and treated as described in A. (C) Smc3p-3V5 depletion to confirm that fusion cohesin is sole cohesion in cells. Extracts from cells in A and B before and after auxin addition were analyzed by Western Blot. Smc3p-3V5-AID depletion was monitored using mouse anti-V5 antibodies (αV5) and fusion cohesin levels monitored using rabbit anti-Mcd1p antibodies (αMCD1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig7-v3.jpg)
+
+**Figure 7.:** (A) Viability loss of Mcd1p NHD mutant fusion strains. Haploid MCD1-AID strain alone (VG3902-3A) or containing fusion cohesin, either wild-type (WT; VG3937-2C), mcd1-L75K (VG3938-3A) or mcd1-L89K (VG3939-7B) were grown and plated as described in Figure 2. (B–D) Haploids in (A) were synchronously arrested in mid-M phase as described in Figure 3. (B) Fusion WT and mcd1 NHD mutant proteins are present in mid-M cells. Protein extracts from G1, auxin-treated G1 and mid-M phase cells were subjected to western blot analysis using antibodies against Mcd1p (αMcd1p; top panel). Arrow head indicates fusion protein and star (*) indicates normal Mcd1p. Tubulin (αTub2p; bottom panel) was used as a loading control. (C) Cohesion is completely lost in mcd1 mutant fusion mid-M cells. The number of GFP spots was scored in G1 arrested cells and mid-M phase cells. The percentage of cells with 2 GFP spots was plotted. Haploid MCD1-AID strain alone (white) or containing fusion cohesin, either WT (gray), mcd1-L75K (dark blue) or mcd1-L89K (light blue). 100–200 cells were scored for each data point. (D) fusion mcd1 NHD mutant cohesin fails to bind DNA in mid-M phase. Fusion cohesin binding to chromosomes was assayed by ChIP using anti-Mcd1p antibodies as described in Figure 3. WT (gray), mcd1-L75K (red) and mcd1-L89K (blue).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46347/elife-46347-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Strains with fusion cohesin alone or bearing mcd1 interface mutants from Figure 7 were synchronously arrested in mid-M as described. FACS analysis was used to confirm arrest.
 
 We then examined the four mutant fusions for sister chromatid cohesion and cohesin binding to chromosomes in cells synchronously arrested in mid-M under auxin depletion conditions. All four mutant fusion strains had almost no sister chromatid cohesion when depleted for Mcd1p-AID or Smc3p-AID (Figures 6C and 7C). By ChIP, all four fusion mutants exhibited complete loss of cohesin binding to CARs and CEN DNA when depleted for Mcd1p-AID or Smc3p-AID (Figures 6D and 7D). The loss of cohesin binding to DNA explains why the interface fusion mutants were inviable and unable to generate cohesion.
 
@@ -121,56 +173,178 @@ In summary, all Smc complexes have a conserved interface analogous to the interf
 
 ## Materials and methods
 
-## Yeast strains and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>NCBITaxon:4932</td>
+      <td>this paper</td>
+      <td>Yeast strains</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>qPCR primers</td>
+      <td>DNA primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Mcd1p</td>
+      <td>V. Guacci (via Covance)</td>
+      <td>RbαMcd1p (555)</td>
+      <td>WB (1:10,000) ChIP (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Pds5p</td>
+      <td>V. Guacci (via Covance)</td>
+      <td>RbαPds5p (556)</td>
+      <td>WB (1:20,000) ChIP (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-MYC</td>
+      <td>Roche</td>
+      <td>MαMYC (9E10) Cat#116666006001</td>
+      <td>WB (1:10,000) IP (1:667)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-HA</td>
+      <td>Roche</td>
+      <td>MαHA (12CA5) Cat#11667203001</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-V5</td>
+      <td>Invitrogen</td>
+      <td>MαV5 Cat# 46–0705</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal HRP Anti-rabbit</td>
+      <td>Biorad</td>
+      <td>Cat# 170–6515</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal HRP Anti-mouse</td>
+      <td>Biorad</td>
+      <td>Cat# 170–6516</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Tub2p</td>
+      <td>P. Meluh (via Covance)</td>
+      <td>RbαTUB2</td>
+      <td>WB (1:40,000)</td>
+    </tr>
+    <tr>
+      <td>Dynabeads</td>
+      <td>Protein A</td>
+      <td>Invitrogen</td>
+      <td>Ref# 10002D</td>
+      <td>IP: Use 50 ul/IP</td>
+    </tr>
+    <tr>
+      <td>Dynabeads</td>
+      <td>Protein G</td>
+      <td>Invitrogen</td>
+      <td>Ref# 10004D</td>
+      <td>IP: Use 50 ul/IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Auxin (3-indole acetic acid)</td>
+      <td>Sigma</td>
+      <td>Cat# C9911</td>
+      <td>750 μM for plates 500 μM for liquid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alpha factor</td>
+      <td>Sigma</td>
+      <td>αF (αFactor) Cat# T6901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nocodazole</td>
+      <td>Sigma</td>
+      <td>Nz Cat# M1404</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and media
 
 Yeast strains used in this study are A364A background, and their genotypes are listed in Supplementary file 1. SC minimal and YPD media were prepared as described (Guacci et al., 1997). Auxin (3-indole acetic acid; Sigma-Aldrich Catalog# I3705) Benomyl (a gift from Dupont) and camptothecin (Sigma catalog# C9911) plates used to assess drug sensitivity were prepared as previously described (Guacci and Koshland, 2012). Preparation of auxin containing media for depletion of AID-tagged proteins was as previously described (Eng et al., 2014).
 
-## Dilution plating assays
+### Dilution plating assays
 
 Cells were grown to saturation in YPD media at 23°C (or 30°C when listed) then plated in 10-fold serial dilutions. Cells were incubated on plates at relevant temperatures or containing drugs as described.
 
-## Synchronous arrest in mid-M phase under auxin depletion conditions
+### Synchronous arrest in mid-M phase under auxin depletion conditions
 
-## G1 arrest
+#### G1 arrest
 
 Asynchronous cultures of cells were grown to mid-log phase at 23°C in YPD media, then alpha factor (αFactor) (Sigma; Catalog# T6901) was added to 10–8M. Cells were incubated for 23°C for 3 hr (or at 30°C for 2.5 hr) to induce arrest in G1 phase. For depletion of AID-tagged proteins, auxin was added (500 μM final) and cells incubated an additional 1 hr in αFactor containing media.
 
-## Synchronous arrest in mid-M phase
+#### Synchronous arrest in mid-M phase
 
 G1 arrested cells were washed 3x in YPD containing 0.1 mg/ml Pronase E (Sigma; Catalog# P6911), once in YPD, then resuspended in YPD containing nocodozale (Sigma; Catalog# M1404) at 15 μg/ml final. For depletion of AID-tagged proteins, auxin was added (500 μM final) in all wash media and in resuspension media containing nocodazole to ensure depletion at all times. Cells were incubated at 23°C for 3 hr (or 30°C for 2.5 hr) to arrest in mid-M phase.
 
-## Protein extracts and western blotting
+### Protein extracts and western blotting
 
-## Total protein extracts
+#### Total protein extracts
 
 Cell equivalents of 2 to 4 OD600 were washed in cold 1xPBS, pelleted in a microfuge at 10 k for 1 min then quick frozen using liquid nitrogen and stored at −80°C. Cell extracts were made as described in Eng et al. (2015) with the following modifications. Initial lysis in an eppendorf tube was in 200 μl 20% Trichloroacetic acid (W/V) then 500 μl 5% TCA added twice, and all liquid combined in a new eppendorf and treated as described. The final protein pellet was resuspended in 212 μl 2x Laemmli buffer +26 μl 1M Tris buffer pH8.
 
-## Immunoprecipitation
+#### Immunoprecipitation
 
 Cell equivalents of 20 OD600 were washed in cold 1xPBS, pelleted in a microfuge at 10 k for 1 min then quick frozen using liquid nitrogen and stored at −80°C. Cells were lysed and cleared extracts incubated with Mouse anti-MYC (9E10) antibodies (Roche) to immunoprecipitate MYC epitope tagged proteins as previously described (Bloom et al., 2018). Total extracts for these experiments were taken from cleared lysates before addition of antibodies.
 
-## Western blots
+#### Western blots
 
 Protein extracts were loaded onto 8% SDS page gels, subjected to electrophoresis then transferred to PDVF membranes using standard laboratory techniques.
 
-## Monitoring cohesion using LacO-GFP assay
+### Monitoring cohesion using LacO-GFP assay
 
 Cohesion was monitored using the LacO-LacI system. Briefly, cells contained a GFP-LacI fusion and tandem LacO repeats were integrated at LYS4, located 470 kb from CEN4. Cells were fixed and processed to allow the number of GFP signals in each cell to be scored and the percentage of cells with 2-GFP spots determined as previously described (Guacci and Koshland, 2012).
 
 Chromatin Immunoprecipitation (ChIP) was performed as previously described (Robison et al., 2018). Primers used for ChIP are shown in Supplementary file 2.
 
-## Microscopy
+### Microscopy
 
 Images were acquired with a Zeiss Axioplan2 microscope (100X objective, NA = 1.40) equipped with a Quantix CCD camera (Photometrics).
 
 Flow cytometry analysis was performed as previously described (Bloom et al., 2018).
 
-## Plasmid constructs
+### Plasmid constructs
 
 Site directed mutagenesis using the Stratagene Quick-change kit was employed to generate the smc3-I1026R and smc3-L1029R alleles in normal cohesin on LEU2 integrating plasmids pVG419 or in fusion cohesin on LEU2 or URA3 integrating plasmids pVG511 or p4897, respectively. Similarly, we generated mcd1-L75K and mcd1-L75K alleles in normal cohesin on LEU2 integrating plasmids pJH18 or in fusion cohesin on LEU2 integrating plasmids pVG511, respectively. The smc3-K112R, K113R mutant in fusion cohesin on URA3 integrating plasmid p4897. The smc3 and mcd1 mutations were confirmed by sequencing the entire ORF and the promoter region to ensure it was the only change.
 
-## Strain construction
+### Strain construction
 
-## AID-tagged proteins
+#### AID-tagged proteins
 
 Details about the Auxin-mediated destruction of AID-tagged proteins in yeast was previously described (Eng et al., 2014). Briefly, the TIR1 E3-ubiquiting ligase placed under control of the GPD promoter and marked by C. glibrata TRP1 replaced the TRP1 gene on chromosome IV. Strains bearing genomic copies AID tagged of alleles of SCC2, SCC3 and PDS5 as sole source were made by C-terminal tag with 3V5-AID2 sequences using standard PCR techniques into TIR1 bearing yeast to generate SCC2-AID, SCC3-AID and PDS5-AID strains, respectively. MCD1-AID alleles were built the same way except using AID1 and did not have the 3V5 tag (Eng et al., 2014). The SMC3-AID-tagged strains were built as previously described (Guacci et al., 2015).

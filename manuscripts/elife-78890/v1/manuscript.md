@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05a0ya142 Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States
-2. https://ror.org/03vek6s52 Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States
+1. Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+2. Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 

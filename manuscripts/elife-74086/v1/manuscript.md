@@ -8,12 +8,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
-2. https://ror.org/02kpeqv85 Kumamoto Sanctuary, Kyoto University Kumamoto Japan
-3. https://ror.org/026stee22 Max Planck Institute of Animal Behavior Radolfzell Germany
-4. https://ror.org/01w6qp003 Messerli Research Institute, University of Veterinary Medicine Vienna Vienna Austria
-5. https://ror.org/00hhkn466 Japan Society for the Promotion of Science (JSPS) Tokyo Japan
-6. https://ror.org/02kpeqv85 Primate Research Institute, Kyoto University Inuyama Japan
+1. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+2. Kumamoto Sanctuary, Kyoto University Kumamoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+3. Max Planck Institute of Animal Behavior Radolfzell Germany ([ROR:026stee22](https://ror.org/026stee22))
+4. Messerli Research Institute, University of Veterinary Medicine Vienna Vienna Austria ([ROR:01w6qp003](https://ror.org/01w6qp003))
+5. Japan Society for the Promotion of Science (JSPS) Tokyo Japan ([ROR:00hhkn466](https://ror.org/00hhkn466))
+6. Primate Research Institute, Kyoto University Inuyama Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
 
 † Corresponding author
 
@@ -41,13 +41,122 @@ Consequently, this study tested both humans and chimpanzees on their ability to 
 
 We developed five sets of hypotheses and predictions (Table 1). H1 is our key hypothesis, which posits the perceptual advantage of uniformly white sclera (Kobayashi and Kohshima, 2001; Kobayashi and Kohshima, 1997; Kano et al., 2021) and thus predicted increased performance for both human and chimpanzee positive eyes in participants of both species. H2 posits the perceptual advantage of the iris-sclera color difference. As the iris-sclera color difference (note the difference between the contrast and difference measures employed by previous studies; Perea-García et al., 2019; Caspar et al., 2021; Mearing and Koops, 2021; Kano et al., 2021) was similar between chimpanzees and humans in general (Kano et al., 2021) and did not differ between our chimpanzee and human stimuli with both positive and negative eyes (see Appendix 3—figure 2 for the quantitative evaluation of our stimuli), we predicted no performance difference between the stimulus types in participants of both species. H3 posits the perceptual advantage of the horizontally elongated shape. As human eyes were horizontally longer than chimpanzee eyes in general (Mayhew and Gómez, 2015; Caspar et al., 2021; Kano et al., 2021) and also in our stimulus set (Appendix 3—figure 2), we predicted increased performance for the human stimuli (with both positive and negative eyes) in participants of both species. H4 posits the participants’ perceptual expertise in the contrast polarity of own-species eyes (Ricciardelli et al., 2000) and thus predicted increased performance for the positive eyes of both species in human participants and the negative eyes of both species in chimpanzee participants. H5 addressed a general possibility arising from our manipulation of both species’ eye colors, namely, that participants of both species perform more poorly in such artificial conditions, and thus predicted increased performance for the human positive eyes and the chimpanzee negative eyes in participants of both species. Related to this last hypothesis, our chimpanzee participants had extensive experiences in interacting with both conspecifics and humans from youth and thus were familiar with both species’ eyes. We also ensured that our human participants had a minimum of a few months (to decades) of experiences in interacting with chimpanzees and thus were familiar with both species’ eyes.
 
+**Table 1.**
+ Hypotheses predicting the effect of eye color and shape on the visibility of eye-gaze in chimpanzee and human participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hypothesis</th>
+      <th>Assumption</th>
+      <th>Participant</th>
+      <th colspan="2">Eyes with normal contrast polarity</th>
+      <th colspan="2">Eyes with reversed contrast polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Human eye</td>
+      <td>Chimpanzee eye</td>
+      <td>Human eye</td>
+      <td>Chimpanzee eye</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H1</td>
+      <td rowspan="2">Perceptual advantage of uniformly white sclera</td>
+      <td>Humans</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Chimpanzees</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H2</td>
+      <td rowspan="2">Perceptual advantage of the iris-sclera color difference</td>
+      <td>Humans</td>
+      <td>~</td>
+      <td>~</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Chimpanzees</td>
+      <td>~</td>
+      <td>~</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H3</td>
+      <td rowspan="2">Perceptual advantage of the horizontally elongated eye shape</td>
+      <td>Humans</td>
+      <td>+</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Chimpanzees</td>
+      <td>+</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H4</td>
+      <td rowspan="2">Perceptual expertise in the contrast polarity of own-species eyes</td>
+      <td>Humans</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Chimpanzees</td>
+      <td>–</td>
+      <td>+*</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H5</td>
+      <td rowspan="2">Perceptual expertise in the normal contrast polarity of eyes</td>
+      <td>Humans</td>
+      <td>+</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Chimpanzees</td>
+      <td>+</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_*+ denotes a higher performance than –, and ~ denotes a similar performance in within-species (row-wise) comparisons._
+
 ## Results
 
 In Study 1, we tested 25 adult human participants (14 females, 11 males) in two experiments. Experiment 1 presented participants with the stimuli of both humans and chimpanzees with normal contrast polarity at four stimulus levels (L1–4) varying in size and brightness. We tested the effect of stimulus level and species on participants’ correct responses (correct, incorrect) in a binomial generalized linear mixed model (GLMM; see Appendix 1—table 1 for the formulas) and found that human participants performed better in trials presenting the human stimuli than those presenting the chimpanzee stimuli (χ2 = 37.08, df = 1, p<10–8). We also found that their performance was worse in trials presenting smaller and more shaded stimuli (χ2 = 45.85, df = 3, p<10–9; see Appendix 1—table 2 for the full GLMM results; Figure 2A). Experiment 2 presented the same participants with the stimuli of both species with both normal and reversed contrast polarities at stimulus levels L3 and L4. We tested the effect of stimulus level, species, and contrast polarity on participants’ correct responses in GLMM and found a significant three-way interaction effect between these factors (Figure 2B; χ2 = 17.57, df = 1, p<10–4; also see Appendix 1—table 2). We then performed simple effects tests to examine the observed interaction effect further (Figure 2B and Appendix 1—table 2). Critically, we found that human participants performed better in trials presenting the positive (reversed) eyes of chimpanzees (i.e., the white sclera and a darker iris) than those presenting the negative (normal) eyes of chimpanzees (i.e., the dark sclera and a bright iris), while they performed worse in trials presenting the negative (reversed) eyes of humans than those presenting the positive (normal) eyes of humans.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/74086/elife-74086-fig2-v1.jpg)
 
-**Figure 2.:** A) and 2 (B).L1–4 indicate the stimulus level, with L1 being the brightest and largest and L4 being the most shaded and smallest. Error bars are 95% confidence intervals based on a nonparametric bootstrap. Asterisks indicate significance in the post-hoc models ran for Experiment 2 (***p<0.001, **p<0.01).
+**Figure 2.:** L1–4 indicate the stimulus level, with L1 being the brightest and largest and L4 being the most shaded and smallest. Error bars are 95% confidence intervals based on a nonparametric bootstrap. Asterisks indicate significance in the post-hoc models ran for Experiment 2 (***p<0.001, **p<0.01).
 
 In Study 2, we began with training 10 chimpanzees. Only three (Natsuki, Hatsuka, Pendesa) passed all the required training and subsequently participated in test phases (see Appendix 2—table 1 for details about participants; also see Appendix 4—table 1 and Figure 1 for the number and performance of training sessions for each chimpanzee). Study 2 involved two experiments. Experiment 1 tested those three chimpanzees and presented them with the human and chimpanzee eye images with normal contrast polarity. To test chimpanzees at stimulus levels higher than L1 (i.e., smaller and more shaded), we gradually incremented the stimulus level (by 0.5) across sessions when individuals showed high performance in target trials presenting a given stimulus level (above 85% in two successive sessions). The test phase was defined as the sessions presenting stimulus level higher than (or equal to) L2.5, given that we observed clear performance differences between stimulus species at stimulus levels higher than L2 in Study 1 (see Appendix 4—table 3 for the number of sessions in the pre-test and test phases). We tested chimpanzees’ correct responses during the test phase across repeated sessions at the individual level (with the α level corrected for the number of individuals in the Bonferroni correction, α = 0.05/3). Each chimpanzee completed a minimum of 20 test sessions. To avoid the ceiling effect, we incremented the stimulus level also during the test phase when chimpanzees showed high performance in target trials based on the same criteria. We tested the effect of stimulus species in binomial GLMM on each chimpanzee’s correct responses (correct, incorrect) during the test phase and found that all three chimpanzees performed significantly better for the human stimuli than the chimpanzee stimuli (Natsuki: χ2 = 8.28, df = 1, p=0.004; Hatsuka: χ2 = 9.50, df = 1, p=0.002; Pendesa: χ2 = 21.94, df = 1, p<10–5; also see Appendix 1—table 2).
 
@@ -71,19 +180,19 @@ In conclusion, we demonstrated that uniform whiteness in the exposed sclera enha
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Study 1 tested 25 human adults (14 females, 11 males; 23 East/South Asians and 1 Caucasian male) who had moderate to extensive experience in caretaking or studying chimpanzees (3 months = 1; 1–5 years = 10; 5–10 years = 4; >10 years = 10). Although our human participants were mostly from similar cultural backgrounds, two related experimental studies tested participants from other cultural backgrounds (Ricciardelli et al., 2000; Yorzinski and Miller, 2020), and thus our results are complementary to those previous results. Our participants included 10 individuals who had extensive experience interacting with chimpanzees over a decade. We confirmed the same results when we restricted our analyses to those participants. All human participants were workers or students at Kumamoto Sanctuary (KS) or Primate Research Institute (PRI) who were directly invited to participate in this experiment. All were naïve to the experimental hypotheses in this study. All reported having normal to corrected-to-normal vision and no color blindness. Written informed consent was obtained from all participants before the study. The experimental protocol was approved by the internal ethical committee for human experiments in PRI (no. 2020-05).
 
 Study 2 trained 10 chimpanzees (nine females, one male). Among them, three chimpanzees (Natsuki, Hatsuka, Pendesa) passed all the training stages and participated in Experiment 1. Two of these three chimpanzees (Natsuki, Hatsuka) participated in Experiment 2. Daily veterinary checks indicated no specific visual problems (including color blindness) that may have interfered with the execution of current experiments in our chimpanzee participants (though some minor visual problems may exist in Pendesa; Kaneko et al., 2013). Chimpanzees lived in a social group of conspecifics at KS or PRI. All chimpanzees were tested in a dedicated testing room at each facility, and their daily participation was voluntary, in that they could decide whether to enter the testing room on a given testing day. They received regular feedings, daily enrichment, and had ad libitum access to water. Animal husbandry complied with institutional guidelines (KS: Wildlife Research Center ‘Guide for the Animal Research Ethics’; PRI: 2002 version of ‘The Guidelines for the Care and Use of Laboratory Primates’), and the research protocol was approved by the institutional research committee (KS: WRC-2020-KS008A/009A; PRI: 2020-193/209). See Appendix 2—table 1 for details about participants.
 
-## Apparatus
+### Apparatus
 
 Study 1 tested human participants in a standard office setting either in KS or PRI. Two participants were tested remotely online given the COVID-19 situation at the time of the experiment. They received the same task program online and performed the task on their computer in a standard office. Although slight differences existed in experimental setups between these two and the other participants (detailed below), we confirmed that including or not including them in our analysis yielded the same results. Participants sat in front of a 23-inch monitor (52.7 × 29.6 cm, SE2416H, Dell, Round Rock, TX; for one online participant, 52.2 × 29.3 cm, 243V5QHABA/11, Phillips, Amsterdam, the Netherlands; for the other online participant, 50.9 × 28.6 cm xub2390hs-b3, Iiyama, Japan; all monitors were in 1920 × 1080 pixels and set at 100% brightness and 50% contrast). They placed their second- to fourth-digit fingers on the left, down, and right keys of a standard keyboard connected to the computer. With this setup, the viewing distance was about 60–70 cm. Participants were told to sit in front of the monitor as they normally would and not to move their original head position throughout the experiments.
 
 Study 2 tested chimpanzee participants in a testing room equipped with touch panels (ET1790L-7CWB-1-ST-NPB-G, Touch Panel Systems, Yokohama, Japan, in KS; LCD-AD172F2-T, IO-DATA, Kanazawa, Japan, in PRI; both 34.5 × 26.0 cm; both 1280 × 1024 pixels; both 100% brightness and 50% contrast) installed with their centers 45 cm from the floor. With this position, the eye level of the chimpanzees was roughly at the center of the monitor when they sat on the floor. The monitor was installed 15 cm behind transparent polycarbonate panels, and there was a rectangle hole sized 40 × 15 cm on the panel so that chimpanzees could view the stimuli through the panel while making a touch response by inserting their arm through the hole (Figure 1). With this setup, the viewing distance was about 30–40 cm. This visual distance for chimpanzee participants is shorter than that for human participants, and thus overall task difficulty should be lower for them, consistent with other procedural differences that we made to ease the task difficulty for chimpanzees.
 
-## Stimuli
+### Stimuli
 
 We prepared chimpanzee and human facial images with different levels of sizes and brightness. Eyeball regions of these facial images were manipulated to have either normal or reversed contrast polarity (Appendix 3—figure 3). To create the chimpanzee stimuli, we selected 10 high-resolution facial images of chimpanzees of both sexes from image collections obtained from colleagues at KS. As we sampled images from KS chimpanzees, some of our stimulus chimpanzees were familiar to KS chimpanzees (half of the stimulus chimpanzees used in both training and test sessions), while all stimulus chimpanzees were unfamiliar to PRI chimpanzees. Yet, we confirmed that KS and PRI chimpanzees did not systematically differ in their performance during the training sessions (see Appendix 4—figure 1). All stimulus chimpanzees were familiar to KS human participants, while most stimulus chimpanzees were unfamiliar to PPI human participants. Yet, we confirmed that KS and PRI human participants performed similarly in trials presenting the chimpanzee stimuli.
 
@@ -95,7 +204,7 @@ We then evaluated the shape and color of the eyes in our images following a prev
 
 Finally, we converted the facial images to various levels of sizes and brightness. Study 1 used four stimulus levels (L1–4). L1 stimuli measured 400 pixels in width (original) and 100% brightness (original), L2 stimuli measured 200 pixels in width (1/2) and 50% brightness (1/2), L3 stimuli measured 100 pixels in width (1/4) and 33% brightness (1/3), and L4 stimuli measured 50 pixels in width (1/8) and 25% brightness (1/4). These size and brightness levels were determined based on pilot experiments with two human participants (who did not participate in Study 1) so that the gaze direction of L4 stimuli was recognizable to both participants at least in one of the stimulus species with either positive or negative eyes. In Study 2, we prepared three additional stimulus levels, L1.5, L2.5, and L3.5, which were the intermediate between L1 and 2, L2 and 3, and L3 and 4, respectively, in terms of size and brightness (i.e., L1.5: 300 pixels in width, 75% brightness; L2.5: 150 pixels in width, 42% brightness; L3.5: 75 pixels in width, 29% brightness) so that chimpanzees could move to the next stimulus level without showing substantial drops in their performances (see details about the test procedures below). Studies 1 and 2 used identical stimuli except that Study 1 presented the whole face in a 1:1 square image (e.g., 400 × 400 pixels), while Study 2 presented only the eye region in a 4:1 rectangle image (e.g., 400 × 100 pixels) to reduce attentional demands on chimpanzees.
 
-## Task procedures
+### Task procedures
 
 We made the task procedures of studies 1 and 2 as similar as possible, although several unavoidable differences existed because chimpanzees required extensive training to master the gaze-detection task. In Study 1, the task for the human participants was to indicate the direction of gaze (left/front/right) in the stimulus face presented at the center of the screen by keypress in each trial. They were instructed to answer as accurately and quickly as possible.
 
@@ -115,6 +224,6 @@ In both experiments 1 and 2, (pre-)test sessions presenting stimulus levels high
 
 As in Study 1, the number of times in which the target image (with averted gaze) was presented on each location (left/center/right) was balanced in each session (i.e., each gaze direction was presented in 16 trials per session), and the number of times in which each stimulus individual was presented was balanced in each session (i.e., each stimulus individual was presented four times per session). The order of presenting chimpanzee or human images in the first block was counterbalanced across sessions. The locations of the target images and the order of presenting the stimulus individuals were pseudorandomized so that the target image did not appear on the same location in more than two successive trials, and the same stimulus individual was not presented in any successive trials. See Appendix 4—table 1 for the summarized descriptions of each stage at the training and (pre-)test phases and Appendix 4—table 2 and Appendix 4—table 3 for the number of sessions in each stage at the training and (pre-)test phases, respectively.
 
-## Data analysis
+### Data analysis
 
 To test the participants’ performance differences between conditions, we ran a binomial GLMM in R (version 4.0.5). In Experiment 1 of Study 1, the model included participants’ correct response (correct, incorrect) as the response variable, stimulus species (chimpanzee image, human image), and stimulus level (L1–4) as test fixed factors, the interaction between those test factors, block and (within-block) trial, which was nested in each block, as control fixed factors, and participant and stimulus individual as random factors (see Appendix 1—table 1 for the formulas). In Experiment 2 of Study 1, we used the same model with eye contrast polarity (normal, reversed) as an additional test fixed factor (and its interaction with the other test factors; Appendix 1—table 1). In Study 2 (chimpanzees), as we evaluated chimpanzees’ performance in repeated sessions and adjusted their performances by incrementing stimulus levels according to their performance, we treated the session as a random factor and did not include stimulus level in the model. Therefore, the model included stimulus species as a test fixed factor, block and (within-block) trial as control fixed factors, and stimulus individual and sequence as random factors (Appendix 1—table 1). Study 2 performed statistical tests for each chimpanzee with the α level adjusted for the number of individuals in the Bonferroni correction; namely, 0.05/3 in Experiment 1 and 0.05/2 in Experiment 2. For all models in studies 1 and 2, we included all possible random slope components, although we removed the correlations between random slopes and intercepts to ease the nonconvergence issues (Barr et al., 2013). Overdispersion was checked using the dispersion parameters derived from the R package ‘blmeco’ and did not seem to be an issue in any of our models (they ranged between 0.77 and 1.12). The significance of a given term was tested using a likelihood ratio test. Nonsignificant interaction terms were dropped to test the significance of lower-order terms. When the interaction term was significant, post-hoc comparisons were performed to examine simple effects at each factor level. All data and R scripts are available in our online repository (https://osf.io/2xny3/).

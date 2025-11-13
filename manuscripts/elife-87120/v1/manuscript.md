@@ -25,21 +25,21 @@
 
 ### Affiliations
 
-1. https://ror.org/00wm07d60 Department of Epigenetics, Van Andel Research Institute Grand Rapids United States
-2. https://ror.org/058xzat49 Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany
-3. https://ror.org/00wm07d60 Department of Metabolism and Nutritional Programming, Van Andel Research Institute Grand Rapids United States
-4. https://ror.org/00wm07d60 Metabolomics and Bioenergetics Core, Van Andel Institute Grand Rapids United States
-5. https://ror.org/00wm07d60 Department of Neurodegenerative Sciences, Van Andel Research Institute Grand Rapids United States
-6. https://ror.org/0245cg223 Institute of Neuropathology, Medical Faculty, University of Freiburg Freiburg Germany
-7. https://ror.org/0245cg223 Department of Medicine II, University Hospital Freiburg Freiburg Germany
-8. https://ror.org/0245cg223 Centre for NeuroModulation (NeuroModBasics), University of Freiburg Freiburg Germany
-9. https://ror.org/0245cg223 Signaling Research Centers BIOSS and CIBSS, University of Freiburg Freiburg Germany
+1. Department of Epigenetics, Van Andel Research Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+2. Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany ([ROR:058xzat49](https://ror.org/058xzat49))
+3. Department of Metabolism and Nutritional Programming, Van Andel Research Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+4. Metabolomics and Bioenergetics Core, Van Andel Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+5. Department of Neurodegenerative Sciences, Van Andel Research Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+6. Institute of Neuropathology, Medical Faculty, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+7. Department of Medicine II, University Hospital Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+8. Centre for NeuroModulation (NeuroModBasics), University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+9. Signaling Research Centers BIOSS and CIBSS, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
 
 † Corresponding author
 
 ## Abstract
 
-Chronic high-fat feeding triggers metabolic dysfunction including obesity, insulin resistance, and diabetes. How high-fat intake first triggers these pathophysiological states remains unknown. Here, we identify an acute microglial metabolic response that rapidly translates intake of high-fat diet (HFD) to a surprisingly beneficial effect on metabolism and spatial/learning memory. High-fat intake rapidly increases palmitate levels in cerebrospinal fluid and triggers a wave of microglial metabolic activation characterized by mitochondrial membrane activation and fission as well as metabolic skewing toward aerobic glycolysis. These effects are detectable throughout the brain and can be detected within as little as 12 hr of HFD exposure. In vivo, microglial ablation and conditional DRP1 deletion show that the microglial metabolic response is necessary for the acute effects of HFD. 13 C-tracing experiments reveal that in addition to processing via β-oxidation, microglia shunt a substantial fraction of palmitate toward anaplerosis and re-release of bioenergetic carbons into the extracellular milieu in the form of lactate, glutamate, succinate, and intriguingly, the neuroprotective metabolite itaconate. Together, these data identify microglia as a critical nutrient regulatory node in the brain, metabolizing away harmful fatty acids and liberating the same carbons as alternate bioenergetic and protective substrates for surrounding cells. The data identify a surprisingly beneficial effect of short-term HFD on learning and memory.
+Chronic high-fat feeding triggers metabolic dysfunction including obesity, insulin resistance, and diabetes. How high-fat intake first triggers these pathophysiological states remains unknown. Here, we identify an acute microglial metabolic response that rapidly translates intake of high-fat diet (HFD) to a surprisingly beneficial effect on metabolism and spatial/learning memory. High-fat intake rapidly increases palmitate levels in cerebrospinal fluid and triggers a wave of microglial metabolic activation characterized by mitochondrial membrane activation and fission as well as metabolic skewing toward aerobic glycolysis. These effects are detectable throughout the brain and can be detected within as little as 12 hr of HFD exposure. In vivo, microglial ablation and conditional DRP1 deletion show that the microglial metabolic response is necessary for the acute effects of HFD. 13C-tracing experiments reveal that in addition to processing via β-oxidation, microglia shunt a substantial fraction of palmitate toward anaplerosis and re-release of bioenergetic carbons into the extracellular milieu in the form of lactate, glutamate, succinate, and intriguingly, the neuroprotective metabolite itaconate. Together, these data identify microglia as a critical nutrient regulatory node in the brain, metabolizing away harmful fatty acids and liberating the same carbons as alternate bioenergetic and protective substrates for surrounding cells. The data identify a surprisingly beneficial effect of short-term HFD on learning and memory.
 
 ## Introduction
 
@@ -51,39 +51,935 @@ Here, we find that microglia respond to dietary fat within single 12 hr feeding 
 
 ## Results
 
-## Acute HFD-induced metabolic changes are microglia dependent
+### Acute HFD-induced metabolic changes are microglia dependent
 
 To understand the nature of the immediate high-fat feeding response, we characterized the physiological effects of acute HFD (3d ad libitum feeding) in cohorts of C57BL/6J mice (Figure 1A). Metabolically healthy mice exhibit rapid metabolic shifts on this timescale, including fasting and post-absorptive (2 hr fast) hyperglycemia and an elevated insulin response to glucose (Figure 1B–E, Figure 1—figure supplement 1A and B; Benani et al., 2012; Wang et al., 2001). Glucose excursion, as revealed by baseline correction, and insulin tolerance were minimally impacted upon acute HFD (Figure 1—figure supplement 1C), an important contrast to chronic HFD (Gregor and Hotamisligil, 2011). These acute changes in glycemic control were transient, returning to homeostatic levels within 1 week of a return to normal chow (‘Reverse Diet’; Figure 1C–E) and are not associated with substantial body weight gain (Figure 1—figure supplement 1D). To test whether microglia contribute these effects, we treated mice with the microglia-ablating drug PLX-5622 (Feng et al., 2017) for 7–9 days and repeated the 3d HFD metabolic assessment. PLX-5622 treatment depleted hypothalamic microglia by >95% across animals (Figure 1F), without body weight gain or food intake modification (Figure 1—figure supplement 2A and B) and prevented induction of both the 3d HFD insulin hypersecretion and post-absorptive hyperglycemia (Figure 1C–E). Hyperglycemia associated with overnight fasting was unaffected by microglial depletion (Figure 1C). The latter indicates that acute HFD triggers microglia-dependent and independent metabolic effects. Thus, microglia are required for metabolic changes induced by the transition to high-fat feeding.
 
-## A rapid microglial mitochondria response to HFD
+![Figure 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depicting the different treatments and diets followed by the mice groups. (B) Graphs showing the glucose tolerance test (OGTT) and the associated-insulin kinetic of C57Bl6/J male fed with control diet (Control) or fed with high-fat diet for 3 days (3-day HFD) (n=8). (C) Graph showing the overnight fasted glycemia from the mice groups depicting in (A). Schematic (n=5–11). (D) Graph showing the 2 hr fasted glycemia from the mice groups depicting in (A). Schematic (n=5–11). (E) Graph showing the insulin released after a glucose gavage from the mice groups depicting in (A). Schematic (n=5–11). (F) Microglial cells staining with Iba1 (green) in the brain slices from mice fed with 3 days HFD or mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 prior the 3 days HFD (PLX-5662) (n=5). (G) Single-cell RNA-sequencing (scRNAseq) data from hypothalamic microglial cells harvested from C57bl6/J male mice fed with control diet (CT) and high-fat diet for 3 days (HFD_3d) (n=5) merged with scRNAseq microglia dataset from mice presenting an experimental autoimmune encephalomyelitis (EAE). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Graphs showing the glucose tolerance test (OGTT) and the associated-insulin kinetic of C57Bl6/J male before keeping them with a control diet (Control) or before feeding them with high-fat diet for 3 days (3-day HFD) (n=8). (B) Graph showing the insulin tolerance test (ITT) of C57Bl6/J male before keeping them with a control diet (Control) or before feeding them with 3 day HFD (n=5). (C) Graphs showing the glucose tolerance test (OGTT) expressed in percentage from the basal glycemia of C57Bl6/J male fed with a control diet (Control) or fed with 3-day HFD (n=8). (D) Graph showing the body weight evolution between C57Bl6/J male fed with control diet (Control) or fed with 3-day HFD, before and after the diet change (n=7). (E) IBA1 immunostaining on hypothalamic slices from C57Bl6/J male fed with control diet (Control) or fed with 3-day HFD and its quantification (n=10). (F) IBA1 and YFP immunostaining on hypothalamic slices from Cx3cr1creERT2-Rosa26YFP mice fed with control diet or 3 day HFD (n=5). (G) sgRNAseq dataset from hypothalamic microglial cells harvested from C57bl6/J male mice fed with control diet (Control) and high-fat diet for 3 days (HFD_3d) (n=5). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Graph showing the body weight evolution between mice fed with normal diet or control diet complexed with PLX-5662 for 7 days, prior the 3 days normal diet or 3 days HFD. The four groups are the following: Control diet (ND) (n=6), 3 days HFD (HFD) (n=8), 7-day-PLX-5662 then control diet (PLX-ND) (n=12), 7-day-PLX-5662 then 3-day HFD (PLX-HFD) (n=12). (B) Graph showing the food intake evolution between mice fed with normal diet or control diet complexed with PLX-5662 for 7 days, prior the 3 days normal diet or 3 days HFD. The four groups are the following: Control diet (ND) (n=6), 3 days HFD (HFD) (n=8), 7-day-PLX-5662 then control diet (PLX-ND) (n=12), 7-day-PLX-5662 then 3-day HFD (PLX-HFD) (n=12).
+
+### A rapid microglial mitochondria response to HFD
 
 Long-term exposure to HFD has previously been associated with hypothalamic microgliosis (increased number and activation of CD45lo;CD11b+ microglia) and monocyte infiltration (CD45hi;Cd11b+) (Valdearcos et al., 2017). Examination of 3d HFD responses in both wild-type animals and animals harboring a microglia-restricted eYFP lineage reporter showed no evidence of either increased hypothalamic microglial proliferation (Figure 1—figure supplement 1E) or monocyte infiltration (Figure 1—figure supplement 1F). Similarly, using the highly sensitive single-cell RNA-sequencing (scRNAseq) protocols, CEL-Seq2, we found no evidence of a significant microglial transcriptional response to this very short-term HFD exposure. The latter analysis included searches for changes in heterogeneity, skewing across sub-states, and appearance of new cell sub-states (Figure 1G, Figure 1—figure supplement 1G). The lack of response was especially clear when juxtaposed to experimental autoimmune encephalomyelitis (EAE)-triggered responses performed using the same purification and sequencing protocols in the same laboratory (EAE; Figure 1G). Thus, the central effects of acute HFD are distinct from those of chronic HFD, and have little to no effect on microglial expansion, transcription, heterogeneity, or inflammation in the hypothalamus.
 
 A deep body of literature has highlighted how cellular metabolic changes are necessary and sufficient mediators of cell-type-specific function, work revitalised of late by the immunometabolism community (Pearce et al., 2013). We tested whether such changes in cellular metabolism might underpin the microglial response to acute high-fat feeding. Interestingly, mitochondrial membrane potential was increased in primary MBH microglia sorted from animals administered a 3d HFD (MitoTracker Deep Red; Figure 2A and B). Co-staining in the same samples showed no evidence of altered mitochondrial mass (MitoTracker Green; Figure 2C). This aMMR was detectable within 12 hr of high-fat feeding (Figure 2B). Importantly, aMMR appeared transient and distinct from chronic HFD response; parallel measures showed no induction of membrane potential in 4-week HFD animals (Figure 2B). Thus, microglia respond to acute HFD with a unique and specific acute mitochondrial metabolic response.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig2-v1.jpg)
+
+**Figure 2.:** (A) FACS plots depicting the ratio MitoTracker Deep Red/ MitoTracker Green from sorted microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 3 days (3-day HFD). (B) Graph showing the ratio MitoTracker Deep Red/ MitoTracker Green from sorted hypothalamic microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 12 hr, 3 days or 1–4 weeks (n=5–12). (C) Graph showing the MitoTracker Green fluorescence from sorted hypothalamic microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 12 hr, 3 days or 1–4 weeks (n=5–12). (D) Volcano plot showing the metabolites content of cerebrospinal fluid from C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 3 days (n=10). (E) Seahorse (±succinate added in the media during the experiment) on primary microglia challenged for 24 hr with BSA (control) or palmitate (experiment replicated three times). (F) Mitochondrial electron transport chain activity recorded with FACS after TMRM staining from sorted microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 3 days (n=5). (G) Mitochondrial networks from primary microglia stained with MitoTracker Green after being challenged for 24 hr with BSA (control), palmitate, oleate, or LPS (n=40) and the mitochondrial length quantification graphs. (H) DRP1 colocalization with the mitochondrial network stained with TOMM20 on primary microglial cell after being challenged for 24 hr with BSA (control) and palmitate (n=40) and the colocalization quantification graphs. Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) IBA1 immunostaining of primary microglial cells treated with BSA (control) or palmitate for 24 hr. (B) Graph showing mRNA expression of microglial marker (TMEM119) or astrocytes marker (S100B) or macrophages marker (Arg1) in primary microglial culture challenged for 24 hr with BSA or palmitate. Primary culture of astrocytes and macrophages were used as positive controls. (C) MitoSOX staining of primary microglial cells after being challenged for 24 hr with BSA (control), palmitate, oleate, or LPS (n=10) and the MitoSOX quantification graph. (D) Mitochondrial networks from primary microglia stained with MitoTracker Green and stained with MitoSOX after being challenged for 2 hr with BSA (control), palmitate, oleate, or LPS (n=40) and the mitochondrial length as well as the MitoSOX quantification graphs. (E) Interleukins concentrations (TNFalpha, IL-1beta, IL6) in the primary microglial cells media after being challenged for 24 hr with BSA or palmitate (n=7). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc.
+
 To understand the inputs that trigger aMMR, we performed targeted metabolomics of CSF (Figure 2D; Table 1). Overall, relatively few metabolites change upon 3d HFD. Nicotinamide-N-oxide was the only metabolite that decreased significantly; and six metabolites increased upon 3d HFD including methylmalonate, isovalerylcarnitine, nicotinic acid, glutarylcarnitine, and the fatty acids, palmitate (hexadecanoic acid) and stearate (octadecanoic acid). Palmitate and stearate, the only two metabolites that changed by >2-fold, are highly enriched in the HFD itself (Research Diets D12492) suggesting that microglia respond ‘directly’ to dietary fatty acid levels.
+
+**Table 1.**
+ Results of targeted metabolomics of cerebrospinal fluid (CSF).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metabolite</th>
+      <th>FC</th>
+      <th>log2FC</th>
+      <th>p-Value</th>
+      <th>log10(p-value)</th>
+      <th>Enrichment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kynurenic acid</td>
+      <td>3.56</td>
+      <td>1.83</td>
+      <td>0.24</td>
+      <td>0.62</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Hexadecanoic acid</td>
+      <td>2.27</td>
+      <td>1.18</td>
+      <td>0.01</td>
+      <td>2.11</td>
+      <td>HFD 3d</td>
+    </tr>
+    <tr>
+      <td>Nicotinamide-N-oxide</td>
+      <td>0.45</td>
+      <td>–1.14</td>
+      <td>0.02</td>
+      <td>1.71</td>
+      <td>CT</td>
+    </tr>
+    <tr>
+      <td>Octadecanoic acid</td>
+      <td>2.17</td>
+      <td>1.12</td>
+      <td>0.02</td>
+      <td>1.64</td>
+      <td>HFD 3d</td>
+    </tr>
+    <tr>
+      <td>Serotonin</td>
+      <td>0.51</td>
+      <td>–0.98</td>
+      <td>0.95</td>
+      <td>0.02</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>N-Methyl-4-pyridone-3-carboxamide</td>
+      <td>1.81</td>
+      <td>0.85</td>
+      <td>0.06</td>
+      <td>1.21</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Methylmalonate</td>
+      <td>1.80</td>
+      <td>0.85</td>
+      <td>0.01</td>
+      <td>1.86</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Tetradecanoic acid</td>
+      <td>1.78</td>
+      <td>0.83</td>
+      <td>0.29</td>
+      <td>0.53</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Octanoylcamitine</td>
+      <td>0.60</td>
+      <td>–0.73</td>
+      <td>0.99</td>
+      <td>0.00</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Propionylcarnitine</td>
+      <td>1.65</td>
+      <td>0.73</td>
+      <td>0.45</td>
+      <td>0.35</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Isovalerylcamitine</td>
+      <td>1.65</td>
+      <td>0.72</td>
+      <td>0.02</td>
+      <td>1.74</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nicotinic acid</td>
+      <td>1.60</td>
+      <td>0.68</td>
+      <td>0.04</td>
+      <td>1.39</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Glutarylearnitine</td>
+      <td>1.60</td>
+      <td>0.68</td>
+      <td>0.00</td>
+      <td>2.40</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nicotinamide</td>
+      <td>0.63</td>
+      <td>–0.66</td>
+      <td>0.07</td>
+      <td>1.13</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>1-MethyInicotinamide</td>
+      <td>0.66</td>
+      <td>–0.59</td>
+      <td>0.31</td>
+      <td>0.51</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Ophthalmic acid</td>
+      <td>0.68</td>
+      <td>–0.56</td>
+      <td>0.24</td>
+      <td>0.62</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>N-Methylserotonin</td>
+      <td>1.41</td>
+      <td>0.49</td>
+      <td>0.17</td>
+      <td>0.77</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>O-Acetylcarnitine</td>
+      <td>1.38</td>
+      <td>0.47</td>
+      <td>0.62</td>
+      <td>0.21</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Tryptophan</td>
+      <td>1.35</td>
+      <td>0.43</td>
+      <td>0.10</td>
+      <td>1.02</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>3-Hydroxyanthranillic acid</td>
+      <td>1.34</td>
+      <td>0.43</td>
+      <td>0.20</td>
+      <td>0.69</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Butyrylcarnitine</td>
+      <td>1.33</td>
+      <td>0.42</td>
+      <td>0.28</td>
+      <td>0.55</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nudifioramide</td>
+      <td>1.27</td>
+      <td>0.34</td>
+      <td>0.04</td>
+      <td>1.41</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Quinolinic acid</td>
+      <td>1.21</td>
+      <td>0.27</td>
+      <td>0.22</td>
+      <td>0.66</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>S-Adenosyl-L-homocysteine</td>
+      <td>0.84</td>
+      <td>–0.26</td>
+      <td>0.44</td>
+      <td>0.35</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Isobutyrylcarnitine</td>
+      <td>1.15</td>
+      <td>0.21</td>
+      <td>0.62</td>
+      <td>0.20</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>2-Methylbutyrylcarnitine</td>
+      <td>1.15</td>
+      <td>0.20</td>
+      <td>0.64</td>
+      <td>0.19</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nicotinic acid mononucleotide</td>
+      <td>0.90</td>
+      <td>–0.15</td>
+      <td>0.33</td>
+      <td>0.49</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Hexanoylcarnitine</td>
+      <td>1.10</td>
+      <td>0.14</td>
+      <td>0.69</td>
+      <td>0.16</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nicotinamide mononucleotide</td>
+      <td>1.10</td>
+      <td>0.14</td>
+      <td>0.95</td>
+      <td>0.02</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Carnitine</td>
+      <td>1.06</td>
+      <td>0.08</td>
+      <td>0.88</td>
+      <td>0.06</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>S-Adenosyl-L-methionine</td>
+      <td>1.06</td>
+      <td>0.08</td>
+      <td>0.61</td>
+      <td>0.21</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>3-Hyroxykynurenine</td>
+      <td>1.04</td>
+      <td>0.06</td>
+      <td>0.87</td>
+      <td>0.06</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Nicotinuric acid</td>
+      <td>0.96</td>
+      <td>–0.06</td>
+      <td>0.64</td>
+      <td>0.19</td>
+      <td>Not Sig</td>
+    </tr>
+    <tr>
+      <td>Anthranillic acid</td>
+      <td>1.04</td>
+      <td>0.05</td>
+      <td>0.96</td>
+      <td>0.02</td>
+      <td>Not Sig</td>
+    </tr>
+  </tbody>
+</table>
 
 To test whether these observed fatty acid changes in the CSF might directly trigger aMMR, we switched to an in vitro primary neonatal microglia model and examined the effects of the more abundant of these, palmitate (Li et al., 2018; Figure 2—figure supplement 1A and B). Palmitate had no effect on either baseline or maximal oxygen consumption under standard culture conditions (Figure 2E). That said, when added in conjunction with succinate (to prime complex II-mediated OxPhos), palmitate-treated microglia were unable to utilize succinate. Acute palmitate therefore appears to rapidly compromise or saturate complex II function and prevent utilization of substrates routed through complex II. Consistent with these in vitro findings, fresh primary microglia from 3d HFD animals failed to respond to complex II-specific mitochondrial stimuli (rotenone+succinate; Figure 2F) validating the findings in adult, ex vivo contexts. Consistent with the in vivo observations above, in vitro palmitate exposure decreased microglial mitochondrial length within 24 hr, indicating that fatty acid exposure itself is sufficient to trigger mitochondrial fission in a cell autonomous manner (Figure 2G, upper panels). This result also confirms observations by Kim et al. who observed mitochondrial fission and DRP1 phosphorylation upon 3d HFD-treated mice (Kim et al., 2019). Collectively, these responses were independent of any mitoSOX-detectable ROS release (Figure 2—figure supplement 1C), and were associated with recruitment of the mitochondrial fission regulator DRP1 (Figure 2H). A 24 hr exposure to the mono-unsaturated fatty acid oleate failed to elicit a comparable fission response (Figure 2G), and, acute palmitate exposure had no effects on microglial cytokine release in vitro (IL6, IL1β, TNFα; Figure 2—figure supplement 1E). Thus, acute in vitro fatty acid exposure recapitulates in vivo aMMR, including selective loss of complex II activity and lack of significant inflammatory cytokine response.
 
-## aMMR is required for diet-induced homeostatic rewiring in vivo
+### aMMR is required for diet-induced homeostatic rewiring in vivo
 
 We net tested whether mitochondrial dynamics are required for the in vivo metabolic responses to 3d HFD. We generated tamoxifen-inducible, microglial-Drp1 knockout mice (Drp1MGKO) by crossing Drp1fl/fl animals with a Cx3cr1creER transgenic line (Goldmann et al., 2013; Wakabayashi et al., 2009). Drp1MGKO animals were born at Mendelian ratios and grow normally. Tamoxifen injection followed by 4 weeks washout generated the intended Drp1 deletion (Figure 3A and B, Figure 3—figure supplement 1A; Wakabayashi et al., 2009).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunostaining of TOMM20 and DRP1 on sorted microglia from mice Drp1MGWT or Drp1MGKO. (B) Western blot against DRP1 on sorted microglia from mice Drp1MGWT or Drp1MGKO. (C) Graphs showing the overnight fasted glycemia, the 2 hr fasted glycemia, and the insulin released from Drp1MGWT or Drp1MGKO fed with control diet (n=5–11). (D) Graphs showing the overnight fasted glycemia, the 2 hr fasted glycemia, and the insulin released from Drp1MGWT or Drp1MGKO fed with 3-day high-fat diet (n=5–11). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic depicting the timeline for the tamoxifen injection and the experiments performed on Drp1MGWT or Drp1MGKO. (B) Graph showing the body weight evolution among all the Drp1MGKO genotypes after the tamoxifen injection (n=6–11). (C) Graphs showing the fat mass and lean mass evolution among all the Drp1MGKO genotypes after the tamoxifen injection (n=6–11). (D) Graphs showing the body weight before and after the 3-day high-fat diet (HFD) for the mice Drp1MGWT and Drp1MGKO (n=11–13). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc.
+
 Body weight, fat mass, and lean mass regulation were normal both before and after tamoxifen injection in Drp1MGKO mice, indicating that microglial DRP1 (and by extension microglial mitochondrial fusion) is dispensable for body weight regulation under standard conditions (Figure 3—figure supplement 1B and C). These data are consistent with literature (Gao et al., 2014). Drp1MGKO mice also showed normal glucose and insulin tolerance (Figure 3C). Importantly, whereas 3d HFD triggered post-absorptive hyperglycemia and enhanced glucose-induced insulin release in control animals, Drp1MGKO failed to mount a comparable whole-body metabolic response (Figure 3D). Thus, while microglial mitochondrial dynamics are dispensable for baseline control of body weight and glucose homeostasis, they are absolutely necessary for the very earliest metabolic anomalies induced when switching to HFD. Consistent with the data from Figure 1, the 3d HFD-induced hyperglycemia that is observed under overtly catabolic conditions, which we found to be microglia independent (Figure 1C), was still present in Drp1MGKO animals (Figure 3D). These data reinforce the conclusion that the metabolic responses to acute HFD are highly specific and include both microglia-dependent and independent mechanisms. Thus, microglial mitochondrial dynamics are required for the immediate in vivo homeostatic response to 3d HFD.
 
-## Microglia take up and metabolize free fatty acids
+### Microglia take up and metabolize free fatty acids
 
 Due in part to the long isolation times required to generate pure primary adult microglia, metabolite tracing experiments on primary adult microglia are not currently feasible. We therefore chose primary murine neonatal microglia as our model of choice for more mechanistic experiments (Valdearcos et al., 2014). Using BODIPY fluorescence as a readout, we found that primary microglia increase lipid droplet numbers within 24 hr of in vitro exposure to palmitate (200 µM; Figure 4A), demonstrating a capacity to take up fatty acids. We therefore used stable isotopic tracer labeling and directly quantified U-[13C]-palmitate (13C -palmitate) processing in both control (BSA-treated) and 24 hr palmitate pre-exposed microglia. Primary microglia incubated with 13C-palmitate for 4 hr, washed and subjected to GCMS or LCMS-based metabolomics (Figure 4B). Focusing first on the control microglia we observed significant palmitate uptake and incorporation into downstream metabolites (Figure 4C–F, O and Table 2). This is the first definitive demonstration to our knowledge that microglia metabolize fatty acids. 13C-palmitate label was processed to palmitoylcarnitine and acetylcarnitine indicating that microglial fatty acid metabolism acts via the canonical CPT1/CPT2 pathway, moving carbons from outside the mitochondria into the inner mitochondrial matrix (Figure 4C, Figure 4—figure supplement 1A). 13C-labeling was also found in 13C-acetylserine, indicating that palmitate is processed through β-oxidation and that it contributes to the acetyl-coA pool (Figure 4D, Figure 4—figure supplement 1B). Label was detected in all measured TCA cycle intermediates (Figure 4E, Figure 4—figure supplement 1C). The labeling ratios of TCA intermediates and glutamate indicated that microglia push a substantial fraction of palmitate-derived carbons out of the TCA (alpha-ketoglutarate [a-KG] to glutamate) rather than processing them further through the whole TCA cycle (toward malate) (Figure 4E and F, Figure 4—figure supplement 1D). Thus, microglia store and metabolize palmitate toward energy and toward a unique set of anaplerotic reactions.
 
-## Palmitate induces a novel microglial lactate/succinate/itaconate release pathway
+![Figure 4.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig4-v1.jpg)
+
+**Figure 4.:** (A) BODIPY staining on primary microglia challenged for 24 hr with BSA or palmitate and the lipid droplets quantification graph (n=20). (B) Schematic depicting the timeline for the tracing experiments (13C-palmitate or 13C-glucose) on primary microglial challenged for 24 hr with BSA or palmitate. (C) 13C-palmitate incorporation into palmitoylcarnitine (m+16) and acetylcarnitine (m+2) after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). (D) 13C-palmitate incorporation into acetyl serine (m+2) after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). (E) 13C-palmitate incorporation into aconitate, alpha-ketoglutarate, fumarate, malate (m+2) after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). (F) 13C-palmitate incorporation into glutamate (m+2) after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). (G) 13C-palmitate incorporation into glutamate (m+2) released during the 4 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (H) 13C-palmitate incorporation into itaconate (m+1) released during the 4 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (I) 13C-palmitate incorporation into succinate (m+2) released during the 4 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (J) 13C-glucose incorporation into the intracellular glucose pool (m+6) after 6 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). (K) 13C-glucose incorporation into glutamate (m+2) released during the 6 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (L) 13C-glucose incorporation into itaconate (m+1) released during the 6 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (M) 13C-glucose incorporation into succinate (m+2) released during the 6 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (N) 13C-glucose incorporation into lactate (m+3) released during the 6 hr tracing experiment by primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (O) Schematic depicting the metabolic pathways used by the primary microglial challenged for 24 hr with BSA (black arrow) or palmitate (red arrow) during the different tracing (13C-palmitate or 13C-glucose). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 13C-palmitate incorporation into palmitoylcarnitine and acetylcarnitine after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (B) 13C-palmitate incorporation into acetyl-serine after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (C) 13C-palmitate incorporation into aconitate, alpha-ketoglutarate, fumarate, malate after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (D) 13C-palmitate incorporation into glutamate after 4 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in relative abundance. (E) 13C-glucose incorporation into pyruvate, citrate, alpha-ketoglutarate, succinate, and malate after 6 hr tracing experiment on primary microglia pretreated for 24 hr with BSA or palmitate (n=3). The results are graphed in pool size. Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc.
+
+**Table 2.**
+ Metabolites released in media from BSA- or palmitate (PA)-treated neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metabolite</th>
+      <th>N</th>
+      <th>Overall, N=12*</th>
+      <th>BSA, N=6*</th>
+      <th>PA, N=6*</th>
+      <th>p-Value†</th>
+      <th>q-Value ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>b_DL.Lactic.Acid</td>
+      <td>12</td>
+      <td>7,768,093,932.0 (566,966,988.5)</td>
+      <td>7,315,358,105.8 (237,880,097.3)</td>
+      <td>8,220,829,758.2 (398,345,524.3)</td>
+      <td>0.002</td>
+      <td>0.064</td>
+    </tr>
+    <tr>
+      <td>b_D..Glutamine</td>
+      <td>12</td>
+      <td>92,514,878.8 (9,477,866.2)</td>
+      <td>99,910,567.8 (6,363,882.4)</td>
+      <td>85,119,189.7 (5,084,875.9)</td>
+      <td>0.002</td>
+      <td>0.064</td>
+    </tr>
+    <tr>
+      <td>a_Acetyl.L.carnitine</td>
+      <td>12</td>
+      <td>21,534,366.5 (5,136,659.2)</td>
+      <td>25,486,005.2 (4,313,399.0)</td>
+      <td>17,582,727.8 (1,401,821.0)</td>
+      <td>0.004</td>
+      <td>0.085</td>
+    </tr>
+    <tr>
+      <td>b_L.Serine</td>
+      <td>12</td>
+      <td>8,927,932.4 (1,999,447.4)</td>
+      <td>10,439,581.3 (1,620,380.1)</td>
+      <td>7,416,283.5 (827,833.2)</td>
+      <td>0.009</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>b_X4.Oxoproline</td>
+      <td>12</td>
+      <td>5,158,697.7 (2,093,379.7)</td>
+      <td>6,584,223.3 (1,496,000.9)</td>
+      <td>3,733,172.0 (1,589,279.7)</td>
+      <td>0.026</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>b_X3.Hydroxy.2.methyl.4.pyrone.tent.</td>
+      <td>12</td>
+      <td>112,324,855.5 (18,985,842.0)</td>
+      <td>122,558,080.8 (13,194,171.3)</td>
+      <td>102,091,630.2 (19,173,036.1)</td>
+      <td>0.065</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>a_Adipic.acid.tent.</td>
+      <td>12</td>
+      <td>463,554.3 (1,036,466.7)</td>
+      <td>0.0 (0.0)</td>
+      <td>927,108.7 (1,359,286.8)</td>
+      <td>0.074</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>a_D..Pyroglutamic.Acid</td>
+      <td>12</td>
+      <td>287,577,957.7 (32,240,216.1)</td>
+      <td>302,927,531.8 (25,661,286.0)</td>
+      <td>272,228,383.5 (32,600,385.7)</td>
+      <td>0.093</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>b_L.Arabinose.or.isomer.</td>
+      <td>12</td>
+      <td>427,996,608.9 (18,980,682.8)</td>
+      <td>437,653,974.3 (18,029,045.8)</td>
+      <td>418,339,243.5 (15,611,025.3)</td>
+      <td>0.093</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>b_L.Tyrosine</td>
+      <td>12</td>
+      <td>85,928,933.3 (296,055,668.3)</td>
+      <td>345,898.5 (293,093.1)</td>
+      <td>171,511,968.0 (418,627,435.0)</td>
+      <td>0.13</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_Sodium.lauryl.sulfate</td>
+      <td>12</td>
+      <td>22,598.3 (76,220.7)</td>
+      <td>0.0 (0.0)</td>
+      <td>45,196.5 (107,496.4)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_Tridecanoic.acid</td>
+      <td>12</td>
+      <td>113,734.1 (302,240.1)</td>
+      <td>0.0 (0.0)</td>
+      <td>227,468.2 (412,217.0)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>a_Leucine</td>
+      <td>12</td>
+      <td>27,980,174.9 (7,729,502.5)</td>
+      <td>30,862,636.3 (2,851,217.9)</td>
+      <td>25,097,713.5 (10,167,075.1)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_Glutaric.acid.tent.</td>
+      <td>12</td>
+      <td>440,497,616.4 (19,061,443.4)</td>
+      <td>448,877,445.2 (22,010,672.2)</td>
+      <td>432,117,787.7 (12,097,256.5)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>a_PEG.n5.tent.</td>
+      <td>12</td>
+      <td>344,189.2 (776,660.6)</td>
+      <td>4,541.3 (11,123.9)</td>
+      <td>683,837.0 (1,024,721.6)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>a_L.Serine</td>
+      <td>12</td>
+      <td>390,966.4 (346,737.4)</td>
+      <td>527,905.0 (409,596.4)</td>
+      <td>254,027.8 (227,430.6)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_D..Glucose.or.isomer.</td>
+      <td>12</td>
+      <td>5,354,625,351.9 (372,775,074.5)</td>
+      <td>5,219,148,234.7 (282,140,339.8)</td>
+      <td>5,490,102,469.2 (426,687,091.4)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_AICA.ribonucleotide</td>
+      <td>12</td>
+      <td>64,660,392.8 (5,188,450.2)</td>
+      <td>63,405,196.7 (3,409,871.4)</td>
+      <td>65,915,588.8 (6,619,333.0)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>b_neuraminic.acid.tent.</td>
+      <td>12</td>
+      <td>23,066,967.0 (2,864,562.7)</td>
+      <td>24,475,099.5 (3,412,576.8)</td>
+      <td>21,658,834.5 (1,283,781.1)</td>
+      <td>0.2</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>a_Betaine</td>
+      <td>12</td>
+      <td>3,612,697.5 (2,636,694.6)</td>
+      <td>2,762,143.5 (2,827,681.0)</td>
+      <td>4,463,251.5 (2,358,539.4)</td>
+      <td>0.3</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_DL.Arginine</td>
+      <td>12</td>
+      <td>3,821,072.9 (7,222,808.1)</td>
+      <td>2,199,664.0 (5,388,054.4)</td>
+      <td>5,442,481.8 (8,912,410.1)</td>
+      <td>0.3</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_L.Threonine</td>
+      <td>12</td>
+      <td>5,270,710.2 (5,478,082.2)</td>
+      <td>6,513,108.5 (5,492,782.8)</td>
+      <td>4,028,311.8 (5,669,696.2)</td>
+      <td>0.4</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Pantothenic.acid</td>
+      <td>12</td>
+      <td>22,359,057.0 (26,015,488.1)</td>
+      <td>28,020,428.8 (25,119,049.5)</td>
+      <td>16,697,685.2 (27,947,862.2)</td>
+      <td>0.4</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_L.Leucine</td>
+      <td>12</td>
+      <td>6,646,608.2 (3,705,017.3)</td>
+      <td>7,399,027.0 (3,879,174.6)</td>
+      <td>5,894,189.3 (3,713,895.4)</td>
+      <td>0.4</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Crotonic.acid</td>
+      <td>12</td>
+      <td>16,108,825.9 (23,803,380.1)</td>
+      <td>23,947,637.5 (26,242,912.3)</td>
+      <td>8,270,014.3 (20,257,315.3)</td>
+      <td>0.4</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Succinic.acid</td>
+      <td>12</td>
+      <td>407,804.1 (869,276.7)</td>
+      <td>109,080.2 (267,190.7)</td>
+      <td>706,528.0 (1,173,394.8)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_L.Lysine</td>
+      <td>12</td>
+      <td>24,416,825.1 (28,518,776.0)</td>
+      <td>34,566,558.7 (36,434,829.3)</td>
+      <td>14,267,091.5 (14,648,122.2)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Pyridoxal.tent.</td>
+      <td>12</td>
+      <td>777,482.7 (1,211,214.3)</td>
+      <td>598,171.7 (398,509.7)</td>
+      <td>956,793.7 (1,729,598.9)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_X2.C.Methyl.D.erythritol4.phosphate.tent.</td>
+      <td>12</td>
+      <td>643,051,857.5 (148,219,463.1)</td>
+      <td>606,454,245.0 (172,899,107.7)</td>
+      <td>679,649,470.0 (123,382,309.5)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_X2.Methylsuccinic.acid.tent.</td>
+      <td>12</td>
+      <td>287,186,644.6 (143,335,650.3)</td>
+      <td>264,074,195.0 (155,198,662.0)</td>
+      <td>310,299,094.2 (140,821,055.1)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Pyruvic.acid.tent.</td>
+      <td>12</td>
+      <td>150,010,045.5 (9,715,420.7)</td>
+      <td>147,364,165.0 (6,350,912.8)</td>
+      <td>152,655,926.0 (12,268,697.7)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Niacinamide</td>
+      <td>12</td>
+      <td>1,384,815.1 (2,023,883.3)</td>
+      <td>1,614,438.5 (2,373,808.4)</td>
+      <td>1,155,191.7 (1,802,752.7)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_X6.Methoxyquinoline.tent.</td>
+      <td>12</td>
+      <td>7,956,394.3 (26,119,894.0)</td>
+      <td>15,246,370.2 (37,028,395.4)</td>
+      <td>666,418.3 (1,516,716.5)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_L..Methionine</td>
+      <td>12</td>
+      <td>788,318.3 (1,316,035.4)</td>
+      <td>642,601.0 (747,341.7)</td>
+      <td>934,035.5 (1,789,080.3)</td>
+      <td>0.5</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_X4.Hydroxyquinoline</td>
+      <td>12</td>
+      <td>2,294,626.8 (5,198,100.9)</td>
+      <td>3,743,521.2 (7,079,171.4)</td>
+      <td>845,732.5 (2,071,613.1)</td>
+      <td>0.6</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_X2.2.6.6.Tetramethyl.4.piperidinol.tent.</td>
+      <td>12</td>
+      <td>3,349,971.7 (5,949,414.1)</td>
+      <td>4,474,480.0 (7,959,519.7)</td>
+      <td>2,225,463.3 (3,388,416.0)</td>
+      <td>0.6</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_N.N.Diethylethanolamine.tent.</td>
+      <td>12</td>
+      <td>3,251,751.6 (3,370,326.9)</td>
+      <td>2,444,947.7 (2,152,767.5)</td>
+      <td>4,058,555.5 (4,335,133.4)</td>
+      <td>0.6</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_L.Isoleucine</td>
+      <td>12</td>
+      <td>7,328,303.6 (7,854,185.2)</td>
+      <td>8,665,141.0 (7,496,666.0)</td>
+      <td>5,991,466.2 (8,673,233.1)</td>
+      <td>0.7</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_X6.Methylquinoline.tent.</td>
+      <td>12</td>
+      <td>385.0 (699.5)</td>
+      <td>274.2 (671.6)</td>
+      <td>495.8 (772.0)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Hypoxanthine</td>
+      <td>12</td>
+      <td>38,073.7 (83,225.3)</td>
+      <td>44,836.3 (109,826.1)</td>
+      <td>31,311.0 (55,377.5)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_p.Toluenesulfonic.acid.tent.</td>
+      <td>12</td>
+      <td>3,372,499.5 (6,572,551.8)</td>
+      <td>3,393,943.8 (5,259,090.6)</td>
+      <td>3,351,055.2 (8,208,375.3)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Urocanic.acid.tent.</td>
+      <td>12</td>
+      <td>1,399.0 (2,534.9)</td>
+      <td>1,818.7 (2,821.3)</td>
+      <td>979.3 (2,398.9)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Pyridoxal.tent.</td>
+      <td>12</td>
+      <td>1,928,431.0 (3,031,562.9)</td>
+      <td>2,203,965.7 (3,922,077.7)</td>
+      <td>1,652,896.3 (2,157,295.3)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_X3.Methyl.2.oxovaleric.acid</td>
+      <td>12</td>
+      <td>1,101,172.5 (3,039,252.9)</td>
+      <td>282,158.3 (278,456.3)</td>
+      <td>1,920,186.7 (4,316,724.3)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_L.Methionine</td>
+      <td>12</td>
+      <td>747,354.3 (822,900.9)</td>
+      <td>676,740.7 (845,132.3)</td>
+      <td>817,968.0 (873,813.0)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_L.Tryptophan</td>
+      <td>12</td>
+      <td>198,603.2 (296,935.2)</td>
+      <td>272,248.2 (407,584.4)</td>
+      <td>124,958.2 (121,792.6)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Indole.3.acrylic.acid</td>
+      <td>12</td>
+      <td>2,553,283.9 (3,140,722.0)</td>
+      <td>2,083,026.7 (2,110,564.8)</td>
+      <td>3,023,541.2 (4,088,504.8)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_X4.Dodecylbenzenesulfonic.acid.tent.</td>
+      <td>12</td>
+      <td>10,280,591.5 (7,701,423.0)</td>
+      <td>8,121,727.2 (4,928,645.2)</td>
+      <td>12,439,455.8 (9,747,256.3)</td>
+      <td>0.8</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_N.Acetylputrescine</td>
+      <td>12</td>
+      <td>386,960.3 (468,563.5)</td>
+      <td>391,056.2 (550,659.6)</td>
+      <td>382,864.3 (423,966.5)</td>
+      <td>0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_D..Proline</td>
+      <td>12</td>
+      <td>661,884.2 (1,149,335.2)</td>
+      <td>957,007.0 (1,564,926.8)</td>
+      <td>366,761.3 (498,103.3)</td>
+      <td>0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_X4.Aminonicotinic.acid.or.isomer.</td>
+      <td>12</td>
+      <td>126,303.5 (225,453.7)</td>
+      <td>94,034.3 (196,574.4)</td>
+      <td>158,572.7 (265,864.7)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Choline</td>
+      <td>12</td>
+      <td>174,331,021.6 (21,492,889.5)</td>
+      <td>171,722,892.2 (20,170,821.4)</td>
+      <td>176,939,151.0 (24,353,435.2)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Acetoacetic.acid</td>
+      <td>12</td>
+      <td>319,609,159.2 (14,397,923.5)</td>
+      <td>321,712,028.7 (13,338,036.2)</td>
+      <td>317,506,289.7 (16,356,781.0)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Isoleucine</td>
+      <td>12</td>
+      <td>30,943,808.3 (15,505,575.1)</td>
+      <td>29,880,732.5 (15,885,905.7)</td>
+      <td>32,006,884.2 (16,548,594.4)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_L.Phenylalanine</td>
+      <td>12</td>
+      <td>9,511,810.9 (5,608,112.4)</td>
+      <td>10,045,803.3 (6,593,135.4)</td>
+      <td>8,977,818.5 (5,003,823.0)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>a_Creatine</td>
+      <td>12</td>
+      <td>137,229.8 (326,719.4)</td>
+      <td>112,430.3 (275,396.9)</td>
+      <td>162,029.2 (396,888.8)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_D..Fructose.or.isomer.</td>
+      <td>12</td>
+      <td>1,376,324,172.0 (124,013,739.0)</td>
+      <td>1,382,734,756.2 (112,787,783.2)</td>
+      <td>1,369,913,587.8 (144,965,454.4)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Folic.acid</td>
+      <td>12</td>
+      <td>3,351,599.5 (3,207,090.2)</td>
+      <td>4,052,769.5 (4,167,729.0)</td>
+      <td>2,650,429.5 (2,019,416.2)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+    <tr>
+      <td>b_Propylparaben.or.isomer.</td>
+      <td>12</td>
+      <td>255,003.3 (618,051.8)</td>
+      <td>190,425.0 (466,444.1)</td>
+      <td>319,581.7 (782,812.0)</td>
+      <td>&gt;0.9</td>
+      <td>&gt;0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean (SD).†Wilcoxon rank sum test; Wilcoxon rank sum exact test.‡False discovery rate correction for multiple testing._
+
+### Palmitate induces a novel microglial lactate/succinate/itaconate release pathway
 
 We next evaluated the effect of palmitate pretreatment on the same cellular metabolic processes. Palmitate pretreatment of the same neonatal primary microglia model interestingly increased labeling of palmitoylcarnitine, acetylcarnitine, and acetylserine, demonstrating that 24 hr palmitate exposure accelerates β-oxidation (Figure 4C and D, Figure 4—figure supplement 1A and B). The pre-exposure enhanced m+2 label enrichment at a-KG and glutamate without impacting other TCA intermediates (Figure 4E and F, Figure 4—figure supplement 1C and D), indicating that fatty acid exposure further increases microglial substrate routing to glutamate and anaplerosis. Tracer measurements made in extracellular media conditioned from the same cells revealed that 24 hr palmitate treatment triggered release of glutamate, succinate, and intriguingly itaconate (Figure 4G–I), an immunomodulatory metabolite known to inhibit succinate dehydrogenase (complex II) (Ackermann and Potter, 1949) and recently shown to be neuroprotective (Hooftman and O’Neill, 2019). These findings are consistent with the complex II inhibition observed above upon 3d HFD/palmitate treatment and suggest that itaconate-dependent inhibition of complex II may be crucial in limiting the bioenergetic utilization of fatty acids by microglia, enabling their re-release and provisioning of neighboring cells. Collectively, the data demonstrate that microglia sense, process, and re-release fatty acids derived carbons in the form of usable substrates (Figure 4O).
 
 We next tested whether these effects were generalizable to other carbon substrates taken up by microglia during aMMR. We repeated the experiment, replacing U-[13C]-palmitate with U-[13C]-glucose (Figure 4B). Under control conditions, microglia exhibited strong glucose uptake, glycolysis, and incorporation of glucose label into TCA intermediates (Figure 4J, Figure 4—figure supplement 1E). Substantial 13C labeling was detected in pyruvate, citrate, a-KG, malate, and again in glutamate. These data confirm that the unexpected TCA shunt toward glutamate/glutamine pathway is a unique characteristic of the microglial metabolic fingerprint and not specific to palmitate routing. Importantly, 13C-glucose-derived metabolites were also detected extracellularly in the form of glutamate, itaconate, and succinate, as well as in extracellular lactate (m+3) (Figure 4K–N). And, palmitate pretreatment increased all of these signatures, including glucose uptake (Figure 4J), lactate labeling, and lactate release. Interestingly, as with palmitate-tracing experiments, fatty acid pretreatment increased release of tracer-labeled taconite and succinate into the extracellular media (Figure 4L–M). aMMR is therefore characterized by synergistic induction of a Warburg-like metabolic signature by glucose and palmitate, and significant release of carbon fuels to the cell exterior (Figure 4N). Collectively, these data identify microglia as a novel metabolic and neuroprotective node, able to take up harmful free fatty acids and repurpose them to fuel surrounding cells in the form of lactate and anaplerotic substrates (Figure 4O).
 
-## Acute HFD induces widespread MMR and rapid modulation of spatial and learning memory
+### Acute HFD induces widespread MMR and rapid modulation of spatial and learning memory
 
 Changes in neuronal function have previously been linked to lactate provided by astrocytes (Pellerin, 2005). To determine if the substrates released by microglia have the potential to directly influence neurons, we incubated primary neuron cultures (Figure 5—figure supplement 1A) with conditioned media from the microglial 13C-glucose tracing experiments (i.e. media containing 13C-glucose-derived isotopically labeled lactate, itaconate, succinate, citrate). As a control for the direct uptake of 13C-glucose, we treated parallel neuronal cultures with the same fresh 13C-glucose tracing media originally added to the microglia. Intriguingly, and consistent with literature documenting poor direct glucose utilization by neurons (Bouzier-Sore et al., 2006), we found substantial m+3 lactate (as well as other metabolites) in neurons treated with microglial conditioned media, and at levels that far exceeded labeling triggered by glucose tracer alone (Figure 5A, middle column vs left column) (Figure 4—figure supplement 1B). The data indicate higher uptake of citrate and itaconate from the control microglia-conditioned media, further supporting the hypothesis that neuronal metabolism is reproducibly impacted by palmitate-triggered changes in microglial products. These data demonstrate that palmitate metabolism by microglia modulates neuronal carbon substrate use in vitro, and, they highlight the relative importance of this process compared to uptake of pure glucose. The data identify a candidate mechanism by which aMMR may alter neuronal function in vivo.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig5-v1.jpg)
+
+**Figure 5.:** (A) Primary microglial cell media was collected after the 13C-glucose tracing (containing 13C-lactate released by microglia challenged with BSA or palmitate) and incubated for 4 hr with primary neurons, the graph shows the 13C-lactate incorporation in the neurons in relative abundance, as control, primary neurons were incubated directly with 13C-glucose (n=6). (B) Graph showing the ratio MitoTracker Deep Red/ MitoTracker Green from sorted cortical microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with high-fat diet for 3 days (3-day HFD) (n=5–12). (C) Graph showing the ratio MitoTracker Deep Red/ MitoTracker Green from sorted hippocampic microglial cells of C57Bl6/J male fed with a control diet (Control) or fed with 3-day HFD (n=5–12). (D) Graph showing the latency during the Barnes Test from mice fed with normal diet (Control) or 3-day HFD (n=11). The test was performed in the VAI animals facility (USA). (E) Graph showing the alternation during the T Maze Test from mice fed with normal diet (Control) or 3-day HFD (n=11). The test was performed in the VAI animals facility (USA). (F) Graph showing the distance walked during the ROTAROD test from mice fed with normal diet (Control) or 3-day HFD (n=11). (G) Graph showing the number of turn before the mice fall during the ROTAROD test from mice fed with normal diet (Control) or 3-day HFD (n=11). (H) Graph showing the latency during the ROTAROD test from mice fed with normal diet (Control) or 3-day HFD (n=11). (I) Microglial staining with Iba1 (green) in the hippocampus slices from mice fed with 3 days HFD or mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 prior the 3 days HFD (PLX-5662) (n=5). (J) Graph showing the latency during the Barnes Test from mice fed with normal diet (Control) (n=6), mice fed with 3-day HFD (n=6), mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 (PLX-Control) (n=8) or mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 prior the 3 days HFD (PLX-3-day HFD) (n=8). (K) Graph showing the latency during the Barnes Test from Drp1MGWT or Drp1MGKO mice fed with normal diet (Control diet) or with 3-day HFD (n=11). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Map2, NeuN, Iba1 and Map2, NeuN, GFAP immunostainings on primary neurons. (B) Primary microglial cell media was collected after the 13C-glucose tracing (containing 13C- metabolites released by microglia challenged with BSA or palmitate) and incubated for 4 hr with primary neurons, the graph shows the 13C-citrate, 13C-itaconate, and 13C-succinate incorporation in the neurons in relative abundance (n=6). (C) Graph showing the latency during the Barnes Test from mice fed with normal diet (Control), or 3 days HFD (3-day HFD) (n=11). The test was performed in the MPI animals facility (Germany). (D) Graph showing the alternation during the T Maze Test from mice fed with normal diet (Control), or 3-day HFD (n=11). The test was performed in the MPI animals facility (Germany). (E) Graph showing the distance walked during the ROTAROD test from mice fed with normal diet (Control) (n=4), mice fed with 3-day HFD (n=6), mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 (PLX-Control) (n=8) or mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 prior the 3 days HFD (PLX-3-day HFD) (n=12). (F) Graph showing the number of turns before the mice fall during the ROTAROD test from mice fed with normal diet (Control) (n=4), mice fed with 3-day HFD (n=6), mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 (PLX-Control) (n=8) or mice depleted from their microglial cells with 1 week control diet complexed with PLX-3-day HFD (n=12). (G) Graph showing the latency during the ROTAROD test from mice fed with normal diet (Control) (n=4), mice fed with3-day HFD (n=6), mice depleted from their microglial cells with 1 week control diet complexed with PLX-5662 (PLX-Control) (n=8) or mice depleted from their microglial cells with 1 week control diet complexed with PLX-3-day HFD (n=12). (H) Graph showing the distance walked during the ROTAROD test from Drp1MGWT or Drp1MGKO mice fed with normal diet (Control diet), or 3-day HFD (n=11). (I) Graph showing the number of turns before the mice fall during the ROTAROD test from Drp1MGWT or Drp1MGKO mice fed with normal diet (Control diet), or 3-day HFD (n=11). (J) Graph showing the latency during the ROTAROD test from Drp1MGWT or Drp1MGKO mice fed with normal diet (Control diet), or 3-day HFD (n=11). Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 as determined by two-tailed Student’s t-test and two-way ANOVA followed by Bonferroni post hoc.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Graphs showing the latency during the Barnes Test from Figure 5D with samples distribution and by using the paired comparison method. (B) Graphs showing the latency during the Barnes Test from Figure 5—figure supplement 1C with samples distribution and by using the paired comparison method. (C) Graphs showing the latency during the Barnes Test from Figure 5J with samples distribution and by using the paired comparison method. (D) Graphs showing the latency during the Barnes Test from Figure 5K with samples distribution and by using the paired comparison method. (E) Graphs showing the alternation during the T Maze Test from Figure 5E with samples distribution and by using the paired comparison method. (F) Graphs showing the alternation during the T Maze Test from Figure 5—figure supplement 1D with samples distribution and by using the paired comparison method.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87120/elife-87120-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Graphs showing the ROTAROD results (distance, latency, fall) from Figure 5F–H with samples distribution and by using the paired comparison method. (B) Graphs showing the ROTAROD results (distance, latency, fall) from Figure 5—figure supplement 1E–G with samples distribution and by using the paired comparison method. (C) Graphs showing the ROTAROD results (distance, latency, fall) from Figure 5—figure supplement 1H–J with samples distribution and by using the paired comparison method.
 
 The majority of literature relating HFD-associated microglial function to metabolic regulation is focused on the hypothalamus, that exhibits an unusually leaky blood-brain barrier (Thaler et al., 2012; Waterson and Horvath, 2015). Given our findings that CSF fatty acid levels double upon acute HFD and given the dramatic metabolomic rewiring induced by microglial palmitate exposure, we asked whether aMMR might also occur in other brain regions. We FACS-sorted cortical and hippocampal microglia and tested for mitochondrial activation (MMR) in 3d HFD exposed mice. Indeed, 3d HFD exposure triggered an increase in mitochondrial membrane potential in both cortical and hippocampal microglia (Figure 5B and C). These data were consistent with the CSF results and suggested therefore that acute high-fat feeding might alter higher cognitive function.
 
@@ -107,85 +1003,122 @@ Finally, this study demonstrates unappreciated plasticity and complexity in micr
 
 ## Materials and methods
 
-## Experimental animals
+### Experimental animals
 
 All animal studies and experimental procedures were approved by the Van Andel Institute Institutional Animal Care and Use Committee under protocol #22-07-027. All mice were housed in a temperature-controlled environment (23°C) with a 12 hr light and 12 hr dark (07.00–19.00) photoperiod. Animals were provided standard chow diet (Research Diets #5021; 23.6% calories from fat; Mouse Breeder Diet #6539) or HFD (60% fat; Research Diets, Rodent Chow #D12492) and water ad libitum unless otherwise stated.
 
 For the experiments performed on non-modified mice, C57BL/6J were purchased from Jackson Laboratory. Drp1 floxed mice (Drp1fl/fl) and Cx3cr1CreER mice (B6.129P2(C)-Cx3cr1tm2.1(cre/ERT2)Jung/J) were purchased from Jackson Laboratory. Mice expressing tamoxifen-inducible Cre recombinase (CreERT2) in cells expressing CX3CR1 (Cx3cr1-cre:ERT2) were crossed with mice harboring conditional alleles Drp1 (Drp1fl/fl). For induction of Cre recombinase, 5- to 6-week-old Drp1MGKO (Drp1fl/fl-Cx3cr1-cre) mice and their littermate control were treated with 4 mg tamoxifen (TAM, Sigma) solved in 200 μl corn oil (Sigma) injected subcutaneously at two time points 48 hr apart. HFD was started 4 weeks from the last injection to allow the replacement of peripheral monocytes (Goldmann et al., 2013). Mice were sacrificed at different time points during the diet. Only males were used in this study.
 
-## Microglial depletion
+### Microglial depletion
 
 Microglia were depleted in all cases by feeding mice custom diet (Research Diets) containing the CSF1R inhibitor PLX5622 (Plexxikon) formulated in the exact diets indicated above. The compound-containing diets have the new order numbers (D12450: PLX5622-containing standard diet and D21021905: PLX5622-containing HFD). PLX5622 was included to achieve a dose of 1.2 g/kg based on average adult C57BL/6J food intake. Animals were administered PLX5622-containing diet for 7–9 days without observable impact on the body weight or food intake (Figure 1—figure supplement 2A and B), using protocols adopted from Feng et al., 2017; George et al., 2019.
 
-## Microglial cultures
+### Microglial cultures
 
 Eight to 10 mice (1–3 days of age, mixed sex) from C57BL/6J mice were used for primary microglial culture. In brief, brains were dissected and placed in a small culture dish that contained a small volume of Dulbecco’s modified eagle medium (DMEM). The meningeal lining (dura and arachnoid layers) were then gently removed using two small straight forceps under a magnifying glass. The cleaned brain was then placed in a new culture dish minced into a fine slurry using a pair of corneal scissors. Suspended cells were filtered (70 μm) and centrifuged for 5 min at 1000 rpm and the pellet was resuspended and plated on poly-D-lysine (Cat# P6407, Sigma)-coated 75 cm2 flasks with DMEM containing 1% penicillin-streptomycin, 10% fetal bovine serum. Seven to 10 days later, the flasks were stimulated for 3 days with 30 ng/ml M-CSF (Cat# 315-02, Peprotech) and then, shaken (200 rpm) for 3 hr (37°C) to specifically release microglia.
 
 For conditioned media experiments, microglial cells were incubated with DMEM (Gibco) without lactate completed with BSA-conjugated palmitate or control BSA. Conditioned media was collected after the incubation, centrifuged 15 min at 300×g (4°C), and the supernatant transferred and frozen in a fresh tube avoiding the cells and debris pellet. Samples were immediately snap-frozen or used for the neurons incubation.
 
-## Embryonic cortical neuron culture protocol
+### Embryonic cortical neuron culture protocol
 
 Primary neuron cultures were prepared from embryonic day 18 CD1 mice. Brains were gently removed from the embryos and placed into a Petri dish filled with ice-cold, sterile Hibernate Medium (Cat# A1247601, Gibco). Hemispheres were gently separated, and the meninges, thalamus, striatum, brainstem, and hippocampus were removed. Cortical tissue was isolated and cut into 1 mm3 segments. The cortical tissue from each brain was pooled and digested in papain solution (20 U/ml Cat# LS003126, Worthington) and then treated with DNase I (Cat# LS006563, Worthington) to remove residual DNA. The tissue was then washed with pre-warmed Neurobasal media (Cat# 21103049, Gibco), mechanically dissociated, and strained through a 40 μm cell strainer. The cell suspension was pelleted at 1000 rpm for 5 min, resuspended in 2 ml of neuron media (Neurobasal media containing 1% B27, 2 mM GlutaMAX, and penicillin-streptomycin) and gently mixed. The dissociated neurons were seeded on poly-D-lysine-coated six-well culture plates at 1 million cells/well. On DIV3, cytosine arabinoside (1-β-D-arabinofuranosylcytosine) was added to a final concentration of 5 μM to curb glial proliferation. The neurons were maintained until DIV21 by replacing 1/3 volume of media with fresh neuron media every 5 days.
 
-## Microglia isolation
+### Microglia isolation
 
 Mice were anesthetized and blood was collected by ventricular puncture. Mice were then perfused with phosphate-buffered saline (PBS). For microglia isolation, the hypothalamus, cerebellum, hippocampus, and cortex were dissected from the brain and manually dissociated in HBSS buffer. A cell suspension was prepared with a continuous 37% Percoll gradient at 2300 rpm for 30 min without brake, then cells were washed with 1× PBS and resuspended in FACS buffer and non-specific binding to Fc receptors was blocked by incubation with anti-CD16/32 antibody (BD Pharmingen, Cat# 553141) and the FACS antibodies BV711-conjugated anti-CD11b and Pacific blue-conjugated anti-CD45 antibodies (Cat# 101241, Cat# 103126, BioLegend).
 
-## scRNAseq
+### scRNAseq
 
 For the scRNAseq experiments, pure hypothalamic microglial cells were sorted and processed as previously described (Tay et al., 2017; Tay et al., 2018).
 
 Briefly, brains were isolated and gently homogenized and resuspended in 20 ml of ice-cold extraction buffer (1× HBSS, 1% fetal calf serum, 1 mM EDTA). Microglial cells were extracted in 5 ml of 37% isotonic Percoll. After staining, single CD45lo, CD11b+ microglial cells were FACS-sorted directly in 192-well plates, containing 192 unique barcodes, for scRNAseq. The CEL-Seq2 method was used for single-cell sequencing (Hashimshony et al., 2016; Herman and Grün, 2018). Thirteen libraries (2492 single cells) were sequenced on an Illumina HiSeq 2500 system, as pair-end multiplexing run, with 50–75 bp read length.
 
-## scRNAseq analysis
+### scRNAseq analysis
 
 The scRNAseq libraries were analyzed using the ‘scRNAseq’ module from snakePipes v.1 (Bhardwaj et al., 2019). Within the snakePipes pipeline, trimming of barcodes was achieved using Cutadapt v.1.9.1 (Martin, 2011). Quality of the reads was evaluated with FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Mapping to the GRCm38/mm10 mouse genome was performed using the STAR aligner v.2.5.3a (Dobin et al., 2013), and read counts on features were quantified by featureCounts v.1.6.1 (Liao et al., 2014). Mapped and counted read were next analyzed with RaceID3 v.0.2.6, with default parameters (Herman and Grün, 2018; Grün, 2020). Batch correction by plate and preprocessing of data were completed within the RaceID3 pipeline. We included in our analysis, all microglial cells from control (CT) and 3-day high-fat diet-treated (3d_HFD) mice. We filtered out all the cells with a total transcript count per cell >1000. Dimensional reduction of transcriptomic profiles was then preformed with Uniform Manifold Approximation and Projection. As a comparative analysis, we also added to our dataset previously published single microglial cells from EAE, and matched controls mice (CT_EAE) (Melo et al., 2020).
 
-## qPCR
+### qPCR
 
 For the qPCR experiments, pure microglial cells were sorted, and the RNA was extracted with TRIzol (ImGen protocol).
 
-## Mitochondrial function by cytometry
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Foward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tmem119</td>
+      <td>GTGTCTAACAGGCCCCAGAA</td>
+      <td>AGCCACGTGGTATCAAGGAG</td>
+    </tr>
+    <tr>
+      <td>P2ry12</td>
+      <td>CAAGGGGTGGCATCTACCTG</td>
+      <td>AGCCTTGAGTGTTTCTGTAGGG</td>
+    </tr>
+    <tr>
+      <td>Arg1</td>
+      <td>GGAAATCGTGGAAATGAG</td>
+      <td>CAGATATGCAGGGAGTCACC</td>
+    </tr>
+    <tr>
+      <td>S100B</td>
+      <td>AACAACGAGCTCTCTCACTTCC</td>
+      <td>CTCCATCACTTTGTCCACCA</td>
+    </tr>
+    <tr>
+      <td>RPL19</td>
+      <td>GAAGGTCAAAGGGAATGTGTTCA</td>
+      <td>CCTTGTCTGCCTTCAGCTTGT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mitochondrial function by cytometry
 
 For mitochondrial activity experiments, cell suspension was incubated with MitoTracker Green FM (Invitrogen, Cat# M7514) and MitoTracker DeepRed FM (Invitrogen, Cat# 22426) for 30 min at 37°C before FACS acquisition. For the electron transport chain experiments (ETC), the experiment was based on the Salabei et al., 2014. Cell suspensions were incubated with the mitochondrial probe tetramethylrhodamine TMRM 10 mM (Abcam, Cat# ab228569) for 30 min at 37°C before FACS acquisition. For challenging the ETC, the cell pellet was resuspended in 500 µl of warm MAS buffer solution (Salabei et al., 2014) + 1 nM Plasma Membrane Permeabilizer (Agilent Seahorse XF PMP) to permeabilize the cells. Microglial cells were gated from CD45low-CD11b+ cells followed by singlet after forward and side scatter pattern. They were incubated each 90 s by the following drugs: 0.5 µl of 100 µM rotenone (Sigma), 2 µl of 2.5 M succinate pH 7.4 (succinic acid Sigma) and 0.5 µl of 1 mM antimycin (Sigma). Cytometry was performed on Fortessa (BD Bioscience) and analyzed with FlowJo v.10 (Treestar). Microglial cells were gated from CD45low-CD11b+ cells followed by singlet after forward and side scatter pattern.
 
-## Confocal microscopy analysis
+### Confocal microscopy analysis
 
 Mice were anesthetized and transcardially perfused with 0.9% saline followed by fixative (4% paraformaldehyde [PFA]). Brains were incubated 24 hr with the fixative, then 48 hr with 20% sucrose and finally fixed with Polyfreeze (Sigma). Frozen brains were sliced into 7 µm and incubated in 0.1%PBST+5% BSA with anti-Iba1 antibody (diluted 1:300, Abcam; Cat# ab178846) and/or anti-GFP antibody (diluted 1:200, Cell Signaling; Cat# 2255), or anti-DRP1 antibody (diluted 1:50 Cell Signaling; Cat# 8570). After several washes with PBS, sections were incubated in the appropriated secondary antibodies (Thermo Fisher) for 1 hr at room temperature, then rinsed in PBS three times 10 min each time, and flat-embedded in mounting media with DAPI (Fluoroshield, Abcam; Cat#104139).
 
 For the colocalization experiment, microglia were isolated from 10- to 12-week-old Drp1KO mice and their littermate controls, immediately fixed in PFA and stained with DRP1 (diluted 1:50 Cell Signaling). The Pictures acquisition were performed with the Confocal LSM780 (Zeiss).
 
-## Glucose and insulin tolerance
+### Glucose and insulin tolerance
 
 OGTTs were performed in 16 hr fasted animals. After determination of basal blood glucose levels, each animal received a gavage of 1 g/kg glucose (Sigma) and blood glucose levels were measured at –30, 0, 15, 30, 45, 60, 90, and 120 min after glucose administration using a glucometer (Accu-Check, Roche). In the same cohort of mice, blood samples were also collected for determination of circulating insulin levels during the OGTT at –30, 15, 30, and 60 with the ELISA insulin assay kit (Mercodia).
 
 ITTs were performed in 2 hr fasted animal. After determination of basal blood glucose levels, each animal received an i.p. injection of insulin, 0.75 U/kg (Actrapid, Novo Nordisk). Blood glucose levels were measured at –30, 0, 15, 30, 45, 60, 90, and 120 min after insulin administration.
 
-## Body composition
+### Body composition
 
 Body composition was measured in vivo by MRI (EchoMRI; Echo Medical Systems, Houston, TX, USA).
 
-## Behavioral tests
+### Behavioral tests
 
 Mice were fasted at 7:00 AM and the behavioral tests were performed between 8:00 AM and 2:00 PM. ROTAROD, Barnes, and T Maze behavioral tests were performed as previously described (Shiotsuki et al., 2010; Illouz et al., 2020).
 
-## Microglial analysis
+### Microglial analysis
 
 To analyze microglial number and size in the ARC, VMH, and cortex, TdTomato positive cells were counted manually from four hypothalamic level-matched sections per animal using ImageJ software and microglial cell size was measured using a thresholding parameter on ImageJ software. A total of 40 cells per section were used to determine the size in all regions.
 
-## Measures of mitochondrial length
+### Measures of mitochondrial length
 
 Primary microglial cells were seeded overnight in poly-D-lysine-coated cell culture chambered coverslips (Lab-Tek Cat# 155411, Thermo Scientific) at 1×104 cells/well density in 100 μl microglial growth media. Cells were incubated at 37°C for 2, 6, or 24 hr in microglial growth media including 100 µM BSA or 100 µM palmitate complexed with BSA (Valdearcos et al., 2014) or 100 µM oleate complexed with BSA or 1 µg/ml LPS (Katoh et al., 2017). One half-hour before the end of the incubation, 200 nM MitoTracker Green (Invitrogen, Cat# M7514) was added in the media. Cells were washed three times in incubation media and the mitochondrial network was observed on a Confocal LSM 780 (Zeiss). After image acquisition, 5 µM MitoSox (Invitrogen, Cat# M36008) was added to the incubation media for 10 min. Cells were washed three times with media and fixed with 4%PFA at 37°C for 15 min. MitoSox staining was observed on a Confocal LSM 780 (Zeiss). Alternatively, cells were permeabilized with 0.2% Triton in PBS, incubated with blocking buffer (PBS+5% FCS+0.1% Tween) for 1 hr and stained with anti-Iba1 antibody (diluted 1:300, Abcam; Cat# ab178846) and/or anti-TOM20 antibody (diluted 1:1000, Santa Cruz; Cat# sc177615) and/or anti-DRP1 antibody (diluted 1:50 Cell Signaling; Cat# 8570). After three washes with PBS, sections were incubated with appropriate secondary antibodies (Thermo Fisher) for 1 hr at room temperature, rinsed three times 10 min in PBS, and image acquisition performed on a Confocal LSM780 (Zeiss).
 
-## Cytokine measurement
+### Cytokine measurement
 
 Media from primary microglia incubated with BSA or palmitate was collected and processed using the mouse Custom Panel Standard kit (#93976 LegendPlex).
 
-## Seahorse measurement
+### Seahorse measurement
 
 Primary microglia were incubated with BSA or palmitate conjugated to BSA (Agilent Seahorse Palmitate-BSA conjugation protocol) for 24 hr then incubated in the Seahorse XF (±0.25 mM succinate) and processed using the Cell Mito Stress Test Kit (#103015 Agilent).
 
-## Stable isotope labeling and metabolomics
+### Stable isotope labeling and metabolomics
 
 Metabolomics was performed on microglia by first washing microglia primary cell cultures with PBS and re-cultured in DMEM (lacking glucose) containing 10% dialyzed FBS and uniformly labeled [13C]-glucose (Cambridge Isotope Laboratories). Microglia (2×106 per well in six-well plates) were cultured in 13C-containing medium for up to 6 hr. For cellular media samples, 10 μl of media were taken at indicated time points and centrifuged to remove cells, with 10 μl of media used for metabolite analysis. For uniformly labeled [13C]-palmitate tracing analysis, sodium [13C]-palmitate was conjugated to BSA following Agilent Seahorse Palmitate-BSA conjugation protocol. For [13C]-palmitate tracing, microglial primary cell cultures were first cultured for 24 hr with BSA control or 12C-palmitate (200 µM) in DMEM containing 10% dialyzed FBS. Following 24 hr incubation, the media was removed, and microglial cells washed with PBS followed by culture in DMEM with 10% dialyzed FBS and blank mM [13C]-palmitate for 4 hr and cell and media samples collected as before.
 
@@ -193,6 +1126,6 @@ For gas chromatography coupled to mass spectrometry (GC-MS) metabolites were ext
 
 For liquid chromatography coupled to mass spectrometry (LC-MS) metabolites were analyzed for relative abundance by high-resolution accurate mass detection on two QExactive Orbitrap mass spectrometers (Thermo Fisher Scientific) coupled to Thermo Vanquish liquid chromatography systems. Separate instruments were used for negative and positive mode analysis. For negative mode analysis, an Acquity T3 HSS (1.8 µm, 2.1 mm × 150 mm) column (Waters, Eschborn, Germany) was used for chromatographic separation and the elution gradient was carried out with a binary solvent system. Solvent A consisted of 3% methanol, 10 mM tributylamine, and 15 mM acetic acid in water (pH 5.0±0.05) and solvent B was 100% methanol. A constant flow rate of 200 μl/min was maintained and the linear gradient employed was as follows: 0–2.5 min 100% A, 2.5–5 min increase from 0% to 20% B, 5–7.5 min maintain 80% A and 20% B, 7.5–13 min increase from 20% to 55% B, 13–15.5 min increase from 55% to 95% B, 15.5–18.5 min maintain 5% A and 95% B, 18.5–19 min decrease from 95% to 0% B, followed by 6 min of re-equilibration at 100% A. The heater temperature was set to 400°C and ion spray voltage was set to 2.75 kV. The column temperature was maintained at 25°C and sample volumes of 10 µl were injected. A 22 min full-scan method was used to acquire data with m/z scan range from 80 to 1200 and resolution of 70,000. The automatic gain control (AGC) target was set at 1e6 and the maximum injection time was 500 ms. For positive mode analysis, an Atlantis T3 (3 µm, 2.1 mm ID×150 mm) column (Waters) was used and the elution gradient was carried out with a binary solvent system solvent A consisted of 0.1% acetic acid and 0.025% heptafluorobutyric acid in water and solvent B was 100% acetonitrile. A constant flow rate of 400 μl/min−1 was maintained and the linear gradient employed was as follows: 0–4 min increase from 0% to 30% B, 4–6 min from 30% to 35% B, 6–6.1 min from 35% to 100% B and hold at 100% B for 5 min, followed by 5 min of re-equilibration. The heater temperature was set to 300°C and the ion spray voltage was set to 3.5 kV. The column temperature was maintained at 25°C and sample volumes of 10 µl were injected. An 11 min full-scan method was used to acquire data with m/z scan range from 70 to 700 and resolution of 70,000. The AGC target was set at 1e6 and the maximum injection time was 250 ms. Instrument control and acquisition was carried out by Xcalibur 2.2 software (Thermo Fisher Scientific). Full-scan LC-MS data were analyzed in Compound Discoverer (v.3.2, Thermo Scientific). Compounds were identified by chromatography specific retention time of external standards and MS2 spectral matching using the mzCloud database (Thermo Scientific).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Two-way ANOVA was used to determine the effect of the genotype and treatment with the Prism 7.01 software (GraphPad Software). For repeated measures analysis, ANOVA was used when values over different times were analyzed. When only two groups were analyzed, statistical significance was determined by an unpaired Student’s t-test. A value of p<0.05 was considered statistically significant. All data are shown as mean ± SEM unless stated otherwise. We did not include additional statistical tests for data distributions.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.01879.001 Like other intracellular fusion events, the homotypic fusion of yeast vacuoles requires a Rab GTPase, a large Rab effector complex, SNARE proteins which can form a 4-helical bundle, and the SNARE disassembly chaperones Sec17p and Sec18p. In addition to these proteins, specific vacuole lipids are required for efficient fusion in vivo and with the purified organelle. Reconstitution of vacuole fusion with all purified components reveals that high SNARE levels can mask the requirement for a complex mixture of vacuole lipids. At lower, more physiological SNARE levels, neutral lipids with small headgroups that tend to form non-bilayer structures (phosphatidylethanolamine, diacylglycerol, and ergosterol) are essential. Membranes without these three lipids can dock and complete trans -SNARE pairing but cannot rearrange their lipids for fusion. DOI: http://dx.doi.org/10.7554/eLife.01879.001
+Like other intracellular fusion events, the homotypic fusion of yeast vacuoles requires a Rab GTPase, a large Rab effector complex, SNARE proteins which can form a 4-helical bundle, and the SNARE disassembly chaperones Sec17p and Sec18p. In addition to these proteins, specific vacuole lipids are required for efficient fusion in vivo and with the purified organelle. Reconstitution of vacuole fusion with all purified components reveals that high SNARE levels can mask the requirement for a complex mixture of vacuole lipids. At lower, more physiological SNARE levels, neutral lipids with small headgroups that tend to form non-bilayer structures (phosphatidylethanolamine, diacylglycerol, and ergosterol) are essential. Membranes without these three lipids can dock and complete trans-SNARE pairing but cannot rearrange their lipids for fusion.
 
 ## Introduction
 
@@ -32,37 +32,116 @@ Exploiting an assay of fusion of proteoliposomes consisting of vacuolar lipids, 
 
 ## Results
 
-Membrane fusion was measured as protected lumenal compartment mixing and concurrent lipid mixing by a modified version of our published assay (
+Membrane fusion was measured as protected lumenal compartment mixing and concurrent lipid mixing by a modified version of our published assay (Zucchi and Zick, 2011). Reconstituted proteoliposomes (RPLs) were prepared with a recombinant prenylated Rab (Ypt7p) and with the four vacuolar SNAREs (Nyv1p, Vam3p, Vti1p, and Vam7p, which are the vacuolar R, Qa, Qb, and Qc SNAREs; Fasshauer et al., 1998). RPLs were formed from an octylglucoside mixed-micellar solution of these proteins and vacuolar lipids during lengthy dialysis in the cold, then isolated by flotation. One set of proteoliposomes (Figure 1A) bears Marina Blue-linked phosphatidylethanolamine as a lipidic marker and entrapped Cy5-derivatized streptavidin as a lumenal marker, while a complementary set of RPLs bears the lipidic marker NBD-PE and lumenally entrapped biotinylated phycoerythrin. Fusion reactions are performed in the presence of a large excess of external, nonfluorescent streptavidin to bind any biotinylated R-phycoerythrin that may be released from the proteoliposomes by lysis. Upon addition of purified HOPS, Sec17p, Sec18p, and Mg2+:ATP, fusion allows the biotin-R-phycoerythrin to bind to the Cy5-streptavidin within the lumen of fused vesicles while remaining inaccessible to the external, nonfluorescent streptavidin. This is readily assayed by the ensuing Förster resonance energy transfer (FRET) between the Cy5 and R-phycoerythrin. Fusion is also reflected in the quenching of the fluorescence of Marina Blue-PE as it is mixed in the same bilayer with NBD-PE. The rate and extent of fusion are governed by the proteoliposomal lipid composition and by the molar ratio of SNARE proteins to lipid. Proteoliposomes of a vacuolar mixed lipid (VML) composition, based on the established composition of the isolated organelle (Schneiter et al., 1999; Zinser et al., 1991), bearing SNAREs at a 1:1000 molar ratio to lipids (Figure 1B, left, filled circles) or at a 1:3000 ratio (filled squares) undergo rapid fusion. At a 1:9000 SNARE:lipid ratio, the fusion of VML proteoliposomes (filled triangles) slows to the rate seen for PC/PS proteoliposomes at a 1:1000 ratio (Figure 1B, right, open circles). Fusion is hardly detectable for PC/PS proteoliposomes with SNAREs at a 1:9000 molar ratio to lipids (open triangles).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01879/elife-01879-fig1-v1.jpg)
 
-**Figure 1.:** (A) Membrane fusion was assayed as protected (from external non-fluorescent streptavidin) lumenal compartment mixing. This was measured as the FRET between biotin-phycoerythrin and Cy5-streptavidin, which had been entrapped within separate proteoliposome populations. Paired sets of proteoliposomes were prepared with either the complete vacuolar mixed lipids (VML) or with 70% PC/30% PS. Proteoliposomes bore Ypt7p and the 4 SNAREs, each at a 1:1000, 1:3000, or 1:9000 molar ratio to lipid phosphate, as described in the ‘Materials and methods’. For each pair, half the proteoliposomes had 0.3% of its lipid as Marina Blue-PE and bore lumenal Cy5-streptavidin, while the complementary proteoliposomes had 1.5% NBD-PE and bore lumenal biotinylated-phycoerythrin. (B) Fusion assays were performed with Sec17p, Sec18p, HOPS, and ATP in the presence of excess nonfluorescent streptavidin, as described in the ‘Materials and methods’. Error bars here and in subsequent figures are the standard deviations from three assays.DOI: http://dx.doi.org/10.7554/eLife.01879.003
+**Figure 1.:** (A) Membrane fusion was assayed as protected (from external non-fluorescent streptavidin) lumenal compartment mixing. This was measured as the FRET between biotin-phycoerythrin and Cy5-streptavidin, which had been entrapped within separate proteoliposome populations. Paired sets of proteoliposomes were prepared with either the complete vacuolar mixed lipids (VML) or with 70% PC/30% PS. Proteoliposomes bore Ypt7p and the 4 SNAREs, each at a 1:1000, 1:3000, or 1:9000 molar ratio to lipid phosphate, as described in the ‘Materials and methods’. For each pair, half the proteoliposomes had 0.3% of its lipid as Marina Blue-PE and bore lumenal Cy5-streptavidin, while the complementary proteoliposomes had 1.5% NBD-PE and bore lumenal biotinylated-phycoerythrin. (B) Fusion assays were performed with Sec17p, Sec18p, HOPS, and ATP in the presence of excess nonfluorescent streptavidin, as described in the ‘Materials and methods’. Error bars here and in subsequent figures are the standard deviations from three assays.
 
-To place these findings in a context of the physiological concentrations of SNAREs, vacuoles were purified (
+To place these findings in a context of the physiological concentrations of SNAREs, vacuoles were purified (Haas, 1995) and analyzed for lipid phosphorus and for their bound Ypt7p, HOPS, Sec17p, Sec18p, and each of the 4 SNAREs. These proteins were from 5- to 100-fold less abundant on vacuoles as compared to proteoliposomes which were prepared with a 1:1000 SNARE:lipid molar ratio (Table 1) and in which approximately half the SNAREs were shown by protease-accessibility assay (Figure 2C) to be exposed on the proteoliposome exterior. Thus the lower end of SNARE concentrations employed in our reconstituted reactions, while still high compared to the organelle, are closer to physiological. Only very high SNARE concentrations can partially bypass the requirement for greater lipid complexity for fusion.
+
+**Table 1.**
+ Protein abundance, relative to lipids, in vacuoles or reconstituted proteoliposomes (RPL) fusion reactions
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th rowspan="2">Molar ratio of lipid:protein in RPL reactions*</th>
+      <th colspan="2">Molar ratio of lipid:protein on vacuoles</th>
+      <th rowspan="2">Ratio (RPLs/vacuoles) of molar protein:lipid ratios in std. reactions†</th>
+    </tr>
+    <tr>
+      <th>BJ3505</th>
+      <th>DKY6218</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vam7p</td>
+      <td>2 × 103</td>
+      <td>30 × 104</td>
+      <td>6.5 × 104</td>
+      <td>7 × 101</td>
+    </tr>
+    <tr>
+      <td>Vam3p</td>
+      <td>2 × 103</td>
+      <td>11 × 104</td>
+      <td>22 × 104</td>
+      <td>7 × 101</td>
+    </tr>
+    <tr>
+      <td>Vti1p</td>
+      <td>2 × 103</td>
+      <td>10 × 104</td>
+      <td>13 × 104</td>
+      <td>5 × 101</td>
+    </tr>
+    <tr>
+      <td>Nyv1p</td>
+      <td>2 × 103</td>
+      <td>4.3 × 104</td>
+      <td>8.1 × 104</td>
+      <td>3 × 101</td>
+    </tr>
+    <tr>
+      <td>Ypt7p</td>
+      <td>4 × 103</td>
+      <td>1.9 × 104</td>
+      <td>1.8 × 104</td>
+      <td>0.5 × 101</td>
+    </tr>
+    <tr>
+      <td>Sec17p</td>
+      <td>7 × 103</td>
+      <td>41 × 104</td>
+      <td>13 × 104</td>
+      <td>3 × 101</td>
+    </tr>
+    <tr>
+      <td>Sec18p</td>
+      <td>1 × 103</td>
+      <td>10 × 104</td>
+      <td>13 × 104</td>
+      <td>10 × 101</td>
+    </tr>
+    <tr>
+      <td>Vps33p</td>
+      <td>6 × 103</td>
+      <td>17 × 104</td>
+      <td>31 × 104</td>
+      <td>3 × 101</td>
+    </tr>
+  </tbody>
+</table>
+
+_*for SNAREs and Ypt7p, calculated, based on a 1:1000 lipid:protein ratio during reconstitution and an assumption of 50% outwardly-oriented SNAREs on proteoliposomes; for others, based on amounts of added proteins, and 0.74 mM lipids in standard proteoliposome reactions (see ‘Materials and methods’).†based on measured (see ‘Materials and methods’) values of 2.17 nmol lipid per µg total vacuole protein for BJ3505 vacuoles and 1.00 nmol lipid per μg total vacuole protein for DKY6218 vacuoles, and standard vacuole reactions containing 3 µg protein of each vacuole in 30 µl._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01879/elife-01879-fig2-v1.jpg)
 
-**Figure 2.:** (A) Fusion of proteoliposomes bearing Ypt7p and 4-SNAREs (1:5000 molar ratio to lipid phosphate), prepared with either the complete vacuole lipid mix (squares) or missing PE (diamonds), PE and DAG (triangles), or PE, DAG, and ERG (circles). Fusion was assayed as the FRET between lumenal fluorescent proteins in the continuous presence of an excess of external nonfluorescent streptavidin. (B) Proteoliposomes were analyzed for their protein composition by SDS-PAGE and Coomassie blue staining. Lipid composition: Lane 1, complete vacuolar lipid mix; lane 2, PE omitted; lane 3, PE and DAG omitted; lane 4, PE, DAG, and ERG omitted. In each case, the percentage of PC was increased to account for the omitted lipid(s). (C) Similar protease-accessibility of SNAREs and Rab across proteoliposomes preparations. Proteoliposomes (1.2 mM lipid) were incubated in 15 µl RB150 with 60 mM HEPES/NaOH pH 8.0 for 10 min at 27°C with either no addition of protease, with 60 µg/ml of proteinase K which had been preincubated for 10 min with 1 mM PMSF prior to proteoliposome addition (indicated by asterisk), with fully-active proteinase K which had not been preincubated with PMSF, or with fully active proteinase K and 1% (wt/vol) β-octylglucoside. After this incubation, PMSF was added to samples which had fully active proteinase K and the incubation continued for an additional 10 min. All samples were then mixed with SDS sample buffer, heated to 95°C for 5 min and subjected to SDS-PAGE. Gels were stained with Coomassie blue, and bands corresponding to Vam3p, Nyv1p, and Ypt7p quantified by scanning with a Microtek Bio-5000 scanner (Microtek Lab, Inc., Santa Fe Springs, CA) and UN-SCAN-IT gel 5.3 software (Silk Scientific, Orem, UT). For each of these three proteins, the intensity of the band from samples which never saw proteinase K was set to 100%. Dark bars correspond to VML proteoliposomes, light bars to proteoliposomes prepared without PE, DAG, and Erg. Shown is the average of two experiments +/− standard deviations. (D) The size distribution of various proteoliposome preparations was analyzed by dynamic light scattering with a Zetasizer nano ZS (Malvern Instruments Inc., Westborough, MA) through non-invasive back-scatter at 173°. For each liposome preparation, at least four samples (400 µl at a lipid concentration of 20 µM) were measured in low volume disposable sizing cuvettes at 25°C. Shown is the average diameter (+/− standard deviation) of independent proteoliposome preparations composed of the complete vacuolar lipid mix (dark bars) or without PE, ERG, DAG (light bars) and bearing either Nyv1 (1R; n = 3), all four SNAREs (4SNARE; n = 2), Vam3 and Vti1 (2Q; n = 1), or Nyv1, Vam3, and Vti1 (RQab; n = 2).DOI: http://dx.doi.org/10.7554/eLife.01879.005
+**Figure 2.:** (A) Fusion of proteoliposomes bearing Ypt7p and 4-SNAREs (1:5000 molar ratio to lipid phosphate), prepared with either the complete vacuole lipid mix (squares) or missing PE (diamonds), PE and DAG (triangles), or PE, DAG, and ERG (circles). Fusion was assayed as the FRET between lumenal fluorescent proteins in the continuous presence of an excess of external nonfluorescent streptavidin. (B) Proteoliposomes were analyzed for their protein composition by SDS-PAGE and Coomassie blue staining. Lipid composition: Lane 1, complete vacuolar lipid mix; lane 2, PE omitted; lane 3, PE and DAG omitted; lane 4, PE, DAG, and ERG omitted. In each case, the percentage of PC was increased to account for the omitted lipid(s). (C) Similar protease-accessibility of SNAREs and Rab across proteoliposomes preparations. Proteoliposomes (1.2 mM lipid) were incubated in 15 µl RB150 with 60 mM HEPES/NaOH pH 8.0 for 10 min at 27°C with either no addition of protease, with 60 µg/ml of proteinase K which had been preincubated for 10 min with 1 mM PMSF prior to proteoliposome addition (indicated by asterisk), with fully-active proteinase K which had not been preincubated with PMSF, or with fully active proteinase K and 1% (wt/vol) β-octylglucoside. After this incubation, PMSF was added to samples which had fully active proteinase K and the incubation continued for an additional 10 min. All samples were then mixed with SDS sample buffer, heated to 95°C for 5 min and subjected to SDS-PAGE. Gels were stained with Coomassie blue, and bands corresponding to Vam3p, Nyv1p, and Ypt7p quantified by scanning with a Microtek Bio-5000 scanner (Microtek Lab, Inc., Santa Fe Springs, CA) and UN-SCAN-IT gel 5.3 software (Silk Scientific, Orem, UT). For each of these three proteins, the intensity of the band from samples which never saw proteinase K was set to 100%. Dark bars correspond to VML proteoliposomes, light bars to proteoliposomes prepared without PE, DAG, and Erg. Shown is the average of two experiments +/− standard deviations. (D) The size distribution of various proteoliposome preparations was analyzed by dynamic light scattering with a Zetasizer nano ZS (Malvern Instruments Inc., Westborough, MA) through non-invasive back-scatter at 173°. For each liposome preparation, at least four samples (400 µl at a lipid concentration of 20 µM) were measured in low volume disposable sizing cuvettes at 25°C. Shown is the average diameter (+/− standard deviation) of independent proteoliposome preparations composed of the complete vacuolar lipid mix (dark bars) or without PE, ERG, DAG (light bars) and bearing either Nyv1 (1R; n = 3), all four SNAREs (4SNARE; n = 2), Vam3 and Vti1 (2Q; n = 1), or Nyv1, Vam3, and Vti1 (RQab; n = 2).
 
 To evaluate the role of lipids in vacuolar fusion, we started from the complete VML composition (Mima et al., 2008) with SNAREs at a 1:5000 molar ratio to lipids and sequentially removed one lipid at a time, substituting additional PC in its place. The sequential removal of PE, diacylglycerol, and ergosterol reduced the rate and extent of fusion, until fusion could no longer be detected when all three of these lipids were omitted (Figure 2A). These proteoliposomes had comparable lumenal entrapment of fluorescent proteins (data not shown), comparable protein composition (Figure 2B), and comparable orientation of SNARE and Rab proteins, as judged by protease accessibility assays (Figure 2C). Proteoliposomes vary in size from preparation to preparation, and according to their SNARE composition. Those prepared without the three non-bilayer lipids have approximately 20% smaller diameter, though this is still largely within the range seen for VML RPLs of varying SNARE composition (Figure 2D). Thus, the lack of fusion signal was presumably not due to an absence of the Rab, SNAREs or lumenal probe, or to altered proteoliposome topology.
 
-Vacuoles with 3- to 9-fold elevated SNARE levels undergo lysis as well as fusion (
+Vacuoles with 3- to 9-fold elevated SNARE levels undergo lysis as well as fusion (Starai et al., 2007), and vacuolar proteoliposomes also exhibit both behaviors (Zucchi and Zick, 2011). Lysis is inferred from the extra FRET obtained from the initially-lumenal probes when the external quencher, nonfluorescent streptavidin, is omitted (Zucchi and Zick, 2011). Proteoliposomes with the full VML lipid composition undergo fusion and lysis (Figure 3, squares), whereas RPLs lacking PE, DAG, and ERG exhibit neither fusion nor lysis (open and filled circles). Thus the lack of fusion signal when PE, ERG, and DAG are absent is not due to a fusion pathway diversion into lysis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01879/elife-01879-fig3-v1.jpg)
 
-**Figure 3.:** Proteoliposomes of complete vacuolar lipid mix or lacking PE, DAG, and ERG and with Ypt7p and the 4 vacuolar SNAREs (1:5000 molar ratio to lipid phosphate) were incubated either with a large molar excess of non-fluorescent streptavidin, restricting FRET development to sealed fusion events, or without external streptavidin, yielding FRET from both fusion and from lysis (Zucchi and Zick, 2011).DOI: http://dx.doi.org/10.7554/eLife.01879.006
+**Figure 3.:** Proteoliposomes of complete vacuolar lipid mix or lacking PE, DAG, and ERG and with Ypt7p and the 4 vacuolar SNAREs (1:5000 molar ratio to lipid phosphate) were incubated either with a large molar excess of non-fluorescent streptavidin, restricting FRET development to sealed fusion events, or without external streptavidin, yielding FRET from both fusion and from lysis (Zucchi and Zick, 2011).
 
-The vacuole fusion pathway entails early ATP-dependent reactions that occur on separate vacuoles, termed priming, followed by tethering, which can be mediated by HOPS and Ypt7p alone (
+The vacuole fusion pathway entails early ATP-dependent reactions that occur on separate vacuoles, termed priming, followed by tethering, which can be mediated by HOPS and Ypt7p alone (Hickey and Wickner, 2010). Tethering allows a striking enrichment of fusion proteins and lipids in a microdomain, followed by trans-SNARE complex assembly. This is followed by rearrangements of the lipid bilayers resulting in membrane fusion and the attendant mixing of lumenal compartments. To determine the stage(s) that require the nonbilayer-prone-lipids, paired sets of proteoliposomes were prepared with VML lipids, Ypt7p, and either the R-SNARE Nyv1p or the Q-SNAREs Vam3p (Qa) and Vti1p (Qb). These proteoliposomes readily fuse when incubated with HOPS and Vam7p (Qc-SNARE); Sec17p and Sec18p stimulate but are not required (Zick and Wickner, 2013) and were not present in these assays. A second set of proteoliposomes was prepared in parallel, but lacking PE, DAG, and ERG. There was no fusion in the absence of the three small headgroup lipids (Figure 4A). After a 10 min incubation under fusion conditions, aliquots were solubilized in a RIPA buffer (1% Triton X-100, 1% sodium cholate, and 0.1% SDS) with affinity-purified antibody to Vam3p, then mixed with magnetic beads bearing protein A. After washing, bound proteins were eluted with hot SDS and analyzed for Nyv1p by immunoblot (Figure 4B). Comparable amounts of Nyv1p had bound to Vam3p in proteoliposomes with complete vacuolar lipid mix (Figure 4B, lane 2), where rapid fusion occurred, as in proteoliposomes lacking PE, DAG, and ERG (lane 5) where there was no detectable fusion (Figure 4A). Nyv1p did not associate with Vam3p in trans when Vam7p was omitted (Figure 4B, lanes 1,4) or when Vam7p was only added immediately after the RIPA buffer (lanes 3, 6).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01879/elife-01879-fig4-v1.jpg)
 
-**Figure 4.:** Reconstituted proteoliposomes with either the R-SNARE or the Vam3p and Vti1p Q-SNAREs, prepared at a 1:5000 molar ratio of SNARE to lipid and either having the complete vacuolar lipid mix or without PE, ERG, or DAG were incubated in fusion reactions. Vam7p (0.5 µM) was added where indicated, either during the fusion reaction (lanes 2 and 5) or after the reaction was terminated by detergent addition (indicated by an asterisk, lanes 3 and 6). Each reaction was (A) assayed for lumenal content mixing and (B) mixed after 10 min with a 10-fold volume of a modified RIPA buffer (20 mM HEPES/NaOH, pH 7.4, 0.15M NaCl, 0.2% bovine serum albumin (defatted), 1% Triton X-100, 1% sodium cholate, 0.1% sodium dodecyl sulfate, 1 mM EDTA) with 40 µg/ml affinity-purified antibody to Vam3p and 1 µM recombinant soluble domain of Snc2p to suppress SNARE complex assembly in detergent. After addition of 10 µl of RIPA buffer-washed suspension of magnetic beads with bound protein A (Thermo Scientific), samples were mixed for 1 hr at room temperature. Beads were collected by placing the tubes for 2 min onto a magnetic rack, and the unbound proteins removed. Beads were thrice washed with 1 ml of modified RIPA buffer, then proteins were eluted with SDS sample buffer at 95°C and analyzed by SDS-PAGE and immunoblot with antibodies to Nyv1p. Reactions were performed without further SNARE addition, with 0.5 µM Vam7p from the start of the incubation, or with the Vam7p added one minute after solubilization by RIPA buffer. The same preparations and solutions were premixed, then used in parallel for the assays of fusion and trans-assembly of SNAREs shown here. The immunoblot of one of the three trans-SNARE assays is shown.DOI: http://dx.doi.org/10.7554/eLife.01879.007
+**Figure 4.:** Reconstituted proteoliposomes with either the R-SNARE or the Vam3p and Vti1p Q-SNAREs, prepared at a 1:5000 molar ratio of SNARE to lipid and either having the complete vacuolar lipid mix or without PE, ERG, or DAG were incubated in fusion reactions. Vam7p (0.5 µM) was added where indicated, either during the fusion reaction (lanes 2 and 5) or after the reaction was terminated by detergent addition (indicated by an asterisk, lanes 3 and 6). Each reaction was (A) assayed for lumenal content mixing and (B) mixed after 10 min with a 10-fold volume of a modified RIPA buffer (20 mM HEPES/NaOH, pH 7.4, 0.15M NaCl, 0.2% bovine serum albumin (defatted), 1% Triton X-100, 1% sodium cholate, 0.1% sodium dodecyl sulfate, 1 mM EDTA) with 40 µg/ml affinity-purified antibody to Vam3p and 1 µM recombinant soluble domain of Snc2p to suppress SNARE complex assembly in detergent. After addition of 10 µl of RIPA buffer-washed suspension of magnetic beads with bound protein A (Thermo Scientific), samples were mixed for 1 hr at room temperature. Beads were collected by placing the tubes for 2 min onto a magnetic rack, and the unbound proteins removed. Beads were thrice washed with 1 ml of modified RIPA buffer, then proteins were eluted with SDS sample buffer at 95°C and analyzed by SDS-PAGE and immunoblot with antibodies to Nyv1p. Reactions were performed without further SNARE addition, with 0.5 µM Vam7p from the start of the incubation, or with the Vam7p added one minute after solubilization by RIPA buffer. The same preparations and solutions were premixed, then used in parallel for the assays of fusion and trans-assembly of SNAREs shown here. The immunoblot of one of the three trans-SNARE assays is shown.
 
-PE, DAG, and ERG are required for fusion at SNARE:lipid molar ratios of 1:5000, whether the proteoliposomes bear all 4 SNAREs (
+PE, DAG, and ERG are required for fusion at SNARE:lipid molar ratios of 1:5000, whether the proteoliposomes bear all 4 SNAREs (Figure 2A) or 2Q-RPLs and 1R-RPLs are incubated with added Vam7p (Figure 4A). It remained possible that some other parameter of reconstitution which we could not measure, such as the trans-membrane disposition of each lipid species, might regulate fusion and be influenced by the SNARE levels. To address this possibility, we prepared RPLs bearing both the R-SNARE and QaQb (Vam3p, Vti1p) SNAREs, with either the complete mixture of vacuolar lipids or lacking PE, DAG, and ERG. In either case, fusion of these RQaQb RPLs was not seen without added Vam7p (Figure 5, diamonds). With ample added Vam7p (5 µM) to allow maximal formation of trans-SNARE complexes, the fusion only showed a several-fold stimulation by the presence of PE, DAG, and ERG (circles). However, with 5 nM added Vam7p, the small headgroup neutral lipids were still required (squares). Thus the very same proteoliposomes could be used to demonstrate a strict requirement for small-headgroup lipids when the trans-SNARE complex levels were limited by the 5 nM Vam7p, while with ample Vam7p (5 µM) and hence high trans-SNARE levels, this requirement was partially bypassed. Bypass thus directly reflects the formation of high levels of trans-SNARE pairs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01879/elife-01879-fig5-v1.jpg)
 
-**Figure 5.:** Fusion assay pairs of proteoliposomes were prepared with Ypt7p, with VML lipids or lacking PE, ERG, and DAG, as indicated, and with Nyv1p, Vam3p, and Vti1p (the R- and Qa- and Qb-SNAREs, respectively) at a 1:1000 molar ratio to total lipid. Fusion assays were initiated by the addition of HOPS, Sec17p, and Sec18p, as described in the ‘Materials and methods’, as well as the indicated (final) concentration of Vam7p.DOI: http://dx.doi.org/10.7554/eLife.01879.008
+**Figure 5.:** Fusion assay pairs of proteoliposomes were prepared with Ypt7p, with VML lipids or lacking PE, ERG, and DAG, as indicated, and with Nyv1p, Vam3p, and Vti1p (the R- and Qa- and Qb-SNAREs, respectively) at a 1:1000 molar ratio to total lipid. Fusion assays were initiated by the addition of HOPS, Sec17p, and Sec18p, as described in the ‘Materials and methods’, as well as the indicated (final) concentration of Vam7p.
 
 ## Discussion
 
@@ -80,11 +159,11 @@ Our current working model of fusion is that even single trans-SNARE pairs bring 
 
 ## Materials and methods
 
-## Proteins and reagents
+### Proteins and reagents
 
 Lipids were obtained from Avanti Polar Lipids, except ergosterol was from Sigma–Aldrich (St. Louis, MO), PI(3)P was from Echelon Biosciences (Salt Lake City, UT), and the fluorescent lipids were from Life Technologies (Carlsbad, CA). Sec18p (Haas and Wickner, 1996), Sec17p (Schwartz and Merz, 2009), Ypt7p (Zick and Wickner, 2013), HOPS (Zick and Wickner, 2013), and vacuolar SNARE proteins (Mima et al., 2008; Schwartz and Merz, 2009; Zucchi and Zick, 2011) were purified as described. Vti1p and Nyv1p were exchanged into octylglucoside buffer as described (Zucchi and Zick, 2011).
 
-## Vacuole lipid extraction and measurement of vacuole lipid and protein levels
+### Vacuole lipid extraction and measurement of vacuole lipid and protein levels
 
 Vacuolar lipids were extracted by a modification of the Bligh-Dyer method (Bligh and Dyer, 1959). Chloroform (100 µl) and methanol supplemented with 0.1 M HCl (200 µl) were added to 37 µg vacuoles, as measured by protein content (Haas, 1995), in 80 µl RB150+Mg (20 mM HEPES, pH 7.4, 150 mM NaCl, 10% glycerol, 1 mM MgCl2). This single-phase mixture was vortexed thoroughly and incubated at room temperature for 1 hr. RB150+Mg and chloroform (100 µl ea.) were then added. The sample was vortexed thoroughly and centrifuged at 14000×g rpm in an Eppendorf (Hamburg, Germany) 5415C microcentrifuge at room temperature for 30 s. The organic layer was transferred to a 13 × 100 mm round-bottom glass tube (99445-13; Corning Inc., Corning, NY). Chloroform (200 µl) was added to the remaining aqueous layer. This sample was vortexed and centrifuged as above, and the organic layer was removed and added to the organic layer from the first extraction. RB150+Mg (360 µl) and methanol-HCl (400 ml) were added to the combined organic layers. This mixture was vortexed, centrifuged in a Sorvall SpeedVac SC100 (Thermo Fisher Scientific, Waltham, MA) at atmospheric pressure and room temperature for 30 s, and the aqueous layer was removed and discarded.
 
@@ -92,10 +171,10 @@ Vacuole lipid levels were measured using a lipid phosphorus assay. Ammonium moly
 
 For estimation of vacuolar protein levels, 6.5 nmol ea. BJ3505 and DKY6218 vacuoles (Haas, 1995), here as measured by lipid content (see previous paragraph) rather than protein content, were analyzed by SDS-PAGE and immunoblotting for Vam7p, Vam3p, Vti1p, Nyv1p, Ypt7p, Sec17p, Sec18p, and Vps33p. Protein levels were estimated by comparison of band intensities (measured using a ChemiDoc-It system with LabWorks version 4.5.00.0 software, UVP, Upland, CA) from vacuolar samples to band intensities from standards (3.25, 1.3, 0.65, 0.26, 0.13, 0.052, and 0.026 pmol ea.) of purified recombinant Vam7p, Vti1p, Nyv1p (Mima et al., 2008), his6-tagged Vam3 cytosolic domain (Nichols et al., 1997), Ypt7p (Hickey et al., 2009), his6-tagged Sec17p and his6-tagged Sec18p (Haas and Wickner, 1996), and HOPS complex (Stroupe et al., 2009).
 
-## Preparation of proteoliposomes
+### Preparation of proteoliposomes
 
 Reconstituted proteoliposomes were prepared as described (Zick and Wickner, 2013), with modifications. Chloroform solutions of lipids (vacuolar mixed lipids; VML) were mixed in a glass vial: 49.6 or 51 mol % diC18:2 PC, 15% diC18:2 PE, 1% diacylglycerol, 8% ergosterol, 2% diC18:2 PA, 18% soy PI, 4.4% diC18:2 PS, 1% diC16 PI(3)P and either 0.23% Marina Blue-PE or 1.5% NBD-PE (Life Technologies). When small headgroup lipids were omitted, the amount of PC was adjusted to bring the sum to 100%. β-octylglucoside was added to 160 mM from a 0.5 M solution in methanol and samples were dried under a stream of nitrogen, then in vacuo. Samples were dissolved in a fivefold concentrate of RB150+Mg (0.1 M HEPES/NaOH, pH 7.4, 0.75 M NaCl, 50% glycerol, 5 mM MgCl2) by several cycles of vortexing for 10 s, rocker mixing for 30 min, and bath sonication for 5 min, yielding mixed micellar solutions with 4 mM lipids and 50 mM detergent. Lipid micellar solutions (200 µl) were mixed with a mixed micellar solution of purified Ypt7p and the indicated SNAREs (550 µl) and 250 µl of either Cy5-derivatized streptavidin (from KPL, Gaithersburg, MD; 8 µM final) or biotinylated phycoerythrin (Life Technologies; 4 µM final). Each ml of solution was added to a rinsed and knotted 6 cm segment of SpectraPor dialysis membrane, 25 kDa cutoff, 7.5 mm diameter (Spectrum Labs, Rancho Dominguez, CA) which was then knotted and dialyzed at 4°C in 250 ml of RB150+Mg (20 mM HEPES, pH 7.4, 150 mM NaCl, 10% glycerol, 1 mM MgCl2 [Mima et al., 2008; Zucchi and Zick, 2011]) with 1 g of BioBeads SM-2 (Biorad, Hercules, CA) for at least 20 hr with continuous stirring. The isolation of proteoliposomes by flotation was as described (Zick and Wickner, 2013). After total phosphate was assayed, samples were brought to 2 mM lipid with RB150+Mg and small aliquots were frozen in liquid nitrogen and stored at −80°C.
 
-## Fusion assays
+### Fusion assays
 
 Assays of proteoliposome fusion and lysis were as described (Zick and Wickner, 2013). Adjacent wells of 384-well plates received either the mixed proteoliposomes in RB150+Mg with streptavidin or a mixture of the remaining assay components, which were added to the wells with proteoliposomes after a 10 min preincubation at 27°C. For lysis assays, duplicate wells either received streptavidin or RB150 in its place; the difference between the readings from these wells is a measure of lysis. The final assay component concentrations are: 19.5 mM HEPES/NaOH, pH 7.4, 142 mM NaCl, 11 mM KCl, 1.1 mM imidazole, 9.8% glycerol, 3.3 mM sorbitol, 1.44 mM MgCl2, 0.13 mM 2-mercaptoethanol, 1.1 mM potassium phosphate, 0.17 mM glutathione, 10.7 µM streptavidin, 1.36 mM Na2ATP, 1.84% bovine serum albumin (defatted), 0.000066% Triton X-100, 0.37 mM lipid from each of the 2 proteoliposome populations, 108 nM Sec17p, 0.55 µM Sec18p, and 0.12 µM HOPS.

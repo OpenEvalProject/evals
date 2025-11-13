@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.28166.001 During development internal models of the sensory world must be acquired which have to be continuously adapted later. We used event-related potentials (ERP) to test the hypothesis that infants extract crossmodal statistics implicitly while adults learn them when task relevant. Participants were passively exposed to frequent standard audio-visual combinations (A1V1, A2V2, p=0.35 each), rare recombinations of these standard stimuli (A1V2, A2V1, p=0.10 each), and a rare audio-visual deviant with infrequent auditory and visual elements (A3V3, p=0.10). While both six-month-old infants and adults differentiated between rare deviants and standards involving early neural processing stages only infants were sensitive to crossmodal statistics as indicated by a late ERP difference between standard and recombined stimuli. A second experiment revealed that adults differentiated recombined and standard combinations when crossmodal combinations were task relevant. These results demonstrate a heightened sensitivity for crossmodal statistics in infants and a change in learning mode from infancy to adulthood.
+During development internal models of the sensory world must be acquired which have to be continuously adapted later. We used event-related potentials (ERP) to test the hypothesis that infants extract crossmodal statistics implicitly while adults learn them when task relevant. Participants were passively exposed to frequent standard audio-visual combinations (A1V1, A2V2, p=0.35 each), rare recombinations of these standard stimuli (A1V2, A2V1, p=0.10 each), and a rare audio-visual deviant with infrequent auditory and visual elements (A3V3, p=0.10). While both six-month-old infants and adults differentiated between rare deviants and standards involving early neural processing stages only infants were sensitive to crossmodal statistics as indicated by a late ERP difference between standard and recombined stimuli. A second experiment revealed that adults differentiated recombined and standard combinations when crossmodal combinations were task relevant. These results demonstrate a heightened sensitivity for crossmodal statistics in infants and a change in learning mode from infancy to adulthood.
 
 ## Introduction
 
@@ -34,11 +34,11 @@ We predicted ERP differences between the ‘Frequent standard stimuli’ and ‘
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 In Experiment 1 we investigated a group of infants (Experiment 1a) and a group of young adults (Experiment 1b) with the same experimental design. Due to the age difference between the groups, a few adjustments in the procedure, data recording, and data analyses were necessary.
 
-## Experiment 1a (Infants)
+### Experiment 1a (Infants)
 
 ERP differences were found between ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’ as well as ‘Rare recombined stimuli’ and ‘Frequent standard stimuli’: ‘Rare deviant stimuli’ (A3V3) elicited a more negative going ERP than ‘Frequent standard stimuli’ (A1V1, A2V2) (see Figure 1). This effect (200–420 ms, 420–1000 ms) was predominantly observed over the right hemisphere. Crucially, ‘Rare recombined stimuli’ (A1V2, A2V1) elicited a more negative going ERP compared to ‘Frequent standard stimuli’ (see Figure 1), predominantly over the left hemisphere (420–1000 ms).
 
@@ -46,23 +46,23 @@ ERP differences were found between ‘Rare deviant stimuli’ and ‘Frequent st
 
 **Figure 1.:** (A) ERPs to the three conditions (‘Frequent standard stimuli’, ‘Rare recombined stimuli’, ‘Rare deviant stimuli’) are superimposed for the electrode clusters F and FC, and the electrodes Fz and FCZ. The analyzed time epochs are marked in blue (200–420 ms) and red (420–1000 ms). (B) The topographical distribution of the difference between ‘Rare deviant stimuli’ minus ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ minus ‘Frequent standard stimuli’ for the first and second time window.
 
-## First time window (200 – 420 ms): cluster analysis
+#### First time window (200 – 420 ms): cluster analysis
 
 The overall ANOVA with factors Condition, Hemisphere, and Cluster revealed a significant interaction between the factors Condition and Hemisphere (F(2,56) = 4.55; p=0.015) as well as a significant interaction of Condition × Cluster (F(6,168) = 4.94; p<0.001). Follow-up ANOVAs revealed a significant interaction of Condition × Hemisphere for cluster F (F(2,56) = 3.78; p=0.028), FC (F(2,56) = 3.67; p=0.029), and cluster CP (F(2,56) = 3.18; p=0.048). Post hoc t-tests showed that this interaction was driven by a more positive amplitude in response to ‘Rare deviant stimuli’ compared to ‘Frequent standard stimuli’ (see Figure 1) at cluster F (t(28) = 3.18; p=0.014), cluster FC (t(28) = 2.93; p=0.026), and cluster CP (t(28) = 3.02; p=0.02) of the right hemisphere.
 
-## First time window (200 – 420 ms): midline analysis
+#### First time window (200 – 420 ms): midline analysis
 
 The overall ANOVA with factors Condition and Electrode showed a significant interaction between Condition x Electrode (F(10,280) = 2.76; p=0.002). Follow-up ANOVAs revealed a significant main effect of the factor Condition for electrode Fz (F(2,56) = 5.31; p=0.007) and FCz (F(2,56) = 3.79; p=0.02). Post hoc t-tests showed significant differences between the ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’ at electrode FC (t(28) = 2.51; p=0.036) and FCz (t(28) = 2.45; p=0.04); ‘Rare deviant stimuli’ elicited a more positive going ERP than ‘Frequent standard stimuli’ (see Figure 1).
 
-## Second time window (420 – 1000 ms): cluster analysis
+#### Second time window (420 – 1000 ms): cluster analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Hemisphere (F(2,56) = 4.68; p=0.013) as well as a significant interaction of Condition × Cluster (F(6,168) = 4.51; p<0.01). Follow-up ANOVAs separately calculated for each cluster showed a significant interaction of Condition × Hemisphere at Cluster F (F(2,56) = 4.5; p=0.014) and cluster FC (F(2,56) = 4.6; p=0.013). Post-hoc t-tests indicated that ERPs to ‘Rare deviant stimuli’ were significantly more positive than ERPs to ‘Frequent standard stimuli’ (see Figure 1) at cluster F (t(28) = 2.72; p=0.044) of the right hemisphere. In addition, post hoc t-tests revealed significant differences between ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ at cluster FC of the left hemisphere (t(28) = −2.81; p=0.032), indicating a more negative amplitude in response to ‘Rare recombined stimuli’ compared to the ‘Frequent standard stimuli’ (see Figure 1).
 
-## Second time window (420 – 1000 ms): midline analysis
+#### Second time window (420 – 1000 ms): midline analysis
 
 The ANOVA revealed a significant interaction between the factors Condition and Electrode (F(10,280) = 2.76; p=0.002). Follow-up ANOVAs indicated a main effect of Condition for electrode AFz (F(2,56) = 3.4; p=0.04) and Fz (F(2,56)= 3.59; p=0.03). However, none of the subsequent t-tests reached significance (all p≥0.08).
 
-## Experiment 1b (Adults)
+### Experiment 1b (Adults)
 
 ERP differences were found only between ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’. ERPs to ‘Rare deviant stimuli’ were more negative going than ERPs to ‘Frequent standard stimuli’ during both time windows (180–220 ms, 250–1000 ms; see Figure 2).
 
@@ -70,37 +70,69 @@ ERP differences were found only between ‘Rare deviant stimuli’ and ‘Freque
 
 **Figure 2.:** (A) ERPs to the three conditions (‘Frequent standard stimuli’, ‘Rare recombined stimuli’, ‘Rare deviant stimuli’) are superimposed for the electrode clusters F and FC, and the electrodes FCz and Cz. The analyzed time epochs are marked in blue (180–220 ms) and red (420–1000 ms). (B) The topographical distribution of the difference between ‘Rare deviant stimuli’ minus ‘Frequent standard stimuli’ for the first and second time window.
 
-## First time window (180 – 220 ms): cluster analysis
+#### First time window (180 – 220 ms): cluster analysis
 
 The overall ANOVA did not reveal any significant effect involving the factor Condition.
 
-## First time window (180 – 220 ms): midline analysis
+#### First time window (180 – 220 ms): midline analysis
 
 The overall ANOVA revealed a significant interaction between the factors Condition and Electrode (F(12,276) = 2.16; p=0.03). Follow-up ANOVAs obtained a significant main effect of Condition for electrode Cz (F(2,46) = 4.02; p=0.024). Post hoc t-tests showed significant differences between the ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’ at electrode Cz (t(22) = −2.32; p=0.047); ‘Rare deviant stimuli’ elicited a more negative going ERP than ‘Frequent standard stimuli’ (see Figure 2).
 
-## Second time window (250 – 1000 ms): cluster analysis
+#### Second time window (250 – 1000 ms): cluster analysis
 
 The overall ANOVA revealed a significant interaction between the factors Condition, Hemisphere, and Cluster (F(10,230) = 2.49; p=0.007). Follow-up ANOVAs separately calculated for each cluster obtained a significant interaction of Condition and Hemisphere for cluster FC (F(2,46) = 4.56; p=0.015). Post hoc t-tests showed that this interaction was driven by a more negative amplitude in response to ‘Rare deviant stimuli’ compared to ‘Frequent standard stimuli’ (see Figure 2) at cluster FC of the right hemisphere (t(22) = −2.22; p=0.036).
 
-## Second time window (250 – 1000 ms): midline electrodes
+#### Second time window (250 – 1000 ms): midline electrodes
 
 The overall ANOVA did not reveal any significant effect involving factor Condition.
 
-## Summary and discussion of Experiment 1a and 1b
+### Summary and discussion of Experiment 1a and 1b
 
 As predicted, infants were more sensitive to crossmodal statistics than adults. Only infants displayed a significant ERP deviant effect for ‘Rare recombined stimuli’. By contrast, both groups showed at a relatively earlier time epoch a ‘Rare deviant stimuli’ effect, suggesting that the overall experimental power had been sufficient to detect ERP deviant effects. In fact, the effect size for the ‘Rare deviant stimuli’ effects was smaller, both in infants (d = 0.65) and adults (d = 0.63), than the effect size for the ERP effects comparing ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ in infants (d = 0.73). Thus, since smaller effects (‘Frequent standard stimuli’ vs. ‘Rare deviant stimuli’) than the missing effect (‘Frequent standard stimuli’ vs. ‘Rare recombined stimuli’) were detected in adults, it seems justified to conclude that the null effect in adults was not caused by a lack of power. Nevertheless, we ran a second Experiment (Experiment 2a) to replicate with a more adequate design for adults the lack of learning arbitrary crossmodal conditional probabilities when they were not related to a task. Moreover, in an additional experiment (Experiment 2b) we tested the requirements for adult learning of crossmodal statistics. We will discuss the results of Experiment 1a and 1b in light of the results of these additional experiments in the general Discussion.
 
-## Experiment 2
+### Experiment 2
 
 As we did not find any ERP difference between ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ in the adult group in Experiment 1b, we ran a second study in adults comprising two experiments, in which we systematically manipulated the task relevance of crossmodal combinations. Both experiments were very similar to Experiment 1 but comprised essential adaptations: (a) to enhance the power of the experiment, we increased the number of trials; (b) in Experiment 2a we included a fourth visual stimulus (V4), which had to be detected by participants (target) while all other stimuli remained task irrelevant: This manipulation guaranteed that participants attended the stimuli; (c) in Experiment 2b one of the ‘Rare recombined stimuli’ (either A1V2 or A2V1) served as the target: this manipulation rendered crossmodal combinations task relevant to the participants. At the same time this design allowed us to analyze ERPs to crossmodal stimuli, including to the non-target ‘Rare recombined stimuli’, which were, as in Experiment 2a, not followed by a manual response.
 
 We hypothesized that adults are not sensitive to crossmodal statistics (no ERP difference between ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’) when crossmodal combinations are task irrelevant (Experiment 2a in replication of the findings from Experiment 1b) but that such ERP differences would emerge in Experiment 2b, indicating learning of crossmodal statistics when they are task relevant.
 
-## Behavioral data
+### Behavioral data
 
 As seen in Table 1, participants identified target stimuli with a high accuracy in both experiments.
 
-## Experiment 2a: ERP data
+**Table 1.**
+ Mean (±SEM) of reaction times (in ms), hit rates (in %), misses (in %), and false alarms (in %) to the target stimuli of Experiment 2a and Experiment 2b.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RT (ms)</th>
+      <th>Hits (%)</th>
+      <th>Misses (%)</th>
+      <th>False alarms (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experiment 2a</td>
+      <td>391 ± 17.5</td>
+      <td>99.4 ± 0.3</td>
+      <td>0.34 ± 0.18</td>
+      <td>0.63 ± 0.25</td>
+    </tr>
+    <tr>
+      <td>Experiment 2b</td>
+      <td>535 ± 27.5</td>
+      <td>96.6 ± 1.6</td>
+      <td>3.4 ± 1.6</td>
+      <td>15.55 ± 6.95</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experiment 2a: ERP data
 
 ERP differences were found only between ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’: Compared to ‘Frequent standard stimuli’ ‘Rare deviant stimuli ‘elicited a more negative early ERP (80–160 ms, see Figure 3). During the late time window (250–850 ms) ERPs to ‘Rare deviant stimuli ‘were more negative over the anterior scalp and more positive over the posterior scalp compared to ERPs to ‘Frequent standard stimuli’. ERPs to ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ did not significantly differ (see Figure 3).
 
@@ -108,23 +140,23 @@ ERP differences were found only between ‘Rare deviant stimuli’ and ‘Freque
 
 **Figure 3.:** (A) ERPs to the three conditions (‘Frequent standard stimuli’, ‘Rare recombined stimuli’, ‘Rare deviant stimuli’) are superimposed for the electrode clusters F and FC, and the electrodes Fz and FCZ. The analyzed time epochs are marked in blue (80–160 ms) and red (250–850 ms). (B) The topographical distribution of the difference between ‘Rare deviant stimuli’ minus ‘Frequent standard stimuli’ for the first and second time window.
 
-## First time window (80 – 160 ms): cluster analysis
+#### First time window (80 – 160 ms): cluster analysis
 
 The overall ANOVA revealed a significant interaction between the factors Condition and Cluster (F(10,110) = 4.71; p<0.001). Follow-up ANOVAS separately calculated for each Cluster showed a significant main effect of Condition for cluster C (F(2,22) = 29.52; p<0.001). Post-hoc t-tests indicated that ERPs to ‘Rare deviant stimuli’ were significantly more negative than ERPs to ‘Frequent standard stimuli’ (see Figure 3) at cluster C (t(11) = −5.76; p<0.001).
 
-## First time window (80 – 160 ms): midline analysis
+#### First time window (80 – 160 ms): midline analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Electrode (F(12,132) = 7.03; p<0.001). Follow-up ANOVAs for each electrode obtained a significant main effect of Condition for electrode FCz (F(2,22) = 21.97; p<0.001), Cz (F(2,22) = 21.74; p<0.001), CPz (F(2,22) = 26.36; p<0.001) and Pz (F(2,22) = 16.92; p<0.001). Subsequent t-tests showed that this main effect was driven by a significant more negative amplitude in response to the ‘Rare deviant stimuli’ compared to the ‘Frequent standard stimuli’ (see Figure 3) at electrode FCz (t(11) = −5.82; p=0.003), Cz (t(11) = −5.39; p=0.001), CPz (t(11) = −5.41; p<0.001), and Pz (t(11) = −3.62; p=0.006).
 
-## Second time window (250 – 850 ms): cluster analysis
+#### Second time window (250 – 850 ms): cluster analysis
 
 The overall ANOVA revealed an interaction between Condition and Cluster (F(10,110) = 3.23; p<0.001). Follow-up ANOVAs separately calculated for each cluster showed a significant main effect of factor Condition for cluster P (F(2,22) = 4.9; p=0.015) and cluster PO (F(2,22) = 4.74; p=0.017). Post-hoc t-tests indicated that ERPs in response to ‘Rare deviant stimuli’ were significantly more positive compared to ERPs to ‘Frequent standard stimuli’ (see Figure 3) at cluster P (t(11) = 3.46; p=0.008) and cluster PO (t(11) = 3.47; p=0.008)
 
-## Second time window (250 – 850 ms): midline analysis
+#### Second time window (250 – 850 ms): midline analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Electrode (F(12,132) = 3.82; p<0.001). Sub ANOVAs for each electrode showed a significant main effect for the factor Condition at electrode Fz (2,22)=10.59; p<0.001), FCz (F(2,22)= 8.86; p=0.001), Cz (F(2,22) = 4.13; p=0.027). Subsequent t-tests detected significant differences between the ‘Frequent standard stimuli’ and ‘Rare deviant stimuli’ at electrode Fz (t(11) = −5.71; p<0.001), FCz (t(11) = −4.49; p=0.001), and Cz (t(11) = −2.53; p=0.049); ERPs to ‘Rare deviant stimuli’ were more negative going than ERPs to ‘Frequent standard stimuli’ (see Figure 3).
 
-## Experiment 2b: ERP data
+### Experiment 2b: ERP data
 
 ERP differences were found between both, ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’ and between ‘Rare recombined stimuli’ and ‘Frequent standard stimuli’. Compared to ‘Frequent standard stimuli’ ‘Rare deviant stimuli ‘elicited a more negative early ERP (80–160 ms, see Figure 4) over the anterior scalp and a more positive ERP over the posterior scalp. During the late time window (250–850 ms, see Figure 4) ERPs to ‘Rare deviant stimuli ‘were more positive over the anterior scalp and more negative over the posterior scalp compared to the ‘Frequent standard stimuli’. ERPs to ‘Rare recombined stimuli’ compared to ERPs to ‘Frequent standard stimuli’ were more positive going over the anterior scalp and more negative going over the posterior scalp (250–850 ms, see Figure 4).
 
@@ -132,29 +164,80 @@ ERP differences were found between both, ‘Rare deviant stimuli’ and ‘Frequ
 
 **Figure 4.:** (A) ERPs to the three conditions (‘Frequent standard stimuli’, ‘Rare recombined stimuli’, ‘Rare deviant stimuli’) are superimposed for the electrode clusters F and FC, and the electrodes Fz and FCZ. The analyzed time epochs are marked in blue (80–160 ms) and red (250–850 ms). (B) The topographical distribution of the difference ‘Rare deviant stimuli’ minus ‘Frequent standard stimuli’ and ‘Rare recombined stimuli’ minus ‘Frequent standard stimuli’ for the first and second time window.
 
-## First time window (80 – 160 ms): cluster analysis
+#### First time window (80 – 160 ms): cluster analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Cluster (F(10,110) = 3.82; p=0.044). Further sub-ANOVAs separately calculated for each cluster showed a main effect of Condition for cluster C (F(2,22) = 5.83; p=0.003) and cluster PO (F(2,22) = 4.16; p=0.027), indicating a significant more negative amplitude in response to ‘Rare deviant stimuli’ than to ‘’Frequent standard stimuli’ (see Figure 4) at cluster C (t(11) = −4.44; p=0.001) and a more positive amplitude in response to ‘Rare deviant stimuli’ compared to ‘Frequent standard stimuli’ at cluster PO (t(11) = 3.19; p=0.014).
 
-## First time window (80 – 160 ms): midline analysis
+#### First time window (80 – 160 ms): midline analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Electrode (F(12,132) = 2.72; p=0.002). Follow-up ANOVAs for each electrode revealed a significant main effect of Condition for electrode FCz (F(2,22) = 4.28; p=0.024), Cz (F(2,22) = 6.01; p=0.007) and CPz (F(2,22) = 3.67; p=0.039). Subsequent t-tests indicated that ERPs to ‘Rare deviant stimuli’ were more negative than to ‘Frequent standard stimuli’ (see Figure 4) at electrode FCz (t(11) = −2.85; p=0.026), Cz (t(11) = −3.59; p=0.006), and CPz (t(11) = −2.59; p=0.044).
 
-## Second time window (250 – 850 ms): cluster analysis
+#### Second time window (250 – 850 ms): cluster analysis
 
 The overall ANOVA revealed a significant interaction of Condition × Cluster (F(10,110) = 4.12; p<0.001). Follow-up ANOVAs separately calculated for each Cluster showed a significant main effect of Condition for cluster F (F (2,22)=5.09; p=0.013), FC (F(2,22) = 4.4; p=0.022), CP (F(2,22) = 6.42; p=0.005), and PO (F(2,22) = 6.35; p=0.005). Subsequent t-tests indicated significant more positive going ERPs to ‘Rare deviant stimuli’ than to ‘Frequent standard stimuli’ (see Figure 4) at cluster F (t(11) = 2.77; p=0.03) and FC (t(11) = 3.88; p=0.004), CP (t(11) = 2.62; p=0.041) and more negative going ERPs PO (t(11) = −3.61; p=0.01). In addition, t-tests showed that ERPs to ‘Rare recombined stimuli’ were more positive going than to ‘Frequent standard stimuli’ (see Figure 4) at cluster F (t(11) = 3.11; p=0.016), CP (t(11) = 3.43; p=0.009), and more negative going at PO (t(11) = −3.41; p=0.016).
 
-## Second time window (250 –850 ms): midline analysis
+#### Second time window (250 –850 ms): midline analysis
 
 The overall ANOVA revealed a significant interaction between Condition and Electrode (F(12,132) = 7.62; p<0.001). Follow-up ANOVAs separately calculated for each electrode showed a main effect of Condition for electrode Fz (F(2,22) = 7.42; p=0.003), FCz (F(2,22) = 9.24; p<0.001), Cz (F(2,22) = 9.24; p<0.001), Pz (F(2,22) = 6.49; p=0.005), POz (F(2,22) = 7.92; p=0.002), and Oz (F(2,22) = 5.62; p=0.009). Subsequent t-tests indicated that ERPs to ‘Rare deviant stimuli’ were more positive going than to ‘Frequent standard stimuli’ (see Figure 4) at electrode Fz (t(11) = 2.86; p=0.013), FCz (t(11) = 3.71; p=0.002) and more negative at Pz (t(11) = −3.23; p=0.006), POz (t(11) = −2.93; p=0.01), and Oz (t(11) = −2.54; p=0.024). Additionally, t-tests confirmed more positive going ERPs to ‘Rare recombined stimuli’ than to ‘Frequent standard stimuli’ (see Figure 4) at electrode Fz (t(11) = 3.54; p=0.01) and FCz (t(11) = 4.29; p=0.002) and more negative going ERPs at electrodes Pz (t(11) = −3.49; p=0.003), POz (t(11) = −3.58; p=0.006), and Oz (t(11) = −3.29; p=0.01).
 
-## Summary and discussion of Experiment 2a and 2b
+### Summary and discussion of Experiment 2a and 2b
 
 Differences in ERPs between ‘Rare deviant stimuli’ and ‘Frequent standard stimuli’ were found in both experiments at early processing stages. Crucially, ERP differences between ‘Rare recombined stimuli’ and ‘Frequent standard stimuli’ were only found in Experiment 2b, indicating that the adults’ brains were able to differentiate ‘Rare recombined stimuli’ from ‘Frequent standard stimuli’ when crossmodal combinations were task relevant.
 
 ## Discussion
 
 The goal of the present study was to test for a higher sensitivity of infants as compared to adults to crossmodal statistics and to compare the mechanisms of crossmodal association learning in infants and adults. We conducted four ERP experiments in which infants and adults were exposed to audio-visual stimulus combinations with different probabilities. We presented ‘Frequent standard stimuli’ (A1V1, A2V2, p=0.35 each), rare recombinations of the ‘Frequent standard stimuli’ (A1V2, A2V1, p=0.10 each, ‘Rare recombined stimuli’), and a rare deviant audio-visual combination with an infrequent auditory and visual element (A3V3, p=0.10, ‘Rare deviant stimuli’). While infants passively learned the crossmodal combinations, adults did not. Adults’ ERPs to ‘Rare recombined stimuli’ and to ‘Frequent recombined stimuli’ differed only when crossmodal combinations were task relevant. In contrast, all groups, irrespectively of learning context, showed a sensitivity to the probability of sensory elements, that is, for ‘Rare deviant stimuli’. Table 2 graphically summarizes the main results of all four experiments.
+
+**Table 2.**
+ Summary of the main results and topographical distributions of the two effects of interest.(a) ‘Rare deviant stimuli’ minus ‘Frequent standard stimuli’ and (b) ‘Rare recombined stimuli’ minus ‘Frequent Standard stimuli’) in Experiment 1a, 1b, 2a and 2b. Electrodes and electrode clusters with significant differences between the experimental conditions are marked with black asterisks, comparisons with no significant differences are indicated by n.s..
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Early time window</th>
+      <th colspan="2">Late time window</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Rare deviant - Standard stimuli</th>
+      <th>Rare recombined - Standard stimuli</th>
+      <th>Rare deviant - Standard stimuli</th>
+      <th>Rare recombined- Standard stimuli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experiment 1a (Infants)</td>
+      <td>200 – 420 ms</td>
+      <td>n.s.</td>
+      <td>420 – 1000 ms</td>
+      <td>420 – 1000 ms</td>
+    </tr>
+    <tr>
+      <td>Experiment 1b (Adults)</td>
+      <td>180 – 220 ms</td>
+      <td>n.s.</td>
+      <td>250 – 1000 ms</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Experiment 2a (Adults)</td>
+      <td>80 – 160 ms</td>
+      <td>n.s.</td>
+      <td>250 – 850 ms</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Experiment 2b (Adults)</td>
+      <td>80 – 160 ms</td>
+      <td>n.s.</td>
+      <td>250 – 850 ms</td>
+      <td>250 – 850 ms</td>
+    </tr>
+  </tbody>
+</table>
 
 Studies using artificial languages or visual artificial scenes have repeatedly demonstrated that infants develop a sensitivity to the likelihood of events as well as to conditional probabilities (Krogh et al., 2012; Aslin, 2014), partially as early as at the age of two months (Kirkham et al., 2002). Two recent studies addressing crossmodal statistical learning found that six-month and twelve-month-old infants learned to predict a visual stimulus based on a preceding auditory stimulus (Emberson et al., 2015; Kouider et al., 2015). While Kouider et al. (2015) demonstrated that infants at the age of twelve months were able to learn an association between an arbitrary sound and a visual object category (faces vs. flowers), they did not include an adult control group and were thus not able to demonstrate differences in learning between adults and infants, nor were they able to distinguish processes related to the detection of crossmodal combinations and processes related to the familiarity with certain sensory elements.
 
@@ -174,13 +257,13 @@ In conclusion, our study demonstrates that six-month old infants were able to qu
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Participants: Experiment 1a
+#### Participants: Experiment 1a
 
 Sixty-two six-month-old infants (±10 days) took part. Infants were recruited from the local registration offices. All participating infants were born full-term (38–41 weeks), had a typical prenatal and perinatal history and no known neurological or developmental problems. Parents gave their written consent and were informed about their right to abort the experiment at any time. They received a small present for their children (toy or picture book) for taking part. Thirty-three participants were excluded from the analyses because of too many artifacts in the EEG recordings, leaving a total of twenty-nine data sets for the final statistical analyses (17 female, 12 male). Note that an exclusion rate of approximately 50% due to artifacts is not uncommon in infant research (DeBoer et al., 2007). The study (including Experiment 1a and 1b) was performed in accordance with the ethical standards laid down in the Declaration of Helsinki in 1964. The procedure was approved by the ethics board of the German Psychological Society (DGPs).
 
-## Stimuli and design: Experiment 1a
+#### Stimuli and design: Experiment 1a
 
 The experiment comprised three auditory and three visual stimuli, combined into crossmodal pairs of one visual and one auditory stimulus. The visual and auditory stimuli were always simultaneously presented. All three auditory stimuli had the equal loudness but differed in sound frequency (400, 1000 or 1600 Hz); they were presented for 500 ms each via two loudspeakers. The visual stimuli consisted of three geometric shapes (circle, triangle, and square; size: 10°) combined with three different colors (green, red, and blue) and were presented in the middle of a computer screen for 500 ms.
 
@@ -188,13 +271,44 @@ Participants were exposed to two frequently occurring audio-visual standard comb
 
 The inter stimulus interval between the different crossmodal stimuli amounted to 1500 ms. The visual and auditory stimuli used for each crossmodal condition was consistently for each participant but was counterbalanced over participants. The experiment was divided into five experimental blocks, each comprising 60 trials resulting in a total of 300 trials. For each block the proportion of the three conditions was 70: 20: 10% (see Table 3). Thus, even if the experiment was prematurely aborted, each infant received the correct ratio of stimuli.
 
-## Procedure: Experiment 1a
+**Table 3.**
+ Experimental design of Experiment 1a and Experiment 1b.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stimuli</th>
+      <th>Proportion</th>
+      <th>Condition (number of trials)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auditory 1 – Visual 1 (A1V1) Auditory 2 – Visual 2 (A2V2)</td>
+      <td>0.350.35}0.70</td>
+      <td>Frequent standard stimuli (210)</td>
+    </tr>
+    <tr>
+      <td>Auditory 1 – Visual 2 (A1V2) Auditory 2 – Visual 1 (A2V2)</td>
+      <td>0.100.10}0.20</td>
+      <td>Rare recombined stimuli (60)</td>
+    </tr>
+    <tr>
+      <td>Auditory 3 – Visual 3 (A3V3)</td>
+      <td>0.10 }0.10</td>
+      <td>Rare deviant stimuli (30)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Procedure: Experiment 1a
 
 Experiment 1a took place in a sound-attenuated and electrically shielded room. During the experiment, the infants sat on their parents’ laps. The computer screen, displaying the visual stimuli, was positioned on a table at a distance of approximately 60 cm from the participants. Infants’ heads were aligned with the center of the screen. The two loud speakers were positioned behind the computer screen.
 
 To make sure that the infants attentively observed the stimuli, a black and white video was continuously played in the background. This video consisted of 30 different sequences of centrally moving patterns, e.g. randomly moving stars or flying balloons focusing the viewing direction to the center of the computer screen. All sequences were ten seconds long and were presented without intermediate breaks. To control whether the infants were actually looking at the computer screen when the experimental visual stimuli were presented, a small camera, placed on top of the computer screen, recorded the infants’ heads. The camera was connected to the EEG recording computer to enable a continuous control of the child’s attention as well as the EEG signal during the course of the experiment. If the infant did not look at the screen during the presentation of the stimuli, a marker was manually inserted by the experimenter in the EEG data file and the associated EEG segments were later taken out of the analysis. To avoid interfering signals, parents were instructed not to talk to their children during the time the EEG was recorded. Whenever the infant showed signs of discomfort or restlessness, the experiment was paused. Occasionally, a hand puppet was used during such breaks to keep the infants alert and to make sure that they attended to the computer screen when the experiment was continued. The EEG recording only continued if both the child and the parent were content. The testing time for all infants ranged between five and ten minutes (M = 7.2 min, SD = 1.6). Together with the preparation time, the infants and their parents spent approximately forty-five minutes in the laboratory.
 
-## Electrophysiological recording and data analyses: Experiment 1a
+#### Electrophysiological recording and data analyses: Experiment 1a
 
 EEG data were collected from 45 scalp sites using active Ag/AgCl electrodes (Brain Products, Easycap GmBH, Herrsching) mounted in an elastic cap (Electro Cap International, Inc.). The electrodes were placed according to the international 10–10 system (see Figure 5). EEG Data were recorded continuously using a band-pass filter of 0.01–250 with a sampling rate of 500 Hz (Brain Products, Munich, Germany). The electrode FPz served as online reference electrode and the ground electrode was applied at AF3. Data were re-referenced offline to the average of the recordings of electrodes TP9 and TP10, which are located close to the mastoids. Artifacts were rejected manually after visual inspection of each individual EEG trial. Trials with artifacts such as head movements, eye blinks, eye movements or electrical noises were removed from further analyses. The first 15 trials of each dataset were excluded since the participants were not yet familiarized with the relative proportions of each stimulus condition. Noisy channels were interpolated by calculating the average of the four adjacent electrodes (Picton et al., 2000). On average, three electrodes were interpolated for each participant. EEG data sets of infants (n = 21) comprising less than 10 trials per condition were excluded from the final statistical analyses (see participants Experiment 1a). For the statistical analyses, the lateral electrodes were grouped into four clusters for each hemisphere; each cluster comprised four electrodes (see Figure 5): the left hemisphere: (1) Frontal (F): F9, F7, F3, FC1; (2) Fronto-central (FC): FT9, FT7, FC5, C3; (3) Central-parietal (CP): T7, C5, TP7, CP5; (4) Parietal-occipital (PO): P3, P7, PO9, O1 and the right hemisphere: (1) Frontal (F): F10, F8, F4, FC2; (2) Fronto-central (FC): FT10, FT8, FC6, C4; (3) Central-parietal (CP): T8, C6, TP8, CP6; (4) Parietal-occipital (PO): P4, P8, PO10, O2. The midline electrodes AFz, Fz, FCz, Cz, Pz, and POz were separately analyzed. EEG data were segmented into epochs from 100 ms pre-stimulus to 1100 ms post-stimulus onset. Epochs were baseline corrected by means of the 100 ms pre-stimulus interval.
 
@@ -206,45 +320,83 @@ Mean amplitudes were calculated separately for each condition and participant fo
 
 Significant interactions including the factor Condition were followed up with sub-ANOVAs, calculated separately for each cluster. Significant main effects of Condition or interactions of Condition and Hemisphere were further analyzed with paired t-tests: (1) ‘Frequent standard stimuli’ vs. ‘Rare deviant stimuli’ and (2) ‘Frequent standard stimuli’ vs. ‘Rare recombined stimuli’. The midline electrodes were separately analyzed with an ANOVA comprising the factors Condition (three levels: Standard vs. New Combination vs. New Stimuli) and Electrode (six levels: AFz vs. Fz vs. Cz. vs. Pz vs. POz). Similar to the cluster analysis, significant interactions between the factor Condition and Electrode were further analyzed by calculating sub ANOVAs and paired t-tests separately for each electrode. The Huynh-Feldt correction was applied to all analyses comprising within subject factors with more than two levels. To correct for multiple comparisons, p-values of the t-tests were adjusted with the Bonferroni-Holm method. Only main effects and interactions, including the factor Condition, as well as significant post hoc tests are reported.
 
-## Participants: Experiment 1b
+#### Participants: Experiment 1b
 
 Twenty-seven young adults recruited from a student-subject database of the Institute for Psychology (University of Hamburg) were tested. They received either 8 €/hour or course-credit. All participants had normal or corrected-to-normal vision, normal hearing and were free of neurological problems. All participants gave their informed consent. Four participants were excluded from the analysis due of too many artifacts in the EEG. A total of twenty-three participants were included in the final analyses (11 male, mean age 23.5 years, range 19–31)
 
-## Stimuli and design: Experiment 1b
+#### Stimuli and design: Experiment 1b
 
 The stimuli and experimental design of Experiment 1b were identical to Experiment 1a (see Table 3).
 
-## Procedure: Experiment 1b
+#### Procedure: Experiment 1b
 
 Experiment 1b took place in the adult EEG lab of the Biological Psychology and Neuropsychology section of the University of Hamburg. It was constructed by the same company as the Baby lab and had the same light sources, sound attenuating, and electrical shielding system. The experimental room was dimly lit and the participants were seated in a comfortable chair in front of a table. All devices used were the same as for Experiment 1a. The computer screen, displaying the visual stimuli and background video, was positioned at eye level on a table at a distance of approximately 60 cm from the participants (size of the visual stimuli: 7°). The two loud speakers were located behind the computer screen. Before the experiment started, participants received written instructions concerning the procedure of the experiment. In addition, they were asked to sit as still as possible, to limit their eye blinking during the recording of the experimental blocks and to continuously look at the fixation point. To control that the participants attended to the computer screen participants’ heads were recorded via a small camera, placed on top of the computer screen, during the experiment.
 
-## Electrophysiological recording and data analyses: Experiment 1b
+#### Electrophysiological recording and data analyses: Experiment 1b
 
 EEG recording and data analyses were identical to Experiment 2a and 2b. Note, that the similar results for the ERPs to ‘Rare deviant stimuli’ in infants and adults, including the lateralization, exclude the possibility that differences in analyzing procedures contributed to the below reported other group differences.
 
-## Experiment 2
+### Experiment 2
 
-## Participants
+#### Participants
 
 Seventeen healthy university students took part in the experiment. The participants were recruited from a student-subject database of the Institute of Psychology at the University of Hamburg. They received either 8 €/hour or course-credit. All participants had normal or corrected-to-normal vision, normal hearing and no neurological problems. Five participants were excluded from the analysis due to too many artifacts in the EEG or insufficient task performance (less than 70% correct target detection), leaving a total of twelve participants for the final analyses (four male, age 20–31 years, mean = 23.8 years). All participants gave their informed consent. The study was performed in accordance with the ethical standards laid down in the Declaration of Helsinki in 1964. The procedure was approved by the ethics board of the German Psychological Society (DGPs).
 
-## Stimuli and design
+#### Stimuli and design
 
 The design of Experiment 2 was similar to Experiment 1, but the stimuli and the experimental setting was adjusted. A visual LED was located inside a small wooden front (22 × 24 cm) which was covered with a black cloth. The wooden front was placed on top of a black box, to make sure that the position of the LED was at eye-level at a distance of approximately 85 cm from the participants. The LED was activated for 100 ms in four possible colors: red, blue, green or yellow. Auditory stimuli (400, 800, or 1600 Hz) were presented for 100 ms via two speakers which were positioned adjacent to the wooden front. Crossmodal stimuli were made by combining one of the sounds with one of the LED colors. Crossmodal combinations were counterbalanced over conditions and participants. In contrast to Experiment 1b, adults were engaged in a task and had to detect a target stimulus rather than being passively exposed to a sequence of crossmodal stimuli. The target stimulus was either unrelated to the crossmodal combinations (Experiment 2a) or addressed a specific crossmodal combinations (Experiment 2b), resulting in two different experiments.
 
 In Experiment 2a the ‘Frequent standard stimuli’ (A1V1, A2V2) were presented with a probability of p=0.30 each while the ‘Rare recombined stimuli’ (A1V2, A2V1) and ‘Rare deviant stimuli’ (A3V3) had a probability of p=0.10 each. An additional unimodal visual stimulus (p=0.10, V4) served as target stimulus (see Table 4A). We used an additional unimodal stimulus as target to guarantee that participants were attending the stimuli. A visual rather than an auditory or crossmodal stimulus was used as target stimulus to guarantee that participants did not close their eye and to render crossmodal stimuli totally task irrelevant in Experiment 2a.
 
+**Table 4.**
+ Experimental design of (A) Experiment 2a and (B) Experiment 2b.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>Stimuli</th>
+      <th>Proportion</th>
+      <th>Condition (number of trials)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"></td>
+      <td>Auditory 1 – Visual 1 (A1V1) Auditory 2 – Visual 2 (A2V2)</td>
+      <td>0.300.30}0.60</td>
+      <td>Frequent standard stimuli (720)</td>
+    </tr>
+    <tr>
+      <td>Auditory 1 – Visual 2 (A1V2) Auditory 2 – Visual 1 (A2V2</td>
+      <td>0.100.10}0.20</td>
+      <td>Rare recombined stimuli (240)</td>
+    </tr>
+    <tr>
+      <td>Auditory 3 – Visual 3 (A3V3)</td>
+      <td>0.10 }0.10</td>
+      <td>Rare deviant stimuli (120)</td>
+    </tr>
+    <tr>
+      <td>Visual 4</td>
+      <td>0.10 }0.10</td>
+      <td>Unimodal target stimuli (120)</td>
+    </tr>
+  </tbody>
+</table>
+
 In Experiment 2b no unimodal V4 was included, but one of the ‘Rare recombined stimuli’ (either A1V2 or A2V1) was defined as the target stimulus rendering crossmodal combinations task relevant. A1V1 and A2V2 were presented with a probability of p=0.35 each while the probability for A1V2, A2V1, and A3V3 was p=0.10 each (see Table 4B). All participants took part in both experiments. The order of the two experiments as well as the specific audio-visual combinations used for the different conditions were counterbalanced over participants. However, the assignment of auditory-visual combinations to conditions was kept the same for each participant in Experiment 2a and 2b. Stimuli were presented in six blocks with 200 trials per block.
 
-## Procedure
+#### Procedure
 
 The experiment took place in a dimly lit, sound-attenuating, and electrical shielded room. The participants were seated in a comfortable chair at a table approximately 85 cm from the box that contained the visual LED. The target stimulus was presented three times prior to the start of the experiment, to allow participants to get acquainted with the target. Responses to the target stimuli were made by means of a custom made button box, placed near the dominant hand. Participants were instructed to sit as still as possible and to keep their eyes focused on the LED. Experiment 2a and 2b lasted for twenty to thirty minutes each (including breaks). The total testing time, which included briefing of the participant, practice trails and EEG application, was approximately 1 hr and 45 min for both experiments.
 
-## Behavioral analysis
+#### Behavioral analysis
 
 All button presses within 100 and 1000 ms following stimulus presentation were considered as valid responses. Hit, miss and false alarm rates were calculated and average reaction times to targets were derived for both Experiment 2a and 2b.
 
-## Electrophysiological recording and data analysis
+#### Electrophysiological recording and data analysis
 
 EEG data were collected from 74 scalp sites using active Ag/AgCl electrodes (Brain Products, Easycap GmBH, Herrsching) mounted on an elastic cap (Electro Cap International, Inc.). Data were recorded continuously using a band-pass filter of 0.01–250 with a sampling rate of 500 Hz (Brain Products, Munich, Germany). The electrodes were placed according to the international 10–10 system (see Figure 6). One additional electrode was positioned below the left eye to record vertical eye movements. A left earlobe electrode served as online reference electrode. EEG data were filtered offline with a low-pass filter with a 40 Hz cut-off and were re-referenced offline to an average reference. Electrodes positioned close to the outer canthi of each eye (F9 and F10) served for recording horizontal eye movements. An independent component analysis (ICA) was run for each EEG data set, which defined 30 time-independent components representing the data (Makeig, Debener, Onton & Delorme, 2004). Components representing artifacts such as eye blinks, eye movements, electrical noise or heart beat were manually detected and rejected from further analyses. The first 75 trials (Experiment 2a and 2b) or the first 15 trials (Experiment 1b) of each dataset were excluded since the participants were not yet familiarized with the relative proportions of each stimulus condition. The lateral electrodes were grouped into six clusters for each hemisphere; each cluster comprised five electrodes (see Figure 6): (1) Frontal (F): F1, F3, F5, F7, F9 (2) Fronto-central (FC): FC1, FC3, FC5, FT7, FT9 (3) Central (C): C1, C3, C5, T7 (4) Centro-parietal (CP): CP1, CP3, CP5, TP7, TP9 (5) Parietal (P): P1, P3, P5, P7, P9 (6) Parieto-occipital (PO): PO3, PO7, PO9, O1, O9) and for the right hemisphere: (1) Frontal (F): F2, F4, F6, F8, F10 (2) Fronto-central (FC): FC2, FC4, FC6, FT8, FT10 (3) Central(C): C2, C4, C6, T8 (4) Centro-parietal (CP): CP2, CP4, CP6, TP8, TP10 (5) Parietal (P): P2, P4, P6, P8, P10 (6) Parieto-occipital (PO): PO4, PO8, PO10, O2, O10). The midline electrodes Fz, FCz, Cz, CPz, Pz, POz, and Oz were separately analyzed. EEG data were segmented into epochs starting 100 ms before the stimulus onset and lasting for 1000 ms post stimulus onset. Epochs were baseline corrected with a pre-stimulus interval of 100 ms. Mean amplitudes were calculated separately for each condition and participant for the following time epochs based on visual inspection of the group mean average: (1) 80–160 ms and (2) 250–850 ms. The statistical analyses were the same as described for Experiment 1a.
 

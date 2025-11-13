@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.42819.001 Autism Spectrum Disorder (ASD) is the most prevalent neurodevelopmental disorder in the United States and often co-presents with sleep problems. Sleep problems in ASD predict the severity of ASD core diagnostic symptoms and have a considerable impact on the quality of life of caregivers. Little is known, however, about the underlying molecular mechanisms of sleep problems in ASD. We investigated the role of Shank3 , a high confidence ASD gene candidate, in sleep architecture and regulation. We show that mice lacking exon 21 of Shank3 have problems falling asleep even when sleepy. Using RNA-seq we show that sleep deprivation increases the differences in prefrontal cortex gene expression between mutants and wild types, downregulating circadian transcription factors Per3 , Bhlhe41 , Hlf , Tef , and Nr1d1 . Shank3 mutants also have trouble regulating wheel-running activity in constant darkness. Overall, our study shows that Shank3 is an important modulator of sleep and clock gene expression.
+Autism Spectrum Disorder (ASD) is the most prevalent neurodevelopmental disorder in the United States and often co-presents with sleep problems. Sleep problems in ASD predict the severity of ASD core diagnostic symptoms and have a considerable impact on the quality of life of caregivers. Little is known, however, about the underlying molecular mechanisms of sleep problems in ASD. We investigated the role of Shank3, a high confidence ASD gene candidate, in sleep architecture and regulation. We show that mice lacking exon 21 of Shank3 have problems falling asleep even when sleepy. Using RNA-seq we show that sleep deprivation increases the differences in prefrontal cortex gene expression between mutants and wild types, downregulating circadian transcription factors Per3, Bhlhe41, Hlf, Tef, and Nr1d1. Shank3 mutants also have trouble regulating wheel-running activity in constant darkness. Overall, our study shows that Shank3 is an important modulator of sleep and clock gene expression.
 
 ## Introduction
 
@@ -37,37 +37,277 @@ In this study, we examined sleep in Phelan-McDermid syndrome (PMS) patients with
 
 ## Results
 
-## Phelan-McDermid syndrome patients have problems falling and staying asleep
+### Phelan-McDermid syndrome patients have problems falling and staying asleep
 
 Recent studies suggest that sleep problems may be present in a substantial number of PMS patients and may be an important factor for caregivers' well-being (Bro et al., 2017). We obtained genetic and sleep questionnaire data from the Phelan-McDermid Syndrome International Registry (PMSIR) to estimate the frequency and age of onset of sleep problems in PMS individuals carrying a SHANK3 deletion. In parallel, we surveyed the clinical literature to estimate the prevalence of sleep problems in ASD (Andersen et al., 2008; Cotton and Richdale, 2006; Gail Williams et al., 2004; Giannotti et al., 2008; Giannotti et al., 2006; Krakowiak et al., 2008; Liu et al., 2006; Miano et al., 2007; Paavonen et al., 2008; Polimeni et al., 2005; Richdale and Prior, 1995; Tani et al., 2003; Thirumalai et al., 2002; Wiggs and Stores, 2004) and typically developing populations (Anders and Eiben, 1997; Baweja et al., 2013; Bixler et al., 2009; Hysing et al., 2013; Leger et al., 2012; Loessl et al., 2008; Lozoff et al., 1985; Lumeng and Chervin, 2008; Ohayon et al., 2000; Pallesen et al., 2008; Patzold et al., 1998; Sadeh et al., 2000). Figure 1 shows that PMS patients have trouble falling asleep and experience multiple night awakenings starting at about 5 years of age. Those difficulties translate to reduced time asleep particularly during adolescence. Although total sleep time seems to improve in adulthood for PMS patients, that improvement is accompanied by an increase in parasomnias. Problems falling and staying asleep persist regardless of age. The frequency of problems falling and staying asleep in PMS patients is similar to what is observed in the general ASD population and much higher than in typically developing individuals (Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig1-v2.jpg)
 
-**Figure 1.:** Dashed line indicates median incidence observed in TD (white marker) and ASD (black marker) populations (values from Figure 1—source data 1).  10.7554/eLife.42819.004Figure 1—source data 1.Survey of the literature, regardless of age. Median, first and third quartile values, age range, and included references reported for each phenotype.
+**Figure 1.:** Dashed line indicates median incidence observed in TD (white marker) and ASD (black marker) populations (values from Figure 1—source data 1).
 
-## Shank3ΔC mice sleep less during the dark phase and show reduced sleep intensity
+### Shank3ΔC mice sleep less during the dark phase and show reduced sleep intensity
 
 To determine if Shank3ΔC mice have deficits in spontaneous sleep, undisturbed baseline EEG and electromyographic (EMG) recordings were obtained from wild type (WT) and Shank3ΔC mice. There was a significant period x genotype interaction for total sleep time (i.e. total time spent in NREM and rapid eye movement (REM) sleep) during the light (hours 1–12) and dark (hours 13–24) periods (F(1,28) = 5.198, p=0.036). Posthoc pairwise comparisons using Sidak correction showed that Shank3ΔC mice slept less than WT mice during the dark period (p=0.045; Table 1). To determine in which arousal states and hours this effect was most pronounced, we examined hourly time in state data for wakefulness, NREM sleep, and REM sleep. Repeated measures ANOVA over the full 24 hr recording period found significant time x genotype interactions for wakefulness (F(23,345) = 2.419, p<0.0001), NREM sleep (F(23,345) = 2.357, p=0.001), and REM sleep (F(23,345) = 2.175, p=0.002) (Figure 2A). Posthoc comparisons found the most pronounced differences at hour 19 when Shank3ΔC mice spent more time in wakefulness (p<0.0001) and less time NREM (p<0.0001) and REM (p=0.040) sleep (Figure 2A) marking the beginning of an overall trend for increased wakefulness during the last half of the dark period. Analysis of the sleep architecture found time x genotype interactions for bout number during REM sleep (F(3,51) = 2.832, p=0.047) and bout duration during NREM (F(1.749,29.734) = 4.077, p=0.032) and REM (F(1.897,32.243) = 6.536, p=0.005) sleep. Posthoc comparisons showed these effects were driven by differences in the last half of the dark period (hours 19–24) when Shank3ΔC mice had fewer REM bouts (p=0.003; Figure 2—figure supplement 1A) and shorter NREM (p=0.005) and REM (p=0.013) bouts (Figure 2—figure supplement 1B) than WT mice. Overall, these data show that Shank3ΔC mice spend more time awake at the end of the dark phase compared to WT mice under baseline conditions.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig2-v2.jpg)
+
+**Figure 2.:** The rows represent the vigilance states of wakefulness (top), NREM sleep (middle), and REM sleep (bottom). (A) Time spent in wakefulness and sleep shown as percentage of recording time per hour. Values are means ± SEM. Repeated measures ANOVA with posthoc pairwise comparisons using Sidak correction; *p<0.05, difference from wild type. (B) EEG spectral power normalized as a percentage of the total state-specific EEG power for the light period (left) and dark period (right) fit to smooth curves (solid lines) and expressed with 95% confidence intervals (gray and red shading). Non-overlap of the 95% confidence interval denotes statistically significant differences. The open bars on the x-axis denote the light period and the filled bars denote the dark period of the light:dark cycle. Wild type (n = 10) and Shank3∆C (n = 10) mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average number of state-specific bouts per hour shown in 6 hr blocks. (B) Average bout duration (min) per hour shown in 6 hr blocks. Repeated measures ANOVA with posthoc pairwise comparisons using Sidak correction. Values are means ± SEM for wild type (n = 10) and Shank3∆C (n = 10) mice. *p<0.05, difference from wild type.
+
+**Table 1.**
+ Shank3ΔC mice sleep less than wild type mice during the dark period.Repeated measures ANOVA with posthoc pairwise comparisons using Sidak correction. Values are means ± SEM for wild type (n = 10) and Shank3ΔC (n = 10). *p<0.05, difference from wild type.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Total Sleep Time (%)</th>
+      <th>Wild Type</th>
+      <th>Shank3ΔC</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Light Period</td>
+      <td>62.90 ± 1.57</td>
+      <td>62.96 ± 1.65</td>
+      <td>0.980</td>
+    </tr>
+    <tr>
+      <td>Dark Period</td>
+      <td>28.72 ± 2.41</td>
+      <td>21.16 ± 2.54</td>
+      <td>0.045*</td>
+    </tr>
+  </tbody>
+</table>
+
 Fourier analysis of the EEG indicates that Shank3ΔC mice also sleep differently than WT mice (Figure 2B). Significant genotypic differences in spectral frequencies occur at points of non-overlaping 95% confidence intervals. During NREM sleep, power in the delta frequencies (0.5–4 Hz) was blunted and alpha frequencies (10–15 Hz) were enhanced for Shank3ΔC mice relative to WT during the light and dark periods (Figure 2B). NREM delta power is a measure of synchrony of the neural network and can be a measure of sleep intensity or depth (Achermann and Borbely, 2017). These data indicate that Shank3ΔC mice exhibit disrupted neural connectivity during NREM sleep which may suggest that Shank3ΔC mice sleep less deeply under baseline conditions.
 
-## Shank3ΔC mice have abnormal homeostatic responses to sleep deprivation
+### Shank3ΔC mice have abnormal homeostatic responses to sleep deprivation
 
 To investigate sleep homeostasis in Shank3ΔC mice we sleep deprived mutant and WT mice for 5 hr via gentle handling starting at light onset (hour 1). Sleep deprivation (SD) was effective resulting in WT and Shank3ΔC mice spending 97.37 ± 0.76% and 95.08 ± 1.08% time in wakefulness, respectively, during the 5 hr SD period (t(18) = 1.732, p=0.100). Both WT and Shank3ΔC mice showed homeostatic responses to SD (Figure 3—figure supplement 1) with reduced wakefulness and increased time spent in NREM and REM sleep during the recovery phase (Figure 3—source data 2). Sleep was also more consolidated after SD for both WT and Shank3ΔC mice during the light period, and changes in sleep architecture did not statistically differ between WT and Shank3ΔC mice (Figure 3—figure supplement 2). However, there were time x genotype interactions for wakefulness (F(18,288) = 2.025, p=0.009), NREM sleep (F(18,288) = 1.928, p=0.014), and REM sleep (F(18,288) = 1.716, p=0.036) over the SD recovery phase (hours 6–24). This effect was most pronounced near the end of the dark period where Shank3ΔC mice spent more time in wakefulness and less time in NREM and REM sleep compared to WT (Figure 3—figure supplement 1C) which is consistent with the trend seen in the baseline data (Figure 2A). Changes in NREM EEG delta power were similar between WT and Shank3ΔC mice, indicating that mutant mice accumulate sleep pressure similarly to WT mice (Figure 3A). However, Shank3ΔC mice showed a transient enhancement of NREM EEG spectral power (F(1,18) = 12.07, p=0.003) compared to WT mice in the first 2 hr post-SD (hours 6–7). This enhancement was found in the higher frequencies (3.9–19.5 Hz; Figure 3B) and resolved to baseline and WT values during hours 11–12 (F(1,18) = 0.59, p=0.454; Figure 3C). These data suggest that some aspects of the Shank3ΔC homeostatic response to sleep deprivation are abnormal.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig3-v2.jpg)
+
+**Figure 3.:** (A) Normalized NREM delta (δ; 0.5–4 Hz) power during recovery sleep post-sleep deprivation. The cross-hatched bar on the x-axis denotes the 5 hr sleep deprivation period and the open bar denotes the remaining light period. Repeated measures ANOVA. (B) Normalized NREM spectra for the first 2 hr post-sleep deprivation (hours 6–7; significant from 3.9 to 19.5 Hz). One-way ANOVA with posthoc unpaired t-tests using Benjamini-Hochberg correction. (C) Normalized NREM spectra for the last 2 hr of the light period post-sleep deprivation (hours 11–12). One-way ANOVA. (D) Latency to enter NREM sleep and REM sleep after sleep deprivation. Unpaired t-test. (E) Time in NREM sleep and REM sleep for the first 2 hr post-sleep deprivation (hours 6–7). Unpaired t-test. (F) Time in NREM sleep and REM sleep for the remaining 5 hr of light period post-sleep deprivation (hours 8–12). Unpaired t-test. Values are means ± SEM for wild type (n = 10; black) and Shank3∆C (n = 10; red) mice. *p<0.05, difference from wild type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The rows represent the vigilance states of wakefulness (top), NREM sleep (middle), and REM sleep (bottom). (A – B) Time in state shown as percentage of recording time per hour comparing baseline and sleep deprived conditions for wild type mice (A) and Shank3∆C mice (B). Repeated measures ANOVA with posthoc pairwise comparisons using Sidak correction; *p<0.05, difference from baseline. (C) Time in state shown as percentage of recording time per hour after sleep deprivation. Repeated measures ANOVA with posthoc pairwise comparisons using Sidak correction; *p<0.05, difference from wild type. The cross-hatching for hours 1–5 denotes the 5 hr sleep deprivation period, the open bars on the x-axis denote the light period, and the filled bars on the x-axis denote the dark period of the light:dark cycle. Values are means ± SEM for wild type (n = 10) and Shank3∆C (n = 10) mice.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Average number of state-specific bouts per hour (difference scores) shown in 7 hr (remaining light period) and 6 hr blocks. (B) Average bout duration (min) per hour (difference scores) shown in 7 hr (remaining light period) and 6 hr blocks. Difference scores were calculated by subtracting baseline (BL) values from sleep deprivation (SD) values. Repeated measures ANOVA. Values are means ± SEM for wild type (n = 10) and Shank3∆C (n = 10) mice. Significance as p<0.05.
+
 Remarkably, Shank3ΔC mice took longer to enter NREM sleep post-SD compared to WT (t(10.44) = −2.31, p=0.043; Figure 3D). As a consequence, Shank3ΔC mice spent less time in NREM sleep compared to WT during the first 2 hr of the recovery phase (t(13.26) = 2.85, p=0.014; Figure 3E). During the subsequent 5 hr of the light period (hours 8–12), Shank3ΔC mice spent more time in NREM sleep compared to WT (t(18) = −2.46; p=0.024; Figure 3F). Overall, our data show that Shank3ΔC mice have difficulties falling asleep despite heightened sleep pressure.
 
-## Shank3ΔC mice show downregulation of circadian transcription factors in response to sleep deprivation
+### Shank3ΔC mice show downregulation of circadian transcription factors in response to sleep deprivation
 
 We conducted a genome-wide gene expression study to investigate the molecular basis for the Shank3ΔC mouse sleep phenotype. Shank3ΔC and WT adult male mice were subjected to 5 hr of SD starting at light onset and sacrificed immediately post-SD. Additional mice from both genotypes were sacrificed at the same time of day to determine differences in gene expression under homecage conditions (HC). Prefrontal cortex was collected for all animals and subjected to RNA sequencing (RNA-seq, n = 5 per group). As expected, sleep deprivation is the greatest source of variation in the data (principal component 1), followed by the genotype effect (principal component 2; Figure 4A). Furthermore, the difference between genotypes is enhanced after sleep deprivation (Figure 4A) greatly increasing the number of differentially expressed genes between Shank3ΔC and WT mice – starting at 69 genes (HC) and doubling to 134 genes (SD) (Figure 4B, Figure 4—source data 1; false discovery rate (FDR) < 0.1). Most of the differences in gene expression following SD are not present in HC conditions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig4-v2.jpg)
+
+**Figure 4.:** RNA-seq study of gene expression from prefrontal cortex obtained from adult male Shank3ΔC and wild type mice either under control homecage conditions (HC) or following 5 hr of sleep deprivation (SD). N = 5 mice per group. (A) Principal component analysis of normalized RNA-seq data shows that sleep deprivation is the main source of variance in the data (first principal component, PC1) and genotype is the second (second principal component, PC2). Percent variance explained by each PC is shown on each axis. (B) Venn diagram showing the number of genes differentially expressed at FDR < 0.1 between Shank3ΔC and wild type mice in either control HC conditions or after SD. (C) Heat map of average scaled gene expression for all genes in (B). K-means clustering defined three clusters based on differences in gene expression across all comparisons. Genes belonging to the MAPK pathway and involved in circadian rhythms (see Table 2) are highlighted on the right.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Volcano plot of differential expression (−log10 P-value versus log2 fold change) caused by sleep deprivation in wild type animals (HC5 vs SD5). Genes with an FDR < 0.05 are highlighted in black. Positive controls (obtained from Gerstner et al., 2016) as described in the Materials and methods) are highlighted in red. Our RNA-seq analysis is able to detect 78% (454) of the 579 positive control genes obtained by microarrays as differentially expressed at FDR < 0.05.
 
 Clustering of gene expression patterns for all genes differentially expressed between Shank3ΔC and WT mice reveals 3 groups of genes (Figure 4C). Cluster 1 contains genes that are downregulated in mutants versus WT mice under HC conditions. Genes in this cluster are also downregulated in response to SD in Shank3ΔC mice but are generally unaffected by SD in WT mice. SD seems to exacerbate the difference between genotypes, which explains why differential expression of some of the genes in cluster 1 only reach statistical significance after SD. This cluster contains the majority of the genes that are differentially expressed between genotypes. Cluster 2 contains genes that are upregulated in mutants versus WT mice under HC conditions that are also downregulated by SD in WT mice. Cluster 3 contains genes that are normally upregulated by SD. For both clusters 2 and 3, the Shank3ΔC mutation seems to dampen the response to SD.
 
 To better understand the impact of the gene expression at the pathway level, we carried out functional annotation of the transcripts differentially expressed between Shank3ΔC and WT mice (Table 2, Table 2—source data 1). Our results reveal that 1) MAPK/GnRH signaling and circadian rhythm-associated transcripts are downregulated in Shank3ΔC mice and 2) sleep deprivation exacerbates that difference. Circadian transcription factors are particularly affected. For example, while expression of Per3, Hlf, and Tef already differs under homecage conditions, SD leads to additional genotype-specific differences in expression of Nr1d1 and Bhlhe41. All of the above mentioned circadian transcription factors belong to cluster 1 on our heat map (Figure 4C) showing downregulation in response to SD only in Shank3ΔC mice.
 
-## Wheel-running activity in Shank3ΔC mice is impaired in constant darkness
+**Table 2.**
+ Results of functional bioinformatics analysis of the genes differentially expressed between Shank3ΔCmice relative to wild type mice.Functional annotation and clustering analysis was performed using DAVID (https://david.ncifcrf.gov) and functional information was obtained from the following databases: GO (Biological process and Molecular function), KEGG pathways, and Uniprot keywords. Enrichment was performed relative to all transcripts expressed in the mouse prefrontal cortex as defined by our RNA-seq data. Enriched functional terms were clustered at low stringency, to obtain clusters with enrichment score >1.2 (corresponding to an average p-value>0.05). See Table 2—source data 1 for details. Table 2—source data 1.Functional annotation clustering analysis of genes in Figure 4—source data 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Shank3ΔC vs. Wild Type</th>
+    </tr>
+    <tr>
+      <th>Homecage</th>
+      <th>Sleep Deprivation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Up-regulated</td>
+      <td>Up-regulated</td>
+    </tr>
+    <tr>
+      <td>Cholesterol Metabolism: Hmgcr, Insig1</td>
+      <td>Potassium Ion Transport: Kcnv1, Kcnk1, Kcnk2</td>
+    </tr>
+    <tr>
+      <td>Transcription: Jun, Fosl2, Nfil3, Stat4</td>
+      <td>Dephosphorylation: Dusp10, Dusp3, Ptprj</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neuron Projection Development: Cntn1, Ntrk2, Reln, Sema3a</td>
+    </tr>
+    <tr>
+      <td>Down-regulated</td>
+      <td>Down-regulated</td>
+    </tr>
+    <tr>
+      <td>MAPK Signaling: Mapk3 (ERK1), Elk1</td>
+      <td>GnRH Signaling: Mapk1 (ERK2), Elk1, Mapk11 (p38)</td>
+    </tr>
+    <tr>
+      <td>Circadian Rhythms: Per3, Tef, Hlf</td>
+      <td>Circadian Rhythms: Per3, Nr1d1 (REV-ERBα), Tef, Hlf, Prkab2 (AMPK), Bhlhe41 (DEC2)</td>
+    </tr>
+    <tr>
+      <td>Transcription: Tef, Hlf</td>
+      <td>Sodium Ion Transport: Slc6a15, Slc22a4, Slc24a4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Wheel-running activity in Shank3ΔC mice is impaired in constant darkness
 
 The results of our RNA-seq analysis revealed a general downregulation of circadian transcription factors in the mutants. These findings suggested that Shank3ΔC mice might also have abnormal circadian rhythms. To test this possibility, we measured wheel-running activity in Shank3ΔC and WT mice. Wheel-running data were collected for 2 weeks under LD (LD weeks 2–3), then mice were released into constant darkness (DD) for 3 weeks (DD weeks 1–3; Figure 5 and Figure 5—figure supplement 1). Alpha, the length of the active phase, was calculated as the time between activity onset and offset. Period length was the time elapsed from the start of an active phase to the start of the subsequent active phase. There was no differences between Shank3ΔC and WT mice for alpha or period length during the DD period (Table 3), but Shank3ΔC mice ran fewer revolutions than WT mice from LD week 3 – DD week 3 (F(1,338) = 30.96; p<0.0001; Table 3, Table 3—source data 1). Some Shank3ΔC mice greatly reduced their running at certain periods of the DD period, which is reflected in the variance for period, alpha, and activity measures (Figure 5, Figure 5—figure supplement 1, and Table 3). Over 5 weeks of continuous LD conditions, however, wheel-running activity for Shank3ΔC mice instead increased (F(1,542) = 85.99, p<0.0001; Supplementary file 1, Source data 1). Overall, these data indicate that constant darkness impairs wheel-running activity of Shank3ΔC mice.
+
+**Table 3.**
+ Shank3∆C mice show reduced wheel-running activity during constant darkness.Summary of wheel-running behavior measured for each week of 12:12 hr light dark cycle (LD, 559 ± 4 : 0 ± 0 lux) or constant darkness (DD, 0 ± 0 lux) for both wild type and Shank3∆C mice. A linear mixed-effects model was used to estimate the contributions of genotype and the interaction between genotype and time for period, alpha, and wheel running activity for LD week three through DD week 3. There is a significant interaction effect for genotype x time for activity (p < 0.0001; indicated by *) but no significant effect for genotype x time for period (p = 0.15) or genotype x time for alpha (p = 0.88). See Table 3—source data 1 for details. Values are means ± SEM for wild type (n = 8) and Shank3∆C (n = 7) mice. Significance at p < 0.05. Table 3—source data 1.Results of genotype x time interaction analysis for LD week three through DD week 3.Linear mixed-effects ANOVA for LD week three through DD week 3. The model was fitted using genotype, time, and their interaction as fixed effects and the individual mice labeled as random effect. There is a significant effect of genotype x time for activity (p<0.0001) and no significant effect for genotype x time or genotype for period and alpha. Significance at p<0.05. numDF, numerator degrees of freedom. denDF, denominator degrees of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Wild Type</th>
+      <th></th>
+      <th>Shank3∆C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Period (h)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LD Week 2</td>
+      <td>24.0 ± 0.0</td>
+      <td></td>
+      <td>24.0 ± 0.0</td>
+    </tr>
+    <tr>
+      <td>LD Week 3</td>
+      <td>24.0 ± 0.0</td>
+      <td></td>
+      <td>23.9 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>DD Week 1</td>
+      <td>23.9 ± 0.1</td>
+      <td></td>
+      <td>23.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>DD Week 2</td>
+      <td>23.7 ± 0.1</td>
+      <td></td>
+      <td>20.3 ± 3.4</td>
+    </tr>
+    <tr>
+      <td>DD Week 3</td>
+      <td>23.5 ± 0.2</td>
+      <td></td>
+      <td>25.8 ± 1.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Alpha (h)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LD Week 2</td>
+      <td>10.0 ± 0.4</td>
+      <td></td>
+      <td>10.7 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>LD Week 3</td>
+      <td>10.3 ± 0.4</td>
+      <td></td>
+      <td>10.7 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>DD Week 1</td>
+      <td>10.5 ± 0.2</td>
+      <td></td>
+      <td>9.0 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>DD Week 2</td>
+      <td>10.4 ± 0.4</td>
+      <td></td>
+      <td>8.2 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>DD Week 3</td>
+      <td>9.0 ± 1.0</td>
+      <td></td>
+      <td>9.9 ± 1.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Activity (rev/day)*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LD Week 2</td>
+      <td>33985.2 ± 565.9</td>
+      <td></td>
+      <td>23258.2 ± 861.2</td>
+    </tr>
+    <tr>
+      <td>LD Week 3</td>
+      <td>40306.7 ± 1257.1</td>
+      <td></td>
+      <td>25365.1 ± 964.0</td>
+    </tr>
+    <tr>
+      <td>DD Week 1</td>
+      <td>37942.6 ± 795.4</td>
+      <td></td>
+      <td>23027.7 ± 669.6</td>
+    </tr>
+    <tr>
+      <td>DD Week 2</td>
+      <td>38250.7 ± 431.1</td>
+      <td></td>
+      <td>16820.7 ± 1302.5</td>
+    </tr>
+    <tr>
+      <td>DD Week 3</td>
+      <td>38586.3 ± 231.1</td>
+      <td></td>
+      <td>6961.5 ± 383.9</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig5-v2.jpg)
+
+**Figure 5.:** Representative actograms and periodograms for two wild type and two Shank3∆C mice. Mice were entrained to a 12:12 hr light:dark cycle (LD, 559 ± 4 : 0 ± 0 lux) for two weeks prior to 3 weeks constant darkness (DD, 0 ± 0 lux). Gray shading is representative of the dark period. (A) Actograms for two wild type mice. (B) Corresponding periodograms for wild type mice. (C) Actograms for two Shank3∆C mice. (D) Corresponding periodograms for Shank3∆C mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42819/elife-42819-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mice were entrained to a 12:12 hr light:dark cycle (LD, 559 ± 4 : 0 ± 0 lux) for two weeks prior to 3 weeks constant darkness (DD, 0 ± 0 lux). Gray shading is representative of the dark period. (A) Actograms for wild type mice (n = 8). (B) Actograms for Shank3∆C mice (n = 7).
 
 ## Discussion
 
@@ -79,25 +319,197 @@ An interesting question is how can deletion of exon 21 of Shank3 lead to dysregu
 
 ## Materials and methods
 
-## Sleep questionnaire study
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Shank3; SH3 and multiple ankyrin repeat domains 3</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 58234</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Per3; period circadian clock 3</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 18628</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Hlf; hepatic leukemia factor</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 217082</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Tef; thyrotroph embryonic factor</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 21685</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Nr1d1; nuclear receptor subfamily 1, group D, member 1;</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 217166</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Bhlhe41; basic helix-loop-helix family, member e41;</td>
+      <td>NA</td>
+      <td>ENTREZ_ID: 79362</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Shank3ΔC; Shank3tm1.1Pfw/J</td>
+      <td>Kouser et al., 2013; The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:018398</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Sensitivity RNA Analysis Kit</td>
+      <td>Advanced Analytical Technologies</td>
+      <td>DNF-472</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Sensitivity NGS Fragment Analysis Kit</td>
+      <td>Advanced Analytical Technologies</td>
+      <td>DNF-474</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>Kapabiosystems</td>
+      <td>KK4824</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2101</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HiSeq Control Software version (v. 2.2.68)</td>
+      <td>Illumina</td>
+      <td>15073358 Rev A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2fastq (v. 2.17.1.14)</td>
+      <td>R/Bioconductor</td>
+      <td>SCR_015058</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rsubread (v. 1.26.1)</td>
+      <td>R/Bioconductor</td>
+      <td>SCR_016945</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NOISeq (v.2.22.1)</td>
+      <td>R/Bioconductor</td>
+      <td>SCR_003002</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RUVSeq (v. 1.12.0)</td>
+      <td>R/Bioconductor</td>
+      <td>SCR_006263</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR (v. 3.20.9)</td>
+      <td>R/Bioconductor</td>
+      <td>SCR_012802</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package nlme (v. 3.5.0)</td>
+      <td>CRAN</td>
+      <td>SCR_015655</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package mgcf (v. 3.5.0)</td>
+      <td>CRAN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package pheatmap (v. 1.0.10)</td>
+      <td>CRAN</td>
+      <td>SCR_016418</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Database for annotation, visualization, and integrated discovery (v 6.7)</td>
+      <td>DAVID; https://david.ncifcrf.gov</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VitalRecorder</td>
+      <td>Kissei Comtec</td>
+      <td>3, 0, 0, 0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SleepSign for Animal</td>
+      <td>Kissei Comtec</td>
+      <td>3, 0, 0, 812</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wheel manager</td>
+      <td>Med Associates Inc</td>
+      <td>SOF-860</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClockLab (v. 3.5.0)</td>
+      <td>Actimetrics</td>
+      <td>6.0.50</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sleep questionnaire study
 
 Sleep questionnaire data for PMS patients was obtained through a data access agreement with the PMSIR. The PMSIR contains demographic, clinical, and genetic data on PMS patients. Parents and caregivers are able to create a profile on behalf of the patient, enter demographic data, complete questionnaires on symptoms and development, and upload files such as genetic test reports and other medical records. Trained genetic counselors curate all genetic data to ensure each patient has as complete and accurate ‘genetic profile’ insofar as possible. Researchers may apply for data exports containing de-identified clinical data, developmental data, and genetic data. Once approved, the appropriate search is performed in the database and the results are provided to the researcher. Data in this study corresponds to a database export performed on 12/1/2016 containing the results of a sleep questionnaire completed by caregivers, as well as biographic and genetic information of PMS individuals. Difficulty falling asleep is defined as needing more than an hour to fall asleep. Multiple night awakenings is defined as more than two awakenings. Reduced sleep time is defined as less than 6 hr per night. Parasomnias are defined as abnormal movements, behaviors, emotions, perceptions, and dreams that occur while falling asleep or sleeping. Presence of sleep apnea is defined as having received a diagnosis of sleep apnea. Only individuals with a genetic counselor-confirmed deletion of the SHANK3 gene were included in the analysis. The final dataset included 176 individuals – 78 males and 98 females (age range 1–39 years).
 
-## Animals
+### Animals
 
 Heterozygous Shank3+/∆C mice were obtained from Dr. Paul Worley at Johns Hopkins University. Shank3+/∆C breeding pairs were established to obtain wild type (WT) and Shank3∆C littermates. Mice were housed in standard cages at 24 ± 1°C on a 12:12 hr light:dark cycle (unless otherwise specified) with food and water ad libitum. All experimental procedures were approved by the Institutional Animal Care and Use Committee of Washington State University and conducted in accordance with National Research Council guidelines and regulations for experiments in live animals.
 
-## Assessment of sleep-wake behavior
+### Assessment of sleep-wake behavior
 
-## Surgical procedures
+#### Surgical procedures
 
 Adult male mice (12-weeks-old) were stereotaxically implanted with electroencephalographic (EEG) and electromyographic (EMG) electrodes under isoflurane anesthesia according to previously published methods (Frank et al., 2002). Briefly, four stainless steel screws (BC-002MPU188, Bellcan International Corp, Hialeah, FL) were placed contralaterally over frontal (2) and parietal (2) cortices, and 2 EMG electrodes were inserted in the nuchal muscles. Mice were allowed 5 days of recovery from surgery prior to habituation to the recording environment.
 
-## Experimental design
+#### Experimental design
 
 Six days after surgery, wild type (WT; n = 10) and Shank3∆C (n = 10) littermates were connected to a lightweight, flexible tether and allowed 5 days to habituate to the tether and recording environment. After habituation, mice underwent 24 hr undisturbed baseline EEG and EMG recording starting at light onset (hour 1). The next day, mice were sleep deprived for 5 hr (hours 1–5) via gentle handling beginning at light onset according to previously published methods (Halassa et al., 2009; Vecsey et al., 2012; Ingiosi et al., 2015). Mice were then allowed 19 hr undisturbed recovery sleep (hours 6–12 of the light period and hours 13–24 of the dark period).
 
-## EEG/EMG data acquisition and analysis
+#### EEG/EMG data acquisition and analysis
 
 EEG and EMG data were collected with Grass 7 polygraph hardware (Natus Medical Incorporated, Pleasanton, CA) via a light-weight, counterbalanced cable, amplified, and digitized at 200 Hz using VitalRecorder acquisition software (SleepSign for Animal, Kissei Comtec Co., LTD, Nagano, Japan). EEG and EMG data were high- and low-pass filtered at 0.3 and 100 Hz and 10 and 100 Hz, respectively.
 
@@ -107,17 +519,17 @@ The EEG was subjected to fast Fourier transform analysis to produce power spectr
 
 Statistical analyses were performed using SPSS for Windows (IBM Corporation, Armonk, NY) and R statistical language. Data are presented as means ± standard error of the mean (SEM). If an individual hour bin did not contain a full hour of data due to technical issues (e.g. removal of recording tether), that hour was excluded from analysis for the corresponding individual animal. A general linear model for repeated measures (RM) using time (hours or period) as the repeated measure and genotype (WT vs. Shank3∆C) or treatment (undisturbed baseline vs. sleep deprivation) as the between subjects factor was used when multiple measurements were made over time (i.e. total sleep time, time in stage, bout number, bout duration, hourly NREM delta power). Repeated measures were tested for sphericity, and a Greenhouse-Geisser correction was applied when appropriate. Posthoc pairwise comparisons using Sidak corrections were performed when there were significant interaction effects or main effects of genotype or treatment. Baseline time in state and bout data RM comparisons were made over all time intervals during the full 24 hr recording period (hours 1–24). For sleep deprivation experiments, time in state and bout data RM comparisons were made over all time intervals during the full recovery period (hours 6–24). Hourly NREM delta power RM comparisons post-sleep deprivation were made over hours 6–12 of the recovery phase. Comparisons of normalized NREM EEG spectral power changes after sleep deprivation were made using one-way ANOVA with total spectral power as the dependent variable and genotype as the between subjects factor. If the one-way ANOVA yielded a significant result, unpaired Student’s t-tests with Benjamini-Hochberg correction were then used for comparisons of individual NREM EEG spectral frequency bins with genotype as the grouping variable. Unpaired Student’s t-tests with genotype as the grouping variable were used to analyze latency to state and total time in state post-sleep deprivation. Latency to NREM or REM sleep after sleep deprivation was defined as time elapsed from release to recovery sleep to the first bout of NREM sleep (bout ≥28 s or seven consecutive epochs) or REM sleep (bout ≥16 s or four consecutive epochs).
 
-## Genome-wide gene expression
+### Genome-wide gene expression
 
-## RNA isolation
+#### RNA isolation
 
 Adult male (8–10 week-old) Shank3∆C mice and WT littermates were divided into two groups: homecage controls (WT n = 5; Shank3∆Cn = 5) and sleep deprived (WT n = 5; Shank3∆Cn = 5). All mice were individually housed. Homecage control mice were left undisturbed and sacrificed 5 hr after light onset (hour 6). Mice in the sleep deprived group were sleep deprived for 5 hr via gentle handling starting at light onset (hour 1) and then sacrificed upon completion of sleep deprivation (hour 6) without allowing for any recovery sleep. Mice were sacrificed by live cervical dislocation (alternating between homecage controls and sleep deprived mice), decapitated, and prefrontal cortex was swiftly dissected on a cold block. Tissue was flash frozen in liquid nitrogen and stored at −80°C until processing (Poplawski et al., 2016; Tudor et al., 2016). To avoid day-specific effects on gene expression, this protocol was repeated over a 5 day period, and one sample from each genotype + treatment group was collected per day. Tissue was collected within the first 15 min of the hour. All tissue samples were later homogenized in Qiazol buffer (Qiagen, Hilden, Germany) using a TissueLyser (Qiagen) and all RNA was extracted using the Qiagen RNAeasy kit (Qiagen) on the same day.
 
-## RNA-seq library preparation and sequencing
+#### RNA-seq library preparation and sequencing
 
 The integrity of total RNA was assessed using Fragment Analyzer (Advanced Analytical Technologies, Inc, Ankeny, IA) with the High Sensitivity RNA Analysis Kit (Advanced Analytical Technologies, Inc). RNA Quality Numbers (RQNs) from 1 to 10 were assigned to each sample to indicate its integrity or quality. ‘10’ stands for a perfect RNA sample without any degradation, whereas ‘1’ marks a completely degraded sample. All RNA samples had RQNs ranging from 8.8 to 10 and were used for RNA library preparation with the TruSeq Stranded mRNA Library Prep Kit (Illumina, San Diego, CA). Briefly, mRNA was isolated from 2.5 µg of total RNA using poly-T oligo attached to magnetic beads and then subjected to fragmentation, followed by cDNA synthesis, dA-tailing, adaptor ligation, and PCR enrichment. The sizes of RNA libraries were assessed by Fragment Analyzer with the High Sensitivity NGS Fragment Analysis Kit (Advanced Analytical Technologies, Inc). The concentrations of RNA libraries were measured by StepOnePlus Real-Time PCR System (ThermoFisher Scientific, San Jose, CA) with the KAPA Library Quantification Kit (Kapabiosystems, Wilmington, MA). The libraries were diluted to 2 nM with Tris buffer (10 mM Tris-HCl, pH 8.5) and denatured with 0.1 N NaOH. Eighteen pM libraries were clustered in a high-output flow cell using HiSeq Cluster Kit v4 on a cBot (Illumina). After cluster generation, the flow cell was loaded onto HiSeq 2500 for sequencing using HiSeq SBS kit v4 (Illumina). DNA was sequenced from both ends (paired-end) with a read length of 100 bp.
 
-## RNA-seq data analysis
+#### RNA-seq data analysis
 
 HiSeq Control Software version 2.2.68 was used for base calling. The raw bcl files were converted to fastq files using the software program bcl2fastq2.17.1.14. Adaptors were trimmed from the fastq files during the conversion. The average sequencing depth for all samples was 52 million read pairs. Sequenced reads were mapped with GSNAP (parameter = -N 1 m 7 -A sam --nofails) to mm10. On average 84% of the sequenced reads mapped uniquely to the mm10 genome. All statistical analyses were performed using open source software freely available through the R/Bioconductor project (Gentleman et al., 2004). The count matrix was obtained using featureCounts (parameters = isPairedEnd = TRUE, requireBothEndsMapped = TRUE, annot.inbuilt = ‘mm10’) from the package Rsubread (v. 1.26.1) under Bioconductor (version 3.6) with R (v. 3.4.1) using mm10 built-in annotations (Mus_musculus.GRCm38.90) with ENTREZ ID as row names. Gene counts were filtered using a proportion test (counts per million cutoff of 1), as implemented in the NOISeq package (v.2.22.1) (Tarazona et al., 2015). Removal of unwanted variation (RUV) normalization was performed using RUVSeq (v. 1.12.0) (Risso et al., 2014; Peixoto et al., 2015) after the data was normalized by Trimmed Mean of M-values (TMM) (Robinson and Oshlack, 2010) using edgeR (v. 3.20.9) (Robinson et al., 2010). Specifically, RUVs (with k = 5) was used after defining groups based on both genotype and treatment and using a list of 2677 negative control genes obtained as genes with an adjusted p-value>0.9 in the comparison between sleep deprivation and controls in microarray data available through GEO (GSE78215) (obtained from Gerstner et al., 2016). Analogously, a list of 579 positive control genes obtained from the same study were used to evaluate the ability of our RNA-seq study to replicate known differences in gene expression. These positive controls were genes found to be differentially expressed (FDR < 0.005) by 5 hr of sleep deprivation relative to homecage controls in WT mice in four independent studies using two different microarray platforms and two different brain regions (Additional file 2 from Gerstner et al., 2016). Figure 4—figure supplement 1 shows that our RNA-seq study is able to recover 78% of the positive controls as differentially expressed when performing the same comparison done in the previous studies (HC5 vs SD5 in WT), while being able to detect many more differences in gene expression. This is a very high level of concordance considering these controls were obtained using a different technology and data were collected from experiments in four independent laboratories. Therefore, we are confident in the ability of our study to detect differences in gene expression that can be independently validated.
 
@@ -125,12 +537,12 @@ Differential expression analysis was performed using edgeR (v. 3.20.9) with a fa
 
 Functional annotation analysis of genes differentially expressed at FDR < 0.1 was based on Ensembl Gene IDs and performed using the database for annotation, visualization, and integrated discovery v 6.7 (DAVID, https://david.ncifcrf.gov). The following functional categories were used: GO Biological Process, GO Molecular Function, Uniprot keywords, and KEGG pathways. Enrichment was determined relative to all genes expressed in the mouse prefrontal cortex based on our data. We used an enrichment p-value (EASE) cutoff <0.1 for individual functional terms. Enriched functional terms were clustered at low stringency, to obtain clusters with an enrichment score >1.2 (corresponding to an average EASE >0.05).
 
-## Assessment of circadian rhythms
+### Assessment of circadian rhythms
 
-## Experimental design
+#### Experimental design
 
 Adult male (9-week-old) wild type (n = 8) and Shank3∆C (n = 7) littermate mice were individually housed with a low-profile wireless running wheel (Med Associates Inc, Fairfax, VT) and kept under 12:12 hr light:dark (LD) cycle for 3 weeks (including 1 week of habituation) followed by 3 weeks of complete darkness (DD). Two Shank3∆C mice from a starting n of 9 were excluded from the experiments because they failed run on the wheel for the duration of the experiment. The experiment was repeated with an independent cohort of 11-week-old male wild type (n = 8) and Shank3∆C (n = 8) littermate mice kept under a 12:12 hr light:dark (LD) cycle for one week of habituation and then 5 weeks of data collection. One Shank3∆C mouse from a starting n of 9 was excluded from the second experiment because it failed to run on the wheel for the duration of the experiment. Daily checks were made to verify that each running wheel was transmitting data and that no light was detected in the room during constant darkness conditions.
 
-## Data acquisition and analysis
+#### Data acquisition and analysis
 
 Wheel-running behavior was continuously monitored using Wheel Manager Software and exported into 10 min time bins (Med Associates Inc). ClockLab version 6.0.50 (Actimetrics, Wilmette, IL) was used for analysis. Period, the circadian length in time from activity onset to the next activity onset, was calculated using ClockLab’s chi-squared periodogram analysis function. Alpha, the length of the activity period, was calculated as the time from activity onset to offset (defined by manufacturer defaults). Activity was calculated as the total sum of wheel revolutions per day. A linear mixed-effects model ANOVA was used to estimate the contributions of genotype and the interaction between genotype and time for period, alpha, and wheel running activity for LD week three through DD week three in the first experiment, and LD week 1–5 in the second experiment. The model was fitted using genotype, time, and their interaction as fixed effects, and the individual mice were labeled as a random effect. The analysis was conducted with the R package nlme (v. 3.5.0) and is publicly available at https://github.com/drighelli/peixoto (Righelli et al., 2019; copy archived at https://github.com/elifesciences-publications/peixoto).

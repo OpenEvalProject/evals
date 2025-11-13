@@ -17,14 +17,14 @@
 
 1. Osmo Cambridge United States
 2. Google Research, Brain Team Cambridge United States
-3. https://ror.org/047426m28 Department of Computer Science, University of Illinois Urbana United States
-4. https://ror.org/050xscb48 TropIQ Health Sciences Nijmegen Netherlands
+3. Department of Computer Science, University of Illinois Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+4. TropIQ Health Sciences Nijmegen Netherlands ([ROR:050xscb48](https://ror.org/050xscb48))
 
 † Corresponding author
 
 ## Abstract
 
-Hearing and vision sensory systems are tuned to the natural statistics of acoustic and electromagnetic energy on earth and are evolved to be sensitive in ethologically relevant ranges. But what are the natural statistics of odors , and how do olfactory systems exploit them? Dissecting an accurate machine learning model (Lee et al., 2022) for human odor perception, we find a computable representation for odor at the molecular level that can predict the odor-evoked receptor, neural, and behavioral responses of nearly all terrestrial organisms studied in olfactory neuroscience. Using this olfactory representation (principal odor map [POM]), we find that odorous compounds with similar POM representations are more likely to co-occur within a substance and be metabolically closely related; metabolic reaction sequences (Caspi et al., 2014) also follow smooth paths in POM despite large jumps in molecular structure. Just as the brain’s visual representations have evolved around the natural statistics of light and shapes, the natural statistics of metabolism appear to shape the brain’s representation of the olfactory world.
+Hearing and vision sensory systems are tuned to the natural statistics of acoustic and electromagnetic energy on earth and are evolved to be sensitive in ethologically relevant ranges. But what are the natural statistics of odors, and how do olfactory systems exploit them? Dissecting an accurate machine learning model (Lee et al., 2022) for human odor perception, we find a computable representation for odor at the molecular level that can predict the odor-evoked receptor, neural, and behavioral responses of nearly all terrestrial organisms studied in olfactory neuroscience. Using this olfactory representation (principal odor map [POM]), we find that odorous compounds with similar POM representations are more likely to co-occur within a substance and be metabolically closely related; metabolic reaction sequences (Caspi et al., 2014) also follow smooth paths in POM despite large jumps in molecular structure. Just as the brain’s visual representations have evolved around the natural statistics of light and shapes, the natural statistics of metabolism appear to shape the brain’s representation of the olfactory world.
 
 ## Introduction
 
@@ -36,27 +36,87 @@ Here, we perform a comprehensive meta analysis on 16 olfactory neuroscience data
 
 ## Results
 
-## Neural network embedding as a principal map for animal olfaction
+### Neural network embedding as a principal map for animal olfaction
 
 GNNs show state-of-the-art ability to accurately predict human olfactory perceptual labels in both retrospective (Sanchez-Lengeling et al., 2019) and prospective settings (Lee et al., 2022). Here, we use a GNN embedding – the neural network layer immediately preceding the task-specific architecture – as a representation of odor and evaluate its predictive power in a meta analysis across 16 datasets (Methods) in olfactory neuroscience spanning 9 common model species, including mosquito, fruit fly, and mouse, as well as different scales of biology, including olfactory receptor, glomerular response, cortical neuron response, and whole-animal behavior (Figure 1a; Figure 1—figure supplement 1). We quantify the predictive performances of the GNN embedding on regression or classification tasks for these curated datasets and compare its performance against generic chemical representations often used in the predictive chemoinformatic models. As shown in Figure 1b, the embedding predicts receptor, neural, and behavioral olfaction data better than generic chemical representations across species separated by up to 500 M years of evolution and possessing independently evolved olfactory systems. We thus term this embedding the POM.
 
-## The POM is specific for olfaction
+![Figure 1.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig1-v1.jpg)
+
+**Figure 1.:** (a) A graph neural network model pre-trained on human olfactory perceptual data produces a principal odor map, or POM (latent space, dashed box), which can be used to make predictions about any small, volatile molecule in biological and behavioral experiments. (b) A random forest model using only POM produces predictions that meet or exceed those obtained from commonly used generic molecular features (Moriwaki et al., 2018; Bajusz et al., 2015; Mordred) across a range of olfactory datasets (Keller et al., 2017; MacWilliam et al., 2018; Missbach et al., 2014; Hallem and Carlson, 2006; Xu et al., 2014; Carey et al., 2010; Oliferenko et al., 2013; Dravnieks, 1982; Gupta et al., 2021; Pashkovski et al., 2020; Del Mármol et al., 2021; Wu et al., 2018; Kuhn et al., 2016; Mobley and Guthrie, 2014; Delaney, 2004; Subramanian et al., 2016; Rupp et al., 2012; Kooistra et al., 2021; Chae et al., 2019; Wei et al., 2022) in different species (green for vertebrates and blue for invertebrates) but not for prediction of non-odorous molecular properties (orange). The Y-axis is the difference between performance indices for models using POM vs. generic molecular features. Performance index is a rescaled metric to place classification and regression performance on the same axis. Performance indices of 0 and 100 represent random and perfect predictions, respectively. Error bars are calculated as the SD of performance differences across multiple random seeds.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Similar to Figure 1b, but showing performance of both principal odor map (POM; gray) and alternatives (count-based fingerprints, cFP, red; and bit-based fingerprints, bFP, orange) against Mordred chemoinformatic features. Only POM shows a consistent advantage in olfactory tasks. (b) Summary of (a) by averaging the performance ranking of different featurization methods, grouped by the origin of the task. Here, a higher rank means better performance – the best rank is 4 and the worst rank is 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The advantage in predictive performance for POM vs. Mordred (i.e. see vertical axis in Figure 1b) decreases as the dataset becomes less relevant to olfaction (r=0.49, p<0.03). Relevance is measured by dataset distance (farther is less relevant), quantified as the distance from the training data (human odor labels) computed via the optimal transport method (Alvarez-Melis and Fusi, 2020).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** In Figure 1 and Figure ED1, we estimate the performance index of POM and other methods on non-olfaction datasets containing molecules that are not necessarily odor-molecule-like. In order to control for such molecular distribution shifts, we construct four datasets for non-olfaction-related tasks on the same set of odorous molecules used in the training dataset. For general molecular properties, we compute Wildman-Crippen LogP (Wildman and Crippen, 1999), ESOL (Delaney, 2004), and QED (Bickerton et al., 2012) values for molecules in the training dataset; for enteric GPCR binding, we estimated the binding affinity between these molecules and the same GPCR used in Figure 1 using the winning model from the IDG-DREAM Drug-Kinase Binding Prediction Challenge (Cichońska et al., 2021). As in Figure 1, POM shows no advantage on these non-olfaction tasks and is strictly dominated by Mordred across each such task.
+
+### The POM is specific for olfaction
 
 While the POM exhibits generalizability across olfactory tasks in various species, it should be no better than generic chemical representations on tasks irrelevant to olfaction in order to optimize its representational power specifically for olfaction (i.e. the no-free-lunch theorems Roy et al., 2002). As shown in Figure 1b, POM does not show a significant or consistent advantage over generic chemical representations for predicting molecular properties that are not likely exploited by olfaction, such as electronic properties (e.g. QM7 Rupp et al., 2012) and adverse drug reactions (e.g. SIDER Kuhn et al., 2016) compiled by MoleculeNet (Wu et al., 2018). We then apply POM to predict molecular binding activity for G-protein-coupled receptors (GPCRs, of which mammalian olfactory receptors are only a subset Gupta et al., 2021) generally, including those involved in enteric chemical sensation (Kooistra et al., 2021; e.g. 5HT1A for serotonin and DRD2 for dopamine). While POM demonstrates superior performance for GPCRs involved in human olfaction, their performance is significantly worse for GPCRs related to enteric chemical sensation compared to generic chemical representations, showing specificity for olfaction (Figure 1b, Figure 1—figure supplement 2). We observe a similar result when we restrict the analysis to only the original training molecules, showing that it is the task and not the molecule which determines the suitability of the POM. (Figure 1—figure supplement 3).
 
-## Metabolic activity explains the organization of the POM
+### Metabolic activity explains the organization of the POM
 
 Since animals have different biological implementations for external molecular detection (e.g. ionotropic receptors for mosquitoes and independently evolved metabotropic GPCRs for mammals), it is surprising that a human-derived representation of odor can explain responses in a diverse set of species. We hypothesize that such convergent evolution could be the result of a shared natural environment for most animals where they experience the same set of ethological signals, including various nutrients and pheromonal cues from metabolic processes; in other words, detecting and identifying the state of living things by their odor are broadly useful across species.
 
 To test this hypothesis, we explored all odorant molecules in a carefully curated metabolic reaction database called MetaCyc (Caspi et al., 2014), containing experimentally elucidated reaction pathways. We identified 17 species with sufficient metabolic data, spanning four kingdoms of life (Figure 2—figure supplement 1). We then constructed networks of metabolites for these species in which directed edges represent the direction of a reaction between one node (a reactant) and another (a product; Figure 2a). We then computed the discrete ‘metabolic distance’ between any two compounds by calculating the shortest paths through these networks (Figure 2b; Figure 2—figure supplement 1). From those metabolic networks with enough metabolites (>100), we repeatedly sampled 50 pairs of odorants (molecules that pass a validated rule set for odor probability; Mayhew et al., 2022) for each metabolic distance ranging from 1 to 12 and asked how well the distance in POM correlates with these metabolic distances (Figure 2c; Figure 2—figure supplement 2). We found that there is a strong correlation between the metabolic distance and POM distance (r=0.93) and that common measures of structural similarity between these metabolites can only account for part of the relationship (r<0.8). This is especially true for neighbor metabolites in metabolic networks where a biological reaction changes the molecular structure drastically; while such drastic changes produce large structural distances, only smaller changes in POM are observed – the reactant and product spanning this structural cliff frequently share a common odor profile (Figure 2d; Figure 2—figure supplement 3). Alternative structural distance metrics are also correlated with metabolic distance and with POM distance (Figure 2—figure supplement 2); indeed, in the absence of alchemy, metabolic reactants and products must be at least somewhat structurally related. But POM (derived only from human perceptual data) outperforms all such metrics significantly, with a >2× reduction in unexplained variance and a lower dispersion at any given metabolic distance (Figure 2c; Figure 2—figure supplement 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-v1.jpg)
+
+**Figure 2.:** (a) The contents of MetaCyc, a large database of experimentally elucidated metabolic reactions across multiple species, were used to construct directed graphs connecting metabolites, including those with odors (non-gray). (b) The discrete pairwise distance of two molecules was defined by the shortest directed path between them within a species’ metabolic graph (if any). Each step corresponds to a single chemical reaction specified in MetaCyc. (c) Continuous pairwise distances between molecules in POM – which was produced from human perceptual data alone – are strongly correlated with discrete metabolic distance (left, r=0.93). This effect is not driven solely by the structure similarity of related metabolites since a weaker relationship is observed using alternative structural distance metrics including Tanimoto distance (center, r=0.71) and edit distance in count-based fingerprints (right, r=0.80). (d) Two pairs of example molecules that are closely related in metabolism. While these are structurally dissimilar molecules (Tanimoto distance >0.65; left: change in a key functional group; right: removal of a major substructure), a single metabolic reaction can turn one to the other, and therefore, POM also organizes them closely together (POM distance <0.12). In turn, they have similar odor profiles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Distribution of the count of metabolites described in MetaCyc across individual species. Most species were not well-represented, resulting in sparse networks, but 17 species were represented by ≥100 metabolites which we then selected for the analysis. (b) Most metabolites did not pass a simple odorousness filter, but we still find 405 pairs of odorous metabolites that can be connected via various steps of metabolic reactions. (c) Most odorous metabolites were connected by a short reaction path (≤3 steps), but the path can contain as many as 12 metabolic reactions. (d) The 17 species whose metabolic networks are used here span four different kingdoms of life.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Box plots show the median, interquartile range, and min/max correlations for 100 sampling seeds, between POM distance and other distance measures for metabolite pairs. These structural and physicochemical-based descriptors show significant correlation with POM distance, but the metabolic distances shows the highest correlation with POM distance.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** In Figure 2d, we show two examples of one-step metabolite pairs with small POM distance and large structural distance (including count-based fingerprints [cFP] edit distance and Tanimoto distance). Here, we show two density plots for structural distance and POM distance for one-step metabolite pairs, indicating the relative frequency of cases such as shown in Figure 2d.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Box plots show the median, interquartile range, and min/max correlations between the given distance measure and metabolic distance for 100 sampling seeds, i.e., for alternative sub-samples of metabolite pairs compared to those shown in Figure 2c. The correlation for principal odor map (POM) distance is uniformly stronger than for other distance measures.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Correlations (across random seeds as shown in Figure 2—figure supplement 4) between metabolic distance and the indicated intermolecular distance for four different perturbations on the original metabolic networks: (a) End points of all the edges are randomly re-assigned to either the original metabolite or its neighbors. (b) Directions of 50% of the edges are reversed (i.e. reactants become products and vice versa). (c) Ablation of direction information (reactant vs. product identity becomes indeterminate). (d) Merging of all graphs across organisms, i.e., any reaction in an organism can be used to determine metabolic distance.
+
 Having established that metabolic distance was closely associated with distance in POM, we next asked whether metabolic reactions are easier to understand and interpolate in POM. If a pathway of reactions proceeds in a consistent direction in a molecular representation, then that pathway can be identified with that direction (e.g. ‘toward fermentation’); alternatively, the pathway could simply be a random walk in space. Using principal components analysis, we visualized the metabolic pathway for both DIBOA-glucoside biosynthesis (Figure 3a) and gibberellin biosynthesis (Figure 3b) in 2D with both count-based fingerprints (cFPs) structure and POM. We find the organizations of POM show a smooth progression from starting metabolites to final product metabolites, even though the same pathways show irregular progressions when organized simply by molecular structure. To further quantify such effects, we examine the ‘smoothness’ of all triplets of three consecutive metabolites (pairs of consecutive reactions) in 37 unique metabolic pathways with only odorant molecules (Figure 3c). As shown in Figure 3d, most of the paths for these triplets become smoother after the pre-trained neural network projects their structure into POM (see Figure 3—figure supplement 1 and Figure 3—figure supplement 2 for additional controls and analysis), suggesting that the organization of POM reflects a deeper relationship between olfaction and metabolic processes.
 
-## Molecules that co-occur in nature are also closer in the POM
+![Figure 3.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig3-v1.jpg)
+
+**Figure 3.:** (a) Left: a four-step pathway (DIBOA-glucoside biosynthesis) depicted in a 2D representation of the structure fingerprints (count-based fingerprints, or cFP) using principal components analysis. Right: the same pathway depicted in a 2D representation of the POM. (b) Left: the same 2D cFP representation for a six-step pathway (gibberellin biosynthesis). Right: a 2D representation of the same pathway in the POM. We observe relatively smooth trajectories in POM for these pathways even though the same pathways show irregular trajectories in the structure space. (c) To systematically quantify such ‘smoothness,’ we examine all unique pathways in the metabolic network (top). A desirable molecular representation should exhibit smooth reaction paths, proceeding in a more consistent direction from the starting metabolite to the final metabolite allowing interpolation for intermediate metabolites (center). Smoothness for an intermediate metabolite is formally defined as the ratio between the direct euclidean distance and total path length between the start and end metabolites. A smoother path will result in a ratio close to 1 (bottom). (d) Metabolic trajectories are smoother after metabolite structures are projected to POM than when using alternative structural distance metrics (paired t-test, p<0.0001 for both structure distance metrics).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Cumulative explained variance as a function of the number of principal components for different featurizations. The inherent dimensionality of POM is lower than the alternatives. (b) The smoothness metric reported in Figure 3d, as a function of the number of principal components retained. The dashed line (64 components) reflects the value used in Figure 3d. Reducing the dimensionality to a common value was necessary to avoid over-penalizing higher-dimensional feature spaces (e.g. bit-based fingerprint [bFP], count-based fingerprint [cFP] and Mordred).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The metabolite triplets analyzed in Figure 3d are shown here in detail; each circle represents the smoothness of one triplet (e.g. A->B->D or A->C->D). Most triplets are smoother for principal odor map (POM) than for alternative representations (i.e. circles are above the dashed line). The smoothness across all triplets is significantly higher for POM than for each of the alternatives (paired t-test; p-value shown in each panel).
+
+### Molecules that co-occur in nature are also closer in the POM
 
 To further validate our hypothesis, we investigated 214 molecules that co-occur in 303 essential oils aggregated in the Pyrfume data repository (Castro et al., 2022). Molecules which co-occur in the same object in nature usually convey similar ethological cues, including danger, conspecifics, or in the case of plants, nutrient availability. If the organization of POM is indeed driven by the shared natural ethological signals driven by metabolic processes, they should also be represented similarly in the POM.
 
 We calculated the distance for all molecule pairs in POM and also using a common structural similarity metric (Figure 4a). If co-occurring pairs share metabolic origins, then such co-occurring pairs should be closer together in POM than would be expected by chance. Indeed, the distance distribution for co-occurring molecule pairs is shifted toward ‘nearness’ in POM; this shift is larger than one would expect when only considering their structure similarity (Figure 4b and c). A similar pattern is observed for animal neural responses (Figure 4—figure supplement 1). As an illustration, we sample two pairs of co-occurring molecules – one pair from rose oil and the other from orange oil – that have a very distinct within-pair structure (Tanimoto distance >0.95, Figure 4d). Despite their distinct structures, we discover that both pairs of molecules are part of the terpenoid biosynthesis pathway and are closely related downstream products of geranyl diphosphate (Figure 4e). The POM representation – in which the distance within each such pair is small – captures their physical co-occurrence and proximity in the metabolome.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig4-v1.jpg)
+
+**Figure 4.:** (a) We compiled a dataset of 214 molecules found in 303 essential oils and computed their pairwise POM distance (red) and count-based fingerprint (cFP) edit distance (blue), where molecule pairs that co-occur in the same essential oil are indicated by dark boxes. (b) To make POM and cFP edit distance comparable, we sort both POM and cFP edit distances for all 22,791 molecular pairs in the dataset from small to large and mark co-occurring pairs with dark lines; we then (c) plot the average shift in distance rank (relative to a random pair) for co-occurring (left) and non-co-occurring (right) molecule pairs under POM distance (red), cFP edit distance (blue), and Tanimoto distance (purple). As expected, the co-occurring pairs have a smaller rank (nearer together), and non-co-occurring pairs have a higher rank (further apart). More importantly, this rank shift for co-occurring molecules is ~2× larger in POM than for structures distance (paired t-test, p<0.0001) and reversed for non-co-occurring pairs (paired t-test, p<0.001). Error bar indicates the 95% CI. (d) Two example pairs of co-occurring molecules that POM successfully recognizes as closely related while conventional structure-based distance fails. Common odor labels for the two molecules as predicted by a state-of-the-art model (Sanchez-Lengeling et al., 2019). (e) The terpenoid biosynthesis pathway shows that these molecule pairs (red) are close downstream metabolic products of geranyl diphosphate (Kanehisa et al., 2021), explaining both their co-occurrence and their proximity in the POM despite their dissimilar structures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82502/elife-82502-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** In Figure 4c, we show that co-occurring pairs of molecules in essential oils show a smaller distance in principal odor map (POM) compared to non-co-occurring pairs. Here, we plot a similar figure using experimental data for mice and insect neural responses and observe a similar trend: co-occurring pairs of molecules activate animal olfactory systems in a more similar way than do non-co-occurring pairs (Student’s t-test; p<0.0005 for Carey et al.; p<0.0005 for Hallem and Carlson; n.s. for Chae et al. for which only 15 pairs of molecules overlapped with the essential oils dataset). In order to calculate the neural distance for a pair of molecules, we computed the correlation distances between their olfactory receptor neuron (ORN) activities or glomerular responses (described in Methods). In order to compare distances involving different units, we convert distances into ranks and then compared these ranks across co-occurring pairs and non-occurring pairs.
 
 ## Discussion
 
@@ -76,17 +136,17 @@ Ludwig Boltzmann and Erwin Schrödinger argued that the fundamental object of st
 
 ## Methods
 
-## POM from pre-trained GNNs
+### POM from pre-trained GNNs
 
 The POM corresponds to the activations of a 256-dimensional embedding layer within a neural network, pre-trained on human olfactory perceptual data (see model architecture and training details below). Briefly, the neural network contains three components: (1) a GNN that represents the molecule as a graph and learns a representation for each atom through message passing, (2) a multi-layer perceptron that aggregates the atom representations and learns an embedding for the entire molecule, and finally (3) a single fully connected layer predicting different odor descriptors. After pre-training the neural network, the parameters of the models are fixed, and the first and second components are used deterministically to generate the location of arbitrary odor-like molecules within the POM; equivalently, the molecule is represented as a graph and projected to a single vector representing the activations of the neural network’s final embedding layer. The representation of any odor-like molecule in the POM is this 256-dimensional floating point array embedding.
 
 The analyses carried out upon it are described per figure, but briefly: in Figure 1, it was used as the input for predicting datasets from olfactory neuroscience, i.e., the features in a series of regression of classification problems; in Figure 2, we computed distances in this space and compared them to distances in alternative spaces; in Figure 3, we computed distances and angles in this same space; and in Figure 4, we computed distance in the POM between any components found in any essential oil.
 
-## GNN architecture and training details
+### GNN architecture and training details
 
 We pre-trained the GNN on the same human olfactory perceptual data as described in Sanchez-Lengeling et al., 2019 and Lee et al., 2022 with 138 odor labels for ~5000 molecules. The model architecture closely follows the implementation of Message Passing Neural Networks (Gilmer et al., 2017). For the message passing layer, we used two layers of edge-conditioned matrix multiplication with 63 hidden units and GRU (Gated Recurrent Units) updates, on top of a 45-dimensional atom feature initialization. For the readout layer, we embedded each atom by collapsing the atom features alongside its connected bond features into a 152-dimensional embedding and generate a graph embedding by summing all of the atom embeddings. For the final prediction, we used four fully connected layers with decreasing layer size from 1045 to 256 before making predictions for each of the 138 odor labels from the activations of the last of those layers. To train the model, we optimized the model parameters against a weighted-cross entropy loss in 150 epochs using Adam with a decaying learning rate starting from 5e-4, with a batch size of 128. These hyper parameters are selected using a bayesian optimization algorithm within 100 trials under fivefold cross validation.
 
-## Performance index for supervised learning
+### Performance index for supervised learning
 
 Under the supervised learning setting (using molecular featurization to predict out-of-domain results, see Figure 1), the performance index of a dataset for a specific representation (e.g. POM or Mordred Moriwaki et al., 2018) is calculated from a random forest model’s performance using that specific representation as input features. The supervised learning setting includes some datasets with category labels (classification) and some with real number labels (regression).
 
@@ -96,104 +156,104 @@ For datasets with categorical labels, we compute AUROC, while R2 score is comput
 
 Since the optimal hyper parameters for the model can be different for different representations and datasets, we perform a scan for important hyper parameters for random forest models including number of trees in the forest, different ways to assign weight for each class label, number of features to consider during a split, as well as the minimum number of samples required to split and internal node or construct a leaf node. For Morgan fingerprints (cFP and bFP; Morgan, 1965), we include an additional hyper parameter to select for the optimal dimension of the fingerprints. In the end, we report the performance index using the best hyper-parameter choices from the scan for each featurization.
 
-## Performance index for mouse piriform cortical activity dataset
+### Performance index for mouse piriform cortical activity dataset
 
 Following the original analysis for the dataset in Pashkovski et al., 2020, we used correlation distance as the basis for measuring both neural activity distances and molecular representation (e.g. POM or Dragon; Mauri et al., 2006) distances for each molecule pair, after centering the values per-neuron or per-feature dimension. Pearson correlations were then used to measure how well each representation captured the neural activity distances observed in different experimental conditions (representing various parts of the brain and different sets of probes). The performance index is then calculated by averaging and rescaling these latter correlations across each experimental condition.
 
-## Datasets used in figure 1
+### Datasets used in figure 1
 
 Each of the datasets below is indicated with a letter ([x]) corresponding to its position in Figure 1b.
 
-## Datasets for human olfaction
+### Datasets for human olfaction
 
-## Dravnieks [c]
+#### Dravnieks [c]
 
 This dataset (Dravnieks, 1982) contains 128 unique molecules with 146 odor descriptor targets, where each molecule has a perceptual rating for each odor descriptor, which we can use for regression labels.
 
-## Keller et al. [h]
+#### Keller et al. [h]
 
 This dataset is generated from the data published with the crowd-sourced DREAM Olfaction Prediction Challenge (Keller et al., 2017) where we used the ‘gold’ dilution (i.e. the one used to score the challenge) to generate the average perceptual rating for 369 molecules over 21 odor descriptor targets such as pleasantness, grass, garlic, sweaty, etc.
 
-## Human olfactory receptors [j]
+#### Human olfactory receptors [j]
 
 This dataset is compiled from the literature and from databases as part of the OdoriFy effort (Gupta et al., 2021), and we use the binary response label for all eight different receptor targets including OR1A1, OR1A2, OR1G1, OR2J2, OR2W1, OR51E1, OR51E2, and OR52D1.
 
-## Datasets for mouse olfaction
+### Datasets for mouse olfaction
 
-## Pashkovski et al. (mouse piriform cortex activity) [f]
+#### Pashkovski et al. (mouse piriform cortex activity) [f]
 
 The activity for each odorant and neuron pair is computed from the original raw time-series response curve kindly provided by the authors of a mouse piriform cortical activity dataset (Pashkovski et al., 2020). For each trial, the response curve is first smoothed by averaging each frame with a moving window of size 5. The baseline mean μ and SD σ are then established using activities from the last 30 frames immediately before the designated odor onset. A response is elicited for the trial if the max response value within 30 frames after the onset is larger than μ+3 * σ. The activity for each odorant and neuron pair is represented as the average elicitation rate across multiple trials.
 
-## Chae et al. (mouse glomerular activity) [s]
+#### Chae et al. (mouse glomerular activity) [s]
 
 The activity for each odorant and neuron pair for this dataset (Chae et al., 2019) is computed from the dF/F values provided in the curated Pyrfume entry (Castro et al., 2022). Each was median-subtracted, such that zero represented a typical baseline response (signal is sparse), and odor-evoked signals were identified with negative dF/F and odor-evoked signals. The normalized score was computed from these odor-evoked signals divided by their mean-squared-deviation from zero signal.
 
-## Datasets for insect olfaction
+### Datasets for insect olfaction
 
 A total of 11 insect olfaction datasets are organized from 7 prior works in the literature and 1 previously unpublished data source.
 
-## MacWilliam et al. [a]
+#### MacWilliam et al. [a]
 
 MacWilliam et al., 2018 The authors perform a behavioral experiment with Drosophila using the T-maze assay. They measure the attraction and aversion with a preference index between –1 and 1 for around 60 compounds, as shown in Figure 5 of their paper. The wild-type preference index for each compound is extracted, and the dataset is represented as a binary classification task, where a compound is considered positive if it can elicit a strong attraction (>0.25) or a strong aversion (<−0.5).
 
-## Xu et al. [b]
+#### Xu et al. [b]
 
 Xu et al., 2014 The authors measure the odorant-elicited in vitro electrophysiological current response for CquiOR136 in the southern house mosquito, Culex quinquefasciatus. The authors measured this response for around 200 compounds as listed in experimental procedures. The compounds that can elicit detectable currents are found in Figure 3 of that paper and are therefore assigned a positive label in this binary prediction task.
 
-## Wei et al.[d]
+#### Wei et al.[d]
 
 Wei et al., 2022 As part of a mosquito repellency dataset (Wei et al., 2022), 38 molecules were selected from a fragrance catalog, and their repellency was tested with a mosquito feeder assay: the fragrance molecules are coated on the membrane of a nano feeder containing 100 µl of blood meal. After feeding for 10 min, the average percentage of (%) unfed mosquitoes is measured over two trials. The repellency is then calculated by normalizing the unfed percentage such that ethanol has a 0% repellency, while the best possible repellency is 100%. This dataset is formulated as a binary classification task, where a compound is assigned a positive label if more than 90% repellency is observed.
 
-## Missbach et al. [e]
+#### Missbach et al. [e]
 
 Missbach et al., 2014 The authors perform single sensillum recordings for various types of olfactory sensory neurons (OSNs) in four different species including wingless bristletail, Lepismachilis y-signata, firebrat, Thermobia domestica, neopteran leaf insect, Phyllium siccifolium, and fruit fly, Drosophila melanogaster. The average spike count per second is recorded for a panel of 35 odorant molecules with six different functional groups. The spike count data is compiled for each species from Figure 3 of the paper and formulated as a classification task where a compound is labeled as positive for a specific OSN target if the average elicited firing rate is 50% higher than the baseline firing rate.
 
-## del Mármol et al. [g]
+#### del Mármol et al. [g]
 
 Del Mármol et al., 2021 The authors measure the odorant-elicited response for olfactory receptors MhOR1 and MhOR5 from the jumping bristletail, Machilis hrabei. The authors express the respective receptors in HEK cells and perform whole-cell recordings. An activity index is then computed for a panel of odorants based on the log(EC50) and the maximal response. The data from Supplementary Table 4 and 6 of that paper is compiled and formulated as a regression task with multiple targets.
 
-## Carey et al.[i]
+#### Carey et al.[i]
 
 Carey et al., 2010 The authors express various olfactory receptors for malaria mosquito Anopheles gambiae in ‘empty neurons’ and measure the olfactory receptor neurons (ORNs) responses as a consequence of odorant stimuli. We cast various receptor ORN responses as different regression targets and compile the data from Supplementary Table 2c of the paper.
 
-## Hallem and Carlson [k]
+#### Hallem and Carlson [k]
 
 Hallem and Carlson, 2006 The authors perform a similar assay as Carey et al., 2010 but with olfactory receptors in Drosophila. The data is extracted from Table S2 of the paper and similarly compiled as a regression task with multiple targets.
 
-## Oliferenko et al.[n]
+#### Oliferenko et al.[n]
 
 Oliferenko et al., 2013 The authors measure the Aedes aegypti repellency for about 90 molecules as the minimum effective dosage (MED). Following the same threshold as the original paper, this dataset is casted as a binary classification task where compounds with an observed MED of less than 0.15 µmol/cm2 are considered active.
 
-## Datasets for non-olfaction related tasks
+### Datasets for non-olfaction related tasks
 
-## Other molecular properties [l, m, o, p, and r]
+#### Other molecular properties [l, m, o, p, and r]
 
 From MoleculeNet (Wu et al., 2018), five diverse tasks are selected as non-olfaction related molecular properties, including electronic properties (QM7 Rupp et al., 2012; Blum and Reymond, 2009), binding affinity with BACE-1 protein (BACE Subramanian et al., 2016), water solubility (ESOL Delaney, 2004), hydration free energy (FreeSolv Mobley and Guthrie, 2014), and adverse drug reaction (SIDER Kuhn et al., 2016). All these tasks contain a single regression label except SIDER which is a multi-label classification task.
 
-## Enteric GPCR binding [q]
+#### Enteric GPCR binding [q]
 
 Five large human GPCR targets are pulled from GPCRdb (Kooistra et al., 2021) including 5GT1A (serotonin receptor 1a), CNR2 (cannabinoid receptor 2), DRD2 (dopamine receptor 2), GHSR (ghrelin receptor), and OPRK (opioid receptor kappa). Since GPCRdb contains the binding affinities collated from multiple sources, we use the average binding score as our regression label for each target.
 
-## Dataset standardization
+### Dataset standardization
 
 All olfactory datasets are standardized by removing the following molecules: (1) data points with multiple molecules (i.e. mixtures), (2) molecules with only a single atom, (3) molecules with atoms that are not hydrogen, carbon, nitrogen, oxygen, and sulfur, or (4) molecules with a molecular weight of more than 500 daltons. Nearly all odorant molecules in the raw datasets passed this empirically motivated standardization filter (Mayhew et al., 2022) and are kept in the standardized dataset.
 
-## Metabolic networks and metabolic distance
+### Metabolic networks and metabolic distance
 
 A metabolic network is constructed for each species where each node represents a metabolite and each directed edge connects the reactant and product metabolites in different experimentally elucidated reactions in the MetaCyc database (Caspi et al., 2014). Among all metabolic networks for different species, the 17 largest networks each with more than or equal to 100 metabolites are further studied.
 
 For each metabolic network, all metabolites are labeled odorous or not according to mass transport principles established in Mayhew et al., 2022. All pairs of odorous metabolites with an existing path in their network are enumerated, and the distance of their shortest path is used as their metabolic distance – the minimum number of metabolic reactions to convert one odorous metabolite to another. Due to the sparsity of these metabolic networks, far more metabolite pairs with short metabolic distances (<3) are found compared to those with long metabolic distances (>8). In order to fairly study the organization of metabolite pairs across various distances, metabolite pairs are resampled such that an even number (=50) of metabolite pairs is sampled for each metabolic distance. The Pearson correlation coefficients shown in Figure 2 are also consistent across different sampling seeds (Figure 2—figure supplement 4) and are destroyed by perturbations that corrupt the metabolic graph (Figure 2—figure supplement 5).
 
-## Computing distances
+### Computing distances
 
 The POM distance between molecules is defined as the correlation distance between their embeddings, which are centered across the population of molecules (e.g. all sampled odorous metabolite pairs or all compounds in essential oil). Tanimoto distance (Bajusz et al., 2015) is computed using RDKit (The RDKit Documentation, 2019) based on bit-based fingerprints. cFP edit distance between two molecules approximates the absolute difference between their structures and is defined as the L1 distance between their cFPs.
 
-## Visualizing metabolic pathways and calculating their smoothness
+### Visualizing metabolic pathways and calculating their smoothness
 
 In order to visualize the metabolic pathways (Figure 3a and b), both the cFP and POM are projected to a compressed 64 dimensional space via principal components analysis. Using subspaces with a common number of dimensions also controls for any dimensionality bias that might be present in these comparisons. Explaining more than 80% of the variance in both representations, the first two dimensions of the PCA (principal components analysis) projections are then used to visualize the trajectory of these pathways in cFP vs. POM.
 
 To quantify the ‘smoothness’ of these metabolic pathways (Figure 3d), 34 unique metabolic pathways with distance ranging from 3 to 13 are extracted from the 15 metabolic networks. For an example pathway ‘A->B->C->D,’ we can calculate the smoothness for interpolation of the two intermediate metabolites B and C. The smoothness for interpolating B can be defined as d(A, D)/(d[A, B]+d[B, D]), where d is the euclidean distance between the 64 dimensional PCA projection of cFP or POM (Figure 3c). In total, 63 such valid odorous metabolite triplets are found and evaluated.
 
-## Common scents for molecule pairs
+### Common scents for molecule pairs
 
 The common scents for molecule pairs listed in Figure 2d and Figure 4d are predicted by a state of the art model (Sanchez-Lengeling et al., 2019). An odor label is assigned to the molecule if the model predicts a label probability >0.5 for that label. Multiple labels are possible for each molecule.

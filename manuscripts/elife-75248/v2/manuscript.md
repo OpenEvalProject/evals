@@ -10,18 +10,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0040axw97 Centre for Vertebrate Evolutionary Biology, Yunnan University Kunming China
-2. https://ror.org/039zvsn29 Department of Earth Sciences, Natural History Museum London United Kingdom
-3. https://ror.org/01z22gc86 Yimen Administration of Cultural Heritage Yimen China
-4. https://ror.org/0000pmw59 Key Laboratory of Evolutionary Systematics of Vertebrates, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China
+1. Centre for Vertebrate Evolutionary Biology, Yunnan University Kunming China ([ROR:0040axw97](https://ror.org/0040axw97))
+2. Department of Earth Sciences, Natural History Museum London United Kingdom ([ROR:039zvsn29](https://ror.org/039zvsn29))
+3. Yimen Administration of Cultural Heritage Yimen China ([ROR:01z22gc86](https://ror.org/01z22gc86))
+4. Key Laboratory of Evolutionary Systematics of Vertebrates, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China ([ROR:0000pmw59](https://ror.org/0000pmw59))
 5. Center for Excellence in Life and Paleoenvironment Beijing China
-6. https://ror.org/00b30xv10 Department of Biology, Indiana University of Pennsylvania Pennsylvania United States
+6. Department of Biology, Indiana University of Pennsylvania Pennsylvania United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
 ## Abstract
 
-The early evolutionary history of the armored dinosaurs (Thyreophora) is obscured by their patchily distributed fossil record and by conflicting views on the relationships of Early Jurassic taxa. Here, we describe an early diverging thyreophoran from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China, on the basis of an associated partial skeleton that includes skull, axial, limb, and armor elements. It can be diagnosed as a new taxon based on numerous cranial and postcranial autapomorphies and is further distinguished from all other thyreophorans by a unique combination of character states. Although the robust postcranium is similar to that of more deeply nested ankylosaurs and stegosaurs, phylogenetic analysis recovers it as either the sister taxon of Emausaurus or of the clade Scelidosaurus + Eurypoda. This new taxon, Yuxisaurus kopchicki , represents the first valid thyreophoran dinosaur to be described from the Early Jurassic of Asia and confirms the rapid geographic spread and diversification of the clade after its first appearance in the Hettangian. Its heavy build and distinctive armor also hint at previously unrealized morphological diversity early in the clade’s history.
+The early evolutionary history of the armored dinosaurs (Thyreophora) is obscured by their patchily distributed fossil record and by conflicting views on the relationships of Early Jurassic taxa. Here, we describe an early diverging thyreophoran from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China, on the basis of an associated partial skeleton that includes skull, axial, limb, and armor elements. It can be diagnosed as a new taxon based on numerous cranial and postcranial autapomorphies and is further distinguished from all other thyreophorans by a unique combination of character states. Although the robust postcranium is similar to that of more deeply nested ankylosaurs and stegosaurs, phylogenetic analysis recovers it as either the sister taxon of Emausaurus or of the clade Scelidosaurus+ Eurypoda. This new taxon, Yuxisaurus kopchicki, represents the first valid thyreophoran dinosaur to be described from the Early Jurassic of Asia and confirms the rapid geographic spread and diversification of the clade after its first appearance in the Hettangian. Its heavy build and distinctive armor also hint at previously unrealized morphological diversity early in the clade’s history.
 
 ## Introduction
 
@@ -35,77 +35,77 @@ Two probable thyreophoran taxa have been described from the Early Jurassic of Ch
 
 Here, we describe a new thyreophoran taxon from the Lower Jurassic Fengjiahe Formation of Yunnan Province, southwestern China on the basis of a partial skeleton and discuss its significance for early ornithischian evolution.
 
-## Geological setting
+### Geological setting
 
 The main exposures of the Fengjiahe Formation are found in the Chuxiong Basin and Yiliang region of central and northeastern Yunnan, respectively (Figure 1A and B). It consists primarily of dull purplish and dark red mudstone and siltstone, mixed with yellowish or greyish green siltstone and quartz sandstone, calcareous mudstone, and nodules (Fang et al., 2008). Pang et al., 2002 recognized a transition bed between the underlying coal-bearing Shezi Formation and the overlying Fengjiahe Formation and designated this transitional bed as a new lithostratigraphic unit, the Yubacun Formation. This revision resulted in the separation of the lower variegated beds from the overlying purple sediments of the Fengjiahe Formation (Pang et al., 2002). Although the presence of the Yubacun Formation in the Jiaojiadian area has not been confirmed, the lower greyish-green sandstones formerly referred to as the Fengjiahe Formation in this area coincide well with the lithology of the Yubacun Formation and are now considered to represent this unit (Figure 1C). Here, therefore, we restrict the Fengjiahe Formation to the sequence above these greyish-green sandstones (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig1-v2.jpg)
 
-**Figure 1.:** Yuxisaurus kopchicki CVEB21701.(A) Location of the quarry yielding Yuxisaurus kopchicki, with a red star indicating the locality. (B) Sediments of the Fengjiahe Formation at the quarry site. (C) Stratigraphic column of the Fengjiahe Formation in the Jiaojiadian area (modified from Bai, 1999).
+**Figure 1.:** (A) Location of the quarry yielding Yuxisaurus kopchicki, with a red star indicating the locality. (B) Sediments of the Fengjiahe Formation at the quarry site. (C) Stratigraphic column of the Fengjiahe Formation in the Jiaojiadian area (modified from Bai, 1999).
 
 The Fengjiahe Formation is currently thought to be a lateral equivalent of the Lufeng Formation, which crops out in the adjacent Lufeng Basin (Fang et al., 2008). Biostratigraphical correlations based on fossil vertebrates have suggested that the Lufeng Formation is Lower Jurassic (Hettangian–Sinemurian) in age (Luo and Wu, 1994), and the similar vertebrate fauna and correlations based on invertebrate and micropaleontological material from the Fengjiahe Formation are consistent with this (Chen et al., 1982). However, more recent magnetostratigraphic evidence posits a younger age for the Lufeng Formation, namely late Sinemurian–Toarcian (Huang et al., 2005). Although it has not yielded as many vertebrate fossils as the Lufeng Formation, the Fengjiahe Formation has produced several important early sauropodomorph dinosaurs, such as Chinshakiangosaurus chunghoensis, Irisosaurus yimenensis, Lufengosaurus huenei, Yunnanosaurus huangi, Y. robustus, and Yimenosaurus yangi, as well as the theropod Shuangbaisaurus anlongbaoensis and dinosaur footprints (Zhen et al., 1986; Bai et al., 1990; Bai, 1999; Dong, 2001; Upchurch et al., 2007; Wang et al., 2017; Peyre de Fabrègues et al., 2020). The new thyreophoran was discovered in the upper part of the Fengjiahe Formation, as is usually the case for the vertebrate material recovered from this stratum.
 
 ## Results
 
-## Systematic paleontology
+### Systematic paleontology
 
-## Holotype
+### Holotype
 
 CVEB (Centre for Vertebrate Evolutionary Biology, Yunnan University) 21,701 a partial skeleton with cranial and associated postcranial elements (Figure 2), including: the right-hand side of the skull (fused maxilla, lacrimal, nasal, prefrontal, jugal, and supraorbitals); braincase; partial skull roof; posterior parts of the hemimandibles; four articulated cervical vertebrae; five dorsal vertebrae; left proximal and right distal scapulae; right humerus; left distal femur; more than 120 osteoderms; and several unidentifiable elements.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig2-v2.jpg)
 
-**Figure 2.:** Yuxisaurus kopchicki showing some of the main preserved elements from the holotype (highlighted in blue), with details of the skull bones (A), cervical vertebrae (B), dorsal vertebrae (C), left scapula (D), right humerus (E), and left femur (F).Scale bars equal 5 cm (A–C) or 10 cm (D–F). The facial region and distal scapula are mirrored. Osteoderms have been omitted for convenience.
+**Figure 2.:** Scale bars equal 5 cm (A–C) or 10 cm (D–F). The facial region and distal scapula are mirrored. Osteoderms have been omitted for convenience.
 
-## Etymology
+### Etymology
 
 The generic name refers to the type locality in Yuxi Prefecture, with the suffix -saurus from the Greek, meaning reptile. The specific name is after Dr. John J. Kopchick in recognition of his contributions to biology and the IUP Science Building.
 
-## Horizon and locality
+### Horizon and locality
 
 Upper part of the Fengjiahe Formation, near Jiaojiadian village, Yimen County, Yuxi Prefecture, Yunnan Province, China; late Sinemurian–Toarcian (Huang et al., 2005; Figure 1C).
 
-## Diagnosis
+### Diagnosis
 
 A medium-sized armored dinosaur that can be distinguished from all other thyreophorans by the following autapomorphies: deep, subtriangular, dorsoventrally elongated depression on either side of the nuchal crest; a ‘V’-shaped notch on the dorsal margin of the paroccipital process; basal tubera that are considerably ventrally offset with respect to the occipital condyle, so that they are clearly visible in posterior view; basipterygoid processes that are ventrally offset with respect to the basal tubera, creating a dorsoventrally deep, ‘stepped’ basicranial profile in lateral view; cultriform process ventrally offset with respect to the occipital condyle in lateral view; angular with elongate, dorsally deflected posterior process that almost reaches the posterior margin of the retroarticular process; atlas intercentrum with symmetrical anterolaterally directed low ridges and associated arrow-like depressions on its ventral surface; relatively short anterior cervical centra (length/height ratio<1.5); cervical centra lack ventral keels; border of the medial condyle of the distal femur invaginated to form a broad, ‘U’-shaped trough.
 
 In addition, Yuxisaurus can be distinguished from other early thyreophorans using the following combination of character states: antorbital fossa subtriangular in outline, unlike that of Scelidosaurus, and with rounded corners, unlike that in Scutellosaurus; anterior ramus of the jugal projects posteroventrally, rather than horizontally as in Emausaurus, Scelidosaurus, and Scutellosaurus; maxillary tooth row bowed medially to a greater degree than in Emausaurus, Scelidosaurus, or Scutellosaurus; maxillary tooth crowns bearing well-defined ridges, which are absent in Emausaurus, Scelidosaurus, and Scutellosaurus; a relatively short axial neural spine with a sinuous dorsal margin in lateral view, contrasting with the straight margin and significant posterior expansion of the neural spine present in Scelidosaurus; elongate axial rib, which extends to the midpoint of cervical vertebra 3, unlike the shorter rib present in Scelidosaurus; absence of lateral ridge on the axial rib, which is present in Scelidosaurus; proximal and distal expansions of the humerus relatively larger than in Scelidosaurus and Scutellosaurus; deep notch separating the humeral head and dorsal margin of the internal tuberosity, which is absent in Scelidosaurus and Scutellosaurus; and broad, ‘U’-shaped fossa on anterior surface of distal humerus, contrasting with the narrow, ‘V’-shaped fossae in Scelidosaurus and Scutellosaurus.
 
-## Remarks
+### Remarks
 
 The other thyreophoran taxa named from the Early Jurassic of China (‘Bienosaurus’ and ‘Tatisaurus’) are based on undiagnostic material (Norman et al., 2007; Raven et al., 2019) and have limited anatomical overlap with Yuxisaurus. Consequently, it is not possible to make meaningful comparisons between them and no shared features can be identified. As a result, additional specimens will be required to establish whether these three named taxa are synonymous or if multiple thyreophoran taxa were present in the Early Jurassic of China.
 
-## Description and comparisons
+### Description and comparisons
 
-## General comments
+#### General comments
 
 The cranial bones are highly fused and the neurocentral sutures of all preserved cervical and dorsal vertebrae are invisible, in particular the completely obliterated axial neurocentral suture, suggesting that this specimen might represent an adult individual (Brochu, 1996). Compared to other closely-related taxa, the skull of Yuxisaurus kopchicki is larger than those of S. lawleri (Breeden and Rowe, 2020; Breeden et al., 2021), E. ernsti (Haubold, 1990), and S. harrisonii (Natural History Museum, London [NHMUK] PV R1111; Norman, 2020c), and Y. kopchicki has much more robust fore- and hindlimbs than the latter.
 
-## Skull and mandible
+#### Skull and mandible
 
 The skull includes a braincase, part of the skull roof, the co-ossified right side of the facial region (including the maxilla, anterior and mesosupraorbitals, lacrimal, prefrontal, jugal, and probable nasal), and the posterior parts of both hemimandibles (Figure 2, Figure 3, Figure 4, Figure 5, Figure 6, Figure 7).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig3-v2.jpg)
 
-**Figure 3.:** Yuxisaurus kopchicki in (A) lateral, (B) medial, (C) dorsal, and (D) ventral views.Maxillary tooth row in (E) lingual view with the last tooth in (F) lingual view. Abbreviations: af, antorbital fenestra; afo, antorbital fossa; fenestra; aso, anterior supraorbital; ju, jugal; mrl, maxillary ramus of the lacrimal; mso, mesosupraorbital; orb, orbital; aso anterior supraorbital; prf, prefrontal. Scale bar equals 5 cm.
+**Figure 3.:** Maxillary tooth row in (E) lingual view with the last tooth in (F) lingual view. Abbreviations: af, antorbital fenestra; afo, antorbital fossa; fenestra; aso, anterior supraorbital; ju, jugal; mrl, maxillary ramus of the lacrimal; mso, mesosupraorbital; orb, orbital; aso anterior supraorbital; prf, prefrontal. Scale bar equals 5 cm.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig4-v2.jpg)
 
-**Figure 4.:** Yuxisaurus kopchicki in left lateral (A) and right lateral (B) views.Abbreviations: aud, auditory recess; bo, basioccipital; bp, basipterygoid process; bs, basisphenoid; cp, cultriform process (parasphenoid rostrum); fm, foramen magnum; ls, laterosphenoid; n. V, exit of trigeminal nerve; n. XII, exit of cranial nerve XII; oc, occipital condyle; os, orbitosphenoid; oto, otoccipital; pa, parietal; pap, paroccipital process; po, postorbital; pr, prootic; pt, pterygoid; q, quadrate; sq, squamosal. Scale bar equals 5 cm.
+**Figure 4.:** Abbreviations: aud, auditory recess; bo, basioccipital; bp, basipterygoid process; bs, basisphenoid; cp, cultriform process (parasphenoid rostrum); fm, foramen magnum; ls, laterosphenoid; n. V, exit of trigeminal nerve; n. XII, exit of cranial nerve XII; oc, occipital condyle; os, orbitosphenoid; oto, otoccipital; pa, parietal; pap, paroccipital process; po, postorbital; pr, prootic; pt, pterygoid; q, quadrate; sq, squamosal. Scale bar equals 5 cm.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig5-v2.jpg)
 
-**Figure 5.:** Yuxisaurus kopchicki in (A) dorsal, (B) ventral, (C) anterior, and (D) posterior views.Abbreviations: bo, basioccipital; bp, basipterygoid process; bs, basisphenoid; cp, cultriform process (parasphenoid rostrum); fm, foramen magnum; nt, ‘V’-shaped notch; n. V, exit of trigeminal nerve; oc, occipital condyle; os, orbitosphenoid; pa, parietal; pap, paroccipital process; po, postorbital; pt, pterygoid; q, quadrate; qd, quadrate depression; sq, squamosal. Scale bar equals 5 cm.
+**Figure 5.:** Abbreviations: bo, basioccipital; bp, basipterygoid process; bs, basisphenoid; cp, cultriform process (parasphenoid rostrum); fm, foramen magnum; nt, ‘V’-shaped notch; n. V, exit of trigeminal nerve; oc, occipital condyle; os, orbitosphenoid; pa, parietal; pap, paroccipital process; po, postorbital; pt, pterygoid; q, quadrate; qd, quadrate depression; sq, squamosal. Scale bar equals 5 cm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig6-v2.jpg)
 
-**Figure 6.:** Yuxisaurus kopchicki in (A) dorsal, (B) lateral, and (C) ventral views.Abbreviations: cd, channel-like depression; d, dome. Scale bar equals 5 cm.
+**Figure 6.:** Abbreviations: cd, channel-like depression; d, dome. Scale bar equals 5 cm.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig7-v2.jpg)
 
-**Figure 7.:** Yuxisaurus kopchicki.Posterior part of left hemimandible in (A) lateral, (B) ventral, (C) medial, and (D) dorsal views. Posterior part of right hemimandible in (E) lateral, (F) ventral, (G) medial, and (H) dorsal views. Abbreviations: af, adductor fossa; an, angular; c, concavity; cor, coronoid; cor.em, coronoid eminence; pr, prearticular; sa, surangular; sf, surangular foramen. Scale bar equals 5 cm.
+**Figure 7.:** Posterior part of left hemimandible in (A) lateral, (B) ventral, (C) medial, and (D) dorsal views. Posterior part of right hemimandible in (E) lateral, (F) ventral, (G) medial, and (H) dorsal views. Abbreviations: af, adductor fossa; an, angular; c, concavity; cor, coronoid; cor.em, coronoid eminence; pr, prearticular; sa, surangular; sf, surangular foramen. Scale bar equals 5 cm.
 
-## Maxilla
+##### Maxilla
 
 In lateral view, the right maxilla appears to be fused completely with the jugal posteriorly, the lacrimal posterodorsally, and the nasal medially, with few identifiable sutures. Its anterior part is broken. An anteroposteriorly elongated antorbital fossa excavates its lateral surface deeply. The antorbital fossa is rounded and subtriangular in outline with long anterodorsal and ventral margins and a short posterodorsal margin (Figure 3A). The fossa reaches a maximum length of 48 mm and is 20 mm in height at its apex. Most of the antorbital fossa is closed medially by an extensive, sheet-like medial lamina, but a small, oval antorbital fenestra pierces its posteroventral corner (Figure 3A). This region differs from that of Scelidosaurus, which has a relatively smaller antorbital fossa with a dorsoventrally narrow, elliptical outline (NHMUK PV R1111; Norman, 2020c), but is very similar to that of Emausaurus (Haubold, 1990). It differs from those of Lesothosaurus (e.g., NHMUK PV RU B17; Porro et al., 2015), Scutellosaurus (Breeden and Rowe, 2020), and Huayangosaurus ( Sereno and Dong, 1992) in having a fossa with smooth, rounded corners, in contrast to the sharp, angular corners seen in the latter taxa. Yuxisaurus also appears to lack the anterior antorbital foramen present in Scelidosaurus (Norman, 2020c), but this area is still encased in matrix.
 
@@ -117,53 +117,53 @@ The antorbital fenestra is a rounded opening in medial view. The medial (lacrima
 
 In ventral view, the alveolar border is bowed medially and the deflection angle between the anterior and posterior axes of the tooth row is approximately 148° (Figure 3D). The curvature in Yuxisaurus is not as extreme as that present in many ankylosaurians where the tooth row is strongly bowed (Vickaryous and Russell, 2003), but is greater than that in Scelidosaurus, Emausaurus, Scutellosaurus, and stegosaurians in which the maxillary tooth row is almost straight and only slightly curved (Colbert, 1981; Haubold, 1990; Sereno and Dong, 1992; Galton, 2004; Breeden and Rowe, 2020; Norman, 2020c; Breeden et al., 2021). Based on the number of alveoli present (Figure 3D), Yuxisaurus possessed at least 14 maxillary teeth.
 
-## Lacrimal
+##### Lacrimal
 
 The lacrimal lacks any discernible sutures with the surrounding bones except medially (part of its junction with the maxilla; see above) and with the anterior supraorbital ( = palpebral) (where a curved groove might mark the boundary) (Figure 3A–C). Based on comparisons with other thyreophorans, the lacrimal is inferred to comprise the anterior margin of the orbit and to contact the maxilla anteriorly and ventrally, the jugal posteroventrally, and the anterior supraorbital and prefrontal dorsally and posteriorly. The lateral surface of the lacrimal is sculptured and rugose, particularly in the region of the orbital margin. Its posterior surface (i.e., the anterior margin of the orbit) is concave and rounded in lateral view. In the border of the orbit, a rounded opening is present, indicating the exit of the nasolacrimal duct. The posterior margin of the lacrimal expands medially, to form a partition that separates the orbit from the nasal cavity anteriorly (Figure 3B). In medial view, this wall becomes thinner as it curves dorsally and slightly posteriorly to approach the prefrontal. The maxillary ramus of the lacrimal is an anteriorly trending triangular lamina that is concave in medial view, tapering at its anterior end. Due to the absence of recognizable sutures, it is not possible to determine the extent of the lacrimal’s contribution to the antorbital fossa and fenestra.
 
-## Nasal
+##### Nasal
 
 A small fragment of bone anterior to the right prefrontal might represent part of the right nasal (Figure 3A–C). However, it cannot be identified with confidence and offers no useful information.
 
-## Prefrontal
+##### Prefrontal
 
 The right prefrontal roofs the nasal cavity dorsally (Figure 3A) and is flat ventrally but slightly domed in dorsal view (Figure 3C). It contacts the mesosupraorbital laterally and the middle supraorbital posteriorly. The prefrontal probably contacts the lacrimal anteriorly but this cannot be substantiated due to lack of a clear suture. A fractured bone anterior to the prefrontal, medial to the maxilla, probably belongs to the right nasal (see above).
 
-## Supraorbitals
+##### Supraorbitals
 
 The anterior supraorbital ( = palpebral of other ornithischians) is represented by its anterior part only, which occupies the upper boundary of the orbit (Figure 3A). The anterior supraorbital is a narrow, elongated bone, which is co-ossified with the lacrimal anteroventrally, the prefrontal anteromedially, and the mesosupraorbital medially. Viewed laterally, the anterior supraorbital curves posterodorsally from the anterodorsal margin of the orbit (Figure 3A). In dorsal view, it has a rounded anterior end to contact the lacrimal, while its contact with the mesosupraorbital is unclear. On the dorsal surface of the anterior supraorbital a distinct ridge extends posterodorsally (Figure 3C). The mesosupraorbital is partly preserved. It bulges dorsally but is concave ventrally and contacts the anterior supraorbital anteriorly through an anterolateral-posteromedial directed suture that turns into a groove dorsally.
 
-## Jugal
+##### Jugal
 
 The partly preserved right jugal articulates with the maxilla and lacrimal anteriorly. In lateral or medial view, the anterior ramus of the jugal projects posteriorly and slightly ventrally, whereas in dorsal or ventral view it extends posterolaterally (Figure 3A–D). Yuxisaurus differs from Emausaurus, Scutellosaurus, and Scelidosaurus, in which the anterior ramus is oriented horizontally (Haubold, 1990; Breeden and Rowe, 2020; Norman, 2020c; Breeden et al., 2021), but is more similar to several ankylosaurians, such as Pinacosaurus, Gobisaurus, Saichania, and Edmontonia, where the anterior ramus projects posteroventrally (Godefroit et al., 1999; Vickaryous et al., 2001; Vickaryous, 2006; Carpenter et al., 2011). The transverse cross-section of the jugal anterior ramus is rhomboidal but its posterior end is transversely compressed and dorsoventrally expanded. The posteromedial margin is inverted, leaving a dorsoventrally oriented embayment exposed in medial view.
 
-## Postorbital
+##### Postorbital
 
 The postorbital is represented only by the left squamosal process, which formed part of the supratemporal bar. This process is bullet-shaped in dorsal view with a wide anterior end and pointed posterior end (Figure 4A and B). It is rhomboidal in cross-section with a flat dorsal surface that lies lateral and dorsal to the squamosal. The postorbital formed part of the dorsal margin of the infratemporal fenestra, but no other details are visible.
 
-## Squamosal
+##### Squamosal
 
 The right squamosal is broken anteriorly and is slightly displaced medially, while the left squamosal articulates with the squamosal process of the left postorbital (Figures 4A, B, 5A and B). The squamosal is broad posteriorly, tapers anteriorly, and the dorsal surface of its central body is flat (Figures 4B and 5A). Its anterodorsal process is about 35-mm long and extends anteriorly and a little ventromedially, so that in dorsal view this process lies both medial and ventral to the squamosal process of the postorbital. In ventral view, this process is transversely narrow. The left anteroventral process is missing but this feature is preserved on the right side. It is rod-like but truncated anteriorly, and its dorsal part encloses a deep oval sulcus on the lateral surface (Figure 4A and B). The posteromedial process is dorsoventrally tall, merging with the squamosal process of the parietal posteriorly without a discernible suture on the posterior wall of the supratemporal fenestra. In medial view, at the base of the squamosal central body, is a fossa that is much broader on the right side than on the left. In lateral view, a similar but deeper recess is situated at the base of the squamosal central body to receive the quadrate head (Figure 4A and B). Posteriorly a short vertical process of the squamosal abuts the anterior surface of the paroccipital process (Figure 4). Viewed posteriorly, the squamosal is exposed dorsally, but it is positioned only slightly higher than the paroccipital process, as also occurs in Lesothosaurus (Sereno, 1991). By contrast, the squamosal has a much greater exposure in posterior view in Scelidosaurus and ankylosaurians (Vickaryous and Russell, 2003; Norman, 2020c), although the degree of exposure varies among stegosaurs (Gilmore, 1914; Sereno and Dong, 1992).
 
 In dorsal view, the squamosal forms most of the medial margin of the large supratemporal fenestra, as well as its posterior corner. Although the boundaries of neither supratemporal fenestra are complete, the preserved portion on the left-hand side of the skull suggests that it had an ovate to subtriangular outline similar to that of Emausaurus (Haubold, 1990) and Scelidosaurus (NHMUK PV R1111; Norman, 2020c). The squamosal also formed the posterodorsal corner of an open infratemporal fenestra (Figure 5A).
 
-## Quadrate
+##### Quadrate
 
 The right quadrate is partially preserved with its ventral-most part missing and the quadrate head displaced from the squamosal recess. In lateral view, the posterior margin of the quadrate is sinuous, being convex in its dorsal part but inflected at a point around one-third of its length so that ventral to this the rest of this margin is shallowly concave (Figure 4B). In posterior view, the proximal quadrate bears a strong, curved crest. Although the ventral part is missing, it seems to curve ventromedially based on the remaining shaft. The pterygoid wing is laminar and extends anteromedially from the middle of the shaft to meet the quadrate ramus of the pterygoid (Figures 4B and 5B). A large oval depression occupies the medial surface of the pterygoid wing, as in Scelidosaurus (Norman, 2020c).
 
-## Parietal
+##### Parietal
 
 The parietal fuses with its counterpart to form an hourglass-shaped compound bone in dorsal view that bears a prominent sagittal crest (Figure 5A). The parietal fuses fully with the laterosphenoid anteroventrally and the prootic posteroventrally with no traceable boundaries between them. The posterior portion of the right parietal is damaged. The smooth lateral surfaces are concave anteroposteriorly but convex transversely and curve outward to form a short anterolateral process. In lateral view, the parietal extends to a level much higher than the squamosal (Figure 4B), in contrast to Scelidosaurus and stegosaurs in which the parietal is either only slightly elevated or at the same level (Gilmore, 1914; Sereno and Dong, 1992; Norman, 2020c). A deep sulcus is present on the main body of the left parietal close to the junction between the left medial and posterior supratemporal walls (Figure 5A), but this is not visible on the right-hand side, where it is concealed by the displaced squamosal. The parietal forms the medial boundary of the open supratemporal fenestra.
 
-## Pterygoid
+##### Pterygoid
 
 The pterygoid is partially preserved on the right side and is situated between the quadrate and the basipterygoid process of the basisphenoid. In posterior view, its quadrate ramus is a fan-shaped lamina that extends laterodorsally to meet the pterygoid wing of the quadrate (Figure 5D). Its ventral margin curls dorsally to form a narrow trough that is visible in posterior view as in Lesothosaurus and Scelidosaurus (Sereno, 1991; Norman, 2020c).
 
-## Skull roof fragment
+##### Skull roof fragment
 
 A broken plate-like element is tentatively identified as part of the skull roof, but it is unclear how it relates to the other cranial elements (Figure 6). Its most conspicuous feature is its wave-like surface texture, which is due to its domed external surface combined with the presence of a channel-like depression. This feature might be unique to Yuxisaurus, since the skull roof is generally flat in other thyreophorans (e.g., Haubold, 1990; Sereno and Dong, 1992; Norman, 2020c). However, given its uncertain identification, this element is not considered further herein.
 
-## Braincase
+##### Braincase
 
 The occipital portion of the skull is well preserved and its broadest part reaches a maximum width of approximately 134 mm (measured between the distal ends of the paroccipital processes). This is comparable to that of Scelidosaurus (NHMUK PV R1111: c. 120 mm; N.B. the scale bar given in Norman, 2020c, Figure 3 is incorrect, implying that the holotype skull is twice as large as it is) and the Late Jurassic ankylosaurian Gargoyleosaurus (154 mm; Carpenter et al., 1998) but is substantially greater than the estimated total skull width of Emausaurus (83 mm; Haubold, 1990). In posterior view, the occipital bones appear to be completely fused with each other, and the junctions between them are obscured (Figure 5D). The dorsal half of the occiput is strongly inclined anteriorly. A robust nuchal crest immediately dorsal to the foramen magnum extends vertically to meet the parietal (Figure 5D) and is flatter and wider than that present in Scelidosaurus (NHMUK PV R1111; Norman, 2020c). A deep dorsoventrally elongated, subtriangular depression is present on each side of the nuchal crest, excavating the posterior surface of the supraoccipital (Figure 5D), likely representing insertion areas for the neck musculature. By contrast, the corresponding area in Scelidosaurus is very shallowly concave and coarsely textured (NHMUK PV R1111; Norman, 2020c). The same region bears only a shallow concavity in ankylosaurians (e.g., Gargoyleosaurus, Pawpawsaurus, and Euoplocephalus), and in stegosaurs this depression is shallow in Huayangosaurus and deep and subquadrate in Stegosaurus (Gilmore, 1914; Sereno and Dong, 1992; Lee, 1996; Carpenter et al., 1998; Vickaryous and Russell, 2003; Norman, 2020c). Consequently, these large, teardrop-shaped fossae are a potential autapomorphy of Yuxisaurus.
 
@@ -179,7 +179,7 @@ The basipterygoid and parasphenoid are fused indistinguishably and the cultrifor
 
 The junction between the basisphenoid and prootic cannot be determined, but the presence of the latter can be inferred from the position of a large, teardrop-shaped foramen on the lateral surface of the braincase, which is inferred to be the exit for cranial nerve V (trigeminal: Figure 4A). Similarly, at least a portion of the laterosphenoid is present anterior to this opening, although no sutures are visible in this region. The braincase is open anteriorly, revealing the endocranial cavity, which is vertically expanded and has a rounded, smooth inner surface (Figure 5C). A bone fragment attached to the anterior border of the right laterosphenoid is identified as the right orbitosphenoid. Ossified orbitosphenoids are also present in Scelidosaurus (NHMUK PV R1111; Norman, 2020c), ankylosaurs (Maryanska, 1977; Vickaryous and Russell, 2003), and stegosaurs (Gilmore, 1914).
 
-## Mandible
+##### Mandible
 
 The post-dentary portions of both hemimandibles are preserved, including the angulars, surangulars, prearticulars, and articulars (Figure 7). Their lateral surfaces are smooth and bear no ornamentation or fused osteoderms.
 
@@ -193,23 +193,23 @@ The articular is completely fused with the surrounding bones so its original out
 
 A bone fragment in the anterodorsal corner of the adductor fossa of the right hemimandible might represent part of a coronoid, but further information is unavailable due to poor preservation.
 
-## Dentition
+##### Dentition
 
 Most of the maxillary tooth crowns were abraded away accidentally during preparation (Figure 3E). The alveolar sockets are elliptical and slightly expanded transversely (Figure 3D). Most of the teeth are similar in size except for the 7th, 8th, 10th, and 11th teeth, which appear to be slightly larger on the basis of their cross-sections (approximately 5-mm labiolingually by 7-mm mesiodistally). The best-preserved tooth is the posterior-most one, which is embedded in its socket. This tooth crown is triangular in lingual view and has coarsely denticulate mesial and distal margins (Figure 3F). Its lingual surface is ornamented with multiple (at least four) pairs of vertical ridges lying in parallel to each another, which extend to the ventral margin of the crown and support the marginal denticles. These ridges are narrow but densely packed and are almost evenly distributed over the crown surface. The tooth differs from those of Lesothosaurus and Scutellosaurus, which lack ridges on the crown surface (Colbert, 1981; Sereno, 1991; Breeden et al., 2021), and those of Emausaurus and Scelidosaurus, which have only incipient fluting and ridges (Haubold, 1990; Norman, 2020c; NHMUK PV R1111). However, the teeth of many ankylosaurs (Vickaryous and Russell, 2003) and stegosaurs (Galton, 2004) do bear numerous ridges, although Yuxisaurus lacks the prominent primary ridge that is often present in stegosaurs as well as the rounded denticles usually present in the latter clade.
 
-## Axial skeleton
+### Axial skeleton
 
 An articulated series of the four anterior-most cervical vertebrae is present and well preserved (Figure 8). Originally, these vertebrae were articulated with the occiput, but they were separated during preparation. Five isolated dorsal vertebrae of varying preservation are also present (Figure 9). They were not articulated and their exact sequence cannot be confirmed due to the variation in vertebral morphology and proportions that occurs along the dorsal series of other thyreophoran dinosaurs. However, we attempt to place them in relative order herein.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig8-v2.jpg)
 
-**Figure 8.:** Yuxisaurus kopchicki in (A) left lateral, (B) dorsal, (C) right lateral, (D) ventral, (E) posterior, and (F) anterior views.Atlas in (G) ventral view with interpretative diagram beneath. Abbreviations: ard, arrow-like depression; cvr, cervical rib; ns, neural spine; pap, parapophysis; poz, postzygapophysis; prz, prezygapophysis; ri, ridge; tp, transverse process. Scale bar equals 5 cm.
+**Figure 8.:** Atlas in (G) ventral view with interpretative diagram beneath. Abbreviations: ard, arrow-like depression; cvr, cervical rib; ns, neural spine; pap, parapophysis; poz, postzygapophysis; prz, prezygapophysis; ri, ridge; tp, transverse process. Scale bar equals 5 cm.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig9-v2.jpg)
 
-**Figure 9.:** Yuxisaurus kopchicki.D1 in (A) left lateral, (B) dorsal, (C) anterior, (D) posterior, and (E) ventral views. D2 in (F) left lateral, (G) dorsal, (H) anterior, (I) posterior, and (J) ventral views. D3 in (K) left lateral, (L) dorsal, (M) anterior, (N) posterior, and (O) ventral views. D4 in (P) left lateral, (Q) dorsal, (R) anterior, (S) posterior, and (T) ventral views. D5 in (U) left lateral, (V) dorsal, (W) anterior, (X) posterior, and (Y) ventral views. Abbreviations: f, fossa; k, keel; nc, neural canal; pap, parapophysis; prz, prezygapophysis; tp, transverse process. Scale bar equals 5 cm.
+**Figure 9.:** D1 in (A) left lateral, (B) dorsal, (C) anterior, (D) posterior, and (E) ventral views. D2 in (F) left lateral, (G) dorsal, (H) anterior, (I) posterior, and (J) ventral views. D3 in (K) left lateral, (L) dorsal, (M) anterior, (N) posterior, and (O) ventral views. D4 in (P) left lateral, (Q) dorsal, (R) anterior, (S) posterior, and (T) ventral views. D5 in (U) left lateral, (V) dorsal, (W) anterior, (X) posterior, and (Y) ventral views. Abbreviations: f, fossa; k, keel; nc, neural canal; pap, parapophysis; prz, prezygapophysis; tp, transverse process. Scale bar equals 5 cm.
 
-## Cervical vertebrae and ribs
+#### Cervical vertebrae and ribs
 
 The atlas is composed of a ventral intercentrum and a pair of dorsal neural arches (Figure 8A–D, F and G). In anterior view, the atlas is rotated clockwise through 30° with respect to the other preserved vertebrae (Figure 8F). It is much wider transversely than long anteroposteriorly . The intercentrum is crescentic to reniform in outline in anterior view and possesses an anterior articular surface that is broadly concave and faces anterodorsally (Figure 8F). A massive but short swelling is present on either side of the lateral surface that is directed ventrally and laterally, anterior to which is a low anterodorsally directed ridge (Figure 8F and G). This ridge is separated from the swelling by a distinct anterodorsally directed trough. Viewed ventrally, a pair of arrow-like depressions, which point posterolaterally, occupies the posterior-most surface of the intercentrum to form sharp posterior margins (Figure 8G). This feature appears to be unique to Yuxisaurus and is absent in Scelidosaurus (NHMUK PV R1111; Norman, 2020a) and Scutellosaurus (Breeden and Rowe, 2020; Breeden et al., 2021). In contrast to Yuxisaurus, the ventral surface of the atlantal intercentrum in Stegosaurus bears two posterolaterally directed ridges and a subtle midline ridge separating two cavities (Maidment et al., 2015). The left neural arch is incompletely preserved but resembles closely the right one where preserved. The right pedicle is cylindrical, with an expanded ventral base articulating with the intercentrum. The postzygapophysis is a thin plate, extending posterodorsally, as in Scelidosaurus (NHMUK PV R1111; Norman, 2020a) and Gastonia (Kinneer et al., 2016), but its lateral margin bulges and thickens. A small plate above the neural arch probably represents the proatlas.
 
@@ -221,7 +221,7 @@ The fourth cervical centrum is similar to that of the preceding vertebra, both i
 
 A cervical rib articulates with the parapophysis of the right axis and, partly, with the posterior surface of the atlas via its expanded single head. Its elongate shaft extends posterodorsally at an angle of 32° from the horizontal with a gentle curvature (Figure 8C), almost reaching the middle of the third cervical with a total length of about 75 mm. By contrast, the axial ribs of Scelidosaurus are relatively shorter (Norman, 2020a), but they are unknown in other early thyreophoran taxa. In Yuxisaurus, the rib shaft is transversely compressed and tapers distally, but that of Scelidosaurus is more rod-like (Norman, 2020a) but this difference could reflect taphonomic compression. The lateral surface of the rib shaft is generally flat, but is slightly depressed anteriorly, and is separated from the head by a shallow break-in-slope in lateral view. By contrast, the axial rib of Scelidosaurus bears a lateral ridge along the shaft (Norman, 2020a). Another 26-mm-long rib fragment is attached to the lateroventral surface of the axis.
 
-## Dorsal vertebrae
+#### Dorsal vertebrae
 
 Five isolated dorsal vertebrae of varying preservation are present (Figure 9) and are labeled as D1–D5 for convenience. They are generally similar to those of a range of thyreophoran taxa, including Scelidosaurus and ankylosaurs (Vickaryous and Russell, 2003; Norman, 2020a), although they lack the extreme neural arch elongation of stegosaurs (Galton, 2004).
 
@@ -235,23 +235,23 @@ The centrum of ‘D2’ is spool-shaped with a ventral margin that is gently arc
 
 ‘D5’ consists only of the centrum and the broken bases of the neural arch pedicles (Figure 9U–Y). It is generally similar to the other dorsal vertebrae and is of equal length to ‘D4,’ although its concave lateral surfaces are smooth and lack depressions. The ventral margin of the centrum is only slightly concave in lateral view, and in ventral view, the keel is less prominent than that of ‘D4’ (Figure 9Y). The presence of ventral keels in posterior dorsal vertebrae contrasts with their absence in Scelidosaurus (Norman, 2020a) and Stegosaurus (Maidment et al., 2015), although some ankylosaurs have keeled posterior dorsal centra (Kirkland and Carpenter, 1994; Kirkland et al., 2013).
 
-## Appendicular skeleton
+### Appendicular skeleton
 
 The specimen includes limited appendicular elements, including: the proximal part of a left scapula and the distal part of the right scapula (Figure 10); a complete right humerus (Figure 11); and the distal part of the left femur (Figure 12).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig10-v2.jpg)
 
-**Figure 10.:** Yuxisaurus kopchicki.Distal part of right scapula in (A) lateral, (B) medial, (C) ventral, and (D) dorsal views. Proximal part of left scapula in (E) lateral, (F) medial, (G) ventral, and (H) dorsal views. Abbreviation: d, depression. Scale bar equals 10 cm.
+**Figure 10.:** Distal part of right scapula in (A) lateral, (B) medial, (C) ventral, and (D) dorsal views. Proximal part of left scapula in (E) lateral, (F) medial, (G) ventral, and (H) dorsal views. Abbreviation: d, depression. Scale bar equals 10 cm.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig11-v2.jpg)
 
-**Figure 11.:** Yuxisaurus kopchicki in (A) anterior, (B) lateral, (C) posterior, (D) medial, (E) proximal, and (F) distal views.Abbreviations: dpc, deltopectoral crest; f, fossa; h, humeral head; it, internal tuberosity; rc, radial condyle; tb, tubercle; uc, ulnar condyle. Scale bar equals 10 cm.
+**Figure 11.:** Abbreviations: dpc, deltopectoral crest; f, fossa; h, humeral head; it, internal tuberosity; rc, radial condyle; tb, tubercle; uc, ulnar condyle. Scale bar equals 10 cm.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig12-v2.jpg)
 
-**Figure 12.:** Yuxisaurus kopchicki in (A) posterior, (B) ventral, (C) lateral, (D) medial, and (E) dorsal views.Abbreviations: d, depression; icg, intercondylar groove; lc, lateral condyle; mc, medial condyle; nc, notch. Scale bar equals 10 cm.
+**Figure 12.:** Abbreviations: d, depression; icg, intercondylar groove; lc, lateral condyle; mc, medial condyle; nc, notch. Scale bar equals 10 cm.
 
-## Scapula
+#### Scapula
 
 The scapula is represented by a right scapula blade (Figure 10A–D) and a left proximal plate (Figure 10E–H), but unfortunately, these two pieces do not overlap in morphology so the overall shape and size of the scapula remain unclear. However, on the basis of the preserved parts, we estimate that a complete scapula would have been at least 475 mm long.
 
@@ -259,7 +259,7 @@ The left proximal plate of the scapula is poorly preserved with broken margins (
 
 The scapula blade is relatively thick transversely, with a convex lateral surface and a flat or slightly depressed medial surface. In lateral view, its distal end is expanded dorsoventrally, with a maximum distal width of ~138 mm and a mid-shaft width of ~83 mm (Figure 10A–D). The dorsal and ventral margins of the scapula blade are subparallel along most of its length in lateral view, but the dorsal margin diverges slightly to contribute to the distal expansion, while the ventral margin curves ventrally at its distal end, so that the distal expansion is slightly asymmetrical with respect to the scapula long-axis. The distal margin is gently convex. This produces a scapula blade outline similar to those of Scutellosaurus (Breeden and Rowe, 2020), Scelidosaurus (Norman, 2020a), and some stegosaurs (Galton, 2004), while in most ankylosaurs, such as Gargoyleosaurus, Sauropelta, and Gastonia, the dorsal scapular margin almost parallels, the ventral margin and curves posteroventrally (Godefroit et al., 1999; Vickaryous and Russell, 2003; Kinneer et al., 2016), and in Stegosaurus these margins are essentially subparallel along their entire lengths (Maidment et al., 2015). Close to the distal end, the lateral surface bears a broad depression, but it is not clear if this is an original feature or due to taphonomic damage as there is some cracking in the area (Figure 10A). In dorsal or ventral views, the scapula blade is bowed, with the distal end inclined medially (Figure 10C and D).
 
-## Humerus
+#### Humerus
 
 The right humerus is well preserved, except for a small section of the distal end (Figure 11). It has an elongate, slender shaft, with a diameter of ~50 mm, which separates the proximal and distal expansions, which reach maximum widths of ~160 mm and 120 mm, respectively (Figure 11A and C). Both of these expansions are relatively broader than in either Scutellosaurus (Colbert, 1981; Breeden and Rowe, 2020; Breeden et al., 2021) or Scelidosaurus (Norman, 2020a), giving the humerus of Yuxisaurus a stockier appearance that is much more similar to those of ankylosaurs and stegosaurs (Vickaryous and Russell, 2003; Galton, 2004).
 
@@ -267,27 +267,27 @@ In anterior view, the humerus is straight, with the shaft lacking any significan
 
 The shaft has a subtriangular cross-section in its mid-part, with a flat anterior surface and convex posterior surface. Distally, the medial (ulnar) condyle extends further ventrally than the lateral condyle and also exhibits greater anteroposterior expansion. A broad, shallow, ‘U’-shaped fossa is positioned immediately dorsal to the distal condyles on the anterior surface (Figure 11A), which differs from the longer, narrower, ‘V’-shaped and shallower fossa seen in other early thyreophorans (Breeden and Rowe, 2020; Norman, 2020a; Breeden et al., 2021) and stegosaurs (Maidment et al., 2015), although a similar fossa occurs in some ankylosaurs (Vickaryous and Russell, 2003). A narrow, vertical depression separates the two condyles on the posterior surface (Figure 11C). In ventral view, the distal end has a dumbbell-shaped outline, though the ulnar condyle is more strongly expanded anteroposteriorly than the radial condyle (Figure 11F).
 
-## Femur
+#### Femur
 
 The distal end of the left femur is preserved (Figure 12). It reaches a maximum transverse width of ~151 mm and is ~110 mm in anteroposterior length. The distal end is mediolaterally and anteroposteriorly expanded with respect to the preserved part of the femoral shaft (Figure 12A). The shaft has a subrectangular cross-section (Figure 12E). The anterior surface of the distal femur is generally flat, but its medial part is damaged. The distal end is divided into two articular condyles (Figure 12B). In posterior view, the lateral condyle is ovoid, dorsoventrally compressed, and curves slightly posteroventrally from its base, while the medial condyle is broad, triangular, and protrudes slightly posterodorsally (Figure 12A). In ventral view, the condyles are separated by a broad, deep, and ‘U’-shaped intercondylar groove (Figure 12B), that is confluent dorsally with a deep narrow sulcus that extends for a short distance on the posterior surface (Figure 12A). In ventral view, the lateral and medial condyles extend for approximately the same distance anteriorly and enclose a shallow anterior trough (Figure 12B). The lateral condyle has a mediolaterally narrow, subrectangular outline in distal view, and is inset from the lateral margin so that it is separated from it by a distinct notch (Figure 12B and C). The lateral condyle also projects slightly further posteriorly than the mediolaterally wider, rounded medial condyle. The border of the medial condyle is invaginated to form a broad, ‘U’-shaped trough (Figure 12B), that is confluent with a shallow depression on the medial surface of the distal femur (Figure 12D). This trough/depression is absent in Scelidosaurus (Norman, 2020a), Scutellosaurus (Colbert, 1981; Breeden et al., 2021), ankylosaurs (e.g., Kilbourne and Carpenter, 2005; Kirkland et al., 2013; Kinneer et al., 2016), and stegosaurs (Gilmore, 1914), and is considered a potential autapomorphy of Yuxisaurus. A roughened swelling on the lateral surface just dorsal to the notch bounding the lateral condyle might represent the attachment of the M. gastrocnemius.
 
-## Osteoderms
+### Osteoderms
 
 More than 120 osteoderms of Y. kopchicki were recovered (Figure 13, Figure 14, Figure 15). However, all of these were found disassociated, without direct evidence of their original life positions. Nevertheless, co-ossified osteoderms are usually present in the cervical or pectoral regions of thyreophorans whereas single osteoderms are distributed on other body parts (e.g., Blows, 2001; Vickaryous and Russell, 2003), allowing some tentative conclusions on their positions to be made.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig13-v2.jpg)
 
-**Figure 13.:** Yuxisaurus kopchicki.Tripartite compound osteoderm (TPO) 1 in (A) anterior, (B) dorsal, and (C) posterior views. TPO 2 in (D) anterior, (E) dorsal, and (F) posterior views. Bipartite osteoderm (BPO) 1 in (G) anterior, (H) dorsal, and (I) medial views; BPO 2 in (J) anterior, (K) dorsal, and (L) posterior views; BPO 3 in (M) anterior, (N) dorsal, and (O) posterior views; BPO 4 in (P) anterior, (Q) posterior, and (R) dorsal views; and BPO 5 in (S) anterior, (T) posterior, and (U) dorsal views. Blade-like cervical spines in anterior and posterior views (V, W). Abbreviations: ls, lateral spine; mds, middle scute; ms, medial scute. Scale bar equals 10 cm.
+**Figure 13.:** Tripartite compound osteoderm (TPO) 1 in (A) anterior, (B) dorsal, and (C) posterior views. TPO 2 in (D) anterior, (E) dorsal, and (F) posterior views. Bipartite osteoderm (BPO) 1 in (G) anterior, (H) dorsal, and (I) medial views; BPO 2 in (J) anterior, (K) dorsal, and (L) posterior views; BPO 3 in (M) anterior, (N) dorsal, and (O) posterior views; BPO 4 in (P) anterior, (Q) posterior, and (R) dorsal views; and BPO 5 in (S) anterior, (T) posterior, and (U) dorsal views. Blade-like cervical spines in anterior and posterior views (V, W). Abbreviations: ls, lateral spine; mds, middle scute; ms, medial scute. Scale bar equals 10 cm.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig14-v2.jpg)
 
-**Figure 14.:** Yuxisaurus kopchicki.Osteoderm 1 in (A) dorsal, (B) ventral, (C) posterior, and (D) anterior views; osteoderm 2 in (E) dorsal, (F) ventral, and (G) lateral views; osteoderm 3 in (H) dorsal, (I) ventral, and (J) lateral views; osteoderm 4 in (K) dorsal, (L) ventral, and (N) lateral views; osteoderm 5 in (N) dorsal, (O) anterior, and (P) lateral views; osteoderm 6 in (Q) dorsal, (R) ventral, and (S) lateral views. Scale bar equals 5 cm.
+**Figure 14.:** Osteoderm 1 in (A) dorsal, (B) ventral, (C) posterior, and (D) anterior views; osteoderm 2 in (E) dorsal, (F) ventral, and (G) lateral views; osteoderm 3 in (H) dorsal, (I) ventral, and (J) lateral views; osteoderm 4 in (K) dorsal, (L) ventral, and (N) lateral views; osteoderm 5 in (N) dorsal, (O) anterior, and (P) lateral views; osteoderm 6 in (Q) dorsal, (R) ventral, and (S) lateral views. Scale bar equals 5 cm.
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig15-v2.jpg)
 
-**Figure 15.:** Yuxisaurus kopchicki in (A) posterior, (B) anterior, (C) ventral, (D) dorsal, and (E, F) side views.Scale bar equals 10 cm.
+**Figure 15.:** Scale bar equals 10 cm.
 
-## Cervical and pectoral osteoderms
+#### Cervical and pectoral osteoderms
 
 Seven compound osteoderms are preserved. Two of these consist of three elements (tripartite osteoderms) and the remaining five consist of two elements (bipartite osteoderms) (Figure 13). In all of these compound structures, the individual osteoderms are fused indistinguishably and it is likely that other co-ossified osteoderms were originally attached to some of these structures but were not preserved.
 
@@ -307,7 +307,7 @@ To our knowledge, asymmetrical co-ossified bipartite osteoderms are present in t
 
 It seems likely that two isolated blade-like spines are also from the cervical region. These spines have an elongated oval base, so that the body and base are both narrow (Figure 13V and W). They both have a long convex edge and a short concave edge, so that the dorsal apex projects beyond the level of the base. The ventral half of the convex edge is nearly straight, then curves posterodorsally and continues dorsally with a mild curvature. The dorsal end is sharp on one spine but rounded on the other slightly larger one. Each spine has a depressed medial surface and a slightly convex lateral surface, although the larger spine (Figure 13V) bears a vertical depression on the convex surface close to its longest margin. The ventral surface is depressed but also bears an anteroventral expansion as in BPO 1 and BPO 2. These two spines are similar in appearance to the cervical spines of Polacanthus and the caudal plates of Mymoorapelta (Kirkland and Carpenter, 1994; Blows and Honeysett, 2014). However, the caudal plates are hollowed ventrally in Mymoorapelta; consequently, these spines are most likely from the cervical region of Yuxisaurus.
 
-## Other osteoderms
+##### Other osteoderms
 
 Most other individual osteoderms are similar (Figure 14). They are oval-based, with a convex or slightly concave longest margin and a vertical or slightly concave short margin. These margins converge dorsally into an apex. Therefore, the body appears to be curved in osteoderms with a concave short margin, but straight in those with a vertical short margin. The longest margin is generally sharp whereas the shorter margin is rounded in some cases, although occasionally both margins are rounded. Ventrally they are generally flat but sometimes convex, with the ventral margins somewhat everted. The lateral surfaces are depressed, but generally bear a vertical swelling in their centers. It is noteworthy that 15 of the 120 osteoderms have a foramen or are excavated ventrally. Where present the foramina have rounded outlines and are usually small relative to the ventral surface area, but they appear to open out and expand into cavities within the osteoderm. By contrast, the ventral excavations are fully open, creating an osteoderm inner surface. Generally, the osteoderms with a solid ventral surface are smaller in size than those with a hollow base. The largest hollow-based osteoderm is damaged but was at least 160-mm long, 150-mm wide, and 110-mm tall (Figure 14A–D). With reference to Scelidosaurus, the relatively large hollow-based osteoderms probably formed the primary rows across the dorsolateral body surface or the caudal region, while other smaller osteoderms would have been interspersed among them (Norman, 2020b).
 
@@ -315,25 +315,25 @@ A unique ‘pup tent’-shaped osteoderm is approximately 126-mm long and 94-mm 
 
 ## Discussion
 
-## Phylogenetic results
+### Phylogenetic results
 
 Analysis of the Norman, 2021 data set resulted in the recovery of the six most parsimonious trees (MPTs) with tree lengths of 238 steps, a Consistency Index of 0.710 and a Retention Index of 0.858. A strict consensus of these trees is shown in Figure 16A. This analysis recovered Scutellosaurus as the earliest diverging member of a clade that also includes Emausaurus, Yuxisaurus, Scelidosaurus, and ankylosaurs; and this clade is the sister group of stegosaurs. Y. kopchicki is found in a clade with Emausaurus from the Toarcian of Germany, but support for this clade is weak (Bremer value of 1). This unnamed clade is in turn the sister-group of Scelidosaurus + Ankylosauria.
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig16-v2.jpg)
 
-**Figure 16.:** Yuxisaurus within Thyreophora.(A) Strict consensus of the six most parsimonious trees (MPTs) recovered from analysis of the modified Norman, 2021 data set. (B) Strict consensus of the two MPTs recovered from analysis of the modified Maidment et al., 2020 data set. Bremer support values are shown adjacent to the nodes.
+**Figure 16.:** (A) Strict consensus of the six most parsimonious trees (MPTs) recovered from analysis of the modified Norman, 2021 data set. (B) Strict consensus of the two MPTs recovered from analysis of the modified Maidment et al., 2020 data set. Bremer support values are shown adjacent to the nodes.
 
 Inclusion of Yuxisaurus within the (Scutellosaurus (Emausaurus+ Yuxisaurus) (Scelidosaurus + Ankylosauria)) clade is supported by the possession of the following unambiguous synapomorphies: 13 (1), cranial exostoses (cortical bone ornamentation) present; 17 (1), remodeling of the external surface of skull bones partial; 105 (1), osteoderms form parasagittal rows either side of dorsal midline; 108 (1), lateral flank osteoderms ovoid and keeled; and 117 (1), cervical osteoderms present. The unnamed clade including Y. kopchicki and E. ernsti is supported by a single synapomorphy: 36 (1), basipterygoid process posteroventrolaterally oriented. This clade lacks the three synapomorphies uniting Scelidosaurus + Ankylosauria, namely: 14 (1), skull (non-supraorbital) osteoderms present; 17 (2 and 3), remodeling of the external surface of skull bones partial with few osteoderms or extensively osteoderm covered; and 18 (1), postorbital(non-supraorbital) osteoderms present.
 
 The analysis based on the Maidment et al., 2020 data set produced two MPTs with tree lengths of 269 steps, a Consistency Index of 0.605 and a Retention Index of 0.663. A strict consensus of the trees is shown in Figure 16B. This analysis recovered Yuxisaurus within Thyreophora, as an early diverging branch between Emausaurus and Scelidosaurus. Ankylosauromorpha (neither sensu Carpenter, 2001 nor sensu Norman, 2021; see below) was not recovered, Scutellosaurus and Emausaurus were found outside of Eurypoda, and the Emausaurus + Yuxisaurus clade was not identified. Yuxisaurus has a single unambiguous synapomorphy of Thyreophora: 29 (1) maxillary tooth row inset medially from the lateral surface. It is grouped with Scelidosaurus and Eurypoda to the exclusion of Emausaurus in having the following synapomorphies: 32 (1) supraorbital elements form the dorsal rim of the orbit; and 110 (1) ‘U’-shaped cervical collars composed of keeled scutes present. Yuxisaurus is excluded from the Scelidosaurus + Eurypoda clade as it lacks the unambiguous synapomorphy of the latter group: 57 (0) cervical vertebrae longer anteroposteriorly than wide transversely.
 
-## Comments on Ankylosauromorpha
+### Comments on Ankylosauromorpha
 
 Carpenter, 2001 conducted a phylogenetic analysis that recovered a monophyletic Eurypoda split into two sister lineages, Stegosauria and Scelidosaurus + Ankylosauria, with Emausaurus and Scutellosaurus as successive outgroups to Eurypoda. This result contrasted with previous results where Scelidosaurus was excluded from Eurypoda (e.g., Sereno, 1986; Sereno, 1999). To recognize the new Scelidosaurus + Ankylosauria clade Carpenter, 2001 (p. 471) proposed the name Ankylosauromorpha, which he defined thus: ‘Ankylosauromorpha are thyreophorans that are closer to Scelidosaurus, Minmi, Polacanthidae, Nodosauridae, and Ankylosauridae, than to Stegosaurus’. However, the ‘ankylosauromorph hypothesis,’ was not supported by later analyses, which failed to reproduce this result and consistently placed Scelidosaurus outside Eurypoda (e.g., Norman et al., 2004; Butler et al., 2008; Boyd, 2015; Dieudonné et al., 2021).
 
 Subsequently, a new phylogenetic analysis by Norman, 2021 provided additional support for a sister-group relationship between Scelidosaurus and Ankylosauria. However, this analysis also recovered Emausaurus and Scutellosaurus as outgroups to this clade, with all of these taxa more closely related to ankylosaurs than stegosaurs. This prompted Norman, 2021 to expand the Carpenter, 2001 ankylosauromorph concept to encompass these additional taxa, even though the latter author did not include them within his original definition. The (Norman, 2021) new definition for Ankylosauromorpha was: ‘All taxa more closely related to Euoplocephalus and Edmontonia than to Stegosaurus.’ However, this definition is functionally identical to the existing stem-based definitions of Ankylosauria provided by Carpenter, 1997: ‘All thyreophoran ornithischians closer to Ankylosaurus than to Stegosaurus’ and Sereno, 1998: ‘All eurypods closer to Ankylosaurus than Stegosaurus’’. Hence, the tree topology provided by Norman, 2021 implies that Scutellosaurus, Emausaurus, Yuxisaurus, and Scelidosaurus are ankylosaurs under these previous and broadly applied phylogenetic definitions; consequently, the Norman, 2021 stem-based use of ‘Ankylosauromorpha’ is in error and his redefinition of the clade redundant. However, if the Norman, 2021 topology were to receive further support in future, a case could be made for a node-based definition of Ankylosauromorpha (e.g., a clade consisting of Scelidosaurus, Ankylosaurus, their common ancestor and all of its descendants) or some other variation.
 
-## Thyreophoran biogeography
+### Thyreophoran biogeography
 
 The discovery of Yuxisaurus cements the presence of armored dinosaurs in the Early Jurassic of Eastern Asia, an observation previously supported by the fragmentary material assigned to ‘Tatisaurus’ and ‘Bienosaurus’ (Simmons, 1965; Dong, 2001). The inadequate holotype specimens of the latter taxa do not allow them to be incorporated into formal phylogenetic or macroevolutionary analyses (Norman et al., 2007; Raven et al., 2019), and the only other Early Jurassic thyreophoran material reported from Asia—from the Kota Formation of India (Nath et al., 2002; Galton, 2019)—is also frustratingly incomplete (and might be of Middle Jurassic age: Prasad and Parmar, 2020). Moreover, it is worth noting that India was part of Gondwana during the Jurassic and so its fauna would likely have been biogeographically distinct from that occurring in China, which formed part of Laurasia. Hence, it has been impossible to include any early diverging Asian taxa in broad-scale tree-based analyses of early thyreophoran evolutionary history thus far. However, the more complete, and highly distinctive, material of Yuxisaurus enables some more substantive discussion of these issues.
 
@@ -345,17 +345,17 @@ Minimally, however, the recognition of Yuxisaurus further highlights that thyreo
 
 Early thyreophorans have been recovered in a diverse range of palaeoenvironmental and taphonomic settings and as components of remarkably different ecosystems, suggesting that their early radiation might have been underpinned by greater ecological diversity among them than usually appreciated. For example, Lesothosaurus, Laquintasaura, and Scutellosaurus were likely obligate bipeds (Thulborn, 1972; Colbert, 1981; Barrett et al., 2014), whereas the more heavily built Yuxisaurus and Scelidosaurus were likely quadrupeds (Maidment et al., 2014; Norman, 2021). Moreover, there is some evidence of dietary variation with the possibility that Lesothosaurus was a facultative omnivore (Barrett, 2000), whereas Scelidosaurus is thought to have been an obligate herbivore (Barrett, 2001; Norman, 2021). Early members of the clade, like Lesothosaurus and Laquintasaura, were apparently unarmored (Thulborn, 1972; Barrett et al., 2014), but armor became a conspicuous feature of all later-diverging members of the group (Norman et al., 2004) and varied considerably even in the earliest appearing taxa (Colbert, 1981; Norman, 2020b; this paper). Several early experiments in sociality and group-living are inferred based on mass accumulations of several taxa (Barrett et al., 2014; Barrett et al., 2016). In terms of habitats, Emausaurus and Scelidosaurus are known from marine settings (Haubold, 1990; Norman, 2020c), suggesting that they lived in low-lying well-watered coastal areas, but other taxa, such as Lesothosaurus are known from settings that were far inland and at least seasonally arid (Viglietti et al., 2020). Finally, several thyreophorans represent the most abundant dinosaur taxa known from their respective formations (e.g., Scelidosaurus, Scutellosaurus, and Laquintasaura which are each represented by multiple specimens: Colbert, 1981; Barrett et al., 2014; Norman, 2020c; Breeden et al., 2021), but in other cases, they seem to be subordinate components of their ecosystems (e.g., Lesothosaurus is known from multiple specimens but is much less abundant than the sauropodomorph dinosaurs from the upper Elliot Formation: Knoll, 2005; Viglietti et al., 2020) or rather rare (e.g., Yuxisaurus, which also occurs in a sauropodomorph-dominated fauna: Mao et al., 2019).
 
-## Conclusions
+### Conclusions
 
 A partial skeleton collected from the Lower Jurassic Fengjiahe Formation of Yunnan Province, China, represents a new taxon of early diverging thyreophoran dinosaur, which we name Y. kopchicki (Figure 17). It can be distinguished from all other thyreophorans by a suite of autapomorphic cranial, axial and appendicular character states, as well as a unique combination of character states. Yuxisaurus represents the first unambiguous armored dinosaur to be recovered from the Lower Jurassic of Asia that is based on associated, diagnostic material and is the first that is complete enough to be incorporated into a phylogenetic analysis. Although its relationships are heavily dependent on the preferred data set, our analyses recover Yuxisaurus as an outgroup to either Scelidosaurus + Ankylosauria or Scelidosaurus + Eurypoda, with the former analysis also suggesting a sister-group relationship to the European taxon Emausaurus. Yuxisaurus helps to emphasize the pan-Laurasian (and possibly global) distribution of early thyreophorans, their diverse morphology and ecology, and the rapidity of their initial radiation.
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/75248/elife-75248-fig17-v2.jpg)
 
-**Figure 17.:** Yuxisaurus kopchicki.The osteoderm arrangement is hypothetical but that includes many of the types of armor found with the skeleton.
+**Figure 17.:** The osteoderm arrangement is hypothetical but that includes many of the types of armor found with the skeleton.
 
 ## Materials and methods
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 In order to investigate the phylogenetic position of Y. kopchicki, it was scored into two recently published data matrices incorporating other early diverging thyreophorans (Maidment et al., 2020; Norman, 2021) that differ in their taxonomic coverage and in the relationships recovered among these taxa.
 

@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/027bh9e22 Institute of Psychology, Leiden University Leiden Netherlands
-2. https://ror.org/016xsfp80 Donders Institute, Centre for Cognitive Neuroimaging, Radboud University Nijmegen Nijmegen Netherlands
-3. https://ror.org/016xsfp80 Behavioural Science Institute, Radboud University Nijmegen Netherlands
+1. Institute of Psychology, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+2. Donders Institute, Centre for Cognitive Neuroimaging, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+3. Behavioural Science Institute, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
@@ -33,37 +33,150 @@ As a first analysis, we intended to reproduce the analyses from two previous stu
 
 This section is organized as follows. We first report a couple of verification analyses aimed to ensure that we could replicate the resting-state correlations between pupil size and whole-brain BOLD patterns reported in previous studies and assess the signal quality within the subcortical nuclei. Then, we attempt to reproduce the pupil-LC coupling that was reported in Murphy et al., 2014 by applying their convolution approach and LC localization method, as well as by interrogating the signal within our group LC ROI. After this, we move on to report three key analyses of pupil-AAS coupling aimed at understanding the temporal relationship between the two as well as the nature of this relationship: (i) an analysis in which we account for region- and participant-specific HRF differences in the convolution approach of the pupil time series; (ii) an analysis in which we explore pupil-AAS coupling while systematically adjusting the TTP of the HRF; and (iii) a cross-correlation analysis and cross-spectral power density analysis in which we explore the possibility that, during rest, the temporal relationship between pupil size and AAS BOLD patterns is not mediated by the HRF typically used in event-related fMRI design.
 
-## Whole-brain pupil-BOLD patterns consistent with previous studies
+### Whole-brain pupil-BOLD patterns consistent with previous studies
 
 We aimed to verify that our data showed the expected pupil-associated BOLD response patterns at the level of the cortex, cerebellum, and subcortical parts of the limbic system. To this end, we followed as closely as possible the approaches from two previous studies reporting pupil-BOLD coupling during rest (Murphy et al., 2014; Schneider et al., 2016) and indeed largely replicated their findings. First, following the approach by Schneider et al., 2016, we used pupil size (1 s shift) as a regressor in a GLM and convolved it with the canonical HRF (i.e., 6 s TTP). The assumption here is that the neural activity associated with spontaneous changes in pupil size is transformed into resting-state BOLD signal according to the same impulse response function as that driving neurovascular coupling during task performance. Indeed, we found positive correlations in the thalamus and negative correlations in the visual cortex and sensorimotor areas, as well as in the precuneus, cuneus, insula, superior temporal gyrus, and parahippocampal gyrus. These patterns of activation are consistent with those reported by Schneider et al., 2016 (Figure 1A and Table 1). Second, we carried out the analysis in line with Murphy et al., 2014, using pupil size (not shifted) as a regressor and convolving it with the canonical HRF (i.e., 6 s TTP) as well as its temporal and dispersion derivatives (Figure 1B and Table 2). Adding these derivatives allows the timing of the HRF response peak and the width of the HRF response to vary across the whole brain. Here, we found significant clusters in the visual cortex, the insula, the anterior cingulate gyrus, and the inferior frontal gyrus, consistent with what was reported by Murphy et al., 2014. Overall, we found pupil-related BOLD response patterns across the whole brain that were highly consistent with the ones reported by the previous two studies.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig1-v1.jpg)
 
-**Figure 1.:** Neural correlates of pupil size from the analysis using the convolution approach (A) reproduced from Figure 1B of Schneider et al., 2016 and (B) reproduced from Figure 2A of Murphy et al., 2014. Note that we only refer to the red and yellow activation in the figure from Murphy et al., 2014. Statistical parametric maps are thresholded at p<0.001, uncorrected, for visualization purposes only. Whole-brain cluster-level family-wise error (FWE)-corrected inferential statistics, in MNI space, are reported in Tables 1 and 2 (n = 70). Statistical maps used to generate this figure is available in Figure 1—source data 1.Figure 1—source data 1.Figure 1, Tables 1 and 2.
+**Figure 1.:** Neural correlates of pupil size from the analysis using the convolution approach (A) reproduced from Figure 1B of Schneider et al., 2016 and (B) reproduced from Figure 2A of Murphy et al., 2014. Note that we only refer to the red and yellow activation in the figure from Murphy et al., 2014. Statistical parametric maps are thresholded at p<0.001, uncorrected, for visualization purposes only. Whole-brain cluster-level family-wise error (FWE)-corrected inferential statistics, in MNI space, are reported in Tables 1 and 2 (n = 70). Statistical maps used to generate this figure is available in Figure 1—source data 1.
+
+**Table 1.**
+ Regions showing pupil-BOLD coupling using the convolution methods from Schneider et al., 2016.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Cluster</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>K</th>
+      <th>pcorr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thalamus (R), posterior cingulate cortex (R/L)</td>
+      <td>871</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Rectus (L)</td>
+      <td>199</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Cerebellum (R)</td>
+      <td>142</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>Cerebellum crus (L)</td>
+      <td>250</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cerebellum crus (R/L), cerebellum 6 (R/L), cerebellum 4/5 (R/L), lingual gyrus (R/L), calcarine (R/L), fusiform gyrus (R/L), cuneus (R/L), precuneus (R/L), cerebellum 4+5 (L), cerebellar vermis, hippocampus (R/L), parahippocampal gyrus (R), amygdala (R/L), thalamus (R), superior occipital gyrus (R/L), middle occipital gyrus (R/L), inferior occipital gyrus (R/L), superior parietal gyrus (L), inferior temporal gyrus (R/L), middle temporal gyrus (R/L), superior temporal gyrus (R/L), insula (R), postcentral gyrus (L), precentral gyrus (L), paracentral lobule (R/L), supplementary motor area (R/L), middle cingulate gyrus</td>
+      <td>65223</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Reported clusters survived whole-brain family-wise error (FWE) correction at the cluster level (pFWE=0.05). Source data for Table 1 available in Figure 1—source data 1.R, right; L, left; pcorr, whole-brain-corrected cluster p-values; k, cluster size; BOLD, blood oxygen level-dependent._
+
+**Table 2.**
+ Regions showing pupil-BOLD coupling using convolution methods from Murphy et al., 2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Cluster</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>K</th>
+      <th>pcorr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Middle occipital gyrus (R/L), superior occipital gyrus (R/L), calcarine gyrus (R/L), cuneus (R/L), precuneus (R/L), angular gyrus (R/L), fusiform gyrus (R/L), cerebellum (R/L), middle temporal pole (R/L), inferior temporal pole (L), insula (R), inferior parietal lobule (R/L), superior parietal lobule (L), postcentral gyrus (R/L), middle frontal gyrus (R/L), medial frontal gyrus (R/L), inferior frontal gyrus (R/L), superior frontal gyrus (R/L), posterior cingulate gyrus, middle cingulate gyrus, anterior cingulate gyrus, supplementary motor area (R/L), middle frontal orbital (R/L), inferior frontal orbital (R/L), cerebellum crus II (R/L), cerebellum crus I (R/L), cerebellum 8 (R/L), cerebellum 9 (R/L), Pons</td>
+      <td>91471</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Rectus (R/L)</td>
+      <td>146</td>
+      <td>0.010</td>
+    </tr>
+  </tbody>
+</table>
+
+_Reported clusters survived whole-brain family-wise error (FWE) correction at the cluster level (pFWE=0.05). Source data for Table 2 is available in Figure 1—source data 1.R, right; L, left; pcorr, whole-brain-corrected cluster p-values; k, cluster size;.BOLD, blood oxygen level-dependent._
 
 Following Murphy et al., 2014 approach, we also inspected pupil-associated activity in the LC. However, we did not find significant voxels when using our group LC mask as an ROI or when we applied the more liberal mask ( Keren et al., 2009) used by Murphy et al., 2014. Thus, contrary to Murphy et al., 2014, we were unable to replicate pupil-LC BOLD coupling using the same convolution methods.
 
-## Assessment of the quality of subcortical fMRI data
+### Assessment of the quality of subcortical fMRI data
 
 To assess the quality of the subcortical functional data we extracted the temporal signal-to-noise ratio (tSNR) from each ROI (see ‘Materials and methods’). The average tSNR across the AAS ROIs (Figure 2B; range: 23.3–72.9) and cortical regions (range: 49.6–106.3) were in line with previous reports (Brooks et al., 2013, Figure 1: brainstem range: ~1–50 and cortex range ~50–112; Singh et al., 2022, Figure 2B: brainstem range: 0–50, cortex range: 0–50). We also replicated a recently reported pattern of positive (partial) correlations among the signal fluctuations in each pair of subcortical ROIs, controlled for activity in the pons (Figure 2C; van den Brink et al., 2019; see also Singh et al., 2022). Only the correlation between the DR and VTA was negative. Therefore, we are confident that the data had sufficient tSNR in our AAS ROIs to be able to assess pupil-AAS coupling.
 
-## No pupil-AAS coupling using region- and participant-specific estimates of the HRF
+![Figure 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-v1.jpg)
+
+**Figure 2.:** (A) All subcortical ROIs overlaid on the group T1 template. (B) Individual data points showing the temporal signal-to-noise ratio for each ROI for session 1 (left) and session 2 (right; black points indicate the mean). (C) Correlation matrix showing that activity in subcortical nuclei co-varied positively with activity in other subcortical nuclei, with the strongest coupling present between the VTA and SN, which is to be expected given their close proximity, and the weakest (negative correlation) between the VTA and DR. Note: correlations were FDR-corrected and controlled for activity in the pons (n = 70). (D) FSE image of an example participant. Hyperintensities corresponding to the LC are visible in the yellow box (top). Using the FSE images, the LC (red) was manually delineated on the individual level following established protocols (Clewett et al., 2016; Mather et al., 2017). The graph shows the LC contrast-to-noise ratio for all participants (n = 67). The gray dot indicates the grand mean. LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; CNR, contrast-to-noise ratio; ROI, region of interest; fMRI, functional magnetic resonance imaging; FDR, false discovery rate. Source data used to generate this figure is available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Individual T1 images (T1native space) were submitted to a template building algorithm where they were aligned and used to generate a group average (T1template). (B) Individual T1 images (T1native space) were coregistered to the T1 template in a separate coregistration step, generating individual T1 images in group space (T1group space). SyN, symmetric normalization.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The sample-specific template T1. (B) The average of all individual warped T1 images. (C) The standard deviation of all individual warped T1 images. (D) Individual examples displaying the ascending arousal system (AAS) region of interest (ROI) masks on top of the individual warped T1.
+
+### No pupil-AAS coupling using region- and participant-specific estimates of the HRF
 
 The methods that have previously been used to examine co-fluctuations between pupil size and fMRI BOLD patterns worked under the assumption that the shape of the HRF during rest is homogeneous across the whole brain (Breeden et al., 2017; DiNuzzo et al., 2019; Schneider et al., 2016; Yellin et al., 2015). This assumption may not be correct, and because even a 1 s latency difference between assumed HRF and actual HRF can have a significant impact on fMRI results (Wall et al., 2009), it may be important to account for regional and individual differences (Bailes et al., 2023; Handwerker et al., 2004) in the shape of the HRF. Indeed, subcortical structures have been characterized by faster BOLD responses (TTP 4–5 s; Lau et al., 2011; Lewis et al., 2018; Yen et al., 2011) compared to the cortex (TTP 5–6 s; Lewis et al., 2018; Friston et al., 2000). Therefore, we next estimated ROI-specific and participant-specific HRFs using an approach in which spontaneous pseudo-events were identified in our resting-state data and then aligned to determine the delay between the pseudo-events and corresponding BOLD signatures (Rangaprakash et al., 2018; Wu et al., 2013). The number of detected pseudo-events per ROI is shown in Figure 3C. Note that for some participants only one session was used to estimate these HRFs, so the number of detected pseudo-events for these participants tended to be smaller.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig3-v1.jpg)
 
-**Figure 3.:** (A) One participant’s pre-processed LC BOLD signal (concatenated across the two sessions), evaluated against a chosen threshold (>1 SD) to extract onsets of spontaneous neural events (indicated in yellow). (B) Estimated HRFs for each participant and ROI. Black lines indicate the average across participants. (C) The number of spontaneous neural events that were used to estimate the region- and participant-specific HRFs. Black dots indicate the mean. (D) TTP of the HRF for each participant and ROI. Black dots indicate the average across participants. Overview of the pupil data processing pipeline of one randomly chosen participant for pupil size (E) and the pupil derivative (F). The plots portray the raw pupil data (blue), the pupil time series down-sampled to the TR (red), and the convolved pupil time series (for LC HRF, green). The extracted t-values from the first-level resting-state HRF analysis for pupil size (G) and the pupil derivative (H). p-Values refer to one-sample t-tests (difference from zero; FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; HRF, hemodynamic response function; BOLD, blood oxygen level-dependent; TTP, time-to-peak; FDR, false discovery rate. Source data used to generate this figure available in Figure 3—source data 1.Figure 3—source data 1.Figure 3B–D, G–H.
+**Figure 3.:** (A) One participant’s pre-processed LC BOLD signal (concatenated across the two sessions), evaluated against a chosen threshold (>1 SD) to extract onsets of spontaneous neural events (indicated in yellow). (B) Estimated HRFs for each participant and ROI. Black lines indicate the average across participants. (C) The number of spontaneous neural events that were used to estimate the region- and participant-specific HRFs. Black dots indicate the mean. (D) TTP of the HRF for each participant and ROI. Black dots indicate the average across participants. Overview of the pupil data processing pipeline of one randomly chosen participant for pupil size (E) and the pupil derivative (F). The plots portray the raw pupil data (blue), the pupil time series down-sampled to the TR (red), and the convolved pupil time series (for LC HRF, green). The extracted t-values from the first-level resting-state HRF analysis for pupil size (G) and the pupil derivative (H). p-Values refer to one-sample t-tests (difference from zero; FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; HRF, hemodynamic response function; BOLD, blood oxygen level-dependent; TTP, time-to-peak; FDR, false discovery rate. Source data used to generate this figure available in Figure 3—source data 1.
 
 After carrying out pairwise comparisons, we found that, as expected, the TTP of the estimated HRFs was significantly faster for all subcortical AAS ROIs than for each of the two cortical ROIs (Msubcortical ROIs = 4.7 s, SDsubcortical ROIs = 0.6 s, Mcortical ROIs = 5.4 s, SDcortical ROIs = 0.8 s; Figure 3D). The pupil-BOLD analysis using these specific HRFs, however, revealed no significant pupil-AAS correlations (Figure 3G and H). We only found that pupil size correlated negatively with activation in the OCC (pcorr<0.001 [pupil size], pcorr=0.018 [pupil derivative], false discovery rate [FDR]-corrected). Note that the negative sign of this correlation is consistent with what we reported above and with previous reports linking pupil size to decreased activity in the visual system (Schneider et al., 2016; Yellin et al., 2015).
 
 In sum, the use of region- and participant-specific HRFs also did not result in significant pupil-AAS coupling. Importantly, by focusing on pseudo-events in the fMRI data, this approach still assumes that neurovascular coupling during rest (and other passive conditions) is characterized by the typical sluggish HRF used in event-related fMRI design.
 
-## Positive pupil-AAS coupling using HRFs with rapid time-to-peaks
+### Positive pupil-AAS coupling using HRFs with rapid time-to-peaks
 
 Since the analysis strategy so far unexpectedly did not result in pupil-AAS coupling, we let go of the assumption of a relatively slow HRF similar to that driving neurovascular coupling during task performance. Therefore, we further examined a potential relationship between pupil and AAS ROIs by examining how systematically varying the TTP (from 1 s to 6 s) of the default canonical HRF affected the coupling between pupil dynamics and our AAS ROIs. This analysis was inspired by a recent animal study (Pais-Roldán et al., 2020) showing that pupil-BOLD signal coupling dynamics vary across time.
 
 We found that for almost all AAS ROIs the strength of pupil-BOLD coupling differed across TTPs (main effect of TTP; LC: p<0.001; VTA: p<0.001; SN: p<0.001; MR: p=0.043; BF: p=0.009, FDR-corrected for nine ROIs). The overall pattern shows that coupling between pupil size and AAS BOLD patterns increases with earlier TTPs. Specifically, we found positive correlations for all AAS regions at earlier TTPs (especially the 1 s [Figure 4B] and 2 s TTPs) but no significant correlations (LC, VTA, SN, DR, MR) at later TTPs (5–6 s; Figure 4A). For the OCC ROI, we found a positive correlation at the 1 s TTP, followed by a shift to negative correlations at later TTPs (4–6 s), which is in line with previous work (Breeden et al., 2017; Schneider et al., 2016; Yellin et al., 2015) and the results we reported above (‘Whole-brain pupil-BOLD patterns consistent with previous studies’). The ACC correlated positively with pupil size at predominantly early TTPs (1–4 s; Figure 4CD), similar to the AAS ROIs, and in line with pupil-BOLD coupling in default-mode network areas (Yellin et al., 2015). To ensure the robustness of these findings, we repeated the analyses for each session separately. The pattern of results was visually and statistically similar between the two sessions, and in line with the results when both sessions were combined (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-v1.jpg)
+
+**Figure 4.:** Graphs show the extracted t-statistics as a function of the systematically adjusted TTP for each participant in the subcortical ROIs (A) and the validation and control ROIs (D). p-Values refer to one-sample t-tests (difference from zero; FDR-corrected). Black dots indicate the mean. (B) Statistical maps showing pupil-BOLD correlations in the subcortex for the 1 s TTP. (c) Statistical maps showing unsmoothed pupil-BOLD correlations across the cortex for each TTP (1–6 s). All statistical maps were thresholded at p<0.005 (uncorrected) for visualization purposes only (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Graphs show the individual t-statistics (black point indicates the mean) of the pupil size-BOLD signal correlation as a function of the systematically adjusted TTP for all ROIs, p-Values refer to one-sample t-tests (difference from zero; FDR-corrected; n = 70). These results show that smaller ROIs, in particular the LC, DR, and MR, are more prone to a drop in statistical power when the data is halved. LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4—source data 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Graphs show the individual t-statistics (black point indicates the mean) of the pupil derivative-BOLD signal correlation as a function of the systematically adjusted TTP for all ROIs, p-Values refer to one-sample t-tests (difference from zero; FDR-corrected). (B) The corresponding whole-brain associations between BOLD signal and the pupil derivative as a function of the TTP of the HRF (1 s TTP: top panel to 6 s TTP: bottom panel). The warm colors reflect areas in which BOLD activity is positively correlated with pupil derivative. The cold colors reflect areas where BOLD activity is negatively correlated with the pupil derivative. Both positive and negative contrast maps were sampled at p<0.005 (uncorrected) for visualization only (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate; TTP, time-to-peak; HRF, hemodynamic response function; ROI, region of interest. Source data used to generate this figure is available in Figure 4—source data 3.
 
 Similar analyses for the pupil derivative also showed significant differences in the strength of pupil-BOLD coupling across the TTPs for the VTA (p=0.012), SN (p=0.022), DR (p=0.002), ACC (p=0.009), and OCC (p<0.001; FDR-corrected for nine ROIs). The overall pattern and follow-up t-tests revealed similar but attenuated effects in comparison to pupil size (Figure 4—figure supplement 2A). The most prominent exception was the OCC, which showed a curvilinear relationship with largest correlations for intermediate TTPs (2–5 s), which is also visible upon inspecting the whole-brain maps in Figure 4—figure supplement 2B. The same analyses carried out for the control region in the pons revealed no main effect of TTP for pupil size or the pupil derivative, nor were there any positive or negative associations with pupil size or the pupil derivative for any TTP, attesting to the specificity of the pupil-BOLD associations found in our AAS and cortical ROIs. Statistical parametric maps including whole-brain results for all TTPs are shown in Figure 4C and Figure 4—figure supplement 2B.
 
@@ -71,9 +184,21 @@ Observing Figure 4, it seems that the LC exhibited greater inter-individual vari
 
 These exploratory analyses suggest that positive coupling between fluctuations in pupil diameter and AAS BOLD signal can be found when using a shorter transfer function (i.e., using TTPs of 1–2 s), but not with the broad HRFs that are typically used to model event-related BOLD responses (i.e., with a longer TTP; Friston et al., 2000).
 
-## Positive pupil-AAS coupling when BOLD patterns closely follow pupil fluctuations
+### Positive pupil-AAS coupling when BOLD patterns closely follow pupil fluctuations
 
 In our next analysis, we wanted to release the assumption that BOLD responses associated with pupil-size changes would resemble an HRF. Therefore, we correlated the BOLD signal from our AAS ROIs with the unconvolved pupil vector using a cross-correlation approach (Pais-Roldán et al., 2020; Yellin et al., 2015). This method also allowed us to interrogate the pupil-BOLD coupling in both time directions. To that end, we shifted the pupil vector 8 s backward and forward, in steps of 2 s, with negative lags (backward) corresponding to pupil changes preceding the BOLD signal and positive lags (forward) corresponding to pupil changes succeeding the BOLD signal (Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-v1.jpg)
+
+**Figure 5.:** Pupil-BOLD time-series cross-correlations for all AAS nuclei ROIs (A) and control ROIs (B). Negative (positive) time lags indicate that the pupil signal precedes (follows) the BOLD signal. p-Values refer to one-sample t-tests for the corresponding time bin. (C) Statistical comparisons of pupil size-BOLD signal coupling at lag = 0 s before (full) and after regressing out LC BOLD signal (partial). Statistics refer to two-tailed t-tests (FDR-corrected) comparing the full and partial correlation coefficients. Black lines (A, B) and bar plots (C) indicate the grand mean and shaded regions (A, B) and error bars (C) indicate ± standard error of the mean (SEM). Black font and black dots indicate significant time bins (p<0.05, FDR-corrected) (n = 70). BOLD, blood oxygen level-dependent; AAS,ascending arousal system; ROI, region of interest; LC,locus coeruleus; FDR, false discovery rate. Source data used to generate this figure is available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The BOLD time series was shifted forward and backward by 8 s in steps of 2 s. Positive (negative) time lags indicate that the pupil signal precedes (follows) the BOLD signal. Black lines indicate the grand mean, and shaded regions indicate the standard error of the mean. Black dots indicate significant one-sample t-tests (p<0.05, FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR. false discovery rate. Source data used to generate this figure available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The BOLD time series was shifted forward and backward by 8 s in steps of 2 s. Positive (negative) time lags indicate that the pupil signal precedes (follows) the BOLD signal. Shaded regions indicate the standard error of the mean. Black dots indicate significant one-sample t-tests (p<0.05, FDR-corrected; n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, medial raphe; ACC, anterior cingulate cortex; OCC, calcarine sulcus; BOLD, blood oxygen level-dependent; FDR, false discovery rate. Source data used to generate this figure is available in Figure 5—source data 2.
 
 Critically, and in line with the TTP analysis, we found significant positive pupil-BOLD correlations for all AAS ROIs (except the DR), with the strongest correlations occurring at lag 0 (Figure 5A). These results again suggest that the relationship between pupil size and AAS activity is temporally close, rather than following the shape of an HRF with a 5 or 6 s TTP. In addition, these patterns of results appeared to be stable across the two sessions (Figure 5—figure supplement 1). For the pupil derivative (Figure 5—figure supplement 2), we observed a similar pattern in SN and VTA, with stronger correlations at lag 0, although overall the correlation coefficients were attenuated compared to those for pupil size, or not present in some AAS ROIs (LC, MR, and BF).
 
@@ -83,13 +208,13 @@ To determine whether the observed pupil-AAS BOLD signal cross-correlation result
 
 Together, the TTP analysis and cross-correlation analysis yield essentially the same outcome, suggesting that no HRF convolution is needed to characterize the relationship between pupil size and AAS BOLD patterns during rest.
 
-## Pupil-AAS coupling is largely driven by oscillations in low-frequency band
+### Pupil-AAS coupling is largely driven by oscillations in low-frequency band
 
 Finally, to better understand the nature of the pupil-AAS coupling, we carried out an exploratory cross-spectral density analysis (Figure 6A, B). The cross-power spectral density is the Fourier transform of the cross-correlation functions reported above, and hence expresses the relationship between the pupil and AAS signals in the frequency domain. To determine which frequency bands were driving the observed positive pupil-AAS correlations, we calculated the cross-spectral power density (see ‘Materials and methods’) of the pupil size time series and average BOLD time series extracted from each ROI. A simple peak detection indicated that the correlations for most AAS nuclei and both cortical ROIs (ACC and OCC) were largely driven by frequencies between 0.04 and 0.09 Hz (LC: 0.09; VTA: 0.04; SN: 0.03; DR: 0.008; MR: 0.04; BF: 0.04; ACC: 0.04; OCC: 0.07; Figure 6AB).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84822/elife-84822-fig6-v1.jpg)
 
-**Figure 6.:** Cross-spectral power density for subcortical ROIs (A) and cortical ROIs (B) averaged across participants. Black lines indicate the grand mean and shaded regions indicate ± SEM (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; ROI, region of interest. Source data used to generate this figure is available in Figure 6—source data 1.Figure 6—source data 1.Figure 6.
+**Figure 6.:** Cross-spectral power density for subcortical ROIs (A) and cortical ROIs (B) averaged across participants. Black lines indicate the grand mean and shaded regions indicate ± SEM (n = 70). LC, locus coeruleus; VTA, ventral tegmental area; SN, substantia nigra; DR, dorsal raphe; MR, median raphe; BF, basal forebrain; ACC, anterior cingulate cortex; OCC, calcarine sulcus; ROI, region of interest. Source data used to generate this figure is available in Figure 6—source data 1.
 
 ## Discussion
 
@@ -111,19 +236,19 @@ In conclusion, we show that spontaneous changes in pupil size that occur during 
 
 This study was preregistered on the Open Science Framework before data analysis (https://osf.io/5rjcf/). Note that preregistration occurred after data collection; due to circumstances surrounding the global pandemic, already collected data was used to address our hypotheses. As we could not replicate previous findings, we needed to deviate from the preregistration. When we deviated from the preregistration, this will be explicitly mentioned below.
 
-## Participants
+### Participants
 
 Seventy-four right-handed participants were recruited from New York University and completed two resting-state sessions on two consecutive days. Two participants were excluded entirely and one session for one participant was excluded due to technical issues with the scanner, leaving a sample size of 72 participants for the current study (mean age: 22.5 y; age range: 18–33 y; sex: 39 females, 33 males; gender: 39 females, 33 males, ethnicity: Asian/Asian American: 23, Asian: 1, Black/African American: 2, Caucasian/White/European American: 23, Hispanic non-white: 9, Latin: 1, Middle Eastern: 1, Mixed: 6, unknown: 6). The resting-state and pupil data were collected in the context of a larger study on extinction learning not published yet. On both days, the resting-state sessions were collected before the participants carried out a separate event-related fMRI task. The sample size (n = 72) was determined based on a between-group difference within the task that was conducted following the resting-state session used in this study. Exclusion criteria for participation were as follows: current treatment or treatment in the last year of psychiatric, neurological, or endocrine disease, current treatment with any medication, average use of >3 alcoholic beverages daily, average use of recreational drugs, habitual smoking, uncorrected vision, and contraindications for MRI. The two resting-state sessions were part of a larger study of which the data will not be reported here. The study was approved by the University Committee on Activities Involving Human Subjects at New York University (Institutional Review Board #2016-2), and the study was conducted in accordance with these guidelines and regulations. All participants provided written informed consent. Participants received a payment ($35 per hour) for their participation.
 
-## Procedure
+### Procedure
 
 All participants completed two resting-state sessions of 5 min each, 24 hr apart (±2 hr). During the session, they were instructed to think of nothing in particular, let their mind wander but not to have any repetitive thoughts such as counting. They were instructed to keep their eyes open and maintain their gaze on a centrally presented fixation dot (RGB: 60, 60, 255) on a gray screen (RGB: 125, 125, 125).
 
-## MRI data acquisition
+### MRI data acquisition
 
 MRI data was acquired using a Siemens MAGNETOM Prisma 3T MR scanner. T2*-weighted BOLD images were recorded using a customized multi-echo EPI sequence (2.0 mm isotropic) with ascending slice acquisition (58 axial slices; TR = 2 s; TE = 14.4, 39.1 ms; partial Fourier = 6/8; GRAPPA acceleration factor = 2; multiband acceleration factor = 2; flip angle = 65°; slice matrix size 104 × ×104; slice thickness = 2.0 mm; FOV: 208 × 208 mm; slice gap = 0; bandwidth: 2090 Hz/px; echo spacing: 0.56 ms). Multi-echo EPI protocols can be used to avoid the tradeoff between BOLD sensitivity in the cortex and subcortex (Turker et al., 2021). To account for regional variation in susceptibility-induced signal dropout, voxel-wise weighted sums of both echoes were calculated based on local contrast-to-noise ratio (Poser et al., 2006). A structural image (0.9 mm isotropic) was acquired using a T1-weighted 3D MP-RAGE (TR = 2.3 s; TE = 2.32 ms; flip angle = 8°, FOV = 256 × 256 × 230 mm). A fast-spin echo (FSE) neuromelanin-sensitive structural scan was acquired for delineation of the LC (11 axial slices, TR = 750 ms, TE = 10 ms, flip angle = 120°, bandwidth = 220 Hz/Px, slice thickness = 2.5 mm, slice gap = 3.5 mm; in-plane resolution = 0.429 × 0.429 mm). Note that a large slice gap is a common feature in the use of FSE scans for LC imaging (Liu et al., 2017). This procedure allows for a high in-plane resolution but with a thicker slice thickness, resulting in elongated voxels that match the cylindrical shape of the LC. To minimize excessive movement during scanning, we secured participants’ heads in a pillow and medical tape was attached across their foreheads to provide immediate tactile feedback in case of any movement, which has been shown to reduce motion (Krause et al., 2019).
 
-## MRI data preprocessing
+### MRI data preprocessing
 
 Preprocessing of MRI data was carried out using Advanced Normalization Tools v2.1 (ANTs) and SPM12 (https://www.fil.ion.ucl.ac.uk/spm; Wellcome Department of Imaging Neuroscience, London, UK). Here, we deviated from the preregistration, as we reported we would carry out all preprocessing steps in SPM12. Since ANTs SyN was found to be the best performing method for normalization (Ewert et al., 2019), some steps, including standardization and registration, were carried out using ANTs instead.
 
@@ -133,13 +258,13 @@ Mutual information maximization-based rigid-body registration was used to regist
 
 We applied a movement and physiological noise correction model with 33 regressors in SPM12. These included six movement parameter regressors (three translations, three rotations) derived from rigid-body motion correction, high-pass filtering (1/128 Hz cut-off) and AR(1) serial autocorrelation corrections. In addition these included retrospective image-based correction (RETROICOR) of physiological noise artifacts (Glover et al., 2000) regressors. Raw pulse was preprocessed using PulseCor (https://github.com/lindvoo/PulseCor; de Voogd, 2023a) implemented in Python for artifact correction and peak detection. Fifth-order Fourier models of the cardiac and respiratory phase-related modulation of the BOLD signal were specified (van Buuren et al., 2009), yielding 10 nuisance regressors for cardiac noise and 10 for respiratory noise. Additional regressors were calculated for heart rate frequency, heart rate variability, (raw) abdominal circumference, respiratory frequency, respiratory amplitude, and respiration volume per unit time (Birn et al., 2006), yielding a total of 26 RETROICOR regressors (https://github.com/can-lab/RETROICORplus; Krause, 2021). An additional regressor was added to remove signal fluctuations from the fourth ventricle, which was manually delineated using individual MP-RAGE scans (M = 90, SD = 34 voxels). This movement and physiological noise correction model was added to all general linear models (GLMs) described below. Note that since scrubbing did not affect the outcomes of our initial preregistered analysis (replication of Murphy et al., 2014), we report only the analysis without scrubbing and opted to refrain from applying scrubbing in the subsequent exploratory analyses.
 
-## Pupil data acquisition and preprocessing
+### Pupil data acquisition and preprocessing
 
 Pupil size was recorded using an MR-compatible eye-tracker (EyeLink 1000 Plus; SR Research, Osgoode, ON, Canada) at a sampling rate of 250 Hz. The eye-tracker was placed at the end of the scanner bore, such that the participant’s right eye could be tracked via the head coil mirror. Before the start of each resting-state session, we began with a calibration of the eye-tracker using the standard five-point EyeLink calibration procedure.
 
 Moments when the eye-tracker received no pupil signal (i.e., during eye blinks) were marked automatically during acquisition by the manufacturer’s blink detection algorithm. Pupil data was preprocessed using PupCor (https://github.com/lindvoo/PupCor; de Voogd, 2023b) implemented in Python. Missing and invalid data due to blinks were replaced using linear interpolation for the period from 100 ms before blink onset to 400 ms after blink offset. Following the automated interpolation procedure, the data were manually checked and corrected if any artifacts had not been successfully removed. Two sessions from two separate participants were excluded due to technical problems with the eye-tracker. To ensure the pupil data was of good quality, a session was excluded from all analyses if the raw pupil data contained >25% invalid samples (marked automatically during data acquisition by EyeLink’s blink detection algorithm; n sessions excluded = 15). For the remaining sessions (n sessions included = 126; n participants = 70, average proportion invalid samples = 6.4%), we computed pupil size as well as the first-order derivative of the pupil size time series. The latter describes the slope of changes in pupil size, where positive values reflect pupil dilation and negative values reflect pupil constriction. Because pupil size lags behind the underlying neural activity in AAS nuclei (including the LC and DR; Cazettes et al., 2021; Joshi et al., 2016; Liu et al., 2017; Reimer et al., 2016), and in line with previous neuroimaging studies (Pfeffer et al., 2022; Schneider et al., 2016; Yellin et al., 2015), we shifted the pupil time series 1 s back in time. This step was only omitted when we attempted to replicate Murphy et al., 2014. Both pupil time series (i.e., pupil size and pupil derivative) were then resampled to the TR (2 s) resolution (0.5 Hz). To detect further artifactual samples, within each 2 s time bin, any sample ±3 SD outside the time bin mean was removed, after which the average of the corresponding time bin was recalculated from the remaining non-artifactual samples (percentage samples recalculated = 0.04%; as in Murphy et al., 2014). The results of these preprocessing steps were two pupil time series (pupil size and pupil derivative) that were equal in length to the number of fMRI volumes (i.e., 150) collected in each session.
 
-## Definition of ROIs
+### Definition of ROIs
 
 The LC was delineated on each participant’s FSE scan using ITK-SNAP (version 3.8.0; Yushkevich et al., 2006). Two raters (BL and a research assistant) manually identified LC voxels following established protocols (Clewett et al., 2016; Mather et al., 2017). Pairwise dice similarity coefficients between both raters were high (M = 0.96; range: 0.70–1.00). As described in Clewett et al., 2016, left and right LC regions were identified in the axial slice ~7 mm below the inferior colliculus. Within this slice, two regions were delineated in the form of a cross ~1.29 mm wide and ~1.29 mm high (3 × 3 voxels, see Figure 2D), covering the 1–2 mm of LC neurons in this slice. The center voxel for each cross was placed on the voxel with the highest signal intensity that fell within an area anatomically consistent with the location of the LC. If the peak voxel was located immediately adjacent to the fourth ventricle, the center of the ROI was placed one voxel further away from the ventricle. This ensured that the peak voxel but no fourth ventricle voxels were included in the ROI. To ensure we captured LC intensity signal, we calculated an objective measure for comparisons namely contrast-to-noise ratios between the average signal intensity in the LC relative to a pontine reference region. Contrast-to-noise ratios were positive for all participants, indicating that LC intensity was consistently higher than pontine intensity (M = 0.17; range: 0.08–0.29; Figure 2D). The obtained contrast-to-noise ratios were in line with previous reports (Clewett et al., 2016; Mather et al., 2017). For three participants, we could not delineate LC ROIs because movement led to poor-quality FSE images. For these participants, we used the group LC ROI (i.e., average of all individual LC ROIs in group space thresholded at 2 SD above the mean). This group LC ROI was also used for visualization purposes. In line with current standards (Yi et al., 2021), the LC masks were then transformed (using nearest-neighbor interpolation) into template space by applying the linear and nonlinear transformations from the final coregistration (T1native space to T1group space) and resliced, resulting in the final individual LC masks in functional space (range of size in functional space: 1–7 voxels, M = 3.4, SD = 1.3 voxels).
 
@@ -147,37 +272,45 @@ Published probabilistic atlases were used for the remaining subcortical ROIs as 
 
 Previous studies (Schneider et al., 2016; Yellin et al., 2015) have found a robust relationship between pupil size and BOLD patterns in the occipital cortex (OCC) and anterior cingulate cortex (ACC). Therefore, we included these two cortical regions as additional validation ROIs. Specifically, we obtained masks of the calcarine sulcus in the OCC (size in functional space = 1975 voxels) and ACC (1148 voxels) using the automated anatomical labeling atlas in SPM (Tzourio-Mazoyer et al., 2002). Lastly, to explore the specificity of our pupil-AAS BOLD results, we delineated a cubic ROI in the medial part of the basis pontis (pons; 8 voxels), which served as a control region in which we did not expect to find pupil-BOLD coupling. The same procedure as described above was carried out to move these masks from MNI space into our study-specific template space (see Figure 2—figure supplement 2D for individual examples).
 
-## fMRI data quality assessment
+### fMRI data quality assessment
 
-## Comparisons with previous studies
+#### Comparisons with previous studies
 
 We wanted to ensure that we could replicate the resting-state correlations between pupil size and BOLD patterns reported in previous studies. First, we followed the methods of Schneider et al., 2016. We convolved the pupil size time series with the canonical HRF (6 s TTP). This single-pupil regressor, along with the movement and physiological noise correction model, were entered into first-level GLMs. Note that we only refer to the light condition in Schneider et al., 2016 since we did not assess other light conditions. Second, we followed the methods of Murphy et al., 2014. Here, we used the preprocessed pupil size time series and convolved that with the default canonical HRF, as well as its temporal and dispersion derivatives (Friston et al., 2000). The resulting three pupil time series were entered into a first-level GLM together with the movement and physiological noise correction model. For the Murphy et al., 2014 comparison analysis, the first-level single-subject contrast maps were submitted to a second-level random-effects analysis (one-way ANOVA, three levels of pupil/basis functions). To interrogate pupil correlations within the LC, statistics were also carried at the second-level using small volume correction with our group LC mask and the LC mask (Keren et al., 2009) used by Murphy and colleagues as an ROI in SPM12. In line with the reports of Schneider et al., 2016 and Murphy et al., 2014, the analyses described here included spatial smoothing with a 6 mm full-width at half maximum (FWHM) Gaussian kernel.
 
-## Assessment of the quality of subcortical fMRI data
+#### Assessment of the quality of subcortical fMRI data
 
 Next, we assessed the signal quality within the subcortical nuclei to ensure we would be able to capture pupil-AAS coupling. First, we inspected the tSNR of our data in all cortical and subcortical ROIs. To do this, the tSNR was calculated as the ratio of the mean and the standard deviation of the signal across the unsmoothed BOLD time series from the two sessions. We then averaged the resulting tSNR within each ROI. Second, we investigated whether we could replicate previous work reporting co-fluctuations between activity in various subcortical ROIs during rest (van den Brink et al., 2019). The extracted BOLD signal from each ROI (LC, VTA, SN, DR, MR, BF, and pons as a control region) per session, per participant, was denoised (using the movement and physiological noise correction model described above) and demeaned and then entered into a partial correlation analysis. We computed a partial correlation for each pair of AAS nuclei, controlling for activity in the pons. Correlation coefficients underwent a Fisher r-to-Z transform and were then submitted to one-sample t-tests.
 
-## Pupil-AAS coupling analyses
+### Pupil-AAS coupling analyses
 
 To systematically examine pupil-AAS coupling and understand the temporal relationship between the two signals, we conducted a set of three main analyses. The rationale for our approach was that previous studies (see ‘Comparisons with previous studies’) assumed that pupil-brain coupling during rest would follow the canonical HRF used in event-related fMRI designs. However, these assumptions may not be correct or may not apply to subcortical nuclei. Therefore, in our first analysis we (i) convolved the pupil time series with participant-specific and ROI-specific estimates of the HRF (described in ‘Estimation of region- and participant-specific HRF’), which showed a range of TTPs. In the second analysis, we (ii) systematically changed the TTP of the canonical HRF (from 1 to 6 s, in steps of 1 s) and convolved the pupil time series with each of these. Lastly, we (iii) performed a pupil-AAS cross-correlation analysis in which we did not convolve the pupil time series at all. Note that analyses (ii) and (iii) were not preregistered as they were carried out to better understand the outcome of analysis (i). Therefore, they should be deemed exploratory. We will now provide a detailed description of each of these analyses.
 
-## Estimation of region- and participant-specific HRF
+### Estimation of region- and participant-specific HRF
 
-In the first main analysis, we aimed to account for HRF variability across different brain regions and participants in our resting-state data. Here, we deviated from the preregistration, in which we stated that we would obtain participant-specific HRFs from event-related fMRI data. However, the HRFs based on these event-related fMRI data did not provide plausible HRFs in the AAS regions (i.e., did not rise up to one tall peak and follow with an undershoot), possibly because these AAS regions may not have been involved in the task at hand. Instead, we used a blind deconvolution technique developed by Wu et al., 2013 to estimate region- and participant-specific HRFs based on the data from both resting-state sessions. This point process method has been validated on simulated as well as empirical data (Rangaprakash et al., 2018; Wu et al., 2021). It assumes that a common HRF is shared across various spontaneous point process events (i.e., random neural events) in a given voxel or ROI. After physiological correction, the cleaned BOLD signal y(t) at a given voxel or ROI is considered as the convolution of the voxel/ROI-specific HRF h(t) and spontaneous neural events x(t)y(t)=x(t)⊗h(t)+c+ ε(t)
+In the first main analysis, we aimed to account for HRF variability across different brain regions and participants in our resting-state data. Here, we deviated from the preregistration, in which we stated that we would obtain participant-specific HRFs from event-related fMRI data. However, the HRFs based on these event-related fMRI data did not provide plausible HRFs in the AAS regions (i.e., did not rise up to one tall peak and follow with an undershoot), possibly because these AAS regions may not have been involved in the task at hand. Instead, we used a blind deconvolution technique developed by Wu et al., 2013 to estimate region- and participant-specific HRFs based on the data from both resting-state sessions. This point process method has been validated on simulated as well as empirical data (Rangaprakash et al., 2018; Wu et al., 2021). It assumes that a common HRF is shared across various spontaneous point process events (i.e., random neural events) in a given voxel or ROI. After physiological correction, the cleaned BOLD signal $y(t)$ at a given voxel or ROI is considered as the convolution of the voxel/ROI-specific HRF $h(t)$ and spontaneous neural events $x(t)$
 
-where c is a constant term indicating the baseline magnitude of the BOLD response, ℇt is noise, and ⊗ denotes convolution. Spontaneous point process events n^t were identified as BOLD fluctuations of relatively large amplitude (one or more standard deviations away from the mean; see Figure 3A). Before identifying these events, we removed movement and physiological noise with the same set of 33 regressors as described above (see ‘MRI data preprocessing’). We then applied a high-pass filter (1/128 Hz cut-off) and AR(1) serial autocorrelation corrections. These events were modeled as a train of Dirac delta functions given byn^(t)= ∑r=0∞δ(t−τ)
+$$
+y(t)=x(t)⊗h(t)+c+ \epsilon(t)
+$$
 
-where δ(t-τ) is the delta function. The ROI-specific HRF ht was then fitted according to n^t using a canonical HRF and two derivatives (temporal derivative and dispersion derivative; Friston et al., 2000). Once ht was calculated, we obtained an approximation n^t of the neural signal from the observed data using a Wiener filter. ROI-specific HRFs (Figure 3B) were estimated for all AAS nuclei (i.e., LC, VTA, SN, DR, MR, BF) and two validation regions (i.e., ACC, OCC) and one control region (i.e., pons). To maximize the number of spontaneous neural events, HRFs were estimated based on the concatenated BOLD signals from the two sessions (see Figure 3C for the number of detected pseudo-events per ROI). These HRFs were then convolved with the two pupil time series (i.e., pupil size [Figure 3E] and pupil derivative [Figure 3F]), forming the final pupil regressors that were entered into the GLMs for this analysis. GLMs were made up of a single pupil regressor-of-interest in addition to our physiological noise correction model described above. Analysis for pupil size included nine GLMs per participant, dedicated to six AAS nuclei (LC, VTA, SN, DR, MR, BF) and the three validation and control regions (ACC, OCC, pons). Similarly, nine models formed the analysis for the pupil derivative.
+where $c$ is a constant term indicating the baseline magnitude of the BOLD response, $ℇt$ is noise, and ⊗ denotes convolution. Spontaneous point process events $n^t$ were identified as BOLD fluctuations of relatively large amplitude (one or more standard deviations away from the mean; see Figure 3A). Before identifying these events, we removed movement and physiological noise with the same set of 33 regressors as described above (see ‘MRI data preprocessing’). We then applied a high-pass filter (1/128 Hz cut-off) and AR(1) serial autocorrelation corrections. These events were modeled as a train of Dirac delta functions given by
 
-## Systematic adjustment of HRF time-to-peak
+$$
+n^(t)= \sumr=0∞\delta(t−\tau)
+$$
+
+where $\delta(t-\tau)$ is the delta function. The ROI-specific HRF $ht$ was then fitted according to $n^t$ using a canonical HRF and two derivatives (temporal derivative and dispersion derivative; Friston et al., 2000). Once $ht$ was calculated, we obtained an approximation $n^t$ of the neural signal from the observed data using a Wiener filter. ROI-specific HRFs (Figure 3B) were estimated for all AAS nuclei (i.e., LC, VTA, SN, DR, MR, BF) and two validation regions (i.e., ACC, OCC) and one control region (i.e., pons). To maximize the number of spontaneous neural events, HRFs were estimated based on the concatenated BOLD signals from the two sessions (see Figure 3C for the number of detected pseudo-events per ROI). These HRFs were then convolved with the two pupil time series (i.e., pupil size [Figure 3E] and pupil derivative [Figure 3F]), forming the final pupil regressors that were entered into the GLMs for this analysis. GLMs were made up of a single pupil regressor-of-interest in addition to our physiological noise correction model described above. Analysis for pupil size included nine GLMs per participant, dedicated to six AAS nuclei (LC, VTA, SN, DR, MR, BF) and the three validation and control regions (ACC, OCC, pons). Similarly, nine models formed the analysis for the pupil derivative.
+
+### Systematic adjustment of HRF time-to-peak
 
 To explore other possible temporal relationships between pupil size and AAS BOLD patterns, we carried out a second analysis of pupil-AAS coupling where the TTP of the HRF was systematically shifted in time (Pais-Roldán et al., 2020). This was done using the canonical HRF (Friston et al., 2000), which by default has a TTP (delay of response relative to onset) of 6 s. To explore pupil-AAS coupling at shorter lags, we compared six HRFs with TTPs varying between 1, 2, 3, 4, 5, and 6 s. These HRFs were created using spm_hrf() in SPM, where parameter p(1) which refers to ‘delay of response (relative to onset)’ was adjusted from 6 (default) to 1, 2, 3, 4, and 5, respectively. Note that the 6 s TTP corresponds to the TTP used in the analysis corresponding to Schneider et al., 2016. These six HRFs were then convolved with the two pupil time series (pupil size, pupil derivative) for each participant, resulting in 12 pupil regressors. Each pupil size regressor was then added to the physiological noise correction model, making up six GLMs per participant, each focusing on one TTP (i.e., 1 s, 2 s, 3 s, 4 s, 5 s, 6 s). Similarly, six GLMs were created for the pupil derivative.
 
-## Analyses using unconvolved pupil time series
+### Analyses using unconvolved pupil time series
 
 To further characterize the nature of pupil-AAS coupling, we carried out two analyses using the unconvolved pupil time series. Firstly, we performed a cross-correlation analysis (Pais-Roldán et al., 2020) in which the preprocessed (downsampled, demeaned, unconvolved) pupil time series (size and derivative) were shifted forward and backward relative to the BOLD signal (denoised using the movement and physiological noise correction model and demeaned). Note that the BOLD signal from each ROI was first averaged and then entered into the cross-correlation analysis. Correlation coefficients for each time lag underwent a Fisher r-to-Z transform and were then submitted to one-sample t-tests. This analysis is similar to the TTP analysis but used unconvolved pupil time series and allowed us to investigate both positive and negative lags between the pupil and BOLD signals, which was not possible with the TTP method. Secondly, in order to determine which frequencies were driving the observed pupil-BOLD cross-correlations, we estimated for each ROI the cross-spectral power density (Yellin et al., 2015), the Fourier transform of the cross-correlations. We did this using cspd() in MATLAB, setting the window length to 10 samples with an overlap of three samples.
 
-## Statistical analyses
+### Statistical analyses
 
 All first-level GLMs described above were constructed in SPM12 with session (session 1, session 2) as a within-subject factor (n = 56). For participants in which only one session could be included (i.e., due to pupil quality exclusion criteria or technical issues in a scanning session), a GLM was constructed using only one session (n = 14). All analyses carried out in this study was based on n = 70, unless otherwise mentioned.
 

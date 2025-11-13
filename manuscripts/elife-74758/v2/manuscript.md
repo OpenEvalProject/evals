@@ -34,15 +34,39 @@ In this study, we used a combination of retrograde tracing, electrophysiology an
 
 ## Results
 
-## BA input into vH is both excitatory and inhibitory
+### BA input into vH is both excitatory and inhibitory
 
 While the majority of investigation of BA-vH connectivity is focussed on projections specifically from the BLA, it is known that multiple BA nuclei project to vH (McDonald and Mott, 2017). Therefore, we first determined the spatial distribution of neurons in BA that send input into vH by injecting a fluorescently conjugated cholera toxin beta subunit (CTXβ) into the ventral part of the hippocampus (Figure 1A). CTXβ is taken up by presynaptic terminals at the injection site and retrogradely transported to label the soma of afferent neurons. After 2 weeks, we serially sectioned labelled brains and mapped labelled cell locations to the Allen Brain Atlas (ABA) (Fürth et al., 2018; Wee and MacAskill, 2020). We found that neurons sending input to vH were widely dispersed throughout the entire BA, including in BLA, BMA and MEA, as well as in more cortical amygdala areas (Figure 1B–D, McDonald and Mott, 2017; Strange et al., 2014). Overall, this experiment confirmed that there is large input from disperse BA nuclei to vH, focussed around the posterior BMA and BLA.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of experiment. CTXβ was injected into vH, 2 weeks later coronal slices of BA were examined for retrogradely labelled neurons. (B) Example slices showing widespread labelling throughout numerous BA nuclei. Scale bar = 500 μm, 100 μm (zoom). Images are stitched from tiled scans. (C) Whole-brain distribution of labelled BA neurons. (D) Summary showing proportion of labelled BA cells in each nuclei. CEA, central amygdala; MEA, medial amygdala; COA, cortical amygdala; BMA, basomedial amygdala; PA, posterior amygdala; BLA, basolateral amygdala; LA, lateral amygdala; l, lateral; m, medial; a, anterior; p, posterior.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of experiment. CTXβ was injected into vH, 2 weeks later coronal slices of BA were examined for retrogradely labelled neurons. (B) Example slices showing widespread labelling throughout numerous BA nuclei. Scale bar = 500 μm, 100 μm (zoom). Images are stitched from tiled scans. (C) Whole-brain distribution of labelled BA neurons. (D) Summary showing proportion of labelled BA cells in each nuclei. CEA, central amygdala; MEA, medial amygdala; COA, cortical amygdala; BMA, basomedial amygdala; PA, posterior amygdala; BLA, basolateral amygdala; LA, lateral amygdala; l, lateral; m, medial; a, anterior; p, posterior.
 
 We next tested whether BA input to vH may be both excitatory and inhibitory (McDonald and Mott, 2017). We repeated our experiment using a vGAT-cre::dtomato reporter mouse. In this experiment, CTXβ-labelled neurons in BA could be distinguished as either GABAergic (vGAT+) or putatively excitatory (vGAT-) based on fluorescence colocalisation. Using this approach, we found that a small but consistent proportion of BA neurons (3.7% of CTXβ-labelled neurons) that projected to vH were GABAergic (Figure 2A, Figure 2—figure supplement 1A and B). Using whole-brain registration as before, we found that inhibitory projection neurons were intermingled with excitatory projection neurons, such that there was no obvious anatomical separation between inhibitory and classic excitatory projections. Supporting this, both were found in consistent proportions (~4% of labelled neurons) throughout each nucleus in BA and across all three anatomical axes (Figure 2—figure supplement 1A–C). Previous studies have suggested that long-range inhibitory input in vH arises from somatostatin-positive neurons (McDonald and Mott, 2017). Therefore, we repeated our CTXβ experiment and performed immunostaining against somatostatin. Consistent with previous results, we found that a proportion of CTX+ BA neurons projecting to vH were also somatostatin positive (Figure 2—figure supplement 2). Thus, in addition to the classically described excitatory projection from BA to vH, there is a parallel inhibitory projection arising from GABAergic neurons from across the BA, and these neurons are likely to express the peptide somatostatin.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-v2.jpg)
+
+**Figure 2.:** (A) CTXβ injection in vH in a vGAT::cre::dtomato mouse line reveals inhibitory neurons (vGAT+), putative excitatory neurons that project to vH (CTX+) and inhibitory neurons that project to vH (vGAT+ CTX+). Example neurons from boxed region on left. Scale bar = 300 μm (left), 20 μm (right). (B) Schematic showing experimental setup. ChR2 was expressed using the pan-neuronal synapsin promoter using an adeno-associated virus (AAV) injection in BA. After allowing for expression, whole-cell recordings were performed in voltage clamp at – 70 mV in vH. (C) Brief pulses of blue light evoke excitatory currents that are blocked by the AMPA receptor antagonist NBQX. Left: average current trace pre- and post-NBQX. Middle: proportion of recorded cells connected (with time-locked response to light). Right: amplitude before and after NBQX. Note log scale. NBQX blocks excitatory currents evoked by BA input. Scale bar = 50 pA, 10 ms. (D, E) As (B, C) but for voltage clamp at 0 mV before and after the GABA receptor antagonist gabazine. Gabazine blocks inhibitory currents evoked by BA input. Scale bar = 50 pA, 10 ms. (F) Feedforward inhibition isolated using ChR2 expression under the CaMKii promoter. (G) Brief pulses of blue light evoked inhibitory currents at 0 mV that are blocked by the AMPA receptor antagonist NBQX. Left: average current trace pre- and post-NBQX and GZ. Right: amplitude before and after NBQX and GZ. Note log scale. NBQX blocks inhibitory currents evoked by CaMKii BA input, indicating it is solely feedforward. Scale bar = 50 pA, 10 ms. (H, I) As for (F, G) but direct inhibitory input isolated using ChR2 expression only in vGAT + BA neurons. NBQX has no effect on direct inhibitory connection, while it is blocked by GZ, indicating that it is a direct, long-range inhibitory connection. Scale bar = 15 pA, 10 ms.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Whole-brain distribution of labelled excitatory (blue) and inhibitory (orange) BA neurons after injection of CTXβ into vH. (B) Proportion of CTXβ-labelled neurons that are vGAT+ (orange) and vGAT- (blue). (C) Distribution of CTXβ neurons that were vGAT+ (orange) and vGAT- (blue) across three anatomical axes. Note similar overall distribution. (D) Schematic of experiment. Pan-neuronal synapsin promoter expresses ChR2 in both inhibitory and excitatory neurons, allowing assessment of feedforward and direct BA input to vH. (E) Brief pulses of blue light evoked inhibitory currents at 0 mV. Average current traces pre- and post-NBQX and GZ. In a proportion of neurons (left) currents not completely blocked by the AMPA receptor antagonist NBQX, but removed by GABA receptor antagonist gabazine, indicating the presence of direct inhibition. In other recorded neurons, currents were completely blocked by NBQX (right), indicating only feedforward inhibition. Scale bar = 50 pA, 10 ms. (F) Left: proportion of neurons with inhibitory currents that received direct inhibition. Right: amplitude before and after NBQX and GZ in two groups of neurons. Note log scale.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Retrogradely labelled CTX+ neurons (magenta) in BA after injection into vH are colocalised with immunofluorescence-detected somatostatin (green). Scale bar = 20 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Injection of virus to express GFP under the CamKii promoter restricts expression to excitatory neurons in BA (cyan, left). Right shows zoom of distal CA1 in vH showing axon innervation from BA. Slices counterstained with DAPI (white). Scale bar = 500 µm, 50 µm (zoom). (B) As in (A) but using a virus expressing a cre-dependent tracer smFP in a VGAT mouse to restrict expression to inhibitory BA neurons (orange). Note that the dim cell body labelling in zoom on the right is background staining due to use of a FLAG antibody.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Images of Allen Exp 113935990 injection into BA with GFP expressed under the pan-neuronal synapsin promoter. Note lack of axons in proximal CA1/CA2 border, but dense innervation of distal CA1/subiculum border. (B) Images of Allen Exp 113144775 injection into anterior BA with GFP expressed under the pan-neuronal synapsin promoter. Note lack of axons in proximal CA1/CA2 border, but innervation of distal CA1/subiculum border. Also note lower density innervation due to anterior location of injection, consistent with retrograde tracing in Figure 1. (C) Images of Allen Exp 305321177 injection into BA with cre-dependent GFP expressed in a VGAT mouse to label only inhibitory neurons. Again note lack of inhibitory axons in proximal CA1/CA2 border, but innervation of distal CA1/subiculum border.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Three example injections of ChR2 under the hSyn promoter into basal amygdala (BA). Scale bar 750 µm.
 
 We next investigated if these projections made functional connections onto vH pyramidal neurons. To recruit both excitatory and inhibitory projections from BA, we used channelrhodopsin-assisted circuit mapping (CRACM). We expressed ChR2 under a pan-neuronal synapsin promoter (hsyn-ChR2) in the BA using an injection of adeno-associated virus (AAV) centred on posterior BMA and BLA (Figure 2—figure supplement 5). Two weeks later we prepared acute slices of vH from animals performed whole-cell recordings from pyramidal neurons in the axon-rich CA1/ proximal subiculum border (Figure 2B). By recording in voltage clamp at –70 mV, we could isolate excitatory currents in response to blue light in ~40% of recorded neurons that were blocked by bath application of the AMPA receptor antagonist NBQX (Figure 2C, paired t-test, t(8) = 10.04, p=0.000008, n = 9 neurons). In the same neurons, we could also record inhibitory currents at 0 mV in ~30% of cells that were blocked by the GABA-A receptor antagonist gabazine (Figure 2E, paired t-test, t(8) = 11.7, p=1.48 × 10–7, n = 12 neurons). Thus, BA input makes excitatory and inhibitory connections with vH pyramidal neurons via AMPA and GABA-A receptors.
 
@@ -52,13 +76,13 @@ To test this more explicitly, we again used vGAT-cre mice where cre is expressed
 
 Together, these experiments define a novel, direct inhibitory projection from BA to vH. Thus, contrary to previous assumptions, BA provides two parallel projections to pyramidal neurons in vH, one excitatory, and one inhibitory.
 
-## BA excitatory and inhibitory input selectively connects with unique vH output populations
+### BA excitatory and inhibitory input selectively connects with unique vH output populations
 
 The relatively sparse connectivity in our results above suggests that both excitatory and inhibitory BA input may connect with only a proportion of pyramidal neurons in vH. The CA1/proximal subiculum border of vH is composed of multiple populations of neurons organised as parallel projections (Figure 3, Gergues et al., 2020; Naber and Witter, 1998; Wee and MacAskill, 2020). Therefore, we hypothesised that this low connectivity may be an indication that BA input connects differentially with neurons that project to either NAc, PFC or back to BA.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of experiment, three differently tagged CTXβ tracers were injected into prefrontal cortex (PFC), nucleus accumbens (NAc) and basal amygdala (BA). (B) Example injection sites in each region. Scale bar 1 mm. (C) Horizontal section of CA1/subiculum in ventral hippocampus (vH) showing interspersed but non-overlapping labelling. Scale bars 300 µm (left), 100 µm (right). (D) Proportion of neurons labelled with CTXβ injection in NAc (red), BA (green) or PFC (grey) co-labelled with CTXβ from a different region. Note that there is only a small proportion of dual labelled neurons. (E) Strategy for electrophysiology recordings – projection populations were fluorescently labelled with retrobead injections into downstream projection areas. (F) Examples of positive (+160 pA) and negative (–40 pA) current steps in fluorescently targeted neurons from each population. Scale bar = 30 mV, 100 ms. (G, H) No large differences in input/output curve, resting potential, input resistance or sag amplitude across the three populations.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Schematic of experiment, three differently tagged CTXβ tracers were injected into prefrontal cortex (PFC), nucleus accumbens (NAc) and basal amygdala (BA). (B) Example injection sites in each region. Scale bar 1 mm. (C) Horizontal section of CA1/subiculum in ventral hippocampus (vH) showing interspersed but non-overlapping labelling. Scale bars 300 µm (left), 100 µm (right). (D) Proportion of neurons labelled with CTXβ injection in NAc (red), BA (green) or PFC (grey) co-labelled with CTXβ from a different region. Note that there is only a small proportion of dual labelled neurons. (E) Strategy for electrophysiology recordings – projection populations were fluorescently labelled with retrobead injections into downstream projection areas. (F) Examples of positive (+160 pA) and negative (–40 pA) current steps in fluorescently targeted neurons from each population. Scale bar = 30 mV, 100 ms. (G, H) No large differences in input/output curve, resting potential, input resistance or sag amplitude across the three populations.
 
 To investigate this possibility, we wanted to directly compare the level of synaptic input from BA onto each projection populations in vH. As the absolute level of input onto a recorded neuron using the CRACM approach is proportional to the number of connected axons times the unitary amplitude of these connections, light-evoked input is dependent on a number of technical variables such as precise location of the injection site, location of recording in vH and the number of ChR2-positive axons. Therefore, it is not possible to compare input onto different populations of neurons across slices and injections (MacAskill et al., 2014; MacAskill et al., 2012; Marques et al., 2018; Petreanu et al., 2007). Therefore, we instead compared the relative ChR2-evoked input onto pairs of neighbouring neurons, each of which projected to a different downstream region. Using this approach, we could make a within-experiment comparison of the relative BA input across each of the projection populations, while keeping the stimulus constant (Petreanu et al., 2007). In order to carry out this experiment, we again injected ChR2 into BA, but also retrograde tracers into either BA and NAc, or BA and PFC. This allowed us, 2 weeks later, to prepare acute slices and obtain whole-cell recordings from pairs of fluorescently identified neurons in vH projecting to each downstream target. Together, the paired recording of neurons in the same slice and field of view allowed for a comparison of ChR2-evoked synaptic input while controlling for variability in the absolute level of input due to confounds such as injection volume and the exact location in CA1/subiculum.
 
@@ -66,13 +90,13 @@ We first compared excitatory input in voltage clamp at –70 mV as before with p
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic of experiment vHNAc and vHBA neurons was labelled with retrobead injections, and ChR2 was expressed pan-neuronally in BA. (B) Paired, fluorescently targeted recordings from neurons in each pathway and recording of light-evoked currents. Top: recording setup. Bottom: average light-evoked currents in vHBA (green) and vHNAc (red) neurons. Scale bar = 0.5 vHBA response, 10 ms. (C) Summary of amplitude of light-evoked BA input in pairs of vHNAc and vHBA neurons (top). When displayed as a scatter plot (bottom), or as the ratio of vHNAc:vHBA (right), the amplitudes cluster on the line of unity, indicating that these populations share equal input. Note log axis. (D–F) As (A–C) but for pairs of vHBA and vHPFC neurons. Note that when displayed as a scatter and a ratio, both vHPFC:vHBA amplitudes are below the line of unity, indicating that input preferentially innervates vHBA neurons. (G–L) As (A–F) but for inhibitory input from BA isolated by expressing FLEX ChR2 in a vGAT::Cre line. Note that when displayed as a scatter and a ratio, both vHPFC and vHNAc amplitudes are below the line of unity, indicating that inhibitory input preferentially innervates vHBA neurons in both cases. Scale bar = 0.5 vHBA response, 10 ms.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Schematic of experiment vHNAc and vHBA neurons was labelled with retrobead injections, and ChR2 was expressed pan-neuronally in BA. (B) Paired, fluorescently targeted recordings from neurons in each pathway and recording of light-evoked currents. Top: recording setup. Bottom: average light-evoked currents in vHBA (green) and vHNAc (red) neurons. Scale bar = 0.5 vHBA response, 10 ms. (C) Summary of amplitude of light-evoked BA input in pairs of vHNAc and vHBA neurons (top). When displayed as a scatter plot (bottom), or as the ratio of vHNAc:vHBA (right), the amplitudes cluster on the line of unity, indicating that these populations share equal input. Note log axis. (D–F) As (A–C) but for pairs of vHBA and vHPFC neurons. Note that when displayed as a scatter and a ratio, both vHPFC:vHBA amplitudes are below the line of unity, indicating that input preferentially innervates vHBA neurons. (G–L) As (A–F) but for inhibitory input from BA isolated by expressing FLEX ChR2 in a vGAT::Cre line. Note that when displayed as a scatter and a ratio, both vHPFC and vHNAc amplitudes are below the line of unity, indicating that inhibitory input preferentially innervates vHBA neurons in both cases. Scale bar = 0.5 vHBA response, 10 ms.
 
 We next investigated long-range inhibitory input using vGAT-cre mice and expressing cre-dependent ChR2 in BA. Paired recordings of vHBA and vHNAc neurons showed a marked bias of inhibitory input to vHBA neurons, with consistently smaller input onto neighbouring vHNAc neurons (Figure 4G–I, Wilcoxon rank-sum, W = 0, p=0.016, n = 7 pairs of neurons). Similarly to excitatory input, pairs of vHBA and vHPFC projecting neurons showed essentially no connectivity from BA to vHPFC neurons (Figure 4J–L, Wilcoxon rank-sum, W = 0, p=0.016, n = 7 pairs of neurons).
 
 Overall, these experiments suggest that excitatory input from BA equally targets vH neurons projecting to either NAc or BA, but not with those projecting to PFC. In contrast, inhibitory input from BA preferentially targets vH neurons projecting to BA, has a weak connection to those that project to NAc and again avoids those projecting to PFC. Together, this shows that both excitatory and inhibitory BA input to vH have unique and distinct connectivity patterns with vH output circuitry, and suggests it is well placed to define their differential activity.
 
-## BA excitatory and inhibitory input interacts with local inhibitory circuitry in vH
+### BA excitatory and inhibitory input interacts with local inhibitory circuitry in vH
 
 We next wanted to understand how BA input may interact with the local vH circuit to define activity of the different output populations. vH output populations have been shown to be strongly connected with local interneurons to form both feedforward and feedback inhibitory circuitry, and this connectivity can vary on a cell-type-specific basis (Lee et al., 2014a; Soltesz and Losonczy, 2018). Thus we next wanted to ask three questions about the layout of the vH circuit and how it is influenced by BA input: (1) Does excitatory and inhibitory BA input connect directly with local interneurons in vH? (2) Do pyramidal neurons from each projection population connect with local interneurons to provide feedback inhibition? (3) Are there differences in how local interneurons connect with pyramidal neurons from different projection populations?
 
@@ -80,7 +104,7 @@ We first asked whether BA excitatory and inhibitory input targeted interneurons 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig5-v2.jpg)
 
-**Figure 5.:** NAc neurons.(A) Schematic of experiment. ChR2 was expressed in BA, and DIO mCherry was expressed in ventral hippocampus (vH) in vGAT:cre mice to label local interneurons. (B) Left: recording configuration to record excitatory connectivity at –70 mV (top). Average light-evoked current in interneurons in vH. Scale bar = 50 pA, 10 ms. Right: summary of probability of connection (left) and amplitude of connected currents (right). (C, D) As (A, B) but for inhibitory input isolated using FLEX ChR2 expression in vGAT:cre mice as before. Note that recordings were performed in high Cl-, so inward currents were measured at –70 mV. (E) Experimental setup for investigating feedback connectivity from vHBA neurons. AAVretro was injected into BA, and FLEX ChR2 and dlx-mRuby into vH to allow recordings from dlx+ interneurons, and measurement of light-evoked currents from vHBA activation. (F) Left: recording configuration to record excitatory connectivity at –70 mV (top). Average light-evoked current in dlx+ interneurons in vH. Right: summary of probability of connection (left) and amplitude of connected currents (right). (G, H) As (E, F) but for feedback input from vHNAc neurons. (I) Schematic of experiment, vHNAc and vHBA cells were labelled with injections of retrobeads, while ChR2 was expressed in vH interneurons using FLEX ChR2 in a vGAT::cre mouse. (J) Paired, fluorescently targeted recordings from neurons in each pathway at 0 mV and recording of light-evoked currents. Top: recording setup. Bottom: average light-evoked currents in vHBA (green) and vHNAc (red) neurons. Scale bar = 1 vH-BA response, 10 ms. (K) Summary of amplitude of light-evoked BA input in pairs of vHNAc and vHBA neurons (top). When displayed as a scatter plot (bottom), or as the ratio of vHNAc: vHBA (right), the amplitudes cluster above the line of unity, indicating that local inhibition preferentially innervates vHNAc neurons. Note log axis. (L–N) as (I, J) but for CaMKii input recorded at –70 mV. Note as in Figure 3 that there is equal input onto both populations. Scale bar = 0.5 vHBA response, 10 ms. (O, P) as in (M, N) but recording at 0 mV to isolate feedforward inhibition. Note that the amplitudes cluster above the line of unity, indicating that feedforward inhibition preferentially innervates vHNAc neurons. Scale bar = 1 vH-BA response, 10 ms.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Schematic of experiment. ChR2 was expressed in BA, and DIO mCherry was expressed in ventral hippocampus (vH) in vGAT:cre mice to label local interneurons. (B) Left: recording configuration to record excitatory connectivity at –70 mV (top). Average light-evoked current in interneurons in vH. Scale bar = 50 pA, 10 ms. Right: summary of probability of connection (left) and amplitude of connected currents (right). (C, D) As (A, B) but for inhibitory input isolated using FLEX ChR2 expression in vGAT:cre mice as before. Note that recordings were performed in high Cl-, so inward currents were measured at –70 mV. (E) Experimental setup for investigating feedback connectivity from vHBA neurons. AAVretro was injected into BA, and FLEX ChR2 and dlx-mRuby into vH to allow recordings from dlx+ interneurons, and measurement of light-evoked currents from vHBA activation. (F) Left: recording configuration to record excitatory connectivity at –70 mV (top). Average light-evoked current in dlx+ interneurons in vH. Right: summary of probability of connection (left) and amplitude of connected currents (right). (G, H) As (E, F) but for feedback input from vHNAc neurons. (I) Schematic of experiment, vHNAc and vHBA cells were labelled with injections of retrobeads, while ChR2 was expressed in vH interneurons using FLEX ChR2 in a vGAT::cre mouse. (J) Paired, fluorescently targeted recordings from neurons in each pathway at 0 mV and recording of light-evoked currents. Top: recording setup. Bottom: average light-evoked currents in vHBA (green) and vHNAc (red) neurons. Scale bar = 1 vH-BA response, 10 ms. (K) Summary of amplitude of light-evoked BA input in pairs of vHNAc and vHBA neurons (top). When displayed as a scatter plot (bottom), or as the ratio of vHNAc: vHBA (right), the amplitudes cluster above the line of unity, indicating that local inhibition preferentially innervates vHNAc neurons. Note log axis. (L–N) as (I, J) but for CaMKii input recorded at –70 mV. Note as in Figure 3 that there is equal input onto both populations. Scale bar = 0.5 vHBA response, 10 ms. (O, P) as in (M, N) but recording at 0 mV to isolate feedforward inhibition. Note that the amplitudes cluster above the line of unity, indicating that feedforward inhibition preferentially innervates vHNAc neurons. Scale bar = 1 vH-BA response, 10 ms.
 
 We next wanted to investigate if vHBA and vHNAc neurons connected to local interneurons to form the basis of a feedback inhibitory circuit (Lee et al., 2014a). To do this, we injected a retrogradely transported AAV (AAVretro) in either NAc and BA to express cre recombinase in NAc- or BA-projecting vH neurons, respectively. In the same surgery, we injected a combination of cre-dependent ChR2 and the fluorescent reporter dlx-mRuby into vH. This allowed us to obtain whole-cell recordings from fluorescently identified vH interneurons, while activating neighbouring projection neurons. Voltage-clamp recordings at –70 mV showed robust responses from both vHNAc and vHBA neurons onto local interneurons (~80% of recorded neurons were connected in each condition, Figure 5E–H), confirming previous studies suggesting strong feedback inhibition in vH (Lee et al., 2014a). For both of these experiments (Figure 5A–H), it is important to note that we did not quantitatively compare the level of synaptic input across different conditions due to the limitations of the CRACM approach (see ‘Discussion’). However, these experiments confirm that there is robust feedforward and feedback inhibition present in the CA1/subiculum border of vH.
 
@@ -90,9 +114,25 @@ This marked asymmetry of local inhibitory connectivity led us to predict that fe
 
 Together, these experiments show that local interneurons in vH make biased connections onto vHNAc neurons. This biased innervation of interneurons towards vHNAc neurons suggests greater influence of both feedforward inhibition from BA, but also feedback inhibition resulting from activation of local pyramidal neurons.
 
-## A circuit model predicts a role for long-range inhibition in the promotion of vHNAc activity
+### A circuit model predicts a role for long-range inhibition in the promotion of vHNAc activity
 
 Our results so far suggest that the connectivity of both excitatory and inhibitory BA input into vH is very specific and interacts with a number of interconnected elements in the local vH circuit. In order to investigate the overall influence of BA input in a more holistic way, we built a simple integrate-and-fire network (Stimberg et al., 2019), containing three separate projection populations in vH (to BA, NAc and PFC), local interneurons, excitatory and inhibitory input from BA, and background synaptic input from other structures. We then constrained the connectivity between these groups of neurons using the results of our circuit analysis (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of integrate-and-fire model. Three populations of projection neurons (vHNAc, red; vHBA, green; vHPFC, grey) and local interneurons (orange) are innervated by excitatory (blue, top) as well as inhibitory (orange, bottom) basal amygdala (BA) input. Connectivity is defined from results in previous figures. (B) Increasing the proportion of inhibitory relative to excitatory BA input has opposite effects on vHBA and vHNAc spiking. Each graph shows a raster of spiking for each neuron across a 500 ms period. Note high vHBA spiking with no inhibitory input, and high vHNAc spiking with high inhibitory input. vHPFC neurons never fire as they are not innervated by BA and only receive background input. (C) Summary of pyramidal neuron activity. With increasing inhibitory input, activity shifted from vHBA to vHNAc neurons. Markers indicate proportions plotted in (B). (D) Long-range inhibition reduces local interneuron firing, removing preferential feedback inhibition onto vHNAc neurons, allowing them to fire.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Total spiking of model in vHBA neurons (green), vHNAc neurons (red), vHPFC neurons (grey) and interneurons (orange) with increasing levels of basal amygdala (BA) inhibition, with different levels in feedforward inhibition (darker colours). Note that although absolute firing changes, the switch from vHBA to vHNAc activity with increasing inhibitory input is maintained. (B) As in (A) but for different levels of feedback connectivity. Note that again the switch from vHBA to vHNAc with increasing inhibitory input is maintained.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Multiple iterations of the circuit model were run where the effect of collateralisation was tested by adding increasing proportions of neurons where connectivity with basal amygdala (BA) input was defined by a different downstream projection. (B) As in (A), but local connectivity was altered dependent on downstream projection. (C) As in (A, B), but both BA input and local connectivity were altered dependent on downstream projection. Note that in all three simulations the overall behaviour of the model is maintained, even with large ~40–60% collateralisation.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Two iterations of the model were run, the first (top, and main figure) where differences in basal amygdala (BA) input were due to differences in the synaptic weight of individual connections onto ventral hippocampus (vH) neurons. The second (bottom) was identical apart from the differences in BA input were due to the probability of BA connection with no change in synaptic weight. Note that both models display similar behaviour.
 
 We first looked at excitatory BA input alone and found that this robustly activated vHBA neurons in our model and had no effect on vHPFC activity – consistent with the lack of connectivity to this population (see Figure 4). However, there was also a marked lack of vHNAc activity despite these neurons receiving equivalent excitatory synaptic input from BA. This was due to asymmetrical targeting by local inhibition (see Figure 5), and thus a combination of feedback and feedforward inhibition effectively silencing vHNAc neurons, despite them receiving excitatory drive.
 
@@ -100,17 +140,45 @@ We next incrementally added increasing proportions of long-range inhibitory inpu
 
 This circuit analysis suggests that specific connectivity of excitatory BA input into vH may not be the major determinant of vHBA and vHNAc neuron activity. In fact, it is the presence of direct inhibitory input from BA that defines which projection population is active. With no inhibition present, activity is confined to a reciprocal projection back to BA; however, when inhibition is present there is a switch to increased activity to NAc.
 
-## BA input to vH can support RTPP via activation of vHNAc neurons
+### BA input to vH can support RTPP via activation of vHNAc neurons
 
 A hallmark of activation of vHNAc activation is the ability to promote real-time place preference (RTPP; Britt et al., 2012; LeGates et al., 2018). The results of our circuit modelling suggested that co-activation of BA inhibitory and excitatory input to vH results in vHNAc activation. We reasoned that BA input to vH may also support RTPP via activation of vHNAc neurons in vivo, and that this would depend on the co-activation of inhibitory as well as excitatory BA projections.
 
 We tested if activation of both excitatory and inhibitory BA input supported RTPP by unilaterally injecting either GFP, or ChR2 under the pan-neuronal synapsin promoter into BA and implanting optical fibres in vH (Figure 7A). We then carried out an RTPP test where one side of a rectangular arena was paired with 20 Hz blue light stimulation of BA terminals in vH. Consistent with our circuit analysis showing BA input activating vHNAc neurons, this stimulus supported RTPP in ChR2-expressing animals compared to GFP controls (t-test, t(5.9) = 2.61, p=0.041, GFP n = 6 mice, ChR2 n = 8 mice), with no change in the total distance moved during the session (Figure 7B, C and t-test, t(9.2) = 1.27, p=0.23).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic of experiment. GFP or pan-neuronal ChR2 were expressed in BA and an optic fibre implanted in ventral hippocampus (vH). (B) RTPP assay. One side of a chamber was paired with 20 Hz blue light stimulation. Example trajectories of GFP (left) and ChR2 (right)-expressing animals over the 15 min RTPP session. Note increased occupancy of light-paired (stim) side in ChR2 animals. Scale bar = 15 cm. (C) Summary of RTPP. Left: proportion of time spent on stim side (left) and total distance travelled (right) in GFP and ChR2 animals. Note consistent preference for stim side in ChR2 animals. (D) Strategy to express KORD in vHNAc neurons. (E, F) Bath application of salvinorin B (SalB) (100 nm) hyperpolarises KORD-expressing vHNAc neurons and reduces AP firing. See Figure 7—figure supplement 1 for full quantification. Scale bar = 30 mV, 100 ms. (G) Schematic of strategy to inhibit vHNAc neurons during BA input-driven RTPP. (H, I) As (B, C) but comparing the effect of either DMSO (vehicle) or SalB (KORD agonist) injections 15 min before testing in control mice. Note consistent RTPP in both conditions indicating no effect of SalB in control mice. (J, K) As (H, I), but in mice expressing KORD in vHNAc neurons. Note loss of RTPP in SalB-injected mice compared to controls.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Example traces before and after SalB wash in in vHNAc neuron (red) and vHBA neuron. Note lower resting potential and reduced spiking after SalB wash in. (B) Summary of effect of SalB wash in on resting potential for vHNAc neurons (red) and vHBA neurons. Thin lines are individual experiments, old line is group average. (C) Summary of effect of SalB wash in on current injection-induced action potential firing. Thin lines show individual vHNAc neurons (red) and vH-BA neurons, grey lines show group average.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Example injection of ChR2 in basal amygdala (BA) (left), cre-dependent smFP in ventral hippocampus (vH) (middle) and zoom (right) showing BA axons (green) innervating smFP+ neurons (red).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Histology for experiments in Figure 6A–C. (B) Histology for experiments in Figure 6G–K.
+
 From our circuit model, we predicted that this RTPP should be abolished by a reduction in the activity of vHNAc neurons. We next directly tested this using a combination of optogenetic RTPP to activate BA input, and the Kappa Opioid Receptor Designer receptor exclusively activated by designer drugs (KORD) to reversibly inhibit vHNAc neurons (Vardy et al., 2015). We first tested the efficacy of KORDs expressed in vHNAc neurons and confirmed that the KORD agonist salvinorin B (SalB) hyperpolarised vHNAc neurons and resulted in a decrease in current-induced action potential firing (Figure 7D–F, Figure 7—figure supplement 1). We next combined this KORD-mediated inhibition with the optogenetic RTPP assay. We expressed pan-neuronal ChR2 in BA, KORDs in vHNAc neurons, and implanted an optical fibre unilaterally in vH (Figure 7G). We then carried out the RTPP assay 15 min after a subcutaneous injection of either SalB or vehicle control (DMSO, Figure 7H–K). We found that after DMSO injection there was still robust RTPP in both control and KORD-expressing mice. After SalB, control animals again still had robust RTPP. However, after injection of SalB in KORD-expressing animals, RTPP was abolished (mixed-effect ANOVA, effect of group [control vs. KORD]: F(1,14) = 15.97, p=0.001, effect of drug [SalB vs. DMSO]: F(1,14) = 15.06, p=0.002, interaction: F(1,14) = 7.45, p=0.016; post hoc paired t-test: control DSMO vs. SalB, t(8) = 1.1, p=0.3, n = 9 mice, KORD DMSO vs. SalB, t(6) = 4.62, p=0.004, n = 7 mice). Together, these experiments support our circuit model, where co-activation of both excitatory and inhibitory BA input to vH supports RTPP through the activation of vHNAc neurons.
 
-## Excitatory BA input to vH supports RTPP only when vHBA activity is inhibited
+### Excitatory BA input to vH supports RTPP only when vHBA activity is inhibited
 
 In contrast to activation of both excitatory and inhibitory BA input into vH, another prediction from our circuit modelling is that excitatory BA input alone would not activate vHNAc neurons, and thus would not support RTPP. We tested this prediction using ChR2 expressed under the CaMKii promoter to target only excitatory BA input to vH (see Figure 2). We injected either GFP or ChR2 under the CaMKii promoter in BA and implanted an optical fibre in vH before carrying out an RTPP assay as before (Figure 8A). Consistent with the predictions from our circuit analysis, this assay showed that the light stimulus was unable to support RTPP in either GFP- or ChR2-expressing animals (Figure 8B and C and t-test, t(6.4) = 0.40, p=0.70, GFP n = 4 mice, ChR2 n = 7 mice) and was again accompanied by no change in distance travelled (t-test, t(6.9) = 0.08, p=0.94).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic of experiment. GFP or excitation-specific CaMKii ChR2 were expressed in BA and an optic fibre implanted in ventral hippocampus (vH). (B) RTPP assay. One side of a chamber was paired with 20 Hz blue light stimulation. Example trajectories of GFP (left) and ChR2 (right)-expressing animals over the 15 min RTPP session. Note lack of preference for light-paired (stim) side in either group. Scale bar = 15 cm. (C) Summary of RTPP. Left: proportion of time spent on stim side (left) and total distance travelled (right) in GFP and ChR2 animals. Note lack of preference for stim side in either condition. (D) Strategy to express KORD in vHBA neurons. (E, F) Bath application of salvinorin B (SalB) (100 nm) hyperpolarises KORD-expressing vHBA neurons and reduces AP firing. See Figure 6—figure supplement 1 for full quantification. Scale bar = 30 mV, 100 ms. (G) Schematic of strategy to inhibit vHBA neurons during BA input-driven RTPP. (H, I) As (B, C) but comparing the effect of either DMSO (vehicle) or SalB (KORD agonist) injections 15 min before testing in control mice. Note lack of RTPP in both conditions indicating no effect of SalB in control mice. (J, K) As (H, I), but in mice expressing KORD in vHBA neurons. Note induction of RTPP in SalB-injected mice compared to controls.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Total vHNAc activity with and without vHBA activity. Individual data points for all configurations of model presented in Figure 3. Note large increase in vHNAc activity on vHBA silencing across a wide range of feedback and feedforward connectivity. (B) As in (A) but with both excitatory and inhibitory input (inhibitory input scaled to 40% of excitatory input [as in example in Figure 5]). vHBA silencing has no effect as these neurons are already effectively silenced by BA inhibitory input. (C, D) As in (A,B) but for interneuron firing. vH-BA silencing reduces interneuron firing, contributing to the increase in vH-NAc activity.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/74758/elife-74758-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Histology for experiments in Figure 7A–C. (B) Histology for experiments in Figure 7G–K.
 
 Our reasoning for this lack of RTPP was that excitatory BA input results in vHBA neuron activity, and this recruits strong local feedback inhibition that preferentially reduces the activity of vHNAc neurons (Figure 6) that are required to support RTPP (Figure 7). We therefore hypothesised that reducing vHBA neuron activity (in effect mimicking the effect of the direct BA inhibitory projection) may increase vHNAc activity and support RTPP from only excitatory BA input. This reasoning was supported by our circuit model, where removing vHBA activity increased the activity of vHNAc neurons when no BA inhibitory input was present (Figure 8—figure supplement 1).
 
@@ -138,7 +206,7 @@ Our study focussed on the postsynaptic influence of BA inhibitory projections, a
 
 Finally, it is important to note that we investigated the connectivity of this circuit at a steady state, and all of our slice physiology was performed in animals that had only experienced their home cage environment. Therefore, it is unknown how this circuit may be updated by experience and new learning, and the plasticity mechanisms that might underlie this updating. The reciprocal connection from vH to BA has been shown to undergo robust plasticity (Bazelot et al., 2015), and BA circuitry rapidly updates in response to learning cue associations (Beyeler et al., 2016; Namburi et al., 2015b; Namburi et al., 2015a). Therefore, an important future direction will be to understand how the BA-vH circuit is altered by learning and novel experience, and how this plasticity influences the relative targeting of excitatory and inhibitory connections onto each of the vH projection populations.
 
-## Technical limitations of CRACM
+### Technical limitations of CRACM
 
 In this study, we used CRACM to investigate the connectivity between BA and vH. We utilised this technique as axons from BA are severed during the slicing process which renders them unable to be electrically stimulated. In addition, the CRACM technique allowed us to restrict our analysis to specific genetically defined excitatory or inhibitory input. However, there are multiple caveats associated with the CRACM technique that must be taken into account when interpreting such experiments. First, in the standard CRACM setup, light-evoked currents in postsynaptic neurons are heavily dependent on the number of connections with ChR2-positive axons, as well as the amplitude of the postsynaptic response at each connected synapse (MacAskill et al., 2014; MacAskill et al., 2012; Marques et al., 2018; Petreanu et al., 2007). Thus, the absolute size of a ChR2 response is crucially dependent on the number of infected axons and the level of ChR2 expression in each axon. This makes a comparison across experiments extremely challenging. To mitigate this, in our study we compared the light-evoked response across two neighbouring neurons in the same slice, one projecting to each downstream region under investigation. By comparing responses to the same stimulus in each neighbouring neuron, we could quantitatively compare the relative input onto each cell type across experiments. Importantly where these paired recordings were not possible – such as when investigating interneuron connectivity in Figure 5A–H and a quantitative comparison was not possible, we could only infer qualitative connectivity. In this case, we used a circuit model to investigate the consequences of systematically altering this connectivity (Figure 6—figure supplement 1) and found that the behaviour of the circuit was consistent across a broad range of connectivity. A second related issue is that the basic CRACM technique cannot differentiate the postsynaptic mechanism underlying differences in input across cell types. For example, in Figure 4 we could not differentiate if the greater input onto vHBA neurons compared to neighbouring vHPFC neurons is due to differences in connection probability or differences in the strength of these connections. Using our circuit model we showed that for the simple circuit layout we consider for this study the precise postsynaptic mechanism did not influence the circuit properties (Figure 6—figure supplement 3). However, in more complex situations that require spatial or temporal summation across synaptic locations, these properties will have interesting consequences (Harvey and Svoboda, 2007). Therefore, future work investigating such mechanisms using modifications of the CRACM technique to look at postsynaptic properties (Druckmann et al., 2014; Little and Carter, 2012; MacAskill et al., 2014; MacAskill et al., 2012) is an important future direction.
 
@@ -146,66 +214,216 @@ Overall we have defined a novel circuit that allows BA input to define the activ
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Slc32a1(VGAT)-IRES-Cre(vGAT-cre)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #016962;RRID:IMSR_JAX:016962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai14(RCL-tdT)-D(reporter mice)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #007914;RRID:IMSR_JAX: 007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/1-CaMKII-GFP</td>
+      <td>Addgene</td>
+      <td>Stock #64545-AAV1</td>
+      <td>A gift from Edward Boyden</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2retro-CAG-Cre</td>
+      <td>UNC vector core (Tervo et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/1-EF1a-FLEX-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>Stock #20298-AAV1</td>
+      <td>A gift from Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/1-hSyn-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>Stock #26973-AAV1</td>
+      <td>A gift from Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/1-CaMKII-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>Stock #26969-AAV1</td>
+      <td>A gift from Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>pAAV2/8-hSyn-dF-HA-KORD-IRES-mCitrine</td>
+      <td>Addgene</td>
+      <td>Stock #6541-AAV8</td>
+      <td>A gift from Bryan Roth</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/1.CAG.FLEX.Ruby2sm-Flag.WPRE</td>
+      <td>Addgene</td>
+      <td>Stock #98928-AAV1</td>
+      <td>A gift from Loren Looger</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>AAV2/9-mDlx-NLS-mRuby2</td>
+      <td>Addgene</td>
+      <td>Stock #99130-AAV1</td>
+      <td>A gift from Viviana Gradinaru</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>pAAV2/1-Ef1a-DIO mCherry</td>
+      <td>Addgene</td>
+      <td>Stock #114471-AAV1</td>
+      <td>A gift from Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-somatostatin antibody, clone YC7 (monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>MAB354;RRID:AB_2255365</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salvinorin B (SalB)</td>
+      <td>Hello Bio</td>
+      <td>HB4887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin Subunit B (recombinant), Alexa Fluor 647 Conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C34778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin Subunit B (recombinant), Alexa Fluor 594 Conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C34777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin Subunit B (recombinant), Alexa Fluor 488 Conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C34775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.7</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter Notebook</td>
+      <td>https://www.jupyter.org/</td>
+      <td>RRID:SCR_018315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>https://www.fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 6–10-week-old (adult) male C57bl/6J mice provided by Charles River were used except where noted. To target inhibitory neurons, we used the Slc32a1(VGAT)-IRES-Cre (#016962) knock-in line. To visualise vGAT neurons, we utilised and crossed the vGAT-cre line with Ai14(RCL-tdT)-D reporter mice (#007914), both obtained from Jackson Laboratory and bred in-house. For the vGAT-based experiments in Figure 4, both male and female mice were used and were randomly assigned to experimental groups; numbers of each sex are itemised in the supplemental statistics table. Mice were housed in cages of 2–4 and kept in a humidity- and temperature-controlled environment under a 12 hr light/dark cycle (lights on 7 am to 7 pm) with ad libitum access to food and water. All experiments were approved by the U.K. Home Office as defined by the Animals (Scientific Procedures) Act and University College London ethical guidelines.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
-## Retrograde tracers
+#### Retrograde tracers
 
 Red and green fluorescent retrobeads (Lumafluor, Inc) for electrophysiological recordings.
 
 Cholera toxin subunit B (CTXβ) tagged with Alexa 555, 488 or 647 (Molecular Probes) for histology experiments.
 
-## Viruses
+### Viruses
 
-## Surgery
+### Surgery
 
 Stereotaxic injections were performed on 7–10-week-old mice anaesthetised with isoflurane (4% induction, 1–2% maintenance) and injections carried out as previously described (Sanchez-Bellot and MacAskill, 2021; Wee and MacAskill, 2020). Briefly, the skull was exposed with a single incision and small holes drilled in the skull directly above the injection site. Injections were carried out using long-shaft borosilicate glass pipettes with a tip diameter of ~10–50 µm. Pipettes were back-filled with mineral oil and front-filled with ~0.8 μl of the substance to be injected. A total volume of 250–300 nl of each virus was injected at each location in ~14 or 28 nl increments every 30 s. If two or more substances were injected in the same region, they were mixed prior to injection. The pipette was left in place for an additional 10–15 min to minimise diffusion and then slowly removed. If optic fibres were also implanted, these were inserted immediately after virus injection, secured with 1–2 skull screws and cemented in place with C&B superbond. Injection coordinates were as follows (mm relative to bregma):
 
 After injection, the wound was sutured and sealed, and mice recovered for ~30 min on a heat pad before they were returned to their home cage. Animals received carprofen in their drinking water (0.05 mg/ml) for 48 hr post-surgery as well as subcutaneously during surgery (0.5 mg/kg). Expression occurred in the injected brain region for ~2 weeks for WT animals and ~4 weeks for vGAT animals until behavioural testing, preparation of acute slices for physiology experiments or fixation for histology. The locations of injection sites were verified for each experiment.
 
-## Anatomy
+### Anatomy
 
-## Histology
+#### Histology
 
 Mice were perfused with 4% PFA (wt/vol) in PBS, pH 7.4, and the brains dissected and postfixed overnight at 4°C as previously described (MacAskill et al., 2014; Sanchez-Bellot and MacAskill, 2021; Wee and MacAskill, 2020). 70-µm-thick slices were cut using a vibratome (Campden Instruments) in either the transverse or coronal planes as described in the figure legends. For immunostaining, slices were incubated for 3 hr in blocking solution to avoid non-specific protein binding. The blocking solution contained 3% bovine serum albumin, 0.5% Triton and phosphate buffer solution. Slices were incubated at 4°C in blocking solution with either 1:200 SOM antibody (MAB354, Millipore) or 1:5000 anti-DDDDK tag (anti-FLAG Tag to label smFP, ab1258, Abcam). Incubation was overnight for FLAG staining and for 48 hr for SOM staining. Slices were washed three times with PBS for 5–20 min at room temperature. Slices were then incubated for a minimum of 3 hr at room temperature with appropriate secondary antibodies and washed three times with PBS for 15–20 min before they were mounted. Slices were mounted on Superfrost glass slides with ProLong Gold or ProLong Glass (for visualisation of GFP) antifade mounting medium (Molecular Probes). NucBlue was included to label gross anatomy. Imaging was carried out with a Zeiss Axio Scan Z1 using standard filter sets for excitation/emission at 365-445/50 nm, 470/40-525/50 nm, 545/25-605/70 nm and 640/30-690/50 nm. Raw images were analysed with Fiji.
 
-## Whole-brain registration
+### Whole-brain registration
 
 Cell counting of cholera-labelled inputs was conducted using WholeBrain (Fürth et al., 2018; Wee and MacAskill, 2020). After acquiring the imaged sections and exporting them as 16-bit depth image files, images were manually assigned a bregma coordinate (AP –6.0 to 0.0 mm) and processed using WholeBrain (Fürth et al., 2018) and custom cell counting routines written in R (Wee and MacAskill, 2020). The workflow comprised (1) segmentation of cells and brain section, (2) registration of the cells to the ABA and (3) analysis of anatomically registered cells. As tissue section damage impairs the automatic registration implemented on the WholeBrain platform, sections with poor registration were manually registered to the atlas plate using corresponding points to clear anatomical landmarks. Once all cells had been registered, the cell counts were further manually filtered from the dataset to remove false-positive cells (e.g. debris).
 
 Each cell registered to a brain region was classified as belonging to an anatomically defined region as defined by the ABA brain structure ontology. Information on the ABA hierarchical ontology was scraped from the ABA API (http://api.brain-map.org/api/v2/structure_graph_download/1.json) using custom Python routines. For quantification of input fractions, cells residing in different layers within the same structure, for example, COAa1, COAa2, etc., were agglomerated across layers and subdivisions and counted as residing in one single region (e.g. COAa). Structures included as part of BA were 'BLAa', 'BLAv', 'BLAp', 'BMAa', 'BMAp', 'LA', 'COAa', 'COApl', 'COApm', 'MEAa', 'MEAav', 'MEApd', 'MEApv', 'CEAc', 'CEAm', 'CEAl', ‘PAA', 'PA'. For co-localisation of VGAT+ and CTXβ-labelled neurons, images acquired as above were manually annotated with single- and dual-labelled neurons using Napari (napari contributors, 2019, doi.10.5281/zenodo.3555620). Whole-brain distributions were visualised using the Brainrender package for Python (Claudi et al., 2020).
 
-## Electrophysiology
+### Electrophysiology
 
-## Slice preparation
+#### Slice preparation
 
 Hippocampal recordings were studied in acute transverse slices. Mice were anaesthetised with a lethal dose of ketamine and xylazine, and perfused intracardially with ice-cold external solution containing (in mM) 190 sucrose, 25 glucose, 10 NaCl, 25 NaHCO3, 1.2 NaH2PO4, 2.5 KCl, 1 Na+ ascorbate, 2 Na+ pyruvate, 7 MgCl2 and 0.5 CaCl2, bubbled with 95% O2 and 5% CO2. Slices (400 μm thick) were cut in this solution and then transferred to artificial cerebrospinal fluid (aCSF) containing (in mM) 125 NaCl, 22.5 glucose, 25 NaHCO3, 1.25 NaH2PO4, 2.5 KCl, 1 Na+ ascorbate, 3 Na+ pyruvate, 1 MgCl2 and 2 CaCl2, bubbled with 95% O2 and 5% CO2. After 30 min at 35°C, slices were stored for 30 min at 24°C. All experiments were conducted at room temperature (22–24°C). All chemicals were from Sigma, Hello Bio or Tocris.
 
-## Whole-cell electrophysiology
+### Whole-cell electrophysiology
 
 Whole-cell recordings were made from hippocampal pyramidal neurons retrogradely labelled with retrobeads which were identified by their fluorescent cell bodies and targeted with Dodt contrast microscopy, as previously described (MacAskill et al., 2014; Sanchez-Bellot and MacAskill, 2021; Wee and MacAskill, 2020). For sequential paired recordings, neurons were identified within a single field of view at the same depth into the slice. The recording order was counterbalanced to avoid any potential complications that could be associated with rundown. For current-clamp recordings, borosilicate recording pipettes (4–6 MΩ) were filled with (in mM) 135 K-gluconate, 10 HEPES, 7 KCl, 10 Na-phosphocreatine, 10 EGTA, 4 MgATP and 0.4 NaGTP. For voltage-clamp experiments, three internals were used, First, in Figures 2, 4 and 5I–P, a Cs-gluconate-based internal was used containing (in mM) 135 gluconic acid, 10 HEPES, 7 KCl, 10 Na-phosphocreatine, 4 MgATP, 0.4 NaGTP, 10 TEA and 2 QX-314. Excitatory and inhibitory currents were electrically isolated by setting the holding potential at –70 mV (excitation) and 0 mV (inhibition) and recording in the presence of APV. Experiments in Figure 5A, B, E-H were carried out using current-clamp internal in APV in order to carry out post-stimulation analysis of intrinsic properties of recorded interneurons. Finally, to record inhibitory currents at –70 mV in Figure 5C and D we used a high chloride internal (in mM): 135 CsCl, 10 HEPES, 7 KCl, 10 Na-phosphocreatine, 10 EGTA, 4 MgATP, 0.3 NaGTP, 10 TEA and 2 QX-314. Recordings were made using a Multiclamp 700B amplifier, with electrical signals filtered at 4 kHz and sampled at 10 kHz.
 
 Presynaptic glutamate release was triggered by illuminating ChR2 in the presynaptic terminals of long-range inputs into the slice, as previously described (Sanchez-Bellot and MacAskill, 2021; Wee and MacAskill, 2020). Wide-field illumination was achieved via a ×40 objective with brief pulses of blue light from an LED centred at 473 nm (CoolLED pE-4000/Thorlabs M470L4-C1, with appropriate excitation-emission filters). Light intensity was measured as 4–7 mW at the back aperture of the objective and was constant between all cell pairs.
 
-## Electrophysiology data acquisition and analysis
+### Electrophysiology data acquisition and analysis
 
 Electrophysiology data were acquired using National Instruments boards and WinWCP (University of Strathclyde). Optical stimulation was via wide-field irradiance with 473 nm LED light (CoolLED) as described above. Data were analysed using custom routines written in Python 3.6, imported using the neo package in Python (Garcia et al., 2014). For connectivity analysis, a cell was considered connected if the average of light-induced response was greater than 2 standard deviations above baseline. Amplitudes of responses were calculated as the average of a 2 ms window around the peak of the response. Current step data (Figure S2) were analysed using routines based around the eFEL package in Python (Blue Brain Project).
 
-## Integrate-and-fire model
+### Integrate-and-fire model
 
 An integrate-and-fire model was constructed using the Brian2 package in Python (Stimberg et al., 2019). 1000 vH-BA, vH-NAc and vH-PFC neurons were modelled interspersed with 80 interneurons (Lee et al., 2014a). Neurons were set to have a leak conductance, resting potential, spike threshold and membrane capacitance based on the literature and our current-clamp recordings (Figure 3): leak conductance 5.5 nS; resting potential –70 mV, spiking threshold –35 mV, membrane capacitance 200 pF. Connectivity of the local vH circuit was based on our electrophysiology recordings. AMPA receptor connections were 1 nS and were modelled with a tau of 5 ms. GABA receptor-mediated connections were 3 nS and modelled with a tau of 10 ms. Feedback connectivity from each pyramidal neuron population was connected at a probability of 0.1. The probability of connection of local interneurons to pyramidal neurons was based on Figure 5 and was 0.8 for vH-NAc neurons and 0.4 for vH-BA and vH-PFC neurons, each with a 3 nS GABA conductance. To simulate excitatory BA input, neurons were supplied with 50,000 BA inputs timed as a Poisson distribution with an average rate of 10 Hz. Each neuron was connected to this input with a probability of 0.1, where the strength of the synaptic connection was randomly drawn from a normal distribution defined by our electrophysiology experiments in Figure 4 (vH-BA 0.3 ± 0.2 nS, vH-NAc 0.3 ± 0.2 nS, vH-PFC 0.03 ± 0.2 nS, interneurons 0.3 ± 0.2 nS). To simulate BA inhibitory input, neurons were again supplied with 50,000 BA inputs timed as a Poisson distribution with an average rate of 10 Hz, but the connection probability was calculated as a proportion of excitatory input and varied across runs. As before, the strength of each synaptic connection was randomly drawn from a normal distribution defined by our electrophysiology experiments in Figure 4 (vH-BA 0.3 ± 0.2 nS, vH-NAc 0.08 ± 0.2 nS, vH-PFC 0.03 ± 0.2 nS, interneurons 0.3 ± 0.2 nS). Each simulation was run five times at each level of inhibitory connection strength, with the length of simulation 500 ms for each run. To investigate the influence of feedforward and feedback connection probability, proportion of overlap between populations and postsynaptic mechanism (Figure 6—figure supplements 1–3), we systematically altered these parameters for each run. Model output was analysed as total spikes produced by each neuronal population over the course of 500 ms.
 
-## Behaviour
+### Behaviour
 
 After sufficient time for surgical recovery and viral expression (>4 weeks), mice underwent multiple rounds of habituation. Mice were habituated to the behavioural testing area in their home cage for 30 min prior to testing each day. Mice were habituated to handling for at least 3 days, followed by 1–2 days of habituation to the optical tether in their home cage for 10 min.
 
-## Real-time place preference
+### Real-time place preference
 
 Axon terminals were labelled as described above, and a 200 µm optical fibre was implanted unilaterally 100 μm above the stimulation area (vH). After habituation (above), behaviour was assessed using an RTPP task. On day 1, mice were exposed to the three-chamber arena (24 cm × 16 cm × 30 cm) for 15 min without stimulation to allow habituation and also to ensure no large side bias was present. The testing chamber was made out of black acrylic, was symmetrical and had no odour, visual or tactile cues to distinguish either side of the arena. The arena was thoroughly wiped down with 70% ethanol between each trial. Mice were excluded if they spent more than 80% of their time in one side of the chamber during this habitation session. On day 2, 20 Hz light stimulation was delivered via a 473 nm laser, coupled to a patch cord (7–10 mW at the end of the patch cord) to activate ChR2-positive terminals. Real-time light delivery was based on the location of the mouse in the RTPP apparatus, where light stimulation occurred only when the mouse was in the light-paired side of the arena. The paired side was chosen randomly for each mouse and each session, thus in combination with the lack of explicit cues in the chamber, this assay represents acute place preference and not learned preference over sessions. Time spent in the light-paired and control side of the arena over the course of the 15 min session was scored for each mouse using automated tracking analysis (Bonsai). For experiments involving pharmacogenetics (Figures 7 and 8), mice first underwent habituation and laser-only trials as before, and data from control animals were used to replicate the original RTPP cohort (Figures 6A–C and 7A–C). Next, mice were given 1–2 daily s.c. injections of 100 µl DMSO (10% in saline) for habituation, before undergoing two further days of testing – first with DMSO as a control and with 10 mg/kg SalB the next day to avoid any spillover effects of the SalB injection. All injections were given 15 min prior to RTPP session. Control mice for optogenetics expressed GFP in BA. Control mice for KORD experiments consisted of a mixture of mice expressing smFP in vHNAc neurons and mice lacking expression in vH, all of which received an injection of both DMSO and SalB. No differences were seen across the two conditions, and so data were pooled. Several mice were removed from the analysis due to missed injections (seven), broken implants (six), evidence of light-induced seizure (five – all of which were subsequently found to have bleed of ChR2 into vH) and due to an early error in SalB administration (three). No group was overrepresented in any of these issues.
 
-## Statistics
+### Statistics
 
 Summary data are reported throughout the figures either as boxplots, which show the median, 75th and 95th percentile as bar, box and whiskers, respectively, or as line plots showing mean ± SEM. Example physiology and imaging traces are represented as the median ± SEM across experiments. Data were assessed using statistical tests described in the supplementary statistics summary, utilising the Pingouin statistical package for Python (Vallat, 2018). Significance was defined as p<0.05, all tests were two-sided. No statistical test was run to determine sample size a priori. The sample sizes we chose are similar to those used in previous publications. Animals were randomly assigned to a virus cohort (e.g. ChR2 versus GFP), and where possible the experimenter was blinded to each mouse’s virus assignment when the experiment was performed. This was sometimes not possible due to, for example, the presence of the injection site in the recorded slice.

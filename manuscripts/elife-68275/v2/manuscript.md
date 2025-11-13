@@ -38,9 +38,17 @@ Here, we report results from a comprehensive in vivo analysis of the molecular a
 
 ## Results
 
-## PKA is required for Moody-regulated BBB formation
+### PKA is required for Moody-regulated BBB formation
 
 To identify molecules that act downstream of Moody signaling in BBB formation, we examined genes known to be involved in GPCR signaling, such as PkaC1, PI3K, PTEN, PLC, and Rap1. We tested BBB permeability in genomic mutants or transgenic RNAi knockdowns of these GPCR effectors by injecting a fluorescent dye into the body cavity and determining its penetration into the CNS using confocal imaging. We found that zygotic mutants of the PKA catalytic subunit PkaC1 (originally named DC0 in Drosophila), namely, the two null alleles PkaC1B3 and PkaC1H2 as well as the hypomorphic allele PkaC1A13 (Kalderon and Rubin, 1988), show severe CNS insulation defects (Figure 1A and B), similar in strength to zygotic mutants of the negative regulator loco. By contrast, the removal of the other candidates had no effect (data not shown). PkaC1 has both maternal and zygotic components, and its maternal contribution perdures until late embryogenesis (Lane and Kalderon, 1993). The BBB defect we observe could explain the morphologically inconspicuous embryonic lethality of PkaC1 zygotic null mutants (Lane and Kalderon, 1993). To rule out the possibility that the observed BBB defects are caused by glial cell fate or migration defects, we examined the presence and position of SPG using an antibody against the pan-glial, nuclear protein Reversed polarity (Repo) (Halter et al., 1995). In PkaC1 zygotic mutants, the full set of SPG is present on the surface of the nerve cord, although the position of the nuclei is more variable than in WT (Figure 1C), an effect that is also observed in known mutants of the Moody signaling pathway (Granderath et al., 1999; Schwabe et al., 2005).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig1-v2.jpg)
+
+**Figure 1.:** (A) Single confocal sections of dye-injected embryos of WT and PKA zygotic mutants. (B) Quantification of the dye penetration assay. Columns represent the intensity of dye penetration into the nerve cord as measured by the mean pixel intensity (see Experimental procedures), ± SEM, n = 32, 31, 41, 38, 16 in WT, PkaC1B3, PkaC1H2, PkaC1A13, Loco∆13 embryos, respectively. Loco∆13 zygotic mutants serve as positive controls. (C) Repo staining revealing the number and positions of subperineural glia (SPG) nuclei in WT and PKA zygotic mutants using an illuminated projection to highlight the ventral surface of the nerve cord. (D) Transmission electron micrographs of the interface of neighboring SPG in late WT and PkaC1H2 zygotic mutant embryos. Yellow brackets delineate the septate junction (SJ) ultrastructure; high magnifications are shown in red boxes. (E) Quantification of SJ length in WT and PkaC1H2 mutants (see Experimental procedures). Columns represent mean SJ length as measured in random nerve cord sections, ± SEM, n = 56 and n = 70 in WT and PkaC1H2 mutants, respectively. (F) Time-lapse recording of BBB closure in embryos of WT and PKA zygotic mutants. 6 µm confocal stacks are shown; in each image, 4–6 ventral SPG are highlighted (green); midline channels (stars) and retarded growth (arrows) are marked. (G) Dominant genetic interactions between PkaC1B3 and Gβ13F∆1-96A as quantified by dye penetration in the embryo. Columns represent the intensity of dye penetration as measured by the mean pixel intensity, ± SEM, n = 34, n = 48, and n = 71 in PkaC1B3/+, Gβ13F∆1-96A/+, and Gβ13F∆1-96A/+;PkaC1B3/+ mutants, respectively. In (B) and (G), the percentage of embryos showing the dye penetration is indicated at the bottom of each column. Brackets and asterisks in (B), (E), and (G) indicate statistical significance levels as assessed by ordinary one-way ANOVA with Dunnett’s multiple comparisons test in (B) and (G) or the two-tailed Student’s t-test in (E), n.s., p>0.05; *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Quantitative analysis of dye penetration shows that the mild blood–brain barrier defect of PkaC1B3 heterozygotes can be partially rescued by removing one copy of Gβ13F as well as one copy of Loco. The removal of one copy of other Moody pathway components, such as moody, Gαo, and Gαi, results in no or weaker, non-significant rescue, suggesting that Gβ13F is more dosage sensitive. Asterisks indicate statistical significance levels as assessed by one-way ANOVA with Dunnett’s multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01; ***p<0.001.
 
 Since SJs are the principal structure providing BBB insulation and are disrupted in Moody pathway mutants (Schwabe et al., 2005; Schwabe et al., 2017), we sought to characterize the SJ morphology in PkaC1 mutants. We performed ultrastructural analysis of SJs in late embryos (after egg lay (AEL) 22–23 hr) by TEM using high-pressure freezing fixation. In WT, the SJs are extended, well-organized structures that retain orientation in the same plane over long distances (Figure 1D). In contrast, in PkaC1H2 zygotic mutants, the overall organization of SJs appears perturbed, and their length, as measured in random single sections, is significantly shorter than in WT (0.31 ± 0.03 µm vs. 0.57 ± 0.07 µm, p=0.000457; Figure 1D and E); very similar phenotypic defects are observed in moody and loco zygotic mutants (Schwabe et al., 2005).
 
@@ -48,13 +56,25 @@ To explore the role of PkaC1 during development of the BBB, we performed time-la
 
 Our results show that PkaC1 is required for BBB integrity, proper SJ organization, and SPG epithelium formation, in all cases closely mimicking the phenotypes observed for known Moody signaling components. Given these similarities, we sought to determine whether PKA participates in the Moody pathway by performing dominant genetic interaction experiments. Notably, we found that embryos heterozygous for PkaC1 null alleles, which are known to have ~50% of wildtype PkaC1 activity, show mild BBB permeability defects (Figure 1G). Therefore, we used PkaC1B3 heterozygous mutants as a sensitized genetic background and removed one genomic copy of different Moody pathway components, including Moody, Loco, Gαo, Gαi, and Gβ13F (Schwabe et al., 2005), to determine whether any synergistic or antagonistic interactions are observed. We found that the dye penetration defects of PkaC1 heterozygous mutants are significantly reduced by removing one genomic copy of Gβ13F or loco (Figure 1G and Figure 1—figure supplement 1, p=0.0022 or p=0.0115); removal of one genomic copy of Gβ13F or loco on their own has no effect. These genetic interactions indicate that PkaC1 is indeed part of the Moody signaling pathway. Removal of single copies of other pathway components showed either a mild, non-significant or no effect in a PkaC1B3 background, suggesting that they are less dosage-sensitive (Figure 1—figure supplement 1).
 
-## PKA is required for BBB continued growth in larvae and BBB maintenance in adults
+### PKA is required for BBB continued growth in larvae and BBB maintenance in adults
 
 For a more detailed analysis of PkaC1 function in BBB regulation, we turned to the SPG epithelium in third instar larvae. During the larval stage, no additional SPG cells are generated, instead the existing SPG cells grow enormously in size to maintain integrity of the BBB (Li et al., 2017; Unhavaithaya and Orr-Weaver, 2012). By third instar, they have roughly doubled in size and are accessible via dissection of the CNS, which greatly facilitates the microscopic analysis. PKA activity in larvae can be manipulated specifically using the SPG-specific driver moodyGAL4 (Bainton et al., 2005; Schwabe et al., 2005), which becomes active only after epithelial closure and BBB sealing are completed in stage 17 embryos. PKA can be reduced by expression of transgenic RNAi targeting the PKA catalytic subunit C1 (moody>PkaC1 RNAi). On the other hand, PKA can be elevated by expression of a mouse constitutively active PKA catalytic subunit (moody>mPkaC1*; Zhou et al., 2006). We first examined whether normal Moody/PKA activity is required for BBB integrity during larval stages. To address this question, we developed a dye penetration assay to measure BBB permeability in cephalic complexes of third instar larval. This assay is similar to the one we performed in the late embryo, but with some important modifications (for details, see Experimental procedures). Interestingly, both elevated and reduced activity of Moody (moody>LocoRNAi and moody>moodyRNAi) and PKA (moody>mPKAC1* and moody>PKAC1 RNAi) in SPG resulted in severe BBB insulation defects (Figure 2A and D). This strongly suggests that Moody/PKA signaling plays a crucial role in the continued growth of the BBB during larval stages. These effects were not merely carried over from the embryo since under moody driver caused only mild dye penetration defects in embryos (Figure 2—figure supplement 1). Given that Moody activity has been implicated in the maintenance of the BBB in the adult (Bainton et al., 2005), we also sought to knockdown PKA specifically in the adult SPG (tubGal80ts, moody>PkaC1 RNAi) and measure the resulting effects (see Experimental procedures). We observed the dye significantly penetrated the blood–eye barrier under reduced PKA expression compared to that in WT (1.00 ± 0.34 vs. 6.38 ± 0.37, p<0.000001; Figure 2F and G), indicating that PKA is indeed also required for BBB integrity function in the adult.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig2-v2.jpg)
+
+**Figure 2.:** (A) Single confocal sections of dye-injected third instar larval nerve cords under different Moody/PKA activity levels. (B, C) Morphology of subperineural glia (SPG) septate junction (SJ) belts and membrane overlap at different Moody/PKA activity levels, as visualized by SJ markers NrgGFP (B), and the membrane marker GapGFP (C). (D) Quantification of the dye penetration assay. Columns represent intensity of dye penetration as measured by mean pixel intensity (see Experimental procedures), ± SEM, n = 44–88. The percentage of larva showing dye penetration is indicated at the bottom of each column. (E) Quantification of the diameter of SJ belts under different GPCR/PKA activity levels, using the SJ marker NrgGFP.± SEM, n = 7–28. (F) Dye penetration in adult flies as shown in z-projections of dye-injected adult heads. (G) Quantification of dye penetration in adult eye. Columns represent intensity of dye penetration as measured by mean pixel intensity in each adult eye (see Experimental procedures), ± SEM, n = 30 and 18. Asterisks in (D), (E), and (G) indicate significance levels of comparisons based on Welch’s ANOVA with Dunnett’s T3 multiple comparisons test (D) and (E) or the two-tailed unpaired t-test (G), n.s., p>0.05; *p<0.05; **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Graph shows quantification of penetration of fluorescent dye into the CNS in WT, loco, and moody null alleles, as well as loco or moody-RNAi expressed under repo- or moody-Gal4; 22 hr embryos. While moody-RNAi expressed using moody-Gal4 results in measurable dye penetration, the defect is much milder than in the mutant. Asterisks indicate statistical significance levels as assessed by one-way ANOVA with Dunnett’s multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (D) Quantification of the diameter of SJ belts under different PKA activity levels, using different SJ markers. All groups in PKA overactivity and one group of LacGFP labeled SJ belt in PKA underactivity are significantly different from WT, as assessed by Welch’s ANOVA with Dunnett’s T3 multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01, ***p<0.001.
+
 In order to better understand the cause of BBB permeability under conditions where Moody/PKA is changed, we examined SJ morphology in larvae. Most core SJ components show interdependence for correct localization and barrier function, with removal of one component sufficient to abolish SJ function (Behr et al., 2003; Genova and Fehon, 2003; Hijazi et al., 2011; Oshima and Fehon, 2011; Wu et al., 2004). We therefore asked whether PKA activity levels affect the distribution of different SJ components. Using both live imaging (NrgGFP, LacGFP, NrxIVGFP) and immunohistochemistry (Mega), we found that the circumferential SJ belts and outlines of SPG were marked nicely in WT (Figure 2B and Figure 2—figure supplement 2). Strikingly, upon either reduction of Moody activity or elevated PKA activity, the SJ belt staining became much broader and more diffuse than in WT (Figure 2B). This suggests extensive plasma membrane overlap between neighboring SPG cells. To confirm this idea, we introduced the membrane marker gapGFP, and indeed observed increased membrane overlap compared to WT (Figure 2C). Conversely, both elevated Moody activity and reduced PKA activity resulted in thinner SJ belts and reduced membrane contacting area (Figure 2B and C). To quantify these changes, we measured the mean width of the SJ belts under different PKA activity levels (Figure 2E; Experimental procedures). The mean width of SJ belts increased with elevated PKA activity/reduced Moody activity and decreased under inverse conditions compared to WT (Figure 2E). These data demonstrate that Moody and PKA are required for the continued growth of the BBB and the proper organization of SJs during larval stages. Unlike the barrier defect, these morphological data reveal a monotonic relationship between PKA activity, membrane overlap, and the amount of SJ components in the area of cell contact. The fact that the cellular defects of reduced Moody activity match those of elevated PKA activity, and vice versa, provides further evidence that PKA acts as an antagonistic effector of Moody signaling.
 
-## PKA regulates the cytoskeleton and vesicle traffic in SPG
+### PKA regulates the cytoskeleton and vesicle traffic in SPG
 
 We had previously reported that the Moody pathway regulates the organization of cortical actin and thus the cell shape of SPG during late embryogenesis (Schwabe et al., 2005; Schwabe et al., 2017). Moreover, we proposed, based on the developmental timeline, that this in turn affects the positioning of SJ material along the lateral membrane. Given that the most striking phenotype caused by altered PKA activity is the extent of membrane overlap, we sought to further explore if PKA functions by regulating the cytoskeleton in SPG.
 
@@ -66,9 +86,17 @@ For this purpose, we examined the intracellular distribution of the actin cytosk
 
 Since PKA has been shown to affect vesicle trafficking in epithelial cells and neurons (Renger et al., 2000; Vasin et al., 2014; Wojtal et al., 2008; Zhang et al., 2007), we investigated if PKA signaling has a similar role during continued SPG cell growth. We introduced two live markers, Rab4RFP, which labels all the early endosomes (Figure 3E), and Rab11GFP (Artiushin et al., 2018), which labels both early and recycling endosomes (Figure 3F). We observed significant changes in the cellular distribution of vesicle populations. Specifically, Rab4- and Rab11-labeled endosomes were differentially enriched in the cell periphery when PKA activity is increased and surrounded the nucleus when PKA was reduced, as compared to their broader cytoplasmic distribution profile in WT (Figure 3E and F). Therefore, our results with these different cytoskeletal and vesicle markers suggest that the major function of PKA is regulating the cell contact areas between neighboring SPGs: high levels give rise to broad membrane contacts, and low levels of PKA activity cause narrow membrane contacts, which then affects SJ organization and BBB function.
 
-## The continuity of SJ belt is essential for BBB function as revealed by ssTEM
+### The continuity of SJ belt is essential for BBB function as revealed by ssTEM
 
 While PKA gain- and loss of function show opposite morphologies of membrane overlap and SJ belt by light microscopy, they both result in a compromised leaky BBB. To better understand this incongruence, we sought to analyze membrane morphology at a higher resolution. Due to the small size of SJs (20–30 nm), structural aspects can be analyzed conclusively only by electron microscopy. In the past, the acquisition and analysis of a complete series of TEM sections required an enormous effort; as a consequence, studies of SJ structure have mostly been restricted to random sections (Carlson et al., 2000; Hartenstein, 2011; Stork et al., 2008; Tepass and Hartenstein, 1994). The problem has now become solvable, using digital image recording (Suloway et al., 2005) and specialized software (Fiji, TrakEM2)(Cardona et al., 2012; Schindelin et al., 2012) for both image acquisition and post-processing. Therefore, we performed serial section TEM, followed by computer-aided reconstruction of TEM stacks, to resolve the 3D ultrastructure of cell contacts and SJs under different PKA activity levels at third instar larva (Figure 4A and B). This is the first time that a contiguous SJ belt between neighboring SPG at nanometer resolution is presented.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig4-v2.jpg)
+
+**Figure 4.:** (A–E) SJ ultrastructure at the interface of neighboring subperineural glia (SPG) in third instar larvae under different protein kinase A (PKA) activity levels. SPG1, its neighbor SPG2, and their shared SJs are colored or shaded in red, magenta, and green, respectively. (A, B) A 3D model of SJ ultrastructure generated by ssTEM. (C) Representative sections of SJs. (D, E) High-magnification views of boxed regions in (C) with and without shading. In WT, the area of contacting SPG is compact and well defined, and a dense SJ belt is formed between neighboring SPG. Under PKA overactivity (moody>mPkaC1*), neighboring SPG show much deeper interdigitations, and the SJs belt are discontinuous and appear patchy. Under PKA underactivity (moody>PkaC1 RNAi), the cell contact and SJ area are reduced, and the SJ belt becomes patchy too. (F) Quantification of SJ surface area (green column) and the contact area (grey column), and the ratio between these two area (black point) under different PKA activity levels, ± SEM, n = 15–21. (G) Quantification of the mean length of individual SJ segments (green) and the mean total length of SJs (blue) under different PKA activity levels, measured in random nerve cord sections, ± SEM, n = 9–92. Asterisks in (F, G) indicate significance levels of comparisons based on Welch’s ANOVA with Dunnett’s T3 multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01, ***p<0.001. Compared to WT, the mean total length of SJs significantly increases (4.28 ± 0.43 µm vs. 2.16 ± 0.14 µm, p=0.000523, about twofold) and the mean length of individual SJ segments significantly decreases (0.69 ± 0.08 µm vs. 2.16 ± 0.14 µm, p<0.0001, about 0.3-fold) under PKA overactivity; both the mean total length of SJs (1.49 ± 0.08 µm vs. 2.16 ± 0.14 µm, p=0.000878, about 0.69-fold) and the mean length of individual SJ segments decrease (0.67 ± 0.14 µm vs. 2.16 ± 0.14 µm, p<0.0001, about 0.31-fold), respectively, upon reduced PKA activity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative sections of the apical membrane protrusion of SPG ultrastructure under diﬀerent PKA levels, marked by yellow arrows. SPG1, its neighbor SPG2, and their shared SJs are colored in red, magenta, and green, respectively. (B) Quantiﬁcation of the mean length of individual apical protrusion under diﬀerent PKA activity levels, measured in random nerve cord sections, ± SEM, n = 14–35. Compared to WT, the mean length of apical membrane protrusion of SPG is signiﬁcantly longer under PKA overactivity and signiﬁcantly shorter under PKA underactivity. Statistical signiﬁcance of comparisons was assessed using Welch’s ANOVA with Dunnett’s T3 multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01, ***p<0.001.
 
 In WT, the area of cell–cell contact is compact and well-defined, with a dense SJ belt covering ~30% of the cell contact area (Figure 4A, B and F). Upon elevated PKA activity, neighboring SPG show much deeper membrane overlap (Figure 4A–E). The areas of both cell contact and SJ coverage increase about twofold compared with WT (Figure 4F), confirming the observations from confocal microscopy (Figure 3A–D), but the SJ belt is discontinuous and appears patchy (Figure 4B–E). This suggests that it is the continuity of the belt, rather than the total area covered by SJs, that is essential for generating the intercellular sealing capacity. To examine this question directly, we measured SJ length in randomly selected sections. Compared with WT, the mean length of individual SJ segments (0.69 ± 0.08 µm vs. 2.16 ± 0.14 µm, p<0.0001) is indeed significantly decreased, while the mean total length of SJs (4.28 ± 0.43 µm vs. 2.16 ± 0.14 µm, p=0.000523) is significantly increased (Figure 4G).
 
@@ -78,7 +106,7 @@ Finally, SPG send apical protrusions into the neural cortex (Figure 4—figure s
 
 Taken together, our ultrastructural analyses and new 3D models support the light microscopic findings, and they provide superior quantification of the relevant parameters. Importantly, cell contact and SJ area, as well as total SJ content, are monotonically correlated with PKA activity, while individual SJ segment length is not. This suggests that the discontinuity of the SJ belt is the main cause for the observed BBB permeability defects.
 
-## The Moody/PKA signaling pathway is polarized in SPG
+### The Moody/PKA signaling pathway is polarized in SPG
 
 The SPG are very thin cells, measuring around 0.2 µm along the apical–basal axis. In the embryo, the hemolymph-facing basal surface of the SPG is covered by a basal lamina (Fessler et al., 1994; Olofsson and Page, 2005; Tepass and Hartenstein, 1994), while during larval stages, the perineurial glia (PNG) form a second sheath directly on top of the SPG epithelium, which then serves as the basal contact for the SPG (Stork et al., 2008; Stork et al., 2008). Consistent with its chemoprotective function, the Mdr65 transporter localizes to the hemolymph-facing basal surface of the SPG, while Moody localizes to the CNS-facing apical surface (Mayer et al., 2009). The shallow lateral compartment contains the SJs, which not only seal the paracellular space but also act as a fence and prevent diffusion of transmembrane proteins across the lateral compartment. The apical localization of Moody protein is dependent on the presence of SJs (Schwabe et al., 2017).
 
@@ -90,9 +118,17 @@ To visualize the subcellular protein distributions along the apical–basal axis
 
 We further examined the subcellular distribution of Moody and Pka-C1 in gain- or loss-of-function conditions of Moody/PKA signaling. Notably, the subcellular distribution of PkaC1 was indeed altered when Moody is knocked down in SPG (moody>Moody RNAi). PkaC1 lost its basal intracellular localization and appeared spread out throughout the cytoplasm (Figure 5B), suggesting that Moody is required for Pka-C1 polarized localization. Upon reduced PKA activity, Moody loses its apical localization (Figure 5C). Meanwhile, upon increased PKA activity, Pka-C1 appears at both sides of SPG as expected (Figure 5E), and Moody loses its apical membrane localization and is found at both the apical and basal membranes of SPG (Figure 5E), suggesting that PKA activity affects the subcellular localization of Moody. In addition, under gain of function of Moody signaling (moody>Gαo-GTP), PKA remains basally localized (Figure 5D), regardless of Moody’s mis-localization, suggesting that Gαo signaling is sufficient for PKA enrichment at the basal side of SPG. Given the profound effect of PKA activity on the organization of SJ belt (Figure 2B and D), the cytoskeleton architecture and polarity, as well as vesicle transport (Figure 3A–F), mis-localized Moody could be an effect of deregulated protein trafficking or dysfunction of SJs, which normally restrict the diffusion of molecules between membrane compartments. Taken together, our data suggest that apical Moody signaling is necessary for repressing apical PkaC1 protein accumulation, and that this polarized subcellular localization results from the antagonistic relationship between Moody and PKA.
 
-## MLCK and Rho1 function as PKA targets in the SPG
+### MLCK and Rho1 function as PKA targets in the SPG
 
 Considering that the most pronounced effect of increasing PKA levels in the SPG is a commensurate increase in membrane overlap at the basolateral side, we sought to genetically identify PKA targets involved in this process. PKA is known to regulate actomyosin contractility by phosphorylating and inhibiting myosin light chain kinase (MLCK), which leads to a decrease in Myosin light chain (MLC) phosphorylation and a concomitant reduction of actomyosin contractility in cell migration and endothelial barrier (Garcia et al., 1995; Garcia et al., 1997; Howe, 2004; Tang et al., 2019; Verin et al., 1998). To determine whether MLCK is required for BBB function, we examined two MLCK zygotic mutants, MLCK02860 and MLCKC234, and detected moderate BBB permeability in the late embryo (Figure 6A and Figure 6—figure supplement 1), indicating that MLCK plays a role in CNS insulation. Next, we asked whether PKA and MLCK function in the same signaling pathway using dominant genetic interaction experiments. We found that the BBB permeability of PkaC1B3 heterozygous mutants could be rescued by removing one parental copy of MLCK (MLCK02860 or MLCKC234; Figure 6B). This suggests that MLCK interacts with PkaC1 in the SPG. Finally, we examined BBB insulation and SJ defects of MLCK zygotic mutant larva (MLCKC234). MLCKC234 mutant larvae showed significant BBB permeability and a widened SJ belt (Figure 6C–F) compared to WT (Figure 2B), but the phenotypes were milder than those of PKA overactivity (Figure 2B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig6-v2.jpg)
+
+**Figure 6.:** (A) Quantification of dye penetration effects in the embryo of MLCK and Rho1. (B) Dominant genetic interactions between PkaC1B3 and MLCK and Rho1 mutant heterozygotes as quantified by dye penetration in the embryo. In (A, B), columns represent the strength of dye penetration into the nerve cord as measured by the mean pixel intensity, ± SEM, n = 14–98. (C, D) Blood–brain barrier (BBB) phenotype of MLCK zygotic mutant and SPG-specific Rho1 knockdown (moody>Rho1 RNAi) animals in single confocal sections of dye injected third instar larvae (C), and septate junction (SJ) morphology using the NrgGFP marker (D), with width of SJ belt highlighted by arrows. (E) Quantification of the dye penetration assay from (C). Columns represent intensity of dye penetration as measured by mean pixel intensity and normalized to WT mean (see Materials and methods, ± SEM, n = 13–19). (F) Quantification of the mean diameter of SJ belts from (D), ± SEM, n = 8–13. In (A), (B), and (E), the percentage of animals showing dye penetration is indicated at the bottom of each column. Asterisks in (A), (B), (E), and (F) indicate significance levels of comparisons against either WT in (E) and (F) or PkaC1B3 group in (A) and (B) based on Brown–Forsythe and Welch’s ANOVA with multiple comparisons test, n.s., p>0.05; *p<0.05; **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68275/elife-68275-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Single confocal section of dye-injected MLCKC234 zygotic mutant (MLCKC234), and Rho1 zygotic null mutant (Rho1E3.10) embryos, with dye penetrating into the nerve cord (yellow arrow) (A).
 
 PKA is also known to phosphorylate and inhibit the small GTPase Rho1, which reduces the activity of its effector Rho kinase (ROK), ultimately resulting in decreased MLC phosphorylation and actomyosin contractility (Dong et al., 1998; Garcia et al., 1999; Lang et al., 1996; Tang et al., 2019; Xu and Myat, 2012). Moreover, RhoA activity has been shown to drive actin polymerization at the protrusion of migrating cells (Machacek et al., 2009), and a PKA-RhoA signaling has been suggested to act as a protrusion-retraction pacemaker at the leading edge of the migrating cells (Tkachenko et al., 2011). To check if Rho1 is required for BBB function, we determined the BBB permeability in the late embryo and third instar larval stages. Two loss-of-function alleles, the hypomorphic allele Rho11B (Magie and Parkhurst, 2005) and the null allele Rho1E.3.10, showed dye penetration defects as homozygous zygotic mutant embryos, with the null allele showing a particularly pronounced effect (Figure 6B and Figure 6—figure supplement 1). At the larval stage, the SPG-specific Rho1 knockdown (moody>Rho1 RNAi) resulted in strong dye penetration into the nerve cord (Figure 6C and E). These results suggest that Rho1 is required for the formation and continued growth of the BBB. We again asked whether PKA and Rho1 function in the same pathway and performed dominant genetic interaction experiments using a sensitized genetic background. The embryonic dye penetration defects of PkaC1 heterozygous mutants (PkaC1B3) were significantly reduced by removing one genomic copy of the Rho1 null allele (Rho1E.3.10), but not by removing one copy of the hypomorphic allele Rho11B (Figure 6B). These findings suggest that Rho1 is a PKA target in BBB regulation. Collectively, our results indicate that PKA suppresses actomyosin contractility in a two-pronged fashion by negatively regulating both MLCK and Rho1.
 
@@ -120,32 +156,329 @@ Our results may have important implications for the neuron–glia interaction in
 
 ## Materials and methods
 
-## Fly strains and constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>PkaC1H2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:4101, RRID:BDSC_4101</td>
+      <td>FlyBase symbol: Dmel\Pka-C1H2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PkaC1B3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FBal0033955</td>
+      <td>Dmel\Pka-C1B3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PkaC1A13</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FBal0033953</td>
+      <td>Dmel\Pka-C1A13</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASmPkaC1*(mC*)</td>
+      <td>D.Kalderon</td>
+      <td></td>
+      <td>DC0</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>moodyGAL4</td>
+      <td>T.Schwabe</td>
+      <td>FBtp0022847</td>
+      <td>P{moody-GAL4.S}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repoGAL4</td>
+      <td>Bloomington Drosophila Stock CenterV.Auld</td>
+      <td>BDSC:7415FBst0007415</td>
+      <td>P{GAL4}repo</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NrgG305</td>
+      <td>Bloomington Drosophila Stock CenterW.Chia</td>
+      <td>BDSC:6,844FBal0147727</td>
+      <td>Dmel\NrgG00305</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASGFPMoesin</td>
+      <td>D. Kiehart</td>
+      <td>FBtp0017306</td>
+      <td>UASmRFPMoesin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASmRFPMoesin</td>
+      <td>T. Schwabe</td>
+      <td>FBtp0022846</td>
+      <td>P{UAS-Moe.RFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gβ13FΔ1-96A</td>
+      <td>F. Matsuzaki</td>
+      <td>FBal0128192</td>
+      <td>Dmel\Gβ13FΔ1-96A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAStauGFP</td>
+      <td>M. Krasnow</td>
+      <td>FBtp0012358</td>
+      <td>P{UAS-tauGFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASGαoGTP</td>
+      <td>A. Tomlinson</td>
+      <td>FBal0183487</td>
+      <td>Dmel\GαoGTP.UAS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>locoΔ13</td>
+      <td>C. Klämbt</td>
+      <td>FBal0096758</td>
+      <td>Dmel\locoΔ13</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>moodyΔ17</td>
+      <td>R. Bainton</td>
+      <td>FBab0044985</td>
+      <td>Df(1)moody-Δ17</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>moody-RNAi</td>
+      <td>R. Bainton</td>
+      <td>FBtp0022779</td>
+      <td>P{UAS-moody.dsRNA}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASnucmCherry</td>
+      <td>T. Schwabe</td>
+      <td></td>
+      <td>P{UAS-nuc.Cherry}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASGFPEB1</td>
+      <td>Bloomington Drosophila Stock CenterD.Brunner</td>
+      <td>BDSC:35512</td>
+      <td>Dmel\P{UAS-EB1-GFP}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASGFPNod</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FBtp0014112</td>
+      <td>P{UASp-nod-GFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASGFPRho</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:9528FBal0189974</td>
+      <td>Dmel\Rho1GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASRab4RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:8505FBtp0018526</td>
+      <td>9,562</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASactinGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:9562FBtp0001557</td>
+      <td>P{ActGFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rho72R</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FBal0061660</td>
+      <td>Dmel\Rho172R</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rho1B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:9477FBal0176027</td>
+      <td>Dmel\Rho11B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MLCK02860</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:11089FBal0159721</td>
+      <td>Dmel\Strn-Mlckc02860</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MLCKC234</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:16314FBal0159722</td>
+      <td>Dmel\Strn-MlckC234</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubGAL80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7019FBst0007019</td>
+      <td>Dmel\P{tubP-GAL80ts}20</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PkaC1KK10896</td>
+      <td>VDRC</td>
+      <td>VDRC:109758</td>
+      <td>FBgn0037103</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rho1KK108182</td>
+      <td>VDRC</td>
+      <td>VDRC:v109420FBal0259627</td>
+      <td>Dmel\Rho1KK108182</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TauGD8682</td>
+      <td>VDRC</td>
+      <td>VDRC:v25023FBal0210735</td>
+      <td>Dmel\tauGD8682</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PkaC1 (rabbit polyclonal)</td>
+      <td>Lane ME; Genes Dev. 1993</td>
+      <td>ABS571, RRID:AB_2568479RRID:AB_2568479</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PkaC1 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab15051, RRID:AB_2269474</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-REPO (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat#: 17-9987-42; RRID:AB_2043823</td>
+      <td>IF(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A-11120</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mega (mouse monoclonal)</td>
+      <td>R. Schuh</td>
+      <td></td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dContactin (guinea pig polyclonal)</td>
+      <td>M. Bhat</td>
+      <td></td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (rabbit polyclonal)</td>
+      <td>US Biological</td>
+      <td></td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Moody b (rabbit polyclonal)</td>
+      <td>Bainton et al., 2005; Schwabe et al., 2005</td>
+      <td></td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td></td>
+      <td>ImageJ</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 4.0</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Texas red-coupled dextran, 10 kDa</td>
+      <td>Molecular Probes</td>
+      <td>D1828</td>
+      <td>10 mg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and constructs
 
 The following fly strains were obtained from published sources: PkaC1H2 (BDSC Cat# 4101, RRID:BDSC_4101); PkaC1B3; PkaC1A13; UASmPkaC1*(mC*) (D. Kalderon); moodyGAL4 (T. Schwabe); repoGAL4 (V. Auld); NrgG305 (NrgGFP; W.Chia); UASGFPMoesin (D.Kiehart); UASmRFPMoesin (T. Schwabe); Gβ13FΔ1-96A (F. Matsuzaki); UAStauGFP (M. Krasnow); UASGαoGTP (A. Tomlinson), locoΔ13 (C. Klämbt); moodyΔ17(R. Bainton); moody-RNAi (R. Bainton); UASnucmCherry (T. Schwabe); UASGFPEB1 (D. Brunner); UASGFPNod, UASGFPRho, UASactinGFP, UASRab4RFP, Rho72R, Rho1B, MLCK02860, MLCKC234, tubGAL80ts (Bloomington Stock Center); PkaC1KK108966, Rho1KK108182, TauGD8682(VDRC). For live genotyping, mutant and transgenic lines were balanced (Kr::GFP) (Casso et al., 1999) or positively marked using nrgNrgGFP. Temperature-sensitive control of gene expression in SPG is achieved by using a tubGAL80ts; moodyGAL4 driver. All strains were raised at 25°C. except for tubGAL80ts; moodyGAL4 crosses, which were raised at 18°C until 1 day after eclosion and then shifted to 29°.
 
-## Live imaging
+### Live imaging
 
 Dissected third instar larval cephalic complexes were mounted in PBS and imaged directly. All confocal images were acquired using a Zeiss LSM 510 or 710 system. Stacks of 20–40 0.5-µm confocal sections were generated; image analysis was performed using Zeiss LSM 510, ImageJ (NIH) or Imaris 4.0 (Bitplane) software. The results for each section were assembled as a separate channel of the stack. Time-lapse recordings were carried out on 12 hr after egg lay (AEL) embryos raised at 20°C using an inverted Zeiss LSM 510 confocal microscope. To increase signal strength, the pinhole was opened to 1.3 (z-section thickness 0.6 µm), and z-stacks of 12 sections were acquired once per minute. To adjust for focus drift, which is mainly caused by rotation of the embryo, the z-stack coordinates were adjusted at various timepoints without disrupting the continuity of the movie. Between 5 and 7 movies were captured per genotype, each 80–110 min in duration.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed following standard procedures (Bainton et al., 2005; Schwabe et al., 2005). The antibodies used in the study were rabbit α-PkaC1 (1:400, Pka-C1, RRID:AB_2568479; Lane and Kalderon, 1993), mouse α-PkaC1 (1:100, BD), mouse α-REPO (1:10, Developmental Studies Hybridoma Bank), mouse α-GFP (1:100, Molecular Probes), mouse α-Mega (1:100, R. Schuh), guinea pig α-dContactin (1:1000, M. Bhat), and rabbit α-RFP (1:100, US Biological). Fluorescent secondary antibodies were coupled to Cy3 (1:500, Jackson), Alexa Fluor 488 or Alexa Fluor 633 (1:500, Molecular Probes). Rat α-Moody β was generated in the lab (1:500; Bainton et al., 2005; Schwabe et al., 2005).
 
-## Image analysis
+### Image analysis
 
 The width of the SJ belt was extracted from maximum intensity projections (MIPs) along the z-axis of 3D confocal stacks of the nervous system. Specifically, we used Imaris 4.0 to perform 2D segmentation of the GFP-marked SJs. For each of the markers, an optimal threshold for the pixel intensity was chosen by fitting the obtained segmented pattern with the raw fluorescence signal. To evaluate the average thickness of the SJs, we splitted the SJ segments into sections of 3–4 µm in length. An approximation of the diameters of the single sections was then obtained by extracting their ellipticity parameters along the axis perpendicular to their main axis. A mean diameter of the SJ was calculated by averaging over the diameters of all single sections. For quantification, random images were chosen with each marker and the distribution of all live markers was measured by Fiji software. To calculate the changes of the distribution of markers, plot profiles of fluorescence intensities along the nucleus to the membrane in each cell were divided into two compartment, membrane area and nucleus area (half to half). Then we calculated the ratio of mean pixel intensity between these two areas (membrane/nucleus) under different PKA activity with each marker. The statistical analysis was performed using Brown–Forsythe and Welch’s ANOVA with multiple comparisons test.
 
-## Dye-penetration assay in embryo, third instar larva, and adult flies
+### Dye-penetration assay in embryo, third instar larva, and adult flies
 
 The dye penetration assay in embryos was performed as described (Schwabe et al., 2005). For the dye penetration assay in third instar larvae, a fluorescent dye (Texas red-coupled dextran, 10 kDa, 10 mg/ml, Molecular Probes) was injected into the body cavity of third instar larva. After 2.5 hr, the cephalic complex was dissected, and the dye penetrated into the nerve cord was analyzed using Zeiss LSM710 confocal microscopy. Dye penetration was quantified by calculating the percentage of larva showing dye penetration and by measuring the mean pixel intensity within a representative window of the ventral portion of the nerve cord using Fiji software, and normalized by dividing by the mean of the WT control group. To assess the significance of effects for the embryonic and larval dye penetration assays, Brown–Forsythe and Welch’s ANOVA with multiple comparisons test was performed.
 
 The dye penetration assay in adult flies was performed as described in Bainton et al., 2005 with some critical modifications. Briefly, adult flies were hemolymph injected with 10 mg/ml 10 kDa Texas red-coupled dextran. After 2 hr, the injected flies were decapitated and their heads were mounted in a fluorinated grease-covered glass slides with two compound eyes on the side (the proboscis facing up). Images were acquired on a Zeiss LSM710 confocal microscope at 200–300 μm depths from the eye surface with a Plan Fluor 10xw objective. Dye penetration was quantified by measuring the mean pixel intensities within a representative window of the central region of retina (n = 18–30) of maximum-intensity Z projection of each image stack (z-section thickness 0.6 µm) by Fiji software and normalized by the WT control. Statistical significance was assessed using the two-tailed unpaired t-test.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Late stage 17 (22–23 hr AEL) embryos were processed by high-pressure freezing in 20% BSA, freeze-substituted with 2% OsO4, 1% glutaraldehyde, and 0.2% uranyl acetate in acetone (90%), dH2O (5%), methanol (5%) over 3 days (–90°C to 0°C), washed with acetone on ice, replaced with ethanol, infiltrated and embedded in Spurr’s resin, sectioned at 80 nm and stained with 2% uranyl acetate and 1% lead citrate for 5 min each. Sections were examined with a FEI TECNAI G2 Spirit BioTwin TEM with a Gatan 4K x 4K digital camera. For quantification, random images were shot, and the length of visible SJ membrane stretches in each image was measured using Fiji software. Statistics were calculated using the two-tailed unpaired t-test.
 
-## Serial section transmission electron microscopy (ssTEM)
+### Serial section transmission electron microscopy (ssTEM)
 
 Freshly dissected third instar larval CNSs were fixed in 2% glutaraldehyde and 2% OsO4 in 0.12 M sodium cacodylate (pH 7.4) by microwave (Ted Pella, BioWave Pro MW) as follows: 30" at 300 W, 60" off, 30" at 350 W; 60" off, 30" at 400 W. The samples were then rinsed 2 × 5′ with cold 0.12 M sodium cacodylate buffer; post-fixed with 1% OsO4 in 0.12 M sodium cacodylate buffer (pH 7.4) on an ice bath by microwave as follows: 30" at 350 W, 60" off, 30" at 375 W, 60" off, 30" at 400 W; rinsed 2 × 5′ with 0.12 M sodium cacodylate buffer at RT; 2 × 5′ with distilled water at RT; stained in 1% uranyl acetate overnight in 4°C; rinsed 6 × 5′ with distilled water; dehydrated with ethanol followed by propylene oxide (15′); infiltrated and embedded in Eponate 12 with 48 hr polymerization in a 65°C oven. 50 nm serial sections were cut on a Leica UC6 ultramicrotome and picked up with Synaptek slot grids on a carbon-coated Pioloform film. Sections were post-stained with 1% uranyl acetate followed by Sato’s (1968) lead. The image acquisition of multiple sections (~150 sections in each genotype) and large tissue areas was automatically captured with a Gatan 895 4K × 4K camera by a FEI Spirit TECNAI BioTWIN TEM using Leginon (Suloway et al., 2005). TrakEM2 software was used to montage, align images, trace, and reconstruct 3D SJ structures between contacting SPG within and across serial sections. For quantification, random images were chosen, and the length of visible SJs stretches and membrane contacting area in each image was measured using Fiji. The statistical analysis was performed using Brown–Forsythe and Welch’s ANOVA with multiple comparisons test.

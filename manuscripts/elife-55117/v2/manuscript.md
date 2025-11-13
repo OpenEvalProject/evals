@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Pancreatic ductal adenocarcinoma (PDAC) is a devastating disease. Although rigorous efforts identified the presence of ‘cancer stem cells (CSCs)’ in PDAC and molecular markers for them, stem cell dynamics in vivo have not been clearly demonstrated. Here we focused on Doublecortin-like kinase 1 (Dclk1), known as a CSC marker of PDAC. Using genetic lineage tracing with a dual-recombinase system and live imaging, we showed that Dclk1 + tumor cells continuously provided progeny cells within pancreatic intraepithelial neoplasia, primary and metastatic PDAC, and PDAC-derived spheroids in vivo and in vitro. Furthermore, genes associated with CSC and epithelial mesenchymal transition were enriched in mouse Dclk1 + and human DCLK1-high PDAC cells. Thus, we provided direct functional evidence for the stem cell activity of Dclk1 + cells in vivo, revealing the essential roles of Dclk1 + cells in expansion of pancreatic neoplasia in all progressive stages.
+Pancreatic ductal adenocarcinoma (PDAC) is a devastating disease. Although rigorous efforts identified the presence of ‘cancer stem cells (CSCs)’ in PDAC and molecular markers for them, stem cell dynamics in vivo have not been clearly demonstrated. Here we focused on Doublecortin-like kinase 1 (Dclk1), known as a CSC marker of PDAC. Using genetic lineage tracing with a dual-recombinase system and live imaging, we showed that Dclk1+ tumor cells continuously provided progeny cells within pancreatic intraepithelial neoplasia, primary and metastatic PDAC, and PDAC-derived spheroids in vivo and in vitro. Furthermore, genes associated with CSC and epithelial mesenchymal transition were enriched in mouse Dclk1+ and human DCLK1-high PDAC cells. Thus, we provided direct functional evidence for the stem cell activity of Dclk1+ cells in vivo, revealing the essential roles of Dclk1+ cells in expansion of pancreatic neoplasia in all progressive stages.
 
 ## Introduction
 
@@ -42,71 +42,83 @@ Lineage tracing assay is one of the most rigorous and powerful methods to clarif
 
 ## Results
 
-## Dclk1+ cells in PanINs and PDACs also expressed CSC markers
+### Dclk1+ cells in PanINs and PDACs also expressed CSC markers
 
 We first investigated the proportion of Dclk1+ cells in PanINs and PDACs established in Pdx1-Flp; KrasFSF-G12D/+ (KF) and Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (KPF) mice, well-established mouse models of pancreatic tumors (Schönhuber et al., 2014). PanINs that were positive for Alcian blue and Krt19 staining were developed in KF mice within 3 months of age (Figure 1A–C). We observed Dclk1 expression in a small subset of PanIN cells in KF mice (6.54 ± 1.32%, Figure 1D, Figure 1—source data 1). In KPF mice, PDACs that were also strongly positive for Krt19 were developed within 8 weeks of age (Figure 1E and F). Dclk1 staining was also detected only in a fraction of PDAC cells in this model (0.173 ± 0.029%, Figure 1G, Figure 1—source data 2). Similar to mouse PDACs, human PDACs displayed DCLK1 expression only in a limited proportion of PDAC cells (0.097 ± 0.026%, Figure 1H, Figure 1—source data 3).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig1-v2.jpg)
 
-**Figure 1.:** + cells presented in PanINs and pancreatic ductal adenocarcinomas (PDACs) also expressed cancer stem cell (CSC) markers.(A–D) Histological analysis of PanINs developed in 3-month-old Pdx1-Flp; Kras (KF) mice. (FSF-G12D/+A) Hematoxylin and Eosin (H and E) staining. (B) Alcian Blue staining. (C) Immunostaining for Krt19. (D) Immunostaining for Dclk1 (mean ± SEM, n = 7, n: number of mice). Scale bar, 50 µm. (E–G) Histological analysis of PDACs developed in 8-week-old Pdx1-Flp; Kras (KPF) mice. (FSF-G12D/+; Trp53frt/frtE) Hematoxylin and Eosin staining. (F) Immunostaining for Krt19. (G) Immunostaining for Dclk1 (mean ± SEM, n = 8, n: number of mice). Scale bar, 50 µm. (H) Immunofluorescence staining for DCLK1 (magenta), Krt19 (green) and Hoechst (blue) in resected human PDACs (mean ± SEM, n = 7, n: number of case). Scale bar, 50 µm. (I) Quantification of the marker+ cells in PanINs formed in KF mice (mean ± SEM; Epcam; n = 5, Cd44; n = 5, Cd24; n = 5, Aldh1a1; n = 5, n: number of mice). (J) Quantification of the marker+ cells in PDACs formed in KPF mice (mean ± SEM; Epcam; n = 5, Cd44; n = 5, Cd24; n = 5, Aldh1a1; n = 5, n: number of mice). (K) Immunofluorescence staining for Dclk1 (magenta), Hoechst (blue), as well as for Epcam, Cd44, Cd24, and Aldh1a1 (green) of PanINs in KF mice (left panels) and PDAC in KPF mice (right panels). Scale bar, 50 µm.Figure 1—source data 1.Figure 1D.Figure 1—source data 2.Figure 1G.Figure 1—source data 3.Figure 1H.Figure 1—source data 4.Figure 1I.Figure 1—source data 5.Figure 1J.
+**Figure 1.:** (A–D) Histological analysis of PanINs developed in 3-month-old Pdx1-Flp; KrasFSF-G12D/+ (KF) mice. (A) Hematoxylin and Eosin (H and E) staining. (B) Alcian Blue staining. (C) Immunostaining for Krt19. (D) Immunostaining for Dclk1 (mean ± SEM, n = 7, n: number of mice). Scale bar, 50 µm. (E–G) Histological analysis of PDACs developed in 8-week-old Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (KPF) mice. (E) Hematoxylin and Eosin staining. (F) Immunostaining for Krt19. (G) Immunostaining for Dclk1 (mean ± SEM, n = 8, n: number of mice). Scale bar, 50 µm. (H) Immunofluorescence staining for DCLK1 (magenta), Krt19 (green) and Hoechst (blue) in resected human PDACs (mean ± SEM, n = 7, n: number of case). Scale bar, 50 µm. (I) Quantification of the marker+ cells in PanINs formed in KF mice (mean ± SEM; Epcam; n = 5, Cd44; n = 5, Cd24; n = 5, Aldh1a1; n = 5, n: number of mice). (J) Quantification of the marker+ cells in PDACs formed in KPF mice (mean ± SEM; Epcam; n = 5, Cd44; n = 5, Cd24; n = 5, Aldh1a1; n = 5, n: number of mice). (K) Immunofluorescence staining for Dclk1 (magenta), Hoechst (blue), as well as for Epcam, Cd44, Cd24, and Aldh1a1 (green) of PanINs in KF mice (left panels) and PDAC in KPF mice (right panels). Scale bar, 50 µm.
 
 We next examined whether mouse Dclk1+ PanIN and PDAC cells expressed previously described CSC markers, including Epcam, Cd44, Cd24 (Lee et al., 2008; Li et al., 2007), and Aldh1a1 (Kim et al., 2011; Rasheed et al., 2010). In good agreement with previous reports showing that the single expression of Epcam, Cd44 or Cd24 alone is not restricted to CSC in PDAC (Kure et al., 2012), a relatively large proportion of PanIN and PDAC cells showed positive expression of Epcam, Cd44 and Cd24, whereas Aldh1a1 was expressed in a small subset of these cells (Figure 1I–J, Figure 1—source data 4 and 5). We observed colocalization between these CSC markers and Dclk1 in PanIN and PDAC (Figure 1K). These data suggested that Dclk1+ tumor cells harbor the potential stemness in formed PanIN and PDAC.
 
-## Dclk1+ PanIN cells maintained mouse PanINs
+### Dclk1+ PanIN cells maintained mouse PanINs
 
 To study the potential stem cell function of Dclk1+ tumor cells, we applied lineage tracing method and examined whether Dclk1+ tumor cells supply the progeny tumor cells within already established mouse PanINs. So far, most researchers have combined either Pdx1-Cre or Ptf1a-Cre mouse lines with KrasLSL-G12D mouse to develop pancreatic tumors. However, with these mouse models, we were unable to perform lineage tracing of Dclk1+ tumor cells, because the Cre-loxP system is already applied to activate oncogenic Kras and because Rosa-reporter has to be activated in another system. In order to solve this technical issue, we generated Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+ (DRKF) mice (Figure 2A). In this mouse model, PanINs are spontaneously developed, thanks to the flippase-FRT recombination, which induces oncogenic KrasG12D in Pdx1+ pancreatic progenitor cells (Figure 2A). Further activation of Cre-loxP system with tamoxifen administration enables to trace Dclk1-lineages as EGFP+ cells by switching Tomato to EGFP in potential descendent cells of Dclk1+ cells in already formed PanINs (Figure 2A and B). In DRKF mice before tamoxifen administration, a few Dclk1+ cells, which expressed EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele, were found in these PanINs (Figure 2C–E). Strikingly, 28 days after tamoxifen injection, we observed a significant number of PanIN lesions in which a majority of PanIN cells were labeled with EGFP (Figure 2F). The proportion of EGFP+ cells, indicating a Dclk1+ cells and their descendant cells, in PanIN cells increased from 5.43 ± 0.84% up to 35.4 ± 2.03% (Figure 2G, Figure 2—source data 1). Among EGFP+ PanIN cells (the lineages of Dclk1+ cells), there were a small subset of Dclk1-expressing cells 28 days after tamoxifen injection (Figure 2H). These data suggested that Dclk1+ stem cells supply Dclk1− descendant cells in established PanINs and maintain these lesions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig2-v2.jpg)
 
-**Figure 2.:** + PanIN cells supply descendant PanIN cells.(A) The scheme of Dclk1 (DRKF) mouse constructs, flippase-mediated Kras activation, and CreERT2-driven reporter recombination. (CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+B) The scheme of lineage tracing of Dclk1+ cells in established PanINs. Before tamoxifen administration, there were a small subset of Dclk1+/EGFP+ cells (left panel). After tamoxifen administration, if Dclk1+ cells are stem cells, EGFP+ progeny cells expand in the PanINs (middle and right panels). (C) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PanINs developed in DRKF mice before tamoxifen administration. Scale bars, 50 µm. (D) Experimental strategy of Cre-mediated lineage tracing in PanINs developed in 3-month-old DRKF mice. (E and F) Representative fluorescence microscopy images for EGFP encoded in Dclk1 knock-in allele (green), Tomato (magenta), and Hoechst (blue) in sections of PanINs developed in DRKF mice. (CreERT2-IRES-EGFPE) Before tamoxifen injection (day 0), EGFP (green) was expressed in Dclk1+ cells among Tomato-expressed PanIN cells (magenta). (F) After tamoxifen injection (day 28), the progeny of Dclk1+ cells expressed EGFP (green) and non-progeny cells still expressed Tomato (magenta). Scale bar, 50 µm. (G) Quantification of EGFP+ PanIN cells formed in DRKF mice before (day 0) and 28 days after tamoxifen injection (day 28). The number of PanIN lesions was 85 and 141 per mouse in day 0 and day 28 respectively (mean ± SEM; day 0, n = 6, left bar; day 28, n = 7, right bar; n: number of mice). Statistical significance of the difference is indicated as ***p<0.001, Student’s t-test. (H) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PanINs developed in DRKF mice 28 days after tamoxifen administration. Scale bars, 50 µm.Figure 2—source data 1.Figure 2G.
+**Figure 2.:** (A) The scheme of Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+ (DRKF) mouse constructs, flippase-mediated Kras activation, and CreERT2-driven reporter recombination. (B) The scheme of lineage tracing of Dclk1+ cells in established PanINs. Before tamoxifen administration, there were a small subset of Dclk1+/EGFP+ cells (left panel). After tamoxifen administration, if Dclk1+ cells are stem cells, EGFP+ progeny cells expand in the PanINs (middle and right panels). (C) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PanINs developed in DRKF mice before tamoxifen administration. Scale bars, 50 µm. (D) Experimental strategy of Cre-mediated lineage tracing in PanINs developed in 3-month-old DRKF mice. (E and F) Representative fluorescence microscopy images for EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele (green), Tomato (magenta), and Hoechst (blue) in sections of PanINs developed in DRKF mice. (E) Before tamoxifen injection (day 0), EGFP (green) was expressed in Dclk1+ cells among Tomato-expressed PanIN cells (magenta). (F) After tamoxifen injection (day 28), the progeny of Dclk1+ cells expressed EGFP (green) and non-progeny cells still expressed Tomato (magenta). Scale bar, 50 µm. (G) Quantification of EGFP+ PanIN cells formed in DRKF mice before (day 0) and 28 days after tamoxifen injection (day 28). The number of PanIN lesions was 85 and 141 per mouse in day 0 and day 28 respectively (mean ± SEM; day 0, n = 6, left bar; day 28, n = 7, right bar; n: number of mice). Statistical significance of the difference is indicated as ***p<0.001, Student’s t-test. (H) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PanINs developed in DRKF mice 28 days after tamoxifen administration. Scale bars, 50 µm.
 
-## Dclk1+ PDAC cells maintained mouse PDACs
+### Dclk1+ PDAC cells maintained mouse PDACs
 
 We examined whether there is a potential leakiness of Cre expression in Dclk1creERT2-IRES-EGFP mice. We first examined whether the EGFP expression incorporated in the Dclk1CreERT2-IRES-EGFP allele coincides with the expression of Dclk1 before tamoxifen administration. Dclk1 staining was completely consistent with that of EGFP in normal pancreas and pancreatic epithelium irrespective of Kras and/or p53 mutation status (Figure 3—figure supplement 1A). Therefore, Dclk1creERT2-IRES-EGFP mice had no leakiness of Cre expression without tamoxifen administration. Using the Rosa26mTmG reporter allele, we next investigated whether CreER driven recombination occurred in Dclk1− cells of pancreatic epithelium in Dclk1creERT2-IRES-EGFP mice after tamoxifen administration. GFP+ cells in Dclk1− cells were hardly seen (in less than 0.01% of Dclk1− cell population) in pancreatic epithelium of the mice with no gene alteration, with Kras single mutation or with both Kras mutation and p53 deletion on day 1 and day 3 after tamoxifen administration (Figure 3—figure supplement 1B, Figure 3—figure supplement 1—source data 1). Therefore, we concluded that CreER driven recombination is specific to Dclk1+ cells in Dclk1creERT2-IRES-EGFP mice after tamoxifen treatment.
 
 Given that Dclk1+ PanIN cells contributed to maintain PanINs, we next investigated by lineage tracing whether Dclk1+ PDAC cells supply descendant PDAC cells also in PDACs. To this end, we employed a similar strategy and generated Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DRKPF) mice (Figure 3A). In this model, the activation of flippase-FRT system induces oncogenic KrasG12D and Trp53 deletion in pancreatic progenitor cells, which results in the development of Tomato-labeled PDACs including a small number of Dclk1+/EGFP+ cells (Figure 3B). Further Cre recombination by tamoxifen administration switches Tomato to EGFP in potential descendent cells of Dclk1+ cells in PDACs, which allows to trace the lineages of Dclk1+ cells in PDACs, as we did in PanINs (Figure 3B). Within 8 weeks of age, DRKPF mice developed PDAC, in which Tomato red protein was expressed by all tumor cells. Before tamoxifen injection, very few Dclk1+/EGFP+ cells were observed in PDACs developed in DRKPF mice (Figure 3C–E). Two weeks after tamoxifen injection, Dclk1 lineage-positive (EGFP+) PDAC area dramatically increased (Figure 3F). We confirmed this result within Krt19+ PDACs; very few EGFP+ PDAC epithelial cells were observed within Krt19+ tumor areas before tamoxifen injection (Figure 3G). The number of Dclk1 lineage-positive (EGFP+) cells increased within PDAC epithelium 14 days after tamoxifen injection (Figure 3H). EGFP+ area increased from 0.040 ± 0.005% on day 0 before tamoxifen injection to 54.6 ± 5.12% of Krt19+ PDAC area 14 days after tamoxifen injection (Figure 3I, Figure 3—source data 1). There were very few Dclk1+ cells within EGFP+ PDAC tumor cells 14 days after tamoxifen injection (Figure 3J). These results clearly demonstrated that a small subset of Dclk1+ PDAC cells continuously supply descendant PDAC cells and maintain also the PDACs that were already established in DRKPF mice.
 
-## Dclk1+ cells supplied progeny in PDAC-derived tumor spheroids
+![Figure 3.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig3-v2.jpg)
+
+**Figure 3.:** (A) The scheme of Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DRKPF) mouse constructs, flippase-mediated Kras activation and Trp53 deletion, and CreERT2-driven reporter recombination. (B) The scheme of lineage tracing of Dclk1+ cells in established PDAC. The flippase-FRT system produced Tomato+ PDACs including a small number of Dclk1+/EGFP+ cells (left panel). After tamoxifen administration, if Dclk1+ cells are PDAC stem cells, they supply EGFP+ descendant PDAC cells in established PDACs (middle and right panels). (C) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PDACs developed in DRKPF mice before tamoxifen administration. Scale bars, 50 µm. (D) Experimental strategy of Cre-mediated lineage tracing in PDACs developed in 8-week-old DRKPF mice. (E and F) Representative fluorescent microscopy images for EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele (green), Tomato (magenta), and Hoechst (blue) of sections of PDACs developed in DRKPF mice. (E) Before tamoxifen injection (day 0), EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele was expressed in Dclk1+ cells (green) among Tomato expressed PDAC cells (magenta). (F) After tamoxifen injection (day 14), the progeny of Dclk1+ cells expressed EGFP (green) and non-progeny cells still expressed Tomato (magenta). Scale bar, 50 µm. (G and H) Overlay image of Krt19 staining and direct fluorescence observation of endogenous EGFP in same sections illustrated in E (G) and F (H). (I) Quantification of EGFP+ area in PDACs developed in DRKPF mice before (day 0) and 14 days after tamoxifen injection (day 14). In DRKPF mice, a large tumor that replaced the entire pancreas was developed. One tumor was observed per mouse (mean ± SEM; day 0, n = 6, left bar; day 14, n = 6, right bar; n: number of mice). Statistical significance of the difference is indicated as ***p<0.001, Student’s t-test. (J) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of PDAC developed in DRKPF mice 14 days after tamoxifen administration. Scale bars, 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescence staining for Dclk1 (magenta), GFP (green), and Hoechst (blue) of Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp (DF) mice, Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp; KrasFSF-G12D/+ (DKF) mice and Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DKPF) mice without tamoxifen administration (DF mice, 536 cells, n = 5; DKF mice, 604 cells, n = 7; DKPF mice, 685 cells, n = 7). Scale bars, 50 µm. (B) The percentage of EGFP+ cells in Dclk1− cells of pancreatic epithelium with immunofluorescent staining. The GFP+/Dclk1− rates were 0.0070 ± 0.0043% for day 1, 0.0061 ± 0.0038% for day 3 in DRF mice, 0.0069 ± 0.0042% for day 1, 0.0057 ± 0.0051% for day 3 in DRKF mice, and 0.0061 ± 0.0067% for day 1, 0.0061 ± 0.0061% for day 3 in DRKPF mice (mean ± SEM; DRF, day 1: n = 5; day 3: n = 6, DRKF, day1: n = 5, day 3: n = 6, DRKPF; day 1: n = 6; day 3: n = 6, n: number of mice). No significant differences, Student’s t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunofluorescence staining for Dclk1 (magenta), GFP (green), and Hoechst (blue) of spheroids derived from PDAC of DRKPF mice. (B) Experimental strategy of Cre-mediated lineage tracing in established PDAC spheroids. Organoids were observed over time with Hoechst added to the culture medium. (C) Fluorescent microscopy images for EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele (green), Tomato (magenta), and Hoechst (blue) in spheroids derived from PDAC of DRKPF (Rosa26mTmG/ mTmG) mice at 1, 2, and 3 days after 4-OHT administration. Scale bars, 50 µm. (D) Quantification of EGFP+ cells in spheroids before (day 0) and 3 days after 4-OHT administration (day 3, mean ± SEM; day 0, n = 5, left bar; day 3, n = 5, right bar; n: number of mice). Statistical significance of the difference is indicated as ***p<0.001, Student’s t-test. (E) Immunofluorescence staining for Dclk1 (magenta), GFP (green), and Hoechst (blue) of spheroids derived from PDAC of DRKPF mice after 4-OHT treatment. Scale bars, 50 µm.
+
+### Dclk1+ cells supplied progeny in PDAC-derived tumor spheroids
 
 Next, the time course of PDAC development was examined using a 3D culture method of tumor spheroids generated from PDACs of DRKPF mice. In those spheroids, Dclk1 was expressed only in a small fraction of tumor cells (Figure 3—figure supplement 2A). After 4-hydroxytamoxifen (4-OHT) treatment, the proportion of EGFP+ cells in PDAC-derived spheroids increased at 1, 2, and 3 days after the addition of 4-OHT (Figure 3—figure supplement 2B and C). The number of EGFP+ cells increased significantly from 1.05 ± 0.001% to 51.3 ± 0.05% 3 days after 4-OHT administration (Figure 3—figure supplement 2D) in which parental Dclk1+ cells were sparsely observed (Figure 3—figure supplement 2E). These data further supported our notion that Dclk1 is expressed in PDAC stem cells that continuously supply descendant PDAC cells also in the 3D-spheroid model.
 
-## Dclk1+ cells supplied progeny in liver tumors from splenic transplantation
+### Dclk1+ cells supplied progeny in liver tumors from splenic transplantation
 
 Next, we examined the stem cell potential of Dclk1+ PDAC cells in metastatic sites by applying an experimental model of metastatic pancreatic tumors. PDAC cells from DRKPF spheroids were injected into the spleen of BALB/c-nu mice. Eight weeks after splenic injection, liver tumors were found in 40% of BALB/c-nu mice (Figure 4A). Liver metastatic tumors preserved histological features of the primary PDACs (Figure 4B and C). Lineage tracing experiments were performed by administrating tamoxifen started at 8 weeks after splenic injection (Figure 4D). Before tamoxifen administration, a few Dclk1+/EGFP+ cells were found in these metastatic Krt19+ liver tumors (Figure 4D–F). At this point, only Dclk1+ cells were labeled by EGFP and most cells were tomato+ indicating Dclk1 lineage negative. After tamoxifen injection, EGFP+ Dclk1 lineage area started to expand and replaced tomato+ tumor areas, and the proportion of EGFP+ Dclk1 lineage area increased up to 32.1 ± 6.93% on day 14 from 0.014 ± 0.002% on day 0 (Figure 4G and H, Figure 4—source data 1). We observed that there were very few parental Dclk1+ cells within EGFP+ metastatic tumors, suggesting that most EGFP+ cells were descendant of Dclk1+ cells (Figure 4I). This striking data indicated that Dclk1+ PDAC cells show a functional stem cell activity even in metastatic liver tumors as well as in primary pancreatic lesions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig4-v2.jpg)
 
-**Figure 4.:** + cells supplied progeny in liver tumors from splenic transplantation.(A) Macroscopic image of liver tumors 2 months after splenic injection of pancreatic ductal adenocarcinoma (PDAC) spheroids derived from DRKPF mice. (B and C) Histological analysis of the metastatic liver tumors. (B) Hematoxylin and Eosin staining. (C) Immunostaining for Krt19. Scale bars, 50 µm. (D) Experimental strategy of Dclk1-Cre-mediated lineage tracing in established metastatic liver tumors. (E) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of metastatic liver tumors developed by splenic injection of PDAC spheroids derived from DRKPF mice before tamoxifen administration. Scale bars, 50 µm. (F and G) Representative fluorescence microscopy images for EGFP encoded in Dclk1 knock-in allele (green), Tomato (magenta), and Hoechst (blue) in sections of metastatic liver tumors. (CreERT2-IRES-EGFPF) Before tamoxifen injection (day 0), EGFP encoded in Dclk1 knock-in allele was expressed in Dclk1CreERT2-IRES-EGFP+ cells (green) among Tomato-expressed tumor cells (magenta). (G) After tamoxifen injection (day 14), the progeny of Dclk1+ cells expressed EGFP (green) and non-progeny cells still expressed Tomato (magenta). Scale bar, 50 µm. (H) Quantification of EGFP+ area in liver tumor area before (day 0) and 14 days after tamoxifen injection (day 14, mean ± SEM; day 0, n = 6, left bar; day 14, n = 6, right bar; n: number of liver tumors, five mice in each groups). Statistical significance of the difference is indicated as **p<0.01, Student’s t-test. (I) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of metastatic liver tumors developed by splenic injection of PDAC spheroids derived from DRKPF mice. Scale bars, 50 µm.Figure 4—source data 1.+ cells in established mouse metastatic liver tumors.Measurement of EGFP+ area in liver tumor area derived from spleen-injected pancreatic ductal adenocarcinomas (PDACs) before (day 0) and 14 days after tamoxifen injection. Image J was used for the measurement.
+**Figure 4.:** (A) Macroscopic image of liver tumors 2 months after splenic injection of pancreatic ductal adenocarcinoma (PDAC) spheroids derived from DRKPF mice. (B and C) Histological analysis of the metastatic liver tumors. (B) Hematoxylin and Eosin staining. (C) Immunostaining for Krt19. Scale bars, 50 µm. (D) Experimental strategy of Dclk1-Cre-mediated lineage tracing in established metastatic liver tumors. (E) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of metastatic liver tumors developed by splenic injection of PDAC spheroids derived from DRKPF mice before tamoxifen administration. Scale bars, 50 µm. (F and G) Representative fluorescence microscopy images for EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele (green), Tomato (magenta), and Hoechst (blue) in sections of metastatic liver tumors. (F) Before tamoxifen injection (day 0), EGFP encoded in Dclk1CreERT2-IRES-EGFP knock-in allele was expressed in Dclk1+ cells (green) among Tomato-expressed tumor cells (magenta). (G) After tamoxifen injection (day 14), the progeny of Dclk1+ cells expressed EGFP (green) and non-progeny cells still expressed Tomato (magenta). Scale bar, 50 µm. (H) Quantification of EGFP+ area in liver tumor area before (day 0) and 14 days after tamoxifen injection (day 14, mean ± SEM; day 0, n = 6, left bar; day 14, n = 6, right bar; n: number of liver tumors, five mice in each groups). Statistical significance of the difference is indicated as **p<0.01, Student’s t-test. (I) Immunofluorescence staining for Dclk1 (cyan), GFP (green), Krt19 (magenta), and Hoechst (blue) of metastatic liver tumors developed by splenic injection of PDAC spheroids derived from DRKPF mice. Scale bars, 50 µm.
 
-## Live imaging verified that Dclk1+ tumor cells supplied their progeny in the same PanIN and PDAC
+### Live imaging verified that Dclk1+ tumor cells supplied their progeny in the same PanIN and PDAC
 
 To further strengthen lineage tracing data in vivo, we developed live imaging system to visualize the Dclk1+ cell lineage within the same PanIN and PDAC in the same individuals by introducing an abdominal imaging window (AIW; Figure 5A; Alieva et al., 2014; Ritsma et al., 2013) and two-photon excitation microscopy (TPEM). Mouse pancreas was pulled out of the peritoneal cavity and observed through AIW (Figure 5B–D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig5-v2.jpg)
 
-**Figure 5.:** + PDAC cells supply progeny PDAC cells.(A) Photo of an abdominal imaging window (AIW) composed of a custom-made magnet ring and 12 mm cover glass. (B) Scheme of the microscopic observation of the pancreas through an AIW. CA: cyanoacrylate. (C) Layout of the system for mouse live pancreas imaging. (D) Macroscopic images of pancreas with a nodule (arrowhead) transferred on the peritoneum (left) and observed through AIW (right). (E) Protocol of live imaging of PanINs formed in DRKF mice. The mice were treated with caerulein to accelerate PanIN formation. (F and G) Live imaging of PanINs formed in DRKF mice. (F) On the day of AIW installation, the following day of the final tamoxifen injection (day 3), several EGFP+ cells were observed through AIW (green) among Tomato-expressed tumor cells (magenta). (G) Ten days after AIW installation (day 13), almost all PanIN cells expressed EGFP in the same PanIN lesions of the same live DRKF mouse. Scale bar, 50 µm. (H) Protocol of live imaging of PDACs formed in DRKPF mice. (I and J) Live imaging of PDACs formed in DRKPF mice. (I) On the day of AIW installation, the following day of the final tamoxifen injection (day 0), EGFP+ PDAC cells were scarcely observed (green). (J) Seven days after tamoxifen injection, numerous PDAC cells were EGFP+ in the same live mouse (green). Scale bars, 50 µm. (K) Representative images of H and E staining and immunofluorescence staining for GFP, Krt19, and Hoechst of PDAC after live imaging. Scale bar, 50 µm.
+**Figure 5.:** (A) Photo of an abdominal imaging window (AIW) composed of a custom-made magnet ring and 12 mm cover glass. (B) Scheme of the microscopic observation of the pancreas through an AIW. CA: cyanoacrylate. (C) Layout of the system for mouse live pancreas imaging. (D) Macroscopic images of pancreas with a nodule (arrowhead) transferred on the peritoneum (left) and observed through AIW (right). (E) Protocol of live imaging of PanINs formed in DRKF mice. The mice were treated with caerulein to accelerate PanIN formation. (F and G) Live imaging of PanINs formed in DRKF mice. (F) On the day of AIW installation, the following day of the final tamoxifen injection (day 3), several EGFP+ cells were observed through AIW (green) among Tomato-expressed tumor cells (magenta). (G) Ten days after AIW installation (day 13), almost all PanIN cells expressed EGFP in the same PanIN lesions of the same live DRKF mouse. Scale bar, 50 µm. (H) Protocol of live imaging of PDACs formed in DRKPF mice. (I and J) Live imaging of PDACs formed in DRKPF mice. (I) On the day of AIW installation, the following day of the final tamoxifen injection (day 0), EGFP+ PDAC cells were scarcely observed (green). (J) Seven days after tamoxifen injection, numerous PDAC cells were EGFP+ in the same live mouse (green). Scale bars, 50 µm. (K) Representative images of H and E staining and immunofluorescence staining for GFP, Krt19, and Hoechst of PDAC after live imaging. Scale bar, 50 µm.
 
 For live mouse imaging, 6-week-old Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+ (DRKF) mice received caerulein treatment in order to accelerate the development of PanINs (Figure 5E). Several EGFP+ cells within Tomato+ PanIN cells were observed through AIW, when an AIW was installed on the following day of the final tamoxifen injection (day 3, Figure 5F). At 10 days after AIW installation and the final tamoxifen injection, almost all PanIN cells expressed EGFP in the same PanIN lesions of the same live DRKF mouse (day 13, Figure 5G).
 
 We also performed the time course observation of PDAC lesions developed in 6-month-old Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/+ (heterozygous DRKPF) mice. A PDAC nodule in DRKPF mice was observed through AIW (Figure 5D) by using TPEM. On the following day of the final tamoxifen injection, EGFP+ PDAC cells were scarcely observed (day 3, Figure 5H and I). At 4 days after the final tamoxifen injection, numerous PDAC cells were EGFP+ in the same live mouse (day 7, Figure 5J). Histologically, the vast majority of Krt19+ cells of PDAC expressed EGFP (Figure 5K). These data clearly demonstrated that Dclk1+ tumor cells supply descendant cells in both established PanIN and PDAC lesions in live mouse.
 
-## Dclk1+ PDAC cells possessed remarkable spheroid- and in vivo tumor-forming potentials
+### Dclk1+ PDAC cells possessed remarkable spheroid- and in vivo tumor-forming potentials
 
 To evaluate the spheroid-forming potential of Dclk1+ PDAC cells, Dclk1+ and Dclk1− PDAC cells were collected by FACS from PDACs of DKPF mice (Figure 6A). PDAC cells were sorted by using an eFluor450-conjugated antibody against Epcam, because Epcam was expressed in the majority of PDAC cells (Figure 1I and J). Dclk1+ cells were sorted as EGFP+ cells within Epcam+ cells (Figure 6B). Very few EGFP+ cells (0.3% of Epcam+ cells) and a large amount of EGFP− cells were collected (Figure 6B). EGFP+ or EGFP− cells were suspended in growth-factor-reduced Matrigel at a density of 100 cells per well (Figure 6A). Whereas EGFP– PDAC cells formed almost no spheroids, EGFP+ PDAC cells efficiently formed many large spheroids (Figure 6C–F), indicating that Dclk1+ PDAC cells have a high spheroid-forming potential.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig6-v2.jpg)
 
-**Figure 6.:** +pancreatic ductal adenocarcinoma (PDAC) cells have remarkable spheroid- and tumor-forming potential.(A) Scheme of FACS and 3D culture of Dclk1+ and Dclk1− PDAC cells from DKPF mice. (B) FACS-sorting of PDAC cells on the basis of Epcam and Dclk1 expression in DKPF mice. (C and D) Representative images of tumor spheroids derived from sorted Dclk1− (C) and Dclk1+ (D) PDAC cells at day 7. (E) Size of spheroids were compared (mean ± SEM; Dclk1+, n = 5; Dclk1−, n = 5; n: number of mice). Statistical significance of the differences is indicated as ***p<0.001, Student’s t-test. (F) The number of spheroids larger than 20 µm were compared (mean ± SEM; Dclk1+, n = 5; Dclk1−, n = 5; n: number of mice). Statistical significance of the differences is indicated as ***p<0.001, Student’s t-test. (G and H) Tumor-forming assay of Dclk1+ or Dclk1− PDAC cells. (G) Macroscopic image of the NOD/SCID mice after subcutaneous transplantation of Dclk1+ or Dclk1− PDAC cells into the flank. A thousand of Dclk1+ PDAC cells developed subcutaneous tumors whereas Dclk1− PDAC cells did not. (H) Dilution series showed 100, 500, or 1000 Dclk1+ PDAC cells developed subcutaneous tumors in 16.7%, 25.0%, and 75.0% of NOD/SCID mice, whereas same or larger numbers of Dclk1− PDAC cells did not. Statistical significance of the differences is indicated as p<0.05, chi-squared test. (I–K) Histological analysis of primary xenografts derived from FACS-sorted Dclk1+ PDAC cells. (I) Hematoxylin and Eosin (H and E) staining. (J) Immunostaining for Krt19. (K) Immunostaining for Dclk1. Scale bar, 200 µm (I), 50 µm (J and K). (L) Increasing curve of subcutaneous tumor (mean ± SEM; Dclk1+, n = 3; Dclk1−, n = 4; n: number of mice). Statistical significance of the differences is indicated as *p<0.05, Student’s t-test. (M) Passaged tumor-forming assay of Dclk1+ or Dclk1− xenograft cells collected by FACS. A thousand of Dclk1+ xenograft cells developed subcutaneous tumors whereas Dclk1− xenograft cells did not. (N–P) Histological analysis of passaged xenografts derived from FACS-sorted Dclk1+ primary xenograft cells. (N) Hematoxylin and Eosin (H and E) staining. (O) Immunostaining for Krt19. (P) Immunostaining for Dclk1. Scale bar, 200 µm (N), 50 µm (O and P).Figure 6—source data 1.Measured value of increasing curve of subcutaneous tumor derived from Dclk1+ PDACs cells sorted by FACS.
+**Figure 6.:** (A) Scheme of FACS and 3D culture of Dclk1+ and Dclk1− PDAC cells from DKPF mice. (B) FACS-sorting of PDAC cells on the basis of Epcam and Dclk1 expression in DKPF mice. (C and D) Representative images of tumor spheroids derived from sorted Dclk1− (C) and Dclk1+ (D) PDAC cells at day 7. (E) Size of spheroids were compared (mean ± SEM; Dclk1+, n = 5; Dclk1−, n = 5; n: number of mice). Statistical significance of the differences is indicated as ***p<0.001, Student’s t-test. (F) The number of spheroids larger than 20 µm were compared (mean ± SEM; Dclk1+, n = 5; Dclk1−, n = 5; n: number of mice). Statistical significance of the differences is indicated as ***p<0.001, Student’s t-test. (G and H) Tumor-forming assay of Dclk1+ or Dclk1− PDAC cells. (G) Macroscopic image of the NOD/SCID mice after subcutaneous transplantation of Dclk1+ or Dclk1− PDAC cells into the flank. A thousand of Dclk1+ PDAC cells developed subcutaneous tumors whereas Dclk1− PDAC cells did not. (H) Dilution series showed 100, 500, or 1000 Dclk1+ PDAC cells developed subcutaneous tumors in 16.7%, 25.0%, and 75.0% of NOD/SCID mice, whereas same or larger numbers of Dclk1− PDAC cells did not. Statistical significance of the differences is indicated as p<0.05, chi-squared test. (I–K) Histological analysis of primary xenografts derived from FACS-sorted Dclk1+ PDAC cells. (I) Hematoxylin and Eosin (H and E) staining. (J) Immunostaining for Krt19. (K) Immunostaining for Dclk1. Scale bar, 200 µm (I), 50 µm (J and K). (L) Increasing curve of subcutaneous tumor (mean ± SEM; Dclk1+, n = 3; Dclk1−, n = 4; n: number of mice). Statistical significance of the differences is indicated as *p<0.05, Student’s t-test. (M) Passaged tumor-forming assay of Dclk1+ or Dclk1− xenograft cells collected by FACS. A thousand of Dclk1+ xenograft cells developed subcutaneous tumors whereas Dclk1− xenograft cells did not. (N–P) Histological analysis of passaged xenografts derived from FACS-sorted Dclk1+ primary xenograft cells. (N) Hematoxylin and Eosin (H and E) staining. (O) Immunostaining for Krt19. (P) Immunostaining for Dclk1. Scale bar, 200 µm (N), 50 µm (O and P).
 
 In addition, to further confirm the stemness of Dclk1+ PDAC cells, Dclk1+ and Dclk1− PDAC cells collected from DKPF mice by FACS were transplanted subcutaneously into the flank of NOD/SCID mice. Subcutaneous tumors were formed from either 100, 500, or 1000 Dclk1+ PDAC cells in a subset of mice, whereas tumors were never formed even when 10,000 Dclk1− PDAC cells were transplanted (Figure 6G and H). The subcutaneous tumors displayed similar histological appearance to primary PDAC (Figure 6I and J), and a very small number of Dclk1+ PDAC cells were observed in those tumors as well as in original PDACs (Figure 6K). These subcutaneous tumors increased in size over time (Figure 6L, Figure 6—source data 1). Furthermore, a thousand of Dclk1+ and Dclk1− tumor cells collected from primary subcutaneous tumors were re-transplanted into the flank of other NOD/SCID mice. Re-transplanted Dclk1+ cells formed subcutaneous tumors in 60% (3 out of 5) of mice, whereas Dclk1− cells developed no tumors (0 out of 5) (Figure 6M). Histologically, passaged tumors were also indistinguishable from primary subcutaneous tumors and original PDACs (Figure 6N and O), and a very small number of Dclk1+ tumor cells were observed in those tumors (Figure 6P). These data further confirmed that Dclk1 marks PDAC stem cells with a tumor-forming ability in vivo.
 
-## Dclk1+ PDAC cells possessed EMT-, invasiveness-, and stemness-associated gene expression signature in mouse and human PDACs
+### Dclk1+ PDAC cells possessed EMT-, invasiveness-, and stemness-associated gene expression signature in mouse and human PDACs
 
 To determine the molecular characteristics of Dclk1+ PDAC cells, we performed microarray analysis on FACS-sorted Dclk1+ and Dclk1− PDAC cells obtained from Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DKPF) mice (GSE139167), which revealed 4395 differentially expressed genes (p<0.01; 2171 genes upregulated and 2224 genes downregulated in Dclk1+ PDAC cells; Figure 7A). Dclk1+ PDAC cells showed significantly higher expression levels of epithelial mesenchymal transition (EMT)-associated genes such as Vim, Snai1, Snai2, Twist1, and Twist2 (Mani et al., 2008; Yang et al., 2004; Ansieau et al., 2008), and pancreatic CSC marker Aldh1a1 (Kim et al., 2011; Rasheed et al., 2010), which is consistent with the intimate relationship of CSC characteristics with EMT phenotype (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55117/elife-55117-fig7-v2.jpg)
 
-**Figure 7.:** +pancreatic ductal adenocarcinoma (PDAC) cells possessed cancer stem cell potential.(A) The heatmap of representative differentially expressed genes with a significant difference, p<0.01 (Student’s t-test) in gene expression. (B) Gene set enrichment analysis (GSEA) in Dclk1+ versus Dclk1− PDAC cells. (C) Gene set enrichment analysis (GSEA) in DCLK1-high versus DCLK1-low PDACs in human PDAC data sets. (D) Correlation analysis with VIM or CDH1 and DCLK1 in human PDAC data sets. (r, Pearson correlation coefficient). Statistical significance of the differences is indicated as p<0.001, Student’s t distribution.
+**Figure 7.:** (A) The heatmap of representative differentially expressed genes with a significant difference, p<0.01 (Student’s t-test) in gene expression. (B) Gene set enrichment analysis (GSEA) in Dclk1+ versus Dclk1− PDAC cells. (C) Gene set enrichment analysis (GSEA) in DCLK1-high versus DCLK1-low PDACs in human PDAC data sets. (D) Correlation analysis with VIM or CDH1 and DCLK1 in human PDAC data sets. (r, Pearson correlation coefficient). Statistical significance of the differences is indicated as p<0.001, Student’s t distribution.
 
 Gene ontology (GO) enrichment analysis and pathway analysis were performed on The Database for Annotation, Visualization and Integrated Discovery (DAVID) using these 2171 genes highly expressed in Dclk1+ PDAC cells. In the GO enrichment analysis using GO_Biological Process data set, 454 GO terms were enriched in Dclk1+ PDAC cells and GO terms associated with angiogenesis and EMT were included in top 100 GO terms (Supplementary file 1). In KEGG data set, Dclk1+ PDAC cells were significantly enriched with 58 pathways, which included those associated with stemness and drug resistance (Supplementary file 2). Gene set enrichment analysis (GSEA) identified ‘Multicancer invasiveness signature’, ‘Stem cell up’, and ‘Epithelial mesenchymal transition’ as significantly upregulated signatures in Dclk1+ PDAC cells (Figure 7B). These results further support our notion that mouse Dclk1+ PDAC cells possess characteristics of CSC and CSC-related signatures such as EMT, invasiveness, and drug resistance as described in the previous reports (Mani et al., 2008; Meirelles et al., 2012; Li et al., 2008).
 
@@ -132,21 +144,255 @@ In conclusion, by utilizing the novel system for genetic lineage tracing with li
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene Mus musculus</td>
+      <td>Dclk1</td>
+      <td>NCBI Gene Database</td>
+      <td>NCBI Gene: 13175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>DCLK1</td>
+      <td>NCBI Gene Database</td>
+      <td>NCBI Gene: 9201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Dclk1CreERT2-IRES-EGFP</td>
+      <td>Generated in our laboratory Nakanishi et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pdx1-Flp</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>KrasFSF-G12D</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26mTmG</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Trp53frt</td>
+      <td>Jackson Laboratory Schönhuber et al., 2014</td>
+      <td>RRID:IMSR_JAX:017767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>CAnN.Cg-Foxn1nu/Crl</td>
+      <td>Charles river</td>
+      <td>N/A</td>
+      <td>BALB/c-nu</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>NOD.CB17-Prkdcscid/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:001303</td>
+      <td>NOD scid</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Dcamkl1</td>
+      <td>Abcam</td>
+      <td>Cat#: ab31704 RRID:AB_873537</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Dcamkl1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc46312 RRID:AB_2090091</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Cd24</td>
+      <td>Abcam</td>
+      <td>Cat#: ab64064 RRID:AB_2291132</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Cd44</td>
+      <td>Abcam</td>
+      <td>Cat#: ab119863 RRID:AB_10898986</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Cd326</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 13-5791-82 RRID:AB_1659713</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Aldh1a1</td>
+      <td>Abcam</td>
+      <td>Cat#: ab23375 RRID:AB_2224009</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Cd326 (EpCAM) eFluor450</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 48-5791-82 RRID:AB_10717090</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat#: ab6673 RRID:AB_305643</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Cytokeratin</td>
+      <td>DAKO</td>
+      <td>Cat#: IR05361-2J RRID:AB_2868599</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dclk1-CreERT2 Forward1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGAGCTGGACGGCGACGTAAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dclk1-CreERT2 Forward2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATGGACTCAAGAAGATCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dclk1-CreERT2 Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGTGACCCTTAGTGACCCTTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdx1-Flp Forward</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>PCR primers</td>
+      <td>AGAGAGAAAATTGAAACAAGTGCAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdx1-Flp Reverse</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>PCR primers</td>
+      <td>CGTTGTAAGGGATGATGGTGAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kras Common Forward</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>PCR primers</td>
+      <td>CACCAGCTTCGGCTTCCTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kras WT Reverse</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>PCR primers</td>
+      <td>AGCTAATGGCTCTCAAAGGAATGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kras FSF MUT reverse</td>
+      <td>Saur D. Schönhuber et al., 2014</td>
+      <td>PCR primers</td>
+      <td>GCGAAGAGTTTGTCCTCAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>p53-frt1</td>
+      <td>Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>CAAGAGAACTGTGCCTAAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>p53-frt2</td>
+      <td>Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>CTTTCTAACAGCAAAGGCAAGC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InSight DeepSee Laser</td>
+      <td>Spectra Physics</td>
+      <td>RRID:SCR_012362</td>
+      <td>http://www.scienceexchange.com/facilities/multiphoton-microscopy-core-rochester</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo, LLC</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 All the animal experiments were approved by the animal research committee of the Kyoto University and performed in accordance with Japanese government regulations and all the animals were maintained in a specific pathogen-free facility. All surgery was performed under Isoflurane anesthesia, and every effort was made to minimize suffering. The following mouse lines were used: Dclk1CreERT2-IRES-EGFP (Nakanishi et al., 2013), Trp53frt (Jackson Laboratory, Bar Harbor, ME), Pdx1-Flp (Schönhuber et al., 2014), KrasFSF-G12D (Schönhuber et al., 2014), Rosa26mTmG (Schönhuber et al., 2014), BALB/c-nu mice (CAnN.Cg-Foxn1nu/Crl; Charles river, Wilmington, MA), and NOD/SCID mice (NOD.CB17-Prkdcscid/J; Jackson Laboratory). Mice were crossed in a mixed background and no selection for a specific gender was done in this study. Tamoxifen (Sigma-Aldrich, St. Louis, MO) was dissolved in corn oil (Wako, Osaka, Japan) and administered intraperitoneally at a concentration of 2 mg/20 g body weight or subcutaneously at a concentration of 4 mg/20 g per injection. Acute pancreatitis was induced by injecting caerulein (Sigma-Aldrich) as described in a previous report (Jensen et al., 2005).
 
-## Human PDACs specimens
+### Human PDACs specimens
 
 Seven surgically resected specimens of pancreatic cancer tissues were obtained from patients who had been admitted to Kyoto University Hospital. Written informed consent was obtained from all patients and study protocol (#G1200-1) was approved by Ethics Committee of Kyoto University Hospital.
 
-## Lineage tracing experiments
+### Lineage tracing experiments
 
 For experiments to investigate potential leakiness of Cre expression, 6- to 10-week-old Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp (DF), Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp; KrasFSF-G12D/+ (DKF) and Dclk1CreERT2-IRES-EGFP/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DKPF) mice were used without tamoxifen administration. For experiments with tamoxifen administration, 4- to 5-week-old Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp (DRF), Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+ (DRKF) and Dclk1CreERT2-IRES-EGFP/+; Rosa26mTmG/+; Pdx1-Flp; KrasFSF-G12D/+; Trp53frt/frt (DRKPF) mice, with few tumors developed, were used. These mice received a single intraperitoneal tamoxifen administration (2mg/20 g body weight) and were analyzed 1 and 3 days after tamoxifen treatment.
 
 For genetic lineage tracing experiments, Cre-recombination in mice was activated with tamoxifen. For lineage tracing, mice were injected with five or three doses of 2 mg tamoxifen. To perform lineage tracing of spheroids, 4-hydroxytamoxifen (final concentration: 2.0 × 10−6 M, 4-OHT, Sigma-Aldrich) and Hoechst (final concentration: 5.0 µg/ml, Thermo Fisher Scientific, Waltham, MA) were added to the medium in which PDAC spheroids derived from DRKPF (Rosa26mTmG/+ or Rosa26mTmG/mTmG) mice 5 days after the suspension and removed after 24 hr of exposure. For live imaging, mice were administered 4 mg of tamoxifen subcutaneously for three consecutive days – just before AIW installation and first observation by a TPEM.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For immunohistochemistry, tissues were perfused and fixed in 4% paraformaldehyde/PBS, dehydrated into 70% ethanol, embedded in paraffin, and sectioned at 5 µm thickness. Paraffin-embedded sections were stained with hematoxylin and eosin. Antigen retrieval was performed by incubating sections in citric acid buffer (pH 6.0) or EDTA buffer (pH 8.0) for 15 min at 98°C. Blocking was performed by incubating sections in 2% BSA/PBS solution (Wako). The primary antibodies used in this study were as follows: rabbit anti-Dclk1 (1:200; Abcam, Cambridge, UK), goat anti-Dclk1 (1:50; Santa Cruz Biotechnology, Santa Cruz, CA), rat anti-Cd24 (1:100; Abcam), rat anti-Cd44 (1:100; Abcam), rat anti-Cd326 (1:100; Thermo Fisher Scientific), rabbit anti-Aldh1a1 (1:100; Abcam), goat anti-GFP (1:100; Abcam), and Envision FLEX-Cytokeratin (1:1; DAKO). Primary antibodies were incubated for 2 hr at room temperature or overnight at 4°C. Secondary antibodies were incubated for 1 hr at room temperature. For immunohistochemistry, slides were developed using EnVision kit (Dako, Glostrup, Denmark) followed by counterstaining with hematoxylin. For immunofluorescence staining, sections were nuclear stained with Hoechst (Thermo Fisher Scientific).
 
@@ -154,34 +400,34 @@ For direct microscopic observation of sections, tissues were perfused and fixed 
 
 For direct microscopic observation combined with immunofluorescence, after quenching internal fluorescence by heat treatment, sections were incubated for 2 hr at room temperature with primary antibodies against Krt19 and for 1 hr at room temperature with secondary antibodies. For quantification analysis, EGFP+ or Krt19+ areas of PDAC were quantified using ImageJ software (National Institutes of Health, Bethesda, MD).
 
-## Cell culture
+### Cell culture
 
 PDAC tissue was freshly isolated, minced, suspended in 2.5 ml of the digestion buffer, and dissociated with a gentleMACS Dissociator (Miltenyi Biotec, Bergisch Gladbach, Germany) at ‘m-Imp Tumor 02’ setting. The material was incubated at 37°C for 15 min, further dissociated with gentleMACS Dissociator at ‘m-Imp Tumor 03’ setting, passed through 100 µm and 40 µm cell strainer, embedded in growth-factor-reduced Matrigel (BD Biosciences), and cultured in the culture medium. Digestion buffer consisted of HBSS without calcium, magnesium, and phenol red (Thermo Fisher Scientific) supplemented with 2.5 mg/ml collagenase D (Roche, Basel, Switzerland), 1.14 mg/ml Dispase (Thermo Fisher Scientific), 1 mg/ml DNaseI (Qiagen, Hilden, Germany), and 4% fetal bovine serum (Thermo Fisher Scientific). Culture medium consisted of Advanced DMEM/F-12 medium (Thermo Fisher Scientific) supplemented with ×100 GlutaMAX (Thermo Fisher Scientific) and 10% fetal bovine serum (Thermo Fisher Scientific) and 100 U/ml Penicillin–Streptomycin (Thermo Fisher Scientific). Cells were maintained at 37°C in 5% CO2.
 
-## Splenic injection of PDAC cells
+### Splenic injection of PDAC cells
 
 For the lineage tracing analysis of liver metastasis, 105 PDAC cells were injected from the lower pole of the spleen with a 25-gauge needle (Kozlowski et al., 1984).
 
-## Abdominal imaging window
+### Abdominal imaging window
 
 AIW was created from a custom-made magnet ring with a 12 mm round cover glass (Matsunami, Osaka, Japan) glued with cyanoacrylate (Konishi). AIW was glued to the pancreas and abdominal wall with jelly-like cyanoacrylate (Konishi). In order to observe the same place over time, cover glass was marked. Mice with inserted AIW were placed on an electric heating pad on a custom-designed fixing stand (Sano et al., 2016), pressed by a fixing plate attached with the fixing stand to keep the AIW level (Takaoka et al., 2016), and the pancreas was observed through the AIW by TPEM.
 
-## Live imaging of living mice
+### Live imaging of living mice
 
 We used an FV1200MPE-BX61WI upright microscope (Olympus, Tokyo, Japan) equipped with a 25×/1.05 water-immersion objective lens (XLPLN25XW-MP; Olympus) and an InSight DeepSee Ultrafast Laser (Spectra Physics, Mountain View, CA). The excitation wavelength for EGFP and Tomato was 840 nm. We used an IR-cut filter, BA685RIF-3, two dichroic mirrors, DM505 and DM570 (Semrock, Rochester, NY), and two emission filters, BA520-560 (Olympus) — for EGFP and FF01-647/57 (Semrock) — for Tomato, respectively. Laser power was set to 10–14% for the observation of the pancreas. In order to observe the same lesion, AIW was marked and the coordinates of the lesion were recorded.
 
-## Fluorescence activated cell sorting
+### Fluorescence activated cell sorting
 
 Dissociated PDAC cells were incubated with an eFluor-conjugated anti-Epcam antibody (Thermo Fisher Scientific) for 30 min. Labeled cells were sorted on a FACS Aria II (BD Biosciences) on the basis of Dclk1 and Epcam expression using endogenous EGFP and eFluor-conjugated anti-Epcam antibody signals. FACS data were analyzed using FlowJo software (FlowJo, LLC, Ashland, OR) and FACS Diva software (version 8.0, BD Biosciences). The collected cells were embedded in growth factor-reduced Matrigel and cultured in culture medium supplemented with 10 µmol/l Y-27632 (Tocris Cookson, Bristol, UK).
 
-## Microarray and gene enrichment analysis
+### Microarray and gene enrichment analysis
 
 RNA Integrity Numbers (RIN) were measured by Agilent 2200 TapeStation (Agilent Technologies, Santa Clara, CA). RIN of RNA samples used in microarray analysis were above 7. RNA samples were amplified, labeled, and hybridized to SurePrint G3 Mouse GE v2 8 × 60K Microarray (Agilent Technologies). Raw data were quantified and normalized by GeneSpring GX 14.5 software (Agilent Technologies). Genes whose signal was deemed invalid in all tissues by Signal Evaluation were excluded. Unnamed genes were also excluded. Signal data of overlapping probes were averaged. The heatmap was generated using R (Institute for Statistics and Mathematics) from differentially expressed genes with a significant difference, p<0.01 in gene expression. Pathway analysis and GO enrichment analysis were performed on DAVID 6.8 (Laboratory of Human Retrovirology and Immunoinformatics). Gene set enrichment analysis was performed by GSEA 3.0 software (Broad Institute) with 1000 gene-set permutations using the gene-ranking metric t-test with H collection: Hallmark gene sets and C2 collection: Curated gene sets in Molecular Signatures Database. Correlation was assessed by computing Pearson correlation coefficients.
 
-## Xenotransplantation of PDAC cells
+### Xenotransplantation of PDAC cells
 
 Dclk1+ and Dclk1− mouse PDAC cells sorted by FACS were suspended in 100 μl of culture medium and injected subcutaneously into the flank of NOD/SCID mice. Tumor volumes were calculated according to the formula (length × width × height)/2.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were presented as means ± SEM. The two-tailed Student’s t-test was used to determine whether there was a significant difference between two groups. The chi-squared test was used to compare the formation rate of xenograft. p-Values less than 0.05 were considered statistically significant. p<0.05, p<0.01, and p<0.001 were represented with single, double, and triple asterisks, respectively.

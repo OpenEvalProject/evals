@@ -14,15 +14,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 Wellcome Centre for Cell Biology, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/01nrxwf90 Institute of Immunology and Infection Biology, School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/03v4gjf40 Institute of Biotechnology, Technische Universität Berlin Germany
+1. Wellcome Centre for Cell Biology, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Institute of Immunology and Infection Biology, School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. Institute of Biotechnology, Technische Universität Berlin Germany ([ROR:03v4gjf40](https://ror.org/03v4gjf40))
 
 † Corresponding author
 
 ## Abstract
 
-Kinetoplastids are a highly divergent lineage of eukaryotes with unusual mechanisms for regulating gene expression. We previously surveyed 65 putative chromatin factors in the kinetoplastid Trypanosoma brucei . Our analyses revealed that the predicted histone methyltransferase SET27 and the Chromodomain protein CRD1 are tightly concentrated at RNAPII transcription start regions (TSRs). Here, we report that SET27 and CRD1, together with four previously uncharacterized constituents, form the SET27 promoter-associated regulatory complex (SPARC), which is specifically enriched at TSRs. SET27 loss leads to aberrant RNAPII recruitment to promoter sites, accumulation of polyadenylated transcripts upstream of normal transcription start sites, and conversion of some normally unidirectional promoters to bidirectional promoters. Transcriptome analysis in the absence of SET27 revealed upregulated mRNA expression in the vicinity of SPARC peaks within the main body of chromosomes in addition to derepression of genes encoding variant surface glycoproteins (VSGs) located in subtelomeric regions. These analyses uncover a novel chromatin-associated complex required to establish accurate promoter position and directionality.
+Kinetoplastids are a highly divergent lineage of eukaryotes with unusual mechanisms for regulating gene expression. We previously surveyed 65 putative chromatin factors in the kinetoplastid Trypanosoma brucei. Our analyses revealed that the predicted histone methyltransferase SET27 and the Chromodomain protein CRD1 are tightly concentrated at RNAPII transcription start regions (TSRs). Here, we report that SET27 and CRD1, together with four previously uncharacterized constituents, form the SET27 promoter-associated regulatory complex (SPARC), which is specifically enriched at TSRs. SET27 loss leads to aberrant RNAPII recruitment to promoter sites, accumulation of polyadenylated transcripts upstream of normal transcription start sites, and conversion of some normally unidirectional promoters to bidirectional promoters. Transcriptome analysis in the absence of SET27 revealed upregulated mRNA expression in the vicinity of SPARC peaks within the main body of chromosomes in addition to derepression of genes encoding variant surface glycoproteins (VSGs) located in subtelomeric regions. These analyses uncover a novel chromatin-associated complex required to establish accurate promoter position and directionality.
 
 ## Introduction
 
@@ -40,13 +40,25 @@ Here, we set out to characterize the Class I factors SET27 and CRD1 which exhibi
 
 ## Results
 
-## SET27 and CRD1 associate with proteins containing chromatin reader modules
+### SET27 and CRD1 associate with proteins containing chromatin reader modules
 
 We previously reported that YFP-tagged SET27 (Tb927.9.13470) and CRD1 (Tb927.7.4540) co-immunoprecipitate with each other and with JBP2, a thymidine hydroxylase involved in the synthesis of base J (DiPaolo et al., 2005; Kieft et al., 2007). In addition, both SET27 and CRD1 interacted with four uncharacterized proteins (Tb927.11.11840, Tb927.3.2350, Tb927.1.4250, and Tb927.11.13820; Staneva et al., 2021). SET27 is predicted to contain a SET methyltransferase domain (Dillon et al., 2005) and a Zinc finger domain (Klug and Rhodes, 1987), whereas CRD1 has a putative methyl lysine binding Chromo domain (Bannister et al., 2001; Lachner et al., 2001; Paro, 1990; Singh et al., 1991; Figure 1—figure supplement 1A). Among the four uncharacterized proteins, Tb927.11.11840 was named CSD1 because it contains a divergent Chromoshadow domain (Aasland and Stewart, 1995), normally found in association with Chromodomains. The uncharacterized protein Tb927.3.2350 has a predicted PHD finger histone methylation reader domain (Aasland et al., 1995; Li et al., 2006; Peña et al., 2006), and was thus designated as PHD6. Tb927.1.4250 lacked strongly predicted domains but because it was enriched at promoters (see below), we named it Promoter Binding Protein 1 (PBP1). Finally, Tb927.11.13820 was designated PWWP1 due to its structural similarity to a PWWP domain of the human NSD2 histone methyltransferase, which binds methylated H3K36 (Arrowsmith and Schapira, 2019; Zhang et al., 2021). Overall, the presence of putative histone writer and reader domains suggests that these proteins may cooperate to regulate chromatin structure and gene expression.
 
-## Identification of the TSR-associated SPARC complex in BF T. brucei
+### Identification of the TSR-associated SPARC complex in BF T. brucei
 
 The enrichment of CSD1, PHD6, PBP1, PWWP1, and JBP2 with affinity-selected YFP-SET27 and YFP-CRD1 (Staneva et al., 2021) initially suggested that these seven proteins might form a single complex. To investigate this further, we YFP-tagged the four uncharacterized proteins and JBP2 at their endogenous gene loci in BF Lister 427 T. brucei cells. We tagged the proteins on their N termini to preserve 3′ UTR sequences involved in regulating mRNA stability (Clayton, 2019). We note, however, that the presence of the YFP tag and/or its position (N- or C-terminal) might affect protein expression and localization patterns. Immunolocalization was performed to determine the subcellular distribution of the putative SET27-CRD1 complex components. Strong nuclear signals were obtained for CRD1, CSD1, PHD6, PBP1, and PWWP1, whereas SET27 and JBP2 were found in both the nucleus and the cytoplasm of BF cells (Figure 1—figure supplement 1B). We subsequently affinity purified each protein and identified its interacting partners via the same LC-MS/MS proteomics pipeline we previously used for YFP-SET27 and YFP-CRD1 (Staneva et al., 2021). This analysis showed that each protein displayed strong association with the other six (Figure 1A; Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig1-v2.jpg)
+
+**Figure 1.:** (A) Proteins previously shown to be enriched in CRD1 and SET27 coimmunoprecipitations (co-IPs) were YPF-tagged and analyzed by affinity selection and LC-MS/MS to identify their protein interaction partners. Volcano plots are based on three biological replicates for each sample. Cutoffs used for significance: log2 (tagged/untagged)>2 or <−2 and Student’s t-test p-value<0.01. See Supplementary file 1 for a complete list of proteins enriched in each affinity selection. Putative SPARC complex subunits are shown in pink and other proteins of interest are shown in teal. The CRD1 and SET27 co-IPs are reproduced from Figure 4A by Staneva et al., 2021. (B) Interaction network of the proteins enriched in the co-IP experiments shown in (A). SPARC components are connected with thick lines while all other interactions are shown with thin lines. Proteins which interact with three or more SPARC components are represented in different colors. See Supplementary file 2 for a complete list of shared and unique interactors in these co-IPs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Conserved domains and sequences of core SPARC complex subunits and JBP2. (B) Immunolocalization of YFP-tagged core SPARC components and JBP2 in bloodstream and procyclic form cells. In merge panels, YFP-tagged proteins are shown in red and DAPI-stained DNA is in green. SET27 (BF) image panels are reproduced from Figure 1 by Staneva et al., 2021.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) SET27, CRD1, and JBP2 were YPF-tagged in PF cells and analyzed by affinity selection and LC-MS/MS to identify their protein interaction partners. Volcano plots are based on three biological replicates for each sample. Cutoffs used for significance: log2 (tagged/untagged)>2 or <−2 and Student’s t-test p-value<0.01. See Supplementary file 1 for a complete list of proteins enriched in each affinity selection. Core SPARC components and the auxiliary subunit JBP2 are shown in pink and other proteins of interest are shown in teal. (B) A region of Chromosome 2 (same as in Figure 2A) is shown with ChIP-seq reads mapped for the indicated proteins. A single replicate is shown for each protein. ChIP-seq performed in cells lacking any tagged protein (untagged) was included as a negative control. Tracks are scaled separately as fragments per million (the exact value is indicated in the top-right corner of each track). The positions of single and double transcription start regions (sTSRs and dTSRs) are shown below with arrows indicating the direction of transcription. (C) Enrichment profiles for SPARC components. CRD1 is used as a reference because it has the most prominent peaks at TSRs. The metagene plots (top) show normalized read density around all CRD1 peak summits, with each replicate plotted separately. The heatmaps (bottom) show protein density around 177 individual CRD1 peaks. Each heatmap shows the average of at least two replicates.
 
 This group of seven represented the most highly enriched proteins in the affinity selections of SET27, CRD1, CSD1, and PBP1, being on average eightfold more prevalent than any other proteins detected. However, several bait proteins recovered overlapping sets of additional proteins (Figure 1B; Supplementary file 2). SET27, CRD1, CSD1, PBP1, and PWWP1 associated with JBP3, a base J binding protein involved in RNAPII transcription termination in T. brucei and Leishmania (Jensen et al., 2021; Kieft et al., 2020). PHD6 and PWWP1 affinity purifications were enriched for various histones (H2A, H2B, H3.V, H4, etc.) and kinetochore proteins (KKT2, KKT4, KKT8, etc.), and PHD6, PBP1, and PWWP1 each associated with the histone variant H4.V and the kinetochore protein KKT3. Recovery of histone proteins is consistent with the presence of putative histone-binding modules in CRD1, PHD6, and PWWP1. Additionally, CRD1, PHD6, and PWWP1 interacted with various RNAPII subunits, and both PHD6 and PWWP1 associated with the POB3 and SPT16 components of the FACT complex. FACT is involved in transcription elongation in eukaryotes (Belotserkovskaya et al., 2003), and in T. brucei it has also been linked to VSG repression (Denninger and Rudenko, 2014). Overall, our proteomic analyses indicate that SET27, CRD1, CSD1, PHD6, PBP1, PWWP1, and JBP2 are tightly associated, potentially forming a protein complex, with some components showing interactions with a wider group of proteins involved in transcriptional regulation (Figure 1B; Supplementary file 2).
 
@@ -54,9 +66,9 @@ Previously we demonstrated that both SET27 and CRD1 are specifically enriched ac
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig2-v2.jpg)
 
-**Figure 2.:** Trypanosoma brucei.(A) A region of Chromosome 2 is shown with ChIP-seq reads mapped for the indicated proteins. A single replicate is shown for each protein. ChIP-seq performed in wild-type cells lacking any tagged protein (untagged) was included as a negative control. Tracks are scaled separately as fragments per million (the exact value is indicated in the top-right corner of each track). The positions of single and double transcription start regions (sTSRs and dTSRs) are shown below with arrows indicating the direction of transcription. ChIP-seq data for CRD1, SET27, and the untagged parental cell line are reproduced from Figure 2A by Staneva et al., 2021. (B) Enrichment profiles for SPARC components. CRD1 is used as a reference because it has the most prominent peaks at TSRs. The metagene plots (top) show normalized read density around all CRD1 peak summits, with each replicate plotted separately. The heatmaps (bottom) show protein density around 177 individual CRD1 peaks. Each heatmap shows the average of at least two replicates. CRD1 and SET27 metagene plots and heatmaps are reproduced from Figure 2C by Staneva et al., 2021.
+**Figure 2.:** (A) A region of Chromosome 2 is shown with ChIP-seq reads mapped for the indicated proteins. A single replicate is shown for each protein. ChIP-seq performed in wild-type cells lacking any tagged protein (untagged) was included as a negative control. Tracks are scaled separately as fragments per million (the exact value is indicated in the top-right corner of each track). The positions of single and double transcription start regions (sTSRs and dTSRs) are shown below with arrows indicating the direction of transcription. ChIP-seq data for CRD1, SET27, and the untagged parental cell line are reproduced from Figure 2A by Staneva et al., 2021. (B) Enrichment profiles for SPARC components. CRD1 is used as a reference because it has the most prominent peaks at TSRs. The metagene plots (top) show normalized read density around all CRD1 peak summits, with each replicate plotted separately. The heatmaps (bottom) show protein density around 177 individual CRD1 peaks. Each heatmap shows the average of at least two replicates. CRD1 and SET27 metagene plots and heatmaps are reproduced from Figure 2C by Staneva et al., 2021.
 
-## PF T. brucei cells also contain SPARC
+### PF T. brucei cells also contain SPARC
 
 To determine if SPARC exists with a similar composition in the distinct insect stage of the T. brucei life cycle, we YFP-tagged SET27, CRD1, and JBP2 at their endogenous loci in PF parasites. In PF cells, JBP2 was predominantly cytoplasmic, whereas SET27 was strongly enriched in the nucleus. This contrasts with BF cells, where SET27 and JBP2 were detected in both the nucleus and cytoplasm (Figure 1—figure supplement 1B). CRD1 localized to the nucleus in both developmental forms of T. brucei.
 
@@ -66,15 +78,27 @@ We next performed ChIP-seq to map the genome-wide binding sites of YFP-tagged SE
 
 These analyses in PF cells indicate that six core components, SET27, CRD1, CSD1, PHD6, PBP1, and PWWP1, form the main SPARC complex in both BF and PF cells. The ancillary factor JBP2 was largely absent from PF cell nuclei and only very weakly associated with other SPARC components in PF cells, underscoring its distinct behavior.
 
-## Loss of SET27 disrupts SPARC formation
+### Loss of SET27 disrupts SPARC formation
 
 The strong association of SPARC with RNAPII TSRs in both BF and PF T. brucei cells suggested that it might have a role in regulating transcription. To test this, we attempted to delete the genes encoding SPARC components in BF cells. We successfully generated cell lines lacking the core subunit SET27 (set27Δ/Δ) and the auxiliary subunit JBP2 (jbp2Δ/Δ). However, we were unable to obtain cell lines completely null for any other SPARC component, suggesting these may be essential for viability. To confirm the SET27 and JBP2 gene deletions, we generated RNA-seq libraries using poly(A)-selected RNA. Cells lacking either one (Δ/+) or both alleles (Δ/Δ) showed a partial and complete loss of SET27 and JBP2 mRNA, respectively (Figure 3A; Figure 3—figure supplement 2A). Importantly, transcripts derived from neighboring genes were unaffected, demonstrating that deletion of the SET27 or JBP2 genes did not alter the expression of other genes in their respective polycistrons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig3-v2.jpg)
+
+**Figure 3.:** (A) Tracks showing the distribution of RNA-seq reads in the vicinity of the SET27 gene in wild-type, set27Δ/+and set27Δ/Δ cells. All tracks are scaled identically (number of reads shown in the bottom right corner of each track). (B) Affinity selection of FLAG-CRD1 from wild-type and set27Δ/Δ cells. The volcano plot is based on three biological replicates for each sample. Cutoffs used for significance: log2 (set27Δ/Δ vs. WT)>2 or <−2 and Student’s t-test p-value<0.01. See Supplementary file 1 for a complete list of proteins in these affinity selections. SPARC components are shown in pink, VSGs in green, and ESAGs in yellow.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Growth curves for wild-type, set27Δ/+, set27Δ/Δ, and the two SET27 rescue clones. Error bars: standard deviation (SD) of three biological replicates. Cells lacking the SET27 gene (set27Δ/Δ) grew substantially slower than WT or set27Δ/+ cells (t-test p-value<0.0001). SET27 rescue clones 1 and 2 also grew significantly slower than WT or set27Δ/+ cells (t- test p-value<0.01) but faster than set27Δ/Δ cells (t-test p-value<0.01). Average doubling times: 6.2 hr (wild-type), 6.0 hr (set27Δ/+), 8.3 hr (set27Δ/Δ), 7.4 hr (SET27 rescue clone 1), and 6.8 hr (SET27 rescue clone 2). (B) SET27 mRNA levels assessed by RT-qPCR in wild-type, set27Δ/Δ, and the two SET27 rescue clones. Error bars: SD of two biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83135/elife-83135-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Tracks showing the distribution of RNA-seq reads in the vicinity of the JBP2 gene in wild-type, jbp2Δ/+, and jbp2Δ/Δ cells. All tracks are scaled identically (number of reads shown in the bottom right corner of each track). (B) Growth curves for J1339 wild-type, jbp2Δ/+, and jbp2Δ/Δ cell lines. Error bars: standard deviation (SD) of three biological replicates. Cells lacking the JBP2 gene (jbp2Δ/Δ) grew slightly faster than WT cells (t-test p-value<0.05) and about the same as jbp2Δ/+ cells (t-test p-value=0.05). Average doubling times: 6.9 hr (J1339 WT), 6.8 hr (jbp2Δ/+), and 6.5 hr (jbp2Δ/Δ). Note that, in contrast to the SET27 knockout, deletion of JBP2 was made via CRISPR/Cas9 in a cell line with integrated pJ1339 plasmid (see Materials and methods). (C) Tracks showing the distribution of RNA-seq reads in the presence (wild-type and jbp2Δ/+) or absence of JBP2 (jbp2Δ/Δ) around the same sTSR shown in Figure 4A (left). CRD1 ChIP (top track) is included to mark the position of SPARC sites. ORFs are indicated by grey boxes and directionality is shown with inset white arrows. Genes present within a single polycistron are connected with a thin black line.
 
 Initial phenotypic characterization of cells lacking SET27 or JBP2 showed that set27Δ/Δ cells grew substantially slower than wild-type or set27Δ/+ cells (Figure 3—figure supplement 1A). In contrast, jbp2Δ/Δ cells grew slightly faster than wild-type cells (Figure 3—figure supplement 2B). The basis for these differences in growth rates remains to be determined.
 
 To test if SET27 is required for the integrity of SPARC, we FLAG-tagged CRD1 at its endogenous locus in wild-type and set27Δ/Δ cells. Next, we performed affinity selections of FLAG-CRD1 from both cell lines followed by mass spectrometry to detect potential differences in interacting proteins. In the absence of SET27, FLAG-CRD1 showed greatly reduced association with all other SPARC components (Figure 3B; Supplementary file 1). Instead, several VSG proteins were detected as being associated with FLAG-CRD1 in set27Δ/Δ cells, though it is likely that these represent unspecific interactions. Thus, we conclude that SET27 is pivotal for SPARC assembly or stability, as other subunits dissociate in its absence.
 
-## SET27 is required for correct transcription initiation in BF T. brucei
+### SET27 is required for correct transcription initiation in BF T. brucei
 
 Because SPARC is enriched over transcription start regions, we tested whether SET27 is required for accurate transcription initiation. In T. brucei, transcription initiates from either unidirectional or bidirectional promoters. All regions annotated as sTSRs in the trypanosome genome correspond to unidirectional promoters which are associated with a single SPARC binding site. Regions annotated as dTSRs exhibit either one or two SPARC peaks depending on whether the promoter is bidirectional or there are two nearby unidirectional promoters from which transcription initiates in opposite directions (e.g., see Figures 4 and 5). In wild-type and set27Δ/+ cells, transcription typically initiated coincident with, or just downstream from, the peak of SPARC binding (Figure 4A–C). Strikingly, this pattern was lost in set27Δ/Δ cells. At all unidirectional promoters, the transcription start site shifted ~1–5 kb upstream of its normal position in wild-type cells (Figure 4A, left), though the extent of this defect varied between promoters in terms of both distance from the wild-type start site and RNA amount. Additionally, at 14 out of 54 normally unidirectional promoters, transcription initiated in both directions in set27Δ/Δ cells, effectively converting them to bidirectional promoters (Figure 4A, right). These altered transcription patterns were also clearly evident in a metagene analysis of unidirectional promoters (Figure 4C). Data from dTSRs were more difficult to interpret because in these regions one cannot distinguish between an upstream and an antisense transcriptional defect. Nonetheless, there was strong evidence that SET27 also contributes to accurate transcription initiation from dTSRs (Figure 4B, C). To determine if the transcriptional phenotype we observed was specifically due to SET27 loss, we restored the wild-type SET27 gene to its endogenous locus by homologous recombination (Figure 3—figure supplement 1B). We obtained two rescue clones which grew slower than wild-type but faster than set27Δ/Δ cells (Figure 3—figure supplement 1A). Importantly, the elevated level of transcription within two TSRs observed in set27Δ/Δ cells was completely reversed when the SET27 gene was restored (Figure 4D).
 
@@ -88,11 +112,11 @@ Because SPARC is enriched over transcription start regions, we tested whether SE
 
 In contrast to SET27, loss of JBP2 did not result in any distinct changes to the transcriptional profile around TSRs (Figure 3—figure supplement 2C). This is consistent with our ChIP-seq data showing that JBP2 does not selectively associate with promoter regions (Figure 2), and again indicates that its function is distinct from core SPARC components. Collectively, these results suggest that SPARC contributes to the accurate positioning of transcription start sites and to normal transcription directionality.
 
-## The distribution of RNAPII is altered in cells lacking SET27
+### The distribution of RNAPII is altered in cells lacking SET27
 
 If promoter positioning is indeed affected by SET27 loss, then RNAPII occupancy within TSRs would also be expected to change. To directly test this possibility, we performed ChIP-seq for YFP-RPB1 (the largest RNAPII subunit) in wild-type, set27Δ/+, and set27Δ/Δ BF T. brucei cells. In wild-type and set27Δ/+ cells, RPB1/RNAPII enrichment was clearly coincident with SPARC peaks (represented by CRD1; Figure 5). Notably, this pattern was significantly altered in set27Δ/∆ cells, with RPB1/RNAPII peaks becoming less defined and, in some instances, completely lost (Figure 5A). Comparison with RNA-seq data showed that the broader RPB1/RNAPII signal in set27Δ/Δ cells coincides with transcript accumulation upstream of the major transcription initiation site in wild-type cells (Figure 5A). Metagene analysis confirmed that the RPB1/RNAPII peaks are generally reduced and broader in set27Δ/Δ cells relative to set27Δ/+ or wild-type cells (Figure 5B). Thus, we conclude that SET27 is required for accurate RNAPII transcription initiation.
 
-## SET27 represses the expression of VSG and transposon-derived genes
+### SET27 represses the expression of VSG and transposon-derived genes
 
 The finding that transcription initiation and RNAPII occupancy is altered in set27Δ/Δ cells prompted us to determine if these changes affect the expression of any mRNAs. Principal component analysis was employed to compare the global transcriptional landscapes of wild-type, set27Δ/+, and set27Δ/Δ cells (Figure 6A). Wild-type and set27Δ/+ replicates clustered together while set27Δ/Δ replicates were clearly distinct, indicating that gene expression is aberrant in cells lacking SET27. Analysis of differentially expressed genes (DEGs) in wild-type versus set27Δ/Δ cells revealed widespread transcriptional induction of otherwise silent or weakly expressed genes (Figure 6B, C). Almost 100 mRNAs were significantly upregulated at least twofold (Figure 6B; Supplementary file 3). Conversely, only the SET27 mRNA was reduced, due to its gene deletion (Figure 6B; Supplementary file 3). Gene ontology analysis of the upregulated mRNA set revealed strong enrichment for normally silent VSG genes (Figure 6B–D) which were distinct from the VSG proteins detected in FLAG-CRD1 immunoprecipitations from set27Δ/Δ cells (Figure 3B). Additionally, we observed derepression of SLACS retrotransposons which reside within the SL gene cluster, as well as derepression of reverse transcriptase and RNase H genes derived from the more widely distributed ingi retrotransposons (Figure 6B–D). Expression site-associated genes (ESAGs; transcribed together with the active VSG) were also upregulated in set27Δ/Δ cells (Figure 6B, C). However, the ESAG gene category was not significantly enriched overall among the DEGs (Figure 6D).
 
@@ -128,62 +152,457 @@ In summary, we have identified SPARC, a novel promoter-associated protein comple
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>SET27</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.9.13470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>CRD1</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.7.4540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>CSD1</td>
+      <td>This paper</td>
+      <td>Tb927.11.11840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>PHD6</td>
+      <td>This paper</td>
+      <td>Tb927.3.2350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>PBP1</td>
+      <td>This paper</td>
+      <td>Tb927.1.4250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>PWWP1</td>
+      <td>This paper</td>
+      <td>Tb927.11.13820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>JBP2</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.7.4650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (T. brucei)</td>
+      <td>RPB1</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.4.5020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. brucei)</td>
+      <td>Lister 427</td>
+      <td>Keith Matthews lab stocks</td>
+      <td></td>
+      <td>BF and PF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-SET27</td>
+      <td>Staneva et al., 2021</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-CRD1</td>
+      <td>Staneva et al., 2021</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-CSD1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-PHD6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-PBP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-PWWP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-JBP2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-SET27</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-CRD1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-JBP2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>YFP-RPB1</td>
+      <td>Staneva et al., 2021</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>set27Δ/+ inYFP-RPB1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>set27Δ/Δ inYFP-RPB1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>jbp2Δ/+ inJ1339 WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>jbp2Δ/Δ inJ1339 WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>FLAG-CRD1 in WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. brucei)</td>
+      <td>FLAG-CRD1 in set27Δ/Δ</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (T. brucei)</td>
+      <td>BSR-YFP contruct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate the YFP-tagged cell lines</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (T. brucei)</td>
+      <td>PUR-FLAG construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate the FLAG-tagged cell lines</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (T. brucei)</td>
+      <td>SET27/JBP2 5′ UTR - HYG/G418 -SET27/JBP2 3′ UTR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate the set27 and jbp2 Δ/+ and Δ/Δ cell lines</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (T. brucei)</td>
+      <td>SET27 5′ UTR - PUR - SET27 CDS -SET27 3′ UTR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate the SET27 rescue cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A-11122</td>
+      <td>IF (1:500) ChIP (10 µg per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat # 11814460001</td>
+      <td>IP-MS (10 µg per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M2 anti-FLAG (Mouse monosclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #F1804</td>
+      <td>IP-MS (10 µg per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 anti-rabbit (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-11036</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPOTv4BSR YFP (plasmid)</td>
+      <td>Dean et al., 2015</td>
+      <td></td>
+      <td>Used for the YFP tagging</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPOTv4PUR FLAG (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used for the FLAG tagging</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPOTv7G418 mNG(plasmid)</td>
+      <td>Gift from Sam Dean</td>
+      <td></td>
+      <td>Used to generate the set27 and jbp2 Δ/+ and Δ/Δ cell lines</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPOTv7HYG RFP(plasmid)</td>
+      <td>Gift from Sam Dean</td>
+      <td></td>
+      <td>Used to generate the set27 and jbp2 Δ/+ and Δ/Δ cell lines</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJ1339 (plasmid)</td>
+      <td>Alves et al., 2020</td>
+      <td></td>
+      <td>Used to generate the jbp2 Δ/+ and Δ/Δ cell lines</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMA-RQ-SET27 addback (plasmid)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Used to generate the SET27 rescue cell line</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Blunting Kit</td>
+      <td>NEB</td>
+      <td>Cat #E1201L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Klenow Fragment (3′→5′ exo-)</td>
+      <td>NEB</td>
+      <td>Cat #M0212S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEXTflex-96 DNA Barcodes (Illumina Compatible)</td>
+      <td>Bioo Scientific</td>
+      <td>Cat #514105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna Universal One-Step RT-qPCR Kit</td>
+      <td>NEB</td>
+      <td>Cat #E3005S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Directional RNA Library Prep Kit for Illumina</td>
+      <td>NEB</td>
+      <td>Cat #7760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Poly(A) mRNA Magnetic Isolation Module</td>
+      <td>NEB</td>
+      <td>Cat #E7490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat #A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RapiGest SF Surfactant</td>
+      <td>Waters</td>
+      <td>Cat #186001861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin Protease, MS Grade</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #90057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>Shannon et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LeishGEdit</td>
+      <td>Beneke et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Tyanova et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TriTrypDB</td>
+      <td>Aslett et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 This study utilized two standard parental cell lines of the eukaryotic parasite T. brucei: BF 427 and PF 427. Analysis of ChIP-seq input and RNA-seq data made from these cell lines showed no evidence of contamination with sequence reads from Mycoplasma. Our sequencing data also confirmed that all cell lines are T. brucei 427. The cell lines with tagged proteins were confirmed by immunoprecipitation followed by mass spectrometry. The gene knockout cell lines were confirmed by RNA-seq. The SET27 rescue cell line was confirmed by RT-qPCR.
 
-## Cell culture
+### Cell culture
 
 BF T. brucei 427 parasites were grown at 37°C and 5% CO2 in HMI-9 medium supplemented with Penicillin-Streptomycin (Gibco) and 10% fetal bovine serum (Gibco). PF T. brucei 427 cells were grown at 27°C in SDM-79 medium supplemented with hemin, Penicillin-Streptomycin (Gibco), and 10% FBS (Gibco).
 
-## Structural bioinformatics
+### Structural bioinformatics
 
 The presence of putative structural/functional domains in the SPARC complex subunits was identified by analyzing: (1) the amino acid sequence composition of individual subunits for remote protein homology using the HHPred web server (Söding et al., 2005), offered by the MPI Bioinformatics Tool kit (https://toolkit.tuebingen.mpg.de/tools/hhpred; Zimmermann et al., 2018; Gabler et al., 2020), (2) the three-dimensional models generated by AlphaFold (Jumper et al., 2021), an artificial intelligence (AI) based high accuracy structure prediction method, using ColabFod notebook on Google CoLab (Mirdita et al., 2022). AlphaFold generated three-dimensional models were further analyzed using the DALI server (http://ekhidna2.biocenter.helsinki.fi/dali/; Holm and Rosenström, 2010) a webserver that compares a query protein structure against the available protein structures in the Protein Data Bank (PDB) to strengthen the conclusions of the HHpred analyses.
 
-## Protein tagging
+### Protein tagging
 
 Proteins were tagged N-terminally at their endogenous loci using the pPOTv4 BSR YFP plasmid (Dean et al., 2015) and a derivative of the plasmid made by changing the blasticidin (BSR) drug resistance marker to puromycin (PUR) and the YFP tag to FLAG. Tagging constructs were made by fusion PCR and consisted of the end of the 5′ UTR of each gene, a region of the pPOTv4 plasmid containing the drug resistance gene and the tag, and the beginning of the CDS of each gene. Primers used to make the tagging constructs are listed in Supplementary file 4. Fusion constructs were transfected into T. brucei by electroporation. Cell lines with tagged proteins were verified by anti-GFP or anti-FLAG immunoprecipitation followed by LC-MS/MS.
 
-## Generating knockout cell lines
+### Generating knockout cell lines
 
 The SET27 gene deletion was performed in a YFP-RPB1 cell line (WT) via homologous recombination to replace both SET27 alleles with hygromycin (HYG) and G418 drug resistance markers. The JBP2 gene deletion was made using a CRISPR/Cas9 toolkit developed for kinetoplastids (Beneke et al., 2017). Briefly, a pJ1339 plasmid from which Cas9 is constitutively expressed (Alves et al., 2020) was integrated into the tubulin locus to generate the J1339 WT cell line. Then, guide RNAs and repair cassettes were transfected into the J1339 WT cell line to replace both JBP2 alleles with HYG and G418 drug resistance markers. Oligos used to make these deletions are listed in Supplementary file 4. HYG and G418 resistance markers were amplified from pPOTv7 plasmids kindly gifted by Sam Dean. The knockout cell lines were verified by RNA-seq.
 
-## Generating the SET27 rescue cell line
+### Generating the SET27 rescue cell line
 
 A pMA-RQ plasmid containing the rescue construct consisting of a fragment from the SET27 5′ UTR, followed by a puromycin (PUR) resistance cassette, the SET27 CDS sequence and a fragment from the SET27 3′ UTR were synthesized by Invitrogen. The plasmid was linearized by PsiI (NEB) and transfected by electroporation into set27Δ/Δ cells. The rescue clones obtained were verified by RT-qPCR.
 
-## Immunolocalization
+### Immunolocalization
 
 Parasites were harvested by centrifugation, washed once with phosphate-buffered saline (PBS) and fixed with 4% paraformaldehyde (final concentration) for 10 min on ice. Fixation was then stopped by adding glycine. Fixed cells were pipetted onto polylysine slides and permeabilized with 0.1% Triton X-100. Slides were blocked with 2% bovine serum albumin (BSA) for 45 min at 37oC. Blocked slides were incubated for 45 min at 37oC first with rabbit anti-GFP primary antibody (A-11122; Thermo Fisher Scientific) diluted 1:500 in 2% BSA, and then with Alexa fluor 568 goat anti-rabbit secondary antibody (A-11036; Thermo Fisher Scientific) diluted 1:1000 in 2% BSA. DNA was stained with DAPI. Slides were imaged using a Zeiss Axio Imager microscope.
 
-## ChIP-seq
+### ChIP-seq
 
 3–5×108 cells were harvested by centrifugation and fixed with 0.8% formaldehyde (final concentration) for 20 min at room temperature. Cells were lysed and chromatin was sheared by sonication in a Bioruptor sonicator (Diagenode) for 30 cycles (each cycle: 30 s ON, 30 s OFF; high setting). Sonication was performed in the presence of 0.2% SDS, after which sonicated samples were centrifuged to pellet cell debris and SDS in the supernatants was diluted to 0.07%. An input (0.8% of total sample) was taken before incubating the rest of the supernatant overnight with Protein G Dynabeads and 10 µg anti-GFP antibody (A-11122; Thermo Fisher Scientific). The following day, the beads were washed first in the presence of 500 mM NaCl, and then in the presence of 250 mM LiCl. The DNA was eluted from the beads using a buffer containing 50 mM Tris-HCl pH 8, 10 mM EDTA, and 1% SDS. The eluted sample was treated with DNase-free RNase (Roche) and Proteinase K, and DNA was purified using a QIAquick PCR Purification Kit (Qiagen). ChIP-seq libraries were prepared as follows. DNA was blunt-ended using a Quick blunting kit (NEB), followed by treatment with Klenow Fragment 3'→5' exo- (NEB) and dATP. NEXTflex barcoded adapters (Bioo Scientific) were ligated to the DNA fragments which were then amplified for 13–18 PCR cycles. DNA fragment purification and size selection were performed using AMPure XP beads (Beckman Coulter). The libraries were sequenced by the Edinburgh Clinical Research Facility on Illumina NextSeq 550 or Illumina NextSeq 2000 instruments. Subsequent ChIP-seq data analysis was based on three replicates for CRD1 (BF), JBP2 (BF), and SET27 (PF), and two replicates for the other YFP-tagged proteins and for the untagged control in BF and PF cells. ChIP-seq data for CRD1 (BF), SET27 (BF), and the untagged control (BF) were taken from Staneva et al., 2021.
 
-## ChIP-seq data analysis
+### ChIP-seq data analysis
 
 ChIP-seq reads were first de-duplicated with pyFastqDuplicateRemover (Webb et al., 2018) and then aligned to the Tb427v9.2 genome (Müller et al., 2018) with Bowtie 2 (Langmead and Salzberg, 2012). Each ChIP sample was normalized to its input (as a ratio) and to library size (as counts per million). ChIP-seq data were visualized using IGV (Robinson et al., 2011). Metagene plots and heatmaps were generated as follows. First, CRD1 peaks were called using a combination of MACS2 (Feng et al., 2012) and manual filtering of false positives including peaks absent in some CRD1 replicates, peaks called in the untagged control cell line, and peaks with IP/input ratios <6.5. Then, 20 kb regions centered around each CRD1 summit were divided into 50 bp windows. Metagene plots were generated by adding the normalized reads in each 50 bp window and then representing them as a density around CRD1. The heatmaps show normalized reads around individual CRD1 peaks.
 
-## RNA extraction, RT-qPCR, and RNA-seq
+### RNA extraction, RT-qPCR, and RNA-seq
 
 1–5×107 parasites were harvested by centrifugation and RNA was extracted from cells using TRIzol (Thermo Fisher Scientific) according to the manufacturer’s protocol. RNA samples were treated with TURBO DNase (Thermo Fisher Scientific) followed by purification with Phenol/Chloroform/Isoamyl alcohol pH 4. RT-qPCR on extracted RNA was performed using Luna Universal One-Step RT-qPCR Kit (NEB). Primers used in the qPCR reactions are listed in Supplementary file 4. Libraries for RNA-seq were prepared and sequenced by the Edinburgh Clinical Research Facility using NEBNEXT Ultra II Directional RNA Library Prep kit (NEB) and Poly-A mRNA magnetic isolation module (NEB). The libraries were sequenced on Illumina NextSeq 550 or Illumina NextSeq 2000 instruments. Subsequent RNA-seq data analysis was based on two replicates for the wild-type, jbp2Δ/+, and jbp2Δ/Δ cell lines, and three replicates for the set27Δ/+ and set27Δ/Δ cell lines.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 RNA-seq reads were aligned to the Tb427v9.2 genome (Müller et al., 2018) with Bowtie 2 (Langmead and Salzberg, 2012). Aligned reads were separated into those originating from the plus or the minus DNA strand, normalized to library size (as counts per million) and visualized using IGV (Robinson et al., 2011). The differential expression analysis was performed as follows. First, raw non-normalized reads overlapping mRNAs annotated in the Tb427v9.2 genome were counted using featureCounts (Liao et al., 2014). Reads overlapping several mRNAs were assigned to the mRNA with the largest number of overlapping bases. Differential expression analysis was then performed using edgeR (Robinson et al., 2010) utilizing the TMM normalization method (Robinson and Oshlack, 2010). The filterByExpr (min.count=4; min.total.count=20) function was applied to filter out genes with insufficient counts for performing the statistical analysis.
 
-## Affinity selections and mass spectrometry
+### Affinity selections and mass spectrometry
 
 4×108 cells were harvested by centrifugation and lysed in a buffer containing 50 mM Tris pH 8, 150 mM KCl, and 0.2% NP-40. Lysates were sonicated in a Bioruptor (Diagenode) sonicator for three cycles (each cycle: 12 s ON, 12 s OFF; high setting). Sonicated samples were centrifuged and the supernatant (soluble fraction) was incubated for 1 hr at 4°C with beads crosslinked to anti-GFP antibody (11814460001; Roche) or to M2 anti-FLAG antibody (F1804; Sigma-Aldrich). The beads were then washed three times with lysis buffer. Proteins were eluted from the beads using RapiGest surfactant (Waters) at 55°C for 15 min. Proteins were digested by filter-aided sample preparation (Wiśniewski et al., 2009). Briefly, protein samples were reduced using DTT, then denatured with 8 M Urea in Vivakon spin column cartridges. Samples were treated with 0.05 M iodoacetamide and digested overnight with 0.5 μg MS Grade Pierce Trypsin Protease (Thermo Fisher Scientific). Digested samples were desalted using stage tips (Rappsilber et al., 2007) and resuspended in 0.1% trifluoroacetic acid for mass spectrometry analysis. LC-MS/MS was performed as described previously (Staneva et al., 2021). The results were processed using the Perseus software (Tyanova et al., 2016) and are based on three biological replicates per sample. Data for CRD1 (BF) and SET27 (BF) were taken from Staneva et al., 2021. The interaction network of the analyzed proteins in BF trypanosomes was created using Cytoscape (Shannon et al., 2003).
 
-## Materials availability statement
+### Materials availability statement
 
 Plasmids and cell lines made as part of this study are available upon request.
 
-## Data access
+### Data access
 
 The sequencing data generated in this study can be accessed on the NCBI Gene Expression Omnibus (GEO; https://www.ncbi.nlm.nih.gov/geo/) with accession number GSE208037. The proteomics data generated in this study can be accessed on the Proteomics Identification Database (PRIDE; https://www.ebi.ac.uk/pride/) with accession number PXD036454.
 
-## Use of previously published data sets
+### Use of previously published data sets
 
 We have used CRD1 (BF), SET27 (BF), and untagged (BF) ChIP-seq and proteomics data from Staneva et al., 2021. These can be accessed on NCBI GEO (https://www.ncbi.nlm.nih.gov/geo/) with accession number GSE150253 and on PRIDE (https://www.ebi.ac.uk/pride/) with accession number PXD026743.

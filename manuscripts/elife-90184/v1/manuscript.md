@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05d5vvz89 Department of Orthopedics, The First Affiliated Hospital of Jinan University Guangzhou China
+1. Department of Orthopedics, The First Affiliated Hospital of Jinan University Guangzhou China ([ROR:05d5vvz89](https://ror.org/05d5vvz89))
 
 † Corresponding author
 
@@ -33,21 +33,45 @@ In this study, we demonstrate that 14-3-3 interacts with spastin to regulate its
 
 ## Results
 
-## 14-3-3 protein interacts with spastin
+### 14-3-3 protein interacts with spastin
 
 Spastin, an MTs severing enzyme, can cut long MTs into short fragments thereby contributing to axonal elongation and branching. However, excess spastin levels by gene manipulation can not only destroy the MT cytoskeleton but are also toxic to neurons. Unraveling the underlying mechanisms of spastin regulation under physiological conditions may provide novel insights into the mode of axon regeneration following CNS damage. In our previous study (Ji et al., 2021), GST-spastin pulldown assays with proteins lysed from the spinal cord tissue were performed, and the obtained proteins were analyzed via mass spectrometry to determine the underlying molecular mechanisms of spastin. The peptides that interacted with GST were subtracted from those interacting with GST-spastin, and the peptides of proteins that interacts with spastin were obtained. We revealed 14-3-3 as putative spastin-interacting proteins (Figure 1A, Figure 1—figure supplement 1). Notably, 14-3-3 proteins consist of seven isoforms that are highly conserved and act by targeting phosphoserine and phosphothreonine motifs of substrate proteins. We have detected many different 14-3-3 peptides in the complex, including LAEQAER, NLLSVAYK, and AVTEQGAELSNEER (Figure 1—figure supplement 1A). Notably, these peptides were highly conserved among different isoforms (Figure 1—figure supplement 1B). Next, we employed immunoprecipitation to determine the biochemical interaction between 14-3-3 protein and spastin, and found that they endogenously interacted in the spinal cord tissue and the cortical neurons (Figure 1B and C). To elucidate the distribution of 14-3-3 and spastin within neurons, hippocampal neurons were double stained with spastin and 14-3-3 antibodies. The results revealed that 14-3-3 exhibited a characteristic distribution in axons, including aggregation at the growth cone and specific locations in the axon shaft, while spastin also showed accumulations at the sites where 14-3-3 proteins aggregated. Colocalization profiles of the dotted box are displayed in Figure 1E. 14-3-3 proteins consist of seven isoforms, and their protein spatial structure are highly conserved (Figure 1F). To further identify which isoform of 14-3-3 interacts with spastin, genes of six 14-3-3 isoforms were obtained from rat brain cDNA and inserted these fragments into the pEGX-5X-3 vector. Subsequently, GST 14-3-3 fusion proteins were expressed and purified in vitro (Figure 1G). Results from a GST pull-down assay revealed that all 14-3-3 isoforms could interact with spastin (Figure 1H). Subsequent co-immunoprecipitation assay results also confirmed that all 14-3-3 isoforms could form complexes with spastin (Figure 1I). Collectively, these results indicated that the 14-3-3 protein formed a protein complex with spastin both in vitro and in vivo.
 
-## 14-3-3 binds to phosphorylated Ser233 in spastin
+![Figure 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig1-v1.jpg)
+
+**Figure 1.:** (A) Proteins from the spinal cord tissue (approximately 1 cm around the T10 level) were pulldowned by purified GST and GST-Spastin proteins and the proteins obtained were subjected to mass spectrometry analysis. The 306 peptides were identified in the GST group and 699 peptides in the GST-Spastin group. The peptides that were common to both the GST and GST-Spastin groups were excluded, and 531 peptides were the peptides of proteins that interact with spastin. Three 14-3-3 protein peptides were shown. (B) Immunoprecipitation assay using spastin antibody was performed from spinal cord lysates and Pan 14-3-3 antibody was used for western blotting. (C) Immunoprecipitation assay using spastin antibody was performed from cortical neural lysates and Pan 14-3-3 antibody was used for western blot. (D) Hippocampal neurons were stained with 14-3-3 (green) and spastin (red) antibodies, the growth cone (D1) and axon shaft (D2) profile were shown. Scale bar: 50 μm, 5 μm. (E) Localization of spastin (red line) and 14-3-3 (green line) protein in the hippocampal neurons were analyzed and the intensity of the white dotted line across the neurite compartment were measured. (F) The highly conserved spatial conformation of different 14-3-3 protein isoforms were shown. (G) Purified GST and GST-14-3-3s fusion proteins were subjected to sodium dodecyl-sulfate polyacrylamide gel electrophoresis and coomassie blue staining was confirmed the successful purification of relative proteins. (H) GST fusion proteins were used to pull down the lysates of the spinal cord and spastin antibody was used for western blotting. (I) HEK 293T cells were transfected with Flag-tagged 14-3-3s and GFP-tagged spastin, the cell lysates were subjected to GFP-Trap assay, and Flag antibody was used to detect the presence of 14-3-3s.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The peak chart of binding peptides from LC-MS to spastin were shown. (B) Different 14-3-3 protein isoforms (rat species) were aligned and the LC-MS peptides were cropped to show the conservatism.
+
+### 14-3-3 binds to phosphorylated Ser233 in spastin
 
 Next, we characterized the interaction region of spastin/14-3-3 binding. To this end, we generated several GFP-tagged deletion constructs based on the modular domain of spastin (Figure 2A), then co-expressed them with Flag-tagged 14-3-3 into HEK293T cells. Co-immunoprecipitation assay, using GFP-Trap beads, revealed that spastin fragments containing amino acids 85–316 but not those with 85–214 coprecipitated with 14-3-3 (Figure 2B). Next, we performed immunoprecipitation assays using the region (215–336 amino acids) of spastin with 14-3-3 and found that 14-3-3 specifically binds to the region (215–336 amino acids) of spastin (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustration of the gene truncation strategy for the modular domain of spastin. (B) Truncation mutants of spastin together with Flag-tagged 14-3-3 were transfected into HEK 293T cells, and cell lysates were immunoprecipitated by GFP-Trap assay. Flag antibody were used for detecting the flag-tagged 14-3-3 fusion protein. (C) The microtubule-binding domain (MTBD) truncated GFP-tagged spastin were transfected together with Flag-tagged 14-3-3 into HEK 293T cells, and subjected to GFP trap assay. (D) GFP-tagged spastin was transfected into HEK293T cells by treatment with staurosporine (a broad spectrum protein kinase inhibitor) or not. GFP-Trap beads were used to enrich GFP-Spastin, and the phosphorylation levels of spastin were detected using a Pan phosphoserine/threonine antibody. (E) HEK 293T cells were transfected with GFP-spastin and then treated with or without staurosporine for 1 hr. Cell lysates were pull downed by GST 14-3-3 fusion protein and GFP antibodies were used for western blotting. (F) The binding sites between 14-3-3 and spastin were predicted using the scansite 2.0 software and whether these sites could be phosphorylated were confirmed by the phosphosite plus website. (G) Ser233 and Ser562 of spastin were mutated to alanine, these GFP fusion mutations were transfected together with Flag-tagged 14-3-3, and then cell lysates were subjected to GFP-trap assay. Flag antibody was used to detect the binding ability between spastin mutations and 14-3-3. (H) GFP-tagged wild-type spastin, spastin S233A (mimicking dephosphorylation), or spastin S233D (mimicking phosphorylation) were co-transfected with Flag-tagged 14-3-3 into HEK293T cells. The group transfected with GFP-Spastin S233D was additionally treated with staurosporine. Cells were lysed and immunoprecipitation were conducted using GFP-Trap, and western blot analysis was performed using Flag antibodies to investigate the impact of Ser233 phosphorylation in spastin on its interaction with 14-3-3. (I) Hippocampal neurons were grown on DIV2 and transfected with spastin Ser233 mutations (Spastin S233A, Spastin S233D), then fixed at DIV 3. Representative images of transfected neurons as indicated were shown. Quantitative analysis of the length of neurites (J) and the number of neurites (K) were shown. Data were represented as the mean value of three independent experiments (n=3). All error bars are SEM. Differences across multiple groups were determined using One-way analysis of variance (ANOVA), followed by Newman-Keuls post hoc tests for mean separations. *p<0.05. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** GFP and GFP-tagged spastin or its S233 phosphorylation mutants (S223A and S233D) were transfected into the COS7 cells. Cells were then fixed and stained with tubulin antibody to visualize the microtubule. Both GFP-tagged spastin S233A and spastin S233D could sever the microtubules efficiently. Scale bar: 20 μm.
 
 Previous studies have shown that phosphorylation of the 14-3-3 substrate regulates the binding of 14-3-3 proteins, although 14-3-3 can also bind to non-phosphorylating proteins. To investigate whether spastin’s phosphorylation state affects its binding with 14-3-3, we performed pulldown assays by using GST-14-3-3 and GFP-spastin from transfected HEK293T cell extracts in the presence of broad protein kinase staurosporine. To validate whether staurosporine could decrease the phosphorylation levels of spastin, we enriched spastin through immunoprecipitation and used Pan phosphoserine/threonine antibody to observe spastin’s phosphorylation. The results showed that staurosporine significantly reduces the phosphorylation levels of spastin (Figure 2D). Furthermore, our results revealed that the presence of staurosporine markedly weakened the binding between spastin and 14-3-3, indicating that phosphorylation of spastin is sufficient for the binding with 14-3-3 (Figure 2E).
 
 Next, we predicted five putative 14-3-3 binding sites in spastin, namely amino acids 213–218, 230–235, 243–249, 425–460, and 559–564, which match the motif of RSX(S/T)XP. Combination with phosphorylation of spastin reported from MS data (https://www.phosphosite.org/proteinAction.action?id=8325&showAllSites=true), we revealed two putative binding motifs (Ser233 and Ser562) in spastin as putative targets for 14-3-3 binding (Figure 2F). Widely employed mutation techniques have shown that mutating a protein’s phosphorylation site to alanine prevents phosphorylation, while mutating it to aspartic acid can mimic phosphorylation. Then, we mutated single Ser233 and Ser562 or both to alanine in the spastin tagged with GFP and co-expressed them with Flag-tagged 14-3-3 in HEK293T cells. Immunoprecipitation of the lysates, using an antibody against GFP, revealed that spastin S562A can bind with 14-3-3, while spastin S233A and spastin Pan A cannot (Figure 2G). To further illustrate the significance of phosphorylation of spastin at S233 in its interaction with 14-3-3, the mutation of Ser233 in spastin to aspartic acid was also transfected for immunoprecipitation, the results revealed that spastin S233D exhibited enhanced binding to 14-3-3 compared to both wild-type and spastin S233A, and this interaction was even insensitive to the staurosporine treatment (Figure 2H). This evidence further suggests that phosphorylation of spastin at the S233 site is a critical event in its interaction with 14-3-3. Also, these results were consistent with those in Figure 3B–C, where Ser233 was localized in the region of 215–316 amino acids in spastin, further indicating that the binding of 14-3-3/spastin requires phosphorylation of Ser233 in spastin. Meanwhile, upon transfecting GFP-tagged spastin S233A and S233D mutants into COS7 cells, we observed that both spastin S233A and S233D mutants effectively severed microtubules, which indicates that the phosphorylation of the spastin S233 residue does not affect spastin’s ability to sever microtubules (Figure 2—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) GFP-tagged spastin together with Flag or with Flag-tagged 14-3-3 was transfected into HEK 293T cells. Following the addition of protein synthesis inhibitor (cycloheximide, CHX), cell lysates were subjected to western blot to detect the GFP-tagged spastin protein levels. (C, D) Western blot analysis of HEK 293T cell lysates transfected with spastin mutations (S233A or S233D) after treating with cycloheximide at different indicated times. (E, F) GFP-tagged spastin with Flag or Flag-tagged 14-3-3 were co-transfected into HEK293T cells. Cell protein lysates from different time points were collected for western blot. (G) GFP-tagged spastin S233D was transfected into HEK293T cells, and western blot experiments were conducted to observe the protein expression levels of GFP-tagged spastin at different time points. (H) Quantitative analysis of spastin protein levels after addition of cycloheximide with or without 14-3-3 protein (n=3, *p<0.05). (I) Quantitative analysis of GFP-tagged spastin protein levels upon transfected with different spastin mutations (n=3, *p<0.05). (J) Quantitative analysis of spastin protein levels with or without 14-3-3 protein (n=3, *p<0.05). (K) Quantitative analysis of GFP-Spastin (S233D) protein levels at different time points (n=3, *p<0.05). (L) Cultured cortical neurons were treated with proteasome inhibitor MG132 or/and CHX for 36 hr, cell lysates were subjected to western blot analysis. (M) Quantification analysis of spastin protein levels (n=3, *p<0.05). (N) HEK 293T cells were transfected with GFP-tagged spastin or its S233 mutants and Flag-tagged ubiquitin, together with R18 or not, cells were harvested and subjected to immunoprecipitation using GFP antibody. Flag antibody was used to detect the ubiquitin band. (O) Quantitative analysis of the ubiquitination levels of GFP-Spastin (n=3, *p<0.05). (P) COS7 cells were transfected with indicated GFP-tagged spastin with or without Flag-tagged ubiquitin for 24 hr. Then, cells were fixed and stained with tubulin antibody to visualize microtubule arrangements. (Q) The normalized quantitative analysis of microtubule fluorescence intensity among indicated groups. Data were represented as the mean value of three independent experiments (n=3). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.001. Scale bar: 50 μm, 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GFP-tagged spastin were transfected with Flag-tagged ubiquitin into COS7 cells, and cells were stained with β-tubulin antibody. (B) Under the same conditions, mCherry-tagged spastin were transfected together with different Ser233 spastin mutations (spastin S233A or spastin S233D). Cells were also stained with β-tubulin to visualize the microtubule (MT) cytoskeleton. Scar bar, 50 μm and 10 μm.
+
 To examine whether Ser233 in spastin is involved in neurite outgrowth, wild-type (GFP-Spastin) or spastin Ser233 mutant (GFP-Spastin S233A or GFP-Spastin S233D) was moderately expressed in primary hippocampal neurons at 2nd DIV. It is important to note that overexpression of spastin can lead to the severing of the overall microtubule cytoskeleton in neurons. To achieve a moderate level of spastin expression, the transfection dosage and duration were meticulously controlled. Consistent with earlier results (Jiang et al., 2020; Riano et al., 2009), spastin promoted neurite outgrowth, as evidenced by both the length and branches of neurite. However, the promotion effect of spastin on neurite outgrowth is abolished when Ser233 was mutated to alanine, whereas the promotion effect of spastin on neurite outgrowth is significantly enhanced when Ser233 was mutated to aspartic acid. These findings suggest that the phosphorylation of Ser233 in spastin exerts a positive effect on neurite outgrowth during development.
 
-## 14-3-3 protects spastin from degradation via spastin S233 phosphorylation
+### 14-3-3 protects spastin from degradation via spastin S233 phosphorylation
 
 How does the interaction between 14-3-3 and Ser233 in spastin regulate neurite outgrowth during neural development, and why does phosphorylation of spastin in Ser233 further promotes the neurite outgrowth? Hence, we first investigated whether the phosphorylation of spastin at S233 affects its microtubule-severing capability. As illustrated in Figure 2—figure supplement 1, both spastin S233A and S233D could effectively severed microtubules. Furthermore, the S233 site is situated outside of spastin’s MTBD domain (amino acids 270–328) and AAA (amino acids 342–599) domains. Consequently, we speculated that phosphorylation of the spastin S233 site does not influence spastin’s microtubule-severing ability. Notably, we observed a significantly higher green fluorescence intensity of GFP-spastin (S233D) compared to spastin S233A. Combined with the fact that spastin acts in a dose-dependent manner and phosphorylation of spastin in Ser233 further promote the neurite outgrowth. We, therefore, hypothesized that phosphorylation of Ser233 in spastin may affect the protein levels of spastin. To further test whether 14-3-3 would affect spastin stability, we performed chase-time assays via GFP-spastin overexpression, followed by treatment with cycloheximide (CHX) to inhibit protein synthesis. Results showed that expression of GFP-spastin protein was markedly downregulated at 9 hr after CHX treatment (Figure 3A). Next, we co-expressed Flag-14-3-3 with GFP-spastin in the same treatment and found that 14-3-3 could significantly protect spastin from degradation after CHX treatment, even after 12 hr (Figure 3B). We also investigated whether spastin S233 phosphorylation by transfecting with GFP-tagged spastin S233A or S233D followed by CHX treatment. Due to the presence of endogenous 14-3-3, we did not overexpress 14-3-3 with S233 mutations that mimicked different phosphorylation states. The results demonstrated that phosphorylation of spastin at S233 (S233D) protected spastin from degradation (Figure 3C&D&I). Since 14-3-3 can inhibit spastin protein turnover, does 14-3-3 also increase the protein level of spastin? Therefore, we conducted chase-time assays by overexpressing GFP-spastin without the addition of CHX. The results showed that 14-3-3 could upregulate the protein levels of spastin (Figure 3E&F&J). We also observed that spastin S233D significantly increased the protein level compared to the wild-type spastin (Figure 3G&K). These findings suggest that 14-3-3 can inhibit protein turnover by binding to phosphorylated spastin and upregulate the protein levels of spastin.
 
@@ -55,9 +79,25 @@ A previous study demonstrated that spastin could be polyubiquitinated (Sardina e
 
 Previous studies have shown that FC-A and R18 interact with 14-3-3 protein by either stabilizing or inhibiting the binding of 14-3-3 with their substrates by directly docking to the groove in the 14-3-3 proteins with high efficiency (Kaplan et al., 2017; Petosa et al., 1998; Pisa et al., 2019a). The structure of FC-A and R18 binding with 14-3-3 are shown in Figure 4A. To test our hypothesis, we first explored whether FC-A or R18 could enhance or inhibit the interaction between 14-3-3 and spastin by co-immunoprecipitation with lysates of HEK293T cells, which had been transfected with GFP-spastin and Flag-14-3-3 plasmids whether together with FC-A application or R18 transfection. We found that FC-A could enhance the binding of 14-3-3/spastin, as evidenced by more intense bands compared to no FC-A application, whereas R18 could efficiently inhibit the binding of 14-3-3/spastin with almost no binding was detected (Figure 4B). To further determine whether 14-3-3 affected spastin’s ubiquitination pathway, we performed co-immunoprecipitation assays. GFP-tagged spastin, GFP-tagged spastin S233A, GFP-tagged spastin S233D, and Flag-tagged ubiquitin were transfected into HEK293T cells, together with 14-3-3 binding inhibitor R18 or not. Results indicated that GFP-spastin could be ubiquitinated, while the ubiquitination of non-phosphorylated spastin (S233A) was significantly enhanced, and the addition of the 14-3-3 inhibitor R18 elevated the ubiquitination levels of spastin (Figure 3N&O). These results indicated that 14-3-3 protects spastin from degradation by inhibiting the ubiquitination pathway.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig4-v1.jpg)
+
+**Figure 4.:** (A) The surface structure and secondary structure of the molecular docking model between 14-3-3 protein with FC-A (PDB:2O98) or R18 (PDB:1A38). (B) HEK 293T cells were transfected with GFP-tagged spastin and Flag-tagged 14-3-3, cell lysates were incubated with FC-A or R18 and then subjected to GFP-trap assay. Flag antibodies were used to detect the 14-3-3 binding. (C) Hippocampal neurons (DIV2) were transfected with GFP to visualize its morphology. Neurons were then incubated with glutamate (120 μM) to induce injury, the neurite breakages and swellings were found in C1 and C2. (D) The injured neurons were transfected with spastin and incubated with FC-A, R18, or spastazoline for 24 hr, then cells were fixed and images were taken by confocal microscopy. Neurons were traced using Image J Pro Plus and quantitative analysis of the length of primary neurites (E), secondary neurites, (F) and total neurites (G) were performed. Quantitative analysis of the number of primary neurites (H), secondary neurites (I) and total neurites (J) from three independent experiments (n=3). *p<0.05, **p<0.01, ***p<0.001. Scale bar: 50 μm. (K) Primary cortical neurons were grown and scratch assays were performed at DIV7. FC-A or spastazoline were applied and incubated for 36 hr. Then, cells were stained with βIII-tubulin to visualize the morphology of neurites. (L) Cortical neurons cultured in vitro were treated with FC-A for 36 hr, and western blot experiments were conducted to observe the protein levels of spastin. (M) Quantitative analysis of the normalized axon regeneration rate. n=14 scratches from three experiments. All error bars are SEM. *p<0.05, **p<0.01, ***p<0.001. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Hippocampal neurons at DIV2 were transfected with GFP plasmids together with or without interference to knockdown spastin expression, to visualize the morphology of neurons. Neurons were then incubated with FC-A for 24 hr, then cells were fixed and images were taken by confocal microscopy. Neurons were traced using Image J Pro Plus and quantitative analysis of the length of total neurites (B) and (C) the number of total neurites (n=3). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.01. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Hippocampal neurons at DIV2 were transfected with GFP or GFP-tagged spastin, together with R18 or not accordingly. Cells were fixed and images were taken by confocal microscopy. Neurons were traced using Image J Pro Plus and quantitative analysis of (B) the length of total neurites and (C) the number of total neurites (n=3). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.01. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Cortical neurons were cultured for 7 days and subjected to mechanical scratched with a pipet tip. Cells were incubated with FC-A or spastazoline for 24 hr. Cells were fixed and stained with βIII-Tubulin. (B) Quantification of the longest regenerative neurites (n≥13 axons). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.01. Scale bar: 100 μm.
+
 To assess the impact of 14-3-3 on the microtubule-severing ability of spastin, we co-transfected GFP-tagged spastin into COS7 cells with or without ubiquitin. COS7 cells are very flat, and hence provide more spatial resolution compared to neurons. Results showed that cells transfected with wild-type spastin significantly induced microtubule severing, as evidenced by almost no MT staining (Figure 3P), while ubiquitin inhibited severing, leading to increased microtubule staining. Based on these conditions, further transfection with 14-3-3 plasmid induced less microtubule staining, indicating that 14-3-3 upregulates microtubule severing and the process is mediated by spastin. Furthermore, we investigated whether this effect was dependent on spastin S233 phosphorylation by replacing GFP-spastin with GFP-spastin (S233A or S233D) during transfection. Results showed that 14-3-3 could upregulate the severing ability of spastin S233D, but not S233A (Figure 3Q, Figure 3—figure supplement 1), further indicating that 14-3-3 binds to the phosphorylation of S233 in spastin and promotes its microtubule severing ability. Collectively, these results suggest that 14-3-3 protein protects spastin from degradation via spastin S233 phosphorylation.
 
-## 14-3-3 and spastin regulates neurite outgrowth and regeneration after injury
+### 14-3-3 and spastin regulates neurite outgrowth and regeneration after injury
 
 Next, we investigated how the interaction between 14-3-3 and spastin regulates neurite outgrowth and regeneration by applying FC-A and R18 to either stabilize or inhibit 14-3-3 binding. Another drug, spastazoline, introduces an electropositive group to the N386 in the human spastin side chain, leading to specific and efficient inhibition of the ATPase activity of the AAA domain to abolish spastin’s microtubule-severing function (Pisa et al., 2019b; Verma et al., 2022). Subsequently, we used FC-A or R18 together with spastazoline to examine the effects of 14-3-3/spastin protein complex on neurite outgrowth and regeneration.
 
@@ -65,9 +105,29 @@ Since 14-3-3 proteins play important roles in the inhibition of ROS-induced cell
 
 Next, we investigated the effect of enhanced 14-3-3/spastin binding on neurite regeneration. Briefly, cortical neurons were grown at the 7th DIV and then subjected to scratch assays by drawing a line over the coverslips using a pipet tip. Neurons were then treated with either FC-A or spastazoline for 36 hr. Results showed that FC-A markedly improved neurite regeneration consistent with previous study (Kaplan et al., 2017), while spastazoline application almost abolished the enhanced effects of regeneration (Figure 4K–L). To further quantify the extend of axon regeneration, we treated cortical neurons with either FC-A or spastazoline for 36 hr, then quantified the longest regenerative axons. Results revealed similar effects (Figure 4—figure supplement 3). To further elucidate whether FC-A affects neuronal process by impacting on spastin, cortical neurons cultured in vitro were administrated with FC-A, and the protein expression levels of spastin were detected. The results indicated that FC-A could enhance the expression levels of spastin within cortical neurons (Figure 4M). Taken together, these results indicate that spastin-dependent function is a prerequisite for the enhancement of neurite regeneration mediated by FC-A.
 
-## FC-A-mediated nerve regeneration after SCI requires spastin activation
+### FC-A-mediated nerve regeneration after SCI requires spastin activation
 
 Given that 14-3-3 plays a vital role in neurite outgrowth and axonal regeneration (Zerr, 2022), we then hypothesized that 14-3-3 could be involved in the recovery of spinal cord injury. To test this hypothesis, we established a spinal contusion injury model and then employed an immunostaining assay to quantify expression levels of 14-3-3 protein following spinal cord injury. Given the scarcity of neural compartment at the injury center, we select tissue slices as close as possible to the lesion core to illustrate the relationship between 14-3-3 and the injured neurons. The results indicated that 14-3-3 protein was upregulated and the upregulated compartments were principally colocalized in the neuronal compartment (βIII-tubulin labeled) (Figure 5A). Western blot experiments also reported that 14-3-3 was upregulated at 3th and 7th days post-injury (DPI), but downregulated at 14 DPI. The 14-3-3 protein level then reached a peak level at 30 DPI (Figure 5B&E). Moreover, previous studies have demonstrated that neurons were surrounded by an inhibitory microenvironment 2 weeks after spinal cord injury, our results also showed a slight decrease at 14 DPI, indicating that 14-3-3 acts as an intrinsic switch for neural repair. Moreover, 14-3-3 was reported to be upregulated and acted as a biomarker for diagnosis of Creutzfeldt-Jakob disease (van den Brand et al., 2012). Our results revealed that levels of 14-3-3 protein remained high even at 30 DPI, indicating that 14-3-3 may play an important role in the process of recovery after spinal cord injury.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig5-v1.jpg)
+
+**Figure 5.:** (A) After spinal cord contusion, the lesion site of spinal tissue in the sham group and the SCI group were stained with Pan 14-3-3 (red) and βIII tubulin (green). The arrows mean the elevated 14-3-3 protein in the neuronal compartment. Scale bar: 40 μm, 5 μm. (B, C) After spinal cord contusion, the spinal cord tissues of the lesion site (near 1 cm) at indicated times (1, 3, 7 14, and 30 DPI) were ground and lysed, then subjected to western blot with 14-3-3 and spastin antibody. (D) After spinal cord injury, intraperitoneal injections of Fusicoccin-A (FC-A) were administered. Tissue from the lesion site was collected at indicated time points and subjected to western blot to observe the spastin protein levels. (E, F) Quantitative analysis of the 14-3-3 protein expression and spastin protein expression (n=3 per group). (G) Quantitative analysis of the spastin protein expression administrated with FC-A after spinal cord injury (n=3 per group). (H) Analysis of the expression trends of 14-3-3 and spastin proteins following spinal cord injury. (I) Trend analysis of spastin protein expression levels in lesion site of mice with spinal cord injury, comparing the injury control group with the FC-A treatment group. (J) 14-3-3 agonist FC-A and spastin inhibitor spastazoline were admisnistrated after spinal cord contusion. At 45 DPI (Days post-injury), the tissues were fixed and embedded, then cut horizontally and longitudinally. Hematoxylin and eosin (H&E) and LFB (Luxol fast blue stain) were stained. The spinal cord demyelination was shown inside the area of the dotted line. Scale bar: 2000 μm. (K) Quantitative analysis of demyelinated area in the lesion site among different groups (n=3, *p<0.05). (L) The slices were then subjected to immunofluorescence staining, and GFAP (green) was stained to label astrocytes, neurofilament (NF) (red) was stained to label neurons and 5-HT (magenta) was stained to label monoaminergic axons. The lesion site in different groups was boxed and enlarged in (L1, L2, L3, L4). Scale bar: 400 μm, 100 μm. (M) The spinal cord slices were stained with acetylated tubulin (Stable MTs which lack dynamics) and β-tubulin (total tubulin). Scale bar: 50 μm. (N) The normalized intensity of NF was quantified (n=5 animals per group). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001. (O) The normalized ratio of acetylation tubulin to total tubulin was calculated by the intensity value of acetylated tubulin divided by total tubulin (n=5 per group). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Hematoxylin and eosin (H&E) and Luxol fast blue stain (LFB) were used for staining. Demyelination of the spinal cord can be observed within the region enclosed by the dotted line. This image is an enlargement of Figure 5J. Scale bar: 2000 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Sections were stained with NF (neurofilament) and 5-HT antibodies. This image corresponds to Figure 5L and is an enlargement of it. The white box outlines the regions in Figure 5 L1–L4 from the original image. Scale bar: 400 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) The sagittal overview of the lesion site of spinal cord injury. Acetylated tubulin (green) and β-tubulin (red) were stained to label stable microtubules (MTs) and total MTs. Scale bar: 200 μm, 50 μm. (B) The intensity and proportion of acetylated tubulin and β-tubulin around the lesion site in different groups (sham, injury, FC-A, spastazoline, and FC-A + spastazoline). Scale bar: 50 μm. (C) Higher resolution image in panel B.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Scale bar: 50 μm.
 
 So, how does the expression of spastin change following spinal cord injury? As previously mentioned, the drug FC-A is known to enhance the binding affinity between 14-3-3 and spastin, thereby increasing spastin’s protein stability. Therefore, can the administration of FC-A after spinal cord injury upregulate the protein levels of spastin? To address these questions, tissues were collected and western blot experiments were conducted to assess the expression levels of spastin after spinal cord injury. Our findings revealed that the expression of spastin exhibited a sharp decrease immediately after spinal cord injury (1 day), followed by a gradual increase during the acute phase (1–7 days), eventually returning to levels similar to the sham group at 30 days (Figure 5C). Notably, the expression trend of spastin is similar to that of 14-3-3 protein after spinal cord injury (Figure 5H), suggesting potential involvement of 14-3-3 and spastin in the same pathway. Moreover, we observed that the application of FC-A after spinal cord injury significantly augmented spastin’s expression (Figure 5D&G&I). These results indicated that the administration of FC-A may have the potential to enhance spastin’s protein stability after spinal cord injury.
 
@@ -75,17 +135,37 @@ Enhancing the FC-A application could promote neurite outgrowth and regeneration 
 
 In order to further confirm whether the intervention of 14-3-3 and spastin mediates nerve regeneration after spinal cord injury by targeting MTs at the site of spinal cord injury, acetylated tubulin, and β-tubulin were stained to label stale MTs (Lacking of dynamics) and total MTs. As shown in Figure 5—figure supplements 3 and 4, the intensity of acetylated microtubules was remarkably decreased in the lesion site. Moreover, there was a clear boundary of acetylated MTs between the lesion site and the uninjured area. This may be ascribed to the activation of cell proliferation in the injured area after spinal cord injury which needs dynamic microtubules. Interestingly, we found the boundary of acetylated microtubules near the damaged area was unclear after the application of FC-A, and the intensity of acetylated microtubules significantly decreased compared with the injury group, indicating that microtubules tended to be in a dynamic state. However, after the application of spastazoline, the proportion of acetylated microtubules in the injury site increased significantly, and the boundary of acetylated microtubules in the injured area was unclear, indicating that the application of spastazoline led to a significant increase in the stability of the microtubules. In addition, the application of spastazoline can significantly reverse the enhancement of microtubule dynamics mediated by FC-A (Figure 5M&O). These experiments indicated that the administration of FC-A mediates nerve regeneration after spinal cord injury by affecting the MTs dynamics. In addition, these evidences also indicated that the FC-A and spastazoline can pass through the blood-brain barrier to reach the site of spinal cord injury.
 
-## FC-A-mediated locomotor function improvement after SCI requires spastin participation
+### FC-A-mediated locomotor function improvement after SCI requires spastin participation
 
 Since FC-A promotes nerve regeneration after spinal cord injury, we then investigated whether it could mediate the recovery of locomotor function after SCI. Therefore, we performed several experiments to verify whether the application of FC-A could affect the locomotor function recovery after SCI (Figure 6A). Catwalk analysis showed that the maximum contact area of the mice in the FC-A group was significantly larger than that in the injury group, and this phenomenon was reversed after the application of spastazoline (Figure 6B&E). The regularity index (Calculated as the number of normal strides multiplied by four and then divided by the total number of strides; this value is ~100% in normal animals) also had a similar phenomenon. The gait of the hindlimbs of mice in the FC-A group was more coordinated than that of the mice in the injury group (Figure 6C), and the regularity index was statistically enhanced compared with the injury group (Figure 6G). This phenomenon was also significantly suppressed after the application of spastazoline. We further evaluated the motor function after spinal cord injury by BMS (Basso mouse scale) score (Figure 6D). BMS is a 9-point scale that provides a gross indication of locomotor ability and determines the phases of locomotor recovery. We found that the BMS scores of the mice in the FC-A group was significantly improved compared with the mice in the injury group, and peaked after 35 days, while spastazoline reversed the improvement of locomotor function. At the same time, we used the footprint test to analyze the motor function of the mice (Figure 6F). The experimental data showed that the paw trailing phenomenon of the hindlimbs in the FC-A group was significantly improved compared with the injury group, and the stride length was significantly increased. This improvement was also significantly suppressed by the application of spastazoline (Figure 6H). Finally, we attempted to verify whether the spinal neural circuits in mice were remodeled by examining the motor-evoked potentials (Stimulation at the sensorimotor cortex in the M1 region and receive signals at the site of gastrocnemius). Our experimental results showed that the MEP current amplitude decreased significantly after spinal cord injury, while the current amplitude in the FC-A group significantly increased compared with the injury group. And the improvement effect was significantly weakened after the application of spastazoline, indicating that FC-A mediates the remodeling of neural circuits and normal spastin function is the prerequisite for the repair after spinal cord injury.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic illustration of relative treatments and examinations at different indicated times. (B) The max contact areas of the right hindlimb were recorded and analyzed by the Catwalk software. (C) The footfall patterns were visualized by the Catwalk software. The blue dot represents the start of a pattern. The red dot represents the gait was not part of a pattern. The yellow dot represents that the gait was not taken into account. The green one means the gait belongs to a normal part of a pattern. (D) Basso mouse scale (BMS) scores at different indicated days after injury and data were represented as mean ± SEM. (n=5 group, data were analyzed by one-way ANOVA, and Bonferroni’s multiple-comparison test were used for post hoc comparisons). (E) The quantitative analysis of the hindlimb (right) max contact area. (n=5 animals per group). (F) Footprint analysis of the mice at 6 weeks after spinal cord contusion. The forelimbs were marked with blue and the hindlimbs were marked with red. Scale bar: 2.5 cm. (G) The normalized regularity index of the footfall pattern calculated by Catwalk software (~100% in the sham group, n=5 animals per group). (H) Quantitative analysis of the stride length in the footprint assay. The mean stride length of each walk was counted, n=5 animals per group. (I) Motor evoked potentials (MEPs) were recorded at 7 weeks after spinal cord contusion. The craniotomy was performed and the M1 region of the sensorimotor cortex were stimulated by a single square-wave stimulus of 0.5 mA, 0.5 ms duration, 2 ms time delay, and 1 Hz. The MEP were recorded with the signals detected by the electrode on the gastrocnemius muscle. The representative histograms of the amplitude-times are shown. The arrows indicated the stimulus. (J) The current amplitudes of the MEP were quantified, n=5 animals per group. Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schematic illustration of relative treatments and examinations at different indicated times. (B) The max contact areas of the right hindlimb were recorded and analyzed by the Catwalk software. (C) The footfall patterns were visualized by the Catwalk software. The blue dot represents the start of a pattern. The red dot represents the gait was not part of a pattern. The yellow dot represents that the gait was not taken into account. The green one means the gait belongs to a normal part of a pattern. (D) Basso mouse scale (BMS) scores at different indicated days after injury and data were represented as mean ± SEM. (n=5 group, data were analyzed by one-way ANOVA, and Bonferroni’s multiple-comparison test were used for post hoc comparisons). (E) The quantitative analysis of the hindlimb (right) max contact area. (n=5 animals per group). (F) Footprint analysis of the mice at 6 weeks after spinal cord contusion. The forelimbs were marked with blue and the hindlimbs were marked with red. Scale bar: 2.5 cm. (G) The normalized regularity index of the footfall pattern calculated by Catwalk software (~100% in the sham group, n=5 animals per group). (H) Quantitative analysis of the stride length in the footprint assay. The mean stride length of each walk was counted, n=5 animals per group. (I) Motor evoked potentials (MEPs) were recorded at 7 weeks after spinal cord contusion. The craniotomy was performed and the M1 region of the sensorimotor cortex were stimulated by a single square-wave stimulus of 0.5 mA, 0.5 ms duration, 2 ms time delay, and 1 Hz. The MEP were recorded with the signals detected by the electrode on the gastrocnemius muscle. The representative histograms of the amplitude-times are shown. The arrows indicated the stimulus. (J) The current amplitudes of the MEP were quantified, n=5 animals per group. Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.
 
-## FC-A mediates the repair of SCI in a T10 lateral hemisection model requires spastin participation
+### FC-A mediates the repair of SCI in a T10 lateral hemisection model requires spastin participation
 
 We have clarified the important role of 14-3-3 and spastin in the repair of spinal cord injury in the contusion model. In order to further observe the axon regeneration after spinal cord injury, we performed a spinal right lateral hemisection at the T10 level to eliminate the right side of axonal projections. Neurotransmission of serotonin (5-HT) in the spinal cord is required for the modulation of sensory, motor, and autonomic functions and can influence the response to spinal cord injury (Perrin and Noristani, 2019; Yuan et al., 2017). In addition, studies have reported that the 5-HT fibers have strong regenerative capacity and are involved in the regulation of neuronal activity (Yuan et al., 2017). Thus, we explored the 5-HT immunoactivity in spinal cord tissues isolated on 17 DPI. In the control SCI group, 5-HT-positive axons were significantly upregulated in the injury site, and to some extent in the rostral site. Interestingly, we found much stronger 5-HT staining in the lesion site of FC-A group and rostral site of injury compared with the SCI control group, indicating that the FC-A promoted the regeneration of 5-HT positive axons in vivo. However, few 5-HT signals were found in the lesion site, and also in the rostral site in the spastazoline group. In addition, the FC-A promoting effects of 5-HT axonal regeneration were significantly weakened by the combined application of spastazoline (Figure 7A&C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig7-v1.jpg)
+
+**Figure 7.:** (A) The spinal cords of adult mice were subjected to lateral hemisection and administrated by intraperitoneal injection with FC-A or spastazoline. Sagittal view of 5-HT-immunoreactive raphespinal fibers in the spinal cord on 17 DPI. Scale bar: 100 μm. (B) Sagittal view of neurofilaments which was myelin basic protein (MBP) positive in the white manner of the lesion site of the spinal cord. Scale bar: 50 μm. (C) The normalized quantification of 5-HT immunoreactive fluorescence intensity (0.5 mm caudal to the lesion site, n=5 animals per group). (D) The normalized quantification of NF (Neurofilament) immunoreactive fluorescence intensity in the lesion site (n=5 animals per group). (E) The locomotor function of mice after SCI were scored at the indicated time points according to the standard of the Basso Mouse Scale (BMS). (F) Foot fault test was performed and the total steps and steps dropped out of the right hindlimb were recorded. The rate of the foot errors was analyzed, n=5 animals per group. *p<0.05, **p<0.01, ***p<0.001. (G, H) The footprint assay was performed and stride length (G) and stride width (H) quantitatively analyzed. Data were presented as mean ± SEM, n=5 animals per group, the mean value of each animal’s walk were calculated.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Sagittal view of Nestin (green) and NeuN (red) immunofluorescence in the white manner of the lesion site after SCI. Scale bar: 50 μm. (B) Quantification of the ratio of Nestin to NeuN immunoreactive fluorescence intensity (0.5 mm caudal to the lesion site). Data were presented as mean ± SEM, n=5 animals per group.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Sagittal view of BrdU (green) and Nestin (red) immunofluorescence in the white manner of the lesion site after SCI. Scale bar: 500 μm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Example images depicting footprint analysis on 16 DPI (days post-injury). The measurement of the stride length and width were shown in red line. Scale bar: 2.5 cm.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/90184/elife-90184-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Sagittal view of acetylated tubulin (green) and β-tubulin (red) immunofluorescence in the white manner of the lesion site after SCI. Scale bar: 50 μm. (B) Quantification of the ratio of acetylated tubulin to β-tubulin immunoreactive fluorescence intensity (0.5 mm caudal to the lesion site). Data were presented as mean ± SEM, n=5 animals per group.
 
 We further investigated the immunoactivity of neurofilament and myelin basic protein (MBP) in the white matter of the lesion site to evaluate axonal regeneration and the extend of remyelination. Neurofilaments are cytoskeletal proteins that are expressed abundantly in the cytoplasm of axonal fibers in the CNS (Liu et al., 2019). The MBP forms and maintains the structure of the compact myelin sheath which then regulates axonal function (Ceto et al., 2020). Our results revealed that FC-A could enhance the regeneration of neurofilaments which were largely colocalized with MBP, whereas spastazoline alleviated this effect (Figure 7B&D). Collectively, these results suggest that FC-A promotes axonal regeneration which is dependent on activation of spastin microtubule severing.
 
@@ -109,64 +189,246 @@ In summary, we proposed the 14-3-3 and spastin binding model for manipulating mi
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Sprague Dawley rats (P0, male or female) were used for primary hippocampal and cortical neuron culture, whereas adult female mice (C57BL/6 J, 6–8 weeks) were used to establish the lateral hemi-transection model and the contusion model of spinal cord injury. Animals were housed in a room, maintained at 22 °C under a 12:12 hr light/dark photoperiod, and given food and water ad libitum. All animal treatments were carried out in strict adherence to the guidelines by the National Institutes of Health’s Guide for the Care and Use of Laboratory Animals. The study protocol was approved by the Jinan University Institutional Animal Care and Use Committee (Permit Number:20220705–03). The number of animals utilized and suffering were both reduced to the absolute minimum.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Dissociated hippocampi were digested with 2 mg/mL papain and plated at a density of 1×104 cells/cm2 onto poly-D-lysine-coated coverslips for primary hippocampal neuron culture. Cultures were kept alive in an incubator humidified with 5% CO2 at 37 °C using Neurobasal-A media supplemented with 0.5 mM glutamine and 2% B27. Every three days, half of the cultural media was replaced. Various plasmids were transfected with calcium phosphate at 2nd day in vitro (DIV). COS7 cells (NCACC, Cat#GNO28) and human embryonic kidney (HEK) 293 cells (NCACC, Cat#SCSP-5209) were obtained from the National Collection of Authenticated Cell Cultures (NCACC) in China. The identity has been authenticated (STR profiling) and the tests for mycoplasma contamination were negative provided by NCACC. Cell lines were grown in a 5% CO2 incubator at 37 °C using Dulbecco’s modified Eagle media with 10% fetal bovine serum and 1% penicillin/streptomycin as supplemental ingredients. The constructs were transfected into the COS7 cells and HEK293 cells using Lipofectamine 2000. Cells were cultured for 24–36 hr after transfection before being harvested.
 
-## Plasmids and constructs
+### Plasmids and constructs
 
 Several 14-3-3 isoforms were amplified in cDNA from Sprague Dawley rats via Polymerase Chain Reaction (PCR) as previously described Ji et al., 2020. The amplicons were inserted into the pCMV-Tag-2b or pGEX-5X-3 vector (Addgene). Spastin mutants were generated using the Quickchange Kit (Agilent, Santa Clara, CA). R18 was synthetized by IGE Biotechnology LTD (Guangzhou, China) and inserted into pCDNA 3.1 vector. All constructs were verified by sequencing by IGE Biotechnology LTD (Guangzhou, China). The following PCR primers were used:
 
-## Expression of recombinant proteins and GST-Pulldown assay
+<table>
+  <thead>
+    <tr>
+      <th>Vector</th>
+      <th>Primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhab-F</td>
+      <td>CCCAGGAATTCCCGGGTCGACATGACCATGGACAAAAGTGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhab-R</td>
+      <td>TCAGTCAGTCACGATGCGGCCGCTTAGTTCTCTCCCTCTCCAG</td>
+    </tr>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhae-F</td>
+      <td>CCCAGGAATTCCCGGGTCGACATGGATGATCGGGAGGATCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhae-R</td>
+      <td>TCAGTCAGTCACGATGCGGCCGCTCACTGATTCTCATCTTCCA</td>
+    </tr>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhah-F</td>
+      <td>CCCAGGAATTCCCGGGTCGACATGGGGGACCGAGAGCAGCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhah-R</td>
+      <td>TCAGTCAGTCACGATGCGGCCGCTCAGTTGCCTTCTCCGGCTT</td>
+    </tr>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhag-F</td>
+      <td>CCCAGGAATTCCCGGGTCGACATGGTGGACCGCGAGCAACT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhag-R</td>
+      <td>TCAGTCAGTCACGATGCGGCCGCTTAGTTGTTGCCTTCGCCGC</td>
+    </tr>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhaz-F</td>
+      <td>CCCAGGAATTCCCGGGTCGACATGGATAAAAATGAGCTGGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhaz-R</td>
+      <td>TCAGTCAGTCACGATGCGGCCGCTTAATTTTCCCCTCCTTCTC</td>
+    </tr>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>Ywhaq-F</td>
+      <td>GGAATTCCCGGGTCGACATGGAGAAGACCGAGCTGATCCAGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhaq-R</td>
+      <td>TCAGTCACGATGCGGCCGCTTAGTTCTCAGCCCCCTCAGCTGC</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhab-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGACCATGGACAAAAGTGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhab-R</td>
+      <td>GCCCTTGGACACCATGGATCCTTAGTTCTCTCCCTCTCCAG</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhae-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGGATGATCGGGAGGATCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhae-R</td>
+      <td>GCCCTTGGACACCATGGATCCTCACTGATTCTCATCTTCCA</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhah-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGGGGGACCGAGAGCAGCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhah-R</td>
+      <td>GCCCTTGGACACCATGGATCCTCAGTTGCCTTCTCCGGCTT</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhag-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGGTGGACCGCGAGCAACT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhag-R</td>
+      <td>GCCCTTGGACACCATGGATCCTTAGTTGTTGCCTTCGCCGC</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhaz-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGGATAAAAATGAGCTGGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhaz-R</td>
+      <td>GCCCTTGGACACCATGGATCCTTAATTTTCCCCTCCTTCTC</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ywhaq-F</td>
+      <td>CTTGGTACCGAGCTCGGATCCGCCACCATGGAGAAGACCGAGCTGATCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ywhaq-R</td>
+      <td>GCCCTTGGACACCATGGATCCTTAGTTCTCAGCCCCCTCAGCTGC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S233A)-F</td>
+      <td>CACCACAGGGCGCCTGCCTGCAGTGGTTTATCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S233A)-R</td>
+      <td>GGATAAACCACTGCAGGCAGGCGCCCTGTGGTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S562A)-F</td>
+      <td>AAAAGATCAAACGCAGTGTGGCCCCTCAGACTTTAGAAGCATA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S562A)-R</td>
+      <td>TATGCTTCTAAAGTCTGAGGGGCCACACTGCGTTTGATCTTTT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S233D-F)</td>
+      <td>CACCACAGGGCGCCTGATTGCAGTGGTTTATCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast (S233D-R)</td>
+      <td>GGATAAACCACTGCAATCAGGCGCCCTGTGGTG</td>
+    </tr>
+    <tr>
+      <td>pEGFP-C1</td>
+      <td>Spast-F</td>
+      <td>TACAAGTCCGGACTCAGATCTGCCACCATGAGTTCTCCGGCCGGACG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spast-R</td>
+      <td>GTACCGTCGACTGCAGAATTCTCATTAAACAGTGGTGTCTCCAA</td>
+    </tr>
+    <tr>
+      <td>pCMV-Tag-2b</td>
+      <td>Ubb-F</td>
+      <td>CGATAAGGCCCGGGCGGATCCATGCAAATCTTCGTGAAGAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ubb-R</td>
+      <td>GATAAGCTTGATATCGAATTCTTAATAGCCACCCCTCAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression of recombinant proteins and GST-Pulldown assay
 
 Purification of GST fusion of 14-3-3 proteins and pulldown experiments were performed as previously described Ji et al., 2020; Patel et al., 2021. Briefly, GST-14-3-3s constructs (Invitrogen) were transformed into Escherichia coli strain BL21 (DE3) strains. Isopropy-D-thiogalactoside was incubated for 6 hr at 30 °C to stimulate the synthesis of fusion proteins. The bacteria were first centrifuged, and then resuspended in a mixture of protease inhibitors (Merck, Whitehouse Station, NJ). The cell suspension was treated with 0.1% lysozyme, followed by 0.5% deoxycholic acid on ice for 20 min. The contents were, sonicated (10,000 rpm for 30 min), centrifuged and the supernatant collected, then Glutathione-Sepharose beads (supplemented with 1% Triton X-100) used to purify GST fusion proteins in the supernatant. Next, 5 μg of GST-fusion protein was incubated with 400 μg of protein from the spinal cord (1 cm around T10) of SD rats (P0) under gentle rotation, then centrifugated to collect the GST-binding proteins. Western blot assay was then performed to quantify GST-binding proteins.
 
-## Immunoprecipitation and western blotting
+### Immunoprecipitation and western blotting
 
 Immunoprecipitation (IP) assays were carried out as previously described Ji et al., 2021. Briefly, total cell extracts or tissues (1 cm around T10) were prepared by soaking them in 400 μL of lysis buffer for 30 min at 4 °C. The lysates were centrifuged at 10,000 rpm for 10 min at 4 °C after a brief sonication. The extract was immunoprecipitated with 2 μg antibodies against spastin, GFP, or Flag, and then incubated for 4 hr at 4 °C with 60 μL of protein G plus protein A/G agarose using continuous gentle inversion. Three times, the immune complexes were pelleted and washed. Western blot assay was performed to analyze the precipitated complexes. Western blot analysis was carried out as previously described Ji et al., 2020. SDS-PAGE was used to separate the lysates, which were then electrophoretically transferred to a polyvinylidene difluoride membrane. Membranes were probed with primary antibodies at 4 °C overnight after being blocked in Tris-buffered saline with 5% milk and 0.05% Tween. The membranes were cleaned, incubated with goat anti-mouse or anti-rabbit secondary antibodies that were horseradish peroxidase-conjugated, and then visualized with ECL-prime. Anti-spastin (1:1000, ABN368 from Millipore), anti-Pan 14-3-3 (1:1000, #8312 from Cell Signaling Technology), anti-Pan phosphoserine/threonine (Cat#612548) form BD life science, anti-GFP (1:5000, Ab290 from Abcam), anti-GFP (1:10000, 50430–2-AP from Proteintech), anti-Flag (1:1000, F3165 from Sigma-Aldrich), anti-GAPDH (1:5000, AC002 from ABclonal), and HRP conjugated goat-derived anti-rabbit or anti-mouse were the antibodies used (1:5000, Abclonal).
 
-## Scratch assay
+### Scratch assay
 
 Rat cortical neurons were seeded in 96-well plates (30,000 cells per well), and then a plastic P10 pipet tip was used to scratch across the center of the well. Half the media was aspirated out and replaced with fresh ones every three days until the 7th DIV. The wells were immediately filled with chemicals after scratching. The cultures were fixed and stained with anti-βIII tubulin (1:1000, ab18207) the following day. Images of axons stained with βIII tubulin were collected, imported in ImageJ, and the proportion of neurites stained by βIII tubulin in the central 70% of the scratch was calculated.
 
-## Lateral hemi-sectioning and contusion model of SCI
+### Lateral hemi-sectioning and contusion model of SCI
 
 The procedure for T10 lateral hemi-sectioning and contusion model was as previously described (Liu et al., 2017; Brown and Martinez, 2018). Briefly, mice were first anesthetized with 1.25% 2,2,2-tribromo ethanol (0.2 mL/100 g), via intraperitoneal injection for 3–4 min, then a laminectomy performed near T10 after making a midline incision over the thoracic vertebrae. The T10 level of the spinal cord was recognized by the anatomical landmark which is parallel to the twelfth rib of the mice. For the hemi-sectioning injury model, the right unilateral hemi-section was carefully performed using a scalpel and microscissors, with care taken to avoid damaging the spinal cord dura. For the contusion model, the nitrogen tank controlling the impactor tip was set at 18 psi or 124 kPa. A U-shaped stabilizer with the rat was loaded onto the stage of the Louisville Injury System Apparatus (LISA) and the dura of the spinal cord was adjusted directly under the impactor while monitored by the laser beam. Crash depth was adjusted to 1.0 mm for injury, and with time set to 0.5 s. Finally, the muscles were stitched and the skin was stapled back together. In this study, exclusion criteria were applied to mice exhibiting inaccuracies in the hemisection model concerning the incision’s accurate placement with respect to the posterior median vein.
 
-## Pharmacological interference with FC-A or spastin
+### Pharmacological interference with FC-A or spastin
 
 After the establishment of the spinal cord injury model, the mice within the injury group underwent random allocation into cages following a double-blind methodology. Another experimenter, blinded to the groupings, then administered the indicated drug treatment randomly to the mice within the injury group. An equal volume of normal saline was intraperitoneally injected into SCI control mice. Mice were intraperitoneally injected with FC-A (Enzo life sciences, ALX-350–115) at a dose of 15 mg/kg starting immediately after SCI and every other day until the end of the experiment. Mice were intraperitoneally injected with spastazoline (MedChemExpress, HY-111548) at a dose of 20 mg/kg, immediately after SCI then every other day until the end of experiments.
 
-## Basso mouse scale
+### Basso mouse scale
 
 Two observers who were blind to the experimental groups conducted the Basso Mouse Scale (BMS) after the T10 SCI in accordance with a previously described procedure (Sun et al., 2018). Mice were briefly left in an open field for 4 min to observe all visually perceptible signs of locomotor recovery. The scores were based on hind limb movements performed in an open field and included hind limb joint movement, weight support, plantar stepping, coordination, paw position, and trunk and tail control (0, full hind limb paralysis; 9, normal locomotion).
 
-## Catwalk analysis
+### Catwalk analysis
 
 According to previously described methods (Zhou et al., 2020), the CatWalk XT 9.1 automated quantitative gait analysis system (Noldus Company, Netherlands) was also used to evaluate the locomotor recovery of mice after injury. Briefly, one week before surgery, mice were trained to walk in a single direction for the entire length of a darkened Catwalk chamber in a quiet room five times daily. Seven weeks after surgery, the mice were assessed five times using the same system. Gait regularity index and hindlimb contact area were recorded. The regularity index was calculated as the number of normal strides multiplied by four and then divided by the total number of strides; this value is ~100% in normal animals.
 
-## Footprint analysis
+### Footprint analysis
 
 Footprint analysis was conducted before the mice were executed, using a previously described protocol (Kamens and Crabbe, 2007). Briefly, each animal’s hindlimbs were first coated with nontoxic paint. The mice were then moved from a brightly illuminated starting box to a darkened one, by allowing them to walk through a narrow-custom-built plexiglass trough (5 cm wide by 40 cm long), during which they left a trace of their paw prints on the white sheet that overlaid the trough. The footprints were scanned, and digitized images were measured using Image J Pro Plus. Stride length was measured as the distance between the adjacent hindlimbs, whereas stride width was taken as the distance between the affected and the contralateral limbs. At least ten footprints per side, from three sessions per animal, were measured for both parameters and their average were calculated.
 
-## Foot fault test
+### Foot fault test
 
 The Parallel Rod apparatus was used in this test (Kamens and Crabbe, 2007). Summarily, mice were positioned in the middle of the device, and allowed to walk for 3 min during which a video was captured. The test was performed by two observers who were blinded to the experimental groups. One observer recorded the total number of steps taken, while the other counted instances where each right hind limb slipped through the rod. Three runs were recorded for every mouse.
 
-## Motor evoked potential (MEP) recordings
+### Motor evoked potential (MEP) recordings
 
 To assess SCI recovery, MEPs were recorded 7 weeks after SCI according to previously described methods (Zhou et al., 2020). First, mice were anesthetized with 1.25% 2,2,2-tribromo ethanol (0.2 mL/100 g). A craniotomy was then performed to expose the M1 region of the motor cortex. Electrode penetration was guided via a stereotaxic instrument to a depth of 700–1000 mm from the brain surface to target corticospinal neurons in the sensorimotor cortex. The recording electrode was placed on the gastrocnemius muscle and the reference electrode was placed on the paraspinal muscle between the stimulation and recording points. A ground electrode was attached to the tail. A single square-wave stimulus of 0.5 mA, 0.5 ms duration, 2 ms time delay, and 1 Hz was used. Amplitude was measured from the beginning of the first response wave to its maximum point. All potentials were amplified and acquired using a digital oscilloscope (Chengdu Instrument Factory, Chengdu, China).
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells were grown on coverslips and processed according to immunocytochemistry protocols as previously described Ji et al., 2020. Cells were fixed using freshly prepared 4% paraformaldehyde, followed by permeabilization with 0.1% Triton X-100 in TBS and blocking in 3% normal donkey serum. The cells on the coverslips were incubated with anti-GFP (1:1000, Ab290 form Abcam) or anti-α-tubulin (1:1000, ab7291 from Abcam) and then incubated with secondary antibody (Donkey anti-Rabbit IgG (H+L) highly cross-adsorbed secondary antibody-Alexa Fluor 488, RRID:AB_2535792. Donkey anti-Mouse IgG (H+L) highly cross-adsorbed secondary antibody, Alexa Fluor 555, RRID:AB_2762848, Donkey anti-Mouse IgG (H+L) highly cross-adsorbed secondary antibody, Alexa Fluor 647, RRID:AB_2866490). The coverslips were then mounted with DAPI (diamidino-2-phenylindole)-free Fluoro-Gel on glass slides (Electron Microscopy Sciences, USA). Cells were scanned using a 63 x oil immersion objective mounted on a confocal microscope (LSM 710 Meta; Carl Zeiss). LSM 710 software was used to process the images after they were captured using sequential acquisition settings at a resolution of 1024×1024 pixels and a 12-bit depth.
 
 Mice were administered consecutive transcardial infusions of 4% paraformaldehyde in PBS and 0.09% saline after being given a deep anesthetic. After tissue collection, post-fixation in 4% paraformaldehyde was applied overnight, and tissues were then immersed in 30% sucrose for two days to dehydrate them. Serial sagittal cryostat-sections were incubated at 4 °C for at least 18 hr before being stained with primary antibodies in blocking buffer (3% goat serum and 5% donkey serum in 0.3% PBST). Alexa Fluor-coupled secondary antibodies (Life Technologies) diluted in blocking buffer were incubated for 2 hr at room temperature to perform the detection. Anti-GFAP (1:1000, GB11096 from Servicebio), anti-serotonin (1:5000, AB125 from Sigma-Aldrich), anti-neurofililament (1:200, A19084 from ABclonal), anti-Myelin Basic Protein (1:200, A11162 from ABclonal), anti-BrdU (1:200, A20790 from ABclonal), anti-Nestin (1:200, A11861 from ABclonal), and anti-NeuN (1:200, A19086 from ABclonal) were used. Images were scanned using a confocal microscope.
 
-## Statistical analysis
+### Statistical analysis
 
 The analyses were carried out by GraphPad 8.4.0 software. Differences across multiple groups were determined using One-way analysis of variance (ANOVA), followed by Newman-Keuls post hoc tests for mean separations. p≤0.05 were considered statistically significant.

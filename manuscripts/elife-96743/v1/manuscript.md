@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Departments of Molecular & Cellular Physiology and Structural Biology, Stanford University School of Medicine Stanford United States
+1. Departments of Molecular & Cellular Physiology and Structural Biology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -30,15 +30,47 @@ Here, we use purified Norrin and purified receptors reconstituted in lipid nanod
 
 ## Results
 
-## Tspan12 binds Norrin, but not Fzd4, with high affinity
+### Tspan12 binds Norrin, but not Fzd4, with high affinity
 
 We first sought to determine whether Tspan12 directly binds Norrin. We purified Tspan12, reconstituted it into lipid nanodiscs (Figure 1—figure supplement 1), and found that Tspan12 directly binds purified Norrin with an affinity of 10.4±1.2 nM as measured by biolayer interferometry (BLI) (Figure 1A–D and Figure 1—figure supplement 2A). This interaction is stronger when Tspan12 is in a lipid environment than when it is in a glyco-diosgenin (GDN) detergent micelle (Figure 1—figure supplement 2B). Full-length Tspan12 and the purified LEL bind Norrin with similar affinity (Figure 1E). A purified chimera of Tspan12 with the LEL replaced by that of Tspan11, which does not enhance Norrin signaling (Lai et al., 2017), does not bind Norrin (Figure 1F). Together, these findings demonstrate that direct Norrin-Tspan12 binding is mediated by the Tspan12 LEL.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of biolayer interferometry (BLI) setup for Tspan12-Norrin binding: Tspan12 lacking the C-terminal tail (∆C), inserted into biotinylated nanodiscs, is immobilized on a streptavidin-coated biosensor, and Norrin association and dissociation are monitored in real time. (B) BLI traces of Norrin at indicated concentrations binding to and dissociating from Tspan12. (C) Steady-state binding curve fit to Norrin-Tspan12 binding (mean ± SD from three independent replicates at each concentration of Norrin) gives a KD of 10.4±1.2 nM (mean ± SEM). (D) Observed association rate constant (Kobs), determined from fitting BLI association traces (mean ± SD in three independent experiments), is linearly dependent on Norrin concentration with a slope Kon = 0.00019 ± 0.00003 nM –1 s–1 (mean ± SEM). When combined with the Koff = 0.0014 ± 0.00016 s–1 (mean ± SEM) determined from fitting the dissociation traces, we obtain a kinetic KD of 7.4±1.4 nM (mean ± SEM). (E) BLI traces of the soluble MBP-tagged Tspan12 LEL domain, at the indicated concentrations, associating to and dissociating from a biosensor loaded with MBP-tagged Norrin. Kinetic fitting gives an apparent affinity of 16±3 nM (mean ± SEM). (F) BLI traces of 10, 32, or 100 nM Norrin show no binding to a biosensor loaded with a nanodisc-embedded chimeric Tspan12 with the LEL replaced by that of Tspan11.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of Tspan12 purification. Human Tspan12∆C (truncated at residue 252 after the fourth transmembrane domain) was tagged with the Rho1D4 tag TETSQVAPA and expressed in Sf9 cells by baculovirus. Detergent-solubilized Tspan12 was affinity purified on anti-Rho1D4 antibody resin followed by size exclusion chromatography. Panel A was created with BioRender.com. (B) Superose 6 10/300 size exclusion traces of Tspan12 purified in DDM (teal) or exchanged into glyco-diosgenin (GDN) during the affinity chromatography step (pink); the final concentrated product in GDN showed no signs of aggregation (purple). Indicated fractions of GDN-solubilized Tspan12 (pink trace) were run on (C) SDS-PAGE; boxed fractions were pooled and concentrated. (D) Size exclusion traces of empty nanodiscs (black) or Tspan12 reconstituted into excess MSP1D1 nanodiscs (pink). Tspan12 content of fractions was quantified by dot blot (anti-Rho1D4) and dot intensity was plotted accordingly (green). (E) Peak Tspan12-containing fractions from (D) were affinity purified on anti-Rho1D4 resin. Shown is an SDS-PAGE gel of the load, flowthrough, and eluate. (F) Uranyl acetate negative stain micrograph of final nanodisc-reconstituted Tspan12. Scale bar is 20 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Biolayer interferometry (BLI) traces showing non-biotinylated Tspan12 nanodiscs in solution binding to biosensor-immobilized biotinylated MBP-Norrin (flipped setup compared to Figure 1A and B). Overlaid fits (black dashed line) give an apparent affinity of 34±11 nM. (B) BLI traces showing weak binding of indicated concentrations of Tspan12 in glyco-diosgenin (GDN) detergent to biosensor-immobilized biotinylated MBP-Norrin. (C) BLI trace showing no binding of MBP-tagged Tspan12 large extracellular loop (LEL) at 18 µM to biosensors loaded with nanodisc-embedded Fzd4. (D) BLI traces showing no binding of the soluble Fzd4 CRDL up to 32 µM to biosensors loaded with nanodisc-embedded Tspan12.
+
 We next investigated the putative Fzd4-Tspan12 interaction, which has been shown by co-IP to depend on the Tspan12 LEL (Lai et al., 2017). We did not detect binding between the purified LEL and nanodisc-embedded Fzd4 (Figure 1—figure supplement 2C) nor between the Fzd4 extracellular domain (the CRD along with the linker to the transmembrane domains, termed ‘CRDL’) and nanodisc-embedded Tspan12 (Figure 1—figure supplement 2D). However, this does not definitively rule out a direct interaction between the two receptors, as it may be weak and require a two-dimensional (2D) membrane environment and/or be mediated, at least in part, by the transmembrane domains.
 
-## Identification of the Norrin-Tspan12 binding site
+### Identification of the Norrin-Tspan12 binding site
 
 To determine whether the Norrin-Tspan12 interaction would be spatially compatible with Norrin binding to other co-receptors, we sought structural information on the Norrin-Tspan12 binding interface. While individual crystal structures of Norrin alone and Norrin bound to both the Fzd4 CRD and the heparin mimic sucrose octasulfate (SOS) have been solved (Chang et al., 2015; Ke et al., 2013; Shen et al., 2015), no experimental structure of Tspan12 or Norrin-bound Tspan12 exists. We used AlphaFold (Evans et al., 2022; Jumper et al., 2021) to predict the structure of Tspan12 alone (Figure 2—figure supplement 1A–C), bound to a single protomer of Norrin (Figure 2A, Figure 2—figure supplement 1D and E), and bound to a Norrin dimer (Figure 2C, Figure 2—figure supplement 1F and G). As expected, the predicted structure of Norrin within the AlphaFold models is identical to the experimentally determined structure of Norrin (Figure 2—figure supplement 1H). The Tspan12 LEL structure is nearly identical between the three predicted models, irrespective of Norrin binding (Figure 2—figure supplement 1I–K). However, the three models of Tspan12 vary slightly in the position of the SEL and LEL relative to the transmembrane domains (Figure 2—figure supplement 1I), which we attribute to uncertainty in the prediction: the SEL and the extracellular ends of all four transmembrane domains, which link the SEL and LEL to the transmembrane domains and therefore control their positioning, exhibit lower predicted local distance difference test (pLDDT) scores, indicating lower confidence in their predicted positions (Figure 2—figure supplement 1B, D, and F). This uncertainty is consistent with the variability in conformations adopted by tetraspanin transmembrane domains, which have been solved with a cavity between the TMs opening extracellularly (Lipper et al., 2023; Umeda et al., 2020; Yang et al., 2020; Zimmerman et al., 2016) or with more tightly packed transmembrane domains (El Mazouni and Gros, 2022; Susa et al., 2021; Yanagisawa et al., 2023). The transition between these states has also been observed in molecular dynamics simulations (Zimmerman et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig2-v1.jpg)
+
+**Figure 2.:** (A) AlphaFold model of one Norrin protomer (yellow) bound to Tspan12 (purple), with the expected location of the plasma membrane shown in gray. (B) Zoomed view of the predicted Tspan12/Norrin binding site, front and rear view (flipped 180°). Predicted polar interactions are indicated with dark gray dashed lines. Within the binding interface, Site 1 (red), Site 2 (teal), and Site 3 (blue) are indicated. Bold residue labels indicate residues mutated for binding assays. (C) AlphaFold model of Tspan12 bound to Norrin dimer and (D) zoomed view of indicated area, showing the predicted polar interaction between residue S82 on the second Norrin protomer (orange) and residue E170 on Tspan12, termed Site 4 (orange). (E) Binding affinities (mean ± SD) for the indicated Norrin mutants binding to full-length wild-type (WT) Tspan12 and (F) WT Norrin binding to the indicated Tspan12 mutants, calculated from association and dissociation fits to biolayer interferometry (BLI) traces of 32 nM Norrin binding to Tspan12 in triplicate (see Figure 2—figure supplement 3A and B). Colors correspond to sites within the binding interface. Kinetic traces and kinetic constants are shown in Figure 2—figure supplement 3, and affinities and kinetic constants are reported in Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cartoon of tetraspanin structure, comprised of transmembrane helices 1–4, a small extracellular loop (SEL, between helices 1 and 2) and a large extracellular loop (LEL, between helices 3 and 4). Eye icon indicates the viewing angle of AlphaFold models in the remainder of this figure (B, D, F, I–P) relative to this cartoon. (B) The structure of full-length human Tspan12 alone was predicted with AlphaFold. The best-scoring model is shown, colored by the per-residue predicted local distance difference test (pLDDT) confidence metric. (C) The predicted aligned error (PAE) for the model in B. The position of the LEL (darker purple) appears as a darker blue square in the heat map with low PAE (yellow box). The position of C-terminal residues (‘CT‘, red) is indicated; the heat map shows high PAE values for the C-terminus relative to the rest of the protein, indicating poor prediction of the relative positioning of the C-terminus. (D) The structure of full-length human Tspan12 together with one Norrin protomer (residues 25–133) was predicted with AlphaFold-Multimer and the best-scoring model is shown, colored by pLDDT. (E) The predicted aligned error for the model shown in D. The position of Norrin, Tspan12, and the LEL along the axes are indicated. Note low PAE between the LEL and parts of Norrin (yellow boxes). (F) The structure of full-length human Tspan12 together with two copies of Norrin (residues 25–133) was predicted with AlphaFold-Multimer and the best-scoring model is shown, colored by pLDDT. (G) The predicted aligned error for the model shown in F. The position of both copies of Norrin, Tspan12, and the LEL along the axes are indicated. Note low PAE between the LEL and parts of both Norrin protomers (yellow boxes). (H) Top: The structure of Norrin within the predicted structure of Tspan12+1 Norrin protomer (yellow), and within the predicted structure of Tspan12+2 Norrin protomers (orange), matches the crystal structure of Norrin (5BQ8 chains A and B; gray) with RMSDs of 0.383 and 0.413 Å respectively. Below: β strands 1, 2, 3, 4, 5, and 6 of one Norrin protomer, colored red, orange, yellow, green, blue, and purple, respectively; strands 5 and 6 are predicted to comprise the Tspan12 binding site. (I) The predicted model of Tspan12 alone (light blue) is similar to the predicted models with one (purple/yellow) or two (pink/orange) copies of Norrin, which each align with RMSDs of 1.247 and 1.057 Å, respectively, to the model of Tspan12 alone. Aligning only the LELs as shown gives RMSDs of 0.293 and 0.341 Å, respectively, and illustrates the slight variation in the predicted angle between the TMs and the LEL. The predicted position and orientation of Norrin relative to the LEL is unchanged between the one-protomer and two-protomer models. (J) Tetraspanin LELs are composed of helices A, B, C, D, and E. Helices C and D are the least conserved and are implicated in binding partner interactions (Susa et al., 2024). Black double lines represent disulfide bridges. Viewing angle is indicated by the eye in A. (K) Close-up of aligned LELs from I. (L) The predicted structure of the Tspan12 LEL (from the 1 Tspan12 : 1 Norrin protomer model; residues 123–215; purple) aligns to the experimentally determined structure of CD81 LEL (5TCX residues 123–198; gray), with an RMSD of 3.997 Å. CD81 is a C4 tetraspanin; disulfide bonds for Tspan12 and CD81 are shown in pink and black, respectively. (M) The predicted Tspan12 LEL (purple) aligns to the Uroplakin 1A LEL (8JJ5, residues 125–226; gray), a C6 tetraspanin, with an RMSD of 4.215 Å. (N) The predicted Tspan12 LEL (purple) aligns to the Peripherin-2 LEL (7ZW1, residues 126–258; gray), a C6 tetraspanin, with an RMSD of 2.528 Å. (O) The predicted interaction between Norrin and Tspan12 involves helices C and D of the LEL and residues on β5 and β6 of Norrin. (P) The predicted interaction between Norrin and Tspan12 colored by surface electrostatics (APBS) shows a highly polar interaction involving a basic patch on Norrin and an acidic patch on Tspan12.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Stain-free non-reducing SDS-PAGE gels of Sf9 supernatant media (‘load’), amylose resin flowthrough (‘flothru’), amylose eluate (‘elu’), and pooled fractions after size exclusion (‘SEC’) for wild-type (WT) and indicated mutant MBP-Norrin. (B) Stain-free SDS-PAGE gels of DDM-solubilized Expi293 membranes (‘sol’), supernatant post-ultracentrifugation (‘load’), 1D4 antibody resin eluate (‘elu’), and pooled fractions after size exclusion (‘SEC’) for full-length WT and indicated mutant Tspan12.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative biolayer interferometry (BLI) association and dissociation traces of 32 nM wild-type (WT) or mutant Norrin binding to immobilized WT Tspan12, and for (B) 32 nM WT Norrin binding to immobilized WT or mutant Tspan12. Colors correspond to sites within the binding interface defined in Figure 2. (C and D) Rate constant Kon (mean ± SD) calculated from association and dissociation fits to traces shown in A and B, respectively; each mutant was measured in triplicate. (E and F) Rate constant Koff (mean ± SD) calculated from dissociation fits to traces shown in A and B, respectively; each mutant was measured in triplicate. Across the board, differences in KD for mutants compared to WT (Figure 2E and F) were driven largely by differences in Koff. Kinetic constants reported in Supplementary file 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Representative biolayer interferometry (BLI) association and dissociation traces showing 32 nM mutant Norrin binding to immobilized mutant Tspan12 relative to the WT/WT binding (gray) for mutants at Site 1 (red), Site 2 (teal), Site 3 (blue), and Site 4 (orange). For each site, mutated residues on Norrin and Tspan12 are predicted to interact according to the AlphaFold structure; in the case of charge-swapped mutations (i.e., Sites 1, 3, and 4), we hypothesized that the mutations to the two proteins may be compensatory. (B) Binding affinities calculated from kinetic fits to traces in A for the indicated mutant pairs. The charge-swapped mutants at Site 1, Norrin R107E/R115E and Tspan12 E173K/D175K, do not bind appreciably at 32 nM Norrin. At Site 3, charge-swapped Norrin K102E/R121E and Tspan12 196K/S199K binding is rescued to WT/WT levels compared to the much weaker binding affinities of either mutant for its WT counterpart: i.e., the mutations are compensatory. At Site 4, the Norrin S82D mutation partially rescues the deleterious effects of Tspan12 E170K. Data represent mean ± SD from three replicates. Binding affinities and kinetic constants reported in Supplementary file 1. (C) Kon and (D) Koff, calculated from each individual trace shown in A, measured in triplicate. Plots represent three replicates ± SD, and kinetic constants are reported in Supplementary file 1. WT, wild-type.
 
 We were most interested in the predicted structure of the Norrin-binding domain of Tspan12, the LEL. Tetraspanin LELs contain five helices, A–E (Figure 2—figure supplement 1J), and are stabilized by 2, 3, or 4 disulfide bonds (Susa et al., 2024). The predicted Tspan12 LEL ‘stalk’ helices A and B resemble helices A and B within experimental structures of other LEL domains, such as CD81 (Zimmerman et al., 2016), Uroplakin 1A (Yanagisawa et al., 2023), and Peripherin 2 (El Mazouni and Gros, 2022; Figure 2—figure supplement 1L–N). The hypervariable ‘head’ region comprised of helices C and D align less well to other tetraspanins, as does helix E, where residue positions were predicted with lower pLDDT confidence scores.
 
@@ -54,17 +86,45 @@ At Site 4, Norrin S82D binds WT Tspan12 with twofold lower affinity than WT, and
 
 AlphaFold predictions vary in their accuracy even when reported with high confidence scores, with errors ranging from local backbone and side chain distortions to shifts in the orientation of entire domains (Terwilliger et al., 2024). Our ability to weaken Tspan12-Norrin affinity with mutations at the predicted interface suggests that the predicted interface is correct but does not rule out the possibility that the relative orientations of Tspan12 and Norrin within the model are erroneous. At Sites 3 and 4, charge-reversal mutations on Norrin can compensate for charge-reversal mutations on Tspan12 (Figure 2—figure supplement 4 and Supplementary file 1), in strong support of direct interactions between the predicted mutated sites. However, this was not the case for Site 1. Nevertheless, this structural model allowed us to generate testable hypotheses regarding whether Norrin could bind Tspan12 alongside its other binding partners, which we next sought to test experimentally.
 
-## Norrin can bind Tspan12 simultaneously with Fzd4, but not HSPGs
+### Norrin can bind Tspan12 simultaneously with Fzd4, but not HSPGs
 
 When the predicted Norrin-Tspan12 structure is compared with the available crystal structure of Norrin bound to the Fzd4 CRD and the heparin mimic SOS (Chang et al., 2015), it is evident that the binding sites for Tspan12 and SOS on Norrin overlap (Figure 3A). Indeed, the Norrin-Tspan12 interaction is inhibited by increasing concentrations of SOS with a Ki of 34±4 µM (Figure 3B and Figure 3—figure supplement 1A). Of note, both residues mutated in the Site 1 Norrin mutant R107E/R115E, which impair Tspan12 binding (Figure 2E), are also part of the SOS binding site (Chang et al., 2015). The deleterious effect of the Norrin mutation R115L seen in FEVR patients has previously been attributed to deficient HSPG binding; our data suggest that this mutation may also impair Tspan12 binding.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig3-v1.jpg)
+
+**Figure 3.:** (A) The AlphaFold-predicted structure of Tspan12 (purple) bound to a Norrin dimer (yellow/orange), aligned to the crystal structure (5BQC) of a Norrin dimer bound to the Fzd4 CRD (blue) and sucrose octasulfate (SOS) (red). A zoomed view of the indicated region shows an overlap in the predicted binding site of Tspan12 with that of SOS, suggesting that Tspan12 and SOS cannot bind simultaneously to Norrin. (B) Displacement of Norrin (32 nM) from immobilized Tspan12 by increasing concentrations of SOS, as measured by biolayer interferometry (BLI) (see Figure 3—figure supplement 1A). The equilibrium binding signal is plotted as a percent of signal in the absence of SOS (mean ± SD of three independent experiments), yielding a Ki of 34±4 µM. (C) Side view of structures in A. A zoomed view of the indicated region shows that Tspan12 is predicted to occupy a site on Norrin adjacent to, but not overlapping with, the Fzd4 binding site; adjacent residues are shown. Norrin from the Tspan12-bound AlphaFold model (yellow) and the Fzd4 CRD-bound crystal structure (5BQC, gray) are overlaid. (D) Fzd4 CRDL does not fully compete with Tspan12-Norrin binding, as shown by equilibrium binding of 32 nM Norrin to Tspan12 immobilized on paramagnetic particles in the presence of increasing concentrations of purified Fzd4 CRDL. Bound Norrin and Norrin in the supernatant were both quantified by western blot (anti-Rho1D4; see Figure 3—figure supplement 1B) and used to calculate bound Norrin as a percentage of total Norrin. The expected competition curve, assuming fully competitive binding sites, was simulated (gray dashed line) given starting concentrations of 50 nM Tspan12 and 32 nM Norrin, and binding affinities of 10.4 nM for Tspan12-Norrin and 200 nM for Fzd4 CRDL-Norrin. However, the data better fit a model in which CRDL binding to Norrin shifts Norrin affinity for Tspan12 (blue line). Data represent mean ± SD of three replicates. (E) BLI traces of a ternary Fzd4-Norrin-Tspan12 large extracellular loop (LEL) complex. Biosensors loaded with nanodisc-embedded Fzd4 were first saturated with 100 nM Norrin, then bound to 32, 100, or 320 nM Tspan12 LEL. (F) BLI traces of ternary complex formation. Biosensors loaded with maltose binding protein (MBP)-tagged Norrin were pre-incubated in buffer or saturated with Fzd4 CRDL (5 µM), then bound to 100 nM MBP-tagged Tspan12 LEL (±5 µM CRDL). Tspan12 LEL did bind to Norrin in the presence of the Fzd4 CRDL (dark purple; apparent KD = 27 ± 2.8 nM), albeit more weakly than it bound to Norrin alone (light purple; apparent KD = 16 ± 1.8 nM; see also Figure 1E). Binding affinities were obtained from kinetic fits (black dotted line) to association and dissociation traces of MBP-LEL (100 nM) from three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative biolayer interferometry (BLI) traces of 32 nM Norrin binding to biosensor-immobilized Tspan12 in the presence of increasing concentrations of SOS. (B) Representative western blot of Norrin in the supernatant (S) or remaining bound (B) to Tspan12 or empty nanodiscs immobilized on paramagnetic particles in the presence of 0, 0.1, 0.4, 1.6, 6, 25, or 100 µM of purified Fzd4 CRD-linker domain, with both Norrin and Tspan12 detected by anti-Rho1D4 antibody. Norrin is detected within the dynamic range, as shown by concentration standards loaded at left. Tspan12 forms SDS-induced dimers, which can be detected at about 50 kDa. (C) BLI traces showing binding of the Fzd4 CRDL to biosensor-immobilized MBP-Norrin, which reaches saturation at 3.2 µM CRDL. Equilibrium binding values obtained from the overlaid fits (black dashed lines) give a steady-state affinity of 122±38 nM (mean ± SEM), in agreement with previously reported affinity measurements (Bang et al., 2018).
+
 In the same structural model, the Tspan12 binding site on Norrin is adjacent to the binding site for the Fzd4 CRD on the same protomer (Figure 3C). While simultaneous binding of Tspan12 and Fzd4 to one Norrin protomer appears to be sterically compatible in this model, the adjacent regions of Tspan12 and Fzd4 are acidic and may compete for the same residues K102 and/or K104 on Norrin. In line with this prediction, Norrin-Tspan12 binding is negatively modulated by the Fzd4 extracellular domain: in a competition binding experiment, the amount of Norrin bound to nanodisc-embedded Tspan12 decreases slightly in response to increasing concentrations of Fzd4 CRDL, reaching a new non-zero plateau (Figure 3D and Figure 3—figure supplement 1B). This suggests that although the presence of Fzd4 may effectively weaken Norrin-Tspan12 affinity, Tspan12 and Fzd4 can simultaneously bind a single Norrin protomer. To test this directly, sequential binding of components was monitored by BLI. Biosensors loaded with nanodisc-embedded Fzd4 were bound to Norrin, followed by Tspan12 LEL, which bound in a concentration-dependent manner (Figure 3E). However, as Norrin is a disulfide-linked dimer, this experiment was unable to show whether Fzd4 and Tspan12 were binding to the same protomer of Norrin, because the Norrin dimer may bridge this interaction. We next immobilized Norrin on the biosensors, and bound Fzd4 CRDL at a concentration expected to saturate both sites on the Norrin dimer (5 µM; see Figure 3—figure supplement 1C), followed by the Tspan12 LEL (Figure 3F). The Tspan12 LEL-bound CRDL-saturated Norrin with a twofold weaker apparent affinity than Norrin alone. This is again consistent with a model in which Tspan12 and Fzd4 can simultaneously bind each protomer of Norrin to form a 2:2:2 complex, but with negative cooperativity.
 
-## Tspan12 provides additional binding sites to enhance Norrin capture
+### Tspan12 provides additional binding sites to enhance Norrin capture
 
 In the experiments above, the receptor elements were given a degree of freedom that they do not normally possess when the full-length receptors are embedded in the plasma membrane, and any potential allosteric effects mediated by the transmembrane domain of Tspan12 could not be assessed. Fzd4 and Tspan12 appear to co-localize even in the absence of Norrin (Ke et al., 2013), thus the two receptors may together form a single, composite binding site with altered Norrin binding affinity compared to Fzd4 alone. We therefore investigated whether interactions within a membrane-embedded receptor heterodimer could impact Norrin binding. We were unable to co-purify Fzd4 and Tspan12 when the two proteins were co-expressed in cells, and separately- purified proteins could not be co-reconstituted into nanodiscs with appreciable efficiency. Therefore, we enforced a 1:1 Tspan12:Fzd4 dimer by co-expressing receptor constructs that were C-terminally tagged with complementary fragments of split GFP, which assembles to stably tether the receptors throughout expression, purification, and insertion into nanodiscs (Figure 4—figure supplement 1; Bruguera et al., 2022). We assessed the stoichiometry of the heterodimer preparations by quantitative western blotting (Figure 4—figure supplement 2), confirming that these preparations contain 1.17±0.11 Tspan12 and 1.11±0.12 Fzd4 receptors per nanodisc (i.e., per two copies of MSP belt protein), compared to 1.17±0.05 Tspan12 receptors per nanodisc in the absence of Fzd4. We have shown previously that our preparations of Fzd4 are also predominantly monomeric in nanodiscs (Bruguera et al., 2022; Mahoney et al., 2022).
 
 Norrin binds to the Tspan12/Fzd4 dimer with a KD of 2.18±0.10 nM, which is slightly tighter than Norrin’s affinity for Fzd4 alone (3.29±0.17 nM), and tighter than Norrin’s affinity for Tspan12 alone (10.4±1.2 nM) (Figure 4A, Figure 4—figure supplement 3A–C, and Supplementary file 1). Interestingly, Fzd4 and Tspan12/Fzd4 differ most in their ability to bind Norrin at lower concentrations (≤1 nM), yielding Hill slopes that differ significantly and reproducibly for the different receptor assemblies (1.7±0.1 for the Tspan12/Fzd4 dimer vs. 2.8±0.6 for Fzd4 alone, and 1.0±0.1 for Tspan12 alone).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig4-v1.jpg)
+
+**Figure 4.:** (A) Steady-state binding curves of monomeric Tspan12∆C, monomeric Fzd4, or heterodimeric Tspan12∆C/Fzd4∆C receptors in biotinylated nanodiscs binding to dimeric or (B) monomeric (C93A/C95A/C131A) Norrin by biolayer interferometry (BLI). Steady-state binding signal is plotted as a percent of Bmax for three independent replicates (mean ± SD). Affinities and kinetic constants are reported in Supplementary file 1. (C) Indicated concentrations of Norrin-1D4 dimer binding to Expi293 cells transfected with Fzd4, Tspan12, or both Fzd4 and Tspan12, detected with fluorescently labeled Rho1D4 antibody and quantified by flow cytometry. Mean ± SD of three independent experiments are plotted. Co-transfection of Tspan12 increased Norrin recruitment to Fzd4-transfected cells at 0.1, 0.32, 1, and 3.2 nM Norrin (two-tailed t-test p-values of 0.00026, 0.00079, 0.0049, and 0.0018, respectively). (D) β-Catenin pathway activation resulting from increasing concentrations of Norrin was assessed in Fzd1/2/4/5/7/8-knockout HEK293T cells transfected with Tspan12 siRNA or increasing amounts of Tspan12 plasmid, along with Fzd4 and TopFlash luciferase reporter plasmids. Data are plotted as mean ± SD from triplicate wells are representative of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Construct design of Tspan12 and Fzd4 C-terminally tagged with split GFP fragments s11 and s1–10, respectively, both downstream of a 3C protease recognition sequence. Fzd4 is additionally tagged with an N-terminal FLAG tag and Tspan12 is additionally tagged with a C-terminal 6xHis tag. The Fzd4 C-terminal PDZ ligand (ETVV) is appended after split GFP to improve expression and surface localization (Bruguera et al., 2022). (B) Schematic of Tspan12/Fzd4 heterodimer expression and purification. The constructs in A were co-expressed in Sf9 cells, solubilized in n-dodecyl-β-D-maltopyranoside (DDM), and co-purified on M1 anti-FLAG affinity resin followed by size exclusion chromatography. The dimer was reconstituted into nanodiscs and further purified by size exclusion followed by capture on anti-GFP nanobody resin, from which it was eluted by 3C protease. (C) Size exclusion traces of empty nanodiscs or Tspan12/Fzd4 dimer reconstituted into excess nanodiscs, with absorbance detected at 280 and 475 nm (GFP absorption peak), on a Superose 6 Increase column. Indicated fractions were pooled for (D) SDS-PAGE, imaged using StainFree imaging (above) or GFP fluorescence (below); intact GFP is SDS-resistant. Fractions on the right side of the peak (boxed) were pooled in order to exclude any potential separately-reconstituted dimers (i.e., two nanodiscs with one receptor each, linked together by the GFP moiety). (E) Pooled fractions were purified by GFP nanobody resin and eluted with 3C protease. The load, flowthrough, and eluate are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Receptors per nanodisc in monomeric Tspan12 (mean ± SEM 1.17±0.05 Tspan12 per two MSP1D1) and heterodimeric Tspan12/Fzd4 nanodiscs (1.17±0.11 Tspan12 and 1.11±0.12 Fzd4 per two MSP1D1) as calculated from three independent samples each, with each component measured three times each by quantitative western blot. (B) Representative anti-Rho1D4 (top) and anti-His (bottom) western blots to quantify Tspan12-1D4 and His-MSP1D1, respectively, in monomeric Tspan12 reconstitutions. A known dilution series of purified protein was loaded in left lanes to generate a standard curve in the linear range of detection, against which dilutions of three nanodisc reconstitutions, loaded in duplicate in right lanes, were compared. (C) Representative anti-FLAG (top), anti-His (middle), and Neutravidin-800 (bottom) western blots to quantify FLAG-Fzd4, Tspan12-His, and biotinylated MSP1D1, respectively, in Tspan12/Fzd4 heterodimer preparations.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Representative biolayer interferometry (BLI) association and dissociation traces of dimeric Norrin binding to Fzd4 monomer or (B) Tspan12/Fzd4 heterodimer in nanodiscs. (C) Observed association rate constant Kobs of Norrin dimer binding to Tspan12, Fzd4, or Tspan12/Fzd4 heterodimer in nanodiscs, plotted against Norrin concentration. Linear fits were used to obtain association rate constants reported in Supplementary file 1. Data represent mean ± SD for three independent replicates. (D) Representative BLI association and dissociation traces of monomeric Norrin (C93A/ C95A/C131A) binding to Fzd4 monomer or (E) Tspan12/Fzd4 heterodimer in nanodiscs. (F) Observed association rate constant Kobs (mean ± SD) of Norrin monomer binding to Tspan12, Fzd4, or Tspan12/Fzd4 heterodimer in nanodiscs, plotted against Norrin monomer concentration. (G) Fzd4 surface expression on Expi293 cells transfected with empty vector, FLAG-Fzd4, or FLAG-Fzd4+Tspan12, which were then stained with M1 anti-FLAG antibody conjugated to Alexa Fluor 647. Cell fluorescence is measured by flow cytometry and plotted along with the median and interquartile range. Co-expression of Tspan12 modestly but significantly decreases surface expression of Fzd4 (Mann-Whitney test, p-value<0.0001 in each of three independent experiments).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Analytical size exclusion traces of wild-type (WT) (dimeric) MBP-Norrin (yellow) and MBP-Norrin rendered monomeric (brown) via mutations C93A/C95A/C131A to eliminate the intermolecular disulfides. Purified protein was injected at 25 µM on a Superdex 200 Increase 10/300 column, resulting on an on-column concentration in excess of 2.5 µM assuming a 10-fold on-column dilution factor. (B) Non-reducing SDS-PAGE gel of WT and C93A/C95A/C131A MBP-Norrin. (C) Uranyl acetate negative stain micrograph of WT MBP-Norrin, prepared at 100 nM. Scale bar is 50 nm. Representative picked particles indicated in yellow. (D) Uranyl acetate negative stain micrograph of MBP-Norrin C93A/C95A/C131A, prepared at 100 nM. Scale bar is 50 nm. Representative picked particles indicated with circles. Yellow-circled particle appears to be large enough to potentially be a dimer; brown circles show some smaller species, which dominate. (E) 2D class averages of picked particles from C show two lobes, consistent with two copies of MBP-Norrin (54 kDa each). (F) 2D class averages of picked particles from D show small, single particles that are hard to align; they are about half the size of particles in E, consistent with one copy of MBP-Norrin. This suggests that MBP-Norrin C93A/C95A/C131A is monomeric at 100 nM. (G) β-Catenin transcriptional activity in response to 0.01–10 nM purified WT (dimeric) or 0.02–20 nM C93A/C95A/C131A (monomeric) Norrin, in Fzd1/2/4/5/7/8-knockout HEK293T cells transfected with Fzd4 and TopFlash luciferase reporter plasmids. Data are plotted as mean ± SD from n=3 replicate wells.
 
 Given this slight increase in affinity, we wondered whether Tspan12 and Fzd together can form a composite, higher affinity binding site for each Norrin protomer, or whether the heterodimer simply displayed increased avidity and was able to simultaneously bind two disulfide-linked Norrin protomers. To investigate this, we purified a monomeric mutant of Norrin, C93A/C95A/C131A, which lacks the three cysteines that link the dimer together (Ke et al., 2013). This mutant elutes slightly later than WT Norrin on size exclusion chromatography, runs as a monomer on non-reducing SDS-PAGE, and produces particles of a size consistent with a monomer by negative stain electron microscopy at 100 nM (Figure 4—figure supplement 4). If heterodimeric Tspan12 and Fzd4 together form an extended, composite binding site for a single Norrin protomer, then we would expect its affinity for monomeric Norrin to be greater than that of Fzd4 alone. Purified monomeric Norrin binds Fzd4 and the Tspan12/Fzd4 heterodimer with similar affinities (13.2±1.2 nM [Hill slope = 2.0 ± 0.3] for Fzd4, vs. 11.5±1.5 nM [Hill slope = 1.0 ± 0.1] for Tspan12/Fzd4) (Figure 4B and Figure 4—figure supplement 3D–F). This suggests that Tspan12 and Fzd4 do not cooperate to form a single, higher affinity binding site for each Norrin protomer. Monomeric Norrin bound Tspan12 alone much more weakly and did not reach saturation at 1 µM (Figure 4B). This behavior is consistent with the structural prediction that the binding site for Tspan12 on Norrin spans across part of the dimer interface (Figure 2C and D). However, it is also possible that Norrin dimerization is required for the structural stability of the β strands that form the Tspan12 binding site.
 
@@ -72,9 +132,17 @@ If Tspan12 does not directly increase the affinity of Fzd4 for Norrin, we next h
 
 If the role of Tspan12 is to help cells capture Norrin, and if its impact on Norrin capture is most evident at low concentrations of Norrin, we would expect it to have the largest effect on β-catenin signaling at low concentrations of Norrin – i.e., Norrin should more potently stimulate β-catenin signaling in cells expressing Tspan12. To assess signaling, we transfected Fzd1/2/4/5/7/8-knockout HEK293T cells with Tspan12 siRNA or increasing amounts of Tspan12 plasmid alongside fixed amounts of Fzd4 and a β-catenin-responsive reporter plasmid (TopFlash). We then measured luciferase activity in response to increasing amounts of recombinant Norrin (Figure 4D). Norrin stimulation results in a bell-shaped dose-response curve, consistent with its role in heterodimerizing Fzd4 and LRP5/6 (i.e., excessive Norrin concentrations will fully saturate receptor binding sites, inhibiting receptor dimerization). In all conditions, Norrin exhibited maximal activity at or below 1 nM, the same concentration regime in which we see the largest effect of Tspan12 on Norrin binding to Fzd4-containing nanodiscs (Figure 4A) and Fzd4-expressing cells (Figure 4C). Contrary to our expectation, in the cell-based signaling assay, Tspan12 does not appear to have a marked effect on Norrin potency, and instead increases the amplitude of response to Norrin at all concentrations of Norrin tested.
 
-## Tspan12 does not directly enhance formation of the Norrin/Fzd4/LRP/Dvl signaling complex
+### Tspan12 does not directly enhance formation of the Norrin/Fzd4/LRP/Dvl signaling complex
 
 Because β-catenin signaling depends on the ability of ligands to bring together Fzd and LRP5/6, we next hypothesized that Tspan12 might increase Norrin efficacy by forming a complex with Norrin, Fzd4, and LRP5/6 to exert a direct effect on downstream signaling (Figure 5A). Tspan12 has been shown to co-localize and co-internalize with Fzd4, LRP5, and Norrin in Norrin-stimulated cells (Zhang et al., 2017). As part of this complex, Tspan12 might modulate the direct Fzd4-Dvl interaction on the intracellular side of the membrane, since tetraspanins have been known to recruit intracellular partners (Lapalombella et al., 2012; Zhang et al., 2001). This hypothesis mirrors a proposed role of Gpr124 in zebrafish, which co-IPs with Dvl (Eubelen et al., 2018). An increase in Fzd4 affinity for the Dvl2 DEP domain in the presence of Tspan12, either with or without Norrin, would explain the Tspan12-mediated enhancement of signaling. To test this directly, we inserted Fzd4 alone or Tspan12/Fzd4 heterodimers into nanodiscs containing 5% PI(4,5)P2, which enhances DEP recruitment (Mahoney et al., 2022), and measured DEP binding by BLI (Figure 5B). Contrary to our hypothesis, we found that the affinity of the Dvl2 DEP domain for the Tspan12/Fzd4 heterodimer is not significantly different than its affinity for Fzd4 alone (Figure 5C) and is unchanged in the presence of Norrin (Figure 5D). This is consistent with our previous findings that neither Wnt ligands nor LRP6 allosterically modulate Fzd-DEP binding (Mahoney et al., 2022).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig5-v1.jpg)
+
+**Figure 5.:** (A) Hypothesis: Tspan12 could enhance Norrin signaling by enhancing interactions within the Norrin-LRP5/6-Fzd4-Dvl complex, including Fzd-Dvl binding and Norrin-LRP binding. (B) Representative biolayer interferometry (BLI) traces of the Dvl2 DEP domain associating to and dissociating from Fzd4 in nanodiscs containing 75:20:5 POPC:Ccholesterol:PIP2. (C) Equilibrium binding of the Dvl2 DEP domain to Fzd4 monomer or Tspan12/Fzd4 heterodimer in nanodiscs; affinities ± SEM are 183±24 and 279±46 nM, respectively. (D) Equilibrium binding of the Dvl2 DEP domain to Fzd4 monomer or Tspan12/Fzd4 heterodimer nanodiscs, each pre-saturated with 10 nM Norrin. Binding affinities are 161±21 and 274±39 nM (mean ± SEM), respectively, determined from three independent replicates. Affinities and kinetic constants are reported in Supplementary file 1. (E) The LRP6 E1E2 domain fully competes with Tspan12-Norrin binding, as shown by decreased equilibrium binding of 32 nM Norrin to Tspan12 immobilized on paramagnetic particles in the presence of increasing concentrations of purified LRP6 E1E2 domain. Norrin was quantified by western blot (anti-Rho1D4; see Figure 5—figure supplement 1) and plotted as a percent of bound Norrin in the absence of LRP6 E1E2. The curve was fit to a competitive binding model using known binding affinities of 10.4 nM for Tspan12-Norrin and starting concentrations of 50 nM Tspan12 and 32 nM Norrin; the best fit reported a Norrin-LRP6 E1E2 binding affinity of 1.06 µM (95% CI 0.747–1.51 µM). Data represent mean ± SD of three replicates. (F) β-Catenin transcriptional activity in response to no ligand, 1 nM recombinant Norrin, or Wnt3a conditioned media (Wnt3a CM) in Fzd1/2/4/5/7/8-knockout HEK293T cells transfected with Tspan12 siRNA or indicated amount of Tspan12_pTT5 plasmid, along with Fzd4 and TopFlash luciferase reporter plasmids. Data are plotted as mean ± SD from n=3 replicate wells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96743/elife-96743-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative western blot of Norrin bound to Tspan12 or empty nanodiscs immobilized on paramagnetic particles in the presence of 0, 0.1, 0.4, 1.6, 6, 25, or 100 µM of purified LRP6 E1E2 domain, with both Norrin and Tspan12 detected by anti-Rho1D4 antibody. Norrin is detected within the dynamic range, as shown by concentration standards loaded to the left of the ladder. (B) Association and dissociation biolayer interferometry traces of purified LRP6 (residues 20–1439, including the transmembrane domain but with a truncated C-terminus, in n-dodecyl-β-D-maltopyranoside [DDM] detergent, at 32, 100, or 320 nM) binding to MBP-Norrin-loaded biosensors. (C) Biolayer interferometry traces of 30 nM LRP6 associating to and dissociating from MBP-Norrin-loaded biosensors, pre-equilibrated with increasing concentrations of MBP-fused Tspan12 large extracellular loop (LEL).
 
 Finally, we wondered whether Tspan12 might cooperatively enhance Norrin-LRP5/6 binding to increase Norrin signaling efficiency. Of note, while LRP6 is known to use the β-propeller-EGF repeats 1 and 2 (E1E2) within its extracellular domain to bind Norrin (Ke et al., 2013), no structural information on Norrin-LRP5/6 binding is available, and AlphaFold was unable to predict the structure of a Norrin-LRP5/6 complex with high confidence (data not shown). It has been proposed that Norrin uses a positively charged patch composed of residues K54, R90, R97, G112, and R121 to bind LRP6 Chang et al., 2015; of these residues, R121 forms part of the AlphaFold-predicted binding site for Tspan12 (Figure 2B), which predicts that Tspan12 and LRP5/6 may compete for the same binding site on Norrin. Indeed, we found that Norrin can be completely displaced from nanodisc-embedded Tspan12 by increasing amounts of purified LRP6 E1E2 domain (Figure 5E and Figure 5—figure supplement 1A). We calculated the Ki to be 1.06 µM, which agrees with previous LRP6-Norrin affinity measurements (Chang et al., 2015; Ke et al., 2013). In keeping with this result, the Tspan12 LEL displayed concentration-dependent inhibition of Norrin binding to a larger portion of LRP6 (including the full extracellular and transmembrane domains but lacking a portion of the C-terminus) (Figure 5—figure supplement 1B and C). While LRP5, but not LRP6, has been genetically implicated in Norrin-directed retinal vascularization, we expect the binding site for Norrin to be conserved in both LRP5 and LRP6 because LRP6 binds Norrin, transduces Norrin-stimulated and Tspan12-enhanced TOPFLASH signaling, and is highly homologous to LRP5 (Chang et al., 2015; Ke et al., 2013; Zhou and Nathans, 2014).
 
@@ -84,7 +152,7 @@ These experiments imply that LRP5/6 and Tspan12 compete for the same binding sit
 
 The spatiotemporal specificity of Wnt- and Norrin/β-catenin signaling is tightly controlled by a growing number of known modulators. In this study, we used biochemical approaches to investigate the molecular mechanism by which the Norrin-specific co-receptor Tspan12 enhances Norrin/β-catenin signaling. We have demonstrated direct, high-affinity binding of Norrin to Tspan12, and our mutagenesis studies corroborate a binding site on the Tspan12 LEL predicted by AlphaFold Multimer. Several mutations in the predicted interface have been associated with Norrie disease, FEVR, and other diseases of the retinal vasculature. The missense mutations of clinical significance in the Tspan12 LEL are severe enough that they would be expected to disrupt the LEL fold or lead to Tspan12 aggregation (e.g. mutations to/from cysteine or proline). The Norrie disease-associated mutation T119P in Norrin would also be expected to disrupt Norrin folding, but other clinically relevant Norrin mutations at positions R115 and R121 likely exert their influence by disrupting the Norrin-Tspan12 interface. Using mechanistic models of other cell-surface modulators of Wnt/β-catenin signaling as a starting point, we probed how the direct Tspan12-Norrin interaction might promote Norrin/β-catenin signaling.
 
-## Tspan12 captures Norrin upstream of signaling
+### Tspan12 captures Norrin upstream of signaling
 
 Tspan12 has been proposed to enhance Norrin-Fzd4 affinity, supported initially by findings that Tspan12 rescues Norrin cell-surface binding and Norrin-stimulated signaling in cells when mutations disrupt the Norrin-Fzd4 interface (Lai et al., 2017). We now have shown that Tspan12 also enhances binding of Norrin to Fzd4-containing nanodiscs and Fzd4-expressing cells. This effect is most evident at very low concentrations of Norrin, which could explain why previous experiments using Norrin-conditioned media did not show Tspan12-mediated differences in cell-surface Norrin binding (Junge et al., 2009). Tspan12 might facilitate the Norrin-Fzd4 interaction by (1) increasing the number of cell-surface binding sites for Norrin and thereby increasing the local concentration of Norrin, similar to a proposed role for HSPGs in signaling through Wnt (Baeg et al., 2001; Reichsman et al., 1996) or (2) serving as a cofactor that forms a complex with Fzd4 and Norrin to increase Norrin-Fzd4 affinity, similar to a proposed role of heparin, which increases Norrin capture by Fzd4 in ELISA (Smallwood et al., 2007). On the basis that the Fzd4 CRDL and Tspan12 bind Norrin with negative cooperativity, we propose that Tspan12 does not directly enhance Norrin-Fzd4 affinity. Rather, it enhances Norrin capture and increases local Norrin concentration. As Tspan12 co-localizes with Fzd4 on the cell surface (Junge et al., 2009; Ke et al., 2013; Lai et al., 2017), Tspan12 can hand off captured Norrin to nearby Fzd4 for signaling, a process facilitated by the negative cooperativity of Norrin-Fzd4 and Norrin-Tspan12 binding.
 
@@ -106,7 +174,7 @@ It has previously been proposed that Tspan12 directly enhances Fzd4-Fzd4 (Junge 
 
 Tspan12 and Fzd4 exist as ligand-independent homodimers, heterodimers, and possibly larger oligomeric clusters in the membrane (Ke et al., 2013), but due to the split GFP reconstitution strategy utilized in this study our results do not capture Tspan12’s role in the context of a putative receptor multimer with higher-order stoichiometry (e.g., 2:2 Tspan12:Fzd4). Our reconstituted system also may not capture physiological receptor phosphorylation or other post-translational modifications that could be necessary for Tspan12 to exert a direct role in Fzd4-Norrin or Fzd4-Dvl binding. Additionally, the lipid composition, membrane fluidity, and membrane curvature that these receptors encounter in the cell membrane are not fully recapitulated in nanodiscs and could be important for Tspan12 function. Due to these limitations, further experiments conducted in cells will be required to examine the predictions of our model in the context of physiological receptor stoichiometry, post-translational modifications, and plasma membrane environment.
 
-## Tspan12 expression dictates specificity of Norrin/β-catenin signaling
+### Tspan12 expression dictates specificity of Norrin/β-catenin signaling
 
 The sensitivity of Norrin/β-catenin signaling to Tspan12 levels (Figure 4D) underscores Tspan12 expression as a mechanism by which cell response to secreted Norrin can be tuned. As such, it provides a strategy to spatiotemporally regulate development. For example, in the retina, Tspan12 is expressed in vascular endothelial cells while Fzd4 and LRP5 are more broadly expressed (Junge et al., 2009). Consequently, Tspan12 expression dictates which cells preferentially bind and respond to Norrin, thereby directing proper angiogenesis.
 
@@ -114,11 +182,343 @@ Overcoming on-target toxicity in off-target tissues presents a major challenge i
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>untagged Tspan12</td>
+      <td>DNASU</td>
+      <td>Clone HsCD00045716</td>
+      <td>Subcloned into pTT5 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tspan12∆C (human)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pVL1393 vector; residues 1–252; Rho-1D4-tagged</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tspan12 (full-length, human)</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_216381</td>
+      <td>pTT5 vector; Rho-1D4 tagged; deposited at Addgene (#216381)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tspan12-LEL11 (human)</td>
+      <td>PMID:28658627</td>
+      <td></td>
+      <td>Rho-1D4-tagged and subcloned into pVL1393 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tspan12LEL (human)</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_216383</td>
+      <td>pAcGP67a vector; residues 118–218; MBP-tagged; Deposited at Addgene (#216383)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fzd4 (mouse)</td>
+      <td>PMID:35998232</td>
+      <td>RRID:Addgene_216378</td>
+      <td>pFastBac1 vector; residues 42–537; FLAG-tagged; Deposited at Addgene (#216378)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-FLAG-Fzd4∆C-3C-GFP1-10OPT-ETVV (mouse)</td>
+      <td>PMID:35074428</td>
+      <td>RRID:Addgene_216380</td>
+      <td>pVL1393 vector; residues 42–513; Deposited at Addgene (#216380)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tspan12∆C-His-3C-GFP11 (human)</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_216382</td>
+      <td>pVL1393 vector; residues 1–252; Deposited at Addgene (#216382)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP6 (human)</td>
+      <td>PMID:35074428</td>
+      <td></td>
+      <td>pEZT-BM vector; residues 20–1439; FLAG-tagged</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP6 E1E2 (human)</td>
+      <td>PMID:22000856</td>
+      <td></td>
+      <td>pAcGP67a vector; 10xHis-tagged</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MESD (human)</td>
+      <td>PMID:35074428</td>
+      <td></td>
+      <td>pEZT-BM vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Norrin (human)</td>
+      <td>PMID:35074428</td>
+      <td>RRID:Addgene_216384</td>
+      <td>pAcGP67a vector; residues 33–133; MBP- and Rho-1D4 tags; Deposited at Addgene (#216384)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Monomeric Norrin</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_216386</td>
+      <td>pAcGP67a vector; residues 33–133; MBP- and Rho-1D4-tagged; C93A/C95A/C131A; Deposited at Addgene (#216386)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fzd4 CRDL (mouse)</td>
+      <td>PMID:30104375</td>
+      <td>RRID:Addgene_216379</td>
+      <td>pAcGP67a vector; residues 42–203; 6xHis-tagged; Deposited at Addgene (#216379)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DEP (DEP domain from mouse Dvl2)</td>
+      <td>PMID:35998232</td>
+      <td>RRID:Addgene_216386</td>
+      <td>pCDF vector; residues 416–510; MBP-tagged; Deposited at Addgene (#216386)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP nanobody</td>
+      <td>PMID:20945358</td>
+      <td></td>
+      <td>pET26(+) vector; with pelB signal sequence and 6xHis tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MSP1D1</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_20061</td>
+      <td>Sligar lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MSP1E3D1</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_20066</td>
+      <td>Sligar lab</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-link NHS-PEG4-Biotin</td>
+      <td>Thermo</td>
+      <td>Cat. #: A39259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16:0–18:1 phosphatidyl choline (POPC)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 850457</td>
+      <td>For nanodisc reconstitution (see Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16:0–18:1 phosphatidylglycerol (POPG)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840457</td>
+      <td>For nanodisc reconstitution (see Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>18:0–20:4 brain phosphatidylinositol-4,5-bisphosphate (PIP2)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840046</td>
+      <td>For nanodisc reconstitution (see Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rho anti-1D4 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>Cat. #: sc-57432; RRID:AB_785511</td>
+      <td>(0.5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE anti-His (mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>Cat. #: A00186; RRID:AB_914704</td>
+      <td>(0.33 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M1 anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat. #: F3040; RRID:AB_439712</td>
+      <td>(0.5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 goat anti-mouse secondary</td>
+      <td>LI-COR</td>
+      <td>Cat. #: 926–32210; RRID:AB_621842</td>
+      <td>(1:15,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Dylight Neutravidin-800</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 22853</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CNBr-activated sepharose</td>
+      <td>Cytiva</td>
+      <td>Cat. #: 17043001</td>
+      <td>To generate GFP nanobody resin (see Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin paramagnetic particles</td>
+      <td>Promega</td>
+      <td>Cat. #: Z5481</td>
+      <td>For bead binding competition experiments (see Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)-RIL</td>
+      <td>Agilent</td>
+      <td>Cat. #: 230245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>Expression Systems</td>
+      <td>Cat. #: 94-001F; RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Expi293 cells</td>
+      <td>Thermo</td>
+      <td>Cat. #: A14527; RRID:CVCL_D615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Freestyle293 cells</td>
+      <td>Thermo</td>
+      <td>Cat. #: R79007; RRID:CVCL_D603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T cells (Fzd1/2/4/5/7/8 KO)</td>
+      <td>PMID:28733458</td>
+      <td></td>
+      <td>Boutros lab</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tspan12 siRNA duplex #1</td>
+      <td>Sigma</td>
+      <td>Cat. #: VC30002</td>
+      <td>5’-GCUUAUCUUUGCCUUCUCCTT-3’ and 5’-GGAGAAGGCAAAGAUAAGCTT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tspan12 siRNA duplex #2</td>
+      <td>Sigma</td>
+      <td>Cat. #: VC30002</td>
+      <td>5’-AUGAGGGACUACCUAAAUATT-3’ and 5’-UAUUUAGGUAGUCCCUCAUTT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Control siRNA</td>
+      <td>Sigma</td>
+      <td>Cat. #: SIC001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Super8xTOPFLASH</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12456</td>
+      <td>Moon lab</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Light reporter assay system</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #: T1005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad Software, LLC</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold2</td>
+      <td>PMID:34265844</td>
+      <td>RRID:SCR_025454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold Multimer v2</td>
+      <td>DOI: 10.1101/2021.10.04.463034</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ColabFold</td>
+      <td>PMID:35637307</td>
+      <td>RRID:SCR_025453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX 1.6</td>
+      <td>PMID:28710774</td>
+      <td>RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v4</td>
+      <td>Structura Biotechnology</td>
+      <td>RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK293T cells with Fzd1/2/4/5/7/8 knocked out were provided by Michael Boutros, who authenticated the parental HEK293T cell line by single nucleotide polymorphism-based authentication (Voloshanenko et al., 2017). Freestyle293 cells (Thermo), Expi293 cells (Thermo), and Sf9 cells (Expression Systems) were purchased directly from vendors who provided a certificate of analysis, so we have not sent these cells for authentication. All four cell lines tested negative for mycoplasma contamination via PCR (abm).
 
-## Protein constructs, expression, and purification
+### Protein constructs, expression, and purification
 
 Human Tspan12 (DNASU) truncated after the fourth transmembrane domain (∆C, residues 1–252) and Tspan12 with the LEL replaced by that of TSPAN11 (Tspan12-LEL11, Addgene plasmid #115785 from Harald Junge; Lai et al., 2017) were C-terminally tagged with the Rho-1D4 antibody recognition sequence TETSQVAPA. Full-length Tspan12 (1-305) and derived point mutants, also with a C-terminal TETSQVAPA, were cloned into pTT5 (NRC) for purification from Expi293 cells. Mouse Fzd4 (42–537) and human LRP6 (20–1439) were preceded by an N-terminal hemagglutinin signal peptide (HAsp) followed by FLAG tag. For the split GFP tethered dimers (Bruguera et al., 2022), the sequence of HAsp-FLAG-mFzd4∆C(42-513) was followed by a 1x GS linker, the HRV 3C recognition sequence, a 1x GGTS linker, the split GFP 1–10 OPT sequence engineered by the Waldo group (Cabantous et al., 2005), a gift from Steven Boxer (Deng and Boxer, 2018), a 2x GS linker, and the C-terminal PDZ ligand from Fzd4 (sequence ETVV). Tspan12∆C (1–252) was followed by a 6xHis tag, a 1x GS linker, the HRV 3C recognition sequence, a 2x GS linker, and the GFP 11 M3 sequence (Cabantous et al., 2005). Tspan12∆C-1D4, Tspan12-LEL11-1D4, HA-FLAG-Fzd4, HA-FLAG-Fzd4∆C-3C-GFP1-10OPT-ETVV, and Tspan12∆C-His-3C-GFP11 were inserted into pVL1393 (Expression Systems) or pFastBac1 (Invitrogen) by Gibson Assembly (New England Biolabs) for expression in insect cells. LRP6 and its chaperone MESD were inserted into the pEZT-BM vector (Addgene #74099) for expression in Freestyle293 cells. The Tspan12 LEL (residues 118–218), N-terminally tagged with maltose binding protein and the 3C protease recognition sequence, was inserted into the pAcGP67a transfer vector (BD Biosciences). Virus was produced and amplified according to the manufacturer’s instructions.
 
@@ -140,7 +540,7 @@ The His6-tagged GFP nanobody sequence (Kubala et al., 2010) was cloned into pET2
 
 His6-tagged MSP1D1 and MSP1E3D1 (Addgene plasmids #20061 and #20066) were expressed in E. coli BL21(DE3)-RIL and purified (Bayburt et al., 2002; Ritchie et al., 2009) and biotinylated using EZ-link NHS-PEG4-Biotin (Thermo) as previously described (Bruguera et al., 2022; Mahoney et al., 2022).
 
-## Nanodisc reconstitution
+### Nanodisc reconstitution
 
 Receptors were inserted into nanodiscs as previously described (Bruguera et al., 2022; Mahoney et al., 2022; Ritchie et al., 2009; Whorton et al., 2007). Briefly, lipids (16:0-18:1 phosphatidyl choline [POPC], 16:0–18:1 phosphatidylglycerol (POPG) and 18:0-20:4 brain phosphatidylinositol-4,5-bisphosphate (PIP2), Avanti Polar Lipids) and cholesterol (Sigma) were purchased pre-dissolved in organic solvent, and opened stocks were stored under argon at –20°C for <3 months (POPC, POPG, PIP2) or <1 month (cholesterol). Lipids were mixed at a 48:32:20 POPC:POPG:cholesterol (or 75:5:20 POPC:PIP2:cholesterol, for DEP binding [Mahoney et al., 2022]) molar ratio and dried under a stream of argon and then under vacuum for 1 hr. Dried lipids were resuspended in HNE (20 mM HEPES pH 8.0, 100 mM NaCl, 1 mM EDTA) supplemented with 50 mM sodium cholate. HNE buffer, receptor, and MSP were added to reach final concentrations of 18 mM sodium cholate, 6 mM lipid, 0.1 mM MSP1D1 or 0.07 mM MSP1E3D1, and 5 µM receptor monomer or receptor dimer. After incubation on ice for 1 hr, detergent was removed with Bio-Beads (Bio-Rad, 83 mg beads per nmol of lipids) overnight at 4°C.
 
@@ -150,7 +550,7 @@ The eluted nanodiscs were run on SDS-PAGE along with a standard curve of known a
 
 For stoichiometry measurements, the concentration of MSP and receptor within each relevant sample was determined by quantitative western blot as described (Bruguera et al., 2022). Briefly, serial dilutions of reference proteins alongside nanodisc samples, diluted to be within the linear range of detection for the blotted protein, were loaded on SDS-PAGE gels and transferred to nitrocellulose. For Tspan12 receptor alone in nanodiscs, 0.04–0.32 picomoles of Tspan12-1D4 and 0.25–2 picomoles of 7xHis-MSP1D1 were probed by Rho anti-1D4 and THE anti-His (GenScript) antibodies respectively. For the Tspan12/Fzd4 heterodimer, 0.125–1 picomoles of Tspan12-6xHis, 0.01–0.08 picomoles of FLAG-Fzd4 were probed by THE anti-His (GenScript) and M1 anti-FLAG antibodies, respectively; and 0.25–2 picomoles of MSP1D1-biotin was detected by DyLight 800-conjugated Neutravidin (Invitrogen), as His-tagged 3C protease runs similarly to MSP1D1 on a gel. All other samples were detected with IRDye 800 Goat-anti Mouse IgG (LI-COR). For each of the two nanodisc species (Tspan12 alone and Tspan12/Fzd4 heterodimer), all proteins within three independently reconstituted samples were measured three times each in separate western blots.
 
-## Biolayer interferometry
+### Biolayer interferometry
 
 Kinetic and steady-state binding affinities were measured by BLI as previously described (Bruguera et al., 2022; Mahoney et al., 2022) using Octet RED384 (Sartorius) or GatorPrime (Gator Bio) instruments at 25°C at 1000 rpm shaking, in 20 mM HEPES pH 7.4, 150 mM NaCl, 1 mM EDTA, 0.1% BSA. Binding buffer for experiments that included LRP6 (Figure 5—figure supplement 1B and C) also included 3 mM CaCl2. Binding experiments between soluble proteins only (i.e., the Tspan12 LEL and Norrin, ±CRDL) additionally included 0.05% Tween 20 to minimize non-specific binding. Streptavidin-coated biosensors were loaded with 20 nM biotinylated nanodiscs for 5 min (yielding an interference shift between 1.5 and 2.5 nm) prior to binding.
 
@@ -160,24 +560,24 @@ After preliminary processing (Savitzky-Golay filtering, signal subtraction of co
 
 Each binding experiment was performed in triplicate, using at least two independent preparations each of receptor and ligand.
 
-## AlphaFold predictions
+### AlphaFold predictions
 
 The sequence for Tspan12 (full-length) alone or with one or two copies of Norrin (residues 25–133) were input into AlphaFold 2 (Jumper et al., 2021) or AlphaFold Multimer v2 (Evans et al., 2022) using ColabFold (Mirdita et al., 2022) via ChimeraX (1.6, daily build from October 23, 2022) (Goddard et al., 2018). The following PDB structures were used as templates for Tspan12: 6wvg_A, 6wvg_B, 6k4j_A, 5tcx_A, 7rdb_A, 7rdb_H, 2m7z_A, 6wvg_A, 6wvg_B; and for Norrin: 5bpu_A, 5bqe_B, 5bq8_A, 5aej_A, 4jph_B, 5hk5_F, 2kd3_A, 4nt5_A, 4x1j_B, 6l6r_C, 6l6r_D, 2k8p_A, 4x1j_A, 6p57_A, 7fih_Y, 5cl1_A, 4yu8_A, 4ay9_B, 4mqw_B, 4mqw_E. The top-ranked structure (sorted by pLDDT for Tspan12 alone, or pTMscore for Tspan12+Norrin complexes) was relaxed with Amber (Eastman et al., 2017) and used for further studies.
 
-## Bead binding competition experiments
+### Bead binding competition experiments
 
 Streptavidin paramagnetic particles (Promega), pre-equilibrated in wash buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 1 mM EDTA, 0.2% BSA), were pre-bound to Tspan12∆C (reconstituted in biotinylated MSP1D1) or receptorless nanodiscs. After 30 min at 25°C, the beads were quenched with biotin and washed three times with wash buffer. MBP-Norrin at 32 nM was premixed with 0, 0.1, 0.4, 1.6, 25, or 100 µM LRP6 E1E2 or Fzd4 CRDL and added to the beads, which were at a final concentration of 0.2 mg/mL paramagnetic particles and 50 nM Tspan12∆C; these conditions were chosen such that, in the absence of competitor, approximately half of the Norrin would be bound. Tubes were rotated for 16 hr at 4°C, then beads were washed three times with ice-cold wash buffer and protein was eluted with 1× non-reducing Laemmli sample buffer (non-reducing) at room temperature for 15 min. Three replicates per condition were loaded on an SDS-PAGE gel, transferred to nitrocellulose, and analyzed by western blot with anti-Rho 1D4 antibody, followed by goat anti-mouse 800 (LI-COR). Background-subtracted band intensities, which were verified to be in the linear range of detection using a standard curve loaded on the same gel, were quantified using Odyssey software (LI-COR). Data were analyzed in Prism (GraphPad) using the following system of equations (Wang, 1995), which model the fraction of Norrin bound vs. competitor concentration (Fzd4 CRDL or LRP6 E1E2):
 
 For modeling SOS-mediated inhibition of Norrin-Tspan12 binding assayed by BLI, the IC50 was converted to Ki using the Cheng-Prusoff equation.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 To analyze the oligomeric state of Norrin, MBP-Norrin (WT or C93A/C95A/C131A) was diluted to 100 nM in purification buffer (20 mM HEPES pH 8, 300 mM NaCl, 1 mM EDTA, 5% glycerol) and applied to glow-discharged CF-300Cu grids (Electron Microscopy Sciences), which were washed once with buffer (20 mM HEPES pH 8, 100 mM NaCl, 1 mM EDTA) and twice with 1% uranyl acetate stain before drying and imaging on a 100 kV Morgagni electron microscope equipped with an Orius CCD camera (Gatan) at 50,000×. Particle picking and 2D class averaging was performed in cryoSPARC v4 (Structural Biotechnology Inc).
 
-## Cell-binding experiments
+### Cell-binding experiments
 
 Expi293 cells (Thermo Fisher) were maintained in Expi293 media (Thermo Fisher) and transfected at a density of 3×106 cells/mL using ExpiFectamine293 (Thermo Fisher) according to the manufacturer’s instructions. Cells were transfected with untagged Tspan12 in pTT5 (NRC), FLAG-tagged Fzd4 in pcDNA3.1 (Thermo Fisher), or both Tspan12 and Fzd4 (300 ng each receptor per mL of cells), with additional empty vector to bring total DNA transfected to 1 µg/mL of cells. 48 hr post-transfection, cells were transferred to a 96-well v-bottom plate and incubated with 0, 0.032, 0.1, 0.32, 1, or 3.2 nM purified MBP-Norrin in binding buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 1 mM EDTA, 0.2% BSA) for 10 min at 23°C, shaking. Cells were collected by centrifugation and washed twice with binding buffer and incubated with Alexa Fluor 647-conjugated anti-rho 1D4 antibody in binding buffer for 15 min at room temperature. Cells were washed once with binding buffer and resuspended in PBS prior to detection with an Accuri C6 Plus flow cytometer (BD). Data were exported to Prism (GraphPad) for quantification of median fluorescence intensity and statistical analysis.
 
-## β-Catenin transcriptional reporter assay and Fzd knockout cell line
+### β-Catenin transcriptional reporter assay and Fzd knockout cell line
 
 HEK293T cells with Fzd1/2/4/5/7/8 knocked out (Voloshanenko et al., 2017) were maintained in DMEM (Gibco) supplemented with 10% fetal bovine serum (Gemini). In a six-well plate, cells were seeded at 200,000 cells/well and immediately transfected with 30 picomoles of control siRNA (Sigma SIC001), or 15 picomoles each of two previously validated (Otomo et al., 2014) Tspan12 siRNA duplexes (#1: 5’-GCUUAUCUUUGCCUUCUCCTT-3’ and 5’-GGAGAAGGCAAAGAUAAGCTT-3’; #2: 5’-AUGAGGGACUACCUAAAUATT-3’ and 5’-UAUUUAGGUAGUCCCUCAUTT-3’) (Sigma) using Lipofectamine RNAiMax (Thermo Fisher) diluted in OptiMEM (Thermo Fisher) according to the manufacturer’s instructions, with media replaced after 16 hr. Two days post-transfection, cells were seeded at 12,000 cells/well in white 96-well plates (PerkinElmer) and transfected 4 hr later with receptor vectors in pcDNA (0.1 ng/well FLAG-Fzd4_pcDNA, untagged Tspan12_pTT5 amounts as indicated), Super8xTOPFLASH (Addgene plasmid #12456, 80 ng/well) and LacZ under a CMV promoter (20 ng/well) using Lipofectamine 2000 (Invitrogen). Media was replaced 16–20 hr later with DMEM alone or supplemented with purified Norrin, which was cleaved from MBP with 3C protease prior to addition to cells. Cells were lysed 22–26 hr later and assayed for luciferase and β-galactosidase activity using the Dual-Light system (Invitrogen) according to the manufacturer’s instructions on a BioTek Synergy2 plate reader. Luciferase signal was normalized to β-galactosidase signal; all TOPFLASH values are reported as fold change over the basal signal (defined as 0 ng Tspan12, 0 nM Norrin, in cells transfected with control siRNA).

@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00ygt2y02 Ernst Strüngmann Institute for Neuroscience Frankfurt Germany
+1. Ernst Strüngmann Institute for Neuroscience Frankfurt Germany ([ROR:00ygt2y02](https://ror.org/00ygt2y02))
 
 † Corresponding author
 

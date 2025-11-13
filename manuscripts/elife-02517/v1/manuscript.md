@@ -12,4 +12,4 @@
 
 ## Abstract
 
-FoxA , an evolutionarily conserved gene involved in the development of the digestive system in many animals, has an important role in regeneration in flatworms.
+FoxA, an evolutionarily conserved gene involved in the development of the digestive system in many animals, has an important role in regeneration in flatworms.

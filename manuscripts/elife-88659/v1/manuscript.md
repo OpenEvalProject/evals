@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03z9tma90 Department of Chemical Engineering, Bogazici University Istanbul Turkey
-2. https://ror.org/03z9tma90 Polymer Research Center, Bogazici University Istanbul Turkey
-3. https://ror.org/03qryx823 Department of Molecular Microbiology, Bruce and Ruth Rappaport Faculty of Medicine, Technion-Israel Institute of Technology Tel Aviv Israel
-4. https://ror.org/04mhzgx49 Department of Biochemistry and Molecular Biology, Faculty of Life Sciences, Tel-Aviv University Tel-Aviv Israel
+1. Department of Chemical Engineering, Bogazici University Istanbul Turkey ([ROR:03z9tma90](https://ror.org/03z9tma90))
+2. Polymer Research Center, Bogazici University Istanbul Turkey ([ROR:03z9tma90](https://ror.org/03z9tma90))
+3. Department of Molecular Microbiology, Bruce and Ruth Rappaport Faculty of Medicine, Technion-Israel Institute of Technology Tel Aviv Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+4. Department of Biochemistry and Molecular Biology, Faculty of Life Sciences, Tel-Aviv University Tel-Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
 
 † Corresponding author
 
@@ -40,11 +40,37 @@ By combining ANM-LD and GNM-TE, we present here the allosteric network of CFTR. 
 
 ## Results
 
-## TE calculations identify allosteric hotspots in CFTR
+### TE calculations identify allosteric hotspots in CFTR
 
 First, we performed GNM-TE calculations on non-phosphorylated ATP-free human CFTR (PDB ID 5UAK, Liu et al., 2017b) using the 10 slowest GNM ‘modes’. As explained in the Materials and methods section and elsewhere (Acar et al., 2020; Haliloglu et al., 1997), GNM decomposes a complex motion (such as a conformational change, or a person walking) to discrete dynamic building blocks, historically termed GNM ‘modes’, the ensemble of which comprise the complex motion. These include modes of motion that involve large parts of the protein and lead to major conformational changes (termed ‘slow modes’). The ‘slow modes’ often display the greatest degree of collective movements. Modes that involve local conformational adjustments and a smaller number of residues and display fewer collective movements are considered ‘fast modes’. We expected that the 10 slowest modes, those comprising the largest of motions, will be the main allosteric effectors, and their ensemble will suffice to capture the overall dynamics of CFTR. Indeed, Eigenvalue analysis demonstrated that the 10 slowest modes of CFTR encompass its complete dynamic spectrum (Figure 1—figure supplement 1).
 
 Figure 1 shows the residues identified as the main allosteric sources in ATP-free human CFTR, obtained by using an interaction cutoff distance (Rcut) of 10 Å. Very similar results were obtained when Rcut of 7 Å was used instead (Figure 1—figure supplement 2), suggesting that the results are not very sensitive to this parameter. The residues that GNM-TE identified as main allosteric determinants showed partial overlap with the hinge residues identified by GNM: Of the 60 residues that serve as main allosteric sources, 22 were located within 4 Å of a hinge residue, and this co-localization was highly statistically significant (Figure 1—figure supplement 3). This is perhaps not unexpected, as hinge residues likely play an important role in transmitting the strain energy induced by binding of allosteric ligands.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-v1.jpg)
+
+**Figure 1.:** Shown is the amount of information (transfer entropy [TE] score) transmitted by each residue of dephosphorylated ATP-free human CFTR (PDB ID 5UAK) calculated using the 10 most collective Gaussian network model (GNM) modes (solid black trace). The positions of the 14 functionally important residues (see text for details) and of 30 ATP-binding residues are shown as cyan and magenta spheres, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Shown is the amount of information transmitted (transfer entropy [TE] score) by each residue of dephosphorylated ATP-free (A) or phosphorylated ATP-bound (B) human cystic fibrosis transmembrane conductance regulator (CFTR) calculated using Rcut of 7 Å or 10 Å (blue and orange curves, respectively).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** 100,000 sets of 60 randomized positions were generated, and for each such set the number of matches (within a cutoff distance of ≤4 Å) to a position of a hinge residue that was identified by GNM was counted. Shown is the probability distribution for the 100,000 random sets (cyan bars). Blue and red vertical lines indicate the mean value of matches for the random and for the GNM-TE determined peaks, respectively. Also shown is the p-value obtained by one-tailed hypothesis tests with a significance level of 0.05.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** 100,000 sets of 60 randomized positions were generated and for each such set the number of matches with the positions of the 14 essential residues was counted. Shown is the probability distribution when considering only exact matches (A), or also first-coordination sphere interactions within a cutoff distance of ≤4 Å (B), or also second-coordination sphere interactions within a cutoff distance of ≤7 Å (C). Blue and red vertical lines indicate the mean value of matches for the random and Gaussian network model-transfer entropy (GNM-TE)-based predictions, respectively. Also shown are the p-value obtained by one-tailed hypothesis tests with a significance level of 0.05.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** 100,000 sets of 60 randomized positions were generated and for each such set the number of matches with the positions of the ATP-binding residues was counted. Shown is the probability distribution when considering only exact matches (A), or also first-coordination sphere interactions within a cutoff distance of ≤4 Å (B), or also second-coordination sphere interactions within a cutoff distance of ≤7 Å (C). Blue and red vertical lines indicate the mean value of matches for the random and Gaussian network model-transfer entropy (GNM-TE)-based predictions, respectively. Also shown are the p-value obtained by one-tailed hypothesis tests with a significance level of 0.05.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Shown is the amount of information transmitted (transfer entropy [TE] score) by each residue of dephosphorylated ATP-free human cystic fibrosis transmembrane conductance regulator (CFTR) (PDB ID 5UAK) calculated using the 10 most collective Gaussian network model (GNM) modes (solid black trace). The positions of 86 missense disease-causing mutations (https://cftr2.org/) are shown as blue spheres. (B–D) 100,000 sets of 60 randomized positions were generated and for each such set the number of matches with the positions of the disease-causing mutations was counted. Shown is the probability distribution when considering only exact matches (B), or also first-coordination sphere interactions within a cutoff distance of ≤4 Å (C), or also second-coordination sphere interactions within a cutoff distance of ≤7 Å (D). Blue and red vertical lines indicate the mean value of matches for the random and GNM-TE-based predictions, respectively. Also shown are the p-values obtained by one-tailed hypothesis tests with a significance level of 0.05.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig2-v1.jpg)
 
@@ -56,9 +82,21 @@ As shown in Figures 1 and 2A, the entropy sources residues (i.e. residues that d
 
 The results shown in Figure 2A were obtained using the 10 slowest GNM modes. However, during the calculations the entropic contribution of the slowest modes may overshadow that of the faster (less collective) ones, which may nevertheless have important functional roles (for more details, see Altintel et al., 2022). To circumvent this problem, one may repeat the calculations while omitting the slowest GNM modes, enabling the detection of latent allosteric interactions that may otherwise be hidden in the global fluctuations. For ATP-free human CFTR, the greatest effect was observed upon removal of the first and second slowest modes: Upon removal of the slowest GNM mode, a new cluster of residues that serve as allosteric sources was revealed (Figure 2B). These residues, which are distributed roughly symmetrically in the TMDs, include the putative gating residues (e.g. P99, T338, S341, Liu et al., 2017b) and additional residues that line the ion permeation pathway. The residues that form the ivacaftor binding site (Liu et al., 2019) were also revealed as entropy sources by removal of the slowest GNM mode (Figure 2B), demonstrating the utility of this approach. Removal of the next slowest GNM mode reveals another cluster of TMD residues that serve as entropy/allostery sources. Unlike the above-described symmetric cluster, this cluster is highly asymmetric, and is comprised solely of residues in TMD1 (Figure 2C). Interestingly, this cluster of residues is located at and just above the future site for docking of the regulatory domain (Bozoky et al., 2013; Chappe et al., 2005 and see also later in Figure 3C–D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig3-v1.jpg)
+
+**Figure 3.:** (A) Shown is the amount of information transmitted (transfer entropy [TE] score) by each residue of phosphorylated ATP-bound human CFTR (PDB ID 6MSM) calculated using the 10 most collective Gaussian network model (GNM) modes (solid black trace). The positions of the ATP-binding residues are shown as magenta spheres. (B, C) A cartoon representation of phosphorylated ATP-bound human CFTR (PDB ID 6MSM), where each residue is colored according to the amount of information it transmits (TE score), calculated using the 10 most collective GNM modes (B), or upon removal of the first most collective GNM mode (C). Red and blue colors represent high and low levels of information output, respectively, and the ATP molecules are shown as black/gray spheres. (D) A magnified view of the allosteric cluster that is adjacent to the docking site of the R domain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Net transfer entropy (TE) between all residues of CFTR was calculated using the 10 most collective Gaussian network model (GNM) modes for (A) dephosphorylated ATP-free human CFTR (PDB ID 5UAK) and for (B) phosphorylated ATP-bound human CFTR (PDB ID 6MSM). In this 2D cross-correlations map the transfer entropies from effector residues (Y-axis) to the affected residues (X-axis) are color coded, with red and blue colors indicating residues that transmit information (entropy sources) and residues that receive information, respectively. The white lines indicate the domain boundaries, and the gray triangles indicate the locations of the ATP-binding sites.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Shown is the amount of information transmitted (transfer entropy [TE] score) by each residue of dephosphorylated ATP-free (A) or phosphorylated ATP-bound (B) human (blue curves) or zebrafish (orange curves) cystic fibrosis transmembrane conductance regulator (CFTR) (PDB IDs 5UAK, 5UAR, 6MSM, 5W81, respectively).
+
 The above analysis revealed two latent entropy hotspots: one surrounding the ion permeation pathway (Figure 2B) and the other adjacent to the docking site of the regulatory domain (Figure 2C). Both sites were hidden by the more dominant global fluctuations of the protein (Figure 2A). Their identification in this conformation, which is non-conducting and where the R domain is still wedged between the NBDs (Liu et al., 2017b), highlights once again the pre-existence of a dynamic infrastructure which will assume a central role following phosphorylation and repositioning of the R domain.
 
-## ATP binding and phosphorylation rewires and focuses the allosteric connectivity of CFTR
+### ATP binding and phosphorylation rewires and focuses the allosteric connectivity of CFTR
 
 To study the effects of ATP binding and phosphorylation, we conducted TE analysis of phosphorylated ATP-bound CFTR (PDB ID 6MSM, Zhang et al., 2018). We observed that phosphorylation and binding of ATP greatly rewires the overall allosteric connectivity in CFTR (Figure 3—figure supplement 1, and compare Figures 1 and 3A): residues that serve as entropy sources are now found in all the domains (TMD1, NBD1, TMD2, NBD2) and the entropy peaks are sharp, sharper than those observed for the unphosphorylated ATP-free form (compare Figures 1 and 3A), indicating that information is originating from distinct residues/cluster of residues. This suggests that phosphorylation and binding of ATP focuses the dynamics of CFTR, which pre-existed in a more diffuse manner in the unphosphorylated ATP-free state. This observation suggests that this conformation is the preferred template/target for structure-guided development of allosteric modulators.
 
@@ -66,7 +104,7 @@ As discussed above and shown in Figure 1, in the ATP-free state the entropy peak
 
 As explained above (see analysis of the ATP-free conformation), to identify latent entropy sources we repeated the TE calculations for the phosphorylated ATP-bound state after removing the two slowest modes. Several striking features were revealed by these calculations (Figure 3C). First, the entropy sources in the NBDs have now migrated from the ATP-binding sites at the dimer interface toward the intracellular loops, perfectly positioned to transmit the signal to the TMDs. Second, the TMD allosteric peaks surrounding the gating residues and the ion permeation pathway have migrated toward the extracellular exit, as if to prepare for ion exit. Lastly, a cluster of residues that serve as strong entropy sources appeared in the TMDs in an asymmetric manner (Figure 3C–D). These residues are found exclusively in TMD1 and comprise or are adjacent to the site of interaction of the regulatory (R) domain (Bozoky et al., 2013; Chappe et al., 2005). This observation suggests that the role of the R domain may not be limited to steric obstruction of NBD dimer formation in the unphosphorylated ATP-free state. The presence of this cluster of information-transmitting residues in the vicinity of the docking site of the R domain may explain previous observations that deletion of the R domain leads to fewer channel opening events, and that exogenous addition of the phosphorylated R domain peptide increases channel open probability of CFTR construct deleted of the R domain (Winter and Welsh, 1997; Ma et al., 1997).
 
-## Concerted movements in CFTR
+### Concerted movements in CFTR
 
 The TE analysis presented above provides a measure of information transfer between residues and domains. However, it gives no information of the physical nature of the conformational changes that are involved. To complement the GNM-TE calculations, we used ANM-LD, a molecular simulations approach which computes the trajectory of a conformational change between two known states of a protein (Atilgan et al., 2001; Brünger et al., 1984). We simulated the transition between non-phosphorylated ATP-free and phosphorylated ATP-bound human CFTR (Liu et al., 2017b; Zhang et al., 2018). To understand the allosteric connectivity that underlies this conformational change, we analyzed the degree of correlated movements between all CFTR residues. At the basis of this analysis is the assumption that residues that are allosterically connected will move in synchrony in both space and time. An extreme example of such synchronization is the perfect correlation of each residue with itself (diagonal in Figure 4A). Similarly, two residues that are sequential in the amino acid sequence will also display high correlation. However, when highly synchronized movements are observed for residues or domains that are distant in sequence and in 3D space, this likely represents allosteric connectivity.
 
@@ -76,15 +114,23 @@ The TE analysis presented above provides a measure of information transfer betwe
 
 The 2D cross-correlation map obtained for the transition between non-phosphorylated ATP-free and phosphorylated ATP-bound human CFTR is shown in Figure 4A. In this map red colors indicate high positive correlations and blue colors high negative correlations. Red colors thus indicate residues that move in parallel vectors in space and time, and blue colors indicate residues that move in anti-parallel vectors in space and time. The map is dominated by large and continuous patches of red (positive correlation) and blue (negative correlation) areas and is very similar to the 2D cross-correlation map calculated for PglK (Acar et al., 2020), a lipid-linked oligosaccharide flippase that adopts the canonical ABC exporter 3D fold (Perez et al., 2015). These observations suggest that, as inferred from the cryo-EM structures of CFTR (Liu et al., 2017b; Zhang et al., 2018), global rigid body motions with a relatively small number of hinges underlie this conformational change, and that the conformational changes of CFTR are similar to those of canonical ABC exporters. The two NBDs display asymmetric allosteric connectivity: NBD1 shows a tighter correlation with the residues that surround the permeation pathway (Figure 4B), while NBD2 (harboring the catalytic Walker B glutamate) is more strongly correlated with ECL1 (extracellular loop 1) (Figure 4C) which is known to stabilize the conducting state of the channel (Infield et al., 2016).
 
-## Sequence of allosteric transduction in CFTR
+### Sequence of allosteric transduction in CFTR
 
 The ANM-LD simulations offer an opportunity to examine mechanistic features that are difficult to determine experimentally. One such feature is the pre-equilibrium kinetics of allosteric interactions: if residues A and B are allosterically connected, does the conformational change of A follow that of B, or vice versa? To investigate the sequence of allosteric transduction in CFTR we re-analyzed the simulations while imposing a time delay between the conformational changes of allosterically coupled residues (or domains) of interest. For any two allosterically coupled residues, if we define that the conformational change in A occurs before that of B, and still observe a positive correlation in the 2D correlations map, this means that the conformational change of A precedes that of B. If the correlation is lost, this means that B likely precedes A, which can be confirmed by imposing the opposite time delay (i.e. imposing that the change in B precedes) and verifying that the positive correlation is again observed (see Materials and methods for a mathematical expression of these relations). This approach can be used to track the entire route of allosteric signal transduction as detailed below.
 
 Rate-equilibrium free-energy relationship analysis and single molecule FRET studies both suggest that the allosteric signal originates at the NBDs and propagates to the TMDs (Sorum et al., 2015; Levring et al., 2023). Our results agree with these observations: in parallel simulations we repeatedly observed that the conformational change from the dephosphorylated ATP-free state to the phosphorylated ATP-bound one begins with the movement of the NBDs. In addition, the TE analysis of the inward-facing ATP-free state demonstrated that in this conformation the allosteric peaks are located almost exclusively at the NBDs (Figure 1). Of the two NBDs, the catalytic NBD2 seems to provide the greater allosteric input (Figure 1 and Figure 2A ) and therefore as detailed below we began tracing the allosteric signal at NBD2. As shown above (Figure 4C), in the absence of a time delay the movements of NBD2, ICL2/3, TMD2 (including TM8 up to its hinge), and ECL1 are highly synchronized. However, this correlation persists only if NBD2 leads this motion and ICL2/3, TMD2/TM8, and ECL1 follow (Figure 5—figure supplement 1 green rectangles, Figure 5 step I). This observation strongly suggests that the movement of NBD2 is the leading event and those of ICL2/3, TMD2/TM8, and ECL1 follow, and that the allosteric signal propagates from NBD2 to ICL2/3, TMD2/TM8, and ECL1 (Figure 5 center, green arrows). Notably, based on their recent single molecule studies, Levring et al. proposed similar cause-and-effect relations between the catalytic ATP site and TM8 (Levring et al., 2023).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig5-v1.jpg)
+
+**Figure 5.:** Dynamic cross-correlations were calculated using a time delay (τ) of 16 cycles out of 50 required to complete the conformational transition between the dephosphorylated ATP-free and phosphorylated ATP-bound states. Red and blue colors indicate high and low correlations, respectively. Steps I–IV: Each residue is colored according to the degree of the correlation of its movement at time (t + τ) relative to the movement at time (t) of S1251 of nucleotide binding domain (NBD)2 (step I), D110 of ECL1 (step II), T460 of NBD1 (step III), and the gating residue T338 (step IV). Center (large) panel: Shown is a summary of the allosteric trajectory, originating from NBD2 (green) to ICL2/3 and ECL1 (magenta), from ECL1 to NBD1 (blue), from NBD1 to the permeation pathway helices (orange), and finally back to NBD2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88659/elife-88659-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Shown is the time-delayed dynamic cross-correlation map for the transition between the ATP-free and ATP-bound conformations of CFTR. A time delay (τ) of 16 cycles (out of a 50 necessary to complete this transition) was imposed between residues i (vertical axis) and residues j (horizontal axis). Red and blue colors represent positive and negative correlations, respectively. As shown, the synchrony between the movements of nucleotide binding domain (NBD)2 and ICL2/3 and ECL1 are maintained if NBD2 moves first but are lost if the temporal order of the motions is reversed (compare solid and dashed green rectangles, respectively). Similarly, ECL1 and NBD1 move in synchrony only if the former leads the motion and not vice versa (compare solid and dashed magenta rectangles, respectively), NBD1 leads the motion of the permeation pathway TM helices (PPH, compare solid and dashed blue rectangles, respectively), and the gating residues and the permeation pathway TM helices lead NBD2 (compare solid and dashed orange rectangles, respectively).
+
 From ECL1 the allosteric signal propagates to NBD1: The movements of these two domains are highly correlated, but only if ECL1 leads and NBD1 follows (Figure 5—figure supplement 1 magenta rectangles, Figure 5 step II, and Figure 5 center, magenta arrow). Similar considerations suggest that from NBD1 the allosteric signal propagates to the gating residues and to the TM helices that surround the permeation pathway: The movements of these domains are only synchronized if the former leads and the latter follows (Figure 5—figure supplement 1 blue rectangles, Figure 5 step III, and Figure 5 center, blue arrow). In turn, the movements of the gating residues and the permeation pathway TM helices are correlated with those of NBD2, but only if the TM helices lead and NBD2 follows (Figure 5—figure supplement 1 orange rectangles, Figure 5 Step IV). We therefore conclude that the allosteric signal propagates from the permeation pathway to NBD2, thus completing the cycle of allosteric transduction (Figure 5 center, orange arrow).
 
-## Modulation of CFTR by drugs
+### Modulation of CFTR by drugs
 
 In the past decade, the development of small-molecule CFTR modulators revolutionized CF treatment and led to a dramatic reduction in patient morbidity and increased life expectancy (Clancy, 2018). There are currently four FDA-approved drugs that are used to treat CF: The type I correctors lumacaftor (VX-809) and tezacaftor (VX-661) stabilize mutant CFTR variants (predominantly the most common ΔF508 mutation) reducing premature protein degradation and improving surface presentation of the mature channel (Van Goor et al., 2011; Fiedorczuk and Chen, 2022b). The potentiator ivacaftor (VX-770) enhances the activity of conductance-defective mutants by increasing the open probability (Po) of the channel (Levring et al., 2023; Liu et al., 2019; Eckford et al., 2012), and the dual-function type III corrector elexacaftor (VX-445) stabilizes unstable variants and increases channel open probability (Shaughnessy et al., 2021; Veit et al., 2021). The recently published structures of WT and ΔF508CFTR bound to various drugs (Fiedorczuk and Chen, 2022a) enabled us to investigate the allosteric effects of the drugs. First, we conducted GNM-TE analysis on ΔF508CFTR bound to Trikafta (PDB ID 8EIQ, Fiedorczuk and Chen, 2022a), a trivalent drug which combines ivacaftor, tezacaftor, and elexacaftor and is currently the most advanced CF treatment. As shown in Figure 6A, the type I correctors lumacaftor and tezacaftor bind at ‘valleys’, i.e., to residues that are not allosteric sources. These results are consistent with the mechanism of these drugs which improve the function of CFTR by lowering its ∆G(folding) rather than by modulating its activity (Fiedorczuk and Chen, 2022b). In contrast, the residues that comprise the binding sites for ivacaftor and elexacaftor also include ones that serve as main allosteric sources (Figure 6A), alluding to their role as allosteric modulators.
 
@@ -114,64 +160,106 @@ A new allosteric hotspot was identified in TMD1, in a cleft formed by TM helices
 
 ## Materials and methods
 
-## GNM-based TE (code is freely available at https://github.com/PRC-comp/ANMLD_TE)
+### GNM-based TE (code is freely available at https://github.com/PRC-comp/ANMLD_TE)
 
 GNM is a minimalist 1D elastic network model that assumes a Gaussian distribution of fluctuations that is isotropic in nature, operating within the confines of a given protein’s topology. The GNM model relies on a pair of parameters: force constant governing harmonic interactions and the cutoff distance within which these interactions occur. In this model, the force constant is uniform for all interactions and is conventionally set to unity. The range of interaction is defined by a cutoff distance, typically ranging between 7 Å and 10 Å, with a value of 10 Å being employed in this study. TE formulation (Hacisuleyman and Erman, 2017b) which is based on GNM (Haliloglu et al., 1997; Bahar et al., 1997) reveals the direction of information flow between two residues i and j. Given a certain movement in residue i, TE is a measure of the reduction of the uncertainty in the movements of residue j with a time delay τ between the movements of both residues.
 
-TEi,j (τ) between residues i and j at time τ is formulated as (Hacisuleyman and Erman, 2017a)(1)Ti→j(τ)=S(ΔRj(t+τ)|ΔRi(t))−S(ΔRj(t+τ)|ΔRi(t),ΔRj(t))
+TEi,j (τ) between residues i and j at time τ is formulated as (Hacisuleyman and Erman, 2017a)
 
-where the s are conditional entropies, given by,(2)S(ΔRj(t+τ)|ΔRi(t))=−⟨ln⁡p(ΔRi(0),ΔRj(τ))⟩+⟨ln⁡p(ΔRi(0))⟩(3)S(ΔRj(t+τ)|ΔRi(t),ΔRj(t))=−⟨ln⁡p(ΔRj(0),ΔRj(τ))⟩+⟨ln⁡p(ΔRi(0),ΔRj(0),ΔRj(τ))⟩
+$$
+T_{i→j}(\tau)=S(ΔR_{j}(t+\tau)|ΔR_{i}(t))−S(ΔR_{j}(t+\tau)|ΔR_{i}(t),ΔR_{j}(t))
+$$
+
+where the s are conditional entropies, given by,
+
+$$
+S(ΔR_{j}(t+\tau)|ΔR_{i}(t))=−⟨ln⁡p(ΔR_{i}(0),ΔR_{j}(\tau))⟩+⟨ln⁡p(ΔR_{i}(0))⟩
+$$
+
+
+
+$$
+S(ΔR_{j}(t+\tau)|ΔR_{i}(t),ΔR_{j}(t))=−⟨ln⁡p(ΔR_{j}(0),ΔR_{j}(\tau))⟩+⟨ln⁡p(ΔR_{i}(0),ΔR_{j}(0),ΔR_{j}(\tau))⟩
+$$
 
 For more details of the definitions of GNM time correlation of the residue fluctuations in Equations 4 and 5, see Hacisuleyman and Erman, 2017a; Haliloglu et al., 1997.
 
-The net TE from residue i to j at a given τ is described as(4)ΔTi→j(τ)=Ti→j(τ)−Tj→i(τ)
+The net TE from residue i to j at a given τ is described as
 
-where ΔTi→j(τ) estimates the direction of TE between residues i and j in a certain time delay τ. Thus, the TE calculations reveal entropy/information sources and receivers: Entropy sources have positive net TE values and send information to many other residues, and entropy receivers have negative net TE values and receive information from the rest of the structure.
+$$
+ΔT_{i→j}(\tau)=T_{i→j}(\tau)−T_{j→i}(\tau)
+$$
+
+where $ΔT_{i→j}(\tau)$ estimates the direction of TE between residues i and j in a certain time delay τ. Thus, the TE calculations reveal entropy/information sources and receivers: Entropy sources have positive net TE values and send information to many other residues, and entropy receivers have negative net TE values and receive information from the rest of the structure.
 
 The choice of τ between the movement of residues is important to identify causal interrelations: when τ is too small, only local cause-and-effect relations (between adjacent amino acids) will be revealed. If τ is big enough, few (if any) long-range cause-and-effect relations will manifest. In a previous work (Acar et al., 2020), we studied in detail the effects of choosing different τ values and found that an optimal value of τ which maximizes the degree of collectivities of net TE values is in most cases 3× τopt(τopt is the time window in which the total TE of residues is maximized) (see also Figure S1 in Acar et al., 2020).
 
-## Degree of collectivity and TECol score
+### Degree of collectivity and TECol score
 
-The degree of collectivity is a measure of the number of residues that are influenced by the movement of one residue, i.e., how collective is the information transfer? Utilizing Bruschweiler’s study (Brüschweiler, 1995), collectivity values of residues in information transfer are calculated based on the positive net TE values (Altintel et al., 2022) as(5)Ki,s=1Nexp⁡(−∑j=1Nα(ΔTij,s(τ))2log(α(ΔTij,s(τ))2))
+The degree of collectivity is a measure of the number of residues that are influenced by the movement of one residue, i.e., how collective is the information transfer? Utilizing Bruschweiler’s study (Brüschweiler, 1995), collectivity values of residues in information transfer are calculated based on the positive net TE values (Altintel et al., 2022) as
 
-where s is a selected subset of slow GNM modes, N is the total number of residues, and α is the normalization factor which is determined as(6)∑i=1Na(ΔTij,s(τ))2=1
+$$
+K_{i,s}=\frac{1}{N}exp⁡(−\sumj=1N\alpha(ΔT_{ij,s}(\tau))^{2}log(\alpha(ΔT_{ij,s}(\tau))^{2}))
+$$
+
+where s is a selected subset of slow GNM modes, N is the total number of residues, and α is the normalization factor which is determined as
+
+$$
+\sumi=1Na(ΔT_{ij,s}(\tau))^{2}=1
+$$
 
 Here, s covers 3 subsets of the 10 slowest modes: Modes 1–10 (i.e. all 10), modes 2–10, and modes 3–10. τ is taken as three times the optimum tau value that maximizes the collective information transfer (Altintel et al., 2022). The 10 slowest modes are considered since the eigenvalue distribution of the dynamic modes shows they fully represent the slow end of the dynamic spectrum (Figure 1—figure supplement 1).
 
-TECol score of each residue i is calculated by the multiplication of its cumulative positive net TE value (the sum of positive net TE values that residue i sends to the other residues) with its collectivity Ki,s value in each subset s as(7)TEColScorei,s= Ki,s⋅∑j=1NΔTij,s
+TECol score of each residue i is calculated by the multiplication of its cumulative positive net TE value (the sum of positive net TE values that residue i sends to the other residues) with its collectivity Ki,s value in each subset s as
+
+$$
+TEColScore_{i,s}= K_{i,s}⋅\sumj=1NΔT_{ij,s }
+$$
 
 The TECol score, combining TE and collectivity values, is used in the determination of the most functionally plausible global information source residues that are powerful effectors.
 
-## ANM-LD simulations (code is freely available at https://github.com/PRC-comp/ANMLD_TE)
+### ANM-LD simulations (code is freely available at https://github.com/PRC-comp/ANMLD_TE)
 
 The conformational change between dephosphorylated ATP-free (PDB ID: 5UAK) (Liu et al., 2017b) and ATP-bound (PDB ID: 6MSM) (Zhang et al., 2018) human CFTR was simulated using the ANM-LD approach (Acar et al., 2020; Yang et al., 2018). ANM-LD combines a low-resolution α-carbon-based ANM with stochastic all-atom implicit solvent LD simulations. Intrinsic dynamics characterized by ANM dynamic modes and followed short-time LD simulations guide the conformational transition from the initial to the target state. That is, the conformational transition pathway is successfully evolved from the dephosphorylated ATP-free to the phosphorylated ATP-bound CFTR, starting with 7.5 Å and converging to 2.3 Å of RMSD. Due to the lack of a characterized structure, the regulatory domain is not included in the ANM-LD simulations. The time window in ANM-LD simulations does not reflect real time of simulated transitions yet provides information on transition trajectory and sequence of events, using accessible internal dynamics as the only bias toward the target conformation.
 
-## ANM-LD simulation flow
+### ANM-LD simulation flow
 
 The hessian matrix (H) with a distance threshold radius (Rcut = 13 Å) is constructed at each cycle of the ANM-LD simulation to calculate 3N-6 ANM dynamic modes, i.e., eigenvectors Uk and eigenvalue λk, k=1, 3N-6, where N is the number of residues (Atilgan et al., 2001). The ANM mode that best overlaps with the difference vector of the aligned initial/intermediate and target conformations is selected (Ubest) and the initial conformation is deformed along this vector using a deformation factor (DF: 0.4 Å). Energy minimization is performed for 500 steps and 100 steps of LD simulations are performed with a time step of 0.2 fs at a temperature of 310 K using the Amber 11-Sander 4 biomolecular simulation program (Case and Aktulga, 2010).
 
-The simplified position conformational sampling of ANM-LD cycles is given below as(8)Rnew=Rold+ΔRANM+ΔREng.Min+ΔRLD
+The simplified position conformational sampling of ANM-LD cycles is given below as
 
-where ΔRANM=Ubest⋅DF.
+$$
+R_{new}=R_{old}+ΔR_{ANM}+ΔR_{Eng.Min}+ΔR_{LD}
+$$
 
-ΔREng.Min and ΔRLD are energy minimization and LD simulations contributions to the sampling, respectively. The ANM steps and LD steps are iteratively performed for a predetermined number of ANM-LD cycles or until the RMSD between intermediate and target states converges. In the present ANM-LD simulations of CFTR the RMSD converged to a value of 2.3Å.
+where $ΔR_{ANM}=U_{best}⋅DF$.
 
-## Equal time and time delay cross-correlations
+$ΔR_{Eng.Min}$ and $ΔR_{LD}$ are energy minimization and LD simulations contributions to the sampling, respectively. The ANM steps and LD steps are iteratively performed for a predetermined number of ANM-LD cycles or until the RMSD between intermediate and target states converges. In the present ANM-LD simulations of CFTR the RMSD converged to a value of 2.3Å.
 
-Each residue has a fluctuation vector ΔR that corresponds to the difference between its current position to the mean position of its α-carbons. The mean positions are calculated from the selected time window of the ANM-LD simulation cycles. The pseudo correlation between the fluctuations of residues i and j is calculated as(9)Cij(τ)=<ΔRi(t)⋅ΔRj(t+τ)> <ΔRi(t)2> <ΔRj(t+τ)2>
+### Equal time and time delay cross-correlations
+
+Each residue has a fluctuation vector $ΔR$ that corresponds to the difference between its current position to the mean position of its α-carbons. The mean positions are calculated from the selected time window of the ANM-LD simulation cycles. The pseudo correlation between the fluctuations of residues i and j is calculated as
+
+$$
+C_{ij}(\tau)=\frac{<ΔR_{i}(t)⋅ΔR_{j}(t+\tau)>}{ \sqrt{<ΔR_{i}(t)^{2}>} \sqrt{<ΔR_{j}(t+\tau)^{2}>}}
+$$
 
 where t represents an instantaneous pseudo time and τ is an additive time delay in ANM-LD cycles. When τ equals to 0, Cij reduces to standard correlation between the movements of residues i and j, with values between –1 and 1, where 0 corresponding to no correlation, and positive and negative values corresponding to movement in the same or opposite directions, respectively. When τ is greater than 0, the correlation between the fluctuations of residues i at time t and j at t+τ indicates that the movement of residue i is leading and of residue j is following in the case of Cij(τ) > Cji (τ). The time window in the conformational transition (part of the ANM-LD simulation trajectory from which the conformations are extracted) and the time delay τ are the two main parameters in defining the correlation behavior.
 
 The time delay, τ, an order parameter in a running time window, is a measure of changes in the dynamics that allows a temporal coarse graining in the transition pathway, i.e., quantifying directional correlations. Leading/following events, depending on the length of the time delay and the time window, reveal cues about the complex hierarchical reorganization of residues in their motion. Here, a time delay of 16 cycles is taken in a transition window of 48 cycles from the ATP-free to the ATP-bound states of CFTR. This time delay corresponds to a time window at which the autocorrelation average over all residues shifts from a positive value to a negative value with respect to the mean conformation within 48 cycles.
 
-## Statistical analysis
+### Statistical analysis
 
-In dephosphorylated ATP-free human CFTR (PDB ID 5UAK), we identified a total of 60 allosteric peaks with (1) above average TECol score and (2) above average peak prominence. We then counted how many times the positions of the functionally essential residues or ATP-binding sites spatially correlate with these peaks using cutoff distances of 0 Å (i.e. exact match), 4 Å, or 7 Å. To evaluate the statistical significance of these predictions, we generated 100,000 sets of 60 randomly localized allosteric peaks and counted how many times the positions of the functionally essential residues or ATP sites were in the vicinity of these random allocations. Thus, Z scores of the predictions were determined using the definition of(10)Z=X−μσ
+In dephosphorylated ATP-free human CFTR (PDB ID 5UAK), we identified a total of 60 allosteric peaks with (1) above average TECol score and (2) above average peak prominence. We then counted how many times the positions of the functionally essential residues or ATP-binding sites spatially correlate with these peaks using cutoff distances of 0 Å (i.e. exact match), 4 Å, or 7 Å. To evaluate the statistical significance of these predictions, we generated 100,000 sets of 60 randomly localized allosteric peaks and counted how many times the positions of the functionally essential residues or ATP sites were in the vicinity of these random allocations. Thus, Z scores of the predictions were determined using the definition of
+
+$$
+Z=\frac{X−\mu}{\sigma}
+$$
 
 where X is the count of correct guesses of our prediction while μ and σ are the mean and the standard deviation of the correct matches of random samples, respectively. From the obtained Z scores, p-values of the predictions were calculated by one-tailed hypothesis test using a significance level of 0.05.
 
 The same statistical analysis is performed for the spatial correlation of the hinge positions with the entropy source peaks using cutoff distances of 4 Å or 7 Å.
 
-## Visualization
+### Visualization
 
 The 3D structural figures presented in this work are created using PyMol 2.5.4 (The PyMOL Molecular Graphics System).

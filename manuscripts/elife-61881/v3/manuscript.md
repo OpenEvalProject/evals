@@ -41,7 +41,7 @@ For the present study of multifunctional behavioral circuits, we chose to use a 
 
 ## Results
 
-## Voltage-dye imaging of behavior
+### Voltage-dye imaging of behavior
 
 The nervous system of the leech comprises cephalic ganglia, a tail ganglion, and 21 nearly identical segmental ganglia connected by a ventral nerve cord (Muller et al., 1981; Wagenaar, 2015). Each ganglion consists of about 400 neurons (Macagno, 1980) with cell bodies arranged in a spherical monolayer around a central neuropil. In the neuropil, neurons communicate through chemical and electrical synapses located along extensively branched neurites (Muller and McMahan, 1976; Fan et al., 2005; Pipkin et al., 2016). The leech is an ideal model organism for this type of work, because it robustly expresses several behaviors even in reduced preparations (Kristan et al., 2005), its neurons are uncommonly accessible to physiological recording, and its cell bodies are relatively large and thus yield strong VSD signals (Briggman et al., 2005). Crucially, an individual segmental ganglion is a good stand-in for a whole nervous system, because its neurons capture the entire pathway from sensory input through self-generated interneuronal rhythms to motor output (Kristan et al., 2005), which is why we focused our imaging efforts there.
 
@@ -61,7 +61,7 @@ We expressed (fictive) swimming, crawling, and local bending behavior in the iso
 
 We established a mapping between the neurons seen in the VSD images and the canonical maps of the ganglion (Wagenaar, 2017) based on geometry and on the involvement of the neurons in the various behaviors.
 
-## X-ray tomography connects functional and anatomical image stacks
+### X-ray tomography connects functional and anatomical image stacks
 
 At the end of the (fictive) behavior experiment, the ganglion was fixated and embedded in a resin. To correlate light and electron microscopy, we then re-imaged the ganglion using X-ray tomography (Bushong et al., 2015) and verified that the cell bodies seen in the VSD images could still be identified (Figure 5a). The X-ray image stack was also used to trace neuronal processes from the somata to the edge of the neuropil (Figure 5b). This obviated the need to capture the somata in the subsequent electron microscopy, and instead allowed us to restrict the EM effort largely to the neuropil.
 
@@ -69,13 +69,27 @@ At the end of the (fictive) behavior experiment, the ganglion was fixated and em
 
 **Figure 5.:** (a) Light micrograph (left) and X-ray image (right) of the ganglion in which we recorded neuronal activity using a VSD. Matching colors label the same cells on the two images. A: Anterior, P: Posterior, L: Left, R: Right. (b) Transverse section from X-ray tomographic image stack of the ganglion (top). Only the shaded area was imaged with SBEM (bottom). Arrowheads mark several somata that are (white) or are not (red) included in the SBEM volume. Circles mark neurites that facilitated complete mapping between the two imaging modalities. D: Dorsal, V: Ventral. Note that the X-ray image in (b) is shown in reverse video relative to the x-ray image in (a) for easier visual comparison with the SBEM image.
 
-## Electron microscopy
+### Electron microscopy
 
 We chose serial blockface electron microscopy (SBEM) over serial-section transmission EM (Harris et al., 2006) because SBEM can reliably process large numbers of slices with much lower risk of sectioning artifacts. We acquired 78,803 images from 9604 slices, totaling 22.8 terapixels. We periodically paused the acquisition to adjust the imaging area so as to include the entirety of the neuropil but not too much additional space.
 
-## Tracing a motor neuron and all its synaptic inputs
+### Tracing a motor neuron and all its synaptic inputs
 
 We manually traced motor neuron DE-3R, a key motor neuron for all the behaviors included in our functional data set. The combined path length of the entire arborization of DE-3R was 6,109 μm (Figure 6a,b; Figure 7a). In addition to tracing the neuron, we marked all of its input synapses and then traced each of its presynaptic partners to their somata. Several visually distinct types of synapses were found, among which most prominently: (1) bright terminals with large dark vesicles (Figure 6c) and (2) darker terminals with smaller vesicles that occurred mainly in fiber endings and varicosities (Figure 6d). The small vesicles are barely resolved in our data set and appear merely as fields of granules. We used TEM on thin slices of a second ganglion to confirm our interpretation of these granules as vesicles (Figure 6—figure supplement 1). No attempt has been made as of yet to interpret the anatomically distinct types of synapses as physiological classes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-v3.jpg)
+
+**Figure 6.:** (a) The principal neurite of DE-3R near its entrance to the neuropil (dashed yellow outline). (b) Two branches of the neurite of DE-3R (dashed outlines). (c) A synaptic connection onto DE-3R from an inhibitory motor neuron (DI-1R). Arrowheads: synapses, Pre: presynaptic terminal, v: vesicles. (d) A synapse onto DE-3R from an interneuron (cell 24 on the canonical map [Wagenaar, 2017]).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Our interpretation of a small section of our SBEM image: a process of cell DE-3 (yellow) and a presynaptic partner (purple). (b) Same area without overlay. Arrowhead: synapse. Stars: Mitochondria. (c) A similar area imaged with TEM (from a ganglion from another leech). (d) Same area as (c), computationally blurred (radius: 15 μm) to simulate the lower resolving power of SEM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Average based on four representive 2048 × 2048 pixel regions from the volume.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp3-v3.jpg)
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig7-v3.jpg)
 
@@ -83,11 +97,81 @@ We manually traced motor neuron DE-3R, a key motor neuron for all the behaviors 
 
 We identified 531 synapses onto DE-3R. Of these, 44 were formed by cells with somata in neighboring ganglia that were not included in our EM volume (Figure 6—figure supplement 3). Of the rest, 387 could be traced to their somata with a high degree of confidence. To avoid false positives, we only considered presynaptic neurons that formed at least two synapses onto DE-3R. There were 51 of those. Of those, 35 could be confidently matched to cell bodies seen in the VSD record, and of those, 10 could be confidently matched to specific identified neurons on the canonical map with previously described functions (Figure 7b and Table 1). For the others, we assigned previously unused cell numbers from the canonical map (Wagenaar, 2017) based on soma location and size (Figure 7c). (If there were no unused cell numbers in the vicinity, we reused a previously used cell number but placed a question mark in the figure to indicate that we do not know if our cell and the previously described cell are the same.) The figure also shows some of the cells that we could not confidently link to the VSD record. We did not assign preliminary numbers to those. Our complete tracing results of DE-3R and its synaptic partners are shown in Figure 8 and Video 1.
 
+**Table 1.**
+ Identified partner neurons of DE-3R.These synaptic partners could be confidently assigned as previously described neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell</th>
+      <th>Synapse count</th>
+      <th>Known function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DI-1L</td>
+      <td>4</td>
+      <td>Inhibitor of dorsomedial longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>DI-1R</td>
+      <td>52</td>
+      <td>Inhibitor of dorsomedial longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>VI-2R</td>
+      <td>2</td>
+      <td>Inhibitor of ventral longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>8R</td>
+      <td>13</td>
+      <td>Excitor of ventral longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>101R</td>
+      <td>2</td>
+      <td>Inhibitor of dorsoventral muscles</td>
+    </tr>
+    <tr>
+      <td>102R</td>
+      <td>6</td>
+      <td>Inhibitor of dorsal longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>107R</td>
+      <td>12</td>
+      <td>Excitor of dorsomedial longitudinal muscles</td>
+    </tr>
+    <tr>
+      <td>109R</td>
+      <td>7</td>
+      <td>Excitor of lateral dorsoventral muscles</td>
+    </tr>
+    <tr>
+      <td>117R</td>
+      <td>16</td>
+      <td>Excitor of medial dorsoventral muscles</td>
+    </tr>
+    <tr>
+      <td>LR</td>
+      <td>3</td>
+      <td>Excitor of dorsal and ventral longitudinal muscles</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 8.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig8-v3.jpg)
 
-**Figure 8.:** R (thick black line, soma location marked ‘DE-3’) and backtracings of all synaptic partners.Partners that we could identify with cells in the VSD recording are marked with (arbitrary) colors. Small gray disks indicate partner neurons that could not be cross-identified between EM and VSD image stacks.
+**Figure 8.:** Partners that we could identify with cells in the VSD recording are marked with (arbitrary) colors. Small gray disks indicate partner neurons that could not be cross-identified between EM and VSD image stacks.
 
-## Linking form to function
+![Video 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-video1.mp4.jpg)
+
+**Video 1.:** Back tracings of all DE-3R’s presynaptic partners to their somata (0:05 to 0:12). Rotational view of the completed tracing (0:12 to 0:15).
+
+### Linking form to function
 
 The availability of both functional (VSD) and anatomical (SBEM) information from the same individual ganglion allowed us to ask questions that relate form to function. First we asked whether there was a relationship between the overal functional strength of involvement of presynaptic partners and the number of synapses they make onto DE-3R. We thus calculated the correlation coefficients between synapse count and the previously obtained coherence magnitudes of the synaptic partners in each of the behavioral trials (see Figures 2, 3 and 4). On average across the eight trials in our data set, this correlation was 0.16 ± 0.12 (mean ± SD; t = 3.41; p = 0.011; two-tailed t-test), even though none of the individual correlation coefficients was statistically significant (Figure 9). To test whether these results were robust, we replaced the synapse count by a ‘proximity weight’ (see Materials and methods) and repeated the analysis. This yielded similar results: The average across trials of the correlation coefficients was again significantly positive (two-sided t-test, t = 2.77, p = 0.028, n = 8).
 
@@ -97,15 +181,156 @@ The availability of both functional (VSD) and anatomical (SBEM) information from
 
 Next, we asked whether synapses with different valences (excitatory or inhibitory) were differently distributed along the arbors of DE-3R. Excitation and inhibition rely on different physiological processes and have asymmetric effects on cell membrane potential. Accordingly, one might expect that excitatory and inhibitory cells synapse onto their target cells in distinct spatial patterns. For instance, to achieve shunting inhibition, inhibitory synapses would have to be located close to the target cell’s spike initiation zone. We therefore considered all the input synapses onto DE-3R from neurons with previous descriptions in the literature, and annotated them as either excitatory or inhibitory (Figure 10a). Presynaptic neurons for which no previous description as excitatory or inhibitory was found were annotated as 'unknown'. The spatial distributions of excitatory and inhibitory synapses were not found to be different from the other (‘unknown’) synapses, either when distance was measured to the soma (Figure 10b), or when it was measured to the primary neurite (Figure 10—figure supplement 1a) of the postsynaptic tree.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig10-v3.jpg)
+
+**Figure 10.:** (a) Distribution of excitatory and inhibitory synapses. (b) Histogram of the length of the paths between those synapses and the soma. (c) Distribution of synapses more strongly associated with a certain behavior. (d) Histogram of the length of the paths between those synapses and the soma (LB: Local bend).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** (a) Path length for excitatory vs inhibitory synapses. (b) Path lengths for synapses from neurons more strongly associated with a certain behavior.
+
 In the same vein, we started from the premise that motor neuron DE-3R, as an output neuron of a multifunctional circuit, must integrate a diverse set of inputs in a flexible manner to accurately generate distinct behaviors. This versatility requires a dynamic functional reorganization of the underlying structural circuit. The question hence arises what the principles governing this dynamic reorganization are. We considered whether the anatomy of DE-3R facilitates reading out the different patterns of synchronicity in its presynaptic partners during different behaviors.
 
 We first looked at all neurons that we could cross-reference between EM and VSD recordings (regardless of whether the function of those neurons had previously been described) and, for each of the three behaviors, selected the cells that exhibited the highest coherence with DE-3R in that behavior (see Materials and methods). We asked whether cells associated in that way with a specific behavior would form synapses in specific locations, but found that was not the case at the macroscopic scale (Figure 10c,d and Figure 10—figure supplement 1b).
 
 The absence of an obvious modular organization of DE-3R at the cellular scale leaves open the possibility of structure at the synaptic scale exists that relates to the different behaviors. To test that idea, we asked whether synchronously active presynaptic partners form synapses onto DE-3R that are spatially clustered. Such spatial clustering of synapses of synchronized cell assemblies has been previously observed in other model organisms (Takahashi et al., 2012; Varga et al., 2011).
 
+**Table 2.**
+ Frequency of clusters of different sizes for clustering parameters (dNN, dext) = (5 µm, 65 µm), the parameters that gave the largest F-ratio for the swim trials.Synapse count: Number of synapses in a cluster. Frequency: Number of clusters with the respective synapse count. Number of presynaptic partners: Number of unique presynaptic neurons contributing to the synapses in the respective clusters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Synapse count</th>
+      <th>Frequency</th>
+      <th>Number of presynaptic partners</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>9</td>
+      <td>1 (6x), 2 (3x)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>1 (1x), 2 (3x)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>1 (1x)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2</td>
+      <td>2 (2x)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>2 (1x)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2</td>
+      <td>2 (1x), 3 (1x)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>3</td>
+      <td>3 (1x), 4 (2x)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1</td>
+      <td>3 (1x)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>3 (1x)</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>1</td>
+      <td>6 (1x)</td>
+    </tr>
+  </tbody>
+</table>
+
 Our spatial clustering algorithm had two free parameters: the maximum allowable distance between nearest neighbor synapses (dNN) and the maximum overall cluster extent (dext); see inset to Figure 11b and Materials and methods. Findings from in vivo and in vitro studies have shown that neighboring synapses that are less than 12–16 μm apart are more likely to be synchronized than synapses farther apart (Kleindienst et al., 2011; Winnubst et al., 2015) and that local synaptic plasticity mechanisms act on similar spatial scales (5–10 µm; Harvey and Svoboda, 2007). We used these findings to delineate biologically plausible ranges for our parameters: We explored maximum nearest-neighbor distances (dNN) between 5 and 25 µm, and maximum spatial extents (dext) between 10 and 100 µm; the extended upper bounds relative to the literature allowed for a thorough assessment of possible clusters of synapses with synchronized activity.
 
+![Figure 11.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-v3.jpg)
+
+**Figure 11.:** (a) Tracing of DE-3R with synapses (arbitrarily) colored by presynaptic partner. (b) Clusters (elliptic areas) associated with synchronized synapses for a swimming trial (top) and a crawling trial (bottom). Within the same connectome, clusters of synchronized synapses differ with respect to their spatial extent for the two behaviors: During swimming, synchronization extends over larger areas along the neurite than during crawling. Shown are synaptic clusters obtained with parameter values (dNN, dext) = (5 μm, 65 μm) for swimming and (dNN, dext) = (7.5 μm, 15 μm) for crawling, respectively. Synapses are colored by the coherence between the activity of their presynaptic partner and DE-3R during the behaviors (as in Figure 2) and clusters are colored by the average coherence of their constituent presynaptic partners. Inset: Explanation of clustering parameters (see Materials and methods). (c) All clustering results for swim and crawl trials. Color indicates the degree of correspondence between spatial clusters and functional grouping expressed as an F-ratio from complex ANOVA (see Materials and methods) as a function of clustering parameters.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp1-v3.jpg)
+
+**Figure 11—figure supplement 1.:** Out of the four trials, the first three involved stimulation of the left PV cell; the final trial involved stimulation of the right PV cell. In contrast to the swim and crawl trials (Figure 10b), the clustering results for local bend trials are inconsistent.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp2-v3.jpg)
+
+**Figure 11—figure supplement 2.:** These graphs represent slices through the data shown in Figure 11c, vertically through the highest peak in the parameter space. Lines are Gaussians fitted through the data; see Materials and methods.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp3-v3.jpg)
+
+**Figure 11—figure supplement 3.:** (a) Synthetic data where the coherence of a neuron’s activity (location of each dot) is unrelated to its membership in a spatially defined cluster (color), hence F = 1. (b) Synthetic data where such a relationship does exist, hence F > 1. See Materials and methods.
+
 At all points in this parameter space, the algorithm identified a multitude of synaptic clusters on the neurites of DE-3R. Most of these clusters contained synapses from multiple partner neurons (Tables 2 and 3).
+
+**Table 3.**
+ Frequency of clusters of different sizes for clustering parameters (dNN, dext) = (7.5 µm, 15 µm), the parameters that gave the largest F-ratio for the crawl trials.Columns as in Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Synapse count</th>
+      <th>Frequency</th>
+      <th>Number of presynaptic partners</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>28</td>
+      <td>1 (23x), 2 (5x)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>11</td>
+      <td>1 (7x), 2 (4x)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9</td>
+      <td>1 (4x), 2 (5x)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>1 (2x)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2</td>
+      <td>2 (2x)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3</td>
+      <td>1 (1x), 2 (1x), 3 (1x)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1</td>
+      <td>3 (1x)</td>
+    </tr>
+  </tbody>
+</table>
 
 Since the mere observation of spatial clusters does not demonstrate their functional relevance, we searched through the parameter space of the clustering algorithm to find parameter values that resulted in clusters in which the participating neurons shared commonalities in their activity during various behaviors. This was quantified as an ‘F-ratio’ (see Materials and methods) that captured the degree to which neurons in a spatial cluster also formed functional clusters in the coherence plot for a given behavior (Figure 2c, Figure 3c). The overall procedure is outlined in Box 1.
 
@@ -149,13 +374,65 @@ The combination of anatomical methods with synaptic resolution and imaging techn
 
 ## Materials and methods
 
-## Dissection and voltage-sensitive dye imaging
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Hirudo verbana)</td>
+      <td>Wild-type background</td>
+      <td>Niagara Leeches</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other (voltage- sensitive dye)</td>
+      <td>VF2.1(OMe).H</td>
+      <td>Woodford et al., 2015</td>
+      <td></td>
+      <td>Courtesy Miller lab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBEMAlign</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/wagenadl/sbemalign; Wagenaar, 2021a;copy archived at swh:1:rev:d76dcc55e7dad3e7bca91de24d20d201696a5339</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBEMViewer</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/wagenadl/sbemviewer; Wagenaar, 2021b;copy archived at swh:1:rev:8f8d3d2bcae39e165993d9e11ffe173640b940db</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GVox</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/wagenadl/gvox; Wagenaar, 2021c;copy archived at swh:1:rev:5e7ccd2273caed49bac3e09ca39de68a0b182fc5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dissection and voltage-sensitive dye imaging
 
 Detailed procedures have been described before (Tomina and Wagenaar, 2018). Briefly, leeches (Hirudo verbana, obtained from Niagara Leeches, Niagara Falls, NY) were maintained on a 12 hr:12 hr light:dark cycle in temperature-controlled aquariums filled with artificial pond water. The entire nervous system of an adult leech was removed and pinned down on silicone (PDMS, Sylgard 184, Dow Corning, Midland, MI). The sheath surrounding one segmental ganglion (M10) was removed from both ventral and dorsal aspects to allow access with voltage-sensitive dyes. Most of the nerves that innervate the periphery were cut short, but several were kept long to allow extracellular stimulation as described before (Tomina and Wagenaar, 2017). A voltage-sensitive dye (VF2.1(OMe).H [Woodford et al., 2015] provided by Evan Miller) was bath-loaded at a concentration of 800 nM in leech saline using a pair of peristaltic pumps to evenly load cell membranes on both sides of the ganglion. The preparation was placed on a custom-built dual-headed microscope which was used to image neuronal activity during fictive behaviors triggered by electrical stimulation, as in our previous work (Tomina and Wagenaar, 2017).
 
 We manually drew regions of interest (ROIs) around neuronal cell bodies and used custom software to associate those ROIs with named cells on the canonical maps of the leech ganglion (Wagenaar, 2017). For each of the behavior trials separately, we calculated the spectral coherence between each of the neurons and DE-3R at the frequency of the dominant peak in the power spectrum of DE-3R for the given behavior.
 
-## Histology
+### Histology
 
 After dye imaging, the preparation was reduced to just one segmental ganglion by transecting the anterior and posterior connectives. The ganglion was mounted on a slab of silicone (DPMS) with a hole cut out in the center so that the somata would not be in direct contact with the silicone. This preparation was transferred into a glass container and incubated for 72 hr at 4 °C in 2% paraformaldehyde, 2.5% glutaraldehyde in 0.15 M cacodylate buffer containing 2 mM CaCl2. Subsequently, the ganglion was washed in cacodylate buffer for 10 min and then incubated in an aqueous solution of 2% OsO4 and 1.5% potassium ferrocyanide. During this incubation, the sample was microwaved in a scientific microwave (Pelco 3440 MAX) three times at 800 W with a duty cycle of 40 s on and 40 s off at a controlled temperature of 35 °C and subsequently left at room temperature (RT) for 30 min. The sample was then washed twice in ddH2O and then microwaved three times at 30 °C with a duty cycle of 2 min on and 2 min off.
 
@@ -165,11 +442,11 @@ Next, the sample was incubated in 2% aqueous OsO4, microwaved three times at 800
 
 The next day, the sample was incubated in a lead aspartate solution at 60 °C for 25 min (Walton, 1979). The sample was then washed and dehydrated through a series of ethanol solutions (50%, 70%, 90%, 100%, 100%, 10 min each) at RT and incubated in acetone. After this, the sample was infiltrated with epoxy resin by first incubating it for one day at RT in a solution of 25% Durcupan (Sigma, St. Louis, MO) in acetone. On subsequent days, the concentration of Durcupan was increased to 50%, 75%, and finally 100%. After that, the sample was transferred to freshly prepared 100% Durcupan and incubated at 60°C for 3 days.
 
-## Micro-CT imaging
+### Micro-CT imaging
 
 We used Micro-CT scanning to confirm that the above sample preparation had left the overall geometry of the ganglion intact and to trace portions of neurons outside of the neuropil. Scans were collected using the 20x objective on a Zeiss Versa 510 X-ray microscope. Epoxy-embedded ganglia were attached to the end of an aluminum rod using cyanoacrylate glue and then scanned at 80 kV, collecting 2401 projection images while rotating the specimen 360°. The final pixel size was approximately 0.75 μm. Volumes were reconstructed using Zeiss Reconstructor software and visualized in custom software (GVox, see Key resources table).
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Ganglia were mounted onto aluminum pins using conductive silver paint. They were mounted in a vertical orientation (with the anterior connective pointing upwards). The sample was imaged with a Zeiss Gemini 300 SEM with a Gatan 2XP 3View system. The microscope was run in focal charge compensation mode (Deerinck et al., 2018) using nitrogen gas (40% pressure), with an accelerating voltage of 2.5 kV, a 30 μm objective aperture, magnification of ×336, a raster size of 17,100 × 17,100 pixels, a 5.5 nm pixel size, a 0.5 μm dwell time, and 50 nm section thickness. Stage montaging with an overlap of 8% between tiles was used to cover the complete extent of the ganglion in any given image. The backscatter detector was a Hamamatsu diode with a 2 mm aperture.
 
@@ -179,11 +456,11 @@ After approximately every 500 sections, the run was stopped to clear sectioning 
 
 To quantify true image resolution (as opposed to pixel size), we calculated power spectra of pixel intensities in several 2048 × 2048 pixel regions throughout the volume (Figure 6—figure supplement 2). The spectral power in our images exceeded the noise floor set by shot noise at spatial frequencies up to about 20 lines/μm (Figure 6—figure supplement 2), corresponding to an effective pixel size of about 25 nm.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Image quality and specimen preservation were verified using an additional ganglion prepared as above, but imaged in ultrathin sections on a conventional transmission electron microscope (JEOL JEM-1200EX, 120 kV, ×12,000–×20,000 magnification).
 
-## Image processing
+### Image processing
 
 Images were aligned using custom software (‘SBEMAlign,’ see Key resources table). First, we reduced the linear resolution of the original images by a factor five. Then we split each image into 5 × 5 sub-tiles and calculated the optimal alignment between each sub-tile and the corresponding sub-tile from the image above using a modified version of SWIFT-IR (Wetzel et al., 2016). Likewise, we split the regions of overlap that existing between images of the same slice into five sub-tiles and calculated the optimal alignment between the edges of adjacent images. We used these latter numbers to coarsely align images within each slice and render the first and last slices of each subrun at 1:25 scale, which allowed us to establish regions of correspondence between subruns. Using these procedures, we ended up with 3,430,650 matching pairs of image locations. Because SWIFT-IR matches up entire areas rather than single point pairs, those locations are defined at a much higher resolution than that of the images. Accordingly, alignment information obtained at a scale of 1:5 could be used to align the source images at scale 1:1 without material loss of precision.
 
@@ -193,27 +470,27 @@ We then rendered each slice by linearly combining the placement according to the
 
 The full-resolution stitched volume was then split into tiles of 512 × 512 × 1 voxels and reduced-resolution tiles at 1:2, 1:4, up to 1:256 resolution were produced for faster online visualization.
 
-## Visualization
+### Visualization
 
 We developed a custom tool for visualizing the aligned images and for neurite tracing. SBEMViewer (see Key resources table) was used to visualize the slices as they came off the microscope to monitor image quality, and also for purposes of tracing neurites.
 
-## Neurite tracing
+### Neurite tracing
 
 We produced a full skeleton tracing of the right DE-3 motor neuron and all of its presynaptic partners from the synapses to their somata. The following criteria were used to identify synapses:
 
 Because of limited resolution in our SBEM images, synaptic vesicles appear merely as gray granules (Figure 6c,d), but fields of such granules were clearly distinct from other gray areas in the SBEM images. Comparison with digitally blurred TEM images (Figure 6—figure supplement 1) confirmed this interpretation. We found that granular areas were concentrated in fiber endings and varicosities.
 
-## Correlation analysis of synapse number and coherence
+### Correlation analysis of synapse number and coherence
 
 We calculated correlation coefficients for the number of synapses and the strength of functional connectivity quantified by the magnitude of the coherence in each of the behaviors (Figure 9). We then repeated this analysis with synapse count replaced by the ‘proximity weight’ of the synaptic partners. The proximity weight of a synapse was defined as the inverse of its distance to the soma of DE-3R (measured along the neurite), and the proximity weight of a neuron was defined as the sum of the proximity weights of its synapses onto DE-3R. Neurons were included in the calculation if (1) their somata could be matched between VSD and SBEM images and (2) they had at least two synapses onto DE-3R (see also Figure 6—figure supplement 3). To test for overall significance, a two-tailed t-test was applied to compare the collected correlation coefficients (from n = 8 trials) to the null hypothesis of zero average correlation.
 
-## Tree analysis
+### Tree analysis
 
 To assign neurons to specific behaviors (Figure 10c,d), we took all the neurons for which we had a match between anatomy (EM) and activity (VSD). We then used the following procedure which compensates for the fact that the distribution of absolute coherence values is different per behavior for technical reasons resulting from the differences in cycle periods between the behaviors. We first looked at the coherence values in all cells and all behaviors, and assigned the neuron that had the greatest coherence to the behavior in which it had that coherence value. In the second step, we looked at the coherence values in all the other cells and both other behaviors, and assigned the top-cohering cell to a behavior. In the third step, we looked at the coherence values in all remaining cells in the last remaining behavior, and assigned the top-cohering cell to that behavior. In the fourth step, we once again considered all behaviors. In this manner, we continued until all cells had been assigned to a behavior. It should be noted that most cells were active in all behaviors to some degree, and that not all differences in absolute coherence values between behaviors were large. Accordingly, some variability in assigned should be expected across animals.
 
 The primary neurite was defined as the path between the soma and the point where the axon leaves the ganglion through the contralateral dorsal posterior nerve.
 
-## Synaptic clustering analysis
+### Synaptic clustering analysis
 
 The analysis was based on data from the 45 synaptic partners of DE-3R for which both anatomical as well as VSD recordings were available. The overall procedure is outlined in Box 1.
 
@@ -223,16 +500,91 @@ The algorithm began by treating each synapse as an individual cluster. Then, it 
 
 The analysis of functional significance of spatial clusters used an ANOVA-like procedure on the complex spectral coherence values of neurons within clusters relative to DE-3R. As in ANOVA, we calculated sums of squares within and between clusters. Since coherence values are complex numbers, we used the absolute square value. The ratio of these sums of squares (the ‘F-ratio’) is larger than one if coherence values within a spatial cluster tend to be more similar to each other than coherence values between different clusters.
 
-Specifically, if zk,i represent the (complex) coherence values of cell i in cluster k, then the centroid of each cluster is zk0=1nk⁢∑izk,i and the overall average of coherence values is z0=1N⁢∑k,izk,i, where nk is the number of cells in cluster k and N is the total number of cells. The F-ratio is thenF=∑k,i|zk,i-z0|2∑k,i|zk,i-zk0|2.
+Specifically, if $z_{k,i}$ represent the (complex) coherence values of cell $i$ in cluster k, then the centroid of each cluster is $z_{k}^{0}=\frac{1}{n_{k}}⁢\sum_{i}z_{k,i}$ and the overall average of coherence values is $z^{0}=\frac{1}{N}⁢\sum_{k,i}z_{k,i}$, where $n_{k}$ is the number of cells in cluster $k$ and $N$ is the total number of cells. The F-ratio is then
+
+$$
+F=\frac{\sum_{k,i}|z_{k,i}-z^{0}|^{2}}{\sum_{k,i}|z_{k,i}-z_{k}^{0}|^{2}}.
+$$
 
 A demonstration of the method using synthetic data is presented in Figure 11—figure supplement 3. We generated three clusters of two-dimensional Gaussian-distributed data, either with centroids at the same location (Figure 11—figure supplement 3a), or with the centroids displaced from each other by one standard deviation in different directions (Figure 11—figure supplement 3b). One can imagine each of the three colored clouds of dots as corresponding to the coherences of the neurons in three spatially defined clusters, represented on the complex plane. In Figure 11—figure supplement 3a, the distribution of coherence values is the same for each cluster, hence F = 1; in Figure 11—figure supplement 3b, each spatially defined cluster is clearly distinguishable by the coherence values of its neurons, hence F > 1.
 
-In standard ANOVA, the F-ratio follows an F-distribution under the null hypothesis. In the complex-valued case, that is no longer true, so we calculated empirical distributions of the F-ratios by randomly shuffling the list of per-neuron coherence values 1000 times. The empirical p-value p^ was then defined as p^=m+1N+1 , where N = 1000 is the number of randomizations and m is the number of times the F-ratio from shuffled data exceeded the experimentally observed F-ratio. These p-values are reported in the Data supplement to Figure 11.
+In standard ANOVA, the F-ratio follows an F-distribution under the null hypothesis. In the complex-valued case, that is no longer true, so we calculated empirical distributions of the F-ratios by randomly shuffling the list of per-neuron coherence values 1000 times. The empirical p-value $p^$ was then defined as $p^=\frac{m+1}{N+1}$ , where N = 1000 is the number of randomizations and m is the number of times the F-ratio from shuffled data exceeded the experimentally observed F-ratio. These p-values are reported in the Data supplement to Figure 11.
 
-We generated plots of the F-ratio as a function of the cluster parameters dNN and dext. For each trial, we first determined the value of dNN for which the largest F-ratio was obtained. Then, we fitted a Gaussian of the formF=1+A⁢exp⁡(-12⁢[dext-μ]2/σ2)to the F-ratio as a function of dext (Figure 11—figure supplement 2). The µ-values from those fits and their uncertainties according to least-squares fitting are reported in the text.
+We generated plots of the F-ratio as a function of the cluster parameters dNN and dext. For each trial, we first determined the value of dNN for which the largest F-ratio was obtained. Then, we fitted a Gaussian of the form
 
-## Data availability
+$$
+F=1+A⁢exp⁡(-\frac{1}{2}⁢[d_{ext}-\mu]^{2}/\sigma^{2})
+$$
+
+to the F-ratio as a function of dext (Figure 11—figure supplement 2). The µ-values from those fits and their uncertainties according to least-squares fitting are reported in the text.
+
+### Data availability
 
 The easiest way to access the raw electrophysiology and voltage-dye data as well as the SBEM image data and tracing results used in this paper is through a series of Python modules that we made available at https://github.com/wagenadl/leechem; Kassraian and Wagenaar, 2021; copy archived at swh:1:rev:73eee24e387e11c259a3f3fe0bd4e469048b25e6. Included in the package is a file called ‘demo.py’ that demonstrates the use of the modules as well as several Jupyter notebooks that demonstrate other approaches to data analysis.
 
 Table 4 lists the VSD trials available for download using the Python modules. The SBEM volume may also be accessed through the Neuroglancer (Google, 2016) instance at https://leechem.caltech.edu or by pointing SBEMViewer to https://leechem.caltech.edu/emdata. This server also allows for direct downloading of SBEM image data. The API is documented at https://leechem.caltech.edu/emdata/help.
+
+**Table 4.**
+ List of raw data trials and how they are referred to in the paper.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Behavior</th>
+      <th>Trial no. in paper</th>
+      <th>Trial no. in raw data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 2</td>
+      <td>Swim</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Swim</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>Crawl</td>
+      <td>1</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Crawl</td>
+      <td>2</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>Local bend</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Local bend</td>
+      <td>2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Local bend</td>
+      <td>3</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Local bend</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>

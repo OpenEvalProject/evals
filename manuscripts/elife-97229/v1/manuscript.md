@@ -17,14 +17,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0155zta11 Department of Surgery, Larner College of Medicine, University of Vermont Burlington United States
-2. https://ror.org/0155zta11 Department of Pathology and Laboratory Medicine, Larner College of Medicine, University of Vermont Medical Center Burlington United States
+1. Department of Surgery, Larner College of Medicine, University of Vermont Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
+2. Department of Pathology and Laboratory Medicine, Larner College of Medicine, University of Vermont Medical Center Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
 
 † Corresponding author
 
 ## Abstract
 
-During thymic development, most γδ T cells acquire innate-like characteristics that are critical for their function in tumor surveillance, infectious disease, and tissue repair. The mechanisms, however, that regulate γδ T cell developmental programming remain unclear. Recently, we demonstrated that the SLAM/SAP signaling pathway regulates the development and function of multiple innate-like γδ T cell subsets. Here, we used a single-cell proteogenomics approach to identify SAP-dependent developmental checkpoints and to define the SAP-dependent γδ TCR repertoire in mice. SAP deficiency resulted in both a significant loss of an immature Gzma + Blk γδT17 precursor population and a significant increase in + Etv5 + Tox2 + Cd4 thymic γδ T cells. SAP-dependent diversion of embryonic day 17 thymic γδ T cell clonotypes into the αβ T cell developmental pathway was associated with a decreased frequency of mature clonotypes in neonatal thymus, and an altered γδ TCR repertoire in the periphery. Finally, we identify TRGV4/TRAV13-4(DV7)-expressing T cells as a novel, SAP-dependent Vγ4 γδT1 subset. Together, the data support a model in which SAP-dependent γδ/αβ T cell lineage commitment regulates γδ T cell developmental programming and shapes the γδ TCR repertoire. + Cd8 + Rorc + Ptcra + Rag1 +
+During thymic development, most γδ T cells acquire innate-like characteristics that are critical for their function in tumor surveillance, infectious disease, and tissue repair. The mechanisms, however, that regulate γδ T cell developmental programming remain unclear. Recently, we demonstrated that the SLAM/SAP signaling pathway regulates the development and function of multiple innate-like γδ T cell subsets. Here, we used a single-cell proteogenomics approach to identify SAP-dependent developmental checkpoints and to define the SAP-dependent γδ TCR repertoire in mice. SAP deficiency resulted in both a significant loss of an immature Gzma+Blk+Etv5+Tox2+ γδT17 precursor population and a significant increase in Cd4+Cd8+Rorc+Ptcra+Rag1+ thymic γδ T cells. SAP-dependent diversion of embryonic day 17 thymic γδ T cell clonotypes into the αβ T cell developmental pathway was associated with a decreased frequency of mature clonotypes in neonatal thymus, and an altered γδ TCR repertoire in the periphery. Finally, we identify TRGV4/TRAV13-4(DV7)-expressing T cells as a novel, SAP-dependent Vγ4 γδT1 subset. Together, the data support a model in which SAP-dependent γδ/αβ T cell lineage commitment regulates γδ T cell developmental programming and shapes the γδ TCR repertoire.
 
 ## Introduction
 
@@ -38,9 +38,25 @@ In this study, we set out to define the stage of thymic development during which
 
 ## Results
 
-## SLAM family receptor expression marks transcriptionally distinct developmental stages among E17 γδ T cells
+### SLAM family receptor expression marks transcriptionally distinct developmental stages among E17 γδ T cells
 
 γδT17 developmental programming is thought to occur primarily during embryonic/neonatal thymic development (Haas et al., 2012; Spidale et al., 2018; Havran and Allison, 1988), and is tightly linked to the expression of discrete TCR gamma and delta pairings (O’Brien and Born, 2010). To identify the specific developmental stages of thymic development during which the SLAM/SAP signaling pathway exerts its effects, we employed a single-cell RNAseq approach coupled with feature barcoding (i.e., CITEseq; Stoeckius et al., 2017) and V(D)J profiling to compare embryonic day 17 (E17) B6 and B6.Sh2d1a-/- thymic γδ T cells (Figure 1A). (Fluorescence activated cell sorting) FACS-sorted thymic γδ T cells (Figure 1—figure supplement 1) from individual embryos (n = 4 B6 and 4 B6.Sh2d1a-/- mice) were identified using hashtags, and Vγ1+ and Vγ4+ γδ T cells were identified using barcoded antibodies (ADTs). To help define the developmental trajectories of the E17 γδ T cells, we also stained cells with barcoded antibodies specific for CD24, CD73, CD44, and CD45RB, which define distinct developmental pathways of γδT17 and γδT1 cells in the thymus (Sumaria et al., 2017; Coffey et al., 2014; In et al., 2017), as well as for SLAMF1 and SLAMF6. After data filtering and QC, we verified that clusters were evenly distributed among the biological replicates (Figure 1—figure supplement 1). The resulting dataset represented a total of 5278 thymic γδ T cells from B6 (n = 2597) and B6.Sh2d1a-/- (n = 2681) γδ T cells. Data were visualized using uniform manifold approximation and projection (UMAP) for dimensionality reduction and a graph-based clustering approach (Satija et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic workflow depicting the methodology for single-cell RNA sequencing (scRNAseq) library preparation and subsequent data analysis pipeline employed in this study. (B) Uniform manifold approximation and projection (UMAP) visualization displaying 11 distinct clusters of E17 B6 thymic γδ T cells, n = 4 individual mice. Clusters are annotated based on comprehensive protein and gene expression data. (C) Feature plots illustrating the cell surface protein expression profiles of CD24, CD73, CD44, CD45RB, SLAMF1, and SLAMF6 on B6 E17 thymic γδ T cells. Each data point represents a cell, color-coded to indicate varying protein expression levels (high: dark blue, low: yellow). (D) Feature plot illustrating the gene expression profiles of signature genes among individual B6 E17 thymic γδ T cells. Each data point represents a cell, color-coded based on gene expression levels (high: purple, low: yellow). (E) Dot plot demonstrating the scaled expression levels of selected genes in E17 B6 thymic γδ T cells. Normalized expression levels are depicted using a color scale ranging from low (yellow) to high (purple). Dot size corresponds to the fraction of cells within each cluster expressing the specific marker. (F) UMAP representation of E17 B6 thymic γδ T cells indicating the expression of selected TRGV (TCRγ; left) and TRDV (TCRδ; right) chain V-segment usage (in blue) across individual cells. (G) Violin plots illustrating the expression patterns of selected genes among E17 B6 thymic γδ T cell clusters. (H) Visualization of single-cell trajectories using PAGA (partition-based graph abstraction) with single-cell embedding (left) showing connectivity between individual nodes (middle). Weighted edges represent statistical measures of interconnectivity. The diffusion pseudotime plot (right) delineates inferred pseudotime progression of cells along developmental trajectories using cluster 5 (C5) as the root, highlighting their developmental order (from purple to yellow).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative gating scheme used for FACS sorting γδ cells from B6 (top) and B6.Sh2d1a-/- (bottom) thymus. (B) Left, Violin plots of B6 E17 thymic γδ T cells. nFeaure_RNA represents number of genes detected in each cell. nCount_RNA represents total number of molecules detected within a cell, percent.mt represents the frequency of mitochondrial genes expressed in each cell, and percent.ribo represents the frequency of ribosomal genes expressed in each cell. Middle, ridge plots demonstrating successful enrichment for selected hashtags in E17 thymus γδ T cells following demultiplexing. Right, uniform manifold approximation and projection (UMAP) representations showing distribution of demultiplexed γδ Τ cells among individual B6 E17 thymus samples. (C) Violin plots depicting distribution of cell surface protein oligo-conjugated antibody derived tags (ADTs) among different B6 E17 thymus γδ T cells clusters. (D) Violin plots depicting expression levels of selected genes among individual E17 B6 thymic γδ T cells clusters. (E) Representative dot plots of CD24 and SLAMF7 staining on neonatal thymus γδ T cells. The position of CD44+CD45RB+ cells is shown in blue. Data are representative of two independent experiments, n = 10 mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Left, TCR clonotype bubble plot depicting the top 100 TCR clonotypes among B6 E17 γδ T cells (n = 2502 γδ T cells). Each bubble represents a unique TRGV/TRDV clonotype; the bubble size corresponds to the clonotype frequency, and colors correspond to specific TRGV chains utilized. The four most frequent clonotypes are numbered and their corresponding CDR3γ and CDR3δ sequences are displayed below. Right, uniform manifold approximation and projection (UMAP) representations depicting the location of the four most frequent clonotypes E17 thymic γδT cell clusters. (B) Diversity of the E17 γδ TCR repertoire, represented by the Inverse Simpson index. (C) Amino acid length distributions of E17 thymic γδ T cell CDR3γ (top) and CDR3δ (bottom) in immature Blk+, Etv5+, Maf+ C2 and C7 (left), immature RORγthigh C1 (middle), and mature RORγthigh c8 (right) clusters. The top 10 clonotypes are color-coded, all other clonotypes are shown in gray.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Left, representative dot plot of CD24 and CD25 expression on E17 B6 thymic Vγ4 T cells. Right, histograms depicting BLK, PLZF, and RORγt expression in the gated populations at left. The geometric mean fluorescence intensity of individual populations is shown. (B) Feature plots showing cell surface protein expression of Vγ1 (top) and Vγ4 (bottom) on B6 E17 thymus γδ T cells. Each point represents a cell, color-coded based on the protein expression level (high: dark blue, low: yellow). (C) Top left, uniform manifold approximation and projection (UMAP) representation of E17 B6 γδ T cell flow cytometry data with selected FlowSOM clusters indicated by color. All other cells are shown in gray. Right, individual dot plots overlaid with the selected FlowSOM clusters from the UMAP plot. Data represent concatenated data from five B6 TCRβnegTCRδposγδ T cells and are representative of two independent experiments. (D) Increasing BLKnegRORγtpos frequency as thymocytes progress to DN4 stage. Representative contour plots of E17 DN thymocytes with selected gates shown (left) and BLK and RORγt expression associated with each gated population (right). Numbers indicate the percentage of cells in the gated population. (E) Immature Vγ1Vδ1 T cells comprise the major IL17-producing Vγ1 T cell population in E17 thymus. Left, representative contour plot of Vγ1 and Vδ1 (17D1) expression among E17 thymic γδT cells. Middle, Dot plot of CD24 and SSC expression on E17 thymic γδT cells. The position of Vγ1+Vδ1+ E17 T cells is shown in red. Right, dot plots of IL-17 and IFN-γ expression in E17 thymic Vγ1+17D1+ and Vγ1+17D1− cells after PMA/ionomycin stimulation.
 
 First, we annotated the B6 dataset using a combination of cell surface protein expression, gene expression, and TCR clonotype sequence. This analysis revealed 11 B6 E17 γδ T cell clusters, mostly distributed between two major branches (Figure 1B). We observed the presence of CD24low73low44high45RBlowSLAMF1pos (c8) and CD24low73high44high45RBhighSLAMF6low/pos (c0, c9) clusters, consistent with mature γδT17 and γδT1 phenotypes, respectively (Figure 1C, Figure 1—figure supplement 1). In support of this annotation, the c8 cluster was enriched in Il17a, Il17f, Il23r, Rorc, and TRGV6/TRDV4 (IMGT nomenclature; encoding Vγ6/Vδ1) transcripts with limited CDR3 diversity, while the c0/c9 cluster was enriched in Ifng, Tbx21, Klrd1, Il2rb, Xcl1, and TRGV5/TRDV4 (encoding Vγ5/Vδ1) transcripts also with little to no diversity (Figure 1D–F, Figure 1—figure supplement 2, Supplementary file 1 and 2, Havran et al., 1991; Itohara et al., 1990). Consistent with previous observations (Dienz et al., 2020), we noted that the c0/c9 cluster was highly enriched in Cd244a (Slamf4), and was enriched in transcripts from another SLAM family member, Slamf7 (Figure 1D, E). Flow cytometric analysis confirmed that SLAMF7 was expressed primarily on mature γδ T cells and that its expression was mostly confined to γδ T cells expressing the canonical CD44+CD45RB+ markers of γδT1 cells (Figure 1—figure supplement 1, Sumaria et al., 2017; Wencker et al., 2014).
 
@@ -58,27 +74,59 @@ Finally, analysis of the CD24high73neg44neg45RBintSLAMF1posSLAMF6pos c6 populati
 
 Since trajectory inference analysis suggested a strong relationship between the Il2ra+ c5 and c6 clusters (Figure 1H), we conducted differential gene expression analysis between the c5 and c6 from B6 mice. Interestingly, we found that the c6 cluster was highly enriched in Rorc, suggestive of a γδT17 phenotype, but was mostly lacking in the expression of Maf, Blk, Ccr2, and other canonical γδT17-associated transcripts (Figure 1E, G, Figure 1—figure supplement 1). Indeed, flow cytometric analysis of E17 TCRβnegTCRδpos γδ T cells confirmed that CD4CD8 DP γδ T cells exhibited an immature CD44lowCD25lowMAFnegBLKnegRORγtpos phenotype (Figure 1—figure supplement 3), and that RORγt expression in the absence of BLK or MAF is a characteristic of Linneg DN thymocytes as they progress from CD44low25high DN3 to CD44low25low DN4 (Figure 1—figure supplement 3). Together, these data suggested that the c6 cluster γδ T cells represented previously described CD4CD8 DP γδT cells that were developing along an alternative αβ T cell pathway (Passoni et al., 1997; Kang et al., 1998; Haks et al., 2005).
 
-## SAP regulates γδ T cell clonotype diversion into both the γδT17 and the αβ T cell developmental pathways
+### SAP regulates γδ T cell clonotype diversion into both the γδT17 and the αβ T cell developmental pathways
 
 To identify SAP-dependent developmental checkpoints, we next compared the hashtag-separated B6 and B6.Sh2d1a-/- E17 γδ T cell datasets. A comparison of the cluster frequencies between B6 and B6.Sh2d1a-/- γδ T cells revealed significantly decreased frequencies of the CD24high73neg44int45RBintSLAMF1posSLAMF6pos c2 and c1 clusters in B6.Sh2d1a-/- mice, and a striking increase in the frequency of the CD24high73neg44neg45RBnegSLAMF1highSLAMF6high c6 cluster (Figure 2A). A comparison of differentially expressed genes among the immature (c1, c2, c7, c5, c6, and c10) clusters using pseudobulk analysis revealed 234 differentially expressed genes with a padj threshold <0.005 and log2 fold change greater than 0.5, with 148 genes exhibiting decreased expression in B6.Sh2d1a-/- γδ T cells, and 86 genes exhibiting increased expression (Figure 2B, Supplementary file 3). Consistent with the decreased frequencies of the c1/c2 clusters in B6.Sh2d1a-/- mice, a significant fraction of the differentially expressed genes that were downregulated in B6.Sh2d1a-/- mice reflected γδT17-associated genes (e.g., Maf, Blk, Ccr2, Sox13, Etv5, etc.) that were present in the c2 and c1 clusters, as well as a number of c1/c2-enriched genes (e.g., Cpa3, Tox2, Pdcd1, Tmem121, Bex6, and Scin) whose importance in γδ T cell development is unclear (Figure 2B, C, Supplementary file 2). This was not solely due to the decreased frequency of the c2 and c1 clusters in B6.Sh2d1a-/- mice, as a closer analysis revealed a decreased number of transcripts for many signature genes (e.g., Blk, Etv5, Ccr2) prevalent in the c2 cluster and to a lesser extent the c7 cluster (Figure 2—figure supplement 1). Given the decreased expression of Blk, we also examined the expression of Src tyrosine kinase family members Lck and Fyn, which have previously been implicated in T cell development (Laird and Hayes, 2010). Unlike Blk, which was mostly restricted to γδT17 clusters, Lck and Fyn expression was more broadly distributed (Figure 1—figure supplement 1). Using pseudobulk analysis to compare their expression between B6 and B6.Sh2d1a-/- immature E.17 γδ T cells, we found that neither Lck nor Fyn expression was appreciably altered (Figure 2—figure supplement 1), suggesting that Blk expression was uniquely dependent on SAP. We did note, however, that the magnitude of Lck differential expression was close to the 0.5 log2 FC cut-off (Figure 2—figure supplement 1). Indeed, a large number of genes whose expression was increased in B6.Sh2d1a-/- mice were those whose expression was mostly confined to the c6 cluster (e.g., Cd4, Cd8b1, Ptcra, Rag2) or whose expression was highest in c6 (e.g., Tcf7, Thy1, Lck) (Figure 2B, C, Figure 2—figure supplement 1). Together, these data identified the Gzma+Etv5+Sox13+Blk+Tox2+ c2 and Cd4+Cd8b1+Ptcra+Rag2+ c6 clusters as SAP-dependent developmental checkpoints.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig2-v1.jpg)
+
+**Figure 2.:** (A) Uniform manifold approximation and projection (UMAP) representation of B6 (left) and B6.Sh2d1a-/- (right) γδ T cells from E17 thymi (n = 4 mice per group) is shown at left. Clusters were annotated based on protein and gene expression data. The frequencies of B6 and B6.Sh2d1a-/- E17 γδ T cell clusters are shown at right. Bars represent the mean cluster frequency, error bars represent standard deviation, **p ≤ 0.01, two-way ANOVA, Sidak multiple comparisons test; n = 4 mice/genotype. (B) Volcano plot of differentially expressed genes among immature CD24highCD73neg (clusters: C1, C2, C5, C6, C7, and C10) B6 and B6.Sh2d1a-/- γδ Τ cells using pseudobulk scRNAseq analysis. Genes exhibiting a log2FC ≥0.5 or ≤ –0.5, and a padj ≤ 0.005 in are shown in red. Only some selected genes are labeled for the sake of clarity. (C) Feature plots illustrating gene expression profiles of selected C2 and C6 cluster-specific genes among individual B6 and B6.Sh2d1a-/- E17 thymic γδ T cells. Each point represents a cell, color-coded by gene expression level (high: purple, low: yellow). (D) TCR clonotype bubble plot displaying the top 100 B6 and B6.Sh2d1a-/- TRGV4 clonotypes in E17 thymus. Bubbles represent unique TRGV4/TRDV clonotypes; size indicates frequency of clonotype among all Vγ4 T cells (n = 388 B6, 288 B6.Sh2d1a-/- cells), and colors denote specific TRDV chains utilized. Selected clonotypes are numbered and their respective CDR3γ and CDR3δ sequences displayed below. (E) Altered TRGV/TRDV clonotype distribution between B6 and B6.Sh2d1a-/- E17 thymic γδ T cells. Frequencies of selected clonotypes among different clusters of B6 and B6.Sh2d1a-/- E17 γδ T cells is shown. Bars represent the mean clonotype frequency among the indicated TRGV/TRDV pairings shown, error bars represent standard deviation, *p ≤ 0.05, ***p ≤ 0.001, two-way ANOVA, Sidak multiple comparisons test; n = 4 mice/genotype-age groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Genes whose expression decreased in B6.Sh2d1a-/- immature γδ T cells. (B) Genes whose expression increased in B6.Sh2d1a-/- immature γδ T cells, or whose expression was highest in the αβT cell-like c6 cluster.
+
 Next, we asked whether these SAP-dependent alterations in γδ T cell development were associated with any changes in the TCR repertoire. A comparison of all γδ TCR clonotypes between E17 B6 and B6.Sh2d1a-/- γδ T cells revealed no significant changes in overall clonotype frequency (Figure 2D). However, a closer examination of the TCR repertoire revealed significant changes in the distribution of specific TCR clonotypes. For example, within the TRGV4 repertoire, which represents the dominant TCR among immature clusters at E17, we observed a significant decrease in TRGV4/TRDV5 clonotypes in the c2 cluster and a concomitant increase of these clonotypes in the c6 cluster (Figure 2E). Among the TRGV4 clonotypes, this appeared to be specific to the TRDV5 clonotypes, as we observed no significant differences c2 and c6 frequencies among TRGV4/TRDV2-2 and TRDV7 clonotypes (Figure 2E). We did note, however, a significant increase in the TRGV4/TRDV7 clonotypes in the Il2ra+ c5 cluster (Figure 2E). Within the TRGV1 repertoire, we noted a significant increase in TRGV1/TRDV4 clonotypes within the c6 cluster (Figure 2E). Together, these data suggested that SAP operated at an early stage of γδ T cell development during or soon after the down-regulation of Il2ra, and that it positively regulated entry into the γδT17 pathway at the c5/c7 to c2 transition, while at the same time inhibiting entry into the CD4+CD8+ αβ T cell-like c6 cluster. The net result of these changes appeared to be that specific TCR clonotypes such as TRGV4/TRDV5 were diverted from the γδT17 pathway into the αβ T cell-like pathway.
 
-## SAP deficiency is associated with increased numbers of immature CD4+CD8+RORγt+ thymic γδ T cells
+### SAP deficiency is associated with increased numbers of immature CD4+CD8+RORγt+ thymic γδ T cells
 
 Next, we independently evaluated these observations using flow cytometry. This analysis revealed that while SAP deficiency did not affect the overall number of E17 γδ T cells (Figure 3—figure supplement 1), it did result in a significant decrease of immature CD24posBLKposMAFposRORγtposγδ T cells in E17 B6.Sh2d1a-/- thymus (Figure 3A, B). We found that this decrease was most pronounced in the CD44pos population after downregulation of CD25 (Figure 3A, Figure 3—figure supplement 1) and that this population exhibited a high level of PLZF expression, suggesting it corresponded to the CD44+Blk+Maf+Zbtb16+Rorc+ c1 cluster (Figure 3—figure supplement 1). In addition, UMAP analysis of E17 Vγ4 T cells flow cytometric data revealed the presence of a SAP-dependent CD24posBLKposPLZFposRORγtneg population in B6.Sh2d1a-/- thymus (Figure 3—figure supplement 1) consistent with the phenotype of the Rorclow c2 cluster. In contrast, we found no evidence of a SAP-dependent decrease in the CD25pos population frequency, consistent with the notion that SAP exerts its effect during or after this stage of development (Figure 3A). We also noted that in addition to its effect on the numbers of immature thymic γδT17, SAP deficiency resulted in the reduced expression levels of some of these markers, most notably BLK (Figure 3C), a finding that was consistent with the decreased number of Blk transcripts observed in Figure 2. Interestingly, as PLZF induction is often associated with SLAM/SAP signaling, we noted that SAP did not affect overall PLZF expression levels in E17 thymic γδ T cells (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative contour plots depicting CD24pos E17 γδ T cells in B6 (top) and B6.Sh2d1a-/- (bottom) mice. Concatenated data from two B6 and three B6.Sh2d1a-/- embryos are shown, and are representative of two independent experiments. Numbers in the plots represent the frequency as a percentage of CD24pos γδ T cells. (B) Cumulative frequency and number of immature CD24pos BLK- (left), c-MAF- (right), RORγt-expressing E17 thymic γδ T cells. The mean and standard deviation are indicated. Data are the cumulative data from two independent experiments, n = 10 B6, 11 B6.Sh2d1a-/- pooled embryonic thymi, *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001, two-way ANOVA, Sidak’s multiple comparisons test. (C) Relative geometric mean of BLK, c-MAF, and RORγt expression in B6 and B6.Sh2d1a-/- E17 CD24+CD73- Vγ4 γδ T cells, *p ≤ 0.001, ****p ≤ 0.0001, two-way ANOVA, Sidak’s multiple comparisons test. Data are representative of two independent experiments, 7–9 mice per group. (D) Cumulative frequency (left) and number (right) of immature CD4- and CD8- MAFnegRORγtpos E17 thymic γδ T cells in B6 and B6.Sh2d1a-/- thymus. The mean and standard deviation are indicated. Data are the cumulative data from two independent experiments, n = 10 B6, 11 B6.Sh2d1a-/- pooled embryonic thymi, **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001, two-way ANOVA, Sidak’s multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Total number of E17 thymic γδ T cells in B6 and B6.Sh2d1a-/- E17 thymus. (B) E17 thymic Vγ4 developmental checkpoints. Left, uniform manifold approximation and projection (UMAP) representation of E17 B6 and B6.Sh2d1a-/- Vγ4 T cell flow cytometry data with selected FlowSOM clusters indicated by color. All other cells are shown in gray. Right, individual dot plots overlaid with the selected FlowSOM clusters from the UMAP plot. Data represent concatenated data from four B6 and four B6.Sh2d1a-/- TCRβnegTCRδpos γδ T cells and are representative of two independent experiments. (C) Cumulative frequency and number of the indicated FlowSOM populations shown in (B), *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, unpaired t-test, corrected for multiple comparison using Holm–Sidak’s test. (D) Decreased BLK, but not PLZF expression in B6.Sh2d1a-/- γδ T cells. Above, histograms of BLK and PLZF in immature E17 γδ T cells. B6 BLK (dark gray) and PLZF (red) histograms are overlaid on B6.Sh2d1a-/- (light gray) histograms for comparison. Below, control stains lacking BLK or PLZF. (E) Representative contour plots of immature CD25neg E.17 Vγ4 T cells in B6 and B6.Sh2d1a-/- mice.
+
 In contrast to the decreased numbers of CD24posBLKposMAFposPLZFposRORγtpos γδ T cells, we observed a significant increase in the frequency and number of CD24posBLKnegMAFnegPLZFnegRORγtpos γδ T cells (Figure 3A, B), whose phenotype was consistent with the αβ T cell-like c6 cluster in Figure 2. Consistent with our finding that the c6 cluster was enriched in CD4 and CD8, we found that the frequency and number of CD4 and CD8-expressing CD24pos TCRδposTCRβneg BLKnegMAFnegRORγtpos thymic γδ T cells was significantly increased in B6.Sh2d1a-/- mice (Figure 3D). Together, these analyses confirmed our single-cell CITEseq analysis, and suggested that SAP regulated the throughput of immature γδ T cells in both the γδT17 cell pathway and the αβ T cell-like pathway. More specifically, the data suggested that SAP promoted progression to the CD24pos BLKposMAFposPLZFposRORγtlow c2 cluster that is enriched in a number of genes (e.g., Sox13, Etv5, Blk, Maf) known to regulate γδT17 development, but that it inhibited entry into the CD24pos44negBLKnegMAFnegRORγtpos αβ T cell-like pathway (c6 cluster).
 
-## Identification of SAP-dependent developmental checkpoints during neonatal and adult thymus γδ T cell developmental programming
+### Identification of SAP-dependent developmental checkpoints during neonatal and adult thymus γδ T cell developmental programming
 
 The neonatal period is a time of rapid expansion of numerous γδ T cell subsets in the thymus including Vγ4 γδT17 and γδNKT. Therefore, we conducted a comparison between B6 and B6.Sh2d1a-/- neonatal and adult thymic γδ T cells, to identify novel SAP-dependent developmental checkpoints and to track the outcome of the SAP-dependent alterations in γδ T cell development observed in E17 thymus. Neonate datasets revealed a similar branched clustering pattern as in E17 with some notable differences. Similar to E17, we observed immature CD24pos73lowSLAMF1posSLAMF6pos clusters (c0, c1, c2, c3, c9, c12, c14), CD24pos73low/posSLAMF1posSLAMF6pos (c4, c5, c10, c15) S1pr1-enriched ‘naive’ clusters, mature CD24neg73lowSLAMF1posSLAMF6neg (c6, c7) γδT17 clusters, and a mature CD24neg73posSLAMF1negSLAMF6low/posSlamf7high (c8) γδT1 cluster (Figure 4A, B, Figure 4—figure supplement 1). In general, we noted good correlation with cluster-specific gene expression between the E17 and D9 (day 9) datasets. A notable exception was a striking decrease in Zbtb16 expression among all immature neonatal γδ T cells, which is consistent with previous reports (Chen et al., 2021; Sagar et al., 2020, Figure 4—figure supplement 1, Supplementary file 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig4-v1.jpg)
+
+**Figure 4.:** (A) Uniform manifold approximation and projection (UMAP) representation of B6 (left) and B6.Sh2d1a-/- (right) γδ T cells from D9 neonatal thymi (n = 3 mice per strain). Cluster annotation is based on comprehensive protein and gene expression data. (B) Feature plots displaying cell surface protein expression patterns of CD24, CD73, SLAMF1, and SLAMF6 on D9 B6 thymus γδ T cells. Data are color-coded based on protein expression level (high: dark blue, low: yellow). (C) UMAP representation of D9 B6 thymic γδ T cells exhibiting selected TRGV4 (left) and TRDV (right) chain V-segment usage (in blue) in individual cells. (D) Frequencies of B6 and B6.Sh2d1a-/- D9 thymic γδ T cell clusters. Bars represent the mean cluster frequency, error bars represent standard deviation, *p ≤ 0.05, **p ≤ 0.01, two-way ANOVA, Sidak multiple comparisons test, 3 mice/strain. (E) Representative contour plots depicting BLK and RORγt expression in B6 and B6.Sh2d1a-/- CD24posCD73neg D9 Vγ4 T cells are shown above. Cumulative frequencies of BLK and RORγt expression are shown below. The mean and standard deviation are indicated. Data are the cumulative data from three independent experiments, n = 13 B6, 16 B6.Sh2d1a-/- mice, ****p ≤ 0.0001, two-way ANOVA, Sidak’s multiple comparisons test. (F) Decreased BLK expression in immature B6.Sh2d1a-/- γδ T cells. Data represent the mean expression of the indicated proteins in D6 neonate BLKpos, RORγtpos, or cMafpos thymic γδ T cells, **p ≤ 0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dot plot showing scaled expression level of selected genes in B6 D9 thymic γδ T cells. Level of normalized expression is shown using a color scale ranging from low (yellow) to high (purple). Dot size represents the fraction of cells within each cluster that express the marker. (B) Violin plots showing the specificity of the oligo-conjugated antibody derived tags (ADT) to cell surface proteins (CD24, CD73, SLAMF1, SLAMF6) among different B6 D9 thymus γδ T cell clusters. (C) Violin plots showing expression levels of selected genes among individual clusters in the B6 D9 thymic γδ T cells. (D) Violin plots showing expression levels of Zbtb16 gene (expressing PLZF) among individual clusters in the B6 E17 (top) and D9 (bottom) thymic γδ T cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) SLAMF6 and SLAMF7 expression defines γδNKT cell subsets. Left, representative dot plot of PLZF and T-bet expression in B6 D9 thymic Vγ1Vδ6.3 γδNKT cells. Representative contour plots of ICOS and NK1.1 (top right) and SLAMF6 and SLAMF7 (bottom right) staining in PLZFhiT-betlow and PLZFlowT-bethigh subsets are shown at right. Data are representative of two independent experiments with a total of ten mice. (B) Left, representative dot plot of SLAMF6 and SLAMF7 expression in B6 D9 thymic Vγ1Vδ6.3 γδNKT cells. Right, representative dot plots of intracellular IL4 and IFN-γ expression in SLAMF6hiSLAMF7low, SLAMF6highSLAMF7hi, and SLAMF6lowSLAMF7hi γδNKT cell subsets. Numbers indicate percentage. Cumulative data of IL-4 and IFN-γ expression is shown below. Data are representative of two independent experiments with a total of 10 mice. (C) Increased number of immature CD200-S1P1+ γδ T cells in SAP-deficient neonatal thymus.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Uniform manifold approximation and projection (UMAP) representation of B6 and B6.Sh2d1a-/- adult thymus (6 weeks old) γδ T cells, n = 3 mice per strain. (B) Feature plots illustrating the cell surface protein expression profiles of CD24, CD73, SLAMF1, and SLAMF6 on adult thymic γδ T cells. Each data point represents a cell, color-coded to indicate varying protein expression levels (high: dark blue, low: yellow). (C) Frequencies of B6 and B6.Sh2d1a-/-γδ T cell clusters. Bars represent the mean cluster frequency, error bars represent standard deviation, *p ≤ 0.05, **p ≤ 0.01, ****p ≤ 0.0001, two-way ANOVA, Sidak multiple comparisons test. (D) Dot plot showing scaled expression level of selected genes in B6 adult thymic γδ T cells. Level of normalized expression is shown using a color scale ranging from low (yellow) to high (purple). Dot size represents the fraction of cells within each cluster that express the marker. (E) Expression of selected TRG (left) and TRDs chain (right) V-segment usage (blue) by individual adult thymus γδ Τ cells in B6 and B6.Sh2d1a-/- mice.
 
 In contrast to the E17 dataset, the neonatal thymic γδ T cell dataset contained a CD24neg73posSLAMF1negSLAMF6highSlamf7neg (c13) γδT2 cluster enriched in Il4, Il13, Zbtb16, Cd40lg, and Nos1 (Figure 4—figure supplement 1, Supplementary file 1), suggesting it represented IL-4-producing γδNKT cells. Indeed, examination of the γδT2 (c13) and γδT1 (c8) cluster TCR repertoires revealed a significant enrichment of canonical TRGV1 and TRAV15N-1 or TRAV15-1/DV6-1 sequences characteristic of γδNKT cells (Figures 4C and 5; Azuara et al., 1997). Analysis of the differentially expressed genes in the γδT1 (c8) and γδT2 (c13) clusters revealed that Zbtb16, Icos, and Slamf6 were markers of γδT2 cells while Tbx21, Klrb1c (NK1.1), and Slamf7 were markers of γδT1 cells in neonatal thymus (Figure 4—figure supplement 1). Flow cytometric analysis confirmed that PLZFhi γδT2 Vγ1Vδ6.3 cells co-express SLAMF6 and ICOS while Tbethi γδT1 Vγ1Vδ6.3 cells are NK1.1+ and are either SLAMF6-SLAMF7+ or SLAMF6+SLAMF7+ (Figure 4—figure supplement 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig5-v1.jpg)
 
-**Figure 5.:** (Α) TCR clonotype bubble plots depicting the top 100 B6 and B6.Sh2d1a-/- TCR clonotypes among D9 thymic γδ T cells. Each bubble represents a unique clonotype, is sized according to its frequency as a percentage of all γδ T cells n = 1429 B6, 1354 B6.Sh2d1a-/- cells, and is colored based on specific TRGV chains utilized. (B) TCR clonotype bubble plots depicting the top 100 B6 and B6.Sh2d1a-/- TRGV1 (above) and TRGV4 (below) clonotypes among D9 γδ T cells. Bubble size indicates clonotype frequency as a percentage of TRGV1+ (n = 198 B6, 98 B6.Sh2d1a-/-) or TRGV4+ (n = 646 B6, 669 B6.Sh2d1a-/-) cells, and colors correspond to specific TRDV chains. Selected clonotypes are numbered and their corresponding CDR3γ and CDR3δ sequences are displayed below. (C) Distribution of selected TRGV/TRDV clonotypes among B6 and B6.Sh2d1a-/- D9 thymic γδ T cell clusters. Data are representative of 3 mice/strain, *p ≤ 0.05, ***p ≤ 0.001, two-way ANOVA, Sidak multiple comparisons test.Figure 5—source data 1.Sh2d1a-/- gamma delta T cells.
+**Figure 5.:** (Α) TCR clonotype bubble plots depicting the top 100 B6 and B6.Sh2d1a-/- TCR clonotypes among D9 thymic γδ T cells. Each bubble represents a unique clonotype, is sized according to its frequency as a percentage of all γδ T cells n = 1429 B6, 1354 B6.Sh2d1a-/- cells, and is colored based on specific TRGV chains utilized. (B) TCR clonotype bubble plots depicting the top 100 B6 and B6.Sh2d1a-/- TRGV1 (above) and TRGV4 (below) clonotypes among D9 γδ T cells. Bubble size indicates clonotype frequency as a percentage of TRGV1+ (n = 198 B6, 98 B6.Sh2d1a-/-) or TRGV4+ (n = 646 B6, 669 B6.Sh2d1a-/-) cells, and colors correspond to specific TRDV chains. Selected clonotypes are numbered and their corresponding CDR3γ and CDR3δ sequences are displayed below. (C) Distribution of selected TRGV/TRDV clonotypes among B6 and B6.Sh2d1a-/- D9 thymic γδ T cell clusters. Data are representative of 3 mice/strain, *p ≤ 0.05, ***p ≤ 0.001, two-way ANOVA, Sidak multiple comparisons test.
 
 A comparison of B6 and B6.Sh2d1a-/- neonatal γδ T cells revealed multiple SAP-dependent changes in clustering. Among the immature γδ T cells, we observed a decreased frequency of the immature CD24high73negSLAMF1posSLAMF6pos c1 cluster (Figure 4D) that was enriched in Blk, Etv5, Sox13, Rorc, and Maf (Figure 4—figure supplement 1), suggesting it was analogous to the SAP-dependent c2 cluster in E17 γδ T cells. Similar to our observations in E17 γδ T cells, flow cytometric analysis confirmed both a decrease in BLKposRORγtpos and BLKposRORγtneg γδ T cell populations, as well as a decreased level of BLK expression (Figure 4E, F). In addition, we observed an increased frequency of immature CD24high73negSLAMF1posSLAMF6pos cluster with characteristics of αβ T cells (c14) in B6.Sh2d1a-/- D9 thymic γδ T cells (Figure 4D, Figure 4—figure supplement 1). While this increase did not reach the level of significance, presumably due to the very low number of c14 cells in the dataset, flow cytometric analysis revealed a significant increase in immature CD24pos73negBLKnegRORγtpos γδ T cells, a phenotype consistent with γδ T cells that have been diverted to the αβ developmental pathway (Figure 4E). Last, we observed an increased frequency of immature CD24pos73low/pos SLAMF1posSLAMF6pos S1pr1-enriched c4 and c5 clusters, but not the closely related Cd200-enriched c10 cluster (Figure 4D). While we did confirm an increased number of CD200negS1pr1pos γδ T cells in neonatal thymus by flow cytometry, this increase was relatively small and its significance is unclear (Figure 4—figure supplement 2). Independent confirmation of these SAP-dependent changes in neonatal γδ T cell gene expression was obtained by conducting bulk RNAseq analysis of FACS-sorted CD24high neonatal thymic γδ T cells from B6 and B6.Sh2d1a-/- mice (Supplementary file 4).
 
@@ -86,7 +134,7 @@ Among the mature neonatal γδ T cells, we observed a decreased frequency of the
 
 A comparison of B6 adult thymic γδ T cells between B6 and B6.Sh2d1a-/- mice recapitulated many of our observations of the neonatal thymus, although to a somewhat lesser degree. For example, we observed a small but significant decrease in the frequency of the CD24highCD73low adult thymic c1 and c2 clusters in B6.Sh2d1a-/- mice that was coupled with an increased frequency of the CD24posCD73+/- c0 cluster (Figure 4—figure supplement 3). Like the SAP-dependent E17 c2 and D9 c1 clusters, the adult thymus c1 and c2 clusters were enriched in γδT17-associated Blk, Etv5, Sox13, Maf, and Rorc (mostly in c2) indicating that SAP regulates this γδ T cell thymic developmental checkpoint at all ages. Likewise, both the adult thymus c0 and the neonatal c4 and c5 clusters that were enriched in Ms4a4b, Ms4a6b, Dgka, Klf2, and S1pr1 exhibited increased frequencies in B6.Sh2d1a-/- mice. Just as we observed in neonatal thymic γδ T cells, we noted a near complete loss of mature γδNKT cells (Zbtb16, Icos, and Il4-enriched γδT2 c8 cells and Tbx21, Slamf7, and Il2rb-enriched γδT1 c11 cells) as well as a decreased frequency of mature non-γδNKT γδT1 c10 cluster cells in B6.Sh2d1a-/- adult thymus (Figure 4—figure supplement 3). Unlike the E17 and neonatal thymic datasets, however, the frequency of γδ T cells with an αβ T cell-like signature in the adult thymic γδ T cell dataset was minimal. Collectively, these data supported the presence of multiple SAP-dependent developmental changes during neonatal and adult γδ T cell development—a reduction in the CD24posCD73neg SLAMF1+SLAMF6+ cluster enriched in γδT17 development-associated transcripts, an increased frequency of immature S1pr1-enriched γδ T cells, and decreased frequencies of both γδNKT cells (γδT1 and γδT2) and non-γδNKT γδT1 cells.
 
-## SAP shapes the thymic γδ TCR repertoire
+### SAP shapes the thymic γδ TCR repertoire
 
 Given our observation of altered γδ TCR clonotype distribution among E17 γδ T cells and the substantial changes in clustering we observed in SAP-deficient mice, we were next interested in determining the effect of SAP deficiency on the neonatal and adult γδ TCR repertoires. A comparison of the frequencies of the top 100 neonate γδ TCR clonotypes between B6 and B6.Sh2d1a-/- mice revealed significant changes in the overall frequency of several TRGV1 and TRGV4 clonotypes (Figure 5A). Consistent with a SAP-dependent loss of γδNKT, we observed a profound loss of TRGV1 clonotypes utilizing the canonical TRAV15N-1 and TRAV15-1/TRDV6-1 γδNKT cell TCRs (Figure 5B). Loss of these clonotypes was directly tied to the significant decrease of the γδT1 c8 and γδT2 c13 clusters, in which nearly all these clonotypes resided.
 
@@ -94,17 +142,33 @@ Within the B6 γδT2 c13 cluster the vast majority (~86%) of TCR sequences were 
 
 Interestingly, a closer examination of the neonatal thymic TRGV4 clonotypes revealed a significant decrease in the frequencies of γδT17-associated clonotypes with a germline-encoded TRDV5 (Kashani, 2015; Figure 5B), some of which were identical to those that were redistributed to the αβ T cell-like c6 cluster in E17 γδ T cells (Figure 2E). When these clonotypes were mapped to their D9 clusters, we noted a significant decrease in the frequency of TRGV4/TRDV5 clonotypes in the mature γδT17 c6 cluster (Figure 5C). We note that while we observed a trend toward an increased frequency of TRGV4/TRDV5 and TRGV4/TRDV2 clonotypes in the S1pr1+ c4/c5 clusters, analysis of these sequences revealed that they largely exhibited diverse CDR3 rather than the restricted CDR3 observed in the γδT17 c6 cluster (Supplementary file 2). Taken together, these data indicated that the immature E17 γδ TCR clonotypes that were redirected to the αβ T cell pathway in B6.Sh2d1a-/- mice were underrepresented among the mature B6.Sh2d1a-/- neonatal γδ T cells.
 
-## Restricted TCR repertoire in innate-like γδT1 as well as γδT17 in the periphery
+### Restricted TCR repertoire in innate-like γδT1 as well as γδT17 in the periphery
 
 We previously demonstrated that SAP-deficiency results in a significant impairment in γδ T cell function in the periphery (Dienz et al., 2020). Specifically, we observed that γδ T cell IL-17 production is impaired in the lungs of young mice, but that this had largely corrected itself as the mouse reached maturity. In contrast, we observed that both Vγ1 and Vγ4 IFN-γ production were significantly impaired in B6.Sh2d1a-/- adult lung and spleen. To better understand how SAP-dependent alterations in thymic development ultimately affected the peripheral γδ T cell compartment, we compared B6 and B6.Sh2d1a-/- lungs using single-cell RNAseq with V(D)J profiling.
 
 Our initial annotation of the B6 lung γδ T cell transcriptome revealed the presence of 11 clusters of the lung γδ T cells that we annotated based on cluster-specific gene expression and TRGV and TRDV usage (Figure 6A). Based on their expression of signature cytokines and transcription factors, we identified 2 γδT17 clusters (c1 and c4), 4 γδT1 clusters (c2, c3, c7, and c9), 1 γδTNKT-like cluster (c10) with very few cells, as well as a Cd24-enriched cluster (c5) (Figure 6B, C, Supplementary file 5). Consistent with previous observations, we noted that the c1 and c4 γδT17 clusters were enriched in Slamf1 and that the c2/c3/c7/c9 γδT1 clusters were enriched in Slamf7 and Slamf6 (Figure 6B). Indeed, flow cytometric analysis revealed that SLAMF7 expression was restricted to the innate-like lung CD44+CD45RB+γδT1 cell population, and that γδT1 cells are SLAMF1-F6+F7+, while the CD44+CD45RB- γδT17 subsets are SLAMF1+F6-F7- (Figure 6D). Further annotation using V(D)J profiling revealed that the c1 cluster corresponded to Vγ4 γδT17 (primarily TRGV4/TRDV5 and TRGV4/TRDV2-2) while the c4 cluster corresponded to lung Vγ6 (TRGV6/TRDV4) (Figure 6E, Supplementary file 6). The c10 cluster was enriched in Zbtb16, Il4, and Icos (Figure 6B, C) as well as TRGV1/TRAV15N-1 and TRGV1/TRDV6 sequences (Figure 6E, Supplementary file 6) consistent with γδNKT cells. We did note, however, that the TRAV15N-1 and TRDV6 sequences in the c10 cluster were, for the most part, non-canonical γδNKT cell clonotypes, suggesting a degree of flexibility in the TRAV15N-1 and TRDV6 CDR3 sequences that can be utilized by γδNKT cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig6-v1.jpg)
+
+**Figure 6.:** (A) Uniform manifold approximation and projection (UMAP) representation of B6 adult lung γδ T cells. Clusters are annotated based on gene expression and TCR profiling data. (B) Feature plot displaying gene expression profiles of selected genes among individual B6 lung γδ T cells, color-coded based on gene expression levels. (C) Dot plot indicating scaled expression levels of selected genes in B6 lung γδ T cells, with dot size representing the fraction of cells within each cluster expressing the marker. (D) SLAMF6 and SLAMF7 co-expression marks CD44+CD45RB+ IFN-γ-producing cells in the periphery. Representative dot plots (left) of CD44 and CD45RB expression on lung Vγ1 (top) and Vγ4 (bottom) γδ T cells. SLAMF7-expressing cells are highlighted in blue. Representative contour plots (right) of SLAMF1, SLAMF6, and SLAMF7 expression on IFN-γ+ and IL-17+ lung γδ T cells. (E) UMAP representation of B6 lung γδ T cells indicating selected TRG and TRD chain V-segment usage (blue). (F) Amino acid length distribution of lung CDR3δ clonotypes among immature C0/C5, γδT1 C2/C3/C7/C9, γδT17 C1, and γδT17 C4 clusters. The top 10 clonotypes in each group are color-coded, while all other clonotypes are shown in gray.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) TRDV usage among FACS-sorted lung Vγ4 γδ Τ cells from seven male and six female mice. (B) Left, amino acid length distribution of top lung TRDV5+ CDR3δ clonotypes in the lung Vγ4 γδ T cell population. Right, distribution of the most frequent clonotypes among individual B6 mice. (C) Left, amino acid length distribution of top lung TRDV2+ CDR3δ clonotypes in the lung Vγ4 γδ T cell population. Right, distribution of the most frequent clonotypes among individual B6 mice. (D) Left, amino acid length distribution of top lung TRDV7+ CDR3δ clonotypes in the lung Vγ4 γδ T cell population. Right, distribution of the most frequent clonotypes among individual B6 mice. (E) Left, amino acid length distribution of top lung TRGV4+ CDR3γ clonotypes in the lung Vγ4 γδ T cell population. Right, distribution of the most frequent clonotypes among individual B6 mice.
+
 Interestingly, while the γδT1 c2/c3/c7/c9 clusters contained primarily Vγ1 and Vγ4 T cells as expected, we noted that Vγ4 γδT1 cells exhibited a striking preference in the usage of TRAV13-4(DV7), and that TRGV4/TRDV7 pairings accounted for 80% of all Vγ4 clonotypes in the γδT1 clusters (Figure 6E, Supplementary file 6). Analysis of the γδT1 TRAV13-4/DV7 CDR3 sequences revealed a high level of diversity that showed no evidence of clonal expansions (Figure 6F). This was in contrast to the highly restricted Vγ6 repertoire in the c4 γδT17 cluster, as well as the restricted Vγ4 repertoire in the c2 γδT17 cluster that was dominated by semi-invariant TRDV5 and TRDV2-2 sequences (Figure 6F). As no Vδ7-specific antibody was available, we independently confirmed this observation using single-cell PCR to assess the lung Vγ4 CDR3δ sequences from 13 individual mice. These data demonstrated that, other than TRDV2-2 and TRDV5, TRDV7 is the only other TCR delta chain used at an appreciable frequency by Vγ4 T cells in the B6 mouse lung and that it exhibits significant diversity in its CDR3 (Figure 6—figure supplement 1). Vγ1 γδT1 cells, in contrast, exhibited a more mild pairing preference where 44% of the γδT1 clonotypes utilized TRAV15N-1, TRAV15-1/DV6-1, or TRAV15D-2/DV6D-2 and 13% utilized TRAV13-4/DV7 (Supplementary file 6). Together these data formed a comprehensive map of B6 lung γδ T cell transcriptomes and revealed that lung innate-like γδT1, like γδT17 and γδNKT, are all characterized by preferential TCR γ- and δ-chain pairings. This was especially notable for Vγ4 and our data suggested that Vγ4 γδT1 exhibited a distinct preference for the utilization of TRAV13-4(DV7) chains with diverse CDR3.
 
-## SAP regulates peripheral Vγ4/Vδ7 γδT1 cells and shapes the lung γδT17 repertoire
+### SAP regulates peripheral Vγ4/Vδ7 γδT1 cells and shapes the lung γδT17 repertoire
 
 Next, we assessed the effect of SAP deficiency on the lung γδ TCR repertoire by comparing B6 and B6.Sh2d1a-/- lung γδ T cells (Figure 7A). Consistent with our previous observation that lung γδ T cell IFN-γ production is deficient in Sh2d1a-deficient mice (Dienz et al., 2020), we observed a decrease in the frequency of the γδT1 c2, c3, and c7 clusters (Figure 7B). Moreover, we observed a striking decrease in the frequency of TRGV4/TRDV7-expressing cells in the lungs of B6.Sh2d1a-/- mice (Figure 7C, D, Supplementary file 6), and we noted that we found no evidence of a compensatory increase in the frequency of other TRDV-expressing lung Vγ4 γδT1 cells in the B6.Sh2d1a-/- lung. We independently confirmed this SAP-dependent decrease in TRAV13-4/TRDV7 in both lung and spleen using qPCR (Figure 7—figure supplement 1), and we demonstrated a significant decrease in the number of CD44+SLAMF7+ Vγ4 T cells in both the lungs and spleen of B6.Sh2d1a-/- mice (Figure 7E, Figure 7—figure supplement 1). The decreased lung γδT1 did not appear to be due to an SAP-dependent decrease in homeostatic proliferation, nor to increased apoptosis, since we observed no significant change in lung γδ T cell BrdU incorporation or Annexin V staining in B6.Sh2d1a-/- mice (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig7-v1.jpg)
+
+**Figure 7.:** (A) Uniform manifold approximation and projection (UMAP) representation of B6 (left) and B6.Sh2d1a-/- (right) lung γδ T cells, pooled from 3 mice per strain. (B) SAP-dependent variation in lung γδ T cell cluster frequencies. The frequency of each B6 and B6.Sh2d1a-/- cluster as a percentage of all lung γδ T cells is shown. (C) UMAP representation of selected TRG and TRD chain V-segment usage (blue) among B6 and B6.Sh2d1a-/- lung γδ T cells. (D) SAP-dependent decrease in lung γδT1 TRGV4/TRDV7. Normalized TRDV counts in B6 and B6.Sh2d1a-/- lung TRGV4+ γδT1 clusters (C2/C3/C7/C9). (E) SAP-dependent decrease in SLAMF7+ lung Vγ4 T cells. Representative contour plots of CD44 and SLAMF7 expression in B6 (left) and B6.Sh2d1a-/- (right) lung Vγ4 γδ T cells are shown at left. Relative frequencies and counts of CD44+SLAMF7+ lung Vγ4 cells is shown at right. Data represent the cumulative data from five independent experiments, ****p < 0.0001 using unpaired t-test. (F) SAP-dependent skewing of the lung γδT17 TCR repertoire. Amino acid length distributions of B6 and B6.Sh2d1a-/- TRGV4+ CDR3γ (left) and TRDV2+ CDR3δ (right) sequences in the lung Vγ4 γδT17 C1 cluster. The top 10 clonotypes are color-coded and all other clonotypes are shown in gray. Bars represent the frequency of γδ T cells in the c1 cluster. (G) TCR clonotype bubble plots depicting the top 50 lung TRGV4 clonotypes in the C1 γδT17 cluster. Bubble size indicates clonotype frequency as a percentage of C1 Vγ4 (n = 62 B6, 104 B6.Sh2d1a-/-) T cells, and colors correspond to specific TRDV chains. Selected clonotypes are numbered and their corresponding CDR3γ and CDR3δ sequences are displayed below.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97229/elife-97229-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The relative expression of the specified TRDV transcripts in adult lung and spleen CD45+ leukocytes (normalized to total TRDC transcript levels) in B6 and B6.Sh2d1a-/- mice, **p < 0.01, ****p < 0.0001, two-way ANOVA followed by Sidak multiple comparisons test. (B) SAP-dependent decrease in CD44+SLAMF7+ spleen Vγ4 T cells. The relative percentage and count of CD44+SLAMF7+ Vγ4 cells in B6 and B6.Sh2d1a-/- spleen subsets are shown. Data are representative of five independent experiments with 3–5 mice per strain per experiment, ****p < 0.0001, as determined by unpaired t-tests. (C) No difference in lung Vγ4 homeostasis in B6.Sh2d1a-/- mice. Top left, representative contour plots showing the frequency of BrdU staining in B6 and B6.Sh2d1a-/- lung γδ T cells. Cumulative data from two independent experiments are shown at top right. Bottom left, representative contour plots depicting Annexin V and Live/Dead staining in B6 and B6.Sh2d1a-/- lung γδ T cells. Cumulative results are shown at bottom right, and are representative of three independent experiments.
 
 In addition to the decrease in lung γδT1, we also noted a loss of the c10 γδT2 cluster consistent with the enrichment in SAP-dependent γδNKT TCRs in this cluster, and we observed an increased frequency of the Vγ4 γδT17 c1 cluster (Figure 7B). Given our previous observation of a SAP-dependent decrease in lung γδ T cell IL-17 production in young, but not adult mice (Dienz et al., 2020), and our findings here of SAP-dependent alterations in γδT17 clonotypes, we were interested in determining whether the adult lung γδT17 repertoire was altered in SAP-deficient mice. Indeed, a comparison of the lung Vγ4 c1 γδT17 CDR3 sequences between B6 and B6.Sh2d1a-/- mice revealed significant alterations in the γδT17 c1 cluster TCR repertoire. Specifically, we noted a decreased frequency of TRGV4 chains that exhibited a germline-encoded CDR3γ (CSYGYSS) and an increased frequency of TRGV4 chains with a CDR3γ exhibiting evidence of N/P additions (CSYG(X)YSS). These changes were associated with a significant shift in the usage of TRDV2-2 CDR3δ sequence usage (Figure 7F) and an altered c1 TCR clonotype frequency in B6.Sh2d1a-/- mice (Figure 7G). Although the number of germline-encoded invariant TRGV4/TRDV5 clonotypes (clonotype 1 in Figure 6B) was diminished in B6.Sh2d1a-/- lung γδ T cells (Figure 7G, Supplementary file 6), the low numbers of cells available for analysis precluded us from making strong conclusions regarding the loss of any one particular clonotype. Taken together, these data suggest that Vγ4 γδT1 preferentially utilize the TRAV13-4(DV7) chain in the lung and that the SAP-dependent decrease in peripheral γδ T cell IFN-γ production is not due to dysregulated cytokine production, but rather due to a specific loss of innate-like γδT1 subsets. This finding, together with our finding that the adult lung γδT17 TCR repertoire is altered in SAP-deficient mice, suggests that SLAM/SAP signaling plays a role in shaping the γδ TCR repertoire.
 
@@ -132,15 +196,452 @@ In summary, our findings reveal the presence of multiple SAP-dependent developme
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat#: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.129S6-Sh2d1atm1Pls/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat#: 025754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Thymus, spleen, lung</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated tissue</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/32, Fc block (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 101301</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4-BUV395 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 363-0042-82</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal Rat Serum (IgG)</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat#: 13551</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b-Alexa Fluor 647 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 101220</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c-Alexa Fluor 647 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 117314</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Annexin V Conjugate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 35111</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19-Alexa Fluor 647 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 115525</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD24-SB600 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 63-0242-82</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD24-BV605 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 101827</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD25-PE-Dazzle594 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 102048</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD25-Alexa Fluor 488 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 102017</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD27-PE-Dazzle594 (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 124228</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44-BV510 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 103044</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45RB-APC-Cy7 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 103310</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD73-APC-F750 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 127222</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD150-BV650 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 115931</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD196-BV785 (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 129823</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD319-APC (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 152004</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cMAF-Alexa488 (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 53-9855-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IFNγ-PE (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 505808</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL17a-BV605 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 506927</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL4-PE-Cy7 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 504118</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLZF-PE (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 145804</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-T-bet-PE-Dazzle-594 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 644828</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRb-Alexa647 (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 109218</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vγ5-FITC (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 553229</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vδ6.3-R718 (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 752197</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RORγt-PE-CF594 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562684</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRδ-BB700 (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 745818</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vγ1-BV421 (hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 141116</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8α-Alexa700 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 56-0081-82</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-eFluor506 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 69-0451-82</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD200-PerCP-eF710 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 46-5200-82</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD278-SB645 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 64-9942-82</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67-PE-eFluor610 (rat monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 61-5698-82</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly108-BUV615(13G3 monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat#: 751341</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCR-Vγ4-PE-Cy7 (hamster monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 25-5828-82</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S1P1 (rat monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#: FAB7089P</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Blk (rabbit polyclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat#: 3262S</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vdelta1 (17D1) (rat monoclonal)</td>
+      <td>Willi Born; National Jewish Health, CO, USA</td>
+      <td>Hybridoma</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GDC1F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GC1R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GC1R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DC1R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GDC2F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GC2R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GC2R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DC2R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence is in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fixable UV LIVE/DEAD Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: L23105</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Horizon Brilliant Staining Buffer</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 566349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrogen eBioscience Foxp3/Transcription Factor Fixation/Permeabilization Concentrate and Diluent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 50-112-9060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BrdU Flow Kit</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 559619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 65-0865-14</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Binding Buffer for Annexin V (10×)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 00-0055-43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-bromo-deoxyuridine (BrdU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 19-160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6J (B6) and B6.129S6.Sh2d1a-/- mice were purchased from the Jackson Laboratory (Bar Harbor, ME) and were housed and bred in a specific pathogen-free facility at the animal facility of the University of Vermont. For experiments using E17 mice, timed-pregnant matings were used. The presence of a vaginal plug indicated day 0 of pregnancy. The flow cytometry experiments included 8- to 13-week-old B6 and B6.Sh2d1a-/- mice (age- and sex-matched). All experimental procedures on animals were carried out with the approval of the University of Vermont Institutional Animal Care and Use Committee under Protocols PROTO202000073 and PROTO202000179.
 
-## Tissue processing
+### Tissue processing
 
 Single-cell suspensions from the spleen and thymus were obtained by gently passing tissue through nylon mesh. Red blood cells (RBCs) were lysed with Gey’s solution. Single-cell suspensions from the lungs were prepared as described (Benoit et al., 2015). Briefly, dissected lungs were finely minced in a digestion buffer containing DMEM, 1 mg/ml collagenase type IV (Gibco), and 0.2 mg/ml DNase (Sigma-Aldrich). After shaking at 200 rpm at 37°C for 20 min, the lung digests were triturated with a 16-gauge needle, followed by an additional 20 min shaking at 200 rpm at 37°C. Following the final trituration, RBCs were lysed with Gey’s solution. Finally, the digested lung tissues were filtered through a 70-μm filter and washed in phosphate-buffered saline (PBS)/2% fetal bovine serum. Cells were counted on either a MACSQuant VYB or using a hemacytometer following trypan blue staining.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were incubated with LIVE/DEAD Fixable Blue Dead Cell stain (Thermo Fisher Scientific, Grand Island, NY) for 30 min at 4°C in PBS, after which they were resuspended in Fc-Block (BioLegend) containing PBS/2% (fetal calf serum) FCS/0.1% sodium azide buffer. After a 5- to 10-min incubation on ice, antibodies specific for cell surface markers were added, incubated for 30 min on ice, and washed in PBS/2% FCS/0.1% sodium azide buffer. Brilliant Violet Staining buffer (BD Biosciences) was used in experiments containing more than one Brilliant Violet, Brilliant UV, or SuperBright-conjugated Ab. Cells were fixed in PBS/1% paraformaldehyde buffer and stored at 4°C prior to data collection.
 
@@ -148,17 +649,17 @@ For nuclear staining, cells were permeabilized with Foxp3 transcription factor f
 
 Flow cytometry data were collected on a Cytek Aurora (Cytek Biosciences) spectral cytometer, and data analysis was performed using FlowJo Software (BD Biosciences). In some cases, visualization of flow cytometry data was conducted by concatenation of individual .fcs files, followed by dimensionality reduction and clustering using UMAP and FlowSOM (Van Gassen et al., 2015) in FlowJo. Antibodies used in these experiments are anti-CD4 (RM4-5), anti-CD11b (M1/70), anti-CD11c (N418), anti-CD19 (1D3), anti-CD24 (M1/69), anti-CD25 (PC61), anti-CD27 (LG.3A10), anti-CD44 (IM7), anti-CD45RB (C363-16A), anti-CD73 (TY/11.8), anti-CD150 (TC15-12F12.2), anti-CD196 (29-2L17), anti-CD319 (4G2), anti-cMAF (sym0F1), anti-IFNγ (XMG1.2), anti-IL17a (TC11-18H10.1), anti-IL4 (11B11), anti-PLZF (9E12), anti-T-bet (4B10), anti-TCRβ (H57-597), anti-Vγ5 (536), and anti-Vδ6.3 (C504.17c) from BioLegend; and anti-RORγt (Q31-378), anti-TCRδ (GL3), anti-Vγ1 (2.11) from BD biosciences; and anti-CD8a (53–6.7), anti-CD45 (30-F11), anti-CD200 (OX90), anti-CD278 (7E17G9), anti-Ki-67 (SolA15), anti-Ly108 (13G3-19D), anti-Vγ4 (UC3-10A6) from eBiosciences; anti-S1P1 (FAB7089P) from R&D systems; anti-Blk (polyclonal) from Cell Signaling Technology; and anti-17D1 (a gift from Willi Born, with permission for Robert Tigelaar).
 
-## In vivo proliferation and apoptosis
+### In vivo proliferation and apoptosis
 
 For in vivo proliferation analysis, each mouse was intraperitoneally injected with 1 mg of 5-bromo-deoxyuridine (BrdU) (Sigma-Aldrich) each day for 3 days. Lung cell suspensions were prepared as above, stained with surface markers, after which they were stained with anti-BrdU antibody according to the manufacturer’s instructions (BrdU Flow Kit; BD Biosciences). For apoptotic cell detection, annexin V staining was performed. Briefly, surface staining was followed by dead cell staining with Fixable Viability Dye eFluor 780 dye. The cells were washed and resuspended in an annexin-binding buffer (10 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid [HEPES], 140 mM NaCl, and 2.5 mM CaCl2, pH 7.4). Finally, 1 μl of Annexin V Conjugate (Thermo Fisher Scientific, Grand Island, NY) was added to each tube, and cells were incubated for 15 min at room temperature prior to data collection.
 
-## Bulk RNA sequencing and data analysis
+### Bulk RNA sequencing and data analysis
 
 For the bulk RNA sequencing, thymocytes from 10-day-old B6 (n = 4 male, n = 2 female) and B6.Sh2d1a-/- (n = 5 male, n = 1 female) mice were prepared by depleting CD4+ cells from thymocytes using the EasySepTM Mouse CD4 Positive Selection Kit II (STEMCELL Technologies). Cells were then incubated with Fixable Viability Dye eFluor 780 (Thermo Fisher Scientific, Grand Island, NY) for 30 min at 4°C in PBS, after which they were resuspended in Fc-Block (BioLegend) containing PBS/2% FCS. After washing, cells were stained with antibodies against CD11b (M1/70), CD19 (1D3), CD24 (M1/67), CD45 (30-F11), TCRβ (H57-597), and TCRδ (GL3) for 30 min at 4°C. Following surface staining, CD24hiTCRδ+ cells were sorted from a CD11b-CD19-TCRb- population of live CD45+ lymphocytes. Immature (CD24high) thymocytes from both B6 and B6.Sh2d1a-/- mice were sorted directly into 350 µl of RLT lysis buffer (QIAGEN). RNA was extracted using the RNeasy Micro kit (QIAGEN) according to the manufacturer’s instructions. After RNA quantification and quality assessment, cDNA libraries were prepared using SMARTer Stranded Total RNA-Seq Kit v3 - Pico Input Mammalian (Takara, Japan) according to the manufacturer’s protocol. Following library clean-up and quantification, the libraries were sequenced (single-end 75 bp) on an Illumina HiSeq1500.
 
 The Fastq files were checked for data quality using FastQC and MultiQC (Ewels et al., 2016) bioinformatics tools. Cutadapt (Martin, 2011) was used to filter out low-quality sequences and to remove adapter sequences from all reads. The expression of transcripts was quantified using the mapping-based mode of Salmon (Patro et al., 2017), which quasi-mapped RNAseq reads to an index created from a mouse reference transcriptome (GRCm39). The transcript abundance estimates were imported using tximport (Soneson et al., 2015) and differential gene expression (DE) analysis was performed using DEseq2 (Love et al., 2014) employing the Wald test of the negative binomial model coefficients to determine statistical significance. The results were analyzed based on Log2 fold change (Log2FC ≥0.5 or ≤–0.5) and adjusted p-value (padj ≤ 0.0001) to determine whether a gene was differentially expressed.
 
-## Cell sorting and library preparation for CITE-seq and V(D)J enrichment
+### Cell sorting and library preparation for CITE-seq and V(D)J enrichment
 
 For thymus single-cell transcriptome analysis, we used embryonic day 17 (E17) B6 (n = 4) and B6.Sh2d1a-/- (Sh2d1a-/-) (n = 4) mice, 9-day-old (D9) B6 (n = 3) and B6.Sh2d1a-/- (n = 3) mice, and 6-week-old B6 (n = 3 male) and B6.Sh2d1a-/- (n = 2 male, n = 1 female) mice. For single-cell analysis of adult lung γδ T cells, we used 13-week-old B6 and B6.Sh2d1a-/- littermates (pooled cells from two males and one female mouse in each group).
 
@@ -166,23 +667,23 @@ Analysis of gene expression, surface protein expression, and TCR V(D)J repertoir
 
 Libraries were prepared according to the manufacturer’s instructions with modifications to the V(D)J enrichment procedure. Equal numbers of live GL3+ γδ T cells from B6 and B6.Sh2d1a-/- mice were pooled and captured (between 5000 and 7000 cells) using a 10x Chromium controller. Following cDNA preparation, the gene expression and CSP libraries were created according to the manufacturer’s instructions. To obtain TCR gamma and delta chain sequences, we replaced kit-provided enrichment primers with custom mouse γ and δ chain-specific primers and modified the number of PCR cycles used from manufacturer recommended cycling conditions. In the first enrichment step, an equal amount of cDNA was used as a template for PCR amplification of γ and δ chains separately using a total of 12 and 10 PCR cycles, respectively. The primers used for the first γ-chain enrichment are: GDC1F Forward Primer 5′-AATGAT ACGGCGA CCACCG AG ATCTACACTCTT TCCCTACAC GACGCTC-3′ (2 μM) and GC1R1 Reverse Outer Primers 5′-GGAA AGAACTT TTCAAGGAS ACAAAG-3′ (1 μM), GC1R2 5′-CCCTTATG ACTTCAGG AAAGAA CTTT-3′ (0.5 μM). The primers used for the first δ-chain enrichment are: GDC1F Forward Primer 5′-AATGAT ACGGCGACCACCG AGATCTACACTC TTTCCCTAC ACGACGCTC-3′ (2 μM) and DC1R1 Reverse Outer Primer 5′-CCACAATC TTCTTGGATG ATCTGAG-3′ (0.5 μM). Following PCR product purification, the γ- and δ-chain amplicons went through the second round of enrichment separately using a total of 12 and 10 PCR cycles, respectively. The primers used for the second γ-chain enrichment are: GDC2F Forward Primer 5′-AATGA TACGGCGACCA CCGAGATCT-3′ (0.5 μM) and GC2R1 Reverse Inner Primers 5′-ACAAA GGTATGTCCCA GTCTTATGGA-3′ (0.5 μM), GC2R2 5′-GGAGACA AAGGTAGGT CCCAGC-3′ (0.5 μM). The primers used for the second δ-chain enrichment are: GDC2F Forward Primer 5′-AATGATA CGGCGACCACC GAGATCT-3′ (0.5 μM) and DC2R1 Reverse Inner Primer 5′-GTCACCTC TTTAGGGTAG AAATCTT-3′. Following PCR product cleanup, the second round PCR products (γ- and δ-chain amplicons) were quantified and combined in equal quantity making the final TCR V(D)J library. Finally, all three libraries (gene expression, cell surface protein expression, and TCR V(D)J) were sequenced (paired-end 26 × 91 bp) on an Illumina HiSeq 1500 sequencer or a NextSeq 2000.
 
-## CITE-seq quality control, filtering, and demultiplexing
+### CITE-seq quality control, filtering, and demultiplexing
 
 Raw sequence reads from the gene expression and CSP libraries were processed using the Cell Ranger software (v4.0.0) (Zheng et al., 2017). Reads were mapped to the GRCm38 (mm10) mouse reference genome. To exclude the possibility of TCR transcripts playing a role in UMAP clustering, all TCR genes were omitted from the analysis using the ‘cellranger reanalyze’ argument of Cell Ranger software.
 
 Quality control, filtering, UMAP projection, and clustering analysis were conducted using Seurat (v4.3.0.1) (Hao et al., 2021) R package. Briefly, cells with a low number (≤2000 for E17 thymus dataset, ≤1200 for D9 thymus dataset and ≤750 for lung dataset) of unique genes (nFeature_RNA), a frequency of mitochondrial reads >4% and a frequency of ribosomal protein <~12% were eliminated from further analysis. To reduce cell cycle- and stress-related heterogeneity in the normalized data, selected cell cycle genes and stress-induced genes (Denisenko et al., 2020) were regressed out during the data normalization step. Note that in some instances, contaminating clusters expressing macrophage specific marker genes were manually removed using Seurat ‘CellSelector ()’ argument. We used the Seurat function ‘HTODemux()’ to demultiplex single cells back to their sample of origin (Stoeckius et al., 2018).
 
-## CITE-Seq and V(D)J enrichment data analysis
+### CITE-Seq and V(D)J enrichment data analysis
 
 The demultiplexed datasets were further analyzed for gene expression, cell surface protein expression following the multimodal analysis pipeline of Seurat (Hao et al., 2021). For each dataset, we performed normalization and variance stabilization of the gene expression data using the scTransform (Hafemeister and Satija, 2019). Following identification of top significant principal components (PCs) using the principal component analysis, we performed a graph-based (UMAP) semi-supervised clustering of cells with similar gene expression patterns using specific number of top PCs (E17 = 25, D9 = 30, W6 = 27, lung = 28) and resolution values (E17 = 1.2, D9 = 1.6, W6 = 0.65, lung = 1.2) for each dataset. The cell surface protein expression data (Centered Log Ratio normalized) from CSP libraries as well as the gene expression data were then visualized on the clustered cells using the R package scCustomize (Marsh, 2021). The differentially expressed features of each cluster (cluster biomarkers) were identified using FindAllMarkers() function using the Wilcoxon Rank Sum test. For identifying differentially expressed genes between B6 and B6.Sh2d1a-/- samples, we performed a pseudobulk DE (differential expression) analysis of aggregated read counts using the DEseq2 package, which accounts for biological replicates making it a better approach than other specialized single-cell DE analysis methods (Squair et al., 2021). Briefly, for cells of a given sample type, we aggregated RNAseq reads across biological replicates identified by individual hashtags. Then transformed the genes-by-cell matrix to a genes-by-replicates matrix and performed DE analysis using the DESeq2 (Love et al., 2014) package employing the Wald test of the negative binomial model coefficients to determine statistical significance. Finally, the trajectory and pseudotime inference analysis was performed using the partition-based graph abstraction (Wolf et al., 2019) analysis, which is a part of the Scanpy (Wolf et al., 2018) python package.
 
 For the analysis of V(D)J library sequences, Cell Ranger v6.1.2 (‘cellranger vdj’ argument) was used to map the TCR V(D)J reads to a custom-made reference containing sequences from the IMGT database (Lefranc, 2011). The Cell Ranger V(D)J output was then processed with custom bashscripts. Briefly, the TRGV and TRAV/TRDV contigs identified by Cell Ranger V(D)J were demultiplexed to individual barcodes after which the dominant TRGV and TRAV/DV transcripts were selected per cell. Finally, the V(D)J information of each cell was integrated with scCITE-seq data and visualized using a combination of Seurat and custom-made R scripts. We note that since about half of Vγ1, Vγ4, and Vγ7 T cells contain functionally rearranged TRGV2 chains, but only a small percentage express Vγ2 on the cell surface (Pereira and Boucontet, 2004), the methods used here cannot adequately assess the true TRGV2 repertoire. Therefore, we report it here for accuracy but have omitted TRGV2 from our analysis.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Lung qPCR samples were prepared by positively selecting leukocytes using CD45 MicroBeads (Miltenyi Biotec). Spleen qPCR samples were prepared by depletion of CD19+TCRβ+ cells using biotinylated antibodies and Streptavidin MicroBeads (Miltenyi Biotec) according to the manufacturer’s instructions. Total RNA was extracted from approximately 5–10 million cells from each organ using the RNeasy Mini Kit (QIAGEN). SuperScript IV Reverse Transcriptase (Thermo Fisher Scientific, Grand Island, NY) was used to generate cDNA using 400 ng of RNA and oligodT primer according to the manufacturer’s instructions. qPCR was performed using 1 μl of cDNA template in iTaq Universal SYBR Green Supermix (Bio-Rad) containing TCR delta chain-specific primer pairs. The qPCR reaction was run on a Bio-Rad CFX96 qPCR machine using the following cycling conditions: 95°C for 30 s; 40 cycles of [95°C for 5 s; 60°C for 30 s; 72°C for 30 s]. The β2Μ and TRDC genes were used as endogenous housekeeping controls. Primers used were as follows: mb2mforward, 5′-CATGGCTCG CTCGGTGACC-3′, mb2mreverse, 5′-AATGTGAGGC GGGTGGAACTG-3′, TRDCforward, 5′-CTCCGGCCA AACCATCTGTT-3′, mouseDV2, 5′-CCAAGAAG CATACAAGCAGT ATAATG-3′, mouseDV5, 5′-CCCATGA TGCAGATTT TGTTCAAGG-3′, mouseDV7, 5′-GGAAG MCTCGTCAGC CTGTTGT-3′, mouseDCrev, 5′-CCACAATCTT CTTGGAT GATCTGAG-3′. Some primer sequences were adopted from Wei et al., 2015.
 
-## Vγ4 single-cell sorting and TCR sequencing
+### Vγ4 single-cell sorting and TCR sequencing
 
 The plate-based based γδ TCR repertoire analysis of single-cell sorted Vγ4 cells involved adult lungs from 8- to 10-week-old B6 male (n = 7) and female mice (n = 6). Lung Vγ4 TCR sequences were obtained using a protocol modified from Wei et al., 2015. Briefly, lung cell suspensions were prepared as described above. After washing, cells were resuspended in Fc-Block (BioLegend) containing PBS/2% FCS buffer, and stained with anti-CD11b (M1/70), anti-CD11c (N418), anti-CD19 (1D3), anti-CD45 (30-F11), anti-TCRδ (GL3), and anti-Vγ4 (UC3-10A6) from for 30 min at 4°C in PBS. Fixable Viability Dye eFluor 780 (Thermo Fisher Scientific, Grand Island, NY) was used to identify dead cells. Single-cell sorting of lung Vγ4+TCRδ+ from a CD11b-CD11c-CD19-TCRβ- population of CD45+ live lymphocytes was performed using a FACS Aria III cell sorter (BD Bioscience). Cells were sorted directly into 12.5 μl (per well) of OneStep RT-PCR Buffer mix (QIAGEN) in a 96-well PCR plate (one cell/well).
 
@@ -190,6 +691,6 @@ TCR sequences were then amplified and barcoded according to Wei et al., 2015. Br
 
 The paired-end TCR sequencing reads were analyzed using a custom software pipeline capable of de-multiplexing barcoded sequences to individual cells. The resulting de-multiplexed reads were then analyzed by MiGMAP software, which identifies CDR3 sequences using the IgBlast 1.4.0 (NCBI) V(D)J mapping tool (Shugay et al., 2015; Ye et al., 2013). The single-cell TCR V(D)J profiling data were then visualized using custom R scripts.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was conducted using Prism (GraphPad Software, San Diego, CA). Unpaired Student t-tests, one-way ANOVA, or two-way ANOVA with Sidak multiple comparisons corrections were used where appropriate. Sample size estimates were calculated using StatMate (GraphPad Software, San Diego, CA). Statistical tests were considered significant when p-values were less than 0.05. Error bars represent standard deviation unless otherwise indicated.

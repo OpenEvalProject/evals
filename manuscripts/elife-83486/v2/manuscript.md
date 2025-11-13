@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/009avj582 Oregon Hearing Research Center, Department of Otolaryngology/Head & Neck Surgery, Oregon Health & Science University Portland United States
-2. https://ror.org/02jbv0t02 Life Sciences Division, Lawrence Berkeley National Laboratory Berkeley United States
+1. Oregon Hearing Research Center, Department of Otolaryngology/Head & Neck Surgery, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
+2. Life Sciences Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
 3. Biological Sciences, Sunnybrook Research Institute Toronto Canada
-4. https://ror.org/03dbr7087 Department of Otolaryngology-Head & Neck Surgery, University of Toronto Toronto Canada
-5. https://ror.org/03dbr7087 Department of Laboratory Medicine and Pathobiology, University of Toronto Toronto Canada
+4. Department of Otolaryngology-Head & Neck Surgery, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+5. Department of Laboratory Medicine and Pathobiology, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
 ## Abstract
 
-The inner ear has a rich population of pericytes, a multi-functional mural cell essential for sensory hair cell heath and normal hearing. However, the mechanics of how pericytes contribute to the homeostasis of the auditory vascular-neuronal complex in the spiral ganglion are not yet known. In this study, using an inducible and conditional pericyte depletion mouse (PDGFRB-CreER T2 ; ROSA26iDTR) model, we demonstrate, for the first time, that pericyte depletion causes loss of vascular volume and spiral ganglion neurons (SGNs) and adversely affects hearing sensitivity. Using an in vitro trans-well co-culture system, we show pericytes markedly promote neurite and vascular branch growth in neonatal SGN explants and adult SGNs. The pericyte-controlled neural growth is strongly mediated by pericyte-released exosomes containing vascular endothelial growth factor-A (VEGF-A). Treatment of neonatal SGN explants or adult SGNs with pericyte-derived exosomes significantly enhances angiogenesis, SGN survival, and neurite growth, all of which were inhibited by a selective blocker of VEGF receptor 2 (Flk1). Our study demonstrates that pericytes in the adult ear are critical for vascular stability and SGN health. Cross-talk between pericytes and SGNs via exosomes is essential for neuronal and vascular health and normal hearing.
+The inner ear has a rich population of pericytes, a multi-functional mural cell essential for sensory hair cell heath and normal hearing. However, the mechanics of how pericytes contribute to the homeostasis of the auditory vascular-neuronal complex in the spiral ganglion are not yet known. In this study, using an inducible and conditional pericyte depletion mouse (PDGFRB-CreERT2; ROSA26iDTR) model, we demonstrate, for the first time, that pericyte depletion causes loss of vascular volume and spiral ganglion neurons (SGNs) and adversely affects hearing sensitivity. Using an in vitro trans-well co-culture system, we show pericytes markedly promote neurite and vascular branch growth in neonatal SGN explants and adult SGNs. The pericyte-controlled neural growth is strongly mediated by pericyte-released exosomes containing vascular endothelial growth factor-A (VEGF-A). Treatment of neonatal SGN explants or adult SGNs with pericyte-derived exosomes significantly enhances angiogenesis, SGN survival, and neurite growth, all of which were inhibited by a selective blocker of VEGF receptor 2 (Flk1). Our study demonstrates that pericytes in the adult ear are critical for vascular stability and SGN health. Cross-talk between pericytes and SGNs via exosomes is essential for neuronal and vascular health and normal hearing.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ SGN cell bodies, located in Rosenthal’s canal, extend distal processes radiall
 
 ## Results
 
-## The vascular network in the spiral ganglion region is rich in pericytes, and there is cross-talk between pericytes and SGNs
+### The vascular network in the spiral ganglion region is rich in pericytes, and there is cross-talk between pericytes and SGNs
 
 Normal capillary blood flow is controlled by pericytes. Pericytes are specialized mural cells, which surround the endothelial cells of small blood vessels and are vital for normal vascular function. Pericyte pathology, such as pericyte loss or damage, is a significant factor in degenerative neural diseases, including aging-related hearing loss (Neng et al., 2015), Alzheimer’s disease, and brain dementia (Miners et al., 2019). The cochlear microvasculature in the spiral ganglion region contains a rich population of pericytes, as illustrated in Figure 1a. Using neural-glial antigen 2+ (NG2+) pericyte fluorescent reporter mice (illustration Figure 1b) in combination with fluorescence conjugated lectin blood vessel labeling and β III tubulin immunofluorescence labeling of SGNs, we visualized the vascular structure, pericyte distribution, and pericyte relationship with SGNs. Pericytes are predominantly distributed in the vascular bed, as shown in Figure 1A. Most interestingly, in NG2+ pericyte fluorescent reporter mice, we observed NG2-positive particles (likely released by pericytes) in the soma of SGNs (Figure 1B lowest panel). The events are clearly visualized in 3D reconstructed images (Figure 1C, lowest panel) and magnified images, see Figure 1D lowest panel. This observation is consistent with our previous observation (Jiang et al., 2019), suggesting active communication between the pericytes and neural system. Substances released by pericytes may be essential for SGN health and pathology.
 
@@ -43,7 +43,7 @@ Normal capillary blood flow is controlled by pericytes. Pericytes are specialize
 
 **Figure 1.:** (a and b) Illustrations of pericyte containing microvascular networks in the spiral ganglion region. (A) A confocal projection image of the spiral lamina from an NG2DsRedBAC mouse shows pericytes (red) situated on microvessels labeled with Lectin-Alexa Fluor 488 conjugate (green) around SGNs and their peripheral fibers labeled with an antibody for β-III tubulin (blue). The pericyte distribution can be better visualized under high magnification (A, lower). (B–D) Cross-talk between SGNs and pericytes is suggested by the red fluorescent particle (arrows) observed in SGNs (green). Further evidenced by 3D reconstructive images showing the particles are inside the soma of SGNs.
 
-## Loss of pericytes leads to reduced capillary volume in the spiral ganglion region in vivo
+### Loss of pericytes leads to reduced capillary volume in the spiral ganglion region in vivo
 
 To investigate whether pericyte loss affects vascular stability in the spiral ganglion of adult mice, we created an inducible pericyte depletion mouse model (PDGFRB-CreERT2; ROSA26iDTR) by crossing PDGFRB-CreERT2+/– transgenic mice with ROSA26iDTR+/+ mice, an inducible diphtheria toxin receptor (iDTR) mouse line carrying a Cre-dependent simian DTR, which leads to cell death with the administration of the diphtheria toxin (DT; Buch et al., 2005; Zhang et al., 2021; as illustrated in Figure 2A). This PDGFRB-CreERT2+/–; ROSA26iDTR+/– mouse line at 1 mo of age received tamoxifen (TAM) for 3 d to induce the expression of Cre recombinase. To ablate pericytes, DT was administrated by daily intraperitoneal injection at 10 µg/kg for four consecutive days beginning 1 d after TAM (Zhang et al., 2021; as illustrated in Figure 2B). The PDGFRB-CreERT2–/–; ROSA26iDTR+/– mice from same litters of PDGFRB-CreERT2+/–; ROSA26iDTR+/– mice were treated with TAM and DT and constituted a control group. The cellular location of Cre recombinase expression under the pdgfrb-promotor was confirmed by crossing the PDGFRB-CreERT2 mice with ROSA26tdTomato mice. As expected, the tdTomato fluorescence signal (Greenhalgh et al., 2013) largely co-localized with the immunofluorescence signal for the pericyte marker protein, PDGFRβ (green) in the vascular networks, as shown in Figure 2C and D.
 
@@ -53,7 +53,7 @@ To investigate whether pericyte loss affects vascular stability in the spiral ga
 
 Our results showed, relative to control mice, pericyte distribution (labeled with desmin) in the vascular networks (labeled with Alexa Fluor 649 conjugate lectin, a widely used fluorescence dye to visualize blood vessels [Meyer et al., 2008]), markedly reduced in the spiral ganglion regions of all cochlear turns 2 wk after DT treatment in the CreERT2/iDTR mice (n=5, pApex=0.0295, pMid=0.0361, pBase=0.005, unpaired t-test; Figure 2E and F). In addition, the vascular volume in the spiral ganglion region was also notably reduced. Figure 2G has representative confocal images showing the pattern of blood vessel distribution in control and pericyte-depleted groups. Figure 2H shows total vascular density in the spiral lamina is significantly reduced in the pericyte-depleted mice 2 wk after DT injection (n=5, pApex=0.027, pMid=0.0108, pBase=0.0194, unpaired t-test). In addition, vascular shrinkage, a sign of degeneration, was frequently observed (as highlighted under high magnification, Figure 2G). Our results clearly indicate that pericytes are essential for vascular stability.
 
-## Pericytes are critical for hearing sensitivity, as well as for SGN function and survival in vivo
+### Pericytes are critical for hearing sensitivity, as well as for SGN function and survival in vivo
 
 We further assessed hearing function by auditory brainstem response (ABR) in pericyte-depleted mice. As shown in Figure 3A, we found the control mice showed no significant hearing threshold change after DT injection. In contrast, the hearing threshold in pericyte-depleted animals was significantly elevated at 1 wk after DT injection and persisted to 2 wk after DT injection (n=10, p<0.0001, two-way ANOVA), consistent with our previous observation (Zhang et al., 2021).
 
@@ -69,7 +69,7 @@ In our pericyte-depleted animals, we observed significant SGN loss at all turns 
 
 **Figure 4.:** (A) Representative confocal images from control and pericyte-depleted animals, labeled with antibody for β-III tubulin. (B) Significant SGN loss at all turns 2 wk after diphtheria toxin (DT) treatment (n=9, pApex=0.0085, pMid=0.0099, pBase=0.0127, unpaired t-test). (C) Significantly decreased β-III tubulin expression in SGNs at middle and basal turns 2 wk after DT treatment (pApex=0.1074, pMid<0.0001, pBase<0.0001, unpaired t-test). Data are presented as the mean ± SEM. Scale bar: D, 50 µm.
 
-## Transcriptome analysis of cochlear pericytes
+### Transcriptome analysis of cochlear pericytes
 
 To gain a better understanding of the properties of cochlear pericytes, we investigated the transcriptome of primary cochlear pericytes cultured from postnatal (P10-P15) C57BL/6J mice. This cell line was generated from the stria vascularis by a well-established ‘mini-chip’ protocol as previously described (Neng et al., 2013a), and passages 3–6 were used. Total RNA isolated from cultured cochlear pericytes was subjected to RNA-sequencing (RNA-seq) analysis. 12887 genes (RPKM (reads per kilobase of exon per million reads mapped)>0) were identified expressed in mouse cochlear pericytes, 7889 (RPKM >0.5) of which were further analyzed by performing an overrepresentation test of Protein Analysis Through Evolutionary Relationships (PANTHER) pathways (relative to the whole-genome for Mus musculus) in the PANTHER classification system (version 17.0; Mi et al., 2013; Mi et al., 2019). We identified 59 overrepresented PANTHER pathways in our cochlear pericyte dataset (Table 1), including angiogenesis related (‘CCKR signaling map,’ P06959; ‘Angiogenesis,’ P00005; ‘VEGF signaling pathway,’ P00056) and neurodegeneration related (‘Alzheimer disease-presenilin pathway,’ P00004; ‘Alzheimer disease-amyloid secretase pathway,’ P00003; ‘5HT2 type receptor mediated signaling pathway,’ P04374) pathways among the top 20 statistically significant results (Figure 5A).
 
@@ -77,27 +77,502 @@ To gain a better understanding of the properties of cochlear pericytes, we inves
 
 **Figure 5.:** (A) The 20 most significant overrepresented PANTHER pathways for genes (RPKM>0.5) identified in cochlear pericytes. (B) Neonatal spiral ganglion neuron (SGN) explants co-cultured with pericytes show robust SGN dendritic growth (green, labeled for β-III Tubulin) and new vessel growth (red, labeled for CD31). (C) There are significant differences in number of new vessel branches and in number and length of dendritic fibers in the two groups (n=6, pVascular branch #/area=0.0018, pNeurites #/area<0.0001, pNeurite length/explant=0.0393, unpaired t test). (D) Adult SGNs co-cultured with pericytes show robust SGN dendritic growth (red, labeled for β-III Tubulin). (E) There are significant differences in cell survival, and in average neurite number and length, in the two groups (n=3 wells per group, 25 cells per well, pneuron survival=0.0186, pNeurites #/cell<0.0001, plongest neurite length/cell<0.001, unpaired t test). Data are presented as the mean ± SEM. Scale bars: B, 300 µm (top), 150 µm (middle), 50 µm (bottom); D, 50 µm.
 
-## Pericytes promote vascular and neuronal growth in the spiral ganglion in vitro
+**Table 1.**
+ Overrepresented PANTHER pathways for genes (RPKM>0.5) identified in cochlear pericytes.Table 1—source data 1.Gene list of cochlear pericytes identified by RNA-seq analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">No.</th>
+      <th rowspan="2">PANTHER pathways</th>
+      <th colspan="2">% of gene in the list</th>
+      <th rowspan="2">−Log10 (FDR (false discovery rate))</th>
+    </tr>
+    <tr>
+      <th>Mus musculus (REF)</th>
+      <th>Pericyte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Inflammation mediated by chemokine and cytokine signaling pathway</td>
+      <td>1.181979</td>
+      <td>5.072464</td>
+      <td>14.88941</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CCKR signaling map</td>
+      <td>0.74101</td>
+      <td>3.804348</td>
+      <td>13.30277</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Angiogenesis</td>
+      <td>0.813747</td>
+      <td>3.713768</td>
+      <td>11.61261</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Heterotrimeric G-protein signaling pathway-Gq alpha and Go alpha mediated pathway</td>
+      <td>0.554621</td>
+      <td>2.717391</td>
+      <td>8.9914</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Heterotrimeric G-protein signaling pathway-Gi alpha and Gs alpha mediated pathway</td>
+      <td>0.722826</td>
+      <td>2.98913</td>
+      <td>8.364516</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Wnt signaling pathway</td>
+      <td>1.418375</td>
+      <td>4.257246</td>
+      <td>8.073658</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Gonadotropin-releasing hormone receptor pathway</td>
+      <td>1.068327</td>
+      <td>3.623188</td>
+      <td>8.066513</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>T cell activation</td>
+      <td>0.409147</td>
+      <td>2.173913</td>
+      <td>7.876148</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Apoptosis signaling pathway</td>
+      <td>0.563713</td>
+      <td>2.445652</td>
+      <td>7.314258</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Endothelin signaling pathway</td>
+      <td>0.377324</td>
+      <td>1.992754</td>
+      <td>7.218245</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>B cell activation</td>
+      <td>0.322771</td>
+      <td>1.811594</td>
+      <td>6.931814</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>VEGF signaling pathway</td>
+      <td>0.304587</td>
+      <td>1.630435</td>
+      <td>5.958607</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Oxytocin receptor mediated signaling pathway</td>
+      <td>0.272764</td>
+      <td>1.449275</td>
+      <td>5.242604</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Histamine H1 receptor mediated signaling pathway</td>
+      <td>0.209119</td>
+      <td>1.268116</td>
+      <td>5.136677</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>PI3 kinase pathway</td>
+      <td>0.245488</td>
+      <td>1.358696</td>
+      <td>5.135489</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Thyrotropin-releasing hormone receptor signaling pathway</td>
+      <td>0.286403</td>
+      <td>1.449275</td>
+      <td>5.086716</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Alzheimer disease-presenilin pathway</td>
+      <td>0.577351</td>
+      <td>1.992754</td>
+      <td>4.640165</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Integrin signaling pathway</td>
+      <td>0.863754</td>
+      <td>2.445652</td>
+      <td>4.315155</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Alzheimer disease-amyloid secretase pathway</td>
+      <td>0.300041</td>
+      <td>1.358696</td>
+      <td>4.308919</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>5HT2 type receptor mediated signaling pathway</td>
+      <td>0.309133</td>
+      <td>1.358696</td>
+      <td>4.194499</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Muscarinic acetylcholine receptor 1 and 3 signaling pathway</td>
+      <td>0.272764</td>
+      <td>1.268116</td>
+      <td>4.154902</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>PDGF signaling pathway</td>
+      <td>0.650089</td>
+      <td>1.992754</td>
+      <td>4.017277</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Heterotrimeric G-protein signaling pathway-rod outer segment phototransduction</td>
+      <td>0.177297</td>
+      <td>0.996377</td>
+      <td>3.886057</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>EGF receptor signaling pathway</td>
+      <td>0.618266</td>
+      <td>1.902174</td>
+      <td>3.882729</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Interleukin signaling pathway</td>
+      <td>0.395508</td>
+      <td>1.449275</td>
+      <td>3.721246</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Muscarinic acetylcholine receptor 2 and 4 signaling pathway</td>
+      <td>0.272764</td>
+      <td>1.177536</td>
+      <td>3.636388</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>FGF signaling pathway</td>
+      <td>0.554621</td>
+      <td>1.721014</td>
+      <td>3.603801</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Cytoskeletal regulation by Rho GTPase</td>
+      <td>0.363686</td>
+      <td>1.358696</td>
+      <td>3.595166</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Nicotinic acetylcholine receptor signaling pathway</td>
+      <td>0.450061</td>
+      <td>1.449275</td>
+      <td>3.19382</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>p53 pathway feedback loops 2</td>
+      <td>0.227304</td>
+      <td>0.996377</td>
+      <td>3.157391</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>ATP synthesis</td>
+      <td>0.031823</td>
+      <td>0.452899</td>
+      <td>3.123782</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Axon guidance mediated by netrin</td>
+      <td>0.159113</td>
+      <td>0.815217</td>
+      <td>3.010105</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Beta1 adrenergic receptor signaling pathway</td>
+      <td>0.209119</td>
+      <td>0.905797</td>
+      <td>2.886057</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Enkephalin release</td>
+      <td>0.168205</td>
+      <td>0.815217</td>
+      <td>2.882729</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>GABA-B receptor II signaling</td>
+      <td>0.168205</td>
+      <td>0.815217</td>
+      <td>2.869666</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Metabotropic glutamate receptor group II pathway</td>
+      <td>0.213665</td>
+      <td>0.905797</td>
+      <td>2.832683</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Insulin/IGF pathway-protein kinase B signaling cascade</td>
+      <td>0.177297</td>
+      <td>0.815217</td>
+      <td>2.772113</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Blood coagulation</td>
+      <td>0.236396</td>
+      <td>0.905797</td>
+      <td>2.551294</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>FAS signaling pathway</td>
+      <td>0.154567</td>
+      <td>0.724638</td>
+      <td>2.522879</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Nicotine pharmacodynamics pathway</td>
+      <td>0.159113</td>
+      <td>0.724638</td>
+      <td>2.462181</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Dopamine receptor mediated signaling pathway</td>
+      <td>0.25458</td>
+      <td>0.905797</td>
+      <td>2.376751</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Beta2 adrenergic receptor signaling pathway</td>
+      <td>0.209119</td>
+      <td>0.815217</td>
+      <td>2.366532</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Alpha adrenergic receptor signaling pathway</td>
+      <td>0.10456</td>
+      <td>0.543478</td>
+      <td>2.095284</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Axon guidance mediated by Slit/Robo</td>
+      <td>0.113652</td>
+      <td>0.543478</td>
+      <td>1.978811</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>TGF-beta signaling pathway</td>
+      <td>0.459154</td>
+      <td>1.177536</td>
+      <td>1.978811</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>p53 pathway</td>
+      <td>0.400055</td>
+      <td>1.086957</td>
+      <td>1.974694</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Androgen/estrogene/progesterone biosynthesis</td>
+      <td>0.077283</td>
+      <td>0.452899</td>
+      <td>1.970616</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Endogenous cannabinoid signaling</td>
+      <td>0.113652</td>
+      <td>0.543478</td>
+      <td>1.970616</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Cortocotropin releasing factor receptor signaling pathway</td>
+      <td>0.154567</td>
+      <td>0.634058</td>
+      <td>1.970616</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Histamine H2 receptor mediated signaling pathway</td>
+      <td>0.118198</td>
+      <td>0.543478</td>
+      <td>1.931814</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>5HT1 type receptor mediated signaling pathway</td>
+      <td>0.209119</td>
+      <td>0.724638</td>
+      <td>1.910095</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Opioid proopiomelanocortin pathway</td>
+      <td>0.168205</td>
+      <td>0.634058</td>
+      <td>1.853872</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Hypoxia response via HIF activation</td>
+      <td>0.12729</td>
+      <td>0.543478</td>
+      <td>1.821023</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>TCA cycle</td>
+      <td>0.054553</td>
+      <td>0.362319</td>
+      <td>1.754487</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Cadherin signaling pathway</td>
+      <td>0.736464</td>
+      <td>1.539855</td>
+      <td>1.686133</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Pyruvate metabolism</td>
+      <td>0.059099</td>
+      <td>0.362319</td>
+      <td>1.669586</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Triacylglycerol metabolism</td>
+      <td>0.009092</td>
+      <td>0.181159</td>
+      <td>1.446117</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Opioid prodynorphin pathway</td>
+      <td>0.163659</td>
+      <td>0.543478</td>
+      <td>1.407823</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Opioid proenkephalin pathway</td>
+      <td>0.172751</td>
+      <td>0.543478</td>
+      <td>1.321482</td>
+    </tr>
+  </tbody>
+</table>
+
+### Pericytes promote vascular and neuronal growth in the spiral ganglion in vitro
 
 We next investigated whether pericytes directly communicate with nearby cells and affect the corresponding vascular and neuronal biology. Neonatal SGN explants and adult SGNs were cultured with exogenous pericytes in a transwell co-culture system, as illustrated in Figure 5B and D. After 5 d in culture, we observed numerous and longer dendritic fibers, as well as new vascular sprouting, in the exogenous pericyte treated SGN explants relative to controls (Figure 5B). There were significant differences in the number of new vessel branches and in number and length of dendritic fibers between the two groups (n=6, pVascular branch#/area=0.0018, pNeurites#/area<0.0001, pNeurite length/explant=0.0393, unpaired t test; Figure 5C). The exogenous pericytes also consistently promoted survival and new neurite growth in adult SGNs (Figure 5D). Significant differences in cell survival and in average neurite number and length were observed between the two groups (n=3 wells, 25 cells per well, pneuron survival=0.0186, pNeurites#/cell<0.0001, plongest neurite length/cell<0.0001, unpaired t test; Figure 5E). The data clearly indicate that pericytes mediate both vascular and neural growth through extracellular communication in both neonatal and adult SGN tissue, as well as demonstrate that pericytes are essential for vascular and neuronal growth both during development and in the adult.
 
-## Identification of cochlear pericyte-derived exosomes
+### Identification of cochlear pericyte-derived exosomes
 
 We then asked how pericytes communicate with neighboring cells. Many cells secrete exosomes, carrying cargo including all known molecular constituents of the host cell, including protein, DNA, RNA, lipids, and metabolites. These are transported to surrounding cells (Bang and Thum, 2012) to effect biological function in the receiving cells (Dai et al., 2020; Kalluri and LeBleu, 2020). To determine whether cochlear pericyte-derived exosomes contribute to the regulation of vascular and neuronal growth in spiral ganglia, we first explored the properties of EVs isolated from pericyte-conditioned culture media. EVs were purified from the collected media by ultrafiltration and size exclusion separation, as illustrated in Figure 6A. Using nanoparticle tracking analysis (NTA), a widely employed technique for the characterization of particles in liquids (Dragovic et al., 2011), we found a rich population of exosome-sized (~50–150 nm) particles, 96.4% of which are labeled with Exoglow (a membrane EV marker kit), as shown in Figure 6B. Further transmission electron microscopy (TEM) images showed a classic cup-shaped structure in these membrane vesicles, which is consistent with previously described exosomes from other cell types, such as HCT116 cells (Jung and Mun, 2018) and utricles (Breglio et al., 2020). Moreover, proteomic analysis of purified pericyte-derived exosomes identified 580 proteins, 496 of which overlapped with genes that we identified in cochlear pericytes (Figure 6C), including the common exosome markers CD9, CD63, CD81, and Tsg101, as shown in Table 2. Together, these results indicate the pericytes constitutively release exosomes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83486/elife-83486-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic of the exosome purification procedure used to isolate exosomes from pericyte-conditioned culture medium for nanoparticle tracking analysis (NTA), transmission electron microscopy (TEM), and proteomics analysis. Exosomes were isolated via ultracentrifugation followed by size-exclusion separation. (B) NTA shows a rich population of exosome-sized (~50–150 nm) particles, 96.4% of which are labeled with Exoglow (a membrane extracellular vesicle [EV] marker kit). (C) TEM images show a classic cup-shaped structure membrane vesicle with diameter around 100 nm. (D) Proteomics analysis of exosomes identified a total of 570 unique protein families in the exosomes, 496 of which overlap with genes identified in pericyte isolated total RNA. (E) The 22 most significantly enriched Gene Ontology (GO) cellular component terms for proteins identified in the pericyte-derived exosomes. (F) The relative PANTHER pathways identified in pericyte-derived exosome proteins. Scale bars: C, 500 nm (top) and 200 nm (bottom).Figure 6—source data 1.
+**Figure 6.:** (A) Schematic of the exosome purification procedure used to isolate exosomes from pericyte-conditioned culture medium for nanoparticle tracking analysis (NTA), transmission electron microscopy (TEM), and proteomics analysis. Exosomes were isolated via ultracentrifugation followed by size-exclusion separation. (B) NTA shows a rich population of exosome-sized (~50–150 nm) particles, 96.4% of which are labeled with Exoglow (a membrane extracellular vesicle [EV] marker kit). (C) TEM images show a classic cup-shaped structure membrane vesicle with diameter around 100 nm. (D) Proteomics analysis of exosomes identified a total of 570 unique protein families in the exosomes, 496 of which overlap with genes identified in pericyte isolated total RNA. (E) The 22 most significantly enriched Gene Ontology (GO) cellular component terms for proteins identified in the pericyte-derived exosomes. (F) The relative PANTHER pathways identified in pericyte-derived exosome proteins. Scale bars: C, 500 nm (top) and 200 nm (bottom).
+
+**Table 2.**
+ Common protein markers for exosomes were identified in the pericyte-derived exosomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Gene names</th>
+      <th># PSMs</th>
+      <th>Log2 LFQ (label-free quantitation) intensity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD81 antigen</td>
+      <td>Cd81</td>
+      <td>26</td>
+      <td>29.6153</td>
+    </tr>
+    <tr>
+      <td>CD63 antigen</td>
+      <td>Cd63</td>
+      <td>3</td>
+      <td>26.1908</td>
+    </tr>
+    <tr>
+      <td>CD9 antigen</td>
+      <td>Cd9</td>
+      <td>16</td>
+      <td>29.2576</td>
+    </tr>
+    <tr>
+      <td>Tumor susceptibility gene 101</td>
+      <td>Tsg101</td>
+      <td>5</td>
+      <td>25.7598</td>
+    </tr>
+  </tbody>
+</table>
 
 We ran Gene Ontology (GO) enrichment analysis on these proteins using the PANTHER classification system, followed by removal of redundant ontology terms using Reduce and Visualize GO (REVIGO; Supek et al., 2011). Analysis by cellular component class identified enrichment of 22 GO terms, including ‘extracellular exosomes’ (GO: 0070062), neurotransmission related terms such as ‘myelin sheath’ (GO: 0043209) and ‘presynaptic membrane’ (GO: 0042734) (Figure 6D). Although analysis by PANTHER pathways did not identify significantly enriched pathways, we listed the identified pathways in the order of relative protein number (Figure 6E) and found that the angiogenesis related (‘Angiogenesis,’ P00005; ‘VEGF signaling pathway,’ P00056) and neurodegeneration related (‘Parkinson disease,’ P00049; ‘Huntington disease,’ P00029) pathways were among the top ranks. These pathways are consistent with pathways we identified in cochlear pericytes, as shown in Figure 5A. Collectively, these data strongly indicate that cochlear pericyte-derived exosomes participate in regulation of vascular and neuronal growth in the spiral ganglion.
 
-## Cochlear pericyte-derived exosomes promote vascular and neuronal growth via VEGFR2 signaling
+### Cochlear pericyte-derived exosomes promote vascular and neuronal growth via VEGFR2 signaling
 
 VEGF/VEGFR2 signaling plays a key role in formation and growth of blood vessels but is also implicated in neurodegeneration (Storkebaum and Carmeliet, 2004). Our bulk RNA-seq analysis identified VEGF-A expression in cochlea pericytes, as did RT-PCR (Figure 7A). Although VEGF-C was also in the list, the expression was very low (RPKM = 0.07301). ELISA protein analysis showed 3.696±0.003 ng of VEGF-A/ 8 × 105 pericytes released into 4 ml of culture medium without growth factors after 3 d culture (Figure 7B). In contrast, when we depleted the pericytes in vivo, we found significantly less production of VEGF-A in the cochlea (Figure 7C). The immunofluorescence staining further corroborated the VEGFA expression in pericytes in the spiral ganglion region (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83486/elife-83486-fig7-v2.jpg)
 
-**Figure 7.:** (A) mRNA expression of VEGF-A in primary cochlear pericytes. (B) VEGF-A production assessed by ELISA at day 3 in the control and pericyte containing culture medium (n=6, p<0.0001, unpaired t test). (C) VEGFA expression level assessed by ELISA in the cochlea of control and pericyte-depleted mice (ncontrol = 5, npericyte depletion=8, p=0.0387, unpaired t test). (D) Representative confocal images showing VEGF-A expression in pericytes. (E) Exosomes and the non-exosomal fraction (supernatant) were purified from pericyte-conditioned media using differential ultracentrifugation for western blot analysis. (F) Western blot showing the expression of VEGFA in exosomes. Similarly, PDGFR-β (pericyte membrane marker) was detected exclusively in exosomes. Data are presented as the mean ± SEM. Scale bars: D, 5 µm.Figure 7—source data 1.Figure 7—source data 2.
+**Figure 7.:** (A) mRNA expression of VEGF-A in primary cochlear pericytes. (B) VEGF-A production assessed by ELISA at day 3 in the control and pericyte containing culture medium (n=6, p<0.0001, unpaired t test). (C) VEGFA expression level assessed by ELISA in the cochlea of control and pericyte-depleted mice (ncontrol = 5, npericyte depletion=8, p=0.0387, unpaired t test). (D) Representative confocal images showing VEGF-A expression in pericytes. (E) Exosomes and the non-exosomal fraction (supernatant) were purified from pericyte-conditioned media using differential ultracentrifugation for western blot analysis. (F) Western blot showing the expression of VEGFA in exosomes. Similarly, PDGFR-β (pericyte membrane marker) was detected exclusively in exosomes. Data are presented as the mean ± SEM. Scale bars: D, 5 µm.
 
 Is VEGF-A largely transported by pericyte-derived exosomes or is it directly secreted into the medium? To determine the answer, the exosome and non-exosomal supernatant fraction of the pericyte culture medium were isolated by differential ultracentrifugation and analyzed by western blot (Figure 7E). We found that both PDGFRβ (a pericyte cellular membrane marker) and VEGF-A were expressed in the exosomes but not detected in the non-exosomal supernatant fraction (Figure 7F). We next asked about the receptor(s) through which VEGF-A exerts its effect on vascular and neuronal growth. Various neural cells express one or more of the known VEGF receptors and could thus directly respond to VEGF released by neighboring cells (D’Amore, 2007; Ogunshola et al., 2002; Teran and Nugent, 2019). VEGFR2 is the major VEGF receptor with a critical role in angiogenesis (Abhinand et al., 2016). It also has been reported to mediate the VEGF signaling in neurons, with roles in neurogenesis, neuronal survival, and axonal growth (Bellon et al., 2010; Luck et al., 2019). We used immunofluorescence to identify VEGFR2 expression in both SGNs and blood vessels, as shown in Figure 8A–D. Our findings lead us to hypothesize that pericyte-derived exosomes promote vascular and neuronal growth in spiral ganglia through a VEGFR2 signaling pathway.
 
@@ -137,82 +612,386 @@ In summary, our data provide the first clear-cut experimental evidence that peri
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:029684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6-Gt(ROSA)26Sortm1(HBEGF)Awai/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Tg(Cspg4-DsRed.T1)1Akik/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Desmin [Y66] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab32362</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-III Tubulin [EP1569Y] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab52623</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31 [MEC 7.46] (Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab7388</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VEGFR2 [EPR21884-236] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab233693</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VEGFA (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab51745</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PDGFRβ [Y92] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab32570</td>
+      <td>1:1000-1:5000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J F</td>
+      <td>The Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>GAA CTG TCA CCG GGA GGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J R</td>
+      <td>The Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>AGG CAA ATT TTG GTG TAC GG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J internal positive control F</td>
+      <td>The Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>CAA ATG TTG CTT GTC TGG TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J internal positive control R</td>
+      <td>The Jackson Laboratory</td>
+      <td>PCR primers</td>
+      <td>GTC AGT CGA GTG CAC AGT TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse VEGFA F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCAGCGACAAGGCAGACTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse VEGFA R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GGTCCGATGCAAGATCCCAA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Diphtheria toxin</td>
+      <td>Sigma</td>
+      <td>Cat#: D0564</td>
+      <td>10 ng/g body weight</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Dispase II</td>
+      <td>Sigma</td>
+      <td>Cat#: D4693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase I</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: 17018029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase I</td>
+      <td>Sigma</td>
+      <td>Cat#: 10104159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>100× Penicillin-Streptomycin Solution</td>
+      <td>Invitrogen/Gibco</td>
+      <td>Cat#: 15140–122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrogen Total Exosome Isolation Reagent (from cell culture media)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: 4478359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Femto Duration Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A38554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clontech SMARTer cDNA kit</td>
+      <td>Clontech Laboratories</td>
+      <td>Cat#: 634925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext reagents</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: E6040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy micro kit</td>
+      <td>Qiagen</td>
+      <td>Cat#: 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript IV First-Strand Synthesis kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: 18091050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VEGFA ELISA Kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab119565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab102536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExoGlow-Protein EV Labeling Kit (Green)</td>
+      <td>SBI</td>
+      <td>Cat#: EXOGP300A-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Cat#: T5648</td>
+      <td>75 mg/kg body weight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>SU5408</td>
+      <td>Abcam</td>
+      <td>Cat#: ab145888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Sample Size Calculator</td>
+      <td>N/A</td>
+      <td>https://clincalc.com/stats/samplesize.aspx</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>PANTHER classification system</td>
+      <td>N/A</td>
+      <td>http://www.pantherdb.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>REVIGO</td>
+      <td>Ruđer Bošković Institute</td>
+      <td>http://revigo.irb.hr/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lectin-DyLight 488</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#: DL-1174</td>
+      <td>20 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lectin-DyLight 649</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#: DL-1178</td>
+      <td>20 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Decal Stat Decalcifier</td>
+      <td>StatLab</td>
+      <td>Cat#: 1212–32</td>
+      <td>Use directly (contains Hydrogen Chloride, Acid mists, strong inorganic)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Antifade Mounting Medium with DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#: H-1200</td>
+      <td>Use directly (contains 1 μg/ml of DAPI)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All strains of mice used in this study were originally purchased from Jackson Laboratory, including C57BL/6J (wild type, strain # 000664), B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (ROSA26tdTomato, strain # 007909), B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J (PDGFRB-CreERT2, strain # 029684), C57BL/6-Gt(ROSA)26Sortm1(HBEGF)Awai/J (ROSA26iDTR, strain # 007900), and Tg(Cspg4-DsRed.T1)1Akik/J (NG2DsRedBAC, Strain # 008241). To verify location of the Pdgfrb/Cre, tdTomato fluorescence reporter mice were created by breeding PDGFRB-CreERT2 mice with ROSA26tdTomato mice. CreERT2-mediated recombination was initiated by intraperitoneal injection of TAM at 75 mg/body weight every 24 hr for three consecutive days. The inducible pericyte depletion mouse model (PDGFRB-CreERT2+/−; ROSA26iDTR+/−) was created by crossing PDGFRB-CreERT2+/− transgenic mice with ROSA26iDTR+/+ mice. To deplete pericytes, these PDGFRB-CreERT2+/−; ROSA26iDTR+/− mice were given DT intraperitoneally once every 24 hr at a dose of 10 ng/g on four consecutive days after administering the TAM (as illustrated in Figure 2A and B). PDGFRB-CreERT2−/−; ROSA26iDTR+/− mice from same litters of PDGFRB-CreERT2+/−; ROSA26iDTR+/− mice were treated with TAM and DT as a control group. All transgenic mice were maintained in the lab, validated, and genotyped for the study. Both male and female mice were used, and all mice used were adults aged between 4~8 wk or postnatal P1~P3. All animal experiments reported were approved by the Oregon Health and Science University Institutional Animal Care and Use Committee (IACUC IP00000968).
 
-## Immunofluorescence of cochlea whole mount
+### Immunofluorescence of cochlea whole mount
 
 Cochlea whole mount was dissected and stained with fluorescently tagged antibodies as described by Montgomery and Cox, 2016. Briefly, cochleae were harvested and fixed in 4% paraformaldehyde (PFA) overnight. After decalcification in Decal Stat Decalcifier overnight at 4°C, each cochlea was carefully dissected into three whole mount turns and incubated in blocking/permeabilization solution containing 0.25% Triton X-100, 10% goat serum (GS) in 1× PBS for 1 hr at room temperature (RT), then transferred into primary antibody solution (diluted in blocking/permeabilization solution) and incubated overnight at 4°C. After three washings with 1× PBS, samples were incubated with the fluorescence-conjugated secondary antibody in the blocking/permeabilization solution for 1 hr at RT, washed again with 1× PBS three times, and mounted in Antifade Mounting Medium with DAPI on slides.
 
-## Assessment of pericyte coverage and vascular density in the spiral ganglion region
+### Assessment of pericyte coverage and vascular density in the spiral ganglion region
 
-Mice were anesthetized and administered the fluorescent dye Lectin-DyLight 649 diluted in 0.1 M PBS buffer to a concentration of 20 μg/ml (vol. 100 µl) via intravenous retro-orbital sinus for 10 min before they were sacrificed. The cochleae whole mounts were stained with desmin 1:50 and visualized under an FV1000 Olympus confocal microscope with a 10× objective. The pericyte coverage and blood vessel area were calculated using Fiji (ImageJ, NIH, 1.51t) software. Pericyte distribution was defined as pericyte coverage = area of desmin (pericyte filaments)area of  spiral lamina   . (Note: Pericyte intermediate filaments were assessed to obtain pericyte coverage. We did not directly count pericyte number since all pericyte markers, including antibodies for NG2 and PDGFRβ, failed. Adult spiral limbus is very thick. For visualization of the whole mounts, including the vascular networks in the tissue, the tissues would need to be decalcified. However the decalcification process causes deterioration of membrane proteins.) Vascular density was analyzed as previously described (Jiang et al., 2019), defined as vascular density = area of blood vessels  area of sprial lamina .
+Mice were anesthetized and administered the fluorescent dye Lectin-DyLight 649 diluted in 0.1 M PBS buffer to a concentration of 20 μg/ml (vol. 100 µl) via intravenous retro-orbital sinus for 10 min before they were sacrificed. The cochleae whole mounts were stained with desmin 1:50 and visualized under an FV1000 Olympus confocal microscope with a 10× objective. The pericyte coverage and blood vessel area were calculated using Fiji (ImageJ, NIH, 1.51t) software. Pericyte distribution was defined as pericyte coverage = $\frac{area of desmin (pericyte filaments)}{area of  spiral lamina  }$ . (Note: Pericyte intermediate filaments were assessed to obtain pericyte coverage. We did not directly count pericyte number since all pericyte markers, including antibodies for NG2 and PDGFRβ, failed. Adult spiral limbus is very thick. For visualization of the whole mounts, including the vascular networks in the tissue, the tissues would need to be decalcified. However the decalcification process causes deterioration of membrane proteins.) Vascular density was analyzed as previously described (Jiang et al., 2019), defined as vascular density = $\frac{area of blood vessels  }{area of sprial lamina }$.
 
-## Demonstration of VEGFR2 expression and pericyte distribution in the spiral ganglion region
+### Demonstration of VEGFR2 expression and pericyte distribution in the spiral ganglion region
 
 VEGFR2 expression in the region of the spiral ganglion was demonstrated in wild type mice and pericyte distribution in NG2DsRedBAC mice. Mice were anesthetized and placed on a water heating pad, and the fluorescent dye Lectin-DyLight 488/649 diluted in 0.1 M PBS buffer to a concentration of 20 μg/ml (vol. 100 µl) was administered via intravenous retro-orbital sinus to the animals 10 min before they were sacrificed. The isolated cochleae were fixed in 4% PFA overnight. The next day, tissue samples from the apical turn were isolated and the SGNs exposed after gently breaking the covering bone and removing the chips surrounding the ganglion. The tissue samples were stained with anti-VEGFR2 antibody (1:500) and/or anti-β-III tubulin (1:200) antibody and imaged on an FV1000 Olympus laser-scanning confocal microscope. This ‘gentle-bone-breaking’ (apex) preparation enables us to preserve the membrane protein affinity for antibodies and capture the fluorescence signal from the DsRed-tagged NG2+ pericytes.
 
-## ABR test
+### ABR test
 
 ABR audiometry to pure tones was used to evaluate hearing function before and after DT treatment as previously described (Zhang et al., 2021). For measurement of hearing threshold, latency, and amplitude by ABR, 10 ears from 5 animals in both the control and pericyte depleted group were measured by an investigator blind to treatment status. ABR response to a 1 ms rise-time tone burst (30 rep rate/s) at 8, 16, 24, and 32 kHz was recorded. Stimulus SPLs were incremented in 5 dB steps from below threshold to 100 dB SPL. The latency at 20–100 dB and peak-to-peak (P1–N1) values for amplitudes at all tested SPLs of ABR wave I were calculated using ABR Peak Analysis 0.8 RC 1 software (Harvard-MIT Program in Speech and Hearing Bioscience and Technology).
 
-## Immunofluorescence of cochlea frozen section
+### Immunofluorescence of cochlea frozen section
 
 Cochleae were harvested and fixed in 4% PFA overnight. After decalcification in Decal Stat Decalcifier overnight at 4°C, the cochleae were dehydrated in 15 and 30% sucrose, frozen, and embedded in optimal cutting temperature compound. Sections of the cochleae at 12 μm thickness were cut in the mid-modiolar plane. The specimens were permeabilized in 0.5% Triton X-100 for 30  min, blocked with 10% GS and 1% BSA diluted in 1× PBS for 1  hr at RT, then incubated with the primary antibodies diluted in 10% GS and 1% BSA in 1× PBS overnight at 4°C. After three washes with 1× PBS, the specimens were subsequently stained with fluorescence-conjugated secondary antibodies diluted in 10% GS and 1% BSA in 1× PBS for 1  hr at RT and washed again with 1× PBS three times, then mounted in Antifade Mounting Medium with DAPI. All samples were visualized under an FV1000 Olympus confocal microscope (Olympus FV1000, Japan).
 
-## Assessment of SGN density and intensity
+### Assessment of SGN density and intensity
 
-Cochleae cross-sections were stained with β-III Tubulin (1:200). Controls were prepared by replacing primary antibodies with 1% BSA-PBS. Multiple high-resolution images of each cochlea were visualized and acquired under an FV1000 Olympus confocal microscope with a 40× objective. For analysis of SGNs, β-III tubulin labeled cells were visualized and counted over the same measured area of the Rosenthal’s canal. All analyses were performed with an image analysis program (Fiji). The average percentage of SGN density (defined as SGN numberarea(104μm2)) and β-III Tubulin intensity for each SGN in three regions (apex, middle, and base) were calculated for each sample.
+Cochleae cross-sections were stained with β-III Tubulin (1:200). Controls were prepared by replacing primary antibodies with 1% BSA-PBS. Multiple high-resolution images of each cochlea were visualized and acquired under an FV1000 Olympus confocal microscope with a 40× objective. For analysis of SGNs, β-III tubulin labeled cells were visualized and counted over the same measured area of the Rosenthal’s canal. All analyses were performed with an image analysis program (Fiji). The average percentage of SGN density (defined as $\frac{SGN number}{area(10^{4}\mum^{2})}$) and β-III Tubulin intensity for each SGN in three regions (apex, middle, and base) were calculated for each sample.
 
-## SGN explant culture and assessment
+### SGN explant culture and assessment
 
-SGN explants were isolated from P1 to P3 mouse cochleae of both sexes. To maintain tissue consistency, spiral ganglion tissue from the cochlear middle turn was excised from the entire length of the cochlea and divided into three 90° fan-shaped explants, as illustrated in Figure 12A and B, then cultured on a thin gel of Corning Matrigel Growth Factor Reduced Basement Membrane Matrix in SGN basic culture medium consisting of Neurobasal Medium, 1% HEPES, 1% GlutaMAXTM, 2% B-27 Supplement, and 1% Penicillin-Streptomycin Solution (Note: serum-free medium was used to limit the effect of multi growth factors contained in the serum). On the final day in culture, the SGN explants and adult SGNs were fixed with 2% PFA for 30 min on ice. The specimens were permeabilized in 0.5% Triton X-100 for 30  min, blocked with 10% GS and 1% BSA diluted in 1× PBS for 1  hr at RT, then incubated with the antibody for β-III tubulin (1:200) and antibody for CD31 (1:100) diluted in 10% GS and 1% BSA in 1× PBS overnight at 4°C. After three washes with 1× PBS, the specimens were subsequently stained with fluorescence-conjugated secondary antibodies diluted in 10% GS and 1% BSA in 1× PBS for 1  hr at RT, followed by Hoechst 33342 staining for 15 min at RT. All samples were visualized under an FV1000 Olympus confocal microscope (Olympus FV1000, Japan), as shown in Figure 12C and D. Using Fiji, the total number of neurites and blood vessel sprouts (new branch formations outside the tissue explants) were counted, then divided by the total area of the explant for quantification. The average length of the neurites was also assessed, defined as Average neurite length=L1+L2+…+Ln(µm)n (Figure 12E and F).
+SGN explants were isolated from P1 to P3 mouse cochleae of both sexes. To maintain tissue consistency, spiral ganglion tissue from the cochlear middle turn was excised from the entire length of the cochlea and divided into three 90° fan-shaped explants, as illustrated in Figure 12A and B, then cultured on a thin gel of Corning Matrigel Growth Factor Reduced Basement Membrane Matrix in SGN basic culture medium consisting of Neurobasal Medium, 1% HEPES, 1% GlutaMAXTM, 2% B-27 Supplement, and 1% Penicillin-Streptomycin Solution (Note: serum-free medium was used to limit the effect of multi growth factors contained in the serum). On the final day in culture, the SGN explants and adult SGNs were fixed with 2% PFA for 30 min on ice. The specimens were permeabilized in 0.5% Triton X-100 for 30  min, blocked with 10% GS and 1% BSA diluted in 1× PBS for 1  hr at RT, then incubated with the antibody for β-III tubulin (1:200) and antibody for CD31 (1:100) diluted in 10% GS and 1% BSA in 1× PBS overnight at 4°C. After three washes with 1× PBS, the specimens were subsequently stained with fluorescence-conjugated secondary antibodies diluted in 10% GS and 1% BSA in 1× PBS for 1  hr at RT, followed by Hoechst 33342 staining for 15 min at RT. All samples were visualized under an FV1000 Olympus confocal microscope (Olympus FV1000, Japan), as shown in Figure 12C and D. Using Fiji, the total number of neurites and blood vessel sprouts (new branch formations outside the tissue explants) were counted, then divided by the total area of the explant for quantification. The average length of the neurites was also assessed, defined as $Average neurite length=\frac{L1+L2+…+Ln(µm)}{n}$ (Figure 12E and F).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/83486/elife-83486-fig12-v2.jpg)
 
 **Figure 12.:** (A and B) The cochlear middle turns were dissected out, stria vascularis and organ of Corti discarded, and the remaining SGN cut into three 90° fan-shaped pieces. These were attached to a coated 6-well glass bottom plate and cultured. (C) A representative confocal projection image of an SGN explant labeled with an antibody for β-III tubulin (green). (D–F) Illustration showing the method used for quantification of SGN neurite number and length. N: the number of neurites; L: the length of the neurites. (F) High magnification of the SGN explant showing new vessel growth labeled for CD31 (red). Arrows indicate new vessel branches.
 
-## Adult SGN culture and assessment
+### Adult SGN culture and assessment
 
 Adult SGN cells were isolated and cultured using a modified protocol described by Vieira et al., 2007. Briefly, cochleae from 4 wk old mice of both sexes were collected; after the organ of Corti was peeled away, the modiolus was split longitudinally to expose the spiral ganglion and digested in 1 ml Hibernate A containing 2 mg/ml dispase II, 1 mg/ml collagenase I, and 1 mg/ml DNase I for 30 min at 33°C and gently agitated every 5 min. The tissue was dissociated by aspirating and expelling 30 times through a 1 ml polypropylene pipette tip. Tissue clumps were allowed to sediment for 1–2 min, the supernatant was collected and centrifuged at at 80× g for 1 min to remove bony debris. The supernatant was then slowly transferred to a new 15 ml centrifuge tube containing 3 ml of 15% BSA+10% (fetal bovine serum) FBS in Hibernate A as a cushion to remove the fiber debris by centrifuging at 200× g for 10 min. During centrifugation, the cells will pass the cushion and settle in the bottom, while the fiber debris will accumulate in the cushion layer. The pelleted cells were finally resuspended at 3 × 104 neurons/ml in SGN basic culture medium (see SGN explant culture), and ~3000 SGN cells in 100 μl culture medium were added to each well coated with matrigel matrix diluted in neurobasal medium at a ratio of 1:9. On the final day in culture, the adult SGNs were fixed with 2% PFA for 30 min on ice. The specimens were permeabilized in 0.5% Triton X-100 for 30  min, blocked with 10% GS and 1% BSA diluted in 1× PBS for 1  hr at RT, then incubated with antibodies for β-III tubulin (1:500) diluted in 10% GS and 1% BSA in 1× PBS overnight at 4°C. After three washes with 1× PBS, the specimens were subsequently stained with fluorescence-conjugated secondary antibodies diluted in 10% GS and 1% BSA in 1× PBS for 1  hr at RT, followed by Hoechst 33342 staining for 15 min at RT. All samples were visualized under an FV1000 Olympus confocal microscope (Olympus FV1000, Japan). The number of SGNs per well, neurite number, and longest neurite length of each neuron were quantified using Fiji for statistical analysis.
 
-## Pericyte co-culture with SGN explants and adult SGNs
+### Pericyte co-culture with SGN explants and adult SGNs
 
 The primary cochlea pericyte cell line was generated from C57BL/6J mice by a well-established ‘mini-chip’ protocol previously described and published (Neng et al., 2013a), at passage 3–6 used for all experiments. The explants or SGNs were first incubated in 100 μl basic SGN culture medium in glass bottom 6-well plates (P06G-1.5–10 F, MatTek’s) overnight at 37°C, 5% CO2, allowing the tissue/cell well to attach to the device. The next day, culture medium was added up to 3 ml, and pericytes at 3.0 × 105 cells/well were seeded in the insert (Cat#: 353091, Corning) for five continuous days. The explant was first incubated in 100 μl SGN medium in glass bottom 6-well plates overnight at 37°C, 5% CO2. The next day, the culture medium was added up to 3 ml, and pericytes (passage 3–6) at 3.0 × 105 cells/well were seeded in the insert for five continuous days.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Pericyte specimens were sent to Otogenetics Corporation (Norcross, GA, USA) for bulk RNA-seq assay. Briefly, total RNA was extracted from cell pellets using the E.Z.N.A. Total RNA Kit II and the integrity and purity of total RNA were assessed using Agilent Bioanalyzer and OD260/280. 1–2 μg of cDNA was generated using a Clontech SMARTer cDNA kit from 100 ng of total RNA, and adaptors were removed by digestion with RsaI. The resulting cDNA was fragmented using Covaris (Covaris, Inc, Woburn, MA, USA) or Bioruptor, profiled using an Agilent Bioanalyzer, and subjected to Illumina library preparation using NEBNext reagents (Cat#: E6040, New England Biolabs). The quality and size distribution of the Illumina libraries were determined using an Agilent Bioanalyzer2100. The libraries were then submitted for Illumina HiSeq2000 sequencing, used per standard operation. Paired-end 90 or 100 nucleotide reads were generated and checked for data quality using FASTQC (Babraham Institute, Cambridge, UK) and subjected to data analysis using the platform provided by DNAnexus (DNAnexus, Inc, Mountain View, CA, USA) or the platform provided by the Center for Biotechnology and Computational Biology (University of Maryland, College Park, MD, USA) as previously described (Trapnell et al., 2012).
 
-## NTA, TEM, and proteomic analysis of pericyte-derived exosomes
+### NTA, TEM, and proteomic analysis of pericyte-derived exosomes
 
 NTA, TEM, and proteomic analyses of pericyte-derived exosomes were performed by Alpha Nano Tech. Pericytes were initially cultured in normal media in 100 mm collagen I coated petri dishes until ~90% confluence, then rinsed with PBS, and transferred to conditioned medium containing 2% Bovine exosome-free FBS (heat inactivated; Cat#: EXO-FBSHI-50A-1, SBI) for 24 hr. Exosomes were purified from the collected media by ultrafiltration followed by size exclusion separation, as shown in Figure 5A. Briefly, the conditioned media were loaded into the pre-rinsed ultrafiltration devices (Vivaspin 20) containing a 100 kDa molecular weight cutoff (MWCO) polyethersulfone (PES) membrane and centrifuged at 3000× g for several intervals of 30 min until the final volume reached 500 μl. The exosome fractions were collected with the Izon 35 nm qEV original column and further concentrated using Amicon Ultra 2 100 kDa MWCO centrifugal filter devices.
 
-## Nanoparticle tracking analysis
+#### Nanoparticle tracking analysis
 
 The NTA of exosomes labeled with Exoglow was performed with a Zetaview Quatt instrument (Particle Metrix, Ammersee, Germany). To label exosomes with Exoglow, 2 μl of exoglow dye was added to 12 μl of reaction buffer, mixed with 14 μl of sample, and incubated for 15 min at RT. Dilutions were made by mixing PBS filtered through a 0.2 μm syringe filter with a corresponding volume of sample. Particle size distribution histograms were recorded in scatter and fluorescent modes.
 
-## Transmission electron microscopy
+#### Transmission electron microscopy
 
 Сopper carbon formvar grids were glow discharged immediately prior to loading with the sample. Sample was processed undiluted. The grid was floated on a 10 μl sample drop for 15 min, washed twice with water by floating on the drop of water for 30 s, and negatively stained with 2% uranyl acetate by floating on a drop of the stain for 30 s. The grid was blot dried with Whatman paper and imaged on a Jeol 1230 electron microscope.
 
-## Proteomic analysis
+### Proteomic analysis
 
 5 µg of exosomes were dried via vacuum centrifuging. Then the sample was reconstituted in 8 M urea, reduced with dithiothreitol (DTT), alkylated with iodoacetamide, and digested with trypsin overnight. Peptide samples were cleaned using Pierce Peptide Desalting Spin Columns (Cat#: 89852, ThermoFisher) and analyzed in duplicate by liquid chromatography with tandem mass spectrometry (LC-MS/MS) using a Thermo Easy nLC 1200-QExactive HF (Cat#: LC140, ThermoFisher). Proteins were identified and quantified with Proteome Discoverer 2.5 utilizing the Uniprot mouse database appended with a common contaminants database. Further data analysis was conducted in Perseus (Log2 transformation and GOCC term annotation). GO enrichment analysis on these proteins was performed by using the PANTHER classification system, and redundancy in the lists of enriched GO terms was minimized using REVIGO, with the similarity set to 0.5.
 
-## RT-PCR and ELISA
+### RT-PCR and ELISA
 
 Total RNA of the pericytes was extracted with an RNeasy micro kit, cDNA synthesized with SuperScript IV First-Strand Synthesis kit, used according to the manufacturer’s instructions. RT-PCR products (primers designed by using Primer-BLAST to specifically detect VEGFA expression: forward, 5’-GCAGCGACAAGGCAGACTA-3’; reverse, 5’-GGTCCGATGCAAGATCCCAA-3’, 392 bp product) were analyzed by 1.5% agarose gel electrophoresis. VEGFA expression level in the supernatant of pericyte culture media and mouse cochleae homogenate was measured by using mouse VEGFA ELISA Kit per the manufacturer’s instructions.
 
-## Western blot
+### Western blot
 
 Exosomes were purified from the conditioned medium using ultracentrifugation as described by Breglio et al., 2020. Briefly, conditioned medium was first centrifuged at 300× g for 10 min at 4°C, then at 10,000× g for 30 min at 4°C. Finally, exosomes were pelleted by ultracentrifuging at 100,000× g for 70 min at 4°C. The exosome-depleted supernatant was further concentrated with a Pierce Protein Concentrator PES (3 K MWCO, Cat#: 88525, ThermoFisher) at 4000× g and 4°C. Both the concentrated non-exosomal supernatant and the purified exosomes were resuspended in RIPA Lysis and Extraction Buffer supplemented with cOmplete Mini EDTA-Free Protease Inhibitor Cocktail (Roche) and vortexed for 1 min. Protein concentration was analyzed with a BCA protein assay kit. The remaining sample was denatured at 95°C for 5 min in 4×Laemmli buffer and subjected to SDS-PAGE using 4–15% Mini-PROTEAN TGX Precast Protein Gels followed by protein transfer to a 0.45 μm pore (polyvinylidene difluoride) PVDF membrane (Cat#: 88585, ThermoFisher). Membranes were blocked in 3% BSA in TBS with 0.1% Tween-20 (TBS-T). The primary Abs used were VEGFA (1:400) and PDGFRβ (1:5000). HRP-linked secondary Ab: Goat Anti-rabbit IgG (1:10,000). Protein bands were visualized by chemiluminescence using a SuperSignal West Femto Duration Substrate and Q-View Imager System (Quansys Bioscience, Logan, UT, USA).
 
-## Treatment of SGN explants and adult SGNs with pericyte-derived exosomes
+### Treatment of SGN explants and adult SGNs with pericyte-derived exosomes
 
 Exosomes were purified from the conditioned media using Invitrogen Total Exosome Isolation Reagent (from cell culture media; Cat#: 4478359, ThermoFisher) according to the manufacturer’s instructions. The explants or SGNs were cultured in 400 μl SGN basic medium in Nunc Lab-Tek II Chambered Coverglasses (Cat#: 155409, ThermoFisher) with exosomes (5 μg/ml), with or without SU5408 (100 nM for SGN explant and 50 nM for SGNs) for five continuous days. Media was changed every 2 d.
 
-## Statistics
+### Statistics
 
 All experiments were designed with proper controls. The sample size estimation was conducted based on our pilot data by power analysis (Sample Size Calculator). To avoid variation and experimental bias, we applied a blind control procedure. All statistical analyses were performed using GraphPad Prism 9 software (GraphPad Software). Statistical difference between two groups was evaluated by unpaired, two-tailed t test. One-way ANOVA followed by Tukey’s multiple comparison test was used to compare differences across multiple groups. Two-way ANOVA followed by Dunnett’s multiple comparison test was used for ABR analysis to compare threshold or wave I latency differences at different time points and wave I amplitude differences at different SPLs within multiple groups. Differences were considered significant at p<0.05. Data were presented as the mean ± SEM.

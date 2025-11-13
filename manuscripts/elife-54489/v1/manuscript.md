@@ -96,97 +96,153 @@ Horizon scanning aims to build societal preparedness by systematically identifyi
 
 In this article we provide a high-level summary of the top 20 issues identified in the bioengineering horizon scan 2020 (while acknowledging that the number of topics covered means that there will be some sacrifice of depth for breadth). We take a broader view of bioengineering than we did in 2017, defining it as the application of ideas, principles and techniques to the engineering of biological systems. This means that we now cover more aspects of bioengineering, as well as issues that contribute to or result from bioengineering advances (such as funding). To avoid giving a false sense of forecasting precision or overemphasising minor differences in scoring, the issues are not ranked, and are instead grouped into issues that are expected to be most relevant within five years, within 5–10 years, and on timescales of longer than 10 years (Table 1). Our intent is to spur further research into these issues and further discussion of their implications by researchers, policy-makers and the wider public.
 
+**Table 1.**
+ Overview of the bioengineering horizon scan 2020.Summary of the 20 issues identified through the scan; issues are grouped according to likely timeline for realisation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>&lt;5 Years</th>
+      <th>5–10 Years</th>
+      <th>&gt;10 Years</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Access to biotechnology through outsourcing</td>
+      <td>Agricultural gene drives</td>
+      <td>Bio-based production of materials</td>
+    </tr>
+    <tr>
+      <td>Crops for changing climates</td>
+      <td>Neuronal probes expanding new sensory capabilities</td>
+      <td>Live plant dispensers of chemical signals</td>
+    </tr>
+    <tr>
+      <td>Function-based design in protein engineering</td>
+      <td>Distributed pharmaceutical development and manufacturing</td>
+      <td>Malicious use of advanced neurochemistry</td>
+    </tr>
+    <tr>
+      <td>Philanthropy shapes bioscience research agendas</td>
+      <td>Genetically engineered phage therapy</td>
+      <td>Enhancing carbon sequestration</td>
+    </tr>
+    <tr>
+      <td>State and international regulation of DNA database use</td>
+      <td>Human genomics converging with computing technologies</td>
+      <td>Porcine bioengineered replacement organs</td>
+    </tr>
+    <tr>
+      <td rowspan="4"></td>
+      <td>Microbiome engineering in agriculture</td>
+      <td>The governance of cognitive enhancement</td>
+    </tr>
+    <tr>
+      <td>Phytoremediation of contaminated soils</td>
+      <td rowspan="3"></td>
+    </tr>
+    <tr>
+      <td>Production of edible vaccines in plants</td>
+    </tr>
+    <tr>
+      <td>The rise of personalised medicine such as cell therapies</td>
+    </tr>
+  </tbody>
+</table>
+
 ## The issues most relevant within five years
 
-## Access to biotechnology through outsourcing
+### Access to biotechnology through outsourcing
 
 Traditionally, the biotechnology sector has had high barriers to entry, with organizations needing to build extensive physical and knowledge-based assets. New 'cloud labs' and services labs are circumventing this model by using technologies such as robotics, automation and the internet to offer widely-accessible standardised services with limited need for physical material transfer (Jessop-Fabre and Sonnenschein, 2019). This facilitates both broader access and faster development of new products through the sharing of capital and knowledge across projects (Lentzos and Invernizzi, 2019). It is also helping to empower non-traditional researchers by lowering the threshold for participating in cutting-edge research.
 
 This distributed approach poses a biosecurity gap as research activities are separated from intent: the cloud lab may not seek additional details on an experiment’s context, including why it is being performed. There is also a lack of appropriate biosecurity guidelines and governance models to handle this (Palmer et al., 2015; Dunlap and Pauwels, 2019). As outsourcing through cloud labs becomes increasingly prevalent in the next five years, these challenges may require the development of new guidelines and business and incentive models for responsible innovation and biosecurity.
 
-## Crops for changing climates
+### Crops for changing climates
 
 Climate change is predicted to result in more frequent droughts and intensive precipitation events. This will increase soil salinity, elevate average temperatures, and shift the range, abundance and genotypic diversity of pollinators, pests and pathogens. All of these factors are expected to impact crop yields. In response, efforts are intensifying to adapt food production using agro-ecological strategies (Altieri et al., 2015), as well as the provision of well-adapted crop varieties by genetic engineering and new breeding technologies (Dhankher and Foyer, 2018): Drought-tolerant genetically modified (GM) plant varieties have reached the market and more are in development (Nuccio et al., 2018); the capabilities of plant immune receptors have been broadened by protein engineering (De la Concepcion et al., 2019); and the identification of conserved submergence-activated genes has revealed novel genetic targets for enhancing flood tolerance (Reynoso et al., 2019). Technical progress is still required for success in the field. However, deployment may be hindered by a comparative lack of funding for plant science, as well as lengthy and expensive regulatory regimes in most jurisdictions. New models for public-private co-operation will be needed to advance the translation of basic research through to the field, including business models that are not based on simple economic returns. The effects of novel traits on biodiversity and ecosystems will require further scrutiny before being deployed in a warmer world.
 
-## Function-based design in protein engineering
+### Function-based design in protein engineering
 
 Despite a growing understanding of the relationship between protein structure and function, efficient design of new proteins with a desired action has remained a laborious process. For example, chimeric antigen receptor (CAR) thymus lymphocyte (T cell) therapies which combine functional protein moieties to activate T cells against malignant tumours have only recently been approved for human use after decades of iteration (Feins et al., 2019). The convergence of ongoing developments, including substantial improvements in predicting protein structure from amino acid sequences using machine learning (AlQuraishi, 2019; Yang et al., 2019a), could overcome previous technical and computational challenges. This indicates a potential revolution in function-based protein design, leading to various useful industrial compounds (such as the development of catalysts for any desired organic reaction) and medical applications (such as the ability to selectively destroy, suppress or stimulate any malfunctioning tissue, which is the key to treating many refractory diseases). However, as this field grows so will the risk of deliberate misuse. Protein engineering could be used to produce agents that have a higher lethality or specificity than existing agents (including new agents based on novel mechanisms of action). Protein engineering might also simplify the production of toxins currently derived from natural sources.
 
-## Philanthropy shapes bioscience research agendas
+### Philanthropy shapes bioscience research agendas
 
 Over the past decade, philanthropic funding (including venture philanthropy) of research and innovation has been increasing (Coutts, 2019; Depecker et al., 2018). This has largely been driven by the increasing concentration of wealth, and erosion of public health and scientific research initiatives within key countries. These investments can provide particular research groups or areas with substantial funding over prolonged periods of time, and they can also support areas of research that are not usually funded by governments. Philanthropic investments can also promote innovation, such as allowing for more exotic approaches not usually funded by governments. However, these investments might also influence the development of biotechnologies in a way that has less of a public mandate than government-funded research. Philanthropic investments also operate without the traditional mechanisms for accountability, transparency or oversight often required by federal or state law (Reich, 2018). Some areas of medical research are already considerably underfunded compared to health needs (Rafols and Yegros, 2018), and philanthropic investments may exacerbate this discrepancy in the near-term future. Significant investment into a small range of actors could also undermine diversity, particularly at the international level (Lentzos, 2019). A possible response would be partnerships between public and private investors, though such partnerships might not fully address concerns about accountability, transparency or oversight.
 
-## State and international regulation of deoxyribonucleic acid (DNA) database use
+### State and international regulation of deoxyribonucleic acid (DNA) database use
 
 Personal genomic sequencing continues to drop in price and increase in accessibility. The inherent inability to truly anonymise such data, coupled with the wealth of information it provides on both individuals and families, distinguishes it from conventional data types such as fingerprints (identifiable but uninformative) or shopping habits (Finnegan and Hall, 2017). The drop in price and the use of technologies such as cloud storage have allowed wider use of DNA databases by different actors. While the vulnerability of cloud infrastructure is a concern, there is greater potential for misuse by states and law enforcement in the name of security. This has been seen in efforts to target Muslim Uighurs in China via blood samples (Wee, 2019), and in a consumer genetics database allowing the Federal Bureau of Investigation in the US to compare genetic data from crime scenes to a database of over two million profiles without customer consent (Haag, 2019). The potential to accrue and analyse vast amounts of genomic information raises concerns over privacy, especially mass surveillance (Solove, 2011); the potential expansion of state surveillance powers necessitates dialogue and policy intervention domestically and internationally.
 
 ## Issues most relevant in 5–10 years
 
-## Agricultural gene drives
+### Agricultural gene drives
 
 Gene drives were initially proposed for the control of insect vectors for human diseases (Gantz et al., 2015; Neve, 2018), but recent work suggest that they could provide major economic benefits to the agricultural sector (Collins, 2018; Neve, 2018). However, while there is potential for gene drives to eliminate or suppress pest species, their widespread uptake and use could lead to problems in their application and governance (Evans and Palmer, 2018). One concern is that commercial interests will seek to maintain sales of agrochemicals by configuring gene drives to reduce chemical resistance in target pest insects and weeds as opposed to causing sterility in those species. A second concern is that unilateral deployment of gene drives may cause rapid and unintended ecosystem perturbations without proper oversight or recall. There have also been questions around their control and the lack of public consultation (or participation) regarding their release, as well as legal implications if populations are eliminated within, or new gene configurations are carried to, native locations (Montenegro de Wit, 2019). Efforts are already underway to counter, control and even reverse the undesired effects of genome editing, including DARPA’s Safe Genes program (Wegrzyn, 2019). Policy-makers will need to be vigilant to more problematic applications as agricultural gene drives become more prevalent.
 
-## Neuronal probes expanding new sensory capabilities
+### Neuronal probes expanding new sensory capabilities
 
 New research into creating probes that mimic neurons could enable novel medicinal and enhancement applications such as the creation of new sensory capabilities. Traditionally, neuronal probes have both structural and mechanical dissimilarities from their neuron targets, leading to neuro-inflammatory responses. However, it is now possible to fabricate neuron-like electronic probes (with widths similar to those of neurons) and unobtrusively fuse them with live neurons (Yang et al., 2019b). Potentially, the technology could be used to add new sensory capabilities by implanting neuronal probe arrays as a visual cortical prosthesis system. However, such biomimetic sensory probes could introduce unintended vulnerabilities, from a risk of malicious attack via the internet to possible mass monitoring of implanted civilians by law enforcement (Yetisen, 2018).
 
-## Distributed pharmaceutical development and manufacturing
+### Distributed pharmaceutical development and manufacturing
 
 Outsourcing and increasingly lower barriers to access in bioengineering are allowing for greater localisation and geographical distribution of the manufacturing and development of pharmaceuticals. Bioengineering offers the capacity to create pharmaceutical compounds or their precursors by genetically modifying organisms to produce them. The prospect of non-traditional pharmaceutical manufacture has gained some traction, but with few tangible results. Barriers to distributed pharmaceutical manufacturing becoming broadly adopted include the scale of production required for individual or community use; meeting appropriate safety standards for manufacturing and administration; and interfacing with drug approval pathways. Efforts in non-traditional pharma, such as The Open Insulin Project (Gallegos et al., 2018), are rising in profile and will likely continue, whether individual projects are successful or not. This is supported by the Open Pharma movement which seeks to empower innovation through open-access research and development (Munos, 2010; Gassmann et al., 2018; Open Source Pharma, 2020). That itself may shape regulatory frameworks, and may provide new open or distributed models for drug manufacturing. However, in the absence of appropriate norms or regulations (Blum, 2010), it may also lead to the manufacturing, at scale, of drugs that are not vetted for safety, or administered under appropriate clinical guidance (Coleman and Zilinskas, 2010).
 
-## Genetically engineered phage therapy
+### Genetically engineered phage therapy
 
 The World Health Organization (WHO) recently reported a worrying lack of new antibiotics to address the dangerous trends of rising resistance to existing antibiotics (WHO, 2015), and antimicrobial resistance has been identified as a potential global catastrophic risk. Phage therapy has recently seen a renaissance as a potential alternative to antibiotic treatment. In particular, the ability to rapidly engineer phage sequences and phage cocktails opens up the prospect of personalised treatments for tackling genetically-diverse infections and overcoming problems of antimicrobial resistance (Schmidt, 2019). The technical advances observed in the medical application of phage therapy will also have an impact on other uses of phages as delivery systems in biotechnology. Efforts have also been significantly buoyed by the development of easier methods for engineering phages to combat the inevitable evolution of phage resistance in bacteria (Pires et al., 2016). However, barriers to widespread commercial use persist, including high costs, instability of the medication, the need to type the infection (instead of giving a broad-spectrum pill) and immunogenicity. This makes it more likely for phage therapy to be used as a last resort once other treatments have failed.
 
-## Human genomics converging with computing technologies
+### Human genomics converging with computing technologies
 
 Human genomics is increasingly incorporating technologies such as blockchain, cloud computing and machine learning. Firms such as Amazon and Google offer cloud computing-based storage and data analytics services for the petabytes of genetic data stored online, while companies such as Encrypgen and Nebula use blockchain in systems that reward individuals for sharing their genetic data. Artificial intelligence and machine learning are enabling deep analysis of thousands of molecules with potential to become future drugs (Japsen, 2016), as well as human genomic data (iCarbonX, 2018). Most recently, deep learning used molecular structure to predict the efficacy of antibiotic candidates (Stokes et al., 2020). Some uses of these technologies could help address current privacy concerns. This includes the use of blockchain as well as 'secret sharing' techniques in which sensitive information is divided across multiple servers (Cho et al., 2018). However, as they are applied to human genomic data in increasingly powerful and connected ways, additional ethical issues will arise. Enlivened and global discussion on how best to handle societal implications will become necessary (Yakubu et al., 2018).
 
-## Microbiome engineering in agriculture
+### Microbiome engineering in agriculture
 
 Progress on microbiome engineering and genomic sequencing could allow for beneficial new applications in agriculture, but also risks. Microbiome engineering and the development of synthetic microbiomes offer wide-ranging uses for mammalian health as well as plant and animal productivity, soil health and disease management. A bottom-up approach to microbiome engineering aims to predictably alter microbiome properties and design functions for agricultural and therapeutic applications. Microbiome engineering strategies could provide alternatives to the use of antibiotics for livestock management (Broaders et al., 2013). These approaches offer the potential for innovative, sustainable pathways for plant disease suppression by engineering the microbiomes indigenous to agricultural soils (Foo et al., 2017). Advances in genome sequencing, metagenomics and synthetic biology have already provided a theoretical framework for constructing synthetic microbiomes with novel functionalities. New methods, such as in situ mammalian gut microbiome engineering, could help to overcome existing limitations and offer new capabilities for the future (Ronda et al., 2019). These new methods and advances can support better design of microbiome modulation strategies in mammalian health and agricultural productivity. Yet, the engineering of agricultural microbiomes on a large scale could also create vulnerabilities towards malicious intervention.
 
-## Phytoremediation of contaminated soils
+### Phytoremediation of contaminated soils
 
 Research in phytoremediation is leading to the creation of engineered plants that could help recuperate contaminated soils, but further field trials are needed along with discussions about their introduction to and implications for the environment. Certain plant species have natural mechanisms that enable both uptake and tolerance of natural and anthropogenic inorganic pollutants. Identifying, expressing and potentially engineering these traits is receiving increased research interest. Preliminary work on transgenic plants in the lab by overexpression of metal ligands, transporters and specific enzymes has led to successful phytoextractions of pollutants including explosives and heavy metals. However, few experiments have been conducted in the field on contaminated soils (Fasani et al., 2018), where toxicity of various pollutants and the impact of various environmental factors on the plant-microbiome interaction has limited the success of phytoremediation to date. Realising biotechnological phytoremediation will depend on a number of factors: a more robust systemic understanding of plant-microbiome interactions with pollutants (Basu et al., 2018); the survivability of these engineered organisms in the environment; understanding and controlling environmental impacts; and robust societal discussion and carefully designed regulatory regimes.
 
-## Production of edible vaccines in plants
+### Production of edible vaccines in plants
 
 Plants offer a scalable low-cost platform for recombinant vaccine production (Merlin et al., 2017). The introduction of the oral polio vaccine in the 1960s led to huge interest in developing vaccines that can be delivered without the need for injection. Given that plants are widely consumed, they offer an attractive means of vaccine delivery. Plant-expressed antibodies can protect against tooth decay. Similarly, expression of norovirus-like particles in transgenic potatoes could raise antibodies against the virus when the material is consumed (Tacket et al., 2000). Plant-produced vaccines have also been developed for some animal diseases (Marsian et al., 2019). Oral delivery with minimal processing has the potential to reduce requirements for extensive frameworks for production, purification, sterilisation, packaging and distribution. A major challenge is the need for improvement of the chemical and physical stability of vaccines during transit through the gut in order to ensure efficacy (Berardi et al., 2018). Also, commercialisation may be difficult under current regulatory regimes (Merlin et al., 2017). Moreover, if production is scaled up beyond contained greenhouses, this will require the deliberate environmental (field) release of plants engineered to contain vaccines.
 
-## The rise of personalised medicine such as cell therapies
+### The rise of personalised medicine such as cell therapies
 
 There is an accelerating trend towards the development and approval of personalised therapeutics. These are medical treatments that are tailored towards individuals, accounting for their likely response based on genomic and epigenetic data. In the US in 2018, 42% of all new drug approvals by the Food and Drugs Administration concerned these treatments (PMC, 2019). However, significant challenges stand in the way of developing and deploying personalised medicine and cell therapies. These includes issues of delivery logistics and cost. The key factor to clinical adoption of personalised medicine is the value recognition by all healthcare stakeholders. Most personalised medicines are genetically guided interventions that address relatively small subsets of patients with rare genetic mutations. The treatment approaches are sometimes costlier due to their increased sophistication and lower demand. Once these barriers are overcome there will be some potential problems that will need to be mitigated via policy. One is ensuring equitable access. Reimbursement from third-party payers such as health insurance companies is also likely to become an issue for targeted treatments (Bilkey et al., 2019; Genetics Home Reference, 2019). Public health policy must adapt to this new frontier of healthcare while addressing its potentially detrimental effects on equality of healthcare access and treatment.
 
 ## The issues most relevant in 10 years or more
 
-## Bio-based production of materials
+### Bio-based production of materials
 
 Biological engineering and production methods facilitate the transformation of renewable plant feedstocks and microorganisms into substitutes for a wide range of existing and new materials, including plastics and other materials that are produced from fossil fuels (European Commission, 2017). These developments are being driven by increasing government, private and civil society efforts to decarbonise economies. New opportunities may be created for small, bio-based production facilities and clean bio-refineries to be located close to the markets for these materials, potentially replacing much of the petrochemical sector, and there are potential roles for rural areas in growing bio-based feedstocks. While bio-based production promises to be more sustainable than existing methods, attention is still required in addressing specific impacts on feedstocks, energy, water and other environmental and societal factors (Matthews et al., 2019). This is accompanied by technical barriers in product processing. While some bio-based materials are already on the market, significant private investment and supportive public policy frameworks (including but not limited to carbon pricing, as well as more speculative nitrogen pricing) will be required over the next decade and beyond to accelerate the widespread worldwide transition to these materials (HM Government, 2018).
 
-## Live plant dispensers of chemical signals
+### Live plant dispensers of chemical signals
 
 Plants emit volatile signals that can activate defence responses in other nearby plants. The concept of using GM plants to deliver these signals has made practical progress in recent years. These genetically modified plants are intended to be helpers that protect surrounding conventional crops that are cultivated for consumption. Field trials have evaluated the potential of transgenic wheat to repel different pests and virus vectors (Bruce et al., 2015). Despite excellent results in the lab, in planta synthesis of the alarm pheromone failed to reduce aphid numbers. Other studies have demonstrated the feasibility of making insect sex pheromones to trap male insects (Ding et al., 2014). Further finessing of the pheromone blend may be enabled by synthetic biology. This could open up the possibility of using plants as chemical-producing green factories, or field-based disruptors and dispersers of insect pests. Unlike current GM solutions for protection from insect herbivory, the use of pheromones is a non-lethal and less-persistent intervention, and chemically-manufactured pheromones have been in use for many years. Questions remain as to whether the broader adoption of pheromones will simply displace pests to unprotected crops.
 
-## Malicious use of advanced neurochemistry
+### Malicious use of advanced neurochemistry
 
 Agents that could attack the central nervous system were investigated during the Cold War but lack of knowledge only permitted the development of sedating agents. Concerns over such agents and manipulations continues (Ward, 2019), but could be empowered through advances in neuroscience and other fields. A driving force in these advances is significant government interest and investments, including an investment of almost $1bn by the US government in the Brain Initiative (NIH, 2019). Resulting drugs and nootropics offer health benefits, but could also be maliciously used (Nixdorff et al., 2018). Governments could use neuro-chemicals to make a populace more subservient. Advanced applications in undeclared biological warfare could include fostering emotional resentment in a targeted population. These drugs could be appealing to governments around the world as a tool for counter-insurgency or non-lethal law enforcement. The use of these new chemicals for law enforcement and in non-traditional conflicts may greatly erode the norms against chemical agent use on the battlefield, threatening the Chemical Weapons Convention in the long term.
 
-## Enhancing carbon sequestration
+### Enhancing carbon sequestration
 
 Metabolic engineering manipulates cells to produce target molecules by optimising endogenous metabolic pathways or by reconstructing these pathways in alternative species. 'Next level' metabolic engineering aims to design metabolic networks de novo, thus bypassing the bottlenecks and inefficiencies of evolution (Erb, 2019). Thus far, experimental success is lacking. However, recent research in photosynthesis may be promising, and examples include engineering a new molecule to perform a designed synthetic photorespiration bypass (Trudeau et al., 2018) and developing an optimised carbon dioxide fixation pathway using enzymes from bacteria, archaea, plants and humans (Schwander et al., 2016). Other methods have included laboratory evolution of a bacterium able to use CO2 for growth (Gleizer et al., 2019). These approaches hold potential for more efficient carbon sequestration and biomass production, as well as for advancing the development of photovoltaics (the production of electricity from light) and light-sustained biomanufacturing. Yet, such developments remain speculative. There are still significant technical challenges to overcome, and a long path to widespread commercial deployment. Moreover, the field will need to engage with its socio-political, ethical and environmental dimensions.
 
-## Porcine bioengineered replacement organs
+### Porcine bioengineered replacement organs
 
 Pigs represent a promising candidate species for production of human-compatible replacement organs for xenotransplantation. A recent advance in porcine genome editing using CRISPR/Cas9 addresses one of the key scientific challenges: successful inactivation of porcine endogenous retroviruses, which otherwise pose a risk of cross-species transmission (Niu et al., 2017). Such advances hold promise as one technological way to address the global shortage of transplant organs. Over 6,500 patients died while on waiting lists in the USA alone in 2017 (UNOS, 2019). Several challenges remain, including engineering sufficient immune compatibility in the organs for successful human transplantation, and determining the expected lifespan of the porcine organs in humans. There are differing views over the acceptability of porcine xenotransplantation within major religions, such as Islam and Judaism (Nuffield Council on Bioethics, 1996). Before commercial development, consideration must be given to questions surrounding the ethics of using animals for transplantation, cost and access, and using a technical solution for an essentially social problem that could be addressed through other approaches, such as opt-out organ donation schemes.
 
-## The governance of cognitive enhancement
+### The governance of cognitive enhancement
 
 Cognitive enhancement is already a widely embraced idea throughout society – caffeine is the most widely consumed drug on earth. Novel methods of cognitive enhancement such as nootropics, wakefulness enhancers, or the potential to directly modulate brain function through implants or biotechnology are emerging. Uptake of these is being driven by both a productivity-focused culture, commercial opportunities and increased understanding of neurochemistry. Although some cognitive enhancers require prescriptions, others only have to meet basic safety guidelines and are available to purchase online. While numerous trials have supported the safety of most nootropics and wakefulness enhancers, there are few long-term longitudinal studies (Fond et al., 2015). A large section of those who have embraced cognitive enhancement – the 'do-it-yourself' experimenters – may also be ignored by the research community. Lax regulation around safety standards for these products and tools has led to calls to tighten regulatory loopholes, and for academic researchers to partner with and include communities in research on cognitive enhancers (Wexler, 2017). Regulatory frameworks are necessary to both minimise risks and gather long-term safety data from end-users, as well as to provide health and safety guidance for international trade of cognitive enhancing drugs and devices (Maslen et al., 2015).
 
 ## Discussion
 
-## Emergent themes
+### Emergent themes
 
 Seven underlying themes emerged from the workshop discussion: 1) political economy and funding; 2) ethical and regulatory frameworks; 3) climate change; 4) transitioning from lab to field; 5) inequalities; 6) technological convergence; and 7) misuse of technology. None of these were judged precise enough to qualify as horizon-scanning items, although some sub-components were. These themes represent underlying commonalities and drivers across issues.
 
@@ -206,13 +262,71 @@ Last, our scan highlights ongoing concerns around the misuse of technology by st
 
 The 2017 scan noted themes of equality, bioinformatics and regulation, all of which feature prominently in the 2020 scan (see Table 2 for a summary of the previous scan). The 2017 exercise discussed the intersection between biotechnology and information and digital technologies. Technological convergence also features in the present scan, but with a broader scope encompassing neuroscience (adding new sensory capabilities) and neurochemistry (malicious uses of advanced neurochemistry) as well as other fields. Both scans featured a strong emphasis on the potential for bioengineering to amplify or alleviate inequalities. In the 2017 scan this included the potential for human genomics to create new 'sociogenetic' classes, while differences in healthcare and access to cognitive enhancement were the flagship issues in this 2020 scan. The thematic convergence between the two scans demonstrates that many of the underlying trends in bioengineering include important structural issues involving ethics and regulation. These will likely influence the field for years to come. There were also several differences in themes, including the greater importance of climate change and political economy in the 2020 exercise. This reflects the significant deviation in issues between the two studies.
 
+**Table 2.**
+ Overview of the bioengineering horizon scan 2017.Summary of the 20 issues identified in 2017; issues are grouped according to likely timeline for realisation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>&lt;5Years</th>
+      <th>5–10 Years</th>
+      <th>&gt;10 Years</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Artificial photosynthesis and carbon capture for producing biofuels</td>
+      <td>Regenerative medicine: 3D printing body parts and tissue engineering</td>
+      <td>New makers disrupt pharmaceutical makers</td>
+    </tr>
+    <tr>
+      <td>Enhanced photosynthesis for agricultural productivity</td>
+      <td>Microbiome-based therapies</td>
+      <td>Platform technologies to address emerging disease pandemics</td>
+    </tr>
+    <tr>
+      <td>New approaches to synthetic gene drives</td>
+      <td>Producing vaccines and human therapeutics in plants</td>
+      <td>Challenges to Taxonomy-Based description and management of biological risk</td>
+    </tr>
+    <tr>
+      <td>Human genome editing</td>
+      <td>Manufacturing illegal drugs using engineered organisms</td>
+      <td>Shifting ownership models in biotechnology</td>
+    </tr>
+    <tr>
+      <td>Accelerating defense agency research in biological engineering</td>
+      <td>Reassigning codons as genetic firewalls</td>
+      <td>Securing the critical infrastructure needed to deliver the bioeconomy</td>
+    </tr>
+    <tr>
+      <td rowspan="6"></td>
+      <td>Rise of automated tools for biological design, test and optimisation</td>
+      <td rowspan="6"></td>
+    </tr>
+    <tr>
+      <td>Biology as information science: impacts on global governance</td>
+    </tr>
+    <tr>
+      <td>Intersection of information security and bio-automation</td>
+    </tr>
+    <tr>
+      <td>Effects of the Nagoya Protocol on biological engineering</td>
+    </tr>
+    <tr>
+      <td>Corporate espionage and biocrime</td>
+    </tr>
+  </tbody>
+</table>
+
 Some issues from 2017 also appear in the 2020 exercise in a slightly altered form: concerns about the military use of bioengineering are now more specific (for example, ‘Malicious use of advanced neurochemistry’), and there are new concerns about the misuse of DNA databases.
 
 Both scans also focussed on different methods for the production of replacement organs. The 2017 exercise identified 3D printing cells on organ-shaped scaffolds, while the 2020 exercise examined the potential for porcine genome editing to allow for xenotransplantation. Finally, both scans assessed the issue of pharmaceutical manufacturing becoming increasingly distributed. The 2017 exercise focused on start-up entrepreneurs and biohacking communities, whereas the 2020 exercise took a broader look at the possibility of decentralisation.
 
 The differences between the scans are likely due to three reasons. First, we used a wider definition of bioengineering which encompassed issues such as biomechanical implants. Two of the issues identified in this scan would not have been covered by the 2017 definition: neuronal probes expanding new sensory capabilities and the governance of cognitive enhancement. Second, half of the participants (19/38) were not involved in the 2017 scan; the new participants were also more geographically diverse (see Methods), and included a higher proportion of social scientists. Third, there have been significant changes in research and the world at large. For example, all the research underpinning the issue of neuronal probes has occurred in the last three years. Similarly, recent research in climate change has highlighted the continued increase in emissions and warming (Friedlingstein et al., 2019), and that tipping points are more probable than previously expected (Steffen et al., 2018; Lenton et al., 2019).
 
-## Limitations and ways forward
+### Limitations and ways forward
 
 While useful, horizon scanning has its limits. Critiques have suggested that the Delphi technique (of which the IDEA protocol is a relatively recent evolution) can give unjustified confidence in results that are essentially the subjective judgements of experts (Sackman, 1975). However, in the absence of data, expert elicitation is warranted, and structured approaches such as Delphi and the IDEA protocol have been found to improve group judgement and outperform other forecasting methods, such as prediction markets (Hanea et al., 2017). While it is difficult to evaluate the efficacy of the Delphi technique due to inconsistencies in its application (de Loë et al., 2016), those that do exist are promising. A review of a long-term Delphi in predicting developments in the health sector found that results were accurate in 14/18 identified issues (Parente and Anderson-Parente, 2011). The method continues to show significant utility in both accurately sighting emerging developments and exploring the implications of potential issues on the horizon.
 
@@ -224,11 +338,11 @@ Future pathways for forecasting bioengineering issues are manifold. Further upda
 
 Our study made use of the Investigate Discuss Estimate Aggregate (IDEA) protocol. In this process, participants were asked to investigate and submit candidate issues, privately and anonymously score the gathered issues, and discuss their thinking with others. They then provided a second score which was mathematically aggregated (Hanea et al., 2018a). The element of discussion is powerful, as the sharing of information between participants has been shown to improve the accuracy of Delphi-style forecasts (Hanea et al., 2018b). The IDEA protocol has also performed well relative to prediction markets in early studies (Hanea et al., 2017). Despite being a relatively recent evolution of the Delphi technique, the IDEA protocol has already been successfully applied to a range of areas including natural resource management (Hemming et al., 2018) and assessing pollinator abundance in response to environmental pressures (Barons et al., 2018). Aside from seeking a shared understanding of terms and reducing linguistic ambiguity, consensus is not sought during discussion and scores are kept anonymous during both rounds. This is done to avoid undesirable group dynamics and peer pressure distorting individual judgements. Our use of the IDEA protocol can be split into three phases: i) recruitment and issue gathering; ii) initial scoring; and iii) workshop preparation, deliberation and re-scoring.
 
-## Phase one: recruitment and issue gathering
+### Phase one: recruitment and issue gathering
 
 Our study drew on a group of 38 participants from six continents. Participants came from countries including the UK, US, Canada, Australia, Germany, Croatia, Thailand, France, Chile, Peru, Switzerland, Malaysia, Zambia and Pakistan. Recruitment was done via a panel of six initial experts (EP, PM, SÓhÉ, CR-R, CR, LS and BW). The panel aimed to ensure a balance across areas such as plant sciences, medicine, bioindustry and biosecurity. They also sought to have a mix of approximately half new participants and half participants from the 2017 exercise scan. Selected bioengineering scholars and practitioners were asked to submit two to five issues each. Our initial request was for issues that were ‘novel, plausible and high-impact’. We asked participants to provide issues that were at a specific level of granularity. As with the previous scan we asked participants not to focus on a general topic, such as 'gain of function' research, nor on multiple topics simultaneously. Instead they were guided to focus on one area within a general topic and its implications, such as an emerging regulatory change for GMOs. After duplicates were merged, a long list of 83 issues was generated from the initial submissions. This included 10 merged issues.
 
-## Phase two: scoring
+### Phase two: scoring
 
 Participants were asked to vote on the 'suitability' of these issues. This involved assigning a score of 0–1,000 to each of the issues. Participants were asked to ensure that each score was unique (no identical scores within a given score-sheet). The suitability scores reflected a combination of plausibility, novelty and impact. Novelty was also captured by respondents noting whether they had heard of the issue previously (through a 'yes/no' response). We then calculated the percentage of participants who had heard of each issue. These novelty scores were published alongside all issues in the short list. This was conducted by sending the participants both the long list of issues, along with a template score-sheet and instructions. At this stage participants were reminded that "our aim is to identify plausible, novel bioengineering-related issues with important future implications for society that are not too broad or already well known’. They were given approximately three weeks to complete their scoring. All anonymised score-sheets are provided in Supplementary file 1; this file also includes the z-scores of the top 20 issues identified in the 2017 scan. Participants were also able to provide comments on the different issues on the voting sheet. These critiques led to a further eight issues being merged into four. Comments were kept to stimulate future discussion. We calculated the z-scores for each participant's issues scores. Z-scores are created by subtracting the mean and dividing by the standard deviation for each issue against the participant's set. This ensures that variations in the range of participants' scoring is accounted for. We then ranked the average z-scores across the issues and selected the highest ranked 41 (approximately cutting the long list in half).
 
@@ -238,9 +352,45 @@ One amendment was made to the previous horizon-scanning methodology: the introdu
 
 The devil's advocates appear to have been a useful addition and were disproportionately successful in suggesting issues. Six of the nine issues they proposed in the first round made it through to the short list, and four of the six issues they proposed in the second round made it through to the final list of 20; with 38 participants, we would expect approximately only one issue for every second participant to make it through to the final list. 68% of participants had heard of the issues proposed by the devil’s advocates, making these issues moderately more novel than the rest. Overall, an average of 70% of participants had heard of each issue. The level of novelty of the issues suggested by devil’s advocates is partly skewed by two more well-known issues which both scored 82.35%. When both of these issues were excluded, the devil's advocates suggestions were significantly more novel at an average of 61%.
 
-## Phase three: workshop preparation, deliberation and re-scoring
+### Phase three: workshop preparation, deliberation and re-scoring
 
 The 41 issues with the highest scores were kept as a part of a shortlist. These were sent back to participants on the 13th of September 2019. Participants were assigned 'cynic' roles for each issue. This involved doing deeper background research into the topic. Each issue had at least two cynics, ensuring that at least three participants (the cynics and proposer) had an in-depth knowledge of the area. The workshop was held in Cambridge on the 9th of October 2019 with 25 participants; 13 could not attend due to other obligations. This resulted in a group with approximately the same characteristics as the group that was involved in he first two phases. The characteristics of both groups are compared in Table 3. Overall, the gender balance was maintained (although the slight skew was reversed towards female participants), the disciplinary split between social and physical scientists was approximately the same, and the geographical coverage became less balanced due to the loss of participants from Peru, Zambia and Malaysia.
+
+**Table 3.**
+ A comparative analysis of the groups involved with phases one and two, and phase three (the workshop).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Phases one and two</th>
+      <th>Phase three (workshop)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample Size</td>
+      <td>38</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Gender Balance</td>
+      <td>21 male participants (55%) and 17 female participants (45%)</td>
+      <td>13 females (52%) and 12 males (48%).</td>
+    </tr>
+    <tr>
+      <td>Geographical Coverage</td>
+      <td>13 countries (UK, US, Canada, Australia, Germany, Croatia, Thailand, France, Chile, Peru, Switzerland, Malaysia, Zambia and Pakistan)</td>
+      <td>10 countries (UK, US, Canada, Australia, Germany, Croatia, Thailand, France, Chile, Switzerland and Pakistan)</td>
+    </tr>
+    <tr>
+      <td>Disciplinary Distribution</td>
+      <td>15 participants from humanities and social sciences (39%) and 23 from natural sciences (61%)</td>
+      <td>9 participants from humanities and social sciences (36%) and 16 from natural sciences (64%)</td>
+    </tr>
+  </tbody>
+</table>
 
 These discussions were overseen by an experienced facilitator (WJS, with LK and AR acting as scribes) and followed a deliberate structure. Each issue was discussed for approximately ten minutes before being voted on anonymously. During discussions, proposers of the issue were asked not to speak until at least three other respondents had contributed. This was done to avoid biasing the conversation and allowing the cynics time to provide an orientating, more neutral intervention. The standardised z-scores for each issue were calculated and ranked at the end of the workshop, resulting in a top 20 list. The decision to keep the list to 20 was made by consensus by the workshop group and was influenced by a significant difference between the z-scores of the top and bottom 20 issues, but a much smaller spread of scores within the top 20. Participants were then given time to discuss the final list and whether any amendments were needed. The group was content with the spread of the final list and that it accurately reflected the deliberations and hence decided that no alterations were needed.
 

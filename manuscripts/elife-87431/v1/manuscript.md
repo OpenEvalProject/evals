@@ -17,9 +17,9 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Department of Microbiology and Immunology, Feinberg School of Medicine, Northwestern University Chicago United States
-2. https://ror.org/000e0be47 Department of Biomedical Engineering, Northwestern University Evanston United States
-3. https://ror.org/00cvxb145 Department of Medicine, University of Washington School of Medicine Seattle United States
+1. Department of Microbiology and Immunology, Feinberg School of Medicine, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Biomedical Engineering, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Department of Medicine, University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -43,11 +43,23 @@ Here, we build upon our prior lipid antigen vaccine formulation by employing a n
 
 ## Results
 
-## BCN morphology preserved after MA loading
+### BCN morphology preserved after MA loading
 
 We scalably assembled spherical BCN with and without loaded MA using FNP as previously described (Bobbala et al., 2018). Dynamic light scattering (DLS) showed that both MA-BCN and BCN were consistent in size (364±19 nm and 354±14 nm, respectively), and were monodisperse based on their polydispersity indices (PDIs) of 0.24±0.04 and 0.21±0.05, respectively (Figure 1A). We next verified that the BCN formulation maintained its characteristic interconnected aqueous channels using cryogenic transmission electronic microscopy (cryo-TEM) (Figure 1B) and negative staining transmission electron microscopy (TEM) (Figure 1C). Using small angle X-ray scattering (SAXS) studies, we confirmed the internal cubic organization of BCN. Bragg peaks at the √2, √4, and √6 ratios show that the primitive type of cubic internal organization was preserved between MA-BCNs and BCNs (Figure 1D). Thus, MA encapsulation did not disturb the BCN architecture. We also manufactured a PLGA nanocarrier formulation (PLGA-NP) with and without MA encapsulation. PLGA-NP morphology was confirmed using cryo-TEM (Figure 1—figure supplement 1A) and SAXS (Figure 1—figure supplement 1B) and the size of blank PLGA-NP and MA-loaded PLGA-NP (MA-PLGA) were found to be 169±4 and 163±5 nm, respectively, with PDIs of 0.18±0.04 and 0.19±0.12, respectively (Figure 1E). Using the coumarin derivatization method (Shang et al., 2018), we found that BCNs could more efficiently encapsulate MA than PLGA-NPs (Figure 1F). We previously noted that the highly stable cubic architecture of BCN can lead to the retention of cargo within the endolysosomal compartment (Bobbala et al., 2020). Indeed, Texas Red-Dextran loaded BCN were mostly found in lysosomes while Texas Red-Dextran loaded PLGA-NP could be found both within the lysosome and cytosol of cells (Figure 1—figure supplement 2A, B).
 
-## MA-BCN activates MA-specific T cells in vitro and in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig1-v1.jpg)
+
+**Figure 1.:** (A) Dynamic light scattering (DLS) analysis of blank BCN and MA-loaded BCN (MA-BCN). (B) Cryo-TEM of MA-BCN (scale = 500 nm). (C) Negative staining transmission electron microscopy (TEM) images of MA-BCN. (D) Small angle X-ray scattering (SAXS) of blank BCN and MA-BCN. (E) Dynamic light scattering (DLS) analysis of blank poly(D,L-lactide-co-glycolide) (PLGA) and MA loaded poly(D,L-lactide-co-glycolide) (MA PLGA). (F) MA encapsulation efficiency for MA-BCN and MA PLGA. N=3 per condition. Data represented as mean ± SD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cryogenic transmission electron microscopy (Cryo-TEM) image and dynamic light scattering (DLS). (B) Small angle X-ray scattering (SAXS) scattering curve fitted with a sphere model.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative confocal image of intracellular localization of PLGA or BCN (Texas red Dextran dye), lysosome (lysotracker), nucleus (NucBlue). (B) Quantification of co-localization of lysotracker with Texas red dye by Pearson correlation. (eight cells were analyzed per experiment, three independent experiments), ****p<0.0001.
+
+### MA-BCN activates MA-specific T cells in vitro and in vivo
 
 As PLGA has served as a component of a wide range of vaccine formulations, including Mtb vaccines (Lin et al., 2018; Khademi et al., 2018), we benchmarked PEG-b-PPS BCN against PLGA-NP as a nanocarrier platform for lipid antigens. Both MA-BCN and MA-PLGA were highly effective in activating both mouse (DN1) and human (M11) MA-specific T cells in vitro and inducing IFN-γ production (Figure 2A–D). In particular, MA-BCN were significantly better at activating MA-specific T cells compared to free MA at equivalent concentrations (Figure 2A, B and D). In comparison to MA-BCN, MA-PLGA was significantly more effective at stimulating mouse MA-specific T cells in vitro at lower concentrations. Interestingly, even in the absence of MA, PLGA-NP showed strong stimulation, particularly for M11 T cells. These results demonstrate that MA encapsulation within BCN enhances its ability to stimulate antigen-specific T cells and reveal a considerable background, and thus difficult to control, the stimulatory effect of blank PLGA-NP. In contrast, blank BCN showed little background immunostimulation (Burke et al., 2022), allowing a more controlled dose-dependent increase in T cell responses as the loaded MA concentration increased.
 
@@ -57,7 +69,7 @@ As PLGA has served as a component of a wide range of vaccine formulations, inclu
 
 We next tested the ability of MA-loaded and unloaded BCN and PLGA to stimulate DN1 T cells in vivo. Intranasal (IN) vaccination of hCD1Tg mice was followed by the adoptive transfer of DN1 T cells. Surprisingly, we found that vaccination with MA-BCN induced a significantly higher percentage of proliferation and activation in DN1 T cells than MA-PLGA in the draining lymph nodes (LN) and lungs at 1 week post-vaccination (Figure 2E–G). The extent of cell proliferation induced by MA-PLGA was not significantly different from that of blank PLGA (Figure 2F). Since MA-BCN effectively stimulated MA-specific T cells in vivo while MA-PLGA did not, we focused on further characterizing and assessing vaccination via solely MA-BCN formulations.
 
-## MA persists while Ag85B does not after vaccination with Ag85B-MA-BCN
+### MA persists while Ag85B does not after vaccination with Ag85B-MA-BCN
 
 Given the lack of knowledge regarding BCN and lipid antigen kinetics, it would be of interest to test whether delivered antigen could persist in the mouse weeks post-vaccination (Figure 3A). We switched from intranasal vaccination to intratracheal (IT) vaccination, as it allowed for the reliable delivery of a larger volume of the vaccine. We found that a significant proportion of the adoptively transferred DN1 T cells could proliferate and become activated in the LNs, lung, and spleen of MA-BCN-vaccinated mice 6 weeks post-vaccination (Figure 3B–D). This activation and proliferation were MA-specific, as no activation and proliferation of Ag85B-specific p25 Tg (p25) T cells were observed (Tamura et al., 2004).
 
@@ -71,21 +83,51 @@ Since BCN allows for the co-loading of lipid and protein antigens, we assessed t
 
 **Figure 4.:** (A) Dynamic light scattering (DLS) analysis of blank BCN and Ag85B-MA-BCN. (B–D) hCD1Tg mice were IT vaccinated with Ag85B-MA-BCN or BCN and CellTrace-labeled p25 and DN1 T cells were adoptively transferred the next day. After 1 week, T cell activation and proliferation were measured. (B) Representative FACS plots of p25 and DN1 T cells in the lymph nodes (LN). Percentage of proliferating (C) and CD44-expressing (D) p25 and DN1 T cells in the LN, lung, and spleen (N=4 or 5). (E–G) hCD1Tg mice were IT vaccinated with blank BCN or Ag85B-MA-BCN. 6 weeks later, CellTrace-labeled p25 and DN1 T cells were adoptively transferred, and T cell activation was measured after 1 week. (E) Representative FACS plots of p25 and DN1 T cells in the LN. (F) Percentage of proliferating p25 and DN1 T cells. (G) Percentage of CD44-expressing p25 and DN1 T cells in the LN and lung. (N=4). Data represented as mean ± SEM. Statistical analysis: two-way ANOVA. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## MA persistence was dependent on encapsulation but not route of delivery or delivery vector
+### MA persistence was dependent on encapsulation but not route of delivery or delivery vector
 
 To determine whether BCN encapsulation contributed to MA persistence, we designed an experiment that would allow direct comparison between MA-BCN and free MA. To account for their differential efficiency in stimulating DN1 T cells, we pulsed bone marrow-derived dendritic cells (BMDCs) from hCD1Tg mice with MA or MA-BCN at 10 μg/mL and 5 μg/mL MA concentration, respectively (Figure 5A). hCD1Tg mice were immunized with MA or MA-BCN-pulsed BMDCs at either 1 week or 6 weeks before the adoptive transfer of DN1 T cells, allowing comparison of short-term vs. long-term vaccination conditions. We found that while there were no significant differences in DN1 T cell activation and proliferation between mice vaccinated with free MA and MA-BCN pulsed BMDCs at 1 week post-vaccination, after 6 weeks, DN1 T cell response could only be detected in the MA-BCN vaccination condition (Figure 5B, C). Thus, BCN encapsulation contributed to the persistence of MA. We then tested whether the BCN structure could contribute to antigen persistence by comparing PEG-b-PPS BCNs to PEG-b-PPS MCs using a similar experimental setup (Figure 5—figure supplement 1A). We found that MA-BCN and MA-MC overall had similar ability to activate DN1 T cells in both short-term and long-term vaccination time points (Figure 5—figure supplement 1B, C). Thus, the structure of the encapsulating NP did not play a significant role in the antigen persistence of MA.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig5-v1.jpg)
+
+**Figure 5.:** hCD1Tg BMDCs were pulsed with MA-bicontinuous nanospheres (MA-BCN) or mycolic acid (MA) at concentrations of 5 mg/mL and 10 mg/mL, respectively. hCD1Tg mice were IT vaccinated with MA or MA-BCN pulsed bone marrow-derived dendritic cells (BMDCs) at 6 weeks or 1 week prior to the adoptive transfer of CellTrace-labeled DN1 T cells. T cell activation and proliferation were measured 1 week after adoptive transfer. (A) Experimental design. (B, C) Percentage of proliferating (B) and CD44-expressing (C) DN1 T cells in the lymph nodes (LN), lung, and spleen of vaccinated mice. N=4 per condition. hCD1Tg mice were vaccinated SC (subcutaneously) or IV (intravenously) with blank BCN, MA-BCN, or attenuated Mycobacterium tuberculosis (Mtb) strain and 6 weeks later CellTrace-labeled DN1 T cells were adoptively transferred. (D) Representative FACS plots of DN1 T cells in the LN of mice vaccinated with indicated conditions. (E) Percentage of proliferating DN1 T cells and (F) Percentage of CD44-expressing DN1 T cells in the LN and spleen of mice vaccinated with Blank-BCN (SC), MA-BCN (IV and SC), and attenuated Mtb. N=3–5 per condition. Data represented as mean ± SEM. Statistical analysis: two-way ANOVA. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** hCD1Tg mice were IT vaccinated with MA-BCN or MA-MC at 6 weeks or 1 week prior to the adoptive transfer of cell trace-stained DN1 T cells. T cell activation and proliferation were measured 1 week after adoptive transfer. (A) Experimental diagram. (B) Percentage of proliferating DN1 T cells in the LN, lung, and spleen. (C) Percentage of CD44-expressing DN1 T cells in the LN, lung, and spleen. N=3 or 4 per condition. Data represented as mean ± SEM. ns = not significant, *p<0.05.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** hCD1Tg were subcutaneous (SC) vaccinated with attenuated Mtb. (A) Bacterial burden in the spleen and lung were determined at 2- or 6 weeks post-vaccination. hCD1Tg mice were vaccinated with attenuated Mtb and after 6 weeks, CellTrace-labeled p25 T cells were adoptively transferred into the mice. After 1 week, T cell activation and proliferation were measured. (B) Representative FACS plots of in LN. (C) Percentage of proliferating P25 T cells in the lymph nodes (LN) and spleen. (D) Percentage of CD44-expressing P25 T cells in the LN and spleen (N=5).
+
 To investigate if the IT route of vaccination played a role in the development of antigen persistence, we tested intravenous (IV) and subcutaneous (SC) vaccination routes with MA-BCN. DN1 T cell activation and proliferation were detected at 6 weeks post-vaccination through both routes of vaccination (Figure 5D–F), suggesting that the antigen persistence is not unique to IT vaccination. To assess whether Mtb lipid antigen persistence could also be observed in mice vaccinated with an attenuated strain of Mtb, we vaccinated hCD1Tg mice SC with Mtb mc26206 strain and tested for the persistence of both Ag85B and MA after 6 weeks. The Mtb mc26206 strain displays less virulence in mouse studies than BCG but still confers long-term protection against virulent Mtb challenge equivalent to BCG (Sampson et al., 2004). We confirmed that no bacterial burden remained at the 6 weeks time point (Figure 5—figure supplement 2A). Similar to MA-BCN-vaccinated mice, DN1 T cells were activated and proliferated in the draining lymph nodes and spleen of mice vaccinated with the attenuated Mtb strain (Figure 5D–F). In line with our findings with BCN, no proliferation was seen in p25 T cells (Figure 5—figure supplement 2B–D). These results suggest that the incorporation of MA in a nanocarrier vaccine allows for the mimicry of the lipid antigen persistence induced by vaccination with an attenuated Mtb vaccine.
 
-## MA persists within alveolar macrophages in the lung
+### MA persists within alveolar macrophages in the lung
 
 To identify the location of antigen persistence, we determined the biodistribution of BCN after IT vaccination using BCN loaded with the hydrophobic dye DiD (DiD-BCN). Since DiD is a lipophilic dye which, like MA, stably loads into the BCN bilayers, we could track the localization of BCN without having to perform additional chemical modifications. We found that IT-administered DiD-BCN were located almost exclusively within the lung at all time points tested (4 hr, 24 hr, 48 hr, 6 days, and 6 weeks) (Figure 6A). We were able to detect fluorescence through both in vivo imaging system (IVIS) and flow cytometry at 6 weeks post-vaccination that was significantly above unvaccinated control (Figure 6A, B), despite DiD quickly losing fluorescence upon mixture into aqueous environments (Invitrogen, 2023), suggesting that some DiD-BCN structure remained intact at this time point. Flow cytometric analysis (Figure 6—figure supplement 1) revealed that DiD BCN was primarily found within alveolar macrophages (AMs) at both early and late time points with neutrophils and DCs showing some fluorescence at early time points (4 and 24 hr) (Figure 6C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig6-v1.jpg)
+
+**Figure 6.:** B6 or hCD1Tg mice were IT vaccinated with bicontinuous nanospheres (BCN) loaded with a hydrophobic fluorescent dye (DiD) at 6 weeks, 6 days, 48 hr, 24 hr, or 4 hr prior to the experiment. Lymph nodes (LN), lung, and spleen were analyzed using (A) In Vivo Imaging System (IVIS). Single-cell suspension was then obtained and presence of DiD BCN was quantified in (B) total lung, and (C) CD45- cells, neutrophils (Ly6G+), alveolar macrophages (CD11c+SiglecF+), DCs (CD11c+), monocytes (CD11b+CD11c-), B cells (CD19+), T cells (CD3+), NK cells (NK1.1+), eosinophils (CD11c-SiglecF+) by flow cytometry. hCD1Tg mice were IT vaccinated with either BCN or MA-BCN. After 6 weeks, alveolar macrophages were enriched from the lungs using anti-SiglecF. Enriched or flow-through cells were co-cultured with DN1 T cells in the presence or absence of hCD1Tg-expressing bone marrow-derived dendritic cells (BMDCs) for 48 hr, and DN1 T cells activation was measured. (D) Experimental design. (E) Percentage of CD25-expressing DN1 T cells. Data represented as mean ± SEM. Statistical analysis: two-way ANOVA. ns = not significant, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Lung single-cell suspension was gated as follows: CD45- cells, neutrophils (Ly6G+), alveolar macrophages (CD11c+SiglecF+), DCs (CD11c+), monocytes (CD11b+CD11c-), B cells (CD19+), T cells (CD3+), NK cells (NK1.1+), and eosinophils (CD11c-SiglecF+).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig6-figsupp2-v1.jpg)
+
 We next tested whether MA likewise persisted primarily within AMs. 6 weeks after vaccination, we enriched for AMs using a column-based magnetic cell isolation system containing SiglecF antibody, which is highly expressed in AMs and a small population of eosinophils in the lung (Figure 6D). We co-cultured enriched AMs or the flow through with or without hCD1Tg-expressing BMDCs and DN1 T cells (Figure 6—figure supplement 1). While both enriched AM and flow-through fractions from MA-BCN vaccinated mice co-culture with BMDCs could activate DN1 T cells (Figure 6E), co-culture with enriched AMs led to significantly higher DN1 T cell activation, suggesting AMs are the primary location of MA persistence. The ability of flow through to likewise lead to DN1 T cell activation suggests MA may also persist in other cell types or could be attributed to residual AMs in flow through. Furthermore, AMs could not themselves present MA to DN1 T cells, noted by the lack of T cell activation in the absence of BMDCs, suggesting that MA may be transferred from AMs to DCs for presentation. In fact, CD1b is not expressed on AMs (Felio et al., 2009; Barral and Brenner, 2007) and, therefore, the presence of CD1b-expressing DCs may be necessary both in vitro and in vivo for T cell activation to occur. These data indicate that MA-BCN mainly persists within AMs in the lung after IT vaccination and CD1b-expressing DCs are required for antigen presentation and activation of MA-specific T cells.
 
-## Vaccination leads to DN1 T cells differentiating into T follicular helper-like T cells
+### Vaccination leads to DN1 T cells differentiating into T follicular helper-like T cells
 
 To study the memory phenotype of DN1 T cells after MA-BCN vaccination, we constructed a mixed DN1 bone marrow (BM) chimera mouse model (DN1-hCD1Tg), since adoptively transferred DN1 T cells in unvaccinated mice cannot survive long-term (Figure 7A). After vaccination, the percent of CD44+ DN1 T cells in the blood increased quickly and remained high until the last time point of 40 days (Figure 7B). Various classical memory T cell subsets have been characterized 1 month after the initial antigen encounter, we, therefore, determined the DN1 T cell phenotype 6 weeks post-vaccination. We found that the most prevalent memory population within DN1 T cells were CD44+CD62L+, markers used to define central memory T cells, particularly in the LN (Figure 7C and Figure 7—figure supplement 1A). To characterize the memory DN1 T cells, we performed RNA-seq analysis on sorted CD44+CD62L+ (memory) and CD44-CD62L+ (naïve) DN1 T cells from LNs of MA-BCN vaccinated DN1-hCD1Tg BM chimeric mice. We found that memory and naïve DN1 T cells clustered separately after principal component analysis (PCA), despite these samples coming from the same animals (Figure 7—figure supplement 1B). A total of 995 differentially expressed genes (DEGs) were identified of which 542 upregulated and 453 downregulated in the memory subset (Figure 7—figure supplement 1C). Next, we determined which T cell population memory DN1 T cells most resembled. Toward this end, we obtained data from the ImmGen database (including terminally differentiated effector (Te), memory precursor (Tmp), central memory (Tcm), effector memory (Tem), regulatory (Treg))42, and two additional publications (follicular helper (Tfh)43, exhausted (Texh)44) and compared the respective DEG lists. Using PCA, we found that memory DN1 T cells clustered most closely to Tfh, Treg, and Texh (Figure 7D) and when this subset was isolated, most closely to Tfh cells (Figure 7E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig7-v1.jpg)
+
+**Figure 7.:** Mixed bone marrow chimeric mice were created by adoptive transfer of DN1 bone marrow and congenic CD45.1 hCD1Tg bone marrow to irradiated hCD1Tg mice. After 5weeks, mice were vaccinated with either MA-BCN or PBS, and DN1 surface marker expression was monitored in the blood and in organs at 6weeks. (A) Experimental design. (B) Percent CD44+ DN1 T cells in the blood at various time points post-vaccination. (C) Percent CD44+CD62L+ DN1 T cells in indicated organs at 6weeks post-vaccination. Memory (CD44+CD62L+) and naïve (CD44-CD62L+) DN1 T cells were sorted from MA-BCN vaccinated hCD1Tg-DN1 BM chimeras at 6weeks post-vaccination and subjected to RNA-seq analysis. N=3 per condition. (D, E) PCA of log fold change of gene expression for each T cell subset was performed relative to internal naïve T cell control. (F) Relative expression of key TFH cell and differentially expressed genes (DEGs) in memory subset. (G) Representative FACS plots of DN1 T cells in the lymph nodes (LN) of mice. Percentage of (H) CXCR5+PD1+ or (J) KI67+ DN1 T cells DN1 T cells in LN, lung, and spleen. N=3–5 per condition. (I) Gene enrichment analysis of upregulated DEGs was performed using Metascape. Data represented as mean ± SEM. Statistical analysis: two-way ANOVA. *p<0.05, **p<0.01, ****p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87431/elife-87431-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Memory (CD44+CD62L+) and naïve (CD44-CD62L+) DN1 T cells were sorted from lymph nodes (LNs) of MA-bicontinuous nanospheres (MA-BCN) vaccinated hCD1Tg-DN1 BM chimeras at 6 weeks post-vaccination and subjected to RNA-seq analysis (A) Representative figure of CD44 and CD62L expression in DN1 T cells in LN, lung, and spleen. (B) Mycolic acid (MA) plot representing memory vs naïve analysis. (C) Principal component analysis (PCA) of normalized counts. N=3 per condition.
 
 Within the DEGs, we noted upregulation of key Tfh cell transcription factors BCL6 and TCF1 (Tcf7), chemokines CXCR5 and CXCR4, and surface receptor ICOS, important for Tfh cell migration into the germinal center, and adaptor protein SAP (Sh2d1a), important for T cell-dependent B cell immunity (Figure 7F; Ma et al., 2021). Inhibitory receptors PD-1 (Pdcd1), TIGIT, CTLA4, and transcription factor EOMES, which are known to be expressed on Tfh cells were also upregulated. In addition, we observed downregulation of transcription factor KLF2, which can inhibit Tfh cell differentiation, and CCR7 and IL-7R, receptors known to have decreased expression in TFH cells. Consistent with our transcriptome analysis, we found an increased percentage of CXCR5+PD-1+ DN1 T cells in MA-BCN vaccinated mice 6 weeks post-immunization (Figure 7G, H). Both our transcriptomic and experimental data highlighted that memory, but not naïve DN1 T cells, were proliferating, given the enrichment for the mitotic cell cycle process (Figure 7I) and increased KI67+ percentage within this population (Figure 7J). MA-BCN vaccination thus led to the differentiation of DN1 T cells into a proliferating Tfh-like T cell population.
 
@@ -115,74 +157,74 @@ While the persistence of protein antigen has been shown to improve the quality o
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 This study was carried out in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. The protocol was approved by the Institutional Animal Care and Use Committee of Northwestern University (Protocol number: IS000011717).
 
-## Poly (ethylene glycol)-block-poly (propylene sulfide) polymer synthesis
+### Poly (ethylene glycol)-block-poly (propylene sulfide) polymer synthesis
 
 Poly (ethylene glycol)17-block-poly-(propylene sulfide)75 (PEG17-b-PPS75) copolymer was synthesized as previously reported (Allen et al., 2018; Frey, 2021). Briefly, monomethoxy PEG (molecular weight = 750 Da) was functionalized with mesyl chloride and substituted with thioacetate to produce a PEG acetate initiator for the polymerization of PPS.
 
-## Bicontinuous nanosphere fabrication via flash nanoprecipitation
+### Bicontinuous nanosphere fabrication via flash nanoprecipitation
 
 BCN was produced using the FNP technique as previously described (Allen et al., 2018). In brief, PEG17-b-PPS75 BCN polymer and any hydrophobic cargo were dissolved in THF and loaded onto a syringe. The hydrophilic cargo was loaded onto a separate syringe, and both impinged against one another through the confined impingement mixer into a scintillation vial. The vial was placed in a vacuum desiccator overnight to remove the organic solvent. NPs were filtered through the LH-20 column with PBS as an eluent and suspended in PBS for later use. A natural mixture of Mtb MA consists of α-, keto-, and methoxy forms of MA with chain lengths of 72–86 carbon atoms was obtained from Sigma (M4537, Sigma-Aldrich, St. Louis, MO) (Van Rhijn et al., 2017). MA encapsulation efficiency was analyzed using coumarin derivatization as previously described (Shang et al., 2018). MA was loaded at a concentration of 100 µg/mL of total BCN formulation and DiD was loaded at 5 µg/mL of total BCN formulation. MA loading capacity in BCNs was 2%. To measure the encapsulation efficiency of Ag85B, Ag85B-MA-BCN was centrifuged at 10,000 g for 10 min. The supernatant was collected and concentrated using Amicon Ultra-4 10 K centrifugal filter devices. To determine the unencapsulated protein concentration, the supernatant was incubated with Pierce BCA Protein assay reagent following the manufacturer protocol, and the absorbance was measured at 660 nm using a SpectraMax M3 multi-mode microplate reader (Molecular Devices, LLC). The percentage encapsulation efficiency was calculated as a percent of encapsulated protein to the total amount of protein added. Ag85B was encapsulated at a concentration of 140 µg/mL and loading capacity was found to be 2.88%.
 
-## Poly lactic-co-glycolic acid nanoparticle (NP) fabrication
+### Poly lactic-co-glycolic acid nanoparticle (NP) fabrication
 
 PLGA-NP was prepared by the Oil-in-Water single emulsion method. Briefly, the PLGA (20 mg in 800 µL dichloromethane) organic phase was emulsified using an ultrasonic processor with an aqueous phase containing 2 mL of polyvinyl alcohol (PVA) solution (2.5% w/v) to form an emulsion. The emulsion was then added dropwise into 4 mL of stirring 0.5% w/v PVA solution at room temperature to evaporate the organic solvent. NPs were collected after 4 hr of stirring followed by centrifugation at 10,000 x g for 10 min. After centrifugation, NPs were washed twice with cold water to remove residual PVA and redispersed in PBS. Hydrophilic (Texas red-Dextran) or hydrophobic (MA) loading was performed by adding the payloads to the aqueous and organic phases, respectively.
 
-## Nanocarrier characterization
+### Nanocarrier characterization
 
 The nanocarrier size (z-average diameter) and polydispersity were measured using dynamic light scattering (DLS) using a Nano 300 ZS Zetasizer (Malvern Panalytical, Malvern, U.K.). BCN and PLGA morphology was visualized with cryogenic transmission electron microscopy (cryo-TEM) as previously detailed (Shang et al., 2018). Transmission electron microscopy (TEM) was performed to image BCN using uranyl acetate as a negative stain as previously reported (Bobbala et al., 2020). BCN aggregate structure and internal morphology were characterized with SAXS. These studies were performed at the DuPont-Northwestern-Dow Collaborative Access Team beamline at Argonne National Laboratory’s Advanced Photon Source with 10 keV (wavelength λ=1.24 Å) collimated X-rays, as described previously (Allen et al., 2018).
 
-## Confocal imaging
+### Confocal imaging
 
 Confocal images of RAW 264.7 macrophages stained with lysosomal dye Lysotracker (green) and NucBlue stain (blue) following incubation with Texas Red-labeled PLGA-NP and BCN (red) for 8 hr. The cells were then imaged within a humidified chamber using a 63 X oil-immersion objective on an SP5 Leica Confocal Microscope using HyD detectors and lasers. Data analysis was performed using ImageJ software.
 
-## Mouse strains
+### Mouse strains
 
 Human CD1 transgenic mice (hCD1Tg) in C57BL/6 background or MHC II-deficient background (Felio et al., 2009) and CD1b-restricted MA-specific TCR transgenic mice on Rag-/- background (DN1Tg/hCD1Tg/Rag-/-) (Zhao et al., 2015) were generated in our lab as previously described. P25-specific TCR transgenic mice (Jackson lab, strain #:011005) were crossed onto Rag-/- background. Both males and females were used.
 
-## Antibodies and flow cytometry
+### Antibodies and flow cytometry
 
 For cell surface staining, cells were pre-incubated with 2.4G2 Fcγ RII/RIII blocking mAb for 15 min and then stained with the appropriate combinations of mAbs diluted in HBSS + 2% FBS for 30 min at 4 °C. Cells were analyzed on a BD FACS CantoII, or Cytek Aurora Spectral Cytometer, and data were processed with FlowJo software (TreeStar). The complete list of antibodies use is as follows: anti-human Vβ5.1 (LC4, Invitrogen), anti-TCRβ (H57-597, BioLegend), anti-CD44 (IM7, BioLegend), anti-Vβ11 (KT11, BioLegend), anti-CD45.2 (104, BioLegend), anti-CD45.1 (A20, BioLegend), anti-SiglecF (E50-2440, BD Bioscience), anti-CD45 (30-F11, BioLegend), anti-CD11c (N418, BioLegend), anti-CD11b (M1/70, BioLegend), anti-Ly6G (1A8, BioLegend), anti-CD19 (6D5, BioLegend), anti-NK1.1 (PK136, BioLegend), anti-CD3 (17A2, BioLegend), Zombie Red (BioLegend), anti-mouse CD185/CXCR5 (L138D7, Biolegend), anti-mouse CD279/PD-1 (29 F.1A12, Biolegend), and anti-Ki67 (SolA15, Invitrogen).
 
-## In vitro nanoparticle and lipid titration with MA-specific DN1 T cells
+### In vitro nanoparticle and lipid titration with MA-specific DN1 T cells
 
 Nanoparticle and lipid titrations were performed as previously described (Shang et al., 2018). In brief, hCD1Tg MHC II-/- BMDCs were pulsed with varying quantities of nanoparticles of sonicated MA and then co-cultured for 48 hr with DN1 T cells isolated from lymph nodes (axial, brachial, submandibular, inguinal) of DN1Tg/hCD1Tg/Rag-/- mice. The supernatant was used for IFN-γ enzyme-linked immunosorbent assay (ELISA) performed as described previously (Shang et al., 2018) and cells were stained for activation.
 
-## In vitro nanoparticle and lipid titration with human cells via ELISPOT assay
+### In vitro nanoparticle and lipid titration with human cells via ELISPOT assay
 
 Hydrophobic polyvinylidene fluoride 96-well plates (Millipore, Bedford, MA) were coated with anti-human IFN-γ mAb 1-D1K (Mabtech, Cincinnati, OH) diluted 1:400 in PBS (Gibco, Waltham, MA) and incubated at 4 °C overnight. The following day, mAb was removed and each plate was washed and incubated at room temperature for 2 hr in the presence of media. Human monocyte-derived dendritic cells and MA-specific M11 T cells were seeded 50,000 cells and 2000 cells per well, respectively, together with serially diluted MA and NPs. After 16 hr incubation, plates were washed and incubated with biotinylated anti-human IFN-γ (7-B6-1), diluted 1:3000 in PBS + 0.5% FBS, for 4 hr. Plates were then washed with PBS 5 times and incubated for 2 hr with ExtrAvidin-Alkaline phosphatase diluted 1:1000 in PBS + 0.5% FBS. Spots were visualized after incubation with the BCIP/NBT substrate for up to 20 minand then imaged with ImmunoSpot reader v.2.0.
 
-## Mouse vaccination
+### Mouse vaccination
 
 For both IN and IT vaccination, mice were anesthetized using inhaled isoflurane. For IN vaccination, 25 µL of liquid was administered at the nostrils of the mice for a total of 1 μg of MA per mouse. For IT vaccination, mice were administered 25 or 50 μL of liquid for a total of 2.5 μg of MA with or without 2.0 μg of Ag85B. For BMDC vaccinations, hCD1Tg BMDCs were cultured in GM-CSF and IL-4 for 5 days (Li et al., 2011) and pulsed with MA-BCN (5 μg/mL of MA) or free MA (10 μg/mL of MA) for 24 hr. Cells were washed and resuspended in PBS and IT vaccinated at a dose of 1 × 106 BMDCs/mouse. Intravenous vaccination was administered by tail vein injection. Subcutaneous vaccination was administered between the shoulders over the neck portion of the mouse.
 
-## Vaccination with attenuated Mtb
+### Vaccination with attenuated Mtb
 
 Attenuated Mtb strain (H37Rv ΔpanCD ΔleuCD referred to as mc2 6206) was kindly provided by Jacobs’ Laboratory at Albert Einstein College of Medicine. Bacteria were grown as previously described in supplemented Middlebrook 7H9 media (Sampson et al., 2004; Larsen et al., 2009). Mice were vaccinated subcutaneously with 1 × 106 CFU in 100 μL of PBS. Mycobacterial burden quantification was performed by plating serial dilutions of lung or spleen homogenate on Middlebrook 7H11 agar plates (Sampson et al., 2004; Larsen et al., 2009).
 
-## T cell Adoptive transfer and cell preparation
+### T cell Adoptive transfer and cell preparation
 
 DN1 or p25 T cells were isolated from lymph nodes of DN1Tg/hCD1Tg/Rag-/- or P25Tg/Rag-/- mice, respectively. Cells were labeled with CellTrace Violet reagent (Invitrogen) as per manufacturer’s instructions and 3–5 × 106 cells were injected into hCD1Tg mice either 1 day before vaccination (short term) or 6 weeks post-vaccination (long term). On day 7 post-adoptive transfer, draining lymph nodes (axial, brachial, mediastinal), lung, and spleen were obtained. Single-cell suspensions were prepared by mechanical disruption in HBSS/2% FBS. The lung was digested with collagenase IV (1 mg/ml; Sigma-Aldrich) and DNase I (30 µg/ml; Sigma-Aldrich) for 30 min at 37 °C before the disruption.
 
-## Biodistribution imaging
+### Biodistribution imaging
 
 BCN was loaded with DiD dye (Thermo Fisher) and administered to mice IT at 4 hr, 24 hr, 48 hr, 6 days, and 6 weeks prior to the final time point, at which all mice were sacrificed and analyzed together. Lung, spleen, and draining lymph nodes were harvested and imaged using a near-IR in vivo Imaging System (IVIS; Center for Advanced Molecular Imaging, Northwestern University). The single-cell suspension was then prepared from indicated organs and cells were stained for flow cytometric analysis.
 
-## Alveolar macrophage enrichment and T cell co-culture
+### Alveolar macrophage enrichment and T cell co-culture
 
 hCD1Tg mice were immunized IT with either BCN or MA-BCN (2.5 μg of MA/mouse). 6 weeks later, lungs were isolated and single-cell suspension was stained with anti-SiglecF-PE (E50-2440, BD Bioscience). SiglecF-positive cells were enriched using an anti-PE MultiSort Kit (Miltenyi Biotec). 1 × 105 flow through and AM-enriched fractions were co-cultured with 1x105 hCD1Tg BMDCs and 3 × 105 DN1 T cells for 48 hr and cells were stained for the expression of activation markers.
 
-## Generation and vaccination of BM chimeras
+### Generation and vaccination of BM chimeras
 
 Bone marrow cells from DN1Tg/hCD1Tg/Rag-/- (CD45.2) and hCD1Tg mice (CD45.1) were depleted of mature T cells using anti-Thy-1.2 (AT83.A-6) plus rabbit complement (Cedarlane Laboratories). Equal numbers of cells (5 × 106) were adoptively transferred into hCD1Tg (CD45.1) mice irradiated with 900 rads. After 6 weeks, BM chimeric mice were intratracheally vaccinated with either 2.5 μg of MA in MA-BCN or an equivalent volume of PBS, and the activation status of DN1 T cells were monitored in the blood 1–2 times per week until experiment completion.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 CD44+CD62L+ and CD44-CD62L+ DN1 T cells were sorted from LNs of DN1-hCD1Tg BM chimera mice vaccinated with MA-BCN at 6 weeks post-vaccination by BD FACS Aria with purity >98%. RNA was extracted with RNAeasy mini kit (Qiagen). Libraries were generated by using the Illumina Truseq preparation kit and sequenced on HiSeq4000. Reads were analyzed with the Ceto pipeline (Bartom et al., 2022) using STAR and HTseq for alignment on the mm10 mouse genome and reading counting, as described previously (Weng et al., 2021). Paired differential expression analysis was performed using DESeq2 to account for original mouse sourcing (Love et al., 2014). All downstream analysis was performed in R and figures were generated using ggplot. Gene enrichment analysis was performed using Metascape (Zhou et al., 2019). Comparisons to other T cell profiles were performed using raw transcriptome data from the ImmGen database (Yoshida et al., 2019), and two additional publications for follicular helper (TFH) (Lahmann et al., 2019), exhausted (Texh) (Man et al., 2017). Analysis was performed as described above to obtain gene expression fold change values relative to internal naïve conditions.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism software 9 (GraphPad Software, Inc). Multi-group comparisons were done using two-way analysis of variance (ANOVA) with significance determined by Tukey’s multiple comparisons. Where appropriate, outliers were identified through Grubbs method with alpha = 0.05. Statistically significance denoted as ns = not significant, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.

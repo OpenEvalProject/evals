@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.40698.001 Intergroup conflict contributes to human discrimination and violence, but persists because individuals make costly contributions to their group’s fighting capacity. Yet how group members effectively coordinate their contributions during intergroup conflict remains poorly understood. Here we examine the role of oxytocin for (the coordination of) contributions to group attack or defense in a multi-round, real-time feedback economic contest. In a double-blind placebo-controlled study with N=480 males in an Intergroup Attacker-Defender contest game, we found that oxytocin reduced contributions to attack and over time increased attacker’s within-group coordination of contributions. However, rather than becoming peaceful, attackers given oxytocin better tracked their rival’s historical defense and coordinated their contributions into well-timed and hence more profitable attacks. Our results reveal coordination of contributions as a critical component of successful attacks and subscribe to the possibility that oxytocin enables individuals to contribute to in-group efficiency and prosperity even when doing so implies outsiders are excluded or harmed. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Intergroup conflict contributes to human discrimination and violence, but persists because individuals make costly contributions to their group’s fighting capacity. Yet how group members effectively coordinate their contributions during intergroup conflict remains poorly understood. Here we examine the role of oxytocin for (the coordination of) contributions to group attack or defense in a multi-round, real-time feedback economic contest. In a double-blind placebo-controlled study with N=480 males in an Intergroup Attacker-Defender contest game, we found that oxytocin reduced contributions to attack and over time increased attacker’s within-group coordination of contributions. However, rather than becoming peaceful, attackers given oxytocin better tracked their rival’s historical defense and coordinated their contributions into well-timed and hence more profitable attacks. Our results reveal coordination of contributions as a critical component of successful attacks and subscribe to the possibility that oxytocin enables individuals to contribute to in-group efficiency and prosperity even when doing so implies outsiders are excluded or harmed.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -39,29 +39,125 @@ We examined these possibilities using a dynamic, fully incentivized Intergroup A
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig2-v3.jpg)
 
+**Table 1.**
+ Payoff matrix of one-round IADC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Role</th>
+      <th rowspan="3">Participant</th>
+      <th rowspan="3">Initial endowment (MU)</th>
+      <th rowspan="3">Individual contribution (Ii)</th>
+      <th rowspan="3">Group pool (G)</th>
+      <th colspan="3">Payment</th>
+    </tr>
+    <tr>
+      <th>Attackers lose GAttacker   ≤ GDefender</th>
+      <th colspan="2">Attackers win GAttacker &gt; GDefender</th>
+    </tr>
+    <tr>
+      <th>Leftover</th>
+      <th>Leftover</th>
+      <th>Spoil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Attack</td>
+      <td>Attacker-1</td>
+      <td>20</td>
+      <td>IAttacker-1</td>
+      <td rowspan="3">GAttacker</td>
+      <td>20 − IAttacker-1</td>
+      <td>20 − IAttacker-1</td>
+      <td>(60 − GDefender)/3</td>
+    </tr>
+    <tr>
+      <td>Attacker-2</td>
+      <td>20</td>
+      <td>IAttacker-2</td>
+      <td>20 − IAttacker-2</td>
+      <td>20 − IAttacker-2</td>
+      <td>(60 − GDefender)/3</td>
+    </tr>
+    <tr>
+      <td>Attacker-3</td>
+      <td>20</td>
+      <td>IAttacker-3</td>
+      <td>20 − IAttacker-3</td>
+      <td>20 − IAttacker-3</td>
+      <td>(60 − GDefender)/3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Defend</td>
+      <td>Defender-1</td>
+      <td>20</td>
+      <td>IDefender-1</td>
+      <td rowspan="3">GDefender</td>
+      <td>20 − IDefender-1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Defender-2</td>
+      <td>20</td>
+      <td>IDefender-2</td>
+      <td>20 − IDefender-2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Defender-3</td>
+      <td>20</td>
+      <td>IDefender-3</td>
+      <td>20 − IDefender-3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table note: For each round, each individual received an initial endowment of 20 MUs (Monetary Units).Each individual decided the amount (Ii , 0 ≤ Ii ≤ 20) to the group’s pool G (0 ≤ G ≤ 60, GAttacker = IAttacker-1+IAttacker-2+IAttacker-3, GDefender = IDefender-1+IDefender-2+IDefender-3). When GAttacker ≤GDefender, attackers failed and defenders survived and all six individuals kept their remaining endowment (leftovers, 20 – Ii). When GAttacker >GDefender, defenders failed and left with 0. The attackers won and took away defenders’ remaining MU (spoils from winning, 60 – GDefender), which were divided equally among attacker group members (each attacker: (60 – GDefender)/3) and added to their remaining endowments (20 – IAttacker-i)._
+
 The sequential decision-making protocol acts as a ‘coordination device’ that facilitates behavioral coordination within groups (De Dreu et al., 2016a; Gavrilets and Fortunato, 2014; Hermalin, 1998). This treatment thus provides a benchmark to compare groups in the simultaneous decision-protocol who lack an explicit coordination mechanism and have to find other means—such as a shared social norm or the rival’s past defense — to coordinate individual contributions into effective joint action (De Dreu et al., 2016a). We operationalized within-group coordination as behavioral alignment of contribution to the group, indicated by the variance in contributions to group fighting, with lower group-level variance reflecting better coordination. We expected that effects of oxytocin on group coordination would emerge especially under simultaneous rather than sequential decision-making.
 
-Before examining within-group coordination, we examined treatment effects on contributions to group pool. Individual contributions were averaged across the three members within each three-person group, and submitted to a 2 (Treatment: Oxytocin vs. Placebo) × 2 (Role: Attack vs. Defense) × 2 (Procedure: Simultaneous vs. Sequential) × 15 (Rounds) mixed-model Analysis of Variance (ANOVA) with Treatment between-sessions. Individuals contributed more under sequential than simultaneous decision-making (M ± SE = 6.89 ± 0.20 vs. 6.47 ± 0.24; F(1, 78) = 5.109, p = 0.027, η2 = 0.061), and somewhat less when given oxytocin rather than placebo (M ± SE = 6.28 ± 0.27 vs. 7.08 ± 0.30; F(1, 78) = 3.719, p = 0.057, η2 = 0.046; marginal significance). Figure 3A showed higher contributions to in-group defense than to out-group attack, especially in earlier rounds (Role, F(1, 78) = 287.903, p < 0.001; η2 = 0.787; Role × Round, F(14, 65) = 4.529, p < 0.001, η2 = 0.494).
+Before examining within-group coordination, we examined treatment effects on contributions to group pool. Individual contributions were averaged across the three members within each three-person group, and submitted to a 2 (Treatment: Oxytocin vs. Placebo) $\times$ 2 (Role: Attack vs. Defense) $\times$ 2 (Procedure: Simultaneous vs. Sequential) $\times$ 15 (Rounds) mixed-model Analysis of Variance (ANOVA) with Treatment between-sessions. Individuals contributed more under sequential than simultaneous decision-making (M ± SE = 6.89 ± 0.20 vs. 6.47 ± 0.24; F(1, 78) = 5.109, p = 0.027, η2 = 0.061), and somewhat less when given oxytocin rather than placebo (M ± SE = 6.28 ± 0.27 vs. 7.08 ± 0.30; F(1, 78) = 3.719, p = 0.057, η2 = 0.046; marginal significance). Figure 3A showed higher contributions to in-group defense than to out-group attack, especially in earlier rounds (Role, F(1, 78) = 287.903, p < 0.001; η2 = 0.787; Role $\times$ Round, F(14, 65) = 4.529, p < 0.001, η2 = 0.494).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig3-v3.jpg)
 
 **Figure 3.:** (A) Attackers contribute less than defenders, especially in early rounds (range 0–20). Curves were smoothed with a moving average window of three investment rounds. (B) Giving individuals oxytocin rather than placebo increases the number of non-contributing members in attacker groups especially under simultaneous decision-making (with 0–3 members per round across 15 rounds; range 0–45; displayed M ± 1 SE). Connectors indicate significant difference, with *p<0.05.
 
-Treatment effects also emerged when we examined the number of non-contributors. There were more non-contributors in attacker compared to defender groups (M ± SE = 20.23 ± 0.90 vs. 4.25 ± 0.44; F(1, 78) = 408.489, p < 0.001; η2 = 0.840), and more non-contributors in groups given oxytocin than placebo (M ± SE = 13.46 ± 0.90 vs. 11.01 ± 0.75; F(1,78) = 4.345, p = 0.040; η2 = 0.053). Crucially, oxytocin increased the number of non-contributors in attacker groups but not in defender groups (Role × Treatment, F(1, 78) = 5.043, p = 0.028, η2 = 0.061, Figure 3B). This Role × Treatment effect is especially true when decisions were made simultaneously (F(1, 78) = 5.712, p = 0.019, η2 = 0.068) but less so when decisions were made sequentially (F(1, 78) = 2.143, p = 0.147; η2 = 0.027). We then examined participants’ decision time when deciding to (not) contribute, we showed that individuals in attacker groups made their decisions to not contribute faster than to contribute (F(1, 78) =137.679, p < 0.001, η2 = 0.641). Oxytocin increased the speed with which individuals in attacker groups decided to not contribute (Treatment × Contribute: F(1, 77) = 4.857, p = 0.031; η2 = 0.059, Figure 4).
+Treatment effects also emerged when we examined the number of non-contributors. There were more non-contributors in attacker compared to defender groups (M ± SE = 20.23 ± 0.90 vs. 4.25 ± 0.44; F(1, 78) = 408.489, p < 0.001; η2 = 0.840), and more non-contributors in groups given oxytocin than placebo (M ± SE = 13.46 ± 0.90 vs. 11.01 ± 0.75; F(1,78) = 4.345, p = 0.040; η2 = 0.053). Crucially, oxytocin increased the number of non-contributors in attacker groups but not in defender groups (Role $\times$ Treatment, F(1, 78) = 5.043, p = 0.028, η2 = 0.061, Figure 3B). This Role $\times$ Treatment effect is especially true when decisions were made simultaneously (F(1, 78) = 5.712, p = 0.019, η2 = 0.068) but less so when decisions were made sequentially (F(1, 78) = 2.143, p = 0.147; η2 = 0.027). We then examined participants’ decision time when deciding to (not) contribute, we showed that individuals in attacker groups made their decisions to not contribute faster than to contribute (F(1, 78) =137.679, p < 0.001, η2 = 0.641). Oxytocin increased the speed with which individuals in attacker groups decided to not contribute (Treatment $\times$ Contribute: F(1, 77) = 4.857, p = 0.031; η2 = 0.059, Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig4-v3.jpg)
 
 **Figure 4.:** Oxytocin increased the speed with which attackers made their decisions to not contribute. Connectors indicate significant difference, with *p<0.05.
 
-Next, we analyzed group-level coordination operationalized as the within-group variance in contributions, with lower variance indicating stronger coordination (De Dreu et al., 2016a). First, there was a Procedure × Role interaction (F(1, 78) = 101.978, p < 0.001, η2 = 0.567) showing that sequential decision-protocol facilitated coordination for attack (F(1, 78) = 77.852, p < 0.001, η2 = 0.500) and, unexpectedly, reduced coordination for defense (F(1, 78) = 39.268, p < 0.001, η2 = 0.335). Importantly, as predicted, oxytocin facilitated group-level coordination (i.e. reduced within-group variance in contributions) of out-group attack but not of in-group defense, especially in earlier rounds (Role × Treatment × Round, F(14, 1092) = 1.753, p = 0.041, η2 = 0.022; Figure 5A; Figure 5—figure supplement 1 for similar results of another index of coordination).
+Next, we analyzed group-level coordination operationalized as the within-group variance in contributions, with lower variance indicating stronger coordination (De Dreu et al., 2016a). First, there was a Procedure $\times$ Role interaction (F(1, 78) = 101.978, p < 0.001, η2 = 0.567) showing that sequential decision-protocol facilitated coordination for attack (F(1, 78) = 77.852, p < 0.001, η2 = 0.500) and, unexpectedly, reduced coordination for defense (F(1, 78) = 39.268, p < 0.001, η2 = 0.335). Importantly, as predicted, oxytocin facilitated group-level coordination (i.e. reduced within-group variance in contributions) of out-group attack but not of in-group defense, especially in earlier rounds (Role $\times$ Treatment $\times$ Round, F(14, 1092) = 1.753, p = 0.041, η2 = 0.022; Figure 5A; Figure 5—figure supplement 1 for similar results of another index of coordination).
 
 To examine what strategy attackers given oxytocin coordinated on, we first examined the contest outcomes. As noted, oxytocin may enable groups to coordinate on a peaceful ‘no-attack strategy’, in which case we should find (1) lower victories in attacker groups given oxytocin rather than placebo, (2) the oxytocin effect on the number of non-contributing attackers should not differ when attacks succeed or fail, and (3) no effect of oxytocin on tracking the rival’s defense history. This was not the case. First, the number of victories was similar in attacker groups given oxytocin (M ± SE: 24.8 ± 1.8%) and placebo (M ± SE: 26.6 ± 1.6%), (F(1, 78)=0.572, p=0.452; η2 = 0.007). Thus, rather than making groups coordinate on a peaceful no-attack strategy, oxytocin may enable groups to coordinate on attacking at the right moment with the right force. Indeed, analyses of the spoils and leftovers showed that groups given oxytocin rather than placebo had higher leftovers when attacks failed (t(78) = 2.609, p=0.011, Cohen’s d = 0.581, 95% Confidence Interval (CI), 0.232 to 1.76, Figure 5B) and somewhat higher spoils when attacks were successful (t(74) = 1.819, p=0.073, Cohen’s d = 0.419, 95% CI, −0.086 to 1.888, marginal significance, Figure 5C). To illustrate the increased efficiency of attack under oxytocin, attackers’ contribution and payment under the four conditions (i.e. Simultaneous/Sequential x Oxytocin/Placebo) were plotted in Figure 5D using a bootstrapping technique (Davison and Hinkley, 1977). Specifically, a bootstrapped dataset with sample size N = 40 was resampled with replacement separately for each of the four conditions. The mean contribution and payment of the bootstrapped sample was then calculated and saved as a new data point. For each condition, this procedure was repeated for 1000 times to represent the population information. As illustrated in Figure 5D, oxytocin decreased contributions to attack (a shift toward less contribution) but increased payment (a shift toward more payment). The distribution of attacker groups under oxytocin and placebo in a space defined by the two vectors (contribution and payment) indicates a clear separation of oxytocin and placebo treatments (especially when decisions were made simultaneously, that is black dots vs. grey dots).
 
-Second, we conducted an ANOVA on the average number of non-contributing attackers, with Treatment (Oxytocin vs. Placebo) as a between-subjects factor, Procedure (Simultaneous vs. Sequential) and Success (Success vs. Failure) as within-subjects factors. There were more non-contributing attackers when attack failed than succeeded (Failure vs. Success: M ± SE = 1.68 ± 0.60 vs. 0.37 ± 0.05, F (1, 74) = 636.941, p < 0.001; η2 = 0.891). Interestingly, we found a significant Treatment × Success interaction on the number of non-contributing attackers (F (1, 74) = 6.345, p = 0.014; η2 = 0.075, Figure 5E): Oxytocin increased the number of non-contributing attackers only in failed rounds (Oxytocin vs. Placebo: M ± SE = 1.84 ± 0.09 vs. 1.52 ± 0.09; F (1, 74) = 7.036; p = 0.010; η2 = 0.083) but not in successful attacks (Oxytocin vs. Placebo: M ± SE = 0.34 ± 0.06 vs. 0.40 ± 0.06; F (1, 74) = 0.448; p = 0.505; η2 = 0.006).
+![Figure 5.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig5-v3.jpg)
 
-Third, we examined how attacker groups collectively identified when to attack by creating a past defense parameter α (average defender group’s investment in the last two rounds, that is (Dj-1+Dj-2)/2 on round j) and regressed attacker group’s investments onto α (attack increased when defender groups were vulnerable rather than strong, as indicated by α approaching -1). It showed that attacker groups given oxytocin tracked their rival’s past defense and attacked especially when defenders appeared more rather than less vulnerable (i.e. attack regressed negatively on rival’s historical defense). Specifically, when decisions were made simultaneously, attack regressed more strongly on α when groups received oxytocin (M ± SE: -0.30 ± 0.05) rather than placebo (M ± SE: -0.042 ± 0.098; t(78) = -2.334; p = 0.022, Cohen’s d = -0.522, 95% CI, -0.482 to -0.038), and under oxytocin but not placebo, the regression on α was also stronger in simultaneous rather than sequential decision-making (Treatment × Procedure interaction, F(1, 78) = 8.312, p = 0.005, η2 = 0.097, Figure 6A).
+**Figure 5.:** (A) Giving individuals oxytocin rather than placebo enables better coordination (lower within-group variance) in attacker groups, especially in early rounds. Curves were smoothed with a moving average window of three investment rounds. (B/C) Giving attackers oxytocin rather than placebo increases their leftovers when not winning the conflict (B) and spoils from winning conflicts (C) (N = 76 because four attacker groups never won). (D) Bootstrapping illustration of the oxytocin shifts on the contribution and payment. Bivariate distributions of 1000 bootstrapped sample means for each condition (Treatment x Procedure) plotted against the contribution and payment. (E) Oxytocin increased non-contributing attackers only in failed attacks but not in successful attacks. Connectors indicate significant difference, with † p < 0.10; *p < 0.05; **p < 0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig5-figsupp1-v3.jpg)
+
+Second, we conducted an ANOVA on the average number of non-contributing attackers, with Treatment (Oxytocin vs. Placebo) as a between-subjects factor, Procedure (Simultaneous vs. Sequential) and Success (Success vs. Failure) as within-subjects factors. There were more non-contributing attackers when attack failed than succeeded (Failure vs. Success: M ± SE = 1.68 ± 0.60 vs. 0.37 ± 0.05, F (1, 74) = 636.941, p < 0.001; η2 = 0.891). Interestingly, we found a significant Treatment $\times$ Success interaction on the number of non-contributing attackers (F (1, 74) = 6.345, p = 0.014; η2 = 0.075, Figure 5E): Oxytocin increased the number of non-contributing attackers only in failed rounds (Oxytocin vs. Placebo: M ± SE = 1.84 ± 0.09 vs. 1.52 ± 0.09; F (1, 74) = 7.036; p = 0.010; η2 = 0.083) but not in successful attacks (Oxytocin vs. Placebo: M ± SE = 0.34 ± 0.06 vs. 0.40 ± 0.06; F (1, 74) = 0.448; p = 0.505; η2 = 0.006).
+
+Third, we examined how attacker groups collectively identified when to attack by creating a past defense parameter α (average defender group’s investment in the last two rounds, that is (Dj-1+Dj-2)/2 on round j) and regressed attacker group’s investments onto α (attack increased when defender groups were vulnerable rather than strong, as indicated by α approaching -1). It showed that attacker groups given oxytocin tracked their rival’s past defense and attacked especially when defenders appeared more rather than less vulnerable (i.e. attack regressed negatively on rival’s historical defense). Specifically, when decisions were made simultaneously, attack regressed more strongly on α when groups received oxytocin (M ± SE: -0.30 ± 0.05) rather than placebo (M ± SE: -0.042 ± 0.098; t(78) = -2.334; p = 0.022, Cohen’s d = -0.522, 95% CI, -0.482 to -0.038), and under oxytocin but not placebo, the regression on α was also stronger in simultaneous rather than sequential decision-making (Treatment $\times$ Procedure interaction, F(1, 78) = 8.312, p = 0.005, η2 = 0.097, Figure 6A).
 
 Combined, results suggest that groups given oxytocin created more spoils from winning and had higher leftovers when attacks failed because they better coordinated attack at the right time and with the proper force. Indeed, when decisions were made simultaneously, the more strongly attacker groups relied on tracking parameter α, the lower their within-group variance when contributing (r = 0.281, p=0.012, Figure 6B), and the lower within-group variance when contributing, the higher the attacker’s spoils when winning the conflict (r = −0.328, p=0.004, Figure 6C). Indirect mediation analyses confirmed that the attacker’s higher spoils under oxytocin was mediated by (i) increased tracking of defender group’s past investments and (ii) concomitant increased within-group coordination (indirect effect = 0.147, SE = 0.103; 95% CI, 0.019 to 0.511, Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig6-v3.jpg)
+
+**Figure 6.:** (A) When attacker groups are given oxytocin investments regress negatively on α (the rival’s historical investments to defense), especially during simultaneous than sequential decision-making. (B) Stronger negative regression of attack on rival’s defense history (α → −1) among attacker groups associates with better coordination (i.e. lower within-group variance). (C) Better coordination (i.e. lower within-group variance) associates with higher spoils when winning the conflict. (D) Oxytocin’s effect on spoils from successful attacks is mediated by treatment effects on tracking α (more strategic when α → −1) and better within-group coordination. † p < 0.10; * p < 0.05; ** p < 0.010).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40698/elife-40698-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Better coordination (i.e. lower within-group variance) associates with higher spoils and leftovers. (B) Oxytocin’s effect on attacker groups’ spoils from successful attacks and leftovers from attack failure is mediated by treatment effects on tracking α and better within-group coordination. Significant pathways were highlighted in bold. (* p < 0.05; ** p < 0.01).
 
 ## Discussion
 
@@ -79,42 +175,64 @@ Intergroup competition and conflict shape the economic and cultural outlook of g
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We recruited 486 healthy males, mostly science and engineering students, as paid volunteers. One IADC session (N = 6) was dropped from data analysis because of technical failure. Data from 480 participants (80 IADC sessions, age 18–29 years; M ± SE = 20.28±0.09 years) were included in the final data analysis. The data analysis on the current study was conducted on a 6-person-group level, thus we conducted sample size estimation by G*Power to determine the number of groups sufficient to detect a reliable effect. Based on an estimated average small-to-medium effect size of oxytocin effect on social behaviors (d = 0.28, Walum et al., 2016), 80 6-person groups were needed to detect a significant effect (α = 0.05, β = 0.85, ANOVA: repeated measures, within-between interaction, G-Power, Faul et al., 2009). All participants were healthy and had normal or corrected-to-normal vision and no history of neurological or psychiatric disorders. Those who majored in psychology or economics or participated in any other drug study in recent weeks were excluded from participation. Participants were instructed to refrain from smoking or drinking (except water) for 2 hr before the experiment. The experiment involved no deception, and participants were paid for their presence for the experiment (i.e. $10 show-up fee) plus their average earnings in two randomly selected IADC rounds.
 
-## Ethics approval
+### Ethics approval
 
 All participants provided written informed consent to participate after the experimental procedures had been fully explained, and were acknowledged their right to withdraw at any time during the study. All experimental procedures adhered to the standards set by the Declaration of Helsinki and were approved by the Institutional Review Board at the State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, Beijing, China (protocol number: ICBIR_A_0107_001).
 
-## Procedure
+### Procedure
 
 Participants were randomly assigned to the intranasal administration of oxytocin or placebo in a double-blind placebo-controlled between-subjects design (Figure 1). For each IADC session, six strangers were invited to the lab at the same time and randomly assigned to six individual cubicles within the same room. Upon arrival, participants first completed questionnaires that measured current mood, empathic capacity, prosocial personality, impulsiveness, subjective socio-economic status, and cooperative personality. Participants then self-administered oxytocin or placebo. After 35 min, participants were given instructions for the IADC game and completed two practice rounds. When they also passed a comprehension check, they played 15 simultaneous rounds and 15 sequential rounds of IADC investments (order of simultaneous and sequential blocks was counterbalanced across sessions, Figure 2). All the experimental instructions used neutral language (e.g. contribution was labeled investment; defense and attack were avoided, and groups were labeled as group A or B). Finally, participants filled out a post-survey for mood measurement and manipulation check. The attacker and defender groups under oxytocin or placebo did not differ in demographic information, mood change, and prosocial-related traits (Supplementary file 1, Table 1A and B).
 
-## Oxytocin administration
+### Oxytocin administration
 
 The procedure of oxytocin and placebo administration was similar to previous work that showed oxytocin effects on decision-making behaviors or in-group favoritism (De Dreu et al., 2010; Ma et al., 2015; Rilling et al., 2012; Yan et al., 2018). A single intranasal dose of 24 IU oxytocin or placebo (containing the active ingredients except for the neuropeptide) was self-administered by nasal spray about 35 min before the experimental task under experimenter supervision. A 24 IU dosage is the most commonly used dosage in oxytocin literature (Wang et al., 2017) and recently shown as having more pronounced effects (compared with 12 or 48 IU dose of oxytocin) on behavioral and neural responses (Spengler et al., 2017). The spray was administered to participants three times, and each administration consisted of one inhalation of 4 IU into each nostril. Six participants in the same IADC session were assigned to the same treatment (oxytocin or placebo), so as to avoid potential influence of oxytocin to placebo between individuals.
 
-## Data analysis
+### Data analysis
 
 Data were aggregated to the group level, with Role (Attacker vs. Defender), Procedure (Simultaneous vs. Sequential) and Round as within-group variables, and Treatment (Oxytocin vs. Placebo) as a between-group factor. Analyses were performed on (i) contribution (the averaged investment of each round, range: 0–20), (ii) the number of non-contributors (the number of group members making a 0 contribution across a 15-round block, range: 0–45), (iii) variance (within-group variance of each round), (iv) success rate for attack (range 0–100%), (v) the attackers’ leftovers when losing a conflict, (vi) the attackers’ spoils when winning a contest and, finally, (vii) inter-group tracking. The within-group variance is calculated for each decision round, thus reveals the group coordination of contribution at each round, with lower variance indicating stronger coordination. In addition, to complement and validate these analyses, we analyzed (viii) decision time for investment decisions (log 10-transformed decision time), and (ix) within-group coordination as reflected in the Intra-class correlation coefficient.
 
-## Game-theoretic analysis
+### Game-theoretic analysis
 
 The IADC is an all-pay contest with a single mixed-strategy Nash equilibrium (Abbink et al., 2010; Dechenaux et al., 2015). With two three-person groups, each member assumed to have risk-neutral preferences and having a discretionary resource of e = 20 MU to invest from, the IADC game has unique mixed-strategy Nash equilibrium with out-group attack (in-group defense) expected to average 10.15 (9.77)across rounds, and attackers (defenders) should win (survive) 32.45% (67.55%) of the contest rounds (De Dreu et al., 2016a). Across the 15 rounds of simultaneous decision-making under placebo, both out-group attack and in-group defense fell below the Nash-equilibrium (t(39) = −11.30, p < 0.001 and t(39) = −4.18, p < 0.001). Attackers defeated defenders in 22.08% (SE = 2.2%) of their attacks, which is below the Nash success-rate (t(39) = −4.734, p < 0.001). Oxytocin did not influence deviations from rationality (attack: t(39) = −15.78, p<0.001; defense: t(39) = −6.022, p<0.001; success-rate: t(39) = −6.615, p < 0.001).
 
-## Response time for decisions to (not) contribute
+### Response time for decisions to (not) contribute
 
-We showed that oxytocin increases the number of non-contributors in attacker groups. To further reveal how oxytocin influenced the non-contributing decisions, we examined participants’ decision time by calculating the response time separately for the round that participants decided to or not to contribute. This analysis was conducted only on the attacker group because (1) there were very few rounds (9%) in which defenders decided not to contribute; (2) oxytocin selectively influenced the number of non-contributors in attacker groups. Since the distribution of decision times is heavily right skewed, linear regression is not appropriate. Similar to our previous study (Ma et al., 2015), we first log 10-transformed decision times in all the analyses that involved decision times. The log 10-transformed decision time was submitted into a 2 (Contribute: Yes vs. No) × 2 (Treatment: Oxytocin vs. Placebo) ANOVA for the attacker group. The decisions of which the response time exceeded 180 seconds were excluded in final data analysis (0.51% of the decisions, due to network problem during the experiment).
+We showed that oxytocin increases the number of non-contributors in attacker groups. To further reveal how oxytocin influenced the non-contributing decisions, we examined participants’ decision time by calculating the response time separately for the round that participants decided to or not to contribute. This analysis was conducted only on the attacker group because (1) there were very few rounds (9%) in which defenders decided not to contribute; (2) oxytocin selectively influenced the number of non-contributors in attacker groups. Since the distribution of decision times is heavily right skewed, linear regression is not appropriate. Similar to our previous study (Ma et al., 2015), we first log 10-transformed decision times in all the analyses that involved decision times. The log 10-transformed decision time was submitted into a 2 (Contribute: Yes vs. No) $\times$ 2 (Treatment: Oxytocin vs. Placebo) ANOVA for the attacker group. The decisions of which the response time exceeded 180 seconds were excluded in final data analysis (0.51% of the decisions, due to network problem during the experiment).
 
-## Within-Group coordination
+### Within-Group coordination
 
-To complement and cross-validate the results for within-group variance as an indicator of within-group coordination, we computed another related index — the intra-class correlation. The intraclass correlation (ICC, De Dreu et al., 2016a; LeBreton and Senter, 2008) operates on a data structured as groups, rather than data structured as paired observations. ICC describes the amount of statistical interdependence within a group (group cohesion), reflects how strongly individuals’ contributions in all rounds in the same group resemble each other, that is how similar group members are in their contributions to the group pool across rounds. Higher ICC values in essence mean group members are more similar to each other in the contributions made to their group pool. A Treatment × Role × Procedure ANOVA showed effects for Role (F(1,78) = 43.090, p < 0.001, η2= 0.356), Procedure (F(1,78) = 166.199, p < 0.001, η2 = 0.681) and for the Role x Procedure interaction (F(1,78) = 147.586, p < 0.001, η2 = 0.654). Fitting the results for within-group variance reported in the Main Text (Figure 5A), results further showed that oxytocin increased attacker groups’ ICC under simultaneous decision-making (t(78) = 2.057, p = 0.043, Cohen’s d = 0.460, Figure 5—figure supplement 1; not under sequential block: t(78) = -0.179, p = 0.859, Cohen’s d = 0.040), but did not influence defender groups’ ICC (simultaneous: t(78) = 0.485, p = 0.629, Cohen’s d = 0.108; sequential: t(78) = 0.389, p = 0.698, Cohen’s d = 0.087).
+To complement and cross-validate the results for within-group variance as an indicator of within-group coordination, we computed another related index — the intra-class correlation. The intraclass correlation (ICC, De Dreu et al., 2016a; LeBreton and Senter, 2008) operates on a data structured as groups, rather than data structured as paired observations. ICC describes the amount of statistical interdependence within a group (group cohesion), reflects how strongly individuals’ contributions in all rounds in the same group resemble each other, that is how similar group members are in their contributions to the group pool across rounds. Higher ICC values in essence mean group members are more similar to each other in the contributions made to their group pool. A Treatment $\times$ Role $\times$ Procedure ANOVA showed effects for Role (F(1,78) = 43.090, p < 0.001, η2= 0.356), Procedure (F(1,78) = 166.199, p < 0.001, η2 = 0.681) and for the Role x Procedure interaction (F(1,78) = 147.586, p < 0.001, η2 = 0.654). Fitting the results for within-group variance reported in the Main Text (Figure 5A), results further showed that oxytocin increased attacker groups’ ICC under simultaneous decision-making (t(78) = 2.057, p = 0.043, Cohen’s d = 0.460, Figure 5—figure supplement 1; not under sequential block: t(78) = -0.179, p = 0.859, Cohen’s d = 0.040), but did not influence defender groups’ ICC (simultaneous: t(78) = 0.485, p = 0.629, Cohen’s d = 0.108; sequential: t(78) = 0.389, p = 0.698, Cohen’s d = 0.087).
 
-## Tracking on historical contribution
+### Tracking on historical contribution
 
 To test whether attacker groups made their contributions based on tracking of their rival’s historical level of defense, we built a multiple linear regression of attacker groups’ average contribution on round j (referred as Aj, with j range from 3 to 15) as a function of average level of defense of last rounds (calculated as (Dj-1 +Djj-2)/2, regression weight referred as α). The regression weight α was Fisher’s z transformed for statistical analysis. Similar to a previous study (De Dreu et al., 2016b), we also included another parameter: defense change of the last and before-last rounds, calculated as (Dj-1 - Dj-2), regression weight referred as β. However, the analysis on β failed to show significant main effects of Treatment/Procedure or their interaction (ps >0.1). To complement the analysis of attacker groups, we also examined whether and how defender groups tracked the historical level of attack in their rivals. This showed that defender groups relied more on α to track attacker groups under simultaneous (relative to sequential) decision-making. The main effect of Treatment and its interaction with Procedure were not significant (ps >0.05).
 
-Mediation analysis. We performed formal mediation analyses to examine through which route oxytocin increased attacker group’s spoils from winning a conflict. Two potential mediators were included in the mediation model: one is tracking coefficient (α) the other is within-group variance. Four different regression models were constructed, as shown below:(1)Y=β11X+β10(2)M1−β21X+β20(3)M1=β31X+β32MI+B30(4)Y=β41X+β42MI+B43M2+B40
+Mediation analysis. We performed formal mediation analyses to examine through which route oxytocin increased attacker group’s spoils from winning a conflict. Two potential mediators were included in the mediation model: one is tracking coefficient (α) the other is within-group variance. Four different regression models were constructed, as shown below:
+
+$$
+Y=\beta_{11}X+\beta_{10}
+$$
+
+
+
+$$
+M1−\beta_{21}X+\beta_{20}
+$$
+
+
+
+$$
+M1=\beta_{31}X+\beta_{32}MI+B_{30}
+$$
+
+
+
+$$
+Y=\beta_{41}X+\beta_{42}MI+B_{43}M2+B_{40}
+$$
 
 In these models, X is the independent variable (Treatment, dummy-coded, 0 for placebo and one for oxytocin), M1 is the first mediator (the weight for attacker group’s tracking of the historical defense, the tracking coefficient, α), M2 is a second mediator (attacker group’s within-group variance), and Y is the dependent variable (attacker groups’ spoils from winning a conflict, reported in the Main Text, and DV with the sum of attacker groups’ spoils from winning a conflict and leftovers from losing a conflict reported in the SI). A resampling method known as bootstrapping was used to test the direct and indirect path. Bootstrapping is a nonparametric approach to effect-size estimation and hypothesis testing that is increasingly recommended for many types of analyses, including mediation (Mackinnon et al., 2004; Shrout and Bolger, 2002). Rather than imposing questionable distributional assumptions, bootstrapping generates an empirical approximation of the sampling distribution of a statistic by repeated random resampling from the available data, and uses this distribution to calculate p-values and construct confidence intervals (5000 resamples were taken for these analyses). Moreover, this procedure supplies superior CIs that are bias-corrected and accelerated (Preacher et al., 2007). Results are summarized in Figure 6D, Figure 6—figure supplement 1, Supplementary file 1, Table 1C and D. As can be seen, multistep mediational analysis showed that the oxytocin effect on increasing attacker group’s spoils from winning the conflict plus leftovers from losing the conflict was mediated by its effect on increasing tracking of defenders’ history so as to increase within-group coordination.

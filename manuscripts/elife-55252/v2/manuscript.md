@@ -35,9 +35,17 @@ In order to characterize the role of the LS in reward-driven spatial navigation,
 
 **Figure 1.:** (A) Brain section from implanted rat, showing the lateral septum and electrolytic lesions made after recording. The red arrows mark lesions at the tetrode tips. Red shaded area indicates area where about 95% of lesions were seen. (B) Illustration of the maze task, which consisted of two phases: in the forced choice phase, animals were randomly forced with a block (represented by a red rectangle in a schematic) to either side of the T. In the free choice phase, animals had to choose, at the opposite end of the maze, the same side to which they were forced. If they made the correct choice, animals were rewarded with a sucrose and chocolate mixture. (C) Tracked position during one 30 min session.
 
-## Place fields are less abundant in the LS as compared to the hippocampus CA1
+### Place fields are less abundant in the LS as compared to the hippocampus CA1
 
 We first sought to determine the prevalence of place fields in the cdLS, as estimates have varied wildly from one study reporting no fields (Tingley and Buzsáki, 2018), to estimates of about a third to half of all LS cells (Takamura et al., 2006; Zhou et al., 1999). In all recorded LS cells and CA1 principle cells, we evaluated the spatial information content in cell firing using an information measure of bits per spike. We defined a cell with place information to be a cell with a bits per spike cutoff of 0.8 bits/spike, as this cutoff has been used previously for determining spatial firing of non-hippocampal cells (Ji and Wilson, 2007; Markus et al., 1994). We did not include cells with a mean spiking rate of less than 0.05 hz, and also eliminated cells during trials where the animal did not cover the entire track at a speed of at least 12 cm/s. We found that 75.2% (124/165) of CA1 cells (Figure 2A) and 33.6% (127/378) of LS cells (Figure 2B) met or exceeded the 0.8bits/spike threshold, with the average bits/spike of a CA1 cell significantly higher than the average bits/spike of an LS cell (HPC mean 1.54+−1.2 bits/spike, LS mean 0.73+−0.7 bits/spike, two-tailed two sample t-test t(541)=9.42, p<0.001) (Figure 2C) (We also computed mutual information, see Figure 2—figure supplement 1). To ensure that the representation of space was different than would be expected from random Poisson firing, we created 454 artificial LS units using Poisson firing and the mean firing rates of the recorded LS units (Figure 2B, inset). The distribution of the bits/spike for the artificial units was highly significantly different than the distribution of bits/spike for actual units (KS test, p<10−15), and only 7.96% of artificial units had bits/spike measurements of greater than 0.8. The average bits/spike for the artificial units was 0.43, compared to an average value of 0.73 for actual units (two-tailed two sample t-test, t(818)=6.72, p<10−10).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bits per spike of all recorded hippocampal units with an average spike rate >0.05 hz and full track coverage. A bits per spike cutoff of 0.8bits/spike is marked with a dotted line. (B) Larger graph: same as A for units in the lateral septum. Inset: bits per spike for artificially created LS units. The distribution of the bits/spike for the artificial units was highly significantly different than the distribution of bits/spike for actual units (KS test, p<10−15), and only 7.96% of artificial units had bits/spike measurements of greater than 0.8. The average bits/spike for the artificial units was 0.43, compared to an average value of 0.73 for actual units (two-tailed two sample t-test, t(818)=6.72, p<10−10). (C) Comparison of bits per spike for hippocampal and septal units. The average bits/spike of a CA1 cell is significantly higher than the average bits/spike of an LS cell. HPC mean 1.54+−1.2 bits/spike, LS mean 0.73+−0.7 bits/spike, two-tailed two sample t-test t(541)=9.42, p<0.001). Error bars represent standard error. (D) Bits per second of all recorded hippocampal units with an average spike rate >0.05 hz and full track coverage. (E) Same as D for units in the lateral septum. (F) Comparison of bits per second for hippocampal and septal units. CA1 units had a mean of 1.34+−1.4bits/sec, and LS cells had a mean 0.82+−1.1bits/sec. Units in the hippocampus had a significantly greater mean bits/sec than in the LS (two-tailed two sample t-test t(541)=4.57, p<0.001). Error bars represent standard error.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mutual information for all cells. Mean mutual information in the hippocampus is 1.20+−0.47, while mutual information in the septum is 1.29+−0.23. These values are significantly different (double sided t-test t(541)=-3.05, p<.005). Many LS cells without a place field may have a high mutual information score due to spatial correlations with speed and acceleration (Wirtshafter and Wilson, 2019). (B) Mutual information for cells with spikes/bit greater than or equal to 0.8. Mean mutual information for these cells in the hippocampus is 1.27+−0.44, while mutual information in the septum is 1.43+−0.30. These values are significantly different (double sided t-test t(249)=-3.35, p<.005).
 
 Because bits/spike is sensitive to differences in firing rate, we also calculated bits per second for the CA1 and LS units. We found a mean of 1.34+−1.4bits/sec for CA1 cells, and 0.82+−1.1bits/sec for LS cells (Figure 2D–E). Units in the hippocampus had a significantly greater mean bits/sec than in the LS (two-tailed two sample t-test t(541)=4.57, p<0.001) (Figure 2F).
 
@@ -45,9 +53,21 @@ We next determined how many cells with bits/spike greater than 0.8 had definable
 
 Of the 164 HPC units with bits/spike greater than or equal to 0.8, 104 units had at least one place field, with 63 of these cells with one field, 33 with two fields, seven with three fields, and a single cell with four fields (Figure 3A,C). Of the 127 LS cells with bits/spike greater than 0.8, 100 had at least one place field, with 54 with one field, 33 with two fields, six with three fields, five with four fields, and two with five fields (Figure 3B,D). The distributions of field numbers were not significantly different between CA1 and LS cells (two sample Kolmogorov-Smirnov (KS) test, p>0.5). We have previously shown that LS cells are modulated by speed and acceleration (Wirtshafter and Wilson, 2019). To determine the potential contribution of spatially biased speed and acceleration to our place field results, we performed a multiple linear regression of each spatial bin’s firing rate against the bin’s average speed and acceleration. Only two cells with place fields had an r2 of >0.5, with the median r2 value of 0.06 (Figure 3—figure supplement 1), so very little spatial firing could be explained by correlations with speed or acceleration.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig3-v2.jpg)
+
+**Figure 3.:** The distribution of field numbers was not significantly different between HPC and CA1 cells (two sample Kolmogorov-Smirnov (KS) test, p>0.5). (A) Number of fields in CA1 cells with a bits per spike greater than or equal to 0.8 bits/spike. (B) Same as A for lateral septum. (C) Example units in the CA1. Top: Example of a unit with a single place field. Bottom: example of a unit with three place fields. (D) Same as C but for the LS.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The median r2 value was 0.06.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Examples of spatial firing of 30 randomly selected LS cells. (B) Histograms of mean (left) and maximum (right) firing within a place field for all LS cells.
+
 In summary, out of 165 recorded CA1 cells that met spike rate and track coverage criteria, 104 (63.0%) met or exceeded a bits per spike cut off of 0.8 and had at least one place field that met the described criteria, while out of 378 recorded LS cells meeting spike rate and track coverage criteria, 100 (26.5%) met the same criteria (see Figure 3—figure supplement 2 for additional place cell examples and representations of firing rates). Place cells in the CA1 are therefore significantly more abundant than in the cdLS (two-tailed two sample t-test t(541)=8.6, p<0.001).
 
-## CA1 and LS place fields have comparable average sizes and are shaped by experience
+### CA1 and LS place fields have comparable average sizes and are shaped by experience
 
 We next determined if there were differences in size between hippocampal and LS place fields. In order to qualify as a place field, we applied a minimum length standard of at least 15 cm. The average length of a CA1 place field was 29.1+−14.7 cm (Figure 4A,C), while the average length of an LS place field was 28.8+−16.6 cm (Figure 4B,D). The average field lengths were not significantly different (two-tailed two sample t-test t(320)=-0.16, p>0.05).
 
@@ -57,13 +77,47 @@ We next determined if there were differences in size between hippocampal and LS 
 
 Previous work has demonstrated that hippocampal place fields stabilize and become more tuned to position with experience (Mehta et al., 1997). We compared the time periods over which HPC and LS place fields become stable. For each pass through a place field, we determined how far the center (determined by maximum spiking) of the place field was from the average place field center. Both the hippocampus (Figure 4E) and LS (Figure 4F) had highly accurate place fields starting with the first pass of the place field, though, on average the HPC is slightly more accurate on the first lap as well as across all laps. (On the first lap, HPC has a mean distance of 2.7 cm versus 4.9 cm for the LS, two-tailed two sample t-test t(319)=-3.1, p<0.005. Across all laps, mean distance of 4.70 cm for the HPC versus 5.12 cm for the LS, two-tailed two sample t-test t(6792) = −2.5, p<0.05). The slight but significant decrease in accuracy from the first to later laps in the HPC can be explained by a slight shift of the place field peak toward the direction of travel (Figure 4G). Fields in both the HPC and the LS significantly increase firing in their place field with experience on the track (Figure 4G–H).
 
-## CA1 and LS place fields have different skew and location distributions
+### CA1 and LS place fields have different skew and location distributions
 
 We also wondered if bias toward reward location could also be seen within a place field. To determine this, looked at place field skew as a function of travel direction, computing skew for a place field using total within-field firing (for skew during individual laps, see Figure 5—figure supplement 1). We found that, when travelling toward a reward site, cells in the hippocampus were skewed positively toward the direction of travel, while, when traveling away from a reward site, cells were skewed negatively away from the direction of travel, and this difference was significant (two-tailed two sample t-test t(207)=-2.1, p<0.05) (Figure 5A,B, see also Figure 5—figure supplement 2–3). Conversely, when traveling toward a reward site, LS place fields were skewed negatively away from the direction of travel, and when traveling away from a reward site, the fields were skewed positively toward the direction of travel, though this difference is not significant (two-tailed two sample t-test t(246)=-1.7, p=0.09) (Figure 5A,C). Although the HPC and LS both contains uni- and bi- directional place fields, there was no significant difference for values of skew based on whether a place cell was uni or bi directional (both two-tailed two sample t-tests, p>0.05, see Figure 5—figure supplement 4). Because skew can be sensitive to changes in speed, we also computed the firing rate asymmetry index (FRAI, see methods) (Mehta et al., 2000) for HPC and LS cells, and found a highly significant relationship between skew and FRAI values (Figure 5—figure supplement 5), showing that skew cannot be explained by the animal’s speed.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison of mean skew values within immediate reward proximity. Stars indicate significant differences between multiple populations. Plus signs indicate the mean is significantly different than 0. Xs indicate significant differences from a shuffled distribution, see Figure 5—figure supplement 3. Error bars represent standard error. In the hippocampus, there is a significant difference in mean skews based on direction of travel (two-tailed two sample t-test t(207)=-2.1, p<0.05). (B) Graph of distributions of skews in the hippocampus based on direction of travel. (C) Graph of distributions of skews in the septum based on direction of travel. (D) Schematic showing arms of the maze examined during immediate reward proximity. Toward reward direction is marked with a blue arrow, away from reward with a red arrow. (E) Comparison of mean skew values within immediate reward proximity. Stars indicate significant differences between multiple populations. Plus signs indicate the mean is significantly different than 0. Xs indicate significant differences from a shuffled distribution, see Figure 5—figure supplement 3. Left: Error bars represent standard error. Skew values were not significantly different for hippocampus traveling to and from reward (two sample two sided t-test, t(74)=-0.59 p>0.05), but were significantly different for LS cells to and from reward (two sample two sided t-test, t(108)=-2.10, p<0.05). (Skew for HPC away from reward is significantly different from a shuffled sample, two sample two sided t-test, t(301)=-2.05, p<0.05. Skew for LS away from reward is significantly different from zero, one sample two sided t-test, t(58)=-2.0, p=0.05). Right: Schematic for clarification of skew relative to reward location for both directions of travel. Arrow represents direction of travel, ‘R’ represents reward location. Note that while HPC skew away from reward for reward proximal cells appears to have a different direction than for all HPC cells when traveling away from reward, the two means are not significantly different (two sample two sided t-test, t(131)=1.62, p>0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Top: Scatter plot of skewness in HPC place cells versus distance to reward when traveling to reward. Bottom: Scatter plot of skewness in HPC place cells versus distance to reward when traveling away from reward. The linear correlation was significant (F statistic(1,92)=7.01, p<0.01, r2=0.07). (B) Same as A but in the LS. Neither linear correlation was significant (C) Same as A but only reward proximate HPC fields displayed. No significant linear correlations. (D) Same as B but only reward proximate LS fields displayed. Traveling to reward, the correlation neared significance (F statistic(1,60)=3.18, p=0.079, r2=0.03).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Distribution of skews for HPC shuffled data. A random distribution was obtained by shuffling firing rates within a firing field and then computing skew for the shuffled data. Average skew for 500 shuffled distributions were computed. The average skews for the actual data depicted in figure 5 are marked with dotted lines. (B) Same as A but for LS.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Comparison of average skew values for uni- and bi- directional LS place fields. There is no significant difference between the means directional (two-tailed two sample t-test, t(246)=-0.19, p=.85). (B) Comparison of average skew values for uni- and bi- directional LS place fields based on travel direction. There is no significant difference between the groups (one way anova, F(3,244) = 1.05, p>0.05). (C) Same as A but for HPC place fields. The mean skew was not significantly different between uni- and bi- directional place cells (two-tailed two sample t-test, t(207)=-0.59, p=0.55). (D) Same as B but for HPC place fields. There was no significant different between the groups (one way anova, F(3,205) = 0.29, p>0.05).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) There is a highly significant relationship between skew and FRAI in HPC cells (f(207)=61.0, p<9-13). (B) Same as A but in LS (F(247) = 43.77, p<9-10).
 
 We then examined the effect of reward proximity on skew for place cells that were in the immediate reward proximity (in the rewarded arms, Figure 5D). Comparing the mean skew values in immediate reward proximity (Figure 5E, see also Figure 5—figure supplements 2–3), skew values were not significantly different for hippocampus traveling to and from reward (two sample two sided t-test, t(74)=-0.59 p>0.05), but were significantly different for LS cells to and from reward (two sample two sided t-test, t(108)=-2.10, p<0.05).
 
 We then looked at field location for HPC and LS place fields to determine which arms of the maze were most represented in the hippocampus and LS (Figure 6A). Place field locations were based on maximum spiking (field center) in the place field. In the hippocampus, 49/154 of place fields occurred on the forced sides, 36/154 on the center stem, and 45/154 on the end of the choice sides (Figure 6B,D). (Force and choice points were excluded as they were difficult to assign to an arm, but 24 place fields occurred at the forced and choice point. For data further subdivided by location see Figure 6—figure supplement 1.) In the LS, 37/168 of place fields occurred on the forced sides, 40/168 on the center stem, and 69/168 on the end of the choice sides (22 occurred at choice points) (Figure 6C,E). The distribution of place fields is significantly different between the hippocampus and the lateral septum (Pearson’s chi2 test, X2 = 6.03, p<0.05). The LS has about 1.4 times, proportionally, significantly more place fields in the choice side than the HPC (41.1% of total fields in the LS, versus 29.2% of total fields in the HPC, two-tailed two sample t-test t(320)=2.23, p<0.05). In the hippocampus, the number of fields in the choice arms versus the forced arms was not significantly different (two-tailed two sample t-test t(364) = 2.34, p>0.05), while, in the LS, there were significantly more fields in the choice arms compared to the forced arms (two-tailed two sample t-test t(334)=-3.8, p<0.001).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig6-v2.jpg)
+
+**Figure 6.:** The distribution of place fields is significantly different between the hippocampus and the lateral septum (Pearson’s chi2 test, X2=12.7, p<0.05). (A) Schematic showing where the maze is split to identify place field location. (B) Scatter plot of HPC field centers (C) Scatter plot of LS field centers D. Distribution of HPC field centers. In CA1, place fields are no more likely to be on the choice side of the maze than the forced side (two-tailed two sample t-test t(364) = -2.34, p>0.05) (E) Distribution of LS field centers. There were significantly more fields in the choice arms compared to the forced arms (two-tailed two sample t-test t(334)=-3.8, p<0.001). The LS also has about 1.4 times, proportionally, more place fields in the choice side than the HPC does (41.1% of fields in the LS, versus 29.2% of fields in the HPC, two-tailed two sample t-test t(320) = -2.23, p<0.05). (F) Distribution of HPC place field centers by direction of travel. Top: traveling to reward. Bottom: traveling away from reward. (G) Distribution of HPC place field centers by direction of travel. Top: traveling to reward. Bottom: traveling away from reward. The LS had significantly more place fields on the choice side than the forced side in both travel directions, with the difference highly pronounced travelling away from reward (travelling toward reward two-tailed two sample t-test t(254)=1.82 p<0.10, travelling away from reward two-tailed two sample t-test t(218)=3.8 p<0.001). The distribution of place fields in the choice side was also significantly different based on the animal’s travel (one-tailed two sample t-test t(102)=-2.15, p<0.05). (H) The probability of finding a hippocampal place field as a function of distance from rewarded locations. As above, red represents the forced side of the maze, blue the middle arm, and purple the choice side. Note that the divisions between the three segments of the maze are not exactly represented in the histogram due to binning. (I) Same as H but for the LS.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic showing track divisions (B) Field locations in HPC. Top: for the full track, middle: traveling to reward, bottom: traveling away from reward. (C) Same, but for LS.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Top: Scatter plot of mean firing rate in HPC place fields seen when the animal is traveling toward reward, plotted against distance to reward. Bottom: Scatter plot of mean firing rate in HPC place fields seen when the animal is traveling away from reward, plotted against distance to reward. (B) Same as A but in the LS.
 
 We wondered if place field location depending on direction of travel; for instance, if it was more likely to see a place field by a reward site after the site had been visited. To determine this, we split fields by direction, based on whether the animal was traveling to or from reward (if a field existed in both directions, we analyzed its parameters in both directions). This resulted in a total of 209 hippocampal place fields (115 toward reward and 94 away from reward, with, out of the total, 133 being unidirectional and 76 being bi directional) and 248 LS place fields (138 toward reward, 110 away from reward, with, out of the total, 177 unidirectional and 71 bidirectional. There was no significant difference of numbers of uni- or bi- directional HPC or LS cells, two-tailed two sample t-test, t(461)=1.377, p>0.05), and no difference in the distribution of HPC or LS place cell locations depending on if a cell was uni- or bi- directional both (KS test, p>0.05). There was no significant different between field sizes based on direction within the LS, within the HPC, or across the LS and HPC (all two-tailed two sample t-test p>0.05).
 
@@ -72,6 +126,22 @@ In the LS, the difference seen in the number of fields on the forced side versus
 We also computed the probability of finding a place field as a function of distance from reward (Figure 6H–I). In the hippocampus, there was an increase in the probability of a spatial firing field in the last 60 cm of reward approach (Figure 6H). However, the largest peeks in HPC place field probability were around the forced and choice points of the maze, approximately 200–220 cm and 80–60 cm away from reward, respectively. In the LS, the entire forced arms were highly overrepresented, and the probability of a place field also increased upon reward approach.
 
 In order to determine if HPC place cells were preferentially innervating LS cells, we computed spike train cross correlations between HPC and LS place cells with place fields in similar locations (centers less than or equal to 20 cm apart) (Wilson and McNaughton, 1994). (To adjust for spiking variance, we also computed the cross correlation with a shuffled LS spike train, and subtracted the mean of this cross correlation from the computed pairwise cross correlation.) We found that place cell pairs with fields in the choice side of the maze had a significantly higher mean average correlation (over +−100 ms) than place cell pairs with fields in the middle or forced arm (Figure 7A) (forced versus choice: two-tailed two sample t-test t(67)=-2.2, p<0.05, middle versus choice: two-tailed two sample t-test t(54)=-2.3, p<0.05). For pairs in the choice arm, the maximum value of the cross correlation happened at a mean lag of 20 ms with the HPC leading (Figure 7B, for all cross correlations, see Figure 7—figure supplement 1), within approximately the same time course seen for sharp wave ripple propagation from the HPC to the LS (Wirtshafter and Wilson, 2019). It does not appear that the higher cross correlations for cells on the choice side of the track were due to higher firing rates of cells proximal to reward, as there was no significant difference between the mean and maximum firing rates of LS place cells in all three locations (see Figure 7—figure supplement 2). The higher cross correlations were also not the result of greater proximity of field centers between LS-HPC place cell pairs in the choice arm (see Figure 7—figure supplement 3).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig7-v2.jpg)
+
+**Figure 7.:** (A) Averaged cross correlation across a lag of −100 to 100 ms between coupled pairs of HPC and LS cells, based on place field location. Error bars show standard error. Forced side versus choice side: two-tailed two sample t-test t(67)=-2.2, p<0.05, middle arm versus choice side: two-tailed two sample t-test t(54)=-2.3, p<0.05). (B) Average of cross correlation traces at all lags between coupled pairs of HPC and LS cells, based on place field location. Error bars show standard error. Mean correlation peak for forced arm correlations was at 20 ms. Results from unpaired two tailed t-tests between forced and choice arms are indicated with stars: * indicates a p value of < 0.05 on an unpaired two tailed t-test, ** indicates a p value of < 0.01, and *** indicates a p value of < 0.005. Analogous results are shown between choice arm and middle arm using +. (C) Differences in cross correlations for HPC-LS pairs during the first, middle, and last third of a single trial. Error bars show standard error. * indicates a p value of < 0.05 on an unpaired two tailed t-test, *** indicates a p value of < 0.005. (D) Three models of LS innervation by HPC that may explain the overrepresentation of LS place fields by rewarded locations. Top: model 1. HPC cells with reward-proximate place fields selectively innervate more LS place cells. Middle: model 2. HPC cells with reward proximate place fields, and cells with other fields innervate the same number of LS cells. Hippocampal cells with non-proximate fields innervate overlapping cells, causing interference and resulting in fewer place fields in the LS that are not reward proximate. Bottom: model 3. HPC cells with reward proximate place fields, and cells with other fields innervate the same number of LS cells. Hippocampal cells with non-proximate fields innervate cells that are also innervated by other inputs, causing interference and resulting in fewer place fields in the LS that are not reward proximate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Cross correlation is across a lag of -100 to 100ms. (A) Top panel: correlations between firing of cells with place fields on the forced side of the maze. Upper black bar represents average peak correlation for cells with fields on the choice size. Lower black bar(s) (too close together to be separate) represent average peak cross correlation for place fields in the forced and middle arms. Middle: Same as top but for cells with fields in the middle arm. Bottom: Same but for cells with fields on the choice size. (B) Same as A but for shuffled spike trains. We shuffled the spike trains of all the HPC and LS pairs on the forced arm and found an average correlation of 7.71e-05, with a 95% confidence interval of [-8.89e-05, 2.43e04]. Out of 36 unit pairs on the forced arm, the average of 26 of these pairs (72%) fell above the 95% confidence interval for shuffled data.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Mean within field firing rates for LS cells with place fields on the forced side, middle arm, and choice side. The means of three distributions were not significantly different (One way anova, F(2,112) = 1.15, p>0.05). (B) Mean within field firing rates for LS cells with place fields on the forced side, middle arm, and choice side. The means of the three distributions were not significantly different (One way anova, F(2,112) = 1.93, p>0.05).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/55252/elife-55252-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** We sought to ensure that the higher cross correlation values were not the result of more place fields in the choice arm resulting in a lower average difference between field centers of HPC-LS matched pairs. We first decided to determine if there was a difference in the average distance between LS and HPC place field pairs for the forced side, central stem, and choice side. We found that there was no significant difference between the average distance between LS and HPC pairs in the forced arm versus choice arm (two-tailed two sample t-test, t(67) = 1.8, p>0.05), so the proximity of HPC-LS pairs did not account for the difference in cross correlation values for forced vs. choice sides. There was a small (3cm) but significant (two-tailed two sample t-test, t(51) = 2.2, p=0.03) difference in distances when comparing the choice side to the middle stem. (Running a one way anova with all three values, F(3,83) = 3.24, p = 0.04). To further ensure that distance between pair centers was not causing the increase cross correlation in the choice arm, we subsampled the data. We found that eliminating the very closest pairs (pairs that had centers within 3cm of each other) was more than sufficient to result in an insignificant difference between forced, choice, and middle pair distances (one way anova F(3,84) = 1.92, p>0.05, with both t-tests also p>0.05). When subsampled as described, the average cross correlation for pairs on the choice side was still significantly higher than the average in either the forced side or middle stem (double sided t tests, t(51) = 1.96 p<0.05 for comparing forced to choice and t(51) = 2.2 p<0.05 for comparing central to choice). (A) The average cross correlations of subsampled data. (B) All cross correlations of subsampled data.
 
 Finally, we sought to determine if correlations between HPC and LS spiking became stronger throughout a single day’s training (Figure 7C). Comparing pairs of cells within the first third, middle third, and last third of training, there were no significant differences within group (e.g. cross correlation of reward proximate cells in the first third versus the last third of training) (all paired double sided t tests, p>0.05). However, across all three periods of training, cross correlations for reward proximate cells were consistently higher than for more reward-distal cells. It therefore appears that activity correlations between HPC and LS reward-proximate cells are either developed early in training before the task is learned and not lost between training sessions, or they are not developed within training sessions.
 
@@ -99,13 +169,13 @@ Top panel is traveling to reward, bottom panel is traveling away. Because of the
 
 ## Materials and methods
 
-## Subject details
+### Subject details
 
 All procedures were performed within MIT Committee on Animal Care and NIH guidelines. Six male Long-Evans rats (275 g to 325 g) were sourced from Charles River and implanted with tetrode arrays and run on a double-sided T maze (see Figure 1). Different data from the same subjects were previously published in Wirtshafter and Wilson, 2019. Animals were individually housed in an animal facility with a 12 hr light dark cycle.
 
-## Method details
+### Method details
 
-## Tetrode implementation and electrophysiology
+#### Tetrode implementation and electrophysiology
 
 Rats were implanted under isoflourine anesthesia (induction 4%, maintenance 1–2%) with two multi-tetrode arrays, each containing 16 independently moveable tetrodes (see Jones and Wilson, 2005b). One tetrode array was directed toward the dorsal CA1 hippocampus (stereotaxic coordinates Bregma −3.7, midline −3.2), while the other was directed toward the caudo-dorsal lateral septum (stereotaxic coordinates Bregma +.05, midline −0.5). Animals were grounded with a skull screw posterior to Lambda. Over several days tetrodes were individually lowered to their goal location. A CA1 reference tetrode was placed in the corpus collosum white matter tract above CA1. A lateral septum reference tetrode was placed in white matter above the LS, or at a quiet site in the lateral septum.
 
@@ -113,31 +183,63 @@ Electrical signals were passed through two 16 channel headstage preamplifiers to
 
 After data collection, CA1 and LS cells were manually isolated using a custom software package (Xclust) using spike amplitude on each of the four channels. Septal and hippocampal cells with large amounts of drift and/or unstable waveforms were excluded in the analysis. After completion of the study, animals were lesioned with 15μA of current for 10 s to mark tetrode location. Animals were then perfused at least one week post lesioning, and tetrode locations were then verified with histology.
 
-## Behavioral training
+#### Behavioral training
 
 During training, animals were food deprived to 85% body weight. Implanted animals were trained for 2–4 weeks to run a spatial choice task (Gomperts et al., 2015; Jones and Wilson, 2005b) on an end-to-end T maze (Figure 1). Animals were free running on this task and were only handled to be placed on the maze and removed from the maze. The maze had two phases: in the forced choice phase, animals were randomly forced to either side of the T into the forced arms. (Animals were not directed to one side more than three consecutive times.) In the free choice phase, animals had to choose, at the opposite end of the maze, the same side that they were forced to in the free choice arm. If animals made the correct choice, animals were rewarded with 0.2 mL of 20% sucrose 10% chocolate milk powder dispensed remotely from a syringe pump. After a trial, animals self-initiated a new trial by returning to the forced arm of a maze. Tail tip in an arm was used as the criteria for arm entrance. Animals were trained to a criterion of 75% correct choices. There was wide variability among all the animals for the length of time it took to learn the task, as well as their ability to maintain their performance at criterion. Animals were each run for 30 min a day.
 
-## Data and code availability
+### Data and code availability
 
 All analysis code was custom written and anaylysis was performed using Matlab (MathWorks, Natick, Massachusetts). Code is public on https://github.com/hsw28/data_analysis/ (Wirtshafter, 2020; copy archived at https://github.com/elifesciences-publications/data_analysis).
 
-## Statistical analysis
+### Statistical analysis
 
-## Position and velocity sampling
+#### Position and velocity sampling
 
 Position was sampled by overhead cameras at about 30 Hz. Due to occlusion, sampling rates of position were often at approximately 15 Hz. Speed was determined by taking the hypotenuse of the coordinates of the points immediately before and after the time point of interest. Speed was then smoothed using a Gaussian kernel of 1 s standard deviation and was then converted from pixels/s to cm/s.
 
-## Bits/spike and bits/second
+#### Bits/spike and bits/second
 
 All animal occupancies and spikes were found when the animal was travelling at or over 12 cm/second. Firing per occupancy found in 1 cm2 increments, smoothed with 10 cm standard deviation Gaussian kernel.
 
-A bits per spike measurement was calculated as follows:i=spatial bin numberPi=occupancy probability for bin iRi=mean firing rate at bin iR=overall mean firing ratebits per spike=∑iPi RiRlog2RiR
+A bits per spike measurement was calculated as follows:
 
-A bits per second measurement was calculated as follows:bits per second=∑iPi Rilog2RiR
+$$
+i=spatialbinnumber
+$$
+
+
+
+$$
+P_{i}=occupancyprobabilityforbini
+$$
+
+
+
+$$
+R_{i}=meanfiringrateatbini
+$$
+
+
+
+$$
+R=overallmeanfiringrate
+$$
+
+
+
+$$
+bitsperspike=\sum_{i}P_{i}\frac{R_{i}}{R}log_{2}\frac{R_{i}}{R}
+$$
+
+A bits per second measurement was calculated as follows:
+
+$$
+bitspersecond=\sum_{i}P_{i}R_{i}log_{2}\frac{R_{i}}{R}
+$$
 
 Cells were discarded if mean rate was below 0.05 hz during the time period above velocity threshold. Mutual information was found as in Ego-Stengel and Wilson, 2007.
 
-## Place field analysis
+#### Place field analysis
 
 Velocity was measured as determined above, and threshold was set at 12 cm/second. All animal occupancies and spikes were found when the animal was travelling at or over 12 cm/second. Firing per occupancy was found in 2 cm increments, smoothed with 10 cm standard deviation Gaussian kernel.
 
@@ -153,7 +255,7 @@ In lap by lap analysis, place fields were included if the field was passed throu
 
 Skew was determined as the ratio of the third moment of the place field firing rate spatial distribution found in the direction of travel, divided by the cube of the standard deviation of this distribution (Spiegel, 1961). Because skew was determined lengthwise along the track, firing rates along the width of the place field were averaged.
 
-## Cross correlation analysis
+### Cross correlation analysis
 
 Place cells from HPC were matched with place cells from the LS recorded during the same session based on field firing center (if a cell had multiple fields it was matched multiple times). In order to be matched, firing field centers must have been within 20 cm of each other (Wilson and McNaughton, 1994). If there were multiple matches, the match with the most similar average firing rate was chosen. If no matches could be found, the cell was excluded from analysis.
 

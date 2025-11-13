@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Dietary changes associated with industrialization increase the prevalence of chronic diseases, such as obesity, type II diabetes, and cardiovascular disease. This relationship is often attributed to an ‘evolutionary mismatch’ between human physiology and modern nutritional environments. Western diets enriched with foods that were scarce throughout human evolutionary history (e.g. simple sugars and saturated fats) promote inflammation and disease relative to diets more akin to ancestral human hunter-gatherer diets, such as a Mediterranean diet. Peripheral blood monocytes, precursors to macrophages and important mediators of innate immunity and inflammation, are sensitive to the environment and may represent a critical intermediate in the pathway linking diet to disease. We evaluated the effects of 15 months of whole diet manipulations mimicking Western or Mediterranean diet patterns on monocyte polarization in a well-established model of human health, the cynomolgus macaque ( Macaca fascicularis ). Monocyte transcriptional profiles differed markedly between diets, with 40% of transcripts showing differential expression (FDR < 0.05). Monocytes from Western diet consumers were polarized toward a more proinflammatory phenotype. The Western diet shifted the co-expression of 445 gene pairs, including small RNAs and transcription factors associated with metabolism and adiposity in humans, and dramatically altered behavior. For example, Western-fed individuals were more anxious and less socially integrated. These behavioral changes were also associated with some of the effects of diet on gene expression, suggesting an interaction between diet, central nervous system activity, and monocyte gene expression. This study provides new molecular insights into an evolutionary mismatch and uncovers new pathways through which Western diets alter monocyte polarization toward a proinflammatory phenotype.
+Dietary changes associated with industrialization increase the prevalence of chronic diseases, such as obesity, type II diabetes, and cardiovascular disease. This relationship is often attributed to an ‘evolutionary mismatch’ between human physiology and modern nutritional environments. Western diets enriched with foods that were scarce throughout human evolutionary history (e.g. simple sugars and saturated fats) promote inflammation and disease relative to diets more akin to ancestral human hunter-gatherer diets, such as a Mediterranean diet. Peripheral blood monocytes, precursors to macrophages and important mediators of innate immunity and inflammation, are sensitive to the environment and may represent a critical intermediate in the pathway linking diet to disease. We evaluated the effects of 15 months of whole diet manipulations mimicking Western or Mediterranean diet patterns on monocyte polarization in a well-established model of human health, the cynomolgus macaque (Macaca fascicularis). Monocyte transcriptional profiles differed markedly between diets, with 40% of transcripts showing differential expression (FDR < 0.05). Monocytes from Western diet consumers were polarized toward a more proinflammatory phenotype. The Western diet shifted the co-expression of 445 gene pairs, including small RNAs and transcription factors associated with metabolism and adiposity in humans, and dramatically altered behavior. For example, Western-fed individuals were more anxious and less socially integrated. These behavioral changes were also associated with some of the effects of diet on gene expression, suggesting an interaction between diet, central nervous system activity, and monocyte gene expression. This study provides new molecular insights into an evolutionary mismatch and uncovers new pathways through which Western diets alter monocyte polarization toward a proinflammatory phenotype.
 
 ## Introduction
 
@@ -53,21 +53,143 @@ To overcome the limitations of human studies, we designed a randomized preclinic
 
 ## Results
 
-## Diet intervention
+### Diet intervention
 
 Adult female cynomolgus macaques were fed either a Western-like (hereafter, ‘Western’, n = 20) or a Mediterranean-like (hereafter, ‘Mediterranean’, n = 15) diet for 15 months (approximately equivalent to four human years). The experimental diets were formulated to model human diet patterns and have been previously described (Shively et al., 2019). Briefly, the Western diet was designed to mimic the diet typically consumed by middle-aged Americans (Centers for Disease Control and Prevention (CDC), 2014), whereas the Mediterranean diet reflected key aspects of the human Mediterranean diet (Kafatos et al., 2000). The experimental diets were matched on macronutrients and cholesterol content but differed in fatty acids. Fats and proteins were mostly plant based in the Mediterranean diet (Kafatos et al., 2000), and from animal sources in the Western diet. This resulted in high levels of monounsaturated fats in the Mediterranean diet, and saturated fats in the Western diet (Cordain et al., 2005; Kafatos et al., 2000). The Mediterranean diet was higher in complex carbohydrates and fiber, and had a lower n-6:n-3 fatty acid ratio (similar to a modern-day, traditional hunter-gatherer type of diet [Cordain et al., 2005]), and lower sodium and refined sugars than the Western diet. Key Mediterranean ingredients included English walnut powder and extra-virgin olive oil which were the primary components provided to participants in the PREDIMED trial (Estruch et al., 2018). Macronutrient composition of experimental diets compared to monkey chow and human diet patterns can be found in Table 1, Methods.
 
-## Diet induced major shifts in monocyte gene expression
+**Table 1.**
+ Comparison of nutritional contents of diet patterns in human with nonhuman primate diets used in the current study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Diet Composition</th>
+      <th colspan="2">Human</th>
+      <th colspan="3">Nonhuman Primate</th>
+    </tr>
+    <tr>
+      <th>Western</th>
+      <th>Mediterranean</th>
+      <th>Western*</th>
+      <th>Mediterranean*</th>
+      <th>Chow†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">% of Calories</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>15§</td>
+      <td>17¶</td>
+      <td>16§</td>
+      <td>16¶</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Carbohydrate‡</td>
+      <td>51§</td>
+      <td>51¶</td>
+      <td>54§</td>
+      <td>54¶</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Fat</td>
+      <td>33§</td>
+      <td>32¶</td>
+      <td>31§</td>
+      <td>31¶</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td colspan="6">% of Total fats</td>
+    </tr>
+    <tr>
+      <td>Saturated</td>
+      <td>33§</td>
+      <td>21¶</td>
+      <td>36§</td>
+      <td>21¶</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Monounsaturated</td>
+      <td>36§</td>
+      <td>56¶</td>
+      <td>36§</td>
+      <td>57¶</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Polyunsaturated</td>
+      <td>24§</td>
+      <td>15¶</td>
+      <td>26§</td>
+      <td>20¶</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td colspan="6">Other nutrients</td>
+    </tr>
+    <tr>
+      <td>ω6:ω3 Fatty Acids</td>
+      <td>15:1††</td>
+      <td>2.1-3:1‡‡</td>
+      <td>14.8:1††</td>
+      <td>2.9:1‡‡</td>
+      <td>12:01</td>
+    </tr>
+    <tr>
+      <td>Cholesterol mg/Cal</td>
+      <td>0.13§</td>
+      <td>0.16¶</td>
+      <td>0.16§</td>
+      <td>0.15¶</td>
+      <td>trace</td>
+    </tr>
+    <tr>
+      <td>Fiber g/Cal</td>
+      <td>0.01§</td>
+      <td>0.03§§</td>
+      <td>0.02§</td>
+      <td>0.04§§</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Sodium mg/Cal</td>
+      <td>1.7§,¶¶</td>
+      <td>1.3¶,§§</td>
+      <td>1.7§,¶¶</td>
+      <td>1.1¶,§§</td>
+      <td>0.25</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Developed and prepared at Wake Forest School of Medicine.† LabDiet Chemical Composition Diet 5037/8. Type of fat known in 86% of total fat. Omega-6 from corn and pork fat.‡ Human carbohydrate calories include alcohol.§(Centers for Disease Control and Prevention (CDC), 2014).¶ (Bédard et al., 2012).†† (Simopoulos, 2006).‡‡ (Cordain et al., 2005).§§ (Kafatos et al., 2000).¶¶ (Powles et al., 2013).Reprinted from Shively et al., 2019, Obesity with permission (Shively et al., 2019)._
+
+### Diet induced major shifts in monocyte gene expression
 
 RNA sequencing was employed to measure genome-wide gene expression of purified CD14+ monocytes after 15 months on the experimental diets. Diet had a strong effect on monocyte gene expression: the first principal component of the correlation matrix of normalized residual gene expression (see Materials and methods), which explained 59% of the overall variance, was significantly associated with diet (t(25.1) = 4.4, p = 1.7 x 10−4; Figure 1A). PC1 score was correlated with expression of known proinflammatory genes such as interleukin-6 (IL6 Pearson’s r = 0.77, p = 5.4 x 10−8), interleukin-1α (IL1A Pearson’s r = 0.69, p = 4.3 x 10−6), and two subunits of the NF-κB protein (NFKB1 Pearson’s r = 0.61, p = 1.2 x 10−4; NFKB2 Pearson’s r = 0.72, p = 1.3 x 10−6). Approximately 40% of the 12,240 tested genes were significantly differentially expressed genes (DEGs) between the two diets (n = 4900 genes, FDR < 0.05; for all detected genes and the effect size of diet, see Supplementary file 1A; for DEGs sorted by the effect size of diet, see Supplementary file 1B). The number of diet-responsive genes was roughly balanced between those that were more highly expressed in monkeys fed the Mediterranean diet (n = 2,664; hereafter ‘Mediterranean genes’) and those that were more highly expressed in monkeys fed the Western diet (n = 2,236; hereafter ‘Western genes’). While balanced in direction, the effect sizes of diet in Western genes were, on average, 1.6-fold larger than in Mediterranean genes (Mann-Whitney U = 4.1 x 106, p = 6.1 x 10−117; Figure 1B). Thus, the strongest effects were observed in genes that were either activated by a Western diet or suppressed by a Mediterranean diet.
 
-## Functional characterization of differentially expressed genes
+![Figure 1.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig1-v3.jpg)
+
+**Figure 1.:** (A) Diet was significantly associated with the first principal component of gene expression (59% variance explained, t(25.1) = 4.4, p = 1.72 x 10−4). (B) The average effect size of diet on Western genes was 60% stronger than the effect size of diet on Mediterranean genes (Mann-Whitney U = 4.1 x 106, p = 6.1 x 10−117). (C) Western genes (orange) contained more M1 genes than expected by chance, indicating that the Western diet induced a shift toward a proinflammatory monocyte phenotype. Western genes were enriched for proinflammatory (M1-like) genes (fold-enrichment = 1.27, 95% CI = 1.09, 1.46), while Mediterranean genes (blue) were depleted of these same M1-like genes (fold-enrichment = 0.74, 95% CI = 0.61, 0.88). Regulatory (M2-like) genes were also under-represented in Mediterranean genes (fold-enrichment = 0.67, 95% CI = 0.40, 0.97), but not in Western genes (fold-enrichment = 0.95, 95% CI = 0.60, 1.35). Figure 1—figure supplement 1. The sets of Western and Mediterranean genes were compared to genes implicated in 103 complex human diseases and traits (Zhang et al., 2020). Fisher’s Exact Tests were used to calculate the enrichment of trait-associated genes in Western genes that are depicted here (FDR < 0.02, 95% CI) and no traits were enriched in Mediterranean genes. Figure 1—figure supplement 2. Western-diet fed animals exhibited significantly higher expression of pro-inflammatory genes involved in the conserved transcriptional response to adversity (CTRA Cole et al., 2015; Mann-Whitney U = 222, p = 0.016) and lower expression of antiviral- and antibody-related CTRA genes (Mann-Whitney U = 82, p = 0.023), both consistent with the CTRA. See Supplementary file 1A for CTRA categories.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig1-figsupp2-v3.jpg)
+
+### Functional characterization of differentially expressed genes
 
 Monocytes from animals fed the Western diet had higher expression of a number of well-known inflammatory-related genes, including IL6 (βdiet = 1.63, FDR = 0.025; Figure 1B), IL1A (βdiet = 1.22, FDR = 0.033), and two subunits of the NF-κB protein (NFKB1 βdiet = 0.30, FDR = 0.017; NFKB2 βdiet = 0.42, FDR = 0.012). Western genes were more likely to be involved in replication and metabolic cellular processes, including response to growth factor (GO:0070848, weighted Fisher’s Exact Test (FET) p = 4.6 x 10−3) and response to insulin (GO:0032868, weighted FET p = 4.0 x 10−4), suggesting that the Western diet also reprogrammed oxidative metabolic aspects of monocyte gene regulation. Conversely, Mediterranean diet monocyte expression patterns were involved in enhanced oxidation-reduction processes (GO:0055114, weighted FET p = 6.0 x 10−3), a critical function in keeping proinflammatory monocytes in check (for all GO terms enriched in Western and Mediterranean genes, see Supplementary file 1A-B). When compared to genes causally implicated at the expression level in 103 complex human diseases and traits (Zhang et al., 2020), we found that Western genes were enriched for genes involved in multiple human diet-associated diseases and traits (celiac disease: fold enrichment = 1.80, p = 0.016; body fat: fold enrichment = 0.26, p = 2.9 x 10−3; and body mass index: fold enrichment = 0.20, p = 0.016; Figure 1—figure supplement 1), as well as genes associated with levels of important metabolites such as HDL cholesterol (fold enrichment = 0.61, p = 6.8 x 10−3), LDL cholesterol (fold enrichment = 0.63, p = 0.012), and adiponectin (fold enrichment = 1.32, p = 7.7 x 10−3). In contrast, Mediterranean genes were not enriched for any of the 103 complex traits tested (all FDR > 0.2).
 
 We next conducted a more targeted analysis of monocyte polarization by focusing on genes previously shown to be differentially expressed between induced proinflammatory (M1) and regulatory (M2) monocytes (FANTOM consortium et al., 2014) (see Supplementary file 1A for polarization categories). Western genes contained more M1-associated genes than expected by chance (n = 162 genes, fold-enrichment = 1.27, 95% CI = 1.09, 1.46; Figure 1C), but not M2-associated genes (n = 24 genes, fold-enrichment = 0.95, 95% CI = 0.60, 1.35). Conversely, both M1-associated genes (n = 112 genes, fold-enrichment = 0.74, 95% CI = 0.61, 0.88) and M2-associated genes (n = 20 genes, fold-enrichment = 0.67, 95% CI = 0.40, 0.97) were underrepresented among Mediterranean genes.
 
-## Association of transcription factors with differentially expressed genes
+### Association of transcription factors with differentially expressed genes
 
 To identify putative upstream gene regulatory mechanisms, we examined whether DEGs were associated with predicted cis-regulatory transcription factor binding sites. We identified 34 distinct transcription factor-binding motifs enriched within 2 kilobases of the transcription start sites of Mediterranean genes and one that was enriched near the transcription start sites of Western genes (FDR < 0.05; Figure 2, for all transcription factor binding motifs enriched in the regulatory regions of either set of diet genes, see Supplementary file 1). Diet altered expression of the genes encoding for seven of these 35 transcription factors, including IRF3, IRF8, MEF2C, and SP1, which drive monocyte fate and polarization in response to extracellular signals (Chistiakov et al., 2018; Günthner and Anders, 2013; Schüler et al., 2008; Scott et al., 1994; Zhang et al., 1994). Thus, some of the diet-associated changes in monocyte transcriptional profiles may be mediated by changes in the expression and cis-regulatory binding of these key transcription factors.
 
@@ -75,29 +197,37 @@ To identify putative upstream gene regulatory mechanisms, we examined whether DE
 
 **Figure 2.:** The log-odds ratio of TF binding motif enrichment in Western genes (orange) or Mediterranean genes (blue) are depicted on the x-axis. The y-axis shows the effect size of diet on the expression of the gene that encodes for the TF. Only TFs with binding motifs significantly enriched in either gene set and that were detectably expressed in our samples are shown, with those significantly affected by diet (FDR < 0.05) outlined and labeled.
 
-## Gene co-expression modules recapitulate functional role of diet-induced changes
+### Gene co-expression modules recapitulate functional role of diet-induced changes
 
 We employed a commonly used bioinformatic approach, weighted gene co-expression network analysis (WGCNA) (Langfelder and Horvath, 2008) to group genes by pattern of transcription into co-expression modules. Overall, we identified 15 modules of co-expressed genes. Module 5 was more highly expressed in Mediterranean-fed animals (Welch-Satterthwaite t(28.3)=−3.9, Holm-Bonferroni-adjusted p (pHB) = 8.1 x 10−3; see Supplementary file 1A for all co-expression modules), and was depleted for M1 genes (n = 383 genes, log odds ratio = −0.6, 95% CI = −0.8,–0.3, pHB = 5.2 x 10−5). Similar to the set of Mediterranean genes, module 5 was enriched for genes involved in the oxidation-reduction process (GO:0055114, weighted FET p = 3.1 x 10−7; for all GO terms passing an adjusted p-value threshold of 0.05, see Supplementary file 1B). While only one module was associated with higher expression in the Mediterranean diet, we found two modules, modules 8 and 10, that were more highly expressed in Western-fed animals (module 8: t(32.3)=3.5, pHB = 0.020; module 10: t(33.0)=3.1, pHB = 0.048). These two modules exhibited similar gene regulatory signatures, as both modules were enriched for regulation of transcription by RNA polymerase II (module 8: GO:0006357 (overall regulation), weighted FET p = 1.3 x 10−5; module 10: GO:0045944 (positive regulation), weighted FET p = 3.1 x 10−7). Module 10 also included more M1 genes than expected (n = 186, log odds ratio = 0.8, 95% CI = 0.5, 1.0, pHB = 1.9 x 10−7). A third module that trended toward higher expression in the Western diet, module 9 (t(32.2)=2.5, raw p = 0.019, pHB = 0.19), was enriched for genes involved in the inflammatory response (GO:0006954, weighted FET p = 2.4 x 10−6). Together, these results reinforce our findings that the Western diet contributes to proinflammatory polarization in a multi-faceted manner, while the Mediterranean diet can contribute to the reduction of oxidative stress. Interestingly, two modules, modules 4 and 12, were depleted for diet-associated genes (module 4: FET p = 2.1 x 10−17, module 12: FET p = 3.9 x 10−19) and were enriched for genes involved in the defense response to virus (module 4: GO:0051607, weighted FET p = 1.1 x 10−18) and the adaptive immune response (module 12: GO:0002250, weighted FET p = 8.1 x 10−9). This suggests that viral responses and adaptive immunity may be less affected by the diet.
 
-## Diet altered gene co-expression patterns
+### Diet altered gene co-expression patterns
 
 The effects of diet on the magnitude and direction of pairwise gene expression correlations were assessed for the most strongly diet-affected genes, as such effects could reveal key gene regulatory networks that are altered by diet, that may themselves be regulated by key upstream targets (de la Fuente, 2010; Gaiteri et al., 2014). To reduce the number of tests, we limited our analyses to the pairwise combinations of the top 140 DEGs (n = 9730 combinations). Of these gene pairs, many were significantly associated with each other in both diets, both positively (n = 714) and negatively (n = 332, p < 0.05; for all gene pairs tested and their correlations, see Supplementary file 1—5A), suggesting that while diet altered expression of these genes, it did not change their co-expression relationships. Drawing on a newly developed approach, ‘correlation by individual level product’ (CILP) (Lea et al., 2019), we identified 445 other gene pairs that exhibited significant differences (FDR < 0.2) in their correlation between the Mediterranean- and Western-fed monkeys (Supplementary file 1—5A; Figure 3A), suggesting that one of the experimental diets altered the coherence between the genes (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig3-v3.jpg)
 
-**Figure 3.:** (A) The Pearson correlation between each pair of genes within each of the experimental diets. Gene pairs that were significantly differently correlated between diets are highlighted in blue (n = 445 significant pairs, FDR < 0.2). (B) Of the genes involved in significant pairs, some were paired with more genes than expected by chance, called ‘hub’ genes (n = 16 hub genes; dotted black line is the maximum number of significant pairs expected by chance). The strongest hub gene was the non-coding RNA RF00283. (C) Residual normalized expression of RF00283 is significantly greater in Western- than Mediterranean-fed monkeys (β = 0.51, FDR = 2.3 x 10diet−6). (D) Example of a differential correlation involving RF00283. Residual normalized expression of RF00283 is plotted against expression of KLF11, a differentially-expressed transcription factor that regulates insulin and has been associated with type II diabetes in humans (Neve et al., 2005). The two genes were more highly expressed in Western monocytes, were positively correlated with one another in Western-fed monkeys (Pearson’s r = 0.61, p = 4.2 x 10−3), were negatively correlated in Mediterranean-fed monkeys (Pearson’s r = −0.63, p = 0.011), and were differentially correlated between the two diets (p = 4.1 x 10−5, FDR = 0.11).
+**Figure 3.:** (A) The Pearson correlation between each pair of genes within each of the experimental diets. Gene pairs that were significantly differently correlated between diets are highlighted in blue (n = 445 significant pairs, FDR < 0.2). (B) Of the genes involved in significant pairs, some were paired with more genes than expected by chance, called ‘hub’ genes (n = 16 hub genes; dotted black line is the maximum number of significant pairs expected by chance). The strongest hub gene was the non-coding RNA RF00283. (C) Residual normalized expression of RF00283 is significantly greater in Western- than Mediterranean-fed monkeys (βdiet = 0.51, FDR = 2.3 x 10−6). (D) Example of a differential correlation involving RF00283. Residual normalized expression of RF00283 is plotted against expression of KLF11, a differentially-expressed transcription factor that regulates insulin and has been associated with type II diabetes in humans (Neve et al., 2005). The two genes were more highly expressed in Western monocytes, were positively correlated with one another in Western-fed monkeys (Pearson’s r = 0.61, p = 4.2 x 10−3), were negatively correlated in Mediterranean-fed monkeys (Pearson’s r = −0.63, p = 0.011), and were differentially correlated between the two diets (p = 4.1 x 10−5, FDR = 0.11).
 
 We also identified 16 ‘hub’ genes that exhibited differential correlations with more partner genes than expected by chance (Figure 3B, for all genes included in one or more differentially correlated gene pairs, see Supplementary file 1—5B). These hub genes were enriched for genes encoding transcription factors (OR = 7.40, FET p = 7.0 x 10−3), including SOX4 (essential for normal insulin secretion and glucose tolerance) and NR4A2 (involved in lipid, carbohydrate, and energy metabolism Goldsworthy et al., 2008; Pearen and Muscat, 2010), providing further support for immunological and metabolic reprogramming induced by our diet manipulation. Interestingly, the hub gene involved in the greatest number of differentially-correlated gene pairs was RF00283, aka SCARNA18, a non-coding RNA that has been associated with BMI, HDL cholesterol, and aging in human genome-wide association studies (Davis et al., 2017; Dluzen et al., 2018; Kanai et al., 2018; Tachmazidou et al., 2017; Figure 3B–D). This small nucleolar RNA is thus a key transcriptional regulator that is altered by diet and has a cascading effect on other genes and pathways.
 
-## Diet altered social and affective behavior
+### Diet altered social and affective behavior
 
 In order to understand how diet may impact behavior and how both may interact to impact health, behavioral data were collected weekly during two 10 min focal observations. These data were collected during both the baseline (2 hr/monkey total) and experimental phases (mean = 17.6 hr/monkey total) of the study. There were no significant differences in behavior between assigned diet groups during the baseline phase while consuming chow (Figure 4—figure supplement 1A–B). However, after 15 months on experimental diets, the two diet groups differed significantly in behavior. The Mediterranean group spent more time in body contact (Mann-Whitney U = 284, Holm-Bonferroni-adjusted p (pHB) = 1.1 x 10−5) and resting (U = 269, pHB = 1.6 x 10−3), while those fed the Western diet spent more time alone (U = 255, pHB = 4.9 x 10−3 Figure 4A; see Figure 4—figure supplement 1C–D for behaviors during experimental diet consumption).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig4-v3.jpg)
+
+**Figure 4.:** (A) Three behaviors were significantly different between the two diet groups. Monkeys fed the Mediterranean diet spent more time in body contact (Holm-Bonferroni adjusted p (pHB) = 1.1 x 10−5) and resting (pHB = 1.6 x 10−3) than Western-fed monkeys. Monkeys eating the Western diet spent more time alone than Mediterranean-fed monkeys (pHB = 4.9 x 10−3). (B) Principal component 2 (PC2) explained 19% of the variance in behavior and was the only PC significantly correlated with diet. (C) PC2 represents a composite measure of diet-altered behavior, as individual loadings onto PC2 (‘DAB scores’; 19% of all variance in behavior) were significantly higher in Mediterranean diet compared to Western diet animals (t(26.8) = 4.13, p = 3.2 x 10−4). (D) Six of the 20 behaviors observed are significantly correlated with DAB score (pHB < 0.05). Here, significant correlations with DAB score in which behaviors are more frequent in Mediterranean diet or Western diet monkeys are indicated with blue or orange points, respectively. Figure 4—figure supplement 1. There were no differences between the Western- and Mediterranean-fed groups in the rates (A) or duration (B) of behaviors during the baseline phase, prior to diet manipulation. The boxplots depict the per-group medians and interquartile ranges for each behavior. Animals fed the Western diet are colored orange, and those fed the Mediterranean diet colored blue. Significant differences between the diet groups in the rates (C) or duration (D) of behaviors during the experimental phase are indicated (Mann-Whitney U test, Holm-Bonferroni adjusted p < 0.05 *, p < 0.01 **, p < 0.001 ***). Figure 4—figure supplement 2. The first axis of variance in behavior—which explained 31% of the overall variance—was significantly positively correlated with dominance rank across diets (Pearson’s r = 0.84, p = 3.9 x 10−10). All monkeys are assigned a rank between 0 and 1 based on the outcomes of dyadic interactions, where a higher rank indicates more dominant social status.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig4-figsupp1-v3.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68293/elife-68293-fig4-figsupp2-v3.jpg)
 
 Principal component analysis was conducted to identify key behaviors associated with one another (Benito et al., 2018; Seltmann et al., 2018). Behaviors associated with dominance interactions—including aggression, submission, and being groomed—all loaded heavily onto the first principal component, which explained 32% of the overall variance in behavior and did not differ between diets (Welch-Satterthwaite t(30.4) = −0.3, p = 0.70; for relationship between dominance rank and PC1, see Figure 4—figure supplement 2; for further discussion of social status in these animals, see Appendix 1).
 
 The second principal component explained 19% of the variance in behavior (Figure 4B) and differed significantly between the two diets (t(26.8)=4.1, p = 3.2 x 10−4; Figure 4C). No other principal component of behavioral phenotypes was significantly correlated with diet (Figure 4B). PC2 captured socially relevant behaviors that also differed between the diets and thus represents a composite of diet-altered behaviors (hereafter DAB). Specifically, DAB score (i.e. an individual’s PC2 projection) was positively correlated with percent of time spent in body contact, indicative of social integration (Pearson’s r = 0.89, pHB = 1.0 x 10−11; Figure 4D), and higher in Mediterranean-fed animals. Conversely, percent of time spent alone was associated with lower DAB scores (Pearson’s r = −0.85, pHB = 3.0 x 10−9), and was higher in animals fed the Western diet. Previous work has validated a behavioral index of anxiety in nonhuman primates (rate of self-grooming and scratching) (Coleman et al., 2011; Maestripieri et al., 1992; Schino et al., 1996; Shively et al., 2015; Troisi et al., 2000; Troisi, 2002), which loaded heavily onto PC2 and is significantly negatively correlated with DAB score (Pearson’s r = −0.53, pHB = 0.019). Thus, PC2 (DAB) captured a measure of social integration associated with consuming a Mediterranean-like diet, and social isolation and anxiety associated with consuming a Western-like diet.
 
-## Diet-altered behaviors and monocyte gene expression as mediators
+### Diet-altered behaviors and monocyte gene expression as mediators
 
 Given the effects of diet on both behavior and gene expression, we used mediation analyses to explore the potential influences of one on the other. Of the 4900 DEGs, 29% were also significantly associated with the DAB score in a univariate model (n = 1,414, FDR < 0.05). Of these, DAB score significantly mediated the effect of diet on the expression of 1199 genes (24% of all DEGs, p < 0.05; Figure 5A). Among these DAB-mediated genes, DAB score mediation accounted for significantly more of the total effect of diet in Western genes (mean = 52.6%, s.d. = 12.6%), than Mediterranean genes (mean = 45.3%, s.d. = 10.1%; Mann-Whitney U = 1.1 x 105, p = 6.4 x 10−25; Figure 5B). These DAB-mediated genes were also significantly more likely to be Western genes than Mediterranean genes (n = 712 Western genes, 59%, two-sided binomial test p = 1.5 x 10−21), and were enriched in regulation of inflammatory response (GO:0050727, weighted FET p = 2.9 x 10−3; for all GO terms significantly enriched in DAB-mediated genes, see Supplementary file 1—6A-C). Together, these observations suggest that the effect of diet on monocyte gene regulation may partially be due to diet-induced changes in key social behaviors.
 
@@ -107,11 +237,11 @@ Given the effects of diet on both behavior and gene expression, we used mediatio
 
 We also tested the hypothesis that peripheral immune cell gene expression mediated the effects of diet on behavior in the 27% of DEGs for which monocyte gene expression significantly predicted DAB in a univariate model (n = 1324, FDR < 0.05). Gene expression mediated the effect of diet on DAB score in 898 genes (18% of all DEGs, p < 0.05; Figure 5A). Almost all of these genes (99%; 889/898) were in the set of genes for which behavioral changes mediated changes in gene expression. The genes that mediated the effect of diet on DAB score were more likely to be Western genes (n = 523 Western genes, 58%, two-sided binomial test p = 4.6 x 10−14); however, the portion of the total effect of diet that was accounted for by gene expression did not vary between Western (mean = 27.1%, s.d. = 5.2%) and Mediterranean genes (mean = 27.1%, s.d. = 4.5%; Mann-Whitney U = 1.0 x 105, p = 0.55; Figure 5C).
 
-## Diet differentially induced expression of the conserved transcriptional response to adversity (CTRA) genes
+### Diet differentially induced expression of the conserved transcriptional response to adversity (CTRA) genes
 
 Additional analyses focused on expression of a well-studied set of social adversity-responsive genes known as the ‘conserved transcriptional response to adversity’ (CTRA) (Cole et al., 2015) in the Western- and Mediterranean-fed animals in our study. Animals fed a Western diet exhibited significantly higher expression of pro-inflammatory genes included in the CTRA (Mann-Whitney U = 222, p = 0.016) and lower expression of antiviral- and antibody-related CTRA genes (Mann-Whitney U = 82, p = 0.023; Figure 1—figure supplement 2; for categorization of CTRA genes, see Supplementary file 1—1A).
 
-## Western diet induced a mosaic response
+### Western diet induced a mosaic response
 
 Western diet induced substantial variation in multiple phenotypes, including body weight, gene expression, and behavior; consistent with previous studies demonstrating that some individuals may be more resistant (or susceptible) to the effects of a Western diet (Shively et al., 2009), presumably due to genetic variation or past environmental exposures. However, we were unable to identify consistencies in individual responsiveness across the phenotypes (Appendix 2—figure 1). For instance, monkeys that exhibited a strong gene regulatory response to the Western diet did not necessarily exhibit a large increase in body weight or a strong negative DAB score (all p > 0.2). Furthermore, change in body weight did not significantly predict gene expression in monocytes (all FDR > 0.2). Western diet fed individuals thus exhibited a mosaic response to diet across multiple phenotypes, presumably involving interactions between diet, stress, behavior, environment, microbiome, and genome/epigenome.
 
@@ -145,53 +275,53 @@ In summary, we found that diet significantly alters monocyte polarization and ge
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Forty-three adult (age: mean = 9.0, range = 8.2–10.4 years, estimated by dentition), female cynomolgus macaques (Macaca fascicularis), were obtained (Shin Nippon Biomedical Laboratories, USA SRC, Alice, TX) and housed at the Wake Forest School of Medicine Primate Center (Winston-Salem, NC) (Shively et al., 2019). Briefly, the monkeys were socially housed in groups of 3–4 and consumed standard monkey chow (Table 1) during an eight-month baseline phase, after which pens were assigned to receive either the Western (five groups, n = 21) or Mediterranean (six groups, n = 22) diet, balanced on pretreatment characteristics that reflected overall health, including body weight, body mass index, circulating basal cortisol, total plasma concentrations, and plasma triglyceride concentrations (Shively et al., 2019). Two monkeys did not tolerate the experimental diet, and were switched to standard monkey chow, three animals died during the course of the study (discussed in Frye et al., 2021), and three samples were removed for insufficient CD14 purification (see ‘Removal of Batch Effects’ below), resulting in a final sample size of 35 animals (Western n = 20, Mediterranean n = 15). All animal manipulations were performed according to the guidelines of state and federal laws, the US Department of Health and Human Services, and the Animal Care and Use Committee of Wake Forest School of Medicine.
 
-## Experimental diets
+### Experimental diets
 
 Experimental diets (Table 1) were formulated to be isocaloric with respect to protein, fat, and carbohydrates, and identical in cholesterol content (~ 320 mg/2000 kilocalories (Cals)/day) as previously described (Shively et al., 2019).
 
-## Behavioral characterization
+### Behavioral characterization
 
 Behavioral data were collected weekly during two 10 min focal observations, balanced for time of day, for 6 weeks during the baseline phase (2 hr/monkey total) and for 14 months during the experimental phase (mean = 17.6 hr/monkey total). Behaviors recorded included the frequency of aggressive and submissive behaviors, time spent in positive social interactions such as sitting in body contact and grooming or alone, and anxious behavior defined as self-directed behaviors including self-grooming and scratching (Maestripieri et al., 1992; Schino et al., 1996; Shively et al., 2015; Troisi et al., 2000; Troisi, 2002). Behaviors were collected as previously described (Shively, 1998), and combined into summary behaviors (e.g. ‘aggression’ was a combination of all total, noncontact, contact aggressive events). No significant differences in behavior were observed between the diet groups while consuming standard monkey chow diet during the baseline period (Figure 4—figure supplement 1A,B). In order to quantify the overall impact of diet on behavior, we conducted a principal component analysis using the R package FactoMineR (Lê et al., 2008). We corrected for multiple hypothesis tests using the Holm-Bonferroni adjusted p-values.
 
-## Blood sample collection
+### Blood sample collection
 
 The monkeys were trained to run out of their social groups on voice command. Blood was drawn via venipuncture within 9 min of entering the building. Blood was collected into EDTA-containing tubes, mixed with an equal amount of PBS without calcium or magnesium, and overlaid on a 90% Ficoll-Paque Plus/10% PBS solution in LeucoSep tubes followed by centrifugation at 800 x g for 20 min. Isolated PBMCs were then immediately used for the collection of CD14+ monocytes by positive selection using a Miltenyi bead-based protocol following manufacturer’s instructions (Miltenyi Biotec, Bergisch Gladbach, Germany). After assessing cell viability and numbers, CD14+ monocytes were stored in 85% FBS, 15% DMSO sterile freezing media at −80°C and transferred to liquid nitrogen for storage until RNA extraction. Blood samples were collected from all subjects in a given social group on the same day and collection order was alternated between diets and randomized by group.
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 RNA was extracted from monocytes using the AllPrep DNA/RNA Mini Kit (Qiagen, Inc, Hilden, Germany), and quantified using a NanoDrop spectrophotometer and Agilent 2100 Bioanalyzer with RNA 6000 Nano chips (Agilent Technology, Inc, Santa Clara, CA). RNA libraries were prepared for sequencing by the Cancer Genomics Shared Resource (Wake Forest School of Medicine, Winston-Salem, NC) using the TruSeq-stranded total RNA kit (Illumina), which includes a ribosomal depletion step. The RNA-seq libraries were then sequenced using single-end 76 bp reads on an Illumina NextSeq 500 to an average read depth of 34.5 million reads per sample (range 25.9–41.6 million reads). Reads were mapped to the Macaca fascicularis reference genome (Macaca_fascicularis_5.0, v 93, Ensembl) (Kersey et al., 2018; Kinsella et al., 2011) using HiSat2 (Kim et al., 2015) and then converted to a sample-by-gene read count matrix using featureCounts (Liao et al., 2014) (median = 38.0%; range 24.5–50.4% of reads mapped to exons). Sample processing order was randomized and where possible all samples were manipulated simultaneously so as to avoid introducing batch effects.
 
-## Read count normalization and removal of batch effects
+### Read count normalization and removal of batch effects
 
 First, we removed genes with low expression (median reads per kilobase per million reads mapped < 1), which resulted in 12,240 genes for downstream analyses. We normalized read counts using the voom function of the R package limma (Ritchie et al., 2015). While investigating monocyte purity, three samples differed in CD3 gene expression from the rest by several orders of magnitude. We concluded that these samples were contaminated with CD3+ cells (i.e. inefficient CD14 purification, Appendix 2—figure 2) and excluded them from all analyses, leaving a final sample size of 35 monkeys (n = 20 fed the Western diet, n = 15 Mediterranean diet). To control for batch effects related to RNA quality and monocyte purity, we calculated the residual gene expression from a model of normalized gene expression as a function of CD14 expression, CD3 expression, RNA integrity, and RNA concentration. These residual gene expression values were used for all subsequent analyses.
 
-## Modeling effect of diet on gene expression
+### Modeling effect of diet on gene expression
 
 In order to determine which genes were significantly affected by diet, we modeled the residual expression of each gene as a function of diet using a linear mixed effects model controlling for relatedness among monkeys using the R package EMMREML (Akdemir and Godfrey, 2015). Relatedness was estimated using the ngsRelate program (Hanghøj et al., 2019) with SNP genotypes inferred from the RNA-seq reads using bcftools mpileup (Li et al., 2009). We calculated an empirical false discovery rate (FDR) for each gene using a permutation-based approach (Snyder-Mackler et al., 2016), and report genes that passed at FDR < 0.05. To examine global patterns of variation in gene expression, we conducted principal component analysis on the correlation matrix of normalized residual gene expression using the prcomp function in R.
 
-## Enrichment analyses
+### Enrichment analyses
 
 Gene ontology (GO) enrichment analyses were conducted using Fisher’s Exact Tests and the weight01 algorithm to test for enrichment implemented in the R package topGO (Alexa and Rahnenfuhrer, 2019). For a more targeted analysis of M1 and M2 specific genes, we identified a set of DEGs in our data set that were previously found to be involved in monocyte polarization (FANTOM consortium et al., 2014) (638 proinflammatory and 138 regulatory), which we used to explore monocyte polarization in the current study. We calculated the proportion of genes more highly expressed in the Mediterranean- and Western-fed animals in each polarization category and tested for significance using a permutation test (n = 100,000 permutations). To compare the DEGs identified to genes implicated in human health, we utilized gene sets associated with 103 complex human traits and diseases identified by a prior study (Zhang et al., 2020). Fisher’s Exact Tests were used to test for enrichment of these gene sets in our Western or Mediterranean DEGs.
 
-## Transcription factor binding site analysis
+### Transcription factor binding site analysis
 
 We tested for enrichment of transcription factor binding motifs within 2 kb (upstream or downstream) of the transcription start sites of differentially expressed ‘Western genes’ or ‘Mediterranean genes’ (FDR < 0.05) using the program HOMER (Heinz et al., 2010) and equivalent regions around the transcription start sites of all genes expressed in these data as the background set for enrichment testing. We searched for known vertebrate transcription factor binding motifs and report the TF motifs passing a threshold of FDR < 0.05.
 
-## Gene-gene co-expression analysis
+### Gene-gene co-expression analysis
 
 In addition to testing whether diet led to mean differences in gene expression between Western and Mediterranean animals, we also tested whether diet impacted the correlation structure among expressed genes (i.e. gene co-expression). Specifically, we employed ‘correlation by individual level product’ (CILP) (Lea et al., 2019) analyses to test whether diet affected the magnitude or direction of pairwise gene expression correlations among the top 140 DEGs (n = 9730 gene-gene pairs tested). To test whether a given pair of genes was differentially co-expressed as a function of diet, we first obtained a vector of products for each gene pair by multiplying the normalized gene expression values for two genes together. Normalization was performed by scaling expression values to mean 0 and unit variance within Mediterranean and Western subsets of the data respectively, to ensure that distributional differences between sample groups did not bias our results, following the CILP authors’ recommendations (Lea et al., 2019). Each of these vectors of products were used as the outcome variable in a linear mixed effects model implemented in the R package EMMREML (Akdemir and Godfrey, 2015), which included a fixed effect of diet and a random effect to control for genetic relatedness. To assess significance, we extracted the p-value associated with the diet effect for all 9730 gene pairs. We then repeated each linear mixed effects model 100 times after permuting diet, extracted the p-value associated with the diet effect, and used these values to calculate an empirical FDR distribution (Snyder-Mackler et al., 2016).
 
 Using this approach, we identified 445 gene pairs that were significantly differentially co-expressed as a function of diet at a 20% empirical FDR. Next, we performed two follow-up analyses to understand their biological import. First, we tested for the existence of ‘hub genes’, defined as genes that displayed differential co-expression to their tested partner genes more so than expected by chance. To define the null distribution for identifying hub genes, we randomly sampled 445 gene pairs from the set of all 9730 tested gene pairs 1000 times and calculated the number of partners a focal gene had in each sample; we considered a gene to be a significant ‘hub gene’ if it fell outside the 95th percentile of this distribution, which was equivalent to a focal gene that displayed significant differential co-expression with 13 or more of its tested partner genes. Second, we asked whether the set of ‘hub genes’ we identified were enriched for transcription factors, relative to the background set of all 140 genes tested for differential co-expression. We performed this analysis because many of the proposed mechanisms to generate large scale changes in gene co-expression patterns involve changes in transcription factor function or activity (de la Fuente, 2010; Gaiteri et al., 2014). To implement the enrichment analysis, we used the TRRUST database of known mammalian transcription factors for annotation (Han et al., 2018) paired with hypergeometric tests.
 
-## Weighted gene co-expression network analysis
+### Weighted gene co-expression network analysis
 
 We employed the commonly used approach of weighted gene co-expression network analysis (WGCNA) to identify and characterize modules of co-expressed genes. We used the WGCNA R package (Langfelder and Horvath, 2008) with a minimum module size of 30 genes and minimum module dissimilarity threshold of 0.25 to identify co-expression modules, which were then used for downstream analyses.
 
-## Mediation analysis
+### Mediation analysis
 
 To explore relationships between DAB score and differential gene expression, we conducted mediation analyses using a bootstrapping approach involving 10,000 bootstrap iterations of two models: (Model 1) the expression of each gene as a function of diet, and (Model 2) the expression of each gene as a function of diet and DAB score (Preacher and Hayes, 2004). For each bootstrap iteration, we then calculated the mediation effect (i.e. the indirect effect) of DAB score as the difference between the effect size of diet in Model 1 (βdiet) and Model 2 (β’diet). We considered there to be a mediation effect when the 90% confidence interval for the indirect effect (βdiet-β’diet) did not include zero.
 

@@ -190,37 +190,41 @@ In India, the first case of Covid was reported on January 30, 2020 (Andrews et a
 
 ## Results
 
-## Seropositivity varied widely across India
+### Seropositivity varied widely across India
 
 In 10,427 subjects from over 17 states and 2 union territories, the average seropositivity was 10.14% (95% confidence interval [CI] 9.6–10.7), but varied widely across locations (Figure 1). We found that 95% of the seropositive subjects also had significant neutralizing activity, suggesting at least partial immunity (Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66537/elife-66537-fig1-v2.jpg)
 
-**Figure 1.:** Figure 1—source data 1.Figure 2A,B.Lab, district, and date of collection (DOC) (columns A–C), total samples collected, number of seropositive samples, seropositivity in percentage (rounded off), and number of samples tested and found positive for neutralizing antibody (NAB). Columns (E–I) Number of confirmed cases and tests done for respective states 15 days and prior and after the DOC. Columns (L–N) Data obtained from http://www.covid19India.org. State data has been utilized as a surrogate to city/district data for city/district data was not available for number of cases/tests done for many.
-
-## Seropositivity, population density, and trajectory of new infections
+### Seropositivity, population density, and trajectory of new infections
 
 As expected from the known outward spread of infection from large Indian cities, seropositivity was greater in regions with higher population density (Figure 2A). Changes in test positivity rate (TPR) are a relatively robust marker of the local level of transmission and are preferred when absolute number of tests or test rates are variable, as was the case here. Lab-wise seropositivity was correlated with the regional change in TPR. By this measure, regional transmission of SARS-CoV2 was inversely correlated to local seropositivity (Figure 2B). Seropositivity of 10% or more was associated with reductions in TPR, which may mean declining transmission (Figure 2—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66537/elife-66537-fig2-v2.jpg)
 
-**Figure 2.:** (A) Population density-based seropositivity, an overall p value of <0.0001 was obtained on one-way ANOVA. (B) Change in COVID19 test positivity rate (%) for states (y-axis) against observed seropositivity of labs/centers in the state (x-axis). A negative slope reflects declining test positivity rate with increase in seropositivity.Figure 2—source data 1.Figure 2A, B.Lab, district, and date of collection (DOC) (columns A–C), total samples collected, number of seropositive samples, seropositivity in percentage (rounded off), number of samples tested and found positive for neutralizing antibody (NAB). Columns (E–I) Number of confirmed cases and tests done for respective states 15 days and prior and after the DOC. Columns (L–N) Data obtained from http://www.covid19India.org. State data has been utilized as a surrogate to city/district data for city/district data was not available for number of cases/tests done for many.
+**Figure 2.:** (A) Population density-based seropositivity, an overall p value of <0.0001 was obtained on one-way ANOVA. (B) Change in COVID19 test positivity rate (%) for states (y-axis) against observed seropositivity of labs/centers in the state (x-axis). A negative slope reflects declining test positivity rate with increase in seropositivity.
 
-## Survey-based correlates of seropositivity
+### Survey-based correlates of seropositivity
 
 Out of 861 seropositive subjects who also provided data on symptomatology, 647 subjects (75.3%) did not recall any of the nine symptoms asked for (two of these did not provide gender data) (Supplementary file 1). Among the minority of subjects with symptoms, the most reported symptom constellation was those of a mild flu-like disease with fever (~50%) as the most frequent symptom. Loss of smell or taste was uncommonly reported (~25% of symptomatic subjects) (Supplementary file 2).
 
 We further examined associations of other available variables with seropositivity to explore potential factors that modulate risk of infection in India. Apart from gender and age, distribution of the other variables recorded in CSIR-cohort (prevalence of smoking, diet, physiological parameters like ABO blood group type) was similar to the national averages and the sample can be considered representative (Patidar and Dhiman, 2021; Mohan et al., 2018; Government of India, 2014). The univariate associations are shown in Figure 3, separately for each gender. Due to gender imbalance and possible confounding between various parameters, significance of associations was further tested in a balanced iterative logistic regression (Figure 3—figure supplement 1). The strongest gender-independent associations were with occupation and mode of transport. Outsourced staff performing support services such as security, housekeeping, etc., and subjects using public transport were more likely to be seropositive. In males, smoking and vegetarian diet was associated with lower seropositivity.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66537/elife-66537-fig3-v2.jpg)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66537/elife-66537-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Odds ratio of full dataset and sampled dataset obtained from model. (B) Odds ratio, p value, and variance inflation factor (VIF) for sampled dataset with iterations on regression model. For diet: non-vegetarian against vegetarian; for smoking: non-smoking against smoking; for transportation: public against private; for occupation: outsourced staff against staff; for gender: male against female.
+
 Blood group type was reported for 7496 subjects. Blood group distribution of subjects in our study was similar to national reference based on a recent systematic review (Patidar and Dhiman, 2021). Seropositivity was significantly different between different groups, being highest for blood group type AB (10.19%) followed by B (9.94%), O (7.09%), and A (6.97%). Blood group O was found to be associated with a lower seropositivity rate, with an odds ratio (OR) of 0.76 (95% CI 0.64–0.91, p=0.018) vs. non-O blood group types, while B appeared to be at high risk with an OR of 1.36 (95% CI 1.15–1.61, p=0∙001). While blood group A had an OR of 0.78, the association was not found to be significant (p=0.10) and a similar observation was made with blood group AB (p=0.35), it had an OR of 1.27 (Supplementary file 3). Rh factor was not found to have a significant association with seropositivity (p=0.35).
 
-## Stability of humoral response to SARS-CoV-2
+### Stability of humoral response to SARS-CoV-2
 
 Of 607 subjects whose samples were collected again at 3 months, anti-nucleocapsid (anti-NC) antibody levels were similar or higher for most, with 17 (2.8%) becoming seronegative (Figure 4A). In contrast, 34 subjects (5.6%) did not have neutralizing activity based on a surrogate measure (>20% inhibition of receptor-spike protein binding; Figure 4B). Of 175 subjects whose samples were collected again at 5–6 months, 8 (4.6%) became seronegative (Figure 4C). In contrast, neutralizing activity was not present in 31 (17.7%) subjects (Figure 4D, Figure 4—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66537/elife-66537-fig4-v2.jpg)
 
-**Figure 4.:** A) and neutralizing activity (B) level at baseline (x-axis) and after 3 months (y-axis).Antibody levels (C) and neutralizing activity (D) level at baseline (x-axis) and after 5–6 months (y-axis).Figure 4—source data 1.
+**Figure 4.:** Antibody levels (C) and neutralizing activity (D) level at baseline (x-axis) and after 5–6 months (y-axis).
 
 ## Discussion
 
@@ -238,20 +242,24 @@ The aggregate seropositivity of 10.14% in our multicentric study suggests that 
 
 ## Materials and methods
 
-## Study design, sampling, and data collection
+### Study design, sampling, and data collection
 
 The longitudinal cohort study was approved by the Institutional Human Ethics Committee of CSIR-IGIB vide approval CSIR-IGIB/IHEC/2019–20. The participation was voluntary, and participants had to fill an online informed consent with a consent to publish and share findings and deidentified data. Online statistical tool was utilized to calculate the minimum sample size for estimating seropositivity of about 5% with 10% precision (0.005) with 95% confidence to be 7300 (Dhand and Khatkar, 2014). In this study, we enrolled >10,000 subjects. 10,427 adult subjects working in the CSIR laboratories and their family members enrolled for the study based on voluntary participation. Informed consent was obtained from all the participants, and the samples were collected maintaining all recommended precautions. Blood samples (6 ml) were collected in EDTA vials from each participant, and antibodies to SARS-CoV-2 NC antigen were measured using an Electro-chemiluminescence Immunoassay (ECLIA)-Elecsys Anti-SARS-CoV-2 kit (Roche Diagnostics) as per the manufacturer’s protocol. This approved assay is considered a method of choice when a single test is to be deployed (Krüttgen et al., 2021). A Cut-off index COI >1 was considered seropositive. Positive samples were further tested for neutralizing antibody (NAB) response directed against the spike protein using GENScript cPass SARS-CoV-2 Neutralization Antibody Detection Kit (GenScript, USA), according to the manufacturer’s protocol. This is a blocking ELISA used for qualitative detection of total neutralizing antibodies against SARS-CoV-2 virus in plasma. A value of 20% or above was considered to have neutralizing ability.
 
 All the participants were requested to fill an online questionnaire, which included information on date of birth, gender, blood group, type of occupation, history of diabetes, hypertension, cardiovascular disease, liver and kidney disease, diet preferences, mode of travel, contact history, and hospital visits. These forms were then downloaded in MS Excel data format and merged with registration forms filled at the time of sample collection based on unique IDs.
 
-## Data and statistical analysis
+### Data and statistical analysis
 
-Region-wise and total seropositivity was calculated from the fraction of samples positive for antibodies to SARS-CoV-2 NC antigen. Data regarding RT-PCR/rapid antigen testing and positive cases was gathered from http://www.covid19India.org. Change in TPR, a robust parameter for estimating the level of infection transmission when the level of testing is variable, was calculated as per the following equation:ChangeinTPR=(TPR15DaysafterDOC−TPR15DaysbeforeDOC)MeanofTPR15DaysPriorand15DaysAfter∗100
+Region-wise and total seropositivity was calculated from the fraction of samples positive for antibodies to SARS-CoV-2 NC antigen. Data regarding RT-PCR/rapid antigen testing and positive cases was gathered from http://www.covid19India.org. Change in TPR, a robust parameter for estimating the level of infection transmission when the level of testing is variable, was calculated as per the following equation:
+
+$$
+ChangeinTPR=\frac{(TPR15DaysafterDOC−TPR15DaysbeforeDOC)}{MeanofTPR15DaysPriorand15DaysAfter}∗100
+$$
 
 *DOC = date of collection.
 
 IGIB, New Delhi, and NAL, Bengaluru, were removed from this change in TPR analysis for the sample collection was spread over 2–3 weeks in these labs. Questionnaire-based variables were assessed for response types and blank fields, that is, responses that were not provided by the participants of the survey. Based on multiple response types for each variable, categories were made to assign the response to either of the categories. For visualization, ggpubr (v0.4.0), ggrepel (v0.8.2), and ggplot2 (v3.3.2) packages were used in R. No data imputation was carried out. Chi-square test was performed to evaluate variables that had a significant association with outcome of being tested positive (p<0.05) along with OR with 95% CI. An adjusted p value was obtained through Bonferroni correction method for multiple comparison testing. Following the chi-square test, an iterative logistic regression was carried out on a balanced dataset. Variance inflation factor (VIF) was separately evaluated to assess multicollinearity. Statistical analysis and model development were carried out with visualization in R programming environment version 3.6.1, MS Excel 2016, and OriginPro V2021; faraway (v1.0.7) package was utilized for estimation of VIF.
 
-## Role of the funding source
+### Role of the funding source
 
 The sponsor of this study had no role in the study design, data collection, data analysis, data interpretation, or writing of the report. The corresponding authors had full access to all the data in the study and had final responsibility for the decision to submit for publication.

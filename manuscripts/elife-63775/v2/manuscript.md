@@ -34,13 +34,27 @@ Our study explains the molecular drivers of adaptability of the tip domain and i
 
 ## Results
 
-## Creating an unbiased library of phage variants using ORACLE
+### Creating an unbiased library of phage variants using ORACLE
 
 ORACLE is a high-throughput precision phage genome engineering technology designed to create a large, unbiased library of phage variants to investigate sequence–function relationships in phages. ORACLE overcomes three major hurdles. First, phage variants are created during the natural infection cycle of the phage, which eliminates a common bottleneck from transforming DNA libraries. By recombining a donor cassette containing prespecified variants to a targeted site on the phage genome, ORACLE allows sequence programmability and generalizability to phages with transformable bacterial hosts capable of maintaining a plasmid library. Second, ORACLE minimizes library bias that can rapidly arise due to fitness advantage or deficiency of any variant on the propagating host that may then be amplified due to exponential phage growth. Minimizing bias is critical because variants that perform poorly on a propagating host but well on targeted hosts may disappear during propagation. Third, ORACLE prevents extreme abundance of wildtype over variants, which allows for resolving and scoring even small functional differences between variants. The development of this technology was necessary to overcome challenges with existing engineering approaches for creating a large, unbiased phage library. Direct transformation of phage libraries, while ideal for creating one or small groups of synthetic phages, will not work because phage genomes are typically too large for library transformation (Ando et al., 2015; Kilcher et al., 2018; Marinelli et al., 2008; Marinelli et al., 2019). Homologous recombination has low, variable recombination rates and high levels of wildtype phage are retained, which mask library members (Pires et al., 2016; Yehl et al., 2019). Libraries of lysogenic phages could potentially be made using conventional bacterial genome engineering tools as the phage integrates into the host genome. However, this approach is not applicable to obligate lytic phages. Our desire to develop ORACLE for obligate lytic phages is motivated by their mandated use for phage therapy. Any phage, including lysogenic phages, with a sequenced genome and a transformable host that can maintain a plasmid library should be amenable to ORACLE.
 
 ORACLE is carried out in four steps: (a) making acceptor phage, (b) inserting gene variants through recombination, (c) accumulating recombined phages, and (d) expressing the library for selection (Figure 1A). An ‘acceptor phage’ is a synthetic phage genome where the gene of interest (i.e., tail fiber) is replaced with a fixed sequence flanked by Cre recombinase sites to serve as a landing site for inserting variants (Figure 1—figure supplement 1). We created T7 acceptor phages by assembling PCR fragments of the phage genome in yeast (Ando et al., 2015; Jaschke et al., 2012) (see Materials and methods). T7 acceptor phages lacking a wildtype tail fiber gene cannot plaque on E. coli and do not spontaneously reacquire the tail fiber during propagation (Figure 1B, Figure 1—figure supplement 2A). Furthermore, the T7 acceptor phages have no plaquing deficiency relative to wildtype when the tail fiber gene is provided from a helper plasmid (Figure 1—figure supplement 2A). Thus, the tail fiber gene is decoupled from the rest of the phage genome for interrogation of function. Next, phage variants are generated within the host during the infection cycle by Optimized Recombination by inserting tail fiber variants from a donor plasmid into the landing sites in the acceptor phage using site-specific recombination. To minimize biasing of variants during propagation, a helper plasmid constitutively provides the wildtype tail fiber in trans such that all progeny phages can amplify comparably regardless of the fitness benefit or deficient of any variant. At this stage, we typically have approximately 1 recombined phage among 1000 acceptor phages (Figure 1C). To enrich recombined phages in this pool, we passage all progeny phages on E. coli expressing Cas9 and a gRNA targeting the fixed sequence flanked by recombinase sites we introduced into the acceptor phage. The helper plasmid is retained during this stage to continue minimizing bias by providing the wildtype tail fiber in trans. As a result, only unrecombined phages will be inhibited while recombined phages with tail fiber variants are Accumulated without bias. The Cas9-gRNA system successfully inhibits acceptor phages but has no effect on plaquing of untargeted phages (Figure 1—figure supplement 2A–D). Recombined phages were highly enriched by over one thousandfold in the phage population when an optimized gRNA targeting the fixed sequence was used, whereas a randomized control gRNA yielded no enrichment of recombined phages (Figure 1D, Figure 1—figure supplement 2E, F). In the final step, phages are propagated on E. coli which lack the helper plasmid that previously provided the wildtype tail fiber in trans to prevent bias. In this Library Expression, propagation on this host allows for full expression of the library variant – this is the first time during library creation that the variant is fully expressed on the phage particle. We sequenced the distribution of the library of tail fiber variants integrated on the phage genome after ORACLE. We compared this distribution to the distribution of variants on the recombination plasmid library to evaluate how effective ORACLE was at integrating variants and preventing bias during library creation. The post-ORACLE phages were mildly skewed toward more abundant members but remained generally evenly distributed and comparable to the distribution of variants in the input donor plasmid library, retaining 99.8% coverage (Figure 1E). Comparison of variant libraries with and without DNAse treatment was well correlated (R = 0.994), indicating no unencapsidated phage genomes influenced library distribution (Figure 1—figure supplement 3). In summary, ORACLE is a generalizable tool for creating large, unbiased variant libraries of obligate lytic phages. These phage variants, including those that have a fitness deficiency on the host used to create the library, can all be characterized in a single selection experiment by deep sequencing phage populations before and after selection in a host. Compared to traditional plaque assays, this represents increased throughput by nearly 3–4 orders of magnitude.
 
-## DMS of the tip domain shows phage adaptation at molecular resolution
+![Figure 1.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the four steps of ORACLE: creation of acceptor phage, inserting gene variants (Optimized Recombination), enriching recombined phages (Accumulation) and expressing library for selection (Library Expression). Color notations are as follows: yellow triangles – Cre recombinase sites, blue colored segments – gene variants, orange colored segment – Cas9, grey colored segments – wild type phage parts including the wildtype tail fiber from the helper plasmid (B) Ability of different versions of T7 to infect E. coli 10G in stationary (dark gray bar) and exponential (light gray bar) phases by Efficiency of Plating (EOP) using exponential 10G with gp17 tail fiber helper plasmid as reference host. T7 without tail fiber (T7Δgp17) and T7 Acceptor phages (T7 Acc) cannot visibly plaque, but wildtype T7 (T7 WT), and T7 with gp17 recombined into the acceptor locus (T7 Rec) plaque efficiently. (C) Concentration of total (Total T7) and recombined (T7 Rec) phages after a single passage on host containing Cre recombinase system. Recombination rate is estimated to be ~7.19x10-4. (D) Percentage of recombined phages in total phages when using gRNA targeting fixed sequence at acceptor site T7 Acc (Targeted) or randomized gRNA (Random). (E) Histogram of abundance of variants in the input plasmid library (left) and on the phage genome after ORACLE (right) binned using log proportion centered on equal representation. All data represented as mean ± SD of biological triplicate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Schematic illustration of sequence rearrangements in acceptor phage and donor plasmid (A) before and (B) after recombinase-mediated cassette exchange (RMCE). Specific lox recombinase sites required for exchanging sequence cassettes (variant and fixed sequence) are shown. Lox sites have wild type (WT) or mutated inverted repeats (IR) and one-way RMCE can only occur if one IR is wild type, while the m2 spacer forces recombination in the correct orientation and prevents adverse recombination events (Langer et al., 2002). Deep sequencing targets the area boxed in red between the 5’ NGS region and 3’ pad on both acceptor phages and the variant library.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Efficiency of plating (EOP) measurements on E. coli 10G in stationary (dark grey bar) and exponential (light gray bar) phases for T7 acceptor phage (T7 Acc) with combinations of gp17 helper plasmid, Cas9-gRNA plasmid with a random guide (gRandom) or targeting guides 1 through 5 (gTarget, g1-g5). T7 acceptor phages cannot plaque without helper plasmid. Their plaquing is unaffected by Cas9-gRNA with a random guide (gRandom). Among five different gRNAs targeting fixed sequence, g3 shows highest targeting efficiency and was used for phage library construction with ORACLE. (B-D) The Cas9-gRNA system does not adversely affect the plaquing activity of untargeted phages. Efficiency of plating (EOP) measurements on E. coli 10G with combinations of gp17 helper plasmid, Cas9-gRNA plasmid with a random guide or targeting guide 3 (gTarget, g3) for (B) T7 phage without gp17 (T7Δgp17), (C) wildtype T7 (WT T7) and (D) acceptor T7 phage recombined with wildtype gp17 (T7 Rec). (E and F) Comparison of accumulation of recombined phages (T7 Rec) with respect to total phages using (E) 10G with gp17 helper plasmid and Cas9-gRNA (g3) and (F) 10G with gp17 helper plasmid and Cas9-gRNA (gRandom). All data shown is biological triplicates (mean + SD), all EOP data uses 10G with gp17 helper as a reference host.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig1-figsupp3-v2.jpg)
+
+### DMS of the tip domain shows phage adaptation at molecular resolution
 
 DMS is a high-throughput experimental technique to characterize sequence–function relationships through large-scale mutagenesis coupled to selection and deep sequencing. The scale and depth of DMS is used to reveal sites critical for activity, host specificity, and stability in a protein. DMS has been employed to study many proteins, including enzymes, transcription factors, signaling domains, and viral surface proteins (Fowler and Fields, 2014; Lee et al., 2018; Raman et al., 2014; Romero et al., 2015).
 
@@ -48,15 +62,47 @@ Bacteriophage T7 is a podovirus that infects E. coli. T7 has a short non-contrac
 
 We generated a library of 1660 single mutation variants of the tip domain, prespecified as chip-based oligonucleotides, where all 19 non-synonymous and 1 nonsense substitution were made at each codon spanning residue positions 472–554 (Figure 2A, residue numbering based on PDB 4A0T). Using ORACLE, the library was inserted into T7 to generate variants to be selected and deep sequenced (Figure 2B) on three laboratory E. coli hosts: B strain derivative BL21, K-12 derivative BW25113, and DH10B derivative 10G. Each variant was given a functional score, F, based on the ratio of their relative abundance before and after selection consisting of an estimated four infection cycles, which was then normalized to wildtype to yield FN, where wildtype FN = 1 (Figure 2C–E, see Materials and methods). Selection on each host gave excellent correlation across biological triplicates (Figure 2—figure supplement 1). To validate the functional relevance of the screen, we hypothesized that the flexible C-terminal end (residue positions 552–554 and a three-residue extension if the stop codon is substituted) is unlikely to have any structural or host recognition role. As expected, these positions broadly tolerated nearly all substitutions across all three hosts, indicating that the functional scores likely reflect true biological effects (Figure 2C–E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig2-v2.jpg)
+
+**Figure 2.:** (A) Crystal structure and secondary structure topology of the tip domain color coded as interior loops (red), β-sheets (beige) and exterior loops (blue) (B) Functional analysis of variants by comparing their abundances pre- and post-selection on a host. (C-E) Heat maps showing normalized functional scores (FN) of all substitutions (red gradient) and wildtype amino acid (FN=1 and black dot upper left) at every position for E. coli 10G (C), BL21 (D) and BW25113 (E). Residue numbering (based on PDB 4A0T), wildtype amino acid and secondary structure topology are shown above left to right, substitutions listed top to bottom. (F) Parallel plot showing FN for enriched (FN≥2) variants on 10G, BL21, and BW25113. Coloring indicates enrichment only on 10G (grey), only on BL21 (red), only on BW25113 (blue) enriched on 10G and BL21 (green). Connecting lines indicate FN of the same variant on other hosts.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation of FN scores between biological replicates of phage variant library on multiple hosts including (A) E. coli 10G (B) BL21 and (C) BW25113. R values and trendlines are displayed for all variants (black line) and with outliers excluded (red line) for 10G with outlier points in red and all other points in grey.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Number of variants that were depleted (FN ≤ 0.1) tolerated (FN >0.1 and <2) or enriched (FN ≥ 2) after selection on (A) E. coli 10G, (B), BL21, and (C) BW25113, separated by topology of the tip domain color coded as interior loops (red), β-sheets (beige) and exterior loops (blue). (D) Average FN of enriched variants (FN ≥ 2) for 10G (orange squares), BL21 (blue circles), and BW25113 (teal triangles) ordered left to right from lowest to highest FN. (E) Alluvial distribution of enriched variants (FN ≥ 2) on 10G (upper), BL21 (middle) and BW25113 (bottom), showing wild type amino acids (left), their substitution (middle) and topological location on the structure (right). Each alluvial is colored based on the substituted amino acid and scaled by FN across hosts. Violin plots comparing (F) change in mass, (G) change in hydrophilicity, and (H) change in hydrophobicity for grouped depleted (FN ≤ 0.1) tolerated (FN >0.1 and <2) or enriched (FN ≥ 2) substitutions on E. coli 10G, BL21 and BW25113. p-values are shown if only if <0.05, the upper p-value is the result of a Kruskal-Wallis test among all three groups while pairwise p-values from a Wilcoxon test are shown linking each group.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Hierarchical clustering of phage variants based on their FN score across E. coli 10G, BL21 and BW25113. Variants are shaded in white (FN = 0) to red (FN = 2+). Only variants with an FN above the limit of detection on at least one host are included.
+
 We compared the activities of phage variants across hosts to assess their fitness and evolutionary adaptation to each host. Between the three hosts, T7 variants appeared most and least adapted to BW25113 and 10G, respectively, as evidenced by the fraction of depleted variants (FN < 0.1) after selection on each host (10G: 0.66 ± 0.03; BL21: 0.59 ± 0.01; and BW25113: 0.51 ± 0.01; all significantly different from each other with p<0.05) (Figure 2—figure supplement 2A–C). Furthermore, wildtype T7 fared relatively poorly on 10G (F = 0.77 ± 0.05), indicating a fitness impediment, but performed significantly better on BL21 (F = 2.92 ± 0.2, p < 0.01) and BW25113 (F = 2.26 ± 0.1, p < 0.01) (Figure 2—source data 1). The fitness impediment gave many more variants competitive advantage, resulting in greater enrichment (FN > 2) over wildtype on 10G (48 variants) compared to BL21 (2 variants) and BW25113 (16 variants) (Figure 2—figure supplement 2A–C). In fact, the best performing variants on 10G were 10 times more enriched than wildtype, suggesting substantially higher activity (Figure 2F, Figure 2—figure supplement 2D). Examining enriched variants on each host (FN > 2) provides compelling evidence of the tradeoff between activity and host range (Figure 2F, Figure 2—figure supplement 2E). The top ranked variants on each host were remarkably distinct from those on other hosts (except G479Q shared between 10G and BL21). Hierarchical clustering of FN across all three hosts revealed grouping of similar variants that performed better selectively on some hosts but not others (Figure 2—figure supplement 3). No variant performed exceptionally well on all hosts (FN > 2, Figure 2F); however, 406 variants were tolerated on all three hosts (Figure 2—source data 2). Thus, specialization toward a host comes at the cost of sacrificing breadth, mirroring observations made of natural phage populations (Elena et al., 2009).
 
 We investigated the global physicochemical properties and topological preferences of substitutions after selection on each host (Figure 2—figure supplement 2F–H). On 10G, there was enrichment of larger and more hydrophilic amino acids and depletion of hydrophobic amino acids (all p < 0.001, r > 0.12), which is visually striking on the heatmap (see R, K, and H substitutions in Figure 2C). In contrast, no significant enrichment or depletion was observed on BL21 (Figure 2—figure supplement 2F–H). This is consistent with our earlier observation that wildtype T7 is generally well adapted to BL21 since it had the fewest variants outperforming wildtype. We reasoned that since BL21 has been used to propagate T7 it may have already adapted well to this host over time. On BW25113, hydrophobic residues were modestly enriched (all p < 0.034, r > 0.07) (Figure 2—figure supplement 2H), a trend opposite to 10G. This provides a molecular explanation as to why high-scoring substitutions on one host fare poorly on others (Figure 2F). We mapped positions of enriched substitutions (FN ≥ 2) on each host onto the structure to determine topologically distinct patterns of substitution that may be masked in global comparisons of the entire tip domain (Figure 2—figure supplement 2E). These fall predominantly on four exterior loops (BC, DE, FG, and HI), the adjoining region (β-strand H) close to exterior loop HI, and less frequently on the ‘side’ of the tip domain. This suggests directionality to phage–bacterial interactions and orientational bias of the tip domain with respect to the bacterial surface. Directionality and orientational bias is particularly valuable information since no high-resolution structure of this phage bound to receptor exists.
 
 Several key lessons emerged from these host screens. First, single amino acid substitutions alone can generate broad functional diversity, highlighting the evolutionary adaptability of the RBP. Second, T7 can be optimized and activity can be increased, even on hosts that T7 is already considered to grow well on. Third, enrichment patterns on each host follow broad trends but have nuance at each position.
 
-## Comparison across hosts reveals regions of functional importance
+### Comparison across hosts reveals regions of functional importance
 
 Next, we sought to elucidate features of each residue unique to each host or common across all hosts. There were over 30 residues with contrasting substitution patterns between different hosts, revealing fascinating features of receptor recognition for T7 (Figure 2—source data 2). Here, we focus on five of these residues, N501, R542, G479, D540, and D520, which showed starkly contrasting patterns of selection (Figure 3A). N501 and R542 are located on exterior loops oriented away from the phage and toward the receptor (Figure 3C). In fact, R542 forms a literal ‘hook’ to interact with the receptor (Garcia-Doval and van Raaij, 2012). On 10G and BL21, only positively charged residues (R, K, and H) were tolerated at residues 501 and 542, while in contrast many more substitutions were tolerated at both residues on BW25113. One such substitution, R542Q, is the best performing variant on BW25113 (FN = 3.31) but is conspicuously depleted on 10G and BL21, suggesting that even subtle molecular disparities can lead to large biases in activity. The substitution profiles of G479 and D540 are loosely the inverse of N501 and R542 as many substitutions are tolerated on BL21 and 10G, but very few are tolerated on BW25113 (Figure 3A). We hypothesize that D540 is critical for host recognition on BW25113. Since D540, a receptor-facing position on an exterior loop, is only 6 Å from G479, it is likely that any substitution at G479 may sterically hinder D540, resulting in the noted depletion of G479 substitutions on BW25113. This hypothesis is further supported by enrichment of adjacent S541D on BW25113 (FN = 2.82, the third highest scoring substitution), while this substitution is depleted on 10G and BL21 (Figure 2—source data 2). D520 displays a third variation in substitution patterns where substitutions are generally tolerated on 10G and BW25113, but not tolerated on BL21 (Figure 3A). This loop is also oriented downward toward the receptor, and we hypothesize that D520 or the local region around this exterior loop is more important for receptor recognition in BL21 than it is for the other two hosts, mirroring the result for D540 for BW25113. Another stark contrast can be drawn at adjacent S519, where no substitutions are tolerated in BL21 or 10G but several substitutions are enriched on BW25113, indicating that substitutions can improve receptor binding on one host while reducing function on another host. Overall, these host-specific substitution patterns reveal a nuanced relationship between the tip domain composition and receptor preferences.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig3-v2.jpg)
+
+**Figure 3.:** (A) Host-specific differences in substitution patterns at five positions in the tip domain recapitulated from Figure 2. (B) Role of each position determined by aggregating scores of all substitutions in all hosts at that position. Substitutions are classified as intolerant (FN < 0.1 in all hosts), tolerant (FN ≥ 0.1 in all hosts), or functional (FN < 0.1 in one host, FN ≥ 0.1 in another host) and bar plots are shown as proportion of classified variants at that position. (C) Crystal structure of the tip domain (center) with each residue colored as intolerant, tolerant, or functional based on the dominant effect at that position, β-sheets and residues listed in (A) are labeled. Key interactions defining function and orientation are highlighted in peripheral panels.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of maximum FD values between E. coli 10G, BL21 and BW25113 to computationally predicted change in stability (ΔΔG, see methods) for each intolerant (red circles), tolerant (yellow squares) and functional (blue triangles) in the variant library.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Phenotypic classification of each position is determined by aggregating scores of all substitutions in all hosts at that position. (A) Substitutions are classified using an FN cutoff of 0.1 as intolerant (FN < 0.1 in all hosts), tolerant (FN ≥ 0.1 in all hosts), or functional (FN < 0.1 in one host, FN ≥ 0.1 in another host) as seen in Figure 3B. Variations of this cutoff (B) using an FN cutoff of 0.5 or (C) using an FN cutoff of 0.01. An alternative, more conservative approach to classifying a functional substitution requires an FN below the limit of detection (LOD) in one host and a higher FN of (D) 0.1, (E) 0.5, or (F) 1.0 in another host. All cutoff conditions broadly result in similar overall trends.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Comparison of functional results to computationally predicted change in stability (ΔΔG, see methods). Substitutions are binned as tolerated or enriched if maximum FD > 0.1 and depleted if FD < 0.1 across any strain. Substitutions are considered stabilizing if predicted ΔΔG was <10 and destabilizing if >10.
 
 We quantitatively characterized the role of every residue by integrating selection data across all hosts to reveal a functional map of the tip domain at granular resolution (Figure 3B, C, Figure 3—source data 1). We classified every residue as ‘intolerant’, ‘tolerant’, or ‘functional’ based on aggregated FN scores of all substitutions across all three hosts at every residue. Our method of classifying functional regions was robust to adjusting the FN threshold used to identify functional variants (Figure 3—figure supplement 2). Residues where the majority of substitutions were depleted were considered intolerant to substitution, while residues where at least a third of substitutions were depleted in one host and tolerated or enriched in another host were considered functional; the remaining positions were considered tolerant (see Materials and methods). The hydrophobic core comprising W474, I495, W496, I497, Y515, W523, L524, F526, I528, F535, and I548 is essential for stability and therefore is highly intolerant to substitutions (Figure 3B). Other intolerant positions include an elaborate network of salt bridge interactions involving D489, R491, R493, R508, and D512 in the interior loops, which likely constrain the orientation of the tip domain relative to the shaft (Figure 3C). Glycines generally provide conformational flexibility between secondary structure elements and normally tend to be mutable. Interestingly, several glycines (G476, G510, G522 ,and G532) are highly intolerant to substitutions. These glycines may be essential to minimize steric obstruction to adjacent larger residues, similar to G479 and D540 on BW25113 (Figure 3C). For example, G510 and G532 may facilitate formation of salt bridges in the interior loop, while G476 and G522 may facilitate a required receptor interaction in exterior loops for all three hosts.
 
@@ -66,9 +112,29 @@ We also determined if the functionally important regions could be predicted comp
 
 Overall, these results paint a complex enrichment profile for each host with some broad trends but subtle host-specific effects. These results suggest that exterior loops and some outward-facing positions in β-sheets act as a reservoir of function-switching and function-enhancing mutations, likely promoting host-specific and orientation-dependent interactions between phage and bacterial receptors. Functional positions identified by this comparison are ideal engineering targets to customize host range and activity.
 
-## Discovery of gain-of-function variants against resistant hosts
+### Discovery of gain-of-function variants against resistant hosts
 
 The tail fiber is considered a reservoir of gain-of-function variants due to its principal role in determining fitness of a phage through host adsorption (Holtzman et al., 2020; Yehl et al., 2019). We hypothesized that novel gain-of-function variants against a resistant host could be discovered by subjecting our tail fiber variant library to selection on a resistant host. To identify a resistant host, we focused on host genes rfaG and rfaD involved in the biosynthesis of surface LPS, which is a known receptor for T7 in E. coli (González-García et al., 2015; Molineux, 2001; Qimron et al., 2006). Gene rfaG (synonyms WaaG or pcsA) transfers glucose to the outer core of LPS and deletion strains lack the outer core of LPS (Pagnout et al., 2019), while rfaD (synonyms gmhD or WaaD) encodes a critical epimerase required for building the inner core of LPS (Valvano et al., 2002; Figure 4A). Deletion of either gene reduces the ability of T7 to infect E. coli by several orders of magnitude (Figure 4F). We challenged the library of T7 variants against E. coli deletion strains BW25113ΔrfaG and BW25113ΔrfaD through pooled selection and deep sequencing as before (Figure 2) and determined an FN score for each substitution on both strains (Figure 4B, C). Independent replicates showed good correlation for BW25113ΔrfaG (R = 0.99, 0.93, 0.93) but only adequate correlation for BW25113ΔrfaD (R = 0.51, 0.68, 0.39) (Figure 4—figure supplement 1). Although the scale of FN was inconsistent across replicates on BW25113ΔrfaD, the same substitutions were largely enriched in all three replicates, suggesting reproducibility of results (Figure 4—figure supplement 3). Inconsistencies in FN scores may arise due to severe loss of diversity causing stochastic differences in enrichment to become magnified across independent experiments and the four infection cycles used for selection. Separately we examined correlation after selection using only a single infection cycle, which produced more highly correlated results for BW25113ΔrfaD (R = 0.89, 0.90, 0.89) (Figure 4—figure supplement 4), indicating that fewer infection cycles may be ideal for future work with highly resistant hosts.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic view of the LPS on wildtype BW25113, BW25113ΔrfaG and BW25113ΔrfaD. (B-C) Heat maps showing normalized functional scores (FN) of all substitutions (red gradient) and wildtype amino acid (FN=1 and black dot upper left) at every position for BW25113ΔrfaG (B) and BW25113ΔrfaD (C). (D-E) Among highly enriched variants (FN ≥ 10), targeted amino acids (left), their substitutions (middle) and topological location on the structure (right) on BW25113ΔrfaG (D) and BW25113ΔrfaD (E), with each alluvial colored based on the substituted amino acid and scaled by FN. (F) EOP (mean ± SD, biological triplicates) for wildtype phage and select variants on BW25113 (Wild Type), BW25113ΔrfaG and BW25113ΔrfaD in exponential (dark gray) and stationary phases (light gray) using BW25113 as a reference host.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Correlation of FN scores between biological replicates of the phage variant library on (A) E. coli BW25113ΔrfaG and (B) BW25113ΔrfaD. R values and trendlines are displayed for all variants (black line) and with outliers excluded (red line) for BW25113ΔrfaD with outlier points in red and all other points in grey.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Number of variants that were depleted (FN ≤ 0.1) tolerated (FN >0.1 and <2) or enriched (FN ≥ 2) after selection on (A) BW25113ΔrfaG or (B) BW25113ΔrfaD, separated by topology of the tip domain color coded as interior loops (red), β-sheets (beige) and exterior loops (blue). (C) Average FN of enriched variants (FN ≥ 2) for BW25113ΔrfaD (orange squares) and BW25113ΔrfaG (blue circles) ordered left to right from lowest to highest FN. Violin plots comparing (D) change in mass, (E) change in hydrophilicity, and (F) change in hydrophobicity for grouped depleted (FN ≤ 0.1) generally tolerated (FN >0.1 and <10) or well enriched (FN ≥ 10) substitutions on E. coli BW25113ΔrfaD and BW25113ΔrfaG. The upper p-value is the result of a Kruskal-Wallis test among all three groups while pairwise p-values from a Wilcoxon test are shown linking each group; p-values are shown if only if <0.05.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Location (black circles) of truncations in the tip domain with an FN>10 on BW25113ΔrfaD. The tip domain is colored in a rainbow gradient from N (blue) to C (red) terminus.
 
 We engineered several gain-of-function T7 variants that could infect both deletion strains with activity comparable to wildtype T7 infecting susceptible BW25113 (Figure 4F). Low-sequence diversity and high enrichment scores of T7 variants indicate a strong selection bottleneck, which is consistent with diminished activity of wildtype T7 on the deletion strains. This is reflected in the significantly lower functional score of wildtype T7 on BW25113ΔrfaG and BW25113ΔrfaD (F = 0.09 ± 0.3 and F = 0.03 ± 0.2, respectively) in comparison to BW25113 (F = 2.26 ± 0.1, p < 0.001) (Figure 2—source data 1). The number of enriched variants outperforming wildtype T7 (FN ≥ 2) on the deletion strains (BW25113ΔrfaG: 55 variants, 3.3% and BW25113ΔrfaD: 68 variants, 4.1%) was over three times higher than BW25113 (16 variants, 1%) but comparable to 10G (48 variants, 2.9%) (Figure 4—figure supplement 2A, B). However, the enrichment scores of top performing variants such as G521H and G521R on BW25113ΔrfaG and S541K and N501H on BW25113ΔrfaD were over 100 times greater than wildtype T7, suggesting strong gain of function on the deletion strains (Figure 4—figure supplement 2C). Of the 78 variants with FN ≥ 2 on either deletion strain, 45 variants had FN ≥ 2 on both strains, indicating that variants that performed well on one strain typically performed well on the other strain. This implies that the enriched variants may have broad affinity for truncated LPS but cannot discriminate based on the length of the LPS. Nonetheless, hydrophilic substitutions were more strongly enriched on BW25113ΔrfaG (p < 0.001, r > 0.11), but not as significantly on BW25113ΔrfaD (p < 0.033, r < 0.10), suggesting subtle differences in surface chemical properties of deletion strains leading to host-specific enrichments (Figure 4—figure supplement 2D–F). Indeed, there were several variants with contrasting F scores on both strains such as S541T (BW25113ΔrfaD FN = 44.8, BW25113ΔrfaG FN = 0.6) and G521E (BW25113ΔrfaD FN = 0, BW25113ΔrfaG FN = 17.4), suggesting potential host preference. Most substitutions were concentrated in the exterior loops BG, FG, HI, and β-strand H, all pointing downward toward the bacterial surface, reinforcing the functional importance of these regions of the tip domain (Figure 4D, E). Notably, the most enriched variants had large positively charged substitutions (K, R, and H) akin to the enrichment pattern on 10G, suggesting that the bacterial surface of these truncated mutants likely resembles that of 10G. Our results are consistent with a recent continuous evolution study, which identified G480E and G521R as possible gain-of-function variants on a strain similar to BW25113ΔrfaD and G479R and G521S as possible gain-of-function variants on BW25113ΔrfaG (Holtzman et al., 2020), although these variants only represent a small fraction of the gain-of-function variants discovered in our study.
 
@@ -76,7 +142,7 @@ We validated the results of the pooled selection experiment by clonally testing 
 
 We introduced stop codon at every position to systematically evaluate the function of tip domains truncated to different lengths. Many truncated variants performed well, especially on BW25113ΔrfaG, which included some with FN ≥ 10 (Figure 4—source data 2). Truncated variants that performed well are distributed throughout the tip domain and are not localized to any one region (Figure 4—figure supplement 5). We clonally tested variant R525*, the best performing truncated library member (BW25113ΔrfaG FN = 9.55, BW25113ΔrfaD FN = 75.7), and found that this mutant showed no ability to plaque on any host unless provided the tail fiber in trans. These truncated phages, detectable here only using deep sequencing, may demonstrate how obligate lytic phages could become less active in a bacterial population, slowly replicating alongside their bacterial hosts, requiring only a single mutation to become fully active again. In fact, acceptor phages altogether lacking a tail fiber were present at extremely low abundance (Figure 4—source data 1). These phages are not artifacts from library creation as some ability to replicate is required to produce detectable concentrations of each phage. We concluded that these are viable phage variants albeit with a much slower infection cycle, resulting in their inability to form visible plaques.
 
-## Targeting pathogenic E. coli causing UTIs using T7 variants
+### Targeting pathogenic E. coli causing UTIs using T7 variants
 
 Phage therapy is emerging as a promising solution to the antibiotic resistance crisis. Recent clinical success stories against multidrug-resistant Acinetobacter and Mycobacterium showcase the enormous potential of phage therapy (Dedrick et al., 2019; Schooley et al., 2017). Despite notable exceptions, in general development of effective phage-based therapeutics is hindered by onset of bacterial resistance, resulting in low phage susceptibility. Although initial application of phages in a laboratory setting may reduce bacterial levels, the residual bacterial load remains high, causing bacteria to quickly recover after phage application (Fister et al., 2016; Huss and Raman, 2020; Silva et al., 2014). A high ratio of phage to bacteria (multiplicity of infection [MOI]) may productively kill bacteria in a laboratory setting by overwhelming a host with many phages (Abedon, 2011). However, ensuring an overwhelming amount of phages in a clinical setting is not always feasible (Principi et al., 2019). Engineering highly active phages that overcome bacterial insensitivity and can therefore productively eliminate bacterial populations at low MOI in a laboratory setting would greatly enhance phage-based therapeutics. We hypothesized that engineered tip domain variants may abate bacterial insensitivity and be active even at low MOI by better adsorbing to the native receptor or recognizing a new bacterial receptor altogether.
 
@@ -84,11 +150,11 @@ To test this hypothesis, we chose pathogenic E. coli strain isolate 473 isolated
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig5-v2.jpg)
 
-**Figure 5.:** E. coli causing UTIs using T7 variants.(A) Growth time course of UTI473 strain subject to wildtype T7 and select variants. Phages were applied after an hour at an MOI of ~10-2. (B) Estimated time to lysis of UTI473 strain incubated with wildtype T7 and N501H variant over a range of MOIs, derived from time course experiments. (C) Cell density (OD600) of UTI473 strain when incubated with wildtype T7 and N501H variant at select timepoints after initial lysis. All data represented as mean ± SD of biological triplicate.
+**Figure 5.:** (A) Growth time course of UTI473 strain subject to wildtype T7 and select variants. Phages were applied after an hour at an MOI of ~10-2. (B) Estimated time to lysis of UTI473 strain incubated with wildtype T7 and N501H variant over a range of MOIs, derived from time course experiments. (C) Cell density (OD600) of UTI473 strain when incubated with wildtype T7 and N501H variant at select timepoints after initial lysis. All data represented as mean ± SD of biological triplicate.
 
 A striking contrast between N501H and wildtype T7 is evident in reduced bacterial insensitivity at progressively lower MOI (Figure 5C). Between an MOI of 100 to 1, application of both N501H and wildtype phage resulted in similar bacterial insensitivity. However, between an MOI of 10−1 and 10−5, application of N501H phage reduced insensitivity over a 10 hr window, while application of wildtype phages resulted in rapid onset of insensitive bacteria. We postulate that at high MOI wildtype T7 simply overwhelms the host before insensitivity arises, while at lower MOI insensitivity can emerge and only variants adapted to the host can effectively kill the host. These results indicate that ORACLE can generate phage variants superior to wildtype phage that could then become starting points for further engineering therapeutic phages. Further experiments will be required to assess the in vivo efficacy of the T7 variants.
 
-## Host range constriction emerges from global comparison across variants
+### Host range constriction emerges from global comparison across variants
 
 Most phages are specialists that selectively target a narrow range of hosts but are unable to productively infect other closely related hosts (Hyman and Abedon, 2010). We wanted to assess differences in the host range of individual variants on 10G, BL21, and BW25113 and identify variants with constricted host ranges. Ideally, host specificities can be determined by subjecting a co-culture of all three hosts to the phage library. However, deconvolving specificities of thousands of variants from a pooled co-culture experiment can be technically challenging. Instead, we sought to estimate specificities by comparing FN of a phage variant on all three hosts. Although FN compares activity of variants within a host, it could nonetheless be a useful proxy for estimating specificities across hosts. For instance, a phage variant with high FN on BL21 but completely depleted on BW25113 is more likely to specifically lyse BL21 than BW25113 in a co-culture experiment. Based on this rationale, we considered different metrics of comparison of FN and settled on difference in FN of a variant with reduced weight for enrichment (or FD, see Materials and methods) between any two hosts as an approximate measure of host preference. This metric is not an absolute measure of host specificity, but one devised to reveal broad trends in specificity to prioritize variants for downstream validation.
 
@@ -96,7 +162,7 @@ To assess if variants preferred one host over another, we computed FD for all th
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63775/elife-63775-fig6-v2.jpg)
 
-**Figure 6.:** (A-C) Pairwise comparison of differences in functional scores of variants between hosts (see Methods). Variants above the line favor lysis of host noted above the line, and vice versa for variants below the line. (D) EOP (mean ± SD, biological triplicates) for wildtype T7 and select variants on BW25113, 10G and BL21 in exponential (dark gray) and stationary phases (light gray) using exponential 10G with gp17 tail fiber helper plasmid (10G_H) as a reference host. R542Q plaques are atypically small until EOP ~10-2.  Figure 6—source data 1.D conversion for all variants.
+**Figure 6.:** (A-C) Pairwise comparison of differences in functional scores of variants between hosts (see Methods). Variants above the line favor lysis of host noted above the line, and vice versa for variants below the line. (D) EOP (mean ± SD, biological triplicates) for wildtype T7 and select variants on BW25113, 10G and BL21 in exponential (dark gray) and stationary phases (light gray) using exponential 10G with gp17 tail fiber helper plasmid (10G_H) as a reference host. R542Q plaques are atypically small until EOP ~10-2.
 
 Certain key positions, including G479, D540, R542, and D520, which we previously identified as functionally important (Figure 3A), are the molecular drivers of specificity between hosts (Figure 6A–C). Taken together, our data suggests that it would be easier to find a variant capable of specifically lysing BW25113, less so for BL21, and most challenging for 10G.
 
@@ -114,7 +180,150 @@ The confluence of genome engineering, high-throughput DNA synthesis, and sequenc
 
 ## Materials and methods
 
-## Microbes and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli 10G</td>
+      <td>Lucigen</td>
+      <td>Lucigen:60107-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21</td>
+      <td>ATCC</td>
+      <td>ATCC:BAA-1025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli 10-beta</td>
+      <td>NEB</td>
+      <td>NEB:C3020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BW25113</td>
+      <td>Baba et al., 2006</td>
+      <td>BW25113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BW25113ΔrfaG</td>
+      <td>Baba et al., 2006</td>
+      <td>BW25113ΔrfaG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BW25113 ΔrfaD</td>
+      <td>Baba et al., 2006</td>
+      <td>BW25113 ΔrfaD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli UTI473</td>
+      <td>Arthur et al., 1990</td>
+      <td>UTI473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T7 bacteriophage)</td>
+      <td>T7 bacteriophage</td>
+      <td>ATCC</td>
+      <td>ATCC:BAA-1025-B2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T7 bacteriophage)</td>
+      <td>T7 bacteriophage variants</td>
+      <td>This paper</td>
+      <td>Available on request</td>
+      <td>DMS variants, available from the Raman lab.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HiFi PCR Kit</td>
+      <td>Roche</td>
+      <td>Roche:KK2101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA2G Robust PCR Kit with dNTPS</td>
+      <td>Roche</td>
+      <td>Roche:KK5005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Golden Gate Assembly Kit (BsaI-HFv2)</td>
+      <td>NEB</td>
+      <td>NEB:E1601L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHT7Helper1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Helper with T7 gp17. See Materials and methods for full details.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRec1 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Recombination plasmid. See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHCas9 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid with Cas9 targeting acceptor phage. See Materials and methods for full details.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R scripts for DMS analysis</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available here https://github.com/raman-lab/oracle; Huss, 2021; copy archived at swh:1:rev:657e8eef12e4ee886f5d188b745ff0b38f94f479</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R scripts for physicochemical comparisons</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available here https://github.com/raman-lab/oracle.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R scripts for Rosetta ΔΔG calculations</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available here https://github.com/raman-lab/oracle.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Microbes and culture conditions
 
 T7 bacteriophage was obtained from ATCC (ATCC BAA-1025-B2). Saccharomyces cerevisiae BY4741, E. coli BL21 is a lab stock, E. coli 10G is a highly competent DH10B derivative (Durfee et al., 2008) originally obtained from Lucigen (60107-1). E. coli 10-beta was purchased from NEB (C3020). E. coli BW25113, BW25113ΔrfaD, and BW25113ΔrfaG were obtained from Doug Weibel (University of Wisconsin, Madison) and are derived from the Keio collection (Baba et al., 2006). UTI473 was obtained from Rod Welch (University of Wisconsin, Madison) and originates from a UTI collection (Arthur et al., 1990).
 
@@ -128,7 +337,7 @@ For long-term storage, all microbes were stored as liquid samples at −80°C in
 
 SOC (2% tryptone, 0.5% yeast extract, 0.2% 5 M NaCl, 0.25% 1 M KCl, 1% 1 M MgCl2, 1% 1 M MgSO4, 2% 1 M glucose in dH2O) was used to recover host and phages after transformation.
 
-## General cloning methods
+### General cloning methods
 
 PCR was performed using KAPA HiFi (Roche KK2101) for all experiments with the exception of multiplex PCR for screening YACs, which was performed using KAPA2G Robust PCR kits (Roche KK5005). Golden Gate Assembly was performed using New England Biosciences (NEB) Golden Gate Assembly Kit (BsaI-HFv2, E1601L). Restriction enzymes were purchased from NEB with the exception of DNAse I (Roche 4716728001). DNA purification was performed using EZNA Cycle Pure Kits (Omega Bio-tek D6492-01) using the centrifugation protocol. YAC extraction was performed using YeaStar Genomic DNA Extraction kits (Zymo Research D2002). Gibson assembly was performed according to the Gibson Assembly Protocol (NEB E5510), but Gibson Assembly Master Mix was made in lab (final concentration 100 mM Tris-HCl pH 7.5, 20 mM MgCl2, 0.2 mM dATP, 0.2 mM dCTP, 0.2 mM dGTP, 10 mM dTT, 5% PEG-8000, 1 mM NAD+, 4 U/ml T5 exonuclease, 4 U/μl Taq DNA ligase, 25 U/ml Phusion polymerase). All cloning was performed according to manufacturer's documentation except where noted in methods. If instructions were variable and/or specific conditions are relevant for reproducing results, those conditions are also noted in the relevant methods section.
 
@@ -146,13 +355,13 @@ Site-directed mutagenesis (SDM) was performed, in brief, using complementary pri
 
 Detailed protocols for cloning are available on request. All primers used in experiments in this publication are listed in supplementary file 1.
 
-## Plasmid cloning and descriptions
+### Plasmid cloning and descriptions
 
 pHT7Helper1 contains a pBR backbone, kanamycin resistance cassette, mCherry, and the T7 tail fiber gp17. Both mCherry and gp17 are under constitutive expression. Gp17 was combined with promoter apFAB47 (Kosuri et al., 2013) using SOE and the plasmid assembled by Gibson assembly. There is a single-nucleotide deletion in the promoter that has no effect on plaque recovery for phages that require gp17 to plaque. This plasmid is used during optimized recombination and accumulation in ORACLE to prevent library bias and depletion of variants that grow poorly on E. coli 10G. pHRec1 contains an SC101 backbone, Cre recombinase, a spectinomycin resistance cassette, and the T7 tail fiber gp17 flanked by Cre lox66 sites with an m2 spacer, a 3′ pad region, and lox71 sites with a wt spacer (Langer et al., 2002; Figure 1—figure supplement 1). Cre recombinase is under constitutive expression. This plasmid was assembled with sequential PCR and Gibson assembly. During assembly, we used PCR overhangs and SDM to create two synonymous substitutions in gp17 to remove two BsaI restriction sites, facilitating downstream Golden Gate Assembly. This plasmid was used in recombination assays as it allows for recombination of wildtype gp17 and is used as template to generate the DMS variant library. The DMS variant library is referred to as pHRec1-Lib and is used during optimized recombination in ORACLE. Note that this assembly was not tolerated in higher copy number plasmids.
 
 pHCas9 contains an SC101 backbone, a spectinomycin resistance cassette, and cas9 cassette capable of ready BsaI cloning of gRNA (Jiang et al., 2013). This plasmid is used directly as part of the negative control for the accumulation assay and has five derivatives, pHCas9-1 through -5, each with a different gRNA targeting the fixed region in the T7 acceptor phage. pHCas9 was created with Gibson assembly, while derivatives were assembled by phosphorylation and annealing gRNA oligos (100 μM forward and reverse oligo, 5 μl T4 Ligase Buffer, 1 μl T4 PNK, to 50 μl dH2O, incubate at 37°C for 1 hr, 96°C for 6 min, then 0.1 °C/s temperature reduction to 23°C), then Golden Gate cloning (1 μl annealed oligo, 75 ng pHCas9, 2 μl T4 DNA Ligase Buffer, 1 μl Golden Gate Enzyme Mix, dH2O to 20 μl), incubation at 37°C for 1 hr then 60°C for 5 min, followed by direct transformation of 1 μl, plated on Lb with spectinomycin. Note that pHCas9-3 was the most inhibitory (Figure 1—figure supplement 2A) and was the only plasmid used in accumulation during ORACLE. This assembly was also not tolerated in higher copy number plasmids. All plasmid backbones and gene fragments are lab stocks.
 
-## General bacteria and phage methods
+### General bacteria and phage methods
 
 Bacterial concentrations were determined by serial dilution of bacterial culture (1:10 or 1:100 dilutions made to 1 ml in 1.5 microcentrifuge tubes in Lb) and subsequent plating and bead spreading of 100 μl of a countable dilution (targeting 50 colony-forming units) on Lb plates. Plates were incubated overnight and counted the next morning. Typically, 2–3 dilution series were performed for each host to initially establish concentration at different OD600 and subsequent concentrations were confirmed with a single dilution series for later experiments.
 
@@ -170,21 +379,21 @@ Limit of detection (LOD) for T7 acceptor phages (T7 Acc) and T7 lacking a tail f
 
 Growth time courses for UTI473 (Figure 5) and OD600were performed using a Synergy HTX Multi-Mode 96-well plate reader, using 140 μl of host and 10 μl of relevant phage titers. Phages were applied after an hour of incubation in the plate reader.
 
-## Recombination rate and accumulation assays
+### Recombination rate and accumulation assays
 
 To establish recombination rate (Figure 1C), we passaged T7 acceptor phages on 5 ml exponential phase E. coli 10G containing pHT7Helper1 and pHRec1. pHRec1 was used because the recombined gp17 tail fiber is wildtype, ensuring every recombined phage is plaque-capable (derived from Figure 1—figure supplement 2B results). We sought to evaluate recombination rate after only one passage through the host to avoid misinterpretation of results in case recombined phages had different fitness than unrecombined phages. We used an MOI of 10 and allowed passage for 30 min, sufficient time for one wildtype phage passage, after which we halted any remaining reactions by adding 200 μl of chloroform and lysing the remaining bacterial host. Phages were then purified to acquire the final phage population. We established the phage population titer on 10G and 10G with pHT7Helper1. Both acceptor phages and recombined phages are capable of plaquing on 10G with pHT7Helper1, and this phage titer is used to count the total phage population. Only recombined phages are capable of plaquing on 10G, and this titer is used to count recombined phages. Recombination rate was established as the fraction titer of recombined phages divided by recombined phages. This was repeated in triplicate and reported as mean ± SD.
 
-## Method note
+#### Method note
 
 It should be noted that this assay does not delineate for when recombination occurs in the host or how frequently recombination occurs in any one host. For example, if recombination were to occur on the original phage genome, all subsequent progeny phages could contain the recombined gene. In contrast, if recombination were to occur on the phage genome while it is being replicated, anywhere from one individual progeny to all progeny could contain the recombined gene.
 
 To validate accumulation of recombined phages over acceptor phages (Figure 1D, Figure 1—figure supplement 2E, F), we first generated a population of recombined phages using the same scheme as outlined for the recombination rate assay. After recombination, this phage population contained primarily T7 acceptor phages with a small percentage of recombined phage containing a wildtype gp17 tail fiber. This phage population was passaged on 10G containing pHT7Helper1 and either pHCas9-3 (targeting the fixed region in the acceptor phage using g3, the most effective guide by EOP, Figure 1—figure supplement 2A) or pHCas9 (randomized control). Phages were incubated with host in 5 ml total at an initial MOI of 1 based on the titer of the whole phage population. Every 30 min until 180 min, and thereafter every 60 min until 300 min, ~250 μl of culture was removed, infection was stopped by adding 100 μl of chloroform, and phage samples were purified to establish the phage population at that timepoint. Titer at each timepoint was determined on both 10G and 10G with pHT7Helper1 with a single dilution series using whole-plate plaque assay. Percent accumulation was derived by dividing titer on 10G by titer on 10G with pHT7Helper1. Accumulation on both hosts was repeated in triplicate and reported as mean ± SD.
 
-## DMS plasmid library preparation
+### DMS plasmid library preparation
 
 To create the DMS variant plasmid library, oligos were first designed and ordered from Agilent as a SurePrint Oligonucleotide Library (product G7220A, OLS 131-150mers). Every oligo contained a single substitution at a single position in the tip domain, overall including all non-synonymous substitutions, a single synonymous substitution, and a stop codon from position 472–554. Note that we did mutate the stop codon, which is position 554, that when substituted results in a three amino acid extension (-DAR) of gp17. We used the most frequently found codon for each amino acid in the gp17 tail fiber to define the codon for each substitution. Oligos contained BsaI sites at each end to facilitate Golden Gate cloning. To accommodate a shorter oligo length, the library was split into three pools covering the whole tip domain. Oligo pools were amplified by PCR using 0.005 pmol total oligo pool as template and 15 total cycles to prevent PCR bias, then pools were purified. pHRec1 was used as template in a PCR reaction to create three backbones for each of the three pools. Backbones were treated with BsaI and Antarctic Phosphatase as follows. A 5 μl 10× CutSmart, 2 μl BsaI, ~1177 ng backbone, dH2O to 50 μl was mixed and incubated at 37°C for 2 hr, after which 1 μl additional BsaI, 2 μl Antarctic Phosphatase, 5.89 μl 10× Antarctic Phosphatase buffer was spiked into reaction. Reaction was incubated for one more hour at 37°C, then enzymes were heat inactivated at 65°C for 20 min (concentration ~20 ng/μl at this point) and used directly (no purification) in Golden Gate Assembly. Golden Gate Assembly was performed using ~100 ng of relevant pool backbone and a 2× molar ratio for oligos (~10 ng), combined with 2 μl 10× T4 DNA ligase buffer, 1 μl NEB Golden Gate Enzyme Mix, and dH2O to 20 µl. These reactions were cycled from 37°C to 16°C over 5 min, 30×, then held at 60°C for 5 min to complete Golden Gate Assembly. Membrane drop dialysis was then performed on each library pool for 75 min to enhance transformation efficiency. Then, 2 μl of each pool was transformed into 33 μl competent E. coli 10-beta (NEB C3020) cells. Drop plates were made at this point (spotting 2.5 μl of dilutions of each library on Lb plates with spectinomycin), and total actual transformed cells were estimated at ~2 × 105 CFU/ml. Each 1 ml pool was added to 4 ml Lb with spectinomycin and incubated overnight, then plasmids were purified. Plasmids concentration was determined by nanodrop and pools were then combined at an equimolar ratio to create the final phage variant pool, denoted as pHRec1-Lib. pHRec1-Lib was transformed into E. coli 10G with pHT7Helper1. Drop plates were made (spotting 2.5 μl of dilutions of each library onto Lb plates with spectinomycin and kanamycin) and total actual transformed cells were also estimated at ~2 × 105 CFU/ml. The 1 ml library was added to 4 ml Lb with spectinomycin and kanamycin and incubated overnight. This host, E. coli 10G with pHT7Helper1 and pHRec1-Lib, was the host used for Optimized Recombination during ORACLE.
 
-## ORACLE: engineering T7 acceptor phages
+### ORACLE: engineering T7 acceptor phages
 
 Acceptor phages were assembled using YAC rebooting (Ando et al., 2015; Jaschke et al., 2012), which requires yeast transformation of relevant DNA segments, created as follows. A prs415 yeast centromere plasmid was split into three segments by PCR, separating the centromere and leucine selection marker, which partially limits recircularization and improved assembly efficiency (Kuijpers et al., 2013). Wildtype T7 segments were made by PCR using wildtype T7 as template. At the site of recombination, the acceptor phage contains, in order, lox71 sites with an m2 spacer (Langer et al., 2002) to facilitate one-way recombinase-mediated cassette exchange (RMCE), a fixed sequence that was derived from sfGFP with a nonsense mutation, a short region mimicking gp17 to allow detection of acceptor phages by deep sequencing (5′ NGS in Figure 1—figure supplement 1), a 3′ ‘pad’ to facilitate deep sequencing, and lox66 sites with a wt spacer (see Figure 1—figure supplement 1). This entire region was turned into one DNA segment by serial SOE reactions.
 
@@ -194,11 +403,11 @@ Method note: PCR, including PCR for deep sequencing, behaved inconsistently at l
 
 DNA parts were combined together (0.1 pmol/segment) and transformed into S. cerevisiae BY4741 using a high-efficiency yeast transformation protocol (Gietz and Woods, 2002) using SD-Leu selection. After 2–3 days, colonies were picked and directly assayed by multiplex colony PCR to assay assembly. Multiplex PCR interrogated junctions in the YAC construct and was an effective way of distinguishing correctly assembled YACs. Correctly assembled YACs were purified and transformed into E. coli 10G cells containing pHT7Helper1, and after recovery 400 μl was used to inoculate 4.6 ml Lb. This culture was incubated until lysis, after which phages were purified to create the acceptor phage stock.
 
-## ORACLE: Optimized Recombination
+### ORACLE: Optimized Recombination
 
 Recombination was performed by adding T7 acceptor phages (MOI ~ 5) to 15 ml exponential phase 10G with pHT7Helper1 and pHRec1-Lib (shown as the donor plasmid in Figure 1), split across three 5 ml cultures. A high MOI is used to allow for one effective infection cycle. Cultures were incubated until lysis (~30 min). Lysed cultures were combined and purified. This phage population constitutes the initial recombined phage population and contained an estimated 2 × 107 variants/ml in a total phage population of ~2 × 1010 PFU/ml. The remainder of the phages are acceptor phages. A schematic of the recombination is shown in Figure 1—figure supplement 1. Note that pHT7Helper1 ensures progeny should remain viable by providing gp17 in trans.
 
-## ORACLE: Accumulation
+### ORACLE: Accumulation
 
 Accumulation was performed by adding ~MOI of 0.2 of recombined phages (50 μl or ~1 × 109 total phages) to 5 ml of stationary phase E. coli 10G with pHT7Helper1 and pHCas9-3 resuspended in fresh Lb with kanamycin and spectinomycin. Cultures are incubated until lysis (~3.5 hr), then phages are purified. This MOI was chosen to target 1% of acceptor phages remaining in the final population as an internal control – the remainder of the phage population is accumulated variant phages. Stationary phase was used because it was more inhibitory based on EOP (Figure 1—figure supplement 2A). Note that pHT7Helper1 still ensures progeny should remain viable by providing gp17 in trans and progeny from accumulation do not fully express variant genes.
 
@@ -206,7 +415,7 @@ Method note: During ORACLE, the library gene is not actively repressed and some 
 
 Method note: See Figure 1—figure supplement 2A for inhibition results for versions of pHCas9. When sequenced, individual plaques after selection had mutations in the region targeted by each gRNA, as expected for how resistance to Cas9 occurs. Note that acceptor phages are not actively destroyed but are rather inhibited and maintained at the same concentration. Selection may be improved by using multiple guide RNAs or using sgRNA platforms.
 
-## ORACLE: Library Expression
+### ORACLE: Library Expression
 
 Library expression was performed by adding the accumulated DMS library to 5 ml E. coli 10G (with no plasmid) at an MOI of ~1. Cultures are incubated for 30 min, then 200 μl chloroform is added to the culture to lyse any remaining cells and phages are purified. This constitutes the final phage variant library with full expression of the variant gp17 tail fibers. This phage population is directly sequenced to establish the pre-selection library population.
 
@@ -214,13 +423,13 @@ Method note: This MOI and culture conditions are chosen to prevent phages from u
 
 Method note: Two points bear additional mention regarding ORACLE as a whole to create variant libraries. First, the importance of retaining variants that do not grow well on the host used to create the library cannot be overstated. These variants are critical for mapping functional regions. For example, we used 10G to grow our library, which happened to have the most significant selection of the susceptible hosts and had depletion of many functional regions. The resolution of this assay would have been deeply impacting if these variants had been lost. Second, due to possible depletion and skew, it is critical to assay library distribution after insertion and expression of the variants in the phage instead of, for example, assaying distribution in plasmid before phage insertion. While ORACLE is designed to avoid this problem, any selection that occurs during library construction needs to be identified prior to selection experiments.
 
-## DMS selection
+### DMS selection
 
 All DMS selection results, besides single-infection cycle experiments on resistant hosts noted later, were performed in the same way. The T7 variant library was added to 5 ml of exponential host at an MOI of ~10−2, and the culture was allowed to fully lyse (typically 40–80 min depending on the host). Phage lysate was purified and then the titer established for the host the phage was being selected on. This process was then repeated using the selected phage lysate. An MOI of 10−2 was chosen to allow phages that grow slower a chance to replicate. For reference under these conditions, we expect wildtype to complete four infection cycles on a susceptible host. Phage lysate from the second selection was retained and used as template for deep sequencing to establish the post-selection phage population. The entire process was repeated in biological triplicate for each host. Single-infection cycle results cited in Figure 4—figure supplement 4 and Figure 4—source data 1 and 2 were performed on BW25113ΔrfaG and BW25113ΔrfaD using an MOI of ~1, then waiting for the culture to fully lyse, after which phage lysate was purified and sequenced directly.
 
 Method note: The number of infection cycles should be carefully considered due to the effect of multiple exponential replication events on the phage population. As noted in the text, we expected less consistency as we increased infection cycles, especially on severely bottlenecked populations as seen on BW25113ΔrfaD, but additional infection cycles allow for increased competition between productive members.
 
-## Deep sequencing preparation and analysis
+### Deep sequencing preparation and analysis
 
 We used deep sequencing to evaluate phage populations. We first amplified the tip domain by two-step PCR, or tailed amplicon sequencing, using KAPA HiFi. Primers for deep sequencing attach to constant regions adjacent to the tip domain (the target region is 304 bp total, between the 5′ NGS region and 3′ pad on Figure 1—figure supplement 1). Constant regions are also installed in the fixed region of the acceptor phages for the same-size amplicon, so acceptor phages can also be detected. The first PCR reaction adds an internal barcode (used for technical replicates to assay PCR skew), a variable N region (to assist with nucleotide diversity during deep sequencing, this is essential for DMS libraries due to low nucleotide diversity at each position), and the universal Illumina adapter. Undiluted phages are used as template. Four forward and four reverse primers were used in each reaction, each with a variable N count (0, 2, 4, or 8). Primers were mixed at equimolar ratios, and total primers used was per recommended primer concentration. PCR was performed using 12 total cycles in the first PCR reaction, then the product of this reaction was purified. The second PCR reaction adds an index and the Illumina ‘stem’. Then, 1 μl of purified product from the first reaction was used as template using eight total PCR cycles. The product of this reaction was purified and used directly for deep sequencing. Each phage population was sampled at least twice using separate internal barcodes, and no PCR reactions were pooled. Total PCR cycles overall for each sample were kept at 20× to avoid PCR skew. All phage samples were deep sequenced using an Illumina MiSeq System, 2 × 250 read length using MiSeq Reagent Kit v2 or v2 Nano according to manufacturer's documentation.
 
@@ -230,24 +439,24 @@ Of the 1660 variants, 3 (S487P, L524M, and R542N) fell below our LOD in the vari
 
 Method note: BW25113ΔrfaD is the most resistant host by EOP, and we hypothesize that these inconsistencies in FN may arise due to severe loss of diversity, ‘bottlenecking’ the population, and causing stochastic differences in enrichment to become magnified with multiple rounds of selection across independent experiments. Future work with very resistant hosts may benefit from fewer rounds of selection to prevent significant stochastic divergence. Single-infection cycles are more consistent but provide fewer cycles for variants to directly compete with one another, as noted in methods for DMS selection.
 
-To score enrichment for each variant, we used a basic functional score (F), averaging results of the three biological replicates, where F=x¯Variant%Post−PassageVariant%Pre−Passage. To compare variant performance across hosts, we normalized functional score (FN) to wildtype, where FN=x¯Variant%Post−PassageVariant%Pre−Passage/WT%Post−PassageWT%Pre−Passage.
+To score enrichment for each variant, we used a basic functional score (F), averaging results of the three biological replicates, where $F=x¯\frac{Variant%_{Post−Passage}}{Variant%_{Pre−Passage}}$. To compare variant performance across hosts, we normalized functional score (FN) to wildtype, where $F_{N}=x¯\frac{Variant%_{Post−Passage}}{Variant%_{Pre−Passage}}/\frac{WT%_{Post−Passage}}{WT%_{Pre−Passage}}$.
 
-## Classifying variants and isolating variants
+### Classifying variants and isolating variants
 
 To define variant behavior on E. coli 10G, BL21, and BW25113, we considered variants depleted if FN was below 0.1 (i.e., performed 10 times worse than wildtype), tolerated if between 0.1 and 2, and enriched if above 2 (i.e., performed twice as good as wildtype) (Figure 2). As wildtype T7 effectively grows on all three hosts, we reasoned that it would be more challenging for an enriched mutant to surpass wildtype than it would be for a mutant to become depleted. These cutoffs were supported based on preliminary plaque assay results and the extent of standard deviation across biological replicates. For BW25113ΔrfaD and BW25113ΔrfaG, we further defined significantly enriched variants as performing at least 10 times better (FN ≥10) than wildtype because wildtype does not grow effectively on these strains (Figure 4).
 
 We compared variant FN across 10G, BL21, and BW25113 to further characterize each variant and find functional variants (Figure 3). We sought to identify variants that had meaningfully different performance on different hosts, which would be strong evidence that either the wildtype residue or the variant substitution was important in a host-specific context. In addition to providing direct insight intro structure–function relationships, such substitutions or positions are ideal engineering targets for altering host range or increasing activity in engineered phages. We considered substitutions that were depleted (FN < 0.1) on all three hosts to be intolerant, while substitutions that were tolerated or enriched (FN ≥ 0.1) in all three hosts to be generally tolerated. Substitutions that were depleted on one host but tolerated or enriched on another were considered functional. To broadly characterize each position, we counted the number of substitutions at that position that fell into each category, and colored positions (Figure 3C) as functional if over 33% of substitutions at that position were functional, intolerant if over 50% of substitutions were intolerant, and tolerant otherwise. We found these cutoffs to effectively group residues of interest, although we note that there remain substitutions that could be tolerant and relevant in different contexts or intolerant for these three hosts but not others.
 
-For defining ideal host constriction mutants (Figure 6), we first constricted FN values that were greater than 1 to reduce the impact of higher scores on this comparison. Specifically we generated functional difference (FD), where if FN<1,FD=FN, and where FN≥1, FD=FN−1max(Strain FN)−1+1. FD thus ranged from 0 to 2 for each substitution, where scores above 1 are normalized to the maximum value for that host and fall between 1 and 2, minimizing but not eliminating weight for enrichment. We reasoned that for the purposes of finding host constriction mutants the extent of enrichment for a substitution is less relevant than if that substitution did poorly on another host. Put another way, it does not matter if a substitution is tolerated or enriched so long as it is depleted on a different host. For example, V544R has an FN of 9.09 in E. coli 10G but 0.07 in E. coli BW25113, while G479E has an FN of 1.73 in E. coli 10G and falls below the LOD for E. coli BW25113. For host constriction, both positions should be scored highly as the mutations can be tolerated or enriched in one host but are depleted in another. In contrast, A500H has an FN of 7.46 in E. coli 10G and 1.2 in E. coli BW25113. While FN differs significantly and the substitution is enriched on one host, it is still tolerated in the other host and thus makes a poor host constriction target. After generating FD, we simply subtracted the substitution’s FD on one host from the other in a pairwise comparison (Figure 6). Substitutions for host range constriction were considered ideal candidates if |FD| ≥ 1.
+For defining ideal host constriction mutants (Figure 6), we first constricted FN values that were greater than 1 to reduce the impact of higher scores on this comparison. Specifically we generated functional difference (FD), where if $F_{N}<1,F_{D}=F_{N}$, and where $F_{N}\geq1$, $F_{D}=\frac{F_{N}−1}{max(Strain F_{N})−1}+1$. FD thus ranged from 0 to 2 for each substitution, where scores above 1 are normalized to the maximum value for that host and fall between 1 and 2, minimizing but not eliminating weight for enrichment. We reasoned that for the purposes of finding host constriction mutants the extent of enrichment for a substitution is less relevant than if that substitution did poorly on another host. Put another way, it does not matter if a substitution is tolerated or enriched so long as it is depleted on a different host. For example, V544R has an FN of 9.09 in E. coli 10G but 0.07 in E. coli BW25113, while G479E has an FN of 1.73 in E. coli 10G and falls below the LOD for E. coli BW25113. For host constriction, both positions should be scored highly as the mutations can be tolerated or enriched in one host but are depleted in another. In contrast, A500H has an FN of 7.46 in E. coli 10G and 1.2 in E. coli BW25113. While FN differs significantly and the substitution is enriched on one host, it is still tolerated in the other host and thus makes a poor host constriction target. After generating FD, we simply subtracted the substitution’s FD on one host from the other in a pairwise comparison (Figure 6). Substitutions for host range constriction were considered ideal candidates if |FD| ≥ 1.
 
 Variants with individual substitutions tested for EOP (Figures 4–6) were either picked from plaques or created using SDM on pHRec1, which was used to create the variant using ORACLE.
 
-## Rosetta ΔΔG and physicochemical property comparison and calculations
+### Rosetta ΔΔG and physicochemical property comparison and calculations
 
 The crystal structure of the gp17 tip domain was obtained (PDB ID: 4A0T) and water molecules removed before calculations run. All modeling calculations were performed using the Rosetta molecular modeling suite v3.9. Substitutions were generated using the standard ddg_monomer application (Kellogg et al., 2011) to enable local conformational to minimize energy. For comparison to FD (Figure S5), a ΔΔG of 10 or greater was considered destabilizing and ΔΔG values between 10 and 30 were transformed to values between 0 and 1, with any ΔΔG greater than 30 set to 1. ΔΔG values below 10 were transformed to values between 0 and −1 based on a range to −9.29, the most stabilizing ΔΔG value calculated. We calculated FD for this plot using the maximum FD value from E. coli 10G, BL21, or BW25113. The maximum was used because any substitution that has a high FD on any host was theorized to require a stable protein. Positions considered destabilizing (right side) are expected to have a very low maximum FD, whereas stabilizing positions (left side) may have a low or high FD based on tolerance of the substitution. Positions that were tolerated or functional that Rosetta predicted to be unstable on the right of the plot may be due to errors in stability calculations or actual structural distortions that are either smaller perturbations that do not affect fitness or are accommodated by quaternary arrangement. Alternatively, structural instability could be beneficial in some cases, allowing for enhanced receptor binding by, for example, exposing critical residues.
 
 To compare physicochemical properties for E. coli 10G, BL21, and BW25113, we binned depleted (FN ≤ 0.1), tolerated (FN > 0.1 and <2), or enriched (FN ≥ 2) substitutions and derived the change in mass, hydrophilicity, and hydrophobicity for each substitution (Li et al., 2016). For BW25113ΔrfaG and BW25113ΔrfaD, we binned using an FN of 10 for the cutoff for enrichment instead. Packages ggplot2 and ggpubr in R were then used to compare the means of the three groups using a Kruskal–Wallis test (Hollander and Wolfe, 1973), while subsequent pairwise comparisons were made using a Wilcoxon test (Bauer, 1972). Effect size (r) was calculated and can be summarized as r = abs(zscore)/sqrt(n), where n is the total number of observations among the two groups.
 
-## Statistical analysis and source code
+### Statistical analysis and source code
 
 Alluvial plots (Figure 2—figure supplement 2, Figure 4) and Figure 2F parallel plot were generated with RawGraphs. Violin plots for physicochemical properties are output from R. Significance for FN values in Figure 2—source data 2 and Figure 4—source data 2 was defined as an average FN two or more standard deviations from wildtype or below the LOD in all biological replicates. p-Values for EOP graphs compare plaque capability on the tested host to the reference host for the EOP graph. Hierarchical clustering in Figure 2—figure supplement 3 is performed in R using heatmap.2 without scaling. p-Values to compare functional data and EOP measurements were performed using two-tailed t-tests where values below the LOD were considered as the LOD. All other calculations and plots were made in Excel. Relevant statistical details of experiments can be found in the corresponding figure legends or relevant methods section. Source code is available at https://github.com/raman-lab/oracle.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03528.001 Thousands of small Open Reading Frames (smORFs) with the potential to encode small peptides of fewer than 100 amino acids exist in our genomes. However, the number of smORFs actually translated, and their molecular and functional roles are still unclear. In this study, we present a genome-wide assessment of smORF translation by ribosomal profiling of polysomal fractions in Drosophila . We detect two types of smORFs bound by multiple ribosomes and thus undergoing productive translation. The ‘longer’ smORFs of around 80 amino acids resemble canonical proteins in translational metrics and conservation, and display a propensity to contain transmembrane motifs. The ‘dwarf’ smORFs are in general shorter (around 20 amino-acid long), are mostly found in 5′-UTRs and non-coding RNAs, are less well conserved, and have no bioinformatic indicators of peptide function. Our findings indicate that thousands of smORFs are translated in metazoan genomes, reinforcing the idea that smORFs are an abundant and fundamental genome component. DOI: http://dx.doi.org/10.7554/eLife.03528.001
+Thousands of small Open Reading Frames (smORFs) with the potential to encode small peptides of fewer than 100 amino acids exist in our genomes. However, the number of smORFs actually translated, and their molecular and functional roles are still unclear. In this study, we present a genome-wide assessment of smORF translation by ribosomal profiling of polysomal fractions in Drosophila. We detect two types of smORFs bound by multiple ribosomes and thus undergoing productive translation. The ‘longer’ smORFs of around 80 amino acids resemble canonical proteins in translational metrics and conservation, and display a propensity to contain transmembrane motifs. The ‘dwarf’ smORFs are in general shorter (around 20 amino-acid long), are mostly found in 5′-UTRs and non-coding RNAs, are less well conserved, and have no bioinformatic indicators of peptide function. Our findings indicate that thousands of smORFs are translated in metazoan genomes, reinforcing the idea that smORFs are an abundant and fundamental genome component.
 
 ## Introduction
 
@@ -34,21 +34,62 @@ We corroborate these findings by two independent methods and observe smORF pepti
 
 We have chosen to assess the translation of smORFs in Drosophila, because of the well-annotated genome of this organism and the availability of an equally well-characterised standard cell line (S2 cells) (Schneider, 1972) providing abundant and reproducible material.
 
-The annotation of the
+The annotation of the Drosophila genome contains double the proportion of predicted smORF-encoding genes than other metazoan genomes (some 829 smORF genes, or 4% of the total, Table 1) (FlyBase, Ensembl). However, closer scrutiny reveals that although these genes have well-corroborated transcriptional data (modENCODE), less than a quarter of these have corroborated translation and peptide function. Only 164 annotated smORFs have at least two out of three markers indicating translation or peptide function: (1) molecular GO term indicating protein function (based on direct assays or presence of protein domains); (2) matches with peptides from proteomic experiments; and (3) conservation of the coding sequence beyond insects (Figure 1A). These ‘corroborated’ smORFs have in most cases a gene name (e.g., Defensin) and associated literature. The translation of the remaining 665 putative smORFs is thus not yet fully proven, and in most cases (494 smORFs) no evidence of translation is recorded. The majority of these ‘uncorroborated’ smORFs only have a cognate identifier (e.g., CG34200) and their ‘coding’ status varies between genome releases (unpublished observation). Thus, the Drosophila annotated smORFs offer an ideal framework to test for translation of smORFs and their biological importance.
+
+**Table 1.**
+ Annotated smORFs in different organisms
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>smORFs</th>
+      <th>ORFs</th>
+      <th>% smORFs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drosophila</td>
+      <td>829</td>
+      <td>21,870</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Zebrafish</td>
+      <td>854</td>
+      <td>43,148</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>1131</td>
+      <td>51,745</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>1938</td>
+      <td>104,109</td>
+      <td>1.9</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig1-v2.jpg)
 
-**Figure 1.:** (A) Venn diagram categorising annotated Drosophila smORFs as corroborated or uncorroborated based on evidence (FlyBase) from two out of three of: GO molecular function term assignment (green), peptidomic evidence (blue), and conservation outside of insects (red). Based on this, out of the total of 829 annotated smORFs, 665 are uncorroborated, and 494 have no evidence of translation. (B) Schematic of Poly-Ribo-Seq with representative UV absorbance profile for sucrose density gradient. Small (purple) and large (blue) polysomes are separated and subject to ribosome footprinting. (C) Composite plot from all FlyBase protein-coding genes of Poly-Ribo-Seq read counts across mRNAs in the vicinity of start (upper) and stop codons (lower) in small polysomes. (D) Median translational efficiencies of CDS, 5′ and 3′-UTR regions for all protein-coding genes, error bars represent SE.DOI: http://dx.doi.org/10.7554/eLife.03528.004
+**Figure 1.:** (A) Venn diagram categorising annotated Drosophila smORFs as corroborated or uncorroborated based on evidence (FlyBase) from two out of three of: GO molecular function term assignment (green), peptidomic evidence (blue), and conservation outside of insects (red). Based on this, out of the total of 829 annotated smORFs, 665 are uncorroborated, and 494 have no evidence of translation. (B) Schematic of Poly-Ribo-Seq with representative UV absorbance profile for sucrose density gradient. Small (purple) and large (blue) polysomes are separated and subject to ribosome footprinting. (C) Composite plot from all FlyBase protein-coding genes of Poly-Ribo-Seq read counts across mRNAs in the vicinity of start (upper) and stop codons (lower) in small polysomes. (D) Median translational efficiencies of CDS, 5′ and 3′-UTR regions for all protein-coding genes, error bars represent SE.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) RT-PCR of RNA recovered from sucrose gradient fractions for one standard ORF mRNA (heph), three annotated smORF mRNAs (CG14818, CG9032, and CG43194) and one long non-coding RNA (roX1), with -RT control. Fractions corresponding to small (purple, 2-6 ribosomes) and large (blue, 7 or more ribosomes) polysomes are indicated. (B) Read densities (RPKM) from two biological replicates of the total cytoplasmic mRNA control exhibit very high correlation (R2 = 0.96). (C and D) Read density plots showing phasing of ribosome footprinting reads in triplets corresponding to codons in CDS (C) and an absence of triplet phasing in 3′-UTRs (D) (small polysome data).DOI: http://dx.doi.org/10.7554/eLife.03528.005
+**Figure 1—figure supplement 1.:** (A) RT-PCR of RNA recovered from sucrose gradient fractions for one standard ORF mRNA (heph), three annotated smORF mRNAs (CG14818, CG9032, and CG43194) and one long non-coding RNA (roX1), with -RT control. Fractions corresponding to small (purple, 2-6 ribosomes) and large (blue, 7 or more ribosomes) polysomes are indicated. (B) Read densities (RPKM) from two biological replicates of the total cytoplasmic mRNA control exhibit very high correlation (R2 = 0.96). (C and D) Read density plots showing phasing of ribosome footprinting reads in triplets corresponding to codons in CDS (C) and an absence of triplet phasing in 3′-UTRs (D) (small polysome data).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Schematic summary of characterised (A–C) and theoretical (D) translation scenarios. Diagrams of ribosome–mRNA complexes are shown along with the polysome fraction in which it is detected, translational metrics and interpretation of this information, for (A–C) long canonical ORFs, (C) smORFs, and (D) canonical ORF containing a theoretical small ORF.DOI: http://dx.doi.org/10.7554/eLife.03528.006
+**Figure 1—figure supplement 2.:** Schematic summary of characterised (A–C) and theoretical (D) translation scenarios. Diagrams of ribosome–mRNA complexes are shown along with the polysome fraction in which it is detected, translational metrics and interpretation of this information, for (A–C) long canonical ORFs, (C) smORFs, and (D) canonical ORF containing a theoretical small ORF.
 
-## Development of ‘Poly-Ribo-Seq’, ribosome profiling of polysome fractions
+### Development of ‘Poly-Ribo-Seq’, ribosome profiling of polysome fractions
 
 Given the controversy over ribosome footprinting on lncRNAs (Chew et al., 2013; Guttman et al., 2013), we wanted to improve upon the ribosome profiling method to ensure that the RNAs, on which ribosome footprinting occurs, are undergoing active translation. That is to say they are engaged by polysomes rather than just bound by sporadic, putatively non-productive single ribosomes or ribosomal subunits. We therefore developed an approach for performing ribosome profiling on polysome complexes, using a modified ribosome footprinting method. Polysomal fractionation was used to separate RNAs, depending on the number and type of ribosomes bound to them (Figure 1B). In this way, mRNAs bound by multiple ribosomes and hence actively translated can be isolated and distinguished from mRNAs bound by non-productive 80S ribosomes. This biochemically purified material was then subjected to ribosome profiling, in which the footprinting reaction was optimized for profiling purified polysomal fractions rather than all ribosome-mRNA complexes.
 
@@ -56,63 +97,417 @@ To specifically enrich for actively translating single smORF-containing mRNAs, o
 
 We subjected both small and large polysomal fractions to ribosome profiling separately and performed RNAseq on the total cytoplasmic mRNA as a control (Figure 1—figure supplement 1B). Our ‘Poly-Ribo-Seq’ captured regions of active translation as ∼80% of reads mapped to coding sequences of canonical protein-coding genes (Supplementary file 1A) with read densities dropping off before the start and after stop codons (Figure 1C). To quantify the translation of individual coding sequences we considered two metrics: (1) the ribosomal density in the ORF (expressed as RPKM) (Ingolia et al., 2009) and (2) coverage of the ORF by ribosome footprints (0–1). This metric indicates whether ribosomes bind across the ORF or just in a small fragment of it, which could be due to overlapping or internal ORFs (Figure 1—figure supplement 2). To be considered translated, we required ribosome densities to be at least 11.8 RPKM and footprint coverage of the ORF to be at least 0.57, which are above the 90th percentile of the values we obtained for the 3′-UTRs from canonical coding mRNAs (see ‘Materials and methods’ for a full explanation of filters and cut-offs). These cut-offs are more stringent than previous ribosomal profiling experiments and standard RNAseq practice, and their combination should provide robust identification of transcripts that undergo active translation. To overcome the possible dependence of ribosome density on RNAseq efficiency or transcript abundance (Guttman et al., 2013), we also used the relative metric known as translational efficiency (TE), which is the RPKM of ribosome footprints/RPKM of total mRNA control reads (Ingolia et al., 2009). We observed that the median TE of all annotated protein-coding transcripts was significantly higher in CDSs compared to 5′- and 3′-UTRs (Figure 1D) indicating that ‘Poly-Ribo-Seq’ defines regions of active translation. As previously reported for ribosomal profiling, we observe triplet phasing in the mapping of our Poly-Ribo-Seq reads (Figure 1—figure supplement 1C), reflecting the positioning of ribosomes on codons, which is not globally seen in UTRs (Figure 1—figure supplement 1D).
 
-## Poly-Ribo-Seq detects smORF translation
+### Poly-Ribo-Seq detects smORF translation
 
-Small and large polysomes showed a marked difference in genome-wide ribosomal densities (
+Small and large polysomes showed a marked difference in genome-wide ribosomal densities (Figure 2A), suggesting that these two fractions contain mRNAs translated at different levels. Small polysomes contain mRNAs encoding long ORFs, but these have lower TE than when isolated from large polysomes (Table 2), confirming that they were bound by fewer ribosomes. As intended, Poly-Ribo-Seq detected smORFs with translation signatures, and these were enriched in small polysomes, which contained double the number and all of the smORFs detected in large polysomes (Figure 2C). The low smORF TE values in large polysomes are similarly consistent with low levels of smORF mRNAs being present in large polysomal complexes. However, the TE of smORFs from small polysomes is similar to the TE of long ORFs from large polysomes, indicating that smORFs can be translated at similar levels to standard protein-coding ORFs (Table 2; Figure 1—figure supplement 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig2-v2.jpg)
 
-**Figure 2.:** (A) Ribosome footprinting densities (RPKM) from small polysomes correlate poorly with large polysomes (whereas two replicates of total cytoplasmic mRNA controls do, see Figure 1—figure supplement 1B). (B) Ribosome footprinting densities (RPKM) from small polysomes correlate highly between two biological replicates (R2 = 0.83). (C) All 106 smORFs detected in large polysomes (blue) were also present in the 191 detected in small polysomes (purple). smORF footprints are much more abundant in small polysomes, as indicated by a higher TE value. (D) High coincidence of annotated smORFs detected as translated in three different Poly-Ribo-Seq experiments. Small polysome extensive experiment probes most deeply with 224 smORFs detected as translated (small polysomes: purple, small polysomes extensive: yellow, -rRNA: turquoise). (E) Numbers and proportions of transcribed ORFs, which are translated, according to Poly-Ribo-Seq data (translated: green, untranslated: blue). The proportion of annotated smORFs translated is similar to that of standard CDSs. 121 annotated smORFs are newly detected as translated, plus 2708 uORFs and 313 smORFs from ncRNAs. (F) Venn diagram showing overlap between Poly-Ribo-Seq (dark green), our mass spectrometry experiments (purple) and Peptide Atlas proteomic data (red).DOI: http://dx.doi.org/10.7554/eLife.03528.007
+**Figure 2.:** (A) Ribosome footprinting densities (RPKM) from small polysomes correlate poorly with large polysomes (whereas two replicates of total cytoplasmic mRNA controls do, see Figure 1—figure supplement 1B). (B) Ribosome footprinting densities (RPKM) from small polysomes correlate highly between two biological replicates (R2 = 0.83). (C) All 106 smORFs detected in large polysomes (blue) were also present in the 191 detected in small polysomes (purple). smORF footprints are much more abundant in small polysomes, as indicated by a higher TE value. (D) High coincidence of annotated smORFs detected as translated in three different Poly-Ribo-Seq experiments. Small polysome extensive experiment probes most deeply with 224 smORFs detected as translated (small polysomes: purple, small polysomes extensive: yellow, -rRNA: turquoise). (E) Numbers and proportions of transcribed ORFs, which are translated, according to Poly-Ribo-Seq data (translated: green, untranslated: blue). The proportion of annotated smORFs translated is similar to that of standard CDSs. 121 annotated smORFs are newly detected as translated, plus 2708 uORFs and 313 smORFs from ncRNAs. (F) Venn diagram showing overlap between Poly-Ribo-Seq (dark green), our mass spectrometry experiments (purple) and Peptide Atlas proteomic data (red).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Results of Poly-Ribo-Seq experiments with all (-rRNA: turquoise), large (blue), and small (purple) polysomes showing the number of canonical protein-coding ORFs (longer than 100 aa) translated and the overlap between experiments. (B) Venn diagram showing the overlap in the detection of translation between Poly-Ribo-Seq (dark green) and proteomic experiments (pink). Median RPKMs from Poly-Ribo-Seq are indicated.DOI: http://dx.doi.org/10.7554/eLife.03528.008
+**Figure 2—figure supplement 1.:** (A) Results of Poly-Ribo-Seq experiments with all (-rRNA: turquoise), large (blue), and small (purple) polysomes showing the number of canonical protein-coding ORFs (longer than 100 aa) translated and the overlap between experiments. (B) Venn diagram showing the overlap in the detection of translation between Poly-Ribo-Seq (dark green) and proteomic experiments (pink). Median RPKMs from Poly-Ribo-Seq are indicated.
+
+**Table 2.**
+ Summary of median TEs
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Median TE</th>
+      <th>Small polysomes</th>
+      <th>Large polysomes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Annotated smORFs</td>
+      <td>1.131</td>
+      <td>0.265</td>
+    </tr>
+    <tr>
+      <td>standard ORFs</td>
+      <td>0.829</td>
+      <td>1.110</td>
+    </tr>
+    <tr>
+      <td>5′-UTR</td>
+      <td>0.355</td>
+      <td>0.566</td>
+    </tr>
+    <tr>
+      <td>3′-UTR</td>
+      <td>0.162</td>
+      <td>0.196</td>
+    </tr>
+    <tr>
+      <td>uORFs</td>
+      <td>0.276</td>
+      <td>0.347</td>
+    </tr>
+    <tr>
+      <td>ncRNA smORFs</td>
+      <td>0.384</td>
+      <td>0.000</td>
+    </tr>
+  </tbody>
+</table>
+
+_Median translational efficiency for ORFs in small and large polysomal fractions._
 
 Altogether 191 annotated smORFs passed the cut-off values to be deemed translated in this initial Poly-Ribo-Seq experiment. This is ∼70% of the smORFs transcribed in S2 cells in the total mRNA controls (Figure 2D, small polysomes). To ensure that initial Poly-Ribo-Seq experiments sequenced to an adequate depth and to potentially extend the catalogue of translated smORFs, we repeated the experiment but exclusively sequenced small polysomes. This extensive small polysome profiling yielded nearly four times the number ORF-mapping reads obtained in the previous small polysome profiling (Supplementary file 1A) and detected translation of 224 smORFs (Figure 2D) expanding the number from both experiments to 227, which is 83% of smORFs we observed transcribed in S2 cells (Figure 2E). The genome-wide distribution of ribosome densities in two independent Poly-Ribo-Seq experiments was strongly correlated (R2 = 0.83), suggesting that Poly-Ribo-Seq is highly reproducible (Figure 2B).
 
 The majority of reads in both our experiments and previous ribosomal profiling consist of rRNA sequences released during footprinting (Supplementary file 1A; Ingolia et al., 2011). This reduces the depth of profiling and could preclude the detection of further smORFs. Therefore, we designed rRNA-depletion beads for use during footprint extraction (‘Materials and methods’, Supplementary file 2), which produced a marked improvement in the ratio of reads mapping to mRNAs (Supplementary file 1A) and increased the total number of ORFs detected (Figure 2—figure supplement 1A, −rRNA) but only expanded our overall catalogue of putatively translated smORFs by one (Figure 2D). The results of the three independent experiments are highly overlapping as 80% of putative translated smORFs were detected in all three data sets (Figure 2D). By combining the three experiments, we provide evidence that 228 smORFs are translated out of 274 transcribed in S2 cells (83%), which is very similar to the proportion of standard length protein-coding ORFs translated (81%) (Figure 2E). These similar proportions may indicate the extent of translational regulation in S2 cells. Altogether this data almost doubles the previous repertoire of translated smORFs in Drosophila from 164 to 285 (164 previously corroborated [Figure 1A] and 121 new translated smORFs).
 
-## Validation of smORF translation
+### Validation of smORF translation
 
 The high overlap of our experiments suggests that the results do not arise from artefactual random sampling of smORFs, but most likely from the detection of the bona-fide population of annotated smORFs translated in S2 cells. To confirm this and independently validate our data, we compared our results with peptidomics data (Peptide Atlas, Brunner et al., 2007). Poly-Ribo-Seq increases nearly fourfold the number of smORFs with evidence of translation in S2 cells from 59 (Peptide Atlas) to 228 (Poly-Ribo-Seq). Poly-Ribo-Seq detects 86% of smORFs with Peptide Atlas evidence in S2 cells (51 out of 59 smORFs; Figure 2F), whilst only 8 smORFs, which have Peptide Atlas evidence are not shown to be translated by Poly-Ribo-Seq.
 
 Detection of small peptides requires specific peptidomic methods (Boerjan et al., 2010; Slavoff et al., 2013), and this could have limited the number of smORF peptides detected in the generic proteomic experiments of Peptide Atlas. Therefore, we specifically searched for smORF peptides by performing mass spectrometry on two biological replicates of S2 cells after gel purifying small proteins 5 to 15 KDa in size, which corresponds to peptides predicted to be 45 to 130 aa in length. We detected a total of 60 annotated smORF peptides, of which 40 are not detected in Peptide Atlas S2 data sets (Figure 2F), thus bringing the combined pool of smORFs peptides detected by proteomics in S2 cells to 99 (Figure 2—figure supplement 1B). Despite this increase, Poly-Ribo-Seq was still more extensive. Poly-Ribo-Seq revealed 228 smORFs as translated, including 90 of the 99 in the combined proteomics pool (Figure 2—figure supplement 1B), and 59 of the 60 peptides detected by us (Figure 2F). The Poly-Ribo-Seq RPKM values of smORFs detected by peptidomics are over three times as high as those that are not (Figure 2—figure supplement 1B), suggesting that mass spectrometry detects peptides arising from the most highly translated smORFs, as also observed by other authors (Brunner et al., 2007; Bazzini et al., 2014).
 
-To further validate the results of our smORF Poly-Ribo-Seq, we designed a peptide-tagging transfection assay. smORF coding sequences were tagged with a C-terminal FLAG tag lacking its own start codon. The constructs contained the full smORF 5′-UTR (which includes the Kozak and other sequences regulating translation [
+To further validate the results of our smORF Poly-Ribo-Seq, we designed a peptide-tagging transfection assay. smORF coding sequences were tagged with a C-terminal FLAG tag lacking its own start codon. The constructs contained the full smORF 5′-UTR (which includes the Kozak and other sequences regulating translation [Kozak, 2005]) (Figure 3—figure supplement 1A). The resulting construct was transfected into S2 cells, where any FLAG signal would therefore be the result of smORF translation (Figure 3—figure supplement 1A,B). Transfection and staining of S2 cells with these FLAG-tagged smORFs confirmed the translation of all 12 smORFs tested, which exhibit a range of translational indicators (Figure 3A,B; Table 3) and peptidomics evidence, indicating that even lower levels of translation can give rise to smORF peptides detectable by this tagging method. Immunoblotting confirmed the expected sizes of the tagged peptides (Figure 3—figure supplement 1C). Tagged peptides exhibit distinct subcellular localisations, which are suggestive of different peptide functions (Figure 3A,B; Table 3). Six smORFs display a reticular distribution resembling mitochondria, an inference supported by their co-localization with the mitochondrial marker Mitotracker Red (Figure 3A and Figure 3—figure supplement 1D,E; Table 3) and the available information from homologues of two ‘corroborated’ smORFs in this group, CG32230 and CG14482 (Tripoli et al., 2005). Six smORFs exhibited other types of anisotropic cytoplasmic localisation, similarly to ER-expressed Sarcolamban smORF (Magny et al., 2013), indicating that they may localise to other cytoplasmic compartments (Figure 3B and Figure 3—figure supplement 1D,E; Table 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig3-v2.jpg)
 
-**Figure 3.:** (A–D) Ribosome footprints from small polysomes (pink) and mRNA reads (grey) mapped to smORFs, along with transcript and ORF models of (A) CG7630, (B) CG33774, (C) CR30055 (ncRNA), and (D) FBtr0072084_1 (uORF). Corresponding transfection assays in S2 cells are shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm) together with Poly-Ribo-Seq metrics (RPKM, coverage and TE). Distribution of each peptide (reticular, other cytoplasmic or limited) is indicated.DOI: http://dx.doi.org/10.7554/eLife.03528.010
+**Figure 3.:** (A–D) Ribosome footprints from small polysomes (pink) and mRNA reads (grey) mapped to smORFs, along with transcript and ORF models of (A) CG7630, (B) CG33774, (C) CR30055 (ncRNA), and (D) FBtr0072084_1 (uORF). Corresponding transfection assays in S2 cells are shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm) together with Poly-Ribo-Seq metrics (RPKM, coverage and TE). Distribution of each peptide (reticular, other cytoplasmic or limited) is indicated.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Schematic of the transfection construct into which smORF 5′-UTRs and ORFs (no stop codon) were cloned under the Actin promoter, such as to be fused in frame to a C-terminal FLAG tag, with its own AUG start codon mutated to GCG. (B) Transfection negative controls, plasmid with no ORF (nor AUG), plasmid with the full-length tal transcript (minus 3′-UTR) with ORF-B tagged with FLAG, which has previously been shown not to be translated (Galindo et al., 2007), and a plasmid containing a putative smORF that is transcribed but not translated according to our Poly-Ribo-Seq (Uhg2-ORF1). (C) Immunoblot showing translation of FLAG-tagged smORFs (Table 3) corresponding to predicted sizes, along with β- tubulin loading control. (D) Different subcellular localisations of FLAG-tagged smORFs (green) corroborated by double staining with Mitotracker Red (red): “mitochondrial”, “other cytoplasmic” and “limited” (scale bar = 5 μm). (E) Correlation analysis of colocalisation between FLAG-tagged smORF peptides and Mitotracker Red, error bars represent SD from three experiments. (F) 50% of S2-cell translated smORFs show function in previous RNAi screens (Flymine). (G) Translation of FLAG-tagged pncr009:3L (ncRNA) ORFs 1, 2, and 3 in transfection assay with translational metric values shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm). (H) Immunoblot showing detection of FLAG-tagged ORFs from pncr009:3L and CR30055 with predicted sizes (Table 4), along with β-tubulin loading control. (I) Translation of FLAG-tagged uORFs FBtr0072210_1 and FBtr0081720_1 in transfection assays with translational metric values shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm).DOI: http://dx.doi.org/10.7554/eLife.03528.011
+**Figure 3—figure supplement 1.:** (A) Schematic of the transfection construct into which smORF 5′-UTRs and ORFs (no stop codon) were cloned under the Actin promoter, such as to be fused in frame to a C-terminal FLAG tag, with its own AUG start codon mutated to GCG. (B) Transfection negative controls, plasmid with no ORF (nor AUG), plasmid with the full-length tal transcript (minus 3′-UTR) with ORF-B tagged with FLAG, which has previously been shown not to be translated (Galindo et al., 2007), and a plasmid containing a putative smORF that is transcribed but not translated according to our Poly-Ribo-Seq (Uhg2-ORF1). (C) Immunoblot showing translation of FLAG-tagged smORFs (Table 3) corresponding to predicted sizes, along with β- tubulin loading control. (D) Different subcellular localisations of FLAG-tagged smORFs (green) corroborated by double staining with Mitotracker Red (red): “mitochondrial”, “other cytoplasmic” and “limited” (scale bar = 5 μm). (E) Correlation analysis of colocalisation between FLAG-tagged smORF peptides and Mitotracker Red, error bars represent SD from three experiments. (F) 50% of S2-cell translated smORFs show function in previous RNAi screens (Flymine). (G) Translation of FLAG-tagged pncr009:3L (ncRNA) ORFs 1, 2, and 3 in transfection assay with translational metric values shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm). (H) Immunoblot showing detection of FLAG-tagged ORFs from pncr009:3L and CR30055 with predicted sizes (Table 4), along with β-tubulin loading control. (I) Translation of FLAG-tagged uORFs FBtr0072210_1 and FBtr0081720_1 in transfection assays with translational metric values shown (FLAG antibody: green, F-actin stained with phalloidin: red, scale bars = 5 μm).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Read density plot showing phasing of ribosome footprinting reads in the frame of smORFs within CR30055 and pncr009:3L detected as translated and confirmed by FLAG immunofluorescence translation assay. (B) Correlation of reads obtained by ORFs after Poly-Ribo-Seq (y axis) with reads obtained by sequencing of polysomal fractions before ribosome footprinting (x axis). The correlation is much stronger for canonical long ORFs and putative smORFs (grey) than for ncRNA ORFs (red). Many ncRNA ORFs below the 11.8 RPKM cut-off used to ascertain translation (green dotted line) can show association with polysomes (high Polysomal RNA RPKM), thus translation of ORFs in ncRNAs does not simply stem from non-coding association with polysomes.DOI: http://dx.doi.org/10.7554/eLife.03528.012
+**Figure 3—figure supplement 2.:** (A) Read density plot showing phasing of ribosome footprinting reads in the frame of smORFs within CR30055 and pncr009:3L detected as translated and confirmed by FLAG immunofluorescence translation assay. (B) Correlation of reads obtained by ORFs after Poly-Ribo-Seq (y axis) with reads obtained by sequencing of polysomal fractions before ribosome footprinting (x axis). The correlation is much stronger for canonical long ORFs and putative smORFs (grey) than for ncRNA ORFs (red). Many ncRNA ORFs below the 11.8 RPKM cut-off used to ascertain translation (green dotted line) can show association with polysomes (high Polysomal RNA RPKM), thus translation of ORFs in ncRNAs does not simply stem from non-coding association with polysomes.
+
+**Table 3.**
+ Summary of tagged annotated smORFs
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Localization</th>
+      <th>Peptidomic evidence</th>
+      <th># aa</th>
+      <th>RPKM</th>
+      <th>Coverage</th>
+      <th>TE</th>
+      <th>Phast Cons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CG32230</td>
+      <td>Mitochondrial</td>
+      <td>Yes</td>
+      <td>83</td>
+      <td>539.2</td>
+      <td>1.00</td>
+      <td>3.05</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>CG14482</td>
+      <td>Mitochondrial</td>
+      <td>Yes</td>
+      <td>57</td>
+      <td>600.0</td>
+      <td>1.00</td>
+      <td>1.09</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>CG44242</td>
+      <td>Mitochondrial</td>
+      <td>Yes</td>
+      <td>70</td>
+      <td>152.9</td>
+      <td>0.97</td>
+      <td>1.75</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>CG7630</td>
+      <td>Mitochondrial</td>
+      <td>Yes</td>
+      <td>90</td>
+      <td>702.2</td>
+      <td>1.00</td>
+      <td>1.05</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>CG33199</td>
+      <td>Mitochondrial</td>
+      <td>No</td>
+      <td>79</td>
+      <td>95.5</td>
+      <td>1.00</td>
+      <td>1.17</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>CG32582</td>
+      <td>Mitochondrial</td>
+      <td>No</td>
+      <td>52</td>
+      <td>16.5</td>
+      <td>0.57</td>
+      <td>2.82</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>sclA</td>
+      <td>Other cytoplasmic</td>
+      <td>NA</td>
+      <td>28</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CG12384</td>
+      <td>Other cytoplasmic</td>
+      <td>Yes</td>
+      <td>96</td>
+      <td>205.6</td>
+      <td>1.00</td>
+      <td>1.37</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>CG33774</td>
+      <td>Other cytoplasmic</td>
+      <td>No</td>
+      <td>40</td>
+      <td>115.3</td>
+      <td>1.00</td>
+      <td>1.13</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>CG33170</td>
+      <td>Other cytoplasmic</td>
+      <td>No</td>
+      <td>71</td>
+      <td>84.2</td>
+      <td>0.84</td>
+      <td>0.75</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>CG34200</td>
+      <td>Limited</td>
+      <td>Yes</td>
+      <td>52</td>
+      <td>331.7</td>
+      <td>1.00</td>
+      <td>1.66</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>CG32267</td>
+      <td>Limited</td>
+      <td>Yes</td>
+      <td>49</td>
+      <td>82.5</td>
+      <td>0.97</td>
+      <td>1.13</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>CG33155</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>60</td>
+      <td>33.8</td>
+      <td>0.64</td>
+      <td>0.88</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>tal-B</td>
+      <td>None</td>
+      <td>NA</td>
+      <td>49</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Details of the Poly-Ribo-Seq and transfection translation assay results for the FLAG-tagged smORFs, with RPKM, coverage and TE values. Previously corroborated smORFs (according to Figure 1A) are in bold. Scl is a positive control and tal-B is a negative control, but both are not endogenously transcribed in S2 cells, hence ‘NA’ Polysomal Ribo-Seq metrics and Peptidomic evidence._
 
 The putative functionality of smORF peptides is further supported by over half of the translated smORFs having revealed a function in high-throughput S2 cell RNAi screens in previous studies (Schmidt et al., 2012; Figure 3—figure supplement 1F). The biological relevance of smORFs is also implied by the transcription of 196 of these translated smORFs in embryos (Supplementary file 1B). 88 of these smORFs are transcribed throughout the whole of embryogenesis, which might be indicative of a basic cellular or housekeeping role, whereas 47 have stage-specific expression, perhaps indicative of a developmental role.
 
-## Other sources of smORFs
+### Other sources of smORFs
 
-Non-annotated smORFs were also scrutinized by Poly-Ribo-Seq. Many putative ncRNAs have been annotated as such because no long ORFs have been detected, but they can still contain smORFs. We looked for evidence of translation in 6438 ORFs that initiate with an AUG start codon within ncRNAs. Our total cytoplasmic mRNA data indicate that 125 ncRNA transcripts (containing 918 different ORFs) are transcribed and present in the cytoplasm of S2 cells. 313 smORFs in these transcripts appear translated by Poly-Ribo-Seq (Figure 2E), but ncRNA smORFs behaved differently from protein-coding and smORF genes. The median translation efficiency of these putative smORFs within ncRNA genes is lower than for canonical genes and annotated smORFs, and in fact is similar to UTRs (Table 2). In addition, we could not observe nor obtain peptidomics corroboration for the encoded peptides, and the FLAG signal is limited for the majority of such smORFs tested in the transfection assay (Figure 3C, Figure 3—figure supplement 1G). Yet a sizeable fraction (34%) of non-coding RNA smORFs displayed Poly-Ribo-Seq metrics above our cut-off values indicating translation (Figure 2E; Table 4) and some can display FLAG and Western blot signal similar to annotated smORFs (Figure 3C, Figure 3—figure supplement 1G,H; Table 4). Further, these positive-testing smORFs from non-coding RNAs show codon read-phasing (Figure 3—figure supplement 2A). These translation events do not necessarily represent ‘background’ translation of non-coding RNAs associated with polysomes. The comparison of ribosomal footprinting reads with reads resulting from the sequencing of RNA from polysomal fractions before footprinting (as in polysomal profiling) shows a high correlation for canonical coding sequences as expected (Smith et al., 2014), but not for non-coding RNAs, where high RNASeq polysomal counts do not necessarily result in significant footprinting (Figure 3—figure supplement 2B). Altogether, our results suggest that a proportion of these so-called non-coding RNA genes actually contain smORFs that are actively translated in S2 cells.10.7554/eLife.03528.014Table 4.Summary of tagged smORFs from non-coding RNAs and uORFsDOI: http://dx.doi.org/10.7554/eLife.03528.014smORFLocalizationPeptidomic evidence# aaRPKMCoverageTEPhastConspncr009:3L ORF1Other cytoplasmicNo21135.71.000.290.44pncr009:3L ORF2LimitedNo3064.70.580.630.49pncr009:3L ORF3LimitedNo3347.80.780.230.59CR30055 ORF1Not testedNo1215.20.711.240.49CR30055 ORF2MitochondrialNo5326.10.660.830.52CR30055 ORF3Not testedNo3654.60.852.900.55CR30055 ORF4LimitedNo1730.00.64NA0.54CR30055 ORF5LimitedNo5628.00.853.70.55Uhg2-ORF 1NoneNo3610.50.270.830.54FBtr 0072084_1ReticularNo1446.80.764.350.52FBtr 0072210_1Other cytoplasmicNo1397.70.924.340.48FBtr 0081720_1LimitedNo11121.31.002.390.55Details of the Poly-Ribo-Seq and transfection translation assay results for the FLAG-tagged smORFs translated from non-coding RNAs and uORFs, with RPKM, coverage and TE values.
+Non-annotated smORFs were also scrutinized by Poly-Ribo-Seq. Many putative ncRNAs have been annotated as such because no long ORFs have been detected, but they can still contain smORFs. We looked for evidence of translation in 6438 ORFs that initiate with an AUG start codon within ncRNAs. Our total cytoplasmic mRNA data indicate that 125 ncRNA transcripts (containing 918 different ORFs) are transcribed and present in the cytoplasm of S2 cells. 313 smORFs in these transcripts appear translated by Poly-Ribo-Seq (Figure 2E), but ncRNA smORFs behaved differently from protein-coding and smORF genes. The median translation efficiency of these putative smORFs within ncRNA genes is lower than for canonical genes and annotated smORFs, and in fact is similar to UTRs (Table 2). In addition, we could not observe nor obtain peptidomics corroboration for the encoded peptides, and the FLAG signal is limited for the majority of such smORFs tested in the transfection assay (Figure 3C, Figure 3—figure supplement 1G). Yet a sizeable fraction (34%) of non-coding RNA smORFs displayed Poly-Ribo-Seq metrics above our cut-off values indicating translation (Figure 2E; Table 4) and some can display FLAG and Western blot signal similar to annotated smORFs (Figure 3C, Figure 3—figure supplement 1G,H; Table 4). Further, these positive-testing smORFs from non-coding RNAs show codon read-phasing (Figure 3—figure supplement 2A). These translation events do not necessarily represent ‘background’ translation of non-coding RNAs associated with polysomes. The comparison of ribosomal footprinting reads with reads resulting from the sequencing of RNA from polysomal fractions before footprinting (as in polysomal profiling) shows a high correlation for canonical coding sequences as expected (Smith et al., 2014), but not for non-coding RNAs, where high RNASeq polysomal counts do not necessarily result in significant footprinting (Figure 3—figure supplement 2B). Altogether, our results suggest that a proportion of these so-called non-coding RNA genes actually contain smORFs that are actively translated in S2 cells.
+
+**Table 4.**
+ Summary of tagged smORFs from non-coding RNAs and uORFs
+
+
+<table>
+  <thead>
+    <tr>
+      <th>smORF</th>
+      <th>Localization</th>
+      <th>Peptidomic evidence</th>
+      <th># aa</th>
+      <th>RPKM</th>
+      <th>Coverage</th>
+      <th>TE</th>
+      <th>PhastCons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pncr009:3L ORF1</td>
+      <td>Other cytoplasmic</td>
+      <td>No</td>
+      <td>21</td>
+      <td>135.7</td>
+      <td>1.00</td>
+      <td>0.29</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>pncr009:3L ORF2</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>30</td>
+      <td>64.7</td>
+      <td>0.58</td>
+      <td>0.63</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>pncr009:3L ORF3</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>33</td>
+      <td>47.8</td>
+      <td>0.78</td>
+      <td>0.23</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>CR30055 ORF1</td>
+      <td>Not tested</td>
+      <td>No</td>
+      <td>12</td>
+      <td>15.2</td>
+      <td>0.71</td>
+      <td>1.24</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>CR30055 ORF2</td>
+      <td>Mitochondrial</td>
+      <td>No</td>
+      <td>53</td>
+      <td>26.1</td>
+      <td>0.66</td>
+      <td>0.83</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>CR30055 ORF3</td>
+      <td>Not tested</td>
+      <td>No</td>
+      <td>36</td>
+      <td>54.6</td>
+      <td>0.85</td>
+      <td>2.90</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>CR30055 ORF4</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>17</td>
+      <td>30.0</td>
+      <td>0.64</td>
+      <td>NA</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>CR30055 ORF5</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>56</td>
+      <td>28.0</td>
+      <td>0.85</td>
+      <td>3.7</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Uhg2-ORF 1</td>
+      <td>None</td>
+      <td>No</td>
+      <td>36</td>
+      <td>10.5</td>
+      <td>0.27</td>
+      <td>0.83</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>FBtr 0072084_1</td>
+      <td>Reticular</td>
+      <td>No</td>
+      <td>14</td>
+      <td>46.8</td>
+      <td>0.76</td>
+      <td>4.35</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>FBtr 0072210_1</td>
+      <td>Other cytoplasmic</td>
+      <td>No</td>
+      <td>13</td>
+      <td>97.7</td>
+      <td>0.92</td>
+      <td>4.34</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>FBtr 0081720_1</td>
+      <td>Limited</td>
+      <td>No</td>
+      <td>11</td>
+      <td>121.3</td>
+      <td>1.00</td>
+      <td>2.39</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+
+_Details of the Poly-Ribo-Seq and transfection translation assay results for the FLAG-tagged smORFs translated from non-coding RNAs and uORFs, with RPKM, coverage and TE values._
 
 Upstream short ORFs, or uORFs, have been described in more than 50% of annotated mammalian transcripts encoding canonical, long ORFs (Fritsch et al., 2012). We identified 14,881 uORFs with AUG start codons, within 11,587 5′-UTRs of 28,529 FlyBase annotated transcripts. 9069 of these uORFs were transcribed in S2 cells and of these 2708 (30%) are footprinted by ribosomes (Figure 2E). Similarly to smORFs in putative non-coding RNAs, translated uORFs display lower median TE than canonical ORFs and translated smORFs (Table 2), and they are not detected by peptidomics, altogether suggesting low abundance of the encoded peptides. However, tagging of uORFs can occasionally show similar signal to annotated smORFs (Figure 3D, Figure 3—figure supplement 1I).
 
-## Bioinformatic analysis of translated smORFs reveals specific characteristics
+### Bioinformatic analysis of translated smORFs reveals specific characteristics
 
 We scrutinised our set of annotated translated smORFs for bioinformatic markers, which might further suggest function of smORF peptides. Firstly, we used phastCons (Siepel et al., 2005) that measures conservation between 12 insect species.
 
-We examined the phastCons values in intergenic sequences and canonical long protein-coding sequences (
+We examined the phastCons values in intergenic sequences and canonical long protein-coding sequences (Figure 4A) and obtained a cut-off value of 0.55 separating them (10% FDR). 93% of S2-translated smORFs have phastCons scores above this threshold (median = 0.66), indicating a conservation level similar to that of canonical long-ORFs, and hence, a similar level of functionality for the coding sequences.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig4-v2.jpg)
 
-**Figure 4.:** (A) Distribution of phastCons scores for intergenic regions, standard length protein-coding CDSs (longer than 100 aa), S2 cell-translated annotated smORFs, and all annotated smORFs, with fitted normal curves. Green dotted lines indicate the 90th percentile of intergenic phastCons scores (0.55). (B) Relative abundance of particular amino acids in proteins (random expected: black, all CDSs: purple, all annotated smORFs: yellow, and translated smORFs: red). (C and D) Proportion of (C) S2-cell translated (32%) and (D) all smORFs (32%) predicted to contain transmembrane α helices (TMHMM). (E and F) Frequency distribution of smORF peptide lengths for (E) translated and (F) all annotated smORFs with medians shown by red dotted line.DOI: http://dx.doi.org/10.7554/eLife.03528.015
+**Figure 4.:** (A) Distribution of phastCons scores for intergenic regions, standard length protein-coding CDSs (longer than 100 aa), S2 cell-translated annotated smORFs, and all annotated smORFs, with fitted normal curves. Green dotted lines indicate the 90th percentile of intergenic phastCons scores (0.55). (B) Relative abundance of particular amino acids in proteins (random expected: black, all CDSs: purple, all annotated smORFs: yellow, and translated smORFs: red). (C and D) Proportion of (C) S2-cell translated (32%) and (D) all smORFs (32%) predicted to contain transmembrane α helices (TMHMM). (E and F) Frequency distribution of smORF peptide lengths for (E) translated and (F) all annotated smORFs with medians shown by red dotted line.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03528/elife-03528-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Relative abundance of all amino acids in ORFs, (random: grey, all CDS: purple, all annotated smORFs: yellow, and translated annotated smORFs: red). (B) Enrichment of GO molecular function terms (GOrilla) within translated annotated smORFs in S2 cells when compared to translated standard protein-coding ORFs. Main overrepresented terms are structural consitituents of ribosome (p = 3.28E-4), oxidoreductase activity and transmembrane transporter activity (p = 2.77E-5). (C–D) Frequency distribution of peptide lengths, phastCons, and relative abundance of particular amino acids of translated (C) uORFs and (D) ncRNA ORFs. Red dotted lines indicate the median amino acid lengths and green dotted lines indicate the 90th percentile cut-off from phastCons of intergenic regions, 0.55 (Figure 4A).DOI: http://dx.doi.org/10.7554/eLife.03528.016
+**Figure 4—figure supplement 1.:** (A) Relative abundance of all amino acids in ORFs, (random: grey, all CDS: purple, all annotated smORFs: yellow, and translated annotated smORFs: red). (B) Enrichment of GO molecular function terms (GOrilla) within translated annotated smORFs in S2 cells when compared to translated standard protein-coding ORFs. Main overrepresented terms are structural consitituents of ribosome (p = 3.28E-4), oxidoreductase activity and transmembrane transporter activity (p = 2.77E-5). (C–D) Frequency distribution of peptide lengths, phastCons, and relative abundance of particular amino acids of translated (C) uORFs and (D) ncRNA ORFs. Red dotted lines indicate the median amino acid lengths and green dotted lines indicate the 90th percentile cut-off from phastCons of intergenic regions, 0.55 (Figure 4A).
 
 As a further indicator of smORF translation, we studied the amino acid composition of translated smORFs, compared to canonical long proteins and expected random usage (Figure 4B). Annotated smORFs display a lower than random usage of arginine, which is a hallmark of translated proteins (King and Jukes, 1969). However, they also display differential usage of several amino acids, which are characteristic of alpha-helices in canonical proteins, being enriched for lysine and phenylalanine, and depleted of serine (Chou and Fasman, 1974; Figure 4B, Figure 4—figure supplement 1A). This finding was corroborated by an abundance of putative transmembrane alpha-helix motifs, in about a third of translated smORFs (Figure 4C) and all predicted smORFs (Figure 4D) compared to the expected 20% observed in canonical proteins (Krogh et al., 2001). This is in agreement with similar findings in bacteria (Hemm et al., 2008) and suggests that smORFs may represent a source of uncharacterised transmembrane peptides. An enrichment for molecular GO terms such as membrane transporter activity in annotated smORFs (Figure 4—figure supplement 1B), and the subcellular localisations we observe for half of the tagged smORFs, are also consistent with these findings.
 
@@ -122,7 +517,7 @@ The peptides encoded by uORFs and ncRNAs did not behave bioinformatically as smO
 
 ## Discussion
 
-## smORFs are translated in high numbers in metazoans
+### smORFs are translated in high numbers in metazoans
 
 We have developed an improvement to ribosome profiling, which we term Poly-Ribo-Seq, to ensure that footprinted mRNA sequences represent regions of active translation rather than non-productive events. Using Poly-Ribo-Seq, we have specifically profiled the translation of smORFs in Drosophila S2 cells, using a purification of small polysomes to enrich for smORFs.
 
@@ -136,7 +531,7 @@ Our data confirm the tentative annotation of Drosophila smORFs and expand our un
 
 Poly-Ribo-Seq detects almost all peptides detected by proteomics, but is two to three times more extensive. Furthermore, Poly-Ribo-Seq can define the whole of the translated ORF as opposed to isolated micropeptides detected by peptidomics. Though available proteomic evidence has been useful in confirming the depth of Poly-Ribo-Seq, it is clear that currently peptidomics is not as sensitive as ribosome profiling. High peptide translation level seems a critical factor (but likely not the only one) favouring detection by mass spectrometry. However, the combination of Poly-Ribo-Seq and peptidomics could produce interesting data on peptide stability and degradation.
 
-## Function of smORFs: translation and beyond?
+### Function of smORFs: translation and beyond?
 
 The putative function of smORFs and their encoded peptides is a separate issue from their translation, just as the transcription of thousands of apparently non-coding RNAs is an accepted fact separated from their, as yet, not fully understood function. Our present work is concerned with proving smORF translation, as a first step to eventually uncovering their true function. However, the function of a number of smORFs has been identified in animal and plants (reviewed in Andrews and Rothnagel, 2014), and our data allow for some speculations.
 
@@ -150,27 +545,27 @@ Altogether our data indicate that thousands of smORFs are translated in metazoan
 
 ## Materials and methods
 
-## Tissue culture
+### Tissue culture
 
 S2 cells were grown under standard conditions in Schneiders medium with 10% FBS.
 
-## Poly-Ribo-Seq
+### Poly-Ribo-Seq
 
 S2 cells were treated with cycloheximide (Sigma, St Louis, MO) at 100 μg/ml for 3 min at RT before harvesting. The cells were pelleted, washed (1X PBS, 100 μg/ml cycloheximide), and resuspended in lysis buffer; 50 mM Tris–HCl pH8, 150 mM NaCl, 10 mM MgCl2, 1 mM DTT, 1% NP40, 100 µg/ml cycloheximide, Turbo DNase (Life Technologies, Carlsbad, CA), RNasin Plus RNase Inhibitor (Promega, Carlsbad, CA), cOmplete Protease Inhibitor (Roche). Nuclei were removed, and cytoplasmic lysates were loaded onto sucrose gradients and subjected to ultracentrifugation. Gradients were pumped out, their absorbance at 254 nm plotted and fractionated. We purified mRNAs in small polysomes, away from monosomes (80S), ribosomal subunits (40S, 60S), and large polysomes. Footprinting was performed overnight at 4°C with RNaseI (Life Technologies), stopped with SUPERase·In RNase inhibitor (Life Technologies) and precipitated. mRNA from total cytoplasmic lysate was purified using oligo (dT) Dynabeads (Life Technologies) and fragmented by alkaline hydrolysis. 28–34 nt ribosome footprints and 50–80 nt mRNA fragments were gel purified and prepared as previously described (Ingolia et al., 2009, 2011, 2012) for Next Generation Sequencing. Libraries were sequenced on Illumina HiSeq2000 and MiSeq machines with 50 bp SingleEnd read protocol.
 
-## rRNA depletion
+### rRNA depletion
 
 To generate ssDNA complementary to Drosophila rRNA, PCRs were performed using 5′ biotinylated reverse primers (Supplementary file 2). A 5′ biotinlyated oligo complementary to 2S rRNA and rRNA PCR products were bound to magnetic streptavidin beads (Life Technologies) and their second strands washed away. Two rounds of 50 µl rRNA beads were used to deplete rRNA prior to reverse transcription.
 
-## RT-PCR
+### RT-PCR
 
 RNA from sucrose gradient fractions was precipitated with isopropanol and 0.3 M NaCl. Resuspended pellets were treated with Turbo DNaseI (Life Technologies), extracted with phenol/chloroform and re-precipitated. cDNA was synthesised MMLV reverse transcriptase (Promega) and subjected to PCR with mRNA specific primers and Taq Polymerase (Qiagen, Venio, Netherlands).
 
-## Footprint sequence alignment
+### Footprint sequence alignment
 
 Sequencing reads were clipped, trimmed, and aligned to an rRNA and tRNA reference using Bowtie, discarding the rRNA and tRNA alignments and collecting unaligned reads. Unaligned reads were mapped to FlyBase (Release 5.50) using TopHat. We only retained reads that mapped uniquely, but allowed up to two mismatches.
 
-## Footprint profile analysis
+### Footprint profile analysis
 
 Profiles of ribosome footprints across a transcript were constructed by quantifying the number of footprint reads aligned at each position within the feature of interest. Ribosome density was computed by scaling read counts for each feature-by-feature length and by the total number of genome-aligned reads (Ingolia et al., 2009). Footprint coverage estimated the percentage of each feature covered by ribosome footprints using the BEDTools coverageBed command.
 
@@ -180,34 +575,34 @@ Translation efficiency (TE) was calculated as ribosome footprint density (RPKM)/
 
 To analyse framing, ribosome-protected fragments (RPF) were aligned to transcript cooordinates. For a given open reading frame, the corresponding P-site position of filtered RPF reads (28–32 nt) was designated as follows: +12 offset for 28 and 29 nt, +13 for 30 to 31 nt, and +14 for 32 nt RPF (Chew et al., 2013; Bazzini et al., 2014).
 
-## uORF and ncORFs identification
+### uORF and ncORFs identification
 
 We identified uORFs and ncORFs longer than 10 aa with an AUG start codon followed by an in-frame stop codon within the annotated 5′-UTRs and ncRNA transcripts, using the emboss getorf program. To exclude the possibility that the ribosome occupancy observed in 5′-UTRs was due to the presence of such upstream ORFs, we created a modified transcript that contained all regions except the putative uORFs for all our analysis on 5′-UTRs.
 
-## phastCons values
+### phastCons values
 
 phastCons scores for 171,317 alignment blocks were downloaded from UCSC Genome Browser. We computed percentage overlap between the phastCons block and our feature of interest and estimated mean phastCons values.
 
-## Peptide Atlas
+### Peptide Atlas
 
 Lists of peptide CDS coordinates with protein identifiers (FlyBase peptide ID) were downloaded from Peptide Atlas database (http://www.peptideatlas.org) and compared to FlyBase predicted smORF peptide sequences.
 
-## Functional analysis of smORFs
+### Functional analysis of smORFs
 
 Prediction of transmembrane alpha-helices was performed using TMHMM (http://www.cbs.dtu.dk/services/TMHMM/). In house perl scripts (available in Supplementary file 3) calculated amino acid composition of CDS. For the random control, we followed King and Jukes (1969). We took all FlyBase transcript sequences and calculated the nucleotide composition of this pool; from this we estimated the likely amino acid usage based on the nucleotide composition of the respective codons. RNAi screen data were accessed through Flymine (http://www.flymine.org/), and GO term enrichment was calculated by GOrilla (http://cbl-gorilla.cs.technion.ac.il/) (Eden et al., 2009).
 
-## Cloning
+### Cloning
 
 The 5′-UTR and CDS of putative smORFs were cloned by PCR from S2 cell cDNA into pENTR/D-TOPO (Invitrogen) and then into pAWF (http://emb.carnegiescience.edu/labs/murphy/Gateway%20vectors.html#), whose ATG start codon was mutated to GCG by site-directed mutagenesis.
 
-## Transfections and microscopy
+### Transfections and microscopy
 
 S2 cells were plated on acid-treated coverslips and transfected with plasmid DNA using Xtreme Gene HP (Roche). After 48 hr, the cells were fixed for 20 min with 4% formaldehyde, washed with 1X PBS, 0.1% Triton X–100 (PBS-T), blocked with PBS-T 2% wt/vol BSA before immunostaining with primary mouse anti-FLAG M2 antibody (Sigma) at 1/1000 and secondary anti-mouse FITC (Jackson, West Grove, PA) at 1/400. For subcellular localisation experiments, cells were incubated for 30 min with Rhodamine-Phalloidin (Life Technologies) to highlight F-actin. All transfections were incubated for 10 min with Hoechst (Sigma) according to manufacturer's instructions for nuclei staining and mounted with Vectashield (Vector Labs, Burlingame, CA). For Mitotracker experiments, 48 hr after transfection cells were incubated in 500 nM Mitotracker Red CMXRos (Life Technologies) for 45 min. Imaging was conducted using a Zeiss 63X Plan Apochromat Oil Immersion lens on the LSM510 Axioskop 2. For correlation analysis Z-stack images were taken with slice interval of 0.15 μm, and ImageJ plugin ‘Manders Coefficients’ was used to calculate correlation coefficient of FLAG to Mitotracker signal with at least 15 cells per replicate, with three replicate transfections.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were harvested 48 hr post transfection, washed with 1X PBS, resuspended in Tricine Sample buffer (Bio-Rad, Hercules, CA) (2.5% vol/vol βME) and run on 16% Tris-Tricine gels. Immunoblots were incubated with primary antibody: 1:10,000 anti-FLAG M2 (Sigma) and 1:500 anti-β-tubulin E7 (DSHB, Iowa City, IA), and then secondary 1:10,000 goat anti-mouse HRP (Santa Cruz, Dallas, TX). Immunoblots were developed with ECL Prime Chemiluminescent Detection Reagent (GE Healthcare, Little Chalfont, UK).
 
-## Mass spectrometry
+### Mass spectrometry
 
 S2 cells were lysed in 0.075% SDS, 1X c0mplete Protease Inhibitor Cocktail (Roche) with three rounds of freeze thawing and clarified. Total protein (1X Tricine Loading buffer, 2.5% vol/vol βME) was run on 10–20% MiniProtean Tris-Tricine Gels (Bio-Rad) and the 5–15 KDa region excised. Mass spectrometry was performed by Cambridge Centre for Proteomics (University of Cambridge, UK) using in-gel trypsin digestion and LC-ESI-MS/MS using an Orbitrap Velos Instrument (Thermo Fisher Scientific) with the following parameters: 2 missed Trypsin cleavages, 25 ppm Precursor mass error, 0.8 Da fragment mass tolerance, carbamidomethylation of cysteine as a fixed and methionine oxidation as a variable modification. Spectra were matched against Drosophila melanogaster (5.55) proteome using generic Mascot algorithm.

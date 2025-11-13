@@ -42,7 +42,7 @@
 
 ## Abstract
 
-Numerous reports of vascular events after an initial recovery from COVID-19 form our impetus to investigate the impact of COVID-19 on vascular health of recovered patients. We found elevated levels of circulating endothelial cells (CECs), a biomarker of vascular injury, in COVID-19 convalescents compared to healthy controls. In particular, those with pre-existing conditions (e.g., hypertension, diabetes) had more pronounced endothelial activation hallmarks than non-COVID-19 patients with matched cardiovascular risk. Several proinflammatory and activated T lymphocyte-associated cytokines sustained from acute infection to recovery phase, which correlated positively with CEC measures, implicating cytokine-driven endothelial dysfunction. Notably, we found higher frequency of effector T cells in our COVID-19 convalescents compared to healthy controls. The activation markers detected on CECs mapped to counter receptors found primarily on cytotoxic CD8 + T cells, raising the possibility of cytotoxic effector cells targeting activated endothelial cells. Clinical trials in preventive therapy for post-COVID-19 vascular complications may be needed.
+Numerous reports of vascular events after an initial recovery from COVID-19 form our impetus to investigate the impact of COVID-19 on vascular health of recovered patients. We found elevated levels of circulating endothelial cells (CECs), a biomarker of vascular injury, in COVID-19 convalescents compared to healthy controls. In particular, those with pre-existing conditions (e.g., hypertension, diabetes) had more pronounced endothelial activation hallmarks than non-COVID-19 patients with matched cardiovascular risk. Several proinflammatory and activated T lymphocyte-associated cytokines sustained from acute infection to recovery phase, which correlated positively with CEC measures, implicating cytokine-driven endothelial dysfunction. Notably, we found higher frequency of effector T cells in our COVID-19 convalescents compared to healthy controls. The activation markers detected on CECs mapped to counter receptors found primarily on cytotoxic CD8+ T cells, raising the possibility of cytotoxic effector cells targeting activated endothelial cells. Clinical trials in preventive therapy for post-COVID-19 vascular complications may be needed.
 
 ## Introduction
 
@@ -56,11 +56,167 @@ This study aims to understand the state of vascular health in convalescent COVID
 
 ## Results
 
-## Patient and healthy participants characterization
+### Patient and healthy participants characterization
 
 To understand the intermediate consequence of COVID-19, we performed vascular phenotyping using CECs and endothelial activation markers as the cellular and molecular measures of endothelial dysfunction. Written informed consent was received from participants prior to inclusion in the PROTECT study (Young et al., 2020a, Young et al., 2020c). All study groups were almost gender-balanced, with prior comorbidities and self-identified ethnicity/race as summarized in Table 1. Convalescent COVID-19 patients who had no pneumonia throughout admission (mild), pneumonia without hypoxia (moderate), or pneumonia with hypoxia (desaturation to ≤94%) requiring supplemental oxygen (severe), and discharged after 15 days (median [interquartile range, IQR 11–26]) were screened for pre-existing cardiovascular risk factors. Among our selected convalescent COVID-19 patients (n = 30), half had at least one cardiovascular risk factor, including mainly hypertension, diabetes, and/or hyperlipidemia. They were benchmarked to healthy participants (n = 24) and non-COVID patients with matched cardiovascular risk factors (n = 20). More details on demographics are included in Table 1.
 
-## COVID-19 and cardiovascular risk factors contribute to endothelial dysfunction
+**Table 1.**
+ Demographics of patients and healthy controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics, N (%)</th>
+      <th rowspan="2">Healthy participants (n = 24)</th>
+      <th rowspan="2">Non-COVID-19 patients with cardiovascular risk factors (n = 20)</th>
+      <th colspan="2">Convalescent COVID-19 individuals (n = 30)</th>
+    </tr>
+    <tr>
+      <th>Cardiovascular risk factors (n = 15)</th>
+      <th>No cardiovascular risk (n = 15)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age*</td>
+      <td>46.5 (9.9) years</td>
+      <td>62.4 (8.7) years</td>
+      <td>54 (8.7) years</td>
+      <td>42 (13.5) years</td>
+    </tr>
+    <tr>
+      <td>Age, male*</td>
+      <td>46.3 (11.3) years</td>
+      <td>62.3 (10.4) years</td>
+      <td>54 (8.2) years</td>
+      <td>36 (6.1) years</td>
+    </tr>
+    <tr>
+      <td>Age, female*</td>
+      <td>46.8 (8.8) years</td>
+      <td>63 (7.3) years</td>
+      <td>54 (9.9) years</td>
+      <td>48 (17.1) years</td>
+    </tr>
+    <tr>
+      <td>Gender, male</td>
+      <td>12 (50)</td>
+      <td>10 (50)</td>
+      <td>8 (53.3)</td>
+      <td>8 (53.3)</td>
+    </tr>
+    <tr>
+      <td>Gender, female</td>
+      <td>12 (50)</td>
+      <td>10 (50)</td>
+      <td>7 (46.7)</td>
+      <td>7 (46.7)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Ethnicity</td>
+      <td>Chinese 22 (91.7)</td>
+      <td>Chinese 17 (85)</td>
+      <td>Chinese 11 (73.3)</td>
+      <td>Chinese 13 (86.6)</td>
+    </tr>
+    <tr>
+      <td>Filipino 2 (8.3)</td>
+      <td>Indian 3 (15)</td>
+      <td>Malay 2 (13.3)</td>
+      <td>Indian 1 (6.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Bangladeshi 1 (6.7)</td>
+      <td>Caucasian 1 (6.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Filipino 1 (6.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Days post-symptom onset (median [IQR])</td>
+      <td>N.A.</td>
+      <td>N.A.</td>
+      <td colspan="2">34 (27–46) days</td>
+    </tr>
+    <tr>
+      <td rowspan="3">COVID-19 severity</td>
+      <td rowspan="3">N.A.</td>
+      <td rowspan="3">N.A.</td>
+      <td>Mild 5 (33.3)</td>
+      <td>Mild 5 (33.3)</td>
+    </tr>
+    <tr>
+      <td>Moderate 5 (33.3)</td>
+      <td>Moderate 5 (33.3)</td>
+    </tr>
+    <tr>
+      <td>Severe 5 (33.3)</td>
+      <td>Severe 5 (33.3)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Comorbidities</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>0 (0)</td>
+      <td>20 (100)</td>
+      <td>10 (66.7)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Hyperlipidemia</td>
+      <td>0 (0)</td>
+      <td>10 (50)</td>
+      <td>11 (73.3)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td>0 (0)</td>
+      <td>9 (45)</td>
+      <td>7 (46.7)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Fatty liver</td>
+      <td>0 (0)</td>
+      <td>Information not available</td>
+      <td>2 (13.3)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Chronic liver disease</td>
+      <td>0 (0)</td>
+      <td>Information not available</td>
+      <td>1 (6.7)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Coronary artery disease</td>
+      <td>0 (0)</td>
+      <td>6 (30)</td>
+      <td>Information not available</td>
+      <td>Information not available</td>
+    </tr>
+    <tr>
+      <td>Myocardial infarction</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>2 (13.3)</td>
+      <td>0 (0)</td>
+    </tr>
+  </tbody>
+</table>
+
+_All values are reported as N (%) where N indicates the number of observations.*Values are expressed as mean (± standard deviation)._
+
+### COVID-19 and cardiovascular risk factors contribute to endothelial dysfunction
 
 There are two major types of blood endothelial cells (Hebbel, 2017). CECs are shed from damaged vessels and constitute a cell-based biomarker for vascular dysfunction (Blann et al., 2005). On the other hand, endothelial progenitor cells (EPCs) originate from the bone marrow and are mobilized into the bloodstream in response to vascular injury (Ackermann et al., 2020a; Ackermann et al., 2020b; Ackermann et al., 2020c; Li and Li, 2016; Mancuso et al., 2020). Identification of the CEC population from individual peripheral blood mononuclear cells (PBMCs) samples was carried out with high stringency using a panel of established CEC immunophenotypic markers (Figure 1a). We first gated for the CD45−/CD31+ population to isolate CECs along with bone marrow-derived EPCs and platelets, while ruling out CD45+ leukocytes that also expressed the endothelial marker CD31 (PECAM1) (Duda et al., 2007). This population was further subtyped based on the progenitor marker, CD133, to rule out EPCs. Finally, a nucleic acid stain was used to distinguish anucleate platelets from nucleated CECs, which were defined here by a combined immunophenotypic profile of CD45−/CD31+/CD133−/DNA+ (Burger and Touyz, 2012; Duda et al., 2007; Yu et al., 2013). As a comparison, putative EPCs were identified by CD133+/CD45−/DNA+ population (Ingram et al., 2004; Mancuso et al., 2020; Rafii and Lyden, 2003). To further analyze endothelial cell activation, CECs were characterized for the expression of activation markers, namely, intercellular adhesion molecule 1 (ICAM1), P-selectin (SELP), and fractalkine (CX3CL1) (Figure 1a), which are integral for the processes of leukocyte adhesion, platelet aggregation, and trans-endothelial migration, respectively (Goncharov et al., 2017; Johnson and Jackson, 2013).
 
@@ -74,7 +230,7 @@ To ascertain the consequence of COVID-19 on endothelial dysfunction, we regroupe
 
 We further performed molecular profiling of CECs for endothelial activation markers and used healthy participants as baseline. Our data revealed a significantly higher mean numbers of ICAM1+ CECs in convalescent COVID-19 with or without cardiovascular risk and non-COVID-19 cardiovascular risk groups (Figure 1d). Only convalescent COVID-19 patients with cardiovascular risk had a higher SELP+ CEC count (p=0.0291), while a higher CX3CL1+ CEC count was found only in non-COVID-19 cardiovascular risk patients (p=0.0462). When we analyzed their endothelial activation hallmarks by disease severity (Figure 1e), both convalescent COVID-19 patients who recovered from moderate symptoms (p=0.006) and non-COVID-19 patients with cardiovascular risks (p=0.0148) had significantly higher numbers of ICAM1+ CECs than healthy controls. We also observed a trend that convalescent COVID-19 patients who recovered from severe symptoms had the highest number of SELP+ CECs, although insignificant. As seen in the spread of data in Figure 1d and e, large inter-individual variations in CEC characteristics were expected and could obscure observations of statistically significant comparisons. To overcome this, we compared the proportion of patients with regard to the numbers of activation markers expressed by CECs in each group, and a Chi-squared goodness-of-fit test was carried out to assess if the percentages of patients were similar across the groups. We found a significant relationship between the number of endothelial activation markers expressed by CECs and the disease status of patients, Χ2 (9, N = 64)=19.83, p=0.019 where convalescent COVID-19 patients compounded with cardiovascular risk had the most pronounced endothelial activation hallmarks (Figure 1f), more than those having either a history of COVID-19 alone or cardiovascular risk without COVID-19. Conversely, COVID-19 severity did not render significantly different extent of endothelial activation hallmarks (Figure 1g). These findings demonstrate that COVID-19 may act in concert with comorbidities of hypertension and diabetes to intensify risks of future vascular complications due to elevated endothelial activation state.
 
-## Persistent cytokine production in convalescent COVID-19 patients
+### Persistent cytokine production in convalescent COVID-19 patients
 
 Multiplex microbead-based immunoassay was performed to determine the cytokine levels in COVID-19 patient plasma during hospital admission and after discharge. To investigate the association between cytokine responses and cardiovascular risks, cytokine and chemokine levels were compared between COVID-19 patients with and without cardiovascular risk during the acute and convalescent phases of infection (Figure 2a). We found that COVID-19 patients with cardiovascular risk had lower levels of growth factors brain-derived neurotrophic factor (median concentration 22.70 vs. 38.57 pg/mL, p=0.015), PDGF-BB (median concentration 31.08 vs. 62.51 pg/mL, p=0.023) and PIGF-1 (median concentration 30.69 vs. 1.49 pg/mL, p=0.040) compared to patients without cardiovascular risk at the early acute phase of infection (first plasma sample collected after hospital admission, at a median 10 days after symptom onset, IQR 7–15) (Figure 2b). These growth factors are known to promote vascular function (Alomari et al., 2015; Brown et al., 1995; Carmeliet et al., 2001), and our observations suggest that the endothelial dysfunction underlying patients with cardiovascular risk may impede vascular repair following injury during the acute phase of virus infection. Interestingly, the plasma levels of proinflammatory IL-1β (median concentration 4.95 vs. 3.51 pg/mL, p=0.026), IL-17A (median concentration 3.12 vs. 0.09 pg/mL, p=0.003), IL-2 (median concentration 48.82 vs. 27.07 pg/mL, p=0.007), and RANTES (median concentration 105.00 vs. 72.47 pg/mL, p=0.037) were significantly higher in patients with cardiovascular risk than those without (Figure 2b) during the early convalescent phase (first plasma sample collected after hospital discharge, median 7 days post hospital discharge, IQR 3–12). Notably, the levels proinflammatory cytokines such as IL-1β, IL-17A, IL-2, and RANTES remained elevated in COVID-19 patients at the early convalescent phase, particularly in those with prior cardiovascular risk, compared to healthy controls (Figure 2b). Result from a simple linear regression analysis showed that age was significantly associated with the presence of cardiovascular risks in our COVID-19 patients. After adjustment for age by multiple linear regression analysis, levels of RANTES at the early convalescent phase was significantly associated with cardiovascular risks (Supplementary file 1).
 
@@ -82,27 +238,35 @@ Multiplex microbead-based immunoassay was performed to determine the cytokine le
 
 **Figure 2.:** Concentrations of 45 immune mediators were quantified using a 45-plex microbead-based immunoassay. (a) Heatmap of immune mediator levels in plasma samples of patients with (n = 15) and without (n = 15) cardiovascular risk factors at both acute (median 10 days post-illness onset), convalescent (0—90 days post-hospital discharge) phases of SARS-CoV-2 infection, and non-COVID-19 healthy controls. Each color represents the relative concentration of a particular analyte. Blue and red indicate low and high concentrations, respectively. (b) Profiles of significant immune mediators of COVID-19 patients with and without cardiovascular risk factors during acute and convalescent phases are illustrated as scatter plots. Cytokine levels in plasma fraction samples from first collection time point during hospital admission (acute, median 10 days post-illness onset) and discharge (convalescent, median 7 days post-hospital discharge) were compared. Mann—Whitney U tests were performed on the logarithmically transformed concentration (*p<0.05; **p<0.01). Immune mediator levels for healthy control (n = 23) are indicated by the black dotted line. Patient samples with concentration out of measurement range are presented as the value of logarithm transformation of Limit of Quantification.
 
-## Correlative studies implicating endothelial dysfunction with persistent cytokine production
+### Correlative studies implicating endothelial dysfunction with persistent cytokine production
 
 To understand whether persistent immune activation may impact endothelial dysfunction, we performed correlation analysis of cytokine levels with the aforementioned CEC attributes. Interestingly, CEC attributes from convalescent patients without prior cardiovascular risk correlated significantly with a greater number of cytokines than those with cardiovascular risk (Figure 3a). This may suggest that persistent cytokine production contributed primarily to endothelial injury (CEC counts) and activation hallmarks (CX3CL1+ and SELP+) in convalescent patients without previously known risk factors. On the other hand, more pronounced endothelial injury and activation in those with cardiovascular risk would have been attributed to their pre-existing cardiovascular risk factors, on top of the aftermath of COVID-19. Among the positively correlated cytokines in the cardiovascular risk group (Figure 3a), MIP-1α (CCL3) related to a chemoattractant for leukocytes, along with IL-17A (Williams et al., 2019), IL-8 (Apostolakis et al., 2009), and IL-18 (Gerdes et al., 2002), known to evoke activation of endothelial cells during atherogenesis, may suggest chronic development of atherosclerotic plaques already in these individuals.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64909/elife-64909-fig3-v1.jpg)
 
-**Figure 3.:** (a) Spearman rank correlation coefficients were calculated to assess the associations between the level of cytokines and CEC attributes in terms of mean numbers of CECs, SELP CECs, or CX3CL1+ CECs. Spearman’s correlation coefficient r and p values (two-tailed test) were shown in plots. Source data relating to this figure is available. (+b) Network analysis of CEC-associated cytokines in the convalescent COVID-19 patients without prior cardiovascular risk factors. Interactive relationships between the cytokines or chemokines were determined by Search Tool for the Retrieval of Interacting Genes/ Proteins (STRING) analysis, with a confidence threshold of 0.4.Figure 3—source data 1.Concentrations of cytokines (pg/ml) and CEC attributes in terms of mean numbers of CECs, SELP+ CECs or CX3CL1+ CECs per million PBMCs were used to calculate Spearman rank correlation coefficients shown in Figure 3.
+**Figure 3.:** (a) Spearman rank correlation coefficients were calculated to assess the associations between the level of cytokines and CEC attributes in terms of mean numbers of CECs, SELP+ CECs, or CX3CL1+ CECs. Spearman’s correlation coefficient r and p values (two-tailed test) were shown in plots. Source data relating to this figure is available. (b) Network analysis of CEC-associated cytokines in the convalescent COVID-19 patients without prior cardiovascular risk factors. Interactive relationships between the cytokines or chemokines were determined by Search Tool for the Retrieval of Interacting Genes/ Proteins (STRING) analysis, with a confidence threshold of 0.4.
 
 For the convalescent patients without prior risk factors, the measures of CEC attributes reflected greater sensitivity to cytokine-driven endothelial dysfunction that could signify a more direct consequence of COVID-19. Further protein—protein interaction network analyses with Search Tool for the Retrieval of Interacting Genes/Proteins (STRING) highlighted the direct and indirect interactions between the significant cytokines and their functional associations with biological processes involved in inflammatory response, vasculature development, angiogenesis, leukocyte chemotaxis, B cell proliferation, and T cell activation (Figure 3b). Among the positively correlated cytokines (Figure 3a), we observed growth factors—associated tissue regeneration and remodeling, namely EGF, LIF, PDGF-BB, and PIGF-1 (PGF), indicating possibility of adaptive angiogenesis taking place as a response to preceding damages caused by viral infection and cytokine overdrive. IL-1RA, an IL-1 pathway inhibitor, could be an inflammation resolving mediator post infection. Conversely, IP-10 (CXCL10) is known to limit angiogenesis (Bodnar et al., 2006). This collective turnover of endothelial cells during blood vessel remodeling may result in elevated number of CECs. A number of significantly correlated cytokines are chemokines known to induce endothelial activation and promote chemotaxis of leukocytes to vascular endothelium. Chemotactic factors such as IP-10 (CXCL10), CXCL12, and RANTES (CCL5) regulate adhesion and transmigration of T lymphocytes, monocytes, and/or neutrophils through endothelial barrier (Sokol and Luster, 2015). Moreover, RANTES was specifically correlated with SELP+ CEC (r = 0.5677, p=0.0295), indicating that activated platelet-derived RANTES may work in concert with endothelial SELP to mediate platelet aggregation and trigger coagulation cascade. In partial correlation analyses, a majority of these CEC—cytokines correlations were sustained even after accounting for age (Supplementary file 1).
 
 Overall, CEC attributes of convalescent COVID-19 patients correlated with a vast majority of differentiation and activation factors associated with T cells and B cells (IL-4, IL-5, IL-7, IL-17A, IL-18, MIP-1α, and RANTES) (Turner et al., 2014), implicating a broad adaptive immune response with endothelial dysfunction. Besides being a target of the immune mediators, we recognize that endothelial cells, once activated, could also be a source of these cytokines, which in turn could activate their immune counterparts.
 
-## Endothelial—immune crosstalk
+### Endothelial—immune crosstalk
 
 Our ability to measure activation markers directly on CECs motivated us to better understand the receptor—receptor and chemokine—receptor interactions between activated endothelial cells with putative immune subpopulations in COVID-19. We performed data mining of published single-cell transcriptomic datasets on PBMCs from healthy participants, mild and severe COVID-19 patients (Wilk et al., 2020), and COVID-19 patients with or without cardiovascular disease (Schulte-Schrepping et al., 2020). Then, we re-analyzed the expressions of counter receptors (i.e., ITGAL, SELPLG, and CX3CR1) to our endothelial activation markers (i.e., ICAM1, SELP, and CX3CL1, respectively), in order to identify the potential immune interactors with activated endothelial cells. We found that those counter receptors were most pronouncedly expressed by CD8+ T cells, natural killer (NK) cells, and to some extent monocytes (Figure 4a and Figure 4—figure supplement 1). In Wilk et al.'s dataset, the expression of CX3CR1 was intensified in mild and severe COVID-19 patients than healthy participants (Figure 4a). The relationship between counter receptors expression and COVID-19 disease was even more marked in Schulte-Schrepping et al.'s dataset with a higher proportion of NK or both CD8+ and NK cells expressing all three counter receptors found in mild and severe COVID-19 samples, respectively, regardless of comorbidity with cardiovascular disease (Figure 4—figure supplement 1). As the presence of those counter receptors generally marks cytotoxic effector lymphocytes in peripheral blood (Nishimura et al., 2002), we correspondingly found that CD8+ T cells and NK cells were the major cytotoxic populations expressing perforin and granzymes (Figure 4b), especially in COVID-19 patients (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64909/elife-64909-fig4-v1.jpg)
+
+**Figure 4.:** (a) UMAP representations of immune cell populations from healthy participants and COVID-19 patients annotated by cell types (left) and differential expressions of counter receptors ITGAL, SELPLG, and CX3CR1, which are known to interact with surface molecules of activated endothelial cells (right). (b) Distribution of the expressions of cytotoxic genes GZMA, GZMB, and PRF1 across immune cell populations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64909/elife-64909-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Single cell transcriptomic dataset published by Schulte-Schrepping et al., 2020 were re-analyzed using the cellxgene platform hosted by Fastgenomics database (https://beta.fastgenomics.org/datasets/detail-dataset-952687f71ef34322a850553c4a24e82e#Cellxgene). The samples were annotated as mild (WHO 2–4) or severe (5—7) COVID-19 disease according to the WHO clinical ordinal scale and with or without cardiovascular commodity following publication Table S1 annotations. The UMAP representing immune cell populations compilated from healthy donor (n = 21), mild with (n = 4) or without (n = 4) cardiovascular comorbidity, and severe with (n = 8) or without (n = 2) cardiovascular comorbidity was annotated using the metadata included in the ‘cluster_labels_res.0.4els_res.0.4’ taxonomy. For better clarity, the clusters of the same cell type were pooled together. (b) Expression of counter receptors (ITGAL, SELPLG, and CX3CR1) and cytotoxicity-associated genes (PFR1, GMZB and GMZA) across immune cell population. Both set of genes are mainly expressed by CD8+ and NK cells and to some extent monocyte. (c) Distribution of the expression of counter receptors and cytotoxicity associated genes in CD8+ cell (top) and NK (bottom) in mild and severe COVID-19 samples with or without cardiovascular comorbidity. Compared to healthy donors, mild and severe COVID-19 samples have a higher proportion of NK or both CD8+ and NK cells expressing counter receptors and cytotoxicity-associated genes, respectively. No difference can be observed in presence or absence of cardiovascular comorbidity.
 
 We hypothesize that persistent cytokine production activates endothelial cells in convalescent COVID-19 patient, which may promote interactions with cytotoxic effector cells. Therefore, we analyzed T cell features by immunophenotyping in our cohort (Carissimo et al., 2020) and found that convalescent COVID-19 patients, in particular those with underlying cardiovascular risk, had significantly higher frequencies of effector CD8+ and CD4+ T cells (EM), and central memory CD8+ T cells (CD8 CM) than healthy controls (Figure 5a), while there were no notable differences across the groups for absolute numbers of circulating CD8+/CD4+ T cells. There is a possibility that individuals recovered from COVID-19 could be susceptible to vascular injury due to effector T cell cytotoxicity (Figure 5b). However, the results herein remain associative, and further experiments are required to establish cytotoxicity-induced endothelial injury in COVID-19 convalescents.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64909/elife-64909-fig5-v1.jpg)
 
-**Figure 5.:** + and CD8+ T cells in COVID-19 patients with and without cardiovascular risk factors during the convalescent phase of infection.(a) Flow cytometry was performed on whole blood obtained from COVID-19 patients with (n = 12) and without (n = 16) cardiovascular risk factors at convalescent (11—50 days post hospital discharge) phase of SARS-CoV-2 infection, and non-COVID-19 healthy controls (n = 19). Naïve, terminally differentiated effector memory cells (TEMRA), central memory (CM), and effector memory (EM) T cells were characterized based on CD45RA and CD27 expressions. Absolute counts of CD4/CD8+ T cells and individual frequencies of CD45RA vs. CD27 differentiation stage of T cells are illustrated as scatter plots. One-way ANOVA with post hoc tests were performed to compare the profiles across the groups (*p<0.05; **p<0.01; ***p<0.01). (b) Proposed mechanisms of endothelial dysfunction in COVID-19 from acute infection to convalescence.
+**Figure 5.:** (a) Flow cytometry was performed on whole blood obtained from COVID-19 patients with (n = 12) and without (n = 16) cardiovascular risk factors at convalescent (11—50 days post hospital discharge) phase of SARS-CoV-2 infection, and non-COVID-19 healthy controls (n = 19). Naïve, terminally differentiated effector memory cells (TEMRA), central memory (CM), and effector memory (EM) T cells were characterized based on CD45RA and CD27 expressions. Absolute counts of CD4/CD8+ T cells and individual frequencies of CD45RA vs. CD27 differentiation stage of T cells are illustrated as scatter plots. One-way ANOVA with post hoc tests were performed to compare the profiles across the groups (*p<0.05; **p<0.01; ***p<0.01). (b) Proposed mechanisms of endothelial dysfunction in COVID-19 from acute infection to convalescence.
 
 ## Discussion
 
@@ -120,41 +284,207 @@ In summary, managing the aftermath of COVID-19 is an imperative. Endothelial ins
 
 ## Materials and methods
 
-## Study design, participants, and clinical data collection of convalescent COVID-19 patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Peripheral blood mononuclear cells</td>
+      <td>Singapore Immunology Network, National Heart Centre, Singapore</td>
+      <td></td>
+      <td>Frozen PBMCs from healthy participants, convalescent COVID-19 patients, non-COVID-19 patients with cardiovascular risk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ig, κ/negative control compensation particles set</td>
+      <td>BD Bioscience, San Jose, California, United States</td>
+      <td>Cat# 552843 RRID: AB_10051478</td>
+      <td>To optimize fluorescence compensation settings for Flow Cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hoechst 33342 Ready Flow Reagent</td>
+      <td>Invitrogen, Thermo Fisher Scientific, Waltham, Massachusetts, United States</td>
+      <td>Cat# R37165</td>
+      <td>Flow Cytometry (5:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/cyanine7 anti-human CD31 antibody (mouse IgG1, κ, clone# WM59)</td>
+      <td>Biolegend, San Diego, California, United States</td>
+      <td>Cat# 303118 RRID: AB_2247932</td>
+      <td>Flow Cytometry (4:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD133 antibody (mouse IgG1, κ, clone# clone 7)</td>
+      <td>Biolegend, San Diego, California, United States</td>
+      <td>Cat# 372806 RRID: AB_2632882</td>
+      <td>Flow Cytometry (4:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human CX3CL1/fractalkine chemokine domain Alexa Fluor 488-conjugated antibody (monoclonal mouse IgG1 clone# 51637)</td>
+      <td>Research And Diagnostic Systems, Inc (R&amp;D Systems, Inc), Minneapolis, Minnesota, United States</td>
+      <td>Cat# IC365G-100UG RRID: AB_2885194</td>
+      <td>Flow Cytometry (6:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-human CD62P (P-selectin) antibody (mouse IgG1, κ, clone# AK4)</td>
+      <td>Biolegend, San Diego, California, United States</td>
+      <td>Cat# 304916 RRID: AB_10719839</td>
+      <td>Flow Cytometry (5:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD45 antibody (mouse IgG1, κ, clone# 2D1)</td>
+      <td>Biolegend, San Diego, California, United States</td>
+      <td>Cat# 368510 RRID: AB_2566370</td>
+      <td>Flow Cytometry (3:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV711 mouse anti-human CD54 (mouse BALB/c IgG1, κ, clone# HA58 (RUO))</td>
+      <td>BD Bioscience, San Jose, California, United States</td>
+      <td>Cat# 564078 RRID: AB_2738579</td>
+      <td>Flow Cytometry (5:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytokine/ chemokine/ growth factor 45-Plex Human ProcartaPlex Panel 1</td>
+      <td>Invitrogen, Thermo Fisher Scientific, Waltham, Massachusetts, United States</td>
+      <td>Cat# EPX450-12171-901</td>
+      <td>Luminex assay</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio-Plex Manager 6.1.1 software</td>
+      <td>Bio-Rad Laboratories, Hercules, California, United States</td>
+      <td></td>
+      <td>Data analysis of multiplex assay</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism, version 8.3.1</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td>Data analysis, statistics, and graphing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva software, version 8.0.1</td>
+      <td>BD Bioscience, San Jose, California, United States</td>
+      <td></td>
+      <td>Flow data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software, version 10.7.1</td>
+      <td>BD Bioscience, San Jose, California, United States</td>
+      <td></td>
+      <td>Flow analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING (Search Tool for the Retrieval of Interacting Genes/Proteins)</td>
+      <td>ELIXIR Core Data Resources, Europe</td>
+      <td></td>
+      <td>Protein-Protein interaction networks and functional enrichment analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellxgene</td>
+      <td>The Chan Zuckerberg Initiative Wilk et al dataset: https://cellxgene.cziscience.com/d/Single_cell_atlas_of_peripheral_immune_response_to_SARS_CoV_2_infection-25.cxg/ Schulte-Schrepping et al dataset: https://beta.fastgenomics.org/datasets/detail-dataset-952687f71ef34322a850553c4a24e82e#Cellxgene</td>
+      <td></td>
+      <td>Analysis and visualization of scRNA-seq data</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design, participants, and clinical data collection of convalescent COVID-19 patients
 
 Convalescent COVID-19 individuals were recalled from the PROTECT study, which is a prospective observational cohort study at three public hospitals in Singapore (the National Centre for Infectious Diseases, National University Hospital, and Changi General Hospital). Written informed consent was obtained from participants who provided clinical data and biological samples. Study protocols were approved by ethics committees of the National Healthcare Group (2012/00917).
 
-## Biological sample collection and processing for convalescent COVID-19 patients
+### Biological sample collection and processing for convalescent COVID-19 patients
 
 The electronic medical records of patients enrolled in the PROTECT study were reviewed and their data entered onto a standardized collection form adapted from the International Severe Acute Respiratory and Emerging Infection Consortium's case record form for emerging severe acute respiratory infections. Serial blood samples were collected during hospitalization and post-discharge. Blood samples were processed as previously reported (Young et al., 2020b; Young et al., 2020c). PBMCs were isolated from whole blood collected in Cell Preparation Tubes (BD, #362761) for downstream CEC characterization. Plasma samples were separately stored for subsequent cytokine profiling.
 
-## Study design, participants, and clinical data collection of healthy participants and non-COVID-19 patients with cardiovascular risk factors
+### Study design, participants, and clinical data collection of healthy participants and non-COVID-19 patients with cardiovascular risk factors
 
 Healthy participants and non-COVID-19 patients with cardiovascular risk factors were obtained from the Cardiac Ageing Study (Koh et al., 2018), which is a prospective observational cohort study performed at the National Heart Centre Singapore. The current study sample consisted of healthy participants who had no known cardiovascular disease or cerebrovascular disease or cancer. We included non-COVID-19 patients with cardiovascular risk factors for this comparison. All participants were examined and interviewed on one study visit by trained study coordinators. Participants completed a standardized questionnaire that included medical history and coronary risk factors. Sinus rhythm status was ascertained by resting electrocardiogram. Clinical data were obtained on the same day as biological sample collection.
 
-## Biological sample collection and processing for healthy participants and non-COVID-19 patients with cardiovascular risk factors
+### Biological sample collection and processing for healthy participants and non-COVID-19 patients with cardiovascular risk factors
 
 Antecubital venous blood samples were taken from participants on the same day. After collection, the blood samples were immediately placed on ice for transportation and were processed within 6 hr to obtain buffy coat samples, which were subsequently cryopreserved.
 
-## Vascular phenotyping by flow cytometry analysis
+### Vascular phenotyping by flow cytometry analysis
 
 Study protocols were approved by ethics committees of the Nanyang Technological University Singapore (IRB-2020-09-011). PBMC samples were washed with Dulbecco's phosphate-buffered saline (DPBS; Hyclone, SH30028.02) + 1% BSA (Bovine Serum Albumin, Hyclone, SH30574.02), and then resuspended in 100 µL of DPBS + 1% BSA for antibody staining (Antibody panel in this section). Staining was carried out in the dark for 10 min at room temperature, followed by 20 min at 4°C on an analog tube rotator. After staining, cells were rinsed and resuspended in DPBS + 1% BSA for downstream flow cytometry analysis. Flow cytometry was performed using BD LSRFortessa X-20 (BD Bioscience, San Jose, California, United States ) and data acquisition was performed on FACSDiva software, version 8.0.1 (BD Bioscience, San Jose, California, United States ). Spectral overlap between INDO-1, APC, PE, PE-Cy7, AF488, and BV711 channels was calculated automatically by the FACSDiva software after measuring single-color compensation controls from pooled PBMCs. Optimal compensation was achieved using compensation control beads (anti-mouse Ig, κ/negative control compensation particles set, 552843) together with corresponding conjugated antibodies. Acquired data were analyzed using FlowJo software, version 10.7.1. Analysis of each patient typically included between 50,000 and 2,00,000 PBMCs depending on sample availabilities. CECs were detected by a combined immunophenotypic profile of CD45−/CD31+/CD133−/DNA+ and were further characterized for the expressions of ICAM1, SELP, and CX3CL1. Attributes such as CECs or "activated" CECs were represented as cells per million of PBMCs in Figure 1.
 
-AntibodiesCat. number (Manufacturer)Hoechst 33342 Ready Flow ReagentR37165 (Invitrogen, Thermo Fisher Scientific, Waltham, Massachusetts, United States) APC-conjugated monoclonal antibody against human CD133372806 (Biolegend, San Diego, California, United States )PE-conjugated monoclonal antibody against human CD45304008 (Biolegend, San Diego, California, United States )PE-Cy7-conjugated monoclonal antibody against human CD31303118 (Biolegend, San Diego, California, United States )AF488-conjugated monoclonal antibody against human CX3CL1/fractalkine chemokine domainIC365G-100UG (Research And Diagnostic Systems, Inc (R&D Systems, Inc), Minneapolis, Minnesota, United States BV711-conjugated monoclonal antibody against human C54564078 (BD Bioscience, San Jose, California, United States)AF488-conjugated monoclonal antibody against human CD62P304916 (Biolegend, San Diego, California, United States )
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Cat. number (Manufacturer)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hoechst 33342 Ready Flow Reagent</td>
+      <td>R37165 (Invitrogen, Thermo Fisher Scientific, Waltham, Massachusetts, United States)</td>
+    </tr>
+    <tr>
+      <td>APC-conjugated monoclonal antibody against human CD133</td>
+      <td>372806 (Biolegend, San Diego, California, United States )</td>
+    </tr>
+    <tr>
+      <td>PE-conjugated monoclonal antibody against human CD45</td>
+      <td>304008 (Biolegend, San Diego, California, United States )</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7-conjugated monoclonal antibody against human CD31</td>
+      <td>303118 (Biolegend, San Diego, California, United States )</td>
+    </tr>
+    <tr>
+      <td>AF488-conjugated monoclonal antibody against human CX3CL1/fractalkine chemokine domain</td>
+      <td>IC365G-100UG (Research And Diagnostic Systems, Inc (R&amp;D Systems, Inc), Minneapolis, Minnesota, United States</td>
+    </tr>
+    <tr>
+      <td>BV711-conjugated monoclonal antibody against human C54</td>
+      <td>564078 (BD Bioscience, San Jose, California, United States)</td>
+    </tr>
+    <tr>
+      <td>AF488-conjugated monoclonal antibody against human CD62P</td>
+      <td>304916 (Biolegend, San Diego, California, United States )</td>
+    </tr>
+  </tbody>
+</table>
 
-## Data mining of published immune single-cell transcriptomes of COVID-19
+### Data mining of published immune single-cell transcriptomes of COVID-19
 
 Single cell transcriptomic datasets published by Wilk et al., 2020 (Figure 4) were re-analyzed using the cellxgene platform (https://cellxgene.cziscience.com/d/Single_cell_atlas_of_peripheral_immune_response_to_SARS_CoV_2_infection-25.cxg/). Briefly, the uniform manifold approximation and projection (UMAP) visualization was annotated using the metadata included using the "cell_type_fine" taxonomy. The expression data were obtained by interrogating the individual expression of the genes in the UMAP (CX3CR1, ITGAL, and SELPLG) or across the various immune population included in the "cell_type_fine" taxonomy (PRF1, GZMA, and GZMB). The single cell datasets published by Schulte-Schrepping et al., 2020 were re-analyzed as described in the Figure 4—figure supplement 1.
 
-## Cytokine analysis by multiplex microbead-based immunoassay
+### Cytokine analysis by multiplex microbead-based immunoassay
 
 Plasma samples were treated with 1% Triton X-100 solvent-detergent mix for virus inactivation (Darnell and Taylor, 2006). Cytokine levels in COVID-19 patient plasma across different acute and convalescent time points were measured with the Luminex assay using the cytokine/chemokine/growth factor 45-plex Human ProcartaPlex Panel 1 (ThermoFisher Scientific). The Cytokine/Chemokine/Growth Factor 45-plex Human ProcartaPlex Panelone panel included granulocyte-macrophage colony-stimulating factor (GM-CSF), epidermal growth factor (EGF), brain-derived neurotropic factor, beta-nerve growth factor (bNGF), basic fibroblast growth factor (FGF-2), hepatocyte growth factor (HGF), monocyte chemoattractant protein (MCP) 1, macrophage inflammatory protein (MIP) 1α, MIP-1β, RANTES (regulated on activation, normal T cell expressed and secreted), chemokine (C-X-C motif) ligand (CXCL) 1 (GRO-α), stromal cell-derived factor 1 (SDF-1α), interferon (IFN) gamma-induced protein 10 (IP-10), eotaxin, IFN-α, IFN-γ, interleukin (IL) IL-1α, IL-1β, IL-1RA, IL-2, IL-4, IL-5, IL-6, IL-7, IL-8, IL-9, IL-10, IL-12p70, IL-13, IL-15, IL-17A, IL-18, IL-21, IL-22, IL-23, IL-27, IL-31, leukemia inhibitory factor (LIF), stem cell factor (SCF), tumor necrosis factor (TNF)-α and -β, vascular endothelial growth factors A and D (VEGF-A, VEGF-D), platelet derived growth factor (PDGF-BB), and placental growth factor (PLGF-1). Standards and plasma from COVID-19 patients and healthy controls were incubated with fluorescent-coded magnetic beads pre-coated with respective antibodies in a black 96-well clear-bottom plate overnight at 4°C. After incubation, plates were washed five times with wash buffer (PBS with 1% BSA [Capricorn Scientific GmbH, Ebsdorfergrund, Germany]) and 0.01% Tween (Promega Corporation, Madison, Wisconsin, United States). Sample—antibody—bead complexes were incubated with Biotinylated detection antibodies for 1 hr and washed five times with wash buffer. Subsequently, Streptavidin-PE was added and incubated for another 30 min. Plates were washed five times again before sample—antibody—bead complexes were re-suspended in sheath fluid for acquisition on the FLEXMAP 3D (Luminex) using xPONENT 4.0 (Luminex) software. Internal control samples were included in each Luminex assays to remove any potential plate effects. Readouts of these samples were then used to normalize the assayed plates. A correction factor was obtained from the differences observed across the multiple assays and this correction factor was then used to normalize all the samples. Standard curves were generated with a 5-PL (5-parameter logistic) algorithm, reporting values for mean florescence intensity (MFI) and concentration data. The concentrations were logarithmically transformed to ensure normality. Patient samples with a concentration out of measurement range were assigned the value of the logarithmic transformation of the limit of quantification. Data analysis was done with Bio-Plex Manager 6.1.1 software.
 
-## T cells phenotyping by flow cytometry analysis
+### T cells phenotyping by flow cytometry analysis
 
 Whole blood was stained with antibodies for 20 min in the dark at room temperature, as reported previously (Carissimo et al., 2020). Samples were then supplemented with 0.5 mL of 1.2× BD FACS lysing solution (BD 349202). Final 1× concentration taking into account volume in tube before addition is ~1% formaldehyde to fix viruses as well as lyse the red blood cells. Samples were vortexed and incubated for 10 min at room temperature. About 500 μL of PBS (Gibco, #10010–031) was added to wash the samples and spun at 300 g for 5 min. Washing step of samples were repeated with 1 mL of PBS. Samples were then transferred to polystyrene FACS tubes containing 10 μL (10,800 beads) of CountBright Absolute Counting Beads (Invitrogen, Thermo Fisher Scientific, Waltham, Massachusetts, United States, #36950). Samples were then acquired using BD LSRII five laser configuration using automatic compensations. For analysis of flow cytometry data, FlowJo version 10.6.1 was used for analysis of flow cytometry data. T cell populations were identified by previously reported gating strategies (Carissimo et al., 2020).
 
-## Statistics
+### Statistics
 
 Due to inter-individual heterogeneities of flow cytometry and cytokine data, nonparametric tests of association were preferentially used throughout this study unless otherwise stated. For flow cytometry data on CEC attributes, statistical differences between groups were calculated using Kruskal—Wallis test with Dunn’s multiple comparison post-test. Significant p values (<0.05) were indicated on the graphs directly. To assess for differences in the frequencies of patients with CECs expressing endothelial activation markers, ICAM1, SELP, or CX3CL1 and the cumulative frequencies for all markers, the number of patients per group were summarized in contingency tables. These were then analyzed with Chi-squared goodness-of-fit test with expected values generated from the data using GraphPad Prism, version 8.3.1.
 
@@ -162,6 +492,6 @@ For the cytokine analysis, Mann—Whitney U tests were used to discern the diffe
 
 For correlative study between CEC attributes and cytokine levels, we selected non-parametric Spearman correlation with no assumption regarding value distribution. Non-linear regression and Spearman's rank correlation coefficients were calculated to access associations between the level of serum cytokines and CEC attributes for convalescent COVID-19 patients with and without cardiovascular risk factors. The level of statistical significance was set at two-tailed test with p values <0.05 to detect any significant associations between specific cytokines and CEC attributes. Statistical analyses for this correlative study were performed using GraphPad Prism software, version 8.3.1. To address potential age-related contributions to the correlations observed between CEC and plasma cytokines in Figure 3, non-parametric partial correlation coefficients based on Spearman’s rank correlations were determined for the identified correlated variables while controlling for age. The R package ‘ppcor’ was used to compute the coefficients, p values and test statistics in Supplementary File. (Kim, 2015).
 
-## Study approval
+### Study approval
 
 This study was approved by the Local Ethics Committee of the National Healthcare Group (2012/00917) and Nanyang Technological University Singapore Institutional Review Board (IRB-2020-09-011).

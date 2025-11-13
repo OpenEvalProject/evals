@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.25843.001 Ventral tegmental area (VTA) activity is critical for reward/reinforcement and is tightly modulated by the laterodorsal tegmentum (LDT). In utero exposure to glucocorticoids (iuGC) triggers prominent motivation deficits but nothing is known about the impact of this exposure in the LDT-VTA circuit. We show that iuGC-rats have long-lasting changes in cholinergic markers in the LDT, together with a decrease in LDT basal neuronal activity. Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus. In agreement with LDT-VTA dysfunction, we show that iuGC animals present motivational deficits that are rescued by selective optogenetic activation of this pathway. Importantly, we also show that LDT-VTA optogenetic stimulation is reinforcing, and that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.
+Ventral tegmental area (VTA) activity is critical for reward/reinforcement and is tightly modulated by the laterodorsal tegmentum (LDT). In utero exposure to glucocorticoids (iuGC) triggers prominent motivation deficits but nothing is known about the impact of this exposure in the LDT-VTA circuit. We show that iuGC-rats have long-lasting changes in cholinergic markers in the LDT, together with a decrease in LDT basal neuronal activity. Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus. In agreement with LDT-VTA dysfunction, we show that iuGC animals present motivational deficits that are rescued by selective optogenetic activation of this pathway. Importantly, we also show that LDT-VTA optogenetic stimulation is reinforcing, and that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.
 
 ## Introduction
 
@@ -30,9 +30,25 @@ Notably, different labs have shown that the mesolimbic system is particularly vu
 
 ## Results
 
-## Sustained cholinergic dysfunction in iuGC animals
+### Sustained cholinergic dysfunction in iuGC animals
 
 Previous data from our team suggested that LDT cholinergic cells were differentially recruited in response to an adverse stimulus (Borges et al., 2013b) in a model of in utero GC (iuGC) exposure at gestation days 18 and 19 (Blaha and Winn, 1993). Considering this, we first evaluated the impact of GCs on the cholinergic circuitry of iuGC animals. We quantified ChAT+ cells in the LDT of 3, 30 and 90 days old animals (Figure 1a–c) and observed an effect of iuGC treatment (Two-way ANOVA; F(1,25) = 19.31, p=0.0002). iuGC animals had a significant increase in the density of the cholinergic population of the LDT at 30 days of age (post-hoc Bonferroni; CTR(30 days) vs. iuGC(30 days): t(25) = 2.616, p=0.0446) that persisted until adulthood (post-hoc Bonferroni; CTR(90 days) vs. iuGC(90 days): t(25) = 3.971, p=0.0016). Other brain regions containing cholinergic neurons such as the nucleus basalis of Meynert or the NAc remained unaltered (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic representation of the LDT. (b) Coronal section of the LDT showing ChAT immunohistochemistry. (c) iuGC animals present increased number of ChAT+ cells in the LDT at postnatal day 30 and 90. (d) Real-time PCR analysis revealed that ChAT mRNA levels are increased in the LDT of iuGC animals from postnatal day 3. (e) Conversely, AChE mRNA levels are decreased at postnatal day 90 (nCTR = 4; niuGC = 5). (f) Representative immunoblot of ChAT and AChE in the LDT of 3, 30 and 90 days old animals. (g) Protein quantification confirmed the upregulation of ChAT and (h) downregulation of AChE in the LDT from postnatal day 3 until adulthood (nCTR = 4; niuGC = 5). Data represented as mean ±s.e.m. *p<0.05, **p<0.001, ***p<0.0001. Scale bars in b: 100 µm and inset - 50 µm. Additional data is depicted in Figure 1—figure supplements 1, 2 and 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic representation of the nucleus basalis of Meynert (n. basalis) and (d) nucleus accumbens (NAc). (b-d; f–h) No changes between groups were observed in the number of ChAT+ cells. Data represented as mean ±s.e.m.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a–c) Real-time PCR analysis showed no changes in the levels of VAChT in the LDT for all ages. Data represented as mean ±s.e.m.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Real-time PCR analysis showed no changes in the mRNA levels of (a) EAAC1, (b) GAD1, (c) GAD2 and (d) GR in the LDT for all ages. (e) Representative immunoblot of EAAC1, GAD67/GAD65, GR and loading controls in the LDT of 3, 30 and 90 days old animals. Band quantification of (f) EAAC1, (g) GAD67 +GAD65, (h) GR in the LDT of 3, 30 and 90 days old animals. (nCTR = 4; niuGC = 5). Data represented as mean ±s.e.m.
 
 We next evaluated gene and protein expression levels of ChAT and AChE in the LDT (Figure 1d–h). We found a significant effect of iuGC treatment in ChAT (Two-way ANOVA; F(1,24) = 26.27, p<0.0001) and AChE (Two-way ANOVA; F(1,23) = 15.71, p=0.0006) gene expression. ChAT gene expression levels were increased at 3 and 30 days of age in iuGC animals (Figure 1d; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(24) = 3.383, p=0.0074; CTR(30 days) vs. iuGC(30 days): t(24) = 3.053, p=0.0164; CTR(90 days) vs. iuGC(90 days): t(24) = 2.494, p=0.059). Decreased AChE levels were found in adult iuGC animals (Figure 1e; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 1.24, p=0.6827; CTR(30 days) vs. iuGC(30 days): t(23) = 2.244, p=0.1043; CTR(90 days) vs. iuGC(90 days): t(23) = 3.298, p=0.0094). We also evaluated the levels of another cholinergic marker, the vesicular acetylcholine transporter (VAChT) and found that mRNA levels were unchanged between groups in the LDT (Figure 1—figure supplement 2).
 
@@ -42,7 +58,7 @@ Considering the heterogeneous nature of LDT inputs to the VTA, we also assessed 
 
 We also decided to evaluate the expression levels of glucocorticoid receptor (GR) since early life adversity has been shown to change GR epigenetic status. We found no differences between groups regarding GR expression (Figure 1—figure supplement 3d,h).
 
-## iuGC treatment impairs the LDT-VTA circuitry
+### iuGC treatment impairs the LDT-VTA circuitry
 
 Previous work from our group showed that iuGC animals presented a VTA-NAc hypodopaminergic state (Leão et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014). Since the LDT innervates the VTA and can influence NAc dopamine release (Blaha and Winn, 1993; Blaha et al., 1996; Forster and Blaha, 2000; Forster et al., 2002; Miller et al., 2002; Forster and Blaha, 2003), we decided to characterize the LDT-VTA circuit using in vivo single cell electrophysiology in anesthetized animals (Figure 2).
 
@@ -64,21 +80,45 @@ LDT stimulation did not affect the latency of inhibition, although there was a t
 
 Altogether, this data demonstrated an imbalance in the excitatory and inhibitory inputs to the VTA when electrically stimulating the LDT.
 
-## Optogenetic activation of LDT terminals in the VTA elicits distinct responses in control and iuGC animals
+### Optogenetic activation of LDT terminals in the VTA elicits distinct responses in control and iuGC animals
 
 We next used a combined viral approach to specifically modulate LDT direct inputs to the VTA and exclude the effects of indirect activation of other regions to where LDT projects to. We decided to activate all types of LDT-VTA inputs (and not only cholinergic) because we observed an effect of iuGC exposure in both excitatory and inhibitory VTA responses elicited by LDT activation.
 
 To do so, we injected a viral vector containing a WGA–Cre fusion construct (AAV5–EF1a–WGA–Cre–mCherry) in the VTA, and a cre-dependent ChR2 vector in the LDT (AAV5-EF1a-DIO-hChR2-eYFP). The WGA–Cre fusion protein is retrogradely transported (Gradinaru et al., 2010), inducing the expression of cre-dependent ChR2-YFP only in LDT neurons that directly project to the VTA (Figure 3a–c). Four weeks post-injection, we observed YFP staining in axonal terminals of LDT neurons in the VTA (Figure 3b) and in cell bodies in the LDT (Figure 3c).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig3-v1.jpg)
+
+**Figure 3.:** (a) Strategy used for optogenetic activation of LDT projecting neurons in the VTA. An AAV5–EF1a–WGA–Cre–mCherry virus construct was injected unilaterally in the VTA, and a cre-dependent ChR2 vector (AAV5-EF1a-DIO-hChR2-eYFP) in the LDT. WGA-Cre will retrogradely migrate and induce the expression of ChR2 in LDT neurons that directly project to the VTA. (b) Representative image of immunofluorescence for GFP showing LDT axon terminals in the VTA and (c) cell bodies in the LDT; scale bar: 200 µm. (d) Optogenetic stimulation of LDT terminals in the VTA (blue rectangle; 30 pulses of 15 ms at 20 Hz) increases the firing rate of VTA neurons in both groups (nCTR = 72 cells; niuGC = 82 cells). (e) In CTR, upon LDT terminal stimulation, 48% of recorded VTA cells present an increase in firing rate (of those 69% pDAergic, 17% pGABAergic), 21% decrease activity (0% pDAergic, 87% pGABAergic) and 31% presented no change. In iuGC animals, upon LDT terminal stimulation, 44% of recorded VTA cells present an increase in firing rate (83% pDAergic; 11% GABAergic) 27% decrease activity (55% pGABAergic, 36% DAergic) and 29% presented no change. (f) Firing rate and waveform duration were used to classify single units into 3 types of neurons. (g) Percentage of each putative neuronal population presenting excitation, inhibition or with no response to LDT terminals optogenetic stimulation. Numbers in bars represent number of cells in each category. pDAergic: putative dopaminergic neurons; pGABAergic: putative GABAergic neurons. Data represented as mean ±s.e.m. ***p<0.001. Additional data is depicted in Figure 1—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Latency of neuronal response to LDT-VTA terminals optical stimulation (30 pulses of 15 ms at 20 Hz) from cells depicted in Figure 3. Data represented as mean ±s.e.m.
+
 We performed in vivo single cell electrophysiology in the VTA while stimulating LDT terminals in this region, in order to activate the LDT-VTA circuit specifically. As depicted in Figure 3d, optogenetic stimulation of LDT terminals (30 pulses of 15 ms at 20 Hz) induced an increase in firing rate of VTA neurons (Figure 3d, post-hoc Bonferroni test CTR-ChR2: baseline vs. stimulus - t(118) = 5.883, p<0.0001, stimulus vs. post-stimulus - t(118) = 3.749, p=0.0008; iuGC-ChR2: baseline vs. stimulus - t(118) = 10.99, p<0.0001; stimulus vs. post-stimulus - t(118) = 10.88, p<0.0001), eliciting a response in 69% and 71% of recorded cells of CTR and iuGC animals, respectively (Figure 3e). Optic stimulation did not affect the latency of stimulus response for the groups (Figure 3—figure supplement 1).
 
 In CTR animals, 49% of cells presented increased firing rate upon stimulation, and of these, 69% were pDAergic, 17% pGABAergic and 14% were categorized as ‘other’ neuronal subtypes. Moreover, 87% of cells that presented inhibitory responses were pGABAergic neurons (Figure 3f–g). In iuGC animals, 44% of cells presented increased firing rate upon stimulation, and the majority were pDAergic neurons (83%). Surprisingly, and clearly different from CTR animals, 55% of cells that presented inhibitory responses were pDAergic neurons and 36% were considered to be pGABAergic neurons (Figure 3g). Again, and in accordance with the electrical stimulation data, our optogenetic results suggest an imbalance in the excitatory and inhibitory inputs from the LDT to the VTA.
 
-## Activation of LDT terminals in the VTA rescues motivational deficits of iuGC animals
+### Activation of LDT terminals in the VTA rescues motivational deficits of iuGC animals
 
 Since the LDT-VTA circuitry has been described to contribute for positive reinforcement (Lammel et al., 2012; Steidl and Veverka, 2015; Lammel et al., 2011), we evaluated the motivational drive by testing willingness to work for food in a progressive ratio (PR) schedule of reinforcement. This test measures the breakpoint or maximum effort rats are willing to perform for an outcome, when the demand grows progressively over a session.
 
 Training was similar between CTR, CTR-YFP, CTR-ChR2 and iuGC-ChR2 groups across days either in the continuous reinforcement (CRF) or fixed ratio (FR) sessions (Figure 4—figure supplement 1a–b). In the test day, iuGC-ChR2 rats presented a significant decrease in breakpoint in comparison to CTR, CTR-YFP and CTR-ChR2 animals (Figure 4a; 48,9% decrease; post-hoc Bonferroni test CTR vs. iuGC-ChR2: t(68) = 2.882, p=0.0317; CTR-YFP vs. iuGC-ChR2: t(68) = 2.78, p=0.0421; CTR-ChR2 vs. iuGC-ChR2: t(68) = 4.141, p=0.0006), with no differences in the number of pellets earned during the test (Figure 4—figure supplement 1c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-v1.jpg)
+
+**Figure 4.:** (a) Optogenetic stimulation of LDT terminals in the VTA during cue exposure (30 pulses of 15 ms at 20 Hz) rescues the breakpoint deficits in the PR test of iuGC-ChR2 animals, with no effect in other groups (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 13; niuGC-ChR2 = 12). (b) Activation of LDT terminals in the VTA in an irrelevant period, such as for example during inter-trial interval (ITI) does not change breakpoint of iuGC-ChR2 animals. (c) Individual performance in the PR test. All iuGC-ChR2 animals increase their breakpoint when stimulation is associated with the cue but not during the ITI. (d) Schematic representation of the CPP protocol. Laser stimulation (30 pulses of 15 ms at 20 Hz, every 60 s) is associated to one chamber. (e) Optogenetic stimulation of LDT terminals in the VTA increases preference for the stimulation-paired box (ON) in iuGC-ChR2 but not in CTR-eYFP nor CTR-ChR2 animals (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 5; niuGC-ChR2 = 6). (f) Difference score of CPP protocol shown as the difference in time spent in pre- and post-test. iuGC-ChR2 animals present a shift in preference for the ON chamber. (g) Real Time Place Preference (RTPP) protocol: animals were placed in a box with two identical chambers for 15 min and allowed to freely explore. When animals crossed to the ON side, optical stimulation was given until exiting the chamber. Shown are representative tracks from a CTR, CTR-eYFP, CTR-ChR2 and an iuGC-ChR2 animal. (h) CTR-ChR2 and iuGC-ChR2 rats spend a significantly higher percentage of time in the stimulation-associated box (ON side) (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 8; niuGC-ChR2 = 6). (i) Difference between time spent in the ON versus OFF side. Data represented as mean ±s.e.m. *p<0.05, **p<0.001, ***p<0.0001. #: comparison with CTR-eYFP; +: comparison with CTR-ChR2. Additional data is depicted in Figure 4—figure supplements 1–3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Performance in the (a) Conditioning Reinforcement (CRF) and (b) Fixed Ratio (FR) sessions was similar between groups (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 13; niuGC-ChR2 = 12). (c) Total number of food pellets earned in the PR session, in which optical stimulation was given during cue exposure and (d) during the ITI. (e) No effects in free feeding behavior – regular chow or pellets in stimulated animals (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 8; niuGC-ChR2 = 6). (f) No differences were observed in the locomotor activity of CTR, CTR-eYFP, CTR-ChR2 and iuGC upon stimulation (30 pulses of 15 ms at 20 Hz; given every minute). (g) Total distance travelled revealed no differences between groups (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 8; niuGC-ChR2 = 6). Data represented as mean ±s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) To verify the reinforcing properties of LDT-VTA stimulation, we performed a different protocol of optogenetic stimulation of LDT terminals that consists in higher number of pulses - 80 pulses of 15 ms at 20 Hz. (a) This stimulation is able to increase the motivational levels of both CTR-ChR2 and iuGC-ChR2 animals as seen by their increased breakpoint. No effect in CTR and CTR-eYFP groups. (b) Individual performance in the progressive ration task during laser OFF and laser ON sessions (nCTR-=6; nCTR-ChR2 = 8; niuGC-ChR2 = 6). (c) Ratio of preference of CTR-ChR2 and iuGC-ChR2 rats increases in the CPP in response to higher number of stimuli (80 pulses of 15 ms at 20 Hz) (nCTR-ChR2-stim=5, nCTR-ChR2-high stim=8). (d) Higher number of stimuli (80 pulses of 15 ms at 20 Hz, every 15 s) induces preference in CTR-ChR2 and iuGC-ChR2 animals, but not in control groups (nCTR = 6; nCTR-eYFP = 7; nCTR-ChR2 = 8; niuGC-ChR2 = 6). Data represented as mean ±s.e.m.*p<0.05; **p<0.01; ***p<0.001. #: Comparison with CTR-eYFP.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Schematic representation of optic fiber placement in LDT terminals in the VTA of the first (a) and second (b) set of rats that performed behavioral experiments.
 
 We next assessed if selective optogenetic activation of the LDT-VTA pathway was sufficient to enhance motivation during the PR test session. We decided to stimulate animals during cue exposure period since previous work from our group suggested that iuGC animals presented deficits in the Pavlovian-to-Instrumental Transfer test (PIT) (Soares-Cunha et al., 2014; Soares-Cunha et al., 2016), which measures the ability of a Pavlovian conditioned stimulus that is associated with a reward to invigorate instrumental responding for that (or other) reward (Corbit and Balleine, 2005; Corbit and Janak, 2007; Holmes et al., 2010).
 
@@ -88,7 +128,7 @@ Importantly, if the LDT-VTA optogenetic activation occurred during the inter-tri
 
 Because the results of control animals were surprising in the light of previous evidence showing that LDT-VTA stimulation was reinforcing (Lammel et al., 2012; Xiao et al., 2016), we performed another stimulation protocol in a new set of animals to test this hypothesis (80 pulses of 15 ms at 20 Hz) (Figure 4—figure supplement 2a–b). Importantly, when we increased the number of pulses, we observed an increase in the breakpoint of CTR-ChR2 animals (post-hoc Bonferroni: t(22) = 3.666, p=0.0054) when compared to breakpoint of CTR or CTR-eYFP animals (post-hoc Bonferroni CTR-ChR2 vs. CTR: t(44) = 3.075, p=0.0217; CTR-ChR2 vs. CTR-eYFP: t(44) = 3.194, p=0.0156). Additionally, we observed that this stimulation also increased the breakpoint of iuGC animals (post-hoc Bonferroni: t(22) = 4.641, p=0.0005), with no effect in CTR and CTR-eYFP groups (post-hoc Bonferroni CTR: t(22) = 0.116, p>0.9999; CTR-eYFP: t(22) = 0.4163, p>0.9999).
 
-## Stimulation of LDT-VTA terminals induces place preference
+### Stimulation of LDT-VTA terminals induces place preference
 
 To get further insight on the role of the LDT-VTA circuit in behavior, we also evaluated the impact of the stimulation of LDT-VTA terminals in the conditioned place preference (CPP) test, which measures the reinforcing capacities of a particular stimulus (Figure 4d). LDT-VTA stimulation (30 pulses of 15 ms at 20 Hz every 60 s) elicited conditioning in iuGC group, given by increased preference for the stimulus-associated chamber, ON side, (Figure 4e–f; post-hoc Bonferroni: t(20) = 5.892, p<0.0001), whereas it did not shift preference in CTR and CTR-eYFP animals.
 
@@ -120,13 +160,13 @@ In summary, iuGC exposure leads to long-lasting molecular and physiological alte
 
 ## Materials and methods
 
-## Animals and treatments
+### Animals and treatments
 
 Pregnant Wistar rats were individually housed under standard laboratory conditions (light/dark cycle of 12/12 hr; 22°C); food and water ad libitum. Subcutaneous injections of a synthetic GC, dexamethasone (DEX, Sigma, Germany) at 1 mg kg−1 (iuGC animals) or vehicle (sesame oil, Sigma, Germany; CTR- control animals) were administered on gestation days 18 and 19 (details of the model can be found in Leão et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014; Rodrigues et al., 2012; Borges et al., 2013b; Blaha and Winn, 1993). This model, named iuGC (from in utero exposure to GCs) partially mimics the clinical administration of GCs on women in risk of preterm labour (~8% of pregnancies) to promote fetal lung maturation or to manage congenital adrenal hyperplasia during pregnancy. On postnatal day 21, progeny was weaned according to prenatal treatment and gender. Male offspring derived from at least 4 different litters were used.
 
 All manipulations were conducted in strict accordance with European Regulations (European Union Directive 2010/63/EU). Animal facilities and the people directly involved in animal experiments were certified by the Portuguese regulatory entity – DGAV. All the experiments were approved by the Ethics Committee of the University of Minho (SECVS protocol #107/2015). The experiments were also authorized by the national competent entity DGAV (#19074).
 
-## Macrodissection and molecular analysis
+### Macrodissection and molecular analysis
 
 Rats were anaesthetized with sodium pentobarbitone (Eutasil, Sanofi, CEVA, Algés, Portugal), decapitated, and heads were immediately snap-frozen in liquid nitrogen. Brain areas of interest were rapidly dissected on ice under a magnifier following specific anatomical landmarks (Paxinos and Watson, 2007).
 
@@ -138,13 +178,13 @@ ChAT: Forward, 5’-TCATTAATTTCCGCCGTCTC-3’, Reverse, 5’-CCGGTTGGTGGAGTCTTTT
 
 For western blotting analysis, samples were prepared as previously described (Rodrigues et al., 2012). 30 μg of the protein was run in SDS-polyacrylamide gel and then transferred to nitrocellulose membranes. Membranes were incubated with one of the primary antibodies: goat anti-choline acetyltransferase (ChAT, 1:500, Millipore, MA, USA), goat anti-acetylcholine esterase (AChE, 1:500, Abcam, Cambridge, UK), mouse anti-glutamate transporter, excitatory amino-acid transporter, EAAC1 (EAAC1, 1:200, Millipore, MA, USA), rabbit anti-glutamic acid decarboxylase (GAD) 65 + GAD 67 (GAD65/67, 1:10000, Abcam, Cambridge, UK), rabbit anti-glucocorticoid receptor (GR, 1:500, Santa Cruz, CA, USA) and mouse anti-GAPDH (1:200, Iowa, USA) or mouse anti-beta actin (1:2500, Abcam, Cambridge, UK) were used as loading controls for ChAT or AChE, and EAAC1, GAD65/67 or GR, respectively. The secondary antibodies were incubated at a 1:10000 (anti-mouse), 1:5000 (anti-rabbit) and 1:7500 (anti-goat) dilution (Santa Cruz Biotechnologies, Santa Cruz, CA, USA). Membranes were stripped for 15 min at room temperature in stripping buffer (Restore PLUS Western Blot Stripping Buffer, Thermo Scentific, IL, USA) and re-blocked and re-incubated. Detection was performed using ECL kit (Biorad, Hercules, CA, USA) and bands were quantified using ImageJ (http://rsbweb.nih.gov/ij/).
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 Animals were anaesthetized with sodium pentobarbitone (Eutasil, Lisbon, Portugal) and transcardially perfused with saline followed by 4% paraformaldehyde. Brains were removed and sectioned coronally at a thickness of 50 μm, on a vibrating microtome (VT1000S, Leica, Germany).
 
 Free-floating sections were pre-treated with 3% H2O2 in PBS for 30 min. After blocking using 2.5% fetal bovine serum (FBS) in PBS-Triton 0.3% for 2 hr at room temperature, sections were incubated overnight at 4°C with primary antibody anti-ChAT (1:1000; Millipore, MA, USA). Afterwards, sections were washed and incubated with the secondary polyclonal swine anti-goat biotinylated antibody (1:200, DAKO, Denmark) for 1 hr, and processed with an avidin-biotin complex solution (ABC-Elite Vectastain reagent; Vector Lab., USA) and detected with 0.5 mg ml−1 3,3´-diaminobenzidine (Sigma, Germany) including 12.5 µl of 30% H2O2 as a substrate in Tris-HCL solution. Sections were washed and mounted on glass slides, air-dried, counterstained with Hematoxilin and coverslipped with Entellan (Merck, NJ, USA). Cell density estimation was obtained by normalizing ChAT+ cells in the corresponding area, determined using an Olympus BX51 optical microscope and the StereoInvestigator software (Microbrightfield). For each animal, 5 slices containing the LDT were used - coordinates according to Paxinos and Watson (Blaha and Winn, 1993). The distance of the LDT region analyzed from bregma ranged from: −8.16 mm to −9.48 mm.
 
-## In vivo electrophysiology recordings and stimulation
+### In vivo electrophysiology recordings and stimulation
 
 Animals were anesthetized and submitted to a stereotaxic surgery for the placement of the stimulating and recording electrodes, following anatomical coordinates (Paxinos and Watson, 2007). Surgeries were performed under sodium pentobarbitone anaesthesia (induction: 60 mg kg−1; maintenance: 15–20 mg kg−1, intraperitoneal, Eutasil, Sanofi, CEVA, Algés, Portugal); body temperature was maintained at approximately 37°C with a homoeothermic heat pad system (DC temperature controller, FHC, ME, USA). Anaesthesia level was assessed by observation of pupil size, general muscle tone and by assessing withdrawal responses to noxious pinching.
 
@@ -158,17 +198,17 @@ Regarding the experiments with optical stimulation, a recording electrode couple
 
 At the end of each electrophysiological experiment, all brains were collected and processed to identify recording region.
 
-## Optogenetics constructs
+### Optogenetics constructs
 
 AAV5–EF1a–WGA–Cre–mCherry, AAV5–EF1a–DIO–hChR2–YFP and AAV5–EF1a–DIO–YFP were obtained directly from the Gene Therapy Center Vector Core (UNC) center (vectors kindly provided by Karl Deisseroth, Stanford University). AAV5 vector titers were 2.1–6.6 × 1012 virus molecules ml-1.
 
-## Surgery and cannula implantation
+### Surgery and cannula implantation
 
 Rats designated for behavioral experiments were anesthetized with 75 mg kg−1 ketamine (Imalgene, Merial) plus 0.5 mg kg−1 medetomidine (Dorbene, Cymedica). One μl of AAV5–EF1a–WGA–Cre–mCherry was unilaterally injected into the VTA (coordinates from bregma, according to Paxinos and Watson: −5.4 mm anteroposterior, +0.6 mm mediolateral, and −7.8 mm dorsoventral) and 1 μl of AAV5–EF1a–DIO–hChR2–YFP was injected in the LDT (coordinates from bregma: −8.5 mm anteroposterior, +0.9 mm mediolateral, and −6.5 mm dorsoventral) in both CTR and iuGC groups (CTR-ChR2 and iuGC-ChR2). We had two additional groups: a control group (CTR) that was injected only with 1 μl AAV5–EF1a–DIO–hChR2–YFP in the LDT; and CTR-YFP animals which were injected with 1 μl AAV5–EF1a–WGA–Cre–mCherry in the VTA and 1 μl AAV5–EF1a–DIO–YFP in the LDT. Rats were then implanted with an optic fiber (200 μm core fiber optic; Thorlabs, NJ, USA) with 2.5 mm stainless steel ferrule (Thorlabs, NJ, USA) using the injection coordinates for the VTA (with the exception of dorsoventral: −7.7 mm) that were secured to the skull using 2.4 mm screws (Bilaney, Germany) and dental cement (C and B kit, Sun Medical). Rats were removed from the stereotaxic frame and sutured. Anaesthesia was reverted by administration of atipamezole (1 mg/kg). After surgery animals were given anti-inflammatory (Carprofeno, 5 mg/kg) for one day, analgesic (butorphanol, 5 mg/kg) for 3 days, and were let to fully recover before initiation of behavior. Optic fiber placement was confirmed for all animals after behavioral experiments (Figure 4—figure supplement 3). Animals that were assigned for electrophysiological experiments were not implanted with an optic fiber.
 
-## Behavior
+### Behavior
 
-## Progressive ratio schedule of reinforcement
+#### Progressive ratio schedule of reinforcement
 
 Rats were placed and maintained on food restriction (≈7 g/day of standard lab chow) to maintain 90% free-feeding weight. Behavioral sessions were performed in operant chambers (Med Associates, IL, USA) containing a central magazine that provided access to 45 mg food pellets (Bio-Serve), two retractable levers located on each side of the magazine with cue lights above them. A 2.8W, 100mA house light positioned at the top-centre of the wall opposite to the magazine provided illumination. A computer equipped with Med-PC software (Med Associates, IL, USA) controlled the equipment and recorded the data.
 
@@ -176,18 +216,18 @@ The behavioral protocol was previously described (Soares-Cunha et al., 2016; Wan
 
 Before the PR session began, rats were connected to an opaque optical fiber in the VTA through previously implanted fiber optic cannula. The optical fiber was connected to a 473 nm DPSS laser (CNI Laser), controlled using a pulse generator (Master-8; AMPI). At the beginning of each trial of the PR session – when the cue light was turned on – animals received an optical stimulation, which consisted in 30 pulses of 15 ms at 20 Hz (473 nm; 10 mW of light at the tip of the optic fiber). In a second set of animals, the number of pulses was increased to 80 pulses of 15 ms at 20 Hz during each cue exposure. CTR, CTR-YFP, CTR-ChR2 and iuGC-ChR2 received this optical stimulation.
 
-## Conditioned place preference – CPP
+### Conditioned place preference – CPP
 
 The CPP protocol was adapted from a previously published report (Lammel et al., 2012; Ungless and Grace, 2012). Briefly, on day 1, individual rats were placed in the centre chamber and allowed to freely explore the entire apparatus for 15 min (pre-test). On day 2, rats were confined to one of the side chambers for 30 min and paired with optical stimulation, ON side; in the second session, rats were confined to the other side chamber for 30 min with no stimulation, OFF side. Conditioning sessions were counterbalanced. On day 3 rats were allowed to freely explore the entire apparatus for 15 min (post-test). Optical stimulation consisted of 30 pulses of 15 ms at 20 Hz, every 60 s. In a second set of animals optical stimulation was increased to 80 pulses of 15 ms at 20 Hz, every 15 s.
 
-## Real-time place preference – RTPP
+### Real-time place preference – RTPP
 
 RTPP test was performed in a custom-made black plastic arena (60 × 60 × 40 cm) comprised by two indistinguishable chambers, for 15 min. One chamber was paired with light stimulation of 15 ms pulses at 20 Hz during the entire period that the animal stayed in the stimulus-paired side. The choice of paired chamber was counterbalanced across rats. Animals were placed in the no-stimulation chamber at the start of the session and light stimulation started at every entry into the paired chamber. Animal activity was recorded using a video camera and time spent in each chamber was manually assessed. Results are presented as total time spent in each chamber.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
 Animals were anaesthetized with sodium pentobarbitone (Eutasil, Lisbon, Portugal) and transcardially perfused with 0.9% saline followed by 4% paraformaldehyde. Brains were removed and sectioned coronally at a thickness of 50 μm, on a vibrating microtome (VT1000S, Leica, Germany). Sections were incubated overnight, with the primary antibody goat anti-GFP (1:500, Abcam, Cambridge, UK), followed by secondary fluorescent antibody (1:1000, Invitrogen, MA, USA). All sections were stained with 4’,6-diamidino-2-phenylindole (DAPI; 1 mg ml-1) and mounted using mounting media (Permafluor, Invitrogen, MA, USA).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed in GraphPad Prism 5.0 (GraphPad Software, Inc., La Jolla, CA, USA) and SPSS Statistics v19.0 (IBM corp., USA). Parametric tests were used whenever Shapiro-Wilk normality test SW >0.05. Two-way analysis of variance (ANOVA) was used when appropriate. Bonferroni’s post hoc multiple comparison tests were used for group differences determination. Statistical analysis between two groups was made using Student’s t-test. Results are presented as mean ±SEM. Statistical significance was accepted for p<0.05.

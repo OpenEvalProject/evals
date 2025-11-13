@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.45399.001 Neonatal inflammation is common and has lasting consequences for adult health. We investigated the lasting effects of a single bout of neonatal inflammation on adult respiratory control in the form of respiratory motor plasticity induced by acute intermittent hypoxia, which likely compensates and stabilizes breathing during injury or disease and has significant therapeutic potential. Lipopolysaccharide-induced inflammation at postnatal day four induced lasting impairments in two distinct pathways to adult respiratory plasticity in male and female rats. Despite a lack of adult pro-inflammatory gene expression or alterations in glial morphology, one mechanistic pathway to plasticity was restored by acute, adult anti-inflammatory treatment, suggesting ongoing inflammatory signaling after neonatal inflammation. An alternative pathway to plasticity was not restored by anti-inflammatory treatment, but was evoked by exogenous adenosine receptor agonism, suggesting upstream impairment, likely astrocytic-dependent. Thus, the respiratory control network is vulnerable to early-life inflammation, limiting respiratory compensation to adult disease or injury.
+Neonatal inflammation is common and has lasting consequences for adult health. We investigated the lasting effects of a single bout of neonatal inflammation on adult respiratory control in the form of respiratory motor plasticity induced by acute intermittent hypoxia, which likely compensates and stabilizes breathing during injury or disease and has significant therapeutic potential. Lipopolysaccharide-induced inflammation at postnatal day four induced lasting impairments in two distinct pathways to adult respiratory plasticity in male and female rats. Despite a lack of adult pro-inflammatory gene expression or alterations in glial morphology, one mechanistic pathway to plasticity was restored by acute, adult anti-inflammatory treatment, suggesting ongoing inflammatory signaling after neonatal inflammation. An alternative pathway to plasticity was not restored by anti-inflammatory treatment, but was evoked by exogenous adenosine receptor agonism, suggesting upstream impairment, likely astrocytic-dependent. Thus, the respiratory control network is vulnerable to early-life inflammation, limiting respiratory compensation to adult disease or injury.
 
 ## Introduction
 
@@ -32,73 +32,663 @@ Our results indicate that one neonatal inflammatory challenge completely abolish
 
 ## Results
 
-## Neonatal inflammation acutely delays weight gain and increases male mortality
+### Neonatal inflammation acutely delays weight gain and increases male mortality
 
 Male and female postnatal day 4 (P4) rats were injected with either LPS (Lipopolysaccharide; 1 mg/kg, i.p.) or saline. The dose of LPS was based on previous studies demonstrating CNS inflammatory gene expression in neonates (Rourke et al., 2016), as well as our unpublished data (N. Morrison, S. Johnson, J. Watters, A. Huxtable, unpublished observations). Within 24 hr of neonatal LPS injections, there was significantly greater mortality of male pups (8 of 67) than female pups (1 of 55, Fisher’s exact test, p = 0.04, Figure 1A). No mortality was evident in the saline treated males (n = 63) or females (n = 63). For the surviving pups, neonatal LPS males weighed significantly less at week 7 (no pairwise weight differences seen in females), but importantly, weights were not different in adults (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig1-v2.jpg)
 
-**Figure 1.:** After neonatal inflammation (P4, LPS 1 mg/kg, i.p.) male mortality (A) is increased within 24 hr (Fisher’s exact test, p = 0.006), but not in females (p = 0.466), relative to saline controls. Weekly male and female weights (B) after neonatal saline or LPS. (*p < 0.05, significant pairwise difference within sex).10.7554/eLife.45399.004Figure 1—source data 1.
+**Figure 1.:** After neonatal inflammation (P4, LPS 1 mg/kg, i.p.) male mortality (A) is increased within 24 hr (Fisher’s exact test, p = 0.006), but not in females (p = 0.466), relative to saline controls. Weekly male and female weights (B) after neonatal saline or LPS. (*p < 0.05, significant pairwise difference within sex).
 
-## Adult, Q-pathway-evoked pLTF was undermined by neonatal inflammation, and restored by acute, adult anti-inflammatory treatment
+### Adult, Q-pathway-evoked pLTF was undermined by neonatal inflammation, and restored by acute, adult anti-inflammatory treatment
 
 Q-pathway-evoked pLTF is evident as the increase in integrated phrenic activity 60 min after mAIH (PaO235–45 mmHg) in adult, anesthetized rats (Bach and Mitchell, 1996). As expected, in adult males treated with neonatal saline, Q-pathway-evoked pLTF was evident after mAIH (55 ± 33.2% change from baseline, n = 7, p = 0.0006, Figure 2A and C). However, Q-pathway-evoked pLTF was absent in adult males treated with neonatal LPS (14 ± 49%, n = 12, p = 0.2247 Figure 2A and C). To control for the known effects of estrus cycle hormones on pLTF in females (Zabka et al., 2001; Behan et al., 2002; Dougherty et al., 2017), adult females were ovariectomized 7–8 days before electrophysiology studies. Similar to males, adult females treated with neonatal saline displayed Q-pathway-evoked pLTF (97 ± 63% change from baseline, n = 7, p < 0.0001, Figure 2B and C), while adult females challenged with neonatal LPS did not express pLTF (−15 ± 43%, n = 6, p = 0.4689, Figure 2B and C). Phrenic amplitude did not change from baseline in the time control group (8 ± 6% change, n = 5, p = 0.6482), regardless of sex or neonatal LPS exposure, and was significantly reduced compared to males or females treated with neonatal saline. Between groups, Q-pathway-evoked pLTF was significantly abolished in adults after neonatal LPS compared to adults after neonatal saline for both males (p = 0.0200) males and females (p < 0.0001). Thus, neonatal inflammation induces lasting impairment of adult, Q-pathway-evoked respiratory motor plasticity in both males and females.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig2-v2.jpg)
 
-**Figure 2.:** Representative integrated phrenic neurograms from male (A) and female rats (B) after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). Q-pathway-evoked pLTF is evident in adults after neonatal saline as the progressive increase in phrenic nerve amplitude from baseline (dashed line) over 60 min following moderate acute intermittent hypoxia (mAIH, 3 × 5 min episodes, PaO235–45 mmHg). Group data (C) demonstrate Q-pathway-evoked pLTF 60 min after mAIH is abolished in adults by neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline, # p < 0.05, ### p < 0.001 between groups, ‡ p < 0.05 from adult males and females after neonatal saline).10.7554/eLife.45399.006Figure 2—source data 1.
+**Figure 2.:** Representative integrated phrenic neurograms from male (A) and female rats (B) after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). Q-pathway-evoked pLTF is evident in adults after neonatal saline as the progressive increase in phrenic nerve amplitude from baseline (dashed line) over 60 min following moderate acute intermittent hypoxia (mAIH, 3 × 5 min episodes, PaO235–45 mmHg). Group data (C) demonstrate Q-pathway-evoked pLTF 60 min after mAIH is abolished in adults by neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline, # p < 0.05, ### p < 0.001 between groups, ‡ p < 0.05 from adult males and females after neonatal saline).
 
 To test whether this lasting impairment of adult, respiratory motor plasticity was due to ongoing adult inflammation as a result of the neonatal inflammatory LPS challenge, we acutely treated adults with the non-steroidal anti-inflammatory, ketoprofen (12.5 mg/kg, i.p., 3 hr), a high dose previously shown to restore plasticity after acute, adult inflammation (Huxtable et al., 2013). Ketoprofen treatment restored Q-pathway-evoked pLTF in adult males treated with neonatal LPS (58 ± 18% change from baseline, n = 4, p = 0.0004, Figure 3A and C). Ketoprofen also restored Q-pathway-evoked pLTF in adult females treated with neonatal LPS (111 ± 44% from baseline, n = 5, p < 0.0001, Figure 3B and C). Adults treated with neonatal saline (male: 54 ± 17% from baseline, n = 4, 0.0008; female: 89 ± 40%, n = 5, p < 0.0001) were unaffected by adult ketoprofen treatment. Additionally, phrenic motor amplitude did not change in adult time controls treated with ketoprofen (13 ± 14% change from baseline, n = 4, p = 0.3436) and was significantly reduced compared to all other groups. Between groups, pLTF was not different between adult males (p = 0.7605) or females (p = 0. 2932) after neonatal saline or neonatal LPS, suggesting the impairment in Q-pathway-evoked pLTF is inflammation-dependent in both males and females.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig3-v2.jpg)
 
-**Figure 3.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey) and acute, adult ketoprofen (12.5 mg/kg, i.p., 3 hr). Q-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following moderate acute intermittent hypoxia (mAIH, 3 × 5 min episodes, PaO235–45 mmHg). Group data (C) demonstrate adult ketoprofen restores Q-pathway-evoked pLTF 60 min after mAIH in adults after neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (***p < 0.001 from baseline, ‡ p < 0.05 from all other groups).10.7554/eLife.45399.008Figure 3—source data 1.
+**Figure 3.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey) and acute, adult ketoprofen (12.5 mg/kg, i.p., 3 hr). Q-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following moderate acute intermittent hypoxia (mAIH, 3 × 5 min episodes, PaO235–45 mmHg). Group data (C) demonstrate adult ketoprofen restores Q-pathway-evoked pLTF 60 min after mAIH in adults after neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (***p < 0.001 from baseline, ‡ p < 0.05 from all other groups).
 
-## Neonatal inflammation did not induce chronic neuroinflammation in adult medulla or cervical spinal cords
+### Neonatal inflammation did not induce chronic neuroinflammation in adult medulla or cervical spinal cords
 
 Because the lasting impairment of Q-pathway-evoked pLTF was inflammation-dependent, we examined whether neonatal inflammation had lasting effects on adult neuroinflammation in regions involved in respiratory neural control and motor plasticity. Since plasticity was abolished in both males and females, data from both sexes were combined for analysis of inflammatory genes. In medullary and cervical spinal homogenates, neonatal LPS did not significantly alter mRNA for adult inflammatory genes (IL-6, IL-1β, TNF-α, or iNOS; Figure 4A and B). However, COX-2 gene expression was reduced in adult spinal cords after neonatal LPS (Figure 4B, p = 0.001), suggesting a decrease in COX-dependent inflammatory signaling. Thus, there was no evidence for lasting increases in neuroinflammatory gene expression in adults after a single exposure of neonatal inflammation in respiratory control regions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig4-v2.jpg)
 
-**Figure 4.:** Homogenate samples isolated from adult medullas showed no significant increase in inflammatory mRNA after neonatal inflammation (A). Similarly, homogenate samples from isolated adult cervical spinal cords (B) were not increased by neonatal inflammation, but COX2 gene expression was significantly decreased in adults after neonatal inflammation (*p < 0.05).10.7554/eLife.45399.010Figure 4—source data 1.
+**Figure 4.:** Homogenate samples isolated from adult medullas showed no significant increase in inflammatory mRNA after neonatal inflammation (A). Similarly, homogenate samples from isolated adult cervical spinal cords (B) were not increased by neonatal inflammation, but COX2 gene expression was significantly decreased in adults after neonatal inflammation (*p < 0.05).
 
-## Adult S-pathway-evoked pLTF was undermined by neonatal inflammation, not restored by adult anti-inflammatory treatment, but revealed by intermittent adenosine 2A receptor agonism
+### Adult S-pathway-evoked pLTF was undermined by neonatal inflammation, not restored by adult anti-inflammatory treatment, but revealed by intermittent adenosine 2A receptor agonism
 
 S-pathway-evoked pLTF is evident as the increase in integrated phrenic activity 60 min after sAIH (PaO225–35 mmHg) in adult rats. As expected, in adult males after neonatal saline, S-pathway-evoked pLTF was evident after sAIH (61 ± 69% change from baseline, n = 5, p = 0.0001, Figure 5A and C). Contrary to our hypothesis, S-pathway-evoked pLTF was abolished in adult males after neonatal LPS (7 ± 18% change from baseline, n = 4, p = 0.6770, Figure 5A and C). In adult females after neonatal saline, S-pathway-evoked pLTF was evident (102 ± 47% change from baseline, n = 4, p < 0.0001, Figure 5B and C). Similar to adult males treated with neonatal LPS, S-pathway-evoked pLTF was abolished in adult females after neonatal LPS (0 ± 33%, n = 4, p = 0.9796, Figure 5B and C). Phrenic amplitude in the time control group was significantly less than males (p = 0.0147) or females (p < 0.0001) treated with neonatal saline. Between groups, S-pathway-evoked pLTF was significantly reduced after neonatal LPS in both adult males (p = 0.0180) and females (p < 0.0001) compared to adults after neonatal saline. Thus, neonatal inflammation induces lasting impairment of adult, S-pathway-evoked respiratory motor plasticity in both males and females.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig5-v2.jpg)
 
-**Figure 5.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). S-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following severe acute intermittent hypoxia (sAIH, 3 × 5 min episodes, PaO225–35 mmHg) in adults after neonatal saline. Group data (C) demonstrate S-pathway-evoked pLTF 60 min after sAIH is abolished in adults by neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline ## p < 0.01, ### p < 0.001 between groups, ‡ p < 0.05 from male and female adults after neonatal saline).10.7554/eLife.45399.012Figure 5—source data 1.
+**Figure 5.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). S-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following severe acute intermittent hypoxia (sAIH, 3 × 5 min episodes, PaO225–35 mmHg) in adults after neonatal saline. Group data (C) demonstrate S-pathway-evoked pLTF 60 min after sAIH is abolished in adults by neonatal LPS in both males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline ## p < 0.01, ### p < 0.001 between groups, ‡ p < 0.05 from male and female adults after neonatal saline).
 
 To test whether this lasting impairment of adult, S-pathway-evoked plasticity is due to ongoing inflammation in adults after neonatal LPS, we examined sAIH-induced plasticity after an acute, adult treatment with ketoprofen (12.5 mg/kg, i.p., 3 hr). Ketoprofen did not alter normal expression of S-pathway-evoked pLTF in adult males after neonatal saline (63 ± 22% change from baseline, n = 5, p = 0.0014, Figure 6A and C). However, contrary to the Q-pathway results, adult ketoprofen did not restore S-pathway-evoked pLTF in adult males after neonatal LPS (0 ± 65% change from baseline, n = 5, p = 0.9804, Figure 6A and C). Similarly, adult females treated with neonatal saline also exhibited normal S-pathway-evoked pLTF after adult ketoprofen (130 ± 22% change from baseline, n = 5, 0.0803, Figure 6B and C), and S-pathway-evoked pLTF was not restored by ketoprofen in adult females after neonatal LPS (25 ± 30% change from baseline, n = 6, p = 0.0803, Figure 6B and C). Adult males and females treated with neonatal LPS and adult ketoprofen were not different from time controls (males, p = 0.4964; females p = 0.5227). Between groups, S-pathway-evoked pLTF after acute ketoprofen was significantly reduced in adults after neonatal LPS comapred to adults after neonatal saline in both males (p = 0.0019) and females (p < 0.0001). Thus, neonatal inflammation induces a lasting impairment of adult, S-pathway-evoked respiratory motor plasticity, which is not due to ongoing adult, inflammatory signaling.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig6-v2.jpg)
 
-**Figure 6.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey) and acute, adult ketoprofen (12.5 mg/kg, i.p., 3 hr). S-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following severe acute intermittent hypoxia (sAIH, 3 × 5 min episodes, PaO235–45 mmHg) in adults after neonatal saline. Group data (C) demonstrate acute, adult ketoprofen does not restore S-pathway-evoked pLTF 60 min after sAIH after neonatal LPS in adult males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline, ## p < 0.01, ### p < 0.001 between groups, ‡ p < 0.05 from adult males and females after neonatal saline).10.7554/eLife.45399.014Figure 6—source data 1.
+**Figure 6.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey) and acute, adult ketoprofen (12.5 mg/kg, i.p., 3 hr). S-pathway-evoked pLTF is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) over 60 min following severe acute intermittent hypoxia (sAIH, 3 × 5 min episodes, PaO235–45 mmHg) in adults after neonatal saline. Group data (C) demonstrate acute, adult ketoprofen does not restore S-pathway-evoked pLTF 60 min after sAIH after neonatal LPS in adult males (circles) and females (triangles) and no change in phrenic amplitude in time controls (**p < 0.01, ***p < 0.001 from baseline, ## p < 0.01, ### p < 0.001 between groups, ‡ p < 0.05 from adult males and females after neonatal saline).
 
 S-pathway-evoked plasticity elicted by sAIH is adenosine dependent (Golder et al., 2008; Nichols et al., 2012) and can be evoked by intermittent CGS-21680, an adenosine 2A receptor agonist. To test if neonatal inflammation is impairing phrenic motor neurons and preventing pLTF, we examined phrenic output after intermittent CGS-21680 on the cervical spinal cord, around the phrenic motor pool. Intrathecal CGS-21680 (100 µM, 3 × 10 µL) evoked phrenic motor plasticity in adult males after neonatal saline (110 ± 17% change from baseline, n = 4, p < 0.001, Figure 7A and C) and females after neonatal saline (127 ± 47%, n = 4, p < 0.001, Figure 7B and C). After neonatal LPS, intrathecal CGS-21680 also elicited plasticity in adult males (85 ± 64%, n = 6, p < 0.001, Figure 7A and C) and adult females (147 ± 74%, n = 6, p < 0.001, Figure 7B and C), demonstrating phrenic motor neurons are not impaired after neonatal inflammation and are capable of S-pathway-evoked plasticity. The vehicle control group was not different from baseline (−3 ± 5% change, n = 4, p = 0.8891) and significantly reduced compared to all other groups. Between groups, pLTF was not different between adult males (p = 0.2841) or females (p = 0.4032) after neonatal saline or neonatal LPS. Thus, adult phrenic motor neurons are not impaired after neonatal inflammation and are capable of plasticity after neonatal inflammation. Therefore, the source of intermittent adenosine release is impaired during sAIH-induced pLTF after neonatal inflammation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig7-v2.jpg)
 
-**Figure 7.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). S-pathway-evoked phrenic motor plasticity is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) 90 min following intermittent CGS-21680 (100 µM, black arrows, 3 × 5 min apart) in adults after neonatal saline. Group data (C) demonstrate adult CGS-21680 reveals S-pathway-evoked plasticity after neonatal LPS in adult males (circles) and females (triangles) and no change in phrenic amplitude in vehicle controls (***p < 0.001 from baseline, ‡ p < 0.001 from adult males and females after neonatal saline).10.7554/eLife.45399.016Figure 7—source data 1.
+**Figure 7.:** Representative integrated phrenic neurograms for adult male (A) and female (B) rats after neonatal (P4) saline (top traces, black) or LPS (1 mg/kg, i.p.; bottom traces, grey). S-pathway-evoked phrenic motor plasticity is evident as the progressive increase in phrenic nerve amplitude from baseline (black dashed line) 90 min following intermittent CGS-21680 (100 µM, black arrows, 3 × 5 min apart) in adults after neonatal saline. Group data (C) demonstrate adult CGS-21680 reveals S-pathway-evoked plasticity after neonatal LPS in adult males (circles) and females (triangles) and no change in phrenic amplitude in vehicle controls (***p < 0.001 from baseline, ‡ p < 0.001 from adult males and females after neonatal saline).
 
-## Adult microglia and astrocyte density were not changed by neonatal inflammation
+### Adult microglia and astrocyte density were not changed by neonatal inflammation
 
 While there was no evidence for elevated neuroinflammation based on the inflammatory genes evaluated here, the anti-inflammatory drug ketoprofen successfully restored Q-pathway-evoked plasticity. Additionally, our results indicate the impairment in S-pathway-evoked plasticity was likely due to a lasting change in adenosine signaling, possibly as a result of altered astrocytes. Thus, we hypothesized a lasting change in astrocytes and microglia in respiratory control regions, influencing neuronal function and impairing adult plasticity. We evaluated GFAP (astrocytes) and IBA1 (microglia) immunoreactivity in the adult preBötC, the site of respiratory rhythmogenesis (Smith et al., 1991), and in cervical spinal cords in the region of the phrenic motor nucleus, the presumptive site of pLTF (Baker-Herman et al., 2004; Devinney et al., 2015; Dale et al., 2017). Neonatal inflammation did not alter GFAP (p = 0.5969) or IBA1 (p = 0.6487) immunoreactivity in adult preBötC in either sex (Figure 8A,B and E), suggesting astrocyte and microglial density were not changed in adults after neonatal inflammation. Furthermore, there were no changes in GFAP (p = 0.7195) or IBA1 (p = 0.9254) immunoreactivity in adult cervical spinal cords (Figure 8C,D and F), suggesting no lasting changes in astrocyte and microglia density in the region of the phrenic motor nucleus. Additionally, no obvious differences in astrocyte or microglial morphology in adult phrenic motor nuclei or the preBötC were seen following neonatal LPS inflammation, suggesting other signaling mechanisms are responsible for impairing adult pLTF.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/45399/elife-45399-fig8-v2.jpg)
 
-**Figure 8.:** After neonatal LPS (1 mg/kg, i.p., (P4), representative confocal images (40x) from adult preBötC (A and B) and cervical spinal cords (C and D) displayed no qualitative differences in immunoreactivity for GFAP (green, astrocytes) or IBA1 (green, microglia) in males (left panels) or females (right panels). PreBötC neurons are labeled with antibodies for NK1R (red, A and B) and motor neurons are labeled with antibodies for ChAT (red, C and D). Neonatal inflammation did not significantly change mean fluorescent intensity of either GFAP or IBA1 in the preBötC (E) or cervical spinal cord (F), suggesting no lasting differences in astrocytes or microglia after neonatal inflammation. Scale bars: 50 µm.10.7554/eLife.45399.018Figure 8—source data 1.
+**Figure 8.:** After neonatal LPS (1 mg/kg, i.p., (P4), representative confocal images (40x) from adult preBötC (A and B) and cervical spinal cords (C and D) displayed no qualitative differences in immunoreactivity for GFAP (green, astrocytes) or IBA1 (green, microglia) in males (left panels) or females (right panels). PreBötC neurons are labeled with antibodies for NK1R (red, A and B) and motor neurons are labeled with antibodies for ChAT (red, C and D). Neonatal inflammation did not significantly change mean fluorescent intensity of either GFAP or IBA1 in the preBötC (E) or cervical spinal cord (F), suggesting no lasting differences in astrocytes or microglia after neonatal inflammation. Scale bars: 50 µm.
 
-## Acute hypoxic phrenic responses were greater in females, but were unaffected by neonatal inflammation
+### Acute hypoxic phrenic responses were greater in females, but were unaffected by neonatal inflammation
 
 Neonatal inflammation did not significantly alter moderate acute hypoxic phrenic amplitude responses within adult males (neonatal saline = 114 ± 41% change from baseline; neonatal LPS = 93 ± 36%) or females (neonatal saline = 185 ± 53%; neonatal LPS = 148 ± 63%, Table 1). Hypoxic phrenic amplitude responses were also unaffected by the anti-inflammatory ketoprofen in adult males (neonatal saline +Keto = 118 ± 36%; neonatal LPS +Keto, 118 ± 44%) or females (neonatal saline +Keto, 165 ± 52%; neonatal LPS +Keto, 189 ± 82%, Table 1). However, adult females exhibited significantly greater acute phrenic amplitude responses to moderate hypoxia (main effect, p = 0.0004).
 
+**Table 1.**
+ Acute, adult hypoxic phrenic responses.Table 1—source data 1.Hypoxic responses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Male</th>
+      <th colspan="3">Female †††</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">Neonatal saline</th>
+      <th colspan="3">Neonatal LPS</th>
+      <th colspan="2">Neonatal saline</th>
+      <th>Neonatal LPS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Moderate hypoxia</td>
+      <td colspan="2">114 ± 41</td>
+      <td colspan="3">93 ± 36</td>
+      <td colspan="2">185 ± 53*</td>
+      <td>148 ± 63</td>
+    </tr>
+    <tr>
+      <td>Keto + Moderate hypoxia</td>
+      <td colspan="2">118 ± 36</td>
+      <td colspan="3">118 ± 44</td>
+      <td colspan="2">165 ± 52</td>
+      <td>189 ± 82*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="5">Male</td>
+      <td colspan="3">Female †</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Neonatal Saline</td>
+      <td colspan="3">Neonatal LPS</td>
+      <td colspan="2">Neonatal Saline</td>
+      <td>Neonatal LPS</td>
+    </tr>
+    <tr>
+      <td>Severe hypoxia</td>
+      <td colspan="2">139 ± 37</td>
+      <td colspan="3">106 ± 10</td>
+      <td colspan="2">172 ± 125</td>
+      <td>172 ± 26</td>
+    </tr>
+    <tr>
+      <td>Keto + Severe hypoxia</td>
+      <td colspan="2">151 ± 25</td>
+      <td colspan="3">174 ± 96</td>
+      <td colspan="2">194 ± 45</td>
+      <td>235 ± 63</td>
+    </tr>
+  </tbody>
+</table>
+
+_Group data for adult, acute hypoxic phrenic responses to moderate (PaO235–45 mmHg) and severe (PaO225–35 mmHg) hypoxia demonstrate no differences after neonatal (P4) saline or LPS (1 mg/kg, i.p), or after adult ketoprofen (12.5 mg/kg, i.p, 3 hr) within each sex. Significant differences between sexes demonstrate larger responses in females after moderate or severe hypoxia († p<0.05, ††† p<0.001). *p<0.05 from male neonatal LPS. Moderate hypoxia: neonatal saline male (n = 7), neonatal LPS male (n = 10), neonatal saline female (n = 6), neonatal LPS female (n = 6). Keto + Moderate hypoxia: neonatal saline male (n = 4), neonatal LPS male (n = 4), neonatal saline female (n = 5), neonatal LPS female (n = 5). Severe hypoxia: neonatal saline male (n = 5), neonatal LPS male (n = 4), neonatal saline female (n = 4), neonatal LPS female (n = 4). Keto + Moderate hypoxia: neonatal saline male (n = 5), neonatal LPS male (n = 5), neonatal saline female (n = 5), neonatal LPS female (n = 6)_
+
 Phrenic amplitude in response to severe hypoxia was similarly unaltered by neonatal inflammation within adult males (neonatal saline = 139 ± 37% change from baseline; neonatal LPS = 106 ± 10%) or females (neonatal saline = 172 ± 125%; neonatal LPS = 172 ± 26%, Table 1). Acute ketoprofen pretreatment did not alter acute hypoxic phrenic amplitude responses in adult males (neonatal saline = 151 ± 25% change from baseline; neonatal LPS, 174 ± 96%) or females (neonatal saline = 194 ± 45%; neonatal LPS = 235 ± 63%, Table 1). Similarly, adult females exhibited a significantly greater acute amplitude response to severe hypoxia than males (main effect, p = 0.021).
 
-## Physiological parameters and frequency plasticity
+### Physiological parameters and frequency plasticity
 
 All physiological parameters remained within experimental limits (Table 2). Neonatal saline or LPS caused no significant changes in adult temperature, PaCO2, PaO2, or pH at baseline. There were no between group differences in baseline MAP, suggesting no long-lasting cardiovascular changes after neonatal inflammation. No significant changes occurred over time in temperature, pH, or PaCO2 for any group. As expected, MAP and PaO2 were significantly decreased during hypoxic episodes in experimental groups (Huxtable et al., 2015; Hocker and Huxtable, 2018), but these changes were not evident in time control groups and were not different from baseline values at 60 min post-AIH.
+
+**Table 2.**
+ Physiological parameters during electrophysiology experiments.Table 2—source data 1.Physiological parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Temperature (°C)</th>
+      <th colspan="2">PaO2 (mmHg)</th>
+      <th colspan="2">PaCO2 (mmHg)</th>
+      <th colspan="2">pH</th>
+      <th colspan="2">MAP (mmHg)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Baseline</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + mAIH</td>
+      <td>37.4 ± 0.2</td>
+      <td>37.4 ± 0.2</td>
+      <td>254 ± 19</td>
+      <td>259 ± 53</td>
+      <td>43.2 ± 5.6</td>
+      <td>48.9 ± 3.7</td>
+      <td>7.37 ± 0.06</td>
+      <td>7.36 ± 0.02</td>
+      <td>124 ± 9</td>
+      <td>121 ± 18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + mAIH</td>
+      <td>37.6 ± 0.2</td>
+      <td>37.5 ± 0.2</td>
+      <td>266 ± 30</td>
+      <td>268 ± 24</td>
+      <td>42.8 ± 4.7#</td>
+      <td>45.0 ± 1.8</td>
+      <td>7.37 ± 0.04</td>
+      <td>7.37 ± 0.02</td>
+      <td>127 ± 10</td>
+      <td>123 ± 23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + mAIH</td>
+      <td>37.3 ± 0.1</td>
+      <td>37.4 ± 0.3</td>
+      <td>249 ± 21</td>
+      <td>255 ± 28</td>
+      <td>41.7 ± 4.9</td>
+      <td>48.6 ± 3.5</td>
+      <td>7.38 ± 0.03</td>
+      <td>7.33 ± 0.02</td>
+      <td>132 ± 8</td>
+      <td>121 ± 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + mAIH</td>
+      <td>37.4 ± 0.2</td>
+      <td>37.4 ± 0.3</td>
+      <td>276 ± 40</td>
+      <td>283 ± 33</td>
+      <td>41.5 ± 3.2</td>
+      <td>47.9 ± 3.6</td>
+      <td>7.39 ± 0.03</td>
+      <td>7.34 ± 0.02</td>
+      <td>129 ± 16</td>
+      <td>117 ± 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + sAIH</td>
+      <td>37.6 ± 0.3</td>
+      <td>37.5 ± 0.2</td>
+      <td>295 ± 18</td>
+      <td>266 ± 9</td>
+      <td>43.3 ± 5.9</td>
+      <td>47.7 ± 3.1</td>
+      <td>7.37 ± 0.02</td>
+      <td>7.36 ± 0.00</td>
+      <td>133 ± 6</td>
+      <td>121 ± 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + sAIH</td>
+      <td>37.4 ± 0.1</td>
+      <td>37.4 ± 0.4</td>
+      <td>297 ± 28</td>
+      <td>264 ± 35</td>
+      <td>45.3 ± 4.2</td>
+      <td>47.7 ± 4.0</td>
+      <td>7.36 ± 0.02</td>
+      <td>7.36 ± 0.02</td>
+      <td>135 ± 20</td>
+      <td>132 ± 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + sAIH</td>
+      <td>37.4 ± 0.3</td>
+      <td>37.5 ± 0.1</td>
+      <td>256 ± 46</td>
+      <td>268 ± 29</td>
+      <td>41.6 ± 2.2e</td>
+      <td>49.9 ± 3.5</td>
+      <td>7.39 ± 0.03</td>
+      <td>7.34 ± 0.02</td>
+      <td>110 ± 12</td>
+      <td>113 ± 29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + sAIH</td>
+      <td>37.5 ± 0.2</td>
+      <td>37.4 ± 0.2</td>
+      <td>243 ± 45</td>
+      <td>245 ± 39</td>
+      <td>42.3 ± 3.4</td>
+      <td>51.6 ± 6.8</td>
+      <td>7.37 ± 0.01</td>
+      <td>7.31 ± 0.04</td>
+      <td>121 ± 3</td>
+      <td>129 ± 13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalSaline + CGS-21680</td>
+      <td>37.5 ± 0.2</td>
+      <td>37.3 ± 0.2</td>
+      <td>268 ± 21</td>
+      <td>237 ± 14</td>
+      <td>45.4 ± 5.3</td>
+      <td>46.2 ± 3</td>
+      <td>7.36 ± 0.04</td>
+      <td>7.34 ± 0.03</td>
+      <td>119 ± 24</td>
+      <td>121 ± 10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + CGS-21680</td>
+      <td>37.6 ± 0.3</td>
+      <td>37.4 ± 0.3</td>
+      <td>247 ± 27</td>
+      <td>247 ± 21</td>
+      <td>46.2 ± 2.9</td>
+      <td>46.6 ± 2.7</td>
+      <td>7.37 ± 0.02</td>
+      <td>7.34 ± 0.02</td>
+      <td>114 ± 12</td>
+      <td>107 ± 15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls</td>
+      <td colspan="2">37.7 ± 0.1</td>
+      <td colspan="2">250 ± 45</td>
+      <td colspan="2">49.4 ± 4.0</td>
+      <td colspan="2">7.36 ± 0.05</td>
+      <td colspan="2">110 ± 10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls + Keto</td>
+      <td colspan="2">37.5 ± 0.3</td>
+      <td colspan="2">250 ± 17</td>
+      <td colspan="2">44.0 ± 9.1</td>
+      <td colspan="2">7.37 ± 0.06</td>
+      <td colspan="2">115 ± 39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGS-21680 Vehicle Controls</td>
+      <td colspan="2">37.4 ± 0.3</td>
+      <td colspan="2">237 ± 40</td>
+      <td colspan="2">45.8 ± 0.8</td>
+      <td colspan="2">7.37 ± 0.03</td>
+      <td colspan="2">110 ± 17</td>
+    </tr>
+    <tr>
+      <td colspan="2">Hypoxia</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + mAIH</td>
+      <td>37.4 ± 0.2</td>
+      <td>37.3 ± 0.1</td>
+      <td>38 ± 2*,†, ‡</td>
+      <td>40 ± 3*,†, ‡</td>
+      <td>42.2 ± 5.1#</td>
+      <td>48.8 ± 3.8</td>
+      <td>7.35 ± 0.07</td>
+      <td>7.36 ± 0.03#</td>
+      <td>62 ± 23*,†, ‡</td>
+      <td>65 ± 30*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + mAIH</td>
+      <td>37.5 ± 0.4</td>
+      <td>37.4 ± 0.1</td>
+      <td>39 ± 2*,†, ‡</td>
+      <td>39 ± 4*,†, ‡</td>
+      <td>43.0 ± 4.8#</td>
+      <td>45.4 ± 2.8</td>
+      <td>7.36 ± 0.04#</td>
+      <td>7.36 ± 0.02#</td>
+      <td>68 ± 19*,†, ‡</td>
+      <td>80 ± 21‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + mAIH</td>
+      <td>37.5 ± 0.2</td>
+      <td>37.4 ± 0.3</td>
+      <td>38 ± 1*,†, ‡</td>
+      <td>39 ± 3*,†, ‡</td>
+      <td>41.9 ± 3.5</td>
+      <td>48.6 ± 3.7</td>
+      <td>7.37 ± 0.03#</td>
+      <td>7.32 ± 0.04</td>
+      <td>62 ± 11‡</td>
+      <td>56 ± 6*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + mAIH</td>
+      <td>37.5 ± 0.2</td>
+      <td>37.5 ± 0.3</td>
+      <td>40 ± 2*,†, ‡</td>
+      <td>39 ± 4*,†, ‡</td>
+      <td>40.9 ± 2.2#</td>
+      <td>47.8 ± 4.9</td>
+      <td>7.36 ± 0.04</td>
+      <td>7.32 ± 0.03</td>
+      <td>71 ± 14‡</td>
+      <td>66 ± 19‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + sAIH</td>
+      <td>37.6 ± 0.2</td>
+      <td>37.4 ± 0.3</td>
+      <td>29 ± 5*,†, ‡</td>
+      <td>29 ± 2*,†, ‡</td>
+      <td>43.5 ± 5.9</td>
+      <td>47.7 ± 2.3</td>
+      <td>7.35 ± 0.03</td>
+      <td>7.32 ± 0.06</td>
+      <td>58 ± 9*,†, ‡</td>
+      <td>53 ± 11*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + sAIH</td>
+      <td>37.4 ± 0.3</td>
+      <td>37.5 ± 0.3</td>
+      <td>30 ± 4*,†, ‡</td>
+      <td>31 ± 5*,†, ‡</td>
+      <td>46.3 ± 4.2</td>
+      <td>47.3 ± 5.9</td>
+      <td>7.34 ± 0.03</td>
+      <td>7.31 ± 0.03</td>
+      <td>61 ± 20‡</td>
+      <td>59 ± 20*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + sAIH</td>
+      <td>37.4 ± 0.2</td>
+      <td>37.5 ± 0.2</td>
+      <td>30 ± 2*,†, ‡</td>
+      <td>32 ± 3*,†, ‡</td>
+      <td>42.3 ± 2.2#</td>
+      <td>48.9 ± 3.7</td>
+      <td>7.36 ± 0.03</td>
+      <td>7.29 ± 0.03</td>
+      <td>34 ± 8*,†, ‡,¶</td>
+      <td>45 ± 29*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + sAIH</td>
+      <td>37.3 ± 0.3</td>
+      <td>37.6 ± 0.2</td>
+      <td>31 ± 2*,†, ‡</td>
+      <td>32 ± 1*,†, ‡</td>
+      <td>42.2 ± 3.2#</td>
+      <td>52.2 ± 5.8</td>
+      <td>7.34 ± 0.03</td>
+      <td>7.28 ± 0.06</td>
+      <td>37 ± 11*,†, ‡,¶</td>
+      <td>43 ± 21*,†, ‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls</td>
+      <td colspan="2">37.6 ± 0.3</td>
+      <td colspan="2">226 ± 40</td>
+      <td colspan="2">48.7 ± 4.7</td>
+      <td colspan="2">7.35 ± 0.04</td>
+      <td colspan="2">107 ± 13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls + Keto</td>
+      <td colspan="2">37.5 ± 0.2</td>
+      <td colspan="2">258 ± 13</td>
+      <td colspan="2">45.5 ± 9.3</td>
+      <td colspan="2">7.37 ± 0.06#</td>
+      <td colspan="2">109 ± 44</td>
+    </tr>
+    <tr>
+      <td colspan="2">60 min</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + mAIH</td>
+      <td>37.5 ± 0.4</td>
+      <td>37.3 ± 0.1</td>
+      <td>234 ± 28</td>
+      <td>259 ± 22</td>
+      <td>43.4 ± 5.7</td>
+      <td>48.6 ± 3.7</td>
+      <td>7.38 ± 0.05#</td>
+      <td>7.35 ± 0.02</td>
+      <td>114 ± 9</td>
+      <td>117 ± 27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + mAIH</td>
+      <td>37.5 ± 0.3</td>
+      <td>37.4 ± 0.3</td>
+      <td>253 ± 19</td>
+      <td>268 ± 23*</td>
+      <td>42.9 ± 4.4#</td>
+      <td>45.2 ± 2.6</td>
+      <td>7.39 ± 0.04#</td>
+      <td>7.37 ± 0.01</td>
+      <td>116 ± 14</td>
+      <td>121 ± 25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + mAIH</td>
+      <td>37.3 ± 0.2</td>
+      <td>37.3 ± 0.3</td>
+      <td>262 ± 14</td>
+      <td>257 ± 32</td>
+      <td>42.5 ± 4.9</td>
+      <td>48.7 ± 4.0</td>
+      <td>7.38 ± 0.01</td>
+      <td>7.33 ± 0.04</td>
+      <td>121 ± 13</td>
+      <td>115 ± 11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + mAIH</td>
+      <td>37.6 ± 0.3</td>
+      <td>37.6 ± 0.3</td>
+      <td>257 ± 18</td>
+      <td>276 ± 40*</td>
+      <td>41.5 ± 2.7</td>
+      <td>47.8 ± 3.6</td>
+      <td>7.36 ± 0.02</td>
+      <td>7.34 ± 0.06</td>
+      <td>123 ± 11</td>
+      <td>112 ± 18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + sAIH</td>
+      <td>37.5 ± 0.3</td>
+      <td>37.4 ± 0.2</td>
+      <td>262 ± 36</td>
+      <td>258 ± 19</td>
+      <td>43.7 ± 5.5</td>
+      <td>47.6 ± 2.9</td>
+      <td>7.37 ± 0.04</td>
+      <td>7.32 ± 0.03</td>
+      <td>135 ± 9</td>
+      <td>115 ± 24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + sAIH</td>
+      <td>37.7 ± 0.2</td>
+      <td>37.4 ± 0.2</td>
+      <td>282 ± 16*</td>
+      <td>266 ± 18</td>
+      <td>46.2 ± 4.8</td>
+      <td>47.7 ± 4.5</td>
+      <td>7.36 ± 0.02</td>
+      <td>7.35 ± 0.02</td>
+      <td>127 ± 14</td>
+      <td>128 ± 17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal Saline + Keto + sAIH</td>
+      <td>37.7 ± 0.3</td>
+      <td>37.4 ± 0.3</td>
+      <td>248 ± 42</td>
+      <td>262 ± 9</td>
+      <td>42.3 ± 2.6</td>
+      <td>50.2 ± 4.2</td>
+      <td>7.37 ± 0.03</td>
+      <td>7.32 ± 0.03§</td>
+      <td>105 ± 10</td>
+      <td>109 ± 36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalLPS + Keto + sAIH</td>
+      <td>37.5 ± 0.2</td>
+      <td>37.4 ± 0.3</td>
+      <td>252 ± 24</td>
+      <td>245 ± 21</td>
+      <td>42.2 ± 3</td>
+      <td>51.2 ± 6.9</td>
+      <td>7.38 ± 0.02</td>
+      <td>7.31 ± 0.04</td>
+      <td>117 ± 14</td>
+      <td>125 ± 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NeonatalSaline + CGS-21680</td>
+      <td>37.3 ± 0.3</td>
+      <td>37.6 ± 0.1</td>
+      <td>270 ± 46</td>
+      <td>215 ± 48</td>
+      <td>45.7 ± 4.9</td>
+      <td>47 ± 3.3</td>
+      <td>7.34 ± 0.06</td>
+      <td>7.35 ± 0.04</td>
+      <td>112 ± 30</td>
+      <td>126 ± 21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neonatal LPS + CGS-21680</td>
+      <td>37.4 ± 0.4</td>
+      <td>37.4 ± 0.4</td>
+      <td>254 ± 26</td>
+      <td>256 ± 21</td>
+      <td>46.1 ± 3.2</td>
+      <td>46.5 ± 3.2</td>
+      <td>7.37 ± 0.01</td>
+      <td>7.33 ± 0.04</td>
+      <td>107 ± 16</td>
+      <td>101 ± 25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls</td>
+      <td colspan="2">37.5 ± 0.3</td>
+      <td colspan="2">220 ± 25</td>
+      <td colspan="2">48.4 ± 3.7</td>
+      <td colspan="2">7.36 ± 0.04</td>
+      <td colspan="2">102 ± 22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time Controls + Keto</td>
+      <td colspan="2">37.6 ± 0.2</td>
+      <td colspan="2">272 ± 21</td>
+      <td colspan="2">44.3 ± 8.7</td>
+      <td colspan="2">7.37 ± 0.07</td>
+      <td colspan="2">111 ± 48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGS-21680 Vehicle Controls</td>
+      <td colspan="2">37.6 ± 0.2</td>
+      <td colspan="2">271 ± 27</td>
+      <td colspan="2">45.4 ± 1.6</td>
+      <td colspan="2">7.36 ± 0.03</td>
+      <td colspan="2">108 ± 7</td>
+    </tr>
+  </tbody>
+</table>
+
+_MAP, mean arterial pressure; PaO2, arterial oxygen pressure; PaCO2, arterial carbon dioxide pressure. Neonatal Saline +mAIH male (n = 7) female (n = 7); Neonatal LPS +mAIH male (n = 12) female (n = 6); Neonatal Saline +Keto + mAIH male (n = 4) female (n = 5); Neonatal LPS +Keto + mAIH male (n = 4) female (n = 5); Neonatal Saline +sAIH male (n = 5) female (n = 4); Neonatal LPS +sAIH male (n = 4) female (n = 4); Neonatal Saline +Keto + sAIH male (n = 5) female (n = 5); Neonatal LPS +Keto + sAIH male (n = 5) female (n = 6); Time Control (n = 5); Time Control + Keto (n = 4). Statistical comparisons: ANOVA-RM, Tukey’s post hoc: * different from Time control within time point, † different from TC +Keto within time point, ‡ different from baseline and 60 min, § different from baseline, # different from female neonatal LPS +Keto + sAIH within time point, ¶ different from female LPS within time point_
 
 Baseline phrenic burst frequency was not significantly different between groups and frequency plasticity, an increase in burst frequency 60 min after AIH (Baker-Herman and Mitchell, 2008), was not evident in any group. Phrenic burst frequency did not change after intrathecal CGS-21680.
 
@@ -122,23 +712,194 @@ In conclusion, this basic science study has major implications for the understan
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS (Lipopolysaccharides from e Coli (0111:B4))</td>
+      <td>Sigma Aldrich</td>
+      <td>L4130</td>
+      <td>dissolved in saline, 1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Keto ((S) - (+) - Ketoprofen)</td>
+      <td>Sigma Aldrich</td>
+      <td>471909</td>
+      <td>dissolved in 50% ethanol in saline,12.5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGS-21680</td>
+      <td>Sigma Aldrich</td>
+      <td>C141</td>
+      <td>dissolved in DMSO to50 mM for storage in aliquots. Dissolved to 100 uM in 10% DMSO and artificial CSF for injections.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>(Millipore Cat# AB5804, RRID:AB_2109645)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NK1R (Guinea pig polyclonal)</td>
+      <td>Millipore</td>
+      <td>(Millipore Cat# AB15810, RRID:AB_11213393)</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IBA1 (Rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>(Wako Cat# 019–19741, RRID:AB_839504)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CHaT (Goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>(Millipore Cat# AB144P, RRID:AB_2079751)</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey-anti-rabbit 647 IgG secondary</td>
+      <td>Life Technologies</td>
+      <td>(Molecular Probes Cat# A-31573, RRID:AB_2536183)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey-anti-goat 555 IgG secondary</td>
+      <td>Life Technologies</td>
+      <td>(Molecular Probes Cat# A-21432, RRID:AB_141788)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey-anti-guinea pig 488 IgG secondary</td>
+      <td>Jackson Immuno</td>
+      <td>(Jackson ImmunoResearch Labs Cat# 706-545-148, RRID:AB_2340472)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-1β forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CTG CAG ATG CAA TGG AAA GA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-1β reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>TTG CTT CCA AGG CAG ACT TT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6 forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>GTG GCT AAG GAC CAA GAC CA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6 reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>GGT TTG CCG AGT AGA CCT CA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>iNOS forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>AGG GAG TGT TGT TCC AGG TG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>iNOS reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>TCT GCA GGA TGT CTT GAA CG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>TCC ATG GCC CAG ACC CTC ACA C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>TCC GCT TGG TGG TTT GCT ACG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>COX2 forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>TGT TCC AAC CCA TGT CAA AA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>COX2 reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CGT AGA ATC CAG TCC GGG TA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 s forward primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CGG GTG CTC TTA GCT GAG TGT CCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 s reverse primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CTC GGG CCT GCT TTG AAC AC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All experiments were approved by the Institutional Animal Care and Use Committees at the University of Oregon and the University of Wisconsin-Madison and conformed to the policies of the National Institute of Health Guide for the Care and Use of Laboratory Animals. Male and female Sprague Dawley rats (Envigo Colony 217 and 206) were housed under standard conditions (12:12 hr light/dark cycle) with food and water ad libitum.
 
-## Drugs and materials
+### Drugs and materials
 
-LPS (0111:B4, Sigma Chemical) was dissolved and sonicated in sterile saline for neonatal intraperitoneal (i.p.) injections (1 mg/kg). S-(+) Ketoprofen (Keto, Sigma Chemical) was dissolved in ethanol (50%) and sterile saline for acute, adult injections (12.5 mg/ml/kg, i.p., 3 hr). 17-β estradiol was dissolved in sesame oil (Tex Lab Supply, Texas, USA) for acute injections (40 μg/mL/kg, i.p.,3 hr) in adult females after ovariectomy.
+LPS (0111:B4, Sigma Chemical) was dissolved and sonicated in sterile saline for neonatal intraperitoneal (i.p.) injections (1 mg/kg). S-(+) Ketoprofen (Keto, Sigma Chemical) was dissolved in ethanol (50%) and sterile saline for acute, adult injections (12.5 mg/ml/kg, i.p., 3 hr). 17-$\beta$ estradiol was dissolved in sesame oil (Tex Lab Supply, Texas, USA) for acute injections (40 μg/mL/kg, i.p.,3 hr) in adult females after ovariectomy.
 
 The adenosine 2A receptor agonist CGS-21680 was dissolved in fresh artificial cerebrospinal fluid (aCSF: 120 mM NaCl, 3 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 23 mM NaHCO3, and 10 mM glucose) with DMSO (10%) for intrathecal injections.
 
-## Neonatal treatments
+### Neonatal treatments
 
 Timed pregnant rats (E14-17 upon arrival) were purchased in pairs from a commercial vendor (Envigo) and monitored daily. To control for between litter effects, litters were stratified such that each dam fostered similar numbers of male and female pups. On postnatal day 4 (P4), all of the stratified pups with one dam were injected with LPS (1 mg/kg, i.p.), while pups with the control dam were injected with sterile saline (i.p.). The dose of LPS was based on previous studies demonstrating CNS inflammatory gene expression in neonates (Rourke et al., 2016), as well as our unpublished data (N Morrison, S Johnson, J Watters, A Huxtable, unpublished observations) indicating CNS inflammation following LPS (1 mg/kg). Pups were weighed weekly and weaned at P21. Electrophysiology experiments were conducted once males reached 300 g. Females were ovariectomized at approximately 250 g, 7–8 days prior to electrophysiology experiments.
 
-## Ovariectomy
+### Ovariectomy
 
 Ovariectomies were performed as previously described (Dougherty et al., 2017) to control for the known effects of estrus cycle hormones on pLTF (Zabka et al., 2001; Behan et al., 2002; Dougherty et al., 2017). Adult rats were anesthetized with isoflurane and maintained on a nose cone (2.5% in O2) during surgery. Depth of anesthesia was confirmed by the absence of toe-pinch responses. Bilateral dorsolateral incisions exposed ovarian fat pads. Ovaries were ligated and removed, muscle layers were approximated, and skin incisions were closed with a single dissolvable suture. A single dose of buprenorphine (0.05 g/kg, s.c.) was administered at the end of surgery for pain control and rats recovered in individual cages for 7-8 days before electrophysiology studies. Since pLTF exists in females only when estradiol is high (Dougherty et al., 2017), estradiol levels were restored by injection of 17-β estradiol (40 μg/mL/kg, i.p.) three hours before electrophysiology experiments.
 
-## Experimental groups
+### Experimental groups
 
 All experimental groups consisted of adult male and female rats after a single injection of either neonatal LPS or neonatal saline. To investigate the impact of neonatal systemic inflammation on adult Q-pathway-evoked respiratory motor plasticity, the following experimental groups were used: male neonatal saline + mAIH (n = 7), male neonatal LPS + mAIH (n = 12), female neonatal saline + mAIH (n = 7), female neonatal LPS + mAIH (n = 6).
 
@@ -152,7 +913,7 @@ To investigate if intermittent, intrathecal CGS-21680 reveals S-pathway-evoked r
 
 To reduce use of additional animals, and because time control experiments were not statistically different between males or females, time control groups consisted of animals from each experimental condition. The time control group for studies investigating the Q-pathway (Figure 2) and S-pathway (Figure 5) consisted of adults after neonatal saline (male: n = 1; female n = 2), neonatal LPS (n = 1 male, 1 female). The time control + Keto group (Figures 3 and 6) consisted of adults after neonatal saline + Keto (n = 1 male, 1 female) and neonatal LPS + Keto (n = 1 male, 1 female). Vehicle controls for intrathecal CGS-21680 experiments (Figure 7) consisted of adults after neonatal saline (n = 1 male, 1 female) and neonatal LPS (n = 1 male, 1 female).
 
-## Electrophysiological studies
+### Electrophysiological studies
 
 Electrophysiological studies have been described in detail previously (Bach and Mitchell, 1996; Baker-Herman and Mitchell, 2002; Huxtable et al., 2013). Rats were anesthetized with isoflurane, tracheotomized, ventilated (Rat Ventilator, VetEquip), and vagotomized bilaterally. A venous catheter was placed for drug delivery and fluid replacement, and a femoral arterial catheter was used to monitor blood pressure and for arterial blood sampling. Arterial blood samples were analyzed (PaO2, PaCO2, pH, base excess; Siemens RAPIDLAB 248) during baseline, during the first hypoxic response, and 15, 30 and 60 min post-AIH. Temperature was measured with a rectal temperature probe (Kent Scientific Corporation) and maintained between 37°C and 38°C with a custom heated table. Using a dorsal approach, hypoglossal and phrenic nerves were cut distally, and de-sheathed. Rats were converted to urethane anesthesia (1.8 g/kg i.v.; Sigma-Aldrich), allowed to stabilize for one hour, and paralyzed with pancuronium dibromide (1 mg; Selleck Chemicals).
 
@@ -162,20 +923,20 @@ Nerves were bathed in mineral oil and placed on bipolar silver wire electrodes. 
 
 All rats (excluding time control rats) received three, 5 min bouts of either mAIH (~10.5% O2, PaO235–45 mmHg) or sAIH (~7% O2, PaO225–35 mmHg). The average amplitude and frequency of 30 consecutive integrated phrenic bursts were taken during baseline, the first acute hypoxic response, and 15, 30, and 60 min after AIH and made relative to baseline amplitude. Phrenic nerve activity data for each experimental group were compared using two-way, repeated measures ANOVA with Fisher LSD post hoc tests. Sample sizes were selected based on similar, previous studies and the variance of pLTF in our experience (Huxtable et al., 2018a; Huxtable et al., 2018b; Hocker and Huxtable, 2018). Physiological variables were compared using two-way, repeated measures ANOVA with Tukey’s post hoc test. Mean arterial pressure is reported for baseline, the end of the third hypoxic exposure, and 60 min after AIH. Acute hypoxic responses were compared using an ANOVA with Fisher LSD post hoc test. Values are means ± SD.
 
-## RNA isolation, cDNA synthesis and quantitative PCR experiments
+### RNA isolation, cDNA synthesis and quantitative PCR experiments
 
 Neonatal rats (P4) were injected with either vehicle (saline) or LPS (1 mg/kg, i.p.) and allowed to mature to ~12 weeks. Adult male and female rats were anesthetized with isoflurane and perfused with PBS (transcardiac). Medulla and cervical spinal cords (C3-C7) were dissected and flash frozen until they were homogenized in Tri-Reagent (Sigma, St. Louis, MO, USA). Glycoblue reagent (Invitrogen, Carlsbad, CA, USA) was used to isolate total RNA, according to the manufacturer’s protocol. cDNA was reverse transcribed from 1 µg of total RNA using MMLV reverse transcriptase together with a cocktail of oligo dT and random primers (Promega, Madison, WI, USA), as previously described (Crain and Watters, 2015), and analyzed using qPCR with PowerSYBR green PCR master mix on an ABI 7500 Fast system. Inflammatory gene expression was analyzed in medulla and spinal cord homogenates using the following primers:
 
 Wherever possible, primers were designed to span introns (Primer three software) and were purchased from Integrated DNA Technologies (Coralville, IA, USA). Primer efficiency was assessed by use of standard curves, as previously reported (Crain and Watters, 2015). Expression of inflammatory genes was made relative to 18 s ribosomal RNA calculated using the 2-ΔΔCT method (Livak and Schmittgen, 2001). Gene transcripts were considered undetectable, and not included in statistical analyses if their CT values fell outside of the linear range of the standard curve for that primer set, which in most cases was ≥34 cycles.
 
-## Immunohistochemistry methods
+### Immunohistochemistry methods
 
 Upon completion of electrophysiology experiments, rats were perfused (transcardiac) with cold phosphate buffered saline (PBS, pH 7.4), followed by 4% paraformaldehyde (pH 7.4). All brains were removed and immersed in paraformaldehyde until sectioning (Leica VT 1200S vibratome). For immunohistochemistry, transverse medullary and coronal cervical spinal cord sections (40 µm) were washed (PBS) and blocked (PBS, 0.3% Triton, 1% BSA, 2 hr, room temperature) to prevent non-specific antibody binding. For medullary sections, two combinations of primary antibodies were used (PBS, 0.3% Triton, 0.01% BSA, room temperature, 24 hr): (1) rabbit anti-GFAP (1:1000, Millipore AB5804) to label astrocytes and guinea pig anti-NK1R (1:500, Millipore AB15810) to label preBötzinger Complex (preBötC) neurons (Gray et al., 1999), and (2) rabbit anti-IBA1 (1:1000, Wako 019–19741) to label microglia and guinea pig anti-NK1R (1:500, Millipore AB15810) to label preBötC neurons. For the spinal cord, two different combinations of primary antibodies were used (PBS, 0.3% Triton, 0.01% BSA, room temperature, 24 hr): (1) rabbit anti-GFAP (1:1000, Millipore AB5804) to label astrocytes and goat anti-ChAT (1:300, Millipore AB144p) to label motor neurons, (2) rabbit anti-IBA1 (1:1000, Wako 019–19741) to label microglia and goat anti-ChAT (1:300, Millipore AB144p) to label motor neurons. After primary antibody incubation, sections were rinsed (PBS) and incubated with secondary antibodies (PBS, 0.3% triton, 0.01% BSA, room temperature, 3 hr): donkey-anti-rabbit 647 IgG (1:1000, Life Technologies A31573) to label GFAP and IBA1 primary antibodies, donkey-anti-goat 555 IgG (1:1000, Life Technologies A21432) to label ChAT primary antibody and donkey-anti-guinea pig 488 IgG (1:1000, Alexa Fluor 706-545-148) to label NK1R primary antibody. Sections were washed and mounted onto charged microscope slides, air dried and covered with prolong gold (Life technologies, P36930) to preserve the fluorescence. A glass cover slip was placed over the samples and sealed with clear nail polish. Slides were stored in the dark at 4°C until imaged. All immunohistochemistry experiments contained adult male and female tissues after neonatal saline (medulla: n = 5 males, seven females; spinal cord: n = 5 males, six females) or neonatal LPS (medulla: n = 6 males, four females; spinal cord: n = 6 males, three females).
 
-## Image analysis methods
+### Image analysis methods
 
 All immunofluorescent images (1024 × 1024 pixels, 40x magnification) were acquired using a Leica Microsystems CMS GmbH confocal microscope using the LAS X acquisition and viewing software (0.5 µm z-stack step increments). All images were taken using identical laser and gain settings and identically adjusted for contrast/brightness using ImageJ open source software to allow for comparisons across all groups. To quantify the density of microglia and astrocytes, maximum intensity projections for 20 µm of z-stacks from the medulla and cervical spinal cords were analyzed. Mean fluorescent intensity for each image within a single batch was made relative to the average fluorescent intensities of adults after neonatal saline samples within each sex (Paizs et al., 2009). Data are presented as percent change from adults after neonatal saline within each sex.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 7.0 software was used for statistical analyses. Differences in mortality between treatments and between sexes was evaluated with Fisher’s exact test. Phrenic nerve activity data for each experimental group were compared using two-way, repeated measures ANOVA with Fisher LSD post hoc tests. Physiological variables were compared using two-way, repeated measures ANOVA with Tukey’s post hoc test. Mean arterial pressure is reported from baseline, the end of the third hypoxic exposure, and 60 min after AIH. Acute hypoxic phrenic responses were compared using an ANOVA with Fisher LSD post hoc test. Microglial and astrocytic density comparisons were made between groups using a one-way ANOVA with multiple-comparisons post hoc tests. For all tests, p < 0.05 was considered significant and all data are expressed as mean ± SD.

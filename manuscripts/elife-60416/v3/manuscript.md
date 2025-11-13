@@ -116,7 +116,7 @@ A further unique aspect of smFRET studies is that structural, kinetic, and spect
 
 As an example, Figure 1B shows the outcome of a multimodal smFRET study on the conformational landscape of a 12-mer chromatin array (~2.5 MDa) (Kilic et al., 2018) with dynamics occurring on timescales from nanoseconds to hours. SmFRET experiments could detect the flexible chromatin conformations (Figure 1B, middle panel), revealing their dynamic structural heterogeneity (Figure 1B, bottom panel), in contrast to the well-ordered static structures of chromatin fibers (Figure 1B, top panel). These flexible, partially-open and open conformations that are quite abundant in solution (population of >70%; Figure 1B, bottom panel) were not resolved before, although they are essential for proper gene organization and function. They represent the central interconversion hub for the distinct stacking registers of chromatin and are difficult to detect with other structural techniques. This approach of visualizing biomolecules in action under ambient conditions emphasizes the importance of their dynamic nature by resolving transitions between various conformational states, which, in many cases, promotes function (Aviram et al., 2018; Henzler-Wildman et al., 2007; Iljina et al., 2020; Lerner et al., 2018b; Sanabria et al., 2020; Tassis et al., 2020).
 
-SmFRET measurements are typically performed using two approaches: with surface-immobilized molecules using total internal reflection fluorescence microscopy (TIRFM) and camera-based detection, or with freely diffusing molecules in solution using confocal microscopy and point detectors. Experimental systems are available commercially but are typically home-built. Samples are prepared and the data collected using lab-specific protocols, where data are stored in a variety of file formats and analyzed using an array of increasingly powerful software. For the field in general and for structural studies in particular, it is important to demonstrate that smFRET, as a method, is reproducible and reliable regardless of where and how the sample is measured. To this end, in an effort led by Thorsten Hugel, twenty laboratories joined in measuring smFRET on several dsDNA constructs (Hellenkamp et al., 2018a). Studying six distinct samples with different dyes and varying inter-dye distances, the mean FRET efficiencies obtained by the participating labs exhibited a surprisingly high degree of agreement (a ΔE between 0.02 and 0.05 depending on the details of the sample). The quantitative assessment and reproducibility of the intensity-based smFRET measurements and discussions about data analysis was an important milestone. These dsDNA FRET standards are now available for every day calibration and are especially useful for new groups joining the community.
+SmFRET measurements are typically performed using two approaches: with surface-immobilized molecules using total internal reflection fluorescence microscopy (TIRFM) and camera-based detection, or with freely diffusing molecules in solution using confocal microscopy and point detectors. Experimental systems are available commercially but are typically home-built. Samples are prepared and the data collected using lab-specific protocols, where data are stored in a variety of file formats and analyzed using an array of increasingly powerful software. For the field in general and for structural studies in particular, it is important to demonstrate that smFRET, as a method, is reproducible and reliable regardless of where and how the sample is measured. To this end, in an effort led by Thorsten Hugel, twenty laboratories joined in measuring smFRET on several dsDNA constructs (Hellenkamp et al., 2018a). Studying six distinct samples with different dyes and varying inter-dye distances, the mean FRET efficiencies obtained by the participating labs exhibited a surprisingly high degree of agreement (a $ΔE$ between 0.02 and 0.05 depending on the details of the sample). The quantitative assessment and reproducibility of the intensity-based smFRET measurements and discussions about data analysis was an important milestone. These dsDNA FRET standards are now available for every day calibration and are especially useful for new groups joining the community.
 
 Encouraged by the insights gained in the above-mentioned FRET endeavor (Hellenkamp et al., 2018a), new multi-lab blind studies have been initiated. The next comparative FRET study, led by Thorben Cordes, investigates the robustness and reliability of smFRET experiments on proteins undergoing ligand-induced conformational changes (Gebhardt et al., in preparation). This study uses two distinct model proteins to assess the reproducibility and accuracy of protein-based smFRET for inter-dye distance determination measurements. Protein systems bring new challenges, including statistical dye labeling, site-specific dye properties, protein stability, shipping, storage and conformational dynamics. Hence, the study also assesses the ability of smFRET to discover and quantify dynamics on different timescales from microseconds to seconds. Another FRET challenge, initiated by Sonja Schmid, is the kinSoftChallenge (http://www.kinsoftchallenge.com, Götz et al., in preparation), which evaluates existing tools for extracting kinetic information from single-molecule time trajectories. This challenge aims to: (1) demonstrate the ability of smFRET-based kinetic analyses to accurately infer dynamic information and (2) provide the community with the means of evaluating the different available software tools.
 
@@ -130,13 +130,13 @@ Within the FRET community, considerable know-how and expertise exists for the de
 
 In the following, we consider each of these four aspects at every step of the smFRET workflow, from the choice of instrumentation all the way to the generation of structural and dynamic models.
 
-## Experimental approaches: free diffusion or surface immobilization?
+### Experimental approaches: free diffusion or surface immobilization?
 
 The workflow of smFRET studies starts with choosing one of the two most popular smFRET implementations: confocal and TIRF microscopy. Confocal microscopy is especially well-suited for studying freely diffusing molecules (Figure 2A), while TIRF microscopy is typically used for surface-immobilized molecules (Figure 2B; e.g., reviewed in Juette et al., 2014; Roy et al., 2008; Sasmal et al., 2016).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60416/elife-60416-fig2-v3.jpg)
 
-**Figure 2.:** (A) Confocal smFRET measurements on freely-diffusing molecules. (i) A schematic of a single-color excitation confocal microscope with point detectors used for two-color detection. The excitation light is guided to the microscope body and reflected by a dichroic mirror (DM) toward a high numerical aperture (NA) objective lens that focuses the light in solution. The fluorescence emission is collected through the same objective lens, passes through the DM and pinhole and is spectrally split into donor and acceptor detection channels by a second DM in the detection path. After passing through emission filters (EF), single photons are detected on point detectors with high quantum efficiency, typically avalanche photodiodes (APD). (ii) Illustration of a double-labeled molecule freely diffusing through the confocal excitation spot. (iii) Exemplary confocal smFRET measurement showing photon bursts arising from single-molecules diffusing through the confocal volume. Green: Donor emission. Red: Acceptor emission. Exemplary bursts belonging to a single- or a double-labeled molecule are indicated with arrows. (iv) In ALEX or PIE experiments, the two-dimensional histogram of the molecule-wise FRET efficiency  and stoichiometry ES allows one to separate single- and double-labeled populations (2005 Elsevier Ltd. All rights reserved. The figure was originally published as Figure 2A in Lee et al., 2005. Biophysical Journal, 88(4): 2939–2953. Further reproduction of this panel would need permission from the copyright holder). (B) TIRF-based smFRET experiments on surface-immobilized molecules. (i) Illustration of a surface-immobilized sample labeled with donor and acceptor fluorophores. (ii) Scheme of a single-color objective-type TIRF excitation two-color wide-field detection microscope. A: Aperture, TL: Tube lens, L: Lens, M: Mirror, DM: Dichroic mirror, EF: Emission filter. (iii) Illustration of an image of single molecules, in which the donor and acceptor (FRET) signals are split onto two halves of the camera. Mapping between the two channels is typically done using fluorescent beads (Joo and Ha, 2012; Roy et al., 2008; Zhuang et al., 2000) or zero-mode waveguides (Salem et al., 2019). (iv) Single-molecule fluorescence trajectory of the donor and acceptor (FRET) dyes, illustrating an anti-correlation indicative of FRET dynamics.
+**Figure 2.:** (A) Confocal smFRET measurements on freely-diffusing molecules. (i) A schematic of a single-color excitation confocal microscope with point detectors used for two-color detection. The excitation light is guided to the microscope body and reflected by a dichroic mirror (DM) toward a high numerical aperture (NA) objective lens that focuses the light in solution. The fluorescence emission is collected through the same objective lens, passes through the DM and pinhole and is spectrally split into donor and acceptor detection channels by a second DM in the detection path. After passing through emission filters (EF), single photons are detected on point detectors with high quantum efficiency, typically avalanche photodiodes (APD). (ii) Illustration of a double-labeled molecule freely diffusing through the confocal excitation spot. (iii) Exemplary confocal smFRET measurement showing photon bursts arising from single-molecules diffusing through the confocal volume. Green: Donor emission. Red: Acceptor emission. Exemplary bursts belonging to a single- or a double-labeled molecule are indicated with arrows. (iv) In ALEX or PIE experiments, the two-dimensional histogram of the molecule-wise FRET efficiency $E$ and stoichiometry S allows one to separate single- and double-labeled populations (2005 Elsevier Ltd. All rights reserved. The figure was originally published as Figure 2A in Lee et al., 2005. Biophysical Journal, 88(4): 2939–2953. Further reproduction of this panel would need permission from the copyright holder). (B) TIRF-based smFRET experiments on surface-immobilized molecules. (i) Illustration of a surface-immobilized sample labeled with donor and acceptor fluorophores. (ii) Scheme of a single-color objective-type TIRF excitation two-color wide-field detection microscope. A: Aperture, TL: Tube lens, L: Lens, M: Mirror, DM: Dichroic mirror, EF: Emission filter. (iii) Illustration of an image of single molecules, in which the donor and acceptor (FRET) signals are split onto two halves of the camera. Mapping between the two channels is typically done using fluorescent beads (Joo and Ha, 2012; Roy et al., 2008; Zhuang et al., 2000) or zero-mode waveguides (Salem et al., 2019). (iv) Single-molecule fluorescence trajectory of the donor and acceptor (FRET) dyes, illustrating an anti-correlation indicative of FRET dynamics.
 
 Compared to most other single-molecule approaches, both smFRET modalities offer relatively high throughput.
 
@@ -158,17 +158,17 @@ The many possibilities available in the choice of hardware underscore the import
 
 With the palette of FRET modalities increasing steadily, we recommend a rigorous comparative study of the different methods using well-characterized model samples. First and foremost, the study should determine the precision and limitations of each method and their complementarity. As one example, potential pitfalls in the determination of data correction factors (described in the section FRET efficiency) could be identified by a side-by-side comparison of fluorescence lifetime and intensity-based FRET methods.
 
-## Sample preparation
+### Sample preparation
 
-## Dyes
+#### Dyes
 
 For studying biomolecular conformations and their dynamics with smFRET, the biomolecules of interest must be labeled with organic dyes that are suitable for single-molecule fluorescence detection (intrinsically fluorescent aromatic amino acids are not stable or bright enough). These dyes usually include three modules: (i) a chemically reactive group that forms a covalent bond preferentially with a specific nucleic acid base or amino acid residue of choice, (ii) a sufficiently long linker of a few connecting bonds to ensure isotropic rotation of the fluorophore, and (iii) an (often bulky) π-conjugated fluorophore that typically has hydrophobic regions and charged or polar substitutions.
 
-To compete with background-noise, smFRET-compatible dyes should be very bright. They should hence possess a sufficiently large extinction coefficient (>50,000 M−1cm−1 at the wavelength of excitation) and high fluorescence quantum yield (ϕF ≳ 0.3), be very photostable (≳ 106 excitation cycles before photobleaching), exhibit low photoblinking, should not possess long-lived dark states to avoid optical saturation and have a large fundamental anisotropy, that is have approximately collinear absorption and emission transition dipole moments (typically, r0≳0.37). The fluorescence lifetime should be on the 1-5 ns scale. In the case of TCSPC experiments, a general rule of thumb is that the laser repetition period should be chosen at least four times as large as the fluorescence lifetime. For instance, for a dye with a fluorescence lifetime of 4 ns, a laser pulse repetition rate of ~64 MHz for one-color excitation or ~32 MHz for two-color nsALEX/PIE experiments should be used. In addition, using dyes with intrinsic mono-exponential fluorescence decays simplifies the analysis. Continuous efforts are ongoing to further improve smFRET dyes by:
+To compete with background-noise, smFRET-compatible dyes should be very bright. They should hence possess a sufficiently large extinction coefficient (>50,000 M−1cm−1 at the wavelength of excitation) and high fluorescence quantum yield ($ϕ_{F}$ ≳ 0.3), be very photostable (≳ 106 excitation cycles before photobleaching), exhibit low photoblinking, should not possess long-lived dark states to avoid optical saturation and have a large fundamental anisotropy, that is have approximately collinear absorption and emission transition dipole moments (typically, $r_{0}$≳0.37). The fluorescence lifetime should be on the 1-5 ns scale. In the case of TCSPC experiments, a general rule of thumb is that the laser repetition period should be chosen at least four times as large as the fluorescence lifetime. For instance, for a dye with a fluorescence lifetime of 4 ns, a laser pulse repetition rate of ~64 MHz for one-color excitation or ~32 MHz for two-color nsALEX/PIE experiments should be used. In addition, using dyes with intrinsic mono-exponential fluorescence decays simplifies the analysis. Continuous efforts are ongoing to further improve smFRET dyes by:
 
-Finally, a pair of FRET dyes should always be chosen such that its Förster distance, R0, (defined in section Inter-dye distances, Equation 6) is around the expected inter-probe distance, RDA, where the dependence of the FRET efficiency, E, is most sensitive to RDA. When quantifying conformational dynamics, the FRET dye pair should be chosen such that the expected change in FRET efficiency is as large as possible.
+Finally, a pair of FRET dyes should always be chosen such that its Förster distance, $R_{0}$, (defined in section Inter-dye distances, Equation 6) is around the expected inter-probe distance, $R_{DA}$, where the dependence of the FRET efficiency, $E$, is most sensitive to $R_{DA}$. When quantifying conformational dynamics, the FRET dye pair should be chosen such that the expected change in FRET efficiency is as large as possible.
 
-## Conjugation
+#### Conjugation
 
 To measure intra-molecular distances within biomolecules, smFRET experiments require the conjugation of two dye molecules to the same biomolecule or the same biomolecular complex. Site-specific conjugations in proteins utilize the introduction of point mutations, typically to cysteines, that will accommodate the specific conjugation chemistry, usually maleimide- or iodoacetamide-cysteine chemistry. In this case, two cysteines are often stochastically labeled, leading to a mixture of donor-acceptor and acceptor-donor labeled molecules. While interchanging the donor and acceptor positions has a negligible effect, from the geometric standpoint, on the FRET-averaged distance (Peulen et al., 2017), stochastic labeling might cause problems when the donor/acceptor dyes possess different spectroscopic properties at the different labeling positions.
 
@@ -178,35 +178,35 @@ Different approaches are applied for nucleic acids (e.g., reviewed in Hanspach e
 
 A general recommendation for labeling is to aim for high-purity sample preparations with optimized labeling protocols, as only this will result in substantially and specifically labeled samples with both donor and acceptor dyes. Single-molecule measurements have the ability to separate out the donor-acceptor-labeled molecules and thus purify the sample ex post facto, but a significant amount of double-labeled samples is advantageous. After labeling, we recommend using a rigorous screening procedure that compares the activities of labeled and unlabeled wild-type biomolecules to determine whether the mutations introduced to a biomolecule and/or the labeling with the dyes significantly influence the biomolecule's functionality (e.g., catalytic activity, binding affinity) and stability (e.g., against denaturants or thermally-induced transition curves) (Best et al., 2018; Deniz et al., 2000; Lerner et al., 2018b; Orevi et al., 2014; Riback et al., 2019; Sottini et al., 2020). To check for structural integrity, methods such as mass spectrometry, circular dichroism (CD), dynamic light scattering (DLS), and small-angle X-ray scattering (SAXS) can be used (Best et al., 2018; Borgia et al., 2016; Riback et al., 2019). We also recommend reporting the labeling and purification procedures as well as the labeling efficiency. In cases where no labeling alternative exists that does not modify the structure and/or rate of function, mechanistic insights into biomolecules or complexes can often still be obtained. Nevertheless, the results and conclusions concerning wild-type and unlabeled protein, respectively, should be interpreted cautiously. Finally, when samples need to be frozen/thawed, we recommend testing the long-term stability and functionality versus fresh protein preparations.
 
-## Immobilization
+#### Immobilization
 
 For long observation times, labeled molecules are typically immobilized. This is most frequently achieved via a biotin-streptavidin linkage. Immobilization must be carefully performed in order to systematically eliminate spurious contributions from molecules that are non-specifically bound (Lamichhane et al., 2010; Traeger and Schwartz, 2017). To address this potential issue, efforts have been made to optimize surface passivation procedures (Hua et al., 2014; Kuzmenkina et al., 2005; Park et al., 2020; Selvin and Ha, 2008). Alternatives that avoid the direct linking of biomolecules to surfaces are:
 
 We recommend reporting the immobilization conditions, the control experiments that demonstrate the specific nature of the surface immobilization strategy, and the percentage of functional or dynamic molecules (Bavishi and Hatzakis, 2014; Lamichhane et al., 2010; Roy et al., 2008) in detail. Finally, when possible, we recommend cross-validating the results of surface-immobilization based smFRET experiments by comparing them either to those obtained in ensemble or single-molecule FRET experiments on non-immobilized, freely-diffusing molecules (Pirchi et al., 2011), or to results using different immobilization strategies (Gregorio et al., 2017; Whitford et al., 2010).
 
-## Spectroscopic characterization
+#### Spectroscopic characterization
 
 Fluorescent dyes are characterized by particular spectroscopic properties, which may change when conjugated to a protein (Lerner et al., 2013; Peulen et al., 2017; Sindbert et al., 2011; Steffen et al., 2016) or even between different structural states of the labeled biomolecule (Kudryavtsev et al., 2012). The most important artifacts to look out for are:
 
-When the local and/or global environment influences the photophysical properties of either the donor or the acceptor dyes differently, different subpopulations might appear (Kalinin et al., 2010a; Vandenberk et al., 2018). Depending on the research question at hand, these subpopulations per se may provide additional information beyond FRET (e.g., PIFE [Ploetz et al., 2016], PET [Doose et al., 2009], or quenchable FRET [Cordes et al., 2010]). In cases where accurate distance measurements are needed, properly designed control experiments of fluorescence lifetimes and anisotropies of single-label versions for both labeling positions and dyes can be used to detect and eventually correct these spectroscopic alterations a posteriori. In addition, dye-artifacts can be identified from the information provided by ALEX or PIE experiments (Kapanidis et al., 2004; Kudryavtsev et al., 2012), MFD-based detection (Hellenkamp et al., 2017; Rothwell et al., 2003) or analysis of the width of FRET efficiency distributions (Kalinin et al., 2010a; Nir et al., 2006). Note that the influence of dye photoblinking must be taken into account: (1) when determining the correction factors necessary for precise FRET efficiency measurements (see section Determining absolute FRET efficiencies from fluorescence intensities) or (2) in the donor fluorescence quantum yield, when accurate distance estimations are required, which, in turn, depends on a correct Förster distance, R0 (defined in section Inter-dye distances, Equation 6).
+When the local and/or global environment influences the photophysical properties of either the donor or the acceptor dyes differently, different subpopulations might appear (Kalinin et al., 2010a; Vandenberk et al., 2018). Depending on the research question at hand, these subpopulations per se may provide additional information beyond FRET (e.g., PIFE [Ploetz et al., 2016], PET [Doose et al., 2009], or quenchable FRET [Cordes et al., 2010]). In cases where accurate distance measurements are needed, properly designed control experiments of fluorescence lifetimes and anisotropies of single-label versions for both labeling positions and dyes can be used to detect and eventually correct these spectroscopic alterations a posteriori. In addition, dye-artifacts can be identified from the information provided by ALEX or PIE experiments (Kapanidis et al., 2004; Kudryavtsev et al., 2012), MFD-based detection (Hellenkamp et al., 2017; Rothwell et al., 2003) or analysis of the width of FRET efficiency distributions (Kalinin et al., 2010a; Nir et al., 2006). Note that the influence of dye photoblinking must be taken into account: (1) when determining the correction factors necessary for precise FRET efficiency measurements (see section Determining absolute FRET efficiencies from fluorescence intensities) or (2) in the donor fluorescence quantum yield, when accurate distance estimations are required, which, in turn, depends on a correct Förster distance, $R_{0}$ (defined in section Inter-dye distances, Equation 6).
 
 When dye- and microenvironment- dependent influences exist, they can be characterized or taken into account by a careful choice of fluorophores and/or labeling locations or coarse-grained computer simulations (Peulen et al., 2017), or they can be ruled out completely by validating the observations with (an)other FRET pair(s) (Borgia et al., 2018; Borgia et al., 2016; de Boer et al., 2019b; Husada et al., 2018; Lerner et al., 2017; Vandenberk et al., 2018; Voelz et al., 2012) or switching fluorophore positions (Sanabria et al., 2020). How important a detailed spectroscopic analysis is, depends on the nature of the research question being addressed.
 
-## Photostabilization
+#### Photostabilization
 
 Often, chemical photostabilizers are added to reduce oxidative photodamage by lowering the time spent in triplet or radical-ion dark states (Ha and Tinnefeld, 2012; Widengren et al., 2007). The choice of the photostabilizing agent is specific to the fluorophore used and finding the correct conditions for both the donor and acceptor fluorophores can be challenging. Commonly used photostabilizers for smFRET include 6-hydroxy-2,5,7,8-tetramethylchroman-2-carboxylic acid (Trolox) (Cordes et al., 2009; Dave et al., 2009; Rasnik et al., 2006; Vandenberk et al., 2018), n-propylgallate (Widengren et al., 2007), β-mercaptoethanol (Campos et al., 2011; Ha and Tinnefeld, 2012), ascorbic acid (Aitken et al., 2008; Gidi et al., 2020; Vogelsang et al., 2008; Widengren et al., 2007), linear polyenes (Pfiffi et al., 2010) and cyclopolyenes (Dave et al., 2009; Targowski et al., 1987; Widengren et al., 2007), methylviologen (Vogelsang et al., 2008) and a range of other compounds (Glembockyte et al., 2015; Isselstein et al., 2020). For optimal performance, reducing and oxidizing agents can be combined (Dave et al., 2009; Vogelsang et al., 2008). Fluorophore performance and photon budgets can be enhanced by removing oxygen from the buffer through oxygen scavenging systems such as glucose oxidase (Kim et al., 2002) or the PCA/PCD system (Aitken et al., 2008), in which case an exogenous triplet quencher, such as those mentioned above, is required to prevent long-lived dark states. In any case, we recommend verifying that the use of these photostabilization reagents does not interfere with the biological system under study. In the case of lipid bilayers, an influence of several of the commonly used photostabilization agents on membrane properties was observed (Alejo et al., 2013).
 
-## Molecule identification and validation
+### Molecule identification and validation
 
 After data collection in either confocal or TIRF modalities, the single-molecule fluorescent signal in the resulting time traces or videos must be identified and validated before further detailed analysis can be performed.
 
-## Identification
+#### Identification
 
 In the confocal modality, the raw ‘burst’ data includes a sequence of photon detection or arrival times from at least two detectors. The first step is to identify fluorescence bursts arising from single molecules from the background, commonly referred to as the ‘burst search’ (Figure 2A–iii). Various approaches have been described for the robust and accurate detection of single-molecule events (Enderlein et al., 1997; Fries et al., 1998; Nir et al., 2006; Schaffer et al., 1999; Sisamakis et al., 2010). After the burst search step, the identified single-molecule events are filtered based on the burst properties (e.g., burst size, duration or width, brightness, burst separation times, average fluorescence lifetime or quantities calculated from these burst parameters). The burst search and burst selection criteria have an impact on the resulting smFRET histograms. Hence, we recommend that the applied burst property thresholds and algorithms should be reported in detail when publishing the results, for example, in the methods section of papers but potentially also in analysis code repositories. Often, burst search parameters are chosen arbitrarily based on rules-of-thumb, standard lab practices or personal experience. However, the optimal burst search and parameters vary based on the experimental setup, dye choice and biomolecule of interest. For example, the detection threshold and applied sliding (smoothing) windows should be adapted based on the brightness of the fluorophores, the magnitude of the non-fluorescence background and diffusion time. We recommend establishing procedures to determine the optimal burst search and filtering/selection parameters.
 
 In the TIRF modality, molecule identification and data extraction can be performed using various protocols (Börner et al., 2016; Holden et al., 2010; Juette et al., 2016; Preus et al., 2016). In brief, the molecules first need to be localized (often using spatial and temporal filtering to improve molecule identification) and then the fluorescence intensities of the donor and acceptor molecules extracted from the movie. The local background needs to be determined and then subtracted from the fluorescence intensities. Mapping is performed to identify the same molecule in the donor and acceptor detection channels. This procedure uses a reference measurement of fluorescent beads or zero-mode waveguides (Salem et al., 2019) or is done directly on samples where single molecules are spatially well separated. The outcome is a time series of donor and acceptor fluorescence intensities stored in a file that can be further visualized and processed using custom scripts. In a next step, filtering is generally performed to select molecules that exhibit only a single-step photobleaching event, that have an acceptor signal when the acceptor fluorophores are directly excited by a second laser, or that meet certain signal-to-noise ratio values. However, potential bias induced by such selection should be considered.
 
-## User bias
+#### User bias
 
 Despite the ability to manually determine burst search and selection criteria, molecule sorting algorithms in the confocal modality, such as those based on ALEX/PIE (Kapanidis et al., 2005; Kudryavtsev et al., 2012; Tomov et al., 2012), do not suffer from a substantial user bias. In the early days, many TIRF modality users have relied on visual inspection of individual single-molecule traces. Such user bias was considerably reduced by the use of hard selection criteria, such as intensity-based thresholds and single-step photobleaching, intensity-based automatic sorting algorithms (e.g., as implemented in the programs MASH-FRET [Hadzic et al., 2019], iSMS [Preus et al., 2015] or SPARTAN [Juette et al., 2016]), and, most recently, artificial intelligence-based molecular sorting (deepFRET [Thomsen et al., 2020] and AutoSiM [Li et al., 2020a]).
 
@@ -214,7 +214,7 @@ Single-molecule experiments are often advertised as being able to detect rare ev
 
 Ideally, a recommended protocol with implicit validation would be to start in the confocal modality to determine (i) the degree of labeling, (ii) the FRET properties of major biochemical species, and (iii) their populations and dynamic properties (see Figure 1). With this information at hand, experiments can be performed in the TIRF modality, where the percentage of FRET-active molecules and their FRET properties can be directly compared with the confocal data. Both datasets should be mutually consistent and, in this way, provide direct feedback with respect to potential artifacts (e.g., due to immobilization).
 
-## Conformational dynamics
+### Conformational dynamics
 
 Many users in the FRET community employ the detection and characterization of different subpopulations or measurements of conformational dynamics as a handle to study biomolecules or biomolecular systems. Conformational dynamics are typically defined as:
 
@@ -222,21 +222,21 @@ Transitions can occur under equilibrium conditions, can be induced by the additi
 
 SmFRET is unique in that it allows the detection and analysis of equilibrium and non-equilibrium conformational dynamics across at least 12 orders of magnitude in time, that is from the nanoseconds to, in principle, thousands of seconds (Figure 3). Notably, it is important to optimize the labeling positions to maximize the distinction between different conformational states based on their FRET efficiencies (Dimura et al., 2020).
 
-## Detecting dynamics
+#### Detecting dynamics
 
 Biomolecules are dynamic systems that show conformational flexibility and dynamics on fast time scales (Henzler-Wildman and Kern, 2007). Oftentimes, conformational interconversions occur on a timescale faster than the sampling time of the detection system, for example < 10 ms for TIRF modality or < 0.1 ms for confocal modality, resulting in the observed single-molecule time series or FRET efficiency histogram exhibiting only time-averaged FRET values, weighted by the fractional population of each conformational state. Several groups have developed methods for detecting and analyzing such ‘dynamic averaging’ from confocal-modality data. In general, these methods allow retrieval of dynamics on the milliseconds and sub-millisecond timescales by analyzing the average fluorescence lifetimes and/or photon counting statistics of single-molecule bursts. The precise knowledge of the experimental shot noise separates smFRET from other techniques in structural biology and enables a quantitative analysis of fluctuations caused by biomolecular dynamics. A number of methods have been developed for detecting and quantifying smFRET dynamics, which we discuss in more detail below on slower (section Slow dynamics) and faster time scales (section Faster dynamics). The first step in analyzing smFRET dynamics is the verification that dynamics are present. Popular methods for the visual detection of dynamics include:
 
-## Slow dynamics
+#### Slow dynamics
 
 For dynamics on the order of 10 ms or slower, transitions between conformational states can be directly observed using TIRF-modality approaches, as have been demonstrated in numerous studies (Blanchard et al., 2004; Deniz, 2016; Juette et al., 2014; Robb et al., 2019; Sasmal et al., 2016; Zhuang et al., 2000). Nowadays, hidden Markov models (HMM) (Figure 4E) are routinely used for a quantitative analysis of smFRET time traces to determine the number of states, the connectivity between them and the individual transition rates (Andrec et al., 2003; Keller et al., 2014; McKinney et al., 2006; Munro et al., 2007; Steffen et al., 2020; Stella et al., 2018; Zarrabi et al., 2018). Below, we list extensions and other approaches for studying slow dynamics.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60416/elife-60416-fig4-v3.jpg)
 
-**Figure 4.:** (A) Dynamics in a three-state system are detected using the two-dimensional distribution of the FRET efficiency and donor fluorescence lifetime (Reproduced from Gopich and Szabo, 2012. Further reproduction of this panel would need permission from the copyright holder.) (B) The two-state dynamics of a DNA hairpin are revealed from the standard deviation of the proximity ratio  that is higher than expected for photon counting statistics alone in the burst variance analysis (BVA). (2011 The Biophysical Society. Published by Elsevier Inc All rights reserved. The figure was originally published as Figure 4C in E∗Torella et al., 2011. Biophysical Journal, 100(6): 1568–1577. Further reproduction of this panel would need permission from the copyright holder.) (C) In fluorescence correlation spectroscopy (FCS), the dynamics show up as a positive correlation in the autocorrelation functions  and GDD and an anti-correlation in the cross-correlation function GAA (2010 American Chemical Society Ltd. All rights reserved. The figure was originally published as GDAFigure 1B and C in (Gurunathan and Levitus, 2010, reproduced with permission). Copyright 2010 ACS Publications. Further reproduction of this panel would need permission from the copyright holder.) (D) Photon-by-photon maximum likelihood estimation (MLE) infers the kinetic parameters directly from the photon arrival times (2011 American Chemical Society Ltd. All rights reserved. The figure was originally published as the Abstract Figure in Chung et al., 2011, reproduced with permission. Copyright 2011 ACS Publications. Further reproduction of this panel would need permission from the copyright holder.) (E–F) A hidden Markov model (HMM) is applied to the time traces of the FRET efficiency to estimate the states and interconversion rates (E). From the transition density plot (F), the connectivity of the FRET states is revealed. Displayed data in E and F are simulated. (Panels E and F: 2006 The Biophysical Society. Published by Elsevier Inc All rights reserved. The figures were originally published as Figure 4A and D in McKinney et al., 2006. Biophysical Journal, 91(5): 1941–1951. Further reproduction of this panel would need permission from the copyright holder.)
+**Figure 4.:** (A) Dynamics in a three-state system are detected using the two-dimensional distribution of the FRET efficiency and donor fluorescence lifetime (Reproduced from Gopich and Szabo, 2012. Further reproduction of this panel would need permission from the copyright holder.) (B) The two-state dynamics of a DNA hairpin are revealed from the standard deviation of the proximity ratio $E^{∗}$ that is higher than expected for photon counting statistics alone in the burst variance analysis (BVA). (2011 The Biophysical Society. Published by Elsevier Inc All rights reserved. The figure was originally published as Figure 4C in Torella et al., 2011. Biophysical Journal, 100(6): 1568–1577. Further reproduction of this panel would need permission from the copyright holder.) (C) In fluorescence correlation spectroscopy (FCS), the dynamics show up as a positive correlation in the autocorrelation functions $G_{DD}$ and $G_{AA}$ and an anti-correlation in the cross-correlation function $G_{DA}$ (2010 American Chemical Society Ltd. All rights reserved. The figure was originally published as Figure 1B and C in (Gurunathan and Levitus, 2010, reproduced with permission). Copyright 2010 ACS Publications. Further reproduction of this panel would need permission from the copyright holder.) (D) Photon-by-photon maximum likelihood estimation (MLE) infers the kinetic parameters directly from the photon arrival times (2011 American Chemical Society Ltd. All rights reserved. The figure was originally published as the Abstract Figure in Chung et al., 2011, reproduced with permission. Copyright 2011 ACS Publications. Further reproduction of this panel would need permission from the copyright holder.) (E–F) A hidden Markov model (HMM) is applied to the time traces of the FRET efficiency to estimate the states and interconversion rates (E). From the transition density plot (F), the connectivity of the FRET states is revealed. Displayed data in E and F are simulated. (Panels E and F: 2006 The Biophysical Society. Published by Elsevier Inc All rights reserved. The figures were originally published as Figure 4A and D in McKinney et al., 2006. Biophysical Journal, 91(5): 1941–1951. Further reproduction of this panel would need permission from the copyright holder.)
 
 There are still many challenges with respect to the accuracy of the approaches that need to be discussed and improvements made to provide a reliable determination of kinetics.
 
-## Faster dynamics
+#### Faster dynamics
 
 Several methods exist that assist in the quantification of the kinetic parameters governing fast conformational dynamics, as also exemplified in Figure 3A,B.
 
@@ -246,95 +246,127 @@ In the analysis of fast dynamics and subpopulations, it is generally important t
 
 The detection and analysis of fast dynamics is one of the issues addressed in the protein FRET challenge (Gebhardt et al., in preparation). Finally, at the moment of this writing, different analysis algorithms are typically being applied to the data independently from each other (e.g., MFD, BVA, 2CDE, PDA, filtered-FCS in burst analysis) while, in fact, they could corroborate each other or even help in deciding on models. The field could focus on creating global multi-algorithm workflows or tools to test, how a model obtained with one algorithm would influence the results of other analyses.
 
-## Detection and characterization of intra-state dynamics
+#### Detection and characterization of intra-state dynamics
 
 Rapid structural dynamics within a given conformational state, that is within a single energy minimum, can also be studied with smFRET by modeling them as a continuous distribution rather than a state-dependent distribution. In the given example, rigid and flexible conformational states can be distinguished in the measurement. Information regarding the flexibility of a given conformation can be retrieved by:
 
 It is, however, important to mention that the distinction between dynamics within a conformational state and dynamics of transitions between different conformational states is still under debate, which highly depends on the definition of an activation barrier for different modes of structural dynamics and on the different smFRET modalities used.
 
-## FRET efficiency
+### FRET efficiency
 
-The efficiency of the energy transfer process, that is the FRET efficiency, E, is defined as the fraction of donor excitations that result in energy transfer. Assuming a single distance between the centers of the donor and acceptor molecules, RDA, the FRET efficiency is given by:(1)E=kFRETkFRET+kD=11+(RDAR0)6,where kFRET is the rate of energy transfer, kD is the rate of donor de-excitation in the absence of an acceptor molecule, and R0 is the Förster distance (discussed in section Dye models). Hence, FRET is indeed a tool that can measure distances on the molecular scale (Förster, 1948; Stryer and Haugland, 1967). For many smFRET studies, a qualitative indicator of the inter-probe distance is sufficient, for example, to merely be able to distinguish between conformational subpopulations or their transitions. Therefore, for all FRET experiments that do not require the exact inter-dye distance, the absolute value of E does not need to be known. However, special care should be taken to ensure that the observed changes of the donor and acceptor intensities report on a structural change of the molecule and are not a result of dye photophysics or dye-surface interactions. In the cases where accurate distance measurements are desired, smFRET can be used for that purpose.
+The efficiency of the energy transfer process, that is the FRET efficiency, $E$, is defined as the fraction of donor excitations that result in energy transfer. Assuming a single distance between the centers of the donor and acceptor molecules, $R_{DA}$, the FRET efficiency is given by:
 
-## Determining absolute FRET efficiencies from fluorescence intensities
+$$
+E=\frac{k_{FRET}}{k_{FRET}+k_{D}}=\frac{1}{1+(\frac{R_{DA}}{R_{0}})^{6}},
+$$
 
-Typically, in smFRET, the FRET efficiency is determined from the fluorescence intensities:(2)E=FAem|DexFDem|Dex+FAem|Dex,where FAem|Dex is the sensitized fluorescence signal from the acceptor after donor excitation and FDem|Dex is the signal emanating from the donor. Here, we use a notation specific to experiments using alternating laser excitation, but equivalent expressions can be derived for single-color excitation. In reality, the absolute value for E requires knowledge of some correction factors (Hellenkamp et al., 2018a; Lee et al., 2005):(3)E=IAem|Dex  -αIDem|Dex -δIAem|AexγIDem|Dex +IAem|Dex  -αIDem|Dex -δIAem|Aex ,where IAem|Dex is the background-corrected signal in the acceptor emission channel after donor excitation, IDem|Dex is the background-corrected signal in the donor emission channel after donor excitation and IAem|Aex is the background-corrected signal in the acceptor emission channel after acceptor excitation. The last term can be estimated using the acceptor-only species and fluorescence signal after acceptor excitation when the ALEX/PIE method is used (Hellenkamp et al., 2018a; Kudryavtsev et al., 2012; Lee et al., 2005) or by comparing fluorescence intensities before and after donor photobleaching prior to acceptor photobleaching in trajectories from immobilized molecules (Yoo et al., 2018).
+where $k_{FRET}$ is the rate of energy transfer, $k_{D}$ is the rate of donor de-excitation in the absence of an acceptor molecule, and $R_{0}$ is the Förster distance (discussed in section Dye models). Hence, FRET is indeed a tool that can measure distances on the molecular scale (Förster, 1948; Stryer and Haugland, 1967). For many smFRET studies, a qualitative indicator of the inter-probe distance is sufficient, for example, to merely be able to distinguish between conformational subpopulations or their transitions. Therefore, for all FRET experiments that do not require the exact inter-dye distance, the absolute value of $E$ does not need to be known. However, special care should be taken to ensure that the observed changes of the donor and acceptor intensities report on a structural change of the molecule and are not a result of dye photophysics or dye-surface interactions. In the cases where accurate distance measurements are desired, smFRET can be used for that purpose.
+
+#### Determining absolute FRET efficiencies from fluorescence intensities
+
+Typically, in smFRET, the FRET efficiency is determined from the fluorescence intensities:
+
+$$
+E=\frac{F_{Aem|Dex}}{F_{Dem|Dex}+F_{Aem|Dex}},
+$$
+
+where $F_{Aem|Dex}$ is the sensitized fluorescence signal from the acceptor after donor excitation and $F_{Dem|Dex}$ is the signal emanating from the donor. Here, we use a notation specific to experiments using alternating laser excitation, but equivalent expressions can be derived for single-color excitation. In reality, the absolute value for $E$ requires knowledge of some correction factors (Hellenkamp et al., 2018a; Lee et al., 2005):
+
+$$
+E=\frac{I_{Aem|Dex}-\alphaI_{Dem|Dex}-\deltaI_{Aem|Aex}}{\gammaI_{Dem|Dex}+I_{Aem|Dex}-\alphaI_{Dem|Dex}-\deltaI_{Aem|Aex}},
+$$
+
+where $I_{Aem|Dex}$ is the background-corrected signal in the acceptor emission channel after donor excitation, $I_{Dem|Dex}$ is the background-corrected signal in the donor emission channel after donor excitation and $I_{Aem|Aex}$ is the background-corrected signal in the acceptor emission channel after acceptor excitation. The last term can be estimated using the acceptor-only species and fluorescence signal after acceptor excitation when the ALEX/PIE method is used (Hellenkamp et al., 2018a; Kudryavtsev et al., 2012; Lee et al., 2005) or by comparing fluorescence intensities before and after donor photobleaching prior to acceptor photobleaching in trajectories from immobilized molecules (Yoo et al., 2018).
 
 The required correction factors are:
 
 The optimal procedures for determining the correction parameters is still a matter of active debate within the community. In the following, we focus on the γ factor, which we identify as the major contribution to uncertainty in smFRET experiments.
 
-## Determining the γ factor in confocal mode
+#### Determining the γ factor in confocal mode
 
-Whenever a broad E distribution is reported in the confocal mode, the γ factor can be extracted using ALEX/PIE measurements. This method exploits the fact that the stoichiometry parameter, S (Kapanidis et al., 2004) (i.e., the ratio between the number of photons emitted after donor excitation and the number of photons emitted after donor and acceptor excitations), is independent of E when properly corrected for γ. It is thus essential that the sample contains two or more species with different distances and thus FRET efficiencies, E, yet identical values of γ for this method to work (Lee et al., 2005). Thus, accurate measurements of ϕF for both dyes have to be performed for each species. Alternatively, fluorescence lifetime measurements and the correlated analysis of intensity and lifetime data is often used to determine individual γ factors for each E sub-population, since lifetime-based FRET, in principle, provides the absolute E of a sub-population of single-molecule bursts independently from its intensity-based counterpart (Rothwell et al., 2003; Sisamakis et al., 2010; Vandenberk et al., 2018). However, when one or more species are dynamically averaged, a proper determination of the γ factor becomes more challenging and different assumptions need to be made.
+Whenever a broad $E$ distribution is reported in the confocal mode, the γ factor can be extracted using ALEX/PIE measurements. This method exploits the fact that the stoichiometry parameter, S (Kapanidis et al., 2004) (i.e., the ratio between the number of photons emitted after donor excitation and the number of photons emitted after donor and acceptor excitations), is independent of $E$ when properly corrected for γ. It is thus essential that the sample contains two or more species with different distances and thus FRET efficiencies, $E$, yet identical values of γ for this method to work (Lee et al., 2005). Thus, accurate measurements of $ϕ_{F}$ for both dyes have to be performed for each species. Alternatively, fluorescence lifetime measurements and the correlated analysis of intensity and lifetime data is often used to determine individual γ factors for each $E$ sub-population, since lifetime-based FRET, in principle, provides the absolute $E$ of a sub-population of single-molecule bursts independently from its intensity-based counterpart (Rothwell et al., 2003; Sisamakis et al., 2010; Vandenberk et al., 2018). However, when one or more species are dynamically averaged, a proper determination of the γ factor becomes more challenging and different assumptions need to be made.
 
 Currently, the uncertainty in the determination of γ is one of the largest contributions to discrepancies of smFRET histograms measured from different laboratories (Gebhardt et al., in preparation). Hence, it would be beneficial to discuss optimal approaches to determine a robust confocal-mode γ value.
 
-## Determining the γ factor in TIRF mode
+#### Determining the γ factor in TIRF mode
 
 When ALEX data are collected on immobilized samples, the γ factor can also be estimated for individual molecules, provided that the acceptor photobleaches before the donor (Ha et al., 1999; Hildebrandt et al., 2015; McCann et al., 2010). Here, the decrease in the acceptor signal and the increase in donor signal upon acceptor photobleaching can be directly compared. This is also true for molecules undergoing slow dynamics between different conformations as the changes in intensity reflect the changes in detection efficiency. For this approach to be accurate, however, the acceptor must not enter a transient (e.g., redox or triplet) state that still absorbs energy from the donor (Hofkens et al., 2003; Nettels et al., 2015). The individual γ factors are usually broadly distributed, indicating a potential variability in its value. Nevertheless, an average γ factor is often applied to molecules where the donor photobleaches before the acceptor.
 
-## Determining absolute FRET efficiencies from fluorescence lifetimes
+#### Determining absolute FRET efficiencies from fluorescence lifetimes
 
-In addition to the traditional intensity-based FRET efficiency (E) can also be determined from the fluorescence lifetime (τD(A)) of the donor in the presence and absence of the acceptor, denoted by τD(A) and τD(0), respectively. Assuming a single distance between donor and acceptor fluorophores (i.e., no distance fluctuations), the FRET efficiency is given by:(4)E=1−τD(A)τD(0)
+In addition to the traditional intensity-based FRET efficiency ($E$) can also be determined from the fluorescence lifetime ($\tau_{D(A)}$) of the donor in the presence and absence of the acceptor, denoted by $\tau_{D(A)}$ and $\tau_{D(0)}$, respectively. Assuming a single distance between donor and acceptor fluorophores (i.e., no distance fluctuations), the FRET efficiency is given by:
 
-The advantage of this approach is that correction factors are not needed, as most of the above-mentioned corrections influence the relative number of photons detected in the donor and acceptor channels, but not the donor fluorescence decay. The lifetime approach can also be used in ensemble/imaging measurements under conditions of incomplete labeling. Combined intensity- and lifetime-based FRET efficiencies can additionally be used for checking the self-consistency of the data and for detecting dynamics (e.g., via E-τ plots) (Gopich and Szabo, 2012; Kalinin et al., 2010b; Rothwell et al., 2003; Schuler et al., 2016).
+$$
+E=1−\frac{\tau_{D(A)}}{\tau_{D(0)}}
+$$
 
-## Other methods for determining FRET efficiencies
+The advantage of this approach is that correction factors are not needed, as most of the above-mentioned corrections influence the relative number of photons detected in the donor and acceptor channels, but not the donor fluorescence decay. The lifetime approach can also be used in ensemble/imaging measurements under conditions of incomplete labeling. Combined intensity- and lifetime-based FRET efficiencies can additionally be used for checking the self-consistency of the data and for detecting dynamics (e.g., via $E$-$\tau$ plots) (Gopich and Szabo, 2012; Kalinin et al., 2010b; Rothwell et al., 2003; Schuler et al., 2016).
+
+#### Other methods for determining FRET efficiencies
 
 There are additional procedures for determining the FRET efficiency, most of which are compatible with single-molecule fluorescence techniques. The FRET efficiency can also be determined:
 
-## Inter-dye distances
+### Inter-dye distances
 
-When smFRET experiments are used for structural studies or accurate distance determination is desired, many steps need to be taken to convert the raw data (photons detected and registered by the detectors) into absolute inter-dye distances. In essence, it requires exact knowledge of the Förster distance, R0 (also referred to as the Förster radius) and therefore of all parameters required for determining it, as well as knowledge with respect to the flexibility of the attached fluorophores (approximated using a dye-model). In this section, we review the various issues involved.
+When smFRET experiments are used for structural studies or accurate distance determination is desired, many steps need to be taken to convert the raw data (photons detected and registered by the detectors) into absolute inter-dye distances. In essence, it requires exact knowledge of the Förster distance, $R_{0}$ (also referred to as the Förster radius) and therefore of all parameters required for determining it, as well as knowledge with respect to the flexibility of the attached fluorophores (approximated using a dye-model). In this section, we review the various issues involved.
 
-## Förster distance R0
+#### Förster distance R0
 
-In FRET, the excitation energy of the donor fluorophore is transferred to an acceptor fluorophore via weak dipolar coupling. Considering a single donor-acceptor distance, RDA, the efficiency, E, of this non-radiative transfer process scales with the sixth power of RDA normalized by the Förster distance, R0 (Equation 1). In smFRET studies, dyes are usually coupled to the biomolecules via long (ranging typically between 10 and 15 atoms) mostly flexible linkers, which result in an equilibrium distribution of RDA values, p(RDA), caused by the flexibility of the dye linkers. In this case, one may observe a mean FRET efficiency ⟨E⟩ related to the FRET efficiency, averaged over all distances and their probabilities:(5)⟨E⟩=∫0∞p(RDA)1+(RDAR0)6dRDA.
+In FRET, the excitation energy of the donor fluorophore is transferred to an acceptor fluorophore via weak dipolar coupling. Considering a single donor-acceptor distance, $R_{DA}$, the efficiency, $E$, of this non-radiative transfer process scales with the sixth power of $R_{DA}$ normalized by the Förster distance, $R_{0}$ (Equation 1). In smFRET studies, dyes are usually coupled to the biomolecules via long (ranging typically between 10 and 15 atoms) mostly flexible linkers, which result in an equilibrium distribution of $R_{DA}$ values, $p(R_{DA})$, caused by the flexibility of the dye linkers. In this case, one may observe a mean FRET efficiency ⟨$E$⟩ related to the FRET efficiency, averaged over all distances and their probabilities:
 
-It is noteworthy to mention that Equation 5 holds under the assumption that the inter-dye distance remains unchanged during the excited-state lifetime of the donor fluorophore. From the mean FRET efficiency ⟨E⟩, one obtains the FRET-averaged apparent donor-acceptor distance, ⟨RDA⟩E, which differs from the distance between the mean dye positions (Kalinin et al., 2012) and is dependent on the flexibility and dynamics of the dye.
+$$
+⟨E⟩=\int0∞\frac{p(R_{DA})}{1+(\frac{R_{DA}}{R_{0}})^{6}}dR_{DA}.
+$$
 
-As mentioned before, R0 (Equation 1) is the distance at which half of the donor de-excitation events occur via energy transfer to the acceptor fluorophore. R0 (in Å) is given by:(6)R0=0.2108(κ2ΦF,D(0)nim4∫F−D(λ)εA(λ)λ4dλ)16,meaning that it depends on the donor fluorescence quantum yield in the absence of an acceptor, ϕF,D(0), the overlap between the area-normalized donor emission spectrum, F-D(λ), and the acceptor excitation spectrum with extinction coefficient, εA(λ) (in M−1cm−1), at the wavelength λ (in nm), the relative orientation of the dye dipoles captured by the orientation factor, κ2, and the refractive index of the medium, nim, between and around the dyes. It should be noted that, due to the λ4 dependence of the overlap integral, small shifts in the spectra can have large effects on the R0. The following sections describe the factors that influence R0 and the FRET efficiency in more detail.
+It is noteworthy to mention that Equation 5 holds under the assumption that the inter-dye distance remains unchanged during the excited-state lifetime of the donor fluorophore. From the mean FRET efficiency ⟨$E$⟩, one obtains the FRET-averaged apparent donor-acceptor distance, $⟨R_{DA}⟩_{E}$, which differs from the distance between the mean dye positions (Kalinin et al., 2012) and is dependent on the flexibility and dynamics of the dye.
 
-## Extinction coefficient ε
+As mentioned before, $R_{0}$ (Equation 1) is the distance at which half of the donor de-excitation events occur via energy transfer to the acceptor fluorophore. $R_{0}$ (in Å) is given by:
 
-The extinction coefficient of the acceptor dye affects R0 and the expected excitation rate in ALEX/PIE experiments. In the absence of an easy or affordable way to measure this parameter (it requires large amounts of dye for gravimetric analysis or FCS with controlled dilution [Fries et al., 1998]), the experimenter typically relies on the value given by the manufacturer, a value that can at times be unreliable. Alternatively, the extinction coefficient of the dyes may be theoretically assessed via the Strickler and Berg, 1962 equation, when ϕF,D(0) and the fluorescence lifetime are known. Fortunately, ε is not expected to vary much depending on the environment of the fluorophores, since both the ϕF,D(0) and the fluorescence lifetime, in most cases, vary accordingly. Hence, one can conclude that the local environment does not heavily influence the excitation probability (according to the Strickler-Berg equation mentioned above).
+$$
+R_{0}=0.2108(\frac{κ^{2}Φ_{F,D(0)}}{n_{im}^{4}}\intF−_{D}(\lambda)\epsilon_{A}(\lambda)\lambda^{4}d\lambda)^{\frac{1}{6}},
+$$
 
-## Fluorescence quantum yield ϕF
+meaning that it depends on the donor fluorescence quantum yield in the absence of an acceptor, $ϕ_{F,D(0)}$, the overlap between the area-normalized donor emission spectrum, $F-_{D}(\lambda)$, and the acceptor excitation spectrum with extinction coefficient, $\epsilon_{A}(\lambda)$ (in M−1cm−1), at the wavelength $\lambda$ (in nm), the relative orientation of the dye dipoles captured by the orientation factor, κ2, and the refractive index of the medium, $n_{im}$, between and around the dyes. It should be noted that, due to the $\lambda^{4}$ dependence of the overlap integral, small shifts in the spectra can have large effects on the $R_{0}$. The following sections describe the factors that influence $R_{0}$ and the FRET efficiency in more detail.
 
-ϕF oftentimes changes upon labeling and can be sensitive to the local environment at the labeling position, to the conformational state of the molecule and to the binding of ligands, substrates or complex partners. Even dyes that are considered relatively insensitive to their local environment have been shown to exhibit a large change in ϕF upon conjugation to nucleic acids or proteins. As an extreme example, the quantum yield of Cy3B ranges from 0.19 to 0.97 at different labeling positions on dsDNA, leading to considerable variation in the value of R0 for the pair Cy3B-ATTO 647N between 54.8 Å and 65.9 Å (Lerner et al., 2018b; Craggs et al., 2019). For dyes of the cyanine family, such as Cy3 and Cy5, or its variants Alexa Fluor 555 and Alexa Fluor 647 (Gebhardt et al., in preparation), ϕF is dependent on the excited-state isomerization, which is influenced by viscosity, steric restriction and (stacking) interactions (Hwang and Myong, 2014; Lerner et al., 2016; Levitus and Ranjit, 2011; Sanborn et al., 2007; White et al., 2006; Widengren et al., 2001). In summary, independent determination of ϕF for different labeling positions is strongly recommended. Notably, nsALEX/PIE and MFD experiments can probe the fluorescence lifetime, and thus directly identify changes in ϕF. Development of standard procedures for measuring or estimating ϕF, for example using an integrating sphere (Gaigalas and Wang, 2008; Pati et al., 2020) or a nanocavity (Chizhik et al., 2013; Chizhik et al., 2011), would benefit the field and should be discussed.
+#### Extinction coefficient ε
 
-## Refractive index nim
+The extinction coefficient of the acceptor dye affects $R_{0}$ and the expected excitation rate in ALEX/PIE experiments. In the absence of an easy or affordable way to measure this parameter (it requires large amounts of dye for gravimetric analysis or FCS with controlled dilution [Fries et al., 1998]), the experimenter typically relies on the value given by the manufacturer, a value that can at times be unreliable. Alternatively, the extinction coefficient of the dyes may be theoretically assessed via the Strickler and Berg, 1962 equation, when $ϕ_{F,D(0)}$ and the fluorescence lifetime are known. Fortunately, ε is not expected to vary much depending on the environment of the fluorophores, since both the $ϕ_{F,D(0)}$ and the fluorescence lifetime, in most cases, vary accordingly. Hence, one can conclude that the local environment does not heavily influence the excitation probability (according to the Strickler-Berg equation mentioned above).
 
-The actual index of refraction to be used for calculation of R0 lies somewhere between the index of refraction of an aqueous buffer (1.33) and that for proteins and DNA (~1.5) but the exact value is not known. Robert Clegg recommended using an intermediate value of 1.4, which reduces the maximal error in R0 to ~ 4% (Clegg, 1992). However, different values may be more appropriate depending on the geometry and environment of the fluorophores. To date, the refractive index has received very little attention in the field (Knox and van Amerongen, 2002).
+#### Fluorescence quantum yield ϕF
 
-## Dye transition dipole orientation factor κ2
+$ϕ_{F}$ oftentimes changes upon labeling and can be sensitive to the local environment at the labeling position, to the conformational state of the molecule and to the binding of ligands, substrates or complex partners. Even dyes that are considered relatively insensitive to their local environment have been shown to exhibit a large change in $ϕ_{F}$ upon conjugation to nucleic acids or proteins. As an extreme example, the quantum yield of Cy3B ranges from 0.19 to 0.97 at different labeling positions on dsDNA, leading to considerable variation in the value of $R_{0}$ for the pair Cy3B-ATTO 647N between 54.8 Å and 65.9 Å (Lerner et al., 2018b; Craggs et al., 2019). For dyes of the cyanine family, such as Cy3 and Cy5, or its variants Alexa Fluor 555 and Alexa Fluor 647 (Gebhardt et al., in preparation), $ϕ_{F}$ is dependent on the excited-state isomerization, which is influenced by viscosity, steric restriction and (stacking) interactions (Hwang and Myong, 2014; Lerner et al., 2016; Levitus and Ranjit, 2011; Sanborn et al., 2007; White et al., 2006; Widengren et al., 2001). In summary, independent determination of $ϕ_{F}$ for different labeling positions is strongly recommended. Notably, nsALEX/PIE and MFD experiments can probe the fluorescence lifetime, and thus directly identify changes in $ϕ_{F}$. Development of standard procedures for measuring or estimating $ϕ_{F}$, for example using an integrating sphere (Gaigalas and Wang, 2008; Pati et al., 2020) or a nanocavity (Chizhik et al., 2013; Chizhik et al., 2011), would benefit the field and should be discussed.
 
-This parameter describes the relative orientation of the transition dipole moments of the dyes and strongly depends on dye mobility. Since the dyes’ orientations can change randomly on the time scale of typical FRET events, the mean value of <κ2> = 2/3 is typically taken. This well-known dynamic averaging approximation assumes that the rotational diffusion timescale of a FRET pair is much shorter than the fluorescence lifetime of the donor. However, it may well be that one of the dyes is not freely rotating on this timescale (e.g., it may interact with the microenvironment). An extreme example is a FRET system in which non-canonical fluorescent nucleotides were incorporated into dsDNA. The rigid structure and natural helical twist of the DNA caused the relationship between E and RDA to follow an interesting trend (Ranjit et al., 2009) with E being relatively low around RDA∼R0, because of κ2 ~ 0 (Wranne et al., 2017). In another smFRET experiment, a DNA molecule was end-labeled with Cy dyes without sulfonic acids groups (Cy3 and Cy5), which have a tendency to stack onto bases at the DNA termini (Iqbal et al., 2008; Ouellet et al., 2011), and the influence of orientational effects on the FRET efficiency was measured. Although an influence of the orientation could be detected, the data showed that orientational effects average-out quite well in most realistic cases (Iqbal et al., 2008). A method to estimate the lower and upper bounds for <κ2> from the donor and acceptor time-resolved anisotropies was proposed in the 1970s (Dale et al., 1979; van der Meer, 2002). In smFRET measurements using the polarization-resolved MFD modality, information on the donor and acceptor fluorescence intensities, lifetimes, and anisotropies (Schaffer et al., 1999) are collected simultaneously and fluorescence anisotropy decays of different single-molecule sub-populations can be used to assess the <κ2> uncertainty per conformational state (Ivanov et al., 2009; Kudryavtsev et al., 2012; Sindbert et al., 2011). It is noteworthy to mention that the majority of fluorophores used as donor and acceptor dyes in smFRET have a mono-exponential fluorescence decay and, hence, have one major emission dipole. In this case, the estimation of <κ2> depends on the orientation of these single transition dipole moments. It has been proposed that the assumption of <κ2> = 2/3 would carry much less uncertainty when the fluorescence signal is emanating from more than one emission dipole, yielding multi-exponential decays (Haas et al., 1978). This is an intriguing idea that could provide a realistic estimation for κ2 and thus help simplify the transformation of FRET efficiencies into inter-dye distances. For a review on the dependence of FRET on κ2, the reader is referred to (van der Meer, 2002). Finally, we note that there are several routines recommended by experienced members of the community to determine R0 accurately. Which approach is the most optimal is still under discussion.
+#### Refractive index nim
 
-## Dye models
+The actual index of refraction to be used for calculation of $R_{0}$ lies somewhere between the index of refraction of an aqueous buffer (1.33) and that for proteins and DNA (~1.5) but the exact value is not known. Robert Clegg recommended using an intermediate value of 1.4, which reduces the maximal error in $R_{0}$ to ~ 4% (Clegg, 1992). However, different values may be more appropriate depending on the geometry and environment of the fluorophores. To date, the refractive index has received very little attention in the field (Knox and van Amerongen, 2002).
 
-The Förster equation (Equation 1) allows the extraction of a distance directly from a FRET efficiency measurement. This distance directly corresponds only to the separation of the FRET fluorophores when the positions of the donor and the acceptor molecules are constant, the dye’s orientations are rapidly averaged and their microenvironment is known. Strictly speaking, this is never the case, even for a stable conformation of the labeled macromolecule, since dye molecules are typically attached to the macromolecules via flexible linkers, and the labeled macromolecule usually restricts the volume accessible to the fluorophore (Best et al., 2007; Hellenkamp et al., 2018a; Ingargiola et al., 2018b). In addition, diffusion of the dyes while the donor is in the excited state can also influence the measured FRET efficiency (Ingargiola et al., 2018b). When the FRET rate is not too high (leading to a FRET efficiency of E<0.8) and the dyes do not interact with the protein surface, deviations due to dye dynamics are usually negligible (Hellenkamp et al., 2018a; Hellenkamp et al., 2017; Kalinin et al., 2012).
+#### Dye transition dipole orientation factor κ2
 
-Various groups have developed detailed dye models that account for the translational and rotational flexibility of the dyes and thus allow a more accurate description of the actual distance FRET measures (Figure 5D) (Beckers et al., 2015; Craggs and Kapanidis, 2012; Dimura et al., 2016; Haas et al., 1978; Kalinin et al., 2012; Muschielok et al., 2008; Schuler et al., 2020; Sindbert et al., 2011) and to test them experimentally (Hellenkamp et al., 2018a; Nagy et al., 2018; Peulen et al., 2017; Wozniak et al., 2008). For any given FRET efficiency, different dye models will lead to slightly different extracted RDA distributions (deviations ≤ 5%). Choosing an appropriate model is therefore important for the accurate determination of RDA.
+This parameter describes the relative orientation of the transition dipole moments of the dyes and strongly depends on dye mobility. Since the dyes’ orientations can change randomly on the time scale of typical FRET events, the mean value of <κ2> = 2/3 is typically taken. This well-known dynamic averaging approximation assumes that the rotational diffusion timescale of a FRET pair is much shorter than the fluorescence lifetime of the donor. However, it may well be that one of the dyes is not freely rotating on this timescale (e.g., it may interact with the microenvironment). An extreme example is a FRET system in which non-canonical fluorescent nucleotides were incorporated into dsDNA. The rigid structure and natural helical twist of the DNA caused the relationship between $E$ and $R_{DA}$ to follow an interesting trend (Ranjit et al., 2009) with $E$ being relatively low around $R_{DA}∼R_{0}$, because of κ2 ~ 0 (Wranne et al., 2017). In another smFRET experiment, a DNA molecule was end-labeled with Cy dyes without sulfonic acids groups (Cy3 and Cy5), which have a tendency to stack onto bases at the DNA termini (Iqbal et al., 2008; Ouellet et al., 2011), and the influence of orientational effects on the FRET efficiency was measured. Although an influence of the orientation could be detected, the data showed that orientational effects average-out quite well in most realistic cases (Iqbal et al., 2008). A method to estimate the lower and upper bounds for <κ2> from the donor and acceptor time-resolved anisotropies was proposed in the 1970s (Dale et al., 1979; van der Meer, 2002). In smFRET measurements using the polarization-resolved MFD modality, information on the donor and acceptor fluorescence intensities, lifetimes, and anisotropies (Schaffer et al., 1999) are collected simultaneously and fluorescence anisotropy decays of different single-molecule sub-populations can be used to assess the <κ2> uncertainty per conformational state (Ivanov et al., 2009; Kudryavtsev et al., 2012; Sindbert et al., 2011). It is noteworthy to mention that the majority of fluorophores used as donor and acceptor dyes in smFRET have a mono-exponential fluorescence decay and, hence, have one major emission dipole. In this case, the estimation of <κ2> depends on the orientation of these single transition dipole moments. It has been proposed that the assumption of <κ2> = 2/3 would carry much less uncertainty when the fluorescence signal is emanating from more than one emission dipole, yielding multi-exponential decays (Haas et al., 1978). This is an intriguing idea that could provide a realistic estimation for κ2 and thus help simplify the transformation of FRET efficiencies into inter-dye distances. For a review on the dependence of FRET on κ2, the reader is referred to (van der Meer, 2002). Finally, we note that there are several routines recommended by experienced members of the community to determine $R_{0}$ accurately. Which approach is the most optimal is still under discussion.
+
+#### Dye models
+
+The Förster equation (Equation 1) allows the extraction of a distance directly from a FRET efficiency measurement. This distance directly corresponds only to the separation of the FRET fluorophores when the positions of the donor and the acceptor molecules are constant, the dye’s orientations are rapidly averaged and their microenvironment is known. Strictly speaking, this is never the case, even for a stable conformation of the labeled macromolecule, since dye molecules are typically attached to the macromolecules via flexible linkers, and the labeled macromolecule usually restricts the volume accessible to the fluorophore (Best et al., 2007; Hellenkamp et al., 2018a; Ingargiola et al., 2018b). In addition, diffusion of the dyes while the donor is in the excited state can also influence the measured FRET efficiency (Ingargiola et al., 2018b). When the FRET rate is not too high (leading to a FRET efficiency of $E<0.8$) and the dyes do not interact with the protein surface, deviations due to dye dynamics are usually negligible (Hellenkamp et al., 2018a; Hellenkamp et al., 2017; Kalinin et al., 2012).
+
+Various groups have developed detailed dye models that account for the translational and rotational flexibility of the dyes and thus allow a more accurate description of the actual distance FRET measures (Figure 5D) (Beckers et al., 2015; Craggs and Kapanidis, 2012; Dimura et al., 2016; Haas et al., 1978; Kalinin et al., 2012; Muschielok et al., 2008; Schuler et al., 2020; Sindbert et al., 2011) and to test them experimentally (Hellenkamp et al., 2018a; Nagy et al., 2018; Peulen et al., 2017; Wozniak et al., 2008). For any given FRET efficiency, different dye models will lead to slightly different extracted $R_{DA}$ distributions (deviations ≤ 5%). Choosing an appropriate model is therefore important for the accurate determination of $R_{DA}$.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60416/elife-60416-fig5-v3.jpg)
 
 **Figure 5.:** (A) The different kinetic averaging regimes for rotation and diffusion are shown schematically. In the dynamic averaging regime, rotation and diffusion happen on a timescale faster than the FRET process. In the isotropic averaging regime, translation is slower than the FRET process, but rotation is fast. The static average applies if both rotation and diffusion are slow compared to the rate of energy transfer. For most experimental situations, the isotropic average is most appropriate. (2008 National Academy of Sciences. Reproduced from Wozniak et al., 2008. Further reproduction of this panel would need permission from the copyright holder.) (B) A schematic of a donor/acceptor fluorophore pair (Alexa488, Alexa647) attached to the protein Atlastin-1. (C) The accessible volume that the acceptor fluorophore can explore is determined from a molecular dynamics simulation. (D) Different coarse-grained dye models are used in the community to describe the three-dimensional dye density ρDye (see main text). (Panels B, C, and D were reproduced from Dimura et al., 2016, Current Opinion in Structural Biology with permission, published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/).)
 
-Changes in RDA and the relative orientation of the dyes can occur on many different time scales, including the excited state lifetime, the interphoton time, and the photon burst duration. Averaging over these different distances and orientations is complicated due to the inherent non-linearity of the energy transfer process. However, there are exact analyses that describe the photon statistics in smFRET experiments (Antonik et al., 2006; Gopich and Szabo, 2005a; Nir et al., 2006).
+Changes in $R_{DA}$ and the relative orientation of the dyes can occur on many different time scales, including the excited state lifetime, the interphoton time, and the photon burst duration. Averaging over these different distances and orientations is complicated due to the inherent non-linearity of the energy transfer process. However, there are exact analyses that describe the photon statistics in smFRET experiments (Antonik et al., 2006; Gopich and Szabo, 2005a; Nir et al., 2006).
 
-Since the dye linker lengths of the typical dyes used in smFRET experiments are long (ranging typically between 10 and 15 atoms, Figure 5B), translational and rotational diffusion of the dyes within the accessible volumes constrained by their linkers and the macromolecules to which they are conjugated lead to considerable changes in RDA. Such dynamics can occur on timescales comparable to the fluorescence lifetime, which leads to changes in RDA, from the moment of donor excitation to the moment of donor de-excitation. This process leads to the well-documented phenomenon termed diffusion-enhanced FRET (Beechem and Haas, 1989; Haas and Steinberg, 1984; Orevi et al., 2014), where the measured FRET efficiencies are higher than expected from a static distribution of RDA due to the increase in the probability for FRET to occur when RDA shortens while the donor is in the excited state (Eilert et al., 2018; Ingargiola et al., 2018b).
+Since the dye linker lengths of the typical dyes used in smFRET experiments are long (ranging typically between 10 and 15 atoms, Figure 5B), translational and rotational diffusion of the dyes within the accessible volumes constrained by their linkers and the macromolecules to which they are conjugated lead to considerable changes in $R_{DA}$. Such dynamics can occur on timescales comparable to the fluorescence lifetime, which leads to changes in $R_{DA}$, from the moment of donor excitation to the moment of donor de-excitation. This process leads to the well-documented phenomenon termed diffusion-enhanced FRET (Beechem and Haas, 1989; Haas and Steinberg, 1984; Orevi et al., 2014), where the measured FRET efficiencies are higher than expected from a static distribution of $R_{DA}$ due to the increase in the probability for FRET to occur when $R_{DA}$ shortens while the donor is in the excited state (Eilert et al., 2018; Ingargiola et al., 2018b).
 
-This phenomenon has been treated by incorporating both rotational and translational diffusion of the fluorophores as fluctuations in RDA inside a potential well of the reaction coordinate RDA (Dingfelder et al., 2018; Haas and Steinberg, 1984; Ingargiola et al., 2018b). Similarly, rotational motions lead to changes in the relative orientation of the donor and the acceptor molecules and therefore to changes in R0 via κ2. To this end, a complete kinetic theory treating both rotational and translational diffusion has been developed (Eilert et al., 2018). In many cases, a dynamic rotation - static translation model can be used (i.e., krotation>>kFRET>>ktranslation) (Figure 5A). Interestingly, Monte-Carlo simulations show that this often-applied simplification can lead to errors in RDA (Hellenkamp et al., 2018a). The magnitude of the uncertainty depends on the donor fluorescence lifetime, the FRET efficiency, and the dye molecules’ diffusion constants and rotational correlation times. So far, no major disagreement of the dynamic rotation – static translation model with experimental data has been reported, thus supporting the use of the isotropic average of <κ2> = 2/3.
+This phenomenon has been treated by incorporating both rotational and translational diffusion of the fluorophores as fluctuations in $R_{DA}$ inside a potential well of the reaction coordinate $R_{DA}$ (Dingfelder et al., 2018; Haas and Steinberg, 1984; Ingargiola et al., 2018b). Similarly, rotational motions lead to changes in the relative orientation of the donor and the acceptor molecules and therefore to changes in $R_{0}$ via κ2. To this end, a complete kinetic theory treating both rotational and translational diffusion has been developed (Eilert et al., 2018). In many cases, a dynamic rotation - static translation model can be used (i.e., $k_{rotation}>>k_{FRET}>>k_{translation}$) (Figure 5A). Interestingly, Monte-Carlo simulations show that this often-applied simplification can lead to errors in $R_{DA}$ (Hellenkamp et al., 2018a). The magnitude of the uncertainty depends on the donor fluorescence lifetime, the FRET efficiency, and the dye molecules’ diffusion constants and rotational correlation times. So far, no major disagreement of the dynamic rotation – static translation model with experimental data has been reported, thus supporting the use of the isotropic average of <κ2> = 2/3.
 
 To obtain atomistic insights into the behavior of dyes on biomolecules, molecular dynamics simulations have been explored (Best et al., 2007; Deplazes et al., 2011; Spiegel et al., 2016; Girodat et al., 2020; Grotz et al., 2018; Hoefling et al., 2011; Reinartz et al., 2018; Shoura et al., 2014). By simulating the whole system, including the fluorophores, information is obtained about the accessible volume of the fluorophore, its potential interactions with the biomolecular surface and the dynamics of the system. The results of such simulations crucially depend on the parameterization (force field) of the dyes. Different parameter sets have been reported for commonly used dyes and validated against experimental data (Best et al., 2015; Graen et al., 2014; Schepers and Gohlke, 2020; Shaw et al., 2020), but a consensus on the optimal parameterization has not yet been reached.
 
-## Structural modeling
+### Structural modeling
 
 By accounting for various uncertainties described in the section Inter-dye distances, precise distances can be calculated from FRET efficiencies. This enables the application of FRET for FRET-based structural studies, which are particularly promising for studying the conformations of large, heterogeneous, flexible, and dynamic biomolecules and their complexes (Brunger et al., 2011; Craggs et al., 2019; Filius et al., 2020; Hellenkamp et al., 2017; Holmstrom et al., 2018; Kilic et al., 2018; Muschielok et al., 2008; Nagy et al., 2015; Sanabria et al., 2020; Treutlein et al., 2012; Yanez Orozco et al., 2018). Such systems are notoriously difficult to study with classical structural biology methods. For structure determination, there are further steps that need to be taken.
 
-## Pipeline
+#### Pipeline
 
 Different approaches have been used to derive structural models from FRET distance restraints. The general pipeline consists of the following steps:
 
@@ -344,11 +376,11 @@ The FRET information alone is insufficient to generate an atomistic model de nov
 
 **Figure 6.:** (A) Rigid bodies, representing either different domains of a protein or different proteins within a complex, are arranged by translation and rotation to satisfy the FRET restraints. Adapted from Figure 1 of Hellenkamp et al., 2017. (B) The structure that best satisfies all FRET restraints is selected from a prior ensemble. Adapted from Figure 2 of Dimura et al., 2020. (C) Using triangulation, the most likely dye position is estimated from the FRET distances with respect to known reference positions on the structure. (Reproduced from Andrecka et al., 2009, Nucleic Acid Research with permission, published under the Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY NC 4.0; https://creativecommons.org/licenses/by-nc/4.0). Further reproduction of this panel would need permission from the copyright holder.) (D) Starting from a known structure, a molecular dynamics simulation is guided using the FRET information by applying forces based on the FRET distances. (Reproduced from Dimura et al., 2020. Further reproduction of this panel would need permission from the copyright holder.)
 
-Different laboratories use different approaches to analyze their experimental results in context-dependent manners and the steps necessary for the conversion from FRET information to inter-dye distance information are still under debate. Importantly, the overall uncertainties in inter-dye distances need to be determined from the uncertainty in R0, the dye model and experimental precision, and to be incorporated into the integrative structural modeling (Dimura et al., 2016; Hellenkamp et al., 2018a; Hellenkamp et al., 2017; Kalinin et al., 2012; Muschielok et al., 2008; Muschielok and Michaelis, 2011; Peulen et al., 2017). As a result, FRET restraints yielded structural models that showed excellent agreement with existing models in benchmark studies (Kalinin et al., 2012; Mekler et al., 2002), resolved the structure of flexible parts and short-lived excited conformational states that were inaccessible in crystallographic studies (Andrecka et al., 2009; Sanabria et al., 2020) and quantified the conformational flexibility of crystallographic states (Hellenkamp et al., 2017). To increase the success of FRET-derived structural models, a protocol has recently been proposed to determine the most informative labeling positions, the number of labeling positions needed to resolve a given conformation and the accuracy that can be expected for the FRET-derived structural models (Dimura et al., 2020).
+Different laboratories use different approaches to analyze their experimental results in context-dependent manners and the steps necessary for the conversion from FRET information to inter-dye distance information are still under debate. Importantly, the overall uncertainties in inter-dye distances need to be determined from the uncertainty in $R_{0}$, the dye model and experimental precision, and to be incorporated into the integrative structural modeling (Dimura et al., 2016; Hellenkamp et al., 2018a; Hellenkamp et al., 2017; Kalinin et al., 2012; Muschielok et al., 2008; Muschielok and Michaelis, 2011; Peulen et al., 2017). As a result, FRET restraints yielded structural models that showed excellent agreement with existing models in benchmark studies (Kalinin et al., 2012; Mekler et al., 2002), resolved the structure of flexible parts and short-lived excited conformational states that were inaccessible in crystallographic studies (Andrecka et al., 2009; Sanabria et al., 2020) and quantified the conformational flexibility of crystallographic states (Hellenkamp et al., 2017). To increase the success of FRET-derived structural models, a protocol has recently been proposed to determine the most informative labeling positions, the number of labeling positions needed to resolve a given conformation and the accuracy that can be expected for the FRET-derived structural models (Dimura et al., 2020).
 
-We should also be aware of the expected uncertainty for the determined structural model, which can be computed from the number of measurements, their average quality and the properties of the underlying computational method. Besides estimating the precision (Dimura et al., 2020), it is useful to introduce a quantitative quality estimate, χn2, for judging the accuracy of FRET-derived structure models based on a cross-validation statistical method in the spirit of Rfree used in X-ray crystallography (Brünger, 1992). Such accuracy estimates are essential for the quality control of I/H structure models, especially those deposited in the PDB-Dev. Dimura et al., 2020 pointed out that the complexity arising from different experiments could be mitigated by using Bayesian hierarchical data processing frameworks, which abstracts the experimental data and propagates the information and uncertainties to enable structural modeling at higher precision and accuracy. Combining the smFRET information with additional constraints provided by complementary methods has the potential to further improve the accuracy of the obtained I/H structural models (Berman et al., 2019).
+We should also be aware of the expected uncertainty for the determined structural model, which can be computed from the number of measurements, their average quality and the properties of the underlying computational method. Besides estimating the precision (Dimura et al., 2020), it is useful to introduce a quantitative quality estimate, $χ_{n}^{2}$, for judging the accuracy of FRET-derived structure models based on a cross-validation statistical method in the spirit of $R_{free}$ used in X-ray crystallography (Brünger, 1992). Such accuracy estimates are essential for the quality control of I/H structure models, especially those deposited in the PDB-Dev. Dimura et al., 2020 pointed out that the complexity arising from different experiments could be mitigated by using Bayesian hierarchical data processing frameworks, which abstracts the experimental data and propagates the information and uncertainties to enable structural modeling at higher precision and accuracy. Combining the smFRET information with additional constraints provided by complementary methods has the potential to further improve the accuracy of the obtained I/H structural models (Berman et al., 2019).
 
-## Verification of steps in the workflow using simulations
+### Verification of steps in the workflow using simulations
 
 At various points along the workflow, simulations can be extremely useful. They can be used to gain a better understanding of the analysis procedures (e.g., to test the impact of specific burst search and selection parameters) (Hagai and Lerner, 2019) or to determine to what extent a particular data analysis procedure is capable of extracting results reliably (e.g., distinguishing between one or two subpopulations) (Blanco and Walter, 2010; Chen et al., 2016). Having a ‘ground truth’ to compare to is also very helpful when developing new analysis methods before applying it to real data. This question is relevant, especially when other common analysis procedures yield different results. Of course, this practice should not replace control measurements and analyses with an established system for validation of a given method, although numerical simulations can give an economical and initial guidance. Using prior knowledge about the measured system and the experimental setup, one can perform simulations mimicking real measurements and then check the results of different analysis procedures. In this way, it is possible to determine which analysis procedure is most promising in a given context. Another insightful aspect that simulations can provide is a consistency check of the data. One can simulate smFRET data assuming the number of states and/or kinetic rates derived from the experiments to see how well the model describes the measured data.
 
@@ -358,13 +390,228 @@ One of the cornerstones of the scientific method is the ability to reproduce exp
 
 Funding agencies embracing this philosophy (e.g., https://datascience.nih.gov/strategicplan) expect grantees to publish in open-access (OA) journals (and pay for the corresponding OA fees) or deposit manuscripts on preprint servers (e.g., Pubmed Central, arXiv, bioRxiv, ChemRxiv, medRxiv), and deposit data (sometimes also raw data) in repositories (e.g., Zenodo, the Dryad Digital Repository, FigShare) as well as analyses codes (e.g., GitHub). Open science disseminates knowledge by freely sharing results and the tools developed by independent scientists or teams working as part of a collaborative network. We would like to see the FRET community embrace and be committed to open science. Some tools are already in place, while others still need to be developed to make it easier to communicate the continuously growing knowledge and experience present in the FRET community.
 
-## Intellectual property and software licenses
+### Intellectual property and software licenses
 
 There is obviously some tension between the precepts of open science and requirements imposed by some intellectual property (IP) policies. IP rights, including patent laws, were put in place to promote the development of science and technology for the benefit of society by allowing those developing intellectual property to retain the rights for the IP they developed. In fact, in some sense, patents were the first form of open access publication, only with a restrictive license for reuse. We do not oppose intellectual property rights, but given the developmental stage the FRET field is currently in, we support the disclosure of methods, data, and software. For the advancement of the field, other groups must be able to reproduce the analyses of existing data, extend upon them and, if needed, be able to reproduce the experiments. The acquisition and analysis must be modifiable and extendable in agreement with the license chosen by the data or software creator. This license should be set as liberal as possible, taking into account the IP considerations mentioned above, but also encourage recognition of the considerable effort invested in producing successful protocols, designs, data, or software. Ultimately, if practiced fairly, open science should entice everyone, including commercial vendors, to adopt and contribute to community-defined file formats, provide free file-conversion codes, and open their analysis tools for scrutiny by the community.
 
-## Proper documentation of data analysis practices
+### Proper documentation of data analysis practices
 
 By making analysis codes and protocols freely available, we hope to stimulate the acceptance, utilization, and exchange of new methods and tools. It is true that there already exist a large number of open-access programs that offer a large variety of analysis procedures for single-molecule photon trajectories (free-diffusion smFRET) and single-molecule videos (immobilized smFRET) data (see Table 1).
+
+**Table 1.**
+ List of available software for smFRET analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Software</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALiX</td>
+      <td>Confocal</td>
+      <td>ALiX is developed for basic research on diffusing two-color smFRET in single or multiple spot geometries (Ingargiola et al., 2017).</td>
+      <td>https://sites.google.com/a/g.ucla.edu/alix/</td>
+    </tr>
+    <tr>
+      <td>Fretica</td>
+      <td>Confocal</td>
+      <td>Fretica, a Mathematica package with a backend written in C++, is a user-extendable toolbox that supports MFD, PIE/ALEX, PCH (Huang et al., 2004; Müller et al., 2000), FIDA (Gopich and Szabo, 2005b; Kask et al., 1999), PDA (Antonik et al., 2006; Ernst et al., 2020), recurrence analysis (Hoffmann et al., 2011), fluorescence lifetime fitting, FLIM, FCS, FLCS (Arbour and Enderlein, 2010; Dertinger et al., 2007), dual-focus FCS, nsFCS (Nettels et al., 2007; Schuler and Hofmann, 2013), maximum likelihood estimation from photon-by-photon (Gopich and Szabo, 2009) and binned trajectories, simulation of confocal experiments and more (Nettels and Schuler, 2020; https://schuler.bioc.uzh.ch/programs/).</td>
+      <td>https://schuler.bioc.uzh.ch/programs/</td>
+    </tr>
+    <tr>
+      <td>FRET_3colorCW</td>
+      <td>Confocal</td>
+      <td>C++ and MATLAB GUI-based CPU-GPU co-parallelization software package for an enhanced maximum likelihood analysis of two- and three-color fluorescence photon trajectories generated by continuous-wave donor excitation (Yoo et al., 2020).</td>
+      <td>https://github.com/hoisunglab/FRET_3colorCW</td>
+    </tr>
+    <tr>
+      <td>gSMFRETda</td>
+      <td>Confocal</td>
+      <td>gSMFRETda is a GPU-capable program for Monte Carlo simulations of PDA. It can sample dwell time and other parameters in fine grids, thus allowing the analysis of rapid dynamic interconversions (Liu et al., 2019).</td>
+      <td>https://github.com/liu-kan/gSMFRETda</td>
+    </tr>
+    <tr>
+      <td>H2MM</td>
+      <td>Confocal</td>
+      <td>H2MM is a maximum likelihood estimation algorithm for a photon-by-photon analysis of smFRET experiments (Pirchi et al., 2016).</td>
+      <td>http://pubs.acs.org/doi/suppl/10.1021/acs.jpcb.6b10726/suppl_file/jp6b10726_si_002.zip</td>
+    </tr>
+    <tr>
+      <td>MFD Spectroscopy and Imaging</td>
+      <td>Confocal</td>
+      <td>A modular software package for confocal fluorescence spectroscopy and imaging experiments using multiparameter fluorescence detection (MFD) with all tools (FCS, fFCS, PDA, seTCSPC, trace analysis, 2D simulation of MFD diagrams, Burbulator) and multiparameter fluorescence image spectroscopy (MFIS) (Antonik et al., 2006; Felekyan et al., 2005; Kühnemuth and Seidel, 2001; Widengren et al., 2006; Felekyan et al., 2020).</td>
+      <td>https://www.mpc.hhu.de/software/3-software-package-for-mfd-fcs-and-mfis</td>
+    </tr>
+    <tr>
+      <td>OpenSMFS</td>
+      <td>Confocal</td>
+      <td>A collection of tools (Ingargiola et al., 2016b) for solution-based single-molecule fluorescence spectroscopy, including smFRET, FCS, MC-DEPI (Ingargiola et al., 2018b).</td>
+      <td>https://github.com/OpenSMFS</td>
+    </tr>
+    <tr>
+      <td>smfBox</td>
+      <td>Confocal</td>
+      <td>A confocal smFRET platform, providing build instructions and open-source acquisition software (Ambrose et al., 2020).</td>
+      <td>https://craggslab.github.io/smfBox/</td>
+    </tr>
+    <tr>
+      <td>rFRET</td>
+      <td>Confocal Imaging</td>
+      <td>rFRET is a comprehensive, MATLAB-based program for analyzing ratiometric microscopic FRET experiments (Nagy et al., 2016).</td>
+      <td>https://peternagy.webs.com/fret#rfret</td>
+    </tr>
+    <tr>
+      <td>ChiSurf</td>
+      <td>Confocal Imaging Ensemble</td>
+      <td>ChiSurf is a fluorescence analysis platform for the analysis of time-resolved fluorescence decays (Peulen et al., 2017).</td>
+      <td>https://github.com/Fluorescence-Tools/ChiSurf/wiki</td>
+    </tr>
+    <tr>
+      <td>PAM - PIE Analysis with MATLAB</td>
+      <td>Confocal Imaging Ensemble</td>
+      <td>PAM (PIE analysis with MATLAB) is a GUI-based software package for the analysis of fluorescence experiments and supports a large number of analysis methods ranging from single-molecule methods to imaging (Schrimpf et al., 2018; Barth et al., 2020).</td>
+      <td>RRID:SCR_020966, https://www.cup.uni-muenchen.de/pc/lamb/software/pam.html</td>
+    </tr>
+    <tr>
+      <td>AutoSiM</td>
+      <td>TIRF</td>
+      <td>AutoSiM is a deep-learning developed MATLAB program for automatically selecting and sorting smFRET traces (Li et al., 2020a).</td>
+      <td>https://doi.org/10.7302/ck2m-qf69</td>
+    </tr>
+    <tr>
+      <td>BIASD</td>
+      <td>TIRF</td>
+      <td>BIASD uses Bayesian inference to infer transition rates that are more than three orders of magnitude larger than the acquisition rate of the experimental smFRET data (Kinz-Thompson and Gonzalez, 2018).</td>
+      <td>http://github.com/ckinzthompson/biasd</td>
+    </tr>
+    <tr>
+      <td>DeepFRET</td>
+      <td>TIRF</td>
+      <td>smFRET software based on deep-learning for automatic trace selection and classification. It includes all common features: image analysis, background-corrected trace-extraction, hidden Markov analysis, correction factor application, and data visualization (Thomsen et al., 2020).</td>
+      <td>https://github.com/hatzakislab/DeepFRET-GUI</td>
+    </tr>
+    <tr>
+      <td>ebFRET</td>
+      <td>TIRF</td>
+      <td>ebFRET performs combined analysis on multiple smFRET time-series to learn a set of rates and states (van de Meent et al., 2014).</td>
+      <td>https://ebfret.github.io/</td>
+    </tr>
+    <tr>
+      <td>FRETboard</td>
+      <td>TIRF</td>
+      <td>smFRET data preprocessing and analysis using algorithms of choice and user supervision. Also offered as a web-based user interface (de Lannoy et al., 2020).</td>
+      <td>https://github.com/cvdelannoy/FRETboard</td>
+    </tr>
+    <tr>
+      <td>HaMMy</td>
+      <td>TIRF</td>
+      <td>smFRET analysis and hidden Markov modeling (McKinney et al., 2006).</td>
+      <td>http://ha.med.jhmi.edu/resources/</td>
+    </tr>
+    <tr>
+      <td>hFRET</td>
+      <td>TIRF</td>
+      <td>hFRET uses variational Bayesian inference to estimate the parameters of a hierarchical hidden Markov model, thereby enabling robust identification and characterization of kinetic heterogeneity (Hon and Gonzalez, 2019).</td>
+      <td>https://github.com/GonzalezBiophysicsLab/hFRET</td>
+    </tr>
+    <tr>
+      <td>iSMS</td>
+      <td>TIRF</td>
+      <td>iSMS is a user-interfaced software package for smFRET data analysis. It includes extraction of time-traces from movies, traces grouping/selection tools according to defined criteria, application of corrections, data visualization and analysis with hidden Markov modeling, and import/export possibilities in different formats for data-sharing (Preus et al., 2015; Preuss et al., 2020).</td>
+      <td>http://isms.au.dk/</td>
+    </tr>
+    <tr>
+      <td>MASH-FRET</td>
+      <td>TIRF</td>
+      <td>MASH-FRET is a MATLAB-based software package for the simulation (Börner et al., 2018) and analysis of single-molecule FRET videos and trajectories (video processing [Hadzic et al., 2016], histogram analysis [König et al., 2013], and transitions analysis [Hadzic et al., 2018; König et al., 2013]).</td>
+      <td>https://rna-fretools.github.io/MASH-FRET/</td>
+    </tr>
+    <tr>
+      <td>miCUBE</td>
+      <td>TIRF</td>
+      <td>TIRF smFRET platform, providing detailed build instructions and open-source acquisition software (Martens et al., 2019).</td>
+      <td>https://hohlbeinlab.github.io/miCube/index.html</td>
+    </tr>
+    <tr>
+      <td>SMACKS</td>
+      <td>TIRF</td>
+      <td>SMACKS (single-molecule analysis of complex kinetic sequences) is a maximum-likelihood approach to extract kinetic rate models from noisy single-molecule data (Schmid et al., 2016).</td>
+      <td>https://www.singlemolecule.uni-freiburg.de/software/smacks</td>
+    </tr>
+    <tr>
+      <td>smCamera</td>
+      <td>TIRF</td>
+      <td>smFRET data acquisition (Windows. exe) and analysis (IDL, MATLAB) with example data (Roy et al., 2008).</td>
+      <td>http://ha.med.jhmi.edu/resources/</td>
+    </tr>
+    <tr>
+      <td>SPARTAN</td>
+      <td>TIRF</td>
+      <td>Automated analysis of smFRET multiple single-molecule recordings. It includes extraction of traces from movies, trace selection according to defined criteria, application of corrections, hidden Markov modeling, simulations, and data visualization (Juette et al., 2016).</td>
+      <td>https://www.scottcblanchardlab.com/software</td>
+    </tr>
+    <tr>
+      <td>STaSI</td>
+      <td>TIRF</td>
+      <td>STaSI uses the Student’s t-test and groups the segments into states by hierarchical clustering (Shuang et al., 2014).</td>
+      <td>https://github.com/LandesLab/STaSI</td>
+    </tr>
+    <tr>
+      <td>TwoTone</td>
+      <td>TIRF</td>
+      <td>A TIRF-FRET analysis package for the automatic analysis of single-molecule FRET movies (Holden et al., 2011).</td>
+      <td>https://groups.physics.ox.ac.uk/genemachines/group/Main.Software.html</td>
+    </tr>
+    <tr>
+      <td>vbFRET</td>
+      <td>TIRF</td>
+      <td>vbFRET uses variational Bayesian inference to learn hidden Markov models from individual, smFRET time trajectories (Bronson et al., 2009).</td>
+      <td>http://www.columbia.edu/cu/chemistry/groups/gonzalez/software.html</td>
+    </tr>
+    <tr>
+      <td>Fast NPS</td>
+      <td>Modeling</td>
+      <td>A nano-positioning system for macromolecular structural analysis (Eilert et al., 2017).</td>
+      <td>http://dx.doi.org/10.17632/7ztzj63r68.1</td>
+    </tr>
+    <tr>
+      <td>Fluordynamics</td>
+      <td>Modeling</td>
+      <td>Fluordynamics is a PyMOL plugin to label biomolecules with organic fluorophores for all-atom molecular dynamics simulations. It builds on AMBERDYES (Schepers and Gohlke, 2020) and extends the force field to common nucleic acid linker chemistries (Steffen et al., 2016).</td>
+      <td>https://github.com/RNA-FRETools/fluordynamics</td>
+    </tr>
+    <tr>
+      <td>FPS</td>
+      <td>Modeling</td>
+      <td>A toolkit for FRET restrained modeling of biomolecules and their complexes for quantitative applications in structural biology (Kalinin et al., 2012).</td>
+      <td>https://www.mpc.hhu.de/software/1-fret-positioning-and-screening-fps</td>
+    </tr>
+    <tr>
+      <td>FRETraj</td>
+      <td>Modeling</td>
+      <td>FRETraj is a Python API to the LabelLib package, which integrates into PyMOL to interactively calculate accessible-contact volumes and predict FRET efficiencies (Steffen et al., 2016).</td>
+      <td>https://github.com/RNA-FRETools/fretraj</td>
+    </tr>
+    <tr>
+      <td>FRETrest in Amber20</td>
+      <td>Modeling</td>
+      <td>FRETrest is a set of helper scripts for generating FRET-restraints for Molecular Dynamics (MD) simulations performed with the AMBER Software Suite (Dimura et al., 2020).</td>
+      <td>http://ambermd.org/doc12/Amber20.pdf</td>
+    </tr>
+    <tr>
+      <td>LabelLib</td>
+      <td>Modeling</td>
+      <td>LabelLib is a C++ library for the simulation of the accessible volume (AV) of small probes flexibly coupled to biomolecules (Dimura et al., 2016; Kalinin et al., 2012).</td>
+      <td>https://github.com/Fluorescence-Tools/LabelLib</td>
+    </tr>
+  </tbody>
+</table>
 
 To further improve the inter-operation between methods and analysis and to establish convenient documentation protocols, it is essential to work in an open multivalent environment. For this goal, the use of browser-based software such as ‘Jupyter notebooks’ and/or other available workspaces may serve as a convenient platform. Such workspaces provide an interactive scripting environment by combining formatted ‘rich’ text with well-commented code commands as well as code outputs (e.g., figures, tables, comments, equations) and explanations in a single web-based document. Such web-based workspace environments support several programming languages, including Python, R, C++, and, to some extent, MATLAB and Mathematica. Practitioners using this environment can then easily read, distribute, re-run, check, and modify the code. Software engineering approaches in scientific software usually include version control, code review, unit testing, continuous integration, and auto-generation of HTML manuals. In the next step, Jupyter notebooks or similar workspaces can also help newcomers perform complex analyses already in the web-based environment with minimal adaptation efforts, which will accelerate the dissemination of new analyses. Indeed, well-documented, easy-to-use notebooks have been provided by various groups (Ambrose et al., 2020; Ingargiola et al., 2016b; Ingargiola et al., 2016a; Lerner, 2020; Lerner, 2019) (e.g., at https://github.com/tritemio/FRETBursts or https://craggslab.github.io/smfBox/).
 
@@ -372,7 +619,7 @@ Although the notebook approach offers advantages to experienced users and softwa
 
 As the first step toward FAIR-compliant analysis practices, we propose establishing a software library that contains tested and proven algorithms for the analysis of fluorescence experiments, which will assist in their efficient distribution and implementation in existing workflows. Such efforts have already been initiated in the FRETbursts software package (Ingargiola et al., 2016b), and a GitHub group has been established at https://github.com/Fluorescence-Tools to collect software packages and connect software developers. Establishing a community-wide working group of ‘Analysis software for FRET’ would be an important step in organizing and moderating this process.
 
-## Standard file format
+### Standard file format
 
 To expedite the exchange of data between different groups and testing of different analysis methods, it would be beneficial to have a minimal number of file formats, and to avoid the multiplication of ad hoc formats developed independently. In fact, the absence of a standard file format and supporting documents has caused issues within individual labs with respect to long-term data storage and re-analysis. Online data deposition in well-documented file formats would therefore save a lot of headaches for many laboratories. Even if standard file formats are carefully designed or developed, it will be inevitable to modify the existing formats or introduce new formats in the future. The list of standard formats should be regularly updated, and the analysis codes should also be kept current and properly maintained to guarantee their compatibility with the new standard formats.
 
@@ -382,23 +629,23 @@ The raw experimental data should be supplied in a universal data file format tha
 
 **Figure 7.:** All essential information should be contained in two data files, one for raw data and a second with the essential information regarding the associated analysis. (Left) Structure of proposed data file formats containing confocal or TIRF raw data in a time-tagged, TT, or time-tagged time-resolved, TTTR, format together with sample- and experiment-specific metadata (for details, see Figure 8). The measurement specifications are needed by the reading routine to reconstruct the photon trace from the stored data, for example, for timing in the TT format (sampling frequencies expressed as time bins or frame rates) or in the TTTR format (laser repetition rates, time binning in time-correlated single-photon counting). Moreover, the detector that measured the signal is noted (detector #) along with the detection time with a given time resolution. For representing the detection time of single photons in time-resolved smFRET studies, the TTTR format is used where the time corresponds to the sum of the macro time and the nano time (upper left panel). The macro time comprises multiple cycles of excitation laser pulses (blue vertical lines) and the nano time is determined by time-correlated single-photon counting with picosecond resolution. The TTTR format is the most compact data format for single-molecule fluorescence data for detection times with picosecond time resolution and macro-times of hours (Felekyan et al., 2005). The representation of the photon detection of intensity-based and imaging-based smFRET studies is in the TT format, where the macro-time comprises multiples of the external clock pulse or readout cycles, where single or several photons were detected. The stack of TIFF images acquired in TIRF measurements (lower left panel) is transformed into the TT format for analyzing photon time traces for selected spots. (Middle) For the corresponding data file, a metadata system as implemented in the Photon-HDF5 file format (Ingargiola et al., 2016a) is suggested. (Right) The analysis file should contain the determined parameters obtained by a quantitative analysis together with analysis metadata that assure evaluation, reproducibility, and re-usability of the analysis. The processed data should be documented as outlined in Figure 8D.
 
-## File formats for (time-correlated) photon counting with point-detector data (confocal modality)
+#### File formats for (time-correlated) photon counting with point-detector data (confocal modality)
 
 Several formats have been used and reported for time-correlated single-photon counting data (Brand et al., 1997; Brooks Shera et al., 1990; Eggeling et al., 2001; Felekyan et al., 2005; Rigler et al., 1993; Schaffer et al., 1999; Tellinghuisen et al., 1994; Wahl et al., 2008; Widengren et al., 2006). One example is the time-tagged time-resolved (TTTR) file format given in the left panel of Figure 7. Because of its compactness, this file format has been widely adopted by commercial companies (e.g., Becker and Hickl and PicoQuant) providing TCSPC electronics and point detectors for solution/imaging studies.
 
 The basic formats have been extended in the Photon-HDF5 (Ingargiola et al., 2016a) file format that connects rich metadata with the raw photon information in a single, space-efficient format suitable for sharing and long-term data archival. Moreover, several software programs exist that can easily transform raw data files to the Photon-HDF5 format. Once enough metadata is available in the community, the relative importance of particular metadata entries on the resulting FRET data can be assessed.
 
-## File format for camera-based acquisition (wide-field/TIRF modality)
+#### File format for camera-based acquisition (wide-field/TIRF modality)
 
 Camera-based data is acquired as a stack of images (e.g., TIFF). To extract time trajectories, several steps are needed to yield the time-binned fluorescence intensity (e.g., spot identification; donor and acceptor spot registration; thresholding; background subtraction, etc.). A file format for TIRF-based smFRET (immobilized) measurements has been proposed (Greenfeld et al., 2015). Alternatively, human-readable plain text files with an agreed format and greatly downsized from the raw TIFF stacks can also work well for TIRF-based smFRET traces. Binary file formats for efficient data compression have also been implemented (Juette et al., 2016).
 
-## Exchange file format for processed data
+#### Exchange file format for processed data
 
 In addition to standardized raw file formats, we recommend defining exchange file formats for different levels of processed data (Figure 7, middle panel). This will allow researchers to establish flexible and modular workflows spanning different software packages and facilitate the adoption of novel analysis approaches. The deposition of processed data in agreed-upon file formats also ensures that published data can be re-used at a later time point, for example, for more elaborate structural modeling approaches (Köfinger et al., 2019). For the storage of processed data, we believe that it is important to retain the connection to the raw data by including the relevant metadata. For example, corrected FRET efficiency histograms should be deposited together with the raw signal intensities in the donor and acceptor channels, the background intensities and the calibration factors.
 
-## Repositories and data bank for FRET data and models
+### Repositories and data bank for FRET data and models
 
-## Metadata for FRET experiments
+#### Metadata for FRET experiments
 
 To ensure that the reported results are reproducible, raw data must be sufficiently annotated. One important source of inspiration for developing recommendations and standards for the FRET community comes from the world-wide Protein Data Bank (wwPDB) (Berman et al., 2003; Young and Westbrook, 2019). Following the standards of the wwPDB, it is recommended to provide additional information to the models as outlined in Figure 8.
 
@@ -406,9 +653,62 @@ To ensure that the reported results are reproducible, raw data must be sufficien
 
 **Figure 8.:** Recommended categories for data and method-specific information (metadata), which are needed for documentation of smFRET studies where the authors want to archive their obtained kinetic/structural models. (A) General information. (B) Information on the sample and FRET-specific properties. (C) Information on the experiment and data acquisition. (D) Information on processing and analysis procedures. (E) Information on the interpretation of the data and the final kinetic network or structural model.
 
-## Archiving FRET experiments
+#### Archiving FRET experiments
 
 In this respect, we strongly encourage the publication of datasets with detailed descriptions of the acquisition and analysis in scientific journals. Alternatively, or in addition, structural information and raw datasets should immediately be deposited in repositories provided by the publisher or generalist repositories (Table 2) with a Digital Object Identifier or link for access and citation. Online and public repositories also act as a form of data and knowledge backup, which is difficult to achieve and maintain at the scale of a single laboratory. Comparing a repository with a database, it is obvious that a database has significant advantages for the scientific community. While both archive forms provide open access to the data for all users, only a database can fulfill the quality criteria for safe usage of the deposited data by (1) creating standard definitions for the experimental data used for determining kinetic and/or structural models and their features; (2) developing methods to collect the minimum amount of required information for curation and validation of models and data; and (3) building the infrastructure for acquiring, archiving and disseminating the models and the data. To conclude, a database assures appropriate documentation with a defined format and quality control of the results.
+
+**Table 2.**
+ A list of repositories for citable data storage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository name</th>
+      <th>URL</th>
+      <th>Size limits</th>
+      <th>Fee/Costs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dryad Digital Repository</td>
+      <td>https://datadryad.org/stash</td>
+      <td>No</td>
+      <td>$120 USD for first 20 GB, and $50 USD for each additional 10 GB</td>
+    </tr>
+    <tr>
+      <td>figshare</td>
+      <td>https://figshare.com/</td>
+      <td>1 TB per dataset</td>
+      <td>It varies with publishers</td>
+    </tr>
+    <tr>
+      <td>Harvard Dataverse</td>
+      <td>https://dataverse.harvard.edu/</td>
+      <td>2.5 GB per file, 10 GB per dataset</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td>Open Science Framework</td>
+      <td>https://osf.io/</td>
+      <td>5 GB per file, multiple files can be uploaded</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td>Zenodo</td>
+      <td>https://zenodo.org/</td>
+      <td>50 GB per dataset</td>
+      <td>Donation</td>
+    </tr>
+    <tr>
+      <td>Mendeley Data</td>
+      <td>https://data.mendeley.com/</td>
+      <td>10 GB per dataset</td>
+      <td>Free</td>
+    </tr>
+  </tbody>
+</table>
 
 Given the importance of integrative structures for advancing life sciences and the significant world-wide investment made to determine them, the wwPDB has proposed a governance structure for federating archives containing structural models (e.g., PDB, Electron Microscopy Data Bank, EMDB Tagari et al., 2002) or experimental data. Moreover, for integrative modeling integrative/hybrid modeling structures (Sali et al., 2015), PDB-Dev (Berman et al., 2019; Vallat et al., 2018) was established as an associated prototype system for archiving multi-state and ensemble structures on multiple spatial scales. In addition, associated kinetic models can be deposited.
 
@@ -420,21 +720,21 @@ In addition to archiving the models themselves, all relevant experimental data a
 
 To better achieve a consensus on the current and the future directions of the smFRET community, an open forum is needed where the current issues, needs, and desires could be discussed. We propose the following tools to organize the community around standardization efforts and open science practices. Some of these tools have already been put in place.
 
-## Community website as a central hub
+### Community website as a central hub
 
 A website for the FRET community has been established at https://www.fret.community. The community is open to everybody and registered members can populate their user profiles with additional information such as a description of their scientific interests or a list of key-publications. Besides providing regular updates on the activities within the community, the website also provides resources such as a curated list of software packages (see Table 1) and offers a discussion platform through an integrated forum. The website serves as a platform for ongoing discussions, announcements of accepted relevant papers, notifications about upcoming meetings, workshops, competitions and other activities that might be relevant to the community. An advisory board, elected by the community, moderates the website. One can also envision adding an educational section, much like the popular website for general microscopy education (https://micro.magnet.fsu.edu).
 
-## Listserv
+### Listserv
 
 To facilitate the dissemination of important information to the FRET community, an electronic mailing list (Listserv) has been established. In order to subscribe to it, smFRET practitioners are requested to register (free of charge) using the following link: https://www.fret.community/register. The members will be informed through the email list about ongoing activities and developments within the community, such as experimental or computational challenges, key publications in the fields, and workshops or meetings.
 
-## Server and repository
+### Server and repository
 
 A repository will be established, which will be accessible through the community website, to host a collection of software packages and facilitate the community-driven joint development of analysis tools. The repository will contain dedicated sections for acquisition software, raw data, analysis codes, analyzed data files, and file conversion utilities. In order to deposit code in the repository, guidelines for the required documentation will be provided.
 
 The concept of the repository is to support open science and transparency. Anyone registered on the website will be able to access raw data, and analyze and compare performances of the various analysis codes. Moreover, the codes can be updated and expanded (while keeping original versions) by anyone. In this way, improvements and enhancements can be implemented and tested. In that context, it is important to mention that such a repository can also serve the purpose of source data deposition, nowadays required by many scientific journals.
 
-## Participation in CASP(-like) competitions
+### Participation in CASP(-like) competitions
 
 Critical Assessment of protein Structure Prediction (CASP, http://predictioncenter.org/) is a grass-roots effort for predicting a three-dimensional protein structure from its amino acid sequence. CASP has been run, since 1994, as a double-blind competition. It provides research groups with an opportunity to test their structure prediction methods objectively. CASP has been exploring modeling methods based, in part, on sparse experimental data, including data from SAXS, NMR, crosslinking, and FRET. This integrative CASP experiment was highlighted at the recent CASP13 meeting (http://www.predictioncenter.org/), where the carbohydrate-binding module (CBM56) of a β−1,3-glucanase from Bacillus circulans with 184 amino acids (18.9 kDa) was studied as the first FRET data-assisted target F0964. In CASP14, the single-model protein structure prediction by the artificial intelligence (AI) network AlphaFold2, which was developed by Google's AI offshoot DeepMind (https://deepmind.com), has approached perfection (Callaway, 2020). This deep-learning program combines the evolutionary information from multiple sequence alignments with structural information from the PDB for computing 3D structural models of a protein from its amino-acid sequence.
 
@@ -442,13 +742,13 @@ However, one has to be aware that many proteins do not only adopt their thermody
 
 These recommendations apply mostly to present and future practitioners of smFRET-driven integrative modeling. That being said, smFRET is one of many biophysical techniques that can provide experimental restraints in integrative modeling (XL-MS, single-particle cryoEM, NMR, SAXS). Therefore, we propose that, at a later stage, an all-biophysics integrative structural biology competition be established.
 
-## SmFRET meetings
+### SmFRET meetings
 
 Several gatherings of FRET practitioners at the Annual Biophysical Society Meetings, supported by the Biological Fluorescence subgroup, provided a platform for planning future activities and establishing the FRET community. As further joint actions, satellite meetings to the Conference on Methods and Applications in Fluorescence (MAF) have been organized to discuss practices, standards, competitions, and joint publications. We envision an occasional dedicated meeting for the smFRET community, such as the Bunsen meetings on FRET held in 2011 and the international discussion meeting in 2016 at the Max Planck Institute for Biophysical Chemistry in Göttingen, Germany (http://fret.uni-duesseldorf.de/cms/home.html). However, to open these meetings to smFRET practitioners outside of Europe, we propose to rotate the venue among continents. We also suggest using the satellite meetings and workshops to disseminate information (details of accurate FRET measurements, common practices, standards and competitions) and to give newcomers the chance to interact with the experienced researchers in the field.
 
 Inspired by the online seminars emerging in response to the COVID-19 pandemic, smFRET webinars and web conferences open to all should be pursued. They provide FRET researchers the unique opportunity to attend and socialize virtually and would be a forum for good scientific practice of open science for the FRET community.
 
-## Special issues in journals
+### Special issues in journals
 
 To further stimulate newcomers to engage in advanced smFRET experiments, the FRET community could benefit by hosting special issues in journals dedicated to data analyses (e.g., Data in Brief, Methods in Molecular Biology, or Nature Protocols). Here, various laboratories can describe typical datasets or protocols for the methods they have developed. Also, journals disseminating methodologies and protocols from A-to-Z via video recordings could be useful. For example, there is a special issue focusing on FRET planned in the Journal of Visualized Experiments (https://www.jove.com/methods-collections/682).
 

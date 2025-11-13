@@ -56,6 +56,43 @@ Institutions can help by reimbursing ECRs for expenses that will not be covered 
 
 While established researchers are more likely to have symposium talks that can be carried forward to the next year, early-career researchers often present research projects that may be published before the next conference. Canceling or postponing meetings may cost ECRs their one opportunity to present their research. For this reason, we ask that conference organizers consider making canceled in-person conferences virtual instead. For example, talks could be given via videoconferencing and poster sessions could be hosted online (Table 1).
 
+**Table 1.**
+ Ideas for virtual conferences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Example(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Organize virtual poster sessions with live video and chat options.</td>
+      <td>Cognitive Neuroscience Society (2020)</td>
+    </tr>
+    <tr>
+      <td>Make abstracts, posters, and other conference materials freely available online for anyone to read and share.</td>
+      <td>SOT 2020 (Hines, 2020)</td>
+    </tr>
+    <tr>
+      <td>Allow speakers to offer a pre-recorded talk for any online session. Provide instructions for recording a talk. Invite pre-recorded speakers for a live Q and A session after their virtual talk, at a time that accommodates the speaker’s time zone.</td>
+      <td>Conference on Retroviruses and Opportunistic Infections (CROI Foundation/IAS–USA, 2020)</td>
+    </tr>
+    <tr>
+      <td>Organize a virtual conference, followed by a virtual ‘unconference’ where scientists interact with others in small groups that are automatically matched based on similar interests.</td>
+      <td>Neuromatch 2020</td>
+    </tr>
+    <tr>
+      <td>Organize a free virtual conference using social media and videoconferencing.</td>
+      <td>Librarians Building Momentum for Reproducibility (2020) with draft guidance following their organizing experience available from Sayre et al. (2020) 1st International Twitter Conference of Herpetology (Associação Portuguesa de Herpetologia, 2018)</td>
+    </tr>
+  </tbody>
+</table>
+
+_This is not an exhaustive list._
+
 We are aware that switching meetings to a virtual setting would likely place an additional burden on the conference organizers, who are already dealing with the logistical and financial impact of cancellation. One solution to this problem may be to invite ECRs and researchers from countries with limited research funding to join committees to organize the online events. This may provide those individuals with valuable career development and networking experience.
 
 ## Livestream for remote participation

@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03cpe7c52 Allen Institute Seattle United States
+1. Allen Institute Seattle United States ([ROR:03cpe7c52](https://ror.org/03cpe7c52))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Our two-photon calcium imaging dataset (Allen Institute Mindscope Program, 2016)
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85550/elife-85550-fig1-v1.jpg)
 
-**Figure 1.:** (a) Target brain regions and example visual stimuli. (b) Standardized rigs for two-photon calcium imaging (left) and Neuropixels electrophysiology (right). (c) Example ΔF/F traces or spike rasters for 100 simultaneously recorded neurons from each modality. Both are extracted during one presentation of a 30 s natural movie. (d) Dataset size after different stages of analysis.Figure 1—source data 1.
+**Figure 1.:** (a) Target brain regions and example visual stimuli. (b) Standardized rigs for two-photon calcium imaging (left) and Neuropixels electrophysiology (right). (c) Example ΔF/F traces or spike rasters for 100 simultaneously recorded neurons from each modality. Both are extracted during one presentation of a 30 s natural movie. (d) Dataset size after different stages of analysis.
 
 ## Approach to data distribution
 
@@ -66,7 +66,7 @@ We found three general use cases of Allen Brain Observatory data in the research
 
 Below, we highlight some examples of these three use cases, for both the two-photon calcium imaging and Neuropixels datasets. All these studies were carried out by groups external to the Allen Institute, and frequently without any interaction from us, speaking to the ease with which data can be downloaded and analyzed.
 
-## Making discoveries
+### Making discoveries
 
 Sweeney and Clopath, 2020 used Allen Brain Observatory two-photon imaging data to explore the stability of neural responses over time. They previously found that neurons in a recurrent network model with high inherent plasticity had more variability in their stimulus selectivity than those with low plasticity. They also found that neurons with high inherent plasticity have higher population coupling. To examine whether these were related, they here analyzed real calcium-dependent fluorescence traces from the Allen Brain Observatory to examine whether population coupling and response variability were correlated. The authors found that, indeed, population coupling is correlated with the change in orientation and direction tuning of neurons over the course of a single experiment, an unexpected result linking population activity with individual neural responses.
 
@@ -76,7 +76,7 @@ Fritsche et al., 2022 analyzed the time course of stimulus-specific adaptation i
 
 At least three publications have taken advantage of the fact that every Neuropixels insertion targeting visual cortex and thalamus also passed through the intervening hippocampus and subiculum. Nitzan et al., 2022 analyzed the local field potential from these electrodes to detect the onset of sharp-wave ripples, fast oscillations believed to mediate offline information transfer out of the hippocampus (Girardeau and Zugaro, 2011). They found that sharp-wave ripples coincided with a transient, cortex-wide increase in functional connectivity with the hippocampus. Jeong et al., 2023 examined the topography of this functional connectivity and found that distinct but intermingled classes of visual cortex neurons were preferentially modulated by ripples originating in dorsal hippocampus, while others were more coupled to ripples in intermediate hippocampus. Purandare and Mehta, 2023 analyzed the responses of hippocampal neurons to natural movies and found that many displayed highly selective ‘movie fields’ that were often as robust as those of neurons in visual cortex. However, in contrast to visual cortex, the movie fields in the hippocampus disappeared if the movie frames were shuffled (thereby disrupting the learned temporal sequence). Although the Allen Brain Observatory experiments were not originally designed to test hypotheses of hippocampal function, the Neuropixels dataset turned out to be attractive for understanding the interactions between this structure and visual cortical and thalamic regions.
 
-## Validating models and algorithms
+### Validating models and algorithms
 
 Many researchers used the numerous and diverse fluorescence movies in the two-photon imaging dataset to validate image processing algorithms. As the different transgenic lines used in the dataset target different populations of neurons, they have different labeling densities. As a result, there are some very sparse movies with only a dozen neurons within the field of view and others with up to ~400 neurons. This makes the dataset a rich resource for benchmarking methods for cell segmentation (Bao et al., 2021; Inan et al., 2021; Kirschbaum et al., 2020; Petersen et al., 2018; Soltanian-Zadeh et al., 2019), matching neurons across multiple sessions (Sheintuch et al., 2017), and removing false transients in the fluorescence traces (Bao et al., 2022; Gauthier et al., 2022).
 
@@ -84,7 +84,7 @@ Montijn et al., 2021 used the Neuropixels survey to showcase a novel method for 
 
 Buccino et al., 2020 used raw data from the Neuropixels survey to validate SpikeInterface, a Python package that runs multiple spike sorting algorithms in parallel and compares their outputs. We originally performed spike sorting with one such algorithm, Kilosort 2 (Pachitariu et al., 2016). The authors of this paper used SpikeInterface to compare the performance of Kilosort 2 and five additional algorithms. In one example session, over 1000 distinct units were detected by only one sorter, while only 73 units were detected by five or more sorters. At first glance, this finding seems to indicate a high level of disagreement among the algorithms. However, when comparing these results with those from simulations, it became clear that the low-agreement units were mainly false positives, while the true positive units were highly consistent across algorithms. This finding, and the SpikeInterface package in general, will be essential for improving the accuracy of spike sorting in the future.
 
-## Comparisons with other datasets
+### Comparisons with other datasets
 
 Kumar et al., 2021 used supervised and semi-supervised learning algorithms to classify cortical visual areas based on either spontaneous activity or visually evoked responses. Cortical visual areas, defined based on retinotopic maps, are thought to serve distinct visual processing functions. Rather than compare tuning properties of neurons across the areas, as many studies (including our own) have done, the authors trained classifiers to successfully determine the area membership and boundaries from the neural responses to visual stimuli. They compared the performance of these algorithms for their own wide-field imaging dataset with our two-photon imaging dataset. This provides an extension and validation of their results to conditions in which single-cell responses are available.
 
@@ -94,7 +94,7 @@ Stringer et al., 2021 compared spiking activity from the Neuropixels dataset to 
 
 Schneider et al., 2021 directly compared the Allen Neuropixels dataset with Neuropixels recordings from LGN and V1 carried out locally. They first analyzed gamma-band coherence between these two structures in the Allen Brain Observatory dataset and found evidence in support of their hypothesis that inter-regional coherence is primarily driven by afferent inputs. This contrasts with the ‘communication through coherence’ hypothesis (Fries, 2015), which posits that pre-existing inter-regional coherence is necessary for information transfer. They then performed a separate set of Neuropixels recordings in which they found that silencing cortex (via optogenetic activation of somatostatin-positive interneurons) did not change the degree of coherence between LGN and V1, indicating that V1 phase-locking is inherited from LGN, further supporting their hypothesis. This is an insightful example of how a survey dataset can be used to test a hypothesis, followed by a set of more specific follow-up experiments that refine the initial findings.
 
-## Use in education
+### Use in education
 
 These surveys have also been used in a variety of educational contexts. Many computational neuroscience summer courses have presented them as potential source of student projects. This includes the Allen Institute’s own Summer Workshop on the Dynamic Brain as well as the Cold Spring Harbor Neural Data Science and Computational Neuroscience: Vision courses; Brains, Minds, and Machines Summer Course at the Marine Biological Laboratory; and the Human Brain Project Education Program. Indeed, in some cases these projects have led to publications (Christensen and Pillow, 2022; Conwell et al., 2022). Beyond these summer courses, these datasets are discussed in undergraduate classrooms, enabling students to learn computational methods with real data rather than toy models. This includes classes at the University of Washington, Brown University, and the University of California, San Diego.
 
@@ -118,7 +118,7 @@ One key lesson we learned is to facilitate different types of data reuse, as ill
 
 We hope to see the sharing of both raw and processed cellular physiology data soon become ubiquitous. However, we know that our surveys were contingent on the efforts of a large team, including scientists from multiple disciplines, hardware and software engineers, research associates, and project managers. Assembling similar resources is untenable for most academic labs. Fortunately, there are ongoing developments that will lower the barriers to sharing and reusing data: increased standardization and cloud-based analysis tools.
 
-## Increased standardization
+### Increased standardization
 
 The success of data reuse rests on the FAIR Principles: data must be Findable, Accessible, Interoperable, and Reusable (Wilkinson et al., 2016). In other words, prospective analysts must be able to easily identify datasets appropriate to their needs and know how to access and use the data assets. This is best accomplished if data is stored in standardized formats, with common conventions for rich metadata and easy-to-use tools for search and visualization.
 
@@ -132,7 +132,7 @@ While the adoption of consistent data formatting conventions is a welcome develo
 
 To encourage data sharing, the field of neurophysiology also needs greater standardization in the way data mining is tracked and credited. Digital object identifiers (DOIs) are an essential first step; we regret not making them an integral part of the Visual Coding data releases. However, they have not solved the problem of discovering reuse as they are not always included in publications. It is more common to include a reference to the original paper in which the dataset was described, but this makes it difficult to distinguish instances of reuse from other types of citations. Currently the onus is on those releasing the data to keep track of who accesses it. To take one example, the cai-1 calcium indicator calibration dataset from the Svoboda Lab at HHMI Janelia Research Campus (GENIE Project, 2015) only has five citations tracked in Google Scholar. Yet a deeper dive into the literature reveals that this dataset has been reused in a wide range of publications and conference papers that benchmark methods for inferring spike rate from calcium fluorescence signals, of which there are likely over 100 in total. Many of these papers only cite the original publication associated with this dataset (Chen et al., 2013), refer to the repository from which the data was downloaded (CRCNS), or do not cite the data source at all. The lack of an agreed-upon method for citing datasets (like we have for journal articles) is a loss for the community as it hinders our ability to give appropriate credit to those responsible for collecting widely used datasets. A simple, widely accepted method for citing data would benefit all authors as it has been shown that publications within the astrophysics community that provide links to the underlying data gain more citations on average than those that do not (Dorch et al., 2015).
 
-## Cloud-based analysis tools
+### Cloud-based analysis tools
 
 To enable more efficient data mining, end users should ideally not need to download data at all. This is particularly true as the volume of data keeps on growing (e.g., a single Allen Brain Observatory Neuropixels session generates about 1.2 TB of raw data). Therefore, the goal should be to bring users to the data, rather than the data to users. This is supported by our interviews with end users who cited slow download speeds as a key challenge.
 
@@ -140,7 +140,7 @@ Generic analysis tools, such as Amazon’s SageMaker and Google’s Colab, alrea
 
 Cloud-based analysis is not a panacea. Although individual tools can be vendor-agnostic, there will be a push to centralize around a single cloud platform, given the high cost transferring data out of cloud storage. This could lead to a single company monopolizing the storage of neurophysiology data; it would therefore be prudent to invest in a parallel distribution system that is controlled by scientists (Saunders and Davis, 2022). In addition, it is (perhaps not surprisingly) notoriously easy for unwary users to provision expensive cloud computing resources; a single long-running analysis on a powerful cloud workstation could exhaust a lab’s entire annual budget without safeguards in place. Despite these drawbacks, we believe that a move to cloud-based analysis will be essential for reducing the friction involved in adopting new datasets. We plan to move toward supporting a cloud-native sharing model more directly in our upcoming data releases.
 
-## Fostering a culture of data reuse
+### Fostering a culture of data reuse
 
 The value of open data is best realized when it is conveniently accessible. Whether this involves new discoveries or comparing results across studies, data mining is vital for progress in neuroscience, especially as the field as a whole shifts toward more centralized ‘Observatories’ for mice and non-human primates (Koch et al., 2022). The BRAIN Initiative has invested considerable resources in advancing instruments and methods for recording a large number of neurons in more sophisticated behavioral contexts. Yet the analytical methods for understanding and interpreting large datasets are lagging, as many of our theoretical paradigms emerged from an era of small-scale recordings (Urai et al., 2022). In order to develop theories that can explain brain-wide cellular neurophysiology data, it is critical to maximize data reuse.
 

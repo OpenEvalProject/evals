@@ -39,17 +39,33 @@ Here we report that splicing variants of BMP2K constitute a two-element system r
 
 ## Results
 
-## The levels of BMP2K splicing variants are initially increased but later reduced during mouse erythroid differentiation
+### The levels of BMP2K splicing variants are initially increased but later reduced during mouse erythroid differentiation
 
 To choose a proper biological context to study cellular functions of BMP2K, we mined gene expression databases and found that the expression of human BMP2K gene is high in the early erythroid lineage (biogps.org) and upregulated during erythroid maturation in a manner similar to that of erythroid-enriched markers, such as TFRC (transferrin receptor 1) (Novershtern et al., 2011). To verify these data, we analyzed mRNA abundance of mouse BMP2K in an ex vivo erythropoiesis model. According to the UniProtKB database, mouse expresses two splicing variants (isoforms) of the kinase, the longer (BMP2K-L) and the shorter (BMP2K-S), which result from alternative mRNA splicing. We observed that in isolated mouse fetal liver erythroblasts differentiated with erythropoietin (EPO)-containing medium, mRNA levels of BMP2K-L and BMP2K-S increased gradually, similarly to TFRC (Figure 1—figure supplement 1A).
 
 We next analyzed protein levels of TFRC and BMP2K variants at consecutive time-points (24, 48 and 72 hr) of differentiation. While the amounts of TFRC were markedly elevated, the abundance of BMP2K-L and -S was initially upregulated and subsequently downregulated (Figure 1A). Noteworthy, the proportion between the intensities of western blotting detection of the two isoforms (L/S ratio) changed with time of differentiation, as BMP2K-S protein was upregulated earlier (the highest levels detected at 24 hr) than that of BMP2K-L (the highest levels detected at 48 hr) (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blots showing the levels of TFRC and BMP2K splicing variants (L and S) at different time-points during erythropoietin (EPO)-stimulated differentiation of mouse fetal liver erythroblasts. Graphs show fold changes in non-normalized protein levels obtained by densitometric analysis of western blotting results (n = 5 +/- SEM). (B) The proportion between the detection intensities of BMP2K-L and -S (L/S ratio) calculated after densitometric analysis of bands from western blots represented in A (n = 6 +/- SEM). (C) Dot plot showing fluorescence intensities of the indicated markers on the surfaces of mouse fetal liver erythroblasts stimulated with EPO for 96 hr. Gates distinguish consecutive differentiation stages (R0–R5) of erythroblasts isolated by fluorescence activated cell sorting (FACS). (D) Western blots (short and long exposures) showing the levels of TFRC and BMP2K variants in the indicated FACS-isolated differentiation stages of erythroblasts. Graph shows the L/S ratio calculated after densitometric analysis of western blotting results (n = 5 +/- SEM). (E) Western blots showing the levels of BMP2K splicing variants or total and Thr156-phosphorylated μ2 (P-μ2) in lysates from the indicated human cell lines. Ponceau staining serves as a gel loading control. (F) Western blots showing the efficiency of depleting all BMP2K variants using shRNA (shBMP2K) in K562 cells, and its effect on the levels of total and phosphorylated μ2 and TFRC as compared to non-depleted cells (empty pLKO vector or non-targeting shRNA, shCtr). Graph shows the L/S ratio calculated after densitometric analysis of western blotting results (n = 6 +/- SEM). (G) Fold changes in mRNA levels of the indicated erythroid markers in control cells or in cells depleted of all BMP2K splicing variants using shRNA (n = 3 or 4 +/- SEM). (H) Percentage of benzidine-positive control cells or cells depleted of BMP2K using shRNA, under basal growth conditions or after stimulation for 48 hr or 72 hr with 20 μM hemin (n = 3 +/- SEM). Values measured for BMP2K-depleted cells (F, G and H) were compared statistically to those measured for shCtr-treated cells. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fold changes in mRNA levels of transferrin receptor 1 (TFRC) as well as of the longer or shorter BMP2K splicing variants in erythroblasts isolated from mouse fetal liver and differentiated for the indicated time periods using erythropoietin (EPO)-containing medium (n = 4 +/- SEM). (B) Western blots showing the levels of BMP2K splicing variants in lysates from the indicated human cell lines. Ponceau staining serves as a gel loading control. (C) Western blots (short and long exposures) showing the efficiencies of depleting all BMP2K variants using CRISPR/Cas9 approach (gBMP2K#1 or #2) in K562 cells, and its effects on the levels of total and phosphorylated μ2 (P-μ2), as compared to non-depleted cells (non-targeting gRNAs, gCtr#1 and #2). Graph shows the L/S ratio calculated after densitometric analysis of western blotting results (n = 5 +/- SEM). (D) Fold changes in mRNA levels of the indicated erythroid markers in control cells or in cells depleted of all BMP2K splicing variants using CRISPR/Cas9 approach (n = 3 +/- SEM). (E) Percentage of benzidine-positive control cells or cells depleted of BMP2K using CRISPR-Cas9 approach, under basal growth conditions or after stimulation for 48 hr with 20 μM hemin (n = 4 +/- SEM). Values measured for BMP2K-depleted cells (C–E) were compared statistically to the average of values measured for gCtr#1 and gCtr#2-transduced cells. *p<0.05, **p<0.01.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Representative images of experiments quantified in Figure 1H and Figure 1—figure supplement 1E showing benzidine staining of non-treated (RPMI medium) or 20 µM hemin-treated (48 hr) K562 cells, control or depleted of all BMP2K splicing variants using shRNA (A) or CRISPR/Cas9 (B) approach. Dark grey/black cells contain hemoglobin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) An example of gating strategy for flow cytometric analyses applied for K562 cells transduced with empty pLKO vector, including cell gate (FSC vs SSC) and singlet discrimination gates (FSC-H vs FSC-W, SSC-H vs SSC-W). This strategy was applied for all flow cytometry experiments. (B and D) Overlay histograms showing fluorescence signal of AlexaFluor647 or AlexaFluor488, indicating Tf or dextran abundance, respectively, in control cells or cells depleted of BMP2K gene products using shRNA (B) or CRISPR/Cas9 (D) approach. Control constructs used were: empty pLKO vector and non-targeting shRNA, shCtr (B) or non-targeting gRNAs, gCtr#1 and #2 (D). (C and E) Flow cytometry analysis of AlexaFluor647-Transferrin (Tf) or AlexaFluor488-dextran levels in control K562 cells or cells depleted of all BMP2K splicing variants using shRNA (C) or CRISPR/Cas9 (E) approach, after allowing for continuous Tf endocytosis at 37°C for 5' or 40', or after 40' incubation with dextran at 37°C (n = 3 or 4 in C and 4 in E +/- SEM). (F) Overlay histograms showing fluorescence signal of AlexaFluor647, indicating Tf abundance during pulse-chase endocytosis assay in control cells or cells depleted of all BMP2K splicing variants using shRNA. (G, H) Pulse chase Tf uptake in cells with depletion of all BMP2K splicing variants using shRNA. (G) The empty bars represent the amount of fluorescently-labelled Tf pre-bound to cells while the solid bars show the amount of Tf internalized at 37°C for 5’ (n = 3 +/- SEM). (H) The percentage of internalized Tf with respect to the amount of pre-bound Tf (n = 3 +/- SEM). The histograms (B, D and F) illustrate representative experiments included in the analyses shown in C, E, G and H. Values obtained for BMP2K-depleted cells were compared statistically to those in shCtr-treated cells (C, G and H) or to the average of values measured for gCtr#1 and gCtr#2-transduced cells (E). *p<0.05, **p<0.01.
+
 EPO-stimulated mouse fetal erythroblast cultures are a heterogeneous mixture of cells at various differentiation stages (Zhang et al., 2003). To assess precisely the amounts of BMP2K variants at particular stages, we labelled EPO-stimulated cells with antibodies recognizing mouse erythroid surface markers, CD71/TFRC and Ter-119 (Zhang et al., 2003). This allowed us to isolate, by fluorescence activated cell sorting (FACS), the earliest primitive progenitors (CD71low/Ter-119low – population R0) as well as further stages of erythroblast differentiation (consecutively: CD71med/Ter-119low – R1, CD71high/Ter-119low – R2, CD71high/Ter-119high – R3, CD71med/Ter-119high – R4 and CD71low/Ter-119high – R5) (Figure 1C). Consistently with the analysis of heterogeneous cultures (Figure 1B), the levels of BMP2K isoforms were low in the early stages (R0 and R1), the highest in the transitory stages (R2 and R3) and reduced at the last stages (R4 and R5) (Figure 1D). Again, erythroid differentiation was associated with a change in the L/S ratio. It was in favor of BMP2K-S (L/S < 1) in primitive progenitors (R0) but was shifted towards BMP2K-L (L/S > 1) upon differentiation, being the highest at R3 (L/S > 2.5) and remaining high at R4 and R5 (L/S ~ 2) when total BMP2K protein levels were again downregulated (Figure 1D).
 
 Thus, we found that during erythroid differentiation, the levels of BMP2K splicing variants are initially upregulated and subsequently reduced. The ratio between the two isoforms changes during erythroid differentiation, with BMP2K-S being predominant in the early erythroid precursors and BMP2K-L prevailing during differentiation and maturation.
 
-## Reducing the levels of BMP2K splicing variants in K562 cells promotes erythroid differentiation
+### Reducing the levels of BMP2K splicing variants in K562 cells promotes erythroid differentiation
 
 The observed changes in protein abundance of mouse BMP2K variants upon differentiation could suggest that the initial increase of their levels would promote early steps of erythropoiesis while their subsequent decrease would favor erythroid maturation. To verify this complex hypothetical scenario, we sought a simpler cellular model. We found that K562 human erythroleukemia cells contain much higher amounts of BMP2K than various immortalized, solid tumor or non-erythroid blood cancer cell lines (Figure 1E and Figure 1—figure supplement 1B). In K562 cells the longer isoform (BMP2K-L) appeared as more abundant than the shorter (BMP2K-S) (Figure 1E,F and Figure 1—figure supplement 1B,C). Their L/S ratio was approximately 2:1 (calculated for control cells shown in Figure 1F and Figure 1—figure supplement 1C).
 
@@ -59,7 +75,7 @@ To assess the effects of BMP2K depletion on erythroid differentiation, we measur
 
 Collectively, elevated expression of erythroid markers and increased hemoglobin production in K562 cells depleted of all BMP2K splicing variants suggested that at least one of the variants inhibits cellular events responsible for erythroid differentiation. As the extent of differentiation correlated with the ratio between the remaining L and S levels it is possible that the balance between variant abundance affects erythroid maturation. These observations need to be verified in more physiological models of erythropoiesis.
 
-## The role of BMP2K in CME does not explain its involvement in erythroid differentiation
+### The role of BMP2K in CME does not explain its involvement in erythroid differentiation
 
 As BMP2K is a putative endocytic kinase found among interactors of µ2 (Brehme et al., 2009), it could affect erythroid differentiation via regulation of AP-2-dependent CME. Consistent with its postulated role in phosphorylating the µ2 adaptin at Thr156 (Wrobel et al., 2019), K562 cells had high phospho-µ2 levels (Figure 1E) that were strongly reduced upon BMP2K depletion (Figure 1F and Figure 1—figure supplement 1C). However, while the phosphorylation of µ2 was shown to promote endocytosis (Olusanya et al., 2001; Ricotta et al., 2002; Wrobel et al., 2019), BMP2K depletion increased continuous uptake of fluorescently labelled Tf and 10 kDa dextran (a fluid-phase marker) by K562 cells (Figure 1—figure supplement 3A–E). shBMP2K increased early (5 min) and steady state (40 min) Tf uptake as well as dextran internalization, all by around 30% (Figure 1—figure supplement 3B,C). gBMP2K#1 or #2 had a weaker effect on endocytosis than shBMP2K, increasing early and steady state Tf uptake roughly by 10–15% and dextran internalization only by 5–15% (Figure 1—figure supplement 3D,E).
 
@@ -67,9 +83,21 @@ The elevated Tf uptake despite lower µ2 phosphorylation in BMP2K-depleted cells
 
 Collectively, despite lower Tf endocytosis efficiency, cells lacking all BMP2K variants showed higher continuous Tf uptake, possibly due to elevated surface abundance of Tf receptors. The latter observation made the effects of BMP2K depletion on Tf uptake difficult to dissect. Thus, although we confirmed the implication of BMP2K kinase in CME, this role could not explain its involvement in erythroid differentiation. Therefore, we hypothesized that in addition to endocytosis, BMP2K variants could regulate other cellular events to affect red blood cell maturation.
 
-## BMP2K splicing variants can associate with SEC16A protein and localize to the early secretory compartment
+### BMP2K splicing variants can associate with SEC16A protein and localize to the early secretory compartment
 
 To find out in which other cellular processes the two BMP2K isoforms could function, we investigated their interactomes. To this end, we performed proximity biotinylation (BioID) followed by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) in HEK293 cells ectopically expressing the L or the S variant tagged with a mutant BirA biotin ligase (BirA*) at their N- or C-termini (Figure 2—figure supplement 1A,B). To avoid artifacts due to BirA tag at either of the termini, we focused on proteins detected as common interactors of N- and C-terminally tagged BMP2K isoforms (Supplementary file 1-Table 1,2, Figure 2A, Figure 2—figure supplement 1C). Within the two variant-specific interactomes, we found proteins involved in vesicular transport or mRNA translation and transport (Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig2-v2.jpg)
+
+**Figure 2.:** (A) Dot plots showing BioID-MS detection scores (log scale) of proteins found as proximal to both N- and C-terminally tagged BMP2K-S or -L variants in HEK293 cells. (B) Levels of BMP2K-L, BMP2K-S, EGFP or EGFP-tagged SEC16A in whole cell lysates (INPUTS) or in immunoprecipitates (IP) using anti-GFP antibodies from HEK293 cells. Different combinations of simultaneous ectopic expression of the analyzed proteins are indicated above the images. Graph shows non-normalized densitometric analysis of western blotting bands expressed in arbitrary units (a.u.; n = 3 +/- SEM). (C) Maximum intensity projection images from confocal microscope showing localization of ectopically expressed EGFP-tagged BMP2K-L or -S with respect to the indicated proteins and cell nuclei marked with DAPI stain (blue) in K562 cells. Insets: Magnified views of boxed regions in the main images. Scale bars, 10 µm. *p<0.05, **p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of fusion proteins that were ectopically expressed in HEK293 cells for the purpose of the proximity biotinylation (BioID) analysis. (B) Western blots showing transient expression in HEK293 cells of BMP2K-L or BMP2K-S, N- or C- terminally tagged with BirA* biotin ligase as well as non-tagged L or S isoforms. Bands representing the full-length proteins are indicated by arrows (for non-tagged L and S isoforms) or arrowheads (for BirA*-tagged proteins). Actin was used as a gel loading control. (C) Cytoscape diagrams (www.cytoscape.org) showing interactions between proteins detected in BioID as proximal to BMP2K-L or -S isoforms with indications of functionally related protein groups (CME – clathrin-mediated endocytosis). Green color indicates known regulators of vesicular trafficking. Red asterisks mark vesicular trafficking-related proteins detected as proximal to only one of the isoforms.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative maximum intensity projection images from confocal microscope showing intracellular localization of endogenous BMP2K with respect to endogenous EPS15R in K562 cells depleted of single (shBMP2K-L or shBMP2K-S) or all BMP2K splicing variants (shBMP2K), as compared to empty pLKO vector or non-targeting shRNA construct, shCtr. Cell nuclei marked with DAPI stain (blue). Scale bar, 10 µm. (B) Integral fluorescence intensity of BMP2K staining, shown as arbitrary units (a.u.) per cell, quantified from microscopic images of cells depleted of BMP2K splicing variants as represented by those in A (n = 4 +/- SEM). Values in cells depleted of BMP2K variants were compared statistically to the levels in cells treated with shCtr. (C) Mean pixel intensity of EGFP fluorescence signal in the indicated cell regions (plasma membrane, PM, or juxtanuclear) shown as fold change over mean intensity in the remaining cell area (represented by dashed horizontal line). Quantification performed based on images of cells represented in Figure 2C: transduced with EGFP only, or EGFP-tagged BMP2K variants and stained using antibodies detecting SEC16A or SEC24B proteins (n = 1, >4000 cells/condition). *p<0.05, **p<0.01, ***p<0.01.
 
 Among regulators of vesicular transport found as proximal to both BMP2K isoforms were CME adaptors: NUMB, PICALM, EPS15R, and AGFG1 (HRB) (Benmerah et al., 1995; Chaineau et al., 2008; Coda et al., 1998; Miller et al., 2015; Santolini et al., 2000; Tebar et al., 1996; Figure 2A and Figure 2—figure supplement 1C). However, as proximal to BMP2K-S we also found proteins annotated to ER-Golgi transport, that is SEC16A, SEC24B and ARFGAP1 (Watson et al., 2006; Wendeler et al., 2007; Yang et al., 2002; Figure 2A and Figure 2—figure supplement 1C). Of note, SEC16A was detected with the highest MS score among all trafficking regulators identified for BMP2K-S (Figure 2A).
 
@@ -79,9 +107,17 @@ Next, we asked whether BMP2K isoforms localized intracellularly to endocytic and
 
 Altogether, both BMP2K-L and -S can interact with SEC16A and localize to an early secretory compartment, indicating that both variants could regulate SEC16A-dependent intracellular processes.
 
-## BMP2K splicing variants differentially regulate SEC16A protein levels and intracellular distribution
+### BMP2K splicing variants differentially regulate SEC16A protein levels and intracellular distribution
 
 To address whether BMP2K splicing variants could regulate SEC16A-dependent processes, we designed shRNAs to reduce the expression specifically of BMP2K-L or BMP2K-S. Silencing of the longer variant had no effect on the expression of the shorter, while BMP2K-S depletion only modestly reduced full length BMP2K-L levels (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blots showing the effect of shRNA-mediated depletion of single (shBMP2K-L or shBMP2K-S) or all BMP2K splicing variants (shBMP2K) on the levels of SEC16A and SEC24B proteins, as compared to empty pLKO vector or non-targeting shRNA construct, shCtr. Graphs show densitometric analysis of western blotting bands for the indicated proteins using tubulin abundance for normalization (n = 5 +/- SEM). (B) SEC16A mRNA fold levels in control cells or in cells with shRNA-mediated depletion of BMP2K variants (n = 5 +/- SEM). (C) Representative maximum intensity projection images from confocal microscope, showing the effect of shRNA-mediated depletion of BMP2K variants on immunolocalization of SEC16A and SEC31A proteins in K562 cells. Cell nuclei marked with DAPI stain (blue). Insets: Magnified views of boxed regions in the main images. Scale bar, 10 µm. (D and E) The number of juxtanuclear and dispersed SEC31A-positive vesicular structures per cell (D) or SEC31A mean fluorescence intensity per vesicular structure (SEC31A protein load) presented in arbitrary units (a.u. in E) in control cells or cells lacking BMP2K variants. Quantification from images represented by those in C (n = 5 +/- SEM). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blots showing the efficiencies of BMP2K-L or -S depletion by additional shRNAs (shBMP2K-L#2 and shBMP2K-S#2) and their effects on SEC16A protein levels as compared to control vectors (pLKO, shCtr) and shRNAs shown in Figure 3 (shBMP2K-L and shBMP2K-S). Graph shows densitometric analysis of western blotting bands for the indicated proteins using tubulin abundance for normalization (n = 3 +/- SEM). (B) Integral fluorescence intensity of juxtanuclear or dispersed SEC16A structures presented in arbitrary units (a.u.) per cell in control cells or in cells depleted of single (shBMP2K-L or shBMP2K-S) or all BMP2K splicing variants (shBMP2K). Quantifications performed based on images represented by those shown in Figure 3C (n = 5 +/- SEM). (C) Representative maximum intensity projection images from confocal microscope, showing the effect of shRNA-mediated depletion of BMP2K splicing variants on immunolocalization of SEC24B with respect to immunostained SEC31A protein in K562 cells. Cell nuclei marked with DAPI stain (blue). Insets: Magnified views of boxed regions in the main images. Scale bar, 10 µm. (D and E) Integral fluorescence intensity of juxtanuclear or dispersed SEC24B vesicular structures (D) and SEC31A mean fluorescence intensity (SEC31A protein load) of SEC24B-positive structures (E), presented in arbitrary units (a.u.) per cell, in control cells or cells lacking BMP2K variants. Quantifications in D and E performed based on images represented by those shown in C (n = 4 +/- SEM). Values obtained for cells depleted of BMP2K variants were compared statistically to the levels in cells treated with shCtr. *p<0.05, **p<0.01.
 
 First, we analyzed whether shRNA-mediated depletion of BMP2K-L or -S affected SEC16A abundance in K562 cells. shBMP2K-L led to a modest but reproducible increase, while shBMP2K-S reduced SEC16A protein levels (Figure 3A). Depletion of all BMP2K isoforms (shBMP2K) lowered SEC16A levels, to the same extent as shBMP2K-S (Figure 3A). By comparison, protein levels of SEC24B, were essentially unaffected by depletion of BMP2K variants (Figure 3A). To ensure that the observed changes in SEC16A abundance were not caused by RNAi off-target effects, we tested additional shRNAs. Reassuringly, shBMP2K-L#2 increased while shBMP2K-S#2 reduced SEC16A amounts (Figure 3—figure supplement 1A). The regulation of SEC16A protein levels by the BMP2K-L or -S variants was not due to altered gene transcription. We observed only ~30% downregulation of SEC16A mRNA levels in cells lacking all BMP2K variants (Figure 3B).
 
@@ -89,7 +125,7 @@ Next, we tested whether the absence of BMP2K isoforms affected intracellular dis
 
 Hence, BMP2K-L regulates negatively, while -S positively, SEC16A protein abundance and both variants control SEC16A intracellular distribution. Whether the underlying mechanism involves kinase activities of BMP2K variants or their physical interaction with SEC16A remains to be dissected.
 
-## The BMP2K-L/S system regulates abundance and distribution of COPII assemblies
+### The BMP2K-L/S system regulates abundance and distribution of COPII assemblies
 
 The observed regulation of SEC16A protein levels and distribution suggested that the two BMP2K variants could affect ERES function and therefore abundance of COPII assemblies. To verify this, we first analyzed the effects of BMP2K variant depletion on distribution of SEC24B, a COPII inner shell component identified as proximal to BMP2K-S in the BioID analysis (Figure 2A and Figure 2—figure supplement 1C). Similarly to SEC16A, in control cells, SEC24B-positive vesicular structures were concentrated juxtanuclearly or dispersed throughout the cytoplasm (Figure 3—figure supplement 1C,D). shBMP2K-L reduced integral intensity of the juxtanuclear but not of the dispersed SEC24B structures (Figure 3—figure supplement 1C,D). Upon shBMP2K-S, SEC24B staining was diffused as it was the case for SEC16A, with lower intensity of the juxtanuclear and higher of the dispersed structures (Figure 3—figure supplement 1C,D).
 
@@ -101,9 +137,17 @@ Having identified these differential roles of the two BMP2K variants, we investi
 
 Collectively, we identified a novel intracellular regulatory system, termed the BMP2K-L/S system, where the two BMP2K variants together control the abundance, SEC31A load and distribution of COPII assemblies. Further investigation should address how this dual regulation affects COPII-mediated trafficking.
 
-## BMP2K-L promotes while BMP2K-S restricts autophagic degradation and erythroid differentiation
+### BMP2K-L promotes while BMP2K-S restricts autophagic degradation and erythroid differentiation
 
 SEC24B, whose intracellular distribution is regulated by the BMP2K-L/S system (Figure 3—figure supplement 1C–E), also contributes to autophagy (Jeong et al., 2018). As BMP2K was fished out as a stimulator of LC3-dependent autophagy (Potts et al., 2013), we verified whether BMP2K variants regulated autophagic degradation in K562 cells. We observed that shBMP2K-L reduced, while shBMP2K-S increased, the levels of lipidated LC3B (Figure 4A), indicative of inhibited or activated autophagy, respectively. shBMP2K upregulated the abundance of LC3B-II, but to a lesser extent than BMP2K-S depletion (Figure 4A). This intermediate effect of global BMP2K silencing could result from opposing actions of the two isoforms.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blots showing the effects of depletion of single (shBMP2K-L or shBMP2K-S) or all BMP2K splicing BMP2K variants on the levels of LC3B-I, LC3B-II and p62 proteins in K562 cells, as compared to empty pLKO vector or non-targeting shRNA construct, shCtr. Graphs show densitometric analysis of western blotting bands for the indicated proteins using tubulin abundance for normalization (n = 4 +/- SEM). (B) p62 mRNA fold change levels in control cells or in cells with shRNA-mediated depletion of BMP2K variants, as in A (n = 5 +/- SEM). (C) The abundance of p62 protein in non-treated cells or in cells treated for 15 hr with 75 nM bafilomycin A1 (BafA1). Graph shows calculated fold increase of p62 protein levels induced by BafA1, obtained after densitometric analysis of western blotting bands using vinculin abundance for normalization (n = 1). (D) Percentage of benzidine-positive control cells or cells depleted of BMP2K variants, under basal growth conditions or after stimulation for 48 hr with 20 μM hemin (n = 5 +/- SEM). (E) Fold changes in mRNA levels of the indicated erythroid markers in control cells or in cells depleted of all BMP2K splicing variants using shRNA (n = 5 +/- SEM). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58504/elife-58504-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative images of experiments quantified in Figure 4D showing benzidine staining of non-treated (RPMI medium) or 20 µM hemin-treated (48 hr) K562 cells, control or depleted of single BMP2K splicing variants using shRNA. Dark grey/black cells contain hemoglobin.
 
 To validate the above results we monitored the levels of SQSTM1/p62 protein (hereafter referred to as p62), an established autophagic cargo. We observed that cells lacking BMP2K-L, although having unchanged p62 mRNA levels (Figure 4B), showed a strong increase of its protein content (Figure 4A), likely due to restrained autophagy. Conversely, cells lacking BMP2K-S, despite a strong increase in p62 mRNA levels (Figure 4B), did not accumulate the protein (Figure 4A), which could be explained by elevated autophagic degradation. These observations reinforced the opposing effects of both BMP2K variants on autophagy. In turn, cells treated with shBMP2K showed slightly elevated levels of both p62 protein and mRNA (Figure 4A,B), a phenotype difficult to interpret unequivocally.
 
@@ -129,11 +173,273 @@ Endocytosis and autophagy (Fraser et al., 2017; Tooze et al., 2014) as well as s
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-243, RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1573, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BMP2K shRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>TRCN0000000915</td>
+      <td>pLKO.1 Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BMP2K-L shRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pLKO.1 Lentiviral construct to transfect and express the shRNA. See Supplementary file 1-Table 3.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BMP2K-S shRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pLKO.1 Lentiviral construct to transfect and express the shRNA. See Supplementary file 1-Table 3.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>empty pLKO.1 plasmid</td>
+      <td>Sigma-Aldrich</td>
+      <td>SHC001</td>
+      <td>pLKO.1 Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>non-targeting shRNA plasmid</td>
+      <td>Sigma-Aldrich</td>
+      <td>SHC202</td>
+      <td>pLKO.1 Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BMP2K gRNAs (gBMP2K#1and #2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>lentiCRISPRv2 Lentiviral construct to transfect and express the gRNA together with Cas9. See Supplementary file 1-Table 4.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>non-targeting gRNAs (gCtr#1and #2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>lentiCRISPRv2 Lentiviral construct to transfect and express the gRNA together with Cas9. See Supplementary file 1-Table 4.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP-SEC16A</td>
+      <td>Addgene</td>
+      <td>Cat# 36155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary mouse fetal liver cells</td>
+      <td>Mossakowski Medical Research Centre Polish Academy of Sciences</td>
+      <td></td>
+      <td>Freshly isolated from Mus musculus (strain C57BL/6J)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BMP2K (mouse monoclonal, ascites)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-134284, RRID:AB_2227882</td>
+      <td>WB(1:2000), IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SEC16A (rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat# A300-648A, RRID:AB_519338</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SEC16A (rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>Cat# HPA005684, RRID:AB_1079189</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SEC24B (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12042, RRID:AB_2797807</td>
+      <td>WB(1:1000), IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SEC31A (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 612350, RRID:AB_399716</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EPS15R (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76004, RRID:AB_1310187</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LC3B (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2775, RRID:AB_915950</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SQSTM1/p62 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 610833, RRID:AB_398152</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-μ2 (Thr156) (D4F3) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 7399, RRID:AB_10949770</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-μ2 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 611350, RRID:AB_398872</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# AF4240, RRID:AB_884445</td>
+      <td>IP(1:60)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-CD71/TFRC (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-0711-80, RRID:AB_1834356</td>
+      <td>FC(1:160)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugatedanti-TER-119 (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-5921-81, RRID:AB_466041</td>
+      <td>FC(1:80)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human EPO</td>
+      <td>PeproTech</td>
+      <td>Cat# 100–64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H9039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>benzidine dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B3383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bafilomycin A1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B1793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Harmony 4.9</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td>Imaging and Analysis Software for Opera Phenix microscope</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prismeight software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647-conjugated Transferrin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# T23366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488-conjugated 10 kDa dextran</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# T23366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads MyOne Streptavidin-coupled magnetic beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 The following antibodies were used: anti-BMP2K (sc-134284) and anti-GAPDH (sc-25778) from Santa Cruz; anti-phospho-μ2 (#7399), anti-SEC24B (#12042) and anti-LC3B (#2775) from Cell Signaling Technologies; anti-EPS15R (ab76004) from Abcam; anti-tubulin (T5168), anti-vinculin (V9131) and anti-beta-actin (A5441) from Sigma; anti-SQSTM1/p62 (610833), anti-μ2 (611350) and anti-SEC31A (612350) from BD Biosciences; anti-GFP (AF4240) from R&D Systems; anti-SEC16A (A300-648A) from Bethyl Laboratories Inc; anti-SEC16A (HPA005684) from Atlas Antibodies; anti-TFRC (H68.4), APC-conjugated anti-TFRC (#17-0711-80) and PE-conjugated anti-Ter-119 (#12-5921-81) from Thermo Fisher Scientific; secondary horseradish peroxidase (HRP)-conjugated goat anti-mouse and goat anti-rabbit antibodies from Jackson ImmunoResearch; secondary Alexa Fluor 488-conjugated anti-mouse and Alexa Fluor 555-conjugated anti-rabbit antibodies from Thermo Fisher Scientific.
 
-## Plasmids
+### Plasmids
 
 To obtain pcDNA3.1-BMP2K-L construct, full-length human BMP2K-L was amplified from HEK293 cell cDNA by PCR using oligonucleotides 5’-ggggAAGCTTATGAAGAAGTTCTCTCGGATGCC-3’ (forward with HindIII restriction site) and 5’-ggggGGATCCCTACTGTTTAGAAGGAAATGGAGCAG-3’ (reverse with BamHI restriction site), subcloned into the pcDNA3.1 vector, and sequence-verified. To obtain pcDNA3.1-BMP2K-S construct, full-length human BMP2K-S was amplified from the clone IRAT32H09 (SourceBioScience) by PCR with the oligonucleotides 5’-ggggAAGCTTATGAAGAAGTTCTCTCGGATGCC-3’ (forward with HindIII restriction site) and 5’-AACAGCTATGACCATG-3’ (reverse M13 primer), subcloned into the pcDNA3.1 vector, and sequence-verified.
 
@@ -141,13 +447,13 @@ The pcDNA3.1-Myc-BirA*-BMP2K-L or pcDNA3.1-Myc-BirA*-BMP2K-S constructs were obt
 
 To obtain the pUltra-EGFP-BMP2K-L or pUltra-EGFP-BMP2K-S lentiviral constructs, first, pEGFP-BMP2K-L and pEGFP-BMP2K-S plasmids were generated. The pEGFP-BMP2K-L construct was obtained by restriction digestion of pcDNA3.1-BMP2K-L with HindIII and BamHI and subcloning the insert into pEGFP-C3 vector. The pEGFP-BMP2K-S construct was obtained by amplification of BMP2K-S from pcDNA3.1-BMP2K-S using oligonucleotides 5’-ggggAAGCTTATGAAGAAGTTCTCTCGGATGCC-3’ (forward with HindIII restriction site) and 5’-ggggGGATCCTTACTGTGAAGCAAAATAAGCCTTC-3’ (reverse with BamHI restriction site) and subcloning into pEGFP-C3 vector. Next, pEGFP-BMP2K-L or pEGFP-BMP2K-S plasmids were digested with AgeI and BamHI restriction enzymes and the inserts were subcloned into pUltra-Chili vectors, substituting their dTomato inserts with the EGFP-BMP2K coding sequences.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 HEK293 cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM) and K562 cells in RPMI-1640 medium (Sigma-Aldrich). All media had high glucose concentration and were supplemented with 10% fetal bovine serum and 2 mM L-glutamine (Sigma-Aldrich). Hemin (H9039, Sigma-Aldrich) was used to stimulate erythroid differentiation of K562 cells at 20 μM concentration for 48 hr or 72 hr. Hemin 4 mM stocks were prepared according to the published protocol (Addya et al., 2004). Briefly, 13 mg of hemin was resuspended in 200 μl of 0.5 M sodium hydroxide, mixed with 250 μl of 1 M Tris (pH 7.8) and H2O was added to a final volume of 5 ml. K562 cells were also treated for 48 hr with 75 nM bafilomycin A1 (B1793, Sigma-Aldrich) to assess autophagic flux.
 
 The identity of K562 cells has been authenticated by STR profiling. Their profile matched all of the reference ATCC STR loci. These cells were regularly tested as mycoplasma-negative.
 
-## Cell transfection and lentiviral transduction
+### Cell transfection and lentiviral transduction
 
 For western blotting in HEK293 cells, 2.6*105 cells were seeded per well in 12-well plates. For co-immunoprecipitation of proteins ectopically expressed in HEK293 cells, 6*105 cells were seeded in 60 mm dishes. The cells were transfected after 24 hr with plasmid DNA using Lipofectamine 2000 Transfection Reagent (Thermo Fisher Scientific) according to the manufacturer’s protocol.
 
@@ -155,31 +461,31 @@ Lentiviral particles to transduce K562 cells were produced in HEK293T cells usin
 
 For overexpression of EGFP-tagged BMP2K variants, K562 cells were transduced for 24 hr with lentiviral particles containing pUltra-EGFP-BMP2K-L or -S plasmids and analyzed after three subsequent days of culture.
 
-## Mouse fetal liver erythroblast isolation, ex vivo differentiation and FACS
+### Mouse fetal liver erythroblast isolation, ex vivo differentiation and FACS
 
 Mouse fetal liver erythroid progenitors were isolated and stimulated for differentiation as described (Zhao et al., 2014). Briefly, 8–10 livers were extracted from embryonic day 13.5 C56/BL6 mouse embryos and manually disrupted. Ter119-positive differentiated cells were recognized using specific biotin-conjugated antibodies (13-5921-81) and removed from the cell suspension using Dynabeads MyOne Streptavidin-coupled magnetic beads (65001; both reagents from Thermo Fisher Scientific). To induce erythroid differentiation, 4*105 purified and washed cells were cultured on fibronectin-coated 12-well plates in the presence of erythropoietin (EPO)-containing Iscove’s Modified Dulbecco’s Medium: 2 U/ml recombinant human EPO (100-64), 10 μg/ml insulin (I3536), 200 μg/ml holo-transferrin (T0665), 0.1 mM β-mercaptoethanol (M3148), 1% BSA, 15% FBS and 2 mM L-glutamine (EPO from PeproTech and other reagents from Sigma-Aldrich). After 24 hr, 48 hr or 72 hr of differentiation the cells were harvested for western blotting or qRT-PCR analyses.
 
 To analyze protein levels in mouse erythroblasts at various stages of differentiation, the isolated mouse fetal liver progenitors were differentiated for 96 hr and labeled with APC-conjugated anti-TFRC and PE-conjugated anti-Ter-119 antibodies as described (Zhao et al., 2014). The labeled cells were FACS-separated using BD FACSAria II cell sorter and harvested for western blotting analysis.
 
-## Immunofluorescence staining and microscopy
+### Immunofluorescence staining and microscopy
 
 K562 cells (non-treated or transduced with lentiviral plasmids) were transferred to ice, fixed with 3% paraformaldehyde for 15 min on ice followed by 15 min at room temperature. After three washes with PBS, cells were immunostained in suspension using an adapted version of a protocol described for adherent cells (Mamińska et al., 2016). Stained cells were resuspended in 0.5% low-melting agarose (Sigma-Aldrich) and transferred to microscopy 96-well plates (Greiner Bio-One). The plates were scanned using Opera Phenix high content screening microscope (PerkinElmer) with 40 × 1.1 NA water immersion objective. Harmony 4.9 software (PerkinElmer) was used for image acquisition and their quantitative analysis. To quantify chosen parameters in the obtained images (number of vesicular structures per cell, mean fluorescence intensity per structure, integral fluorescence intensity per cell and mean pixel intensity), more than 40 microscopic fields were analyzed per each experimental condition. Maximum intensity projection images were obtained from 7 to 8 z-stack planes with 1 μm interval. Pictures were assembled in Photoshop (Adobe) with only linear adjustments of contrast and brightness.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed in RIPA buffer (1% IGEPAL CA-630, 0.5% sodium deoxycholate, 0.1% SDS, 50 mM Tris (pH 7.4), 150 mM NaCl, 0.5 mM EDTA) supplemented with protease inhibitor cocktail (6 μg/ml chymostatin, 0.5 μg/ml leupeptin, 10 μg/ml antipain, 2 μg/ml aprotinin, 0.7 μg/ml pepstatin A and 10 μg/ml 4-amidinophenylmethanesulfonyl fluoride hydrochloride; Sigma-Aldrich) and phosphatase inhibitor cocktails (P0044 and P5726, Sigma-Aldrich). For HEK293 or K562 cells, protein concentration was measured with BCA Protein Assay Kit (Thermo Scientific) and 10–50 µg of total protein per sample were resolved on SDS-PAGE. For mouse fetal liver erythroblasts, RIPA lysate equivalents of 3*105 cells were resolved on SDS-PAGE. Resolved proteins were transferred to nitrocellulose membrane (Whatman), probed with specific primary and secondary antibodies, and detected using ChemiDoc imaging system (Bio-Rad) or Odyssey infrared imaging system (LI-COR Biosciences).
 
 Densitometric analysis of western blotting bands was performed using Image Lab 5.2.1 software (Bio-Rad). The raw data were normalized to tubulin band intensities (for K562 cells) or were not normalized (for mouse fetal liver erythroblasts) and presented as fold levels over respective controls.
 
-## Co-immunoprecipitation (Co-IP)
+### Co-immunoprecipitation (Co-IP)
 
 For co-immunoprecipitation of proteins ectopically expressed in HEK293 cells, an equivalent of 8*105 cells in 300 μl of RIPA buffer was used per reaction. The lysates were incubated for 1.5 hr at 4°C with 1 µg of goat anti-GFP antibodies with rotation. The immune complexes were captured by incubation with Protein G-agarose for 2 hr at 4°C with rotation. The agarose beads-bound protein complexes were spun down and washed three times using IP wash buffer (50 mM Hepes, pH 7.5, 300 mM NaCl, 1 mM EGTA, 1 mM EDTA, 1% Triton X-100, 10% glycerol, 5 μg/ml DNase and protease inhibitor cocktail) and one time using 50 mM Hepes, pH 7.5. The proteins were eluted from the beads by incubation at 95°C for 10 min with Laemmli buffer and analyzed by western blotting. Protein G-agarose beads were blocked in PBS with 5% BSA for 2 hr at 4°C with rotation before they were added to capture the immune complexes.
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
 Total RNA was isolated from cells with High Pure Isolation Kit (Roche). For cDNA synthesis random nonamers, oligo(dT)23 and M-MLV reverse transcriptase (Sigma-Aldrich) were used according to the manufacturer’s instructions. To estimate the expression of genes of interest we used primers designed with NCBI tool (and custom-synthesized by Sigma-Aldrich) listed in Supplementary file 1-Table 5. The qRT-PCR reaction was performed with the Kapa Sybr Fast ABI Prism qPCR Kit (KapaBiosystems) using a 7900HT Fast Real-Time PCR thermocycler (Applied Biosystems) with at least three technical repeats per experimental condition. The data were normalized according to the expression level of housekeeping gene, GAPDH (in K562 cells) or RPL19 (in mouse fetal liver erythroblasts) and presented as fold changes.
 
-## Transferrin and dextran uptake assay
+### Transferrin and dextran uptake assay
 
 For continuous transferrin (Tf) uptake experiments, 1*106 K562 cells were pre-incubated for 30 min on ice with 25 μg/ml Alexa Fluor 647-conjugated Tf (Thermo Fisher Scientific) and incubated at 37 °C for 5 or 40 min (early uptake or steady-state loading, respectively) followed by washing and fixation with 3% PFA for 5 min. For dextran uptake measurement, cells were incubated with 125 μg/ml Alexa Fluor 488-conjugated 10 kDa dextran (Thermo Fisher Scientific) at 37 °C for 40 min followed by washing and fixation.
 
@@ -187,15 +493,15 @@ The pulse-chase Tf uptake was performed according to a described protocol (Dannh
 
 Fixed (continuous uptake) or non-fixed (pulse-chase uptake) cells were resuspended in PBS and the fluorescence of incorporated Tf or dextran was recorded from 50 000 cells with a BD LSR Fortessa flow cytometer. The data collection and calculation of mean fluorescence intensities were performed using BD FACSDiva 6.2 software. Flow cytometry data were analyzed and visualized by FlowJo software (BD Biosciences).
 
-## Hemoglobin content analysis
+### Hemoglobin content analysis
 
 Hemoglobin content in K562 cells was visualized by staining with benzidine dihydrochloride (B3383, Sigma-Aldrich). Briefly, 300 µl of 2 mg/ml solution in 3% acetic acid was added to an equal volume of fresh RPMI-1640 medium with 2*105 cells, followed immediately by addition of 12 µl of 30% hydrogen peroxide solution. The stained cells were imaged in bright-field using the IX 7C Olympus microscope and the percentage of hemoglobin-positive cells was counted using the ImageJ software. At least 1000 cells from 4 to 6 images were counted per sample.
 
-## Proximity biotinylation (BioID)
+### Proximity biotinylation (BioID)
 
 The expression of Myc-BirA*-BMP2K-L, Myc-BirA*-BMP2K-S, BMP2K-L-BirA*-HA or BMP2K-S-BirA*-HA fusion proteins was assessed after transient transfection of HEK293 cells. The obtained constructs as well as empty vectors were linearized using PvuI restriction enzyme and introduced into HEK293 cells using Lipofectamine 2000 Transfection Reagent. The cells underwent antibiotic selection with 500 μg/ml G418 (Gibco) and clones stably expressing each of the fusion proteins were generated. The expression efficiencies among the obtained clones were assessed by western blotting (not shown in the manuscript figures) and two clones expressing the highest levels of each fusion protein were selected for biotin labelling. Biotin labelling and subsequent pull down of biotinylated proteins using Dynabeads MyOne Streptavidin-coupled magnetic beads (65001; Thermo Fisher Scientific) was performed in two biological repeats for each of the two selected clones, following the originally described protocol (Roux et al., 2013). The qualitative analysis of biotinylated proteins from each sample was performed by mass spectrometry and analyzed using Mascot software. The Mascot scores obtained for each of the two clones per condition (Myc-BirA*-BMP2K-L, Myc-BirA*-BMP2K-S, BMP2K-L-BirA*-HA or BMP2K-S-BirA*-HA) were averaged and the scores obtained for proteins identified in the control samples (false-positive background of Myc-BirA* or BirA*-HA) were subtracted. The final subtracted C-tag or N-tag scores were obtained from averaging the subtracted scores from two biological repeats.
 
-## Mass spectrometry of biotinylated proteins
+### Mass spectrometry of biotinylated proteins
 
 Proteins biotinylated in BioID were reduced with 5 mM TCEP (for 60 min at 60°C). To block reduced cysteines, 200 mM MMTS at a final concentration of 10 mM was added and the sample was incubated at room temperature for 10 min. Trypsin (Promega) was added at a 1:20 vol./vol. ratio and incubated at 37 °C overnight. Finally, trifluoroacetic acid was used to inactivate trypsin. Peptide mixtures were analyzed by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) using Nano-Acquity (Waters Corporation) UPLC system and LTQ-FT-Orbitrap (Thermo Scientific) mass spectrometer. Measurements were carried out in the positive polarity mode, with capillary voltage set to 2.5 kV. A sample was first applied to the Nano-ACQUITY UPLC Trapping Column using water containing 0.1% formic acid as a mobile phase. Next, the peptide mixture was transferred to Nano-ACQUITY UPLC BEH C18 Column using an acetonitrile gradient (5–35% acetonitrile over 160 min) in the presence of 0.1% formic acid with a flow rate of 250 nl/min. Peptides were eluted directly to the ion source of the mass spectrometer. Each LC run was preceded by a blank run to ensure that there was no carry-over of material from previous analysis. HCD fragmentation was used. Up to 10 MS/MS events were allowed per each MS scan.
 
@@ -203,6 +509,6 @@ Acquired raw data were processed by Mascot Distiller followed by Mascot Search (
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD013542.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are provided as mean ± SEM. Statistical analysis was performed with Prism 8 (GraphPad Software) using unpaired two-tailed Student t test (for qRT-PCR analysis and western blotting densitometry in K562 cells) or paired two-tailed Student t test (for uptake experiments, hemoglobin content analysis, western blotting densitometry in mouse fetal erythroblasts and quantified parameters from confocal microcopy analysis). Data points were marked according to the p value, where p>0.05 is left unmarked or indicated with p=value, *p<0.05, **p<0.01, ***p<0.001, ****<0.0001.

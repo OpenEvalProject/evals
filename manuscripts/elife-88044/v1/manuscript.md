@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00t33hh48 The Chinese University of Hong Kong Hong Kong Hong Kong
+1. The Chinese University of Hong Kong Hong Kong Hong Kong ([ROR:00t33hh48](https://ror.org/00t33hh48))
 
 † Corresponding author
 

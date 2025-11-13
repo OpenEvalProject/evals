@@ -43,6 +43,10 @@ Below we assess the performance of our software regarding three properties that 
 
 **Figure 1.:** Some of them are accessible from both TRex and TGrabs, while others are software specific (as shown at the very top). (a) The video is either recorded directly with our software (TGrabs), or converted from a pre-recorded video file. Live-tracking enables users to perform closed-loop experiments, for which a virtual testing environment is provided. (b) Videos can be tracked and parameters adjusted with visual feedback. Various exploration and data presentation features are provided and customized data streams can be exported for use in external software. (c) After successful tracking, automatic visual identification can, optionally, be used to refine results. An artificial neural network is trained to recognize individuals, helping to automatically correct potential tracking mistakes. In the last stage, many graphical tools are available to users of TRex, a selection of which is listed in (d).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig2-v2.jpg)
+
+**Figure 2.:** Starting at the top of the figure, video is either streamed to TGrabs from a file or directly from a compatible camera. At this stage, preprocessed data are saved to a .pv file which can be read by TRex later on. Thanks to its integration with parts of the TRex code, TGrabs can also perform online tracking for limited numbers of individuals, and save results to a .results file (that can be opened by TRex) along with individual tracking data saved to numpy data-containers (.npz) or standard CSV files, which can be used for analysis in third-party applications. If required, videos recorded directly using TGrabs can also be streamed to a .mp4 video file which can be viewed in commonly available video players like VLC.
+
 While accuracy is an important metric and specific to identification tasks, time and memory are typically of considerable practical importance for all tasks. For example, tracking-speed may be the difference between only being able to run a few trials or producing more reliable results with a much larger number of trials. In addition, tracking speed can make a major difference as the number of individuals increases. Furthermore, memory constraints can be extremely prohibitive making tracking over long video sequences and/or for a large number of individuals extremely time-consuming, or impossible, for the user.
 
 In all of our tests, we used a relatively modest computer system, which could be described as a mid-range consumer or gaming PC:
@@ -51,7 +55,189 @@ As can be seen in the following sections (memory consumption, processing speeds,
 
 Table 1 shows the entire set of videos used in this paper, which have been obtained from multiple sources (credited under the table) and span a wide range of different organisms, demonstrating TRex’ ability to track anything as long as it moves occasionally. Videos involving a large number (> 100) of individuals are all the same species of fish since these were the only organisms we had available in such quantities. However, this is not to say that only fish could be tracked efficiently in these quantities. We used the full dataset with up to 1024 individuals in one video (Video 0) to evaluate raw tracking speed without visual identification and identity corrections (next sub-section). However, since such numbers of individuals exceed the capacity of the neural network used for automatic identity corrections (compare also Romero-Ferrero et al., 2019 who used a similar network), we only used a subset of these videos (videos 7 through 16) to look specifically into the quality of our visual identification in terms of keeping identities and its memory consumption.
 
-## Tracking: speed and accuracy
+**Table 1.**
+ A list of the videos used in this paper as part of the evaluation of TRex, along with the species of animals in the videos and their common names, as well as other video-specific properties.Videos are given an incremental ID, to make references more efficient in the following text, which are sorted by the number of individuals in the video. Individual quantities are given accurately, except for the videos with more than 100 where the exact number may be slightly more or less. These videos have been analyzed using TRex’ dynamic analysis mode that supports unknown quantities of animals. Videos 7 and 8, as well as 13–11, are available as part of the original idtracker paper (Pérez-Escudero et al., 2014). Many of the videos are part of yet unpublished data: Guppy videos have been recorded by A. Albi, videos with sunbleak (Leucaspius delineatus) have been recorded by D. Bath. The termite video has been kindly provided by H. Hugo and the locust video by F. Oberhauser. Due to the size of some of these videos (>150 GB per video), they have to be made available upon specific request. Raw versions of these videos (some trimmed), as well as full preprocessed versions, are available as part of the dataset published alongside this paper (Walter et al., 2020).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Species</th>
+      <th>Common</th>
+      <th># ind.</th>
+      <th>Fps (Hz)</th>
+      <th>Duration</th>
+      <th>Size (Px2) (px2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>1024</td>
+      <td>40</td>
+      <td>8 min 20 s</td>
+      <td>3866 × 4048</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>512</td>
+      <td>50</td>
+      <td>6 min 40 s</td>
+      <td>3866 × 4140</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>512</td>
+      <td>60</td>
+      <td>5 min 59 s</td>
+      <td>3866 × 4048</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>256</td>
+      <td>50</td>
+      <td>6 min 40 s</td>
+      <td>3866 × 4140</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>256</td>
+      <td>60</td>
+      <td>5 min 59 s</td>
+      <td>3866 × 4048</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>128</td>
+      <td>60</td>
+      <td>6 min</td>
+      <td>3866 × 4048</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Leucaspius delineatus</td>
+      <td>Sunbleak</td>
+      <td>128</td>
+      <td>60</td>
+      <td>5 min 59 s</td>
+      <td>3866 × 4048</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Danio rerio</td>
+      <td>Zebrafish</td>
+      <td>100</td>
+      <td>32</td>
+      <td>1 min</td>
+      <td>3584 × 3500</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Drosophila melanogaster</td>
+      <td>Fruit-fly</td>
+      <td>59</td>
+      <td>51</td>
+      <td>10 min</td>
+      <td>2306 × 2306</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Schistocerca gregaria</td>
+      <td>Locust</td>
+      <td>15</td>
+      <td>25</td>
+      <td>1hr 0 min</td>
+      <td>1880 × 1881</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Constrictotermes cyphergaster</td>
+      <td>Termite</td>
+      <td>10</td>
+      <td>100</td>
+      <td>10 min 5 s</td>
+      <td>1920 × 1080</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Danio rerio</td>
+      <td>Zebrafish</td>
+      <td>10</td>
+      <td>32</td>
+      <td>10 min 10 s</td>
+      <td>3712 × 3712</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Danio rerio</td>
+      <td>Zebrafish</td>
+      <td>10</td>
+      <td>32</td>
+      <td>10 min 3 s</td>
+      <td>3712 × 3712</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Danio rerio</td>
+      <td>zebrafish</td>
+      <td>10</td>
+      <td>32</td>
+      <td>10 min 3 s</td>
+      <td>3712 × 3712</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Poecilia reticulata</td>
+      <td>Guppy</td>
+      <td>8</td>
+      <td>30</td>
+      <td>3 hr 15 min 22 s</td>
+      <td>3008 × 3008</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Poecilia reticulata</td>
+      <td>Guppy</td>
+      <td>8</td>
+      <td>25</td>
+      <td>1 hr 12 min</td>
+      <td>3008 × 300</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Poecilia reticulata</td>
+      <td>Guppy</td>
+      <td>8</td>
+      <td>35</td>
+      <td>3 hr 18 min 13 s</td>
+      <td>3008 × 3008</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Poecilia reticulata</td>
+      <td>Guppy</td>
+      <td>1</td>
+      <td>140</td>
+      <td>1 hr 9 min 32 s</td>
+      <td>1312 × 1312</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tracking: speed and accuracy
 
 In evaluating the 4.2 Tracking portion of TRex, the main focus lies with processing speed, while accuracy in terms of keeping identities is of secondary importance. Tracking is required in all other parts of the software, making it an attractive target for extensive optimization. Especially with regard to closed-loop, and live-tracking situations, there may be no room even to lose a millisecond between frames and thus risk dropping frames. We therefore designed TRex to support the simultaneous tracking of many (≥256) individuals quickly and achieve reasonable accuracy for up to 100 individuals – which are the two suppositions we will investigate in the following.
 
@@ -63,19 +249,173 @@ Generally, tracking software becomes slower as the number of individuals to be t
 
 In addition to speed, we also tested the accuracy of our tracking method, with regard to the consistency of identity assignments, comparing its results to the manually reviewed data (the methodology of which is described in the next section). In order to avoid counting follow-up errors as ‘new’ errors, we divided each trajectory in the uncorrected data into ‘uninterrupted’ segments of frames, instead of simply comparing whole trajectories. A segment is interrupted when an individual is lost (for any of the reasons given in 4.3.1 Preparing Tracking-Data) and starts again when it is reassigned to another object later on. We term these (re-)assignments decisions here. Each segment of every individual can be uniquely assigned to a similar/identical segment in the baseline data and its identity. Following one trajectory in the uncorrected data, we can detect these wrong decisions by checking whether the baseline identity associated with one segment of that trajectory changes in the next. We found that roughly 80 % of such decisions made by the tree-based matching were correct, even with relatively high numbers of individuals (100). For trajectories where no manually reviewed data were available, we used automatically corrected trajectories as a base for our comparison – we evaluate the accuracy of these automatically corrected trajectories in the following section. Even though we did not investigate accuracy in situations with more than 100 individuals, we suspect similar results since the property with the strongest influence on tracking accuracy – individual density – is limited physically and most of the investigated species school tightly in either case.
 
-## Visual identification: accuracy
+### Visual identification: accuracy
 
 Since the goal of using visual identification is to generate consistent identity assignments, we evaluated the accuracy of our method in this regard. As a benchmark, we compare it to manually reviewed datasets as well as results from idtracker.ai for the same set of videos (where possible). In order to validate trajectories exported by either software, we manually reviewed multiple videos with the help from a tool within TRex that allows to view each crossing and correct possible mistakes in-place. Assignments were deemed incorrect, and subsequently corrected by the reviewer, if the centroid of a given individual was not contained within the object it was assigned to (e.g. the individual was not part of the correct object). Double assignments per object are impossible due to the nature of the tracking method. Individuals were also forcibly assigned to the correct objects in case they were visible but not detected by the tracking algorithm. After manual corrections had been applied, ‘clean’ trajectories were exported – providing a per-frame baseline truth for the respective videos. A complete table of reviewed videos, and the percentage of reviewed frames per video, can be found in Table 2. For longer videos (> 1 hr), we relied entirely on a comparison between results from idtracker.ai and TRex. Their paper (Romero-Ferrero et al., 2019) suggests a very high accuracy of over 99.9 % correctly identified individual images for most videos, which should suffice for most relevant applications and provide a good baseline truth. As long as both tools produce sufficiently similar trajectories, we therefore know they have found the correct solution.
+
+**Table 2.**
+ Results of the human validation for a subset of videos.Validation was performed by going through all problematic situations (e.g. individuals lost) and correcting mistakes manually, creating a fully corrected dataset for the given videos. This dataset may still have missing frames for some individuals, if they could not be detected in certain frames (as indicated by ‘of that interpolated’). This was usually a very low percentage of all frames, except for Video 9, where individuals tended to rest on top of each other – and were thus not tracked – for extended periods of time. This baseline dataset was compared to all other results obtained using the automatic visual identification by TRex ($N=5$) and idtracker.ai ($N=3$) to estimate correctness. We were not able to track Videos 9 and 10 with idtracker.ai, which is why correctness values are not available.Table 2—source data 1.A table of positions for each individual of each manually approved and corrected trial.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Video metrics</th>
+      <th colspan="2">Review stats</th>
+      <th colspan="2">% correct</th>
+    </tr>
+    <tr>
+      <th>Video</th>
+      <th># ind.</th>
+      <th>Reviewed (%)</th>
+      <th>Of that interpolated (%)</th>
+      <th>TRex</th>
+      <th>idtracker.ai</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>100</td>
+      <td>100.0</td>
+      <td>0.23</td>
+      <td>99.07 ± 0.013</td>
+      <td>98.95 ± 0.146</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>59</td>
+      <td>100.0</td>
+      <td>0.15</td>
+      <td>99.68 ± 0.533</td>
+      <td>99.94 ± 0.0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>15</td>
+      <td>22.2</td>
+      <td>8.44</td>
+      <td>95.12 ± 6.077</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>10</td>
+      <td>100.0</td>
+      <td>1.21</td>
+      <td>99.7 ± 0.088</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>10</td>
+      <td>100.0</td>
+      <td>0.27</td>
+      <td>99.98 ± 0.0</td>
+      <td>99.96 ± 0.0</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>10</td>
+      <td>100.0</td>
+      <td>0.59</td>
+      <td>99.94 ± 0.006</td>
+      <td>99.63 ± 0.0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>100.0</td>
+      <td>0.5</td>
+      <td>99.89 ± 0.009</td>
+      <td>99.34 ± 0.002</td>
+    </tr>
+  </tbody>
+</table>
 
 A direct comparison between TRex and idtracker.ai was not possible for Videos 9 and 10, where idtracker.ai frequently exceeded hardware memory-limits and caused the application to be terminated, or did not produce usable results within multiple days of run-time. However, we were able to successfully analyze these videos with TRex and evaluate its performance by comparing to manually reviewed trajectories (see below in Visual identification: accuracy). Due to the stochastic nature of machine learning, and thus the inherent possibility of obtaining different results in each run, as well as other potential factors influencing processing time and memory consumption, both TRex and idtracker.ai have been executed repeatedly (5x TRex, 3x idtracker.ai).
 
 The trajectories exported by both idtracker.ai and TRex were very similar throughout (see Table 3). While occasional disagreements happened, similarity scores were higher than 98 % in all and higher than 99 % in most cases (i.e. less than 1 % of individuals have been differently assigned in each frame on average). Most difficulties that did occur were, after manual review, attributable to situations where multiple individuals cross over excessively within a short time-span. In each case that has been manually reviewed, identities switched back to the correct individuals – even after temporary disagreement. We found that both solutions occasionally experienced these same problems, which often occur when individuals repeatedly come in and out of view in quick succession (e.g. overlapping with other individuals). Disagreements were expected for videos with many such situations due to the way both algorithms deal differently with them: idtracker.ai assigns identities only based on the network output. In many cases, individuals continue to partly overlap even while already being tracked, which results in visual artifacts and can lead to unstable predictions by the network and causing idtracker.ai’s approach to fail. Comparing results from both idtracker.ai and TRex to manually reviewed data (see Table 2) shows that both solutions consistently provide high-accuracy results of above 99.5 % for most videos, but that TRex is slightly improved in all cases while also having a better overall frame coverage per individual (99.65 % versus idtracker.ai’s 97.93 %, where 100 % would mean that all individuals are tracked in every frame; not shown). This suggests that the splitting algorithm (see appendix, Appendix K Algorithm for splitting touching individuals) is working to TRex’ advantage here.
 
+**Table 3.**
+ Evaluating comparability of the automatic visual identification between idtracker.ai and TRex.Columns show various video properties, as well as the associated uniqueness score (see Guiding the training process) and a similarity metric. Similarity (% similar individuals) is calculated based on comparing the positions for each identity exported by both tools, choosing the closest matches overall and counting the ones that are differently assigned per frame. An individual is classified as ‘wrong’ in that frame, if the euclidean distance between the matched solutions from idtracker.ai and TRex exceeds 1 % of the video width. The column ‘% similar individuals’ shows percentage values, where a value of 99% would indicate that, on average, 1 % of the individuals are assigned differently. To demonstrate how uniqueness corresponds to the quality of results, the last column shows the average uniqueness achieved across trials. A file containing all X and Y positions for each trial and each software combined into one very large table is available from Walter et al., 2020, along with the data in different formats.Table 3—source data 1.Assignments between identities from multiple solutions, as calculated by a bipartite-graph matching algorithm.For each permutation of trials from TRex and idtracker.ai for the same video, the algorithm sought to match the trajectories of the same physical individuals in both trials with each other by finding the ones with the smallest mean euclidean distance per frame between them. Available from Walter et al., 2020 as T2_source_data.zip.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th># ind.</th>
+      <th>N TRex</th>
+      <th>% similar individuals</th>
+      <th>Final uniqueness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>100</td>
+      <td>5</td>
+      <td>99.8346 ± 0.5265</td>
+      <td>0.9758 ± 0.0018</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>59</td>
+      <td>5</td>
+      <td>98.6885 2.1145</td>
+      <td>0.9356 ± 0.0358</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>10</td>
+      <td>5</td>
+      <td>99.9902 0.3737</td>
+      <td>0.9812 ± 0.0013</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>5</td>
+      <td>99.9212 ± 1.1208</td>
+      <td>0.9461 ± 0.0039</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>10</td>
+      <td>5</td>
+      <td>99.9546 ± 0.8573</td>
+      <td>0.9698 ± 0.0024</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>8</td>
+      <td>5</td>
+      <td>98.8356 ± 5.8136</td>
+      <td>0.9192 ± 0.0077</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>8</td>
+      <td>5</td>
+      <td>99.2246 ± 4.4486</td>
+      <td>0.9576 ± 0.0023</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>8</td>
+      <td>5</td>
+      <td>99.7704 ± 2.1994</td>
+      <td>0.9481 ± 0.0025</td>
+    </tr>
+  </tbody>
+</table>
+
 Additionally, while TRex could successfully track individuals in all videos without tags, we were interested to see the effect of tags (in this case QR tags attached to locusts, see Figure 3a) on network training. In Figure 3, we visualize differences in network activation, depending on the visual features available for the network to learn from, which are different between species (or due to physically added tags, as mentioned above). The ‘hot’ regions indicate larger between-class differences for that specific pixel (values are the result of activation in the last convolutional layer of the trained network, see figure legend). Differences are computed separately within each group and are not directly comparable between trials/species in value. However, the distribution of values – reflecting the network’s reactivity to specific parts of the image – is. Results show that the most apparent differences are found for the stationary parts of the body (not in absolute terms, but following normalization, as shown in Figure 4c), which makes sense seeing as this part (i) is the easiest to learn due to it being in exactly the same position every time, (ii) larger individuals stretch further into the corners of a cropped image, making the bottom right of each image a source of valuable information (especially in Figure 3a and b) and (iii) details that often occur in the head-region (like distance between the eyes) which can also play a role here. ‘Hot’ regions in the bottom right corner of the activation images (e.g. in Figure 3d) suggest that also pixels are reacted to which are explicitly not part of the individual itself but of other individuals – likely this corresponds to the network making use of size/shape differences between them.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig3-v2.jpg)
 
-**Figure 3.:** The captions in (a-d) detail the species per group and number of samples per individual. Colors represent the relative activation differences, with hotter colors suggesting bigger magnitudes, which are computed by performing a forward-pass through the network up to the last convolutional layer (using keract). The outputs for each identity are averaged and stretched back to the original image size by cropping and scaling according to the network architecture. Differences shown here are calculated per cluster of pixels corresponding to each filter, comparing average activations for images from the individual’s class to activations for images from other classes.Figure 3—source data 1.
+**Figure 3.:** The captions in (a-d) detail the species per group and number of samples per individual. Colors represent the relative activation differences, with hotter colors suggesting bigger magnitudes, which are computed by performing a forward-pass through the network up to the last convolutional layer (using keract). The outputs for each identity are averaged and stretched back to the original image size by cropping and scaling according to the network architecture. Differences shown here are calculated per cluster of pixels corresponding to each filter, comparing average activations for images from the individual’s class to activations for images from other classes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig4-v2.jpg)
 
@@ -83,7 +423,7 @@ Additionally, while TRex could successfully track individuals in all videos with
 
 As would be expected, distinct patterns can be recognized in the resulting activations after training as soon as physical tags are attached to individuals (as in Figure 3a). While other parts of the image are still heavily activated (probably to benefit from size/shape differences between individuals), tags are always at least a large part of where activations concentrate. The network seemingly makes use of the additional information provided by the experimenter, where that has occurred. This suggests that, while definitely not being necessary, adding tags probably does not worsen, and likely may even improve, training accuracy, for difficult cases allowing networks to exploit any source of inter-individual variation.
 
-## Visual identification: memory consumption
+### Visual identification: memory consumption
 
 In order to generate comparable results between both tested software solutions, the same external script has been used to measure shared, private and swap memory of idtracker.ai and TRex, respectively. There are a number of ways with which to determine the memory usage of a process. For automation purposes, we decided to use a tool called syrupy, which can start and save information about a specified command automatically. We modified it slightly, so we could obtain more accurate measurements for Swap, Shared and Private separately, using ps_mem.
 
@@ -91,15 +431,114 @@ As expected, differences in memory consumption are especially prominent for long
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig5-v2.jpg)
 
-**Figure 5.:** idtracker.ai when tracking videos from a subset of all videos (the same videos as in Table 3).Results are plotted as a function of video length (min) multiplied by the number of individuals. We have to emphasize here that, for the videos in the upper length regions of multiple hours (2, 2), we had to set idtracker.ai to store segmentation information on disk – as opposed to in RAM. This uses less memory, but is also slower. For the video with flies we tried out both and also settled for on-disk, since otherwise the system ran out of memory. Even then, the curve still accelerates much faster for idtracker.ai, ultimately leading to problems with most computer systems. To minimize the impact that hardware compatibility has on research, we implemented switches limiting memory usage while always trying to maximize performance given the available data. TRex can be used on modern laptops and normal consumer hardware at slightly lower speeds, but without any fatal issues.Figure 5—source data 1.Figure 5 as plotted, indexed by video and software used.
+**Figure 5.:** Results are plotted as a function of video length (min) multiplied by the number of individuals. We have to emphasize here that, for the videos in the upper length regions of multiple hours (2, 2), we had to set idtracker.ai to store segmentation information on disk – as opposed to in RAM. This uses less memory, but is also slower. For the video with flies we tried out both and also settled for on-disk, since otherwise the system ran out of memory. Even then, the curve still accelerates much faster for idtracker.ai, ultimately leading to problems with most computer systems. To minimize the impact that hardware compatibility has on research, we implemented switches limiting memory usage while always trying to maximize performance given the available data. TRex can be used on modern laptops and normal consumer hardware at slightly lower speeds, but without any fatal issues.
+
+**Table 4.**
+ Both TRex and idtracker.ai analyzed the same set of videos, while continuously logging their memory consumption using an external tool.Rows have been sorted by $video⁢_⁢length*#⁢individuals$, which seems to be a good predictor for the memory consumption of both solutions. idtracker.ai has mixed mean values, which, at low individual densities are similar to TRex’ results. Mean values can be misleading here, since more time spent in low-memory states skews results. The maximum, however, is more reliable since it marks the memory that is necessary to run the system. Here, idtracker.ai clocks in at significantly higher values (almost always more than double) than TRex.Table 4—source data 1.Data from log files for all trials as a single table, where each row is one sample.The total memory of each sample is calculated as $SWAP+PRIVATE+SHARED$. Each row indicates at which exact time, by which software, and as part of which trial it was taken.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>#ind.</th>
+      <th>Length</th>
+      <th>Max.consec.</th>
+      <th>TRex memory (GB)</th>
+      <th>Idtracker.ai memory (GB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>10</td>
+      <td>10 min</td>
+      <td>26.03s</td>
+      <td>4.88 ± 0.23, max 6.31</td>
+      <td>8.23 ± 0.99, max 28.85</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>10</td>
+      <td>10 min</td>
+      <td>36.94s</td>
+      <td>4.27 ± 0.12, max 4.79</td>
+      <td>7.83 ± 1.05, max 29.43</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>10 min</td>
+      <td>28.75s</td>
+      <td>4.37 ± 0.32, max 5.49</td>
+      <td>6.53 ± 4.29, max 29.32</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>100</td>
+      <td>1 min</td>
+      <td>5.97s</td>
+      <td>9.4 ± 0.47, max13.45</td>
+      <td>15.27 ± 1.05, max 24.39</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>8</td>
+      <td>72 min</td>
+      <td>79.4s</td>
+      <td>5.6 ± 0.22, max 8.41</td>
+      <td>35.2 ± 4.51, max 91.26</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>10</td>
+      <td>10 min</td>
+      <td>1391s</td>
+      <td>6.94 ± 0.27, max 10.71</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>15</td>
+      <td>60 min</td>
+      <td>7.64s</td>
+      <td>13.81 ± 0.53, max 16.99</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>59</td>
+      <td>10 min</td>
+      <td>102.35s</td>
+      <td>12.4 ± 0.56, max 17.41</td>
+      <td>35.3 ± 0.92, max 50.26</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>8</td>
+      <td>195 min</td>
+      <td>145.77s</td>
+      <td>12.44 ± 0.8, max 21.99</td>
+      <td>35.08 ± 4.08, max 98.04</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>8</td>
+      <td>198 min</td>
+      <td>322.57s</td>
+      <td>16.15 ± 1.6, max 28.62</td>
+      <td>49.24 ± 8.21, max 115.37</td>
+    </tr>
+  </tbody>
+</table>
 
 Overall memory consumption for TRex also contains posture data, which contributes a lot to RAM usage. Especially with longer videos, disabling posture can lower the hardware needs for running our software. If posture is to be retained, the user can still (more slightly) reduce memory requirements by changing the outline re-sampling scale (one by default), which adjusts the outline resolution between sub- and super-pixel accuracy. While analysis will be faster – and memory consumption lower – when posture is disabled (only limited by the matching algorithm, see Appendix 4—figure 3), users of the visual identification might experience a decrease in training accuracy or speed (see Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig6-v2.jpg)
 
-**Figure 6.:** This shows the maximum achievable validation accuracy after 100 epochs for 100 individuals (Video 7), when sub-sampling the number of examples per individual. Tests were performed using a manually corrected training dataset to generate the images in three different ways, using the same, independent script (see Figure 8): Using no normalization (blue), using normalization based on image moments (green, similar to idtracker.ai), and using posture information (red, as in TRex). Higher numbers of samples per individual result in higher maximum accuracy overall, but – unlike the other methods – posture-normalized runs already reach an accuracy above the 90 % mark for ≥75 samples. This property can help significantly in situations with more crossings, when longer global segments are harder to find.Figure 6—source data 1.Figure 6.
+**Figure 6.:** This shows the maximum achievable validation accuracy after 100 epochs for 100 individuals (Video 7), when sub-sampling the number of examples per individual. Tests were performed using a manually corrected training dataset to generate the images in three different ways, using the same, independent script (see Figure 8): Using no normalization (blue), using normalization based on image moments (green, similar to idtracker.ai), and using posture information (red, as in TRex). Higher numbers of samples per individual result in higher maximum accuracy overall, but – unlike the other methods – posture-normalized runs already reach an accuracy above the 90 % mark for ≥75 samples. This property can help significantly in situations with more crossings, when longer global segments are harder to find.
 
-## Visual identification: processing time
+### Visual identification: processing time
 
 Automatically correcting the trajectories (to produce consistent identity assignments) means that additional time is spent on the training and application of a network, specifically for the video in question. Visual identification builds on some of the other methods described in this paper (tracking and posture estimation), naturally making it by far the most complex and time-consuming process in TRex – we thus evaluated how much time is spent on the entire sequence of all required processes. For each run of TRex andidtracker.ai, we saved precise timing information from start to finish. Since idtracker.ai reads videos directly and preprocesses them again each run, we used the same starting conditions with our software for a direct comparison:
 
@@ -107,7 +546,128 @@ A trial starts by converting/preprocessing a video in TGrabs and then immediatel
 
 In Table 5, we can see that video length and processing times (in TRex) did not correlate directly. Indeed, a 1 min video (Video 8) took significantly longer than one that was 60 min long (Video 15). The reason for this, initially counterintuitive, result is that the process of learning identities requires sufficiently long video sequences: longer samples have a higher likelihood of capturing more of the total possible intra-individual variance which helps the algorithm to more comprehensively represent each individual’s appearance. Longer videos naturally provide more material for the algorithm to choose from and, simply due to their length, have a higher probability of containing at least one higher quality segment that allows higher uniqueness-regimes to be reached more quickly (see Guiding the training process and H.2 Stopping-criteria). Thus, it is important to use sufficiently long video sequences for visual identification, and longer sequences can lead to better results – both in terms of quality and processing time.
 
-Compared to idtracker.ai, TRex (conversion + visual identification) shows both considerably lower computation times (2.57× to 46.74× faster for the same video), as well as lower variance in the timings (79% lower for the same video on average).
+**Table 5.**
+ Evaluating time-cost for automatic identity correction – comparing to results from idtracker.ai.Timings consist of preprocessing time in TGrabs plus network training in TRex, which are shown separately as well as combined (ours (min), $N=5$). The time it takes to analyze videos strongly depends on the number of individuals and how many usable samples per individual the initial segment provides. The length of the video factors in as well, as does the stochasticity of the gradient descent (training). idtracker.ai timings ($N=3$) contain the whole tracking and training process from start to finish, using its terminal_mode (v3). Parameters have been manually adjusted per video and setting, to the best of our abilities, spending at most one hour per configuration. For videos 16 and 14, we had to set idtracker.ai to storing segmentation information on disk (as compared to in RAM) to prevent the program from being terminated for running out of memory.Table 5—source data 1.Preprocessed log files (see also notebooks.zip in Walter et al., 2020) in a table format.The total processing time (s) of each trial is indexed by video and software used – TGrabs for conversion and TRex and idtracker.ai for visual identification. This data is also used in Appendix 4—table 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th># ind.</th>
+      <th>Length</th>
+      <th>Sample</th>
+      <th>TGrabs (min)</th>
+      <th>TRex (min)</th>
+      <th>Ours (min)</th>
+      <th>idtracker.ai (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>100</td>
+      <td>1min</td>
+      <td>1.61s</td>
+      <td>2.03 ± 0.02</td>
+      <td>74.62 ± 6.75</td>
+      <td>76.65</td>
+      <td>392.22 ± 119.43</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>59</td>
+      <td>10min</td>
+      <td>19.46s</td>
+      <td>9.28 ± 0.08</td>
+      <td>96.7 ± 4.45</td>
+      <td>105.98</td>
+      <td>495.82 ± 115.92</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>15</td>
+      <td>60min</td>
+      <td>33.81s</td>
+      <td>13.17 ± 0.12</td>
+      <td>101.5 ± 1.85</td>
+      <td>114.67</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>10min</td>
+      <td>12.31s</td>
+      <td>8.8 ± 0.12</td>
+      <td>21.42 ± 2.45</td>
+      <td>30.22</td>
+      <td>127.43 ± 57.02</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>10</td>
+      <td>10min</td>
+      <td>10.0s</td>
+      <td>8.65 ± 0.07</td>
+      <td>23.37 ± 3.83</td>
+      <td>32.02</td>
+      <td>82.28 ± 3.83</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>10</td>
+      <td>10min</td>
+      <td>36.91s</td>
+      <td>8.65 ± 0.047</td>
+      <td>12.47 ± 1.27</td>
+      <td>21.12</td>
+      <td>79.42 ± 4.52</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>10</td>
+      <td>10min</td>
+      <td>16.22s</td>
+      <td>4.43 ± 0.05</td>
+      <td>35.05 ± 1.45</td>
+      <td>39.48</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>8</td>
+      <td>195min</td>
+      <td>67.97s</td>
+      <td>109.97 ± 0.05</td>
+      <td>70.48 ± 3.67</td>
+      <td>180.45</td>
+      <td>707.0 ± 27.55</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>8</td>
+      <td>72min</td>
+      <td>79.36s</td>
+      <td>32.1 ± 0.42</td>
+      <td>30.77 ± 6.28</td>
+      <td>62.87</td>
+      <td>291.42 ± 16.83</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>8</td>
+      <td>198min</td>
+      <td>134.07s</td>
+      <td>133.1 ± 2.28</td>
+      <td>68.85 ± 13.12</td>
+      <td>201.95</td>
+      <td>1493.83 ± 27.75</td>
+    </tr>
+  </tbody>
+</table>
+
+Compared to idtracker.ai, TRex (conversion + visual identification) shows both considerably lower computation times ($2.57\times$ to $46.74\times$ faster for the same video), as well as lower variance in the timings (79% lower for the same video on average).
 
 ## Discussion
 
@@ -117,7 +677,7 @@ While all options are available from the command-line and a screen is not requir
 
 The interface is structured into groups (see Figure 5), categorized by the typical use-case:
 
-The tracking accuracy of TRex is at the state-of-the-art while typically being 2.57× to 46.74× faster than comparable software and having lower hardware requirements – especially RAM. In addition to visual identification and tracking, it provides a rich assortment of additional data, including body posture, visual fields, and other kinematic as well as group-related information (such as derivatives of position, border and mean neighbor distance, group compactness, etc); even in live-tracking and closed-loop situations.
+The tracking accuracy of TRex is at the state-of-the-art while typically being $2.57\times$ to $46.74\times$ faster than comparable software and having lower hardware requirements – especially RAM. In addition to visual identification and tracking, it provides a rich assortment of additional data, including body posture, visual fields, and other kinematic as well as group-related information (such as derivatives of position, border and mean neighbor distance, group compactness, etc); even in live-tracking and closed-loop situations.
 
 Raw tracking speeds (without visual identification) still achieved roughly 80 % accuracy per decision (as compared to > 99% with visual identification). We have found that real-time performance can be achieved, even on relatively modest hardware, for all numbers of individuals ≤256 without posture estimation (≤ 128 with posture estimation). More than 256 individuals can be tracked as well, remarkably still delivering frame-rates at about 10 – 25 frames per second using the same settings.
 
@@ -133,7 +693,7 @@ To obtain the most up-to-date version of TRex, please download it at trex.run or
 
 In the following sections, we describe the methods implemented in TRex and TGrabs, as well as their most important features in a typical order of operations (see Figure 1 for a flow diagram), starting out with a raw video. We will then describe how trajectories are obtained and end with the most technically involved features.
 
-## Segmentation
+### Segmentation
 
 When an image is first received from a camera (or a video file), the objects of interest potentially present in the frame must be found and cropped out. Several technologies are available to separate the foreground from the background (segmentation). Various machine learning algorithms are frequently used to great effect, even for the most complex environments (Hughey et al., 2018; Robie et al., 2017; Francisco et al., 2019). These more advanced approaches are typically beneficial for the analysis of field-data or organisms that are very hard to see in video (e.g. very transparent or low contrast objects/animals in the scene). In these situations, where integrated methods might not suffice, it is possible to segment objects from the background using external, for example deep-learning based, tools (see next paragraph). However, for most laboratory experiments, simpler (and also much faster), classical image-processing methods yield satisfactory results. Thus, we provide as a generically useful capability background-subtraction, which is the default method by which objects are segmented. This can be used immediately in experiments where the background is relatively static. Backgrounds are generated automatically by uniformly sampling images from the source video(s) – different modes are available (min/max, mode and mean) for the user to choose from. More advanced image-processing techniques like luminance equalization (which is useful when lighting varies between images), image undistortion, and brightness/contrast adjustments are available in TGrabs and can enhance segmentation results – but come at the cost of slightly increased processing time. Importantly, since many behavioral studies rely on ≥4 K resolution videos, we heavily utilize the GPU (if available) to speed up most of the image-processing, allowing TRex to scale well with increasing image resolution.
 
@@ -141,7 +701,7 @@ TGrabs can generally find any object in the video stream, and subsequently pass 
 
 The detected objects are saved to a custom non-proprietary compressed file format (Preprocessed Video or PV, see appendix Appendix G The PV file format), that stores only the most essential information from the original video stream: the objects and their pixel positions and values. This format is optimized for quick random index access by the tracking algorithm (see next section) and stores other meta-information (like frame timings) utilized during playback or analysis. When recording videos directly from a camera, they can also be streamed to an additional and independent MP4 container format (plus information establishing the mapping between PV and MP4 video frames).
 
-## Tracking
+### Tracking
 
 Once animals (or, more generally, termed ‘objects’ henceforth) have been successfully segmented from the background, we can either use the live-tracking feature in TGrabs or open a pre-processed file in TRex, to generate the trajectories of these objects. This process uses information regarding an object’s movement (i.e. its kinematics) to follow it across frames, estimating future positions based on previous velocity and angular speed. It will be referred to as ‘tracking’ in the following text, and is a required step in all workflows.
 
@@ -159,7 +719,7 @@ By default, objects suspected to contain overlapping individuals are split by th
 
 After an object is assigned to a specific trajectory, two kinds of data (posture and visual-fields) are calculated and made available to the user, which will each be described in one of the following subsections. In the last subsection, we outline how these can be utilized in real-time tracking situations.
 
-## Posture analysis
+#### Posture analysis
 
 Groups of animals are often modeled as systems of simple particles (Inada and Kawachi, 2002; Cavagna et al., 2010; Perez-Escudero and de Polavieja, 2011), a reasonable simplification which helps to formalize/predict behavior. However, intricate behaviors, like courtship displays, can only be fully observed once the body shape and orientation are considered (e.g. using tools such as DeepPoseKit, Graving et al., 2019, LEAP Pereira et al., 2019/SLEAP Pereira et al., 2020, and DeepLabCut, Mathis et al., 2018). TRex does not track individual body parts apart from the head and tail (where applicable), but even the included simple and fast 2D posture estimator already allows for deductions to be made about how an animal is positioned in space, bent and oriented – crucial for example when trying to estimate the position of eyes/antennae as part of an analysis, where this is required (e.g. Strandburg-Peshkin et al., 2013; Rosenthal et al., 2015). When detailed tracking of all extremities is required, TRex offers an option that allows it to interface with third-party software like DeepPoseKit (Graving et al., 2019), SLEAP (Pereira et al., 2020), or DeepLabCut (Mathis et al., 2018). This option (output_image_per_tracklet), when set to true, exports cropped and (optionally) normalized videos per individual that can be imported directly into these tools – where they might perform better than the raw video. Normalization, for example, can make it easier for machine-learning algorithms in these tools to learn where body-parts are likely to be (see Figure 6) and may even reduce the number of clicks required during annotation.
 
@@ -167,15 +727,19 @@ In TRex, the 2D posture of an animal consists of (i) an outline around the outer
 
 Compared to the tracking itself, posture estimation is a time-consuming process and can be disabled. It is, however, required to estimate – and subsequently normalize – an animal’s orientation in space (e.g. required later in Automatic visual identification based on machine learning), or to reconstruct their visual field as described in the following sub-section.
 
-## Reconstructing 2D visual fields
+#### Reconstructing 2D visual fields
 
 Visual input is an important modality for many species (e.g. fish Strandburg-Peshkin et al., 2013, Bilotta and Saszik, 2001 and humans Colavita, 1974). Due to its importance in widely used model organisms like zebrafish (Danio rerio), we decided to include the capability to conduct a two-dimensional reconstruction of each individual’s visual field as part of the software. The requirements for this are successful posture estimation and that individuals are viewed from above, as is usually the case in laboratory studies.
 
-The algorithm makes use of the fact that outlines have already been calculated during posture estimation. Eye positions are estimated to be evenly distanced from the ‘snout’ and will be spaced apart depending on the thickness of the body at that point (the distance is based on a ratio, relative to body-size, which can be adjusted by the user). Eye orientation is also adjustable, which influences the size of the stereoscopic part of the visual field. We then use ray-casting to intersect rays from each of the eyes with all other individuals as well as the focal individual itself (self-occlusion). Individuals not detected in the current frame are approximated using the last available posture. Data are organized as a multi-layered 1D-image of fixed size for each frame, with each image prepresenting angles from -180∘ to 180∘ for the given frame. Simulating a limited field-of-view would thus be as simple as cropping parts of these images off the left and right sides. The different layers per pixel encode:
+The algorithm makes use of the fact that outlines have already been calculated during posture estimation. Eye positions are estimated to be evenly distanced from the ‘snout’ and will be spaced apart depending on the thickness of the body at that point (the distance is based on a ratio, relative to body-size, which can be adjusted by the user). Eye orientation is also adjustable, which influences the size of the stereoscopic part of the visual field. We then use ray-casting to intersect rays from each of the eyes with all other individuals as well as the focal individual itself (self-occlusion). Individuals not detected in the current frame are approximated using the last available posture. Data are organized as a multi-layered 1D-image of fixed size for each frame, with each image prepresenting angles from $-180^{∘}$ to $180^{∘}$ for the given frame. Simulating a limited field-of-view would thus be as simple as cropping parts of these images off the left and right sides. The different layers per pixel encode:
 
 While the individuals viewed from above on a computer screen look two-dimensional, one major disadvantage of any 2D approach is, of course, that it is merely a projection of the 3D scene. Any visual field estimator has to assume that, from an individual’s perspective, other individuals act as an occluder in all instances (see Figure 7). This may only be partly true in the real world, depending on the experimental design, as other individuals may be able to move slightly below, or above, the focal individuals line-of-sight, revealing otherwise occluded conspecifics behind them. We therefore support multiple occlusion-layers, allowing second-order and Nth-order occlusions to be calculated for each individual.
 
-## Realtime tracking option for closed-loop experiments
+![Figure 7.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig7-v2.jpg)
+
+**Figure 7.:** Right (blue) and left (orange) fields of view intersect in the binocular region (pink). Most individuals can be seen directly by the focal individual (1, green), which has a wide field of view of $260^{∘}$ per eye. Individual three on the top-left is not detected by the focal individual directly and not part of its first-order visual field. However, second-order intersections (visualized by gray lines here) are also saved and accessible through a separate layer in the exported data.
+
+#### Realtime tracking option for closed-loop experiments
 
 Live tracking is supported, as an option to the user, during the recording, or conversion, of a video in TGrabs. When closed-loop feedback is enabled, TGrabs focusses on maintaining stable recording frame-rates and may not track recorded frames if tracking takes too long. This is done to ensure that the recorded file can later be tracked again in full/with higher accuracy (thus no information is lost) if required, and to help the closed-loop feedback to stay synchronized with real-world events.
 
@@ -189,7 +753,7 @@ In order to make this interface easy to use for prototyping and to debug experim
 
 Additionally, thanks to Python being a fully-featured scripting language, it is also possible to call and send information to other programs during real-time tracking. Communication with other external programs may be necessary whenever easy-to-use Python interfaces are not available for for example hardware being used by the experimenter.
 
-## Automatic visual identification based on machine learning
+### Automatic visual identification based on machine learning
 
 Tracking, when it is only based on individual’s positional history, can be very accurate under good circumstances and is currently the fastest way to analyze video recordings or to perform closed-loop experiments. However, such tracking methods simply do not have access to enough information to allow them to ensure identities are maintained for the duration of most entire trials – small mistakes can and will happen. There are cases, for example when studying polarity (only based on short trajectory segments), or other general group-level assessments, where this is acceptable and identities do not have to be maintained perfectly. However, consistent identities are required in many individual-level assessments, and with no baseline truth available to correct mistakes, errors start accumulating until eventually all identities are fully shuffled. Even a hypothetical, perfect tracking algorithm will not be able to yield correct results in all situations as multiple individuals might go out of view at the same time (e.g. hiding under cover or just occluded by other animals). There is no way to tell who is whom, once they re-emerge.
 
@@ -203,7 +767,7 @@ We employ a method for visual identification in TRex that is similar to the one 
 
 While 4.2 Tracking already tries to (within each trajectory) consistently follow the same individual, there is no way to ensure/check the validity of this process without providing independent identity information. Generating this source of information, based on the visual appearance of individuals, is what the algorithm for visual identification, described in the following subsections, aims to achieve. Re-stated simply, the goal of using automatic visual identification is to obtain reliable predictions of the identities of all (or most) objects in each frame. Assuming these predictions are of sufficient quality, they can be used to detect and correct potential mistakes made during 4.2 Tracking by looking for identity switches within trajectories. Ensuring that predicted identities within trajectories are consistent, by proxy, also ensures that each trajectory is consistently associated with a single, real individual. In the following, before describing the four stages of that algorithm, we will point out key aspects of how tracking/image data are processed and how we addressed the points (i)-(iii) above and especially highlight the features that ultimately improved performance compared to other solutions.
 
-## Preparing tracking-data
+#### Preparing tracking-data
 
 Visual identification starts out only with the trajectories that the 4.2 Tracking provides. Tracking, on its own, is already an improvement over other solutions, especially since (unlike e.g. idtracker.ai) TRex makes an effort to separate overlapping objects (see the Appendix K Algorithm for splitting touching individuals) and thus is able to keep track of individuals for longer (see Appendix 4—figure 2). Here, we – quite conservatively – assume that, after every problematic situation (defined in the list below), the assignments made by our tracking algorithm are wrong. Whenever a problematic situation is encountered as part of a trajectory, we split the trajectory at that point. This way, all trajectories of all individuals in a video become an assortment of trajectory snippets (termed ‘segments’ from here on), which are clear of problematic situations, and for each of which the goal is to find the correct identity (‘correct’ meaning that identities are consistently assigned to the same real individual throughout the video). Situations are considered ‘problematic’, and cause the trajectory to be split, when:
 
@@ -217,33 +781,33 @@ After being sorted according to these two metrics, the list of segments per bin 
 
 The number of visited cells may, at first, appear to be essentially equivalent to a spatially normalized distance travelled (as used in idtracker.ai). In edge cases, where individuals never stop or always stop, both metrics can be very similar. However, one can imagine an individual continuously moving around in the same corner of the arena, which would be counted as an equally good segment for that individual as if it had traversed the whole arena (and thus capturing all variable environmental factors). In most cases, using highly restricted movement for training is problematic, and worse than using a shorter segment of the individual moving diagonally through the entire space, since the latter captures more of the variation within background, lighting conditions and the animals movement in the process.
 
-## Minimizing the variance landscape by normalizing samples
+#### Minimizing the variance landscape by normalizing samples
 
 A big strength of machine learning approaches is their resistance to noise in the data. Generally, any machine learning method will likely still converge – even with noisy data. Eliminating unnecessary noise and degrees of freedom in the dataset, however, will typically help the network to converge much more quickly: Tasks that are easier to solve will of course also be solved more accurately within similar or smaller timescales. This is due to the optimizer not having to consider various parts of the possible parameter-space during training, or, put differently, shrinking the overall parameter-space to the smallest possible size without losing important information. The simplest such optimization included in most tracking and visual identification approaches is to segment out the objects and centering the individuals in the cropped out images. This means that (i) the network does not have to consider the whole image, (ii) needs only to consider one individual at a time and (iii) the corners of the image can most likely be neglected.
 
-Further improving on this, approaches like idtracker.ai align all objects along their most-elongated axis, essentially removing global orientation as a degree of freedom. The orientation of an arbitrary object can be calculated for example using an approach often referred to as image-moments (Hu, 1962), yielding an angle within [0-180]∘. Of course, this means that:
+Further improving on this, approaches like idtracker.ai align all objects along their most-elongated axis, essentially removing global orientation as a degree of freedom. The orientation of an arbitrary object can be calculated for example using an approach often referred to as image-moments (Hu, 1962), yielding an angle within $[0-180]^{∘}$. Of course, this means that:
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/64000/elife-64000-fig8-v2.jpg)
 
-**Figure 8.:** Images all stem from the same video and belong to the same identity. The video has previously been automatically corrected using the visual identification. Each object visible here consists of N images  that have been accumulated into a single image using Mi,i∈[0,N], with mini∈[0,N]⁡Mimin being the element-wise minimum across images. The columns represent same samples from the same frames, but normalized in three different ways: In (a), images have not been normalized at all. Images in (b) have been normalized by aligning the objects along their main axis (calculated using image-moments), which only gives the axis within 0– 180 degrees. In (c), all images have been aligned using posture information generated during the tracking process. As the images become more and more recognizable to us from left to right, the same applies to a network trying to tell identities apart: Reducing noise in the data speeds up the learning process.
+**Figure 8.:** Images all stem from the same video and belong to the same identity. The video has previously been automatically corrected using the visual identification. Each object visible here consists of N images $M_{i},i\in[0,N]$ that have been accumulated into a single image using $min_{i\in[0,N]}⁡M_{i}$, with min being the element-wise minimum across images. The columns represent same samples from the same frames, but normalized in three different ways: In (a), images have not been normalized at all. Images in (b) have been normalized by aligning the objects along their main axis (calculated using image-moments), which only gives the axis within 0– 180 degrees. In (c), all images have been aligned using posture information generated during the tracking process. As the images become more and more recognizable to us from left to right, the same applies to a network trying to tell identities apart: Reducing noise in the data speeds up the learning process.
 
 Each of these issues adds to the things the network has to learn to account for, widening the parameter-space to be searched and increasing computation time. However, barring the first point, each problem can be tackled using the already available posture information. Knowing head and tail positions and points along the individual’s center-line, the individual’s heads can be locked roughly into a single position. This leaves room only for their rear end to move, reducing variation in the data to a minimum (see Figure 8). In addition to faster convergence, this also results in better generalization right from the start and even with a smaller number of samples per individual (see Figure 6). For further discussion of highly deformable bodies, such as of rodents, please see Appendix (Appendix L Posture and Visual Identification of Highly-Deformable Bodies).
 
-## Guiding the training process
+#### Guiding the training process
 
 Per batch, the stochastic gradient descent is directed by the local accuracy (a fraction of correct/total predictions), which is a simple and commonly used metric that has no prior knowledge of where the samples within a batch come from. This has the desirable consequence that no knowledge about the temporal arrangement of images is necessary in order to train and, more importantly, to apply the network later on.
 
 In order to achieve accurate results quickly across batches, while at the same time making it possible to indicate to the user potentially problematic sequences within the video, we devised a metric that can be used to estimate local as well as global training quality: We term this uniqueness and it combines information about objects within a frame, following the principle of non-duplication; images of individuals within the same frame are required to be assigned different identities by the networks predictions.
 
-The program generates image data for evenly spaced frames across the entire video. All images of tracked individuals within the selected frames are, after every epoch of the training, passed on to the network. It returns a vector of probabilities pi⁢j for each image i to be identity j∈[0,N], with N being the number of individuals. Based on these probabilities, uniqueness can be calculated as in Box 1, evenly covering the entire video. The magnitude of this probability vector per image is taken into account, rewarding strong predictions of maxj⁡{pi⁢j}=1 and punishing weak predictions of maxj⁡{pi⁢j}<1.
+The program generates image data for evenly spaced frames across the entire video. All images of tracked individuals within the selected frames are, after every epoch of the training, passed on to the network. It returns a vector of probabilities $p_{i⁢j}$ for each image i to be identity $j\in[0,N]$, with N being the number of individuals. Based on these probabilities, uniqueness can be calculated as in Box 1, evenly covering the entire video. The magnitude of this probability vector per image is taken into account, rewarding strong predictions of $max_{j}⁡{p_{i⁢j}}=1$ and punishing weak predictions of $max_{j}⁡{p_{i⁢j}}<1$.
 
-Uniqueness is not integrated as part of the loss function, but it is used as a global gradient before and after each training unit in order to detect global improvements. Based on the average uniqueness calculated before and after a training unit, we can determine whether to stop the training, or whether training on the current segment made our results worse (faulty data). If uniqueness is consistently high throughout the video, then training has been successful and we may terminate early. Otherwise, valleys in the uniqueness curve indicate bad generalization and thus currently missing information regarding some of the individuals. In order to detect problematic sections of the video we search for values below 1-0.5N, meaning that the section potentially contains new information we should be adding to our training data. Using accuracy per-batch and then using uniqueness to determine global progress, we get the best of both worlds: A context-free prediction method that is trained on global segments that are strategically selected by utilizing local context information.
+Uniqueness is not integrated as part of the loss function, but it is used as a global gradient before and after each training unit in order to detect global improvements. Based on the average uniqueness calculated before and after a training unit, we can determine whether to stop the training, or whether training on the current segment made our results worse (faulty data). If uniqueness is consistently high throughout the video, then training has been successful and we may terminate early. Otherwise, valleys in the uniqueness curve indicate bad generalization and thus currently missing information regarding some of the individuals. In order to detect problematic sections of the video we search for values below $1-\frac{0.5}{N}$, meaning that the section potentially contains new information we should be adding to our training data. Using accuracy per-batch and then using uniqueness to determine global progress, we get the best of both worlds: A context-free prediction method that is trained on global segments that are strategically selected by utilizing local context information.
 
 The closest example of such a procedure in idtracker.ai is the termination criterion after protocol 1, which states that individual segments have to be consistent and certain enough in all global segments in order to stop iterating. While this seems to be similar at first, the way accuracy is calculated and the terminology here are quite different: (i) Every metric in idtracker.ai's final assessment after protocol one is calculated at segment-level, not utilizing per-frame information. Uniqueness works per-frame, not per segment, and considers individual frames to be entirely independent from each other. It can be considered a much stronger constraint set upon the network’s predictive ability, seeing as it basically counts the number of times mistakes are estimated to have happened within single frames. Averaging only happens afterwards. (ii) The terminology of identities being unique is only used in idtracker.ai once after procotol one and essentially as a binary value, not recognizing its potential as a descendable gradient. Images are simply added until a certain percentage of images has been reached, at which point accumulation is terminated. (iii) Testing uniqueness is much faster than testing network accuracy across segments, seeing as the same images are tested over and over again (meaning they can be cached) and the testing dataset can be much smaller due to its locality. Uniqueness thus provides a stronger gradient estimation, while at the same time being more local (meaning it can be used independently of whether images are part of global segments), as well as more manageable in terms of speed and memory size.
 
 In the next four sections, we describe the training phases of our algorithm (1-3), and how the successfully trained network can be used to automatically correct trajectories based on its predictions (4).
 
-## The initial training unit
+##### The initial training unit
 
 All global segments are considered and sorted by the criteria listed below in Accumulation of additional segments and stopping-criteria. The best suitable segment from the beginning of that set of segments is used as the initial dataset for the network. Images are split into a training and a validation set (4:1 ratio). Efforts are made to equalize the sample sizes per class/identity beforehand, but there has to always be a trade-off between similar sample sizes (encouraging unbiased priors) and having as many samples as possible available for the network to learn from. Thus, in order to alleviate some of the severity of dealing with imbalanced datasets, the performance during training iterations is evaluated using a categorical focal loss function (Lin et al., 2020). Focal loss down-weighs classes that are already reliably predicted by the network and in turn emphasizes neglected classes. An Adam optimizer (Bengio et al., 2015) is used to traverse the loss landscape towards the global (or to at least a local) minimum.
 
@@ -251,13 +815,13 @@ The network layout used for the classification in TRex (see Figure 1c) is a typi
 
 The network architecture used in our software is similar to the identification module of the network in Romero-Ferrero et al., 2019, and is, as in most typical CNNs, (reverse-)pyramid-like. However, key differences between TRex’ and idtracker.ai's procedure lie with the way that training data is prepared (see previous sections) and how further segments are accumulated/evaluated (see next section). Furthermore, contrary to idtracker.ai's approach, images in TRex are augmented (during training) before being passed on to the network. While this augmentation is relatively simple (random shift of the image in x-direction), it can help to account for positional noise introduced by for example the posture estimation or the video itself when the network is used for predictions later on Perez and Wang, 2017. We do not flip the image in this step, or rotate it, since this would defeat the purpose of using orientation normalization in the first place (as in Minimizing the variance landscape by normalizing samples, see Figure 8). Here, in fact, normalization of object orientation (during training and predictions) could be seen as a superior alternative to data augmentation.
 
-The input data for TRex’ network is a single, cropped grayscale image of an individual. This image is first passed through a ‘lambda’ layer (blue) that normalizes the pixel values, dividing them by half the value limit of 255/2=127.5 and subtracting 1 – this moves them into the range of [-1,1]. From then on, sections are a combination of convolutional layers (kernel sizes of 16, 64, and 100 pixels), each followed by a 2D (2 × 2) max-pooling and a 2D spatial dropout layer (with a rate of 0.25). Within each of these blocks the input data is reduced further, focussing it down to information that is deemed important. Toward the end, the data are flattened and flow into a densely connected layer (100 units) with exactly as many outputs as the number of classes. The output is a vector with values between 0 and 1 for all elements of the vector, which, due to softmax-activation, sum to 1.
+The input data for TRex’ network is a single, cropped grayscale image of an individual. This image is first passed through a ‘lambda’ layer (blue) that normalizes the pixel values, dividing them by half the value limit of $255/2=127.5$ and subtracting 1 – this moves them into the range of $[-1,1]$. From then on, sections are a combination of convolutional layers (kernel sizes of 16, 64, and 100 pixels), each followed by a 2D (2 × 2) max-pooling and a 2D spatial dropout layer (with a rate of 0.25). Within each of these blocks the input data is reduced further, focussing it down to information that is deemed important. Toward the end, the data are flattened and flow into a densely connected layer (100 units) with exactly as many outputs as the number of classes. The output is a vector with values between 0 and 1 for all elements of the vector, which, due to softmax-activation, sum to 1.
 
 Training commences by performing a stochastic gradient descent (using the Adam optimizer, see Bengio et al., 2015), which iteratively minimizes the error between network predictions and previously known associations of images with identities – the original assignments within the initial frame segment. The optimizer’s behavior in the last five epochs is continuously observed and training is terminated immediately if one of the following criteria is met:
 
 The initial training unit is also by far the most important as it determines the predicted identities within further segments that are to be added. It is thus less risky to overfit than it is important to get high-quality training results, and the algorithm has to be relatively conservative regarding termination criteria. Later iterations, however, are only meant to extend an already existing dataset and thus (with computation speed in mind) allow for additional termination criteria to be added:
 
-## Accumulation of additional segments and stopping-criteria
+##### Accumulation of additional segments and stopping-criteria
 
 If necessary, initial training results can be improved by adding more samples to the active dataset. This could be done manually by the user, always trying to select the most promising segment next, but requiring such manual work is not acceptable for high-throughput processing. Instead, in order to translate this idea into features that can be calculated automatically, the following set of metrics is re-generated per (yet inactive) segment after each successful step:
 
@@ -267,30 +831,36 @@ If multiple additional segments are found, the program tries to actively improve
 
 Finishing a training unit does not necessarily mean that it was successful. Only the network states improving upon results from previous units are considered and saved. Any training result – except the initial one – may be rejected after training in case the uniqueness score has not improved globally, or at least remained within 99 % of the previous best value. This ensures stability of the process, even with tracking errors present (which can be corrected for later on, see next section). If a segment is rejected, the network is restored to the best recorded state.
 
-Each new segment is always combined with regularly sampled data from previous steps, ensuring that identities don’t switch back and forth between steps due to uncertain predictions. If switching did occur, then the uniqueness and accuracy values can never reach high value regimes – leading to the training unit being discarded as a result. The contribution of each previously added segment R is limited to ⌈|RS|/(samples⁢_⁢max*|R|/N)⌉ samples, with N as the total number of frames in global segments for this individual and samples⁢_⁢max a constant that is calculated using image size and memory constraints (or 1 GB by default). RS is the actual usable number of images in segment R. This limitation is an attempt to not bias the priors of the network by sub-sampling segments according to their contribution to the total number of frames in global segments.
+Each new segment is always combined with regularly sampled data from previous steps, ensuring that identities don’t switch back and forth between steps due to uncertain predictions. If switching did occur, then the uniqueness and accuracy values can never reach high value regimes – leading to the training unit being discarded as a result. The contribution of each previously added segment R is limited to $⌈|R_{S}|/(samples⁢_⁢max*|R|/N)⌉$ samples, with N as the total number of frames in global segments for this individual and $samples⁢_⁢max$ a constant that is calculated using image size and memory constraints (or 1 GB by default). $R_{S}$ is the actual usable number of images in segment R. This limitation is an attempt to not bias the priors of the network by sub-sampling segments according to their contribution to the total number of frames in global segments.
 
-Training is considered to be successful globally, as soon as either (i) accumulative individual gaps between sampled regions is less than 25 % of the video length for all individuals, or (ii) uniqueness has reached a value higher than 1-0.5Nid (1) so that almost all detected identities are present exactly once per frame. Otherwise, training will be continued as described above with additional segments – each time extending the percentage of images seen by the network further.
+Training is considered to be successful globally, as soon as either (i) accumulative individual gaps between sampled regions is less than 25 % of the video length for all individuals, or (ii) uniqueness has reached a value higher than $1-\frac{0.5}{N_{id}}$ (1) so that almost all detected identities are present exactly once per frame. Otherwise, training will be continued as described above with additional segments – each time extending the percentage of images seen by the network further.
 
 Training accuracy/consistency could potentially be further improved by letting the program add an arbitrary amount of segments, however we found this not to be necessary in any of our test-cases. Users are allowed to set a custom limit if required in their specific cases.
 
-## The final training unit
+##### The final training unit
 
-After the accumulation phase, one last training step is performed. In previous steps, validation data has been kept strictly separate from the training set to get a better gauge on how generalizable the results are to unseen parts of the video. This is especially important during early training units, since ‘overfitting’ is much more likely to occur in smaller datasets and we still potentially need to add samples from different parts of the video. Now that we are not going to extend our training dataset anymore, maintaining generalizibility is no longer the main objective – so why not use all of the available data? The entire dataset is simply merged and sub-sampled again, according to the memory strategy used. Network training is started, with a maximum of max⁡{3;max⁢_⁢epochs*0.25} iterations (max_epochs is 150 by default). During this training, the same stopping-criteria apply as during the initial step.
+After the accumulation phase, one last training step is performed. In previous steps, validation data has been kept strictly separate from the training set to get a better gauge on how generalizable the results are to unseen parts of the video. This is especially important during early training units, since ‘overfitting’ is much more likely to occur in smaller datasets and we still potentially need to add samples from different parts of the video. Now that we are not going to extend our training dataset anymore, maintaining generalizibility is no longer the main objective – so why not use all of the available data? The entire dataset is simply merged and sub-sampled again, according to the memory strategy used. Network training is started, with a maximum of $max⁡{3;max⁢_⁢epochs*0.25}$ iterations (max_epochs is 150 by default). During this training, the same stopping-criteria apply as during the initial step.
 
 Even if we tolerate the risk of potentially overfitting on the training data, there is still a way to detect overfitting if it occurs: Only training steps that lead to improvements in mean uniqueness across the video are saved. Often, if prediction results become worse (e.g. due to overfitting), multiple individuals in a single frame are predicted to be the same identity – precisely the problem which our uniqueness metric was designed to detect.
 
 For some videos, this is the step where most progress is made (e.g. Video 9). The reason being that this is the first time when all the training data from all segments is considered at once (instead of mostly the current segment plus fewer samples from previously accepted segments), and samples from all parts of the video have an equal likelihood of being used in training after possible reduction due to memory-constraints.
 
-## Assigning identities based on network predictions
+##### Assigning identities based on network predictions
 
 After the network has been successfully trained, all parts of the video which were not part of the training are packaged together and the network calculates predictive probabilities for each image of each individual to be any of the available identities. The vectors returned by the network are then averaged per consecutive segment per individual. The average probability vectors for all overlapping segments are weighed against each other – usually forcing assignment to the most likely identity (ID) for each segment, given that no other segments have similar probabilities. When referring to segments here, meant is simply a number of consecutive frames of one individual that the tracker is fairly sure does not contain any mix-ups. We implemented a way to detect tracking mistakes, which is mentioned later.
 
-If an assignment is ambiguous, meaning that multiple segments Sj⁢…⁢M overlapping in time have the same maximum probability index argmaxi∈[0,N]{P(i|Sj)} for the segment to belong to a certain identity (i), a decision has to be made. Assignments are deferred if the ratioRmax=max{P(i|Sj)P(i|Sk),∀Sj≠k∈overlappingsegments}between any two maximal probabilities is larger than 0.6 for said i (Rmax is inverted if it is greater than 1). In such a case, we rely on the general purpose tracking algorithm to pick a sensible option – other identities might even be successfully assigned (using network predictions) in following frames, which is a complexity we do not have to deal with here. In case all ratios are below 0.6, when the best choices per identity are not too ambiguous, the following steps are performed to resolve remaining conflicts:
+If an assignment is ambiguous, meaning that multiple segments $S_{j⁢…⁢M}$ overlapping in time have the same maximum probability index $argmaxi\in[0,N]{P(i|S_{j})}$ for the segment to belong to a certain identity (i), a decision has to be made. Assignments are deferred if the ratio
 
-This procedure prefers segments with larger numbers of samples over segments with fewer samples, ensuring that identities are not switched around randomly whenever a short segment (e.g. of noisy data) is predicted to be the given identity for a few frames – at least as long as a better alternative is available. The non-linearity in S⁢(p,x) exaggerates differences between lower values and dampens differences between higher values: For example, the quality of a segment with 4000 samples is barely different from a segment with 5000 samples; however, there is likely to be a significant quality difference between segments with 10 and 100 samples.
+$$
+R_{max}=max{\frac{P(i|S_{j})}{P(i|S_{k})},∀S_{j\neqk}\inoverlappingsegments}
+$$
+
+between any two maximal probabilities is larger than 0.6 for said i ($R_{max}$ is inverted if it is greater than 1). In such a case, we rely on the general purpose tracking algorithm to pick a sensible option – other identities might even be successfully assigned (using network predictions) in following frames, which is a complexity we do not have to deal with here. In case all ratios are below 0.6, when the best choices per identity are not too ambiguous, the following steps are performed to resolve remaining conflicts:
+
+This procedure prefers segments with larger numbers of samples over segments with fewer samples, ensuring that identities are not switched around randomly whenever a short segment (e.g. of noisy data) is predicted to be the given identity for a few frames – at least as long as a better alternative is available. The non-linearity in $S⁢(p,x)$ exaggerates differences between lower values and dampens differences between higher values: For example, the quality of a segment with 4000 samples is barely different from a segment with 5000 samples; however, there is likely to be a significant quality difference between segments with 10 and 100 samples.
 
 In case something goes wrong during the tracking, for example an individual is switched with another individual without the program knowing that it might have happened, the training might still be successful (for example if that particular segment has not been used for training). In such cases, the program tries to correct for identity switches mid-segment by calculating a running-window median identity throughout the whole segment. If the identity switches for a significant length of time, before identities are assigned to segments, the segment is split up at the point of the first change within the window and the two parts are handled as separate segments from then on.
 
-## Software and licenses
+### Software and licenses
 
 TRex is published under the GNU GPLv3 license (see here for permissions granted by GPLv3). All the codes have been written by the first author of this paper (a few individual lines of code from other sources have been marked inside the code). While none of these libraries are distributed alongside TRex (they have to be provided separately), the following libraries are used: OpenCV (opencv.org) is a core library, used for all kinds of image manipulation. GLFW (glfw.org) helps with opening application windows and maintaining graphics contexts, while DearImGui (github.com/ocornut/imgui) helps with some more abstractions regarding graphics. pybind11 (Jakob et al., 2017) for Python integration within a C++ environment. miniLZO (oberhumer.com/opensource/lzo) is used for compression of PV frames. Optional bindings are available to FFMPEG (ffmpeg.org) and libpng libraries, if available. (optional) GNU Libmicrohttpd (gnu.org/software/libmicrohttpd), if available, can be used for an HTTP interface of the software, but is non-essential.

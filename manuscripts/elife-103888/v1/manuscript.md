@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03wkg3b53 Neurobiology, Neurodegeneration and Repair Laboratory, National Eye Institute, National Institutes of Health Bethesda United States
-2. https://ror.org/04h9pn542 Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea
+1. Neurobiology, Neurodegeneration and Repair Laboratory, National Eye Institute, National Institutes of Health Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
+2. Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
 3. EyeCRO Oklahoma City United States
 
 † Corresponding author
@@ -34,19 +34,39 @@ Given that photoreceptor cell death is the final outcome and the cause of vision
 
 ## Results
 
-## Design of study for reserpine treatment of rhodopsin P23H rat model of adRP
+### Design of study for reserpine treatment of rhodopsin P23H rat model of adRP
 
 Retinal morphological and functional changes in the P23H-1 rats have been widely described (Fernández-Sánchez et al., 2011; LaVail et al., 2018; Lu et al., 2013). Before initiating the study, we evaluated the progression of retinal degeneration in P23H-1 rats at the EyeCRO facility (Oklahoma City, OK). As early as P36, P23H-1 rats exhibited a reduction in the amplitude of scotopic a- and b-waves compared to wild-type animals (Figure 1—figure supplement 1). The decline in retinal function continued progressively through P57, at which point the remaining function was comparable to that observed at P156. The first intervention was administered before functional impairment peaked with a goal to harness the remaining potential for rescue and to promote functional improvement. Studies on myopia using chicken eyes previously showed the effects of intravitreally injected reserpine could persist for more than 18 days after the injection (Ohngemach et al., 1997; Schaeffel et al., 1995). Our pharmacokinetic study in rat eye with another compound of similar molecular weight had shown that intravitreally injected drug could persist at concentration higher than 2 ng/mL throughout the entire observed period, up to 7 days (data not shown). Given the progression of retinal degeneration and duration of the drug effect, bilateral intravitreal injections of 5 µL of either vehicle or 40 µM reserpine were performed at P30 and P44. Visual function was evaluated using electroretinography (ERG), and optokinetic tracking (OKT) to quantify spatial frequency threshold and contrast threshold (CT). Structural changes were assessed using optical coherence tomography (OCT) imaging 10 and 24 days after the second injection (Figure 1A). Eyes were enucleated at P70 for histological and molecular analysis.
 
-## Reserpine treatment attenuates the decrease of scotopic b-wave in P23H-1 rats
+![Figure 1.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig1-v1.jpg)
+
+**Figure 1.:** (A) Timeline of intravitreal injections and functional and structural analysis. (B) Scotopic and photopic electroretinogram responses at P68 in wild type, DMSO- and RSP-treated P23H-rats. (C) Visual acuity measured by OKT response and contrast threshold, and outer nuclear layer thickness measured by vertical and horizontal scan of OCT in DMSO- and RSP-treated P23H-rats. All parameters were measured in both eyes (8 DMSO-treated and 7 RSP-treated rats). Data were expressed as mean ± SEM, and the Mann-Whitney U test was used to compare DMSO- and RSP-treated groups. RSP: reserpine, OKT: Optokinetic tracking, CT: Contrast threshold, ERG: electroretinogram, OCT: Optical coherence tomography, ONL: outer nuclear layer, ns: not significant, *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Scotopic and photopic electroretinogram responses at P36, P43, P50, P57, and P156 in P23H rats and at P78 in wild type rats. All parameters were measured in both eyes (3–6 P23H-1 rats and 3 wild type rats). Data are expressed as mean ± SEM, and the Mann-Whitney test is used to compare P23H-1 and wild type rats. WT: wild type.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scotopic and photopic electroretinogram responses at P54 in wild type, DMSO- and RSP-treated P23H-rats. (B) Visual acuity measured by OKT response and contrast threshold at P53, and outer nuclear layer thickness measured by vertical and horizontal scan of OCT at P56 in DMSO- and RSP-treated P23H-rats. All parameters were measured in both eyes (2 wild type, 8 DMSO-treated and 7 RSP-treated rats). Data are expressed as mean ± SEM, and the Mann-Whitney U test is used to compare DMSO- and RSP-treated groups. RSP: reserpine, OKT: Optokinetic tracking, OCT: Optical coherence tomography, ONL: outer nuclear layer, ns: not significant, *p<0.05.
+
+### Reserpine treatment attenuates the decrease of scotopic b-wave in P23H-1 rats
 
 Two intravitreal injections of either vehicle or reserpine did not result in corneal or lens opacity, nor did they cause observable retinal inflammation in animals. When comparing the vehicle-injected control group with age-matched wild-type rats, ERG analysis showed a decrease in amplitude of rod-derived scotopic response at P54, a further reduction at P68, and a decrease in amplitude of cone-derived photopic response at P68 (Figure 1B, Figure 1—figure supplement 2A). Among various measurements comparing the reserpine-treated group with controls, only the scotopic b-wave at P68 revealed a statistically significant increase in amplitude in rats treated with reserpine compared to controls (Figure 1B). The amplitude was 388.6±136.1 µV in reserpine-treated group, while it was 277.8±62.4 µV in control group (p<0.05). Scotopic a-wave and photopic b-wave amplitude in reserpine-treated group were higher compared to the control group (38.01±14.94 µV vs. 28.60±7.64 µV and 142.8±52.62 µV vs. 104.9±22.12 µV, respectively), but were not statistically significant. Other parameters such as OKT, contrast threshold, and ONL thickness evaluated by OCT did not show significant differences (Figure 1C, Figure 1—figure supplement 2B).
 
-## Female rats primarily account for the responses to reserpine treatment
+### Female rats primarily account for the responses to reserpine treatment
 
 Distinct patterns in the scotopic b-wave emerged in the reserpine-treated group when males and females were examined separately (Figure 2A, Figure 2—figure supplement 1). As shown in Figure 2A, most individuals with higher amplitude in scotopic b-wave were female rats whereas no difference was evident in male and female rats in control group. We identified the segregation stemmed from differences in responses between sexes through a subgroup analysis of males and females. Female rats also showed slower progression in decrease of scotopic b-wave response between P54 and P68 (Figure 2B). When subgroup analysis of female rats was performed, female rats showed higher response in scotopic a- and b-wave, photopic b-wave at P68 and better contrast threshold at P67 in reserpine-treated group (Figure 2C).
 
-## Dorsal and temporal retina exhibit prominent structural improvement in female rats
+![Figure 2.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sex-associated subgroup analysis for scotopic b-wave amplitude at P68. (B) Individual changes of scotopic b-wave amplitude between P54 and P68 in female rats. (C) Scotopic and photopic electroretinogram responses and contrast threshold at P68 in DMSO- and RSP-treated female P23H-rats. Data were expressed as mean ± SEM, and the Mann-Whitney U test was used to compare DMSO- and RSP-treated groups. RSP: reserpine, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scotopic and photopic electroretinogram responses at P68 in P23H rats. Responses were measured in both eyes (4 DMSO-treated and 4 RSP-treated female rats and 4 DMSO-treated and 3 RSP-treated male rats). RSP: reserpine.
+
+### Dorsal and temporal retina exhibit prominent structural improvement in female rats
 
 Retinal degeneration in P23H-1 rats does not progress synchronously throughout the retina, but dorsal retina is affected more severely (García-Ayuso et al., 2013; LaVail et al., 2018). P23H mutations in RHO gene mainly affects rod photoreceptor cells that constitute more than 97.5% of photoreceptor cells in rat retina (Szél et al., 1992). Therefore, rod photoreceptor degeneration in P23H-1 rats can be evaluated by measuring outer nuclear layer thickness, where photoreceptor nuclei lie. The OCT evaluation of female rats at P70 showed thinner outer nuclear layer (ONL) in the dorsal retina (Figure 3A). Treatment with reserpine could preserve the ONL thickness of the dorsal retina at 1,000 μm distant from the optic nerve head, which was 17.93±0.96 μm compared to 15.29±0.73 μm in the control group. Horizontal scan revealed increased ONL thickness of temporal retina at 750 μm distant from the optic nerve in the reserpine-treated group (Figure 3B). Consistent with the OCT findings, histologic evaluation of the control group also demonstrated more pronounced ONL thinning in the dorsal retina. Reserpine treatment increased the ONL thickness in the dorsal retina at 1000, 1250, and 1500 µm from the optic nerve head (Figure 3C). The number of nuclei in the ONL in SD rats is 10–14 (García-Ayuso et al., 2013), but it was 3–4 nuclei in vehicle treated P23H-1 rats and 5–6 nuclei in reserpine-treated P23H-1 rats.
 
@@ -54,7 +74,7 @@ Retinal degeneration in P23H-1 rats does not progress synchronously throughout t
 
 **Figure 3.:** (A) Outer nuclear layer thickness evaluated by vertical scan of OCT at P70. (B) Outer nuclear layer thickness evaluated by horizontal scan of OCT at P70. (C) Outer nuclear layer thickness evaluated by DAPI-stained retinal section at P70. The representative images were taken from dorsal retina, 1000 µm away from the optic nerve. Data were expressed as mean ± SEM, and the Mann-Whitney U test was used to compare DMSO- and RSP-treated groups. Images are representative of four female rats. The scale bar represents 100 µm in A and B, and 20 µm in C. RSP: reserpine, ONL: outer nuclear layer,, INL: inner nuclear layer,, GCL: ganglion cell layer, *p<0.05.
 
-## Reserpine maintains rod and cone photoreceptor survival in female rats
+### Reserpine maintains rod and cone photoreceptor survival in female rats
 
 As reserpine consistently improved retinal function and the number of photoreceptors in P23H-1 female rats, all further analysis was done for female rats only. To evaluate the structure of photoreceptors, retina sections were immunostained with REEP6, rhodopsin and cone arrestin. In P23H-1 rats, early changes such as increase in pyknotic nuclei can be detected as early as at P10 in the dorsal retina, which is followed by progressive loss of photoreceptor nuclei and shortening of rod inner and outer segments (LaVail et al., 2018). Immunostaining with REEP6 revealed extensive shortening of rod inner segments in the dorsal retina of vehicle treated rats at P70. In contrast, the inner segments were relatively preserved in the dorsal retina of female rats treated with reserpine (Figure 4A). As retinal degeneration progresses in P23H-1 rats, the progressive loss of photoreceptors is accompanied by shortening of the outer segments and mislocalization of rhodopsin to the inner segment region. In the reserpine-treated female retina, the outer segments were longer, and rhodopsin was located farther from the nuclei compared to the vehicle-treated female retina (Figure 4B). In RP, cone photoreceptors gradually degenerate after rod photoreceptor loss (Campochiaro and Mir, 2018), and preserving cone photoreceptors can be particularly beneficial for patients in advanced stages of the disease. When cone photoreceptors were counted every 500 μm across the retina, the reserpine-treated female retina showed a higher number of cones at approximately 2000 μm dorsal to the optic nerve head and relatively preserved cone morphology (Figure 4C).
 
@@ -62,17 +82,33 @@ As reserpine consistently improved retinal function and the number of photorecep
 
 **Figure 4.:** (A, B) Rod photoreceptors were evaluated by immunostaining of REEP6 and rhodopsin (Rho) at P70. The representative images were taken from dorsal retina, 1000 µm away from the optic nerve. The scale bar represents 20 µm. (C) Cone photoreceptors were evaluated by immunostaining of cone arrestin at P70. Number of cone photoreceptors were counted every 500 μm throughout the retina. Data were expressed as mean ± SEM, and the Mann-Whitney U test was used to compare DMSO- and RSP-treated groups. Images are representative of four female rats. The scale bar represents 20 µm. RSP: reserpine, ONL: outer nuclear layer, INL: inner nuclear layer, GCL: ganglion cell layer, *p<0.05.
 
-## Cellular pathways show sex-biased dysregulation in rhodopsin P23H rat retina
+### Cellular pathways show sex-biased dysregulation in rhodopsin P23H rat retina
 
 To understand the processes behind reserpine-mediated improvement in photoreceptor survival, we first characterized the molecular pathogenesis of P23H-induced retinal neurodegeneration. We profiled retinal transcriptomes from female and male rats with wild type (WT) and RhoP23H/+ genetic backgrounds at P70. For the mutant animals, we collected retinas from both reserpine-treated and untreated control groups. After standard quality check and filtering, a total of 10,726 genes were captured across 19 samples. Principal component analysis (PCA) showed distinct clustering of WT and P23H transcriptomes (Figure 5A). Interestingly, female and male retinas separated within WT as well as treated and untreated groups, suggesting a notable influence of biological sex. Therefore, we designed our transcriptomic analyses to test differences when both sexes were combined as well as to check for female and male specific trends.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig5-v1.jpg)
+
+**Figure 5.:** (A) Principal Component Analysis (PCA) plot of retinal transcriptomes from WT, P23H and P23H reserpine-treated rats at P70. Female (.F) and male (.M) animals are represented by circles and triangles, respectively. (B) Heatmap of significantly differentially expressing genes between WT and P23H retinas. Male and female retinas have common as well as unique transcriptomic trends in P23H rodents. Colors are z-scores of row-scaled log2 CPM values of genes. (C) Volcano plot of significantly differential genes between WT and P23H retinal transcriptomes. Top over- and under-expressing genes labeled on the plot. (D) KEGG pathways enriched in mutant retinal transcriptomes of female and male rats. Over and under-enriched pathways are shown in red and blue, while non-significant enrichment is depicted in transparent fill. (E) Phototransduction genes express differently in P23H mutant retinas and have a sex-biased trend. (F) Boxplots showing expression of key phototransduction genes – rhodopsin (Rho), transducin (Gnat1), and rhodopsin kinase (Grk1) in female and male retinas. Adjusted p-value from statistical comparison is shown on the plot, with ‘ns’ denoting a value greater than 0.05. (G) Heatmap of significantly differential genes in KEGG pathways of transcription, translation and cellular transport that constitute the genetic information processing supergroup. Heatmap colors in panels (E) and (G) are z-scores of row-scaled log2 CPM values of genes and similar to the plot in (B). WT: wild-type, P23H: DMSO-treated P23H retinas, RSP: reserpine-treated P23H retinas.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Summary of significantly enriched KEGG processes in P23H mutants when compared to WT. Female and male samples were combined in this analysis. (B) Pathways enriched in P23H retinal transcriptomes, when compared to WT, are consistent across model systems. Qualitative heatmap shows up- and down- regulated KEGG pathways in our study as well as published (Leinonen et al., 2020; Vats et al., 2022). Pathways are colored red and blue per over- and under-enrichment, and grey if not significant in a dataset. (C) Beeswarm plot of log2 fold change of leading-edge genes for selected pathways, showing increase in phagosome as well as lysosome processes and reduction in phototransduction. (D) Female and male retinas have distinct sets of P23H linked differential expression. Venn diagram comparing differentially expressed genes from combined samples, and from independent male and female comparisons.
 
 Combined analyses of both male and female WT and P23H retinas revealed 652 genes differentially expressed at significance threshold of adjusted p-value <0.05 and absolute fold change >2 (Figure 5—source data 1). These genes showed strong differences between WT and mutant retinas as well as some biological sex dependent trends within each genotype (Figure 5B). These genes summarize the transcriptomic signature of P23H pathology and include a host of protein-coding-genes that function in diverse sets of pathways (Figure 5C, Figure 5—figure supplement 1A). We used gene set enrichment analysis using KEGG pathways to identify positively and negatively enriched processes. Phototransduction was observed to be strongly downregulated in P23H retinas with several genes showing marked sex-specific trends in the mutant (Figure 5D and E). We plotted expression of genes for rhodopsin (Rho), transducin (Gnat1) and rhodopsin kinase (Grk1) in female and male retinas to visualize the disease- and sex-differences at individual genes (Figure 5F). Many housekeeping and inflammation related gene sets were significantly impacted by P23H-linked transcriptomic changes. We analyzed two published transcriptome datasets from P23H and WT rodent models to evaluate our observations and identified that many of the pathways were enriched in those studies (Leinonen et al., 2020; Vats et al., 2022; Figure 5—figure supplement 1B). For instance, phagosome and phototransduction follow similar trends in all three studies while many others present in more than one dataset indicating their importance in the molecular pathology of P23H linked retinal degeneration. Among the prominent pathways, those relating to transcription, translation and cellular transport that deal with production, quality control and transport of biomolecules were markedly altered in P23H mutant retinas (Figure 5G, Figure 5—figure supplement 1B). Leading edge genes for phagosome and lysosomal had net positive fold change of gene expressed in comparisons of the mutant and WT animals (Figure 5—figure supplement 1C).
 
 To assess the role of biological sex in P23H molecular pathology, we focused on the sex-specific differential analyses between WT and mutant retinal transcriptomes (Figure 5—figure supplement 1D). The female P23H rat retina revealed 548 over-expressed genes whereas 796 genes showed lower expression. Male retinas demonstrated stronger differential trends with 2542 and 1580 over- and under-expressing genes, respectively. We also observed that combining male and female datasets appeared to uncover consistent differential genes that were otherwise missed when individual sexes were compared (Figure 5—figure supplement 1D). Geneset enrichment analysis of female and male transcriptomes uncovered similar pathways observed in the combined dataset (Figure 5D, Figure 5—figure supplement 1A). Female retinas had a wide range of positively and negatively enriched pathways, whereas male transcriptomes primarily presented pathways with positive net enrichment (Figure 5D). Our results indicate an interesting variance in P23H pathology in retinas of female and male rats suggesting that the role of biological sex should be investigated in inherited retinal degeneration as well as in the broader context of retinal health and disease.
 
-## RNA-seq identifies sex-specific responses to reserpine treatment
+### RNA-seq identifies sex-specific responses to reserpine treatment
 
 The transcriptome analysis revealed biological sex-related alterations in P23H mutant retinas when comparing to WT as well as drug response in mutants (Figure 5A). Following sex-specific molecular pathology trends, we identified differential genes between sex-matched treated and untreated retinal transcriptomes. In female retinas, the reserpine treatment resulted in higher expression of 1437 genes, whereas 352 genes showed lower expression (Figure 6A, Figure 6—source data 1). Expression profiles of differential genes clustered closer to WT than untreated mutant retinas as evidence by the dendrogram in the heatmap of Figure 6A. In contrast, male P23H retinas showed only 180 over and 580 under expressing genes, however, unlike female samples, male differential genes did not cluster with WT suggesting a distinct reserpine response in the two sexes (Figure 6—figure supplement 1A and B, Figure 6—source data 1). KEGG pathway enrichment (using ClueGO) of overexpressing genes in reserpine-treated females uncovered several key pathways responding to treatment (Figure 6B). Most promisingly, we observed elevated expression across phototransduction genes in treated female retinas, including that of the gene coding for rhodopsin (Figure 6C). Also responding to reserpine were the key rod photoreceptor transcription factors - NRL, NR2E3, and CRX (Figure 6D). Interestingly, MEF2C, another transcription factor associated with rod gene expression (Hao et al., 2011) showed an opposite trend of lower expression in reserpine-treated female retinas (Figure 6—figure supplement 1D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig6-v1.jpg)
+
+**Figure 6.:** (A) Heatmap of reserpine associated differentially expressing genes showing clustering of transcriptomic profiles of treated retinas with that of WT rats. Colors are z-scores of row-scaled log2 CPM values of genes and same as in Figure 5B. (B) KEGG pathway enrichment network of reserpine linked over-expressing genes highlighting clusters of pathways impacted by treatment. Analysis performed using ClueGo on Cytoscape. Notable pathways include phototransduction, proteostasis network and p53 signaling among others. (C) Reserpine-treated female P23H retinas have higher gene expression of Rho than that of DMSO administered samples. (D) Gene expression of several key photoreceptor transcription factors – Nrl, Nr2e3, and Crx – recover after reserpine treatment. (E) Transcription of proteostasis network genes in female mutant retinas is reversed by reserpine. (F) Reserpine leads to transcriptomic upregulation of p53 signaling pathway genes. (G) P62 (Sqstm1) and Akt1 genes are transcribed higher in response to reserpine administration. Adjusted p-value from statistical comparison is shown on the plot, with ‘ns’ denoting a value greater than 0.05. WT: wild-type, P23H and DMSO: DMSO-treated P23H retinas, RSP: reserpine-treated P23H retinas.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/103888/elife-103888-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmaps of differential genes from (A) combined female and male, and (B) male only analysis. Colors are z-scores of row-scaled log2 CPM values of genes and same as in Figure 5B. (C) Gene expression profile of retinal cell type markers show reserpine linked transcriptomic changes in rod photoreceptors as well as other cell types. Colors are z-scores of row-scaled log2 CPM values of genes and same as in Figure 5B. (D) Boxplots of gene expression of retinal transcription factor Mef2c in WT, untreated and reserpine treated female retinas. (E) Boxplots of expression of the gene coding for proteasomal regulator Nfe2l2 (Nrf2) in WT, and RSP treated and untreated P23H female retinas. Heatmap of significantly differential genes in (F) proteasomal regulation and (G) p53 signaling pathways in female retinas. Colors are z-scores of row-scaled log2 CPM values of genes and same as in Figure 5B. Adjusted p-value from statistical comparison is shown on the plot, with ‘ns’ denoting a value greater than 0.05. (H) Plot showing gene expression alteration (log2 fold change) among leading edge genes for KEGG nervous system gene sets. Term ‘Nervous.system’ is a merged superset for all sub-pathways in that category. WT: wild type, DMSO: DMSO-treated P23H retinas, RSP: reserpine-treated P23H retinas.
 
 We then investigated the expression of cell type-specific markers to estimate impact of reserpine on retinal cell types and observed diverse response; however, reserpine-treated samples clustered closer to WT than untreated P23H female retinas (Figure 6—figure supplement 1C). A few photoreceptor markers show increased expression with treatment, as did genes for bipolar, horizontal, amacrine and retinal ganglion cells. Notable drug response was observed in proteostasis linked pathways such as proteasome, endocytosis, lysosome and ubiquitin-mediated proteolysis, which had at least five significantly over-expressing genes and a minimum 5% of the pathways impacted (Figure 6B). Furthermore, signaling pathways such as p53, TGF-beta and hippo were also impacted by reserpine linked over-expression. Pathway analysis imply that reserpine may be acting via similar mechanisms described in our previous report of an unrelated retinal pathology and disease model (Figure 6B; Chen et al., 2023). Therefore, we ran a geneset enrichment analysis of ‘Proteostasis Network’ and recorded significant enrichment in mutant retinas upon reserpine treatment (Figure 6E). Similar strong activation post drug treatment was observed in p53 signaling (Figure 6F). To further understand upregulation of proteostasis network, we checked two key factors p62 (Sqstm1) and Nrf2 (Nfe2l2) and identified robust overexpression in the former while the latter did not show significant response despite an increasing trend (Figure 6G, Figure 6—figure supplement 1E). In addition, several genes for proteasomal regulation were significantly differentially expression in reserpine-treated female P23H retinas (Figure 6—figure supplement 1F). Similarly, the gene coding for Akt1, a prominent pro-survival serine/threonine kinase and a member of the p53 network, was significantly responsive to reserpine, as were other genes of the pathway (Figure 6G, Figure 6—figure supplement 1G). Finally, KEGG neuronal system genesets including multiple synapse related processes were observed to show higher gene expression in female P23H retinas upon reserpine treatment (Figure 6—figure supplement 1H).
 
@@ -92,42 +128,115 @@ Our study further illustrates the potential of reserpine as a gene-independent t
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-REEP6 (rabbit polyclonal)</td>
+      <td>PMID:28369466</td>
+      <td>Available from Dr. Swaroop</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RHO (mouse monoclonal)</td>
+      <td>Gift of Dr. Robert Molday, University of British Columbia</td>
+      <td>Please request it from Dr. Molday</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cone arrestin (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB15282, RRID:AB_1163387</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reserpine</td>
+      <td>Sigma-Aldrich</td>
+      <td>06859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop 2023</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biowulf Linux cluster</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_007169</td>
+      <td>http://biowulf.nih.gov</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306, RRID:AB_2629482</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Hemizygous P23H-1 rats were produced by crossing homozygous transgenic P23H line 1 rats, obtained from Matthew LaVail (University of California, San Francisco School of Medicine; LaVail et al., 2018), with wild-type Long Evans rats purchased from Charles River. The hemizygous P23H-1 rats carry a single P23H transgene allele with a transgene copy number of 9, in addition to the normal two wild-type opsin alleles (Orhan et al., 2015). The ratio of transgene to endogenous opsin mRNA was 0.1:1 (LaVail et al., 2018; Machida et al., 2000). For control animals, wild-type Sprague-Dawley rats were crossed with Long-Evans rats, also from Charles River. Seven to eight animals per were used per experimental group, and each was assigned a five-digit ID number via an ear tag for tracking purposes. Rats were housed in groups of 3–5 in spacious cages situated on ventilated shelves, following a 12 hr dark/light cycle. Each cage was equipped with refuges, gnawing, and nesting material. Daily monitoring was conducted to detect gross behavioral changes such as lack of activity, lack of grooming, and intolerance, which could be considered humane end points. All procedures were carried out in accordance with guidelines approved by the Institutional Animal Care and Use Committee of EyeCRO (2021-10-16-001).
 
-## Intravitreal injection
+### Intravitreal injection
 
 Prior to each procedure, pupils were dilated, and a combination of ketamine (85 mg/kg) and xylazine (4 mg/kg) was administered via intraperitoneal injection, following light sedation using isoflurane. A total volume of 5 µL of either 0.4% DMSO or 40 µM reserpine (diluted from 10 mM stock solution) was injected into the vitreous at the pars plana using a Hamilton syringe with a 33-gauge needle. Upon completion of the procedures, Yohimbine was administered via intraperitoneal injection at a concentration of 1 µL per gram of body weight as a reversing agent for ketamine-xylazine anesthesia. Eight male and eight female rats from two litters were randomly allocated to two groups, with each group receiving bilateral injections of either vehicle or reserpine. Information about the injected materials was blinded to the researchers who conducted the animal experiments and performed the initial analysis for each experiment. One male rat from reserpine-treated group was excluded from downstream analysis due to death during anesthesia at P53.
 
-## Optokinetic tracking (OKT)
+### Optokinetic tracking (OKT)
 
 OKT response was measured using an OptoMotry designed for rodent use (Cerebral Mechanics Inc) (Prusky et al., 2004). After rats were positioned on a platform surrounded by four LCD screens in a light-protected box, visual stimuli were given to the rats. The LCD monitors in the box displayed continuous vertical sine wave gratings that rotates at a rate of 12 degrees per second, creating the perception of a virtual three-dimensional rotating sphere for the rats. The rotation of the virtual cylinder was adjusted to keep a viewing distance consistent. Using a digital camcorder mounted on the top of the box, a masked observer evaluated the OKT responses that could be identified as slow and steady head movements in the direction of the rotating grating. At a range of spatial frequencies from 0.064 to 0.514 cycles/degree, input from the masked observer was given to the device and the testing stimuli was automatically adjusted based upon the tracking reflex of the animals to identify and determine to spatial frequency threshold which elicited which tracking behavior for each eye. To determine contrast threshold, a fixed spatial frequency threshold of 0.064 cycles/degree was utilized with a decreasing contrast grating stimulus presented to the eyes. The contrast threshold was calculated as a reciprocal of the Michelson contrast from the screen’s luminance (maximum – minimum)/(maximum +minimum).
 
-## ERG recordings
+### ERG recordings
 
 After a minimum of 12 hr dark adaptation, rats were anesthetized with an intraperitoneal injection of ketamine (85 mg/kg) and xylazine (4 mg/kg) after pupil dilation. The Espion System from Diagnosys LLC (Lowell, Massachusetts, USA) was employed for both stimulation and recordings. First, a stimulus intensity of 40 (S) cd·s/m2 was presented to record scotopic responses. The amplitude of the scotopic a-wave was measured from the baseline to the trough of the a-wave, while the amplitude of the scotopic b-wave was measured from the trough of the scotopic a-wave to the crest of the scotopic b-wave. Rats were then light adapted for 7 min and were presented with a total of 15 repeated flashes at an intensity of 10 (S) cd·s/m2. The recordings were averaged to produce the final waveform. The amplitude of the photopic a-wave was not analyzed due to its low amplitude and high variability, which is consistent with findings from a previous study (Orhan et al., 2015), whereas the amplitude of the photopic b-wave was measured from the trough of the a-wave to the crest of the b-wave.
 
-## Fundus imaging and optical coherence tomography
+### Fundus imaging and optical coherence tomography
 
 Following sedation and pupil dilation, rats were securely positioned on an animal stand and fundus was imaged with Micron IV (Phoenix Research Inc, Pleasanton, CA). With Micron IV OCT module, OCT images crossing the optic disc vertically and horizontally were acquired by averaging 25 scans each to eliminate artifacts. After curated layer segmentation, the total retina thickness was evaluated by measuring distance between inner limiting membrane (ILM) and retinal pigment epithelium (RPE), and the outer nuclear layer (ONL) thickness was evaluated by measuring distance between outer plexiform layer (OPL) and RPE. After adjustment of the center, the thickness was obtained at five lateral distances from the optic disc (250, 500, 750, 1000, 1250 µm).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Following sedation, animals were euthanized by intracardial administration of Euthasol (Virbac, Westlake, TX). The superior portion of each eye was then demarcated with a scorch mark, and the eyes were enucleated keeping optic nerve intact. For the right eyes, retinas were individually dissected, snap-frozen, and stored at –80 °C until RNA-seq experiments. The left eyes were fixed in 4% PFA for 1 hr at room temperature, then cryoprotected by sequentially incubating in 10% and 20% sucrose-PBS for 1 hr at room temperature, followed by overnight incubation in 30% sucrose-PBS at 4 °C. After removing the cornea and lens, eyes were cryo-embedded in optimal cutting temperature medium (Sakura Finetek, Torrance, CA). Retinas were sectioned vertically at 12 μm on a cryostat and washed twice in PBS. After blocking with 5% normal donkey serum in 0.5% Triton X-100 dissolved in filtered PBS (PBS-T) for 1 hr at room temperature, slides were incubated overnight at 4 °C with the following primary antibodies: a custom rabbit polyclonal antibody to REEP6 (1:1000, Veleri et al., 2017), a mouse monoclonal antibody to rhodopsin (1:500, Gift of Dr. Robert Molday, University of British Columbia), or a rabbit polyclonal antibody to cone arrestin antibody (1:500, Millipore, AB15282). Following three washes in PBS, slides were incubated with a corresponding secondary antibody and 1 μg/ml of 4,6-diamidino-2-phenylindole (DAPI) for 1 hr at room temperature. Sections were then washed three times in PBS, mounted in Fluoromount-G mounting medium (SouthernBiotech, Birmingham, AL), and sealed. Using the tile scan function of the Nikon A1R confocal microscope (Nikon, Tokyo, Japan), entire retinal sections were imaged at high resolution. The ONL thickness was measured at every micron along the entire retina using the ThicknessTool (Maidana et al., 2020) ImageJ macro on a semi-manually drawn ONL outline. Cones within a designated boundary, defined by distance from the optic nerve, were counted manually.
 
-## RNA extraction and library preparation
+### RNA extraction and library preparation
 
 Total RNA was purified from homogenized rat retinas (WT, DMSO controls, and reserpine-treated samples) using TriPure isolation reagent (Roche, Indianapolis, IN) according to the manufacturer’s protocol. The quality and quantity of RNA were both assessed using the RNA ScreenTape assay on the Agilent TapeStation system. Samples (with RNA integrity number >8) were used for library generation using the TrueSeq RNA sample Prep Kit v2 (Illumina).
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 Retinal transcriptomes were profiled using bulk-RNA sequencing with 125 bp paired-end reads using Illumina sequencing and analyzed with pipelines described before (Chen et al., 2023; Mondal et al., 2024). In brief, quality check and reference mapping were performed with Kallisto using the Rattus norvegicus assembly and gene annotation from Ensembl. Alignments were processed using tximport and further analyzed with the edgeR and limma voom pipelines for differential expression analyses for various comparisons of WT, P23H and reserpine-treated samples. When specified, female and male samples were analyzed separately to characterize sex-bias disease mechanism as well as drug response. Significantly differential genes were mapped to KEGG pathways using ClueGO. Additionally, gene set enrichment analysis was performed using fgsea to identify enriched pathways (KEGG) in the various comparisons. Unless otherwise mentioned, the R programming language, base packages and the tidyverse groups of packages were used for analyses and data visualization. We compared our results with two publicly available retinal transcriptome datasets of the P23H model, generated by independent research groups (GSE152474; Leinonen et al., 2020) and (GSE179754, Vats et al., 2022). For the former, the list of P23H vs WT enriched pathways were downloaded from GEO; and, for the latter read counts for 1DIV samples (in vitro retinal explants from Rho P23H/+and WT animals treated with DMSO for 24 hr) were analyzed using the same pipeline used for our data to identify differential genes and enriched KEGG gene sets.
 
-## Statistical analysis
+### Statistical analysis
 
 Based on the normative data from the facility, the sample size of animals used in each group was determined by an unpaired t-test to be more than six rats in each group (http://www.biomath.info). The Mann-Whitney U test, conducted using GraphPad Prism 10 (GraphPad Software, Inc, La Jolla, CA), was used to compare the means between control and reserpine-treated groups for optokinetic tracking, contrast threshold, scotopic a- and b-wave amplitude, photopic b-wave amplitude, outer nuclear thickness (measured by OCT and histology), and the number of cone photoreceptors. All data were expressed as mean ± standard deviation (SD) unless specified. Results with a p-value <0.05 were considered statistically significant.
 
-## Material availability statement
+### Material availability statement
 
 All materials are available upon request. A Material Transfer Agreement is needed to comply with the guidelines and policies of the National Institutes of Health.

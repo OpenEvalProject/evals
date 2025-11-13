@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Urology, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Center for Reproductive Sciences, University of California, San Francisco San Francisco United States
-4. https://ror.org/043mz5j54 Developmental and Stem Cell Biology Graduate Program, University of California, San Francisco San Francisco United States
-5. https://ror.org/043mz5j54 Department of Obstetrics, Gynecology, and Reproductive Sciences, University of California, San Francisco San Francisco United States
+1. The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Urology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Center for Reproductive Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Developmental and Stem Cell Biology Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Department of Obstetrics, Gynecology, and Reproductive Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -34,9 +34,45 @@ Single cell RNA-sequencing (scRNA-seq) has emerged as the standard for transcrip
 
 ## Results
 
-## The transcriptional landscape of the VC and SC at mid-gestation
+### The transcriptional landscape of the VC and SC at mid-gestation
 
 To understand the cellular composition of the SC, we isolated and profiled cells from both the VC and the SC regions of four second trimester human placentas spanning gestational weeks 18–24 (GW18–24) using scRNA-seq (Figure 1a). We chose to analyze second trimester samples because the maturation of the SC is complete but the inflammation and apoptosis associated with membrane rupture and parturition is absent (Benirschke et al., 2006; Yuan et al., 2006; Yuan et al., 2008; Yuan et al., 2009; Figure 1a). SC and VC cells were isolated from each human placental sample allowing within and across patient comparisons. VC samples included cells isolated from floating and anchoring villi and areas surrounding the cell column, while most of the decidua (including spiral arteries) were dissected away. SC samples included the chorion and underlying stroma (mesenchymal and endothelial cells), but not the amnion and little of the neighboring decidua, which were also removed during dissection. CTBs were further enriched over stromal and immune cells during cell preparation as previously described (Garrido-Gomez et al., 2017 and in Materials and methods). The transcriptomes of the resulting cells were captured using the 10× Genomics scRNA-seq platform.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-v2.jpg)
+
+**Figure 1.:** (a) Left: Schematic of the placenta at mid-gestation, highlighting the regions sampled, together with the methods used for cell isolation and characterization. Right: Schematic of the cell types and their organization in each region. (b) UMAPs of integrated samples, shown by region of origin (left – VC, right – SC), and colored according to broad cell type clusters. (c) Heatmap of the transcript expression of select cell identity markers across broad cell type clusters and regions. Values are scaled expression across the clusters of each region independently.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Violin plots of the number of unique genes (left), number of UMI (middle), and the percent of mitochondrial reads (right) per cell for each broad cell type cluster. (b) The total number of cells (left) and the percent of the total library (right) in each broad cell type cluster from each placental sample are shown. (c) UMAPs of the integrated dataset shown by each placental sample. Colors correspond to each broad cell type cluster in the legend at the right. The number of cells analyzed from each placental sample is listed beneath. (d) The number of cells in each broad cell type cluster from each region (villous chorion [VC] – black; smooth chorion [SC] – blue).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Violin plot of XIST transcript expression in each sample for each trophoblast cluster. Since all trophoblast are of fetal origin, samples expressing XIST are XX and samples with no XIST expression are XY. (b) Violin plot of XIST transcript expression in each sample for each stromal cluster. Clusters with XIST expression in samples other than GW23 are of maternal origin. Clusters with XIST expression only in GW23 are of fetal origin. (c) Violin plot of XIST transcript expression in each sample for each immune cluster. Clusters with XIST expression in samples other than GW23 are of maternal origin. Clusters with XIST expression only in GW23 are of fetal origin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Spearman correlations between the average expression within each stromal cell cluster identified in this study (y-axis) and in Vento-Tormo et al., 2018 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (b) UMAP plot of the integration of stromal cells identified in this study and in Vento-Tormo et al., 2018. On the left, cells originating from this study are colored by their independently derived cluster annotations. On the right, cells originating from Vento-Tormo et al., 2018, are colored by their independently derived cluster annotations. (c) Spearman correlations between the average expression within each immune cell cluster identified in this study (y-axis) and in Vento-Tormo et al., 2018 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (d) UMAP plot of the integration of immune cells identified in this study and in Vento-Tormo et al., 2018. On the left, cells originating from this study are colored by their independently derived cluster annotations. On the right, cells originating from Vento-Tormo et al., 2018, are colored by their independently derived cluster annotations.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Spearman correlations between the average expression within each stromal cell cluster identified in this study (y-axis) and in Pique-Regi et al., 2019 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (b) UMAP plots of the integration of stromal cells identified in this study and in Pique-Regi et al., 2019. Cells originating from the villous chorion (VC) are highlighted on the left and cells originating from the smooth chorion (SC) are highlighted on the right colored by their independently derived cluster annotations. Cells originating from this study are highlighted on the top row and cells originating from Pique-Regi et al., 2019, are highlighted on the bottom row colored by their independently derived cluster annotations. (c) Spearman correlations between the average expression within each immune cell cluster identified in this study (y-axis) and in Pique-Regi et al., 2019 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (d) UMAP plot of the integration of immune cells identified in this study and in Pique-Regi et al., 2019. Cells originating from the VC are highlighted on the left and cells originating from the SC are highlighted on the right colored by their independently derived cluster annotations. Cells originating from this study are highlighted on the top row and cells originating from Pique-Regi et al., 2019, are highlighted on the bottom row colored by their independently derived cluster annotations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) UMAP of all subclustered immune cells (n=14,805). Colors correspond to the clusters in the legend at the right. (b) Heatmap of selected marker genes of each immune cell cluster. Expression was displayed as the scaled mean expression in the cluster. (c) UMAP of immune cells shown by sample. (d) UMAP of immune cells shown by region of origin. (e) Stacked bar chart of the number of cells (left) or proportion of cells (right) in each cluster by region of origin.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) UMAP of subclustered stromal cells isolated from the VC. Colors correspond to the clusters at the right. (b) UMAP of subclustered stromal cells isolated from the SC. Colors correspond to the clusters at the right. (c) Spearman correlations between the average expression within independently derived VC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). (d) Spearman correlations between the average expression within independently derived SC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation plot in c and d.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (a) UMAP of subclustered stromal cells (n=3883). Colors correspond to the clusters in the legend at the right. (b) Heatmap of selected marker genes for each stromal cell cluster. Expression was displayed as the scaled mean expression in the cluster. (c) UMAP of stromal cells shown by sample. (d) UMAP of stromal cells shown by region of origin. (e) Stacked bar chart of the number of cells (left) or percent of cells (right) in each cluster by region of origin. (f) Violin plot of COL11A1 expression in each cluster shown by each region, showing expression in only smooth chorion (SC) cells. (g) Violin plots of HGF, WNT2, and RSPO3 expression in each cluster and shown by each region, showing expression in both villous chorion (VC) and SC cells.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** (a) UMAP of subclustered immune cells isolated from the VC. Colors correspond to the clusters at the right. (b) UMAP of subclustered immune cells isolated from the SC. Colors correspond to the clusters at the right. (c) Spearman correlations between the average expression within independently derived VC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). (d) Spearman correlations between the average expression within independently derived SC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation plot in c and d.
 
 Each of the eight datasets (GW17.6, 18.2, 23.0, 24.0; VC and SC) was captured independently, then integrated computationally (Figure 1b; Stuart et al., 2019). We classified the cells of the integrated dataset into broad cell type clusters according to functional identities and annotated each by expression of canonical markers. CTBs were annotated as KRT7+, HLA-G-; EVTs as KRT7+, HLA-G+; immune cells as CD45+, VIM-; stromal cells as VIM+, CD45-; and the uterine epithelium by expression of EPCAM+, MUC1+, and MUC16+ (Figure 1c; Lee et al., 2016; McMaster et al., 1995; Vento-Tormo et al., 2018). Cells expressing exclusive markers of disparate cell types (co-expression of KRT7, HLA-G, HLA-A, VIM, ACTA2) were labelled as doublets and excluded from further analysis. The complete dataset used for further analysis contained 50,496 cells that passed quality control (between 500 and 6500 unique genes, fewer than 15% mitochondrial reads, doublets removed) (Figure 1—figure supplement 1a; McGinnis et al., 2019). Cells originating from each region (VC – 25,367 and SC – 25,129) and each sample (7181–17,705 cells per sample) were well represented (Figure 1b; Figure 1—figure supplement 1b and c). The number of cells in each broad cell type cluster demonstrated enrichment for CTBs, which represented more than 60% of the cells in the integrated dataset, as expected given the enrichment protocol (Figure 1—figure supplement 1d). The sex of each fetus was inferred by assaying expression of XIST in trophoblast cells isolated from each sample (Figure 1—figure supplement 2a), which allowed the assignment of cell types to either fetal or maternal origin (Figure 1—figure supplement 2b).
 
@@ -44,9 +80,29 @@ Even though there was enrichment for CTBs, we still identified 14,805 immune cel
 
 While few stromal cells were isolated in the preparations, subclustering still revealed a differential composition of fetal stromal cells between the VC and SC (Figure 1—figure supplement 7a-c; Figure 1—source data 2). The majority of stromal cells recovered originated from the SC (2941 compared to 942 from VC). These cells included lymphatic endothelium (Pique-Regi et al., 2019) and two largely SC-specific mesenchymal cell populations of fetal origin, Mesenchyme 1 and Mesenchyme 3 (Figure 1—figure supplement 7c-e; Figure 1—figure supplement 2b). These two clusters are marked by elevated expression of EGFL6, DLK1, and uniquely by expression of COL11A1, which is observed only in the SC (Figure 1—figure supplement 7b and f ). Interestingly, several canonical CTB support factors including HGF, WNT2, and RSPO3 were expressed in fetal stromal populations in both regions, suggesting shared requirements for WNT and MET signaling (Figure 1—figure supplement 7g). Taken together these data demonstrate the identification of broad classes of CTBs, immune, and support cells from both the VC and SC regions .
 
-## Identification of an SC-specific CTB population
+### Identification of an SC-specific CTB population
 
 CTBs are the fetal cells that perform the specialized functions of the VC, and are required for normal fetal growth and development (Maltepe and Fisher, 2015; Turco et al., 2018; Knöfler et al., 2019). To better understand the composition of CTBs in the SC versus the VC, we subclustered this population (KRT7+, VIM-, CD45-, MUC1-). The CTB subset is comprised of 29,668 cells with similar representation and cell quality control metrics across all eight samples (Figure 2—figure supplement 1a, b, and c). This analysis identified 13 clusters including several CTB, EVT, and STB subtypes (Figure 2a; Figure 2—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig2-v2.jpg)
+
+**Figure 2.:** (a) UMAP of subclustered trophoblasts (n=29,668). Colors correspond to the clusters at the right. (b) Dot plot showing average expression and percent of cells in each cluster as identified by the marker genes listed on the x-axis. The clusters are listed on the y-axis. (c) UMAP of subclustered trophoblasts from the villous chorion (VC) (left) or the SC (right). Clusters and colors are the same as in panel a. (d) Quantification of the number of cells in each trophoblast cluster from each region. Cells from the VC are shown in black. Cells from the SC are shown in blue. (e) Violin plot of PAGE4 transcript expression across all trophoblast clusters. (f) Immunofluorescence co-localization of PAGE4 with pan-cytokeratin (marker of all trophoblast) in the VC (left) or SC (right). (g) Violin plot of KRT6A transcript expression across all trophoblast clusters. (h) Immunofluorescence co-localization of KRT6 with pan-cytokeratin (marker of all trophoblast) in the VC (left) or SC (right). (i) Immunofluorescence co-localization of CDH1 and KRT6 in the VC (left) or SC (middle). High magnification inset is denoted by the white box (right). For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: AV = anchoring villi; FV = floating villi; SC = smooth chorion epithelium; Amn. = amnion; Dec. = decidua.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Violin plots of the number of unique genes (left), number of UMI (middle), and the percent of mitochondrial reads (right) per cell for each trophoblast cluster. (b) UMAPs of the trophoblast dataset shown by each placental sample. Colors correspond to each trophoblast cluster shown in the legend at the right. The number of cells analyzed from each placental sample is listed beneath. (c) The number of cells (left) and the percentage (right) in each trophoblast cluster from each placental sample. (d) Spearman correlations between the average expression within each trophoblast cell cluster identified in this study (y-axis) and in Vento-Tormo et al., 2018 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (e) UMAP plot of the integration of trophoblast cells identified in this study and in Vento-Tormo et al., 2018. On the left, cells originating from this study are colored by their independently derived cluster annotations. On the right, cells originating from Vento-Tormo et al., 2018, are colored by their independently derived cluster annotations. (f) Spearman correlations between the average expression within each trophoblast cell cluster identified in this study (y-axis) and in Pique-Regi et al., 2019 (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (g) UMAP plots of the integration of trophoblast cells identified in this study and in Pique-Regi et al., 2019. Cells originating from the villous chorion (VC) are highlighted on the left and cells originating from the smooth chorion (SC) are highlighted on the right colored by their independently derived cluster annotations. Cells originating from this study are highlighted on the top row and cells originating from Pique-Regi et al., 2019, are highlighted on the bottom row colored by their independently derived cluster annotations. The dashed line annotates the contribution of CTB 3 and CTB 4 identified in this study, and their absence in the VC and in the Pique-Regi et al., 2019, dataset.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Heatmap of the expression of the top 20 marker genes for each trophoblast population. (b) Expression of phasic transcripts MKI67 (top), PCNA (middle), and TOP2A (bottom) were projected in UMAP space. (c) Heatmap of the Spearman correlation coefficients between each trophoblast population.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) UMAP of subclustered trophoblasts isolated from the VC. Colors correspond to the clusters at the right. (b) UMAP of subclustered trophoblasts isolated from the SC. Colors correspond to the clusters at the right. (c) Violin plots of transcript expression of CTB 1 marker PAGE4, CTB 4 marker KRT6A, STB Precursor marker ERVFRD-1, STB marker PSG1, and EVT marker HLA-G in the independently derived VC cell clusters (left) and SC cell clusters (right). (d) Spearman correlations between the average expression within independently derived VC clusters (y-axis) and the independently derived SC clusters (x-axis). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (e) Spearman correlations between the average expression within independently derived VC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation. (f) Spearman correlations between the average expression within independently derived SC clusters (y-axis) and the clusters from the integrated dataset (Figure 2). Black dots denote p-value ≤ 0.05 derived from permutation testing for each correlation.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Violin plot of CDH1 transcript expression across all trophoblast clusters. (b) Immunofluorescence co-localization of CDH1 and PAGE4 in the VC (left) and SC (right). (c) Immunofluorescence co-localization of Pan-CK (marker of all trophoblast) and KRT6 in the VC. Arrowheads denote KRT6+ cells. (d) Violin plots of expression of each KRT6 isoform, showing expression of only KRT6A in trophoblasts. For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: AV = anchoring villi; Amn. = amnion; SC = smooth chorion epithelium; Dec. = decidua; FV = floating villi.
 
 Broad classes of trophoblast were annotated by established markers (STBs – CGA, CYP19A1, CSH1, CSH2; EVTs – HLA-G, DIO2; CTBs – PAGE4, PEG10, and no expression of EVT and STB markers) (Figure 2b and Figure 2—figure supplement 2a; McMaster et al., 1995; Lee et al., 2016; Suryawanshi et al., 2018; Liu et al., 2018). Comparison to previously published cell types in the VC and SC confirmed the identities of most clusters (Figure 2—figure supplement 1d-g; Vento-Tormo et al., 2018; Pique-Regi et al., 2019). Two cell clusters showed high expression of canonical phasic transcripts, including MKI67, with the S-phase cluster denoted by expression of PCNA and the G2/M-phase cluster by expression of TOP2A (Figure 2—figure supplement 2b; Tirosh et al., 2016). Both populations share gene expression with all clusters of CTBs, and therefore, were identified as actively cycling CTBs (Figure 2—figure supplement 2a). No STB or EVT markers were identified in the cycling clusters as was expected due to the requirement for cell cycle exit upon terminal differentiation to these lineages (Lu et al., 2017; Genbacev et al., 1997).
 
@@ -58,25 +114,73 @@ Next, we immunolocalized the protein products of genes that distinguished the su
 
 Staining for KRT6, a marker highly enriched in CTB 4 cells (Figure 2g) showed a strikingly different result. Cells occupying the upper layers of SC epithelium showed a strong KRT6 signal, a pattern opposite to CDH1 (Figure 2h and i – right). KRT6 was absent from either the floating or anchoring villi of the VC (Figure 2h and i – left), although rare decidual resident KRT6 positive cells were identified in the VC region (Figure 2—figure supplement 4c, Figure 6—figure supplement 1 – top). KRT6 isoforms, KRT6B and KRT6C, were not expressed, confirming KRT6A transcript and protein as highly specific markers of a CTB population found only in the SC (Figure 2—figure supplement 4d). These data describe a novel subpopulation of CTBs unique to the SC, which going forward we term CTB 4 or SC-CTBs for SC-specific CTBs.
 
-## A common CTB progenitor gives rise to STBs in the VC and SC-CTBs in the SC
+### A common CTB progenitor gives rise to STBs in the VC and SC-CTBs in the SC
 
 Next, we investigated the developmental origin of the SC-CTBs. We performed RNA velocity analysis to predict the relationships between cells based on the proportion of exonic and intronic reads. These predictions are shown as vectors representing both the magnitude (predicted rate) and the direction of differentiation (Bergen et al., 2020). We first asked whether RNA velocity could recapitulate the well-established differentiation trajectories of trophoblasts in the VC (Knöfler et al., 2019; Turco et al., 2018; Vento-Tormo et al., 2018). In accordance with previous results, RNA velocity projections identified CTB 1 as the root for three differentiation trajectories: self-renewal, differentiation to STBs, and differentiation to EVTs (Figure 3a). Cells at the boundary of the CTB 1 cluster showed differentiation vectors of high magnitude toward STB Precursors and upregulated canonical drivers of STB differentiation and fusion (ERVW-1 and ERVFRD-1). These cells also expressed transcription factors (GCM1 and HOPX) and hormones (CSH1) necessary for STB function (Figure 3—figure supplement 1a; Baczyk et al., 2009; Mi, 2000; Blaise et al., 2003; Yabe et al., 2016).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig3-v2.jpg)
+
+**Figure 3.:** RNA velocity vector projections overlaid on to UMAPs for trophoblast cells isolated from the (a) VC and (b) SC. Arrows denote direction and magnitude is represented by line thickness. (c) Pseudotime reconstruction of SC derived CTB 1–4 clusters from the scVelo dynamical model of latent time. Each column represents one cell. Cells at the left are clustered in CTB 1 and progress through CTB 2, 3, and 4 along the x-axis. Select genes that were the major drivers of the pseudotime alignment are shown on the y-axis. Expression ranged from dark blue (lowest) to yellow (highest). (d) Violin plots of select factors from (c) demonstrated shared or region-specific expression for genes associated with the CTB 4 differentiation trajectory.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Violin plots of expression of markers of STB differentiation in each trophoblast cluster shown by region, demonstrating reduced expression of all markers in STB Precursor and STB clusters. (b) Immunofluorescence showing colocalization of KRT6 and KI67, demonstrating proliferation of SC-CTBs. (c) Violin plots of expression of YAP1 and HES1, demonstrating increasing expression in CTB 1–4 and greater expression in the SC compared to the villous chorion (VC).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Predicted receptor-ligand interactions from CellPhoneDB between CTB clusters of the villous chorion (VC) for interactions which are unique to the VC. (b) Predicted receptor-ligand interactions from CellPhoneDB between CTB clusters of the smooth chorion (SC) for interactions which are unique to the SC. The strength of interaction is estimated by mean expression and are plotted in the heatmaps. Receptor-ligand interactions and cell pairs are listed such that Molecule 1 is expressed by Cell 1 and Molecule 2 is expressed by Cell 2.
 
 In the SC, CTB 1 cells once again were identified as the root for differentiation. However, CTB 1 cells showed strong directionality and magnitude toward CTB 2–4 (Figure 3b). All cells in CTB 1–4 clusters displayed uniform directionality indicating a robust differentiation trajectory ending at CTB 4. High levels of transcriptional similarity between CTB 2 and 4 compared to CTB 1 suggested CTB 2 and CTB 3 are intermediate states between CTB 1 and CTB 4 (Figure 2—figure supplement 2c). Mitotic KRT6+ cells were identified, and while the interaction between the cell cycle and differentiation of SC-CTBs remains unclear, these data show that differentiation to SC-CTB does not require cell cycle exit, unlike STBs and EVTs (Figure 3—figure supplement 1b). In contrast to the VC, we observed no velocity vectors with directionality toward the STB lineage from the CTB clusters in the SC samples. Further, the smaller number of STB precursors (460 cells) and STBs (14 cells) exhibited reduced expression of STB canonical markers such as ERVFRD-1 and GCM1, and notably, a near absence of ERVW-1 (Figure 3—figure supplement 1a). These cells may be associated with ghost villi (Benirschke et al., 2006). In sum, these data show differential developmental trajectories for the CTB 1 cells in the SC and VC, with the former largely giving rise to SC-CTBs and the latter to STBs.
 
 To identify the genes that were correlated with progression from CTB 1–4 in the SC, we used the velocity vector predictions to construct a pseudotemporal model of differentiation. All the cells in these clusters were plotted in one dimension from the least to the most differentiated according the pseudotime model (Figure 3c). Genes that were highly expressed at the start of the pseudotemporal differentiation included pan-trophoblast factors such as EGFR, which was expressed throughout all four CTB populations in both the VC and SC. Progression along the pseudotime trajectory identified regulators of cell fate and function, including the transcription factor KLF4 and extracellular matrix (ECM) components COL5A1 and LAMA3 (Figure 3c–d); all demonstrated SC-specific expression. Elevated expression of ECM transcripts (COL4A2, FN1) and transcription factors responsive to cell contact and mechanical stress (HES1, YAP1) were coordinately upregulated, potentially highlighting the effects of the extracellular environment on fate specification (Figure 3—figure supplement 1c). To identify differential signaling events that might regulate alternative paths of differentiation in the VC and SC, we used CellPhoneDB to predict receptor-ligand interactions between CTB clusters within each region (Figure 3—figure supplement 2a-b; Efremova et al., 2020). This analysis identified BMP, Notch, and Ephrin signaling events specific to the SC region, which may help to determine cell fate and/or cell sorting within the SC trophoblast epithelium (Figure 3—figure supplement 2b). Together, these data demonstrated that SC-CTBs originate from CTB 1 progenitors common to both the VC and SC. In the SC, instead of upregulating syncytialization factors such as GCM1 and ERVFRD-1, CTB 1 progenitors upregulate transcription factors such as KLF4, YAP1, and HES1, which drive an epithelial cell fate in other contexts (Segre et al., 1999; Harvey et al., 2013; Rock et al., 2011).
 
-## SC-CTBs express a distinct epidermal transcriptional program
+### SC-CTBs express a distinct epidermal transcriptional program
 
 Next, we sought a better understanding of the physiological functions of the SC trophoblast clusters. We performed gene ontology analysis as a summary of functional processes (Figure 4a, Figure 4—figure supplement 1; Yu et al., 2012). We focused on the progenitor CTB 1 and terminally differentiated SC-CTBs as they showed enrichment for strikingly different functional categories. In CTB 1, we identified enrichment for WNT signaling, epithelial morphogenesis, and membrane transport, categories commonly associated with progenitors (Figure 4a, Figure 4—figure supplement 1). We validated the activity of WNT signaling and the location of these cells by immunolocalization of non-phosphorylated CTNNB1 (np-CTNNB1). Staining was localized to the most basal epithelial layer nearest to the stroma in both the VC and SC regions (Figure 4b), matching expression of the CTB 1 marker CDH1 (Figure 4—figure supplement 2a). WNT signaling has an important role in the maintenance of villous CTBs in vivo and in the derivation and culture of self-renewing human trophoblast stem cells (Knöfler et al., 2019; Haider et al., 2018; Okae et al., 2018). We investigated proliferation of np-CTNNB1 expressing cells in both regions using KI67 as a mitotic marker. This revealed a similar percentage of KI67+ CTB 1 cells, suggesting similar proliferative capacity across regions (Figure 4b and c). We next analyzed regional differences within CTB 1. Gene ontology identified an enrichment for oxidative phosphorylation and epithelial signaling cues in VC CTB 1 cells (Figure 4—figure supplement 2b). This is in direct contrast to SC CTB 1 cells that displayed elevated levels of hypoxia response genes (Figure 4—figure supplement 2b-c). KLF4 was identified in the RNA velocity analysis as gaining expression from CTB 1–4, but also showed greater expression in CTB 1 in the SC compared to the VC (Figure 3d). In accordance with the mRNA expression data, KLF4 protein often co-localized to CTB 1 in the SC, but was only observed in rare cells in the VC (Figure 4d). These data further support a similar location and function for CTB 1 in the SC and VC, with transcriptional and metabolic differences that presage distinct developmental trajectories.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig4-v2.jpg)
+
+**Figure 4.:** (a) Heatmap of gene ontology analysis adjusted p-values. Dark red corresponds to the lowest p-values and white represents p-values greater than 0.0005. Ontology categories are organized by hierarchical clustering along the y-axis. Marker genes for each cluster were used as inputs for the analysis. A subset of genes in selected categories are listed at the right. Categories and genes enriched in CTB 1 or CTB 4 are in black or blue, respectively. (b) Representative immunofluorescence co-localization of non-phosphorylated CTNNB1 and KI67 in the VC (left) and SC (right). (c) Quantification of the percent of np-CTNNB1 cells with KI67 expression in each region in three placental samples. Each dot represents the percentage in one field of view (at least seven per region per sample) as an estimate of mitotic cells per population. Percentages for the villous chorion (VC) region are shown in black and the SC region in blue. (d) Immunofluorescence co-localization of CDH1 and KLF4 protein in the VC (left) or SC (right). Arrowheads denote CDH1+/KLF4+ cells. (e) Immunofluorescence co-localization of KRT14 and KRT6 protein in the VC (left) or SC (right). The outline of the anchoring villi (AV) is denoted by the white dashed line. For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: FV = floating villi; SC = smooth chorion epithelium; Amn. = amnion; Dec. = decidua; GV = ghost villi.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The unabridged gene ontology results from each CTB cluster, displayed as adjusted p-values. Dark red corresponds to the lowest p-values and white represents p-values greater than 0.0005. Ontology categories are organized by hierarchical clustering along the y-axis. Marker genes for each cluster were used as inputs for the analysis.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Immunofluorescence co-localization of CDH1 and non-phosphorylated CTNNB1 in the VC (left) and SC (right), showing identical domains of expression in both regions. For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: FV = floating villi; MB = maternal blood space; SC = smooth chorion epithelium; Dec. = decidua. (b) Gene ontology analysis for CTB 1 genes common to VC and SC, genes enriched in VC, and genes enriched in SC. (c) Violin plots of genes within the gene ontology categories indicated in (b) for common categories (top), VC enriched categories (middle), and SC enriched categories (bottom).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Violin plots of cytokeratins expressed in trophoblast in both VC and SC regions by cluster and region of origin. (b) Violin plots of cytokeratins expressed in SC trophoblast by cluster and region of origin.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Violin plot of IFITM3 expression in trophoblast clusters by region, showing increased expression in smooth chorion (SC) compared to villous chorion (VC).
 
 CTB 4 ontological analysis strongly supported important roles for these cells in the formation of a protective barrier. The greatest enrichment was for cell junction and cell substrate adhesion genes that included numerous integrin and laminin subunits as well as junctional proteins PATJ, DSP, and JUP. An enrichment for both skin and epidermal development correlated with upregulation of the ECM and junctional transcripts. These categories included many cytokeratins (KRT6A, 7, 8, 14, 17, 18, and 19) and transcription factors (KLF4, YAP1) required for epidermal identity and maintenance (Segre et al., 1999; Schlegelmilch et al., 2011). The organization of the SC is reminiscent of stratified epidermal cells of the skin, with progenitors adherent to the basal lamina and more differentiated cells progeny forming the upper layers. In many tissues, the specific domains of cytokeratin expression correspond to stratified cell layers with different functions. We asked if this was also the case in the SC epithelium. Cytokeratins 7, 8, and 18 were expressed in all trophoblast regardless of region (Figure 4—figure supplement 3a), but cytokeratin 6A, 14, and 17 displayed SC-specific expression that increased with differentiation toward CTB 4 (Figure 4—figure supplement 3b). Immunofluorescence localization confirmed expression of KRT14 as specific to the CTBs in the SC and inclusive of all KRT6 expressing cells (Figure 4e). These data support a model of accumulated cytokeratin expression that begins with CTB 1 (KRT7, KRT8, KRT18), increases in CTB 2–3 (KRT14, KRT17), and culminates in CTB 4 (KRT6A). Together these data are consistent with a central role for the CTBs of the SC in establishing a protective epithelial barrier for the rapidly growing fetus.
 
 Beyond forming a physical barrier, important chorionic functions include protection from bacterial and viral infections. We identified an enrichment for genes involved in antiviral response in SC-CTBs, and in SC cells more broadly. For example, IFITM3, a restriction factor preventing entry of viruses into cells, is highly expressed in CTBs from the SC compared to the VC (Figure 4—figure supplement 4; Bailey et al., 2014; Spence et al., 2019). IFITM proteins have also been reported to inhibit syncytialization (Buchrieser et al., 2019), suggesting IFITM3 may also function to block differentiation of CTBs into STBs in the SC. Taken together, these data establish SC-CTBs as the building blocks and critical regulators of the SC barrier, responsible for both protection against physical forces and pathogen infection.
 
-## EVTs of the VC and SC regions display distinct invasive activity but are transcriptionally similar
+### EVTs of the VC and SC regions display distinct invasive activity but are transcriptionally similar
 
 EVTs are the invasive trophoblasts of the placenta (Knöfler et al., 2019; Turco et al., 2018; Red-Horse et al., 2004). While the EVTs of the VC migrate away from the villi, invade the decidua, and replace the endothelial lining of the uterine arteries, the EVTs of the SC adhere to the decidua and do not home to the maternal vasculature (Genbacev et al., 2016). To understand the basis for these differences, we compared EVT subpopulations isolated from the VC and SC. Expression of the canonical marker of EVTs, HLA-G, was similarly abundant among the cells isolated from both chorionic regions (Figure 5a and b). A greater number (VC – 6572; SC – 5021) and larger proportion (VC – 46.83%; SC – 32.12%) of CTBs from the VC expressed HLA-G as compared to the analogous population from the SC (Figure 5c). Consistent with the transcript expression data, immunolocalization of HLA-G showed strong staining of cells in both the VC and SC. However, VC derived HLA-G positive cells were found deep in the maternal decidua. In contrast, HLA-G positive cells in the SC remained in the epithelial layer (Figure 5b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig5-v2.jpg)
+
+**Figure 5.:** (a) Expression of HLA-G transcript per cell projected in UMAP space for the VC (left) and SC (right). Expression ranged from low in light gray to high in dark red. (b) Immunofluorescence localization of HLA-G in the VC (left) and SC (right). The anchoring villi (AV) are outlined in white (left). The boundaries of the smooth chorion epithelium are denoted by the white lines (right). (c) Quantification of the number of HLA-G expressing extravillous trophoblast (EVT) (left) and the percent of total trophoblast that express HLA-G (right) for each chorionic region. (d) UMAP of all trophoblast cells including the EVT clusters (left). The percent of EVT cells in each cluster from each region (right). (e) Volcano plot of the differentially expressed genes between regions for all EVTs. All genes with a log fold change greater than an absolute value of 0.25 and a p-value of less than 0.05 were plotted. Those with greater expression in VC EVT are shown in black. Those with greater expression in SC EVT are shown in blue. (f) Immunofluorescence localization of CSH1 in the VC (top) and SC (bottom). Arrowheads denote CSH1 expressing cells. (g) Violin plots of the number of differentially expressed genes between 100 cells from each chorionic region within each cluster (100 permutations). Clusters with less than 100 cells per region were omitted due to the small sample size. For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: FV = floating villi; SC = smooth chorion epithelium; Amn. = amnion; Dec. = decidua; STB = syncytiotrophoblast; CC = cell column.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Gene ontology results from each EVT cluster displayed as adjusted p-values. Dark red corresponds to the lowest p-values and white represents p-values greater than 0.0005. Ontology categories are organized by hierarchical clustering along the y-axis. Marker genes for each cluster were used as inputs for the analysis. (b) Selected genes in the ‘placenta development’ gene ontology category (top). Violin plots of expression for selected genes in each EVT cluster by region. (c) Selected genes in the ‘Extracellular Structure Organization’ gene ontology category (top). Violin plots of expression for selected genes in each EVT cluster by region.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Volcano plots showing the differentially expressed genes the VC or SC for each EVT cluster. Only significantly differentially expressed genes are plotted (p-value < 0.05). Genes with higher expression in VC compared to SC are shown in black. Genes with higher expression in SC compared to VC are shown in blue. Selected differentially expressed genes are labelled. (b) Violin plots of VC-specific genes in EVTs. (c) Spearman correlation coefficients between VC and SC for each cluster ranked from greatest to least similarity across regions. Syncytiotrophoblast (STB) and EVT Precursor populations are excluded due to the low number of cells recovered in the SC.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Predicted receptor-ligand interactions from CellPhoneDB between EVT-Stromal cells of the villous chorion (VC) for interactions which are unique to the VC. (b) Predicted receptor-ligand interactions from CellPhoneDB between EVT-Stromal cells of the smooth chorion (SC) for interactions which are unique to the SC. The strength of interaction is estimated by mean expression and are plotted in the heatmaps. Receptor-ligand interactions and cell pairs are listed such that Molecule 1 is expressed by Cell 1 and Molecule 2 is expressed by Cell 2.
 
 EVTs were further divided into clusters 1–4. No clusters were specific to the VC or SC, except for the small number of putative EVT Precursors (VC – 99 cells; SC – 8 cells) (Figure 5d, Figure 3a). Previous work has classified EVTs in the VC as columnar, interstitial, or endovascular based on gene expression and location in the decidua (Tilburgs et al., 2015; Knöfler et al., 2019). The columnar subpopulation is believed to represent newly differentiated EVTs, which lie at the base of the columns that connect the anchoring villi to the uterine wall. Interstitial EVTs migrate through the decidua homing to maternal arteries, which they invade. The relationship between this subpopulation and endovascular EVTs that replace the maternal arterial endothelium is unclear, with evidence supporting endovascular EVTs arising either from interstitial EVTs and/or an independent origin (Harris et al., 2009; Red-Horse et al., 2004; Pijnenborg et al., 2011). We expected to capture both columnar and interstitial EVT populations, but few endovascular EVTs as the cellular preparations were largely devoid of arteries. We investigated the four clusters of EVT identified in our analysis in the context of the VC and the SC. Both regions contained cells from all clusters, although distinct regional biases were evident (Supplementary file 1). The SC region contained almost twice as many EVT 1 cells as the VC (VC – 684; SC – 1256), whereas the VC contained almost twice as many EVT 2–4 as the SC (VC – 5789; SC – 3757). We next asked which of the EVT clusters corresponded to known EVT classifications, indicating maturation state or invasive capacity. Gene ontology analysis showed an enrichment for placental development and antigen presentation categories in EVT 1 (Figure 5—figure supplement 1a). Representative marker genes for these categories in EVT 1 included several lineage-specific transcription factors including GCM1, PPARG, and CEBPB (Figure 5—figure supplement 1b; Knöfler et al., 2019; Ferreira et al., 2016). In contrast, EVT 2–4 showed enrichment for extracellular structure and matrix organization, glycosylation, and peptidase activity. EVT clusters 3–4 specifically showed increased expression for transcripts of proteases such as HTRA1, MMP2, and MMP11 (Figure 5—figure supplement 1c). Based on the GO and specific gene enrichments, EVT 1 appeared most similar to columnar EVTs, while EVT 2–4 were consistent with interstitial EVTs that gain invasive capacity. The relative enrichment for EVT 1 in the SC (VC – 10.57% of EVT; SC – 25.05% of EVT) suggested an expansion in columnar-like EVTs at the expense of interstitial EVT. Conversely, the relative enrichment for EVT 2–4 in the VC region suggested an expansion of the invasive subpopulation (Figure 5d).
 
@@ -84,9 +188,29 @@ As almost 75% of EVTs from the SC region were in EVT clusters 2–4, we next ask
 
 We next asked whether the gene expression differences between the VC and SC were smaller for EVT clusters than for all other trophoblast clusters. Calculating the Spearman correlation coefficient across each cluster, EVT 3, EVT 4, and CTB 1 (which we have established as common to both regions) were most similar and the only clusters with a coefficient greater than 0.75 (Figure 5—figure supplement 2c). Since this analysis does not account for cluster heterogeneity or size, we quantified the number of differentially expressed genes between 100 randomly selected cells from each region within each cluster. Across 100 permutations, the number of differentially expressed genes between regions was the lowest for all four EVT clusters (Figure 5g). Together, these results showed that the EVTs of the VC and SC are surprisingly similar even though they have distinct levels of invasion in vivo.
 
-## CTBs of the SC inhibit EVT invasion
+### CTBs of the SC inhibit EVT invasion
 
 Given the transcriptional similarity between EVT clusters originating from the VC and SC, we wondered if a non-cell autonomous program could explain their distinct migratory properties. Immunofluorescence co-localization of CTB 1, SC-CTBs, and EVTs showed striking differences in the relative positioning of the EVTs and CTBs in the two regions (Figure 6a and b). On the VC side, which lacks SC-CTBs cells, HLA-G+ EVTs were distant from the np-CTNNB1+ CTB 1 cell population as expected (Genbacev et al., 2016). By the second trimester they had migrated away from the cell column of the anchoring villi into the decidua (Figure 6a). In contrast, HLA-G+ EVTs in the SC were adjacent to and in physical contact with KRT6+ SC CTBs (Figure 6b). The interactions between SC-CTBs and EVTs were numerous and widespread throughout the SC epithelium. Contacts between CTB 1 and EVTs in the SC were not observed and the VC contain only rare and irregular KRT6+ cells (Figure 6—figure supplement 1). This close association suggested possible paracrine signaling events between SC-CTBs and EVTs, which might impact each cell type.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig6-v2.jpg)
+
+**Figure 6.:** (a) Immunofluorescence co-localization of np-CTNNB1 and HLA-G in the VC. (b) Immunofluorescence co-localization of KRT6 and HLA-G in the SC. Arrowheads denote CTB and EVT interactions. (c) Schematic of the transwell invasion assay (top). Cells from either chorionic region were plated in the upper chamber of the transwell. After 39 hr of culture, the transwell membrane was fixed and stained with a Pan-cytokeratin antibody. The projections through the membrane are denoted by black arrowheads and quantified below. Results from the VC derived cells are shown in black, and the results from the SC derived cells are shown in blue. (d) Results from three biological replicates from each chorionic region cultured with conditioned medium from either VC or SC cells. The gestational ages of the plated cells are shown adjacent to the y-axis. The gestational ages of the cells from which conditioned medium was collected are noted in the legends at the right. The results for cells cultured with VC cell conditioned medium are denoted by black dots, and the results for those cultured in SC cell conditioned medium are denoted by open squares. p-Values were determined by t-test and are listed above each comparison. (e) Predicted receptor-ligand interactions from CellPhoneDB. The strength of interaction is estimated by mean expression and is plotted in the heatmap. Receptor-ligand interactions and cell pairs are listed such that Molecule 1 is expressed by Cell 1 and Molecule 2 is expressed by Cell 2. For all images, nuclei were visualized by DAPI staining; scale bar = 100 μm. Abbreviations: AV = anchoring villi; FV = floating villi; SC = smooth chorion epithelium; Dec. = decidua.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Co-localization of KRT6 (SC-CTB marker) and HLA-G (EVT marker) showing rare KRT6+ cells in the VC (top). These cells are few and do not interact with EVT in the same manner as was observed in the SC. Co-localization of non-phosphorylated CTNNB1 (CTB 1 marker) and HLA-G (EVT marker) in the SC (bottom). Limited interactions between these populations was observed. The basal lamina separating the fetal stroma from the SC epithelium is marked by the white dashed line. For all images, nuclei were visualized by DAPI stain; scale bar = 100 μm. Abbreviations: AV = anchoring villi; FV = floating villi; SC = smooth chorion epithelium; Dec. = decidua.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Representative images of trophoblast projections through the transwell filter are seen as white dots. For quantification, the number of projections (white bright dots) was counted. For each sample, the median DAPI area was quantified across the transwell membrane, and then the projections multiplied by a factor to normalize for cell density. Scale bar = 100 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The DAPI+ area in each field of view was quantified and plotted as a measure of cell density. Each dot represents the percent area of the field of view which stained with DAPI. Measurements from each experiment are shown and the gestational ages of the cultured cells is on the y-axis at the left. Measurements of cells treated with control media (Serum Free Media) are shown in red, VC cell conditioned media are shown in black, and smooth chorion (SC) cell conditioned media are shown in open squares.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/78829/elife-78829-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (a) Predicted receptor-ligand interactions from CellPhoneDB between CTB-EVT and the SC. The strength of interaction is estimated by mean expression and is plotted in the heatmaps. Receptor-ligand interactions and cell pairs are listed such that Molecule 1 is expressed by Cell 1 and Molecule 2 is expressed by Cell 2.
 
 To test this theory, we attempted to recapitulate the differential invasive properties of VC and SC EVTs in a transwell migration assay. Briefly, these cells were enriched using the same protocol as described for the scRNA-seq experiments. The cells were plated on Matrigel-coated transwell filters and cultured for 39 hr. Trophoblast projections that reached the underside of the filter, a proxy for invasion, were visualized by immunostaining with a pan-cytokeratin antibody (Figure 6c, Figure 6—figure supplement 2). Consistent with the differences observed in vivo, there was greater invasion of VC as compared to SC trophoblast (Figure 6c). Next, we asked whether CTBs from the SC region secreted soluble factors that inhibited invasion. The invasion assays were repeated with VC cells cultured with conditioned medium from SC cells and vice versa. While VC conditioned medium had no impact on either VC or SC cells, SC conditioned medium significantly reduced invasion of VC cells (Figure 6d). Neither conditioned medium impacted the density of VC or SC cells (Figure 6—figure supplement 3). Therefore, a secreted factor from SC cells inhibited the invasion of VC EVTs. Given that SC-CTBs were the only cell type unique to the SC side, it is highly likely that they produced the secreted factors that inhibit the invasion of EVTs to which they are juxtaposed. To identify which factors might be responsible for the repression of cellular invasion, we subset the predicted signaling interactions between CTB-EVT isolated from the SC (Figure 6—figure supplement 4). We then subset this analysis for only those containing secreted factors, which identified numerous interactions between CTB 4 and EVTs including both canonical cell signaling pathways (TNFa, PGF, TGFB1, FGF1, and PDGFB) and modifiers of the ECM (FN1 and THBS1) (Figure 6e). These data support a paracrine signaling mechanism by which CTB 4 cells restrict EVT invasion in the SC.
 
@@ -110,19 +234,148 @@ In summary, this study provides a high-resolution molecular accounting of the tr
 
 ## Materials and methods
 
-## Tissue collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti E-cadherin Monoclonal Antibody (ECCD-2)</td>
+      <td>Thermofisher Scientific</td>
+      <td>13-1900</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-PAGE4 antibody (Polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA023880</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Recombinant Anti-Cytokeratin 6 Monoclonal antibody [EPR1603Y]</td>
+      <td>Abcam</td>
+      <td>ab52620</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Non-phospho (Active) β-Catenin (Ser33/37/Thr41) Monoclonal Antibody</td>
+      <td>Cell Signaling</td>
+      <td>8814</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti Cytokeratin 14 Monoclonal Antibody (LL002)</td>
+      <td>Invitrogen</td>
+      <td>MA5-11599</td>
+      <td>IF (1:100) with Antigen Retrieval</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-KLF4 antibody (polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA00292</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti Cytokeratin (7D3) Monoclonal Antibody</td>
+      <td>Susan Fisher/University of California, San Francisco Cat# Fisher_001-clone7D3,RRID:AB_2631235</td>
+      <td>AB_2631235</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti HLA-G (4H84) Monoclonal Antibody</td>
+      <td>Susan Fisher/University of California, San Francisco Cat# Fisher_002-clone4H84, RRID:AB_2631236</td>
+      <td>AB_2631236</td>
+      <td>IF (1:20) with Antigen Retrieval</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (3.1.3)</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellranger (3.0.2)</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClusterProfiler</td>
+      <td>https://guangchuangyu.github.io/software/clusterProfiler/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scVelo</td>
+      <td>https://github.com/theislab/scvelo (Marsh, 2022b) copy archived at swh:1:rev:1805ab4a72d3f34496f0ef246500a159f619d3a2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6.0</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoubletFinder</td>
+      <td>https://github.com/chris-mcginnis-ucsf/DoubletFinder (Marsh, 2022c) copy archived at swh:1:rev:67fb8b5808eb16167ead5f9b439677cc24837554</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue collection
 
 The University of California, San Francisco (UCSF) Institutional Review Board approved this study (11-05530). All donors gave informed consent. All samples are from elective terminations between gestational age of 17 weeks and 6 days and 24 weeks and 0 days.
 
-## Cellular isolation of VC trophoblast
+### Cellular isolation of VC trophoblast
 
 Trophoblast were isolated from both floating and anchoring villi dissected from second trimester human placentas. Trophoblast were isolated according to previously published protocols (Fisher et al., 1989; Kliman and Feinberg, 1990). Briefly, cuts were made at the base of each cotyledon near the chorionic plate and the entire villous tree up to and including the basal plate was taken for study. The decidua was removed from the basal plate side and the remaining villous tree was dissected and dissociated. The resulting floating and anchoring chorionic villi were washed in cold phosphate-buffered saline (PBS Ca2+ and Mg2+ free), dissected into 2–4 mm pieces, and filtered through a 1 mm mesh strainer to remove small pieces of tissue. CTBs were isolated from the tissue pieces by first removing the outer STB layer by collagenase digestion (Sigma-Aldrich; C-2674). Next, CTBs were dissociated by sequential enzymatic digestion (trypsin [Sigma-Aldrich; T8003; twice] and collagenase). Finally, CTBs were purified by Percoll density gradient centrifugation. Single cells were visually inspected for quality, counted using a hemacytometer, and immediately collected for scRNA-seq or for culture experiments.
 
-## Cellular isolation of SC trophoblast
+### Cellular isolation of SC trophoblast
 
 Trophoblast were isolated according to previously published protocols (Garrido-Gomez et al., 2017). Briefly, the fetal membranes were washed with PBS (Ca2+ and Mg2+ free) supplemented with 1% penicillin-streptomycin (10,000 units/ml penicillin; 10,000 μg/ml streptomycin), 0.003% fungizone (stock solution of 250 mg/ml), and 1% gentamicin. Next, the amnion and SC were manually separated and the amnion discarded. Next, the decidua parietalis was removed and discarded. The SC CTB layer was then minced into small pieces (2–4 mm) and dissociated by sequential enzymatic digestion. First, the tissue pieces were incubated in PBS (10 ml/g of tissue) containing 3.5 mg collagenase, 1.2 mg DNase, 6.9 mg hyaluronidase, and 10 mg bovine serum albumin for 15–30 min. The supernatant was then discarded. Next, the tissue was incubated for 20–40 min in PBS containing trypsin (6.9 mg trypsin, 20 mg EDTA, 12 mg DNase per 100 ml; tissue weight: dissociation buffer volume = 1:8). The enzyme activity was quenched by adding an equal volume of media containing 10% FBS. The cell suspension was filtered through a 70 μm sterile strainer and centrifuged at 1200 g for 7 min. A second collagenase digestion was performed by adding a 7× volume of the collagenase digestion buffer (see above), calculated on the basis of the weight of the cell pellet, followed by another incubation for 15–30 min. The cell suspension was then collected again by centrifugation. The cell pellets from the trypsin and second collagenase digestions were combined and purified over a Percoll density gradient centrifugation. Single cells were visually inspected for quality, counted using a hemacytometer, and immediately collected for scRNA-seq or for culture experiments.
 
-## scRNA-seq and analysis
+### scRNA-seq and analysis
 
 To capture the transcriptome of individual cells, we used the Chromium Single Cell 3' Reagent V3 Kit from 10× Genomics. For all samples 17,500 cells were loaded into one well of a Chip B kit for GEM generation. Library preparation including reverse transcription, barcoding, cDNA amplification, and purification was performed according to Chromium 10× V3 protocols. Each sample was sequenced on a NovaSeq 6000 S4 to a depth of approximately 20,000–30,000 reads per cell. The gene expression matrices for each dataset was generated using the CellRanger software (v3.0.2–10× Genomics). All reads were aligned to GRCh38 using STAR (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references). The counts matrix was thresholded and analyzed in the package Seurat (v3.1.3). Cells with fewer than 500 or greater than 6000 unique genes, as well as all cells with greater than 15% mitochondrial counts, were excluded from all subsequent analyses. Doublet detection was performed for each sample using DoubletFinder and all doublets were excluded from analysis. For each sample, counts were scaled and normalized using ScaleData and NormalizeData, respectively, with default settings FindVariableFeatures used to identify the 2000 most variable genes as input for all future analyses. Principal component analysis (PCA) was performed using RunPCA and significant principal components (PCs) assessed using ElbowPlot and DimHeatmap. Dimensionality reduction and visualization using UMAP was performed by RunUMAP.
 
@@ -130,34 +383,34 @@ Integration of each timepoint into one dataset was performed using FindIntegrati
 
 To generate the trophoblast, stroma, and immune cell subsets, the respective clusters were subset from the integrated dataset using the function SubsetData based upon annotations from marker genes identified by FindAllMarkers. After subsetting, counts were scaled and normalized using ScaleData and NormalizeData, respectively, with default settings FindVariableFeatures used to identify the 2000 most variable genes. Differentially expressed genes for each integrated dataset were identified using FindAllMarkers.
 
-## scVelo
+### scVelo
 
 RNA velocity analysis was applied to the entire conglomerate dataset using Velocyto to generate spliced and unspliced reads for all cells. This dataset was then subset for the trophoblast dataset introduced in Figure 2. The scVelo dynamical model was run with default settings and subset by each timepoint.
 
-## Differential expression between regions
+### Differential expression between regions
 
 The number of trophoblast cells in each cluster were downsampled to 100 cells from each region of origin and performed differential expression using FindMarkers function and repeated this for 100 permutations. The number of genes found to be significantly differentially expressed (adj. p-value < 0.05) from each permutation are plotted. Clusters having less that 100 cells from each region were excluded from this analysis.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 Gene ontology analysis was performed with ClusterProfiler enrichGO function. The simplify function within this package was used to consolidate hierarchically related terms using a cutoff of 0.5. Terms were considered significantly enriched with an adjusted p-value of less than 0.05.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Placental tissue for cryosectioning was fixed in 3% PFA at 4°C for 8 hr, washed in 1× PBS, then submerged in 30% sucrose overnight at 4°C prior to embedding in OCT medium. Placental tissue in OCT was sectioned at 5 μm for all conditions. In brief, slides were washed in 1× PBST (1× PBS, 0.05% Tween-20), blocked for 1 hr (1× PBS +5% donkey or goat serum + 0.3% Triton-X), incubated in primary antibody diluted for 3 hr at room temperature (or overnight at 4°C), washed in 1× PBST, incubated in secondary antibody (Alexa Fluor 488 or 594) for 1 hr at room temperature, incubated in DAPI for 10 min at room temperature, washed in 1× PBST, and mounted and sealed for imaging. Any antigen retrieval was performed prior to the blocking step by heating the slides in a 1× citrate buffer with 0.05% Tween-20 at 95°C for 30 min. All antibodies and the dilutions are listed in the Key resources table. All immunofluorescence staining was performed in n=3 biological replicates (3 distinct placentas) and representative image is shown.
 
-## Transwell invasion assay
+### Transwell invasion assay
 
 Twenty-four-well plate transwell inserts with an 8 μM polycarbonate membrane (Corning Costar 3422) were coated with 10 μl of Matrigel (growth factor-containing, Corning Corp, Corning, NY) diluted 1:1 in Serum Free Media (95% DME H-21+ Glutamine, 2% Nutridoma (mostly β-D xylopyranose), 1% Pen Strep, 1% HEPES, 0.1% Gentamycin). Cells from each region of the placenta were isolated as described above and then plated in the upper well of the transwell insert at a density of 250,000 cells in 250 μl of Serum Free Media, with 1 ml of Serum Free Media (or conditioned media) in the well below the insert. The cells were then cultured for 39 hr. The cells in the transwell were then fixed in 3% PFA for 10 min at 4°C, permeabilized in ice-cold methanol for 10 min at 4°C, then washed in 1× PBS, incubated in Pan-CK primary antibody for 3 hr at 37°C, washed in 1× PBS, incubated with secondary antibody (Alexa Fluor 594) and DAPI for 1 hr at 37°C, washed in 1× PBS, then mounted and sealed for imaging. All experiments were performed in n=3 biological replicates (3 distinct placentas). For conditioned media experiments n=3 biological replicates were analyzed (cells and conditioned medium derived from 3 distinct placentas).
 
-## Transwell invasion assay quantification
+### Transwell invasion assay quantification
 
 Transwell membranes mounted on slides were imaged at 40× magnification and the number of Pan-CK-positive projections through the membrane counted. Normalization for changes in cell density across fields of view and culture conditions was performed by quantifying the DAPI-positive area of each image and the number of projections normalized to the median across comparisons. Between 7 and 10 fields of view were quantified for each transwell membrane. p-Values were determined by t-test.
 
-## Culture of placental cells and generation of conditioned media
+### Culture of placental cells and generation of conditioned media
 
 Each well of a 24-well plate was coated with 20 μl of Matrigel undiluted (growth factor-containing, Corning Corp, Corning, NY) prior to cell seeding. Cells from each region of the placenta were isolated as described above and then plated into wells of a 24-well plate at a density of 1 × 106 cells in 1 ml of Serum Free Media (95% DME H-21+ Glutamine, 2% Nutridoma (mostly β-D xylopyranose), 1% Pen Strep, 1% HEPES, 0.1% Gentamycin). The cells were cultured for 39 hr. After 39 hr in culture the media was removed and centrifuged at 2000 g for 10 min to remove cellular debris. The supernatant was then removed, snap frozen in LN2, and stored at –80°C. This media was then thawed and used as conditioned media.
 
-## Data availability
+### Data availability
 
 All sequencing data is available at the NCBI Gene Expression Omnibus GSE198373. Processed data are available as R objects at https://figshare.com/projects/Regionally_distinct_trophoblast_regulate_barrier_function_and_invasion_in_the_human_placenta/135191. Code to process all raw data and generate the datasets analyzed are available at https://github.com/marshbp/Regionally-distinct-trophoblast-regulate-barrier-function-and-invasion-in-the-human-placenta (Marsh, 2022a) copy archived at swh:1:rev:f8fb40282cc8d6c1bfabd4d4a06902eb92fefc94 . Previously published datasets from Vento-Tormo et al., 2018 Pique-Regi et al., 2019, are publicly available.

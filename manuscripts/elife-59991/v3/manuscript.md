@@ -17,7 +17,7 @@
 
 ## Abstract
 
-The mitochondrial calcium uniporter is a Ca 2+ -gated ion channel complex that controls mitochondrial Ca 2+ entry and regulates cell metabolism. MCU and EMRE form the channel while Ca 2+ -dependent regulation is conferred by MICU1 and MICU2 through an enigmatic process. We present a cryo-EM structure of an MCU-EMRE-MICU1-MICU2 holocomplex comprising MCU and EMRE subunits from the beetle Tribolium castaneum in complex with a human MICU1-MICU2 heterodimer at 3.3 Å resolution. With analogy to how neuronal channels are blocked by protein toxins, a uniporter interaction domain on MICU1 binds to a channel receptor site comprising MCU and EMRE subunits to inhibit ion flow under resting Ca 2+ conditions. A Ca 2+ -bound structure of MICU1-MICU2 at 3.1 Å resolution indicates how Ca 2+ -dependent changes enable dynamic response to cytosolic Ca 2+ signals.
+The mitochondrial calcium uniporter is a Ca2+-gated ion channel complex that controls mitochondrial Ca2+ entry and regulates cell metabolism. MCU and EMRE form the channel while Ca2+-dependent regulation is conferred by MICU1 and MICU2 through an enigmatic process. We present a cryo-EM structure of an MCU-EMRE-MICU1-MICU2 holocomplex comprising MCU and EMRE subunits from the beetle Tribolium castaneum in complex with a human MICU1-MICU2 heterodimer at 3.3 Å resolution. With analogy to how neuronal channels are blocked by protein toxins, a uniporter interaction domain on MICU1 binds to a channel receptor site comprising MCU and EMRE subunits to inhibit ion flow under resting Ca2+ conditions. A Ca2+-bound structure of MICU1-MICU2 at 3.1 Å resolution indicates how Ca2+-dependent changes enable dynamic response to cytosolic Ca2+ signals.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Studies have resolved that MICU1-MICU2 heterodimers reside in the intermembrane 
 
 ## Results
 
-## Structure determination of the MCU-EMRE-MICU1-MICU2 holocomplex
+### Structure determination of the MCU-EMRE-MICU1-MICU2 holocomplex
 
 The ability of human MICU1 to bind MCU channels from lower-eukaryote organisms (Phillips et al., 2019) and our ability to obtain high-resolution structures of the metazoan MCU-EMRE channel complex from the red flour beetle, Tribolium castaneum, (TcMCU-EMRE) (Wang et al., 2020) motivated us to pursue a cryo-EM structure of TcMCU-EMRE in complex with human MICU1-MICU2. The amino acids facing the IMS, where MICU1-MICU2 resides, are identical between human and beetle MCU/EMRE and adopt analogous conformations in structures of the human and beetle channels (Figure 1—figure supplement 1, Figure 1—figure supplement 2).
 
@@ -37,17 +37,287 @@ In cells, a disulfide bond formed between flexible C-terminal regions of MICU1 a
 
 Cryo-EM data were collected using a low (<1 nM) concentration of Ca2+ in order to investigate the resting state of the holocomplex. From a large dataset containing approximately 17 million particle images, single particle analysis indicated that most channels were associated with one MICU1-MICU2 heterodimer (Figure 1A, Figure 1—figure supplement 4A). Images containing one MICU1-MICU2 heterodimer per channel yielded a 3D reconstruction of the holocomplex at 3.3 Å resolution (Figure 1, Figure 1—figure supplement 4, Figure 1—figure supplement 5). Two MICU1-MICU2 complexes were observed in approximately 2% of channel assemblies (Figure 1A, Figure 1—figure supplement 4A, as assessed from 2D class averages of side views). This subset of data yielded a ~ 10 Å resolution 3D reconstruction (Figure 1—figure supplement 4C). In it, one MICU1-MICU2 heterodimer associates with the MCU/EMRE channel in the same manner as in the high-resolution structure. Density for the second MICU1-MICU2 heterodimer is considerably weaker and positioned to the side, next to the channel, where it might interact with the lipid nanodisc. This 3D reconstruction and the 2D class averages, which display blurring of the second heterodimer (Figure 1—figure supplement 4A), indicate that the second one does not have a discrete binding location. Except where noted, the discussion that follows pertains to the high-resolution structure of the holocomplex that contains one MICU1-MICU2 heterodimer. The cryo-EM density of this structure is well defined, especially within the TMD and MICU1 regions, which have the highest local resolution (~3.0 Å, Figure 1—figure supplement 5C). The constructed atomic model has good stereochemistry and excellent agreement with the cryo-EM density (Figure 1—figure supplement 5, and Table 1).
 
-## Overall structure of the holocomplex
+**Table 1.**
+ Data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Holocomplex at low [Ca2+] PDB: 6XQN EMDB: EMD-22290</th>
+      <th>Ca2+-bound MICU1-MICU2 PDB: 6XQO EMDB: EMD-22291</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>FEI Titan Krios (at MSKCC)</td>
+      <td>FEI Titan Krios (at MSKCC)</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Gatan K3</td>
+      <td>Gatan K3</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>22,500×</td>
+      <td>22,500×</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>71</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.0 ~ −3.0</td>
+      <td>−0.8 ~ −2.3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.064 (0.532)*</td>
+      <td>1.064 (0.532)*</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RELION 3.0, cryoSPARC v2</td>
+      <td>RELION 3.0, cryoSPARC v2</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>17,440,131</td>
+      <td>4,397,598</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>350,160</td>
+      <td>115,687</td>
+    </tr>
+    <tr>
+      <td>Overall map resolution (Å) FSC threshold 0.143</td>
+      <td>3.3</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Local map resolution range (Å)</td>
+      <td>3.0–5.0</td>
+      <td>2.8–5.0</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Phenix 1.13 real-space-refine</td>
+      <td>Phenix 1.13 real-space-refine</td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å) FSC threshold 0.5</td>
+      <td>3.6</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−77</td>
+      <td>−38</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>9433</td>
+      <td>4225</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1290</td>
+      <td>566</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>1 (Calcium ion)</td>
+      <td>4 (Calcium ions)</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>124.29</td>
+      <td>88.3</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>70.1</td>
+      <td>94.9</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.027</td>
+      <td>0.569</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.85</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>7.13</td>
+      <td>10.75</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.45</td>
+      <td>95.65</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.55</td>
+      <td>4.35</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>*Super-resolution pixel size.</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-v3.jpg)
+
+**Figure 1.:** (A) 2D class averages showing side-views of complexes with one or two MICU1-MICU2 heterodimers associated (top and bottom panels, respectively). (B–E) Cryo-EM reconstruction of the holocomplex, shown in orthogonal views. Densities are colored accordingly: MCU (yellow), EMRE (orange), MICU1 (green), MICU2 (blue), and nanodisc (semitransparent gray). Numbers in (E) represent the locations of EMRE subunits. The location of where EMRE 4 would be expected to bind is indicated by parentheses (D–E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The amino acid sequences of transmembrane regions of T. castaneum, C. europaea, D. discoideum, C. elegans, D. rerio (Zebrafish) and human MCUs are aligned and colored according to the ClustalW convention (NCBI Reference Sequence: XP_008192975.1 (T. castaneum), UniProt accession numbers: W2SDE2, Q54LT0, Q21121, Q08BI9 and Q8NE86, respectively). Secondary structures are indicated with cylinders representing α-helices, and residues facing the intermembrane space are indicated with a red line. Residues involved in MICU1-binding are highlighted with red triangles. (B) The amino acid sequences of T. castaneum, C. elegans, D. rerio (Zebrafish) and human EMREs are aligned and colored in the same manner (UniProt accession numbers: D6X268_TRICA, Q9U3I4, A0A0J9YJ98 and Q9H4I9, respectively). Secondary structures are indicated with bars representing α-helices, solid lines representing structured loop regions, and dashed lines representing disordered regions. The acidic C-terminal tails of EMRE proteins are highlighted with a red line. Leu 92 is noted with a red triangle.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Superposition of TcMCU-EMRE from the holocomplex (gold), TcMCU-EMRE without MICU1-MICU2 (cyan), and human MCU-EMRE (yellow, PDB: 6O58) is shown from the perspective of the IMS. MCU and EMRE are shown as cartoons. Residues involved in MICU1 binding are labeled and depicted as sticks (RMSD between these for human and beetle MCU/EMRE is 1.5 Å for Cα atoms).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Size exclusion chromatography (SEC) profile of the purified holocomplex. Peak fractions between the dashed lines were collected for cryo-EM analysis. (B) SDS-PAGE analysis of the SEC fractions (Coomassie stained). Protein components are labeled. (C) Portion of a representative micrograph (defocus of −2.5 μm). Automatically picked particles are circled in green.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative 2D class averages ranked in order of class distribution (highest to lowest occupancy from upper left to lower right). Asterisks denote a second MICU1-MICU2 complex in certain classes. (B) Flowchart of cryo-EM data processing and 3D reconstruction. (C) Cryo-EM map (semitransparent representation, ~10 Å resolution) from the ~2% of particles that contain two MICU1-MICU2 heterodimers per channel assembly. The atomic structure of the holocomplex containing one MICU1-MICU2 heterodimer is shown in cartoon representation for comparison.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) FSC curves of the final 3D reconstruction. The half-map (black) and map-to-model (orange) FSC curves are shown (dotted lines indicate 0.143 and 0.5 levels and corresponding resolutions). (B) Euler angle distribution plot of the final 3D reconstruction. (C) Local resolution estimation (calculated with Resmap). The unsharpened map is colored as indicated. Middle and right panels are slices through the map. (D–E). EM densities for indicated regions of the atomic model.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** Local densities (transparent surface representations) of the four EF-hand domains are shown in the context of the atomic model (cartoon and sticks). Densities for Ca2+ ions are absent and the Ca2+-binding residues (asterisks) have poorly defined density.
+
+### Overall structure of the holocomplex
 
 MICU1 and MICU2 associate as a heterodimer and bind to the surface of the channel at the IMS entrance of its pore (Figure 2). Interactions with the channel are mediated solely by MICU1; MICU2 makes no visible contacts with MCU or EMRE. As in cryo-EM and X-ray structures of fungal MCU and metazoan MCU-EMRE channel complexes without MICU1-MICU2 (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Wang et al., 2020; Wang et al., 2019; Yoo et al., 2018), the pore comprises a single ion conduction pathway through the TMD that is surrounded by four MCU subunits. EMRE subunits, located at the periphery of the TMD, consist of a single transmembrane helix flanked by short N- and C-terminal disordered regions. The conformation of the pore is indistinguishable from that observed in a cryo-EM structure of TcMCU-EMRE without MICU1-MICU2 (Figure 2C, Figure 2—figure supplement 1; Wang et al., 2020), which suggests that unlike gating conformational changes in many other ion channels, control by MICU1-MICU2 is not accomplished through motions of pore-lining helices.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig2-v3.jpg)
+
+**Figure 2.:** (A and B) Cartoon representations of the holocomplex, colored as in Figure 1, and shown with semitransparent surfaces. Gray bars represent approximate boundaries of the hydrophobic core of the membrane. A Ca2+ion in the E ring is drawn as a purple sphere. The pore (semitransparent gray surface) is depicted as the minimal radial distance from its center to the nearest van der Waals protein contact. (C) Pore dimensions in structures of TcMCU-EMRE with and without MICU1-MICU2 (red and blue, respectively). A dashed line indicates the radius of a hydrated Ca2+ ion.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Superposition of the structures of TcMCU-EMRE from the holocomplex (gold) and TcMCU-EMRE without MICU1-MICU2 (cyan) are shown in three orthogonal views. Ca2+ is depicted as a purple sphere. EMRE subunits are labeled 1 to 4. The RMSD for Cα atoms is 0.24 Å between the structures.
 
 The structure of the holocomplex provides the most well-defined density to date for the ion-selectivity filter, which is formed by a fourfold assembly of the WDXXEP signature sequences of MCU subunits (Figure 1—figure supplement 5E). The ‘D’ and ‘E’ residues of this motif (Asp 261 and Glu 264) form two rings of acidic amino acids that line the pore of the channel and can coordinate Ca2+ through water-mediated (‘D’ ring) or direct interactions (‘E’ ring) (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Wang et al., 2020; Wang et al., 2019; Yoo et al., 2018). Strong density that we assign as Ca2+ on the basis of its coordination and analogy to other structures of MCU is present within the ‘E’ ring (Figure 1—figure supplement 5E). Its presence under conditions of <1 nM Ca2+ identifies this site as the high-affinity (Kd ≤2 nM) Ca2+ binding site previously postulated from electrical recordings made from mitoplasts that is thought to contribute to the channel’s high selectivity for Ca2+ (Kirichok et al., 2004). MICU1-MICU2 binding does not displace Ca2+ from this site. The ‘D’ ring is directly coordinated by MICU1, and possibly because of this and/or the low concentration of Ca2+ in the sample, density for Ca2+ is not observed in this site. Aside from coordination of the ‘D’ ring, the ion conduction pathway is indistinguishable from the unliganded conformation (Figure 2—figure supplement 1; Figure 2C).
 
 Three EMRE subunits are observed at the periphery of the TMD (EMRE 1–3). Density for a fourth, like that observed in structures without MICU1-MICU2 (Wang et al., 2020; Wang et al., 2019), is conspicuously absent (Figure 1D and E). MICU1 interacts with only EMRE 1, which has the most well-defined density (Figure 1B–D, Figure 1—figure supplement 5D). EMRE 2 and 3 adopt the same conformation as EMRE 1, which is the same as the one observed without MICU1-MICU2, in which each EMRE transmembrane helix is positioned approximately 45 ° from the membrane normal and interacts with TM1 of an adjacent MCU subunit (Figure 2A–B, Figure 2—figure supplement 1; Wang et al., 2020). MICU1-MICU2 is positioned ~15 Å above where EMRE 4 would be located (Figure 1D,E). It is possible that interactions between EMRE 4 and MICU1-MICU2, perhaps involving the disordered acidic C-terminal tail of EMRE (Figure 1—figure supplement 1B), may destabilize binding of this subunit. In support of this hypothesis, nanodisc density is wider in the vicinity of where EMRE 4 would be positioned (Figure 1D), which suggests that it may be present within the nanodisc but displaced from the surface of MCU.
 
-## A uniporter interaction domain and its receptor site
+### A uniporter interaction domain and its receptor site
 
 MICU1 contains three domains (Wang et al., 2014): an N-lobe and a C-lobe, which contain its Ca2+-binding sites, and an N-terminal domain, which we name the uniporter interaction domain (UID) (Figure 3A). The UID mediates all observed interactions with the channel. The UID comprises three α-helices (α1, α2, α3) and a small β-sheet formed by strands β1, β2 and β3 (Figure 3A). Residues on α1 and α2 and a tight turn connecting these helices at Pro 124 directly contact the IMS surface of the channel (Figure 3D,F–G).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-v3.jpg)
+
+**Figure 3.:** (A) Domain architecture of MICU1. Cartoon representation colored according to subdomains. Spheres indicate the Cα positions of amino acids that would bind Ca2+ in EF-hands EF1 and EF4. (B) The UID-receptor interface. A semitransparent surface-cartoon rendition of MCU and EMRE is shown, viewed from the IMS. An outline marks the boundaries of the interface of the UID with the channel. α1 and α2 of the UID are depicted as green ribbons. (C) Close up view of the receptor site, with residues that interact with the UID drawn as sticks. (D) Cryo-EM density and interactions at the IMS mouth of the pore. The interface region between MICU1 and the D ring is shown (MICU1, green; MCU, yellow), with density depicted as a semitransparent surface. Dashed lines indicate hydrogen bonds. (E) Mutagenesis of the UID and the effect on mitochondrial Ca2+ uptake. The indicated mutants of human MICU1, made in the background of disrupted EF-hand domains (EF), were transiently expressed in MICU1 knockout cells and uptake was quantified relative to wild type (WT) MICU1 and disrupted EF-hand (EF) controls. Western blots demonstrate expression. ‘-ve’ indicates untransfected cells. (mean ±s.d., independent experiments: n = 6 for WT and EF controls, and n = 3 for the remainder. Student’s t-Test p-values for mutants relative to the EF construct, calculated using the two-tailed distribution with unequal variance method, are listed). (F and G) Views showing UID-receptor site interactions (sticks). MICU1 residues are in italics.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of the UID of MICU1 (green) to corresponding regions of MICU2 and MICU3 from of X-ray structures (PDB: 6EAZ and 6AGJ). A box highlights differences with α1 of MICU1. (B) Sequence alignment of various UIDs and with corresponding regions of MICU2 and MICU3. Residues that interact with the channel are denoted with triangles; Lys 126 as a star.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A view of holocomplex parallel to the membrane. MCU and EMRE are shown as cartoon representations and colored in gold and orange, respectively. The MICU1-MICU2 heterodimer is shown as a molecular surface and colored according to electrostatic potential (light gray regions are neutral; red, −4 kT e−1; blue, +4 kT e−1). A hypothetical model of the acidic C-terminal tail of EMRE1 is drawn as a red line and docked on a positive-charged surface on MICU1 (dashed oval). For clarity, the matrix domains of MCU are omitted. Mitochondrial inner membrane is depicted as transparent gray bar. (B) The same perspective as (A) with MICU1 and MICU2 depicted as cartoons in transparent surfaces. Basic amino acids that constitute the positive-charged surface highlighted in (A) are drawn as sticks and labeled. (C) Sequence alignment showing conservation of the basic region among of MICU1 proteins. The residues indicated in (B) are marked by black stars. This region is conserved among metazoan species (from C. elegans to human) but not with A. thaliana and D. discoideum, which lack EMRE homologs.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** The amino acid sequences of human, M. musculus, D. rerio, T. castaneum, C. elegans, A. thaliana, and D. discoideum MICU1 proteins are aligned and coloured according to the ClustalW convention (UniProt accession numbers: Q9BPX6, Q8VCX5, A4IG32, D6WJK2, Q95PZ2, Q9SZ45 and Q54JS1, respectively). Secondary structures are indicated with cylinders representing α-helices, arrows representing beta sheets, solid gray lines representing structured loops, and dashed gray lines representing disordered regions.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** A portion of the holocomplex is shown from the side. MCU, EMRE, MICU1 and MICU2 are shown as cartoons in transparent surfaces and colored in gold, orange, green and blue, respectively. Ca2+ in the ‘E’ ring of the selectivity filter is depicted as a purple sphere. MICU1-Lys 126 and MICU1-Arg 129 are shown as gray sticks. A portion of the mitochondrial inner membrane is depicted as transparent gray bar. Basic residues of MICU1 that have been proposed on the basis of previous studies to interact with MCU are drawn as red sticks (Paillard et al., 2018, Phillips et al., 2019). Amino acids that coordinate these are drawn as green sticks, with hydrogen bonds indicated by dashed lines. Although the proposed residues don’t interact with MCU or EMRE, one can imagine how their mutation could disrupt the structure of the UID and its binding to the channel. MICU1-Arg 119 and MICU1-Arg 154, which were proposed to interact with MCU-Asp 261 on the basis of one study (Phillips et al., 2019), contribute to stabilization of the UID but do not coordinate MCU or EMRE directly. MICU1-Arg 440 and MICU1-Arg 443, which were proposed to interact with MCU on the basis of another study (Paillard et al., 2018). These residues are located within the C-lobe of MICU1, approximately 25 Å from the pore, where they form hydrogen bonds with MICU1-Glu 311 from the N-lobe; their mutation would be expected to destabilize the overall structure of MICU1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Representative mitochondrial Ca2+ uptake experiments for digitonin-permeabilized MICU1 knockout cells expressing various human MICU1 constructs as indicated. ‘WT’ indicates wild type MICU1, ‘EF’ indicates MICU1 with disrupted EF-hands. The other indicated mutations were made on the background of the EF-hand mutant. Fluorescence data are normalized to the value at 100 s, where fluorescence readings are within ±5% for all curves. (B–G) Close up views of the 100 to 135 s time window showing the region used to determine slope. (H) Western blot analysis using a Rho-1D4 antibody, showing MICU1 protein expression levels. ‘-ve’ represents untransfected cells; ‘ND’ is a construct for which uptake was not studied; an asterisk represents a western control (MCU labeled with a 1D4 tag) that was included with molecular weight standards in the first lane.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig3-figsupp6-v3.jpg)
+
+**Figure 3—figure supplement 6.:** (A–B) Depictions of Nav1.2 alone (B) and with bound μ-conotoxin KIIIA (A) (PDB:6J8E), showing the transmembrane and extracellular regions, viewed from the extracellular side above the selectivity filter. The Nav1.2 channel is colored gold and μ-conotoxin KIIIA is green; both are shown as cartoon representations. The pore (a semitransparent gray surface) is depicted as the minimal radial distance from its center to the nearest van der Waals protein contact. Lys 7 and Arg 10 residues of μ-conotoxin KIIIA (green sticks) coordinate two of four similarly positioned acidic amino acids at the mouth of the selectivity filter (red sticks). (C) Pore dimensions of Nav1.2 with and without μ-conotoxin KIIIA (red and blue, respectively). A dashed line indicates the radius of a hydrated Na+ ion. The distance along the pore (y-axis) is relative to a point at the lower end of the selectivity filter.
 
 The binding of the UID identifies a receptor for MICU1 on the surface of the channel (Figure 3B and C). The receptor is relatively flat and spans three MCU subunits and one EMRE subunit. The amino acids comprising it (MCU residues: Trp 255B, Tyr 258A&B, Ser 259B, Asp 261A,B&D, and Ile 262A&B, and EMRE residue Leu 92, Figure 3C) are conserved among metazoan channels and are identical between human and beetle channels (Figure 1—figure supplement 1A–B, Figure 1—figure supplement 2). Apart from the absence of EMRE 4, the conformation of the receptor site is indistinguishable from the unliganded conformations of both beetle and human MCU-EMRE complexes (Figure 1—figure supplement 2; Wang et al., 2020; Wang et al., 2019).
 
@@ -63,13 +333,57 @@ The regions of the UID that interact with the channel are absent in MICU2 or MIC
 
 The interaction with the pore is reminiscent of the interaction between μ-conotoxin KIIIA, a small pore-blocking peptide toxin found in the venom of a cone snail, with the extracellular surface of the neuronal Nav1.2 channel (Pan et al., 2019; Zhang et al., 2007; Figure 3—figure supplement 6). A short α-helical region of the toxin lies horizontally at the entrance of the pore of Nav1.2, in a similar manner to the binding of the α2 helix of MICU1 with the uniporter. As in the UID-uniporter interface, an arginine and a lysine residue that are separated by one turn of the toxin’s α-helix coordinate acidic amino acids at the entrance of the selectivity filter (Figure 3D and Figure 3—figure supplement 6). The binding of the toxin is slightly off-center such that two of four analogous acidic amino acids are coordinated and the pore is not completely occluded – nevertheless this toxin blocks approximately 90% of Na+ current though the channel (Zhang et al., 2007; Figure 3—figure supplement 6). The UID interacts with three of the four ‘D’-ring amino acids at the mouth of the uniporter’s pore and the occlusion of the pore is more extensive than observed for Nav1.2 by μ-conotoxin KIIIA (Figure 2, Figure 3, Figure 3—figure supplement 6). The structure of the holocomplex and its similarity to a pore-blocking toxin complex indicate that MICU1 binding inhibits the flow of Ca2+ ions by both obstructing the IMS entrance of the pore and by shielding the negative charge of the ‘D’ ring through coordination with basic amino acids.
 
-## MICU1-MICU2 and Ca2+-induced changes
+### MICU1-MICU2 and Ca2+-induced changes
 
 The MICU1-MICU2 portion of the holocomplex is roughly parallelogram shaped, with overall dimensions of approximately 70 × 65 × 35 Å, under resting conditions in which its EF-hand domains are in Ca2+-free apo states (Figure 4A). One of its large relatively-flat surfaces faces and curves slightly toward the membrane due to a slight bend between MICU1 and MICU2 (Figure 2A). The heterodimer has pseudo twofold symmetry and two analogous interfaces between the subunits (Figure 4A, Figure 4—figure supplement 1A–F). Hydrophobic amino acids predominate the interfaces, with MICU1-Met 229, MICU1-Phe 383, MICU2-Met 183, and MICU2-Met 337 making analogous and particularly extensive contacts within them (Figure 4—figure supplement 1A–C). The interfacial residues are conserved in MICU3 (Figure 4—figure supplement 2), which suggests that the neuron-specific MICU1-MICU3 heterodimer has a similar arrangement. As would be expected under resting [Ca2+] conditions, all four Ca2+-binding EF-hand motifs of the MICU1-MICU2 heterodimer (‘EF1’ and ‘EF4’ of both subunits) are in the apo state and the heterodimer is superimposable with a previous apo structure of MICU1-MICU2 alone (Park et al., 2020; Figure 1—figure supplement 6, Figure 4—figure supplement 3A).
 
 From biochemical analysis of the purified protein, and in acoord with a previous report that MICU1-MICU2 has an affinity for cardiolipin (Kamer et al., 2017), we found that the heterodimer associates with lipid membranes and lipid nanodiscs that contain cardiolipin (Figure 4—figure supplement 4, Figure 4F). This association is independent of Ca2+ - both Ca2+-free and Ca2+-bound heterodimers bind to liposomes. To investigate the conformational change in MICU1-MICU2 upon Ca2+ binding, we determined a cryo-EM structure of Ca2+-bound MICU1-MICU2 in complex with a lipid nanodisc containing cardiolipin at 3.1 Å resolution (Figure 4F, Figure 4—figure supplement 5, Figure 4—figure supplement 6, and Table 1). The side of the heterodimer that associates with the nanodisc is the same as the one that faces the channel (Figures 1A and 4F). The structure reveals a substantial conformational change upon Ca2+ binding that makes the heterodimer more compact and markedly more bent between MICU1 and MICU2 (Figure 4A–D). Ca2+ dependent rearrangements of the EF-hand motifs that involve their helix turn helix elements produce this bend (Figure 4C–D, Figure 4—figure supplement 1). Ca2+ binding also induces a rotation of the UID relative to MICU1 (Figure 4E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-v3.jpg)
+
+**Figure 4.:** (A) Cartoon representation of the apo MICU1-MICU2 heterodimer. Gray spheres denote EF-hand residues. (B) Overall structure of Ca2+-bound MICU1-MICU2. Red spheres indicate bound Ca2+ ions. (C–D) Bend between MICU1 and MICU2 induced by Ca2+ binding (C, apo; D, Ca2+-bound). Overall structures are shown from the side with semitransparent molecular surfaces. (E) Superposition of apo (gray) and Ca2+-bound (green) MICU1 highlighting a rotation of the UID upon Ca2+ binding. (F) Cryo-EM density depicting the Ca2+-bound MICU1-MICU2 complex associated with a lipid nanodisc.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Interfaces between MICU1 and MICU2 in the Ca2+-free heterodimer. Depictions are for the interface between MICU1-EF1 and MICU2-EF3 (A) and for the interface between MICU1-EF3 and MICU2-EF1 (B). Residues within the interfaces are shown as sticks. Spheres represent Cα locations of amino acids within EF-hands that would coordinate Ca2+. (C) Superposition of the interfaces from (A–B), with amino acids at their centers labeled. (D–F) MICU1-MICU2 interfaces in the Ca2+ bound complex, depicted as for (A–C). Ca2+ ions are shown as red spheres. (G – J) Coordination of Ca2+ ions in the Ca2+-bound MICU1-MICU2 structure. The four EF-hand domains are shown as cartoons with amino acids that coordinate Ca2+ as sticks. Ca2+ ions are shown as purple spheres, with Ca2+-oxygen interactions depicted as dashed lines.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sequence alignment of MICU2 orthologs. The amino acid sequences of human, mouse (M. musculus), zebrafish (D. rerio), T. castaneum, and C. elegans MICU2 are aligned and coloured according to the ClustalW convention (UniProt accession numbers: Q8IYU8, Q8CD10, Q1LCY6, D6WQH5 and D7SFN6, respectively). Secondary structures are indicated with cylinders representing α-helices, arrows representing beta sheets, solid gray lines representing structured loops and dashed gray representing disordered loops. All the structural elements (N-lobe, Central helix and C-lobe) and 4 EF-hand motifs are highlighted. Residues involved in MICU1-binding and calcium-binding are highlighted with red dots and red diamonds, respectively. (B) Sequence alignment of human MICU1, MICU2 and MICU3. The secondary structure elements of human MICU1 are above the alignment. MICU2 residues that are involved in binding to MICU1 are conserved in MICU3 (red diamonds).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Superposition of the MICU1-MICU2 heterodimer from the holocomplex (apo; green and blue) with an X-ray structure of an isolated apo MICU1-MICU2 heterodimer (gray, PDB: 6LE5). The RMSD is 0.8 Å for Cα atoms. Two orthogonal views are shown. (B) Superposition of the Ca2+-bound conformation of the MICU1-MICU2 heterodimer from our cryo-EM analysis (green and blue) with a Ca2+-bound X-ray structure of a MICU2-MICU2 homodimer (gray, PDB: 6IIH, Cα RMSD = 2.3 Å). Ca2+ ions are drawn as purple spheres.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Following ultracentrifugation of purified MICU1-MICU2 in the presence or absence of liposomes, and with and without Ca2+, pellets were resuspended and analyzed by Coomassie-stained SDS-PAGE. MICU1-MICU2 pellets with liposomes but remains in the supernatant when liposomes are not present (buffer). GFP is used as a control that does not associate with liposomes. Refer to Methods for details.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Flowchart of data processing and 3D reconstruction. (B) Representative 2D class averages. An asterisk denotes a class containing two MICU1-MICU2 assemblies (representing ~3% of particles). (C) A 2D projection of a dimer of MICU1-MICU2 heterodimers from the cryo-EM map of the human holocomplex under high [Ca2+] conditions (EMD-21643). The channel (MCU/EMRE) densities were removed for the projection. MICU2:MICU2 interfaces mediate a dimerization of MICU1-MICU2 heterodimers in that structure (Fan et al., 2020). The projection resembles the 2D class from (B) with two MICU1-MICU2 heterodimers (asterisk), which suggests, but does not prove, that a MICU2:MICU2 interface mediates the dimerization of MICU1-MICU2 heterodimers in a fraction of our cryo-EM data.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** (A) FSC curves of the final 3D reconstruction. The half-map (black) and map-to-model (orange) FSC curves are shown (dotted lines indicate 0.143 and 0.5 levels and corresponding resolutions). (B) Euler angle distribution plot of the final 3D reconstruction. (C) Local resolution estimation (calculated with Resmap). The unsharpened map is colored as indicated. Two views are shown. (D). EM densities for indicated regions of the atomic model. Calcium ions are depicted as green spheres.
+
 We sought to understand how Ca2+-dependent conformational changes in MICU1-MICU2 might confer Ca2+-dependent control to the channel (Figure 5). Superimposing the Ca2+-bound MICU1-MICU2 structure on the UID in the resting holocomplex reveals that the Ca2+-induced conformational changes in the heterodimer would place hydrophilic regions of MICU2 within the membrane, which would be highly unfavorable thermodynamically (Figure 5, middle). Rather than inserting into the membrane, we hypothesize that the bending motion of MICU1-MICU2 acts like a lever against the membrane to pry MICU1 from the mouth of the pore when [Ca2+]IMS is elevated. Additionally, the Ca2+-dependent conformational changes within MICU1 cause a rotation of the UID that could disfavor binding to the channel (Figure 4E). The conformational changes would dislodge the UID from the blocking conformation, which would allow Ca2+ ions to permeate though the channel while [Ca2+]IMS remains elevated. A dislodged Ca2+-bound MICU1-MICU2 complex would be free to bind to the surface of the inner mitochondrial membrane, with which it would associate due to its inherent affintity for membranes, and it may remain proximal the channel as a result of electrostatic interactions with the acidic tail of EMRE (Figure 5, right) (Wang et al., 2019). When resting [Ca2+]IMS is restored, a MICU1-MICU2 complex, again devoid of its Ca2+ ligands, would resume the blocking configuration (Figure 5, left, Figure 5—figure supplement 1). This mechanism of MICU1-MICU2 control is compatible with the observed dimerization of human MCU-EMRE channels that is due to association of their NTDs – there is sufficient room for MICU1-MICU2 complexes to associate with both channels of the dimer and to control Ca2+ influx through their pores (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-v3.jpg)
+
+**Figure 5.:** Left, structure of the holocomplex under resting [Ca2+]IMS conditions. MCU and EMRE are depicted with cylindrical helices; MICU1 and MICU2 are represented as semitransparent surfaces, with α1 and α2 helices of the UID as ribbons. The lipid membrane (gray) is based upon an atomistic model (Figure 5—figure supplement 1) . The UID blocks the pore (gray tube). Following elevation of [Ca2+]IMS, Ca2+ binding causes the MICU1-MICU2 heterodimer to bend (the Ca2+-bound MICU1-MICU2 structure is depicted with the channel in the center and right panels). The center panel indicates that bending would dislodge the UID from its receptor site in order to avoid thermodynamically unfavorable interactions of MICU2 with the membrane (‘X’). The dislodged Ca2+-bound MICU1-MICU2 heterodimer would no longer block the pore, thereby allowing Ca2+ permeation through the channel, and it would be free to interact with the membrane (right). Upon the return of resting [Ca2+], the heterodimer would resume its blocking conformation (left). One MICU1-MICU2 heterodimer is depicted and only one can bind to the receptor on the channel at a time but multiple MICU1-MICU2 heterodimers may be associated with the channel. A brown line depicts a hypothetical interaction of the acidic C-terminus of EMRE with MICU1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** The holocomplex was modeled into a DPPC (1,2-dipalmitoyl-sn-glycero-3-phosphocholine) lipid bilayer, using CHARMM-GUI (http://www.charmm-gui.org/). MCU, EMRE, MICU1 and MICU2 are shown as cartoons. DPPC molecules are shown as transparent sticks.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** The complex was modeled based on holocomplex and the dimeric human MCU-EMRE complex (PDB:6O58). MCU, EMRE, MICU1 and MICU2 are shown as cartoons with transparent molecular surfaces and colored gold, orange, green and blue, respectively. A curved mitochondrial inner membrane is depicted as a transparent gray arc. Dimerization of channels is due to the NTDs of human MCU. As shown, MICU1-MICU2 regulatory complexes could bind to both channels of the dimer without sterically interfering.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/59991/elife-59991-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A–B) Low [Ca2+] structures. (A) TcMCU-EMRE-MICU1-MICU2 holocomplex structure reported here. (B) Holocomplex containing human MCU, EMRE, MICU1, and MICU2 subunits (PDB # GWDN). An ordered loop of MICU1 (amino acids 258–274) is indicated, as are the C-helices of MICU1 and MICU2, which are also ordered in that structure. (C) Structure of a holocomplex comprising human MCU, EMRE, MICU1, and MICU2 that was determined at high (2 mM) [Ca2+] (PDB # GWDO). A dimer of channels present in the cryo-EM sample is formed by interactions between the NTDs. For each channel, a Ca2+-bound MICU1-MICU2 regulatory complex is located adjacent to the pore and no longer occludes it.
 
 ## Discussion
 
@@ -77,13 +391,247 @@ With analogy to classical toxin-channel interactions (MacKinnon and Miller, 1988
 
 During the preparation of this manuscript, cryo-EM structures of a holocomplex comprising human MCU, EMRE, MICU1 and MICU2 subunits in resting and activated [Ca2+] conditions were reported (Fan et al., 2020). The conclusions of that work are congruous with the present study and validate the proposed mechanism of Ca2+-dependent regulation of the uniporter by MICU1-MICU2. Unlike ours, which used lipid nanodiscs, the structures were determined using detergent-solubilized protein, but the absence of a lipid membrane-like environment does not seem to have dramatically influenced the binding of the MICU1-MICU2 regulatory complex to the channel under resting Ca2+ conditions (Figure 5—figure supplement 3). Interestingly, an additional interaction with the ‘D’-ring at the mouth of the pore, involving a loop region of MICU1 (amino acids 258–274) that is disordered in our structure, was observed (Figure 5—figure supplement 3). Weak density for this loop in our structure and its disorder in X-ray structures of isolated MICU1 proteins are indications of its flexibility (Wang et al., 2014). A structure of an intact holocomplex at elevated levels of [Ca2+], which was included in the recent work, indicates that the Ca2+-bound MICU1-MICU2 regulatory complex binds adjacent to the pore in essentially the same manner that we propose (Figure 5, right, and Figure 5—figure supplement 3). The similarities of these studies, which used different experimental conditions, different protein constructs, and MCU-EMRE channels from different species, support a unified understanding of the mechanism of gatekeeping by MICU1-MICU2.
 
-## Conclusion
+### Conclusion
 
 This work reveals a mechanism for Ca2+-dependent control of the mitochondrial calcium uniporter by the MICU1-MICU2 regulatory complex. The mechanism is distinct from the conformational changes that underlie gating, the process by which ion channels permit or prevent ion condution, in many other ion channels – these often involve changes in the dimensions of their ion conduction pores due to motions of transmembrane α-helices that line these pores, as was first exemplified by structural studies of potassium channels (MacKinnon, 2003). Our current understanding of how changes in [Ca2+]IMS regulate the uniporter comes from the integration of insights from the present work and the large body of preceeding studies. The MICU1-MICU2 complex exists as a heterodimer that is located in the IMS. Under resting cytosolic [Ca2+] conditions, when the concentration of Ca2+ is less than ~0.2 μM, Ca2+-binding EF-hand domains within MICU1 and MICU2 are devoid of Ca2+ and the heterodimer adopts a Ca2+-free conformation that is relatively flat. An inherent affinity of MICU1-MICU2 for lipid membranes and an affinity for a flexible acidic region on the IMS portion of EMRE increase the local concentration of the heterodimer near the MCU/EMRE channel. MCU channels that have multiple EMRE subunits associated with them would tend to have more MICU1-MICU2 complexes nearby, as was inferred from a recent study (Payne et al., 2020). At these low resting concentrations of Ca2+, a domain that is specific to MICU1, the uniporter interaction domain (UID), binds to a receptor site at the mouth of the channel’s pore and blocks it, with analogy to how protein toxins from venomous organisms block neuronal cation channels. In this blocking conformation, the UID inhibits ion permeation that could otherwise dissipate the mitochondrial electromotive force. Although MICU2 interacts extensively with MICU1, it does not appear to contact the channel directly. When the Ca2+ concentration in the IMS becomes elevated, the binding of Ca2+ to the EF-hand domains within MICU1 and MICU2 induce conformational changes in the MICU1-MICU2 complex that bend it and cause the UID to rotate. These conformational changes relieve blockage of the pore and thereby permit Ca2+ ions to permeate through the channel while [Ca2+]IMS remains elevated. These processes are reversed upon the restoration of resting [Ca2+]IMS levels. MICU1-MICU2 heterodimers, and by analogy MICU1-MICU3 heterodimers in neurons, thus confer Ca2+-dependent gating to the uniporter by operating like endogenous pore-blocking toxins, the binding of which is governed by Ca2+-dependent conformational changes within them. This mechanism represents one of the ways that the mitochondrial Ca2+ uniporter, an unusual and intricate ion channel complex, responds to physiological signals to regulate mitochondrial respiration and other cellular processes.
 
 ## Materials and methods
 
-## Holocomplex preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Tribolium castaneum)</td>
+      <td>TcMCU</td>
+      <td>IDT Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tribolium castaneum)</td>
+      <td>TcEMRE</td>
+      <td>IDT Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsMICU1</td>
+      <td>IDT Inc Genewiz, Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsMCIU2</td>
+      <td>IDT Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Expi293F</td>
+      <td>Sigma</td>
+      <td>A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T-MICU1-KO</td>
+      <td>Kamer and Mootha, 2014</td>
+      <td>DOI: 10.1002/embr.201337946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (sodium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1',3'-bis[1,2-dioleoyl-sn-glycero-3-phospho]-glycerol (sodium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>710335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenimine, Linear, MW 25000, Transfection Grade (PEI 25K)</td>
+      <td>Polysciences, Inc</td>
+      <td>23966–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma</td>
+      <td>8451440100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-D-maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>O310S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(2α,3β,5α,15β,25R)−2,15-dihydroxyspirostan-3-yl O-β -D-glucopyranosyl-(1→3)-O-β-D-galactopyranosyl-(1→2)-O-[β-D-xylopyranosyl-(1→4)-β-D-galactopyranoside</td>
+      <td>Cayman Chemical Company</td>
+      <td>14952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Membrane Scaffold Protein 1D1</td>
+      <td>Sigma</td>
+      <td>M6574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Methyl-2-oxo-4-imidazo lidinehexanoic acid</td>
+      <td>Sigma</td>
+      <td>D1411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium Green−5N, Hexapotassium Salt</td>
+      <td>Thermo Fisher</td>
+      <td>C3737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind 4.1.10</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0</td>
+      <td>Zivanov et al., 2018</td>
+      <td>http://www2.mrc-lmb. cam.ac.uk/relion RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Glover, 2004</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v2</td>
+      <td>Structura Biotechnology</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, 2020</td>
+      <td>https://pymol.org/2/ RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hole</td>
+      <td>Smart et al., 1996</td>
+      <td>http://www.holeprogram.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>Goddardnet al. 2018</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>FEI Vitrobot Mark IV</td>
+      <td>FEI Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Holocomplex preparation
 
 Tribolium castaneum MCU (TcMCU; UniProt accession: TcasGA2_TC013837) and Tribolium castaneum EMRE (TcEMRE; UniProt accession: TcasGA2_TC012057) were selected as candidates for structural and functional studies from among ~30 metazoan MCU orthologs that were evaluated using fluorescence-detection size-exclusion chromatography (FSEC) screening technique using HEK-293 cells (Goehring et al., 2014; Wang et al., 2020) (cells obtained from and validated by Invitrogen, tested negative for mycoplasma). cDNA encoding TcMCU (residues 174–359, with a C-terminal Strep II tag) and TcEMRE (residues 29–90) genes were chemically synthesized (IDT Inc), each cloned into a mammalian cell expression vector (Goehring et al., 2014) to encode proteins with an N-terminal Venus tag and an intervening PreScission protease cleavage site. The plasmids were co-transfected into Expi293 cells (obtained from and validated by Invitrogen, tested negative for mycoplasma) using PEI25k reagents (Polysciences, Inc) for transient expression. Briefly, 0.4 mg TcMCU plasmid, 0.6 mg TcEMRE plasmid and 3 mg PEI25k were mixed with 100 ml OptiMEM media (Invitrogen), incubated at room temperature for 20 min, and combined with approximately 3 × 109 Expi293 cells in 1 L of Expi293 media (Invitrogen). After incubation of the cells at 37° C for 16 hr with shaking (125 rpm), 10 mM sodium butyrate (Sigma-Aldrich) was added, and the cells were cultured at 30° C for an additional 48 hr before harvest.
 
@@ -91,15 +639,15 @@ The pellet from 1 L of cell culture was resuspended in 100 ml lysis buffer (40 m
 
 MICU1 and MICU2 were expressed as a single polypeptide with a linker connecting the two proteins. The construct consists of human MICU1 (residues 94–476) connected to human MICU2 (residues 51–434). Unstructured regions of the polypeptide and a Ser-Asn peptide comprise a 44 amino acid linker between the structured regions of MICU1 and MICU2 (spanning ~32 Å in the structure). The expression construct was obtained in a stepwise manner. cDNA for human MICU1 (encoding residues 94–476) was amplified from a normal human brain cDNA library (BioChain, Inc) and ligated into the XhoI and EcoRI sites of an expression plasmid (Goehring et al., 2014) to contain an N-terminal Venus tag and PreScission protease cleavage site (Venus-PreScission-MICU1). cDNA encoding human MICU2 (amino acids 51–434) was amplified in the same manner and inserted into that plasmid, using MfeI/EcoRI and SalI restriction sites, to yield the final expression plasmid (Venus-PreScission-MICU1-MICU2). The expression and purification of MICU1-MICU2 followed a similar procedure to that for MCU and EMRE. The pellet from 0.3 L of cell culture (prepared using the same growth conditions as described above) was resuspended in 20 ml lysis buffer, DDM was added to a final concentration of 1%, and the sample was agitated at 4°C for 1 hr. The sample was clarified by centrifugation (60,000 g for 1 hr, 4°C) and the supernatant was filtered through a 0.22 μm polystyrene membrane (Millipore). 2 ml GFP nanobody resin was added and the sample was rocked at 4°C for 1 hr. The beads were washed with 100 ml buffer (20 mM HEPES pH 7.5, 500 mM NaCl and 1 mM DDM), the MICU1-MICU2 protein was eluted using 0.1 mg PreScission protease (16 hr, 4°C, supplemented with 1 mM DTT), and the sample was further purified by SEC (Superose 6 Increase, 10/300 GL) in 20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM EDTA, 5 mM EGTA and 1 mM DDM. The peak fractions corresponding to the MICU1-MICU2 protein were pooled and concentrated to 1 mg/ml (Vivaspin 2, 100 kDa cutoff). To remove DDM,~300 mg wet Bio-Beads SM2 (Bio-Rad) were added and the sample was rotated (4°C, 3 hr). Purified MICU1-MICU2 protein was then combined with the purified with MCU-EMRE-nanodisc sample (using a molar ratio of 2 MICU1-MICU2 : one channel, 4°C, 30 min.) and the complex was purified by SEC (Superose 6 Increase, 10/300 GL column, GE Healthcare) in 20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM EGTA. The peak fractions were collected, concentrated to 1 mg/ml (Vivaspin 2, 100 kDa cutoff), and used immediately for cryo-EM grid preparation. From the Maxchelator software (Schoenmakers et al., 1992), and assuming a typical trace concentration of Ca2+ in buffer components (~2–5 μM), we estimate [Ca2+]free ~100 pM in the sample.
 
-## Preparation of Ca2+-bound MICU1-MICU2 bound to nanodiscs
+### Preparation of Ca2+-bound MICU1-MICU2 bound to nanodiscs
 
 To form empty nanodiscs, 0.2 ml of a lipid/DDM mixture (17 mM DDM, 10 mM lipids: POPE: POPG: cardiolipin [18:1] with a 2:2:1 wt ratio) was combined with 0.25 ml nanodisc scaffold protein (MSP1D1, Sigma, 5 mg/ml). After 1 hr incubation on ice, 0.4 ml buffer (20 mM HEPES pH 7.5, 150 mM NaCl) and ~200 mg wet Bio-Beads SM2 (Bio-Rad) were added, the sample was rotated at 4°C for ~16 hr to remove detergent, and then it was purified by size-exclusion chromatography (Superose 6 Increase, 10/300 GL column, GE Healthcare; equilibrated with 20 mM HEPES pH 7.5, 150 mM NaCl). The peak fractions were pooled, combined with purified MICU1-MICU2 protein (using a molar ratio of 1 MICU1-MICU2 : 1.5 nanodisc scaffold protein; 4°C, 30 min.), and the complex was purified by size-exclusion chromatography (Superose 6 Increase, 10/300 GL column, GE Healthcare; equilibrated with 20 mM HEPES pH 7.5, 150 mM NaCl). The peak fractions were collected, concentrated to 0.5 mg/ml (Vivaspin 2, 100 kDa cutoff), CaCl2 was added to a final concentration of 1 mM, and the sample was used for cryo-EM grid preparation.
 
-## EM sample preparation and data acquisition
+### EM sample preparation and data acquisition
 
 For all samples, 4 μl of purified protein was applied to glow-discharged (10 s) Quantifoil R 1.2/1.3 grids (Au 400; Electron Microscopy Sciences) and plunge-frozen in liquid nitrogen-cooled liquid ethane, using a Vitrobot Mark IV (FEI) operated at 4°C with a blotting time of 2–3 s (blot force 0) with 100% humidity. Grids were clipped and loaded into a 300 keV Titan Krios microscope (FEI) equipped with a Gatan K3 direct electron detector. Micrographs were collected in super-resolution mode (pixel size of 0.532 Å) with a nominal defocus range of −1.0 to −3.0 μm. The dose rate was 20 electrons/pixel/s. Images were recorded for 4 s with 0.1 s subframes (40 total frames), corresponding to a total dose of 71 electrons per Å2.
 
-## Image processing and model building
+### Image processing and model building
 
 For the holocomplex, 21,115 movie stacks were gain-corrected, twofold binned (using a pixel size of 1.1 Å), motion corrected, and dose weighted using MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) estimates were performed in CTFFIND4 using non-dose weighted micrographs (Rohou and Grigorieff, 2015). 19,972 micrographs with CtfMaxResolution values better than 4 Å were selected for further processing. 17,440,131 particles were picked automatically and extracted (using a binned pixel size of 4.4 Å) using RELION 3.0 (Zivanov et al., 2018). These particles were then imported into cryoSPARC v.2 (Punjani et al., 2017). The particles were cleaned-up by one round of Ab initio reconstruction and two rounds of heterogeneous refinement. 2,388,041 particles from the best classes were selected and subjected to non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at ~9.4 Å overall resolution. The refined particles were then centered and re-extracted in RELION 3.0 with a pixel size of 2.2 Å, imported into cryoSPARC v.2 for another two rounds of heterogeneous refinement. 761,813 particles from the best classes were chosen and used for non-uniform refinement in cryoSPARC v.2, which yielded a reconstruction at ~4.4 Å overall resolution. The refined particles were centered and re-extracted in RELION 3.0 with a pixel size of 1.1 Å, and imported into cryoSPARC v.2 for another two rounds of heterogeneous refinement. 510,869 particles from the best class were subjected into non-uniform refinement in cryoSPARC v.2, and this yielded a reconstruction at 3.9 Å overall resolution. One round of Bayesian polishing in Relion 3.0 improved the resolution to 3.6 Å. After local CTF refinement in cryoSPARC v.2 and another round of Bayesian polishing in RELION 3.0, the particles were further classified by heterogeneous refinement in cryoSPARC v.2 and 3D classification (focused classification on the TMD) in RELION 3.0. 350,160 particles from the classes with a more well-defined TMD region were chosen and subjected to 3D auto refinement in RELION 3.0. Postprocessing in RELION 3.0 (using a calibrated pixel size of 1.064 Å) yielded the final reconstruction at 3.3 Å. All resolution estimates are based on gold-standard Fourier shell correlation (FSC) calculations. Estimation of the local resolution of the map was performed using Resmap (Kucukelbir et al., 2014).
 
@@ -107,16 +655,16 @@ For the structure of MICU1-MICU2 bound to nanodiscs and in 1 mM Ca2+, 4675 movie
 
 The atomic model of the holocomplex was manually built and refined in real space using the COOT software (Emsley et al., 2010). A cryo-EM structure of TcMCU-EMRE (Wang et al., 2020) and X-ray structures of MICU1 and MICU2 (Kamer et al., 2019; Wang et al., 2014) were used as starting points. Further real-space refinement was carried out in PHENIX (Adams et al., 2010), to yield the final model (Table 1). Structural figures were prepared with Pymol (pymol.org) (Schrödinger, 2020), Chimera (Pettersen et al., 2004), ChimeraX (Goddard et al., 2018), and HOLE (Smart et al., 1996).
 
-## Mitochondrial Ca2+ uptake experiments
+### Mitochondrial Ca2+ uptake experiments
 
 cDNA encoding full-length wild type human MICU1 was amplified from a normal human brain cDNA library (BioChain, Inc), whereas an EF-hand mutant MICU1 gene with mutations abolishing Ca2+ binding (D231A, E244K, D421A, E432K) was chemically synthesized (Genewiz, Inc). Both genes were sub-cloned into the XhoI and EcoRI sites of a mammalian expression vector that includes a C-terminal Rho-1D4 antibody tag (Baradaran et al., 2018; Molday and MacKenzie, 1983). Mutations F106A, R117A, Y121A, K126A and R129A were generated by PCR using mutagenic primers on the background of the EF-hand mutant and verified by sequencing. MICU1 knockout cells, derived from human HEK-293T cells and generously provided by V. Mootha (Kamer and Mootha, 2014) (authenticated using mitochondrial Ca2+ uptake assays (Figure 3—figure supplement 5); tested negative for mycoplasma), were grown in DMEM media (Invitrogen). 3 μg of each plasmid was transfected into ~1.5×106 of these cells using Lipofectamine 3000 (Invitrogen), and the cells were grown for an additional 24 hr at 37°C before use.
 
 The mitochondrial Ca2+ uptake assay using these cells was performed as described (Baradaran et al., 2018), with slight modifications. Briefly, after addition of 1 μM Calcium Green-5N (Life Technologies) and 0.05 mM digitonin, 20 μM CaCl2 (from a 4 mM stock in water) was added at the 100 s time point to initiate mitochondrial Ca2+ uptake. The data plotted in Figure 3E were obtained from Ca2+ uptake curves (e.g. Figure 3—figure supplement 5) in the following manner. A rate of Ca2+ uptake (uptake_rate) was defined as the slope of a linear fit of the Ca2+ uptake curve between 111 and 135 s. Relative uptake was then defined as: (uptake_rateUID-mutant – uptake_rateEF-hand-mutant) / (uptake_rateWT – uptake_rateEF-hand-mutant), where ‘WT’ represents wild type MICU1, ‘EF-hand-mutant’ represents MICU1 bearing the EF-hand mutations, and ‘UID-mutant’ represents a given mutation of the UID on the background of the EF-hand-mutant. From this equation, a relative uptake of 1 indicates a mitochondrial Ca2+ uptake rate equivalent to that observed for wild type MICU1 and a relative uptake of 0 indicates a mitochondrial Ca2+ uptake rate equivalent to that observed for the EF-hand-mutant.
 
-## Assessing the association of MICU1-MICU2 with liposomes
+### Assessing the association of MICU1-MICU2 with liposomes
 
 To prepare liposomes, 5 mg of dried lipids (POPE: POPG: cardiolipin [18:1] with a 2:2:1 wt ratio) was mixed with 1 ml reconstitution buffer (20 mM HEPES pH 7.5, 150 mM NaCl) and the sample was sonicated until homogeneous (~2 min). 20 μl of purified MICU1-MICU2 protein (0.5 mg/ml) was added to 80 μl of liposomes or 80 μl of reconstitution buffer, each supplemented with a final concentration of 1 mM CaCl2 or with 1 mM EGTA and 1 mM EDTA. As a negative control, 20 μg of purified green fluorescent protein was combined with liposomes or buffer in the same manner. After incubation for 30 min at 4°C, the samples were centrifuged at 140,000 g (30 min at 4°C). The supernatants were removed and the pellets were resuspended for SDS-PAGE analysis (by resuspending the pellets in 40 μl reconstitution buffer, adding 40 μl SDS-PAGE loading buffer containing 100 mM DTT, and analyzing 20 μl by Coomassie-stained SDS-PAGE).
 
-## Materials availability
+### Materials availability
 
 Correspondence and requests for materials should be addressed to SBL (Longs@mskcc.org).

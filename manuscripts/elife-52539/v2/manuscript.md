@@ -50,25 +50,41 @@ To elucidate the net function of SLAMF6, we generated a transgenic mouse with th
 
 ## Results
 
-## SLAMF6 is constitutively expressed on T cells and increases upon activation
+### SLAMF6 is constitutively expressed on T cells and increases upon activation
 
 SLAMF6 is an immune receptor constitutively expressed on non-activated and activated T cells (Eisenberg et al., 2018). The level of SLAMF6 transcription and receptor expression, however, is dynamic, changing with time and activation states. To record SLAMF6 expression in a longitudinal manner, human tumor-infiltrating lymphocytes (TILs) were activated for 5 days, and SLAMF6 transcript and protein expression were measured (Figure 1A–C). After 1 day of activation, there was an initial decrease in the SLAMF6 transcript that switched to over-expression (Figure 1C). From 3 days after activation onward, SLAMF6 receptor expression consistently increased (Figure 1A and B). Interestingly, the increased expression was most pronounced in T cells activated in the absence of IL-2 (Figure 1D). A similar pattern was observed for the expression of the murine SLAMF6 receptor on Pmel-1 CD8+ T cells (Figure 1E).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig1-v2.jpg)
 
-**Figure 1.:** (A–C) SLAMF6 expression in human TIL412 cells, activated for five days. (A) Flow cytometry at the indicated time points. (B) Median fluorescence intensity (MFI) of SLAMF6, days 1–5. (C) Quantitative RT-PCR for SLAMF6. RNA was extracted at the indicated time points. Data normalized to HPRT expression at each time point and to the basal expression level on day 0. One-way ANOVA. **, p<0.01, ***, p<0.001. (D) SLAMF6 expression by flow cytometry in human TIL412 cells activated for 5 days with anti-CD3 or with anti-CD3 plus IL-2, at the indicated time points. (E) SLAMF6 expression by flow cytometry in Pmel-1 mouse splenocytes activated for 6 days, at the indicated time points. (F) Row normalized expression of immune-related genes from RNAseq, clustered according to similar expression patterns. CD4+ T cells from two donors were stimulated with anti-CD3 plus anti-CD28 for 72 hr, RNA was extracted and sequenced. Numbers in the top panel indicate hours. (G) Magnification of cluster C. SLAMF6 is marked.Figure 1—source data 1.
+**Figure 1.:** (A–C) SLAMF6 expression in human TIL412 cells, activated for five days. (A) Flow cytometry at the indicated time points. (B) Median fluorescence intensity (MFI) of SLAMF6, days 1–5. (C) Quantitative RT-PCR for SLAMF6. RNA was extracted at the indicated time points. Data normalized to HPRT expression at each time point and to the basal expression level on day 0. One-way ANOVA. **, p<0.01, ***, p<0.001. (D) SLAMF6 expression by flow cytometry in human TIL412 cells activated for 5 days with anti-CD3 or with anti-CD3 plus IL-2, at the indicated time points. (E) SLAMF6 expression by flow cytometry in Pmel-1 mouse splenocytes activated for 6 days, at the indicated time points. (F) Row normalized expression of immune-related genes from RNAseq, clustered according to similar expression patterns. CD4+ T cells from two donors were stimulated with anti-CD3 plus anti-CD28 for 72 hr, RNA was extracted and sequenced. Numbers in the top panel indicate hours. (G) Magnification of cluster C. SLAMF6 is marked.
 
 To identify other immune-related genes that may cluster with SLAMF6, longitudinal RNA sequencing data were generated from CD4 T cells from two healthy human donors. Five groups of genes (clusters A-E) were identified (Figure 1F). Cluster A represents genes highly expressed in non-activated cells, and downregulated upon activation, such as BCL2 and JAK1. Cluster B represents fast-rising genes undergoing transcription as early as 3–6 hr following activation, but down-regulated after that; genes in this cluster include the activation marker CD69. Clusters C and D include intermediate genes, upregulated after 6 hr (C) or between 12 and 24 hr (D), and downregulated later. Lastly, cluster E includes late-rising genes, such as LAG3. The SLAMF6 transcript appears in cluster C, rising at 6 hr of activation and staying high after that (Figure 1G). Other genes in cluster C are CD44, encoding a glycoprotein that takes part in T cell activation (Huet et al., 1989), and CD28 and ICOS, which encode co-stimulatory immune receptors (Turka et al., 1990; Dong et al., 2001). The increase in the transcription of receptors that are stably expressed at all times may hint at enhanced recruitment and degradation of these receptors during activation, possibly in the immune synapse (Onnis and Baldari, 2019).
 
-## SLAMF6 expressed in trans by a melanoma target inhibits antitumor T cell reactivity
+### SLAMF6 expressed in trans by a melanoma target inhibits antitumor T cell reactivity
 
 Because SLAMF6 is constantly present on T cells, it is difficult to decipher its effect when it acts as a ligand, introduced in trans. To solve this problem, we generated a cell line derived from B16-F10/mhgp100 melanoma, over-expressing SLAMF6 (Figure 2A). Compared to the wild-type cell line, the SLAMF6-expressing melanoma cells co-cultured with Pmel-1 CD8+ T cells led to decreased IFN-γ secretion by the lymphocytes (Figure 2B and C). To evaluate the effect of SLAMF6 expression on melanoma rejection in vivo, SLAMF6-expressing melanoma was compared to the parental B16-F10/mhgp100 line, in an adoptive T cell transfer regimen, using activated Pmel-1 CD8+ T cells (Figure 2D). The B16-F10/mhgp100/SLAMF6+ tumors grew more aggressively: on day 23, the mean tumor volume was 431 mm3 in the SLAMF6-expressing melanomas, compared to 137 mm3 in the non-modified tumors (p=0.04, Student’s t-test) (Figure 2E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig2-v2.jpg)
+
+**Figure 2.:** (A) SLAMF6 expression on B16-F10/mhgp100 parental or transfected (SLAMF6 or empty) melanoma cells. (B) Pmel-1 splenocytes were activated for 7 days with gp10025-33 peptide and IL-2 (30 IU/ml), and then incubated overnight with B16-F10/mhgp100/empty or B16-F10/mhgp100/SLAMF6 melanoma cells at the indicated effector-to-target ratios. IFN-γ secretion was measured by ELISA. (C) Pmel-1 splenocytes were activated for 7 days with gp10025-33 peptide and IL-2 (30 IU/ml), and then incubated overnight with B16-F10/mhgp100/empty or B16-F10/mhgp100/SLAMF6 melanoma cells. IFN-γ production was detected by intracellular staining and flow cytometry (gated on CD8+). Three replicates. The gating strategy is illustrated in Figure 2—figure supplement 1. (D, E) Pmel-1 splenocytes were expanded with gp10025-33 peptide (1 µg/ml) and IL-2 (30 IU/ml) for 7 days. On day 7, cells were transferred i.v. into irradiated C57Bl/6 mice bearing palpable (1 week) B16-F10/mhgp100/empty or B16-F10/mhgp100/SLAMF6 tumors. IL-2 (0.25 × 106 IU) was administered i.p. twice a day for 2 days. Tumor growth was measured twice a week. Mice were sacrificed when the tumor reached 15 mm in diameter. (D) Scheme showing experimental layout. (E) Spider plot showing tumor volume [calculated as L (length) x W (width)2 x 0.5]. One-way ANOVA. *, p<0.05, **, p<0.01, ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Initially, non-single cells were excluded using FSC-A and FSC-H axes. Then, based on the morphology of the cells in the FSC-A SSC-A axes, the live cell population was gated. In this population, only cells that stained positively for CD8+ expression were subjected to further analysis.
+
 These experiments show that trans-activation of SLAMF6 on lymphocytes, which in this system was achieved with the SLAMF6-expressing melanoma, inhibits the melanoma-specific CD8+ T cell response and allows rapid tumor growth.
 
-## Establishment of Pmel-1 x SLAMF6 -/- mice as a source of SLAMF6-/- antigen specific lymphocytes
+### Establishment of Pmel-1 x SLAMF6 -/- mice as a source of SLAMF6-/- antigen specific lymphocytes
 
 To evaluate the role of SLAMF6 in melanoma-cognate T cells, we generated a new mouse strain by breeding Pmel-1 mice with SLAMF6 -/- mice. The offspring of this cross represented a new strain, which could serve as a source of CD8+ T cells lacking SLAMF6 and expressing the transgenic TCR against the H-2Db gp100: 25–33 peptide (Figure 3A). Evaluation of the lymphocyte subsets in these mice showed a lower percentage (15%) of CD8+ cells in Pmel-1 x SLAMF6 -/- mouse spleens compared to Pmel-1 splenocytes (24%) (Figure 3B and Figure 3—figure supplement 1A). Despite the smaller percent of CD8+ cells in the spleens of the SLAMF6-deficient mice, the ratio of CD8+ subpopulations (naive, effector, effector memory, and central memory) was similar in both mouse strains (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig3-v2.jpg)
+
+**Figure 3.:** (A) SLAMF6 and Vβ13 expression in Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes measured by flow cytometry. (B) Percent CD8+, CD4, and CD19 cells in spleens from Pmel-1 or Pmel-1 x SLAMF6 -/- untreated mice. (C) Pmel-1, and Pmel-1 x SLAMF6 -/- CD8+ untreated splenocytes were stained with anti-CD44 and anti-CD62L. One representative experiment is shown. (D) Percent CD8+ cells in Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes after 7 days of in vitro activation with gp10025-33 peptide and IL-2 (30 IU/ml). (E) Flow cytometry for activation markers (CD25, CD69, CD137) in Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes after 3 days of in vitro activation, as in (D). Median fluorescence intensity (MFI) is shown. (F) Expression of PD-1 in Pmel-1 or Pmel-1 x SLAMF6 -/- CD8+ T cells after 7 days of in vitro activation, as in (D). Median fluorescence intensity (MFI) is shown. (G, H) After 7 days of activation, Pmel-1 and Pmel-1 x SLAMF6 -/- CD8+ T cells were stained with anti-CD44 and anti-CD62L. CD8+ subpopulations were defined for each mouse strain. (G) One representative experiment and (H) summary of subpopulations identified by flow cytometry in five experiments is shown. EM, effector memory, CM, central memory. Student t-test. *, p<0.05, **, p<0.01, ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunohistochemistry staining of Pmel-1 and Pmel-1 x SLAMF6 -/- spleen sections using anti CD4 and anti-CD8+ antibodies (X10 magnification). (B) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were labeled with CFSE and activated; at the indicated time points the cells were stained for CD8+ expression, and CFSE level gated on the CD8+ population was measured using flow cytometry. (C) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes activated for 7 days followed by 7 days maintenance with IL-2 (30 IU/ml) or without its addition. Percentage apoptotic and dead cells was measured by PI-Annexin V. Summary of two experiments shown. No Tx, no treatment. (D) After 7 days of activation, Pmel-1 and Pmel-1 x SLAMF6 -/- CD8+ T cells were stained with antibodies against SLAM family receptors. The expression level of each receptor in CD8+ cells is presented.
 
 In the initial in vitro activation assays, it was already clear that the Pmel-1 x SLAMF6 -/- T cells have improved functional capacity. Their proliferative response to peptide stimulation was preserved, which was mandatory to produce ample numbers of CD8+ lymphocytes for the adoptive T cell transfer regimen (Figure 3D). CFSE dilution curves were identical in the two mouse strains, as were the activation-induced cell death (AICD) rates (Figure 3—figure supplement 1B,C). After 3 days of activation, the -/- mice had higher expression levels of CD25 and CD137 (4-1BB) activation markers (Figure 3E). In parallel, higher PD-1 expression was detected on day 7 (Figure 3F), which in this experimental context was initially taken as an indicator of activation, but was later attributed to SAP deficiency in the SLAMF6 -/- lymphocytes (see below in Results and Figure 5A and B). PD-1 overexpression was also noted by Lu et al. in iNKT cells from SFR -/- mice (Lu et al., 2019). The expression of other SLAM family members and ligands (CD48, LY9, CD244, CD8+4, CD319) on T cells during activation was similar in Pmel-1 and Pmel-1 x SLAMF6 -/- cells (Figure 3—figure supplement 1D).
 
@@ -76,11 +92,19 @@ Lastly, we phenotyped the T cells following 3-day and 7-day activation to assess
 
 Pmel-1 x SLAMF6 -/- lymphocytes, generated to evaluate the effect of SLAMF6 on antigen-specific activated T cells, showed stronger activation and global acquisition of an effector phenotype. We attribute these results, in contrast to those previously obtained with lymphocytes from SLAMF6 -/- mice, to the role of SLAMF6 in the immune synapse, as the results could only be obtained if a synapse formation had been initiated via cognate TCRs.
 
-## Pmel-1 X SLAMF6 -/- T cells have a better functional capacity
+### Pmel-1 X SLAMF6 -/- T cells have a better functional capacity
 
 In the previous experiments, the effect of SLAMF6 deletion was evaluated in the activation and proliferation phases. To test if this superior activation also affects anti-tumor immunity, we characterized Pmel-1 x SLAMF6 -/- melanoma specific T cells in the effector phase.
 
 Comparing IFN-γ secretion in response to melanoma cells by Pmel-1 versus Pmel-1 x SLAMF6 -/- lymphocytes showed that cytokine production by the Pmel-1 x SLAMF6 -/- lymphocytes was significantly higher at all effector-to-target ratios (p=0.05, Figure 4A and B and Figure 4—figure supplement 1A and B). In addition to IFN-γ, higher secretion of GM-CSF and lower levels of IL-10 and IL-13 were measured in the SLAMF6 -/- T cells (Figure 4C and D). Since GM-CSF is a strong recruiter of innate immune cells, while IL-10 and IL-13 drive suppressor traits, this secretion profile supports autocrine and paracrine immune activation. mRNA data validated the secretion assays (Figure 4—figure supplement 1C). Importantly, Pmel-1 x SLAMF6 -/- T cells produced higher levels of granzyme B in response to melanoma compared to Pmel-1 T cells, which are already strong killers due to their TCR design (Figure 4E and F). These results indicate that in the absence of the SLAMF6 modulatory effect, even strong cytolysis can be further enhanced.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes were activated for 7 days with gp10025-33 peptide and IL-2 (30 IU/ml) and then incubated overnight with B16-F10/mhgp100 melanoma cells. (A) The cells were incubated at a 1:1 effector-to-target ratio. IFN-γ secretion was measured by ELISA. Each point represents one mouse. (B) The cells were incubated at the indicated effector-to-target ratios. IFN-γ secretion was measured by ELISA. (C) The cells were incubated at a 1:1 effector-to-target ratio. GM-CSF secretion was measured by ELISA. Each point represents one mouse. (D) Conditioned medium was collected and analyzed with Quantibody mouse cytokine array. (E, F) Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes were activated for 7 days with gp10025-33 peptide and IL-2 (30 IU/ml) and then incubated for 16 hr with B16-F10/mhgp100 melanoma cells. Granzyme-B expression was detected by flow cytometry. One representative experiment (E) and a summary of triplicates (F) are shown. (G–J) B16-F10/mhgp100 mouse melanoma cells were injected s.c. into the back of C57BL/6 mice. Pmel-1 or Pmel-1 x SLAMF6 -/- mouse splenocytes were expanded with gp10025-33 peptide in the presence of IL-2 (30 IU/ml). On day 7, Pmel-1 cells or Pmel-1 x SLAMF6 -/- cells were adoptively transferred i.v. into the irradiated tumor-bearing mice. N = 8 mice per group. Tumor size was measured three times a week. (G) Scheme of the experimental layout. (H) Spider plots showing tumor volume [calculated as L (length) x W (width)2 x 0.5]. CR, complete response. (I) Normalized tumor volume (Mean ± SEM) until day 45, on which the first mouse had to be sacrificed. Tumor dimensions were normalized to the 1st measurement. (J) Kaplan Meier survival curve. (K) Percent T cells specific for gp10025-33 peptide in the spleen or tumor draining lymph nodes (DLN) of mice sacrificed 7 days post-ACT. Tet, tetramer. Student t test. *, p<0.05, **, p<0.01, ***, p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes were activated for 7 days with gp10025-33 peptide and IL-2 (30 IU/ml). Cells were then incubated for 6 hr with B16-F10/mhgp100 melanoma cells. IFN-γ production was detected by flow cytometry. One representative experiment (A) and a summary of triplicates (B) are shown. (C) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were activated for 7 days and lysed. RNA was extracted and quantitative RT-PCR for cytokine expression was performed. Data were normalized to Hprt expression for each mouse strain. Pmel-1 x SLAMF6 -/- values for each gene were normalized to Pmel-1 values. (D) Photographs from days 42 and 58 post-tumor inoculation of a mouse that developed vitiligo following ACT with Pmel-1 x SLAMF6 -/- cells. Vitiligo spots are marked. (E) Immunohistochemistry staining of tumors from mice receiving ACT of Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes, harvested 7 days post-ACT. Tumor sections were stained with anti-CD8+ Ab (X20 magnification).
 
 To evaluate the antitumor activity of Pmel-1 x SLAMF6 -/- cells, we assessed adoptive cell transfer (ACT) of 7 day pre-activated gp100:25–33-specific, Pmel-1 or Pmel-1 x SLAMF6 -/- CD8+ T cells, transferred into mice bearing palpable B16-F10/mhgp100 melanoma in their back skin, followed by a 2-day course of intraperitoneal IL-2 (Figure 4G–J). The spider curves comparing melanoma growth following Pmel-1 versus Pmel-1 x SLAMF6 -/- T cell transfer revealed that in the first 4 weeks post-transfer, tumor growth was inhibited in both groups. However, on week 4, tumors treated with Pmel-1 ACT escaped control and grew again in six of the seven animals, whereas mice receiving Pmel-1 x SLAMF6 -/- ACT survived longer, and three of the seven treated mice remained tumor-free for over 80 days (Figure 4H). Vitiligo was noted in all mice attaining complete response, showing up earlier in the -/- group, at the 6th week, indicating the strength of the response (Figure 4—figure supplement 1D).
 
@@ -88,7 +112,7 @@ In a similar experiment, peptide-activated Pmel-1 CD8+ T cells or Pmel-1 x SLAMF
 
 In summary, melanoma-specific T cells lacking SLAMF6 showed improved functional capacity both in vitro and in vivo and induced longer lasting tumor remission with longer tumor control compared to their wild-type counterparts.
 
-## The contribution of cis and trans SLAMF6 interactions to CD8+ T cell function
+### The contribution of cis and trans SLAMF6 interactions to CD8+ T cell function
 
 SLAMF6 homotypic interactions may involve receptors on a same-cell population, in cis, or interactions in trans, between effector T cells and SLAMF6-expressing antigen-presenting targets. In Figure 2, we showed that aberrant presentation of SLAMF6 in trans on a melanoma target diminished T cell antitumor activity. Using the Pmel-1 x SLAMF6-/- CD8+ T cells, we then established matrices to determine the regulatory effect of SLAMF6 on the effector T cells and their antigen-presenting targets. SLAMF6-/- mice served as a source of APC devoid of SLAMF6, and peptide-loaded EL4 cells transduced to express SLAMF6 served as another SLAMF6-expressing APC (Figure 5B). Figure 5A shows that knocking-out SLAMF6 in peptide-pulsed APCs enhances the response of Pmel-1 T cells, attesting to the inhibitory effect of the trans positioning of SLAMF6. A modest increase in function was observed in the SLAMF6 -/- T cells compared to the WT T cells when cultured with WT APCs, attesting to the improvement in the absence of cis positioned SLAMF6. However, when SLAMF6-/- T cells were activated by SLAMF6-/- APCs, their cytokine secretion increased even more (p=0.001, Anova test). This finding suggests that not only the absence of SLAMF6 on the T cells improves their secretion capacity, but also SLAMF6-deficient APCs are inherently better. This observation was confirmed with the EL4 APCs (Figure 5C), which inhibited the WT Pmel-1 T cells, as expected, but surprisingly also inhibited the Pmel-1 x SLAMF6-/- CD8+ T cells, which were expected to be resistant to this effect.
 
@@ -98,9 +122,17 @@ SLAMF6 homotypic interactions may involve receptors on a same-cell population, i
 
 These results show that the inhibitory effect of SLAMF6 derives from both in cis and in trans interactions. However, the role of SLAMF6 on APCs warrants further investigation.
 
-## Mechanism associated with the inhibitory function of SLAMF6
+### Mechanism associated with the inhibitory function of SLAMF6
 
 The goal of the next series of experiments was to identify mechanisms underlying the improved effector function of Pmel-1 x SLAMF6 -/- lymphocytes. We initially evaluated the level of SAP, the primary adaptor required for SLAMF6 signaling, encoded by the Sh2d1a gene, which was intact in the SLAMF6 -/- mice (Figure 6A). SAP is a critical adaptor that recruits Fyn kinase to SLAMF6. However, while SAP transcript was found at similar levels in WT and SLAMF6 -/- lymphocytes, SAP protein was not detectable in SLAMF6 -/- cells (Figure 6B). The discrepancy between the transcript and the protein could be due to the rapid degradation of cytoplasmic SAP in its unbound form. SAP protein deficiency also implies that SLAMF6 is its major anchor in non-activated CD8+ T cells, even though SAP also mediates the inhibitory activity of PD-1 (Peled et al., 2018). As shown in Figure 3F, PD-1 expression is more than two-fold increased in 7 day activated Pmel-1 x SLAMF6 -/- lymphocytes compared to Pmel-1, but, as we have shown, this gap did not affect functionality. Thus, PD-1 overexpression can represent the failure of this receptor to generate a negative feedback loop in over-activated T cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig6-v2.jpg)
+
+**Figure 6.:** (A) RNA expression of Sh2d1a transcript (SAP) in WT and SLAMF6 -/- splenocytes. (B) Immunoblot analysis of expression of SLAMF6, SAP and SHP-1 in WT and SLAMF6 -/- splenocytes. (C) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were activated with gp10025-33 peptide for the indicated time points. At the end of the activation, cells were fixed and stained for phosphorylated S6. (D) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were either activated with gp10025-33 peptide in the presence of IL-2 (30 IU/ml) for 18 hr or kept only with IL-2 for 18 hr (non-activated). After 18 hr, the cells were lysed, RNA was extracted, and quantitative RT-PCR for transcription factors expression was performed. Data was normalized to Hprt expression for each mouse strain. Values for each condition were normalized to Pmel-1 non-activated values for each gene. (E) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were expanded with gp10025-33 peptide in the presence of IL-2 (30 IU/ml) for 7 days. After the expansion phase, the cells were kept for an additional 5 days without supplements. Expression of exhaustion markers was measured in Pmel-1 or Pmel-1 x SLAMF6 -/- splenocytes. (F) Pmel-1 and Pmel-1 x SLAMF6 -/- splenocytes were expanded with gp10025-33 peptide in the presence of IL-2 (30 IU/ml) and 10 μg/ml anti-LAG-3 or isotype control for 7 days, and then incubated overnight with B16-F10/mhgp100 melanoma cells at a 1:1 effector-to-target ratio. IFN-γ secretion was measured by ELISA. (G–I) B16-F10/mhgp100 mouse melanoma cells were injected s.c. into the back of C57BL/6 mice. Pmel-1 x SLAMF6 -/- mouse splenocytes were expanded with gp10025-33 peptide and IL-2 (30 IU/ml) in the presence of either Anti-Lag3 or Isotype control. On day 7, Isotype or Anti-Lag3 activated cells were adoptively transferred i.v. into the irradiated tumor-bearing mice. Anti-Lag3 or Isotype control were injected i.p. five times in the 2 weeks post-transfer. N = 5 mice per group. Tumor size was measured three times a week. (G) Scheme of the experimental layout. (H) Tumor volume (Mean ± SEM) until day 30 post-tumor inoculation. (I) Tumor volume on day 16 post-tumor inoculation. *, p<0.05, **, p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52539/elife-52539-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** After 18 hr, the cells were lysed, RNA was extracted, and quantitative RT-PCR for transcription factors expression was performed. Data was normalized to Hprt expression for each mouse strain. Values for each condition were normalized to Pmel-1 non-activated values for each gene.
 
 Next, we measured by flow cytometry the level of phosphorylated ribosomal protein S6 (rpS6), an integrator of important signaling pathways, including PI3K/AKT/mTOR and RAS-ERK (Figure 6C). No difference in phosphorylated rpS6 was found in the Pmel-1 x SLAMF6 -/- T cells.
 
@@ -134,33 +166,435 @@ In summary, we have shown that SLAMF6 is a constitutive inhibitory immune recept
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background Mus musculus Female)</td>
+      <td>C57BL/6</td>
+      <td>Harlan laboratories</td>
+      <td>C57BL/6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus Female)</td>
+      <td>Pmel-1</td>
+      <td>This paper</td>
+      <td>Pmel-1</td>
+      <td>Kind gift from M. Baniyash</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus Female)</td>
+      <td>SLAMF6 -/-</td>
+      <td>This paper</td>
+      <td>SLAMF6 -/-</td>
+      <td>Kind gift from I. Shachar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus Female)</td>
+      <td>Pmel-1 x SLAMF6 -/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Pmel-1 and SLAMF6-/- mice were bred to generate Pmel-1 X SLAMF6-/- mice according to the ethics requirements (Authority for biological and biomedical models, Hebrew University, Jerusalem, Israel).</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>SLAMF6</td>
+      <td>SINO biological</td>
+      <td>HG11945-UT</td>
+      <td>pCMV3-mSLAMF6</td>
+    </tr>
+    <tr>
+      <td>Cell line Mus musculus</td>
+      <td>B16-F10/mhgp100</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Kind gift from Ken-ichi Hanada, Surgery Branch, NCI, NIH</td>
+    </tr>
+    <tr>
+      <td>Cell line Mus musculus</td>
+      <td>EL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Kind gift from Lea Eisenbach, Weizmann Institute, Israel</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TIL412</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The cells were maintained in Lotem’s laboratory</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>PBMCs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Blood drawn from donors recruited from the Boston community as part of the Phenogenetic Project and ImmVar Consortium</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Rat anti mouse CD16/32 (93)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>101302</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti mouse SLAMF6 (330-AJ)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>134610</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse TNFα (MP6-XT22)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>506314</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD19 (6D5)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>115521</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD44 (IM7)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>103016</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti mouse TIM3 (RMT3-23)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>119706</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse LAG3 (C9B7W)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>125210</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD3 (145–2 C11)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>100302</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti human CD3 (UCHT1)</td>
+      <td>BD Biosciences, San Jose, CA</td>
+      <td>550368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti human CD28 (CD28.2)</td>
+      <td>BD Biosciences, San Jose, CA</td>
+      <td>556620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse IFNγ (XMG1.2)</td>
+      <td>Biogems, Westlake Village, CA</td>
+      <td>80812</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD8 (53–6.7)</td>
+      <td>Biogems, Westlake Village, CA</td>
+      <td>10122</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse GZMB (NGZN)</td>
+      <td>Biogems, Westlake Village, CA</td>
+      <td>72212</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD4 (GK1.5)</td>
+      <td>Biogems, Westlake Village, CA</td>
+      <td>06112</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD25 (PC61.5)</td>
+      <td>Biogems, Westlake Village, CA</td>
+      <td>07312</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD62L (MEL-14)</td>
+      <td>eBioscience, CA</td>
+      <td>25-0621-81</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti mouse Vb13 (MR12-3)</td>
+      <td>eBioscience, CA</td>
+      <td>17-5797-82</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Armenian hamster anti mouse CD69 (H1.2F3)</td>
+      <td>eBioscience, CA</td>
+      <td>14-0691-82</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Armenian hamster anti mouse CD279 (J43)</td>
+      <td>eBioscience, CA</td>
+      <td>12-9985-82</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse CD244 (eBio244F4)</td>
+      <td>eBioscience, CA</td>
+      <td>14-2441-82</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Syrian hamster anti mouse CD137 (17B5)</td>
+      <td>eBioscience, CA</td>
+      <td>12-1371-82</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal anti human SLAMF6 (REA339)</td>
+      <td>Miltenyi Biotec, Bergisch Gladbach, Germany</td>
+      <td>Cd352</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti pS6 (D57.2.2E)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>4858</td>
+      <td>0.2 μg/100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti mouse LAG-3 (C9B7W)</td>
+      <td>InVivoMab, BioXcell, NH</td>
+      <td>BE0174</td>
+      <td>10 μg/1 ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-Ly108 (3E11)</td>
+      <td>Merck, Kenilworth, NJ</td>
+      <td>MABF919</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-SAP (1A9)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>690702</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti b-actin (sc-47778)</td>
+      <td>Santa Cruz Biotechnology, TX</td>
+      <td>C4</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-SHP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1:1000 Generated in Andre’ Veillette laboratory</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti mouse CD4 (ab183685)</td>
+      <td>Abcam</td>
+      <td>EPR19514</td>
+      <td>For immunohistochemistry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti mouse CD8+ (ab203035)</td>
+      <td>Abcam</td>
+      <td>ab203035</td>
+      <td>For immunohistochemistry</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td></td>
+      <td></td>
+      <td>All primers are listed in the primers table in the Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MART-126–35</td>
+      <td>Biomer Technology, Cheshire, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>gp10025-33</td>
+      <td>Genscript biotech, NJ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IFN-γ ELISA</td>
+      <td>Biolegend</td>
+      <td>430801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GM-CSF ELISA</td>
+      <td>Biolegend</td>
+      <td>432201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GenElute Mammalian Total RNA kit</td>
+      <td>Sigma Aldrich, MA</td>
+      <td>RTN70</td>
+      <td>RNA production</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA Synthesis kit</td>
+      <td>Quantabio, Beverly, MA</td>
+      <td>95047</td>
+      <td>RNA transformed to cDNA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy 96 kit</td>
+      <td>Qiagen, Hilden, Germany</td>
+      <td>74181</td>
+      <td>RNA production</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Annexin V apoptosis detection kit</td>
+      <td>eBioscience</td>
+      <td>88-8007-74</td>
+      <td>Survival assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CD8 T cell isolation kit</td>
+      <td>Stemcell technologies, Vancouver, CA</td>
+      <td>EasySep 19853A</td>
+      <td>CD8 isolation from total splenocytes</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantibody mouse cytokine array</td>
+      <td>RayBiotech, Peachtree Corners, GA</td>
+      <td>QAM-CYT-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IL-2</td>
+      <td>Chiron, CA</td>
+      <td>recombinant human IL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FCS express five flow research edition</td>
+      <td>De Novo software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellSens Entry 1.8</td>
+      <td>Olympus Life Science</td>
+      <td></td>
+      <td>Acquisition software for immunohistochemistry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>lyse/fix buffer</td>
+      <td>BD Biosciences</td>
+      <td>Cat: 558049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PermII buffer</td>
+      <td>BD Biosciences</td>
+      <td>Cat: 558052</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 pCMV3-mSLAMF6 and pCMV3-negative control vectors were purchased from SINO Biological Inc, Eschborn, Germany.
 
-## Cells
+### Cells
 
-## Melanoma cells
+#### Melanoma cells
 
 Mouse melanoma B16-F10/mhgp100 cells (B16-F10 melanoma cells transduced with pMSGV1 retrovirus, which encodes a chimeric mouse gp100 with the human gp10025-33 sequence) were a kind gift from Ken-ichi Hanada, Surgery Branch, NCI, NIH. The cells were cultured in RPMI 1640 supplemented with 10% heat-inactivated fetal calf serum (FCS), 2 mmol/L L-glutamine, and combined antibiotics (all from ThermoFisher Scientific, MA). Lines were regularly tested and were mycoplasma free.
 
-## EL4 cells
+#### EL4 cells
 
 EL4 cells, a thymoma cell line derived from a C57BL/6 (H-2b) mouse, were a kind gift from Lea Eisenbach, Weizmann Institute, Israel. The cells were cultured in RPMI 1640 supplemented with 10% heat-inactivated fetal calf serum (FCS), 2 mmol/L L-glutamine, and combined antibiotics (all from ThermoFisher Scientific, MA). Lines were regularly tested and were mycoplasma free.
 
-## Aberrant LY108 expression on melanoma and EL4 cells
+#### Aberrant LY108 expression on melanoma and EL4 cells
 
 The B16-F10/mhgp100 murine melanoma cell line and EL4 cells were transfected with pCMV3—hygromycin-mSLAMF6 using lipofectamine 2000 (ThermoFisher). Hygromycin-resistant cells were sub-cloned, and the stably transfected cells were labeled with anti-LY108 Ab and sorted in an ARIA-III sorter. B16-F10/mhgp100 cells and EL4 cells transfected with the empty vector were sub-cloned using hygromycin resistance.
 
-## Tumor-infiltrating lymphocytes (TILs)
+#### Tumor-infiltrating lymphocytes (TILs)
 
 Fresh tumor specimens taken from resected metastases of melanoma patients were used to release TILs using a microculture assay (Lotem et al., 2002). Human lymphocytes were cultured in complete medium (CM) consisting of RPMI 1640 supplemented with 10% heat-inactivated human AB serum, 2 mmol/l L-glutamine, 1 mmol/l sodium pyruvate, 1% nonessential amino acids, 25 mmol/l HEPES (pH 7.4), 50 μmol/l 2-ME, and combined antibiotics (all from ThermoFisher). CM was supplemented with 6000 IU/ml recombinant human IL-2 (rhIL-2, Chiron, CA).
 
-## Cloning of peptide-specific TILs
+#### Cloning of peptide-specific TILs
 
 On day 14 after TIL initiation, lymphocytes were washed with PBS, re-suspended in PBS supplemented with 0.5% bovine serum albumin (BSA), and stained with FITC-conjugated HLA-A*0201/MART-126–35 dextramer (Immudex, Copenhagen Denmark) for 30 min at 4°C. Lymphocytes were then incubated with allophycocyanin-conjugated mouse anti-human CD8+ (eBioscience, CA) for an additional 30 min at 4°C and washed. CD8+ lymphocytes, positively stained with the dextramer (CD8+dextramer+ cells), were sorted with a BD Biosciences FACS Aria and directly cloned at one or two cells per well in 96-well plates in the presence of 30 ng/ml anti CD3 (eBioscience), 6000 IU/ml rhIL-2, and 4 Gy-irradiated 5 × 104 allogeneic PBMCs as feeder cells. Five days later, 6000 IU/ml rhIL-2 was added and renewed every 2 days after that. On day 14, the clones were assayed for IFN-γ secretion in a peptide-specific manner following their co-incubation with T2 cells pulsed with MART-126–35 (commercially synthesized and purified [>95%] by reverse-phase HPLC by Biomer Technology, Cheshire, UK) by ELISA (R and D Systems, Minneapolis, MN). The MART-126–35–-reactive clones were further expanded in a second-round of exposure to 30 ng/ml anti-CD3, and 6000 IU/ml rhIL-2 in the presence of 50-fold excess irradiated feeder cells.
 
-## Antibodies
+### Antibodies
 
 For flow cytometry, cells were labeled with the following reagents: anti-CD16/32 (93), anti-SLAMF6 (330-AJ), anti-TNFa (MP6-XT22), anti-CD19 (6D5), anti-CD44 (IM7), anti-TIM3 (RMT3-23), and anti-LAG-3 (C9B7W) (all from Biolegend, San Diego, CA). Anti-IFN-ɣ (XMG1.2), anti-CD8+ (53–6.7), anti-GZMB (NGZN), anti-CD4 (GK1.5), and anti-CD25 (PC61.5) were from Biogems. Anti-CD62L (MEL-14), anti-Vb13 (MR12-3), anti-CD69 (H1.2F3), anti-CD137 (17B5), anti-PD1 (J43), and anti-CD244 (eBio244F4) were from eBioscience. Anti-human SLAMF6 (REA) was purchased from Miltenyi Biotec, Bergisch Gladbach, Germany. Anti-pS6 (D57.2.2E) was from Cell Signaling Technology, Danvers, MA.
 
@@ -168,7 +602,7 @@ Anti-LAG-3 (C9B7W) and the corresponding isotype were from InVivoMab, BioXcell, 
 
 For Immunobloting: anti-Ly108 (Rat, 3E11, Merck, Kenilworth, NJ), anti-SAP (Rat, 1A9, Biolegend), anti-β actin (Mouse, sc-47778, Santa Cruz Biotechnology, TX), anti-SHP1 (Rabbit, generated in A.V.’s laboratory).
 
-## Mice
+### Mice
 
 C57BL/6 mice were purchased from Harlan laboratories. Pmel-1 (a kind gift from M. Baniyash) and SLAMF6 -/- mice (a kind gift from I. Shachar) were self-bred.
 
@@ -180,81 +614,183 @@ Generation of Pmel-1 x SLAMF6 -/- mice. Pmel-1 and SLAMF6-/- mice were bred to
 
 When the mice reached 3 weeks of age, 2 mm of the mouse tail were cut, 200 µl 50 mM NaOH 0.2 Mm EDTA were added, and the tails were incubated at 95°C for 20 min for DNA purification. 200 µl 80 mM TRIS-HCL, pH5, were added to stop the reaction. The DNA purified from the tails was used in PCR reactions for genotyping of mice in the SLAMF6 locus on chromosome 1 (primers adapted from the Jackson laboratories website) and in the Pmel-1 locus on chromosome 2 (Ji et al., 2014). The identification of the genomic insertion site of the Pmel-1 TCR α and β transgenes was performed by next-generation sequencing.
 
-## Splenocyte activation
+### Splenocyte activation
 
 Pmel-1 or Pmel-1xSLAMF6-/- mouse splenocytes (2 × 106/ml) were activated with 1 µg/ml of mouse gp10025-33 peptide for 6 days with IL-2 30 IU/ml. Fresh medium containing IL-2 was added every other day.
 
-## In vitro assays
+### In vitro assays
 
 RNA isolation and qPCR. RNA was isolated from cells using the GenElute Mammalian Total RNA kit (Sigma Aldrich, MA) according to the manufacturer’s protocol. RNA was then transcribed to cDNA using qScript cDNA Synthesis kit (Quantabio, Beverly, MA) according to the manufacturer’s instructions, and RT-PCT or qRT-PCR was performed using the following primers:
 
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human SLAMF6</td>
+      <td>CTGTTCCAATCGCTCCTGTT</td>
+      <td>GGGGTTAAGCTGCTTTGTGA</td>
+    </tr>
+    <tr>
+      <td>Human HPRT</td>
+      <td>GAGGATTTGGAAAGGGTGTTT</td>
+      <td>CATCTCGAGCAAGACGTTCA</td>
+    </tr>
+    <tr>
+      <td>Mouse Sh2d1a</td>
+      <td>AAAATCAGCAGGGAGACCG</td>
+      <td>TCAACTGGATACTGCAGAGG</td>
+    </tr>
+    <tr>
+      <td>Mouse IL10</td>
+      <td>GGACAACATACTGCTAACCGAC</td>
+      <td>CACTTCTACCAGGTAAAACTGG</td>
+    </tr>
+    <tr>
+      <td>Mouse IL13</td>
+      <td>TTAAGGAGCTTATTGAGGA</td>
+      <td>GTCCACACTCCATACCAT</td>
+    </tr>
+    <tr>
+      <td>Mouse Blimp1</td>
+      <td>TTCAAGCCGAGGCATCCTTA</td>
+      <td>CCTTCGGTATGTACTCCTTAC</td>
+    </tr>
+    <tr>
+      <td>Mouse Eomes</td>
+      <td>ACCGGCACCAAACTGAGA</td>
+      <td>AAGCTCAAGAAAGGAAACATGC</td>
+    </tr>
+    <tr>
+      <td>Mouse Fos</td>
+      <td>CGGGTTTCAACGCCGACTA</td>
+      <td>TTGGCACTAGAGACGGACAGA</td>
+    </tr>
+    <tr>
+      <td>Mouse Jun</td>
+      <td>CCAGAAGATGGTGTGGTGTTT</td>
+      <td>CTGACCCTCTCCCCTTGC</td>
+    </tr>
+    <tr>
+      <td>Mouse Tbx21</td>
+      <td>AGGGGGCTTCCAACAATG</td>
+      <td>AGACGTGTGTGTTAGAAGCACTG</td>
+    </tr>
+    <tr>
+      <td>Mouse TCF7</td>
+      <td>CAAGGCAGAGAAGGAGGCTAAG</td>
+      <td>GGCAGCGCTCTCCTTGAG</td>
+    </tr>
+    <tr>
+      <td>Mouse NFATc1</td>
+      <td>CAGTTATGTGTCCCCTAGTGT</td>
+      <td>GGATGATTGGCTGAAGGAA</td>
+    </tr>
+    <tr>
+      <td>Mouse PRDM</td>
+      <td>AAGTTTCAAGGACTGGCAGA</td>
+      <td>GGTGGTCGTTCACTATGTAT</td>
+    </tr>
+    <tr>
+      <td>Mouse Egr2</td>
+      <td>TTTGACCAGATGAACGGAGT</td>
+      <td>CTGGTTTCTAGGTGCAGAGA</td>
+    </tr>
+    <tr>
+      <td>Mouse Batf</td>
+      <td>AAGAGCCGACAGAGACAGA</td>
+      <td>TTTCTCCAGGTCCTCACTCT</td>
+    </tr>
+    <tr>
+      <td>Mouse Gata3</td>
+      <td>AACATCGATGGTCAAGGCAACC</td>
+      <td>GTGGGTCGGAGGATACCTCT</td>
+    </tr>
+    <tr>
+      <td>Mouse Foxp3</td>
+      <td>TACAGTGCCCCTAGTCATGGT</td>
+      <td>ATGGGCATCCACAGTGGAG</td>
+    </tr>
+    <tr>
+      <td>Mouse HPRT</td>
+      <td>GCCGAGGATTTGGAAAAAGTG</td>
+      <td>GCCTCCCATCTCCTTCATGAC</td>
+    </tr>
+  </tbody>
+</table>
+
 RT-PCR for Sh2d1a was performed in the SensQuest lab cycler machine (Danyel Biotech); the products were then run on 1.5% agarose gel.
 
-## Longitudinal expression of SLAMF6
+#### Longitudinal expression of SLAMF6
 
 TIL412 was activated using plate-bound anti-CD3 1 µg/ml supplemented with IL-2. On every other day, 1 × 105 cells were stained in triplicates to evaluate SLAMF6 expression using anti-SLAMF6 (Miltenyi Biotec) or the corresponding isotype control. Pmel-1 splenocytes were activated using 1 µg/ml mouse gp10025-33 peptide supplemented with 30 IU/ml IL-2 for 6 days, and SLAMF6 expression was tested at the indicated time points using anti-SLAMF6 (Biolegend, clone 330-AJ).
 
-## RNA sequencing of activated CD4 cells
+#### RNA sequencing of activated CD4 cells
 
 Human PBMCs were isolated by Ficoll-Paque (GE Healthcare Life Sciences, Pittsburgh, PA) centrifugation from blood drawn from donors recruited from the Boston community as part of the Phenogenetic Project and ImmVar Consortium. Naive CD4 T cells were isolated from PBMCs by negative selection using the human Naive CD4+ T Cell Isolation Kit II (Miltenyi Biotec). The isolation was >97% pure as assessed by flow cytometry. For each condition, 50,000 T cells were used. Beads used for cell stimulation were generated by incubating 4 × 106 CELLection Pan Mouse IgG beads (ThermoFisher) with antibodies (BD Biosciences, San Jose, CA) against CD3 (UCHT1; 10.67 ng) and CD28 (CD28.2; 5.33 ng) complemented to 20 ng total protein with control IgG1 (MOPC-31C) for CD3/CD28 stimulation at the following time points: 0, 3, 6, 12, 24, and 72 hr. RNA for sequencing was isolated using an RNeasy 96 kit (Qiagen, Hilden, Germany), treated with DNase I (New England Biolabs, Ipswich, MA), and converted to sequencing libraries using the Smartseq2 protocol (Picelli et al., 2014). Libraries were sequenced on a Novaseq S2 (Illumina, San Diego, CA) with paired-end 50 bp reads. (Donors ID: Donor A – IGTB3, Donor B – IGTB968).
 
-## RNA sequencing results analysis
+#### RNA sequencing results analysis
 
 We used Bowtie v1.0.0 to align raw data to the UCSC hg19 transcriptome and RSEM v1.2.8 to quantify gene expression levels (TPM – transcripts per million). Immune-related genes were selected from the RNA sequencing results based on a unified list of genes created from the Immunogenetic Related Information Source (IRIS) list and the MAPK/NFKB Network list (https://www.innatedb.com/redirect.do?go=resourcesGeneLists).
 
 For the immune-related genes, heatmaps were generated using the Morpheus online tool (https://software.broadinstitute.org/morpheus/).
 
-## Intracellular cytokine staining
+#### Intracellular cytokine staining
 
 Mouse splenocytes (1 × 105) were co-cultured for 6 hr at 37°C at a 1:1 ratio with the indicated target melanoma cells or activated with 1 µg/ml anti-CD3 (Biolegend, clone: 145–2 C11). After 2 hr, Brefeldin A (Biolegend) was added (1:1000). After incubation the cells were washed twice with PBS and stained with anti-CD8+ (Biogems) for 30 min at room temperature. Following fixation and permeabilization (eBioscience protocol), intracellular IFN-γ and TNF-α were labeled with anti- IFN-ɣ and anti- TNF-α antibodies, respectively (TNF-α, clone: MP6-XT22, Biolegend, and IFN-ɣ, clone: XMG1.2, Biogems) for 30 min at room temperature. Cells were washed with permeabilization buffer, resuspended in FACS buffer, and subjected to flow cytometry.
 
-## Intracellular staining for phosphorylated proteins
+#### Intracellular staining for phosphorylated proteins
 
 For intracellular staining of phosphorylated proteins, cells were activated for different times, fixed with lyse/fix buffer (BD Biosciences), permeabilized with Perm II buffer (BD Biosciences) and stained with fluorescence-labeled antibodies against pS6 (Cell Signaling, D57.2.2E) in stain buffer (BD Biosciences).
 
-## Cell viability assay
+#### Cell viability assay
 
 Following expansion, splenocytes were washed, and 1 × 105 cells were cultured in CM. After 7 days, cells were washed and labeled with the Annexin V apoptosis detection kit (eBioscience), according to the manufacturer's instructions. Cells were analyzed by flow cytometry.
 
-## Proliferation assay
+#### Proliferation assay
 
 Fresh splenocytes were labeled with CFSE (Quah et al., 2007) and activated as described above. At the indicated days, cells were counted, labeled with anti-CD8+ Ab (Biogems, clone: 53–6.7), and subjected to flow cytometry.
 
-## Co-culture of T cells with splenocytes
+#### Co-culture of T cells with splenocytes
 
 Mouse CD8+ T cells were separated using Mouse CD8+ T cell isolation kit (EasySep 19853A, Stemcell Technologies, Vancouver, CA) and 1 × 105 cells were co-cultured overnight at the indicated ratios with non-T-splenocytes. Conditioned medium was collected, and mouse IFN-γ secretion was detected by ELISA (Biolegend).
 
-## Interferon-gamma secretion
+#### Interferon-gamma secretion
 
 Mouse splenocytes, previously activated for 7 days, were co-cultured (1 × 105) overnight at a 1:1 ratio with the indicated target cells or activated with 1 µg/ml plate-bound anti -CD3 (Biolegend, clone: 145–2 C11) as indicated in each experiment. Conditioned medium was collected, and mouse IFN-γ secretion was detected by ELISA (Biolegend).
 
-## GM-CSF secretion
+#### GM-CSF secretion
 
 Mouse splenocytes, previously activated for 7 days, were co-cultured (1 × 105) overnight at a 1:1 ratio with the indicated target melanoma cells. Conditioned medium was collected, and mouse GM-CSF secretion was measured by ELISA (Biolegend).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 For histological analysis, spleen and tumor tissues were cut into 5 µm sections, deparaffinized with xylene, and hydrated with graded ethanol. Endogenous peroxidase was blocked using 3% H2O2 for 5 min. and 0.01M citrate buffer (pH 6.0) was used for antigen retrieval. The samples were cooked in a pressure cooker at maximum power for 13 min and then at 40% power for an additional 15 min, and left to cool for 30 min until they reached room temperature. All slides were then washed in PBS and blocked for 30 min with CAS block at room temperature. The tissues were incubated with rabbit anti-CD4 Ab (ab183685) or rabbit anti-CD8+ Ab (ab203035) diluted in CAS-Block (1:1000 or 1:250, respectively) overnight at 4°C. The following day, the slides were washed in PBS, incubated with Dako anti-rabbit secondary antibody for 30 min and developed with AEC for 10 min. After several washes in PBS and dH2O, the slides were counterstained with hematoxylin, rinsed in H2O, and covered with fluoromount (ThermoFisher) and a cover-slip. The photos were taken with an Olympus BX50 microscope and Olympus DP73 camera at room temperature. The acquisition software used was CellSens Entry 1.8.
 
-## Killing assay
+#### Killing assay
 
 Splenocytes were co-cultured for 19 hr at 37°C at a 1:1 ratio with the indicated target melanoma cells. After 16 hr, Brefeldin A (Biolegend) was added (1:1000). At the end of the incubation, the cells were washed twice with PBS and stained with aCD8+ (Biogems, clone 53–6.7) for 30 min at room temperature. Following fixation and permeabilization (eBioscience protocol), intracellular granzyme-B was labeled with anti-GzmB antibody (Biogems, clone: NGZB) for 30 min at RT. Cells were washed with permeabilization buffer, resuspended in FACS buffer, and subjected to flow cytometry.
 
-## Cytokine array
+#### Cytokine array
 
 Day seven activated mouse splenocytes were co-cultured (1 × 105) overnight at a 2:1 ratio with the B16-F10/mhgp100 melanoma cells. Conditioned medium was collected and used in the Quantibody mouse cytokine array (QAM-CYT-1, RayBiotech, Peachtree Corners, GA).
 
-## Immunobloting
+#### Immunobloting
 
 Cells were lysed using RIPA buffer, and protein concentrations were tested using Bradford quantification. Equal concentrations of lysates were resuspended in SDS sample buffer (250 mM Tris-HCl [pH 6.8], 5% w/v SDS, 50% glycerol, and 0.06% w/v bromophenol blue) for 5 min at 95°C. Proteins were separated by SDS PAGE and transferred to a PVDF membrane. Membranes, blocked with 1% milk solution, were incubated with primary antibodies overnight at 4°C, followed by incubation with HRP-conjugated secondary antibodies for 1 hr at RT (Jackson ImmunoResearch Laboratories). Signals were detected by enhanced chemiluminescence reagents (Clarity Western ECL Substrate, BioRad, Hercules, CA).
 
-## Flow cytometry
+#### Flow cytometry
 
 After blocking Fc receptors with anti-CD16/CD32 antibody, cells were stained with antibodies or tetramers on ice or at room temperature for 25 min, according to the manufacturer’s instructions.
 
 Subsequently, cells were washed and analyzed using CytoFlex (Beckman Coulter, CA), and flow cytometry-based sorting was done in an ARIA-III sorter. Flow cytometry analysis was done using FCS express five flow research edition (De Novo software).
 
-## In vivo assays
+### In vivo assays
 
 Adoptive cell transfer experiments:
 

@@ -27,27 +27,27 @@
 
 ### Affiliations
 
-1. https://ror.org/05v5hg569 Infectious Disease Epidemiology Group, Weill Cornell Medicine-Qatar, Cornell University Doha Qatar
-2. https://ror.org/01cawbq05 World Health Organization Collaborating Centre for Disease Epidemiology Analytics on HIV/AIDS, Sexually Transmitted Infections, and Viral Hepatitis, Weill Cornell Medicine-Qatar, Cornell University, Qatar Foundation – Education City Doha Qatar
-3. https://ror.org/02r109517 Department of Population Health Sciences, Weill Cornell Medicine, Cornell University New York United States
-4. https://ror.org/00yhnba62 Mathematics Program, Department of Mathematics and Statistics, College of Arts and Sciences, Qatar University Doha Qatar
-5. https://ror.org/00yhnba62 Department of Biomedical Science, College of Health Sciences, QU Health, Qatar University Doha Qatar
-6. https://ror.org/02zwb6n98 Hamad Medical Corporation Doha Qatar
-7. https://ror.org/00hswnk62 Wellcome-Wolfson Institute for Experimental Medicine, Queens University Belfast United Kingdom
+1. Infectious Disease Epidemiology Group, Weill Cornell Medicine-Qatar, Cornell University Doha Qatar ([ROR:05v5hg569](https://ror.org/05v5hg569))
+2. World Health Organization Collaborating Centre for Disease Epidemiology Analytics on HIV/AIDS, Sexually Transmitted Infections, and Viral Hepatitis, Weill Cornell Medicine-Qatar, Cornell University, Qatar Foundation – Education City Doha Qatar ([ROR:01cawbq05](https://ror.org/01cawbq05))
+3. Department of Population Health Sciences, Weill Cornell Medicine, Cornell University New York United States ([ROR:02r109517](https://ror.org/02r109517))
+4. Mathematics Program, Department of Mathematics and Statistics, College of Arts and Sciences, Qatar University Doha Qatar ([ROR:00yhnba62](https://ror.org/00yhnba62))
+5. Department of Biomedical Science, College of Health Sciences, QU Health, Qatar University Doha Qatar ([ROR:00yhnba62](https://ror.org/00yhnba62))
+6. Hamad Medical Corporation Doha Qatar ([ROR:02zwb6n98](https://ror.org/02zwb6n98))
+7. Wellcome-Wolfson Institute for Experimental Medicine, Queens University Belfast United Kingdom ([ROR:00hswnk62](https://ror.org/00hswnk62))
 8. Department of Pathology, Sidra Medicine Doha Qatar
-9. https://ror.org/02fa3aq29 Department of Pathology and Molecular Medicine, McMaster University Hamilton Canada
-10. https://ror.org/00yhnba62 Biomedical Research Center, QU Health, Qatar University Doha Qatar
-11. https://ror.org/00yhnba62 Department of Public Health, College of Health Sciences, QU Health, Qatar University Doha Qatar
+9. Department of Pathology and Molecular Medicine, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
+10. Biomedical Research Center, QU Health, Qatar University Doha Qatar ([ROR:00yhnba62](https://ror.org/00yhnba62))
+11. Department of Public Health, College of Health Sciences, QU Health, Qatar University Doha Qatar ([ROR:00yhnba62](https://ror.org/00yhnba62))
 12. Primary Health Care Corporation Doha Qatar
-13. https://ror.org/00g5s2979 Ministry of Public Health Doha Qatar
-14. https://ror.org/02r109517 Department of Medicine, Weill Cornell Medicine, Cornell University New York United States
-15. https://ror.org/03eyq4y97 College of Health and Life Sciences, Hamad bin Khalifa University Doha Qatar
+13. Ministry of Public Health Doha Qatar ([ROR:00g5s2979](https://ror.org/00g5s2979))
+14. Department of Medicine, Weill Cornell Medicine, Cornell University New York United States ([ROR:02r109517](https://ror.org/02r109517))
+15. College of Health and Life Sciences, Hamad bin Khalifa University Doha Qatar ([ROR:03eyq4y97](https://ror.org/03eyq4y97))
 
 † Corresponding author
 
 ## Abstract
 
-This study investigated the presence of the healthy vaccinee effect—the imbalance in health status between vaccinated and unvaccinated individuals—in two rigorously conducted COVID-19 vaccine effectiveness studies involving primary series and booster vaccinations. It also examined the temporal patterns and variability of this effect across different subpopulations by analyzing the association between COVID-19 vaccination and non-COVID-19 mortality in Qatar. Two matched, retrospective cohort studies assessed the incidence of non-COVID-19 death in national cohorts of individuals with a primary series vaccination versus no vaccination (two-dose analysis), and individuals with three-dose (booster) vaccination versus primary series vaccination (three-dose analysis), from January 5, 2021, to April 9, 2024. The adjusted hazard ratio (aHR) for non-COVID-19 death was 0.76 (95% CI: 0.64–0.90) in the two-dose analysis and 0.85 (95% CI: 0.67–1.07) in the three-dose analysis. In the first 6 months of follow-up in the two-dose analysis, the aHR was 0.35 (95% CI: 0.27–0.46); however, the combined analysis of all subsequent periods showed an aHR of 1.52 (95% CI: 1.19–1.94). In the first 6 months of follow-up in the three-dose analysis, the aHR was 0.31 (95% CI: 0.20–0.50); however, the combined analysis of all subsequent periods showed an aHR of 1.37 (95% CI: 1.02–1.85). The overall effectiveness of the primary series and third-dose vaccinations against severe, critical, or fatal COVID-19 was 95.9% (95% CI: 94.0–97.1) and 34.1% (95% CI: –46.4–76.7), respectively. Subgroup analyses showed that the healthy vaccinee effect is pronounced among those aged 50 years and older and among those more clinically vulnerable to severe COVID-19. A pronounced healthy vaccinee effect was observed during the first 6 months following vaccination, despite meticulous cohort matching. This effect may have stemmed from a lower likelihood of vaccination among seriously ill, end-of-life individuals, and less mobile elderly populations. Biomedical Research Program and the Biostatistics, Epidemiology, and Biomathematics Research Core, and Junior Faculty Transition to Independence Program, all at Weill Cornell Medicine-Qatar, Qatar University, Ministry of Public Health, Hamad Medical Corporation, Sidra Medicine, Qatar Genome Programme, Qatar University Biomedical Research Center, and L’Oréal-UNESCO For Women In Science Middle East Regional Young Talents Program.
+Background:This study investigated the presence of the healthy vaccinee effect—the imbalance in health status between vaccinated and unvaccinated individuals—in two rigorously conducted COVID-19 vaccine effectiveness studies involving primary series and booster vaccinations. It also examined the temporal patterns and variability of this effect across different subpopulations by analyzing the association between COVID-19 vaccination and non-COVID-19 mortality in Qatar.Methods:Two matched, retrospective cohort studies assessed the incidence of non-COVID-19 death in national cohorts of individuals with a primary series vaccination versus no vaccination (two-dose analysis), and individuals with three-dose (booster) vaccination versus primary series vaccination (three-dose analysis), from January 5, 2021, to April 9, 2024.Results:The adjusted hazard ratio (aHR) for non-COVID-19 death was 0.76 (95% CI: 0.64–0.90) in the two-dose analysis and 0.85 (95% CI: 0.67–1.07) in the three-dose analysis. In the first 6 months of follow-up in the two-dose analysis, the aHR was 0.35 (95% CI: 0.27–0.46); however, the combined analysis of all subsequent periods showed an aHR of 1.52 (95% CI: 1.19–1.94). In the first 6 months of follow-up in the three-dose analysis, the aHR was 0.31 (95% CI: 0.20–0.50); however, the combined analysis of all subsequent periods showed an aHR of 1.37 (95% CI: 1.02–1.85). The overall effectiveness of the primary series and third-dose vaccinations against severe, critical, or fatal COVID-19 was 95.9% (95% CI: 94.0–97.1) and 34.1% (95% CI: –46.4–76.7), respectively. Subgroup analyses showed that the healthy vaccinee effect is pronounced among those aged 50 years and older and among those more clinically vulnerable to severe COVID-19.Conclusions:A pronounced healthy vaccinee effect was observed during the first 6 months following vaccination, despite meticulous cohort matching. This effect may have stemmed from a lower likelihood of vaccination among seriously ill, end-of-life individuals, and less mobile elderly populations.Funding:Biomedical Research Program and the Biostatistics, Epidemiology, and Biomathematics Research Core, and Junior Faculty Transition to Independence Program, all at Weill Cornell Medicine-Qatar, Qatar University, Ministry of Public Health, Hamad Medical Corporation, Sidra Medicine, Qatar Genome Programme, Qatar University Biomedical Research Center, and L’Oréal-UNESCO For Women In Science Middle East Regional Young Talents Program.
 
 ## Introduction
 
@@ -63,7 +63,7 @@ In this national retrospective cohort study, the presence of the indication or h
 
 ## Methods
 
-## Study population and data sources
+### Study population and data sources
 
 This study was conducted among the resident population of Qatar from January 5, 2021, which marks the earliest record of a completed COVID-19 primary series vaccination, to April 9, 2024, the study’s end date. Data on COVID-19 laboratory testing, vaccination, hospitalization, and death were retrieved from the integrated, nationwide digital health information platform (Section S1 in Supplementary Appendix). Deaths not related to COVID-19 were sourced from the national federated mortality database, which captures all deaths in the country, occurring in healthcare facilities and elsewhere, including forensic deaths investigated by Qatar’s Ministry of Interior.
 
@@ -71,13 +71,13 @@ The national digital health information platform includes all SARS-CoV-2-related
 
 Demographic information was obtained from the national health registry. Qatar’s demographic composition is distinct, with only 9% of the population aged 50 years or older and 89% being resident expatriates from over 150 countries (Abu-Raddad et al., 2021a). Further details on Qatar’s population and COVID-19 databases have been previously published (Chemaitelly et al., 2021b; Altarawneh et al., 2022b; Chemaitelly et al., 2023e; Abu-Raddad et al., 2021a; AlNuaimi et al., 2023; Chemaitelly et al., 2021a).
 
-## COVID-19 vaccination
+### COVID-19 vaccination
 
 COVID-19 vaccination in Qatar was predominantly conducted using mRNA vaccines and adhered to United States Food and Drug Administration-approved protocols throughout the pandemic (Chemaitelly et al., 2021b; Altarawneh et al., 2022b). Vaccines were provided free of charge to all individuals, regardless of citizenship status, exclusively through the public healthcare system (Chemaitelly et al., 2021b; Altarawneh et al., 2022b). The immunization campaign was launched on December 21, 2020, with the BNT162b2 vaccine (Polack et al., 2020), and 3 months later, the mRNA-1273 vaccine (Baden et al., 2021) was added. Most primary series vaccinations were administered in 2021 due to the rapid scale-up of mass vaccination efforts (Figure 1—figure supplement 1A).
 
 The vaccine rollout was implemented in phases, prioritizing frontline healthcare workers, individuals with severe or multiple chronic conditions, and those aged ≥70 years (Chemaitelly et al., 2021b). Vaccination was subsequently extended to select professional groups, such as teachers, and then to the general population, beginning with individuals aged 50 years or older (Chemaitelly et al., 2021b). Age served as the primary eligibility criterion throughout the campaign (Chemaitelly et al., 2021b). Booster vaccinations were introduced in the fall of 2021, following a similar prioritization plan (Figure 1—figure supplement 1B; Abu-Raddad et al., 2022a). However, with the increased availability of vaccine doses, eligibility for boosters was rapidly expanded to include all adults.
 
-## Study design
+### Study design
 
 Two national, matched, retrospective cohort studies were conducted to investigate the potential for indication effect or healthy vaccinee effect influencing estimated effectiveness of COVID-19 primary series (two-dose) and booster (three-dose) vaccinations in Qatar’s population. Given the objective of exploring these effects, the studies were designed as vaccine effectiveness studies, adhering to cohort designs developed and implemented in Qatar’s population since the pandemic’s onset (Abu-Raddad et al., 2022a; Abu-Raddad et al., 2021b; Chemaitelly et al., 2022b; Chemaitelly et al., 2023a; Chemaitelly et al., 2023d; Chemaitelly et al., 2023c; Mahmoud et al., 2023).
 
@@ -85,7 +85,7 @@ The healthy vaccinee effect was defined as a bias in vaccine effectiveness studi
 
 In the first study (two-dose analysis), the incidence of non-COVID-19 death in the national cohort of individuals who received the primary series vaccination (designated as the two-dose cohort) was compared with that in the national cohort of unvaccinated individuals (designated as the unvaccinated cohort). In the second study (three-dose analysis), the incidence of non-COVID-19 death in the national cohort of individuals who received a third (booster) dose of vaccination (designated as the three-dose cohort) was compared with that in the two-dose cohort. For both studies, vaccine effectiveness was also estimated by comparing the incidence of SARS-CoV-2 infection and of severe forms of COVID-19 between the study cohorts.
 
-## Severe, critical, and fatal COVID-19
+### Severe, critical, and fatal COVID-19
 
 Severe forms of COVID-19 were classified by trained medical personnel independent of the study investigators (AlNuaimi et al., 2023; Chemaitelly et al., 2023e; Chemaitelly et al., 2023b). The classifications were based on individual chart reviews, adhering to the World Health Organization (WHO) guidelines for defining COVID-19 case severity (acute care hospitalization) (World Health Organization, 2023b), criticality (intensive care unit hospitalization) (World Health Organization, 2023b), and fatality (World Health Organization, 2023a) (Section S4) (AlNuaimi et al., 2023; Chemaitelly et al., 2023e; Chemaitelly et al., 2023b).
 
@@ -95,11 +95,11 @@ All COVID-19 deaths in Qatar were systematically identified through this protoco
 
 COVID-19 death was defined per WHO classification as “a death resulting from a clinically compatible illness, in a probable or confirmed COVID-19 case, unless there is a clear alternative cause of death that cannot be related to COVID-19 disease (e.g. trauma). There should be no period of complete recovery from COVID-19 between illness and death. A death due to COVID-19 may not be attributed to another disease (e.g. cancer) and should be counted independently of preexisting conditions that are suspected of triggering a severe course of COVID-19” (World Health Organization, 2023a).
 
-## Incidence of SARS-CoV-2 infection
+### Incidence of SARS-CoV-2 infection
 
 Incidence of SARS-CoV-2 infection was defined as any PCR-positive or rapid-antigen-positive test after the start of follow-up, irrespective of symptomatic presentation. Individuals whose infection progressed to severe, critical, or fatal COVID-19 were classified based on their worst outcome, starting with COVID-19 death (World Health Organization, 2023a), followed by critical disease (World Health Organization, 2023b), and then severe disease (World Health Organization, 2023b) (Section S4). Incidence of outcomes of severe forms of COVID-19 was recorded on the date of the SARS-CoV-2-positive test confirming the infection.
 
-## Cohorts’ eligibility and matching
+### Cohorts’ eligibility and matching
 
 Individuals qualified for inclusion in the two-dose cohort if they received two doses of an mRNA vaccine and in the three-dose cohort if they received three doses of an mRNA vaccine. Those who were administered the ChAdOx1 nCoV-19 (AZD1222) vaccine, a small proportion of the population, or the pediatric 10 µg BNT162b2 vaccine were excluded. Individuals qualified for inclusion in the unvaccinated cohort if they had no vaccination record at the start of follow-up.
 
@@ -117,17 +117,17 @@ The matching algorithm was implemented using ccmatch command in Stata 18.0 suppl
 
 According to this study design and matching approach, individuals in the matched unvaccinated cohort in the two-dose analysis may have contributed follow-up time before receiving the primary series vaccination and subsequently contributed follow-up time as part of the two-dose cohort after receiving the primary series vaccination. Similarly, in the three-dose analysis, individuals in the matched two-dose cohort may have contributed follow-up time before receiving the third (booster) dose, as part of the two-dose cohort, and subsequently contributed follow-up time as part of the three-dose cohort after receiving the third dose.
 
-## Cohorts’ follow-up
+### Cohorts’ follow-up
 
 Follow-up started from the calendar date of the second dose in the two-dose analysis and from the calendar date of the third dose in the three-dose analysis. To ensure exchangeability (Barda et al., 2021; Abu-Raddad et al., 2022a), both members of each matched pair were censored at the earliest occurrence of receiving an additional vaccine dose.
 
 Accordingly, individuals were followed until the first of any of the following events: a documented SARS-CoV-2 infection (irrespective of symptoms), first-dose vaccination for individuals in the unvaccinated cohort (with matched-pair censoring), third-dose vaccination for individuals in the two-dose cohort (with matched-pair censoring), fourth-dose vaccination for individuals in the three-dose cohort (with matched-pair censoring), death, or the administrative end of follow-up at the end of the study.
 
-## Oversight
+### Oversight
 
 The institutional review boards at Hamad Medical Corporation and Weill Cornell Medicine-Qatar approved this retrospective study with a waiver of informed consent. The study was reported according to the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE; Reporting Standards document).
 
-## Statistical analysis
+### Statistical analysis
 
 Eligible and matched cohorts were described using frequency distributions and measures of central tendency, and were compared using standardized mean differences (SMDs). An SMD of ≤0.1 indicated adequate matching (Austin, 2009). The cumulative incidence of non-COVID-19 death, defined as proportion of individuals at risk whose primary endpoint during follow-up was a non-COVID-19 death, was estimated using the Kaplan-Meier estimator method (Kaplan and Meier, 1958).
 
@@ -149,23 +149,1010 @@ Statistical analyses were performed using Stata/SE version 18.0 (Stata Corporati
 
 ## Results
 
-## Two-dose analysis
+### Two-dose analysis
 
 Figure 1—figure supplement 2 illustrates the process of selecting the study cohorts. Table 1 outlines the cohorts’ baseline characteristics. Each matched cohort comprised 812,583 individuals. Median date of the second vaccine dose was June 21, 2021, for the two-dose cohort. Median duration of follow-up was 206 days (interquartile range [IQR], 41–925 days) in the two-dose cohort and 199 days (IQR, 36–933 days) in the unvaccinated cohort (Figure 1A).
 
+**Table 1.**
+ Baseline characteristics of the full and matched cohorts for investigating an indication effect or a healthy vaccinee effect among recipients of primary series or booster (third dose) vaccination in Qatar.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Two-dose analysis</th>
+      <th colspan="6">Three-dose analysis</th>
+    </tr>
+    <tr>
+      <th rowspan="3">Characteristics</th>
+      <th colspan="3">Full eligible cohorts</th>
+      <th colspan="3">Matched cohorts*</th>
+      <th colspan="3">Full eligible cohorts</th>
+      <th colspan="3">Matched cohorts†</th>
+    </tr>
+    <tr>
+      <th>Two-dose</th>
+      <th>Unvaccinated</th>
+      <th rowspan="2">SMD‡</th>
+      <th>Two-dose</th>
+      <th>Unvaccinated</th>
+      <th rowspan="2">SMD‡</th>
+      <th>Three-dose</th>
+      <th>Two-dose</th>
+      <th rowspan="2">SMD‡</th>
+      <th>Three-dose</th>
+      <th>Two-dose</th>
+      <th rowspan="2">SMD‡</th>
+    </tr>
+    <tr>
+      <th>N=2,168,050</th>
+      <th>N=3,811,694</th>
+      <th>N=812,583</th>
+      <th>N=812,583</th>
+      <th>N=714,893</th>
+      <th>N=2,231,443</th>
+      <th>N=330,568</th>
+      <th>N=330,568</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median age (IQR)—years</td>
+      <td>38 (31–45)</td>
+      <td>32 (24–41)</td>
+      <td>0.50§</td>
+      <td>34 (28–41)</td>
+      <td>33 (27–40)</td>
+      <td>0.07§</td>
+      <td>40 (33–49)</td>
+      <td>38 (31–45)</td>
+      <td>0.21§</td>
+      <td>38 (32–45)</td>
+      <td>39 (34–47)</td>
+      <td>0.01§</td>
+    </tr>
+    <tr>
+      <td>Age group—no. (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0–19 years</td>
+      <td>106,156 (4.9)</td>
+      <td>622,215 (16.3)</td>
+      <td rowspan="7">0.58</td>
+      <td>69,673 (8.6)</td>
+      <td>69,673 (8.6)</td>
+      <td rowspan="7">0.00</td>
+      <td>33,216 (4.6)</td>
+      <td>107,885 (4.8)</td>
+      <td rowspan="7">0.23</td>
+      <td>9,221 (2.8)</td>
+      <td>9,221 (2.8)</td>
+      <td rowspan="8">0.00</td>
+    </tr>
+    <tr>
+      <td>20–29 years</td>
+      <td>326,484 (15.1)</td>
+      <td>909,809 (23.9)</td>
+      <td>191,420 (23.6)</td>
+      <td>191,420 (23.6)</td>
+      <td>72,966 (10.2)</td>
+      <td>334,458 (15.0)</td>
+      <td>40,015 (12.1)</td>
+      <td>40,015 (12.1)</td>
+    </tr>
+    <tr>
+      <td>30–39 years</td>
+      <td>809,250 (37.3)</td>
+      <td>1,228,030 (32.2)</td>
+      <td>326,985 (40.2)</td>
+      <td>326,985 (40.2)</td>
+      <td>239,713 (33.5)</td>
+      <td>834,373 (37.4)</td>
+      <td>139,067 (42.1)</td>
+      <td>139,067 (42.1)</td>
+    </tr>
+    <tr>
+      <td>40–49 years</td>
+      <td>576,564 (26.6)</td>
+      <td>660,453 (17.3)</td>
+      <td>158,847 (19.5)</td>
+      <td>158,847 (19.5)</td>
+      <td>204,224 (28.6)</td>
+      <td>595,300 (26.7)</td>
+      <td>98,080 (29.7)</td>
+      <td>98,080 (29.7)</td>
+    </tr>
+    <tr>
+      <td>50–59 years</td>
+      <td>244,963 (11.3)</td>
+      <td>268,839 (7.1)</td>
+      <td>51,661 (6.4)</td>
+      <td>51,661 (6.4)</td>
+      <td>107,990 (15.1)</td>
+      <td>252,382 (11.3)</td>
+      <td>36,284 (11.0)</td>
+      <td>36,284 (11.0)</td>
+    </tr>
+    <tr>
+      <td>60–69 years</td>
+      <td>80,555 (3.7)</td>
+      <td>92,395 (2.4)</td>
+      <td>12,014 (1.5)</td>
+      <td>12,014 (1.5)</td>
+      <td>43,815 (6.1)</td>
+      <td>82,558 (3.7)</td>
+      <td>7,355 (2.2)</td>
+      <td>7,355 (2.2)</td>
+    </tr>
+    <tr>
+      <td>70+ years</td>
+      <td>24,078 (1.1)</td>
+      <td>29,953 (0.8)</td>
+      <td>1,983 (0.2)</td>
+      <td>1,983 (0.2)</td>
+      <td>12,969 (1.8)</td>
+      <td>24,487 (1.1)</td>
+      <td>546 (0.2)</td>
+      <td>546 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>1,599,920 (73.8)</td>
+      <td>2,682,394 (70.4)</td>
+      <td rowspan="2">0.08</td>
+      <td>593,856 (73.1)</td>
+      <td>593,856 (73.1)</td>
+      <td rowspan="2">0.00</td>
+      <td>467,443 (65.4)</td>
+      <td>1,645,973 (73.8)</td>
+      <td rowspan="2">0.18</td>
+      <td>245,116 (74.1)</td>
+      <td>245,116 (74.1)</td>
+      <td rowspan="2">0.00</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>568,130 (26.2)</td>
+      <td>1,129,300 (29.6)</td>
+      <td>218,727 (26.9)</td>
+      <td>218,727 (26.9)</td>
+      <td>247,450 (34.6)</td>
+      <td>585,470 (26.2)</td>
+      <td>85,452 (25.9)</td>
+      <td>85,452 (25.9)</td>
+    </tr>
+    <tr>
+      <td>Nationality¶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bangladeshi</td>
+      <td>306,251 (14.1)</td>
+      <td>269,021 (7.1)</td>
+      <td rowspan="10">0.30</td>
+      <td>68,102 (8.4)</td>
+      <td>68,102 (8.4)</td>
+      <td rowspan="10">0.00</td>
+      <td>66,000 (9.2)</td>
+      <td>312,475 (14.0)</td>
+      <td rowspan="10">0.39</td>
+      <td>37,670 (11.4)</td>
+      <td>37,670 (11.4)</td>
+      <td rowspan="10">0.00</td>
+    </tr>
+    <tr>
+      <td>Egyptian</td>
+      <td>106,392 (4.9)</td>
+      <td>184,152 (4.8)</td>
+      <td>40,791 (5.0)</td>
+      <td>40,791 (5.0)</td>
+      <td>59,691 (8.3)</td>
+      <td>109,910 (4.9)</td>
+      <td>18,103 (5.5)</td>
+      <td>18,103 (5.5)</td>
+    </tr>
+    <tr>
+      <td>Filipino</td>
+      <td>201,002 (9.3)</td>
+      <td>277,459 (7.3)</td>
+      <td>76,146 (9.4)</td>
+      <td>76,146 (9.4)</td>
+      <td>99,405 (13.9)</td>
+      <td>209,620 (9.4)</td>
+      <td>40,680 (12.3)</td>
+      <td>40,680 (12.3)</td>
+    </tr>
+    <tr>
+      <td>Indian</td>
+      <td>531,366 (24.5)</td>
+      <td>1,074,425 (28.2)</td>
+      <td>268,830 (33.1)</td>
+      <td>268,830 (33.1)</td>
+      <td>222,135 (31.1)</td>
+      <td>549,694 (24.6)</td>
+      <td>121,774 (36.8)</td>
+      <td>121,774 (36.8)</td>
+    </tr>
+    <tr>
+      <td>Nepalese</td>
+      <td>233,558 (10.8)</td>
+      <td>347,108 (9.1)</td>
+      <td>68,279 (8.4)</td>
+      <td>68,279 (8.4)</td>
+      <td>28,584 (4.0)</td>
+      <td>239,262 (10.7)</td>
+      <td>20,694 (6.3)</td>
+      <td>20,694 (6.3)</td>
+    </tr>
+    <tr>
+      <td>Pakistani</td>
+      <td>103,600 (4.8)</td>
+      <td>223,498 (5.9)</td>
+      <td>46,416 (5.7)</td>
+      <td>46,416 (5.7)</td>
+      <td>34,161 (4.8)</td>
+      <td>106,177 (4.8)</td>
+      <td>14,548 (4.4)</td>
+      <td>14,548 (4.4)</td>
+    </tr>
+    <tr>
+      <td>Qatari</td>
+      <td>195,030 (9.0)</td>
+      <td>319,209 (8.4)</td>
+      <td>64,135 (7.9)</td>
+      <td>64,135 (7.9)</td>
+      <td>40,519 (5.7)</td>
+      <td>199,550 (8.9)</td>
+      <td>23,062 (7.0)</td>
+      <td>23,062 (7.0)</td>
+    </tr>
+    <tr>
+      <td>Sri Lankan</td>
+      <td>75,586 (3.5)</td>
+      <td>127,750 (3.4)</td>
+      <td>21,827 (2.7)</td>
+      <td>21,827 (2.7)</td>
+      <td>20,759 (2.9)</td>
+      <td>77,913 (3.5)</td>
+      <td>10,988 (3.3)</td>
+      <td>10,988 (3.3)</td>
+    </tr>
+    <tr>
+      <td>Sudanese</td>
+      <td>45,213 (2.1)</td>
+      <td>78,528 (2.1)</td>
+      <td>17,594 (2.2)</td>
+      <td>17,594 (2.2)</td>
+      <td>12,920 (1.8)</td>
+      <td>46,586 (2.1)</td>
+      <td>4,140 (1.3)</td>
+      <td>4,140 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Other nationalities**</td>
+      <td>370,052 (17.1)</td>
+      <td>910,544 (23.9)</td>
+      <td>140,463 (17.3)</td>
+      <td>140,463 (17.3)</td>
+      <td>130,719 (18.3)</td>
+      <td>380,256 (17.0)</td>
+      <td>38,909 (11.8)</td>
+      <td>38,909 (11.8)</td>
+    </tr>
+    <tr>
+      <td>Coexisting conditions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1,809,569 (83.5)</td>
+      <td>3,352,859 (88.0)</td>
+      <td rowspan="7">0.14</td>
+      <td>746,840 (91.9)</td>
+      <td>746,840 (91.9)</td>
+      <td rowspan="7">0.00</td>
+      <td>540,392 (75.6)</td>
+      <td>1,860,263 (83.4)</td>
+      <td rowspan="7">0.20</td>
+      <td>311,376 (94.2)</td>
+      <td>311,376 (94.2)</td>
+      <td rowspan="7">0.00</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>183,168 (8.4)</td>
+      <td>261,898 (6.9)</td>
+      <td>45,414 (5.6)</td>
+      <td>45,414 (5.6)</td>
+      <td>78,872 (11.0)</td>
+      <td>189,770 (8.5)</td>
+      <td>12,288 (3.7)</td>
+      <td>12,288 (3.7)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>86,673 (4.0)</td>
+      <td>102,968 (2.7)</td>
+      <td>13,988 (1.7)</td>
+      <td>13,988 (1.7)</td>
+      <td>44,676 (6.2)</td>
+      <td>89,926 (4.0)</td>
+      <td>5,049 (1.5)</td>
+      <td>5,049 (1.5)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>39,989 (1.8)</td>
+      <td>42,960 (1.1)</td>
+      <td>3,842 (0.5)</td>
+      <td>3,842 (0.5)</td>
+      <td>22,684 (3.2)</td>
+      <td>41,422 (1.9)</td>
+      <td>1,149 (0.3)</td>
+      <td>1,149 (0.3)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>22,810 (1.1)</td>
+      <td>23,715 (0.6)</td>
+      <td>1,602 (0.2)</td>
+      <td>1,602 (0.2)</td>
+      <td>13,504 (1.9)</td>
+      <td>23,539 (1.1)</td>
+      <td>558 (0.2)</td>
+      <td>558 (0.2)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>13,035 (0.6)</td>
+      <td>13,575 (0.4)</td>
+      <td>657 (0.1)</td>
+      <td>657 (0.1)</td>
+      <td>7,590 (1.1)</td>
+      <td>13,415 (0.6)</td>
+      <td>122 (&lt;0.01)</td>
+      <td>122 (&lt;0.01)</td>
+    </tr>
+    <tr>
+      <td>≥6</td>
+      <td>12,806 (0.6)</td>
+      <td>13,719 (0.4)</td>
+      <td>240 (&lt;0.01)</td>
+      <td>240 (&lt;0.01)</td>
+      <td>7,175 (1.0)</td>
+      <td>13,108 (0.6)</td>
+      <td>26 (&lt;0.01)</td>
+      <td>26 (&lt;0.01)</td>
+    </tr>
+    <tr>
+      <td>Prior infection status††</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No prior infection</td>
+      <td>1,957,313 (90.3)</td>
+      <td>–</td>
+      <td rowspan="4">–</td>
+      <td>764,366 (94.1)</td>
+      <td>764,366 (94.1)</td>
+      <td rowspan="4">0.00</td>
+      <td>591,083 (82.7)</td>
+      <td>–</td>
+      <td rowspan="4">–</td>
+      <td>287,773 (87.1)</td>
+      <td>287,773 (87.1)</td>
+      <td rowspan="4">0.00</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron infection</td>
+      <td>208,058 (9.6)</td>
+      <td>–</td>
+      <td>46,631 (5.7)</td>
+      <td>46,631 (5.7)</td>
+      <td>96,567 (13.5)</td>
+      <td>–</td>
+      <td>33,864 (10.2)</td>
+      <td>33,864 (10.2)</td>
+    </tr>
+    <tr>
+      <td>Prior omicron infection</td>
+      <td>2,463 (0.1)</td>
+      <td>–</td>
+      <td>1,548 (0.2)</td>
+      <td>1,548 (0.2)</td>
+      <td>24,690 (3.5)</td>
+      <td>–</td>
+      <td>8,624 (2.6)</td>
+      <td>8,624 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron and omicron infections</td>
+      <td>216 (&lt;0.01)</td>
+      <td>–</td>
+      <td>38 (&lt;0.01)</td>
+      <td>38 (&lt;0.01)</td>
+      <td>2,553 (0.4)</td>
+      <td>–</td>
+      <td>307 (0.1)</td>
+      <td>307 (0.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_IQR, interquartile range; SMD, standardized mean difference.*Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, and prior infection status. Persons who received their second vaccine dose in a specific calendar week in the two-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the unvaccinated cohort, to ensure that matched pairs had presence in Qatar over the same time period.†Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, prior infection status, and calendar week of the second vaccine dose. Persons who received their third vaccine dose in a specific calendar week in the three-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the two-dose cohort, to ensure that matched pairs had presence in Qatar over the same time period.‡SMD is the difference in the mean of a covariate between groups divided by the pooled standard deviation. An SMD≤0.1 indicates adequate matching.§SMD is for the mean difference between groups divided by the pooled standard deviation.¶Nationalities were chosen to represent the most populous groups in Qatar.**These comprise up to 183 other nationalities in the unmatched and 148 other nationalities in the matched two-dose analyses, and up to 169 other nationalities in the unmatched and 111 other nationalities in the matched three-dose analyses.††Ascertained at the start of follow-up. Accordingly, distribution is not available for the unmatched unvaccinated cohort in the two-dose analysis and unmatched two-dose cohort in the three-dose analysis, as the start of follow-up for each person in these reference/control cohorts is determined by that of their match after the matching process is completed._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig1-v1.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Number of (A) second dose and (B) third dose vaccinations by calendar month.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig1-figsupp3-v1.jpg)
+
 During follow-up, 237 non-COVID-19 deaths occurred in the two-dose cohort compared to 306 in the unvaccinated cohort (Table 2A and Figure 1—figure supplement 2). There were 54,427 SARS-CoV-2 infections recorded in the two-dose cohort, of which 23 progressed to severe, 6 to critical, and none to fatal COVID-19. Meanwhile, 57,974 SARS-CoV-2 infections were recorded in the unvaccinated cohort, of which 539 progressed to severe, 66 to critical, and 25 to fatal COVID-19.
+
+**Table 2.**
+ Hazard ratios for incidence of non-COVID-19 death, SARS-CoV-2 infection, and severe, critical, or fatal COVID-19 in the (A) two-dose analysis and (B) three-dose analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(A) Two-dose analysis</th>
+      <th>Two-dose cohort*</th>
+      <th>Unvaccinated cohort*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size</td>
+      <td>812,583</td>
+      <td>812,583</td>
+    </tr>
+    <tr>
+      <td>Number of non-COVID-19 death</td>
+      <td>237</td>
+      <td>306</td>
+    </tr>
+    <tr>
+      <td>Number of incident infections</td>
+      <td>54,427</td>
+      <td>57,974</td>
+    </tr>
+    <tr>
+      <td>Number of severe, critical, or fatal COVID-19 disease</td>
+      <td>29</td>
+      <td>630</td>
+    </tr>
+    <tr>
+      <td>Total follow-up time (person-weeks)</td>
+      <td>46,028,318</td>
+      <td>46,275,391</td>
+    </tr>
+    <tr>
+      <td>Non-COVID-19 death</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Incidence rate of non-COVID-19 death (per 10,000 person-weeks; 95% CI)</td>
+      <td>0.05 (0.05–0.06)</td>
+      <td>0.07 (0.06–0.07)</td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.77 (0.65–0.91)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.76 (0.64–0.90)</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for SARS-CoV-2 infection (95% CI)</td>
+      <td colspan="2">0.93 (0.92–0.94)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for SARS-CoV-2 infection (95% CI)‡</td>
+      <td colspan="2">0.89 (0.88–0.90)</td>
+    </tr>
+    <tr>
+      <td>Effectiveness against SARS-CoV-2 infection (95% CI)‡</td>
+      <td colspan="2">10.7 (9.6–11.7)</td>
+    </tr>
+    <tr>
+      <td>Severe, critical, or fatal COVID-19 disease</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for severe, critical, or fatal COVID-19 disease (95% CI)</td>
+      <td colspan="2">0.05 (0.03–0.07)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for severe, critical, or fatal COVID-19 disease (95% CI)‡</td>
+      <td colspan="2">0.04 (0.03–0.06)</td>
+    </tr>
+    <tr>
+      <td>Effectiveness against severe, critical, or fatal COVID-19 disease (95% CI)‡</td>
+      <td colspan="2">95.9 (94.0–97.1)</td>
+    </tr>
+    <tr>
+      <td>(B) Three-dose analysis</td>
+      <td>Three-dose cohort§</td>
+      <td>Two-dose cohort§</td>
+    </tr>
+    <tr>
+      <td>Sample size</td>
+      <td>330,568</td>
+      <td>330,568</td>
+    </tr>
+    <tr>
+      <td>Number of non-COVID-19 death</td>
+      <td>132</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <td>Number of incident infections</td>
+      <td>26,842</td>
+      <td>35,411</td>
+    </tr>
+    <tr>
+      <td>Number of severe, critical, or fatal COVID-19 disease</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Total follow-up time (person-weeks)</td>
+      <td>24,015,307</td>
+      <td>23,088,912</td>
+    </tr>
+    <tr>
+      <td>Non-COVID-19 death</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Incidence rate of non-COVID-19 death (per 10,000 person-weeks; 95% CI)</td>
+      <td>0.05 (0.05–0.07)</td>
+      <td>0.06 (0.05–0.07)</td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.87 (0.68–1.10)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.85 (0.67–1.07)</td>
+    </tr>
+    <tr>
+      <td>SARS-CoV-2 infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for SARS-CoV-2 infection (95% CI)</td>
+      <td colspan="2">0.74 (0.72–0.75)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for SARS-CoV-2 infection (95% CI)**</td>
+      <td colspan="2">0.74 (0.72–0.75)</td>
+    </tr>
+    <tr>
+      <td>Effectiveness against SARS-CoV-2 infection (95% CI)**</td>
+      <td colspan="2">26.3 (25.2–27.5)</td>
+    </tr>
+    <tr>
+      <td>Severe, critical, or fatal COVID-19 disease</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for severe, critical, or fatal COVID-19 disease (95% CI)</td>
+      <td colspan="2">0.64 (0.23–1.81)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for severe, critical, or fatal COVID-19 disease (95% CI)**</td>
+      <td colspan="2">0.66 (0.23–1.86)</td>
+    </tr>
+    <tr>
+      <td>Effectiveness against severe, critical, or fatal COVID-19 disease (95% CI)**</td>
+      <td colspan="2">34.1 (−46.4–76.7)</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI, confidence interval; COVID-19, coronavirus disease 2019; SARS-CoV-2, severe acute respiratory syndrome coronavirus 2.*Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, and prior infection status. Persons who received their second vaccine dose in a specific calendar week in the two-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the unvaccinated cohort, to ensure that matched pairs had presence in Qatar over the same time period.†Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status, and calendar week of the second vaccine dose for the two-dose cohort or SARS-CoV-2-negative test for the unvaccinated cohort.‡Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status, calendar week of the second vaccine dose for the two-dose cohort or SARS-CoV-2-negative test for the unvaccinated cohort, and testing rate.§Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, prior infection status, and calendar week of the second vaccine dose. Persons who received their third vaccine dose in a specific calendar week in the three-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the two-dose cohort, to ensure that matched pairs had presence in Qatar over the same time period.¶Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status, and calendar week of the second vaccine dose.**Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status, calendar week of the second vaccine dose, and testing rate._
 
 The cumulative incidence of non-COVID-19 death was 0.070% (95% CI: 0.061–0.081%) for the two-dose cohort and 0.071% (95% CI: 0.062–0.080%) for the unvaccinated cohort after 990 days of follow-up (Figure 1A). The overall aHR comparing the incidence of non-COVID-19 death in the two-dose cohort to that in the unvaccinated cohort was 0.76 (95% CI: 0.64–0.90), indicating evidence of a healthy vaccinee effect (Table 2A).
 
 In the first 6 months of follow-up, the aHR was 0.35 (95% CI: 0.27–0.46), indicating strong evidence of a healthy vaccinee effect (Figure 2A). However, the combined analysis of all periods after the first 6 months showed an aHR of 1.52 (95% CI: 1.19–1.94).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig2-v1.jpg)
+
+**Figure 2.:** Error bars indicate the corresponding 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103690/elife-103690-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Error bars indicate the corresponding 95% confidence intervals.
+
 The subgroup analyses estimated the aHR at 0.89 (95% CI: 0.72–1.11) among individuals under 50 years of age and at 0.56 (95% CI: 0.42–0.75) among those 50 years of age and older (Table 3A). The aHR was 0.98 (95% CI: 0.79–1.22) for those less clinically vulnerable to severe COVID-19 and 0.51 (95% CI: 0.39–0.68) for the more clinically vulnerable group. The aHR by prior infection status was 0.74 (95% CI: 0.63–0.89) for no prior infection and 1.00 (95% CI: 0.45–2.20) for prior pre-omicron infection.
+
+**Table 3.**
+ Subgroup analyses.Hazard ratios for incidence of non-COVID-19 death stratified by age group, clinical vulnerability status, and prior infection status in the (A) two-dose analysis and (B) three-dose analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(A) Two-dose analysis</th>
+      <th>Two-dose cohort*</th>
+      <th>Unvaccinated cohort*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>&lt;50 years of age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.91 (0.73–1.12)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.89 (0.72–1.11)</td>
+    </tr>
+    <tr>
+      <td>≥50 years of age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.59 (0.44–0.78)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.56 (0.42–0.75)</td>
+    </tr>
+    <tr>
+      <td>Clinical vulnerability status</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Less clinically vulnerable to severe COVID-19</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.99 (0.80–1.23)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.98 (0.79–1.22)</td>
+    </tr>
+    <tr>
+      <td>More clinically vulnerable to severe COVID-19</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.53 (0.41–0.70)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.51 (0.39–0.68)</td>
+    </tr>
+    <tr>
+      <td>Prior infection status</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>No prior infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.76 (0.64–0.90)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.74 (0.63–0.89)</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">1.05 (0.48–2.30)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">1.00 (0.45–2.20)</td>
+    </tr>
+    <tr>
+      <td>Prior omicron infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron &amp; omicron infections</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+    <tr>
+      <td>(B) Three-dose analysis</td>
+      <td>Three-dose cohort §</td>
+      <td>Two-dose cohort §</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>&lt;50 years of age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.90 (0.67–1.21)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.90 (0.67–1.20)</td>
+    </tr>
+    <tr>
+      <td>≥50 years of age</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.80 (0.54–1.18)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.76 (0.51–1.13)</td>
+    </tr>
+    <tr>
+      <td>Clinical vulnerability status</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Less clinically vulnerable to severe COVID-19</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.91 (0.68–1.23)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.91 (0.67–1.22)</td>
+    </tr>
+    <tr>
+      <td>More clinically vulnerable to severe COVID-19</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.78 (0.54–1.15)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.76 (0.52–1.12)</td>
+    </tr>
+    <tr>
+      <td>Prior infection status</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>No prior infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.80 (0.63–1.03)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">0.79 (0.61–1.01)</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">1.63 (0.71–3.73)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">1.63 (0.71–3.72)</td>
+    </tr>
+    <tr>
+      <td>Prior omicron infection</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">1.32 (0.30–5.90)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">1.32 (0.30–5.91)</td>
+    </tr>
+    <tr>
+      <td>Prior pre-omicron &amp; omicron infections</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratio for non-COVID-19 death (95% CI)</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratio for non-COVID-19 death (95% CI)¶</td>
+      <td colspan="2">-- ‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI, confidence interval; COVID-19, coronavirus disease 2019; SARS-CoV-2, severe acute respiratory syndrome coronavirus 2.*Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, and prior infection status. Persons who received their second vaccine dose in a specific calendar week in the two-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the unvaccinated cohort, to ensure that matched pairs had presence in Qatar over the same time period.†Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status (where applicable), and calendar week of the second vaccine dose for the two-dose cohort or SARS-CoV-2-negative test for the unvaccinated cohort.‡Could not be estimated because of no or small number of events.§Cohorts were matched exactly one-to-one by sex, 10-year age group, nationality, type of coexisting conditions, prior infection status, and calendar week of the second vaccine dose. Persons who received their third vaccine dose in a specific calendar week in the three-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the two-dose cohort, to ensure that matched pairs had presence in Qatar over the same time period.¶Adjusted for sex, 10-year age group, nationality, number of coexisting conditions, prior infection status (where applicable), and calendar week of the second vaccine dose._
 
 In the two sensitivity analyses—one including only Qataris and the other also including only Qataris but without matching on a SARS-CoV-2-negative test among controls—the aHRs for non-COVID-19 death were 0.29 (95% CI: 0.19–0.43) and 0.38 (95% CI: 0.30–0.50), respectively (Table 4A). Both analyses are consistent with each other and with the main analysis results (Table 4). However, the healthy vaccinee effect is more pronounced among Qataris, as the proportion of individuals above 50 years of age or those with serious coexisting conditions is substantially higher among Qataris compared to the rest of the population, which primarily comprises working-age male craft and manual workers (Abu-Raddad et al., 2021a; Al Thani et al., 2021; AlNuaimi et al., 2023).
 
+**Table 4.**
+ Sensitivity analyses.Hazard ratios for incidence of non-COVID-19 death among Qataris with and without matching on a SARS-CoV-2-negative test among controls in the (A) two-dose analysis and (B) three-dose analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(A) Two-dose analysis</th>
+      <th>Two-dose cohort</th>
+      <th>Unvaccinated cohort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sensitivity analysis I-Restricting analysis to Qataris*</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratiofor non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.29 (0.19–0.43)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratiofor non-COVID-19 death (95% CI)†</td>
+      <td colspan="2">0.29 (0.19–0.43)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Sensitivity analysis II-Restricting analysis to Qataris and not matching by a SARS-CoV-2-negative test among controls‡</td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratiofor non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.40 (0.31–0.51)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratiofor non-COVID-19 death (95% CI)§</td>
+      <td colspan="2">0.38 (0.30–0.50)</td>
+    </tr>
+    <tr>
+      <td>(B) Three-dose analysis</td>
+      <td>Three-dose cohort</td>
+      <td>Two-dose cohort</td>
+    </tr>
+    <tr>
+      <td>Sensitivity analysis I-Restricting analysis to Qataris¶</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratiofor non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.77 (0.44–1.33)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratiofor non-COVID-19 death (95% CI)**</td>
+      <td colspan="2">0.76 (0.43–1.32)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Sensitivity analysis II-Restricting analysis to Qataris and not matching by a SARS-CoV-2-negative test among controls††</td>
+    </tr>
+    <tr>
+      <td>Unadjusted hazard ratiofor non-COVID-19 death (95% CI)</td>
+      <td colspan="2">0.77 (0.52–1.12)</td>
+    </tr>
+    <tr>
+      <td>Adjusted hazard ratiofor non-COVID-19 death (95% CI)**</td>
+      <td colspan="2">0.77 (0.53–1.13)</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI, confidence interval; COVID-19, coronavirus disease 2019; SARS-CoV-2, severe acute respiratory syndrome coronavirus 2.*Cohorts were matched exactly one-to-one by sex, 10-year age group, type of coexisting conditions, and prior infection status. Persons who received their second vaccine dose in a specific calendar week in the two-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the unvaccinated cohort, to ensure that matched pairs had presence in Qatar over the same time period.†Adjusted for sex, 10-year age group, number of coexisting conditions, prior infection status, and calendar week of the second vaccine dose for the two-dose cohort or SARS-CoV-2-negative test for the unvaccinated cohort.‡Cohorts were matched exactly one-to-one by sex, 10-year age group, type of coexisting conditions, and prior infection status.§Adjusted for sex, 10-year age group, number of coexisting conditions, and prior infection status.¶Cohorts were matched exactly one-to-one by sex, 10-year age group, type of coexisting conditions, prior infection status, and calendar week of the second vaccine dose. Persons who received their third vaccine dose in a specific calendar week in the three-dose cohort were additionally matched to persons who had a record for a SARS-CoV-2-negative test in that same calendar week in the two-dose cohort, to ensure that matched pairs had presence in Qatar over the same time period.**Adjusted for sex, 10-year age group, number of coexisting conditions, prior infection status, and calendar week of the second vaccine dose.††Cohorts were matched exactly one-to-one by sex, 10-year age group, type of coexisting conditions, prior infection status, and calendar week of the second vaccine dose._
+
 The overall effectiveness of primary series vaccination compared to no vaccination was 10.7% (95% CI: 9.6–11.7) against infection and 95.9% (95% CI: 94.0–97.1) against severe, critical, or fatal COVID-19 (Table 2A). Figure 2—figure supplement 1 further illustrates the effectiveness of primary series vaccination against severe, critical, or fatal COVID-19, stratified by time since vaccination, both overall and within the subgroups of individuals aged <50 years and those aged ≥50 years.
 
-## Three-dose analysis
+### Three-dose analysis
 
 Figure 1—figure supplement 3 illustrates the process of selecting the study cohorts. Table 1 outlines the cohorts’ baseline characteristics. Each matched cohort comprised 330,568 individuals. The median date of the second vaccine dose was May 15, 2021, for both the two-dose and three-dose cohorts. The median date of the third vaccine dose in the three-dose cohort was January 24, 2022. The median duration of follow-up was 695 days (IQR, 66–802 days) in the three-dose cohort and 685 days (IQR, 49–798 days) in the two-dose cohort (Figure 1B).
 
@@ -225,10 +1212,10 @@ The study has strengths. It was implemented on Qatar’s entire population and s
 
 In conclusion, a healthy vaccinee effect was observed, but only in the first 6 months following COVID-19 vaccination and specifically among those aged 50 years and older and those more clinically vulnerable to severe COVID-19. The same effect, with similar magnitude, was observed for both primary series and booster vaccinations, suggesting a consistent underlying phenomenon, perhaps a lower likelihood of vaccination among seriously ill, end-of-life individuals, and less mobile elderly populations. COVID-19 booster vaccine policies should account for this effect when interpreting effectiveness estimates and formulating vaccine guidelines. Despite this effect, the results confirm strong protection from vaccination against severe forms of COVID-19.
 
-## Contributors
+### Contributors
 
 HC co-designed the study, performed the statistical analyses, and co-wrote the first draft of the article. LJA conceived and co-designed the study, led the statistical analyses, and co-wrote the first draft of the article. HC and LJA accessed and verified all the data. PVC designed mass PCR testing to allow routine capture of variants and conducted viral genome sequencing. PT and MRH designed and conducted multiplex, RT-qPCR variant screening and viral genome sequencing. HMY and AAAT conducted viral genome sequencing. All authors contributed to data collection and acquisition, database development, discussion and interpretation of the results, and to the writing of the article. All authors have read and approved the final manuscript.
 
-## Code availability
+### Code availability
 
 Standard epidemiological analyses were conducted using standard commands in Stata/SE 18.0.

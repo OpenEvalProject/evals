@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Neuroscience Graduate Program, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Neurology, University of California, San Francisco San Francisco United States
-3. https://ror.org/01y2jtd41 Department of Psychology, University of Wisconsin–Madison Madison United States
-4. https://ror.org/01y2jtd41 Neuroscience Training Program, University of Wisconsin–Madison Madison United States
-5. https://ror.org/043mz5j54 Weill Institute for Neurosciences, Kavli Institute for Fundamental Neuroscience, Center for Integrative Neuroscience, University of California, San Francisco San Francisco United States
+1. Neuroscience Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Department of Psychology, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. Neuroscience Training Program, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+5. Weill Institute for Neurosciences, Kavli Institute for Fundamental Neuroscience, Center for Integrative Neuroscience, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -33,15 +33,71 @@ In this study, we designed experiments to address the influence of environmental
 
 We first measured mesolimbic dopamine release in the nucleus accumbens core using a dopamine sensor (dLight1.3b; Patriarchi et al., 2018) in an auditory cue-reward task. We varied both the presence or absence of a progression of cues indicating reward proximity (‘dynamic’ vs ‘fixed’ tone) and the inter-trial interval (ITI) duration (short vs long ITI). Varying the ITI was critical because our theory predicts that the ITI is a variable controlling the eligibility trace time constant, such that a short ITI would produce a small time constant relative to the cue-reward interval (Appendix 1, Figure 1A-E). In all four experimental conditions, head-fixed mice learned to anticipate the sucrose reward, as reflected by anticipatory licking (Figure 1F–G). In line with our earlier work, we showed that simulations of ANCCR exhibit a larger cue onset response when the ITI is long and exhibit ramps only when the ITI is short (Figure 1H). Consistent with these simulated predictions, experimentally measured mesolimbic dopamine release had a much higher cue onset response for long ITI (Figure 1I–J). Furthermore, dopamine ramps were observed only when the ITI was short and the tone was dynamic (Figure 1I and K–M, Figure 1—figure supplement 2). Indeed, dopamine ramps—quantified by a positive slope of dopamine response vs time within trial over the last five seconds of the cue—appeared on the first day after transition from a long ITI/dynamic tone condition to a short ITI/dynamic tone condition and disappeared on the first day after transition from a short ITI/dynamic tone condition to a short ITI/fixed tone condition (Figure 1L). These results confirm the key prediction of our theory in Pavlovian conditioning.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig1-v1.jpg)
+
+**Figure 1.:** (A) Top, fiber photometry approach schematic for nucleus accumbens core (NAcC) dLight recordings. Bottom, head-fixed mouse. (B) Pavlovian conditioning experimental setup. Trials consisted of an 8 s auditory cue followed by sucrose reward delivery 1 s later. (C) Cumulative Distribution Function (CDF) of ITI duration for long (solid line, mean 55 s) and short ITI (dashed line, mean 8 s) conditions. (D) Experimental timeline. Mice were divided into groups receiving either a 3 kHz fixed and dynamic up↑ tone or a 12 kHz fixed and dynamic down↓ tone. (E) Tone frequency over time. (F) Peri-stimulus time histogram (PSTH) showing average licking behaviors for the last 3 days of each condition (n=9 mice). (G) Average anticipatory lick rate (baseline subtracted) for 1 s preceding reward delivery (long ITI vs short ITI: **p=0.0046). (H) ANCCR simulation results from an 8 s dynamic cue followed by reward 1 s later for long ITI (teal) and short ITI (pink) conditions. Bold lines show the average of 20 iterations. (I) Left, average dLight dopamine signals. Vertical dashed lines represent the ramp window from 3 to 8 s after cue onset, thereby excluding the influence of the cue onset and offset responses. Solid black lines show linear regression fit during the window. Right, closeup of dopamine signal during window. (J) Average peak dLight response to cue onset for LD and SD conditions (***p=1.9 x 10–4). (K) dLight dopamine signal with linear regression fit during ramp window for example SD trials. Reported m is slope. (L) Session average per-trial slope during ramp window for the first day and last 3 days of each condition (last day LD to first day SD: *p=0.036, last day SD to first day SF: *p=0.023). (M) Average per-trial slope for last 3 days of each condition (LD vs SD: **p=0.0026, SD vs SF: *p=0.011). All data presented as mean ± SEM. See Supplementary file 1 for full statistical details.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic showing exponential decay of cue eligibility traces for two-cue sequential conditioning (left) and multi-cue conditioning (right) with a long inter-trial interval (ITI). In this case, a long ITI results in a proportionally large eligibility trace time constant, T, producing slow eligibility trace decay (Appendix 1). Reward delivery time indicated by vertical dashed line. (B) Schematized ANCCR magnitudes (arbitrary units) for cues in the two-cue (left) and multi-cue (right) conditioning paradigms with a long ITI. Since the eligibility trace for the first cue is still high at reward time, there is a large ANCCR at this cue. The remaining cues are preceded consistently by earlier cues associated with the reward, thereby reducing their ANCCR. (C) Same conditioning trial structure as in A, but with a short ITI and smaller T, producing rapid eligibility trace decay. (D) Schematized ANCCR magnitudes for cues in both conditioning paradigms with a short ITI. Since the eligibility trace for the first cue is low at reward time, there is a small ANCCR at this cue. Though the remaining cues are preceded consistently by earlier cues associated with the reward, the eligibility traces of these earlier cues decay quickly, thereby resulting in a higher ANCCR for the later cues.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Mouse coronal brain sections showing reconstructed locations of optic fiber tips (red circles) in NAcC for Pavlovian conditioning cohort 1. (B) Example average dLight traces for the last three days of all conditions. Vertical dashed lines at 3 and 8 s represent the ramp window period. Black lines display the linear regression fit during this period. (C) Same as in B but for the average dLight traces across all animals (n=9 mice).
+
 While these results are consistent with the idea that dopamine ramps are shaped by the ITI, an alternative explanation could be differences in behavioral learning across experimental conditions. To test this possibility, we repeated the same Pavlovian conditioning paradigm with a counterbalanced training order in a second cohort of mice (Figure 2A). Despite the shuffled training order, this cohort behaved similarly and showed robust anticipatory licking across conditions (Figure 2—figure supplement 1A–B). As with the previous cohort, dopamine ramps were only observed in the short ITI/dynamic tone condition, rapidly appearing on the first day of this condition and disappearing on the first day of the subsequent long ITI/dynamic tone condition (Figure 2B–D, Figure 2—figure supplement 2, Figure 2—figure supplement 3). Critically, the presence of dopamine ramps during the last five seconds of the cue could not be explained by variations in behavior; during this period, anticipatory licking was similar across all conditions, and there was no difference in the slope of the lick rate between the dynamic tone conditions (Figure 2—figure supplement 1C–D). Taken together, these results rule out any effects of differential learning across conditions on dopamine ramps.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental timeline in which the SD condition occurs before the LD condition. (B) Left, average dLight dopamine signals for SD and LD conditions. Vertical dashed lines represent the ramp window from 3 to 8 s after cue onset. Solid black lines show linear regression fit during the window. Right, close-up of dopamine signal during window (n=9 mice). (C) Session average per-trial slope during ramp window for the first day and last 3 days of each condition (last day LF to first day SD: **p=0.0045, last day SD to first day LD: **p=0.0067). (D) Average per-trial slope for last 3 days of each condition (LF vs SD: ***p=9.1 x 10–4, SD vs LD: *p=0.010).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PSTH showing average licking behavior for the last 3 days of each condition for Pavlovian conditioning cohort 2 (n=9 mice). (B) Average anticipatory lick rate (baseline subtracted) for 1 s trace preceding reward delivery for cohort 2 (p=0.77). (C) Comparison of average baseline subtracted lick rate during the ramp window (3–8 s after cue onset) across all conditions for both cohorts (p=0.093, n=18 mice). (D) Comparison of average lick slope during the ramp window across all conditions (fixed tone vs dynamic tone: ***p=9.8 x 10–4).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mouse coronal brain sections showing reconstructed locations of optic fiber tips (red circles) in NAcC for Pavlovian conditioning cohort 2. (B) Example average dLight traces for the last three days of all conditions. Vertical dashed lines at 3 and 8 s represent the ramp window period. Black lines display the linear regression fit during this period. (C) Same as in B but for the average dLight traces across all animals (n=9 mice).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Individual plots for each mouse from Pavlovian conditioning cohort 1 displaying the cumulative distribution of per-trial slopes for the last three days in all conditions. Vertical dashed lines indicate the average trial slope for LF (gray), LD (teal), SD (pink), and SF (purple) conditions. (B) Same as in A but for Pavlovian conditioning cohort 2 mice.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Average dLight dopamine signal for Pavlovian conditioning cohort 1. Black lines represent linear regression fit during the pre-cue window and ramp window, each marked with gray shaded regions. (B) Average per-trial dLight slope during the pre-cue window for the last 3 days of each condition (p=0.37). (C) Linear regression β coefficients for per-trial ramp dLight slope vs. pre-cue dLight slope in SD condition calculated per animal (p=0.082). (D) Scatter plot with linear regression fit (black line) of Z-scored ramp slope vs pre-cue slope pooled across mice for all trials in the last 3 days of SD condition (p=0.17).
 
 Although the difference in dopamine ramp slope seems to be well explained by the ITI condition, it might instead reflect differences in post-reward dopamine dynamics, which drop below baseline. As dopamine levels recover from this drop over several seconds, it could appear as a dopamine ramp on the subsequent trial given a sufficiently short ITI. The lack of dopamine ramps in the short ITI/fixed tone condition serves as a control for this, however (Figure 1L–M). Furthermore, there is no significant difference in the pre-cue dopamine slope between conditions, nor is there a correlation between the pre-cue dopamine slopes and the dopamine ramp slopes during the cue in the short ITI/dynamic condition (Figure 2—figure supplement 4). As such, our results cannot be captured by a natural ramp in the dopamine signal following reward.
 
 Given the speed with which dopamine ramps appeared and disappeared, we next tested whether the slope of dopamine ramps in the short ITI/dynamic tone condition depended on the previous ITI duration on a trial-by-trial basis. We found that there was indeed a statistically significant trial-by-trial correlation between the previous ITI duration and the current trial’s dopamine response slope in the short ITI/dynamic condition with ramps, but not in the long ITI/dynamic condition without ramps (Figure 3A–C). The dependence of a trial’s dopamine response slope with previous ITI was significantly negative, meaning that a longer ITI correlates with a weaker ramp on the next trial. This finding held when analyzing either animal-by-animal (Figure 3A–B) or the pooled trials across animals while accounting for mean animal-by-animal variability (Figure 3C). This relationship was only significant for a single previous trial, however, and did not hold for a broader estimate of average previous ITIs (Figure 3—figure supplement 1). In addition, we quantified how the relative change in ITI duration between consecutive trials correlates with changes in dopamine ramp slope (Figure 3D). We found a significantly negative relationship between the change in dopamine slope and change in ITI (Figure 3E–F). Furthermore, the change in slope was significantly greater for relative decreases in ITI compared to relative increases in ITI, indicating that a relatively shorter ITI tends to have a stronger ramp (Figure 3G). These results suggest that the eligibility trace time constant adapts rapidly to changing ITI in Pavlovian conditioning.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scatter plot for an example animal showing the relationship between dopamine response slope within a trial and previous ITI for all trials in the last 3 days of SD condition. Plotted with linear regression fit (black line) used to find this animal’s β coefficient of –0.045. (B) Linear regression β coefficients for previous ITI vs. trial slope calculated per animal (***p=5.6 x 10–4). (C) Scatter plot of Z-scored trial slope vs. previous ITI pooled across mice for all trials in the last 3 days of SD condition (***p=6.6 x 10–10). The Z-scoring per animal removes the effect of variable means across animals on the slope of the pooled data. (D) dLight dopamine signal for two consecutive example SD trials showing the change in ITI and change in slope. The gray shaded regions indicate ITIs, and the vertical dashed lines mark the ramp window period. Reported m is slope. (E) Scatter plot for the same example animal in A showing the relationship between the change in dopamine slopes and the change in ITI across all trials in the last 3 days of SD condition. Plotted with linear regression fit (black line). Dot colors indicate magnitude of Δ ITI: light pink for Δ ITI below –1 s; gray for Δ ITI between –1 s and 1 s; dark pink for Δ ITI above 1 s. (F) Linear regression β coefficients for Δ ITI vs. Δ slope calculated per animal (***p=3.2 x 10–4). (G) Comparison of the average Δ slope for Δ ITI below –1 s vs above 1 s (*** p=2.3 x 10–4).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Linear regression β coefficients for trial dLight slope vs. average previous ITI for the past 1 through 10 ITIs calculated per animal for all trials in the last 3 days of the SD condition (**p=0.0056, ns p>0.05; using Benjamini-Hochberg Procedure). (B) Same as in A but for the LD condition (*p=0.019, ns p>0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Left, linear regression β coefficients for dLight slope vs. dLight onset peak calculated per animal in SD condition (p=0.54). Right, scatter plot with linear regression fit (black line) of Z-scored dLight slope vs dLight onset peak pooled across mice for all trials in the last 3 days of SD condition (p=0.84). (B) Same as in (A) but for LD condition (left p=0.54, right p=0.84). (C) Left, linear regression β coefficients for dLight slope vs. lick slope calculated per animal in SD condition (p=0.98). Right, scatter plot with linear regression fit (black line) of Z-scored dLight slope vs lick slope pooled across mice for all trials in the last 3 days of SD condition (p=0.84). (D) Same as in (C) but for LD condition (left p=0.52, right p=0.091). (E) Left, linear regression β coefficients for dLight slope vs. dLight onset peak calculated per animal in SD condition (p=0.52). Right, scatter plot with linear regression fit (black line) of Z-scored dLight slope vs dLight onset peak pooled across mice for all trials in the last 3 days of SD condition (p=0.15). (F) Same as in (E) but for LD condition (left p=0.54, right p=0.86). (G) Left, linear regression β coefficients for dLight slope vs. dLight onset peak calculated per animal in SD condition (p=0.52). Right, scatter plot with linear regression fit (black line) of Z-scored dLight slope vs dLight onset peak pooled across mice for all trials in the last 3 days of SD condition (p=0.44). (H) Same as in (G) but for LD condition (left p=0.54, right p=0.84). The Benjamini-Hochberg procedure is used for p values from all t-tests and p values from all linear regression separately for all comparisons in this figure.
+
 Due to the robust relationship between ITI and dopamine ramp slope on a per-trial basis, we next sought to explore the potential relationships between other important dopaminergic and behavioral variables. Though the dopamine cue onset response is significantly greater in the long compared to short ITI/dynamic tone condition, there is no apparent relationship between the cue onset response and dopamine ramp slope in either condition (Figure 3—figure supplement 2A–B). Furthermore, neither the cue onset response nor the dopamine ramp slope correlates with the per-trial behavior quantified as lick slope (Figure 3—figure supplement 2C–F). Finally, unlike the ramping dopamine slope, this ramping lick slope did not correlate with ITI duration (Figure 3—figure supplement 2G–H). The fact that this exploration of additional variables yielded no significant relationships highlights the unique, specific influence of ITI on dopamine ramp slope.
 
 We next tested whether the results from Pavlovian conditioning could be reproduced in an instrumental task. In keeping with prior demonstrations of dopamine ramps in head-fixed mice, we used a virtual reality (VR) navigational task in which head-fixed mice had to run towards a destination in a virtual hallway to obtain sucrose rewards (Kim et al., 2020; Farrell et al., 2022; Mikhael et al., 2022; Lopes et al., 2021; Figure 4A–B, Figure 4—figure supplement 1). At reward delivery, the screen turned blank during the ITI and remained so until the next trial onset. After training animals in this task using a medium ITI, we changed the ITI duration to short or long for eight days before switching to the other (Figure 4C). We found evidence that mice learned the behavioral requirement during the trial period, as they significantly increased their running speed during trial onset (Figure 4D–E) and reached a similarly high speed prior to reward in both ITI conditions (Figure 4F–G). Consistent with the results from Pavlovian conditioning, the dopamine response to the onset of the hallway presentation was larger during the long ITI compared to the short ITI condition (Figure 4H–I), and dopamine ramps were observed only in the short ITI condition (Figure 4J–M). Unlike the Pavlovian conditioning, the change in the ITI resulted in a more gradual appearance or disappearance of ramps (Figure 4L), but there was still a weak overall correlation between dopamine response slope on a trial and the previous inter-reward interval (Figure 4—figure supplement 2). These results are consistent with a more gradual change in the eligibility trace time constant in this instrumental task. Collectively, the core finding from Pavlovian conditioning that mesolimbic dopamine ramps are present only during short ITI conditions was reproduced in the instrumental VR task.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig4-v1.jpg)
+
+**Figure 4.:** (A) Head-fixed VR approach schematic. (B) VR navigation task experimental setup. Trials consisted of running down a patterned virtual hallway to receive sucrose reward. VR monitor remained black during the ITI. (C) Experimental timeline. Following training, mice were assigned to either long or short ITI conditions for 8 days before switching. (D) Velocity PSTH aligned to trial onset for long (teal) and short (pink) ITI conditions (n=9 mice). (E) Average change in velocity at trial onset. Bottom asterisks indicate both conditions significantly differ from zero (long: ***p=1.0 x 10–4, short: ***p=2.3 x 10–5). Top asterisks indicate significant difference between conditions (**p=0.0028). (F) Velocity PSTH aligned to reward delivery. (G) Average velocity during 1 s preceding reward (p=0.50). (H) PSTH showing average dLight dopamine signal aligned to trial onset. (I) Comparison of peak dLight onset response (***p=6.3 x 10–5). (J) Left, average dLight dopamine signal across distances spanning the entire virtual corridor. Vertical dashed lines represent the ramp window from 20 to 57 cm (10 cm before end of track). Solid black lines show linear regression fit during window. Right, close-up of dopamine signal during window. (K) dLight dopamine signal with linear regression fit during ramp window for example short ITI trials. Reported m is slope. (L) Session average per-trial slope during ramp window for all days of each condition. (M) Comparison of average per-trial slope during ramp window for last 3 days of both conditions (*p=0.035).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mouse coronal brain sections showing reconstructed locations of optic fiber tips (red circles) in NAcC for VR navigation task. (B) Left, CDF of ITI duration for long (teal), medium (gray), and short (pink) ITI conditions. Middle, CDF plot of inter-reward interval (IRI) durations for each condition. Right, CDF plot of trial durations for each condition. (C) Comparison of average trial duration for long and short ITI conditions (p=0.34). (D) Lick rate PSTH aligned to reward delivery indicates minimal anticipatory licking behavior. (E) Scatter plot showing relationship between average per-session slope and inter-reward interval for the last 3 days in long (teal) and short (pink) ITI conditions. Black line indicates linear regression fit (*p=0.012). (F) CDF plots for each mouse separately showing the distribution of per-trial slopes for the last three days in both conditions. Vertical dashed lines indicate the average trial slope for long (teal) and short (pink) ITI conditions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98666/elife-98666-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Scatter plot for an example animal showing the relationship between dopamine response slope within a trial and previous inter-reward interval (IRI) for all trials in the last 3 days of the short ITI condition. Plotted with linear regression fit (black line) used to find this animal’s β coefficient of –0.0014. Here, we are measuring the environmental timescale using IRI instead of ITI because the trial duration in this task (see Appendix 1) depends on the running speed of the animals, which varies trial to trial. Thus, IRI measures the net time interval between successive trial onsets. In the Pavlovian conditioning experiment, IRI and ITI differ by a constant since the trial duration is fixed. (B) Linear regression β coefficients for previous IRI vs trial slope calculated per animal (p=0.32). (C) Scatter plot of Z-scored trial slope vs. previous IRI pooled across mice for all trials in the last 3 days of the short ITI condition (*p=0.035).
 
 ## Discussion
 
@@ -59,27 +115,93 @@ Our ANCCR simulations motivated the experiments, but we did not explicitly inten
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVDJ-CAG-dLight1.3b</td>
+      <td>Patriarchi et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>B-CALM</td>
+      <td>Zhou et al., 2024</td>
+      <td>RRID:SCR_023884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Doric Neuroscience Studio</td>
+      <td>Doric Lenses</td>
+      <td>RRID:SCR_018569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyPhotometry</td>
+      <td>Akam and Walton, 2019</td>
+      <td>RRID:SCR_022940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BonVision</td>
+      <td>Lopes et al., 2021</td>
+      <td>RRID:SCR_021534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experimental procedures were approved by the Institutional Animal Care and Use Committee at UCSF and followed guidelines provided by the NIH Guide for the Care and Use of Laboratory Animals. Data from a total of 27 adult wild-type C57BL/6 J mice (#000664, Jackson Laboratory) were included in analysis across experiments: nine mice (four females, five males) were used for the first cohort of Pavlovian conditioning, nine mice (four females, five males) were used for the second cohort of Pavlovian conditioning, and nine mice (six females, three males) were used for the VR task. Data from two additional mice were excluded from analysis: one from the Pavlovian conditioning experiment for failing to display any learning in the form of anticipatory licking and one from the VR task experiment for fiber mistargeting outside of the nucleus accumbens. Following surgery, mice were single-housed in a reverse 12 hr light/dark cycle. Mice received environmental enrichment and had ad libitum access to standard chow. To increase motivation, mice underwent water deprivation. During deprivation, mice were weighed daily and given enough fluids to maintain ~85% of their baseline weight.
 
-## Surgeries
+### Surgeries
 
 Surgical procedures were always done under aseptic conditions. Induction of anesthesia was achieved with 3% isoflurane, which was maintained at 1–2% throughout the duration of the surgery. Mice received subcutaneous injections of carprofen (5 mg/kg) for analgesia and lidocaine (1 mg/kg) for local anesthesia of the scalp prior to incision. A unilateral injection (Nanoject III, Drummond) of 500 nL of dLight1.3b (Patriarchi et al., 2018; AAVDJ-CAG-dLight1.3b, 2.4x1013 GC/mL diluted 1:10 in sterile saline) was targeted to the NAcC using the following coordinates from bregma: AP 1.3, ML +/-1.4, DV –4.55. The glass injection pipette was held in place for 10 min prior to removal to prevent the backflow of virus. After viral injection, an optic fiber (NA 0.66, 400 μm, Doric Lenses) was implanted 100 μm above the site of injection. Subsequently, a custom head ring for head fixation was secured to the skull using screws and dental cement. Mice recovered and were given at least three weeks before starting behavioral experiments. After completion of experiments, mice underwent transcardial perfusion and subsequent brain fixation in 4% paraformaldehyde. Fiber placement was verified using 50 μm brain sections under a Keyence microscope for subsequent visualization (Figure 1—figure supplement 2A, Figure 2—figure supplement 2A, Figure 4—figure supplement 1A).
 
-## Behavior
+### Behavior
 
 All behavioral experiments took place during the dark cycle in dark, soundproof boxes with white noise playing to minimize any external noise. Prior to starting Pavlovian conditioning, water-deprived mice underwent 1–2 days of random rewards training to get acclimated to our head-fixed behavior setup (Zhou et al., 2024). In a training session, mice received 100 sucrose rewards (~3 μL, 15% in water) at random time intervals taken from an exponential distribution averaging 12 s. Mice consumed sucrose rewards from a lick spout positioned directly in front of their mouths. This same spout was used for lick detection. After completing random rewards, mice were trained on Pavlovian conditioning. An identical trial structure was used across all conditions, consisting of an auditory tone lasting 8 s followed by a delay of 1 s before sucrose reward delivery. Two variables of interest were manipulated—the length of the ITI (long or short) and the type of auditory tone (fixed or dynamic)—resulting in four conditions: long ITI/fixed tone (LF), long ITI/dynamic tone (LD), short ITI/dynamic tone (SD), and short ITI/fixed tone (SF). In the first cohort (Figure 1), mice began with the LF condition (mean 7.4 days, range 7–8) before progressing to the LD condition (mean 6.1 days, range 5–11), the SD condition (8 days), and finally the SF condition (8 days). In the second cohort (Figure 2), the experimental order was switched such that mice began with the LF condition before moving on to the SD condition and ending with the LD condition (8 days for each condition). The ITI was defined as the period between reward delivery and the subsequent trial’s cue onset. In the long ITI conditions, the ITI was drawn from a truncated exponential distribution with a mean of 55 s, maximum of 186 s, and minimum of 6 s. The short ITIs were similarly drawn from a truncated exponential distribution, averaging 8 s with a maximum of 12 s and minimum of 6 s. While mice had 100 trials per day in the short ITI conditions, long ITI sessions were capped at 40 trials due to limitations on the amount of time animals could spend in the head-fixed setup. For the fixed tone conditions, mice were randomly divided into groups presented with either a 3 kHz or 12 kHz tone. While the 12 kHz tone played continuously throughout the entire 8 s, the 3 kHz tone was pulsed (200ms on, 200ms off) to make this lower frequency tone more obvious to the mice. For the dynamic tone conditions, the tone frequency either increased (dynamic up↑ starting at 3 kHz) or decreased (dynamic down↓ starting at 12 kHz) by 80 Hz every 200ms, for a total change of 3.2 kHz across 8 s. Mice with the 3 kHz fixed tone had the dynamic up↑ tone, whereas mice with the 12 kHz fixed tone had the dynamic down↓ tone. This dynamic change in frequency across the 8 s was intentionally designed to indicate to the mice the temporal proximity to reward, which is thought to be necessary for ramps to appear in a Pavlovian setting.
 
 For the VR task, water-deprived mice were head-fixed above a low-friction belt treadmill. A magnetic rotary encoder attached to the treadmill was used to measure the running velocity of the mice. In front of the head-fixed treadmill setup, a virtual environment was displayed on a high-resolution monitor (20” screen, 16:9 aspect ratio) using BonVision Lopes et al., 2021 to look like a dead-end hallway with a patterned floor, walls, and ceiling. The different texture patterns in the virtual environment were yoked to running velocity such that it appeared as though the animal was travelling down the hallway. Upon reaching the end of the hallway, the screen would turn fully black and mice would receive sucrose reward delivery from a lick spout positioned within reach in front of them. The screen remained black for the full duration of the ITI until the reappearance of the starting frame of the virtual hallway signaled the next trial onset. To train mice to engage in this VR task, they began with a 10 cm long virtual hallway. This minimal distance requirement was chosen to make it relatively easy for the mice to build associations between their movement on the treadmill, the corresponding visual pattern movement displayed on the VR monitor, and reward deliveries. Based on their performance throughout training, the distance requirement progressively increased by increments of 5–20 cm across days until reaching a maximum distance of 67 cm. Training lasted an average of 21.4 days (range 11–38 days), ending once mice could consistently run down the full 67 cm virtual hallway for three consecutive days. The ITIs during training (“med ITI”) were randomly drawn from a truncated exponential distribution with a mean of 28 s, maximum of 90 s, and minimum of 6 s. Following training, mice were randomly divided into two groups with identical trials but different ITIs (long or short). Again, both ITIs were randomly drawn from truncated exponential distributions: long ITI (mean 62 s, max 186 s, min 6 s) and short ITI (mean 8 s, max 12 s, min 6 s). After 8 days of the first ITI condition, mice switched to the other condition for an additional 8 days. There were 50 trials per day in both the long and short ITI conditions.
 
-## Fiber photometry
+### Fiber photometry
 
 Beginning three weeks after viral injection, dLight photometry recordings were performed with either an open-source (PyPhotometry Akam and Walton, 2019) or commercial (Doric Lenses) fiber photometry system. Excitation LED light for wavelengths of 470 nm (dopamine-dependent dLight signal) and 405 nm (dopamine-independent isosbestic signal) was sinusoidally modulated via an LED driver and integrated into a fluorescence minicube (Doric Lenses). The same minicube was used to detect incoming fluorescent signals at a 12 kHz sampling frequency before demodulation and downsampling to 120 Hz. Excitation and emission light passed through the same low autofluorescence patchcord (400 μm, 0.57 NA, Doric Lenses). Light intensity at the tip of this patch cord was consistently ~40 μW across days. For Pavlovian conditioning, the photometry software received a TTL signal for the start and stop of the session to align the behavioral and photometry data. For alignment in the VR task, the photometry software received a TTL signal at each reward delivery.
 
-## Data analysis
+### Data analysis
 
-## Behavior
+#### Behavior
 
 Licking was the behavioral readout of learning used in Pavlovian conditioning. The lick rate was calculated by binning the number of licks every 100ms. A smoothed version produced by Gaussian filtering is used to visualize lick rate in PSTHs (Figure 1F, Figure 2—figure supplement 3A, Figure 4—figure supplement 1D). Anticipatory lick rate for the last three days combined per condition was calculated by subtracting the average baseline lick rate during the 1 s before cue onset from the average lick rate during the trace period 1 s before reward delivery (Figure 1G, Figure 2—figure supplement 3B). The same baseline subtraction method was used to calculate the average lick rate during the 3–8 s post-cue onset period (Figure 2—figure supplement 3C).
 
@@ -87,26 +209,46 @@ Running velocity, rather than licking, was the primary behavioral readout of lea
 
 The inter-trial interval (ITI) used throughout is defined as the time period between the previous trial reward delivery and the current trial onset (Figure 1C, Figure 4—figure supplement 1B). The inter-reward interval (IRI) is defined as the time period between the previous trial reward delivery and the current trial reward delivery (Figure 4—figure supplement 1B). For the previous IRI vs trial slope analysis (Figure 4—figure supplement 2), IRI outliers were removed from analysis if they were more than three standard deviations away from the mean of the original IRI distribution. Finally, trial durations in the VR task were defined as the time it took for mice to run 67 virtual cm from the start to the end of the virtual hallway (Figure 4—figure supplement 1B–C).
 
-## Dopamine
+#### Dopamine
 
 To analyze dLight fiber photometry data, first a least-squares fit was used to scale the 405 nm signal to the 470 nm signal. Then, a percentage dF/F was calculated as follows: dF/F = (470 – fitted 405) / (fitted 405) * 100. This session-wide dF/F was then used for subsequent analysis. The onset peak dF/F (Figure 1J, Figure 4I) was calculated by finding the maximum dF/F value within 1 s after onset and then subtracting the average dF/F value during the 1 s interval preceding onset (last three days per condition combined). For each trial in Pavlovian conditioning, the time-aligned dLight dF/F signal during the ‘ramp window’ of 3–8 s after cue onset was fit with linear regression to obtain a per-trial slope. These per-trial slopes were then averaged for each day separately (Figure 1L) or for the last three days in each condition (Figure 1M) for subsequent statistical analysis. A smoothing Gaussian filter was applied to the group average (Figure 1I, Figure 2B) and example trial (Figure 1K) dLight traces for visualization purposes.
 
 Distance, rather than time, was used to align the dLight dF/F signal in the VR task. Virtual distances were sampled every 30ms, while dF/F values were sampled every 10ms. To sync these signals, the average of every three dF/F values was assigned to the corresponding distance value. Any distance value that did not differ from the previous distance value was dropped from subsequent analysis (as was its mean dF/F value). This was done to avoid issues with averaging if the animal was stationary. For each trial in the VR task, the distance-aligned dLight dF/F signal during the ‘ramp window’ of 20–57 cm from the start of the virtual hallway was fit with linear regression to obtain a per-trial slope. These per-trial slopes were then averaged for each day separately (Figure 4L) or for the last 3 days in each condition (Figure 4M) for subsequent statistical analysis. To visualize the group-averaged distance-aligned dLight trace (Figure 4J) and example trial traces (Figure 4K), the mean dF/F was calculated for every 1 cm after rounding all distance values to the nearest integer.
 
-## Simulations
+### Simulations
 
-We previously proposed a learning model called Adjusted Net Contingency of Causal Relation (ANCCR; Jeong et al., 2022), which postulates that animals retrospectively search for causes (e.g. cues) when they receive a meaningful event (e.g. reward). ANCCR measures this retrospective association, which we call predecessor representation contingency (PRC), by comparing the strength of memory traces for a cue at rewards (M←cr\begin{document}$M_{\leftarrow cr}$\end{document}; Equation 1) to the baseline level of memory traces for the same cue updated continuously (M←c−\begin{document}$M_{\leftarrow c- }$\end{document}; Equation 2).(1)M←cr≡M←cr+α[E←cr−M←cr]\begin{document}$$\displaystyle M_{\leftarrow cr}\equiv M_{\leftarrow cr}+\alpha \left [E_{\leftarrow cr}- M_{\leftarrow cr}\right ]$$\end{document}(2)M←c−≡M←c−+α0[E←c−−M←c−]\begin{document}$$\displaystyle M_{\leftarrow c-} \equiv M_{\leftarrow c-} +\alpha _{0}[E_{\leftarrow c-}-M_{\leftarrow c-}]$$\end{document}(3)PRC←cr=M←cr−M←c−\begin{document}$$\displaystyle PRC_{\leftarrow cr}=M_{\leftarrow cr}- M_{\leftarrow c- }$$\end{document}
+We previously proposed a learning model called Adjusted Net Contingency of Causal Relation (ANCCR; Jeong et al., 2022), which postulates that animals retrospectively search for causes (e.g. cues) when they receive a meaningful event (e.g. reward). ANCCR measures this retrospective association, which we call predecessor representation contingency (PRC), by comparing the strength of memory traces for a cue at rewards ($M_{←cr}$; Equation 1) to the baseline level of memory traces for the same cue updated continuously ($M_{←c−}$; Equation 2).
 
-α\begin{document}$\alpha $\end{document} and α0\begin{document}$\alpha _{0}$\end{document} are learning rates and the baseline samples are updated every dt seconds. E←ci\begin{document}$E_{\leftarrow ci}$\end{document} represents eligibility trace of cue (c\begin{document}$c$\end{document}) at the time of event i\begin{document}$i$\end{document} and E←c−\begin{document}$E_{\leftarrow c- }$\end{document} represents eligibility trace of cue (c\begin{document}$c$\end{document}) at baseline samples updated continuously every dt seconds.
+$$
+M_{←cr}≡M_{←cr}+\alpha[E_{←cr}−M_{←cr}]
+$$
 
-The eligibility trace (E\begin{document}$E$\end{document}) decays exponentially over time depending on decay parameter T\begin{document}$T$\end{document} (Equation 4).(4)E←i(t)=∑ti≤te−(t−tiT)\begin{document}$$\displaystyle  E_{\leftarrow i}\left (t\right)=\sum _{t_{i}\leq t}e^{- \left (\frac{t- t_{i}}{T}\right)}$$\end{document}
 
-where ti≤t\begin{document}$t_{i}\leq t$\end{document} denotes the moments of past occurrences of event i.
 
-In Appendix 1, we derived a simple rule for the setting of T based on event rates. For the tasks considered here, this rule translated to a constant multiplied by IRI. We have shown in a revised version of a previous study (Burke et al., 2023) that α=1−(1−α0)IRIdt\begin{document}$\alpha =1- \left (1- \alpha _{0}\right)^{\frac{IRI}{dt}}$\end{document} during initial learning.
+$$
+M_{←c−}≡M_{←c−}+\alpha_{0}[E_{←c−}−M_{←c−}]
+$$
 
-To mimic the dynamic tone condition, we simulated the occurrence of 8 different cues in a sequence with a 1 s interval between each cue. We used 1 s intervals between cues because real animals are unlikely to detect the small change in frequency occurring every 200ms in the dynamic tone, and we assumed that a frequency change of 400 Hz in 1 s was noticeable to the animals. We included the offset of the last cue as an additional cue. This is based on observation of animal behavior, which showed a sharp rise in anticipatory licking following the offset of the last cue (Figure 1F–G). Inter-trial interval was matched to the actual experimental conditions, averaging 2 s for the short dynamic condition and 49 s for the long dynamic condition, with an additional 6 s fixed consummatory period. This resulted in 17 s IRI for short dynamic condition and 64 s IRI for long dynamic condition on average. 1000 trials were simulated for each condition, and the last 100 trials were used for analysis. Following parameters were used for simulation: w=0.5\begin{document}$w=0.5$\end{document}, bcues=0\begin{document}$b_{cues}=0$\end{document}, breward=0.5\begin{document}$b_{reward}=0.5$\end{document}, threshold=0.2\begin{document}$threshold=0.2$\end{document}, T=0.2\begin{document}$T=0.2$\end{document}*IRI, α0=5×10−3\begin{document}$\alpha _{0}=5\times 10^{- 3}$\end{document}, αR=1\begin{document}$\alpha _{R}=1$\end{document}, dt = 0.2 s.
 
-## Statistics
+
+$$
+PRC_{←cr}=M_{←cr}−M_{←c−}
+$$
+
+$\alpha$ and $\alpha_{0}$ are learning rates and the baseline samples are updated every dt seconds. $E_{←ci}$ represents eligibility trace of cue ($c$) at the time of event $i$ and $E_{←c−}$ represents eligibility trace of cue ($c$) at baseline samples updated continuously every dt seconds.
+
+The eligibility trace ($E$) decays exponentially over time depending on decay parameter $T$ (Equation 4).
+
+$$
+E_{←i}(t)=\sumt_{i}\leqte^{−(\frac{t−t_{i}}{T})}
+$$
+
+where $t_{i}\leqt$ denotes the moments of past occurrences of event i.
+
+In Appendix 1, we derived a simple rule for the setting of T based on event rates. For the tasks considered here, this rule translated to a constant multiplied by IRI. We have shown in a revised version of a previous study (Burke et al., 2023) that $\alpha=1−(1−\alpha_{0})^{\frac{IRI}{dt}}$ during initial learning.
+
+To mimic the dynamic tone condition, we simulated the occurrence of 8 different cues in a sequence with a 1 s interval between each cue. We used 1 s intervals between cues because real animals are unlikely to detect the small change in frequency occurring every 200ms in the dynamic tone, and we assumed that a frequency change of 400 Hz in 1 s was noticeable to the animals. We included the offset of the last cue as an additional cue. This is based on observation of animal behavior, which showed a sharp rise in anticipatory licking following the offset of the last cue (Figure 1F–G). Inter-trial interval was matched to the actual experimental conditions, averaging 2 s for the short dynamic condition and 49 s for the long dynamic condition, with an additional 6 s fixed consummatory period. This resulted in 17 s IRI for short dynamic condition and 64 s IRI for long dynamic condition on average. 1000 trials were simulated for each condition, and the last 100 trials were used for analysis. Following parameters were used for simulation: $w=0.5$, $b_{cues}=0$, $b_{reward}=0.5$, $threshold=0.2$, $T=0.2$*IRI, $\alpha_{0}=5\times10^{−3}$, $\alpha_{R}=1$, dt = 0.2 s.
+
+### Statistics
 
 All statistical tests were run on Python 3.11 using the scipy (version 1.10) package. Full details related to statistical tests are included in Supplementary file 1. Data presented in figures with error bars represent mean ± SEM. Significance was determined using 0.05 for α. *p<0.05, **p<0.01, ***p<0.001, ns p>0.05.

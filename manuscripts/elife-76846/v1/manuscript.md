@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02956yf07 School of Life and Environmental Sciences, University of Tsukuba Tsukuba Japan
+1. School of Life and Environmental Sciences, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
 
 † Corresponding author
 
@@ -27,25 +27,121 @@ To address these questions, a quantitatively high-throughput survey linking grow
 
 ## Results
 
-## Relating bacterial growth to environmental diversity
+### Relating bacterial growth to environmental diversity
 
 Precise bacterial growth profiling was performed by a high-throughput growth assay in varied medium combinations (Figure 1A), which were prepared with 44 pure chemical substances that are commonly used in different microbial culture media. As the chemical substances are ionized in solution, these medium combinations finally comprised 41 components (e.g. metal ions, amino acids [AAs], etc.) whose concentrations varied broadly on a logarithmic scale (Figure 1B). In brief, a total of 12,828 growth curves of Escherichia coli BW25113 grown in 966 different medium combinations were acquired. Three parameters, the lag time (τ), maximal growth rate (r), and saturated population density (K), were subsequently calculated according to the growth curves, which represented the quantitative features in the lag, exponential, and stationary growth phases, respectively (Figure 2A). The averaging of the biological replications and the removal of the unreliable measurements finally resulted in 961, 961, and 937 values of τ, r, and K, respectively (Figure 2B, Figure 2—source data 1). The three parameters all presented multimodal distributions in response to environmental variation, which agreed well with the rugged fitness landscapes proposed for adaptive evolution (Neidhart et al., 2014) and the immune response (Kauffman and Weinberger, 1989).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig1-v1.jpg)
+
+**Figure 1.:** (A) Flowchart of experimental conditions and data attainment. Colour gradation indicates the concentration gradient of the pure chemical compound used in the medium combinations. (B) Concentration variation of the components comprising the medium combinations. Colour variation indicates the categories of elements. The concentrations are indicated on a logarithmic scale.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The number of varied concentrations used in the medium combinations is indicated for individual components.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The product names of the compounds and the logarithmic concentrations are shown. The three biological replicates are shown as blue dots. The red lines indicate the condition of M63 minimal medium.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The product names of the compounds and the logarithmic concentrations are shown. The three biological replicates are shown as blue dots. The red lines indicate the condition of M63 minimal medium.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig2-v1.jpg)
+
+**Figure 2.:** (A) Three growth parameters calculated from growth curves. The lag time (τ), the growth rate (r), and the saturated population size (K) are indicated. (B) Distributions of the three parameters. The numbers of medium combinations (N) used are indicated. (C) Principal component analysis (PCA) of medium combinations. The contributions of PC1 and PC2 are shown. (D) Correlations of the three parameters to PC1 and PC2. Spearman’s correlation coefficients and the p values are indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Clusters of medium combinations. (B) Distributions of lag time (τ), growth rate (r), and saturated population size (K) coloured by the four clusters.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Two fitness distributions in media A and B are shown as an example. Colour variation of circles represent the differentiation in cell populations.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The growth curves, the calculated growth rates, and maximal population size are shown from left to right panels. Blue, green, and yellow indicate the daily transfer of subculture for three times (days). Standard errors of replications are indicated.
+
 Clustering analyses and principal component analysis (PCA) were applied to the medium combinations. The 966 medium combinations could be mainly divided into four clusters (Figure 2C), roughly with respect to the multimodality of the distributions (Figure 2—figure supplement 1). If the three parameters of τ, r, and K, which all showed the multimodal distributions, were independent, more than eight clusters were anticipated. Only four separate clusters were identified, indicating that the growth parameters were somehow dependent. The three parameters were all correlated with the two main PCs (Figure 2D), suggesting that bacterial growth was determined by certain common components comprising medium combinations. The results presented an overview of the relationship between the medium combinations and bacterial growth and indicated the growth law in common mediated by the medium components.
 
-## Decision-making components for bacterial growth
+### Decision-making components for bacterial growth
 
 ML approaches were applied to predict the three parameters according to the medium combinations (Figure 3A). As a preliminary test, five representative ML models and an ensemble model were trained and evaluated. The results showed that the prediction accuracy was approximately equivalent among the six ML models (Figure 3B), independent of the evaluation metrics (Figure 3—figure supplement 1). It indicated that the simple ML models were available to tackle the large dataset generated by the throughput growth assay and appropriate for the prediction of bacterial growth according to the environmental details, e.g., medium composition. To determine an explainable linkage between bacterial growth and the medium constitution, the ML model of the gradient-boosted decision tree (GBDT) was chosen for further investigation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig3-v1.jpg)
+
+**Figure 3.:** (A) Workflow of ML. (B) Accuracy of the ML models. Boxplots of the evaluation metrics obtained in the ML prediction of growth rate are shown. The root mean squared errors (RMSEs) of five independent tests are indicated as black points.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Boxplots of five different evaluation metrics, i.e., coefficient of determination (R2) (A), mean absolute error (MAE) (B), mean squared error (MSE) (C), explained variance score (D), and root mean squared error (RMSE) (E), obtained in the ML prediction and multiple regression of the growth rate are shown. The results from five independent tests are indicated as black points. Asterisks indicate statistical significance of Scheffe’s multiple comparison test (p<0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The time used to train the ML models by the supercomputer is shown in the boxplots of five independent replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** 10–90% of the big data (the growth rate dataset) were randomly selected for model training. The accuracy of the growth rates predicted by the trained GBDT model was evaluated by coefficient of determination (R2). Model training by random selection and GBDT prediction was performed 100 times at each relative abundance of training data. The boxplots represent the accuracy of the 100 training and prediction runs of the growth rate by GBDT.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Five ML models and the number of data points used in common are indicated. The experimental errors caused by the biological replications are shown as the coefficient of variance (CV).
+
 Intriguingly, repeated GBDT prediction showed that the growth parameters were largely determined by a single component out of 41 components comprising the medium (Figure 4A, Figure 4—source data 1). It seemed that a few key components played a determinant role in bacterial growth. The top 10 features (i.e. components) contributing to the three parameters somehow overlapped (e.g. K, Na, and phosphate), which might reflect the common effect of osmotic balance resulting from these components. Nevertheless, the components of the highest priority in governing the three parameters were highly differentiated, i.e., serine, sulfate, and glucose for τ, r, and K, respectively (Figure 4A). This finding was confirmed by the correlations of the three parameters to the changes in the concentrations of the three components, irrespective of the large variation in other components present (Figure 4B, Figure 4—figure supplement 1). Since the Spearman’s rank correlation was used, the large size of dataset led to high significance, which was somehow discrepant to the graphics. It suggested that growth decisions were highly constrained by a few components and were largely distinguished in response to the growth phase.
 
-## Sensitive components affecting bacterial growth
+![Figure 4.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig4-v1.jpg)
+
+**Figure 4.:** (A) Relative contributions of the components to the three parameters predicted by gradient-boosted decision tree (GBDT). 10 components with large contributions to the three parameters of lag time (τ), growth rate (r), and saturated population size (K) are shown in order. The remaining 31 components are summed as ‘Others’. (B) Correlation of the concentrations of the components with the growth parameters. The components with the largest contributions to the three parameters τ, r, and K are shown individually. Spearman’s correlation coefficients and the p values are indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The chemical components with the largest contributions to the three parameters lag time (τ), growth rate (r), and saturated population size (K) are shown individually. The concentration gradients of the three chemicals were divided into four or five ranges, as shown on the horizontal axes.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The continuous probability distribution of the multimodal distribution of r (A) determined by Gaussian kernel density estimation is indicated by the red lines. The two separated distributions (datasets) are indicated as low and high. Gradient-boosted decision tree (GBDT) predictions of the low (B) and high (C) distributions are shown. 10 components with large contributions to the three parameters lag time (τ), r, and saturated population size (K) are shown in order. The remaining 31 components are summed as ‘Others’.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The continuous probability distribution of the multimodal distribution of K (A) determined by Gaussian kernel density estimation is indicated by the red lines. The two separated distributions (datasets) are indicated as low and high. Gradient-boosted decision tree (GBDT) predictions of the low (B) and high (C) distributions are shown. 10 components with large contributions to the three parameters lag time (τ), growth rate (r), and K are shown in order. The remaining 31 components are summed as ‘Others’.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The continuous probability distribution of the multimodal distribution of τ (A) determined by Gaussian kernel density estimation is indicated by the red lines. The two separated distributions (datasets) are indicated as low and high. Gradient-boosted decision tree (GBDT) predictions of the low (B) and high (C) distributions are shown. 10 components with large contributions to the three parameters τ, growth rate (r), and saturated population size (K) are shown in order. The remaining 31 components are summed as ‘Others’.
+
+### Sensitive components affecting bacterial growth
 
 As the three growth parameters were somehow determinatively decided by a few components, the changes in growth parameters in response to the concentration gradient of each component were evaluated according to the previous study (Kurokawa et al., 2021). Here, the area (i.e. the shadowed space, S) above the fitting curve of cubic polynomial regression to the normalized plot was newly defined, in which the maxima of both the concentration gradients and the growth parameters were rescaled to one unit (Figure 5A, Figure 5—figure supplement 1). An assortment of fitting curves was acquired for the target component (Figure 5—figure supplements 2–4) because of the various combinations of the remaining 40 components (Figure 5B). The mean of these S values was calculated and designated the sensitivity of the component for bacterial growth in response to the alternative combinations of other components. A larger value of S indicated a higher sensitivity of the component, i.e., indicated larger changes in the growth parameters due to the variation in the concentration gradients of the other 40 components. Consequently, a total of 41 S values were acquired with respect to the three parameters, i.e., Sτ, Sr, and SK (Figure 5—figure supplement 5, Figure 5—source data 1), which all presented long-tailed distributions (Figure 5C). The sum of Sτ, Sr, and SK, which was defined as the global sensitivity (Sg) of the component across the three growth phases, showed a similar long-tailed distribution shape. The four distributions were all likely to follow the power law (Evans et al., 2021; Furusawa and Kaneko, 2006), which agreed well with the ML-predicted conclusion that only a few components determined the growth. This finding strongly suggested that the decision-making components for bacterial growth were present among the 41 components, regardless of the complex interactions among these components.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-v1.jpg)
+
+**Figure 5.:** (A) Definition of sensitivity. As an example, the upper and bottom panels indicate the regression curve across the concentration gradient of glucose and the normalized regression curve, in which both the concentration gradient and the growth rates are rescaled within one unit, respectively. The shaded area was determined as the sensitivity (S) of glucose. (B) Variation in the sensitivity. Six different regression curves, i.e., six different S values, of glucose are shown, which result from the alternative combinations of the other 40 components (left panels). The yellow gradation and blue lines represent the variation in medium combinations and the corresponding regression curves, respectively (right panels). (C) Distributions of the mean sensitivities. The mean S values evaluated according to lag time (τ), growth rate (r), and saturated population size (K) are shown as Sτ, Sr, and SK, respectively. The sum of the three S values is shown as global sensitivity (Sg). The black lines indicate the fitting curves of the power law. (D) Most sensitive components. The components with the largest S values are shown in the order of value. (E) Balance of sensitivity. The balance of sensitivity is visualized by the triangle of Sr, SK, and Sτ in red dotted lines. The solid lines in pink, blue, and green represent Sr, SK, and Sτ, respectively. Those close to or far from an equilateral triangle are determined as the balanced (Ile) or biased (Cys) sensitivity in response to the growth phases, respectively. (F) Variance of sensitivity. The components with either the smallest or the largest Vs are shown in the order of value. Five components of either balanced or biased sensitivity are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The sensitivity of growth rate (r) for a given chemical component (Chemical 1) is shown as an example. r1,max and Sr,1 (i=1–6) represent the maximal growth rate and the normalized space area in Pattern 1, respectively. Patterns indicate the combinations of the chemicals in the media other than Chemical 1. The numeral indicates the variation of chemicals, from 1 to 41. A total of five to six patterns (i=5 ~ 6) were tested for each chemical. Gradation in blue and grey represent the concentration gradients of Chemical 1 and the other chemicals, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Colour variation indicates the alternative combinations of the other 40 components.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Colour variation indicates the alternative combinations of the other 40 components.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Colour variation indicates the alternative combinations of the other 40 components.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** The values of Sτ, Sr, SK, Sg, and Vs are shown.
+
 The components with the largest S values, i.e., Ile, K, and phosphate (Figure 5D), overlapped among the three parameters, suggesting that these components were highly sensitive to the fluctuation of other components for all growth phases. In particular, Ile was the most sensitive component, as it presented the largest Sg, i.e., the largest changes in bacterial growth responding to the concentration gradient of Ile in different combinations of other chemicals (i.e. patterns shown in Figure 5—figure supplement 1). The result well supported the finding that the components dominating the three second-priority parameters were Leu and Ile (Figure 4A). Additionally, analysing the variance (Vs) of the Sτ, Sr, and SK values showed that the largest Vs values was in Cys (Figure 5F, Figure 5—figure supplement 5), indicating biased sensitivity for the three growth phases. In addition, the smallest Vs was detected in Ile, suggesting equivalent sensitivity all growth phases. Taken together, Ile and/or branched-chain AAs (BCAAs) participate commonly in all growth phases and are probably global coordinators for bacterial growth. This finding was independent of the methods used for the evaluation of the variance (Figure 5—source data 1).
 
-## Risk diversification strategy for population survival
+### Risk diversification strategy for population survival
 
 The three components serine, sulfate, and glucose, determining the growth lag, growth rate, and growth yield, respectively (Figure 6A), could be categorized into the three major elements of nitrogen (N), sulfur (S), and carbon (C). The contribution and mechanism of C and N to population dynamics have been intensively studied (Brown et al., 2014; Côté et al., 2016; El Zahed and Brown, 2018; Egli, 1991), whereas little is known concerning S. To link sulfate to growth, flux balance analysis (FBA) (Orth et al., 2010) simulation was performed. The result showed that a decreased growth rate was associated with an increased rate of sulfate uptake (Figure 6B), supporting the determinative contribution of S to the growth rate. Nevertheless, the FBA simulation did not provide a perfect explanation, as the concentration of sulfate used in the simulation was somehow excessive compared to that used for culture in general. The determinative role of S (SO42-) in the growth rate might be related to its function as a material because it is not only a major constituent of the earth but also the major element in organisms (Morgan and Anders, 1980; Heldal et al., 1985; Novoselov et al., 2013). Since S (SO42-) was a highly reactive chemical, e.g., exposure to SO42- increased reactive oxygen species levels in bacteria (Chen et al., 2016), its determinative role in growth rates was probably mediated by the stress response.
 
@@ -55,7 +151,7 @@ The three components serine, sulfate, and glucose, determining the growth lag, g
 
 Notably, the different elements regulating various growth phases strongly implied risk diversification in fate decisions as a survival strategy. To demonstrate whether the differentiation of elements for growth decisions are a practicable survival strategy, theoretical simulations based on either a single or multiple determinants for the three parameters were additionally performed. Every 1000 simulations were conducted at the varied threshold (d), i.e., the ratio was defined as population extinction. The results showed that a three-component set of decision makers led to a higher probability of survival, particularly when raising the extinction threshold (Figure 6C). It suggested that the differentiation in fate decision makers prevented the bacterial population from undergoing extinction more competently than the single decision maker did. It must be beneficial for the bacteria growing in a fluctuating environment, as it agreed well with the prospected Y-A-S strategy of the microorganisms in nature, i.e., the growth strategy for high yield, resource acquisition, and stress tolerance, respectively (Malik et al., 2020). In addition, the simulated result of reduced risk of extinction mediated by the differentiation in decision makers seemed to be biologically reasonable. The previous studies observed the trophic (Sanders et al., 2018) and functional (Li et al., 2021) redundancy in ecosystems and the genetic redundancy in living cells (El-Brolosy and Stainier, 2017), which demonstrated that the survivability was secured by the participation of multiple factors. It must be beneficial for maintaining the robustness of ecosystems and cells.
 
-## Coordination in bacterial population dynamics
+### Coordination in bacterial population dynamics
 
 As the differentiation in decision-making components for bacterial growth allowed the independent decision for varied growth phases, the previously reported correlated changes in the growth parameters (Novak et al., 2006; Engen and Saether, 2006; Basan et al., 2020; Liu et al., 2006; Nishimura et al., 2017) were supposed to be weakened. However, the three parameters remained significantly correlated (Figure 7A), which indicated that the risk diversification strategy did not disturb the trade-off or coordination, e.g., K/r selection (Cavalier-Smith, 1980). The correlations demonstrated that τ, r, and K were highly dependent, which well explained why the multimodal distributions of the growth parameters led to only four PCA clusters (Figure 2). Considering the dependency among the three growth parameters, which were decided by three different chemicals (Figure 6A), every 10,000 simulations of population dynamics considering the correlation coefficients (Figure 7A) were additionally performed. The results showed that the three decision makers facilitated the larger population size than the single decision maker did (Figure 7B), revealing that the differentiation in decision-making chemicals benefited the bacteria in maintain the final population size.
 
@@ -64,6 +160,14 @@ As the differentiation in decision-making components for bacterial growth allowe
 **Figure 7.:** (A) Density plots of the three parameters. Pairs of the three parameters lag time (τ), growth rates (r), and saturated population size (K) are plotted as dots. The colour bars indicate the numbers of data points. Spearman’s correlation coefficients and the p values are indicated. (B) Violin plots of the final population size. Relative population size of every 10,000 simulations considering the correlation coefficients of any pairs of the three parameters τ, r, and K is shown. Statistical significance of the Mann-Whitney U test is indicated.
 
 The correlated changes of the growth parameters might be due to the global participation of Ile and/or BCAAs, as the decision makers and common sensors. The frequency of Ile and BCAAs coded into the proteins in growing cells was evaluated according to the expression levels of the genes coding for the proteins (Figure 8A). The relative abundance of AAs was determined as the ratio of the frequency of the target AA to the sum of all 20 AAs in all proteins. Taking into account the variation in the copy number of proteins in growing cells, the frequency of each AA was normalized based on the relative abundance of gene expression (Figure 8B). The relative expression level of each gene (protein) was calculated as the mean of biologically repeated transcripts according to previous reports (Liu et al., 2006; Ying et al., 2013). The results showed that the relative abundances of intracellular Ile and BCAAs were significantly higher than their theoretical ratios, i.e., 1 or 3 out of 20 AAs, 5 or 15%, respectively (Figure 8C). Although the most abundant AA was not Ile but Leu (Figure 8—figure supplement 1), their regulation and metabolism are closely related (Newman et al., 1992). The results revealed that the protein building blocks required more BCAAs than other AAs, except Ala and Gly (Figure 8—figure supplement 1). The coordination among the three growth parameters might be balanced by BCAAs. In addition, the correlations of the growth parameters to each other and to the chemical gradients were detected at a population level (as shown in Figure 4 and Figure 7), although both the cellular status and the environmental condition must have been fluctuated and changed along with the bacterial growth (i.e. batch culture). These coordinated alterations indicated the homeostasis in the complex systems, e.g., living cells and ecosystems.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig8-v1.jpg)
+
+**Figure 8.:** (A) Chromosomal distribution of 20 amino acids (AAs). The numbers of 20 AAs coded into the proteins are indicated with the upward vertical bars at the chromosomal positions of the corresponding genes. BCAAs and the remaining 17 AAs are in colour and monotone, respectively. The expression levels of all genes coding for the proteins are shown in a logarithmic scale and are indicated by the downward vertical bar in grey. (B) Relative abundance of 20 AAs. Twenty AAs are shown with a single letter abbreviation. BCAAs are highlighted. The E. coli strains BW25113 and MG1655 are indicated. Frequency represents the relative abundance of the AAs, while all proteins encoded on the genome are of equivalent amount. LB, M63, regular and heat shock indicate the relative abundance of the AAs according to the transcriptomes of the E. coli cells grown in LB, in M63, at 37°C and at heat shock conditions, respectively. (C) Relative abundance of Ile and BCAAs in growing E. coli. The boxplots represent the relative ratios estimated according to the genome and transcriptome information, and the red lines indicate the theoretical ratios of the 20 AAs.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/76846/elife-76846-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The boxplots represent the relative ratios estimated according to the genome and transcriptome information, and the red lines indicate the theoretical ratios of the 20 AAs.
 
 ## Discussion
 
@@ -79,27 +183,27 @@ In summary, the present study provided an informative and quantitative big datas
 
 ## Materials and methods
 
-## Bacterial strain and stock preparation
+### Bacterial strain and stock preparation
 
 The wild-type E. coli strain BW25113 was used, which was provided by the National BioResource Project (National Institute of Genetics, Shizuoka, Japan). To reduce the experimental errors of the repeated growth assay on different days, common stocks of the exponentially growing E. coli cell culture were prepared beforehand, as described previously (Kurokawa and Ying, 2017). In brief, the E. coli cells were cultured in 5 mL of M63 minimal medium using a bioshaker (BR23-PF, Taitec) at 200 rpm and 37°C. The cell culture was stopped when its optical density measured at 600 nm (OD600) reached ~0.1. The culture was subsequently divided into a small portion (60 µL) in 1.5 mL microtubes (Watson) and stored at –80°C for future use. Hundreds of aliquots (stocks) were prepared at once and disposably used in the growth assay; that is, the aliquots were used only once, and remaining cultures were discarded.
 
-## Medium composition and combinations
+### Medium composition and combinations
 
 A total of 44 pure chemical substances, determined according to the literature (Oberhardt et al., 2015; Neidhardt et al., 1974), were all commercially available (Wako or Sigma). The minimal concentrations of these compounds were set at zero in general, and the maximal concentrations were determined individually according to the literature or laboratory manuals. In addition, the concentrations of the compounds rarely used in the known media were experimentally examined (Figure 1—figure supplements 2 and 3). According to the determined maximal concentration, stock solutions of these chemical substances were prepared in advance for the easy preparation of medium combinations. The chemical substrates were dissolved in highly pure water (Direct-Q UV, Merck) at high concentrations. Subsequently, the resultant solutions were sterilized, either using a sterile syringe filter with a 0.22 µm pore size and hydrophilic PVDF membrane (Merck) for those heat sensitive compounds or by autoclaving at 121°C for 20 min. The stock solutions were divided into aliquots (10–100 μL) in 1.5 mL microtubes (Watson) and stored at –30°C for future use. A total of 100–300 stocks were prepared at once for individual chemical substrates. To avoid repeated thawing and freezing of the stock solutions, aliquots were used only once. The medium combinations were prepared by mixing the stock solutions (aliquots) just before the growth assay. The concentrations of the substrates were varied on a logarithmic scale, and only a single substrate was altered for each assay. A total of 966 combinations were tested in the growth assay (Figure 2—source data 1).
 
-## Growth assay
+### Growth assay
 
 The high-throughput growth assay was conducted to acquire the growth curves in the medium combinations, as described previously (Ashino et al., 2019). The culture stocks were diluted 1000-fold with 5 mL of fresh media of varying medium combinations in 5 mL tubes (Watson). The diluted cell culture mixtures were loaded into a 96-well microplate (Costar) in four-to-six wells (200 μL per well) with varied locations per medium combination. The 96-well plates were incubated in a plate reader (Epoch2, BioTek) with a rotation rate of 567 rpm at 37°C. The temporal growth of the E. coli cells was detected at an absorbance of 600 nm, and the readings were obtained at 30 min intervals for 24–48 hr. A total of 12,828 reliable growth curves were acquired.
 
-## Data processing and calculation of the growth parameters
+### Data processing and calculation of the growth parameters
 
 The temporal OD600 reads were exported from the plate reader and processed with Python, as described in detail elsewhere (Ashino et al., 2019). The growth parameters τ, r, and K were evaluated according to previous reports (Ashino et al., 2019; Kurokawa et al., 2016) using a previously developed Python program (Ashino et al., 2019). In brief, τ was determined as the time when the increase in OD600 was observed in five consecutive reads; r was defined as the mean of three continuous logarithmic slopes of every two neighbouring OD600 values within the exponential growth phase using ‘gradient’ in the ‘numpy’ library; and K was calculated as the mean of three continuous OD600 values including the maximum, which was determined using ‘argmax’ in the ‘numpy’ library.
 
-## PCA and clustering
+### PCA and clustering
 
 PCA (Ringnér, 2008; Abdi and Williams, 2010) was performed using ‘PCA’ in the ‘decomposition’ module from ‘scikit-learn’ (Pedregosa, 2011). The concentrations of 41 components were normalized within one unit, and the 966 combinations were used as input. The principal component scores of PC1 and PC2 were used for the correlation analysis of the three growth parameters. Clustering of the PC1–PC2 scores was performed using ‘KMeans’ in the ‘cluster’ module of the ‘scikit-learn’ library.
 
-## ML models and multiple regression model and evaluation
+### ML models and multiple regression model and evaluation
 
 ML was performed using a supercomputer, the Cygnus system (NEC LX 124Rh-4G). The ML models of GBDT, k-nearest neighbour (k-NN), neural network (NN), random forest, support vector machine (SVM), and multiple regression were performed using ‘GradientBoostingRegressor’ in the ‘ensemble’ module, ‘KNeighborsRegressor’ in the ‘neighbors’ module, ‘MLPRegressor’ in the ‘neural_network’ module, ‘RandomForestRegressor’ in the ‘ensemble’ module, ‘SVR’ in the ‘svm’ module, and “LinearRegression” in the ‘linear_model’ module, respectively. The ensemble model was performed using ‘StackingRegressor’ in the ‘ensemble’ module and ‘LinearRegression’ in the ‘linear_model’ module. Data normalization was performed using ‘StandardScaler’ in the ‘preprocessing’ module for k-NN, NN and multiple regression, and ‘MinMaxScaler’ in the ‘svm’ module for SVM. All these modules were in the ‘scikit-learn’ library.
 
@@ -107,46 +211,168 @@ A fivefold nested cross validation was performed to evaluate the ML models. A gr
 
 The metrics adopted to estimate the accuracy of the ML models were determined as follows. The coefficient of determination (R2), mean squared error (MSE), mean absolute error, and explained variance score were calculated using ‘r2_score’, ‘mean_squared_error’, ‘mean_absolute_error’, and ‘explained_variance_score’ in the ‘metrics’ module of the ‘scikit-learn’ library, respectively. The root mean squared error was calculated with the MSE values using ‘sqrt’ in the ‘numpy’ library. For each metric, Scheffe’s multiple comparison procedure was used to test for differences in the ML and multiple regression models.
 
-## GBDT prediction
+### GBDT prediction
 
 A regression model was created by using the log-transformed concentrations of the components. The ‘feature_importances_’ attribute represents the importance of each component to the creation of the model. Outer and inner cross validation was performed using ‘cross_val_score’ in the ‘model_selection’ module of the ‘scikit-learn’ library. The hyperparameters were searched using ‘GridSearchCV’ in the ‘model_selection’ module of the ‘scikit-learn’ library. ‘learning_rate’ and ‘max_depth’ were searched from 0.01 to 0.5 in increments of 0.01 and among 2, 3, 4, and 5, respectively. ‘n_estimatiors’ was configured at 300, and the other hyperparameters were set to default values. The ‘feature_inportance_’ values were calculated by fivefold cross validation, and the mean of the five values was used as the result of the GBDT prediction.
 
-## Evaluation of sensitivity
+### Evaluation of sensitivity
 
-The changes in the growth parameters associated with the concentration gradient of each component were evaluated by curve fitting of a cubic polynomial as described previously (Kurokawa et al., 2021).(1)Sp, i= 1-(Area × pi, max-1×xmax-xmin-1)
+The changes in the growth parameters associated with the concentration gradient of each component were evaluated by curve fitting of a cubic polynomial as described previously (Kurokawa et al., 2021).
 
-Here, Sp,i, Area, pi, max, xmin, and xmax represent the sensitivity evaluated with any of the growth parameters in condition i, the area under the regression curve, the largest value of the growth parameter in condition i, and the minimum and maximum concentrations of each chemical component, respectively. The sensitivity was further evaluated as follows.(2)Sp =1n×∑i=1nSp, i(n=6,p=τ,r,K)(3)Sg =Sτ+ Sr+SK(4.1)Vs= ∑(SpSg −S¯)2m−1(m=3)(4.2)S¯ =13 × Sτ+Sr+SK Sg
+$$
+S_{p, i}= 1-(Area \times p_{i, max}^{-1}\timesx_{max}-x_{min}^{-1})
+$$
 
-Here, Sτ, Sr, and SK represent the sensitivity of τ, r, and K, respectively. Sg and Vs represent the sum and the variance of Sτ, Sr, and SK, respectively. Additionally, four different methods were applied to estimate Vs, as follows.(5)Crit. 1 = Sτ+Sr+ SKSg(6)Crit. 2 = Sτ + Sr + SK - 3S`Sg(7)Crit. 3 = ∑Sp - S`2m-1  (8)Crit. 4 = min(∠Sτ, ∠Sr, ∠SK)
+Here, Sp,i, Area, pi, max, xmin, and xmax represent the sensitivity evaluated with any of the growth parameters in condition i, the area under the regression curve, the largest value of the growth parameter in condition i, and the minimum and maximum concentrations of each chemical component, respectively. The sensitivity was further evaluated as follows.
 
-Here, S’ indicates the mean of Sτ, Sr, and SK. ∠Sτ , ∠Sr, and ∠SK represent the three angles calculated from the triangle (Figure 5E).
+$$
+S_{p} =\frac{1}{n}\times\sumi=1nS_{p, i}(n=6,p=\tau,r,K)
+$$
 
-## FBA simulation
+
+
+$$
+S_{g} =S_{\tau}+ S_{r}+S_{K}
+$$
+
+
+
+$$
+V_{s}= \sqrt{\frac{\sum(\frac{S_{p}}{S_{g}} −S¯)^{2}}{m−1}}(m=3)
+$$
+
+
+
+$$
+S¯ =\frac{1}{3} \times \frac{S_{\tau}+S_{r}+S_{K}}{ S_{g}}
+$$
+
+Here, Sτ, Sr, and SK represent the sensitivity of τ, r, and K, respectively. Sg and Vs represent the sum and the variance of Sτ, Sr, and SK, respectively. Additionally, four different methods were applied to estimate Vs, as follows.
+
+$$
+Crit. 1 = \frac{S_{\tau}+S_{r}+ S_{K}}{S_{g}}
+$$
+
+
+
+$$
+Crit. 2 =\frac{ S_{\tau} + S_{r} + S_{K} - 3S`}{S_{g}}
+$$
+
+
+
+$$
+Crit. 3 = \sqrt{\frac{\sumS_{p} - S^{`}^{2}}{m-1}}  
+$$
+
+
+
+$$
+Crit. 4 = min(∠S_{\tau}, ∠S_{r}, ∠S_{K})
+$$
+
+Here, S’ indicates the mean of Sτ, Sr, and SK. $∠S_{\tau}$ , $∠S_{r}$, and $∠S_{K}$ represent the three angles calculated from the triangle (Figure 5E).
+
+### FBA simulation
 
 FBA simulation was performed using the open software COBRAme (Lloyd et al., 2018) iJL1678b-ME and qMINOS, which were available in the Docker images (Lloyd et al., 2018), were used as the model and the solver, respectively, where ‘mumax’ and ‘precision’ were set as 2 and 1E-6, respectively. 4 out of 41 components, i.e., VB9, VB2, borate, and PABA, were excluded in the simulation, as they were absent in the ME model. The lower bounds of the efflux of the components were set as the negative values, which allowed the E. coli cells to take them up from the media. The lower bound of the efflux of AAs and citrate was set to –10, and –1000 was set for the others. The lower bounds of the efflux of selenite, selenite, tungstate, Li, Sc, and Tl were set to zero, and those of cobalt, Mn, Ni, RNase_m5, RNase_16, and RNase_m23 were set as −0.00001, –0.001, −0.001, –1, –1, and –1, respectively, because these components were absent in the present study. The uptake of sulfate was fixed by setting the upper bound of the efflux to a negative value to predict the growth rate when the uptake of sulfate was varied.
 
-## Genomic datasets and annotation
+### Genomic datasets and annotation
 
 The genome and transcriptome datasets of the E. coli BW25113 and MG1655 strains were obtained from GenBank (CP009273 and NC_000913) and GEO (GSE33212 and GSE136101), respectively. The gene (protein) annotation and counting of the AAs were processed using BioPython (Cock et al., 2009).
 
-## Theoretical simulation of survival probability
+### Theoretical simulation of survival probability
 
-The simulation of population dynamics over 24 hr was conducted according to the following equations.(9)N0 = Kmax × 0.001(10.1)τ = T × τr (T=24)(10.2)r = rr(10.3)K = Kmax × Kr (Kmax=1)
+The simulation of population dynamics over 24 hr was conducted according to the following equations.
 
-Here, N0, Kmax τr, rr, and Kr are the initial population, the population maximum, and the three variables τ, r, and K, respectively. In the case of triple independent decision makers, the values of τr, rr, and Kr were randomly selected from 0 to 1 without coordinated change. In the case of a single common decision maker, once any of the three parameters was randomly selected from 0 to 1, the other two were decided as follows.(10.4)τr = 1- rr(10.5)Kr = 1- rr
+$$
+N_{0} = K_{max} \times 0.001
+$$
 
-The population dynamics were defined as follows.(11.1)ti<τ , N(ti) = N0(11.2)ti≥τ N(ti)=K+N0N0+(K−N0)e−rtj(11.3)tj= ti-τ
 
-where N(ti), tj, and ti are the population size at time ti, any time point within the exponential phase, and any time point from 0 to 24 hr in a 0.5 hr interval, respectively. Whether the population was extinct or survived was determined according to the survival threshold, d, as follows.(12.1)N(24) < d,death(12.2)N(24) ≥ d,survival(12.3)d = Kmax × dr
+
+$$
+\tau = T \times \tau_{r} (T=24)
+$$
+
+
+
+$$
+r = r_{r}
+$$
+
+
+
+$$
+K = K_{max} \times K_{r} (K_{max}=1)
+$$
+
+Here, N0, Kmax τr, rr, and Kr are the initial population, the population maximum, and the three variables τ, r, and K, respectively. In the case of triple independent decision makers, the values of τr, rr, and Kr were randomly selected from 0 to 1 without coordinated change. In the case of a single common decision maker, once any of the three parameters was randomly selected from 0 to 1, the other two were decided as follows.
+
+$$
+\tau_{r} = 1- r_{r}
+$$
+
+
+
+$$
+K_{r} = 1- r_{r}
+$$
+
+The population dynamics were defined as follows.
+
+$$
+t_{i}<\tau , N(t_{i}) = N_{0}
+$$
+
+
+
+$$
+t_{i}\geq\tau N(t_{i})=\frac{K+N_{0}}{N_{0}+(K−N_{0})e^{−rt_{j}}}
+$$
+
+
+
+$$
+t_{j}= t_{i}-\tau
+$$
+
+where N(ti), tj, and ti are the population size at time ti, any time point within the exponential phase, and any time point from 0 to 24 hr in a 0.5 hr interval, respectively. Whether the population was extinct or survived was determined according to the survival threshold, d, as follows.
+
+$$
+N(24) < d,death
+$$
+
+
+
+$$
+N(24) \geq d,survival
+$$
+
+
+
+$$
+d = K_{max} \times d_{r}
+$$
 
 Here, N(24) and dr are the final population size at 24 hr and the threshold varying from 0 to 1 in increments of 0.05, respectively. The survival probability was defined as the frequency of ‘survival’ in every 1000 simulations at each dr.
 
-## Theoretical simulation of population dynamics considering the correlation
+### Theoretical simulation of population dynamics considering the correlation
 
-Considering the correlations among the growth parameters, τr in 10.1 (denoted τr_Tcorr) was randomly varying from 0 to 1, and rr in 10.2 (denoted as rr_Tcorr) and Kr in 10. 3 (denoted as Kr_Tcorr) were determined as follows.(13.1)rr_Tcorr = Cτr1-τr_Tcorr+1-CτrIr(13.2)Kr_Tcorr = CτK×τr_Tcorr+CrK1-rr_Tcorr+1-CτK-CrKIK
+Considering the correlations among the growth parameters, τr in 10.1 (denoted τr_Tcorr) was randomly varying from 0 to 1, and rr in 10.2 (denoted as rr_Tcorr) and Kr in 10. 3 (denoted as Kr_Tcorr) were determined as follows.
+
+$$
+r_{r_Tcorr} = C_{\taur}1-\tau_{r_Tcorr}+1-C_{\taur}I_{r}
+$$
+
+
+
+$$
+K_{r_Tcorr} = C_{\tauK}\times\tau_{r_Tcorr}+C_{rK}1-r_{r_Tcorr}+1-C_{\tauK}-C_{rK}I_{K}
+$$
 
 Here, Cτr, CτK, and CrK represented the correlation coefficients of any pairs of τ, r, and K, respectively. According to the correlation coefficients acquired from the growth assay (Figure 7A), Cτr, CτK, and CrK were set to 0.74, 0.58, and 0.17, respectively. In addition, Ir and IK were variables randomly selected from 0 to 1. Simulation of population dynamics was performed according to 10.3 and 11.3, and the relative population size at 24 hr, i.e., N(24), was calculated consequently for 10,000 times.
 
-## Separation of the multimodal distributions
+### Separation of the multimodal distributions
 
 Gaussian kernel density estimation was used to determine the boundaries of the multimodal distributions, which were considered as bimodal, for data separation of the growth parameters. The probability density function was conducted using ‘gaussian_kde’ in the ‘stats’ module of the ‘scipy’ library, in which ‘bw_method’ was configured as 0.3. These distributions were divided vertically into 1000 equal areas. The trough point, i.e., the smallest area, for data separation was determined using ‘argrelmin’ in the ‘signal’ module of the ‘scipy’ library. The three growth parameters were independently divided into two datasets of low and high mean values. The following GBDT prediction of τ, r, and K was performed separately.

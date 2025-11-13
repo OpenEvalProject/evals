@@ -36,31 +36,51 @@ Here, we tested under which conditions the four Lactobacillus Firm5 species can 
 
 ## Results
 
-## The coexistence of four related Lactobacillus species in the honey bee gut depends on the host diet
+### The coexistence of four related Lactobacillus species in the honey bee gut depends on the host diet
 
 All experiments in this study were conducted with four bacterial isolates representing the four Lactobacillus Firm5 species (Lapi, Lhel, Lmel, and Lkul) associated with the Western honey bee. We first tested if the four species can establish in the gut of gnotobiotic bees under two different dietary conditions. To this end, we colonized microbiota-depleted bees with each of the four species, alone or together, and fed bees either sterilized sugar water (SW) or sterilized sugar water and pollen (SW+PG). Five days post-colonization, we assessed the bacterial loads in the gut by counting CFUs (Figure 1A, Supplementary file 3). When mono-colonized, the four species established in the gut of microbiota-depleted bees independent of the dietary treatment (Figure 1A). In the SW treatment, the colonization levels were generally lower than in the SW+PG treatment (Figure 1A, ANOVA q-value < 0.01) confirming previous results that pollen increases the total bacterial load in the gut (Kešnerová et al., 2020). There was no statistically significant difference between the total bacterial loads of the mono-colonizations and the co-colonizations in either dietary treatment, with the exception of the mono-colonization with Lkul, which showed higher loads than the co-colonizations in SW (Figure 1A, ANOVA q-value < 0.01). Consequently, the sum of the bacterial loads of the mono-colonizations exceeded the total bacterial load of the co-colonizations in both dietary treatments, suggesting that the species engage in negative interactions when colonizing the honey bee gut together.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig1-v3.jpg)
 
-**Figure 1.:** Lactobacillus species in the honey bee gut.(A) Bacterial abundance (CFUs) in the gut of gnotobiotic bees (n = 7–10) colonized with the four species separately or together under two different dietary conditions. Bees were sampled five days after colonization. Statistical differences (ANOVA with Tuckey post-hoc test and BH correction) are depicted by different letters. (B, C) Changes in the absolute abundance of each member of the four-species community across the seven serial passages (P1–P7) through the gut of gnotobiotic bees. The absolute abundance of each species was determined by multiplying the total number of CFUs with the relative abundance of each species in the community. Grey areas represent the limit of detection which can vary depending on the sequencing depth of each replicate (see Materials and methods). Therefore, the average limit of detection and the 95% confidence intervals are shown.
+**Figure 1.:** (A) Bacterial abundance (CFUs) in the gut of gnotobiotic bees (n = 7–10) colonized with the four species separately or together under two different dietary conditions. Bees were sampled five days after colonization. Statistical differences (ANOVA with Tuckey post-hoc test and BH correction) are depicted by different letters. (B, C) Changes in the absolute abundance of each member of the four-species community across the seven serial passages (P1–P7) through the gut of gnotobiotic bees. The absolute abundance of each species was determined by multiplying the total number of CFUs with the relative abundance of each species in the community. Grey areas represent the limit of detection which can vary depending on the sequencing depth of each replicate (see Materials and methods). Therefore, the average limit of detection and the 95% confidence intervals are shown.
 
 To test if the four species can stably coexist in the bee gut, we serially passaged the community seven times in microbiota-depleted bees under both dietary conditions (SW and SW+PG). After each passage (i.e. after 5 days of colonization), we used amplicon sequencing of a discriminatory housekeeping gene fragment (see Materials and methods) in combination with CFU counting to determine the absolute abundance of each species in the community. We observed clear differences between the two dietary conditions in the ability of the four species to coexist across the passages (Figure 1B–C, Supplementary file 4). In the SW treatment, all species were initially detectable in most samples (P1, Figure 1B). However, three species (Lapi, Lmel and Lkul) steadily decreased in abundance in the subsequent passages resulting in a rapid dominance of Lhel (Figure 1B). Lmel and Lkul reached the detection limit and Lapi decreased to around 104 bacteria/gut by passage five (P5, Figure 1B). Only Lhel was stably maintained across all seven passages and was present at around 1000x higher abundance than Lapi at the end of the experiment (~107 bacteria/gut, Figure 1B). In the contrary, in the SW+PG treatment, all four species were detectable in all passages at around 106 to 108 bacteria/gut, and displayed a highly stable abundance profile over time (Figure 1C).
 
 In summary, these findings show that the four species can stably coexist in vivo when bees are fed pollen, but not when they are only fed sugar water. This is consistent with the idea that pollen facilitates niche partitioning in the honey bee gut by offering competing species different ecological niches facilitating their coexistence.
 
-## In vitro co-culture experiments recapitulate the nutrient-dependent coexistence of the four Lactobacillus species
+### In vitro co-culture experiments recapitulate the nutrient-dependent coexistence of the four Lactobacillus species
 
 We next tested if the four species can also coexist in vitro, outside of the host environment, under different nutrient conditions. To this end, we cultured the species alone or together in minimal medium supplemented with either glucose (G), pollen extract (PE), or entire pollen grains (PG). All four species were able to grow when cultured alone under the three nutrient conditions (Figure 2—figure supplement 1, Supplementary file 3). Growth yields of Lhel, Lkul, and the co-culture were slightly lower in PE and PG than in G, and Lmel showed lower growth yields than some of the other species in PE and G (Figure 2—figure supplement 1, ANOVA q-value < 0.01). As in vivo, the total bacterial loads of the co-cultures were not consistently different from those of the mono-cultures (Figure 2—figure supplement 1), suggesting that the four species have overlapping metabolic niches and engage in negative interactions with each other.
 
 We then serially passaged the co-cultures 21 times under the three different nutrient conditions by transferring an aliquot after 24 hr of growth into fresh culture medium (1:20). The absolute abundance of each strain was determined after every other passage by combining amplicon sequencing with qPCR (see Materials and methods). As for the in vivo experiment, we observed clear differences in the growth dynamics of the four species, both over time and between the glucose and the pollen culture conditions (Figure 2, Supplementary file 4). In the presence of glucose, three of the four species (Lhel, Lmel, and Lkul) steadily decreased in abundance over time (Figure 2A), with two of them reaching the limit of detection (<105 bacteria/ml) after about 11 passages (P11). In contrast, Lapi was stably maintained at high abundance (109 bacteria/ml) until the last passage (Figure 2A) and hence dominated the co-culture for most of the transfer experiment. In the presence of PE or PG, the four species revealed very different growth behaviors (Figure 2B and C). None of the species decreased over time, and after 21 transfers all species still yielded between 106 and 109 bacteria/ml.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig2-v3.jpg)
+
+**Figure 2.:** (A–C) Changes in total abundance of the four species when serial passaged in co-culture for 21 times in minimal medium supplemented with (A) 2% (w/v) glucose, (B) 10% (v/v) pollen extract, and (C) 10% (v/v) pollen grains. The absolute abundance of each species was determined by multiplying the total number of CFUs with the proportion of each strain in a given sample as based on amplicon sequencing (see Materials and methods). Gray areas indicate the limit of detection as explained in the Materials and methods. (D) Community stability of each replicate calculated based on the species abundances for a sliding window of five passages with a step size of 1. (E) Absolute abundance of each species across the three treatments considering the replicates of passages 13–21, which is when the community reached stability. Statistical differences (ANOVA with Tuckey post-hoc test and BH correction) are depicted by different letters.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Statistical differences: ANOVA with Tuckey post-hoc test (BH correction), represented by different letters.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Changes in total bacterial abundance of the four species across the 11 serially passaged co-cultures in minimal medium supplemented with either 2% (w/v) glucose (A), 10% pollen extract (B), or 10% pollen grains (C). The absolute abundance of each species was determined by multiplying the total number of CFUs with the proportion of each strain in a given sample as based on amplicon sequencing. Gray areas (light gray = 95% CI) represent the limit of detection as explained in Figure 1 (see Materials and method).
+
 To look at changes in community composition over time, we measured the community stability (temporal mean divided by temporal standard deviation of the species abundances) in sliding windows of five passages. Little to no change in community stability was observed for the two pollen conditions throughout the experiment, whereas in glucose the community reached a stable state after ~11 transfers (Figure 2D). To compare the growth yields of each species across the three nutrient conditions, we only considered the passages after which community stability was reached (P13-21). With the exception of Lapi all species reached higher yields in the presence of pollen as compared to glucose (Figure 2E, ANOVA q-value < 0.01). Notably, Lmel was the only species that showed improved growth in PG as compared to PE (Figure 2A–C).
 
 In summary, these findings show that the nutrient-dependent coexistence of the four Lactobacillus species observed in vivo can be recapitulated in vitro in a simple co-culture experiment, suggesting that the partitioning of pollen-derived nutrients is sufficient for enabling coexistence. Similar results were obtained for a second in vitro experiment which included the same nutrient conditions, but was only conducted for ten transfers (Figure 2—figure supplement 2).
 
-## The four Lactobacillus species upregulate divergent carbohydrate transport and metabolism functions in the presence of pollen during gut colonization
+### The four Lactobacillus species upregulate divergent carbohydrate transport and metabolism functions in the presence of pollen during gut colonization
 
 Given the impact of pollen on the coexistence of the four Lactobacillus species, we tested if genes involved in nutrient acquisition and metabolism were differentially expressed between the dietary treatments. To this end, we carried out RNA sequencing of the four-species community in honey bees that were fed either sugar water (SW) or sugar water and pollen grains (SW+PG) (Figure 3A). Multidimensional scaling (MDS) of the normalized read counts mapped to each species revealed that most samples clustered by treatment (SW+PG versus SW) (Figure 3—figure supplement 1), indicating that all four species exhibited dietary-specific transcriptional responses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig3-v3.jpg)
+
+**Figure 3.:** (A) Schematic outline of the RNA-Seq experiment. (B) Number of differentially regulated genes (log2FC ≥ |2| and p-value ≤ 0.01) in each species during co-colonization of gnotobiotic bees fed either pollen and sugar water (PG+SW) or sugar water only (SW). Up- and down-regulated genes are shown in different gray tones. (C) COG categories of genes up- or down-regulated by the four species in SW+PG if compared to SW. For COG definitions, see Supplementary file 2 (D) Functional sub-categories of COG ‘G’ genes upregulated in SW+PG if compared to SW. (E) Barplot displaying numbers of gene families differentially regulated in one species, two species, three species, or four species. Gene families differentially regulated in only one species are split into those that have homologs in the other species or that are species-specific.(F) Venn diagram showing overlap of gene families (based on gene homology) differentially regulated in the four species. (G) Transcripts per million (TPM) for two representative samples of the SW+PG and the SW treatments over a genomic region of Lkul encoding Lactobacillus-specific surface proteins. The genomic region of Lkul is compared to a similar region identified in Lmel which is also differentially regulated across the two treatments (expression profile not shown). Similarity between genes is shown by vertical lines. Gray tones indicate level of similarity. Surface protein-encoding genes are show in grey with the different domains and motifs shown according to the color legend.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Counts per million (cpm) were calculated for each sample (n=5) and visualized using multidimensional scaling (MDS) plots. X- and y-axis axes show first and second MDS dimension, respectively. Shapes size correspond to the samples libraries size. A few samples of the SW treatment did not cluster with the other replicates (two samples for Lmel, and one sample for each Lhel and Lkul), in part because relatively few reads mapped to the reference genomes of these strains.
 
 We found a total 687 genes (181 to 217 genes per species) to be differentially expressed (log2FC ≥ |2| and p-value ≤ 0.01) between the two dietary treatments (Figure 3B). ‘Carbohydrate transport and metabolism’ (Cluster of orthologous group category G, COG G) was by far the most abundant functional category among the genes upregulated in the SW+PG treatment relative to the SW treatment (Figure 3C, 17.1–37.6% of all upregulated genes). In three of the four species (Lmel, Lhel, and Lkul), this category was significantly enriched among the upregulated genes (Fisher’s exact test, p<0.01, Supplementary file 6). The largest fraction of the upregulated COG G genes encoded PTS transporters (Figure 3D, Supplementary file 5), followed by other sugar transporters (e.g. ABC transporters), and enzymes involved in sugar cleavage and conversion (Figure 3D). Among the downregulated genes, COG G genes were not abundant (5.1–7.8%) (Figure 3C). Instead, the category ‘Amino acid metabolism and transport’ (COG E) was enriched in Lapi (Fisher’s exact test, p < 0.01, Supplementary file 8), and genes encoding ABC-type amino acid transporters were present among the downregulated genes in all species (Supplementary file 5).
 
@@ -68,27 +88,59 @@ We next clustered all genes by homology into gene families. While most of the di
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig4-v3.jpg)
 
-**Figure 4.:** Lactobacillus species upregulate different carbohydrate metabolism functions during gut colonization of gnotobiotic bees.(A) Lhel, (B) Lmel, (C) Lkul, (D) Lapi. Only enzymes and transporters that are upregulated in a species-specific manner in the pollen treatment versus the sugar water treatment are shown. The figure is not exhaustive, but highlights the main differences that could be identified based on gene annotations among all differentially regulated genes (Supplementary file 6). Glycosidases belonging to different CAZyme families are represented by different colors. ABC: ABC transporters, PTS: phosphotransferase system transporters. Numbers indicate EC numbers of upregulated enzymatic steps.
+**Figure 4.:** (A) Lhel, (B) Lmel, (C) Lkul, (D) Lapi. Only enzymes and transporters that are upregulated in a species-specific manner in the pollen treatment versus the sugar water treatment are shown. The figure is not exhaustive, but highlights the main differences that could be identified based on gene annotations among all differentially regulated genes (Supplementary file 6). Glycosidases belonging to different CAZyme families are represented by different colors. ABC: ABC transporters, PTS: phosphotransferase system transporters. Numbers indicate EC numbers of upregulated enzymatic steps.
 
 Besides these species-specific transcriptional changes, a number of interesting functions were differentially regulated in more than one species. For example, we found evidence for citrate fermentation in Lhel and Lkul. Both species upregulated genes encoding a citrate lyase for the conversion of citrate into oxaloacetate and acetate in the presence of pollen (Supplementary file 5). Lhel, Lmel, and Lkul upregulated genes for the uptake and metabolism of glycerol. Moreover, all four species upregulated gene clusters encoding surface proteins with leucine-rich repeat (LRR) regions, LPXT cell-wall anchoring motifs, and SLAP (S-layer associated protein) domains (Figure 3G).
 
 Altogether, these results suggest that the four species utilize different carbohydrate-related resources from pollen, which supports the niche partitioning hypothesis as the basis for coexistence.
 
-## Transcriptional responses to pollen are similar in vivo and in vitro
+### Transcriptional responses to pollen are similar in vivo and in vitro
 
 In vivo gene expression differences between the two dietary conditions could be influenced by the host or by bacteria-bacteria interactions. Therefore, we carried out an additional transcriptomics analysis to disentangle the contribution of each of these factors to transcriptional changes in the four Lactobacillus species. We grew the four species in vitro in either co-culture or mono-culture, and with either pollen extract (PE) or glucose as growth substrate (G) (Figure 5A). As for the in vivo RNA-Seq analysis, MDS plots of the normalized read counts indicated that the four species exhibit treatment-specific transcriptional responses (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig5-v3.jpg)
+
+**Figure 5.:** (A) Scheme of the 2x2 experimental design. Species were grown alone or together, in either glucose (G) or pollen extract (PE). (B) Number of differentially regulated genes in each of the four species in the presence of PE if compared to G. Mono, mono-culture, Co, co-culture. Up- and down-regulated genes are shown in different gray tones. (C) COG categories of genes up-regulated by the four species in the presence of PE if compared to G. The colors are the same as in Figure 3C. For COG definitions, see Supplementary file 2 Heatmap displaying normalized counts of selected genes differentially regulated across the in vivo and in vitro RNA-Seq experiments. We selected metabolic genes and gene clusters that were identified in the in vivo experiment to be differentially regulated across the two treatments and which could be assigned a putative function based on annotation. Counts were normalized for each gene and dataset separately, that is in vivo, co-cultures, and mono-cultures. (E) Venn diagrams displaying the overlap of the genes differentially regulated between the PE and G treatment when the four species were grown in co-culture (Co) and mono-culture (Mono). (F) Number of differentially regulated genes in each of the four species in co-culture relative to mono-culture. Up- and down-regulated genes are shown in different gray tones. (G) Transcripts per million (TPM) over a genomic region of Lkul and Lmel encoding genes for citrate fermentation (i.e. citrate operon) for a representative sample of the co-culture and the mono-culture treatment when grown in PE.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Counts per million (cpm) were calculated for each sample (n=3) and visualized using multidimensional scaling (MDS) plots. X- and y-axis axes show first and second MDS dimension, respectively. Filled shapes represent mono-culture samples and empty shapes represent co-culture samples. Shapes size corresponds to the libraries size of that sample.
+
 For each species, whether grown alone or in co-culture, we found between 159 and 393 genes to be differentially regulated between the PE and the G treatment (Figure 5B, log2FC ≥ |2| and p-value≤0.01). As in vivo, Carbohydrate transport and metabolism (COG ‘G’) was the predominant functional category among the upregulated genes in the presence of pollen (Figure 5C) and enriched in all eight comparisons (four species, each alone or in co-culture, Fisher’s exact test p-value < 0.01, Supplementary file 8). Moreover, 25.3–36.9% of the genes upregulated in vivo were also upregulated in vitro in the presence of pollen. In particular, the species-specific carbohydrate metabolism functions described above (Figure 4) showed a similar transcriptional response to pollen in vivo and in vitro (Figure 5D). In contrast, most of the putative adhesin genes upregulated in vivo were not upregulated in vitro during growth in pollen or had relatively low transcripts per million (TPM). This suggests that these genes are either expressed in response to the host environment, or the presence of entire pollen grains or sugar water, both of which were only included in the in vivo but not in the in vitro experiment (Supplementary file 9). It is also noteworthy that fewer genes were downregulated than upregulated in pollen relative to glucose, and that the COG category ‘G’ was not enriched among the downregulated genes, which is concordant with our in vivo transcriptome analysis. (Supplementary file 8). Based on these results, we conclude that each species upregulates specific operons for the transport and utilization of different carbohydrates (e.g. sugar alcohols and glycans) in response to the presence of pollen, independent of the host environment.
 
-## The presence of other community members has little impact on the transcriptional profile of the four species
+### The presence of other community members has little impact on the transcriptional profile of the four species
 
 We found that a large fraction of the genes upregulated in PE relative to G in the mono-cultures were also upregulated in the co-cultures (58.2–87.8%, Figure 5E). In particular, the gene clusters identified to be regulated in a species-specific manner (see above) showed highly concordant gene expression profiles in vitro independent of the presence/absence of the other Lactobacillus species. This was confirmed by the direct comparison of mono-culture and co-culture conditions. In comparison to the nutritional treatments, fewer genes (9–149 genes) were differentially expressed between co-culture and mono-culture treatments (log2FC ≥ |2| and p-value≤0.01), (Figure 5F).
 
 We could not find any consistent pattern across the four species in terms of COG category enrichment (Supplementary file 8). Moreover, only a few genes were differentially expressed in more than one species (6.25–30%), or across both nutrient conditions (1.86–5.33%). Citrate fermentation genes were upregulated in Lkul in co-culture relative to mono-culture when grown in pollen, whereas in Lhel the opposite was observed (Figure 5G). Also of note, the oligopeptide transporter system which was upregulated in vivo in Lkul in the presence of pollen, was also upregulated in vitro in the presence of pollen, but only when other species were present. These two specific examples show that a few metabolic functions are differentially regulated in response to other bacteria, but not always in the same direction across species, or only in a specific nutrient condition. We thus conclude that the main factor driving changes in gene expression in the four strains is the presence of pollen, rather than the presence of other Lactobacillus species.
 
-## Metabolomics analysis reveals differences in flavonoid and sugar metabolism across the four Lactobacillus species
+### Metabolomics analysis reveals differences in flavonoid and sugar metabolism across the four Lactobacillus species
 
 Our transcriptome analyses suggest that differences in sugar metabolism may enable the four species to coexist in the presence of pollen in vitro and in vivo. To assess species-specific metabolic changes when grown in pollen, we profiled the metabolome of the pollen extract medium before (t = 0 hr) and after bacterial growth (t = 16 hr) using Q-TOF-based untargeted metabolomics (Fuhrer et al., 2011). We annotated a total of 657 ions of which 406 could be reliably categorized as pollen-derived ions, as opposed to ions originating from the base medium (see Materials and methods, Supplementary file 10, Figure 6—figure supplement 2). The metabolomics data clearly separated the four species indicating distinctive metabolic changes and thus corroborating the transcriptome results (Figure 6—figure supplement 1). A total of 76 pollen-derived ions showed a significant decrease in abundance over-time (log2FC ≤ −1 and p-value≤0.01, Student’s t-Test, BH correction) (Figure 6A, Supplementary file 10). Of those, 24 ions decreased in abundance in all four species, another 24 ions decreased in abundance in only a subset of the species, and the remaining 28 ions decreased in abundance in only a single species (Figure 6A). Ions annotated as glycosylated flavonoids were among the top ions responsible for the separation of the four species in the PCA (Figure 6—figure supplement 1). Lmel depleted six different ions annotated as flavonoids (isoorientin 2’’-O-rhamnoside, quercetin-3-O-glucoside, vitexin, rutin, luteolin-7-O-(6’’-malonylglucoside), and quercetin-3-O-beta-D-glucosyl-(1->2)-beta-D-glucoside), while Lapi depleted three ions annotated as flavonoids (isoorientin 2’’-O-rhamnoside, quercetin-3-O-glucoside, vitexin) (Figure 6A, Figure 6—figure supplement 3). In contrast, Lkul only depleted the flavonoid ion annotated as isoorientin 2’’-O-rhamnoside, and no flavonoid ion changes were identified for Lhel (Figure 6A, Figure 6—figure supplement 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-v3.jpg)
+
+**Figure 6.:** (A) Volcano plots displaying ions with significant fold changes (FC) for each of the four species after 16 hr of growth in pollen extract versus glucose. Each dot corresponds to an ion in the untargeted metabolomics dataset. Different colors represent ions that significantly change over time in one, two, three, or four species. Dashed black lines represent the significance thresholds: p-value < 0.01 and log2FC < −1 or > 1. (B) Culture wells of the four species grown in cfMRS + 0.05% rutin after 16 hr of incubation. The yellow precipitate is only visible for Lmel. (C) Rutin and quercetin detection in spent medium of Lmel and Lkul grown in cfMRS + 0.05% rutin after 16 hr of incubation (n=5). (D) Changes in key metabolites during growth measured by GC-MS (n=5). Log2FC relative to time point 0 is plotted. Time is reported in hours. * Indicates metabolites whose identity was confirmed using analytical standards. For m/z values see Supplementary file 10.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Principal component analysis (PCA) of the metabolome profile of each species based on the log2FC values calculated between the two time-points for each ion. The larger the distance between species on the PCA axes, the more they differ in their metabolome profiles. The arrows, that is the environmental vectors, point in the direction of the maximum correlation with the environmental variable, that is the ions. The ions on the tip of the longest arrows are the ones that explain the most of the distribution of the data within the PCA. Only the top 24 ions explaining the data distribution are displayed.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Volcano plot displaying R2 values obtained from the pollen dilution series regression lines and the log2FC calculated between undiluted pollen extract and water. The lines represent the thresholds that we set to define an ion as pollen-derived: log2FC > two and R2 > 0.75. Within the light green area are included the ions that we consider pollen-derived (n = 406).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** In vitro metabolomics of spent medium of the four species grown in cfMRS + PE for 16 hr. The log2FC was obtained comparing the ion intensities at the end and at the beginning of the experiment.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** Log2FC relative to T0 is plotted. Time is reported in hours. For m/z values see Supplementary file 10.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/68583/elife-68583-fig6-figsupp5-v3.jpg)
+
+**Figure 6—figure supplement 5.:** Growth-curve data were obtained for the four species at the four time-points included in the second metabolomics experiment (growth in presence of pollen extract) by qPCR (copy number) and fitted to a standard form of the logistic equation. Each point represents one replicate (n=5).
 
 To corroborate the species-specific utilization of flavonoids, we incubated each of the four species in base culture medium supplemented with rutin. We observed the formation of a yellow insoluble precipitate only in the wells incubated with Lmel (Figure 6B). Metabolomics analysis confirmed that rutin was depleted in these wells and that the yellow precipitate corresponded to an accumulation of quercetin, the water-insoluble, deglycosylated aglycone of rutin (Figure 6C). These findings are consistent with our transcriptome results which show that Lmel is the only species that upregulated a rhamnosidase gene known to cleave rhamnose residue from rutin (Beekwilder et al., 2009; Figure 4).
 
@@ -124,19 +176,99 @@ However, we have only tested a single strain of each of the four species. Theref
 
 ## Materials and methods
 
-## Culturing of bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Lactobacillus apis)</td>
+      <td>Lapi</td>
+      <td>https://doi.org/10.1371/journal.pbio.2003467</td>
+      <td>Genome ID: 2684622912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus helsingborgensis)</td>
+      <td>Lhel</td>
+      <td>https://doi.org/10.1371/journal.pbio.2003467</td>
+      <td>Genome ID: 2684622914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus melliventris)</td>
+      <td>Lmel</td>
+      <td>https://doi.org/10.1371/journal.pbio.2003467</td>
+      <td>Genome ID: 2684622913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus kullabergensis)</td>
+      <td>Lkul</td>
+      <td>https://doi.org/10.1371/journal.pbio.2003467</td>
+      <td>Genome ID: 2684622911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>#Cat 28706X4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin RNA clean-up kit</td>
+      <td>Macherey-Nagel</td>
+      <td>#Cat 740903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymo-Seq RiboFree Total RNA Library kit</td>
+      <td>Zymo Research</td>
+      <td>#Cat R3000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Studio software</td>
+      <td>R Studio (https://www.rstudio.com)</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)</td>
+      <td>RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Culturing of bacterial strains
 
 We used the following four bacterial strains of Lhel, Lmel, Lapi, and Lkul for our experiments: ESL0183, ESL0184, ESL0185, and ESL0186 (Kešnerová et al., 2017). All strains were precultured on solid De Man – Rogosa – Sharpe agar (MRSA) (supplemented with 2% w/v fructose and 0.2% w/v L-cysteine-HCl) from glycerol stocks stored at −80°C. MRSA plates were incubated for three days in anaerobic conditions at 34°C to obtain single colonies. Single colonies were inoculated into a liquid carbohydrate-free MRS medium (cfMRS; O’ Donnell et al., 2011) supplemented with 4% glucose (w/v), 4% fructose (w/v), and 1% L-cysteine-HCl (w/v) and incubated at 34°C in anaerobic conditions without shaking.
 
-## In vivo transfer experiments
+### In vivo transfer experiments
 
 Bacterial colonization stocks were prepared from overnight cultures by washing the bacteria in 1xPBS, diluting them to an OD600 = 1, and storing them in 25% glycerol at −80°C until further use. For colonization stocks containing all four species, cultures adjusted to an OD600 = one were mixed at equal proportions. Microbiota-depleted bees were obtained from colonies of Apis mellifera carnica located at the University of Lausanne following the procedure described in Kešnerová et al., 2017. Colonization stocks were diluted ten times in a 1:1 mixture of 1xPBS and sugar water (50% sucrose solution, w/v) and 5 μL were fed to each bee using a pipette. Five days post-colonization, 10 rectums were dissected and homogenized in 1xPBS. An aliquot of each homogenized gut was used for CFU plating to enumerate the total bacterial load and for amplicon sequencing to obtain the relative abundance of each community member (see below). To serial passage the community through microbiota-depleted bees, the ten homogenized gut samples from the same treatment were pooled together and stored in 25% glycerol at −80°C until a new batch of microbiota-depleted bees was available. At the day of colonization, a frozen aliquot of the pooled gut homogenate was thawed, diluted ten times in a 1:1 mixture of 1xPBS and sugar water (50% sucrose solution, w/v), and fed to newly emerged microbiota-depleted bee as described above. This was repeated for a total of six serial passages. Throughout the experiments all bees were kept on either a sugar water or a sugar water/pollen diet according to the two dietary treatment. Food was provided ad libitum.
 
-## In vitro transfer experiment
+### In vitro transfer experiment
 
 Each of the four strains was cultured in liquid medium overnight for about 16 hr as described above. The cultures were re-inoculated at an OD600 = 0.3 in fresh medium and let grow for another 4 hr at 34°C with shaking (700 rpm). Bacterial cells were then washed with 1xPBS, mixed in equal proportions, and inoculated at an OD600 = 0.05 in triplicates in 96-deep well plates (SIGMA) containing cfMRS medium supplemented with either 2% glucose (w/v), 10% pollen extract (v/v), or 10% pollen grains (v/v) in a final volume of 500 μL per well. Detailed information about pollen extract preparation can be found in the Supporting methods section of Kešnerová et al., 2017. Pollen grain solutions were prepared by adding 1.250 ml of ddH2O to 80 mg of pollen grains crushed with the bottom of a 15 mL falcon tube. The plates were incubated for 24 hr at 34°C under anaerobic conditions without shaking (300 rpm). After 24 hr of incubation, an aliquot of each sample was subjected to CFU plating to enumerate the total bacterial load. Then, 1% of each culture (i.e. 5 μL) was transferred to a plate with fresh medium supplemented with the appropriate carbon sources and incubated again. These transfers were repeated 10, respectively, 20 times for the two independent experiments. After each transfer, cultures were washed once with 1xPBS and stored at −20°C for amplicon sequencing analysis. CFUs were counted after 24 hr and at the final transfer.
 
-## Amplicon sequencing
+### Amplicon sequencing
 
 The relative abundance of the four strains across all transfer experiments was obtained using amplicon sequencing of a 199 bp long fragment of a housekeeping gene encoding a DNA formamidopyrimidine-glycosylase which allows to discriminate the four strains from each other (Ellegaard et al., 2019).
 
@@ -148,28 +280,28 @@ To prepare the sequencing of the amplicons, DNA concentrations were measured usi
 
 To obtain absolute abundance data for each strain, we combined the relative abundance data from the amplicon sequencing with CFU counts obtained from plating homogenized bee guts in the case of the in vivo experiments (see above) or by carrying out qPCR with Lactobacillus-specific primers as described in Kešnerová et al., 2017 in the case of the in vitro co-culture experiments (Supplementary file 1, Supplementary file 4). For the in vitro transfer, the stability of the four-species community over time was calculated using the codyn R package (Hallett et al., 2020).
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 For the in vivo RNA sequencing, microbiota-depleted bees were colonized with the four species community as described above and fed with either sugar water and pollen grains or with sugar water only. After 5 days of colonization, the rectums of five bees per treatment (all kept in the same cage) were dissected and snap-frozen in liquid nitrogen in separate tubes containing glass beads (0.1 mm dia. Zirconia/Silica beads; Carl Roth). For RNA extraction, the tissue samples were suspended in 1 mL of TE buffer and homogenized using a bead beater (45 m/s, 6 s). Then, 200 μL of an ice-cold STOP solution (95% v/v ethanol, 5% v/v Aqua phenol [Roth]) was added to 1 ml of homogenate and snap-frozen again in liquid nitrogen. Tubes were then thawed on ice and a previously developed hot phenol RNA extraction protocol was followed (Sharma et al., 2010). For the in vitro RNA sequencing, bacterial strains were cultured in triplicates in cfMRS supplemented with either 1% w/v glucose or 1% w/v pollen extract. After 16 hr of growth, 200 μL of STOP solution was added to 1 mL of culture followed by the same steps as described above.
 
 After the precipitation step, samples were treated with DNaseI (NEB) to degrade DNA. RNA samples were purified using Nucleospin RNA clean-up kit (Macherey-Nagel) following the manufacturer’s instructions. RNA was eluted in RNase free-water and stored at −80°C until further use. RNA concentration and quality were assessed using Nanodrop (ThermoFisher Scientific), Qubit (ThermoFisher Scientific, RNA – High Sensitivity reagents and settings) and Bioanalyzer (Agilent). High-quality RNA samples were selected to prepare RNA libraries. For the in vivo RNA sequencing, libraries were prepared using the Zymo-Seq RiboFree Total RNA Library kit (Zymo Research). The libraries were sequenced by the GTF facility of the University of Lausanne using HiSeq 4000 SR150 sequencing (150 bp reads) (Illumina). For the in vitro RNA sequencing, libraries were prepared following the protocol developed by Avraham et al., 2016. Libraries were then prepared for sequencing following the Illumina MiniSeq System guide for denaturate and dilute libraries. Libraries were sequenced using the Illumina MiniSeq technology using High Output Reagent Cartridges (150 bp reads) and MiniSeq flow cells.
 
-## RNA sequencing analysis
+### RNA sequencing analysis
 
 For the in vitro samples, raw reads were demultiplexed using a script provided by Dr. Jelle Slager (Personal communication) For the in vivo samples, the reads were already demultiplexed by the sequencing facility. For both experiments, the reads were trimmed with Trimmomatic (Trimmomatic-0.35) (LEADING:30 TRAILING: 3 SLIDING WINDOW:4:15 MINLEN:20). The quality of the reads was checked using FASTQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). For the in vivo samples, trimmed reads were sorted with sortmerna-4.2.0 to select only the non-rRNA reads for the downstream analysis. Reads were mapped onto the genomes of the selected strains (Ellegaard and Engel, 2018) (Lapi, Lhel, Lmel, and Lkul) using Bowtie (bowtie2-2.3.2). Gene annotations for the four genomes were retrieved from IMG/mer (Chen et al., 2021). Mapped reads were quality filtered for the alignment length (CIGAR > 100 bp) and for the allowed mismatches in the sequence (NM = 0–1). Quality filtered reads were then quantified using HTseq (Version 0.7.2). Differential gene expression between samples cultured in pollen extract and samples cultured in glucose, and between mono-cultures and co-cultures, was calculated using the R package EdgeR (Robinson et al., 2010). Counts per million were calculated and only genes with at least one count per million were used for the analysis. EdgeR fits negative binomial models to the data. The counts were normalized for RNA composition by adjusting the log2FC according to the library size, and the quantile-adjusted conditional maximum likelihood (qCML) method was used to estimate the common dispersion and the tag-wise dispersion. Finally, the differential gene expression was determined using the exact test with a false discovery rate (FDR) <5%. COG annotations were obtained from IMG/mer, and the enrichment analysis for COG categories tested using the Fisher’s exact test. Transcripts per million (TPM) were visualized using the Integrated Genome Browser software (Freese et al., 2016).
 
-## Untargeted metabolomics
+### Untargeted metabolomics
 
 Metabolites were extracted from liquid cultures supplemented with 10% (w/v) pollen extract at the inoculation time and after 16 hr of incubation at 34°C. For each liquid culture sample, 300 μL was collected and centrifuged (20,000 g, 4°C, 30 min), then 200 μL supernatant was transferred to a new tube and stored at −80°C. After collection of all samples, they were prepared for metabolomics analysis. The samples were thawed on ice and centrifuged again (20,000 g, 4°C, 5 min), then diluted 10 times with ddH2O. For metabolomics analysis, 25 μL of each diluted sample was sent in a 96-well plate on dry ice to the laboratory of Prof. Uwe Sauer for analysis (ETH Zürich, Switzerland). Three replicates of a pollen-extract dilution series (10 serial 2x dilutions) as well as undiluted pollen-extracts and water used for performing the dilution series were included in the metabolomics analysis. Because of the insolubility of flavonoid aglycones in a water matrix, metabolites from liquid cultures supplemented with rutin were extracted using a methanol-extraction protocol at the time of inoculation and after 16 hr of growth by adding 200 μL of methanol pre-cooled to −20°C to 100 μL of culture. Tubes were vortexed thoroughly and incubated for 5 min (4°C, shaking 14,000 rpm). Samples where then incubated at −20 °C for 1 hr and centrifuged (20’000 g, 5 min). A total of 200 μL of the supernatant was transferred to a new tube and diluted 10 times in 70% methanol and 25 μL of each diluted sample was sent to Zürich in Eppendorf tubes sealed with parafilm on dry ice. For untargeted metabolomics analysis, each sample was injected twice (technical replicate) into an Agilent 6550 time-of-flight mass spectrometer (ESI-iFunnel Q-TOF, Agilent Technologies) as detailed in Kešnerová et al., 2017. In brief, m/z features (ions) were annotated by matching their accurate mass-to-sum formulas of compounds in the KEGG database accounting for deprotonation (-H+). Alternative annotation can be found in Supplementary file 10. When available, metabolites categories were assigned to ions based on KEGG ontology.
 
 Metabolomics data analysis was carried out using R version 3.6.3. Variation of raw ion intensities obtained from untargeted metabolomics analysis for the two technical replicates was determined by assessing the correlation between ion intensities of the respective technical replicates. Then, mean ion intensities of technical replicates were calculated. Time point comparisons (T = 0 hr vs T = 16 hr) were performed using t-tests with Benjamini-Hochberg (BH) correction for multiple testing. log2FC values between the two time-points were calculated with respect to the mean intensity in the T0 time point. To identify pollen-derived ions, and distinguish them from background originating from culture medium and experimental noise, the ion intensities of the pollen dilution series were plotted for each ion and the R (2) of the obtained linear fit was extracted. In addition, we calculated the log2FC difference between undiluted pollen and water. The R (2) values were then plotted against the log2FC values, and stringent thresholds (R2 > 0.75 and log2FC > 2) were chosen to discriminate ions that are likely pollen-derived (Figure 6—figure supplement 3). All ions were included for downstream analysis (e.g. PCA) and then they were discriminated between pollen-derived and non-pollen-derived.
 
-## Semi-targeted metabolomics via GC-MS
+### Semi-targeted metabolomics via GC-MS
 
 Soluble metabolites were extracted from liquid cultures supplemented with 10% pollen extract (w/v) at the inoculation time and after 8, 16, and 24 hr of incubation. For each liquid culture sample, 300 μL was collected and centrifuged (15,000 g, 4°C, 15 min). Then, 200 μL was transferred to a new tube, snap-frozen in liquid nitrogen, and stored at −80°C. Once that all the samples were collected, soluble metabolites were extracted. To extract soluble metabolites, tubes were thawed on ice, and 75 μL of sample was combined with 5 μL of 20 mM internal standard (norleucine and norvaline, (Sigma-Aldrich) and U-13C6 glucose [Cambridge Isotope laboratories]). A volume of 825 μL of cold methanol:water:chloroform (5:2:2) solution was added to the sample and vortexed for 30 s. The tubes were incubated at −20°C for 90 min and vortexed 2x for 30 s during the incubation. Tubes were centrifuged for 5 min at 10,000 g at 4°C. The supernatant was removed and extraction was repeated using 400 μL of ice cold chloroform:methanol (1:1), tubes were vortexed and left on ice for 30 min. Tubes were centrifuged 5 min at 8000 rpm at 4°C and the liquid phase was transferred to the previous extracted aqueous phase. A total of 200 μL of water was added and tubes were centrifuged 5 min at 8000 rpm. The aqueous phase was transferred to a 2 mL microcentrifuge tube. The aqueous extract was dried using a vacuum concentrator at ambient temperature overnight (Univapo 150 ECH vacuum concentrator centrifuge). Once dried, the samples were dissolved in 50 μL of 20 mg/ml methoxyamine hydrochloride in pyridine for 1.5 hr at 33°C followed by derivatization with N-Methyl-N-(trymethylsolyl)trifluoroacetamide (MSTFA, Sigma Aldrich) for 2 hr at 35°C.
 
 Aliquots (1 μL) were injected on an Agilent 8890/5977B GC-MSD. The samples were injected in split mode (20:1) with an inlet temperature of 250°C. The VF-5ms (30 m x 250 μm x 0.25 μm) column was held initially at 125°C for 2 min, ramped at 5°C / min to 250°C, ramped at 15°C to 300°C, and held for 5 min. The MS was run in full scan mode (50–500 m/z) at a speed of 5 Hz. Peaks from the total ion chromatogram (TIC) were identified by matching retention times and spectra to an in-house library that was built by comparing selected T=0h and T=24h samples against the NIST library, as well as our library of analytical standards. Compounds are noted as either confirmed with our own standards, or the best match and associated matching factor against the NIST library are reported (Supplementary file 10). Peaks were picked and integrated using the Agilent MassHunter Quantitative Analysis software. Peak areas were normalized to the internal standards. The data were processed using R version 3.6.3 and mean intensities and log2FC between time-points were calculated as described above for the untargeted metabolomics analysis.
 
-## Analysis-code and data availability
+### Analysis-code and data availability
 
 The complete custom code for all the analyses is available on GitHub: (https://github.com/silviabrochet/Brochet_2021_eLife, copy archived at swh:1:rev:237a27f757296372f0333d298dfb7c765686fe03; Brochet, 2021). The amplicon sequencing data and the RNA sequencing data are available under the NCBI Bioproject PRJNA700984 and the GEO record GSE166724. All differential expression analysis results of this study are included in Supplementary file 10.

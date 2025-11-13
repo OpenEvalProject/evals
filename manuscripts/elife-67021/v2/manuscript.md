@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012pb6c26 Laboratory of Single Molecule Biophysics, National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States
-2. https://ror.org/055zmrh94 Department of Biochemistry and Metabolism, John Innes Centre Norwich United Kingdom
+1. Laboratory of Single Molecule Biophysics, National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States ([ROR:012pb6c26](https://ror.org/012pb6c26))
+2. Department of Biochemistry and Metabolism, John Innes Centre Norwich United Kingdom ([ROR:055zmrh94](https://ror.org/055zmrh94))
 
 † Corresponding author
 
@@ -34,31 +34,55 @@ Here, using topo VI from M. mazei as a model, a single-molecule magnetic tweezer
 
 ## Results
 
-## Topo VI is a slow, chirally selective and highly distributive DNA relaxase
+### Topo VI is a slow, chirally selective and highly distributive DNA relaxase
 
 To begin exploring the single-molecule behaviour of M. mazei topo VI, a magnetic tweezers supercoiling assay was employed, described in detail elsewhere (Seol and Neuman, 2011a; Seol and Neuman, 2011b). As opposed to agarose gel analysis of DNA topology, the magnetic tweezers facilitates control over the precise level and chirality of DNA supercoiling, as well as the real-time detection of supercoil relaxation by topo VI with the ability to capture single strand-passage events. At low force (0.2–0.5 pN) right-handed rotation of the magnetic bead positively supercoils the DNA, forming positive writhe (left-handed crossings), and left-handed rotation negatively supercoils the DNA, forming negative writhe (right-handed crossings), both causing the DNA extension to decrease as the plectoneme is formed and extended (Figure 1A). At high force, negative supercoiling causes DNA melting rather than formation of negative writhe, hence the DNA extension does not change (Figure 1A). Upon addition of topo VI, the DNA extension increases in discrete steps as supercoils are relaxed by topo VI. Therefore, the relaxation reaction can be followed via DNA extension changes over time (Figure 1B). First, we measured the chirality-dependent relaxation activity of topo VI using a topo VI titration of 0.25–2 nM at 21 °C, under 0.4 pN of force (Figure 1C). The observed DNA extension changes revealed that, on average, topo VI relaxed positive supercoils ~2–3 fold faster than negative supercoils. We found that the average relaxation rates for supercoils of either chirality increased as a function of topo VI concentration with the data fitted to a Michaelis Menten-like equation, resulting in an apparent Kd (Kd,app) threefold lower for the relaxation of positive DNA writhe. In line with the single-molecule relaxation assay results, the preferential relaxation on positive supercoils by topo VI is also supported by an agarose gel based approach (Figure 1D), showing that the relaxation of positively and negatively supercoiled pBR322* was completed by 6 min and 15 min, respectively. Inspection of Figure 1D suggests that the relaxation of negatively supercoiled DNA was more processive than positively supercoiled DNA, which was relaxed in a highly distributive manner. However, previous results using a plasmid competition assay determined that topo VI relaxed negatively supercoiled DNA in a highly distributive manner (Wendorff and Berger, 2018).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig1-v2.jpg)
 
-**Figure 1.:** (A) Magnetic tweezers calibration curves for a 5 kb DNA duplex supercoiled under low (0.2 pN), medium (0.5 pN) and high (1.0 pN) force. DNA extension is plotted as a function of magnet turns. Negative magnet turn values represent the clockwise rotation of the magnets which produces negative, or right-handed DNA crossings. Positive, or left-handed crossings are produced by rotating the magnets anticlockwise. At high force, clockwise rotation promotes DNA melting, rather than negative supercoiling, hence the DNA extension is insensitive to magnet rotation. (B) Example trace of topo VI-dependent supercoil relaxation. Data collected at a force of 0.4 pN, at 21 °C, using 0.5 nM topo VI and 1 mM ATP. Each strand-passage event is evident as an abrupt DNA extension increase of ~100 nm, corresponding to a ΔLk of 2. Relaxation of negative supercoils is highlighted in blue, and positive in red. Positive supercoils are relaxed faster, resulting in short events ( < 1 min) being compressed when plotted on the same axis as negative supercoil relaxation. Data collected at 200 Hz (grey dots) and plotted with a 1 s Savitzky–Golay smoothing filter (black line). (C) Average relaxation rate of topo VI (± SEM) on positive (N tethers across all data points = 40) and negative (N tethers across all data points = 42) supercoils as a function of topo VI concentration (0.25–2 nM), collected at a force of 0.4 pN, at 21 °C. Data were fitted to a Michaelis-Menten-like function (). Raw data were analysed in IgorPro 7 (WaveMetrics) using a T-test based method, first described in V0=VmaxEKd,app+ESeol et al., 2016. (D) Agarose gel-based supercoil-relaxation time course. Negatively or positively supercoiled pBR322* was incubated at 21 °C, with 20 nM topo VI and the reaction was stopped at consecutive time points using 50 mM EDTA. Samples were run on a 1% (w/v) native agarose gel for 15 hr at ~2 Vcm–1, stained with 0.5 μg/mL ethidium bromide and imaged under UV illumination.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Magnetic tweezers calibration curves for a 5 kb DNA duplex supercoiled under low (0.2 pN), medium (0.5 pN) and high (1.0 pN) force. DNA extension is plotted as a function of magnet turns. Negative magnet turn values represent the clockwise rotation of the magnets which produces negative, or right-handed DNA crossings. Positive, or left-handed crossings are produced by rotating the magnets anticlockwise. At high force, clockwise rotation promotes DNA melting, rather than negative supercoiling, hence the DNA extension is insensitive to magnet rotation. (B) Example trace of topo VI-dependent supercoil relaxation. Data collected at a force of 0.4 pN, at 21 °C, using 0.5 nM topo VI and 1 mM ATP. Each strand-passage event is evident as an abrupt DNA extension increase of ~100 nm, corresponding to a ΔLk of 2. Relaxation of negative supercoils is highlighted in blue, and positive in red. Positive supercoils are relaxed faster, resulting in short events ( < 1 min) being compressed when plotted on the same axis as negative supercoil relaxation. Data collected at 200 Hz (grey dots) and plotted with a 1 s Savitzky–Golay smoothing filter (black line). (C) Average relaxation rate of topo VI (± SEM) on positive (N tethers across all data points = 40) and negative (N tethers across all data points = 42) supercoils as a function of topo VI concentration (0.25–2 nM), collected at a force of 0.4 pN, at 21 °C. Data were fitted to a Michaelis-Menten-like function ($V_{0}=\frac{V_{max}E}{K_{d,app}+E}$). Raw data were analysed in IgorPro 7 (WaveMetrics) using a T-test based method, first described in Seol et al., 2016. (D) Agarose gel-based supercoil-relaxation time course. Negatively or positively supercoiled pBR322* was incubated at 21 °C, with 20 nM topo VI and the reaction was stopped at consecutive time points using 50 mM EDTA. Samples were run on a 1% (w/v) native agarose gel for 15 hr at ~2 Vcm–1, stained with 0.5 μg/mL ethidium bromide and imaged under UV illumination.
 
 For topo VI, each strand-passage event is evident in the trace, as an abrupt DNA extension change of ∼100 nm, which is expected for the resolution of a single DNA crossing (Figure 1B). This provided preliminary evidence of distributive activity, as many seconds to minutes elapsed between strand-passage events, indicating that topo VI binds and resolves a single crossing before disengaging the G-segment. The analysis was extended to extract each dwell time between strand-passage events and plotting the average as a function of the number of DNA crossings within the plectoneme (Figure 2). In the average relaxation rate analysis described above, automatic recoiling of the DNA was initiated 2–3 DNA crossings from full relaxation as it was evident that topo VI relaxation significantly slowed as the plectoneme was relaxed. Using 0.75 nM topo VI, a concentration determined to be effective for both positive and negative plectoneme relaxation, topo VI was allowed to fully relax the DNA (Figure 2A and B). This produced characteristic traces in which the dwell times dramatically increased in duration as the DNA approached a fully relaxed state. Plotting these dwell times as a function of the level of DNA supercoiling clearly demonstrated that the reaction rate decreased with decreasing DNA-crossing number. The dwell-time between strand-passage events as a function of plectoneme crossings was well-fitted by an inverse relationship, indicating that the time taken to bind a crossing and perform strand-passage was inversely proportional to the number of DNA crossings present (Figure 2C). This finding further supports the distributive nature of topo VI in supercoil relaxation and cements the conclusion described in Wendorff and Berger, 2018 that topo VI specifically recognises and binds DNA crossings (Wendorff and Berger, 2018), making each crossing along the plectoneme a potential site of activity. This specific binding to DNA crossings within the plectoneme is in sharp contrast to topo IV, which relaxed supercoiled DNA independent of the number of crossings, suggesting a single binding site, hypothesised to be the plectoneme end-loop (Neuman et al., 2009).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig2-v2.jpg)
 
-**Figure 2.:** (A) An example trace of 0.75 nM topo VI fully relaxing negative supercoils in a 5 kb DNA duplex at a force of 0.4 pN, at 21 °C. DNA extension is plotted against time. The abrupt decreases in extension correspond to rapid DNA supercoiling by rotating the magnets. The slower DNA extension increases correspond to topo VI-dependent supercoil relaxation activity. Data collected at 200 Hz (grey dots) and with a 1-second Savitzky–Golay smoothing filter (black line)( B) same as in A, aside from the DNA being positively supercoiled. (C) Dwell time (± SEM) between topo VI-dependent strand-passage events on positive (N dwell times across all data points = 212) and negative (N dwell times across all data points = 146) supercoils, plotted against the level of DNA supercoiling. Data were fitted to an inverse function, where the time taken for topo VI to perform a strand-passage reaction is inversely proportional to the number of DNA crossings present in the substrate. Raw data (A and B) were analysed in IgorPro 7 (WaveMentrics) using a T-test based method, first described in Seol et al., 2016.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) An example trace of 0.75 nM topo VI fully relaxing negative supercoils in a 5 kb DNA duplex at a force of 0.4 pN, at 21 °C. DNA extension is plotted against time. The abrupt decreases in extension correspond to rapid DNA supercoiling by rotating the magnets. The slower DNA extension increases correspond to topo VI-dependent supercoil relaxation activity. Data collected at 200 Hz (grey dots) and with a 1-second Savitzky–Golay smoothing filter (black line)( B) same as in A, aside from the DNA being positively supercoiled. (C) Dwell time (± SEM) between topo VI-dependent strand-passage events on positive (N dwell times across all data points = 212) and negative (N dwell times across all data points = 146) supercoils, plotted against the level of DNA supercoiling. Data were fitted to an inverse function, where the time taken for topo VI to perform a strand-passage reaction is inversely proportional to the number of DNA crossings present in the substrate. Raw data (A and B) were analysed in IgorPro 7 (WaveMentrics) using a T-test based method, first described in Seol et al., 2016.
 
 The single-molecule topo VI results are supported by the results of ensemble ATPase and binding assays (Figure 3 and Figure 3—figure supplement 1). Using a radioactive ATPase assay, the rate of ATP hydrolysis was observed to be dramatically stimulated in the presence of negatively-supercoiled pBR322*, in comparison to either relaxed or linearised pBR322*, and tightly coupled to the level of DNA supercoiling, with ATP hydrolysis decreasing once the DNA was relaxed (Figure 3A). This was supported by a gel-based relaxation time-course performed in tandem under analogous conditions (Figure 3B). With positively-supercoiled DNA, we found that the rate of ATP hydrolysis, measured using a PK/LDH coupled assay, was ~2 fold faster than with negatively-supercoiled DNA (Figure 3—figure supplement 1). This difference is consistent with the relaxation rates measured in Figure 1. DNA binding by topo VI in the absence of ATP, assayed using a nitrocellulose-membrane capture technique (Litwin et al., 2015), also indicates increased topo VI binding with increasing levels of supercoiling (Figure 3C and D). However, whereas relaxation and ATPase activity was ~2–3 fold higher for positive writhe than negative, topo VI preferentially bound negatively supercoiled DNA in the absence of ATP. This suggested that the topo VI preference for relaxing positive writhe may be facilitated during a stage post DNA binding, potentially DNA-gate opening or strand passage. Unfortunately, the nitrocellulose-membrane capture technique cannot differentiate between productive and non-productive binding modes, so the results may indicate that more non-productive, such as G-segment-only, DNA binding occurs on negatively supercoiled DNA. However, DNA binding is extremely low in the presence of linearised pBR322*, which suggests G-segment only binding is not the cause of increased binding to negative writhe. Furthermore, the amount of DNA cleavage, as measured using an agarose gel-based assay, also indicates that negatively-supercoiled DNA supports higher levels of ADPNP-dependent cleavage by topo VI than positively-supercoiled DNA (Figure 3E). Taken together, these results suggest that topo VI’s preference for relaxing positive DNA-crossings may occur at a stage post DNA binding and cleavage, potentially DNA-gate opening and/or strand-passage. Alternatively, it is possible that negatively supercoiled DNA, while bound and cleaved more efficiently, is mildly inhibitory to strand passage. The current data cannot unambiguously differentiate among these possibilities.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig3-v2.jpg)
+
+**Figure 3.:** (A) The ATPase activity of topo VI over time, measured using radioactive ATP. Assays were performed at 21 °C, using 1 μM topo VI, 430 nM pBR322* that was negatively-supercoiled (blue), linear (green), or relaxed (orange), and 450 μM [γ-32]-ATP. (B) Agarose-gel based relaxation time course performed under the same conditions as A, using the same topo VI:DNA ratio (1:2.3), but with non-radioactive ATP. In A, the ATPase rate on supercoiled DNA plateaus around 15 min, which corresponds to the DNA being fully relaxed by topo VI, as shown in B. Samples were run on a 1% (w/v) native agarose gel for 15 hr at ~2 Vcm–1, stained with 0.5 μg/mL ethidium bromide and imaged under UV illumination. (C) The ATP-independent DNA binding activity of topo VI, measured using a nitrocellulose membrane capture technique, with either negatively-supercoiled (-sc), positively-supercoiled (+ sc), relaxed (rel) or linearised (lin) pBR322* (± SEM). DNA concentrations measured using A260. (D) The ATP-independent DNA binding activity of topo VI, on either positively- (red) or negatively-supercoiled (blue) topoisomers of pBR322* measured using a nitrocellulose membrane capture technique. Bound and unbound DNA samples were run on a 1% (w/v) native agarose gel for 15 hr at ~2 Vcm–1, stained with 0.5 μg/mL ethidium bromide and imaged under UV illumination. The intensity of the bands were measured using ImageJ and the relative dissociation constants (Kd± SEM) for each topoisomer calculated as described in Litwin et al., 2015. (E) DNA cleavage activity of topo VI using negatively- and positively-supercoiled pBR322*. Topo VI concentration was varied from 5 to 80 nM and incubated with 4 nM pBR322*, 1 mM ADPNP, 10 mM MgCl2, at 37 °C for 30 min. All samples were treated with 1 mg/mL proteinase K and 0.2% SDS, then run on a 1% (w/v) native agarose gel for 10 hr at ~2 Vcm–1, stained with 0.5 μg/mL ethidium bromide and imaged under UV illumination.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ATPase rates were measured using a PK/LDH linked assay (Feng et al., 2021) with 1.2 µM topo VI in the presence of 177 nM DNA at 37 °C.
+
 A confusing aspect of topo VI activity, previously described in Wendorff and Berger, 2018 (Wendorff and Berger, 2018) and built upon here, is that the supercoil relaxation rate is far slower than the IIA topos. Even at high concentrations (e.g. 2 nM topo VI), the maximum rate measured for positive and negative supercoil relaxation was only 6.4 ± 0.6 and 3.5 ± 0.5 strand-passage events min–1, respectively. As detailed in the subsequent section, these rates are 10–50-fold slower than rates measured for the type IIA topos, gyrase and topo IV (Agarwal and Duderstadt, 2020; Basu et al., 2012; Stone et al., 2003). Wendorff and Berger, 2018 found the maximal topo VI ATP hydrolysis rate, using the PK/LDH assay, to be ∼3 ATP min–1 during relaxation of negatively supercoiled plasmids (Wendorff and Berger, 2018). Here, the ATPase rate was determined to be ∼5 ± 0.9 ATP min–1, using a radioactive ATPase assay (Figure 3A). If 2 ATP molecules are hydrolysed during each strand-passage cycle, both these values correspond well with a rate of ∼1.5–3.5 strand passage events min–1 on negative supercoils, attained using the magnetic tweezers, between 0.25–2 nM topo VI (3–7 ATP hydrolysed min–1). As discussed in Wendorff and Berger, 2018, this rate is a fraction of typical type IIA topo rates, suggesting that topo VI is unlikely to function efficiently enough to support cellular DNA metabolism as a DNA relaxase in M. mazei (Wendorff and Berger, 2018).
 
-## Topo VI is more active in DNA braid unlinking than supercoil relaxation
+### Topo VI is more active in DNA braid unlinking than supercoil relaxation
 
 As shown in Figures 1 and 2, topo VI relaxation activity was highly distributive, independent of the supercoil chirality, yet topo VI preferentially relaxed positive writhe. Interestingly, other type IIA topos including E. coli topo IV and human topo IIα also demonstrate preferential relaxation of positive writhe (Neuman et al., 2009; Seol et al., 2013). The detailed basis for chiral preference varies amongst type II topos, however one commonality was that enzymes preferentially act on a particular DNA crossing geometry for either G-segment binding or T-segment capture. In order to explore how DNA-crossing geometry and twist play a role in chirality sensing by topo VI, we employed a magnetic tweezers-based DNA-braiding assay. In this assay, rather than tethering a single torsionally-constrained duplex, two torsionally-unconstrained DNA duplexes are attached to a single magnetic bead, which, upon rotation of the magnets, were wrapped around one another to create writhe without changing twist (Charvin et al., 2003; Figure 4A). In contrast to the supercoiled substrate, DNA writhe is created directly in the braiding system (rather than via the conversion of twist to writhe); therefore left-handed magnet rotation forms positive writhe (left-handed DNA crossings) and right-handed rotation forms negative writhe (right-handed DNA crossings). The braided DNA substrate is more akin to catenated rather than supercoiled DNA, and allows the exploration of how writhe affects enzymatic behaviour in the absence of twist. In the case of topo VI, the braided DNA substrate had a surprising effect on activity. In Figure 4B, the example trace of braided DNA relaxation by 0.1 nM topo VI (0.5 pN), demonstrates that the braid was relaxed in three rapid bursts, at an average rate of ~0.5 strand-passage event s–1. This is an example of a trace where the braid was relaxed very quickly, however, even on average the rate of braid unlinking measured over a range of topo VI concentrations (0.05–0.9 nM) increased ~5 fold above that of supercoil relaxation (Figure 4C). For example, 0.5 nM topo VI relaxed positive supercoils at a rate of 3.5 ± 0.8 strand-passage events min–1, and positive braids at a rate of 18.9 ± 2.3 strand-passage events min–1. Moreover, topo VI exhibited robust unlinking activity at concentrations ∼10-fold lower than was achievable in supercoil relaxation, and with a limited processivity, passing consecutive T-segments while remaining bound to the initial G-segment. Rates for topo VI processive activity (dwell times between events not included in the average) approach ~0.8 strand-passage events s–1 on average (during positive braid unlinking using 0.9 nM topo VI) (Figure 4D), which is ~10 fold higher than the rate of positive supercoil relaxation at comparable topo VI concentrations (~0.08 strand-passage events s–1 using 1 nM topo VI). In line with this, when topo VI activities were assayed using a singly-catenated, supercoiled DNA substrate, the decatenation reaction (Figure 5, left-hand agarose gel) occurred at topo VI concentrations 10-fold lower than for supercoil relaxation (Figure 5, right-hand agarose gel). A similar result was also seen for topo IIα (Waraich et al., 2020). This demonstrates that DNA braids and catenanes likely share a common geometry favourable for topo VI activity that is not as prevalent in supercoiled DNA (Figure 5). Note that in Figure 5 (left-hand side) the appearance of supercoiled, decatenated products also occurs at a ~10 fold lower concentration than the fully relaxed, decatenated products. Overall, the rate of braid unlinking by topo VI is on par with those of other type IIA topos on their preferred substrates. For instance, E. coli DNA gyrase, measured using a rotor bead tracking technique, showed one strand-passage event s–1 (Basu et al., 2012), or using magnetic tweezers, 1.26 strand-passage events s–1 (Agarwal and Duderstadt, 2020), and E. coli topo IV was demonstrated to relax positively supercoiled DNA at 2.5 strand-passage events s–1 (Stone et al., 2003).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig4-v2.jpg)
+
+**Figure 4.:** (A) Calibration curve for a DNA braid formed from two 5 kb DNA duplexes tethered to a single magnetic bead. DNA extension is plotted as a function of magnet turns. Negative magnet-turn values represent the right-handed rotation of the magnets producing negative writhe, and positive magnet-turn values represent the generation of positive writhe via left-handed magnet rotation. (Note: this is the reverse scenario of forming a plectoneme, see Figure 1A). The first positive or negative 360° turn results in a sharp decrease in DNA extension as a single crossing is input. This is followed by a gradual decrease in extension with rotation, representing the formation of a DNA braid. At a critical number of turns, the braid buckles upon itself to form a supercoiled braid, which is evident in the graph as a switch to a steeper gradient. (B) An example of raw magnetic tweezers data, showing topo VI relaxation activity on a DNA braid with positive chirality. Data collected at a force of 0.5 pN, at 21 °C, using 0.1 nM topo VI and 1 mM ATP. Scale bar (black) represents ΔLk of 12, which corresponds to a change in DNA extension of 200 nm. A total of 10 DNA crossings are relaxed by topo VI in ~20 s (blue dashed line), measured as the time between the imposition and complete relaxation of the braids. Data collected at 200 Hz (grey dots) and plotted with a 1 second Savitzky–Golay smoothing filter (black line) and the T-test fit in red (Seol et al., 2016). Additional examples of braid relaxation data and the T-test fits are provided in Figure 4—figure supplement 1. (C) The average rate of topo VI braid unlinking activity (± SEM), of both positive (N tethers across all data points = 92) and negative (N tethers across all data points = 55) braids, measured as the number of strand-passage events/min and plotted as a function of topo VI concentration (0.05–0.9 nM). Data were fitted to a Michaelis-Menten-like function ($V_{0}=\frac{V_{max}E}{K_{d,app}+E}$). (D) The processive burst rate of topo VI (± SEM) on both positive (N burst events across all data points = 206) and negative (N burst events across all data points = 104) braids, measured as the average number of events min–1 in a burst, and plotted as a function of topo VI concentration. A burst is defined as rapid topo VI activity corresponding to the passage of two or more consecutive T-segments in which individual strand-passage events cannot be discerned by the step-finder. Any single strand-passage events detected were omitted from the average. The horizontal dashed lines represent the average processive burst rate (± SEM) across all concentrations of topo VI assayed. (E) The average burst size of topo VI (± SEM) on both positive (N burst events across all data points = 217) and negative (N burst events across all data points = 132) braids, measured as the average number of strand-passage events per burst, plotted as a function of topo VI concentration. Single passage events were included in the average burst size. The horizontal dashed lines represent the average processive burst size (± SEM) across all concentrations of topo VI assayed. (F) The dwell times between processive bursts of topo VI activity on both positive (N dwell times across all data points = 156) and negative (N dwell times across all data points = 119) braids, plotted as a function of topo VI concentration. A dwell time is defined as a period of time in which the DNA extension remains constant, reflecting lack of topo VI-dependent braid unlinking activity. In C-F, data was collected at a force of 0.5 pN, at 21 °C, using 1 mM ATP, with topo VI activity on positive DNA braids in red, and in blue for negative DNA braids. Raw data were analysed in IgorPro 7 (WaveMentrics) using a T-test-based method, first described in Seol et al., 2016. Figure 4—figure supplement 2 provides a comparison between the analysis of the experimental braid relaxation data and the analysis of simulated purely distributive braid relaxation data. Figure 4—figure supplement 3 provides examples of the t-test based fitting of the simulated data sets.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Extension versus time data for topo VI relaxing braided DNA (red lines) and the T-test based fit to the data (black lines). The sign of the braiding and the concentration of topo VI are indicated on each graph. For panels A-G, the applied force was 0.5 PN. The applied force for panels H and I are indicated on the graphs. Although the extension change per braided link varies slightly among different braids (15–50 nm) the most common extension change per link was ~40 nm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** To test the possibility that the braid relaxation data are consistent with purely distributive relaxation by topo VI, we performed simulations of distributive braid relaxation with average rates corresponding to the average measured braid relaxation rates (the number of crossings relaxed divided by the total time to relax the crossing including all pauses) at different topo VI concentrations (Figure 4C) and performed T-test fitting of the simulated extension versus time data with identical T-test parameters used for the experimental data (see Figure 4—figure supplement 3 for examples of T-test fits to simulated data). One hundred simulations of the distributive relaxation of braids containing 12 links were performed for each of six different average relaxation rates and the statistics of the simulated relaxation data were obtained from the T-test fits. (A) The average burst-size (linking number difference) for positive (red filled circles) and negative (blue filled circles) braids and simulated braid relaxation data (open circles) plotted as a function of the average braid relaxation rate with error bars corresponding to the standard error of the mean. The average step-size for the simulated perfectly distributive relaxation slightly exceeds one due to individual steps that are missed in the t-test analysis. (B) The average processive burst probability for positive (red filled circles) and negative (blue filled circles) braids and simulated braid relaxation data plotted as a function of the average braid relaxation rate. Fitted steps larger than 150% of the extension change for a single linking number were scored as a processive burst and the probability was obtained by dividing this number by the total number of fitted steps. (C) The average pause time between steps for positive (red filled circles) and negative (blue filled circles) braids and simulated braid relaxation data plotted as a function of the average braid relaxation rate with error bars corresponding to the standard error of the mean.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Simulated DNA extension versus time for distributive relaxation (grey line) along with the T-test fit (black line) and the simulated extension in the absence of noise (green dashed line) at average relaxation rates of: (A) 8 Lk/min. (B) 12 Lk/min, and (C) 20 Lk/min. Each simulated trace consists of a series of 12, 40 nm increases in DNA extension that occur at exponentially distributed time intervals with a mean time corresponding to the average relaxation rate. Gaussian noise with a standard deviation of 60 nm, estimated from experimental trajectories at 0.5 pN (Figure 4, Figure 4—figure supplement 1), was added to the simulated trajectories. T-test fitting of the trajectories was performed with the same parameters as those used for the experimental data: Initial data down-sampled 10-fold to 20 Hz, T-test comparison window size of 40 points, T-test significance level (alpha parameter) of 10–7, minimum step size of 20 nm (half the extension associated with a single relaxation event, 40 nm).
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig5-v2.jpg)
 
-**Figure 5.:** Methanosarcina mazei topo VI (MmT6).On the left, a singly catenated (depicted by the linked green and orange circles), negatively supercoiled plasmid substrate is decatenated by 0.1–20 nM topo VI. The catenated, supercoiled plasmids vary in size and when decatenated, can be seen as two bands that migrate further (depicted by the separated green and orange circles) (Waraich et al., 2020). As they are also negatively supercoiled, the relaxation of the plasmids can be seen at topo VI concentrations ~10 fold higher (5 nM) than when full decatenation is seen (0.5 nM). This is further corroborated by a relaxation assay performed using negatively supercoiled pBR322* (right-hand gel), where relaxation activity is not detected until ~10 fold the MmT6 concentration (5 nM) necessary for decatenation. OC: open circular, Rel: relaxed and Sc: supercoiled. Both reactions were incubated for 30 min at 37 °C.
+**Figure 5.:** On the left, a singly catenated (depicted by the linked green and orange circles), negatively supercoiled plasmid substrate is decatenated by 0.1–20 nM topo VI. The catenated, supercoiled plasmids vary in size and when decatenated, can be seen as two bands that migrate further (depicted by the separated green and orange circles) (Waraich et al., 2020). As they are also negatively supercoiled, the relaxation of the plasmids can be seen at topo VI concentrations ~10 fold higher (5 nM) than when full decatenation is seen (0.5 nM). This is further corroborated by a relaxation assay performed using negatively supercoiled pBR322* (right-hand gel), where relaxation activity is not detected until ~10 fold the MmT6 concentration (5 nM) necessary for decatenation. OC: open circular, Rel: relaxed and Sc: supercoiled. Both reactions were incubated for 30 min at 37 °C.
 
 The average unlinking rates (including dwell times between short processive bursts of activity) of topo VI at concentrations ranging from 0.05 to 0.9 nM were well described by a Michaelis-Menten-like equation, providing Vmax values of 21.4 ± 0.5 and 10.9 ± 1.3 strand-passage events min–1, and Kd,app of 67 ± 7 and 164 ± 72 pM, for the unlinking of positive and negative braids respectively (Figure 4C). The chiral preference remains, with the Vmax ~2 fold higher, and the Kd,app ~2.5 fold lower, for positive-braid unlinking in comparison with negative. This further suggests that the chiral selection originates from a DNA-crossing-geometry sensitive step that occurs between DNA binding and strand-passage. Based on DNA binding and cleavage experiments (Figure 3C–E), the chiral selection potentially occurs after G-segment binding and cleavage as topo VI exhibits tighter binding and higher levels of cleavage in the presence of negative writhe than positive. This suggests that DNA-gate opening and/or strand passage is sensitive to the crossing angle, with a preference for angles more commonly found in positive writhe.
 
@@ -66,13 +90,41 @@ The average rate of unlinking by topo VI (rate including dwell times) was approx
 
 Additional experimental data exploring the effects of force on braid unlinking and supercoil relaxation are broadly consistent with a model of topo VI preferentially catalysing strand-passage on two segments juxtaposed at larger crossing angles. Calculations of the average braid and supercoil angles as a function of force, corresponding to the experimental configurations of DNA length, buffer conditions, and spacing between braided DNA molecules, suggest that DNA crossing-angles in braids were closer to 90° than those in supercoils (Figure 6) and that this may be the critical geometric factor promoting DNA unlinking by topo VI. This is particularly true for braids with a larger DNA spacing ( > 500 nm), which favours larger crossing angles (Charvin et al., 2005). It is also intriguing that topo VI transitioned from being highly distributive on supercoils to somewhat processive on braids. Positing a crossing angle-dependent strand-passage rate offers a potential explanation for this observation. Specifically, the diffusion of the T-segment into the topo VI cavity appropriately juxtaposed to the G-segment for strand-passage may occur frequently in braids, but rarely in supercoils. Measurements of the supercoil and braid relaxation rate as a function of applied force lend support to this proposal that the DNA-crossing angle may be the key determinant of the strand-passage rate (Figure 6—figure supplement 1). With increasing force, the average rate of braid unlinking drops significantly (Figure 6—figure supplement 1A), for both positive and negative writhe, mainly through an increase in dwell times between events with increasing force, although there is also a slight decrease in the rate and extent of the processive bursts (Figure 6—figure supplement 1). This force-dependent rate reduction could be the result of two different factors. It may be due to a force-dependent step in the catalytic cycle that becomes rate limiting, for example, bending the gate segment (Hardin et al., 2011; Thomson et al., 2014), or closing the DNA gate against the applied tension. However, it is more likely due to the deviation of the DNA-crossing angle away from the preferred angle, which decreases strand-passage rate. This interpretation is bolstered by the supercoil relaxation rate of topo VI as a function of force; the rate initially increased as the force was increased, but then rapidly decreased at higher forces ( >1 pN for positive and >0.6 pN for negative). These results suggested that two competing factors were affecting the rate of relaxation with increasing force (Figure 6—figure supplement 1E-F). Consistent with the calculations (Figure 6), the initial increase in rate could be due to the DNA-crossing angle getting closer to 90° with increasing force. The cause of the subsequent decrease in activity, particularly for positive supercoil relaxation above 1 pN (Figure 6—figure supplement 1F) is less clear. Potential explanations include inhibition of DNA gate closing, or G-segment bending against high force. Alternatively, an increase in DNA twist, which also increases with increasing force, may inhibit DNA binding or cleavage. Whereas the data is largely consistent with a model in which topo VI requires the T- and G-segments to be juxtaposed at a crossing angle close to 90°, directly measuring the preferred crossing angle would provide definite support for this model.
 
-## Topo VI has a strong preference for DNA-crossing angles slightly below 90°
+![Figure 6.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig6-v2.jpg)
+
+**Figure 6.:** The average DNA-crossing angle in positive and negative supercoils (+ sc [ink] and -sc [light blue], respectively) were calculated as described in Neukirch and Marko, 2011. The temperature was 293 K, the DNA persistence length was 50 nm and the monovalent salt concentration was 100 mM. The average DNA-crossing angles in positive and negative braids (+ braid [red] and -braid [dark blue], respectively) were calculated as described in Charvin et al., 2005. The temperature, DNA persistence length and monovalent salt concentration were the same as for supercoils. DNA duplex spacing was 600 nm, DNA-crossing number was eight and the DNA was 5080 bp long. In both the supercoil and braiding calculations, variables were set to mirror experimental conditions as close as possible. The horizontal grey line represents 90° and the dotted black line represents the topo VI DNA-crossing angle preference (α0 ≈ 87.5°).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The average rate of positive (red, N tethers across all data points = 28) and negative (blue, N tethers across all data points = 22) braid unlinking (events min–1) (± SEM), plotted against force. (B) The average dwell times (s) between unlinking events for positive (red, N dwell times across all data points = 75) and negative (blue, N dwell times across all data points = 56) braids (± SEM), plotted against force. (C) The average processive burst rate (events min–1) for positive (red, N burst events across all data points = 80) and negative (blue, N burst events across all data points = 44) braid unlinking (± SEM), plotted against force. (D) The average step size (events burst–1) for positive (red, N = 92) and negative (blue, N = 69) braid unlinking (± SEM), plotted against force. Assays in A-D were conducted using 0.5 nM topo VI and 1 mM ATP, at 21 °C, over a force range of 0–4 pN.( E) The average rate of relaxation of negative supercoils (events min–1) (± SEM, N tethers across all data points = 12), plotted against force. (F) The average rate of relaxation of positive supercoils (events min–1) (± SEM, N tethers across all data points = 15), plotted against force. Assays in Figures E-F were conducted using 0.75 nM topo VI and 1 mM ATP, at 21 °C.
+
+### Topo VI has a strong preference for DNA-crossing angles slightly below 90°
 
 In order to directly determine topo VI’s preferential DNA-crossing geometry, we measured unlinking rates of a single DNA-crossing by topo VI in which the crossing geometry can be well-defined and therefore its effect on activity attained. This method was first described in Neuman et al., 2009 and applied to E. coli topo IV. Here, a single-crossing is defined as the interlink between the two DNA duplexes formed by one full magnet rotation (360°) corresponds to a change in linking number of 2. Shown in Figure 4A, when the braid goes from fully relaxed to a single crossing, there is a distinct drop in DNA extension. This allows straightforward measurement of the unlinking rate of a single DNA-crossing of either chirality. These measurements can be conducted at high topo VI concentration, as they are complete in a single catalytic event, so as to ensure T-segment binding, rather than G-segment binding, is rate limiting. This, when combined with Monte Carlo and Brownian dynamics simulation-derived DNA crossing-angle distributions, allowed determination of the topo VI DNA crossing-angle preference. This is facilitated as single-positive and -negative crossings are identical in every respect, aside from the crossing angle distributions. An enzyme with a preference for a crossing angle below 90° will have increased activity on positive crossings, as is true for topo IV, whereas if the enzyme binds preferentially to perfectly symmetric DNA-crossings (90°), there would be no difference between the rate of relaxation on positive and negative crossings, as is seen for yeast topo II (Neuman et al., 2009).
 
 To begin, the braid being assayed requires precise calibration of the first crossing, which is then fitted to a geometric function (Figure 7—figure supplement 1). This allows the calculation of both the length and spacing of the DNA attached to the bead. This information, along with the magnetic force applied to the bead and temperature, is integral to executing the DNA-crossing angle simulations. Once calibration was complete, data collection in the presence of topo VI was performed, imposing a DNA crossing of one chirality, allowing topo VI to unlink the DNA-crossing, before imposing one of the opposite chirality and so on (Figure 7A and B). Not all braid geometries were unlinked by topo VI, in particular the more acute crossing angles, determined by assaying the braid for up to an hour without a single event, or until the braid became unattached from the slide surface. The distribution of times taken to relax either positive (left-handed) or negative (right-handed) crossings were plotted as histograms and fitted with single exponentials to attain the characteristic unlinking times for the DNA-crossing geometry being assayed (Figure 7C). In agreement with results from DNA braids and supercoils, the characteristic unlinking time from the fitting on positive crossings (τL) for the particular braid assayed in Figure 6 was 8.4 ± 1.4 s, which was 4.7-fold faster than that of negative crossings (τR) (43.8 ± 6.9 s), suggesting that a positive crossing geometry facilitates topo VI activity through the higher probability of forming the preferred crossing angle (Figure 7C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig7-v2.jpg)
+
+**Figure 7.:** (A) Single crossing assay schematic with DNA crossing geometry for positive (left-handed, red) and negative (right-handed, blue) DNA writhe. One 360° clockwise magnet rotation imparts a positive crossing, which is unlinked by topo VI, followed by the generation and subsequent topo VI-dependent unlinking of a negative DNA crossing, formed by a 360° anticlockwise magnet rotation. The crossing angle is defined as the clockwise angle between the top and bottom DNA strands. For positive crossings this is an acute angle (α); for negative crossings the obtuse angle is the supplement (π-α) of the positive angle. For topo VI, achieving the preferred angle (α0 < 90) requires a smaller thermal fluctuation of positive crossings, therefore there is a higher probability of α0 being achieved than for negative crossings. (B) Single crossing unlinking data, collected for a braid formed from 3 kb DNA tethers, spaced 624 nm apart, at a force of 1 pN, using 0.9 nM topo VI and 1 mM ATP. Positive crossings (red) were relaxed more rapidly than negative crossings (blue). (C) Distributions of the topo VI-dependent unlinking times for negative (blue bars) and positive (red bars) crossings, of the data shown in B. The data were fitted with single exponentials, P(t) = τ–1exp(-t/τ), returning characteristic unlinking times of τR = 47 ± 7 s for negative crossings, and τL = 8 ± 1 s for positive crossings, giving a ratio of τL/ τR = 0.19 ± 0.04.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The DNA extension of a 3 kb double tether, plotted as a function of magnet rotations and fitted to a geometric function (Neuman et al., 2009). $L= \sqrt{L_{0}^{2}-4e^{2}sin^{2}n\pi} –r+ \sqrt{r^{2}-e^{2}}, n§amp;lt;0.5$ Where L is the measured DNA extension, L0 is the maximum DNA extension (dependent on the force applied), e is half the separation distance between the DNA molecules, n is the number of magnet rotations, and r is the radius of the magnetic bead to which the tethers are bound. The first term in the expression describes the extension of a twisted swing, whilst the second two terms are a correction for the spherical bead, see Neuman et al., 2009 for a full description. (B) Geometric parameters of the DNA tethers, attained through the calibration and subsequent geometric fit (seen in Figure 7A), namely the length of the DNA tethers (L) and the separation distance between them ($2e$). Along with the force and number of turns, this information was used in Monte Carlo (MC) and Brownian Dynamics (DB) simulations.
+
 To relate this experimentally-derived data to a more precise value for the DNA-crossing angle preference of topo VI, we performed both Monte Carlo (MC) (Figure 8A) and Brownian Dynamics (BD) simulations to determine the distribution of crossing angles formed for a given DNA-crossing geometry and force. The crossing angle distribution is attained by simulating the thermal fluctuations of two DNA molecules, the movements of which are dependent on DNA length, the tension applied to the DNA, temperature, and the spacing between the DNA duplexes. So, even though the average crossing angle is not necessarily the preferred crossing angle (α0), this fluctuation results in α0 being formed at a certain frequency, which is related to the measured unlinking rate of a single DNA-crossing (assuming that achieving α0 is rate-limiting). The MC and BD simulations can predict how probable α0 is under the given DNA-crossing geometry for positive and negative crossings. If the assumptions that the time taken to unlink the crossing is dependent on a single rate-limiting step, which is likely as the unlinking times are exponentially distributed, and that this step is dependent on the DNA-crossing angle, then τL/ τR is equal to the ratio of negative and positive DNA-crossing angle probabilities (Figure 8B). In other words, for the DNA-crossing geometry shown in Figures 7 and 8, the positive crossing is relaxed 4.7-fold faster than the negative, and so, using this ratio, the angle that is 4.7-fold more probable in positive DNA crossings than negative can be determined and defined as α0. This was repeated for fourteen different crossing geometries that all yielded extremely similar values for α0, over a wide range of average crossing angles (Figure 8C) and applied forces (Figure 8D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig8-v2.jpg)
+
+**Figure 8.:** (A) Crossing angle probability distributions for single positive (PL(α), red) and negative (PR(α), blue) crossings, from Monte Carlo (MC) simulations for the tether geometry and force displayed in Figure 7. The positive crossing angle probability distribution was obtained from the MC simulations, whereas the negative crossing angle distribution was derived from the relationship PR(α) = PL(180°-α). For Brownian dynamics (BD) simulations, the negative crossing angle distributions, like the positive, were measured directly. The imposed crossing angle (αL: black-dotted line) is the average angle for the positive crossing angle distribution, in this case ≈ 79°. (B) Ratio of negative to positive probability from A plotted on a semilogarithmic axis. Using the relationship τL/τR = PR(α0)/ PL(α0), the preferred angle (α0) can be obtained, as illustrated by the black arrow. For this tether geometry and force, τL/τR = 0.19 ± 0.04 (obtained from the analysis in Figure 7C), which gives α0 of 87.9° ± 4.4° when using MC simulations, and 83.5° ± 4.2° when using BD simulations. The error associated with α0 in C and D is the combination of the statistical and systematic error, with the latter being the main contributor. (C) Preferred crossing angles (α0) from fourteen different DNA tether geometries, plotted against the average positive crossing angles (αL), as measured by MC simulations (filled circles, left-hand plot) and BD simulations (open circles, right-hand plot). (D) Preferred crossing angles (α0) from 14 different DNA tether geometries, as measured by MC simulations (filled circles, left-hand plot) and BD simulations (open circles, right-hand plot), plotted against the applied force on the DNA tether. The combined average preferred crossing angle for topo VI, determined from the MC simulations, was 87.8° ± 0.4° (± SEM), and from BD simulations, was 87.4° ± 0.4° (± SEM), both values represented by the dotted line and error shading in plots C and D (N = 14).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Comparison between the ATPase rate of Topo VI relaxing negatively versus positively supercoiled DNA and the crossing angle distributions of negatively- and positively-supercoiled DNA estimated from Monte Carlo simulations. Ratio of negatively to positively supercoiled 3.5 kB plasmid DNA crossing angle probability distributions Pσ(θ) plotted as a function of the crossing angle, θ, for superhelical density, σ = ± 0.06 (Blue dots) σ = ± 0.05 (Green dots) and for σ = –0.06 compared with σ = + 0.05 (Black dots). The red dashed line at a ratio of 0.5 corresponds to the ratio of ATPase rates of Topo VI relaxing negatively versus positively supercoiled DNA (Figure 3—figure supplement 1). By analogy with Figure 8B, the preferred crossing angle for topo VI corresponds to the crossing angle at which the ratio of crossing angle probabilities is equal to the ratio of ATPase rates for negatively and positively supercoiled DNA. For the three different supercoiling ratios considered, the corresponding preferred crossing angle estimates are: 83° (σ = ± 0.05), 85° (σ = ± 0.06), and 87° (σ = −0.06 and σ = + 0.05). These estimates of the preferred crossing angle compare favourably to the preferred crossing angle of 87.5° (black vertical dashed line) derived from the single-molecule measurements (Figure 8). The crossing angle distributions were obtained from Monte Carlo simulations of supercoiled 3.5 kB circular DNA with superhelical density (σ) of 0.06 or 0.05, with an effective sodium ion concentration of 0.2 M performed by Vologodskii and Cozzarelli, 1996; Vologodskii and Cozzarelli, 1994. Crossing angle distributions for negatively supercoiled DNA were obtained from the positively supercoiled distributions by replacing the crossing angle with its supplement.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/67021/elife-67021-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Crossing angle probability distributions from MC simulations for single-crossing geometries that were relaxed by topo VI (solid lines) and one single-crossing geometry that was not relaxed by topo VI at 1 and 1.5 pN of force (dashed lines). The vertical black dashed line corresponds to the preferred crossing angle of 87.6°. (B) Probability of obtaining the preferred crossing angle (87.6°) plotted as function of the imposed (peak) crossing angle for each of the simulated crossing angle distributions in part A. Initial relaxation measurements were typically performed at one or 1.5 pN. Under these conditions the probability of obtaining the preferred crossing angle in the non-relaxed crossing angle distribution (squares) is a factor of ~4–14 – fold less probable than the next lowest probability, and ~150 fold less probable than the most probable configuration (compare with the green and blue circles to the right). On average, the unlinking time for the crossing that was not relaxed would be expected to be ~13 fold longer at 1 pN and ~38 fold longer at 1.5 pN than the average unlinking time of the single crossings that were relaxed (6 seconds on average). It is likely that these much longer times to capture a T-segment exceed the binding time of topo VI to the G-segment, which will further reduce the effective unlinking rate to a greater extent than the decrease in T-segment capture rate.
 
 Together these data indicate that the preferred DNA-crossing angle for topo VI is 87.8° ± 0.4°, when using MC simulations, and 87.4° ± 0.4° (uncertainties represent SEM), when using BD simulations. From a technical perspective, simulating the crossing angle distributions using two distinct simulation techniques and attaining strikingly similar values for topo VI α0, not only adds confidence to the accuracy of this value but also supports the use of either simulation technique in measuring DNA-crossing angle distributions. Supported by MC simulations done by Stone et al., 2003, the topo VI angle preference can account for the consistent twofold difference in rate between the positive and negative supercoil relaxation and braid unlinking assays. Furthermore, combining the ATPase measurements of topo VI relaxing positively and negatively supercoiled DNA (Figure 3—figure supplement 1) with crossing angle distributions of supercoiled plasmid DNA obtained from MC simulations performed by Vologodskii and Cozzarelli (Vologodskii and Cozzarelli, 1996; Vologodskii and Cozzarelli, 1994) permits an independent estimate of the preferred crossing angle of topo VI. This analysis returns a preferred crossing angle in the range of 83° to 87° (Figure 8—figure supplement 1), in excellent agreement with the value of 87.6° obtained from the more precise single molecule measurements.
 
@@ -86,7 +138,7 @@ Taken together, the data obtained from the single-crossing assays not only provi
 
 ## Discussion
 
-## M. mazei topo VI is a chirally selective DNA crossing sensor, with preferential decatenase activity
+### M. mazei topo VI is a chirally selective DNA crossing sensor, with preferential decatenase activity
 
 Using the magnetic tweezers single-molecule approach, we have not only demonstrated that M. mazei topo VI is a highly distributive and extremely slow supercoil relaxase, confirming findings from Wendorff and Berger, 2018 (Wendorff and Berger, 2018), but have also shown that topo VI activity increases as much as ~10 fold on braided DNA, (Figures 1, 2 and 4), approaching rates determined for type IIA topos on their respective optimal substrates (Agarwal and Duderstadt, 2020; Basu et al., 2012; Stone et al., 2003). Along with the observation that topo VI has an extremely strict preference for DNA crossing geometries close to 90°, which appear more frequently in catenanes than they do in supercoils (Stone et al., 2003), these data strongly indicate that M. mazei topo VI is a preferential decatenase, which simultaneously disfavours supercoil relaxation. This leads to providing a potential explanation for the presence of topo VI in higher eukaryotes, during situations in which the genome is rapidly replicated, such as endoreduplication in plants, explored in depth below.
 
@@ -100,74 +152,349 @@ Another unforeseen outcome of this work was the switch from highly distributive 
 
 Varying force on the supercoiled substrate suggested that DNA twist could play a secondary role in catalysis. The supercoiling rate initially increases with increasing force before decreasing sharply above a critical force, whereas the twist increases monotonically but sub-linearly with increasing force (Figure 6—figure supplement 1E-F; Neukirch and Marko, 2011). The initial increase in rate can be explained by the average supercoil angles becoming closer to 90° as force increases (Figure 6). The significant decrease in rate that occurs at high force, however, could be due to changes in twist preventing DNA binding or cleavage. However, this could also be due to inhibition of a step that is directly sensitive to force, such as G-segment binding or cleavage, which induce bending of the DNA, or gate closure, particularly since the twist increases sub-linearly with increasing force. Currently, little is known about the dynamics of gate opening for type II topos, but with its relatively simple structure, topo VI could make a good candidate for such studies, like recent experiments with E. coli topo I and III that directly observed gate opening dynamics (Mills et al., 2018).
 
-## Understanding the activity of topo VI from the archaeal perspective
+### Understanding the activity of topo VI from the archaeal perspective
 
 Archaea constitute the third domain of the tree of life, alongside bacteria and eukarya. Archaea were distinguished from bacteria, previously having been grouped together, based on their unique ribosomal proteins and RNA (Forterre et al., 2002). Archaeal DNA metabolism is far less studied than that of the bacterial and eukaryotic domains. However, it is known that archaeal DNA transcription and replication share features with both bacteria and eukarya (Ausiannikava and Allers, 2017; Barry and Bell, 2006). For instance, like bacteria, archaea have sequence-specific origins of replication and encode transcriptional regulators that resemble those found in bacteria (Ausiannikava and Allers, 2017; Bell and Jackson, 2001). But, like the eukarya, archaea utilise a basal transcriptional complex that resembles the eukaryotic RNA polymerase II, can have multiple origins of replication, and many species compact their genomes through the use of histone-like proteins (Barry and Bell, 2006; Bell and Jackson, 2001). This complexity along with diversity within the archaeal domain itself can make understanding the roles of archaeal topos in vivo more challenging. This is compounded further by the distribution of topos among archaea. Almost all archaea contain topo VI, aside from the order Thermoplasmatales, which instead encodes a DNA gyrase, whereas some, including the Methanosarcina order, encode both gyrase and topo VI (Forterre and Gadelle, 2009). In addition to type II topos, all archaea, aside from the Thuamarchaea, encode one or more copies of a type IA topo, which, in terms of sequence similarity, resembles bacterial and eukaryotic topo III, as opposed to bacterial topo IA (Forterre et al., 2007). This has led to the proposal that topo VI must be involved in the removal of positive supercoils during transcription and replication, particularly in archaea lacking a gyrase, as topo III is a preferential decatenase (Lee et al., 2019). However, the work reported here solidifies the observation by Wendorff and Berger, 2018 (Wendorff and Berger, 2018), that M. mazei topo VI is an extremely inefficient DNA relaxase, and provides evidence of its preferential decatenation activity. If this behaviour is true of all archaeal topo VI enzymes, then those organisms that lack DNA gyrase, would struggle to relieve torsional stress ahead of replication forks at a pace required by the cell, if they also do not have an efficient type I relaxase capable of relaxing positive supercoils, like a type IB.
 
 The current literature confounds the issue as the first archaeal type IA topo explored in vitro, from the hyperthermophile Desulfurococcus amylolyticus, also termed topo III, was claimed to exhibit robust relaxation activity of both positive and negative writhe at 95 °C. However, it has also been established in Sulfolobus solfataricus, that of the three type IA topos it encodes, two are reverse gyrases (Bizard et al., 2011) (another type IA topo important in positive supercoiling of hyperthermophillic genomes) (Nadal, 2007), and the third is topo III, exhibiting preferential decatenation activity (Bizard et al., 2018). It may be that in archaea that lack DNA gyrase and are apparently devoid of a type IA relaxase, that topo VI has evolved more efficient DNA relaxation activity, similar to how Mycobacterium tuberculosis DNA gyrase has evolved to efficiently both supercoil and decatenate DNA in the absence of topo IV (Manjunatha et al., 2002). M. mazei encodes both topo VI and DNA gyrase, as well as two uncharacterised type IA topos, meaning that topo VI may not be required during positive supercoil relaxation and hence has evolved to preferentially decatenate. It is also important, as was done in Wendorff and Berger, 2018, to consider the doubling time of the archaea in question, as the slow relaxation by topo VI may be adequate to support the growth of that particular organism, which did not seem to be the case for M. mazei (Wendorff and Berger, 2018). The involvement of unknown accessory factors that may enhance the rate or processivity of topo VI has been postulated (Wendorff and Berger, 2018). In addition, topo VI’s main in vivo role could be precatenane removal, which may occur closer to the termination of replication, or even during elongation or at cell division. For instance, if the replication fork can swivel in vivo, which is known to occur in bacteria and eukaryotes (Cebrián et al., 2015; Schalbetter et al., 2015), positive supercoiling generated ahead of polymerase may be redistributed to form precatenanes behind the fork in archaea, which are likely a preferred topo VI substrate. Therefore, in cells seemingly devoid of an efficient relaxase, topo VI may be able to efficiently support fork progression through unlinking of precatenated DNA, rather than relaxation of supercoils. This may also provide a functional explanation for why topo VI exhibits partially processive behaviour, as this would have utility in the rapid removal of precatenanes. However, as little is currently known about the specifics of how DNA topology changes during archaeal metabolism, this remains speculative. A better understanding of these varied topological states occurring in vivo will also permits more precise delineation of the relative decatenation versus relaxation activities of topo VI. Although topo VI preferentially unlinks rather than relaxes singly-catenated negatively supercoiled substrates (Figure 5), in line with its preference for a crossing angle near 90°, the crossing angle distribution in catenated DNA molecules depends on both the sign and extent of supercoiling (Vologodskii and Cozzarelli, 1996). Combining the preferred crossing angle obtained here with simulations of the topological states of interlinked DNA in vivo will provide a fuller picture of the relative unlinking versus relaxation activities of topo VI.
 
-## Implications for the physiological role of plant topo VI homologues
+### Implications for the physiological role of plant topo VI homologues
 
 Genomic analysis of Arabidopsis thaliana revealed that the Topo6A (AtSPO11-3) and Topo6B (AtTOP6B) genes were encoded, and homozygous null mutations in either, displayed identical phenotypes with severely growth stunted plants that failed to thrive (Hartung et al., 2002; Hartung and Puchta, 2000; Hartung and Puchta, 2001). Furthermore, double mutants displayed a phenotype identical to that of either single mutant, demonstrating the proteins likely function in the same process, or even the same protein complex. A process called endoreduplication, in which the genome is replicated multiple times in the absence of cellular division, is critical for plant growth to enlarge hypocotyl and leaf cells (Sugimoto-Shirasu and Roberts, 2003), was shown to be deficient in the AtSPO11-3/AtTOP6B mutants and explained the dwarf phenotype (Robert et al., 2016; Vrielynck et al., 2016). However, A. thaliana possesses four type I topos, along with topo II and DNA gyrase, both of which are type IIA topos capable of the same reactions as topo VI, namely DNA decatenation, unknotting, and relaxation (Corbett and Berger, 2003). Therefore, the exclusive requirement of topo VI by A. thaliana during endoreduplication remains uncertain. Our results provide a possible explanation since topo VI has an intrinsic preference for decatenation, arising from a strict DNA crossing angle preference. Topo VI efficiently unlinks catenanes and braids but exhibits much slower relaxation of supercoils (Figures 1—4). During the endocycle, the genome is replicated to variable degrees, however in wild-type A. thaliana trichomes this can be as high as 32 C (Sugimoto-Shirasu and Roberts, 2003), with mutants in topo VI unable to replicate the genome past 8 C (Hartung et al., 2002; Sugimoto-Shirasu et al., 2002). With increasing DNA replication, comes elevated levels of transcription, and therefore extensive pressure on the protein machinery involved in both of these processes. Replication- and transcription-dependent strand separation could result in significant levels of DNA supercoiling, which is efficiently dealt with by the type I and type IIA topos. It is possible, therefore, as these proteins are very efficient at relaxation, that even though they are known to efficiently decatenate in vitro, they become subsumed by the necessity to relieve torsional stress generated ahead of replication and transcription forks. With this reaction so heavily disfavoured by topo VI, it could decatenate and unknot the genome unhindered, allowing the cell to continue through the endocycle. The research described here, clearly does not rule out the possibility of protein-protein recruitment, temporal regulation, or other activity-modulating factors which lead to the indispensability of topo VI in endoreduplication, but does provide a rationale that is independent of the requirement of these yet unknown components.
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Methanosarcina mazei)</td>
+      <td>Top6A</td>
+      <td>Gift from James Berger, Johns Hopkins University</td>
+      <td>NCBI Gene ID: 1480760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Methanosarcina mazei)</td>
+      <td>Top6B</td>
+      <td>Gift from James Berger, Johns Hopkins University</td>
+      <td>NCBI Gene ID: 1480759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta 2 (pLysS)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pBR322*</td>
+      <td>Inspiralis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pET28a</td>
+      <td>EMD Millipore</td>
+      <td>CAT#:69,865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pBlueScript II KS(+)</td>
+      <td>Agilent</td>
+      <td>CAT#:212,207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Top6AB dual expression vector</td>
+      <td>PMID:17603498</td>
+      <td></td>
+      <td>Corbett et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin(SheepPolyclonal)</td>
+      <td>Roche</td>
+      <td>Roche Cat# 11333089001, RRID:AB_514496</td>
+      <td>Reconstituted in 1 x Phosphatebuffered saline (0.6 µg)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR DNA purification kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen Cat. #: 28,104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin coated magnetic beads (ø: 1 and 2.8 µm)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen Cat. #: 65,602 and 65,305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phusion high-fidelity DNA polymerase</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: M0530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 DNA ligase</td>
+      <td>Promega</td>
+      <td>Promega Cat. #: M1801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BsaI-HF</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: R3535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-16-dUTP</td>
+      <td>Roche</td>
+      <td>Sigma Cat#:11093070910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxigenin-11-dUTP</td>
+      <td>Roche</td>
+      <td>Sigma Cat#:11558706910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA supercoil primer1</td>
+      <td>Eurofin Genomics Seol and Neuman, 2011a</td>
+      <td></td>
+      <td>5'- GCT GGG TCT CGG TTGTTC CCT TTA GTG AGG GTT AAT TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA supercoil primer2</td>
+      <td>Eurofin Genomics Seol and Neuman, 2011a</td>
+      <td></td>
+      <td>5'- GCT GGG TCT CGT GGT TTC CCTTTA GTG AGG GTT AAT TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3 kb DNA braid primer1</td>
+      <td>Eurofin Genomics</td>
+      <td></td>
+      <td>5’(2 x)biotin-GCTGGGTCTCGGTTGGAACTGCGACTGGATAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3 kb DNA braid primer 2</td>
+      <td>Eurofin Genomics</td>
+      <td></td>
+      <td>5' (3 x) digoxigenin-GCTGGGTCTCGGTTGGATTACGCCAGTTGTACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA braid primer1</td>
+      <td>Eurofin Genomics</td>
+      <td></td>
+      <td>5’(2 x)biotin-CTTCCGCTTCCTCGCTCACTGACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5 kb DNA braid primer 2</td>
+      <td>Eurofin Genomics</td>
+      <td></td>
+      <td>5' (3 x) digoxigenin-CTGTTCATCCGCGTCCAGCTCGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bio/Dig labelledPrimer1</td>
+      <td>Eurofin Genomics Seol and Neuman, 2011a</td>
+      <td></td>
+      <td>5’-GGA CCT GCT TTC GTT GTG GCG TAA TCA TGG TCA TAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bio/Dig labelledPrimer2</td>
+      <td>Eurofin Genomics Seol and Neuman, 2011a</td>
+      <td></td>
+      <td>5'- GGG TCT CGT GGT TTA TAG TCC TGT CGG GTT TC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW, Instrument control software</td>
+      <td>National Instruments</td>
+      <td>NI Cat. #: 776678–35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 7,Data analysis</td>
+      <td>WaveMetrics</td>
+      <td>PMID:28069956</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ, Data analysis</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine triphosphate (ATP)</td>
+      <td>MilliporeSigma</td>
+      <td>A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide adenine dinucleotide (NADH)</td>
+      <td>MilliporeSigma</td>
+      <td>10107735001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate Kinase/Lactic Dehydrogenase (PK/LDH)</td>
+      <td>MilliporeSigma</td>
+      <td>P0294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphoenol-pyruvate (PEP)</td>
+      <td>MilliporeSigma</td>
+      <td>10108294001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Plate reader</td>
+      <td>BMG LabTech</td>
+      <td>CLARIOstar Plus</td>
+      <td>Used for the PK/LDH-coupled ATPase assay.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+      <td>Used for data analysis for the PK/LDH-coupled ATPase assay.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAMMPS</td>
+      <td>https://www.lammps.org/</td>
+      <td></td>
+      <td>Used for Molecular Dynamics Simulations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>Used for analyses of Molecular Dynamics Simulations</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Both subunits of M. mazei topo VI (top6A and top6B) were expressed from a polycistronic dual expression vector, kindly provided by James Berger (Corbett et al., 2007), transformed into Rosetta 2(DE3)pLysS Singles Competent Cells (Novagen). Cells were grown for 24 hr at 37 °C in autoinduction growth media (AIM) with kanamycin (50 mg/ml) and chloramphenicol (35 mg/ml). The culture was then centrifuged using the RC6+ centrifuge (Sorvall) in a FS9 rotor for 8 min, at 8000 rpm, at 4 °C. Supernatant was discarded and the pellet resuspended in Buffer A (20 mM HEPES pH 7.5, 10% (v/v) glycerol, 800 mM NaCl, 20 mM Imidazole, 2 mM β-mercaptoethanol and cOmplete EDTA-free protease inhibitors (Roche)).
 
 Cells were lysed under high pressure using an Avestin high pressure homogeniser. Samples were then spun at 18,500 rpm for 1 hr at 4 °C with the RC 6+ centrifuge (Sorvall) and SS34 rotor. The lysate was then passed over a HisTrap FF Ni2+ column (5 ml/min, GE Life Sciences) and washed with Buffer B (20 mM HEPES pH 7.5, 10% (v/v) glycerol, 150 mM NaCl, 20 mM Imidazole, 2 mM β-mercaptoethanol, and cOmplete EDTA-free protease inhibitors (Roche)). The protein was stepped off in Buffer B1 (20 mM HEPES pH 7.5, 10% (v/v) glycerol, 150 mM NaCl, 500 mM imidazole, 2 mM β-mercaptoethanol, and cOmplete EDTA-free protease inhibitors (Roche)) and then loaded on to a HiTrap SP Sepharose HP column (5 ml/min, GE Life Sciences) followed in tandem by a HiTrap Q Sepharose HP column (5 ml/min, GE Life Sciences). The SP Sepharose column was removed before the protein was stepped off from the Q sepharose with Buffer B2 (20 mM HEPES pH 7.5, 10% (v/v) glycerol, 800 mM NaCl, 20 mM Imidazole, 2 mM β-mercaptoethanol). Protein concentration was assessed using solution absorbance at 280 nm, determined using a Nanodrop. The his-tag was cleaved using tobacco etch virus protease (TEV) at a 1:50 concentration ratio (TEV:topo VI) overnight at 4 °C. The cleaved protein was then passed over a HisTrap FF Ni2+ column (5 ml/min, GE Life Sciences) and washed with Buffer B and the cleaved topo VI collected in the flow through. The un-cleaved topo VI, his-tag and his-tagged TEV were then stepped off in Buffer B1. Cleaved topo VI fractions were pooled and concentrated using Amicon Ultra 15 mL centrifugal filter units (30 kDa cut off, MilliporeSigma) before being passed down a Superose 6 10/300 (GE Life Sciences) column in Buffer C (20 mM HEPES pH 7.5, 10% (v/v) glycerol, 300 mM NaCl, 2 mM β-mercaptoethanol and cOmplete EDTA-free protease inhibitors (Roche)), subsequently concentrated and topo VI concentration determined using a Nanodrop. All proteins stored at –80 °C. The above protocol was adapted from Corbett et al., 2007 (Corbett et al., 2007).
 
-## Single molecule magnetic tweezers
+### Single molecule magnetic tweezers
 
 The magnetic tweezers instrumentation used here has been detailed extensively elsewhere (Charvin et al., 2003; Dittmore et al., 2017; Seol and Neuman, 2011a; Seol and Neuman, 2011b). Here, both DNA braids and supercoils have been utilised. DNA duplexes (5 kb for supercoiling and 3 kb for braiding) are tethered at one extreme end to a glass slide by the interaction between digoxigenin-labels on the DNA and the anti-digoxigenin-coated glass slide. A streptavidin-coated magnetic bead (1 μm diameter, Dynabeads MyOne Streptavidin T1; 35601, Invitrogen) is bound to the opposite biotinylated end of the DNA. Rotation of the fixed magnets above the sample cell caused rotation of the magnetic bead, which changed the linking number of the bound DNA molecule. For supercoiled DNA experiments, both DNA ends were bound to both the surface of the sample cell and the magnetic bead via multiple attachment points so that they are torsionally constrained and accumulate twist and writhe upon magnet rotation. For braided DNA experiments, two bound DNA duplexes are necessary; however, as they have a single digoxigenin labelled nucleotide, which is rotationally unconstrained, the rotation of the magnets cause the duplexes to wrap around one and other, increasing writhe, while twist is dissipated by the free rotation of the DNA.
 
 Magnetic tweezers measurements were conducted with 0.05–2 nM of M. mazei topo VI in 20 mM Bis-Tris propane (pH 7), 100 mM potassium glutamate, 10 mM MgCl2, 1 mM DTT, 0.01% tween-20, 30 µM bovine serum albumin (BSA) and 1 mM ATP at 21 °C, using 0.2–4 pN of force. The magnetic tweezers software was run using Lab view, with a data sample rate of 200 Hz, and analysis of the magnetic tweezers data was done using a t-test based method, described in Seol et al., 2016, with the routine written for use in IGOR pro 7 (Wavemetrics). For further detail on calibration and analysis of single-crossing data see Neuman et al., 2009.
 
-## DNA simulations
+### DNA simulations
 
 Monte Carlo (MC) DNA simulations were conducted in order to obtain DNA-crossing angle distributions for use in determination of the topo VI preferred crossing angle as described in Neuman et al., 2009 (Charvin et al., 2005; Neuman et al., 2009).
 
 We confirmed the MC simulation approach by Brownian dynamics simulations of the same DNA braids with identical parameters (DNA length, spacing between DNA molecules, and force). We performed Brownian dynamics (BD) simulations of two 3000 bp long DNA molecules using an established coarse-grained model (Brackley et al., 2013; Jun and Mulder, 2006; Kim et al., 2015; Le Treut et al., 2016; Pereira et al., 2017). We provide a brief description of the simulation model below. For a more detailed description of the simulation model please refer to Pereira et al., 2017.
 
-Briefly, DNA is simulated as a linear polymer consisting of charged monomers. Each monomer represents 7.4 bp and carries a charge of -2.96e. Below we provide a description of the simulation model in reduced Lennard-Jones (LJ) units. The interaction between monomers is defined by four contributions.Utotal= UFENE(ri,i+1)+UBEND(θi−1,i,i+1)+UWCA(rij)+UDH(rij)
+Briefly, DNA is simulated as a linear polymer consisting of charged monomers. Each monomer represents 7.4 bp and carries a charge of $-2.96e$. Below we provide a description of the simulation model in reduced Lennard-Jones (LJ) units. The interaction between monomers is defined by four contributions.
 
-Here,UFENE(ri,  i+1)=−0.5KFENER02lnln [1−(ri,i+1R0)2]
+$$
+U_{total}= U_{FENE(r_{i,i+1})}+U_{BEND(\theta_{i−1,i,i+1})}+U_{WCA(r_{ij})}+U_{DH(r_{ij})}
+$$
 
-Describes the finitely extensible non-linear elastic (FENE) bond interaction between two consecutive monomers (i and i+1) along the polymer chain separated by a distance ri,  i+1 . KFENE=30kbT/σ2 is the spring constant and R0=1.6σ defines the maximum bond length. Here, σ is the reduced unit of length and approximately equal to 2.5 nm in real units. The bending rigidity of the DNA is defined byUBEND θi-1i,i+1= KBEND(1+cos⁡(θi-1,i,i+1))
+Here,
 
-Here, θi-1,i,i+1 is the angle between three consecutive monomers along the polymer chain and   KBEND=20kBT is the bending rigidity.
+$$
+U_{FENE(r_{i,  i+1})}=−0.5K_{FENE}R_{0}^{2}lnln [1−(\frac{r_{i,i+1}}{R_{0}})^{2}]
+$$
 
-The excluded volume interactions between non-bonded monomers (i and j) separated by a distance of rij is defined by Weeks-Chandler-Andersen (WCA) potential:UWCA(rij)={4kBT[(σrij)12−(σrij)6]+kBT,rij<216σ0,rij≥216σ
+Describes the finitely extensible non-linear elastic (FENE) bond interaction between two consecutive monomers ($i$ and $i+1$) along the polymer chain separated by a distance $r_{i,  i+1}$ . $K_{FENE}=30k_{b}T/\sigma^{2}$ is the spring constant and $R_{0}=1.6\sigma$ defines the maximum bond length. Here, $\sigma$ is the reduced unit of length and approximately equal to 2.5 nm in real units. The bending rigidity of the DNA is defined by
 
-The electrostatic interactions between monomers are calculated using the Debye-Huckle potential (UDHrij),UDH(rij)={kBTlbqiqjϵrije−rijlb,  rij<6σ0, rij≥6σ
+$$
+U_{BEND \theta_{i-1i,i+1}}= K_{BEND}(1+cos⁡(\theta_{i-1,i,i+1}))
+$$
 
-where, lb is the Bjerrum length, ϵ is the dielectric constant and qi is the charge on particle i. We set lb-1=3.66σ and ϵ=1.6 to match the experimental salt concentration.
+Here, $\theta_{i-1,i,i+1}$ is the angle between three consecutive monomers along the polymer chain and $  K_{BEND}=20k_{B}T$ is the bending rigidity.
 
-The separation between the two DNA molecules, the force applied on the DNA and the number of turns applied were set to match experimental conditions for each experiment. BD simulations were carried out in a constant number of particles, volume, and temperature (NVT) ensemble. Constant temperature is maintained using a Langevin thermostat. Simulations were carried out using a timestep of 0.01τ, here τ is the reduced LJ unit of time. The simulations were performed for 4*107τ and data was collected every 250τ. All the BD simulations were performed using Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) (Plimpton, 1995).
+The excluded volume interactions between non-bonded monomers ($i$ and $j$) separated by a distance of $r_{ij}$ is defined by Weeks-Chandler-Andersen (WCA) potential:
+
+$$
+U_{WCA}(r_{ij})={4k_{B}T[(\frac{\sigma}{r_{ij}})^{12}−(\frac{\sigma}{r_{ij}})^{6}]+k_{B}T,r_{ij}<2^{\frac{1}{6}}\sigma0,r_{ij}\geq2^{\frac{1}{6}}\sigma
+$$
+
+The electrostatic interactions between monomers are calculated using the Debye-Huckle potential ($U_{DHr_{ij}}$),
+
+$$
+U_{DH(r_{ij})}={k_{B}Tl_{b}\frac{q_{i}q_{j}}{ϵr_{ij}}e^{−\frac{r_{ij}}{l_{b}}},  r_{ij}<6\sigma0, r_{ij}\geq6\sigma
+$$
+
+where, $l_{b}$ is the Bjerrum length, $ϵ$ is the dielectric constant and $q_{i}$ is the charge on particle $i$. We set $l_{b}^{-1}=3.66\sigma$ and $ϵ=1.6$ to match the experimental salt concentration.
+
+The separation between the two DNA molecules, the force applied on the DNA and the number of turns applied were set to match experimental conditions for each experiment. BD simulations were carried out in a constant number of particles, volume, and temperature (NVT) ensemble. Constant temperature is maintained using a Langevin thermostat. Simulations were carried out using a timestep of $0.01\tau$, here $\tau$ is the reduced LJ unit of time. The simulations were performed for $4*10^{7}\tau$ and data was collected every $250\tau$. All the BD simulations were performed using Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) (Plimpton, 1995).
 
 The crossing angles between the two DNA molecules in the molecular dynamics and Monte Carlo simulations were calculated in the same manner. Following established methods (Charvin et al., 2005; Neuman et al., 2009; Vologodskii and Cozzarelli, 1996; Vologodskii and Cozzarelli, 1994), a juxtaposition event was considered to take place when the separation between the two DNA chains was less than a threshold distance (10 nm). The angle formed by the two segments of closest approach was determined by considering the clockwise rotation that would align the bottom strand with the top strand.
 
-## Agarose gel-based DNA relaxation and decatenation
+### Agarose gel-based DNA relaxation and decatenation
 
 Topo VI was diluted using Dilution Buffer (20 mM HEPES (pH 7.5), 10% (v/v) glycerol, 100 mM potassium glutamate and 2 mM β-mercaptoethanol) for use at final concentrations of 0.1–40 nM, for agarose gel-based assays. Reactions were run in a 30 μL reaction volume with Relaxation Buffer (20 mM Bis-Tris propane (pH 7), 100 mM potassium glutamate, 10 mM MgCl2, 1 mM DTT and 1 mM ATP) and 2.5 nM negatively supercoiled pBR322* (Inspiralis) or singly-linked catenanes (Inspiralis) (see (Waraich et al., 2020) for details on catenane substrate preparation), for use in relaxation or decatenation assays, respectively. Reactions were incubated at 22 or 37 °C for 30 min (unless otherwise stated, e.g. time course) then stopped by the addition of 20 μL of 2 x Loading Buffer (100 mM Tris·HCl pH 8.0, 40% sucrose, 100 mM EDTA, 0.5 mg/ml Bromophenol Blue) and 30 μL chloroform:isoamyl alcohol (24:1 v/v). The reaction mixture was vortexed and centrifuged for 3 min in an Eppendorf 5,425 centrifuge at 21,000 rcf, before being loaded onto a native 1% (w/v) TAE agarose gel (40 mM Tris·HCl pH 8.5, 20 mM glacial acetic acid and 1 mM EDTA) and run for 15 hr at 2 Vcm–1. The gels were stained for 1 hr using 0.5 μg/mL ethidium bromide in TAE, and destained for 30 min in TAE alone, before being imaged via UV transillumination.
 
-## Agarose gel-based DNA cleavage
+### Agarose gel-based DNA cleavage
 
 The DNA cleavage assay was performed as per the relaxation/decatenation assays with the following modifications. Topo VI (5–80 nM) was incubated with 2.5 nM negatively supercoiled pBR322* (Inspiralis) in a 30 μL reaction volume with Cleavage Buffer (20 mM Bis-Tris propane (pH 7), 100 mM potassium glutamate, 10 mM MgCl2, 1 mM DTT and 1 mM ADPNP) for 30 min at 37 °C. The reaction was stopped with the addition of 0.2% SDS and 3 units of Proteinase K (New England Biolabs, #P8107S), and incubated for 1 hr at 37 °C. The assay was then treated the same as for relaxation and decatenation assays, with the addition of 2 x Loading Buffer and chloroform:isoamyl alcohol (24:1 v/v), followed by agarose gel electrophoresis.
 
-## ATPase assays
+### ATPase assays
 
 Topo VI ATPase activity was measured using two methods: a PK/LDH-linked assay described previously (Feng et al., 2021; Figure 3—figure supplement 1) and a radioactive ATP assay (Figure 3A). For the radioactive assay, an ATP purification column was prepared using P-2 gel (Biorad). In 10 mL of P-2 wash buffer (10 mM Tris·HCl pH 8, 50 mM NaCl, 1 mM EDTA), 1.67 g of P-2 was added and left to hydrate overnight at 21 °C. The supernatant was removed from the hydrated gel, which was then washed four times with degassed P-2 wash buffer. The gel was then poured into a 4 mL Econo-Column (Biorad) and allowed to settle before P-2 buffer was slowly pumped through the column at 0.2 mL/min. A 100 μL ATP solution was made using 97 μL of 100 mM ATP, 2 μL of 33 mM [γ-32]-ATP and 1 μL of a 1% (w/v) bromophenol blue solution dissolved in DMSO. Any residual P-2 wash buffer was carefully removed without disturbing the column matrix and the ATP solution added. Once the ATP solution had fully entered the column, the column was filled to the top with P-2 buffer. The ATP solution was left to migrate down the column, and using a Geiger counter pointed at the base of the column, the elution of the [γ-32]-ATP was monitored. Once the [γ-32]-ATP was eluting from the column, single drops were collected as separate fractions until the radioactivity signal intensity dropped again. Using TLC plates, 0.5 μL drops were spotted from each [γ-32]-ATP fraction 1 cm from the bottom of the plate. The plate was then positioned upright with the [γ-32]-ATP spots at the bottom in TLC running buffer (0.5 M lithium chloride in 1 M glacial acetic acid). Once the running buffer had migrated at least two thirds up the TLC plate, the plate was removed and fully dried. The dry TLC plates were then exposed for 1 hr to a phosphor screen, which was then imaged with a Typhoon FLA 7000 plate reader. The fractions shown to contain the most [γ-32]-ATP and the least [γ-32]-phosphate were pooled and the concentration determined using absorbance at 260 nm (ATP ε = 15,400 M–1cm–1).
 
 Using the purified [γ-32]-ATP solution, a topo VI relaxation time course was performed. The reaction constituents were as follows: 1 μM topo VI, 430 nM DNA (relaxed, linear or supercoiled pBR322*), 450 µM [γ-32]-ATP, 10 mM MgCl2 and 1 x minimal buffer (20 mM bis-Tris propane (pH 7), 100 mM potassium glutamate and 1 mM DTT), in a 55 µL reaction volume total. At each time point (1, 2, 4, 6,8, 10, 15, 20, and 30 minutes) a 5 µL aliquot was taken from the reaction and quenched using 5 µl of 2% SDS and 100 mM EDTA. A 1 µL aliquot of each time point was then spotted onto a TLC plate and treated as above. The intensity of the spots were calculated using ImageJ and the portion of ATP hydrolysed at each time point calculated using the proportion of phosphate released.
 
-## DNA binding
+### DNA binding
 
 To measure the binding of topo VI to DNA in the absence of nucleotide, a nitrocellulose membrane capture technique was employed. It is described in detail in Litwin et al., 2015, with slight modifications. Briefly, in a 500 µL volume, 16 nM topo VI was incubated with 10 nM pBR322* of varying topology (linear, negatively supercoiled, positively supercoiled and relaxed, obtained from Inspiralis) in Binding Buffer (20 mM bis-Tris propane (pH 7), 100 mM potassium glutamate, 10 mM MgCl2 and 1 mM DTT), for 30 minutes at 37 °C. The reaction was then added to a 0.45 μm nitrocellulose Centrex MF filter (Whatman) equilibrated with binding buffer, and centrifuged at 2000 rpm for 5 min. The flow through, containing unbound DNA, was removed and saved, and 500 μL of binding buffer added before a further centrifugation under the above conditions. The wash was removed and 500 μL of 10 mM Tris·HCl (pH 7.5) and 0.2% sodium dodecyl sulphate (SDS) was added to the spin column and centrifuged once more, to elute topo VI-bound DNA. The fractions containing bound and unbound DNA were concentrated and buffer exchanged into 10 mM Tris·HCl (pH 7.5) using 30 kDa Amicon Ultra-0.5 columns (Millipore). The DNA concentration was measured using the nanodrop and the percentage bound of the total was calculated.
 
 To further this analysis, distributions of positive and negative topoisomers were generated using Archaeoglobus fulgidus reverse gyrase. In 50 µL, 11 nM negatively supercoiled DNA was incubated with 100 nM reverse gyrase, 1 mM ATP, in 50 mM Tris·HCl (pH 8.0), 10 mM NaCl and 10 mM MgCl2, at 95 °C for 10 or 20 sec (to generate negative and positive topoisomer distributions respectively) and stopped using 10 µL 0.5 M EDTA. To clean up the DNA, 2 µL of 2% SDS and 2 µL of proteinase K (New England Biolabs) were added and the solution was incubated at 37 °C for 1 hr before purification with the Qiagen DNA clean up kit. The topology was confirmed by running 60 ng of the positively and negatively supercoiled DNA on a 1% (w/v) agarose gel containing 1.5 µg/mL chloroquine. It was then used in binding assays as described above, however once the topo VI-bound DNA was cleaned up and quantified, it was run on a native 1% (w/v) agarose gel for 15 hr at 2 Vcm–1. The gels were stained for 1 hr using 0.5 μg/mL ethidium bromide in TAE, and destained for 30 min in TAE, before being imaged via UV transillumination. The intensity of each topoisomer band was determined using ImageJ and the relative Kd values for each topoisomer were calculated as described in Litwin et al., 2015.
 
-## Data analysis and figure preparation
+### Data analysis and figure preparation
 
 Graphs were made using Igor Pro 7 (Wavemetrics) and figures were assembled using Adobe Illustrator.

@@ -39,9 +39,7 @@ However, in order to be acceptable for publication in eLife, the authors must pr
 
 We provide additional images that clearly demonstrate that the IMP-derived cells express FOXD1. To clarify the staining of HuNu and FOXD1, we have identified individual cells with arrow heads in Author response image 1. The new panel C of Figure 9 does not include these arrow heads.
 
-In addition, in support that the IMP cells are capable of expressing FOXD1, we would also like to draw attention to Figure 7B, which shows that FOXD1 expression is detectable by qPCR in IMP cells differentiated towards metanephric mesenchyme for 14 days. As expected, levels of FOXD1 expression in Day 14 MM is lower than in embryonic kidney. This data serves as independent confirmation that IMP cells are capable of generating FOXD1-positive cells.10.7554/eLife.08413.030Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08413.030
-
-DOI: http://dx.doi.org/10.7554/eLife.08413.030
+In addition, in support that the IMP cells are capable of expressing FOXD1, we would also like to draw attention to Figure 7B, which shows that FOXD1 expression is detectable by qPCR in IMP cells differentiated towards metanephric mesenchyme for 14 days. As expected, levels of FOXD1 expression in Day 14 MM is lower than in embryonic kidney. This data serves as independent confirmation that IMP cells are capable of generating FOXD1-positive cells.10.7554/eLife.08413.030Author response image 1.
 
 [Editors' note: further revisions were requested prior to acceptance, as described below.]
 

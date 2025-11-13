@@ -32,11 +32,11 @@ Divergence in developmental genetic programs and intrinsic post-zygotic reproduc
 
 To address this goal, here we first consider how molecular evolution is influenced by the properties of genes and genetic networks, such as pleiotropy, modularity, robustness, and cis/trans regulation. These are the ‘gears and springs’ in the genetic architecture of development. We then explore how genetic architecture may sensitize some phases of ontogeny disproportionately to disruptive effects of misexpression in genetic networks. By integrating genetic architecture and ontogenetic timing, we arrive at distinct predictions for how molecular evolution and hybrid dysfunction manifest across developmental time. Finally, we summarize the literature on these issues for three case study systems (Caenorhabditis nematodes, Drosophila fruit flies, and anuran Bufo and Xenopus). In the present state of the field, we find that few general answers emerge from these factors considered in isolation, motivating deeper attention from theory and empirical study.
 
-## Speciation and development: divergence in genetic networks
+### Speciation and development: divergence in genetic networks
 
 As we explore how the evolution of development intersects with speciation, it is valuable to consider some key aspects of genetic architecture from the perspective of multi-gene networks that, in turn, control organismal development (Johnson and Porter, 2007; Palmer and Feldman, 2009). Here, we focus on how pleiotropy, network modularity, and robustness can influence the molecular evolution of coding sequences and non-coding regulatory elements. These links will help ground our expectations for incorporating ontogenetic time into our thinking to then consider predictions for molecular evolution and the production of incompatibilities in genetic networks of hybrid individuals.
 
-## Pleiotropic roles and effects
+#### Pleiotropic roles and effects
 
 The mapping of genotype on phenotype and fitness leads us to predict that evolution will proceed along genetic lines of least resistance (Schluter, 1996). Genetic ‘resistance’ to evolutionary change is affected by the mutability and covariation of traits within and across developmental stages, in addition to natural selection. That is, the net rate of evolution integrates the likelihood and accumulation of mutational input (genetic variance) with the consequences of genetic variants for the ensemble of traits that comprise an organism (genetic covariances between traits) and fitness (natural selection). From the perspective of developmental biologists, this means that genetic hot-spots of evolutionary change over the long term ought to favor mutations with minimally pleiotropic effects (Carroll, 2005; Stern and Orgogozo, 2008), a form of developmental bias. As more molecular evolutionary change occurs, genetic incompatibilities become more likely to form from dysfunctional interactions between diverged sequences in inter-species hybrids. Our goal, then, is to enumerate the factors that facilitate molecular evolution to make some genes evolve more quickly than others. The structure of genes and gene regulatory networks provide clues to predict what these factors are (Garfield et al., 2013). These clues about molecular evolution can help us in thinking how to connect the temporal dynamics of developmental genetic networks to genetic incompatibilities between species.
 
@@ -46,7 +46,7 @@ Coding sequence changes can affect protein activity everywhere they get expresse
 
 Experiments show that trans-acting regulatory factors contribute disproportionately to segregating genetic variation for gene expression levels within species, whereas cis-acting regulatory differences disproportionately underlie fixed genetic differences in expression between species (Wittkopp and Kalay, 2012). The loci controlling DMIs also can be polymorphic or fixed (Cutter, 2012), and so to the extent that regulatory evolution is responsible for creating DMIs, we ought to expect polymorphic DMIs to often be controlled by trans-acting factors. Because trans-regulatory mutations tend to arise more readily due to larger mutational target size in the genome, and to be more recessive, than cis-acting mutations (Landry et al., 2007; Gruber et al., 2012), they are expected to be a common and persistent kind of polymorphism within populations.
 
-## Modularity of genetic network architecture
+#### Modularity of genetic network architecture
 
 Modularity of genetic networks reduces the scope for genes to have highly pleiotropic roles (Wagner and Altenberg, 1996). By constraining the neighborhood of partner interactions, greater modularity limits the pleiotropic effects of changes to gene expression or function for any given gene. Like tissue-specific expression in the spatial modularity of gene networks (Larracuente et al., 2008; Packer et al., 2019), we can also consider temporal modularity for those portions of gene regulatory networks that show stage-specific expression. Modularity of genetic network structure will increase over ontogeny as cells differentiate and tissues establish autonomous regulatory programs (Packer et al., 2019). Some transient phases of development are thought to reverse this trend, however, as when tissues integrate during gastrulation or reorganize during metamorphosis (Chin-Sang and Chisholm, 2000). Consequently, if pleiotropy at the scale of the whole organism constrains evolution of individual genes, then we might expect faster molecular evolution for genes that experience highly modular genetic network structures due to spatially- or temporally restricted expression. This logic provides one way to frame the ‘early conservation’ and ‘hourglass’ models in the evolution of development (Figure 1).
 
@@ -58,7 +58,7 @@ Despite a trend of increasing genetic network modularity from single-celled zygo
 
 The appropriate weighting of the importance of spatial versus temporal expression breadth and modularity, however, is not entirely obvious. Therefore, empirically, it will be valuable to partition the ontogenetic trajectories of genes with similar expression breadths across tissues, or, complementarily, partition the spatial profiles of expression for genes with similar ontogenetic expression dynamics (Box 3). The transcriptome analysis of distinct cell lineages, as conducted for C. elegans precursors of endoderm, mesoderm and ectoderm (Hashimshony et al., 2015) or for single-cell transcriptomes throughout embryogenesis (Hashimshony et al., 2012; Tintori et al., 2016; Packer et al., 2019), provides one intriguing scheme for approaching this issue. Another approach could incorporate developmental time into transcriptome analysis of serial-sectioned samples to access four-dimensional expression profiles through developmental space and time (Ebbing et al., 2018).
 
-## Robustness to genetic change in gene regulatory networks
+#### Robustness to genetic change in gene regulatory networks
 
 Selection on traits within a species often is stabilizing, favoring a particular phenotypic value and meaning that factors that lead to alternative phenotypic values will have lower fitness. A genetically ‘robust’ phenotype is insensitive to genetic perturbations, which permits an organism to produce the same phenotype and to maintain fitness despite mutational disruption to a gene or genetic network that contributes to the trait’s developmental program (Félix and Wagner, 2008). That is, a greater fraction of mutations to genes in more robust networks have effectively neutral effects (Ohta, 2011). A gene network’s robustness therefore ought to influence the mutations that can accumulate, which in turn affects rates of molecular evolutionary divergence and the manifestation of genetic incompatibilities in hybrids. Differences across gene networks in genetic robustness could arise from differential selection on robustness itself (adaptive robustness or canalization) or could simply arise as a byproduct of differences in their epistatic genetic architectures (Hermisson and Wagner, 2004). Genes and genetic networks that are more robust to genetic perturbation can be thought of as larger phenotypic capacitors (Paaby and Testa, 2018), letting more cryptic genetic divergence in developmental controls accumulate to be revealed upon the formation of inter-species hybrids. This effect is analogous to how specific environmental circumstances or genetic backgrounds can expose so-called cryptic genetic variation or conditionally-neutral variants within a species (Ledón-Rettig et al., 2014; Paaby and Rockman, 2014).
 
@@ -72,21 +72,21 @@ Ontogenetic stages that have an especially high incidence of mutationally-robust
 
 Degeneracy via partially redundant genetic network pathways provides another way that phenotypes could be robust to genetic perturbation, potentially allowing DSD to accumulate without yielding DMIs in F1 hybrids. Indeed, genes associated with redundant networks evolve more quickly (Wagner, 2000; Kitami and Nadeau, 2002). Robustness mediated by distributed, rather than redundant (Félix and Wagner, 2008), genetic networks may thus more readily experience DSD in a way that would foster DMIs. Moreover, translational buffering of gene expression leads to the inference that protein production shows much less misexpression than do mRNA transcripts in F1 hybrids (Leducq et al., 2012; Khan et al., 2013; Artieri and Fraser, 2014; McManus et al., 2014). And, it is fitness as a phenotype that is the ultimate readout of robustness. Consequently, genetic networks important for development may be less disrupted in hybrids than transcriptome analyses might otherwise suggest. Overall, discerning the relative incidence of distinct mechanisms conferring phenotypic robustness will be important in defining whether different genetic networks and different stages of development will be more or less likely to contribute to post-zygotic reproductive isolation as divergence between species accumulates.
 
-## Evolvability of distinct genetic components
+#### Evolvability of distinct genetic components
 
-## Mode of selection
+##### Mode of selection
 
 Traits and sequences with greater propensity to diverge are said to be more evolvable (Wagner and Zhang, 2011). One way to detect evolvability is when traits and sequences diverge as a result of natural selection, because adaptive divergence in phenotypes between species makes it easy to conclude that there must have been changes to the underlying genetic networks. Such selection can involve multiple changes on an adaptive path, for example, if first a large-effect trans-regulatory mutation gets fixed and is followed by subsequent compensatory cis-regulatory substitutions that ameliorate suboptimal pleiotropic effects of the initial trans-acting substitution (Box 1C; Goncalves et al., 2012); similar logic can also apply to coding sequence changes (Clark et al., 2009). Moreover, positive selection and multi-locus antagonistic coevolution will drive molecular evolution that is much more rapid than will genetic drift. Repeated adaptive evolution of orthologous genes in disparate lineages is implicated as a general feature of some types of phenotypic change, including aggregate effects of multiple mutations affecting the same locus (Stern and Orgogozo, 2008; Martin and Orgogozo, 2013). The genes contributing to such adaptive divergence may thus be especially likely to contribute to post-zygotic DMIs (Presgraves, 2010b), in addition to pre-mating, gametic, or ecological reproductive isolation barriers.
 
 Alternately, some genes may evolve faster than others simply because they experience weaker purifying selection or greater mutational target size. The evolutionary accumulation of changes in this way is rate-limited by the input of mutation and the speed of genetic drift, and so will be faster in species with small population sizes.
 
-## Haldane’s rule as developmentally predictable evolution
+##### Haldane’s rule as developmentally predictable evolution
 
 One developmentally predictable rule in evolution says something about sex: Haldane’s rule, in which the heterogametic sex is more likely to suffer inviability or sterility in inter-species hybrids (Haldane, 1922; Delph and Demuth, 2016). Dominance theory provides one explanation for this pattern: incompatibility loci linked to sex chromosomes will reveal themselves in F1 hybrids disproportionately for the sex that has only one copy of a given sex chromosome (Turelli and Orr, 1995). This tells us that genomic compartmentalization of how traits are genetically encoded also is important for the implications of molecular evolution; when genes contributing to a given developmental process are biased in genomic location, it may confer greater or lesser tendency to yield DMIs in hybrids.
 
 When males are heterogametic (X/Y or X/O sex-determination), other factors may also contribute to Haldane’s rule (Delph and Demuth, 2016). Genes that control male-biased traits may evolve especially rapidly due to sexual selection or mutational biases (‘faster male’ theory), or gene regulatory networks controlling male traits may be unusually sensitive to genetic perturbation in hybrids (‘fragile males’), or genes linked the X-chromosome may evolve especially fast (‘faster X’) (Charlesworth et al., 1987; Wu and Davis, 1993). Consequently, X-linked genes may show distinct patterns of misexpression in hybrids (Moehring et al., 2007; Turner et al., 2014; Civetta, 2016; Sanchez-Ramirez et al., 2020). Developmental pathways related to spermatogenesis seem especially sensitive to disruption in hybrids, perhaps being predisposed to disproportionate compensatory cis-trans regulatory coevolution (Mack et al., 2016; Mack and Nachman, 2017). Sex-limited genetic networks also may differ for males versus females in size, location of genomic encoding, or predominant mechanism of regulatory control, and so influence the relative accumulation of cryptic genetic variation and developmental system drift.
 
-## Coding vs regulatory evolution
+##### Coding vs regulatory evolution
 
 Both coding sequences and regulatory sequences diverge between species, despite the fact that most selection on each of them is expected to be purifying (Casillas et al., 2007). The rate of evolution for a coding sequence and its cis-regulatory regions, however, correlate only weakly (Castillo-Davis, 2004; Liao and Zhang, 2006; Tirosh and Barkai, 2008). This observation implies that the strength and mode of selection affecting mutations to protein structure tells us little about the strength and mode of selection on mutations affecting expression, and vice versa. Consequently, molecular evolution associated with ontogenetic timing may show distinct patterns for coding and regulatory sequences, and so also yield different implications for when DMIs manifest over ontogeny.
 
@@ -94,65 +94,209 @@ The type of regulatory change may be key, however, in understanding the relation
 
 Might the functional role of genes also represent an axis of predictability to factors that instigate DMIs in inter-species hybrids? The relatively few known ‘speciation genes’ in animals give little clue to whether particular molecular functions may be predisposed to involvement in inter-species incompatibilities (Blackman, 2016). At a coarse level, because DMIs require interaction, we should expect sequences that affect interactions between DNA, RNA, and proteins to be more prevalent among DMI loci than, say, enzymes that interact predominantly with metabolites. From the perspective of gene regulatory networks, transcription factors experience faster sequence evolution than other genes in the genome (Gilad et al., 2006; Haerty et al., 2008). piRNA genes also turnover rapidly and are implicated in hybrid dysfunction (Assis and Kondrashov, 2009; Bagijn et al., 2012; Kelleher et al., 2012), along with other classes of regulatory endogenous small RNAs (Li et al., 2016). Genes that act cell non-autonomously, as for secreted proteins or diffusible signaling molecules, may tend to evolve slower if they also tend to exhibit greater expression breadth and lower modularity, unless they are predisposed to co-evolutionary dynamics. Reproductive isolation between species need not only involve classic regulators of development, however, as attested by incompatibilities that commonly seem to involve chromosome segregation and cyto-nuclear interactions (Blackman, 2016; Lima et al., 2019). Despite the fundamental role of the mitochondrial genome in energy metabolism, mitochondrial genes experience adaptive molecular evolution (Bazin et al., 2006) and mito-nuclear incompatibilities can provide important reproductive barriers between species (Hill, 2015; Lima et al., 2019). To the extent that some developmental stages may be more sensitive to the disruption of chromosome segregation or mitochondrial function, such as phases of heightened cell division or metabolism, such developmentally tangential genetic pathways might nevertheless contribute to ontogenetic patterns of hybrid dysfunction.
 
-## Gene duplication and gene origination
+##### Gene duplication and gene origination
 
 Gene duplication is a powerful factor in the evolution of phenotypic novelty (Kaessmann, 2010). Moreover, regulatory or structural subfunctionalization in the evolution of gene copies following duplication could lead to dysfunction in hybrids and so contribute to a DMI (Mack and Nachman, 2017). Similarly, a DMI could result from ‘divergent resolution’ in the loss of alternate copies in different species for functionally equivalent gene duplicates (Lynch and Force, 2000). The de novo origin of new genes also can instigate species differences in gene network structure (Neme and Tautz, 2014), as could divergent use of alternative splice forms of a gene (Ortíz-Barrientos et al., 2006). Thus, the phenotypic evolvability promoted by gene duplication and gene origination also confers the potential to induce reproductive isolation as gene copies evolve through distinct trajectories in different evolutionary lineages.
 
-## Ontogenetic timing of genetic networks and molecular evolution
+### Ontogenetic timing of genetic networks and molecular evolution
 
 Gene expression profiles and genetic network architecture are dynamic over the course of ontogeny. This dynamism suggests that molecular evolution could differ for the distinct subsets of genes associated with different stages of development (Box 3). Importantly, this molecular divergence may or may not correspond to divergence in organismal phenotypes (True and Haag, 2001), despite the common emphasis on how changes to gene regulatory networks alter the development of phenotypes (Erwin and Davidson, 2009). Stages especially prone to rapid molecular evolution, of coding sequences or regulatory elements, may also translate into a greater incidence of DMIs. Ontogenetic predispositions toward sequence evolution may therefore confer predictable ontogenetic detection of reproductive isolation between species, letting us know when to listen most carefully for the developmental alarm clock of speciation. In our search of the literature, we identified 147 studies involving 106 species that quantified transcriptome, proteome, or related molecular data across multiple developmental stages (Table 1, Supplementary file 1). We found 40% of studies to focus on embryogenesis only. Over 60% of the studies included a comparative analysis of expression divergence between species (52%) or of DNA sequence divergence (13%). Integrating such studies with developmental time courses of hybrid dysfunction would provide a powerful collection of empirical tests for how incompatibilities in genetic networks arise through ontogeny. In the meantime, ideas from both development and population genetics lead to several partially-distinct predictions for the evolution of genes expressed differentially across ontogeny, which we enumerate below (Figure 1). We conclude that a conceptual gap is the lack of a modeling framework that integrates these disparate perspectives on the role of ontogenetic timing in molecular evolution.
 
-## Early conservation model
+**Table 1.**
+ Studies in the literature that characterize expression profiles across development (Supplementary file 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Number of studies (%)</th>
+      <th colspan="2">Number of species (%)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Developmental stage analyzed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Embryogenesis only</td>
+      <td>58</td>
+      <td>39.5%</td>
+      <td>45</td>
+      <td>42.5%</td>
+    </tr>
+    <tr>
+      <td>Non-embryo stages</td>
+      <td>37</td>
+      <td>25.2%</td>
+      <td>17</td>
+      <td>16.0%</td>
+    </tr>
+    <tr>
+      <td>All ontogeny</td>
+      <td>51</td>
+      <td>34.7%</td>
+      <td>44</td>
+      <td>41.5%</td>
+    </tr>
+    <tr>
+      <td colspan="3">Type of molecular time series data</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transcriptome</td>
+      <td>128</td>
+      <td>87.1%</td>
+      <td>106</td>
+      <td>100.0%</td>
+    </tr>
+    <tr>
+      <td>Proteome</td>
+      <td>7</td>
+      <td>4.8%</td>
+      <td>5</td>
+      <td>4.7%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>14</td>
+      <td>9.5%</td>
+      <td>12</td>
+      <td>11.3%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Inter-species divergence feature</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene expression</td>
+      <td>32</td>
+      <td>21.8%</td>
+      <td>55</td>
+      <td>51.9%</td>
+    </tr>
+    <tr>
+      <td>DNA sequence</td>
+      <td>5</td>
+      <td>3.4%</td>
+      <td>14</td>
+      <td>13.2%</td>
+    </tr>
+    <tr>
+      <td>Non-comparative</td>
+      <td>99</td>
+      <td>67.3%</td>
+      <td>42</td>
+      <td>39.6%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Taxonomic group</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angiosperm</td>
+      <td>16</td>
+      <td>10.9%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Arthropoda</td>
+      <td>26</td>
+      <td>17.7%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chordata</td>
+      <td>55</td>
+      <td>37.4%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nematoda</td>
+      <td>10</td>
+      <td>6.8%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other group only</td>
+      <td>30</td>
+      <td>20.4%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Multiple groups</td>
+      <td>10</td>
+      <td>6.8%</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Early conservation model
 
 The early conservation model (‘von Baer’s third law’) derives from the fact that time is unidirectional, so changes early in development may cascade catastrophically as cell division and differentiation proceeds. Consequently, genes expressed early in development would experience stronger purifying selection, with slower molecular and phenotypic evolution early in ontogeny (Kalinka and Tomancak, 2012). Some perspectives on gene regulatory network structure follow the spirit of this view, as well (Erwin and Davidson, 2009). This idea would also be consistent with genes and genetic networks expressed in early development having lower robustness, modularity, and evolvability, and with greater pleiotropy when perturbed (Figure 1). The early conservation model is mostly applied to embryogenesis, with some empirical support from vertebrates based on gene expression divergence (Roux and Robinson-Rechavi, 2008; Irie and Kuratani, 2014). In principle, however, the logic of this model applies to the entirety of ontogeny. If the likelihood of DMIs scales with rate of evolution, then we ought to expect post-zygotic reproductive isolation to be more likely to manifest later in development and that species at earlier stages of divergence would manifest defects later in development.
 
 A caveat about inferring the developmental timing of hybrid dysfunction is that early-acting incompatibilities may preclude detection of DMIs that would otherwise be revealed later (see uniform chance model, below). Disproportionate observation of early-acting developmental defects in hybrids thus may not imply that molecular evolution disproportionately accrues for genes in early-acting developmental programs. This ‘pull of the early’ represents a general challenge in characterizing the profile across ontogeny of disrupted genetic networks that confer post-zygotic reproductive isolation. There are at least four ways to potentially address this issue empirically: (i) assess distinct species comparisons from different phylogenetic depths, (ii) exploit partial penetrance of F1 hybrid dysfunction (Bundus et al., 2015), (iii) use early-acting hybrid-rescue genotypes to test for late-acting hybrid dysfunction (cf. Hmr in Drosophila [Hutter et al., 1990]), or (iv) focus on misregulation of gene expression over ontogeny for species with relatively weak post-zygotic isolation (i.e. without catastrophic effects in early life stages).
 
-## Uniform chance model
+#### Uniform chance model
 
 We suggest that the ‘uniform chance’ model represents a null model for the manifestation of hybrid incompatibilities over the course of ontogeny. If molecular evolution is unbiased with respect to the timing of expression of genes that have diverged between species, then every point in development can be considered to have an equal chance of expressing a DMI to yield hybrid disruption of a tissue type or termination of development (Figure 1). This could arise from each stage adapting continuously to the ‘habitat’ it experiences distinctively from other stages, whether inside an egg (or uterus), juvenile environmental circumstances, or post-metamorphosis adulthood. Consequently, species pairs with greater overall divergence would be more likely to have hybrids that terminate development earlier in ontogeny; the probability that the earliest developmental stage avoids the effects of DMIs declines exponentially (pn with n DMIs each with probability p of not occurring in the earliest stage). This null model therefore predicts a negative relationship of the genetic distance between species and the terminal stage to which hybrids develop, and predicts that later stages will have more tissue types exhibiting dysfunction in hybrids. Note that these predictions overlap with several other models that we describe, but do not depend on differential selection pressures, pleiotropy, or network features for genes expressed at different times in development. This model, however, predicts no association of molecular evolutionary rates for genes (or the mode of selection) with the developmental timing of their expression.
 
-## Mutation accumulation model of aging
+#### Mutation accumulation model of aging
 
 The mutation accumulation model of aging and senescence predicts that genes and genetic networks expressed earlier in development will evolve more slowly (Promislow and Tatar, 1998; Partridge, 2001). Here, the logic and developmental timing, however, is different from the early conservation model: the reproductive value of individuals declines following the onset of reproductive maturity, meaning that purifying selection is weaker against deleterious mutations that affect adult phenotypes relative to embryonic and juvenile phenotypes (Medawar, 1952; Flatt and Schmidt, 2009). This perspective presumes similarly strong purifying selection for all genes expressed prior to maturity, and makes no specific prediction about positive selection across ontogeny (Figure 1). Not explicitly formulated by the mutation accumulation model, however, is whether the strong early-life selection would indirectly favor mutational robustness to embryonic and juvenile developmental programs. Such robustness could facilitate greater molecular evolution of early-expressed genes than otherwise anticipated, which also could facilitate the accumulation of developmental system drift.
 
-## Antagonistic pleiotropy model of aging
+#### Antagonistic pleiotropy model of aging
 
 Gain in fitness from traits that increase survival or reproduction early in life will experience disproportionate selection pressure. Consequently, positive selection may more fiercely favor beneficial mutations to genes expressed early in life, irrespective of negative pleiotropic consequences on fitness-related traits expressed later on. This idea is the essence of the antagonistic pleiotropy model for the evolution of aging and senescence (Williams, 1957; Partridge, 2001; Flatt and Schmidt, 2009). In terms of molecular evolution, it ought to yield a signature of excess positive selection on genes first expressed at pre-reproductive stages (Figure 1). However, subsequent selection may lead to compensatory evolution for genes expressed late in life to ameliorate negative pleiotropic effects. This sequential evolutionary series of events could produce developmental system drift, especially for late-life traits. Regulatory divergence between species often reflects compensatory changes in cis and trans, with trans-acting changes being more likely to exert pleiotropic effects and arising at a higher rate (Gruber et al., 2012). It will be interesting to determine whether the developmental timing of cis versus trans changes are biased over ontogeny in a way that would be consistent with the antagonistic pleiotropy model, that is, disproportionate cis-regulatory changes that modulate late-acting expression.
 
-## Hourglass model
+#### Hourglass model
 
 The hourglass model is a pattern in search of a mechanism that derives from classic phenotypic observations of a ‘phylotypic stage’ in mid-embryogenesis, a point of greatest morphological similarity across organisms. Profiles of gene expression divergence between species, a molecular phenotype, also are often interpreted to be consistent with this pattern (Raff, 1996; Kalinka and Tomancak, 2012). In terms of DNA sequence evolution, it is less obvious why genes expressed in mid-embryogenesis would exhibit slowest rates of sequence evolution, whether due to stronger purifying selection or less frequent adaptive divergence (Figure 1). Ontogenetic trends in genetic network architecture may provide some intuition, as it is proposed that the phylotypic stage may coincide with developmental periods of intense integration of distinct cell lineages, often around gastrulation (Levin et al., 2012). Consequently, mid-embryogenesis may experience a shift toward fewer and larger genetic networks (low modularity) that leads to greater pleiotropic effects when perturbed. Changes in network structure related to switch-like or threshold traits also could contribute (Garfield et al., 2013). If such a genetic network architecture in mid-embryogenesis also confers greater within-species genetic robustness, then it may be especially prone to DSD and the production of DMIs and hybrid dysfunction in crosses between species. If, instead, it represents a point of low robustness to genetic perturbation, then DSD from genes expressed at earlier stages may induce a tipping point of dysfunction that manifests in hybrids during such a phase of integration.
 
 The potential for distinctive properties in the ‘waist of the hourglass’ has drawn most scrutiny by researchers, but an alternative hypothesis might suppose that it is the earlier points in development that are unusual and require special explanation. This possibility has recently received greater theoretical and empirical attention (Demuth and Wade, 2007; Dapper and Wade, 2016; Zalts and Yanai, 2017; Coronado-Zamora et al., 2019). For example, theory predicts more rapid accumulation of mutations to genes acting in the earliest genetic networks that derive from maternal resources, leading to their unusually fast molecular evolution with the potential to drive DSD and DMIs (Demuth and Wade, 2007). Faster-than-anticipated molecular evolution at the very earliest stages of development might also arise from especially high robustness of genetic networks involving maternally deposited gene products, or from co-evolutionary dynamics associated with parent-offspring or other genomic conflicts (Brandvain and Haig, 2005; Crespi and Nosil, 2013). In such scenarios, the point in time that coincides with ‘waist of the hourglass’ might simply represent the onset of conditions consistent with the early conservation model.
 
-## Sex-biased selection
+#### Sex-biased selection
 
 Selection on genes with sex-limited expression can lead to their more rapid evolution. This faster evolution can arise in two ways: sexual selection/conflict and weaker purifying selection. Sexual selection and sexual conflict that occurs within and between the sexes for reproductive adults can promote rapid phenotypic and molecular evolution via positive selection, especially in reproduction- and gamete-related traits (Swanson and Vacquier, 2002; Mank, 2017; Rowe et al., 2018). Thus, the timing of expression for genes that are part of the developmental programs that build such traits in late juvenile and adult stages would be expected to be most strongly impacted. This ontogenetic timing is similar to the mutation accumulation model, except that it should reflect adaptive evolution rather than weaker purifying selection and that it deals primarily with the subset of traits and genes associated with sexual interactions between individuals (Figure 1). Genes controlling gamete traits may be especially prone to rapid molecular evolution (Swanson and Vacquier, 2002), with the effects on hybrids potentially reflected in the earliest-stage zygotes. Speciation genetics research has incorporated this idea of rapid evolution of sex-limited genes into the ‘faster male’ theory for Haldane’s rule and into the explanation for why hybrid sterility often appears to arise earlier in the speciation process than does hybrid inviability (Coyne, 1989; Wu and Davis, 1993; Ortíz-Barrientos et al., 2006; Presgraves, 2010a).
 
 In addition to the possibility of more prevalent positive selection on genes with sex-limited expression, they may also experience weaker purifying selection (Dapper and Wade, 2016). Weaker purifying selection means greater accumulation of divergence between species. This weaker efficacy of selection arises because half of the individuals in the population, one sex or the other, do not express the gene and so mask the effects of new detrimental mutations. This logic applies to both sex-limited gene expression for adult traits, as well as for maternally provisioned transcripts delivered to eggs (Demuth and Wade, 2007; Dapper and Wade, 2016). Rapid evolution of maternal-provisioning genes may lead to incompatibilities when they interact with zygotically-expressed genes in inter-species hybrids, potentially elevating the incidence of mid-embryonic hybrid dysfunction independently of any temporal changes in genetic network modularity or robustness. Genetic incompatibilities involving uniparentally inherited genetic factors also may lead to predictable asymmetries in reproductive isolation between species pairs (Turelli and Moyle, 2007), including roles for genes encoded on sex chromosomes and mitochondrial genomes (Bolnick et al., 2008; Barreto et al., 2018; Cutter, 2018).
 
-## Toward predictable rules in the evolution of development in speciation
+### Toward predictable rules in the evolution of development in speciation
 
 To decipher how predictable molecular evolution and post-zygotic reproductive isolation might be, it is important to consider the ontogenetic context of organisms to identify trends in the tempo of gene expression, cell division, and differentiation (Table 1). The kind, number, and molecular evolutionary implications of genetic interactions also likely are sensitive to classes of embryogenesis programs (e.g., syncytial with late cellularization as in Drosophila and other insects, totipotent versus highly cell-autonomous cell lineage development as in C. elegans, nourishment by minimal vs very large yolk vs maternal tissues as seen in many insects, birds, and mammals) (Church et al., 2019). While here we emphasize animal systems, similar consideration of the evolutionary genetics of development and speciation for plant systems may also reveal valuable insights (Rieseberg and Blackman, 2010; Bedinger et al., 2011; Baack et al., 2015). Here, we distill in abbreviated form what is known for a few concrete motivating example systems (Caenorhabditis nematodes, Drosophila insects, Bufo toads) to frame these issues about how ontogenetic features link to molecular evolution and hybrid dysfunction. Surprisingly, few broad conclusions can be drawn from even these well-studied systems, and general principles await concerted research efforts. Nevertheless, these study systems present clear promise for future research to disentangle the constellation of causal contributing factors that link microevolutionary mechanisms to developmental programs and macroevolutionary patterns.
 
-## C. elegans ontogenetic profiles of gene expression, molecular evolution, and hybrid dysfunction
+### C. elegans ontogenetic profiles of gene expression, molecular evolution, and hybrid dysfunction
 
 Taking C. elegans development as a point of reference, embryonic cell numbers grow approximately exponentially until ~520 cells upon which cell count increases relatively slowly to the 959 somatic and ~2000 germline cells that comprise the adult hermaphrodite animal (Giurumescu et al., 2012; Figure 2A). Cell lineages derived from five blastomeres exhibit distinct transcriptome profiles in ontogenetic timecourses (Hashimshony et al., 2015), with single-cell transcriptome sequencing of embryos in a time series showing even finer resolution (Packer et al., 2019). The number of genes expressed increases over most of embryogenesis, with relatively similar numbers of genes expressed at stages post-hatching (Boeck et al., 2016; Figure 2B). The change in identity of expressed genes, however, is greatest early in embryogenesis (primarily due to down-regulation) and late in embryogenesis (primarily due to up-regulation) (Boeck et al., 2016; Figure 2C). Gene connectivity peaks in early embryogenesis, declining until a spike in adulthood (Liu and Robinson-Rechavi, 2018a). Cellular development in embryos is conserved across species, being nearly indistinguishable at least to the 350-cell stage (Zhao et al., 2008; Memar et al., 2019). In hybrid crosses of most species pairs, however, embryos arrest around gastrulation (Baird and Yen, 2000; Baird and Seibert, 2013), near the time that expression divergence appears minimized across Caenorhabditis (Levin et al., 2012) and that expression-weighted coding sequence divergence is lowest (Cutter et al., 2019). Coding sequences with fastest molecular evolution show peak expression very early in embryogenesis or toward adulthood (Cutter and Ward, 2005; Cutter et al., 2019; Box 3). Hybrids of C. briggsae and C. nigoni show high embryonic inviability, but those genetically identical individuals that hatch successfully exhibit little larval mortality (Bundus et al., 2015). Gene misexpression is widespread in adults of both sexes for these hybrids (Sanchez-Ramirez et al., 2020) and misregulation of small-RNAs in hybrid genetic backgrounds is implicated in spermatogenic dysfunction (Li et al., 2016). Together, these observations suggest the possibility that developmental system drift may accrue more readily and generate hybrid incompatibility disproportionately at stages showing greatest selective constraint on gene expression levels and coding sequences.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56276/elife-56276-fig2-v1.jpg)
 
-**Figure 2.:** C. elegans nematodes and in Bufo and Xenopus amphibians.(A) C. elegans cell counts grow exponentially in early embryogenesis, before slowing later. Redrawn with data from Giurumescu et al., 2012 and wormatlas.org. (B) Gene expression changes dynamically over ontogeny in terms of number of genes expressed and the incidence of up- and down-regulated genes over time. Redrawn from Boeck et al., 2016. (C) Ontogenetic timing in the accumulation of reproductive isolation with genetic divergence for Bufo toads. Hybrid individuals between more closely-related species develop to later stages than do hybrids from distantly-related species pairs. Redrawn from Malone and Fontenot, 2008. (D–E) Xenopus gene expression level differentiation decreases over developmental time (yolk comprises ~½ of embryo volume; maternal-zygotic transition at stage ~8; yolk consumption begins around gastrulation). Redrawn from Yanai et al., 2011.
+**Figure 2.:** (A) C. elegans cell counts grow exponentially in early embryogenesis, before slowing later. Redrawn with data from Giurumescu et al., 2012 and wormatlas.org. (B) Gene expression changes dynamically over ontogeny in terms of number of genes expressed and the incidence of up- and down-regulated genes over time. Redrawn from Boeck et al., 2016. (C) Ontogenetic timing in the accumulation of reproductive isolation with genetic divergence for Bufo toads. Hybrid individuals between more closely-related species develop to later stages than do hybrids from distantly-related species pairs. Redrawn from Malone and Fontenot, 2008. (D–E) Xenopus gene expression level differentiation decreases over developmental time (yolk comprises ~½ of embryo volume; maternal-zygotic transition at stage ~8; yolk consumption begins around gastrulation). Redrawn from Yanai et al., 2011.
 
-## Drosophila divergence in sequences and transcriptomes over ontogeny
+### Drosophila divergence in sequences and transcriptomes over ontogeny
 
 Coding sequences expressed across D. melanogaster development show slowest evolution in mid- to late-embryogenesis (Davis et al., 2005; Coronado-Zamora et al., 2019). The faster sequence evolution of maternally deposited transcripts in early embryogenesis is due disproportionately to non-adaptive divergence whereas it is adaptive divergence that is disproportionately implicated in faster sequence evolution of genes expressed post-embryonically (Coronado-Zamora et al., 2019; Figure 2E). Gene connectivity similarly shows a peak in early embryogenesis and in adulthood (Liu and Robinson-Rechavi, 2018a). Transcriptome divergence across species, however, is low throughout most of embryogenesis and highest after reproductive maturity; within embryogenesis, however, expression divergence is greatest at the earliest stages (Kalinka et al., 2010; Liu and Robinson-Rechavi, 2018a). Sterility tends to arise before inviability in hybrids of a given phylogenetic distance in Drosophila (Coyne and Orr, 1997), and hybrid misexpression among spermatogenesis genes is much more pronounced in adults than in late-stage larvae (Moehring et al., 2007). Genes with greater tissue-specificity show faster coding sequence evolution (Larracuente et al., 2008). Hybrid misexpression less often involves genes implicated in transcriptional regulation than expected (Moehring et al., 2007), and defects of chromosome condensation in mitosis, nucleoporins, and transcriptional regulators of selfish elements have been implicated in the inviability of hybrid larvae (Orr et al., 1997; Barbash et al., 2003; Tang and Presgraves, 2009; Satyaki et al., 2014). It will be interesting for future work to assess whether those embryonic stages that show greatest conservation in expression and coding sequence evolution might show disproportionate hybrid dysfunction, as hinted from experiments in Caenorhabditis. The syncytial nature of Drosophila embryos through the ~6000 cell stage, however, may lead to distinct genetic network architecture and expectations in the timing of selective pressures on gene products deposited maternally versus expressed zygotically across embryogenesis.
 
-## Bufo ontogenetic profiles of hybrid dysfunction
+### Bufo ontogenetic profiles of hybrid dysfunction
 
 The developmental timing of hybrid inviability in frogs and toads enjoys much richer literature than for many other systems. Hybrid developmental data exist for several genera, including Hyla (Fouquette, 1960; Mecham, 1960; Mecham, 1965; Kuramoto, 1984; Kawamura et al., 1990), Pseudacris (Mecham, 1965), Rana (Kuramoto, 1974; Frost and Platz, 1983; Sumida et al., 2003), and most notably Bufo (Blair, 1972; Malone and Fontenot, 2008). The developmental stages of hybrid inviability are described for over 600 inter-species Bufo cross combinations, with late-stage hybrid dysfunction being most prevalent for species pairs that are less genetically divergent (Figure 2). By contrast, genome and transcriptome information is rare, due to the large genome sizes of most frogs and toads. One key exception among anurans is for the model species Xenopus laevis and X. tropicalis: comparative transcriptome analysis across their embryonic development showed changes in expression profiles of many genes despite a background of conservation in expression for most genes (Yanai et al., 2011). Interestingly, earlier stages of embryogenesis showed greater divergence in gene expression (Figure 2). Post-embryonic development was not analyzed, however, making it unclear what profile of gene expression divergence describes all of ontogeny. It will be valuable in future work to link directly the ontogeny of hybrid dysfunction to the degree of divergence in transcriptomes and sequences for genes expressed differentially across development.
 
-## Conclusions
+### Conclusions
 
 A general understanding of genetic mechanisms in the speciation process integrates the ontogenetic timing of gene expression and gene action in developmental programs. Predictable ontogenetic trends in the molecular evolution of proteins and their regulation will introduce predictability into how genetic networks diverge and how Dobzhansky-Muller incompatibilities manifest dysfunctional phenotypes in hybrids. In this underexploited way, the genetics of post-zygotic isolation in the speciation process dovetails with research programs in evolutionary developmental genetics. The diversity of theoretical perspectives that contribute predictions to ontogenetic patterns of molecular evolution are, however, at best, incompletely integrated with conceptions about genetic architectures (pleiotropy, modularity, robustness). We still have only a rudimentary understanding of how the genetic clockwork might set the ontogenetic timing of this developmental alarm clock in the dawn of new species. Consequently, it is a challenge to extract consensus on patterns and predictions about sequence evolution and DMI incidence over the course of ontogeny.
 

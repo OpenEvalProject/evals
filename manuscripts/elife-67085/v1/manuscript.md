@@ -42,19 +42,39 @@ We combined our PP-derived interaction map of MECP2 with drug targeting database
 
 ## Results
 
-## Phylogenetic profile analysis of MECP2 in eukaryotes and mammals identifies MECP2 co-evolved genes
+### Phylogenetic profile analysis of MECP2 in eukaryotes and mammals identifies MECP2 co-evolved genes
 
 To trace the evolutionary history of MECP2, we used BLASTP (Camacho et al., 2009) to compare the MECP2 protein to the proteomes of 1028 eukaryotic species. We repeated the process for each of 20,192 human transcripts to generate a profile of conservation for each human gene. The scores were normalized according to sequence length and the evolutionary distance between humans and the queried species as described previously (Tabach et al., 2013b; Bloch et al., 2020). This Normalized Phylogenetic Profile (NPP) describes how conserved a transcript is in each species across the tree of life, compared to its expected conservation. Genes with similar NPPs (i.e. genes that are either conserved or lost as a group) are functionally related, often belonging to the same pathway (Sherill-Rofe et al., 2019; Tabach et al., 2013a; Tabach et al., 2013b; Schwartz et al., 2013). We have shown that both across-clade and within-clade measures of co-evolution can be informative, and thus we computed NPPs both across all eukaryotes (Figure 1A and Figure 1—figure supplement 1A) and within mammals (Figure 1B and Figure 1—figure supplement 1B) as described previously (Sherill-Rofe et al., 2019; Bloch et al., 2020; Tsaban et al., 2021; Braun et al., 2020).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig1-v1.jpg)
+
+**Figure 1.:** (A) The Normalized Phylogenetic Profile (NPP) of MECP2 in eukaryotes along with the top 5000 co-evolved proteins. Each row represents one human protein, ordered by Pearson correlation to MECP2, with the top 200 proteins labeled as E200. Darker color indicates higher normalized conservation of the protein in each species. Organisms are grouped by phylogenetic clade, and clustered within each clade. (B) The NPP of MECP2 in 51 mammals along with the 5000 top co-evolved proteins, ordered by Pearson correlation to MECP within mammals. The top 200 proteins are labeled as M200. (C) Gene overlap of the top 200 most co-evolved genes in eukaryotes and mammals, listing the 10 gene names listed in both.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) NPP profiles of human genes in 1028 eukaryote species, ordered by the Pearson correlation to the profile of MECP2. (B) Phylogenetic profiles of human genes in 51 mammals, scaled to highlight the conservation patterns within the clade. (C) GeneAnalytics enrichment for the 390 union set of E200 and M200. Within each organ, individual anatomical compartment scores are displayed in dots. (D) Overlap between the 390 union set of E200 and M200 with all STRING MECP2 coexpression, experimental and textmining categories. (E) Overlap between the 200 genes most correlated to MECP2 in mammals (M200) and eukaryotes (E200) with the 390 genes most correlated to MECP2 through STRING.
 
 We first used NPP scores to sort all human genes by their phylogenetic similarity to MECP2 across eukaryotes (Figure 1A and Figure 1—figure supplement 1A). We selected the top 200 genes (the ‘E200’ set), which showed high correlation (R>0.47) with MECP2. Similarly, we used NPP scores within the mammalian clade (Figure 1B and Figure 1—figure supplement 1B) to select the top 200 mammal-centric genes (the ‘M200’ set), which also showed high MECP2 correlations (R>0.49) (Supplementary file 1) [code is available on GitHub (Unterman et al., 2021; copy archived at swh:1:rev:14063b44a40688a8024a06347b63cfdac74b96ad)]. These two lists find correlated evolution at different scales, billions of years for eukaryotes and hundreds of millions for mammals. Therefore, the M200 set may show genes more recently co-evolved with MECP2. E200 and M200 had very different functional properties, based on STRING enrichment to Gene Ontology and other annotation sets (Supplementary file 2) The E200 list was enriched in a number of different functional categories, with some of the most significant related to innate immunity and the immune response. These included MHC Class II receptor activity and peptidoglycan receptor activity in GO, and the associated autoimmunity Asthma, Allograft rejection, and Type I in KEGG. In contrast, the M200 list had almost no functional enrichment, except for the general ‘Disease’ category within Uniprot annotated keywords.
 
 The E200 and M200 lists had 10 genes in common (Figure 1C). As mammals are included within the eukaryote analysis, the two lists are not independent and thus the expected degree of overlap is hard to determine. Nevertheless, in two independent gene lists of this size we would only expect two overlapping genes. We thus considered the set of 10 overlapping genes, as well as the full union set of 390 genes, as two tiers of candidates for further exploration. A GeneAnalytics query of the 390 gene union set revealed it was enriched with genes expressed in the brain (p-value < 0.00024), with 79 genes linked to the cerebral cortex and 54 to the cerebellum (Figure 1—figure supplement 1C; Ben-Ari Fuchs et al., 2016). Only 24 of the 390 gene list were overlapping with a length-matched list of MECP2 interactions from STRING (Figure 1—figure supplement 1D,E), highlighting the complementary role phylogenetic analysis to other measurements and predictions of protein interaction.
 
-## MECP2 druggable protein network identifies several drug targets located in evolutionarily conserved chromosomal clusters
+### MECP2 druggable protein network identifies several drug targets located in evolutionarily conserved chromosomal clusters
 
 We chose to focus on the subset of MECP2 co-evolved genes that could be targeted by readily available compounds. This approach allows for straightforward functional testing in both in vitro and animal models of MECP2 inactivation and moves us closer to the ultimate goal of identifying a candidate therapeutic for RTT. Using DGIdb (Cotto et al., 2018) and Open Targets (Oxford Academic, 2019), we searched specific drug-gene interaction types (e.g. inhibitory, activating) to identify direct effects on the 390 candidate genes. Open Targets identified such protein-compound interactions for 11 proteins from our list, and DGIdb identified an additional 22, resulting in 33 druggable proteins in the MECP2 phylogenetic network. MECP2-linked proteins were neither more or less druggable than other proteins in the genome, since the number expected by chance was 39.9±6.0.
 
 Two of the 33 druggable NPP-linked proteins (IRAK1 and EPOR) were found in both the eukaryotic E200 and the mammalian M200 lists, and were targeted by compounds with clinical efficacy and acceptable safety profiles (Pacritinib and EPI), making these immediately attractive for further study. In a STRING (Szklarczyk et al., 2019) functional interaction map, which is based on independent data types, IRAK1 was one of the six proteins functionally linked to MECP2, whereas EPOR had no known functional links (Figure 2A). To identify additional targets among the 31 druggable NPP-linked proteins found in only one of the E200 and M200 lists, we investigated chromosomal clusters of genes with MECP2-linked genes, since clustered genes often indicate a shared evolutionary function. Indeed, IRAK1 is directly adjacent to MECP2 on an evolutionary conserved chromosomal band on the X chromosome (Figure 2B and Figure 2—figure supplement 1). In a chromosomal clustering analysis of all MECP2-linked genes, the chr19p13.2 band contained more MECP2 co-evolved genes than any other in the genome (Figure 2C). Unexpectedly, this 5.6 Mb domain contained 5 of the 33 druggable MECP2 coevolved genes - EPOR, DNMT1, ICAM1, ICAM3, and KEAP1 (Figure 2D), making this the most strongly enriched band in the genome (p<1E-5, Figure 2D and Figure 2—figure supplement 2). Topologically Associated Domains (TADs) define the 3D organization of functionally co-regulated gene clusters (Fritz et al., 2019), and the entire chr19p13.2 gene cluster defines a single TAD-based high-resolution Hi-C mapping (Rao et al., 2014; Figure 2E). Additionally, this region has been shown to be bound by MECP2 (Yasui et al., 2007).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-v1.jpg)
+
+**Figure 2.:** (A) The 390 genes co-evolved with MECP2 in either eukaryotes or mammals contain 33 genes that are targets of known drugs/compounds. These genes are shown in a STRING interaction graph, with known gene-gene interactions shown as colored edges, and those with very strong co-evolution (Pearson correlation > 0.7) shown as gray edges. The two proteins co-evolved in both eukaryotes and mammals (EPOR and IRAK1) are colored yellow and the four other genes found at chr19p13.2 are colored purple. (B) Genomic location of MECP2 interacting genes along chromosome X in humans and mice. (C) Karyotype band locations of MECP2 and the 390 co-evolved genes. * p<0.05, **p<0.01, *** p<0.001 (D) Genomic location of MECP2 interacting genes along chr19p13.2 in humans and chromosome nine in mice. (E) Intra-chromosomal Hi-C contact heatmap for the chr19p13.2 locus in GM12878 cells, adapted from the 3D Genome Browser (Wang et al., 2018). Genes in the MECP2 network are shown, with other genes hidden for clarity. TADs called by 3D Genome Browser shown in blue/yellow track, with a super-TAD containing MECP2 genes outlined in red.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) NCBI Genome Data Viewer view of the genomic locations of DNMT1, ICAM1, ICAM3, KEAP1, and EPOR (top panel, genes highlighted). The gene orthologs are shown in Mus musculus chromosome 9 (bottom panel). (B) Inference of the synteny in ancestral species from Genomicus. Each row represents the same genomic locus at an ancestral state. Each gene is represented by a different color, and selected genes are annotated below. EPOR, ICAM1, ICAM3, KEAP1, and DNMT1 maintain their relative positions as far as the mammalian ancestral genome.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) NCBI Genome Data Viewer view of the genomic locations of MECP2 and IRAK1 (top panel). The gene orthologs are shown in Mus musculus chromosome X (bottom panel). (B) Inference of the synteny in ancestral species from Genomicus.
 
 For the two druggable proteins found in both NPP lists (IRAK1, EPO1) and the other four proteins located in the chr19p13.2 TAD (DNMT1, ICAM1, ICAM3, KEAP1), we further investigated the associated drug’s mode of action and efficacy and safety profile in other contexts. IRAK1 has been identified as a key intermediary in NF-κB signaling in RTT, with MECP2 directly binding the IRAK1 promoter to regulate its expression in MECP2-null mouse brains and NFΚB1 dramatically increasing lifespan in MECP2 null mice (Kishi et al., 2016). Pacritinib is a JAK2/FLT3 inhibitor with IRAK1 inhibiting capabilities (Jensen et al., 2017), presently under clinical investigation for myelofibrosis and glioblastoma. As it is currently the only clinical stage IRAK1 inhibitor with known clinical efficacy and acceptable safety even after prolonged administration (Singer et al., 2018), we chose this compound for our functional studies to target IRAK1.
 
@@ -64,17 +84,29 @@ KEAP1 is the key repressor of the transcription factor nuclear factor erythroid 
 
 Since the three candidate proteins targeted by these drug products (IRAK1, EPOR, and KEAP1) all have possible roles mediating inflammation, we chose to proceed with these for functional studies in cells modeling neural inflammatory phenotypes. The other three proteins identified (DNMT1, ICAM1, and ICAM3) may also be interesting targets for future study.
 
-## Human neural cell cultures exhibit Rett-like phenotypes when MECP2 is silenced
+### Human neural cell cultures exhibit Rett-like phenotypes when MECP2 is silenced
 
 To analyze the effects of the three selected compounds on a RTT model system, we employed human immortalized primary neural cells silenced for MECP2. We chose to use a human in vitro model system for preliminary validation due to the significant differences in the phenotypes and functions of mouse and human neural cells (Xu et al., 2018). Indeed, recent studies reported the use of iPSCs and immortalized glial cells as reliable human models for analyzing specific therapeutic targets for various diseases including autism (Tsilioni et al., 2020), neuroinflammation (Chiavari et al., 2019; Timmerman et al., 2018) and for analyzing the crosstalk of glioma with glial cells (Henrik Heiland et al., 2019; Zeng et al., 2020; Bier et al., 2020).
 
 Since all three selected compounds were associated with changes in neuroinflammation, we first focused on microglia and astrocytes. Loss or impaired function of MECP2 has been reported to affect the functions of glial cells and these changes have been implicated in the pathogenesis of RTT (Kahanovitch et al., 2019; Jin et al., 2017). We first characterized the effects of MECP2 silencing on the phenotypes of microglia (Figure 3). For these experiments, we transduced the cells with lentivirus vectors expressing control or MECP2 shRNAs. The expression of MECP2 was silenced by over 80% in these cells (Figure 3—figure supplement 1). MECP2 silencing induced a relative increase in the expression of M1 markers (IL1, and CD86) and a relative decrease of M2 markers (CD206 and IL-13) (Figure 3A), suggesting an increase in neuroinflammation. We also found that MECP2 silencing decreased the phagocytosis of the microglia cells (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-v1.jpg)
+
+**Figure 3.:** Human microglia (A,B), NSCs (C), astrocytes (D,E), and neurons (E) were silenced for MECP2 using lentivirus vector. The relative expression of M1 and M2 markers was analyzed in microglia cells using RT-PCR (A) and degree of phagocytosis using the pHrodo assay (B). NSCs were transduced with lentivirus vectors expressing the differentiation reporters GFAP and MAP2 and were differentiated as described in the methods. Ten days later, luciferase activity was determined (C). Astrocytes silenced for MECP2 were analyzed for the expression of EAAT2 using western blot analysis (D) and the expression of BDNF mRNA in both MECP2 silenced astrocytes and neurons was determined using RT-PCR (E). The results are a representative experiment of three separate tests analyzed in quadruplet. **p<0.01, ***p<0.001,****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Neurons, astrocytes, and microglia cells were transduced with lentivirus vectors expressing a control or MECP2 shRNAs. Following 3 days, the expression of MECP2 and actin were determined using western blot analysis. The results are representative of three experiments with similar results.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Human microglia (A), astrocytes (B), neurons (C), and neuronal stem cells (D) were treated with different concentrations of DMF (1, 10, and 50 µM), EPO (10, 30, and 50 ng/ml), and pacrinitib (1 and 10 µM). Following 3 days of treatment, the cells were analyzed for cell death using LDH assay. The results are the means ± SD of six samples for each compound.
+
 We next analyzed the effect of MECP2 silencing on human astrocyte differentiation and functions. For these experiments, neural stem cells (NSCs) were transduced with lentivirus vectors expressing the differentiation reporters, GFP/fLuc GFAP or the mCherry/Luc MAP2. The cells were plated on laminin coated plates and luciferase activity was determined 10 days later. In accordance with previous reports (Andoh-Noda et al., 2015; Mok et al., 2020), we found that MECP2 silenced NSCs displayed preferential expression of the glial differentiation marker (GFAP) with a concomitant decrease in expression of the neuronal differentiation marker (MAP2) (Figure 3C). The MECP2 silenced astrocytes expressed lower levels of Excitatory Amino Acid Transporter 2 (EAAT2), indicating impaired function of these cells, as was suggested for mouse astrocytes (Okabe et al., 2012; Figure 3D).
 
 We finally examined the effects of MECP2 silencing on the expression of BDNF in human neurons and astrocytes and found that, as reported for mouse cells (Chang et al., 2006; Li et al., 2012), MECP2 silencing decreased the expression of BDNF mRNA in both astrocyte and neuronal cultures (Figure 3E). Altogether, these finding indicate that the immortalized human cells employed in this study represent a reliable model for studying MECP2-related pathways and potential treatments.
 
-## DMF, EPO, and pacritinib differentially abrogate the effects of MECP2 silencing on microglia polarization
+### DMF, EPO, and pacritinib differentially abrogate the effects of MECP2 silencing on microglia polarization
 
 We then analyzed the effects of the three selected compounds, DMF, EPO and pacritinib, on MECP2 silenced cells. We first demonstrated that in the concentrations range we used, none of these compounds exerted a toxic effect on neither microglia cells, astrocytes, primary neuronal cells nor NSCs (Figure 3—figure supplement 2).
 
@@ -84,11 +116,11 @@ Control and MECP2 silenced microglia were treated with the DMF, EPO, and pacriti
 
 **Figure 4.:** Human microglia cells were silenced for MECP2 using lentivirus vectors expressing MECP2 shRNA. Control cells were transduced with lentivirus vectors expressing a control shRNA. After 5 days, the expression of MECP2 was determined by western blot analysis (Figure 3—figure supplement 1). Control and silenced cells were treated with EPO 10 ng/ml (A), DMF 10 µM (B) and pacritinib 10 µM (C), and the expression of M1 and M2-associated markers were determined after 72 hr using RT-PCR. MECP2 silenced microglia cells treated with EPO, DMF, or pacritinib were also analyzed for phagocytosis using the pHrodo assay (D). MECP2-silenced microglia cells were transduced with lentivirus vectors expressing the NF-kB reporter followed by treatment with EPO, DMF, and pacritinib for 24 hr. Luciferase activity was determined (E). The results demonstrate the means ± SD of a representative experiment of three separate tests analyzed in quadruplet. *p<0.05, **p<0.01, ***p<0.001,****p<0.0001.
 
-## EPO and DMF inhibit NF-κB activation in MECP2 silenced microglia cells
+### EPO and DMF inhibit NF-κB activation in MECP2 silenced microglia cells
 
 Knockdown of MECP2 has been reported to lead to increased NF-κB activity in neuronal and myeloid cells (O'Driscoll et al., 2015) and this deregulated activity has been associated with neuroinflammation and decreased dendritic arborization and spine density in a mouse model of RTT (Kishi et al., 2016). We therefore examined the ability of our three candidate compounds to abrogate the increased NF-κB activity in MECP2 KD microglia cells. MECP2-silenced microglia cells were transfected with lentivirus vectors expressing the NF-κB luciferase reporter and a constitutively active Renilla luciferase construct (as a transfection control). The cells were treated with EPO, DMF and pacritinib for 24 hr and luciferase activity was determined thereafter. A significant increase in NF-κB-dependent luciferase activation was observed for EPO and DMF in the MECP2-silenced cells (Figure 4E), indicating that EPO and DMF were able to downregulate the increased NF-κB activation in MECP2 KD cells.
 
-## EPO, but not DMF or pacritinib, abrogate improper astrocytic differentiation and astrocyte function in MECP2-silenced neural cells
+### EPO, but not DMF or pacritinib, abrogate improper astrocytic differentiation and astrocyte function in MECP2-silenced neural cells
 
 Various studies support a non-cell-autonomous effect of astrocytes on neuronal cell functions and contribution of astrocytes to various aspects of Rett syndrome pathogenesis via regulation of glutamate levels, homeostasis, and neuroinflammation (Kahanovitch et al., 2019; Maezawa et al., 2009). As presented in Figure 3C, MECP2 silencing increased astrocytic differentiation of NSCs at the expense of neuronal differentiation. Treatment of the silenced NSCs with pacritinib or DMF did not have significant effects on markers of neuronal (βIII tubulin) or astrocytic (GFAP) differentiation (Figure 5A). In contrast, EPO abrogated the impaired NSC differentiation as reflected by an increase of βIII tubulin and a decrease of GFAP (Figure 5A). In human astrocytes, MECP2 silencing decreased the expression of the glutamate transporter EAAT2 (Figure 3D). Treatment of these cells with EPO inhibited the decreased EAAT2 expression, whereas pacritinib and DMF did not have a significant effect (Figure 5B).
 
@@ -96,7 +128,7 @@ Various studies support a non-cell-autonomous effect of astrocytes on neuronal c
 
 **Figure 5.:** Human NSCs (A) and astrocytes (B) were silenced for MECP2 using lentivirus vectors expressing MECP2 shRNA. Control cells were transduced with lentivirus vectors expressing a control shRNA. After 5 days, the expression of MECP2 was determined by western blot analysis (Figure 3—figure suppplement 1). (A) Control and silenced NSCs were allowed to differentiate for 10 days and the expression of differentiation markers GFAP and βIII tubulin were determined using RT-PCR. (B) Silenced astrocytes treated with the different compounds or with medium were analyzed for the expression of EAAT2 using RT-PCR. The results are of a representative experiment of three separate tests analyzed in quadruplet. *p<0.05, **p<0.01, ***p<0.001,****p<0.0001.
 
-## DMF and EPO upregulate BDNF expression in MECP2-silenced cells
+### DMF and EPO upregulate BDNF expression in MECP2-silenced cells
 
 BDNF plays important roles in neuronal growth and development and represents a well-recognized transcriptional target of MECP2 (Chen et al., 2003). Silencing of MECP2 decreased BDNF expression in both neurons and astrocytes (Figure 6A–B). DMF and EPO induced an increase in BDNF mRNA in the silenced neurons (Figure 6A) and in the silenced astrocytes (Figure 6B), whereas pacritinib did not exert a significant effect in either. We replicated this experiment in astrocytes, testing DMF and EPI both individually and in combination (Figure 6C). This showed a modest increase in the level of BDNF in the in the combined treatment, suggesting potentially independent modes of action.
 
@@ -126,54 +158,54 @@ In summary, EPO, DMF and pacritinib act differentially on MECP2-silenced NSCs, m
 
 ## Materials and methods
 
-## Mapping MECP2 conservation along 1028 eukaryotic species and identifying correlated genes
+### Mapping MECP2 conservation along 1028 eukaryotic species and identifying correlated genes
 
 We used the pipeline we described in Tsaban et al., 2021 to calculate the Normalized Phylogenetic Profile (NPP) of 1028 eukaryotic species and rank genes based on their evolutionary similarity to MECP2. Briefly, 20,192 human proteins (one representative protein sequence per gene) were downloaded from UniProt reference proteomes (June 2018 release) (Bateman and UniProt Consortium, 2019). We used the Uniprot canonical isoform for each gene. For the 29 genes with more than one canonical isoform, we selected the longest isoform to maximize sequence information. The proteins were searched with BLASTP (Camacho et al., 2009) against the proteomes of the 1028 eukaryotes. A bit-score of 20.4, corresponding to a BLAST e-value of 0.05, was set as a minimal similarity threshold. The top scoring protein in each organism was selected. The bit-scores were normalized to protein length and phylogenetic distance from humans. The output is a matrix P of size 20,242 x 1028 where each entry Pab is the best BLASTP bit score between a human protein sequence ‘a’ and the top result in organism ‘b’. The Pearson correlation was calculated for each profile with the MECP2 profile. The top 200 genes in all eukaryotes were selected as the E200 group for further analysis. This procedure was repeated using only the 51 mammal species, and the top 200 genes in were selected as the M200 group for further analysis.
 
-## Filtering genes with drug interactions and constructing protein network
+### Filtering genes with drug interactions and constructing protein network
 
 Drug gene interactions were collected from DGIdb (Cotto et al., 2018) and from Open Targets (Oxford Academic, 2019). Drugs at any stage of development were included in the search as long as the interaction with the target gene had known directionality (e.g. inhibitory, activating). Drug-gene interactions were validated through a literature review and known gene-gene interactions were collected from STRING (Szklarczyk et al., 2019). Network diagram was constructed using STRING and Cytoscape (Lopes et al., 2011).
 
-## Synteny and co-localization analysis
+### Synteny and co-localization analysis
 
 Gene locations were retrieved from BioMart (Kasprzyk, 2011), the NCBI genome data viewer (Figure 2—figure supplement 1A, Figure 2—figure supplement 2A), and Genomicus (Nguyen et al., 2018; Figure 3A). Synteny in ancestral species was obtained from Genomicus (Nguyen et al., 2018). Intra-chromosomal Hi-C contact heatmaps and TAD borders were collected from the 3D Genome Browser (Wang et al., 2018), using GM12878 cell data from the high-resolution Hi-C dataset of Rao et al., 2014.
 
-## Neural cell cultures
+### Neural cell cultures
 
 Immortalized human microglial cells and astrocytes were obtained from Applied Biological Material (Richmond, BC, Canada). Human NSCs (H9, hESC-derived) (ReNcell) were obtained from Invitrogen, Merck (Germany). Human neurons were obtained from ScienCell (Carlsbad, CA, USA). All cells employed in this study were tested for mycoplasma contamination (Mycoplasma PCR Detection Kit) and found negative.
 
-## Transduction of neural cells
+### Transduction of neural cells
 
 Lentivirus vectors (System Biosciences, Mountain View, CA, USA) expressing the MECP2 or control shRNAs and the reporters GFP/fLuc GFAP, mCherry/Luc MAP2 and NF-kB luciferase were packaged and used to transduce the cells according to the manufacturer's protocol and as previously described (Giladi et al., 2015).
 
-## NSC differentiation
+### NSC differentiation
 
 Human NSCs were maintained as spheroids in an NSC maintenance medium containing fibroblast growth factor 2 (FGF-2) and an epidermal growth factor (EGF, 20 ng/ml) on laminin-coated flasks. For differentiation, the cells were maintained in NSC maintenance medium without FGF-2 and EGF and neuronal and glial differentiation were observed.
 
-## Microglia polarization
+### Microglia polarization
 
 Human microglia cells were silenced for MECP2 using lentivirus vectors expressing MECP2 or control shRNAs. After 5e days, the expression of MECP2 was determined by western blot analysis and cells exhibiting a decrease of at least 80% were employed in further studies. Control and silenced cells were treated with the specific compounds and the expression of M1- and M2-associated markers were determined after 72 hr using RT-PCR. All experiments were done in triplicates and were repeated three times.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 Cells were treated with different concentrations of DMF (1 10 and 50 mM), EPO (10, 30 and 50 ng/ml), and Pacritinib (1 and 10 mM). Following 3 days of treatment, the cells were analyzed for cell death using LDH assay. The results are presented as the means ± SD of six samples for each compound.
 
-## Western blot analysis
+### Western blot analysis
 
 Cell pellet preparation and Western blot analyses were performed as previously described (Lomonaco et al., 2009). Equal loading was verified using an anti-β-actin or tubulin antibodies as described (Giladi et al., 2015; Bier et al., 2018).
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was extracted using RNeasy midi kit according to the manufacturer’s instructions (Qiagen, Frederick, MD, USA). Reverse transcription reaction was carried out using 2 μg total RNA (Bier et al., 2018). The primer sequences are described in the supplementary files (Supplementary file 3).
 
-## Phagocytosis analysis
+### Phagocytosis analysis
 
 Human microglial cells were silenced for MECP2. Phagocytosis was determined using the pHrodo Green zymosan bioparticle assay (Invitrogen, Carlsbad, CA, USA) according to the manufacturer’s instructions. Briefly, microglia were incubated with a solution of pHrodo Green zymosan bioparticles in Live Cell Imaging Solution (0.5 mg/ml) for 2 hr. Phagocytosis was determined using a fluorescence plate reader at Ex/Em 509/533.
 
-## Luciferase activity
+### Luciferase activity
 
 The firefly luciferase activity of the NF-kB, GFAP and MAP two activities and the control Renilla luciferase activity were analyzed using the Dual-Luciferase Reporter Assay System (Promega Corporation).
 
-## Statistical analysis for cell assays
+### Statistical analysis for cell assays
 
 The results are presented as the mean values ± SD. Data were analyzed using a Student's t-test with correction for data sets with unequal variances (Welch's unequal variances t-test).

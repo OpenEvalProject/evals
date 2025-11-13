@@ -37,9 +37,7 @@ We have now added to the manuscript a novel figure illustrating the density of m
 
 4) Figure 6H-L: Does the rescue of LTP-associated increase in mushroom spines, PSD-95 puncta, and mEPSC amplitude and frequency by knocking down MeCP2 in IL-1R8 KO neurons occlude the similar effects of IL-1Ra treatment also observed in IL-1R8 KO neurons? If MeCP2 is downstream to IL-1R, then one would expect for occlusion and this should be tested.
 
-We performed the experiments required by the reviewer and found that, by applying the two treatments together, LTP was only partially restored, at difference with neurons where only IL-1Ra was applied. See Author response image 1.10.7554/eLife.21735.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.21735.020
-
-DOI: http://dx.doi.org/10.7554/eLife.21735.020
+We performed the experiments required by the reviewer and found that, by applying the two treatments together, LTP was only partially restored, at difference with neurons where only IL-1Ra was applied. See Author response image 1.10.7554/eLife.21735.020Author response image 1.
 
 However, given that the results of this experiment are not easy to interpret, we attempted to provide a more direct answer to the reviewer’s question of whether MeCP2 is downstream to IL-1R, by pharmacologically or genetically silencing IL-1R and quantifying MeCP2 expression. We show in the revised manuscript that application of IL-1Ra to wt neurons results in a reduction of MeCP2 levels (new Figure 7D); also MeCP2 levels are significantly lower in both hippocampus and cortex of mice lacking IL-1R KO, compared to wt (results of WB quantification added as numerical values in the text, subsection “The transcriptional regulator MeCP2 mediates the alterations in spine morphogenesis, synaptic transmission and synaptic plasticity observed in IL-1R8 KO hippocampal neurons”). These data further support the view that MeCP2 is downstream to IL-1R.
 
@@ -101,9 +99,7 @@ Reviewer #3:
 
 […] 1) Figure 7 shows that the mTOR pathway acts downstream of IL-1R8. Are the protein levels or activity (phosphorylation) of mTOR pathway proteins increased in the IL-1R8-mutant mice? If so, is the mTOR pathway suppressed in anakinra-treated IL-1R-mutant mice?
 
-From our transcriptomic analysis we know that RNA levels for mTOR are not changed in IL-1R8 KO mice brain (see Author response image 2).10.7554/eLife.21735.021Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.21735.021
-
-DOI: http://dx.doi.org/10.7554/eLife.21735.021
+From our transcriptomic analysis we know that RNA levels for mTOR are not changed in IL-1R8 KO mice brain (see Author response image 2).10.7554/eLife.21735.021Author response image 2.
 
 This suggests that is the activity of the pathway likely increased in IL-1R8 KO neurons, as already reported in IL-1R8 KO T cells (Gulen et al. 2010). Consistently, rapamycin rescues the phenotypes, indicating the increased activity of the pathway in our experimental conditions.
 

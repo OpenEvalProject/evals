@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.45426.001 As part of the Reproducibility Project: Cancer Biology we published a Registered Report (Evans et al., 2015), that described how we intended to replicate selected experiments from the paper ‘Wnt activity defines colon cancer stem cells and is regulated by the microenvironment’ (Vermeulen et al., 2010). Here, we report the results. Using three independent primary spheroidal colon cancer cultures that expressed a Wnt reporter construct we observed high Wnt activity was associated with the cell surface markers CD133, CD166, and CD29, but not CD24 and CD44, while the original study found all five markers were correlated with high Wnt activity (Figure 2F; Vermeulen et al., 2010). Clonogenicity was highest in cells with high Wnt activity and clonogenic potential of cells with low Wnt activity were increased by myofibroblast-secreted factors, including HGF. While the effects were in the same direction as the original study (Figure 6D; Vermeulen et al., 2010) whether statistical significance was reached among the different conditions varied. When tested in vivo , we did not find a difference in tumorigenicity between high and low Wnt activity, while the original study found cells with high Wnt activity were more effective in inducing tumors (Figure 7E; Vermeulen et al., 2010). Tumorigenicity, however, was increased with myofibroblast-secreted factors, which was in the same direction as the original study (Figure 7E; Vermeulen et al., 2010), but not statistically significant. Finally, we report meta-analyses for each results where possible.
+As part of the Reproducibility Project: Cancer Biology we published a Registered Report (Evans et al., 2015), that described how we intended to replicate selected experiments from the paper ‘Wnt activity defines colon cancer stem cells and is regulated by the microenvironment’ (Vermeulen et al., 2010). Here, we report the results. Using three independent primary spheroidal colon cancer cultures that expressed a Wnt reporter construct we observed high Wnt activity was associated with the cell surface markers CD133, CD166, and CD29, but not CD24 and CD44, while the original study found all five markers were correlated with high Wnt activity (Figure 2F; Vermeulen et al., 2010). Clonogenicity was highest in cells with high Wnt activity and clonogenic potential of cells with low Wnt activity were increased by myofibroblast-secreted factors, including HGF. While the effects were in the same direction as the original study (Figure 6D; Vermeulen et al., 2010) whether statistical significance was reached among the different conditions varied. When tested in vivo, we did not find a difference in tumorigenicity between high and low Wnt activity, while the original study found cells with high Wnt activity were more effective in inducing tumors (Figure 7E; Vermeulen et al., 2010). Tumorigenicity, however, was increased with myofibroblast-secreted factors, which was in the same direction as the original study (Figure 7E; Vermeulen et al., 2010), but not statistically significant. Finally, we report meta-analyses for each results where possible.
 
 ## Introduction
 
@@ -45,23 +45,82 @@ The outcome measures reported in this Replication Study will be aggregated with 
 
 ## Results and discussion
 
-## Generation and characterization of primary spheroidal cultures of colon cancer cells
+### Generation and characterization of primary spheroidal cultures of colon cancer cells
 
 To assess Wnt signaling activity in colon cancer stem cells (CSC), we transduced primary spheroidal cultures of colon cancer cells with the same Wnt reporter construct as the original study, which used a TCF/LEF-1 responsive promoter to drive expression of green fluorescent protein (GFP) (TOP-GFP; Reya et al., 2003). The experimental approach to generate TOP-GFP expressing CSC cultures was described in Protocol 1 of the Registered Report (Evans et al., 2015). We used three independent spheroidal cultures, one used in the original study (Co100) and two derived from primary human colorectal cancer tissues (CSC1 and E450). The three cultures were transduced with TOP-GFP and single-cell TOP-GFP cultures were isolated. This approach, similar to the original study, was done to exclude variation in lentiviral integration and copy number between cells (Vermeulen et al., 2008). The single-cell-derived TOP-GFP cultures displayed heterogeneity in Wnt signaling, similar to what was reported in the original study (Figure 1A,B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45426/elife-45426-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative images of the three independent single-cell-cloned CSC cultures, lentivirally transduced with TOP-GFP. Phase contrast (top) and fluorescence microscopy (bottom) for each of the cultures indicated. Bar = 90 µm. (B) Single parameter histograms for GFP intensity for each of the TOP-GFP single-cell-cloned CSC cultures with the TOP-GFPlow (10% lowest) and TOP-GFPhigh (10% highest) populations indicated. (C) Single parameter histograms for the indicated cell surface markers for each of the indicated cultures. Gray denotes TOP-GFPlow (10% lowest) and green denotes TOP-GFPhigh (10% highest) populations. (D) Density plots for CD29/CD24 and CD44/CD166 from TOP-GFPlow (gray) and TOP-GFPhigh (green) populations of each culture. Additional details for this experiment can be found at https://osf.io/tfy28/.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45426/elife-45426-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative density plots of gating strategy to assess cell surface markers from TOP-GFPlow and TOP-GFPhigh populations. Forward scatter area (FSC-A) and PerCP-Cy5.5 was used to gate on viable cells (PI negative cells), followed by forward verses side scatter area (FSC-A vs SSC-A) to identify cells of interest and exclude debris, which were then analyzed by FSC-A and forward scatter width (FSC-W), and then SSC-A and side scatter width (SSC-W) to exclude doublet cells. From the single-cell population, SSC and FITC were used to gate on the TOP-GFPlow (10% lowest) and TOP-GFPhigh (10% highest) populations. TOP-GFPlow and TOP-GFPhigh populations were then assessed for PE and APC to detect the fluorophores conjugated to antibodies against the cell surface markers analyzed in this study. Additional details for this experiment can be found at https://osf.io/tfy28/.
+
 The three TOP-GFP cultures were then sorted into the highest and lowest 10% of TOP-GFP-expressing cells by fluorescence-activated cell sorting and analyzed for expression of the same cell surface markers reported in the original study. This experiment is similar to what was reported in Figure 2F of Vermeulen et al. (2010) and described in Protocol 2 in the Registered Report (Evans et al., 2015). We found the TOP-GFPhigh populations were more enriched for CD133+ or CD166+ cells compared to the TOP-GFPlow populations for each of the three cultures (Figure 1C,D). There were also more CD29+ cells in the TOP-GFPhigh populations for each of the three cultures, while the two TOP-GFP populations were mostly similar for CD24 expression. We also found the TOP-GFPlow populations from E450 and CSC1 cultures were more enriched for CD44+ cells, while both the populations displayed similar expression for Co100. The original study stated that CD133, the combination of CD29/CD24, and the combination of CD44/CD166 were correlated with the TOP-GFPhigh population (Vermeulen et al., 2010). However, since the degree that each of the markers correlated with the TOP-GFPhigh and TOP-GFPlow populations were not completely reported in the original study, it is difficult to directly compare to the results reported in this replication attempt. To summarize, for this experiment we found results that varied in direction relative to the original study.
 
-## Clonogenicity of TOP-GFP CSC cultures
+### Clonogenicity of TOP-GFP CSC cultures
 
 The three TOP-GFP cultures were then used to assess the clonogenic potential of the cells using a limiting-dilution assay. Different TOP-GFP expressing fractions were examined to test if variation in TOP-GFP levels resulted in differential clonogenicity. Additionally, TOP-GFPlow fractions were treated with conditioned medium derived from myofibroblasts (MFCM) or hepatocyte growth factor (HGF), with and without a specific c-Met inhibitor (PHA665752), to test if myofibroblast-secreted factors increased the clonogenic potential. This experiment is similar to what was reported in Figure 6D of Vermeulen et al. (2010) and described in Protocol 3 in the Registered Report (Evans et al., 2015). We first performed a pilot assay of the dilution curve in untreated conditions and observed the clonogenic potential in the TOP-GFPhigh fractions were greater than the TOP-GFPlow fractions for each of the cultures tested (Figure 2—figure supplement 1). We then proceeded with the experiment to test all of the conditions specified in the Registered Report and reported in the original study. Similar to the pilot assay, we found the clonogenic potential of TOP-GFPhigh cells were greater than TOP-GFPlow cells for each of the three cultures (Figure 2). We also observed that the clonogenicity of TOP-GFPlow cells were increased in the presence of MCFM or HGF, which was reduced when PHA665752 was included, although to varying degrees across the different cultures. Interestingly, PHA665752 treatment on the whole population of TOP-GFP cells (TOP-GFPwhole) had varying effects on the clonogenicity among the different cultures tested. Both the Co100 and E450 cultures had decreased clonogenicity in the presence of PHA665752, while CSC1 cultures were increased. The original study reported the clonogenic potential of the TOP-GFPhigh fraction was greater compared to TOP-GFPlow cells, with the clonogenic potential of TOP-GFPlow cells enhanced with MFCM, or HGF, treatment, almost to the level of TOP-GFPhigh cells, which was blocked with PHA665752 (Vermeulen et al., 2010). PHA665752 was also reported to have no effect on the clonogenicity of TOP-GFPwhole cells (Vermeulen et al., 2010). The HGF and PHA665752 concentrations were the same between the original study and this replication attempt (25 ng/ml and 500 nM, respectively) as was the MFCM treatment that used a 1:2 dilution of MFCM diluted in CSC medium. As suggested during peer review of the Registered Report (Gilbertson, 2015), we also determined the concentration of HGF in MFCM, which was determined by enzyme-linked immunosorbent assay (ELISA) to be 0.61 ng/ml. The original study reported HGF production in MFCM was ~120 ng/ml (Figure 5E; Vermeulen et al., 2010) or approximately 200 times higher than what we observed. Other studies that measured the amount of HGF in MFCM using the same cell line (18Co) and timeline (24 hr) reported concentrations of ~0.4 ng/ml (Shao et al., 2006) and ~6 ng/ml (Woo et al., 2015). The variation of HGF production might be explained by differences in assay reagents, such as the generation of the standard curve (Jones et al., 1995) and variability in microplate surface properties (Lilyanna et al., 2018). Further, HGF production has been shown to be influenced by other soluble factors, such as transforming growth factor-β (TGF-β) and basic fibroblast growth factor (FGF2) (Neuss et al., 2004). The variation in HGF production in MFCM between the original study and this replication attempt might account for any observed differences in outcomes and should be taken into account when interpreting these results. Importantly, though, observing and reporting all outcomes are informative to establish the range of conditions under which a given phenotype can be observed (Bailoo et al., 2014).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45426/elife-45426-fig2-v1.jpg)
+
+**Figure 2.:** A limiting-dilution assay was performed on the TOP-GFPlow, TOP-GFPhigh, or TOP-GFPwhole populations of the three indicated TOP-GFP cultures. Cells were left untreated, or treated with 25 ng/ml HGF, 1:2 dilution of MFCM, or 500 nM PHA-665752 (PHA), as indicated. The bar graphs present the clonogenic potential of each culture with error bars representing 95% confidence intervals (y-axis is log2 scale). This experiment was performed once for each culture. See Materials and methods and Registered Report (Evans et al., 2015) for details on limiting-dilution statistics and scheme. Planned contrast between TOP-GFPlow vs TOP-GFPhigh: E450 (χ2 = 39.8, uncorrected p=2.82×10−10, corrected p=1.69×10−9); CSC1 (χ2 = 4.82, uncorrected p=0.028, corrected p=0.169); Co100 (χ2 = 7.59, uncorrected p=0.0059, corrected p=0.035). Planned contrast between TOP-GFPlow vs TOP-GFPlow + HGF: E450 (χ2 = 1.49, uncorrected p=0.223, corrected p>0.99); CSC1 (χ2 = 0.337, uncorrected p=0.562, corrected p=0.99); Co100 (χ2 = 12.7, uncorrected p=3.70×10−4, corrected p=0.0022). Planned contrast between TOP-GFPlow vs TOP-GFPlow + MFCM: E450 (χ2 = 1.96, uncorrected p=0.162, corrected p=0.969); CSC1 (χ2 = 4.18, uncorrected p=0.041, corrected p=0.245); Co100 (χ2 = 28.7, uncorrected p=8.26×10−8, corrected p=4.96×10−7). Planned contrast between TOP-GFPlow + HGF vs TOP-GFPlow + HGF + PHA: E450 (χ2 = 0.376, uncorrected p=0.540, corrected p>0.99); CSC1 (χ2 = 34.0, uncorrected p=5.64×10−9, corrected p=3.39×10−8); Co100 (χ2 = 5.13, uncorrected p=0.024, corrected p=0.141). Planned contrast between TOP-GFPlow + MFCM vs TOP-GFPlow + MFCM + PHA: E450 (χ2 = 61.0, uncorrected p=5.71×10−15, corrected p=3.43×10−14); CSC1 (χ2 = 43.5, uncorrected p=4.14×10−11, corrected p=2.48×10−10); Co100 (χ2 = 17.6, uncorrected p=2.67×10−5, corrected p=1.60×10−4). Planned contrast between TOP-GFPwhole vs TOP-GFPwhole + PHA: E450 (χ2 = 68.3, uncorrected p=1.43×10−16, corrected p=8.56×10−16); CSC1 (χ2 = 72.2, uncorrected p=1.96×10−17, corrected p=1.17×10−16); Co100 (χ2 = 20.2, uncorrected p=6.91×10−6, corrected p=4.14×10−5). Additional details for this experiment can be found at https://osf.io/k9vce/.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45426/elife-45426-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A limiting-dilution assay was performed on the TOP-GFPlow, TOP-GFPhigh, or TOP-GFPwhole populations of the three indicated TOP-GFP cultures. Cells were left untreated. The bar graphs present the clonogenic potential of each culture with error bars representing 95% confidence intervals (y-axis is log2 scale). The pilot experiment was performed once for each culture. See Methods and Registered Report (Evans et al., 2015) for details on limiting-dilution scheme. Additional details for this experiment can be found at https://osf.io/k9vce/.
+
 As outlined in the Registered Report (Evans et al., 2015), we planned to conduct six comparisons using the Bonferroni correction to adjust for multiple comparisons, making the a priori significance threshold 0.0083. We performed Extreme Limiting Dilution Analysis (ELDA) (Hu and Smyth, 2009) and tested for pairwise differences in frequency between groups (see Figure 2 figure legend). The sample sizes were determined a priori to detect the effects based on the originally reported data. We found that the test between TOP-GFPhigh and TOP-GFPlow cells was statistically significant for Co100 and E450 cultures, but not CSC1. Treatment with HGF, or MFCM, resulted in a statistically significant increase in clonogenicity in TOP-GFPlow cells from the Co100 culture, but not E450 or CSC1 cultures. The comparison of HGF treatment, with or without PHA665752, in TOP-GFPlow cells was statistically significant for the CSC1 culture, but not the Co100 or E450 cultures, while the comparison of MFCM treatment, with or without PHA665752, in TOP-GFPlow cells was statistically significant for all three cultures. Furthermore, the differences observed in TOP-GFPwhole cells with or without PHA665752 were statistically significant for all three cultures. To summarize, for this experiment we found results that were in the same direction as the original study, except for treatment of TOP-GFPwhole cells with PHA665752, and statistical significance that varied among the three cultures tested as well as the original study.
 
-## Tumorigenicity of TOP-GFP CSC culture
+### Tumorigenicity of TOP-GFP CSC culture
 
 We also examined the frequency TOP-GFP cells form tumors when injected into nude mice. This experiment is similar to what was reported in Figure 7E of Vermeulen et al. (2010) and described in Protocol 4 in the Registered Report (Evans et al., 2015). While the original study included TOP-GFPlow cells co-injected with myofibroblasts and TOP-GFPwhole cells, this replication attempt was restricted to TOP-GFPhigh, TOP-GFPlow, and TOP-GFPlow cells co-injected with MFCM. The original study also reported results from two clones, while this replication attempt utilized a single clone. As stated in the Registered Report, we identified the clone to use as the one with the largest observed difference in clonogenicity between untreated TOP-GFPhigh and TOP-GFPlow cells, which, as described above, was the E450 culture. Different cell numbers were injected into female nude mice and blindly analyzed for tumor formation after nine weeks. We found the frequency of tumorigenicity was similar when TOP-GFPhigh cells (1 in every 3332, 95% CI [9174, 1210]) or TOP-GFPlow cells (1 in every 2744, 95% CI [7377, 1020]) were injected (Table 1), which was not a statistically significant difference (χ2 = 0.084, uncorrected p=0.772, corrected p>0.99). The addition of MFCM to TOP-GFPlow cells resulted in an increased frequency of tumorigenicity (1 in every 774, 95% CI [2268, 264]), which was not statistically significant when compared to untreated TOP-GFPlow cells (χ2 = 3.32, uncorrected p=0.069, corrected p=0.137). The original study reported for each of the two clones tested (C100.B5 and C100.G7) the TOP-GFPhigh fraction was more effective in inducing tumors (C100.B5:~1 in every 37, 95% CI [92, 15]; C100.G7:~1 in every 961, 95% CI [2498, 369]) than the TOP-GFPlow fraction (C100.B5:~1 in every 6939, 95% CI [18841, 2555]; C100.G7: frequency estimate unable to be determined) and that tumorigenicity was increased when TOP-GFPlow cells were co-injected with MFCM (C100.B5:~1 in every 310, 95% CI [789, 122]; C100.G7:~1 in every 2352, 95% CI [5236, 1056]) (Vermeulen et al., 2010). To summarize, for this experiment we found results that were in the same direction as the original study for the comparison between TOP-GFPlow with or without MFCM, but not for the comparison of TOP-GFPlow and TOP-GFPhigh, and not statistically significant where predicted.
 
-## Meta-analysis of original and replication effects
+**Table 1.**
+ Tumorigenicity assay of TOP-GFP culture.Cell numbers from the indicated populations were injected into female athymic nude mice. Cells were left untreated or treated with 1:2 dilution of MFCM for 2 hr before injection. The number of successful tumor initiations after nine weeks out of four injected mice for each condition is reported. Planned contrast between TOP-GFPlow vs TOP-GFPhigh (χ2 = 0.084, uncorrected p=0.772, corrected p>0.99). Planned contrast between TOP-GFPlow vs TOP-GFPlow + MFCM (χ2 = 3.32, uncorrected p=0.069, corrected p=0.137). Additional details for this experiment can be found at https://osf.io/j73xu/.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Condition</th>
+      <th>10</th>
+      <th>100</th>
+      <th>1000</th>
+      <th>5000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E450</td>
+      <td>TOP-GFP Low</td>
+      <td>0/4</td>
+      <td>0/4</td>
+      <td>2/4</td>
+      <td>3/4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TOP-GFP High</td>
+      <td>0/4</td>
+      <td>0/4</td>
+      <td>3/4</td>
+      <td>2/4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TOP-GFP Low + MFCM</td>
+      <td>0/4</td>
+      <td>2/4</td>
+      <td>2/4</td>
+      <td>4/4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Meta-analysis of original and replication effects
 
 We performed a meta-analysis using a random-effects model, where possible, to combine each of the effects described above as pre-specified in the confirmatory analysis plan (Evans et al., 2015). To provide a standardized measure of the effect, a common effect size was calculated for each effect from the original and replication studies. Cohen’s ω is a standardized measure of the association between two variables, in this case the cells tested and clonogenic, or tumorigenic, frequency. The estimate of the effect size of one study, as well as the associated uncertainty (i.e. confidence interval), compared to the effect size of the other study provides another approach to compare the original and replication results (Errington et al., 2014; Valentine et al., 2011). Importantly, the width of the confidence interval for each study is a reflection of not only the confidence level (e.g. 95%), but also variability of the sample (e.g. SD) and sample size.
 
@@ -77,29 +136,207 @@ This direct replication provides an opportunity to understand the present eviden
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Co100</td>
+      <td>doi:10.1038/ncb2048</td>
+      <td></td>
+      <td>shared by Medema lab, University of Amsterdam</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens, female)</td>
+      <td>CSC1</td>
+      <td>ProMab Biotechnologies</td>
+      <td>cat# CC100103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens, female)</td>
+      <td>E450</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens, female)</td>
+      <td>18Co</td>
+      <td>ATCC</td>
+      <td>cat# CRL-1459; RRID:CVCL_2379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, Athymic Nude, female)</td>
+      <td>athymic nude</td>
+      <td>Charles River</td>
+      <td>Strain code: 490; RRID:IMSR_CRL:490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TOP-GFP</td>
+      <td>doi:10.1038/nature01593</td>
+      <td>RRID:Addgene_14715</td>
+      <td>shared by Medema lab, University of Amsterdam</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HGF</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# H5791</td>
+      <td>lot# MKBT3102V</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PHA-665752</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# PZ0147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>cat# 356230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-CD133</td>
+      <td>Miltenyi Biotec</td>
+      <td>cat# 130-098-826; clone: AC133; RRID:AB_2660882</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-CD24</td>
+      <td>BD Biosciences</td>
+      <td>cat# 560991; clone ML5; RRID:AB_10563074</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-CD29</td>
+      <td>BD Biosciences</td>
+      <td>cat# 561794; clone: MAR4; RRID:AB_10898163</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-CD166</td>
+      <td>R and D Systems</td>
+      <td>cat# FAB6561P; clone: 105902; RRID:AB_2223887</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-CD44</td>
+      <td>BD Biosciences</td>
+      <td>cat# 560890; clone: G44-26; RRID:AB_2033959</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated mouse IgG1 isotype control</td>
+      <td>Miltenyi Biotec</td>
+      <td>cat# 130-098-106; clone: X-56; RRID:AB_2661463</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated mouse IgG2b, κ isotype control</td>
+      <td>BD Biosciences</td>
+      <td>cat# 555745; clone: 27–35; RRID:AB_398612</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated mouse IgG2a, κ isotype control</td>
+      <td>BD Biosciences</td>
+      <td>cat# 555574; clone: G155-178; RRID:AB_395953</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated mouse IgG1 isotype control</td>
+      <td>BD Biosciences</td>
+      <td>cat# 555751; clone: MOPC-21; RRID:AB_398613</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACS Sortware sorter</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_016722</td>
+      <td>version 1.2.0.142</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HCS Studio Cell Analysis</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_016787</td>
+      <td>version 6.6.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_016722</td>
+      <td>version 6.1.3 or 8.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>Tree Star, Inc</td>
+      <td>RRID:SCR_008520</td>
+      <td>version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for statistical computing</td>
+      <td>https://www.r-project.org</td>
+      <td>RRID:SCR_001905</td>
+      <td>version 3.5.1</td>
+    </tr>
+  </tbody>
+</table>
+
 As described in the Registered Report (Evans et al., 2015), we attempted a replication of the experiments reported in Figures 2F, 6D, and 7E of Vermeulen et al. (2010). A detailed description of all protocols can be found in the Registered Report (Evans et al., 2015) and are described below with additional information not listed in the Registered Report, but needed during experimentation.
 
-## Cell culture
+### Cell culture
 
 Three cultures of CSCs were isolated/obtained for this study. Co100 cells, which were used in the original study, were shared by Dr. Jan Paul Medema (University of Amsterdam). CSC1 cells were obtained commercially from primary human colorectal tumor tissue from a female Caucasian patient at the age of 65 (ProMab Biotechnologies, cat# CC100103; datasheet available at https://osf.io/det4j/). E450 cells were isolated as described in the Registered Report (Evans et al., 2015) from a freshly excised human colon adenocarcinoma tumor fragment from a female Caucasian patient at the age of 78. Of note, E450 was the only viable spheroidal culture that was successfully derived from twelve different colon tissue fragments that were attempted. This is slightly lower (8.3%) then the range of what was shared by the original authors during preparation of the Registered Report (10–20%: Evans et al., 2015) and previously reported efficiency rates (15%: Qureshi-Baig et al., 2016; 11%: Brattain et al., 1981; 33%: McBain et al., 1984), although methods to increase efficiency have since been reported (73%; Miyoshi et al., 2018). Patient phenotype (e.g. age, sex, ethnicity, diagnosis) for E450 are available at https://osf.io/ysf58/. Approval was obtained from Western Institutional Review Board (WIRB) (protocol MR #0701) and were in full compliance with good clinical practices as defined under the U.S. Food and Drug Administration (FDA) regulations, U.S. Department of Health and Human Services (HHS) regulations, and the International Conference on Harmonisation (ICH) guidelines. Shared samples and data were de-identified for this study. CSCs were maintained at 37°C in a humidified atmosphere at 5% CO2 in CSC medium (modified neurobasal A medium supplemented with 1X N2 supplement, lipid mixture-1 (1 ml/500 ml medium), 20 ng/ml fibroblast growth factor-basic, and 50 ng/ml epidermal growth factor) and passaged as described in the Registered Report (Evans et al., 2015) with additional details available at https://osf.io/dtbvp/. 18Co cells (ATCC, cat# CRL-1459, RRID:CVCL_2379) were maintained at 37°C in a humidified atmosphere at 5% CO2 in Eagle’s Minimum Essential Medium supplemented with 10% FBS, 500 U/ml penicillin, 500 U/ml streptomycin, and 1.25 µg/ml amphotericin B. Quality control data confirming the cells were free of mycoplasma contamination (MycoAlert Mycoplasma Detection kit; Lonza, cat# LT07-318) is available at https://osf.io/xzh9t/.
 
-## Lentiviral infection
+### Lentiviral infection
 
 TCF/LEF-1 responsive promoter to drive expression of green fluorescent protein (GFP) (TOP-GFP, RRID:Addgene_14715) was shared Dr. Jan Paul Medema (University of Amsterdam) with permission from Dr. Laurie Ailles (University Health Network; University of Toronto). Spheroidal cultures were transduced with lentiviral particles to express TOP-GFP which were produced by Cyagen Biosciences, Inc (Santa Clara, California) with a titer of 3.66 × 108 TU/ml as determined by quantitative PCR using a fragment in the WPRE region of the lentiviral vector amplified from genomic DNA of transduced HEK293 cells. Dissociated spheroidal cultures were each transduced for 24 hr with 20 µl concentrated lentivirus per 1 × 106 cells in 10 ml CSC medium supplemented with 8 µg/l polybrene before medium was replaced. Cells were cultured for 4 weeks before isolation of single-cell-derived cultures by fluorescence-activated cell sorting (FACS). FACS was performed on an Influx cell sorter (BD Biosciences) and analyzed with FACS Sortware sorter software (BD Biosciences, RRID:SCR_016722), version 1.2.0.142. Spheroids were dissociated as described in the Registered Report (Evans et al., 2015) and propidium iodide (PI) was added at 250 ng/ml immediately prior to sorting. Single, PI-negative, GFP-positive cells were sorted and deposited into individual wells of ultralow-adhesion 96-well plates containing 200 µl/well CSC medium. Four 96-well plates were tested for each culture with one viable single-cell clone generated from the CSC1 culture (0.26% efficiency), three clones from the E450 culture (0.78% efficiency, and eight clones from the Co100 culture (2.08% efficiency), which were near the range of what was shared by the original authors during preparation of the Registered Report (~1%: Evans et al., 2015). One clone was randomly selected from each culture for further analysis. Over a period of 13 weeks, spheroid cultures arising from single cells were gradually expanded into larger ultralow-adhesion flasks. Microscopy images of cultures were acquired with a CellInsight CX7 High-Content Screening (HCS) Platform (ThermoFisher Scientific) and HCS Studio Cell Analysis software (ThermoFisher Scientific, RRID:SCR_016787) version 6.6.0, build 8153.
 
-## Flow cytometry analysis of cell surface markers
+### Flow cytometry analysis of cell surface markers
 
 Spheroid cultures were dissociated with trypsin and resuspended at a final concentration of 1 × 106 cells/ml in FACS buffer (PBS supplemented with 2% fetal bovine serum (FBS), 1X antifungal/antibiotic, and 2 mM EDTA). Cells were stained at 1:100 dilution with PE-conjugated monoclonal anti-CD133 (Miltenyi Biotec, cat# 130-098-826, clone AC133, RRID:AB_2660882), PE-conjugated monoclonal anti-CD24 (BD Biosciences, cat# 560991, clone ML5, RRID:AB_10563074) and APC-conjugated monoclonal anti-CD29 (BD Biosciences, cat# 561794, clone MAR4, RRID:AB_10898163), or PE-conjugated monoclonal anti-CD166 (R and D Systems, cat# FAB6561P, clone 105902, RRID:AB_2223887) and APC-conjugated monoclonal anti-CD44 (BD Biosciences, cat# 560890, clone G44-26, RRID:AB_2033959) and incubated at 4°C in the dark for 10 min. Cells were also stained with 1:100 dilution of control antibodies: PE-conjugated monoclonal mouse IgG1 isotype control (Miltenyi Biotec, cat# 130-098-106, clone X-56, RRID:AB_2661463), APC-conjugated monoclonal mouse IgG2b, κ isotype control (BD Biosciences, cat# 555745, clone 27–35, RRID:AB_398612), PE conjugated monoclonal mouse IgG2a, κ isotype control (BD Biosciences, cat# 555574, clone G155-178, RRID:AB_395953), or APC-conjugated monoclonal mouse IgG1 isotype control (BD Biosciences, cat# 555751, clone MOPC-21, RRID:AB_398613). Cells were washed by adding 20 times the reaction volume of FACS buffer and gently inverting tubes three times. Cells were centrifuged at 1000 RPM for 10 min, supernatant was carefully aspirated, and the cells were resuspended in 100 µl FACS buffer. Flow cytometry analysis was performed on a FACSAria II (BD Biosciences) and analyzed with FACSDiva software (BD Biosciences, RRID:SCR_016722), version 6.1.3. PI (250 ng/ml) was added to cells just before analysis. FACS data was imported into FlowJo software (Tree Star, Inc, RRID:SCR_008520), version 10, after which the scaled compensated values were exported as csv files. These values were then imported into Python 2.7 to perform rectangular gating. Cells were first gated using the forward scatter and propidium-iodide channels (i.e. cells negative for propidium-iodide were retained). Cells were subsequently gated for positive TOP-GFP expression. After this, cells below the 10th percentile and above the 90th percentile of TOP-GFP expression were compared. Gating strategy was described in the Registered Report with additional details available at https://osf.io/8c43g/ and a representative example depicted in Figure 1—figure supplement 1.
 
-## Conditioned medium
+### Conditioned medium
 
 7.5 × 105 18 Co cells were seeded in a 75 cm2 flask and incubated overnight. The next day, cells were washed twice with PBS and incubated for 24 hr with 10 ml of CSC medium without EGF and FGF-basic. The next day the conditioned medium was collected and cleared by centrifugation for 5 min at 1400 RPM and used at 1:2 dilution in CSC medium for the assays described below. The level of HGF present in MFCM was determined by ELISA (Sigma-Aldrich, cat# RAB0212) according to manufacturer’s instructions with a standard curve. Data are available at https://osf.io/fpj4u/.
 
-## Limiting-dilution assay
+### Limiting-dilution assay
 
 An initial pilot experiment was performed to assess the potential for the three populations (TOP-GFPlow (10% lowest), TOP-GFPhigh (10% highest), and TOP-GFPwhole (total)), without treatment, on the three TOP-GFP CSC cultures (Co100, CSC1, E450). Cells from the different populations were deposited at 1, 2, 4, 6, 8, 12, 16, 20, and 24 cells per well in the number of wells indicated in the Registered Report with additional details available at https://osf.io/ydfrg/. Cells were deposited with an Influx cell sorter and analyzed with FACS Sortware sorter software, version 1.2.0.142. Cells were incubated at 37°C in a humidified atmosphere at 5% CO2, with culture medium replaced every 4 days. After 14 days of culture, the number of cultures with spheres, and the number of cells per sphere were quantified using automated high-content fluorescence imaging for GFP-positive and Hoechst-positive cells using a CellInsight CX7 High-Content Screening (HCS) Platform and HCS Studio Cell Analysis software. Spheres composed of two or more cells were used to determine clonal frequency which was evaluated by ELDA from the statmod R package (Hu and Smyth, 2009), version 1.4.30. Raw data are available at https://osf.io/ctqu2/ with data aggregated in csv format (https://osf.io/ydejb/). Pilot results reported in Figure 2—figure supplement 1. Based on these results, it was decided that the cell titration would remain the same for the confirmatory experiment, and that the E450 culture would be used for the in vivo tumorigenicity assay. Cells from the indicated TOP-GFP population were deposited into 96-well ultralow-adhesion plates with 100 µl of either CSC medium (untreated), CSC medium with 25 ng/ml HGF (Sigma-Aldrich, cat# H5791, lot# MKBT3102V), CSC medium with MFCM (1:2 dilution in CSC medium), CSC medium with 25 ng/ml HGF and 500 nM PHA-665752 (Sigma-Aldrich, cat# PZ0147), CSC medium with MFCM and 500 nM PHA-665752, or CSC medium with 500 nM PHA-665752. Cells were deposited with a FACSAria III (BD Biosciences) and analyzed with FACSDiva software, version 8.0.1. Cells were incubated at 37°C in a humidified atmosphere at 5% CO2, with the appropriate culture medium replaced every 4 days. After 14 days of culture, the number of cultures with spheres, and the number of cells per sphere were blindly quantified using automated high-content fluorescence imaging for GFP-positive and Hoechst-positive cells as described for the pilot assay. Raw data are available at https://osf.io/qwgx4/ with data aggregated in csv format (https://osf.io/26zp5/). Clonal frequency and statistical significance was determined by ELDA (Hu and Smyth, 2009).
 
-## In vivo tumorigenicity assay
+### In vivo tumorigenicity assay
 
 All animal procedures were approved by the Explora BioLabs, Inc animal use committee (IACUC# SP17-009-005A) and were in accordance with Explora BioLabs, Inc policies on the care, welfare, and treatment of laboratory animals.
 
@@ -107,14 +344,14 @@ Nine-week old female Athymic Nude mice (Charles River, Strain code: 490, RRID:I
 
 Mice were injected, on Day 0, with TOP-GFP transduced cultures (E450 culture) at 10, 100, 1000, or 5000 cells from the 10% lowest or 10% highest TOP-GFP intensities that were deposited, by FACS (FACSAria II with FACSDiva software, version 6.1.3), in a 96-well ultralow-adhesion plate and resuspended in 100 µl of CSC medium or MFCM (generated as described above and in the Registered Report [Evans et al., 2015]) and incubated at 37°C for 2 hr. After this incubation, plates were shipped to the facility that performed the mouse injection/monitoring (~30 min) where the cells and medium (100 µl) were mixed with growth factor reduced Matrigel (Corning, cat# 356230) at a 1:1 ratio and injected subcutaneously into the right flank of the female mice using a sterile 25 G needle and 1 ml syringe as described in the Registered Report (Evans et al., 2015). Mice were monitored for tumor formation for nine weeks after injection, the indicated study endpoint in the Registered Report. To explore if the frequency changed, the mice were monitored an additional 2 weeks; however we did not observe any new tumor initiations. Tumor-initiating cell frequency was determined by ELDA (Hu and Smyth, 2009).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with R software (RRID:SCR_001905), version 3.5.1 (R Development Core Team, 2018). All data, csv files, and analysis scripts are available on the OSF (https://osf.io/pgjhx/). Confirmatory statistical analysis was pre-registered (https://osf.io/rscpj/) before the experimental work began as outlined in the Registered Report (Evans et al., 2015). Data were checked to ensure assumptions of statistical tests were met. The fitted models to determine the stem cell frequency for different groups were compared using likelihood ratio tests using the asymptotic chi-square approximation to the log-ratio (Hu and Smyth, 2009). When described in the results, the Bonferroni correction, to account for multiple testings, was applied to the alpha error or the p-value. The Bonferroni corrected value was determined by divided the uncorrected value (0.05) by the number of tests performed. The confidence intervals for the Cohen’s ω estimates were determined using a Fisher’s z’ transformation (Rosenthal and DiMatteo, 2001). A meta-analysis of a common original and replication effect size was performed with a random effects model and the metafor R package (Viechtbauer, 2010), version 2.0–0 (https://osf.io/g4ewk/). The original study data of the stem cell frequency and 95% CI pertaining to Figure 6D was extracted a priori from the published figure and used to create simulated data sets with preserved sampling structure using ELDA (Hu and Smyth, 2009) during preparation of the experimental design, while the original study data pertaining to Figure 7E was published in the original paper (Vermeulen et al., 2010). The C100.B5 line from the original study was used in the meta-analysis for the tumorigenicity assay, but not the C100.G7 line because an estimate for TOP-GFPlow could not be calculated (i.e. estimate was infinity because of no observable responses). The summary data was published in the Registered Report (Evans et al., 2015) and used in the power calculations to determine the sample sizes for this study.
 
-## Data availability
+### Data availability
 
 Additional detailed experimental notes, data, and analysis are available on OSF (RRID:SCR_003238) (https://osf.io/pgjhx/; Essex et al., 2019). This includes the R Markdown file (https://osf.io/d6qp8/) that was used to compose this manuscript, which is a reproducible document linking the results in the article directly to the data and code that produced them (Hartgerink, 2017). Flow cytometry data for this study has also been deposited at Flow Repository (RRID:SCR_013779; Spidlen et al., 2012), where it is directly accessible at https://flowrepository.org/id/FR-FCM-ZYUG.
 
-## Deviations from registered report
+### Deviations from registered report
 
 We planned to isolate two CSC spheroidal cultures from patient samples, but due to only obtaining a single viable spheroidal culture from the 12 different colon tissue fragments that were attempted, we obtained another culture commercially that was also derived from primary human colorectal tumor tissue. The Registered Report indicated we would perform the flow cytometry analysis and clonogenicity assay on three different single-cell TOP-GFP clones from each of the three cultures, while the results reported in this study are from one random single-cell TOP-GFP clone from each culture. This was due to the CSC1 culture only producing one viable clone as stated in the ‘Lentiviral infection’ section above. We also did not perform the statistical analysis listed in Protocol 2 for the cell surface markers since the observed variation was from the same population of cells. Additional materials and instrumentation not listed in the Registered Report, but needed during experimentation are also listed.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31543.001 Down syndrome, the leading genetic cause of intellectual disability, results from an extra-copy of chromosome 21. Mice engineered to model this aneuploidy exhibit Down syndrome-like memory deficits in spatial and contextual tasks. While abnormal neuronal function has been identified in these models, most studies have relied on in vitro measures. Here, using in vivo recording in the Dp(16)1Yey model, we find alterations in the organization of spiking of hippocampal CA1 pyramidal neurons, including deficits in the generation of complex spikes. These changes lead to poorer spatial coding during exploration and less coordinated activity during sharp-wave ripples, events involved in memory consolidation. Further, the density of CA1 inhibitory neurons expressing neuropeptide Y, a population key for the generation of pyramidal cell bursts, were significantly increased in Dp(16)1Yey mice. Our data refine the ‘over-suppression’ theory of Down syndrome pathophysiology and suggest specific neuronal subtypes involved in hippocampal dysfunction in these model mice.
+Down syndrome, the leading genetic cause of intellectual disability, results from an extra-copy of chromosome 21. Mice engineered to model this aneuploidy exhibit Down syndrome-like memory deficits in spatial and contextual tasks. While abnormal neuronal function has been identified in these models, most studies have relied on in vitro measures. Here, using in vivo recording in the Dp(16)1Yey model, we find alterations in the organization of spiking of hippocampal CA1 pyramidal neurons, including deficits in the generation of complex spikes. These changes lead to poorer spatial coding during exploration and less coordinated activity during sharp-wave ripples, events involved in memory consolidation. Further, the density of CA1 inhibitory neurons expressing neuropeptide Y, a population key for the generation of pyramidal cell bursts, were significantly increased in Dp(16)1Yey mice. Our data refine the ‘over-suppression’ theory of Down syndrome pathophysiology and suggest specific neuronal subtypes involved in hippocampal dysfunction in these model mice.
 
 ## Introduction
 
@@ -32,15 +32,27 @@ In vitro approaches have identified synaptic plasticity deficits in the hippocam
 
 ## Results
 
-## Decreased bursting and complex spiking and abnormal spatial encoding during exploration in the CA1 of Dp(16)1Yey mice
+### Decreased bursting and complex spiking and abnormal spatial encoding during exploration in the CA1 of Dp(16)1Yey mice
 
 In order to investigate hippocampal spatial coding Dp(16)1Yey (Dp16; N = 6) and wild-type littermate control (WT; N = 5) mice were implanted with recording electrodes in the dorsal CA1 pyramidal cell layer and allowed to explore a linear track (Figure 1A). We observed no difference between the groups in average velocity (Dp16: 4.17 ± 0.60 cm/s; WT: 4.57 ± 0.19 cm/s; p=0.542) or total distance traveled (Dp16: 4857.92 ± 424.04 cm; WT: 5695.24 ± 318.18 cm; p=0.128). We first compared local field potentials (LFP) recorded in CA1 while the mice were exploring and found no difference between the groups across all frequencies, including the theta (6–12 Hz) and gamma bands (30–100 Hz) prominent during exploratory behavior (Figure 1—figure supplement 2A). We then isolated and sorted single-unit activity from CA1 pyramidal cells and examined their spatially modulated firing (WT: n = 256; Dp16: n = 259). Place fields in Dp16 mice were more diffuse than those in their control littermates (Figure 1B). Quantitative analysis confirmed that in the DS mice the place fields were significantly larger (Figure 1C) and sparser (Firing rate map sparsity: WT: 0.319 ± 0.010; Dp(16)1Yey: 0.359 ± 0.011; p=0.0189), resulting in a significant decrease in the spatial information encoded by these neurons (Figure 1D). On a linear track hippocampal place cells exhibit directionality, a bias to fire more in one direction than the other. The ‘directionality index’ of pyramidal cells in Dp(16)1Yey samples was comparable to that of their WT littermates suggesting that this aspect of coding was conserved (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig1-v2.jpg)
+
+**Figure 1.:** (A) Example of tetrode positioning in the dorsal CA1 pyramidal cell layer of WT (upper) and Dp(16)1Yey (lower) mice. (B) Examples of color-coded firing rate maps of CA1 place cells during exploration of a 170 × 10 cm linear track. Red indicates peak firing rate in Hz (value for each cell indicated on the right of each map) while blue represents no firing. (C) Place field size was significantly larger in Dp(16)1Yey mice. (D) The spatial information content encoded per second by pyramidal cells was significantly lower in Dp(16)1Yey mice. (E) The firing rate directionality was comparable between the Dp(16)1Yey and WT groups. Pyramidal cells’ peak firing rate (F) was significantly lower in the Dp(16)1Yey group whereas their mean firing rate (G) remained comparable to the WT group. The firing rate within the place field (H) was significantly lower in Dp(16)1Yey mice, but this was not the case outside the place fields (I). The complex spiking index (J) was significantly decreased in the Dp(16)1Yey group. Statistical significance was assessed using Mann-Whitney U-test with significance set at (**) p<0.01 and (***) p<0.001. Scale bars in (A) correspond to 500 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Human chromosome 21 (HSA21) possesses a large region of synteny to the distal part of mouse chromosome 16 (MMU16), conserving gene content, order and relative orientation. The Dp(16)1Yey carries a tandem duplication for the entire region of synteny on MMU16 spanning from Lipi to Zfp295 (~98 known protein coding genes). This 22.4 Mb duplication was obtained by Cre-loxP mediated chromosomal engineering.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Power spectrum density (PSD) curves of CA1 local field potentials (LFP) during linear track exploration showed no significant differences between Dp(16)1Yey and WT mice, including in the theta (6–12 Hz), beta (15–30 Hz) and gamma bands (30–100 Hz). (B) The number of spikes plotted as a function of the phase of theta showed a similar pattern between WT and Dp(16)1Yey mice, peaking shortly after the trough of theta (black curve). (C) The preferred firing phase was calculated for significantly theta-modulated neuron during the exploration phase in the linear track and plotted in a circular histogram. No significant differences were observed between Dp(16)1Yey and WT groups, with a preferred phase of theta around 215–240° (0/360° set for theta peak, 180° for theta trough). (D) The von Mises κ parameter revealed no significant differences in the concentration of firings across the theta cycle between Dp(16)1Yey and WT. No group differences where observed in average pyramidal cell Kullback-Leibler divergence (E) and modulation index (F). Values are expressed as mean ±standard error of the mean. Statistical significance was assessed using ANOVA for repeated measures (A), circular ANOVA (B), Kuiper test (C) or Mann-Whitney U-test (D–F) with significance set at p<0.05.
 
 CA1 pyramidal cells from Dp16 animals had a significantly lower peak firing rate during exploration (Figure 1F) but an average firing rate comparable to control littermates (Figure 1G). On a finer level we observed that Dp16 place cells displayed a significantly lower in-field firing rate but fired normally outside of their place field (Figure 1H,I). Taken together, these results suggest that place cells in the DS mice may lack the ability to generate the normal burst patterns of firing seen when the animal navigates through the receptive field (Ranck, 1973; Quirk and Wilson, 1999). To investigate if the decrease in peak firing rate we observed reflected a loss of the ability to produce the complex spike bursts typical of pyramidal cells we compared the complex spike index (CSI; McHugh et al., 1996) between the groups and found it to be drastically lower in the Dp16 mice (Figure 1J).
 
 During movement the spiking of pyramidal cells is strongly modulated by the underlying theta oscillation (Siapas et al., 2005). We next asked if the changes in bursting seen in Dp16 mice impacted this aspect of spike timing. The proportion of significantly theta-modulated cells was not significantly different between Dp16 and control mice (WT: 121/256, 47.3%; Dp16: 115/259, 44.4%, Chi-square test p=0.514) and the firing probability of significantly theta-modulated CA1 place cells as a function of theta phase showed a highly similar pattern between the groups (Figure 1—figure supplement 2B). The preferred phase of theta (Figure 1—figure supplement 2C) and the concentration of the firing probability (Figure 1—figure supplement 2D; Siapas et al., 2005) were also similar between the groups. Further quantification of the LFP/single unit activity interaction revealed a similar degree of phase divergence (Kullback-Leibler divergence, Figure 1—figure supplement 2E) and an equivalent modulation index (Figure 1—figure supplement 2F; Gu et al., 2013). Overall, these results indicate that theta-modulation was unaltered in the Dp16 mice.
 
-## Alterations in the ensemble code for space in Dp(16)1Yey mice
+### Alterations in the ensemble code for space in Dp(16)1Yey mice
 
 The hippocampal code of space is best reflected in the coordinated activity across the population of neurons (Wilson and McNaughton, 1993). Thus, we next investigated the spatial representation at the ensemble level. For that purpose, we generated population vectors for all place cells recorded and computed autocorrelation matrices for control (Figure 2A) and Dp16 mice (Figure 2B). This strategy provides a visualization of the fine tuning of pyramidal cell activity for the representation of space at the population level (Resnik et al., 2012). Given the directional preference of single place cells, we separated left and right laps on the track and examined their auto and cross-correlations independently (Figure 2A and B). In the resulting matrices quadrants II and III correspond to the correlation of a population vector (quadrant II: left laps, quadrant III: right laps) with itself and hence, points along the diagonal reach maximal values, while points away from the diagonal correspond to the correlation between population activity at different positions, with increasing distance from the diagonal reflecting increasingly distant positions on the track. In both the control (Figure 2A) and Dp16 mice (Figure 2B) the correlation decreased rapidly as a function of distance from the diagonal. The averaged values of the correlation between population vectors as a function of distance confirmed this pattern, with no significant differences between the groups, except for largely distant population vectors for which the correlation was lower in the Dp16 animals (Figure 2C).
 
@@ -50,23 +62,160 @@ The hippocampal code of space is best reflected in the coordinated activity acro
 
 To assess absolute spatial coding, independent of the direction of movement, we compared the similarity of the population vectors for laps in opposite directions in the linear track (quadrants I and IV). Interestingly, whereas there was a clear diagonal band of structure obvious in the control data (Figure 2A), this was not present in the Dp16 data (Figure 2B). In control mice the averaged values of the correlation between population vectors as a function of distance showed a significant central peak, with the maximal value slightly shifted to the left (Figure 2D). These findings are similar to previous reports and this shift has been suggested to reflect prospective coding of future locations (Resnik et al., 2012). The Dp16 population vectors however failed to show this central peak and correlation values remained significantly lower than in WT mice, even for similar positions on the track. Taken together, these data suggest that while the direction dependent representation of position is not significantly altered in Dp(16)1Yey mice, the direction independent coding of position observed in control mice is greatly decreased.
 
-## Decreased bursting during memory consolidation in Dp(16)1Yey mice
+### Decreased bursting during memory consolidation in Dp(16)1Yey mice
 
 Following exploration of the linear track mice were placed in a familiar rest box for 30 min and CA1 pyramidal cell activity was recorded to investigate activity during the post-run phase. During this quiescent period the peak and average firing rate of CA1 pyramidal cells were not significantly different between Dp16 and WT mice (Figure 3A,B). However, similar to what we observed during exploration, the complex spiking index was significantly lower in the DS model mice, suggesting that the deficit in the generation of complex spikes could impact off-line memory consolidation (Figure 3C). Plotting the inter-spike interval (ISI) distribution of all spike trains from WT pyramidal cells revealed a clear narrow peak at short ISIs (~2 to 15 ms) and a second wide peak at longer ISIs (≥100 ms; Figure 3D). These populations correspond to ISIs resulting from bursts (including complex spikes) and those representing the time between bursts and/or single spikes respectively. In contrast, the ISI distribution of spike trains recorded from Dp16 pyramidal cells showed a reduction of the short ISI peak and a slight increase at longer ISIs (Figure 3D). Accordingly, the ISI mode, defined as the most frequent ISI for a given cell, was significantly longer in the Dp16 data compared to controls (Figure 3E). An increase in the ISI mode, which preferentially reflects the frequent short ISIs generate by bursts, without a significant change in the mean firing rate suggested that spikes generated by CA1 pyramidal cells in Dp16 mice were sparser and less likely to be involved in bursts. Overall, these data indicate that in Dp(16)1Yey mice the ability of pyramidal cells to fire bursts of spikes is impaired.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig3-v2.jpg)
 
-**Figure 3.:** During post-exploratory quiescent periods the peak firing rate (A) and mean firing rate (B) were not significantly different between the WT and Dp(16)1Yey groups. (C) The complex spiking index was significantly decreased in Dp(16)1Yey CA1 pyramidal cells. (D) The ISI distribution shows two populations of events in CA1 pyramidal cells from WT mice. The peak of events with an ISI between 2 and 15 ms correspond to spikes included in complex bursts. The second large population of events with higher ISI represents single isolated spikes. In the Dp(16)1Yey the peak of short ISI events was smaller than in WT, whereas the population of isolated single spikes tended to be larger. (E) The inter-spike interval (ISI) mode, defined as the most probable inter-spike interval for each recorded neuron, was significantly longer in the Dp(16)1Yey group than in their WT littermates. Statistical significance was assessed using Mann-Whitney U-test with significance set at (***) p<0.001.10.7554/eLife.31543.008Figure 3—source data 1.
+**Figure 3.:** During post-exploratory quiescent periods the peak firing rate (A) and mean firing rate (B) were not significantly different between the WT and Dp(16)1Yey groups. (C) The complex spiking index was significantly decreased in Dp(16)1Yey CA1 pyramidal cells. (D) The ISI distribution shows two populations of events in CA1 pyramidal cells from WT mice. The peak of events with an ISI between 2 and 15 ms correspond to spikes included in complex bursts. The second large population of events with higher ISI represents single isolated spikes. In the Dp(16)1Yey the peak of short ISI events was smaller than in WT, whereas the population of isolated single spikes tended to be larger. (E) The inter-spike interval (ISI) mode, defined as the most probable inter-spike interval for each recorded neuron, was significantly longer in the Dp(16)1Yey group than in their WT littermates. Statistical significance was assessed using Mann-Whitney U-test with significance set at (***) p<0.001.
 
 For a more detailed quantification we isolated bursts of spikes in both groups and examined their properties (Table 1). The number of bursts per minute was significantly decreased in the Dp16 group, whereas the mean inter-burst interval was significantly increased, both during exploration and rest. Average burst duration was significantly longer in DS mice during exploration, but this was not the case during rest. Moreover, the percentage of spikes participating in bursts, as well as the average number of spikes per burst, were significantly lower in Dp16 place cells, both during memory encoding and consolidation. These findings indicate that the decrease in complex spiking index observed is likely explained by an overall loss of firing during bursts on the single cell level, impacting both the encoding and consolidation of spatial information.
 
-## Sharp wave ripples properties are affected and place cells fire less during ripples in Dp(16)1Yey CA1
+**Table 1.**
+ Bursting characteristics of CA1 place cells during exploration and rest.Table 1—source data 1.CA1 bursting analysis - full data set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="8">Linear track</th>
+      <th colspan="8">Rest</th>
+    </tr>
+    <tr>
+      <th colspan="3">WT</th>
+      <th colspan="3">Dp16</th>
+      <th></th>
+      <th>p-value</th>
+      <th colspan="3">WT</th>
+      <th colspan="3">Dp16</th>
+      <th></th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bursts per min</td>
+      <td>7.901</td>
+      <td>±</td>
+      <td>0.532</td>
+      <td>5.777</td>
+      <td>±</td>
+      <td>0.383</td>
+      <td>***</td>
+      <td>0.0007</td>
+      <td>7.152</td>
+      <td>±</td>
+      <td>0.685</td>
+      <td>5.741</td>
+      <td>±</td>
+      <td>0.468</td>
+      <td>*</td>
+      <td>0.0315</td>
+    </tr>
+    <tr>
+      <td>Mean Inter-burst Interval (s)</td>
+      <td>18.940</td>
+      <td>±</td>
+      <td>1.692</td>
+      <td>25.145</td>
+      <td>±</td>
+      <td>1.907</td>
+      <td>***</td>
+      <td>0.0002</td>
+      <td>30.061</td>
+      <td>±</td>
+      <td>2.141</td>
+      <td>56.144</td>
+      <td>±</td>
+      <td>6.640</td>
+      <td>*</td>
+      <td>0.0320</td>
+    </tr>
+    <tr>
+      <td>Mean burst duration (ms)</td>
+      <td>7.720</td>
+      <td>±</td>
+      <td>0.186</td>
+      <td>8.435</td>
+      <td>±</td>
+      <td>0.318</td>
+      <td>***</td>
+      <td>2.67E-07</td>
+      <td>12.718</td>
+      <td>±</td>
+      <td>4.251</td>
+      <td>8.281</td>
+      <td>±</td>
+      <td>0.072</td>
+      <td></td>
+      <td>0.1305</td>
+    </tr>
+    <tr>
+      <td>% of spikes in burst</td>
+      <td>33.1%</td>
+      <td>±</td>
+      <td>0.8%</td>
+      <td>24.4%</td>
+      <td>±</td>
+      <td>0.7%</td>
+      <td>***</td>
+      <td>2.17E-13</td>
+      <td>29.7%</td>
+      <td>±</td>
+      <td>0.8%</td>
+      <td>22.3%</td>
+      <td>±</td>
+      <td>0.7%</td>
+      <td>***</td>
+      <td>9.58E-12</td>
+    </tr>
+    <tr>
+      <td>Nb. Spikes per burst</td>
+      <td>2.264</td>
+      <td>±</td>
+      <td>0.008</td>
+      <td>2.243</td>
+      <td>±</td>
+      <td>0.009</td>
+      <td>*</td>
+      <td>0.0110</td>
+      <td>2.374</td>
+      <td>±</td>
+      <td>0.010</td>
+      <td>2.264</td>
+      <td>±</td>
+      <td>0.009</td>
+      <td>***</td>
+      <td>1.59E-14</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sharp wave ripples properties are affected and place cells fire less during ripples in Dp(16)1Yey CA1
 
 The decrease in bursting during rest in Dp16 mice (Figure 3C) suggests possible alterations in temporal coding, so we next analyzed LFP traces during the post-exploratory rest period to assess if population synchronicity was also affected. During sleep and quiet wakefulness the CA1 LFP is defined by frequent SWR events, fast oscillations of about 100 ms that reflect the synchronous activity of large population of pyramidal cells (Buzsáki, 2015; Cutsuridis and Taxidis, 2013). We detected ripple events in the LFP and compared their characteristics across the groups (Figure 4A). The number of ripples per minute and mean inter-ripple intervals were not significantly different between Dp16 and WT mice (Figure 4B,C). Although there was a slight shift in the population distribution towards lower intrinsic frequencies in the DS mice (Figure 4—figure supplement 1), we found no significant difference in the peak ripple frequency (Figure 4D). However ripples in the Dp16 mice were significantly smaller in amplitude (Figure 4E) and shorter in duration than those found in controls (Figure 4F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig4-v2.jpg)
+
+**Figure 4.:** (A) Examples of local field potentials (LFP), non-filtered (upper traces) or filtered for the ripple frequency range (lower traces). The occurrence of ripple events (B), the inter-ripple interval (C) and the peak ripple frequency (D) were not significantly different between Dp(16)1Yey and WT mice. Ripple amplitude (E) and duration (F) were significantly decreased in the LFPs of Dp(16)1Yey mice. The number of spikes per cell per ripple (G) and the participation of individual cells in ripple events (H) were significantly lower in CA1 pyramidal cells of Dp16 mice. (I) The proportion of cells plotted as a function of their participation rate in sharp-wave ripples showed a significant shift toward lower participation rates, with Dp(16)1Yey pyramidal cells peaking at 5–10% participation whereas the peak was at 10–15% in the WT group. Each marker in (B) thru (F) represents average value from all events in an individual mouse. The origin of the Y-axis in D, E and F was set at the threshold used for ripple detection. Statistical significance was assessed using one-way ANOVA (B–F) or Mann-Whitney U-test (G, H) with significance set at (*) p<0.05 and (**) p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The population distribution of sharp wave ripples was plotted according to their intrinsic peak frequency for all WT (blue; N = 5, n = 4541 ripples) and Dp(16)1Yey (red; N = 6, n = 6034 ripples) mice. A mild shift toward events of lower frequencies was observed in Dp(16)1Yey mice, but this did not reach the level of significance (Kolmogorov-Smirnov test for normality: p=0.6403, k = 0.1714).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Compared to the standard detection threshold (commonly placed at 3 SD), using a more permissive threshold (2 SD) led to a larger number of ripples detected in both WT and Dp16 mice. The frequency of occurrence of ripple events was significantly higher in Dp16 than their WT littermates. On the contrary, using a more restrictive threshold (6 SD) decreased the amount of ripples detected in both genotypes to similar low levels. (B) The number of spikes per cell per ripple and the participation of individual cells in ripple events were significantly lower in CA1 pyramidal cells of Dp16 mice even when ripple events were detected using a more permissive threshold (2 SD). A similar effect was seen using a more restrictive threshold (6 SD), even though the decrease in participation rate in Dp16 mice did not reach the significance level. Using either the more restrictive or more permissive threshold for the detection of ripples, the proportion of cells plotted as a function of their participation rate in sharp-wave ripples confirmed a significant shift toward lower participation rates in Dp16 mice. Statistical significance was assessed using one-way ANOVA (A) or Mann-Whitney U-test and chi square text (B) with significance set at (*) p<0.05, (**) p<0.01 and (***) p<0.001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Onset and offset of ripple events were detected using the underlying multiunit activity in order to prevent a bias eventually caused by the amplitude of these events in Dp16 mice. The number of ripples per minute (A), inter-ripple interval (B) and peak power spectrum density frequency of ripple events were not significantly different between Dp16 and WT littermates. Their amplitude (D) and duration (E) were however significantly decreased in the Dp16 group. The number of spikes per ripple (F) and participation in ripple events (G) were significantly lower in Dp16 mice. (H) The proportion of cells plotted as a function of their participation rate in sharp-wave ripples showed a significant shift toward lower participation rates, with Dp(16)1Yey pyramidal cells peaking at 5–10% participation whereas the peak was at 10–15% in the WT group. Each marker in (A) thru (E) represents average value from all events in an individual mouse. Statistical significance was assessed using one-way ANOVA (A–E) or Mann-Whitney U-test (F, G) with significance set at (*) p<0.05 and (**) p<0.01 and (***) p<0.001.
+
 Given the changes in pyramidal neuron bursting and SWR amplitude and duration we asked if this altered the firing of single cells during SWRs. The average number of spikes per cell per ripple was slightly, yet significantly, lower in Dp16 mice (Figure 4G) and pyramidal cells participated in a significantly lower proportion of ripple events (Figure 4H). Further, plotting the populations of cells according to their ripple participation rates illustrated a significant shift toward lower values in the DS model, with a peak at 5–10% in the Dp16 mice compared to a peak at 10–15% in the WT group (Figure 4I). These changes in single unit activity were unrelated to the decrease in ripple amplitude in the Dp16 mice, as we found significant decreases in ripple-related spiking and event participation across a wide range of ripple detection thresholds (Figure 4—figure supplement 2A,B). To further confirm that these changes were not attributable simple to the smaller amplitude of ripples in the Dp16 group we also detected the onset and offset of the events using only multiunit spiking activity and again observed a significant decrease in ripple amplitude, duration, number of spikes and participation in ripple events (Figure 4—figure supplement 3).
 
-## Density of neuropeptide Y expressing interneurons is increased in the CA1 of Dp(16)1Yey mice
+### Density of neuropeptide Y expressing interneurons is increased in the CA1 of Dp(16)1Yey mice
 
 The complex spiking of pyramidal cells and their synchronized activity during population events are under tight control of local inhibitory circuits within CA1 (Milstein et al., 2015; Royer et al., 2012; Cutsuridis and Taxidis, 2013). To address if alterations in this complex network in Dp(16)1Yey mice could underlie the changes in in vivo physiology we observed we used immunohistochemistry to quantify the main populations of interneurons in the different layers of the CA1, employing the molecular markers parvalbumin (PV), somatostatin (SST) and neuropeptide Y (NPY) to differentiate among classes of interneurons.
 
@@ -74,7 +223,7 @@ Populations of NPY positive interneurons (Figure 5A) were observed in the stratu
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31543/elife-31543-fig5-v2.jpg)
 
-**Figure 5.:** (A) Anti-neuropeptide Y (NPY), anti-parvalbumin (PV) and anti-somatostatin (SST) immunochemistry allow the visualization of specific populations of interneurons within the stratum oriens (SO), stratum pyramidale (SP), stratum radiatum (SR) and stratum lacunosum moleculare (SLM) of the CA1 area of hippocampus. (B) The density of NPY positive cells was significantly increased in the SR and SLM of Dp(16)1Yey mice. (C) The density of PV positive neurons was significantly decreased in the SO of Dp(16)1Yey mice, but remained comparable to WT in the SP where the majority of the PV positive cells are found. (D) The density of SST positive neurons was not significantly different between Dp(16)1Yey and WT samples in all four layers of the CA1. Values are expressed as mean ±standard error of the mean. Statistical significance was assessed using Mann-Whitney U-test (B–D) with significance set at (*) p<0.05 and (**) p<0.01. Scale bars in (A) correspond to 50 μm.10.7554/eLife.31543.017Figure 5—source data 1.
+**Figure 5.:** (A) Anti-neuropeptide Y (NPY), anti-parvalbumin (PV) and anti-somatostatin (SST) immunochemistry allow the visualization of specific populations of interneurons within the stratum oriens (SO), stratum pyramidale (SP), stratum radiatum (SR) and stratum lacunosum moleculare (SLM) of the CA1 area of hippocampus. (B) The density of NPY positive cells was significantly increased in the SR and SLM of Dp(16)1Yey mice. (C) The density of PV positive neurons was significantly decreased in the SO of Dp(16)1Yey mice, but remained comparable to WT in the SP where the majority of the PV positive cells are found. (D) The density of SST positive neurons was not significantly different between Dp(16)1Yey and WT samples in all four layers of the CA1. Values are expressed as mean ±standard error of the mean. Statistical significance was assessed using Mann-Whitney U-test (B–D) with significance set at (*) p<0.05 and (**) p<0.01. Scale bars in (A) correspond to 50 μm.
 
 ## Discussion
 
@@ -98,50 +247,144 @@ In conclusion, we identified a deficit in the ability of pyramidal cells to gene
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (mouse, males)</td>
+      <td>‘Dp(16)1Yey’; ‘Dp16’</td>
+      <td>Jackson Laboratory</td>
+      <td>‘Stock number: 013530’; ‘RRID:MGI:5690055’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PCP4 rabbit polyclonal IgG</td>
+      <td>Santa-Cruz</td>
+      <td>‘sc-74816’; ‘RRID:AB_2236566’</td>
+      <td>1:200 dilution; frozen sections</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NPY</td>
+      <td>Cell Signaling Technology</td>
+      <td>‘#11976’; ‘RRID:AB_2716286’</td>
+      <td>1:400 dilution; frozen sections</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SST-14</td>
+      <td>Peninsula Laboratories</td>
+      <td>‘T-4103’; ‘RRID:AB_518614’</td>
+      <td>1:500 dilution; frozen sections</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PV</td>
+      <td>Calbiochem</td>
+      <td>‘PC255L’; ‘RRID:AB_2173906’</td>
+      <td>1:1000 dilution; frozen sections</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>biotinylated goat anti-rabbit IgG antibody</td>
+      <td>Vector Laboratories</td>
+      <td>‘BA-1000’; ‘RRID:AB_2313606’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RetrievagenA</td>
+      <td>BD Biosciences</td>
+      <td>#550524</td>
+      <td>antigen retireval reagent</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Avidin/Biotin blocking kit</td>
+      <td>Vector Laboratories</td>
+      <td>SP-2001</td>
+      <td>blocking reagent</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>VECTASTAIN Elite ABC kit</td>
+      <td>Vector Laboratories</td>
+      <td>PK-6100</td>
+      <td>signal amplification kit</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>NovaRed substrate kit</td>
+      <td>Vector Laboratories</td>
+      <td>SK-4800</td>
+      <td>revelation kit</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>‘Avertin ‘; ‘2, 2, 2-tribromoethanol’</td>
+      <td>Sigma-Aldrich</td>
+      <td>T48402</td>
+      <td>anaesthetic</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 All procedures were approved by the RIKEN Animal Care and Use Committee (project approval numbers H29-2-218(2) and # H29-2-224(3)). The Dp(16)1Yey mouse line was obtained from Jackson Laboratory (www.jax.org, Stock number 013530; RRID:MGI:5690055) and maintained by crossing carrier males with C57BL/6J females. Six Dp(16)1Yey and five WT littermate male mice aged 4 months were used in this study. All mice were group housed by 2 to 5 in ventilated racks with a 12 hr light/dark cycle and ad libitum access to food and water. They were single housed after stereotaxic surgical implantation of microdrives.
 
-## Surgery, recording and histology
+### Surgery, recording and histology
 
 Animals were anesthetized using Avertin (2, 2, 2-tribromoethanol; Sigma-Aldrich, 476 mg/kg, i.p.) and implanted with a custom microdrives (manufactured with the assistance of the Advanced Manufacturing Support Team, RIKEN Center for Advanced Photonics, Japan) targeting the dorsal hippocampus (1.6 mm posterior and 1.2 mm right-lateral coordinates from bregma). Microdrives consisted of eight independently adjustable nichrome tetrodes (14 μm) arranged in two rows of 4 and gold plated to reach an impedance of 200 to 250 kΩ. Stainless steel screws placed on the cerebellum were used as ground and two extra tetrodes placed in the corpus callosum were used as references. Tetrodes were then slowly lowered over the course of several days to reach CA1 stratum pyramidale, identified by the presence of sharp wave ripples and large amplitude spikes. During this adjustment period, mice were kept in a small circular sleep/rest box (15 cm diameter). Tetrodes were then finely adjusted daily to maximize cell yield before recording. Recordings consisted of 10 laps of exploration on a linear track (170 × 10 cm with 15 cm high plastic walls) bracketed by 30 min pre- and post-exploratory rest/sleep sessions in the familiar circular rest box. Mice were trained for three consecutive days and data recorded on the third day were used for all analyses. Data were acquired using a 32-channel Digital Lynx4S system using Cheetah v5.6.0 acquisition software (Neuralynx). Signals were sampled at 32556 Hz and spike waveforms filtered between 0.6–6 kHz. Position and head direction were concurrently tracked using a pair of red/green light emitting diodes affixed to the microdrive.
 
 At the end of the third recording session, mice were given a lethal dose of Avertin and tetrodes position was marked by electrolytic lesion (50 μA input for ~8 s to each tetrode individually). After transcardial perfusion with 0.9% NaCL/5 mM EGTA followed by 4% paraformaldehyde, brains were collected, post-fixed for 48 hr and embedded in 15% sucrose – 50% OCT. Frozen coronal sections (30 μm) were prepared and labeled by immunohistochemistry using an antibody targeting PCP4, a marker for CA2, to determine the borders of the CA1 area. Sections were incubated in RetrievagenA (#550524, BD Biosciences) and blocked using Avidin/Biotin blocking kit (SP-2001, Vector Laboratories). Sections were then incubated with anti-PCP4 rabbit polyclonal IgG (1:200, Santa-Cruz sc-74816, Santa-Cruz; RRID:AB_2236566) and revealed using biotinylated goat anti-rabbit IgG antibody (1:250, Vector BA-1000, Vector Laboratories; RRID:AB_2313606) followed by ‘VECTASTAIN Elite ABC’ (PK-6100, Vector Laboratories) and NovaRed substrate kits (SK-4800, Vector Laboratories). Images revealing the positions of the electrodes were acquired using a BZ-X710 light microscope (Keyence).
 
-## Data processing and analyses
+### Data processing and analyses
 
-## Data processing and unit isolation
+#### Data processing and unit isolation
 
 Data files from each dataset were split by manually recorded trial timestamps using EventSessionSplitter software (Neuralynx). Artifacts in the animal’s positional values caused by the obscuring of diodes were removed using a custom written algorithm and the positional data was smoothed with a Gaussian kernel of 0.05 standard deviation (SD) width. Single units were isolated manually, in SpikeSort3D software (Neuralynx), by drawing cluster boundaries around the 3D projection of the spike features. The boundaries were tracked across same-day recording trials to ensure cluster stability. Clusters that had greater than 0.5% of their spikes violate a minimum 2 ms inter-spike interval (ISI), fire less than 50 spikes or display an isolation distance measure (Schmitzer-Torbert et al., 2005) <10 were excluded from further analyses. Remaining units were classified as pyramidal cells if their average spike width was >200 µS and had a complex spike index ≥5, (CSI; McHugh et al., 1996). Animal velocity was calculated based on recorded position values and corresponding timestamps and then smoothed with a 2.5 SD Gaussian kernel. All subsequent analyses were performed in MATLAB (MathWorks), using custom written scripts.
 
-## Single unit and place field properties
+#### Single unit and place field properties
 
 Firing rate maps were calculated by dividing the number of spikes falling into each 1 cm x 1 cm spatial bin by the total occupancy time of that bin and were subsequently smoothed with a 1 SD Gaussian kernel; unvisited bins and time periods when animal’s velocity was below 2 cm/sec were excluded. For a subset of analyses such as ‘directionality index’ and ‘population vectors’ a ‘firing rate curve’ i.e. a directionally-sensitive 1D representation of a ‘firing rate map’ was used. For the ‘firing rate curve’ calculation we first detect ‘laps’ – time periods when mouse was running along the track by using custom detection algorithm (Polygalov, 2017). The quality of lap detection was controlled visually. The left firing curve was defined then as total number of spikes fired across all left laps within each spatial bin divided by total time mouse spent in that spatial bin. The right firing curve was calculated similarly. Peak firing rate was defined as the rate in the spatial bin containing the maximal firing rate value within each rate map. Mean firing rate was calculated by dividing the number of spikes which occurred within periods when velocity exceed 2 cm/sec by that period’s duration and followed averaging of these values. A place field was defined as a set of contiguous spatial bins surrounding the bin where the maximal firing rate was observed. In-field mean firing rate was the total number of spikes emitted by the cell while the mouse was in the place field with the highest peak firing rate (main place field of that cell) divided by the total time spent by the mouse in this field. Out-field mean firing rate was the number of spikes emitted by the cell in all spatial bins outside of the main field of that cell divided by the total time spent by the mouse outside of the main place field. Place cells were required to have a minimum field size equivalent to six bins (1 cm x 1 cm bin size), a mean firing rate >0.2 Hz, a peak firing rate >1.0 Hz and a positive signal to noise ratio (SNR, Resnik et al., 2012). Place field size was defined as the number of spatial bins where place cell field firing exceeded 20% of the peak firing rate. Rate map sparsity was computed as previously described (Resnik et al., 2012). Firing rate map ‘sparsity’ is a number ranging from 0 to 1, were 0 correspond to a firing rate map which consists of equal firing rate values in every visited spatial bin. Firing rate map with sparsity value one corresponds to the case when all the spikes generated by any given cell were fit in a single spatial bin. The directionality index (DI) was calculated for the subset of place cells with their main field located in the middle 80% of the track. DI was defined as the absolute value of ((FR_lm - FR_rm)/(FR_lm + FR_rm)) where FR_lm is the mean firing rate across all left laps of a given trial and FR_rm is the mean firing rate across all right laps of a given trial. Spatial Information (bits per second) was calculated as previously reported (Skaggs et al., 1992).
 
-## Complex spike index and burst analysis
+#### Complex spike index and burst analysis
 
 The Complex Spike Index (CSI) is defined as CSI = 100 * (pos - neg), where ‘pos’ is the number of inter-spike intervals positively contributing to the CSI, that is, preceding spikes with larger amplitudes and following spikes with smaller amplitudes (complex bursts) occurring within 3 ms (refractory period) and 15 ms (maximum inter-spike interval defining a burst); ‘neg’ is the number of inter-spike intervals that contribute negatively to CSI, i.e. violating either or both these rules. A burst was defined as least two spikes occurring within a 10 ms time bin and all burst detection and analyses were performed using Matlab code previously described (Bakkum et al., 2013).
 
-## Population vector analysis
+#### Population vector analysis
 
 Population vector (PV) was defined as a set of firing rate values generated by all place cells from all mice within each group and corresponding to each particular spatial bin of the linear track. Left and right laps were treated separately. Note that for this analysis all place cells (including cells with place field at the ends of the track) were used. For auto- and cross-correlation of PVs a Spearman correlation coefficient was used.
 
-## Local field potential (LFP) analysis
+#### Local field potential (LFP) analysis
 
 The raw LFP data were downsampled using custom software written in C to 1627.8 Hz (a factor of 20), followed by quality control measure and channel selection via visual inspection. A low-pass filter with a cut-off frequency equal to half the target sampling frequency was applied to the LFP prior to downsampling to prevent signal distortion.
 
 Power Spectral Density (PSD) during exploratory behavior was calculated by using Welch's averaged modified periodogram method (pwelch function in Matlab) with 2048 samples window size (1.26 s), 50% overlap and 4096 FFT points (2.52 s) resulting a time-varying spectrogram. A PSD curves corresponding to time bins when animal’s velocity was above 2 cm/sec were averaged yielding single PSD curve for each behavioral trial. In order to account for power fluctuations caused by difference in position/impedance of the electrodes and make PSD values comparable across mice we normalize each PSD curve by its own mean power within delta (1–3 Hz) band.
 
-## Ripple detection
+#### Ripple detection
 
 Ripple events were detected using modifications to methods described previously (Csicsvari et al., 1999). Wide band LFP were band-pass filtered between 80 and 250 Hz using 69 orders Kaiser-window FIR zero-phase shift filter. The absolute value of Hilbert transform was then smoothed with 50 ms Gaussian window and candidate ripple events were detected as periods where magnitude exceeded 3SD above the mean for >30 ms. Of the events, the initiation and termination periods were defined as periods when the magnitude returned to the mean. Summed multi-unit activity (MUA) across all neurons was converted to instantaneous firing rate and smoothed, to allow detection of firing bursts using the same thresholds as described for LFP. Candidate ripple events not coincident with MUA bursts were excluded from subsequent analysis. For cleaner detection of ripple frequency for each ripple, a multitaper method was performed on the product of each filtered ripple waveform and a Hanning window of the same length.
 
 To control for the impact of the significant decrease in normal ripple amplitude observed in the Dp16 mice on the quantification of ripple-related pyramidal cell spiking ripple we adjusted the threshold and repeated the ripple detection algorithm detection. At both a more permissive (2 SD) and a more restrictive (6 SD) threshold, the changes in spiking were observed (see Figure 4—figure supplement 2).
 
-## Theta modulation of pyramidal cells
+#### Theta modulation of pyramidal cells
 
 The phase relationship between spikes and theta LFP was calculated as previously described (Siapas et al., 2005). Briefly, LFP traces were band-pass filtered in the theta band (6–12 Hz). Instantaneous theta phase was derived from the Hilbert-transformed theta filtered signal. Peaks and troughs were assigned 0 and 180 degree phases respectively, with spike phase calculated using interpolation, a method not sensitive to theta wave asymmetry. The resultant phases were converted to firing probability histograms (10 degree bin size), only when velocity exceeded 6 cm/sec. Significance of the phase locking, preferred firing phase, strength of modulation and statistical comparison of phase values were calculated using functions from Circular Statistics Toolbox (Berens, 2009).
 
-## Immunohistochemistry for interneuron quantification
+### Immunohistochemistry for interneuron quantification
 
 Brains from adult mice (3.5 to 4 months old) were collected and fixed in 4% PFA. Equivalent frozen sections (30 µm thickness) from Dp(16)1Yey (N = 4) and their WT littermates (N = 4) were selected according to common landmarks at positions equivalent to the regions targeted in the in vivo electrophysiology recording experiments (Paxinos and Franklin, 2001). Sections were incubated in citrate-EDTA buffer (10 mM citrate, 1 mM EDTA; 80°C for 20 min) and blocked using Avidin/Biotin blocking kit (SP-2001, Vector Laboratories). Sections were then incubated with anti-NPY (1:400, #11976, Cell Signaling Technology; RRID:AB_2716286), anti-SST-14 (1:500, T-4103, Peninsula Laboratories; RRID:AB_518614) or anti-PV (1:1 000, PC255L, Calbiochem; RRID:AB_2173906) and revealed using biotinylated goat anti-rabbit IgG antibody (1:250, Vector BA-1000, Vector Laboratories; RRID:AB_2313606) followed by ‘VECTASTAIN Elite ABC’ (PK-6100, Vector Laboratories) and NovaRed substrate kits (SK-4800, Vector Laboratories). Images were acquired using a BZ-X710 light microscope (Keyence) and processed using NIH ImageJ software for particle counting and area calculation. A total of six hippocampal images were counted for each animal in a blinded manner.

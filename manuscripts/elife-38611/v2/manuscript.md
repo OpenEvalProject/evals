@@ -22,13 +22,23 @@
 
 ## Abstract
 
-10.7554/eLife.38611.001 Plants produce many different specialized (secondary) metabolites that function in solving ecological challenges; few are known to function in growth or other primary processes. 17-Hydroxygeranylinalool diterpene glycosides (DTGs) are abundant herbivory-induced, structurally diverse and commonly malonylated defense metabolites in Nicotiana attenuata plants. By identifying and silencing a malonyltransferase, NaMaT1, involved in DTG malonylation, we found that DTG malonylation percentages are normally remarkably uniform, but when disrupted, result in DTG-dependent reduced floral style lengths, which in turn result from reduced stylar cell sizes, IAA contents, and YUC activity; phenotypes that could be restored by IAA supplementation or by silencing the DTG pathway. Moreover, the Nicotiana genus-specific JA-deficient short-style phenotype also results from alterations in DTG malonylation patterns. Decorations of plant specialized metabolites can be tuned to remarkably uniform levels, and this regulation plays a central but poorly understood role in controlling the development of specific plant parts, such as floral styles.
+Plants produce many different specialized (secondary) metabolites that function in solving ecological challenges; few are known to function in growth or other primary processes. 17-Hydroxygeranylinalool diterpene glycosides (DTGs) are abundant herbivory-induced, structurally diverse and commonly malonylated defense metabolites in Nicotiana attenuata plants. By identifying and silencing a malonyltransferase, NaMaT1, involved in DTG malonylation, we found that DTG malonylation percentages are normally remarkably uniform, but when disrupted, result in DTG-dependent reduced floral style lengths, which in turn result from reduced stylar cell sizes, IAA contents, and YUC activity; phenotypes that could be restored by IAA supplementation or by silencing the DTG pathway. Moreover, the Nicotiana genus-specific JA-deficient short-style phenotype also results from alterations in DTG malonylation patterns. Decorations of plant specialized metabolites can be tuned to remarkably uniform levels, and this regulation plays a central but poorly understood role in controlling the development of specific plant parts, such as floral styles.
 
 ## Introduction
 
 Malonylation is a ubiquitous modification of proteins and specialized metabolites. In plant specialized metabolism, the malonyl group is largely transferred from malonyl-coenzyme A (Malonyl-CoA) to the C’6 of the glycosyl moiety of glucoconjugates (Taguchi et al., 2005). The malonyl residue is thought to confer structural diversity, stability, and solubility to the decorated metabolites and provide a means of detoxifying xenobiotics (Suzuki et al., 2002; Taguchi et al., 2005; Koirala et al., 2014; Suzuki et al., 2004). Malonylation of anthocyanins enhances pigment stability and color intensity at the pH of the intracellular milieus (Suzuki et al., 2002). In addition, malonylated anthocyanins are preferentially transported to vacuoles in Arabidopsis thaliana (Zhao et al., 2011). The malonylation of glycosides is catalyzed by malonyltransferases, members of the biochemically versatile BAHD acyltransferase family (D'Auria, 2006). Although tens of malonyltransferases have been identified and functionally characterized in vitro (Luo et al., 2007; Manjasetty et al., 2012; Bontpart et al., 2015), their in vivo functions are largely unknown.
 
 17-hydroxygeranyllinalool diterpene glycosides (DTGs) are abundant (mg/g FW) secondary metabolites in green tissues of many solanaceous plants, including tobacco (Nicotiana spp.), pepper (Capsicum annuum) and wolfberry (Lycium chinense) (Jassbi et al., 2006; Lee et al., 2008; Heiling et al., 2010). DTGs consist of a 17-hydroxygeranyllinalool aglycone that is decorated at the C3 and C17 hydroxyl positions by glucose, which in turn is modified by glucose, rhamnose and malonyl moieties, in various combinations (Figure 1A and Figure 1—figure supplement 1). So far, 46 different DTGs (21 chemical formulas and several structural isomers) have been characterized in Nicotiana attenuata, an ecological model plant with a rich portfolio of specialized metabolites; however, the glycoside Lyciumoside IV and its malonylated products, Nicotianoside I and Nicotianoside II, constitute more than 80% of the DTG pool (Poreddy et al., 2015). In N. attenuata, DTGs function in resistance against the specialist herbivore, tobacco hornworm (Manduca sexta) (Lou and Baldwin, 2003; Jassbi et al., 2008; Heiling et al., 2010). The malonylated DTGs are particularly strongly induced by M. sexta feeding and jasmonate signaling (Heiling et al., 2010). The malonyl moieties of DTGs are lost from the DTGs soon after their ingestion by M. sexta larvae due to the alkaline environment of M. sexta oral secretions and midgut (Poreddy et al., 2015). This observation rules out a central role for malonylation of DTGs in antiherbivore defense, and suggests that other arenas need to be explored for potential functions mediated by this malonylation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structures of 17-DTGs and their malonylation options. R1 could be glucose, rhamnose or hydrogen. R2 could be rhamnose or hydrogen. NaMaT indicates malonyltransferase in N. attenuata. (B) Relative abundance (mean + SE; n = 5 – 6) of different malonylated DTGs in N. attenuata leaves, after herbivory elicitation by immediately applying M. sexta oral secretions to freshly created leaf puncture wounds (W + OS), in comparison to the same nodal positions of plants without any treatment (Con). Inset: Total DTG abundance in control and W + OS elicited leaves. (C) Total DTGs in different stages of floral development. The formula (D) describes how malonylation percentage was calculated. (E, F) Malonylation percentage (mean + SE; n = 5 – 6) of DTGs in leaves treated by W + OS (D) or different developmental flower stages (E). Asterisks indicate significant differences between controls and treatments (*p<0.05; ***p<0.001; Student’s t-tests). Different letters indicate significant differences among floral developmental stages (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Fourteen tissues were collected from 28- and 50-d-old N. attenuata plants for DTGs analysis. Different tissues are represented by the symbols in (A). Relative abundance of different malonylated DTGs, including core (B), monomalonylated (C), dimalonylated (D), trimalonylated (E), and total DTGs (F). Malonylation percentage (G) was calculated based on DTG abundance. CV in each histogram represents the coefficient of variation of different malonylated DTGs and malonylation percentage. Asterisk indicates CV of (G) is an outlier based on the 3X interquartile range.
 
 Specialized metabolites are primarily thought to function in mediating an organism’s ecological interactions, to help optimize Darwinian fitness. Many are produced in response to particular ecological interactions, such as those that are induced in response to specific attackers. However, many secondary metabolites have effects on growth and development which are more specific than those that might result from resource trade-offs between growth and putative defense metabolites (Züst and Agrawal, 2017). For example, the insect feeding-induced glucosinolate breakdown product, indole-3-carbinol, arrests growth by interacting with the auxin receptor Transport Inhibitor Response (TIR1) as an auxin antagonist (Katz et al., 2015). Arabidopsis glucosinolates are also thought to modulate plant biomass, flowering time and the circadian clock, and inhibit root growth (Kerwin et al., 2011; Jensen et al., 2015; Francisco et al., 2016; Malinovsky et al., 2017). Hyper-accumulation of flavonoids is associated with stunted growth and developmental abnormalities, which are assumed to result from effects on auxin transport (Franke et al., 2002; Bonawitz et al., 2014; Steenackers et al., 2017). With the exception of the glucosinolates and flavonoids, little is known about these potential ‘primary’ roles for other branches of specialized (also known as ‘secondary’) metabolism.
 
@@ -40,43 +50,99 @@ In this study, we discovered that the malonylation percentage of DTGs is remarka
 
 ## Results
 
-## DTG malonylation percentages show remarkable uniformity across herbivory elicitation, developmental stages and tissues
+### DTG malonylation percentages show remarkable uniformity across herbivory elicitation, developmental stages and tissues
 
 To easily describe and understand the malonylation of DTGs, N. attenuata DTGs were classified, based on how many malonyl moieties they contained, into four categories: core, monomalonylated, dimalonylated, and trimalonylated (Figure 1A and Figure 1—figure supplement 1). In addition, we used a formula to calculate DTG malonylation percentage in each sample, based on numbers of malonyl moieties in each compound (Figure 1D). As previously reported, the biosynthesis of DTGs, especially malonylated DTGs, is strongly induced by mimicking M. sexta larval feeding (Figure 1B, [Lou and Baldwin, 2003; Jassbi et al., 2008; Heiling et al., 2010]). Remarkably, although all types of malonylated DTGs increased after M. sexta elicitation, there was no difference in malonylation percentage between treatment and control. To further analyze DTG malonylation patterns over plant development, DTGs were analyzed in flower buds of different stages. Total DTGs decreased dramatically over flower development, whereas the malonylation percentage was very stable (Figure 1C and F). By mining previously published metabolite data sets from different plant tissues (Li et al., 2016), we found that although different malonylated DTGs are highly variable across different tissues, with coefficients of variation (CV) ranging from 64 to 107 (Figure 1—figure supplement 2B–F), the malonylation percentage was more uniform, with a CV of only 11: a significant outlier (Figure 1—figure supplement 2G).
 
-## NaMaT is responsible for DTG malonylation
+### NaMaT is responsible for DTG malonylation
 
 Manipulating gene(s) controlling the malonylation process is the most straightforward way to disentangle the function of DTG malonylation and its remarkably uniformity. To do this, N. attenuata malonyltransferase (MaT) genes that have high similarity with NtMaT1 (Taguchi et al., 2005), were used to conduct a phylogenetic analysis with functionally characterized MaTs (Figure 2A and Supplementary file 1). There are five putative MaTs aligned in the same clade with other MaTs of the Nicotiana genus. Among these MaTs, NIATv7_g22417 and NIATv7_g34586 shared the highest protein sequence identity with NtMaT1: 91.2% and 91.4%, respectively; followed by NIATv7_g13429, which shared 80.6% protein sequence identity with NtMaT1 (Figure 2—figure supplement 1). Protein sequence alignment showed that four of the candidate MaTs contained the two conserved BAHD enzyme motifs HXXXDG and DFGWG, but not NIATv7_g21823, which had only a HXXXDG motif near the protein’s center portion (Figure 2—figure supplement 1A). Notably, two putative MaTs, NIATv7_ g39356 and g21823, which share the highest identity with NtMaT1, also contained the flavonoid acyltransferase conserved motif, YFGNC (Figure 2—figure supplement 1A), indicating that these two MaTs are homologues of NtMaT1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig2-v2.jpg)
+
+**Figure 2.:** (A) Phylogenetic analysis of potential N. attenuata malonyltransferases (genes in red dotted box) and functionally characterized malonyltransferases in other species by amino acid sequence with accession number shown in Supplementary file 1. (B) Heatmap representing the expression of malonyltransferases and reported DTG biosynthetic genes in N. attenuata. LET, leaf treated (25 hr after wounding and elicitation with M. sexta oral secretions); LEC, leaf control; STT, stem treated; PED, pedicels; SNP, style without pollination; STO, style outcrossed; STS, style selfed; STI, stigma; COL, corolla late; OFL, opening flower; OVA, ovary; COE, corolla early; NEC, nectaries; ANT, anthers; ROT, root OS-elicited; FLB, flower bud. (C) Extracted ion chromatograms of m/z 271.2420, corresponding to the DTG aglycone, of in vitro assay products of recombinant malonyltransferases. Peaks 1, 2 and 3 were identified as Lyciumoside IV, Nicotianoside I and Nicotianoside II, respectively. (D) NaMaT1, NaMaT2 and NaMaT3 transcript counts (mean + SE; n = 3) were analyzed from RNAseq data of M. sexta-attacked leaves at indicated time points. Different letters indicate significant differences among treated time points (p<0.05, one ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The two conserved motifs of BAHD family members: HXXXDG (black rectangle), located near the protein center; and DFGWG (blue rectangle), located near the carboxyl terminus. Also shown is the flavonoid BAHD acyltransferase diagnostic motif YFGNC (red rectangle), which is not fully conserved in all BAHD members. (B) Protein similarity of these malonyltransferases.
 
 As gene co-expression network analysis is a powerful way to predict functions of unknown genes (Serin et al., 2016; Higashi and Saito, 2013), we performed a cluster analysis of N. attenuata MaTs with known DTG biosynthesis genes, using published multi-tissue and -treatment RNA-seq data (Brockmöller et al., 2017) (Supplementary file 2). Among the five putative NaMaTs, three were within the same clade as known DTG biosynthesis genes (Figure 2B). To determine whether any of these candidates were able to transfer the malonyl moiety from Malonyl-CoA to DTGs, we purified the most abundant core DTG, Lyciumoside IV (Poreddy et al., 2015), from N. attenuata leaves and performed in vitro enzyme activity assays using purified recombinant GST-tagged NaMaTs. Consistent with the expression patterns, the in vitro recombinant enzyme activity show that the same three genes: NaMaT1, NaMaT2 and NaMaT3 could catalyze malonylation from Lyciumoside IV to its monomalonylated form, Nicotianoside I, together with a comparatively minor production of the dimalonylated form, Nicotianoside II (Figure 2C).
 
 To determine whether these three N. attenuata MaTs transcripts responded to M. sexta feeding as would be expected from the induced dynamics of DTGs, transcript abundance data were extracted from previously published RNA-seq data from leaves attacked by M. sexta larvae (Ling et al., 2015). NaMaT1 was strongly induced within 5 hr after the onset of M. sexta larval feeding (59-fold), and then slightly decreased by 9 hr (Figure 2D). In contrast, both NaMaT2 and NaMaT3 transcripts were suppressed by M. sexta feeding, which is opposite to the dynamics of the M. sexta-induced DTG profile (Figure 2D and Figure 1B).
 
-## Silencing NaMaT1 affects floral development
+### Silencing NaMaT1 affects floral development
 
 To investigate the function of N. attenuata MaTs, virus-induced gene silence (VIGS) was used to silence all three candidate genes. The tobacco rattle virus VIGS vector migrates to growing meristems and thus efficiently silences target genes in new tissues in all parts of plants (Galis et al., 2013). VIGS of the carotenoid biosynthetic gene N. attenuata phytoene desaturase (NaPDS), which causes photobleaching where the gene is silenced, demonstrated efficient silencing in floral tissues (Figure 3—figure supplement 1A). Possibly because of low transcript levels (Figure 2D), neither NaMaT2 nor NaMaT3 were successfully silenced (data not shown), and so further work focused on NaMaT1. The transcript abundance of NaMaT1 in VIGS-NaMaT1 plants (VIGS-MaT1) decreased more than 80% compared with VIGS controls (empty vector, VIGS-EV), without affecting the abundance of NaMaT2 or NaMaT3 transcripts (Figure 3—figure supplement 1B). Notably, we also analyzed transcript abundance of two other reported DTG biosynthesis genes, geranylgeranyl diphosphate synthase (NaGGPPS) (Jassbi et al., 2008) and geranyllinalool synthase (NaGLS) (Falara et al., 2014) in VIGS plants, and found that NaGLS transcript abundance significantly increased in VIGS-MaT1 leaves (Figure 3—figure supplement 1C).
 
 NaMaT1 VIGS plants show similar overall growth phenotypes as control plants, including the morphology of shoots, leaves, the floral exterior, corolla limb and stamen (Figure 3—figure supplement 1D). However, we observed that VIGS-MaT1 plants rarely produced capsules. This observation was quantified by counting capsule numbers at the end of seed set, which showed that VIGS-MaT1 plants produced on average only one capsule every two plants (Figure 3—figure supplement 2A). In a second experiment, we determined that styles of VIGS-MaT1 plants were extremely short, less than half the length of VIGS-EV styles (Figure 3A and E). To elucidate whether a decrease of cell number or cell length caused the short style phenotype, we visualized the style cells from freshly opening flowers using a histochemical stain specific for callose. The stylar cell length was strongly reduced, whereas cell number was not (Figure 3B–D). In order to clarify whether the short-style phenotype is due to alteration of DTG malonylation, or to other unknown functions of NaMaT1, VIGS was conducted on DTG-deficient plants, irGGPPS. The irGGPPS stably transformed line is specifically silenced in the expression of one of three GGPPSs in the N. attenuata genome: the enzyme that controls the flux of substrates into the DTG pathway, and irGGPPS produces only ca. 10 – 15% of the DTGs levels of WT plants (Heiling et al., 2010). The results show that the short-style phenotype vanished in irGGPPS-background VIGS-MaT1 plants (Figure 3), although NaMaT1 was silenced to a similar degree in the styles of irGGPPS and EV plants (Figure 3—figure supplement 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig3-v2.jpg)
+
+**Figure 3.:** VIGS of NaMaT1 (VIGS-MaT1) versus a control VIGS empty vector (VIGS-EV) were infiltrated in EV and irGGPPS stably-transformed plants, referred to respectively as EV-EV, EV-MaT1, irGGPPS-EV and irGGPPS-MaT1. (A) Representative photographs of gynoecia from opened flowers are shown from the indicated genotypes. (B) Typical aniline blue stained style samples from indicated genotypes. Representative cells are highlighted with a vermilion rectangle. Mean (+ SE; n = 5 – 7) cell length (C) and cell number per style (D) of styles of opened flowers of indicated plants were measured with fluorescence microscopy. (E) Style lengths (+ SE; n = 5) were measured from flowers on the first day of opening. Asterisks indicate significant differences between VIGS-EV and VIGS-MaT1 (***p<0.001; Student’s t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative picture of a N. attenuata plant in which the phytoene desaturase (NaPDS) gene was silenced using VIGS (left panel) and comparison of flowers between VIGS-PDS and VIGS-EV (right panel). (B) Relative transcript levels (mean + SE; n = 7) of NaMaT1, NaMaT2, NaMaT3 and (C) NaGGPPS, NaGLS in VIGS-EV and VIGS-MaT1 leaves, 3 days after treatment with MeJA. Relative transcripts measured by RT-qPCR. (D) Leaves, flowers, corolla limbs, stamens and overall growth form of 75-day-old plants are compared to show the morphological phenotypes of entire plants (top panel) and representative parts (bottom panel). Asterisks indicate significant differences between VIGS-EV and VIGS-MaT1 (*p<0.05; Student’s t-test).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Capsule numbers (mean + SE; n = 6) of self-pollinated early senescing plants (80 days old) of the indicated genotypes. (B) The appearance of hand-pollinated capsules. Pollen from VIGS-MaT1 and VIGS-EV flowers were used to hand-pollinate emasculated flowers of VIGS-MaT1 and VIGS-EV plants. Seeds from hand-pollinated capsules were evaluated and then used for a germination test. (C) Seed numbers (mean + SE; n = 3 – 4) of hand-pollinated capsules from the indicated male and female genotypes. (D) Germination rates (mean + SE; n = 3 – 4) of seeds from hand-pollinated capsules. Asterisks indicate significant differences between VIGS-EV and VIGS-MaT1 (***p<0.001; Student’s t-test). Different letters indicate significant differences among different types of hand-pollination (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** VIGS was conducted in the background of irGGPPS, irAOC and EV plants. Relative transcript abundance (mean + SE; n = 7 – 8) of NaMaT1 and NaYUC-like 2 was analyzed by qRT-PCR in styles dissected from flowers one day before anthesis. Asterisks indicate significant differences between VIGS-EV and VIGS-MaT1 plants (***p<0.001; Student’s t-test).
+
 To determine whether the sterility of VIGS-MaT1 plants was due to the physical separation of stigma and anthers, or additional effects on the function of male or female parts, we conducted hand-pollinations of VIGS plants. Pollen from either VIGS-MaT1 or VIGS-EV plants applied to the VIGS-EV pistil produced normal capsules and similar numbers of seeds in each capsule (Figure 3—figure supplement 2B and C). However, only withered capsules resulted from hand-pollination of VIGS-MaT1 pistils with VIGS-EV pollen, and no capsules resulted from pollination of VIGS-MaT1 pistils with VIGS-MaT1 pollen. The withered capsules produced dramatically fewer seeds than those of VIGS-EV capsules, although the seed germination rate was not significantly affected (Figure 3—figure supplement 2C and D).
 
-## NaMaT1 affect DTGs, JAs and IAA
+### NaMaT1 affect DTGs, JAs and IAA
 
 To determine whether NaMaT1 controls the induced malonylation of DTGs in planta, we measured DTGs in the leaves of VIGS plants following MeJA treatment, which is known to strongly induce DTG biosynthesis and malonylation. Silencing NaMaT1 significantly reduced the malonylation percentage, primarily through an increase in DTGs with low malonylation degree (core and monomalonylated DTGs), in comparison to VIGS-EV controls (Figure 4A). This effect was more pronounced after leaves were treated with MeJA (Figure 4B). In order to elucidate the short-style phenotype, we analyzed the DTG profile in styles and inflorescences, which are hypothesized to affect the early stages of style development (Smyth, 1990; Yanofsky, 1995). In addition to increasing core and monomalonylated DTGs, dimalonylated and trimalonylated DTGs significantly decreased in inflorescences and styles with stigmas, leading to a dramatic decrease in malonylation percentage in VIGS-MaT1 in comparison to VIGS-EV (Figure 4C,D): all individual core and monomalonyated DTGs were dramatically increased in VIGS-MaT1 styles, whereas trimalonylated DTGs were no longer detectable (Figure 4—figure supplement 1A). Because the irGGPPS background could rescue the VIGS-MaT1 short style phenotype, we analyzed DTG profiles in the inflorescence of VIGS plants in the irGGPPS and EV backgrounds. Similarly, as for VIGS of EV plants, the malonylation percentage in NaMaT1-silenced irGGPPS plants significantly decreased, but not as much as in NaMaT1-silenced EV plants (Figure 4—figure supplement 1B; 26% reduction for EV and 16% reduction for irGGPPS). The intermediate decrease in malonylation percentage for irGGPPS results from both an increase of core and monomalonylated DTGs, and a decrease of dimalonylated and trimalonylated DTGs; overall, DTG levels are much lower in the irGGPPS background (Figure 4—figure supplement 1B and C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig4-v2.jpg)
+
+**Figure 4.:** S1 leaves from early elongated VIGS plants were treated with 20 µL lanolin paste (A, leaf control) or 150 µg MeJA in lanolin paste (B, leaf MeJA treated) and samples were harvested after 3 days. The inflorescence (C), style and stigma (D) were harvested from flowering plants. Relative abundance of different malonylated DTGs (first column) were analyzed from upper samples. Malonylation percentage (second column) was calculated based on the DTG data using the formula (Figure 1). Jasmonates (JAs, third column) and IAA (fourth column) were analyzed from the same samples as those used for DTG quantification. N.D. indicates compounds which were not detected because of low concentrations. Asterisks above each column indicate significant differences between EV and VIGS-MaT1 plants (*p<0.05; **p<0.01; ***p<0.001; Student’s t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Individual DTGs abundance (mean + SE; n = 9) in the styles of VIGS-MaT1 and VIGS-EV in the WT background. (B) Individual DTGs abundance (mean + SE; n = 9) in the inflorescences of VIGS-MaT1 and VIGS-EV in the background of irGGPPS and EV plants. Insert: malonylation percentages (mean + SE; n = 9) of DTGs. (C) DTGs with the same number of malonyl moieties were summed using data from (B). (D) Individual DTGs abundance (mean + SE; n = 3) in the styles of VIGS-MaT1 and VIGS-EV in background of irAOC and EV plants. (E) DTGs with the same number of malonyl moieties were summed using data from (D). Different letters indicate significant differences between genotypes (p<0.05, one-way ANOVA by Tukey’s HSD post-hoc tests). The statistic results for individual compounds are provided in the source data files.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** S1 leaves and flower buds (one day before anthesis) were collected from flowering plants. (A) Tissues are represented by symbols as indicated. (B) IAA levels (mean + SE; n = 5) were analyzed from indicated tissues. DTG profiles (C) and their malonylation percentages (D) were analyzed using the same samples. Different letters indicate significant differences between different tissues (p<0.05, one-way ANOVA by Tukey’s HSD post-hoc tests).
+
 Disturbed phytohormone levels frequently result in serious floral phenotypes (Okada, 1991; Stitz et al., 2014). We analyzed JA, JA-Ile and auxin levels in leaves, inflorescences and styles (Figure 4). In both control and MeJA-treated leaves, JAs and IAA in VIGS-MaT1 were similar to those of controls. VIGS of NaMaT1 reduced JA and JA-Ile levels significantly in inflorescences compared with the VIGS-EV, without affecting IAA contents (Figure 4C). In contrast, VIGS of NaMaT1 reduced IAA levels in styles and stigmas by 40%, but had no significant effect on JAs levels (Figure 4D). Because there is a sophisticated tissue-specific regulatory mechanism for auxin biosynthesis and homeostasis (Ljung et al., 2001), and to gain insight into why silencing NaMaT1 specifically affected IAA in styles, we compared the IAA levels among different flower tissues and first stem (S1) leaves. Styles and stigmas contained the highest levels of IAA among all the measured tissues, about 6.5-fold more than that of the S1 leaf (Figure 4—figure supplement 2B). Additionally, styles and stigmas also contain relatively large amounts of DTGs (Figure 4—figure supplement 2C).
 
-## Decreased IAA levels are responsible for the VIGS-MaT1 short-style phenotype
+### Decreased IAA levels are responsible for the VIGS-MaT1 short-style phenotype
 
 To determine whether decreased auxin caused the short style phenotype, we analyzed IAA and its precursor tryptophan (Trp) in styles of both EV and irGGPPS plants inoculated with VIGS-MaT1. While IAA decreased in VIGS-MaT1 of EV plants, Trp levels increased dramatically (Figure 5A). These differences were eliminated when we silenced NaMaT1 in the irGGPPS background (Figure 5A and B), which again indicated that the effect of NaMaT1 on IAA biosynthesis in styles is DTG-dependent. To elucidate the effect of NaMaT1 on IAA biosynthesis, we extracted crude protein from EV and VIGS-MaT1 styles and performed in vitro enzyme activity assays of IAA biosynthesis. Surprisingly, NaTAA1 activity was similar between EV and VIGS-MaT1. However, the transformation from IPA to IAA, which is thought to be catalyzed by YUCCA, was significantly impaired in VIGS-MaT1 style (Figure 5C). We then analyzed the transcript abundance of YUCCA-like genes in N. attenuata by RNAseq, and found one YUCCA-like gene, YUC-like 2 (Machado et al., 2016), to be highly expressed in styles (Supplementary file 2). The transcript abundance of YUC-like 2 was similar between VIGS-MaT1 and VIGS-EV in both backgrounds of irGGPPS and EV plants (Figure 3—figure supplement 3B). Exogenous application IAA approximately restored the short styles to their normal lengths (Figure 5D), without affecting the malonylation degree of stylar DTGs (Figure 5E), results which are consistent with the hypothesis that the truncated style resulted from decreased IAA biosynthesis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig5-v2.jpg)
+
+**Figure 5.:** Tryptophan (A) and IAA (B) levels (mean + SE; n = 6) were analyzed from style samples dissected from flowers one day before anthesis. Crude protein was extracted from the same set of samples and then used for in vitro IAA biosynthetic enzyme activity assay. Relative in vitro enzyme assay product abundance (mean + SE; n = 5) of IPA (C, top panel) and IAA (C, bottom panel), respectively. (D) Style length (mean + SE; n = 10) of flowers injected with 0.1% DMSO (Con) or 0.1% DMSO together with 10 µM IAA 2 days before anthesis. (E) Malonylation percentage (mean + SE; n = 6) was calculated from DTGs from the same set of samples. Asterisks indicate significant differences between VIGS-EV and VIGS-MaT1 plants (*p<0.05; ***p<0.001; Student’s t-test). Different letters indicate significant differences among different lines or treatments (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Different tissue samples were harvested and extracted as described for DTG profile analysis. Relative abundance (mean + SE; n = 9 – 10) of different flavonoids are shown for leaf (A) and style with stigma (B) of VIGS-MaT1 and VIGS-EV plants. Relative abundance (mean + SE; n = 5 – 7) of different flavonoids are shown for leaf (C) and inflorescences (D) of irGGPPS plants and EV control. (E) Relative abundance (mean + SE; n = 9 – 10) of different flavonoids in inflorescences of VIGS plants in the background of EV and irGGPPS. KG, kaempferol-3-O-glucoside; KGR, kaempferol-3-O- rhamnosyl glucoside; Rutin, quercetin-3-O- rhamnosyl glucoside (QGR). Asterisks indicate significant differences between EV and VIGS-MaT1 plants (***p<0.001; Student’s t-test). Different letters indicate significant differences between different genotypes (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Relative transcript abundance (mean + SE; n = 5) of PveCYP734A50 homologs in N. attenuata were analyzed by qRT-PCR in styles dissected from flowers one day before anthesis. (D) Style lengths (mean + SE; n = 8) of freshly opened VIGS-MaT1 flowers which had been injected with 0.1% DMSO aqueous solutions with 10 µM brassinolide (10 µM BL) or only 0.1% DMSO aqueous solution as controls (Con) two days before. Different letters indicate significant differences among different plant lines or treatments (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
 
 The effect of flavonoids on auxin transport has been well characterized (Peer and Murphy, 2007), and flavonoids also could be used as substrate by the homolog of NaMaT1 in N. tabacum, NtMaT1 (Taguchi et al., 2005). To test whether the effect of VIGS-MaT1 on auxin could be caused by changes in flavonoid metabolism, we measured the major flavonoids in N. attenuata plants. We found that both leaves and styles contained similar levels of kaempferol-3-O-glucoside and kaempferol-3-O- rhamnosyl glucoside between VIGS-MaT1 and VIGS-EV, and only rutin was significantly decreased in VIGS-MaT1 style compared with EV styles (Figure 5—figure supplement 1A and B). Furthermore, the stably transformed line irGGPPS also displays flavonoid levels indistinguishable from EV in both leaves and inflorescences, consistent with previous data showing that irGGPPS plants have similar rutin contents as WT plants in both greenhouse and field studies (Heiling et al., 2010).
 
 Brassinosteroids and the transcription factor style2.1 were reported to promote cell elongation and thereby affect style length in Primula spp. (primroses) and in Solanum lycopersicum (tomato), respectively (Chen et al., 2007; Huu et al., 2016). We identified the homolog of the S. lycopersicum style2.1 gene in N. attenuata, but both RNAseq and qRT-PCR failed to detect transcripts in N. attenuata styles (Supplementary file 2). PveCYP734A50 was reported to degrade brassinosteroids and thereby control style length in Primula veris (Huu et al., 2016). Through searching the N. attenuata genome database, we found the three closest homologs of PveCYP734A50. RT-PCR analysis of those three genes in styles showed that the transcript abundance of one gene, NIATv7_g25593, matched very well with the short style phenotype, being most abundant in styles after VIGS-MaT1 of EV, and having low abundance in styles after VIGS-EV or VIGS-MaT1 of irGGPPS plants (Figure 5—figure supplement 2B). We then designed a specific construct and silenced NIATv7_g25593 using VIGS, but did not observe any effect on style length (data not shown). To test whether brassinosteroids may contribute to the VIGS-MaT1 style phenotype in other ways, we exogenously applied brassinolide to VIGS-MaT1 flower buds. This treatment did not recover the short style phenotype of VIGS-MaT1 (Figure 5—figure supplement 2D). Thus, we can rule out the possibility of those two mechanisms contributing to the VIGS-MaT1 short style phenotype.
 
-## The N. attenuata JA-deficient short-style phenotype is caused by disturbed DTG malonylation patterns
+### The N. attenuata JA-deficient short-style phenotype is caused by disturbed DTG malonylation patterns
 
 The stylar phenotype of VIGS-MaT1 plants was strongly reminiscent of the short styles of plants with JA signaling deficiencies, which is only reported in Nicotiana species, as far as we know. Among species for which JA-deficient phenotypes have been reported, only the genus Nicotiana produces DTGs (Heiling et al., 2016). Therefore, we hypothesized that the short styles of JA-deficient plants results from disturbed DTG malonylation patterns, similar to those of VIGS-MaT1 plants. To address this hypothesis, we analyzed DTG profiles using a stably transformed N. attenuata irAOC line as a severely jasmonate-deficient model. In both herbivore-damaged and control leaves, malonylation percentages in irAOC were significantly higher than in EV plants (Figure 6—figure supplement 1A). In flower buds, the irAOC malonylation percentage was also significantly higher than in EV (Figure 6—figure supplement 1B). MeJA treatment could partially restore the irAOC short style phenotype (Figure 6—figure supplement 1C and [Stitz et al., 2014]), and also partially restored the malonylation percentages towards EV levels (Figure 6—figure supplement 1D). In line with leaves and flower buds, the malonylation percentage of irAOC styles was also significantly higher than in EV (Figure 6A). To further test this hypothesis, we compared style lengths in VIGS-MaT1 and VIGS-EV of both EV and irAOC plants. Silencing NaMaT1 in EV or irAOC plants resulted in similarly truncated styles (Figure 6B and Figure 3—figure supplement 3C). The lack of an additive effect suggests that irAOC short styles may result from the same mechanism as is responsible for the short styles of VIGS-MaT1 EV plants. Consistently, the malonylation percentages after VIGS-MaT1 in both EV and irAOC backgrounds were similar, much lower than the VIGS-EV of both EV and irAOC genetic backgrounds (Figure 6C).This reduction is mainly caused by an increase of core and monomalonylated DTGs and a decrease of trimalonylated DTGs (Figure 4—figure supplement 1D and E). Furthermore, MeJA treatment could partially restore irAOC-EV short styles, but not the short styles of VIGS-MaT1 in irAOC or EV plants (Figure 6D). These data revealed that NaMaT1 functions downstream of NaAOC to control style length. Importantly, when we crossed irAOC with irGGPPS to silence both DTG and JA production, the irAOC short-style phenotype was completely restored to normal style lengths of EV or WT plants (Figure 6E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig6-v2.jpg)
+
+**Figure 6.:** (A) DTG malonylation percentage (mean + SE; n = 5) was calculated based on DTGs of styles dissected from flowers one day before anthesis. (B) Style lengths (mean + SE; n = 10) were measured from freshly opened flowers of VIGS-EV and VIGS-MaT1 silencing in the background of two stably transformed lines, EV or irAOC, as indicated. (C) Malonylation percentages (mean + SE, n = 3) were calculated based on DTGs in styles dissected from flowers one day before anthesis of the four genotypes as described in (B). (D) Mean style lengths (mean + SE; n = 10) were measured from freshly opened flowers of the four genotypes, which had been treated with lanolin paste with MeJA (MeJA) or only lanolin paste as control (Con), 2 days previously. (E) Style lengths (mean + SE; n = 5) were measured from freshly opened flowers of the four genotypes, which were from crosses of EV or irAOC with EV or irGGPPS. (F) IAA levels (mean + SE; n = 5) were analyzed from the same samples as in (A). (G) IAA (mean + SE; n = 3) was quantified from in vitro enzyme activity assay products, in which the enzyme activity is from crude protein extracted from styles as in (A). (H) Style lengths (mean + SE; n = 10 – 16) of freshly opened irAOC flowers which had been injected with 0.1% DMSO aqueous solutions with 10 µM IAA (IAA) or only 0.1% DMSO aqueous solution as controls (Con) 2 days before. Asterisks indicate significant differences between different genotypes or treatments (***p<0.001; Student’s t-test). Different letters indicate significant differences among different plant lines or treatments (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mean malonylation percentage (mean + SE; n = 5) of DTGs in EV and irAOC leaves, which were either untreated (Con) or treated with wounding and M. sexta oral secretions (W + OS) and harvested after 3 days. (B) Mean malonylation percentage (mean + SE; n = 5) of DTGs in different stage flower buds of EV and irAOC plants. (C) Mean style lengths (mean + SE; n = 5) were measured at full anthesis from EV and irAOC flowers, which had been treated with lanolin (Con) or lanolin and MeJA (MeJA) 2 days prior to anthesis. (D) Mean malonylation percentage (mean + SE; n = 5) of DTGs in EV and irAOC flower buds which were treated with lanolin (Con) or MeJA 2 days before. Asterisks indicate significant differences between EV and irAOC (**p<0.01; ***p<0.001; Student’s t-test). Different letters indicate significant differences among different lines or treatments (p<0.05, one-way ANOVA followed by Tukey’s HSD post-hoc tests).
 
 Because the VIGS-MaT1 short style phenotype results from attenuated IAA levels, we measured IAA contents in irAOC styles. IAA levels in irAOC styles were much lower than in EV (Figure 6F). The protein activity responsible for transforming IPA to IAA was marginally decreased in irAOC styles compared to that in EV (Figure 6G), but the transcript abundance of NaYUC-like 2 was similar between VIGS-MaT1 and VIGS-EV in the backgrounds of irAOC and EV (Figure 3—figure supplement 3D). Finally, exogenous applications of IAA partially restored the truncated styles of irAOC plants to WT lengths (Figure 6H). These results were consistent with the hypothesis that the short styles of JA-deficient N. attenuata are also caused by disturbed DTG malonylation patterns.
 
@@ -98,42 +164,227 @@ In conclusion, this study reveals the uniformity of specialized metabolite malon
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38611/elife-38611-fig7-v2.jpg)
 
-**Figure 7.:** N. attenuata.Geranylgeranyl diphosphate synthase (GGPPS) forms GGPP from the MEP pathway products IPP and DMAPP. This GGPP is used for DTG biosynthesis and a certain portion of these DTGs are decorated with malonic acid moieties by NaMAT1. When AOC or MaT1 are silenced (red), this disturbs the uniformity of DTG malonylation, resulting in compounds which inhibit the rate-limiting step of IAA biosynthesis, YUC catalytic activity. When GGPPS is silenced (green), leading to DTG deficiency, the suppression of YUC catalytic activity is alleviated. MEP, Methylerythritol 4-phosphate pathway; IPP, isopentenyl diphosphate; DMAPP, dimethylallyl diphosphate.
+**Figure 7.:** Geranylgeranyl diphosphate synthase (GGPPS) forms GGPP from the MEP pathway products IPP and DMAPP. This GGPP is used for DTG biosynthesis and a certain portion of these DTGs are decorated with malonic acid moieties by NaMAT1. When AOC or MaT1 are silenced (red), this disturbs the uniformity of DTG malonylation, resulting in compounds which inhibit the rate-limiting step of IAA biosynthesis, YUC catalytic activity. When GGPPS is silenced (green), leading to DTG deficiency, the suppression of YUC catalytic activity is alleviated. MEP, Methylerythritol 4-phosphate pathway; IPP, isopentenyl diphosphate; DMAPP, dimethylallyl diphosphate.
 
 ## Materials and methods
 
-## Plant material and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Nicotiana attenuata)</td>
+      <td>NaMaT1</td>
+      <td>PRJNA355166</td>
+      <td>XM_019403695.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. attenuata)</td>
+      <td>NaMaT2</td>
+      <td>PRJNA355166</td>
+      <td>XR_002066055.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. attenuata)</td>
+      <td>NaMaT3</td>
+      <td>PRJNA355166</td>
+      <td>XM_019382488.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. attenuata)</td>
+      <td>NIATv7_g21823</td>
+      <td>Nicotiana attenuata Data Hub</td>
+      <td>NIATv7_g21823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. attenuata)</td>
+      <td>NIATv7_g39356</td>
+      <td>Nicotiana attenuata Data Hub</td>
+      <td>NIATv7_g39356</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Agrobacterium tumefaciens)</td>
+      <td>GV1301</td>
+      <td>DOI: 10.1007/ 978-1-62703-278-0_9</td>
+      <td>GV1301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>New England Biolabs inc.</td>
+      <td>catalog#: C2527I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>Empty vector (EV)</td>
+      <td>DOI: 10.1371/ journal.pone. 0001543</td>
+      <td>EV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>irGGPPS</td>
+      <td>DOI: 10.1105/ tpc.109.071449</td>
+      <td>irGGPPS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>irAOC</td>
+      <td>DOI: 10.1073/ pnas.1200363109</td>
+      <td>irAOC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (tobacco rattle virus)</td>
+      <td>pBINTRA6/pTV00</td>
+      <td>DOI: 10.1007/ 978-1-62703-278-0_9</td>
+      <td>pBINTRA6/pTV00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Gateway vector pDEST15</td>
+      <td>Invitrogen</td>
+      <td>catalog#: 11802014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Oligonucleotides</td>
+      <td>Sigma-aldrich</td>
+      <td></td>
+      <td>Supplied in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NaMaT1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NaMaT2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NaMaT3</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NIATv7_g21823</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NIATv7_g39356</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript First-Strand Synthesis System for RT-PCR</td>
+      <td>Invitrogen</td>
+      <td>catalog#: 11904018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol TM Reagent</td>
+      <td>Invitrogen</td>
+      <td>catalog#: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indole-3- pyruvic acid</td>
+      <td>Sigma-aldrich</td>
+      <td>CAS:392-12-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione- Sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>GE17-0756-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA6</td>
+      <td>MEGA</td>
+      <td>http://www.megasoftware.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS statistic 17.0</td>
+      <td>SPPS inc.</td>
+      <td>http://www-01.ibm.com/software/analytics/spss/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and growth conditions
 
 The 31 st inbred generation of N. attenuata originating from a collection at the DI ranch in southwestern Utah USA was used as the wild-type background for all transformants. Previously described homozygotes of the third transformed generation of irGGPPS (A-07-230-5) (Heiling et al., 2010), irAOC (A-07-457-1) (Kallenbach et al., 2012), and an empty vector control line (EV, A-03-009-1) (Schwachtje et al., 2008) were used. Seeds were germinated on a mixture of plant agar with Gamborg’s B5 medium in sterile petri dishes and seedlings were transferred to pots and grown under 19 – 35°C, 16 hr light (supplemental lighting by Philips Sun-T Agro 400W and 600W sodium lights) and 60 – 65% relative humidity as previously described (Krügel et al., 2002; Saedler and Baldwin, 2004). The VIGS plants were obtained following the procedures described in (Galis et al., 2013). Briefly, leaves of young rosette-stage plants were pressure infiltrated with a mixture of Agrobacterium tumefaciens containing pBINTRA and either pTV-MaT1 or pTV00 (EV control). VIGS experiments were repeated at least three times.
 
-## Plant treatment and sample collections
+### Plant treatment and sample collections
 
 For methyl jasmonate (MeJA) treatments, leaf petioles of rosette-stage plants were treated with 20 µL lanolin paste containing 150 µg MeJA (Sigma-Aldrich), or with 20 µL of pure lanolin as a control. MeJA treatment of flower buds followed a similar protocol except the lanolin paste volume was 10 µL and applied to the pedicel of each bud. For Manduca sexta W + OS elicitations, rosette-stage leaves were wounded with a pattern wheel, and 20 µL of diluted M. sexta regurgitant (1:5 in distilled water) was gently rubbed into the freshly created puncture wounds using a clean gloved finger as previously described (Schittko et al., 2001). Three days after the treatment, leaves, excluding the midvein, were harvested for metabolite and RNA extraction. For flower samples, flowers were harvested following standardized developmental stages (Li et al., 2017). For floral tissue samples, five to ten opening flowers from one plant were dissected and each tissue was separately pooled to create one biological replicate. Five replicates were used for each tissue type. For style samples used for metabolites, phytohormones and in vitro enzyme activity assays, ten flower buds were harvested one day before anthesis, dissected and styles were pooled as one biological replicate. All style length measurements were conducted on first-day open flowers.
 
-## DTGs and flavonoid analysis by UPLC-Q-TOF
+### DTGs and flavonoid analysis by UPLC-Q-TOF
 
 Samples were ground in liquid nitrogen and aliquoted to 10 – 100 mg depending on the tissues and their known DTG and flavonoid concentrations (precise mass was recorded). Approximately 100 mg of aliquoted samples were extracted using 1 mL 80% methanol aqueous buffer and analyzed on a micrOTOF-Q II system (Bruker Daltonics) as previously described (Heiling et al., 2016; Li et al., 2016). QuantAnalysis (Bruker Daltonics) software was used to integrate the DTG peak areas based on each compound’s diagnostic m/z value and retention time as described in Figure 1—figure supplement 1.
 
-## In vitro recombinant protein assays
+### In vitro recombinant protein assays
 
 Malonyltransferase candidate genes that had high similarity to NtMaT1 were identified from the N. attenuata data hub (http://nadh.ice.mpg.de/). Fragments with coding regions of candidate malonyltransferases were amplified from cDNA with gene specific primers as described in Supplementary file 3. Full-length cDNAs of the candidate genes without stop codons were introduced to Gateway destination vector pDESTTM 15, through entry vector pENTRTM according to the manufacturer’s instructions. The recombinant proteins were expressed in E. coli BL21 (DE3), extracted and purified using Glutathione-Sepharose 6B (GE Healthcare) in accordance with the manufacturer’s instructions. The in vitro enzyme activity assays were conducted as previously described (Taguchi et al., 2010). Briefly, 1 µg purified protein was added to the reaction mixture (50 µL), which was 50 mM potassium phosphate buffer (pH 8.0) with 200 µM malonyl-CoA, 5 mM β-mercaptoethanol, and 8 µg DTGs. The mixture was incubated at 30°C for 1 hr, and the reactions were stopped by adding 10 µL 1M HCl. Methanol (40 µL) was then added to the reaction mixture, and this was subsequently used for DTGs quantification by UPLC-Q-TOF as described above.
 
-## Imaging pistils
+### Imaging pistils
 
 The complete pistils were harvested, fixed (ethanol: acetic acid, 3:1) and stained with aniline blue as previously described (Mori et al., 2006). Stained samples were viewed under a confocal laser scanning microscope (LSM 880, Zeiss, Jena, Germany) in channel mode with a 20x objective (Plan-Apochromat 20x/0.8) and a 405 nm laser diode for illumination. Excitation, emission and detection windows were set via a 405 nm main beam splitter and the QUASAR detector range between 480 and 550 nm, respectively. The pinhole size was 41 µm, while the Z-stack step size was 1 µm. Tiled Z stacks were acquired to obtain all necessary details. After image acquisition, the scanned tiles were stitched in ZEN (black 2012, Zeiss, Inc.). Representative images were obtained with maximum intensity projections in ImageJ 1.50e. Cell lengths were measured in ImageJ 1.50e.
 
-## Gene expression analysis
+### Gene expression analysis
 
 For quantitative RT-PCR, RNA was extracted from 30 mg well-ground tissue using TRIzol reagent (Invitogen), and the RNA quantity was confirmed by the 260/280 nm absorbance ratio using NanoDropTM (ThermoFisher Scientific). One µg RNA was used for reverse transcription by First strand cDNA synthesis kit (ThermoFisher Scientific). RT-qPCR was done via Mastermix (Eurogentec) SYBR Green reaction in a Stratagene 500 MX3005P Real-time qPCR machine. The primers used for mRNA detection of target genes by RT-PCR are listed in Supplementary file 3. The amplification specificity of primers was confirmed by single peaks in a dissociation curve following qPCR. The N. attenuata IF5a-2 mRNA was used as internal control. RNA-seq data for gene expression in all N. attenuata tissues was previously published in NCBI with accession number PRJNA317743 (Brockmöller et al., 2017). To readily visualize these data in heatmaps, the raw data was transformed by log2. RNA-seq data for gene expression after M. sexta larval feeding was previously published in NCBI with accession number PRJNA223344 (Ling et al., 2015).
 
-## Phytohormone quantifications
+### Phytohormone quantifications
 
 Jasmonates, IAA and tryptophan were measured as previously described (Schäfer et al., 2016). Briefly, aliquots of ca. 100 mg (precise mass recorded) frozen powdered samples were extracted with 800 µL extraction buffer containing the internal standards (20 ng D6-JA, 20 ng D6-JA-Ile, 3 ng D5-IAA), purified by successive HR-X and HR-XC SPE column chromatography (MACHEREY-NAGEL), and finally analyzed on a EVO-Q EliteTM Triple quadrupole-MS (Bruker Daltonics). Prior to SPE purification, 2 µL of the initial extract was diluted into 98 µL aqueous solution containing 255 fmol µL-1 13C9, 15N1-phenylalanine as an internal standard for the quantification of tryptophan.
 
-## In vitro TAA1 and YUC enzyme activity assay
+### In vitro TAA1 and YUC enzyme activity assay
 
 Approximately 20 mg frozen powdered samples were extracted with 200 µL cold extraction buffer (0.1M Tris-C1, pH 7.6; 5% polyvinylpolypyrrolidone; 2 mg/mL phenylthiourea; 5 mg/mL diethyldithiocarbamate; 0.05 M Na2EDTA). The reaction for TAA1 enzyme activity assays was incubated at 55°C for 20 min, and other procedures were as previously described (Tao et al., 2008). The YUC enzyme activity assay was conducted as previously described (Mashiguchi et al., 2011). Both reactions were stopped by acidification with 5 µL 3M phosphoric acid, then adding 500 ng D5-IAA as an internal standard before the reaction product was extracted three times with an equal volume of ethyl acetate. The supernatant was dried and the pellet was resuspended in 50 µL of methanol. The methanol-solubilized extracts were analyzed by UHPLC-MS (impact II, Bruker Daltonics) in negative ESI mode.
 
-## Statistical analyses
+### Statistical analyses
 
 All ANOVAs were performed in SPSS statistic 17.0 (SPSS Inc, http://www-01.ibm.com/software/analytics/spss/). The Student’s t-tests were performed in Microsoft Office Excel 2010. Homogeneity of variance was evaluated in SPSS using Levene’s test, and outliers were assessed by the function of Explor in SPSS with default parameters. The protein sequences were aligned by CLUSTAL W and phylogenetic trees were constructed using the maximum-likelihood method in MEGA6 (http://www.megasoftware.net/).

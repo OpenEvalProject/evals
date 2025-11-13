@@ -43,29 +43,284 @@ Individual studies have provided much insight regarding specific dynamics of the
 
 ## Results
 
-## The photosynthetic machinery is functional after 14 hr of de-etiolation
+### The photosynthetic machinery is functional after 14 hr of de-etiolation
 
 We analyzed etioplast–chloroplast transition in Arabidopsis seedlings grown in the absence of exogenous sucrose for 3 days in darkness and then exposed to constant white light (Figure 1A). These experimental conditions were chosen to avoid effects of exogenous sucrose on seedling development and variations due to circadian rhythm. Upon illumination, the etiolated seedlings switched from the skotomorphogenic to the photomorphogenic developmental program, evidenced by opening of the apical hook and cotyledon greening and expansion (Figure 1B; Kami et al., 2010). We stopped the analysis following 96 hr of illumination (T96), before the emergence of the primary leaves. Samples were collected at different selected time points during de-etiolation (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of the experimental design. Seeds of Arabidopsis thaliana (Columbia) sown on agar plates were stratified for three days at 4°C and then transferred to 22°C in the dark. After 3 days, etiolated seedlings were exposed to continuous white light (40 µmol/m2/s) and harvested at different time points during de-etiolation. Selected time points used for different analyses are indicated. (B) Cotyledon phenotype of etiolated seedlings (T0) after 4 hr (T4), 24 hr (T24), and 96 (T96) hr in continuous white light. Scale bars: 0.5 mm. (C) Chlorophyll quantification at different time points upon illumination. Error bars indicate ± SD (n = 3). (D) Maximum quantum yield of photosystem II (Fv/Fm). Error bars indicate ± SD (n = 4–10). For some data points, the error bars are inferior to the size of the symbol. Measurements of further photosynthetic parameters are presented in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Maximum photosynthetic quantum yield of PSII (Fv/Fm) of plants (dark-adapted for 5 min) grown under different light intensities (A). Photochemical quenching (B) and efficiency of the photosystem PSII (Φ PSII; C) measurements were made on 3-day-old etiolated seedlings that were de-etiolated under continuous light (40 μmol/m2/s) using a Fluorcam (Photon System Instrument). Error bars indicate ± SD (n = 10).
+
 In angiosperms, chlorophyll synthesis arrests in the dark but starts immediately upon seedling irradiation (Von Wettstein et al., 1995). Chlorophyll levels in whole seedlings increased within the first 4 hr of illumination (T4) and continued to increase linearly during subsequent illumination as the seedlings grew (Figure 1C). To evaluate photosynthetic efficiency during de-etiolation, we measured chlorophyll fluorescence and calculated the maximum quantum yield of PSII (Fv/Fm, Figure 1D and Figure 1—figure supplement 1). PSII maximum quantum yield increased during the initial period of illumination and was near the maximal value of 0.8 at 14 hr of light exposure (T14), independent of light intensity (Figure 1D and Figure 1—figure supplement 1A). Other photosynthetic parameters (photochemical quenching, qP and PSII quantum yield in the light, ΦPSII, Figure 1—figure supplement 1B and C) reached maximum values at T14 and remained stable thereafter, indicating that the assembly of a fully functional photosynthetic machinery occurs within the first 14 hr of de-etiolation, and that further biosynthesis of photosynthesis related compounds is efficiently coordinated.
 
-## Major thylakoid structural changes occur within 24 hr of de-etiolation
+### Major thylakoid structural changes occur within 24 hr of de-etiolation
 
 We determined the dynamics of thylakoid biogenesis during the etioplast–chloroplast transition by observing chloroplast ultrastructure in cotyledons using transmission electron microscopy (TEM) (Figure 2). Plastids present in cotyledons of etiolated seedlings displayed the typical etioplast ultrastructure with a paracrystalline PLB and tubular PTs (Figure 2A). The observed PLBs were constituted of hexagonal units with diameters of 0.8–1 µm (Figure 2E). By T4, the highly structured PLBs progressively disappeared and thylakoid lamellae were formed (Figure 2B). The lamellae were blurry and their thickness varied between 15 and 70 nm (Figure 2F). After 24 hr of illumination (T24), the density of lamellae per chloroplast was higher than that at T4 due to an increase in lamellar length and number. Appressed regions corresponding to developing grana stacks also appeared by T24 (Figure 2C and G). These early grana stacks consisted of 2–6 lamellae with a thickness of 13 nm each (Figure 2—figure supplement 1). In addition, starch granules were present at T24, supporting the notion that these chloroplasts are photosynthetically functional and able to assimilate carbon dioxide (CO2). At T96, thylakoid membrane organization was visually similar to that at T24, but with more layers per grana (up to 10 lamellae per grana; Figure 2D and H). In addition, singular lamella thickness at T96 increased by 2–3 nm compared to that at T24 (Figure 2—figure supplement 1). The major differences observed between T24 and T96 were increases in starch granule size and number and overall chloroplast size (Figure 2C and D and Table 1). Etioplast average length (estimated by measuring the maximum distance on individual slices) was 2 µm (±0.9, n = 10) in the dark (T0), whereas chloroplast average length was 6 µm (±1.62, n = 10) at T96 (Table 1). Collectively, these data show that photosynthetically functional thylakoid membranes form rapidly during the first 24 hr of de-etiolation. This implies that there are efficient mechanisms for thylakoid assembly and structural organization. Subsequent changes seem to involve the expansion of pre-existing structures (i.e. lamellae length and grana size) and the initiation of photosynthetic carbon fixation (reflected by starch content).
 
-## Quantitative analysis of thylakoid surface area per chloroplast during de-etiolation
+![Figure 2.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig2-v1.jpg)
+
+**Figure 2.:** Transmission electron microscopy (TEM) images of cotyledon cells of 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated for 0 hr (T0, A and E), 4 hr (T4, B and F), 24 hr (T24, C and G), and 96 hr (T96, D and H) in continuous white light (40 µmol/m2/s). (A–D) Scale bars: 500 nm, (E–H) higher magnification of A–D images; Scale bars: 200 nm. PLB: prolamellar body; PT: prothylakoid; PE: plastid envelope; SG: starch grain; GS: grana stack; SL: single lamella. Specific details for measurements of lamella thickness are provided in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) TEM chloroplast micrographs of 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated for 96 hr in continuous white light (40 μmol/m2/s) were used to measure the thickness of lamellae that constitute the grana stack. Measurements were performed using ImageJ. Scale bar: 100 nm. (B) Equation used to calculate the thickness of one lamella. (C) Data indicate mean ± SD (n = 10 for two lamellae and n = 7 for three lamellae).
+
+**Table 1.**
+ Collection of quantitative data.Morphometric data corresponding to thylakoid surfaces and volumes, thylakoid/envelope surface ratio, and chloroplast and cell volumes were collected after SBF-SEM and 3D reconstruction. Chloroplast and cell volumes were also quantified by subsequent confocal microscopy analysis, whereas plastid length was measured using TEM images. Molecular data for galactolipids (GLs) were analyzed by lipidomics, whereas PsbA, PsaC, and PetC were quantified by quantitative immunodetection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Method</th>
+      <th>T0</th>
+      <th>T4</th>
+      <th>T8</th>
+      <th>T12</th>
+      <th>T24</th>
+      <th>T48</th>
+      <th>T72</th>
+      <th>T96</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chloroplast volume (µm3)</td>
+      <td>SBF-SEM</td>
+      <td>12.27 (±2.3)</td>
+      <td>9.4 (±4.8)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>62 (±2.04)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>112.14 (±4.3)</td>
+    </tr>
+    <tr>
+      <td>Thylakoid surface (µm2)</td>
+      <td>SBF-SEM</td>
+      <td>-</td>
+      <td>67 (±29.5)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1476 (±146)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2086 (±393)</td>
+    </tr>
+    <tr>
+      <td>Grana lamellae/total thylakoid surface</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2.55 (±0.11)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2.08 (±0.57)</td>
+    </tr>
+    <tr>
+      <td>Thylakoid/envelope surface</td>
+      <td></td>
+      <td>-</td>
+      <td>1.02 (±0.15)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>7.37 (±0.51)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6.83 (±1.40)</td>
+    </tr>
+    <tr>
+      <td>Length of plastid (µm)</td>
+      <td>TEM</td>
+      <td>2 (±0.90)</td>
+      <td>2.8 (±0.90)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>5.1 (±1.47)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6 (±1.62)</td>
+    </tr>
+    <tr>
+      <td>Stroma lamellae volume (µm3)</td>
+      <td>SBF-SEM</td>
+      <td></td>
+      <td>2.43 (±0.95)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>17.87 (±1.04)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>29.17 (±1.94)</td>
+    </tr>
+    <tr>
+      <td>Chloroplast volume (µm3)</td>
+      <td>Confocal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>61.5 (±11.2)</td>
+      <td>70.1 (±10.2)</td>
+      <td>85 (±22)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cell volume (µm3)</td>
+      <td>SBF-SEM</td>
+      <td>1173 (±284)</td>
+      <td>1891 (±362)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6103 (±1309)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>52597 (±12671)</td>
+    </tr>
+    <tr>
+      <td>Cell perimeter (µm)</td>
+      <td>TEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>55.3 (±14.1)</td>
+      <td>46.4 (±6.1)</td>
+      <td>71.7 (±19.1)</td>
+      <td>92.8 (±22.1)</td>
+    </tr>
+    <tr>
+      <td>Number of chloroplast per cell</td>
+      <td>SBF-SEM</td>
+      <td>22 (±6)</td>
+      <td>25 (±8)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>26 (±6)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>112 (±29)</td>
+    </tr>
+    <tr>
+      <td>Number of cells per seedling</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>~3000</td>
+      <td>-</td>
+      <td>-</td>
+      <td>~3000</td>
+    </tr>
+    <tr>
+      <td>Protein / GLs surface</td>
+      <td></td>
+      <td>0.19 (±0.05)</td>
+      <td>0.23 (±0.04)</td>
+      <td>0.34 (±0.03)</td>
+      <td>0.52 (±0.07)</td>
+      <td>0.80 (±0.14)</td>
+      <td>0.80 (±0.17)</td>
+      <td>0.78 (0.07)</td>
+      <td>0.87 (±0.25)</td>
+    </tr>
+    <tr>
+      <td>GLs (nmol/seedling)</td>
+      <td>Lipidomics</td>
+      <td>0.31 (±0.03)</td>
+      <td>0.31 (±0.02)</td>
+      <td>0.32 (±0.02)</td>
+      <td>0.54 (±0.02)</td>
+      <td>0.67 (±0.04)</td>
+      <td>1.28 (±0.12)</td>
+      <td>1.84 (±0.01)</td>
+      <td>2.20 (±0.09)</td>
+    </tr>
+    <tr>
+      <td>PsbA (nmol/seedling)</td>
+      <td>Immuno-detection</td>
+      <td>6.9E-06 (±1.8E-06)</td>
+      <td>9.2E-06 (±1.7E-06)</td>
+      <td>1.5E-05 (±0.07E-05)</td>
+      <td>3.2E-05 (±0.4E-05)</td>
+      <td>9.3E-05 (±2E-05)</td>
+      <td>2.0E-04 (±0.6E-04)</td>
+      <td>3.9E-04 (±0.4E-04)</td>
+      <td>6.2E-04 (±1.7E-04)</td>
+    </tr>
+    <tr>
+      <td>PsaC (nmol/seedling)</td>
+      <td>Immuno-detection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.6E-05 (±0.2 E-05)</td>
+      <td>7.3E-05 (±2E-05)</td>
+      <td>1.1E-04 (±0.7E-04)</td>
+      <td>1.7E-04 (±0.4E-04)</td>
+      <td>2.3E-04 (±1E-04)</td>
+    </tr>
+    <tr>
+      <td>PetC (nmol /seedling)</td>
+      <td>Immuno-detection</td>
+      <td>2.7E-05 (±0.8E-05)</td>
+      <td>2.8E-05 (±1E-05)</td>
+      <td>2.5E-05 (±0.4E-05)</td>
+      <td>5.3E-05 (±2.2E-05)</td>
+      <td>1.2E-04 (±0.4E-04)</td>
+      <td>1.8E-04 (±0.E-04)</td>
+      <td>5.7E-04 (±1.8E-04)</td>
+      <td>7.9E-04 (±3.7E-04)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantitative analysis of thylakoid surface area per chloroplast during de-etiolation
 
 To visualize entire chloroplasts and thylakoid networks in 3D, and to obtain a quantitative view of the total thylakoid surface area during chloroplast development, we prepared and imaged cotyledons at different developmental stages by SBF-SEM (Figure 3A–D). PLBs, thylakoids, and envelope membranes were selected, and segmented images were used for 3D reconstruction (Figure 3E–L, and Videos 1–4; see also Figure 2—figure supplement 1 and Figure 3—figure supplement 1 for grana segmentation). Similar to that observed by TEM (Figure 2), a drastic switch from PLB to thylakoid membrane occurred by T4: the typical structure of the PLB connected to PTs disappeared leaving only elongated lamellar structures (Figure 3E–F and Videos 1 and 2). At T24 and T96, thylakoid membranes were organized in appressed and non-appressed regions and large spaces occupied by starch granules were observed (Figure 3G–H and Videos 3 and 4). 3D reconstruction revealed a change in plastid shape from ovoid at T0 and T4 to hemispheric at T24 and T96 (Figure 3I–L).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Scanning electron microscopy (SEM) micrographs of representative etioplasts and chloroplasts from 3-day-old, dark-grown Arabidopsis thaliana seedlings illuminated for 0 hr (T0; A), 4 hr (T4; B), 24 hr (T24; C), and 96 hr (T96; D) in continuous white light (40 µmol/m2/s). (E–H) Partial 3D reconstruction of thylakoid membranes (green) and envelope (blue) at T0 (E), T4 (F), T24 (G), and T96 (H). Z-depth of thylakoid membrane reconstruction corresponds to 0.06 µm (E), 0.10 µm (F), 0.13 µm (G), and 0.15 µm (H). (I–L) 3D reconstruction of a thylakoid membrane of an etioplast at T0 (I) or a chloroplast at T4 (J), T24 (K), and T96 (L). Scale bars = 1 µm. Details of grana segmentation at T24 are provided in Figure 3—figure supplement 1. PLB: prolamellar body; PT: prothylakoid; PE: plastid envelope; SG: starch grain; GS: grana stack; SL: single lamella.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Selection of thylakoid membrane exposed to the stroma was acquired using Amira. (B) The perimeter of the grana structures showed in black were segmented in layers of a specific thickness and distance using Rhino software, with the corresponding thickness (lamellae and stromal gap) measured and calculated as described in Figure 2—figure supplement 1. Grana segmentation was performed using thylakoid membrane of de-etiolating seedlings exposed to continuous white light (40 μmol/m2/s) for 24 (T24) and 96 (T96) hr. A representative example of a T24 replicate is illustrated here. (C) Schematic representation of the grana stack perimeter comprising margins, end membranes, and intergranal lamellae. (D) Equation used to calculate the percentage of the grana stack surface area relative to total thylakoid surface area.
+
+![Video 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-video1.mp4.jpg)
+
+**Video 1.:** The tour of the etioplast reveals its ovoid shape. The sequential view of the 3D reconstruction and final partial 3D visualization reveals a single prolamellar body and interconnected prothylakoids.
+
+![Video 2.](https://cdn.elifesciences.org/articles/62709/elife-62709-video2.mp4.jpg)
+
+**Video 2.:** The tour of the chloroplast reveals its ovoid/discoid shape. The sequential view of the 3D reconstruction and final partial 3D visualization reveals that thylakoids are constituted by lamellae parallelly oriented.
+
+![Video 3.](https://cdn.elifesciences.org/articles/62709/elife-62709-video3.mp4.jpg)
+
+**Video 3.:** The tour of the chloroplast reveals its hemispheric shape. The sequential view of the sections reveals the presence of 8 starch granules . The sequential view of the 3D reconstruction and final partial 3D visualization reveals that thylakoids are constituted by non-appressed (stroma lamellae) and appressed regions (grana).
+
+![Video 4.](https://cdn.elifesciences.org/articles/62709/elife-62709-video4.mp4.jpg)
+
+**Video 4.:** The tour of the chloroplast reveals its hemispheric shape. The sequential view of the sections reveals the presence of 11 large starch granules . The sequential view of the 3D reconstruction and final partial 3D visualization reveals that thylakoids are constituted by non-appressed (stroma lamellae) and appressed regions (grana), with large spaces between lamellae occupied by starch granules.
 
 Using 3D reconstruction of the thylakoid network for three or four chloroplasts for each developmental stage, quantitative data such as chloroplast volume and membrane surface area were extracted and calculated (Figure 4A and B, Figure 3—figure supplement 1 and Table 1). The total chloroplast volume increased about 11-fold from T4 (9.4 µm3) to T96 (112.14 µm3) (Table 1). In parallel, the thylakoid surface area (stroma side) increased about 30-fold reaching 2086 (±393) µm2 per chloroplast at T96 (Figure 4A and Table 1). The surface area increased drastically between T4 and T24 (about 22-fold) and much less (about 1.4-fold) between T24 and T96. Accordingly, quantification of the envelope surface area indicated that the ratio of the thylakoid to envelope surface area increased drastically from T4 to T24, but decreased slightly between T24 and T96 (Table 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig4-v1.jpg)
 
-**Figure 4.:** Quantification of thylakoid surface per chloroplast (A) and chloroplast volume (B) using 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated for 0 hr, 4 hr, 24 hr, and 96 hr in continuous white light (40 µmol/m2/s). Morphometric data were quantified by Labels analysis module of Amira software. Error bars indicate ± SD (n = 3). The total thylakoid surface indicated in A corresponds to the thylakoid surface exposed to the stroma, calculated in Amira software, in addition to the percentage of the grana surface (%Gs) calculated as described in Figure 3—figure supplement 1.Figure 4—source data 1.
+**Figure 4.:** Quantification of thylakoid surface per chloroplast (A) and chloroplast volume (B) using 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated for 0 hr, 4 hr, 24 hr, and 96 hr in continuous white light (40 µmol/m2/s). Morphometric data were quantified by Labels analysis module of Amira software. Error bars indicate ± SD (n = 3). The total thylakoid surface indicated in A corresponds to the thylakoid surface exposed to the stroma, calculated in Amira software, in addition to the percentage of the grana surface (%Gs) calculated as described in Figure 3—figure supplement 1.
 
 Our quantitative observations confirmed that during chloroplast development the major ultrastructural changes (disappearance of prolamellar body, build-up of the thylakoids and their organization into grana) occurs within the first 24 hr of de-etiolation, and no drastic changes occur thereafter. We further analyzed these temporal processes at the molecular level focusing on proteins and lipids that constitute the thylakoid membrane.
 
-## Dynamics of plastid proteins related to thylakoid biogenesis
+### Dynamics of plastid proteins related to thylakoid biogenesis
 
 We analyzed the full proteome to reveal the dynamics of protein accumulation during de-etiolation. Total proteins were prepared from 3-day-old etiolated seedlings exposed to light for 0–96 hr (eight time points; Figure 1A) and quantified by label-free shot-gun mass spectrometry. For relative quantification of protein abundances between different samples, peptide ion abundances were normalized to total protein (see Materials and methods). We considered further only those proteins that were identified with a minimum of two different peptides (with at least one being unique; see Materials and methods for information on protein grouping), resulting in the robust identification and quantification of more than 5000 proteins.
 
@@ -75,37 +330,203 @@ To monitor the dynamics of the plastidial proteome, we selected proteins predict
 
 To analyze the dynamics of proteins related to thylakoid biogenesis, we selected specific proteins and represented their pattern of accumulation during de-etiolation (Figure 5). We included proteins constituting protein complexes located in thylakoids (complexes constituting the electron transport chain and the ATP synthase complex) and proteins involved in chloroplast lipid metabolism, chlorophyll synthesis, and protein import into the chloroplast. In agreement with that depicted in the global heatmap (Figure 5—figure supplement 1), all photosynthesis-related proteins increased in abundance during de-etiolation (Figure 5A). However, our hierarchical clustering did not show any particular clustering per complex. Only few chloroplast-localized proteins related to lipid biosynthesis were present in our proteomics data set. Among the eight detected proteins, two appeared differentially regulated; fatty acid binding protein 1 (FAB1) and fatty acid desaturase 7 (FAD7) levels increased only between 72 hr of illumination (T72) and T96, whereas the other proteins gradually accumulated over the course of de-etiolation (Figure 5B). Etioplasts initiate synthesis of chlorophyll precursors blocked at the level of protochlorophyllide synthesis, with protochlorophyllide oxidoreductase A (PORA) in its inactive form accumulating to high levels in the etioplast before subsequently decreasing at the protein level upon activation and degradation following light exposure (Blomqvist et al., 2008; Runge et al., 1996; Von Wettstein et al., 1995). In agreement, illumination resulted in increased amounts of most of all detected proteins of the chlorophyll biosynthesis pathway, except PORA and to a lesser extent PORB, which clearly decreased and were separated from other chlorophyll-related proteins (Figure 5C and Figure 5—source data 1). We also selected proteins involved in protein import in chloroplasts, focusing on the TOC-TIC machinery (Figure 5D) that is the major route for plastid protein import and essential for chloroplast biogenesis (Kessler and Schnell, 2006). Past studies identified several TOC preprotein receptors that are proposed to display differential specificities for preprotein classes (Bauer et al., 2000; Bischof et al., 2011). The composition of plastid import complexes varies with developmental stages and in different tissues, thereby adjusting the selectivity of the import apparatus to the demands of the plastid and influencing its proteome composition (Demarsy et al., 2014; Kubis et al., 2003). Accordingly, the TOC receptors TOC120 and TOC132, which are important for the import of proteins in non-photosynthetic tissues, were more abundant in etioplasts compared to fully-developed chloroplasts (compare T0 and T96). TOC120 and TOC132 were part of a cluster separated from other components of the plastid machinery, such as the TOC159 receptor associated with large-scale import of proteins in chloroplasts. The general import channel TOC75 (TOC75 III) maintained stable expression levels throughout de-etiolation, reflecting its general role in protein import. All other components clustered with TOC159 and displayed gradual increases in accumulation during de-etiolation. Most of these components have not been reported to confer selectivity to the import machinery, which suggests an overall increase of chloroplast protein import capacity.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig5-v1.jpg)
+
+**Figure 5.:** Three-day-old etiolated seedlings of Arabidopsis thaliana were illuminated for 0 hr (T0), 4 hr (T4), 8 hr (T8), 12 hr (T12), 24 hr (T24), 48 hr (T48), 72 hr (T72), and 96 hr (T96) under white light (40 µmol/m2/s). Hierarchical clustering (Euclidean, average linkage) of normalized protein abundance for photosynthesis-(A), galactolipid metabolism- (B), chlorophyll metabolism- (C), and protein import-related proteins during de-etiolation (D). Protein abundance was quantified by shot-gun proteomics and heatmap colors indicate the fold change (average of 3–4 replicates) of each selected protein at each time point of de-etiolation (T0 to T96), relative to the last time point (T96). Note that some PORA values in panel D were higher than 3.5 and outside of the color range limits. Further hierarchical clustering based on the accumulation dynamics of all plastid-localized proteins is provided in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Hierarchical clustering (Euclidean, average linkage) of normalized protein abundance (log2 fold changes with values increasing from blue to yellow to green, with yellow corresponding to log2 fold change = 0) for plastid-localized proteins during de-etiolation. Normalization was performed to the last time point (96 hr). Defined clusters are indicated with different colors (1 = purple; 2 = pink; 3 = turquoise; 4 = brown; 5 = light green; 6 = dark green). Protein IDs (AGI) and names are legible upon zoom-in.
+
 To validate and complement our proteomic data, we used immunoblot analysis to detect and quantify representative proteins linked to photomorphogenesis and etioplast-to-chloroplast transition.
 
 Our proteomic data indicated a significant decrease of the abundance of the photoreceptor phyA between 48 and 72 hr of illumination (Figure 5—source data 1). However, immunoblots revealed that the abundance of phyA dropped already during the first 4 hr of light exposure (Figure 6), as previously reported (e.g. Debrieux and Fankhauser, 2010). The transcription factor ELONGATED HYPOCOTYL 5 (HY5) is a positive regulator of photomorphogenesis, and accumulates during light exposure (Osterlund and Deng, 1998). The increase of HY5 peptide abundance was not significant by proteomics but we observed a transient accumulation of the protein between 4 and 72 hr by immunoblot (Figure 5—source data 1; Figure 6) consistent with the previously reported regulation of abundance during seedling development (Hardtke et al., 2000).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig6-v1.jpg)
+
+**Figure 6.:** Three-day-old etiolated seedlings of Arabidopsis thaliana were illuminated for 0 hr (T0), 4 hr (T4), 8 hr (T8), 12 hr (T12), 24 hr (T24), 48 hr (T48), 72 hr (T72), and 96 hr (T96) under white light (40 µmol/m2/s). (A) Proteins were separated by SDS-PAGE and transferred onto nitrocellulose membrane and immunodetected with antibodies against PsbA, PsbD, PsbO, PetC, PsaD, PsaC, Lhcb2, AtpC, ELIP, POR, phyA, HY5, and ACTIN proteins. (B–C) Quantification of PsbA, PetC, and PsaC during de-etiolation. Heatmap (B) was generated after normalization of the amount of each protein relative to the last time point (T96). Graph (C) corresponds to the absolute quantification of proteins at T96. Error bars indicate ± SD (n = 3). Quantification of photosystem-related proteins during de-etiolation is detailed in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunodetection of PsbA, PetC, and PsaC during de-etiolation. Dilutions were used for the later time points to avoid saturation of the signal. (B) Different bands were detected by Amersham Imager program and quantified by Image QuantTL (Amersham). (C) Calibration curves were created using recombinant proteins (Agrisera). Calibration curve composition: PsbA 10 ng (A; lane a), 5 ng (b), 2.5 ng (c), and 1.25 ng (d); PetC 10 ng (e), 5 ng (f), 2.5 ng (g), and 1.25 ng (h); PsaC 3 ng (i), 1.5 ng (l), 0.75 ng (m), and 0.325 ng (n). Data indicate mean ± SD (n = 3–4). Raw data and calculations are shown in Figure 6—source data 1.
+
 We further compared data obtained by proteomics and immunoblot focusing on chloroplast localized proteins. Overall, immunoblot and proteomics provided similar results (Figure 6 and Figure 6—figure supplement 1). PsbA and PsbD (PSII reaction center core), PsbO (Oxygen Evolving Complex), and Lhcb2 (outer antenna complex) proteins were detectable in seedlings at T4, gradually increasing thereafter. Accumulation of the PSI proteins PsaC and PsaD and the Cyt b6f complex protein PetC started later; these proteins were detectable starting at T8 (Figure 6A and Figure 6—figure supplement 1). Interestingly, AtpC (ATP synthase complex) was detectable in the etioplast, as described previously (Plöscher et al., 2011). Other proteins were selected as markers of etioplast–chloroplast transition. As expected, ELIPs (Early Light Induced Protein) transiently accumulated upon the dark-to-light transition (Figure 6A; Kimura et al., 2003). As in the proteome analysis, PORA accumulated in etiolated seedlings (T0) and then progressively disappeared upon light exposure. We performed absolute quantification for PsbA, PsaC, and PetC proteins using recombinant proteins as standards (Figure 6B and C and Figure 6—figure supplement 1). Quantitative data (nmol/seedling) were obtained and normalized using the last time point (Figure 6C) to compare the dynamics of protein accumulation. In addition, the comparison of PsbA and PsaC (representative proteins of PSII and PSI, respectively) showed that PsbA levels were about twice that of PsaC at T96 (Figure 6B and C).
 
-## Dynamics of chloroplast membrane lipids
+### Dynamics of chloroplast membrane lipids
 
 Total lipids were extracted from seedlings collected at different time points during de-etiolation (T0, T4, T8, T12, T24, T48, T72, and T96), analyzed by ultra-high-pressure liquid chromatography–mass spectrometry (UHPLC-MS), and quantified against pure standards (Figure 7—source data 1). We analyzed the quantity and kinetics of accumulation of 12 different species of galactolipids (Figure 7A and B). MGDG 18:3/16:3, MGDG 18:3/18:3, MGDG 18:3/16:1, DGDG 18:3/18:3, and DGDG 18:3/16:0 were the most abundant lipids detected at all time points. Accumulation of all galactolipids increased upon de-etiolation; however, clustering analysis identified two distinct kinetic patterns. One group displayed a leap between T8 and T12, whereas the other group increased later during the de-etiolation period (Figure 7C). Interestingly, the two clusters separated the lipids according to the two pathways described for galactolipid synthesis, namely the ER and PL pathways (Figure 7A and B; Marechal et al., 1997; Ohlrogge and Browse, 1995). During early stages of de-etiolation (T0–T24), we observed an incremental accumulation of MGDG and DGDG galactolipids derived from the ER pathway, whereas galactolipids from the PL pathway started to accumulate at T24 (Figure 7A and B). The MGDG/DGDG ratio decreased between T0 and T8. This was associated with the transition from PLB (cubic lipid phase) to thylakoid membrane (lamellar structure) (Bottier et al., 2007). The MGDG/DGDG ratio started to increase gradually at T8 and was constant by T72 and T96 (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig7-v1.jpg)
 
-**Figure 7.:** Three-day-old etiolated seedlings of Arabidopsis thaliana were illuminated for 0 hr (T0), 4 hr (T4), 8 hr (T8), 12 hr (T12), 24 hr (T24), 48 hr (T48), 72 hr (T72), and 96 hr (T96) under white light (40 µmol/m2/s). (A) Heatmap representation of galactolipids (MGDG and DGDG) during de-etiolation. Samples were normalized to the last time point (T96). (B) Absolute quantification at T96 expressed in nmol/seedling. Error bars indicate ± SD (n = 4). (C) Absolute quantification (nmol/seedling) of the most abundant chloroplast galactolipids MGDG (MGDG 18:3/18:3, MGDG 18:3/16:3, MGDG 18:3/16:1) and DGDG (DGDG 18:3/18:3, DGDG 18:3/16:0) at different time points during de-etiolation. Error bars indicate ± SD (n = 4). (D) The MGDG/DGDG ratio was calculated using all 12 species of galactolipids detected during de-etiolation. Error bars indicate ± SD (n = 4).Figure 7—source data 1.
+**Figure 7.:** Three-day-old etiolated seedlings of Arabidopsis thaliana were illuminated for 0 hr (T0), 4 hr (T4), 8 hr (T8), 12 hr (T12), 24 hr (T24), 48 hr (T48), 72 hr (T72), and 96 hr (T96) under white light (40 µmol/m2/s). (A) Heatmap representation of galactolipids (MGDG and DGDG) during de-etiolation. Samples were normalized to the last time point (T96). (B) Absolute quantification at T96 expressed in nmol/seedling. Error bars indicate ± SD (n = 4). (C) Absolute quantification (nmol/seedling) of the most abundant chloroplast galactolipids MGDG (MGDG 18:3/18:3, MGDG 18:3/16:3, MGDG 18:3/16:1) and DGDG (DGDG 18:3/18:3, DGDG 18:3/16:0) at different time points during de-etiolation. Error bars indicate ± SD (n = 4). (D) The MGDG/DGDG ratio was calculated using all 12 species of galactolipids detected during de-etiolation. Error bars indicate ± SD (n = 4).
 
-## Identification of a chloroplast division phase
+### Identification of a chloroplast division phase
 
 We observed a massive increase in the accumulation of photosynthesis-related proteins and galactolipids between T24 and T96, corresponding to FC > 2 in the levels of all major chloroplast proteins and lipids (Figures 6 and 7). Intriguingly, the total thylakoid surface per chloroplast increased by only 41% between these two time points (Figure 4A and Table 1). We reasoned that the increase in chloroplast proteins and lipids between T24 and T96 could be explained by increased chloroplast number (per cell and thus per seedling) and thus total thylakoid surface per seedling. We therefore determined chloroplast number per cell and the cell number and volume for each developmental stage through SBF-SEM analysis (T0, T4, T24, and T96) and confocal microscopy analysis for intermediary time points (T24–T96) (Figure 8 and Figure 8—figure supplement 1). The chloroplast number per cell was constant from T4 (25 ± 8) to T24 (26 ± 6); however, in parallel with cell expansion (Figure 8A and B), chloroplast number increased sharply (fourfold increase) between T24 (26 ± 6) and T96 (112 ± 29), indicating that two rounds of chloroplast division occurred during this time. Immunoblot analysis of FILAMENTOUS TEMPERATURE-SENSITIVE FtsZ1, FtsZ2-1, and FtsZ2-2 proteins showed that these key components of the chloroplast division machinery were already present during the early time points of de-etiolation. We observed considerably increased accumulation of these proteins between T24 and T48, consistent with the idea that activation of chloroplast division takes place at T24, leading the proliferation of chloroplasts (Figure 8C). However, levels of ACCUMULATION AND REPLICATION OF CHLOROPLAST 5 (ARC5) protein, another key component of the chloroplast division machinery, clearly increased during de-etiolation between T8 and T12, presumably reflecting assembly of the chloroplast division machinery before its activation and the proliferation of chloroplasts (Figure 8D). To test whether there is a correlation between chloroplast division and either volume or developmental stage, we measured the volume of dividing chloroplasts (selected visually based on the presence of a constriction ring, see Figure 8—figure supplement 1) at T24 and T96 using images acquired by SBF-SEM. The average volume of dividing chloroplasts at T24 and T96 were consistently higher than the average volume of all chloroplasts (96 µm3 and 136 µm3 compared to 62 µm3 and 112 µm3, respectively) (Figure 4B, Figure 8E and Figure 8—source data 1) indicating that smaller chloroplasts are not dividing. This indicates that developing chloroplasts only divide once a certain chloroplast volume is reached.
 
-## Model of thylakoid surface expansion over time
+![Figure 8.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig8-v1.jpg)
 
-The quantitative molecular data for the major compounds of thylakoids (galactolipids and proteins) and estimation of chloroplast number per cell allowed us to mathematically determine the thylakoid membrane surface area per seedling and its expansion over time (molecular approach hereafter) and compare it to the surface estimated from the 3D reconstruction (morphometric approach hereafter). First, we calculated the surface area occupied by the main galactolipids (MGDG and DGDG) and photosynthesis-related complexes (PSII, Cyt b6f, and PSI) per seedling (Table 2), assuming a 1:1 ratio between number of PsbA, PetC, and PsaC subunits with their corresponding complexes (Amunts and Nelson, 2009; Caffarri et al., 2014; Schöttler et al., 2015).(1)Surface/seedling=nmol/seedling∗ N∗nm2 per molecule
+**Figure 8.:** (A–B) Chloroplast number and cell volume in cotyledons of 3-day-old, dark-grown Arabidopsis thaliana seedlings illuminated for 0 hr (T0), 4 hr (T4), 24 hr (T24), and 96 hr (T96) in continuous white light (40 µmol/m2/s). (A) Chloroplast number per cell during de-etiolation. Error bars indicate ± SD (n = 6 for T0 and T4; seven for T24; five for T96). (B) Cell volume was quantified by the Labels analysis module of Amira software. Error bars indicate ± SD (n = 5–6). (C–D) Total proteins were extracted from T0–T96 seedlings, separated on SDS-PAGE, and transferred onto nitrocellulose. Proteins involved in plastid division (C, FtsZ; D, ARC5) and loading control (actin) were detected using specific antibodies (FtsZ2 antibody recognizes both FtsZ2-1 and FtsZ2-2). (E) Volume of dividing chloroplast at T24 and T96. Error bars indicate ± SD (n = 3). Further details of chloroplast proliferation in parallel with cell expansion are provided in Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** SEM micrographs of 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated for 0 hr (T0; A), 4 hr (T4; B), 24 hr (T24; C), and 96 hr (T96; D) in continuous white light (40 μmol/m2/s). Palisade (PA) and spongy (SP) cells are indicated. Scale bars: 15 μm. (E) 3D reconstruction of a palisade cell at T24 after segmentation of chloroplasts and cell plasma membrane. (F–I) Confocal images of cotyledons of dark-grown seedlings at T24 (F), T48 (G), T72 (H), and T96 (I). Scale bars: 10 μm. (J–M) TEM micrographs of cotyledon cells of dark-grown seedlings at T24 (J), T48 (K), T72 (L), and T96 (M). (J–K), scale bars: 2 μm; L–M, scale bars: 5 µm. (N) Cell perimeter measured with Amira software using (red line). The Z-depth of each stack corresponds to 1 μm. Relative chloroplast number per cell was counted using 2D TEM images (black line). Red error bars indicate ± SD (n = 17). Black error bars indicate ± SD (n = 3–4). (O) Single chloroplast volume quantified at T48 and T72. Data indicate mean ± SD (n = 5). (P) Examples of chloroplasts selected for the quantification of the volume of chloroplast in division at T24 and T96.
+
+### Model of thylakoid surface expansion over time
+
+The quantitative molecular data for the major compounds of thylakoids (galactolipids and proteins) and estimation of chloroplast number per cell allowed us to mathematically determine the thylakoid membrane surface area per seedling and its expansion over time (molecular approach hereafter) and compare it to the surface estimated from the 3D reconstruction (morphometric approach hereafter). First, we calculated the surface area occupied by the main galactolipids (MGDG and DGDG) and photosynthesis-related complexes (PSII, Cyt b6f, and PSI) per seedling (Table 2), assuming a 1:1 ratio between number of PsbA, PetC, and PsaC subunits with their corresponding complexes (Amunts and Nelson, 2009; Caffarri et al., 2014; Schöttler et al., 2015).
+
+$$
+Surface/seedling=nmol/seedling∗ N∗nm^{2} per molecule
+$$
+
+**Table 2.**
+ Surface area occupied by the main galactolipids (MGDG and DGDG) and photosynthetic complexes (PSII, cyt b6f, and PSI).Shown are values at different time points following illumination of 3-day-old etiolated seedlings. Each value indicates the calculated surface area in µm2 and corresponds to the average of three biological replicates. Errors indicate SD.Table 2—source data 1.Quantitative data of surface occupied by galactolipids and proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>T0</th>
+      <th>T4</th>
+      <th>T8</th>
+      <th>T12</th>
+      <th>T24</th>
+      <th>T48</th>
+      <th>T72</th>
+      <th>T96</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MGDG</td>
+      <td>1.11E+07 (±0.03E+07)</td>
+      <td>1.15E+07 (±0.1E+07)</td>
+      <td>1.11E+07 (±0.1E+07)</td>
+      <td>1.75E+07 (±0.18E+07)</td>
+      <td>4.16E+07 (±0.4E+07)</td>
+      <td>8.65E+07 (±0.6E+07)</td>
+      <td>1.68E+08 (±0.09E+08)</td>
+      <td>2.35E+08 (±0.2E+07)</td>
+    </tr>
+    <tr>
+      <td>DGDG</td>
+      <td>3.64E+06 (±0.4E+06)</td>
+      <td>4.23E+06 (±0.5E+06)</td>
+      <td>4.10E+06 (±0.1E+06)</td>
+      <td>6.26E+06 (±0.5E+05)</td>
+      <td>1.32E+07 (±0.1 07)</td>
+      <td>2.32E+07 (±0.2 E+07)</td>
+      <td>3.97E+07 (±0.3E+07)</td>
+      <td>5.48E+07 (±0.41E+07)</td>
+    </tr>
+    <tr>
+      <td>PSII</td>
+      <td>2.04E+06 (±0.5 E+05)</td>
+      <td>2.74E+06 (±0.5E+05)</td>
+      <td>4.40E+06 (±0.2E+06)</td>
+      <td>9.91E+06 (±1.3E+06)</td>
+      <td>2.75E+07 (±0.6E+07)</td>
+      <td>6.06E+07 (±0.2E+07)</td>
+      <td>1.15E+08 (±0.2E+08)</td>
+      <td>1.83E+08 (±0.5E+08)</td>
+    </tr>
+    <tr>
+      <td>PSI</td>
+      <td>0E+00 (±0E+00)</td>
+      <td>0E+00 (±0E+00)</td>
+      <td>0E+00 (±0E+00)</td>
+      <td>8.95E+05 (±4.49E+05)</td>
+      <td>1.33E+07 (±0.4E+07)</td>
+      <td>2.10E+07 (±1.30E+07)</td>
+      <td>3.04E+07 (±0.8E+07)</td>
+      <td>4.24E+07 (±1.89E+07)</td>
+    </tr>
+    <tr>
+      <td>Cyt b6f</td>
+      <td>7.99E+05 (±2.33E+05)</td>
+      <td>8.43E+05 (±2.91E+05)</td>
+      <td>7.5E+05 (±1.33E+05)</td>
+      <td>1.57E+06 (±0.7E+06)</td>
+      <td>3.44E+06 (±1.22E+06)</td>
+      <td>5.30E+06 (±1.01E+06)</td>
+      <td>1.69E+07 (±0.5E+06)</td>
+      <td>2.37E+07 (±1.11E+07)</td>
+    </tr>
+  </tbody>
+</table>
 
 Quantitative data for MGDG, DGDG, PsbA, PetC, and PsaC (nmol/seedling) obtained from lipidomic and immunological analyses (Figures 6 and 7) were converted into number of molecules/seedling using the Avogadro constant (N). To calculate the surface area of outer membrane of thylakoids (i.e. surface exposed to the stroma in lamellae and facing the other thylakoid in appressed regions) and account for the lipid double layer of the membrane, corresponding values of lipids (Figure 7—source data 1, Table 2) were divided by 2. In addition, the lipid values were corrected by subtracting the portion of lipids incorporated into the envelope rather than present in the thylakoids (Table 1). The surface area occupied by molecules of MGDG and DGDG, and that of PSII, Cyt b6f, and PSI photosynthetic complexes (nm2 per molecule, corresponding to stroma-exposed surface) were retrieved from the literature (Table 3). Specifically, we used the minimal molecular area of MGDG and DGDG (Bottier et al., 2007). To quantify the surface area occupied by the galactolipids and photosynthetic complexes in thylakoids per seedling, the number of molecules per seedling of galactolipids was multiplied by the corresponding molecular surface area, whereas the number of molecules per seedling of PsbA, PetC, and PsaC (subunits of PSII, Cyt b6f, and PSI, respectively) were multiplied by the surface area of the corresponding complex (see Table 3).
 
-We calculated thylakoid surface (S) per seedling for each time point (t) as the sum of the surface occupied by MGDG, DGDG, photosynthetic complexes (PS), and ɛ per seedling, the latter of which corresponds to compounds such as other lipids (e.g. sulfoquinovosyldiacylglycerol, plastoquinone) or protein complexes (ATP synthase and NDH) that were not quantified.(2)S_thylakoid(t)/seedling=  (S_MGDG(t)+S_DGDG(t)+S_PS (t)+ ɛ )/seedling
+**Table 3.**
+ Surface area occupied by galactolipid and photosynthetic complexes.Values were retrieved from the corresponding references. MGDG and DGDG surfaces correspond to the minimal molecular area. The surfaces of PSII-LHCII, PSI, and Cyt b6f complexes correspond to the surface exposed to the stroma (19*26 nm, 20*15 nm, and 90*55 Å, respectively).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Surface in nm2</th>
+      <th>reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MGDG</td>
+      <td>0.82</td>
+      <td>Bottier et al., 2007</td>
+    </tr>
+    <tr>
+      <td>DGDG</td>
+      <td>0.64</td>
+      <td>Bottier et al., 2007</td>
+    </tr>
+    <tr>
+      <td>PSII - LHCII (C2 S2 M2)</td>
+      <td>494</td>
+      <td>Caffarri et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Cyt b6f</td>
+      <td>49.5</td>
+      <td>Kurisu et al., 2003</td>
+    </tr>
+    <tr>
+      <td>PSI</td>
+      <td>300</td>
+      <td>Caffarri et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+We calculated thylakoid surface (S) per seedling for each time point (t) as the sum of the surface occupied by MGDG, DGDG, photosynthetic complexes (PS), and ɛ per seedling, the latter of which corresponds to compounds such as other lipids (e.g. sulfoquinovosyldiacylglycerol, plastoquinone) or protein complexes (ATP synthase and NDH) that were not quantified.
+
+$$
+S_thylakoid(t)/seedling=(S_MGDG(t)+S_DGDG(t)+S_PS(t)+ɛ)/seedling
+$$
 
 Omitting the unknown ɛ factor, we plotted the thylakoid surface calculated for each time point where quantitative molecular data were available (T0, T4, T8, T12, T24, T48, T72, and T96) as a function of the duration of light exposure (Figure 9—figure supplement 1). The best fitting curve corresponded to a S-shaped logistic function, characterized by a lag phase at early time points (T0–T8), followed by a phase of near-linear increase, and a final plateau at the final time points (T72–T96). To model this function, a four-parameter logistic non-linear regression equation was used to describe the dynamics of the total thylakoid surface over time (Figure 9—figure supplement 1C).
 
-## Superimposition of molecular and morphometric data
+### Superimposition of molecular and morphometric data
 
-We compared the values of thylakoid surface, as obtained with the model based on molecular data, with the values obtained from the morphometric analysis (Figure 9). The total thylakoid surface per seedling (S_thylakoid_morpho) was calculated by multiplying the thylakoid surface (S_thylakoid) per chloroplast obtained by morphometrics (Figure 4A) by the number of chloroplasts (nb.cp) per cell (Figure 8A) and the number of cells (nb.cells) per seedlings for each time point (t).(3)Sthylakoidmorpho(t)seedling=  S_thylakoid(t)/chloroplast ∗ nb.cp(t)/cell∗ nb.cells(t)/seedling
+We compared the values of thylakoid surface, as obtained with the model based on molecular data, with the values obtained from the morphometric analysis (Figure 9). The total thylakoid surface per seedling (S_thylakoid_morpho) was calculated by multiplying the thylakoid surface (S_thylakoid) per chloroplast obtained by morphometrics (Figure 4A) by the number of chloroplasts (nb.cp) per cell (Figure 8A) and the number of cells (nb.cells) per seedlings for each time point (t).
+
+$$
+\frac{S_{thylakoid_{morpho(t)}}}{seedling}=  S_thylakoid(t)/chloroplast ∗ nb.cp(t)/cell∗ nb.cells(t)/seedling
+$$
+
+![Figure 9.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig9-v1.jpg)
+
+**Figure 9.:** Thylakoid surface per seedling was estimated using quantitative data from 3View analysis (‘MORPHO’ black dots at T4, T24, and T96; and see Figure 4 and Table 1) and model generated using the quantitative data from proteomics and lipidomics (‘MODEL’ red line at T0, T4, T8, T12, T24, T48, T72, and T96, and Table 1). Further details are provided in Figure 9—figure supplements 1 and 2.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Total surface of thylakoid membrane components (in μm2) in function of de-etiolation time point. (B) Individual plots for each biological replicate. (C) Values, standard errors, t-value, and p-value of the four parameters (a, b, c, and d) used in the main equation. Smodel = surface of thylakoid at a specific time (t) t = time of light exposure (h) a = asymptote (to the left if c > 0) b = right asymptote (to the right if c > 0) c = proportional to the slope of the curve at the inflection point d = inflection point (point at which the mean Smodel value is reached).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Cotyledon surface area of 3-day-old, dark-grown Arabidopsis thaliana (Columbia) seedlings illuminated with 24 hr (T24) and 96 hr (T96) of continuous white light (40 µmol/m2/s). (B) The thickness (T) of mesophyll tissue constituted of palisade (PA), spongy (SP) cells, and vascular system (VS) in addition to the epidermal tissue was measured. Error bars indicate ± SD (n = 3–4). (C) Estimation of cotyledon volume. Error bars indicate ± SD (n = 3–4). (D) Estimation of the number of cells per cotyledon (see Figure 9—source data 1 for calculations).
 
 We estimated cell number per seedling by measuring the total volume occupied by palisade and spongy cells in cotyledons (that corresponded to 50% of total cotyledon volume; Figure 9—figure supplement 2) and dividing this by the average cell volume (Table 1). As reported previously (Pyke and Leech, 1994), cell number was constant during cotyledon development. We estimated this number as 3000 mesophyll and palisade cells per seedling at T24 and T96 (Figure 9—figure supplement 2). The thylakoid membrane surface quantified by the morphometric approach was also estimated at T4, assuming that cell number per cotyledon remained similar between T4 and T24. We compared the thylakoid surface predicted by our mathematical model to the surface estimated experimentally with our 3D thylakoid reconstruction and morphometric measurements (Figure 9 and Table 1). As shown in Figure 9, the two approaches showed very similar total thylakoid surface area per seedling at T4 and T24 and differences in this parameter by T96. This indicates that the plateau phase suggested by the model is not validated and that other components that were not included in the model probably contributed to the expansion of thylakoids at later time points of de-etiolation.
 
@@ -115,13 +536,13 @@ Here, the analysis of 3D structures of entire chloroplasts in Arabidopsis in com
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/62709/elife-62709-fig10-v1.jpg)
 
-**Figure 10.:** Arabidopsis thaliana seedlings.The ‘Structure Establishment Phase’ is correlated with disassembly of the PLB and gradual formation of the thylakoid membrane as well as an initial increase of eukaryotic (after 8 hr) and prokaryotic (after 24 hr) galactolipids and photosynthesis-related proteins (PSII subunits at 4 hr, PSI and cyt b6f at 12 hr). The subsequent ‘Chloroplast Proliferation Phase’ is associated with an increase in chloroplast number in concomitance with cell expansion, a linear increase of prokaryotic and eukaryotic galactolipids and photosynthesis-related proteins, and increased grana stacking. The red curve (retrieved from the Figure 9) shows thylakoid surface/seedling dynamics during the de-etiolation process.
+**Figure 10.:** The ‘Structure Establishment Phase’ is correlated with disassembly of the PLB and gradual formation of the thylakoid membrane as well as an initial increase of eukaryotic (after 8 hr) and prokaryotic (after 24 hr) galactolipids and photosynthesis-related proteins (PSII subunits at 4 hr, PSI and cyt b6f at 12 hr). The subsequent ‘Chloroplast Proliferation Phase’ is associated with an increase in chloroplast number in concomitance with cell expansion, a linear increase of prokaryotic and eukaryotic galactolipids and photosynthesis-related proteins, and increased grana stacking. The red curve (retrieved from the Figure 9) shows thylakoid surface/seedling dynamics during the de-etiolation process.
 
-## A set of 3D reconstructions of whole chloroplasts by SBF-SEM
+### A set of 3D reconstructions of whole chloroplasts by SBF-SEM
 
 In contrast to electron tomography, which is limited in the volume of observation, SBF-SEM allows the acquisition of ultrastructural data from large volumes of mesophyll tissue and the generation of 3D reconstructions of entire cells and chloroplasts (Figure 3 and Figure 8—figure supplement 1, Videos 1–4). SEM image resolution was sufficient to visualize stromal lamellae and grana contours, whereas grana segmentation in different lamellae was deduced according to our own TEM analysis and literature data (Figure 2—figure supplement 1 and Figure 3—figure supplement 1). This approach allowed us to obtain quantitative data of chloroplast and thylakoid structure at different developmental stages during de-etiolation at the whole-chloroplast level. By T96, the latest time point of our analysis, the total surface area of thylakoids present in the seedling cotyledons was about 700 mm2 (see values in Table 1 for calculation), about 500-fold greater than the surface area of one cotyledon at this developmental stage. This result is supported by previous estimates made regarding thylakoid surface area relative to leaf surface area (Bastien et al., 2016; Demé et al., 2014). Moreover, the extent of thylakoid surface area emphasizes how fast and efficient thylakoid biogenesis is during plant development, allowing plants to optimize light absorption capacity, ensuring their primary source of energy.
 
-## Chloroplast development: ‘structure establishment phase’
+### Chloroplast development: ‘structure establishment phase’
 
 We observed TEM images and quantified 3D chloroplast ultrastructure by SBF-SEM analysis during chloroplast differentiation. Typical etioplast structure of the PLB connected with tubular PTs was replaced by lamellar thylakoids by T4. Measurements of PLB diameter and thylakoid length and thickness were comparable with literature values (Biswal et al., 2013; Daum et al., 2010; Kirchhoff et al., 2011), indicating that these morphometric values are conserved between various model organisms. Thylakoid surface area per chloroplast increased 20-fold between T4 and T24. Remarkably, PSII maximum quantum yield (Fv/Fm) reached the maximal value (0.8) by T14, independent of light intensity (Figure 1D and Figure 1—figure supplement 1). This shows that PSII assembly, and more globally assembly of the photosynthetic machinery, occurs simultaneously with thylakoid membrane formation and that photosynthesis is operational almost immediately upon greening.
 
@@ -131,13 +552,13 @@ Here, we focused on chloroplast-localized proteins, specifically on thylakoid me
 
 Chloroplast membranes have a specific composition that differs from that of other cell membranes. Galactolipids constitute the bulk of the thylakoid membranes, but are mostly absent from other membrane systems under growth conditions where phosphorus nutrient is available (Jouhet et al., 2007). MGDG and DGDG represent around 80% of the thylakoid membrane lipids. The absolute quantification of 12 types of MGDG and DGDG galactolipids (representing the major forms) revealed specific patterns of accumulation (Figure 7). Results showed a gradual accumulation of MGDG and DGDG galactolipids derived from the ER pathway from T8 to T24, whereas galactolipids from the PL pathway started to accumulate after 1 day of light exposure (T24). This illustrates the different galactolipid compositions of etioplasts and chloroplasts: ER-pathway galactolipids are predominant in the etioplast whereas PL-pathway galactolipids are predominant in the chloroplast. As no significant changes in lipid accumulation were observed by T4, it appears likely that the emergence of PTs relies on the existing lipids in the etioplast PLB, as suggested also by Armarego-Marriott et al., 2019. At later time points, galactolipids from both the ER and PL pathways constitute the lipid matrix of the thylakoid membrane. How the two galactolipid biosynthesis pathways are regulated during development and/or upon light treatment remains to be elucidated; however, we hypothesize that the PL pathway gains traction after T24 when photosynthetic capacity is fully established.
 
-## Chloroplast development: ‘chloroplast proliferation phase’
+### Chloroplast development: ‘chloroplast proliferation phase’
 
 Chloroplast development continued between T24 and T96, during which thylakoid membranes acquired grana stacks with more clearly defined organization (Figure 2). Thylakoid surface increased by only 41%; however, chloroplasts continued to enlarge at a rate comparable to previous de-etiolation stages (T0–T24). This chloroplast volume expansion may be caused by enlargement of extra-thylakoidal spaces occupied by emerging starch granules. These results suggest that large amounts of lipids and proteins are necessary to build up the thylakoid membrane until T24, whereas increases in lipids and proteins between T24 and T96 enable the expansion of already functional thylakoid membranes in preparation for chloroplast division. Indeed, chloroplast number per cell increased during de-etiolation, a process that depends on the division of pre-existing chloroplasts.
 
 Both chloroplasts and mitochondria divide through the activity of supramolecular complexes that constitute the organelle division machineries (Yoshida, 2018). As chloroplast proliferation was observed between T24 and T96, chloroplast division may correlate with developmental stage of the organelle. Components of the chloroplast division machinery (e.g. FtsZ and ARC5) were detectable in etioplasts; however, their protein levels accumulated significantly during de-etiolation as chloroplasts proliferated (Figure 8C and D). Interestingly, the capacity to divide appeared to correlate with a minimum chloroplast volume of about 100 µm3, even at T24 when most chloroplasts were smaller (Figure 8E and Figure 4B). On the other hand, plastid division and volume seem not to correlate with light and chloroplast photosynthetic capacity in monocots, as etioplasts can divide and increase in size with leaf cell development in absence of light (Robertson and Laetsch, 1974; Klein and Mullet, 1986). Whether and how cell, chloroplast size and developmental stage can be sensed to activate the chloroplast division machinery remains poorly understood and requires further study.
 
-## A model of thylakoid expansion
+### A model of thylakoid expansion
 
 Our mathematical model describing the expansion of thylakoid surface per seedling over time considered the surface area occupied by the membrane lipids MGDG and DGDG and the major photosynthetic complexes PSII, PSI, and Cyt b6f. We omitted some components that contribute to the total thylakoid membrane surface (e.g. the protein complexes ATP synthase and NDH, and the lipid sulfoquinovosyldiacylglycerol; together grouped as ‘ɛ’ in Equation 2). The predictions made by our model fit the surface estimated by SBF-SEM at T4 and T24, whereas they do not fit that at T96. This means that compounds used to generate the mathematical model appear to contribute most to changes in thylakoid surface during early stages of de-etiolation (the structure establishment phase). By contrast, during the later stages of de-etiolation (the chloroplast proliferation phase), the contribution of other compounds omitted in our model is obviously required to build up thylakoid surface.
 
@@ -149,27 +570,27 @@ Upon de-etiolation, the development of photosynthetic capacity relies on success
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Arabidopsis thaliana seeds (Columbia ecotype) were surface-sterilized with 70% (v/v) ethanol with 0.05% (v/v) Triton X-100, then washed with 100% ethanol. Seeds were sown in spots containing 50 seeds (to facilitate rapid harvest) on agar plates containing 0.5 × Murashige and Skoog salt mixture (Duchefa Biochemie, Haarlem, Netherlands) without sucrose. Following stratification in the dark for 3 days at 4°C, seeds were irradiated with 40 μmol m−2 s−1 for 2 hr at 21°C and then transferred to the dark (plates were covered with three layers of aluminium foil) for 3 days growth at 21°C. For chlorophyll, protein and lipid analyses, 50 etiolated seedlings per time point and replicate were collected in a dark room using a dim green LED lamp as light source (0 hr of light; T0) and at selected time points (T4, T8, T12, T24, T48, T72, T96) upon continuous white light exposure (40 μmol m−2 s−1 at 21°C), transferred into 1.5 ml tube, flash-frozen in liquid nitrogen and stored at −80°C until further use. For TEM and SBF-SEM microscopy, seedlings were directly immersed into fixation buffer at the corresponding time point.
 
-## Photosynthetic parameters
+### Photosynthetic parameters
 
 Maximum quantum yield of photosystem II (Φmax = FV/FM = (Fm-Fo)/Fm where Fm is the maximal fluorescence in dark adapted state, Fo is minimal fluorescence in dark adapted state, Fv is the variable fluorescence (Fm-Fo)), photosystem II quantum yield in the light (ΦPSII), and photochemical quenching (qP) were determined using a Fluorcam (Photon Systems Instruments) with blue-light LEDs (470 nm). Plants were dark adapted for a minimum of 5 min before measurement.
 
-## Chlorophyll concentration
+### Chlorophyll concentration
 
 Chlorophylls were extracted in 4 volumes of dimethylformamide (DMF) (v/w) overnight at 4°C. After centrifugation, chlorophylls were measured using a NanoDrop instrument at 647 nm and 664 nm. Chlorophyll contents were calculated according to previously described methods (Porra et al., 1989).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Samples were fixed under vacuum (200 mBar) in 0.1 M cacodylate buffer (pH 7.4) containing 2.5% (w/v) glutaraldehyde and 2% (w/v) formaldehyde (fresh from paraformaldehyde) for 4 hr and left in the fixation solution for 16 hr at 4°C. Samples were then incubated in a solution containing 3% (w/v) potassium ferrocyanide and 4 mM calcium chloride in 0.1 M cacodylate buffer combined with an equal volume of 4% (w/v) aqueous osmium tetroxide (OsO4) for 1 hr, on ice. After the first heavy metal incubation, samples were rinsed with ddH2O and treated with 1% (w/v) thiocarbohydrazide solution for 1 hr at 60°C. Samples were rinsed (ddH2O for 15 min) before the second exposure to 2% (w/v) OsO4 aqueous solution for 30 min at room temperature. Following this second exposure to osmium, tissues were placed in 1% (w/v) uranyl acetate (aqueous) and left overnight at 4°C. The samples were rinsed with ddH2O for 15 min, and placed in the lead aspartate solution for 30 min at 60°C. Samples were dehydrated in a series of aqueous ethanol solutions ranging from 50% (v/v) to 100%, then embedded in Durcupan resin by successive changes of Durcupan resin/acetone mixes, with the last imbibition in 100% Durcupan resin. Polymerization of the resin was conducted for 48 hr at 60°C (Deerinck et al., 2010). Ultra-thin sections (70 nm) were cut using an Ultrathin-E microtome (Reichert-Jung) equipped with a diamond knife. The sections were analyzed with a Philips CM-100 electron microscope operating at 60 kV.
 
-## Confocal microscopy
+### Confocal microscopy
 
 To derive the chloroplast and cell volumes, images of 1–5 µm thick sections of cotyledon cells were acquired with ×10 and ×40 oil immersion objectives using a LEICA TCS SP5 confocal laser scanning microscope. Chlorophyll was excited using a red laser (33%) and spectral detection channel was PMT3.
 
-## SBF-SEM
+### SBF-SEM
 
 SBF-SEM was performed on Durcupan resin–embedded cotyledons representing the four de-etiolation time points T0, T4, T24, and T96. Overview of the mesophyll tissue (≈600 images) and zoomed stacks of the chloroplasts (≈300 images) were acquired. Voxel size of T4 zoomed stacks: 3.9 × 3.9×50 nm; T24: 4.7 × 4.7×50 nm; T96: 5.6 × 5.6×50 nm. Voxel size for T0 overview: 9.5 × 9.5×100 nm; T4: 19.3 × 19.3×100 nm; T24: 40 × 40×200 nm; T96: 43.5 × 43.5×200 nm.
 
@@ -177,19 +598,19 @@ Acquired datasets were aligned and smoothed respectively, using the plugins Mult
 
 We performed a stack-reslice from Fiji to generate a new stack by reconstructing the slices at a new pixel depth to obtain isotropic voxel size and improve z-resolution. The segmentation and 3D mesh geometry information of plastid /thylakoid (T0, T4, T24 and T96) were implemented by open-source software 3D Slicer (Fedorov et al., 2012) and MeshLab (Cignoni et al., 2008) respectively.
 
-## Segmentation, 3D reconstruction, and surface and volume quantification
+### Segmentation, 3D reconstruction, and surface and volume quantification
 
 Segmentation and 3D reconstruction of 3View and confocal images were performed using Amira software (FEI Visualization Sciences Group). Specifically, prolamellar body, thylakoids, and envelope membranes as well as the cells were selected using a semi-automatic tool called Segmentation Editor. From the segmented images, triangulated 3D surfaces were created using Generate Surface package. Quantification of morphometric data (Area 3D and volume 3D) was acquired using Label Analysis package.
 
-## Analysis of grana segmentation
+### Analysis of grana segmentation
 
 Grana structures acquired from SBF-SEM were selected in Amira. The grana selections were converted in line set view in Amira software using the Generate Contour line package. To complete the grana segmentation, the line set views were imported into the Rhino six software (Robert McNeel and Associates, USA). Every granum was segmented in layers with a specific thickness and distance according to quantitative data collected (Figure 2—figure supplement 1 and Figure 3—figure supplement 1). After segmentation, images were re-imported to the Amira software to quantify perimeter using the Label Analysis package.
 
-## Chloroplast number determination
+### Chloroplast number determination
 
 Chloroplasts per cell were counted manually using Image J software (Wayne Rasband, National Institutes of Health). From the same SBF-SEM stack, five and/or 6 cells were cropped at each time point (T0, T4, T24, and T96) to quantify chloroplast number per cell. From TEM images, chloroplast number/cell was determined at T24 (16 cells), T48 (12 cells), T72 (12 cells), and T96 (17 cells). TEM images were acquired from two independent experiments.
 
-## Liquid chromatography–mass spectrometry analysis and protein quantification
+### Liquid chromatography–mass spectrometry analysis and protein quantification
 
 Etiolated seedlings were grown as described above. At each time point, ca. 80 seedlings were pooled, frozen in liquid nitrogen, and stored at −80°C until use. Frozen material was ground with a mortar and pestle, and 40–80 mg of plant material was used for protein and peptide preparation using the iST kit for plant tissues (PreOmics, Germany). Briefly, each sample was resuspended in 100 µL of the provided ‘Lysis’ buffer and processed with High Intensity Focused Ultrasound (HIFU) for 1 min by setting the ultrasonic amplitude to 65% to enhance solubilization. For each sample, 100 µg of protein was transferred to the cartridge and digested by adding 50 µL of the provided ‘Digest’ solution. After 180 min of incubation at 37°C, the digestion was stopped with 100 µL of the provided ‘Stop’ solution. The solutions in the cartridge were removed by centrifugation at 3,800 g, whereas the peptides were retained on the iST filter. Finally, the peptides were washed, eluted, dried, and re-solubilized in 18.7 µL of solvent (3% (v/v) acetonitrile, 0.1% (v/v) formic acid).
 
@@ -197,7 +618,7 @@ Mass spectrometry (MS) analysis was performed on a Q Exactive HF-X mass spectrom
 
 Protein quantification based on precursor signal intensity was performed using ProgenesisQI for Proteomics (v4.0.6403.35451; nonlinear dynamics, Waters). Raw MS files were loaded into ProgenesisQI and converted to mzln files. To select the alignment reference, a group of samples that had been measured in the middle of the run (to account for drifts in retention times) and derived from de-etiolation time point T12 or later (to account for increasing sample complexity) was preselected, from which replicate 3 of time point T48 was then automatically chosen as best alignment reference. After automatic peak picking, precursor ions with charges other than 2+, 3+, or 4+ were discarded. The five highest-ranked MS/MS spectra, at most, for each peptide ion were exported, using the deisotoping and charge deconvolution option and limiting the fragment ion count to 200 peaks per MS/MS. The resulting Mascot generic file (.mgf) was searched with Mascot Server version 2.6.2 (http://www.matrixsicence.com) using the following settings: trypsin digest with up to two missed cleavages allowed; carbamidomethylation of cysteine as fixed modification; N-terminal acetylation and oxidation of methionine residue as variable modifications; precursor ion mass tolerance 10 ppm; fragment ion (MS/MS) tolerance 0.04 kDa. This search was performed against a forward and reverse (decoy) Araport11 database that included common MS contaminants and iRT peptides. The mascot result was imported into Scaffold Q+S (v4.8.9; Proteome Software Inc), where a spectrum report was created using a false discovery rate (FDR) of 10% and 0.5% at the protein and peptide level, respectively, and a minimum of one identified peptide per protein. After loading the spectrum report into ProgenesisQI, samples were normalized using the ‘normalize to all proteins’ default settings (i.e. normalization was performed to all ions with charges 2+, 3+ or 4+). Samples were grouped according to de-etiolation time point in a between-group analysis with four replicates for each condition, except for time point T0 and T48, where n = 3. For these two time points, one replicate each had been discarded it appeared as an outlier in principal component analysis (PCA) of protein abundances between different runs (Figure 5—source data 1). Quantification employed the Hi-N method, measuring the three most abundant peptides for each protein (Grossmann et al., 2010). Associated statistics (p-values, PCA etc.) were calculated in ProgenesisQI, except for the q-values, which were calculated from the p-values using the Benjamini-Hochberg (BH) method, with FDR-adjustment to enforce monotonicity. Quantification also used protein grouping, which assigns proteins for which only shared but no unique peptides were identified to a ‘lead’ identifier containing all these shared peptides and thus having the greatest coverage among all grouped identifiers or highest score where coverage is equal. Quantification was restricted to protein (groups) with at least two identified peptides among which at least one is unique to the protein (group). Using these requirements, 5082 Arabidopsis proteins (or groups) were identified. Since 13 additional identifications were exclusively associated with decoy proteins, the false discovery rate at the protein level is estimated to be 0.3%. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD021518.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Proteins were extracted from whole seedlings in four volumes (w/v) of SDS-PAGE sample buffer (0.2 M Tris/HCL pH 6.8, 0.4 M dithiothreitol, 8% (w/v) SDS, 0.4% (w/v) Bromophenol blue, and 40% (v/v) glycerol).
 
@@ -205,12 +626,12 @@ Proteins were denatured for 15 min at 65°C and cell debris were removed by cent
 
 Absolute quantification of PsbA, PetC, and PsaC was performed according to Agrisera instructions and using recombinant proteins (PsbA AS01 0116S, PetC AS08 330S, and PsaC AS04 042S; Agrisera, Vännäs, SWEDEN). Three respective calibration curves for the three recombinant proteins were created. Concentrations used to generate the PsbA and PetC calibration curves were 1.75, 2.5, 5, and 10 (ng/µL). Concentrations used to generate the PsaC calibration curve were 0.375, 0.75, 1.5, and 3 (ng/µL). Immunodetections were performed using specific antibodies: anti-Actin (Sigma, A0 480) at 1/3000 dilution in 5% (w/v) milk in Tris-buffered saline (TBS); anti-Lhcb2 (Agrisera, AS01 003), anti-D1(PsbA) (Agrisera, AS05 084), anti-PsbO (Agrisera, AS14 2825), anti-PsbD (Agrisera, AS06 146), anti-PetC (Agrisera, AS08 330), and anti-AtpC (Agrisera, AS08 312) at 1/5000 dilution in 5% milk/TBS; Anti-PsaD (Agrisera, AS09 461) at 1/2000 in 5% milk/TBS; and anti-PsaC (Agrisera, AS042P) and anti-ARC5 (Agrisera, AS13 2676) at 1/2000 in 3% (w/v) bovine serum albumin (BSA) in TBS. Anti-FtsZ-1 and anti-FtsZ2-1/FtsZ 2–2 (El-Shami et al., 2002; Karamoko et al., 2011) were used at 1/2000 dilution in 5% milk/TBS. After incubation with primary antibodies overnight at 4°C, blots were washed three times in TBS containing 0.1% (v/v) Tween without antibodies for 10 min and incubated for 1 hr at RT with horseradish peroxidase–conjugated secondary antibodies (1/3000 (v/v) anti-rabbit or anti-mouse secondary antibodies, Agrisera). For Anti-HY5 (1/1000 dilution; Oravecz et al., 2006) and anti-phyA (1/1000 dilution; Shinomura et al., 1996), TBS was replaced by Phosphate Buffer Saline (PBS). Chemiluminescence signals were generated with Enhanced chemiluminescence reagent (1 M Tris/HCl pH 8.5, 90 mM coumaric acid, and 250 mM luminol) and detected ﻿with a Fujifilm Image – Quant LAS 4000 mini CCD (GE Healthcare). Quantifications were performed with ImageQuant TL software (GE Healthcare).
 
-## Lipid profiling
+### Lipid profiling
 
 Lipids were extracted from whole seedlings ground in a mortar and pestle under liquid nitrogen. Ground plant material corresponding to 40–80 mg fresh weight was suspended in tetrahydrofuran:methanol (THF/MeOH) 50:50 (v/v). 10–15 glass beads (1 mm in diameter) were added followed by homogenization (3 min, 30 Hz,) and centrifugation (3 min, 14 000 g, at 4°C). The supernatant was removed and transferred to an HPLC vial. Lipid profiling was carried out by ultra-high pressure liquid chromatography coupled with atmospheric pressure chemical ionization-quadrupole time-of-flight mass spectrometry (UHPLC-APCI-QTOF-MS; Martinis et al., 2011). Reverse-phase separation was performed at 60°C on an Acquity BEH C18 column (50 × 2.1 mm, 1.7 µm). The conditions were the following: solvent A = water; solvent B = methanol; 80–100% B in 3 min, 100% B for 2 min, re-equilibration at 80% B for 0.5 min. Flow rate was 0.8 ml min−1 and the injection volume 2.5 µl. Data were acquired using MassLynx version 4.1 (Waters), and processed with MarkerLynx XS (Waters). Peak lists consisting of variables described by mass-to-charge ratio and retention time were generated (Martinis et al., 2011; Spicher et al., 2016).
 
 Absolute quantification of mono- (MGDG) and di-galactosyldiacylglycerol (DGDG) was conducted by creating calibration curves using MGDG (reference number 840523) and DGDG (reference number 840523) products of Avanti Company. Calibration curves were prepared using the following concentrations: 0.08, 0.4, 2, 10, and 50 µg ml−1 of MGDG or DGDG.
 
-## Mathematical model
+### Mathematical model
 
 A non-linear mixed effects model (with fixed effect of time and random effect of replicates on 3 of the parameters), built on a four-parameter logistic function, was implemented in R (free software created by Ross Ihaka and Robert Gentleman, Auckland University, New Zealand), following the examples in Pinheiro and Bates, 2000. The R-packages used are: nlme (Pinheiro and Bates, 2000), effects, lattice and car (Fox and Weisberg, 2018). To account for self-correlation at the replicate level, we proceeded to fit an overall mixed-effects model to the data (package ‘nlme’ from R), using the replicate’s as random effect term (Figure 9—figure supplement 1). The four parameters a, b, c, and d have been calculated (Figure 9—figure supplement 1) and the three plots (one for each biological replicate) (Figure 9—figure supplement 1) indicated the fitting curve for a series of data points.

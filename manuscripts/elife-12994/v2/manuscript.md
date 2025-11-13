@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.12994.001 The 14th–18th century pandemic of Yersinia pestis caused devastating disease outbreaks in Europe for almost 400 years. The reasons for plague’s persistence and abrupt disappearance in Europe are poorly understood, but could have been due to either the presence of now-extinct plague foci in Europe itself, or successive disease introductions from other locations. Here we present five Y. pestis genomes from one of the last European outbreaks of plague, from 1722 in Marseille, France. The lineage identified has not been found in any extant Y. pestis foci sampled to date, and has its ancestry in strains obtained from victims of the 14th century Black Death. These data suggest the existence of a previously uncharacterized historical plague focus that persisted for at least three centuries. We propose that this disease source may have been responsible for the many resurgences of plague in Europe following the Black Death. DOI: http://dx.doi.org/10.7554/eLife.12994.001
+The 14th–18th century pandemic of Yersinia pestis caused devastating disease outbreaks in Europe for almost 400 years. The reasons for plague’s persistence and abrupt disappearance in Europe are poorly understood, but could have been due to either the presence of now-extinct plague foci in Europe itself, or successive disease introductions from other locations. Here we present five Y. pestis genomes from one of the last European outbreaks of plague, from 1722 in Marseille, France. The lineage identified has not been found in any extant Y. pestis foci sampled to date, and has its ancestry in strains obtained from victims of the 14th century Black Death. These data suggest the existence of a previously uncharacterized historical plague focus that persisted for at least three centuries. We propose that this disease source may have been responsible for the many resurgences of plague in Europe following the Black Death.
 
 ## Introduction
 
@@ -53,23 +53,247 @@ To address this key issue in Y. pestis evolution and epidemiology, we investigat
 
 ## Results
 
-Skeletal material used in this investigation was sampled from the Observance (OBS) collection housed in the osteoarcheological library of the Regional Department of Archaeology, French Ministry of Culture, medical faculty of Aix-Marseille Université. Historical records indicate that this collection represents a catastrophic burial for victims of the Great Plague of Marseille relapse in 1722 (
+Skeletal material used in this investigation was sampled from the Observance (OBS) collection housed in the osteoarcheological library of the Regional Department of Archaeology, French Ministry of Culture, medical faculty of Aix-Marseille Université. Historical records indicate that this collection represents a catastrophic burial for victims of the Great Plague of Marseille relapse in 1722 (Signoli et al., 2002). Rescue excavations carried out in 1994 unearthed the remains of 261 individuals, mostly consisting of adult males (Figure 1). Material from this collection was also used in the first PCR-based investigation of ancient Y. pestis DNA from archaeological tissue (Drancourt et al., 1998). In our study 20 in situ teeth were sampled and screened for Y. pestis DNA through a quantitative PCR assay. Amplification products were detectable for five of the 20 teeth (Table 1). Products were not sequenced. Negative controls were free of amplification products. The five putatively Y. pestis-positive samples were subject to high-throughput DNA sequencing after array-based enrichment for Y. pestis DNA. Mapping to the Y. pestis CO92 reference genome revealed a minimum of 12-fold average genomic coverage for each of the five genomes (Table 2 and Figure 2). Raw sequencing data as well as mapped reads have been deposited at the European Nucleotide Archive under accession PRJEB12163. Comparative analysis together with 133 previously published Y. pestis genomes resulted in 3109 core genome SNPs for phylogenetic analysis. No homoplasies were identified.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12994/elife-12994-fig1-v2.jpg)
 
-**Figure 1.:** LAPMO Université de Provence – URA 164 CNRS/AFAN.DOI: http://dx.doi.org/10.7554/eLife.12994.003
+**Figure 1.:** LAPMO Université de Provence – URA 164 CNRS/AFAN.
+
+**Table 1.**
+ Quantitative PCR data for the pla gene obtained for the 19 Observance teeth extracted. Values below std curve detection are highlighted in grey.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PCR Blks:</th>
+      <th>Copies per μl</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCR Blk 1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PCR Blk 2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PCR Blk 3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PCR Blk 4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extraction Blks:</td>
+      <td>Copies per μl</td>
+    </tr>
+    <tr>
+      <td>BLk 1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blk 2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blk 3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blk 4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extracts:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sample</td>
+      <td>Copies per μl</td>
+    </tr>
+    <tr>
+      <td>101a</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>101b</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>117a</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>117b</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Mapping statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>Raw read pairs</th>
+      <th>Preprocessed reads</th>
+      <th>Mapped reads</th>
+      <th>% mapped</th>
+      <th>Dedupped</th>
+      <th>Duplication factor</th>
+      <th>Fold coverage</th>
+      <th>% covered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OBS107</td>
+      <td>14,646,710</td>
+      <td>15,395,287</td>
+      <td>1,850,734</td>
+      <td>12.02%</td>
+      <td>851,096</td>
+      <td>2.17</td>
+      <td>12.20</td>
+      <td>84.79</td>
+    </tr>
+    <tr>
+      <td>OBS110</td>
+      <td>9,879,257</td>
+      <td>10,458,571</td>
+      <td>1,581,158</td>
+      <td>15.12%</td>
+      <td>855,988</td>
+      <td>1.85</td>
+      <td>14.61</td>
+      <td>90.63</td>
+    </tr>
+    <tr>
+      <td>OBS116</td>
+      <td>16,858,273</td>
+      <td>17,876,883</td>
+      <td>2,931,554</td>
+      <td>16.40%</td>
+      <td>1,363,415</td>
+      <td>2.15</td>
+      <td>20.04</td>
+      <td>92.56</td>
+    </tr>
+    <tr>
+      <td>OBS124</td>
+      <td>48,797,602</td>
+      <td>52,345,884</td>
+      <td>4,972,347</td>
+      <td>9.50%</td>
+      <td>973,763</td>
+      <td>5.11</td>
+      <td>13.34</td>
+      <td>85.37</td>
+    </tr>
+    <tr>
+      <td>OBS137</td>
+      <td>120,018,142</td>
+      <td>129,095,434</td>
+      <td>12,669,625</td>
+      <td>9.81%</td>
+      <td>1,583,596</td>
+      <td>8.00</td>
+      <td>24.40</td>
+      <td>92.76</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12994/elife-12994-fig2-v2.jpg)
 
-**Figure 2.:** Inner ring: GC content from low (brown, <30%) to high (orange, >55%). Outer concentric rings: from inner to outer, coverage plots of OBS107, 110, 116, 124, and 137 on a logarithmic scale. Axes are at 30x and 100x. Dots: SNPs (black = non-synonymous, grey = synonymous, white = intergenic). Outer ring (larger dots) is SNPs shared by all five strains. Inner rings (smaller dots) are associated with the strain immediately outside and are SNPs that are not shared by all five strains (but may be shared by 2–4 strains). Krzywinski, M. et al. Circos: an Information Aesthetic for Comparative Genomics. Genome Res (2009) 19:1639–1645DOI: http://dx.doi.org/10.7554/eLife.12994.006
+**Figure 2.:** Inner ring: GC content from low (brown, <30%) to high (orange, >55%). Outer concentric rings: from inner to outer, coverage plots of OBS107, 110, 116, 124, and 137 on a logarithmic scale. Axes are at 30x and 100x. Dots: SNPs (black = non-synonymous, grey = synonymous, white = intergenic). Outer ring (larger dots) is SNPs shared by all five strains. Inner rings (smaller dots) are associated with the strain immediately outside and are SNPs that are not shared by all five strains (but may be shared by 2–4 strains). Krzywinski, M. et al. Circos: an Information Aesthetic for Comparative Genomics. Genome Res (2009) 19:1639–1645
 
-The phylogenetic position of the five OBS sequences on a unique branch of the
+The phylogenetic position of the five OBS sequences on a unique branch of the Y. pestis phylogeny (lineages shown in red in Figure 3), yet seemingly derived from those strains associated with the Black Death, both confirms its authenticity and reveals that it is likely a direct descendent of strains that were present in Europe during the Black Death. Although the topological uncertainty (i.e. trichotomy) among the second pandemic strains (London and Observance) suggests that there was a radiation of Y. pestis lineages at the time, it is notable that the OBS sequences do not possess the additional derived position that is present in both the 6330 London strain and the SNP-typed individual from Bergen Op Zoom (defined as the 's12' SNP by Haensch et al., 2010). Indeed, the tree is striking in that there is clear phylogenetic support (88% bootstrap values, Figure 3A) for 6330 clustering with the Branch 1 strains, including those that gave rise to the third (modern) plague pandemic. Finally, although evolutionary rates in Y. pestis are notoriously variable (Cui et al., 2013; Wagner et al., 2014), the comparatively late time period from which our samples derive and the long branch leading to these OBS sequences suggests that this lineage co-existed for an extended period with the Branch 1 strains responsible for all later human plague outbreaks outside of China.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12994/elife-12994-fig3-v2.jpg)
 
-**Figure 3.:** Yersinia pestis.(A) Maximum likelihood phylogeny of Y. pestis genomic SNPs showing the position of the Observance (OBS) lineage (red) relative to those of 130 modern (black) and three ancient strains (Black Death in green and Justinian Plague in blue). Modern strains from the third pandemic are shown in purple to highlight their close genetic relatedness. Monophyletic groups of sequences have been collapsed to improve clarity and are shown as triangles. The tree is rooted using single strain of Y. pseudotuberculosis (IP32953), with all derived SNPs removed to assist scaling, with branch lengths reflecting the number of nucleotide substitutions/SNP site. The length of the branch leading to the 0.PE3_Angola (AFR) lineage was reduced because its excessive length adversely affected the scaling of the tree. Location abbreviations are as follows: CNH (China), GEO (Georgia), FSU (Former Soviet Union), MNG (Mongolia), NPL (Nepal), IRN (Iran), AFR (Africa), USA (United States of America), MDG (Madagascar), IND (India). (B) Expanded phylogeny schematic to show the relative positions of the Black Death and the Observance lineages. Numbers on branches correspond to SNPs.DOI: http://dx.doi.org/10.7554/eLife.12994.007
+**Figure 3.:** (A) Maximum likelihood phylogeny of Y. pestis genomic SNPs showing the position of the Observance (OBS) lineage (red) relative to those of 130 modern (black) and three ancient strains (Black Death in green and Justinian Plague in blue). Modern strains from the third pandemic are shown in purple to highlight their close genetic relatedness. Monophyletic groups of sequences have been collapsed to improve clarity and are shown as triangles. The tree is rooted using single strain of Y. pseudotuberculosis (IP32953), with all derived SNPs removed to assist scaling, with branch lengths reflecting the number of nucleotide substitutions/SNP site. The length of the branch leading to the 0.PE3_Angola (AFR) lineage was reduced because its excessive length adversely affected the scaling of the tree. Location abbreviations are as follows: CNH (China), GEO (Georgia), FSU (Former Soviet Union), MNG (Mongolia), NPL (Nepal), IRN (Iran), AFR (Africa), USA (United States of America), MDG (Madagascar), IND (India). (B) Expanded phylogeny schematic to show the relative positions of the Black Death and the Observance lineages. Numbers on branches correspond to SNPs.
 
-## Identification of DFR4 in OBS strains
+### Identification of DFR4 in OBS strains
 
 Using the pan-array design, we were able to identify a ~15 kb Genomic Island (GI) in the OBS strains as previously observed in the Justinian and Black Death strains (Wagner et al., 2014) and referred to as DFR 4 (difference region 4). Notably, this region has been lost in some Y. pestis strains such as CO92. This island is a striking example of the decay common to the highly plastic Y. pestis genome.
 
@@ -93,10 +317,10 @@ Raw reads were trimmed, overlapping paired reads were merged as described elsewh
 
 For maximum accuracy in SNP calling, reads were processed independently at three research centres, and the intersection was used as our final SNP table (Supplementary file 1). At the University of Tuebingen, reads were processed as described above and SNP calling was done according to a protocol described by Bos et al. (2014) using the UnifiedGenotyper of the Genome Analysis Toolkit (GATK) (DePristo et al., 2011). Data for 133 previously published Y. pestis strains were processed respectively (Supplementary file 2). A custom tool was used for the comparative processing of the results. SNPs were called with a minimal coverage of 5-fold and a minimal frequency of 90% for the SNP allele. Problematic sites as identified by Morelli et al. (2010), genomic non-core regions as defined by Cui et al. (2013) as well as annotated repeat regions, rRNAs, tRNAs and tmRNAs were excluded from the SNP analysis. SNPs were annotated using SnpEff (Cingolani et al., 2012) with default parameters. The upstream and downstream region size was set to 100 nt. At McMaster University, raw reads were trimmed and merged using SeqPrep (https://github.com/jstjohn/SeqPrep), requiring a minimum overlap of 11 base pairs to merge. Reads shorter than 24 base pairs were filtered out using SeqPrep. Merged reads and unmerged forward reads were concatenated and mapped to the CO92 reference sequence (NC_003143) using the Burrows-Wheeler Aligner (BWA) version 0.7.5 (Li and Durbin, 2009) with the parameters described in Wagner et al. (2014). Duplicates were collapsed using a custom script, which collapses only reads with identical 5' position, 3' position, and direction. Assemblies were imported into Geneious R6 and SNPs with at least 5-fold coverage and 90% variance were called. SNPs were visually inspected for quality. At NAU, reads were trimmed with Trimmomatic (Bolger et al., 2014) and aligned against the CO92 reference sequence using BWA-MEM. SNPs were called with the Unified Genotyper in GATK and were filtered by minimum coverage (5X) and allele frequency (90%). SNPs in genome assemblies were identified by a direct mapping against the reference sequence using NUCmer (Delcher et al., 2002). These methods were wrapped by the Northern Arizona SNP Pipeline (NASP) (tgennorth.github.io/NASP).
 
-## Phylogenetic analysis of the observance Y. pestis
+### Phylogenetic analysis of the observance Y. pestis
 
 A phylogenetic tree of Y. pestis strains was inferred using the maximum likelihood (ML) method available in PhyML (Guindon et al., 2010), assuming the GTR model of nucleotide substitution (parameter values available from the authors on request) and a combination of NNI and SPR branch-swapping. The robustness of individual nodes was assessed using bootstrap resampling (1000 pseudo-replicates) using the same substitution model and branch-swapping procedure as described above. The phylogeny comprised data from the five Observance (OBS) strains, one sequence from Black Death victims who died in London between 1348 and 1350 (a combined pool of identical strains 8291, 11972, and 8124), one sequence from a subsequent outbreak in London, 1350 – 1400 (individual 6330), one sequence from the Plague of Justinian, AD540 (strain A120), and 130 modern Y. pestis strains. A single sequence of Y. pseudotuberculosis (strain IP32953) was used as an outgroup to root the tree, although with all derived SNPs removed to assist branch-length scaling.
 
-## Identification of DFR4 in OBS strains
+#### Identification of DFR4 in OBS strains
 
 Merged and trimmed reads were mapped to the Y. pestis biovar Microtus str. 91,001 chromosome at the DFR 4 region (between position 1041000 and 1063000). Additionally, the unique Microtus 31-mers were also mapped back to the Microtus chromosome to ensure identity of the region using short read length data. All resulting alignment files were compared using BEDTools (Quinlan and Hall, 2010) to identify intervals of the Microtus chromosome that were unique to Microtus when compared to CO92 and were covered by reads from our ancient extracts.

@@ -29,47 +29,81 @@ Here, we report rapid and significant changes in choroidal gene expression of th
 
 ## Results
 
-## Expression of IL-6 in chick ocular tissues
+### Expression of IL-6 in chick ocular tissues
 
 Immunohistochemical staining for IL‐6 indicated that IL-6 is expressed in numerous cells throughout the choroid and RPE as punctate cytoplasmic deposits, some of which appeared to colocalize with nuclei of RPE and choroidal cells (Figure 1A and B, and Figure 1—figure supplement 1, Figure 1—figure supplement 2). IL-6-containing cells included the RPE, choroidal endothelial cells (arrowheads; blood vessels are labeled with asterisks), and choroidal stromal cells. Immunolabeling was abolished after preabsorption of this antibody with a tenfold molar excess of chicken IL-6 demonstrating that the immunohistochemical detection procedure was specific (Figure 1C).
 
-## IL-6 is upregulated in response to myopic defocus
+![Figure 1.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig1-v2.jpg)
 
-## 1. Form deprivation and recovery
+**Figure 1.:** (A, B) Il-6 was localized in treated and contralateral control eyes after 24 hr of recovery from induced myopia (green labeling). (C) Preabsorption of anti-IL-6 with a tenfold molar excess of recombinant chicken IL-6 (1.67 μM) before use on tissue sections abolished IL-6 labeling. Bar=20 µm in (A–C). Choroidal blood vessels are indicated by asterisks (*). Vascular endothelium is indicated by arrowheads (↑). IL-6, interleukin-6 ; LL, lymphatic lacunae; RPE, retinal pigmented epithelium; S, extravascular choroidal stroma.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Adjacent longitudinal sections (10 μm thick) of control chick choroids following standard H&E staining (A), and immunolabeling for IL-6 (B). (C, D) Adjacent oblique sections through chick RPE, choroid, and sclera processed for standard H&E staining (C), and immunolabeling for IL-6 (D). Bar=40 µm in (A–D). Choroidal stroma is indicated by asterisks in (A, B) (*). Vascular endothelium is indicated by arrowheads in (B) (↑). BV, blood vessel; IL-6, interleukin-6; RPE, retinal pigmented epithelium.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** DAPI-labeled nuclei in RPE and choroid from Figure 1 were visualized by increasing the DAPI channel (405 nm) intensity. RPE nuclear layer is located between dotted lines in (A–C). IL-6 immunolabeling is visualized with Alexa Fluor 488 (green labeling). RPE, retinal pigmented epithelium.
+
+### IL-6 is upregulated in response to myopic defocus
+
+#### 1. Form deprivation and recovery
 
 Following 10 days of form deprivation, chick eyes became elongated and developed significant myopia (see Figure 2—figure supplement 1). In response to the myopic defocus, the choroid undergoes a number of structural and chemical changes that result in recovery from the imposed myopia (Wallman et al., 1995). Results from an Affymetrix microarray experiment indicated that IL-6 was increased over tenfold in choroids of chick eyes following 6 hr of recovery, compared with normal, untreated eyes (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig2-v2.jpg)
+
+**Figure 2.:** A volcano plot of Affymetrix chicken microarray data indicated that 207 genes were found to be significantly differentially expressed by ≥2-fold in recovering choroids as compared with choroids from normal untreated chicks (p≤0.05). The horizontal dashed red line indicates where p=0.05, with points above the line having p<0.05 and points below the line having p>0.05. The area between the dashed purple lines indicates points having a fold-change less than |2|. IL-6 was increased by 10.83-fold in recovering choroids compared with normal choroids (n=5 birds in each group); p=0.00084, one-way ANOVA using Method of Moments. IL-6, interleukin-6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Monocular form-deprivation of chicks in this study resulted in a large negative shift in refractive error. Data are represented as mean ± standard errors. *p=0.0313 Wilcoxon matched-pairs signed-rank test for n=6 birds.
+
 To determine the precise temporal pattern of IL-6 expression during recovery, we utilized TaqMan real-time PCR to quantify IL-6 mRNA concentrations in choroids following 10 days of form deprivation and over several time points during recovery from induced myopia (Figure 3A). IL-6 mRNA was significantly increased in choroids following 90 min to 24 hr of recovery compared to contralateral control eyes, reaching a maximum following 6 hr of recovery. By 4 days of recovery, IL-6 mRNA was significantly downregulated in treated choroids, compared with that of treated choroids at 24 hr of recovery, and was similar to that of fellow control eyes p=0.19 and 0.08, for 4 and 8 days of recovery, respectively, (Wilcoxon signed-rank test for matched pairs).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig3-v2.jpg)
+
+**Figure 3.:** (A) IL-6 mRNA expression in choroids from control and treated eyes, following 10 days of form deprivation (0 hr/10 days FD), 0.75 hr to 8 days of recovery from form deprivation, normal, untreated eyes (normal), and in eyes recovered for 6 hr, but kept in total darkness (6 hr in dark) (n=5–16 birds in each group) ***p<0.001, **p<0.01, *p=0.013, Wilcoxon signed-rank test for matched pairs. (B) IL-6 protein production by control and recovering choroids following 6 and 24 hr of recovery from induced myopia. Data are expressed as mean ± SEM (n=16) **p=0.0102, paired t-test. (C) Quantification of other proinflammatory cytokines in chick choroids. Gene expression of Interferon gamma (IFNG), interleukin-1B (IL-1B), and tumor necrosis factor alpha (TNF-α) was quantified in control and treated chick choroids following 6 hr of recovery. Additionally, IL-1B mRNA was quantified following 1.5 and 3 hr of recovery. The dashed line indicates the average IL-6 expression in 6 hr recovering choroids (n=6–11 birds in each group) **p=0.0059, Wilcoxon signed-rank test for matched pairs. IL-6, interleukin-6.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Incubation of chicken sclera in organ culture with recombinant chicken IL-6 (10 ng/ml) for 24 hr had no significant effect on scleral proteoglycan synthesis (p=0.1439, Student’s t-test, n=11 sclera in each group). IL-6, interleukin-6.
 
 The rapid increase in choroidal IL-6 gene expression observed during recovery prompted us to determine whether increased choroidal IL-6 gene expression was an artifact of removal of the occluder, rather than due to a visual stimulus. To address this possibility, one group of chicks was kept in complete darkness for 6 hr following the removal of the occluder (Figure 3A, 6 hr in dark). Interestingly, IL-6 gene expression was significantly lower in both control and recovering eyes, as compared with IL-6 mRNA levels from all other choroids of control, recovering or form deprived eyes reared under normal room light (p=0.013, Mann-Whitney test, for choroids of dark reared control or recovering eyes compared with the lowest control group [1.5 hr control group]).
 
 Choroidal protein expression of IL-6 was also significantly increased following 6 hr of recovery, compared to contralateral control eyes (↑1.36-fold ±0.47 sd, p=0.0102, paired t-test), but returned to control levels by 24 hr of recovery (Figure 3B). We also evaluated gene expression of the chicken cytokines, interferon gamma (IFN-γ), interleukin-1β (IL-1β), and tumor necrosis factor alpha (TNF-α) in choroids of eyes following 1.5–6 hr of recovery and in contralateral control eyes. Gene expression of TNF-α was substantially higher (≈7-fold) than all other cytokines examined, but not significantly different between control and recovering eyes. Only gene expression of IL-1β following 6 hr of recovery was significantly elevated in recovering eyes compared with controls (↑2.79-fold ±2.44 sd, p=0.0059, Wilcoxon signed-rank test for matched pairs) (Figure 3C).
 
-## 2. Light intensity
+#### 2. Light intensity
 
 Based on our observation that IL-6 mRNA was significantly lower in choroids of birds kept in darkness for 6 hr, compared to control or treated eyes reared under standard room lighting, we evaluated the effect of varied light intensity on choroidal IL-6 gene expression. Normal untreated chicks were kept in dim light (5 lux), medium intensity light (700 lux), and high intensity light (3150 lux), as well as red LED light (58 lux) and blue LED light (111 lux) for 6 hr prior to RNA isolation. Exposure to all light intensities resulted in a significant increase in IL-6 mRNA, compared to IL-6 gene expression in choroids of dark reared chicks (Figure 4); however, no differences were observed in IL-6 mRNA levels between the five lighting conditions, with all IL-6 mRNA values similar to that of the normal untreated chick choroids (Figure 3A).
 
-## 3. Optical defocus
+![Figure 4.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig4-v2.jpg)
+
+**Figure 4.:** Normal chicks were housed in complete darkness (dark), white LED light of varying intensities (‘low,’ 5 lux; ‘medium,’ 700 lux; ‘high,’ 3150 lux), red LED light (‘red,’ 58 lux), or blue LED light (‘blue,’ 111 lux) for 6 hr at which time choroids were isolated with Il-6 mRNA was quantified by TaqMan real-time PCR (n=6–8 birds [12–16 choroids]) in each group. ***p<0.001, **p<0.01, Kruskal-Wallis test with Dunn’s multiple comparisons. IL-6, interleukin-6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig4-figsupp1-v2.jpg)
+
+#### 3. Optical defocus
 
 Following removal of the occluder, previously form deprived eyes experience myopic defocus due to form deprivation-induced myopia. We therefore determined whether choroidal IL-6 gene expression was affected following a period of imposed myopic or hyperopic defocus via the application of +15 D or –15 D spectacle lenses (Figure 5A and B). Following 24 hr of +15 D lens wear, choroidal IL-6 gene expression was significantly increased compared with contralateral control eyes (↑8.5-fold ±17.18 sd, p=0.0003, Wilcoxon signed-rank test for matched pairs) (Figure 5C). No significant differences were detected in IL-6 gene expression following 6 hr of +15 D lens wear. Treatment with –15 D lenses had no statistically significant effect on choroidal IL-6 gene expression, although a trend toward decreased expression was noted. Scleral proteoglycan synthesis was also assessed following 24 hr of lens treatment to confirm that the +15 D and –15 D lenses were inducing compensatory ocular growth responses (Figure 5D). As expected, treatment with +15 D lenses resulted in a significant decrease in scleral proteoglycan synthesis (p=0.00047, paired t-test) and treatment with –15 D lenses resulted in a significant increase in scleral proteoglycan synthesis (p=0.0403, paired t-test).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig5-v2.jpg)
 
-**Figure 5.:** (A). Spectacle lenses [minus 15 D (–15) or plus 15 D (+15)] were applied to the right eyes of chicks for 6–24 hr. (B). Schematic diagram illustrating the effects of imposed optical defocus on the location of ocular images of distant objects for an emmetropic eye (center); positive lenses move the image plane in front the retina, imposing myopic defocus (left), while negative lenses move the image plane behind the retina, imposing hyperopic defocus (right). (C) Refractive status of chick eyes while wearing –15 D and +15 D lenses. Application of –15 D lenses results in a hyperopic shift in the refraction of normal chick eyes, relative to untreated (no lens) eyes, whereas application of +15 D lenses results in a myopic shift in refraction, compared to untreated eyes. ***p<0.0001, ANOVA with Bonferroni correction for n=2 chicks in each group (five measurements/chick). (D) IL-6 mRNA expression in choroids from control and treated eyes, following 6 or 24 hr of plus lens wear (n=6 and n=27, respectively), 24 hr of minus lens wear (n=34), and normal untreated choroids (n=8). ***p=0.0003, Wilcoxon signed-rank test for matched pairs. (E) Scleral proteoglycan synthesis following 24 hr of lens wear. Proteoglycan synthesis was significantly reduced following 24 hr of + 15 D lens wear, compared to untreated contralateral control eyes (***p=0.00047, paired t-test, n=10) and was significantly increased following 24 hr of –15 D lens wear, compared with untreated contralateral control eyes (*p=0.0403, paired t-test, n=13).Figure 5—source data 1.
+**Figure 5.:** (A). Spectacle lenses [minus 15 D (–15) or plus 15 D (+15)] were applied to the right eyes of chicks for 6–24 hr. (B). Schematic diagram illustrating the effects of imposed optical defocus on the location of ocular images of distant objects for an emmetropic eye (center); positive lenses move the image plane in front the retina, imposing myopic defocus (left), while negative lenses move the image plane behind the retina, imposing hyperopic defocus (right). (C) Refractive status of chick eyes while wearing –15 D and +15 D lenses. Application of –15 D lenses results in a hyperopic shift in the refraction of normal chick eyes, relative to untreated (no lens) eyes, whereas application of +15 D lenses results in a myopic shift in refraction, compared to untreated eyes. ***p<0.0001, ANOVA with Bonferroni correction for n=2 chicks in each group (five measurements/chick). (D) IL-6 mRNA expression in choroids from control and treated eyes, following 6 or 24 hr of plus lens wear (n=6 and n=27, respectively), 24 hr of minus lens wear (n=34), and normal untreated choroids (n=8). ***p=0.0003, Wilcoxon signed-rank test for matched pairs. (E) Scleral proteoglycan synthesis following 24 hr of lens wear. Proteoglycan synthesis was significantly reduced following 24 hr of + 15 D lens wear, compared to untreated contralateral control eyes (***p=0.00047, paired t-test, n=10) and was significantly increased following 24 hr of –15 D lens wear, compared with untreated contralateral control eyes (*p=0.0403, paired t-test, n=13).
 
-## Choroidal IL-6 mRNA expression in response to nitric oxide
+### Choroidal IL-6 mRNA expression in response to nitric oxide
 
 Nickla et al., 2009 have previously demonstrated that nitric oxide synthesis is necessary for compensation for imposed myopic defocus. Administration of the non-specific inhibitor NOS inhibitor, Na-nitro-L-arginine methyl ester (L-NAME), or the nNOS inhibitor Nw -propyl-L-arginine, blocks recovery from form deprivation myopia (FDM), or compensation to +10 D lens-induced defocus due to inhibition of choroidal thickening and dis-inhibition of scleral proteoglycan synthesis (Nickla et al., 2009; Nickla and Wildsoet, 2004). We therefore investigated the role of nitric oxide on choroidal IL-6 transcription using several approaches. First, L-NAME, or vehicle, was administered via intravitreal injection to chick eyes following 10 days of form deprivation. Chicks were then given unrestricted vision for 6 hr and choroidal IL-6 mRNA was quantified (Figure 6A). Following 6 hr of recovery, IL-6 mRNA was significantly increased in recovering eyes of vehicle (saline) treated eyes compared with contralateral control eyes (↑12-fold ±5.23 sd, p=0.015, Wilcoxon signed-rank test for matched pairs). Administration of L-NAME just prior to recovery resulted in a significant decrease in choroidal IL-6 mRNA, 6 hr following L-NAME administration, as compared with choroidal IL-6 mRNA levels in recovering eyes of saline-treated eyes (p=0.007, Mann-Whitney U-test). L-NAME administration did not completely abolish the recovery-induced rise in choroidal IL-6 mRNA; IL-6 mRNA levels in choroids of L-NAME-treated eyes were significantly higher than that of contralateral untreated eyes (p=0.015, Wilcoxon signed-rank test for matched pairs). As previously reported (Summers Rada and Hollaway, 2011), scleral proteoglycan synthesis was significantly increased in the posterior sclera of chick eyes during the development of FDM (Day 0 of recovery) (p<0.0001, paired t-test) and was rapidly downregulated following 12 hr of recovery to levels similar to that of contralateral control eyes (vehicle) (Figure 6B). Intravitreal application of L-NAME inhibited this recovery response, resulting in a significant increase in scleral proteoglycan synthesis in recovering eyes, as compared with contralateral control eyes (p=0.0121, Wilcoxon signed-rank test for matched pairs) and compared with recovering eyes of vehicle-treated chicks (p=0.0421, Mann-Whitney U-test). These results confirm that intravitreal administration of L-NAME in our study resulted in the same effects on eye growth as have been previously reported.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig6-v2.jpg)
 
-**Figure 6.:** (A) Intravitreal injection of L-NAME (16.2 μmol/eye) immediately prior to recovery significantly reduced IL-6 mRNA levels compared to recovering eyes receiving vehicle only (0.9% NaCl) (**p=0.007, Mann-Whitney U-test, n=7; *p=0.015, Wilcoxon signed-rank test for matched pairs, n=7). (B) L-NAME disinhibits scleral proteoglycan synthesis in recovering eyes. Following 12 hr of recovery from 10 days of form deprivation (FD), scleral proteoglycan synthesis decreased to control levels in vehicle-treated eyes, but remains significantly increased over control levels in L-NAME treated eyes (***p<0.0001, paired t-test, n=16; **p=0.0121 Wilcoxon signed-rank test for matched pairs, n=17; *p=0.0421, Mann-Whitney U-test, n=17). IL-6, interleukin-6.Figure 6—source data 1.
+**Figure 6.:** (A) Intravitreal injection of L-NAME (16.2 μmol/eye) immediately prior to recovery significantly reduced IL-6 mRNA levels compared to recovering eyes receiving vehicle only (0.9% NaCl) (**p=0.007, Mann-Whitney U-test, n=7; *p=0.015, Wilcoxon signed-rank test for matched pairs, n=7). (B) L-NAME disinhibits scleral proteoglycan synthesis in recovering eyes. Following 12 hr of recovery from 10 days of form deprivation (FD), scleral proteoglycan synthesis decreased to control levels in vehicle-treated eyes, but remains significantly increased over control levels in L-NAME treated eyes (***p<0.0001, paired t-test, n=16; **p=0.0121 Wilcoxon signed-rank test for matched pairs, n=17; *p=0.0421, Mann-Whitney U-test, n=17). IL-6, interleukin-6.
 
 L-NAME administration attenuated the recovery-induced increase in choroidal IL-6 transcription observed following 6 hr of recovery, suggesting that NO is involved in the regulation of choroidal IL-6 mRNA transcription. Therefore, we directly tested the effect of an NO donor on IL-6 gene transcription using isolated chicken choroids (Figure 7). Treatment of choroids with PAPA-NONOate, an NO donor with a half-life of 15 min at 37°C, led to a concentration dependent increase in IL-6 mRNA that reached a fivefold increase at 1.5 mM (Figure 7A). Protein expression of IL-6 was also significantly increased in isolated choroids following incubation with PAPA-NONOate, compared to that of choroids incubated in culture medium alone (p=0.0079, p=0.0.0357, for control vs. 3 mM PAPA-NONOate and control vs. 5 mM PAPA-NONOate, respectively; Mann-Whitney U-test) (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig7-v2.jpg)
 
-**Figure 7.:** Choroids were isolated from normal chicken eyes and were incubated with the indicated concentrations of PAPA-NONOate for 24 hr. (A) IL-6 gene expression was significantly increased in choroids following incubation in 1.5 mM PAPA-NONOate (*p=0.0079, Mann-Whitney U-test, n=4–5 choroids in each group). (B) IL-6 protein concentrations were significantly increased in choroid culture supernatants following incubation with 3–5 mM PAPA-NONOate (**p=0.0079, *p=0.0357, Mann-Whitney U-test, n=3–5 choroids in each group). (C) Incubation of chicken choroids with PAPA-NONOate (1.5 mM) together with the p38 MAPK inhibitor SB203580 (10 μM) abolished the PAPA-NONOate-induced increase in IL-6 mRNA (**p=0.0032, *p=0.0308, Student’s t-test, n=10 choroids in each group). IL-6, interleukin-6.Figure 7—source data 1.
+**Figure 7.:** Choroids were isolated from normal chicken eyes and were incubated with the indicated concentrations of PAPA-NONOate for 24 hr. (A) IL-6 gene expression was significantly increased in choroids following incubation in 1.5 mM PAPA-NONOate (*p=0.0079, Mann-Whitney U-test, n=4–5 choroids in each group). (B) IL-6 protein concentrations were significantly increased in choroid culture supernatants following incubation with 3–5 mM PAPA-NONOate (**p=0.0079, *p=0.0357, Mann-Whitney U-test, n=3–5 choroids in each group). (C) Incubation of chicken choroids with PAPA-NONOate (1.5 mM) together with the p38 MAPK inhibitor SB203580 (10 μM) abolished the PAPA-NONOate-induced increase in IL-6 mRNA (**p=0.0032, *p=0.0308, Student’s t-test, n=10 choroids in each group). IL-6, interleukin-6.
 
 As NO has been shown to activate members of the MAPK pathway in a cGMP-independent manner, and given that the p38 pathway plays essential roles in the production of IL-6 and other proinflammatory cytokines (IL-1β, TNF-α, and IL-6) (Guan et al., 1998), we sought to determine whether p38 MAPK activation contributes to the NO-mediated stimulation of choroidal IL-6 transcription. Treatment of isolated choroids with the p38 specific inhibitor, SB203580, and PAPA-NONOate abolished the NO-induced increase in IL-6 mRNA, suggesting that the NO-stimulated IL-6 transcription is mediated through activation of MAPK signaling pathways (Figure 7C).
 
@@ -77,15 +111,15 @@ Since choroidal IL-6 synthesis was upregulated following treatment of choroids w
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig8-v2.jpg)
 
-**Figure 8.:** Choroids were isolated from normal chicken eyes and were incubated with the indicated concentrations of L-arg for 24 hr. KCl (50 mM) was added to some cultures to depolarize cell membranes. (A) IL-6 gene expression was significantly increased in choroids following incubation in 5 mM L-arg in the presence of 50 mM KCl (*p=0.0188, Mann-Whitney test, n=9 choroids in each group). (B) Dose response for the effect of L-arg on IL-6 gene expression. IL-6 gene expression was significantly increased in choroids following incubation in 5 mM L-arginine in the presence of 50 mM KCl (*p=0.04, Mann-Whitney test, n=9 choroids in each group). IL-6, interleukin-6.Figure 8—source data 1.
+**Figure 8.:** Choroids were isolated from normal chicken eyes and were incubated with the indicated concentrations of L-arg for 24 hr. KCl (50 mM) was added to some cultures to depolarize cell membranes. (A) IL-6 gene expression was significantly increased in choroids following incubation in 5 mM L-arg in the presence of 50 mM KCl (*p=0.0188, Mann-Whitney test, n=9 choroids in each group). (B) Dose response for the effect of L-arg on IL-6 gene expression. IL-6 gene expression was significantly increased in choroids following incubation in 5 mM L-arginine in the presence of 50 mM KCl (*p=0.04, Mann-Whitney test, n=9 choroids in each group). IL-6, interleukin-6.
 
-## Atropine stimulates choroidal IL-6 transcription
+### Atropine stimulates choroidal IL-6 transcription
 
 Atropine has been shown to be clinically effective at reducing myopia progression in clinical trials (Upadhyay and Beuerman, 2020) and in avian and mammalian animal models of myopia, although the mechanism of action is poorly understood (Whatham et al., 2019; McBrien et al., 1993). Therefore, we examined the effect of atropine on choroidal IL-6 transcription in chicks undergoing FDM (Figure 9). Intravitreally delivered atropine (240 nmol/eye) significantly increased choroidal IL-6 mRNA in form deprived eyes as compared with vehicle-treated form deprived eyes (↑4.16-fold ±5.66 sd, p=0.0498, Mann-Whitney U-test), when measured 6 hr following atropine administration (Figure 9A). Interestingly, application of atropine (0.1%) directly to isolated chick choroids stimulated IL-6 gene expression (↑4.75-fold ±5.80 sd, p=0.0092, Student’s t-test) (Figure 9B). Protein expression of IL-6 was also significantly increased in isolated choroids following incubation with 0.1% atropine, compared to that of choroids incubated in culture medium alone (p=0.0491; Mann-Whitney U-test) (Figure 9C).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/70608/elife-70608-fig9-v2.jpg)
 
-**Figure 9.:** (A) Intravitreal injection of atropine (240 nmol/eye) into chick eyes following 14 days of form deprivation (myopic eyes) increased IL-6 mRNA levels compared to myopic eyes receiving vehicle only (PBS) (*p=0.0498, Mann-Whitney U-test, n=18). (B) Incubation of chicken choroids in organ culture with 0.15 atropine for 24 hr significantly increased choroidal IL-6 gene expression (**p=0.0092, Student’s t-test, n=16). (C) IL-6 protein concentrations were significantly increased in choroid culture supernatants following incubation with 0.1% atropine (*p=0.0491, Mann-Whitney U-test, n=10 choroids in each group). IL-6, interleukin-6.Figure 9—source data 1.
+**Figure 9.:** (A) Intravitreal injection of atropine (240 nmol/eye) into chick eyes following 14 days of form deprivation (myopic eyes) increased IL-6 mRNA levels compared to myopic eyes receiving vehicle only (PBS) (*p=0.0498, Mann-Whitney U-test, n=18). (B) Incubation of chicken choroids in organ culture with 0.15 atropine for 24 hr significantly increased choroidal IL-6 gene expression (**p=0.0092, Student’s t-test, n=16). (C) IL-6 protein concentrations were significantly increased in choroid culture supernatants following incubation with 0.1% atropine (*p=0.0491, Mann-Whitney U-test, n=10 choroids in each group). IL-6, interleukin-6.
 
 ## Discussion
 
@@ -115,7 +149,7 @@ The results of the present study indicate that choroidal IL-6 is a likely player
 
 **Figure 10.:** Myopic defocus initiates a series of signaling events in the retina potentially involving dopamine, nitric oxide synthase (NOS), and nitric oxide (NO) (as well as other mediators not shown). Nitric oxide, synthesized in the retina and/or in the choroid by NOS from L-arginine (L-arg), stimulates choroidal expression of IL-6 via a p38 MAPK-dependent mechanism. Choroidal IL-6, in turn, potentially coordinates many of the features of the choroidal response to myopic defocus including: (1) increased synthesis of hyaluronan synthase 2 (HAS2) and hyaluronic acid (HA), (2) increased synthesis of vascular endothelial growth factor (VEGF), and (3) increased cell proliferation, which result in choroidal thickening, increased vascular permeability, and increased retinaldehyde dehydrogenase 2 (RALDH2), respectively. These choroidal changes lead to the production of scleral growth regulators, such as all-trans-retinoic acid (atRA), that regulate scleral remodeling, such as decreased scleral proteoglycan (PG) synthesis (in chicks) to result in a slowing of ocular growth and recovery from myopia.
 
-## Conclusions
+### Conclusions
 
 In the present study, we report that myopic defocus, either in eyes recovering from induced myopia, or in eyes treated with +15 D spectacle lenses, stimulates IL-6 mRNA and protein synthesis in the chick choroid. The ramifications of increased choroidal IL-6 synthesis are unclear. In the context of ocular growth control, it appears that choroidal IL-6 is associated with a slowing of eye growth, as it is upregulated in recovering eyes (when eyes are decelerating their rate of elongation) and in myopic eyes treated with atropine, an agent known to inhibit vitreous chamber elongation and myopia. Moreover, IL-6 mRNA is downregulated in recovering eyes treated with L-NAME, a compound known to inhibit recovery and increase scleral proteoglycan synthesis and ocular elongation. Treatment of isolated sclera with IL-6 had no effect on scleral proteoglycan synthesis (Figure 3—figure supplement 1), indicating that additional downstream mediators, most likely derived from the choroid, are responsible for regulating the scleral changes associated with recovery.
 
@@ -125,11 +159,126 @@ The identification of small molecule or biological approaches to manipulate chor
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chick IL-6(Rabbit polyclonal)</td>
+      <td>Bio-RadLaboratories</td>
+      <td>Cat#: AHP942ZRRID: AB_2127753</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chicken IL-6Taqman GeneExpression Assay</td>
+      <td>Thermo FisherScientific</td>
+      <td>Gg03337980_m1unlabeled PCR primers andFAM-labeled TaqMan probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chicken interferon γTaqMan GeneExpression Assay</td>
+      <td>ThermoFisherScientific</td>
+      <td>Gg03348618_m1unlabeled PCR primers andFAM-labeled TaqMan probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chicken IL-1βTaqMan GeneExpression Assay</td>
+      <td>Thermo FisherScientific</td>
+      <td>Gg03347154_g1unlabeled PCR primers andFAM-labeled TaqMan probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chicken TNF-α(LITAF) TaqMan GeneExpression Assay</td>
+      <td>Thermo FisherScientific</td>
+      <td>Gg03364359_m1 unlabeled PCR primers andFAM-labeled TaqMan probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chicken GAPDHTaqMan GeneExpression Assay</td>
+      <td>Thermo FisherScientific</td>
+      <td>Gg03346982_m1unlabeled PCR primers andFAM-labeled TaqMan probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Chicken IL-6</td>
+      <td>Bio-RadLaboratories</td>
+      <td>Cat#: PAP003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High capacityRNA-to-cDNA kit</td>
+      <td>AppliedBiosystems</td>
+      <td>Cat#: 4388950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNase treatment&amp; removal kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#: AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB 203580</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S8307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atropine(Sulfate Salt)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A-0257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ChemicalCompound, drug</td>
+      <td>L-NAME</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: N5751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PAPA-NONOate</td>
+      <td>CaymanChemical</td>
+      <td>Cat#: 82,140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat#: D3571</td>
+      <td>(5 µg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animals were managed in accordance with the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research, with the Animal Welfare Act, and with the National Institutes of Health Guidelines. All procedures were approved by the Institutional Animal Care and Use Committee of the University of Oklahoma Health Sciences Center (protocol # 20-092H). White Leghorn male chicks (Gallus gallus) were obtained as 2-day-old hatchlings from Ideal Breeding Poultry Farms (Cameron, TX). Chicks were housed in temperature-controlled brooders with a 12 hr light/dark cycle and were given food and water ad libitum. At the end of experiments, chicks were euthanized by an overdose of isoflurane inhalant anesthetic (IsoThesia; Vetus Animal Health, Rockville Center, NY), followed by decapitation.
 
-## Visual manipulations
+### Visual manipulations
 
 FDM was induced in 3–4-day-old chicks by applying translucent plastic goggles to one eye, as previously described (Rada et al., 1991). The contralateral eyes (left eyes) of all chicks remained untreated and served as controls. Chicks were checked daily for the condition of the goggles. Goggles remained in place for 10 days, after which time the goggles were removed and chicks were allowed to experience unrestricted vision (recover) for up to 4 days. When multiple time points were assessed in one experiment, chicks were randomly assigned to groups for each time point.
 
@@ -137,48 +286,48 @@ Lens-induced myopia and hyperopia were induced via the application of +15 and �
 
 For light intensity experiments, cages (24″×24″×16″, L×W×H, respectively) were fitted with Multicolor (RGB) and White LED strip lights at the top surface of the cage and light intensity was controlled using a wireless RF remote (Super Bright LEDs, Inc, St. Louis, MO). Light intensity (5–3150 lux) was measured using a light meter (Datalogger Model 401036, Extech Instruments, Nashua, NH) at a distance of 8 cm from the bottom of the cage (approximate eye-level of chicks). Spectral peaks of LED light sources were obtained using a luminous flux tester spectrometer (OHSP-350, Hangzhou Hopoo Light & Color Technology Co, Zhejiang, China) (Figure 4—figure supplement 1). Chicks were randomly assigned to white, red, or blue light and housed in LED cages for 6 hr (9:30 a.m. to 3:30 p.m.). A separate group of chicks was kept in complete darkness for 6 hr.
 
-## Intravitreal injections
+### Intravitreal injections
 
 Injections were delivered using a NanoFil-100 syringe with a 26G needle (World Precision Instruments, Sarasota, FL) under isoflurane (0.8% in O2; IsoThesia; Vetus Animal Health, Rockville Center, NY) inhalation anesthesia at a flow rate of 0.4 L/min using an Isoflurane Anesthesia machine for veterinary use only (Ohmeda Anesthesia Service and Equipment, Inc, Atlanta, GA). Following removal of the occluder, the sclera was exposed by retracting the eyelids with a handmade ocular speculum and injections were delivered through the sclera at the superior margin of the globe, just outside of the scleral ossicles, after cleaning the eyelids and surround area with 70% alcohol. Injections consisted of L-NAME (Sigma Chemical Co, St. Louis, MO) (a 30 μl injection containing 16.2 μmol of L-NAME in 0.9% saline), 30 μl of 0.9% saline (vehicle for L-NAME) (Nickla and Wildsoet, 2004), atropine sulfate (Sigma Chemical Co) (a 20 μl injection containing 240 nmol of atropine sulfate in phosphate-buffered saline, PBS), and 20 μl of PBS (vehicle for atropine sulfate) (Carr and Stell, 2016). The needle remained in place for 15 s before slowly withdrawing it from the eye and an ophthalmic antibiotic ointment (Vetropolycin, Pharmaderm, Melvill, NY) was applied to the eye. In some cases, the occluders were replaced prior to awakening from the anesthesia.
 
-## Photorefraction
+### Photorefraction
 
 Measurements of the refractive state were performed on anesthetized chicks following 10 days of form deprivation or while wearing +15 D and –15 D lenses without cycloplegia using infrared photorefraction (Schaeffel et al., 2004), performed at a sampling frequency of 62 Hz from a distance of 1 m in a dim room (ambient illuminance about 0.5 lux) (retinoscope and software obtained from Steinbeiss Transfer Centre for Biomedical Optics, Tuebingen, Germany).
 
-## Tissue preparation
+### Tissue preparation
 
 Chicks were euthanized by an overdose of isoflurane inhalant anesthetic (IsoThesia; Vetus Animal Health) following 10 days of form deprivation (day 0 recovery), after various time points of recovery, following lens wear, or light exposure. Eyes were enucleated and cut along the equator to separate the anterior segment and posterior eye cup. Anterior tissues were discarded, and the vitreous body was removed from the posterior eye cups. An 8 mm punch was taken from the posterior pole of the chick eye using a dermal biopsy punch (Miltex Inc, York, PA). Punches were located nasal to the exit of the optic nerve, with care to exclude the optic nerve and pecten oculi. With the aid of a dissecting microscope, the retina and majority of RPE were removed from the underlying choroid and sclera with a drop of PBS (3 mM dibasic sodium phosphate, 1.5 mM monobasic sodium phosphate, 150 mM NaCl, and pH 7.2) and gentle brushing. For microarray, TaqMan real-time PCR, and ELISA assays, choroids were separated from the sclera using a small spatula, placed in 2 ml screw cap tubes, and snap frozen in liquid nitrogen and stored at –80°C. For immunolabeling experiments, choroids with sclera still attached were placed into a 48-well flat-bottom plate (Corning Inc, Corning, NY). A small amount of RPE was left on the choroids to discriminate between the RPE and scleral side of the tissue. The tissues were then fixed with 4% paraformaldehyde (stock solution freshly prepared) in PBS O/N at 4°C.
 
-## Immunolabeling of chick choroids
+### Immunolabeling of chick choroids
 
 Punches (5 mm) containing retina, RPE choroid, and sclera were obtained from the posterior poles of control and recovering chick eyes, fixed in neutral-buffered formalin, and embedded in paraffin, and sections were obtained. Tissue sections of posterior ocular tissues were deparaffinized through a graded series of xylenes and ethanol and rinsed in PBS. Slides were then transferred to a Coplin jar containing citrate buffer, freshly prepared from a 10× concentrate (Thermo Fisher Scientific), and incubated in a rice steamer (Black & Decker, Towson, MD) for 40 min for antigen retrieval. Slides were then cooled for 30 min, washed 2× in PBS and then incubated for 30 min at room temperature (RT) in incubation buffer that consisted of 2% BSA (Sigma Chemical Co) and 0.2% Triton X-100 in PBS. Sections were incubated overnight at 4°C with rabbit anti-chick IL-6 (Bio-Rad Laboratories, Inc, Hercules, CA) diluted 1:20 in incubation buffer. For negative controls, tissue sections were incubated in 25 μg/ml nonimmune rabbit immunoglobulin (Sigma Chemical Co) instead of the IL-6 antibody. Additional pre-absorption controls were performed in which the anti-IL-6 antibody was incubated overnight at 4°C with a tenfold molar excess of recombinant chicken IL-6 (1.67 μM; Bio-Rad Laboratories, Inc) before immunolabeling fixed sections of chick ocular tissues. Following overnight incubation with the primary antibody, sections were rinsed in PBS, and incubated for 30 min at RT in 5 μg/ml of goat anti-rabbit Alexa Fluor 488 (Thermo Fisher Scientific, Richardson, TX). Sections were rinsed in PBS and then incubated for 10 s at RT with 0.0005% DAPI nuclear stain, followed by a final rinse in PBS. Coverslips were mounted onto the slides with Prolong Gold Antifade reagent containing DAPI (Thermo Fisher Scientific), and the immunolabeled sections were examined under an Olympus Fluoview 1000 laser-scanning confocal microscope (Center Valley, PA).
 
-## Microarray
+### Microarray
 
 Choroids were isolated from 10 normal chick eyes (n=5 chicks) and from control and treated chicks eyes following 6 hr of recovery from 10 days of prior form deprivation-induced myopia (n=5 chicks) and kept at –80°C until processed. Choroids were shipped on dry ice to the Microarray Core Facility at the University of Tulsa (Tulsa, OK). When processing began the samples were moved to a container of liquid nitrogen. The choroids were pulverized using a frozen 1.5 ml disposable pestle. Immediately following pulverization the samples were immersed in 300 µl of Ambion TriReagent (Applied Biosystems, Foster City, CA) solution and homogenized for 90 s with a Pellet Mixer. An additional 700 µl of TriReagent was pipetted into the sample after homogenization. Incubation of samples occurred for 5 min using a 1.5 ml microfuge tube shaker at RT. The samples were then transferred to pre-spun Phase Lock Gel Heavy 2 ml Gel tubes (5 Prime Inc, Gaithersburg, MD). 200 µl of chloroform was added to each sample, inverted 12 times, and incubated at RT for 5 min. The samples were then spun at 2°C for 20 min. 500 µl supernatant was poured into 2 ml round-bottom tubes. These tubes were placed into the Qiagen Qiacube robotic workstation and cleaned using the RNeasy Lipid Tissue Mini Kit (Qiagen, Redwood City, CA). The samples were eluted in 50 µl of molecular biology water. The samples were also split into two 25 µl aliquots to ensure sample safety.
 
 Following RNA isolation, the samples were quantified using a NanoDrop 1000 spectrophotometer (Thermo Fisher Scientific). The initial average sample concentration ranged from 20 to 88 ng/µl. The initial RNA 260/280 ratios were between 1.8 and 2.0 with the 260/230 ratios between 0.8 and 1.9. Precipitation of one aliquot of RNA was performed to increase the sample concentration and purity. This procedure was performed by addition of 2.5 volumes of ice-cold 100% EtOH, 1/10 of 3 M ammonium acetate, and 1 µl of glycogen at 5 ng/µl. The samples were incubated at –20°C overnight. The samples were spun at 4°C for 30 min to pellet the RNA. The supernatant was removed and the pellet was washed with ice-cold 80% EtOH to remove the remaining salt. The EtOH was aspirated off and the pellet was dried at RT for 5 min. Molecular biology water was used to re-suspend the RNA pellet. The amount of water used was calculated to bring the sample concentration to between 58 and 133 ng/µl. After precipitation, the 260/280 ratios are between 2.0 and 2.1 and the 260/230 ratios are between 1.8 and 2.1. 150 ng of each sample was processed with the Affymetrix 3′ IVT Express Kit (Thermo Fisher Scientific).
 
-## Microarray data analysis
+### Microarray data analysis
 
 Gene expression was analyzed on an Affymetrix Gene Chip Chicken Genome Array containing 38,535 probes. Slides were scanned by an Agilent Microarray Scanner (Agilent Technologies) and data were extracted by Feature Extraction software 10.7 (Agilent Technologies). The raw data were normalized by the Robust Multichip Average method of normalization (Bolstad et al., 2003; Irizarry et al., 2003a; Irizarry et al., 2003b). The data were grouped into those of normal choroids, recovering choroids, and contralateral control choroids and analyzed using the Method of Moments one-way ANOVA (Eisenhart, 1947) and the Benjamini-Hochberg Step-up procedure for the false discovery rate (FDR) (Benjamini and Hochberg, 1995). Upregulated or downregulated genes were identified by at least twofold changes and the genes with a p-value (adjusted for FDR) below 0.05 were considered statistically different and identified as differentially expressed genes.
 
-## TaqMan quantitative PCR (RT-quantitative PCR)
+### TaqMan quantitative PCR (RT-quantitative PCR)
 
 Choroids were isolated from individual pairs of control and treated eyes and snap frozen in liquid nitrogen. Total RNA was isolated using TRIzol reagent (Thermo Fisher Scientific) followed by DNase treatment (DNA-free, Applied Biosystems) as described previously (Summers et al., 2016). RNA concentration and purity were determined via the optical density ratio of 260/280 using a Nanodrop ND-1000 spectrophotometer and stored at −80°C until use. cDNA was generated from DNase-treated RNA using a High Capacity RNA to cDNA Kit. Real-time PCR was carried out using a Bio-Rad CFX 96. 20 μl reactions were set up containing 10 μl of TaqMan 2× Universal Master Mix (Applied Biosystems), 1 μl 20 × 6-carboxyfluorescein (FAM)-labeled Assay Mix (Applied Biosystems), and 9 μl of cDNA. Each sample was set up in duplicate with specific primers and probed for chicken IL-6 (assay ID number Gg03337980_m1), chicken interferonγ (INFG, assay ID number Gg03348618_m1), chicken IL-1β (IL1β, assay ID number Gg03347154_g1), chicken TNF-α (LITAF, assay ID number Gg03364359_m1), and the reference gene chicken GAPDH (assay ID number Gg03346982_m1) (Thermo Fisher Scientific). The PCR cycle parameters were an initial denaturing step at 95°C for 10 min followed by 45 cycles of 95°C for 15 s and 60°C for 1 min. Normalized gene expression was determined by the ΔΔc(t) method (Livak and Schmittgen, 2001) using Bio-Rad CFX Manager version 3.1 and reported values represent the average of duplicate samples.
 
-## IL-6 protein measurements
+### IL-6 protein measurements
 
 Punches (8 mm) of chick choroids were rinsed in ice-cold PBS (0.01 M, pH 7.2) and homogenized in 300 μl of PBS on ice (Omni Tip, Omni International, Kennesaw, GA). The resulting suspension was sonicated with an ultrasonic homogenizer (Pulse 150, Benchmark Scientific, Edison, NJ) and subjected to two freeze-thaw cycles to further break the cell membranes. Homogenates were then centrifugated for 5 min at 5000×g. Following centrifugation, pellets were discarded and the supernatants stored at ≤–20°C. IL-6 was measured on duplicate samples using a commercially available chicken IL-6 ELISA Kit (Aviva Systems Biology, Corp, San Diego, CA) according to the manufacturer’s instructions. Protein concentrations in choroidal lysates were determined on duplicate samples by Bradford assay. Reported values represent the average of duplicate samples.
 
-## Organ culture
+### Organ culture
 
 Choroids were isolated from eyes from adult chicken heads (Animal Technologies, Inc, Tyler, TX) as described above and placed in 48-well plates containing 300 μl culture medium (1:1 mixture of Dulbecco’s modified Eagle’s medium [DMEM] and Ham’s F12 containing streptomycin [0.1 mg/ml], penicillin [100 units/ml], and gentamicin [50 µg/ml]) in the presence of the NO donor, PAPA-NONOate (0.5–5 mM in culture medium; Cayman Chemical, Ann Arbor, MI), the p38 MAPK inhibitor, SB203580 (10 μM; Sigma-Aldrich), atropine sulfate (0.1%; Sigma-Aldrich), or culture medium alone in a humidified incubator with 5% CO2, overnight at 37°C. Following incubation, choroids were snap frozen and RNA isolated for TaqMan real-time PCR assays, and medium harvested and frozen for IL-6 ELISA assays.
 
-## Scleral sulfated glycosaminoglycan synthesis
+### Scleral sulfated glycosaminoglycan synthesis
 
 The posterior hemispheres of eyes of FD chicks (=0 days of recovery), or from eyes from chicks recovering from FD myopia for 1–20 days and contralateral controls were obtained and one 5 mm tissue punch was excised from the posterior sclera of control and treated eyes using a dermal punch (Miltex Instrument Co). All retina, RPE, choroid, vitreous, pectin, and muscle were gently cleaned from each sclera punch. Scleral punches were initially placed into wells of a 96-well culture plate with 50 µl of N2 medium Ham’s F-12/DMEM containing 1× N2 supplement (Stem Cell Technologies, Vancouver, BC) until all sclera were obtained. Scleral punches were then transferred to N2 medium containing 35SO4 (100 µCi/ml; New England Nuclear, MA) and incubated for 3 hr at 37°C. Radiolabeled scleral punches were digested with proteinase K (protease type XXVIII, Sigma Chemical Co) (0.05% w/v in 10 mM EDTA, 0.1 M sodium phosphate, and pH 6.5) overnight at 60°C. 35SO4-labeled glycosaminoglycans (GAGs) were precipitated by the addition of 0.5% cetylpyridinum chloride (CPC) in 0.002 M Na2S04 in the presence of unlabeled carrier chondroitin sulfate (1 mg/ml in dH2O). The samples were incubated for 30 min at 37°C and precipitated GAGs were collected on Whatman filters (GF/F) using a Millipore 12-port sampling manifold as previously described (Rada et al., 1992). Radioactivity was measured directly on the filters by liquid scintillation counting.
 
-## Statistics
+### Statistics
 
 Sample sizes were calculated using G*Power 3.1.9.2 using two-tailed tests with an α=0.05, and an effect size determined by group means and standard deviations previously published by this lab and others (Rada et al., 1991; Wallman and Adams, 1987). All experiments were repeated at least one time, and sample sizes and results reported reflect the cumulative data for all trials of each experiment. All data were subjected to the D’Agostino and Pearson test to test the normality of the data. Data that passed the D’Agostino and Pearson test were subjected to parametric analyses. Parametric analyses between two groups were made using paired or unpaired Student’s t-tests, and multiple comparisons were analyzed using a one-way ANOVA followed by a Bonferroni correction. Data that failed the D’Agostino and Pearson test, or had a sample size too small for the D’Agostino and Pearson normality test were subjected to nonparametric analyses. Nonparametric tests between two groups were made using the Wilcoxon signed-rank test for matched pairs, the Mann-Whitney U-test, or the Kruskal-Wallis test for multiple comparisons (GraphPad Prism 5, La Jolla, CA). Results were considered significant with p-value≤0.05.

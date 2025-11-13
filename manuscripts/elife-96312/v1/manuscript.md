@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01hynnt93 Institute of Cognitive and Clinical Neuroscience, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University Mannheim Germany
-2. https://ror.org/00trqv719 Department of Psychiatry, University of Rochester Medical Center Rochester United States
-3. https://ror.org/0130frc33 Department of Statistics and Operations Research, University of North Carolina, Chapel Hill Rochester United States
-4. https://ror.org/024z2rq82 Department of Experimental Psychology, Heinrich Heine University Düsseldorf Düsseldorf Germany
-5. https://ror.org/00trqv719 Department of Neurology, University of Rochester Medical Center Rochester United States
-6. https://ror.org/04v76ef78 Institute of Medical Psychology and Medical Sociology, University Medical Center Schleswig Holstein, Kiel University Kiel Germany
+1. Institute of Cognitive and Clinical Neuroscience, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University Mannheim Germany ([ROR:01hynnt93](https://ror.org/01hynnt93))
+2. Department of Psychiatry, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
+3. Department of Statistics and Operations Research, University of North Carolina, Chapel Hill Rochester United States ([ROR:0130frc33](https://ror.org/0130frc33))
+4. Department of Experimental Psychology, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+5. Department of Neurology, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
+6. Institute of Medical Psychology and Medical Sociology, University Medical Center Schleswig Holstein, Kiel University Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))
 
 † Corresponding author
 
 ## Abstract
 
-Chronic back pain (CBP) is a global health concern with significant societal and economic burden. While various predictors of back pain chronicity have been proposed, including demographic and psychosocial factors, neuroimaging studies have pointed to brain characteristics as predictors of CBP. However, large-scale, multisite validation of these predictors is currently lacking. In two independent longitudinal studies, we examined white matter diffusion imaging data and pain characteristics in patients with subacute back pain (SBP) over 6- and 12-month periods. Diffusion data from individuals with CBP and healthy controls (HC) were analyzed for comparison. Whole-brain tract-based spatial statistics analyses revealed that a cluster in the right superior longitudinal fasciculus (SLF) tract had larger fractional anisotropy (FA) values in patients who recovered (SBPr) compared to those with persistent pain (SBPp), and predicted changes in pain severity. The SLF FA values accurately classified patients at baseline and follow-up in a third publicly available dataset (Area under the Receiver Operating Curve ~0.70). Notably, patients who recovered had FA values larger than those of HC suggesting a potential role of SLF integrity in resilience to CBP. Structural connectivity-based models also classified SBPp and SBPr patients from the three data sets (validation accuracy 67%). Our results validate the right SLF as a robust predictor of CBP development, with potential for clinical translation . Cognitive and behavioral processes dependent on the right SLF, such as proprioception and visuospatial attention, should be analyzed in subacute stages as they could prove important for back pain chronicity.
+Chronic back pain (CBP) is a global health concern with significant societal and economic burden. While various predictors of back pain chronicity have been proposed, including demographic and psychosocial factors, neuroimaging studies have pointed to brain characteristics as predictors of CBP. However, large-scale, multisite validation of these predictors is currently lacking. In two independent longitudinal studies, we examined white matter diffusion imaging data and pain characteristics in patients with subacute back pain (SBP) over 6- and 12-month periods. Diffusion data from individuals with CBP and healthy controls (HC) were analyzed for comparison. Whole-brain tract-based spatial statistics analyses revealed that a cluster in the right superior longitudinal fasciculus (SLF) tract had larger fractional anisotropy (FA) values in patients who recovered (SBPr) compared to those with persistent pain (SBPp), and predicted changes in pain severity. The SLF FA values accurately classified patients at baseline and follow-up in a third publicly available dataset (Area under the Receiver Operating Curve ~0.70). Notably, patients who recovered had FA values larger than those of HC suggesting a potential role of SLF integrity in resilience to CBP. Structural connectivity-based models also classified SBPp and SBPr patients from the three data sets (validation accuracy 67%). Our results validate the right SLF as a robust predictor of CBP development, with potential for clinical translation. Cognitive and behavioral processes dependent on the right SLF, such as proprioception and visuospatial attention, should be analyzed in subacute stages as they could prove important for back pain chronicity.
 
 ## Introduction
 
@@ -43,47 +43,127 @@ Neuroimaging research on chronic pain has uncovered a shift in brain responses t
 
 ## Results
 
-## Demographic and clinical characteristics
+### Demographic and clinical characteristics
 
-At baseline, the data collected in New Haven included 16 SBP patients who recovered (SBPr) at approximately 1-year follow-up as their low-back pain intensity dropped by more than 30% relative to baseline and 12 SBP patients whose pain persisted at follow-up. The SBPp patients were older (38.0±3.6 years, average ± SEM) and had pain for a slightly longer duration (10.8±0.9 weeks) than the SBPr patients (age = 30.8 ± 2.2 years; pain duration = 8.6 ± 0.9 weeks) but these differences did not reach statistical significance (t-score (degrees of freedom) (t(df)) = 1.8 (26), p = 0.08 for age and t(df) = 1.8 (26), p = 0.08 for duration comparisons, respectively, unpaired T-test). The groups did not significantly differ in the distribution of males and females (χ2 = 0.32, df = 1, p = 0.57) or body mass index (BMI) (t(df) = 0.35 (26), p = 0.73). They did not significantly differ in average reported pain intensity (t(df) = - 0.45 (Hockings et al., 2008), p = 0.66). The SBPr patients reported significantly (p = 0.02) larger depression scores on Beck’s Depression Inventory (BDI) (7.3±1.2) than the SBPp patients (3.1±1.1, t(df) = - 2.65 (Hockings et al., 2008), p = 0.02) but the average score indicated that the SBPr patients did not have any clinically significant symptoms (i.e. average BDI <10).
+At baseline, the data collected in New Haven included 16 SBP patients who recovered (SBPr) at approximately 1-year follow-up as their low-back pain intensity dropped by more than 30% relative to baseline and 12 SBP patients whose pain persisted at follow-up. The SBPp patients were older (38.0±3.6 years, average ± SEM) and had pain for a slightly longer duration (10.8±0.9 weeks) than the SBPr patients (age = 30.8 ± 2.2 years; pain duration = 8.6 ± 0.9 weeks) but these differences did not reach statistical significance (t-score (degrees of freedom) (t(df)) = 1.8 (26), p = 0.08 for age and t(df) = 1.8 (26), p = 0.08 for duration comparisons, respectively, unpaired T-test). The groups did not significantly differ in the distribution of males and females ($χ2$ = 0.32, df = 1, p = 0.57) or body mass index (BMI) (t(df) = 0.35 (26), p = 0.73). They did not significantly differ in average reported pain intensity (t(df) = - 0.45 (Hockings et al., 2008), p = 0.66). The SBPr patients reported significantly (p = 0.02) larger depression scores on Beck’s Depression Inventory (BDI) (7.3±1.2) than the SBPp patients (3.1±1.1, t(df) = - 2.65 (Hockings et al., 2008), p = 0.02) but the average score indicated that the SBPr patients did not have any clinically significant symptoms (i.e. average BDI <10).
 
-## Whole-brain tract-based spatial statistics
+### Whole-brain tract-based spatial statistics
 
 We calculated voxel-wise FA of each participant and performed a whole brain comparison over the white matter skeleton using permutation testing between SBPr (n=16) and SBPp (n=12) patients at baseline (unpaired t-test, p<0.05, cluster-based thresholding) corrected for age, gender, and head displacement estimated by eddy current correction (Figure 1—figure supplement 1). SBPr showed larger FA within the cluster of fibers part of the right superior longitudinal fasciculus (SLF; MNI-coordinates of peak voxel: x=35; y = - 13; z=26 mm; t(max)=4.61; Figure 1). The possibility that the observed difference between SBPr and SBPp patients was due to a difference in the amount of displacement applied during registration was ruled out (Figure 1—figure supplement 1). We plotted the FA values of the same SLF region from healthy controls (HC) and CBP patients; Figure 1 shows FA values and their distributions for each group within the SLF cluster. SBPr patients had the largest FA values in the right SLF cluster, even larger than in HC, although this difference did not reach statistical significance (p=0.11). We also examined mean diffusivity (MD), axial diffusivity (AD), and radial diffusivity (RD) extracted from the right SLF shown in Figure 1 to further understand which diffusion component is different between the groups. The right SLF MD is significantly increased (p<0.05) in the SBPr compared to SBPp patients (Figure 1—figure supplement 2), while the right SLF RD is significantly decreased (p<0.05) in the SBPr compared to SBPp patients in the New Haven data (Figure 1—figure supplement 3). Axial diffusivity extracted from the RSLF mask did not show significant difference between SBPr and SBPp (p=0.28; Figure 1—figure supplement 4).
 
-To test whether baseline FA values predict the change in pain severity from baseline to follow-up in the New Haven data set, we did multiple regression analysis with FA values as predictor and the percentage change in pain severity as outcome. In this model, FA values were predictive of pain severity at the 1-year follow-up (adjusted  R2 = 0.202, p = 0.009). To confirm that this result was not driven by age, gender, or head motion, we entered these parameters in a new model adjusting the prediction for these covariates. FA values were still predictive of the change in pain intensity, with added variables improving the model fit (new model: adjusted  R2 = 0.259, p = 0.037; difference between models: F(2,67) = 1.50, p=0.237). Figure 2 depicts the correlation between FA values in the right SLF and pain severity with higher FA values (greater structural integrity) associated with greater reduction in pain (percentage change).
+![Figure 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-v1.jpg)
+
+**Figure 1.:** Results of unpaired t-test (p<0.05, 10,000 permutations) showing significantly increased FA (fractional anisotropy) in SBPr (recovered) compared to SBPp (persistent) patients within the right superior longitudinal fasciculus (SLF) in the New Haven data set. Rain clouds include boxplots and the FA data distribution for each group depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Head displacement (translation (A) and rotation (B) parameters) estimated by eddy current correction per each group in the Discovery data set (HC: healthy controls (n=28); CBP: patients with chronic back pain, (n=29); SBPr: patients with subacute back pain who recovered (n=16); and SBPp: patients with subacute back pain who developed persistent pain (n=12)). Rain clouds include boxplots and the data distribution for each group is depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The right SLF MD is significantly increased (p<0.05) in the SBPr compared to SBPp patients in the New Haven data (A). The RSLF MD is not significantly different for the Mannheim data (p=0.12) (B) nor for the Chicago data neither on visit 1 (p=0.44) (C) nor on visit 4 (p=0.38) (D). The MD values were compared between groups after accounting for age, sex, and motion parameters. The values on the plot are scaled up by 10–4 for graphical depiction. Rain clouds include boxplots and the data distribution for each group is depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The right SLF RD is significantly decreased (p<0.05) in the SBPr compared to SBPp patients in the New Haven data (A). The RSLF RD is not significantly different for the Mannheim data (p=0.24) (B). The RSLF RD is not significantly different in the Chicago data neither on visit 1 (p=0.78) (C) nor on visit 4 (p=0.70) (D). The RD values were compared between groups after accounting for age, sex, and motion parameters. The values on the plot are scaled up by 10–4 for graphical depiction. Rain clouds include boxplots and the data distribution for each group is depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The RSLF AD is not significantly different (p=0.28) in the SBPr compared to SBPp patients in the New Haven data (A). The RSLF AD (p=0.62) is not significantly different for the Mannheim data (B) nor for the Chicago data neither on visit 1 (p=0.15) (C) nor on visit 4 (p=0.36) (D). The AD values were compared between groups after accounting for age, sex, and motion parameters. The values on the plot are scaled up by 10–3 for graphical depiction. Rain clouds include boxplots and the data distribution for each group is depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) A whole brain comparison over the white matter skeleton between SBPr and SBPp patients at baseline and distribution of FA values for each group (New Haven data set). Results of unpaired t-test (p<0.05, 10,000 permutations) showing significantly increased FA (fractional anisotropy) in SBPr (recovered) compared to SBPp (persistent) patients within the right superior longitudinal fasciculus (SLF) in the New Haven data set. (B–D) ROC shows the AUC when using the mask in A to classify the SBPr and SBPp patients at each of the respective sites. *, p<0.05; **, p<0.01.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) and right SLF FA (B). Each subject’s (x-axis) FA value (y-axis) is plotted for the 3 data sets Chicago, New Haven, and Manheim from left to right. FA values significantly changed when we compared the mean skeletal FA or right SLF FA before to after neuroCombat (paired t-test, p<10–7).
+
+To test whether baseline FA values predict the change in pain severity from baseline to follow-up in the New Haven data set, we did multiple regression analysis with FA values as predictor and the percentage change in pain severity as outcome. In this model, FA values were predictive of pain severity at the 1-year follow-up (adjusted  $R^{2}$ = 0.202, p = 0.009). To confirm that this result was not driven by age, gender, or head motion, we entered these parameters in a new model adjusting the prediction for these covariates. FA values were still predictive of the change in pain intensity, with added variables improving the model fit (new model: adjusted  $R^{2}$ = 0.259, p = 0.037; difference between models: F(2,67) = 1.50, p=0.237). Figure 2 depicts the correlation between FA values in the right SLF and pain severity with higher FA values (greater structural integrity) associated with greater reduction in pain (percentage change).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig2-v1.jpg)
 
-**Figure 2.:** New Haven data set).Higher fractional anisotropy (FA) values in the right superior longitudinal fasciculus (SLF) are associated with greater pain reduction (from baseline to follow-up) in the New Haven data set.
+**Figure 2.:** Higher fractional anisotropy (FA) values in the right superior longitudinal fasciculus (SLF) are associated with greater pain reduction (from baseline to follow-up) in the New Haven data set.
 
-## Validation of the results obtained from the New Haven data
+### Validation of the results obtained from the New Haven data
 
-## Mannheim data
+#### Mannheim data
 
 In another independent study, a whole-brain comparison of FA over the white matter skeleton using permutation testing unpaired t-test, P<0.05, threshold-free cluster enhancement (TFCE) corrected for age, gender, and two motion parameters (translation and rotation) revealed two clusters, one in the right superior longitudinal fasciculus (SLF) tract (cluster size = 409 voxels, MNI-coordinates of peak voxel: x = 26, y = –33, z = 45, p(TFCE) = 0.041, t(max) = 3.57) and one in the right corticospinal tract/superior corona radiata (cluster size = 381 voxels, MNI-coordinates of peak voxel: x = 29, y = –16, z = 21, p(TFCE) = 0.041, t(max) = 3.63) that were significantly greater in SBPr (N = 28) compared to SBPp (N=18) (Figure 3). In addition, two smaller clusters were also identified in the same tract of the right SLF (cluster size = 39 voxels, MNI-coordinates of peak voxel: x = 36, y = –13, z = 34, p(TFCE) = 0.048, t(max) = 3.19) and right corticospinal tract (cluster size = 13 voxels, MNI-coordinates of peak voxel: x = 21, y = –27, z = 42, p(TFCE) = 0.049, t(max) = 2.41) as significantly different between SBPr and SBPp patients. In the next step, we extracted FA values from the significant clusters of the Mannheim data and compared them across all groups at that site. As in the New Haven set, recovered patients had the largest FA values across groups, even greater than HC although this difference did not reach significance level (p = 0.12; Figure 3).
 
-To test whether FA baseline values from the significantly different clusters could predict the change in pain severity from baseline to follow-up, we did multiple regression analysis with FA values as predictor and the change in pain severity percentage as outcome. In this model, FA values were predictive of pain severity at the 6 month follow-up (adjusted  R2 = 0.120, p = 0.011). To confirm that this result was not driven by age, gender, or head motion, we entered these parameters in a new model adjusting the prediction for covariates. FA values were still predictive of chronicity, with added variables improving the model fit (new model: adjusted  R2 = 0.236, p = 0.007; difference between models: F(2,67) = 3.67, p = 0.046). Figure 4 depicts the correlation between FA values and pain severity with higher FA values (greater structural integrity) associated with greater reduction in pain (percentage change).
+![Figure 3.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig3-v1.jpg)
+
+**Figure 3.:** Results of unpaired t-test (p<0.05, 10,000 permutations) showing significantly increased FA (fractional anisotropy) in SBPr (recovered) compared to SBPp (persistent) patients at six-months follow-up within the right superior longitudinal fasciculus (SLF) in the Mannheim data set. Rain clouds include boxplots and the FA data distribution for each group depicted on the right side of each boxplot. Jittered circles represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+To test whether FA baseline values from the significantly different clusters could predict the change in pain severity from baseline to follow-up, we did multiple regression analysis with FA values as predictor and the change in pain severity percentage as outcome. In this model, FA values were predictive of pain severity at the 6 month follow-up (adjusted  $R^{2}$ = 0.120, p = 0.011). To confirm that this result was not driven by age, gender, or head motion, we entered these parameters in a new model adjusting the prediction for covariates. FA values were still predictive of chronicity, with added variables improving the model fit (new model: adjusted  $R^{2}$ = 0.236, p = 0.007; difference between models: F(2,67) = 3.67, p = 0.046). Figure 4 depicts the correlation between FA values and pain severity with higher FA values (greater structural integrity) associated with greater reduction in pain (percentage change).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig4-v1.jpg)
 
-**Figure 4.:** Mannheim data set).Higher fractional anisotropy (FA) values in the right superior longitudinal fasciculus (SLF) are associated with greater pain reduction (from baseline to follow-up) in the Mannheim data set.
+**Figure 4.:** Higher fractional anisotropy (FA) values in the right superior longitudinal fasciculus (SLF) are associated with greater pain reduction (from baseline to follow-up) in the Mannheim data set.
 
 We tested the accuracy of local diffusion properties of the right SLF extracted from the mask of voxels passing threshold in the New Haven data (Figure 1) in classifying the Mannheim patients into persistent and recovered. We used a simple cut-off (Green and Swets, 1966) for the evaluation of the area under the receiver operating characteristic (ROC) curve (AUC). FA values corrected for age, gender, and head displacement, accurately classified SBPr (N = 28) and SBPp (N = 18) patients from the Mannheim data set with an AUC = 0.66 (p = 0.031, tested against 10,000 random permutations, see Figure 3—figure supplement 1), validating the predictive value of the right SLF cluster (Figure 5).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig5-v1.jpg)
+
+**Figure 5.:** The right superior longitudinal fasciculus (SLF) cluster from the discovery set accurately classifies patients who recovered (SBPr) and those whose pain persisted (SBPp) in the Mannheim data set at a 6-month follow-up. Classification accuracy is based on the ROC curve. Circles on the boxplots represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range). AUC: area under the curve; * p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig5-figsupp1-v1.jpg)
+
 Figure 5—figure supplement 1 shows the results in the Mannheim data set if a 30% reduction is used as a recovery criterion in this dataset (AUC = 0.53).
 
-## Chicago data
+#### Chicago data
 
 To further validate the right SLF predictive power, we used the mask shown in Figure 1 to extract FA values from SBPr and SBPp patients available in the Chicago data set. FA values in the validation data sets were corrected for age, gender, and head displacement. The criterion for recovery was set identically to the New Haven study, requiring ≥ 30% reduction of reported low-back pain intensity at one-year follow-up. FA values were calculated for two time points; one obtained at baseline when pain was still subacute (6–12 weeks), and one obtained at a one-year follow-up when pain either remitted or persisted (Vachon-Presseau et al., 2016). FA values of the right SLF (Figure 1) accurately classified SBPr (N = 23) and SBPp (N = 35) patients from Chicago with an AUC = 0.70 (p = 0.0043, Figure 6—figure supplement 1) at baseline (Figure 6A), and SBPr (N = 28) and SBPp (N = 34) patients with an AUC = 0.66 (p = 0.014, see Figure 6—figure supplement 2) at follow-up (Figure 6B), validating the predictive cluster from the right SLF at yet another site. The correlation between FA values in the right SLF and pain severity in the Chicago data set showed marginal significance (p = 0.055) at visit 1 (Figure 6—figure supplement 3, panel A) and higher FA values were significantly associated with a greater reduction in pain at visit 2 (p = 0.035; Figure 6—figure supplement 3, panel B).
 
-## Validation after harmonization
+![Figure 6.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-v1.jpg)
+
+**Figure 6.:** The right SLF (superior longitudinal fasciculus) cluster from the discovery set accurately classifies patients who recovered (SBPr) and those whose pain persisted (SBPp) in the Chicago (OpenPain) data set at visit 1 (baseline) (A) and visit 2 (one-year follow-up) (B). Classification accuracy is based on the ROC curve. Circles on the boxplots represent single data points, the middle line represents the median, the hinges of the boxplot the first and third quartiles, and the upper and lower whiskers 1.5*IQR (the interquartile range). AUC: area under the curve; * p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-figsupp3-v1.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** The labels were shuffled 10,000 times; the p-values represent the probability of obtaining an AUC larger than the one obtained from the non-shuffled labels.
+
+### Validation after harmonization
 
 Because the DTI data sets originated from three sites with different MR acquisition parameters, we repeated our TBSS and validation analyses after correcting for variability arising from site differences using DTI data harmonization as implemented in neuroCombat (Fortin et al., 2017). The method of harmonization is described in detail in the Materials and methods section. The whole brain unpaired t-test depicted in Figure 1 was repeated after neuroCombat and yielded very similar results (Figure 1—figure supplement 5, panel A) showing significantly increased FA in the SBPr compared to SBPp patients in the right superior longitudinal fasciculus (MNI-coordinates of peak voxel: x = 40; y = - 42; z = 18 mm; t(max) = 2.52; p<0.05, corrected against 10,000 permutations). We again tested the accuracy of local diffusion properties (FA) of the right SLF extracted from the mask of voxels passing threshold in the New Haven data (Figure 1—figure supplement 5, panel A) in classifying the Mannheim and the Chicago patients, respectively, into persistent and recovered. FA values corrected for age, gender, and head displacement accurately classified SBPr and SBPp patients from the Mannheim data set with an AUC = 0.67 p = 0.023, tested against 10,000 random permutations, Figure 1—figure supplement 5, panel B and Figure 3—figure supplement 2, and patients from the Chicago data set with an AUC = 0.69 (p = 0.0068), Figure 1—figure supplement 5; panel C and Figure 6—figure supplement 4 at baseline, and an AUC = 0.67 (p = 0.0098) (Figure 1—figure supplement 5; panel D and Figure 6—figure supplement 5) patients at follow-up, confirming the predictive cluster from the right SLF across sites. The application of neuroCombat significantly changes the FA values as shown in Figure 1—figure supplement 6 but does not change the results between groups.
 
-## Structural connectivity-based classification of SBPp and SBPr patients
+### Structural connectivity-based classification of SBPp and SBPr patients
 
 We studied the structural connectivity of brain areas known to be connected by different parts of the right SLF by illustrating in three dimensions the white matter fiber-tracts traveling between them (Figure 7A). We also extracted the FA values along those tracts (Figure 7B). Most of the visualized white matter bundles showed thinning (i.e., decreased density) in the SBPp patients when visually inspected relative to the SBPr patients (Figure 7A; Figure 7—figure supplement 1). Additionally, there was a drop in FA along the fiber tracts in the SBPp compared to the SBPr patients with a trend towards a lower number of tracts in the former group (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig7-v1.jpg)
+
+**Figure 7.:** (A) Three-dimensional illustration of SLF tracts connecting the inferior parietal lobe with frontal operculum (left), inferior parietal lobe and middle frontal gyrus (middle), and superior parietal lobe and primary motor cortex (right). Upper two rows show SLF tracts connecting the two regions in 3D with FA values along those tracts shown in blue-to-red. The first row shows two representative SBPr patients and the second row shows two representative SBPp patients. (B) Plot of average FA ± SEM along the tracts depicted in A for 15 SBPr and 12 SBPp patients. The histogram plot shows the average number of tracts for these same patient groups. IPL, inferior parietal lobe; PFO, prefrontal operculum; MFG, middle frontal gyrus; SPL, superior parietal lobe; M1, primary motor cortex.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Three-dimensional illustration of the left (L) SLF tracts connecting the inferior parietal lobe with prefrontal operculum (left), inferior parietal lobe with middle frontal gyrus (middle), and superior parietal lobe and primary motor cortex (right). Upper two rows show SLF tracts connecting the two regions in 3-D with FA values along those tracts shown in blue-to-red. The first row shows two representative SBPr patients and the second row shows two representative SBPp patients. (B) Plot of average FA ± SEM along the tracts depicted in (A) for 15 SBPr and 12 SBPp patients. The histogram plot shows the average number of tracts for these same patient groups. IPL, inferior parietal lobe; PFO, prefrontal operculum; MFG, middle frontal gyrus; SPL, superior parietal lobe; M1, primary motor cortex.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/96312/elife-96312-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** A combination of 40% of the New Haven data and 100% of the Open Pain data was used for model training and validation Testing was performed on 60% of the New Haven data.(A), and the Mannheim data (B) Each point is the result of averaging the performance of the models (i.e. AUC) across 50 iterations as the combination of the data in model training stage was bootstrapped 50 times. The green circles were the final models considered in the result sections with an initial validation AUC ≥0.75.
 
 Furthermore, using fiber count and total connected surface area connecting each pair of regions of the structural white matter connectome as the input features, we pooled the data from the three sites and machine learning cross-validation to classify sub-acute back pain patients as SBPr or SBPp. The best performing structural connectivity model was based on combining 40% of the New Haven data with 100% of the Chicago data during initial training and validation and testing on the remaining 60% of the New Haven data or on the Mannheim data. The average AUC (i.e. the average performance of the model) was 0.67±0.03 (mean ±std) using a support vector classifier (SVC) when classifying the remainder of the New Haven sample and 0.53±0.03 when classifying the Mannheim data (Figure 7—figure supplement 2).
 
@@ -109,11 +189,11 @@ In task-based and resting state neuroimaging studies the brain activity in the f
 
 Despite different time frames for the follow-up, initial (baseline) pain intensities (and accordingly different criteria for subgrouping SBP into SBPr/SBPp), population, sites, scanners, and pain questionnaires/screening used, we successfully validated results across three different sites. Moreover, we carefully addressed the potential confounding effects of head displacement, which can lead to either positive or negative bias (Ling et al., 2012) by accounting for it in the analysis. This points towards the robustness of the integrity of the SLF as a biomarker of resilience to CBP, with a potential for clinical translation.
 
-## Limitations
+### Limitations
 
 Our results are based on heterogeneous samples, heterogeneous pain measures, different criteria for recovery, and different scanners across sites. In addition, at the time of analysis, we had ‘access’ to all the data, which may lead to bias in model training and development. We believe that the data presented here is nevertheless robust since multisite validated but needs replication. Additionally, we followed standard procedures for machine learning where we never mix the training and testing sets. The models were trained on the training data with parameters selected based on cross-validation within the training data. Therefore, no models have ever seen the test data set. The model performances we reported reflect the prognostic accuracy of our model. Even though our model performance is average-to-good, which currently limits its usefulness for clinical translation, we believe that future models would further improve accuracy by using larger homogenous sample sizes and uniform acquisition sequences. Future studies could validate our results with increased sample sizes and using the same criteria across sites. In addition, our studies did not evaluate functions subserved by the right SLF such as proprioception or other types of visuo-spatial tasks. We believe that the results strongly support the future assessment of such cognitive functions in the study of risk and resilience to chronic pain.
 
-## Conclusions and future directions
+### Conclusions and future directions
 
 We have identified a brain white matter biomarker of resilience to CBP and validated it in multiple independent cohorts at different sites. This biomarker is easy to obtain (~10 min of scanning time) and could open the door for translation into clinical practice, as future models on diffusion data are likely to improve accuracy by obtaining the data from larger sample sizes and using the same acquisition sequences. Although chronic pain may eventually affect other neural networks, the microstructural changes in the right SLF tract are evident early in the course of the illness and remain stable as pain progresses. Future studies should investigate how this brain structural predisposition to CBP may impact brain function, information processing, and neural networks. This could lead to potential neural targets for early interventions such as neurofeedback (Bucolo et al., 2022) or brain stimulation (Kandić et al., 2021). In addition, cognitive and behavioral processes associated with the right SLF, such as proprioception and attentional functions, should be examined in subacute stages, as targeting these processes could add to the effective prevention of chronicity. Integrating findings from studies that used questionnaire-based tools and showed remarkable predictive power, (Tanguay-Sabourin et al., 2023) with neurobiological measures that can offer mechanistic insights into chronic pain development, could enhance predictive power in CBP prognostic modeling.
 
@@ -121,9 +201,54 @@ To establish the clinical usefulness of a biomarker, it should be tested in vari
 
 ## Materials and methods
 
-## Data pool
+**Key resources table**
 
-## New Haven (Discovery) data set
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSL 6.0.0</td>
+      <td>Oxford Centre for Functional MRI of the Brain</td>
+      <td>RRID:SCR_002823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 4.3.2</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.11</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Original analysis code</td>
+      <td>This paper</td>
+      <td>https://www.openpain.org/under WMPainResiliencePathway dataset</td>
+      <td>See Materials and methods, section ‘Estimation of structural connectivity’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data pool
+
+#### New Haven (Discovery) data set
 
 We recruited individuals in the New Haven, Connecticut area. Subjects were recruited through flyers and internet advertisements. All participants gave written informed consent to participate in the study. The study was approved by the Yale University Institutional Review Board.
 
@@ -133,49 +258,457 @@ Subjects were briefly screened at first to check Hoy et al., 2012 the location o
 
 The study consisted of two time points separated by approximately one year (baseline, 1 year follow-up). At each time point participants completed one testing session in the laboratory and one scanning session. Patients whose pain dropped by more than 30% (Dworkin et al., 2005) at follow-up were considered recovered, otherwise persistent. Of the SBP group, 12 patients were confirmed at follow-up as recovered subacute back pain patients (SBPr) and 16 as persistent subacute back pain patients (SBPp) and had diffusion tensor data collected. For demographic and clinical characteristics of the different groups see Table 1.
 
+**Table 1.**
+ New Haven sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HC (N=28)</th>
+      <th>CLBP (N=28)</th>
+      <th>SBPr (N=16)</th>
+      <th>SBPp (N=12)</th>
+      <th>t(df)*, p-value</th>
+      <th>Missing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>30.1 (10.1)</td>
+      <td>30.7 (11.9)</td>
+      <td>30.8 (8.8)</td>
+      <td>38.0 (12.5)</td>
+      <td>+1.80 (26), 0.08</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Gender (m/f)</td>
+      <td>16/12</td>
+      <td>12/16</td>
+      <td>11/5</td>
+      <td>7/5</td>
+      <td>+0.32 (1), 0.57†</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>BMI (Kg/m2)</td>
+      <td>24.1 (3.6)</td>
+      <td>24.2 (3.7)</td>
+      <td>25.5 (5.2)</td>
+      <td>26.2 (4.5)</td>
+      <td>+0.35 (26), 0.73</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity: absolute</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>- 25.4 (15.4)</td>
+      <td>8.0 (17.2)</td>
+      <td>+5.0 (26),&lt;10–4‡</td>
+      <td>NA/NA/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity: percentage</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>- 66.3 (26.9)</td>
+      <td>39.1 (68.1)</td>
+      <td>+5.7 (26),&lt;10–5‡</td>
+      <td>NA/NA/0/0</td>
+    </tr>
+    <tr>
+      <td>Pain Duration</td>
+      <td>NA</td>
+      <td>5.3 (4.7)</td>
+      <td>8.6 (3.6)</td>
+      <td>10.9 (3.1)</td>
+      <td>+1.87 (26), 0.08</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Pain Intensity</td>
+      <td>NA</td>
+      <td>4.5 (2.0)</td>
+      <td>36.7 (18.8)</td>
+      <td>33.7 (15.9)</td>
+      <td>- 0.45 (26), 0.66</td>
+      <td>NA/0/0/0</td>
+    </tr>
+    <tr>
+      <td>BDI</td>
+      <td>2.6 (3.3)</td>
+      <td>6.4 (6.0)</td>
+      <td>7.4 (4.8)</td>
+      <td>3.1 (3.8)</td>
+      <td>- 2.65 (26), 0.02‡</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>BAI</td>
+      <td>3.4 (5.7)</td>
+      <td>7.6 (8.2)</td>
+      <td>6.4 (6.8)</td>
+      <td>4.8 (2.8)</td>
+      <td>- 0.75 (26), 0.46</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>MPQ</td>
+      <td>NA</td>
+      <td>10.6 (4.6)</td>
+      <td>9.2 (5.2)</td>
+      <td>9.1 (4.2)</td>
+      <td>- 0.08 (26), 0.93</td>
+      <td>NA/0/0/0</td>
+    </tr>
+    <tr>
+      <td>PCS</td>
+      <td>NA</td>
+      <td>15.2 (9.8)</td>
+      <td>12.8 (11.4)</td>
+      <td>11.3 (8.1)</td>
+      <td>- 0.40 (26),0.69</td>
+      <td>NA/0/1/0</td>
+    </tr>
+    <tr>
+      <td colspan="7"></td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: BMI, body mass index; BDI, Beck’s Depression Index; BAI, Beck’s Anxiety Index; MPQ, McGill Pain Questionnaire; PCS, Pain Catastrophizing Scale. Values show the group mean and standard deviation in parenthesis.*t-score (degrees of freedom).†Chi-square test.‡p < 0.05._
+
 Magnetic resonance imaging. Participants underwent an anatomical T1-weighted scan and two consecutive 2.5-min-long diffusion tensor imaging (DTI) scans in the same session. A Siemens 3T Trio B magnet (SIEMENS Healthineers, Erlangen, Germany) equipped with a 32-channel head coil was used to acquire the images. The 3D magnetization prepared rapid gradient echo (MPRAGE) T1-weighted acquisition sequence was as follows: repetition time/echo time (TR/TE) = 1900/2.52ms, flip angle = 9°, matrix size = 256 x 256, number of slices = 176, image resolution = = 1 × 1×1 mm3. The diffusion-weighted images were acquired using spin-echo echo planar imaging (SE-EPI) sequence using the following scan parameters: TR/TE = 2200/84.0ms, flip angle = 90°, matrix size = 110 × 110×64, multi-band acceleration factor = 4, image resolution = 2 × 2×2 mm3. Diffusion gradients were applied along 64 directions with a b-value of 1000 s/mm2. For each set of DTI data, one volume with no diffusion weighing (i.e. b=0 s/mm2) was acquired at the beginning of the scan.
 
-## Mannheim data set
+#### Mannheim data set
 
 Participants were recruited through advertisements in local newspapers and the website of the Central Institute of Mental Health in Mannheim, and patients were recruited additionally through the outpatient pain clinic of the Institute of Cognitive and Clinical Neuroscience, general practitioners, and physiotherapy practices. We determined subjects’ eligibility via a telephone screening form, which comprised questions about MRI contraindications, medication intake, current and previous drug/alcohol use, co-morbid medical and psychological conditions, and pain frequency and severity. All participants had to be between 18 and 70 years old to be eligible for study entry. Healthy controls had to be pain-free; patients with pain (SBP and CBP) had either low and/or upper back pain. To be included in the study, SBP participants had to have a current back pain episode of 7–12 weeks duration. Patients with a current back pain episode and additional back pain episodes in their history were included as well if the episodes never exceeded 12 weeks per year. The inclusion criteria for the CBP group were a history of back pain longer than 6 months and a current back pain episode of more than 100 days. Participants were excluded if they reported any neurological disorder, psychotic episodes, current substance abuse, a major illness, contraindication for MRI, or another painful condition as the main pain problem (see also for comorbid mental disorders). In addition, all subjects completed the German versions of the Chronic Pain Grade (CPG; Von Korff et al., 1992), the Örebro Musculoskeletal Pain Questionnaire (OMPQ yellow flag; Langenfeld et al., 2018), the Hospital Anxiety and Depression Scale (HADS; Snaith et al., 1995), and the Perceived Stress Scale (PSS; Reis et al., 2019). Regular medication use was reported as follows: NSAIDs (6 SBP, 3 CBP), statins (2 CBP), angiotensin receptor blockers (2 SBP), proton-pump inhibitors (1 SBP), antihistamines (1 CBP). Occasional use was reported for NSAIDs (1 HC, 2 SBP, 3 CBP), angiotensin receptor blockers (1 CBP), antihistamines (1 HC, 1 CBP), and benzodiazepines (1 CBP). Past use of NSAIDs was reported for 1 HC, 22 SBP, 14 CBP; of benzodiazepines for 1 SBP, 2 CBP; of ACE inhibitors for 1 CBP, and of Cannabinoids for 1 CBP.
 
 Brain diffusion data were collected at baseline from 64 patients with SBP, 24 patients with CBP, and 24 healthy controls (HC). HC and patients with CBP were matched for age and gender. Two HC, three patients with CBP, and nine patients with SBP were excluded from the analysis due to excessive head motion defined as >3 SD from the mean Euclidian distance of either translational or rotational displacement during the MRI scanning session. Additionally, two SBP patients’ diffusion images failed manual quality control checks due to obvious artifacts. Six patients with SBP were excluded from the analysis because they did not have interim data at follow-up. One patient with SBP was also excluded from the analysis as an outlier due to an extreme increase in pain severity from baseline to follow-up (466 percent change, M = 2300 = –15,06; hence the subject was >6 standard deviations from the sample mean). The final sample in the analysis comprised 22 HC, 21 patients with CBP, and 46 patients with SBP. Demographic and clinical characteristics of this data set, which was used for validation of our white matter biomarker, are presented in Table 2.
 
+**Table 2.**
+ Mannheim sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HC (N=22)</th>
+      <th>CBP (N=21)</th>
+      <th>SBPr (N=28)</th>
+      <th>SBPp (N=18)</th>
+      <th>t(df)*, p-value</th>
+      <th>Missing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age in years</td>
+      <td>36.9 (14.4)</td>
+      <td>40.0 (16.0)</td>
+      <td>32.8 (12.0)</td>
+      <td>32.1 (11.2)</td>
+      <td>+0.19 (38.2), 0.85</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Gender (m/f)</td>
+      <td>12/10</td>
+      <td>11/10</td>
+      <td>8/20</td>
+      <td>6/12</td>
+      <td>+0.0002(1),0.99*</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Number of days with pain during last year</td>
+      <td>NA</td>
+      <td>247 (84.0)</td>
+      <td>74.8 (43.2)</td>
+      <td>72.4 (34.9)</td>
+      <td>+0.2 (41.5,2), 0.84</td>
+      <td>NA/1/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity (FU-BL): absolute</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>–1.90 (1.18)</td>
+      <td>0.19 (0.71)</td>
+      <td>–7.47 (43.8),&lt;10–9†</td>
+      <td>NA/NA/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity (FU-BL): percentage</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>–50.9 (27.3)</td>
+      <td>8.73 (26.0)</td>
+      <td>–7.45 (37.7),&lt;10–9†</td>
+      <td>NA/NA/0/0</td>
+    </tr>
+    <tr>
+      <td>Pain severity (MPI)</td>
+      <td>NA</td>
+      <td>4.92 (1.38)</td>
+      <td>3.80 (1.43)</td>
+      <td>3.78 (1.54)</td>
+      <td>+0.06 (34.5), 0.95</td>
+      <td>NA/1/0/0</td>
+    </tr>
+    <tr>
+      <td>Interference (MPI)</td>
+      <td>NA</td>
+      <td>2.43 (1.23)</td>
+      <td>1.48 (1.01)</td>
+      <td>1.49 (1.00)</td>
+      <td>–0.03 (32), 0.97</td>
+      <td>3/0/2/2</td>
+    </tr>
+    <tr>
+      <td>Negative mood (MPI)</td>
+      <td>NA</td>
+      <td>2.83 (1.07)</td>
+      <td>2.40 (1.08)</td>
+      <td>2.71 (1.15)</td>
+      <td>–0.87 (30.5), 0.39</td>
+      <td>3/0/2/2</td>
+    </tr>
+    <tr>
+      <td>Life control (MPI)</td>
+      <td>NA</td>
+      <td>3.97 (0.971)</td>
+      <td>4.05 (1.24)</td>
+      <td>3.54 (1.23)</td>
+      <td>+1.3 (32), 0.2</td>
+      <td>3/0/2/2</td>
+    </tr>
+    <tr>
+      <td>Support (MPI)</td>
+      <td>NA</td>
+      <td>2.60 (1.85)</td>
+      <td>1.85 (1.28)</td>
+      <td>1.56 (1.41)</td>
+      <td>+0.66 (29.4), 0.52</td>
+      <td>3/0/2/2</td>
+    </tr>
+    <tr>
+      <td>ÖMPQ</td>
+      <td>NA</td>
+      <td>78.1 (19.5)</td>
+      <td>63.6 (21.1)</td>
+      <td>69.7 (16.1)</td>
+      <td>–1.06 (37.9), 0.3</td>
+      <td>12/1/2/2</td>
+    </tr>
+    <tr>
+      <td>CPGa</td>
+      <td>NA</td>
+      <td>1.00 [0, 6.00]</td>
+      <td>0 [0, 4.00]</td>
+      <td>0 [0, 6.00]</td>
+      <td>–0.65 (25.9), 0.52</td>
+      <td>9/0/0/2</td>
+    </tr>
+    <tr>
+      <td>Active coping (PRSS)</td>
+      <td>NA</td>
+      <td>3.30 (0.74)</td>
+      <td>2.94 (0.96)</td>
+      <td>3.14 (0.66)</td>
+      <td>–0.76 (36.6), 0.45</td>
+      <td>NA/6/4/3</td>
+    </tr>
+    <tr>
+      <td>Catastrophizing (PRSS)</td>
+      <td>NA</td>
+      <td>1.35 (0.87)</td>
+      <td>1.09 (0.73)</td>
+      <td>1.10 (0.76)</td>
+      <td>–0.02 (28.9), 0.98</td>
+      <td>NA/6/4/3</td>
+    </tr>
+    <tr>
+      <td>Anxiety (HADS)</td>
+      <td>4.37 (2.39)</td>
+      <td>8.24 (4.47)</td>
+      <td>7.27 (4.63)</td>
+      <td>7.47 (3.60)</td>
+      <td>–0.15 (35.3), 0.88</td>
+      <td>3/0/2/3</td>
+    </tr>
+    <tr>
+      <td>Depression (HADS)</td>
+      <td>6.21 (6.12)</td>
+      <td>6.00 (4.40)</td>
+      <td>4.42 (4.23)</td>
+      <td>4.60 (2.85)</td>
+      <td>–0.15 (37.9), 0.87</td>
+      <td>3/0/2/3</td>
+    </tr>
+    <tr>
+      <td>Perceived stress (PSS)</td>
+      <td>4.74 (5.00)</td>
+      <td>11.0 (5.23)</td>
+      <td>12.0 (5.25)</td>
+      <td>11.4 (5.07)</td>
+      <td>+0.34 (32.7), 0.73</td>
+      <td>3/0/2/2</td>
+    </tr>
+    <tr>
+      <td colspan="7"></td>
+    </tr>
+  </tbody>
+</table>
+
+_Chi-square test.*t-score (degrees of freedom).† p < 0.05._
+
 All participants gave written informed consent to be involved in the study and received 10€/hour for their participation. The study was approved by the Ethics Committee of the Medical Faculty of Mannheim, Heidelberg University, and was conducted in accordance with the declaration of Helsinki in its most recent form.
 
 Magnetic resonance imaging. A 3 Tesla Tim TRIO whole body scanner (SIEMENS Healthineers, Erlangen, Germany), equipped with a 12-channel head coil was used to acquire the images. Shimming of the scanner was done to account for maximum magnetic field homogeneity. Participants underwent an anatomical T1-weighted MPRAGE imaging scan with the following sequence: TR/TE = 2300 / 2.98ms, flip angle = 9°, matrix size = 240 x 256, number of slices = 192, image resolution = 1 x 1 x 1 mm3. The diffusion weighted images were acquired using SE-EPI sequence with the scan parameters as follows: TR/TE = 7400/85ms, matrix size = 220 x 256 x 30, GRAPPA = 2, image resolution = 2 x 2x 2 mm3. Diffusion gradients were applied along 30 directions using a b-value of 1000 s/mm2. One volume with no diffusion weighing was acquired at the beginning of the scan.
 
-Clinical assessments. Patients with SBP were included in the study at baseline as one group, and their pain severity was assessed at two time points (baseline, 6-month follow-up). Change in pain severity (PS) was assessed using the percentage change in the Pain Severity scale of the German version of the West Haven-Yale Multidimensional Pain Inventory (Flor et al., 1990) from baseline assessment to the follow-up screening after 6 months using the following formula :ΔPS=PSfollow−up−PSbaselinePSbaseline×100. Based on the pain severity percentage change, the SBP sample was divided into recovered SBP (SBPr, N=28), whose pain dropped by more than 20% at follow-up and persisting SBP (SBPp, N=18) (≥; Baliki et al., 2012). Comorbid mental disorders are presented in .
+Clinical assessments. Patients with SBP were included in the study at baseline as one group, and their pain severity was assessed at two time points (baseline, 6-month follow-up). Change in pain severity (PS) was assessed using the percentage change in the Pain Severity scale of the German version of the West Haven-Yale Multidimensional Pain Inventory (Flor et al., 1990) from baseline assessment to the follow-up screening after 6 months using the following formula $:ΔPS=\frac{PSfollow−up−PSbaseline}{PSbaseline}\times100$. Based on the pain severity percentage change, the SBP sample was divided into recovered SBP (SBPr, N=28), whose pain dropped by more than 20% at follow-up and persisting SBP (SBPp, N=18) (≥; Baliki et al., 2012). Comorbid mental disorders are presented in .
 
-## Chicago data set (Open Pain)
+#### Chicago data set (Open Pain)
 
 The data set obtained through the https://www.openpain.org/ online database (collected in Chicago, from now on, we refer to this data set as ‘Chicago data set’) had 58 SBP patients (28 females) with a baseline visit (visit 1 on OpenPain, pain duration 6–12 weeks) and 60 SBP patients (29 females) with a 1-year follow-up visit (visit 4 on OpenPain) on whom diffusion images were collected.
 
 Patients were deemed recovered at 1-year follow-up based on the same criterion as the New Haven data (i.e. >30% drop in low-back pain intensity reported on the VAS). As such, we studied 35 SBPp and 23 SBPr at baseline, and 33 SBPp and 27 SBPr at follow-up. Demographic and clinical characteristics of this data set, which was used for validation of our white matter biomarker, are presented in Table 3.
 
+**Table 3.**
+ Chicago (Open Pain) sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SBPr (N=23)</th>
+      <th>SBPp (N=35)</th>
+      <th>t(df)*, p-value</th>
+      <th>SBPr (N=28)</th>
+      <th>SBPp (N=34)</th>
+      <th>t(df)*, p-value</th>
+      <th>Missing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>41.7 (12.0)</td>
+      <td>43.6 (9.3)</td>
+      <td>+0.7 (56), 0.48</td>
+      <td>43.7 (11.5)</td>
+      <td>45.3 (9.6)</td>
+      <td>+0.61 (60), 0.54</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Gender (m/f)</td>
+      <td>12/9</td>
+      <td>16/19</td>
+      <td>1.6 (1),0.2†</td>
+      <td>15/13</td>
+      <td>17/17</td>
+      <td>0.08 (1), 0.78†</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity: absolute</td>
+      <td>- 40.6 (20.8)</td>
+      <td>–3.4 (15.6)</td>
+      <td>+7.8 (56),&lt;10–6 ‡</td>
+      <td>- 43.1 (20.6)</td>
+      <td>- 3.2 (15.6)</td>
+      <td>+8.7 (60),&lt;10–6‡</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Delta pain severity: percentage</td>
+      <td>- 68.9 (26.2)</td>
+      <td>–1.6 (31.9)</td>
+      <td>+8.4 (56),&lt;10–6 ‡</td>
+      <td>- 69.7 (25.9)</td>
+      <td>0.3 (31.6)</td>
+      <td>+9.3 (60),&lt;10–6‡</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>Pain Duration (weeks)</td>
+      <td>9.9 (4.1)</td>
+      <td>8.4 (4.3)</td>
+      <td>- 1.3 (55), 0.18</td>
+      <td>67.8 (5.6)</td>
+      <td>65.2 (5.7)</td>
+      <td>- 1.8 (60), 0.07</td>
+      <td>0/1/0/0</td>
+    </tr>
+    <tr>
+      <td>Pain Intensity</td>
+      <td>58.0 (15.2)</td>
+      <td>67.7 (17.2)</td>
+      <td>+2.3 (56),0.03‡</td>
+      <td>18.0 (16.8)</td>
+      <td>65.7 (15.8)</td>
+      <td>+11.5 (60),&lt;10–6‡</td>
+      <td>0/0/0/0</td>
+    </tr>
+    <tr>
+      <td>BDI</td>
+      <td>5.7 (5.2)</td>
+      <td>7.3 (4.6)</td>
+      <td>+1.0 (39), 0.31</td>
+      <td>6.3 (6.6)</td>
+      <td>16.0 (9.5)</td>
+      <td>+1.4 (42), 0.16</td>
+      <td>7/10/10/8</td>
+    </tr>
+    <tr>
+      <td>MPQ</td>
+      <td>10.9 (4.5)</td>
+      <td>18.2 (17.9)</td>
+      <td>+1.9 (54), 0.06</td>
+      <td>13.4 (26.3)</td>
+      <td>16.0 (9.5)</td>
+      <td>+4.3 (56), &lt;10–4 ‡</td>
+      <td>0/2/3/1</td>
+    </tr>
+    <tr>
+      <td colspan="8"></td>
+    </tr>
+  </tbody>
+</table>
+
+_* t-score (degrees of freedom).†Chi-square test.‡ p < 0.05._
+
 Magnetic resonance imaging. Part of this data has been already published by Mansour et al., 2013. Therefore, we will briefly describe acquisition parameters. MPRAGE type T1-anatomical brain images were acquired with a 3T Siemens Trio whole-body scanner with echo-planar imaging capability using the standard radio-frequency head coil with the following parameters: TR/TE = 2500/3.36ms, flip angle = 9°, matrix size = 256 × 256; number of slices = 160, image resolution = 1 × 1×1 mm3. DTI images were acquired on the same day using SE-EPI with TR/TE = 9000/83, flip angle = 90 degrees, in-plane matrix resolution = 112 × 130; 73 slices; image resolution = 2 × 2×2 mm3. Images had an isotropic distribution along 60 directions using a b value of 1000 s/mm2. For each set of diffusion-tensor data, 8 volumes with no diffusion weighting were acquired at equidistant points throughout the acquisition.
 
-## Preprocessing of DTI data
+### Preprocessing of DTI data
 
 Preprocessing of all data sets was performed employing the same procedures and the FMRIB diffusion toolbox (FDT) running on FSL 6.0.0 (Smith et al., 2004) First, diffusion-weighted data were visually inspected for obvious artifacts or missing parts of the brain. Next, the data were corrected for eddy currents and head motion by employing affine registration to the no diffusion volume using eddy_openmp from the FSL toolbox. Eddy current corrects for image distortions due to susceptibility-induced distortions and eddy currents in the gradient coils (Andersson and Sotiropoulos, 2016). We do note, however, that as we did not acquire data in the phase-opposite direction, the susceptibility-induced distortions may not be fully corrected. Brain images were then skull stripped and a diffusion tensor model was fit, using FMRIB Diffusion Toolbox (FDT) part of FSL (Behrens et al., 2003), at each voxel to calculate the fractional anisotropy (Basser et al., 1994; Smith, 2002). FA reflects the degree of water diffusion within a voxel with values ranging between 0 and 1 where large values indicate directional dependence of Brownian motion due to white matter tracts and small values indicate more isotropic diffusion and less directionality (Beaulieu, 2002).
 
-## Harmonization of DTI data using neuroCombat
+### Harmonization of DTI data using neuroCombat
 
 Because the 3 data sets originated from different sites using different MR data acquisition parameters and slightly different recruitment criteria, we applied neuroCombat (Fortin et al., 2017) running in Python 3.11 to correct for site effects and then repeated the TBSS analysis shown in Figure 1 and the validation analyses shown in Figures 5 and 6. First, the FA maps derived using FDT toolbox were pooled into one TBSS analysis where registration to a standard template FA template (FMRIB58_FA_1 mm.nii.gz part of FSL) was performed. Next, neuroCombat was applied to the FA maps as implemented in Python with batch (i.e., site) effect modeled with a vector containing 1 for New Haven, 2 for Chicago, and 3 for Mannheim originating maps respectively. The harmonized maps were then skeletonized to allow for TBSS.
 
-## Tract-Based Spatial Statistics
+### Tract-Based Spatial Statistics
 
 Voxel-wise statistical analysis of FA was carried out using Tract-Based Spatial Statistics (TBSS) (Smith et al., 2006) part of the FSL (Smith et al., 2004). All subjects' FA data were then aligned into a common space (MNI standard 1 mm brain) using the nonlinear registration tool FNIRT, (Andersson and Smith, 2007a; Andersson and Smith, 2007b) which uses a b-spline representation of the registration warp field (Rueckert et al., 1999). Next, the mean FA image was created and thinned to create a mean FA skeleton, which represents the centers of all tracts common to the groups. Each subject’s aligned FA data was then projected onto this skeleton and the resulting data fed into voxel-wise cross-subject statistics. Groups (i.e. SBPr and SBPp) were compared using unpaired t-test corrected for age, gender, and motion parameters. Head displacement was estimated by eddy current correction to extract the magnitude of translations and rotations. Overall head motion was then calculated as the Euclidian distance from head translations and rotations for each subject, and these measures were Z-transformed before they were entered into the design matrix as nuisance variables. The statistical significance of TBSS-based testing was determined using a permutation-based inference (Winkler et al., 2014) where the null distribution is built using 10,000 random permutations of the groups. Significance was set at p<0.05, and significant clusters were identified using threshold-free cluster enhancement (Smith and Nichols, 2009).
 
-## Statistical analysis
+### Statistical analysis
 
 A mask formed from the significant cluster for the SBPr >SBPp contrast in the New Haven data was used to extract FA values from the Mannheim and the OpenPain data. The FA values were first corrected for confounders and then used to build a receiver operating curve (ROC) to assess classification accuracy (recovered and persistent pain patients as binary classes) based on the brain white matter data. The statistical significance of the area under the ROC (AUC) was tested against 10,000 random permutations of the group labels to generate a random distribution of the AUC values. Additionally, we tested if FA values predict pain percentage change in a dimensional approach using multiple linear regression with the FA data entered as a predictor, and pain percentage change as an outcome. In both, classification and linear regression analysis, age, gender, and motion parameters (translation and rotation) were entered as covariates of no interest. All statistical analysis were done in R 4.3.2.
 
-## Estimation of structural connectivity
+### Estimation of structural connectivity
 
 Structural connectivity was estimated from the diffusion tensor data using a population-based structural connectome (PSC) detailed in a previous publication (Zhang et al., 2018) PSC can utilize the geometric information of streamlines, including shape, size, and location for a better parcellation-based connectome analysis. It, therefore, preserves the geometric information, which is crucial for quantifying brain connectivity and understanding variation across subjects. We have previously shown that the PSC pipeline is robust and reproducible across large data sets (Zhang et al., 2018). PSC output uses the Desikan-Killiany atlas (DKA; Desikan et al., 2006) of cortical and sub-cortical regions of interest (ROI). The DKA parcellation comprises 68 cortical surface regions (34 nodes per hemisphere) and 19 subcortical regions. The complete list of ROIs is provided in the Figure 7—source data 1. PSC leverages a reproducible probabilistic tractography algorithm (Maier-Hein et al., 2017) to create whole-brain tractography data, integrating anatomical details from high-resolution T1 images to minimize bias in the tractography. We utilized DKA (Desikan et al., 2006) to define the ROIs corresponding to the nodes in the structural connectome. For each pair of ROIs, we extracted the streamlines connecting them by following these steps: (1) dilating each gray matter ROI to include a small portion of white matter regions, (2) segmenting streamlines connecting multiple ROIs to extract the correct and complete pathway, and (3) removing apparent outlier streamlines. Due to its widespread use in brain imaging studies (Chiang et al., 2011; Zhao et al., 2021), we examined the mean fractional anisotropy (FA) value along streamlines and the count of streamlines in this work. The output we used includes fiber count, fiber length, and fiber volume shared between the ROIs in addition to measures of fractional anisotropy and mean diffusivity.
 
-## Machine learning and cross-validation
+### Machine learning and cross-validation
 
 The processing steps applied to the PSC output are summarized in Figure 8 and were published previously (Zhang et al., 2018).
 
@@ -184,5 +717,68 @@ The processing steps applied to the PSC output are summarized in Figure 8 and we
 **Figure 8.:** From left to right: data preparation, correction for confounders, and machine learning model building and testing. The dashed rectangle indicates that the combination of the data during model training was bootstrapped 50 times and validation and testing were repeated accordingly.
 
 We used fiber count and total connected surface area connecting each pair of regions as the input features, which were 87x87 connectivity matrices of the DKA ROIs; the latter two features were chosen because of their demonstrated reliability in prior work (Zhang et al., 2018). Dimensions were reduced using tensor principal component analysis (TNPCA) with hyperparameter K=87. Next, because data originated from different sites (New Haven, Chicago, and Mannheim), we applied the ComBat harmonization (Fortin et al., 2017) to account for the effect of different sites on the data. Linear regression was used next to correct the data for age, gender, and head translation and rotation magnitudes. We used logistic regression, linear support vector classification (SVC), and random forest as our regression methods with leave-one-out cross-validation (LOOCV) and the number of components as a hyperparameter. Hence, the number of PCs included in the model was randomly chosen from a sequence of 22 numbers starting with 1 with an increment of 4 and a maximum of 87. The training of our regression models was performed using different combinations of data originating from New Haven and the Chicago database (as outlined in Table 4) and tested on the remainder of the data from these two sites or on the data originating from Mannheim.
+
+**Table 4.**
+ Summary of the type of data combinations expressed in % of subjects from each site used to build and test the brain connectivity-based machine learning models to classify recovered and persistent SBP patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Training &amp; Validation*</th>
+      <th colspan="3">Testing‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>New Haven</td>
+      <td>Chicago</td>
+      <td colspan="2">New Haven</td>
+      <td>Chicago</td>
+      <td>Mannheim</td>
+    </tr>
+    <tr>
+      <td>100%</td>
+      <td>0%</td>
+      <td colspan="2">0%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>100%</td>
+      <td>40%</td>
+      <td colspan="2">0%</td>
+      <td>40%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>0%</td>
+      <td>100%</td>
+      <td colspan="2">100%</td>
+      <td>0%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>100%</td>
+      <td colspan="2">60%</td>
+      <td>0%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*The combination of data sets was bootstrapped 50 times and the training and testing was repeated accordingly._
 
 The combination of the data during model training was bootstrapped 50 times and testing and validation were repeated accordingly. We chose to train the model only on the data originating from New Haven and Chicago because the eligibility criteria were quite similar between the two sets but different from those used to recruit SBP patients at Mannheim. The average performance of our classifier was based on the models that achieved a validation area under (AUC) the receiver operating characteristic curve (ROC) of ≥ 0.75 during training. Of note, such models cannot tell us the features that are important in classifying the groups. Hence, our model is considered a black-box predictive model like neural networks.

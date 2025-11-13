@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Centre for Craniofacial and Regenerative Biology, Faculty of Dentistry, Oral and Craniofacial Sciences, King's College London London United Kingdom
-2. https://ror.org/0220qvk04 Department of Oral and Maxillofacial Implantology, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
+1. Centre for Craniofacial and Regenerative Biology, Faculty of Dentistry, Oral and Craniofacial Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. Department of Oral and Maxillofacial Implantology, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 
 † Corresponding author
 
@@ -32,25 +32,43 @@ Telocytes are identified in tissues by dual immunolabeling, most commonly CD34+/
 
 ## Results
 
-## ScRNA-seq analysis reveals a telocyte population in PDL
+### ScRNA-seq analysis reveals a telocyte population in PDL
 
 The PDL is made up of both neural crest-derived and mesodermal-derived cell types, and we have previously described the constituent cell populations using single-cell transcriptomics (Wang et al., 2020). This analysis compared adult PDL in homeostasis with PDL tissue from a ligature-induced periodontitis mouse model (Zhao et al., 2021). The two datasets were integrated by performing a canonical correlation analysis (CCA) (Zhao et al., 2014) identifying 2270 cells for analysis after filtering. These cells were further divided into 18 unsupervised clusters for annotation (Figure 1a). Differential expression (Figure 1—figure supplement 1) revealed cell clusters, including endothelial cells (Pecam1), epithelial cells (Krt14, Krt5), B cells (Cd79a, Cd79b), T cells (Skap1, Trac), dendritic cells (Cd209a, Mg12), macrophages (macrophage 1 [Plek, Cd80], macrophage 2 [Wfdc17, Mpeg1], macrophage 3 [Apoe, Cxcr1], macrophage 4 [Arg1, Cd36]), mast cells (Cmal, Tpsb2), neutrophils (neutrophil 1 [Retnlg, Mmp8, Mmp9], neutrophil 2 [Ngp, Cd177, Chil3], neutrophil 3 [Fcnb, Chil3]), a proliferative cell population (Stmn1, Mki67, Pclaf), cemento/osteolineage cells (Ibsp, Bglap, Spp1), fibroblasts (Postn, Aspn), and an intermediate cluster between clusters 2, 15, and 14. A small population of cells (cluster 14) were found in the mesenchymal cell population that expresses Cd34; however, they did not express the endothelial cell marker Cd31, and we thus identified these cells as telocytes (TCs) (Figure 1b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig1-v3.jpg)
+
+**Figure 1.:** (a) PDL single cells from control mice and ligature-treated mice were combined and clustered into 18 clusters. (b) Identification of each cluster. Telocyte clusters were identified by CD34+ and CD31-. Macrophages are in four clusters. (c) In vitro cell culture with CD1 PDL cells at passage 1 shows characteristic telocyte structure, including podoms (red arrows, the dilated portion) and podomers (between two arrows, the thin segments between podoms). (d) Wnt1 lineage-traced cells (GFP in green) were cultured and stained with CD34 in red, which show piriform cell body and moniliform podoms (red arrows) and podomers. (e) Telocytes (CD34+CD31-) was detected near blood vessel (CD34+CD31+) in vivo, CD34 in green, CD31 in red. White arrow indicates the small nuclei, and white triangle shows the elongation of telocyte respectively. (f) CD34 expression was compared with pericyte markers, CD146 (Mcam) and NG2 (Cspg4) expression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig1-figsupp2-v3.jpg)
+
 According to the literature, telocytes can be identified by dual immunolabeling, most commonly CD34+/CD31-, CD34+/c-Kit+, CD34+/Vim+, and CD34+/PDGFRα+ (Kondo and Kaestner, 2019; San Martin et al., 2014; Li et al., 2016; Wang et al., 2020; Manetti et al., 2015). However, in our ScRNA sequencing data, we found that the expressions of Kit, Vim, and Pdgfrα are either low with not much overlap with Cd34 or ubiquitous (Figure 1—figure supplement 2). To confirm these cells as telocytes, we first cultured PDL cells in vitro and searched for cells with a typical telocyte morphology. Typical telocyte cell morphology was observed with small cell bodies and a long cellular process called telopodes (Figure 1c). Telopodes consist of dilated portions (podoms) and thin segments in between (podomers). To determine whether the telocyte-like cells are derived from neural crest, we collected PDL cells from Wnt1Cre/+;Rosa26mTmG/+ mice, which labels neural crest-derived cells (Graves et al., 2008) and stained for GFP and CD34. GFP-positive cells showed telocyte structures with podoms and podomers, which were also positive for CD34 (Figure 1d). To identify telocyte locations in situ, we co-immunostained sections with CD34 and CD31. As shown in Figure 1e, telocytes (CD34+/CD31-) were found in close association with blood vessels (CD34+/CD31+), had small cell nuclei, and long cell protrusions. However, pericytes are also in close proximity to blood vessels. Therefore, to discriminate between telocytes and pericytes, we compared genes that are expressed in pericytes, Cd146 and Ng2. We found that these genes were not expressed in telocytes (Figure 1f). These data collectively suggest that CD34+/CD31- telocytes are present in the PDL located in the vicinity of blood vessels.
 
-## Quiescent telocytes are activated in periodontitis
+### Quiescent telocytes are activated in periodontitis
 
 Since telocytes only account for a small subset of cells in the RNAseq datasets in PDL during homeostasis together with the big overall increase in immune cells in the disease datasets, thereby masking any changes in telocyte numbers, we addressed whether these cells are quiescent or actively proliferating during homeostasis directly on tissue sections. Lineage tracing using Cd34creERT2/+;Rosa26tdTomato/+ mice (Jiang et al., 2021) followed by a 1 day–1 year post-tamoxifen chase period revealed that CD34+/CD31- cell numbers did not increase to any significant extent (Figure 2), suggesting that telocytes are a small, quiescent cell population in homeostasis. To investigate whether telocytes responded to disease, we used our established ligature-induced periodontitis mouse model where sutures are placed around the second molars (Wang et al., 2020). The ligature leads to plaque accumulation and thus facilitates the invasion of bacteria (Nakamura et al., 1984). By measuring the distance between alveolar bone crest and cemento-enamel junction (ABC-CEJ distance) (Figure 3a), we found that bone loss reached a maximum between days 4 and 7 for all three molars (Figure 3b). Notably, even though only the second molar was subjected to a ligature, the first and third molars also showed some bone loss at early time points, suggesting that they are affected by the ligature-induced periodontitis to some extent. However, the first and third molar bone loss was recovered at longer time points (Figure 3b), indicating the self-recovery ability from milder periodontitis.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig2-v3.jpg)
 
-**Figure 2.:** Cd34 lineage tracing showing limited contribution of telocytes to periodontal ligament (PDL) homeostasis in adulthood.creERT2In the adult stage, Cd34 mice were used to trace from 7 weeks for 1 day (creERT2/+; Rosa26tdTomato/+a), 1 month (b), 2 months (c), and 1 year (d). CD34 lineage-traced cells in red, CD31 were co-stained in green. CD34+CD31- cells are telocytes which were rarely found in periodontal tissue and randomly dispersed during homeostasis. Increase of CD34+CD31- cell number was not detected as the extending of tracing time. Scale bars = 100 μm. B, bone; T, tooth. Periodontal tissue in dotted line.
+**Figure 2.:** In the adult stage, Cd34creERT2/+; Rosa26tdTomato/+ mice were used to trace from 7 weeks for 1 day (a), 1 month (b), 2 months (c), and 1 year (d). CD34 lineage-traced cells in red, CD31 were co-stained in green. CD34+CD31- cells are telocytes which were rarely found in periodontal tissue and randomly dispersed during homeostasis. Increase of CD34+CD31- cell number was not detected as the extending of tracing time. Scale bars = 100 μm. B, bone; T, tooth. Periodontal tissue in dotted line.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig3-v3.jpg)
+
+**Figure 3.:** (a) Illustration of bone loss measurement. For the first and second molars, the ABC-CEJ distance of mesial and distal roots in parallel to the root long axis and the ABC-CEJ distance in the trifurcation area were measured; for the third molar, the ABC-CEJ distance in the middle of the tooth was measured. (b) Quantification from micro CT results indicates the change of bone loss in periodontitis plotted by time course (n = 3). Hard tissue around the second molar is severely affected, the time for all molars reaching the bone loss plateau is between day 5 and day 7. 1 unit = 0.4 mm (n = 3). (c) An accumulation of telocytes was found in periodontitis as early as 2 hr after the ligation procedure. These telocytes (CD34, green) were mostly found around blood vessels (CD31, red), especially tissue toward the crown. Scale bars = 10 μm. (d) Cd34creERT2/+; Rosa26tdTomato/+ mice were given three tamoxifen injections started from the procedure day and harvested on day 7. Significantly increased CD34+ cells (red) were observed in the periodontitis group. There were more endothelial cells (green) observed on day 7 of periodontitis. The telocyte (red)-derived cells were not overlapping with endothelial cells (green). Scale bars = 20 μm. (e) Statistical analysis of numbers of telocytes comparing homeostasis (n = 3) and periodontitis (n = 4). (f) Telocytes (CD34+, CD31-) express a proliferation marker, Ki67 in periodontitis. CD34: yellow; CD31: cyan; Ki67: magenta; nuclei: grey. (g) 863 input genes highly expressed in telocytes cluster with avg_logFC > 0 were selected for gene enrichment analysis. The 20 best p-value terms are plotted. The bar plot is coloured by p-values. B, bone; P, periodontal tissue.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig3-figsupp1-v3.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Figure 3d with separate channels is shown. Endothelial cells (CD34+CD31+) are indicated with blue arrows and telocytes (CD34+CD31-) are indicated with yellow arrows. Magenta: RFP; green: CD31. The expression of Cd34 was significantly lower in telocytes than in endothelial cells. Gene expression level from scRNA-seq indicates Cd34 expression level in telocytes as distinct from endothelial cells.
 
 We visualised telocytes with CD34 and CD31 antibodies in ligature PDL at different time points. After 2 hr, there was an obvious increase in the number of CD34+/CD31- telocytes close to blood vessels (Figure 3c, Figure 3—figure supplement 1). Cd34creERT2/+;Rosa26tdTomato/+ mice (Jiang et al., 2021) tracing for 7 days also showed an increase in tdTomato+/CD31- cells in periodontitis (Figure 3d and e, Figure 3—figure supplement 2). These telocytes also expressed the proliferation marker Ki67 (Figure 3f). These data indicate that telocytes proliferate in the PDL following ligature-induced periodontitis.
 
 It has been demonstrated that telocytes can secrete extracellular vesicles (Cretoiu et al., 2016), suggesting that they may have a role in cell signalling. Gene enrichment analysis of the single-cell RNA-seq datasets identified angiogenesis, leukocyte migration and inflammatory responses as the three top pathways in PDL telocytes (Figure 3g).
 
-## Telocytes regulate macrophages via HGF/Met signalling pathway
+### Telocytes regulate macrophages via HGF/Met signalling pathway
 
 To functionally understand the differences between homeostasis and periodontitis, we interrogated the RNA-seq datasets to compare the two conditions with respect to cell–cell communication pathways. We identified the CHEMERIN, HGF, IFN-I, IL16, LIFR, and APELIN pathways as not being active during homeostasis but rather, to be active in periodontitis (Figure 4a). Telocytes were found to express Hgf and Flt3 (Figure 4b), highlighting a potential role for the HGF signalling pathway.
 
@@ -60,9 +78,15 @@ To functionally understand the differences between homeostasis and periodontitis
 
 HGF was originally found in liver as a potential hepatocyte mitogen (Nakamura et al., 2000). It is involved in repair and regeneration as a healing factor (Matsumoto et al., 2014; Ko et al., 2018; Yang and Ming, 2014). In mouse ligature-induced periodontitis, our RNA-seq cell–cell communication analysis identified macrophages as a target of HGF signalling from telocytes (Figure 4c). Of the four macrophage clusters identified, telocytes are identified as potentially interacting with macrophage clusters 1 and 4. To confirm that telocytes express HGF, triple immunofluorescence staining was performed with CD34, CD31, and HGF. Endothelial cells (CD34+/CD31+) did not express HGF, whereas telocytes (CD34+/CD31-) with telopodes expressed HGF (Figure 4d). This is consistent with Sc-RNA seq analysis (Figure 4e and f). In conclusion, telocytes express HGF and, based on the ScRNA-seq analysis, are the only cells that produce this signal in periodontitis. The recipient cells are macrophages which express the HGF receptor (HGFR), encoded by Met (Figure 4c).
 
-## Macrophages receiving HGF signals show M1–M2 transition
+### Macrophages receiving HGF signals show M1–M2 transition
 
 Four clusters of macrophages were identified from the single-cell transcriptomics analysis (Figure 5). Differentially expressed gene (DEG) analysis suggested macrophage cluster 1 express Acod1, Trem1; macrophage cluster 2 express Mc4a4c, Ccr2; macrophage cluster 3 express Aif1, Mrc1; macrophage cluster 4 express Cd36, Arg1 (Figure 5a). To gain a better understanding of these cells, we performed unsupervised clustering on the four clusters. In each re-clustered plot, clusters on the left are cells from periodontitis and right from homeostasis – they are clearly separated and the periodontitis cells occur in three linked clusters (0, 3, and 6) (Figure 5b, e, and f).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig5-v3.jpg)
+
+**Figure 5.:** (a) Heatmap presenting the differentially expressed gene (DEG) of four macrophage subpopulations (top 20 DEG genes). (b) Macrophages were extracted from the complete dataset and re-clustered. In a feature plot, all the macrophages in disease dataset are in the left cell cluster, separated from macrophages in homeostasis (cells on the right). Feature plots show Met-expressing macrophages express M1 marker Nos2 and M2 marker Arg1. (c) Met protein was not detected in periodontal ligament (PDL) homeostasis but in periodontitis. Met: magenta; nuclei: blue. Scale bars = 50 μm. (d) Telocytes (yellow, indicated by arrows) are making contact with Met-expressing cells (magenta) by using their protrusions (telopodes indicated by arrowheads). CD34: yellow; CD31: cyan; Met: magenta; nuclei: grey. Scale bar = 10 μm. (e) RNA velocity shows Met+ macrophages (cluster 0) are related to those in clusters 3 and 6. (f) Macrophages expressing Met (cluster 0) are related to those in cluster 6 (Ccr2+Aif1hi) and cluster 3 (Ccr2+ Aif1lo) macrophages.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig5-figsupp1-v3.jpg)
 
 The HGF signalling pathway has a sole ligand–receptor pair, HGF and HGFR (Met). Interestingly, in the datasets, macrophages expressing Met also expressed Arg1 (encodes Arginase1 [Arg1]) and Nos2 (encodes inducible nitric oxide synthase [iNOS]) (Figure 5b).
 
@@ -71,6 +95,12 @@ In periodontitis, iNOS mediates the pathological effect of LPS and it is a marke
 During homeostasis, macrophages in PDL do not express Met protein; however, macrophages start to express Met in periodontitis (Figure 5c, Figure 5—figure supplement 1). Met-expressing cells are located in close proximity to the telopodes of telocytes (Figure 5d), indicating that telocytes likely make physical contact with Met+ macrophages. Thus, it is conceivable that telocytes promote the overexpression of Arg1 in periodontitis which further leads to the M1/M2 state of macrophages. Additionally, RNA velocity analysis suggests that these Arg1+/Nos2+ macrophages present in cluster 0 (Figure 5b) are linked with Ccr2hiAif1lo (cluster 3) cells and Ccr2loAif1hi cells (cluster 6) (Figure 5e and f).
 
 To experimentally determine whether Arg1 expression in macrophages is increased by HGF signals from telocytes, tivantinib (ARQ197), a small-molecule Met inhibitor, was used to inhibit HGF/Met signalling. Tivantinib is a highly selective, non-ATP-competitive, orally available inhibitor of Met (Aoyama et al., 2014). We observed that when tivantinib was administered to mice with ligature-induced periodontitis, Arg1+ cell numbers significantly decreased (Figure 6a and b), indicating that inhibition of the HGF-Met signalling interaction in macrophages blocks their polarisation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig6-v3.jpg)
+
+**Figure 6.:** (a) CD1 mice were used to induce periodontitis. Corn oil or tivantinib (Tiv) were given once on day 5 post procedure. Samples were collected 12 hr after drug delivery. Mice given corn oil (left) show more cells expressing Arg1+ cells (yellow) in periodontium than the mice given tivantinib (right). Scale bars = 10 μm. (b) Statistical analysis shows significant difference in Arg1 expression between control group (corn oil) and tivantinib-treated group (p<0.05). (c) qPCR data showing FAC-sorted telocytes (TC) cultured with M0/1 macrophages (M) in the presence of LPS leads to an increase in the M2 marker Arg1, with simultaneous reduction in the M1 marker Inos. Transition of M1 to M2 is significantly reduced upon addition of the HGF/Met inhibitor tivantinib. Error bars represent the standard error of mean (p<0.05). B, bone; T, tooth; P, periodontal tissue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72128/elife-72128-fig6-figsupp1-v3.jpg)
 
 To demonstrate that telocytes are a source of HGF signals for macrophage transition from M1 to M2, we FAC-sorted CD34+/CD31- telocytes and co-cultured these with M0/M1 macrophages. It is important to point out that the CD34+/CD31- expression profile is currently the best identity marker for telocytes described in the literature (Kondo and Kaestner, 2019; San Martin et al., 2014; Li et al., 2016; Wang et al., 2020; Manetti et al., 2015) but other undetermined cells also have this expression profile. The FAC-sorted cells are a heterogenous population as not all adopted a characteristic telocyte morphology following 24 hr in culture. Nonetheless, we obtained sufficient cells with telocyte morphology. For better characterisation of macrophage polarisation markers, we noted that the literature describes a number of markers including Nos2 (Inos) and Cd80 as M1 markers, and, Arg1 and Cd163 as M2 markers (Jablonski et al., 2015). However, only Inos and Arg1 are consistently reliable in our qPCR experiments as highly expressed in macrophages compared to telocytes (Figure 6—figure supplement 1). Therefore, we used Inos/Arg1 as M1/M2 polarisation markers for subsequent qPCR analyses. Upon analysing the expression levels of Inos and Arg1 by qPCR, in comparison to control macrophage-only cultures, the presence of telocytes led to a significant increase in Arg1 expression with simultaneous reduction in Inos expression (Figure 6c). However, this did not occur when tivantinib was added to the culture (Figure 6c). Together, these data suggest that M1 macrophages respond to HGF signals secreted by telocytes via Met to adopt an M1/M2 phenotype.
 
@@ -90,46 +120,46 @@ Collectively, our study demonstrates for the first time that telocytes increase 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All mice were maintained in the Biological Service Unit, New Hunts House, King’s College London. Mice were exposed to a 12 hr light–dark cycle and with food and water available ad libitum. Wild-type CD1 mice were obtained from CRL (Charles River Laboratory, UK), Wnt1Cre/+;Rosa26mTmG/+ mice (Graves et al., 2008) were from JAX 003829 and 007576, respectively. The Cd34creERT2/+; Rosa26tdTomato/+ mouse (Jiang et al., 2021) was a kind gift from Prof. Qingbo Xu (King’s College London) (Zhao et al., 2021). Three intraperitoneal injections of tamoxifen were given at a dose of 2 mg/30 gbw (Sigma, T5648) for three consecutive days. Mice were sacrificed by exposure to a rising concentration of carbon dioxide or cervical dislocation followed by tissue dissection and tissue processing. All mouse work was approved by UK Home Office under the project license 70/7866 and P5F0A1579, approved by the KCL animal ethics committee.
 
-## Animal disease model
+### Animal disease model
 
 Animals older than 8 weeks were used to induce periodontitis. Mice were anaesthetised with Ketavat and Domitor, injected 10 mL/kg  i.p. The ligature procedure was performed as described (Fleming et al., 2019). Briefly, 5-0 wax-coated braided silk suture (COVIDIEN, S-182) was tied around the upper second molar in order to induce periodontitis. Samples were collected at desired time points.
 
-## HGF/Met pathway inhibition
+### HGF/Met pathway inhibition
 
 CD1 mice were used to induce periodontitis. Tivantinib (130 mg/kg in corn oil with 2.5% DMSO) was orally applied on day 5 post procedure. A control group was given corn oil with 2.5% DMSO. Samples were collected 12 hr later (n = 3).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Maxillae were dissected and fixed in 4% PFA overnight. Samples were decalcified in 19% EDTA until soft enough to cut (~7 days). Processed samples were then dehydrated with 30% sucrose followed by embedding in OCT on dry ice with ethanol. Cryosections were fixed by 4% PFA. Sections were then subject to permeabilisation by 0.2% Triton X-100 (Sigma, X100), heat-induced antigen retrieval, and blocking with 3% BSA. Sections were stained by the following antibodies: anti-RFP (Abcam, Ab62341), anti-CD34 (Abcam, Ab81289 and Ab8158), anti-CD31 (Abcam, Ab7388 and Ab24590), anti-GFP (Abcam, Ab13970), anti-Arg1 (Abcam, Ab92274), anti-Met (Abcam, Ab51067), anti-HGF (Abcam, Ab83760), and anti-Ki67 (Abcam, Ab16667). Secondary antibodies included Alexa Fluor 488 (Invitrogen, A11039), Alexa Fluor 568 (Invitrogen, A11077), Alexa Fluor 633 (Invitrogen, A21052), and Alexa Fluor 488 (Invitrogen, A11008). Tyramide signal amplification (NEL744001KT, PerkinElmer) was performed for weak signals. Hoechst 33342 (Invitrogen 62249, 1:500) was used for DNA staining. Slides were mounted using Citifluor AF1 (EMS, 171024-AF1) and cover-slipped for microscopy. Zeiss Apotome or Leica TCS SP5 systems was used for acquiring images. ImageJ and Adobe Photoshop were used for image processing.
 
-## Single-cell RNA sequencing and analysis
+### Single-cell RNA sequencing and analysis
 
 For ScRNA-seq, adult CD1 mice were used. CD1 mice were sacrificed and dissected under a stereomicroscope with the gingiva carefully removed. Teeth were extracted and only the intact molars were kept. For periodontitis, only the second molars were used for subsequent use. The harvested molars were pooled and dissociated with 3 U/mL Collagenase P (COLLA-RO, Roche) followed by incubation for 45  min in a 37°C shaking water bath. The dissociation process was aided by dispersion with a 1 mL pipette every 15 min. Cells were then passed through a 40  μm strainer (Falcon 352340) followed by FACS for alive cells. Single cells in PBS with 0.04% ultrapure BSA were processed following a standard 10× genomic protocol (Chromium Single Cell 3’ v3). Count matrices were generated from the fastq files via CellRanger pipeline using Ensembl 97 genome annotation. Ambient and background RNA from the count matrices were first removed using CellBender remove-background tool (Satija et al., 2015). Cells express >1000 features and with less than 20% mitochondria gene content were kept. A total of 2270 cells were used for analysis. Batch effect was removed by the Seurat (v3.2.0) CCA approach (McInnes et al., 2018). Integrated data were subsequently scaled and PCA was performed. Thirty dimensions were calculated based on variable features followed by UMAP (Blondel et al., 2008) for embedding and Louvain (La Manno et al., 2018) clustering (resolution 1) on knn graph. Macrophages (613 cells) were selected and re-clustered. RNA velocity data were generated using the velocyto tool (Zhou et al., 2019b). For gene enrichment analysis, metascape (https://metascape.org/gp/index.html#/main/step1; Jin et al., 2021) was used: genes highly expressed in telocytes cluster with avg_logFC > 0 were selected, and 863 input genes were used. Finally, cell–cell communication was estimated based on cell groups by using CellChat (v1.0.0) (Stuart et al., 2019), a method which provides a database that takes into account multi-subunit structures of ligand–receptor pairs, soluble agonists and antagonists, as well as membrane-bound co-receptors. The communication between cell types was analysed based on the secreted signalling database.
 
-## In vitro studies
+### In vitro studies
 
 PDL cells from CD1 mice (n = 3) or Wnt1Cre/+;Rosa26mTmG/+ mice (n = 3) were collected for cell culture. Tissues were treated as above to harvest single-cell suspension. DMEM/F12 media (3:1) supplemented with 20% FBS, l-glutamine, and P/S were used for cell culture. Cells at passage 1 were used for analysis.
 
-## Isolation of telocytes by FACS
+### Isolation of telocytes by FACS
 
 Molar teeth and tongues were dissected in L-15 medium (Thermo Fisher, 21083027) from eight adult female mice for isolation and sorting of telocytes as CD34+/CD31- cells. Dissected pulp, PDL, and tongues were transferred into 1.5 mL tubes, excess L-15 was removed, and 100 µL of 20 U/mL Papain (27 mg/mL, Sigma, P3125) in L-15 medium was added to each tube. Cells were dissociated at 37°C in a heated shaker, triturating using a filtered low-binding tip every 5 min for a total of 40 min. The dissociation reaction was stopped by adding 1:1 volume of prewarmed sample buffer (1% fetal bovine serum in L-15). Cells were strained using a 40 µm nylon sterile cell strainer (Falcon, 352340) into a 50 mL tube and transferred to a 5 mL FACS tube (Falcon, 352235). Cells were stained with fluorescent-conjugated anti-CD34-APC (Invitrogen 50-0341-80) and anti-CD31-PE (Invitrogen 12-4321-80) at 1:200 dilution. DAPI (1 mg/mL) was added (1:1000) immediately prior to FACS using the BD FACSAria sorters into 1.5 mL low-binding tubes with 100 µL of full alpha MEM culture media.
 
-## Telocyte-macrophage co-culture
+### Telocyte-macrophage co-culture
 
 Murine bone marrow-derived macrophages were generated from bone marrow cells harvested from six wild-type animals and cultured in full alpha MEM media containing 50 ng/mL recombinant mouse macrophage colony-stimulating factor (M-CSF) protein (Biotechne-416-ML-050/CF). The cells were cultured and expanded for 3 days prior co-culture with telocytes. FAC-sorted telocytes were seeded into a 48-well plate with full alpha MEM media. After 24 hr, in the control group, macrophages with 50 ng/mL M-CSF and 1 µg/mL LPS diluted in alpha MEM were added to the telocytes. In the experimental group, macrophages with 50 ng/mL M-CSF, 1 µg/mL LPS, and 100 nM tivantinib were added to the telocytes. Cells were cultured for a further 6 days in vitro.
 
-## Quantitative (q) RT-PCR
+### Quantitative (q) RT-PCR
 
 cDNA from RNA extracted from telocyte-macrophage co-culture were subjected to qPCR analysis with the AriaMx Real-Time PCR System (Agilent Technologies) using SYBR green and gene-specific primers. Reactions were repeated in triplicates. Relative expression levels were calculated using 2-ΔΔCT method using Rsp19 as an endogenous housekeeping gene. Differences between experimental groups were compared using an unpaired two-tailed Student’s t-test, and p-value ≤0.05 was considered statistically significant.
 
-## Microcomputed tomography
+### Microcomputed tomography
 
 Maxilla samples were fixed in 4% PFA overnight followed by three washes in PBS. Samples were scanned on a SCANCO μCT50 scanner with 70 kVp voltage and a tube current of 114 μA at 6 μm isotropic voxel size. Scans were analysed by MicroView software.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using an unpaired Student’s t-test using GraphPad Prism software. p<0.05 was considered statistically significant.

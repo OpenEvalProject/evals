@@ -16,7 +16,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00rd5t069 State Key Laboratory of Ophthalmology, Optometry and Visual Science, National Clinical Research Center for Ocular Diseases, Eye Hospital, Wenzhou Medical University, Wenzhou Zhejiang China
+1. State Key Laboratory of Ophthalmology, Optometry and Visual Science, National Clinical Research Center for Ocular Diseases, Eye Hospital, Wenzhou Medical University, Wenzhou Zhejiang China ([ROR:00rd5t069](https://ror.org/00rd5t069))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ Excessive reactive oxygen species (ROS) in TM play an important role in the disr
 
 ## Results
 
-## Steroid-induced OHT in mice
+### Steroid-induced OHT in mice
 
 The experiment included two steps: first, OHT modelling and the subsequent drug’s IOP-lowering effect test were performed, both of which lasted for 28 days. A steroid-induced OHT mouse model was successfully established bilaterally in the first step. The baseline IOP did not differ between dexamethasone (DEX)-treated and phosphate-buffered saline (PBS)-treated vehicle eyes; however, starting at day 5, IOP was significantly elevated in DEX-treated eyes (p < 0.01, Figure 1A) and stabilised by day 28 (defined as an increase by >3 mm Hg or 30% from the baseline in at least two of the three IOP tests [days 23, 26, and 28]). The body weight (BW) was significantly lower in DEX-treated mice than in controls from days 7 to 28 (Figure 1B). Approximately 90.0% DEX-treated eyes had elevated IOP after 28 days of steroid induction with an average increased magnitude of 4.12 ± 1.26 mm Hg (2.00–7.30 mm Hg). Moreover, the fibrotic marker (α-SMA) was obviously overexpressed in the OHT mouse models (p <0.05, Figure 1D–F).
 
@@ -44,7 +44,7 @@ The experiment included two steps: first, OHT modelling and the subsequent drug�
 
 **Figure 1.:** (A) Elevated IOP in DEX-treated C57BL/6J mice was induced significantly at 4 weeks (p < 0.01). (B) The body weight comparison between the DEX-treated mice and control. (C) HE staining of OHT models. Scale bar, 50 µm. (D) α-SMA and TGF-β staining in the representative OHT models. Scale bar, 20 µm, (E, F) Quantification of α-SMA and TGF-β of the models. *p < 0.05, **p < 0.01, ns: non-significance, DEX: dexamethasone, PBS: phosphate-buffered saline, HE: haematoxylin and eosin, IOP: intraocular pressure, OHT: ocular hypertension, BW: body weight, TM: trabecular meshwork, SC: Schlemm’s canal, CB: ciliary body, α-SMA: α-smooth muscle actin, TGF-β: transforming growth factor-β.
 
-## MET effectively reversed steroid-induced OHT in mice
+### MET effectively reversed steroid-induced OHT in mice
 
 In this step, successfully DEX-induced OHT mouse models were randomly assigned into three groups with the continued prescription of DEX: DEX withdrawal (group 2, n = 10), DEX + PBS (group 3, n = 8), and DEX + 0.3% MET (group 4, n = 18). Meanwhile, a group of mice were treated with solo PBS as control with a duration of 8 weeks (group 1, n = 8).
 
@@ -54,7 +54,7 @@ The experimental procedure is illustrated in Figure 2A. The IOPs after 28 days o
 
 **Figure 2.:** (A) Experimental process overview. (B) MET effectively reversed the IOP in steroid-induced OHT mouse models. **p < 0.01 (comparison between groups 3 and 4), ##p < 0.01 (comparison between groups 2 and 4), △p < 0.05, and △△p < 0.01 (comparison between groups 1 and 4). DEX: dexamethasone, MET: metformin, PBS: phosphate-buffered saline, IOP: intraocular pressure, OHT: ocular hypertension.
 
-## MET attenuated the steroid-induced TM cytoskeletal destruction in vivo
+### MET attenuated the steroid-induced TM cytoskeletal destruction in vivo
 
 As shown in Figure 3, MET improved fibrosis and the intensity of phalloidin labelling of F-actin in the TM tissue of steroid-induced OHT C57BL/6 mice. Quantitative comparison showed a significant difference in the number of α-SMA- and fibronectin (FN)-positive TM cells between MET-treated and control mice (Figure 3C, E). Additionally, MET treatment promoted the cytoskeleton recovery of steroid-induced TM cell damage, as confirmed by the pronounced upregulation of F-actin (Figure 3F). We concluded that the IOP-lowering effect of MET in this steroid OHT model can be largely explained by the attenuation of fibrotic alterations and rearrangement of the cell skeleton at sites of TM or trabecular outflow pathways.
 
@@ -62,27 +62,35 @@ As shown in Figure 3, MET improved fibrosis and the intensity of phalloidin labe
 
 **Figure 3.:** Representative images of HE (A) and fibrotic markers (B). Scale bar, 20 µm, (C) Quantification of α-SMA of the models. (D) Quantification of TGF-β of the models after 4 weeks of DEX withdrawal or MET/PBS treatment. (E) Quantification of fibronectin (FN) of the models after 4 weeks of DEX withdrawal or MET/PBS treatment. (F) Quantification of F-actin of the models after 4 weeks of DEX withdrawal or MET/PBS treatment. *p < 0.05, ns: non-significance, DEX: dexamethasone, HE: haematoxylin and eosin, MET: metformin, PBS: phosphate-buffered saline, α-SMA: α-smooth muscle actin, TGF-β: transforming growth factor-β. White arrows indicate the representative positive cells.
 
-## Protective effects of MET on TM in vitro
+### Protective effects of MET on TM in vitro
 
 To test the effect of MET on TM in vitro, we performed studies on human TM cells (HTMCs). Western blotting (WB) showed that the expression of myocilin, a glucocorticoid-inducible gene in HTMCs, increased after DEX treatment (Figure 4B), confirming that the cells had characteristics of TM cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81198/elife-81198-fig4-v1.jpg)
+
+**Figure 4.:** (A) HTMCs were treated with MET for 24 hr with or without pre-treatment of tBHP for 1 hr. Representative images of cell distribution and morphology photographed by inverted microscopy. Scale bar, 50 µm, (B) The expression of myocilin after DEX treatment in HTMCs. (C, D) The relative HTMC viability after exposure to MET with different concentrations. Cell proliferation was measured using the CCK8 assay. (E, F) The relative ROS levels were assayed via flow cytometry, and the results showed that MET reduced the ROS production of HTMC induced by tBHP. *p < 0.05, **p < 0.01. DEX: dexamethasone, HTMCs: human trabecular meshwork cells, MET: metformin, ROS: reactive oxygen species, tBHP: tert-butyl hydroperoxide, TM: trabecular meshwork.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81198/elife-81198-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) ROS signals of HTMCs were determined by labelling cells with 2′,7′-dichlorofluorescein diacetate (DCFH-DA) and photographed by an inverted phase-contrast microscopy. Scale bar, 100 µm, (B) Quantification of DCF-positive cells in A. (C) The relative ROS levels assayed by flow cytometry showed that 3 mM MET reduced the ROS production of HTMC induced by DEX. **p < 0.01, *p < 0.05, ns: non-significance, DEX: dexamethasone, MET: metformin, ROS: reactive oxygen species, HTMCs: human trabecular meshwork cells, L-MET: low doses of metformin (<10 mM).
 
 Higher doses (≥10 mM) of MET decreased the number of HTMCs, but this inhibitory effect was less evident at lower doses (<10 mM) (Figure 4C). To verify the protective role of MET in HTMCs, cells were pre-treated with 100 μM tBHP for 1 hr to induce chronic oxidative stress (Tang et al., 2013), and subsequently exposed to low doses of MET (3, 5, and 10 mM) (shortened as L-MET in this study). The results showed that L-MET significantly reversed the inhibitory effect induced by tBHP (Figure 4A, D).
 
 Furthermore, cells treated with L-MET showed less intracellular ROS signals compared to the control, and 1 mM MET reduced tBHP-induced ROS production. These results were confirmed by flow cytometry (FCM) analysis (Figure 4E,F) and further evidenced in DEX-induced (500 nM, 7 days) ROS increase in HTMCs (Figure 4—figure supplement 1). These results indicated that MET reversed oxidative damage to HTMCs.
 
-## MET restored tBHP-induced cytoskeletal destruction in HTMCs and activated integrin/ROCK signals
+### MET restored tBHP-induced cytoskeletal destruction in HTMCs and activated integrin/ROCK signals
 
 Actin filaments play key roles in cortical polarisation and asymmetric spindle localisation during phagocytosis in HTMCs. F-actin was stained to determine whether actin dynamics were involved in tBHP-induced cellular dysfunction. As shown in Figure 5A, F-actin was evenly accumulated in the cytoplasm with a robust fluorescent signal in control HTMCs. Exposure to L-MET did not change the morphology of HTMCs as observed by inverted phase-contrast microscopy. Contrarily, HTMCs exposed to 1 hr of tBHP displayed intermittent distribution of actin filaments with faded fluorescent signals. Additionally, tBHP treatment significantly destroyed HTMCs, manifesting as various morphology-aberrant cells with misaligned cytoplasm. These pathological changes could be partially rescued by L-MET, implying that MET could restore the dynamic instability from oxidative damage. Furthermore, WB results (Figure 5B, C) showed that L-MET significantly activated the integrin/ROCK pathway by upregulating integrin, ROCK, AMPK, and pAMPK in healthy HTMCs, and significantly activated integrin, ROCK, pAMPK, and F-actin in damaged HTMCs, and it was more pronounced in the 3 mM doses.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81198/elife-81198-fig5-v1.jpg)
 
-**Figure 5.:** A) and activated the intergrin/ROCK pathway (B) in HTMCs.Scale bar, 20 µm. (C) The quantitative protein levels of B. *p < 0.05 (comparison with the control), #p < 0.05 (comparison with the tBHP-treated group). HTMCs: human trabecular meshwork cells, MET: metformin, tBHP: tert-butyl hydroperoxide.
+**Figure 5.:** Scale bar, 20 µm. (C) The quantitative protein levels of B. *p < 0.05 (comparison with the control), #p < 0.05 (comparison with the tBHP-treated group). HTMCs: human trabecular meshwork cells, MET: metformin, tBHP: tert-butyl hydroperoxide.
 
 The ultrastructure of HTMCs was examined by transmission electron microscopy (TEM) (Figure 6). We observed a significant reduction in the amount and density of microfilaments in the tBHP-treated cells, and these changes recovered after L-MET treatment.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81198/elife-81198-fig6-v1.jpg)
 
-**Figure 6.:** A).Scale bar, 2 µm, Red arrows indicate the representative microfilaments imaged by transmission electron microscopy. The red rectangles embedded in the lower left part of each picture are representative microfilaments with a magnification of ×150,000. (B) The quantitative microfilaments of A. *p < 0.05 (comparison with the control), ##p < 0.01 (comparison with the tBHP-treated group). HTMCs: human trabecular meshwork cells, MET: metformin, tBHP: tert-butyl hydroperoxide.
+**Figure 6.:** Scale bar, 2 µm, Red arrows indicate the representative microfilaments imaged by transmission electron microscopy. The red rectangles embedded in the lower left part of each picture are representative microfilaments with a magnification of ×150,000. (B) The quantitative microfilaments of A. *p < 0.05 (comparison with the control), ##p < 0.01 (comparison with the tBHP-treated group). HTMCs: human trabecular meshwork cells, MET: metformin, tBHP: tert-butyl hydroperoxide.
 
 ## Discussion
 
@@ -106,39 +114,39 @@ In summary, promotion of TM cytoskeleton recovery by MET treatment may be an und
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All the animals were treated in accordance with the principles of the Declaration of Helsinki and in compliance with the Association for Research in Vision and Ophthalmology (ARVO) Statement. All experiments were approved by the Institutional Animal Care and Use Committee of the Wenzhou Medical University (wydw2022-0209). Healthy C57BL/6J mice (age: 6–8 weeks, male, weight: 20–25 g) were used in this study. The mice were purchased from Zhejiang Vital River Experimental Animal Technology Co. Ltd (Charles River Lab China), bred/housed in clear cages, and kept in housing rooms at 21°C with a 12:12 hr light:dark cycle.
 
-## OHT animal model and drug treatments
+### OHT animal model and drug treatments
 
 The animal experiments were performed in two consecutive steps. In the first step, OHT C57BL/6J mouse model was induced by topical 0.1% DEX phosphate (dissolved in PBS twice daily, 8–9 AM and 5–6 PM) as described previously (Li et al., 2021), and sterile PBS was used as a vehicle control. The second step was conducted 4 weeks after steroid induction. The successfully created OHT mouse models with elevated IOP were randomly divided into three groups: DEX withdrawal (group 2, DEX was stopped without any additional prescribed drug, n = 10), DEX + PBS (group 3, n = 8), and DEX + 0.3% MET (group 4, n = 18). Mice in groups 3 and 4 received an additional 4 weeks of supplemented drug (PBS or 0.3% MET) delivered bilaterally with the continued synchronous use of steroid, leading to an entire 8-week duration of DEX treatment. Meanwhile, PBS-only treatment was administered for 8 weeks in the control (group 1, n = 8). Drugs were prescribed twice daily with at least 15-min interval when administering 2 types of eye drops to ensure effective penetration.
 
-## IOP measurements
+### IOP measurements
 
 Briefly, mice were anaesthetised using gaseous isoflurane (approximately 2 min) and topical alcaine (Alcon-couvreur n. v, Rijksweg, Puurs Belgium). IOP was measured using a rebound tonometer (icare TONOVET; Vantaa, Finland). Each recorded IOP was the average of five measurements and three IOP readings were recorded for the same eye to calculate the mean value. IOP measurements were conducted every 2–3 days (Monday, Wednesday, and Friday, between 2 PM and 3 PM).
 
-## Weight measurement
+### Weight measurement
 
 The anaesthetised mice were gently placed on digital electronic scales (Electronic Scale, Kunshan, China) to measure their weight. The effective reading of BW was recorded to an accuracy of 0.01 g. The BW of each mouse was calculated from the average of three test values.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 HTMCs were purchased from BNCC (338506, Shanghai, China), which were authenticated by STR profiling. We confirmed that no mycoplasma contamination was detected by regular examinations. Cells were cultured in Dulbecco’s Modified EagIe’s Medium: F-12 (DMEM/F12) (Cytiva, HyClone Laboratories, Logan, UT, USA) containing 10% foetal bovine serum (BI, USA) and antibiotics (100 U/ml penicillin and 100 μg/ml streptomycin, Gibco, Life Technologies Corporation, NY, USA) at 37°C and 5% CO2. To identify the characteristics of HTMCs, cells were treated with 500 nM DEX (Shanghai Macklin Biochemical Co., Ltd, China) for 7 days, and the expression of myocilin was evaluated by WB (He et al., 2019). For drug testing, tBHP (Damas-beta, China) and MET (Sigma-Aldrich, St. Louis, USA) were dissolved in DMEM/F12. HTMCs were pre-treated with tBHP solution for 1 hr to induce oxidative damage, followed by 24-hr incubation in normal culture medium containing MET at certain concentrations.
 
-## Cell viability
+### Cell viability
 
 Cell viability was measured using the CCK8 assay kit (APE BIO), following the manufacturer’s instructions. The cells were seeded in 96-well plates and exposed to increasing concentrations of MET (0, 1, 3, 5, 10, 20, 30, 40, and 50 mM) for 24 hr. The cell viability was determined by measuring the optical density at 490 nm using an absorbance microplate reader (SpectraMax 190; version 7.1.0, Molecular Devices, CA, USA).
 
-## Detection of intracellular ROS levels
+### Detection of intracellular ROS levels
 
 Intracellular ROS levels were determined using a 2′,7′-dichlorofluorescein diacetate (DCFH-DA) probe (Beyotime Biotechnology, Shanghai, China) by measuring the oxidative conversion of cell-permeable DCFH-DA to fluorescent dichlorofluorescein according to the manufacturer’s instructions and a previous study (Xu et al., 2020). Briefly, 10 μM DCFH-DA solution diluted in serum-free DMEM/F12 medium was added and incubated with the cells, then they were kept in the dark for 20 min. Excess DCFH-DA was removed by washing the cells three times with serum-free cell culture medium. ROS was detected by both IF imaging and FCM (BD Accuri C6 Plus, CA, USA), and analysed by Flow Jo (Flowjo X 10.0.7r2). The values were normalised to signals from the control group.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed 24 hr after drug treatment as previously described (Xu et al., 2020). After gel separation and membrane transfer, myocilin (Abcam), integrin 1 (Abcam), AMPK (CST), pAMPK (CST), ROCK1/2 (Abcam), MLC1 (Abcam), and F-actin (CST) were detected. β-Actin (CST) was used as the loading control. Western blot membranes were developed using a chemiluminescence detection system (Amersham Imager 680RGE; GE Healthcare Bio-Sciences AB, Sweden, Japan).
 
-## Histology, immunostaining, and TEM
+### Histology, immunostaining, and TEM
 
 At the time of harvest, the mice were re-anaesthetised; the eyes were fixed in 4% paraformaldehyde overnight and embedded in paraffin or optimum-cutting temperature compound in the sagittal axis. The sections were incubated overnight with primary antibodies at 4°C according to the manufacturer’s instructions (Xu et al., 2020). The secondary antibodies were goat anti-rabbit or anti-mouse (CST) at a 1:500 dilution. Sections were subsequently incubated with 2-(4-amidinophenyl)-6-indolecarbamidine dihydrochloride (DAPI, Beyotime Institute of Biotechnology, Shanghai, China) for 5 min to stain the nuclei, washed, and then mounted.
 
@@ -146,10 +154,10 @@ The cells were fixed with 4% paraformaldehyde for 15 min, permeabilised with 0.2
 
 For electron microscopy studies, cells were fixed in 2.5% glutaraldehyde (Shanghai Macklin Biochemical Co., Ltd, China) and embedded in Epon resin, and 80-nm sagittal thin sections were cut through iridocorneal tissues using an ultramicrotome (Power Tome-XL, RMC Products, USA). Sections were stained with uranylacetate/lead citrate and examined with a transmission electron microscope (HITACHI, H-7500).
 
-## Image analysis
+### Image analysis
 
 Immunohistochemical images were obtained using a microscope (ECLIPSE 80i, Nikon) and analysed using the NIS-Elements Imaging Software (3.22.00; Build 700, LO, USA). For quantification, high-power fields (×400 magnification) of the AHO from each model were captured. TM region was defined as the area between the ciliary body and the inner wall of Schlemm’s canal, with anterior and posterior end points of Schwalbe line and scleral spur, respectively (Yan et al., 2022). For microfilament quantification, five fields with ×80,000 magnification of each group were captured with TEM, within which two were from the cell cortex region (defined as within 400 nm beneath the cell membrane) (Svitkina, 2020) and the remaining three were beyond this area. ImageJ (v1.52a, National Institutes of Health, USA) was used to quantify the positively stained cells, which referred to those cells stained by both blue colour from DAPI and green or red signals from the secondary antibodies.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis was conducted using SPSS (version 22.0) software and GraphPad Prism (version 7.0). Cell- and animal-based experiments included at least three biological and technical replicates. Continuous data are summarised as mean ± standard deviation. Student’s t-test and analysis of variance were used to test the differences in continuous variables. A paired t-test was used to compare IOP changes from the baseline. Statistical significance was set at p value <0.05.

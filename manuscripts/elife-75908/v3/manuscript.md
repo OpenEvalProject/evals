@@ -24,16 +24,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Institute of Cancer and Genomic Sciences, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/00wge5k78 Stem Cells, Ageing and Cancer Research Group, Department of Medical Biology, Faculty of Health Sciences, UiT – The Arctic University of Norway Tromso Norway
+1. Institute of Cancer and Genomic Sciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. Stem Cells, Ageing and Cancer Research Group, Department of Medical Biology, Faculty of Health Sciences, UiT – The Arctic University of Norway Tromso Norway ([ROR:00wge5k78](https://ror.org/00wge5k78))
 3. Department of Laboratory Medicine (hematology), Faculty of Applied Medical Sciences. Albaha University, Kingdom of Saudi Arabia Al Bahah Saudi Arabia
-4. https://ror.org/03angcq70 Centre for Computational Biology, University of Birmingham Birmingham United Kingdom
-5. https://ror.org/00t3r8h32 Institute of Chemistry and Metabolomics, University of Lübeck Lübeck Germany
-6. https://ror.org/012p63287 Department of Experimental Hematology, University Medical Center Groningen, University of Groningen Groningen Netherlands
-7. https://ror.org/04cvxnb49 Department of Medicine, Hematology/Oncology, University Hospital Frankfurt, Goethe University Frankfurt Frankfurt Germany
-8. https://ror.org/04cvxnb49 Frankfurt Cancer Institute, Goethe University Frankfurt Frankfurt Germany
-9. https://ror.org/04cdgtt98 German Cancer Consortium (DKTK), partner site Frankfurt/Mainz, and German Cancer Research Center (DKFZ) Heidelberg Germany
-10. https://ror.org/048emj907 Centre for Clinical Haematology, University Hospitals Birmingham NHS Foundation Trust, Queen Elizabeth Hospital, Queen Elizabeth Medical Centre Birmingham United Kingdom
+4. Centre for Computational Biology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+5. Institute of Chemistry and Metabolomics, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+6. Department of Experimental Hematology, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+7. Department of Medicine, Hematology/Oncology, University Hospital Frankfurt, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+8. Frankfurt Cancer Institute, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+9. German Cancer Consortium (DKTK), partner site Frankfurt/Mainz, and German Cancer Research Center (DKFZ) Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
+10. Centre for Clinical Haematology, University Hospitals Birmingham NHS Foundation Trust, Queen Elizabeth Hospital, Queen Elizabeth Medical Centre Birmingham United Kingdom ([ROR:048emj907](https://ror.org/048emj907))
 
 † Corresponding author
 
@@ -51,9 +51,21 @@ Our work provides new insight into the metabolic and redox crosstalk between AML
 
 ## Results
 
-## Co-culturing AML and stromal cells in direct contact triggers acetate secretion by stromal cells
+### Co-culturing AML and stromal cells in direct contact triggers acetate secretion by stromal cells
 
 We first sought to determine whether interactions between AML and stromal cells in co-culture would result in differences in the consumption or production of extracellular metabolites. For this purpose, three human AML cell lines (SKM-1, Kasumi-1 and HL-60) representing different AML subtypes (M5, M2 t(8;21), and M2, respectively) were cultured separately and in co-culture with MS-5, a stromal mouse cell line capable of maintaining haematopoiesis (Itoh et al., 1989). The metabolic composition of the extracellular medium in each condition was analysed by 1H-NMR and compared at different time points. The most striking difference found in co-culture compared to cells cultured separately was an increased secretion of acetate, which was common for the three cell lines used (Figure 1A and B). Moreover, only stromal cells secreted acetate to a lower extent when cultured alone whereas AML cells did not secrete any acetate when cultured alone. Altogether, these findings suggest that acetate secretion is a result of a direct interaction between AML and stromal cells. In addition, the observation that only stromal cells secrete acetate under these conditions suggests that stromal cells could be responsible for the increased acetate secretion found in co-culture.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig1-v3.jpg)
+
+**Figure 1.:** (A) Section of 1H-NMR spectra, corresponding to the methyl group of acetate, from extracellular medium samples of SKM-1 cells cultured alone (blue), MS-5 cells cultured alone (red) and SKM-1 and MS-5 cells in co-culture (green) after 24 hours. (B) Extracellular acetate levels in AML cell lines (SKM-1, Kasumi-1 and HL-60) cultured alone (blue), MS-5 cells cultured alone (red) and AML and MS-5 cells in co-culture in direct contact (green) at 0, 20 and 24 hours of incubation. Each point represents the mean of n=3 independent experiments and error bars represent standard deviations. (C) Extracellular acetate levels in AML cell lines cultured alone (blue), MS-5 cells cultured alone (red) and AML and MS-5 cells in co-culture separated by a 0.4 µm permeable membrane (green) at 0, 20, and 24 hr of incubation. Each point represents the mean of n=3 independent experiments and error bars represent standard deviations. (D) Extracellular acetate levels in AML cell lines and MS-5 cells in co-culture (black) for 24 hr and after being separated and cultured alone in the same medium until 48 hr (blue for AML and red for MS-5). Each point represents the mean of n=3 independent experiments and error bars represent standard deviations. (E) Extracellular acetate levels in MS-5 cells cultured alone and primary patient-derived AML cells co-cultured with MS-5 cells at 48 hr. Each set of points represents an independent experiment (n=4). (F) Extracellular acetate levels in MS-5 cells cultured alone and healthy donor-derived peripheral blood mononuclear CD34+ (PBMC) cells co-cultured with MS-5 cells at 48 hr. Each set of points represents an independent experiment (n=3). For E and F, symbols (circles or triangles) indicate same cell culture medium composition was used. (G), Acetate levels in bone marrow extracellular fluid of C57BL6/J mice 6 months after transplantation with bone marrow nucleated cells isolated from control or MLL-AF9 transgenic mice. For B, C, and D unpaired Student’s t-tests were applied for each condition (black brackets) for G a Mann-Whitney test was applied (black brackets). p-values are represented by n.s. for not significant * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Sections of 1H-NMR spectra from extracellular medium samples of SKM-1 cells cultured alone (blue), MS-5 cells cultured alone (red) and SKM-1 and MS-5 cells in co-culture (green) after 24 hr of culture, corresponding to glucose, lactate, glutamate, and glutamine.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) CFSE cell proliferation analysis in AML cell lines alone or in co-culture with MS-5 cells. The population of living cells was gated, and 1500 cells for each condition were randomly selected and plotted. The geometric mean for each population and time point was compared between cells alone or in co-culture by performing an unpaired unpaired Student’s t-test and p-values were represented as n.s. for not significant. Each histogram is representative of n=3 independent experiments. (B), Extracellular acetate levels in SKM-1 cells cultured alone (blue), HeLa cells cultured alone (red) and AML and HeLa cells in co-culture (green) at 0, 20, and 24 hr. Each point represents the mean of n=3 independent experiments and error bars represent standard deviation. An unpaired Student’s t-test was applied for each condition (black brackets) and p-values are represented by n.s. for not significant.
 
 We further examined the levels of other common extracellular metabolites, including glucose, lactate, glutamate and glutamine. As shown in Figure 1—figure supplement 1, higher consumption of glucose along with a higher secretion of lactate was observed in AML and stromal cells in co-culture compared to single cultures, suggesting a higher glycolytic flux in co-culture. However, the levels of glucose consumption and lactate production in co-culture were similar to the sum of the glucose consumption and lactate production levels of the AML and stromal cells in single cultures, suggesting that the overall increase in glycolysis in co-culture was just a result of culturing both cell types together. Additionally, we observed no variation in glutamate and glutamine levels suggesting that these metabolites are not involved in interactions that result from co-culture and are utilised depending on their availability.
 
@@ -69,11 +81,35 @@ We further investigated whether increased acetate secretion could take place in 
 
 Furthermore, we sought to determine whether in an in vivo setting, increased acetate production would be observed. For this, acetate levels were analysed in the bone marrow extracellular fluid (BMEF) of mice transplanted either with mouse MLL-AF9+ leukaemic cells or with healthy wild type mouse hematopoietic cells. These experiments revealed that a significantly higher amount of acetate was present in the BMEF of mice suffering from leukaemia compared to controls (Figure 1G).
 
-## AML cells consume and use acetate secreted by stromal cells to feed the TCA cycle and for lipogenesis
+### AML cells consume and use acetate secreted by stromal cells to feed the TCA cycle and for lipogenesis
 
 Following the finding that stromal cells might be responsible for acetate secretion in co-culture, we next examined whether AML cells could metabolise the secreted acetate. We first sought to define the concentration of secreted acetate in the extracellular medium in co-culture. For this, we compared a sample of extracellular medium from a co-culture of SKM-1 and MS-5 cells after 24 hr to a calibration curve (Figure 2—figure supplement 1A), which allowed us to determine the concentration of acetate in co-culture as approximately 3–4 mM. We then investigated whether SKM-1 cells can consume acetate both in normal plasma concentrations (Gao et al., 2016) and co-culture concentrations (0.25 mM or 3 mM, respectively). In both cases, SKM-1 cells consumed acetate significantly after 48 hr, and in normal plasma conditions also after 24 hr (Figure 2—figure supplement 1B).
 
 We then employed a tracer-based approach using [2-13C]acetate to assess whether SKM-1 or MS-5 cells can utilise acetate (Figure 2A and Figure 2—figure supplement 2A). Both cell types imported 13C labelled acetate as observed in NMR spectra (Figure 2B). However, only SKM-1 cells showed 13C label incorporation in several TCA cycle related metabolites, including aspartate, citrate, glutamate, 2-oxoglutarate, glutathione, and proline, as well as in acetylcarnitine. Acetylcarnitine is known to be produced by cells when large amounts of acetyl-CoA are present in the mitochondria (Childress et al., 1967; Stephens et al., 2007), which could be in line with this experiment in which a high concentration of [2-13C]acetate (4 mM) was used. Overall, this data suggests that acetate in co-culture could be utilised by SKM-1 cells but not by MS-5 cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic of label distribution arising from [2-13C]acetate in TCA cycle intermediates. Black circles correspond to positions expected to be labelled. (B) 13C percentages of label incorporation in polar metabolites from labelled acetate in SKM-1 and MS-5 cells after two hours of incubation with [2-13C]acetate (4 mM) derived from 1H-13C-HSQC NMR spectra. Bars represent the mean of the 13C percentages and error bars represent the standard deviations for n=3 independent experiments. (C) 13C percentages on polar metabolites in SKM-1 and MS-5 cells in co-culture. Cells were co-cultured for 24 hr before the addition of extra 4 mM sodium [2-13C]acetate and culture for additional 30 min (upper panel) or 8 hr (lower panel). Bars represent the mean of the 13C percentages and error bars represent the standard deviations of n=3 independent experiments. 13C natural abundance is represented as a black bar at %13C=1.1. (D) 1H 1D NMR of lipids extracted from SKM-1 cells. Cells were co-cultured with MS-5 cells for 24 hr before the addition of extra 4 mM sodium [2-13C]acetate and culture for additional 48 hr. Lower panel represents overlay of spectra (n=3) from cells grown in 12C- and 13C—labelled acetate (black and red, respectively). Upper panel is the zoomed section of the spectra show 1H13C-methyl signal multiplets at 1.05ppm to 0.7pm as indicated by an arrow (the shift of the 1H13C methyl satellite signal is caused by the scalar JCH coupling of 125–128 Hz). (E) Cell viability measured by propidium iodide staining after culturing for 72 hr in glucose-free media containing 4 mM acetate or normal media, in the presence of DMSO, AraC 1 µM, and ACSS2i 20 uM. Bars represent the mean and error bars represent the standard deviations for n=3 independent experiments. A Tukey’s multiple comparison test was performed comparing each treatment and different medium conditions and p-values are represented by n.s. for not significant * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Linear regression of acetate concentrations and detected intensities in 1H-NMR spectra (Intensity = 1.38·106±1.6·104 x acetate concentration +2.27·105±3.3·104; R2=0.9987). The intensities detected in samples of co-culture were interpolated to obtain the estimate acetate concentration in co-culture (3.09 mM). Each point represents the mean of n=3 independent experiments and error bars represent standard deviation. (B) Extracellular acetate levels in SKM-1 cells cultured with 0.25 mM and 3 mM acetate medium after 0, 24, and 48 hrs. Each point represents the mean of n=3 independent experiments and error bars represent standard deviation. An unpaired Student’s t-test was applied for each condition (black brackets) and p-values are represented by * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example of metabolites assigned in a 1H-13C-HSQC spectrum from a polar extract from SKM-1 cells cultured with [2-13C]acetate for 2 hr. 13C percentages were calculated in 13 carbons from 11 different metabolites. The exact chemical shifts for each carbon are: acetate C2, 1.91 ppm (1H) – 26.1 ppm (13C); aspartate C2, 3.89 ppm (1H) – 55.0 ppm (13C); aspartate C3, 2.82 ppm (1H) – 39.4 ppm (13C); acetylcarnitine C9, 2.15 ppm (1H) – 23.4 ppm (13C); citrate C2, 2.52 ppm (1H) – 48.2 ppm (13C); fumarate C2, 6.51 ppm (1H) – 138.2 ppm (13C); glutamate C4, 2.34 ppm (1H) – 36.1 ppm (13C); glutamine C4, 2.44 ppm (1H) –33.7 ppm (13C); oxoglutarate C4, 2.43 ppm (1H) – 33.4 ppm (13C); glutathione C4, 2.55 ppm (1H) – 34.2 ppm (13C); malate C2, 4.28 ppm (1H) – 73.2 ppm (13C); malate C3, 2.68 ppm (1H) – 45.4 ppm (13C); and proline C4, 2 ppm (1H) – 26.6 ppm (13C). (B and C), 13C percentages on polar metabolites in Kasumi-1 (B) and HL-60 (C) cells in co-culture with MS-5 cells. Cells were co-cultured for 24 hours before the addition of extra 4 mM sodium [2-13C]acetate and incubated for 30 minutes or 8 hours. Bars represent the mean of the 13C percentages and error bars represent the standard deviation of n=3 independent experiments. 13C natural abundance is represented as a black bar at %13C=1.1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** 1H 1D NMR of lipids extracted from SKM-1 (A), Kasumi-1 (B) and HL-60 (C) cell lines after being in co-culture with MS-5 cells for 24 hr and being labelled with 4 mM acetate for extra 8 hr (n=3). Lower panel represents overlay of spectra (3 batches) from cells grown in 12C- and 13C-labelled acetate for 8 hr, respectively (‘Black’ and ‘Red’). Upper panel is the zoomed section of the spectra (1.05ppm to 0.7ppm) for the lipids extracted from AML cells showing no 1H-13C3 peaks confirming no labelling for the methyl groups.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** 1H 1D NMR of lipids extracted from Kasumi-1 (A) and HL-60 (B) cell lines after being in co-culture with MS-5 cells for 24 hr and being labelled with 4 mM acetate for extra 48 hr (n=3). Lower panel represents overlay of spectra (3 batches) from cells grown in 12C- and 13C-labelled acetate for 8 hr, respectively (‘Black’ and ‘Red’). Upper panel is the zoomed section of the spectra (1.05ppm to 0.7ppm) for the lipids extracted from AML cells showing clearly 1H-13C3peaks confirming labelling for the methyl groups.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** 13C percentages on polar metabolites in SKM-1 cells. Cells were co-cultured for 24 hr with 20 µM ACSS2i before the addition of extra 4 mM sodium [2-13C]acetate and incubated for 24 hr (n=1). Bars represent the 13C percentages. 13C natural abundance is represented as a black bar at %13C=1.1.
 
 To determine whether AML cells can import and metabolise the secreted acetate in co-culture, we co-cultured AML and MS-5 cells for 24 hr and then added [2-13C]acetate to the spent extracellular medium and cultured cells for 30 min and 8 hr before analysing the intracellular metabolites in each cell type (Figure 2C). We found that only AML cells incorporated 13C into intracellular metabolites at both timepoints (Figure 2C and Figure 2—figure supplement 2B-C). The intake of acetate by AML cells was very rapid, with several TCA cycle metabolites such as glutamate, oxoglutarate, malate, proline, and succinate showing label incorporation after 30 min of [2-13C]acetate labelling. The metabolisation pattern for all AML cells in co-culture was similar to that observed for SKM-1 cells alone (Figure 2B and C and Figure 2—figure supplement 2B-C). We also investigated whether the acetate taken by AML cells undergoes alternative fates other than TCA cycle. For this purpose, we co-cultured AML and MS-5 cells for 24 hr before adding [2-13C]acetate to the spent extracellular medium and cultured them for further 8 or 48 hr before analysing the intracellular metabolites. No 13C labelling was incorporated into lipids when co-cultures were labelled with [2-13C]acetate for 8 hr (Figure 2—figure supplement 3). In contrast, at 48 hr the three AML cell lines presented 1H13C-methyl signals at 0.7–0.8 ppm confirming labelling of lipid CH3 groups (approximately 10–20% enrichment) (Figure 2D and Figure 2—figure supplement 4).
 
@@ -81,11 +117,19 @@ Overall, these results indicated that AML cells could uptake and utilise the ace
 
 To understand the possible physiological relevance of our findings, we cultured the three human AML cell lines in normal media and glucose-free media in the presence of acetate, and treated them or not with the chemotherapy agent cytarabine (cytosine arabinoside, AraC). Our data showed that the AML cells studied displayed different degrees of sensitivity to AraC, with HL-60 cells being more sensitive and Kasumi-1 more resistant (Figure 2E). Interestingly, we observed that the high sensitivity for AraC displayed by HL-60 cells could be partially counteracted by the presence of acetate in the cultures. We then investigated whether the inhibition of the acetyl CoA synthetase short-chain family member 2 (ACSS2i), has an effect of the survival of the cells (Figure 2E). All human AML cell lines studied displayed high sensitivity to the ACSS2i when cultured in glucose with no added acetate, indicating the importance of ACSS2 in metabolism, as previously observed in myeloma cells (Li et al., 2021). In glucose-free media supplemented with 4 mM acetate, the survival of the cells was maintained. Interestingly, under this condition, the ACSS2i treatment alone did not have a profound detrimental effect on the survival of the cells. By performing [2-13C]acetate label incorporation we observed that the ACSS2i reduced the incorporation of acetate to the TCA metabolites by approximately 60% after 24 hr of treatment (Figure 2—figure supplement 5), indicating the incomplete inhibition of the enzyme and thus still accessibility of acetate usage by the cell, providing an explanation for the higher survival in the medium supplemented with acetate compared to control media. Nonetheless, it was clear that when cells were treated with both drugs, ACSS2i treatment sensitised AML cells to AraC treatment. Our results suggest that acetate confers chemoresistance to AML cells and that the use of ACSS2i sensitizes AML cells to conventional chemotherapies such as AraC.
 
-## Transcriptomic data highlights a metabolic rewiring of stromal cells in co-culture characterised by upregulation of glycolysis and downregulation of pyruvate dehydrogenase
+### Transcriptomic data highlights a metabolic rewiring of stromal cells in co-culture characterised by upregulation of glycolysis and downregulation of pyruvate dehydrogenase
 
 After establishing that stromal cells are responsible for acetate secretion (Figure 1D) and that AML cells consumed the secreted acetate in co-culture (Figure 2C and Figure 2—figure supplement 2), we sought to elucidate the mechanism behind acetate secretion by MS-5 cells in co-culture. Thus, we set out to perform global gene expression profiling by RNA-seq, comparing cells cultured alone and in co-culture (Figure 3—figure supplement 1A). With this approach we identified 587 differentially expressed genes (q-value <0.1) (Figure 3—figure supplement 1B); with 476 genes being upregulated and 111 genes being downregulated in co-culture.
 
 Following clustering of differentially expressed genes, gene set enrichment analysis (GSEA) was performed (Figure 3A) revealing a positive correlation with the expression of genes that are part of the glycolysis pathway (MSigDB: M5937), as well as the reactive oxygen species pathway (MsigDB: M5938) (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig3-v3.jpg)
+
+**Figure 3.:** (A) Top 25 GSEA hallmark gene sets ranked by expression in MS-5 cells only vs co-culture with SKM-1 cells, analysed using the collection of hallmark gene sets from Molecular Signature Database with a false discovery rate threshold at 5%. p-Values for each pathway are presented as –log(10)p-value. (B) GSEA enrichment score plots of glycolysis and ROS generated using Sleuth 0.30.0 R statistical package. (C) Fold change values of detected gene transcripts (TPMs) related to glycolysis and pyruvate metabolism. FC values are represented as log2FC, red values indicate upregulation and blue values indicate downregulation in MS-5 cells in co-culture. (D) Label incorporation from [U-13C]glucose into extracellular metabolites in AML and MS-5 cells cultured alone or in co-culture after 24 hr. Bars represent the mean of n=3 independent experiments and error bars represent standard deviations. (E), Label incorporation from [U-13C]glucose into intracellular acetate, alanine and lactate in MS-5 cells cultured alone or in co-culture after 24 hr. Bars represent the mean of n=3 independent experiments and error bars represent standard deviations. p-Values are represented by n.s. for not significant * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) PCA plot showing the clustering of individual samples of MS-5 cells cultured alone (MO) and MS-5 cells in co-culture (MC). The x and y axis values represent the variation between the sample groups. Generated using Sleuth 0.30.0 R statistical package. (B) Heat map of differentially expressed genes in MS-5 only (red) vs MS-5 co-culture (blue) calculated using the Wald statistical test, correcting for multiple testing comparison employing the Benjamini-Hochberg method using a false discovery rate threshold of 1% (q-value <0.01). Generated using Sleuth 0.30.0 R statistical package. (C) Quantitative PCR mRNA expression values for RNA sequencing validation of MS-5 cells cultured alone and in co-culture with SKM-1 cells. The gene set chosen was Hk2, Pdhx, Pdk1, and Pdk2. mRNA quantification was normalized to B2m house-keeping gene. Bars represent the mean and error bars represent the SEM of three independent experiments (n=3). An unpaired Student’s t-test was applied for each gene and p-values are represented by * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
 
 A closer examination of the genes involved in the glycolysis pathway revealed a major upregulation of several glycolysis-related genes in MS-5 cells in co-culture (Figure 3C and Figure 3—figure supplement 1C). Most of the genes involved in glucose transport (Slc2a1 and Slc2a4) and glucose breakdown to pyruvate (Pgm1, Hk2, Gpi1, Pfkl, Gapdh, Pgk1, Pgam1, Pgam2, Eno1, Eno1b, Eno2, and Pkm) were upregulated, including the gene encoding for the 6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 3 (Pfkfb3), a well-known activator of glycolysis.
 
@@ -93,11 +137,19 @@ In contrast, individual examination of genes related to pyruvate metabolism reve
 
 To explore whether glycolysis is upregulated in MS-5 cells in co-culture at the metabolic level and whether acetate could derive from glucose, we performed [U-13C]glucose tracing on AML and MS-5 cells cultured alone and in co-culture and analysed the label incorporation in glycolysis-related extracellular metabolites (Figure 3D). For the three human AML cell lines tested, extracellular acetate presented significantly higher label incorporations from [U-13C]glucose in co-culture compared to cell types cultured alone, providing evidence that the secreted acetate in co-culture derives from glucose. Lactate and alanine, which can be synthesised from pyruvate, did not show significant increases in label incorporation from [U-13C]glucose in co-culture compared to each cell type cultured alone for all the human AML cell lines, with the exception of alanine and lactate in HL-60. Additionally, an increase in labelled acetate, alanine and lactate could be observed intracellularly in MS-5 in co-culture compared to MS-5 alone (Figure 3E). However, only label incorporation in lactate was significant confirming that glycolysis is upregulated in MS-5 cells in co-culture Overall, these results are in agreement with the transcriptomic data (Figure 3C), highlighting that glucose metabolism is upregulated in co-culture but also confirming that acetate derives from glycolysis.
 
-## AML cells rewire stromal cell metabolism transferring ROS to obtain acetate
+### AML cells rewire stromal cell metabolism transferring ROS to obtain acetate
 
 Tracer-based data on MS-5 cells in co-culture revealed that acetate secreted in co-culture derives from glucose (Figure 3D–E). However, transcriptomic data on MS-5 cells in co-culture did not show any upregulation of pyruvate dehydrogenase (PDH), which could convert glucose-derived pyruvate into acetate via acetyl-CoA (Figure 3C). Moreover, acetate secretion was also observed in MS-5 cells grown in thiamine-free media (Figure 4—figure supplement 1A), confirming that the acetate secretion was not dependent on keto acid dehydrogenases (Liu et al., 2018). An alternative mechanism of acetate synthesis involving a non-enzymatic oxidative decarboxylation of pyruvate into acetate has previously been described (Liu et al., 2018; Vysochan et al., 2017; Tiziani et al., 2009). This mechanism was reported to be mediated by ROS in mammalian cells and was linked to cells prone to overflow metabolism under the influence of high rates of glycolysis and excess pyruvate. Hence, we investigated whether ROS might play a role in acetate secretion in our co-culture system.
 
 We first modulated ROS levels in human AML cell lines and MS-5 cells cultured alone and in co-culture and measured acetate production. Hydrogen peroxide was used to increase ROS levels and N-acetylcysteine (NAC) was used as a ROS scavenger. Extracellular acetate levels were measured by 1H-NMR after 24 hr. Increasing ROS levels with peroxide resulted in a significant increase in acetate production, particularly in SKM-1 and Kasumi-1 cells in co-culture (Figure 4A and Figure 4—figure supplement 1B). This experiment could not be carried out with HL-60 cells as peroxide treatment severely impaired the viability of HL-60 cells, as previously reported (Nogueira-Pedro et al., 2013). Additionally, when the ROS scavenger NAC was used, a decrease in the levels of acetate in both MS-5 cells cultured alone and in all the co-cultured cell lines was observed (Figure 4A and Figure 4—figure supplement 1B). The decrease in acetate levels was additionally confirmed using the ROS-scavenging enzyme, catalase (Figure 4—figure supplement 1C), indicating that acetate synthesis in MS-5 cells in co-culture is mediated by ROS.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig4-v3.jpg)
+
+**Figure 4.:** (A) Extracellular acetate levels in SKM-1 (black) and MS-5 cells cultured alone (dark grey) and in co-culture (light grey) for 24 hr in a control medium, medium with 50 µM H2O2 or medium with 5 mM NAC. (B, C and D) Intracellular ROS levels measured by H2DCFDA staining in B and D AML cells or C primary patient-derived AML cells and MS-5 cells cultured alone and in co-culture in B and C direct contact. For A, and B, bars represent the mean of n=3 independent experiments and error bars represent standard deviations. For A, a Dunnett’s multiple comparisons test was performed comparing each condition (H2O2/NAC) was compared to untreated; for B and D, an unpaired t test with Welch’s correction was applied comparing co-culture conditions to cells cultured alone. p-Values are represented by n.s. for not significant, * for p-value <0.05, and ** for p-value <0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A), Extracellular acetate levels in MS-5 cells cultured in control medium (black) or in thiamine-depleted medium (grey) after 24 hr. (B), Extracellular acetate levels in Kasumi-1 (navy blue) and HL-60 (red) cultured alone and in co-culture (light blue and light red) for 24 hr in a control medium, medium with 50 µM H2O2 or medium with 5 mM NAC. Acetate levels for HL-60 cells cultured alone or under co-culture with 50 µM H2O2 are not shown as treatment 50 µM H2O2 severely impaired their viability. N.A.=not analysed. (C), Extracellular acetate levels in SKM-1 cultured alone and in co-culture for 24 hr in a control medium and medium with 100 µM or 500 µM catalase. For A and B each bar represents the mean of n=3 independent experiments and error bars represent standard deviation. For A and C, an unpaired Student’s t-test was applied for each condition. For B, a Dunnett’s multiple comparisons test was performed for Kasumi-1 and a Sidak’s multiple comparisons test was performed for HL-60. p-Values are represented by n.s. for not significant. * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
 
 Next, we compared intracellular ROS levels in AML and MS-5 cells in co-culture and cultured alone by labelling cells with the H2DCFDA fluorescent dye. Our data showed that ROS levels in the three human AML cell lines used were significantly decreased in co-culture, whilst in the stromal cells ROS levels were significantly increased in two of the three co-cultures (Figure 4B). These results suggested that AML cells might transfer ROS to stromal cells. We also performed the same experiment using three primary AML samples to corroborate the previous result. Fluorescence analysis showed decreased ROS levels in AML samples in co-culture and increased ROS levels in MS-5 cells in co-culture for the three primary AML samples analysed (Figure 4C), suggesting ROS transfer from AML cells to stromal cells in co-culture.
 
@@ -105,9 +157,17 @@ To further test whether AML cells might transfer ROS through a contact-dependent
 
 Our results indicate that AML cells transfer ROS to stromal cells leading to acetate production, and that the ROS transfer and acetate production is dependent on contact between the two cell types.
 
-## AML cells rewire stromal cell metabolism transferring ROS via gap junctions to obtain acetate
+### AML cells rewire stromal cell metabolism transferring ROS via gap junctions to obtain acetate
 
 It has previously reported that haematopoietic stem cells can transfer ROS to stromal cells via gap junction to prevent senescence (Taniguchi Ishikawa et al., 2012), thus, we decided to examine gap junction genes in the transcriptome of MS-5 cultured alone and in co-culture. When individually examining the gap junction genes in MS-5 cells cultured alone vs co-culture, we found several gap junction genes upregulated in co-culture such as Gja5, Gja8, Gjb5, and Gjc2 (Figure 5A). These results suggest that AML cells might establish gap junction interactions to transfer ROS to MS-5 cells when in co-culture. To test this hypothesis, we used the calcein-AM dye, which can only be transferred via gap junctions (Kouzi et al., 2020). We labelled MS-5 cells with calcein-AM, cultured them with unlabelled AML cells and analysed the fluorescence of AML cells after three hours. We found that, for the three human AML cell lines tested, the percentage of cells that had incorporated the calcein-AM dye from MS-5 cells was larger than 80% (Figure 5B and Figure 5—figure supplement 1A), indicating that AML cells can establish gap junctions with stromal cells when co-cultured in direct contact.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig5-v3.jpg)
+
+**Figure 5.:** (A) Fold change (FC) values of detected gene transcripts (TPMs) related to gap junctions. FC values are represented as log2FC, red values indicate upregulation and blue values indicate downregulation in MS-5 cells in co-culture. (B) Frequencies of Calcein-AM and CD33 positive AML cell lines after being in co-culture with Calcein-AM stained MS-5 cells for 3 hr . (C) Geometric mean of Calcein-AM fluorescence in CD33 positive AML cells (treated or untreated with 200 µM carbenoxolone for 24 hr) after being in co-culture with Calcein-AM stained MS-5 cells for 3 hr . (D and E) Intracellular ROS levels measured by H2DCFDA staining in D AML cells and E MS-5 cells cultured alone and in co-culture in direct contact treated or untreated with 200 µM carbenoxolone for 24 hr. (F) Extracellular acetate levels in AML cells (black) and MS-5 cells cultured alone (dark grey) and in co-culture (light grey) for 24 hr in a control medium, or medium with 200 µM CBX. (G) Survival rate of C57BL6/J mice transplanted with bone marrow nucleated cells isolated from WT control or MLL-AF9+ leukemic donors, treated with 500 µmol/kg of ROS-inducer tert-Butyl hydroxyperoxide (TBHP) alone or in combination with 30 mg/kg of gap-junction inhibitor carbenoxolone (CBX). Statistics indicate results of log-rank test for comparisons of Kaplan-Meier survival curves versus recipients of MLL-AF9+ cells treated with vehicle. (H) Number of monocytes per mL of peripheral blood (PB) at endpoint analysis, measured with Procyte hematological analyzer (IDEXX BioAnalytics). (I), Geometric mean of Calcein-AM fluorescence in CD33 positive AML cells (treated or untreated with 500 µM catalase for 24 hr) after being in co-culture with Calcein-AM stained MS-5 cells for 3 hr. For (B, C, D, E, F, H and I) bars represent the mean of n=3 independent experiments and error bars represent standard deviations. For (C, D, E, F, H and I) an unpaired Student’s t-test was applied for each condition. For G, a Gehan–Breslow–Wilcoxon test was applied. p-Values are represented by n.s. for not significant, * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75908/elife-75908-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Flow cytometry diagrams showing CD33 and calcein-AM green fluorescence in SKM-1 cells cultured alone or SKM-1 cells in co-culture with/without Calcein-AM-stained MS-5 cells after 3 hr. Frequencies of gated cell populations are indicated. (B) Frequencies of Calcein-AM and CD33 positive AML cell lines untreated or treated with 200 µM CBX 21 hr prior to being in co-culture with Calcein-AM stained MS-5 cells for 3 hr. Bars represent the mean of n=3 independent experiments and error bars represent standard deviations. (n=3). An unpaired Student’s t-test was applied for comparing treated vs. untreated cells. p-Values are represented by n.s. for not significant. * for p-value <0.05, ** for p-value <0.01 and *** for p-value <0.001.
 
 Next, we decided to confirm that AML cells can transfer ROS via gap junctions by inhibiting the gap junctions using carbenoxolone (CBX), a well-known gap junction inhibitor (Kouzi et al., 2020; Davidson et al., 1986; Davidson and Baumgarten, 1988). We first confirmed that efficiency of inhibition by analysing the calcein-AM dye transfer in a control and treated co-culture of the three human AML cell lines and MS-5 cells. The CBX treatment significantly reduced fluorescence levels and the percentage of cells with calcein-AM for all the human AML cell lines (Figure 5C and Figure 5—figure supplement 1B). We then compared intracellular ROS levels in both AML and stromal cells treated with CBX. CBX treatment abrogated the decrease in ROS levels in the three human AML cell lines (Figure 5D) and the increase of ROS levels in MS-5 mouse stromal cells (Figure 5E), indicating inhibition of ROS transfer in CBX treated co-cultures.
 
@@ -139,11 +199,301 @@ Overall, this work reveals a unique and novel metabolic communication between AM
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, females)</td>
+      <td>C57BL/6 J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, males)</td>
+      <td>MLL-AF9</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:009079</td>
+      <td>Wild type littermates used as controls</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SKM-1</td>
+      <td>DMSZ</td>
+      <td>DMSZ ACC 547; RRID: CVCL_0098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Kasumi-1</td>
+      <td>DMSZ and a gift from the laboratory of C.Bonifer (UoB)</td>
+      <td>DMSZ ACC 220; RRID: CVCL_0589</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HL-60</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-240RRID: CVCL_0002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MS-5</td>
+      <td>Gift from the laboratory of JJ Schuringa (Groninger University)</td>
+      <td>DMSZ ACC 441RRID:CVCL_2128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-2RRID: CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD33 (mouse monoclonal, clone P67.6)</td>
+      <td>eBioscience</td>
+      <td>48-0337-42</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD34 APC (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>560940</td>
+      <td>10 ul per 10 million cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD38 FITC (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>555459</td>
+      <td>10 ul per 10 million cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tert-Butyl hydroxyperoxide (TBHP)</td>
+      <td>Sigma/Merck</td>
+      <td>478139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>carbenoxolone (CBX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4790</td>
+      <td>For in vitro experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>carbenoxolone (CBX)</td>
+      <td>Thermofisher</td>
+      <td>J63714.03</td>
+      <td>For in vivo experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>C100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2′,7′-Dichlorofluorescin diacetate (DCFH-DA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H2O2</td>
+      <td>Merck</td>
+      <td>386790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetylcysteine (NAC)</td>
+      <td>Merck</td>
+      <td>106425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein-AM green</td>
+      <td>Invitrogen</td>
+      <td>C1430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTrace carboxyfluorescein succinimidyl ester (CFSE)</td>
+      <td>Invitrogen</td>
+      <td>C34570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ACSS2i</td>
+      <td>Selleck</td>
+      <td>S8588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cytarabine (AraC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C1768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]Glucose</td>
+      <td>CortecNet</td>
+      <td>CC860P1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[2-13C]acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>279315–1 G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CD34 magnetic microbeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-046-702</td>
+      <td>Please see Materials and Methods section under Primary Patient samples</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CD117 magnetic microbeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-091-332</td>
+      <td>Please see Materials and Methods section under Primary Patient samples</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hk2 q PCR primers</td>
+      <td>Sigma-Aldrich</td>
+      <td>NM_013820</td>
+      <td>KiCqStart primers KSPQ12012</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdhx q PCR primers</td>
+      <td>Sigma-Aldrich</td>
+      <td>NM_175094</td>
+      <td>KiCqStart primers KSPQ12012</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdk1 q PCR primers</td>
+      <td>Sigma-Aldrich</td>
+      <td>NM_172665</td>
+      <td>KiCqStart primers KSPQ12012</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdk2 q PCR primers</td>
+      <td>Sigma-Aldrich</td>
+      <td>NM_133667</td>
+      <td>KiCqStart primers KSPQ12012</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2m qPCR primers</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>NM_009735.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>Flowjo</td>
+      <td>BD-Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>MetaboLab software within the MATLAB environment (MathWorks).</td>
+      <td>Ludwig and Günther, 2011. https://doi.org/10.1186/1471-2105-12-366</td>
+      <td></td>
+      <td>https://www.ludwiglab.org/software-development</td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>Chenomx 7.0 software (Chenomx Inc)</td>
+      <td>Chenomx Inchttps://www.chenomx.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>FastQC 0.11.7 software</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>Kallisto 0.43.0 software</td>
+      <td>Bray et al., 2016</td>
+      <td></td>
+      <td>https://pachterlab.github.io/kallisto/</td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>R statistical package Sleuth 0.30.0</td>
+      <td>Pimentel et al., 2017</td>
+      <td></td>
+      <td>https://github.com/pachterlab/sleuth</td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>the R statistical package fgsea 1.10.0</td>
+      <td>http://bioconductor.org/packages/release/bioc/html/fgsea.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>R statistical package BioMart 2.40.3</td>
+      <td>https://bioconductor.org/packages/biomaRt</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software.algorithm</td>
+      <td>GraphPad version 8</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The human AML cell lines (SKM-1, Kasumi-1, and HL-60), the mouse stromal cell line (MS-5) and the human cervical cancer cell line (HeLa) were cultured in RPMI 1640 media supplemented with 15% (v/v) FBS, 2 mmol/L L-glutamine and 100 U/ml Penicillin/Streptomycin (all from Thermo Fisher Scientific). Co-cultures were plated in a 4:1 AML-stromal ratio, and 750,000 cells/ml density of AML cells over confluent stromal cells. Prior to cell extraction for NMR, RNA collection or protein extraction, a suspension of 10 million AML cells was collected, the stromal layer was washed with PBS and was subject to mild trypsinisation with 1:5 dilution of 0.25% Trypsin 1 mM EDTA (Thermofisher) to remove attached residual leukaemic cells before completely detaching stromal cells with 0.25% Trypsin-EDTA. Micoplasma test using MycoAlert (Lonza) was performed every three months in all cell lines.
 
-## Primary patient samples
+### Primary patient samples
 
 AML and PBMC primary specimens’ procedures were obtained in accordance with the Declaration of Helsinki at the University Medical Center Groningen, approved by the UMCG Medical Ethical Committee or at the University Hospital Birmingham NHS Foundation Trust, approved by the West Midlands – Solihull Research Ethics Committee (10 /H1206//58).
 
@@ -155,17 +505,17 @@ AML1-2, PBMC1-2, and MS-5 cells were cultured alone and in co-culture in a 4:1 A
 
 AML3 - 7 and PBMC3 were thawed and kept in culture for 16–24 hr in Stem Span H3000 media (STEMCELL Technologies) supplemented with 50 μg/ml ascorbic acid (Sigma-Aldrich), 50 ng/ml human SCF (255-SC-010, R&D Systems), 10 ng/ml human IL-3 (203-IL-010, R&D Systems), 2 units/ml human-erythropoietin (100–64, PeproTech), 40 ng/ml insulin-like growth factor 1 (IGF-1) (100–12, PeproTech), 1 μM dexamethasone (D2915, Sigma-Aldrich), and 100 μg/ml primocin (ant-pm-2, Invivogen). CD34 +cKit + cells from AML and healthy controls were purified using magnetic microbeads (130-046-702 (CD34) and 130-091-332 (CD117), Miltenyi Biotec). Cells were cultured in the supplemented Stem Span media for 24 hr prior to co-culture setting. Co-cultures were plated with a 4:1 leukaemic to stromal cells ratio and a 300,000 cells/ml density in supplemented Stem Span medium. Samples of leukaemic/healthy cells and MS-5 cells alone were also cultured in supplemented Stem Span media as controls. Samples of medium were collected at 0 and 48 hr.
 
-## In vivo experiments
+### In vivo experiments
 
-## Animals and transplantation
+#### Animals and transplantation
 
 Twelve weeks old C57BL6/J female mice (The Jackson Laboratory) were lethally irradiated with 9 Gy (2 doses of 4.5 Gy separated by 3 hr) using an X-RAY source (Rad Source’s RS 2000). Mice were transplanted by intravenous injection 4 hr after with 2x106 bone marrow (BM) nucleated cells isolated as previously described (Arranz et al., 2014) from leukemic male mice heterozygous for MLL-AF9 knock-in fusion transgene or wild-type (WT) control male littermates (Corral et al., 1996). Male transgenic and WT control MLL-AF9 were purchased from The Jackson Laboratory (Stock No: 009079) and were 6 months old when euthanized to allow development of signs of leukemic transformation driven by the MLL-AF9 fusion oncogene in transgenic animals. MLL-AF9 expression in BM cells derived from transgenic donors results in development of AML with high blast counts in recipients.
 
-## Extraction of bone marrow extracellular fluid
+#### Extraction of bone marrow extracellular fluid
 
 Recipients were euthanized 6 months after the transplant, bone marrow from femur and tibia was flushed with a syringe in 150 µL of cold PBS and centrifuged at 15,000 g for 10 min at 4 °C. The supernatant made of bone marrow extracellular fluid (BMEF) was kept for analysis of acetate level.
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 Treatments started 6 weeks after transplantation of MLL-AF9+ or WT BM nucleated cells into C57BL6/J female recipients. Mice were daily injected intraperitoneally with 500 µmol/kg of ROS enhancer tert-Butyl hydroxyperoxide (TBHP) or PBS as described previously (Fatemi et al., 2013). A group of mice were treated with TBHP and in addition injected intraperitoneally every other day (Monday, Wednesday and Friday) with 30 mg/kg of gap-juction inhibitor carbenoxolone (CBX) (Kouzi et al., 2020). Animals were terminated when they reached 100x106 white blood cells per mL of PB or when moribund. Eight days after a whole experimental group was terminated, the rest of animals were terminated. Time elapsed between the start of the treatment and termination was used for Kaplan-Meier analysis of survival rate. Peripheral blood was obtained from the heart at the endpoint and analyzed using a Procyte hematological analyzer (IDEXX BioAnalytics).
 
@@ -173,43 +523,43 @@ Sample size was calculated according to standard deviations from the means of pa
 
 Experiments were conducted with the ethical approval of the Norwegian Food and Safety Authority. Animals were housed under specific opportunistic and pathogen free environment at the Section of Comparative Medicine at the University of Oslo, Norway, and the Unit of Comparative Medicine at UiT - the Arctic University of Norway.
 
-## Proliferation analysis using CFSE
+### Proliferation analysis using CFSE
 
 The CellTrace carboxyfluorescein succinimidyl ester (CFSE) Cell Proliferation Kit (C34570, Invitrogen) was used to assess proliferation of AML cells following the manufacturer’s protocol. AML cells were stained and their fluorescence was assessed before dividing the bulk of cells into culturing them alone or with MS-5 cells for 48 hr. Small aliquots of cells after 24 and 48 hr were analysed by flow cytometry. Flow cytometry analysis was carried out in a CyAn ADP flow cytometer (Beckman Coulter). Data analysis was performed using the FlowJo software package (BD).
 
-## Cellular ROS measurements using DCFH-DA
+### Cellular ROS measurements using DCFH-DA
 
 Cellular ROS was measured by incubating cells with 100 µM 2′,7′-Dichlorofluorescin diacetate (DCFH-DA) (D6883, Sigma-Aldrich) in Hank’s Balanced Salt Solution (HBSS) (Thermo Fisher Scientific) at 37 °C for 30 min protected from light. Cells were then harvested and stained with 5 μg/μL anti-human CD33 eFluor 450 (eBioscience, P67.6) for 30 min at 4 °C before flow cytometry analysis as previously described.
 
-## Thiamine-free medium comparison
+### Thiamine-free medium comparison
 
 Thiamine-free medium (R9011-01, United States Biological) was prepared as per manufacturer instructions and supplemented with 10% dialised FBS.
 
 MS-5 cells were cultured in thiamine-free medium or control RPMI medium for 4 days prior to the experiment. Cells were then seeded with fresh thiamine-free or control RPMI medium and incubated for 24 hr. Samples of medium were collected at 0 and 24 hr and kept at –80 °C.
 
-## ROS-related treatments with H2O2 and NAC
+### ROS-related treatments with H2O2 and NAC
 
 SKM-1, Kasumi-1, HL-60 and MS-5 cells cultured alone and in co-culture were incubated for 24 hr in 50 μM H2O2 (Merck) complete cell culture medium, 5 mM N-acetylcysteine (NAC) (106425, Merck) complete cell culture medium or control medium. Samples of medium were collected at 0 and 24 hr and kept at –80 °C.
 
-## Calcein-AM dye transfer assay
+### Calcein-AM dye transfer assay
 
 Functional gap junction presence was evaluated using the fluorescent dye Calcein-AM green (Invitrogen, C1430) adapting a previously established protocol (Kouzi et al., 2020). MS-5 cells were stained with 500 nM Calcein-AM dye in complete cell culture medium for 1 hr at 37 °C. Stained cells were washed with serum-free medium for 30 min at 37 °C before being co-cultured with AML cells for 3 hr. AML cells were then harvested and stained with 5 μg/μL anti-human CD33 eFluor 450 (eBioscience, P67.6) for 30 min at 4 °C before flow cytometry analysis as previously described. Calcein-AM dye transfer was quantified as the frequency of CD33+ and Calcein-AM+ cells or as the geometric mean of FITC channel.
 
-## Carbenoxolone and catalase treatments
+### Carbenoxolone and catalase treatments
 
 Carbenoxolone (CBX) disodium salt (C4790, Sigma-Aldrich) was prepared fresh at 200 μM in cell culture medium. Catalase (C100, Sigma-aldrich) was prepared fresh at 10 mg/ml in PBS and filtered sterilized. Cells were resuspended in the CBX medium or media containing catalase at 100 μg/ml or 500 μg/ml and cultured alone or in co-culture for 24 hr prior to ROS, Calcein-AM dye transfer experiments or medium collection.
 
-## Tracer-based NMR experiments
+### Tracer-based NMR experiments
 
 [U-13C]Glucose (CC860P1, CortecNet) was added to RPMI 1640 medium without glucose (11879020, Merck) to a final concentration of 2 g/L (as in the complete cell culture medium) and was supplemented as usual with 15% (v/v) FBS, 2 mmol/L L-glutamine and 100 U/mL Pen/Strep. The medium was prepared fresh and was filtered with a 0.2 μm syringe filter (Sartorius) before each experiment.
 
 4 mM sodium [2-13C]acetate (279315–1 G, Sigma-Aldrich) was added to complete cell culture medium and the medium was filtered with a 0.2 μm syringe filter before each experiment. Cells were incubated for the time indicated in each experiment before separation of cells and/or metabolite extraction. Unlabelled samples were prepared as a control for 2D-NMR experiments and to measure acetate consumption by adding unlabelled sodium acetate trihydrate (1.37012, Merck) to complete cell culture medium before metabolite extraction or collection of medium samples.
 
-## Metabolite extraction
+### Metabolite extraction
 
 Suspension cells and detached adherent cells were washed with PBS before being rapidly resuspended in 400 µl of HPLC grade methanol pre-chilled on dry ice. Samples were transferred to glass vials and were subject to 10:8:10 methanol-water-chloroform extraction as described in Saborano et al., 2019. Polar phase samples were evaporated in a SpeedVac concentrator; non-polar phase samples were evaporated over night in a fume hood. Samples were subsequently kept at –80 °C prior to sample preparation and analysis by NMR.
 
-## Sample preparation for NMR
+### Sample preparation for NMR
 
 Medium samples or bone marrow extracellular fluid samples were mixed with a D2O phosphate buffer containing TMSP ((3-trimethylsilyl)propionic-(2,2,3,3-d4)-acid sodium salt) and NaN3 to obtain a final concentration of 0.1 M phosphate, 0.5 mM TMSP ((3-trimethylsilyl)propionic-(2,2,3,3-d4)-acid sodium salt) and 1.5 mM NaN3 (all from Sigma). Samples were subsequently transferred to 3 mm NMR tubes. No sample derivation is required to detect acetate by NMR.
 
@@ -217,7 +567,7 @@ Dried polar extracts for tracer-based NMR experiments were reconstituted in 50 �
 
 Dried non-polar extracts for tracer-based NMR experiments were reconstituted in in CDCl3 (1% TMSP) and transfer into 5 mm NMR tubes. Samples were prepared freshly before the acquisition.
 
-## NMR acquisition and analysis
+### NMR acquisition and analysis
 
 All NMR data were acquired on Bruker 600MHz spectrometers equipped with Avance-III consoles using cooled Bruker SampleJet autosamplers. For media samples, a 5 mm triple resonance cryoprobe (TCI) z-axis pulsed field gradient (PFG) cryogenic probe was used, and for cell extracts, a TCI 1.7 mm z-PFG cryogenic probe was used. Probes were equipped with a cooled SampleJet autosampler (Bruker) and automated tuning and matching.
 
@@ -229,15 +579,15 @@ For 1H-13C-HSQC experiments, spectra were acquired using a modified version of B
 
 To determine the 13C-label incorporation in lipids, 1D 1H spectra (zgpr, standard pulse sequence from Bruker) were acquired on a Bruker 600MHz spectrometer equipped with a 5 mm triple resonance pulse field gradient (PFG) room temperature probe at 300 K. The data was collected with a spectral width of 12 ppm, the number of data points was 32,768 and interscan delay was 4 s. The 1H carrier was set at 7.26 ppm corresponding to CDCl3. The spectra were processed and analyzed using Bruker Topspin. A 0.3 Hz exponential apodization function was applied to FIDs followed by zero-filling to 131,072 data points prior to Fourier transformation. The chemical shift was calibrated by referencing the TMSP signal to 0 ppm and spectra were manually phase corrected. The baseline was corrected by applying a spline baseline correction.
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 MS-5 cells were cultured alone or in co-culture with SKM-1 cells for 24 hr. Cells were separated and washed with PBS prior to RNA extraction with TRIzol (Gibco) according to the manufacturer’s protocol. RNA was purified with RNeasy Plus Micro kit. Samples were sent to Theragenetex to be sequenced with Novaseq 150 bp PE with 40 M reads.
 
-## Real-time PCR
+### Real-time PCR
 
 Samples of RNA from SKM-1 and MS-5 co-cultures were collected and extracted using Trizol (Invitrogen) following manufacturer’s protocol. cDNA was synthesized using the M-MLV reverse transcriptase (Promega) according to manufacturer’s instructions. For gene expression analysis, qRT-PCR of Hk2 (NM_013820), Pdhx (NM_175094), Pdk1 (NM_172665), and Pdk2 (NM_133667; all KiCqStart primers KSPQ12012, Sigma Aldrich) were carried out using the SYBRGreen Master mix (Thermo Fisher Scientific) and qRT-PCR of B2m (NM_009735.3, TaqMan assays, Thermo Fisher Scientific) was performed using TaqMan PCR Master Mix (Thermo Fisher Scientific). Reactions were performed in a Stratagene Mx3000P and were run in triplicate. Relative gene expression was calculated following the 2-ΔΔCt method relative to the expression of B2m.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA samples of MS-5 cells cultured alone and in co-culture with SKM-1 cells extracted using Trizol were purified using the Rneasy Plus Micro kit (Qiagen) according to manufacturer’s protocol. Transcriptome analysis was performed by Theragen Etex Co., LTD. (https://www.theragenetex.net). cDNA libraries were prepared with the TruSeq Stranded mRNA Sample Prep Kit (Illumina) and RNA sequencing was performed in a HiSeq2500 platform (Illumina). Quality control metrics were obtained with FastQC 0.11.7 software (Babraham Bioinformatics). To quantify transcript abundances using the Kallisto 0.43.0 software (Patcher Lab), read counts were aligned to the GRCm38 mouse reference genome cDNA index (Ensembl rel.67). Gene-level differential expression analysis was carried out with the R statistical package Sleuth 0.30.0 comparing the expression of cells cultured alone vs co-culture. Differentially expressed genes were calculated using the Wald statistical test, correcting for multiple testing with the Benjamin-Hochberg method. The false discovery rate (FDR) threshold was set at 1% (q-values <0.01). Ensembl gene transcripts were annotated to Entrez IDs and official gene symbols with the R statistical package BioMart 2.40.3. To normalise for sequencing depth and gene length, transcripts per million (TPM) expression values were calculated. Gene Set Enrichment Analysis (GSEA) was performed with the R statistical package fgsea 1.10.0. The collection of hallmark gene sets from the Molecular Signature Database was used for the GSEA, setting the FDR threshold at 5%. Data was deposited in GEO (GSE163478).
 

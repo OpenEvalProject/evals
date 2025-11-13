@@ -38,33 +38,97 @@ To address these gaps in knowledge, here we used optical recording and inhibitio
 
 ## Results
 
-## BLA neurons respond to rewards and cues during appetitive Pavlovian stimulus-outcome learning
+### BLA neurons respond to rewards and cues during appetitive Pavlovian stimulus-outcome learning
 
 We first asked whether and when the BLA is active during the encoding of stimulus-outcome memories (Figure 1a). To condition cues that set the ‘state’ for a the availability of a specific reward and engender a sensory-specific representation of that reward, we used a two food outcome Pavlovian conditioning task. Each of 2, 2 min auditory conditional stimuli (CSs; white noise and tone) were associated with intermittent delivery of 1 of 2 distinct food rewards (sucrose solution or food pellets; e.g. white noise-sucrose/tone-pellet). This conditioning has been shown to engender the encoding of detailed, sensory-specific stimulus-outcome memories as measured by the cue’s ability to subsequently promote instrumental choice for the specific predicted reward during a PIT test (Lichtenberg et al., 2017; Lichtenberg and Wassum, 2017; Malvaez et al., 2015; Ostlund and Balleine, 2008), as well as the sensitivity of the conditional food-port approach response to sensory-specific devaluation of the predicted reward (Lichtenberg et al., 2017) or degradation of the stimulus-outcome contingency (Ostlund and Balleine, 2008). Food-deprived, male rats (N = 11) received 8 Pavlovian conditioning sessions. During each session, each cue was presented four times (variable intertrial interval, average = 3 min) for 2 min, during which its associated reward was intermittently delivered on average every 30 s. Rats demonstrated simple Pavlovian conditioning by gradually increasing their goal approach responses (entries into the food-delivery port) during the cue probe periods (after cue onset, before reward delivery) across training (Figure 1h; Training: F(2.4,24.3) = 13.18, p<0.0001; see also Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-v2.jpg)
+
+**Figure 1.:** (a). Procedure schematic. CS, conditional stimulus (white noise or tone); O, outcome (sucrose solution or food pellet). (b) Schematic of fiber photometry approach for imaging bulk calcium activity in BLA neurons. (c) Representative fluorescent image of GCaMP6f expression and fiber placement in the BLA. (d) Schematic representation of GCaMP6f expression and placement of optical fiber tips in BLA for all subjects. Brain slides from Paxinos and Watson, 1998. (e) Representative examples of GCaMP6f fluorescence changes (Z-scored ∆F/F) in response to CS presentation (blue box), reward delivery, and reward retrieval (first food-port entry following reward delivery) across days of training. Traces from the last 6 days of training were selected from one of each two-session bin. See Figure 1—figure supplement 2 for raw GCaMP and isosbestic signal fluctuations. (f-g) Trial-averaged GCaMP6f fluorescence changes (Z-scored ∆F/F) in response to CS onset (f; blue) or reward retrieval during the CS (g; orange) across days of training. Shading reflects between-subjects s.e.m. Data from the last six sessions were averaged across two-session bins (3/4, 5/6, and 7/8). (h) Elevation [(CS probe entry rate)/(CS probe entry rate + preCS entry rate)] in food-port entries during the CS probe period (after CS onset, before first reward delivery), averaged across trials and across the 2 CSs for each day of Pavlovian conditioning. Gray lines represent individual subjects. (i-j) Trial-averaged quantification of maximal (i; peak) and area under the GCaMP Z-scored ∆F/F curve (j; AUC) during the 3 s period following CS onset or reward retrieval compared to equivalent baseline periods immediately prior to each event. Thin light lines represent individual subjects. N = 11 (see Figure 1—figure supplement 3 for data from N = 8 subjects with longitudinal data from each session). *p<0.05, **p<0.01 relative to pre-event baseline. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Food-port entry rate (entries/min) during the CS probe period (after CS onset, before first reward delivery), averaged across trials and across the 2 CSs for each day of Pavlovian conditioning. Rats increased food-port approach responses to the CS across training (CS x Training: F(7,70) = 15.31, p<0.0001; CS: F(1,10) = 48.30, p<0.0001; Training: F(7,70) = 10.42, p<0.0001). ***p<0.0001, relative to preCS.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Raw GCaMP6f (470 nm channel) fluorescence and corresponding fitted fluorescent trace from the isosbestic (415 nm) channel.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a–b) Trial-averaged quantification of maximal (a; peak) and area under the GCaMP Z-scored ∆F/F curve (b; AUC) during the 3 s following CS onset or reward retrieval compared to equivalent baseline periods immediately prior to each event from the N = 8 subjects for which we were able to obtain reliable recordings from each of the 8 Pavlovian conditioning sessions. Thin light lines represent individual subjects. Both CS and reward retrieval caused a similar elevation in the peak calcium response (Event v. baseline F(0.3,1.9) = 28.14, p=0.03; Training, Event type (CS/US), and all other interactions between factors, lowest p=0.12) and area under the calcium curve (AUC; Event v. baseline F(0.2,1.2) = 40.57, p=0.04, Training, Event type (CS/US), and all other interactions between factors, lowest p=0.21) across training. Analysis of each event relative to its immediately preceding baseline period confirmed that BLA neurons were robustly activated by both the onset of the CS as reflected in the peak calcium response (CS: F(1,7) = 9.95, p=0.02; Training: F(3.0,21.3) = 1.58, p=0.22; CS x Training: F(1.5,10.7) = 0.43, p=0.61) and AUC (CS: F(1,7) = 9.01, p=0.02; Training: F(2.3,16.0) = 0.56, p=0.60; CS x Training: F(1.5,10.2) = 0.30, p=0.68), as well as at reward retrieval during the CS [(Peak, Reward: F(1,7) = 12.22, p=0.01; Training: F(3.5,24.1) = 1.18, p=0.34; Reward x Training: F(2.5,17.4) = 1.75, p=0.20) AUC, Reward: F(1,7) = 13.73, p=0.008; Training: F(2.4,17.1) = 1.19, p=0.34; Reward x Training: F(3.0,21.3) = 2.46, p=0.09].
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** We detected a robust BLA response to reward retrieval during CS presentation during Pavlovian conditioning. This response was also detected when the data were aligned to reward delivery, which was signaled by the subtle but audible click of the pellet dispenser or sound of the sucrose pump. After initial training, reward retrieval often immediately followed reward delivery. (a) Trial-averaged GCaMP6f fluorescence (Z-scored ∆F/F) in response to reward delivery during the CS across days of training. Shading reflects between-subjects s.e.m. Data from the last six training sessions were averaged across 2-session bins (3/4, 5/6, and 7/8). (b) Trial-averaged quantification of maximal (peak) GCaMP Z-scored ∆F/F during the 3 s period following reward delivery compared to the equivalent baseline period 3 s prior to reward delivery. Thin light lines represent individual subjects. (c) Trial-averaged quantification of area under the GCaMP Z-scored ∆F/F curve (AUC) during the 3 s period following reward delivery compared to the equivalent baseline period. Across training, reward delivery caused a robust elevation in the peak calcium response (Reward delivery: F(1,10) = 57.73, p<0.0001; Training: F(2.5, 24.8)=1.29, p=0.30; Reward delivery x Training: F(1.8, 18.1)=0.43, p=0.64) and area under the calcium curve (Reward delivery: F(1,10) = 36.44, p=0.0001; Training: F(2.0, 19.7)=0.51, p=0.60; Reward delivery x Training: F(1.8,17.7) = 0.39, p=0.66). N = 11. *p<0.05, **p<0.01, ***p<0.001 relative to pre-event baseline.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** We detected a robust elevation in BLA calcium activity in response to reward retrieval during CS presentation during Pavlovian conditioning. To determine the extent to which the action of entering the food-delivery port influenced this response, we examined BLA calcium activity in response to food-port entries during the CS probe period (after CS onset, before first reward delivery). Trial-averaged GCaMP6f fluorescence (Z-scored ∆F/F) in response to food-port entries during the CS across days of training. Shading reflects between-subjects s.e.m. Data plotted on the same scale as Figure 1 and 1-4 to facilitate comparison. Data from the last six training sessions were averaged across two-session bins (3/4, 5/6, and 7/8). N = 11.
 
 To characterize the endogenous activity of BLA neurons during the encoding of appetitive stimulus-outcome memories, we used fiber photometry to image the fluorescent activity of the genetically encoded calcium indicator GCaMP6f (Chen et al., 2013) each day during Pavlovian conditioning (Figure 1b–d). GCaMP6f was expressed preferentially in principal neurons based on expression of calcium/calmodulin-dependent protein kinase, CaMKII (Butler et al., 2011; Tye et al., 2011). Data from the eight training sessions were binned into five conditioning phases, session 1, session 2, sessions 3/4, 5/6, and 7/8. Thus, data from the last six sessions were averaged across two-session bins. As can be seen in the representative examples (Figure 1e; see also Figure 1—figure supplement 2), or group-averaged traces (Figure 1f–g), BLA neurons were robustly activated by both cue onset and reward retrieval (first food-port entry after reward delivery) throughout Pavlovian conditioning. Across training, both the cues and rewards caused a similar elevation in the peak calcium response (Figure 1i; Event v. baseline: F(0.4,3.9) = 36.02, p=0.007; Training: F(2.8,28.1) = 4.29, p=0.01; Event type (CS/US) and interactions between factors, lowest p=0.18) and area under the calcium curve (AUC; Figure 1j; Event v. baseline: F(0.3,3.4) = 35.23, p=0.01, Training, Event type, and interactions between factors, lowest p=0.23; see also Figures 1–3). Analysis of each event relative to its immediately preceding baseline period confirmed that BLA neurons were robustly activated by CS onset as reflected in the peak calcium response (CS: F(1,10) = 7.25, p=0.02; Training: F(2.5, 24.5)=1.88, p=0.17; CS x Training: F(1.2, 12.4)=0.54, p=0.51) and AUC (CS: F(1,10) = 6.28, p=0.03; Training: F(1.9,19.3) = 0.40, p=0.67; CS x Training: F(1.2,11.7) = 0.17, p=0.73), as well as at reward retrieval during the cue [(Peak, Reward: F(1,10) = 16.82, p=0.002; Training: F(1.9,19.4) = 3.41, p=0.06; Reward x Training: F(1.7,16.8) = 0.88, p=0.42) (AUC, Reward: F(1,10) = 15.21, p=0.003; Training: F(1.6,15.7) = 2.13, p=0.16; Reward x Training: F(1.5,14.8) = 1.25, p=0.30)]. The same BLA reward response could also be detected when the data were aligned to reward delivery (Figure 1—figure supplement 4). There were no significant BLA activity changes detected in response to food-port entries absent reward (Figure 1—figure supplement 5), indicating that reward retrieval responses resulted from reward experience rather than the act of entering the food port. Thus, BLA neurons are active at the most critical time for the encoding of stimulus-outcome memories, when the reward is experienced during the cue (i.e. the stimulus-outcome pairing).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig2-v2.jpg)
 
-**Figure 2.:** (a). Procedure schematic. CSØ, neutral stimulus; Ø, no reward outcome; O, outcome (sucrose solution or food pellet). (b) Schematic of fiber photometry approach for imaging bulk calcium activity in BLA neurons. (c) Representative fluorescent image of GCaMP6f expression and fiber placement in the BLA. (d) Trial-averaged GCaMP6f fluorescence change (Z-scored ∆F/F) in response to noise and tone CSØ onset across days. Shading reflects between-subjects s.e.m. (e-f) Trial-averaged quantification of maximal (e; peak) and area under the GCaMP Z-scored ∆F/F curve (f; AUC) during the 3 s following noise and tone CSØ onset compared to equivalent baseline periods immediately prior to each event. Thin light lines represent individual subjects (solid = Noise, dashed = Tone). (g-h) Trial-averaged quantification of maximal (g; peak) and area under the GCaMP Z-scored ∆F/F curve (h; AUC) during the 3 s following retrieval of the unpaired reward compared to equivalent baseline period immediately prior reward retrieval. Lines represent individual subjects. (i) Trial-averaged GCaMP6f fluorescence (Z-scored ∆F/F) in response to unpaired reward, averaged across reward type. Shading reflects between-subjects s.e.m. N = 6. *p<0.05, **p<0.01 relative to pre-event baseline. See Figure 2—source data 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (a). Procedure schematic. CSØ, neutral stimulus; Ø, no reward outcome; O, outcome (sucrose solution or food pellet). (b) Schematic of fiber photometry approach for imaging bulk calcium activity in BLA neurons. (c) Representative fluorescent image of GCaMP6f expression and fiber placement in the BLA. (d) Trial-averaged GCaMP6f fluorescence change (Z-scored ∆F/F) in response to noise and tone CSØ onset across days. Shading reflects between-subjects s.e.m. (e-f) Trial-averaged quantification of maximal (e; peak) and area under the GCaMP Z-scored ∆F/F curve (f; AUC) during the 3 s following noise and tone CSØ onset compared to equivalent baseline periods immediately prior to each event. Thin light lines represent individual subjects (solid = Noise, dashed = Tone). (g-h) Trial-averaged quantification of maximal (g; peak) and area under the GCaMP Z-scored ∆F/F curve (h; AUC) during the 3 s following retrieval of the unpaired reward compared to equivalent baseline period immediately prior reward retrieval. Lines represent individual subjects. (i) Trial-averaged GCaMP6f fluorescence (Z-scored ∆F/F) in response to unpaired reward, averaged across reward type. Shading reflects between-subjects s.e.m. N = 6. *p<0.05, **p<0.01 relative to pre-event baseline. See Figure 2—source data 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig3-v2.jpg)
+
+**Figure 3.:** (a). Procedure schematic. CS, conditional stimulus (white noise or tone); O, outcome (sucrose solution or food pellet); A, action (left or right lever press). (b) Schematic of optogenetic strategy for bilateral inhibition of BLA neurons. (c) Representative fluorescent image of ArchT-eYFP expression and fiber placement in the BLA. (d) Schematic representation of ArchT-eYFP expression and placement of optical fiber tips in BLA for all subjects. (e) Elevation [(CS probe entry rate)/(CS probe entry rate + preCS entry rate)] in food-port entries during the CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. Thin light lines represent individual subjects. (f) Elevation in lever presses on the lever that earned the same outcome as the presented CS (Same; [(presses on Same lever during CS)/(presses on Same lever during CS + Same presses during preCS)], averaged across trials and across CSs), relative to the elevation in responding on the alternate lever (Different; [(presses on Different lever during CS)/(presses on Different lever during CS + Different presses during preCS)], averaged across trials and across CSs) during the PIT test. Lines represent individual subjects. (g) Elevation in food-port entries to CS presentation (averaged across trials and CSs) during the PIT test. Circles represent individual subjects. ArchT, N = 9; eYFP, N = 10. *p<0.05. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Confocal image of biocytin-filled BLA cell (red) expressing ArchT-eYFP. (b) Current-clamp recording of an ArchT-expressing BLA cell responding to hyperpolarizing and depolarizing current injections. When illuminated with green light (535 nm, 100 ms pulse, 0.5 mW), activation of ArchT hyperpolarizes the cell membrane resulting in the absence of action potential firing at suprathreshold membrane potentials. This hyperpolarization of the cell membrane occurs only during green light luminescence. (c) Representative recordings from 2 ArchT-expressing BLA cells when injected with a suprathreshold pulse of current (165 or 375 pA 1 s; bottom) with green light off (top) or on (middle). (d) Summary of the number of action potentials recorded in ArchT-expressing BLA cells (N = 12 cells/5 subjects) injected with a suprathreshold amount of current before (Off) and during (On) green light illumination (median = 1 mW, range = 0.25–1). Current injection intensities that resulted in 8–15 action potentials were selected for recordings (median = 275 pA, range 100–800 pA, duration = 1 s). Number of action potentials was averaged across three sweeps/condition. Green light activation of ArchT in BLA cells reduced action potential firing in all cells and abolished (>97% reduction) it in most cells. The average number of action potentials recorded during green light exposure was significantly lower than the control no-light period (t11 = 9.25, p<0.0001). Lines represent individual cells. ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Food-port entry rate (entries/min) during CS probe period (after CS onset, before first reward delivery), averaged across trials and across CSs for each day of Pavlovian conditioning. There was no effect of BLA inhibition during reward retrieval on the development of this Pavlovian conditional goal-approach response (CS x Training: F(3.4,57.8) = 16.44, p<0.0001; CS: F(1,17) = 46.73, p<0.0001; Virus: F(1,17) = 0.17, p=0.68; Training: F(2.3,38.5) = 2.37, p=0.10; Virus x Training: F(7,119) = 1.55, p=0.16; Virus x CS: F(1, 17)=0.0009, p=0.98; Virus x Training x CS: F(7,119) = 1.63, p=0.13). *p<0.05, **p<0.01 relative to pre-CS. (b) Lever press rate (presses/min) averaged across levers and across the final 2 days of instrumental conditioning. There was no significant difference in press rate between the control group and the group that received BLA inhibition during Pavlovian conditioning (t17 = 1.44, p=0.17). Circles represent individual subjects. (c). Lever press rate (presses/min) on the lever earning the same outcome as the presented CS (averaged across trials and CSs), relative to the press rate on the alternate lever (Different) during the PIT test. Planned comparisons (Levin et al., 1994), based on the significant interaction and post hoc effect detected in Figure 3f, showed that for the eYFP control group CS presentation significantly increased responding on the lever that earned the same reward as that predicted by the presented CS relative to the preCS baseline period (t9 = 3.11, p=0.01). The CSs did not significantly alter responses on the different lever in the control group (t9 = 1.35, p=0.21). For the ArchT group, the CSs were not capable of significantly altering lever pressing relative to the baseline period (Same: t8 = 2.13, p=0.07; Different: t8 = 0.77, p=0.46). Lines represent individual subjects. (d) Food-port entry rate during CS presentation (averaged across trials and CSs) during the PIT test. For both groups CS presentation triggered a similar elevation in this goal-approach behavior (CS: F(1,17) = 59.41, p<0.0001; Virus: F(1,17) = 0.63, p=0.44; Virus x CS: F(1,17) = 3.42, p=0.08). Lines represent individual subjects. *p<0.05, ***p<0.001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** We found that inhibition of BLA neurons specifically at the time of outcome experience during each CS during Pavlovian conditioning attenuated subjects’ encoding of the sensory-specific stimulus-outcome memories, as evidenced by their inability to later use those memories to guide choice behavior during a PIT test. To control for the total amount of BLA inhibition during Pavlovian conditioning, we repeated the BLA inhibition experiment in a separate group of subjects matching the frequency and duration of inhibition to the experimental group (Figure 3), but delivering it during the baseline, 2 min pre-CS periods. We selected this period for control inhibition to maintain proximity to the CS period but avoid inhibition during the CS at periods in which the rat might be expecting, checking for, and/or retrieving reward, events that were not possible for us to time. (a) Procedure schematic. CS, conditional stimulus; O, outcome (sucrose solution or food pellet); A, action (left or right lever press). (b) Schematic of optogenetic strategy for inhibition of BLA neurons. (c) Representative fluorescent image of ArchT-eYFP expression and fiber placement in the BLA. (d) Schematic representation of ArchT-eYFP expression and placement of optical fiber tips in BLA for all subjects. (e) Elevation [(CS probe entry rate)/(CS probe entry rate + preCS entry rate)] in food-port entries during CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. Optical inhibition of BLA neurons unpaired with reward delivery did not affect development of the Pavlovian conditional goal-approach response (Training: F(3.4,20.6) = 16.83, p<0.0001). Thin light lines represent individual subjects. (f) Elevation in lever presses on the lever that earned the same outcome as the presented CS (Same; [(presses on Same lever during CS)/(presses on Same lever during CS + Same presses during preCS)], averaged across trials and across CSs), relative to the elevation in responding on the alternate lever (Different; [(presses on Different lever during CS)/(presses on Different lever during CS + Different presses during preCS)], averaged across trials and CSs) during the PIT test. Inhibition of BLA neurons unpaired with reward delivery during the Pavlovian conditioning sessions did not affect the subsequent ability of the CSs to bias instrumental choice behavior during the PIT test (t6 = 2.88, p=0.03). Lines represent individual subjects. (g) Elevation in food-port entries to CS presentation (averaged across trials and CSs) during the PIT test. The CSs were also capable of elevating food-port entries above baseline during the PIT test. Circles represent individual subjects. N = 7. *p<0.05, corrected post hoc comparison.
 
 It was surprising that responses to the cues were present on the first conditioning session, particularly in light of evidence that BLA responses to both appetitive and aversive cues increase across learning (Crouse et al., 2020; Johansen et al., 2010; Lutas et al., 2019; Tye et al., 2008). This could reflect a non-associative, novelty response to either or both the tone or white noise presentation. To examine this and, thus, evaluate whether the BLA cue responses later in training were due to stimulus-outcome learning, we repeated the experiment in a separate group of naive rats, but this time omitted the reward delivery during conditioning (Figure 2a–c; N = 6). Instead, the rewards were delivered unpaired with the cues several hours after each session in a distinct context. Like presentation of the reward-predictive cues, presentation of either the tone or white noise stimulus unpaired with reward (CSØ) robustly activated BLA neurons during the first session, but, in contrast to the reward-predictive cues, this effect habituated over sessions (Figure 2d). Both tone and noise elicited a similar elevation in the peak calcium response that was largest on session one and diminished with subsequent days of exposure (Figure 2e; Session x CSØ: F(4,20) = 3.25, p=0.03; CSØ presence: F(0.4,2.1) = 4.84, p=0.13; CSØ type (white noise v. tone): F(0.3,1.5) = 7.03, p=0.12; Session: F(2.3,11.7) = 3.27, p=0.07; Session x CSØ type: F(4,20) = 1.42, p=0.26; CSØ x CSØ type: F(0.5,2.3) = 9.69, p=0.07; Session x CSØ x CSØ type: F(0.6,3.2) = 0.80, p=0.37). The effect was similar when quantified using area under the calcium curve (Figure 2f; Session x CSØ: F(4,20) = 2.65, p=0.06; CSØ presence: F(0.5,2.4) = 5.07, p=0.12; CSØ type: F(0.3,1.4) = 4.81, p=0.14; Session: F(2.6,12.8) = 1.55, p=0.25; Session x CSØ type: F(4,20) = 1.14, p=0.37; CSØ x CSØ type: F(0.5,2.4) = 10.43, p=0.06; Session x CSØ x CSØ type: F(0.7,3.7) = 1.81, p=0.24). To check whether the decline of the CSØ response was due simply to signal degradation over time, following the last CSØ session we recorded BLA calcium responses to unpredicted reward delivery. Rewards were capable of robustly activating the BLA (Figure 2g–i; Peak, t5 = 2.93, p=0.03; AUC, t5 = 4.07, p=0.01). This positive control indicates that the decline of the BLA CSØ response was due to stimulus habituation, not signal degradation. Thus, the BLA response to cue presentation during early Pavlovian conditioning likely reflects a non-associative novelty effect that habituates with subsequent exposure, indicating that the BLA responses to the reward-predictive cues later in training (Figure 1) largely result from the association with reward.
 
-## BLA neuron activity is necessary during outcome experience to encode appetitive Pavlovian stimulus-outcome memories
+### BLA neuron activity is necessary during outcome experience to encode appetitive Pavlovian stimulus-outcome memories
 
 We found that BLA neurons are robustly activated at the time at which stimulus-reward memories can be formed: when the reward is experienced during a predictive cue. We next asked whether this activity is necessary for such learning and, if so, whether it is necessary for encoding sensory-specific stimulus-outcome memories (Figure 3a). We expressed the inhibitory opsin archaerhodopsin T (ArchT; N = 9) or eYFP control (N = 10) in BLA, primarily, principal neurons (Figure 3b–d) to allow green light (532 nm,~10 mW) to transiently hyperpolarize and inhibit the activity of these cells (Figure 3—figure supplement 1). Rats were again given 8 Pavlovian conditioning sessions during which each of 2 distinct, 2 min auditory CSs was paired with intermittent delivery of one specific food reward (8 of each CS/session). During each Pavlovian conditioning session, we optically inhibited the activity of BLA neurons during each cue. We restricted inhibition to 5 s concurrent with the delivery and retrieval of each food reward because this is the time at which the stimulus-outcome pairing occurs and when we found the BLA to be endogenously active (Figure 1). Optical inhibition of BLA neurons at reward experience during Pavlovian conditioning did not impede the development of the Pavlovian conditional goal-approach response to the cue sampled prior to reward delivery (Figure 3e; Training: F(3.8,64.9) = 17.53, p<0.0001; Virus (eYFP v. ArchT): F(1,17) = 0.19, p=0.67; Virus x Training: F(7,119) = 1.28, p=0.26; see also Figure 3—figure supplement 2a). This general conditional response at the shared food port, however, does not require that the subjects have learned the sensory-specific details of the predicted reward. To test for such stimulus-outcome memory encoding, we gave subjects instrumental conditioning followed by a PIT test. Both were conducted without any manipulation. During instrumental conditioning, rats were trained that two different actions (left or right lever press) each earned one of the unique food rewards (e.g. left press→sucrose/right press→pellets; Figure 3—figure supplement 2b). At the PIT test both levers were present, but lever pressing was not rewarded. Each CS was presented four times (also without accompanying reward), with intervening CS-free baseline periods, to assess its influence on action performance and selection in the novel choice scenario. Because the cues are never associated with the instrumental actions, this test assesses the ability to, upon cue presentation, retrieve a memory of the specific predicted reward and use it to motivate choice of the action known to earn the same unique reward (Colwill and Motzkin, 1994; Corbit and Balleine, 2016; Gilroy et al., 2014; Kruse et al., 1983). If subjects had encoded detailed stimulus-outcome memories during Pavlovian conditioning, then the CS should cause them to increase presses selectively on the lever that, during training, earned the same outcome as predicted by that cue. Controls showed this outcome-specific PIT effect (Figure 3f). Conversely, the cues were not capable of influencing lever-press choice in the group for which the BLA was inhibited at the time of outcome experience during Pavlovian conditioning (Figure 3f; Virus x Lever: F(1,17) = 5.10, p=0.04; Virus: F(1,17) = 1.41, p=0.25; Lever (Same v. Different): F(1,17) = 3.84, p=0.07; see also Figure 3—figure supplement 2c). As in training, during this PIT test the conditional goal-approach response was similar between groups (Figure 3g; t17 = 0.94, p=0.36; see also Figure 3—figure supplement 2d). Thus, BLA neuronal activity is not needed for the learning that supports general conditional approach responses, but is necessary, specifically at the time of outcome experience, to link the sensory-specific details of the outcome to a predictive cue. Such encoding is critical for that cue to subsequently guide decision making.
 
 An alternative possibility is that the total amount of inhibition compromised BLA activity more broadly. That is, that BLA activity per se rather than specifically at the time of stimulus-outcome pairing mediates the encoding of stimulus-outcome memories. To rule this out, we repeated the experiment in a new cohort of naive rats in which we matched the frequency and duration of inhibition to the experimental group, but delivered it during baseline pre-CS periods during Pavlovian conditioning. This inhibition had no effect on the subsequent influence of the cues on instrumental choice behavior during the PIT test (Figure 3—figure supplement 3), confirming that BLA activity specifically at the time of stimulus-outcome pairing mediates the encoding of detailed stimulus-outcome memories.
 
-## lOFC→ BLA projections are necessary for encoding Pavlovian stimulus-outcome memories
+### lOFC→ BLA projections are necessary for encoding Pavlovian stimulus-outcome memories
 
 We found that activity in BLA neurons at the time of reward delivery/experience mediates encoding of the relationship between that specific rewarding event and the environmental stimulus that predicts it. We next asked which BLA input might facilitate this function. The orbitofrontal cortex (OFC) is a prime candidate. The OFC sends dense glutamatergic innervation to the BLA (Aggleton et al., 1980; Carmichael and Price, 1995; Heilbronner et al., 2016; Lichtenberg et al., 2017; Malvaez et al., 2019; Price, 2007) and is itself implicated in appetitive learning (Baltz et al., 2018; Murray and Izquierdo, 2007; Ostlund and Balleine, 2007b; Rudebeck and Rich, 2018). BLA inputs from the lateral (lOFC), rather than medial OFC subregion, have previously been shown to be involved in learning information about a reward (i.e. its incentive value) (Malvaez et al., 2019), but are not required for retrieving appetitive memories (Lichtenberg et al., 2017; Malvaez et al., 2019). Thus, this pathway might play a critical role specifically in forming stimulus-outcome associative memories. To evaluate this, we used pathway-specific optical inhibition to ask whether activity in lOFC→BLA projections mediates the encoding of stimulus-outcome memories (Figure 4a). We expressed ArchT (N = 8) or eYFP control (N = 8) in lOFC neurons and detected expression in lOFC axons and terminals in the BLA in the vicinity of implanted optical fibers (Figure 4b–d). Green light (532 nm, ~10 mW) was used to inhibit lOFC axons and terminals in the BLA (Figure 4—figure supplement 1). Subjects received Pavlovian conditioning, as above, and inhibition was again restricted to 5 s during the delivery and retrieval of each reward during each cue. Similar to inhibition of BLA neurons, optical inhibition of lOFC→BLA projection activity during stimulus-outcome pairing did not affect the development of the Pavlovian conditional goal-approach response (Figure 4e; Training: F(3.9,54.3) = 7.84, p<0.0001; Virus: F(1,14) = 0.22, p=0.65; Virus x Training: F(7,98) = 0.43, p=0.88; see also Figure 4—figure supplement 2a) or its expression during the PIT test (Figure 4g; t14 = 0.49, p=0.63; see also Figure 4—figure supplement 2d). It did, however, attenuate encoding of sensory-specific stimulus-outcome memories as evidenced by the subjects’ inability to later use those memories to allow cue presentation to bias choice behavior during the PIT test (Figure 4f; Virus x Lever: F(1,14) = 6.49, p=0.02; Virus: F(1,14) = 0.04, p=0.85; Lever: F(1,14) = 7.10, p=0.02; see also Figure 4—figure supplement 2c). Thus, activity in lOFC→BLA projections regulates the encoding of detailed, sensory-specific stimulus-outcome memories. Together, with prior evidence that inactivation of lOFC→BLA projections does not disrupt the expression of outcome-selective PIT (Lichtenberg et al., 2017), these data suggest that activity in lOFC→BLA projections mediates the encoding, but not retrieval of stimulus-outcome memories.
 
-## lOFC→ BLA→lOFC is a stimulus-outcome memory circuit
+![Figure 4.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig4-v2.jpg)
+
+**Figure 4.:** (a). Procedure schematic. CS, conditional stimulus (white noise or tone); O, outcome (sucrose solution or food pellet); A, action (left or right lever press). (b) Schematic of optogenetic strategy for bilateral inhibition of lOFC axons and terminals in the BLA. (c) Top: Representative fluorescent image of ArchT-eYFP expression in lOFC cell bodies. Bottom: Representative image of fiber placement in the vicinity of immunofluorescent ArchT-eYFP-expressing lOFC axons and terminals in the BLA. (d) Schematic representation of ArchT-eYFP expression in lOFC and placement of optical fiber tips in BLA for all subjects. (e) Elevation [(CS probe entry rate)/(CS probe entry rate + preCS entry rate)] in food-port entries during the CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. Thin light lines represent individual subjects. (f) Elevation in lever presses on the lever that earned the same outcome as the presented CS (Same; [(presses on Same lever during CS)/(presses on Same lever during CS + Same presses during preCS)], averaged across trials and across CSs), relative to the elevation in responding on the alternate lever (Different; [(presses on Different lever during CS)/(presses on Different lever during CS + Different presses during preCS)], averaged across trials and across CSs) during the PIT test. Lines represent individual subjects. (g) Elevation in food-port entries to CS presentation (averaged across trials and CSs) during the PIT test. Circles represent individual subjects. ArchT, N = 8; eYFP, N = 8. **p<0.01. See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Confocal image of biocytin-filled BLA neuron (red) in the vicinity of ArchT-eYFP-expressing lOFC axons and terminals. (b) Representative recording of spontaneous excitatory postsynatic currents (sEPSCs) in a BLA neuron before and during green light (535 nm, 0.5 mW, 15 s; green bar) activation of ArchT in lOFC axonal processes. (c) Average change in sEPSC frequency in BLA cells induced by green light activation of ArchT-expressing lOFC axons and terminals in the BLA for the subset (N = 8 cells/4 subjects) of total cells (N = 12) that displayed a reduction in sEPSC frequency during light. Of the remaining four cells, two showed no change in sEPSC frequency during light and two show an increase in frequency. Optical inhibition of lOFC terminals in the BLA resulted in a reduction in the spontaneous activity of these BLA cells (t7 = 2.92, p=0.02). Lines represent individual cells. *p<0.05.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Food-port entry rate (entries/min) during CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. There was no effect of inhibition of lOFC→BLA projection activity during reward delivery on the development of this Pavlovian conditional goal-approach response (CS x Training: F(3.5,49.1) = 5.50, p=0.002; CS: F(1,14) = 27.94, p=0.0001; Virus: F(1,14) = 0.82, p=0.38; Training: F(2.0,28.3) = 1.88, p=0.17; Virus x Training: F(7,98) = 0.48, p=0.85; Virus x CS: F(1, 14)=0.40, p=0.54; Virus x Training x CS: F(7,98) = 0.62, p=0.74). *p<0.05, **p<0.01 relative to pre-CS. (b) Lever press rate (presses/min) averaged across levers and across the final 2 days of instrumental conditioning. There was no significant difference in press rate between the control group and the group that received inhibition of lOFC→BLA projection activity during Pavlovian conditioning (t14 = 1.29, p=0.22). Circles represent individual subjects. (c). Lever press rate (presses/min) on the lever that earned the same outcome as the presented CS (averaged across trials and across CSs), relative to the press rate on the alternate lever (Different) during the PIT test. Planned comparisons, based on the significant interaction and post hoc effect detected in Figure 4f, showed that for the eYFP group CS presentation significantly increased responding on the lever that earned the same reward as that predicted by the presented CS relative to the preCS baseline period (t7 = 3.16, p=0.02). The CSs did not significantly alter responses on the different lever in the control group (t7 = 1.05, p=0.33). For the ArchT group, the CSs were not capable of significantly altering lever pressing relative to the baseline period (Same: t7 = 0.07, p=0.95; Different: t7 = 0.22, p=0.83). Lines represent individual subjects. (d) Food-port entry rate during CS presentation (averaged across trials and across CSs) during the PIT test. For both groups CS presentation triggered a similar significant elevation in this goal-approach behavior (CS: F(1,14) = 49.96, p<0.0001; Virus: F(1,14) = 1.35, p=0.26; Virus x CS: F(1,14) = 0.44, p=0.52). Lines represent individual subjects. *p<0.05, ***p<0.001.
+
+### lOFC→ BLA→lOFC is a stimulus-outcome memory circuit
 
 Collectively, the data show that the BLA, with help from direct lOFC input, mediates the encoding of the detailed cue-reward memories that enable the cues to trigger the sensory-specific reward outcome representations that influence decision making. The lOFC-BLA circuit is bidirectional. The BLA sends dense excitatory projections back to the lOFC (Barreiros et al., 2021; Lichtenberg et al., 2017; Morecraft et al., 1992). Activity in these projections mediates the representation of expected outcomes in the lOFC (Rudebeck et al., 2013; Rudebeck et al., 2017; Schoenbaum et al., 2003) and the use of stimulus-outcome memories to guide choice (Lichtenberg et al., 2017). But it remains unknown whether BLA→lOFC projection activity enables the use of the associative information that is learned via activation of lOFC→BLA projections. That is, whether lOFC→BLA→lOFC is a functional stimulus-outcome memory encoding and retrieval circuit or whether lOFC→BLA and BLA→lOFC projections tap in to independent, parallel information streams. Indeed, stimulus-outcome memories are highly complex including multifaceted information about outcome attributes (e.g. value, taste, texture, nutritional content, category, probability, timing, etc.) and related consummatory and appetitive responses (Delamater and Oakeshott, 2007). Therefore, we next asked whether the lOFC→BLA and BLA→lOFC pathways form a functional stimulus-outcome memory encoding and retrieval circuit, that is, whether the sensory-specific associative information that requires lOFC→BLA projections to be encoded also requires activation of BLA→lOFC projections to be used to guide decision making, or whether these are independent, parallel pathways, tapping into essential but independent streams of information.
 
 To arbitrate between these possibilities, we multiplexed optogenetic and chemogenetic inhibition to perform a serial circuit disconnection. We disconnected lOFC→BLA projection activity during stimulus-outcome learning from BLA→lOFC projection activity during the retrieval of these memories at the PIT test (Figure 5a). For the disconnection group (N = 10), we again expressed ArchT bilaterally in lOFC neurons (Figure 5b–d) to allow expression in lOFC axons and terminals in the BLA. This time, we implanted the optical fiber only unilaterally in the BLA (Figure 5b–d), so that green light (532 nm, ~10 mW), delivered again during Pavlovian conditioning for 5 s during the delivery and retrieval of each reward during each cue, would inhibit both the ipsilateral and contralateral lOFC input to the BLA of only one hemisphere. In these subjects, we also expressed the inhibitory designer receptor human M4 muscarinic receptor (hM4Di) unilaterally in the BLA of the hemisphere opposite to the optical fiber and in that same hemisphere placed a guide cannula over the lOFC near hM4Di-expressing BLA axons and terminals (Figure 5b–d). This allowed us to infuse the hM4Di ligand clozapine-n-oxide (CNO; 1 mM in 0.25 µl) prior to the PIT test to unilaterally inhibit BLA terminals in the lOFC, which are largely ipsilateral (Lichtenberg et al., 2017), in the hemisphere opposite to that for which we had inhibited lOFC→BLA projection activity during Pavlovian conditioning. Thus, we optically inhibited the lOFC→BLA stimulus-outcome learning pathway in one hemisphere at each stimulus-outcome pairing during Pavlovian conditioning, and chemogenetically inhibited the putative BLA→lOFC retrieval pathway in the opposite hemisphere during the PIT test in which stimulus-outcome memories must be used to guide choice. If BLA→lOFC projection activity mediates the retrieval of the sensory-specific associative memory that requires activation of lOFC→BLA projections to be encoded then we will have bilaterally disconnected the circuit, attenuating encoding in one hemisphere and retrieval in the other, thereby disrupting the ability to use the stimulus-outcome memories to guide choice behavior during the PIT test. If, however, these pathways mediate parallel information streams, that is, independent components of the stimulus-outcome memory, the expression of PIT should be intact because one of each pathway is undisrupted to mediate its individual component during each phase. The control group received identical procedures with the exception that viruses lacked ArchT and hM4Di (N = 8). To control for unilateral inhibition of each pathway without disconnecting the circuit, a second control group (N = 8) received the same procedures as the experimental contralateral ArchT/hM4Di disconnection group, except with BLA hM4Di and the lOFC guide cannula in the same hemisphere as the optical fiber used to inactivate lOFC axons and terminals in the BLA (Figure 5—figure supplement 1). Thus, during the PIT test for this group the BLA→lOFC pathway was chemogenetically inactivated in the same hemisphere in which the lOFC→BLA pathway had been optically inactivated during Pavlovian conditioning, leaving the entire circuit undisrupted in the other hemisphere. These control groups did not differ on any measure and so were collapsed into a single control group [(Pavlovian training, Training: F(2.2,31.3) = 12.96, p<0.0001; Control group type: F(1,14) = 0.02, p=0.89; Group x Training: F(7.98) = 0.76, p=0.62) (PIT Lever presses, Lever: F(1,14) = 14.68, p=0.002; Control group type: F(1,14) = 0.38, p=0.55; Group x Lever: F(1,14) = 0.43, p=0.52) (PIT Food-port entries, t14 = 0.72, p=0.48)]. See also Figure 5—figure supplement 2 for disaggregated control data.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig5-v2.jpg)
+
+**Figure 5.:** (a) Procedure schematic. CS, conditional stimulus (white noise or tone); O, outcome (sucrose solution or food pellet); A, action (left or right lever press); CNO, clozapine-n-oxide. (b) Schematic of multiplexed optogenetic/chemogenetic inhibition strategy for unilateral optical inhibition of lOFC→BLA projections during Pavlovian conditioning and contralateral, unilateral, chemogenetic inhibition of BLA→lOFC projections during the PIT test. (c) Top: Representative fluorescent image of bilateral ArchT-eYFP expression in lOFC cells bodies and unilateral expression of hM4Di-mCherry in BLA axons and terminals in the lOFC in the vicinity of implanted guide cannula. Bottom: Representative image of unilateral BLA fiber placement in the vicinity of immunofluorescent ArchT-eYFP expressing lOFC axons and terminals (right) and unilateral expression of hM4Di-mCherry in BLA cell bodies in the contralateral hemisphere (left). (d) Schematic representation of bilateral ArchT-eYFP expression and unilateral cannula placement in lOFC and unilateral hM4Di expression and placement of optical fiber tips in the contralateral BLA for all Contralateral group subjects. Fibers are shown in left and cannula placement in the right hemisphere, but fiber/cannula hemisphere arrangement was counterbalanced across subjects. See Figure 5—figure supplement 1 for histological verification of ipsilateral control. (e) Elevation [(CS probe entry rate)/(CS probe entry rate + preCS entry rate)] in food-port entries during the CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. Thin light lines represent individual subjects (Contralateral eYFP/mCherry (solid lines) and Ipsilateral ArchT/hM4Di (dashed lines) collapsed into a single control group). (f) Elevation in lever presses on the lever that earned the same outcome as the presented CS (Same; [(presses on Same lever during CS)/(presses on Same lever during CS + Same presses during preCS)], averaged across trials and across CSs), relative to the elevation in responding on the alternate lever (Different; [(presses on Different lever during CS)/(presses on Different lever during CS + Different presses during preCS)], averaged across trials and across CSs) during the PIT test. Lines represent individual subjects. (g) Elevation in food-port entries to CS presentation (averaged across trials and CSs) during the PIT test. Data points represent individual subjects, triangles indicate ipsilateral control subjects. Control, N = 16; Contralateral disconnection group, N = 10. **p<0.01. See Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Schematic of multiplexed optogenetic/chemogenetic inhibition strategy for unilateral optical inhibition of lOFC→BLA projections during Pavlovian conditioning and ipsilateral, unilateral, chemogenetic inhibition of BLA→lOFC projections during the PIT test. (b) Top: Representative fluorescent image of ArchT-eYFP expression in lOFC cells bodies and unilateral expression of hM4Di-mCherry in BLA axons and terminals in the lOFC in the vicinity of implanted guide cannula. Bottom: Representative image of fiber placements in the vicinity of immunofluorescent ArchT-eYFP expression in lOFC axons and terminals in the BLA and unilateral expression of hM4Di-mCherry in BLA cell bodies in that same hemisphere. (c) Schematic representation of bilateral ArchT-eYFP expression and unilateral cannula placement in lOFC and unilateral, ipsilateral hM4Di expression and placement of optical fiber tips in BLA for all subjects. All fibers and cannula are shown in left hemisphere, but inhibited hemisphere was counterbalanced across subjects.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68617/elife-68617-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Food-port entry rate (entries/min) during CS probe period (after CS onset, before first reward delivery), averaged across trials and CSs for each day of Pavlovian conditioning. There was no effect of unilateral lOFC→BLA inhibition during reward delivery on the development of this Pavlovian conditional goal-approach response in either the disconnection or ipsilateral control group (CS x Training: F(3.4,78.6) = 23.07, p<0.0001; CS: F(1,23) = 131.7, p<0.0001; Virus group: F(2,23) = 1.42, p=0.26; Training: F(3.7,85.4) = 3.95, p=0.007; Virus x Training: F(7.4,85.43) = 2.24, p=0.04; Virus x CS: F(2,23) = 1.19, p=0.32; Virus x Training x CS: F(6.8,78.6) = 1.36, p=0.24). **<0.05, **p<0.01, ***p<0.001, relative to preCS (top, eYFP/mCherry; middle, ipsilateral ArchT/hM4Di; bottom, contralateral ArchT/hM4Di). (b) Lever press rate (presses/min) averaged across levers and across the final 2 days of instrumental conditioning. There was no significant difference in press rate between the control groups and the disconnection group (F(2,23) = 0.30, p=0.75). Circles represent individual subjects. (c). Lever press rate (presses/min) on the lever that earned the same outcome as the presented CS (averaged across trials and across CSs), relative to the press rate on the alternate lever (Different) during the PIT test. Planned comparisons, based on the results detected in Figure 5f, showed that for the contralateral eYFP/mCherry control subjects CS presentation significantly increased responding on the action earning the same reward as that predicted by the presented cue relative to the preCS baseline period (t7 = 3.30, p=0.01). The CSs did not significantly alter responses on the different lever in this group (t7 = 0.58, p=0.58). For the ipsilateral ArchT/hM4Di control subjects, CS presentation increased responding on the Same action relative to both the preCS baseline period (t7 = 3.43, p=0.01) and to the different action during the CS (t7 = 4.51, p=0.003). The CSs also did not significantly alter responses on the different lever in this control group (t7 = 0.67, p=0.52). For the Disconnection (contralateral ArchT/hM4Di) group, the CSs caused a non-discriminate increase in lever pressing relative to the baseline period on both levers (Same: t9 = 2.54, p=0.03; Different: t9 = 3.92, p=0.004). Lines represent individual subjects. (d) Food-port entry rate during CS presentation (averaged across trials and across CSs) during the PIT test. For all groups, CS presentation triggered a similar significant elevation in this goal-approach behavior (CS: F(1,23) = 47.67, p<0.0001; Virus: F(2,23) = 0.86, p=0.44; Virus x CS: F(2,23) = 0.14, p=0.87). Lines represent individual subjects. Contra, contralateral. *p<0.05, **p<0.01, ***p<0.001.
 
 We found evidence that activity in lOFC→BLA projections mediates the encoding of the sensory-specific stimulus-outcome memory that is later used to allow cues to guide choice via activation of BLA→lOFC projections. As with the bilateral inhibition experiments, the control and disconnection groups both developed a Pavlovian conditional goal-approach response with training (Figure 5e; Training: F(2.8,68.1) = 28.13, p<0.0001; Group (Combined control group v. Contralateral ArchT/hM4Di- disconnection): F(1,24) = 0.46, p=0.51; Group x Training: F(7,168) = 0.44, p=0.88; see also Figure 5—figure supplement 2a), which was similarly expressed during the PIT test (Figure 5g; t24 = 0.11, p=0.91; see also Figure 5—figure supplement 2d). But disconnection of lOFC→BLA projection activity during stimulus-outcome learning from BLA→lOFC projection activity during the PIT test attenuated the ability to use such memories to guide choice behavior (Figure 5f; Group x Lever: F(1,24) = 5.57, p=0.03; Group: F(1,24) = 0.47, p=0.50; Lever: F(1,24) = 1.39, p=0.21; see also Figure 5—figure supplement 2c). Whereas in the control group cue presentation significantly biased choice toward the action earning the same predicted reward, this outcome-specific PIT effect did not occur in the disconnection group. Rather, during the cues rats in the disconnection group showed a non-discriminate elevation in pressing on both levers (Figure 5—figure supplement 2c). Thus, disconnection of lOFC→BLA projection activity during stimulus-outcome learning from BLA→lOFC projection activity during the retrieval of this information attenuated the ability to use stimulus-outcome memories to bias choice behavior, indicating that the lOFC and BLA form a bidirectional circuit for the encoding (lOFC→BLA) and use (BLA→lOFC) of appetitive stimulus-outcome memories.
 
@@ -86,120 +150,340 @@ The BLA, via input from the lOFC, helps to link environmental cues to the specif
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENN.AAV5.CAMKII.GCaMP6f.WPRE.SV40</td>
+      <td>Addgene</td>
+      <td>Cat: 100834-AAV5 RRID:Addgene_100834</td>
+      <td>Lot # v59618</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5-CAMKIIa-eArchT3.0-eYFP</td>
+      <td>UNC-CH vector core</td>
+      <td>Deisseroth</td>
+      <td>Lot # V4883D</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5-CAMKIIa-eYFP</td>
+      <td>UNC-CH vector core</td>
+      <td>Deisseroth</td>
+      <td>Lot # AV4808I</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV8-hSyn-hM4D(Gi)-mCherry</td>
+      <td>Addgene</td>
+      <td>Cat: 50475-AAV8 RRID:Addgene_50475</td>
+      <td>Lot # v5483</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV8-hSyn-mCherry</td>
+      <td>Addgene</td>
+      <td>Cat: 114472-AAV8 RRID:Addgene_114472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical fiber (photometry)</td>
+      <td>Neurophotometrics</td>
+      <td></td>
+      <td>Diameter: 200 µm; NA: 0.37; Length: 8–8.5 mm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical fiber (manipulation)</td>
+      <td>Thorlabs</td>
+      <td>Cat: FT200UMT</td>
+      <td>Core: 200 µm; NA: 0.39; Length: 8–8.5 mm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical ferrules</td>
+      <td>Kientec</td>
+      <td>Cat: FAZI-LC-230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Guide cannula</td>
+      <td>Plastics One</td>
+      <td>Cat: C313G/SPC</td>
+      <td>Length: cut to 4 mm below pedestal</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide</td>
+      <td>Tocris</td>
+      <td>Cat: 4936/10 CAS: 34233-69-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dustless precision Chocolate-flavored purified pellets</td>
+      <td>Bio-Serv</td>
+      <td>Cat: F0299</td>
+      <td>45 mg</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sucrose</td>
+      <td>Ralphs</td>
+      <td>UPC: 0001111083805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP antibody</td>
+      <td>Abcam</td>
+      <td>Cat: ab13970</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken IgG, Alexa Fluor 488 conjugate</td>
+      <td>Abcam</td>
+      <td>Cat: ab150169 RRID:AB_2636803</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DsRed antibody</td>
+      <td>Takara Bio</td>
+      <td>Cat: 632496 RRID:AB_10013483</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit IgG, Alexa Fluor 594 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat: A-11012 RRID:AB_253407</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold Antifade Mountant with DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat: P36931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma</td>
+      <td>Cat: P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MED-PC IV</td>
+      <td>Med Associates, Inc</td>
+      <td>RRID:SCR_012156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version: 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatLab</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version: 2019a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_019096</td>
+      <td>Version: 26</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bonsai</td>
+      <td>Bonsai</td>
+      <td>RRID:SCR_017218</td>
+      <td>Version: 2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Minianalysis</td>
+      <td>Synaptosoft</td>
+      <td>RRID:SCR_002184</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BZ-X Analyze software</td>
+      <td>Keyence</td>
+      <td>RRID:SCR_017205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zeiss Zen Blue software</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 Male, Long Evans rats aged 8–10 weeks at the start of the experiment (Charles River Laboratories, Wilmington, MA) were group housed (2/cage) in a temperature (68–79 °F) and humidity (30–70%) regulated vivarium prior to surgery and then subsequently housed individually to preserve implants. Rats were provided with water ad libitum in the home cage and were maintained on a food-restricted 12–14 g daily diet (Lab Diet, St. Louis, MO) to maintain ~85–90% free-feeding body weight. Rats were handled for 3–5 days prior to the onset of each experiment. Separate groups of naive rats were used for each experiment. Experiments were performed during the dark phase of a 12:12 hr reverse dark/light cycle (lights off at 7AM). All procedures were conducted in accordance with the NIH Guide for the Care and Use of Laboratory Animals and were approved by the UCLA Institutional Animal Care and Use Committee.
 
-## Surgery
+### Surgery
 
 Standard surgical procedures, described previously (Lichtenberg et al., 2017; Malvaez et al., 2015; Malvaez et al., 2019), were used for all surgeries. Rats were anesthetized with isoflurane (4–5% induction, 1–3% maintenance) and a nonsteroidal anti-inflammatory agent was administered pre- and post-operatively to minimize pain and discomfort.
 
-## Fiber photometry recordings
+#### Fiber photometry recordings
 
 Surgery occurred prior to onset of behavioral training. Rats (N = 11) were infused bilaterally with adeno-associated virus (AAV) expressing the genetically encoded calcium indicator GCaMP6f under control of the calcium/calmodulin-dependent protein kinase (CaMKII) promoter (pENN.AAV5.CAMKII.GCaMP6f.WPRE.SV40, Addgene, Watertown, MA) to drive expression preferentially in principal neurons. Virus (0.5 µl) was infused a rate of 0.1 µl/min into the BLA [AP: −2.7 (N = 5) or −3.0 (N = 6); ML:±5.0; DV: −8.6 mm from bregma] using a 28-gauge injector. Injectors were left in place for an additional 10 min to ensure adequate diffusion and to minimize off-target spread along the injector tract. Optical fibers (200 µm diameter, 0.37 numerical aperture (NA), Neurophotometrics, San Diego, CA) were implanted bilaterally 0.2 mm dorsal to the infusion site to allow subsequent imaging of GCaMP fluctuations in BLA neurons. These procedures were replicated in a separate group of subjects (N = 6) that served as unpaired CSØ control. Behavioral training commenced approximately 3–4 weeks after surgery to allow sufficient expression in BLA neurons.
 
-## Optogenetic inhibition of BLA
+#### Optogenetic inhibition of BLA
 
 Prior to the onset of behavioral training, rats were randomly assigned to a viral group and were infused bilaterally with AAV encoding either the inhibitory opsin archaerhodopsin T (ArchT; N = 9; rAAV5-CAMKIIa-eArchT3.0-eYFP, University of North Carolina Vector Core, Chapel Hill, NC) or the enhanced yellow fluorescent protein control (eYFP; N = 10; rAAV5-CAMKIIa-eYFP, University of North Carolina Vector Core) under control of the CaMKII promoter. Virus (0.5 µl) was infused at a rate of 0.1 µl/min into the BLA (AP: −2.8; ML:±5.0; DV: −8.6 mm from bregma) using a 28-gauge injector. Injectors were left in place for an additional 10 min. Optical fibers (200 µm core, 0.39 NA, Thorlabs, Newton, NJ) held in ceramic ferrules (Kientec Systems, Stuart, FL) were implanted bilaterally 0.6 mm dorsal to the injection site to allow subsequent light delivery to ArchT- or eYFP-expressing BLA neurons. Identical surgical procedures were used for a separate yoked inhibition control group (N = 7). A third group (N = 5) also received bilateral infusion of rAAV5-CAMKIIa-eArchT3.0-eYFP into the BLA, without fiber implants, for subsequent ex vivo electrophysiological validation of optical inhibition of BLA neurons. Experiments commenced 3 weeks after surgery to allow sufficient expression in BLA neurons.
 
-## Optogenetic inhibition of lOFC→BLA projections
+#### Optogenetic inhibition of lOFC→BLA projections
 
 Prior to the onset of behavioral training, rats were randomly assigned to a viral group and were infused with AAV encoding either the inhibitory opsin ArchT (N = 8; rAAV5-CAMKIIa-eArchT3.0-eYFP) or eYFP control (N = 8; rAAV5-CAMKIIa-eYFP). Virus (0.3 µl) was infused at a rate of 0.1 µl/min bilaterally into the lOFC (AP:+3.3; ML:±2.5; DV: −5.4 mm from bregma) using a 28-gauge injector tip. Injectors were left in place for an additional 10 min. Optical fibers (200 µm core, 0.39 NA) held in ceramic ferrules were implanted bilaterally in the BLA (AP: −2.7; ML:±5.0; DV: −8.0 mm from bregma) to allow subsequent light delivery to ArchT- or eYFP-expressing axons and terminals in the BLA. A separate group (N = 4) also received bilateral infusion of rAAV5-CAMKIIa-eArchT3.0-eYFP into the lOFC, without fiber implants, for subsequent ex vivo electrophysiological validation of optical inhibition of lOFC terminals in the BLA. Experiments began 7–8 weeks following surgery to allow axonal transport to the BLA.
 
-## Multiplexed optogenetic inhibition lOFC→BLA projections and chemogenetic inhibition of BLA→lOFC projections for serial circuit disconnection
+#### Multiplexed optogenetic inhibition lOFC→BLA projections and chemogenetic inhibition of BLA→lOFC projections for serial circuit disconnection
 
 Prior to the onset of behavioral training, rats were randomly assigned to viral group. The disconnection group (N = 10) was infused with AAV encoding the inhibitory opsin ArchT (rAAV5-CAMKIIa-eArchT3.0-eYFP; 0.3 µl) bilaterally at a rate of 0.1 µl/min into the lOFC (AP:+3.3; ML:±2.5; DV: −5.4 mm from bregma) using a 28-gauge injector tip. Injectors were left in place for an additional 10 min. An optical fiber (200 µm core, 0.39 NA) held in a ceramic ferrule was implanted unilaterally (hemisphere counterbalanced across subjects) in the BLA (AP: −2.7; ML:±5.0; DV: −7.7 mm from dura) to allow subsequent light delivery to both the ipsilateral and contralateral ArchT-expressing axons and terminals in the BLA of only one hemisphere. During the same surgery, in the hemisphere contralateral to optical fiber placement, a second AAV was infused unilaterally at a rate of 0.1 µl/min into the BLA (AP: −3.0; ML:±5.1; DV: −8.6 from bregma) to drive expression of the inhibitory designer receptor human M4 muscarinic receptor (hM4Di; pAAV8-hSyn-hM4D(Gi)-mCherry, Addgene; 0.5 µl). A 22-gauge stainless-steel guide cannula was implanted unilaterally above the lOFC (AP:+3.0; ML:±3.2: DV: −4.0) of the BLA-hM4Di hemisphere to target the hM4D(Gi)-expressing axonal terminals, which are predominantly ipsilateral. This allowed subsequent optical inhibition of lOFC terminals in the BLA of one hemisphere and chemogenetic inhibition of BLA terminals in the lOFC of the other hemisphere, thus disconnecting the putative lOFC→BLA→lOFC circuit. Surgical procedures were identical for the fluorophore-only control group (N = 8), except with AAVs encoding only eYFP (lOFC; rAAV5-CAMKIIa-eYFP) and mCherry (BLA; pAAV8-hSyn-mCherry). A separate ipsilateral control group received the same surgical procedures as the experimental contralateral ArchT/hM4Di group, but with BLA pAAV8-hSyn-hM4D(Gi)-mCherry and lOFC guide cannula placed in the same hemisphere as the BLA optical fiber. Experiments began 7–8 weeks following surgery to allow sufficient viral expression and axonal transport. Two subjects became ill before testing and, thus, were excluded from the experiment (Contralateral ArchT/hM4Di, N = 1; Ipsilateral ArchT/hM4Di, N = 1).
 
-## Behavioral procedures
+### Behavioral procedures
 
-## Apparatus
+#### Apparatus
 
 Training took place in Med Associates conditioning chambers (East Fairfield, VT) housed within sound- and light-attenuating boxes, described previously (Collins et al., 2019; Malvaez et al., 2015; Malvaez et al., 2019). For optogenetic manipulations, the chambers were outfitted with an Intensity Division Fiberoptic Rotary Joint (Doric Lenses, Quebec, QC, Canada) connecting the output fiber optic patch cords to a laser (Dragon Lasers, ChangChun, JiLin, China) positioned outside of the chamber.
 
 Each chamber contained two retractable levers that could be inserted to the left and right of a recessed food-delivery port (magazine) in the front wall. A photobeam entry detector was positioned at the entry to the food port. Each chamber was equipped with a syringe pump to deliver 20% sucrose solution in 0.1 ml increments through a stainless-steel tube into one well of the food port and a pellet dispenser to deliver 45 mg purified chocolate food pellets (Bio-Serv, Frenchtown, NJ) into another well. Both a tone and white noise generator were attached to individual speakers on the wall opposite the levers and food-delivery port. A 3-watt, 24-volt house light mounted on the top of the back wall opposite the food-delivery port provided illumination and a fan mounted to the outer chamber provided ventilation and external noise reduction. Behavioral procedures were similar to that we have described previously (Lichtenberg et al., 2017; Lichtenberg and Wassum, 2017; Malvaez et al., 2015).
 
-## Magazine conditioning
+#### Magazine conditioning
 
 Rats first received one day of training to learn where to receive the sucrose and food pellet rewards. This included two separate sessions, separated by approximately 1 hr, order counterbalanced, one with 30 non-contingent deliveries of sucrose (60 s intertrial interval, ITI) and one with 30 food pellet deliveries (60 s ITI).
 
-## Pavlovian conditioning
+#### Pavlovian conditioning
 
 Rats then received 8 sessions of Pavlovian conditioning (one session/day on consecutive days) to learn to associate each of two auditory conditional stimuli (CSs; 80–82 db, 2 min duration), tone (1.5 kHz) or white noise, with a specific food reward, sucrose (20%, 0.1 ml/delivery) or purified chocolate pellets (45 mg; Bio-Serv). CS-reward pairings were counterbalanced at the start of each experiment. For half the subjects, tone was paired with sucrose and noise with pellets, with the other half receiving the opposite arrangement. Each session consisted of eight tone and eight white noise presentations, with the exception of the fiber photometry experiments, in which rats received four of each CS/session to reduce session time and, thus, minimize the effects of photobleaching. During each 2 min CS, the associated reward was delivered on a 30 s random-time schedule, resulting in an average of 4 stimulus-reward pairings per trial. For the fiber photometry experiments, there was a minimum 15 s probe period after CS onset before the first reward delivery to allow us to dissociate signal fluctuations due to CS onset from those due to reward delivery/retrieval. CSs were delivered pseudo-randomly with a variable 2–4 min ITI (mean = 3 min).
 
 Procedures were identical for the unpaired CSØ control fiber photometry experiment, except no rewards were delivered during Pavlovian training. Subjects in this experiment instead received rewards in their home cage several hours after the CSØ sessions. On the day following the last CSØ session, these subjects received one session with non-contingent, unpredicted deliveries of sucrose and food pellets, each delivered on a 30 s random-time schedule during 4, 2 min periods (variable 2–4 min ITI, mean = 3 min), resulting in an average of 16 deliveries of each outcome.
 
-## Instrumental conditioning
+#### Instrumental conditioning
 
 Rats were then given 11 days, minimum, of instrumental conditioning. They received two separate training sessions per day, one with the left lever and one with the right lever, separated by at least 1 hr. Each action was reinforced with a different outcome (e.g. left press-chocolate pellets/right press-sucrose solution; counterbalanced with respect to the Pavlovian contingencies). Each session terminated after 30 outcomes had been earned or 45 min had elapsed. Actions were continuously reinforced on the first day and then escalated ultimately to a random-ratio 20 schedule of reinforcement.
 
-## Outcome-selective Pavlovian-to-instrumental transfer test
+#### Outcome-selective Pavlovian-to-instrumental transfer test
 
 Following Pavlovian and instrumental conditioning, rats received an outcome-selective Pavlovian-to-instrumental transfer (PIT) test. On the day prior to the PIT test, rats were given a single 30 min extinction session during which both levers were available but pressing was not reinforced to establish a low level of responding. During the PIT test, both levers were continuously present, but pressing was not reinforced. After 5 min of lever-pressing extinction, each 2 min CS was presented separately four times in pseudorandom order, separated by a fixed 4 min inter-trial interval. No rewards were delivered during CS presentation.
 
-## Data collection
+#### Data collection
 
 Lever presses and/or discrete entries into the food-delivery port were recorded continuously for each session. For both Pavlovian training and PIT test sessions, the 2 min periods prior to each CS onset served as the baseline for comparison of CS-induced elevations in lever pressing and/or food-port entries.
 
-## In vivo fiber photometry
+### In vivo fiber photometry
 
 Fiber photometry was used to image bulk calcium activity in BLA neurons throughout each Pavlovian conditioning session. We simultaneously imaged GCaMP6f and control fluorescence in the BLA using a commercial fiber photometry system (Neurophotometrics Ltd., San Diego, CA). Two light-emitting LEDs (470 nm: Ca2+-dependent GCaMP fluorescence; 415 nm: autofluorescence, motion artifact, Ca2+-independent GCaMP fluorescence) were reflected off dichroic mirrors and coupled via a patch cord (fiber core diameter, 200 µm; Doric Lenses) to the implanted optical fiber. The intensity of the light for excitation was adjusted to ∼80 µW at the tip of the patch cord. Fluorescence emission was passed through a 535 nm bandpass filter and focused onto the complementary metal-oxide semiconductor (CMOS) camera sensor through a tube lens. Samples were collected at 20 Hz, interleaved between the 415 and 470 excitation channels, using a custom Bonsai (Lopes et al., 2015) workflow. Time stamps of task events were collected simultaneously through an additional synchronized camera aimed at the Med Associates interface, which sent light pulses coincident with task events. Signals were saved using Bonsai software and exported to MATLAB (MathWorks, Natick, MA) for analysis. Recordings were collected unilaterally from the hemisphere with the strongest fluorescence signal in the 470 channel at the start of the experiment, which was kept consistent throughout the remainder of the experiment. Animals were habituated to the optical tether during the magazine conditioning sessions, but no light was delivered.
 
-## Optogenetic inhibition of BLA neurons
+### Optogenetic inhibition of BLA neurons
 
 Optogenetic inhibition was used to attenuate the activity of ArchT-expressing BLA neurons at the time of stimulus-outcome pairing during each CS during each Pavlovian conditioning session. Animals were habituated to the optical tether (200 µm, 0.22 NA, Doric) during the magazine conditioning sessions, but no light was delivered. During each Pavlovian conditioning session, green light (532 nm; 10 mW) was delivered to the BLA via a laser (Dragon Lasers, ChangChun) connected through a ceramic mating sleeve (Thorlabs) to the ferrule implanted on the rat. Light was delivered continuously for 5 s concurrent with each reward delivery. If the reward was retrieved (first food-port entry after reward delivery) while the light was still being delivered (i.e. within 5 s of reward delivery), then the light delivery was extended to 5 s from the time of the retrieval. If the reward was retrieved after the laser had gone off, then the retrieval entry triggered an additional 5 s continuous illumination. To control for the overall amount of inhibition, a separate control group received green light during the 2 min preCS baseline periods with the same number, duration, and pattern as the experimental group. Light effects were estimated to be restricted to the BLA based on predicted irradiance values (https://web.stanford.edu/group/dlab/cgi-bin/graph/chart.php). Following Pavlovian conditioning, rats proceeded through instrumental conditioning and the PIT test, as above. Light was not delivered during these subsequent phases of the experiment.
 
-## Optogenetic inhibition of lOFC→BLA projections
+### Optogenetic inhibition of lOFC→BLA projections
 
 Optogenetic inhibition was used to attenuate the activity of ArchT-expressing lOFC→BLA terminals at the time of stimulus-outcome pairing during each CS during each Pavlovian conditioning session. Procedures were identical to those for BLA inhibition above. Green light (532 nm; 10 mW) was delivered to the BLA continuously for 5 s concurrent with each reward delivery and/or retrieval during Pavlovian conditioning.
 
-## Multiplexed optogenetic inhibition of lOFC→BLA projections during Pavlovian conditioning and chemogenetic inhibition of BLA→lOFC projections during the Pavlovian-to-instrumental transfer test for serial circuit disconnection
+#### Multiplexed optogenetic inhibition of lOFC→BLA projections during Pavlovian conditioning and chemogenetic inhibition of BLA→lOFC projections during the Pavlovian-to-instrumental transfer test for serial circuit disconnection
 
 We multiplexed optogenetic inhibition of lOFC→BLA projection activity during stimulus-outcome pairing during Pavlovian conditioning with chemogenetic inhibition of BLA→lOFC projection activity during the PIT test to perform a serial circuit disconnection and ask whether activity in lOFC→BLA projections mediates the encoding of the stimulus-outcome memory that is later retrieved via activation of BLA→lOFC projections (Lichtenberg et al., 2017). That is, whether lOFC→BLA→lOFC is a functional circuit for the encoding (lOFC→BLA) and subsequent use for guiding decision making (BLA→lOFC) of appetitive, sensory-specific, stimulus-outcome memories. To achieve the serial circuit disconnection, in the experimental group, we optically inactivated ipsilateral and contralateral lOFC input to the BLA of only one hemisphere during stimulus-outcome pairing during Pavlovian conditioning, and then chemogenetically inactivated predominantly ipsilateral (Lichtenberg et al., 2017) BLA axons and terminals in the lOFC of the other hemisphere during the PIT test. This leaves one of each pathway undisrupted to mediate the stimulus-outcome learning (lOFC→BLA) and retrieval (BLA→lOFC), but if lOFC→BLA→lOFC forms a functional stimulus-outcome memory circuit, then we will have disconnected the circuit in each hemisphere.
 
-## Optogenetic inhibition of lOFC→BLA projections during Pavlovian conditioning
+#### Optogenetic inhibition of lOFC→BLA projections during Pavlovian conditioning
 
 Optogenetic inhibition was used to attenuate the activity of ArchT-expressing lOFC→BLA terminals of one hemisphere at the time of stimulus-outcome pairing (reward delivery and retrieval) during each CS during each Pavlovian conditioning session. Procedures were identical to those described above, except that green light (532 nm; 10 mW) was delivered unilaterally to the BLA continuously for 5 s concurrent with each reward delivery and retrieval during Pavlovian conditioning.
 
-## Chemogenetic inhibition of BLA→lOFC projections during the Pavlovian-to-instrumental transfer test
+#### Chemogenetic inhibition of BLA→lOFC projections during the Pavlovian-to-instrumental transfer test
 
 Chemogenetic inhibition was used to inactivate hM4Di-expressing BLA axons and terminals in the lOFC of one hemisphere during the PIT test. For the contralateral ArchT/hM4Di group, chemogenetic inhibition occurred in the hemisphere opposite to the one that received optical inhibition of lOFC→BLA projections during learning, thus achieving the disconnection. In a separate ipsilateral control group, the chemogenetic inhibition occurred on the same side as optical inhibition of lOFC→BLA projections during learning, leaving the entire circuit undisrupted in one hemisphere, while controlling for unilateral inhibition of each pathway. We selected chemogenetic inhibition so it could be multiplexed with optogenetic inhibition and to allow inhibition throughout the duration of the PIT test. CNO (Tocris Bioscience, Sterling Heights, MI) was dissolved in aCSF to 1 mM and 0.25 µL was intracranially infused over 1 min into the lOFC as previously described (Lichtenberg et al., 2017). Injectors were left in place for at least one additional min to allow for drug diffusion. The PIT test commenced within 5–10 min following infusion. CNO dose was selected based on evidence of both its behavioral effectiveness and ability to attenuate the activity of hM4Di-expressing BLA terminals in the lOFC (Lichtenberg et al., 2017). We have also demonstrated that this dose of CNO when infused into the lOFC has no effect on reward-related behavior in the absence of the hM4Di transgene (Lichtenberg et al., 2017).
 
-## Ex vivo electrophysiology
+### Ex vivo electrophysiology
 
 Whole-cell patch clamp recordings were used to validate the efficacy of optical inhibition of BLA principal neuron activity and lOFC terminal activity in the BLA. Recordings were performed in brain slices from ~3- to 4-month-old rats 3–4 (BLA cell body inhibition) or 7–8 (lOFC→BLA inhibition) weeks following surgery. To prepare brain slices, rats were deeply anesthetized with isoflurane and perfused transcardially with an ice-cold, oxygenated NMDG-based slicing solution containing (in mM): 30 NaHCO3, 20 HEPES, 1.25 NaH2PO4, 102 NMDG, 40 glucose, 3 KCl, 0.5 CaCl2-2H2O, 10 MgSO4-H2O (pH adjusted to 7.3–7.35, osmolality 300–310 mOsm/L). Brains were extracted and immediately placed in ice-cold, oxygenated NMDG slicing solution. Coronal slices (350 µm) were cut using a vibrating microtome (VT1000S; Leica Microsystems, Germany), transferred to an incubating chamber containing oxygenated NMDG slicing solution warmed to 32–34°C, and allowed to recover for 15 min before being transferred to an artificial cerebral spinal fluid (aCSF) solution containing (in mM): 130 NaCl, 3 KCl, 1.25 NaH2PO4, 26 NaHCO3, 2 MgCl2, 2 CaCl2, and 10 glucose) oxygenated with 95% O2, 5% CO2 (pH 7.2–7.4, osmolality 290–310 mOsm/L, 32–34°C). After 15 min, slices were moved to room temperature and allowed to recover for ~30 additional min prior to recording. All recordings were performed using an upright microscope (Olympus BX51WI, Center Valley, PA) equipped with differential interference contrast optics and fluorescence imaging (QIACAM fast 1394 monochromatic camera with Q-Capture Pro software, QImaging, Surrey, BC, Canada). (Patch pipettes (3–5 MΩ resistance) contained a Cesium methanesulfonate-based internal recording solution (in mM): 125 Cs-methanesulfonate, 4 NaCl, 1 MgCl2, 5 MgATP, 9 EGTA, 8 HEPES, 1 GTP-Tris, 10 phosphocreatine, and 0.1 leupeptin; pH 7.2 with CsOH, 270–280 (mOsm). Biocytin (0.2%, Sigma-Aldrich, St. Louis, MO) was included in the internal recording solution for subsequent postsynaptic cell visualization and identification. Recordings were obtained using a MultiClamp 700B Amplifier (Molecular Devices, Sunnyvale, CA) and the pCLAMP 10.3 acquisition software.
 
-## Validation of BLA principal neuron optogenetic inhibition
+#### Validation of BLA principal neuron optogenetic inhibition
 
 Whole-cell patch clamp recordings in current-clamp mode were obtained from BLA principal neurons expressing ArchT-eYFP (N = 12 cells, five subjects). Visible eYFP-expressing cell bodies were identified in the BLA for recordings. After breaking through the membrane, recordings were obtained from cells while injecting suprathreshold depolarizing current (1 s). Current injection intensities that resulted in 8–15 action potentials were selected for recordings (100–800 pA). Electrode access resistances were maintained at <30 MΩ. Green light (535 nm, 1 s pulse, 0.25–1 mW; CoolLED Ltd, Andover, UK) was delivered through the epifluorescence illumination pathway using Chroma Technologies filter cubes to activate ArchT and inhibit BLA cell bodies. The number of action potentials recorded in ArchT-expressing cells injected with suprathreshold current were recorded both prior to and after green light illumination.
 
-## Validation of lOFC terminal optogenetic inhibition in the BLA
+#### Validation of lOFC terminal optogenetic inhibition in the BLA
 
 Whole-cell patch-clamp recordings were collected in voltage-clamp mode. Visible eYFP-expressing axons and terminals were identified in the BLA and recordings were obtained from postsynaptic BLA neurons located only in highly fluorescent regions. After breaking through the membrane, recordings were obtained while holding the membrane potential at −70 mV. Electrode access resistances were maintained at <30 MΩ. Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded in the presence of the GABAA receptor antagonist bicuculline (10 µM). Fifteen seconds of baseline recordings of sEPSCs were obtained prior to exposure to green light. Following baseline measurements, recordings of sEPSCs were obtained during continuous exposure to green light (535 nm, 0.5 mW) for 15 s. Spontaneous EPSC events were analyzed offline using the automatic detection protocol within the MiniAnalysis software (Synaptosoft, version 6.0), and then were checked manually blinded to light condition.
 
-## Histology
+### Histology
 
 Following the behavioral experiments, rats were deeply anesthetized with Nembutal and transcardially perfused with phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA). Brains were removed and post-fixed in 4% PFA overnight, placed into 30% sucrose solution, then sectioned into 30–40 μm slices using a cryostat and stored in PBS or cryoprotectant.
 
 eYFP fluorescence was used to confirm ArchT expression in lOFC and BLA cell bodies. mCherry expression was used to confirm hM4D(Gi) in BLA cell bodies. Immunofluorescence was used to confirm expression of ArchT-eYFP in lOFC axons and terminals in the BLA. Floating coronal sections were washed 3 times in 1x PBS for 30 min and then blocked for 1–1.5 hr at room temperature in a solution of 3% normal goat serum and 0.3% Triton X-100 dissolved in PBS. Sections were then washed three times in PBS for 15 min and incubated in blocking solution containing chicken anti-GFP polyclonal antibody (1:1000; Abcam, Cambridge, MA) with gentle agitation at 4°C for 18–22 hr. Sections were next rinsed three times in PBS for 30 min and incubated with goat anti-chicken IgY, Alexa Fluor 488 conjugate (1:500; Abcam) at room temperature for 2 hr. Sections were washed a final three times in PBS for 30 min. Immunofluorescence was also used to confirm expression of hM4Di-mCherry in BLA axons and terminals in the lOFC. The signal for axonal expression of hM4D(Gi)-mCherry in terminals in the lOFC was immunohistochemically amplified following procedures described previously (Lichtenberg et al., 2017). Briefly, floating coronal sections were rinsed in PBS and blocked for 1–2 hr at room temperature in a solution of 10% normal goat serum and 0.5% Triton X-100 dissolved in PBS and then incubated in blocking solution containing rabbit anti-DsRed polyclonal antibody (1:1000; Takara Bio, Mountain View, CA) with gentle agitation at 4°C for 18–22 hr. Sections were next rinsed in blocking solution and incubated with goat anti-rabbit IgG, Alexa Fluor 594 conjugate (1:500; Invitrogen, Waltham, MA) for 2 hr. Slices were mounted on slides and coverslipped with ProLong Gold mounting medium with DAPI. Images were acquired using a Keyence BZ-X710 microscope (Keyence, El Segundo, CA) with a 4x, 10x, and 20x objective (CFI Plan Apo), CCD camera, and BZ-X Analyze software or a Zeiss apotome confocal microscope (Zeiss, Oberkochen, Germany) and Zeiss Zen Blue software (Zeiss). Subjects with off-target viral, fiber, and/or cannula placements were removed from the dataset (Fiber photometry: N = 2; Fiber photometry CSØ control N = 0; BLA ArchT: N = 2; BLA ArchT yoked control: N = 1; Contralateral disconnection, N = 6; Ipsilateral control N = 7).
 
-## Data analysis
+### Data analysis
 
-## Behavioral analysis
+#### Behavioral analysis
 
 Behavioral data were processed with Microsoft Excel (Microsoft, Redmond, WA). Left and/or right lever presses and/or entries into the food-delivery port were collected continuously for each training and test session. Acquisition of the Pavlovian conditional food-port approach response was assessed by computing an elevation ratio of the rate of entries into the food-delivery port (entries/min) during the CS prior to reward delivery (CS-probe) relative to 2 min baseline periods immediately prior to CS onset [(CS probe entry rate)/(CS probe entry rate +preCS entry rate)]. Data were averaged across trials for each CS and then averaged across the two CSs. We also compared the rate of food-port entries between the CS probe and the preCS baseline periods (see Figure 1—figure supplements 1a, Figure 3—figure supplements 2a, Figure 4—figure supplements 2a, Figure 5—figure supplements 2a). Press rates on the last day of instrumental training were averaged across levers and compared between groups to test for any differences in the acquisition of lever press responding during instrumental training. No significant group differences were detected in any of the experiments (see Figure 1—figure supplements 1b, Figure 3—figure supplements 2b, Figure 4—figure supplements 2b, Figure 5—figure supplements 2b). For the PIT test, lever pressing during the 2 min baseline periods immediately prior to the onset of each CS was compared with that during the 2 min CS periods. For both the baseline and CS periods, lever pressing was separated for presses on the lever that, during training, earned the same outcome as the presented cue (i.e. preCS-Same and CS-Same presses) versus those on the other available lever (i.e. preCS-Different and CS-Different presses). To evaluate the influence of CS presentation on lever pressing, we computed an elevation ratio for each lever [(CS-Same presses)/(CS-Same presses + preCS Same presses)] and [(CS-Different presses)/(CS-Different presses + preCS Different presses)]. In all cases, there were no significant differences in baseline presses between levers in the absence of the CSs (Lever: lowest p=0.33, F1,14 = 1.02), and no effect of group on baseline lever pressing (Group: lowest p=0.54, F2,23 = 0.63; Group x Lever lowest p=0.21, F1,14 = 1.71). To evaluate the influence of CS presentation on food-port entries, that is, the conditional goal-approach responses, we also computed an elevation ratio [(CS entries)/(CS entries + preCS entries)]. Data were averaged across trials for each CS and then averaged across the two CSs. We also compared the rate of pressing on each lever and, separately, food-port entries between the CS and preCS baseline periods (see Figure 1—figure supplements 1c–d, Figure 3—figure supplements 2c–d, Figure 4—figure supplements 2c–d, Figure 5—figure supplements 2c–d).
 
-## Fiber photometry data analysis
+#### Fiber photometry data analysis
 
 Data were pre-processed using a custom-written pipeline in MATLAB (MathWorks, Natick, MA). Data from the 415 nm isosbestic control channel were used to correct for motion artifacts and photobleaching. Using least-squares linear regression, the 415 signal was fit to the 470 signal. Change in fluorescence (ΔF/F) at each time point was calculated by subtracting the fitted 415 signal from the 470 signal and normalizing to the fitted 415 data [(470-fitted 415)/(fitted 415)] (See Figure 1—figure supplement 2). The ΔF/F data were then Z-scored [(ΔF/F - mean ΔF/F)/std(ΔF/F)]. Using a custom MATLAB workflow, Z-scored traces were then aligned to CS onset, reward delivery, reward retrieval (first food-port entry after reward delivery), and food-port entries without reward present during the CS probe period (after CS before first reward delivery) during the CS for each trial. Peak magnitude and AUC were calculated on the Z-scored trace for each trial using 3 s pre-event baseline and 3 s post-event windows. Data were averaged across trials and then across CSs. Session data were excluded if no transient calcium fluctuations were detected on the 470 nm channel above the isosbestic channel or if poor linear fit was detected due to excessive motion artifact. To examine the progression in BLA activity across training, we compared data across conditioning sessions 1, 2, 3/4, 5/6, and 7/8. Thus, data from the mid and latter training sessions were averaged across bins of two training sessions. Subjects without reliable data from at least one session per bin were excluded (CS +N = 5; CSØN = 1). We were able to obtain reliable imaging data from all of the eight training sessions from N = 8 of the 11 total final subjects that received CS-reward pairing (see Figure 1—figure supplement 3).
 
-## Ex vivo electrophysiology
+#### Ex vivo electrophysiology
 
 The number of action potentials evoked by suprathreshold current injection was compared before and during exposure to green light to confirm the inhibitory effect of ArchT in BLA principal neurons. To assess the effect of ArchT activation in lOFC→BLA terminals, the frequency of sEPSCs was compared before and during green light exposure.
 
-## Statistical analysis
+#### Statistical analysis
 
 Datasets were analyzed by two-tailed, paired and unpaired Student’s t tests, one-, two-, or three-way repeated-measures analysis of variance (ANOVA), as appropriate (GraphPad Prism, GraphPad, San Diego, CA; SPSS, IBM, Chicago, IL). Post hoc tests were corrected for multiple comparisons using the Bonferroni method. All data were tested for normality prior to analysis with ANOVA and the Greenhouse-Geisser correction was applied to mitigate the influence of unequal variance between conditions. Alpha levels were set at p<0.05.
 
-## Rigor and reproducibility
+### Rigor and reproducibility
 
 Group sizes were estimated a priori based on prior work using male Long Evans rats in this behavioral task (Lichtenberg et al., 2017; Lichtenberg and Wassum, 2017; Malvaez et al., 2015) and to ensure counterbalancing of CS-reward and Lever-reward pairings. Investigators were not blinded to viral group because they were required to administer virus. All behaviors were scored using automated software (MedPC). Each primary experiment included at least one replication cohort and cohorts were balanced by viral group, CS-reward and Lever-reward pairings, hemisphere etc. prior to the start of the experiment.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.43924.001 The regulation of feeding plays a key role in determining the fitness of animals through its impact on nutrition. Elucidating the circuit basis of feeding and related behaviors is an important goal in neuroscience. We recently used a system for closed-loop optogenetic manipulation of neurons contingent on the feeding behavior of Drosophila to dissect the impact of a specific subset of taste neurons on yeast feeding. Here, we describe the development and validation of this system, which we term the optoPAD. We use the optoPAD to induce appetitive and aversive effects on feeding by activating or inhibiting gustatory neurons in closed-loop – effectively creating virtual taste realities. The use of optogenetics allowed us to vary the dynamics and probability of stimulation in single flies and assess the impact on feeding behavior quantitatively and with high throughput. These data demonstrate that the optoPAD is a powerful tool to dissect the circuit basis of feeding behavior, allowing the efficient implementation of sophisticated behavioral paradigms to study the mechanistic basis of animals’ adaptation to dynamic environments.
+The regulation of feeding plays a key role in determining the fitness of animals through its impact on nutrition. Elucidating the circuit basis of feeding and related behaviors is an important goal in neuroscience. We recently used a system for closed-loop optogenetic manipulation of neurons contingent on the feeding behavior of Drosophila to dissect the impact of a specific subset of taste neurons on yeast feeding. Here, we describe the development and validation of this system, which we term the optoPAD. We use the optoPAD to induce appetitive and aversive effects on feeding by activating or inhibiting gustatory neurons in closed-loop – effectively creating virtual taste realities. The use of optogenetics allowed us to vary the dynamics and probability of stimulation in single flies and assess the impact on feeding behavior quantitatively and with high throughput. These data demonstrate that the optoPAD is a powerful tool to dissect the circuit basis of feeding behavior, allowing the efficient implementation of sophisticated behavioral paradigms to study the mechanistic basis of animals’ adaptation to dynamic environments.
 
 ## Introduction
 
@@ -31,13 +31,23 @@ Here, we describe the design and implementation of such a high-throughput system
 
 ## Results
 
-## The optoPAD system
+### The optoPAD system
 
 We set out to develop a system allowing the optogenetic manipulation of circuit activity in Drosophila conditional on specific aspects of its ongoing feeding behavior (Figure 1A). To develop such a device, it is essential to be able to measure specific parameters of feeding behavior in real time. We previously developed the flyPAD system, which reliably measures feeding behavior in high throughput using capacitive proximity sensors from two food sources (Itskov et al., 2014). To allow for optogenetic manipulation of neurons, we designed an LED board housing a high-power multicolor LED (four colors), as well as metal-oxide-semiconductor field-effect transistor (MOSFET) gates and current limiting resistors, that fits on top of the flyPAD arenas (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig1-v1.jpg)
+
+**Figure 1.:** (A) Concept for the use of closed-loop capacitance measurement of feeding with optogenetic manipulation of neurons in behaving flies. The interaction of the fly with the food source triggers the activation of the LED. (B) Overview of the components of the optoPAD, the flyPAD arena and the high-power RGBA LEDs. (C) Algorithm for real-time detection of food interactions. Extracted food interaction bouts (activity bouts) are shaded in gray. (D) Schematic overview of the optoPAD experimental dataflow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Bins are 0.1 s wide and probabilities are plotted for two different genetic background controls feeding on yeast, on an optoPAD channel triggering light activation.
 
 In the original flyPAD system, the relevant aspects of feeding behavior are extracted by offline processing of the capacitance signal after the behavioral experiment. We took advantage of the low complexity of the capacitance signal paired with the real-time data processing capacities of the Bonsai data stream processing language (Lopes et al., 2015) to analyze feeding behavior of flies in real time. Bonsai is a powerful visual programming framework especially designed for the acquisition and online processing of complex data streams such as those generated during behavioral experiments. We focused on using Bonsai to extract the periods in which the fly was actively interacting with food (‘activity bouts’), as we previously showed that the total time of these interactions correlated well with total food intake (Itskov et al., 2014). After a series of simple signal processing steps (Figure 1C), we could obtain the onset time of activity bouts in real time. In order to precisely control the LED illumination, we designed a control breakout board (a standard 32-arena flyPAD system requires three of these boards), each of which uses one microcontroller (Arduino Mega) which operates as an IO device controlling the gates of the MOSFETs. This included a power distribution circuit to distribute power to the 128 channels of the LEDs (32 LEDs x 4 colors) (blueprints available at https://github.com/ribeiro-lab/optoPAD-hardware). The Arduino Mega runs a standard Firmata software, allowing it to function as a digital general-purpose input/output (GPIO) board from within the Bonsai environment. This allowed us to write all the controlling software, including the finite state machine controlling the experiments for all of the 64 channels of the flyPAD, in Bonsai.
 
 The resulting optoPAD system has the following dataflow (Figure 1D): The flyPAD system uses a capacitance-to-digital converter to measure the interaction of the fly with the food. The capacitance information is sent to a computer via the flyPAD mainboard, and the real-time Bonsai algorithm detects when the fly starts to interact with one of the food electrodes. The software sends a signal to one of the digital pins of the microcontroller, which in turn controls the opening of the MOSFET on the LED board, leading to the illumination of a predefined LED color channel and thereby corresponding activation/inactivation of genetically identified neurons (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/43924/elife-43924-video1.mp4.jpg)
 
 Importantly, five parameters of LED activation can be easily controlled using this software: which food source triggers LED activation; which LED color is activated; the delay between the detection of the initiation of an interaction with the food and light onset; the duration the LED remains on during the light stimulation; and the probability with which an onset of food interaction leads to LED illumination. Furthermore, the user can set how many times the light is triggered, can use a script which allows the delivery of the light after an activity bout is terminated, and can choose to deliver the light in an open-loop mode using predefined set intervals.
 
@@ -45,9 +55,21 @@ In order to ensure that the LED can be rapidly activated following the initiatio
 
 To test how well the online activity bout detector works, we compared the performance of the new online algorithm with the previously validated offline algorithm (Itskov et al., 2014). We wrote a MATLAB script that replicates the online Bonsai workflow and classified each sample of a raw capacitance trace as belonging to an activity bout or not and compared this classification to the already validated flyPAD offline detector (Itskov et al., 2014). We then performed an ROC analysis to confirm the accuracy of the online detector. The detection of activity bouts by the online method correctly identified 91.5% of the capacitance trace samples as belonging to an activity bout (8.5% false negatives) and misclassified 1.6% of the samples as activity bouts (false positives). These data show that the online activity bout detector operates within the range of accuracy observed for state-of-the-art offline methods (Itskov et al., 2014).
 
-## Optogenetic gustatory virtual realities
+### Optogenetic gustatory virtual realities
 
 To validate the ability of the optoPAD system to manipulate neuronal activity in closed-loop, we decided to use it to create ‘virtual gustatory realities’ and test their impact on feeding behavior. To be able to better control the stimulation parameters, we used a switching DC power supply (40 A) to regulate the intensity of the LEDs. The luminous flux of the LEDs increased linearly with the forward voltage on the LEDs above 2 V for the red and amber LEDs and 2.5 V for the green and blue LEDs (Figure 2A), allowing us to vary the intensity of stimulation over a significant range. It is important to note that the maximum level of irradiance which can be achieved strongly depends on the wavelength of the LED.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig2-v1.jpg)
+
+**Figure 2.:** (A) Irradiance of all four LEDs increases linearly with increasing voltage (for red and amber above 2 V, for green and blue above 2.5 V). The average value of the three measurements is shown and error bars indicate standard error of mean. (B) Difference in total number of sips on the stimulated (ON) and unstimulated (OFF) food patches of the same arena for 24 hr starved male flies expressing CsChrimson under the control of Gr5a-GAL4, and corresponding genetic controls. Both food sources contained 5 mM sucrose solution in 1% agarose. (C) Difference in total number of sips on the stimulated (ON) and unstimulated (OFF) food patches of the same arena for 3 days yeast-deprived, mated female flies expressing GtACR1 under the control of 57 F03-GAL4, which labels taste peg GRNs, and corresponding genetic control. For genotypes, see Materials and methods and key resources table. Both food sources contained 10% yeast solution in 1% agarose. The numbers below the graphs indicate the number of flies tested in each condition. ***p<0.001, **p<0.01, *p<0.05, ns non-significance. Boxes represent median with upper/lower quartiles; groups compared by Wilcoxon rank-sum test, followed by Bonferroni multiple comparison test when more than two groups were compared.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Both food sources contained 10% yeast solution in 1% agarose. The numbers below the graphs indicate the number of flies tested in each condition. ****p<0.0001. Boxes represent median with upper/lower quartiles; groups compared by Wilcoxon rank-sum test, followed by Bonferroni multiple comparison test for two comparisons.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** All genotypes have been supplemented either with (+) or without (-) 5 ml of 400 mM all-trans retinal for 6 days. Both food sources contained 10% yeast solution in 1% agarose. The numbers below the graphs indicate the number of flies tested in each condition. ***p<0.001, **p<0.01, *p<0.05, ns non-significance. Boxes represent median with upper/lower quartiles; groups compared by Wilcoxon rank-sum test, followed by Bonferroni multiple comparison test when more than two groups were compared.
 
 To test if we can induce appetitive consummatory behaviors using the optoPAD, we used the Gr5a-GAL4 line, which drives expression in sugar-sensing neurons of the labellum (Marella et al., 2006; Thorne et al., 2004). These neurons have been shown to be sufficient to initiate feeding (Zhang et al., 2007). Starved male flies expressing the red-shifted channelrhodopsin CsChrimson (Klapoetke et al., 2014) in Gr5a neurons were given the choice to feed from two 5 mM sucrose sources in an optoPAD arena. One food source in each arena was programmed to trigger the activation of the red LED upon interaction (ON channel) while interactions with the other food source in the same arena never led to light activation (OFF channel). Even very low stimulation intensities (2 V) led to a clear and strong increase of feeding from the food source paired with optogenetic stimulation compared to the unstimulated source (Figure 2B). Interestingly, increasing the stimulation intensity did not lead to an increase in appetitiveness, indicating that a maximal behavioral impact can be achieved at low irradiances, thereby minimizing possible side effects caused by light.
 
@@ -55,21 +77,33 @@ Mated female flies deprived of protein for 3 days develop a robust appetite for 
 
 To show that the optoPAD can also be used to manipulate sparse sets of neurons located deeply within the brain, we chose to activate giant fiber neurons in closed-loop upon initiation of feeding. The rationale of this proof-of-concept experiment was to use a sparse line labeling few (2) neurons deep in the brain of the fly, which has a readily observable phenotype (jumping), and which should have a clear effect on feeding behavior (termination of feeding). Indeed, upon the initiation of feeding and concomitant light activation, flies expressing CsChrimson in escape neurons (Namiki et al., 2018) jumped, leading to the termination of feeding (Videos 2 and 3). This led to a drastic decrease in feeding from the food source triggering light when compared with the control food source (Figure 2—figure supplement 2). These results show that the optoPAD can be used to manipulate very sparse, centrally located neurons, and monitor the impact of the manipulation on feeding behavior.
 
+![Video 2.](https://cdn.elifesciences.org/articles/43924/elife-43924-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/43924/elife-43924-video3.mp4.jpg)
+
 The mechanistic dissection of specific neurons’ contribution to a behavior often requires the observation of opposite behavioral effects upon increases and decreases in their activity. Gustatory neurons are an ideal test case for this as they elicit both appetitive (e.g. sweet neurons) as well as aversive behavioral responses (e.g. bitter neurons). We tested the ability of the optoPAD system to both induce and suppress appetitive feeding responses using the Gr64f-GAL4 line, which labels appetitive sugar-sensing neurons previously shown to be important to sustain carbohydrate feeding (Jiao et al., 2008). As observed for Gr5a neurons, closed-loop activation of Gr64f neurons using CsChrimson led to increased feeding (Figure 3A, left panel). This effect was absent in control genotypes (Figure 3A, right panel). Conversely, hyperpolarization of Gr64f neurons using GtACR1 led to a loss of appetitive behavior and hence a decrease in feeding from the sugar source paired with green light activation (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig3-v1.jpg)
 
-**Figure 3.:** Drosophila using the optoPAD.(A–D) Total number of sips from the unstimulated (LED OFF) and the light-stimulated (LED ON) food patches of the same arena by flies expressing CsChrimson (A and C) or GtACR1 (B and D), under the control of Gr64f-GAL4 (A and B) or Gr66a-GAL4 (C and D) (left side of the panels). Difference in total number of sips on the stimulated (ON) and unstimulated (OFF) food patches for flies expressing CsChrimson or GtACR1 (A and C), under the control of Gr64f-GAL4 (A and B) or Gr66a-GAL4 (C and D), and corresponding genetic controls (right side of the panels). All flies were 24 hr starved male flies (for genotypes, see Materials and methods and key resources table). The food substrate is indicated in each panel. The numbers below the graphs indicate the number of flies tested in each condition. ***p<0.001, **p<0.01, *p<0.05. Boxes represent median with upper/lower quartiles; groups compared by Kruskal-Wallis test, followed by Dunn’s multiple comparison test.10.7554/eLife.43924.017Figure 3—source data 1.Figure 3A.10.7554/eLife.43924.018Figure 3—source data 2.Figure 3B.10.7554/eLife.43924.019Figure 3—source data 3.Figure 3C.10.7554/eLife.43924.020Figure 3—source data 4.Figure 3D.
+**Figure 3.:** (A–D) Total number of sips from the unstimulated (LED OFF) and the light-stimulated (LED ON) food patches of the same arena by flies expressing CsChrimson (A and C) or GtACR1 (B and D), under the control of Gr64f-GAL4 (A and B) or Gr66a-GAL4 (C and D) (left side of the panels). Difference in total number of sips on the stimulated (ON) and unstimulated (OFF) food patches for flies expressing CsChrimson or GtACR1 (A and C), under the control of Gr64f-GAL4 (A and B) or Gr66a-GAL4 (C and D), and corresponding genetic controls (right side of the panels). All flies were 24 hr starved male flies (for genotypes, see Materials and methods and key resources table). The food substrate is indicated in each panel. The numbers below the graphs indicate the number of flies tested in each condition. ***p<0.001, **p<0.01, *p<0.05. Boxes represent median with upper/lower quartiles; groups compared by Kruskal-Wallis test, followed by Dunn’s multiple comparison test.
 
 To characterize the effect of closed-loop optogenetic manipulation of aversive neurons on feeding, we used Gr66a-GAL4, which labels bitter-sensing neurons (Marella et al., 2006; Thorne et al., 2004). In contrast to the depolarization of sweet gustatory neurons, flies expressing CsChrimson in bitter gustatory neurons immediately terminated feeding from an appetitive food source upon light activation (Figure 3C). This strong effect clearly mimics the potent aversive effect bitter substances have on feeding behavior. To test if we could suppress the aversive effect of bitter food using the optoPAD setup, we expressed GtACR1 in Gr66a neurons and observed the effect of green light activation on feeding from a quinine-laced sucrose solution. Indeed, flies exhibited higher feeding from the bitter food source paired with light stimulation than from the unpaired food source (Figure 3D). These experiments demonstrate the ability of the optoPAD to induce and suppress both appetitive and aversive effects on feeding behavior using either optogenetic activation or inhibition of different neuronal populations.
 
-## Creating dynamic gustatory virtual realities
+### Creating dynamic gustatory virtual realities
 
 One of the unique features of virtual realities is the ability to generate stimuli that can change dynamically in a way that might be impossible with natural stimuli. The high temporal precision of optogenetics makes it ideal to both tightly link changes in activity of specific neurons to the behavior of the animal, as well as to change this contingency in a flexible while precise manner. We therefore implemented the ability to arbitrarily predefine the conditions upon which the behavior of the animal triggers light activation. As a proof of concept, we first set out to determine how flies would respond to dynamically changing the identity of the food source triggering gustatory stimulation. When flies expressing CsChrimson in bitter neurons (using Gr66a-GAL4) are given the choice between two identical appetitive food sources, they avoid feeding from the one paired with light activation (Figure 3C). Bonsai allows us to change the variables controlling this stimulation in a dynamic fashion. We programmed the system to switch the identity of the food source paired with light activation every 5 min (Figure 4A). From the beginning of the assay, the behavior of the flies appears to follow the stimulation pattern, with flies feeding less from the food source paired with light activation (Figure 4B). Only after 10 min of exploration, however, did these preferences reach statistical significance. As clearly visible in the raster plots of the feeding behavior, some flies always interact with both channels, but in the two first blocks of the experiment (0–5 min and 5–10 min) overall few flies interact with the food (Figure 4—figure supplement 1). This likely reduces the statistical power to detect a possible preference and might be due to an ‘acclimatization’ period from the moment the animals are introduced into the chambers (Corrales-Carvajal et al., 2016).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig4-v1.jpg)
+
+**Figure 4.:** In all experiments, 5–7 days old female Gr66a-GAL4 > CsChrimson flies were used. (A) Schematic overview of the dynamic virtual taste reality experiment: every five minutes the contingency of the experiment is reversed (in each experimental block the fly’s interaction with a different channel triggered light stimulation). (B) Number of sips from channel 1 (upper half of the plot) and channel 2 (lower half of the plot) across time in the changing virtual taste reality setting described in A. Columns and lines represent mean and the standard error of the mean, respectively. The trials leading to LED activation are shaded in red. (C) Onset of light stimulation (red box) can be freely set to occur at different times after the initiation of an interaction with food (delay of 1.5, 3 and 6 s). The lower part of the diagram represents a representative capacitance trace with the onset of food contact marked with an arrow. (D) Duration of activity bouts in flies exposed to light after different delays relative to the initiation of food interactions and corresponding controls (experimental design described in C). Plotted are the duration of activity bouts for the stimulated flies (light) and for the same number of trials that were longer than 1.5, 3 and 6 s (from left to right) performed by the ‘no light’ control flies. (E) Schematic of the experimental design in which light activation was set to happen in a probabilistic manner. (F) Duration of activity bouts of the catch trials. Plotted are the duration of activity bouts for the stimulated flies (light) and for a selection of 10% of all the trials that were longer than 1.5, 3 and 6 s (from left to right) performed by the ‘no light’ control flies. (G) Cumulative feeding for the four different groups of the experiment described in (E). Line represents the mean and the shading the standard error of the mean. Dotted line indicates the 1100 sips threshold used to calibrate the data for the internal state of the animal. (H) Duration of activity bouts of the catch-trials for sip-calibrated flies (trials performed until the flies had reached a total of 1100 sips). Plotted are the duration of activity bouts for the stimulated flies (light) and for a selection of 10% of all the trials that were longer than 1.5, 3 and 6 s (from left to right) performed by the ‘no light’ control flies. For genotypes, see Materials and methods and key resources table. ***p<0.001, **p<0.01, *p<0.05, ns non-significance. The numbers below the graphs in D, F and H indicate the number of flies tested in each condition. In D, F, and H, boxes represent median with upper/lower quartiles. In D, F and H, groups were compared by Kruskal-Wallis test, followed by Dunn’s multiple comparison test. In B, the total number of sips for all bins in each channel during each period of 5 min was compared by Wilcoxon rank-sum test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43924/elife-43924-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Raster plot of the data shown in Figure 4B. Every line corresponds to a single fly undergoing the dynamic experimental protocol. Gray marks activity bouts with the food source not triggering light stimulation and red marks activity bouts triggering light activation and hence likely activation of bitter neurons. Dashed lines symbolize the time point at which the channel triggering light activation was changed. (B) Summed time flies are interacting with the food in a 20 s wide bin for non-light triggering channel (gray) and light triggering channel (red). Data in the bin are normalized by the total number of flies in the assay.
+
 Next, we tested if we can alter the length of the interaction of the fly with food by increasing the delay between the initiation of food interactions and LED activation (Figure 4C). By initiating the optogenetic activation of Gr66a neurons 1.5, 3 or 6 s after the fly starts interacting with the food, we could make the flies terminate their interaction with food after precisely 2.66, 4.25 or 7.34 s, respectively (Figure 4D). This was a dramatic shortening of their activity bout, as control flies displayed reproducibly long bouts with a median of around 15 s. These experiments show that the optoPAD system can be used to dynamically change the contingency between the behavior of the animal and the optogenetic stimulation.
 
-## Creating probabilistic gustatory virtual realities
+### Creating probabilistic gustatory virtual realities
 
 While the optogenetic experiments described up to this point have been deterministic in nature, behavioral experiments in which the behavior of the animal is linked to a probabilistic delivery of a reward or punishment have been very powerful in probing the neuronal substrates of complex learned behaviors (Fiorillo et al., 2003). Such designs can be either used to allow the animal to learn specific statistical properties of the environment (Lottem et al., 2018), or unstimulated trials (catch trials) can be used as controls within a task (Lak et al., 2014). We tested the ability of the optoPAD system to implement such probabilistic experimental designs. We used Bonsai to set the probability of red light activation upon food interactions to 90% for both food sources (Figure 4E). Therefore, 10% of food interactions (trials) did not result in LED activation. Importantly, these ‘catch trials’ were randomly selected and therefore could not be predicted by the fly. Protein-deprived female flies expressing CsChrimson in bitter taste neurons were subjected to such a probabilistic experimental design for an hour. Similarly to the experiments described in Figure 4C and D, for each fly red light was either triggered after 1.5, 3, or 6 s. As expected from Figure 4D, in stimulation trials, the length of activity bouts was shortened to different extents under the three different delays. Intriguingly however, in the catch trials, the food interaction bouts were much longer than in control experiments where no light was triggered throughout the experiment (Figure 4F). This effect was independent of the length of the interval between food contact and light onset.
 
@@ -85,13 +119,121 @@ Given its flexible design, the optoPAD system not only allows for a fixed closed
 
 ## Materials and methods
 
-## Fly stocks and rearing conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr5a-GAL4</td>
+      <td>other</td>
+      <td></td>
+      <td>Obtained from Kristin Scott lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pUAS-Chrimson-mVenus</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 55136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>57 F03-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 46386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pBDP-GAL4Uw</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 68384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>W[1118]</td>
+      <td>other</td>
+      <td></td>
+      <td>Obtained from Barry Dickson lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GtACR1</td>
+      <td>doi: 10.1038/nmeth.4148</td>
+      <td></td>
+      <td>Obtained from Adam Claridge-Chang lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64f-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 57668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>attP2</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 8622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr66a-GAL4</td>
+      <td>other</td>
+      <td></td>
+      <td>Obtained from Bassem Hassan lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>67E03-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC ID: 39441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>SS02299-GAL4</td>
+      <td>Janelia Research Campus; doi: 10.7554/elife.34272</td>
+      <td>Robot ID: 3018165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Custom-written scripts in MATLAB R2013b</td>
+      <td>MathWorks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bonsai 2.4</td>
+      <td>https://bonsai-rx.org/, doi: 10.3389/fninf.2015.00007</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and rearing conditions
 
 Flies were reared at 25°C, 70% relative humidity (RH) in the dark to prevent non-specific activation of neurons. Flies were reared at standard density and were matched for age and husbandry conditions. The yeast-based fly medium (YBM) contained 80 g cane molasses, 22 g sugar beet syrup, 8 g agar, 80 g corn flour, 10 g soya flour, 18 g yeast extract, 8 ml propionic acid, and 12 ml nipagin (15% in ethanol), per liter. All data are from 24 hr wet-starved male flies unless otherwise stated. After hatching flies were aged for 5–7 days, then groups of 12–15 males were transferred to new vials and approximately 10 wild-type female flies were added. They were kept on YBM medium containing 0.4 mM all-trans-retinal (Sigma-Aldrich, #R2500, made using a stock solution of 100 mM all-trans-retinal dissolved in ethanol) for 2 days. To induce starvation, the flies were then transferred to vials containing tissue paper soaked with 5 ml Milli-Q water containing 0.4 mM all-trans-retinal 24 hr before the experiment. The starvation was chosen to increase carbohydrate appetite and to ensure robust feeding on sucrose.
 
 For the experiments described in Figure 1—figure supplement 1, Figure 2B, Figure 2—figure supplement 1, Figure 4 and Figure 4—figure supplement 1 mated female flies were deprived of yeast for 3 days on a tissue soaked with 6.5 ml of 100 mM sucrose, and 0.4 mM all-trans-retinal.
 
-## Hardware design and real-time data analysis
+### Hardware design and real-time data analysis
 
 The optoPAD system is a new generation of the flyPAD, that was previously described in Itskov et al. (2014). Additional hardware to the flyPAD was designed to fit on top of each of the 32 behavioral arenas and allow independent activation of 32 high-power (10 W) RGBA LEDs (ref. no. LZ4-00MA10; LED Engin, San Jose, CA, USA). Printed circuit boards were designed using Eagle CAD software (Cadsoft - version 6.2.0). The designs were then sent to Eurocircuits (http://www.eurocircuits.com/) for production.
 
@@ -101,7 +243,7 @@ Three groups of twelve LED boards (3 × 12 = 36, four were not used) receive p
 
 All PCB designs can be found on the following GitHub repository: https://github.com/ribeiro-lab/optoPAD-hardware (Goldschmidt, 2019b; copy archived at https://github.com/elifesciences-publications/optoPAD-hardware).
 
-## Real-time detection of food interactions and LED activation
+### Real-time detection of food interactions and LED activation
 
 The detection of food interactions in real time as well as the closed-loop control of LED illumination was performed using a custom-written Bonsai workflow (Lopes et al., 2015). This visual programming framework allows for real-time analysis of the flyPAD capacitance data sampled at 100 Hz and is capable of online communication with actuators for closed-loop experiments.
 
@@ -115,11 +257,11 @@ For dynamic virtual taste environment experiments (Figure 4A and B), in which th
 
 Software can be found on the following GitHub repository: https://github.com/ribeiro-lab/optoPAD-software (Goldschmidt, 2019a; copy archived at https://github.com/elifesciences-publications/optoPAD-software).
 
-## Irradiance measurements
+### Irradiance measurements
 
 We performed the irradiance measurements shown in Figure 2A using an optical power meter (Thorlabs PM100D) and a standard photodiode power sensor (Thorlabs S121C). In order to accurately measure how much irradiance reaches the fly upon LED illumination, we placed the sensor at the same distance from the LED as the arena. We varied the voltage applied to the LED between 1.5 and 5 V in 0.5 V steps, and measured the peak value of power on the optical power meter upon LED illumination. Measurements were started at 1.5 V as no measurable optical power was detected below this voltage. We carried out each measurement three times. The irradiance was computed by dividing the optical power measurements by the effective sensor area (14.923 mm2).
 
-## Behavioral experiments
+### Behavioral experiments
 
 Behavioral experiments were performed at 25°C, 70% RH. We used flies expressing either GtACR1 (Mohammad et al., 2017) or CsChrimson (Klapoetke et al., 2014) in subsets of gustatory neurons. The genotypes of the lines used in the manuscript are listed in the key resources table. optoPAD assays were performed following a protocol previously described (Itskov et al., 2014). Briefly, both wells of the optoPAD were filled with solutions containing different concentrations of sucrose (Figures 2B and 3A: 5 mM; Figure 3B: 20 mM; Figure 3C: 100 mM; Figure 3D: 50 mM +10 mM quinine) or 10% yeast solution (Figures 2C and 4). All solutions were in 1% agarose. Single flies were transferred to optoPAD arenas by mouth aspiration and allowed to feed for 1 hr in a light shielded box.
 
@@ -131,6 +273,6 @@ For the dynamic virtual taste environment experiment (Figure 4A and B), red LED 
 
 For the experiments testing the flies’ behavioral response to activation of bitter-sensing neurons following a delay in relation to the initiation of the activity bout (Figure 4C–H), the red LED was set to occur 1.5, 3 or 6 s after an activity bout was detected in 90% of the trials on both food sources. Light stimulation was sustained for 2 s. A new trial was initiated when a new interaction with food was detected. The 10% of trials with no LED activation were terminated at the end of the respective activity bout.
 
-## Statistics
+### Statistics
 
 Results of optoPAD experiments were compared using the Kruskal-Wallis test, followed by Dunn’s multiple comparison test when more than two groups were compared or Wilcoxon rank-sum test, followed by Bonferroni correction when multiple comparisons were made. All tests were two-tailed.

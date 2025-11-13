@@ -59,6 +59,201 @@ Fitting generalised estimating equations (GEEs) with the number of adults (group
 
 **Figure 4.:** In a given season, a group of intermediate size (green) ranged in a wider area than a larger group (blue) and explored different areas on consecutive days, while the two groups overlapped at the same areas on the same days. Neither of these groups had chicks. The dashed lines represent the 95% AKDE for Season D for each focal group. The transparent and non-transparent tracks are from 2 consecutive days. Crosses represent the night roosts for these 2 consecutive days. Groups are coloured as in Figures 1 and 3.
 
+**Table 1.**
+ Summary of the GEE results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Response variable</th>
+      <th>Model ID</th>
+      <th>Independent variables</th>
+      <th>Estimate</th>
+      <th>Standard error</th>
+      <th>﻿Wald</th>
+      <th>P</th>
+      <th>R2</th>
+      <th>QIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>Home range</td>
+      <td>m18</td>
+      <td>Intercept</td>
+      <td>−1.37</td>
+      <td>1.12</td>
+      <td>1.50</td>
+      <td>0.221</td>
+      <td rowspan="4">0.187</td>
+      <td rowspan="4">60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults</td>
+      <td>0.224</td>
+      <td>0.08</td>
+      <td>7.86</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults2</td>
+      <td>−0.003</td>
+      <td>0.001</td>
+      <td>8.42</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults:Number of Chicks</td>
+      <td>−0.006</td>
+      <td>0.002</td>
+      <td>7.91</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults2:Number of Chicks</td>
+      <td>1.225 × 10−4</td>
+      <td>4.93 × 10−5</td>
+      <td>6.16</td>
+      <td>0.013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Average temporal overlap in space use</td>
+      <td>m6</td>
+      <td>Intercept</td>
+      <td>1.025</td>
+      <td>0.10</td>
+      <td>101.31</td>
+      <td>&lt;0.001</td>
+      <td rowspan="3">0.098</td>
+      <td rowspan="3">3.58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults</td>
+      <td>−0.013</td>
+      <td>0.01</td>
+      <td>4.64</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults2</td>
+      <td>1.744 × 10−4</td>
+      <td>7.577 × 10−5</td>
+      <td>5.30</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Average daily distance travelled</td>
+      <td>m11</td>
+      <td>Intercept</td>
+      <td>6.068</td>
+      <td>0.68</td>
+      <td>79.97</td>
+      <td>&lt;0.001</td>
+      <td rowspan="2">0.247</td>
+      <td rowspan="2">116</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults</td>
+      <td>0.067</td>
+      <td>0.02</td>
+      <td>16.51</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Speed while Travelling (m/s)</td>
+      <td>m14</td>
+      <td>Intercept</td>
+      <td>0.143</td>
+      <td>0.03</td>
+      <td>21.70</td>
+      <td>&lt;0.001</td>
+      <td rowspan="3">0.191</td>
+      <td rowspan="3">3.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults</td>
+      <td>0.002</td>
+      <td>2 × 10−3</td>
+      <td>1.43</td>
+      <td>0.232</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults2</td>
+      <td>1.602 × 10−5</td>
+      <td>2.73 × 10−5</td>
+      <td>0.35</td>
+      <td>0.556</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>Number of chicks</td>
+      <td>m73</td>
+      <td>Intercept</td>
+      <td>−6.491</td>
+      <td>7.04</td>
+      <td>0.85</td>
+      <td>0.357</td>
+      <td rowspan="3">0.123</td>
+      <td rowspan="3">1295</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults</td>
+      <td>1.047</td>
+      <td>0.49</td>
+      <td>4.65</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Number of Adults2</td>
+      <td>−0.016</td>
+      <td>0.01</td>
+      <td>4.76</td>
+      <td>0.029</td>
+    </tr>
+  </tbody>
+</table>
+
 The number of chicks in the group was also significantly predicted by group size and its quadratic term (Table 1E, Figure 3D, see also Supplementary file 1F for all model fits). We found that intermediate-sized groups had more chicks, with the peak in fitness (group size = 33) closely matching the peak in home-range size (group size = 36) and average daily overlap (group size = 37).
 
 Number of adults (group size) and its quadratic term significantly predicted (A) home-range size and (B) average temporal overlap in space use. The presence of chicks modulated the relationship between group size and home-range size, reducing the overall contribution of the number of adults to home-range size (the negative interaction with number of adults) and reducing the quadratic effect (the positive interaction with number of adults squared, which offsets the negative quadratic coefficient). (C) The average daily distance travelled increased with number of adults (see Figure 3C). (D) Speed while travelling was not significantly impacted by group size or its quadratic term. (E) The number of chicks per group was significantly predicted by group size and its quadratic term (see Figure 3D). Parameter estimates, significance, and R2 were generated using the most parsimonious fitted GEEs based on QIC (see Materials and methods). All models tested are summarized in the Supplementary file 1B to 1F.
@@ -87,15 +282,15 @@ We have shown that using synchronous and high-resolution GPS tracking of multipl
 
 ## Materials and methods
 
-## Study site and study species
+### Study site and study species
 
 We studied a population of vulturine guineafowl that resides in an area of approximately 500 ha in the southern part of the Mpala Research Conservancy (MRC) in Laikipia, Kenya. Vulturine guineafowl are large, predominantly terrestrial, and highly gregarious birds. They primarily forage on the ground, feeding on small grass root buds, seeds, fresh grass and small invertebrates, in other words widely dispersed food sources that have been predicted to limit within- and between-group contest competition (Dammhahn and Kappeler, 2009). Based on 3 years of observations of colour-marked individuals, we found that they live in social groups, which range in size from 13 to 65 adults, have stable membership across years and remain completely cohesive (with individuals rarely out of sight of other group members) during non-breeding seasons (typically January to March and July to October) (Papageorgiou et al., 2019). Within a local area, groups form a multilevel society, which includes groups roosting communally (with roosts containing several hundred birds) and groups regularly encountering other groups during the day (at which times between-groups agonistic interactions are rarely observed) (Papageorgiou et al., 2019). Intergroup encounters and foraging are most common on glades (Papageorgiou et al., 2019), which are small deforested areas that were previously used as overnight shelters for cattle and are therefore are rich in nutrients (Young et al., 1995). All vulturine guineafowl groups have access to glades as they are numerous in our study area. On glades, vulturine guineafowl are prone to predation by raptors, such as martial eagles (Naude et al., 2019), while moving through dense vegetation makes them prone to ambush by carnivorous mammals, such as jackals or leopards.
 
-## Data collection
+### Data collection
 
 We trapped nearly all the adult members from each of the groups in our study area using large walk-in traps. All trapped individuals were kept inside covered cages (1 m*50 cm*50 cm cage with 2 cm plastic mesh covered by a canvas) to minimize stress and allow birds to remain standing while awaiting processing. Birds were removed one by one, measured, and ringed with an individually numbered National Museums of Kenya stainless steel ring (fitted on the tarsus of the right leg) and a unique combination of four plastic colour bands fitted on each leg, on the tibiotarsus, for field identification. For more details on trapping and marking processes, see Papageorgiou et al., 2019. In each group, we fitted high-resolution solar-powered GPS tags (15 g Bird Solar, e-obs Digital Telemetry, Grünwald, Germany) to between one and five individuals. The devices were elevated using neoprene pads to prevent feathers from covering the tag’s solar panel, and were attached to the body using a backpack harness design (Teflon ribbon), which included a cotton thread safety release mechanism. GPS tags stayed on the birds from 6 months to 2 years, before the cotton breaks. Groups were trapped once per year to mark new members and check the condition of the birds which carry GPS tags. Since the start of the study in 2016, no bird has ever been found with problems due to the GPS tags. Each tag (tag, pads, ribbons, crimps) weighed approximately 20.5 g, far less than the recommended 3% of the birds’ body weight (Kenward, 2001). Each device was programmed to record one data point (date, time, coordinates) every second when the battery had a high charge (approximately every 2nd to 3rd day, for up to 8 hr continuously). When the battery was at the next lower threshold, we set tags to record one point per second for the first 10 s of every 5th minute. If battery charge was very low (this setting was rarely used during our study period), tags were set to record one point every 15 min. Data were remotely downloaded every 2 or 3 days using a BaseStation II (e-obs Digital Telemetry, Grünwald, Germany). Field-testing suggested that that the relative spacing of tags was accurate to within 1 m, 95% of the time tracked. We uploaded all of our data to the Movebank repository (Wikelski and Kays, 2018), see https://www.movebank.org/cms/webapp?gwt_fragment=page=studies,path=study475851705 for further details.
 
-## Study seasons
+### Study seasons
 
 We selected seasons with intermediate rainfall and greenness, as described in Papageorgiou et al., 2019. Vulturine guineafowl groups temporarily split during the breeding (wet) season as breeding pairs form, subadults disperse from their natal groups and females lay and incubate their eggs (Papageorgiou et al., 2019). It is therefore challenging to quantify membership accurately during the breeding season. Breeding seasons can occur twice a year (during April or May and during October or November).
 
@@ -103,15 +298,15 @@ We also excluded periods of drought, as these cause groups to regularly travel t
 
 Given that our entire study population inhabits a small area, approximately 500 ha, and that all groups can easily access all parts of our study area, we assume that groups’ relative ranging behaviour was not restricted by the environment during these intermediate seasons. Data for this study were collected from May 2017 to February 2020, and the specific time periods that fulfilled the criteria listed above were categorised as Season A (30.5.2017 to 1.8.2017), Season B (15.12.2017 to 15.2.2018), Season C (1.8.2018 to 29.9.2018), Season D (10.6.2019 to 9.8.2019), and Season E (14.1.2020 to 16.3.2020).
 
-## Census data
+### Census data
 
 Census data was collected daily from a vehicle driving along the roads in our study area. Every time a group was encountered, the identities of the marked birds were recorded, and a total number of birds present was counted (including unmarked birds). Each observation of a ‘group’ is defined as being a single or a multiple group, depending on whether the group moves away cohesively or whether individuals move away in different directions. Counts are split into the number of adults and the number of chicks, with chicks being easily distinguishable until ~ 9 months of age.
 
-## Study group selection
+### Study group selection
 
 Within each season, we selected groups containing one or more GPS tagged individuals for which we had precise group-size counts where observers could clearly see and count all the group members being present (i.e. groups were counted more than once by more than one observer, the group size was found consistent across counts). We included data on 21 different observational datasets of groups, with some groups replicated in more than one of the seasons (Supplementary file 1A, Figure 1). For seasons in which a group had chicks, we calculated the median number of chicks per group, across all observations, in each study season.
 
-## Movement analysis
+### Movement analysis
 
 We used the GPS data from each group in each season to quantify movement behaviour and resulting home-range characteristics. In groups containing more than one GPS-tagged individual, we randomly selected one to represent that group’s movement, given that groups move very cohesively (typically group members are within 29 m of each other 95% of the time tracked; Papageorgiou et al., 2019). We calculated (1) the core home-range size (50% auto-correlated kernel density estimate), (2) average temporal overlap in space use, (3) average daily distance travelled. We also explored (4) speed while moving. We used the built-in features from the Movebank data repository to remove the very rare outliers in our dataset that were falling outside Kenya. For (1 , 2) and (3) we used data points collected on the tenth second of every fifth minute, sub-setting this from high-resolution (1 Hz) data and from data when the tag was set to collect 10 points every 5th minute. This approach allowed us to ensure that the data points from all GPS-tagged birds were precisely synchronised in time.
 
@@ -123,14 +318,14 @@ For average daily distance travelled (3), we used the 5-min data from above (one
 
 To estimate the mean speed ‘on the go’ (4) for each individual in each season we used only a subset of the data representing the times when the GPS tags were collecting one point per second (1 Hz). From these data, we created a histogram of the log of the movement speeds (distance travelled between consecutive points), revealing that speeds were multimodally distributed for each individual. We found that the minima between the second and the third mode corresponded to −3.5 (or 0.03 ms−1) and classified speeds exceeding this value as ‘moving’ and speeds slower than this value as ‘stationary’ (Bender et al., 2011; Wilson et al., 2015). We then used the data classified as ‘moving’ to calculate the mean of the distance travelled in consecutive seconds of the 1 Hz data.
 
-## Statistical analysis
+### Statistical analysis
 
 We fitted GEEs using the R package ‘geepack’ to test whether group size and number of chicks predicted home-range size, average temporal overlap in space use, average daily distance travelled and speed ‘on the go’. Our primary predictor variable was the number of adults in the group. Because chicks could modulate the relationship between the number of adults (our measure of group size) and movement response variables, we also allowed models to include a term for the number of chicks. Because we expected a non-linear relationship between group size and movement parameters, we also allowed models to include the number of adults squared (the quadratic term). Further, because we did not know how chicks could modulate group movement, we allowed the number of chicks and the number of chicks squared to be added in interactions with the number of adult and the number of adults squared. We created all combinations of response variables and interactions (only between terms containing adults and chicks), but ensuring that models contained at least the number of adults as a predictor, and always included the number of chicks when the number of chicks squared was included. We used QIC to select the most parsimonious models (lowest QIC) (Hocking, 2014) and we also calculated the R2 of each GEE to estimate their goodness of fit (Zheng, 2000). For all models, we fitted group ID as a repeated measure to account for multiple measures of the same group across seasons. All calculations and statistical tests were conducted in R version 3.5.1 (R Development Core Team, 2018) with the significance threshold set at p≤0.05.
 
-## Group size and fitness
+### Group size and fitness
 
 We investigated the relationship between group size and reproductive success by fitting a GEE containing group size and it’s quadratic term as predictors of the median number of chicks in the group in a given season. We limited this analysis to seasons during which there were chicks in our study population. In Seasons A and D, the study population had no chicks since they had not bred for more than 10 months. During the rest of the three study seasons (Seasons B, C and E), the chicks where between 3 and 5 months old, and each season represented a different cohort of chicks.
 
-## Data accessibility
+### Data accessibility
 
 The code to run the ctmms and conduct the statistics is available on https://github.com/DanPapageorgiou/Group_size; Papageorgiou, 2020; copy archived at swh:1:dir:fcd6639f112b1d96bfe8d122f96a2c0ed2a1673b.All data used in this study are stored on Movebank under the study name Avulturinum_Farine: https://www.movebank.org/cms/webapp?gwt_fragment=page=studies,path=study475851705.

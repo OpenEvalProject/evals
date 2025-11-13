@@ -80,7 +80,7 @@
 
 ## Abstract
 
-10.7554/eLife.50989.001 Baboons, members of the genus Papio, comprise six closely related species distributed throughout sub-Saharan Africa and southwest Arabia. The species exhibit more ecological flexibility and a wider range of social systems than many other primates. This article summarizes our current knowledge of the natural history of baboons and highlights directions for future research. We suggest that baboons can serve as a valuable model for complex evolutionary processes, such as speciation and hybridization. The evolution of baboons has been heavily shaped by climatic changes and population expansion and fragmentation in the African savanna environment, similar to the processes that acted during human evolution. With accumulating long-term data, and new data from previously understudied species, baboons are ideally suited for investigating the links between sociality, health, longevity and reproductive success. To achieve these aims, we propose a closer integration of studies at the proximate level, including functional genomics, with behavioral and ecological studies.
+Baboons, members of the genus Papio, comprise six closely related species distributed throughout sub-Saharan Africa and southwest Arabia. The species exhibit more ecological flexibility and a wider range of social systems than many other primates. This article summarizes our current knowledge of the natural history of baboons and highlights directions for future research. We suggest that baboons can serve as a valuable model for complex evolutionary processes, such as speciation and hybridization. The evolution of baboons has been heavily shaped by climatic changes and population expansion and fragmentation in the African savanna environment, similar to the processes that acted during human evolution. With accumulating long-term data, and new data from previously understudied species, baboons are ideally suited for investigating the links between sociality, health, longevity and reproductive success. To achieve these aims, we propose a closer integration of studies at the proximate level, including functional genomics, with behavioral and ecological studies.
 
 ## Introduction
 
@@ -96,7 +96,7 @@ Presently, six species are recognized: the chacma baboon (Papio ursinus), which 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50989/elife-50989-fig1-v1.jpg)
 
-**Figure 1.:** Papio species.Species distributions are modified from Zinner et al. (2013). Male baboon drawings by Stephen Nash. Reprinted with permission from Fischer et al. (2017).
+**Figure 1.:** Species distributions are modified from Zinner et al. (2013). Male baboon drawings by Stephen Nash. Reprinted with permission from Fischer et al. (2017).
 
 While the systematic grouping into taxa within the genus Papio is well accepted on both phenotypic and genetic evidence, the taxonomic ranking is disputed. According to the biological species concept (Mayr, 1963), all taxa would be considered one polytypic species (Papio hamadryas) because where they meet in the wild they interbreed freely, producing viable and fertile hybrid offspring. Given that the different taxa vary substantially in appearance, behavior, and the characteristics of their society, we follow the phylogenetic species concept (Cracraft, 1983), and refer to the different taxa as "species".
 

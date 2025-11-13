@@ -19,14 +19,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Department of Cell and Developmental Biology, University of Michigan Ann Arbor United States
-3. https://ror.org/00jmfr291 Department of Surgery, University of Michigan Ann Arbor United States
-4. https://ror.org/04gyf1771 Department of Molecular Biology and Biochemistry, University of California, Irvine Irvine United States
-5. https://ror.org/00jmfr291 Department of Pathology, University of Michigan Ann Arbor United States
-6. https://ror.org/00jmfr291 Department of Computational Medicine and Bioinformatics, University of Michigan Ann Arbor United States
-7. https://ror.org/00jmfr291 Rogel Cancer Center, University of Michigan Ann Arbor United States
-8. https://ror.org/00jmfr291 Department of Internal Medicine, Division of Gastroenterology and Hepatology, University of Michigan Ann Arbor United States
+1. Department of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Department of Cell and Developmental Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Department of Surgery, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Molecular Biology and Biochemistry, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+5. Department of Pathology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+6. Department of Computational Medicine and Bioinformatics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+7. Rogel Cancer Center, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+8. Department of Internal Medicine, Division of Gastroenterology and Hepatology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -48,17 +48,37 @@ Further inquiry into the role of cancer cell mutant Kras activity in TEM polariz
 
 ## Results
 
-## In vitro modeling and multiomic analysis of tumor-associated macrophages
+### In vitro modeling and multiomic analysis of tumor-associated macrophages
 
 To model pancreatic TAMs in vitro, we modified the classical BMDM differentiation and polarization paradigm (Celada et al., 1984), as follows (Figure 1A). First, we isolated and plated bone marrow in media containing macrophage colony-stimulating factor (M-CSF) to differentiate and expand macrophages for 5 days. These naive macrophages (M0) were then polarized to a tumor-associated phenotype for 2 days in conditioned media from PDA cells. Fresh media was included at a ratio of one to three parts conditioned media to account for nutrients consumed by the cancer cells. The resultant in vitro-derived cells are herein defined as TEMs, as they are educated by, and not directly associated with, cancer cells. Furthermore, the pancreatic cancer-conditioned media was generated from a cell line (iKras*3) derived from our murine pancreatic tumor model in which reversible mutant Kras expression is under the control of doxycycline (dox) (Collins et al., 2012). Growth of these cells in dox drives mutant Kras expression, MAPK pathway activity, and the malignant phenotype in vitro and in vivo (Collins et al., 2012; Ying et al., 2012). We also assessed how the removal of Kras from the cancer cells, via dox withdrawal for 3 or 5 days, impacted TEM polarization. In parallel with the TEM polarization strategies, we also polarized M0 macrophages into the canonical in vitro phenotypes with 2-day treatment of either lipopolysaccharide (LPS; proinflammatory ‘M1’) or interleukin-4 (IL4; anti-inflammatory ‘M2’). M0 macrophages were maintained in the naive state by 2-day treatment with M-CSF (Figure 1A). M1 and M2 phenotypes were independently validated via quantitative polymerase chain reaction (qPCR) of classic proinflammatory (Interleukin 12b, Il12b; Tumor necrosis factor alpha, Tnfa) and anti-inflammatory (Found in inflammatory zone protein 1, Fizz1; Chitinase-like 3, Chil3; Arg1) genes (Murray, 2017; Orecchioni et al., 2019; Figure 1—figure supplement 1A, B). Importantly, we observed that TEMs did not fit into either the M1 or M2 marker profiles, suggesting that an unbiased approach would be needed to better define PDA-programmed macrophage populations.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of bone marrow-derived macrophage (BMDM) differentiation and polarization. (B) Left: principal component analysis of transcriptomics and proteomics of BMDMs treated with macrophage colony-stimulating factor (M-CSF; M0), lipopolysaccharide (LPS; M1), interleukin-4 (IL4; M2), or conditioned media from Kras-Off (3 or 5 days) or Kras-On (TEM) pancreatic ductal adenocarcinoma (PDA) cells; right: intracellular and extracellular metabolomics from media (Dulbecco’s modified Eagle medium, DMEM + 10% FBS), M0, M1, M2, or TEM (Kras-On media was mock treated or boiled before TEM culture). Transcriptomics and metabolomics samples were collected in biological triplicate; proteomics in biological duplicate. (C) RNA sequencing (RNA-seq)-measured mean-centered expression of classical M1 genes Nos2 and Slc2a1 across M0, M1, M2, and TEM phenotypes; n = 3. (D) RNA-seq-measured mean-centered expression of classical M2 genes Il4i1, Chil3, and Arg1 across M0, M1, M2, and TEM phenotypes; n = 3. (E) Heat map array of differential markers of each subtype from proteomics (1916 proteins), transcriptomics (9470 transcript), and intracellular (82 metabolites) and extracellular (46 metabolites) metabolomics. We highlight TEM markers in the black boxes. Error bars in (C) and (D) are mean ± standard deviation (SD); significance comparisons are relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantitative polymerase chain reaction (qPCR) of classic M1 markers Il12b and Tnfa in M0, M1, M2, and tumor-educated macrophage (TEM) subtypes; n = 3. (B) qPCR of classic M2 markers Fizz1, Chil3, Arg1, and Il4i1 in M0, M1, M2, and TEM subtypes; n = 3. (C) qPCR of Nos2 and Slc2a1 in M0, M1, M2, and TEM subtypes; n = 3. (D) Gene set enrichment analysis (GSEA) plots of metabolic pathways selectively upregulated in TEMs. Error bars are mean ± standard deviation (SD); significance comparisons are relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
 We then performed multiomic profiling on each of the macrophage subtypes to achieve a comprehensive characterization of genetic and metabolic activity by (1) bulk RNA sequencing (RNA-seq) in triplicates, (2) proteomic profiling by mass spectrometry (MS) in duplicates, and metabolomic analyses on (3) intracellular and (4) extracellular metabolites by liquid chromatography (LC)/MS in triplicates. Principal component analysis (PCA) from each omics dataset demonstrated clustering of the biological replicates reflecting high-quality data (Figure 1B). From this global analysis, we also observed that the M1 subtype has the most distinct molecular profile on all triomics levels. The TEM subtype exhibited molecular profiles more similar to the M2 subtype than the M1, in line with previous publications from our groups and others (Halbrook et al., 2019; Arlauckas et al., 2018).
 
-## Metabolism and cytokine signaling are distinctive features of pancreatic TEMs
+### Metabolism and cytokine signaling are distinctive features of pancreatic TEMs
 
 As a means for further validation, we first directed our attention to known markers of each macrophage subtype in the transcriptomics data. We selected a group of five canonical macrophage genes, which were assessed in the primary data. The proinflammatory macrophage markers, Nitric Oxide Synthase 2 (Nos2) and the glucose transporter Slc2a1 (GLUT1), displayed increased expression in LPS-treated macrophages compared to the other macrophage subtypes (Figure 1C, Figure 1—figure supplement 1C). Likewise, IL4-treated macrophages exhibited increased expression of classical anti-inflammatory/tissue remodeling markers, including Interleukin 4 Induced 1 (Il4i1), Arg1, and Chil3 (Figure 1D, Figure 1—figure supplement 1B). Next, we performed differential expression or abundance analysis to identify markers that distinguish each subtype (Figure 1E, Supplementary file 1). The largest number of differential markers occurs in the M1 subtype across all triomics datasets, in agreement with the PCA analysis. We performed pathway analyses of each set of differential markers by gene set enrichment analysis (GSEA) (Subramanian et al., 2005) of KEGG gene sets for the transcriptomics data and Enrichr (Xie et al., 2021) for the proteomics data comparing TEMs to M0, M1, and M2 macrophages (Figure 1—figure supplement 1D, Supplementary files 2 and 3). Here, we observed several metabolic pathways that follow our previous characterization of TEM metabolism (Halbrook et al., 2019), including catabolic pathways (arginine and proline metabolism), anabolic pathways (nucleotide sugar metabolism), and functional pathways (fatty acid metabolism and glycolysis). This analysis also showed enrichment in the mTOR signaling pathway in TEMs, and the MAPK pathway in the other macrophage subtypes (Figure 1—figure supplement 1D). The top pathways among the upregulated TEM protein markers include neutrophil-related immune response and glycolipid/fatty acid metabolism.
 
 Focusing further on the components driving TEM programming, pathway-centric approaches revealed two prominent features in TEMs relating to (1) cytokine signaling and (2) metabolism. Differential cytokine signaling is relatively well described for pancreatic TAMs (Zhang et al., 2020; Aldinucci et al., 2020). Indeed, C-C Motif Chemokine Receptor 1 (Ccr1) and Ccr5 were significantly upregulated at the transcript level in TEMs, compared to M0, M1, and M2 macrophages (Figure 2A, Figure 2—figure supplement 1A). The patterns of differences in mRNA expression were maintained in the proteomics analysis (Figure 2—figure supplement 1B). Of note, our previous assessment of pancreatic TAMs identified CCR1 as a key mediator of immune suppression in pancreatic tumors (Zhang et al., 2020). Further, despite TAMs having long been described as M2-like/anti-inflammatory macrophages, due to their expression of ARG1 and oxidative metabolism (Halbrook et al., 2019; Arlauckas et al., 2018; Binnemars-Postma et al., 2018), pancreatic TEMs lack expression of important IL4 targets, demonstrating a clear difference in cellular activity between TEMs and type-2 cytokine-activated macrophages (Figure 1D, E, Figure 1—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig2-v2.jpg)
+
+**Figure 2.:** (A) RNA sequencing (RNA-seq) mean-centered expression of TEM cytokine-related signatures, Ccr1 and Ccr5; n = 3. (B) A bar plot of the numbers of up- and downregulated markers that are metabolic enzymes, present in both protein and gene analyses, for each subtype. (C) Table of 18 upregulated TEM markers from B and their corresponding KEGG (Kyoto Encyclopedia of Genes and Genomes) class. Note Acly as an enzyme of interest. (D) RNA-seq-measured mean-centered expression of TEM enzyme signatures Txnip and Acly; n = 3. (E) Heat map of the top 20 positively and negatively correlated proteins from the proteomics data for TXNIP, ACLY, and ARG1. Error bars in (A) and (D) are mean ± standard deviation (SD); significance comparisons are relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; ****p < 0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantitative polymerase chain reaction (qPCR) of tumor-educated macrophage (TEM) cytokine signatures Ccr1 and Ccr5 in M0, M1, M2, and TEM subtypes; n = 3. (B) Proteomics mean-centered abundance of CCR1 and CCR5 in M0, M1, M2, and TEM subtypes; n = 2. (C) qPCR of TEM markers Txnip and Acly in M0, M1, M2, and TEM subtypes; n = 3. (D) Proteomics mean-centered abundance of TXNIP, ACLY, and ARG1 in M0, M1, M2, and TEM subtypes; n = 2. Error bars are mean ± standard deviation (SD).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Proteomics and transcriptomics box plot of Acly, metabolomics box plot of citrate, and transcriptomics box plot of Slc25a1 for M0, M1, M2, Kras-Off 3 days, Kras-Off 5 days, and Kras-On tumor-educated macrophage (TEM) subtypes. (B) Proteomics box plots of PLCB2 and PRKAB1 and transcriptomics box plots of 15 PI3K-related genes. (C) STRING-based pathway analysis of Txnip-correlated proteins in TEM. (D) STRING-based pathway analysis of Txnip-correlated genes in TEM. *‘Off3/5d’ = ‘noDOX_3/5d’ = Kras-Off TEM subtype; ‘plusDOX’ = Kras-On TEM subtype. Error bars are mean ± standard deviation (SD), significance comparisons are relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; Significance comparisons are relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
 
 The second differentially enriched pathway in pancreatic TEMs is related to metabolism, and metabolic states have been shown to be key features distinguishing M1 and M2 macrophages (Jha et al., 2015). Indeed, by focusing on markers that are metabolic enzymes from both proteomics and transcriptomics, we find that TEMs contain the greatest proportion of upregulated metabolic enzymes, while M1 has the largest number of downregulated markers that are metabolic enzymes (Figure 2B, C).
 
@@ -66,21 +86,45 @@ Among the differential expressed TEM metabolic enzymes, we further narrowed our 
 
 Next, we aimed to identify proteins that coexpressed with these three markers. We focused on correlated proteins, given the more proximal relevance to cellular functions and phenotypes than transcript expression. We selected the top 20 proteins according to both positive and negative correlations with ACLY, ARG1, or TXNIP (Figure 2E). Among those positively correlated with ACLY is SLC25A1, the mitochondrial citrate transporter. Citrate is a substrate of ACLY and highly abundant in TEMs based on our intracellular metabolomics data (Figure 2—figure supplement 2A), suggesting that the pathway of citrate-SLC25A1-ACLY is a TEM signature feature, as has been recently reported in inflammatory macrophages from atherosclerotic plaques (Baardman et al., 2020). Among the proteins positively correlated with ARG1 is PIK3CD, which endcodes for p110 delta, the catalytic subunit of PI3K (Chen et al., 2019; Figure 2E), suggesting a role for this signaling pathway in TEMs. We also investigated functional associations among those correlated proteins using Search Tool for Retrieval of Interacting Genes/Proteins (STRING) (Szklarczyk et al., 2019). A particularly strong functional association (enrichment p value ~0.0001) was found among the TXNIP-correlated proteins, which are mostly involved in metabolism (Figure 2—figure supplement 2C). This is not the case for those Txnip-correlated transcripts (Figure 2—figure supplement 2D).
 
-## TEM markers distinguish pancreatic TAMs in human tumors
+### TEM markers distinguish pancreatic TAMs in human tumors
 
 To demonstrate biological relevance of the pancreatic TEM phenotype, we queried our in-house scRNA-seq datasets from human tumors (Steele et al., 2020), paying particular attention to the myeloid populations (Figure 3A). We identified expression of several TEM markers in human pancreatic TAMs, such as ACLY and TXNIP (Figure 3B, Figure 3—figure supplement 1A). We are unable to provide sufficient data supporting ARG1 expression in human pancreatic tumors as it experiences high rates of drop-out during scRNA-seq. However, we note expression of the strongly Arg1-correlated gene, PIK3CD, in macrophage populations in human pancreatic tumors (Figure 3B, Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig3-v2.jpg)
+
+**Figure 3.:** (A) UMAP plot of myeloid populations in a human pancreatic tumor. (B) UMAP plots of TEM markers ACLY, TXNIP, and PI3KCD in human pancreatic tumor-associated macrophages (TAMs). (C) UMAP plots of PI3K-related genes expressed in human pancreatic TAMs (DDIT4, PRKAB1, LAMB3, LAMB2, THBS1, VEGFA, PLCB2, and ITGB7). (D) Expression of murine pancreatic TEM markers in macrophages from human tumors (pancreatic ductal adenocarcinoma [PDAC] TAMs) compared to macrophages from adjacent ‘normal’ tissue (AdjNorm), as analyzed by single-cell RNA sequencing.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Violin plots of TEM markers Txnip, Acly, and Pik3cd expressed in human pancreatic tumors. (B) Violin plots of PI3K-related genes expressed in human pancreatic tumors (Prkab1, Lamb3, Lamb2, Ddit4, Vegfa, Thbs1, Plcb2, and Itgb7).
+
 In further support of PI3K relevance in TAMs, we found several PI3K-related TEM signatures (Figure 2—figure supplement 2B) also expressed in human TAMs (Figure 3C, Figure 3—figure supplement 1B). Those signature genes are indeed enriched in PI3K–Akt signaling pathway, as well as integrin signaling and the unfolded protein response by the Enrichr analysis (Supplementary file 3). These data suggest that PI3K signaling in TEMs is relevant in human TAMs, along with potential contributing factors both upstream and downstream of this signaling pathway.
 
-## Pancreatic TAM polarization is dependent on mutant Kras activity in pancreatic cancer cells
+### Pancreatic TAM polarization is dependent on mutant Kras activity in pancreatic cancer cells
 
 The data from our profiling analyses revealed a distinction between the TEMs generated in media from Kras-expressing and -extinguished pancreatic cancer cells (Figure 1B, E). As noted in Figure 1, we polarized naive BMDMs with Kras-On and Kras-Off PDA cell-conditioned media (Figure 4A). Western blot of iKras*3 cell lysates for MAPK pathway activity demonstrated the expected decrease in ERK phosphorylation in dox-withheld iKras cells (Figure 4B). We turned our attention to differential markers in Figure 1E and their expression patterns in Kras-On and 5-day Kras-Off TEMs (Figure 4C). The data revealed broad differences in macrophage gene and protein expression, indicating that inducing mutant Kras in pancreatic cancer cells modifies both the extracellular environment and consequent phenotypes of macrophages exposed to these changes. Performing GSEA of KEGG gene sets between the Kras-On and Kras-Off macrophages (Supplementary file 4), we again observed enrichment in metabolic pathways, in line with our previous study of TEM metabolism (Halbrook et al., 2019). These include glycolysis, arginine catabolism, and pentose phosphate pathway. In addition to these metabolic pathways, we also see enrichment of the JAK–STAT pathway and activation of chemokine signaling/cytokine–cytokine receptor interactions. Furthermore, the top pathways among the protein markers in the Kras-Off condition include exosome/transport/apoptotic processes and macromolecule/nucleobase/phosphate metabolic processes (Figure 4—figure supplement 1A and Supplementary file 3). Specifically, we determined that macrophage expression of Arg1, Acly, Txnip, Ccr1, and Ccr5 were all decreased when PDA cell Kras* was turned off (Figure 4D, Figure 4—figure supplement 1B).
 
-## Mutant Kras activity in pancreatic cancer cells polarizes TEMs through GM-CSF and lactate
+![Figure 4.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of bone marrow-derived macrophage (BMDM) differentiation, iKras*3 cell Kras-On and Kras-Off conditioned media generation, and Kras-On and Kras-Off TEM polarization. (B) Western blot of MAPK pathway proteins ERK and pERK in Kras-expressing and 5-day Kras-extinguished iKras*3 cells. (C) Transcriptomics and proteomics heat maps of the differential markers in Figure 1E for Kras-On and 5-day Kras-Off TEMs. (D) RNA sequencing (RNA-seq)-measured mean-centered expression of TEM signatures Arg1, Acly, Txnip, Ccr1, and Ccr5; n = 3. Error bars are mean ± standard deviation (SD); significance was calculated using using a Student’s t-test; ***p < 0.001, ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gene set enrichment analysis (GSEA) of pancreatic TEMs plus or minus Kras expression (doxycycline, dox) for 5 days. (B) Quantitative polymerase chain reaction (qPCR) validation of TEM enzyme and cytokine markers Txnip, Acly, Arg1, Ccr5, and Ccr1 in Kras-On vs Kras-Off TEMs; n = 3. (C) qPCR of Csf2 expression (n = 6) and ELISA of granulocyte–macrophage colony-stimulating factor (GM-CSF) release (n = 3) in Kras-extinguished iKras*3 cells and two KPC PDA lines, KPC-MT3 and KPC7940. Error bars are mean ± standard deviation (SD); in (C), significance values were calculated using a Student’s t-test; in C, comparisons are relative to TEM subtype and significance was calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; **p < 0.01, ****p < 0.0001.
+
+### Mutant Kras activity in pancreatic cancer cells polarizes TEMs through GM-CSF and lactate
 
 Upon recognizing the importance of PDA mutant Kras signaling for achieving the TEM phenotype, we considered the specific downstream factors of Kras activity that may contribute to TEM polarization. Macrophage expression of ARG1 and TXNIP has been shown to be responsive to lactate and extracellular acidification (Zhang et al., 2019; El-Kenawi et al., 2019). In addition, studies have demonstrated that macrophage expression of ARG1 may be regulated by signaling downstream of GM-CSF (Jost et al., 2003). Furthermore, previous work from our groups and others have also implicated mutant Kras activity in the activation of glycolysis and lactate excretion and the release of GM-CSF (Ying et al., 2012; Tape et al., 2016; Bayne et al., 2012; Pylayeva-Gupta et al., 2012).
 
 Based on these leads, we determined if Kras expression promotes GM-CSF and lactate release in our isogenic, mutant Kras-inducible cell line model and the subsequent role of these factors on TEM polarization. Analysis of GM-CSF expression by qPCR and release by ELISA indicated that loss of mutant Kras expression reduced Csf2 expression and GM-CSF release by more than 10- and 1000-fold, respectively (Figure 5A). Further, we found that GM-CSF secretion is abundant in two additional murine pancreatic cancer cell lines; that is, KPC cell lines, KPC7940 and KPCMT3 (Figure 4—figure supplement 1C). Next, we analyzed mutant Kras-dependent extracellular metabolism, including lactate production, by metabolomics. Metabolome profiling of the spent media from Kras-expressing PDA cells revealed profound alterations to the extracellular metabolome (Figure 5—figure supplement 1A, B), including a Kras expression-dependent increase in lactate release (Figure 5B). The Kras-dependent release of lactate was also analyzed and quantitated using an enzymatic assay-based approach (Figure 5—figure supplement 1C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig5-v2.jpg)
+
+**Figure 5.:** (A) Quantitative polymerase chain reaction (qPCR) measurement of Csf2 expression and ELISA for GM-CSF release; n = 3 in murine PDA cell line iKras*3. (B) Liquid chromatography (LC)/mass spectrometry (MS)-measured extracellular lactate abundance from Kras-expressing and -extinguished iKras*3 cells plotted as median-centered values; n = 3. (C) RNA sequencing (RNA-seq)-measured expression of myeloid GM-CSF-responsive genes, Cish, Pim1, and Ccl17 in Kras-On and Kras-Off TEMs; n = 3. (D) RNA-seq-measured expression of lactate-responsive genes, Il1b and Il6 in Kras-On and Kras-Off TEMs; n = 3. (E, F) RNA-seq-measured expression of genes responsive to acidic extracellular pH in Kras-On and Kras-Off TEMs; n = 3. (G) qPCR-measured expression of TEM markers Arg1, Txnip, Acly, Ccr1, and Ccr5 in M0 macrophages treated with either lactate, GM-CSF, or the combination; n = 3. Error bars are mean ± standard deviation (SD); significance values in (A–F) were calculated using a Student’s t-test; in (G), comparisons are relative to TEM subtype, and significance was calculated using one-way analysis of variance (ANOVA) with Dunnett’s post hoc test; *p < 0.05; **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heat map of significant (p < 0.01) extracellular metabolites released from Kras-expressing vs. Kras-extinguished iKras*3 cells. (B) Enrichment analysis of Kras-expressing vs. Kras-extinguished iKras*3 extracellular metabolomics. (C) Extracellular lactate abundance from iKras*3 cells ± doxycycline (dox) as measured by enzymatic fluorescence assay; n = 3. Error bars are mean ± standard deviation (SD), significance values were calculated using a Student’s t-test; ****p < 0.0001.
 
 To confirm that these Kras-dependent differences in PDA cell activity impact activation of macrophages, we queried several differentially expressed genes in TEMs that are regulated by PDA mutant Kras and have been documented as responsive to GM-CSF, lactate, or pH. GM-CSF signaling in myeloid cells activates expression of Cish, Pim1, and Ccl17 (Lehtonen et al., 2002). Indeed, we demonstrate that expression of these transcripts is significantly upregulated in macrophages exposed to Kras-On PDA cell-conditioned media, compared to those exposed to Kras-Off PDA cell-conditioned media (Figure 5C).
 
@@ -90,9 +134,17 @@ Lactate is chiefly responsible for acidification of both the TME and the media u
 
 To further confirm that extracellular GM-CSF and lactate are important contributors to the TEM phenotype, we treated naive macrophages (M0) for 48 hr with either GM-CSF, lactate, or the combination. A naive macrophage culture was maintained with M-CSF as a control. In order to more closely mimic the cancer cell-conditioned media, and to assess effects that lactate-induced extracellular acidity may have on TEM polarization, we maintained media supplemented with lactate at a lower pH. We then collected cell lysates and performed qPCR for our TEM markers. These results demonstrated that Arg1 and Txnip are not significantly increased by GM-CSF or lactate as independent treatments. In contrast, these two factors in combination impose a synergistic effect on the expression of both genes (Figure 5G). We also identified increases in Acly, Ccr1, and Ccr5 expression in macrophages treated with GM-CSF. These results, in combination with the increased levels of lactate and GM-CSF observed in Kras-On media, provide strong supporting evidence for the essential role of these factors in TEM polarization.
 
-## PDA-derived GM-CSF promotes TEM polarization through the PI3K–AKT pathway
+### PDA-derived GM-CSF promotes TEM polarization through the PI3K–AKT pathway
 
 GM-CSF has pleiotropic effects on signal transduction, dependent on signal strength and context (Zhan et al., 2019; Hamilton, 2019). Classic downstream pathways activated by GM-CSF include NF-κB, PI3K/AKT, and the MAPK pathway. The data presented in Figure 2E and Figure 2—figure supplement 2B suggested that TEM polarization was marked by an increase in the PI3K pathway. To test the role of PI3K signaling in TEM polarization downstream of GM-CSF, we activated BMDMs with Kras-On media in the presence or absence of either the pan-PI3K inhibitor, BKM120, the pan-AKT inhibitor, MK-2206, or vehicle control. Western blotting for ARG1 revealed a strong activating role for the PI3K/AKT pathway in pancreatic TEMs (Figure 6A). AKT is known to phosphorylate ACLY, which has been shown to then modify histone acetylation that impacts Arg1 expression in IL4-stimulated macrophages (Covarrubias et al., 2016). In support of these findings, we also demonstrate that PI3K/AKT inhibition decreases ACLY phosphorylation in our TEM model (Figure 6A, Figure 6—figure supplement 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot of pACLY/ACLY, pAKT/AKT, TXNIP, and ARG1 in bone marrow-derived macrophages (BMDMs) treated with either macrophage colony-stimulating factor (M-CSF), iKras*3 cell-conditioned media + vehicle, iKras*3 cell-conditioned media + pan AKT inhibitor MK-2206, or iKras*3 cell-conditioned media + pan-PI3K inhibitor BKM120. (B) Western blot of pACLY/ACLY, pAKT/AKT, TXNIP, and ARG1 in BMDMs treated with either M-CSF, iKras*3 cell-conditioned media + vehicle, iKras*3 cell-conditioned media + MK-2206, iKras*3 cell-conditioned media + BKM120, iKras*3 cell-conditioned media + IgG control, or iKras*3 cell-conditioned media + GM-CSF-neutralizing antibody. (C) Heat map of differentially abundant metabolites in TEMs treated with either anti-GM-CSF or IgG control; n = 3. (D) Bar graph of TCA and related metabolites in TEMs treated with either anti-GM-CSF or IgG control; n = 3. (E) Schematic of TEM polarization model. Replicates and quantitation of the westerns in (A, B) are presented in Figure 6—figure supplement 1A. Error bars are mean ± standard deviation (SD); significance was calculated using a Student’s t-test; *p < 0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73796/elife-73796-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Bar graphs of pACLY quantitation relative to ACLY expression in TEM mock, MK-2206, BKM120, IgG, and anti-GM-CSF groups; quantitated from three independently prepared westerns. Representative westerns in Figure 6. (B) Bar graphs of TXNIP phosphorylation quantitation from Figure 6A (left) and TXNIP expression quantitation in TEM mock, IgG, and anti-GM-CSF groups; latter are quantitated from three independently prepared westerns. Error bars are mean ± standard deviation (SD); significance for comparison between two groups was performed using the Student’s t-test; significance for comparisons with three groups is relative to TEM subtype and were calculated using one-way analysis of variance (ANOVA) with Tukey’s post hoc; *p < 0.05, **p < 0.01.
 
 Because GM-CSF is secreted by Kras-expressing PDA cells, impacts macrophage Arg1 expression (Park et al., 2019), and activates PI3K (Hamilton, 2019), we postulated that cancer cell GM-CSF may be activating macrophage Arg1 expression through the PI3K–AKT pathway. To test this hypothesis, we treated BMDMs with Kras-On conditioned media and either a GM-CSF-neutralizing antibody or IgG control. Indeed, blocking GM-CSF resulted in a dramatic decrease in ARG1 expression, as measured by immunoblotting (Figure 6B). GM-CSF neutralization also resulted in decreased phosphorylation of both AKT and ACLY, confirming that GM-CSF activates macrophage Arg1 expression through PI3K signaling (Figure 6B, Figure 6—figure supplement 1A). Finally, GM-CSF neutralization also led to a modest decrease in expression of ACLY and TXNIP (Figure 6B, Figure 6—figure supplement 1B). Taken together, these data support an activating role of GM-CSF on TEM polarization.
 
@@ -114,75 +166,268 @@ Finally, it is important to note a few limitations in our current investigation 
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 The dox-inducible (iKras*3) primary mouse PDA cell line used in this study was described previously (Zhang et al., 2017). Cells were maintained in high-glucose Dulbecco’s modified Eagle medium (DMEM) (Gibco) supplemented with 10% fetal bovine serum (FBS) (Corning) at 37°C. iKras*3 cells were also maintained in 1 μg/ml dox. In certain conditions, iKras*3 cells were deprived of dox, for either 3 or 5 days before conditioning media, to turn mutant Kras expression off and assess Kras-dependent effects on macrophage polarization. Cells were routinely checked for mycoplasma contamination with MycoAlert PLUS (Lonza).
 
-## Conditioned medium generation
+### Conditioned medium generation
 
 PDA cell-conditioned medium was generated by changing the media of >50% confluent iKras*3 plates, removing media after 48 hr, and filtering through a 0.45-μm polyethersulfone membrane (VWR). Fresh media was added at a ratio of one to three parts conditioned medium to replenish nutrients consumed by cancer cells. L929-conditioned media was prepared for BMDM differentiation, as described (Halbrook et al., 2019). L929 mouse fibroblasts were maintained in fresh DMEM for 48 hr, after which the conditioned media was filtered through a 0.45-μm polyethersulfone membrane.
 
-## BMDM Differentiation
+### BMDM Differentiation
 
 Bone marrow was isolated from the femurs of C57B6/J mice as described (Celada et al., 1984) and maintained in macrophage differentiation media (high-glucose DMEM with 10% FBS, penicillin/streptomycin [Gibco], sodium pyruvate [Gibco], and 30% L929-conditioned media) for 5 days. Media was refreshed on day 3, and naive macrophages were polarized on day 5.
 
-## Macrophage polarization
+### Macrophage polarization
 
 BMDMs were polarized with either 10 ng/ml murine M-CSF (Peprotech), 10 ng/ml LPS (Enzo), 10 ng/ml murine IL4 (Peprotech), 2 ng/ml murine GM-CSF, or 75% Kras-On or Kras-Off PDA cell-conditioned media. In certain conditions, macrophages were spiked with 5 mM lactic acid to assess the effects of extracellular lactate and acidic pH on macrophage gene expression. Each macrophage subtype was polarized from matched biological replicates. Macrophages were maintained in the presence of polarization factors for 48 hr.
 
-## GM-CSF neutralization and PI3K/AKT inhibition
+### GM-CSF neutralization and PI3K/AKT inhibition
 
 BMDMs were differentiated over 5 days then treated for 48 hr with either 10 ng/ml murine M-CSF or 75% Kras-On PDA-conditioned media with either vehicle control, 1 nM MK-2206 (Selleck Chemicals), 1 nM BKM120 (Selleck Chemicals), 1 µg/ml anti-GM-CSF-neutralizing antibody (BioLegend), or IgG control. Compounds were maintained in dimethyl sulfoxide. Macrophages polarized in the presence of the PI3K and AKT inhibitors were pretreated with the respective compound for 30 min.
 
-## RNA isolation and reverse transcription
+### RNA isolation and reverse transcription
 
 Polarized BMDMs were lysed with RLT Plus buffer with β-mercaptoethanol, lysates were homogenized using a Qiashredder, and RNA samples were isolated according to the RNeasy Plus Mini Kit (Qiagen) protocol, which included gDNA eliminator spin columns. All RNA samples were tested for concentration and purity via NanoDrop (Thermo Scientific). RNA samples were stored in −80°C until needed for reverse transcription. Complementary DNA (cDNA) reverse transcription was performed following the iScript cDNA Synthesis kit protocol (BioRad), and cDNA samples were used for qPCR.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed in radioimmunoprecipitation assay (RIPA) buffer (Sigma-Aldrich) and supplemented with phosphatase inhibitor (Sigma-Aldrich) and complete Ethylenediaminetetraacetic acid (EDTA)-free protease inhibitor (Sigma-Aldrich). Lysates were quantified by Bicinchoninic acid (BCA) assay (Thermo Fisher Scientific Inc), and equivalent protein amounts were run onto sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gels. Proteins were transferred from the SDS–PAGE gel to an Immobilon-FL PVDF membrane, blocked, and incubated with primary antibodies. After washing, membranes were incubated in secondary antibody, washed, then exposed on a Biorad Chemidoc with West Pico (Thermo Fisher Scientific) or West Femto ECL (Thermo Fisher Scientific). Quantitation was performed using Image Lab software.
 
-## Lactate measurement
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Antibody name</th>
+      <th>Catalog #</th>
+      <th>Company</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACLY</td>
+      <td>ATP-Citrate Lyase Antibody</td>
+      <td>#4332</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>p-ACLY</td>
+      <td>Phospho-ATP-Citrate Lyase (Ser455) Antibody</td>
+      <td>#4331</td>
+      <td>Cell Signaling</td>
+      <td>*1:500</td>
+    </tr>
+    <tr>
+      <td>AKT</td>
+      <td>Akt Antibody</td>
+      <td>#9272</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>p-AKT</td>
+      <td>Phospho-Akt (Ser473) (D9E) XP Rabbit mAb</td>
+      <td>#4060</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>ARG1</td>
+      <td>Arginase-1 (D4E3M) XP Rabbit mAb</td>
+      <td>#93,668</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>TXNIP</td>
+      <td>TXNIP (D5F3E) Rabbit mAb</td>
+      <td>#14,715</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>pERK</td>
+      <td>Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (E10) Mouse mAb</td>
+      <td>#9106</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>ERK</td>
+      <td>p44/42 MAPK (Erk1/2) (137F5) Rabbit mAb</td>
+      <td>#4695</td>
+      <td>Cell Signaling</td>
+      <td>*1:1000</td>
+    </tr>
+    <tr>
+      <td>Vinculin</td>
+      <td>Vinculin (E1E9V) XP</td>
+      <td>#13,901</td>
+      <td>Cell Signaling</td>
+      <td>*1:5000</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit IgG HRP-linked Secondary</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody</td>
+      <td>#7074</td>
+      <td>Cell Signaling</td>
+      <td>*1:5000</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IgG HRP-linked Secondary</td>
+      <td>Anti-mouse IgG, HRP-linked Antibody</td>
+      <td>#7076</td>
+      <td>Cell Signaling</td>
+      <td>*1:5,000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lactate measurement
 
 Lactate measurements were carried out using the lactate fluorescence assay kit (Biovision #K607). Assays were performed according to the manufacturer’s instructions. Lactate levels were measured using a SpectraMax M3 Microplate reader (Molecular Devices).
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 RNA-seq and data analysis were performed as described (Zhang et al., 2020). Upon isolation of RNA samples, and determination of RNA concentration and quality, the University of Michigan Sequencing Core prepared strand mRNA libraries that were sequenced using 50-cycle paired-end reads via a HiSeq 4000 (Illumina) sequencing system. Raw data were generated and analyzed by the University of Michigan Bioinformatics Core. A quality control (QC) was performed using FastQC software (Babraham Bioinformatics) for both pre- and postalignment. Raw sequencing reads were aligned to the University of California Santa Cruz (UCSC) mm10 assembly mouse genome browser with Bowtie2 and TopHat tools of the Tuxedo suite RNA-seq alignment software. Quantification of gene expression was performed with HTSeq to generate TPM values. Relative expression was graphed as mean-centered abundance, in which each sample’s raw expression value was divided by the mean expression value of all samples. The primary data are available at GEO (GSE189354).
 
-## Quantitative polymerase chain reaction
+### Quantitative polymerase chain reaction
 
 Samples for qPCR were prepared with 1× Fast SYBR Green PCR master mix (Applied Biosystems). Primers were optimized for amplification under the following conditions: 95°C for 10 min, followed by 40 cycles of 95°C for 15 s and 60°C for 1 min. Melt curve analysis was performed for all samples upon completion of amplification. Hypoxanthine phosphoribosyltransferase (Hprt1) primer was used as a reference gene. Relative quantification was calculated using the 2−ΔΔCT method, in which the cycle threshold (CT) value of a target sample’s target gene is normalized to the expression of a reference gene in both a reference sample and the target sample.
 
-## Proteomics
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>5' Primer</th>
+      <th>3' Primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acly</td>
+      <td>GAGGGGAAGCTGATCATGGG</td>
+      <td>GAGCCACAGTTCCTGAGCAT</td>
+    </tr>
+    <tr>
+      <td>Arg1</td>
+      <td>CAGAAGAATGGAAGAGTCAG</td>
+      <td>CAGATATGCAGGGAGTCACC</td>
+    </tr>
+    <tr>
+      <td>Ccr1</td>
+      <td>AGGAATTGGCCACTGGTGAG</td>
+      <td>TTGCTGAGGAACTGGTCAGG</td>
+    </tr>
+    <tr>
+      <td>Ccr5</td>
+      <td>AGACATCCGTTCCCCCTACA</td>
+      <td>GCAGCATAGTGAGCCCAGAA</td>
+    </tr>
+    <tr>
+      <td>Chil3</td>
+      <td>CAGGGTAATGAGTGGGTTGG</td>
+      <td>CACGGCACCTCCTAAATTGT</td>
+    </tr>
+    <tr>
+      <td>Fizz1</td>
+      <td>CCTGCTGGGATGACTGCTAC</td>
+      <td>GTCAACGAGTAAGCACAGGC</td>
+    </tr>
+    <tr>
+      <td>Gmcsf</td>
+      <td>ATGCCTGTCACGTTGAATGAAG</td>
+      <td>GCGGGTCTGCACACATGTTA</td>
+    </tr>
+    <tr>
+      <td>Gmcsf</td>
+      <td>AGATATTCGAGCAGGGTCTAC</td>
+      <td>GGGATATCAGTCAGAAAGGTT</td>
+    </tr>
+    <tr>
+      <td>Hprt1</td>
+      <td>TCAGTCAACGGGGGACATAAA</td>
+      <td>GGGGCTGTACTGCTTAACCAG</td>
+    </tr>
+    <tr>
+      <td>Il12b</td>
+      <td>TGGTTTGCCATCGTTTTGCTG</td>
+      <td>ACAGGTGAGGTTCACTGTTTCT</td>
+    </tr>
+    <tr>
+      <td>Il1b</td>
+      <td>CGCAGCAGCACATCAACAAG</td>
+      <td>GTGCTCATGTCCTCATCCTG</td>
+    </tr>
+    <tr>
+      <td>Il4i1</td>
+      <td>GCCATTCCCCAGAGGACATC</td>
+      <td>GGCTGTACCGGAGTCTATCG</td>
+    </tr>
+    <tr>
+      <td>NOS2</td>
+      <td>GTTCTCAGCCCAACAATACAAGA</td>
+      <td>GTGGACGGGTCGATGTCAC</td>
+    </tr>
+    <tr>
+      <td>Slc25a1</td>
+      <td>TGCGACTGTACTGAAGCAGG</td>
+      <td>GTAGAATGCCTTTGGCCCCT</td>
+    </tr>
+    <tr>
+      <td>Slc2a1</td>
+      <td>GTGACGATCTGAGCTACGGG</td>
+      <td>GAGAGACCAAAGCGTGGTGA</td>
+    </tr>
+    <tr>
+      <td>Tbp</td>
+      <td>CCCCACAACTCTTCCATTCT</td>
+      <td>GCAGGAGTGATAGGGGTCAT</td>
+    </tr>
+    <tr>
+      <td>Tnfa</td>
+      <td>GACGTGGAACTGGCAGAAGAG</td>
+      <td>TTGGTGGTTTGTGAGTGTGAG</td>
+    </tr>
+    <tr>
+      <td>Txnip</td>
+      <td>CCCTGACCTAATGGCACCAG</td>
+      <td>AGTGTGTCGGGCCACAATAG</td>
+    </tr>
+  </tbody>
+</table>
 
-## Sample preparation
+### Proteomics
+
+#### Sample preparation
 
 Six total samples from six macrophage subtypes were prepared in duplicate for MS-based proteomics. The supernatant of each sample’s cell lysate was collected to obtain >70 µg of total protein or a protein concentration of 2 µg/µl per sample. Samples were stored at −80°C until the proteomics experiments.
 
-## Tandem mass tag (TMT) quantification
+#### Tandem mass tag (TMT) quantification
 
 Protein identification and TMT quantification were performed using Proteome Discoverer (v2.1, Thermo Fisher Scientific). MS2 spectra were searched against Mus musculus protein database (UniProt, 25,510 entries, downloaded on 10/03/2017) using the following search parameters: MS1 and MS2 tolerance were set to 10 ppm and 0.6 Da, respectively; carbamidomethylation of cysteines (57.02146 Da) and TMT labeling of lysine and N-termini of peptides (229.16293 Da) were considered static modifications; oxidation of methionine (15.9949 Da) and deamidation of asparagine and glutamine (0.98401 Da) were considered variable. Percolator PSM validator was used to filter Identified proteins and peptides to retain only those that passed ≤2% FDR threshold. Quantitation was performed using high-quality MS3 spectra (average signal-to-noise ratio of 6% and <50% isolation interference). A total of 6919 proteins were quantified and 5437 proteins were common in the two TMT experiments. The mean and median of Pearson’s correlation coefficients between the abundance profiles of individual proteins in both TMT datasets were 0.68 and 0.84, respectively. There were 3631 proteins whose abundance profile correlations were greater than the mean, which we considered consistent between the two TMT experiments. For downstream analysis, the mean-centered normalized data were used.
 
-## LC-MS3 analysis
+#### LC-MS3 analysis
 
 For raw data acquisition from a total of 28 runs (14 in duplicate), an Orbitrap Fusion (Thermo Fisher) and Rapid Separation Liquid Chromatography (RSLC) Systems UltiMate 3000 nano-Ultra Performance Liquid Chromatography (UPLC) (Dionex) were used. To increase accuracy and confidence in protein abundance measurements, a multinotch-MS3 analysis method was employed for MS data analysis. Two microliters from each fraction were resolved in 2D on a nanocapillary reverse phase column (Acclaim PepMap C18, 2 µm particle size, 75 μm diameter × 50 cm length, Thermo Fisher) using a 0.1% formic/acetonitrile gradient at 300 nl/min (2%–22% acetonitrile in 150 min, 22%–32% acetonitrile in 40 min, 20-min wash at 90% acetonitrile, followed by 50-min reequilibration) and sprayed directly onto the Orbitrap Fusion with EasySpray (Thermo Fisher; Spray voltage (positive ion) = 1900 V, Spray voltage (negative ion) = 600 V, method duration = 180 min, ion source type = nanoelectrospray ionization (NSI)). The mass spectrometer was set to collect the MS1 scan (Orbitrap; 120 K resolution; automatic gain control [AGC] target 2 × 105; max injection time [IT] 100 ms), and then data-dependent Top Speed (3 s) MS2 scans (collision-induced dissociation; ion trap; NCD 35; AGC 5 × 103; max IT 100 ms). For multinotch-MS3 analysis, the top 10 precursor ions from each MS2 scan were fragmented by high-energy collisional dissociation, followed by Orbitrap analysis (NCE 55; 60 K resolution; AGC 5 × 104; max IT 120 ms; 100–500 m/z scan range).
 
-## Tandem mass tag (TMT) data analysis
+#### Tandem mass tag (TMT) data analysis
 
 Raw MS data preprocessing and TMT protein quantification were performed using MSFragger (Kong et al., 2017) (peptide identification), the Philosopher toolkit (da Veiga Leprevost et al., 2020) (peptide validation and protein inference, FDR filtering, and extraction of quantitative information from MS scans), and TMT-Integrator (protein quantification and normalization) as previously described (Djomehri et al., 2020). A total of 6919 proteins were quantified and 5437 proteins were common in the two TMT experiments. The mean and median of Pearson’s correlation coefficients between the abundance profiles of individual proteins in both TMT datasets were 0.68 and 0.84, respectively. There were 3631 proteins whose abundance profile correlations were greater than the mean, which we considered consistent between the two TMT experiments. For downstream analysis, the mean-centered normalized data were used. The candidate markers of differentially abundant proteins for each macrophage subtype were identified by a one-tailed t-test for each direction of up- and/or downregulation against the remaining subtypes with a p value threshold of 0.001. No multiple testing correction was made in favor of downstream functional analysis.
 
 The MS proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD028632.
 
-## Metabolite sample preparation
+### Metabolite sample preparation
 
 Intracellular metabolite fractions were prepared from cells grown in nontissue culture-treated 6-well plates (Corning) that were lysed with cold (−80°C) 80% methanol, then clarified by centrifugation. Metabolite levels of intercellular fractions were normalized to the protein content of a parallel sample, and all samples were dried via speed vac after clarification by centrifugation. Media samples were prepared by collecting 200 µl of conditioned or basal media and adding to 800 µl of cold 100% methanol. The resultant was clarified by centrifugation and lyophilized via speed vac. Dried metabolite pellets from cells or media were resuspended in 35 μl 50:50 HPLC grade methanol:water mixture for metabolomics analysis.
 
-## Metabolomics
+### Metabolomics
 
 Agilent 1290 UHPLC and 6490 Triple Quadrupole (QqQ) Mass Spectrometer (LC–MS) were used for label-free targeted metabolomics analysis, as described previously (Lee et al., 2019). Agilent MassHunter Optimizer and Workstation Software LC–MS Data Acquisition for 6400 Series Triple Quadrupole B.08.00 was used for standard optimization and data acquisition. Agilent MassHunter Workstation Software Quantitative Analysis Version B.0700 for QqQ was used for initial raw data extraction and analysis. For RPLC, a Waters Acquity UPLC BEH TSS C18 column (2.1 × 100 mm, 1.7 µm) was used in the positive ionization mode. For HILIC, a Waters Acquity UPLC BEH amide column (2.1 × 100 mm, 1.7 µm) was used in the negative ionization mode. Further details are found in our previous study (Lee et al., 2019). The unprocessed metabolomics data are presented in Supplementary file 5.
 
-## Bioinformatics and statistical analysis
+### Bioinformatics and statistical analysis
 
 Bioinformatics analyses were performed using R/Bioconductor. Differential expression or abundance analysis for either up- or downregulation was done using a one-tailed t-test for each subtype against all the others. Differential markers were identified using a p value threshold of 0.001. p values were not adjusted for multiple testing in favor of flexibility in downstream analyses and biological interpretations. Heat maps were made using R and Morpheus (https://software.broadinstitute.org/morpheus). Metabolomics pathway analyses were performed using MetaboAnalyst 5.0 (Pang et al., 2021). Bar plots were created using GraphPad Prism 9. GSEA was performed using GSEA 4.1.0 (Subramanian et al., 2005; Mootha et al., 2003), relevant parameters including the c2.cp.kegg.v7.4.symbols gene set, and gene names converted with Mouse_ENSEMBL_Gene_ID_Human_Orthologs_MSigDB.v7.4. Statistical analyses were performed using GraphPad Prism 9. Comparisons of two groups were analyzed using unpaired, two-tailed Student’s t-test. Comparisons with more than two groups were analyzed with one-way analysis of variance with Tukey’s post hoc test. All error bars represent mean with standard deviation.
 

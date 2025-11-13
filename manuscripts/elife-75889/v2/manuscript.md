@@ -13,12 +13,12 @@
 ### Affiliations
 
 1. Department of Cellular Neurobiology, Zoological Institute Braunschweig Germany
-2. https://ror.org/03d0p2685 Neuroinflammation and Neurodegeneration Group, Helmholtz Centre for Infection Research Braunschweig Germany
+2. Neuroinflammation and Neurodegeneration Group, Helmholtz Centre for Infection Research Braunschweig Germany ([ROR:03d0p2685](https://ror.org/03d0p2685))
 3. BRICS - Braunschweig Integrated Centre of Systems Biology Braunschweig Germany
 4. Genome Analytics Group, Helmholtz Center for Infection Research Braunschweig Germany
-5. https://ror.org/03d0p2685 Department of Computational Biology of Infection Research, Helmholtz Centre for Infection Research Braunschweig Germany
-6. https://ror.org/02hh7en24 Department of Medicine, University of Colorado Denver Aurora United States
-7. https://ror.org/05wg1m734 Department of Medicine, Radboud University, Medical Center Nijmegen Netherlands
+5. Department of Computational Biology of Infection Research, Helmholtz Centre for Infection Research Braunschweig Germany ([ROR:03d0p2685](https://ror.org/03d0p2685))
+6. Department of Medicine, University of Colorado Denver Aurora United States ([ROR:02hh7en24](https://ror.org/02hh7en24))
+7. Department of Medicine, Radboud University, Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
 
 † Corresponding author
 
@@ -42,9 +42,17 @@ In the present study, we used hIL-37tg mice to investigate the effect of IL-37 e
 
 ## Results
 
-## Primary microglia from IL-37tg mice exhibit an inflammatory-suppressive response after LPS challenge in vitro
+### Primary microglia from IL-37tg mice exhibit an inflammatory-suppressive response after LPS challenge in vitro
 
 To investigate the effect of IL-37 on microglial cell activation, the release of the pro-inflammatory cytokines IL-6, IL-1β, and TNF-α was analyzed after LPS stimulation of wild-type (WT) and IL-37 transgenic microglial cells (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig1-v2.jpg)
+
+**Figure 1.:** (A) WT and IL-37tg primary microglial cells (P3-5) were plated and stimulated without LPS or with LPS. Cells were treated for 6 hr (B) and 24 hr (B–E). Cells from homozygous transgenic animals released less pro-inflammatory cytokines IL-6 (C), TNF- (D) and IL-1β (E) under different LPS concentration (B-E n=4–9). (F) IL37 mRNA was analyzed in IL-37tg microglial cells at specific intervals after addition of LPS. (G) Levels of IL-6 were measured from the same cells as in (F) and were detectable only after 24 hr (n=3). (H) Levels of IL-6 were measured in WT after addition of increasing concentrations of recombinant IL-37b and 100 ng LPS (H n=6–18). Data are presented as mean ± SEM. * p<0.05, ** p<0.01, *** p<0.001 compared to WT. (B+F + H: 1-way ANOVA with multiple comparison; C-E+G: t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Primary astrocytes respond to an LPS stimulus (100 ng/ml for 24 hr) with increased levels of the pro-inflammatory cytokines IL-6 (A) and TNF-α (B). In contrast to microglial cells, astrocytes from hIL-37tg mice showed no reduction in these two pro-inflammatory cytokines (n=5-10).
 
 First, IL-6 secretion in heterozygous (IL-37wt/tg) and homozygous (IL-37tg/tg) IL-37 transgenic primary microglia was analyzed and compared to IL-6 secretion of WT microglia upon LPS stimulation. The results showed that the amounts of IL-6 secreted by microglial cells from homozygous IL-37 transgenic (IL-37tg/tg) mice were significantly reduced compared to microglial cells from control mice after 24 hr of stimulation with 100 ng/ml and 1 µg/ml LPS and additionally also 6 hr after stimulation with 1 µg/ml LPS (F(2,11)=7.941 p=0.007; p=0.007; p=0.054; F(2,11)=3.915 p=0.052; p=0.043; p=0.359; F(2,9)=12.74 p=0.002; p=0.004; p=0.009) (Figure 1B). Microglial cells from heterozygous IL-37 transgenic mice (IL-37wt/tg) also showed decreased IL-6 secretion, but only after 6 hr of stimulation with 1 µg/ml LPS (F(2,9)=12.74 p=0.002; p=0.009) (Figure 1B). Thus, the immunosuppressive effect of transgenic expression of IL-37 on primary microglia was demonstrated only in this experiment by differences between hetero- and homozygous IL-37 transgenic mice. All subsequent experiments were analyzed using homozygous (IL-37tg/tg) IL-37 transgenic mice (referred to as IL-37tg). Further analysis also confirmed the reduction in inflammatory mediators by measuring the release of IL-6 when other concentrations of the inflammatory stimulus were examined (Figure 1C) and could be extended by the significantly reduced release of TNF-α (Figure 1D) and IL-1β (Figure 1E), compared with primary microglial cells from control mice (IL-6: p=0.1007; p=0.0024; p=0.0001; TNF-α: p=0.0038; p<0.0001; p<0.0001; IL-1β: p=0.0295; p=0.0001; p<0.0001). Remarkably, LPS stimulation caused a detectable increase in the level of transgenic IL37 mRNA after 1 hr, which remained elevated in the following hours up to 24 hr post stimulation (F(7,15)=2.629 p=0.05509; p=0.0171, p=0.0086, p=0.0238) (Figure 1F). As mentioned previously, the amount of IL-6 protein in the supernatant of the same cultures was significantly reduced when IL-37tg microglial cells were compared to identically stimulated control cells (p<0.0001) (Figure 1G). Examining inflammatory responses in primary astrocytes as a different group of glial cells, we did not detect decreased levels of IL-6 and TNF-α in IL-37tg cells 24 hr after LPS stimulation (100 ng/ml) compared with WT primary astrocytic cells (Figure 1—figure supplement 1A,B), confirming the importance of anti-inflammatory IL-37 signaling, which may proceed via microglia but not astrocytes.
 
@@ -52,27 +60,39 @@ To investigate the potential effect of recombinant IL-37 (rIL-37) in inhibiting 
 
 Taken together, these results indicate that microglial cells in particular release lower levels of pro-inflammatory cytokines upon acute inflammatory stimulation in the presence of IL-37.
 
-## Metabolomic profiling of microglial cells from IL-37tg mice reveals an attenuated metabolic response associated with inflammation after LPS stimulation in vitro
+### Metabolomic profiling of microglial cells from IL-37tg mice reveals an attenuated metabolic response associated with inflammation after LPS stimulation in vitro
 
 Recent studies have discovered several metabolic intermediates that contribute directly to immune function. Among them, the TCA cycle-related metabolites succinate and itaconate are novel markers associated with pro-inflammatory macrophage activation and function (He et al., 2021; Michelucci et al., 2021; Mills et al., 2021). To address the question of whether microglial cells expressing the anti-inflammatory cytokine IL-37 are further capable of modulating inflammation-related metabolic changes, we performed intracellular metabolomic analysis of control and IL-37tg microglial cells treated with 10 ng/ml LPS for 24 hr. As expected, many metabolites were significantly elevated in LPS-treated control cells, including itaconate and succinate, both metabolic markers for proinflammatory activation of macrophages (Figure 2A; Michelucci et al., 2021; Tannahill et al., 2013). Levels of both metabolites were significantly less elevated in IL-37tg microglial cells, indicating an attenuated pro-inflammatory response at the metabolic level (Figure 2B and C) (itaconate F(1,20)=174.9 p<0.0001; p<0.0001; p<0.0001; F(1,20)=27.55 p<0.0001; p<0.0001; succinate F(1,20)=98.40 p<0.0001; p<0.0001; p=0.0005; F(1,20)=17.01 p=0.0005; p<0.0001). This is consistent with the profiles of other metabolites of central carbon metabolism showing modest effects after LPS treatment (Figure 2A). We conclude that IL-37tg microglial cells release lower levels of pro-inflammatory cytokines than control cells after LPS stimulation and that IL-37 expression in microglial cells limits LPS-induced pro-inflammatory metabolic reprogramming.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig2-v2.jpg)
 
-**Figure 2.:** WT and IL-37tg microglia were stimulated with 10 ng/ml LPS (based on highly sensitive metabolomics assessments). Metabolomic analysis was performed on these cells. (A) Heatmap of identified significantly altered metabolites after or without LPS stimulation (described as Z-score). (B–C) Significant effects in WT, treated with LPS, were seen with respect to itaconate (B) and succinate (C), whereas these changes were significantly reduced in IL-37tg microglial cells treated with LPS compared with WT cells (n=11). Data are presented as mean ± SEM. *** p<0.001 (two-way ANOVA with multiple comparison).Figure 2—source data 1.
+**Figure 2.:** WT and IL-37tg microglia were stimulated with 10 ng/ml LPS (based on highly sensitive metabolomics assessments). Metabolomic analysis was performed on these cells. (A) Heatmap of identified significantly altered metabolites after or without LPS stimulation (described as Z-score). (B–C) Significant effects in WT, treated with LPS, were seen with respect to itaconate (B) and succinate (C), whereas these changes were significantly reduced in IL-37tg microglial cells treated with LPS compared with WT cells (n=11). Data are presented as mean ± SEM. *** p<0.001 (two-way ANOVA with multiple comparison).
 
-## Microglial activation and inflammatory responses are reduced after LPS challenge in IL-37tg mice
+### Microglial activation and inflammatory responses are reduced after LPS challenge in IL-37tg mice
 
 To test whether the anti-inflammatory properties of IL-37 on microglial cells observed in vitro studies, are similar in vivo, we intraperitoneally injected adult (3–8 month-old) homozygous IL-37tg mice (referred to as IL-37tg) and age-matched control animals with either saline (vehicle control group) or LPS (2x0.5 mg/kg) (Figure 3A). Both experimental groups showed significant weight loss in response to systemic LPS injection, but the effect was significantly higher in control mice than in IL-37tg mice (weight loss F(1,17)=220.5 p<0.0001; p<0.0001; p<0.0001; F(1,41)=1.486 p=0.2299; p=0.0139) (Figure 3B). We next examined the effect of systemic administration of LPS on neuroinflammation by using brain homogenates for ELISA assays and also by isolating microglia from the brains of controls and LPS-treated animals for FACS analyzes. Control mice treated with LPS had a significantly higher percentage of CD68-expressing microglial cells (gated on the CD11b+/CD45low population) (CD68 F(1,6)=19.52 p=0.0045; p=0.0017; p>0.9999; F(1,6)=48.42 p=0.0004; p=0.0001) (Figure 3C–D) compared to the cells of control animals treated with saline. Similarly, IL-1β levels in the brain of LPS-treated WT mice were significantly higher than those of saline-treated WT controls (IL-1β F(1,7)=9.399 p=0.0182; p=0.0244; p=0.7541; F(1,7)=3.182 p=0.0935; p=0.0366) (Figure 3E). Remarkably, IL-37tg animals showed no significant changes in CD68-expressing microglia and IL-1β levels when challenged with LPS in the same manner compared with matched controls (Figure 3C–E). Further analysis of pro-inflammatory cytokines IL-6 and TNF-α showed no significant changes between WT and IL-37tg mice treated with LPS and control groups, but a trend toward higher levels of IL-6 was observed in WT brain homogenates after LPS challenge (Figure 3—figure supplement 1A,B). Further investigation of cell populations in the brains of WT and IL-37tg mice after LPS stimulation underscored the importance of the IL-37 response, particularly in microglial cells (Figure 3—figure supplement 2A-E), whereas macrophages (gated on the CD11b+/CD45high population) showed no changes in CD68-expressing cells after LPS stimulation or between genotypes (Figure 3—figure supplement 2F-H). In addition, analysis of cell numbers in all experimental groups revealed a generally high number of microglial cells in the brain of the animals (Figure 3—figure supplement 2D and K) and, in contrast, very low numbers of macrophages (Figure 3—figure supplement 2G and K) and leukocytes (gated on the CD11b-/CD45high population) (Figure 3—figure supplement 2J-K), again highlighting the important role of microglia in this scenario.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig3-v2.jpg)
+
+**Figure 3.:** (A) WT and IL-37tg mice were stimulated with saline or LPS. (B) IL-37tg animals exhibited significantly less weight loss compared to WT mice. However, IL-37tg mice also had a significant weight change compared to saline treated mice (n=10–22). Microglial cell activation was analyzed by FACS method. (C–D) Microglial cells were identified as CD11b+ and CD45low cells and analyzed for CD68 expression. IL-37tg mice had a lower percentage of cells with CD68 expression compared with WT mice after LPS stimulation (n=4) (C–D). (E) In addition, WT mice exhibited a significant increase in IL-1β levels after LPS treatment, whereas IL-37tg mice did not (n=6–8). (F–I) Morphological analysis of microglial cells showed an increased number of IBA-1-positive cells in WT animals treated with LPS compared with saline-treated animals. In contrast, there is no increased IBA-1-positive cell number in IL-37tg animals after LPS stimulation (n=9–18; n=18–30 cells for processes). (J) Representative images of IBA-1-positive cells (red) and DAPI (blue); scale bar 40 µm. Data are shown as mean ± SEM. * p<0.05, ** p<0.01, *** p<0.001, (B-I: 2-way ANOVA with multiple comparison).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Pro-inflammatory cytokines IL-6 and TNF-α were measured in brain lysates from mice treated with LPS or saline (control). WT Mice showed slightly increased levels of IL-6 after LPS compared with mice treated with saline, whereas hIL-37tg mice did not show increased IL-6 levels (A) (n=7-10); TNF-α levels were not altered in both WT and hIL-37tg mice after LPS challenge (B) (n=3-5).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–B) Fluorescent activated cell sorting (FACS) method was used to analyze microglial activation with respect to CD68 expression (n=4). In forward/side scatter (FSC/SSC), the region of interest (ROI) was selected (A) and analyzed for two monocyte markers (CD11b and CD45) (B). (C–J) CD68 expressing cells were analyzed in microglia (CD11b+/CD45low) (C–E), macrophages (CD11b+/CD45high) (F–H), and leukocytes (CD11b-/CD45high) (I–J). (K) The number of cells in the different populations is shown in the experimental groups.
+
 The activation feature of microglial cells is reflected in the total number of microglial cells in the brain parenchyma and the number of primary processes of these CNS resident immune cells. For example, a higher number of IBA-1-positive cells and a reduced number of primary processes correlate with increased microglial activation (Hanisch and Kettenmann, 2021; Papageorgiou et al., 2015; Wolf et al., 2017). Therefore, we performed immunostaining with the known microglial marker IBA-1 on brain sections obtained from the animals of both genotypes treated with either saline or LPS (Figure 3F–J). A significant increase in the number of IBA-1 positive cells was observed in the CA1 subregion of the hippocampus and in the cortex of LPS-treated animals compared with saline-treated control animals. However, in the IL-37tg mice, LPS did not result in a significant increase in the number of microglial cells (IBA-1 CA1 F(1,25)=5.222 p=0.0311; p=0.0024; p>0.9999; F(1,34)=4.951 p=0.0328; p=0.0027;; IBA-1 Cx F(1,25)=15.97 p=0.0005; p=0.0002; p=0.3234; F(1,34)=5.159 p=0.0296; p=0.0054) (Figure 3F and H). Further analysis of the number of microglial primary processes showed no differences between animals in the control and the IL-37tg groups treated with either saline or LPS, except that microglial primary processes were significantly increased in the cortex of IL-37tg mice treated with LPS compared with saline-treated IL-37tg mice, which may indicate more branched microglial features (processes CA1 F(1,46)=1.066; p>0.9999; p=0.6229; processes Cx F(1,104)=9.865; p=0.1401; p=0.0232) (Figure 3G1). Overall, these results demonstrate the anti-inflammatory effect of IL-37 expression on brain after LPS challenge, possibly mediated via microglial cells.
 
-## IL-37tg mice are protected from functional and structural neuronal deficits after LPS challenge
+### IL-37tg mice are protected from functional and structural neuronal deficits after LPS challenge
 
 Neuroinflammation has been shown to impair hippocampal network function (Hosseini et al., 2018; Beyer et al., 2020). Because previous studies indicate a significant induction of neuroinflammation after systemic LPS challenge, we hypothesized that IL-37 might also have a beneficial effect on hippocampal network function and structure. Therefore, as described above, we injected control and IL-37tg animals with either saline or LPS for subsequent analysis of neuronal function and structure. We, first examined long-term synaptic plasticity, the ability of synapses to change their transmission strength, which is considered a cellular correlate of learning and memory processes (Bliss and Collingridge, 1993). To this end, we induced long-term potentiation (LTP) at the Schaffer collateral CA3 to CA1 pathway in the hippocampus. After 20 minutes of baseline recording, we observed significantly impaired LTP in the acute hippocampal slices of control mice treated with LPS compared to saline (F(1,28)=4.459 p=0.0438) (Figure 4A). In contrast, IL-37tg animals treated with LPS did not show comparable deficits in synaptic plasticity compared to saline treated IL-37tg animals (F(1,23)=0.0849 p=0.7734) (Figure 4B). These differences were also evident in the maintenance phase of LTP (last 5 min of the measurement) (last 5 min F(1,22)=7.887 p=0.0102; p=0.0043; p>0.9999) (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig4-v2.jpg)
 
-**Figure 4.:** (A) WT animals stimulated with LPS showed significant impairment of theta burst stimulation-induced LTP (TBS) compared with WT, which were treated with saline. (B) In contrast, IL-37tg mice showed no significant impairment of LTP after LPS treatment. (C) Mean LTP magnitude (average of 55–60 min after TBS) was significantly lower in WT mice treated with LPS, while IL-37tg mice showed no significant differences (n of mice 3–4; n of acute slices 11–17). (D–F) Spine density in apical dendrites of the CA1 hippocampal neurons and in the superior DG neurons was significantly decreased in WT mice treated with LPS, whereas spine density of IL-37tg animals treated with LPS was not affected (n of mice 3–4; n of dendrites 13–25) (D and E). (F) Representative images of dendritic spines of hippocampal CA1 neurons in the tested groups were shown; scale bar 5 µm. (G) WT acute slices stimulated with LPS showed significant impairment of TBS-induced LTP compared with WT acute slices treated with ACSF. (H) In contrast, acute slices from IL-37tg mice showed no significant impairment of LTP after LPS treatment. (I) Mean LTP magnitude (mean of 55–60 min after TBS) was significantly lower in acute slices from WT mice treated with LPS, whereas slices from IL-37tg mice showed no significant differences (n of mice 3–4; n of acute slices 14–17). Data are presented as mean ± SEM. * p<0.05, *** p<0.001, (A-I: two-way ANOVA with multiple comparison).Figure 4—source data 1.
+**Figure 4.:** (A) WT animals stimulated with LPS showed significant impairment of theta burst stimulation-induced LTP (TBS) compared with WT, which were treated with saline. (B) In contrast, IL-37tg mice showed no significant impairment of LTP after LPS treatment. (C) Mean LTP magnitude (average of 55–60 min after TBS) was significantly lower in WT mice treated with LPS, while IL-37tg mice showed no significant differences (n of mice 3–4; n of acute slices 11–17). (D–F) Spine density in apical dendrites of the CA1 hippocampal neurons and in the superior DG neurons was significantly decreased in WT mice treated with LPS, whereas spine density of IL-37tg animals treated with LPS was not affected (n of mice 3–4; n of dendrites 13–25) (D and E). (F) Representative images of dendritic spines of hippocampal CA1 neurons in the tested groups were shown; scale bar 5 µm. (G) WT acute slices stimulated with LPS showed significant impairment of TBS-induced LTP compared with WT acute slices treated with ACSF. (H) In contrast, acute slices from IL-37tg mice showed no significant impairment of LTP after LPS treatment. (I) Mean LTP magnitude (mean of 55–60 min after TBS) was significantly lower in acute slices from WT mice treated with LPS, whereas slices from IL-37tg mice showed no significant differences (n of mice 3–4; n of acute slices 14–17). Data are presented as mean ± SEM. * p<0.05, *** p<0.001, (A-I: two-way ANOVA with multiple comparison).
 
 To assess the effects of IL-37 on neuronal structure, we analyzed the dendritic spine density of hippocampal neurons from all experimental groups. Dendritic spines are small protrusions representing the postsynaptic part of excitatory synapses and were counted on the apical dendrites of CA1 neurons as well as on the dendrites of dentate gyrus neurons. A significant decrease in the density of dendritic spines of CA1 pyramidal neurons and dentate gyrus cells was observed in control mice treated with LPS compared with saline-treated mice (spines CA1 F(1,32)=22.81 p<0.0001; p<0.0001; p=0.1145; F(1,44)=26.68 p<0.0001; p<0.0001; spines DG F(1,26)=3.307 p=0.0805; p=0.0062; p>0.9999; F(1,36)=0.529 p=0.4718; p=0.0295) (Figure 4D–F).
 
@@ -82,17 +102,37 @@ Given the possibility that peripheral immune cells in IL-37tg mice also produce 
 
 Here, acute hippocampal slices from control and IL-37tg animals were prepared and stimulated with LPS (10 µg/ml) in ACSF for 2 hr after a resting period before recording. In the control groups, the sections were kept in ACSF only. These further results indicated that direct IL-37 expression in the acute slices of IL-37tg mice appears to be sufficient to reverse the impairments in LTP after LPS administration. This is because, in contrast to the significant impairment of LTP after LPS administration in acute hippocampal slices of control mice (LTP WT F(1,30)=4.925 p 0.05) (Figure 4G), no impairment of LTP was observed in acute slices of IL-37tg mice when treated with LPS (LTP IL-37tg F(1,26)=0.0139 p=0.9069) (Figure 4H). This effect was also evident in the data for the last 5 min of the measurement, which represents the maintenance phase of LTP (last 5 min F(1,27)=4.613 p=0.0409; p=0.0285; p 0.9999) (Figure 4I). These results clearly demonstrate that local IL-37 expression in the brain can prevent the deleterious effects of LPS on neuronal function.
 
-## Recombinant IL-37 reduces inflammatory response in vivo and alleviates short-term memory impairment induced by pro-inflammatory cytokine stimulation
+### Recombinant IL-37 reduces inflammatory response in vivo and alleviates short-term memory impairment induced by pro-inflammatory cytokine stimulation
 
 To investigate the anti-inflammatory properties of the recombinant IL-37 (rIL-37) protein in vivo, wild-type mice were pretreated with either 300 ng rIL-37 per animal (i.p.) or an equivalent amount of vehicle (saline, control group) for 3 consecutive days. On day 4, animals were injected with 60 ng i.p. IL-1β or saline as control (Figure 5A). After another 24 hr, the animals were trained and tested with the Y-Maze behavioral test to assess short-term memory based on the mice’s natural willingness to explore a new area. The score for spontaneous alternation depends on the mouse’s tendency to seek out a less recently entered arm of the maze. Therefore, this test also measures spatial hippocampus-dependent memory function.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig5-v2.jpg)
+
+**Figure 5.:** (A) WT mice were pretreated with either saline or rIL-37 for three consecutive days and then injected with saline or IL-1β. (B) WT mice pretreated with saline and then stimulated with IL-1β failed to perform the Y-maze test, whereas WT mice pretreated with rIL-37 and then stimulated with IL-1β performed the test without deficits (n=4). (C and D) Although the pro-inflammatory cytokine levels of IL-6 and IL-1α were significantly increased in stimulated WT mice pretreated with rIL-37 compared with the control group, the mice treated with rIL-37 showed a significant decrease in cytokine levels after immunostimulation with IL-1β compared with saline treated group (n=4–6). Data are presented as mean ± SEM. ** p<0.01, *** p<0.001, (B-D: two-way ANOVA with multiple comparison).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) IL-1β (A), IL-6 (B), and TNF-α (C) measured in control and LPS-treated WT or rIL-37-pretreated WT mice (n=3-4).
 
 In the absence of rIL-37 pretreatment, we detected a significant performance deterioration in IL-1β-injected mice compared to the corresponding saline-injected control group (Y-Maze F(1,6)=18.25 p=0.0052; p=0.0046; p=0.7313) (Figure 5B). In contrast, pretreatment with rIL-37 protected the mice from the behavioral deficits induced by IL-1β administration (F(1,6)=9.899 p=0.0199; p=0.0024). To analyze the inflammatory mediators in the CNS of these animals, the levels of the pro-inflammatory cytokines IL-6 and IL-1α were measured in brain lysates. We observed that animals stimulated with rIL-1β showed significantly elevated levels of both cytokines compared with the corresponding controls (IL-6 F(1,16)=264.6 p<0.0001; p<0.0001; p<0.0001; F(1,16)=10.27 p=0.0055; p=0.0004; IL-1α F(1,16)=132.0 p<0.0001; p<0.0001; p<0.0001) (Figure 5C–D). However, pretreatment with rIL-37 resulted in significantly lower levels of IL-6 and IL-1α in the brains of rIL-1β immunostimulated mice (F(1,16)=17.47 p=0.0007; p=0.0003) (Figure 5C–D). Taken together, these data indicate the beneficial effects of IL-37 expression on cognitive function in immunostimulated mice.
 
 To investigate the possible preventive effect of rIL-37 on LPS-induced neuroinflammation, in addition to IL-1β-immunostimulation, WT mice were pretreated with either 100 ng rIL-37 per animal (i.p.) or an equivalent amount of vehicle (saline, control group) for 3 consecutive days. On day 3 and 4, the animals were injected twice with LPS (0.5 mg/kg) and 3 hr after the last injection, the level of proinflammatory cytokines in the brain was measured (Figure 5—figure supplement 1A-C). The results showed that although injection of LPS in the saline-treated mice resulted in a significant increase in the levels of IL-1β (p<0.01), IL-6 (p=0.04), and TNF-α (p<0.004), only the production of IL-1β was significantly increased in the mice receiving rIL-37 (p=0.001), and the levels of TNF-α (p=0.97) and IL-6 (p=0.63) were not significantly increased in the brains of the mice pretreated with rIL-37 (Figure 5—figure supplement 1A-C). These results also highlight the protective role of rIL-37 in modulating LPS-induced proinflammatory cytokines.
 
-## IL-37 shows beneficial effects on neuronal deficits and microglia activation in APP/PS1-IL37tg animals
+### IL-37 shows beneficial effects on neuronal deficits and microglia activation in APP/PS1-IL37tg animals
 
 Our results demonstrated the protective properties of IL-37 on microglial activation, production of pro-inflammatory mediators, impairment of cognition, and disruption of long-term potentiation (LTP) after acute immunostimulatory challenge. To investigate the potential of IL-37 to attenuate chronic inflammation, we next analyzed transgenic APP/PS1 mice, which serve as a widely used animal model for Alzheimer’s disease (Jankowsky et al., 2004), and crossed this mouse strain with hIL-37tg animals (Figure 6A; Nold et al., 2010).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig6-v2.jpg)
+
+**Figure 6.:** (A) WT, APP/PS1, and APP /PS1-IL37tg mice were analyzed at 6, 9–12, and 20–23 months of age. (B–C) Pro-inflammatory cytokine levels of IL-6 and IL-1β (although for IL-1β was not statistically significant) were increased in 9–12 months old APP/PS1 mice compared with WT mice, whereas APP/PS1-IL37tg mice showed no increase in pro-inflammatory cytokines (n=6–10). (D–G) Microglial cells were identified as CD11b+ and CD45low cells and analyzed for CD68 expression. Nine to 12-month-old APP/PS1 mice showed a significantly increased percentage of cells with CD68 expression compared with WT mice, whereas APP/PS1-IL37tg mice did not show a significant increase (D and F). Although 6- and 20–23 month-old APP/PS1-IL37tg mice had a significantly higher amount of CD68-expressing cells compared with WT mice, the percentage of CD68-expressing cells was reduced compared with APP/PS1 animals (6 months: n=4–6; 9–12 months: n=3–6; 20–23 months: n=3–7). (H–J) Plaque analysis showed significantly lower plaque burden (I) and reduced plaque size (J) in the hippocampal (Hp) and cortex (Cx) regions compared between APP/PS1-IL37tg mice and APP/PS1 (n=27–42). Representative image of Congo red staining in 30 µm sections; scale bar 500 µm (H). (K–M) Aβ uptake by microglial cells by measuring single cells in FACS system. Gating strategy for positive Cx3CR1-GFP cells and positive staining for MXO4 (K–L). Quantified analysis of Aβ uptake showing significantly higher uptake in APP/PS1-IL37tg cells compared with APP/PS1 cells (n=5–11) (M). Data are presented as mean ± SEM. * p<0.05, ** p<0.01, *** p<0.001 compared to WT, # p<0.05, ## p<0.01, ### p<0.001 compared to APP/PS1. (B-G and M: one-way ANOVA with multicolumn comparison; I-J: t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Plaque staining in the cortex area of APP/PS1 mice (A) and APP/PS1-IL37tg mice (B). A single plaque is shown in the lower right inset. (C–D) Plaque staining in the hippocampal region of APP/PS1 mice (C) and APP/PS1-IL37tg mice (D). Individual plaques are shown in the lower left inset (scale bar 200 µm).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Gating strategy of CX3CR1-GFP+cell. (D–E) Gating strategy for MX04-(neg) and MX04+(pos) cells depending on the Pacific-Blue-Methoxy-X04 signal. (G–I) Cell counts of MX04- and MX04 + cells in WT, APP/PS1 and APP/PS1-IL37tg (n=5-11).
 
 First, we examined the levels of pro-inflammatory cytokines in the brains of 9–12 month-old control, APP/PS1 and APP/PS1-IL37tg transgenic mice (Figure 6B–C). Compared with control, APP/PS1 animals exhibited significantly higher IL-6 levels and a slight increase in IL-1β levels, although this was not statistically significant, whereas APP/PS1-IL37tg mice showed no increase in IL-6 and IL-1β levels. Moreover, the levels of these pro-inflammatory cytokines were significantly reduced in APP/PS1-IL37tg compared with APP/PS1 mice (IL-1β F(2,19)=5.224 p=0.0156; p=0.0903; p=0.248; p=0.0046; IL-6 F(2,21)=3.6 p=0.0452; p=0.022; p=0.5264; p=0.0466) (Figure 6B–C). We then examined microglial cell activation by FACS analysis. For this purpose, the percentage of microglial cells expressing the activation marker CD68 (Jurga et al., 2020; Smith and Koch, 1987; Verbeek et al., 1995) (identified as a CD11b+/CD45low cell population in the brain) was analyzed at different ages of mice (Figure 6D–G).
 
@@ -102,13 +142,29 @@ To further analyze whether the observed lower Aβ plaques in APP/PS1-IL37tg were
 
 The APP/PS1 mouse model of Alzheimer’s disease shows cognitive deficits as early as 8 months of age (Jankowsky et al., 2004; O’Leary and Brown, 2009). To investigate whether IL-37 could positively affect learning and memory in this animal model, we performed the Morris water maze (MWM) behavioral test on 9–12 month-old control, APP/PS1, and APP/PS1-IL-37tg animals (Figure 7A and Figure 7—figure supplement 1). During the 8-day acquisition phase in the MWM, escape latency decreased progressively in all groups (Figure 7B). However, APP/PS1 animals showed increased escape latency on day 1 and day 3–6 of the training phase compared to control mice (escape latency F(2,30)=10.5 p=0.0003; WT vs. APP/PS1 day 1 p=0.0463; day 3 p=0.007; day 4 p=0.0017; day5 p=0.0015; day 6 p=0.005) (Figure 7B). Subsequently, the reference memory test (probe trial) was performed on day 3 before the training and on day 9, 24 hr after the last training session. During the probe trials, the mice were tested without the presence of the escape platform. The percentage of time mice spent in each quadrant was measured, and preference for the target quadrant (TQ) was compared with the three non-target quadrants (NT). Control mice showed an explicit preference for the target quadrant at day 9 (t=11.45, df = 22 p<0.0001), whereas in the comparison APP/PS1 animals showed no preference for any of the quadrants (t=0.9874, df = 18 p=0.3365) (Figure 7C). Remarkably, APP/PS1-IL37tg mice showed significantly higher preference for the target quadrant, similar to what was observed in control animals (APP/PS1-IL37tg PT t=3.705, df = 20 p=0.0014) (PT F(2,30)=8.415 p=0.0013; p=0.0009; p=0.0505) (Figure 7C). In addition, heat maps of the different groups (1 example per group) were shown to better represent the performance of the animals in the reference memory test. These heat maps showed a prolonged time of control and APP/PS1-IL37tg mice in the target quadrant, whereas APP/PS1 mice did not show this preference (Figure 7D).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig7-v2.jpg)
+
+**Figure 7.:** (A) WT, APP/PS1 and APP/PS1-IL37tg mice were analyzed at 9–12 months of age. (B–D) The cognitive deficits of APP/PS1 mice in the spatial learning test of the Morris Water Maze could be restored in APP/PS1-IL37tg animals. WT APP/PS1 and APP/PS1-IL37tg mice showed learning behavior during the training phase of the spatial learning test. APP/PS1 animals showed higher escape latency during acquisition on day 3–6 compared to WT mice (B). WT Mice and APP/PS1-IL37tg mice show a significant preference for the target quadrant (TQ), whereas APP/PS1 mice showed no preference (C). Representative heat maps of mice from each group demonstrated the results of the reference test (D) (n=10–12). (E–G) The LTP deficits in APP/PS1 mice could be rescued in APP/PS1-IL37tg mice in the induction phase (20–25 min). However, LTP deficits were not restored in APP/PS1-IL37tg animals in the maintenance phase (75–80 min) (n of animals 3–4; n of slices 12–18). (H–I) Dendritic spine density was significantly reduced in APP/PS1 animals compared to WT, whereas there was no significant reduction in spine density in APP/PS1-IL37tg (n=21–23), scale bar 5 µm. Data are presented as mean ± SEM. * p<0.05, ** p<0.01, *** p<0.001 compared to WT, ^^ p<0.01, ^^^ p<0.001 compared to NT (non-target quadrants); (B+E: two-way ANOVA with multiple comparison; C: t-test; C-I: one-way ANOVA with multiple comparison).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Average age of each genotype trained in the Morris water maze is displayed (n=10-12).
+
 The observed improvement of learning and memory in APP/PS1-IL37 transgenic mice prompted us to analyze whether hippocampal network function could also be improved by this genotype. Therefore, we measured synaptic plasticity at the Schaffer collateral pathway as described above in these animals. Acute hippocampal slices from APP/PS1 mice showed significant deficits in LTP compared to corresponding slices from age-matched control mice (F(2,45)=9.286 p=0.0004) (Figure 7E). This was evident during both the induction (20–25 min of recording) and maintenance (75–80 min of recording) phases of LTP (first 5 min F(2,45)=7.09 p=0.0021; p=0.0016; last 5 min F(2,45)=9.354 p=0.0004; p=0.0014) (Figure 7F–G). Notably, the induction phase (but not the maintenance phase) of LTP was also indistinguishable in the slices from control and APP/PS1-IL37tg mice (first 5 min F(2,45)=7.09 p=0.0021; p=0.5444; last 5 min F(2,45)=9.354 p=0.0004; p=0.0023) (Figure 7F–G). Thus, it is clear that expression of IL-37 at 9 months of age in APP/PS1 mice can rescue the induction phase of LTP, which may be sufficient for the mice to perform spatial memory tasks.
 
 To determine the rescued phenotypes observed in APP/PS1-IL37tg mice at the cellular level, neuronal morphology of the CA1 subregion of the hippocampus was analyzed in all experimental groups. A significant reduction in the density of dendritic spines was observed in 9–12 month-old APP/PS1 mice compared to age-matched control mice (dendritic spines F(2,63)=6.318 p=0.0032; p=0.0026) (Figure 7H–I). However, comparable dendritic spine density was detected between control and APP/PS1-IL37tg mice, indicating a rescue effect by IL-37 expression (dendritic spines F(2,63)=6.318 p=0.0032; p=0.0536) (Figure 7H–I). Taken together, these results suggest that expression of IL-37 in transgenic animals plays a protective role against chronic neuroinflammation by ameliorating the learning and memory deficits associated with the APP/PS1 mouse model and rescuing the underlying cellular correlates.
 
-## RNA sequencing of microglia from IL-37tg mice reveals a slightly different gene expression profile after LPS challenge in vivo
+### RNA sequencing of microglia from IL-37tg mice reveals a slightly different gene expression profile after LPS challenge in vivo
 
 Our results suggest that expression of IL-37 plays a protective role in both acute and chronic neuroinflammatory processes in the brain. Remarkably, in vitro experiments suggest that IL-37 exerts its anti-inflammatory effects most likely via microglial cells. To further investigate the function of microglia in this scenario, RNA sequencing was performed on microglial cells isolated from WT and IL-37tg mice treated with either saline or LPS. For this purpose, microglial cells were isolated using CD11b MicroBeads from WT and IL-37tg mice injected twice with saline or LPS 3 hr after the last injection, and then the mRNA expression profile of microglia was analyzed. The results showed that LPS challenge in vivo induced 11014 differentially expressed genes (DEGs) in microglial cells from WT and IL-37tg mice. The 500 most significantly expressed genes were shown in a heat map (Figure 8A). This highlights the fact that even acute systemic LPS exposure leads to tremendous changes in the gene expression profile specifically in microglia, suggesting a strong communication between the peripheral immune system and the brain. Gene set enrichment analysis (GSEA) showed that LPS stimulated genes of both genotypes associated with interleukin-1 signaling (Figure 8B). Although we did not detect significant changes in gene expression between WT and IL-37tg microglial cells after LPS stimulation (Figure 8C), some genes were identified that showed a slightly altered expression profile and have the potential to influence inflammatory outcome. Examples are: Saa2, which is highly expressed in response to inflammation and tissue injury (Ye and Sun, 2015; Figure 8D), Vgf, which is expressed after nerve injury and inflammation in neurons of both peripheral and central nervous systems and contributes significantly to the inflammatory processes, as blockade of VGF reduces the secretion of pro-inflammatory cytokines (Busse et al., 2014; Figure 8E), Bcl6b, which is involved in the regulation of inflammatory response and type 2 immune response (Koyasu and Moro, 2011; Figure 8F), Il23a, which is associated with autoimmune cholangitis and inflammatory bowel disease (Ando et al., 2012; Figure 8G), and Icam1, which plays a critical role in inflammatory processes and in the T-cell-mediated host defense system (van de Stolpe and van der Saag, 1996; Figure 8H). These genes were upregulated in WT mice after LPS administration, whereas they were differentially expressed to a lesser extent in IL-37tg mice treated with LPS. In addition, some genes were downregulated in the microglial cells of WT mice challenged with LPS, which was the case to a lesser extent in IL-37tg mice. For example, the Tk2 gene, the deficiency of which is highlighted in mitochondrial depletion syndrome (Zhou et al., 2013; Figure 8I). The Kcnj9 gene, which encodes the Na+/K+-ATPase pump and is important for brain function. Interestingly, this gene is significantly downregulated in schizophrenia (Liu et al., 2019; Figure 8J). The Kif21b gene, a kinesin protein that promotes intracellular transport and controls microtubule dynamics. Downregulation of this gene results in neurodevelopmental abnormalities due to imbalanced canonical motor activity (Asselin et al., 2020; Figure 8K). In addition to the above genes, some other important genes were equally regulated in both genotypes after LPS challenge, such as Gpr84, known to be regulated by pro-inflammatory cytokines such as TNF-α or IL-1 (Bouchard et al., 2007; Figure 8—figure supplement 1A), Mmp3, which is associated with brain inflammation and microglial activation (Kim et al., 2005; Figure 8—figure supplement 1B), Acod1, as a key regulator of immune metabolism in infection and inflammation (Wu et al., 2020; Figure 8—figure supplement 1C), and the IL-18 receptor (Il18r), indicating increased expression of the potential receptor for IL-37 in microglia after systemic LPS challenge (Figure 8—figure supplement 1D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig8-v2.jpg)
+
+**Figure 8.:** (A) Heatmap shows z-normalized gene expression profiles of the 500 most highly regulated genes (out of 11014 genes with adjusted pValue <0.05). Two clusters of co-regulated genes were identified, representing up- and down-regulated genes after LPS treatment. Each column shows expression data of individual mouse transcriptomes. (B) Gene Set Enrichment Analysis (GSEA) was performed for the 500 most up-regulated genes, which are also shown in the heat map. Each cluster (1 and 2) was tested for enriched gene sets defined by the Reactome Pathway Database (https://reactome.org/). The number of genes that could be linked to gene sets in the Reactome Pathway Database is indicated under each cluster name. The terms for the major gene sets are shown. The size of the circles corresponds to the ratio of genes found in each gene set. Significance of enrichment is expressed by a blue-red color code. (C) Differential expression comparing WT and IL-37tg after LPS stimulation is shown by the Volcano plot. Log2FC and the corresponding adjusted pValue are shown for each gene analyzed (18,049 in total). The dashed lines show the limits for significant gene regulation: –1 1, FDR <0.05. (D–K) Changes in gene expression after LPS injection in WT and IL-37tg mice for candidate genes are shown (n=2-3).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/75889/elife-75889-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–D) The changes in expression levels after LPS injection in WT and IL-37tg mice for the candidate genes are shown (n=2-3).
 
 Although this mRNA expression assay for microglia showed that there were no significant differences between the overall gene profile of microglia from WT and IL-37 after LPS challenge, a specifically lower microglial response was nevertheless detectable in IL-37tg mice, which may shed light on the immunomodulatory role of IL-37 in acute and chronic neuroinflammation.
 
@@ -142,37 +198,404 @@ In summary, during chronic neuroinflammation associated with Alzheimer’s disea
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-IBA1 (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#234003, RRID:AB_10641962</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cy2 AffiniPure Goat Anti-Rabbit IgG (H+L) (Rabbit polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 111-225-144, RRID:AB_2338021</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cy3 AffiniPure Goat Anti-Mouse IgG +IgM (H+L) (Mouse polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat#115-165-068, RRID:AB_2338686</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cy3 AffiniPure Goat Anti-Rabbit IgG (H+L) (Rabbit polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat#111-165-144, RRID:AB_2338006</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse CD68-PEClone REA835 (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-112-856</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse CD11b-PerCP-Vio700Clone REA592 (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-113-809</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse CD45-APC (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-110-798</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A7906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Applichem</td>
+      <td>Lot: 4U010421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 04693116001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>D-glucose</td>
+      <td>Roth</td>
+      <td>Art.-Nr. HN06.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Evans Blue tetrasodium salt</td>
+      <td>Tocris</td>
+      <td>Cat# 0845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Fluoro-Gel mounting medium</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 17985–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>GBSS</td>
+      <td>Sigma-Aldrich</td>
+      <td>G9779-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gibco DMEM</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 31885023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gibco Fetal Bovine Serum</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 11573397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gibco HBSS 10 X</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 14065049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gibco L-Glutamine</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 15410314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Applichem</td>
+      <td>Cat# A1067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Applichem</td>
+      <td>Lot: 0000574737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>KH2PO4</td>
+      <td>Applichem</td>
+      <td>Lot: 4Q016683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Methoxy-XO4</td>
+      <td>Abcam</td>
+      <td>ab142818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MgSO4</td>
+      <td>Applichem</td>
+      <td>Lot: 3E000057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Applichem</td>
+      <td>Lot: 8Q012497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaHCO3</td>
+      <td>Roth</td>
+      <td>Art.-Nr. HN01.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Permount Mounting Medium</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# SP15-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Poly-L-lysine solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS# 25988-63-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Recombinant IL-37</td>
+      <td>Moretti et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Recombinant IL-1β</td>
+      <td>Kim et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Triton X-100 Molecular Biology grade BC</td>
+      <td>Applichem</td>
+      <td>Cat# A4975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Trypsin-EDTA Solution 10 X</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS Nr. 9002-07-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>TWEEN 20</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P9416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Biozym Blue Probe qPCR Kit Separate ROX</td>
+      <td>Biozym</td>
+      <td>Cat# 331456 S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>FD Congo-Red Solution Kit</td>
+      <td>FD NeuroTechnologies, Inc.</td>
+      <td>Cat# PS108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>FD Rapid GolgiStain Kit</td>
+      <td>FD NeuroTechnologies, Inc.</td>
+      <td>Cat# PK401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Macherey-Nagel NucleoSpin RNA</td>
+      <td>Thermo Fisher</td>
+      <td>Product Code 15373604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>pegGOLD TriFast</td>
+      <td>Avantor</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ProtoScript II First Strand cDNA Synthesis Kit</td>
+      <td>New England Biolabs Inc.</td>
+      <td>Cat# E6560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>B6;C3-Tg(APPswe,PSEN1dE9)85Dbo/Mmjax mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 005864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 J OlaHsd mice</td>
+      <td>Harlan-Winkelmann or Janvier</td>
+      <td>Cat# 057 (H-W)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>Human Interleukin-37 transgenic mice</td>
+      <td>Nold et al., 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ANY-maze</td>
+      <td>Stoelting</td>
+      <td>RRID:SCR_014289 https://www.stoeltingco.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Wane Rasband NIH, USA</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>IntraCell Version 1.5</td>
+      <td>(C)2000 Institute for Neurobiology Magdeburg</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Video Mot 2</td>
+      <td>TSE Systems</td>
+      <td>https://www.tse-systems.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>G*Power Version 3.1.9.4</td>
+      <td>Heinrich Heine University Düsseldorf, Germany</td>
+      <td>http://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All experiments were performed and analyzed blinded to the experimenter.
 
-## Animals
+### Animals
 
 All animals used in this study were of either sex, equal distributed to the experiments with exception in the behavioral test were only males were used (Figure 7—figure supplement 1). Mice were bred and kept at the animal facility of the TU Braunschweig under standard housing conditions in a 12:12 light:dark cycle at 22 °C with food and water available ad libitum. Transgenic mouse expressing human IL-37 (hIL-37tg mice, also referred as IL-37tg) were provided by Prof. Dr. Philip Bufler, Medical University of Munich. IL-37tg animals were originally generated by injecting fertilized eggs from C57BL/6 females with the pIRES IL-37 expression plasmid (Nold et al., 2010). As a starting pair for these experiments here, a heterozygous female was mated with a heterozygous male. Resulting negative animals, heterozygous and homozygous IL-37tg animals were identified by PCR. The distinction between heterozygous and homozygous animals could be clearly analyzed based on the positive mRNA quantity. Further C57BL/6 J wild-type (WT) mice and APP/PS1ΔE9 (heterozygous breeding) mice were used. The latter mouse line was crossed with the hIL-37 line to create a double-transgenic mouse line (APP/PS1-IL37). In all experiments negative littermates and/or C57BL/6 wild-type mice were used as controls. All experimental procedures were authorized by the animal welfare representative of the TU Braunschweig and the LAVES (Oldenburg, Germany) (33.19-42502-04-16/2170).
 
-## Lipopolysaccharide (LPS) administration
+### Lipopolysaccharide (LPS) administration
 
 In all performed experiments related to any lipopolysaccharide (LPS) stimulus, the same LPS from Escherichia coli (E. coli O127:B8, Sigma Aldrich L 3129) was used. The systemic immune stimulation with LPS was performed by intraperitoneal injection. The body weight of the stimulated animals was monitored to determine the appropriate volume of LPS. Animals were either injected with 2x0.5 mg/kg LPS or 0.9% sodium chloride (NaCl) as a control.
 
-## LPS administration during electrophysiological recordings
+### LPS administration during electrophysiological recordings
 
 To investigate the acute effect of LPS-induced direct immunostimulation and subsequent local IL-37 expression in the CNS, LPS administration was performed during electrophysiological recordings. For this purpose, acute hippocampal slices from adult control and IL-37tg mice were pretreated with LPS (10 µg/ml) 2 hr before and throughout the recording period.
 
-## Administration of recombinant IL-37 together with either IL-1β or LPS
+### Administration of recombinant IL-37 together with either IL-1β or LPS
 
 Wild-type mice were injected intraperitoneally with 300 ng of recombinant IL-37 per mouse for 3 consecutive days, followed by an injection of 60 ng of recombinant IL-1β per mouse.
 
 To test the preventive effect of rIL37 with LPS, WT mice received an intraperitoneal injection of 100 ng of rIL-37 or vehicle for three consecutive days. Two hours after the third injection, mice received an injection of either 0.5 mg/kg LPS or 0.9% sodium chloride (NaCl) as a control, followed by a second injection 24 hr later.
 
-## Cell culture and LPS administration
+### Cell culture and LPS administration
 
 Neonatal mouse brains (P3 – P5) were used for culture preparation as shown previously (Lonnemann et al., 2020). Briefly, the meninges were removed and the brain transferred into HBSS 1 X on ice. Using a 10 ml pipette, the tissue was transferred into a sterile 50 ml conical tube and centrifuged at 2000 rcf for 5 min at 4 °C. The re-suspended pellet (in 5 ml fresh HBSS 1 X) was applied on a cell strainer (100 µm pores). Again after spinning as before the pellet was re-suspended in 10 ml culture media (DMEM +10% FCS+1% Penicillin/Streptomycin) and transferred into a T-75 flask. The mixed culture was incubated in the flask in an incubator at 10% CO2 at 37 °C for 2–3 weeks. After 3 days incubation, the media was replaced 50% with fresh media. In the following every 7 days the media was replaced completely. After 2–3 weeks, the culture has reached confluence and the flasks were shaken at 180 rpm for 3 hr at 37 °C. The media including the microglia cells was collected without disrupting the astrocyte layer on the bottom of the flask and was centrifuged at 3000 rpm for 10 min at room temperature (RT). Microglia cells were plated in 96-well plate with a density of 6x104 cells/well and were treated with different concentrations of LPS for 24 hr. In the last hour of the treatment, ATP (5 mM) was added to the cells.
 
 To prepare a primary astrocyte culture, neonatal mouse brains (P3-4) were used. After removal of the brain, the hippocampus and meninges were carefully removed. The cortices were transferred on ice to fresh HBSS 1 x, and the tissue was homogenized using a 10 ml pipette. The HBSS was then washed off, and the brains were placed in a dissociation solution containing DNAse for 30 min at 37 °C, and the remaining tissue pieces were further dissociated by pipetting. After centrifugation at 800 rpm for 7 min, the supernatant was removed and the cells were resuspended in culture medium (DMEM supplemented with 10% FCS, 1% penicillin/streptomycin) and placed on a 40 µm cell strainer and finally transferred to a T-75 flask coated with poly-D-lysine. When cells reached confluence, they were shaken overnight at 220 rpm to remove other glial cells, and then astrocytes were passaged. The cells were passaged three times until the experiments were performed. Experiments were performed on day in vitro (DIV) 15–19. Astrocytes were plated in a 12-well plate (1×105 cells/well) and maintained for 24 hr followed by a 100 ng/ml LPS stimulus.
 
-## Cytokine measurement of pro-inflammatory IL-6, IL-1β, and TNF-α
+### Cytokine measurement of pro-inflammatory IL-6, IL-1β, and TNF-α
 
 Enzyme-linked immunosorbent assay (ELISA) was used to quantify cytokines in either brain homogenates or supernatants of treated primary microglia cells. Mice were deeply anesthetized with CO2 and killed via decapitation. Brains were isolated and homogenized in STKM buffer (250 mM Sucrose, 50 mM Tris-HCl, 25 mM KCl, 5 mM MgCl2) using the GentleMACS (Miltenyi Biotec) program Protein_01. After centrifugation at 4000 g for 5 min at 4 °C the supernatant was again centrifuged for 10 min at 13,000 g at 4 °C. Brain homogenates (1:2) (diluted in 1% BSA solution) were analyzed using R&D systems ELISA Kits.
 
-## IL-37 mRNA measurement
+### IL-37 mRNA measurement
 
 To quantify the expression of IL-37 in primary microglia, cells were treated with 100 ng/mL LPS for 24 hr for seven different time periods (5 Min, 10 Min, 20 Min, 40 Min, 1 hr, 4 hr and 24 hr). Total RNA was isolated using peqGOLD TriFast. cDNA was prepared using BioLabs ProtoScript II First Strand cDNA Synthesis Kit.
 
@@ -180,41 +603,41 @@ For tissue extraction the RNA purification Kit (Macherey-Nagel) was used. cDNA w
 
 Then, real-time quantitative PCR (qPCR) was performed using BlueProbe qPCR Mix (Biozym) and the following primer pairs: IL-37: 5´-GGG AGT TTT GTC TCT ACT GTG AC-3´(forward) and 5´-CCC ACC TGA GCC CTA TAA AAG-3´(reverse); GAPDH 5´-GCC TTC CGT GTT CCT ACC-3´(forward) and 5´-CCT CAG TGT AGC CCA AGA TG-3´(reverse). Expression levels of target mRNA was analyzed using the ∆∆Ct method and were normalized to the expression level of the house keeping gene GAPDH, which was used as an internal control.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 To check the amount and morphology of microglial cells in the brain tissue, brains were isolated and fixed in 4% paraformaldehyde (PFA) for 24 hr and then cryoprotected in 30% sucrose solution in phosphate buffered saline (PBS 1 x) for 24 hr. Samples were stored in Tissue-Tek O.C.T. compound (A. Hartenstein Laborversand) at –70 °C. 30 µm brains sections were cut using the Cryostat. Using the free floating method these slices were washed in 1 x PBS and blocked in 1 x PBS solution containing 0.2% Triton X-100, 10% goat serum and 1% BSA for 1 hr at room temperature (RT). Slices were incubated overnight at 4 °C with anti-ionized calcium-binding adaptor molecule 1 (IBA-1) (1:1000; rabbit polyclonal, Synaptic System) primary antibody diluted in 1 X PBS, 0.2% Triton X-100 and 10% goat serum. Cy3-conjugated AffiniPure Goat Anti-Rabbit IgG (H+L) (1:500; Jackson ImmunoResearch) was used as secondary antibody diluted in 1 X PBS. Sections were washed as before and stained with 4’,6-diamidino-2-phenylindole (DAPI) (SIGMA) followed by cover-slipping with Fluoro-gel with Tris buffer (Electron Microscopy Sciences).
 
-## FACS analysis
+### FACS analysis
 
 Microglia activation was analyzed by measuring the marker CD68 with the FACS method (Lonnemann et al., 2020). Single cell isolation was performed using the Adult Brain Dissociation Kit (Miltenyi Biotec Order no. 130-107-677) from Miltenyi and the GentleMACS to homogenize the fresh isolated brains. Briefly, brain tissue was homogenized enzymatically and mechanistically for 30 min at 37 °C using the GentleMACS. In the following steps, the debris and the red blood cells were removed using the manufactory manual and products including a percoll based gradient and red blood cell lysis buffer. The cells were resuspended in FACS staining buffer (1xPBS +1% FCS+0.1% Na-Azide) and plated in V-bottom 96-well plate. Cells were stained for 30 min with CD11b-PerCP (1:50), CD45-APC (1:50), CD68-PE (1:50). The flowcytometry was measured using the BD LRS II SORP and analyzed with FlowJo Software.
 
-## Methoxy-XO4 staining
+### Methoxy-XO4 staining
 
 The phagocytic activity regarding Aβ uptake in microglial cells of APP/PS1 and APP/PS1-IL37tg animals was analyzed by FACS. Here, WT, APP/PS1 and APP/PS1-IL37tg animals was used and crossed with the Cx3Cr1-GFP mouse line. The Cx3cr1-GFP transgenic mice express a microglia-specific (or monocytic-specific) green fluorescent protein in the CNS. To visualize Aβ particles animals were injected intraperitoneal with 10 mg/kg methoxy-XO4 (Abcam; ab142818; blood-brain barrier permeable amyloid-β fluorescent marker) in 50% DMSO/ 50% NaCl (0.9%) 3 hr prior to the start of experiments. After the brain was removed, the procedure was as in section ‘FACS analysis’.
 
-## Y-Maze test
+### Y-Maze test
 
 There are several methods to evaluate cognitive function in rodents. Of these, one method is called ‘Y-Maze’ in which a mouse is placed in a maze with three equal arms (hence the term ‘Y’) each 32 cm from the center. First the mouse is free to explore the first two arms while the third arm is blocked. After the mouse get to know the existence of the two arms during 3 min training, the mouse was returned to its cage for 1.5 hr. Then the mouse is placed back to the Y-Maze with all three arms available. The observer records how often the mouse enters an arm. Due to animal’s natural tendency to explore a newly introduced environment it is expected to be expressed by a high frequency of spontaneous alteration performance (SAP). The SAP score is a triplet of three successive different arm visits (ABC, BCA, CAB, BAC, ACB, CBA).
 
-## Morris water maze test
+### Morris water maze test
 
 The Morris water maze (MWM) test is an assay to analyze spatial memory formation and retention (Morris, 1984). A circular plastic pool (160 cm in diameter and 60 deep) filled up to 30 cm with opaque water (titanium dioxide, Euro OTC Pharma; water temperature 19–20°C) was used including a 10 cm escape platform submerged 1 cm below the water surface and three visual cues on the walls around the pool. Each day the test was performed in the same conditions (dim light and the same time of the day) by the same experimenter blind to all groups. The ANY-maze software (Stoelting, USA) with a camera above the center of the maze was used to track each trial. A pre-training with a visible platform was performed to guarantee the visual and swimming ability in all experimental groups and in addition to get the animal used to the test situation. The pre-training lasted for three consecutive days with two trials each day (maximum of 60 s each) to reach the platform.
 
 The mice were trained in the Morris water maze for 8 days with the invisible platform located in the northwest (NW) quadrant. Each day, animals were placed from randomly starting positions (SW, S, E and NE) for 4 trials in the water with 5-min intervals. The animals had a maximum of 60 s to find the platform otherwise they were guided to the platform and allowed to stay for additional 15 s. The memory retention was measured by performing a reference test. One reference test was performed on day 3 of the training acquisition (prior to the training session) and another reference test 24 hr after the last training day (day 9). The platform was removed during this reference test. The animals were tracked for 45 s (starting position SE).
 
-## Electrophysiological experiments
+### Electrophysiological experiments
 
 To study learning and memory processes on cellular level, we did electrophysiological recording experiments in CA1 hippocampal neurons as described before (Hosseini et al., 2018; Lonnemann et al., 2020; Hosseini et al., 2020). Briefly, mice were deeply anesthetized with 100% CO2, killed by decapitation following fast brain removal and transfer into ice-cold carbogenated (95% O2 and 5% CO2) artificial CSG (ACSF) containing 124 mM NaCl, 4.9 mM KCl, 1.2 mM KH2PO4, 2.0 mM MgSO4, 2.0 mM CaCl2, 24.6 mM NaHCO3 and 10 D-glucose, pH 7.4. Acute hippocampal slices were prepared (400 µm) using a tissue chopper. The hippocampal slices were placed into an interface chamber (Scientific System Design) and incubated at 32 °C in a constant flow rate (0.5 ml/min) of carbogenated ACSF for 2 hr. Afterwards the recordings were started and field excitatory post synaptic potentials (fEPSPs) were measured in the stratum radiatum of the hippocampus CA1 sub-region. The Schaffer collateral pathway was stimulated using two monopolar, lacquer-coated stainless-steel electrodes (5 MΩ; AM Systems). Long-term potentiation (LTP) was induced after 20 min baseline recording by theta-burst stiulation (TBS) including four bursts at 100 Hz repeated 10 times in a 200ms interval. This stimulation was repeated three times in a 10 s interval. Only healthy sections with a stable baseline were included in the data set. Using the IntraCell software (version 1.5, LIN) the data set was analyzed.
 
-## Golgi-Cox staining
+### Golgi-Cox staining
 
 To analyze the morphology of hippocampal neurons, Golgi-Cox staining was performed like previously described (Hosseini et al., 2018; Lonnemann et al., 2020; Hosseini et al., 2020). Briefly, mice were deeply anesthetized with CO2 and sacrificed by decapitation. The brain was incubated in FD rapid Golgi-Cox staining kit according to the manufacturer’s protocol. The tissue was incubated in a mixture of solution A (potassium dichromate and mercuric chloride) and B (potassium chromate) for at least 14 days at RT in the dark. After incubation of A-B the tissue was placed for 1 week in solution C (tissue protection) at RT. In the following, the brain was blocked in 2% agar and 200-µm-thick coronal sections were cut using a vibratome (Leica VT 1000 S). The slices were collected on gelatin-coated glass slides and stained with solution D and E before being dehydrated through graded alcohols and mounted using Permount (Thermo Fisher Scientific).
 
-## Congo-Red staining
+### Congo-Red staining
 
 To examine the Aβ-plaques in APP/PS1 and APP/PS1-IL37 mice plaques were analyzed for the amount and size using the Congo-Red staining. Mice were deeply anesthetized with CO2 and sacrificed via decapitation. Brains were isolated and hemispheres were fixed in 4% PFA for 24 hr and then cryoprotected in 30% sucrose solution in phosphate buffered saline (PBS 1 x). Hemispheres were stored in Tissue-Tek (Hartenstein Laborversand) at –70 °C and cutted using the Leica Cryostat (CM3050 S) in 30 µm slices. The sections were transported on gelatin-coated slides and in the following stained with the Congo-Red manufactorer’s protocol using the FD Congo-Red Solution kit (FD Neurotechnologies, Inc) and mounted with Permount (Thermo Fisher Scientific).
 
-## Imaging and image analysis
+### Imaging and image analysis
 
 To analyze the hippocampal neuron morphology, CA1 and dentate gyrus (DG) cells were imaged in the three-dimensions (z-stack thickness of 0.5 µm) using Axioplan 2 imaging microscope (Zeiss) with a 63 x (N.A. 1) oil objective equipped with a digital camera (AxioCam MRm, Zeiss). All selected dendrites were analyzed per spine density via number of spines (counted manually using the ImageJ software) per micrometer of dendritic length more than 50–60 µm which were positioned at least 40–50 µm away from the cell soma.
 
@@ -222,20 +645,1273 @@ To analyze microglia morphology microscopic images of anti-IBA-1 were taken with
 
 To survey the Aβ-plaques images from Congo-Red stained slices were taken. Congo-Red staining presents a bright fluorescence emission at 614 nm with excitation at 497 nm. Images of brain sections were taken using an Axioplan 2 imaging microscope (Zeiss) with a 2.5 X objective (N.A. 0.07) connected to a digital camera (Nikon) with the same light exposure time of 1 s in all groups. Plaque load and plaque size were analyzed using the ImageJ software (Wane Rasband NIH, USA) with the analyze particle tool. The polygon selection tool was used to generate the region of interest (ROI) for the area of hippocampus and cortex. Plaque load (number of particles) and plaque size (area of particles) were normalized to the area of hippocampus and cortex and plotted as plaque load and plaque size per mm2.
 
-## Extraction of intracellular Metabolites for Gas Chromatography-Mass Spectrometry (GC-MS)
+### Extraction of intracellular Metabolites for Gas Chromatography-Mass Spectrometry (GC-MS)
 
 Primary microglia cells (5*105 cells) were plated onto 12-well plates and incubated for 24 hr. The medium was exchanged with fresh medium or medium mixed with 10 ng/ml LPS for 24 hr. To extract intracellular metabolites cells were washed once with 0.9% NaCl and 500 µL of a cold methanol/water mixture was added. The water fraction contained the internal standard (IS) D6-glutaric-acid (c=1 µg/ml). Cells were scraped and transferred into 250 µL of –20 °C Chloroform. After vortexing samples for 20 min at 4 °C with maximal speed in an automatic shaker, samples were centrifuge for 5 min at above 15,000 xg in a table centrifuge (4 °C). A total of 200 µL of the upper phase was transferred in a GC glass vial with micro insert and evaporated to dry under vacuum at 4 °C, overnight. To avoid condensation, the GC glass vials were warmed to room temperature under vacuum and capped afterwards with magnetic caps.
 
-## Metabolite measurement
+### Metabolite measurement
 
 Derivatization of the samples was performed directly before GC-MS measurement. Metabolite extracts were dissolved in 15 µL pyridine, containing 20 mg/mL methoxyamine hydrochloride at 55 °C for 90 min under shaking. After adding 15 µL N-methyl-N-tert-butyldimethylsilyl-trifluoroacetamide samples were incubated at 55 °C for 60 min under continuous shaking. GC/MS analysis was performed using an Agilent 7890B GC coupled to an Agilent 5977B MSD. The gas chromatogram was equipped with a 30 m ZB-35 Phenomenex 5 m Guard capillary column. As carrier gas helium was used at a flow rate of 1.0 ml/min. A sample volume of 1 µL was injected into a split/splitless inlet, operating a splitless mode at 270 °C. The GC oven Temperature was held at 100 °C for 2 min and increased to 300 at 10 °C/min and held for further 4 min. Afterwards the temperature was increased to 325 °C. The MSD was operating under electron ionization at 70 eV. The MS source was held at 230 °C and the quadrupole at 150 °C. The total run time of one sample was 26 min. Full scan mass spectra were acquired from m/z 70 to m/z 800. All GC-MS chromatograms were processed using Metabolite Detector, v3.020151231Ra (Hiller et al., 2009).
 
-## RNA sequencing
+### RNA sequencing
 
 Briefly, brain tissue from WT and IL –37tg mice treated with either saline or LPS was homogenized enzymatically and mechanically for 30 min at 37 °C using GentleMACS. Cellular debris and red blood cells were removed using the manufacturer’s manual and products such as a Percoll-based gradient and a red blood cell lysis buffer. Microglia were then isolated by administration of CD11b MicroBeads followed by magnetic bead separation. RNA was then isolated using the Nucleo Spin RNA Isolation Kit (Machery-Nagel). The cDNA synthesis was performed and libraries were prepared using the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina at the Genome Analytics of the Helmholtz Center for Infection Research. The libraries were sequenced on Illumina NovaSeq 6000 using NovaSeq 6000 S1 Reagent Kit (100 cycles, paired end run) with an average of 5x107 reads per RNA sample. Before alignment to reference genome (mm10) each sequence in the raw FASTQ files were trimmed on base call quality and sequencing adapter contamination using Trim Galore! wrapper tool. Reads shorter than 20 bp were removed from FASTQ file (Andrews, 2010; Krueger, 2012). Trimmed reads were aligned to the reference genome using open source short read aligner STAR (https://code.google.com/p/rna-star/) with settings according to log file (Dobin et al., 2013). Feature counts were determined using R package ‘Rsubread’ (Liao et al., 2014; Durinck et al., 2005). Only genes showing counts greater 5 at least two times across all samples were considered for further analysis (data cleansing). Gene annotation was done by R package ‘bioMaRt’ Before starting the statistical analysis steps, expression data was log2 transform and TMM normalized (edgeR). Differential gene expression was calculated by R package ‘edgeR’. Functional analysis was performed by R package ‘clusterProfiler’ (Robinson et al., 2010; Yu et al., 2012).
 
-## Statistical analysis
+### Statistical analysis
 
 Sample size for all experiments were calculated a priory with G*Power software (HHU Düsseldorf). Samples were allocated into the experimental groups randomly.
 
 Data were analyzed and plotted by GraphPad Prism 8 (GraphPad Software, Inc USA) and presented as mean ± SEM. Statistically analysis were performed with either unpaired t-test, one-way ANOVA (post hoc test Fisher’s LSD or Turkey’s multiple comparisons) or two-way ANOVA (post hoc test Fisher’s LSD or Bonferroni’s multiple comparisons) depending on experiments. The minimum significance value was considered as p<0.05 (Table 1).
+
+**Table 1.**
+ Statistical table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Name</th>
+      <th>Test</th>
+      <th></th>
+      <th>Multi-comparison</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1B</td>
+      <td>100 ng/ml 6 hr</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,9)=2,428; p=0.1434</td>
+      <td>Tukey’s</td>
+      <td>0,8947</td>
+      <td>WT vs. HET</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0,1460</td>
+      <td>WT vs. HOM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>100 ng/ml 24 hr</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,11)=7,941; p=0.0073</td>
+      <td>Tukey’s</td>
+      <td>0,0539</td>
+      <td>WT vs. HET</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0,0067</td>
+      <td>WT vs. HOM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 µg/ml 6 hr</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,9)=12,74; p=0.0024</td>
+      <td>Tukey’s</td>
+      <td>0,0090</td>
+      <td>WT vs. HET</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0,0037</td>
+      <td>WT vs. HOM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 µg/ml 24 hr</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,11)=3,915; p=0.0520</td>
+      <td>Tukey’s</td>
+      <td>0,3586</td>
+      <td>WT vs. HET</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0,0426</td>
+      <td>WT vs. HOM</td>
+    </tr>
+    <tr>
+      <td>1C</td>
+      <td>IL-6 10 ng/ml</td>
+      <td>ttest</td>
+      <td>t=1,742 df = 16; p=0.1007</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-6 100 ng/ml</td>
+      <td>ttest</td>
+      <td>t=3,597 df = 16; p=0.0024</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-6 1 µg/ml</td>
+      <td>ttest</td>
+      <td>t=5,127 df = 16; p=0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td>1D</td>
+      <td>TNF-α 10 ng/ml</td>
+      <td>ttest</td>
+      <td>t=3,376 df = 16; p=0.0038</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TNF-α 100 ng/ml</td>
+      <td>ttest</td>
+      <td>t=6,774 df = 16; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TNF-α 1 µg/ml</td>
+      <td>ttest</td>
+      <td>t=6,264 df = 16; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td>1E</td>
+      <td>IL-1β 10 ng/ml</td>
+      <td>ttest</td>
+      <td>t=2,390 df = 16; p=0.0295</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-1β 100 ng/ml</td>
+      <td>ttest</td>
+      <td>t=5,027 df = 16; p=0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-1β 1 µg/ml</td>
+      <td>ttest</td>
+      <td>t=5,852 df = 16; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td>1F</td>
+      <td>IL-37 mRNA</td>
+      <td>One-way ANOVA</td>
+      <td>F(7,15)=2,629; p=0.0550</td>
+      <td>Fisher’s LSD</td>
+      <td>0.0171</td>
+      <td>0 hr vs. 1 hr</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0086</td>
+      <td>0 hr vs. 4 hr</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0238</td>
+      <td>0 hr vs. 24 hr</td>
+    </tr>
+    <tr>
+      <td>1G</td>
+      <td>IL-6</td>
+      <td>ttest</td>
+      <td>t=20,39 df = 4; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT vs. IL37tg</td>
+    </tr>
+    <tr>
+      <td>1H</td>
+      <td>rIL-37 100 ng/ml</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,30)=5,135; p=0.0121</td>
+      <td>Tukey’s</td>
+      <td>0.1675</td>
+      <td>WT vs. 100 ng</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0133</td>
+      <td>WT vs. 500 ng</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rIL-37 1 µg/ml</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,30)=3,512; p=0.0426</td>
+      <td>Tukey’s</td>
+      <td>0.2457</td>
+      <td>WT vs. 100 ng</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0498</td>
+      <td>WT vs. 500 ng</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2B</td>
+      <td>ItaconateTreatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,20)=174,9; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ItaconateGenotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,20)=27,55; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>2C</td>
+      <td>SuccinateTreatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,20)=98,40; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0005</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SuccinateGenotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,20)=17,01; p=0.0005</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3B</td>
+      <td>Body weightTreatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,17)=220,5; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Body weightGenotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,41)=1,486; p=0.2299</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0139</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3D</td>
+      <td>CD68Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,6)=19,52; p=0.0045</td>
+      <td>Bonferroni’s</td>
+      <td>0.0017</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD68Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,6)=48,42; p=0.0004</td>
+      <td>Bonferroni’s</td>
+      <td>0.0167</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3E</td>
+      <td>IL-1β Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,7)=9,399;p=0.0182</td>
+      <td>Bonferroni’s</td>
+      <td>0.0244</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.7541</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-1β Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,7)=3,182;p=0.0935</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0366</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3F</td>
+      <td>Iba1 CA1 Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,25)=5,222;p=0.0311</td>
+      <td>Bonferroni’s</td>
+      <td>0.0024</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Iba1 CA1 Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,34)=4,951;p=0.0328</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0027</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3G</td>
+      <td>Processes CA1 Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,46)=1,066; p=0.3073</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.6229</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Processes CA1 Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,58)=1,238; p=0.2704</td>
+      <td>Bonferroni’s</td>
+      <td>0.5670</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3H</td>
+      <td>Iba1 Cortex Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,25)=15,97; p=0.0005</td>
+      <td>Bonferroni’s</td>
+      <td>0.0002</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.3234</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Iba1 Cortex Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,34)=5,159; p=0.0296</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0054</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>3I</td>
+      <td>Processes Cortex Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,104)=9,865; p=0.0022</td>
+      <td>Bonferroni’s</td>
+      <td>0.1401</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0232</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Processes Cortex Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,104)=0,119; p=0.7308</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.8147</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4A</td>
+      <td>LTP WT</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,28)=4,459; p=0.0438</td>
+      <td>Fisher’s LSDTime point 43–80</td>
+      <td>&lt;0.05</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td>4B</td>
+      <td>LTP IL37</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,23)=0,085; p=0.7734</td>
+      <td></td>
+      <td></td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td>4C</td>
+      <td>LTP last 5 min Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,22)=7,887;p=0.0102</td>
+      <td>Bonferroni’s</td>
+      <td>0.0043</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LTP last 5 min Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,29)=1,552; p=0.2228</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4D</td>
+      <td>Spines CA1 Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,32)=22,81; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.1145</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spines CA1 Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,44)=26,68; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>0.0657</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>4E</td>
+      <td>Spines DG Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,26)=3,307; p=0.0805</td>
+      <td>Bonferroni’s</td>
+      <td>0.0062</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spines DG Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,36)=0,529; p=0.4718</td>
+      <td>Bonferroni’s</td>
+      <td>0.5222</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0295</td>
+      <td>LPS WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>4G</td>
+      <td>LTP WT</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,30)=4,925; p=0.0342</td>
+      <td>Fisher’s LSDTime point 39–80</td>
+      <td>&lt;0.05</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td>4H</td>
+      <td>LTP IL37</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,26)=0,01395; p=0.9069</td>
+      <td></td>
+      <td></td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td>4I</td>
+      <td>LTP last 5 min Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,27)=4,613; p=0.0409</td>
+      <td>Bonferroni’s</td>
+      <td>0.0285</td>
+      <td>WT NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;0.9999</td>
+      <td>IL37 NIL vs. LPS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LTP last 5 min Genotype</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,29)=1,747; p=0.1966</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5A</td>
+      <td>Y-Maze Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,6)=18,25; p=0.0052</td>
+      <td>Bonferroni’s</td>
+      <td>0.0046</td>
+      <td>WT NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.7313</td>
+      <td>IL37 NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y-Maze pre-treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,6)=9,899; p=0.0199</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0024</td>
+      <td>IL1 WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>5B</td>
+      <td>IL-6 Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,16)=264,6; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>IL37 NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-6 pre-treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,16)=10,27; p=0.0055</td>
+      <td>Bonferroni’s</td>
+      <td>0.8327</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0004</td>
+      <td>IL1 WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td>5C</td>
+      <td>IL-1α Treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,16)=132,0; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>&lt;0.0001</td>
+      <td>WT NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>IL37 NIL vs. IL1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL-1α pre-treatment</td>
+      <td>Two-way ANOVA</td>
+      <td>F(1,16)=17,47; p=0.0007</td>
+      <td>Bonferroni’s</td>
+      <td>&gt;0.9999</td>
+      <td>NIL WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0003</td>
+      <td>IL1 WT vs. IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6B</td>
+      <td>IL-1β</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,19)=5,224; p=0.0156</td>
+      <td>Fisher’s LSD</td>
+      <td>0.0903</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.2480</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0046</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6C</td>
+      <td>IL-6</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,21)=3,600; p=0.0452</td>
+      <td>Fisher’s LSD</td>
+      <td>0.0220</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.5264</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0466</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6E</td>
+      <td>CD68 9–12 m</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,11)=14,39; p=0.0008</td>
+      <td>Bonferroni’s</td>
+      <td>0.0008</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0529</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.04494</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6F</td>
+      <td>CD68 6 m</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,12)=13,45; p=0.0009</td>
+      <td>Bonferroni’s</td>
+      <td>0.0007</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0263</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0985</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6G</td>
+      <td>CD68 20–23 m</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,12)=13,38; p=0.0009</td>
+      <td>Bonferroni’s</td>
+      <td>0.0007</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0359</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0383</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6I</td>
+      <td>Plaque loadHp</td>
+      <td>ttest</td>
+      <td>t=2,403 df = 74; p=0.0187</td>
+      <td></td>
+      <td></td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Plaque loadCx</td>
+      <td>ttest</td>
+      <td>t=4,953 df = 63; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6J</td>
+      <td>Plaque sizeHp</td>
+      <td>ttest</td>
+      <td>t=2,296 df = 74; p=0.0245</td>
+      <td></td>
+      <td></td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Plaque sizeCx</td>
+      <td>ttest</td>
+      <td>t=5,949 df = 63; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>6G</td>
+      <td>Abeta uptake</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,22)=136; p&lt;0.0001</td>
+      <td>Bonferroni’s</td>
+      <td>0.0001</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0001</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0026</td>
+      <td>APP vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7B</td>
+      <td>Latency WT</td>
+      <td>One-way ANOVA</td>
+      <td>F(7,88)=5,842; p&lt;0.0001</td>
+      <td></td>
+      <td></td>
+      <td>WT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latency APP</td>
+      <td>One-way ANOVA</td>
+      <td>F(7,72)=3,477; p=0.0029</td>
+      <td></td>
+      <td></td>
+      <td>APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latency APP-IL37</td>
+      <td>One-way ANOVA</td>
+      <td>F(7,80)=4,445; p=0.0003</td>
+      <td></td>
+      <td></td>
+      <td>APP-IL37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latency</td>
+      <td>2-way ANOVA</td>
+      <td>F(2,30)=10,50; p=0.0003</td>
+      <td>Fisher’s LSDDay 1</td>
+      <td>&lt;0.05</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Day 3–6</td>
+      <td>&lt;0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>PTWT</td>
+      <td>ttest</td>
+      <td>t=11,45 df = 22; p&lt;0,0001</td>
+      <td></td>
+      <td></td>
+      <td>NT vs. TQ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PTAPP</td>
+      <td>ttest</td>
+      <td>t=0,9874 df = 18; p=0.3365</td>
+      <td></td>
+      <td></td>
+      <td>NT vs. TQ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PTAPP-IL37</td>
+      <td>ttest</td>
+      <td>t=3,705 df = 20; p=0.0014</td>
+      <td></td>
+      <td></td>
+      <td>NT vs. TQ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PT TQs</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,30)=8,415; p=0.0013</td>
+      <td>Turkey‘s</td>
+      <td>0.0009</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0,0505</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>7E</td>
+      <td>LTP</td>
+      <td>Two-way ANOVA</td>
+      <td>F(2,45)=9,286; p=0.0004</td>
+      <td>Fisher’s LSDTime point 21–80</td>
+      <td>&lt;0.0005</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fisher’s LSDTime point 41–80</td>
+      <td>&lt;0.05</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>7F</td>
+      <td>Mean LTP 20–25 min</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,45)=7,090; p=0.0021</td>
+      <td>Turkey‘s</td>
+      <td>0.0016</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.5444</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>7G</td>
+      <td>Mean LTP 75–80 min</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,45)=9,354; p=0.0004</td>
+      <td>Turkey‘s</td>
+      <td>0.0014</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0023</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+    <tr>
+      <td>7I</td>
+      <td>Spine density</td>
+      <td>One-way ANOVA</td>
+      <td>F(2,63)=6.318;p=0.0032</td>
+      <td>Turkey‘s</td>
+      <td>0.0026</td>
+      <td>WT vs. APP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.0536</td>
+      <td>WT vs. APP-IL37</td>
+    </tr>
+  </tbody>
+</table>

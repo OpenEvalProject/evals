@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Genotype-based diagnostics for antibiotic resistance represent a promising alternative to empiric therapy, reducing inappropriate antibiotic use. However, because such assays infer resistance based on known genetic markers, their utility will wane with the emergence of novel resistance. Maintenance of these diagnostics will therefore require surveillance to ensure early detection of novel resistance variants, but efficient strategies to do so remain undefined. We evaluate the efficiency of targeted sampling approaches informed by patient and pathogen characteristics in detecting antibiotic resistance and diagnostic escape variants in Neisseria gonorrhoeae , a pathogen associated with a high burden of disease and antibiotic resistance and the development of genotype-based diagnostics. We show that patient characteristic-informed sampling is not a reliable strategy for efficient variant detection. In contrast, sampling informed by pathogen characteristics, such as genomic diversity and genomic background, is significantly more efficient than random sampling in identifying genetic variants associated with resistance and diagnostic escape.
+Genotype-based diagnostics for antibiotic resistance represent a promising alternative to empiric therapy, reducing inappropriate antibiotic use. However, because such assays infer resistance based on known genetic markers, their utility will wane with the emergence of novel resistance. Maintenance of these diagnostics will therefore require surveillance to ensure early detection of novel resistance variants, but efficient strategies to do so remain undefined. We evaluate the efficiency of targeted sampling approaches informed by patient and pathogen characteristics in detecting antibiotic resistance and diagnostic escape variants in Neisseria gonorrhoeae, a pathogen associated with a high burden of disease and antibiotic resistance and the development of genotype-based diagnostics. We show that patient characteristic-informed sampling is not a reliable strategy for efficient variant detection. In contrast, sampling informed by pathogen characteristics, such as genomic diversity and genomic background, is significantly more efficient than random sampling in identifying genetic variants associated with resistance and diagnostic escape.
 
 ## Introduction
 
@@ -39,25 +39,218 @@ Here, we test the performance of sampling strategies informed by these hypothese
 
 ## Results
 
-## Composition of the datasets
+### Composition of the datasets
 
 The datasets (Table 1) were biased across patient demographics and/or geographic regions (Supplementary files 1 and 2A). Isolates from men and men who have sex with men (MSM) were overrepresented in datasets 1 and 2 compared to overall gonorrhea incidence in men and MSM in the US and Australia, respectively, during the study periods (Supplementary file 2A, p<0.001 for both datasets by chi-squared test of men vs. women and MSM vs. non-MSM in dataset vs. reported incidence). Dataset 4 was comprised exclusively of isolates from men (Yahara et al., 2018). While it is difficult to estimate the prevalence of pharyngeal gonococcal infections, as they tend to be asymptomatic (Wiesner et al., 1973), pharyngeal isolates represented 4% and 18% of isolates with reported anatomical site of collection in datasets 1 and 2, respectively. This suggests either sampling bias across anatomical sites in at least one of the datasets or substantial variation across the two study populations in prevalence of pharyngeal gonococcal infections. Similarly, the geographic distribution of isolates in dataset 3 was significantly different from the reported case incidence across countries (Supplementary file 2A, p<0.001 by chi-squared test of prevalence for each of the countries in dataset 3 vs. the reported overall incidence for each of the countries).
 
-## Targeted sampling based on patient characteristics
+**Table 1.**
+ Summary of datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Temporal range</th>
+      <th>Nisolates</th>
+      <th>Geographic range</th>
+      <th>Metadata available</th>
+      <th>SRA study ID/Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2011–2015</td>
+      <td>896</td>
+      <td>New York, NY, US</td>
+      <td>Gender, sexual behavior, anatomical site of isolation</td>
+      <td>ERP011192 (Mortimer et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2016–2017</td>
+      <td>2186</td>
+      <td>Victoria, Australia</td>
+      <td>Gender, sexual behavior, anatomical site of isolation, travel history, sex worker status</td>
+      <td>SRP185594 (Williamson et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2013</td>
+      <td>1054</td>
+      <td>Europe</td>
+      <td>Country of sample collection</td>
+      <td>ERP010312 (Harris et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2015</td>
+      <td>244</td>
+      <td>Japan</td>
+      <td>Prefecture of sample collection</td>
+      <td>DRP004052 (Yahara et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2014–2015</td>
+      <td>398</td>
+      <td>New Zealand</td>
+      <td>N/A</td>
+      <td>SRP111927 (Lee et al., 2018b)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Targeted sampling based on patient characteristics
 
 We investigated whether sampling evenly across demographic groups (demography-aware sampling), anatomical sites of isolate collection (niche-aware sampling), and geographic regions (geography-aware sampling) increased detection efficiency of resistance variants by ameliorating some of the demographic, niche, or geographic sampling biases. We further investigated whether preferentially sampling patients with recent overseas sexual encounters or recent sex work, two characteristics hypothesized to be associated with the introduction and/or increased transmission of resistance (Lewis, 2013; Frost et al., 2019; Hernando Rovirola et al., 2020), increased the detection efficiency of resistance variants. To do so, we simulated and compared the detection efficiency of three genetic resistance variants (Table 2) using each of these targeted sampling strategies and random sampling.
 
+**Table 2.**
+ Summary by dataset of the prevalence and distribution of the genetic markers of resistance and resistance phenotypes tested.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variant</th>
+      <th></th>
+      <th colspan="3">Genetic</th>
+      <th colspan="2">Phenotypic</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>RplD G70D</th>
+      <th>23S rRNA C2611T (2–4 alleles)</th>
+      <th>penA XXXIV</th>
+      <th>CRO-RS (≥0.12 μg/mL)</th>
+      <th>CFX-R (&gt;0.25 μg/mL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drug</td>
+      <td></td>
+      <td>AZM (Grad et al., 2016)</td>
+      <td>AZM (Lk et al., 2002)</td>
+      <td>ESCs (Grad et al., 2014)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Prevalence of variant in dataset</td>
+      <td>1</td>
+      <td>10.04%*</td>
+      <td>0.11%</td>
+      <td>5.25%</td>
+      <td>1.47%</td>
+      <td>0.11%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1.14%</td>
+      <td>1.24%</td>
+      <td>1.69%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2.47%</td>
+      <td>0.95%</td>
+      <td>15.68%*</td>
+      <td>1.04%</td>
+      <td>0.76%</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>11.07%*</td>
+      <td>1.23%</td>
+      <td>0.41%</td>
+      <td>6.56%</td>
+      <td>8.20%</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.75%</td>
+      <td>0.50%</td>
+      <td>2.26%</td>
+      <td>0.25%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Phylogenetic D statistic for variant in dataset</td>
+      <td>1</td>
+      <td>−0.18</td>
+      <td>17.50</td>
+      <td>−0.29</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>−0.10</td>
+      <td>0.46</td>
+      <td>−0.24</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.05</td>
+      <td>0.30</td>
+      <td>−0.20</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>−0.16</td>
+      <td>1.83</td>
+      <td>1.81</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.83</td>
+      <td>1.12</td>
+      <td>−0.15</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Given the >10% prevalence of RplD G70D in datasets 1 and 4 and penA XXXIV in dataset 3, these variants were excluded from sampling simulations.AZM, azithromycin; ESC, extended-spectrum cephalosporin; CRO-RS, ceftriaxone reduced susceptibility; CFX-R, cefixime resistance._
+
 The detection efficiency was not improved by demography-, niche-, geography-aware sampling compared to random sampling for any of the resistance variants (Supplementary file 2B, Figure 1). In several cases, detection efficiency significantly decreased in demography- or geography-aware sampling compared to random sampling, reflecting enrichment of the resistance variant in the overrepresented demographic or geographic region. However, no significant association between a given resistance variant and demographic group was observed across both dataset 1 and dataset 2, and no demographics or geographic regions were significantly enriched for all variants (Supplementary file 1), suggesting that preferential sampling of any of these demographics or geographic regions would not be a reliable strategy for increasing novel variant detection efficiency. For example, while penA XXXIV was significantly enriched in MSM compared to men who have sex with women and women who have sex with men (MSW/WSM) in dataset 2 (p<0.003, Fisher’s exact test), there was no significant difference in the proportions of MSM and MSW/WSM with penA XXXIV in dataset 1 (p=0.461, Fisher’s exact test). Similarly, while the AZM-R-associated RplD G70D mutation in dataset 3 was at highest prevalence in patients from Malta and Greece (10% and 6.25%, respectively) and absent from patients from Denmark, the AZM-R-associated 23S C2611T variant was at highest prevalence in patients from Denmark (5.45%) and absent from patients from Malta or Greece.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig1-v1.jpg)
+
+**Figure 1.:** Dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A–B), 23S rRNA C2611T (C–D), and penA XXXIV (E–F) in datasets 1 and 2. In datasets 1 and 2, targeted sampling was informed by demographic (gender and sexual behavior) and anatomical site of isolate collection (niche) information (A, C, and E), and in datasets 3 and 4, targeted sampling was informed by country or prefecture of sample collection (B, D, and F). Dot colors indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the demography-, niche- or geography-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of demography- or geography-aware approaches compared to random sampling). Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was >10%. n.s., not significant at α = 0.05; M, men; W, women; MSM, men who have sex with men; MSW, men who have sex with women; WSM, women who have sex with men.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Maximum-likelihood phylogeny produced from the pseudogenome alignment (with predicted regions of recombination removed) of isolates from dataset 2 (A). Patient travel history is indicated by the colored ring in A. Scatter dot plots showing the terminal branch lengths (with lines indicating the mean and 95% confidence intervals) associated with isolates from patients with travel-associated gonorrhea compared to patients with locally-acquired gonorrhea with asterisks indicating a significant difference (p<0.001 by Mann-Whitney U test) in terminal branch lengths between the two groups (B).
 
 Isolates from patients with recent overseas sex were associated with significantly longer terminal branches compared to patients that had only engaged in sex locally (Figure 1—figure supplement 1), in support of the hypothesis that international travel may be associated with the importation of novel or divergent strains, or, more generally, that isolates from travelers may be more likely to be associated with under-sampled lineages. Preferentially sampling from patients with recent overseas sex significantly improved detection efficiency of the RplD G70D mutation and the penA XXXIV allele, as these were at marginally higher prevalence in isolates from patients with recent overseas sex compared to those from patients who had only engaged in sex locally (3.03% overseas vs. 0.98% local and 2.02% overseas vs. 1.67% local, respectively, p=0.090 and 0.683, respectively, by Fisher’s exact test for both variants). In contrast, the 23S C2611T mutation was exclusively present in isolates from patients who had engaged in sex locally (Supplementary files 1 and 2C). Similarly, while the 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not (2.33% in sex workers vs. 1.31% in non-sex workers, p=0.327 by Fisher’s exact test), and thus preferentially sampling from sex workers significantly improved detection efficiency of this variant compared to sampling from the full patient population, detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers (Supplementary files 1 and 2 C).
 
 Together, these results suggest that while targeted sampling based on patient characteristics may increase detection efficiency of some novel variants, it is difficult to predict which groups to target for all potential novel variants.
 
-## Targeted sampling based on genetic diversity
+### Targeted sampling based on genetic diversity
 
 To assess whether preferential sampling of lineages that are divergent from those that have been previously sampled may increase detection efficiency of genetic resistance variants over random sampling, we simulated phylogeny-aware sampling using two methods: 1) maximization of the phylogenetic distance covered with each isolate sampled (distance maximization) and 2) even sampling across phylogenetic lineages (clonal group).
 
 While the distance maximization approach increased detection efficiency compared to random sampling for some variants, there were numerous instances in which this approach, which led to preferential sampling of isolates associated with long branches, substantially decreased detection efficiency (Figure 2, Supplementary file 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig2-v1.jpg)
+
+**Figure 2.:** Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A), 23S rRNA C2611T (B), and penA XXXIV (C) in datasets 1–5. Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was >10%. Maximum-likelihood phylogenies produced from pseudogenome alignments (with predicted regions of recombination removed) of isolates from dataset 4 (D) and dataset 2 (E). Presence or absence of the 23S rRNA C2611T mutation (in at least 2/4 alleles) and the mosaic penA XXXIV allele is indicated by colored rings. Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for diagnostic-associated variants 16S rRNA C1209A (F), N. meningitidis-like porA (G), cppB deletion (H), and DR-9A G168A (I) in all datasets in which the variant was present. Dot colors in A–C) and F–I) indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the phylogeny-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of the phylogeny-aware approach compared to random sampling, and green asterisks indicate significantly higher detection efficiency of the phylogeny-aware approach compared to random sampling). n.s., not significant at α = 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A), 23S rRNA C2611T (B), and penA XXXIV (C) in datasets 1–5 and for diagnostic-associated variants 16S rRNA C1209A (D), N. meningitidis-like porA (E), cppB deletion (F), and DR-9A G168A (G) in all datasets in which the variant was present. Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was >10%. Dot colors indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the phylogeny-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of the phylogeny-aware approach compared to random sampling, and green asterisks indicate significantly higher detection efficiency of the phylogeny-aware approach compared to random sampling). n.s., not significant at α = 0.05.
 
 The clonal group sampling approach prevents repeated sampling of very closely related isolates until all unique phylogenetic clusters have been sampled. Thus, for both rare variants that are clonally distributed and rare variants that are more randomly dispersed throughout the phylogeny (e.g., penA XXXIV and 23S rRNA C2611T mutations, respectively, Table 2), this approach increases detection efficiency in cases where 1) there is substantial clonality among isolates and 2) a substantial proportion of variant-positive isolates do not occur in clonal lineages dominated by variant-negative isolates (Figure 2E). In such datasets, effectively collapsing large variant-negative lineages into a single representative increases the effective prevalence of the variants and thus the detection efficiency of the clonal group approach compared to random sampling. The clonal group sampling approach significantly decreased detection efficiency in only one instance (i.e., the 23S rRNA C2611T variant in dataset 4, Supplementary file 2D), where all isolates with the variant appeared in large clonal lineages of predominately variant-negative isolates (Figure 2D).
 
@@ -65,9 +258,73 @@ In cases where the clonal group sampling approach did not perform better than ra
 
 To further assess the performance of phylogeny-aware sampling in the context of rare genetic variants that may have emerged in response to diagnostic pressure, we simulated random and phylogeny-aware sampling to assess detection efficiency of an additional set of variants. Specifically, we assessed a panel of N. gonorrhoeae diagnostic escape variants: the 16S rRNA C1209A mutation, the N. meningitidis-like porA, and the cppB deletion, all of which have been previously associated with diagnostic failure (Guglielmino et al., 2019; Whiley et al., 2011; Golparian et al., 2012; Bruisten et al., 2004) and were present in one or more of datasets 1–5 at low prevalence (Table 3). The G168A mutation in the primer binding region of DR-9A, the target of the COBAS 4800 CT/NG (Roche) diagnostic, has not previously been documented but was present in 0.1% of strains from dataset 2. All of the diagnostic-associated variants assessed appeared in divergent backgrounds and were thus detected more efficiently by phylogeny-aware sampling compared to random sampling (Figure 2F–I, Supplementary file 2E). Like the results from the simulations based on resistance variants, the distance maximization approach maximized detection efficiency for some of the diagnostic-associated variants, but superiority of this approach to random sampling was not consistent across all variants. However, the clonal group approach performed significantly better than random sampling for all diagnostic-associated variants across all datasets.
 
+**Table 3.**
+ Summary of the potential diagnostic escape variants assessed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variant</th>
+      <th rowspan="2">Diagnostic assay</th>
+      <th rowspan="2">Documented association with diagnostic failure</th>
+      <th colspan="5">Prevalence in dataset</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16S rRNA C1209A (four alleles)</td>
+      <td>Aptima GC Combo</td>
+      <td>Yes (Guglielmino et al., 2019)</td>
+      <td>0.11%</td>
+      <td>0.09%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>N. meningitidis-like porA</td>
+      <td>In-house (Whiley et al., 2004; Whiley et al., 2005)</td>
+      <td>Yes (Whiley et al., 2011; Golparian et al., 2012)</td>
+      <td>0.11%</td>
+      <td>0.05%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>cppB deletion</td>
+      <td>In-house (Diemert et al., 2002; Van Dyck et al., 2001)</td>
+      <td>Yes (Bruisten et al., 2004)</td>
+      <td>1.12%</td>
+      <td>0.05%</td>
+      <td>0.47%</td>
+      <td>0%</td>
+      <td>7.29%</td>
+    </tr>
+    <tr>
+      <td>DR-9A G168A</td>
+      <td>Roche COBAS 4800 CT/NG</td>
+      <td>No</td>
+      <td>0%</td>
+      <td>0.09%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
 The relative performance of the clonal group sampling approach compared to random sampling was generally consistent across multiple thresholds based on pseudogenomes (i.e.,≤134 SNPs, ≤422 SNPs, and fastBAPS groups); relative performance of clonal group sampling using MLSTs, however, was less consistent and was significantly worse than random sampling for several variants (Figure 2—figure supplement 1, Supplementary file 2D-E). Together, these results suggest that preferentially sampling isolates that, based on whole genome sequencing (WGS), are phylogenetically divergent from those that have previously been sampled may increase detection efficiency of novel resistance variants.
 
-## Targeted sampling based on genetic markers
+### Targeted sampling based on genetic markers
 
 Multiple drug resistance is more common in pathogenic bacteria than one would expect from the product of frequencies of resistance to individual drugs (Chang et al., 2015; Lehtinen et al., 2019). This suggests that novel resistance mechanisms might be more likely to arise and spread in bacterial strains that are already resistant to other drugs, a phenomenon that has been documented in N. gonorrhoeae (Goldstein et al., 2012). It may therefore be fruitful to look for novel resistance variants for one drug in genetic backgrounds that are resistant to other drugs. It may be similarly effective to sample preferentially isolates with genetic markers that have been associated with a range of resistance mechanisms (e.g., through epistatic interactions with other genetic variants) within and/or across different antibiotics when screening for a novel resistance variant. For example, as ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2005 in the United Kingdom (Whittles et al., 2018), 2007 in the United States (Centers for Disease Control and Prevention (CDC), 2007), and more recent years in other countries (Hemarajata et al., 2016; Unemo and Dillon, 2014; Bazzo et al., 2018), we investigated whether resistance to ESCs is significantly more likely to occur in the background of genotypic ciprofloxacin resistance (i.e., in strains with the GyrA S91F mutation). Similarly, as mutations at positions 120 and/or 121 in PorB, the major outer membrane protein in gonococci, have been associated with resistance to a range of drugs from multiple classes (Mortimer and Grad, 2019), we investigated whether resistance to ESCs is significantly more likely to occur in strains with PorB 120 and/or 121 mutations. Isolates with CRO-RS and CFX-R were significantly more likely to have the GyrA S91F mutation and the PorB G120 and/or A121 mutations than the wild-type GyrA S91 or wild-type PorB G120/A121 (p<0.001, Fisher’s exact test, Figure 3A–B). Further, both GyrA S91F and PorB G120 and/or A121 mutations occurred across a range of ESC resistance locus haplotypes (Figure 3C–D). For all datasets with CRO-RS or CFX-R isolates, detection efficiency of both variants was significantly increased by only sampling isolates with the GyrA S91F mutation or the PorB G120 and/or A121 mutations (Figure 3E–F, Supplementary file 2F). Together, these results suggest that preferential sampling of isolates with certain genetic markers, including markers of resistance to previous first-line antibiotics, may increase the detection efficiency of novel resistance variants.
 
@@ -97,20 +354,81 @@ Advances in diagnostics, extensive sequencing of clinical isolates, and large co
 
 ## Materials and methods
 
-## Dataset preparation and phylogenetic reconstruction
+### Dataset preparation and phylogenetic reconstruction
 
 See Table 1 for details of the N. gonorrhoeae datasets and Tables 2 and 3 for the variants assessed. Raw sequencing data were downloaded from the NCBI Sequence Read Archive. Genomes were assembled using SPAdes v3.13 (Bankevich et al., 2012) with default parameters and the careful option to minimize the number of mismatches. Assembly quality was assessed using QUAST v4.3 (Gurevich et al., 2013), and contigs < 500 bp in length and/or with <10 x average coverage were removed. Isolate reference-based pseudogenomes were constructed by mapping raw reads to the NCCP11945 reference genome (RefSeq accession number NC_011035.1) using BWA-MEM v7.12 (Li, 2013), the Picard toolkit v2.8 (Picard development team, 2016) to identify duplicate reads, and Pilon v1.22 (Walker et al., 2014) to determine the base call for each site, with a minimum depth of 10 and a minimum base quality of 20.
 
 Loci in Tables 2 and 3 were extracted from the genome assemblies using blastn (Altschul et al., 1990) followed by MUSCLE alignment using default parameters (Edgar, 2004) to assess the presence or absence of the resistance variants. Presence or absence of mutations in the multi-copy 16S and 23S rRNA genes and the repetitive DR-9A and DR-9B regions (Dailey et al., 2013) was assessed using BWA-MEM, the Picard toolkit, and Pilon, as above, to map raw reads to a single 16S rRNA allele, a single 23S rRNA allele, a single DR-9A region, and a single DR-9B region from the NCCP11945 reference isolate and determine the mapping quality-weighted percentage of each nucleotide at the site of interest. See Table 4 for information on the reference sequences used for variant calling. Isolate metadata and resistance variant profiles are given in Supplementary file 1. Sampling bias across demographic and geographic groups was assessed by comparing (by chi-squared test) reported gonorrhea incidence across the groups in the population from which the dataset samples were collected to the prevalence of the groups in each dataset. Association between genetic variants and demographic or geographic groups and between phenotypic resistance variants and genetic markers in each of datasets was assessed by Fisher’s exact test, due to the low prevalence of the variants.
 
+**Table 4.**
+ Reference information for the genetic variants assessed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variant</th>
+      <th>Reference accession</th>
+      <th>Coordinates of genetic locus in reference entry</th>
+      <th>Position of mutation in reference locus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RplD G70D</td>
+      <td>NC_011035.1</td>
+      <td>2033052–2033672</td>
+      <td>amino acid 70</td>
+    </tr>
+    <tr>
+      <td>23S rRNA C2611T</td>
+      <td>NC_011035.1</td>
+      <td>1263408–1266305</td>
+      <td>nucleotide 2603</td>
+    </tr>
+    <tr>
+      <td>penA XXXIV</td>
+      <td>NZ_LT906440.1</td>
+      <td>1588456–1590201</td>
+      <td>N/A (assessed presence/absence of this allele)</td>
+    </tr>
+    <tr>
+      <td>16S rRNA C1209A</td>
+      <td>NC_011035.1</td>
+      <td>1266903–1268450</td>
+      <td>nucleotide 1192</td>
+    </tr>
+    <tr>
+      <td>N. meningitidis-like porA</td>
+      <td>NC_011035.1</td>
+      <td>735796–737125</td>
+      <td>N/A (assessed nucleotide similarity across the full locus with a threshold of ≤ 90%)*</td>
+    </tr>
+    <tr>
+      <td>cppB deletion</td>
+      <td>LT592149.1</td>
+      <td>2912–3553</td>
+      <td>N/A (assessed presence/absence of full locus)</td>
+    </tr>
+    <tr>
+      <td>DR-9A G168A</td>
+      <td>NC_011035.1</td>
+      <td>530088–530277</td>
+      <td>nucleotide 168</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Isolates with a porA pseudogene with ≤90% similarity to the NC_011035.1 porA pseudogene were called positive for N. meningitidis-like porA. Note that all such isolates were confirmed to have a porA pseudogene that was ≥92% similar to the N. meningitidis porA (GenBank Accession: GQ173789.1), while all other isolates had ≤89% similarity to the N. meningitidis porA._
+
 Gubbins v2.3.4 (Croucher et al., 2015) was used with default parameters to identify and mask recombinant regions from the pseudogenomes and build maximum likelihood phylogenies from the non-recombinant pseudogenome alignments for each dataset through RAxML v8.2.12 (Sommer et al., 2017). Pairwise phylogenetic distances were calculated after removal of predicted recombinant regions using the ape package in R. Phylogenetic distributions of genetic resistance variants were assessed by estimating the phylogenetic D statistic (Fritz and Purvis, 2010) using the caper package in R. Bayesian analysis of population structure was performed on the pseudogenome alignments for each dataset using fastBAPS (Tonkin-Hill et al., 2019). Multilocus sequence types (MLSTs) were assigned using the PubMLST database (https://pubmlst.org/neisseria/).
 
-## Sampling approaches
+### Sampling approaches
 
 For each sampling approach/dataset/variant combination, 100 simulations were carried out with isolate sampling continuing until variant detection. We defined ‘detection efficiency’ as one minus the fraction of isolates sampled prior to variant detection (excluding any samples for which the presence or absence of the variant could not be determined). As detection efficiencies were not normally distributed, differential performance between random sampling and targeted sampling was assessed by Mann Whitney U tests of differences in mean ranks of detection efficiencies. Because the purpose of this study was to compare the rare variant detection efficiency between random sampling and targeted sampling approaches, we did not evaluate RplD G70D in datasets 1 and 4 or for the penA XXXIV allele in dataset 3, as the prevalence of these variants in these datasets was >10%.
 
 In demography-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating demographic groups (men vs. women and men who have sex with men [MSM] vs. men who have sex with women [MSW] or women who have sex with men [WSM]). For anatomical site (niche)-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating anatomical sites of isolate collection (i.e., cervix, urethra, rectum, and pharynx). For geography-aware sampling (datasets 3 and 4), the first isolate was selected at random, and each successive isolate was randomly selected from alternating geographic regions (countries or prefectures). For geography- and distance-aware sampling (datasets 3 and 4), the first isolate was selected at random, and each successive isolate was selected randomly from the region (country or prefecture) with the largest product of geographic distances from previously sampled regions, only re-sampling from a given region after all regions had been sampled in that round. For travel history- and sex work-aware sampling (dataset 2), isolates were selected at random either limiting the pool to isolates from patients who had recently engaged in overseas sex or sex work, respectively (Williamson et al., 2019).
 
-For phylogeny-aware sampling (datasets 1-5), the first isolate was selected at random, and each successive isolate was either selected to maximize the product of phylogenetic distances from each of the previously sampled isolates (“distance maximization”) or selected randomly with the exception of ensuring even sampling across phylogenetic groups (“clonal group”; i.e., isolates ≤ N SNPs from a previously sampled isolate that were excluded from future sampling until all “clonal groups” had been sampled). SNP cutoffs tested for the clonal group approach included 1) 134 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with phenotypic cefixime resistance (CFX-R), azithromycin resistance (AZM-R), and/or ceftriaxone reduced susceptibility (CRO-RS, >0.25 μg/mL, >1 μg/mL, and ≥0.12 μg/mL, respectively) and the closest susceptible isolate, and 2) 422 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with the RplD G70D mutation, the 23S rRNA C2611T mutation, and/or the penA XXXIV allele and the closest isolate without the resistance variant. The clonal group sampling approach was further tested by alternating sampling across fastBAPS and MLST groups.
+For phylogeny-aware sampling (datasets 1-5), the first isolate was selected at random, and each successive isolate was either selected to maximize the product of phylogenetic distances from each of the previously sampled isolates (“distance maximization”) or selected randomly with the exception of ensuring even sampling across phylogenetic groups (“clonal group”; i.e., isolates ≤ $N$ SNPs from a previously sampled isolate that were excluded from future sampling until all “clonal groups” had been sampled). SNP cutoffs tested for the clonal group approach included 1) 134 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with phenotypic cefixime resistance (CFX-R), azithromycin resistance (AZM-R), and/or ceftriaxone reduced susceptibility (CRO-RS, >0.25 μg/mL, >1 μg/mL, and ≥0.12 μg/mL, respectively) and the closest susceptible isolate, and 2) 422 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with the RplD G70D mutation, the 23S rRNA C2611T mutation, and/or the penA XXXIV allele and the closest isolate without the resistance variant. The clonal group sampling approach was further tested by alternating sampling across fastBAPS and MLST groups.
 
 For genomic background-aware sampling, isolates were selected at random either limiting the pool to isolates with genotypic ciprofloxacin resistance (i.e., the GyrA S91F mutation) or to isolates with a mutation at PorB G120 and/or PorB A121, which have been associated with a range of resistance pathways in multiple classes of antibiotics (Mortimer and Grad, 2019). Genomic background-aware sampling was assessed in detection of CRO-RS (datasets 1 and 3–5; dataset 2 had no CRO-RS isolates) and CFX-R (datasets 1 and 3–4; datasets 2 and 5 had no CFX-RS isolates).

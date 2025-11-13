@@ -41,9 +41,21 @@ Figure 1 shows fluorescence traces for four example neurons, of the key Cre line
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig1-v1.jpg)
 
-**Figure 1.:** (a) A single VIP interneuron recorded in layer 2/3 of a Vip mouse responds to low contrast with a preference for motion with a direction of 0 degrees (front-to-back). Top: In blue, 20 s of the dF/F trace for this neuron and, in black, the corresponding events extracted from the dF/F trace. Left: Event rasters for each contrast at the peak direction (0 degrees), each direction at the peak contrast (10%), and blank (i.e. 0% contrast) trials. Middle: Contrast tuning curve at the peak direction and direction tuning curve at the peak contrast; mean ± SEM. Right: Heatmap shows the mean response for all stimulus contrasts and directions. (b) Same as a, for a single SST neuron recorded in layer 4 of an Sst mouse. This neuron is tuned for high contrast with a preference for motion with a direction of ±90 (up/down). (c) Same as a, for a pyramidal neuron recorded in layer 2/3 of a Cux2 mouse. This neuron is tuned for low contrast with a preference for motion with a direction of -45 degrees. (d) Same as a, for pyramidal neuron recorded in layer 4 of a Rorb mouse. This neuron is tuned for high contrast with a preference for motion with a direction of 180 degrees (back-to-front).Figure 1—source data 1.
+**Figure 1.:** (a) A single VIP interneuron recorded in layer 2/3 of a Vip mouse responds to low contrast with a preference for motion with a direction of 0 degrees (front-to-back). Top: In blue, 20 s of the dF/F trace for this neuron and, in black, the corresponding events extracted from the dF/F trace. Left: Event rasters for each contrast at the peak direction (0 degrees), each direction at the peak contrast (10%), and blank (i.e. 0% contrast) trials. Middle: Contrast tuning curve at the peak direction and direction tuning curve at the peak contrast; mean ± SEM. Right: Heatmap shows the mean response for all stimulus contrasts and directions. (b) Same as a, for a single SST neuron recorded in layer 4 of an Sst mouse. This neuron is tuned for high contrast with a preference for motion with a direction of ±90 (up/down). (c) Same as a, for a pyramidal neuron recorded in layer 2/3 of a Cux2 mouse. This neuron is tuned for low contrast with a preference for motion with a direction of -45 degrees. (d) Same as a, for pyramidal neuron recorded in layer 4 of a Rorb mouse. This neuron is tuned for high contrast with a preference for motion with a direction of 180 degrees (back-to-front).
 
 We observed direction- or orientation-tuned neurons that responded preferentially either to high contrast gratings or low contrast gratings. The majority of neurons were responsive to the stimulus set (Figure 2a), measured as a statistically significant bias in responses depending on grating contrast and direction (bootstrapped χ2test, p<0.01; see Materials and methods). Substantial differences in contrast and direction tuning were apparent across Cre lines (Figure 2b–h). Virtually all VIP neurons responded only at low (<20%) contrast to front-to-back motion (0 degrees; nasal-to-temporal) or an adjacent direction (Figure 2b), yielding the greatest direction bias among Cre lines as quantified by the vector sum of direction preferences (Figure 2c). The direction of bias was consistent across all Vip mice (n = 6 sessions, 3 mice; Figure 2—figure supplement 1A) and did not result from stimulus direction-selective running behavior (Figure 2—figure supplement 1B). High contrast gratings of all directions significantly suppressed activity in a substantial fraction of VIP neurons whereas such suppression was rare in other Cre lines (Figure 2d; Figure 2—figure supplement 2). SST neurons had high contrast selectivity, weak direction and orientation selectivity, and varied direction preference (Figure 2b,e,g,h), resulting in an average population response that was strong at high contrast across all directions, complementing the non-direction selective suppression at high contrast observed in VIP neurons. Unlike inhibitory interneurons, pyramidal neurons exhibited substantial direction and orientation selectivity and tiled all eight possible direction preferences (Figure 2b,g,h).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig2-v1.jpg)
+
+**Figure 2.:** (a) The fraction of imaged cells that were significantly responsive to the gratings stimulus (bootstrapped χ2 test, p<0.01). (b) Waterfall plots showing the response significance at each contrast and direction of all responsive cells (χ2 test; p < 0.01) from mice of each Cre line. Each row is one neuron and neurons are ordered by direction preference at the cell’s peak contrast. The responses to each stimulus condition are normalized per neuron to be $R_{N}=(R_{d,c}−R_{b})/(R¯_{d,c}+R_{b})$, where $R_{N}$ is the normalized response, $R_{d,c}$ is the mean response to a grating with direction d and contrast c, $R_{b}$ is the mean blank (0% contrast) response, and $R¯_{d,c}$ is the mean response to gratings across all directions and contrasts. (c) Radial plot of the average direction preference of cells of each Cre line at each contrast. Arrows are the vector sum of all responsive cells at a given contrast. Gray shaded region indicates a 95% confidence interval of the vector sum for a population with uniformly-distributed direction preferences, multiple comparisons corrected for the six contrasts. Scale: The distance between each pair of concentric dashed rings is 25%. N: Nasal, T: Temporal, U: Up, D: Down. (d) Fraction of all cells of each Cre line that are suppressed by contrast. The mean response to all grating directions at 80% contrast must be significantly below the mean blank response (bootstrapped distribution of mean response differences; family-wise type 1 error < 0.05; see Materials and methods). (e) Distribution of contrast response types by Cre line determined by fitting of rising sigmoid (high contrast preferring), falling sigmoid (low contrast preferring), or the product of rising and falling sigmoids (intermediate contrast preferring; not shown due to a very small percentage of neurons tuned for intermediate contrasts). P-values are shown for pairwise comparisons of the fraction of high contrast preferring pyramidal neurons in each layer (bootstrap test of difference of sample proportions). See Materials and methods. (f) Cumulative distribution of contrast preferences (center-of-mass of a cell’s contrast response function; CoM) across Cre lines. (g) Cumulative distribution of global orientation selectivity indices (gOSI) across Cre lines. (h) Cumulative distribution of direction selectivity indices across Cre lines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Vector sums for each of the six Vip-Cre experiments. N: Nasal, T: Temporal, U: Up, D: Down. (b) Performance of a linear support vector classifier trained to decode the direction of grating (1-of-8 classification) from the running speed of the mouse. The average validation performance for three-fold cross-validation is shown. Each dot is the performance for one experiment; bars are the mean across experiments of a given Cre line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Average fluorescence responses of all VIP neurons to low (left) and high (right) contrast gratings are shown at the neuron’s preferred direction (n=63 neurons; mean ± SEM). Gray shading indicates the stimulus presentation window of 2 s; time is relative to stimulus onset.
 
 We statistically-validated the contrast tuning of neurons with a model selection procedure (see Materials and methods: Contrast response function fitting and model comparison) comparing low contrast preference, high contrast preference, and intermediate contrast preference. This analysis confirmed that nearly all VIP neurons were low contrast-preferring and nearly all SST neurons were high contrast-preferring (Figure 2e). Contrast preference among pyramidal neurons systematically varied across cortical layers, exhibiting a progression from a mixture of low and high contrast-preferring neurons in layer 2/3 to almost exclusively high contrast-preferring neurons in layers 5 and 6. Like VIP neurons, pyramidal neurons in layer 2/3 showed direction bias toward front-to-back motion at 5% and 10% contrast but not at higher contrasts (Figure 2c); pyramidal neurons in deeper layers did not have direction bias. Taken together, concerted changes in response magnitude near 20% contrast across all Cre lines and layers indicate the presence of a phase transition in cortical dynamics between a low contrast regime exemplified by relatively inactive SST neurons and a high contrast regime exemplified by highly active SST neurons.
 
@@ -52,6 +64,14 @@ A previous survey of transcriptomic neuron types using single-cell RNA sequencin
 Studies of stimulus tuning in the visual system have long reported (Levick, 1967; Rodieck, 1967) a small but consistent fraction (1–5%) of neurons that exhibit firing rate suppression in response to all stimuli presented, which typically comprised of high contrast gratings, termed ‘suppressed-by-contrast’ (SbC) neurons. Consistent with a recent report (de Vries et al., 2020), these results identify VIP neurons as a major source of SbC neurons in V1. Surprisingly, we observe that not only are these SbC neurons not suppressed at low contrast but that they exhibit robust visual responses to front-to-back motion in such conditions. This contributes new information to our understanding of SbC neurons in the visual circuit. The finding that VIP neurons are suppressed below baseline in response to high contrast gratings, rather than suppressed to baseline, might be due to the high spontaneous activity of VIP neurons that is available to be suppressed compared to the other neuron types measured here (see Figure 3 as well as Extended Data Figure 1 of de Vries et al., 2020). Our measurements of contrast tuning suggest that the high spontaneous activity of VIP neurons enables the cortical circuit to raise or lower the amount of disinhibition of pyramidal neurons depending on stimulus contrast.
 
 To assess the circuit-wide effects of locomotion on cortical dynamics, we examined the average activity of each neuron population as a whole. We focused here on the responses at low contrast in layers 2/3 and 4, but not layers 5 and 6 which did not respond at low contrast. Pyramidal neurons in layers 2/3 and 4, as well as VIP and SST interneurons, had increased activity during stimulus presentations when the mouse was running compared with stimulus presentations when the mouse was stationary (Figure 3; Figure 3—figure supplement 1). During locomotion, the low contrast and front-to-back direction selectivity that was common to nearly all VIP neurons resulted in an average VIP population response that had tuning closely resembling the tuning of any individual VIP neuron (Figure 3, first column). By comparison, the VIP population only weakly responded to front-to-back motion at low contrast when the mice were stationary and did not respond to gratings of any other direction or contrast. Running also increased the SST population response to high contrast gratings, which also had the highest average response to front-to-back motion but responded strongly as a population to other directions as well (Figure 3, second column). The pyramidal population in layer 2/3 (CUX2) responded broadly across directions but more strongly at low than high contrast (Figure 3, third column), whereas the pyramidal population in layer 4 (RORB) had comparable response magnitude and running enhancement across contrasts (Figure 3, fourth column). This analysis demonstrates a substantial enhancement of responses to low contrast visual stimuli during locomotion that is specific to layer 2/3 pyramidal neurons and VIP neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig3-v1.jpg)
+
+**Figure 3.:** (a) Mean blank-subtracted event magnitude (a.u.; extracted events derived from dF/F trace) of all neurons from mice of each superficial Cre line during stationary periods. Gray boxes in Rorb plots indicate insufficient run and stationary data. (b) Same as a, for running periods. (c) Mean population contrast responses tuning at peak direction during stationary (faint lines) and running (bold lines) periods. (d) Mean population direction response tuning at low (5-10%) contrast. Insets: mean population direction response tuning at high (60-80%) contrast. (e) Mean single-neuron direction tuning (i.e. aligned to each neuron’s peak direction). Insets: mean single-neuron direction tuning at high (60-80%) contrast. All error bars are SEM. Sample size indicates number of neurons with number of experiments in parenthesis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55130/elife-55130-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The distribution of responses of all VIP neurons in layer 2/3 of Vip mice by grating direction and contrast. Each dot is one neuron. Box plots show lower quartile, median (red bar), and upper quartile. (b) Same as a but for all SST neurons in layer 4 of Sst mice. (c) Same as a but for all pyramidal neurons in layer 2/3 of Cux2 mice. (d) Same as a but for all pyramidal neurons in layer 4 of Rorb mice. (e) Same as a but shown for stimulus direction relative to the cell’s peak direction (i.e. stimulus direction – peak direction). (f) Same as e but for all SST neurons in layer 4 of Sst mice. (g) Same as e but for all pyramidal neurons in layer 2/3 of Cux2 mice. (h) Same as e but for all pyramidal neurons in layer 4 of Rorb mice.
 
 We built a Generalized Linear Model of VIP, SST, and layer 2/3 pyramidal neuron responses to investigate the contribution of stimulus contrast, stimulus direction, locomotion, and the interactions between these terms to the average activity of each neuron population using a Poisson model to predict responses (Figure 4a). To identify only the terms that significantly contribute to activity, we included an L1-regularization penalty in the cost function which resulted in relatively few non-zero terms (12–15 non-zero out of 126 total terms). VIP neurons had the highest weights for blank sweep, low contrasts (5–20%), running, directions of 0° and 180°, running by direction interactions at 0° and 45°, and direction by contrast interactions at ±45° and low contrasts (Figure 4b). SST neurons had the highest weights for high contrasts (40–80%), direction of 0°, and running by direction interactions at all directions (Figure 4c). Layer 2/3 pyramidal neurons have significant weights only for running, low contrasts (5–20%), and all directions (Figure 4d). Overall, this analysis confirms the influence of running, stimulus direction, and stimulus contrast but suggests that interactions among these variables is limited.
 
@@ -77,74 +97,277 @@ This survey of contrast tuning in mouse V1 revealed two distinct regimes of cort
 
 ## Materials and methods
 
-## Experimental animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Vip-IRES-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 010908; RRID:MGI:4436915</td>
+      <td>Dr. Z Josh Huang (Cold Spring Harbor Laboratory)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sst-IRES-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 013044; RRID:IMSR_JAX:013044</td>
+      <td>Dr. Z Josh Huang (Cold Spring Harbor Laboratory)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cux2-CreERT2</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_032779-MU</td>
+      <td>PMID:22879516</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rorb-IRES2-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 023526 RRID:IMSR_JAX:023526</td>
+      <td>PMID:25071457</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rbp4-Cre_KL100</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_031125-UCD</td>
+      <td>PMID:24360541</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ntsr1-Cre_GN220</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 017266; RRID:MMRRC_030648-UCD</td>
+      <td>PMID:24360541</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CaMKII-tTA x Ai93-GCaMP6f</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 024108; RRID:IMSR_JAX:024108</td>
+      <td>PMID:22855807; PMID:25741722</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai148-GCaMP6f</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 030328; RRID:IMSR_JAX:030328</td>
+      <td>PMID:30007418</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NumPy</td>
+      <td>NumPy</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matplotlib</td>
+      <td>MatPlotLib</td>
+      <td>RRID:SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pandas</td>
+      <td>pandas</td>
+      <td>DOI:10.5281/zenodo.3509134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>statsmodel</td>
+      <td>statsmodel</td>
+      <td>RRID:SCR_016074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scipy</td>
+      <td>SciPy</td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-learn</td>
+      <td>scikit-learn</td>
+      <td>RRID:SCR_002577</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental animals
 
 All animal procedures were approved by the Institutional Animal Care and Use Committee (IACUC) at the Allen Institute for Brain Science. Six double or triple transgenic mouse lines were used to drive expression of GCamp6/f in genetically-defined cell types, including four excitatory (Cux2-CreERT2;Camk2a-tTA;Ai93, Rorb-IRES2-Cre;Camk2a-tTA;Ai93, Rbp4-Cre_KL100;Camk2a-tTA;Ai93, and Ntsr1-Cre_GN220;Ai148) and two inhibitory (Vip-IRES-Cre;Ai148 and Sst-IRES-Cre;Ai148) mouse lines. Mice were habituated to head fixation and visual stimulus presentation for 2 weeks before data collection. Post-surgical experimental mice were housed in cages individually and maintained on a reverse dark-light cycle with experiments conducted during the dark phase. (See de Vries et al., 2020 for further Cre line, surgical, and habituation details). Sample size was determined qualitatively to balance repeated experiments for each layer/Cre-line and to preserve the breadth of the survey.
 
 The correspondence between Cre lines (including all six Cre lines used in this study) and transcriptomic neuron subtypes as measured with single-cell RNA sequencing has been reported in Extended Figure 8 of Tasic et al., 2018. Vip-Cre and Sst-Cre lines provide broad coverage of VIP and SST neuron transcriptomic subtypes (16 and 21 subtypes, respectively). In layer 2/3, Cux2-CreERT2 labels all three excitatory neuron transcriptomic subtypes. Layer 4 contains only a single transcriptomic neuron type, which is sampled by the Rorb-Cre line. Rbp4-Cre_KL100 labels all twelve layer 5 neuron transcriptomic subtypes; note that layer 5 was imaged at a single depth in this study, which might result in sampling only a subset of the layer 5 transcriptomic types. Ntsr1-Cre labels all six layer 6 corticothalamic neuron transcriptomic subtypes.
 
-## Two-photon imaging platform and image processing
+### Two-photon imaging platform and image processing
 
 Data was collected using the same data collection pipeline as the Allen Brain Observatory and processed using the same image processing and event detection methods (See de Vries et al., 2020 for further imaging and image processing details). Calcium imaging was performed with Nikon A1R MP+ two-photon microscopes adapted to provide space to accommodate the running disc. Laser excitation with a wavelength of 910 nm was provided by a Ti:Sapphire laser (Chameleon Vision—Coherent). Precompensation was fixed at 10,000 fs2. Movies were recorded at 30 Hz with resonant scanners over a 400 μm field of view with a resolution of 512 × 512 pixels. Temporal synchronization of calcium imaging, visual stimulation, and running wheel movement was achieved by recording all experimental clocks on a single NI PCI-6612 digital IO board at 100 kHz. PMT gain and laser power were chosen for each experiment to maximize dynamic range while saturating fewer than 1000 pixels in the field of view. Two z-stacks, one local (±30 μm from imaging depth in 0.1 μm steps) and one full-depth of the cortex (~700 μm total depth in 5 μm steps), were acquired at the end of each imaging session. Z-drift was calculated from the local z-stack and experiments with z-drift of more than 10 μm during the experiment were excluded. The imaging depth of the field of view was confirmed from the full-depth cortical z-stack.
 
-Calcium fluorescence movies were motion corrected for rigid translational errors using an algorithm based on phase correlation. ROI masks of neuronal somata were segmented from motion-corrected movies by (1) creating initial binarized masks using an adaptive fluorescence threshold, (2) applying a succession of morphological operations to fill closed holes and concave shapes, (3) computing a feature vector of each mask that included morphological attributes such as location, area, perimeter, and compactness, (4) combining or eliminating ROIs based on heuristic decisions, including attributes from the feature vectors, and (5) applying a final discrimination step using a binary relevance classifier fed by experimental metadata (e.g. Cre line and imaging depth) as well as the morphological feature vectors. Fluorescence traces were then extracted for each final ROI, which were then neuropil subtracted and corrected for overlapping ROIs by demixing traces. Neuropil contamination into the ROI contributed by the surrounding neuropil was estimated by modeling the measured ROI fluorescence as the sum of the true ROI fluorescence and a weighting of the surrounding neuropil fluorescence, FM= FC+rFN, where FM is the measured fluorescence trace, FC is the unknown true ROI fluorescence trace that we are trying to estimate, FN is the fluorescence of the surrounding neuropil and r is the contamination ratio. The contamination ratio was estimated for each ROI by selecting the value for r that minimizes the cross-validation error, E= ∑tFC-FM+rFN2, over four folds. Overlapping ROIs were demixed by modeling the measured fluorescence Fit of each pixel i at time t as Fit= ∑kWkitTkt, where Wkit are time-dependent weighted masks that describe how much of each neuron k’s fluorescence is contained in each pixel at each timestep, and Tkt is the fluorescence trace of the neurons that we seek to estimate. Reconstruction of calcium movies is modeled as ∑iAkiFit=∑k,iAkiWkitTkt, where Akt are the binary spatial masks obtained in the earlier segmentation step in which Aki equals 1 if pixel i is in ROI k and equals 0 otherwise. To solve for Tkt at each time t, we first estimated the weighted masks Wkit by projection of the recorded fluorescence Fit onto the binary masks Aki, then computed the linear least-squares solution T^kt to extract each ROI trace’s value. To calculate ΔF/F traces from each fluorescence trace, a fluorescence baseline was determined by median filtering the fluorescence trace with a window of 180 s (5401 samples); the ΔF/F trace was then produced by subtracting the fluorescence baseline from the original trace followed by dividing the fluorescence baseline. To prevent very small or negative baselines, we set the baseline as the maximum of the median filter-estimated baseline and the standard deviation of the estimated noise of the fluorescence trace. All analyses of cell responses were performed on L0 penalized detected events (Jewell and Witten, 2018; Jewell et al., 2019).
+Calcium fluorescence movies were motion corrected for rigid translational errors using an algorithm based on phase correlation. ROI masks of neuronal somata were segmented from motion-corrected movies by (1) creating initial binarized masks using an adaptive fluorescence threshold, (2) applying a succession of morphological operations to fill closed holes and concave shapes, (3) computing a feature vector of each mask that included morphological attributes such as location, area, perimeter, and compactness, (4) combining or eliminating ROIs based on heuristic decisions, including attributes from the feature vectors, and (5) applying a final discrimination step using a binary relevance classifier fed by experimental metadata (e.g. Cre line and imaging depth) as well as the morphological feature vectors. Fluorescence traces were then extracted for each final ROI, which were then neuropil subtracted and corrected for overlapping ROIs by demixing traces. Neuropil contamination into the ROI contributed by the surrounding neuropil was estimated by modeling the measured ROI fluorescence as the sum of the true ROI fluorescence and a weighting of the surrounding neuropil fluorescence, $F_{M}=F_{C}+rF_{N}$, where $F_{M}$ is the measured fluorescence trace, $F_{C}$ is the unknown true ROI fluorescence trace that we are trying to estimate, $F_{N}$ is the fluorescence of the surrounding neuropil and $r$ is the contamination ratio. The contamination ratio was estimated for each ROI by selecting the value for $r$ that minimizes the cross-validation error, $E=\sumtF_{C}-F_{M}+rF_{N}^{2}$, over four folds. Overlapping ROIs were demixed by modeling the measured fluorescence $F_{it}$ of each pixel $i$ at time $t$ as $F_{it}=\sum_{k}W_{kit}T_{kt}$, where $W_{kit}$ are time-dependent weighted masks that describe how much of each neuron $k$’s fluorescence is contained in each pixel at each timestep, and $T_{kt}$ is the fluorescence trace of the neurons that we seek to estimate. Reconstruction of calcium movies is modeled as $\sum_{i}A_{ki}F_{it}=\sum_{k,i}A_{ki}W_{kit}T_{kt}$, where $A_{kt}$ are the binary spatial masks obtained in the earlier segmentation step in which $A_{ki}$ equals 1 if pixel $i$ is in ROI $k$ and equals 0 otherwise. To solve for $T_{kt}$ at each time $t$, we first estimated the weighted masks $W_{kit}$ by projection of the recorded fluorescence $F_{it}$ onto the binary masks $A_{ki}$, then computed the linear least-squares solution $T^_{kt}$ to extract each ROI trace’s value. To calculate ΔF/F traces from each fluorescence trace, a fluorescence baseline was determined by median filtering the fluorescence trace with a window of 180 s (5401 samples); the ΔF/F trace was then produced by subtracting the fluorescence baseline from the original trace followed by dividing the fluorescence baseline. To prevent very small or negative baselines, we set the baseline as the maximum of the median filter-estimated baseline and the standard deviation of the estimated noise of the fluorescence trace. All analyses of cell responses were performed on L0 penalized detected events (Jewell and Witten, 2018; Jewell et al., 2019).
 
 Two-photon imaging data was collected from the retinotopic center of primary visual cortex that was identified through mapping during widefield intrinsic signal imaging. Cux2-CreERT2;Camk2a-tTA;Ai93 and Vip-IRES-Cre;Ai148 were imaged at 175 um below the cortical surface in layer 2/3; Sst-IRES-Cre;Ai148 mice and Rorb-IRES2-Cre;Camk2a-tTA;Ai93 mice were imaged at 275 um below the cortical surface in layer 4; Rbp4-Cre_KL100;Camk2a-tTA;Ai93 mice were imaged at 375 um below the cortical surface in layer 5; and Ntsr1-Cre_GN220;Ai148 mice were imaged at 550 um below the cortical surface in layer 6. (These Cre lines and imaging depths match those used in the Allen Brain Observatory.) Some mice were imaged in two different fields of view at the same depth; the sample sizes for number of imaging sessions and mice are given in Figure 1—source data 1. Some mice were imaged in multiple sessions; in cases in which a subset of cells was imaged in multiple sessions, only data from the first imaging session for each cell was analyzed. Mice were excluded for evidence of epileptiform activity, and individual imaging sessions were failed if there were signs of bleaching, saturation, excessive z-drift, or animal stress, among other factors.
 
-## Visual stimulus
+### Visual stimulus
 
 As experimental sessions took place on the same data collection pipeline as the Allen Brain Observatory, visual stimulus monitor calibration and positioning (ASUS PA248Q LCD monitor with 1920×1200 pixels; center of monitor was 118.6 mm lateral, 86.2 mm anterior, and 31.6 mm dorsal to the right eye; normal distance from the right eye to center of monitor was 15 cm) were identical. Each monitor was gamma corrected and had a mean luminance of 50 cd m−2. Spherical warping was applied to all stimuli to ensure constant spatial and temporal frequencies across the monitor as seen from the mouse’s perspective. See de Vries et al., 2020 for further visual stimulus presentation details. The stimulus consisted of a full field drifting sinusoidal grating that was presented at a single spatial frequency (0.04 cycles/degree) and temporal frequency (1 Hz), eight directions uniformly distributed in 45 degree increments (0 degrees = horizontal front-to-back motion), and six contrasts (5%, 10%, 20%, 40%, 60%, and 80%). Direction of motion was always orthogonal to the orientation of the grating. Each grating was presented for 2 s, followed by 1 s of mean luminance gray before the next grating. Each grating condition (direction, contrast combination) was presented 15–24 times. Trials were randomized with 30 randomly interleaved blank (i.e. mean luminance gray, zero contrast) trials.
 
-## Analysis
+### Analysis
 
-## Statistical test for responsiveness
+#### Statistical test for responsiveness
 
-A chi-square test for independence was used to determine significantly responsive cells to the drifting grating stimulus set. A chi-square test statistic was computed χ2= ∑i=0nEi-Oi2Ei, where Oi= 1mi∑j=0miRi,j is the observed average response (R) of the neuron over m presentations of a grating stimulus of a particular condition (i.e. direction-by-contrast pair or blank, n = 49 total conditions), and Ei= ∑in∑jmiRi,j∑inmi  is the expected (grand average) response per stimulus presentation. A p-value was then calculated for each cell by comparing the test statistic against a null distribution of 200,000 test statistics, each computed from the cell’s responses after shuffling (with replacement) cell responses across all presentations.
+A chi-square test for independence was used to determine significantly responsive cells to the drifting grating stimulus set. A chi-square test statistic was computed $χ^{2}=\sumi=0n\frac{E_{i}-O_{i}^{2}}{E_{i}}$, where $O_{i}=\frac{1}{m_{i}}\sumj=0m_{i}R_{i,j}$ is the observed average response ($R$) of the neuron over $m$ presentations of a grating stimulus of a particular condition (i.e. direction-by-contrast pair or blank, n = 49 total conditions), and $E_{i}=\frac{\sumin\sumjm_{i}R_{i,j}}{\suminm_{i}}$ is the expected (grand average) response per stimulus presentation. A p-value was then calculated for each cell by comparing the test statistic against a null distribution of 200,000 test statistics, each computed from the cell’s responses after shuffling (with replacement) cell responses across all presentations.
 
-## Response significance by stimulus condition and test for suppression by contrast
+#### Response significance by stimulus condition and test for suppression by contrast
 
-The distribution of responses to stimulus presentations varied substantially across cells. A statistical measure was used to normalize response magnitudes. The mean blank-subtracted response to a given stimulus condition was calculated as: R-= 1mi∑j=0miRi,j-  1mblank∑j=0mblankRblank,j. Then, a bootstrapped null distribution of such mean (blank-subtracted) condition responses was generated by sampling with replacement from all of the cell’s responses across all stimulus presentations. The percentiles of each cell’s observed mean condition response within its own bootstrapped distribution was then computed. Cells were determined to be suppressed by high contrast if this percentile for the peak direction grating condition at 80% contrast was below 0.05.
+The distribution of responses to stimulus presentations varied substantially across cells. A statistical measure was used to normalize response magnitudes. The mean blank-subtracted response to a given stimulus condition was calculated as: $R-=\frac{1}{m_{i}}\sumj=0m_{i}R_{i,j}-\frac{1}{m_{blank}}\sumj=0m_{blank}R_{blank,j}$. Then, a bootstrapped null distribution of such mean (blank-subtracted) condition responses was generated by sampling with replacement from all of the cell’s responses across all stimulus presentations. The percentiles of each cell’s observed mean condition response within its own bootstrapped distribution was then computed. Cells were determined to be suppressed by high contrast if this percentile for the peak direction grating condition at 80% contrast was below 0.05.
 
-## Orientation and direction selectivity metrics
+#### Orientation and direction selectivity metrics
 
-Global orientation selectivity was computed from mean extracted event responses to drifting gratings, at the cell’s preferred contrast as,gOSI=∑Rθeiθ∑Rθ where θ is the direction of grating movement, and Rθ is the mean response to that direction of motion.
+Global orientation selectivity was computed from mean extracted event responses to drifting gratings, at the cell’s preferred contrast as,
 
-Direction selectivity was computed from mean extracted event responses to drifting gratings, at the cell’s preferred contrast, asDSI=Rpref-RnullRpref+Rnullwhere Rpref is a cell’s mean response in its preferred direction (i.e. largest response-evoking direction) and Rnull is its mean response to the opposite direction.
+$$
+gOSI=\frac{\sumR_{\theta}e^{i\theta}}{\sumR_{\theta}}
+$$
 
-## Contrast preference metric
+where $\theta$ is the direction of grating movement, and $R_{\theta}$ is the mean response to that direction of motion.
 
-Contrast preference was computed from mean extracted event responses to drifting gratings, at the cell’s preferred direction, ascCoM= e∑Rcln⁡c∑Rcwhere c is the contrast of the drifting grating, Rc is a cell’s mean response at contrast c, and cCoM is the log-scaled center of mass of the cell’s contrast response tuning.
+Direction selectivity was computed from mean extracted event responses to drifting gratings, at the cell’s preferred contrast, as
 
-## Bias in population direction preference
+$$
+DSI=\frac{R_{pref}-R_{null}}{R_{pref}+R_{null}}
+$$
 
-The direction and magnitude of bias in direction preference for a population of cells (e.g. all cells recorded from one mouse or all cells recorded from all mice of a particular Cre line) was calculated as the direction and magnitude of the vector sum of the direction preferences of the cells that comprise the population, at a particular contrast as,θbias=tan-1⁡∑sin⁡θi∑cos⁡θirbias= 1ncells(∑cos⁡θi)2+(∑sin⁡θi)2where θi is the preferred direction of cell i, ncells is the number of cells in the population, θbias is the direction of the vector sum over the population, and rbias is the magnitude of the vector sum over the population.
+where Rpref is a cell’s mean response in its preferred direction (i.e. largest response-evoking direction) and Rnull is its mean response to the opposite direction.
 
-## Stimulus tuning conditioned on locomotion behavior
+#### Contrast preference metric
+
+Contrast preference was computed from mean extracted event responses to drifting gratings, at the cell’s preferred direction, as
+
+$$
+c_{CoM}=e^{\frac{\sumR_{c}ln⁡c}{\sumR_{c}}}
+$$
+
+where c is the contrast of the drifting grating, $R_{c}$ is a cell’s mean response at contrast c, and $c_{CoM}$ is the log-scaled center of mass of the cell’s contrast response tuning.
+
+#### Bias in population direction preference
+
+The direction and magnitude of bias in direction preference for a population of cells (e.g. all cells recorded from one mouse or all cells recorded from all mice of a particular Cre line) was calculated as the direction and magnitude of the vector sum of the direction preferences of the cells that comprise the population, at a particular contrast as,
+
+$$
+\theta_{bias}=tan^{-1}⁡\frac{\sumsin⁡\theta_{i}}{\sumcos⁡\theta_{i}}
+$$
+
+
+
+$$
+r_{bias}= \frac{1}{n_{cells}}\sqrt{(\sumcos⁡\theta_{i})^{2}+(\sumsin⁡\theta_{i})^{2}}
+$$
+
+where $\theta_{i}$ is the preferred direction of cell $i$, $n_{cells}$ is the number of cells in the population, $\theta_{bias}$ is the direction of the vector sum over the population, and $r_{bias}$ is the magnitude of the vector sum over the population.
+
+#### Stimulus tuning conditioned on locomotion behavior
 
 As part of the standardized pipeline for the Allen Brain Observatory, mice were held on a running wheel during experimental sessions and locomotion behavior was recorded (See de Vries et al., 2020 for further run speed measurement details). The mean running speed was calculated for each trial over the same time window as the mean cellular response was calculated. Trials for which the mean running speed was greater than or equal to 1 cm/s were categorized as running trials, whereas trials for which the mean running speed was below 1 cm/s were categorized as stationary trials. The mean and standard error of the mean event magnitude for each contrast and direction condition shown in Figure 3 was calculated separately for running and stationary trials. The criterion for a cell to be included in the calculation for a given direction-by-contrast condition was that the mouse had to be running for a minimum of four trials and be stationary for a minimum of four trials of that condition. At least three responsive neurons needed to be present to include an experiment in this analysis.
 
-## Contrast response function fitting and model comparison
+#### Contrast response function fitting and model comparison
 
-Event responses as a function of contrast, at a cell’s preferred direction, were fit to a rising sigmoid (‘high pass’), a falling sigmoid (‘low pass’), and the product of one rising and one falling sigmoid (‘band pass’).Rhigh pass(c;h,b,s,c50r)= b+h11+e−s(c−c50r)Rlow pass(c;h,b,s,c50f)=b+h11+es(c−c50f)Rband pass(c;h,b,s,c50r,c50f)=b+h(11+e−s(c−c50r))(11+es(c−c50f))where c is the contrast, c50r is the contrast at which the response rises halfway between the base and height, c50f is the contrast at which the response falls halfway between the base and height, b is the lowest response, h is the response amplitude, and s is the slope of the sigmoid (fixed at s=10). The best fit model was determined by calculating the Akaike Information Criterion (AIC) for each model and selecting the model with the lowest AIC.
+Event responses as a function of contrast, at a cell’s preferred direction, were fit to a rising sigmoid (‘high pass’), a falling sigmoid (‘low pass’), and the product of one rising and one falling sigmoid (‘band pass’).
 
-The AIC can be calculated as:AIC=2k−2ln⁡LL=∏contrasts∏trialsN(Rci|μ=R^c,σR2)ln⁡L=−12σR2∑contrasts∑trials(Rci−R^c)2+constantwhere k is the number of parameters fit in the model, ℒ is the likelihood of observing the responses given the fitted model and response distribution, Rci is the cell’s response to a grating stimulus of contrast c (at the cell’s preferred direction) on trial i, R^c is the response predicted by the model to a grating stimulus of contrast c, σR2 is the variance of all of the cell’s responses, and 𝒩 is the normal distribution. In practice, it is more convenient to directly calculate the log-likelihood than to calculate the likelihood and subsequently take the log, and the constant can be ignored for model selection since the same constant applies to all models being compared.
+$$
+R_{high pass}(c;h,b,s,c_{50}^{r})= b+h\frac{1}{1+e^{−s(c−c_{50}^{r})}}R_{low pass}(c;h,b,s,c_{50}^{f})=b+h\frac{1}{1+e^{s(c−c_{50}^{f})}}R_{band pass}(c;h,b,s,c_{50}^{r},c_{50}^{f})=b+h(\frac{1}{1+e^{−s(c−c_{50}^{r})}})(\frac{1}{1+e^{s(c−c_{50}^{f})}})
+$$
 
-Due to the non-normal response distribution, possibly arising from calcium imaging as well as an underlying non-normal spiking distribution, we bootstrapped the log-likelihood rather than assume normality. Therefore, the likelihood was calculated numerically by shuffling responses across trials 1000 times and calculating the sum of square residuals from the predicted responses as SS=∑contrasts∑trialsRci-R^c2 for each shuffle. The likelihood was taken as the fraction of shuffles for which SS was greater than the observed SS.
+where $c$ is the contrast, $c_{50}^{r}$ is the contrast at which the response rises halfway between the base and height, $c_{50}^{f}$ is the contrast at which the response falls halfway between the base and height, $b$ is the lowest response, $h$ is the response amplitude, and $s$ is the slope of the sigmoid (fixed at $s=10$). The best fit model was determined by calculating the Akaike Information Criterion (AIC) for each model and selecting the model with the lowest AIC.
 
-## Generalized linear model
+The AIC can be calculated as:
 
-We constructed Generalized Linear Models, specifically a Poisson (i.e. exponential function) models, to predict the population response of each neuron type (e.g. VIP neurons) on each trial from stimulus contrast, stimulus direction, locomotion state (i.e. binary run or not run variable), and the interactions between these terms. The model wasR^b,r,d,c=e(wbab+wrar+∑dad(wd+wd,rar )+∑cac(wc+wc,rar)+∑d∑cadac(wd,c+wd,c,rar)+k)where R^b,r,d,c is the predicted response for a trial, w terms are the weights of the model, a terms are binary variables that equal 1 if the trial attribute is true and equal 0 otherwise; the trial attributes are blank (b), run state (r), stimulus direction (d), and stimulus contrast (c); and k is a constant. The weights of the model were computed by minimizing the cost function L using iterative reweighted least squares,L= SSE+ λl1where SSE is the reconstruction error.SSE= ∑b,r,d,c(Rb,r,d,c−R^b,r,d,c)2and l1 is an L1-regularization penalty that serves to identify only weights that significantly contribute to neuronal responses,l1= wb+wr+∑dwd+wd,r+∑cwc+wc,r+∑d∑cwd,c+wd,c,r
+$$
+AIC=2k−2ln⁡LL=\prodcontrasts\prodtrialsN(R_{c}^{i}|\mu=R^_{c},\sigma_{R}^{2})ln⁡L=−\frac{1}{2\sigma_{R}^{2}}\sumcontrasts\sumtrials(R_{c}^{i}−R^_{c})^{2}+constant
+$$
 
-The strength of regularization, λ, was determined through leave-one-out cross validation in which one experimental session was left out for each fold.
+where $k$ is the number of parameters fit in the model, $ℒ$ is the likelihood of observing the responses given the fitted model and response distribution, $R_{c}^{i}$ is the cell’s response to a grating stimulus of contrast c (at the cell’s preferred direction) on trial $i$, $R^_{c}$ is the response predicted by the model to a grating stimulus of contrast c, $\sigma_{R}^{2}$ is the variance of all of the cell’s responses, and $𝒩$ is the normal distribution. In practice, it is more convenient to directly calculate the log-likelihood than to calculate the likelihood and subsequently take the log, and the constant can be ignored for model selection since the same constant applies to all models being compared.
 
-## Stabilized supralinear network (SSN) model
+Due to the non-normal response distribution, possibly arising from calcium imaging as well as an underlying non-normal spiking distribution, we bootstrapped the log-likelihood rather than assume normality. Therefore, the likelihood was calculated numerically by shuffling responses across trials 1000 times and calculating the sum of square residuals from the predicted responses as $SS=\sumcontrasts\sumtrialsR_{c}^{i}-R^_{c}^{2}$ for each shuffle. The likelihood was taken as the fraction of shuffles for which $SS$ was greater than the observed $SS$.
+
+#### Generalized linear model
+
+We constructed Generalized Linear Models, specifically a Poisson (i.e. exponential function) models, to predict the population response of each neuron type (e.g. VIP neurons) on each trial from stimulus contrast, stimulus direction, locomotion state (i.e. binary run or not run variable), and the interactions between these terms. The model was
+
+$$
+R^_{b,r,d,c}=e^{(w_{b}a_{b}+w_{r}a_{r}+\sumda_{d}(w_{d}+w_{d,r}a_{r} )+\sumca_{c}(w_{c}+w_{c,r}a_{r})+\sumd\sumca_{d}a_{c}(w_{d,c}+w_{d,c,r}a_{r})+k)}
+$$
+
+where $R^_{b,r,d,c}$ is the predicted response for a trial, $w$ terms are the weights of the model, $a$ terms are binary variables that equal 1 if the trial attribute is true and equal 0 otherwise; the trial attributes are blank ($b$), run state ($r$), stimulus direction ($d$), and stimulus contrast ($c$); and $k$ is a constant. The weights of the model were computed by minimizing the cost function $L$ using iterative reweighted least squares,
+
+$$
+L=SSE+\lambdal_{1}
+$$
+
+where SSE is the reconstruction error.
+
+$$
+SSE= \sumb,r,d,c(R_{b,r,d,c}−R^_{b,r,d,c})^{2}
+$$
+
+and $l_{1}$ is an L1-regularization penalty that serves to identify only weights that significantly contribute to neuronal responses,
+
+$$
+l_{1}=w_{b}+w_{r}+\sum_{d}w_{d}+w_{d,r}+\sum_{c}w_{c}+w_{c,r}+\sum_{d}\sum_{c}w_{d,c}+w_{d,c,r}
+$$
+
+The strength of regularization, $\lambda$, was determined through leave-one-out cross validation in which one experimental session was left out for each fold.
+
+#### Stabilized supralinear network (SSN) model
 
 The SSN was modeled as a ring network, largely maintaining the basic architecture and dynamics described in Rubin et al., 2015 but deviating primarily in the diversity of inhibitory neurons and distributions of connections between neuron populations (including untuned inhibitory connections, described below). Our network consisted of one excitatory population (representing layer 2/3 CUX2 pyramidal neurons) and three inhibitory populations (representing PV, SST, and VIP interneurons, respectively). The ring network structure was imposed by providing each excitatory neuron with external (‘sensory’) excitatory input that had Gaussian tuning with the mean (i.e. peak/preferred direction) corresponding to the neuron’s position on the ring and standard deviation of 30 degrees; PV neurons also received external input which was not tuned (i.e. all PV cells receive input of equal strength). The entire network covered 180 degrees of orientation (or direction). The strength of external input was intended to represent a monotonically-increasing function of stimulus contrast, though no specific relationship between input magnitude and contrast is claimed here.
 
 Connections between neurons also had Gaussian tuning that depended on the difference between the orientation preferences of the pre- and post-synaptic neurons (Figure 5b). The distributions of recurrent excitatory connections onto CUX2 cells and excitatory connections onto Vip cells were narrow (standard deviation of 30 degrees) compared to the distributions of connections to and from PV and Sst cells (standard deviation of 100 degrees).
 
-The network consisted of 184 excitatory neurons, 40 PV neurons, 15 SST neurons, and 15 VIP neurons. The excitatory population had 180 neurons with uniform 1-degree spacing of peak directions to tile the ring, plus four extra neurons with peak direction of zero degrees to capture the slight bias of the CUX2 neurons. All model VIP neurons had a peak direction of zero degrees to capture the strong bias for front-to-back motion observed for VIP neurons. In addition, all SST and PV model neurons also had a peak direction of zero degrees, though the very broadly-tuned inputs to these neurons results in a much weaker bias of net input to these neurons than the bias to VIP neurons. All neurons were implemented as rate models with firing rate that was a rectified quadratic function of the summed input to the neuron,rss(I)={kI2 I>00 I≤0where I is the input strength, rss is the steady state firing rate, and k is a constant of proportionality. For ease of comparison with the SSN models developed by Rubin et al., 2015, we used k=0.04 for all models.
+The network consisted of 184 excitatory neurons, 40 PV neurons, 15 SST neurons, and 15 VIP neurons. The excitatory population had 180 neurons with uniform 1-degree spacing of peak directions to tile the ring, plus four extra neurons with peak direction of zero degrees to capture the slight bias of the CUX2 neurons. All model VIP neurons had a peak direction of zero degrees to capture the strong bias for front-to-back motion observed for VIP neurons. In addition, all SST and PV model neurons also had a peak direction of zero degrees, though the very broadly-tuned inputs to these neurons results in a much weaker bias of net input to these neurons than the bias to VIP neurons. All neurons were implemented as rate models with firing rate that was a rectified quadratic function of the summed input to the neuron,
 
-For a given external input, the firing rates of all neurons in the network were obtained by evolving the network in time, with dynamics:r˙=rss(Isum(t))−r(t)Isumj(t)= Ispj+∑iWi,jri(t)where r(t) is the time-dependent firing rate, r˙ is the time derivate of the neuron’s firing rate, rss is the steady state firing rate that varies in time based on the inputs to the neuron, Isumj is the net input to neuron j, Ispj is a constant spontaneous input to neuron j, and Wi,j is the connection strength from presynaptic neuron i onto postsynaptic neuron j. To provide a spontaneous activity to the network, and account for the higher spontaneous activity of VIP neurons (Roux and Buzsáki, 2015), we set IspCUX2=IspPV=IspSST=2 and IspVIP=10. The network is evolved with Euler integration with updates of ∆rj=∆tτjr˙j at each time step of ∆t=0.1 ms, where the time constants of the different neuron types are τCUX2=τSST=τVIP=20 ms and τPV=10 ms.
+$$
+r_{ss}(I)={kI^{2} I>00 I\leq0
+$$
 
-We calculated the stability of the steady state of activity at zero degrees with respect to a spatially homogenous perturbation of the inputs. The stability matrix is, in the spatial Fourier domain,Jx,n=gixWijGij(x,n)where x is the postsynaptic location in degrees, n is the spatial frequency corresponding to the orientation difference between the presynaptic and postsynaptic cells, gi(x) is the postsynaptic gain at its steady-state rate, W is the weight matrix and Gij(x,n) is the Fourier transform of the wrapped Gaussian connectivity profile:Gx,n=302π e-2nπσe2e-2nπσb2e-2nπσb2e-2nπσb2e-2nπσb2e-2nπσe2e-2nπσb2e-2nπσe2e-2nπσb2e-2nπσb2e-2nπσe2e-2nπσb2e-2nπσb2e-2nπσe2e-2nπσb2e-2nπσe2where σe=30 degrees is the projection width for E→E, E→VIP and VIP projections and σb=100 degrees is the projection width for the remaining inhibitory projections. If EEstability=J00x,n-1 is greater than zero, the network at orientation x is in an inhibitory-stabilized state with respect to perturbations at spatial frequency n.
+where $I$ is the input strength, $r_{ss}$ is the steady state firing rate, and $k$ is a constant of proportionality. For ease of comparison with the SSN models developed by Rubin et al., 2015, we used $k=0.04$ for all models.
+
+For a given external input, the firing rates of all neurons in the network were obtained by evolving the network in time, with dynamics:
+
+$$
+r˙=r_{ss}(I_{sum}(t))−r(t)I_{sum}^{j}(t)= I_{sp}^{j}+\sumiW_{i,j}r^{i}(t)
+$$
+
+where $r(t)$ is the time-dependent firing rate, $r˙$ is the time derivate of the neuron’s firing rate, $r_{ss}$ is the steady state firing rate that varies in time based on the inputs to the neuron, $I_{sum}^{j}$ is the net input to neuron $j$, $I_{sp}^{j}$ is a constant spontaneous input to neuron $j$, and $W_{i,j}$ is the connection strength from presynaptic neuron $i$ onto postsynaptic neuron $j$. To provide a spontaneous activity to the network, and account for the higher spontaneous activity of VIP neurons (Roux and Buzsáki, 2015), we set $I_{sp}^{CUX2}=I_{sp}^{PV}=I_{sp}^{SST}=2$ and $I_{sp}^{VIP}=10$. The network is evolved with Euler integration with updates of $\Deltar^{j}=\frac{\Deltat}{\tau^{j}}r˙^{j}$ at each time step of $\Deltat=0.1ms$, where the time constants of the different neuron types are $\tau^{CUX2}=\tau^{SST}=\tau^{VIP}=20ms$ and $\tau^{PV}=10ms$.
+
+We calculated the stability of the steady state of activity at zero degrees with respect to a spatially homogenous perturbation of the inputs. The stability matrix is, in the spatial Fourier domain,
+
+$$
+Jx,n=g_{i}xW_{ij}G_{ij}(x,n)
+$$
+
+where $x$ is the postsynaptic location in degrees, $n$ is the spatial frequency corresponding to the orientation difference between the presynaptic and postsynaptic cells, $g_{i}(x)$ is the postsynaptic gain at its steady-state rate, $W$ is the weight matrix and $G_{ij}(x,n)$ is the Fourier transform of the wrapped Gaussian connectivity profile:
+
+$$
+Gx,n=30\sqrt{\frac{2}{\pi}}e^{-2n\pi\sigma_{e}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{e}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{e}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{e}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{e}}^{2}e^{-2n\pi\sigma_{b}}^{2}e^{-2n\pi\sigma_{e}}^{2}
+$$
+
+where $\sigma_{e}=30$ degrees is the projection width for E→E, E→VIP and VIP projections and $\sigma_{b}=100$ degrees is the projection width for the remaining inhibitory projections. If $EE_{stability}=J_{00}x,n-1$ is greater than zero, the network at orientation $x$ is in an inhibitory-stabilized state with respect to perturbations at spatial frequency $n$.

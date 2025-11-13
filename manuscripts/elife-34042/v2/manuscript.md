@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.34042.001 Alternative polyadenylation (APA) regulates mRNA translation, stability, and protein localization. However, it is unclear to what extent APA regulates these processes uniquely in specific cell types. Using a new technique, cTag-PAPERCLIP, we discovered significant differences in APA between the principal types of mouse cerebellar neurons, the Purkinje and granule cells, as well as between proliferating and differentiated granule cells. Transcripts that differed in APA in these comparisons were enriched in key neuronal functions and many differed in coding sequence in addition to 3’UTR length. We characterize Memo1 , a transcript that shifted from expressing a short 3’UTR isoform to a longer one during granule cell differentiation. We show that Memo1 regulates granule cell precursor proliferation and that its long 3’UTR isoform is targeted by miR-124, contributing to its downregulation during development. Our findings provide insight into roles for APA in specific cell types and establish a platform for further functional studies.
+Alternative polyadenylation (APA) regulates mRNA translation, stability, and protein localization. However, it is unclear to what extent APA regulates these processes uniquely in specific cell types. Using a new technique, cTag-PAPERCLIP, we discovered significant differences in APA between the principal types of mouse cerebellar neurons, the Purkinje and granule cells, as well as between proliferating and differentiated granule cells. Transcripts that differed in APA in these comparisons were enriched in key neuronal functions and many differed in coding sequence in addition to 3’UTR length. We characterize Memo1, a transcript that shifted from expressing a short 3’UTR isoform to a longer one during granule cell differentiation. We show that Memo1 regulates granule cell precursor proliferation and that its long 3’UTR isoform is targeted by miR-124, contributing to its downregulation during development. Our findings provide insight into roles for APA in specific cell types and establish a platform for further functional studies.
 
 ## Introduction
 
@@ -37,9 +37,21 @@ Using cTag-PAPERCLIP, we found that Purkinje and granule neurons differentially 
 
 ## Results
 
-## cTag-PAPERCLIP maps mRNA 3’UTR ends in specific cells in vivo
+### cTag-PAPERCLIP maps mRNA 3’UTR ends in specific cells in vivo
 
 To investigate the diversity of 3’UTR ends in distinct neuronal types in the mouse brain we compared 3’UTR isoform expression between cerebellar Purkinje and granule cells using cTag-PAPERCLIP. We previously generated a genetically modified mouse, termed Pabpc1cTag, that expresses GFP-tagged PABPC1 in a Cre-dependent manner. After Cre recombination, the GFP CDS is inserted into the endogenous Pabpc1 gene locus just upstream of the stop codon, leading to the expression of the PABPC1-GFP fusion protein. GFP antibodies can then be used to immunoprecipitate polyadenylated transcripts from cells expressing GFP-tagged PABPC1 (Hwang et al., 2017) (Figure 1A). We bred Pabpc1cTag mice to Pcp2-Cre (Barski et al., 2000) or Neurod1-Cre mice (Li et al., 2012), to isolate polyadenylated transcripts from cerebellar Purkinje or granule neurons, respectively.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the cTag-PAPERCLIP approach. Breeding of cTag-PABP mice with Cre-expressing mice restricts expression of PABPC1-GFP to the cells of interest (B) Immunostaining of cerebella from mice expressing PABPC1-GFP in Purkinje cells (top) and granule cells (bottom). Calb1: Purkinje cell marker. Scale bars: 50 μm. (C) Autoradiogram of radiolabelled RNA cross-linked to PABPC1-GFP purified by immunoprecipitation from granule cells. Red dashed rectangle shows the area of the membrane from which RNA was eluted and sequenced. (D) Correlation between the total number of cTag-PAPERCLIP reads per cluster in four biological replicates from granule cells and three biological replicates from Purkinje cells. R: Pearson correlation coefficient. (E) Comparison between total uniquely mapped cTag-PAPERCLIP reads per gene and TRAP-Seq Reads Per Kilobase per Million mapped reads (RPKM) per gene from Purkinje cells. R: Pearson correlation coefficient. Purkinje cell markers are highlighted in purple and non-target cell markers are highlighted in green. (F) Overlap of cTag-PAPERCLIP clusters that contain reads from three biological replicates from Purkinje cells and at least three biological replicates from granule cells with 3’UTR ends of Ensembl-annotated genes (annotated – clusters that overlap with annotated 3’UTR ends, novel – clusters that do not overlap with annotated 3’UTR ends). The data in panels E and F were derived from analysis of four replicates of cTag-PAPERCLIP on granule cells and three replicates of cTag-PAPERCLIP on Purkinje cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** R: Pearson correlation coefficient. Granule cell markers are highlighted in pink and non-target cell markers are highlighted in green. The data were derived from analysis of three replicates of cTag-PAPERCLIP and four replicates of TRAP-seq.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** We used the markers of granule cells and Bergmann glia shown in green in Figure 1E. Mann-Whitney test. p-value<0.001. The highest expressed gene has a rank of 1.
 
 We first confirmed by immunostaining of cerebellar sections that PABPC1-GFP was expressed specifically in Purkinje or granule cells in these mice (Figure 1B). We then performed cTag-PAPERCLIP (Figure 1C). We dissected cerebella from 8 week old mice, UV-crosslinked RNA to protein within the tissue, immunoprecipitated PABPC1-GFP covalently bound to RNA, and radiolabeled this bound RNA (Figure 1C, fourth lane). To verify that we specifically co-immunoprecipitated RNA bound to PABPC1-GFP, we digested RNA to completion, leaving only the RNA segment bound to PABPC1 remaining, and on visualizing the radiolabeled RNA-protein complex, observed a single band corresponding to the size of PABPC1-GFP (Figure 1C, third lane).
 
@@ -53,11 +65,23 @@ Two thirds of cTag-PAPERCLIP clusters mapped to the exact end of 3’UTRs of Ens
 
 Taken together, these data demonstrate that cTag-PAPERCLIP specifically purifies 3’UTR ends from genetically defined cell types, and can reveal a host of new transcript ends in the brain.
 
-## Cell-type specific APA regulates 3’UTR length and CDS of transcripts expressed in Purkinje and granule cells
+### Cell-type specific APA regulates 3’UTR length and CDS of transcripts expressed in Purkinje and granule cells
 
 We then compared 3’UTR isoform expression between Purkinje and granule cells in our cTag-PAPERCLIP data. We analyzed genes that were expressed in both cell types in order to compare the expression of different isoforms of the same gene across cell types. This analysis revealed extensive isoform diversity: 629 genes expressed different 3’UTR isoforms between the two cell types (FDR < 0.05) (Supplementary file 1).
 
 Most transcripts differed in 3’UTR length only, without impact on the CDS; among differentially polyadenylated transcripts with two poly(A) sites, 319 or 81% differed in 3’UTR length only (3’UTR-APA, Figure 2A). For example, the gene coding for vezatin (Vezt), which is involved in neurite outgrowth (Sanda et al., 2010), predominantly expressed a shorter 3’UTR isoform in Purkinje cells compared to granule cells (Figure 2B). Conversely, Zfp609, a neuron-specific transcription factor (van den Berg et al., 2017), predominantly expressed a long 3’UTR isoform in Purkinje cells, whereas in granule cells, it expressed both a short and the long 3’UTR isoform. The short 3’UTR isoforms for both Vezt and Zfp609 have not been previously annotated (by Ensembl), and contain a canonical poly(A) signal just upstream of their 3’UTR ends (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scatterplot representing the ratio between the number of cTag-PAPERCLIP reads at the end of the proximal 3’UTR isoform and the number of cTag-PAPERCLIP reads at the end of the distal 3’UTR isoform in Purkinje vs. granule cells. Only genes with two tandem 3’UTR isoforms are shown. Genes showing significantly different ratios (FDR < 0.05) are highlighted in red or blue. (B) Examples of cTag-PAPERCLIP data for genes that show a large difference in 3’UTR-APA between Purkinje and granule cells. Black bars represent isoforms annotated by Ensembl, gray ones are (predicted) novel isoforms discovered by cTag-PAPERCLIP. (C) Scatterplot representing the ratio between the number of cTag-PAPERCLIP reads at the end of the proximal 3’UTR isoform and the number of cTag-PAPERCLIP reads at the end of the distal 3’UTR isoform in Purkinje vs. granule cells. Only genes with two 3’UTR isoforms that differ in CDS-APA are shown. Genes showing significantly different ratios (FDR < 0.05) are highlighted in red or blue. (D) Examples of cTag-PAPERCLIP data for genes that show a large difference in CDS-APA between Purkinje and granule cells. (E) Gene ontology analysis of genes showing significant differences in APA between Purkinje and granule cells. Top six relevant functional categories are shown. The data in all panels were derived from analysis of four replicates of cTag-PAPERCLIP on granule cells and three replicates of cTag-PAPERCLIP on Purkinje cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** TRAP-Seq data on granule and Purkinje cells from adult mice (the data represents an average of four replicates per cell type) (Mellén et al., 2012).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** N = 3 for each time point for qPCR. N = 4 for cTag-PAPERCLIP on granule cells and N = 3 for cTag-PAPERCLIP on Purkinje cells. Log2(fold change) represents log2 of the ratio between the ratios of distal 3’UTR isoform abundance over total mRNA abundance in Purkinje vs. granule cells for 3’UTR-APA genes (Vezt and Ncam1). For CDS-APA genes (Zfp609 and Copg1) the log2(fold change) represents log2 of the ratio between the ratios of distal 3’UTR isoform abundance over proximal 3’UTR isoform abundance in Purkinje vs. granule cells.
 
 Interestingly, in comparing cTag-PAPERCLIP data between Purkinje and granule cells, we also identified transcripts that differed in CDS length (CDS-APA). For example, among transcripts with two poly(A) sites, 19% (76) showed significant differences in CDS-APA between Purkinje and granule (Figure 2C). 7 instances of CDS-APA altered the inclusion of phosphorylation sites and 29 instances altered the inclusion of known protein domains, including those with enzymatic activities and those mediating protein-protein interactions (Supplementary file 2).
 
@@ -67,11 +91,31 @@ We also found that previously published TRAP-Seq data from Purkinje and granule�
 
 We observed that genes involved in the regulation of cell morphology and ion transport were significantly enriched among genes expressing different 3’UTR isoforms in the two cell types (Supplementary file 3 and Figure 2E, which shows the first six most enriched relevant functional categories). The genes included Sept11, which has been shown to regulate dendritic branching (Li et al., 2009); Trio, which has been shown to regulate dendritic branching and synapse function (Ba et al., 2016) and Ube3a, which has been shown to regulate neuronal excitability (Judson et al., 2016). This observation suggests that the striking morphological and physiological differences between granule (excitatory, sparse dendrites) and Purkinje (inhibitory, extensive dendrites) cells may at least in part be mediated by fine-tuning gene expression via APA.
 
-## APA alters 3’UTR length and CDS of specific transcripts during granule cell development
+### APA alters 3’UTR length and CDS of specific transcripts during granule cell development
 
 To determine if polyadenylation sites are dynamically selected within a given neuronal type as a cell transitions from a mitotic precursor to a post-mitotic, differentiated neuron, we profiled APA in granule cells during development. We analyzed APA at two time points: P0, when granule cell precursors are proliferating in the external granule layer, and P21, when granule cells have completed their migration to the internal granule layer and have made axonal synaptic connections with Purkinje cells, as well as dendritic synaptic connections with mossy fiber and Golgi cell inputs (Hatten and Heintz, 1995). We bred cTag-PABP mice with mice expressing Cre under the control of the Atoh1 promoter (Matei et al., 2005) to purify PABP-bound transcripts from both granule cell precursors and differentiated granule neurons. Although Atoh1 is only expressed in granule cell precursors, their progeny – the differentiated granule cells – inherit the recombined Pabpc1-GFP locus.
 
 We first confirmed that PABPC1-GFP is expressed in precursor and differentiated granule neurons by immunostaining on P0 and P21 cerebella (Figure 3A). We then performed cTag-PAPERCLIP on dissected cerebellar cortices (discarding deep cerebellar nuclei, which contain non-granule cell Atoh1-expressing neurons). We obtained 12,014 and 14,491 clusters of reads, which belonged to 9698 and 10,716 genes expressed in granule cell precursors (from P0 mice) and differentiated granule cells (from P21 mice), respectively. 32% of genes in granule cell precursors (3,104) and 32% of genes in differentiated granule cells (3,436) had multiple clusters.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunostaining showing cell type specific expression of conditionally tagged PABPC1 in P0 and P21 granule cells. EGL – external granule layer, PCL – Purkinje cell layer, IGL – internal granule layer, ML – molecular layer. Calb1: Purkinje cell marker. Scale bars: 50 μm. Dotted square on the schematic of cerebellum at P0 and P21 (left side of the panel) shows the location of the immunostaining on the right. (B) Scatterplot representing the ratio between the number of cTag-PAPERCLIP reads at the end of the proximal 3’UTR isoform and the number of cTag-PAPERCLIP reads at the end of the distal 3’UTR isoform in P0 vs. P21 granule cells. Only genes with two tandem 3’UTR isoforms are shown. Genes showing significantly different ratios (FDR < 0.05) are highlighted in red or blue. (C) Examples of cTag-PAPERCLIP data for genes that show a large difference in 3’UTR-APA between P0 and P21 granule cells. Black bars represent isoforms annotated by Ensembl, gray ones are (predicted) novel isoforms discovered by cTag-PAPERCLIP. (D) Scatterplot representing the ratio between the number of cTag-PAPERCLIP reads at the end of the proximal 3’UTR isoform and the number of cTag-PAPERCLIP reads at the end of the distal 3’UTR isoform in P0 vs. P21 granule cells. Only genes with two 3’UTR isoforms that differ in CDS-APA are shown. Genes showing significantly different ratios (FDR < 0.05) are highlighted in red or blue. (E) Examples of cTag-PAPERCLIP data for genes that show a large difference in CDS-APA between P0 and P21 granule cells. Black bars represent isoforms annotated by Ensembl, gray (predicted) isoform of Rbmx was discovered by cTag-PAPERCLIP. The CDS portion of the last exon in the predicted Rbmx isoform was inferred from an annotated isoform not shown in the picture. (F) Gene ontology analysis of genes showing significant differences in APA between P0 and P21 granule cells. Top six relevant functional categories are shown. The data in panels B-F were derived from three replicates of cTag-PAPERCLIP per time point.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison between cTag-PAPERCLIP data from granule cell precursors at P0 (average of three replicates) and RNA-seq data (average of three replicates) from the same population purified by FACS. R: Pearson correlation coefficient.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** RNA-Seq data on FACS-sorted granule cell precursors (from P0 mice) and differentiated granule cells (from P21 mice). The data represents an average of three replicates per time point.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** N = 3 for each time point for both qPCR and cTag-PAPERCLIP. Log2(fold change) represents log2 of the ratio between the ratios of distal 3’UTR isoform abundance over total mRNA abundance in P21 vs. P0 granule cells for 3’UTR-APA genes (Kpnb and Cdk7). For CDS-APA genes (Sin3b and Rbmx) the log2(fold change) represents log2 of the ratio between the ratios of distal 3’UTR isoform abundance over proximal 3’UTR isoform abundance in P21 vs. P0 granule cells.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Distribution of log2 fold-changes (logFC) in ribosome-associated mRNA abundance between P0 and P21 for genes with two 3’UTR isoforms that do not show significant changes in 3’UTR isoform expression (non-significant genes) between the two time points (blue box) and those that do (red boxes). Mann-Whitney test. p-value=NS for all comparisons (non-significant genes vs. those that express significantly more of the longer isoform, non-significant genes vs. those that express significantly more of the shorter isoform and non-significant vs. those that express significantly more of the longer isoform and show evidence of Argonaute (Ago) binding to extended 3’UTR portion). LogFC in ribosome-associated mRNA abundance was determined using data from a TRAP microarray study on developing cerebellar granule cells (using data from three replicates per time point) (Zhu et al., 2016). Argonaute CLIP data from Moore et al., 2015. Only 3’UTR-APA genes were used for this analysis.
 
 Comparing cTag-PAPERCLIP data between precursor and differentiated granule cells from P0 and P21 mice, we found 737 genes that significantly changed in APA (FDR < 0.05) (Supplementary file 4). 3’UTRs tended to lengthen during granule cell development, which is consistent with RNA expression data from whole developing mouse brains (Ji et al., 2009). Specifically, among differentially polyadenylated transcripts with two poly(A) sites in 3’UTRs, 288 out of 354 got longer during granule cell development (Figure 3B), For example, Kpnb1, which codes for importin subunit β1, whose long 3’UTR isoform has been shown to localize the mRNA to axons (Perry et al., 2012), and Cdk7, which has been shown to be required for cell cycle progression of neurons (Abdullah et al., 2016), both shifted to predominantly expressing a long 3’UTR isoform in differentiated granule cells (Figure 3C).
 
@@ -91,9 +135,21 @@ Finally, we asked whether changes in APA during granule cell development contrib
 
 **Figure 4.:** (A) Overlap between genes that exhibit a significant shift towards distal 3’UTR isoform expression during granule cell development (blue circle) and genes that express significantly more of the distal 3’UTR isoforms in granule cells compared to Purkinje cells (orange circle). p=6.85*10−8, hypergeometric test. (B) cTag-PAPERCLIP data for three genes that show a significant shift towards distal 3’UTR isoform expression during granule cell development and a difference in 3’UTR isoform expression between Purkinje and granule cells. Black bars represent isoforms annotated by Ensembl, gray ones are (predicted) novel isoforms discovered by cTag-PAPERCLIP. The data represents an average of three replicates for adult Purkinje cells and granule cell precursors and four replicates for differentiated granule cells.
 
-## Memo1 regulates granule cell proliferation and its expression is developmentally regulated by APA and miR-124
+### Memo1 regulates granule cell proliferation and its expression is developmentally regulated by APA and miR-124
 
 Little is known about the physiological consequences of altered 3’UTR length during development (Boutet et al., 2012; Pinto et al., 2011). To better understand these functional consequences, we focused on APA in Memo1, a gene that changed 3’UTR isoform expression during granule cell development. Memo1 has been implicated in promoting cell motility (MacDonald et al., 2014) and in the proliferation of breast cancer cells (Sorokin and Chen, 2013), processes which are analogous to events regulated during granule cell development. Granule cell precursors express only the short 3’UTR isoform of Memo1, whereas differentiated granule cells express both the short and a long, previously unannotated, isoform ending 14 kb farther downstream (Figure 5A). Both the proximal and the distal poly(A) signals of Memo1, ending the short and the long 3’UTRs, respectively, are highly conserved across placental mammals, and both isoforms are detectable in human brain RNA (data from [Jaffe et al., 2015]). Although they are most salient in cTag-PAPERCLIP data, the presence of both isoforms is consistent with RNA-sequencing data from FACS-sorted granule cells as well as with published TRAP-Seq data (Mellén et al., 2012) (Figure 5—figure supplement 1A). Interestingly, the overall expression of Memo1 – as measured by cTag-PAPERCLIP – significantly decreased as granule cells differentiate (Figure 5B). We therefore hypothesized that Memo1 plays a role in proliferating granule cell precursors, when its expression is highest. We addressed this question in the cerebellum of E18.5 Memo1 knockout mice (Van Otterloo et al., 2016), given that these mice die after birth. We observed that the cerebella of Memo1 knockout mice lacked the typical pattern of fissures, i.e. furrows between which the cerebellar lobes will form. At E18.5, control cerebella had five fissures, whereas Memo1 knockout cerebella had only one fissure (Figure 5—figure supplement 1B). Given that the formation of cerebellar fissures is thought to be driven by the proliferation of granule cells (Sudarov and Joyner, 2007), we quantified the number of mitotic cells in the proliferating external granule layer (using anti-phospho-H3 antibody) and found significantly fewer mitotic cells in the external granule layer of Memo1 knockout mice (Figure 5C and S4B). These data suggest that Memo1 is required for the proliferation of granule cells, consistent with its role in the proliferation of breast cancer cells (Sorokin and Chen, 2013).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig5-v2.jpg)
+
+**Figure 5.:** (A) cTag-PAPERCLIP reads on Memo1 3’UTR in P0 and P21 granule cells. The location of miR-124 target site is indicated by the green bar. The data represents and average of three cTag-PAPERCLIP replicates and twelve replicates of Argonaute CLIP. (B) Expression of Memo1 gene as determined by cTag-PAPERCLIP. The y-axis represents the number of total unique reads per gene normalized to sequencing depth (RPM – reads per million). Two-tailed t-test. N = 3 for each time point. p-value<0.031 Error bars: standard error. (C) Density of phospho-H3 positive (i.e. mitotic) cells in the external granule layer of E18.5 cerebella of wild-type and Memo1 knockout mice. Two-way ANOVA, N = 3, p-value<0.0001 (see Materials and methods). Error bars: standard error. (D) Relative abundance of miR-124 in purified granule cell precursors (GC precursors), after 14 days in culture (DIV 14, two-tailed t-test, N = 3 for each time point, p-value<0.010). Error bars: standard error. (E) Relative abundance of long Memo1 isoform in cultured primary granule cells after treatment with scrambled control (neg. ctrl.) and miR-124 antagomir. Two tailed t-test. N = 2 for both conditions, p-value<0.003. Error bars: standard error. (F) Relative abundance of long Memo1 isoform in cultured primary granule cells after treatment with scrambled control (neg. ctrl.) and Memo1 miR-124 target site blocker oligonucleotide (target blocker). Two tailed t-test. N = 3 for both conditions. p-value<0.006. Error bars: standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Additional data showing Memo1 APA change during granule cell development. The first two tracks from above represent cTag-PAPERCLIP data from P0 and P21 granule cells. The tracks below cTag-PAPERCLIP represent RNA-sequencing data from FACS sorted P0 and P21 granule cells and TRAP-Seq data from mature granule cells (Mellén et al., 2012). In the lower left corner, Ensembl annotation for Memo1 is shown. The data represents and average of three replicates for cTag-PAPERCLIP and RNA-seq data and four replicates for TRAP-seq data. (B) Immunofluorescence of Memo1 +/+ and -/- mouse cerebella at E18.5. Purkinje cell layer was stained with anti-Calb1 antibody (to visualize the border between external granule layer and developing Purkinje cell layer) and anti-phospho-H3 antibody was used to stain all cells undergoing mitosis. In the first picture for each genotype, external granule layer is marked with a white dotted line and white asterisks denote developing fissures. The second picture for each genotype is a close-up marked with white rectangle in the first picture. Scale bars: 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/34042/elife-34042-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** In the model, Memo1 acquires a longer 3’UTR during granule cell development, which subsequently leads to its downregulation due to the presence of a conserved miR-124 binding site on the long 3’UTR.
 
 To identify a potential functional role for the long Memo1 3’UTR acquired during granule cell development, we analyzed the short and the long Memo1 3’UTRs for known regulatory sequence motifs (using RegRNA software [Chang et al., 2013]). From this analysis, we identified a highly conserved miR-124 target site on the long 3’UTR that was absent in the short 3’UTR (Figure 5A). This miR-124 target site was also bound by Argonaute in the mouse cortex, as evidenced by Argonaute CLIP (Moore et al., 2015) (Figure 5A), suggesting that this target site is functional in the mouse brain. miR-124 is a neuron-specific miRNA that has been shown to be upregulated during differentiation of neural stem cells in the subventricular zone and is required for cell cycle exit and differentiation of neuroblasts (Cheng et al., 2009). Thus, we asked whether miR-124 expression also increases during granule cell differentiation. Indeed, we found that miR-124 expression increased between purified granule cell precursors and these same precursors differentiated in vitro for 2 weeks, when they morphologically resemble differentiated granule cells (Figure 5D). In addition, in situ hybridization experiments have shown high levels of miR-124 in the granule layer of adult mouse cerebella (Pena et al., 2009). These results demonstrate that as the expression of miR-124 increases, Memo1 expression decreases, suggesting a potential role for miR-124 in downregulating Memo1 expression during granule cell development.
 
@@ -117,19 +173,164 @@ Finally, an especially interesting group of transcripts that show differential A
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Memo1</td>
+      <td>NA</td>
+      <td>Entrez gene ID: 76890, Memo1 short isoform RefSeq ID: NM_133771.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Neurod1-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>028364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pcp2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>004146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Atoh1-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>011104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pabpc1-cTag</td>
+      <td>Hwang et al. (2017)</td>
+      <td>PMID: 28910620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>(Tg(Neurod1-Egfp-L10a)</td>
+      <td>Heiman et al. (2008)</td>
+      <td>PMID: 19013281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>(Tg(Pcp2-Egfp-L10a)</td>
+      <td>Heiman et al. (2008)</td>
+      <td>PMID: 19013281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Memo1 knockout</td>
+      <td>Van Otterloo et al., 2016</td>
+      <td>PMID: 26746790</td>
+      <td>Memo1 ki/ki</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (for cTag-PAPERCLIP)</td>
+      <td>Heiman et al. (2008)</td>
+      <td>19F7 and 19C8</td>
+      <td>mouse monoclonal</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Calb1</td>
+      <td>Santa Cruz</td>
+      <td>sc-7691</td>
+      <td>goat polyclonal, (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (for IF)</td>
+      <td>Aves Labs</td>
+      <td>GFP-1020</td>
+      <td>chicken polyclonal, (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pH3</td>
+      <td>Cell Signaling</td>
+      <td>9701</td>
+      <td>rabbit polyclonal, (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488, 555 and 647 secondaries</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>miR-124 antagomir</td>
+      <td>Exiqon</td>
+      <td>4102200–121</td>
+      <td>mmu-miR-124–3 p inhibitor 3`-fluorescein labeled, (50 nM)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>antagomir negative control</td>
+      <td>Exiqon</td>
+      <td>199006–100</td>
+      <td>Negative control A, (50 nM)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Memo1 miR-124 target blocker</td>
+      <td>Exiqon</td>
+      <td>1999993</td>
+      <td>Custom miRCURY LNA Power Inhibitor, (50 nM)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>target blocker negative control</td>
+      <td>Exiqon</td>
+      <td>199006–111</td>
+      <td>Negative control A, (50 nM)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2002</td>
+      <td>For preparing RNA-seq libraries</td>
+    </tr>
+  </tbody>
+</table>
+
+_All primers are listed in Supplementary file 7._
+
+### Mice
 
 Animals were maintained in an AAALAC-approved animal facility and all procedures were performed in accordance with IACUC guidelines (protocol number 17013). Pcp2/L7-Cre, Neurod1-Cre and Atoh1-Cre mice were obtained from The Jackson Laboratory (catalog numbers: 004146, 028364 and 011104). Memo1 mutant mice were generated using ES-cells from the European Conditional Mouse Mutagenesis (EUCOMM) repository as described previously (Van Otterloo et al., 2016). Mouse studies were allocated by genotype, and were not blinded.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Adult mice used for immunostaining (Neurod1-Cre; Pabpc1cTag, Pcp2-Cre; Pabpc1cTag and Atoh1-Cre; Pabpc1cTag mice) were perfused with PBS and 4% paraformaldehyde (PFA) and fixed in 4% PFA/PBS at 4°C overnight. Heads from E18.5 (Memo1 mutant mice and WT littermates) and cerebella from P0 mice (Atoh1-Cre; Pabpc1cTag mice) were fixed in 4% PFA/PBS at 4°C overnight without perfusion. Fixed heads/cerebella were then incubated in 15% sucrose/PBS followed by 30% sucrose/PBS at 4°C and embedded in O.C.T. compound (Sakura Finetek, Torrance, CA). Adult cerebella were sliced into 30 μm thick sections; E18.5 and P0 cerebella were sliced to 80 μm thick sections on a cryostat (CM3050S, Leica, Germany). The sections were then washed three times with PBS at room temperature (RT), incubated with 0.2% Triton X-100/PBS at RT, blocked with 1.5% normal donkey serum (NDS)/PBS at RT, and incubated overnight at 4°C with primary antibodies in 1.5% NDS/PBS followed by incubation with Alexa 488 and 555 conjugated donkey secondary antibodies (Thermo Fisher, Waltham, MA, 1:1000 dilution) in 1.5% NDS/PBS. Images of immunostained sections were taken using BZ-X700 (Keyence, Japan) microscope. We used the following primary antibodies for immunohistochemistry: anti-Calb1 (Santa Cruz, Dallas, TX, catalog number: sc-7691, 1:250 dilution) anti-GFP (Aves Labs, Tigard, OR, catalog number: GFP-1020, 1:1000 dilution), anti-phospho histone H3 (Cell Signaling Technology, Danvers, MA, catalog number: 9701, 1:100 dilution). Validation of PABPC1-GFP expression was done on one mouse for each genotype, in at least two technical replicates. The number of phospho-histone H3 positive cells per area of external granule layer was quantified using Photoshop by manually counting phospho-histone H3 positive cells (using Count Tool) and dividing the number with the total external granule layer area. Quantification of phospho-histone H3 positive cells was performed on three Memo1 knockout mice and three WT mice (from three different litters, knockout and WT mice were littermates), each in four technical replicates (i.e. four sections from the middle of the cerebellum). In this experiment, we observed that the experimental batch (also corresponding to litter) was a significant source of variation, so we performed two-way ANOVA instead of t-test to determine statistical significance of the difference in phospho-H3 staining between WT and Memo1 KO mice. We used GraphPad Prism5 to perform the calculations.
 
-## cTag-PAPERCLIP
+### cTag-PAPERCLIP
 
 The PAPERCLIP procedure was performed as previously described (Hwang et al., 2016). Mouse monoclonal anti-GFP clones 19F7 and 19C8 (Heiman et al., 2008) were used for immunoprecipitation. Individual cTag-PAPERCLIP libraries were multiplexed and sequenced on MiSeq (Illumina, San Diego, CA) to obtain 75-nt single-end reads. cTag-PAPERCLIP was performed in four replicates on P56 granule cells, in three replicates on P56 Purkinje cells and in three replicates on developing granule cells (P0 and P21). Due to low amount of RNA obtained by cTag-PAPERCLIP, we pooled 2 mice per replicate for cTag-PAPERCLIP on P21 and P56 granule cells (Neurod1-Cre; Pabpc1cTag and Atoh1-Cre; Pabpc1cTag mice), 7 mice per replicate for cTag-PAPERCLIP on P56 Purkinje cells (Pcp2-Cre; Pabpc1cTag mice) and 10 mice per replicate for cTag-PAPERCLIP on P0 granule cell precursors (Atoh1-Cre; Pabpc1cTag mice).
 
-## Analysis of cTag-PAPERCLIP data
+### Analysis of cTag-PAPERCLIP data
 
 The processing of raw reads was performed using the CIMS software package as previously described (Moore et al., 2014). Raw reads were filtered based on quality score. Filtered reads with the exact sequence were collapsed into one. Poly(A) sequence at the 3′ end was then trimmed using CutAdapt (Martin, 2011). Only reads that are at least 25-nt in length were mapped to mm10 reference genome. Mapping was performed using Novoalign (Novocraft, Malaysia) without trimming. Reads mapping to the same genomic positions without distinct barcodes were further collapsed into a single read as previously described (Moore et al., 2014). CIMS software package was then used to cluster overlapping collapsed reads from all biological replicates (for each condition) and to determine the number of reads in each cluster. To define a list of high confidence clusters we used the following criteria: clusters had to contain reads from all replicates in each condition, the number of reads in a cluster had to be at least 10% of gene total, clusters had to be located within 20 kb from 3′ ends annotated by RefSeq, clusters that were located upstream of a stretch of 6 or more adenines were excluded due to potential internal priming of the reverse transcription primer. To identify differences in APA between different conditions, Fisher’s exact test was performed comparing the ratio between reads in a particular cluster and the sum of reads in all other clusters in a gene in the two conditions. The output p-values were adjusted for multiple hypotheses testing using the Benjamini-Hochberg method. To determine which genes are displaying 3’UTR vs. CDS-APA, we assigned cTag-PAPERCLIP clusters to the nearest Ensembl-annotated 3’UTR using closestBed from the BEDtools suite (Quinlan and Hall, 2010). If the start sites of the assigned 3’UTRs for the same gene differed, we assigned the gene as displaying CDS-APA. We manually inspected the CDS-APA gene list and removed a small number of genes that we were not able to unequivocally assign to either 3’UTR-APA or CDS-APA.
 
@@ -141,25 +342,25 @@ Protein domains for CDS-APA analysis were obtained manually from Ensembl genome 
 
 To analyze the relationship between 3’UTR isoform expression changes and the abundance of ribosome-associated RNA between P0 and P21 granule cells, microarray data from P0 and P21 granule cells (Zhu et al., 2016) were processed using gcrma (Irizarry and Wu, 2017) and affy (Gautier et al., 2004) software packages, and logFC values were calculated using limma (Ritchie et al., 2015) package. To identify 3’UTR isoforms that acquire additional Argonaute binding sites, we overlapped the extended regions of 3’UTRs (i.e. regions between proximal and distal cTag-PAPERCLIP clusters) with Argonaute CLIP clusters (data from whole cortex from Moore et al., 2015) using findOverlaps from IRanges package (Lawrence et al., 2013). We only considered Argonaute CLIP clusters that contained at least five unique CLIP tags.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 Gene ontology analysis was performed on genes showing significant changes in 3’UTR isoform expression using Ingenuity Pathway Analysis software (Qiagen, Germany) Core Analysis tool. Background was determined as all genes with cTag-PAPERCLIP clusters expressed in Purkinje and granule cells or P0 and P21 granule cells. ‘User Dataset’ was chosen as ‘Reference Set.’ Genes with significant differences in APA were given ‘Expr Other’ value of 1, all other genes were given ‘Expr Other’ value of 0. Cutoff was chosen as 1. We focused on functions related to ‘Molecular and Cellular Functions’ and ‘Physiological System Development and Function’ that are overrepresented in the set of genes that show significant changes in 3’UTR isoform expression between Purkinje and granule cells and during development of granule cells. For the Figures 2D and 3E we manually removed categories that were not relevant or contained very similar gene sets (Supplementary Tables contain all significant functional categories).
 
-## FACS sorting and RNA sequencing
+### FACS sorting and RNA sequencing
 
 GFP-positive granule cells from P0 and P21 Atoh1-Cre; Pabpc1cTag mice were sorted using FACSAria II (BD, Franklin Lakes, NJ). Three P0 and two P21 mice were used for this experiment. Post-sort analysis showed that the sorted samples contained 99% of GFP-positive cells. RNA was isolated from sorted cells using Roche High Pure RNA isolation kit as per manufacturer’s instructions. RNA sequencing library was prepared using TruSeq kit from Illumina, following manufacturer’s instructions. Individual RNA-seq libraries were multiplexed and sequenced on HiSeq (Illumina, San Diego, CA) to obtain 100-nt paired-end reads. RNA-sequencing reads were mapped to the mouse genome (mm10) using Novoalign (Novocraft, Malaysia), reads overlapping genes were counted using HTSeq-count (Anders et al., 2015). The total number of cTag-PAPERCLIP reads per transcript was then compared to the total number of RNA-sequencing reads per transcript.
 
-## Translating-ribosome Affinity Purification (TRAP)
+### Translating-ribosome Affinity Purification (TRAP)
 
 mRNA from translating polysomes was purified from mouse cerebella at P56 as previously described (Heiman et al., 2008; Zhu et al., 2016). Heterozygous transgenic mice carrying EGFP-tagged ribosomal protein L10a (Tg(Neurod1-Egfp-L10a) and (Tg(Pcp2-Egfp-L10a) (Heiman et al., 2008) were used to purify mRNA from granule and Purkinje cells, respectively.
 
-## Granule cell purification and culture
+### Granule cell purification and culture
 
 Granule cells were prepared as described (Hatten, 1985). Briefly, cerebella were dissected away from the brains of P6 mice. After the pial layer was peeled away, the tissue was treated with trypsin for 5 min at 37°C and triturated into a single-cell suspension using fine bore Pasteur pipettes. The suspension was layered on a discontinuous Percoll gradient and separated by centrifugation. The small cell fraction was isolated, and granule cells were further enriched by panning on tissue culture treated plastic dishes. The resulting cultures routinely contain greater than 95% of cells of the granule cell lineage (Hatten, 1985). For the experiments using miR-124 antagomir and Memo1 target blocker, granule cells were plated in serum-free granule cell medium on Poly-D lysine coated 6-well plates and transfected with 50 nM miR-124–3p antagomir or Memo1 target blocker (Exiqon, Woburn, MA, custom miRCURY LNA Power Inhibitor, final concentration 50 nM for both) and appropriate negative control using Lipofectamine RNAiMAX (Thermo Fisher, Waltham, MA). Cells were then let to differentiate (4 days) and RNA was isolated using TRIzol (Thermo Fisher, Waltham, MA) followed by High Pure RNA Isolation Kit (Roche, Switzerland) following manufacturer’s instructions. The experiment with miR-124–3p antagomir was performed in two biological replicates (each biological replicate was performed in two technical replicates) and the experiment with Memo1 target blocker was performed in three biological replicates (each biological replicate was performed in two technical replicates). Biological replicate is defined as an independent experiment (an independent isolation of primary granule cells from P6 pups followed by in vitro differentiation and RNA isolation). Technical replicate is defined as an independent quantitative PCR reaction.
 
 To purify mRNA for cTag-PAPERCLIP validation by qPCR, we purified granule cells from P0 cerebella as described above. We followed the same protocol to purify granule cells from P21 cerebella, except that we treated cerebella with papain for 30 min at 37°C.
 
-## Reverse transcription and quantitative PCR
+### Reverse transcription and quantitative PCR
 
 Quantification of Memo1 long isoform in granule cell culture was performed by reverse transcription using SuperScript III reverse transcriptase (Thermo Fisher, Waltham, MA) and quantitative PCR using FastStart SYBR Green Master mix (Roche, Switzerland). Primers to amplify long Memo1 isoform are listed in Supplementary file 7. We used the following cycling parameters: 95°C for 10 min. followed by 40 cycles of 95°C for 15 s., 58°C for 30 s., 72°C for 20 s. Fold changes and p-values were calculated using Bio-Rad CFX Maestro Software. To quantify miR-124 we isolated RNA from granule cells using High Pure RNA Isolation Kit (Roche) and reverse transcribed it using miScript II RT Kit (Qiagen, Germany) following manufacturer’s instructions. We then performed quantitative PCR using FastStart SYBR Green Master mix (Roche, Switzerland) using the following parameters: 94°C for 15 min, 40 cycles (15 s at 94°C, 30 s at 55°C and 30 s at 70°C). Primers to amplify miR-124 are listed in Supplementary file 7.
 

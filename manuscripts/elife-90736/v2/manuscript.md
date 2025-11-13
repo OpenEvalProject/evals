@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01g9ty582 Department of Biochemistry, Semmelweis University Budapest Hungary
+1. Department of Biochemistry, Semmelweis University Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
 2. HCEMM-SE Molecular Channelopathies Research Group Budapest Hungary
 3. HUN-REN-SE Ion Channel Research Group Budapest Hungary
 
@@ -39,45 +39,69 @@ However, interpretation of such mutant data is hampered by the fact that – eve
 
 ## Results
 
-## Interfacial H-bond between NBD1 D-loop and the mutated NBD2 catalytic glutamate side chain suggested by structures of OF human, but not zebrafish, E-to-Q CFTR
+### Interfacial H-bond between NBD1 D-loop and the mutated NBD2 catalytic glutamate side chain suggested by structures of OF human, but not zebrafish, E-to-Q CFTR
 
 The life time of the B1 state of non-hydrolytic CFTR mutants can be conveniently measured in inside-out macro-patch recordings following activation of pre-phosphorylated CFTR channels by a brief exposure to ATP: the time constant of the macroscopic current relaxation following ATP removal reports τb. A previous study that compared NBD dimer stabilities of the human and zebrafish orthologs of CFTR (hCFTR and zCFTR) uncovered a puzzling discrepancy between the two CFTR variants. Whereas for hCFTR a large difference between the burst durations of the serine vs. glutamine mutant of the catalytic glutamate (hE1371S vs. hE1371Q) had long been documented (cf., Figure 2A, black vs. dark blue trace; Figure 2B, black vs. dark blue symbols), no significant difference (p = 0.092) between τb of the analogous mutants of the zebrafish ortholog (zE1372S vs. zE1372Q; Figure 2A, brown vs. light blue trace; Figure 2B, brown vs. light blue symbols) was detectable (Simon and Csanády, 2023).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig2-v2.jpg)
+
+**Figure 2.:** (A) Macroscopic current relaxations upon ATP removal in inside-out patches excised from Xenopus laevis oocytes expressing hE1371Q (black trace), hE1371S (dark blue trace), zE1372Q (brown trace), and zE1372S (light blue trace) CFTR channels. Currents were activated by exposure to saturating ATP, following prior phosphorylation for ~2 min with 300 nM bovine PKA catalytic subunit. Current amplitudes are shown normalized by their steady-state values in ATP (i.e., just before ATP removal), membrane potential (Vm) was −20 to −80 mV. (B) Mean burst durations (in seconds) obtained as the time constants of single-exponential fits to the macroscopic relaxations shown in (A). Data are shown as mean ± standard error of the mean (SEM) from six to nine experiments using a logarithmic ordinate. (A, B) has been adapted from Figures 2A, B, and 3C, D from Simon and Csanády, 2023. (C, D) Cryo-EM structures of hCFTR-E1371Q (PDBID: 6msm) and zCFTR-E1372Q (PDBID: 5w81) in the OF conformation. Color coding as in (A), positions hG576/zT575 (orange), hQ1371 (black), and zQ1372 (brown) are shown in spacefill. Red dotted squares identify regions expanded in panels (E, F). (E, F) Close-up views of the regions surrounding the mutated catalytic glutamate side chains (black/brown sticks) in OF hCFTR (E) and zCFTR (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Electron densities (gray mesh, EMD-9230) and atomic model (sticks, PDBID: 6msm) of residues hG576 and hQ1371 in OF hCFTR-E1371Q.
+
 Those unexpected findings suggested differences in the fine structure of the site 2 interface in the bursting state of the two orthologs. We therefore examined the OF cryoelectron microscopy (cryo-EM) structures of the E-to-Q mutants of both orthologs (Figure 2C, D) in more detail. In hCFTR (PDBID: 6msm) close examination identified a hydrogen bond across the site 2 interface, formed between the amide nitrogen of the engineered hQ1371 side chain and the peptide carbonyl oxygen of residue hG576, located in the opposing D-loop of NBD1 (Figure 2E, purple dotted line; cf., electron density in Figure 2—figure supplement 1). That H-bond cannot be present in WT CFTR, as the native hE1371 side chain contains no chemical moiety suitable to form a stabilizing interaction with the opposing carbonyl group. Interestingly, in the zCFTR structure (PDBID: 5w81) the amide and carbonyl groups of the zQ1372 side chain are swapped. Thus, although residue hG576 aligns with zT575, the zQ1372 nitrogen points toward the backbone carbonyl group of zH576 and the distance between the two groups is substantially larger (4.3 vs. 3.0 Å), precluding formation of an H-bond (Figure 2F, light purple dotted line). Moreover, even if that swapped assignment of the zQ1372 side chain was incorrect, the zQ1372-zT575 distance would still be larger (3.7 Å, Figure 2F, dark purple dotted line) than in hCFTR. These observations raised the possibility that the >10-fold longer life time of the bursting state of hE1371Q compared to hE1371S CFTR (Figure 2A, B) reflects artificial stabilization of state B1 by the introduced non-native interfacial H-bond, which is absent in the zebrafish channel.
 
-## In E1371Q-hCFTR the hQ1371 side-chain amino and hG576 peptide carbonyl groups are energetically coupled in the bursting state
+### In E1371Q-hCFTR the hQ1371 side-chain amino and hG576 peptide carbonyl groups are energetically coupled in the bursting state
 
 Gating state-dependent changes in energetic coupling between two protein positions can be experimentally verified and quantified using thermodynamic mutant cycle analysis (Vergani et al., 2005). If the two target positions indeed interact, and the strength of the interaction changes during gating, then the kinetic effects of disrupting that interaction by single mutations at either position will not be additive in the double mutant. Hypothesized interactions between amino acid side chains can be conveniently perturbed by changing the length or chemical nature of the participating side chains. Perturbing a backbone carbonyl group is less straightforward, but if the target position is located in a loop, then shortening the loop by a single-residue deletion might increase the distance to the partner position sufficiently to disrupt the hypothesized interaction (Simon and Csanády, 2021).
 
-Following the above strategy we verified the effect on burst-state stability of disrupting the hypothesized hG576–hQ1371 H-bond in the human E1371Q CFTR background construct (Figure 2E). To perturb position 1371, we shortened the side chain by substituting the glutamine with a serine (hE1371S). To perturb the position of the opposing backbone carbonyl group, we shortened the D-loop by deleting residue G576 (hG576Δ). We first addressed the effects of these perturbations on non-hydrolytic burst duration in macroscopic current relaxation experiments (Figure 3A). Whereas in the hE1371Q background deletion of residue hG576 decreased τb by ~20-fold (Figure 3A, orange vs. black trace; Figure 3B, orange vs. black symbols), in the hE1371S background the effect on τb of the same deletion was only ~2-fold (Figure 3A, green vs. blue trace; Figure 3B, green vs. blue symbols). From an energetic point of view, the mutation-induced shortening of τb reflects destabilization of the B1 state relative to the transition state for non-hydrolytic closure (T‡). The resulting reduction in the free enthalpy barrier for non-hydrolytic closure (ΔΔGT‡−B10 ; Figure 3C, numbers on arrows) is quantified by the logarithm of the fractional change in τb (see Materials and methods). The coupling energy (ΔΔGint(B1 → T‡); Figure 3C, purple) is a measure of the discrepancy in the effects caused by perturbation of one target position depending on whether the other target position is mutated or intact (Figure 3C, parallel arrows). ΔΔGint(B1 → T‡) is thus given by the difference between ΔΔGT‡−B10 values on parallel sides of the cycle (Figure 3C, numbers on parallel arrows). ΔΔGint(B1 → T‡) thus quantifies the change in the strength of the hG576–hQ1371 interaction in the hE1371Q background construct while the channel proceeds from the B1 state to state T‡ (see Materials and methods). That ΔΔGint(B1 → T‡) is significantly different from zero (p = 4.6 × 10−5), its magnitude (2.3 ± 0.3 kT) is comparable to that of an H-bond, and its positive signature reports that the bond is present in the B1 state, but not in state T‡. Because in the IB state separation of the NBD interfaces of site 2 (Vergani et al., 2005) renders formation of the inter-NBD H-bond unlikely, these results suggest that the bond is present selectively in the B state.
+Following the above strategy we verified the effect on burst-state stability of disrupting the hypothesized hG576–hQ1371 H-bond in the human E1371Q CFTR background construct (Figure 2E). To perturb position 1371, we shortened the side chain by substituting the glutamine with a serine (hE1371S). To perturb the position of the opposing backbone carbonyl group, we shortened the D-loop by deleting residue G576 (hG576Δ). We first addressed the effects of these perturbations on non-hydrolytic burst duration in macroscopic current relaxation experiments (Figure 3A). Whereas in the hE1371Q background deletion of residue hG576 decreased τb by ~20-fold (Figure 3A, orange vs. black trace; Figure 3B, orange vs. black symbols), in the hE1371S background the effect on τb of the same deletion was only ~2-fold (Figure 3A, green vs. blue trace; Figure 3B, green vs. blue symbols). From an energetic point of view, the mutation-induced shortening of τb reflects destabilization of the B1 state relative to the transition state for non-hydrolytic closure (T‡). The resulting reduction in the free enthalpy barrier for non-hydrolytic closure ($ΔΔG_{T^{‡}−B1}^{0}$ ; Figure 3C, numbers on arrows) is quantified by the logarithm of the fractional change in τb (see Materials and methods). The coupling energy (ΔΔGint(B1 → T‡); Figure 3C, purple) is a measure of the discrepancy in the effects caused by perturbation of one target position depending on whether the other target position is mutated or intact (Figure 3C, parallel arrows). ΔΔGint(B1 → T‡) is thus given by the difference between $ΔΔG_{T^{‡}−B1}^{0}$ values on parallel sides of the cycle (Figure 3C, numbers on parallel arrows). ΔΔGint(B1 → T‡) thus quantifies the change in the strength of the hG576–hQ1371 interaction in the hE1371Q background construct while the channel proceeds from the B1 state to state T‡ (see Materials and methods). That ΔΔGint(B1 → T‡) is significantly different from zero (p = 4.6 × 10−5), its magnitude (2.3 ± 0.3 kT) is comparable to that of an H-bond, and its positive signature reports that the bond is present in the B1 state, but not in state T‡. Because in the IB state separation of the NBD interfaces of site 2 (Vergani et al., 2005) renders formation of the inter-NBD H-bond unlikely, these results suggest that the bond is present selectively in the B state.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig3-v2.jpg)
 
-**Figure 3.:** (A) Macroscopic current relaxations following ATP removal for indicated human CFTR channel mutants (color coded). Inside-out patch currents were activated by exposure of pre-phosphorylated channels to saturating ATP. Current amplitudes are shown normalized by their steady-state values in ATP (i.e., just before ATP removal). Vm was −20 to −80 mV. (B) Relaxation time constants of the currents in (A), obtained by fits to single exponentials. Data are shown as mean ± standard error of the mean (SEM) from seven to nine experiments using a logarithmic ordinate. (C) Thermodynamic mutant cycle showing mutation-induced changes in the height of the free enthalpy barrier for the B1 → IB1 transition (ΔΔG0T, ‡−B1numbers on arrows; k, Boltzmann’s constant; T, absolute temperature). Each corner is represented by the mutations introduced into positions Q1371 and G576 of E1371Q-hCFTR. ΔΔGint(B1 → T‡) (purple number) is obtained as the difference between ΔΔG0T values along two parallel sides of the cycle. (‡−B1D) Currents of last open channels after ATP removal for the indicated human CFTR constructs (color coded). Recordings were done as in panel (A), but on patches with smaller numbers of channels. Membrane potential was −80 mV. Black lines indicate the analyzed segments. (E) Intraburst equilibrium constants obtained by dwell-time analysis for the four human CFTR constructs, plotted on a logarithmic scale. Data are shown as mean ± standard error of the mean (SEM) from five to six experiments. (F) Thermodynamic mutant cycle showing mutation-induced changes in the stability of the O state relative to the Cf state (ΔΔG0O-CF, numbers on arrows; k, Boltzmann’s constant; T, absolute temperature). Each corner of the cycle is represented by the mutations introduced into positions Q1371 and G576 of E1371Q-hCFTR. ΔΔGint(Cf → O) (purple number) is obtained as the difference between ΔΔG0O-CF values along two parallel sides of the cycle.
+**Figure 3.:** (A) Macroscopic current relaxations following ATP removal for indicated human CFTR channel mutants (color coded). Inside-out patch currents were activated by exposure of pre-phosphorylated channels to saturating ATP. Current amplitudes are shown normalized by their steady-state values in ATP (i.e., just before ATP removal). Vm was −20 to −80 mV. (B) Relaxation time constants of the currents in (A), obtained by fits to single exponentials. Data are shown as mean ± standard error of the mean (SEM) from seven to nine experiments using a logarithmic ordinate. (C) Thermodynamic mutant cycle showing mutation-induced changes in the height of the free enthalpy barrier for the B1 → IB1 transition (ΔΔG0T‡−B1, numbers on arrows; k, Boltzmann’s constant; T, absolute temperature). Each corner is represented by the mutations introduced into positions Q1371 and G576 of E1371Q-hCFTR. ΔΔGint(B1 → T‡) (purple number) is obtained as the difference between ΔΔG0T‡−B1 values along two parallel sides of the cycle. (D) Currents of last open channels after ATP removal for the indicated human CFTR constructs (color coded). Recordings were done as in panel (A), but on patches with smaller numbers of channels. Membrane potential was −80 mV. Black lines indicate the analyzed segments. (E) Intraburst equilibrium constants obtained by dwell-time analysis for the four human CFTR constructs, plotted on a logarithmic scale. Data are shown as mean ± standard error of the mean (SEM) from five to six experiments. (F) Thermodynamic mutant cycle showing mutation-induced changes in the stability of the O state relative to the Cf state (ΔΔG0O-CF, numbers on arrows; k, Boltzmann’s constant; T, absolute temperature). Each corner of the cycle is represented by the mutations introduced into positions Q1371 and G576 of E1371Q-hCFTR. ΔΔGint(Cf → O) (purple number) is obtained as the difference between ΔΔG0O-CF values along two parallel sides of the cycle.
 
-## In E1371Q-hCFTR the hQ1371–hG576 H-bond is maintained in the flickery closed state
+### In E1371Q-hCFTR the hQ1371–hG576 H-bond is maintained in the flickery closed state
 
 The bursting state is a composite state which comprises the open (O) and the flickery closed (Cf) state. The equilibrium between those two states is reflected by the fraction of time the pore spends open within a burst (Po|B), which is related to the intraburst equilibrium constant through the equation Keq|B = Po|B/(1 − Po|B). Intraburst gating of non-hydrolytic CFTR mutants can be conveniently studied in inside-out patches that contain small numbers of channels, through dwell-time analysis of segments of record following ATP removal in which all but one channel have terminally closed. Due to the absence of ATP such ‘last-channel’ time windows (Figure 3D, black bars) are devoid of IB events, and allow selective collection of large numbers of open and flickery closed events (Simon and Csanády, 2021).
 
 To address a potential change in the strength of the hG576–hQ1371 H-bond between the open and the flickery closed state of E1371Q hCFTR, we compared intraburst gating of hE1371Q and of the single and double target-site mutants (Figure 3D). In contrast to the large effects of the mutations on τb, the high intraburst Po of the hE1371Q background construct (Po|B = 0.91 ± 0.1 (n = 5)) was not reduced in any of the single or double mutants, for all of which Keq|B values remained within ~twofold (Figure 3E). Correspondingly, a mutant cycle built on Keq|B (Figure 3F) revealed an interaction energy ΔΔGint(Cf → O) of 0.44 ±0 .36 kT (Figure 3F, purple), which is not significantly different from zero (p = 0.29) suggesting that the strength of the interaction does not change significantly between the flickery closed and the open state.
 
-## In E1372Q-zCFTR no gating state-dependent change in interaction strength is detectable between the zQ1372 side-chain amino group and the NBD1 D-loop backbone
+### In E1372Q-zCFTR no gating state-dependent change in interaction strength is detectable between the zQ1372 side-chain amino group and the NBD1 D-loop backbone
 
 To verify the lack of an analogous interaction in zCFTR, we tested whether the effects of NBD1 D-loop deletions on zCFTR non-hydrolytic closing rate depend on the presence of a glutamine side chain at position z1372 (Figure 4). Based on the uncertainty in the zQ1372 side-chain assignment (cf., Figure 2F) we constructed two mutant cycles, one built on deleting residue zT575 (Figure 4A–C), the other built on deleting residue zH576 (Figure 4D–F) from the NBD1 D-loop. Of note, by shortening the D-loop, both deletions are expected to increase the distance between the z1372 side chain and the D-loop backbone in general.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig4-v2.jpg)
+
+**Figure 4.:** (A, D) Macroscopic current relaxations following ATP removal for indicated zCFTR channel mutants (color coded). Experiments were performed as in Figure 3A, and current amplitudes are shown normalized by their steady-state values in ATP (i.e., just before ATP removal). (B, E) Relaxation time constants of the currents in (A, D), obtained by fits to single exponentials. Data are shown as mean ± standard error of the mean (SEM) from 6 to 10 experiments using a logarithmic ordinate. (C, F) Thermodynamic mutant cycles showing mutation-induced changes in the height of the free enthalpy barrier for the B1 → IB1 transition (ΔΔG0T‡−B1, numbers on arrows; k, Boltzmann’s constant; T, absolute temperature). Each corner is represented by the mutations introduced into positions Q1372 and either T575 (C) or H576 (F) of E1372Q-zCFTR. ΔΔGint(B1 → T‡) (purple number) is obtained as the difference between ΔΔG0T‡−B1 values along two parallel sides of the cycle.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Purple dotted line illustrates suggested H-bond between the zT575 side chain and the backbone carbonyl oxygen of zA1375 (green sticks).
 
 Interestingly, both D-loop deletions robustly destabilized the non-hydrolytic bursting state of zCFTR. However, that destabilization was largely independent of the nature of the side chain at position z1372, indicating that it is not caused by disruption of a zQ1372 side-chain interaction. Thus, deletion of zT575 shortened τb by ~20-fold, whether it was introduced into a zE1372Q (Figure 4A, orange vs. brown trace; Figure 4B, orange vs. brown symbol) or a zE1372S (Figure 4A, green vs. blue trace; Figure 4B, green vs. blue symbol) background. The coupling energy calculated from the resulting mutant cycle (Figure 4C), ΔΔGint(B1 → T‡) = 0.34 ± 0.22 kT, is not significantly different from zero (p = 0.17). Similarly, deletion of zH576 shortened τb by ~10-fold in the zE1372Q background (Figure 4D, magenta vs. brown trace; Figure 4E, magenta vs. brown symbol), and by ~20-fold in the zE1372S background (Figure 4D, green vs. blue trace; Figure 4E, green vs. blue symbol), resulting in a calculated coupling energy (Figure 4F) of −0.60 ± 0.28 kT, again not significantly different from zero (p = 0.073).
 
 One possible explanation for the destabilizing effect of NBD1 D-loop deletions in zCFTR is the perturbation of a H-bond formed between the zT575 side chain and the zA1375 backbone, visible in the OF zCFTR structure (5w81; Figure 4—figure supplement 1). However, further investigation of that possibility is beyond the scope of the current study.
 
-## Catalytic glutamate mutation E1371S and Walker A mutation K1250A both completely abolish ATP hydrolysis in hCFTR
+### Catalytic glutamate mutation E1371S and Walker A mutation K1250A both completely abolish ATP hydrolysis in hCFTR
 
 In WT hCFTR channels the side chain of E1371 acts as the general base that deprotonates the attacking water molecule during the ATP hydrolysis reaction, whereas the side chain of the NBD2 Walker A lysine K1250 stabilizes the phosphate backbone of ATP bound in site 2, by forming strong ionic interactions with the β and γ phosphates (Figure 5A). The hK1250A and the hE1371S mutations both reduce channel closing rate by ~100-fold compared to WT hCFTR, indicating that they both reduce the rate of ATP hydrolysis (k1) by at least 100-fold. Given the different roles the two side chains play in catalysis, if both single mutations failed to completely abolish k1 then a further slowing in k1, that is, a further prolongation of τb, would be expected in the double mutant hK1250A/hE1371S. However, introducing the hE1371S mutation into the hK1250A background did not significantly alter τb (p = 0.13) (Figure 5B, blue vs. gray trace, Figure 5C, blue vs. gray symbol). When viewed from a different angle, mutation hK1250A also fails to prolong τb in the hE1371S background (Figure 5B, C, blue vs. Figure 3A, B, blue); instead it caused a slight (~28%) but insignificant (p = 0.052) shortening. These results together indicate that ATP hydrolysis is already completely abolished in both single mutants.
 
-## Walker B mutant D1370N completely abolishes ATP hydrolysis in hCFTR
+![Figure 5.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig5-v2.jpg)
+
+**Figure 5.:** (A) Close-up view of the site 2 interface in the OF structure of hCFTR-E1371Q (PDBID: 6msm) highlighting (in sticks) NBD1 D-loop residue hG576 (orange), and NBD2 residues hQ1371 (black), hD1370 (gray), and hK1250 (gray). ATP, yellow sticks; Mg2+, purple sphere. (B, D), Macroscopic current relaxations following ATP removal for indicated CFTR channel mutants (color coded). Experiments were performed as in Figure 3A, and current amplitudes are shown normalized by their steady-state values in ATP (i.e., just before ATP removal). (C, E), Relaxation time constants of the currents in (B, D), obtained by fits to single exponentials, displayed on a logarithmic ordinate. Data show mean ± standard error of the mean (SEM) from five to eight experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90736/elife-90736-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Location of positions 576, 1370, and 1371 (colored spacefill) relative to composite sites 1 and 2 in the tight hCFTR NBD dimer (PDBID: 6msm). Interacting positions 555 and 1246 (Vergani et al., 2005) are also shown in colored spacefill. (B) NBD2 structures of non-phosphorylated apo IF hCFTR (6uak; light green), non-phosphorylated ATP-bound IF hCFTR (8fzq; medium green), and phosphorylated ATP-bound OF E1371Q-hCFTR (6msm; dark green), aligned through their core subdomains. ATP (shades of yellow), and Mg2+ (shades of purple) of the ATP-bound structures are shown as sticks and spheres, respectively. Note completion of subdomain closure (curved arrow) in the OF structure. (C) Atomic models (sticks and spheres) of ATP (shades of yellow), Mg2+ (shades of purple), and residues D1370 (shades of gray) and S1251 (shades of green) from ATP-bound non-phosphorylated IF WT hCFTR (lighter tones; PDBID: 8fzq) and phosphorylated ATP-bound OF E1371Q hCFTR (darker tones; PDBID: 6msm). The core subdomain of NBD2 from 6msm was aligned with that of 8fzq in Pymol. Residue h1371 (black sticks) is shown only for the OF structure.
+
+### Walker B mutant D1370N completely abolishes ATP hydrolysis in hCFTR
 
 The conserved NBD2 Walker B aspartate hD1370 coordinates the Mg2+ ion in site 2, required for ATP hydrolysis in all ATPases (Figure 5A). Although in other ABC proteins D-to-N mutations at the analogous position were shown to abrogate ATP hydrolysis (Urbatsch et al., 1998; Hrycyna et al., 1999; Rai et al., 2006), for the hCFTR NBD2 Walker B mutant D1370N τb is only ~2 s, that is, ~15 times shorter than that of most other non-hydrolytic mutants. If that relatively fast closing rate of D1370N hCFTR simply reflected residual ATP-ase activity, that is, a rate k1 of ~0.5 s−1, then introducing the hE1371S mutation into the hD1370N background would be expected to abolish that residual activity, and prolong τb to a value near that of single mutant hE1371S. However, introducing the hE1371S mutation into the hD1370N background did not significantly alter τb (p = 0.09) (Figure 5D, blue vs. gray trace, Figure 5E, blue vs. gray symbol), suggesting complete lack of ATP hydrolysis in the hD1370N single mutant.
 
-## The E1371Q mutation stabilizes the bursting state of all non-hydrolytic hCFTR mutants
+### The E1371Q mutation stabilizes the bursting state of all non-hydrolytic hCFTR mutants
 
 If the hE1371Q mutation indeed introduces an artificial H-bond which selectively forms in the bursting state, then introduction of that mutation into any other non-hydrolytic background construct is expected to prolong τb. To verify that prediction, we introduced mutation hE1371Q into both Walker mutant backgrounds. Indeed, introducing mutation hE1371Q into an hK1250A background further increased τb by ~fivefold (p = 2.4 × 10−5) indicating strong stabilization of state B1 by the hE1371Q mutation (Figure 5B, black vs. gray trace, Figure 5C, black vs. gray symbol). Similarly, introducing the hE1371Q mutation into an hD1370N background further increased τb by ~16-fold (p = 1.7 × 10−4), again indicating strong stabilization of the B1 state (Figure 5D, black vs. gray trace, Figure 5E, black vs. gray symbol).
 
@@ -105,26 +129,92 @@ A strong native H-bond between extracellular loops 1 and 6 of hCFTR (between res
 
 ## Materials and methods
 
-## Molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus laevis oocytes</td>
+      <td>European Xenopus Resource Centre</td>
+      <td>RRID: NXR_0.0080</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiSpeed Plasmid Midi Kit</td>
+      <td>QIAGEN</td>
+      <td>12643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuickChange II Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>200524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type II</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>17101-015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5′-triphosphoribose magnesium (ATP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pclamp9</td>
+      <td>Molecular Devices</td>
+      <td>RRID: SCR_011323</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology
 
 Mutations were introduced into the human CFTR/pGEMHE and zebrafish CFTR/pGEMHE coding sequences using the Agilent QuickChange II mutagenesis Kit. The entire coding sequences of all constructs were confirmed by automated sequencing (LGC Genomics GmbH). Plasmids were linearized using Nhe I HF (New England Biolabs) and transcribed in vitro (mMessage-mMachine T7 Kit, Agilent Technologies), and purified cRNA was stored at −80°C.
 
-## Functional expression of human CFTR constructs in Xenopus laevis oocytes
+### Functional expression of human CFTR constructs in Xenopus laevis oocytes
 
 X. laevis oocytes were removed from anesthetized frogs following Institutional Animal Care and Use Committee guidelines, digested with collagenase (Gibco, Collagenase type II), and stored at 18°C in a solution containing (in mM) 82 NaCl, 2 KCl, 1 MgCl2, 1.8 CaCl2, and 5 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) (pH 7.5 with NaOH), supplemented with 50 μg/ml gentamycin. CFTR cRNA (1–20 ng) was injected in a fixed 50 nl volume (Drummond Nanoject II). Recordings were done 1–3 days following injection.
 
-## Excised inside-out patch-clamp recording
+### Excised inside-out patch-clamp recording
 
 Excised inside-out patch-clamp recordings were done as described (Simon and Csanády, 2023). The patch pipette solution contained (in mM): 138 N-Methyl-D-glucamine (NMDG), 2 MgCl2, 5 HEPES, pH = 7.4 with HCl. The bath solution contained (in mM): 138 NMDG, 2 MgCl2, 5 HEPES, 0.5 ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid (EGTA), pH = 7.1 with HCl. Following excision patches were placed into a flow chamber in which the continuously flowing bath solution could be exchanged with a time constant of <100 ms using electronic valves (ALA-VM8, Ala Scientific Instruments). Recordings were performed at 25°C, at membrane potentials of −20 to −80 mV. (-80 mV was used for patches with smaller numbers of channels, to facilitate intraburst kinetic analysis of last-channel segments; −20 to −40 mV was used when recording large currents, to increase seal stability; of note, CFTR channel gating is largely voltage independent (Cai et al., 2003; Csanády and Töröcsik, 2014).) MgATP (2–10 mM, Sigma-Aldrich) was diluted from a 400-mM aqueous stock solution. Channels were activated by ~2-min exposure to 300 nM bovine PKA catalytic subunit, prepared from beaf heart following the protocol of Kaczmarek et al., 1980, in the presence of saturating ATP (2 mM for hE1371S/Q and zE1372S/Q backgrounds, 5 mM for hD1370N backgrounds, 10 mM for hK1250A backgrounds). Currents were amplified, low-pass filtered at 2 kHz (Axopatch 200B, Molecular Devices), digitized at 10 kHz (Digidata 1550B, Molecular Devices) and recorded to disk (Pclamp 11, Molecular Devices).
 
-## Kinetic analysis of electrophysiological data
+### Kinetic analysis of electrophysiological data
 
 To obtain relaxation time constants (τburst), macroscopic current relaxations were fitted to single exponentials (Clampfit 11). For intraburst kinetic analysis of the last open channel, recordings were Gaussian filtered at 100 Hz, idealized by half-amplitude threshold crossing, and mean open times (τopen) and mean flickery closed times (τflicker) obtained as the simple arithmetic averages of the mean open and closed dwell-time durations, respectively. The intraburst equilibrium constant (Figure 3E) was calculated as Keq|B = τopen/τflicker.
 
-## Mutant cycle analysis
+### Mutant cycle analysis
 
-Changes in the strength of specific residue–residue interactions between various gating states of hCFTR-E1371Q and of zCFTR-E1372Q were quantitated by mutant cycle analysis as described (Mihályi et al., 2016). In brief, mutation-induced changes in the height of the transition-state barrier for non-hydrolytic closure (step B1 → T‡) were calculated as ΔΔGT‡−B10=−kTln⁡(r‵/r), where k is Boltzmann’s constant, T is absolute temperature, and r and r′ are the rates for the B1 → IB1 transition in the background construct and in the mutant, respectively, obtained as 1/τburst. The change in the stability of the O relative to the Cf ground state was calculated as  ΔΔGO−Cf0=−kTln⁡(Keq|B‵/Keq|B) , where Keq|B and  Keq|B‵ are the equilibrium constants for the Cf ↔ O transition in the background construct and in the mutant, respectively. Interaction free energy (ΔΔGint) was defined as the difference between ΔΔG0 values along two parallel sides of a mutant cycle. If the interaction between the target sites is completely abolished in each single mutant and in the double mutant, ΔΔGint(X → Y) quantifies the change in the strength of the target interaction in the background construct while the channel proceeds from state X to state Y (Mihályi et al., 2016). For the hQ1371–hG576 target interaction that assumption is met, as the only D-loop backbone carbonyl oxygen within 4.2 Å of the hQ1371 amino group is that of residue hG576, and both the hE1371S and hG576Δ single mutations are expected to further increase the distance between the D-loop backbone and the h1371 side chain, precluding formation of alternative interactions in the mutants. All ΔΔG values are given as mean ± standard error of the mean (SEM); SEM values were estimated assuming that r and Keq|B are normally distributed random variables, using second-order approximations of the exact integrals (Mihályi et al., 2016).
+Changes in the strength of specific residue–residue interactions between various gating states of hCFTR-E1371Q and of zCFTR-E1372Q were quantitated by mutant cycle analysis as described (Mihályi et al., 2016). In brief, mutation-induced changes in the height of the transition-state barrier for non-hydrolytic closure (step B1 → T‡) were calculated as $ΔΔG_{T^{‡}−B_{1}}^{0}=−kTln⁡(r^{‵}/r)$, where k is Boltzmann’s constant, T is absolute temperature, and r and r′ are the rates for the B1 → IB1 transition in the background construct and in the mutant, respectively, obtained as 1/τburst. The change in the stability of the O relative to the Cf ground state was calculated as  $ΔΔG_{O−C_{f}}^{0}=−kTln⁡(K_{eq|B}^{‵}/K_{eq|B})$ , where Keq|B and  $K_{eq|B}^{‵}$ are the equilibrium constants for the Cf ↔ O transition in the background construct and in the mutant, respectively. Interaction free energy (ΔΔGint) was defined as the difference between ΔΔG0 values along two parallel sides of a mutant cycle. If the interaction between the target sites is completely abolished in each single mutant and in the double mutant, ΔΔGint(X → Y) quantifies the change in the strength of the target interaction in the background construct while the channel proceeds from state X to state Y (Mihályi et al., 2016). For the hQ1371–hG576 target interaction that assumption is met, as the only D-loop backbone carbonyl oxygen within 4.2 Å of the hQ1371 amino group is that of residue hG576, and both the hE1371S and hG576Δ single mutations are expected to further increase the distance between the D-loop backbone and the h1371 side chain, precluding formation of alternative interactions in the mutants. All ΔΔG values are given as mean ± standard error of the mean (SEM); SEM values were estimated assuming that r and Keq|B are normally distributed random variables, using second-order approximations of the exact integrals (Mihályi et al., 2016).
 
-## Statistics
+### Statistics
 
 All values are given as mean ± SEM, with the numbers of independent biological replicates provided in the figure legends. Significances were evaluated using Student’s paired t-test.

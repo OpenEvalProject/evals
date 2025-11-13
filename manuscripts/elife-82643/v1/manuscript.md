@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Chemistry, University of North Carolina at Chapel Hill Chapel Hill United States
+1. Department of Chemistry, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 

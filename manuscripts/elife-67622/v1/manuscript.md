@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Genetic mutation of the human BEST1 gene, which encodes a Ca 2+ -activated Cl - channel (BEST1) predominantly expressed in retinal pigment epithelium (RPE), causes a spectrum of retinal degenerative disorders commonly known as bestrophinopathies. Previously, we showed that BEST1 plays an indispensable role in generating Ca 2+ -dependent Cl - currents in human RPE cells, and the deficiency of BEST1 function in patient-derived RPE is rescuable by gene augmentation (Li et al., 2017). Here, we report that BEST1 patient-derived loss-of-function and gain-of-function mutations require different mutant to wild-type (WT) molecule ratios for phenotypic manifestation, underlying their distinct epigenetic requirements in bestrophinopathy development, and suggesting that some of the previously classified autosomal dominant mutations actually behave in a dominant-negative manner. Importantly, the strong dominant effect of BEST1 gain-of-function mutations prohibits the restoration of BEST1-dependent Cl - currents in RPE cells by gene augmentation, in contrast to the efficient rescue of loss-of-function mutations via the same approach. Moreover, we demonstrate that gain-of-function mutations are rescuable by a combination of gene augmentation with CRISPR/Cas9-mediated knockdown of endogenous BEST1 expression, providing a universal treatment strategy for all bestrophinopathy patients regardless of their mutation types.
+Genetic mutation of the human BEST1 gene, which encodes a Ca2+-activated Cl- channel (BEST1) predominantly expressed in retinal pigment epithelium (RPE), causes a spectrum of retinal degenerative disorders commonly known as bestrophinopathies. Previously, we showed that BEST1 plays an indispensable role in generating Ca2+-dependent Cl- currents in human RPE cells, and the deficiency of BEST1 function in patient-derived RPE is rescuable by gene augmentation (Li et al., 2017). Here, we report that BEST1 patient-derived loss-of-function and gain-of-function mutations require different mutant to wild-type (WT) molecule ratios for phenotypic manifestation, underlying their distinct epigenetic requirements in bestrophinopathy development, and suggesting that some of the previously classified autosomal dominant mutations actually behave in a dominant-negative manner. Importantly, the strong dominant effect of BEST1 gain-of-function mutations prohibits the restoration of BEST1-dependent Cl- currents in RPE cells by gene augmentation, in contrast to the efficient rescue of loss-of-function mutations via the same approach. Moreover, we demonstrate that gain-of-function mutations are rescuable by a combination of gene augmentation with CRISPR/Cas9-mediated knockdown of endogenous BEST1 expression, providing a universal treatment strategy for all bestrophinopathy patients regardless of their mutation types.
 
 ## Introduction
 
@@ -38,45 +38,156 @@ In this study, we quantitatively examined the functional influence of different 
 
 ## Results
 
-## BEST1 loss-of-function mutations affect Cl- currents in a dosage-sensitive manner
+### BEST1 loss-of-function mutations affect Cl- currents in a dosage-sensitive manner
 
 To quantitatively evaluate the influence of BEST1 mutations on the channel activity under a condition mimicking the endogenous gene dosage, seven YFP-tagged BEST1 loss-of-function mutants, including six autosomal dominant (A10T, R218H, L234P, A243T, Q293K, and D302A) and one autosomal recessive (P274R), were individually mixed with CFP-tagged WT BEST1 at a 1:1 ratio and introduced into HEK293 cells for patch clamp recording. Surprisingly, in the presence of 1.2 μM free intracellular Ca2+ ([Ca2+]i), where BEST1 conducts peak current (Li et al., 2017), Cl- currents from cells co-expressing mutant and WT BEST1 were similar to those from cells expressing WT BEST1 alone (Figure 1a–h cyan, Figure 1—figure supplement 1a, Figure 1—figure supplement 2), regardless of whether the mutation is autosomal dominant or recessive. Therefore, these six loss-of-function mutations, although genetically defined as autosomal dominant, do not exhibit dominant behavior in vitro.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig1-v1.jpg)
+
+**Figure 1.:** (a) Population steady-state current density-voltage relationships in HEK293 cells expressing BEST1 WT-CFP only (black), WT-CFP: WT-YFP = 1:1 (gray), or WT-CFP: WT-YFP = 1:4 (light gray), in the presence of 1.2 μM [Ca2+]i, n = 5–6 for each point. (b–h) Population steady-state current density-voltage relationships in HEK293 cells expressing BEST1 WT-CFP: mutant-YFP = 1:1 (cyan), WT-CFP: mutant-YFP = 1:4 (magenta), compared to mutant (red) or WT (black) only, in the presence of 1.2 μM [Ca2+]i, n = 5–6 for each point. The mutants are BEST1 A10T (b), R218H (c), L234P (d), A243T (e), Q293K (f), D302A (g), and P274R (h). All error bars in this figure represent s.e.m. See also Figure 1—figure supplements 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Bar chart showing population steady-state current densities at +100 mV for 1:1 co-expressed BEST1 WT-CFP and WT/mutant-YFP in HEK293 cells at 1.2 μM [Ca2+]i; n = 5–6 for each point. (b) Bar chart showing population steady-state current densities at +100 mV for 1:4 co-expressed BEST1 WT-CFP and WT/mutant-YFP in HEK293 cells at 1.2 μM [Ca2+]i; n = 5–6 for each point. *p<0.05 compared to WT only, using two-tailed unpaired Student’s t test. All error bars in this figure represent s.e.m.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Ribbon diagram of two oppositely facing (144°) protomers of a BEST1 pentamer is shown with the extracellular side on the top. (a) The side chains are shown and highlighted for residues at the neck (I76, F80, and F84, salmon) and aperture (I205, magenta). (b) The same diagram as a, rotated to the same degree as c. (c) The side chains are shown and highlighted for residues harboring loss-of-function (dominant: A10, R218, L234, A243, Q293, and D302, red; recessive: P274, blue) and gain-of-function (D203, I205, and Y236, magenta) mutations.
+
 To test if a dominant-negative effect is at play, the mutants were individually co-transfected with WT BEST1 at a 4:1 ratio into HEK293 cells for patch clamp analysis. At 1.2 μM [Ca2+]i, Cl- currents from co-expression of an autosomal dominant mutant and WT BEST1 were significantly smaller than those from the WT only, and similar to those from the mutant only (Figure 1b–g magenta, Figure 1—figure supplement 1b). By contrast, currents from cells co-expressing the autosomal recessive P274R mutant and the WT BEST1 at a 4:1 ratio were still similar to those from cells expressing the WT BEST1 only (Figure 1h, Figure 1—figure supplement 1b). Therefore, the six previously recognized autosomal dominant mutations are actually dominant-negative in vitro, whereas the autosomal recessive P274R mutation indeed behaves recessively.
 
-## Imbalanced transcription of BEST1 alleles in human RPE
+### Imbalanced transcription of BEST1 alleles in human RPE
 
 Our patch clamp results from transiently transfected HEK293 cells predict that the autosomal dominant mutant allele is expressed at a higher level than the WT allele in patients’ RPE, such that the dominant-negative effect can be manifested. To test this hypothesis, we extracted mRNA from patient-derived induced pluripotent stem cell (iPSC) differentiated RPE (iPSC-RPE), and measured the ratio of transcripts from the mutant and WT BEST1 alleles by reverse transcription polymerase chain reaction (RT-PCR) and TOPO cloning. Remarkably, the mutant genotype showed up three to four times more than the WT in all 12 BVMD patient-derived iPSC-RPE clones (two clones from each patient) (Table 1), indicating that the transcription level of the mutant allele is three- to fourfold higher than that of the WT allele in these patients’ RPE cells.
+
+**Table 1.**
+ Sequencing of BEST1 transcripts in retinal pigment epithelium (RPE) cells.#1–6 are patient-derived iPSC-RPE cells carrying the same set of BEST1 mutations as those analyzed in transiently transfected HEK293 cells in Figure 1. #7 is native human RPE cells from a healthy donor bearing a single nucleotide polymorphism (SNP) in the BEST1 gene.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor #</th>
+      <th>Mutation</th>
+      <th>RPE type</th>
+      <th>Mutant/WT from clone #1</th>
+      <th>Mutant/WT from clone #2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>A10T</td>
+      <td>iPSC-RPE</td>
+      <td>72/23</td>
+      <td>51/12</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>R218H</td>
+      <td>iPSC-RPE</td>
+      <td>84/20</td>
+      <td>45/11</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>L234P</td>
+      <td>iPSC-RPE</td>
+      <td>77/19</td>
+      <td>42/20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>A243T</td>
+      <td>iPSC-RPE</td>
+      <td>83/28</td>
+      <td>37/11</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Q293K</td>
+      <td>iPSC-RPE</td>
+      <td>76/19</td>
+      <td>46/10</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>D302A</td>
+      <td>iPSC-RPE</td>
+      <td>78/18</td>
+      <td>35/14</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>rs767552540</td>
+      <td>Native</td>
+      <td>74/23</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
 
 To further validate if the two BEST1 alleles have imbalanced transcription in native RPE, we collected RPE cells from a post-mortem donor harboring heterozygosity of a single nucleotide polymorphism (SNP, rs767552540) in BEST1. Consistent with results from iPSC-RPE, transcripts from one allele outnumbered those from the other by approximately threefold in these native human RPE cells (Table 1).
 
 Together, our results suggest that allelic imbalance of BEST1 transcription contributes to the dominant-negative effect of the autosomal dominant mutations. Importantly, this provides an explanation for the restoration of Ca2+-dependent Cl- currents by gene augmentation in iPSC-RPE cells bearing a BEST1 autosomal dominant loss-of-function mutation (Ji et al., 2019b): as long as the augmented WT BEST1 protein is expressed at a similar or higher level compared to the endogenous BEST1, the mutant to WT protein ratio is no longer in a dominant-negative scenario, such that the WT phenotype is exhibited as seen in 1:1 transiently transfected HEK293 cells (Figure 1b–g).
 
-## BEST1 gain-of-function mutations are bona fide dominant in vitro
+### BEST1 gain-of-function mutations are bona fide dominant in vitro
 
 We previously identified three BEST1 gain-of-function mutations, namely D203A, I205T, and Y236C, all of which are autosomal dominant (Figure 1—figure supplement 2; Ji et al., 2019a). To test whether their behavior is dominant in vitro, each mutant was individually co-expressed with WT at 1:1 in HEK293 cells and subjected to patch clamp analysis. Without Ca2+, Cl- currents from cells co-expressing WT BEST1 and any of the mutants were significantly larger than those from cells expressing WT BEST1 only; at 1.2 μM [Ca2+]i, cells co-expressing D203A/WT and Y236C/WT displayed significantly bigger currents than WT only (Figure 2a–c left, Figure 2—figure supplement 1a); at both conditions, currents from cells co-expressing mutant/WT BEST1 resembled those from cells expressing the mutant only (Figure 2a–c, Figure 2—figure supplement 1a). These results indicate that these three gain-of-function mutations are indeed dominant, in contrast to the dominant-negative behavior of the six loss-of-function mutations.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig2-v1.jpg)
+
+**Figure 2.:** (a–c) Left, population steady-state current density-voltage relationships in HEK293 cells co-expressing WT-CFP: mutant-YFP = 1:1 (cyan) compared to WT only (WT-CFP: WT-YFP = 1:1, gray), in the absence (open) or presence (solid) of 1.2 μM [Ca2+]i, n = 5–6 for each point. Right, population steady-state current density-voltage relationships in HEK293 cells co-expressing WT-CFP: mutant-YFP = 4:1 (blue) compared to mutant only (red), in the absence (open) or presence (solid) of 1.2 μM [Ca2+]i, n = 5–6 for each point. The mutants are BEST1 D203A (a), I205T (b), and Y236C (c). All error bars in this figure represent s.e.m. (d) WT or mutant BEST1-YFP-His was co-expressed with WT BEST1-CFP-Myc in HEK293 cells, and detected by immunoblotting directly in cell lysate (input) or after co-immunoprecipitation. See also Figure 2—figure supplements 1 and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Bar chart showing population steady-state current densities at +100 mV for 1:1 co-expressed BEST1 WT-CFP and WT/mutant-YFP in HEK293 cells in the absence (open) or presence (solid) of 1.2 μM [Ca2+]i; n = 5–6 for each point. *#p<0.05 compared to WT only in the absence or presence of Ca2+, respectively, using two-tailed unpaired Student’s t test. (b) Bar chart showing population steady-state current densities at +100 mV for 4:1 co-expressed BEST1 WT-CFP and WT/mutant-YFP in HEK293 cells in the absence (open) or presence (solid) of 1.2 μM [Ca2+]i; n = 5–6 for each point. *#p<0.05 compared to WT only in the absence or presence of Ca2+, respectively, using two-tailed unpaired Student’s t test. All error bars in this figure represent s.e.m.
+
 Since BEST1 is presumably a pentamer based on known bestrophin structures (Yang et al., 2014a; Kane Dickson et al., 2014; Owji et al., 2020), it is possible that as few as one gain-of-function mutant monomer in the pentameric assembly could alter the channel function. To test this idea, HEK293 cells were co-transfected with mutant/WT BEST1 at a 1:4 ratio for patch clamp analysis. Under this condition, Ca2+-dependent Cl- currents from co-expression of a gain-of-function mutant and WT BEST1 were still similar to those from the mutant only (Figure 2a–c right, Figure 2—figure supplement 1b). These results suggest a potent dominant effect of the gain-of-function mutations: just one mutant monomer is sufficient to dominate the function of the pentameric channel. To confirm the interaction between the gain-of-function mutant and WT monomers, mutant BEST1-YFP-His and WT BEST1-CFP-Myc were co-expressed in HEK293 cells, followed by immunoprecipitation with an antibody against Myc and immunoblotting with antibodies against His and Myc, respectively. All three gain-of-function mutants were expressed at similar levels to that of WT BEST1 after transient transfection, and retained the interaction with WT BEST1 (Figure 2d), consistent with our previous observation that the interaction between BEST1 monomers is not affected by loss-of-function autosomal dominant mutations (Ji et al., 2019b).
 
-## Modeling BEST1 gain-of-function mutations in hPSC-RPE cells
+### Modeling BEST1 gain-of-function mutations in hPSC-RPE cells
 
 We previously showed that WT gene augmentation is sufficient to restore Ca2+-dependent Cl- currents in iPSC-RPE cells with a BEST1 loss-of-function mutation, while the exogenous BEST1 is expressed at a comparable level to the endogenous protein (Ji et al., 2019b). As BEST1 gain-of-function mutations are dominant over the WT even at a 1:4 ratio (Figure 2a–c right, Figure 2—figure supplement 1b), it raises an important question on the efficacy of gene augmentation. However, iPSC-RPE cells bearing a gain-of-function mutation are currently unavailable due to the lack of patient samples.
 
 To circumvent this obstacle, we generated isogenic RPE cells (human pluripotent stem cell [hPSC] derived RPE [hPSC-RPE]) from an H1 background hPSC line carrying an inducible Cas9 cassette (H1-iCas9), which allows efficient genome editing (González et al., 2014; Moshfegh et al., 2016; Idelson et al., 2009). The RPE status of the hPSC-RPE cells was recognized by morphological signatures including intracellular pigment and hexagonal shape, and confirmed by immunoblotting with RPE-specific marker proteins RPE65 (retinal pigment epithelium-specific 65 kDa protein) and CRALBP (cellular retinaldehyde-binding protein) (Figure 3—figure supplement 1a; Moshfegh et al., 2016), consistent with the results from donor-derived iPSC-RPE (Figure 3—figure supplement 1b). Ca2+-dependent Cl- currents on the plasma membrane of BEST1WT/WT hPSC-RPE cells were recorded as 4 ± 1 and 267 ± 79 pA/pF at 0 and 1.2 μM [Ca2+]i, respectively, consistent with results from donor-derived BEST1WT/WT iPSC-RPE (Figure 3a). To evaluate the genetic dependency of Ca2+-dependent Cl- currents in RPE cells, we individually knocked out BEST1 and three other CaCCs, namely TMEM16A, TMEM16B, and LRRC8A in the H1-iCas9 cell line, and generated the corresponding knockout hPSC-RPE cells for patch clamp analysis. It should be noted that only the mRNA of BEST1, but not of the other three CaCCs, can be detected in WT PSC-RPE or donor native RPE cells (Figure 3—figure supplement 2a–b). Remarkably, Ca2+-dependent Cl- current was completely eliminated in BEST1-/- hPSC-RPE and a patient-derived BEST1 null (IVS1 +5G>A homo) iPSC-RPE (Figure 3b, Figure 3—figure supplement 3a–d; Fung et al., 2015), in contrast to the WT-like currents from TMEM16A-/-, TMEM16B-/-, or LRRC8A-/- hPSC-RPE cells (Figure 3c–e, Figure 3—figure supplement 3d). Consistently, the protein and mRNA levels of BEST1 were abolished in BEST1-/- hPSC-RPE cells, but not affected in TMEM16A-/-, TMEM16B-/-, or LRRC8A-/- hPSC-RPE cells (Figure 3—figure supplements 1a and 2c). Moreover, when WT BEST1 was expressed from a baculovirus vector in BEST1-/- hPSC-RPE and the patient-derived BEST1 null iPSC-RPE, Ca2+-dependent Cl- currents were fully rescued (Figure 3b, Figure 3—figure supplement 3c). Taken together, these results validate hPSC-RPE as a model system to study BEST1 function, and indicate that BEST1, but not TMEM16A, TMEM16B, or LRRC8A, is the CaCC conducting Ca2+-dependent Cl- current in human RPE.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig3-v1.jpg)
+
+**Figure 3.:** (a) Ca2+-dependent Cl- currents measured by whole-cell patch clamp in WT hPSC-RPE. Left, representative current traces recorded at 1.2 μM [Ca2+]i. Inset, voltage protocol used to elicit currents. Middle, population steady-state current density-voltage relationship in WT hPSC-RPE (black) compared to that from WT iPSC-RPE (gray), at 1.2 μM [Ca2+]i, n = 5–6 for each point. Right, steady-state current density recorded at +100 mV plotted vs. [Ca2+]i from WT hPSC-RPE (black) compared to that from WT iPSC-RPE (gray), n = 5–6 for each point. The plot was fitted to the Hill equation. (b–e) Ca2+-dependent Cl- currents measured by whole-cell patch clamp in BEST1-/- (b), TMEM16A-/- (c), TMEM16B-/- (d), or LRRC8A-/- (e) hPSC-RPE cells, respectively. Left, representative current traces recorded at 1.2 μM [Ca2+]i. Middle, population steady-state current density-voltage relationship in knockout hPSC-RPE cells (red), compared to that from WT hPSC-RPE cells (black), at 1.2 μM [Ca2+]i, n = 5–6 for each point. Right, steady-state current density recorded at +100 mV plotted vs. [Ca2+]i from knockout (red) and WT BEST1 supplemented (blue in b) hPSC-RPE cells, compared to the plot from WT hPSC-RPE (dotted black), n = 5–6 for each point. Plots were fitted to the Hill equation. *p<0.05 (1.8 × 10−2) compared to WT cells, using two-tailed unpaired Student’s t test. All error bars in this figure represent s.e.m. See also Figure 3—figure supplements 1–3 and Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a–b) Immunoblotting showing the expression of RPE-specific proteins BEST1, RPE65, CRALBP, and the loading control β-Actin in hPSC-RPE (a) and iPSC-RPE (b) cells. Two gels/blots in the same panel were prepared from the same cell lysate of each PSC-RPE to detect BEST1 + β-Actin, and RPE65 + CRALBP, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Reverse transcription polymerase chain reaction (RT-PCR) detecting BEST1 and control β-Actin mRNA in WT native RPE, iPSC-RPE and hPSC-RPE cells. Plasmids bearing the corresponding full-length cDNA were used as positive controls in PCR reactions. (b) RT-PCR detecting mRNA of TMEM16A, TMEM16B, and LRRC8A in WT native RPE, iPSC-RPE, and hPSC-RPE cells. Plasmids bearing the corresponding full-length cDNA were used as positive controls in PCR reactions. (c) RT-PCR detecting BEST1 and control β-Actin mRNA in WT and knockout hPSC-RPE cells.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Ca2+-dependent Cl- currents measured by whole-cell patch clamp in patient-derived BEST1 null iPSC-RPE. Representative current traces recorded at 1.2 μM [Ca2+]i. (b) Population steady-state current density-voltage relationship in BEST1 null iPSC-RPE (red) compared to that in WT iPSC-RPE (gray), at 1.2 μM [Ca2+]i, n = 5–6 for each point. *p<0.05 compared to WT cells, using two-tailed unpaired Student’s t test. (c) Steady-state current density recorded at +100 mV plotted vs. [Ca2+]i from BEST1 null (red), and BEST1 null supplemented with WT BEST1 (blue), compared to WT iPSC-RPE (gray), n = 5–6 for each point. The plots were fitted to the Hill equation. (d) Bar chart showing population steady-state current densities at +100 mV in hPSC-RPE cells at 1.2 μM [Ca2+]i, n = 5–6 for each point. Two clonal hPSC-RPE cells from each genotype were recorded. Black, WT. Gray, knockout or knock-in mutants. All error bars in this figure represent s.e.m.
+
 To model gain-of-function mutations, we individually introduced heterozygous I205T and Y236C mutations to the BEST1 gene in the H1-iCas9 cell line, generating BEST1I205T/WT and BEST1Y236C/WT hPSC cells, which were then differentiated to BEST1I205T/WT and BEST1Y236C/WT hPSC-RPE cells, respectively, for patch clamp analysis (Figure 3—figure supplement 1a). Consistent with results from transiently transfected HEK293 cells (Ji et al., 2019a), Cl- currents from BEST1I205T/WT hPSC-RPE were significantly bigger than those from WT under no or low Ca2+ conditions, but similar in the presence of high Ca2+ (Figure 4a–c, Figure 3—figure supplement 3d). On the other hand, the Ca2+-dependent Cl- currents from BEST1Y236C/WT hPSC-RPE were significantly larger than those from WT at all tested [Ca2+]is (Figure 4d–f, Figure 3—figure supplement 3d). These results reaffirm the gain-of-function and dominant behavior of the BEST1 I205T and Y236C mutations in RPE.
 
-## BEST1 gain-of-function mutations cannot be rescued by gene augmentation in hPSC-RPE
+![Figure 4.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig4-v1.jpg)
+
+**Figure 4.:** (a) Representative current traces of BEST1I205T/WT hPSC-RPE in the absence of Ca2+. (b) Population steady-state current density-voltage relationships in BEST1I205T/WT hPSC-RPE, in the absence (open red) or presence (solid red) of 1.2 μM [Ca2+]i, compared to cells with WT BEST1 augmentation in the absence of Ca2+ (open blue), n = 5–8 for each point. *p<0.05 (1.3 × 10−3) compared to cells without augmentation in the absence of Ca2+, using two-tailed unpaired Student’s t test. (c) Steady-state current densities recorded at +100 mV plotted vs. [Ca2+]i in BEST1I205T/WT hPSC-RPE (red) compared to those in BEST1WT/WT hPSC-RPE cells (black), n = 5–6 for each point. (d–f) Data for BEST1Y236C/WT in the same format as (a–c), respectively. *p<0.05 (2.5 × 10−5) compared to cells without augmentation in the absence of Ca2+, using two-tailed unpaired Student’s t test. n = 5–10 for each point. All error bars in this figure represent s.e.m. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Augmented BEST1-GFP and endogenous BEST1 were detected by immunoblotting in hPSC-RPE cells. (b) Schematic of the baculovirus-based silencing (BVSi) vector. (c) Immunoblotting showing the knockdown of endogenous BEST1 expression with BVSi vectors and augmentation of wobble BEST1-mCherry in WT hPSC-RPE cells. (d) Immunoblotting showing the knockdown of endogenous BEST1 expression with BVSi 3–8 and augmentation of wobble BEST1-mCherry in hPSC-RPE cells carrying BEST1 gain-of-function mutations.
+
+### BEST1 gain-of-function mutations cannot be rescued by gene augmentation in hPSC-RPE
 
 To test if the aberrant Ca2+-dependent Cl- current in hPSC-RPE bearing a BEST1 gain-of-function mutation is rescuable by gene augmentation, BEST1I205T/WT and BEST1Y236C/WT hPSC-RPE cells were infected with baculoviruses expressing WT BEST1-GFP and subjected to patch clamp analysis. Notably, Ca2+-dependent Cl- currents in these mutant hPSC-RPE cells remained aberrant after gene augmentation in the absence of Ca2+ (Figure 4b and e, open blue), despite the exogenous WT BEST1 being expressed at a higher level to that of the endogenous BEST1 (Figure 4—figure supplement 1a). This is in sharp contrast to the restoration of Ca2+-dependent Cl- current in BEST1-/- (Figure 3b, Figure 4—figure supplement 1a) or loss-of-function mutant RPE cells using the same approach (Ji et al., 2019b). Therefore, our results suggest that gene augmentation alone is insufficient to rescue BEST1 gain-of-function mutations.
 
-## Rescue of BEST1 gain-of-function mutations by non-selective CRISPR/Cas9-mediated gene silencing in combination with augmentation
+### Rescue of BEST1 gain-of-function mutations by non-selective CRISPR/Cas9-mediated gene silencing in combination with augmentation
 
 There are two strategies to overcome the dominant effect of gain-of-function mutations: (1) specific silencing of the mutant allele and (2) non-selective silencing of both endogenous alleles and simultaneously supplying an exogenous WT gene. We reasoned that the latter is a more general approach as one design can be used for various mutations. For the targeted silencing of endogenous BEST1, we employed a programmable transcriptional repressor composed of a nuclease-dead Cas9 (dCas9) fused with a bipartite KRAB–MeCP2 repressor domain in the C-terminus (dCas9-KRAB-MeCP2) (Yeo et al., 2018). For the simultaneous delivery of the complete CRISPR machinery, we constructed a baculovirus-based silencing (BVSi) vector containing a CMV promoter-driven dCas9-KRAB-MeCP2-T2A-GFP expression cassette and a U6 promoter-driven gRNA expression cassette (Figure 4—figure supplement 1b). Multiple guides targeting exons 3 and 5 of BEST1 were screened by nuclease surveyor assay, and the most efficient ones along with a non-specific scramble guide were individually constructed into the BVSi backbone for virus production. The resultant BEST1-targeting (BVSi 3–8 and BVSi 5–4) and control (BVSi-Ctrl) viruses were used to infect WT hPSC-RPE cells. Immunoblotting showed a better BEST1 knockdown efficiency of the BVSi 3–8 virus compared to the BVSi 5–4 virus (Figure 4—figure supplement 1c). Consistently, Ca2+-dependent Cl- current from BVSi 3–8 infected cells was more effectively diminished compared to that from BVSi 5–4 infected cells at 1.2 μM [Ca2+]i (Figure 5a), where RPE cells display the peak Cl- current amplitude. These results indicate a high silencing efficacy of the BVSi 3–8 design, which was used for later steps of the silencing/augmentation strategy.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67622/elife-67622-fig5-v1.jpg)
 
-**Figure 5.:** (a) Population steady-state current density-voltage relationships in WT hPSC-RPE cells treated with BVSi-Ctrl (black) compared to those in BVSi 3–8 (red) or BVSi 5–4 (blue) treated cells, at 1.2 μM [Ca2+]i, n = 5–17 for each point. *p<0.05 (8.3 × 10−7 for BVSi 3–8 and 1.6 × 10−6 for BVSi 5–4) compared to BVSi-Ctrl treated cells, using two-tailed unpaired Student’s t test. (b) Population steady-state current density-voltage relationships in WT hPSC-RPE cells treated with BVSi 3–8 plus wobble WT BEST1 (blue) compared to those in untreated cells (black), at 1.2 μM [Ca2+]i, n = 5–6 for each point. (c–d) Population steady-state current density-voltage relationships in BEST1 (I205T/WTc) or BEST1 (Y236C/WTd) hPSC-RPE cells treated with BVSi 3–8 alone (red), or BVSi 3–8 plus wobble WT BEST1 (blue), at 1.2 μM [Ca2+]i, n = 5–9 for each point. *p<0.05 (3.8 × 10−3 for I205T and 2.7 × 10−4 for Y236C) compared to cells treated with BVSi 3–8 alone, using two-tailed unpaired Student’s t test. (e–f) Steady-state current densities recorded at +100 mV plotted vs. [Ca2+]i in BEST1 (I205T/WTe) or BEST1 (Y236C/WTf) hPSC-RPE cells treated with BVSi 3–8 plus wobble WT BEST1 (blue) compared to those in untreated WT hPSC-RPE (black), n = 5–6 for each point. The plots were fitted to the Hill equation. All error bars in this figure represent s.e.m.
+**Figure 5.:** (a) Population steady-state current density-voltage relationships in WT hPSC-RPE cells treated with BVSi-Ctrl (black) compared to those in BVSi 3–8 (red) or BVSi 5–4 (blue) treated cells, at 1.2 μM [Ca2+]i, n = 5–17 for each point. *p<0.05 (8.3 × 10−7 for BVSi 3–8 and 1.6 × 10−6 for BVSi 5–4) compared to BVSi-Ctrl treated cells, using two-tailed unpaired Student’s t test. (b) Population steady-state current density-voltage relationships in WT hPSC-RPE cells treated with BVSi 3–8 plus wobble WT BEST1 (blue) compared to those in untreated cells (black), at 1.2 μM [Ca2+]i, n = 5–6 for each point. (c–d) Population steady-state current density-voltage relationships in BEST1I205T/WT (c) or BEST1Y236C/WT (d) hPSC-RPE cells treated with BVSi 3–8 alone (red), or BVSi 3–8 plus wobble WT BEST1 (blue), at 1.2 μM [Ca2+]i, n = 5–9 for each point. *p<0.05 (3.8 × 10−3 for I205T and 2.7 × 10−4 for Y236C) compared to cells treated with BVSi 3–8 alone, using two-tailed unpaired Student’s t test. (e–f) Steady-state current densities recorded at +100 mV plotted vs. [Ca2+]i in BEST1I205T/WT (e) or BEST1Y236C/WT (f) hPSC-RPE cells treated with BVSi 3–8 plus wobble WT BEST1 (blue) compared to those in untreated WT hPSC-RPE (black), n = 5–6 for each point. The plots were fitted to the Hill equation. All error bars in this figure represent s.e.m.
 
 For augmentation of WT BEST1 in the presence of BVSi 3–8, we generated baculovirus bearing a wobble WT BEST1-mCherry resistant to the recognition by gRNA 3–8 (Figure 4—figure supplement 1c). When wobble WT BEST1-mCherry was co-expressed, the diminished Ca2+-dependent Cl- current in BVSi 3–8 treated WT hPSC-RPE cells was fully rescued at 1.2 μM [Ca2+]i (Figure 5b), validating our silencing/augmentation system in WT hPSC-RPE cells. To test this strategy for the rescue of gain-of-function mutations, we carried out the same set of experiments in BEST1I205T/WT and BEST1Y236C/WT hPSC-RPE cells. Remarkably, the endogenous BEST1 protein was diminished with BVSi 3–8 treatment (Figure 4—figure supplement 1d) in the mutant hPSC-RPE cells, concomitant with abolished Ca2+-dependent Cl- currents in these cells at 1.2 μM [Ca2+]i (Figure 5c–d), while co-expression of the wobble WT BEST1-mCherry restored Cl- currents to the WT levels at all tested [Ca2+]is (Figure 5c–f, Figure 4—figure supplement 1d), providing a proof-of-concept for the cure of bestrophinopathies associated with BEST1 gain-of-function mutations.
 
@@ -100,66 +211,328 @@ There are two common strategies to overcome the strong dominant effect of gain-o
 
 ## Materials and methods
 
-## Generation of human iPSC
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>HST08 (Stellar cells)</td>
+      <td>TaKaRa</td>
+      <td>636766</td>
+      <td>Chemical competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_0549</td>
+      <td>Insect cell line for baculovirus production</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0045</td>
+      <td>Embryonic kidney cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9</td>
+      <td>Sloan Kettering Institute, González et al., 2014</td>
+      <td></td>
+      <td>Embryonic stem cell line with an inducible CRISPR cassette</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 BEST1-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BEST1-/- knockout generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 TMEM16A-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TMEM16A-/- knockout generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 TMEM16B-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TMEM16B-/- knockout generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 LRRC8A-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>LRRC8A-/- knockout generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 BEST1I205T/WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BEST1I205T/WT knock-in generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1-iCas9 BEST1Y236C/WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BEST1Y236C/WT knock-in generated from the H1-iCas9 line</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>RPE cells</td>
+      <td>Li et al., 2017</td>
+      <td></td>
+      <td>Human RPE cells from a post-mortem donor</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>iPSC-RPE cells</td>
+      <td>Ji et al., 2019a</td>
+      <td></td>
+      <td>iPSC-RPE cells derived from patient skin cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- RPE65 (Mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#: NB100-355, RRID:AB_10002148</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CRALBP (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab15051, RRID:AB_2269474</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- BEST1 (mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#: NB300-164, RRID:AB_10003019</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab8227, RRID:AB_2305186</td>
+      <td>WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- 6xHis (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: PA1-983B, RRID:AB_1069891</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: PA1-981, RRID:AB_325961</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD anti-mouse IgG (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat#: 925–68070, RRID:AB_2651128</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW anti-rabbit IgG (donkey polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat#: 925–32213, RRID:AB_2715510</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam</td>
+      <td>Goehring et al., 2014</td>
+      <td></td>
+      <td>Baculoviral vector for gene expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBacMam-BEST1-GFP (plasmid)</td>
+      <td>Li et al., 2017</td>
+      <td></td>
+      <td>To express exogenous BEST1 in HEK293 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBacMam-BEST1-mCherry (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from pEG BacMam by inserting BEST1-mCherry</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>dCas9-KRAB-MeCP2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID :Addgene_110821</td>
+      <td>Improved dCas9 repressor-dCas9-KRAB-MeCP2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP (PX458) (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID :Addgene_48138</td>
+      <td>Cas9 from Streptococcus pyogenes with 2A-EGFP, and cloning backbone for sgRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BVSi 5–4-GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from pEG BacMam, dCas9-KRAB-MeCP2 and pSpCas9(BB)−2A-GFP, for BEST1 silencing</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BVSi 3–8-GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from pEG BacMam, dCas9-KRAB-MeCP2 and pSpCas9(BB)−2A-GFP, for BEST1 silencing</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BVSi ctrl-GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from pEG BacMam, dCas9-KRAB-MeCP2 and pSpCas9(BB)−2A-GFP, serving as a control for BEST1 silencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hBest1-I205T-ssDNA</td>
+      <td>This paper</td>
+      <td>Knock-in ssDNA template</td>
+      <td>GCCCTGGGTGTGGTTTGCCAACCTGTCAATGAAGGCGTGGCTTGGAGGTCGAATTCGGGACCCTACCCTGCTCCAGAGCCTGCTGAACGTGAGCCCACTGTACAGACAGGGCTGCCGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hBest1-Y236C-ssDNA</td>
+      <td>This paper</td>
+      <td>Knock-in ssDNA template</td>
+      <td>TCAGTGTGGACACCTGTATGCCTACGACTGGATTAGTATCCCACTGGTGTGTACACAGGTGAGGACTAGTCTGGTGAGGCTGCCCTTTTGGGAAACTGAGGCTAGAAGGACCAAGGAAGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CytoTune-iPS 2.0 Sendai reprogramming kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A16517</td>
+      <td>To generate iPSC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Clontech</td>
+      <td>Clontech:639647</td>
+      <td>For molecular cloning</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PolyJet In Vitro DNA Transfection Reagent</td>
+      <td>SignaGen Laboratories</td>
+      <td>SL100688</td>
+      <td>For cell transfection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA</td>
+      <td>RRID:SCR_000034</td>
+      <td>Patch clamp data collection and analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL</td>
+      <td>RRID:SCR_000305</td>
+      <td>Structural analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of human iPSC
 
 The CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific, A16517) was used to reprogram donor-provided skin fibroblasts into pluripotent stem cells (iPSC). Immunocytofluorescence assays were carried out following the previously published protocol to score iPSC pluripotency (Li et al., 2016). The iPSC cells from all the subjects enrolled in this study were characterized by detecting four standard pluripotency markers (SSEA4, Tra-1–60, SOX2, and Nanog). Nuclei were detected by Hoechst staining. All iPSC lines were passaged every 3–6 days while maintained in mTeSR-1 medium (STEMCELL Technologies, 85850). The morphology and nuclear/cytoplasmic ratio were closely monitored to ensure the stability of the iPSC lines. All the iPSC lines were sent for karyotyping by G-banding to verify genome integrity at Cell Line Genetics (Madison, WI).
 
-## Differentiation of iPSC and hPSC lines into RPE cells
+### Differentiation of iPSC and hPSC lines into RPE cells
 
 iPSC and hPSC lines were cultured to confluence in six-well culture dishes pretreated with 1:50 diluted matrigel (CORNING, 356230). For the first 14 days, the differentiation medium consisted of Knock-Out (KO) DMEM (Thermo Fisher Scientific, 10829018), 15% KO serum replacement (Thermo Fisher Scientific, 10829028), 2 mM glutamine (Thermo Fisher Scientific, 35050061), 50 U/ml penicillin-streptomycin (Thermo Fisher Scientific, 10378016), 1% nonessential amino acids (Thermo Fisher Scientific, 11140050), and 10 mM nicotinamide (Sigma-Aldrich, N0636). During days 15–28 of differentiation, the differentiation medium was supplemented with 100 ng/ml human Activin-A (PeproTech, 120–14). From day 29 on, the differentiation medium without Activin-A supplementation was used again until differentiation was completed. After roughly 8–10 weeks, dispersed pigmented flattened clusters were formatted and manually picked to matrigel-coated dishes. These cells were kept in RPE culture medium as previously described (Maminishkis et al., 2006). It takes another 6–8 weeks in culture for them to form a functional monolayer, which would be ready for function assays. In addition to well-established classical mature RPE markers (Bestrophin1, CRALBP, and RPE65), two more markers (PAX6 and MITF) were also used to validate the RPE fate of the cells. All iPSC-RPE cells in this study were at passage 1. DNA sequencing was used to verify genomic mutations in the mutant iPSC-RPE cells.
 
-## Cell lines
+### Cell lines
 
 HEK293 cells were purchased from ATCC. As HEK293 is on the International Cell Line Authentication Committee’s list of commonly misidentified cell lines, the cells used in this study were authenticated by short tandem repeat DNA profiling and tested negative for mycoplasma contamination. The culture medium was DMEM (4.5 g/l glucose, Corning 10013CV) supplemented with 100 μg/ml penicillin-streptomycin and 10% fetal bovine serum.
 
 H1-iCas9 cells were purchased from the Stem Cell Research Facility of Memorial Sloan Kettering Cancer Center. The culture medium was mTeSR1 with supplement (STEMCELL Technologies, 85850).
 
-## Electrophysiology
+### Electrophysiology
 
 An EPC10 patch clamp amplifier (HEKA Electronics) controlled by Patchmaster (HEKA) was utilized to conduct whole-cell recordings 24–72 hr after splitting of RPE cells or transfection of HEK293 cells. Micropipettes were pulled and fashioned from 1.5 mm thin-walled glass with filament (WPI Instruments) and filled with internal solution containing (in mM): 130 CsCl, 10 EGTA, 1 MgCl2, 2 MgATP (added fresh), 10 HEPES (pH 7.4, adjusted by CsOH), and CaCl2 to obtain the desired free Ca2+ concentration (maxchelator.stanford.edu/CaMgATPEGTA-TS.htm). Series resistance was usually 1.5–2.5 MΩ. No electronic series resistance compensation was used. External solution contained (in mM): 140 NaCl, 15 glucose, 5 KCl, 2 CaCl2, 1 MgCl2, and 10 HEPES (pH 7.4, adjusted by NaOH). Solution osmolarity was between 310 and 315. A family of step potentials (−100 to +100 mV from a holding potential of 0 mV) were used to generate I-V curves. Currents were sampled at 25 kHz and filtered at 5 or 10 kHz. Traces were acquired at a repetition interval of 4 s (Yang et al., 2014b). All experiments in this study were carried out at ambient temperature (23 ± 2°C).
 
-## Immunoblotting
+### Immunoblotting
 
 Cell pellets were extracted by the M-PER mammalian protein extraction reagent (Thermo Fisher Scientific, 78501) supplemented with proteinase inhibitors (Roche, 04693159001), and the protein concentration was quantified by a Bio-Rad protein reader. After denaturing at 95°C for 5 min, the samples (20 μg) were run on 4–15% gradient SDS-PAGE gel at room temperature, and wet transferred onto nitrocellulose membrane at 4°C. The membranes were incubated in blocking buffer containing 5% (w/v) non-fat milk for 1 hr at room temperature and subsequently incubated overnight at 4°C in blocking buffer supplemented with primary antibody. Primary antibodies against the following proteins were used: CRALBP (1:500 Abcam, ab15051), RPE65 (1:1,000 Novus Biologicals, NB100-355), β-Actin (1:2,000 Abcam, ab8227), BEST1 (1:500 Novus Biologicals, NB300-164), His (1:1,000 Fisher Scientific, PA1983B), and Myc (1:1,000 Fisher Scientific, PA1981). Fluorophore-conjugated mouse and rabbit secondary antibodies (LI-COR Biosciences, 925–68070 and 925–32213, respectively) were used at a concentration of 1:10,000 and an incubation time of 1 hr at room temperature, followed by infrared imaging.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 HEK293 cells cultured on 6 cm dishes were co-transfected with pBacMam-BEST1(WT)-CFP-Myc and pBacMam-BEST1(mutant or WT)-YFP-His at 1:1 ratio using PolyJet In Vitro DNA Transfection Reagent (SignaGen Laboratories, SL100688) following the manufacturer’s standard manual. Forty-eight hours post transfection, cells were harvested by centrifugation at 1000 × g for 5 min at room temperature. Cell pellets were lysed in pre-cooled lysis buffer (150 mM NaCl, 50 mM Tris, 0.5% IGEPAL CA-630, pH 7.4) supplemented with protease inhibitor cocktails (Roche, 04693159001) for 30 min on ice, and then centrifuged at 13,000 rpm for 12 min at 4°C. The supernatant (300 μg) was collected and mixed with 2 μg Myc monoclonal antibody (Thermo Fisher Scientific, MA1-980). After rotating overnight at 4°C, the mixture was incubated with Dynabeads M-280 sheep anti-mouse IgG (Thermo Fisher Scientific, 11202D) for 5 hr at 4°C. After thorough washing of the beads, bound fractions were eluted in 1× SDS sample buffer (Biorad, 1610747) by heating for 10 min at 75°C. Proteins were then resolved by SDS-PAGE and analyzed by immunoblotting.
 
-## Baculovirus production and transduction
+### Baculovirus production and transduction
 
 BacMam baculovirus bearing BVSi 5–4-GFP, BVSi 3–8-GFP, BVSi-Ctrl-GFP, or wobble BEST1-mcherry were generated in-house as previously described (Goehring et al., 2014). For transduction, the viruses were added to the culture medium of freshly split hPSC-RPE cells.
 
-## Molecular cloning
+### Molecular cloning
 
 Point mutations in BEST1 were made by site-directed mutagenesis PCR with the In-fusion Cloning Kit (Clontech). All constructs were fully sequenced.
 
-## Measuring allelic transcription level
+### Measuring allelic transcription level
 
 Total RNA was extracted from cell pellets with the PureLink RNA Mini Kit (ThermoFisher, 12183020) and subjected to cDNA synthesis using the RevertAid First Strand cDNA synthesis kit (Thermo Fisher K1621). The resultant cDNA was used as the template for PCR amplification of the target BEST1 regions that contain mutations/polymorphisms, and the PCR products were sub-cloned using the TOPO Cloning Kit (Thermo Fisher, 451245) for sequencing.
 
-## Knockout/knock-in in H1-iCas9 cells
+### Knockout/knock-in in H1-iCas9 cells
 
 Doxycycline (2 µg/ml) was supplemented to the culture medium to induce Cas9 expression and maintained in the medium for 3 days. Twenty-four hours post doxycycline addition, the cells were transfected with gRNA (+ssDNA for knock-in) as previously described (Zhu et al., 2014). After recovery to ~50% confluency, the cells were lifted by TrypLE (Thermo Fisher, 12604013) treatment, and seeded to 2 × 10 cm2 fresh plates at 1000 and 2000 cells/plate, respectively. Ten to 12 days later, single colonies became visible and were picked into individual wells on a 96-well plate. After amplification, each single colony was subjected for genotyping by Sanger sequencing.
 
 For the knockout of BEST1, TMEM16A, TMEM16B, and LRRC8A, gRNAs were designed to target the N-terminal portion of the coding genomic sequences, such that all or most of the transmembrane domain is eliminated in the residual translated product (if it exists), rendering it functionally null.
 
-## gRNA design for CRISPR/Cas9-mediated gene editing/silencing
+### gRNA design for CRISPR/Cas9-mediated gene editing/silencing
 
 The gRNAs were designed using online software (http://www.IDTdna.com) and are summarized in Figure 3—source data 1.
 
-## Transfection
+### Transfection
 
 Twenty to 24 hr before transfection, HEK293 cells were lifted by incubation with 0.25% trypsin at room temperature for 5 min and split into new 3.5 cm culture dishes at ~50% confluency. Plasmids (1 μg) bearing the WT BEST1 or desired mutant were transfected using PolyJet transfection reagent (SignaGen SL100688). The transfection mix was removed after 4–8 hr, and cells were rinsed with PBS once and cultured in supplemented DMEM. Twenty-four hours post transfection, cells were lifted again by trypsin treatment and split onto fibronectin-coated glass coverslips for patch clamp (Yang et al., 2013).
 
-## Electrophysiological data and statistical analyses
+### Electrophysiological data and statistical analyses
 
 Patch clamp data were analyzed off-line with Patchmaster (HEKA), Microsoft Excel, and Origin. Statistical analyses were conducted using built-in functions in Origin. For comparisons between two groups, statistically significant differences between means (p<0.05) were determined using Student’s t test. Data are presented as means ± s.e.m (Yang et al., 2007).
 
-## Homology modeling of human BEST1
+### Homology modeling of human BEST1
 
 A homology model for BEST1 was generated using the Swiss-Model server from the chicken BEST1 crystal structure (Kane Dickson et al., 2014). The structural figure was made in PyMOL.
 
-## Human samples
+### Human samples
 
 Skin biopsy samples were obtained from a healthy control donor and patients, and processed and cultured as previously described (Li et al., 2016). For these procedures, all of which were approved by Columbia University Institutional Review Board (IRB) protocol AAAF1849, the donors provided written informed consent. All methods were performed in accordance with the relevant regulations and guidelines. Donor native RPE was isolated from human autopsy eye shell purchased from the Eye-Bank for Sight Restoration (New York, NY, 10005).

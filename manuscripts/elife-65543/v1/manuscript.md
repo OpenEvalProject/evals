@@ -37,9 +37,25 @@ We apply NICEdrug.ch to study drug action mechanisms and identify drugs for repu
 
 ## Results
 
-## NICEdrug.ch discovers 200,000 bioactive molecules one reaction away from known drugs in a human cell
+### NICEdrug.ch discovers 200,000 bioactive molecules one reaction away from known drugs in a human cell
 
 To build the initial NICEdrug.ch database, we gathered over 70,000 existing small molecules presumed suitable for treating human diseases from three source databases: KEGG, ChEMBL, and DrugBank (Figure 1—figure supplement 1, method). We eliminated duplicate molecules, curated available information, computed thermodynamic properties, and applied the Lipinski rules (Lipinski et al., 2001) to keep only the molecules that have drug-like properties in NICEdrug.ch (Figure 1, ‘Materials and methods’). NICEdrug.ch currently includes 48,544 unique small molecules from the source databases.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig1-v1.jpg)
+
+**Figure 1.:** NICEdrug.ch (1) curates available information and calculates the properties of an input compound; (2) identifies the reactive sites of that compound; (3) explores the hypothetical metabolism of the compound in a cell; (4) stores all functional, reactive, bio-, and physico-chemical properties in open-source database; and (5) allows generation of reports to evaluate (5a) reactivity of a small molecule, (5b) drug repurposing, and (5c) druggability of an enzymatic target. See also Figure 1—figure supplement 1; Figure 1—figure supplement 2; Figure 1—figure supplement 3, and Supplementary file 1 .
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Venn diagram showing the number of compounds in NICEdrug.ch and their source database: KEGG, DrugBank, ChEMBLE NTD, and ChEMBLE. (B) Representation on how different kekulé forms affect the identification of reactive sites and prediction of biological activity for an example molecule.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Distribution of reactive sites identified in all molecules of NICEdrug.ch among classes of EC numbers. (B) Specificity of reactive sites identified in drugs based on length and types of participating atoms. (C) Distribution of drug metabolic reactions based on class of EC number. (D) Distribution of Gibbs free energy for the drug metabolic reactions, which are the reactions linked to all molecules of NICEdrug.ch.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Example of NICEdrug score calculation. The NICEdrug score takes into account the structure of a molecule’s reactive site and its seven-atom-away neighborhood for similarity evaluation, analogous to BridgIT.
 
 To evaluate the reactivity of the 48,544 drugs and drug candidates, we searched for all possible reactive sites on each molecule with BNICE.ch (Hatzimanikatis et al., 2005; Figure 1, ‘Materials and methods’). All of the 48,544 molecules contain at least one reactive site and hence might be reactive in a cell. In total, we identified more than 5 million potential reactive sites (183 k unique) on the 48,544 molecules and matched them to a corresponding enzyme by assigning them to an Enzyme Commission (EC) number. All of these enzymes belong to the human metabolic network (Supplementary file 1, ‘Materials and methods’). Interestingly, 10.4% of identified reactive sites correspond to the p450 class of enzymes, which are responsible for breaking down compounds in the human body by introducing reactive groups on those compounds, also known as phase I of drug metabolism (Figure 1—figure supplement 2A). The sites that were identified varied greatly from simple and small (i.e., comprising a minimum number of one atom) to more complex sites that covered a large part of the molecule. The biggest reactive site includes 30 atoms (Figure 1—figure supplement 2B).
 
@@ -49,7 +65,7 @@ To use NICEdrug.ch to identify drug-drug or drug–metabolite pairs that have sh
 
 We propose the usage of NICEdrug.ch to generate reports that define the hypothetical reactivity of a molecule, the molecule’s reactive sites as identified by target enzymes, and the NICEdrug score between drug–drug and drug–metabolite pairs. The NICEdrug.ch reports can be used for three main applications: (1) to identify the metabolism of small molecules; (2) to suggest drug repurposing; and (3) to evaluate the druggability of an enzyme in a desired cell or organism (Figure 1), as we show in the next sections. Currently, NICEdrug.ch includes metabolic information for human cells, a malaria parasite, and Escherichia coli, and it is easily extendible to other organisms in the future.
 
-## Validation of NICEdrug.ch against biochemical assays
+### Validation of NICEdrug.ch against biochemical assays
 
 To prove the potential of NICEdrug.ch to predict the druggability (through competitive inhibition) of an enzyme by a small molecule, we compare a set of 70 k NICEdrug.ch drug–enzyme pair predictions with available biochemical assays and high-throughput compound screenings (Supplementary file 2, ‘Materials and methods’). The set of 70 k drug–enzyme pairs involves all available active and inactive inhibition data for 2570 small molecules and 198 enzymes in the PubChem Bioassays database (Wang et al., 2012). A comparison between the drugs’ predicted and measured bioactivity against enzymes results in a predictive accuracy of NICEdrug.ch of 0.73. Interestingly, we identify two clusters of drugs: a set of 1269 small molecules for which the NICEdrug.ch predictions are 100% accurate and a set of 1301 drugs with 65% accuracy. We investigated the reasons for the mismatches and identify five explanations (Supplementary file 2, ‘Materials and methods’).
 
@@ -57,19 +73,19 @@ We have also compared the scope and application of NICEdrug.ch and other availab
 
 We also quantitatively compared the accuracy of NICEdrug.ch predictions over similar methods in the field using golden standard datasets. These experimental datasets describe drugs and metabolites that share reactivity, drug toxicities, and drug targets. Hence, they serve to evaluate the NICEdrug.ch reactivity, druggability, and repurposing reports.
 
-## Evaluation of NICEdrug.ch reactivity report
+#### Evaluation of NICEdrug.ch reactivity report
 
 To evaluate the NICEdrug.ch reactivity report, we first used an experimental set including 29 small molecules and their 55 unique metabolic products (labeled in public databases) (Flynn et al., 2020). We compared the predictive accuracy of NICEdrug.ch with other tools predicting reactivity, i.e., XenoNet (Flynn et al., 2020), GLORY (de Bruyn Kops et al., 2021; de Bruyn Kops et al., 2019), SyGMa (Ridder and Wagener, 2008), and BioTransformer (Djoumbou-Feunang et al., 2019). NICEdrug.ch predicted 53 of the 55 metabolic products from the small molecule dataset, rendering a sensitivity score of 0.96. The two metabolites missing are venetoclax and SCHEMBL18637099, which are produced through at least one reaction with an unknown reaction mechanism and hence are out of the scope of NICEdrug.ch. The tools XenoNet, GLORY, SyGMa, and BioTransformer showed a sensitivity score of 0.89, 0.83, 0.74, and 0.72 on the same dataset. To this end, not only NICEdrug.ch outperforms previous tools, but it also provides information on the metabolic pathways and reaction mechanisms involved in the production of each metabolic product (see ‘Materials and methods’, Supplementary file 2). We next evaluated the NICEdrug.ch reactivity with a second dataset including 16 pairs of drugs and metabolite that share reactivity (Kirchmair et al., 2015) (‘Materials and methods’, Supplementary file 2). NICEdrug.ch correctly identified the pathways metabolizing 15 of the drugs and the associated metabolites sharing reactivity (Supplementary file 2).
 
-## Evaluation of NICEdrug.ch toxicity report
+#### Evaluation of NICEdrug.ch toxicity report
 
 As done before (Svensson et al., 2017; Webel et al., 2020; Yin et al., 2019), we used cytotoxicity bioassay records from PubChem (Svensson et al., 2017) involving 1777 drugs to evaluate the NICEdrug.ch toxicity report. Other available tools predict drug toxicity using machine learning. The accuracy of the machine-learning-based methods ranged from 0.67 to 0.78, as previously reported (Svensson et al., 2017; Yin et al., 2019). For the same dataset, NICEdrug.ch shows an accuracy of 0.94, with a precision, recall, and F1 of 0.94, 0.92, and 0.96, respectively (‘Materials and methods’, Supplementary file 2).
 
-## Evaluation of NICEdrug.ch druggability report
+#### Evaluation of NICEdrug.ch druggability report
 
 We compared the NICEdrug.ch druggability report with the widely used ‘network-based inference (NBI)’ tool for drug–target interaction (DTI) prediction. As a basis for this comparison, we used the high-quality drug–enzyme bioassay data from PubChem (Kim et al., 2021; Wang et al., 2012), which includes 651 records reporting the inhibition of 78 enzymes by 297 molecules. The area under the curve (AUC), a commonly used criterion for assessing computational target prediction methods (Mayr et al., 2018), quantified a remarkable improvement in the overall performance of NICEdrug.ch (0.85) over the NBI tool (0.61). Further analysis found that the optimal druggability scores is 0.46, with precision, recall, and F1 values of 0.88, 0.89, and 0.89, respectively (‘Materials and methods’, Supplementary file 2).
 
-## NICEdrug.ch suggests inhibitory mechanisms of the anticancer drug 5-FU and avenues to alleviate its toxicity
+### NICEdrug.ch suggests inhibitory mechanisms of the anticancer drug 5-FU and avenues to alleviate its toxicity
 
 As a case study, we used NICEdrug.ch to investigate the mode of action and metabolic fate of one of the most commonly used drugs to treat cancer, 5-fluorouracil (5-FU), by exploring its reactivity and the downstream products or intermediates that are formed during the cascade of biochemical transformations. 5-FU interferes with DNA synthesis as an anti-metabolite (Longley et al., 2003), meaning that its various intermediates like 5-fluorodeoxyuridine monophosphate (FdUMP) are similar enough to naturally occurring substrates and they can act as competitive inhibitors in the cell.
 
@@ -83,7 +99,7 @@ We investigated these 407 compounds in more detail, looking first at the set of 
 
 NICEdrug.ch also identified a few potential metabolites that have not been previously studied for their effects. These metabolites share a reactive site with native human metabolites and differ in the reactive site neighborhood, and we refer to them as para-metabolites (Sartorelli and Johns, 2013). 6-Methyl-2'-deoxyadenosine, purine-deoxyribonucleoside, and 2′-deoxyisoguanosine structurally resemble the reactive site neighborhood of deoxyadenosine, with respective NICEdrug scores of 1, 1, and 0.91. Similarly, 2-aminoadenosine, 2-chloroadenosine, and 2-methylaminoadenosine (four steps from 5-FU) have the same reactive site neighborhood as adenosine, with NICEdrug scores of 1, 1, and 0.96, respectively. Adenosine and deoxyadenosine are both native substrates of the adenosine kinase (EC: 2.7.1.20) and 5′-nucleotidase (EC: 3.1.3.5) (Figure 2). Therefore, we suggest that the 5-FU derivatives 2-aminoadenosine and 2-chloroadenosine are competitive inhibitors for the two enzymes adenosine kinase and 5′-nucleotidase. With these new insights from NICEdrug.ch, we hypothesize that co-administering adenosine or deoxyadenosine and uridine (Figure 2) with 5-FU might be required to reduce its toxic effects and hopefully alleviate the side effects of the 5-FU cancer treatment.
 
-## Metabolic degradation of 5-FU leads to compounds with Fluor in their reactive site that are less reactive and more toxic than other intermediates
+### Metabolic degradation of 5-FU leads to compounds with Fluor in their reactive site that are less reactive and more toxic than other intermediates
 
 In the previous case study, we showed inhibitors that contain the identical active site to the native enzyme. However, a slightly different reactive site might still be able to bind to an enzyme and compete with a native substrate, also defined as anti-metabolite (Matsuda et al., 2014). We explored this scenario by defining relaxed constraints in two steps. We first identified all atoms around a reactive site to compare the binding characteristics between the native molecule and putative inhibitor. Next, we compared the reactive site of the native molecule and putative inhibitor and scored the latter based on similarity (‘Materials and methods’). Following these two steps, we assessed the similarity between intermediates in the 5-FU metabolic neighborhood and human metabolites. Among all 407 compounds in the 5-FU metabolism (Supplementary file 3), we found eight that show a close similarity to human metabolites (NICEdrug score above 0.9, Figure 3) that might be competitive inhibitors or anti-metabolites. Inside the reactive site, the original hydrogen atom is bioisosterically replaced by fluorine. F–C bonds are extremely stable and therefore block the active site by forming a stable complex with the enzyme. The inhibitory effect of the intermediates tegafur, 5-fluorodeoxyuridine, and FdUMP (one to two reaction steps away) has been confirmed in studies by Kobayakawa and Kojima, 2011 and Bielas et al., 2009. In addition, NICEdrug.ch also predicts that 5flurim, 5-fluorodeoxyuridine triphosphate, 5-fluorodeoxyuridine triphosphate, 5-fluorouridine diphosphate, and 5-fluorouridine triphosphate, some of which occur further downstream in the 5-FU metabolism, also act as anti-metabolites (Figure 3). Based on the insights from NICEdrug.ch, we suggest the inhibitory and side effect of 5-FU treatment might be more complex than previously thought. 5-FU downstream products are structurally close to human metabolites and might form stable complexes with native enzymes. This knowledge could serve to further refine the pharmacokinetic and pharmacodynamic models of 5-FU and ultimately the dosage administered during treatment.
 
@@ -91,7 +107,7 @@ In the previous case study, we showed inhibitors that contain the identical acti
 
 **Figure 3.:** Eight anti-metabolites of dUMP in the 5-FU metabolic neighborhood (represented as defined in ‘Materials and methods’). Note that the reactive site of the anti-metabolites is different than the one of the native human metabolite, but the neighborhood is highly similar, which determines the high NICEdrug score (value in parenthesis). We show the inhibited human enzyme (dTMP synthase) and reaction, and its native product. See also Supplementary file 3
 
-## NICEdrug.ch identifies toxic alerts in the anticancer drug 5-FU and its products from metabolic degradation
+#### NICEdrug.ch identifies toxic alerts in the anticancer drug 5-FU and its products from metabolic degradation
 
 The concept of drug toxicity refers not to overdoses but instead to the toxic effects at medical doses (Guengerich, 2011), which often occur due to the degradation products generated through drug metabolism. Extensive efforts have been expended to identify toxic molecules or, more generally, to extract the substructures that are responsible for toxicity (called structural alerts). The Liver Toxicity Knowledge Base (LTKB) and the super toxic database include 1036 and about 60 k toxic molecules, respectively (Schmidt et al., 2009; Thakkar et al., 2018). ToxAlert provides around 1200 alerts related to different forms of toxicity (Sushko et al., 2012). However, the number of molecules that are analyzed and labeled as toxic in databases is disproportionally low compared to the space of compounds. Additionally, structural alerts are indicated for many compounds, and current alerts might identify redundant and over-specific substructures, which questions their reliability (Yang et al., 2017).
 
@@ -103,17 +119,25 @@ As an example, we herein tested the ability of NICEdrug.ch to identify the toxic
 
 **Figure 4.:** Example of six suggested toxic molecules in the 5-FU metabolic neighborhood (represented as defined in ‘Materials and methods’). We show toxic compounds from the supertoxic and hepatotoxic databases that lead to the highest NICEdrug toxicity score (number under toxic intermediate name, ‘Materials and methods’). We highlight functional groups linked to five NICEdrug toxic alerts (legend bottom right). See also Supplementary file 3.
 
-## The nicedrug.ch reactive site-centric fingerprint accurately clusters statins of type I and II and guides drug repurposing
+#### The nicedrug.ch reactive site-centric fingerprint accurately clusters statins of type I and II and guides drug repurposing
 
 Because potential side effects of a drug are documented when the drug passes the approval process, repurposing approved drugs for other diseases can reduce the medical risks and development expenses (Himmelstein et al., 2017). For instance, the antitussive noscapine has been repurposed to treat some types of cancers (Mahmoudian and Rahimi-Moghaddam, 2009; Rajesh, 2011). Because NICEdrug.ch can search for functional (i.e., reactivity), structural (i.e., size), and physicochemical (i.e., solubility) similarities between molecules while accounting for human biochemistry, we wanted to determine whether NICEdrug.ch could therefore suggest drug repurposing strategies.
 
 As a case study, we investigated the possibility of drug repurposing to replace statins, which are a class of drugs often prescribed to lower blood cholesterol levels and to treat cardiovascular disease. Indeed, data from the National Health and Nutrition Examination Survey indicate that nearly half of adults 75 years and older in the United States use prescription cholesterol-lowering statins (Bibbins-Domingo et al., 2016). Since some patients do not tolerate these drugs and many still do not reach a safe blood cholesterol level (Kong et al., 2004), there is a need for alternatives. Being competitive inhibitors of the cholesterol biosynthesis enzyme 3-hydroxy-3-methyl-glutaryl-coenzyme A reductase (HMG-CoA reductase) (Jiang et al., 2018; Mulhaupt et al., 2003), all statins share the same reactive site. BNICE.ch labeled this reactive site, in a linear or circular form, as corresponding to an EC number of 4.2.1.- (Istvan and Deisenhofer, 2001). NICEdrug.ch includes 254 molecules with the same reactive site that are recognized by enzymes of EC class 4.2.1.-, ten of which are known statins. We used the NICEdrug score to cluster the 254 molecules into different classes (Supplementary file 4, Figure 5). Two of the classes correspond to all currently known statins, which are classified based on their activity into types 1 and 2, wherein statins of type two are less active and their reactive site is more stable compared to type 1. This property is well distinguished in the clustering based on the NICEdrug score (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig5-v1.jpg)
+
+**Figure 5.:** (A) Pairwise NICEdrug score between all molecules with statin reactive sites (heat map) and number of metabolic reactions in which they participate (right). We highlight clusters of statins of type 1 (cluster a) and type 2 (cluster b), and clusters of most similar molecules to type one statins (cluster c) and type two statins (cluster d). Within the metabolic reactions, we indicate the total number of reactions (dark color) and the number of reactions that involve the statin reactive site (light color). (B) Examples of statins and Mevastatin analogues of type one from cluster c (blue) and of type two from cluster d (gold). We left the known statins unmarked, which are appropriately clustered together based on the NICEdrug score, and we mark with * new molecules that cluster with statins and that NICEdrug.ch suggests could be repurposed to act as statins. Reactive sites in type one statins and type two statins are colored in blue and orange, respectively. The reactive site neighborhood as considered in the NICEdrug score is also marked. See also; Figure 5—figure supplement 1 , and Supplementary file 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Hierarchical clustering based on the NICEdrug score of all molecules in NICEdrug.ch that contain statin reactive site (left). We report the molecules’ molecular weight (middle left) and number of drug metabolic reactions or reactions in which these drugs participate (middle). The molecular weight seems to be inversely correlated with the number of drug metabolic reactions. We highlight six clusters of drugs (a–f, middle right) and an example representative molecule (left). Interestingly, these clusters also group molecules based on bio- or physico-chemical properties: ‘cluster a’ involves a range of silicon-containing chemical molecules, ‘cluster b’ are drug-like molecules of type two statins, ‘cluster c’ includes chemical molecules with a long chain connected to the reactive site, ‘cluster d’ involves molecules with 1-indanone fused with a tetrahydropyran ring, ‘cluster e’ comprises drug-like molecules of type one statins, and ‘cluster f’ are 16-membered ring macrolide antibiotics.
+
 In addition to properly classifying the 10 known statins (Figure 5B,C, molecules non-marked), we identified seven other NICEdrug.ch molecules that clustered tightly with these statins (Figure 5B,C, molecules marked with *). These new molecules share the same reactive site and physicochemical properties, and they have the highest similarity with known statins in atoms neighboring the reactive site. In a previous study by Endo and Hasumi, 1993, these seven NICEdrug.ch molecules were introduced as Mevastatin analogues for inhibiting cholesterol biosynthesis. Therefore, they were already suggested as possible candidates for treating high blood cholesterol and could be a good option for repurposing. Furthermore, we found eight known drugs not from the statin family among the 254 scanned molecules (Supplementary file 4). One of them, acetyl-l-carnitine (Figure 5C, molecule marked with **), is mainly used for treating neuropathic pain (Li et al., 2015), though Tanaka et al., 2004 have already confirmed that it also has a cholesterol-reducing effect.
 
 Overall, NICEdrug.ch was able to characterize all known enzymatic reactions that metabolize statins, including proposed alternatives and new hypothetical reactions that could be involved in their metabolism within human cells (Figure 5A, Figure 5—figure supplement 1). The identification of seven drugs that clustered around the statins and were already designed as alternatives to statins confirms the power of NICEdrug.ch and the NICEdrug score to search large databases for similar compounds in structure and function. Furthermore, the discovery of the eight compounds unrelated to known statins offer multiple candidate drugs for repurposing along with a map of their metabolized intermediates for the treatment of high cholesterol, though further preclinical experiments would be required to verify their clinical benefits.
 
-## NICEdrug.ch suggests over 500 drugs and drug candidates to target liver-stage malaria and simultaneously minimize side effects in human cells, with shikimate 3-phosphate as a top candidate
+### NICEdrug.ch suggests over 500 drugs and drug candidates to target liver-stage malaria and simultaneously minimize side effects in human cells, with shikimate 3-phosphate as a top candidate
 
 Efficiently targeting malaria remains a global health challenge. Malaria parasites (Plasmodium) are developing resistance to all known drugs, and antimalarials cause many side effects (World Health Organization, 2018). We applied NICEdrug.ch to identify drug candidates that target liver-stage developing malaria parasites and lessen or avoid side effects in human cells.
 
@@ -131,9 +155,21 @@ Among our set of 64 optimal antimalarial candidates, a set of 14 drugs targeting
 
 To this end, NICEdrug.ch identified shikimate 3-phosphate as a top candidate antimalarial drug. We propose that shikimate 3-phosphate inhibits the essential Plasmodium shikimate biosynthesis pathway without side effects in the host cell (Figure 6, Supplementary file 6). Excitingly, shikimate 3-phosphate has been used to treat E. coli and Streptococcus infections without appreciable toxicity for patients (Díaz-Quiroz et al., 2018). Furthermore, recent studies have shown that inhibiting the shikimate pathway using 7-deoxy-sedoheptulose is an attractive antimicrobial and herbicidal strategy with no cytotoxic effects on mammalian cells (Brilisauer et al., 2019). Experimental studies should now validate the capability of shikimate 3-phosphate to efficiently and safely target liver malaria, and could further test other NICEdrug.ch antimalarial candidates (Supplementary file 6).
 
-## NICEdrug.ch identifies over 1300 molecules to fight COVID-19, with N-acetylcysteine as a top candidate
+### NICEdrug.ch identifies over 1300 molecules to fight COVID-19, with N-acetylcysteine as a top candidate
 
 SARS-CoV-2 is responsible for the currently on-going COVID-19 pandemic and the death of over three million people (as of today, 11 May 2021 [Dong et al., 2020]), and there is currently no confirmed treatment for it. Attacking the host factors that allow replication and spread of the virus is an attractive strategy to treat viral infections like COVID-19. A recent study has identified 332 interactions between SARS-CoV-2 proteins and human proteins, which involve 332 hijacked human proteins or host factors (Gordon et al., 2020). Here, we first used NICEdrug.ch to identify inhibitors of enzymatic host factors of SARS-CoV-2. Targeting such human enzymes prevents interactions between human and viral proteins (PPI) (‘Materials and methods’, Figure 7A). Of the 332 hijacked human proteins, we identified 97 enzymes (‘Materials and methods’, Supplementary file 7) and evaluated their druggability by inhibitors among the 250,000 small molecules in NICEdrug.ch and 80,000 molecules in food (‘Materials and methods’, Figure 7A). NICEdrug.ch suggests 22 hijacked human enzymes can be drug targets and proposed 1301 potential competitive inhibitors from the NICEdrug.ch database. Of 1301 potential inhibitors, 465 are known drugs, 712 are active metabolic products of 1419 one-step-away prodrugs, and 402 are molecules in fooDB (Supplementary file 7). We found among the top anti SARS-CoV-2 drug candidates the known reverse transcriptase inhibitor didanosine (Figure 7B, Supplementary file 7), which other in silico screenings have also suggested as a potential treatment for COVID-19 (Alakwaa, 2020; Cava et al., 2020). Among others, NICEdrug.ch also identified: (1) actodigin, which belongs to the family of cardiotonic molecules proven to be effective against MERS-CoV but without mechanistic knowledge (Ko et al., 2020), (2) three molecules in ginger (6-paradol, 10-gingerol, and 6-shogaol) inhibiting catechol methyltransferase, and (3) brivudine, a DNA polymerase inhibitor that has been used to treat herpes zoster (Wassilew, 2005) and prevent MERS-CoV infection (Park et al., 2019), and NICEdrug.ch suggests it for repurposing (Figure 7—figure supplement 1, Supplementary file 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schema of NICEdrug strategy to target COVID-19, wherein a drug (top-left) or molecules in food (top-right) efficiently inhibit a human enzyme hijacked by SARS-CoV-2. Inhibition of this host factor reduces or abolishes protein–protein interactions (PPI) with a viral protein and prevents SARS-CoV-2 proliferation. (B) Inhibition of the reverse transcriptase (EC: 1.1.1.205 or P12268) and the PPI with SARS-CoV-nsp14 by didanosine based on NICEdrug.ch. (C) Inhibition of the HDAC2 (EC: 3.5.1.98) and the PPI with SARS-CoV-nsp5 by molecules containing acetyl moiety (like melatonin, N-acetylcysteine, and N8-acetylspermidine), and molecules containing carboxylate moiety (like valproate, stains, and butyrate) based on NICEdrug.ch. See also Figure 7—figure supplement 1; Figure 7—figure supplement 2, Supplementary file 7; Supplementary file 8.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Inhibition of the galactosidase (EC: 3.2.1.22 or P06280) and the PPI with SARS-CoV-2 nsp14 by actodigin based on NICEdrug.ch. (B) Inhibition of the catechol methyltransferase (EC: 2.1.1.6 or P21964) and the PPI with SARS-CoV-2 nsp7 by 6-paradol, 10-gingerol, and 6-shogaol, which are molecules in ginger, based on NICEdrug.ch. (C) Inhibition of the DNA polymerase (EC: 2.4.1.-) and the PPI with SARS-CoV-2 nsp8 by brivudine based on NICEdrug.ch.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Inhibition of the ACE2 (EC: 3.4.17.23), a putative host factor of SARS-CoV-2, by the known inhibitor captopril, and NICEdrug candidates D-leucyl-N-(4-carbamimidoylbenzyl)-l-prolinamide and indole-3-acetyl-proline.
 
 Drugs like remdesivir, EIDD-2801, favipiravir, and inhibitors of angiotensin converting enzyme 2 (ACE2) have been used to treat COVID-19 (Jeon et al., 2020), and act through a presumably effective inhibitory mechanism (Figure 7—figure supplement 2). For instance, the three drugs remdesivir, EIDD-2801, and favipiravir are believed to inhibit the DNA-directed RNA polymerase (EC: 2.7.7.6). Here, we used the NICEdrug.ch reactive site-centric fingerprint to search for alternative small molecules in NICEdrug.ch and fooDB that could be repurposed to target ACE2 and DNA-directed RNA polymerase. NICEdrug.ch identified a total of 215 possible competitive inhibitors of ACE2. Among those is captopril, a known ACE2 inhibitor (Kim et al., 2003), and D-leucyl-N-(4-carbamimidoylbenzyl)-l-prolinamide, a NICEdrug.ch suggestion for drug repurposing to treat COVID-19. We also found 39 food-based molecules with indole-3-acetyl-proline (a molecule in soybean) as top ACE2 inhibitor candidate (Figure 7—figure supplement 2, Supplementary file 8). To target the same enzyme as remdesivir, EIDD-2801, and favipiravir, NICEdrug.ch identified 1115 inhibitors of the DNA-directed RNA polymerase, like the drug vidarabine, which shows broad spectrum activity against DNA viruses in cell cultures and significant antiviral activity against infections like the herpes viruses, the vaccinia virus, and varicella zoster virus (Suzuki et al., 2006). We further found 556 molecules in food that might inhibit DNA-directed RNA polymerase, like trans-zeatin riboside triphosphate (FDB031217) (Supplementary file 8).
 
@@ -161,31 +197,83 @@ We suggest the generation of drug metabolic reports to understand the reactivity
 
 ## Materials and methods
 
-## Representation of metabolic neighborhood in figures of this manuscript
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenBabel 2.4.1</td>
+      <td>doi:10.1186/1758-2946-3-33</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BridgIT</td>
+      <td>doi:10.1073/pnas.1818877116</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ATLAS of biochemistry</td>
+      <td>doi:10.1021/acssynbio.6b00054; doi:10.1021/acssynbio.0c00052</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MORPHEUS</td>
+      <td>https://clue.io/morpheus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NICEdrug.ch (curated bioactive molecules and analysis of drug metabolism)</td>
+      <td>This paper; http://nicedrug.ch/</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Representation of metabolic neighborhood in figures of this manuscript
 
 We represent the metabolic neighborhood of a drug with reactions or steps away (arrows), where each step away (circle connected to arrow) involves a set of compounds. We extract compounds at each step that present a high NICEdrug score (value under metabolite name) with the native substrate of a reaction in the human cell. Reactive sites common to neighbor metabolites and native human metabolites are shaded with colors matching the color of the enzymes (packmen) that are inhibited. The neighborhood (seven atoms away, as considered in NICEdrug score) of the reactive sites is circled in the metabolites and native human metabolites with the same color as the reactive sites and enzymes. Compounds marked with * are confirmed inhibitors and references are provided in the main text.
 
-## Representation of enzymatic inhibition in figures of this manuscript
+### Representation of enzymatic inhibition in figures of this manuscript
 
 We represent the enzymes and catalyzed reactions inhibited by NICEdrug candidates. Highlighted are the reactive site and neighborhood (as considered in the NICEdrug score) in candidate drugs and metabolites, which are native substrates of the human enzymes. The SARS-CoV-2 proteins interaction with the enzyme is presumed to be diminished or abolished upon inhibition of the human enzyme. Compounds marked with * are confirmed inhibitors and references are provided in the main text.
 
-## Curation of input molecules used in the construction of NICEdrug.ch
+### Curation of input molecules used in the construction of NICEdrug.ch
 
 We constructed the NICEdrug.ch database to gather small molecules suitable for treatment of human diseases. We collected the SMILES structure, synonyms, and any available bio- and physico-chemical property included from three source databases: KEGG, ChEMBL, and DrugBank, which added up to 70,976 molecules by January 2018 (Figure 1—figure supplement 1, A). Only molecules that were fully structured were imported to our database. We further curated the imported molecules by removing duplicate structures and merging annotations from different databases into one molecule entry in the database. For removing duplicate structures we used canonical SMIELS (Weininger, 1988) generated by openbabel (O'Boyle et al., 2011) version 2.4.0. This unification method is based on atoms and their connectivity in a molecule in terms of a molecular graph that is captured by the canonical SMILES. Therefore, different resonance forms, stereoisomers, as well as dissociated and charged states of the same compound are mapped to one entry in database. Furthermore, we filtered all molecules collected from the ChEMBL database based on Lipinski rules in an attempt to discard chemicals less likely to show drug properties. The Lipinski rules are as follows (Lipinski et al., 2001): (1) the molecular weight should be less than 500 Dalton, (2) the number of hydrogen bond donors should be less than five, (3) the number of hydrogen bond acceptors should be less than 10, and (4) an octanol-water partition coefficient (log P) should be less than five. According to Lipinski rules, an active oral drug does not violate more than one of the above criteria. We calculated criteria one, two. and three based on the structural information from SMILES of molecules. To assess criterion four, we relied on reported data in the source database. We kept in the NICEdrug.ch database all those compounds for which the partition coefficient was not available.
 
 We performed a separate analysis to account for non-unique graph representations of aromatic rings, also called kekulé structures. The existence of aromatic rings and the fact that bond-electrons are shared within the ring make several single-double bond assignments possible, which results in multiple kekulé representations for a single molecule (Figure 1—figure supplement 1, B). We included all such kekulé structures to account for alternative atom-bond connectivity and associated reactivity. We call ‘effective forms’ to the kekulé representations that show different reactive sites than their canonical structures. For example, there can be two effective forms plus the canonical structure (Figure 1—figure supplement 1, B). In total, we found 42,092 effective forms for 29,994 aromatic compounds in NICEdrug.ch database and we kept them for further analysis.
 
-We also computed the thermodynamic properties of all drugs in NICEdruch.ch. Specifically, we computed the Gibbs free energy of formation (∆fG'°) using the group contribution method of Mavrovouniotis (Jankowski et al., 2008).
+We also computed the thermodynamic properties of all drugs in NICEdruch.ch. Specifically, we computed the Gibbs free energy of formation ($\Delta_{f}G'^{°}$) using the group contribution method of Mavrovouniotis (Jankowski et al., 2008).
 
 The NICEdrug.ch database includes a total number of 48,544 unique and curated small molecules (Figure 1—figure supplement 1A).
 
-## Identification of reactive sites in drugs and drug candidates
+### Identification of reactive sites in drugs and drug candidates
 
 The 3D structures of enzyme pockets are complex and mostly unknown. Therefore, evaluating and comparing docking of two small molecules in the pocket of a specific target is impossible most of the times. Using BNICE.ch, we focused on the complementary structure of active sites on substrates, also called reactive site. To recognize the potential reactive sites on molecules, we scanned molecules using expert-curated generalized reaction rules of BNCIE.ch (Hadadi et al., 2016), which mimic the identification of substrates by the enzyme pocket and account for the promiscuous activity of enzymes. Theses reaction rules incorporate the information of biochemical reactions and have third-level Enzyme Commission (EC) identifiers. Each BNICE.ch reaction rule accounts for three levels of information: (1) atoms in reactive sites of compounds, (2) connectivity and configuration of atom bonds in the reactive site, and (3) mechanism of bond breakage and formation during the reaction. As of May 2020, BNICE.ch contains 450 bidirectional generalized reaction rules that can reconstruct 8118 KEGG reactions (Hadadi et al., 2016). Here, we include all BNICE.ch rules to identify all possible reactive sites on a given molecule in two steps. First, a BNICE.ch rule identifies all atoms in a compound that belong to the rule’s reactive site. Second, the rule evaluates the connectivity of the atoms previously identified. The candidate compounds for which a BNICE.ch rule identified a reactive site were validated as metabolically reactive and considered for analysis in NICEdrug.ch.
 
 It is important to note that thanks to the generalized reaction rules, which abstract the knowledge of thousands of biochemical reactions, BNICE.ch is able to reconstruct known biotransformations and also propose novel metabolic reactions. This was demonstrated in the reconstruction of the ATLAS of Biochemistry (Hadadi et al., 2016), which involves up to 130,000 reactions between known compounds.
 
-## Analysis of drug metabolism in human cells
+### Analysis of drug metabolism in human cells
 
 To mimic biochemistry of human cells and simulate human drug metabolism, we collected all available information (metabolites and metabolic activities or EC numbers of enzymes) on human metabolism from three available databases: the human metabolic models Recon3D (Brunk et al., 2018) and HMR (Pornputtapong et al., 2015), and the Reactome database (Croft et al., 2011). These three databases include a total of 2266 unique human metabolites and 2066 unique EC numbers of enzymes (Supplementary file 1).
 
@@ -197,13 +285,13 @@ In NICEdrug.ch, there exist 197,246 compounds in generation 1 (one step away) fr
 
 The 197,246 products that are onestep away of all NICEdrug.ch molecules are part of a hypothetical biochemical neighborhood of 630,449 drug metabolic reactions. Of all drug metabolic reactions, 5306 reactions are cataloged in biological databases, and the remaining 625,143 reactions are novel. A majority of the reactions involved oxidoreductases (42.54%), broken down into 27.45% of lyases, 7.15% of hydrolases, 6.28% of transferases, 1% of isomerases, and 15.58% of ligases. Interestingly, based on the previously identified reactive sites, of the 265,935 (42.54% of 625,143) oxidoreductase reactions, 49.92% are catalyzed by the p450 family of enzymes, which are known to be responsible for the metabolism of drug (Figure 1—figure supplement 2C).
 
-## Using NICEdrug.ch database for analysis of the metabolic neighborhood of a drug candidate
+### Using NICEdrug.ch database for analysis of the metabolic neighborhood of a drug candidate
 
 In NICEdrug.ch webserver, users can look up for a drug using the drugs’ name and other identifiers like ChEMBL, DrugBank, and KEGG. NICEdrug.ch will report a unique identifier for the compound that will be input for upcoming analysis modules. The reactivity module allows to study the metabolic network around an input molecule. The input to this module is as follows: (1) the unique identifier of the drug of interest and (2) a maximum number of reactions or steps away that shall separate the input drug to the furthest compound in the metabolic neighborhood.
 
 The output of this analysis is a report in the form of a csv file that includes all compounds and metabolic reactions in the metabolic neighborhood of the input drug. One can also export the neighborhood in the form of a visual graph, in which nodes are molecules and edges are reactions.
 
-## Definition of the NICEdrug score
+### Definition of the NICEdrug score
 
 Based on the theory of lock and key, two metabolites that can be catalyzed by the same enzyme may have similar reactive sites and also neighboring atoms. In order to quantify the similarity inside and around reactive sites of two molecules, we developed a metric called NICEdrug score (Figure 1—figure supplement 3), which is inspired on BridgIT (Hadadi et al., 2019). BridgIT assesses the similarity of two reactions, considering the reactive site of the participating substrates and their surrounding structure until the seventh atom out of the reactive site.
 
@@ -217,7 +305,7 @@ In the case study of 5-FU, in order to predict competitive inhibition, we analyz
 
 To predict irreversible Inhibitors in metabolism of 5-FU, we kept only molecules with a similarity score greater than 0.9 to metabolites (β>0.9), to preserve a high similarity in the neighborhood of the reactive sites. Then, we checked which ones contained reactive sites that differed only in the replacement of bioisosteric groups (α~1).
 
-## How to interpret the NICEdrug score
+### How to interpret the NICEdrug score
 
 The NICEdrug score defines the similarity of two reactive site-centric fingerprints. If two molecules show a high NICEdrug score, there is a high probability that they will both fit inside the enzymatic pocket of the same protein. In a previous study, we introduced the reaction reactive site-centric fingerprint to compare all ligands of a reaction simultaneously, also called BridgIT fingerprint (Hadadi et al., 2019). We compared reactions based on their BridgIT fingerprint and their catalyzing enzymes based the homology of the protein sequence.
 
@@ -227,7 +315,7 @@ This analysis guided the definition of the NICEdrug score based on the reactive 
 
 Moreover, the threshold on the NICEdrug score is consistent with the results of large-scale druggability analysis (‘Materials and methods’, evaluation of the NICEdrug.ch druggability report), where we identified an optimal similarity threshold of 0.46 with values of accuracy, precision, recall, and F1 of 0.84, 0.88, 0.89, and 0.89, respectively.
 
-## Classification of drugs based on the NICEdrug score
+### Classification of drugs based on the NICEdrug score
 
 Classification of compounds with similar structure is normally used to assign unknown properties to new compounds. For instance, one can infer ligand-protein binding for a drug when its action mechanism or the structure of the target proteins are not known. In this study, we have demonstrated four strategies to classify drugs (Figure 1), which are from less to more stringent: classifying (1) molecules that participate in reactions with the same EC up to the third level, (2) molecules that in addition share a BNICE.ch reaction rule, (3) molecules that in addition to both previous points share reactive site, and (4) molecules that show high similarity of reactive site and neighborhood based on the NICEdrug score.
 
@@ -235,25 +323,25 @@ The EC number guarantees that molecules are catalyzed with similar overall react
 
 In NICEdrug.ch database, there exist 95,342 classes that comprise all drugs and human compounds sharing EC, BNICE.ch rule, and reactive site (classification based on our strategy 3). We computed the NICEdrug score between all pairs of molecules in a class and this information is available in NICEdrug.ch.
 
-## Identification of drugs acting as para-metabolites based on NICEdrug score
+### Identification of drugs acting as para-metabolites based on NICEdrug score
 
 Small molecules that share reactive site and are structurally similar to native human metabolites enter and bind the pocket of native enzymes and competitively inhibiting catalysis acting as para-metabolites (Ariens, 2012). In this study, we define para-metabolite as any drug or any of its metabolic neighbors that (1) shares reactive site with native metabolites (α=1) and (2) preserves a high NICEdrug score with respect to the reactive site neighborhood (β>0.9).
 
-## Identification of drugs acting as anti-metabolites based on NICEdrug score
+### Identification of drugs acting as anti-metabolites based on NICEdrug score
 
 Small molecules that do not share reactive site but are structurally similar to native human metabolites might enter the binding pocket of native enzymes and inhibiting catalysis acting as anti-metabolites (Ariens, 2012). In this study, we define anti-metabolite as any drug or any of its metabolic neighbors that (1) differs slightly in reactive site from a native metabolite (α~1) and (2) preserves high similarity in the reactive site neighborhood (β>0.9). We hypothesize that a low divergence in the reactive site, still allows a non-native compound to enter and bind the enzyme pocket since it is structurally similar enough to the native substrate.
 
-## Identification of NICEdrug toxic alerts
+### Identification of NICEdrug toxic alerts
 
 We obtained all NICEdrug toxic alters from ToxAlert database (Sushko et al., 2012). ToxAlert database includes about 1200 structural toxic alerts associated with particular types of toxicity. Toxic alerts are provided in the form of SMART patterns that are searchable in SMILES structure of molecules. NICEdrug.ch uses openbable tool (O'Boyle et al., 2011) to search for these structural alerts on SMILES of compounds.
 
-## Collection of reference toxic molecules in NICEdrug.ch
+### Collection of reference toxic molecules in NICEdrug.ch
 
 Studying the adverse effects of chemicals on biological systems has led to development of databases cataloging toxic molecules. The Liver Toxicity Knowledge Base (LTKB) integrates 1036 molecules annotated with human Drug-induced liver injury risk (severity). Super toxic DB include about 60 k toxic molecules, which are annotated with their toxicity estimate, LC50/LD50 i.e., lethal dose or concentration at which 50% of a population dies.
 
 As a resource of approved toxic molecules, we collected all of the molecules cataloged as toxic in LTKB and super toxic databases. We used this collection as a reference to compare the similarity of drugs or/and products of drug metabolism with approved toxic molecules.
 
-## Definition of a toxicity score in NICEdrug.ch
+### Definition of a toxicity score in NICEdrug.ch
 
 The number of molecules labeled as toxic in databases is disproportionally low compared to the space of compounds. On the other hand, toxic alerts are defined for a big number of compounds and are linked to redundant molecular structures.
 
@@ -261,15 +349,25 @@ We measured the similarity of drugs and their metabolic neighbors with the colle
 
 Finally, NICEdrug.ch provides a toxicity report in the form of a csv file for each molecule in the metabolic neighborhood including six values linked to the most similar toxic molecules in both toxic reference databases (LTKB and supertoxic databases): (1) the NICEdrug score between the drug and those most similar toxic molecules, (2) the severity degree of the hepatotoxic compound, and log(LC50) of the supertoxic compound, and (3) the number of common toxic alerts between the drug and the most similar toxic molecules. The list of toxic alerts is also provided.
 
-We combined the six values of the toxicity report into a toxicity score defined as follows:∑iNICEdrugscore×(log(LC50)orseveritydegree)×numberofcommonNICEdrugtoxicalertsi∈{themostsimilarapprovedtoxicmoleculesinLTKBandsupertoxicdatabases}
+We combined the six values of the toxicity report into a toxicity score defined as follows:
+
+$$
+\sumiNICEdrugscore\times(log(LC_{50})orseveritydegree)\timesnumberofcommonNICEdrugtoxicalerts
+$$
+
+
+
+$$
+i\in{themostsimilarapprovedtoxicmoleculesinLTKBandsupertoxicdatabases}
+$$
 
 The toxicity score in NICEdrug.ch served to quantify the toxicity of each molecule in the metabolic neighborhood of a drug, recapitulate known toxic molecules, and suggest new toxic compounds (Figure 4).
 
-## Analysis of essential enzymes and linked metabolites in Plasmodium and human cells
+### Analysis of essential enzymes and linked metabolites in Plasmodium and human cells
 
 We extracted information of essential genes and enzymes for liver-stage malaria development from our recent study (Stanway et al., 2019). In this study, we developed the genome-scale metabolic model of Plasmodium berghei, which shows high consistency (approximately 80%) with the largest gene knockout datasets in Plasmodium blood (Bushell et al., 2017) and liver stages (Stanway et al., 2019). There are 178 essential genes for P. berghei’s growth simulating liver-stage conditions (Stanway et al., 2019). Here, we identified the substrates of those essential metabolic enzymes, which comprise a set of 328 metabolites (Supplementary file 5). To further minimize on the host cell, we filtered out those Plasmodium enzymes that share fourth-level EC with human essential enzymes. We used available CRISPR gene essentiality data in various human cell lines (Wang et al., 2015) to identify essential genes and enzymes in human cells (Supplementary file 5). We further identified essential metabolites in human cells (Supplementary file 5) using the latest human genome-scale metabolic model (Robinson et al., 2020) and the metabolic information associated to the essential human genes. Subtracting essential parasite and human enzymes resulted in the analysis of 32 essential Plasmodium enzymes catalyzing 68 metabolites and 157 unique metabolite-enzyme pairs in the parasite (Supplementary file 6).
 
-## Identification of drugs to target malaria and minimize side effects on human cells
+### Identification of drugs to target malaria and minimize side effects on human cells
 
 Those molecules that themselves and their downstream products cannot act as inhibitors of essential metabolic enzymes in the human host cell, while they can target essential Plasmodium enzymes are attractive antimalarial candidates.
 
@@ -277,11 +375,11 @@ We first used NICEdrug.ch to look for small molecules that share reactive site w
 
 We next combined information of essential Plasmodium and human metabolites to screen further the drug search using NICEdrug.ch. Of the hypothetical 516 antimalarial candidates, we identified 64 drugs that share reactive site with parasite metabolites (NICEdrug score above 0.5) and not with human metabolites (NICEdrug score below 0.5), making them good candidates for drug design (Supplementary file 6).
 
-## Prediction of inhibitors among food-based molecules
+### Prediction of inhibitors among food-based molecules
 
 We used the reactive site-centric fingerprint available in NICEdrug.ch to identify molecules in food that share reactive site with native substrates of human enzymes and hence might inhibit those enzymes. We retrieved the total set of 80,000 compounds from FooDB (Scalbert et al., 2011) and treated them as input molecules into the NICEdrug pipeline (Figure 1) to identify reactive sites and evaluate their biochemistry, as done for all molecules in NICEdrug.ch.
 
-## Identification of small molecules to target COVID-19
+### Identification of small molecules to target COVID-19
 
 A recent study reported 332 host factors of SARS-CoV-2 (Gordon et al., 2020). Of the 332 proteins, 97 have catalytic function and EC number assigned, and are potential targets of small molecules. We evaluated the druggability of these 97 enzymes using NICEdrug.ch.
 
@@ -295,7 +393,7 @@ We found 1301 molecules that show NICEdrug score above 0.5 with respect to subst
 
 To better understand the classes of drugs or food molecules, we classified drugs based on their KEGG drug groups (Dgroups) and food molecules based on their food source. Of 465 drugs identified, 43 drugs are assigned to 55 different Dgroups and 402 food molecules belong to 74 different food sources (Supplementary file 7).
 
-## Comparison of NICEdrug.ch predictions and biochemical assays
+### Comparison of NICEdrug.ch predictions and biochemical assays
 
 PubChem's BioAssay (Wang et al., 2012) is an open-access database that stores the results of high-throughput screening of diverse set of compounds against different target proteins from the literature (Wang et al., 2012). For example, it describes the effect of a drug to target or inhibit one enzyme by defining a drug–enzyme pair as active or inactive. This collection of data provides an opportunity to investigate the predictive power of NICEdrug.ch.
 
@@ -307,7 +405,7 @@ The analysis of 2570 small molecules and 198 enzymes with NICEdrug.ch shows the 
 
 To have a better understanding of the potential mismatches in the NICEdrug.ch-bioassay comparisons, we investigated the prediction performance over five benchmarked drugs: Tolcapone, Pravastatin, Oxfenicine, Dopamine, and Acarbose. The set of selected drugs cover diverse structural complexity, ranging from small (such as dopamine) to more complex molecules (such as acarbose) with different functionalities. We observed that false predictions in this set are related to (1) not fully characterized enzymes, e.g. multistep or orphan reactions; (2) large diversity in the third level of the EC number of these enzymes; (3) non-metabolic effect, e.g., signaling effect, of these drugs; and (4) contrary bioassay results (Supplementary file 2).
 
-## Qualitative comparison of NICEdrug.ch with other metabolic prediction tools
+### Qualitative comparison of NICEdrug.ch with other metabolic prediction tools
 
 We aimed to compare NICEdrug.ch and other available tools that predict drug metabolism (Supplementary file 2). These tools use rule-based or machine learning algorithms to (1) identify the reactive site, also known as site of metabolism, on the small molecule, and/or (2) predict the metabolic products of a small molecule through the generation of a reaction (Djoumbou-Feunang et al., 2019).
 
@@ -323,7 +421,7 @@ The NICEdrug.ch resource capitalizes on the predictive power of the BNICE.ch (Ha
 
 Supplementary file 2 provides an overview of the principles, scope, availability, application, and annotation capabilities of the tools to predict drug metabolism. This comparative analysis demonstrates the ability of NICErug.ch to address the shortcomings of other tools, for example, by improving performance, expanding scope, and allowing accessibility.
 
-## Quantitative comparison of drug–metabolite prediction
+### Quantitative comparison of drug–metabolite prediction
 
 Published frameworks that are comparable to NICEdrug.ch’s reactivity report include GLORY (de Bruyn Kops et al., 2021; de Bruyn Kops et al., 2019), BioTransformer (Djoumbou-Feunang et al., 2019), XenoNet (Flynn et al., 2020), SyGMa (Ridder and Wagener, 2008), and other machine-learning based approaches (Coley et al., 2017). All of these methods receive a molecule as an input and predict a set of metabolites as putative products of a metabolic reaction or pathway. Unlike NICEdrug.ch however, they do not describe the reaction mechanisms and metabolic pathways used for each prediction.
 
@@ -343,13 +441,13 @@ Finally, we close this section by testing the performance of NICEdrug.ch on the 
 
 The reference list includes 16 drug–metabolite pairs that are (1) prodrugs, (2) drugs with active or highly active metabolites, and (3) metabolites that have comparable or improved therapeutic properties and are marketed as drugs. Our comparison of predicted and experimentally tested drug–metabolite pairs shows that NICEdrug.ch is remarkably able to correctly find approved metabolites and pathways of metabolism for 15 (of 16) drugs in the reference list (Supplementary file 2). The only remaining drug that was not processable with NICEdrug.ch platform is cisplatin, an inorganic platinum-based small molecule and hence out of the scope of NICEdrug.
 
-## Quantitative comparison of recognizing cytotoxicity in bioassay data
+### Quantitative comparison of recognizing cytotoxicity in bioassay data
 
 Accurate computational prediction of drug toxicity is a major challenge in drug discovery. The cytotoxicity assays are the best descriptors of in vitro and clinical toxicity (Webel et al., 2020; Yin et al., 2019). Here, we focused on the collection of cytotoxicity bioassay records from PubChem, which have often been used to evaluate accuracy of the computational tools for this means (Svensson et al., 2017; Webel et al., 2020; Yin et al., 2019). This PubChem dataset includes high-throughput screening results for 1777 drug candidates (test dataset), of which 108 are labeled toxic and the rest are non-toxic. To examine the performance of NICEdrug.ch, we predict the toxicity of the 1777 drug candidates. We compute the NICEdrug.ch toxicity score as defined in the manuscript for each molecule in the test dataset. Afterwards, we compared the performance of NICEdrug.ch and other computational tools (Svensson et al., 2017; Yin et al., 2019). We use the accuracy as a metric, which describes the % of toxic and non-toxic predictions that match the experimental results from the overall set of prediction (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/65543/elife-65543-fig8-v1.jpg)
 
-**Figure 8.:** A) and drug–enzyme pairs (B, C).(A) Evaluation of NICEdrug.ch toxicity predictions on the test dataset of 1777 drug candidates from PubChem. Y-axis represents the value of a metric, namely accuracy (red), precision (green), recall (blue), and F1 (yellow) based on putative threshold for NICEdrug toxicity score. X-axis represents the predicted NICEdrug.ch toxicity score. (B) Evaluation of overall performance of NICEdrug.ch and NBI tool in predicting interaction of enzymes and drug pairs in terms of ROC curves and value of AUC. (C) Quality of enzymes and drug pairs predictions using NICEdrug.ch in terms of statistical measures including: precision, recall, F1, and accuracy.
+**Figure 8.:** (A) Evaluation of NICEdrug.ch toxicity predictions on the test dataset of 1777 drug candidates from PubChem. Y-axis represents the value of a metric, namely accuracy (red), precision (green), recall (blue), and F1 (yellow) based on putative threshold for NICEdrug toxicity score. X-axis represents the predicted NICEdrug.ch toxicity score. (B) Evaluation of overall performance of NICEdrug.ch and NBI tool in predicting interaction of enzymes and drug pairs in terms of ROC curves and value of AUC. (C) Quality of enzymes and drug pairs predictions using NICEdrug.ch in terms of statistical measures including: precision, recall, F1, and accuracy.
 
 As one can see, with a threshold of 10% NICEdrug toxicity score, we can correctly identify 76 toxic molecules of 108 approved toxic molecules and identify 1126 non-toxic molecules of 1669 approved non-toxic molecules in the test set. At a threshold of 74%, accuracy reaches a maximum value of 0.94, and in higher thresholds in consequence of rejecting some true positives, accuracy slightly decreases to 0.937 (for a threshold value of 1). Other toxicity prediction tools, based on machine learning (Svensson et al., 2017; Yin et al., 2019), show an accuracy between 0.67 and 0.78 for the same test dataset as reported before (Svensson et al., 2017; Yin et al., 2019). Compared to these methods, NICEdrug.ch yields a good prediction quality on molecule toxicity identification, as demonstrated by the high accuracy, high precision, and recall for a threshold of 0.74.
 
@@ -361,7 +459,7 @@ Finally, we investigated the overall predictive performance of NICEdrug.ch with 
 
 This analysis shows that NICEdrug.ch is able to alert when a new molecule (or the compounds downstream from its metabolism) shares toxic molecular structures with a known toxic compound. Hence, NICEdrug.ch’s annotation of molecules with structural toxic alerts indicates a compound’s potential toxic effects.
 
-## Quantitative comparison of identifying drug–enzyme interaction
+### Quantitative comparison of identifying drug–enzyme interaction
 
 We compared the predictive performance of NICEdrug.ch with the widely used ‘network-based inference (NBI)’ tool for DTI prediction (Cheng et al., 2012b; Wu et al., 2020). NBI predictions are based on drug–target bipartite network topology similarity.
 

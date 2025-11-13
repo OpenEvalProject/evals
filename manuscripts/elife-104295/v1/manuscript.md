@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02xg1m795 Department of Gene Function and Phenomics, National Institute of Genetics Mishima Japan
-2. https://ror.org/0516ah480 Department of Genetics, School of Life Science, SOKENDAI (The Graduate University for Advanced Studies) Mishima Japan
-3. https://ror.org/04chrp450 Graduate School of Science, Nagoya University Nagoya Japan
-4. https://ror.org/02cgss904 Institute of Molecular Embryology and Genetics, Kumamoto University Kumamoto Japan
-5. https://ror.org/04ydmy275 Biology Department, University of Massachusetts Boston Boston United States
-6. https://ror.org/05kxtq558 Institute of Molecular Biology (IMB) Mainz Germany
+1. Department of Gene Function and Phenomics, National Institute of Genetics Mishima Japan ([ROR:02xg1m795](https://ror.org/02xg1m795))
+2. Department of Genetics, School of Life Science, SOKENDAI (The Graduate University for Advanced Studies) Mishima Japan ([ROR:0516ah480](https://ror.org/0516ah480))
+3. Graduate School of Science, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))
+4. Institute of Molecular Embryology and Genetics, Kumamoto University Kumamoto Japan ([ROR:02cgss904](https://ror.org/02cgss904))
+5. Biology Department, University of Massachusetts Boston Boston United States ([ROR:04ydmy275](https://ror.org/04ydmy275))
+6. Institute of Molecular Biology (IMB) Mainz Germany ([ROR:05kxtq558](https://ror.org/05kxtq558))
 
 † Corresponding author
 
 ## Abstract
 
-Ribosome biogenesis is vital for sustaining stem cell properties, yet its regulatory mechanisms are obscure. Herein, we show unique properties of zebrafish meioc mutants in which spermatogonial stem cells (SSCs) do not differentiate or upregulate rRNAs. Meioc colocalized with Piwil1 in perinuclear germ granules, but Meioc depletion resulted in Piwil1 accumulation in nucleoli. Nucleolar Piwil1 interacted with 45S pre-rRNA. piwil1 spermatogonia with reduced Piwil1 upregulated rRNAs, and +/- piwil1 spermatogonia recovered differentiation later than those in +/- ;meioc -/- meioc . Further, Piwil1 interacted with Setdb1 and HP1α, and -/- meioc spermatogonia exhibited high levels of H3K9me3 and methylated CpG in the 45S-rDNA region. These results indicate that zebrafish SSCs maintain low levels of rRNA transcription with repressive marks similar to -/- Drosophila piRNA targets of RNA polymerase II, and that Meioc has a unique function on preventing localization of Piwil1 in nucleoli to upregulate rRNA transcripts and to promote SSC differentiation.
+Ribosome biogenesis is vital for sustaining stem cell properties, yet its regulatory mechanisms are obscure. Herein, we show unique properties of zebrafish meioc mutants in which spermatogonial stem cells (SSCs) do not differentiate or upregulate rRNAs. Meioc colocalized with Piwil1 in perinuclear germ granules, but Meioc depletion resulted in Piwil1 accumulation in nucleoli. Nucleolar Piwil1 interacted with 45S pre-rRNA. piwil1+/- spermatogonia with reduced Piwil1 upregulated rRNAs, and piwil1+/-;meioc-/- spermatogonia recovered differentiation later than those in meioc-/-. Further, Piwil1 interacted with Setdb1 and HP1α, and meioc-/- spermatogonia exhibited high levels of H3K9me3 and methylated CpG in the 45S-rDNA region. These results indicate that zebrafish SSCs maintain low levels of rRNA transcription with repressive marks similar to Drosophila piRNA targets of RNA polymerase II, and that Meioc has a unique function on preventing localization of Piwil1 in nucleoli to upregulate rRNA transcripts and to promote SSC differentiation.
 
 ## Introduction
 
@@ -41,55 +41,154 @@ The present study revealed that zebrafish had spermatogonial stem cells (SSCs) w
 
 ## Results
 
-## Failure to differentiate spermatogonia in the zebrafish meioc mutant
+### Failure to differentiate spermatogonia in the zebrafish meioc mutant
 
 In fish testes, germ cells are surrounded by Sertoli cells within a basement membrane compartment and develop synchronously in cysts. Thus, the developmental stage of spermatogonia can be determined by the number of cells within the cyst (Figure 1A). Wild-type spermatogonial cells undergo nine rounds of cell division before entering meiosis (Leal et al., 2009); however, motot31533 mutant testes had only up to three rounds of division, containing 2–8 spermatogonia per cyst (Figure 1B). Mutant spermatogonia were positive for the undifferentiated spermatogonia marker, Plzf, which is expressed in single- to 8-cell (1- to 8-cell) cyst spermatogonia in the wild-type (Figure 1B; Ozaki et al., 2011), but negative for meiotic prophase I markers, Sycp1 and Sycp3 (Saito et al., 2014; Saito et al., 2011). Histone H3 phospho-S10 immunostaining indicated that mutant spermatogonia proliferated, but apoptotic cells were increased in the mutant spermatogonia (Figure 1—figure supplement 1A). In zebrafish, mutants disrupting early stages of oocyte development become male (Saito et al., 2011; Houwing et al., 2007; Kamminga et al., 2010; Rodríguez-Marí et al., 2010; Shive et al., 2010). Similarly, no females and no oocytes developed in moto mutants (Table 1 and Figure 1—figure supplement 1B), as completion of the pachytene stage of meiosis I is a prerequisite for follicle formation (Elkouby and Mullins, 2017). These results suggested that the motot31533 mutant germ cells remained in an undifferentiated state.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schema of the development of spermatogonial cysts surrounded by Sertoli cells and progression of spermatogenesis in zebrafish. (B) Histology (HE) and immunostaining against Plzf and spermatocyte markers (Sycp1, 3) in the wild-type and the moto-/- testes. Arrowheads: sperm. SC: spermatocytes. Scale bar: 10 µm. (C, D) OP-Puro fluorescence analysis (C) and quantification of the signal intensities (D) in wild-type and meiocmo/mo spermatogenic cells. Dotted lines: 1- to 2-cell spermatogonia. Scale bars: 10 µm. (E–F) Effect of cycloheximide (CHX, 0.2 µM) on differentiation of spermatogonial stem cells (SSCs) in culture. Dotted lines: germ cell clumps. Sycp3: immunostaining of Sycp3. Arrowheads: examples of a cell with a large nucleolus. Scale bar: 50 µm. The graph (F) presents the percentage of clumps of SSCs and differentiated cells (Differ) shown in E. Indistinguish: not determined whether dominant cell type was stem or differentiated. Data are represented as mean ± SD. *p<0.05, **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PH3 and TdT-mediated nick-end labeling (TUNEL) assays of wild-type and moto-/- testes. PH3-positive spermatogonia were detected in moto+/+ and moto-/- testes. TUNEL-positive cells were barely detected in moto+/+ testes, while a considerable number of cells were detected in moto-/- testes. Black arrowheads indicate positive spermatogonia. (B) Histology of early gonads of moto+/- and moto-/-. Growing oocytes (arrowheads) were observed in heterozygous larvae but not in mutant larvae. Developmental stages are indicated by days post-fertilization (dpf). Scale bar: 20 µm. (C) Comparison of mouse and zebrafish Meioc protein sequences. The sequence of zebrafish Meioc (ENSDARG00000090664) was aligned to that of mouse MEIOC (ENSMUSG00000051455). Alignment analyses were performed using EMBOSS NEEDLE, an online software program (https://www.ebi.ac.uk/Tools/psa/emboss_needle/). A coiled-coil domain composed of four helices, PF15189 (previously DUF4582), is conserved in animals. The two mutations predicted to disrupt the zebrafish meioc gene are shown, and the approximate position of the premature stop codon is indicated relative to the total length of the Meioc protein. (D) HE-stained sections of wild-type testes with all stages of spermatogonia (arrowheads), spermatocytes, and spermatozoa present; the meioct31533 mutant, an additional nonsense allele meiocsa13122, and transheterozygote meioct31533/sa13122 exhibited testes containing single spermatogonia and spermatogonia in small clusters. Scale bar: 20 µm. (E) Western blot analysis of meioc+/+, meioc+/mo, and meiocmo/mo testis extracts. (F) Immunostaining of zebrafish wild-type testes. Absorbed anti-Meioc IgG was treated with Meioc recombinant protein. Scale bar: 10 µm. (G) Immunostaining of meiocmo/mo single spermatogonia. Note that Meioc was not detected in meiocmo/mo spermatogonia. Scale bar: 10 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Expression patterns of meioc mRNA and Meioc protein in gonads at 25 days post-fertilization (dpf) and adult testes and ovaries. Black arrowheads indicate cells that express neither mRNA nor protein, and white arrowheads indicate cells that have the mRNA signals and weak protein signals. Yellow dotted lines indicate cysts containing cells positive for both mRNA and diffuse protein signals, including small or weak granules, and green dotted lines indicate cysts containing cells with mRNA signals and bright protein signals, including large granules. Scale bar: 10 µm. (B) Double staining of ovary at 25 dpf with anti-Meioc antibody (green) and anti-Sycp3 antibody (red). Staging of oocytes was defined by the patterns of Sycp3. Scale bar: 5 µm. (C) Double staining of wild-type testes with anti-Meioc antibody (green) and anti-Sycp3 antibody (red). Staging of spermatogonia was defined by the number of cells in the cyst, and staging of spermatocytes was defined by the patterns of Sycp3. Scale bar: 5 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Dose-dependent protein synthesis by cycloheximide (CHX) in late spermatogonia of the cultured testis. (B) Effect of CHX (1 µM) on BrdU incorporation of cysts of 1- to 4-cell and 32≤-cell spermatogonia in testis organ culture. (C) Western blot analysis of Bmp2 and α-Tubulin (upper panels) and quantification of Bmp2 (lower panel) in the cultured feeder cells with and without 0.2 mM cycloheximide. (D) Toxicity of CHX in cultured testis fragments. CHX was treated with testicular fragments for 48 hr at various concentrations. Note that abnormally strong OP-puro signals indicated by arrowheads including nuclei were detected in cells at 10 mM or more. White dotted line: cysts containing 1- to 4-cell spermatogonia. Green dotted line: cysts containing spermatocytes. Scale bar: 20 µm. For each graph, data were analyzed by Student’s t-test: **p<0.01. ns: no significant difference.
+
+**Table 1.**
+ Number of wild-type, heterozygous, and meioc mutant males and females.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Female</th>
+      <th>Male</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>meiocmo/mo</td>
+      <td>0</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>meioc+/mo</td>
+      <td>23</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>meioc+/+</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
 
 By WGS and genetic analysis, we found that the motot31533 mutant phenotype was tightly linked to a mutation within the ortholog of mouse meioc gene (Figure 1—figure supplement 1C; Bowen et al., 2012). Fish harboring the motot31533 mutation inherited the moto phenotypes described above for more than 10 generations. Furthermore, fish homozygous for another allele, motosa13122, exhibited the same gonadal phenotype as motot31533 homozygotes, and motosa13122 failed to complement motot31533, confirming that these mutations disrupt the same gene (hereafter denoted meiocmo) (Figure 1—figure supplement 1D). Both mutations encode a truncated protein that lacks the conserved coiled-coil domain (PF15189). We searched for paralogues of meioc gene using PF15189 domain (Figure 1—figure supplement 1C) but were not able to find another gene in the zebrafish reference genome assembly GRCz11 (version 111.11). We then generated an antibody against the N-terminus of Meioc (Figure 1—figure supplement 1E and F) and could not detect the expression of truncated Meioc in the mutants (Figure 1—figure supplement 1G).
 
 Zebrafish meioc RNA and protein signals were observed in a portion of 1- to 2-cell cyst germ cells in juvenile gonads at 25 days post-fertilization (dpf), adult ovaries, and testes (Figure 1—figure supplement 2A). The cells exhibited a large nucleolus, characteristics of presumed GSCs in zebrafish (Kawasaki et al., 2016) and stem-type self-renewing type I germ cells in medaka (Nishimura et al., 2015). Both clear RNA and protein signals were detected in premeiotic germ cell clusters, and the protein was detected as granular structures in the cytoplasm with increasing sizes among cells until meiotic leptotene-zygotene stage (Figure 1—figure supplement 2A–C).
 
-## Upregulation of translation is required for the differentiation of spermatogonia
+### Upregulation of translation is required for the differentiation of spermatogonia
 
 Since the global translation activity is generally inhibited in stem cells, we analyzed global translational activities of zebrafish spermatogonia using the O-propargyl-puromycin (OP-Puro) assay (Liu et al., 2012). In wild-type, we observed two populations, with low levels and high levels of de novo protein synthesis in 1- to 2-cell cyst spermatogonia. Whereas almost all large cysts with more than 32 cells (32≤-cell) of differentiated spermatogonia had high levels of de novo protein synthesis (Figure 1C and D). Almost all meiocmo/mo spermatogonia showed similarly low levels as that of 1- to 2-cell cysts (Figure 1C and D). These results suggested that some spermatogonia of 1- to 2-cell cysts had low translation activity in wild-type and that meiocmo/mo spermatogonia were arrested in the state of low translation activity.
 
 In order to know if translational upregulation is required for differentiation of spermatogonia, we examined the effect of cycloheximide on the development of spermatogonia in vitro. Cycloheximide decreased OP-Puro fluorescence intensities in differentiating spermatogonia in a dose-dependent manner in testis organ culture (Figure 1—figure supplement 3A). At 1.0 µM cycloheximide that reduced OP-Puro fluorescence to approximately 60%, BrdU incorporation decreased in 32≤-cell cysts of spermatogonia, while it was not affected in 1- to 4-cell spermatogonia (Figure 1—figure supplement 3B and D). We then examined the effect on differentiation of SSCs using a culture system, in which differentiation can be induced on the Sertoli cell line, ZtA6-12 (Kawasaki et al., 2016). After propagation of SSCs for 1 month, we transferred the cells onto ZtA6-12 and treated them with a lower concentration of cycloheximide at 0.2 µM, which reduced OP-Puro fluorescence to approximately 70%. The treatment maintained SSCs with a large nucleolus and not expressing Sycp3, whereas the control without cycloheximide showed expression of Sycp3 (Figure 1E and F). Bmp2 production of ZtA6-12 cells was not affected at 0.2 µM cycloheximide (Figure 1—figure supplement 3C), suggesting that the effect on Sertoli cell function was minimized. These results suggested that a certain level of translational activity was required for the differentiation of zebrafish SSCs.
 
-## meioc mutants do not upregulate rRNAs in 1- to 2-cell cyst spermatogonia
+### meioc mutants do not upregulate rRNAs in 1- to 2-cell cyst spermatogonia
 
 To estimate the state of RiBi, we examined the expression patterns of rRNAs and the ribosomal protein Rpl15 in zebrafish spermatogonia development. Interestingly, the signal intensities of 5.8S, 18S, 28S rRNAs, and Rpl15 were low in a portion of wild-type 1- to 2-cell cyst spermatogonia (Figure 2A), suggesting the presence of two populations also in the rRNA concentrations (low and high) in the 1- to 2-cell stage. We did not observe a low intensity of 5S rRNA. Those rRNA signal intensities increased in almost all 32≤-cell cysts and declined in spermatocytes. To distinguish between cytoplasmic and nucleolar signals, we performed fluorescence in situ hybridization of 28S rRNA. We found 1- to 2-cell cysts with low cytoplasmic signals also had low nucleolar signals (Figure 2B–D). Although cytoplasmic 28S rRNA signals increased to 32≤-cell cysts, the highest nucleolar signals were detected in portions of 1- to 2-cell cysts and declined at 32≤-cell cysts. These results suggest that 1- to 2-cell cysts contain populations with low and high rRNA transcriptional activity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig2-v1.jpg)
+
+**Figure 2.:** (A) In situ hybridization of 5S, 5.8S, 18S, and 28S rRNA and immunohistochemistry with anti-Rpl15 antibody in spermatogonia (gonia) and spermatocytes (cyte) in wild-type and meiocmo/mo. Yellow dotted lines indicate 1- to 2-cell spermatogonia. Percentages represent the frequency of low and high 1- to 2-cell spermatogonia. (B–D) Fluorescent in situ hybridization of 28S rRNA in wild-type. The graphs present quantification of signal intensities of 28S rRNA in nucleoli (C) and in cytoplasm (D) in spermatogenic cells. Arrowheads: nucleoli; cytes: spermatocytes. (E) qRT-PCR analysis of rRNAs and R2 between wild-type and meiocmo/mo purified sox17::egfp positive spermatogonia. Two-way arrows in the schema indicate the position of primers on the rRNA and R2 element. (F) Northern blot analysis of pre-rRNA processing in wild-type and meiocmo/mo testes using probes for 5’ external transcribed spacer (ETS) and internal transcribed spacer 1 (ITS1). Right panel: schema of 45S pre-rRNA and pre-rRNA processing intermediates in zebrafish (Tao et al., 2017). Left panel: Northern blot analysis of pre-rRNA processing in wild-type and meiocmo/mo testes using 5’ETS and ITS1 probes. A probe for the 7SL RNA was used as a loading control. Graphs summarize relative signal intensity of 45S pre-rRNA and intermediates normalized to 7SL in three wild-type and meiocmo/mo testes. (G) Bisulfite-sequencing analysis of the tandem repeat region in the intergenic spacer (IGS) region of the 45S-S rDNA locus in purified undifferentiated spermatogonia of wild-type and meiocmo/mo. Arrows: position of bisulfite primers in the tandem repeat elements (blue, magenta, and white boxes); black dots: methylated CpG sites; white dots: unmethylated sites. *p<0.05, **p<0.01. Scale bars: 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Staining of sox17::egfp testis sections with anti-GFP antibody (magenta) and DAPI (cyan). Note that EGFP was strongly expressed in the 1- to 2-cell stage spermatogonia and weakly expressed in the 4- to 8-cell spermatogonia and started to fade at the 8-cell spermatogonia. Stem cell function of sox17::egfp spermatogonia was already confirmed by transplantation experiment (Kawasaki et al., 2016). Dotted lines indicate cysts containing the cell types indicated above in the image. Scale bar: 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Two-way arrows indicate the position of primers used in ChIP-qPCR analysis (Figure 6F and G).
+
 We next tested how rRNA levels were affected in meiocmo/mo and could not find cells with high signals of rRNAs and Rpl15 in meiocmo/mo spermatogonia (Figure 2A). We confirmed these data by performing RT-qPCR from isolated spermatogonia using the sox17::egfp marker. We have confirmed that sox17::egfp spermatogonia undergo self-renewal and differentiation into spermatozoa (Kawasaki et al., 2016), and the signal was predominantly expressed in 1- to 2-cell cysts (Figure 2—figure supplement 1). Reductions in 5.8S, 18S, and 28S rRNAs in meiocmo/mo were observed (Figure 2E). Furthermore, the expression of the homolog of Drosophila non-LTR retrotransposable element R2 that transposes exclusively into 28S rDNA (Kojima and Fujiwara, 2004) was also decreased in meiocmo/mo. We next compared levels of unprocessed 45S pre-rRNA and pre-rRNA intermediates by Northern blot between meiocmo/mo and the wild-type. Each was normalized to 7SL RNA. In meiocmo/mo, the amount of 45S pre-RNA and the intermediates was reduced; however, the ratio of the meiocmo/mo to the wild-type was almost the same for 45S pre-rRNA and the intermediates: 0.69 (average 0.49/0.71, mutant/wild-type) of 45S pre-rRNA and 0.61 (0.72/1.19) of the intermediate with the 5’ external transcribed spacer (ETS) probe, and 0.33 (0.05/0.15) and 0.35 (0.17/0.48) with the internal transcribed spacer 1 (ITS1) probe (Figure 2F). These results indicate that 45S pre-rRNA transcripts were reduced in meiocmo/mo, yet processing into pre-RNA intermediates was not affected.
 
-## Meioc is required for demethylation of CpG in the IGS of 45S rDNA
+### Meioc is required for demethylation of CpG in the IGS of 45S rDNA
 
 Features of silenced rDNA loci, DNA methylation, methylation of histone H3K9, and association of HP1α are known (Grummt, 2007). In eukaryotes, the transcription of each rDNA locus is regulated by DNA methylation and histone modifications in promoter and enhancer regions in the intergenic spacer (IGS) region (Santoro, 2005). Therefore, we examined DNA methylation state in the region. Since the regulatory sequence of rDNA was not identified in teleosts, we identified tandem repeats of 90, 127, and 318 bp in the IGS region of 45S-S rDNA (Locati et al., 2017; Figure 2—figure supplement 2), similar to carp (Vera et al., 2003). Unmethylated CpG in the tandem repeats was frequently found in isolated wild-type sox17::egfp spermatogonia, while it was rare in meiocmo/mo (Figure 2G). These results suggested that Meioc is needed for demethylation of CpG in the tandem repeats of 45S rDNA IGS region.
 
-## meioc and ythdc2 mutants exhibit different phenotypes in the early stage of spermatogonia
+### meioc and ythdc2 mutants exhibit different phenotypes in the early stage of spermatogonia
 
 The YTHDC2 is a binding partner of the MEIOC in mammals (Abby et al., 2016; Soh et al., 2017). Zebrafish spermatogenic cells expressed Ythdc2 (Figure 3—figure supplement 1A and B), and pull-down analysis showed zebrafish Meioc interacted with Ythdc2 (Figure 3—figure supplement 1C). It has been recently reported that ythdc2 KO zebrafish lack germ cells (Li et al., 2022), but staining or expression analysis was not done to confirm that germ cells were completely absent. We separately generated ythdc2 KO zebrafish by the CRISPR-Cas9 system (Figure 3—figure supplement 1A), and observed that it had up to 8-cell cyst spermatogonia (Figure 3A). We observed that the number of 4- to 8-cell cysts was clearly different between meiocmo/mo and ythdc2-/-; the ratio of 4- to 8-cell cysts/1- to 2-cell cysts in the ythdc2-/- was almost the same as that in the wild-type, while that in meiocmo/mo significantly decreased (Figure 3B–D). Furthermore, ythdc2-/- spermatogonia contained both low and high levels of cells with 5.8S, 18S, 28S rRNAs, and Rpl15, similar to the wild-type (Figure 3E). The intensity of the 28S rRNA signals in ythdc2-/- was almost the same as that in the wild-type (Figure 3—figure supplement 1D). These results suggested that Meioc functioned independently of Ythdc2 on the differentiation of 1- to 2-cell cysts into 4- to 8-cell cysts.
 
-## Meioc interacts with Piwil1 and affects its intracellular localization
+![Figure 3.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig3-v1.jpg)
+
+**Figure 3.:** (A) Histology (HE) and immunostaining against Plzf and spermatocyte markers (Sycp1, 3) in the ythdc2-/- testes. (B) Representative image of meiocmo/mo and ythdc2-/- testes sections stained with PAS (periodic acid Schiff) and hematoxylin. Dotted lines: 1- to 2-cell cyst spermatogonia (black) and 4≤-cell cysts (yellow). (C) The number of 1- to 2-, 4-, and 8-cell cyst spermatogonia per mm2 of sections in wild-type, meiocmo/mo, and ythdc2-/- testes. (D) Ratio of the number of 4- to 8-cell cyst spermatogonia to 1- to 2-cell cysts in wild-type, meiocmo/mo, and ythdc2-/- testes. (E) In situ hybridization of 5S, 5.8S, 18S, and 28S rRNA and immunohistochemistry with anti-Rpl15 antibody in the ythdc2-/- testes. Yellow dotted lines: 1- to 2-cell spermatogonia. *p<0.05, **p<0.01, ns: not significant. Scale bars: 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Zebrafish Ythdc2 protein structure and mutation sequence (*) in the ythdc2 KO zebrafish. (B) Double staining of a testis with anti-Ythdc2 antibody (green) and anti-Sycp3 antibody (red). Staging of spermatogonia was defined by the number of cells in the cyst, and staging of spermatocytes was defined by the patterns of Sycp3. Scale bar: 5 µm. (C) Pull-down assay using full-length or coiled-coil domain-deleted Meioc and Flag-tagged Ythdc2. Schema: conditions of coexpression of each protein in HEK-293A cells used for the pull-down assay. (D) In situ hybridization of 28S rRNA (left panels) and quantification of the 28S rRNA signal intensities (right panels) in wild-type, meiocmo/mo, and ythdc2-/- 1- to 2-cell spermatogonia. The cytoplasmic signal intensities were normalized to the myoid cell cytoplasm. **p<0.01, ns: not significant. (E) Immunostaining against Piwil1 (red) and fibrillarin (green) in ythdc2-/- spermatogonia. Arrowheads: undetectable Piwil1 signals in fibrillarin (green) positive nucleoli under the normal sensitivity imaging of Piwil1.
+
+### Meioc interacts with Piwil1 and affects its intracellular localization
 
 To explore partners of Meioc on regulation of rRNA transcription, we performed LC/MS/MS for the Meioc-immunoprecipitate (IP) of SSC-enriched hyperplastic testes. The hyperplastic testes, which are occasionally found in adult wild-type zebrafish, contain cells at all stages of spermatogenesis. Hyperplasia-derived SSCs self-renewed and differentiated in transplants of aggregates mixed with normal testicular cells (Kawasaki et al., 2016). The results showed the enrichment of germ granule (nuage) components, compared with normal testis (Supplementary files 1 and 2). By immunostaining, Meioc colocalized with the germ granule components, Tdrd1 (Huang et al., 2011), Tdrd6a (Roovers et al., 2018), Piwil1 (Houwing et al., 2007), Piwil2 (Houwing et al., 2008), and Ddx4 (Houwing et al., 2007) in wild-type (Figure 4—figure supplement 1A and B). In meiocmo/mo, Piwil1 was strongly detected in the nucleolus (Figure 4A, arrowhead), whereas others exhibited the perinuclear localization characteristic of germ granules observed by Ddx4 staining as in the wild-type (Figure 4A). In contrast, we were able to detect low levels of Piwil1 in nucleoli of wild-type 1- to 4-cell spermatogonia with overexposed detection after the co-staining of the nucleolar marker fibrillarin (Figure 4B). The signals of Piwil1 in Ddx4-positive granules were decreased in meiocmo/mo spermatogonia, compared with wild-type (Figure 4C). We confirmed that Meioc interacted with Piwil1 by co-IP and revealed that Meioc-bound Piwil1 through the coiled-coil domain (Figure 4D; Figure 4—figure supplement 1C). These results demonstrated that Piwil1 has a property to localize in nucleoli and that Meioc interacts with Piwil1 in perinuclear germ granules. In addition, we did not detect the accumulation of Piwil1 in nucleoli in ythdc2-/- (Figure 3—figure supplement 1E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunostaining of Ddx4 and Piwil1, Piwil2, Tdrd1, and Tdrd6a in wild-type and meiocmo/mo spermatogonia. The arrowhead: the Piwil1 signal in the nucleolus. (B) Immunostaining against Piwil1 and fibrillarin (left panels) and quantification of nucleolar Piwil1 (right panel) in wild-type and meiocmo/mo spermatogonia. Arrowheads: fibrillarin positive nucleolus. (C) Immunostaining of Piwil1 and Ddx4 (left panels) and quantification of Piwil1 in germ granules (right panel) in wild-type and meiocmo/mo spermatogonia. Arrowheads: Ddx4 positive germ granules. (D) Co-immunoprecipitation of Meioc and Piwil1 using testis lysate. Meioc signals were detected in Piwil1 immunoprecipitate and vice versa. Benzonase: addition of benzonase nuclease. **p<0.01. Scale bars: 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Immunostaining of Meioc (green) and Ddx4, Piwil1, Piwil2, Tdrd1, and Tdrd6a (red) in wild-type 1- to 2-cell spermatogonia (A) and spermatocytes (B). Insets show magnified signals of each spot indicated by a white square. Blue in right panels = DAPI. Scale bar: 5 mm. (C) Pull-down assay using Flag-tagged full-length Meioc, coiled-coil domain (PF15189)-deleted Meioc and Piwil1. Schema: conditions of coexpression of each protein in HEK-293A cells used for the pull-down assay. (D–G) Small RNAs from the testes of individual animals with either the meioc+/mo or meiocmo/mo genotypes were sequenced. Data from the individuals were then pooled for each genotype to assess the global effect of Meioc on small RNA production (mean ± SD of 6 meioc+/mo and 5 meiocmo/mo testes). Length profiles of the relative abundance of all 18–35 nt mapped reads (D), as well as only the 28S rRNA (E), 18S rRNA (F), and R2 transposon (G) mapped reads. Significant increases in the small RNAs derived from 18S, 28S rRNA, and R2 transposon were not detected in meioc mutant testes, although Piwil1 was ectopically localized in nucleoli in the mutant spermatogonia. RPM: reads per million.
+
 Since Piwil1 abnormally accumulated in nucleoli in meiocmo/mo, we asked whether Piwil1-dependent piRNA generation (Houwing et al., 2007) was affected. Total RNA was extracted from meiocmo/mo and meioc+/mo testes, and small RNAs (18–35 nt) were sequenced. The abundance of small RNA production in meiocmo/mo testes was detected at similar levels to those of meioc+/mo (Figure 4—figure supplement 1D). Small RNAs derived from 28S, 18S rRNAs, and R2 transposon apparently decreased in meiocmo/mo, probably due to the low expression of rRNAs (Figure 4—figure supplement 1E–G). Thus, it is unlikely that Meioc critically affects small RNA generation.
 
-## A reduction of Piwil1 upregulates rRNA transcripts and recovers the meioc mutant phenotype
+### A reduction of Piwil1 upregulates rRNA transcripts and recovers the meioc mutant phenotype
 
 From the above analysis, it is hypothesized that accumulation of Piwil1 in the nucleolus suppresses rRNA transcription in the meiocmo/mo background. Therefore, we examined the rRNA transcript levels and the phenotype of meiocmo/mo;piwil+/- since the piwil1-/- are viable but deplete germ cells completely before testis differentiation (Houwing et al., 2007). A reduction in Piwil1 was detected in piwil+/- testes by western blot analysis and in the spermatogonia nucleoli by fluorescent immunohistochemistry (Figure 5—figure supplement 1A and B). The upregulation of 28S rRNA was observed in the cytoplasm and nucleoli of piwil1+/- 1- to 2-cell spermatogonia as compared to wild-type and meiocmo/mo;piwil1+/- spermatogonia as compared to meiocmo/mo (Figure 5A and B). Consistent with the increased expression of 28S rRNA, we observed the differentiation of meiocmo/mo;piwil1+/- spermatogonia to the 32-cell stage compared to that of meiocmo/mo, in which spermatogonia rarely develop to the 8-cell stage (Figure 5C and D). Furthermore, the number of 4- to 8-cell cysts increased in meiocmo/mo;piwil1+/- (Figure 5E and F). The ratio of 4- to 8-cell to 1- to 2-cell cysts in meiocmo/mo;piwil1+/- increased compared to that in meiocmo/mo and reached almost the same level as that in wild-type (Figure 5G). These results demonstrated that reduction of Piwil1 compensated the suppression of rRNA transcription and the SSC differentiation defect of the meiocmo/mo phenotypes.
 
-## Piwil1 interacts with nascent 45S pre-rRNA in nucleoli of SSCs
+![Figure 5.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) In situ hybridization of 28S rRNA in wild-type and meiocmo/mo;piwil1+/- spermatogonia (1- to 2-cell cysts). Graphs (B) show the relative signal intensity in the cytoplasm normalized to the intensity of lobule myoid cells (left) and nucleoli normalized to the intensity of the nucleoplasm (right). (C, D) Differentiated spermatogonia in meiocmo/mo and meiocmo/mo;piwil1+/- testes. Yellow dotted lines: differentiated spermatogonia. Graphs (D) show the number of 16-cell and 32-cell cyst spermatogonia per mm2 of sections. ND: not detected. (E–G) meiocmo/mo and meiocmo/mo piwil1+/- testis sections stained with PAS and hematoxylin. Cysts of 1- to 2-cell spermatogonia (black) and 4≤-cell cysts (yellow) are indicated by dotted lines. Graphs show numbers of 1-, 2-, 4-, and 8-cell cysts per mm2 in sections of meiocmo/mo and meiocmo/mo;piwil1+/- testes (F), and ratio of the number of 4- to 8-cell cysts to 1- to 2-cell cysts in wild-type, meiocmo/mo and meiocmo/mo;piwil1+/- (G). *p<0.05, **p<0.01, ns: not significant. Scale bars: 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot analysis of Piwil1 and α-Tubulin (upper panels) and quantification of Piwil1 (lower panel) in piwil1+/+ and piwil1+/- testes. (B) Immunostaining against Piwil1 and fibrillarin (left panels) and quantification of nucleolar Piwil1 signal intensities (right panel) in piwil1+/+ and piwil1+/- spermatogonia (1- to 2-cell cysts). Yellow dotted lines: nucleoli. For each graph, data were analyzed by Student’s t-test: *p<0.05.
+
+### Piwil1 interacts with nascent 45S pre-rRNA in nucleoli of SSCs
 
 To investigate if nucleolar Piwil1 interacts with 45S pre-rRNA, we examined pre-rRNA in the RNA IP (RIP) of Piwil1 by qRT-PCR. Pre-rRNA was associated with Piwil1 compared with the control IgG in the wild-type testis and was more enriched in meiocmo/mo (Figure 6A). Furthermore, we examined the effect of actinomycin D (RNA polymerase I [Pol I] and Pol II inhibitor), BMH-21 (Pol I inhibitor) (Colis et al., 2014), and α-amanitin (Pol II inhibitor) (Bensaude, 2011) on nucleolar localization of Piwil1 in the meiocmo/mo testis organ culture. The nucleolar signals of Piwil1 declined upon treatment with actinomycin D and BMH-21 but not α-amanitin, suggesting that the pre-rRNA transcript was involved in Piwil1 localization to the nucleolus (Figure 6B). Together, these results suggested that Piwil1 interacted with nascent pre-rRNA transcripts in nucleoli of SSCs.
 
-## Nucleolar Piwil1 causes accumulation of H3K9me3 and HP1α
+![Figure 6.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig6-v1.jpg)
+
+**Figure 6.:** (A) Fold enrichment of pre-rRNA (5’ETS-18S rRNA) in Piwil1 immunoprecipitated RNA relative to the control IgG in wild-type and meiocmo/mo testes. (B) Immunostaining of Piwil1 (left panels) and the percentage of spermatogonia with detectable nucleolar Piwil1 (right panel) in the meiocmo/mo testes treated with α-amanitin (Am), actinomycin D (Ac), and BMH-21 (B). Arrows: Piwil1 detectable nucleoli; arrowheads: Piwil1 undetectable nucleoli; C: control without inhibitors; IC: initial control. (C) Immunostaining of Setdb1 and fibrillarin in wild-type and meiocmo/mo spermatogonia. Arrowheads: nucleoli. (D) Co-IP of Piwil1 and Setdb1 using meiocmo/mo testes lysate. Piwil1 was detected in Setdb1 IP. (E) Intensities of Setdb1 in nucleoli in wild-type and meiocmo/mo spermatogonia. (F, G) ChIP-qPCR analysis of H3K9me3 (F) and Piwil1 (G) levels in 45S-rDNA region in wild-type, piwil1+/-, and meiocmo/mo testes. The position of primers was indicated in Figure 2—figure supplement 2. Mean ± SD are indicated. (H) Immunostaining of HP1α and Piwil1 in wild-type and meiocmo/mo spermatogonia. Arrowheads: nucleolus. (I) Co-IP of Piwil1 and HP1α using meiocmo/mo testis lysate. HP1α was detected in Piwil1 IP. (J) Intensities of HP1α in nucleoli in wild-type and meiocmo/mo spermatogonia. *p<0.05, **p<0.01. Scale bars: 10 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blot analysis of wild-type testis extracts using anti-mouse Setdb1 antibody. Arrow: Setdb1. (B) Western blot analysis of zebrafish HP1α expressed from bacterial expression vectors using anti-human HP1α antibody and anti-T7-tag antibody. Isopropyl-β-D-thiogalactopyranoside (IPTG) was added for culture of host cells (BL21) to induce expression of HP1α with T7-tag. Schema: construction of expression vector (pet21a). Arrow: HP1α fusion protein. (C) Western blot analysis of wild-type testis extracts using anti-human HP1α antibody. Arrow: HP1α. (D) Pull-down assay using Flag-tagged HP1α and Piwil1 or EGFP. Schema: conditions of coexpression of each protein in HEK-293A cells used for the pull-down assay.
+
+### Nucleolar Piwil1 causes accumulation of H3K9me3 and HP1α
 
 Drosophila Piwi requires histone methyltransferase Setdb1 to lead to H3K9me3 deposition, HP1α accumulation, and heterochromatin formation for silencing of Pol II-mediated transcription (Jia et al., 2022). We examined if Setdb1 and HP1α are localized in nucleoli using anti-Setdb1 (Figure 6—figure supplement 1A) and anti-HP1α (Figure 6—figure supplement 1B and C) antibodies. Setdb1 was detected in nucleoli in spermatogonia of 1- to 2-cell cysts in both wild-type and meiocmo/mo, and co-IP using meiocmo/mo testis lysate showed interaction between Piwil1 and Setdb1 (Figure 6C and D). A higher signal intensity of Setdb1 nucleolar signal was detected in meiocmo/mo spermatogonia (Figure 6E). To test whether the amount of nucleolar Piwil1 correlates with the silencing state of rDNA loci, we conducted chromatin IP of histone H3K9me3 and Piwil1. Higher enrichment of H3K9me3 and Piwil1 with rDNA was detected in meiocmo/mo testes, which have increased levels of nucleolar Piwil1, than those in the wild-type (Figure 6F and G). In addition, decreased enrichment was detected in piwil1+/- testes, which have a low amount of nucleolar Piwil1 (Figure 6F and G). Furthermore, HP1α was detected in nucleoli in spermatogonia of 1- to 2-cell cysts in wild-type and meiocmo/mo, and co-IP using testis lysate and pull-down assay showed an interaction between Piwil1 and HP1α (Figure 6H and I; Figure 6—figure supplement 1D). HP1α was predominantly localized in nucleoli in wild-type with higher nucleolar levels in meiocmo/mo (Figure 6J). These results indicated that Piwil1 potentially interacted with Setdb1 in nucleoli and led to an increased H3K9me3 modification and HP1α accumulation in rDNA loci in zebrafish spermatogonia.
 
-## Meioc expression is correlated with the upregulation of 28S rRNA
+### Meioc expression is correlated with the upregulation of 28S rRNA
 
 To further investigate the relationship with Meioc and upregulation of rRNA in SSCs, we compared the expression patterns of Meioc, 28S rRNA, and Piwil1 in isolated sox17::egfp spermatogonia. Meioc expression ranged from barely detectable to more than 51 (51≤) granular dots (Figure 7A). Nuclear localization of Meioc was observed only in some sox17::egfp spermatogonia with 51≤Meioc granules, while in other spermatogonia and spermatocytes Meioc was detected exclusively in the cytoplasm (Figure 1—figure supplement 2C, Figure 7—figure supplement 1A). Therefore, we analyzed sox17::egfp spermatogonia with 51≤Meioc granules by separating those in the nucleus from those in the cytoplasm. The 28S rRNA intensity increased in cells with 11–50 Meioc granules and more (Figure 7A). On the other hand, Piwil1 expression levels were apparently the same across most cells, except cells with 51≤nuclear Meioc granules (Figure 7—figure supplement 1B). Since nucleoli were difficult to observe in the isolated cells, probably due to the isolation procedure, which takes several hours, it was difficult to verify whether Piwil1 was present in the nucleolus when Meioc expression was low. Therefore, we also examined the expression of Piwil1 in 1- to 2-cell spermatogonia in wild-type testis sections. Piwil1 was detected at almost the same levels in all cells similar to the isolated cells (Figure 7B). The large nucleolus, characteristics of presumed GSCs as described above, was observed in the cells with 11–50 Meioc granules and more, and nucleolar localization of Piwil1 was observed in the cells with 11–50 Meioc granules, but not in the cells with 51≤Meioc granules. These results support the idea that Meioc inhibits localization of Piwil1 in nucleoli and that Meioc functioned on upregulation of rRNA transcripts by preventing localization of Piwil1 in nucleoli.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig7-v1.jpg)
+
+**Figure 7.:** (A) Expression pattern of 28S rRNA in isolated sox17::egfp spermatogonia, based on the amount of Meioc granules and the localization. Right panels are intensities of 28S rRNA for each class of the purified sox17::egfp spermatogonia. 51≤C and N: 51≤cytoplasmic and nuclear Meioc granules, respectively. *p<0.05, **p<0.01, n: number of analyzed spermatogonia. Scale bars: 10 µm. (B) Expression patterns of Piwil1 in five classes of Meioc-expressing spermatogonia in testis sections. The graph shows intensities of Piwil1 in wild-type testes sections for each class of the spermatogonia. The characteristic large nucleoli of spermatogonial stem cells (SSCs) were identified based on nucleolar voids observed in DAPI staining. Arrows: Piwil1 detectable nucleoli; arrowheads: Piwil1 undetectable nucleoli. 51≤C and N: 51≤cytoplasmic and nuclear Meioc granules, respectively. **p<0.01. Scale bars: 10 µm. (C) Graphical abstract. Meioc prevents the nucleolar localization of Piwil1 and its associated Setdb1 and HP1α to upregulate rRNA transcripts that are required for zebrafish SSCs to differentiate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104295/elife-104295-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Meioc localization in 1- to 2-cell and 32≤-cell cyst spermatogonia and spermatocytes in testis sections. To distinguish spermatocytes from 32≤-cell spermatogonia, Sycp3 was stained. The number in parentheses is the corresponding cells in total. (B) Expression pattern of Piwil1 in isolated sox17::egfp spermatogonia, based on the amount of Meioc granules and the localization. Right panels are intensities of Piwil1 for each class of the purified wild-type sox17::egfp spermatogonia. 51≤ C and N: 51≤ cytoplasmic and nuclear Meioc granules, respectively. *p<0.05, **p<0.01, n: number of analyzed spermatogonia. Scale bars: 10 µm.
 
 ## Discussion
 
@@ -103,31 +202,31 @@ In this study, we revealed the function of Piwil1 in regulating rRNA transcripti
 
 ## Materials and methods
 
-## Zebrafish
+### Zebrafish
 
 The motot31533 mutant fish were isolated in the Tubingen line by N-ethyl-N-nitrosourea mutagenesis screening as described (Saito et al., 2011). The motosa13122 mutants were isolated by the Zebrafish Mutation Project (Kettleborough et al., 2013) and provided by the Zebrafish International Resource Center (ZIRC), Eugene, Oregon. We used the piwil1hu2479 line (Houwing et al., 2007), India line, AB line, IM line (Shinya and Sakai, 2011), vas::egfp (Krøvel and Olsen, 2002), and sox17::egfp (Mizoguchi et al., 2008) transgenic fish. The use of these animals for experimental purposes was approved by the committee on laboratory animal care and use at the National Institute of Genetics (approval identification numbers 27-12 and 28-13) and the University of Massachusetts Boston Institutional Animal Care and Use Committee (protocol #20120032), and carried out according to the Animal Research Reporting of In Vivo Experiments (ARRIVE) guidelines and to relevant guidelines and regulations.
 
-## Identification of the meioc gene
+### Identification of the meioc gene
 
 We used WGS to map the moto t31533 mutation to an approximately 19 Mb (~14 cM) region on chromosome 3 (Bowen et al., 2012), revealing two nonsynonymous changes within this region. One was a missense mutation affecting the smg1 gene (ENSDARG00000054570), and the other was a nonsense mutation affecting ENSDARG00000090664, orthologue of human C3H17orf104, now called Meioc (Abby et al., 2016). By further recombination mapping of the motot31533 mutation using simple sequence length polymorphisms, the mutation was found in a region of about 2.1 Mb, between markers z22516 and z8680, which contained the C3H17orf104 locus and excluded the smg1 locus.
 
-## The ythdc2 mutant
+### The ythdc2 mutant
 
 The ythdc2-/- fish were generated by CRISPR-Cas9 mutagenesis based on protocols (Chen et al., 2017; Hwang et al., 2013). A single-guide RNA (Supplementary file 3) was designed to target exon 5 of ythdc2 (ENSDART00000166268.2) to delete functional domains predicted by Pfam 35.0 (Figure 3—figure supplement 1A; Mistry et al., 2021). ythdc2 sgRNA (100 ng/µl) and 10 pmol/μl Cas9 NLS protein (abm) were co-injected into 1-cell stage India embryos. Founders were backcrossed with India fish, and the F1 siblings were screened by genotyping. Heterozygous ythdc2 knockout carrying a –14 bp frameshift mutation in exon 5 (ythdc2-, a –14 bp deletion affecting the codons from G206 that generates 63 amino acid residues from the wrong frame and stop codon after the 269th amino acid) was obtained.
 
-## Meioc and Ythdc2 antibodies
+### Meioc and Ythdc2 antibodies
 
 To produce specific antibodies against Meioc and Ythdc2, meioc cDNA encoding 356 amino acid residues from N-terminus and ythdc2 cDNA encoding amino acid residue Arg743 to Leu1381 were cloned into a pQE-30 vector (QIAGEN) and a pET-21a (+) vector (Novagen), respectively. The 6x histidine tag-fused proteins were expressed and purified as described previously (Ozaki et al., 2011). Rats and rabbits were immunized with the purified Meioc and Ythdc2 recombinant proteins, respectively. Then, anti-Meioc rat IgG and anti-Ythdc2 rabbit IgG were purified with CNBr-activated sepharose (Cytiva) conjugated with recombinant proteins according to the manufacturer’s instructions.
 
-## Western blot analysis
+### Western blot analysis
 
 Western blot analyses were performed as described (Ozaki et al., 2011) using antibodies (Supplementary file 4). Chemiluminescent signals generated with ECL Prime (GE Healthcare) were detected and quantified with Chemidoc XRS Plus (Bio-Rad). For the quantification of Piwil1, eight wild-type testes and nine piwil1+/- testes were individually used for the protein extraction and western blotting analysis. The amount of Piwil1, BMP-2, and α-Tubulin was quantified using quantity tools of ImageLab software version 6.0.1 (Bio-Rad), and Piwil1 and BMP-2 signal intensities were normalized with signal intensities of α-Tubulin.
 
-## Histological observation
+### Histological observation
 
 Testes and juveniles were fixed in 4% PFA in PBS or Bouin’s solution (Sigma) for 2 hr at room temperature (RT). Paraffin sections were prepared at a 5 µm thickness and stained with hematoxylin and eosin. For the count of spermatogonial cysts, complete serial sections of three testes each of wild-type, ythdc2-/-, meiocmo/mo; piwil1+/+, and meiocmo/mo; piwil1+/- were stained with PAS (periodic acid Schiff) to stain the Sertoli cells (Saito et al., 2014). The number of spermatogonia in cysts was identified by observation of adjacent sections. For wild-type testes, we counted them in randomly selected 10 sections. Undifferentiated spermatogonia (1- to 8-cell spermatogonia) in ythdc2-/-, meiocmo/mo; piwil1+/+, and meiocmo/mo; piwil1+/- testes were counted in randomly selected 10 fields (23547.2 µm2/field) of sections, and estimated average number of each stage of spermatogonia. The area of the sections of wild-type testes and the fields used for the counting was calculated by using ImageJ/Fiji software (Schindelin et al., 2012).
 
-## Immunohistochemistry and in situ hybridization in testis sections
+### Immunohistochemistry and in situ hybridization in testis sections
 
 Immunohistochemistry was performed with slight modifications as described (Kawasaki et al., 2016). Rehydrated sections were antigen retrieved using ImmunoSaver reagent (Nisshin EM) as per the manufacturer’s instructions and blocked with EzBlockChemi (Atto) containing 5% BSA (Sigma). Used antibodies and reagents were listed in Supplementary file 4. To analyze Ddx4, Piwil1, Piwil2, Tdrd1, and Tdrd6a localization in meiocmo/mo spermatogonia, we used anti-Ddx4 IgG labeled with fluorescein using Fluorescein labeling kit – NH2 (Dojindo) – and performed double staining with other antibodies because all antibodies were generated in rabbits.
 
@@ -135,78 +234,78 @@ In situ hybridization of rRNAs was performed with slight modifications as descri
 
 For the fluorescence detection, images were obtained under an FV1000 confocal microscope (Olympus). Overexposed Piwil1 images were acquired under conditions of high detector sensitivity, ignoring halation of Piwil1 signals in cytoplasm. The signal strength was quantified using ImageJ/Fiji software (Schindelin et al., 2012). Three testes of wild-type, meiocmo/mo, piwil1+/-, and piwil1+/- were used for the quantification. The signal intensities were normalized to the intensities of neighboring sperm or the intensities of myoid cells of basement membrane of lobules.
 
-## TdT-mediated nick-end labeling
+### TdT-mediated nick-end labeling
 
 TdT-mediated nick-end labeling assays were performed using in situ cell death detection kit (AP; Roche, Germany) as described by the manufacturers. The experiments were repeated three times.
 
-## Whole-mount in situ hybridization and immunohistochemistry
+### Whole-mount in situ hybridization and immunohistochemistry
 
 Whole-mount in situ hybridization and immunohistochemistry were performed as described (Nakamura et al., 2006). A cDNA clone for meioc was isolated from RT-PCR of testicular RNA using the primer set (Supplementary file 3). The DIG-labeled RNA probes were synthesized using the meioc cDNA and DIG RNA-labeling kit (Roche), and the reagents and antibodies were listed in Supplementary file 4.
 
-## Protein synthesis assay
+### Protein synthesis assay
 
 Measurement of protein synthesis of germ cells was performed by the Click-iT Plus OPP Alexa Fluor 594 protein synthesis assay kit (Molecular Probes) with slight modifications as described (Sanchez et al., 2016). The fragments of the meiocmo/mo and wild-type sox17::egfp testes were treated with Leibovitz’s L-15 medium (Sigma) containing a 1:400 dilution of Click-iT OPP reagent at 28°C for 30 min. Fluorescence images were acquired with a confocal microscope (FV1000, Olympus). Quantification of OP-Puro fluorescence intensity was performed using ImageJ as described (Sanchez et al., 2016). The signal intensities were normalized to the intensities of neighboring sperm and the myoid cells of basement membrane of lobules. The experiments were repeated three times.
 
-## Inhibition of ribosome translation in culture
+### Inhibition of ribosome translation in culture
 
 Testis fragments were cultured on the floating membrane in the spermatogonia proliferation medium without growth factors (Kawasaki et al., 2012), with cycloheximide at 0.1 µM, 1.0 µM, and 10 µM or the same amount of DMSO as a control for 2 days. Then, BrdU incorporation was analyzed using a Cell Proliferation Kit (GE Healthcare). At least n=3 tissues were examined.
 
 Spermatogonia of a sox17::egfp hyperplasia testis were cultured as described (Kawasaki et al., 2016). After 1 month of SSC propagation, SSCs were transferred onto the zebrafish Sertoli cell line ZtA6-12 (Kurita and Sakai, 2004) to induce differentiation, and 0.2 µM cycloheximide was added. After 9 days, the SSCs (large cells with a few large nucleoli) and the differentiated spermatogonia (small cells with several small nucleoli) were counted according to their morphology and eGFP expression. n=3 dishes were examined. Since ZtA6-12 cells were maintained in a culture medium containing the 0.22 µm pore size filtered-zebrafish embryo extract at 3 dpf (Westerfield, 2000), we did not test the cells for mycoplasma contamination.
 
-## Co-IP
+### Co-IP
 
 Co-IP was performed with slight modifications as described (Houwing et al., 2007). Testes were homogenized with cell lysis buffer M (Wako) containing cOmplete, Mini Protease Inhibitor cocktail (Roche). One IP generally contained 20 µl protein G beads (Protein G HP SpinTrap, Cytiva), three testes, and 20 µg of antibodies against Meioc or Piwil1 (Supplementary file 4) in a total volume of 500 µl. The experiments were repeated three times.
 
 For RIP, testes were homogenized with 133 µl of the lysis buffer containing 100 U/ml of SUPERase·In RNase inhibitor (Thermo Fisher Scientific) for 1 mg of testis. One IP contains 30 µl Dynabeads Protein G (Thermo Fisher Scientific), 7.2 µg of anti-Piwil1 antibody, and 250 µl of the lysates. Beads and 1% of the lysates were used for TRIzol (Thermo Fisher Scientific) RNA isolation. RNA was reverse-transcribed using the PrimeScript RT Reagent Kit with gDNA Eraser (Takara) and used for RT-qPCR with TB Green Premix Ex Taq II (Takara) using LightCycler 480 (Roche). The thermal cycling was as follows: initial hold for 2 min at 95°C followed by 60 cycles of 30 s at 95°C, 30 s at 58°C for primer set for unprocessed pre-rRNA (5’ETS-18S rRNA in Supplementary file 3; Heyn et al., 2017), and 20 s at 72°C. Fold enrichment was calculated with -ddCt by normalization with input using Sigma RIP-qRT-PCR Data Analysis Calculation Shell, associated with the Sigma Imprint RIP kit (http://www.sigmaaldrich.com/life-science/epigenetics/imprint-rna.html). The experiments were repeated three times.
 
-## Mass spectrometry
+### Mass spectrometry
 
 For mass spectrometry, co-IP using anti-Meioc IgG and normal rat IgG was performed using normal testes and hypertrophied testes as described above. We used Dynabeads Protein G (Thermo Fisher Scientific) and the anti-Meioc antibody was cross-linked with the beads as described by the manufacturers. The IP was used for mass spectrometry as described (Ishiguro et al., 2020). The raw LC-MS/MS data was analyzed against the UniProt Knowledgebase restricted to Danio rerio using Proteome Discoverer version 1.4 (Thermo Fisher Scientific) with the Mascot search engine version 2.5 (Matrix Science).
 
-## Construction of expression vectors
+### Construction of expression vectors
 
 For transfection of Meioc, Ythdc2, Piwil1, and HP1α, cDNA fragments encoding zebrafish full-length meioc, ythdc2, piwil1, and hp1α were amplified by RT-PCR using primer sets (Supplementary file 3). The amplified fragments of meioc, ythdc2, and piwil1 were subcloned into a pFLAG-CMV-5a expression vector (Sigma-Aldrich) by using EcoRI and SalI to create a FLAG tag at the C-terminus of the expressed protein. The amplified fragment was assembled via overlap sequence using NEBuilder HiFi DNA Assembly Master Mix (New England BioLabs). Each 500 ng of plasmids was used for transfection to the cells cultured in 35 mm dish.
 
 For transfection of Escherichia coli (Rosetta-gami2 [Novagen]), cDNA fragments encoding zebrafish hp1α were amplified by RT-PCR using primer sets (Supplementary file 3) and cloned into the pET-21a (+) vector (Novagen) using NEBuilder HiFi DNA Assembly Mix (New England BioLabs). Expression of cloned cDNAs was induced with 1 µM isopropyl-β-D-thiogalactopyranoside (Wako).
 
-## Pull-down assay
+### Pull-down assay
 
 The expression vectors were transfected into HEK-293A cells using Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific). After 48 hr, cells were harvested and used for immunoprecipitation as described above. We used anti-Flag M2 agarose resin (Sigma). The experiments were repeated three times. HEK293A cells were purchased from Thermo Fisher Scientific with confirmation of the absence of mycoplasma contamination.
 
-## Small RNA-seq library preparation and sequencing
+### Small RNA-seq library preparation and sequencing
 
 Total RNA from six meioc+/mo and five meiocmo/mo testis samples at 10 months of age was isolated using TRIzol RNA isolation according to the manufacturer’s instructions (Thermo Fisher Scientific). RNAs smaller than 40 nt were isolated using a 15% TBE-Urea polyacrylamide gel (Bio-Rad) and purified with sodium chloride/isopropanol precipitation. NGS library preparation was performed using the NEBNext Multiplex Small RNA Library Prep Set for Illumina (New England BioLabs) as recommended by the manufacturer (protocol version v2.0 8/13), with 14 PCR cycles for library amplification. The PCR-amplified DNA was purified using AMPure XP beads (Beckman Coulter). Size selection of the small RNA library was done on LabChip XT instrument (Perkin Elmer) using a DNA 300 assay kit. The library fractions in the range of 120–161 bp were pooled in equal molar ratio. The resulting 2 nM pool was denatured and diluted to 10 pM with 5% PhiX spike-in DNA and sequenced (single read, 51 cycles, high output mode) on two lanes of HiSeq 2000 system (Illumina).
 
-## Small RNA-seq data analysis
+### Small RNA-seq data analysis
 
 The raw NGS reads in FastQ format were cleaned from partial 3’ adapter sequences using Flexbar v.2.4 (Dodt et al., 2012) using parameters: -m 18 -ao 10 -as AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC. Read mapping to the Danio rerio reference genome (Zv9/danRer7 build from Illumina iGenomes) was carried out using Bowtie v.0.12.8 (Langmead et al., 2009) with parameters: -n 0 -e 80 -l 18 -y --best --nomaqround. Reads were assigned to the predicted zebrafish 28S and 18S rRNAs, defined as 4110 nt and 1887 nt sequences from GenBank records CT956064 and BX537263 with highest Megablast homology to the respective rRNAs from Cyprinus carpio (GenBank JN628435), as well as to the zebrafish R2 transposon (GenBank AB097126), using Bowtie with perfect match parameters (-v 0 -m 1). Quality assessment of the raw data and length profiling of the mapped reads was performed with FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc). The sequence data have been deposited in the NCBI GEO repository (http://www.ncbi.nlm.nih.gov/geo) under accession number GSE84060.
 
-## Inhibition of RNA polymerases
+### Inhibition of RNA polymerases
 
 Fragments of meiocmo/mo testes were cultured in the spermatogonia proliferation medium without growth factors (Kawasaki et al., 2012). Actinomycin D (Wako) at 1 µg/ml, α-amanitin (Bensaude, 2011) at 10 µg/ml and BMH-21 (Sigma) (Colis et al., 2014) at 1 µM were added. After 1 hr incubation at 28°C in 5% CO2/20% O2, testicular samples were fixed and analyzed by immunohistochemistry for Piwil1. The experiments were repeated three times.
 
-## In situ hybridization and immunocytochemistry of isolated spermatogonia
+### In situ hybridization and immunocytochemistry of isolated spermatogonia
 
 After sorting spermatogonia of sox17::egfp wild-type that expresses EGFP at the equivalent stage to meiocmo/mo spermatogonia (Kawasaki et al., 2012) using JSAN cell sorter (Bay Bioscience), cells were plated on the CREST-coated glass slides (Matsunami) for 10 min and fixed with 4% paraformaldehyde for 10 min. The cells were treated with 0.5% Triton X-100 in PBS for 5 min. To detect 28S rRNA, the cells were acetylated with 0.025% acetic anhydride in triethanolamine 10 mM for 5 min and followed as described above. After hybridization, antibodies and reagents (Supplementary file 4) were used. Images were obtained under an FV1000 confocal microscope (Olympus). The signal strength of 28S rRNA, Meioc, and Piwil1 was quantified using ImageJ/Fiji software (Schindelin et al., 2012). The signal intensities of in situ hybridization (28S rRNA) and immunocytochemistry (Meioc and Piwil1) were normalized to the intensities of sense probe and control IgG, respectively.
 
 To quantify the number of Meioc granules per cell, manual focal adjustment and granule counting were performed to ensure that all intracellular granules were detected and counted. In cases where granule number exceeded 50, accurate enumeration became unreliable due to the risk of double counting. Therefore, precise quantification was performed only for cells containing fewer than 50 granules, while those with 50 or more granules were recorded as ‘50≤’.
 
-## DNA methylation analysis
+### DNA methylation analysis
 
 Because there was no information of the structure of IGS region in zebrafish, we analyzed IGS sequence of known active locus of 45S-S rDNA (Ch5: 831,755–826,807 in GRCz11) (Locati et al., 2017) using tandem repeats finder software (Benson, 1999). The result was summarized in the schema of Figure 2—figure supplement 2. The undifferentiated spermatogonia of meiocmo/mo;sox17::egfp and sox17::egfp wild-type were sorted using JSAN cell sorter (Bay Bioscience) and used for bisulfite conversion using MethylEasy Xceed Rapid DNA Bisulfite modification kit (Takara). The tandem repeat region of 45S-S rDNA IGS was amplified by PCR with EpiTaq HS (Takara) using the primer sets (Supplementary file 3). The primers were designed using Meth primer software (Li and Dahiya, 2002). All PCR products were subcloned into the pCRII vector (Thermo Fisher Scientific) and used for sequencing analysis using online QUMA software (Kumaki et al., 2008).
 
-## Comparison of RNA expression levels
+### Comparison of RNA expression levels
 
 After sorting spermatogonia of vas::egfp; meiocmo/mo and sox17::egfp wild-type that expresses EGFP at the equivalent stage to meiocmo/mo spermatogonia using JSAN cell sorter (Bay Bioscience), total RNA was extracted and used for RT-qPCR analysis as described in ‘Co-IP’ section using primer sets (Supplementary file 3). Relative gene expression levels were calculated using the comparative Ct method (Schmittgen and Livak, 2008) and normalized to the expression of gapdh. The experiments were repeated three times.
 
-## Northern blot analysis
+### Northern blot analysis
 
 Northern blot analysis was performed using DIG northern starter kit (Roche). cDNA fragments of 5’ETS and ITS1 region of 45S-S rDNA (Locati et al., 2017) and 7SL were amplified from RT-PCR of testicular RNA using the primers containing T7 and T3 promoter sequence (Supplementary file 3) and used for cRNA probe synthesis with T3 RNA polymerase using DIG RNA labeling kit (Roche). Signals of 45S pre-rRNA, pre-rRNA intermediates, and 7SL were detected with a Chemidoc XRS Plus (Bio-Rad) and quantified using quantity tools of ImageLab software version 6.0.1 (Bio-Rad). For the quantification, three wild-type and meiocmo/mo testes were individually used. Signal intensities of 45S pre-rRNA, pre-rRNA intermediates were normalized with signal intensities of 7SL.
 
-## ChIP-qPCR analysis
+### ChIP-qPCR analysis
 
 ChIP assay was performed with slight modifications as described (Imai et al., 2017). Ten testes were used for 6 ml of chromatin suspension. Sonication was carried out with a Bioruptor Standard apparatus (Diagenode) at high power for four series of seven cycles (30 s on, 30 s off). For IP, 1 ml of chromatin suspension was incubated with 20 μl of Dynabeads Protein A (Thermo Fisher Scientific) preincubated with 3 μg of rabbit anti-histone H3 trimethyl K9 (Abcam, ab8898) and Piwil1 antibodies. Quantitative PCR (qPCR) was performed with SYBR Premix Ex Taq II (Takara) using LightCycler 480 (Roche) using primer sets (Supplementary file 3). Fold enrichment was calculated with -ddCt by normalization with 10% input sample using Sigma RIP-qRT-PCR Data Analysis Calculation Shell, associated with the Sigma Imprint RIP kit (http://www.sigmaaldrich.com/life-science/epigenetics/imprint-rna.html). The experiments were repeated six times.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were presented as the mean ± standard deviation of at least three independent experiments as indicated in each method and figure legend. Statistical difference between two groups was determined using unpaired Student’s t-test when the variance was heterogeneous between the groups, and Welch’s t-test was used when the variance was heterogeneous. p<0.05 was considered statistically significant. Graphical presentations were made with the R package ggplot2 (Wickham, 2009).

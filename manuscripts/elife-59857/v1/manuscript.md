@@ -16,7 +16,7 @@
 
 ## Abstract
 
-The nucleus of the solitary tract (NTS) is critical for the central integration of signals from visceral organs and contains preproglucagon (PPG) neurons, which express leptin receptors in the mouse and send direct projections to the paraventricular nucleus of the hypothalamus (PVH). Here, we visualized projections of PPG neurons in leptin-deficient Lep mice and found that projections from PPG neurons are elevated compared with controls, and PPG projections were normalized by targeted rescue of leptin receptors in ob/ob LepRb mice, which lack functional neuronal leptin receptors. Moreover, TB/TB Lep and ob/ob LepRb mice displayed increased levels of neuronal activation in the PVH following vagal stimulation, and whole-cell patch recordings of GLP-1 receptor-expressing PVH neurons revealed enhanced excitatory neurotransmission, suggesting that leptin acts cell autonomously to suppress representation of excitatory afferents from PPG neurons, thereby diminishing the impact of visceral sensory information on GLP-1 receptor-expressing neurons in the PVH. TB/TB
+The nucleus of the solitary tract (NTS) is critical for the central integration of signals from visceral organs and contains preproglucagon (PPG) neurons, which express leptin receptors in the mouse and send direct projections to the paraventricular nucleus of the hypothalamus (PVH). Here, we visualized projections of PPG neurons in leptin-deficient Lepob/ob mice and found that projections from PPG neurons are elevated compared with controls, and PPG projections were normalized by targeted rescue of leptin receptors in LepRbTB/TB mice, which lack functional neuronal leptin receptors. Moreover, Lepob/ob and LepRbTB/TB mice displayed increased levels of neuronal activation in the PVH following vagal stimulation, and whole-cell patch recordings of GLP-1 receptor-expressing PVH neurons revealed enhanced excitatory neurotransmission, suggesting that leptin acts cell autonomously to suppress representation of excitatory afferents from PPG neurons, thereby diminishing the impact of visceral sensory information on GLP-1 receptor-expressing neurons in the PVH.
 
 ## Introduction
 
@@ -32,29 +32,37 @@ Although it is clear that innervation of the PVH by neurons in the ARH is depend
 
 ## Results
 
-## Ontogeny of GLP-1 projections into the PVH
+### Ontogeny of GLP-1 projections into the PVH
 
 In neonatal mice, GLP-1 immunoreactive fibers were detected in the PVH as early as P6 (Figure 1A). Although GLP-1 fibers are visible at P6, their density is sparse at this age, and the preautonomic compartment of the PVH is nearly devoid of GLP-1 innervation. By P10, the density of GLP-1 immunoreactive fibers increases in neuroendocrine components of the PVH, with the dorsal region of the medial parvicellular part (PVHmpd) more heavily innervated than the ventral parvicellular (PVHmpv) compartment, and at this age, GLP-1 projections begin to extend into the lateral zone of the posterior magnocellular (PVHpml) compartment (Figure 1B). This overall pattern of GLP-1 fiber distribution was maintained through P16, although the density of GLP-1 fibers increased substantially in both the PVHmpd and PVHpml compartments (Figure 1C). By P24, the density of GLP-1 immunolabeled fibers was elevated further, with a higher density observed in the PVHmpd region, compared with that of the PVHpml (Figure 1D). At 2 months of age, the density and distribution of GLP-1 immunoreactive fibers in the PVH achieves levels that are similar to that of adult mice (Figure 1E). Throughout development, we observed GLP-1 immunoreactive fibers in the most rostral portions of the PVH (PVHap), or within the caudal preautonomic part of the PVH (PVHlp), but to a lesser degree than the neuroendocrine PVHmpd and PVHpml compartments.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59857/elife-59857-fig1-v1.jpg)
 
-**Figure 1.:** Maximum intensity projections of confocal images through the PVH of WT (A–E) and Lep (ob/obF–J) mice illustrate the density of GLP-1 immunoreactive fibers (green) present at postnatal ages P6, P10, P16, P24, and P60. In WT mice, GLP-1 fibers first reach the PVH at P6 and continue to increase in density over time, reaching maturity by 2 months of age. In Lep mice, a significant increase in GLP-1 fiber density emerged at P16 and was maintained into adulthood. Boxes indicate location of ROIs used for quantitative analysis. Student's t-test was used to test for significant differences between genotypes at each age examined. Asterisk denotes p-values<0.05. Abbreviations: 3V, third ventricle; mpd, dorsal zone of the medial parvicellular compartment of the PVH; pml, lateral zone of the posterior magnocellular compartment of the PVH. Error bars indicate mean ± SEM; circles represent individual values; N = 5 for each group. Scale bar is 50 μm.ob/ob
+**Figure 1.:** Maximum intensity projections of confocal images through the PVH of WT (A–E) and Lepob/ob (F–J) mice illustrate the density of GLP-1 immunoreactive fibers (green) present at postnatal ages P6, P10, P16, P24, and P60. In WT mice, GLP-1 fibers first reach the PVH at P6 and continue to increase in density over time, reaching maturity by 2 months of age. In Lepob/ob mice, a significant increase in GLP-1 fiber density emerged at P16 and was maintained into adulthood. Boxes indicate location of ROIs used for quantitative analysis. Student's t-test was used to test for significant differences between genotypes at each age examined. Asterisk denotes p-values<0.05. Abbreviations: 3V, third ventricle; mpd, dorsal zone of the medial parvicellular compartment of the PVH; pml, lateral zone of the posterior magnocellular compartment of the PVH. Error bars indicate mean ± SEM; circles represent individual values; N = 5 for each group. Scale bar is 50 μm.
 
-## Leptin receptor-expressing neurons are responsive to leptin during early postnatal development and send direct projections to the PVH
+### Leptin receptor-expressing neurons are responsive to leptin during early postnatal development and send direct projections to the PVH
 
 To verify expression of LepRb in NTS neurons during postnatal development, we utilized LepRb-Cre mice to target expression of tdTomato (LepRb-Cre::tdTom mice). Moreover, these LepRb neurons appear to provide strong inputs to the PVH. To label terminal fields of NTS LepRb-expressing neurons, an AAV-encoding Cre-dependent EGFP virus was injected into the NTS of LepRb-Cre mice. The virus robustly labeled LepRb-expressing neurons in the NTS (Figure 2F,G) and revealed that the PVH receives direct projections from these neurons (Figure 2H). To confirm that LepRb are functional in NTS neurons during postnatal development we measured pSTAT3 immunolabeling in leptin-treated LepRb-Cre::tdTom mice. Following i.p. leptin injection on P16, 85% of NTS LepRb-Cre::tdTom labeled neurons were positive for pSTAT3 immunoreactivity, in contrast to the lack of pSTAT3 immunolabeling in saline-injected controls (Figure 2A–B,E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59857/elife-59857-fig2-v1.jpg)
+
+**Figure 2.:** (A), (B) Representative images of pSTAT3 immunoreactivity (green) in LepRb-Cre::tdTom mice injected with leptin or saline control at P16. (C), (D) Representative images of pSTAT3 immunoreactivity in GCG-Cre::SynTom mice injected with leptin or saline control at P16. (E) Percentage of LepRb and PPG neurons in the NTS that are responsive to leptin. (F, G) LepRb-expressing neurons are visualized by injection of AAV-EGFP virus into the NTS of a LepRb-Cre mouse. (H) Densely labeled terminals in the PVH from LepRb-expressing neurons in the NTS. N = 3 for each group. Abbreviations: 3V, third ventricle; AP, area postrema; DMX, dorsal motor nucleus of the vagus; NTSco, commissural nucleus of the solitary tract; NTSm, medial nucleus of the solitary tract; NTSl, lateral nucleus of the solitary tract; cc, central canal.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59857/elife-59857-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** GCG-Cre mice were crossed with mice carrying a fluorescent reporter synaptophysin-tdTomato fusion protein to visualize PPG neurons and their inputs. Neurons expressing GCG-Cre::SynTom (PPG neurons) were detected primarily in the NTS, and a second small population of neurons was identified in the IRT. Dense GCG-Cre::SynTom-labeled inputs were observed in the PVH.
+
 To visualize PPG neurons and their inputs into the PVH, a synaptophysin-tdTomato fusion protein was expressed under the Gcg promoter, resulting in GCG-Cre::SynTom mice. The distribution of SynTom-labeled neurons in GCG-Cre::SynTom mice was nearly identical to previous reports, with expression located exclusively to the medulla (Jin et al., 1988; Vrang et al., 2007; Llewellyn-Smith et al., 2011; Llewellyn-Smith et al., 2013; Gu et al., 2013; Gaykema et al., 2017). The majority of GCG-Cre::SynTom-labeled neurons were observed in the NTS, with a limited number of neurons (approximately 3–4 neurons per section) located in the adjacent intermediate reticular nucleus (IRT). We did not observe GCG-Cre::SynTom cell bodies outside of the medulla (Figure 2—figure supplement 1). In addition, GCG-Cre::SynTom mice were utilized to determine if PPG neurons are responsive to leptin during development. Following i.p. leptin injection at P16, 82% of SynTom-labeled PPG neurons in the NTS displayed pSTAT3 immunoreactivity, as did the majority of PPG neurons located in the IRT, indicating that PPG neurons are responsive to leptin during postnatal development, which may impact targeting of GLP-1 projections to the hypothalamus (Figure 2C–E).
 
-## GLP-1 projections to the PVH are increased in leptin-deficient mice
+### GLP-1 projections to the PVH are increased in leptin-deficient mice
 
 To determine if leptin is required for normal development of GLP-1 projections to the hypothalamus, the density of GLP-1 immunoreactive inputs to the PVH was evaluated in leptin-deficient mice. Although immunolabeled GLP-1 fibers were clearly apparent in the PVH by P6 and increased in density over time, no statistically significant differences in their density were detected in Lepob/ob mice compared to WT controls, in either the PVHmpd or the PVHpml at either P6 or P10 (Figure 1). However, by P16, the density of GLP-1 immunoreactive fibers in the PVHmpd of Lepob/ob mice was 32% greater than that of WT mice (Figure 1C,H,M; p=0.037). At this age, no significant differences were detected in the density of GLP-1 immunoreactive fibers in the PVHpml (Figure 1C,H,M). At P24, the density of labeled fibers increased by 46.3% in the PVHmpd,and by 34.2% in the PVHpml, of Lepob/ob mice, compared with WT controls (Figure 1D,I,N; p=0.0305 and p=0.0493, respectively). The increase in GLP-1 fiber density in the PVH of Lepob/ob mice was maintained into adulthood (P60) in both the PVHmpd and PVHpml (70.2 and 61.3% higher relative to WT mice, respectively; Figure 1E,J,O; p=0.0061 and p=0.0143, respectively). Because expression of GLP-1 immunoreactivity may change in the absence of leptin, we confirmed these findings by using leptin-deficient GCG-Cre::SynTom (GCG-Cre::SynTom::Lepob/ob ) mice to visualize axons derived from PPG neurons. In alignment with our immunohistochemical results, at P16 the density of SynTom-labeled inputs was 37.4% higher in the PVHmpd of GCG-Cre::SynTom::Lepob/ob mice, and 33.8% higher in the PVHpml, compared with GCG-Cre::SynTom::WT mice (Figure 3A–C; p=0.0308 and p=0.0408, respectively). Furthermore, the increase in the density of GLP-1 axonal labeling in the PVH was maintained into adulthood: GCG-Cre::SynTom::Lepob/obmice displayed a 50% increase in the density of GCG-Cre::SynTom inputs to the PVHmpd, and a 40.2% increase in the PVHpml, compared with that of GCG-Cre::SynTom::WT mice at P60 (Figure 3D–F; p=0.0089 and p=0.0045 respectively). Leptin does not affect GLP-1 axonal inputs to the ARH, as no changes were detected in GLP-1 axon density between WT and GCG-Cre::SynTom::Lepob/obmice, indicating that leptin does not appear to uniformly impact the projection fields of PPG neurons (Figure 3G–I). Additionally, the increase in the density of SynTom inputs to the PVH of GCG-Cre-SynTom::Lepob/ob mice did not appear to be associated with any changes in the density or distribution of PPG neurons (Figure 3J–L), suggesting that leptin impacts targeting of axons to the PVH, but does not alter PPG neuron number.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59857/elife-59857-fig3-v1.jpg)
 
-**Figure 3.:** Genetic targeting of SynTom fluorescence to axons derived from PPG neurons revealed a significant increase in the density of GLP-1 projections to the PVHmpd and PVHpml in Lep mice. Quantitative analysis confirmed that fiber densities in both the mpd and pml (ROI location denoted by boxes) were apparent by P16 (ob/obA–C), and were maintained into adulthood (D–F). Leptin does not impact the density of GLP-1 inputs to the ARH, as no changes in GCG-Cre::SynTom fluorescence were identified in WT or Lep mice (ob/obG–I). No difference in the number of PPG neurons was detected between groups of adult mice (J–L). Error bars indicate mean ± SEM; circles represent individual values. Student's t-test was used to test for significant differences between genotypes at each age examined. Asterisk denotes p-values<0.05. Images are maximum intensity projections from confocal image stacks taken through 30 μm-thick sections. P16 GCG-Cre::SynTom::WT N = 3; P16 GCG-Cre::SynTom::Lepob/obN = 4; P60 GCG-Cre::SynTom::WT N = 4; P60 GCG-Cre::SynTom::Lepob/obN = 6, PPG neurons: N = 6 for each group. Abbreviations: 3V, third ventricle; mpd, dorsal zone of the medial parvicellular compartment of the PVH; pml, lateral zone of the posterior magnocellular compartment of the PVH; ARH, arcuate nucleus of the hypothalamus; AP, area postrema; DMX, dorsal motor nucleus of the vagus; NTS, nucleus of the solitary tract; cc, central canal. Scale bar is 50 μm.
+**Figure 3.:** Genetic targeting of SynTom fluorescence to axons derived from PPG neurons revealed a significant increase in the density of GLP-1 projections to the PVHmpd and PVHpml in Lepob/ob mice. Quantitative analysis confirmed that fiber densities in both the mpd and pml (ROI location denoted by boxes) were apparent by P16 (A–C), and were maintained into adulthood (D–F). Leptin does not impact the density of GLP-1 inputs to the ARH, as no changes in GCG-Cre::SynTom fluorescence were identified in WT or Lepob/ob mice (G–I). No difference in the number of PPG neurons was detected between groups of adult mice (J–L). Error bars indicate mean ± SEM; circles represent individual values. Student's t-test was used to test for significant differences between genotypes at each age examined. Asterisk denotes p-values<0.05. Images are maximum intensity projections from confocal image stacks taken through 30 μm-thick sections. P16 GCG-Cre::SynTom::WT N = 3; P16 GCG-Cre::SynTom::Lepob/obN = 4; P60 GCG-Cre::SynTom::WT N = 4; P60 GCG-Cre::SynTom::Lepob/obN = 6, PPG neurons: N = 6 for each group. Abbreviations: 3V, third ventricle; mpd, dorsal zone of the medial parvicellular compartment of the PVH; pml, lateral zone of the posterior magnocellular compartment of the PVH; ARH, arcuate nucleus of the hypothalamus; AP, area postrema; DMX, dorsal motor nucleus of the vagus; NTS, nucleus of the solitary tract; cc, central canal. Scale bar is 50 μm.
 
-## Target-specific enhancement of GLP-1 inputs to CRH neurons in leptin-deficient mice
+### Target-specific enhancement of GLP-1 inputs to CRH neurons in leptin-deficient mice
 
 To determine if targeting of GLP-1 inputs to specific subpopulations of PVH neurons is impacted by leptin, we evaluated the density of GCG-Cre::SynTom terminals onto corticotrophin-releasing hormone (CRH) and Oxytocin neurons in neuroendocrine compartments of the PVH in leptin-deficient mice. CRH and Oxytocin neurons in the PVH were visualized using immunohistochemistry in GCG-Cre::SynTom::Lepob/ob mice and GCG-Cre::SynTom::WT controls. In WT mice, GLP-1 inputs to CRH neurons appeared more numerous than those to Oxytocin neurons: the density of GCG-Cre::SynTom-labeled inputs to CRH neurons were approximately 50% greater than those to Oxytocin neurons (Figure 4A,D). Moreover, leptin appeared to preferentially impact the density of GLP-1 inputs onto CRH neurons, as we observed a greater number of GCG-Cre::SynTom-labeled terminals in close association with labeled CRH neurons in adult GCG-Cre::SynTom::Lepob/ob mice than in GCG-Cre::SynTom::WT controls (Figure 4D–F; p=0.0017). However, leptin does not appear to alter the density of GLP-1 projections to oxytocin neurons because we did not detect a significant change in the mean number of GCG-Cre::SynTom terminals onto Oxytocin neurons (Figure 4A–C).
 
@@ -62,7 +70,7 @@ To determine if targeting of GLP-1 inputs to specific subpopulations of PVH neur
 
 **Figure 4.:** Images (maximum intensity projections of confocal images) showing GLP-1 axonal labeling (red) onto Oxytocin- (A,B), or CRH-immunoreactive (D,E) neurons (green) in the PVH of GCG-Cre::SynTom::WT and GCG-Cre::SynTom::Lepob/ob mice. Insets illustrate 3D reconstructions of GLP-1 inputs onto Oxytocin and CRH neurons in GCG-Cre::SynTom::WT and GCG-Cre::SynTom::Lepob/ob mice, respectively. Quantitative analysis of GLP-1 inputs onto PVH neurons revealed a significant increase onto CRH (F), but not Oxytocin (C) neurons in GCG-Cre::SynTom::Lepob/ob mice, compared with that of GCG-Cre::SynTom::WT mice. Error bars indicate mean ± SEM; circles represent individual values. Student's t-test was used to test for significant differences between genotypes for each cell type (CRH or Oxytocin) examined. Asterisk denotes p-values<0.05. Oxytocin: GCG-Cre::SynTom::WT N = 5; GCG-Cre::SynTom::Lepob/obN = 5; CRH: GCG-Cre::SynTom::WT N = 4 GCG-Cre::SynTom::Lepob/obN = 5. Scale bar is 50 μm, inset scale bar is 10 μm.
 
-## Leptin-deficient mice have dysregulated viscerosensory transmission and hyper-representation of glutamatergic inputs to GLP-1 R neurons in the PVH
+### Leptin-deficient mice have dysregulated viscerosensory transmission and hyper-representation of glutamatergic inputs to GLP-1 R neurons in the PVH
 
 To determine if leptin alters the ability of PPG neurons to convey visceral sensory information to the hypothalamus, we injected CCK i.p. to activate vagal afferents and measured the density of Fos immunostained nuclei in the NTS and PVH of GCG-Cre::SynTom::Lepob/ob mice and WT controls. Consistent with previous findings in rats (Rinaman, 1999; Maniscalco and Rinaman, 2013), CCK administration results in an induction of Fos immunoreactivity in the majority of PPG neurons. Injection of CCK to GCG-Cre::SynTom::WT mice caused an induction of Fos immunoreactivity in 95% of labeled PPG neurons (located in the NTS and IRT), compared with saline-injected controls (Figure 5 insets A, B, D). Similar levels of Fos labeling were observed in PPG neurons of GCG-Cre::SynTom::WT and GCG-Cre::SynTom::Lepob/ob mice following CCK injection (Figure 5C inset,D). However, CCK administration resulted in a significantly higher number of Fos immunolabeled nuclei in the PVHmpd of GCG-Cre::SynTom::WT mice than in saline-injected GCG-Cre::SynTom::WT controls (Figure 5A–D; p<0.0002). Further, injection of CCK resulted in a 64% increase in the number of Fos immunolabeled nuclei in the PVHmpd of GCG-Cre::SynTom::Lepob/ob mice, compared with CCK-injected GCG-Cre::SynTom::WT mice (Figure 5A–D; p<0.0001). To test whether leptin alters the activity of postsynaptic neurons in the PVH that receive GLP-1 inputs, we used whole-cell patch-clamp electrophysiology to record miniature excitatory postsynaptic currents (mEPSCs) from PVH neurons that express GLP-1 receptors (GLP-1 R), visualized by crossing Glp1r-Cre mice with the Cre-dependent fluorescent reporter tdTomato in leptin-deficient mice (GLP-1 R-Cre::tdTom::Lepob/ob mice). Leptin did not impact the kinetics of glutamate signaling, as there were no differences measured in the rise and decay times of averaged mEPSC events normalized to peak current in GLP-1 R-Cre::tdTom::WT controls and GLP-1 R-Cre::tdTom::Lepob/ob mice (Figure 6G). Consistent with the increased levels of Fos immunoreactivity detected in the PVH of leptin-deficient mice, we observed a significant and selective increase in the frequency of mEPSCs in GLP-1 R neurons in slices isolated from GLP-1 R-Cre::tdTom::Lepob/ob mice, compared with mEPSCs recorded from labeled neurons in GLP-1 R-Cre::tdTom::WT controls (Figure 6H). The increase in mEPSC frequency observed in GLP-1 R-Cre::tdTom::Lepob/ob mice appeared to be due to a 41% decrease in inter-event intervals in leptin-deficient mice (Figure 6I; p<0.0001). Because PPG neurons are glutamatergic, these results are consistent with enhanced excitatory neurotransmission in GLP-1 R neurons of leptin-deficient mice. There was no difference in mEPSC amplitude between GLP-1 R-Cre::tdTom::Lepob/ob mice and WT controls (Figure 6J), which indicates that leptin does not directly alter the sensitivity of postsynaptic GLP-1 R neurons in the PVH to glutamate.
 
@@ -74,11 +82,11 @@ To determine if leptin alters the ability of PPG neurons to convey visceral sens
 
 **Figure 6.:** Compared with WT mice (A), mice functionally null for LepRb (LepRbTB/TB mice) exhibited increased GLP-1-immunoreactive fiber density in both the mpd and pml compartments of the PVH (B), similar to that observed in Lepob/ob mice. Restoration of LepRb expression in PPG neurons (GCG-Cre::LepRbTB/TB mice) reduced the density of GLP-1-immunoreactive fibers in the PVHmpd and PVHpml (C). Boxes indicate locations of the ROIs used for quantitative comparisons between groups (D). Activation of vagal afferents by CCK injection resulted in an increased number of Fos-labeled nuclei in the PVHmpd of LepRbTB/TB mice (F) compared with WT mice that received either saline or CCK (E, H). Restoration of LepRb in PPG neurons (GCG-Cre::LepRbTB/TB mice) normalized the number of Fos immunoreactive nuclei similar to those observed in the PVHmpd of WT mice (G, H). Abbreviations, 3V, third ventricle; mpd, dorsal zone of the medial parvicellular compartment of the PVH; pml, lateral zone of the posterior magnocellular compartment of the PVH. Error bars indicate mean ± SEM; circles represent individual values. One-way ANOVA was used to test for significant differences between genotypes, followed by post-hoc comparisons. Asterisk denotes p-values<0.05. Sample sizes for GLP-1 immunolabeling: WT N = 6, LepRbTB/TBN = 5, GCG-Cre::LepRbTB/TBN = 3. Sample sizes for CCK-induced Fos immunoreactivity: WT+ Saline N = 5, WT+ CCK N = 7, LepRbTB/TB + CCK N = 4, GCG-Cre::LepRbTB/TB + CCK N = 6.
 
-## Cell-autonomous action of leptin in the NTS specifies the density and activity of GLP-1 inputs to PVH neurons
+### Cell-autonomous action of leptin in the NTS specifies the density and activity of GLP-1 inputs to PVH neurons
 
 Leptin receptors are expressed on nearly all PPG neurons, but they are also expressed in a number of regions that provide afferents to the NTS and PVH. Therefore, we used a combined loss of function/gain of function molecular genetic approach to examine the site of action for the developmental regulation of PPG inputs to the PVH by leptin. Immunohistochemistry was utilized to visualize GLP-1 projections in functionally leptin-receptor null LepRbTB/TB mice, which effectively lack expression of LepRb throughout the CNS (LepRbTB/TB mice) due to the insertion of a LoxP-flanked transcription-blocking cassette in the Lepr gene (Berglund et al., 2012). The density of GLP-1 immunolabeled inputs to the PVH of LepRbTB/TB mice was approximately 47% higher than in WT mice (Figure 6A,B,D; p=0.0022). Furthermore, the increase in the density of immunolabeled GLP-1 inputs observed in LepRbTB/TB mice was almost identical to that observed in leptin-deficient mice when compared with WT mice. To restore LepRb signaling specifically in PPG neurons, LepRbTB/TB mice were crossed with GCG-Cre mice (resulting in GCG-Cre::LepRbTB/TB mice) and the density of GLP-1 immunoreactive fibers was measured in the PVH. Targeted expression of LepRb in PPG neurons appeared to restore the density of GLP-1 fibers in both the PVHmpd and PVHpml to levels that were similar to those observed in WT controls (Figure 6C,D), suggesting that LepRb functions cell autonomously to reduce targeting of GLP-1 projections to the PVH. Leptin does not alter PPG neuron number in either GCG-Cre::LepRbTB/TB or LepRbTB/TB mice, a finding nearly identical to that of the density and distribution of PPG neuron number in leptin-deficient mice (WT: 19.67 ± 0.8; LepRbTB/TB: 20.02 ± 0.2; GCG-Cre::LepRbTB/TB: 19.78 ± 0.7 PPG neurons per section). To assess whether manipulation of LepRb on PPG neurons impacts viscerosensory transmission from the gut to the brain, vagal afferents were stimulated by i.p. injection of CCK and the number of Fos immunoreactive nuclei in the PVH of WT, LepRbTB/TB, and GCG-Cre::LepRbTB/TB mice was quantified. Injection of CCK in WT mice resulted in a significant increase in the number of Fos immunoreactive nuclei in the PVH compared with WT mice that received saline injections (Figure 6E,H; p=0.0156). Following CCK injection, a significant 65% increase in immunolabeled Fos nuclei was detected in global leptin-receptor null LepRbTB/TB mice compared with WT mice (Figure 6E,F,H; p=0.0213), consistent with our observations in Lepob/ob mice, which suggests leptin specifies GLP-1 projections into the PVH through LepRb signaling. Further, restoration of LepRb signaling specifically in PPG neurons on an otherwise functionally LepRb null background normalized densities of Fos-labeled nuclei in the PVH of GCG-Cre::LepRbTB/TB mice, compared to those observed in WT mice (Figure 6E,G,H; p=0.4031, ns). This finding suggests that the activity of GLP-1 neural circuitry is regulated by LepRb signaling in a cell-autonomous manner. Taken together with results obtained in leptin-deficient Lepob/ob mice (see Figure 5), our observations in leptin receptor-deficient LepRbTB/TB mice suggest that leptin alters transmission of viscerosensory information primarily by acting directly on PPG neurons during development of their ascending projections.
 
-## Targeted expression of LepRb on PPG neurons does not normalize feeding behavior and anxiety-like behaviors observed in leptin receptor-deficient mice
+### Targeted expression of LepRb on PPG neurons does not normalize feeding behavior and anxiety-like behaviors observed in leptin receptor-deficient mice
 
 In order to determine the role of LepRb on PPG neurons in regulating food intake and anxiety-like behaviors, we analyzed meal patterns, performance on the elevated zero maze test and novelty-suppressed feeding test, and measured blood serum corticosterone levels in GCG-Cre::LepRbTB/TB mice with targeted expression of LepRb on PPG neurons, global LepRb-deficient (LepRbTB/TB mice), and WT controls. Leptin-receptor null (LepRbTB/TB mice) demonstrated increased body weight and food intake compared with WT mice (Figure 7A,B; p=<0.0001 and p=0.0004, respectively), consistent with previous reports (Berglund et al., 2012). However, targeted expression of LepRb on PPG neurons did not normalize body weight or food intake to wild-type levels, and these GCG-Cre::LepRbTB/TB mice remained obese and ate significantly more food than WT mice (Figure 7A,B; p=0.0046). Furthermore, targeted expression of LepRb on PPG neurons did not normalize any meal pattern parameters analyzed to those characteristic of wild-type mice (Figure 7C,D). GCG-Cre::LepRbTB/TB mice displayed no difference in meal number or meal size compared to LepRbTB/TB mice, although both of these groups displayed a significant decrease in meal number and increase in meal size compared with WT mice (Figure 7C,D; p=0.0013 and p=0.0004, respectively). Because GLP-1 is involved in the regulation of stress and anxiety (Tauchi et al., 2008; Terrill et al., 2018), we also tested whether re-expression of LepRb on PPG neurons regulates anxiety-like behavior by performance on the elevated zero maze. As expected, LepRbTB/TB mice displayed increased anxiety-like behaviors by increased percent of time spent in the closed arm (Figure 7F; p=0.0252), decreased number of transitions into the open zone (Figure 7G; p=0.0013) and significantly decreased total distance traveled compared with WT mice (Figure 7H; p=0.0498). However, targeted expression of LepRb on PPG neurons did not normalize any aspects of performance on the elevated zero maze, with GCG-Cre::LepRbTB/TB mice displaying no differences compared to LepRbTB/TB mice (Figure 7F–H). In addition, blood levels of serum corticosterone were elevated in LepRbTB/TB mice compared with WT mice (p=0.0329), but corticosterone levels in GCG-Cre::LepRbTB/TB mice did not differ from those of LepRbTB/TB mice (Figure 7I). The novelty-suppressed feeding test was used to assess ingestive behaviors in an aversive environment and the latency to initiate a feeding bout and amount consumed was measured. Consistent with the elevated anxiety-like behavior displayed by LepRbTB/TB mice in the elevated zero maze, these animals also showed significantly longer time to initiate feeding (p<0.0001) and decreased total distance traveled (p=0.0014) compared with WT mice, although total amount of food consumed was not different between the groups (Figure 7J–L). Restoration of LepRb on PPG neurons did not normalize performance on the novelty-suppressed feeding test, as GCG-Cre::LepRbTB/TB mice did not differ in their responses compared to LepRbTB/TB mice (Figure 7J–L).
 
@@ -112,39 +120,231 @@ Although other neural systems regulating energy balance may compensate for pertu
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>tdTomato</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:007914 RRID:IMSR_JAX:007914</td>
+      <td>PMID:20023653</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gcg-Cre</td>
+      <td>PMID:28218622</td>
+      <td>RRID:MMRRC_051056</td>
+      <td>Dr. Michael Scott (University of Virginia)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LepRb-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:032457 RRID:IMSR_JAX:032457</td>
+      <td>Dr. Martin Myers, Jr. (University of Michigan) PMID:17021368</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lepob/ob</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:000632 RRID:IMSR_JAX:000632</td>
+      <td>Lepob/+ heterozygotes were bred to generate homozygous, leptin-deficient mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LepRTB/TB</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:018989 RRID:IMSR_JAX:018989</td>
+      <td>PMID:22326958</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Glp1r-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:029283 RRID:IMSR_JAX:029283</td>
+      <td>PMID:27238020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Synaptophysin-tdTomato</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:012570 RRID:IMSR_JAX:012570</td>
+      <td>MGI ID: J:170755</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-cFos</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 2250S RRID:AB_2247211</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CRF</td>
+      <td>Dr. Paul Sawchenko; Dr. Wylie Vale (Salk Institute)</td>
+      <td>PBL#rC68</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HuC/D</td>
+      <td>Molecular Probes</td>
+      <td>Cat. #: A21271 RRID:AB_221448</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-dsRed</td>
+      <td>Clontech</td>
+      <td>Cat. #: 632496 RRID:AB_10013483</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Oxytocin</td>
+      <td>Peninsula</td>
+      <td>Cat. #: T-4084 RRID:AB_518524</td>
+      <td>IHC (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GLP-1</td>
+      <td>Peninsula</td>
+      <td>Cat. #: T-4363 RRID:AB_518978</td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pSTAT3 (Y705)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 9131S RRID:AB_331586</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa Fluor 568</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: A-11036 RRID:AB_10563566</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa Fluor 488</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: A-11034 RRID:AB_2576217</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse Alexa Fluor 647</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: A-21236 RRID:AB_2535805</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV pCAG-FLEX-EGFP-WPRE</td>
+      <td>Addgene</td>
+      <td>Cat. #: 51502 RRID:Addgene_51502</td>
+      <td>PMID:24695228</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leptin</td>
+      <td>Peprotech</td>
+      <td>Cat. #: 450–31</td>
+      <td>10 mg/kg i.p.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CCK</td>
+      <td>Bachem</td>
+      <td>Cat. #: H-2080</td>
+      <td>10 μg/kg i.p.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corticosterone RIA</td>
+      <td>MP Biomedicals</td>
+      <td>Cat. #: 07–120102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Colchicine</td>
+      <td>Sigma</td>
+      <td>Cat. #: C9754</td>
+      <td>4 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>V9.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>PerkinElmer</td>
+      <td>V6.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Prism</td>
+      <td>Prism 7</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mice expressing Cre recombinase under control of the leptin receptor promoter (LepRb-Cre mice) were provided by Dr. Martin Myers, Jr., University of Michigan (Leshan et al., 2006). Transgenic BAC mice expressing Cre recombinase under control of the Gcg promoter (GCG-Cre mice) were generated at the University of Texas Southwestern and validated by Scott and colleagues (Gaykema et al., 2017). Mice expressing the Cre-dependent fluorescent reporters tdTomato (tdTom mice; Ai14D-Gt(Rosa)26Sor; stock number: 007914) and synaptophysin-tdTomato (SynTom mice; Ai34D-Rosa-CAG-LSL-Synaptophysin-tdTomato-WPRE; stock number: 012570) were obtained from The Jackson Laboratory. Knockin mice expressing an IRES-Cre fusion protein under control of the Glp1r promoter (GLP-1 R-Cre mice) were generated by Dr. Stephen Liberles, Harvard Medical School (Williams et al., 2016) and obtained from The Jackson Laboratory (stock number: 029283). Mice containing a Cre-dependent Lox-P flanked transcription blocker (loxTB) sequence between exons 16 and 17 of the leptin receptor gene (LepRbTB/TB mice) were obtained from The Jackson Laboratory (stock number: 018989) and validated by Elmquist and colleagues (Berglund et al., 2012). Experimental mice were generated through heterozygous intercrosses to generate homozygous, leptin-deficient offspring (Lepob/ob mice). WT littermates with normal leptin expression were used as controls. To visualize neurons in the NTS that express leptin receptors and neurons in the PVH that express GLP-1 receptors, LepRb-Cre mice and GLP-1 R-Cre mice were crossed with tdTom mice to generate LepRb-Cre::tdTom mice and GLP-1 R-Cre::tdTom mice. To visualize PPG inputs to the PVH, GCG-Cre mice were crossed with SynTom mice to generate GCG-Cre::SynTom mice. These mouse lines were then bred onto the leptin-deficient background to generate GLP-1 R-Cre::tdTom::Lepob/ob mice and GCG-Cre::SynTom:Lepob/ob mice. WT controls were generated from the same litters.
 
 All animal care and experimental procedures were performed in accordance with the guidelines of the National Institutes of Health and the Institutional Care and Use Committee of Vanderbilt University. Mice were housed at 22°C on a 12:12 hr light:dark cycle (lights on at 6:00 am:lights off at 6:00 pm). Mice were provided ad libitum access to a standard chow diet (PicoLab Rodent Diet 20 #5053). Mice were weaned at P22 and maintained with mixed genotype littermates until males were used for experiments.
 
-## Immunohistochemistry and Treatments
+### Immunohistochemistry and Treatments
 
-## GLP-1 immunolabeling
+#### GLP-1 immunolabeling
 
 WT and Lepob/ob mice were perfused at P6, P10, P16, P24, and P60 days of age and processed for immunofluorescence by using an antibody to GLP-1 (1:5,000; Peninsula Laboratories, San Carlos, CA). Similarly, GCG-Cre::LepRbTB/TB, LepRbTB/TB mice and WT control mice were also prepared for GLP-1 immunolabeling. Mice were first anesthetized with tribromoethanol (TBE) and then perfused transcardially with cold 0.9% saline, followed by cold fixative (4% paraformaldehyde in borate buffer, pH 9.5) for 20 min. Brains were then removed from the skull and postfixed in the same fixative for 4 hr. Brains were cryoprotected overnight in a 20% sucrose solution before being frozen in powdered dry ice and sectioned on a cryostat at 20 μm (neonatal brains; P6-P24), or at 30 μm (adults; P60) by using a sliding microtome. Brain sections were first mounted onto gelatin-subbed slides, rinsed in KPBS and then pretreated for 20 min in a 0.5% NaOH / H2O2 solution in KPBS and placed in 0.3% glycine for 10 min. Next, sections were incubated in 0.03% SDS, blocked in 4% normal goat serum containing 0.4% Triton-X and 1% BSA. The slide-mounted tissue sections were then incubated for 48 hr with a rabbit anti-GLP-1 antibody. Following primary antibody incubation, sections were rinsed several times in 0.02M KPBS, incubated for 2 hr at room temperature in blocking buffer containing secondary antibodies against rabbit (raised in goat) conjugated with Alexa-Fluor fluorochromes (Life Technologies, Carlsbad, CA) and coverslipped using ProLong mounting medium (Life Technologies, Carlsbad, CA).
 
-## Leptin activation
+#### Leptin activation
 
 In order to determine if LepRb and PPG neurons in postnatal mice are responsive to leptin, LepRb-Cre::tdTom and GCG-Cre::SynTom mice received intraperitoneal (i.p.) injections of recombinant mouse leptin (10 mg/kg body weight; Peprotech Inc, Rocky Hill, NJ), or vehicle (0.9% sterile saline), at P16. Mice were anesthetized with TBE 45 min after leptin injection and perfused transcardially with 0.9% saline, followed by fixative (2% paraformaldehyde in phosphate buffer, pH 7.4) for 10 min. Brains were postfixed in the same fixative for 2 hr, and cryoprotected in 20% sucrose overnight. Each brain was sectioned at 20 μm using a cryostat and processed for pSTAT3 immunohistochemical labeling as described previously (Bouret et al., 2012). First, tissue sections were directly mounted onto superfrost slides. Next, the sections were pretreated in a 0.5% NaOH / H2O2 solution, then placed in 0.3% glycine. Sections were then incubated in 0.03% SDS, and blocked in a solution that contained 4% normal goat serum, 0.4% Triton-X, and 1% BSA. Tissue sections were incubated for 48 hr with a rabbit anti-pSTAT3 primary antibody (1:1,000; Cell Signaling, Danvers, MA). Following primary antibody incubation, sections were rinsed in 0.02M KPBS and incubated for 2 hr at room temperature in blocking buffer containing goat anti-rabbit Alexa-Fluor conjugated secondary antibodies (Life Technologies, Carlsbad, CA). Sections were coverslipped using ProLong antifade mounting medium (Life Technologies, Carlsbad, CA).
 
-## Corticosterone measurements
+#### Corticosterone measurements
 
 Plasma corticosterone levels were measured using radioimmunoassay (MP Biomedicals, Santa Ana, CA). Blood was collected from the facial vein into chilled EDTA-coated tubes. Plasma was separated by centrifugation at 4°C 6000 rpm for 15 min and stored at −20°C.
 
-## Postsynaptic target visualization
+#### Postsynaptic target visualization
 
 GLP-1 inputs to CRH and Oxytocin neurons in the PVH were visualized in GCG-Cre::SynTom::Lepob/ob mice and GCG-Cre::SynTom::WT controls. To improve immunohistochemical labeling of CRH neurons, mice were first treated with colchicine. Colchicine (Sigma-Aldrich, Milwaukee, WI; 4 mg/mL in KPBS) was injected into the right lateral ventricle by using a glass micropipette. 24 hr after colchicine treatment, mice were perfused transcardially with the same fixative as described above for GLP-1 immunohistochemistry. Brain sections were incubated for 72 hr at 4°C in blocking buffer containing the following antisera: mouse anti-HuC/D (a pan-neuronal marker to identify the cytoarchitecture and borders of the PVH; 1:500; Life Technologies, Carlsbad, CA), and either a rabbit anti-CRH (PBL#rC68; generous gift from Drs. P. Sawchenko and W. Vale, Salk Institute, La Jolla, CA), or a rabbit anti-Oxytocin antiserum (1:2500; Peninsula Laboratories, San Carlos, CA). The primary antibodies were localized with corresponding Alexa Fluor conjugated secondary antibodies (Life Technologies). Sections were mounted onto gelatin-subbed slides and coverslipped with ProLong antifade mounting medium (Life Technologies, Carlsbad, CA).
 
-## Activation of viscerosensory afferents to the NTS with systemic CCK
+#### Activation of viscerosensory afferents to the NTS with systemic CCK
 
 To test whether leptin alters the activity of PPG neurons and their downstream targets in response to a visceral stimulus, a previously validated Fos assay was adapted (Maniscalco and Rinaman, 2013). Systemic injections of CCK activate CCK-1 receptors on vagal afferents that in turn activate neurons in the caudal NTS, which project to the PVH and induce Fos expression (Rinaman et al., 1994). Accordingly, GCG-Cre::SynTom::Lepob/ob mice and GCG-Cre::SynTom::WT controls were injected i.p. with CCK (10 μg/kg; Bachem H-2080, San Carlos, CA) or 0.9% sterile saline vehicle and sections through the NTS and PVH were processed for Fos immunohistochemistry. CCK was dissolved in sterile saline vehicle just before injection. This dose of CCK was utilized because it is known to activate ascending vagal afferents that project to the PVH (Rinaman, 2003). To minimize stress, mice were handled for up to a week prior to CCK administration. After injection with CCK or saline, mice were returned to their home cage and left undisturbed for 90 min. Mixed groups of experimental and control mice were anesthetized and perfused as described above. Brain sections were incubated for 48 hr in a rabbit anti-Fos primary antibody (1:1000; Cell Signaling, Danvers, MA) which was localized by using Alexa Fluor conjugated secondary antibodies.
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 LepRb-Cre mice were anesthetized with isoflurane (1.5–2.0%, 1 L/minute in O2) and placed in a stereotaxic frame (Kopf Instruments, Tujunga, CA). The skull was exposed through a dorsal midline incision in the skin. The fourth ventricle and obex were identified and used as geographical landmarks to determine injection site in the NTS. The stereotaxic coordinates used were: A/P, −0.16; M/L, ±0.2; D/V, −0.2 from the obex. Viral injections were performed using glass micropipettes in a pressurized picospritzer system (General Valve Corporation, Fairfield, NJ; 40 pounds pressure per square inch; average duration 4msec). Then, 0.5 μL AAV pCAG-FLEX-EGFP-WPRE virus (Addgene, Cambridge, MA) was injected into the NTS. The tip of the glass micropipette was left in the brain for 5 min, and then slowly retracted. Mice were given analgesic and allowed to recover on a heating pad for 2 days post-surgery. They were then transcardially perfused as described above 14 days post-surgery.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Sections through the PVH with were examined on a laser scanning confocal microscope (Zeiss 710 or 800) and cytoarchitectonic features of the PVH, visualized with the cytoplasmic neuronal marker HuC/D (Biag et al., 2012) were used to define matching regions of interest (ROI) for quantitative analysis. Because the PVH contains functionally discrete subcompartments, we quantified the density of GLP-1 immunolabeled or GCG-Cre::SynTom-labeled fibers in the PVH in anatomically defined ROIs, as well as onto specific cell types. Thus, we quantified GLP-1 input density in the PVHmpd subcompartment, which is involved in the control of hormone secretion from the anterior pituitary, and in the PVHpml, because these cells innervate regions of the brainstem known to regulate autonomic neurons. Moreover, these subcompartments contain the highest density of labeled GLP-1 fibers, as reported previously in the rat (Tauchi et al., 2008). In addition to subnuclear quantification, we also measured the density of GLP-1 inputs onto specific cell types within in the PVH, as leptin has been shown to impact peptidergic innervation of neuroendocrine and sympathetic preautonomic neurons with both cell type and target-neuron specificity (Bouyer and Simerly, 2013). Because it was reported that PPG neurons primarily innervate CRH and Oxytocin neurons in the PVH (Tauchi et al., 2008; Katsurada et al., 2014; Kanoski et al., 2016), we measured inputs to CRH and Oxytocin neurons the PVH at higher magnification. Confocal image stacks were collected for each ROI through the entire thickness of the PVH at a frequency of 0.4 μm using the 40x objective and a frequency of 1.19 μm using a 20x objective. Velocity visualization software (PerkinElmer, Waltham, MA) was used to prepare 3D reconstructions of each multichannel set of images. To quantify the overall densities of labeled fibers in each ROI of the PVH, a previously validated methodology was utilized (Bouyer and Simerly, 2013). First, images were binarized, skeletonized, and the total fiber length was summed for each ROI throughout the image stack to obtain an estimate of the total density of GLP-1 fibers within that ROI.
 
@@ -152,24 +352,24 @@ The density of labeled inputs from PPG neurons onto identified CRH and Oxytocin 
 
 To measure the density of Fos labeling in the NTS and PVH that resulted from i.p. injection of CCK, the number of Fos immunoreactive nuclei was counted in maximum projection confocal images through each region aided by Volocity software. Images of sections through the caudal NTS containing labeled GCG-Cre::SynTom neurons were matched using cytoarchitectonic features of the caudal brainstem such as the area postrema, large motor neurons of the DMX, and the central canal and used for quantification. The number of GCG-Cre::SynTom-expressing neurons in each section was counted manually and the number of Fos immunoreactive nuclei was counted using the object counting function in Volocity. The number of Fos immunoreactive nuclei that were colocalized to GCG-Cre::SynTom-expressing neurons in the NTS was expressed as a percentage of the total number of GCG-Cre::SynTom-expressing neurons counted within the caudal NTS. Numbers of Fos immunoreactive nuclei were also counted in the same ROIs through the PVH as described previously for GLP-1 fiber density measurements. Images containing the PVHmpd and PVHpml regions were identified and Volocity software was used to count the total number of Fos positive nuclei in the ROIs in the PVHpml and PVHmpd regions that receive dense GLP-1 inputs. Similarly, the number of pSTAT3 immunoreactive nuclei in LepRb- (LepRb-Cre::tdTom) and in PPG (GCG-Cre::SynTom) neurons was quantified in sections through the NTS by using object counting features of Volocity software and expressed as a percentage.
 
-## Electrophysiology
+### Electrophysiology
 
 In order to measure spontaneous synaptic currents, acute brain slices were prepared from GLP-1 R-Cre::tdTom::Lepob/ob and GLP-1 R-Cre::tdTom::WT mice. Mice were anesthetized with isoflurane (5%) and perfused transcardially with ice-cold Choline-Cl slicing solution containing 105 mM Choline-Cl, 2.5 mM KCl, 1.25 mM NaH2PO4, 7 mM MgCl2, 25 mM NaHCO3, 25 mM Glucose, 11 mM Na-ascorbate, 3 mM Na-pyruvate, and 0.5 mM CaCl2. Mice were decapitated, the brains rapidly removed from the skull and 300 μm-thick coronal sections cut into cold slicing solution on a Leica VT1200S vibratome. Slices were stored in oxygenated artificial cerebrospinal fluid (aCSF) and maintained at 32°C throughout the experiment. Whole-cell voltage clamp recordings (at a holding potential of −60 mV) were obtained from the cell bodies of fluorescently identified GLP-1 R-Cre::tdTom neurons. Miniature excitatory postsynaptic currents (mEPSCs) were recorded using a Multi-Clamp 700B amplifier. Signals were digitized through a Digidata 1550B, interfaced via pCLAMP 10 software (Molecular Devices, San Jose, CA). All recordings were performed at 32°C, maintained with a TC-344B temperature controller connected to an inline heater (64–0102) and heated PH-1 platform (Warner Instruments, Hamden, CT). Patch pipettes were pulled from borosilicate glass capillaries with resistances ranging from 3 to 5 MΩ when filled with pipette solution. The bath solution contained 124 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 1.25 mM NaH2PO4, 25 mM glucose, 25 mM NaHCO3, 1 mM Na-ascorbate and 1 mM Na-pyruvate. Postsynaptic AMPA-receptor mediated currents in response to spontaneous release of glutamate-containing vesicles from presynaptic terminals were recorded in the presence of the sodium channel blocker TTX (1 µM). The pipette solution contained 120 mM Cesium Methanesulfonate (CsMeSO4), 5 mM CsCl, 3 mM Na-ascorbate, 4 mM MgCl2, 10 mM HEPES, 2 mM ethylene glycol-bis-(aminoethyl ethane)-N,N,N’,N’-tetraacetic acid (EGTA), 4 mM Na-ATP, 0.4 mM Na-GTP, 10 mM phosphocreatine, 0.5 mM CaCl2, 5 mM glucose, 5 mM QX-314 pH 7.25 (CsOH). All signals were digitized at 20 kHz, filtered at 2 kHz, and analyzed offline with Clampfit software (Molecular Devices, San Jose, CA). Images of patched cells were captured on a Zeiss Axioskop 2 FS Plus microscope equipped with a Ximea XiQ USB3 Vision camera with a 40x objective.
 
-## Behavioral experiments
+### Behavioral experiments
 
-## Meal pattern testing
+#### Meal pattern testing
 
 Feeding behavior was measured in 16×14×13 cm operant chambers (Med Associates). Mice were individually housed and adapted to the chambers one week before meal pattern testing. Mice lived in the operant chambers continuously for two weeks while spontaneous food intake measurements were recorded for 23 hr each day. At the start of each session per day, a fixed ratio (FR) reinforcement schedule was employed and mice needed to successfully press the lever in order to receive a 20 mg food pellet (Bio-Serv; Frenchtown, NJ). The balanced precision pellet diet used in meal pattern testing was comparable to standard chow, with a macronutrient composition of 22% protein, 66% carbohydrate, and 12% fat, with a caloric density of 3.62 kcal/g. Mice started at FR1 on the first day of training and the FR schedule was increased to FR5, FR10, FR20, until the mice reached FR30 and they remained on the FR30 schedule until the end of testing. The FR of 30 was chosen because this schedule was previously determined to minimize pellet waste and loss while reproducing free feeding intake patterns. This meal pattern paradigm was adapted from a previously validated protocol (Richard et al., 2011).
 
-## Elevated zero maze
+#### Elevated zero maze
 
 Mice were adapted to the empty test chamber (27.5 × 27.5 cm) for ten minutes before testing. Following acclimation, the mice are placed in the chamber and the total distance traveled, the percent of time in the closed zones, and the number of transitions between zones were recorded for up to 12 min.
 
-## Novelty-suppressed feeding test
+#### Novelty-suppressed feeding test
 
 Mice received ad libitum access to their standard chow diet in their home cage for two hours each day during 4 days of training. Mice were food deprived overnight prior to the test day. The testing was performed in an open field chamber that measured 50 × 50 cm. One pellet of standard chow diet was placed in the center of the arena. Mice were tested individually, and each mouse was placed in the corner of the open field chamber and the total activity and latency to initiate food intake was recorded using animal tracking and recording software (ANYmaze; Stoelting Co, Wood Dale, IL) for 20 min. The total amount of food consumed was measured.
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
 Group data are presented as mean values ± SEM. Statistical significance was determined using GraphPad Prism software. Student’s t-test was used to compare data within two groups, using paired and unpaired tests where appropriate. One-way ANOVA followed by a pairwise post-hoc test was used to test for comparisons between three groups. p-values<0.05 were considered statistically significant.

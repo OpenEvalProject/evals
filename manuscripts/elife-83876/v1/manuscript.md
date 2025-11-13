@@ -13,16 +13,33 @@
 
 ### Affiliations
 
-1. https://ror.org/026k5mg93 School of Psychology, University of East Anglia Norwich United Kingdom
-2. https://ror.org/01v29qb04 Department of Psychology, Durham University Durham United Kingdom
+1. School of Psychology, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))
+2. Department of Psychology, Durham University Durham United Kingdom ([ROR:01v29qb04](https://ror.org/01v29qb04))
 3. Community Empowerment Lab Lucknow India
-4. https://ror.org/05gq02987 Department of Pediatrics, Brown University Providence United States
+4. Department of Pediatrics, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
 ## Abstract
 
-Poor air quality has been linked to cognitive deficits in children, but this relationship has not been examined in the first year of life when brain growth is at its peak. We measured in-home air quality focusing on particulate matter with diameter of <2.5 μm (PM 2.5 ) and infants’ cognition longitudinally in a sample of families from rural India. Air quality was poorer in homes that used solid cooking materials. Infants from homes with poorer air quality showed lower visual working memory scores at 6 and 9 months of age and slower visual processing speed from 6 to 21 months when controlling for family socio-economic status. Thus, poor air quality is associated with impaired visual cognition in the first two years of life, consistent with animal studies of early brain development. We demonstrate for the first time an association between air quality and cognition in the first year of life using direct measures of in-home air quality and looking-based measures of cognition. Because indoor air quality was linked to cooking materials in the home, our findings suggest that efforts to reduce cooking emissions should be a key target for intervention. Bill & Melinda Gates Foundation grant OPP1164153.
+Background:
+Poor air quality has been linked to cognitive deficits in children, but this relationship has not been examined in the first year of life when brain growth is at its peak.
+
+
+Methods:
+We measured in-home air quality focusing on particulate matter with diameter of <2.5 μm (PM2.5) and infants’ cognition longitudinally in a sample of families from rural India.
+
+
+Results:
+Air quality was poorer in homes that used solid cooking materials. Infants from homes with poorer air quality showed lower visual working memory scores at 6 and 9 months of age and slower visual processing speed from 6 to 21 months when controlling for family socio-economic status.
+
+
+Conclusions:
+Thus, poor air quality is associated with impaired visual cognition in the first two years of life, consistent with animal studies of early brain development. We demonstrate for the first time an association between air quality and cognition in the first year of life using direct measures of in-home air quality and looking-based measures of cognition. Because indoor air quality was linked to cooking materials in the home, our findings suggest that efforts to reduce cooking emissions should be a key target for intervention.
+
+
+Funding:
+Bill & Melinda Gates Foundation grant OPP1164153.
 
 ## Introduction
 
@@ -36,9 +53,156 @@ Here, we examined the relationship between poor air quality and cognition in inf
 
 Our study was conducted in Shivgarh, India, a rural community in Uttar Pradesh, one of the states in India that has been most strongly impacted by poor air quality (Pandey et al., 2021). We report data from 215 families from a range of socio-economic backgrounds (see Table 1). Infants were enrolled at 6 months (N=108) or 9 months of age (N=107) at which time they completed an in-lab assessment of visual cognition (see Figure 1A) as well as standardized psychomotor and cognitive assessments. A similar assessment was repeated a year later when the same infants were 18 or 21 months of age (see Methods). We examined these two cohorts based on evidence that there is an improvement in visual working memory capacity between 6 and 8 months. In particular, Ross-Sheehy and colleagues (Ross-Sheehy et al., 2003) showed that 6.5-month-old infants demonstrate greater-than-chance change preference scores with a memory load of one item, while 10- and 13-month-old infants showed greater-than-chance change preference scores for memory loads of two and three items. Similarly, 6.5-month-old infants could remember one spatial location, while 8- and 12.5-month-old infants showed evidence of remembering multiple locations (Oakes et al., 2011). By assessing infants in rural India on either side of this transition, we hoped to either replicate a similar transition or, alternatively, to reveal a delay in this transition across cultures.
 
+**Table 1.**
+ Proportional distribution of key demographic indices for families classified as high versus low SES based on a median split of family SES measured using the modified Kuppuswamy scale.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Electricity?</th>
+      <th>Income*</th>
+      <th>Cooking Fuel</th>
+      <th>High SES</th>
+      <th>Low SES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No</td>
+      <td>Low</td>
+      <td>Cow dung</td>
+      <td>0.02</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.02</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Medium</td>
+      <td>Cow dung</td>
+      <td>0.01</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.04</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>High</td>
+      <td>Cow dung</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.03</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.01</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Low</td>
+      <td>Cow dung</td>
+      <td>0.04</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.08</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.04</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Medium</td>
+      <td>Cow dung</td>
+      <td>0.03</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.17</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.02</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>High</td>
+      <td>Cow dung</td>
+      <td>0.02</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>0.22</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>LPG</td>
+      <td>0.26</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*
+Incomes ranged from ₹8000 to ₹480,000 with tertile divisions at ₹45,000 and ₹72,720._
+
 ## Methods
 
-## Participants
+### Participants
 
 Infants born to mothers from Shivgarh, Uttar Pradesh, India and who were aged 6 months±15 days or 9 months±15 days were eligible for participation. Infants were initially screened as belonging to either ‘high socioeconomic status (SES)’ (both parents having >10 years of education) or ‘low SES’ families (both parents have ≤ 5 years of education; see Ahmed et al., 2018 for a similar screening approach). Infants born to parents screened with colour vision deficits (due to the nature of the VWM task), or with any congenital problems, or gestational age <26 weeks at birth, were excluded from the study.
 
@@ -48,42 +212,42 @@ Air quality data were collected for a total of 219 children; of those, 215 had d
 
 As part of the first laboratory visit, caregivers were interviewed to obtain demographic indices and family SES data using the modified Kuppuswamy Scale (Mohd Saleem, 2020). This scale classifies SES using occupation, education, and family income. Table 1 shows how high and low SES families (using a median split on the Kuppuswamy SES Score) were distributed along multiple demographic indices.
 
-## Materials
+### Materials
 
-## Visual cognition task
+#### Visual cognition task
 
 We used a preferential looking change detection task (Ross-Sheehy et al., 2003) with a 10 s trial duration (see Wijeakumar et al., 2019; Delgado Reyes et al., 2020). A 42-inch LCD monitor that was connected to a PC running Experiment Builder was used to display the stimuli. Looking data were collected at 500 Hz using an Eyelink 1000 Plus eye-tracker (SR Research). Where eye-tracking data were not available, looking data were collected with a webcam and hand-coded at 30 frames-per-second using Datavyu, 2014.
 
 Infants sat on their mother’s lap 100 cm from the screen. A target sticker was placed on the infant’s forehead so the eye-tracking system could track head movement. The stimuli consisted of two side-by-side flickering displays composed of colored squares (Figure 1A). One side contained the ‘change’ display and the other contained the ‘no-change’ display. Each stimulus display area was 29.5 cm in width and 21 cm in height, with a 21 cm gap between the display on the left and right (each coloured square was approximately 5cm x 5 cm). The displays had a solid grey background. The colours of the squares presented on each display were selected from a set of nine colours: green (RGB: 0, 153, 0), brown (128, 64, 32), black (0, 0, 0), violet (128, 0, 128), cyan (128, 255, 255), yellow (255, 255, 0), blue (0, 0, 255), white (255, 255, 255), and red (255, 0, 0). The set size (number of items) was the same between the two displays and remained constant during the 10 s trials. The colors on a display were always different from each other but colors could be repeated between the displays.
 
-## Standardized assessments
+#### Standardized assessments
 
 We collected standardized psychomotor and cognitive assessments in year 1 using the Mullen Scales of Early Learning (MSEL). In year 2, we used the Ages and Stages Questionnaire (3rd edition; ASQ). We switched to the ASQ in year 2 because preliminary testing with the MSEL revealed many questions that were not relevant to the rural setting in Shivgarh.
 
-## Air quality monitoring
+#### Air quality monitoring
 
 Air quality data were acquired using the Air Visual Node monitor (model B01MF6X1 YK, Atlanta Healthcare, Inc). We selected this device based on validation data comparing the device to a reference Beta Attenuation Monitor (BAM) in Beijing, China during June of 2015 (Molenar, 2016). Daily concentration estimates from the two devices correlated highly (R2
 =0.96). We purchased 20 devices.
 
-## Procedure
+### Procedure
 
-## Visual cognition task
+#### Visual cognition task
 
 Children were tested individually. The task began with a 5-point calibration sequence. Next, the visual cognition task began (see Figure 1A). The squares simultaneously appeared for 500ms and disappeared for 250ms during the 10 s trials. For the ‘no-change’ display, the colors of the squares remained constant throughout the trial. For the ‘change’ display, one of the squares changed color after each disappearance. The changing square was randomly selected, and its color was derived from the set of colors not currently present in that display. Consistent with prior studies, memory load was varied between 1, 2, and 3 items on each side for 6- and 9-month-old infants and 2, 4, and 6 items on each side for 18- and 21-month-old infants. Infants were presented with 36 total trials in six blocks of six trials. Each block contained three trials (one for each load) for each change side. Participants could take breaks between blocks. Participants completed on average 20.99 trials in year 1 (SD = 9.72) and 26.25 trials in year 2 (SD = 9.66).
 
-## Standardized assessments
+#### Standardized assessments
 
 Standardized assessments were conducted in a quiet room with trained staff. The MSEL was administered in Year 1, while the ASQ was administered in Year 2. The ASQ questionnaire for each infant was selected using the online ASQ calculator (https://agesandstages.com/free-resources/asq-calculator/). We adapted the ASQ administration to improve the reliability of the data. Specifically, a trained assessor administered the ASQ in collaboration with the parent. In cases where ASQ questions asked about behaviors that could be elicited (e.g. ‘When you ask your child to, does he go into another room to find a familiar toy or object?’), these tasks were completed ‘live’, ensuring that the child was given ample time. If a question was not amenable to live assessment, the mother’s verbal report was taken as the response.
 
-## Use of the Air Visual Node device
+#### Use of the Air Visual Node device
 
 During each in-home assessment period, air quality data were collected across 3 days with the monitor placed at roughly head height in the room where the child typically slept or spent most of their time (see Figure 2A). The monitor was inaccessible to children. Air quality was monitored in 3-monthly intervals in-between the Year 1 and Year 2 laboratory visits for a maximum of 6 collection periods for each household. Data were collected from the AVN device every 10 s. Households had to have at least 5 hr of recorded data in any given round for that round to be included in analysis.
 
 Data from the air quality monitors were downloaded after each 3-day period and quality checked. After 8–10 months of use, a few of the devices were returning very high or very low values. Henceforth, devices were regularly cleaned. After cleaning, multiple devices were tested in the same room to ensure they were returning the same air quality readings. Any devices returning erroneous values were retired. By the end of the 2-year study, 11 devices had been retired.
 
-## Methods of analysis
+### Methods of analysis
 
-## Visual cognition measures
+#### Visual cognition measures
 
 The eye-tracking data were exported on a frame-by-frame basis using SR research Data Viewer. The area of interest around the two objects was increased to match video coded data which coded looking to the left, right, or away. Where there was no recorded eye-tracking data, the hand-coded video data were used instead. Of the 9956 total trials used to calculate the scores, 3047 trials (30.6%) were manually coded. We re-coded 17% of the data to check reliabilities. Reliabilities were very good with a mean Kappa for the 6-month cohort of 0.73 and a mean Kappa for the 9-month cohort of 0.83.
 
@@ -95,15 +259,262 @@ The shift rate measure was taken from the full length of any trial. This measure
 
 The baseline model for each change preference measure was a linear mixed-effect model with year (1 or 2), working memory load (low, medium or high), SES (Kuppuswamy SES score), and age cohort (6 or 9 months) as independent variables. We also included the mean proportion looking to the first fixated item in the first time window (1–750ms) before any visual changes had been introduced to get an initial measure of visual dynamics for each infant (LookingWindow1). Year and age cohort were difference-coded, SES was centered, and load was input as a factor. To allow for individual differences across year and load, a random intercept for each participant was included. To arrive at a minimal baseline model, we began with a model that only included main effects. We then introduced two-way, three-way, and four-way interactions, only including interactive effects that showed evidence of improving the model fit. For the ‘first-look no-change’ measure, the final baseline model included all main effects and the following interactions: Year x SES, Year x LookingWindow1, SES x LookingWindow1, and Year x SES x LookingWindow1 (see Table 2). For the ‘first-look change’ measure, the final baseline model included all main effects (see Table 10).
 
+**Table 2.**
+ Baseline model for the change preference scores.
+Model parameters for linear mixed effect model assessing the impact of year, load, SES score based on the Kuppuswamy scale, age cohort, and visual dynamics in LookingWindow1 on the ‘first-look no-change’ change preference scores (baseline change preference model).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.488</td>
+      <td>0.054</td>
+      <td>534.793</td>
+      <td>9.062</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>–0.044</td>
+      <td>0.107</td>
+      <td>742.433</td>
+      <td>–0.411</td>
+      <td>0.681</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.029</td>
+      <td>0.009</td>
+      <td>857.116</td>
+      <td>3.130</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>–0.001</td>
+      <td>0.009</td>
+      <td>854.106</td>
+      <td>–0.114</td>
+      <td>0.909</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>–0.006</td>
+      <td>0.013</td>
+      <td>527.033</td>
+      <td>–0.417</td>
+      <td>0.677</td>
+    </tr>
+    <tr>
+      <td>LookingWindow1</td>
+      <td>–0.067</td>
+      <td>0.065</td>
+      <td>548.916</td>
+      <td>–1.038</td>
+      <td>0.300</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.027</td>
+      <td>0.014</td>
+      <td>183.400</td>
+      <td>1.913</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>Year:SES</td>
+      <td>0.036</td>
+      <td>0.027</td>
+      <td>715.570</td>
+      <td>1.350</td>
+      <td>0.177</td>
+    </tr>
+    <tr>
+      <td>Year:LookingWindow1</td>
+      <td>0.075</td>
+      <td>0.129</td>
+      <td>731.071</td>
+      <td>0.582</td>
+      <td>0.561</td>
+    </tr>
+    <tr>
+      <td>SES:LookingWindow1</td>
+      <td>0.006</td>
+      <td>0.016</td>
+      <td>532.948</td>
+      <td>0.381</td>
+      <td>0.704</td>
+    </tr>
+    <tr>
+      <td>Year:SES:LookingWindow1</td>
+      <td>–0.054</td>
+      <td>0.033</td>
+      <td>710.951</td>
+      <td>–1.665</td>
+      <td>0.096</td>
+    </tr>
+  </tbody>
+</table>
+
 All models were assessed for fit based on a Q-Q plot of the residuals and the R package DHARMa (Hartig, 2020). Analyses reported in the tables use the p values calculated using Satterthwaite’s method from the package lmerTest (Kuznetsova et al., 2017) to enable the reader to glean the direction of all effects. In addition, the contribution of each significant effect to a model was assessed using type 3 Wald Chi-squared tests, with effect sizes reported in text using the effectsize package in R (Ben-Shachar et al., 2020). In all models we aimed to theoretically motivate the inclusion of all effects and limit spurious correlations by only adding effects where they were thought to contribute a priori. In the case of interactions, models were tested to see whether interactions improved model fit through formal model comparison, and interactions were not included if they did not contribute to model fit.
 
 The baseline model for shift rate was arrived at using a similar procedure. The final baseline model included all main effects and a Year x SES interaction (see Table 3).
 
-## Standardized assessments
+**Table 3.**
+ Model parameters for linear mixed effect model assessing the impact of year, load, SES and age cohort on the shift rate (baseline visual processing speed model).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.631</td>
+      <td>0.014</td>
+      <td>196.30</td>
+      <td>45.260</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>0.016</td>
+      <td>0.017</td>
+      <td>893.40</td>
+      <td>0.963</td>
+      <td>0.336</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.040</td>
+      <td>0.011</td>
+      <td>812.80</td>
+      <td>3.485</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>0.001</td>
+      <td>0.011</td>
+      <td>811.70</td>
+      <td>0.071</td>
+      <td>0.943</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.002</td>
+      <td>0.003</td>
+      <td>207.00</td>
+      <td>0.545</td>
+      <td>0.587</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.012</td>
+      <td>0.028</td>
+      <td>195.80</td>
+      <td>0.429</td>
+      <td>0.668</td>
+    </tr>
+    <tr>
+      <td>Year:SES</td>
+      <td>–0.007</td>
+      <td>0.004</td>
+      <td>928.20</td>
+      <td>–1.553</td>
+      <td>0.121</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Standardized assessments
 
 We used non-standardized measures from the MSEL and ASQ as there are no standardized scores for rural India. From the MSEL, we use the composite standard T-score as a general measure of cognition. The baseline model for this measure was a linear model with age cohort and SES included as main effects (see Table 4). For the ASQ, we used the problem-solving measure. The baseline model was a linear model with the ASQ measure as the dependent variable and age cohort and SES as independent variables (see Table 4).
 
-## Data filtering and analysis of air quality data
+**Table 4.**
+ Model parameters for linear models describing effects of age cohort and SES on standardized cognitive scores (baseline standardized cognitive models).
+Measures included are MSEL composite T-score and ASQ problem solving score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Mullen Composite</td>
+      <td>(Intercept)</td>
+      <td>101.299</td>
+      <td>0.960</td>
+      <td>105.562</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.345</td>
+      <td>1.920</td>
+      <td>–0.180</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.769</td>
+      <td>0.232</td>
+      <td>3.308</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ASQ Problem Solving</td>
+      <td>(Intercept)</td>
+      <td>30.581</td>
+      <td>0.955</td>
+      <td>32.032</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–5.549</td>
+      <td>1.909</td>
+      <td>–2.907</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.923</td>
+      <td>0.231</td>
+      <td>3.998</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Data filtering and analysis of air quality data
 
 The air quality data were collated and read into R. Data were inspected to understand the cyclical patterns across days and months. The air quality data were filtered to remove data from any defective devices (see above), and then down-sampled so that we had one observation per hour. This smoothed the data and removed temporal autocorrelation. The down-sampled data were then fit with a generalized additive mixed model (GAMM) in R using the ‘bam’ function from the package mgcv (Wood, 2011). The model included air quality as the dependent variable and a tensor smooth of time of day (in hours) and date, with a cubic regression spline of 11 dimensions for each as independent variables. The model also allowed a smoothed random effect of participant. To reduce autocorrelation, the model was fit with a Rho of 0.6. Temporal autocorrelation was assessed using the itsadug package in R (van Rij et al., 2020). The model provided an excellent fit, capturing annual fluctuations by date (see Figure 2B) and daily fluctuations by hour (see Figure 2C).
 
@@ -111,12 +522,607 @@ The participant-level random intercept was extracted from the model, to act as a
 
 We modelled individual estimates of air quality using a linear model with the AQI random intercept value as the dependent variable and age cohort and cooking fuel type as independent variables (see Table 5). A second model for air quality was run but using the SES score (centered) as a replacement for cooking fuel (also in Table 5). These models were comparable, showing the strong relationship between cooking fuel and SES (see also, Table 1).
 
-## Analysis of air quality associations with cognition
+**Table 5.**
+ Model parameters for linear models assessing the baseline variability of SES, cooking fuel, and age cohort on the air quality reading (baseline air quality models).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Cooking Fuel</td>
+      <td>(Intercept)</td>
+      <td>1.461</td>
+      <td>2.767</td>
+      <td>0.528</td>
+      <td>0.598</td>
+    </tr>
+    <tr>
+      <td>Cooking Fuel1</td>
+      <td>10.866</td>
+      <td>4.517</td>
+      <td>2.405</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Cooking Fuel2</td>
+      <td>–1.519</td>
+      <td>3.119</td>
+      <td>–0.487</td>
+      <td>0.627</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.548</td>
+      <td>4.213</td>
+      <td>–0.13</td>
+      <td>0.897</td>
+    </tr>
+    <tr>
+      <td rowspan="3">SES</td>
+      <td>(Intercept)</td>
+      <td>–0.004</td>
+      <td>2.099</td>
+      <td>–0.002</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>–1.152</td>
+      <td>0.511</td>
+      <td>–2.255</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–1.714</td>
+      <td>4.198</td>
+      <td>–0.408</td>
+      <td>0.683</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Analysis of air quality associations with cognition
 
 To assess the association of air quality with visual cognition, we added air quality to the baseline model for each dependent variable, that is, for the ‘first-look no-change’ change preference score (Table 6), shift rate (Table 7), and the ‘first-look change’ change preference score (Table 11). An Air Quality x Year interaction was also included in the ‘first-look no-change’ change preference model as this improved the model fit, assessed using the anova function in R, Χ2
 (1)=4.824, p=0.028, η2 (partial)=0.005.
 
+**Table 6.**
+ Model parameters for linear mixed-effect model assessing the impact of air quality (AQI) on the baseline change preference score model which included Year, Load, SES, Age Cohort, and LookingWindow1 as predictors (see Table 2).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.494</td>
+      <td>0.054</td>
+      <td>535.80</td>
+      <td>9.186</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>–0.044</td>
+      <td>0.107</td>
+      <td>741.90</td>
+      <td>–0.411</td>
+      <td>0.681</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.029</td>
+      <td>0.009</td>
+      <td>858.10</td>
+      <td>3.135</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>–0.001</td>
+      <td>0.009</td>
+      <td>855.20</td>
+      <td>–0.124</td>
+      <td>0.901</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>–0.009</td>
+      <td>0.014</td>
+      <td>524.70</td>
+      <td>–0.663</td>
+      <td>0.508</td>
+    </tr>
+    <tr>
+      <td>LookingWindow1</td>
+      <td>–0.075</td>
+      <td>0.065</td>
+      <td>549.90</td>
+      <td>–1.155</td>
+      <td>0.249</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.026</td>
+      <td>0.014</td>
+      <td>184.70</td>
+      <td>1.810</td>
+      <td>0.072</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>181.80</td>
+      <td>–0.654</td>
+      <td>0.514</td>
+    </tr>
+    <tr>
+      <td>Year:SES</td>
+      <td>0.040</td>
+      <td>0.027</td>
+      <td>720.10</td>
+      <td>1.471</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <td>Year:LookingWindow1</td>
+      <td>0.075</td>
+      <td>0.128</td>
+      <td>730.70</td>
+      <td>0.585</td>
+      <td>0.559</td>
+    </tr>
+    <tr>
+      <td>SES:LookingWindow1</td>
+      <td>0.010</td>
+      <td>0.016</td>
+      <td>530.80</td>
+      <td>0.607</td>
+      <td>0.544</td>
+    </tr>
+    <tr>
+      <td>Year:AQI</td>
+      <td>0.001</td>
+      <td>0.000</td>
+      <td>965.10</td>
+      <td>2.431</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Year:SES:LookingWindow1</td>
+      <td>–0.057</td>
+      <td>0.033</td>
+      <td>714.90</td>
+      <td>–1.750</td>
+      <td>0.080</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 7.**
+ Model parameters for linear mixed-effect model assessing the impact of air quality (AQI) on the baseline visual processing speed (shift rate) model which included Year, Load, SES, and Age Cohort as predictors (see Table 3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.631</td>
+      <td>0.014</td>
+      <td>195.40</td>
+      <td>45.655</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>0.016</td>
+      <td>0.017</td>
+      <td>894.50</td>
+      <td>0.977</td>
+      <td>0.329</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.040</td>
+      <td>0.011</td>
+      <td>813.20</td>
+      <td>3.501</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>0.001</td>
+      <td>0.011</td>
+      <td>812.10</td>
+      <td>0.045</td>
+      <td>0.964</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.001</td>
+      <td>0.003</td>
+      <td>205.10</td>
+      <td>0.225</td>
+      <td>0.823</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.009</td>
+      <td>0.028</td>
+      <td>195.30</td>
+      <td>0.318</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>–0.001</td>
+      <td>0.000</td>
+      <td>192.10</td>
+      <td>–2.166</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>Year:SES</td>
+      <td>–0.006</td>
+      <td>0.004</td>
+      <td>928.60</td>
+      <td>–1.493</td>
+      <td>0.136</td>
+    </tr>
+  </tbody>
+</table>
+
 To assess the association of air quality with standardized cognitive scores, we added air quality to the baseline model for the MSEL scores (Table 8) and the ASQ problem-solving scores (Table 9). In addition, following findings from Guxens et al., 2014, we conducted analyses on the ASQ fine and gross motor scores to examine whether these measures were associated with air quality (see Table 9).
+
+**Table 8.**
+ Model parameters for linear model assessing the impact of air quality (AQI) on the baseline Mullen model (Composite T-Score) which included Age Cohort and SES as predictors (see Table 4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>101.301</td>
+      <td>0.961</td>
+      <td>105.398</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.377</td>
+      <td>1.923</td>
+      <td>–0.196</td>
+      <td>0.845</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.746</td>
+      <td>0.236</td>
+      <td>3.163</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>–0.019</td>
+      <td>0.032</td>
+      <td>–0.596</td>
+      <td>0.552</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 9.**
+ Model parameters for linear models assessing the impact of air quality (AQI) on the baseline ASQ model which included Age Cohort and SES as predictors (see Table 4).
+For comparison with prior work, we include analyses of the ASQ Problem Solving score as well as Fine and Gross Motor scores.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">ASQ Problem Solving</td>
+      <td>(Intercept)</td>
+      <td>30.563</td>
+      <td>0.955</td>
+      <td>32.004</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–5.617</td>
+      <td>1.910</td>
+      <td>–2.941</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.890</td>
+      <td>0.233</td>
+      <td>3.817</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>–0.030</td>
+      <td>0.031</td>
+      <td>–0.983</td>
+      <td>0.327</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ASQ Fine Motor</td>
+      <td>(Intercept)</td>
+      <td>34.224</td>
+      <td>1.039</td>
+      <td>32.944</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–5.655</td>
+      <td>2.078</td>
+      <td>–2.721</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.815</td>
+      <td>0.254</td>
+      <td>3.214</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>–0.025</td>
+      <td>0.033</td>
+      <td>–0.748</td>
+      <td>0.455</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ASQ Gross Motor</td>
+      <td>(Intercept)</td>
+      <td>36.849</td>
+      <td>1.061</td>
+      <td>34.733</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–8.221</td>
+      <td>2.122</td>
+      <td>–3.874</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.571</td>
+      <td>0.259</td>
+      <td>2.206</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>–0.054</td>
+      <td>0.034</td>
+      <td>–1.582</td>
+      <td>0.115</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 10.**
+ Model parameters from the baseline mixed-effects model assessing the effects of Year, Load, SES, LookingWindow1 and Age cohort on the first look change measure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.592</td>
+      <td>0.054</td>
+      <td>613.50</td>
+      <td>11.009</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>–0.030</td>
+      <td>0.013</td>
+      <td>966.10</td>
+      <td>–2.353</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.000</td>
+      <td>0.009</td>
+      <td>846.40</td>
+      <td>0.024</td>
+      <td>0.981</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>0.002</td>
+      <td>0.009</td>
+      <td>847.40</td>
+      <td>0.175</td>
+      <td>0.861</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>205.30</td>
+      <td>0.874</td>
+      <td>0.383</td>
+    </tr>
+    <tr>
+      <td>LookingWindow1</td>
+      <td>0.057</td>
+      <td>0.065</td>
+      <td>628.30</td>
+      <td>0.882</td>
+      <td>0.378</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.019</td>
+      <td>0.015</td>
+      <td>188.80</td>
+      <td>–1.331</td>
+      <td>0.185</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 11.**
+ Model parameters assessing the impact of air quality (AQI) on the baseline mixed-effects model assessing the effects of Year, Load, SES, LookingWindow1 and Age cohort on the first look change measure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>DF</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.589</td>
+      <td>0.054</td>
+      <td>612.30</td>
+      <td>10.944</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>–0.030</td>
+      <td>0.013</td>
+      <td>967.10</td>
+      <td>–2.395</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Load1</td>
+      <td>0.000</td>
+      <td>0.009</td>
+      <td>847.40</td>
+      <td>–0.008</td>
+      <td>0.994</td>
+    </tr>
+    <tr>
+      <td>Load2</td>
+      <td>0.002</td>
+      <td>0.009</td>
+      <td>848.30</td>
+      <td>0.182</td>
+      <td>0.855</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>205.30</td>
+      <td>1.105</td>
+      <td>0.270</td>
+    </tr>
+    <tr>
+      <td>LookingWindow1</td>
+      <td>0.062</td>
+      <td>0.065</td>
+      <td>626.90</td>
+      <td>0.952</td>
+      <td>0.341</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.018</td>
+      <td>0.014</td>
+      <td>189.50</td>
+      <td>–1.275</td>
+      <td>0.204</td>
+    </tr>
+    <tr>
+      <td>AQI</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>185.80</td>
+      <td>1.263</td>
+      <td>0.208</td>
+    </tr>
+    <tr>
+      <td>Year:AQI</td>
+      <td>–0.001</td>
+      <td>0.000</td>
+      <td>968.20</td>
+      <td>–1.402</td>
+      <td>0.161</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Results
 
@@ -134,15 +1140,15 @@ Six-month-old infants showed lower change preference scores than 9-month-old inf
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83876/elife-83876-fig1-v1.jpg)
 
-**Figure 1.:** (
-A) A schematic of the visual cognition task. (B) An infant performing the task. (C) The 6-month-old cohort (N = 107) had lower ‘first-look no-change’ change preference scores relative to the 9-month-old cohort (N = 106). (D) Infants showed higher change preference scores in the low memory load condition (N = 210) relative to the medium (N = 208) and high loads (N = 209). (E) Infants had faster visual processing speed (higher shift rates) in the low load condition (N = 206) relative to the medium (N = 206) and high loads (N = 205). (F) Standardized composite scores from the Mullen Scales of Early Learning (MSEL) in year 1 were higher for high SES infants (N = 97) than for low SES infants (N = 112). (G) Problem-solving scores from the Ages and Stages Questionnaire (ASQ) in year 2 were higher for high SES infants (N = 84) than for low SES infants (N = 96). Note that for F and G, a continuous SES score based on the Kuppuswamy Scale (see Mohd Saleem, 2020) was used in analysis, but this was median-split for ease of visualization. Line in boxplots shows the median, lower and upper hinges show the first and third quartiles, lower and upper whiskers extend to the smallest and largest point no more than 1.5 * the interquartile range from the closest hinge respectively, and data beyond teh whiskers are outlying and are plotted individually.
+**Figure 1.:** Variations in infants’ cognitive performance.
+(A) A schematic of the visual cognition task. (B) An infant performing the task. (C) The 6-month-old cohort (N = 107) had lower ‘first-look no-change’ change preference scores relative to the 9-month-old cohort (N = 106). (D) Infants showed higher change preference scores in the low memory load condition (N = 210) relative to the medium (N = 208) and high loads (N = 209). (E) Infants had faster visual processing speed (higher shift rates) in the low load condition (N = 206) relative to the medium (N = 206) and high loads (N = 205). (F) Standardized composite scores from the Mullen Scales of Early Learning (MSEL) in year 1 were higher for high SES infants (N = 97) than for low SES infants (N = 112). (G) Problem-solving scores from the Ages and Stages Questionnaire (ASQ) in year 2 were higher for high SES infants (N = 84) than for low SES infants (N = 96). Note that for F and G, a continuous SES score based on the Kuppuswamy Scale (see Mohd Saleem, 2020) was used in analysis, but this was median-split for ease of visualization. Line in boxplots shows the median, lower and upper hinges show the first and third quartiles, lower and upper whiskers extend to the smallest and largest point no more than 1.5 * the interquartile range from the closest hinge respectively, and data beyond teh whiskers are outlying and are plotted individually.
 
 We recorded in-home air quality using a laser particle sensor (Air Visual Node, Atlanta Healthcare, Inc) placed in the home (see Figure 2A) for 3 continuous days during each assessment period. Field workers were instructed to place the sensor in the room where infants slept or spent most of their time. We re-assessed air quality up to six times for each family (every three months in-between lab visits; M visits = 4, SD = 1.16). These data were modelled and a participant-level score which adjusted for season and time of day was extracted for use in the analyses (see Methods). We focused on PM2.5 concentrations expressed as US Air Quality Index (AQI) values. This index maps PM2.5 concentrations measured in μg/m3 to a more intuitive categorical scale where AQI values under 50 are good, values from 51 to 100 indicate moderate air quality, values 101–150 indicate air that is unhealthy for sensitive groups, and values higher than 151 are considered unhealthy extending up to hazardous (>301). Note that AQI values can be readily converted to μg/m3 using on-line calculators (e.g. https://www.airnow.gov/aqi/aqi-calculator/).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83876/elife-83876-fig2-v1.jpg)
 
-**Figure 2.:** 2.5) by year, by day, and by type of cooking fuel.(
-A) Three examples of in-home sensor placement for households of varying SES levels. (B) Variations in in-home air quality over years in the study (participants contributing data = 215). Black dots show mean air quality index over each 3-day assessment period with standard errors indicating variability over households collected on the same day. Black line shows our model fit through these data. Red line shows best-fitting curve from outdoor air quality observations recorded in Lucknow, India. (C) Daily variations in in-home air quality with peaks at meal preparation times (participants contributing data = 215). Points indicate raw data (with standard errors), the line indicates our model fit. (D) Plots showing poorer in-home air quality for households that used cow dung for cooking fuel (N = 25) relative to wood (N = 152) and liquified petroleum gas (LPG; N = 38). Boxplot details are same as in Figure 1.
+**Figure 2.:** Variations in in-home air quality (PM2.5) by year, by day, and by type of cooking fuel.
+(A) Three examples of in-home sensor placement for households of varying SES levels. (B) Variations in in-home air quality over years in the study (participants contributing data = 215). Black dots show mean air quality index over each 3-day assessment period with standard errors indicating variability over households collected on the same day. Black line shows our model fit through these data. Red line shows best-fitting curve from outdoor air quality observations recorded in Lucknow, India. (C) Daily variations in in-home air quality with peaks at meal preparation times (participants contributing data = 215). Points indicate raw data (with standard errors), the line indicates our model fit. (D) Plots showing poorer in-home air quality for households that used cow dung for cooking fuel (N = 25) relative to wood (N = 152) and liquified petroleum gas (LPG; N = 38). Boxplot details are same as in Figure 1.
 
 As can be seen in Figure 2B, air quality in Shivgarh was quite poor, with AQI values often higher than 151, with an overall mean of 207. This is comparable to recent AQI data for the northern states in India that ranged from 186 to 267 (Pandey et al., 2021). We also compared in-home air quality to daily outdoor air quality from the nearest monitoring station in Lucknow (red line in Figure 2B; see Central Pollution Control Board in India: https://cpcb.nic.in). Annual fluctuations in in-home air quality generally mirrored fluctuations in outdoor air quality in Lucknow, although with a lower peak in the winter of 2018–2019 (for similar seasonal variations in indoor and outdoor air quality, see Rohra and Taneja, 2016). We note that this lower peak occurred during a pause in our indoor air quality data collection; thus, we cannot evaluate if this is a mismatch or simply a result of limited data during this period in the indoor air quality model.
 
@@ -159,8 +1165,8 @@ Next, we explored the association between air quality (PM2.5) and cognitive meas
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83876/elife-83876-fig3-v1.jpg)
 
-**Figure 3.:** (
-A) Infants from households with better air quality (lower AQI scores) had higher visual working memory scores in year 1 (see dark purple line; N = 199) relative to effects in year 2 (pink line; N = 179). (B) Infants from households with better air quality (lower AQI scores) also had faster visual processing speeds (higher shift rates; N = 213). Dots in both panels show raw data, line indicates linear trend with the ribbon indicating the 95% confidence interval.
+**Figure 3.:** Poor air quality is associated with impaired visual cognition in infancy.
+(A) Infants from households with better air quality (lower AQI scores) had higher visual working memory scores in year 1 (see dark purple line; N = 199) relative to effects in year 2 (pink line; N = 179). (B) Infants from households with better air quality (lower AQI scores) also had faster visual processing speeds (higher shift rates; N = 213). Dots in both panels show raw data, line indicates linear trend with the ribbon indicating the 95% confidence interval.
 
 One concern with these findings is that change preference and shift rate are measured in the same task and are correlated. Thus, it is possible the findings above reflect some shared variance rather than separate effects. To examine this, we re-ran the change preference / air quality analysis, adding shift rate as a predictor of the change preference score. This analysis revealed a main effect of shift rate, Χ2
 (1)=17.36, p<0.001 ηp

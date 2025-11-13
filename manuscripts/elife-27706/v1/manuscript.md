@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.27706.001 The expression of the transcription factor SOX4 is increased in many human cancers, however, the pro-oncogenic capacity of SOX4 can vary greatly depending on the type of tumor. Both the contextual nature and the mechanisms underlying the pro-oncogenic SOX4 response remain unexplored. Here, we demonstrate that in mammary tumorigenesis, the SOX4 transcriptional network is dictated by the epigenome and is enriched for pro-angiogenic processes. We show that SOX4 directly regulates endothelin-1 (ET-1) expression and can thereby promote tumor-induced angiogenesis both in vitro and in vivo. Furthermore, in breast tumors, SOX4 expression correlates with blood vessel density and size, and predicts poor-prognosis in patients with breast cancer. Our data provide novel mechanistic insights into context-dependent SOX4 target gene selection, and uncover a novel pro-oncogenic role for this transcription factor in promoting tumor-induced angiogenesis. These findings establish a key role for SOX4 in promoting metastasis through exploiting diverse pro-tumorigenic pathways.
+The expression of the transcription factor SOX4 is increased in many human cancers, however, the pro-oncogenic capacity of SOX4 can vary greatly depending on the type of tumor. Both the contextual nature and the mechanisms underlying the pro-oncogenic SOX4 response remain unexplored. Here, we demonstrate that in mammary tumorigenesis, the SOX4 transcriptional network is dictated by the epigenome and is enriched for pro-angiogenic processes. We show that SOX4 directly regulates endothelin-1 (ET-1) expression and can thereby promote tumor-induced angiogenesis both in vitro and in vivo. Furthermore, in breast tumors, SOX4 expression correlates with blood vessel density and size, and predicts poor-prognosis in patients with breast cancer. Our data provide novel mechanistic insights into context-dependent SOX4 target gene selection, and uncover a novel pro-oncogenic role for this transcription factor in promoting tumor-induced angiogenesis. These findings establish a key role for SOX4 in promoting metastasis through exploiting diverse pro-tumorigenic pathways.
 
 ## Introduction
 
@@ -58,13 +58,21 @@ Despite these observations, the transcriptional network and molecular mechanisms
 
 ## Results
 
-## SOX4 is an epigenome-guided transcriptional activator
+### SOX4 is an epigenome-guided transcriptional activator
 
 To better understand the functional role of SOX4 in tumorigenesis, it is imperative to understand how target gene specificity and activation are achieved. We aimed to characterize SOX4 chromatin-binding on a genome-wide level by using chromatin-immunoprecipitation and sequencing (ChIP-seq). To identify an antibody suitable for ChIP-seq, we first analyzed the ability of a number of SOX4 antibodies to immunoprecipitate (IP) SOX4 in combination with Rapid Immunoprecipitation Mass spectrometry of Endogenous proteins (RIME) (Figure 1—figure supplement 1A; Figure 1—source data 1) (Mohammed et al., 2013). This analysis yielded a single suitable antibody (Diagenode, CS-129–100), which was subsequently used for ChIP-seq analyses.
 
 To globally evaluate SOX4 transcriptional function, the well-characterized human mammary epithelial cell line (HMLE) was utilized as a model system (Taube et al., 2010). We have previously demonstrated that HMLE cells express low but detectable levels of SOX4 and rapidly gain metastatic traits associated with EMT upon conditional activation of SOX4 (Vervoort et al., 2013b). In order to investigate the transcriptional output of SOX4, a doxycycline (DOX)-inducible SOX4 HMLE cell line (HMLE-S4) was generated, allowing rapid and conditional expression of SOX4 (Figure 1—figure supplement 1B). SOX4 ChIP-seq was subsequently performed in wild-type HMLE cells and in doxycycline-treated or -untreated HMLE-S4 cells. We simultaneously generated genome-wide binding profiles for RNA-polymerase II (POL2), the transcription start site (TSS)-associated histone mark histone H3 lysine (K) four trimethylation (H3K4me3), the repressive mark H3K27me3 and the active regulatory mark H3K27 acetyl (H3K27ac), in the latter (Figure 1—source data 2).
 
 SOX4-bound loci were successfully identified in both HMLE wild-type (WT), untreated and DOX-treated HMLE-S4 cells and, as expected, the largest number of peaks was uniquely bound in DOX-treated HMLE-S4 cells (Figure 1A), as reflected by an increased SOX4 occupancy on the HDAC2 promoter (Figure 1—figure supplement 1C). To analyze the genomic distribution of SOX4 binding, we determined the distance of SOX4 peaks to the closest TSS. In HMLE WT cells, untreated and DOX-treated HMLE-S4 cells, SOX4 binding was enriched at TSS-proximal sites, compared to random genomic regions (Figure 1B and Figure 1—figure supplement 1D–E), indicating that SOX4 binding is enriched at promoter regions.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig1-v1.jpg)
+
+**Figure 1.:** (A) Venn-diagram showing the overlap of SOX4 binding sites identified by ChIP-seq in WT-HMLE and DOX-induced HMLE-S4 cells. (B). Genomic distribution of SOX4 binding sites in WT-HMLE cells with respect to annotated genes, represented as distance from the nearest TSS. Random genomic regions were used as background. (C). De novo motif analysis of SOX4-bound sites in DOX-treated HMLE-S4 cells. Selected significantly enriched motifs are represented. SOX4 was identified as the most highly enriched motif. (D) Density of the consensus SOX4 motif in SOX4 bound sites in HMLE-S4 cells 500 bp up- and downstream of the peak center. (E) Occupancy plots of SOX4, H3K27ac, H3K27me3, POL2 and H3K4me3 in the 10kb-genomic region surrounding the SOX4 peak center. (F) Changes in SOX4, H3K27ac, H3K4me3, POL2 and H3K27me3 are shown for SOX4-bound and SOX4-unbound sites (5%–95% whiskers, two-tailed Mann-Whitney U test, **** indicate p<0.0001). (G) Changes in SOX4, H3K27ac, and POL2 in HMLE-S4 for top 1000 DOX-induced sites ranked by SOX4-signal (****p<0.0001, Wilcoxon-signed-rank test) (H) Genomic tracks representing the occupancy of SOX4, H3K27me3, H3K4me3, H3K27ac and POL2 in untreated and DOX-treated HMLE-S4 cells surrounding the genomic locus of the canonical SOX4 target gene TEAD2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Commercially available and a custom-made SOX4 antibodies were tested for their ability to immunoprecipitate (IP) HA-tagged SOX4. HEK293T cells were transiently transfected with HA-tagged SOX4. Two days post transfection, cells were lysed in radio-immunoprecipitation buffer (RIPA) and IPs were formed using the indicated antibodies including an antibody against the HA-epitope. This demonstrated that the SOX4 diagenode antibody was most efficient at immunoprecipitating SOX4. (B) Validation of the successful lentiviral transduction and inducibility of the DOX-inducible pINDUCER-Sox4 construct in HMLE-cells. Transduced cells were treated with DOX (1 µg/ml) for the indicated time points after which induction of SOX4 expression was analyzed using an anti-HA antibody. (C) A representative example of SOX4 occupancy profiles derived by ChIP-seq normalized for sequencing depth (reads per kilobase per million reads sequenced; RPKM) in wt-HMLE and non-induced and induced HMLE-S4 cells. The genomic regions surrounding the HDAC2 locus is shown. (D) Histogram representing the distance of SOX4 peaks relative to the TSSs of annotated genes. (E) Genomic distribution of SOX4 peaks in DOX-treated HMLE-S4 cells over annotated regions compared to the genomic background. (F–G) Quantitative analysis of enhancer regions as defined by H3K27ac peaks. Normalized read density used to determine the sites without or with DOX-induced changes in SOX4, H3K27ac, H3K4me3, POL2 and H3K27me3 occupancy. Data are shown as boxplots with 5–95% whiskers. Statistical comparison was performed with a two-tailed Wilcoxon-signed-rank test (****p<0.0001) (H) Venn-diagram representing the overlap of SOX4 binding sites in MDA-MB-231, HCC1954 and DOX-treated HMLE-S4 cells. (I) Venn-diagram showing the overlap between genes with a SOX4 peak within 20 kb of their TSS in MDA-MB-231, HCC1954 and DOX-treated HMLE-S4 cells.
 
 To both validate and gain further insight into the sequence requirements for SOX4 binding, de novo motif analysis was performed. As expected, the SOX4-consensus DNA-binding motif was the most highly enriched motif in DOX-treated HMLE-S4 cells (Figure 1C) and was present in over 67% of all peaks. The SOX4 consensus motif was also centrally enriched in the identified peaks, further confirming sequence-dependent binding (Figure 1D). In addition to the SOX4 motif, a number of co-occurring motifs were identified corresponding to AP-1, CTCF, ETS1 and SMAD3 (Figure 1C).
 
@@ -74,9 +82,17 @@ To assess whether SOX4-induction in HMLE-S4 cells can itself result in alteratio
 
 The reliance on a pre-existing chromatin-state for SOX4 binding implies that SOX4 transcriptional effects are likely to be highly context dependent. Indeed, analysis of overlap between SOX4-bound sites in HMLE cells and sites identified in two distinct breast cancer cell lines, the HER2-amplified HCC1954 cells and highly metastatic triple-negative MDA-MB-231 cells, revealed a minor degree of overlap in SOX4-bound loci, although the overlap on the associated genes was higher (Figure 1—figure supplement 1H–I). SOX4 thus utilizes a pre-existing chromatin-landscape by binding to open/active chromatin, and binding to these sites subsequently increases the occupancy of active histone-marks and POL2.
 
-## Characterization of the SOX4 transcriptional network
+### Characterization of the SOX4 transcriptional network
 
 To characterize the SOX4 transcriptional network, RNA-sequencing (RNA-seq) was subsequently performed. To this end, HMLE cells stably expressing SOX4 fused to the estrogen-receptor hormone-binding domain (ERSOX4 HMLE) were utilized, allowing for extremely rapid activation of SOX4 by 4-hydroxytamoxifen (4-OHT) (Vervoort et al., 2013b). ER-control HMLE and ERSOX4 HMLE cells were stimulated with 4-OHT (8 hr) after which total RNA was isolated and subjected to RNA-seq to identify alterations in gene expression. Data analysis revealed that 1378 genes were significantly regulated (q-value < 0.05) and differentially expressed by at least two-fold upon conditional SOX4 activation (Figure 2A), whereas no significantly altered genes were identified in ER HMLE control cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig2-v1.jpg)
+
+**Figure 2.:** (A) Gene expression analysis of SOX4 induced changes in HMLE ERSOX4 cells conditionally activated by 4-OHT for 8 hr and analyzed by RNA-seq. No significantly changed genes were observed in ER-control HMLE cells (data not shown). Significantly changed genes (q-value < 0.05) are indicated in red. (B) Venn diagram showing the overlap of genes regulated by SOX4 on the RNA-level (FC > 2, q-value < 0.05) with genes possessing a SOX4 binding site within 20 kb from an annotated TSS in DOX-treated HMLE-S4 cells (650 genes). (C). Heatmap visualizing gene expression changes for core-SOX4 target genes. (D) Quantitative real-time PCR analysis of gene expression changes in 4-OHT treated ER-control and ERSOX4 HMLE cells for selected SOX4 target genes identified by RNA-seq. Data represented as mean ± SD, normalized for β2M of three independent biological replicates. (E) Gene-set enrichment analysis (GSEA) representing the enrichment of SOX4 bound sites (2 kb from TSS) in the RNA-seq expression dataset ranked by log2 fold change upon conditional activation of SOX4. (F) Quantitative analysis of changes in SOX4 occupancy in peaks associated with most highly induced or repressed genes derived from the RNA-seq dataset generated in ERSOX4 HMLE cells (****p<0.0001, Wilcoxon-signed-rank test). (G) Analysis of the prognostic value of the core-SOX4 gene expression signature (650 genes) in claudinlow breast cancer patients (METABRIC).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative image of normalized RNA-seq profiles for the genomic region surrounding the MARCKSL1 gene. SOX4 binding and POL2 profiles in DOX-treated and -untreated HMLE-S4 cells for the same locus are also represented (-/+). (B) Venn-diagrams representing the overlap between SOX4- repressed (left) or SOX4-induced (right) genes with genes containing a SOX4-binding site within 20 kb of their TSS in DOX-treated HMLE-S4 cells. Hypergeometric tests were performed to test the enrichment in the gene overlap relative to chance (p-values indicate the random chance of finding an equal or greater overlap between the two datasets). (C) Quantitative analysis of top 1000 regions of open chromatin defined by H3K27ac peaks associated with the most highly induced (UP) or repressed genes (DN) (top 1000 peaks analyzed). Normalized read density was determined and the comparison of SOX4, H3K27ac, H3K4me3, and POL2 occupancy between UP and DN-associated peaks is represented by boxplots with 5–95% whiskers. Statistical comparison was performed with a two-tailed Mann-Whitney U test (****p<0.0001).
 
 To identify SOX4 direct transcriptional targets, the RNA-seq dataset was overlapped with genes containing a SOX4 -binding site within 20 kb of their TSS (Figure 2B). This revealed a core set of 650 genes, which were shown to be bound and transcriptionally regulated by SOX4 (Figure 2B–C). Notably, the largest fraction of genes showed increased expression upon SOX4 activation (63%), while a considerably smaller percentage were found to be repressed targets (37%).
 
@@ -86,9 +102,21 @@ In support of the notion that SOX4 predominantly acts as a transcriptional activ
 
 In agreement with the observation that SOX4 transcriptional networks are context-dependent and directed in part by the epigenome, we observed that SOX4-target genes strongly correlated with decreased survival only in Claudinlow breast cancers (Figure 2G). In contrast, only a moderate correlation with survival was observed in Luminal and normal-like breast cancers and no significant correlation was observed in Basal-like breast cancers (data not shown). These findings suggest that SOX4 transcriptional networks may be breast cancer subtype specific.
 
-## SOX4 positively regulates EDN1 expression and promotes ET-1 secretion
+### SOX4 positively regulates EDN1 expression and promotes ET-1 secretion
 
 To identify enriched cellular processes in the core-SOX4 gene set (650 genes), gene-ontology (GO) analysis was performed. GO-term analysis of SOX4 core genes showed a significant association with blood vessel morphogenesis, in addition to cell cycle- and cell migration-associated processes (Figure 3A). SOX4 target genes were also enriched for genes encoding secreted proteins that are involved in cell migration, extra-cellular composition, angiogenesis and inflammation (Figure 3—figure supplement 1A–B). The association with vascular development and cell migration was restricted to the positively regulated gene-set, whereas terms related to cell cycle and apoptosis were enriched in repressed genes (Figure 3—figure supplement 1C–D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig3-v1.jpg)
+
+**Figure 3.:** (A) Gene Ontology (GO) analysis on core-SOX4 target genes. Top terms are shown. (B) Heatmap of gene expression changes upon conditional SOX4 activation in HMLE cells for genes associated with the GO-term Blood vessel morphogenesis (HMLE regulated and bound). Genes with a SOX4-binding site within 20 kb of a TSS in MDA-MB-231 cells are annotated in red (C) Normalized ChIP-seq tracks for SOX4, H3K27me3, H3K4me3, POL2, and H3K27ac surrounding the EDN1 locus in HMLE-S4 cells. For histone marks and POL2 both DOX-treated and -untreated profiles are represented (-/+). (D) Normalized RNA-seq profile for the EDN1 gene in untreated and 4-OHT-treated ERSOX4 HMLE cells (-/+). (E) qRT-PCR analysis of EDN1 expression in 4-OHT-treated ER and ERSOX4 HMLE cells. Data represented as mean ± SD, normalized to β2M of three independent biological replicates (**p-value<0.01, Student’s t-test). (F) Luciferase assay in HEK293T cells transiently transfected with the full-length EDN-1 promoter (FL) as well as luciferase constructs in which the conserved sites have been mutated (−70 and −350). Results obtained from three independent biological replicates wherein three independent technical replicates were used per condition (ns: non-significant; ****p-value<0.001, Student’s t-test). (G) Pulldown assay in Flag-Sox4 transfected HEK293T cells using biotinylated DNA-probes. Probes matching an optimal SOX4-binding sequence, and the −70 bp and −350 bp of the EDN1 promotor sequence are indicated and mutated versions thereof (- indicates empty beads). Representative data obtained from three independent biological replicates. (H) Enzyme-linked immunosorbent assay (ELISA) analysis of ET-1 expression in the overnight conditioned media of 4-OHT treated and untreated HMLE-S4 cells. Results obtained from three independent biological replicates (*p-value<0.05, Student’s t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GO-term analysis for core-SOX4 target genes based on location in cell for gene-product (B) Selected genes coding for secreted factors (C–D) GO-term analysis performed in cytoscape using ClueGO of the 411 positively regulated and 239 negatively regulated genes. Visualized GO-terms are significantly enriched (p<0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic representation of the EDN1 promoter. The magnification shows the SOX4 and H3K27ac bound locus. Represented are the phastcon score for mammalian conservation in 46 vertebrates (upper track), with conserved SOX4-binding sites indicated underneath in green (−350 bp and −70 bp from TSS). Represented below is a schematic image of the EDN1-luciferase promoter used in this study. (B) Luciferase assay in HEK293T cells transiently transfected with the EDN1-luciferase promoter, renilla-luciferase in combinantion with either empty vector pcDNA3 (EV), flag-SOX4-pcDNA3 (SOX4), dominant negative SOX4 (DN, aa1-135), or SOX4 + DN. Data represented as mean ± S.E.M. normalized to renilla relative to EV (three independent biological replicates, statistical significance determined by ANOVA) (C) qRT-PCR quantification of SOX4 and EDN1 expression in SCR control and SOX4 KD HCC1954 cells. Data represented as mean ± SD of three independent biological replicates (***p-value<0.001, Student’s t-test).
 
 A role for SOX4 in tumor-induced angiogenesis remains unexplored and could be an essential component of its pro-tumorigenic effects. To this end, we examined the genes associated with angiogenesis more closely, and 13 genes were found to be induced upon conditional SOX4 activation (Figure 3B). We chose to further evaluate the role of Endothelin-1 (EDN1) since its expression has been demonstrated to positively correlate with breast cancer tumor-grade and distant metastasis, and has been suggested to promote tumor-induced angiogenesis, migration and invasion (Salani et al., 2000; Wülfing et al., 2004). EDN1 encodes preproendothelin, which through intra-cellular cleavage by convertases and Endothelin Converting Enzyme-1 (ECE-1) is converted into a 21-amino acid mature form (Rosanò et al., 2013). Endothelin-1 (ET-1) directly induces angiogenesis by binding to its cognate receptors (ETAR and ETBR) expressed on endothelial cells (Rosanò et al., 2013). Interestingly, both EDN1 and its converting enzyme ECE-1 were observed to be transcriptionally induced, indicating that SOX4 targets dual aspects of this pro-angiogenic pathway.
 
@@ -98,11 +126,19 @@ Closer examination of the EDN1 promoter overlapping SOX4 and H3K27ac profiles id
 
 To assess whether transcriptional induction of EDN1 by SOX4 also results in increased production of the mature ET-1 peptide, enzyme-linked immunosorbent assays (ELISA) were performed. Conditional activation of SOX4 in HMLE resulted in a significant increase in ET-1 secretion by these cells (Figure 3H). Taken together these observations demonstrate that SOX4 directly induces EDN1 expression on the mRNA level resulting in increased expression of the secreted ET-1 peptide.
 
-## SOX4 induced ET-1 expression promotes tumor-induced angiogenesis in vitro
+### SOX4 induced ET-1 expression promotes tumor-induced angiogenesis in vitro
 
 Since activation of SOX4 resulted in increased expression of ET-1, we next investigated whether this was able to induce pro-angiogenic effects on endothelial cells. To this end, SOX4 in ERSOX4 HMLE cells was activated for a period of eight hours, and subsequently the media was refreshed for overnight conditioning. The SOX4-activated conditioned media (SCM+) was subsequently tested for its ability to affect pro-angiogenic processes in human microvascular endothelial cells (HMEC-1) in three distinct in vitro assays assessing cell migration, network formation, and sprouting. In parallel, we investigated the pro-angiogenic function of synthetic ET-1 in these systems to ascertain whether this could phenocopy any effects observed in SCM+.
 
 The functional effects of SCM+ on HMEC-1 cells were first investigated in a wound-healing assay (van Balkom et al., 2013). Relative to basal media alone, exposure of HMEC-1 cells to SCM+ was capable of increasing migration of HMEC-1 cells, whereas no significant increase was observed with SCM- or ER-control HMLE conditioned media (ERCM+) (Figure 4). Importantly, SCM+-induced migration could be inhibited by the dual endothelin receptor antagonist Bosentan (Clozel et al., 1994), demonstrating that the pro-migratory effect indeed required endothelin receptor activation (Figure 4B). SCM+ did not affect HMEC-1 cell proliferation, indicating that wound-closure is exclusively dependent on cell migration (Figure 4—figure supplement 1A). Similar to SCM+, treatment of HMEC-1 cells with a synthetic ET-1 peptide resulted in a significant increase in wound closure, although not to the same extent as complete media which contains additional pro-migratory and pro-angiogenic factors (Figure 4C). In order to assess whether the SCM+-mediated effects required transcriptional induction of EDN1 by SOX4, siRNA-mediated knockdown of EDN1 was performed in HMLE cells 24 hr prior to conditional SOX4 activation. EDN1 knockdown reduced the SCM+-induced migration in HMEC-1 cells (Figure 4D, Figure 4—figure supplement 1B). Similar to conditional activation in HMLE cells, stable expression of SOX4 in MDA-MB-231 cells also resulted in increased EDN1 expression (Figure 4—figure supplement 1C) and conditioned media with the capacity to increase HMEC-1 migration (Figure 4E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative images of wound-healing assays performed on HMEC-1 cells, treated for 5 hr with basal media, full growth media or conditioned media from HMLE-S4 cells with or without overnight treatment with 4-OHT (SCM + and SCM-, respectively). Data from three independent biological replicates (B) Quantification of wound closure relative to basal media for HMEC-1 cells treated with conditioned media; SCM-, SCM+, SCM+ with Bosentan, and conditioned media from ER-control HMLE cells treated with 4-OHT (ERCM+). Data represented as mean ± SD of three independent biological replicates. (C) Quantification of wound closure in HMEC-1 cells treated with a synthetic ET-1 peptide, the ET-1 receptor antagonist Bosentan (Bos), ET-1 + Bos and full growth media represented as relative migration compared to basal media. Data represented as mean ± SD of four independent biological replicates. (D) Quantification of the wound healing assay in presence of SCM-/+generated from siEDN1 or control siRNA treated HMLE cells. Results obtained from three independent biological replicates. (E) Quantification of the wound-healing assay in the presence of conditioned media from MDA-MB-231 cells stably expressing either an empty vector control (EV) or SOX4 construct. Results represented are relative to basal media. Data represented as mean ± SD of three independent biological replicates. (F) Representative images of sprouting assays performed with HMEC-1 cells in the presence of indicated media conditions. (G–J) Quantification of sprouting length in the indicated conditions relative to basal media. Data represented as mean ± SD of four independent biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HMEC-1 cells were plated and incubated for 48 hr in the presence of basal media or indicated conditioned media, as well as full growth media. Subsequently, cells were counted and the change in numbers was represented relative to the basal control media. Data are represented as mean ± SD. (three independent biological replicates) (B) qRT-PCR quantification of EDN1 expression in HMLEs either treated with a Scrambled Control siRNA (siControl) or with a siRNA targeted against EDN1 (siEDN1). After siRNA treatment and conditional SOX4 activation cells were lysed for qRT-PCR analysis shown here, while conditioned medium was added to HMEC-1 endothelial cells. Data represented as mean ± SD of three independent biological replicates. (C) qPCR validation of SOX4 overexpression in MDA-MB-231 cells and EDN1 expression (D) Representative images of network formation assays in HMEC-1 cells plated on top of matrigel in the presence of indicated media. (E–F) Quantification of relative network length for the indicated conditions relative to basal media. Data is represented as mean ± SD (three independent biological replicates). (G) Quantification of relative migration of HMEC-1 endothelial cells in the presence of conditioned medium derived from MDA-MB-231 cells transduced with scrambled, SOX4 KD1, SOX4 KD2 shRNA. Data represented as mean ± SD of three independent biological replicates. (H) Quantification of sprouting length of HMEC-1 endothelial cells in the presence of basal medium or conditioned medium derived from MDA-MB-231 cells transduced with scrambled, SOX4 KD1, SOX4 KD2 shRNA. Data represented as mean ± SD of three independent biological replicates.
 
 To further evaluate the pro-angiogenic effects of ET-1 and SCM+, a matrigel angiogenesis assay was utilized. When plated in low-density on a matrigel surface, HMEC-1 cells rapidly form a meshed network, the length of which is an in vitro measure for their angiogenic potential. Relative to basal media alone, SCM+ treatment of HMEC-1 cells resulted in an increase in the relative network length, which could be inhibited by Bosentan, whereas no increase in network formation was observed in control conditions (Figure 4—figure supplement 1D–E). Similarly, incubation with the ET-1 peptide significantly increased the network length, an effect that could also be inhibited by treatment with Bosentan (Figure 4—figure supplement 1F).
 
@@ -110,21 +146,49 @@ In an analogous manner, the capacity of SCM+ and ET-1 to induce in vitro angiog
 
 Taken together, these findings show that SOX4 activation in HMLE and in MDA-MB-231 cells can bestow pro-angiogenic effects that are dependent on ET-1.
 
-## SOX4 expression in breast epithelial cells induces angiogenesis in vivo in a zebrafish tumor-xenograft model
+### SOX4 expression in breast epithelial cells induces angiogenesis in vivo in a zebrafish tumor-xenograft model
 
 To determine whether SOX4 may regulate angiogenesis in vivo, we initially made use of a zebrafish tumor-xenograft model (Figure 5A). In this model, fluorescently labeled tumor cells (red) are injected into the yolk sac of 1 day post-fertilization (dpf) zebrafish embryos in proximity to the subintestinal vein (SIV) structure. In the presence of tumors, alterations in the normal development of the SIV, such as protrusions extending from the structure, are considered to be representative of tumor-induced angiogenesis. Ectopic neovascularization originating from the subintestinal vessels (SIV) can be quantified by fluorescence microscopy taking advantage of the presence of GFP-positive blood vessels characteristic of the Tg(fli:GFP) embryos used in these experiments.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic representation of the zebrafish tumor-xenograft model, with the subintestinal vessels indicated in green (SIV) and tumor cells in red. (B) Representative images of zebrafish injected with ER-control and ERSOX4 HMLE cells treated with 4-OHT. Arrows indicate newly formed blood vessels. (C) Quantification of the number of ectopic sprouts observed per fish injected with ER-control and ERSOX4 HMLE cells. Individual data points and data represented as mean ± SD of three independent biological replicates (**p-value<0.01, ***p-value<0.001; ANOVA). (D) Quantification of the relative increase in ectopic sprouting in fish injected with 4-OHT treated relative to untreated ER-control and ERSOX4 cells. Data represented as mean ± SD of three independent biological replicates (* p-value<0.05, Student’s t-test). (E) Quantification of the number of ectopic sprouts in fish injected with SCR control and SOX4 KD MDA-MB-231 cells. Results obtained from three independent biological replicates (***p-value<0.001, Student’s t-test). (F) Representative images of zebrafish injected with SCR control or SOX4 KD MDA-MB-231 cells. Arrows indicate newly formed blood vessels (G) Quantification of the number of fish injected with MDA-MB-231 cells with or without ectopic sprouting. Results obtained from three independent biological replicates (***p-value<0.001, Student’s t-test). (H) Quantification of the number of ectopic sprouts observed per fish injected with 4-OHT-treated ERSOX4 HMLE cells exposed with siRNA control or siRNA targeting ET-1. Individual data points and data represented as mean ± SD (*p-value<0.05, ANOVA). (I) Quantification of the relative increase in ectopic sprouting in fish injected with 4-OHT treated ERSOX4 HMLE cells exposed with siRNA control or siRNA targeting ET-1. Data represented as mean ± SD of three independent biological replicates (*p-value<0.05, ***p-value<0.001; ANOVA). (J) Representative images of zebrafish injected with 4-OHT-treated ERSOX4 HMLE cells exposed with siRNA control or siRNA targeting ET-1. Arrows indicate newly formed blood vessels.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** SOX4 and EDN1 mRNA expression in SOX4-depleted MDA-MB-231 cells. (A) Quantification of ectopic sprouting in zebrafish tumor-xenograft model using wild-type (WT) HMLE cells in presence of absence of 4-OHT. (B) qPCR validation of SOX4 knockdown (KD) relative to SCR control in MDA-MB-231 cells with matching EDN1 expression.
 
 ER-control and ERSOX4 HMLE cells were either pre-treated in vitro with 4-OHT for 24 hr or left untreated before injection into the yolk sac of zebrafish embryos (Figure 5B). Neovascularization was quantified by counting the number of blood vessels protruding from the SIV. A significant increase in sprouting from the SIV was observed in 4-OHT treated ERSOX4 HMLE cells compared to untreated ERSOX4 HMLE cells as well as both treated and untreated ER-control HMLE cells, indicating that conditional activation of SOX4 in HMLE cells can induce angiogenesis in vivo (Figure 5B–D). No significant changes were observed upon injection of wild-type HMLE cells (Figure 5—figure supplement 1A).
 
 We next examined whether depletion of SOX4 could inhibit ectopic sprouting induced by pro-angiogenic MDA-MB-231 tumor cells. To this end, MDA-MB-231 cells stably expressing a shRNA targeting SOX4 (SOX4 KD) or a non-targeting shRNA were injected into zebrafish embryos. Quantification of neovascularization demonstrated that SOX4-depleted MDA-MB-231 cells (Figure 5—figure supplement 1B) were significantly impaired in their ability to induce ectopic sprouting from the SIV, as illustrated by a decrease in the number of sprouting vessels and an overall reduction in the percentage of fish with sprouting blood vessels (Figure 5E–G). In order to confirm that SOX4 pro-angiogenic effects in vivo are, in part, dependent of ET-1 expression, siRNA-mediated knockdown of EDN1 was performed in HMLE cells 24 hr prior to SOX4 conditional activation, after which cells were injected into zebrafish embryos. Similar to our previous observations in vitro, depletion of ET-1 in SOX4-activated cells results in the reduction of angiogenic potential, shown by the decreased capacity to induce ectopic sprouting from the SIV (Figure 5H–J). Taken together, these results indicate that, similar to our in vitro observations, SOX4 controls tumor-induced angiogenesis in vivo, in an ET-1 dependent manner.
 
-## SOX4 is required for ET-1 expression, tumor-vascularization and metastasis in a xenograft mouse model of breast cancer
+### SOX4 is required for ET-1 expression, tumor-vascularization and metastasis in a xenograft mouse model of breast cancer
 
 To further study the role of SOX4 in tumor-induced angiogenesis in vivo, we made use of a xenograft mouse model of breast cancer, in which MDA-MB-231 cells are transplanted into the mammary fat-pad of immune-deficient mice. Luciferase expressing MDA-MB-231 cells were generated and lentivirally transduced with a SOX4 KD shRNA or a control-scrambled shRNA construct. Prior to injection, we validated the efficiency of SOX4 knockdown by qRT-PCR. This revealed a significant reduction in SOX4 expression in SOX4 KD MDA-MB-231 cells compared to scrambled control cells, which was accompanied by a significant decrease in EDN1 expression (Figure 6A–B). Following validation, cells were transplanted into the mammary fat-pad and we subsequently monitored tumor growth up to six weeks post-implantation. Primary tumor growth was unaffected by SOX4 depletion and both scrambled control and SOX4 KD mice were sacrificed in the same week (Figure 6C). Analysis of primary tumors by immunohistochemistry (IHC) for SOX4, ET-1 and CD31 (PECAM-1) expression showed that SOX4 KD knockdown was maintained in vivo (Figure 6D). Moreover, quantitative analysis of ET-1 expression revealed a significant reduction in ET-1 IHC staining in SOX4 KD compared to scrambled control tumors (Figure 6D–E). We next assessed tumor vascularization by quantifying expression of the endothelial cell surface marker CD31. SOX4 KD tumors had significantly lower vascularization as illustrated by the reduction in total blood vessel area, blood vessel count and blood vessel size (Figure 6F). These findings demonstrate that SOX4 expression is required for tumor-associated ET-1 expression in vivo, and SOX4-depletion correlates with reduced tumor blood vessel density. Importantly, SOX4 depletion in this orthotopic xenograft model also significantly reduced the development of lung metastases (Figure 6G). To exclude the possibility that these results were simply caused by off-target effects of the shRNA, we performed an independent experiment using a second shRNA targeting SOX4 (Figure 6—figure supplement 1). This experiment confirmed our prior experiment, as mice transplanted with SOX4 shRNA2 MDA-MB-231 cells presented with a strong decrease in both metastatic outgrowth and vascularization. Here, there was also a modest effect on primary tumor growth, which may reflect better SOX4 knockdown in this experiment. Together, these findings demonstrate that SOX4 can control multiple aspects of breast tumor biology, and show for the first time that SOX4 may regulate tumor angiogenesis in vivo.
 
-## SOX4 expression correlates with decreased survival, increased metastasis and elevated blood vessel density in patients with breast cancer
+![Figure 6.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig6-v1.jpg)
+
+**Figure 6.:** (A–B). qRT-PCR quantification of SOX4 and EDN1 expression in luciferase-marked SCR control and SOX4 KD MDA-MB-231 cells. Data represented as mean ± SD of three independent biological replicates (*p-value<0.05, Student’s t-test). (C) Growth curve of SOX4 KD and SCR control MDA-MB-231 tumors. Data represented as mean ± SD of three independent biological replicates (D) IHC analysis of scrambled control and SOX4 KD MDA-MB-231 primary tumors. Representative Hematoxylin and eosin stainings (H and E) and IHC stainings for SOX4, ET-1 and CD31 (PECAM-1) are shown. Arrows indicate blood vessels. (E) Quantification of ET-1 staining. Indicated is the total surface passing the filter threshold. Data represented as mean ± SD (**p-value<0.01, student t-test). (F) Quantitative analysis of the endothelial cell marker CD31 in SOX4 KD and control tumors. Images were analyzed by ImageJ software and total vessel area, blood vessel count and blood vessel size are indicated (*p-value<0.05, t-test). (G) Quantitative analysis of the number of visible lung metastases in SOX4 KD and SCR control MDA-MB-231 tumors. Data represented as mean ± SD (**p-value<0.01, t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B). qRT-PCR quantification of SOX4 and EDN1 expression in luciferase-marked SCR control and SOX4 KD2 MDA-MB-231 cells. Data represented as mean ± SD of three independent biological replicates (*p-value<0.05, Student’s t-test). (C) Growth curve of SOX4 KD2 and SCR control MDA-MB-231 tumors. Data represented as mean ± SD of three independent biological replicates (D) IHC analysis of scrambled control and SOX4 KD MDA-MB-231 primary tumors. Representative IHC stainings for SOX4, ET-1 and Endomucin are shown. Arrows indicate blood vessels. (E) Quantitative analysis of the endothelial cell marker Endomucin in SOX4 KD2 and control tumors. Images were analyzed by ImageJ software and total vessel area, blood vessel count and blood vessel size are indicated (*p-value<0.05, t-test). (F) Quantitative analysis of the number of visible lung metastases in SOX4 KD2 and SCR control MDA-MB-231 tumors. Data represented as mean ± SD (*p-value<0.05, t-test).
+
+### SOX4 expression correlates with decreased survival, increased metastasis and elevated blood vessel density in patients with breast cancer
 
 To evaluate whether SOX4 expression correlates with clinical parameters in breast cancer, we performed IHC analysis of nuclear SOX4 expression levels in a tissue microarray (TMA) representing a cohort of 452 breast cancer patient tumor samples from both invasive ductal (IDC) and lobular carcinomas (ILC) (Figure 7A–B). Nuclear SOX4 expression was found to significantly correlate with tumor size, histological grade and mitotic index, all parameters of poor-prognosis (Figure 7—source data 1, Figure 7—source data 2, Figure 7—source data 3, Figure 7—source data 4, Figure 7—source data 5). Accordingly, high levels of SOX4 expression significantly correlated with decreased overall survival in breast cancer patients, and this was also observed when patients were subdivided into the major subtypes ILC and IDC (Figure 7C–E). Stratification of patients with breast cancer according to the ER-status revealed that patients with high levels of SOX4 have a significantly worse prognosis in the ER-positive tumor group, and a trend towards poor-prognosis in the ER-negative tumor group (Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) Representative images of SOX4 expression in invasive lobular carcinoma (ILC, classical and pleomorphic) and invasive ductal carcinoma (IDC, low-grade tumor and high-grade tumor) cases in the tissue microarray (TMA) cohort. (C–E) Kaplan-Meier curves for cumulative (cum) survival for patients with high or low nuclear SOX4 expression for the total cohort, ILC and IDC breast cancers. Indicated p-values were calculated using the Log-rank test. (F) Representative images of CD34 staining in SOX4HI and SOX4LO tumors as identified previously in TMA analysis. Arrows indicate blood vessels. (G) Quantitative analysis of CD34 staining in 17 SOX4HI and 17 SOX4LO ductal carcinomas. (Student t-test, *p-value<0.05). (H) Schematic model for the pro-angiogenic function of SOX4 during breast cancer progression. The SOX4 transcription factor binds to regions of active/open chromatin and subsequently acts as positive regulator of many genes involved in tumorigenesis, such as EDN1. Upregulation of ET-1 contributes to the increase of neovascularization, which ultimately may facilitate tumor cell intravasation and growth factor accessibility.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Analysis of patient survival according to ER-status and stratified into SOX4HIand SOX4LO tumors (B) Correlation between SOX4 mRNA expression and patient survival was analyzed using the KMPlot.com platform. The best probe-set was selected and the optimal cut-off was automatically determined. Tumors were separated into ER negative and ER positive prior to analysis. (C) Analysis of SOX4HIand SOX4LO tumors. Patient survival data stratified according the adjuvant radio- and chemotherapy treatments status.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/27706/elife-27706-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Enrichment analysis of TGF-β signature (B) Enrichment analysis of EMT signature (C) Enrichment analysis of vascular content signature.
 
 We next evaluated the correlation between nuclear SOX4 intensity and the metastatic status for those cases in the TMA cohort where this information was available. This revealed that the percentage of tumors with high SOX4 expression was observed to be significantly higher in those patients who develop metastasis as compared to patients who do not present with metastatic disease (p=0.016; Figure 7—source data 5). Moreover, analysis of SOX4 expression in 23 matched primary-tumor metastasis patient samples revealed that SOX4 expression in the primary tumor reflects the expression level observed in the metastasis (p=0.039; Figure 7—source data 5). These observations indicate that SOX4 expression is a clear marker of poor-prognosis in breast cancer and underscore the important role of SOX4 in tumor-progression and metastasis observed in breast cancer model systems. Interestingly, no significant benefit to patient survival was observed for adjuvant radio- or chemotherapy-treated SOX4-high tumors as compared to untreated tumors, whereas a significant treatment response was observed for SOX4-low tumors (Figure 7—figure supplement 1C). These findings suggest that SOX4 may also contribute to therapy resistance.
 
@@ -152,29 +216,29 @@ Taken together, our global-transcriptional analysis provides mechanistic insight
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Human Microvascular Endothelial Cells (HMEC-1) were obtained from the Center for Disease Control and Prevention, Atlanta USA (Ades et al., 1992) and maintained in MCDB 131 medium containing 10% FCS, 10 mM L-Glutamine, 100 U/ml penicillin and 100 µg/ml streptomycin (All from Life Technologies, USA), 50 nM hydrocortisone (Sigma-Aldrich, USA), and 10 ng/ml rhEGF (Invitrogen, USA) up to passage 27 at 37°C, 5% CO2 and ambient oxygen level (20%). Immortalized human mammary epithelial cells (HMLE) were kindly provided by dr. R.A. Weinberg and were cultured in human mammary epithelial growth media (cc-3150, Lonza) as described previously (Vervoort et al., 2013a). MDA-MB-231 cells and HCC1954 cells were purchased from ATCC and cultured as described previously (Bruna et al., 2012). All cells were regularly checked for mycoplasma during the course of this study and only mycoplasma-negative cells have been used for the experiments described in this study.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 Lentiviral transduction of MDA-MB-231 and HMLE cells was performed as described previously (Vervoort et al., 2013a). Lentiviral constructs used were Control vector expressing shRNA control [(SHC002); Sigma-Aldrich, Missouri, USA] and shRNA targeting SOX4 (TRCN0000018214, Sigma) for SOX4 KD1 used in Figure 6, and TRCN0000274152 for SOX4 KD2 used in Figure 6—figure supplement 1.
 
 Knockdown of EDN1 in HMLE cells was performed using 25 nM human EDN1 siRNA (Thermo Scientific, ON-TARGET plus SMARTpool, L-016692-00-0010, Waltham, MA, USA) with Lipofectamine RNAiMAX reagents (Invitrogen), 24 hr before 4-OHT treatment.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed using IBM SPSS Statistics version 21 (SPSS Inc., Chicago, IL, USA) for all patient data. Associations between categorical variables were examined using the Pearson’s Chi-square test or Fisher’s exact test when required. Survival analyses were performed using Kaplan-Meier and differences were analyzed using Log rank test.P-values<0.05 were considered to be statistically significant. Additional statistical analyses were performed using GraphPad software (v6), and statistical analyses used are indicated in the figure legends. Statistical analysis of in vitro data was performed using the analysis of variance (ANOVA) with a Post Hoc Dunnett’s multiple comparisons test, unless indicated differently. Gene signature analysis was performed by calculating Spearman-rank correlations between centroids of the SOX4 signature and patient gene expression profiles. ChIP seq is represented as boxplots with 5–95% whiskers. Statistical comparison was performed with a two-tailed Mann-Whitney U test (****p<0.0001) for unpaired peak-sets and a two-tailed Wilcoxon-signed-rank test for paired peak-sets (****p<0.0001).
 
-## Survival analysis
+### Survival analysis
 
 The Molecular Taxonomy of Breast Cancer International Consortium (METABRIC) cohort includes DNA copy number, whole gene expression and breast cancer-specific survival of 1980 patients (data is freely available and can be found on cBioPortal; accession number EGAS00000000083) (Curtis et al., 2012). Claudinlow subtyping was performed using transcriptomic data and the predictor developed by Prat et al. (Prat et al., 2010). Signature analysis was performed using the genes that were more than 1.5 log2 fold change differentially expressed between 4-OHT treated and untreated ERSOX4 HMLE in the transcriptomic characterization and bound in SOX4 ChIP-seq analysis of DOX treated and untreated HMLE-S4. Samples were assigned a Spearman correlation-based score calculated between the gene expression data of each tumour and each signature. Survival was analysed using Kaplan-Meier curves and significance assessed by log-rank test. Data were analysed using R 3.2.2 and a two-sided p<0.05 was considered significant.
 
-## Patients
+### Patients
 
 The study population was derived from the archives of the Departments of Pathology of the University Medical Center Utrecht, Utrecht, and the Radboud University Nijmegen Medical Center, Nijmegen, The Netherlands. These comprised 452 cases of invasive breast cancer. Histological grade was assessed according to the modified Bloom and Richardson score (Elston and Ellis, 1991), and the mitotic activity index (MAI) was assessed as before (van der Groep et al., 2006). Other clinicopathological characteristics are shown in Table S3-7. From representative donor paraffin blocks of the primary tumors, tissue microarrays were constructed as described by Vermeulen et al. (Vermeulen et al., 2012b). The use of anonymous or coded leftover material for scientific purposes is part of the standard treatment contract with patients in The Netherlands (van Diest, 2002). Ethical approval was therefore not required. Overall survival and treatment data were obtained from the Comprehensive Cancer Center of The Netherlands (Integraal Kankercentrum Nederland). Survival data were available of 295 out of 452 breast cancer cases, with a follow up of 72 months for the ductal and 120 months for the lobular breast cancer cases.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was carried out on 4 µm thick sections. Data on HER2, progesterone receptor (PR), estrogen receptor α (ERα), and E-cadherin were derived from Vermeulen et al. (Vermeulen et al., 2012a); Vermeulen et al., 2012b). After deparaffination and rehydration, endogenous peroxidase activity was blocked for 15 min in a buffer solution pH5.8 containing 0.3% hydrogen peroxide. After antigen retrieval, that is boiling for 20 min in 10 mM citrate pH6.0, a cooling period of 30 min preceded the primary antibody incubation. Primary antibodies against SOX4 (HPA029901, Sigma Aldrich) 1:50 were diluted in PBS containing 1% BSA and incubated overnight at 4°C. The signal was amplified using the Novolink kit (Leica, Rijswijk, The Netherlands) and developed with diaminobenzidine, followed by counterstaining with haematoxylin, dehydration in alcohol, and mounting. Appropriate negative and positive controls were used throughout.
 
@@ -184,62 +248,176 @@ The CD34 staining (Immunotech, QBEND10) was performed in a 1:800 dilution on a V
 
 To quantify blood vessels in tumors, ImageJ software was used. To quantify CD34 (patient tumor material) and CD31 (murine model) 3,3'-Diaminobenzidine (DAB) staining or Endomucin staining. Positive signal was isolated using the ImageJ colour deconvolution plug-in, followed by a fixed threshold background subtraction and automatic particle analysis, using a minimum particle size of 50 pixels.
 
-## Migration assay
+### Migration assay
 
 200,000 cells per well were plated 24 hr in advance in 24-well plate wells to form a confluent monolayer. Migration was assessed by making a single straight scratch in the HMEC-1 monolayer using a 20–200 µl pipette tip. Wells were washed with PBS to remove loose cells, and 0.5 ml test medium (basal-, full-, or conditioned medium) was added, followed by a 5 hr incubation at 37°C, 5% CO2 and ambient oxygen level (20%). Images were recorded at t = 0 and t = 5 hr at similar locations, after which the scratch surface was determined using ImageJ software to determine scratch closure.
 
-## Matrigel angiogenesis assay
+### Matrigel angiogenesis assay
 
 The effect of conditioned medium on angiogenic activity of HMEC-1 cells was determined by seeding 2,000 cells (in 10 µl basal medium) on to 10 µl solidified Growth Factor Reduced Matrigel (Becton Dickinson, United Kingdom) in a µ-Slide Angiogenesis (Ibidi, Germany) in the presence of 50 µl test medium (basal-, full-, or conditioned medium). After an 18 hr incubation at 37°C, images were recorded using an Olympus BX53 microscope with a DP71 digital camera, and analyzed for total network length using the ImageJ Angiogenesis Analyzer plugin.
 
-## Measurement of angiogenic sprouting
+### Measurement of angiogenic sprouting
 
 Angiogenic sprouting stimulation of conditioned medium was measured by seeding HMEC-1 cells on to Cytodex3 microcarrier beads (Sigma-Aldrich, USA) and embedding them in a 1:1:4 mixture of basal medium, test medium, and Growth Factor Reduced Matrigel (Becton Dickinson, USA). After solidification of the gels, 0.5 ml basal medium was added on top of the gels and incubated for 48 hr at 37°C, 5% CO2 and ambient oxygen level (20%). Images were recorded using an Olympus CKX41 microscope with an SC30 digital camera. Sprout lengths were determined using ImageJ software.
 
-## Measurement of proliferation
+### Measurement of proliferation
 
 100,000 HMEC-1 cells were seeded in full HMEC-1 medium in 24-well plate wells 24 hr before the assay. 0.4% BSA was added to all test media except full HMEC-1 medium. Test media was added to the wells, and the cells were incubated for 48 hr at 37°C, 5% CO2 and 20% O2. Then, cells were washed with PBS and isolated using 0.5 ml 0.25% Trypsin-EDTA (Gibco, Invitrogen, USA) for 5 min at 37°C, flushed loose with 0.5 ml full HMEC-1 medium, and counted using a TC20 automated cell counter (Bio-Rad, USA).
 
-## Chromatin Immunoprecipitation
+### Chromatin Immunoprecipitation
 
 Prior to chromatin immunoprecipitation (ChIP) and sequencing HMLE-S4 cells were grown in the absence or presence of 1 µg/ml of doxycycline for 16 hr, ChIP was performed as described previously (van Boxtel et al., 2013) using the following antibodies: 10 µg of SOX4 antibody (CS-129–100, Diagenode), 5 µg H3K4me3, H3K27ac, (ab8580, ab4729, Abcam), 5 µg anti-RBP1 (PB-7C2) antibody (Euromedex), and 5 µg H3K27me3 (39157, Active Motif). Truseq nano DNA sample preparation kit (Illumina) was used for End-repair, A-tailing, and ligation of sequence adaptors. Samples were subsequently PCR amplified after which the libraries were size selected to remove adapter dimers and select fragments in the 200–500 bp range. Barcoded libraries were sequenced on Illumina NextSeq500 sequencer (75 bp, single-end, Utrecht DNA sequencing facility).
 
-## RNA sequencing
+### RNA sequencing
 
 Total RNA was extracted from ER and ERSOX4 HMLE cells treated with 100 nM 4-OHT for 8 hr, using the RNAeasy kit (Qiagen, Germany). Sample preparation was performed using TruSeq stranded total RNA with ribo-zero globin sample preparation kit (Illumina, USA) and samples were sequenced 75 bp single-end on Illumina NextSeq500 (Utrecht DNA sequencing facility).
 
-## NGS data analysis
+### NGS data analysis
 
 BaseSpace software (Illumina) was used for sample demultiplexing, only reads with quality score of Q > 30 were subsequently used for further analysis. Differential gene expression analysis was performed using the Tophat2-cufflinks pipeline as described previously (Trapnell et al., 2012). Briefly, reads were mapped to the human reference genome (hg19) using TopHat v2.0.9 and using the reference gene annotation (hg19) as a guide transcripts were assembled using CuffLinks v2.2.1. Cuffdiff was used for differential gene analysis. Prior to differential gene analysis reads were quartile normalized using the –library-norm quartile option and reads mapping to rRNA and tRNA were masked from the analysis (-M command). CummeRbund was used for quality assessment and figure generation. Cluster 3.0 and Java TreeView software version 1.1.6 were used for clustering and visualization of heatmaps. The DAVID gene ontology database (http://david.abcc.ncifcrf.gov/) and the ClueGO module in cytoscape were used for functional annotation of differentially expressed genes (Huang et al., 2009; Bindea et al., 2009).
 
 ChIP-sequencing reads were mapped to the reference genome (hg19) with Bowtie 2.1.0 (Langmead and Salzberg, 2012) using default settings. Samtools version 0.1.19 was used for file conversions (SAM to BAM) and peaks were called using Cisgenome 2.0 using the input as a control (–e 150 -maxgap 200 –minlen 200) (Jiang et al., 2010). Mapped reads were extended according to the average fragment size and converted to TDF files with igvtools-2.3.36 and were visualized with IGV-2.3.34 (Thorvaldsdóttir et al., 2013). General manipulation of bed-files was performed using BEDtools v2.17.0 (Quinlan and Hall, 2010). Quantile normalization and quantification of ChIP-seq reads was performed as described previously (Eijkelenboom et al., 2013). HOMER software was used for motif discovery, peak annotation and the generation of histograms (Heinz et al., 2010).
 
-## Analysis of gene expression signatures
+### Analysis of gene expression signatures
 
 The log fold change values for each of the different gene signatures were used to create a centroid which was then correlated to the z-score transformed centroid for the corresponding genes for each patient sample in METABRIC using the Spearman correlation as described in Bruna et al. (Curtis et al., 2012; Bruna et al., 2012). The 25th, median or 75th percentile or median Spearman correlation value was used as a cut-off for the Kaplan-Meier analysis of breast cancer-specific death and survival for subgroups defined by ER status.
 
-## Zebrafish embryo maintenance, cell injection and imaging
+### Zebrafish embryo maintenance, cell injection and imaging
 
 Zebrafish maintenance and procedures were performed in the Faculty of Natural Sciences at Imperial College London (UK), in accordance to the UK Home office regulations (ASPA 1986). Zebrafish adult specimen were kept in a self-recirculating aquarium at an average temperature of 28°C with a 14 hr light 10 hr dark cycle. Adult specimens were fed twice a day on a diet of Hikari micropellets (Kyorin) and brine shrimp.
 
 Zebrafish in vivo angiogenesis assays were performed on Tg(fli:GFP) embryos (Lawson and Weinstein, 2002). To facilitate visualization post-implantation, cell lines lacking intrinsic fluorescent signalling were pre-labeled with CM-DiI (Invitrogen, UK) according to the manufacturer’s instructions. For injections, labeled cells were harvested to obtain a pellet without medium and then resuspended in 10 µl PBS. 1 day post-fertilization (1dpf) embryos were manually dechorionated and then anesthetized in a solution containing 0.003% tricane (Sigma, UK) for 10 min. Injections were performed using a Narishige microinjector with a 12 mm gage borosilicate pipette. During the procedure, embryos were kept on an injection mould composed of 3% agar in a solution of pre-warmed PBS (+Mg + Ca) with the addition of 0.003% tricane (Sigma, UK). Approximately, 150–200 cells were injected in the yolk sac of each embryo, in proximity of the sub-intestinal vessel complex. For individual experiments, approximately 25 embryos were injected per cell line. Injections were completed within 1 hr, following which the embryos were maintained in a solution of system water (chlorine deprived tap and distilled water mixture) with the addition of 0.0003% (v/v) methylene blue (antifungal) and 30 μg/ml N-phenylthiourea (Sigma) (PTU, averts melanin formation), and kept at a constant temperature of 28°C. Live imaging was performed on individual embryos 2 days post-injection (dpi) under a wide-field fluorescent microscope (Olympus CKX41). Fish were anesthetized with the addition of 0.05% tricaine to their water, to prevent movement during the live imaging practice. All pictures were taken with Q Capture-Pro (QImaging) apparatus, with any alteration to the original picture performed via the use of Image J.
 
-## Orthotopic tumor xenograft model
+### Orthotopic tumor xenograft model
 
 Mammary fat-pad transplantations in female RAG2−/−;IL-2Rγc−/− immunodeficient mice using approximately 1 × 106 luciferase-expressing MDA-MB-231 cells and bioluminescence imaging were performed as described previously (Ivanova et al., 2013). Tumour growth was measured weekly using a digital caliper (VWR, Radnor, PA, USA) and mice were sacrificed when tumor volume exceeded 1000 mm2 or visible metastases were detected by BLI. All animal experiments were approved by the Utrecht University Animal Experimental Committee (DEC-Utrecht no. 2013.III.02.020). Immediately after resection, the tumors were fixed in neutral buffered formalin and paraffin embedded. Immunohistochemistry was performed on 4 μm thick sequential sections, as described above. Macroscopic lung metastases were counted, ET-1 and CD31 staining was quantified using ImageJ as described above.
 
-## qPCR
+### qPCR
 
 For qPCR analysis, mRNA was isolated using the RNAeasy kit (Qiagen, Germany) according to the manufactures’ protocol after which cDNA was generated using the iScript cDNA synthesis kit (Bio-Rad). Subsequently, real-time quantification was performed on a MyiQ Single-Color Real-Time PCR Detection System (Bio-Rad, USA) using SYBR Green Supermix (Bio-Rad, USA) for cDNA amplification according to the manufacturer’s protocol.
 
-## Luciferase assays
+<table>
+  <tbody>
+    <tr>
+      <td>FW-SOX4</td>
+      <td>ACCGCACGCCAAGCTCATCC</td>
+      <td>FW-LMO4</td>
+      <td>AAAAGCAGACCATGGTGAATCC</td>
+    </tr>
+    <tr>
+      <td>RV-SOX4</td>
+      <td>GTCCGCGCCTTGTACAGCGA</td>
+      <td>RV-LMO4</td>
+      <td>GCTGTGCCAATAGCTGTCCA</td>
+    </tr>
+    <tr>
+      <td>FW-B2M</td>
+      <td>CCAGCAGAGAATGGAAAGTC</td>
+      <td>FW-SMARCC1</td>
+      <td>CTGTTGCAGCCAACATCCAC</td>
+    </tr>
+    <tr>
+      <td>RV-B2M</td>
+      <td>CCAGCAGAGAATGGAAAGTC</td>
+      <td>RV-SMARCC1</td>
+      <td>GGGGGATACATGCCGTTAGG</td>
+    </tr>
+    <tr>
+      <td>FW-EDN1</td>
+      <td>TTGAGATCTGAGGAACCCGC</td>
+      <td>FW-ECE1</td>
+      <td>TGGCACCCACAACTGCAAAT</td>
+    </tr>
+    <tr>
+      <td>RV-EDN1</td>
+      <td>GCTCAGCGCCTAAGACTGTT</td>
+      <td>RV-ECE1</td>
+      <td>GTACGTCGACATCTGGGTCC</td>
+    </tr>
+    <tr>
+      <td>FW-MARCKSL1</td>
+      <td>GGCTACAGAGCCATCCACTC</td>
+      <td>FW-MMP10</td>
+      <td>GACACAGTTTGGCTCATGCCTACCC</td>
+    </tr>
+    <tr>
+      <td>RV-MARCKSL1</td>
+      <td>TGACCTCACAAGGACAGCAC</td>
+      <td>RV-MMP10</td>
+      <td>TTGGTGCCTGATGCATCTTCTGTCC</td>
+    </tr>
+    <tr>
+      <td>FW-DBN1</td>
+      <td>GGAGTTCTTCCAGGGTGTCG</td>
+      <td>FW-TEAD2</td>
+      <td>CCGCTCGAGAGTGTGGACGT</td>
+    </tr>
+    <tr>
+      <td>RV-DBN1</td>
+      <td>GTCTTCTGGTAGGTGGTGCC</td>
+      <td>RV-TEAD2</td>
+      <td>AGGTCCGCCCAGAACTTGACCAG</td>
+    </tr>
+    <tr>
+      <td>FW-MARCKS</td>
+      <td>TGCCCAGTTCTCCAAGACCGC</td>
+      <td>FW-FZD7</td>
+      <td>ACAGAGGCCCAGGGACGAAAGC</td>
+    </tr>
+    <tr>
+      <td>RV-MARCKS</td>
+      <td>GCCATTCTCCTGTCCGTTCGCT</td>
+      <td>RV-FZD7</td>
+      <td>CTCTCCCAACCGCCTCGTCGCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Luciferase assays
 
 For the luciferase assay, HEK293T cells at 50% confluency were transfected in 24-well plates with 0.1 µg EDN-1 promoter luciferase reporter or mutated versions thereof, with 0.1 µg of pcDNA3 empty vector, pcDNA3- flag-SOX4, pcDNA3 flag-SOX4 DN (aminoacids 1–135), and 0.02 µg pRL-TK Renilla (Promega) as a transfection control. The cells were lysed in 50 µl passive lysis buffer 3 days post-transfection, the soluble fraction was subsequently assayed for luciferase activity with a Dual-Luciferase Reporter Assay System (Promega, USA).
 
-## Oligonucleotide Pull-Down Assay
+### Oligonucleotide Pull-Down Assay
 
 Oligonucleotide pull-down assays were performed as described previously (Vervoort et al., 2013a). Briefly, cell extracts of HEK239T cells transfected with either an empty vector control pcDNA or flag-SOX4 pcDNA were incubated with biotinylated double-stranded oligonucleotide probes, which were precoupled to streptavidin beads. Binding sites matching the consensus SOX4 binding sequence (Vervoort et al., 2013a) or the identified ET-1 promoter regions were used. After incubation, with the biotinylated probes the samples were washed in low-salt buffer (150 mM NaCl) and subsequently analyzed by western blot using an anti-flag antibody.
 
-## ELISA
+<table>
+  <tbody>
+    <tr>
+      <td>ET-1 −70BPfw</td>
+      <td>GGTGACTAATAACACAATAACATTGTCTGGGGCTGGAATAAA</td>
+    </tr>
+    <tr>
+      <td>ET-1 −70BPrv</td>
+      <td>TTTATTCCAGCCCCAGACAATGTTATTGTGTTATTAGTCACC</td>
+    </tr>
+    <tr>
+      <td>ET-1 −350BPfw</td>
+      <td>ATTCCCCGCACACAACAATACAATCTATTTAAACTGTGGCTCA</td>
+    </tr>
+    <tr>
+      <td>ET-1 −350BPrv</td>
+      <td>TGAGCCACAGTTTAAATAGATTGTATTGTTGTGTGCGGGGAAT</td>
+    </tr>
+    <tr>
+      <td>ET-1 −70BPmutfw</td>
+      <td>GGTGACTAATAACACAATACTCCCACCTGGGGCTGGAATAAA</td>
+    </tr>
+    <tr>
+      <td>ET-1 −70BPmutrv</td>
+      <td>TTTATTCCAGCCCCAGGTGGGAGTATTGTGTTATTAGTCACC</td>
+    </tr>
+    <tr>
+      <td>ET-1 −350BPmutfw</td>
+      <td>ATTCCCCGCACACCCTGGCACAATCTATTTAAACTGTGGCTCA</td>
+    </tr>
+    <tr>
+      <td>ET-1 −350BPmutrv</td>
+      <td>TGAGCCACAGTTTAAATAGATTGTGCCAGGGTGTGCGGGGAAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### ELISA
 
 HMLE-ERSOX4 cells and HMLE-ER cells were seeded at 50.000 cell/well in a 6-well plates and were subsequently allowed to adhere overnight. The cells were subsequently treated or left untreated for 8 hr with 100 nM 4-hydroxytamoxifen (4-OHT)after which the media was replaced with HMEC-1 bare media for overnight conditioning in the presence or absence of 4-OHT. The next day the media was collected and cell-debris was removed by using a 20 µM filter. Samples were subsequently diluted 10x and analyzed for ET-1 expression using the Endothelin-1 Quantikine ELISA Kit (DET100, R and D systems) according to the manufacturer's protocol.

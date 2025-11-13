@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01drpwb22 School of Psychology at the University of Chester Chester United Kingdom
+1. School of Psychology at the University of Chester Chester United Kingdom ([ROR:01drpwb22](https://ror.org/01drpwb22))
 
 † Corresponding author
 

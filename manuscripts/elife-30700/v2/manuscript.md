@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.30700.001 The unfolded protein response (UPR) adjusts the cell’s protein folding capacity in the endoplasmic reticulum (ER) according to need. IRE1 is the most conserved UPR sensor in eukaryotic cells. It has remained controversial, however, whether mammalian and yeast IRE1 use a common mechanism for ER stress sensing. Here, we show that similar to yeast, human IRE1α’s ER-lumenal domain (hIRE1α LD) binds peptides with a characteristic amino acid bias. Peptides and unfolded proteins bind to hIRE1α LD’s MHC-like groove and induce allosteric changes that lead to its oligomerization. Mutation of a hydrophobic patch at the oligomerization interface decoupled peptide binding to hIRE1α LD from its oligomerization, yet retained peptide-induced allosteric coupling within the domain. Importantly, impairing oligomerization of hIRE1α LD abolished IRE1’s activity in living cells. Our results provide evidence for a unifying mechanism of IRE1 activation that relies on unfolded protein binding-induced oligomerization.
+The unfolded protein response (UPR) adjusts the cell’s protein folding capacity in the endoplasmic reticulum (ER) according to need. IRE1 is the most conserved UPR sensor in eukaryotic cells. It has remained controversial, however, whether mammalian and yeast IRE1 use a common mechanism for ER stress sensing. Here, we show that similar to yeast, human IRE1α’s ER-lumenal domain (hIRE1α LD) binds peptides with a characteristic amino acid bias. Peptides and unfolded proteins bind to hIRE1α LD’s MHC-like groove and induce allosteric changes that lead to its oligomerization. Mutation of a hydrophobic patch at the oligomerization interface decoupled peptide binding to hIRE1α LD from its oligomerization, yet retained peptide-induced allosteric coupling within the domain. Importantly, impairing oligomerization of hIRE1α LD abolished IRE1’s activity in living cells. Our results provide evidence for a unifying mechanism of IRE1 activation that relies on unfolded protein binding-induced oligomerization.
 
 ## Introduction
 
@@ -40,63 +40,401 @@ The structural differences between IRE1 orthologs were cast to support the indir
 
 Considering the degree of conservation at various features of IRE1 mechanism of action from yeast to mammals, we favor the unifying direct activation model. Such model finds support in the notion that all structures adopted by a protein in a crystal lattice represent a singular snapshot of many possible conformational states. Therefore, it is entirely plausible that human and yeast IRE1 cLD use a common mechanism of activation and that the divergent structures aforementioned represent different states in a spectrum of possible conformational states that the IRE1 cLD from any species could assume. In this scenario, the crystal structure of hIRE1α cLD represents a ‘closed’ conformation that can shift towards an ‘open’ state to allow peptide binding in the MHC-like groove that is apparent in the structure of the yeast ortholog (Video 1) (Gardner et al., 2013; Gardner and Walter, 2011). As such, this model predicts specific outcomes that can be experimentally tested. Specifically, that (i) human IRE1 α cLD can bind to unfolded polypeptides, (ii) unfolded polypeptide binding stabilizes the open conformation of the hIRE1α cLD, and (iii) the open conformation of hIRE1α cLD favors its oligomerization.
 
+![Video 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-video1.mp4.jpg)
+
+**Video 1.:** The crystal structure of hIRE1α cLD is used to represent (pdb: 2hz6) the closed and the hIRE1α cLD structural model based on the yeast crystal structure (pdb: 2be1) represents the open state. The movie is generated using Pymol.
+
 Here, we used complementary biochemical and structural approaches to experimentally explore the mechanism of human IRE1α activation. We show that hIRE1α cLD—just like its yeast ortholog—directly binds select peptides with a characteristic amino acid bias. State-of-the-art NMR experiments that probe dynamic conformational states further support an activation mechanism involving peptide binding to the MHC-like groove and stabilizing the open conformation of hIRE1α cLD. Moreover, we provide insights into the mechanism that couples peptide binding and oligomerization to produce active IRE1 oligomers. Importantly, we show by mutational analysis that lumenal domain driven oligomerization is crucial for IRE1 function in mammalian cells. Taken together, our results resolve the discrepancies between existing models of IRE1 activation and supports a model in which unfolded polypeptides can bind and directly activate human IRE1.
 
 ## Results
 
-## The lumenal domain of human IRE1α binds peptides
+### The lumenal domain of human IRE1α binds peptides
 
 To test whether, akin to yeast IRE1, mammalian IRE1 also binds unfolded proteins directly, we employed peptide tiling arrays. To identify hIRE1α cLD-binding peptides, we designed tiling arrays utilizing ER-targeted model proteins known to induce the UPR either by overproduction (proinsulin and 8ab protein from SARS-corona virus [Scheuner et al., 2001; Sung et al., 2009]) or through destabilizing point mutations (myelin protein zero (MPZ)). The peptide arrays were composed by tiling 18-mer peptides that step through the entire protein sequence, shifting by three amino acids between adjacent spots. We incubated the peptide arrays with purified hIRE1α cLD fused N-terminally to maltose-binding protein (MBP) and probed with an anti-MBP antibody. As shown in Figure 2A (left panel), MBP-hIRE1α cLD bound a select subset of peptides on the arrays. To maximize the available sequence space, we analyzed binding of MBP-hIRE1α cLD to these peptides irrespective of their topological accessibility in the ER lumen. hIRE1α cLD recognized peptide sequences found in both the ER-lumenal and cytosolic domains of MPZ, which we considered together in our analyses to define the chemical properties of cLD peptide recognition. We found that hIRE1α cLD-binding peptides with the top 10% binding scores were enriched in cysteine, tyrosine, tryptophan, and arginine (Figure 2B, Figure 2—figure supplement 1A, p<0.05). By contrast, aspartate and glutamate were strongly disfavored, together with glutamine, valine, and serine.
 
-## IRE1 and the ER-resident chaperone BiP recognize a different subset of peptides
+![Figure 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig2-v2.jpg)
+
+**Figure 2.:** (A) Peptide arrays tiled with 18mer peptides derived from proinsulin, myelin protein zero (MPZ), 8ab are probed with MBP-hIRE1α cLD (on the left) or His10-BiP (on the right). (B) Comparison of the amino acid preferences of MBP-hIRE1α cLD (blue) and His10-BiP (gray). The peptide arrays were quantified using Max Quant. The binding intensity in each spot was normalized to max signal intensity in the peptide array. The peptides with the top 10% binding scores were selected and the occurrence of each amino acid in these top-binding peptides was normalized to their total abundance in the arrays. The normalized occurrences are plotted in log2 scale. Blue stars depict the amino acids that are significantly enriched or depleted in hIRE1α cLD binders (p<0.05), whereas red stars depict differences in binding preferences of hIRE1α cLD and BiP (p<0.05). (C) hIRE1α cLD binds peptides derived from proteins MPZ, ‘MPZ1’ (in blue) (peptides F16-F17 in Figure 1a, sequence: LIRYCWLRRQAALQRRISAME) and 8ab, ‘8ab1’ (in green) (peptide H20 in Figure 1a, sequence: WLCALGKVLPFHRWHTMV) with a K1/2 of 24 ± 4.7 µM and 5 ± 1.7 µM, respectively, determined by fluorescence anisotropy measurements. (D) Fluorescence anisotropy measurements show that N-terminal 12mer derivative of MPZ1 peptide, ‘MPZ1-N’ binds to hIRE1α cLD with a similar affinity as the full-length peptide, with a K1/2= 16.0 ± 2.6 µM. The binding curves of N-terminal (MPZ1-N, sequence: LIRYCWLRRQAA), Middle (MPZ1-M, sequence: WLRRQAALQRR) and C-terminal (MPZ1-C, sequence: LQRRISAME) fragments are shown in black, dark gray, and light gray, respectively. (E) The binding affinity of C-terminal truncations of MPZ1-N for hIRE1α cLD was measured by fluorescence anisotropy. The binding curves for the truncated peptides are shown in different shades of gray. (F) Fluorescence anisotropy measurements with N-terminal truncations of the MPZ1-N peptide are shown in different shades of gray. (G) IRE1 cLD binds to unfolded CH1 domain of IgG1 with a K1/2 of 29.2 ± 1.2 µM determined by microscale thermophoresis measurements. (H) Fluorescence anisotropy measurements show that MPZ1-N-2X peptide where MPZ1-N peptide sequence is repeated twice in the peptide binds tighter to hIRE1α cLD (peptide sequence: LIRYAWLRRQAALQRRLIRYAWLRRQAA).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of the amino acid preferences of MBP-hIRE1α cLD (blue) and His10-BiP (gray) with the amino acid composition of all peptides displayed on the array (total, black). The frequency of each amino acid present in peptides with top 10% binding score is shown for hIRE1α cLD and BiP. The experimental error is calculated from three experimental replicates. Blue stars depict the amino acids that are significantly enriched or depleted in hIRE1α cLD binders (p<0.05), whereas red stars show the amino acids that differ between hIRE1α cLD and BiP binders (p<0.05). (B) Comparison of MBP-hIRE1α cLD (blue) and His10-BiP (gray) binding to peptides derived from MPZ, proinsulin and 8ab. The contribution of each amino acid to MBP-hIRE1α cLD (blue) and His10-BiP (gray) binding was calculated by averaging the intensity of 6 neighboring spots that contain that amino acid. The topology of the proteins is shown at the bottom of each graph (SP: signal peptide, TM: transmembrane domain). Precursor peptides of insulin are depicted in the graph. Red bars indicate the location of the MPZ1 and 8ab1 peptides in the protein sequence.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** hIRE1α cLD binds the folding mutant of Staphylococcal nuclease Δ131Δ with 21.4 ± 2.3 µM affinity determined by fluorescence anisotropy.
+
+### IRE1 and the ER-resident chaperone BiP recognize a different subset of peptides
 
 At a first glance, the amino acid preferences displayed by mammalian IRE1 cLD resemble those of the other chaperones including the ER chaperone BiP (Blond-Elguindi et al., 1993; Deuerling et al., 2003; Flynn et al., 1991). Like BiP, hIRE1α cLD favored binding to aromatic and positively charged residues (Blond-Elguindi et al., 1993; Otero et al., 2010). BiP is a highly abundant chaperone in the ER lumen, whereas IRE1 is present at orders of magnitude lower levels (Ghaemmaghami et al., 2003). Therefore, if IRE1 and BiP recognize the same regions of unfolded proteins, the peptide-binding activity of hIRE1α cLD would depend entirely on saturation of BiP by unfolded substrate proteins—a scenario difficult to reconcile with IRE1’s task of dynamically sensing ER stress. To address this point, we compared the binding preferences of mammalian BiP (fused to an N-terminal 10x-histidine tag) on the same peptide arrays. We found sequences recognized by both hIRE1α cLD and BiP (Figure 2A, Figure 2—figure supplement 1A,B). Importantly, however, we also found profound differences. While IRE1 tolerated both prolines and histidines, BiP strongly disfavored these amino acids (Figure 2B, Figure 2—figure supplement 1A, p<0.05). Conversely, BiP tolerated serine and threonines, while IRE1 strongly disfavored them. Thus, IRE1 can recognize regions of unfolded proteins to which BiP would not readily bind and vice versa, thereby providing a plausible explanation of how IRE1 could recognize unfolded proteins despite of the vast excess of BiP over hIRE1α LD in the ER.
 
-## hIRE1α cLD binds peptides with distinct biochemical properties
+### hIRE1α cLD binds peptides with distinct biochemical properties
 
 To measure binding affinities of hIRE1α cLD’s interaction with peptides in solution, we selected the two peptides with the highest binding scores in the peptide arrays (MPZ- and 8ab-derived peptides, henceforth referred to as ‘MPZ1’ and ‘8ab1’, respectively) and attached fluorophores at their N-termini. Fluorescence anisotropy revealed that hIRE1α cLD bound to MPZ1 with K1/2 = 24 ± 4.7 µM and to 8ab1 with K1/2 = 5 ± 1.7 µM (Figure 2C). (Note that we used K1/2 to denote a measure of affinity because, as we show below, hIRE1α cLD exists in solution as an ensemble of different interconverting conformational states and our measurements therefore score several superimposed equilibria. The measured affinities therefore do not reflect true Kd values). These affinities fall within the same order of magnitude of chaperone binding to unfolded proteins, supporting the notion that similar modes of fast transient interactions with unfolded proteins are adopted by both IRE1 and chaperones (Karagöz et al., 2014; Marcinowski et al., 2011; Street et al., 2011).
 
 To identify the minimal region in MPZ1 for binding to hIRE1α cLD, we next divided MPZ1 into 12, 11 and 9 amino acid long fragments representing its N-terminal (MPZ1-N), middle (MPZ1-M) and C-terminal (MPZ1-C) regions and measured their respective affinities for hIRE1α cLD. hIRE1α cLD bound to MPZ1-N with a similar affinity as the full-length peptide (K1/2 = 16.0 ± 2.6 µM, Figure 2D), whereas the other peptide fragments displayed much lower binding affinities (K1/2 = 377 ± 54 µM and 572 ± 107 µM, respectively, assuming similar maximum anisotropy values as for the MPZ1-N peptide). We further truncated MPZ1-N by two residues at a time from either its N- or C-terminus. Deleting amino acids from the C-terminus gradually decreased the affinity (Figure 2E). By contrast, deletion of the first two hydrophobic residues from the N-terminus (leucine and isoleucine) abolished its binding to hIRE1α cLD (Figure 2F). These analyses revealed that the minimum peptide length with a comparable binding affinity to the full-length MPZ1 peptide is a 12-mer. This 12-mer peptide matches the chemical properties we found for hIRE1α cLD-binding peptides: it is enriched in aromatics, hydrophobic amino acids and arginines, indicating that specific binding contacts play a role in hIRE1α cLD’s interaction with unfolded proteins.
 
-## hIRE1α cLD binds unfolded proteins
+### hIRE1α cLD binds unfolded proteins
 
 To validate that peptides are valid surrogates for unfolded proteins, we next tested binding of intact but constitutively unfolded proteins to hIRE1α cLD. Immunoglobulins (IgGs) mature in the ER using a well-characterized folding pathway, wherein the constant region domain of the IgG heavy chain (CH1) remains disordered until it binds to its cognate partner, the constant region domain of the IgG light chain CL (Feige et al., 2009). We measured the binding affinity of CH1 to hIRE1α cLD by thermophoresis, which reports on changes in the hydration shell of a biomolecule upon interaction with a partner in solution (Jerabek-Willemsen et al., 2011). By contrast to earlier findings that showed no measurable binding of hIRE1α cLD to CH1 under different experimental conditions (Carrara et al., 2015), our experiments showed that hIRE1α cLD interacts with CH1 with a K1/2 = 29.2 ± 1.2 µM (Figure 2G). To further validate this observation, we measured binding of hIRE1α cLD to another model unfolded protein by fluorescence anisotropy, the folding mutant of staphylococcal nuclease Δ131Δ (Street et al., 2011). We observed a comparable binding affinity of K1/2 = 21.4 ± 2.3 µM (Figure 2—figure supplement 2). Our data thus show that hIRE1α cLD binds to full-length unfolded proteins with similar affinity as peptides, suggesting that these proteins display a distinct single binding site for hIRE1α cLD.
 
 To test whether multiple binding sites would increase the affinity for hIRE1α cLD, we synthesized a peptide consisting of two MPZ1-N tandem repeats separated by a 5-amino acid spacer (MPZ1-N-2X). Intriguingly, MPZ1-N-2X bound to hIRE1α cLD with an order of magnitude higher affinity (K1/2 = 0.456 ± 0.07 µM) compared to MPZ1 peptide (Figure 2H). As we show below, the increased apparent affinity is due to avidity of hIRE1α cLD to the peptide.
 
-## hIRE1α cLD is structurally dynamic
+### hIRE1α cLD is structurally dynamic
 
 To capture evidence for structural rearrangements in hIRE1α cLD predicted by a switch-mechanism that oscillates between inactive closed and active open conformations as we suggest in the Introduction, we employed nuclear magnetic resonance (NMR) spectroscopy. NMR spectroscopy reveals structural information at the atomic level for dynamic protein complexes and is well suited to study structural changes in hIRE1α cLD upon its interaction with peptides and unfolded proteins. The hIRE1α cLD dimer is ~80 kDa and thus is well above the size limit for conventional NMR approaches. We therefore used methyl transverse relaxation optimized spectroscopy (methyl-TROSY), a specific NMR method that allows to extract structural information from large proteins after selective isotopic labeling of side chain methyl groups with carbon-13 (13C) (Tugarinov et al., 2004; Tugarinov et al., 2007) in select amino acids including isoleucines. hIRE1α cLD has 12 isoleucines per monomer, which are evenly distributed throughout the protein (Figure 3A). In hIRE1α cLD’s methyl-TROSY spectra, we resolved seven peaks corresponding to isoleucines (Figure 3B), which then served as sensors of peptide binding and accompanying conformational changes. All isoleucine peaks in hIRE1α cLD’s NMR spectrum displayed broad line widths (Figure 3B), which is indicative of chemical exchange resulting from hIRE1α cLD sampling multiple conformational states at the conditions of the NMR experiments. These data revealed that hIRE1α cLD is dynamic in solution.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig3-v2.jpg)
+
+**Figure 3.:** (A) Isoleucines serving as probes in the NMR experiments are evenly distributed throughout hIRE1α cLD. hIRE1α cLD structural model is shown in gray, with space-filling isoleucine side chains shown in red. The structural model of hIRE1α cLD was generated by I-Tasser webserver using hIRE1α cLD crystal structure (pdb:2hz6) as a template to visualize the loops that are not resolved in the crystal structure (Roy et al., 2010; Zhang, 2008). The dimerization interface IF1L of hIRE1α cLD is depicted with a dashed line. (B) Methyl-TROSY spectrum of hIRE1α cLD with selective 13C labeling at δ1- methyl group of isoleucines resolves seven peaks, indicated by red dots. (C) Ile128 is highlighted as red spheres on hIRE1α cLD structural model. hIRE1α cLD is shown in gray, with isoleucine side chains are depicted as grayspace-fillings. (D) Assignment strategy for isoleucines in hIRE1α cLD. The WT hIRE1α cLD spectrum (in black) is overlaid with the spectrum of Ile128Ala mutant (depicted in red). The signal that disappeared in the mutant spectrum corresponds to Ile128 peak and is depicted with a circle. (E) The side chain of Leu186 is highlighted as red spheres on hIRE1 α cLD structural model. (F) The WT hIRE1α cLD spectrum (in black) is overlaid with the spectrum of Leu186Ile mutant (depicted in red). The signal that appeared in the mutant spectrum that corresponds Leu186Ile peak is depicted with a circle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) The WT hIRE1α cLD (in black) is overlaid with isoleucine mutants (depicted in red). The mutants Ile52Leu (A), Ile124Leu (B), resulted in disappearance of corresponding residues from the NMR spectrum. By contrast, we did not observe peaks disappear in the hIRE1α cLD Ile362Leu spectrum (Figure 3—figure supplement 2F). The triple Ile326/334/362Val mutation assigned disappearing peaks to Ile326 and Ile334 (D). The Ile263Ala (E) and Leu186Ile (F) mutants were made independently in the context of the Ile326/334/362Val triple mutation to overcome spectral crowding and unambiguously assign these residues in the resulting quadruple mutants. Thr159Ile (C) Leu186Ile (F) mutations were made to increase the number of Ile probes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–F) No peaks disappeared in the spectrum of Ile100Leu (A), Ile115Leu (B), Ile163Ala (C) Ile219Ala (D), Ile243Ala (E) and Ile362Leu (F) mutants. This is likely due to signal overlap, to low signal intensity of these residues, and/or to a combination of the two. These experiments confirm the unambiguity of the assignment of the other residues.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The threonine peaks are colored as red dots.
 
 To assign the resolved peaks to specific amino acids in the hIRE1α cLD sequence, we mutated each isoleucine to leucine, alanine or valine and monitored the disappearance of each resolved peak in methyl-TROSY spectra of the mutant proteins. This approach allowed us to assign six isoleucine peaks unambiguously (Figure 3C,D, Figure 3—figure supplements 1, 2 and 3). To further increase the number of NMR visible probes in hIRE1α cLD, we mutated Leu186 and Thr159 to isoleucines (Figure 3E,F, Figure 3—figure supplement 1C and F). Leu186 lies in an amphipathic unstructured loop surrounding the putative groove in hIRE1α cLD. The Leu186Ile peak displayed high signal intensity consistent with a dynamic and flexible position (Figure 3F, Figure 3—figure supplement 1F). By contrast, Thr159 lies at the β-sheet floor in hIRE1α cLD structure where its side chain faces towards the MHC-like groove and, as expected, the Thr159Ile substitution resulted in a low-intensity peak (Figure 3—figure supplement 1C).
 
 We further enhanced the coverage of hIRE1α cLD with NMR-visible probes in complementary experiments in which we labeled threonine side chains with 13C at their γ2 methyl groups (Figure 3—figure supplement 4). There are 33 threonine residues in hIRE1α cLD, 24 of which were detected by the NMR experiments. While we did not assign threonine peaks in hIRE1α cLD spectrum due to high spectral crowding, they provided an additional ‘fingerprint’ reporting on peptide binding-induced changes in hIRE1α cLD.
 
-## Peptide binding stabilizes the open conformation of hIRE1α cLD
+### Peptide binding stabilizes the open conformation of hIRE1α cLD
 
 Next, we used methyl-TROSY experiment to monitor changes in the environment of isoleucines and threonines in hIRE1α cLD upon peptide binding. A largely overlapping subset of isoleucine and threonine peaks shifted when hIRE1α cLD bound to the peptides MPZ1 or 8ab1, indicating a change in a localized environment upon peptide binding (Figure 4A,B, Figure 4—figure supplement 1A–C). Yet, a subset of isoleucine and threonine peaks displayed peptide specific changes. The chemical shifts displayed by the isoleucine peaks were not very large yet reproducible upon binding of different peptides allowing us to probe peptide induced changes in hIRE1α cLD. By contrast, the threonine peaks displayed larger chemical shifts, which is expected from their higher solvent exposure rendering them more sensitive to binding events (Figure 4B, Figure 4—figure supplement 1B and C). Mapping the chemical shift perturbations of the isoleucine peaks upon peptide binding on the hIRE1α cLD structure (Figure 4A–E, Figure 4—figure supplement 1B, Figure 4—figure supplement 2) revealed that the isoleucine resonances that shifted most significantly lie on the floor of the central β-sheet (marked by Ile124, Ile128, Thr159Ile) (Figure 4D and E). Among these isoleucines, only the side chain of Thr159Ile faces towards the MHC-like groove. We noted that in comparison to the isoleucines 124 and 128, Thr159Ile peak displayed a larger shift upon peptide binding (Figure 4C and E, Figure 4—figure supplement 1D). In addition to the central β-sheet floor, the αB helix that lies at the ends of hIRE1α cLD dimer (marked by Ile263), and the β-sandwich connecting the β-sheet floor to the αB helix (marked by Ile52) were affected, albeit to a lesser extent. By contrast, the unstructured loop extending from the MHC-like groove (marked by Ile186) was only slightly affected and the isoleucines positioned in the flexible region that are not resolved in the crystal structure (marked by Ile326 and Ile334) did not shift (Figure 4D,E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig4-v2.jpg)
+
+**Figure 4.:** (A) Close-up of the isoleucine peaks in the methyl-TROSY spectrum of hIRE1α cLD Leu186Ile alone (black, 50 µM) and of hIRE1α cLD Leu186lle bound to MPZ1 (1:1 molar ratio) (upper panel, blue), or to 8ab1 peptide (lower panel, green, 1:1 molar ratio) shows that peptide binding shifts select peaks. The shift of each peak is indicated with brackets consistent with the color code in Figure 4—figure supplement 1B, where yellow color indicates chemical shift perturbation values Δν > 0.005, orange, Δν > 0.010 and red Δν > 0.020. The identities of isoleucine peaks are indicated on top of each peak. (B) Close-up of the threonine peaks in the methyl-TROSY spectrum of hIRE1α cLD Leu186Ile alone (black, 50 µM) and of hIRE1α cLD Leu186Ile bound to MPZ1 (1:1 molar ratio) (upper panel, blue), or to 8ab1 peptide (lower panel, green, 1:1 molar ratio) shows that peptide binding shifts select peaks upon binding of peptides. The chemical shift of each peak is indicated as in Figure 4A based on the chemical shift perturbations calculated in Figure 4—figure supplement 1C. (C) Close-up of select isoleucine peaks in the methyl-TROSY spectrum of hIRE1α cLD T159I mutant alone (black, 25 µM) and in the spectrum of hIRE1α cLD bound to MPZ1-N peptide (1:1 molar ratio) (blue). The chemical shift of each peak is indicated with brackets consistent with the color code in Figure 4—figure supplement 1B,D. (D) Important structural regions of hIRE1 cLD are depicted on the structural model of hIRE1α cLD by arrows. The red dashed-lines indicate the dimerization interface IF1L of hIRE1α cLD, whereas the black box shows the β-sheet floor of the MHC-like groove. (E) The isoleucine peaks shifting upon MPZ1 binding are mapped into the hIRE1α cLD structural model based on their combined chemical shift perturbation values as shown in Figure 4—figure supplements 4 and 6. The red spheres indicate isoleucine peaks with significant shifts (Δν > 0.020), orange; moderate shifts Δν > 0.010, and yellow spheres show isoleucines that shift slightly upon peptide binding, Δν > 0.005. The isoleucine peaks that do not change significantly (Δν < 0.005) are depicted in blue. (F) Close-up of select isoleucine peaks in the methyl-TROSY spectrum of hIRE1α cLD triple mutant Ile326/334/362Leu alone (black, 50 µM) overlaid with the spectrum of hIRE1α cLD when bound to CH1 domain (1:1 molar ratio) (red). The shifts are indicated with brackets consistent with color coding in Figure 4B and Figure 4—figure supplement 1B,D.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Methyl-TROSY spectrum of hIRE1α cLD Leu186Ile at 50 µM alone (right), hIRE1α cLD Leu186Ile bound to MPZ1 peptide, at 50 µM (1:1 molar ratio, middle), hIRE1α cLD Leu186Ile bound to 8ab1 peptide, at 50 µM (1:1 molar ratio, left). (B) Chemical shift perturbation analysis of isoleucine signals upon MPZ1 (blue) and 8ab1 (green) peptide binding to hIRE1α cLD (based on the spectra in Figure 4a). The combined chemical shift perturbation of the isoleucines is calculated as Δν= ((0.25ΔνC)2 + (ΔνH)2)1/2. The yellow line indicates Δν > 0.005, orange line Δν > 0.010 and red line Δν > 0.020. ‘*’ indicates isoleucine peaks that split. (C)Chemical shift perturbation analysis of threonine signals upon MPZ1 (blue) and 8ab1 (green) peptide binding to hIRE1α cLD (based on the spectra in Figure 4b). The combined chemical shift perturbation of the isoleucines are calculated as ΔV= ((0.25ΔνC)2 + (ΔνH)2)1/2. The yellow line indicates Δν > 0.005, orange line Δν > 0.010 and red line Δν > 0.020. ‘*’ indicates isoleucine peaks that split. (D) Chemical shift perturbation analysis of isoleucine signals upon MPZ1 (blue) peptide binding to hIRE1α cLD T159I mutant (based on the spectrum in Figure 4c). The yellow line indicates Δν > 0.005, orange line Δν > 0.010 and red line Δν > 0.020.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The yellow line indicates Δν > 0.005, orange line Δν > 0.010 and red line Δν > 0.020. ‘*’ indicates isoleucine peaks that split.
+
 Importantly, binding of the unfolded protein CH1 shifted the same peaks in the hIRE1α cLD spectra as the short peptides suggesting peptides and unfolded protein chains interact with hIRE1α cLD in a similar way (Figure 4F, Figure 4—figure supplement 2). Taken together, these results indicate that peptide as well as unfolded protein binding populate a distinct conformational state of hRE1α cLD, consistent with a peptide-induced closed-to-open conformational transition. Moreover, the results are consistent with a model in which peptide binding induces conformational changes that propagate from the MHC-like groove via the β-sandwich to affect the regions involved in oligomerization.
 
-## Peptide binding maps to the MHC-like groove in hIRE1α cLD
+### Peptide binding maps to the MHC-like groove in hIRE1α cLD
 
 To map the peptide-binding site in hIRE1α cLD with higher precision, we employed paramagnetic relaxation enhancement (PRE) experiments (Gaponenko et al., 2000; Gillespie and Shortle, 1997) using MPZ1 modified with a nitroxide spin label, 3-(2-Iodoacetamido)-PROXYL, at cysteine residue, Cys5 (Figure 5A,B). The unpaired electron in the spin label broadens (in a range of 1 to 2.5 nm) or entirely erases (distances <1 nm) NMR signals in its vicinity in a distance dependent manner (Gottstein et al., 2012). Binding of the spin label attached peptide to hIRE1α cLD would result in a decrease in the intensity of isoleucine peaks depending on their relative distance to the peptide-binding site. Therefore, we analyzed the changes in the intensities of all isoleucine signals upon binding of MPZ1-proxyl peptide to hIRE1α cLD (Figure 5B, Figure 5—figure supplement 1A–C). Binding of MPZ1-proxyl to hIRE1α cLD erased the otherwise very strong signal of Leu186Ile and broadened that of Ile124 (Figure 5B–D and Figure 5—figure supplement 1A–C). Importantly, Ile128 and Ile263 signals, which shifted upon MPZ1 binding as discussed above (Figure 4E), broadened to a lesser extent, suggesting that these residues lie further from the peptide-binding site (Figure 5—figure supplement 1C and D). Their resonances therefore shifted due to peptide-induced distant conformational rearrangements. Displaying the normalized PRE effect on hIRE1α cLD structure revealed that MPZ1-proxyl binding mapped to the center of the MHC-like groove, suggesting that peptides bind to MHC-like groove and induce distant conformational changes in hIRE1α cLD (Figure 5D).
 
-## Peptide binding induces oligomerization of hIRE1α cLD
+![Figure 5.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the spin label attached MPZ1 peptide. (B) Comparison of the methyl-TROSY spectra of hIRE1α cLD Leu186Ile in the absence (black, 75 µM) and presence of spin-labeled MPZ1 peptide (red, 1:1 molar ratio). (C) The normalized PRE effect on isoleucine peaks upon binding of spin-labeled peptide. The intensity of isoleucine peaks upon MPZ1-proxyl binding is divided by their intensity in the reference spectrum (IPRE/I0) (Figure 5—figure supplement 1C) and further normalized to their surface exposed area to exclude possible contributions from non-specific interactions with the spin label attached peptide (Clore and Iwahara, 2009) (see Materials and methods). (D) The normalized PRE effect is mapped on the structural model of hIRE1α cLD. The isoleucine peaks in hIRE1α cLD that are broadened upon peptide binding are depicted with a color gradient from red to green as space filling side-chains in the hIRE1α cLD structural model based on decreasing degree of broadening using normalized PRE effect in Figure 5C.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison of the methyl-TROSY spectra of hIRE1α cLD L186I/I326-334-362L quadruple mutant in the absence (black, 50 µM) and presence of spin-labeled MPZ1 peptide (red in 1:1 molar ratio). (B) The intensity of isoleucine peaks upon MPZ1-proxyl binding to L186I/I326-334-362L quadruple mutant is divided to their intensity in the reference spectrum (IPRE/I0). (C) The intensity of isoleucine peaks upon MPZ1-proxyl binding to L186I mutant is divided to their intensity in the reference spectrum (I PRE/I0).
+
+### Peptide binding induces oligomerization of hIRE1α cLD
 
 To test whether the distant conformational changes in hIRE1α cLD monitored by the NMR experiments are due to peptide binding-induced oligomerization, we employed analytical ultracentrifugation (AUC) sedimentation velocity experiments to assess the oligomeric status of hIRE1α cLD in the absence and presence of peptides. At the concentration range used at NMR experiments (25–75 µM), hIRE1α cLD was found as a mixture of various oligomeric states, where the main peaks corresponded to dimers and tetramers (with higher amount of tetramers formed at higher concentrations, see Figure 6A). Notably, binding of MPZ1-N to hIRE1α cLD at the NMR concentrations sharpened the tetramer peak and induced formation of larger oligomeric species in these experiments (Figure 6A). The peptide concentration used in these experiments does not saturate hIRE1α cLD molecules based on a determined K1/2 of 16.0 ± 2.6 µM, therefore only a small population of hIRE1α cLD formed higher oligomers (depicted as the pink area) (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig6-v2.jpg)
+
+**Figure 6.:** (A) AUC sedimentation velocity measurements of hIRE1α cLD alone (75 µM) (gray line) versus hIRE1α cLD with 75 µM MPZ1-N peptide (blue line). Pink region indicates larger hIRE1α cLD oligomers formed upon peptide binding. (B) AUC sedimentation velocity measurements of hIRE1α cLD alone (5 µM) (gray line) versus hIRE1α cLD with 50 µM MPZ1 peptide (blue line), pink region indicates the shift in the AUC profile upon peptide binding. (C) AUC sedimentation velocity measurements of hIRE1α cLD at 5, 25 and 75 µM are shown in different shades of gray. (D) Close-up of isoleucine peaks in the methyl-TROSY spectrum of hIRE1α cLD at 5 µM (black) overlaid with the spectrum of hIRE1α cLD at 50 µM (red). (E) The isoleucine peaks shifting upon oligomerization are mapped into the hIRE1α cLD structure based on the chemical shift perturbation values shown in Figure 6—figure supplement 2C. The red spheres indicate isoleucine peaks that display most significant shifts (Δν > 0.020), orange; moderate shifts Δν > 0.010, and yellow; slight shifts Δν > 0.005. The isoleucine peaks that do not change significantly (Δν < 0.005) are depicted in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Size exclusion chromatography with increasing concentrations of hIRE1α cLD shows that it elutes in earlier fractions in a concentration dependent manner (500 µM, 250 µM, 125 µM, 62.5 µM of hIRE1α cLD is loaded on the column). The arrows show the expected sizes of the most represented oligomeric species of hIRE1α cLD. (B) Comparison of sedimentation profiles of hIRE1α cLD at 1 and 2.5 (shades of gray) by AUC sedimentation velocity experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Methyl-TROSY spectrum of hIRE1α cLD Leu186Ile at 5 µM. (B) Methyl-TROSY spectrum of hIRE1α cLD Leu186Ile at 50 µM. (C) Chemical shift perturbation analysis of isoleucine signals upon oligomerization of hIRE1α cLD (based on the spectra in Figure 6d). The combined chemical shift perturbation of the isoleucines are calculated as Δν = ((0.25ΔνC)2 + (ΔνH)2)1/2. The yellow line indicates Δν > 0.005, orange line Δν > 0.010 and red line Δν > 0.020.
+
 To assess hIRE1α cLD’s oligomeric status at varying hIRE1α cLD concentrations, we performed size exclusion chromatography and found that hIRE1α cLD eluted at earlier fractions in a concentration-dependent manner (Figure 6—figure supplement 1A). AUC data confirmed these findings and showed that at concentrations close to its dimerization constant of 2.5 µM, hIRE1α cLD sediment as a single peak with a sedimentation coefficient corresponding to a mixture of monomers and dimers (Figure 6B, Figure 6—figure supplement 1B). In this concentration regime (from 1 to 2.5 µM), the hIRE1α cLD peak progressively shifted to higher sedimentation values with increasing hIRE1α cLD concentration (Figure 6—figure supplement 1B). Peptide binding to hIRE1α cLD shifted the hIRE1α cLD population to even higher sedimentation values (Figure 6B, blue trace), indicating that under these conditions peptide binding stabilized hIRE1α cLD dimers and lead to the formation of oligomers.
 
-## Oligomerization leads to global conformational changes in hIRE1α cLD
+### Oligomerization leads to global conformational changes in hIRE1α cLD
 
 As hIRE1α cLD populated distinct oligomeric states in a concentration-dependent manner, we next compared the conformational state of hIRE1α cLD at 5 µM (no higher-order oligomer formation detected by AUC) to 50 µM (based on Figure 6C, approximately 60% higher-order oligomer formation) by NMR spectroscopy to probe for the structural differences assumed by these two distinct states (Figure 6C,D). In these experiments, we relied on the high sensitivity of selective isoleucine labeling strategy, which could readily detect hIRE1α cLD signals at concentrations as low as 5 µM (Figure 6—figure supplement 2A,B).
 
 Notably and similar to effects observed upon peptide binding, oligomerization changed the environment of the αB helix (marked by Ile263) and the β-sandwich connecting the β-sheet floor to the αB helix (marked by Ile52) that both lie at the tips of hIRE1α cLD dimers (Figure 6D,E, Figure 6—figure supplement 2C). These data suggest that these isoleucines are part of the oligomerization interface and/or that their conformational rearrangements are coupled to the formation of the interface. Moreover, NMR experiments showed chemical shifts in the isoleucines on the beta sheet floor of the groove (marked by Ile124 and Ile128) upon formation of higher oligomers (Figure 6E). These coupled, global conformational differences observed by NMR strongly underscore the notion that oligomeric hIRE1α cLD adopts an active conformation and displays higher affinity for unfolded protein ligands. To address this notion, we set out to experimentally determine the oligomerization interface and then impair the oligomerization of hIRE1α cLD by mutation.
 
-## Identifying the oligomerization interface of hIRE1α cLD
+### Identifying the oligomerization interface of hIRE1α cLD
 
 We employed a chemical cross-linking strategy coupled to mass spectrometry to experimentally determine residues that map to the oligomerization interface in hIRE1α cLD. To this end, we cross-linked hIRE1α cLD in the presence and absence of peptides by a homobifunctional cross-linker, BS3 (bis(sulfosuccinimidyl)suberate), which crosslinks primary amines mainly present in lysine side chains. Denaturing SDS-PAGE analysis of hIRE1α cLD after cross-linking revealed that cross-linking captured oligomeric hIRE1α cLD (Figure 7A, Figure 7—figure supplement 1). We separately isolated the bands corresponding to hIRE1α cLD monomers, dimers and higher oligomers from the gel and analyzed peptides by mass spectrometry. We identified cross-linked peptides by accurate mass measurement of both candidate peptides and their fragment ions (Chu et al., 2010; Trnka et al., 2014). In comparative analyses, we separated intra- from inter-molecular cross-links by focusing on peaks that were present only in the covalent dimers and higher oligomers (Wu et al., 2013; Zeng-Elmore et al., 2014). These analyses revealed five abundant cross-links between lysines 120•120, 53•347, 53•349, 53•351 and 265•351 (Figure 7A, Table 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig7-v2.jpg)
+
+**Figure 7.:** (A) Tandem mass spectrometry (MS) profile of the peptide crosslinked at Lys53 and Lys351. Extracted Ion chromatography (XIC) of the peptide peak in monomeric versus oligomeric hIRE1α cLD shows its absence in cross-linker treated monomer proteins. (B) Mapping cross-link sites on the structural model of hIRE1α cLD by threading on the oligomeric yeast crystal structure. Each monomer is colored as shades of gray. The Lys53, Lys265 are shown as orange and blue spheres, respectively, and Lys347,Lys349, Lys351 are shown as red spheres. The dashed lines indicate the cross-links between the lysines. (C) The amino acids forming the oligomerization interface are shown as spheres and colored by red (indicating oxygens), blue (indicating nitrogens) and white (indicating carbons). The Trp359 that is mutated in the hIRE1α cLD IF2L mutant is colored as green and pink in different protomers. (D) 359WLLI362-GSGS mutation (hIRE1α cLD IF2L mutant) impairs hIRE1α cLD oligomerization determined by AUC sedimentation velocity experiments. Gray line depicts wild type hIRE1 α cLD (25 µM) and red shows the hIRE1α cLD IF2L mutant (50 µM). (E) hIRE1α cLD IF2L mutant binds MPZ1-N-2X peptide (red curve) at similar affinity K 1/2=0.95 ± 0.4 as wild type hIRE1α cLD (black curve)(K1/2 = 0.456 ± 0.7 µM) determined by fluorescence anisotropy measurements. (F) Close-up of isoleucine peaks in the methyl-TROSY spectrum of hIRE1α cLD IF2L mutant alone (black, 50 µM) overlaid with the spectrum of hIRE1α cLD bound to MPZ1-N-2X (upper panel, red, 1:1 molar ratio). (G) The isoleucine peaks shifting upon peptide binding to hIRE1α cLD IF2L mutant are mapped on hIRE1α cLD structural model based on the chemical shift perturbations calculated in Figure 7—figure supplement 4) consistent with the color code in Figure 4E.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** After incubation with the BS3 cross-linker at the indicated times, the reaction is stopped with addition of Tris-HCl and the proteins are analyzed with the SDS-PAGE after coomassie blue staining.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The mutated amino acids are shown as spheres, where red spheres depict oxygens, blue, nitrogens and pink and green spheres depict carbons in different protomers.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) hIRE1α cLD IF2L mutant binds MPZ1-N peptide (K1/2 = 5.4 ± 1.4 µM) at similar affinity to wild type hIRE1α cLD (K1/2= 16.0 ± 2.6 µM) determined by fluorescence anisotropy measurements. (B) AUC sedimentation velocity measurements of hIRE1α cLD IF2L mutant alone (50 µM) (gray line) versus hIRE1α cLD with 12.5 µM MPZ1-N-2X peptide (blue line). (C) AUC sedimentation velocity measurements of hIRE1α cLD IF2L mutant alone (5 µM) (gray line) versus hIRE1α cLD with 5 µM MPZ1-N-2X peptide (blue line).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Methyl-TROSY spectrum of hIRE1α cLD IF2L mutant at 50 µM. (B) Methyl-TROSY spectrum of hIRE1α cLD IF2Lmutant bound to MPZ1-N peptide, at 50 µM (1:1 molar ratio). (C) Chemical shift perturbation analysis of MPZ1-N peptide binding to hIRE1α cLD IF2L mutant. The combined chemical shift perturbations of the isoleucine resonances were calculated as Δv = ((0.25ΔνC)2 + (ΔνH)2)1/2.
+
+**Table 1.**
+ List of cross-linked peptides in hIRE1α cLD detected by mass spectrometry and their relative abundance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="7">Band number on the SDS-PAGE (with peptides)</th>
+      <th colspan="6">Band number on the SDS-PAGE (without peptides)</th>
+    </tr>
+    <tr>
+      <th>Xlink 1</th>
+      <th>Xlink 2</th>
+      <th></th>
+      <th>5</th>
+      <th>4</th>
+      <th>3</th>
+      <th>2</th>
+      <th>1 (monomer)</th>
+      <th>Xlink 1</th>
+      <th>Xlink 2</th>
+      <th></th>
+      <th>5</th>
+      <th>4</th>
+      <th>3</th>
+      <th>2</th>
+      <th>1 (monomer)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K53</td>
+      <td>K347</td>
+      <td>AVE (%)</td>
+      <td>4.1%</td>
+      <td>3.2%</td>
+      <td>3.7%</td>
+      <td>4.9%</td>
+      <td>0.0%</td>
+      <td>K53</td>
+      <td>K347</td>
+      <td>AVE (%)</td>
+      <td>3.3%</td>
+      <td>4.3%</td>
+      <td>4.4%</td>
+      <td>3.4%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.4%</td>
+      <td>1.9%</td>
+      <td>1.0%</td>
+      <td>1.0%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.3%</td>
+      <td>1.9%</td>
+      <td>2.1%</td>
+      <td>2.5%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>K53</td>
+      <td>K349</td>
+      <td>AVE (%)</td>
+      <td>1.4%</td>
+      <td>1.0%</td>
+      <td>1.4%</td>
+      <td>1.5%</td>
+      <td>0.0%</td>
+      <td>K53</td>
+      <td>K349</td>
+      <td>AVE (%)</td>
+      <td>1.6%</td>
+      <td>1.4%</td>
+      <td>1.6%</td>
+      <td>1.6%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.2%</td>
+      <td>0.4%</td>
+      <td>0.3%</td>
+      <td>0.8%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.5%</td>
+      <td>0.5%</td>
+      <td>0.9%</td>
+      <td>0.5%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>K53</td>
+      <td>K351</td>
+      <td>AVE (%)</td>
+      <td>4.0%</td>
+      <td>2.4%</td>
+      <td>3.2%</td>
+      <td>3.4%</td>
+      <td>0.0%</td>
+      <td>K53</td>
+      <td>K351</td>
+      <td>AVE (%)</td>
+      <td>2.3%</td>
+      <td>3.2%</td>
+      <td>2.6%</td>
+      <td>2.1%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>1.1%</td>
+      <td>2.4%</td>
+      <td>0.8%</td>
+      <td>0.3%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.4%</td>
+      <td>1.0%</td>
+      <td>1.7%</td>
+      <td>2.3%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>K121</td>
+      <td>K121</td>
+      <td>AVE (%)</td>
+      <td>3.7%</td>
+      <td>2.9%</td>
+      <td>1.5%</td>
+      <td>0.8%</td>
+      <td>0.0%</td>
+      <td>K121</td>
+      <td>K121</td>
+      <td>AVE (%)</td>
+      <td>2.6%</td>
+      <td>2.1%</td>
+      <td>2.1%</td>
+      <td>0.3%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.9%</td>
+      <td>1.4%</td>
+      <td>0.0%</td>
+      <td>0.3%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.2%</td>
+      <td>0.8%</td>
+      <td>1.5%</td>
+      <td>0.1%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>K351</td>
+      <td>K265</td>
+      <td>AVE (%)</td>
+      <td>1.2%</td>
+      <td>0.8%</td>
+      <td>1.0%</td>
+      <td>0.4%</td>
+      <td>0.0%</td>
+      <td>K351</td>
+      <td>K265</td>
+      <td>AVE (%)</td>
+      <td>0.6%</td>
+      <td>0.9%</td>
+      <td>0.9%</td>
+      <td>0.4%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.1%</td>
+      <td>0.6%</td>
+      <td>0.5%</td>
+      <td>0.3%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.3%</td>
+      <td>0.2%</td>
+      <td>0.4%</td>
+      <td>0.3%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>K53</td>
+      <td>K265</td>
+      <td>AVE (%)</td>
+      <td>0.5%</td>
+      <td>0.4%</td>
+      <td>0.2%</td>
+      <td>0.2%</td>
+      <td>0.0%</td>
+      <td>K53</td>
+      <td>K265</td>
+      <td>AVE (%)</td>
+      <td>0.3%</td>
+      <td>0.4%</td>
+      <td>0.3%</td>
+      <td>0.1%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.1%</td>
+      <td>0.1%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td></td>
+      <td></td>
+      <td>STDEV(%)</td>
+      <td>0.1%</td>
+      <td>0.3%</td>
+      <td>0.1%</td>
+      <td>0.1%</td>
+      <td>0.0%</td>
+    </tr>
+  </tbody>
+</table>
 
 Previous studies of BS3-cross-linked proteins with known crystal structures established that the distance between the αC atoms of cross-linked lysines is less than 28 Å for most cross-links but can be up to 33 Å for a few cases due to local protein flexibility (Leitner et al., 2010), in agreement with the additive lengths of the cross-linker itself plus twice the length of the lysine side chain. The Lys120•120 cross-link maps to hIRE1α cLD’s dimerization interface (IF1L), whereas the four other cross-links are compatible with being positioned at hIRE1α cLD oligomerization interface, IF2L. The cross-links Lys53•347, Lys53•349, Lys53•351 and Lys265•351 each involve one lysine residue (Lys53 and Lys263) that is close to the isoleucines (Ile52 and Ile263) that shifted upon hIRE1α cLD oligomerization (Figure 6D,E), suggesting that they report on the formation of hIRE1α cLD’s putative oligomerization interface IF2L. Lys347, Lys349 and Lys351 are located in a region that was not resolved in hIRE1α cLD crystal structure, suggesting that these regions are contributing to the formation of the oligomerization interface in hIRE1α cLD.
 
@@ -104,15 +442,29 @@ We next threaded the sequence of hIRE1α cLD into the yeast crystal structure of
 
 We used the predictive power of the structural model (hIRE1 cLD threaded into the yeast structure) to identify a patch of four hydrophobic residues WLLI (aa 359–362) suggested to contribute to the hIRE1α cLD oligomerization interface IF2L (Figure 7C, Figure 7—figure supplement 2). Assuming that these residues would be critical for oligomerization, we mutated them (WLLI359-362 to GSGS359-362; ‘IF2L mutant’) and assessed whether the hIRE1α cLD IF2L mutant formed oligomers by AUC sedimentation velocity analysis. The experiments revealed that, at a concentration (50 µM) where wild type hIRE1α cLD readily forms oligomers, the hIRE1α cLD IF2L mutant sediment as a single dimeric peak, showing that the mutation prevents hIRE1α cLD oligomerization (Figure 7D).
 
-## The peptide-induced allosteric switch remains intact in hIRE1α cLD IF2L mutant
+### The peptide-induced allosteric switch remains intact in hIRE1α cLD IF2L mutant
 
 To assess whether hIRE1α cLD IF2L mutant is functional, we tested peptide binding by fluorescent anisotropy experiments. The IF2L mutant bound MPZ1-N and MPZ1-N-2X peptide at similar affinities to the wild type protein (with K1/2 = 5.4 ± 1.4 µM and K1/2 = 0.95 ± 0.4 µM, respectively) (Figure 7E, Figure 7—figure supplement 3A). These results indicated that hIRE1α cLD dimer is the functional unit for peptide binding and that hIRE1α cLD oligomers do not display a higher affinity conformation. Moreover, they also showed that the avidity effect that resulted in higher affinity binding of MPZ1-N-2X peptide to hIRE1α cLD does not require formation of higher hIRE1α cLD oligomers. AUC data confirmed these analyses and showed that binding of MPZ1-N-2X to hIRE1α cLD IF2Lmutant stabilized dimer formation but did not lead to formation of oligomers bridged by MPZ1-N-2X peptide (Figure 7E, Figure 7—figure supplement 3B and C).
 
 The hIRE1α cLD IF2L mutant therefore enabled us to decouple peptide induced allosteric communication from the formation of oligomers, both of which could have contributed to the shift of the isoleucine peaks in the NMR experiments. To address this notion, we repeated the NMR experiments with the IF2L mutant (Figure 7F, Figure 7—figure supplement 4A–C). Similar to WT hIRE1α cLD, MPZ1-N peptide binding to hIRE1α cLD IF2L mutant shifted isoleucines in the β-sheet floor (marked by Ile124 and Ile128) (Figure 7F and G, Figure 7—figure supplement 4B and C). Importantly, isoleucine peaks (Ile52 and Ile263) close to the oligomerization interfaces also shifted upon peptide binding to the hIRE1α cLD IF2L mutant. Thus peptide binding-induced conformational changes in isoleucines distant to the peptide binding site persisted in the hIRE1α cLD IF2L mutant. Interestingly, MPZ1-N-2X binding shifted isoleucine peaks in the same direction and to a similar extent as binding of MPZ1-N, indicating that hIRE1α cLD IF2L binds to the same site in these peptides (Figure 7G, Figure 7—figure supplement 4B and C). These data suggest that the increased affinity of MPZ1-N-2X is due to a decreased rate of dissociation of the peptide.
 
-## IRE1 lumenal domain-driven oligomerization is crucial for IRE1 function in mammalian cells
+### IRE1 lumenal domain-driven oligomerization is crucial for IRE1 function in mammalian cells
 
 To test the importance of lumenal domain driven oligomerization for hIRE1α function in vivo, we generated cell lines that stably express hIRE1α IF2L mutant as the only form of hIRE1α. To this end, we introduced the hIRE1α IF2L mutant into mouse embryonic fibroblasts (MEFs) deficient for both isoforms of IRE1 (IRE1α−/−/IRE1β−/−). In addition, we attached a GFP tag to IRE1’s cytoplasmic flexible linker retaining its function as published previously for HEK293 cells (Li et al., 2010). In parallel, we introduced hIRE1α-GFP to IRE1α−/−/IRE1β−/− MEFs to compare hIRE1α activity at similar conditions. In these cell lines, we controlled hIRE1α expression via a doxycycline-inducible promoter. In the absence of doxycycline, cells expressed low levels of hIRE1α due to the leakiness of the promoter. In those conditions, the expression level of the hIRE1α-GFP-IF2L mutant was similar to hIRE1α-GFP and to the level of endogenous IRE1α from wild-type MEFs, as assessed by Western blot analysis (Figure 8A,B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig8-v2.jpg)
+
+**Figure 8.:** (A) Western blot analyses show the levels of hIRE1α-GFP and hIRE1α-GFP-IF2L mutant proteins stably expressed in IRE1α−/−/IRE1β−/− MEFs in response to various doxycycline concentrations. hIRE1α is detected by anti-IRE1 antibody and GAPDH is probed as the loading control. The lower panel shows Western blot analysis comparing IRE1 levels in hIRE1α-GFP and hIRE1α-GFP-IF2L mutant cell lines in the absence of doxycycline side by side. (B) Western blot analyses of hIRE1α-GFP and hIRE1α-GFP-IF2L mutant reconstituted in IRE1α−/−/IRE1β−/− MEFs and MEFs isolated from wild type mice are probed with anti-IRE1 and anti-phospho-IRE1 antibody. The cells are treated with 5 µg/ml tunicamycin for inducing ER stress. (C) Unlike hIRE1α-GFP, the hIRE1α-GFP-IF2L mutant does not splice XBP1 mRNA after induction of ER stress by the chemical ER stressor tunicamycin (5 µg/ml). XBP1 mRNA splicing is determined by semi quantitative PCR. The spliced and unspliced forms of XBP1 mRNA are indicated. Splicing assays in are conducted in IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP or the hIRE1α-GFP-IF2L mutant in the absence of doxycycline. (D) Confocal microscopy images of IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP-IF2L mutant and hIRE1α-GFP after 4 hr of chemically induced ER stress by tunicamycin (5 µg/ml).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The spliced and unspliced forms of XBP1 mRNA are indicated. Splicing assays in are conducted in IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP or the hIRE1α-GFP-IF2L mutant in the absence of doxycycline.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig8-figsupp2-v2.jpg)
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/30700/elife-30700-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Confocal microscopy images of IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP. Around >70% of wild type cells form foci upon ER stress induction (n = 88). The cells are treated for 4 hr by tunicamycin to induce ER stress before fixation and fluorescence imaging of hIRE1α-GFP-IF2L (green) and DNA (blue, DAPI) (B) Confocal microscopy images of IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP-IF2L mutant. The cells are treated for 4 hr by tunicamycin to induce ER stress before fixation and fluorescence imaging of hIRE1α-GFP-IF2L mutant (green) and DNA (blue, DAPI). (C) Live cell imaging with IRE1α−/−/IRE1β−/− MEFs reconstituted with hIRE1α-GFP-IF2L mutant. Imaging was performed after 4 hr of ER stress induction (between 4–5 hr of ER stress) by tunicamycin.
 
 We next monitored the XBP1 mRNA splicing activity of IRE1 in IRE1α−/−/IRE1β−/− MEFs harboring hIRE1α-GFP or hIRE1α-GFP-IF2L mutant (Figure 8C). We found that unlike hIRE1α-GFP, hIRE1α-GFP-IF2L mutant did not splice XBP1 mRNA after induction of ER stress by tunicamycin, a chemical stressor that impairs ER-folding homeostasis by inhibiting N-linked glycosylation (Figure 8C, Figure 8—figure supplement 1) (Heifetz et al., 1979). IRE1’s RNase activity is preceded by the autophosphorylation of its kinase domain, which can be monitored by a phospho-specific antibody. Western blot analysis showed no signal corresponding to phospho-IRE1 in the IRE1α−/−/IRE1β−/− cells expressing hIRE1α--GFP-IF2L, by contrast to the same cells reconstituted with wild type hIRE1α-GFP, or in contrast to wild type MEFs, in which we detected phosphorylation of the endogenous protein (Figure 8B, Figure 8—figure supplement 2). Lastly, confocal microscopy revealed that under ER stress conditions where hIRE1α-GFP readily formed foci (>70%, n = 88, Figure 8D, Figure 8—figure supplement 3A), reflecting its assembly into active oligomers, the hIRE1α-GFP-IF2L mutant failed to do so (Figure 8D, Figure 8—figure supplement 3B and C). These data confirmed that cLD-mediated oligomerization is crucial for IRE1 function in cells.
 
@@ -142,68 +494,68 @@ IRE1 dysfunction contributes to the development of numerous diseases, including 
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
 Synthetic peptides were ordered from Elim Biosciences and GenScript at >95% purity.
 
-## Protein purification
+### Protein purification
 
 To express MBP-hIRE1α cLD (aa 24–389), human IRE1α cDNA sequences were cloned into a pMalC2p vector to create a hIRE1α cLD fused on its N-terminus to MBP. To express His10-hIRE1α cLD, hIRE1α cLD was cloned into pet16b(+) vector containing a FactorXa protease cleavage site. Additionally, His10-hIRE1α cLD and IRE1 LD coding sequences were cloned into pet47b(+) vector with a preScission protease cleavage site. Hamster BiP with an N-terminal His10-tag was cloned into pet16b(+) vector, which was modified to introduce a preScission protease site C-terminal to the His10-tag. For expression of the proteins, the plasmid of interest was transformed into Escherichia coli strain BL21DE3* RIPL (Agilent Technologies) or Rosetta2 cells (Novagen). Cells were grown in Luria Broth at 37°C until OD600 = 0.6. Protein expression was induced with 0.3 mM IPTG, and cells were grown at 21°C overnight. For selective labeling, cells were grown according to published protocols (Tugarinov and Kay, 2004). Briefly, cells were grown at minimal media in D2O supplemented with deuterated glucose as the primary carbon source. For purification, cells were resuspended in Lysis Buffer (50 mM HEPES pH 7.2, 400 mM NaCl, 4 mM dithiothreitol (DTT)(or 5 mM β-mercaptoethanol, if a nickel column was used)) and were lysed in an Avestin EmulsiFlex-C3 cell disruptor at 16,000 psi. The supernatant was collected after centrifugation for 40 min at 30,000xg. MBP-IRE1 cLD constructs were purified on an MBP-amylose resin (New England Biolabs) and eluted with 10 mM amylose in Elution Buffer (50 mM HEPES pH 7.2, 150 mM NaCl, 4 mM DTT) after washing the column with 20 column volumes of Lysis Buffer. The eluate was then diluted with 50 mM HEPES (pH 7.2) buffer to 50 mM NaCl and applied to a MonoQ ion exchange column and eluted with a linear gradient from 50 mM to 1 M NaCl. The protein was further purified on a Superdex 200 10/300 gel filtration column equilibrated with Buffer A (25 mM HEPES pH 7.2, 150 mM NaCl, 2 mM tris(2carboxyethyl)phosphine (TCEP). The initial purification of His6- and His10-hIRE1α cLD and His10-BiP constructs were performed on a His-TRAP column (GE Healthcare), where the protein was eluted with gradient from 20 mM to 500 mM imidazole. The eluate was purified on a MonoQ column, before the His6-tag (pet47b+) or His10-tag (pet16b+) were removed by either PreScission protease (GE Healthcare, 1 unit of enzyme for 100 µg of protein) or FactorXa (NEB, 1 µg of FactorXa per 100 µg of protein), respectively. The tag removal was performed at 4o C overnight after the protein concentration was adjusted to 1 mg/mL. CH1 domain of IgG was purified under reducing conditions as described (Feige et al., 2009). Protein concentrations were determined using extinction coefficient at 280 nm predicted by the Expasy ProtParam tool (http://web.expasy.org/protparam/).
 
-## Peptide arrays
+### Peptide arrays
 
 Peptide arrays were purchased from the MIT Biopolymers Laboratory. The tiling arrays were composed of 18-mer peptides that were tiled along the CPY*, MPZ, insulin, lysozyme and PTIP sequences with a three amino acid shift between adjacent spots. In the mutational arrays, peptides were synthesized to systematically mutate each amino acid in the core region of the CPY*-derived peptide. The arrays were incubated in 100% methanol for 10 min, then in Binding Buffer (50 mM HEPES pH 7.2, 150 mM NaCl, 0.02% Tween-20, 2 mM DTT) three times for 10 min each. For BiP experiments, ADP and MgCl2 were added to the binding buffer to final concentrations of 1 mM and 5 mM, respectively. The arrays were then incubated for 1 hr at room temperature with 500 nM MBP-hIRE1α cLD or His10-BiP and washed again three times with 10 min incubation in between the washes in Binding Buffer to remove any unbound protein. Using a semi-dry transfer apparatus, the bound protein was transferred to a nitrocellulose membrane and detected with anti-MBP antiserum (NEB) or anti-His6 antibody (Abcam). The contribution of each amino acid to hIRE1α cLD and BiP binding was calculated as described previously (Gardner and Walter, 2011). The peptide arrays were quantified using Max Quant. The binding intensity in each spot was normalized to max signal intensity in the peptide array. The peptides with the top 10% binding scores were selected and the occurrence of each amino acid in these top-binding peptides was calculated. This value is normalized to their abundance in the arrays (Figure 2A). To calculate experimental error, the amino acid occurrences of top binders were calculated for independent replicates. The statistical significance (p<0.05) is determined using non-paired t-test by the Prism software (Figure 2—figure supplement 1A).
 
-## Fluorescence anisotropy
+### Fluorescence anisotropy
 
 For fluorescence anisotropy measurements, MPZ1 peptide attached to 5-carboxyfluorescein (5-FAM) at its C-terminus was obtained at >95% purity from ELIM Biopharmaceuticals. For the remaining peptides (8ab1, MPZ1-N, MPZ1-M, MPZ1-C and MPZ1-N) derivatives were synthesized with 5-FAM attached to their N-terminus by GenScript at >95% purity. Binding affinities of hIRE1α cLD or IRE1 mutants to FAM-labeled peptides were measured by the change in fluorescence anisotropy on a Spectramax-M5 plate reader with excitation at 485 nm and emission at 525 nm with increasing concentrations of hIRE1α cLD. Fluorescently labeled peptides were used in a concentration range of 50–100 nM. The reaction volume of each data point was 20 µL and the measurements were performed in 384-well, black flat-bottomed plates after incubation of peptide with hIRE1α cLD or its mutants for 30 min at 25o C. Binding curves were fitted using Prism Software (GraphPad) using the following equation: Fbound = rfree + (rmax- rfree)/(1 + 10((LogK1/2-X)•nH)), where Fbound is the fraction of peptide bound, rmax and rfree are the anisotropy values at maximum and minimum plateaus, respectively. nH is the Hill coefficient and x is the concentration of the protein in log scale. Curvefitting was performed with minimal constraints to obtain K1/2 values with high R2 values. However, as this equation does not take into account the equilibria between hIRE1α cLD dimers/oligomers, these apperant K1/2 values do not reflect the dissociation constant.
 
-## Microscale thermophoresis experiments (MST)
+### Microscale thermophoresis experiments (MST)
 
 MST experiments were performed with a Monolith NT.115 instrument (NanoTemper Technologies, Germany). All experiments were done with the following buffer: 25 mM HEPES pH 7.2, 150 mM NaCl, 1 mM TCEP, 0.025% Tween-20. hIRE1α cLD was labeled using the Monolith NT Protein labeling Kit Red-Maleimide. Labeled protein was used in the measurements at a concentration of 50 nM. It was mixed with equal volumes unlabeled interaction partner in two-fold serial dilutions. Hydrophilic-treated capillaries (NanoTemper Technologies) were used for all the measurements. All experiments were performed at 50% LED power and 40-60–80% IR-laser at 25°C.
 
-## AUC sedimentation velocity experiments
+### AUC sedimentation velocity experiments
 
 Sedimentation velocity experiments were carried out in a Beckman Optima XL-A analytical centrifuge at 40,000xg at 20°C with An-60 Ti rotor. All experiments were performed in buffer containing 25 mM HEPES pH 7.2, 150 mM NaCl, 2 mM DTT. Samples (400 µL) and reference buffer (410 µL) were loaded into AUC cells for each experiment. Samples of hIRE1α cLD at 5 µM were scanned at 280 nm, whereas hIRE1α cLD at concentrations higher than 25 µM were scanned at 290 nm to prevent detector saturation at high protein concentrations. Data analysis was performed using the SEDFIT software employing the c(s) method with time invariant and radial invariant noise fitting (Schuck, 2000). Buffer viscosity was calculated by Sednterp.
 
-## NMR experiments
+### NMR experiments
 
 NMR experiments were performed on an 800 MHz Bruker AVANCE-I spectrometer with a TXI Cryoprobe equipped with an actively shielded Z-gradient at 298.0 K. Samples were buffer-exchanged into 25 mM phosphate buffer pH 7.2, 150 mM NaCl and 2 mM DTT in 100% D2O on Vivaspin columns (Millipore). The concentration of WT hIRE1α cLD and hIRE1α cLD mutants varied from 25 to 400 µM in 250 µL volume. Samples were placed in a Shigemi advanced NMR microtube. For peptide and unfolded protein binding experiments, the peptides were dissolved in the same buffer at high concentrations (1–2 mM) and titrated in 1:0.5, 1:1 and 1:2 molar ratios. Two-dimensional [13C, 1 H]-HMQC methyl correlation experiments on 13CH3–Ile hIRE1α cLD were acquired with 86* and 768* complex points in the 13C and 1H dimensions, respectively. All spectra were processed with TOPSPIN 3.2 and analyzed with Sparky.
 
-## Attachment of the spin label to MPZ1 peptide and PRE experiments
+### Attachment of the spin label to MPZ1 peptide and PRE experiments
 
 MPZ1 peptide at 200 µM was labeled with 3-(2-iodoacetamido)-proxyl (Sigma) at the single cysteine, Cys5 in 25 mM phosphate buffer pH 7.2, 150 mM NaCl in the presence of 2 mM spin-label at 4°C for 8 hr. The labeled peptide was then dialyzed in a Slide-a-Lyzer dialysis cassette (Thermo Fisher Scientific) with 2 kDa cut-off to remove the excess spin-label and to exchange the buffer to deuterated buffer (25 mM phosphate buffer pH 7.2, 150 mM NaCl, 2 mM DTT) for NMR experiments. Control samples used in the reference experiments contained (1-oxyl-2,2,5,5-tetramethylpyrroline-3-methyl) methanethiosulfonate spin-label that was treated the same way as the proxyl-labeled peptide. Wild type hIRE1α cLD and quadruple mutant hIRE1α cLD (Leu186Ile, Ile326/334/362Val) and single mutant Leu186Ile were used in PRE experiments at 75 µM and 100 µM protein concentration respectively, in the presence and absence of equimolar concentrations of MPZ1-proxyl peptide. We normalized the PRE effect with the surface exposed area displayed by that isoleucine to exclude possible contributions from non-specific interactions with the spin label attached peptide (Clore and Iwahara, 2009). The normalized PRE values are calculated as follows, the solvent accessible surface area for isoleucines are calculated using the ‘GETAREA’ webserver (http://curie.utmb.edu/getarea.html, [Fraczkiewicz and Braun, 1998]) based on hIRE1α cLD crystal structure. The maximum solvent accessible surface by these isoleucines is normalized to one and the normalized values are multiplied with the PRE effect. The PRE effect is calculated by dividing the intensity of isoleucine signals in the control experiments with the isoleucine signals in the presence of MPZ1-proxyl peptide.
 
-## Cross-linking experiments
+### Cross-linking experiments
 
 10 µM, 20 µM and 50 µM hIRE1α cLD was incubated with 500 µM and 1 mM BS3 cross-linker for 15 and 30 min at room temperature. Same reaction was performed for hIRE1 cLD pre-bound to 50 µM MPZ1-N for 30 min on ice. The reaction was stopped with the addition of 1M Tris-HCl at pH 8.0 at end concentration of 50 mM Tris-HCl, and incubated for 10 min at room temperature before running the SDS-PAGE gel.
 
-## LC-MS/MS analysis and cross-linked peptide identification
+### LC-MS/MS analysis and cross-linked peptide identification
 
 Cross-linked products were in-gel digested and analyzed by LC-MS and LC-MS-MS as described previously (Wu et al., 2013; Zeng-Elmore et al., 2014). Briefly, 1 μl aliquot of the digestion mixture was injected into an Dionex Ultimate 3000 RSLCnano UHPLC system (Dionex Corporation, Sunnyvale, CA), and separated by a 75 μm × 25 cm PepMap RSLC column (100 Å, 2 µm) at a flow rate of ~450 nl/min. The eluant was connected directly to a nanoelectrospray ionization source of an LTQ Orbitrap XL mass spectrometer (Thermo Scientific, Waltham, MA). LC-MS data were acquired in an information-dependent acquisition mode, cycling between a MS scan (m/z 315–2,000) acquired in the Orbitrap, followed by low-energy CID analysis on three most intense multiply charged precursors acquired in the linear ion trap.
 
 Cross-linked peptides were identified using an integrated module in Protein Prospector, based on a bioinformatic strategy described previously (Chu et al., 2010; Trnka et al., 2014). The score of a cross-linked peptide was based on number and types of fragment ions identified, as well as the sequence and charge state of the cross-linked peptide. Only results where the score difference is greater than 0 (i.e. the cross-linked peptide match was better than a single peptide match alone) are considered. Tandem MS spectra of cross-linked peptides were manually inspected to ensure data quality. With the threshold of peptide score and expectation value for oligomer-only cross-linked peptides, no decoy match was returned.
 
-## Lentiviral constructs and transduction
+### Lentiviral constructs and transduction
 
 The coding sequence of wild type GFP-tagged IRE1 (Li et al., 2010) was amplified by PCR with Phsuion polymerase (NEB) and oligonucleotides with engineered restriction sites. The PCR product was introduced into the Gateway entry vector pSHUTTLE-CMV-TO (kind gift of A. Ashkenazi, Genentech and (Gray et al., 2007) atcognate KpnI and EcoRI sites. The hIRE1α-GFP- IF2L mutant was generated in pSHUTTLE-CMV-TO by site directed mutagenesis of the wild-type sequence. The resulting clones were recombined into pGpHUSH.puro (kind gift of A. Ashkenazi, Genentech and [Gray et al., 2007]), a single lentivirus expression vector that allows the doxycyline-regulatable (TetON) expression of a gene-of-interest. VSV-G pseudotyped lentiviral particles were prepared using standard protocols using 293METR packaging cells (kind gift of Brian Ravinovich, formerly at MD Anderson Cancer Center, [Rabinovich et al., 2006]). Viral supernatants were concentrated by filtration (Amicon Ultra centrifugal filter device, 100 kDa MWCO) and used to infect target cells by centrifugal inoculation (spinoculation) at 2000 rpm inn a Beckman GH3.8 rotor outfitted with plate carriers for 90 min in presence of 8 ug/mL polybrene. The cells were left to recover overnight following infection and were then subjected to puromycin selection as described below.
 
-## Cell culture and generation of stable cell lines
+### Cell culture and generation of stable cell lines
 
 IRE1 double-knockout Mouse Embryonic Fibroblasts (MEF) (IRE1α−/−/IRE1β−/−) and wild-type MEFs (kind gift of D. Ron, University of Cambridge). were grown in DMEM supplemented with 10% fetal bovine serum, 2 mM L-glutamine, and penicillin/streptomycin. Cells were not tested for the mycoplasma contamination. Lentiviral-transduced cells were selected with 6 µg/mL puromycin for 72 hr based on the puromycin concentration defined by the kill curve. Subsequently, a pulse of 25 nM doxycycline was given to induce expression of the GFP-tagged IRE1 transgenes for 10–12 hr. The following day, the doxycycline was washed out and pseudoclonal cell populations were selected by fluorescent activated cell sorting based on GFP expression for both wild-type (hIRE1α-GFP) and IF2L mutant (hIRE1α-GFP-IF2L mutant) forms of IRE1. The cells were selected in a FACS Aria instrument (BD FACSAria3), gating for a very narrow GFP expressing population. This procedure ensures selection of a pseudoclonal population where most cells have similar levels of expression of the transgene of interest while avoiding typical problems associated with monoclonal selection of IRE1-expressing cells; namely an aberrant UPR. The pseudoclonal populations were expanded and frozen as source stocks for experiments.
 
-## Live cell imaging of hIRE1α -GFP and hIRE1α-GFP-IF2L mutant
+### Live cell imaging of hIRE1α -GFP and hIRE1α-GFP-IF2L mutant
 
 IRE1 double-knockout MEFs (IRE1α−/−/IRE1β−/−) reconstituted with of hIRE1α -GFP or hIRE1α-GFP-IF2L mutant were split 2 days before imaging onto ibiTreat dishes (ibidi) at 5 × 104 cells/dish. 25 nM Doxyccline containing medium was added for 10–12 hr, withdrawn before imaging and replaced with imaging media consisting of Fluorobrite DMEM (Thermo Scientific), 2.5% FBS, and 5 mM Hepes at a pH of 7.0 . Cells were imaged at 37oC on a spinning disk confocal with Yokogawa CSUX A1 scan head, Andor iXon EMCCD camera and 40x Plan Apo air Objective NA 0.95 with a 1.5x tube lens for additional magnification giving 60x final or 100X objective. Images were acquired using 488 nm laser at a rate of one frame per 3 min with 300 ms exposure time for each time point for an hour. Images were collected after different time points following induction of ER stress by tunicamycin (5 µg/mL) or thapsigargin (100 nM).
 
-## Immunofluorescence of hIRE1α -GFP and hIRE1α-GFP-IF2L mutant
+### Immunofluorescence of hIRE1α -GFP and hIRE1α-GFP-IF2L mutant
 
 IRE1 double-knockout MEFs (IRE1α−/−/IRE1β−/−) reconstituted with of hIRE1α -GFP and hIRE1α-GFP-IF2L mutant were grown similar to live cell imaging experiments. After stress induction at various time points, cells were washed three times with PBS followed by 3 min fixation with 100% methanol, and a three subsequent 5 min washes with PBS. As these fixation conditions kept GFP intact, immunostaining of hIRE1α for fluorescence imaging was not required. DAPI staining is performed according to manufacturer’s instructions (Thermo Fisher).
 
-## Generation of cDNA and semi-quantitative PCR
+### Generation of cDNA and semi-quantitative PCR
 
 Cells exposed to DMSO or thapsigargin (100 nM) or tunicamycin (5 µg/ml) were collected in 0.5 ml of TRIzol reagent (Life Technologies) from a six well dish and total RNA was extracted following the manufacturer’s recommendations. To generate cDNAs, 500 ng of total RNA were reverse transcribed using the SuperScript VILO system (Life Technologies) following the manufacturer’s recommendations. The resulting 20 µl reverse transcription reactions were diluted to 10 times to 200 µl with 10 mM Tris– HCl pH 8.2, and 1% of this dilution was used for multiplex semiquantitative PCR. The multiplex PCR was set up using 1 µM of the forward reverese primers, 0.4 units of Taq DNA polymerase (Thermo Scientific), 0.2 mM of each dNTP, and 1.5 mM MgCl2, in a 20 µl reaction using the following buffer system: 75 mM Tris–HCl pH 8.8, 20 mM (NH4)SO4, and 0.01% Tween-20. The oligonucleotide sequences are the following: Hs_XBP1_Fwd: 50 -GGAGTT AAGACAGCGCTTGG-30; Hs_XBP1_Rev: 50 -ACTGGGTCCAAGTTG TCCAG-30. The PCR products were amplified for 28 cycles and resolved on 3% agarose gels (1:1 mixture of regular and low-melting point agarose) stained with ethidium bromide.
 
-## Protein analysis by Western-Blot
+### Protein analysis by Western-Blot
 
 Cells were lysed in SDS-PAGE loading buffer (1% SDS, 62.5 mM Tris-HCl pH 6.8, 10% glycerol). Lysates were sonicated and equal amounts were loaded on SDS-PAGE gels (BioRad, Hercules, CA). Proteins were transferred onto nitrocellulose membranes and probed with primary antibodies diluted in Phosphate-buffered saline supplemented with 0.1% Tween 20% and 5% bovine serum albumin at 4°C, overnight. The following antibodies were used: anti-IRE1 (1:1000) (14C10, Cell Signaling Technology, Danvers, MA), anti-GAPDH (1:1000) (14C10, Cell Signaling Technology, Danvers, MA and anti-phosho IRE1 antibody(1:500). IRE1 anti-phospho antibody is a kind gift of Avi Ashkenazi’s group at Genentech. An HRP-conjugated secondary antibody (Amersham, Piscataway, NJ) was employed to detect immunereactive bands using enhanced chemiluminescence (SuperSignal; Thermo Scientific, Waltham, MA) detected by Li-Cor instrument (Li-Core Biosciences).

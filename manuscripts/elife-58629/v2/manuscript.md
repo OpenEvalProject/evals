@@ -15,13 +15,64 @@
 
 ## Abstract
 
-The antibiotic actinonin kills malaria parasites ( Plasmodium falciparum ) by interfering with apicoplast function. Early evidence suggested that actinonin inhibited prokaryote-like post-translational modification in the apicoplast; mimicking its activity against bacteria. However, Amberg Johnson et al. (2017) identified the metalloprotease Tg FtsH1 as the target of actinonin in the related parasite Toxoplasma gondii and implicated P. falciparum FtsH1 as a likely target in malaria parasites. The authors were not, however, able to recover actinonin resistant malaria parasites, leaving the specific target of actinonin uncertain. We generated actinonin resistant P. falciparum by in vitro selection and identified a specific sequence change in Pf FtsH1 associated with resistance. Introduction of this point mutation using CRISPr-Cas9 allelic replacement was sufficient to confer actinonin resistance in P. falciparum . Our data unequivocally identify Pf FtsH1 as the target of actinonin and suggests that actinonin should not be included in the highly valuable collection of ‘irresistible’ drugs for combatting malaria.
+The antibiotic actinonin kills malaria parasites (Plasmodium falciparum) by interfering with apicoplast function. Early evidence suggested that actinonin inhibited prokaryote-like post-translational modification in the apicoplast; mimicking its activity against bacteria. However, Amberg Johnson et al. (2017) identified the metalloprotease TgFtsH1 as the target of actinonin in the related parasite Toxoplasma gondii and implicated P. falciparum FtsH1 as a likely target in malaria parasites. The authors were not, however, able to recover actinonin resistant malaria parasites, leaving the specific target of actinonin uncertain. We generated actinonin resistant P. falciparum by in vitro selection and identified a specific sequence change in PfFtsH1 associated with resistance. Introduction of this point mutation using CRISPr-Cas9 allelic replacement was sufficient to confer actinonin resistance in P. falciparum. Our data unequivocally identify PfFtsH1 as the target of actinonin and suggests that actinonin should not be included in the highly valuable collection of ‘irresistible’ drugs for combatting malaria.
 
 ## Introduction
 
 Actinonin is an anti-bacterial and anti-parasitic antibiotic derived from streptomycete bacteria (Gordon et al., 1962; Wiesner et al., 2001). In bacteria, actinonin targets peptide deformylase (PDF) (Chen et al., 2000), an enzyme involved in prokaryotic post-translational modification and also present in the relict plastid (apicoplast) of apicomplexan parasites. Actinonin causes defects in malaria parasite apicoplast development (Goodman and McFadden, 2014) and inhibits recombinantly expressed Plasmodium falciparum PDF (PfPDF – PF3D7_0907900) in vitro (Bracchi-Ricard et al., 2001) at concentrations consistent with its anti-parasitic activity, all of which led to the general conclusion that actinonin targets the apicoplast-localized PfPDF in malaria parasites. However, the characteristics of actinonin —particularly the rapid mode of action and the unusual kinetics of apicoplast genome loss —are at odds with how all other drugs targeting apicoplast translation impact the parasite (Amberg-Johnson et al., 2017; Uddin et al., 2018). In a search for the target of actinonin, Amberg-Johnson et al., 2017 used the related apicomplexan Toxoplasma gondii and identified a point mutation in the putative metalloprotease TgftsH1 that confers a 3.5-fold resistance to actinonin. They also showed that actinonin inhibits recombinantly expressed human malaria parasite FtsH1 (PfFtsH1) in vitro at levels comparable to its antimalarial activity (Amberg-Johnson et al., 2017). Moreover, parasites with reduced PfFtsH1 expression were more sensitive to actinonin, all of which prompted the interim conclusion that PfFtsH1, rather than PfPDF, might be the target of actinonin and that PfFtsH1 is a potential new antimalarial target (Amberg-Johnson et al., 2017).
 
 Despite repeated attempts, Amberg-Johnson et al., 2017 were not able to generate actinonin resistant P. falciparum parasites. Interestingly, the residue mutated from asparagine to serine (N805S) in TgFtsH1 identified as conferring actinonin resistance by Amberg-Johnson et al. (Amberg-Johnson et al., 2017) is already a serine in PfFtsH1 (Table 1), which begs the question of whether PfFtsH1 is already ‘resistant’ to actinonin. This might mean that actinonin kills malaria parasites through a mechanism not involving PfFtsH1, perhaps even inhibition of PfPDF. Compounding this uncertainty is a report that PfFtsH1 is localized in the mitochondrion (Tanveer et al., 2013), which is inconsistent with the demonstrated impact of actinonin on the malaria parasite apicoplast (Goodman and McFadden, 2014; Uddin et al., 2018). However, phenotypic evidence from PfFtsH1 knockdowns and changes in post-translational processing of PfFtsH1 in the absence of a functioning apicoplast (Amberg-Johnson et al., 2017) strongly suggest a relationship between PfFtsH1 and the apicoplast. These contradictory findings may result from the of differential targeting of the various processed forms of PfFtsH1 (Tanveer et al., 2013) or stem from the close physical and functional association between the mitochondria and apicoplast in malaria parasites (van Dooren et al., 2005). Given the complexity of FtsH1 processing and localization in P. falciparum, it is unlikley that cell biological studies alone will be able to definitively resolve the issue of whether PfFtsH1 is the primary target of actinonin.
+
+**Table 1.**
+ The impact of mutations in ftsh1 on parasite resistance to actinonin.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parasite</th>
+      <th>FTSH1 Peptidase Motif (partial amino acid sequence)</th>
+      <th>Actinonin IC50 (µM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tg FTSH1 WT (TGGT_259260)</td>
+      <td>804 FGRDALSNGASSDI 811</td>
+      <td>14a</td>
+    </tr>
+    <tr>
+      <td>Tg FTSH1 ActR</td>
+      <td>804 FGRDALSSGASSDI 811</td>
+      <td>44a</td>
+    </tr>
+    <tr>
+      <td>Pf 3D7 FTSH1 (PF3D7_1239700)</td>
+      <td>481 FGKSETSSGASSDI 494</td>
+      <td>1.99 (n = 1)b</td>
+    </tr>
+    <tr>
+      <td>Pf D10 FTSH1 WT</td>
+      <td>481 FGKSETSSGASSDI 494</td>
+      <td>2.0 ± 0.2 (n = 4)</td>
+    </tr>
+    <tr>
+      <td>Pf D10 FTSH1 ActR</td>
+      <td>481 FGKSETSSCASSDI 494</td>
+      <td>73.3 ± 2.7 (n = 4)</td>
+    </tr>
+    <tr>
+      <td>Pf D10 (apicoplast minus)</td>
+      <td>481 FGKSETSSGASSDI 494</td>
+      <td>43.1 ± 4.1 (n = 2)c</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
+  </tbody>
+</table>
+
+_acalculated from data provided in Amberg-Johnson et al., 2017, b and c are both consistent with previously published data (Goodman and McFadden, 2014; Amberg-Johnson et al., 2017)._
 
 To determine if PfFtsH1 is the target of actinonin, we generated P. falciparum parasites with robust resistance to actinonin, identified a point mutation conferring resistance, and recapitulated the resistance phenotype by introducing a single amino acid change using CRISPrCas9 genome editing.
 
@@ -33,13 +84,128 @@ Several clones were generated from our actinonin resistant parasite line, and ea
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58629/elife-58629-fig1-v2.jpg)
 
-**Figure 1.:** Pfftsh1 confers actinonin resistance.(A) Genomic sequences of parasite lines. Upper line is 3D7 reference sequence with sgRNA (red arrow) and resistance mutation site (dark blue bar) marked. Bottom four lines are genomic sequence traces with shield and resistance mutations highlighted in light blue and predicted changes to amino acid sequence highlighted in yellow (B) Comparison of parasite growth inhibition (IC50) based on the presence of the G489C mutation. (C) Dose response curves of data presented in B. Data presented are the mean of 3–5 biological replicates. Error bars represent the standard error of the mean. P values represent two-tailed, unpaired t-test. (Full statistical analysis available in Supplementary file 1b).
+**Figure 1.:** (A) Genomic sequences of parasite lines. Upper line is 3D7 reference sequence with sgRNA (red arrow) and resistance mutation site (dark blue bar) marked. Bottom four lines are genomic sequence traces with shield and resistance mutations highlighted in light blue and predicted changes to amino acid sequence highlighted in yellow (B) Comparison of parasite growth inhibition (IC50) based on the presence of the G489C mutation. (C) Dose response curves of data presented in B. Data presented are the mean of 3–5 biological replicates. Error bars represent the standard error of the mean. P values represent two-tailed, unpaired t-test. (Full statistical analysis available in Supplementary file 1b).
 
 To unequivocally confirm that PfFtsH1 is the primary target of actinonin, and that the G489C mutation is sufficient to confer resistance, we used CRISPr Cas9 mutagenesis to introduce the mutation (with minimal collateral genome disruption) into the native Pfftsh1 gene (Figure 1A). Accordingly, a parasite clone carrying synonymous ‘shield’ mutations in the Pfftsh1 coding sequence designed to prevent ongoing Cas9 cleavage but retaining glycine 489 (rFtsH1G489G) remained sensitive to actinonin (Figure 1B,C, Supplementary file 1b), whereas two independent clones (rFtsH1G489Ca/b) modified to have the G489C mutation (in addition to the ‘shield’ mutations) showed actinonin resistance levels comparable to the actinonin-selected line (wtACTR) (Figure 1B,C, Supplementary file 1b).
 
 Robust actinonin resistance in P. falciparum resulting from the G489C mutation confirms that PfFtsH1 is indeed the primary target of actinonin. That the resistance levels in PfFtsH1 G489C parasites are of the same order of magnitude as that seen in lines that lack an apicoplast (Table 1), strengthens the conclusion that PfFtsH1 has a role in apicoplast biogenesis, the anomalous localization (Tanveer et al., 2013) notwithstanding. The greater levels of resistance achievable through prolonged selection, while modest, suggests that these lines may have acquired other mutations that compensate for reduced PfFtsH1 function and/or alter secondary actinonin targets, such as the other metalloproteases present in the genome (Amberg-Johnson et al., 2017). Our ability to generate resistance to actinonin in a relatively small starting population of P. falciparum parasites means actinonin is not an ‘irresistible’ drug (Cowell and Winzeler, 2018), which tempers enthusiasm for development of PfFtsH1 as an antimalarial target.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>FtsH1</td>
+      <td>PlasmoDB (plasmodb.org)</td>
+      <td>PF3D7_1313200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>PDF</td>
+      <td>PlasmoDB (plasmodb.org)</td>
+      <td>PF3D7_0907900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>MAP</td>
+      <td>PlasmoDB (plasmodb.org)</td>
+      <td>PF3D7_0804400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>FMT</td>
+      <td>PlasmoDB (plasmodb.org)</td>
+      <td>PF3D7_1239700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>RING</td>
+      <td>PlasmoDB (plasmodb.org)</td>
+      <td>PF3D7_1405700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>3D7</td>
+      <td>MR4 - BEI Resources (beiresources.org)</td>
+      <td>MRA-102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>D10</td>
+      <td>MR4 - BEI Resources (beiresources.org)</td>
+      <td>MRA-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>D10 ActR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Table 1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Plasmodium falciparum)</td>
+      <td>D10 rftsH1G489G</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Plasmodium falciparum)</td>
+      <td>D10 rftsH1G489Ca</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Plasmodium falciparum)</td>
+      <td>D10 rftsH1G489Cb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinonin</td>
+      <td>Sigma</td>
+      <td>Sigma: A6671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSM-1</td>
+      <td>Sigma</td>
+      <td>Sigma: 533304</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 P. falciparum D10 were cultured according to standard protocols (Uddin et al., 2018; Trager and Jensen, 1976). Apicoplast-minus parasites were generated according to previously described methods (Uddin et al., 2018; Yeh and DeRisi, 2011). To generate actinonin resistant parasites, 107 D10 parasites were treated with 2 µM actinonin (Sigma-Aldrich) and cultured until parasites began growing robustly. The actinonin concentration was then increased 2-fold and the culturing repeated until parasites grew normally at 20 µM actinonin. This selection procedure required 10 weeks of constant drug selection to recover resistant parasites and 10 months of selection to develop parasites with the highest levels of resistance. Resistant parasites were cloned by limiting dilution and retested to confirm the resistance phenotypes. Drug effects were assayed after 72 hr of drug exposure using the SYBR Green (ThermoFisher) method (Uddin et al., 2018; Goodman et al., 2007).
 

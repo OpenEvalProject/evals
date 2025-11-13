@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.32346.001 Piezo2 ion channels are critical determinants of the sense of light touch in vertebrates. Yet, their regulation is only incompletely understood. We recently identified myotubularin related protein-2 (Mtmr2), a phosphoinositide (PI) phosphatase, in the native Piezo2 interactome of murine dorsal root ganglia (DRG). Here, we demonstrate that Mtmr2 attenuates Piezo2-mediated rapidly adapting mechanically activated (RA-MA) currents. Interestingly, heterologous Piezo1 and other known MA current subtypes in DRG appeared largely unaffected by Mtmr2. Experiments with catalytically inactive Mtmr2, pharmacological blockers of PI(3,5)P 2 synthesis, and osmotic stress suggest that Mtmr2-dependent Piezo2 inhibition involves depletion of PI(3,5)P 2 . Further, we identified a PI(3,5)P 2 binding region in Piezo2, but not Piezo1, that confers sensitivity to Mtmr2 as indicated by functional analysis of a domain-swapped Piezo2 mutant. Altogether, our results propose local PI(3,5)P 2 modulation via Mtmr2 in the vicinity of Piezo2 as a novel mechanism to dynamically control Piezo2-dependent mechanotransduction in peripheral sensory neurons.
+Piezo2 ion channels are critical determinants of the sense of light touch in vertebrates. Yet, their regulation is only incompletely understood. We recently identified myotubularin related protein-2 (Mtmr2), a phosphoinositide (PI) phosphatase, in the native Piezo2 interactome of murine dorsal root ganglia (DRG). Here, we demonstrate that Mtmr2 attenuates Piezo2-mediated rapidly adapting mechanically activated (RA-MA) currents. Interestingly, heterologous Piezo1 and other known MA current subtypes in DRG appeared largely unaffected by Mtmr2. Experiments with catalytically inactive Mtmr2, pharmacological blockers of PI(3,5)P2 synthesis, and osmotic stress suggest that Mtmr2-dependent Piezo2 inhibition involves depletion of PI(3,5)P2. Further, we identified a PI(3,5)P2 binding region in Piezo2, but not Piezo1, that confers sensitivity to Mtmr2 as indicated by functional analysis of a domain-swapped Piezo2 mutant. Altogether, our results propose local PI(3,5)P2 modulation via Mtmr2 in the vicinity of Piezo2 as a novel mechanism to dynamically control Piezo2-dependent mechanotransduction in peripheral sensory neurons.
 
 ## Introduction
 
@@ -33,9 +33,21 @@ Here, we show that Mtmr2 levels control Piezo2-mediated RA-MA currents. While el
 
 ## Results
 
-## Mtmr2 suppresses Piezo2-mediated RA-MA currents
+### Mtmr2 suppresses Piezo2-mediated RA-MA currents
 
 Our previous work revealed Mtmr2 as a highly enriched member of the native Piezo2 interactome in DRG (significance of identification: p=0.00030, unpaired t-test; enrichment factor: log2 9.96) (Narayanan et al., 2016). We first validated the reported expression of Mtmr2 in peripheral sensory neurons of DRG (Previtali et al., 2003; Vaccari et al., 2011) including those neurons expressing Piezo2 (Figure 1—figure supplement 1a,b). For a more detailed subcellular analysis we used the proximity ligation assay (PLA). In this way we could show the close vicinity of Piezo2 and Mtmr2 in both, somata and neurites of cultured DRG neurons, and upon co-transfection in HEK293 cells (Figure 1a–d and Figure 1—figure supplement 1c,d). It is important to note here that the PLA technique is prone to high background upon heterologous expression as shown by our additional control experiments in HEK293 cells (Figure 1—figure supplement 1d). In these, we co-overexpressed Piezo2 with TRPA1 and Vti1b, respectively. Both of these controls exhibited clear PLA signal (likely attributable to massive overexpression upon transfection), though less than co-overexpression with Mtmr2 (Figure 1—figure supplement 1d).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig1-v2.jpg)
+
+**Figure 1.:** (a–d) Representative images (a,c) and quantification (b,d) of a proximity ligation assay (PLA) in cultured DRG neurons (a,b) of Piezo2GFP mice (Woo et al., 2014) and HEK293 cells (c,d). As anti-Mtmr2 antibodies failed to work in neuronal cultures, DRG were transfected with Mtmr2-myc or mock-myc and PLA was performed with antibodies against Piezo2 and myc. Please note the distribution of the PLA signal in soma and neurites of DRG. HEK293 cells were co-transfected with Piezo2-GST-IRES-GFP and Mtmr2-myc or Piezo2-GST-IRES-GFP and mock-myc and PLA was performed with antibodies against GST and myc. Only cells with pronounced GFP signal (due to expression of pmaxGFPVector in DRG and Piezo2-GST-IRES-GFP in HEK293 cells) were considered for the analysis. Cell boundaries are demarcated in yellow. In both cell types, DRG and HEK293 cells, transfection of Mtmr2-myc exhibited significantly stronger PLA signal compared to controls (b,d). Scale bar: 10 µm. Quantification of the total area of PLA signal/total soma area (fraction of PLA-positive area) in DRG cultures (p<0.0001; Mann-Whitney test; + mock: n = 53 neurons; + Mtmr2-myc: n = 53 neurons) (b). The quantification of the intensity of PLA signal in neurites of cultured DRG neurons can be found in Figure 1—figure supplement 1c. Quantification of the total area of PLA signal/total cell area in HEK293 cells (fraction of PLA-positive area) (p<0.0001; Mann-Whitney test; Piezo2-GST + mock: n = 60 cells; Piezo2-GST + Mtmr2-myc: n = 54 cells) (d). Additional controls for PLA in HEK293 cells can be found in Figure 1—figure supplement 1d. (e) Representative traces of RA-MA currents in HEK293 cells upon co-expression of Piezo2 with mock or Mtmr2 and (f) stimulus-current curves. Overexpression of Mtmr2 suppressed Piezo2 current magnitudes compared to mock overexpression (Piezo2 + mock: n = 17 cells; Piezo2 + Mtmr2: n = 12 cells; 2-way ANOVA suggested a significant effect (P<0.0001) of Mtmr2 overexpression on Piezo2 currents; Holm-Sidak’s multiple comparisons test was used to compare both conditions at individual stimulus magnitudes, p-values are indicated by * in the graph). The displacement threshold was increased upon co-expression of Mtmr2 (p=0.0098; Mann-Whitney test; Supplementary file 1). The inactivation time constant of RA-MA currents remained unchanged (Supplementary file 1). (g) Representative traces of RA-MA currents in primary cultures of DRG neurons and (h) stimulus-current curves showed a significant decrease in RA-MA current magnitude upon overexpression of Mtmr2 compared to mock ( + mock: n = 28 neurons; + Mtmr2: n = 30 neurons; 2-way ANOVA suggested a significant effect (P<0.0022) of Mtmr2 overexpression on RA-MA currents; Holm-Sidak’s multiple comparison test was performed to compare both conditions at individual stimulus magnitudes, p-values are indicated by * in the graph). The displacement threshold and inactivation time constant of RA-MA currents were not changed upon overexpression of Mtmr2 in DRG neurons (Supplementary file 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative immunohistochemistry and (b) quantification of Mtmr2-positive neurons in cryosections of DRGs obtained from Piezo2GFP mice (Woo et al., 2014). 20.37 ± 2.01% of DRG neurons exhibit positive Mtmr2 immunolabel and 24.53 ± 1.21% of DRG neurons were positive for GFP indicating the presence of Piezo2. Among Piezo2-positive cells, 51.61 ± 3.71% cells were found to be Mtmr2-positive. n > 2000 neurons, N = 3 independent animals. (c) Quantification of the intensity of PLA signal in neurites of cultured DRG neurons (p<0.0001 compared to mock, Mann Whitney test; + mock: n = 94 regions from six coverslips; + Mtmr2-myc: n = 115 regions from six coverslips. (d) Quantification of PLA signal upon co-expression of Piezo2 with mock, Mtmr2, Vti1b (Vesicle transport through interaction with t-SNAREs homolog 1B) or TRPA1 in HEK293 cells. PLA was performed using antibodies against GST and myc to detect Piezo2-GST-IRES-GFP and myc-tagged proteins, respectively. PLA signal (fraction of PLA-positive area) upon co-transfection of mock, Vti1b and TRPA1 served as negative controls and was indeed much smaller than the PLA signal upon co-transfection of Piezo2 and Mtmr2 (p<0.01, in case of TRPA1 p=0.052 compared to Piezo2 + Mtmr2, Kruskal-Wallis test followed by Dunn´s multiple comparison test; Piezo2-GST + mock: n = 60 cells; Piezo2-GST + Mtmr2-myc: n = 35 cells; Piezo2-GST + Vti1b-myc: n = 54 cells; Piezo2-GST + TRPA1-myc: n = 83 cells). Only cells with pronounced GFP signal (due to expression of Piezo2-GST-IRES-GFP) were considered for the analysis. All experiments were performed in parallel.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Voltage-current curves upon overexpression of Kv1.1 with Mtmr2 in HEK293 cells showed no significant difference compared to overexpression with mock (Kv1.1 + mock: n = 24 cells; Kv1.1+ Mtmr2: n = 25 cells; ns; 2-way ANOVA). (b) Stimulus-current curves of Piezo1-mediated MA currents upon co-overexpression of Piezo1 (Piezo1-753-myc-IRES-GFP [Coste et al., 2015]) with Mtmr2 compared to mock. No significant difference was observed among conditions (Piezo1 + mock: n = 25 cells; Piezo1 + Mtmr2: n = 20 cells; ns; 2-way ANOVA). The displacement threshold and inactivation time constant of Piezo1-MA currents remained unchanged upon overexpression with Mtmr2 (Supplementary file 1).
 
 Following, we wanted to assess whether Mtmr2 affects Piezo2 function. To this end we performed electrophysiological measurements of Piezo2-mediated RA-MA currents in HEK293 cells, which represent a well-defined heterologous system to study Piezo2 function (Coste et al., 2010; Poole et al., 2014). Interestingly, Mtmr2 co-expression led to a pronounced reduction of Piezo2-mediated RA-MA currents compared to mock conditions (Figure 1e,f). Moreover, the displacement threshold of RA-MA currents was significantly increased upon Mtmr2 overexpression indicating the requirement of stronger mechanical stimulation to reach a threshold current amplitude (Supplementary file 1; please see Materials and methods for details on the calculation of the displacement threshold) (Eijkelkamp et al., 2013; Morley et al., 2016; Narayanan et al., 2016). Importantly, the inactivation time constant of Piezo2 currents remained unchanged upon Mtmr2 co-expression (Supplementary file 1). These data indicate that Mtmr2 overexpression suppresses Piezo2 currents in HEK293 cells while maintaining their defining property, that is rapid adaptation. To exclude that Mtmr2 overexpression renders cells unhealthy and might therefore unspecifically suppress Piezo2 currents, we co-expressed Mtmr2 with Kv1.1 and measured voltage-gated currents, which were similar to mock transfected controls (Figure 1—figure supplement 2a). In addition, we asked whether Mtmr2 may modulate MA currents generated by Piezo1, the homologue of Piezo2 (Coste et al., 2010). Remarkably, we did not observe any differences in Piezo1 currents upon overexpression of Mtmr2 (Figure 1—figure supplement 2b and Supplementary file 1). These results suggest a certain degree of specificity of the functional Piezo2-Mtmr2 interaction.
 
@@ -43,13 +55,21 @@ Next, we aimed at assessing whether Mtmr2 can modulate native Piezo2 RA-MA curre
 
 In order to test whether the effect on Piezo2 RA-MA currents observed in HEK293 cells can be recapitulated, we overexpressed Mtmr2 in DRG cultures and measured RA-MA currents. Similar to HEK293 cells, Mtmr2 overexpression suppressed native RA-MA currents in DRG cultures when compared to mock transfection (Figure 1g,h). The displacement threshold was unaffected upon Mtmr2 overexpression (Supplementary file 1), which is in contrast to our results in HEK293 cells potentially reflecting differences in Piezo2/Mtmr2 stoichiometry or the contribution of unknown neuronal modulators. Also, the inactivation time constant of RA-MA currents was unchanged upon overexpression of Mtmr2 in DRG neurons (Supplementary file 1).
 
-## Mtmr2 knockdown potentiates Piezo2 activity in peripheral sensory neurons
+### Mtmr2 knockdown potentiates Piezo2 activity in peripheral sensory neurons
 
 We went on to investigate whether Mtmr2 downregulation could potentiate native RA-MA currents in DRG. Successful knockdown of Mtmr2 was achieved after 72 hr and evaluated by quantitative PCR (Figure 2—figure supplement 1a). We assessed Piezo2 mRNA levels, Piezo2 membrane expression and the percentage of Piezo2-positive neurons and did not observe any changes upon Mtmr2 knockdown (Figure 2—figure supplement 1b–d). However, when we measured RA-MA currents in Mtmr2 siRNA-nucleofected DRG cultures, we observed a significant augmentation in current amplitude whereas the displacement threshold and inactivation time constant were unchanged (Figure 2a–b; Supplementary file 1). These results are in agreement with our data on Mtmr2 overexpression (Figure 1) and suggest that Mtmr2 levels can modulate Piezo2 function: decreased expression of Mtmr2 potentiated, while increased expression suppressed Piezo2 RA-MA currents.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig2-v2.jpg)
+
+**Figure 2.:** (a) Representative traces of RA-MA currents in primary cultures of DRG neurons and (b) stimulus-current curves for RA-MA currents upon nucleofection of Mtmr2 siRNA showed a significant increase in RA-MA current magnitude compared to nucleofection with AllStar Negative Control siRNA (CTRL: n = 66 neurons; Mtmr2 siRNA: n = 77 neurons; 2-way ANOVA suggested a pronounced effect (P<0.0003) of Mtmr2 knockdown on RA-MA currents; Holm-Sidak’s multiple comparisons test was used to compare both conditions at individual stimulus magnitudes, p-values are indicated by * in the graph). The displacement threshold and inactivation time constant of RA-MA currents remained unchanged upon knockdown of Mtmr2 (Supplementary file 1). Of note, MA current properties cannot be compared between different experiments or treatments of DRG cultures, for example Figure 2b cannot be compared to overexpression of Mtmr2 (Figure 1). Cultures were differently nucleofected (siRNA vs. plasmids) and recorded on different days in vitro (DIV) according to established protocols (please see Materials and methods for details). Hence matching controls were performed for each set of data. (c) Stimulus-current curves show IA-MA currents were unaffected by knockdown of Mtmr2 in DRG neurons (CTRL: n = 23 neurons; Mtmr2 siRNA: n = 10 neurons; ns; 2-way ANOVA). (d) Stimulus-current curves show SA-MA currents were unchanged upon Mtmr2 knockdown (n = 11–12 neurons per condition; ns; 2-way ANOVA). Of note, the displacement thresholds and inactivation time constants of IA-MA and SA-MA currents remained unchanged upon Mtmr2 siRNA nucleofection (Supplementary file 1). (e) Stacked histograms show the number of cells exhibiting different MA currents upon knockdown of Mtmr2 in cultured DRG. The proportions of cells exhibiting RA and IA currents were significantly changed in cultures transfected with Mtmr2 siRNA. RA:IA:SA:NR (% of total; rounded to whole numbers): CTRL: 46:16:9:29; Mtmr2 siRNA: 58:7:12:23; p<0.044 overall and for the proportion of RA/total (p=0.048) and IA/total (p=0.023), respectively; Chi-square test;≥130 neurons were analyzed per condition). NR (non-responsive), refers to cells which showed no MA current.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Quantification of Mtmr2 mRNA upon siRNA transfection in DRG neurons showed a significant decrease in Mtmr2 mRNA (Actin as reference: 0.42 ± 0.05; p<0.0001; one sample t-test; N = 8 independent DRG cultures). Of note, our qPCR results indicate successful siRNA-mediated knockdown of Mtmr2 across the whole coverslip, which also includes non-transfected neurons and glia cells. Therefore our data do not report on the transfection efficiency and extent of Mtmr2 knockdown in individual neurons. (b) Quantification of Piezo2 mRNA upon Mtmr2 knockdown in DRG neurons confirmed that Piezo2 mRNA levels are similar to controls (Actin (Actb) as reference: 1.17 ± 0.18; ns; one sample t-test; N = 8 independent DRG cultures). (c) Quantification of Piezo2 membrane expression in DRG cultures derived from Piezo2GFP mice (Woo et al., 2014) upon Mtmr2 knockdown. No difference was observed among conditions (CTRL: 1470 ± 246.7 AU; Mtmr2 siRNA: 1424 ± 237.5 AU; n = 22 neurons per condition from N = 2 independent DRG cultures; ns; Mann-Whitney test). AU, arbitrary units. (d) Percentage of Piezo2-positive cells in DRG cultures derived from Piezo2GFP mice treated with CTRL or Mtmr2 siRNA. No difference was observed among analyzed conditions (CTRL: 29.59 ± 4.97%; Mtmr2 siRNA: 33.59 ± 2.45%; ns; Mann-Whitney test; n > 1000 neurons per condition; N = 3 independent DRG cultures).
+
 Besides Piezo2-mediated RA-MA currents, cultured DRG neurons display two other major types of MA currents: intermediately- (IA) and slowly-adapting- (SA) MA currents categorized based on their inactivation time constant (please see Materials and methods for details) (Coste et al., 2007; Coste et al., 2010; Hu and Lewin, 2006; Lechner and Lewin, 2009). These seemed to be largely unaltered by Mtmr2 knockdown (Figure 2c,d; Supplementary file 1) indicating that mechanotransduction is not generally compromised. Remarkably though, upon Mtmr2 knockdown we detected a significant redistribution of the number of cells exhibiting MA subpopulations: a moderate increase in the proportion of RA-MA cells paralleled by a decrease of the IA-MA population (Figure 2e). To date the interpretation of the latter is difficult and requires yet to be obtained insights into the molecular nature of IA-MA currents.
 
-## Mtmr2 modulates Piezo2-mediated mechanotransduction largely via PI(3,5)P2
+### Mtmr2 modulates Piezo2-mediated mechanotransduction largely via PI(3,5)P2
 
 Next we asked how, on a mechanistic level, Mtmr2 could regulate Piezo2 activity given that neither Piezo2 mRNA levels nor membrane expression seemed to be affected (Figure 2—figure supplement 1b,c). Mtmr2 is a phosphatase that catalyzes the removal of the 3-phosphate group from PI(3)P as well as PI(3,5)P2 (Berger et al., 2002). Under resting conditions PI(3,5)P2 is present at low levels (Jin et al., 2016; McCartney et al., 2014a) but is transiently and steeply generated upon a diverse range of cellular stressors. This is in contrast to intensely studied and highly abundant PI(4,5)P2 known to regulate ion channels (Gamper and Shapiro, 2007) including both, Piezo1 and Piezo2 (Borbiro et al., 2015).
 
@@ -61,13 +81,33 @@ To explore a potential role of Mtmr2 phosphatase activity and the resulting chan
 
 Based on the results obtained from experiments with Mtmr2C417S we then proceeded to manipulate neuronal PIP levels. Figure 4a illustrates a schematic view of the PIP synthesis and turnover pathway Mtmr2 is involved in and also indicates pharmacological inhibitors known to intervene with this pathway (Vaccari et al., 2011). According to this scheme and a wealth of previous work (Laporte et al., 1998; McCartney et al., 2014b; Mironova et al., 2016; Previtali et al., 2007; Vaccari et al., 2011), knockdown of Mtmr2 would increase the levels of PI(3)P and even more PI(3,5)P2 (Vaccari et al., 2011). We tried to experimentally mimic heightened levels of these PIPs by inclusion of exogenous PIPs in the intracellular recording solution (Dong et al., 2010); however, we did not see any change in RA-MA currents (Figure 4—figure supplement 1a). Due to technical factors that may confound this data (e.g. rapid breakdown of exogenous PIPs by intracellular phosphatases), we opted to perform additional experiments. We reversed the described accumulation of these two PIPs upon Mtmr2 knockdown (Laporte et al., 1998; McCartney et al., 2014b; Mironova et al., 2016; Previtali et al., 2007; Vaccari et al., 2011) by applying commonly-used inhibitors of PIP synthesis, that is Wortmannin, an inhibitor of the class III PI 3-kinase, (Messenger et al., 2015), and Apilimod, an inhibitor of PIKfyve (Cai et al., 2013; Vaccari et al., 2011), respectively (please see scheme in Figure 4a). If elevated levels of PI(3)P or PI(3,5)P2 were implicated in Mtmr2-knockdown-induced potentiation of Piezo2, the presence of the corresponding inhibitor in the recording solution would be expected to counteract this potentiation. Wortmannin application only marginally altered the increase in RA-MA currents upon Mtmr2 knockdown in neurons (Figure 4b). Apilimod, on the other hand, significantly diminished the magnitude of RA-MA currents in Mtmr2 siRNA-treated neurons (Figure 4b). In line with a reversal of Mtmr2-induced potentiation, the displacement threshold of RA-MA currents was significantly increased upon Apilimod treatment (Supplementary file 1). Interestingly, Apilimod treatment in wild type DRG neurons did not affect RA-MA currents (Figure 4—figure supplement 1b; Supplementary file 1), as expected given the low cellular expression and tight regulation of PI(3,5)P2 under physiological conditions (Jin et al., 2016; McCartney et al., 2014a). Taken together, our results point towards a role of PI(3,5)P2 for the functional interaction of Piezo2 and Mtmr2.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig4-v2.jpg)
+
+**Figure 4.:** (a) Scheme illustrating the major steps of PI(3,5)P2 synthesis and turnover including commonly used inhibitors and their targets. Wortmannin is an inhibitor of the phosphatidylinositol 3-kinase (PI3-Kinase) while Apilimod inhibits phosphatidylinositol 3-phosphate 5-kinase (PIKfyve). The Fig4 gene encodes a polyphosphoinositide phosphatase. (b) Stimulus-current curves after addition of Wortmannin, Apilimod or vehicle (DMSO) to Mtmr2 siRNA-treated neurons (Mtmr2 siRNA + DMSO: n = 27 neurons; Mtmr2 siRNA + Wortmannin: n = 28 neurons; Mtmr2 siRNA + Apilimod: n = 30 neurons). 2-way ANOVA suggested a significant (P<0.0007) overall effect on RA-MA currents. Holm-Sidak’s multiple comparisons test was performed to compare both conditions to DMSO at individual stimulus magnitudes. While no significant difference between Wortmannin and DMSO at individual stimulus magnitudes was observed, Apilimod application showed a significant reduction of currents compared to DMSO, p-values are indicated by * in the graph. Similarly, only Apilimod treatment increased the displacement threshold (p=0.0055 compared to DMSO-treated neurons, Kruskal-Wallis test followed by Dunn´s multiple comparisons test; Supplementary file 1). The inactivation time constants were unaltered by either treatment (Supplementary file 1). (c) Hypotonic extracellular solution counteracted the inhibition of Piezo2 RA-MA currents caused by Mtmr2 overexpression. Stimulus-current curves for Piezo2 RA-MA currents upon extracellular hypotonic stress application to DRG neurons overexpressing Mtmr2 (Mtmr2 + Isotonic extracellular solution: n = 14 neurons; Mtmr2 + Hypotonic extracellular solution: n = 19 neurons; 2-way ANOVA suggested that extracellular hypotonic stress had a significant (P<0.0001) effect on RA-MA currents. Holm-Sidak’s multiple comparisons test was performed to compare both conditions at individual stimulus magnitudes, p-values are indicated by * in the graph. The displacement threshold of RA-MA currents and inactivation time constant of RA-MA currents were unchanged (Supplementary file 1). (d) Hypotonic intracellular solution counteracted the potentiation of Piezo2 RA-MA currents caused by Mtmr2 knockdown. Stimulus-current curves for Piezo2 RA-MA currents upon intracellular hypotonic stress application to DRG neurons treated with Mtmr2 siRNA (Mtmr2 siRNA + Isotonic intracellular solution: n = 29 neurons; Mtmr2 siRNA + Hypotonic intracellular solution: n = 25 neurons; 2-way ANOVA suggested that intracellular hypotonic stress had a significant (P<0.0001) effect on RA-MA currents. Holm-Sidak’s multiple comparisons test was performed to compare both conditions at individual stimulus magnitudes, p-values are indicated by * in the graph. The displacement threshold of RA-MA currents was increased upon intracellular hypotonic stress (p=0.0131; Mann-Whitney test; Supplementary file 1). The inactivation time constant of RA-MA currents was unchanged (Supplementary file 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Stimulus-current curves of RA-MA currents are not altered upon addition of 1 µM PI(3)P or 1 µM PI(3,5)P2 (CTRL: n = 27 neurons; 1 µM PI(3)P: n = 17 neurons; 1 µM PI(3,5)P2: n = 21 neurons; ns; 2-way ANOVA). The displacement threshold and inactivation time constant of RA-MA currents also remained unchanged upon application of PIPs (Supplementary file 1). (b) Stimulus-current curves of RA-MA currents upon application of Apilimod or DMSO (vehicle) to wild type, untreated DRG neurons ( + DMSO: n = 16 neurons; + Apilimod: n = 12 neurons; ns; 2-way ANOVA). The displacement threshold and inactivation time constant (τ) of RA-MA currents remained unchanged upon treatment with Apilimod (Supplementary file 1). (c) Stimulus-current curves demonstrate Piezo2 RA-MA potentiation upon application of extracellular hypotonic stress to DRG cultures compared to isotonic conditions (Isotonic extracellular: n = 53 neurons; Hypotonic extracellular: n = 81 neurons). 2-way ANOVA suggested that hypotonic stress had a significant (P<0.0001) effect on RA-MA currents. Holm-Sidak’s multiple comparisons test was performed to compare conditions at individual stimulus magnitudes, p-values are indicated by * in the graph. The displacement threshold of RA-MA currents was significantly decreased by hypotonic stress (p=0.0021; Mann-Whitney test; Supplementary file 1). Given that Jia and colleagues (Jia et al., 2016) reported slower inactivation of MA currents upon prolonged hypotonic stress, we wanted to ensure that measured currents in our paradigm of acute hypotonic stress were of the RA-type. In fact, this was the case as judged by comparable inactivation time constants (Supplementary file 1). Of note, MA current properties shown here in wild type, untreated DRG neurons cannot be compared to nucleofected neurons in Figure 4. Nucleofection with siRNA or plasmids (i) alters neuronal and Piezo2 activity and (ii) required recordings to be performed on different days in vitro (2 DIV and 3 DIV, respectively) according to established protocols. Please see Materials and methods for more details on variability in DRG cultures. For this reason each dataset consists of experiments and respective matching controls measured in parallel (i) in the same mouse cohort and (ii), where possible, on each experimental day.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Sketch of the AFM set-up used to measure the mechanical properties of cultured DRG neurons transfected with CTRL or Mtmr2 siRNA. (b) Representative force-indentation curves for CTRL and Mtmr2 siRNA treated DRG neurons. (c) Quantification of effective Young’ modulus (Eeff) of DRG neurons shows no significant difference between CTRL and Mtmr2 siRNA treatment (CTRL: 0.93 ± 0.13 kPa, n = 44 neurons from N = 4 independent cultures; Mtmr2 siRNA: 0.96 ± 0.09 kPa, n = 48 neurons from N = 4 independent cultures; ns; Mann-Whitney test). (d) Quantification of tether force also showed no difference between conditions (37.74 ± 0.55 pN, n = 53 from N = 4 independent cultures; Mtmr2 siRNA: 38.30 ± 0.76 pN, n = 54 from N = 4 independent cultures; ns; Mann-Whitney test).
+
 We then intended to assess the significance of PI(3,5)P2 availability for Piezo2 function in a more physiological setting. In peripheral sensory neurons changes in cellular osmolarity cause activation of diverse ion channels and receptors followed by initiation of various signaling pathways involved in volume regulation (Lechner et al., 2011; Liu et al., 2007; Quallo et al., 2015). Interestingly, previous work has indicated that also Mtmr2, PI(3,5)P2 (Berger et al., 2003; Dove et al., 1997) and Piezo2 (Jia et al., 2016) can be modulated by osmotic stress. Upon hypoosmotic stress Mtmr2 trafficking was altered and PI(3,5)P2 levels were reported to be elevated in eukaryotic cells (Berger et al., 2003; Dove et al., 1997). In the case of Piezo2, hypoosmotic stress was shown to potentiate Piezo2 RA-MA currents, which was independent of the prominent osmosensor TRPV4 (Jia et al., 2016). Therefore, we employed osmotic stress as a physiological stimulus to investigate the link between Mtmr2, PI(3,5)P2 and Piezo2. First, we confirmed the previously described (Jia et al., 2016) potentiation of Piezo2 RA-MA currents by application of extracellular hypotonic stress to DRG cultures (Figure 4—figure supplement 1c). We then postulated that an increase of PI(3,5)P2 levels by extracellular hypotonicity (Berger et al., 2003; Dove et al., 1997) should counteract the RA-MA suppression upon Mtmr2-overexpression, which we described in Figure 1h above. Indeed, in Mtmr2 overexpressing DRG cultures we recorded significantly higher RA-MA currents under extracellular hypotonic conditions compared to isotonic conditions (Figure 4c). Other RA-MA current parameters were unchanged (Supplementary file 1). We then tested whether the opposite was also true: Would an expected decrease of PI(3,5)P2 levels by intracellular hypotonicity (Dove et al., 1997) prevent RA-MA current sensitization upon Mtmr2 knockdown? Conceptually, this experiment is analogous to Apilimod application in Figure 4b above, where we pharmacologically inhibited PI(3,5)P2 production in DRG cultures. As predicted, under intracellular hypotonic conditions RA-MA currents were significantly smaller in siRNA-treated cultures compared to isotonic conditions (Figure 4d; Supplementary file 1). In parallel, the displacement threshold was significantly increased, while other RA-MA current parameters remained unchanged (Supplementary file 1). As specific probes to assess the cellular distribution of PI(3,5)P2 are not available (Hammond et al., 2015; Li et al., 2013b; McCartney et al., 2014a; Nicot and Laporte, 2008; Previtali et al., 2007), we could not measure the actual levels of PI(3,5)P2 in neurons under different osmotic conditions. Even though, our pharmacological and osmotic experiments both suggest an interdependent contribution of Mtmr2 and PI(3,5)P2 to the modulation of Piezo2-mediated MA currents in DRG cultures.
 
 PIPs are essential membrane components and alterations of PIP availability could modify mechanical properties of cells and their membranes (Janmey, 1995; Raucher et al., 2000; Skwarekmaruszewska et al., 2006). In fact, several recent studies demonstrated the influence of membrane mechanics on mechanotransduction (Brohawn et al., 2014a; Brohawn et al., 2014b; Cox et al., 2016; Lewis and Grandl, 2015; Sukharev, 2002; Wu et al., 2016), particularly on Piezo2-mediated RA-MA currents (Jia et al., 2016; Qi et al., 2015). Therefore, we set out to test a possible impact of Mtmr2 knockdown upon mechanical properties of cultured DRG neurons by atomic force microscopy (AFM) (Nawaz et al., 2015; Qi et al., 2015; Rehfeldt et al., 2007). However, our experiments did not show any significant differences between Mtmr2 siRNA-treated and control-treated DRG neurons. Neither the Young´s elastic modulus (an indicator for cellular elasticity including membrane tension and cortex stiffness) (Morley et al., 2016; Qi et al., 2015) as determined from the indentation, nor the tether force (an indicator for membrane tension and mechanical coupling to the cortex) (Qi et al., 2015) obtained from the retraction portion of the force distance curves were altered (Figure 4—figure supplement 2). These results are in line with our aforementioned findings indicating that Mtmr2 knockdown does not fundamentally alter mechanotransduction in DRG cultures (Figure 2c,d and Supplementary file 1). Nevertheless, our AFM measurements cannot exclude possible small and local changes in membrane tension in the direct vicinity of Piezo2.
 
-## Piezo2 harbors a PIP2 binding motif
+### Piezo2 harbors a PIP2 binding motif
 
 Based on the functional role of PI(3,5)P2 for Mtmr2-dependent Piezo2 regulation we investigated whether Piezo2 can bind PI(3,5)P2. PIPs are known to bind to proteins through various domains such as the FYVE domain, WD40 domain, PHD domain or electrostatically via poly-basic regions with unstructured clusters of positively charged amino acid residues (Lysine or Arginine) (Dong et al., 2010; McCartney et al., 2014a). Sequence analysis revealed a region in Piezo2 with considerable similarity to the proposed PI(3,5)P2 binding motif of the mucolipin TRP channel 1 (TRPML1) (Dong et al., 2010) (Figure 5a). We performed a peptide-lipid binding assay to test if this sequence in Piezo2 could bind to PI(3,5)P2, which was indeed the case (Figure 5b,d). In addition, we also observed that the Piezo2 peptide was able to bind PI(4,5)P2 and weakly to PI(3,4)P2 (Figure 5b,d and Figure 5—figure supplement 1). This is an intriguing result because Borbiro and colleagues showed that TRPV1 modulates Piezo2 currents through PI(4,5)P2 depletion, though the study did not report a PI(4,5)P2 binding region in the Piezo2 sequence (Borbiro et al., 2015). In parallel we performed the binding assay with a mutated version of the Piezo2 peptide, in which positively-charged amino acid residues shown to be relevant for PI(3,5)P2 binding in TRPML1 were changed to neutral Glutamine (Q; Piezo2 3Q mutant; QQILQYFWMS). This mutated peptide did not bind to any lipid (Figure 5b,d). The here identified PI(3,5)P2-binding region in Piezo2 exhibits 50% sequence identity to Piezo1 with conservation of positively charged amino acid residues (Figure 5a). Therefore, we also tested whether Piezo1 was able to bind PI(3,5)P2, but did not find any evidence for this (Figure 5c,d). These data suggest that not only positively charged amino acid residues, but also flanking amino acids in this Piezo2 region contribute to PIP2 binding in a yet to be explored manner. Further, these in vitro binding studies substantiate our functional data on the specific link between Piezo2 and the Mtmr2 substrate PI(3,5)P2 by identifying a PI(3,5)P2 binding domain in Piezo2, but not in Piezo1. It is important to note that the peptide region defined here may not be the only PI(3,5)P2 binding region in Piezo2 especially when considering the known diversity of PIP modules (Dong et al., 2010; McCartney et al., 2014a). Due to the sheer size of Piezo2 a large-scale peptide-lipid binding screen was beyond the scope of this study.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic view of the PI(3,5)P2 binding region of TRPML1 identified elsewhere (Dong et al., 2010) and the region in murine Piezo2 that exhibits pronounced sequence similarity to the PI(3,5)P2 binding region of TRPML1. The indicated sequences were used to generate peptides for Piezo2, the Piezo2 3Q mutant and Piezo1. All peptides were tagged with a FLAG-epitope to allow for detection with anti-Flag antibodies on immunoblots. (b–d) Representative peptide-lipid binding assays followed by immunoblotting after incubation with indicated peptides (b, c) and densitometric quantification (d). The arrangement of lipids on the lipid-strip is indicated; blank, no lipid was spotted. The Piezo2 peptide strongly binds to PI(3,5)P2 and PI(4,5)P2, and weakly to PI(3,4)P2. Neither the Piezo2 3Q mutant peptide nor the Piezo1 peptide exhibited significant binding to any of the lipids tested. One-way ANOVA followed by Dunnett’s multiple comparisons test was used to compare spot signal densities for each peptide to the respective blank, p-values are indicated by # in the graph (d). In addition, one-way ANOVA followed by Holm-Sidak’s multiple comparisons test was used to compare spot signal densities across the three peptides, p-values are indicated by * in the graph (d). The graph only presents data for those lipids, to which the Piezo2 peptide exhibited significant binding. Please see Figure 5—figure supplement 1 for summarized data on lipids tested with the Piezo2 peptide. Experiments using the Piezo2 peptides were independently repeated 6 times, of which four times were conducted in parallel with experiments using the Piezo1 peptide. AU, arbitrary units. (e) Stimulus-current curves upon co-expression of the Piezo2 P1 mutant with Mtmr2 in HEK293 cells compared to mock controls. Mtmr2 only slightly attenuated MA currents (Piezo2 P1 mutant + mock: n = 13 cells; Piezo2 P1 mutant + Mtmr2: n = 10 cells). 2-way ANOVA reported a significant (P<0.0119) overall effect of Mtmr2 overexpression on RA-MA currents of the Piezo2 P1 mutant, however a Holm-Sidak’s multiple comparisons test showed no significant difference between currents at individual stimulus magnitudes. Of note, the displacement threshold and inactivation time constant were also unaffected upon overexpression of Mtmr2 compared to mock (Supplementary file 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Piezo2 peptide densitometry data were analyzed using one-way ANOVA followed by Dunnett’s multiple comparisons test to compare spot signal densities for different lipids to the blank, p-values are indicated by # in the graph. AU, arbitrary units.
 
 Next, we attempted to monitor the functional relevance of the here described PI(3,5)P2 binding domain for the Piezo2-Mtmr2 interaction. To this end we generated a Piezo2 P1 mutant by swapping the PI(3,5)P2 binding domain of Piezo2 with the corresponding domain of Piezo1 (please see scheme in Figure 5a). Remarkably, MA currents of the Piezo2 P1 mutant were only slightly attenuated upon co-expression with Mtmr2 compared to mock-transfected controls (Figure 5e). Also, the displacement threshold and inactivation time constant of MA currents remained unchanged (Supplementary file 1). This is in stark contrast to the pronounced Mtmr2-induced suppression of MA currents recorded from wildtype Piezo2 (Figure 1f). Hence, our results suggest that the PI(3,5)P2 binding domain of Piezo2 identified here likely mediates the functional sensitivity of Piezo2 to Mtmr2-dependent changes in PI(3,5)P2 levels.
 
@@ -87,7 +127,7 @@ These reports nourish the notion that changes of PI(3,5)P2 via Mtmr2 might contr
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32346/elife-32346-fig6-v2.jpg)
 
-**Figure 6.:** 2.Mtmr2 controls the abundance of PI(3,5)P2 by dephosphorylation (please see Figure 4a). Mtmr2 and Piezo2 expression as well as PI(3,5)P2 might be compartmentalized in membrane microdomains. Piezo2 localization in Mtmr2-negative microdomains would facilitate its access to local PI(3,5)P2 and consequently potentiate Piezo2 RA-MA currents (left side). On the other hand, high Mtmr2 levels and its localization in the proximity of Piezo2 would augment PI(3,5)P2 turnover, thereby decreasing local PI(3,5)P2 availability and suppressing Piezo2 RA-MA currents (right side). One could further speculate that Mtmr2, via binding Piezo2, might recruit Piezo2 to membrane microdomains depleted of PI(3,5)P2. This would provide an active mechanism to inhibit Piezo2 RA-MA currents in membrane compartments – may they be at the plasma membrane or intracellular membranes. Ultimately, Mtmr2 and PI(3,5)P2 may contribute to dynamically tuning touch sensitivity of an organism in response to diverse conditions modulating Mtmr2 and PI(3,5)P2 levels (e.g. osmotic stress as indicated by results shown in Figure 4).The following questions await further clarification: (i) How are Mtmr2/PI(3,5)P2 regulated during (patho)physiological conditions in the somatosensory system, (ii) does the modulation of RA-MA currents require additional yet to be identified effector proteins, and (iii) are other PIPs also involved, for example PI(4,5)P2 shown to modulate Piezo2 function (Borbiro et al., 2015)? As the structure of Piezo2 has not been resolved yet, Piezo2 is depicted after the recently solved structure of Piezo1 (Ge et al., 2015; Guo and MacKinnon, 2017; Saotome et al., 2018). If this structure holds also true for Piezo2, the PI(3,5)P2 binding domain (depicted in green) would roughly be localized within the first third of the N-terminal blade.
+**Figure 6.:** Mtmr2 controls the abundance of PI(3,5)P2 by dephosphorylation (please see Figure 4a). Mtmr2 and Piezo2 expression as well as PI(3,5)P2 might be compartmentalized in membrane microdomains. Piezo2 localization in Mtmr2-negative microdomains would facilitate its access to local PI(3,5)P2 and consequently potentiate Piezo2 RA-MA currents (left side). On the other hand, high Mtmr2 levels and its localization in the proximity of Piezo2 would augment PI(3,5)P2 turnover, thereby decreasing local PI(3,5)P2 availability and suppressing Piezo2 RA-MA currents (right side). One could further speculate that Mtmr2, via binding Piezo2, might recruit Piezo2 to membrane microdomains depleted of PI(3,5)P2. This would provide an active mechanism to inhibit Piezo2 RA-MA currents in membrane compartments – may they be at the plasma membrane or intracellular membranes. Ultimately, Mtmr2 and PI(3,5)P2 may contribute to dynamically tuning touch sensitivity of an organism in response to diverse conditions modulating Mtmr2 and PI(3,5)P2 levels (e.g. osmotic stress as indicated by results shown in Figure 4).The following questions await further clarification: (i) How are Mtmr2/PI(3,5)P2 regulated during (patho)physiological conditions in the somatosensory system, (ii) does the modulation of RA-MA currents require additional yet to be identified effector proteins, and (iii) are other PIPs also involved, for example PI(4,5)P2 shown to modulate Piezo2 function (Borbiro et al., 2015)? As the structure of Piezo2 has not been resolved yet, Piezo2 is depicted after the recently solved structure of Piezo1 (Ge et al., 2015; Guo and MacKinnon, 2017; Saotome et al., 2018). If this structure holds also true for Piezo2, the PI(3,5)P2 binding domain (depicted in green) would roughly be localized within the first third of the N-terminal blade.
 
 Nevertheless, the data presented here allow us to infer an attractive mechanism exquisitely suited for transient and compartmentalized control of Piezo2 function, that is physical vicinity to Mtmr2, the activity status of Mtmr2 and consequently PI(3,5)P2 availability (Figure 6). We can further speculate that this local control of Piezo2 function may serve to tune the threshold and magnitude of neuronal activity to light touch. Ultimately, Mtmr2 and PI(3,5)P2 may represent a means by which touch sensitivity of an organism can be dynamically adjusted in response to diverse stimuli modulating Mtmr2 and PI(3,5)P2 levels (Figure 6). In this respect it is noteworthy that multiple Mtmr2 mutations – including those affecting its activity (Berger et al., 2002) – have been implicated in Charcot-Marie-Tooth type 4B1 (CMT4B1) disease, a peripheral neuropathy characterized by abnormalities in myelination and nerve conduction (Bolino et al., 2004; Bolis et al., 2005; Bonneick et al., 2005). An analysis of Piezo2 mechanotransduction, light touch as well as tactile hypersensitivity in Mtmr2 knockout (Bolino et al., 2004) and Mtmr2 mutant mice (Bonneick et al., 2005) would be warranted to thoroughly examine the potential role of Mtmr2 for (patho)physiological aspects of vertebrate mechanosensation.
 
@@ -99,25 +139,343 @@ Taken together, our data present Mtmr2 as a novel modulator of the mechanosensor
 
 ## Materials and methods
 
-## DRG culture and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6/J mice</td>
+      <td></td>
+      <td>RRID: IMSR_JAX:000664</td>
+      <td>bred in the animal facility of the MPIem Goettingen</td>
+    </tr>
+    <tr>
+      <td>Strain (mouse)</td>
+      <td>Piezo2GFP</td>
+      <td>kind gift of Ardem Patapoutian</td>
+      <td></td>
+      <td>bred in the animal facility of the MPIem Goettingen</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>purchased from ATCC</td>
+      <td>RRID: CVCL_0045</td>
+      <td>Cells were not tested for mycoplasma contamination; cells were authenticated by ATCC upon purchase</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Mtmr2 (1:100)</td>
+      <td>Biotechne, #NBP1-33724</td>
+      <td>RRID: AB_2147841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Chicken anti-GFP (1:500)</td>
+      <td>Thermo Fisher Scientific, #A10262</td>
+      <td>RRID: AB_2534023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-GST (1:500)</td>
+      <td>Santa Cruz, #sc-459</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse anti-myc (1:750, 1:500)</td>
+      <td>Santa Cruz, #sc-47694</td>
+      <td>RRID: AB_627266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse anti-FLAG (1:100)</td>
+      <td>Sigma Aldrich, #F1804</td>
+      <td>RRID: AB_262044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-Piezo2 (1:200)</td>
+      <td>Novus Biologicals, #NBP1-78624</td>
+      <td>RRID: AB_11005294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMVSport6 Piezo2-GST IRES GFP</td>
+      <td>kind gift of Ardem Patapoutian</td>
+      <td>mouse Piezo2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCMV6-Entry Mtmr2-myc-DDK</td>
+      <td>Origene, #MR215223</td>
+      <td>mouse Mtmr2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mtmr2C417S-myc-DDK</td>
+      <td></td>
+      <td>mouse Mtmr2 C417S</td>
+      <td>Mutation generated using Q5 Site-Directed Mutagenesis kit (New England BioLabs)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCMV Sport6 Piezo1-753-myc-IRES GFP</td>
+      <td>kind gift of Ardem Patapoutian</td>
+      <td>mouse Piezo1</td>
+      <td>Myc tag was inserted at amino acid 753 as described inCoste et al., 2015.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pGEM-Teasy Kv1.1-HA</td>
+      <td></td>
+      <td>mouse Kv1.1</td>
+      <td>Custom-made and sequence-verified</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCMVSport6</td>
+      <td>kind gift of ArdemPatapoutian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCDNA3.1-myc-His</td>
+      <td>Invitrogen, #V80020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCNDA3-GST</td>
+      <td>kind gift of Ardem Patapoutian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCMVSport6 Piezo2 P1 mutant-GST IRES GFP</td>
+      <td></td>
+      <td>mouse Piezo2 P1 mutant</td>
+      <td>Mutation generated using Q5 Site-Directed Mutagenesis kit (New England BioLabs)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCDNA3.1-myc-His TRPA1</td>
+      <td>kind gift of Ardem Patapoutian</td>
+      <td>mouse TRPA1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCMV6-Vti1b-myc-DDK</td>
+      <td>Origene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mtmr2 forward primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>TGTACCCCACCATTGAAGAAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mtmr2 reverse primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>TAAGAGCCCCTGCAAGAATG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo2 forward primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>AGGCAGCACATAGGATGGAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo2 reverse primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>GCAGGGTCGCTTCAGTGTA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Actb forward primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>GATCAAGATCATTGCTCCTCCTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Actb reverse primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>CAGCTCAGTAACAGTCCGCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gapdh forward primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>CAATGAATACGGCTACAGCAAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gapdh reverse primer for qPCR</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>TTACTCCTTGGAGGCCATGT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo2 mutagenesis forward primer</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>GTCTTCTGGTGGCTCGTGGTCATTTATACCATGTTGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo2 mutagenesis reverse primer</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>ACGCAGCAGCTTCCTCCACCACTCGTAGTGCAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mtmr2 mutagenesis forward primer</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>GTGGTACACTCCAGTGATGGATG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mtmr2mutagenesis reverse primer</td>
+      <td>MPIem DNA Core Facility</td>
+      <td>CACAGACGTCTTCCCAGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Piezo2-FLAG tagged</td>
+      <td>Custom-made by GenScript</td>
+      <td>EWWRKILKYFWMSVVIDYKDDDDKQNN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo2 3Q-FLAG tagged</td>
+      <td>Custom-made by GenScript</td>
+      <td>EWWQQILQYFWMSVVIDYKDDDDKQNN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Piezo1-FLAG tagged</td>
+      <td>Custom-made by GenScript</td>
+      <td>TLWRKLLRVFWWLVDYKDDDDKQNN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wortmannin</td>
+      <td>Sigma Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Apilimod</td>
+      <td>Bertin Pharma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PI(3,5)P2</td>
+      <td>Echelon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PI(3)P</td>
+      <td>Echelon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fitmaster</td>
+      <td>HEKA Electronik GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Patchmaster</td>
+      <td>HEKA Electronik GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ImageJ</td>
+      <td>NIH (Schindelin et al., 2015)</td>
+      <td>RRID: SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GraphPad Prism 6.01</td>
+      <td>GraphPad Software</td>
+      <td>RRID: SCR_015807</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### DRG culture and transfection
 
 Preparation and culture of mouse DRG neurons were performed as described previously (Coste et al., 2010; Narayanan et al., 2016). Throughout the study, DRG were isolated from 9 to 10 week old male C57BL/6J mice or, in case of experiments in Figure 1a, Figure 1—figure supplement 1a,c, Figure 2—figure supplement 1c,d from Piezo2GFP mice (Woo et al., 2014). In brief, DRG neurons were promptly isolated and digested with collagenase (Thermo Fisher Scientific, Germany) and papain (Worthington, Lakewood, USA). Neurons were plated on poly-D-lysine (1 mg/mL, Merck Millipore, Germany) coated coverslips, which were additionally coated with laminin (20 µg/mL, Thermo Fisher Scientific). Growth medium (Hams F12/DMEM 1:1 ratio with L-glutamine; Gibco, Germany) was supplemented with 10% horse serum (Thermo Fisher Scientific) and 100 ng/ml NGF, 50 ng/ml GDNF, 50 ng/ml BDNF, 50 ng/ml NT-3, and 50 ng/ml NT-4 (all growth factors were procured from R&D Systems, Germany).
 
 Transfection of neurons was achieved by nucleofection of siRNA or plasmid into freshly isolated DRG neurons using the P3 Primary Cell 4D Nucleofector X Kit with the 4D-Nucleofector X Unit according to the manufacturer's instructions (Lonza, Germany). 500 nM FlexiTube GeneSolution Mtmr2 siRNA (Qiagen, #GS77116, Germany) or AllStar Negative control siRNA (CTRL, Qiagen, #SI03650318) for knockdown in DRG neurons and 0.5 µg of pCMV6 Mtmr2-myc-DDK (Origene) or 0.5 µg of pCMVSport6 or pcDNA3.1 myc-His (CTRL) for overexpression in DRG neurons, was used. After nucleofection, neurons were allowed to recover in calcium free RPMI medium (Thermo Fisher Scientific) for 10 min at 37°C before plating in growth medium. Two hours after transfection half of the growth medium was exchanged with fresh medium and neurons were grown for 48–72 hr before being used for electrophysiology, immunostaining or qPCR.
 
-## HEK293 cell culture and transfection
+### HEK293 cell culture and transfection
 
 HEK293 cells were authenticated by ATCC (Manassas, USA) upon purchase. Thereafter, cell line identity was authenticated by regular morphological inspection. Symptoms for mycoplasma contamination were not observed and thus no test for mycoplasma contamination was performed. Cells were cultured in DMEM with Glutamax (Thermo Fisher Scientific) supplemented with 10% FBS (Fetal bovine serum, Thermo Fisher Scientific) and 5% Pen/Strep (Thermo Fisher Scientific). Cells were grown up to 80–90% confluence before being used for transfection. Transfection was done using Fugene HD Transfection reagent (Promega, Germany). Cells were plated on poly-D-lysine-coated coverslips and maintained in culture for 48 hr before being used for electrophysiology or proximity ligation assay (PLA).
 
-## cDNA and plasmids
+### cDNA and plasmids
 
 pCMVSport6 Piezo2-GST-IRES GFP (kind gift from Prof. Ardem Patapoutian, La Jolla, USA); pCMV6-Entry Mtmr2-myc-DDK (Origene, #MR215223); pCMV6-Entry Mtmr2C417S-myc-DDK (mutation as described in (Berger et al., 2002); pCMV Sport6 Piezo1-753-myc-IRES GFP (kind gift from Ardem Patapoutian) (Coste et al., 2015); pGEM-Teasy Kv1.1-HA; pCMVSport6; pCDNA3.1-myc-His (Invitrogen, #V80020); pCNDA3-GST (kind gift from Prof. Ardem Patapoutian); pCMVSport6 Piezo2 P1 mutant-GST-IRES GFP. Mtmr2C417S mutant and Piezo2 P1 mutant were prepared using Q5 Site-Directed Mutagenesis kit (New England BioLabs). Mutagenesis was done according to manufactures instructions and all mutant plasmids were verified by sequencing. Primers used for the mutagenesis were as follows: Mtmr2 mutagenesis forward primer: GTGGTACACTCCAGTGATGGATG; Mtmr2 mutagenesis reverse primer: CACAGACGTCTTCCCAGA; Piezo2 mutagenesis forward primer: GTCTTCTGGTGGCTCGTGGTCATTTATACCATGTTGG; Piezo2 mutagenesis reverse primer: ACGCAGCAGCTTCCTCCACCACTCGTAGTGCAC.
 
-## Quantitative PCR (qPCR)
+### Quantitative PCR (qPCR)
 
 Total RNA was isolated from cultured DRG neurons (transfected with Mtmr2 siRNA or CTRL, please see above), using NucleoSpin RNA XS (Macherey-Nagel) according to the manufacturer's instructions. First-strand cDNA synthesis was done using QuantiTect reverse transcription kit (Qiagen). Mtmr2 and Piezo2 gene expression was assessed in both conditions by real-time qPCR using the SYBR green system (Power SYBR Green PCR Master Mix; Thermo Fisher Scientific) on a LightCycler 480 instrument (Roche, Germany). The melting curve analysis of amplified products was used to confirm the specificity of qPCR assay. All samples were run in triplicate and negative control reactions were run without template. Threshold cycle (Ct) values, the cycle number in which SYBR green fluorescence rises above background, were normalized to two reference genes (Actb and Gapdh) and recorded as a measure of initial transcript amount. Relative quantification was performed using the ‘fit point’ as well as the ‘second derivative maximum’ method of the LightCycler 480. Primer sequences 5′−3′ are the following: Mtmr2 (fw: tgtaccccaccattgaagaaa; rev: taagagcccctgcaagaatg), Piezo2 (fw: aggcagcacataggatggat; rev: gcagggtcgcttcagtgta), Actb (fw: gatcaagatcattgctcctcctg; rev: cagctcagtaacagtccgcc), Gapdh (fw: caatgaatacggctacagcaac; rev: ttactccttggaggccatgt). Of note, only data normalized to Actb are shown but data normalized to Gapdh gave similar results. Our qPCR results indicate successful siRNA-mediated knockdown of Mtmr2 across the whole coverslip, which also includes non-transfected neurons and glia cells. Therefore our data do not report on the transfection efficiency and extent of Mtmr2 knockdown in individual neurons.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell voltage clamp recordings were performed in transfected DRG cultures, wild type DRG cultures or transfected HEK293 cell cultures at room temperature as described in (Narayanan et al., 2016). Briefly, (protocol adapted from [Coste et al., 2010]) to elicit mechanically activated currents, the cell soma was mechanically stimulated using a blunt probe (fire polished borosilicate glass capillary). The stimulation was delivered using a piezo-electrically driven micromanipulator (Physik Instrumente GmbH and Co.KG, Germany). The probe was initially positioned ~4 µm from the cell body and had a velocity of 0.8 µm/ms during the ramp phase (forward motion). The stimulus was applied for 150 ms with an inter-stimulus interval of 180 ms. Stimulus-current measurements were performed using mechanical stimulations from 0 to 6 µm in 1 µm increments at a holding potential of −70 mV in whole cell mode. All recordings other than specifically indicated were made in standard extracellular solution containing (in mM) 127 NaCl, 3 KCl, 1 MgCl2, 2.5 CaCl2, 10 Glucose and 10 HEPES; pH = 7.3; osmolarity = 285 mOsm (Coste et al., 2010). To achieve hypotonicity the extracellular solution was adjusted to 160 mOsm. The intracellular solution for DRG neurons contained (in mM) 133 CsCl, 10 HEPES, 5 EGTA, 1 MgCl2, 1 CaCl2, 4 MgATP and 0.4 NaGTP; pH = 7.3; osmolarity = 280 mOsm (Coste et al., 2010). Hypotonic intracellular solution contained (in mM) 65 CsCl, 10 HEPES, 5 EGTA, 1 MgCl2, 1 CaCl2, 4 MgATP and 0.4 NaGTP; pH = 7.3; osmolarity = 162 mOsm. Intracellular solution for HEK293 cells contained (in mM) 110 KCl, 10 NaCl, 1 MgCl2, 1 EGTA and 10 HEPES; pH = 7.3 (Poole et al., 2014). Based on protocols published elsewhere (Jia et al., 2016) recordings in extracellular hypotonic solutions were performed as follows: Cells were incubated with the hypotonic solution for 5 min at 37°C prior to recording, after which RA-MA currents were recorded in hypotonic extracellular solution between 0–20 min after initial application. For some experiments described in this study, DRG neurons were treated with chemical inhibitors of the phosphatidylinositol phosphate pathway. Cells were treated with 35 µM Wortmannin (Sigma Aldrich; protocol adapted from [Mo et al., 2009]) in DMSO or 1 µM Apilimod (Bertin Pharma, Germany ; protocol adapted from [Mironova et al., 2016]) in DMSO for 2 hr prior to recording. DMSO (0.08% for Apilimod and 0.35% for Wortmannin), was used as vehicle for each experiment. For PIP addition experiments, 1 µM PI(3,5)P2 (Echelon) or 1 µM PI(3)P (Echelon) were included in the isotonic intracellular solution (protocol adapted from [Dong et al., 2010]). Of note, the water-soluble diC8 form of the lipids was used as indicated elsewhere (Dong et al., 2010).
 
@@ -131,7 +489,7 @@ In DRG cultures neuronal soma size differs considerably within a coverslip. Ther
 
 Of note, current amplitudes and displacement thresholds cannot be compared among experimental datasets because of differential treatments (e.g. nucleofection, inhibitors) requiring measurements at different culture days in vitro (DIV), and due to the inherent variability in DRG cultures dependent on mouse cohorts used throughout the course of this study. For this reason each dataset consists of experiments and respective controls measured in parallel (i) in the same mouse cohort and (ii), where possible, on each experimental day. For each dataset (experimental versus control conditions) several coverslips from at least 4 (range: 4–18) independent cell cultures or 2–12 independent platings of HEK293 cells were used.
 
-## Immunostaining and analysis
+### Immunostaining and analysis
 
 Immunostaining was carried out as described (Narayanan et al., 2016). Briefly, Piezo2GFP mice (Woo et al., 2014) (ages 8–9 weeks) were euthanized with CO2 or perfused with 4% PFA (Science Services). DRG neurons were isolated and cultured using the protocol described above or DRG were carefully dissected, collected in 4% PFA/1X PBS, and post-fixed for 30 min at 4°C. After overnight cryoprotection in 30% sucrose tissues were frozen in optimal cutting temperature medium, sectioned with a cryostat into 10 μm thick sections, mounted on SuperFrost Plus slides, and stored at −80°C. Frozen slides were thawed at room temperature for 30 min, washed thrice with 1X PBS, blocked for 30 min in 1X PBS containing 5% goat or donkey serum (Dianova, Germany) and 0.4% TritonX-100 (Roth), and incubated with primary antibodies (diluted in 0.1% TritonX-100% and 1% serum in 1X PBS), overnight at 4°C. The sections were then washed with 1X PBS and incubated for 2 hr at room temperature with secondary antibodies diluted 1:250 in 0.1% TritonX-100% and 1% serum in 1X PBS. Sections were then washed six times with 1X PBS and mounted in SlowFade Gold antifade reagent with DAPI (Thermo Fisher Scientific).
 
@@ -145,7 +503,7 @@ For the analysis of Mtmr2 in cryo-frozen sections or primary cultures of DRGs fr
 
 For the analysis of membrane intensity of Piezo2-GFP upon Mtmr2 knockdown, the ‘analyze particle tool’ from ImageJ was used. The WGA staining was used to mark the region of interest around the cell membrane and for each ROI, the mean intensity (arbitrary units, AU) and area of positive signal was determined. The mean intensity of signal (arbitrary units, AU) was calculated by subtracting the threshold (defined as ‘mean +3*standard deviation’ of background) from the total mean intensity.
 
-## Proximity ligation assay (PLA)
+### Proximity ligation assay (PLA)
 
 PLA was carried out as described (Hanack et al., 2015; Narayanan et al., 2016) with minor modifications. HEK293 cells or DRG neurons were plated on MatTek dishes coated with poly-D-lysine (and Laminin for DRG neuron cultures) and transfected with appropriate plasmids (details of plasmids are provided below). Cells were cultured for 48 hr before staining. Cells were washed with 1X PBS and fixed with 4% PFA for 10 min at room temperature. Thereafter cells were blocked in Duolink Blocking Solution (Sigma Aldrich, Germany) for 2 hr at room temperature. Cells were then incubated with primary antibodies (diluted in Duolink Antibody Diluent (Sigma Aldrich)), overnight at 4°C. Cells were washed with wash buffer A (0.01 M Tris, 0.15 M NaCl and 0.05% Tween 20, pH 7.4) and incubated with PLA probes (PLUS and MINUS probes were diluted 1:10 in Duolink antibody diluent (Sigma Aldrich)) for 1 hr at 37°C. Cells were washed again with wash buffer A and incubated with amplification mix (amplification stock 1:5 and polymerase 1:80 in water) for 100 min at 37°C. Cells were then washed with wash buffer B (0.2 M Tris, 0.1 M NaCl, pH7.5) and stored in 1X PBS before imaging. Secondary controls meant omitting all primary antibodies.
 
@@ -153,27 +511,27 @@ Plasmids used: pCMVSport6 Piezo2-GST-IRES-GFP (kind gift from Prof. Ardem Patapo
 
 The PLA was imaged using a Zeiss Axio Observer Z1 inverted microscope. The imaging settings were constant across all samples of the same experiments. Secondary controls were always imaged in parallel using the same settings. Image analysis was done using ImageJ. The background was determined as the ‘mean intensity +3*standard deviation’ of randomly chosen negative cells per field of view and averaged for all images within one condition. The highest background value was then used as threshold for the analysis. GFP positive cells (from Piezo2-GST-IRES-GFP expression or pmaxGFPVector) were chosen for each field of view and the PLA signal was analyzed for these cells, using the ‘Analyze Particle’ tool of ImageJ. The number of PLA puncta and total area of positive PLA signal for each cell was measured. To account for variability in cell size, the total area of the cell was also measured and the PLA signal values were normalized to total cell area. Only for presentation purposes brightness, levels and contrast of images were adjusted in Adobe Photoshop. In all cases image adjustments were applied equally across the entire image and equally to controls. Experiments were performed on several coverslips of at least two independently transfected HEK293 and DRG cultures, respectively.
 
-## Atomic force microscopy (AFM)
+### Atomic force microscopy (AFM)
 
 DRG neurons were nucleofected with AllStar Negative control siRNA (CTRL) or Mtmr2 siRNA, as described above, and maintained in culture for 72 hr. Elasticity and tether force measurements were performed with an AFM (MFP-3D extended head, Asylum Research, Germany) mounted on an inverted microscope (IX71, Olympus, Germany) using contact mode with a triangular cantilever comprising a pyramidal tip (TR-400-PB, Olympus). During the measurements cells were maintained in growth media. The spring constant of the cantilever was determined using the built in thermal method (24–28 pN/nm). Indentation and retraction speed was kept constant at 5 µm/s, and force load of 200–1000 pN was used to measure the Young’s modulus of the cells. The effective Young’s modulus Eeff was fitted with a modified Hertz model using a self-written IGOR macro (Rehfeldt et al., 2007). Tether forces were determined as the difference of pulling force before and after rupture of a tether from the AFM tip using a semi-automated step finding procedure (Nawaz et al., 2015).
 
-## Bioinformatic identification of PIP2 binding regions in Piezo2
+### Bioinformatic identification of PIP2 binding regions in Piezo2
 
 TRPML1 is known to bind PI(3,5)P2 through a region in its N-terminus (Dong et al., 2010). This region of TRPML1 (NP_444407.1) was compared to mouse Piezo2 (NP_001034574.4) and mouse Piezo1 (NP_001032375.1) using NCBI protein Blast (National Library of Medicine (US), National Center for Biotechnology Information).
 
-## Peptide-lipid binding assay
+### Peptide-lipid binding assay
 
 The protocol was adapted from (Berger et al., 2002) with minor modifications. In brief, PIP strips (Echelon Biosciences, Inc., Salt Lake City, USA) were washed once with PBS-T (1x PBS + 1% Tween) and blocked with 3% fat free BSA (bovine serum albumin; Sigma Aldrich) in 1X PBS for 1 hr at room temperature. The membranes were then incubated with 0.5 µg/mL peptide solution (peptide dissolved in 1% BSA) for 2 hr at room temperature. Experiments and controls were processed in parallel. Membranes were washed with PBS-T three times for 7 min each and then incubated with primary antibody at room temperature for 2 hr. Membranes were then washed with PBS-T and probed with secondary antibodies coupled with Alexa680 for 1 hr at room temperature. Imaging was done on the Odyssey Infrared System (LI-COR, Germany). Only for presentation purposes brightness, gradient levels and contrast of images were adjusted in Adobe Photoshop. In all cases image adjustments were applied equally across the entire image and equally to controls.
 
-## Peptides
+### Peptides
 
 The following peptides were used in this study (all procured from GenScript, New Jersey, USA): Piezo2 (731-746)-FLAG tagged [EWWRKILKYFWMSVVIDYKDDDDKQNN]; Piezo2 3Q mutant (731-746)-FLAG tagged [EWWQQILQYFWMSVVIDYKDDDDKQNN]; Piezo1 (626-639)-FLAG tagged [TLWRKLLRVFWWLVDYKDDDDKqnn].
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used in this study: 1:100 rabbit anti-Mtmr2 (Biotechne, Minneapolis, USA; #NBP1-33724); 1:500 chicken anti-GFP (Thermo Fisher Scientific, #A10262); 1:250 (Immunocytochemistry), 1:500 (PLA) rabbit anti-GST (Santa Cruz, Santa Cruz, USA; #sc-459); 1:100 (immunocytochemistry and immunoblotting), 1:750, 1:500 (PLA in HEK293 cells and DRG neurons respectively) mouse anti-myc (Santa Cruz, #sc-47694); 1:200 Rabbit anti-Piezo2 (Novus Biologicals, Germany; #NBP1-78624); 1:500 mouse anti-FLAG (Sigma Aldrich, #F1804), Secondary antibodies conjugated to Alexa Fluor 488, Alexa Fluor 546, Alexa Fluor 647, Alexa Fluor 680 (Thermo Fisher Scientific), Duolink in situ PLA probes 1:10 anti-rabbit MINUS, 1:10 anti-mouse PLUS.
 
-## Statistics
+### Statistics
 
 Data was analyzed using GraphPad Prism 6.01 (San Diego, USA). All data are represented as mean ± SEM (standard error of mean) unless indicated otherwise. All replicates were biological. All statistical tests are two-sided unless indicated otherwise. In all panels: ns > 0.05; *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001).
 

@@ -8,12 +8,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00rqy9422 Institute for Molecular Bioscience, The University of Queensland Brisbane Australia
-2. https://ror.org/00rqy9422 The University of Queensland Diamantina Institute, The University of Queensland Brisbane Australia
-3. https://ror.org/01xtthb56 Institute for Clinical Medicine, Faculty of Medicine, University of Oslo Oslo Norway
-4. https://ror.org/05xg72x27 K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, Norwegian University of Science and Technology Trondheim Norway
-5. https://ror.org/0524sp257 Population Health Science, Bristol Medical School, University of Bristol Bristol United Kingdom
-6. https://ror.org/0524sp257 MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom
+1. Institute for Molecular Bioscience, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+2. The University of Queensland Diamantina Institute, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+3. Institute for Clinical Medicine, Faculty of Medicine, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+4. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
+5. Population Health Science, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+6. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ In this manuscript, we introduce a new structural equation model (SEM) to estima
 
 ## Materials and methods
 
-## Model description
+### Model description
 
 We consider seven different family structures (Figure 1) which we model using SEM (although we note that the SEM framework is flexible enough to include many other sorts of family structures as well). The different family structures we consider are: Biological parent-offspring trios (G1), biological mother-offspring pairs (G2), biological father-offspring pairs (G3), singleton individuals (who were raised by their biological parents) (G4), adopted singleton individuals (who were raised by their adoptive parents) (G5), adoptive mother-adopted child pairs (G6), and biological mother-adopted child pairs (G7). For each of these different family structures, we model missing parental genotypes (whether biological or adoptive) as latent variables.
 
@@ -47,23 +47,27 @@ We estimate the genotypic variance (Φ) of each individual and assume that it is
 
 We caution that for all the parameters in the model to be identified, different constellations of relatives must be sampled from G1-G7. For example, to partition maternal genetic effects into prenatal and postnatal components, information from adopted individuals must be available. In fact, even adopted ‘singletons’, for whom there is no genotype information from their parents (i.e. biological or adoptive parents), contribute important information for the partitioning of maternal genetic effects, since the covariance between their own genetic score and phenotype is a function of offspring genetic effects and prenatal maternal effects, but not postnatal maternal effects (Figure 1). This contrasts with the situation in non-adopted individuals whose genotype-phenotype covariance is a function of all three sources of variation (plus postnatal paternal genetic effects). Thus, the difference between the genotype-phenotype covariance in adopted and non-adopted individuals provides important information on the size of postnatal maternal genetic effects. Indeed, the inclusion of adopted singleton individuals in our model is sufficient for identification as long as there are at least some (biological) parent-offspring trios (or alternatively both biological mother-child and biological father-child pairs) available. Whilst the presence of adopted individuals’ parents (biological or adoptive) is not a necessary condition for partitioning maternal effects into prenatal and postnatal components, the inclusion of such pairs is advantageous in terms of statistical power as we show below. We include an example R script that fits the sort of SEM described in this article that users can modify to apply to their own data (see Source Code File).
 
-## Asymptotic power calculations
+### Asymptotic power calculations
 
-We used OpenMx (Boker et al., 2011; Neale et al., 2016) to calculate the asymptotic power to partition maternal genetic effects into prenatal and postnatal maternal genetic effects. Asymptotic covariance matrices were generated assuming certain underlying values for the parameters of the model depicted in Figure 1. The full model was then fitted to the covariance matrices to confirm a perfect fit to the data and to check that the parameter values were correctly estimated. Secondly, a reduced model where the parameter(s) of interest was constrained to zero was fitted to the same covariance matrices. We examined the effect of constraining the prenatal maternal genetic effect or postnatal maternal genetic effect to zero. The difference in minus twice the log-likelihood chi-square between the full and reduced models is equal to the non-centrality parameter of the test for association, with the degrees of freedom equal to the difference in the number of free parameters between the models. Power was then calculated as the area under the curve of a non-central chi-square distribution to the right of the significance threshold of interest:Power=∫Xα′2(v,0)∞dX′2(v,ς),
+We used OpenMx (Boker et al., 2011; Neale et al., 2016) to calculate the asymptotic power to partition maternal genetic effects into prenatal and postnatal maternal genetic effects. Asymptotic covariance matrices were generated assuming certain underlying values for the parameters of the model depicted in Figure 1. The full model was then fitted to the covariance matrices to confirm a perfect fit to the data and to check that the parameter values were correctly estimated. Secondly, a reduced model where the parameter(s) of interest was constrained to zero was fitted to the same covariance matrices. We examined the effect of constraining the prenatal maternal genetic effect or postnatal maternal genetic effect to zero. The difference in minus twice the log-likelihood chi-square between the full and reduced models is equal to the non-centrality parameter of the test for association, with the degrees of freedom equal to the difference in the number of free parameters between the models. Power was then calculated as the area under the curve of a non-central chi-square distribution to the right of the significance threshold of interest:
 
-where Xα`2(v,0) is the quantile of the 100 * (1-α) percentage point of the central χ2 distribution with v degrees of freedom, and ς is the non-centrality parameter (Moen et al., 2019).
+$$
+Power=\int_{X_{\alpha}^{′2}(v,0)}^{∞}dX^{′2}(v,ς),
+$$
 
-As we were interested in whether there might be enough adopted individuals in the UK Biobank for the informative partitioning of maternal genetic effects into prenatal and postnatal sources of variation, we first calculated power (α=0.05) using sample sizes roughly similar to the number of European individuals in the resource who reported their educational attainment (i.e. 1000 parent-offspring trios, 4000 mother-offspring pairs, 1800 father-offspring pairs, 300,000 singletons who were raised by their biological parents, 6000 adopted individuals and 50 biological mother-adopted offspring duos- see below). We investigated the effect of different combinations of prenatal maternal genetic effects, postnatal maternal genetic effects, postnatal paternal genetic effects and offspring genetic effects (i.e. γm or ϐm = 0, 0.05, 0.1, 0.3 and 0.5). We also examined the effect of modifying the covariance between parental genotypes (with ρ ranging between 0 and 0.2 times the genotypic variance in the parental generation). Finally, we were curious as to the effect of increasing the number of the different family structures on statistical power, and in particular, on whether including increasing numbers of more attainable/accessible biological relatives (i.e. biological trios, pairs, and singletons [G1 – G4]) could increase power to partition maternal genetic effects for a fixed number of adopted individuals. We also investigated the effect of varying the sample size of adopted individuals (G5), adoptive mother-adopted offspring duos (G6), and biological mother-adopted offspring duos (G7) on power. We used our calculator to determine 80% power (α=0.05).
+where $X_{\alpha}^{`2}(v,0)$ is the quantile of the 100 * (1-α) percentage point of the central χ2 distribution with $v$ degrees of freedom, and $ς$ is the non-centrality parameter (Moen et al., 2019).
 
-## Data simulations
+As we were interested in whether there might be enough adopted individuals in the UK Biobank for the informative partitioning of maternal genetic effects into prenatal and postnatal sources of variation, we first calculated power (α=0.05) using sample sizes roughly similar to the number of European individuals in the resource who reported their educational attainment (i.e. 1000 parent-offspring trios, 4000 mother-offspring pairs, 1800 father-offspring pairs, 300,000 singletons who were raised by their biological parents, 6000 adopted individuals and 50 biological mother-adopted offspring duos- see below). We investigated the effect of different combinations of prenatal maternal genetic effects, postnatal maternal genetic effects, postnatal paternal genetic effects and offspring genetic effects (i.e. $\gamma$m or ϐm = 0, 0.05, 0.1, 0.3 and 0.5). We also examined the effect of modifying the covariance between parental genotypes (with ρ ranging between 0 and 0.2 times the genotypic variance in the parental generation). Finally, we were curious as to the effect of increasing the number of the different family structures on statistical power, and in particular, on whether including increasing numbers of more attainable/accessible biological relatives (i.e. biological trios, pairs, and singletons [G1 – G4]) could increase power to partition maternal genetic effects for a fixed number of adopted individuals. We also investigated the effect of varying the sample size of adopted individuals (G5), adoptive mother-adopted offspring duos (G6), and biological mother-adopted offspring duos (G7) on power. We used our calculator to determine 80% power (α=0.05).
+
+### Data simulations
 
 In order to confirm our asymptotic calculations, we simulated a series of datasets of the same size and with the same underlying parameters as in the asymptotic power calculations. Each condition was simulated 1000 times and power was calculated as the number of simulations in which the effect of interest was detected (p<0.05) divided by 1000.
 
-## Online web utility
+### Online web utility
 
 We developed a freely available, online power calculator that allows investigators to explore the power to detect prenatal and postnatal maternal genetic effects using our SEM in their own studies (https://evansgroup.di.uq.edu.au/ADOPTED). Our power calculator is built using the R shiny app (https://shiny.rstudio.com/) running the R studio software (RStudioTeam, 2015) and the OpenMx package (Boker et al., 2011; Neale et al., 2016) in the background.
 
-## Application to UK biobank data
+### Application to UK biobank data
 
 We applied our model to self-reported birth weight and educational attainment data from the UK Biobank resource. The UK Biobank study was approved by the UK National Health Service National Research Ethics Service. Written consent was obtained from both the participants and their parents (for subjects younger than 18 years old). This study was approved by the Human Research Ethics Committee at the University of Queensland (approval number: 2019002705). We only included individuals of European ancestry, determined by: (i) projecting their genetic principal components onto the 1,000 Genome sample and then K-means clustering or (ii) those who self-reported ethnic background of either ‘British’, ‘Irish’, ‘Irish’, ‘White’, or ‘Any other white background’. Family relationships were determined by the pairwise kinship estimated across the whole UK Biobank sample using the software KING (Manichaikul et al., 2010). Adoption status was determined based on response to the question “Were you adopted as a child?”. One from each pair of Individuals showing genome-wide genetic similarity greater than third degree relatives was removed from the dataset. We chose exclusions so as to maximize the number of families from adopted singletons (G5), followed by trios (G1), mother-offspring duos (G2), and then father-offspring duos (G3).
 
@@ -73,7 +77,7 @@ We then applied our model to educational attainment in UK Biobank participants o
 
 The UK Biobank contains only very limited information regarding the adoption status of individuals (i.e. only whether they report being adopted or not). We were concerned about the possibility that some individuals in UK Biobank might have been adopted by their biological relatives in which case our model in Figure 1 would be misspecified. We therefore also conducted a sensitivity analysis by excluding adopted individuals with known breastfeeding information (on the reasoning that these individuals might be more likely to be fostered by a biologically related individual) and repeating the educational attainment analyses. This reduced the number of adopted ‘singleton’ individuals in the analysis to 2,867.
 
-## Investigating the effect of model misspecification
+### Investigating the effect of model misspecification
 
 We were concerned about the effect that misclassifying adopted “singleton” individuals as unrelated to their adoptive parents (i.e. when in reality they were raised by their biological relatives) might have on type I error rates and estimates of prenatal and postnatal maternal genetic effects generated by our model. We therefore simulated data under four scenarios: (i) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive mothers who were siblings or cousins of their biological mothers, (ii) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive mother who were siblings or cousins of biological fathers, (iii) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive fathers who were siblings or cousins of biological fathers, and (vi) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive fathers who were siblings or cousins of biological mothers. We assumed that sample sizes and the number of individuals in the other groups were the same as in our asymptotic power calculations.
 
@@ -81,43 +85,222 @@ We further investigated type 1 error rates and estimates of prenatal and postnat
 
 ## Results
 
-## Power calculations
+### Power calculations
 
-The power to detect prenatal maternal genetic effects increased with increasing size of postnatal maternal genetic effects, paternal genetic effects, and offspring genetic effects (Figure 2). A similar pattern was observed when we quantified the power to detect postnatal maternal genetic effects. Our calculations indicate that a study with a sample size and structure similar to the UK Biobank would have ~80% power (α=0.05) to detect prenatal maternal and postnatal maternal genetic effects that account for 1.5% and 0.9% of the variance in the offspring phenotype, respectively (calculated as γm2 and ϐm2 assuming all the other genetic effects are null and zero correlation between parental genotypes). The power to detect prenatal and postnatal maternal genetic effects also increased slightly with increasing covariance between maternal and paternal genotypes (Appendix 1—figure 2).
+The power to detect prenatal maternal genetic effects increased with increasing size of postnatal maternal genetic effects, paternal genetic effects, and offspring genetic effects (Figure 2). A similar pattern was observed when we quantified the power to detect postnatal maternal genetic effects. Our calculations indicate that a study with a sample size and structure similar to the UK Biobank would have ~80% power (α=0.05) to detect prenatal maternal and postnatal maternal genetic effects that account for 1.5% and 0.9% of the variance in the offspring phenotype, respectively (calculated as $\gamma$m2 and ϐm2 assuming all the other genetic effects are null and zero correlation between parental genotypes). The power to detect prenatal and postnatal maternal genetic effects also increased slightly with increasing covariance between maternal and paternal genotypes (Appendix 1—figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig2-v2.jpg)
 
-**Figure 2.:** m) (top) or postnatal maternal genetic effects (βm) (bottom) whilst also varying the size of prenatal and postnatal maternal genetic effects, paternal genetic effects (βp) or offspring genetic effects (βo).Effect sizes are parameterized using the path coefficients β and γ. Power was calculated assuming sample sizes approximating the number of white European individuals in the UK Biobank with educational attainment data (i.e. 1000 biological trios, 4000 biological mother-offspring pairs, 1800 biological father-offspring pairs, 300,000 singletons, 6000 adopted individuals, and 50 biological mother-adopted offspring pairs and a covariance of 0 (ρ) between maternal and paternal genotypes).
+**Figure 2.:** Effect sizes are parameterized using the path coefficients β and γ. Power was calculated assuming sample sizes approximating the number of white European individuals in the UK Biobank with educational attainment data (i.e. 1000 biological trios, 4000 biological mother-offspring pairs, 1800 biological father-offspring pairs, 300,000 singletons, 6000 adopted individuals, and 50 biological mother-adopted offspring pairs and a covariance of 0 (ρ) between maternal and paternal genotypes).
 
-The power to detect prenatal and postnatal maternal genetic effects increased with the number of adopted singleton individuals, and more dramatically when the number of adoptive mother-adopted offspring pairs and/or biological mother-adopted offspring pairs increased (Figure 3). Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs (G7), whereas the power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of was provided by adoptive mother-adopted child pairs (G6). This makes sense intuitively, since adoptive mother-adopted child pairs (G6) provide a direct estimate of the postnatal maternal genetic effect (ϐm), whereas biological mother-adopted child pairs provide a direct estimate of the prenatal maternal genetic effect (γm). Likewise, adopted singleton individuals do not provide direct estimates of either prenatal or postnatal maternal genetic effects, and therefore contribute proportionally less in terms of statistical power than adoptive mother-adopted child or biological mother-adopted child pairs.
+The power to detect prenatal and postnatal maternal genetic effects increased with the number of adopted singleton individuals, and more dramatically when the number of adoptive mother-adopted offspring pairs and/or biological mother-adopted offspring pairs increased (Figure 3). Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs (G7), whereas the power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of was provided by adoptive mother-adopted child pairs (G6). This makes sense intuitively, since adoptive mother-adopted child pairs (G6) provide a direct estimate of the postnatal maternal genetic effect (ϐm), whereas biological mother-adopted child pairs provide a direct estimate of the prenatal maternal genetic effect ($\gamma$m). Likewise, adopted singleton individuals do not provide direct estimates of either prenatal or postnatal maternal genetic effects, and therefore contribute proportionally less in terms of statistical power than adoptive mother-adopted child or biological mother-adopted child pairs.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig3-v2.jpg)
 
-**Figure 3.:** m) or postnatal maternal genetic (βm) effects whilst varying the numbers of each family structure, with the sample sizes of other family structures approximating numbers of white European individuals in the UK Biobank reporting educational attainment (1000 biological trios, 4000 biological mother-offspring pairs, 1800 biological father-offspring pairs, 300,000 singletons, 6000 singletons, and 50 biological mother-adopted offspring pairs).Path coefficients representing postnatal or prenatal maternal genetic effects, paternal genetic effects (βp) and offspring genetic effects (βo) were fixed to 0.1. The covariance between maternal and paternal genotypes was fixed to 0.
+**Figure 3.:** Path coefficients representing postnatal or prenatal maternal genetic effects, paternal genetic effects (βp) and offspring genetic effects (βo) were fixed to 0.1. The covariance between maternal and paternal genotypes was fixed to 0.
 
 Interestingly, the power to detect prenatal and postnatal maternal genetic effects also increased with the number of biological families in the analysis (G1 to G4) (Figure 3); however, this increase asymptoted with maximal possible power depending primarily on the number of adopted individuals in the analysis. This result suggests that power to partition maternal genetic effects can be optimized through having large numbers of biological relatives in the analysis, but cannot be increased beyond a level that depends on the number of adopted individuals in the analysis (G5 to G7) and may be less than 100%. Results from simulations showed good concordance with asymptotic power calculations and appropriate type I error rates (Supplementary file 3, Supplementary file 4).
 
-## Analyses in the UK Biobank
+### Analyses in the UK Biobank
 
 PRS for birth weight exhibited significant evidence of prenatal maternal genetic effects, offspring genetic effects (in the opposite direction), and no significant evidence for postnatal maternal or paternal genetic effects (Table 1). This pattern of results is expected since (a) birth weight is known to be affected by both maternal and fetal genetic effects, (b) maternal and offspring genetic effects on birth weight for many of the SNPs were in opposite directions, (c) conditional estimates of maternal and offspring genetic effects are negatively correlated, (d) in the present study SNPs comprising the PRS were selected for their strong maternal effects on offspring birth weight, and (e) birth weight is a perinatal phenotype and so by definition cannot be influenced by postnatal maternal (or paternal) genetic effects (Warrington et al., 2019; Beaumont et al., 2018; Warrington et al., 2018).
 
+**Table 1.**
+ Modelling results of birth weight in the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Unweighed PRS</th>
+      <th colspan="3">Weighted PRS</th>
+    </tr>
+    <tr>
+      <th>Estimate</th>
+      <th>Std Error</th>
+      <th>P-value</th>
+      <th>Estimate</th>
+      <th>Std Error</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Offspring effect</td>
+      <td>–0.008</td>
+      <td>0.004</td>
+      <td>0.058</td>
+      <td>–0.173</td>
+      <td>0.115</td>
+      <td>0.132</td>
+    </tr>
+    <tr>
+      <td>Prenatal maternal effect</td>
+      <td>0.035</td>
+      <td>0.013</td>
+      <td>0.006</td>
+      <td>0.893</td>
+      <td>0.383</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Postnatal maternal effect</td>
+      <td>–0.017</td>
+      <td>0.011</td>
+      <td>0.130</td>
+      <td>–0.419</td>
+      <td>0.335</td>
+      <td>0.211</td>
+    </tr>
+    <tr>
+      <td>Postnatal paternal effect</td>
+      <td>0.003</td>
+      <td>0.005</td>
+      <td>0.588</td>
+      <td>0.048</td>
+      <td>0.151</td>
+      <td>0.751</td>
+    </tr>
+  </tbody>
+</table>
+
+_PRS: polygenic risk score constructed using 20 SNPs showing maternal effects on birth weight from Warrington et al., 2019; Std Error: standard error._
+
 In the case of offspring educational attainment, our analyses showed evidence for a prenatal maternal genetic effect, a paternal genetic effect, and an offspring genetic effect (Table 2, Supplementary file 5). The absence of a significant positive postnatal maternal genetic effect on offspring educational attainment was surprising given that maternal genetic effects should be mediated through maternal educational attainment, and therefore should mostly involve postnatal pathways (although it is possible that some of the relationship between maternal genotype and offspring educational attainment could be mediated through prenatal effects- e.g. less educated mothers consuming more alcohol during pregnancy which then has adverse effects on offspring cognitive development and educational attainment etc), and previous studies have shown that the effect of paternal and maternal PRS on educational attainment are roughly similar (Wang et al., 2021) that is suggesting the absence of prenatal maternal genetic effects. We were concerned that the cause of this surprising result might be because of model misspecification- specifically, adopted children being raised by adoptive parents who are biologically related to them.
+
+**Table 2.**
+ Modelling results of educational attainment in the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="6">Full sample</th>
+    </tr>
+    <tr>
+      <th colspan="3">Unweighted PRS</th>
+      <th colspan="3">Weighted PRS</th>
+    </tr>
+    <tr>
+      <th>Estimate</th>
+      <th>Std Error</th>
+      <th>p-value</th>
+      <th>Estimate</th>
+      <th>Std Error</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Offspring effect</td>
+      <td>0.026</td>
+      <td>0.005</td>
+      <td>3.18 × 10 -7</td>
+      <td>2.474</td>
+      <td>0.485</td>
+      <td>3.40 × 10 -7</td>
+    </tr>
+    <tr>
+      <td>Prenatal maternal effect</td>
+      <td>0.027</td>
+      <td>0.011</td>
+      <td>0.013</td>
+      <td>1.722</td>
+      <td>0.703</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Postnatal maternal effect</td>
+      <td>–0.006</td>
+      <td>0.008</td>
+      <td>0.484</td>
+      <td>–0.288</td>
+      <td>0.514</td>
+      <td>0.575</td>
+    </tr>
+    <tr>
+      <td>Postnatal paternal effect</td>
+      <td>0.018</td>
+      <td>0.007</td>
+      <td>0.006</td>
+      <td>1.233</td>
+      <td>0.678</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td colspan="6">Excluding adopted individuals with breastfeeding information</td>
+    </tr>
+    <tr>
+      <td colspan="3">Unweighted PRS</td>
+      <td colspan="3">Weighted PRS</td>
+    </tr>
+    <tr>
+      <td>Estimate</td>
+      <td>Std Error</td>
+      <td>p-value</td>
+      <td>Estimate</td>
+      <td>Std Error</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Offspring effect</td>
+      <td>0.025</td>
+      <td>0.005</td>
+      <td>5.52 × 10–7</td>
+      <td>2.441</td>
+      <td>0.372</td>
+      <td>5.15 × 10–11</td>
+    </tr>
+    <tr>
+      <td>Prenatal maternal effect</td>
+      <td>0.017</td>
+      <td>0.012</td>
+      <td>0.140</td>
+      <td>0.909</td>
+      <td>0.705</td>
+      <td>0.197</td>
+    </tr>
+    <tr>
+      <td>Postnatal maternal effect</td>
+      <td>0.004</td>
+      <td>0.009</td>
+      <td>0.682</td>
+      <td>0.549</td>
+      <td>0.595</td>
+      <td>0.357</td>
+    </tr>
+    <tr>
+      <td>Postnatal paternal effect</td>
+      <td>0.019</td>
+      <td>0.007</td>
+      <td>0.005</td>
+      <td>1.273</td>
+      <td>0.552</td>
+      <td>0.021</td>
+    </tr>
+  </tbody>
+</table>
+
+_PRS: polygenic risk score constructed using 1,267 SNPs from Lee et al., 2018; Std Error: standard error._
 
 We therefore performed sensitivity analyses where we excluded adopted individuals who reported breastfeeding information (i.e. on the hypothesis that knowing if they were breast fed or not is information that an adopted individual could only know if they were adopted by a relative). The results of these analyses showed that estimates of the prenatal maternal genetic effect reduced in size and became non-significant. Whilst the postnatal maternal effect remained non-significant, the direction of effect changed from negative to positive. Sensitivity analyses using PRS constructed using the 72 genome-wide significant SNPs from the Okbay et al., 2016 GWAS were underpowered but showed similar directions of effect Okbay et al., 2016.
 
-## Simulations where adoptive parents are related to biological parents
+### Simulations where adoptive parents are related to biological parents
 
 Our simulations showed that the presence of adoptive parents who were genetically related to their adopted offspring could in some cases increase the type 1 error rate to detect prenatal maternal genetic effects and bias estimates of prenatal and postnatal maternal genetic effects when these relationships were not accurately modelled in the SEM (Appendix 1—figure 3, Appendix 1—figure 4, Appendix 1—figure 5, Appendix 1—figure 6). In general, the effect of including unmodelled related adoptive and biological parents in the SEM depended on whether the adoptive mother or adoptive father was related to the biological parents (i.e. it did not matter whether the adoptive parents were related to the biological mother or father) and the degree of relatedness (i.e. closer relationships had the potential to produce greater bias and type I error rates).
 
-In the case of adoptive mothers being genetically related to biological parents (Appendix 1—figure 3, Appendix 1—figure 4), the presence of postnatal genetic effects (i.e. βm not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect (γm) and increase type I error rates. In general, when βm was not equal to zero, then estimates of γm were biased towards the true total maternal genetic effect (i.e. γm+βm), and estimates of βm were biased towards zero. The reason for this can be seen intuitively by examining the path models for the G8 and G9 family structures in Appendix 1—figure 1 where the presence of biologically related adoptive mothers leads to an unmodelled covariance path between offspring genotype and phenotype (i.e. 12r×βm). Note that the expected covariance implied by this path is the same in the case of adoptive mothers who are related to their adopted offsprings’ biological mothers (G8 in Appendix 1—figure 1), and adoptive mothers who are related to their adopted offsprings’ biological fathers (G9 in Appendix 1—figure 1)- implying that failure to model relatedness in both groups should produce the same consequences in terms of bias and type I error. When βm is not zero, this unmodelled path alters the expected covariance between offspring genotype and phenotype in adopted singleton individuals. In this situation, the model will incorrectly attribute the altered covariance to prenatal maternal genetic effects (i.e. since the 12r×βm path is not explicitly modelled), and since estimates of the total maternal genetic effect remain unbiased (data not shown), will bias estimates of the postnatal maternal genetic effect towards zero. It follows that results will not be biased when  βm = 0 and the magnitude of any bias will decrease as r approaches zero (i.e. with decreasing genetic relationship between adoptive mothers and the biological parents).
+In the case of adoptive mothers being genetically related to biological parents (Appendix 1—figure 3, Appendix 1—figure 4), the presence of postnatal genetic effects (i.e. $\beta_{m}$ not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect ($\gamma_{m}$) and increase type I error rates. In general, when $\beta_{m}$ was not equal to zero, then estimates of $\gamma_{m}$ were biased towards the true total maternal genetic effect (i.e. $\gamma_{m}+\beta_{m}$), and estimates of $\beta_{m}$ were biased towards zero. The reason for this can be seen intuitively by examining the path models for the G8 and G9 family structures in Appendix 1—figure 1 where the presence of biologically related adoptive mothers leads to an unmodelled covariance path between offspring genotype and phenotype (i.e. $\frac{1}{2}r\times\beta_{m}$). Note that the expected covariance implied by this path is the same in the case of adoptive mothers who are related to their adopted offsprings’ biological mothers (G8 in Appendix 1—figure 1), and adoptive mothers who are related to their adopted offsprings’ biological fathers (G9 in Appendix 1—figure 1)- implying that failure to model relatedness in both groups should produce the same consequences in terms of bias and type I error. When $\beta_{m}$ is not zero, this unmodelled path alters the expected covariance between offspring genotype and phenotype in adopted singleton individuals. In this situation, the model will incorrectly attribute the altered covariance to prenatal maternal genetic effects (i.e. since the $\frac{1}{2}r\times\beta_{m}$ path is not explicitly modelled), and since estimates of the total maternal genetic effect remain unbiased (data not shown), will bias estimates of the postnatal maternal genetic effect towards zero. It follows that results will not be biased when  $\beta_{m}$ = 0 and the magnitude of any bias will decrease as r approaches zero (i.e. with decreasing genetic relationship between adoptive mothers and the biological parents).
 
-Likewise, our simulations showed that the presence of paternal genetic effects (i.e. βp not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect (γm) and increase type I error rates when unmodelled adoptive fathers who were genetically related to adopted children’s biological parents were included in the analysis (Appendix 1—figure 5, Appendix 1—figure 6). Inspection of the G10 and G11 family structures in Appendix 1—figure 1 shows that biologically related adoptive fathers leads to an extra unmodelled covariance path between offspring genotype and phenotype (i.e. 12r×βp), and that this path is the same for both adoptive fathers related to biological fathers (G10 in Appendix 1—figure 1) and adoptive fathers related to biological mothers (G11 in Appendix 1—figure 1) (again implying that failure to model relatedness in both groups should have the same consequences). It also shows that there should be no bias/inflation of type I error rates in the absence of paternal genetic effects, which is consistent with the results from our simulations. However, if βp is not zero, then this will affect the covariance between (adopted) offspring genotype and phenotype, and changes may be falsely ascribed to prenatal maternal genetic effects. In this situation, estimates of the prenatal maternal genetic effect (γ^m) will be biased towards the sum of the true prenatal maternal genetic effect plus the true paternal genetic effect (γm+βp), and estimates of the postnatal maternal genetic effect (β^m) will be biased towards the difference between the true total maternal genetic effect (γm+βm) minus the estimated prenatal maternal genetic effect (γ^m).
+Likewise, our simulations showed that the presence of paternal genetic effects (i.e. $\beta_{p}$ not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect ($\gamma_{m}$) and increase type I error rates when unmodelled adoptive fathers who were genetically related to adopted children’s biological parents were included in the analysis (Appendix 1—figure 5, Appendix 1—figure 6). Inspection of the G10 and G11 family structures in Appendix 1—figure 1 shows that biologically related adoptive fathers leads to an extra unmodelled covariance path between offspring genotype and phenotype (i.e. $\frac{1}{2}r\times\beta_{p}$), and that this path is the same for both adoptive fathers related to biological fathers (G10 in Appendix 1—figure 1) and adoptive fathers related to biological mothers (G11 in Appendix 1—figure 1) (again implying that failure to model relatedness in both groups should have the same consequences). It also shows that there should be no bias/inflation of type I error rates in the absence of paternal genetic effects, which is consistent with the results from our simulations. However, if $\beta_{p}$ is not zero, then this will affect the covariance between (adopted) offspring genotype and phenotype, and changes may be falsely ascribed to prenatal maternal genetic effects. In this situation, estimates of the prenatal maternal genetic effect ($\gamma^_{m}$) will be biased towards the sum of the true prenatal maternal genetic effect plus the true paternal genetic effect ($\gamma_{m}+\beta_{p}$), and estimates of the postnatal maternal genetic effect ($\beta^_{m}$) will be biased towards the difference between the true total maternal genetic effect ($\gamma_{m}+\beta_{m}$) minus the estimated prenatal maternal genetic effect ($\gamma^_{m}$).
 
 In general, the presence of unmodelled relationships between biological and adoptive parents did not bias estimates of offspring genetic or paternal genetic effects (results not shown). This makes sense since offspring and paternal genetic effects are estimated directly from the covariance between observed genotypes and phenotypes (i.e. the covariance between observed offspring genotype and offspring phenotype, and the covariance between observed paternal genotype and offspring phenotype, respectively), whereas the estimation of prenatal and postnatal maternal genetic effects have to be inferred indirectly using latent (not directly observed) genotypes and the difference in the covariance between offspring genotype and phenotype in biological and adoptive families.
 
 When we correctly modelled the relationship between biological and adoptive parents’ genotypes, there was no inflation in type 1 error rates and effect estimates were unbiased (Appendix 1—figure 7, Appendix 1—figure 8, Appendix 1—figure 9, Appendix 1—figure 10). However, correct modelling and inclusion of these individuals in the SEM produced complicated effects on the power to detect true effects relative to if the same number of adopted individuals with biologically unrelated adoptive parents had been included in the model (see Appendix 1—figure 11 where 0% on the x-axis corresponds to this situation). For the simulations we examined, power to detect prenatal and postnatal maternal genetic effects decreased when adopted singletons whose adoptive mothers were related to their biological parents were included (and modelled correctly) in the analysis. This makes sense intuitively in that correct modelling of these mothers requires a covariance path between adoptive mother’s genotype and the relevant biological parent’s genotype (G8, G9). The presence of this path decreases the difference between the expected covariance between an adopted offspring’s genotype and phenotype (G8, G9), and the expected covariance between offspring genotype and phenotype from a non-adoptive family (G4)- hence lowering the power of the model to discriminate between maternal prenatal and postnatal genetic effects.
 
-In contrast, power to detect prenatal and postnatal maternal genetic effects increased when adopted singletons whose adoptive fathers were related to their biological parents were included (and modelled correctly) in the analysis. In order to understand this result intuitively, it is useful to consider the case where the offspring trait is affected by concordant prenatal and postnatal maternal genetic effects (i.e. γm > 0 and βm > 0), but not by paternal (βp = 0) or offspring genetic effects (βo = 0). Under the full model, adopted singletons (G5) and adopted singletons whose adoptive father is a genetic relative (G10, G11) produce identical expected covariance matrices and so lead to identical model fits and parameter estimates. However, under the reduced model where γm is fixed to zero, the only path that accounts for the covariance between offspring genotype and phenotype is the offspring genetic effect (βo). Thus in order for this covariance to be modelled accurately, the reduced model will produce positive estimates for the offspring genetic effect (βo). Simultaneously, to ensure that the covariance between the observed paternal genotype and offspring phenotype remains close to zero in parent-offspring trios and father-offspring pairs (i.e. G1 and G3), the model will produce negative estimates of the paternal genetic effect (βp). This process presents more of a challenge when modelling adopted singleton individuals whose adoptive fathers are related to their biological parents (i.e. G10, G11) where the paternal genetic effect impacts both the expected covariance between parental genotype and offspring phenotype, and the expected covariance between offspring genotype and phenotype (i.e. because of the presence of the fixed covariance path r). The consequence is that the reduced model doesn’t fit the data as well and increased power to detect association. Similar thought experiments can be used to provide intuition for the other results in Appendix 1—figure 11.
+In contrast, power to detect prenatal and postnatal maternal genetic effects increased when adopted singletons whose adoptive fathers were related to their biological parents were included (and modelled correctly) in the analysis. In order to understand this result intuitively, it is useful to consider the case where the offspring trait is affected by concordant prenatal and postnatal maternal genetic effects (i.e. $\gamma_{m}$ > 0 and $\beta_{m}$ > 0), but not by paternal ($\beta_{p}$ = 0) or offspring genetic effects ($\beta_{o}$ = 0). Under the full model, adopted singletons (G5) and adopted singletons whose adoptive father is a genetic relative (G10, G11) produce identical expected covariance matrices and so lead to identical model fits and parameter estimates. However, under the reduced model where $\gamma_{m}$ is fixed to zero, the only path that accounts for the covariance between offspring genotype and phenotype is the offspring genetic effect ($\beta_{o}$). Thus in order for this covariance to be modelled accurately, the reduced model will produce positive estimates for the offspring genetic effect ($\beta_{o}$). Simultaneously, to ensure that the covariance between the observed paternal genotype and offspring phenotype remains close to zero in parent-offspring trios and father-offspring pairs (i.e. G1 and G3), the model will produce negative estimates of the paternal genetic effect ($\beta_{p}$). This process presents more of a challenge when modelling adopted singleton individuals whose adoptive fathers are related to their biological parents (i.e. G10, G11) where the paternal genetic effect impacts both the expected covariance between parental genotype and offspring phenotype, and the expected covariance between offspring genotype and phenotype (i.e. because of the presence of the fixed covariance path r). The consequence is that the reduced model doesn’t fit the data as well and increased power to detect association. Similar thought experiments can be used to provide intuition for the other results in Appendix 1—figure 11.
 
 ## Discussion
 
@@ -155,6 +338,6 @@ Finally, it has not been lost on us, that our framework may provide a basis for 
 
 In conclusion, we present a simple extension to the basic adoption design that includes measured genotypes and enables partitioning of maternal genetic effects into prenatal and postnatal sources of variation. We show in principle that adopted singleton individuals in the UK Biobank combined with biologically related parent-offspring trios and pairs is sufficient to partition maternal genetic effects into prenatal and postnatal sources of variation. However, power calculations suggest that such a partitioning would currently only be realistic for PRS explaining substantial proportions of the variance in offspring phenotype, and that much larger numbers of individuals would be required to achieve such a partitioning at individual loci. In addition, failure to correctly model cryptic relationships between adoptive and biological parents may produce biased estimates of maternal genetic effects and increased type I error rates. Accurate modelling of cryptic relationships is sufficient to bring type I error rate under control and produce unbiased effect estimates. We suggest that there is a possibility that many individuals in the UK Biobank who report being adopted could have been raised by their biological relatives. We conclude that there would be considerable value in following up adopted individuals in the UK Biobank to determine whether they were raised by biological relatives, and if so, to precisely ascertain the nature of the relationship. These adopted individuals could then be used in informative statistical genetics models like the one described in the present manuscript to further elucidate the genetic architecture of complex traits and diseases.
 
-## Code availability
+### Code availability
 
 R code for performing the analyses described in this manuscript is available in the Source Code File.

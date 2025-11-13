@@ -42,47 +42,712 @@ In this meta-analysis study, we aimed to explore how structural and functional i
 
 ## Results
 
-## Description of the included studies
+### Description of the included studies
 
 For the functional studies, a total of 2728 participants (controls:1370, DD:1358) were included, and the mean age was 16.56 years for controls and 16.26 years for participants with DD. Specifically, there were 79 functional experiments in alphabetic languages, including 31 experiments on adults (N = 434, mean age = 26.12 for controls, N = 411, mean age = for 25.86 for DD), 36 experiments on children (N = 553, mean age = 10.59 for controls, N = 586, mean age = for 10.54 for DD), 7 experiments on adolescents (N = 131, mean age = 14.44 for controls, N = 108, mean age = for 14.30 for DD), and 5 studies of mixed ages. There were 12 functional experiments in morpho-syllabic languages (N = 164, mean age = 11.48 for controls, N = 162, mean age = for 11.45 for DD), including 11 experiments on children and 1 experiment on adolescents.
 
 For the structural studies, there were 21 experiments in alphabetic languages, including 10 experiments on adults (N = 209, mean age = 26.68 for controls, N = 193, mean age = for 27.15 for DD), 8 experiments on children (N = 245, mean age = 10.17 for controls, N = 266, mean age = for 10.28 for DD), 1 experiment on adolescents and 2 studies of mixed ages. There were six structural experiments on children in morpho-syllabic languages (N = 89, mean age = 11.82 for controls, N = 94, mean age = for 11.74 for DD).
 
-## Meta-analysis results
+### Meta-analysis results
 
-## Functional deficits in alphabetic languages and morpho-syllabic languages
+#### Functional deficits in alphabetic languages and morpho-syllabic languages
 
 In the meta-analysis of functional studies in alphabetic languages, hypoactivation in DD was found in a large cluster peaked at the left supramarginal gyrus which extended to the inferior frontal cortex, occipitotemporal cortex and cerebellum, a cluster peaked at the right MOG and a cluster peaked at right STG (Table 1 and Figure 1A). Hyperactivation in DD was found in the right cerebellum and bilateral caudate nucleus.
+
+**Table 1.**
+ Functional deficits in individuals with DD in alphabetic languages (JK represents the results of jack-knife sensitivity analysis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>p</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+      <th>JK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Hypoactivation in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left supramarginal gyrus</td>
+      <td>−56,–46,30</td>
+      <td>4.919</td>
+      <td>0.0000</td>
+      <td>10,742</td>
+      <td>Left IPL, BA 40 (986)Left MTG, BA 21 (719)Left MTG, BA 37 (634)Left ITG, BA 37 (601)Left fusiform gyrus, BA 37 (479)Left ITG, BA 20 (414)Left STG, BA 48 (377)Left supramarginal gyrus, BA 48 (329)Left angular gyrus, BA 39 (307)Left MTG, BA 22 (300)Left cerebellum, lobule VI, BA 37 (285)Left STG, BA 42 (281)Left rolandic operculum, BA 48 (261)Left arcuate network (255)Left cerebellum, crus I, BA 37 (210)Left STG, BA 22 (201)Left supramarginal gyrus, BA 40 (198)Left superior longitudinal fasciculus III (182)Left IPL, BA 2 (167)Left inferior occipital gyrus, BA 19 (156)</td>
+      <td>79/79</td>
+    </tr>
+    <tr>
+      <td>Right MOG</td>
+      <td>42,–86,6</td>
+      <td>2.244</td>
+      <td>0.0002</td>
+      <td>361</td>
+      <td>Right MOG, BA19 (208)</td>
+      <td>76/79</td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>60,–16,4</td>
+      <td>1.936</td>
+      <td>0.0011</td>
+      <td>358</td>
+      <td></td>
+      <td>73/79</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hyperactivation in DD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right cerebellum</td>
+      <td>26,–60,–28</td>
+      <td>–1.526</td>
+      <td>0.0000</td>
+      <td>1,559</td>
+      <td>Right cerebellum, lobule VI, BA 37 (352)Right cerebellum, lobule VI, BA 19 (233)Middle cerebellar peduncles (212)</td>
+      <td>79/79</td>
+    </tr>
+    <tr>
+      <td>Left caudate nucleus</td>
+      <td>–16,12,6</td>
+      <td>–1.459</td>
+      <td>0.0000</td>
+      <td>611</td>
+      <td>Left anterior thalamic projections (364)</td>
+      <td>79/79</td>
+    </tr>
+    <tr>
+      <td>Right caudate nucleus</td>
+      <td>10,2,14</td>
+      <td>–1.317</td>
+      <td>0.0001</td>
+      <td>520</td>
+      <td>Right anterior thalamic projections (185)Right caudate nucleus (184)</td>
+      <td>79/79</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig1-v2.jpg)
 
 In the meta-analysis of functional studies in morpho-syllabic languages, hypoactivation in DD was found in left IFG opercular part, left supramarginal gyrus and left ITG. Hyperactivation in DD was found in right precentral gyrus and right middle temporal gyrus (MTG) (Table 2, Table 3 and Figure 1C). The jack-knife sensitivity analysis showed that all results reported above were replicable (Table 1; Table 3).
 
-## Structural deficits in alphabetic languages and morpho-syllabic languages
+**Table 2.**
+ Structural deficits in individuals with DD in alphabetic languages (JK represents the results of jack-knife sensitivity analysis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>p</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+      <th>JK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Decreased GMV in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left IFG orbital part</td>
+      <td>−38,42,–16</td>
+      <td>2.306</td>
+      <td>0.0001</td>
+      <td>611</td>
+      <td>Left IFG orbital part, BA 47 (217)</td>
+      <td>20/21</td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>56,–44,18</td>
+      <td>2.024</td>
+      <td>0.0003</td>
+      <td>560</td>
+      <td>Right STG, BA 42 (156)</td>
+      <td>20/21</td>
+    </tr>
+    <tr>
+      <td>Right caudate</td>
+      <td>6,14,2</td>
+      <td>1.695</td>
+      <td>0.0022</td>
+      <td>166</td>
+      <td></td>
+      <td>21/21</td>
+    </tr>
+    <tr>
+      <td colspan="5">Increased GMV in DD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left IPL</td>
+      <td>−42,–36,36</td>
+      <td>–1.976</td>
+      <td>0.0000</td>
+      <td>237</td>
+      <td>Left IPL, BA 40 (237)</td>
+      <td>20/21</td>
+    </tr>
+    <tr>
+      <td>Right MTG</td>
+      <td>50,–12,–14</td>
+      <td>–1.040</td>
+      <td>0.0014</td>
+      <td>174</td>
+      <td></td>
+      <td>21/21</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Functional deficits in individuals with DD in morpho-syllabic languages (JK represents the results of jack-knife sensitivity analysis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>p</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+      <th>JK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Hypoactivation in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left IFG opercular part</td>
+      <td>–48,10,28</td>
+      <td>4.071</td>
+      <td>0.0000</td>
+      <td>2527</td>
+      <td>Left precentral gyrus, BA 6 (623)Left IFG opercular part, BA 44 (278)Left precentral gyrus, BA 44 (195)Corpus callosum (178)Left MFG, BA 44 (162)</td>
+      <td>12/12</td>
+    </tr>
+    <tr>
+      <td>Left supramarginal gyrus</td>
+      <td>−58,–42,26</td>
+      <td>2.149</td>
+      <td>0.0001</td>
+      <td>1001</td>
+      <td>Left IPL, BA 40 (271)Left STG, BA 42 (153)Left supramarginal gyrus, BA 48 (144)</td>
+      <td>11/12</td>
+    </tr>
+    <tr>
+      <td>Left ITG</td>
+      <td>−48,–56,–18</td>
+      <td>1.761</td>
+      <td>0.0008</td>
+      <td>326</td>
+      <td>Left ITG, BA37 (166)</td>
+      <td>9/12</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hyperactivation in DD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right precentral gyrus</td>
+      <td>52,–16,44</td>
+      <td>–2.035</td>
+      <td>0.0000</td>
+      <td>2201</td>
+      <td>Right precentral gyrus, BA 6 (640)Right postcentral gyrus, BA 3 (447)Right precentral gyrus, BA 4 (350)Right postcentral gyrus, BA 4 (215)</td>
+      <td>12/12</td>
+    </tr>
+    <tr>
+      <td>Right MTG</td>
+      <td>56,–10,–18</td>
+      <td>–1.453</td>
+      <td>0.0013</td>
+      <td>298</td>
+      <td></td>
+      <td>10/12</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Structural deficits in alphabetic languages and morpho-syllabic languages
 
 In the meta-analysis of structural studies in alphabetic languages, readers with DD showed a decrease in GMV in the left IFG orbital part, right STG and right caudate nucleus (Table 2 and Figure 1B). In contrast, readers with DD showed an increase in GMV in the left IPL and right MTG. In the meta-analysis of structural studies in morpho-syllabic languages, readers with DD showed a decrease in GMV in the left temporoparietal cortex, left calcarine cortex and left MFG. Readers with DD showed an increase in GMV in the right STG (Table 4 and Figure 1D). The jack-knife sensitivity analysis showed that all results reported were replicable (Table 2; Table 4).
 
+**Table 4.**
+ Structural deficits in individuals with DD in morpho-syllabic languages (JK represents the results of jack-knife sensitivity analysis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>p</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+      <th>JK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Decreased GMV in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left STG</td>
+      <td>−50,4,–4</td>
+      <td>2.466</td>
+      <td>0.0000</td>
+      <td>2,948</td>
+      <td>Left insula, BA 48 (539)Left STG, BA 38 (392)Left rolandic operculum, BA 48 (226)Left MTG, BA 21 (215)Left STG, BA 48 (186)</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>Left temporoparietal cortex</td>
+      <td>−56,–40,18</td>
+      <td>2.102</td>
+      <td>0.0002</td>
+      <td>900</td>
+      <td>Left supramarginal gyrus, BA 48 (188)Left STG, BA 42 (171)</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>Left calcarine cortex</td>
+      <td>−20,–66,14</td>
+      <td>2.447</td>
+      <td>0.0000</td>
+      <td>449</td>
+      <td>Corpus callosum (297)</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>Left MFG</td>
+      <td>–32,26,40</td>
+      <td>2.319</td>
+      <td>0.0001</td>
+      <td>438</td>
+      <td></td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Increased GMV in DD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>34,6,–26</td>
+      <td>–1.572</td>
+      <td>0.0001</td>
+      <td>1,829</td>
+      <td>Right STG, BA 38 (261)Right ITG, BA 20 (250)Right MTG, BA 20 (212)</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>Right precuneus</td>
+      <td>12,–52,42</td>
+      <td>–1.254</td>
+      <td>0.0014</td>
+      <td>156</td>
+      <td></td>
+      <td>2/6</td>
+    </tr>
+  </tbody>
+</table>
+
 In the supplementary materials, we reported whether the structural and functional deficits found in the current study were reported in each study included in the meta-analysis (Supplementary file 1f-1i).
 
-## Comparison between alphabetic and morpho-syllabic languages
+#### Comparison between alphabetic and morpho-syllabic languages
 
 For the direct comparison between the morpho-syllabic and alphabetic groups in functional studies, we found greater reduction of brain activation in alphabetic languages than in morpho-syllabic languages in the left MTG, right STG and left fusiform gyrus. We found greater reduction of brain activation in morpho-syllabic languages than in alphabetic languages in the left IFG, opercular part and greater increase of brain activation in DD in morpho-syllabic languages than in alphabetic languages in the right precentral gyrus (Table 5, Figure 2A).
 
+**Table 5.**
+ Direct comparisons between alphabetic languages and morpho-syllabic languages in functional studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>p</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Hypoactivation in DD</td>
+    </tr>
+    <tr>
+      <td colspan="6">Alphabetic languages &gt; Morpho-syllabic languages</td>
+    </tr>
+    <tr>
+      <td>Left MTG</td>
+      <td>−54,–62,8</td>
+      <td>1.203</td>
+      <td>0.0000</td>
+      <td>2,173</td>
+      <td>Left MTG, BA 37 (453)Left MTG, BA 48 (294)Left MTG, BA 21 (293)Corpus callosum (184)</td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>60,–18,4</td>
+      <td>1.080</td>
+      <td>0.0000</td>
+      <td>2047</td>
+      <td>Right STG, BA 22 (400)Corpus callosum (373)Right insula, BA 48 (278)Right STG, BA 48 (259)Right rolandic operculum, BA 48 (193)</td>
+    </tr>
+    <tr>
+      <td>Left fusiform gyrus</td>
+      <td>−40,–42,–24</td>
+      <td>1.279</td>
+      <td>0.0000</td>
+      <td>924</td>
+      <td>Left fusiform gyrus, BA 37 (198)Left ITG, BA 20 (198)</td>
+    </tr>
+    <tr>
+      <td colspan="6">Morpho-syllabic languages &gt; Alphabetic languages</td>
+    </tr>
+    <tr>
+      <td>Left IFG opercular part</td>
+      <td>–48,8,30</td>
+      <td>–3.945</td>
+      <td>0.0000</td>
+      <td>2093</td>
+      <td>Left precentral gyrus, BA 6 (512)Left IFG opercular part, BA 44 (274)Left precentral gyrus, BA 44 (191)Corpus callosum (161)Left IFG, triangular part, BA 48 (159)</td>
+    </tr>
+    <tr>
+      <td>Hyperactivation in DD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Morpho-syllabic languages &gt; Alphabetic languages</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="6">Morpho-syllabic languages &gt; Alphabetic languages</td>
+    </tr>
+    <tr>
+      <td>Right precentral gyrus</td>
+      <td>40,–20,54</td>
+      <td>–2.262</td>
+      <td>0.0000</td>
+      <td>1,518</td>
+      <td>Right precentral gyrus, BA 6 (525)Right precentral gyrus, BA 4 (306)Right postcentral gyrus, BA 3 (286)Right postcentral gyrus, BA 4 (171)</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig2-v2.jpg)
+
+**Figure 2.:** Conjunction analysis showed greater reduction of both GMV and brain activation in the left dorsal IFG in morpho-syllabic languages than alphabetic languages.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig2-figsupp3-v2.jpg)
+
 For the direct comparison between the morpho-syllabic and alphabetic groups in structural studies, we found greater reduction of GMV in DD in morpho-syllabic languages than in alphabetic languages in the left STG, left IFG opercular part, left MFG, left supramarginal gyrus, left superior occipital gyrus (SOG) and left insula. We also found greater increase of GMV in DD in morpho-syllabic languages than in alphabetic languages in the right STG and left ITG (Table 6, Figure 2B). We found no regions that showed greater GMV alterations in alphabetic languages than in morpho-syllabic languages.
+
+**Table 6.**
+ Direct comparisons between alphabetic languages and morpho-syllabic languages in structural studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>SDM-Z</th>
+      <th>P</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Decreased GMV in DD</td>
+    </tr>
+    <tr>
+      <td colspan="6">Alphabetic languages &gt; Morpho-syllabic languages</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="6">Morpho-syllabic languages &gt; Alphabetic languages</td>
+    </tr>
+    <tr>
+      <td>Left STG</td>
+      <td>−50,10,–18</td>
+      <td>–3.139</td>
+      <td>0.0000</td>
+      <td>1,218</td>
+      <td>Left STG, BA 38 (322)</td>
+    </tr>
+    <tr>
+      <td>Left IFG opercular part</td>
+      <td>–52,10,24</td>
+      <td>–2.253</td>
+      <td>0.0008</td>
+      <td>409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left MFG</td>
+      <td>–28,16,44</td>
+      <td>–2.888</td>
+      <td>0.0001</td>
+      <td>346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left supramarginal gyrus</td>
+      <td>−48,–44,24</td>
+      <td>–2.761</td>
+      <td>0.0001</td>
+      <td>344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left SOG</td>
+      <td>−20,–72,20</td>
+      <td>–2.911</td>
+      <td>0.0001</td>
+      <td>277</td>
+      <td>Corpus callosum (187)</td>
+    </tr>
+    <tr>
+      <td>Left insula</td>
+      <td>–32,14,8</td>
+      <td>–2.046</td>
+      <td>0.0015</td>
+      <td>179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Increased GMV in DD</td>
+    </tr>
+    <tr>
+      <td colspan="6">Alphabetic languages &gt; Morpho-syllabic languages</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="6">Morpho-syllabic languages &gt; Alphabetic languages</td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>34,6,–28</td>
+      <td>–1.893</td>
+      <td>0.0001</td>
+      <td>1,397</td>
+      <td>Right STG, BA 38 (246)</td>
+    </tr>
+    <tr>
+      <td>Left ITG</td>
+      <td>−54,–58,–16</td>
+      <td>–1.112</td>
+      <td>0.0018</td>
+      <td>161</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 To identify the common language differences between the structural and functional studies, we conducted a conjunction analysis between the language differences in structural studies and functional studies. This produced an overlap of 377 voxels in the left IFG opercular part, with a peak at (–52, 10, 24), indicating greater reduction of both GMV and brain activation in morpho-syllabic languages than in alphabetic languages (Figure 2C).
 
-## Multimodal analysis results in alphabetic and morpho-syllabic languages
+#### Multimodal analysis results in alphabetic and morpho-syllabic languages
 
 Multimodal meta-analysis in alphabetic languages showed that decreased GMV and hypoactivation in DD were found in the bilateral STG and left IFG triangular part; no regions showed increased GMV and hyperactivation; increased GMV and hypoactivation in DD were found in left IPL and left cerebellum; decreased GMV and hyperactivation in DD were found in bilateral caudate and right cerebellum (Table 7, Figure 3A). Multimodal meta-analysis in morpho-syllabic languages showed that decreased GMV and hypoactivation in DD were found in the left STG and left IFG opercular part; increased GMV and hyperactivation in DD were found in the right MTG; decreased GMV and hyperactivation in DD were found in left STG; no regions showed increased GMV and hypoactivation (Table 8, Figure 3B).
+
+**Table 7.**
+ Multimodal structural and functional abnormalities in individuals with DD in alphabetic languages.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>Voxels</th>
+      <th>Cluster breakdown (Voxels)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Decreases of GMV and hypoactivation in DD</td>
+    </tr>
+    <tr>
+      <td>Left STG</td>
+      <td>−52,–30,20</td>
+      <td>1,099</td>
+      <td>Left MTG, BA 21 (237)</td>
+    </tr>
+    <tr>
+      <td>Right STG</td>
+      <td>62,–32,14</td>
+      <td>322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left IFG, triangular part</td>
+      <td>–46,42,0</td>
+      <td>219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Increases of GMV and hypoactivation in DD</td>
+    </tr>
+    <tr>
+      <td>Left IPL</td>
+      <td>−46,–40,38</td>
+      <td>1,689</td>
+      <td>Left IPL, BA 40 (941)</td>
+    </tr>
+    <tr>
+      <td>Left cerebellum</td>
+      <td>−40,–70,–24</td>
+      <td>446</td>
+      <td>Left cerebellum, crus I, BA 19 (159)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Decreases of GMV and hyperactivation in DD</td>
+    </tr>
+    <tr>
+      <td>Right cerebellum</td>
+      <td>28,–52,–34</td>
+      <td>1,286</td>
+      <td>Right cerebellum, lobule VI, BA 37 (273)Middle cerebellar peduncles (267)Right cerebellum, lobule VI, BA 19 (204)</td>
+    </tr>
+    <tr>
+      <td>Right caudate</td>
+      <td>8,8,12</td>
+      <td>600</td>
+      <td>Right anterior thalamic projections (214)Right caudate nucleus (189)</td>
+    </tr>
+    <tr>
+      <td>Left caudate</td>
+      <td>–16,8,14</td>
+      <td>595</td>
+      <td>Left anterior thalamic projections (353)</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig3-v2.jpg)
 
 **Figure 3.:** Decreased GMV and brain activation were found in both groups in the left STG.
 
+**Table 8.**
+ Multimodal structural and functional abnormalities in individuals with DD in morpho-syllabic languages.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regions</th>
+      <th>MNI coordinate</th>
+      <th>Voxels</th>
+      <th colspan="2">Cluster breakdown (Voxels)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Decreases of GMV and hypoactivation in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left STG</td>
+      <td>−58,–38,22</td>
+      <td>1,566</td>
+      <td colspan="2">Left supramarginal gyrus, BA 48 (254)Left STG, BA 42 (253)Left supramarginal gyrus, BA 40 (153)</td>
+    </tr>
+    <tr>
+      <td>Left IFG opercular part</td>
+      <td>–56,2,10</td>
+      <td>1,052</td>
+      <td colspan="2">Left IFG opercular part, BA 44 (151)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Decreases of GMV and hyperactivation in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left STG</td>
+      <td>−44,16,–22</td>
+      <td>854</td>
+      <td colspan="2">Left STG, BA 38 (394)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Increases of GMV and hyperactivation in DD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right MTG</td>
+      <td>48,–6,–26</td>
+      <td>493</td>
+      <td colspan="2">Right MTG, BA 21 (178)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 To identify the common multimodal deficits in alphabetic languages and morpho-syllabic languages, we conducted a conjunction analysis of the thresholded multimodal maps of the two types of writing systems. This procedure produced an overlap of 482 voxels in the left STG, which peaked at (−54,–34, 20), indicating shared reduction of GMV and hypoactivation in both types of writing systems (Figure 3C).
 
-## Confirmation analysis results
+#### Confirmation analysis results
 
 For the confirmation analysis on children only in the alphabetic group, when we compared children in alphabetic languages to children in morpho-syllabic languages, we found a conjunction of the language differences in the functional studies and the structural studies, which was greater reduction of brain activation and GMV in morpho-syllabic languages than in alphabetic languages in the left IFG opercular part (–54, 10, 20) with a cluster of 273 voxels (Figure 2—figure supplement 1C), which is consistent with the original result. Conjunction analysis of the functional alterations in the alphabetic group and the morpho-syllabic group revealed common reduction of brain activation in children with DD in the left ITG (−48,–56, –18) and the left TP area (−56,–44, 32) with a cluster size of 291 voxels and 778 voxels, respectively. The TP area overlapped with the original multimodal result at the left STG (−56,–48, 22) where both language groups showed reduced brain activation and GMV. Taken together, these results are consistent with the original results, suggesting that the language differences are not due to unmatched age range. For detailed results of the confirmation analysis, please see Supplementary file 1a-1d, Figure 2—figure supplement 1, Figure 2—figure supplement 2.
 
@@ -92,13 +757,13 @@ Furthermore, the other confirmation analysis on functional studies of two well-m
 
 In this meta-analysis study, we examined the convergence and divergence between the brain structural and functional deficits associated with DD as well as whether the deficits are consistent across languages. We found that readers with DD showed both GMV reduction and functional hypoactivation in the left TP and ventral IFG in alphabetic languages, readers with DD showed both GMV reduction and functional hypoactivation in the left TP and dorsal IFG in morpho-syllabic languages, among which, the left STG was a shared impairment across all languages, and the dorsal left IFG showed a greater impairment in morpho-syllabic languages than in alphabetic languages, suggesting both language-universal and language-specific deficits in the brain. We also found GMV increase and functional hyperactivation in the right anterior MTG/ITG region in morpho-syllabic languages; however, conjunction analysis between morpho-syllabic languages and alphabetic languages did not reveal any overlap. In addition to the consistent structural and functional alterations, we also detected inconsistent structural and functional alterations. Individuals with DD showed increased GMV and hypoactivation in the left IPL and left cerebellum, and decreased GMV and hyperactivation in the bilateral caudate in alphabetic languages, but decreased GMV and hyperactivation in left STG in morpho-syllabic languages. However, conjunction analysis between morpho-syllabic languages and alphabetic languages did not reveal any overlap.
 
-## Convergent structural and functional impairment across writing systems
+### Convergent structural and functional impairment across writing systems
 
 Across writing systems, convergent structural and functional deficit was found in the left STG due to reduced GMV and brain activation in both alphabetic languages and morpho-syllabic languages. Further confirmation analysis confirmed that this is a stable deficit across children and adults. This is consistent with previous meta-analysis studies (Maisog et al., 2008; McGrath and Stoodley, 2019; Paulesu et al., 2014; Richlan et al., 2013). The left STG is a very important component in the language network (Friederici, 2012; Hickok and Poeppel, 2007) as well a key region in the reading network (Pugh et al., 2000; Richlan, 2014). It is involved in phonological representation and phonological processing during both spoken language processing and reading (Bolger et al., 2005; Enge et al., 2020; Tan et al., 2005). Recent research has suggested that proficient reading is characterized by convergence between speech and print at this region regardless of languages, as multivariate brain activity patterns are similar for speech and print at this region (Chyl et al., 2021). Therefore, the reading network may develop based on the built-in language circuit, as reading is a skill that humans acquire too late in the course of human evolution to have a brain network dedicated to it. Recently, a growing number of studies have investigated early signs of dyslexia before the onset of reading and found that structural and functional deficits in the left TP area and left inferior frontal cortex appear before reading onset (Clark et al., 2014; Hosseini et al., 2013; Plewko et al., 2018; Raschle et al., 2012; Raschle et al., 2014; Vandermosten et al., 2019). It further suggests that DD might be due to early abnormality in the language network. Specifically, Skeide et al., 2018 found hypermyelination in the left auditory cortex in readers with DD using ultra-high-field MRI at 7T, and disrupted neural firing induced by hypermyelination in the layer IV of the auditory cortex, which may cause hypoactivation in the left STG. The left STG actually serves as an important hub in the language and reading network (Fernández et al., 2020), which connects the inferior frontal network and the OT network through a dorsal pathway and a ventral pathway (Brauer et al., 2013; Cummine et al., 2015). Disconnection with the left STG has been verified in task-related functional connectivity studies (Boets et al., 2013; Cao et al., 2017; Schurz et al., 2015) and a resting-state functional connectivity study (Schurz et al., 2015), as well as in a meta-analysis of DTI studies (Vandermosten et al., 2012). Our finding suggests that dyslexia is associated with structural and functional abnormalities of the left STG regardless of language. The evidence suggests that this is a neural signature of DD, which supports the phonological deficit hypothesis (Shaywitz et al., 1998).
 
 However, we failed to find consistent structural and functional deficits in the OT area. The main reason was that there was no structural alteration but only functional reduction at this area. The OT area is a key region for orthographic recognition during visual word processing (Glezer et al., 2009; Glezer et al., 2016; Hirshorn et al., 2016; Nobre et al., 1994) and was reported to be impaired in individuals with DD (McCrory et al., 2005; Richlan et al., 2010; Wandell et al., 2012). The specialization of this region for orthographic processing is developed along with reading acquisition (Brem et al., 2010), and the dysfunction of the OT area in DD is possibly a result of reading failure (Pugh et al., 2000). A recent meta-analysis of VBM studies (McGrath and Stoodley, 2019) also failed to detect structural deficit in the OT area, which is consistent with our finding. Taken together, the lack of structural deficits with only hypoactivation at the OT area appears to suggest that the visuo-orthographic deficits at the OT might be a consequence of being DD. In contrast, the left STG which was discussed above, appears to be associated with the cause of DD. Our results provide further support for the phonological deficit hypothesis that phonological deficit is the primary deficit and other deficits may be a result of the phonological deficit (Pugh et al., 2000).
 
-## Language differences in structural and functional alterations
+### Language differences in structural and functional alterations
 
 The left dorsal IFG which peaked at (–52, 10, 24) showed greater reduction in both GMV and brain activation in morpho-syllabic languages than in alphabetic languages, suggesting greater impairment in this region in morpho-syllabic languages than in alphabetic languages. This finding is also verified in the confirmation analyses. Previously, many Chinese studies have reported impairment at the dorsal left IFG, for example, reduced brain activation in an auditory rhyming judgment task in children with DD at (–44, 10, 26) (Cao et al., 2017), in a lexical decision task at (–44, 3, 29) (Siok et al., 2004), in a homophone judgment task at (–55, 5, 22) (Siok et al., 2008), and in a morphological task at (–36, 8, 26) (Liu et al., 2013a). This left dorsal IFG has been believed to be more involved in Chinese reading than in alphabetic languages, with a peak at the left MFG (–46, 18, 28) as reported in a previous meta-analysis study (Tan et al., 2005). The dorsal IFG was found to be involved in phonological processing in Chinese reading (Wu et al., 2012), and it is thought to be related to addressed phonology during Chinese character reading (Tan et al., 2005). Our study adds to the literature that by direct comparison, this region does show greater deficit in individuals with DD in morpho-syllabic languages than in alphabetic languages in terms of both brain activation and GMV. This might be due to the fact that healthy Chinese readers have increased GMV and brain activation in the left dorsal IFG than healthy alphabetic readers, because the features of Chinese require greater involvement of this region in reading than alphabetic languages due to the whole-character-to-whole-syllable mapping. Actually, two cross-linguistic studies have argued that different findings of DD in different languages are actually driven by the fact that control readers show language-specific brain activation patterns (Feng et al., 2020; Hu et al., 2010), and that brain activation in individuals with DD is actually the same across languages. For example, Hu et al., 2010 found that Chinese control readers showed greater activation in the left IFG, and English control readers showed greater activation in the left superior temporal sulcus; however, children with DD in Chinese and English showed similar brain activation in these two regions. Therefore, readers with DD fail to show language specialization due to their limited reading experience and skills. In summary, this language-specific deficit is believed to be a consequence of being DD in learning morpho-syllabic languages, indicating their inability to accommodate to their own writing system.
 
@@ -106,21 +771,21 @@ In the direct comparison between alphabetic and morpho-syllabic languages, we al
 
 For the structural studies, we found greater GMV alterations in morpho-syllabic languages than in alphabetic languages, including greater GMV reduction in the left STG, left MFG, left supramarginal gyrus, left SOG and left insula, as well as greater GMV increase in the right STG and ITG. However, considering the limited number of studies included in the morpho-syllabic language group and inconsistent results with functional studies, the results should be interpreted with caution.
 
-## Increased GMV and hyperactivation
+### Increased GMV and hyperactivation
 
 In the multi-modal meta-analysis, we found increased GMV and hyperactivation in participants with DD in the right MTG which was driven by the morpho-syllabic languages. For the functional studies, we also found greater hyperactivation in the right precentral gyrus in morpho-syllabic languages than in alphabetic languages. These alterations might be related to the compensation mechanism of the right hemisphere. As precentral gyri play an important role in articulation (Dronkers, 1996), overactivation in the precentral gyrus is interpreted as an articulation strategy used by individuals with DD to compensate for their deficient phonological processing (Cao et al., 2018; Shaywitz et al., 1998; Waldie et al., 2013). The compensation in the right MTG is developed in morpho-syllabic languages presumably due to the tight connection between orthography and semantics (Wang et al., 2015). Substantial evidence has shown that dyslexia was often accompanied by excessive activation of the right hemisphere (Cao et al., 2017; Cao et al., 2018; Kovelman et al., 2012; Kronschnabel et al., 2014; Yang and Tan, 2020) and reduced left lateralization of the language network (Altarelli et al., 2014; Bloom et al., 2013). Furthermore, training studies have also found increased activation in many regions in the right hemisphere in individuals with DD after reading intervention (Barquero et al., 2014; Meyler et al., 2008), suggesting the compensatory role of the right hemisphere when the left language/reading network is deficient (Coslett and Monsul, 1994; Weiller et al., 1995). However, according to the previous meta-analysis study, different regions showed overactivation in different writing systems (Martin et al., 2016). In particular, the left anterior insula showed greater overactivation in deep orthographies while the left precentral gyrus showed greater overactivation in shallow orthographies in individuals with DD. Taken together, it suggests that different compensatory mechanisms are developed depending on the characteristics of the writing system as well as learning experiences, and the compensation in the right MTG and right precentral gyrus appears to be particularly salient in morpho-syllabic languages. However, it is also possible that the increased GMV and hyperactivation in individuals with DD are due to some fundamental deficits rather than compensation. Further research is needed to understand the nature of these alterations by running brain-behavioral correlation and/or employing longitudinal designs.
 
-## Divergent structural and functional alterations in DD
+### Divergent structural and functional alterations in DD
 
 In the multimodal analysis, we also found divergent structural and functional changes related to DD, including the left IPL and left cerebellum where there was increased GMV and hypoactivation and bilateral caudate where there was reduced GMV and hyperactivation in alphabetic languages; There was decreased GMV and hyperactivation in left STG in morpho-syllabic languages. This is in line with a recent study which found a dissociation between the developmental changes of brain structure and function (Siok et al., 2020), suggesting that learning experience may sometimes shape the brain function independent of the brain structure.
 
-## The left IPL
+### The left IPL
 
 We found increased GMV and hypoactivation in DD in the left IPL in alphabetic languages. Consistent hypoactivation in the left IPL in DD has been documented in previous studies (Maisog et al., 2008; Martin et al., 2016). Furthermore, it was found that the deficit of the left IPL was greater in children than in adults with DD (Richlan et al., 2011), suggesting that the functional impairment of the left IPL may gradually recover with development. This may be related to the transfer of the reading circuit from the dorsal pathway to the ventral pathway over development (Younger et al., 2017). Control children activate the left IPL to a greater degree than control adults because they rely more on the dorsal pathway. Therefore, children with DD show a great reduction in the left IPL in comparison to adults with DD. Alternatively, the left IPL has been found to be deactivated during language tasks (Cao et al., 2008; Cao et al., 2017; Meyler et al., 2008; Schulz et al., 2009), and this is due to the nature of the default mode network (Laird et al., 2009), which is deactivated during active tasks. Therefore, it might be the case that the increased GMV in individuals with DD increases inhibitory inputs received by the IPL, which results in greater deactivation.
 
 For structural studies involving the left IPL, the results are inconsistent. The GMV of the left supramarginal gyrus around the posterior part of perisylvian cortex was found to be reduced in individuals with DD (Linkersdörfer et al., 2012; McGrath and Stoodley, 2019) and it showed a positive correlation with reading accuracy only in normal readers (Jednorog et al., 2015). However, the GMV of the left inferior parietal cortex excluding the supramarginal and the angular was found to increase in individuals with DD (McGrath and Stoodley, 2019) and a study showed that the volume of the left inferior parietal cortex in control readers was negatively correlated with reading level (Houston et al., 2014). The IPL in the current study is outside the supramarginal and angular gyrus; therefore, it is consistent with the previous findings that there is increased GMV in individuals with DD.
 
-## The cerebella
+### The cerebella
 
 Increased GMV and hypoactivation in DD were also found in the left cerebellum in alphabetic languages; however, in the right cerebellum, we found decreased GMV and hyperactivation. Previously, it was found that the right cerebellum is greater in size than the left cerebellum in healthy controls while the asymmetry is reduced in individuals with DD (Kibby et al., 2008; Rae et al., 2002). This is consistent with our finding of increased GMV in the left cerebellum and decreased GMV in the right cerebellum in individuals with DD, suggesting reduced asymmetry in cerebellum.
 
@@ -128,27 +793,1483 @@ The cerebella have been found to play an important role in inner speech, automat
 
 It is still unclear why there is increased GMV but decreased activation in some brain regions. It may be due to the following reasons: (1) increased dendrites receiving more inhibitory input from other neurons; (2) abnormal neuronal migration deactivated the firing of neurons as a result of disrupted local microcircuits (Giraud and Ramus, 2013); (3) weaker input from other regions deactivated the target region and changed the structure of the region (Wang et al., 2019).
 
-## The caudate
+### The caudate
 
 We also found decreased GMV and hyperactivation in readers with DD in the bilateral caudate in alphabetic languages. Previous studies have observed decreased GMV (Brown et al., 2001; Jagger-Rickels et al., 2018; McGrath and Stoodley, 2019; Tamboer et al., 2015) and hyperactivation in bilateral caudate in individuals with DD (Martin et al., 2016; Olulade et al., 2012; Pekkola et al., 2006; Richlan et al., 2010; Richlan et al., 2011; Rumsey et al., 1997). However, there are also studies that observed different patterns (Cheema et al., 2018), such as decreased activation in caudate (Perrachione et al., 2016). Furthermore, the GMV volume of the caudate in individuals with DD was found to be positively correlated with reading performance (Pernet et al., 2009; Tamboer et al., 2015), and the left caudate’s activation was correlated with longer reaction time in word reading only in individuals with DD (Cheema et al., 2018). The caudate plays an important role in procedural learning and phonological processing (Grahn et al., 2008; Tettamanti et al., 2005; Ullman et al., 2020). Decreased GMV and increased activation at the bilateral caudate might be caused by reduced dendrites and reduced inhibitory inputs received in individuals with DD (Achal et al., 2016; Finn et al., 2014). It may also be due to pre-existing local structural deficit leading to compensatory hyperactivation of the remaining part of the caudate. GMV reduction in basal ganglia was found in many other neuropsychiatric disorders, such as attention-deficit hyperactivity disorder (Frodl and Skokauskas, 2012; Mous et al., 2015; Nakao et al., 2011), autism spectrum disorder (Nickl-Jockschat et al., 2012) and major depression disorder (Husain et al., 1991; Lu et al., 2016). Altered myelination and neurotransmitters may contribute to the structural and functional alterations related to basal ganglia (Nord et al., 2019; Wichmann and DeLong, 2012).
 
-## Conclusion
+### Conclusion
 
 We found convergent functional and structural alterations in the left STG across different writing systems, suggesting a neural signature of DD, which might be associated with phonological deficit. We also found greater functional and structural alteration in the left dorsal IFG in morpho-syllabic languages than alphabetic languages, suggesting a language-specific effect of DD, which might be related to the special feature of whole-character-to-whole-syllable mapping in morpho-syllabic languages.
 
-## Limitation
+### Limitation
 
 In this meta-analysis, we found convergent and divergent functional and structural alterations across writing systems. However, due to the limitations of voxel-based neuroimaging meta-analysis, the peak coordinate only provides limited information, therefore, future image-based meta-analysis studies should be conducted with full statistical images of the original studies (Muller et al., 2018).
 
 ## Materials and methods
 
-## Literature retrieval and data extraction
+### Literature retrieval and data extraction
 
 We searched in ‘PubMed’ (http://www.pubmed.org) and ‘Web of science’ for neuroimaging studies published from January 1986 to January 2020 using a combination of a condition term (i.e. dyslexia, reading disorder, reading impairment, reading difficulty or reading disability) and a technical term (i.e. fMRI, PET, voxel-based morphometry, VBM, or neuroimaging), for example, ‘dyslexia’ and ‘fMRI’. See the full list of key word combinations in the Supplementary file 2. Additionally, we manually added studies by checking the references of the selected papers that were missed in the search. The inclusion criteria were: (1) PET, fMRI, voxel-based morphometry (VBM) studies or structural studies using a volumetric FreeSurfer pipeline, (2) whole-brain results were reported, (3) direct group comparisons between readers with DD and age control readers were reported, (4) coordinates were reported in Talairach or MNI stereotactic space, and (5) studies on DD in the first language. The exclusion criteria were (1) studies with only ROI analysis, (2) resting-state studies, (3) studies that only included readers with DD or did not report group differences, (4) studies with direct group comparisons only between readers with DD and reading level control readers, (5) studies on children at risk for dyslexia, and (6) studies focused on non-linguistic tasks (Evans et al., 2014b; Margolis et al., 2020; Menghini et al., 2006; Yang et al., 2013). Finally, 119 experiments from 110 papers were included in this meta-analysis comprising 92 brain functional experiments (from 87 papers) and 27 brain structural experiments (from 23 papers) (see Table 9; Table 10 and Figure 4 for detail). From the original publications, we extracted peak coordinates, where there is a significant difference between controls and individuals with DD either in brain activation or regional GMV. We also extracted effect sizes and other information from the publications. In order to explore the language effect, we subdivided these studies into two groups according to the native language of the participants, namely, an alphabetic language group in which writing symbols represent phonemes, and a morpho-syllabic language group in which each writing symbol represents a morpheme with a syllable. This procedure resulted in 79 functional and 21 structural experiments for the alphabetic language group and 12 functional and six structural experiments for the morpho-syllabic language group.
 
+**Table 9.**
+ Functional studies included in the meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Studies</th>
+      <th rowspan="2">N(TD)</th>
+      <th rowspan="2">N(DD)</th>
+      <th rowspan="2">Age in months</th>
+      <th rowspan="2">Language</th>
+      <th rowspan="2">Writing system</th>
+      <th rowspan="2">Subject type</th>
+      <th rowspan="2">Tasks</th>
+      <th colspan="2">Threshold</th>
+    </tr>
+    <tr>
+      <th>Voxel-wise</th>
+      <th>Cluster-wise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bach et al., 2010</td>
+      <td>18</td>
+      <td>14</td>
+      <td>99.6</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Covert reading task</td>
+      <td>p &lt; 0.005</td>
+      <td>24 voxels*</td>
+    </tr>
+    <tr>
+      <td>Beneventi et al., 2009</td>
+      <td>13</td>
+      <td>11</td>
+      <td>160.4</td>
+      <td>Norwegian</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sequential verbal working memory task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Beneventi et al., 2010a;</td>
+      <td>13</td>
+      <td>11</td>
+      <td>160.4</td>
+      <td>Norwegian</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>n-back task (Letter)</td>
+      <td>FDR p &lt; 0.05</td>
+      <td>5 voxels</td>
+    </tr>
+    <tr>
+      <td>Beneventi et al., 2010b</td>
+      <td>14</td>
+      <td>12</td>
+      <td>160.3</td>
+      <td>Norwegian</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>n-back task (Picture)</td>
+      <td>FDR p &lt; 0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Blau et al., 2009</td>
+      <td>13</td>
+      <td>13</td>
+      <td>301.8</td>
+      <td>Dutch</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Letter–speech-sound integration task</td>
+      <td>p &lt; 0.001</td>
+      <td>160 mm3*</td>
+    </tr>
+    <tr>
+      <td>Booth et al., 2007a</td>
+      <td>13</td>
+      <td>13</td>
+      <td>126.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Word judgment task</td>
+      <td>p &lt; 0.001</td>
+      <td>15 voxels</td>
+    </tr>
+    <tr>
+      <td>Boros et al., 2016</td>
+      <td>17</td>
+      <td>12</td>
+      <td>129.7</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>String detection and passive reading task</td>
+      <td>p &lt; 0.001</td>
+      <td>FDR p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Brambati et al., 2006</td>
+      <td>11</td>
+      <td>13</td>
+      <td>368.5</td>
+      <td>Italian</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>Word reading and pseudoword reading</td>
+      <td>p &lt; 0.001</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Brunswick et al., 1999</td>
+      <td>6</td>
+      <td>6</td>
+      <td>277.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Explicit reading task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Brunswick et al., 1999</td>
+      <td>6</td>
+      <td>6</td>
+      <td>294.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Implicit reading task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cao et al., 2008</td>
+      <td>12</td>
+      <td>12</td>
+      <td>148.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Visual word rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Cao et al., 2017</td>
+      <td>13</td>
+      <td>17</td>
+      <td>134.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Auditory rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>FDR p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Cao et al., 2018</td>
+      <td>19</td>
+      <td>23</td>
+      <td>132.9</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Visual spelling task</td>
+      <td>p &lt; 0.001</td>
+      <td>FDR p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Cao et al., 2020</td>
+      <td>17</td>
+      <td>16</td>
+      <td>137.3</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Visual rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>FDR p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Christodoulou et al., 2014</td>
+      <td>12</td>
+      <td>12</td>
+      <td>274.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Sentence reading</td>
+      <td>p &lt; 0.001</td>
+      <td>FDR corrected</td>
+    </tr>
+    <tr>
+      <td>Chyl et al., 2019</td>
+      <td>24</td>
+      <td>24</td>
+      <td>105.4</td>
+      <td>Polish</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Visual word reading</td>
+      <td>p &lt; 0.001</td>
+      <td>50 voxels*</td>
+    </tr>
+    <tr>
+      <td>Conway et al., 2008</td>
+      <td>11</td>
+      <td>11</td>
+      <td>420.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Auditory working memory task</td>
+      <td>p &lt; 0.005</td>
+      <td>150 mL</td>
+    </tr>
+    <tr>
+      <td>Cutting et al., 2013</td>
+      <td>19</td>
+      <td>20</td>
+      <td>147.02</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Lexical decision task</td>
+      <td>p &lt; 0.005</td>
+      <td>34 voxels</td>
+    </tr>
+    <tr>
+      <td>Danelli et al., 2017</td>
+      <td>23</td>
+      <td>20</td>
+      <td>250.55</td>
+      <td>Italian</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Pseudoword reading, auditory letter-name rhyming task, visual motion stimulation task and motor sequence learning task</td>
+      <td>p &lt; 0.001</td>
+      <td>FWE p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Desroches et al., 2010</td>
+      <td>12</td>
+      <td>12</td>
+      <td>137.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Auditory rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>15 voxels</td>
+    </tr>
+    <tr>
+      <td>Dufor et al., 2007</td>
+      <td>16</td>
+      <td>14</td>
+      <td>344.6</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adult</td>
+      <td>Auditory phoneme categorization task</td>
+      <td>p &lt; 0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eden et al., 2004</td>
+      <td>19</td>
+      <td>19</td>
+      <td>512.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word repetition task and initial sound deletion task</td>
+      <td>p &lt; 0.001</td>
+      <td>80 voxels</td>
+    </tr>
+    <tr>
+      <td>Farris et al., 2016</td>
+      <td>16</td>
+      <td>15</td>
+      <td>112.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Object rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels**</td>
+    </tr>
+    <tr>
+      <td>Feng et al., 2017</td>
+      <td>20</td>
+      <td>14</td>
+      <td>123.1</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Character spelling task and character rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>12 voxels*</td>
+    </tr>
+    <tr>
+      <td>Francisco et al., 2018</td>
+      <td>20</td>
+      <td>21</td>
+      <td>303.7</td>
+      <td>Dutch</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>1-back task</td>
+      <td>p &lt; 0.001</td>
+      <td>FWE p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Gaab et al., 2007</td>
+      <td>23</td>
+      <td>22</td>
+      <td>127.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sound discrimination task</td>
+      <td>p &lt; 0.01</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Georgiewa et al., 1999</td>
+      <td>17</td>
+      <td>17</td>
+      <td>168.0</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Letter reading task, nonwords reading task, words reading task and phonological transformation task</td>
+      <td>p &lt; 0.05</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Grande et al., 2011</td>
+      <td>25</td>
+      <td>20</td>
+      <td>115.1</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Picture naming task and words reading task</td>
+      <td>p &lt; 0.001</td>
+      <td>t10 voxels</td>
+    </tr>
+    <tr>
+      <td>Grunling et al., 2004</td>
+      <td>21</td>
+      <td>17</td>
+      <td>162.8</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Slash patterns matching task, letters matching task, words matching task, pseudoword matching task and pseudoword rhyming task</td>
+      <td>p &lt; 0.01</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Hancock et al., 2016</td>
+      <td>11</td>
+      <td>16</td>
+      <td>125.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Word rhyming task</td>
+      <td>p &lt; 0.01</td>
+      <td>50 voxels</td>
+    </tr>
+    <tr>
+      <td>Heim et al., 2010</td>
+      <td>20</td>
+      <td>16</td>
+      <td>113.9</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>First sound detection task, motion detection task, Posner attention task，auditory discrimination task</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Heim et al., 2013</td>
+      <td>15</td>
+      <td>11</td>
+      <td>435.4</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Overt word reading</td>
+      <td>p &lt; 0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heim et al., 2015</td>
+      <td>10</td>
+      <td>33</td>
+      <td>118.9</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Overt word reading</td>
+      <td>FWE p &lt; 0.05</td>
+      <td>100 voxels</td>
+    </tr>
+    <tr>
+      <td>Hernandez et al., 2013</td>
+      <td>16</td>
+      <td>15</td>
+      <td>252.7</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word rhyming task and font matching task</td>
+      <td>p &lt; 0.001*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Higuchi et al., 2020</td>
+      <td>14</td>
+      <td>11</td>
+      <td>172.7</td>
+      <td>Japanese</td>
+      <td>Morpho-syllabic</td>
+      <td>Adolescents</td>
+      <td>Character/picture passive viewing task</td>
+      <td>p &lt; 0.005</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Hoeft et al., 2006</td>
+      <td>10</td>
+      <td>10</td>
+      <td>133.9</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Visual word rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Hoeft et al., 2007</td>
+      <td>19</td>
+      <td>19</td>
+      <td>172.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Visual word rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Horowitz-Kraus et al., 2016</td>
+      <td>9</td>
+      <td>10</td>
+      <td>120.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Narrative comprehension task</td>
+      <td>p &lt; 0.001</td>
+      <td>FWE corrected</td>
+    </tr>
+    <tr>
+      <td>Hu et al., 2010</td>
+      <td>8</td>
+      <td>8</td>
+      <td>171.6</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Sematic match task, word/ picture naming task</td>
+      <td>p &lt; 0.001*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hu et al., 2010</td>
+      <td>10</td>
+      <td>11</td>
+      <td>164.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sematic match task, word/ picture naming task</td>
+      <td>p &lt; 0.001*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ingvar et al., 2002</td>
+      <td>9</td>
+      <td>9</td>
+      <td>287.0</td>
+      <td>Swedish</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word reading task and nonword reading task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jaffe-Dax et al., 2018</td>
+      <td>19</td>
+      <td>20</td>
+      <td>302.2</td>
+      <td>Hebrew</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Tone frequency discrimination task</td>
+      <td></td>
+      <td>p &lt; 0.05 corrected</td>
+    </tr>
+    <tr>
+      <td>Kast et al., 2011</td>
+      <td>13</td>
+      <td>12</td>
+      <td>314.5</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Lexical decision task</td>
+      <td>p &lt; 0.001</td>
+      <td>30 voxels</td>
+    </tr>
+    <tr>
+      <td>Kovelman et al., 2012</td>
+      <td>12</td>
+      <td>12</td>
+      <td>108.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Auditory words rhyming task and auditory words matching task</td>
+      <td>p &lt; 0.001</td>
+      <td>25 voxels*</td>
+    </tr>
+    <tr>
+      <td>Kronbichler et al., 2006</td>
+      <td>15</td>
+      <td>13</td>
+      <td>187.9</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Sentence verification task</td>
+      <td>FDR p &lt; 0.05</td>
+      <td>4 voxels</td>
+    </tr>
+    <tr>
+      <td>Kronschnabel et al., 2013</td>
+      <td>22</td>
+      <td>13</td>
+      <td>191.7</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Rapid serial visual stimulation detect task</td>
+      <td>p &lt; 0.005</td>
+      <td>160 voxels*</td>
+    </tr>
+    <tr>
+      <td>Kronschnabel et al., 2014</td>
+      <td>22</td>
+      <td>13</td>
+      <td>190.9</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Target detection task</td>
+      <td>p &lt; 0.005</td>
+      <td>160 voxels*</td>
+    </tr>
+    <tr>
+      <td>Landi et al., 2010</td>
+      <td>13</td>
+      <td>13</td>
+      <td>157.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>Rhyming task and semantic categorization task</td>
+      <td>FDR p &lt; 0.01</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Langer et al., 2015</td>
+      <td>15</td>
+      <td>15</td>
+      <td>119.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sentence reading task</td>
+      <td>p &lt; 0.005</td>
+      <td>50 voxels</td>
+    </tr>
+    <tr>
+      <td>Liu et al., 2012</td>
+      <td>11</td>
+      <td>11</td>
+      <td>142.8</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Word rhyming task and semantic judgment task</td>
+      <td>p &lt; 0.0002</td>
+      <td>18 voxels*</td>
+    </tr>
+    <tr>
+      <td>Liu et al., 2013a</td>
+      <td>14</td>
+      <td>14</td>
+      <td>141.8</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Lexical match task and character rhyming task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Lobier et al., 2014</td>
+      <td>12</td>
+      <td>12</td>
+      <td>129.6</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>visual categorization of character task</td>
+      <td>p &lt; 0.001</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>MacSweeney et al., 2009</td>
+      <td>7</td>
+      <td>7</td>
+      <td>343.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Picture rhyming task</td>
+      <td>p &lt; 0.01</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Maurer et al., 2011</td>
+      <td>16</td>
+      <td>11</td>
+      <td>136.6</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Word matching task, pseudoword matching task, picture matching task</td>
+      <td>p &lt; 0.01</td>
+      <td>30 voxels*</td>
+    </tr>
+    <tr>
+      <td>McCrory et al., 2000</td>
+      <td>6</td>
+      <td>8</td>
+      <td>275.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Words and pseudowords production</td>
+      <td>p &lt; 0.001,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>McCrory et al., 2005</td>
+      <td>10</td>
+      <td>8</td>
+      <td>242.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Words reading and pictures naming</td>
+      <td>p &lt; 0.05 corrected</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Meyler et al., 2008</td>
+      <td>12</td>
+      <td>23</td>
+      <td>129.6</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sentence comprehension</td>
+      <td>p &lt; 0.002</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Monzalvo et al., 2012</td>
+      <td>23</td>
+      <td>23</td>
+      <td>130.0</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Passive picture/word viewing task and passive sentence listening task</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05 corrected</td>
+    </tr>
+    <tr>
+      <td>Olulade et al., 2012</td>
+      <td>9</td>
+      <td>6</td>
+      <td>247.7</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word rhyme task3-D spatial rotations</td>
+      <td>p &lt; 0.005</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Olulade et al., 2015</td>
+      <td>12</td>
+      <td>16</td>
+      <td>120.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Implicit word reading</td>
+      <td>p &lt; 0.001</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Paulesu et al., 2001</td>
+      <td>36</td>
+      <td>36</td>
+      <td>286.4</td>
+      <td>English, French, Italian</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word and non-word reading task</td>
+      <td>p&lt; 0.001</td>
+      <td>corrected</td>
+    </tr>
+    <tr>
+      <td>Paulesu et al., 1996</td>
+      <td>5</td>
+      <td>5</td>
+      <td>314.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Letter rhyming and letter memory</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pecini et al., 2011</td>
+      <td>13</td>
+      <td>13</td>
+      <td>276.0</td>
+      <td>Italian</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>Rhyme-generation task</td>
+      <td>p &lt; 0.05 corrected</td>
+      <td>100 mm3</td>
+    </tr>
+    <tr>
+      <td>Pekkola et al., 2006</td>
+      <td>10</td>
+      <td>10</td>
+      <td>330.6</td>
+      <td>Finnish</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Audio-visual speech perception</td>
+      <td>z &gt; 1.8</td>
+      <td>p &lt; 0.05 corrected</td>
+    </tr>
+    <tr>
+      <td>Perrachione et al., 2016</td>
+      <td>19</td>
+      <td>19</td>
+      <td>279.6</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Speech perception</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.001 FDR</td>
+    </tr>
+    <tr>
+      <td>Perrachione et al., 2016</td>
+      <td>24</td>
+      <td>23</td>
+      <td>267.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Spoken words listening, Written words, objects, and faces viewing</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.001 FDR</td>
+    </tr>
+    <tr>
+      <td>Perrachione et al., 2016</td>
+      <td>25</td>
+      <td>26</td>
+      <td>95.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Spoken words listening, Written words, objects, and faces viewing</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05 FDR</td>
+    </tr>
+    <tr>
+      <td>Peyrin et al., 2011</td>
+      <td>12</td>
+      <td>12</td>
+      <td>120.0</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Categorical matching task</td>
+      <td>p &lt; 0.001</td>
+      <td>15 voxels</td>
+    </tr>
+    <tr>
+      <td>Prasad et al., 2020</td>
+      <td>15</td>
+      <td>16</td>
+      <td>144.0</td>
+      <td>Hindi</td>
+      <td>Syllabic</td>
+      <td>Children and adolescents</td>
+      <td>Auditory rhyming task, picture-naming task and semantic tasks</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reilhac et al., 2013</td>
+      <td>12</td>
+      <td>12</td>
+      <td>306.6</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Perceptual matching task</td>
+      <td>p &lt; 0.001</td>
+      <td>15 voxels</td>
+    </tr>
+    <tr>
+      <td>Richlan et al., 2010</td>
+      <td>18</td>
+      <td>15</td>
+      <td>215.8</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>phonological decision task</td>
+      <td>p &lt; 0.005</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Rimrodt et al., 2009</td>
+      <td>15</td>
+      <td>14</td>
+      <td>141.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sentence comprehension task</td>
+      <td>p &lt; 0.001</td>
+      <td>78 voxels*</td>
+    </tr>
+    <tr>
+      <td>Ruff et al., 2002</td>
+      <td>11</td>
+      <td>6</td>
+      <td>348.7</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Aadults</td>
+      <td>Passive listening task</td>
+      <td>p &lt; 0.01</td>
+      <td>38 voxels</td>
+    </tr>
+    <tr>
+      <td>Rumsey et al., 1997</td>
+      <td>14</td>
+      <td>17</td>
+      <td>313.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Pronunciation task and lexical decision task</td>
+      <td>p &lt; 0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Schulz et al., 2008</td>
+      <td>21</td>
+      <td>12</td>
+      <td>137.7</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sentence reading task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Schulz et al., 2009</td>
+      <td>15</td>
+      <td>15</td>
+      <td>138.0</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Sentence reading task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Siok et al., 2004</td>
+      <td>8</td>
+      <td>8</td>
+      <td>132.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Homophone judgement task and lexical decision task</td>
+      <td>p &lt; 0.001</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>Siok et al., 2008</td>
+      <td>12</td>
+      <td>12</td>
+      <td>131.5</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Character rhyming task</td>
+      <td>p &lt; 0.005</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Siok et al., 2009</td>
+      <td>12</td>
+      <td>12</td>
+      <td>131.5</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Font size judgment task</td>
+      <td>p &lt; 0.05 FDR corrected</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Steinbrink et al., 2012</td>
+      <td>12</td>
+      <td>14</td>
+      <td>223.7</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>Syllable discrimination</td>
+      <td>p &lt; 0.05 FWE corrected</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Temple et al., 2000</td>
+      <td>10</td>
+      <td>8</td>
+      <td>362.7</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Pitch discrimination task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Temple et al., 2001</td>
+      <td>15</td>
+      <td>24</td>
+      <td>127.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Letter rhyming task, letter matching task</td>
+      <td>p &lt; 0.001</td>
+      <td>20 voxels</td>
+    </tr>
+    <tr>
+      <td>van der Mark et al., 2009</td>
+      <td>24</td>
+      <td>18</td>
+      <td>136.1</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Phonological lexical decision task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>van Ermingen-Marbach et al., 2013a</td>
+      <td>13</td>
+      <td>17</td>
+      <td>117.2</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Phoneme detection task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>van Ermingen-Marbach et al., 2013a</td>
+      <td>13</td>
+      <td>14</td>
+      <td>116.4</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Phoneme detection task</td>
+      <td>p &lt; 0.001</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>van Ermingen-Marbach et al., 2013b</td>
+      <td>10</td>
+      <td>32</td>
+      <td>117.0</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Initial phoneme deletion task</td>
+      <td>p &lt; 0.01</td>
+      <td>30 voxels</td>
+    </tr>
+    <tr>
+      <td>Vasic et al., 2008</td>
+      <td>13</td>
+      <td>12</td>
+      <td>219.6</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Verbal working memory task</td>
+      <td>p &lt; 0.005</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Waldie et al., 2013</td>
+      <td>16</td>
+      <td>12</td>
+      <td>365.1</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Go/no-go lexical decision task</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Weiss et al., 2016</td>
+      <td>22</td>
+      <td>21</td>
+      <td>325.1</td>
+      <td>Hebrew</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Word reading task</td>
+      <td>p &lt; 0.001</td>
+      <td>50 voxels</td>
+    </tr>
+    <tr>
+      <td>Wimmer et al., 2010</td>
+      <td>19</td>
+      <td>20</td>
+      <td>247.6</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>Phonological lexical decision task</td>
+      <td>p &lt; 0.005</td>
+      <td>10 voxels</td>
+    </tr>
+    <tr>
+      <td>Yang and Tan, 2020</td>
+      <td>16</td>
+      <td>16</td>
+      <td>123.5</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>Homophone judgments task and component judgments task</td>
+      <td>p &lt; 0.005</td>
+      <td>25 voxels*</td>
+    </tr>
+    <tr>
+      <td>Zuk et al., 2018</td>
+      <td>13</td>
+      <td>11</td>
+      <td>114.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>First sound matching task</td>
+      <td>p &lt; 0.005</td>
+      <td>50 voxels</td>
+    </tr>
+  </tbody>
+</table>
+
+_*equivalent to p < 0.05 corrected; ** equivalent to p < 0.01 corrected._
+
+**Table 10.**
+ Structural studies included in the meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Study</th>
+      <th rowspan="2">N(TD)</th>
+      <th rowspan="2">N(DD)</th>
+      <th rowspan="2">Age in months</th>
+      <th rowspan="2">Language</th>
+      <th rowspan="2">Writing system</th>
+      <th rowspan="2">Subject type</th>
+      <th colspan="2">Threshold</th>
+    </tr>
+    <tr>
+      <th>Voxel-wise</th>
+      <th>Cluster-wise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adrian-Ventura et al., 2020</td>
+      <td>12</td>
+      <td>13</td>
+      <td>146.2</td>
+      <td>Spanish</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.05 FWE corrected</td>
+      <td>750 voxels</td>
+    </tr>
+    <tr>
+      <td>Brambati et al., 2004</td>
+      <td>11</td>
+      <td>10</td>
+      <td>352.8</td>
+      <td>Italian</td>
+      <td>Alphabetic</td>
+      <td>Adults and adolescents</td>
+      <td>p &lt; 0.05 corrected for small brain volume</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Brown et al., 2001</td>
+      <td>14</td>
+      <td>16</td>
+      <td>288.0</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>p &lt; 0.05</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Eckert et al., 2005</td>
+      <td>13</td>
+      <td>13</td>
+      <td>136.5</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Evans et al., 2014a</td>
+      <td>14</td>
+      <td>14</td>
+      <td>505.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>Pp&lt; 0.001</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Evans et al., 2014a</td>
+      <td>13</td>
+      <td>13</td>
+      <td>371.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>p &lt; 0.001</td>
+      <td>p&lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Evans et al., 2014a</td>
+      <td>15</td>
+      <td>15</td>
+      <td>107.4</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Evans et al., 2014a</td>
+      <td>17</td>
+      <td>17</td>
+      <td>115.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Hoeft et al., 2007</td>
+      <td>19</td>
+      <td>19</td>
+      <td>172.8</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children and adolescents</td>
+      <td>p &lt; 0.01</td>
+      <td>p &lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>Jagger-Rickels et al., 2018</td>
+      <td>32</td>
+      <td>17</td>
+      <td>114.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jednorog et al., 2014</td>
+      <td>35</td>
+      <td>46</td>
+      <td>123.5</td>
+      <td>Polish</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Jednorog et al., 2015</td>
+      <td>106</td>
+      <td>130</td>
+      <td>123.9</td>
+      <td>French, German, Polish</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>150 voxels*</td>
+    </tr>
+    <tr>
+      <td>Krafnick et al., 2014</td>
+      <td>15</td>
+      <td>15</td>
+      <td>118.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Children</td>
+      <td>Pp&lt; 0.01</td>
+      <td>p &lt; 0.01 FWE corrected</td>
+    </tr>
+    <tr>
+      <td>Kronbichler et al., 2008</td>
+      <td>15</td>
+      <td>13</td>
+      <td>187.9</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adolescents</td>
+      <td>p &lt; 0.005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liu et al., 2013b</td>
+      <td>18</td>
+      <td>18</td>
+      <td>141.4</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Cchildren</td>
+      <td>p &lt; 0.001</td>
+      <td>196 voxels</td>
+    </tr>
+    <tr>
+      <td>Menghini et al., 2008</td>
+      <td>10</td>
+      <td>10</td>
+      <td>489.0</td>
+      <td>Italian</td>
+      <td>Alphabetic</td>
+      <td>Adult</td>
+      <td>p &lt; 0.005</td>
+      <td>p &lt; 0.05 corrected</td>
+    </tr>
+    <tr>
+      <td>Moreau et al., 2019</td>
+      <td>12</td>
+      <td>12</td>
+      <td>352.2</td>
+      <td>English</td>
+      <td>Alphabetic</td>
+      <td>Adult</td>
+      <td>p &lt; 0.05 FWE corrected</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pernet et al., 2009</td>
+      <td>39</td>
+      <td>38</td>
+      <td>336.0</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adult</td>
+      <td>p&lt; 0.05 FDR corrected</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Silani et al., 2005</td>
+      <td>32</td>
+      <td>32</td>
+      <td>304.5</td>
+      <td>Italian, French, English</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Siok et al., 2008</td>
+      <td>16</td>
+      <td>16</td>
+      <td>132.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>p &lt; 0.05 FWE corrected</td>
+      <td>50 voxels</td>
+    </tr>
+    <tr>
+      <td>Steinbrink et al., 2008</td>
+      <td>8</td>
+      <td>8</td>
+      <td>262.8</td>
+      <td>German</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>p &lt; 0.05 FDR corrected</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tamboer et al., 2015</td>
+      <td>57</td>
+      <td>37</td>
+      <td>245.3</td>
+      <td>Dutch</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>p &lt; 0.05</td>
+      <td>200 voxels</td>
+    </tr>
+    <tr>
+      <td>Vinckenbosch et al., 2005</td>
+      <td>10</td>
+      <td>13</td>
+      <td>282.0</td>
+      <td>French</td>
+      <td>Alphabetic</td>
+      <td>Adults</td>
+      <td>p &lt; 0.01</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Wang et al., 2019</td>
+      <td>17</td>
+      <td>27</td>
+      <td>134.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>p &lt; 0.05 FWE corrected</td>
+    </tr>
+    <tr>
+      <td>Xia et al., 2016</td>
+      <td>12</td>
+      <td>12</td>
+      <td>132.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Xia et al., 2016</td>
+      <td>12</td>
+      <td>12</td>
+      <td>169.2</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yang et al., 2016</td>
+      <td>14</td>
+      <td>9</td>
+      <td>149.0</td>
+      <td>Chinese</td>
+      <td>Morpho-syllabic</td>
+      <td>Children</td>
+      <td>p &lt; 0.001</td>
+      <td>111 voxels*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*equivalent to 0.05 corrected; ** equivalent to 0.01 corrected._
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/69523/elife-69523-fig4-v2.jpg)
 
-## Voxel-wise meta-analysis
+### Voxel-wise meta-analysis
 
 After data acquisition, we conducted a voxel-wise meta-analysis using the anisotropic effect-size version of Signed Differential Mapping software (AES-SDM version 5.14, see http://www.sdmproject.com) separately for functional studies and structural studies in alphabetic languages and morpho-syllabic languages. Unlike other coordinate-based meta-analysis methods such as Activation likelihood estimation (ALE) or Multilevel peak Kernel density analysis (MKDA), AES-SDM combined the peak coordinates with the statistical parameter maps to increase the sensitivity of the analysis (Radua et al., 2012a). Data were first preprocessed with the statistical parameter maps and the peak coordinates were convolved with a fully anisotropy un-normalized Gaussian kernel (ɑ = 1) (full width at half maximum = 20 mm) to recreate the effect size map and the corresponding variance map for each study (Radua et al., 2012a; Radua et al., 2014). Then, a random-effect model was set up to calculate the differences between the DD group and the control group. Five hundred permutations were performed to ensure the stability of the analysis. Finally, the results of the standard meta-analysis were thresholded at peak height of the mean effect size SDM-Z = 1, uncorrected p = 0.005 at the voxel level and 150 voxels at the cluster level, which is stricter than the threshold suggested by Radua et al., 2012a (peak height SDM-Z = 1, uncorrected p = 0.005 at the voxel level and 10 voxels at the cluster level) in order to avoid false-positive results and gain enough sensitivity.
 
@@ -158,13 +2279,13 @@ To find out the common language difference between the structural and functional
 
 To test the stability of the meta-analysis results, we conducted a whole-brain jack-knife sensitivity analysis. The standard meta-analysis was repeated n times (n = 79 for functional experiments in alphabetic languages, n = 12 for functional experiments in morpho-syllabic languages, n = 21 for structural experiments in alphabetic languages, n = 6 for structural experiments in morpho-syllabic languages) but leaving out one experiments each time, to determine whether the results remained significant.
 
-## Multimodal meta-analysis
+### Multimodal meta-analysis
 
 Because we were interested in the convergence between functional deficits and structural deficits, a multimodal meta-analysis was conducted in alphabetic languages and morpho-syllabic languages separately, which provided an efficient way to combine two meta-analyses in different modalities. The union probabilities of the meta-analytical maps of functional studies and structural studies were estimated and then thresholded at the peak height p = 0.00025, with a voxel level uncorrected p = 0.0025 and 150 voxels at the cluster level, which was stricter than the one suggested by Radua et al., 2012b; Radua et al., 2013 (peak height p = 0.00025, with a voxel level uncorrected p = 0.0025 and 10 voxels at cluster level).
 
 To find out the common multimodal deficits in the two language groups, we conducted a conjunction minimum analysis (Friston et al., 1999; Nichols et al., 2005) using the image calculation function of SPM12 (https://www.fil.ion.ucl.ac.uk) between the multimodal deficits in the alphabetic group and the morpho-syllabic group.
 
-## Confirmation study
+### Confirmation study
 
 Because there were studies on both adults and children in the alphabetic group, whereas most of the morpho-syllabic studies were on children, the language difference may be due to the unmatched age range in the two groups of studies. In order to eliminate the influence of the confound, we conducted a confirmation analysis with only studies on children in the alphabetic group (n = 36 for the functional studies and n = 8 for the structure studies). Then, we compared the alphabetic and morpho-syllabic groups for functional studies and structural studies separately.
 

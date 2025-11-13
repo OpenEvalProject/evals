@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0553yr311 Scientific Computation Research Institute (SCRIUR), Universidad de La Rioja Logroño Spain
+1. Scientific Computation Research Institute (SCRIUR), Universidad de La Rioja Logroño Spain ([ROR:0553yr311](https://ror.org/0553yr311))
 2. Centro de Interpretación Paleontológica de La Rioja La Rioja Spain
-3. https://ror.org/02msb5n36 Grupo de Biología Evolutiva (GBE), Universidad Nacional de Educación a Distancia Las Rozas Spain
-4. https://ror.org/01c27hj86 Instituto Dom Luiz, Faculdade de Ciências, Universidade de Lisboa Lisboa Portugal
+3. Grupo de Biología Evolutiva (GBE), Universidad Nacional de Educación a Distancia Las Rozas Spain ([ROR:02msb5n36](https://ror.org/02msb5n36))
+4. Instituto Dom Luiz, Faculdade de Ciências, Universidade de Lisboa Lisboa Portugal ([ROR:01c27hj86](https://ror.org/01c27hj86))
 
 † Corresponding author
 
@@ -26,15 +26,578 @@ Sauropod dinosaurs evolved a distinct body plan that allowed them to reach some 
 
 Previous studies based on sauropod anatomical description, systematics, traditional morphometrics, biomechanics, and GMM suggested that there was an important evolutionary trend in the appendicular skeleton toward the acquisition of a stable limb posture known as wide-gauge (Klinkhamer et al., 2019; Lefebvre et al., 2022; Salgado et al., 1997; Sander, 2013; Ullmann et al., 2017; Upchurch et al., 2004; Voegele et al., 2021; Wilson and Carrano, 1999; Wilson, 2002). This feature appears among deeply branched Neosauropoda, in particular, among titanosauriforms, which exhibit a progressively arched limb posture (Salgado et al., 1997; Upchurch et al., 2004; Voegele et al., 2021; Wilson and Carrano, 1999; Wilson, 2002). The wide stance may enable enhanced lateral stability during locomotion, allowing them to exploit more efficiently inland environments (Mannion and Upchurch, 2010; Ullmann et al., 2017). However, the widening of the body in Titanosauriformes and the acquisition of the wide-gauge stance is still poorly understood. Although the arched limbs and wider postures appeared in the largest sauropods among Titanosauriformes (Bates et al., 2016; Henderson, 2006; Ullmann et al., 2017; Wilson and Carrano, 1999), these features may at least be acquired independently among both small and large titanosauriforms of different subclades (Henderson, 2006; Bates et al., 2016). Limb posture may have been related to achieving greater ranges of ecological niches through biomechanical stability rather than allowing increasing their body size itself (e.g. Bates et al., 2016; Henderson, 2006; Ullmann et al., 2017). The study of the hind limb through 2D and 3D geometric morphometrics (GMM) allows us to analyze complex morphological changes across the titanosauriformes phylogeny (e.g. Lefebvre et al., 2022; Ullmann et al., 2017). Here, we will use 3D-digitized and reconstructed titanosauriform hind limbs (Table 1, see also Figure 1) to test whether there is a relationship between wider hind limb posture (as the hind limbs are the main weight support of the sauropod body, see Bates et al., 2016) and their body size, as proxied by the hind limb size. We chose the centroid size of the hind limb because the size of the femur and tibia correlates well with sauropod body mass (Campione and Evans, 2020; Mazzetta et al., 2004), but alternative tests using femoral length or body mass estimations are provided in Appendix 1-2 and Supplementary file 2. We will also test for potential morphological convergence between different titanosauriform subclades regardless of their body size. The analysis presented here can be seen as an expansion of the Lefebvre et al., 2022 study on sauropod limb evolution as we analyze a sample comprised mostly of Late Cretaceous lithostrotian sauropods (their study included a broad diversity of sauropodomorph taxa including several titanosaurs).
 
+**Table 1.**
+ Specimen sample used in this study.Proximodistal hind limb length measured in mm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Clade</th>
+      <th>Hind limb length (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aeolosaurus</td>
+      <td>Aeolosaurini</td>
+      <td>1839</td>
+    </tr>
+    <tr>
+      <td>Ampelosaurus</td>
+      <td>Lirainosaurinae</td>
+      <td>1411</td>
+    </tr>
+    <tr>
+      <td>Antarctosaurus</td>
+      <td>Titanosauria</td>
+      <td>2351</td>
+    </tr>
+    <tr>
+      <td>Bonatitan</td>
+      <td>Lithostrotia</td>
+      <td>963</td>
+    </tr>
+    <tr>
+      <td>Bonitasaura</td>
+      <td>Lithostrotia</td>
+      <td>1987</td>
+    </tr>
+    <tr>
+      <td>Dreadnoughtus</td>
+      <td>Titanosauria</td>
+      <td>3184</td>
+    </tr>
+    <tr>
+      <td>Euhelopus</td>
+      <td>Euhelopodidae</td>
+      <td>1683</td>
+    </tr>
+    <tr>
+      <td>Jainosaurus</td>
+      <td>Titanosauria</td>
+      <td>2188</td>
+    </tr>
+    <tr>
+      <td>Ligabuesaurus</td>
+      <td>Somphospondyli</td>
+      <td>2866</td>
+    </tr>
+    <tr>
+      <td>Lirainosaurus</td>
+      <td>Lirainosaurinae</td>
+      <td>1074</td>
+    </tr>
+    <tr>
+      <td>Lohuecotitan</td>
+      <td>Lithostrotia</td>
+      <td>1120</td>
+    </tr>
+    <tr>
+      <td>Magyarosaurus</td>
+      <td>Lithostrotia</td>
+      <td>750</td>
+    </tr>
+    <tr>
+      <td>Mendozasaurus</td>
+      <td>Colossosauria</td>
+      <td>2334</td>
+    </tr>
+    <tr>
+      <td>Muyelensaurus</td>
+      <td>Colossosauria</td>
+      <td>1450</td>
+    </tr>
+    <tr>
+      <td>Neuquensaurus</td>
+      <td>Saltasauridae</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <td>Oceanotitan</td>
+      <td>Macronaria</td>
+      <td>1892</td>
+    </tr>
+    <tr>
+      <td>Saltasaurus</td>
+      <td>Saltasauridae</td>
+      <td>1230</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/92498/elife-92498-fig1-v1.jpg)
 
 **Figure 1.:** (A) Oceanotitan dantasi in anterior and posterior view; (B) Ligabuesarusu leanzai in posterior and anterior view; (C) Lohuecotitan pandafilandi in anterior and posterior view; (D) Saltasaurus loricatus in posterior and anterior view.
 
 ## Results
 
-## Titanosauriformes morphospace occupation
+### Titanosauriformes morphospace occupation
 
 A Principal Component Analysis (PCA) was performed to generate an occupation morphospace, obtaining a total of 16 shape Principal Components (after Anderson’s χ test; PCs from now on). The first six PCs accounted for 78.3% of the cumulative morphological variation (Table 2). The non-parametric Kruskal-Wallis test shows that no single shape variable reports significant differences among sauropod subclades (Tables 3 and 4). Here, we only comment on the results of the first three shape PCs (>50% of the cumulative variance) due to space limitations, but a full description and visualization of the complete PCA and phylomorphospace projections can be found in Appendix 2.
+
+**Table 2.**
+ PCA results over GPA-aligned coordinates.Variance explained by each shape PC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Explained variance (%)</th>
+      <th>Cumulative variance (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC1</td>
+      <td>29.92</td>
+      <td>29.92</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>14.83</td>
+      <td>44.75</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>11.61</td>
+      <td>56.36</td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>8.83</td>
+      <td>65.19</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>7.02</td>
+      <td>72.21</td>
+    </tr>
+    <tr>
+      <td>PC6</td>
+      <td>6.09</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <td>PC7</td>
+      <td>4.18</td>
+      <td>82.48</td>
+    </tr>
+    <tr>
+      <td>PC8</td>
+      <td>3.75</td>
+      <td>86.23</td>
+    </tr>
+    <tr>
+      <td>PC9</td>
+      <td>3.12</td>
+      <td>89.35</td>
+    </tr>
+    <tr>
+      <td>PC10</td>
+      <td>2.19</td>
+      <td>91.53</td>
+    </tr>
+    <tr>
+      <td>PC11</td>
+      <td>2.15</td>
+      <td>93.68</td>
+    </tr>
+    <tr>
+      <td>PC12</td>
+      <td>1.95</td>
+      <td>95.64</td>
+    </tr>
+    <tr>
+      <td>PC13</td>
+      <td>1.56</td>
+      <td>97.19</td>
+    </tr>
+    <tr>
+      <td>PC14</td>
+      <td>1.18</td>
+      <td>98.38</td>
+    </tr>
+    <tr>
+      <td>PC15</td>
+      <td>0.92</td>
+      <td>99.29</td>
+    </tr>
+    <tr>
+      <td>PC16</td>
+      <td>0.71</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Kruskal-Wallis test on shape PCA variables between the most inclusive subclades analyzed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Chi-sq</th>
+      <th>p-value</th>
+      <th>p-adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC1</td>
+      <td>11.954</td>
+      <td>0.153</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>5.592</td>
+      <td>0.693</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>7.886</td>
+      <td>0.445</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>9.647</td>
+      <td>0.291</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>5.17</td>
+      <td>0.739</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC6</td>
+      <td>7.618</td>
+      <td>0.472</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC7</td>
+      <td>8.915</td>
+      <td>0.35</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC8</td>
+      <td>8.941</td>
+      <td>0.347</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC9</td>
+      <td>10.206</td>
+      <td>0.251</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC10</td>
+      <td>10.422</td>
+      <td>0.237</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC11</td>
+      <td>4.768</td>
+      <td>0.782</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC12</td>
+      <td>5.66</td>
+      <td>0.685</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC13</td>
+      <td>8.886</td>
+      <td>0.352</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC14</td>
+      <td>9.856</td>
+      <td>0.275</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC15</td>
+      <td>10.248</td>
+      <td>0.248</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC16</td>
+      <td>4.578</td>
+      <td>0.802</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Phylogenetic ANOVA test on shape PCA variables between the most inclusive subclades studied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Df</th>
+      <th>SS</th>
+      <th>MS</th>
+      <th>R2</th>
+      <th>F</th>
+      <th>Z</th>
+      <th>Pr(&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC1</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>0.073</td>
+      <td>0.009</td>
+      <td>0.466</td>
+      <td>0.872</td>
+      <td>–0.105</td>
+      <td>0.531</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>0.083</td>
+      <td>0.010</td>
+      <td>0.533</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>0.157</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>0.001</td>
+      <td>1.50E+04</td>
+      <td>0.685</td>
+      <td>0.218</td>
+      <td>0.573</td>
+      <td>0.313</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>5.52E+04</td>
+      <td>6.90E+09</td>
+      <td>0.314</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total1</td>
+      <td>16</td>
+      <td>0.002</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>1.54E+04</td>
+      <td>1.93E+09</td>
+      <td>0.285</td>
+      <td>0.399</td>
+      <td>–0.925</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>3.86E+04</td>
+      <td>4.83E+08</td>
+      <td>0.714</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>5.40E+04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>1.49E+04</td>
+      <td>1.87E+09</td>
+      <td>0.3534</td>
+      <td>0.546</td>
+      <td>–0.496</td>
+      <td>0.658</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>2.73E+04</td>
+      <td>3.41E+09</td>
+      <td>0.646</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>4.22E+04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>3.77E+04</td>
+      <td>4.72E+09</td>
+      <td>0.556</td>
+      <td>125.362</td>
+      <td>0.121</td>
+      <td>0.452</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>3.01E+04</td>
+      <td>3.77E+09</td>
+      <td>0.443</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>6.79E+04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PC6</td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>3.24E+04</td>
+      <td>4.06E+09</td>
+      <td>0.590</td>
+      <td>144.158</td>
+      <td>0.590</td>
+      <td>0.264</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>2.25E+04</td>
+      <td>2.82E+09</td>
+      <td>0.409</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>5.50E+04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>~Clade</td>
+      <td>8</td>
+      <td>1.63E+04</td>
+      <td>2.05E+09</td>
+      <td>0.434</td>
+      <td>0.768</td>
+      <td>–0.315</td>
+      <td>0.625</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>8</td>
+      <td>2.13E+04</td>
+      <td>2.66E+09</td>
+      <td>0.565</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>16</td>
+      <td>3.76E+04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 PC1 (summarizing 29.92% of the total variance; Figure 2a–b) is associated with characters describing the orientation and compression of the femoral shaft, the length of the distal femoral condyles, the orientation of the fourth trochanter, and the length and width of the zeugopod bones (Figure 2c) . Non-titanosaurian macronarians occupy negative values, whereas non-lithostrotian titanosaurs are distributed between weakly negative (e.g. Bonatitan) and positive PC1 values (Figure 2b). Lithostrotian titanosaurs occupy a wide range of values, with Aeolosaurus, the specimens of Colossosauria and Lirainosaurus clustering at negative PC1 values (however, Ampelosaurus occupies negative PC1 values approaching zero; Figure 2b). Most of the non-saltasaurid, non-colossosaurian, non-lirainosaurine, and non-aeolosaurine lithostrotians are broadly distributed in the morphospace between negative and positive values, with Bonitasaura occupying the farthest negative PC1 values and overlapping with Colossosauria and Lirainosaurinae (Figure 2b). The highest positive PC1 values are occupied by saltasaurids (i.e. Saltasaurus and Neuquensaurus; Figure 2b). There is a trend from non-titanosaurian macronarians at negative values to the titanosaurian node at weakly negative values (Figure 2b). In this PC1, the Titanosauria node splits near a zero score, with Lohuecotitan occupying weakly positive PC1 values near a zero score [in recent phylogenetic analyses, Lohuecotitan has been recovered as a member of Lithostrotia (Díez Díaz et al., 2021a; Navarro et al., 2022; Mocho et al., 2024b)], but other deeply nested titanosaurs occupy positive scores in PC1 (Figure 2b). The trend toward positive values follows with several other deeply nested lithostrotians. However, both Colossosauria and the two analyzed members of Lirainosaurinae fall into negative PC1 values (Lirainosaurinae was not recovered as a monophyletic group in our current topology Figure 2b). There are no significant differences between the different sauropod subclades in this PC (Supplementary file 2).
 
@@ -54,7 +617,7 @@ Finally, PC3 (summarizing 11.61% of the variance; Figures 3a–b–4a–b) is re
 
 **Figure 4.:** (A) PC1-PC3 biplot. (B) PC1-PC3 phylomorphospace with projected phylogenetic tree. (C) Representation of the shape change along PC3, blue are negative scores, red are positive scores. Percentage of variance of each PC in brackets under corresponding axis. Ae – Aeolosaurus, Amp – Ampelosaurus, An – Antarctosaurus, Bo – Bonatitan, Bon – Bonitasaura, Dre – Dreadnoughtus, Eu – Euhelopus, Ja – Jainosaurus, Li – Lirainosaurus, Lig – Ligabuesaurus, Lo – Lohuecotitan, Ma – Magyarosaurus, Me – Mendozasaurus, Mu – Muyelensaurus, Ne – Neuquensaurus, Sa – Saltasaurus.
 
-## Size distribution
+### Size distribution
 
 There is a trend in hind limb centroid size distribution from large, non-titanosaurian macronarians in the Early Cretaceous (e.g. Euhelopus) to small, deeply nested lithostrotian titanosaurs in the Late Cretaceous (Figure 5). This trend coincides with the morphospace occupation recovered by PC1 early-branching and larger non-titanosaurian macronarians among negative PC1 values and progressively more deeply nested and smaller titanosaurs toward positive PC1 values (Figure 5). The smallest lithostrotians are concentrated at deeply branching nodes, including the Ibero-Armorican lirainosaurines, Bonatitan reigi, Magyarosaurus spp. and members of Saltasaurinae (Figure 5).
 
@@ -62,13 +625,138 @@ There is a trend in hind limb centroid size distribution from large, non-titanos
 
 However, the RMA models found no significant correlation between the shape variables and the log-transformed centroid size (Table 5, see Figure 6 and Appendix 2). The PC1 model (r2=0.105, p-value = 0.204; Figure 6a) found negative allometry but no significant correlation and the percentage of variance explained by hind limb size differences was small. Almost all of the RMA found a negative relationship, except for several sub-sampled RMA models like the PC2 against log-transformed centroid size for the sample of lithostrotian titanosaurs only (Figure 6b). None of the RMA models for the sub-samples found a significant correlation (see Appendix 2).
 
+**Table 5.**
+ RMA models of the shape PCs against log-transformed Centroid size.CI – confidence interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>intercept</th>
+      <th>slope</th>
+      <th>CI 2.5% Slope</th>
+      <th>CI 97.5% Slope</th>
+      <th>r2</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC1</td>
+      <td>0.221</td>
+      <td>–0.102</td>
+      <td>–0.168</td>
+      <td>–0.062</td>
+      <td>0.105</td>
+      <td>0.204</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>0.155</td>
+      <td>–0.072</td>
+      <td>–0.12</td>
+      <td>–0.043</td>
+      <td>0.054</td>
+      <td>0.371</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>0.137</td>
+      <td>–0.064</td>
+      <td>–0.106</td>
+      <td>–0.038</td>
+      <td>0.055</td>
+      <td>0.363</td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>0.12</td>
+      <td>–0.055</td>
+      <td>–0.093</td>
+      <td>–0.033</td>
+      <td>0.026</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>–0.107</td>
+      <td>0.049</td>
+      <td>0.03</td>
+      <td>0.082</td>
+      <td>0.079</td>
+      <td>0.275</td>
+    </tr>
+    <tr>
+      <td>PC6</td>
+      <td>–0.1</td>
+      <td>0.046</td>
+      <td>0.028</td>
+      <td>0.076</td>
+      <td>0.086</td>
+      <td>0.254</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/92498/elife-92498-fig6-v1.jpg)
 
-**Figure 6.:** (A) PC1 against log-Centroid size, all taxa RMA in dark red: intercept = 0.221, slope = –0.102, r=0.105, p=0.204; Titanosauria only partial RMA in dashed green: intercept = 0.203, slope = –0.092, 2r=0.118, p=0.229; Lithostrotia only partial RMA in dotted orange: intercept = 0.246, slope = –0.120, 2r=0.319, p=0.07; (2B) PC2 against log-Centroid size, all taxa RMA in dark red: intercept = 0.155, slope = –0.072, r=0.054, p=0.371; Titanosauria only partial RMA in dashed green: intercept = 0.158, slope = –0.075, 2r=0.117, p=0.232; Lithostrotia only partial RMA in dotted orange: intercept = –0.127, slope = 0.066, 2r=0, p=0.952; (2C) PC3 against log-Centroid size (Csize), all taxa RMA in dark red: intercept = 0.137, slope = –0.064, r=0.055, p=0.363; Titanosauria only partial RMA in dashed green: intercept = 0.110, slope = –0.055, 2r=0.236, p=0.078; Lithostrotia only partial RMA in dotted orange: intercept = 0.140, slope = –0.073, 2r=0.313, p=0.074. 2Ae – Aeolosaurus, Amp – Ampelosaurus, An – Antarctosaurus, Bo – Bonatitan, Bon – Bonitasaura, Dre – Dreadnoughtus, Eu – Euhelopus, Ja – Jainosaurus, Li – Lirainosaurus, Lig – Ligabuesaurus, Lo – Lohuecotitan, Ma – Magyarosaurus, Me – Mendozasaurus, Mu – Muyelensaurus, Ne – Neuquensaurus, Sa – Saltasaurus.
+**Figure 6.:** (A) PC1 against log-Centroid size, all taxa RMA in dark red: intercept = 0.221, slope = –0.102, r2=0.105, p=0.204; Titanosauria only partial RMA in dashed green: intercept = 0.203, slope = –0.092, r2=0.118, p=0.229; Lithostrotia only partial RMA in dotted orange: intercept = 0.246, slope = –0.120, r2=0.319, p=0.07; (B) PC2 against log-Centroid size, all taxa RMA in dark red: intercept = 0.155, slope = –0.072, r2=0.054, p=0.371; Titanosauria only partial RMA in dashed green: intercept = 0.158, slope = –0.075, r2=0.117, p=0.232; Lithostrotia only partial RMA in dotted orange: intercept = –0.127, slope = 0.066, r2=0, p=0.952; (C) PC3 against log-Centroid size (Csize), all taxa RMA in dark red: intercept = 0.137, slope = –0.064, r2=0.055, p=0.363; Titanosauria only partial RMA in dashed green: intercept = 0.110, slope = –0.055, r2=0.236, p=0.078; Lithostrotia only partial RMA in dotted orange: intercept = 0.140, slope = –0.073, r2=0.313, p=0.074. Ae – Aeolosaurus, Amp – Ampelosaurus, An – Antarctosaurus, Bo – Bonatitan, Bon – Bonitasaura, Dre – Dreadnoughtus, Eu – Euhelopus, Ja – Jainosaurus, Li – Lirainosaurus, Lig – Ligabuesaurus, Lo – Lohuecotitan, Ma – Magyarosaurus, Me – Mendozasaurus, Mu – Muyelensaurus, Ne – Neuquensaurus, Sa – Saltasaurus.
 
-## Phylogenetic trends
+### Phylogenetic trends
 
 Pagel’s lambda (λ) estimation shows a significant phylogenetic signal in log-transformed hind limb centroid size (λ=0.982), and PC1 (λ=0.715), PC3 (λ=0.760), PC5 (λ=0.778) and PC6 (λ=0.697) therefore exhibiting a trend in the evolution of Titanosauriformes (Table 6). We estimated ancestral characters (ACEs) using log-transformed hind limb centroid size and those shape variables (the PCs) that exhibit a significant signal during the evolution of Titanosauriformes and tested for a directionality or trend (Figure 7). The resulting tests recover significant trends toward a decrease in hind limb size across all titanosauriform subclades, with positive PC1 values including somphospondyli titanosauriformes, and negative PC3 values across all titanosauriform subclades (Supplementary file 2).
+
+**Table 6.**
+ Estimated phylogenetic signal via Pagel’s lambda.p value of log-likelihood ratio test after 1000 simulations. * Indicates significant relationships for an alpha of 0.05. log-Csize – Log-transformed hind limb centroid size.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Lambda</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>log-Csize</td>
+      <td>0.982</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>PC1</td>
+      <td>0.715</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>0.76</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>0.778</td>
+      <td>0.031*</td>
+    </tr>
+    <tr>
+      <td>PC6</td>
+      <td>0.697</td>
+      <td>0.01*</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92498/elife-92498-fig7-v1.jpg)
 
@@ -76,11 +764,82 @@ Pagel’s lambda (λ) estimation shows a significant phylogenetic signal in log-
 
 ## Discussion
 
-## Hind limb morphological convergence in Titanosauriformes
+### Hind limb morphological convergence in Titanosauriformes
 
 Analysis of the shape variables extracted by PCA on the Procrustes coordinates of the sauropod taxa reveals a large overlap between the different titanosauriform subclades, in particular within Titanosauria (e.g. Figures 2—4), across all the resulting shape PCs. Both the non-parametric tests on the hind limb shape variables and the size, and the phylogenetic ANOVA accounting for the time-calibrated supertree topology, suggest the lack of sufficient and significant morphological differences between the different titanosauriform subclades studied in this analysis. Based on the lack of significant phylogenetic differences and the presence of morphological similarities, the evolutionary pattern observed for the titanosaurian hind limb may be explained by convergent evolution, consistent with previous analyses (Lefebvre et al., 2022; Páramo, 2020; Ullmann et al., 2017).
 
 Considering the analyzed sample, the acquisition of wide-gauge locomotion would be the main source of hind limb morphological variability in titanosaurian sauropods (Figures 2 and 5) and possesses a significant phylogenetic signal. The trend toward a more arched limb posture persists in the more deeply nested titanosaurs. Oceanotitan dantasi, a possible representative of Somphospondyli, exhibits a columnar hind limb characterized by no deflection of the femoral head with regard to the tibial condyle (although some titanosauriforms exhibit this feature, see Royo-Torres, 2009; recent phylogenetic approaches suggest that O. dantasi might represent non-titanosauriform macronarian, see Mocho et al., 2024a), and a straight and long, lateromedially narrow zeugopod with few anterior rotations of the fibula (Figure 2). In contrast, the more deeply branching titanosauriforms exhibit the typical titanosaurian hind limb configuration with a more arched posture, lateromedially more robust femora, and increased medial or proximo-medial deflection of the femoral head. Distally, the hind limb exhibits a slight rotation of the femoral distal ends and increasingly lateromedially robust zeugopods. The robust zeugopod elements are the only resemblance to O. dantasi as our outgroup (e.g. Figure 2). The highest positive PC1 (Figure 6) values correlate with several hyper-robust taxa of different titanosaur subclades that exhibit lateromedially and anteroposteriorly wide stylopods and zeugopods. In these taxa, the zeugopod bones are extremely shorter proximodistally, extremely arched with a predominance of tibiae characterized by short cnemial crests but somewhat rotated, interlocking with anteriorly deflected and robust fibulae as in the saltasaurine Saltasaurus loricatus, the lithostrotian Magyarosaurus spp. and the possible non-lithostrotian titanosaur Dreadnoughtus schrani (based on the super-tree: Figures 2 and 5). The acquisition of this particular morphology is correlated with the development of gigantism within Titanosauria (Carrano, 2005; Lefebvre et al., 2022; Ullmann et al., 2017), at least when analyzing early branching members of Lithostrotia. However, specimens occupying higher PC1 values exhibit the most hyper-robust and arched hind limbs, including representatives of the smallest lithostrotians and the largest non-lithostrotian titanosaur studied (Figure 5). The analyses of evolutionary trends presented here reveal that the trend toward titanosauriform gigantism shifted toward adaptation to dwarfism in some lithostrotian titanosaurs like Magyarosaurus and Neuquensaurus (see discussion on hind limb size variability below). In general, the results obtained here confirm the previously proposed trend toward the acquisition of robust and arched hind limbs in Titanosauria (Figure 7). Nevertheless, once hind limb mechanical stability was acquired (following e.g. Ullmann et al., 2017) the increasingly arched and robust morphologies established within Titanosauria cannot be fully related to an increase in body mass (Figure 6a) and are better explained as convergence between different subclades (Figures 2 and 6, see evolutionary trend breakdown in Table 7). Saltasaurine lithostrotians are characterized by this type of extreme morphology, with hyper-robust limb bones. Even large saltasaurid sauropods like Opisthocoelicaudia skarzyinski exhibit this type of hind limb (Borsuk-Bialynicka, 1977). However, this morphology is not exclusive of saltasaurids, since other titanosaurs exhibit homoplastic hyper-robust and arched hind limbs (i.e. Dreadnoughtus and Magyarosaurus). This progressively arched limb was probably hard-coded in the macronarian bauplan and, after the somphospondylan stable posture was acquired, was still present but relatable to a significant variability of biomechanical adaptations (Voegele et al., 2021) as our analyses suggest. Despite the biomechanical diversity associated with hind limb morphology being still unclear, several studies point out that morphological differences in the fore limb elongation in sauropods may be related to different feeding niche capabilities (Bates et al., 2016; Upchurch et al., 2021; Vidal et al., 2020; Voegele et al., 2020), including discussion on possible bipedal/tripodial rearing abilities that are much more developed, particularly in sauropods with a hyper-robust hind limb (Upchurch et al., 2021). Interestingly, Dreadnoughtus exhibits this hyper-robust hind limb with subequal autopodial lengths and a wedged sacrum (Vidal et al., 2020; Voegele et al., 2021), an anteriorly placed body Centre of Masses (CoM; Bates et al., 2016) and possibly high browsing feeding capabilities (e.g. Vidal et al., 2020). While the small saltasaurids in this study exhibit short necks, stout bodies, and a posteriorly placed CoM (Bates et al., 2016), the pneumaticity of some saltasaurid tails (Upchurch et al., 2021; Zurriaguz and Cerda, 2017) may suggest the possibility of a more anterior location of the CoM. It is possible that the acquisition of a hyper-robust and arched hind limb morphology is related to improved skeletal support in high browsing and extremely large sauropods like Dreadnoughtus, which in combination with their size and neck dorsiflexion capabilities (e.g. Vidal et al., 2020) allowed them to feed in a high niche stratification, independent of the acquisition of rearing capabilities.
+
+**Table 7.**
+ Results of pairwise ancestor-descendant comparisons for log-transformed centroid size in macronarian sauropods in our time-calibrated supertree (17 terminal taxa).n=ingroup internal nodes + terminal taxa. *=accepted as significant with alpha <0.05. °=Lithostrotia + Antarctosaurus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clade</th>
+      <th>Mean</th>
+      <th>Sum</th>
+      <th>Skew</th>
+      <th>Median</th>
+      <th>n</th>
+      <th>Positive changes</th>
+      <th>Negative changes</th>
+      <th>χ2</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titanosauriformes</td>
+      <td>–0.127</td>
+      <td>–3.819</td>
+      <td>–0.223</td>
+      <td>–0.032</td>
+      <td>30</td>
+      <td>12</td>
+      <td>18</td>
+      <td>1.2</td>
+      <td>0.273</td>
+    </tr>
+    <tr>
+      <td>Somphospondyli</td>
+      <td>–0.366</td>
+      <td>–10.252</td>
+      <td>–0.148</td>
+      <td>–0.256</td>
+      <td>28</td>
+      <td>4</td>
+      <td>24</td>
+      <td>14.286</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Titanosauria</td>
+      <td>–0.288</td>
+      <td>–7.488</td>
+      <td>–0.088</td>
+      <td>–0.182</td>
+      <td>26</td>
+      <td>5</td>
+      <td>21</td>
+      <td>9.846</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>Lithostrotia°</td>
+      <td>–0.283</td>
+      <td>–6.22</td>
+      <td>–0.193</td>
+      <td>–0.307</td>
+      <td>22</td>
+      <td>5</td>
+      <td>17</td>
+      <td>6.545</td>
+      <td>0.011*</td>
+    </tr>
+  </tbody>
+</table>
 
 Although PC2 does not provide a phylogenetic signal for the titanosaurian evolution, it reveals significant differences among smaller titanosaurian taxa with robust hind limbs and especially hyper-robust zeugopodia (Figure 3), like Magyarosaurus and the saltasaurines Neuquensaurus and Saltasaurus, which can be related to different roles in the necessary mechanical stability for rearing capabilities (following Upchurch et al., 2021). Magyarosaurus, Neuquensaurus, and Saltasaurus occupy increasingly positive PC2 values (Figure 3). Magyarosaurus exhibits a short zeugopod in which the tibia is slightly laterally rotated, the cnemial crest is laterally projected, and the fibula is slightly sigmoidal with its proximal third displaying an anterior projection and a medially deflected anterolateral crest. Saltasaurines exhibit an extreme condition characterized by short and robust zeugopods. Members of this clade show laterally rotated tibiae with posteriorly deflected distal ends and sigmoidal fibulae that articulate in an oblique position with the anteriorly projected proximal third and anteriorly placed lateral crest. Additionally, this anatomical fibular configuration produces a more anterior displacement of the distal attachment of the M. iliofibularis and a probable different distribution of the stress as the main beam of the shafts is rotated from the hind limb trunk, for which previous myological studies suggest that there is no evident body size/phylogenetic pattern (Voegele et al., 2021). In contrast, Dreadnoughtus exhibits a slightly arched hind limb posture with a robust zeugopod, a medially deflected cnemial crest of the tibia, and a sigmoidal fibula that is slightly posteriorly deflected, and it is projected at negative PC2 (Figure 3). In this taxon, the fibula, although sigmoidal, articulates in a mostly straight anatomical position with the particularly robust tibia. The differences among robust hind limb titanosaurian morphologies may suggest that their convergence is due to other sources of variation (i.e. different biomechanical adaptations). It is also important to note that all the lithostrotian titanosaurs that exhibit a slightly rotated fibula, whether sigmoid or not, and extremely arched hind limb morphology independent of their size, exhibit femora with reduced fibular epicondyles (after Otero et al., 2020).
 
@@ -88,11 +847,153 @@ Previous studies also pointed to the distinct morphology of the members of Colos
 
 Despite these small differences in the hind limb morphology in key features that may be related to the giant titanosaurian body size, our analyses indicate the great morphological convergence between the different titanosaurian subclades (e.g. Aeolosaurus and Colossosauria; or the latter closer to the plesiomorphic morphology of Euhelopus, Figure 2; see also Tables 3–4). Also, no significant differences were found in any of the shape variables, either in the pairwise subclade comparisons (Supplementary file 2), or in the shape PCs that indicate slightly less variance than expected by evolution under Brownian motion (i.e. shape PC1, PC3 in this text, Table 5; shape PC5-6 in Supplementary file 2).
 
-## Hind limb size evolution
+### Hind limb size evolution
 
 Our results with the current time-calibrated supertree topology indicate that there is a trend in the evolution of titanosaurs towards a decrease in size (Figures 5 and 7, Tables 5–6). In the light of our current sample, once many of the hind limb features relatable to wide-gauge posture are acquired, there is a phylogenetical trend, close to a pure Brownian motion model, toward an overall decreasing size (log-transformed hind limb centroid size λ=0.982), which is consistent with previous results that indicated that lithostrotians (or even all macronarian sauropods) may not follow Cope’s rule (Carrano, 2006; de Souza and Santucci, 2014). This could be due to our current lithostrotian sample as some of the Saltasaurinae or closely related taxa (i.e. Opisthocoelicauda and Alamosaurus, which are usually considered members of a more inclusive clade, Saltasauridae) are also large lithostrotians, especially Alamosaurus. However, it is important to note that we also found several key traits in our shape variables (most importantly summarized in PC1 and PC3, 41.53% of the total sample variance between them; Table 7) that are usually related to the acquisition of gigantism and that exhibit significant signals about titanosaurian evolution. When we tested for a significant correlation between these traits and the log-transformed hind limb centroid size, no significant correlation was found between any of the shape variables and size (Table 4, Figure 6).
 
 Within Titanosauria, the hind limb arched morphology (increasing wide-gauge posture) does not correspond to the significant trend toward a size decrease observed in this sauropod clade (see Figure 7, Tables 6–7). Large titanosaurs show very different hind limb morphologies. Some lithostrotians exhibit plesiomorphic columnar, slightly arched hind limbs with elongated or even gracile zeugopod elements (Antarctosaurus, Aeolosaurus, or the extremely slender hind limb of the colossosaurians Mendozasaurus and Muyelensaurus; Figure 2), whereas other large titanosaurs (i.e. Dreadnoughtus) exhibits an extremely robust hind limb with slightly reduced zeugopods, as may be expected from the typical trend toward the acquisition of an arched morphology in Titanosauriformes (Figure 2a). In this context, it is remarkable that most of the lithostrotians that exhibit extremely arched hind limbs, robust elements, and reduced zeugopod elements decrease in size, like Saltasaurus or Magyarosaurus (Figure 2, see discussion on morphological convergence above). Our test found that the trend toward this type of hind limb breaks in titanosaurian sauropods, with more variable morphologies and large overlapping of morphospaces, whereas the hind limb size decreases (Figure 7, Tables 6–7). Most importantly, PC1-PC3 exhibits some of the morphological features that are classically related to wide-gauge arching morphology (e.g.) and our analyses found a significant trend toward increasingly arched hind limbs (Tables 8 and 9). However, the post-Cenomanian lithostrotians exhibit great morphological variability, with several taxa exhibiting plesiomorphic columnar femora (i.e. Ampelosaurus, Aeolosaurus, Magyarosaurus) and slightly straight zeugopodial elements, with anteriorly expanded tibial proximal ends, and straight non-rotated fibula expanded in the anterior view (Figures 4 and 7; see discussion on morphological convergence above). Among these lithostrotians, Ampelosaurus and Aeolosaurus are medium-sized sauropods, whereas Magyarosaurus exhibits both plesiomorphic hind limb morphology and the smallest size. Similarly, the large size variability in the post-early Coniacian cannot be related to the morphological features that are classically associated with the progressively arched morphology (Figure 7), as discussed before. Therefore, titanosaurs that produce large PC1-PC3 changes at this peak are both moderate-to-large in size, inducing a displacement of the morphospace: (i) toward the plesiomorphic hind limb morphology, plotted in negative PC1 and positive PC3 values (i.e. Aeolosaurus) or (ii) toward a morphology intermediate between the main PC1-PC3 typical robust arched titanosaurian hind limb morphology (i.e. Jainosaurus; Figure 7).
+
+**Table 8.**
+ Results of ancestor-descendant pairwise comparisons for shape PC1 in macronarian sauropods in our time-calibrated supertree (17 terminal taxa).n=ingroup internal nodes + terminal taxa. *=accepted as significant with alpha <0.05. °=Lithostrotia + Antarctosaurus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clade</th>
+      <th>Mean</th>
+      <th>Sum</th>
+      <th>Skew</th>
+      <th>Median</th>
+      <th>n</th>
+      <th>Positive changes</th>
+      <th>Negative changes</th>
+      <th>χ2</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titanosauriformes</td>
+      <td>0.051</td>
+      <td>1.518</td>
+      <td>0.98</td>
+      <td>0.043</td>
+      <td>30</td>
+      <td>29</td>
+      <td>1</td>
+      <td>26.133</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Somphospondyli</td>
+      <td>0.019</td>
+      <td>0.538</td>
+      <td>1.158</td>
+      <td>0.012</td>
+      <td>28</td>
+      <td>20</td>
+      <td>7</td>
+      <td>6.259</td>
+      <td>0.012*</td>
+    </tr>
+    <tr>
+      <td>Titanosauria</td>
+      <td>0.011</td>
+      <td>0.291</td>
+      <td>1.076</td>
+      <td>0.003</td>
+      <td>26</td>
+      <td>14</td>
+      <td>10</td>
+      <td>0.667</td>
+      <td>0.414</td>
+    </tr>
+    <tr>
+      <td>Lithostrotia°</td>
+      <td>0.011</td>
+      <td>0.24</td>
+      <td>1.079</td>
+      <td>0.002</td>
+      <td>22</td>
+      <td>11</td>
+      <td>10</td>
+      <td>0.048</td>
+      <td>0.827</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 9.**
+ Results of ancestor-descendant pairwise comparisons for shape PC3 in macronarian sauropods in our time-calibrated supertree (17 terminal taxa).n=ingroup internal nodes +terminal taxa. *=accepted s significant with alpha <0.05. °=Lithostrotia + Antarctosaurus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clade</th>
+      <th>Mean</th>
+      <th>Sum</th>
+      <th>Skew</th>
+      <th>Median</th>
+      <th>n</th>
+      <th>Positive changes</th>
+      <th>Negative changes</th>
+      <th>χ2</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titanosauriformes</td>
+      <td>–0.035</td>
+      <td>–1.047</td>
+      <td>1.697</td>
+      <td>–0.038</td>
+      <td>30</td>
+      <td>2</td>
+      <td>28</td>
+      <td>22.533</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Somphospondyli</td>
+      <td>–0.023</td>
+      <td>–0.639</td>
+      <td>2.174</td>
+      <td>–0.024</td>
+      <td>28</td>
+      <td>2</td>
+      <td>26</td>
+      <td>20.571</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Titanosauria</td>
+      <td>–0.008</td>
+      <td>–0.21</td>
+      <td>2.483</td>
+      <td>–0.009</td>
+      <td>26</td>
+      <td>3</td>
+      <td>23</td>
+      <td>15.385</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Lithostrotia°</td>
+      <td>–0.003</td>
+      <td>–0.074</td>
+      <td>2.323</td>
+      <td>–0.004</td>
+      <td>22</td>
+      <td>4</td>
+      <td>17</td>
+      <td>8.048</td>
+      <td>0.005*</td>
+    </tr>
+  </tbody>
+</table>
 
 Here, it is important to point out that when comparing our results with other lithostrotian titanosaurs not included in the current analysis, similar hind limb posture variability not relatable to hind limb size increases (and therefore body size) is observed. The arched morphology with extremely robust zeugopodial elements exhibited in saltasaurid sauropods (e.g. Saltasaurus) is also found in the dwarf non-lithostrotian titanosaur Diamantinasaurus (Poropat et al., 2021; Poropat et al., 2015). Its tibia shares similarities with those of Dreadnoughtus (anteroposteriorly and lateromedially wide proximal end, extremely short and laterally projected cnemial crest and lateromedially expanded distal end; Poropat et al., 2015; Ullmann and Lacovara, 2016), whereas the fibula is similar to the slightly straight fibula of Magyarosaurus, with a proximally anterior deflection (Poropat et al., 2015; APB direct observation on Magyarosaurus sp. specimens). Despite slight differences in the proportion of the zeugopodial elements, the hind limb morphology of Diamantinasaurus is similar to those of other small taxa. However, Rapetosaurus exhibits a completely different lithostrotian hind limb configuration that is more similar to that observed in Lirainosaurus. Thus, whereas the fibula is slightly straight with an anteriorly expanded proximal third (Rogers, 2009) as in Magyarosaurus and Diamantinasaurus, both the tibia and fibula are extremely lateromedially compressed as in Lirainosaurus or Muyelensaurus (APB pers. obs.). Our results are congruent with the observation in other, non-sampled small titanosaurian taxa that exhibit similar morphological variability. Notice that Rapetosaurus is based on juvenile and subadult specimens, and it may retain a plesiomorphic slender morphology that changes in the adult (see precocial development in the limbs of Rapetosaurus) (Curry Rogers et al., 2016).
 
@@ -102,7 +1003,7 @@ Moreover, we must consider that our age estimations for the nodes of our supertr
 
 It seems that these morphological similarities are due to other biomechanical aspects after the acquisition of the arched hind limb within Somphospondyli, as well as to other morphological features related to the wide-gauge posture of the appendicular skeleton. It is possible that minor differences that do not show a significant phylogenetic signal and recover in other shape-PCs (Supplementary file 2) are key features for other adaptations that are also important such as the trade-off between speed and rearing stability, which may have shaped limb morphology of Titanosauriformes, particularly in the zeugopods (e.g. Upchurch et al., 2021).
 
-## Caveats of this study
+### Caveats of this study
 
 Our analyses include a wide range of titanosaurs from most of the proposed subclades. However, many hind limb elements are fragmentary and required virtual restoration according to Páramo et al., 2020. Traditional studies propose excluding incomplete specimens from the sample. However, in this case, several of our taxa from an already small sample (n=17) could not be included in this study because they do not have complete specimens to calculate the mean shape for each hind limb element type (e.g. Mendozasaurus with several tibia and fibula specimens, Oceanotitan with only the fragmentary elements of its left hind limb). The exclusion of potentially informative areas or taxa may hinder paleobiological studies (Brown et al., 2012), and landmarks estimation may be a more informative procedure (Arbour and Brown, 2014; Brown et al., 2012). Also, it may be interesting to include several taxa that have been examined in previous studies (e.g. Páramo, 2020), but many of these taxa lack one or more hind limb element types. In this case, we did not choose to estimate the entire morphology of an element type, because we lack the necessary and more powerful tools to do so, such as partial least squares estimation methods (e.g. Torres-Tamayo et al., 2020). The virtual restoration does not appear to contain large artifacts due to deformation of the specimens, and most of the sample is not affected by extreme taphonomic artifacts. Some complete specimens may affect the results nonetheless, as it is common that some shafts might be more eccentric due to crushing (i.e. Ampelosaurus atacis could be even closer to Lirainosaurus astibiae in PC1) or the deformation of distal condyles in Dreadnoughtus schrani which affects its extreme position in PC2. Despite this, we assessed potential biases following Lefebvre et al., 2020; Appendix 1-2, and they do not affect significantly any of the shape variables which exhibit phylogenetic signal (e.g., PC2; Table 6; see in detail Appendix 2 and Supplementary file 2).
 
@@ -110,7 +1011,7 @@ Our reconstructions of the analyzed titanosaurian hind limbs can also bias our s
 
 The sample is also small, and we did not opt to include several advanced statistical hypothesis tests like phylogenetic convergence (Stayton, 2015) because it did not meet the requirements. Instead, we chose a conservative set of tests to discuss the true morphological convergence over titanosaurian hind limb evolution with a mix of phylogenetic and non-phylogenetic methods. We chose (Butler and Goswami, 2008) change frequencies analysis because, although its statistical properties are less well known than those of independent contrast analyses, it is less sensitive to topological imprecision and somewhat independent of branch length differences (Butler and Goswami, 2008; de Souza and Santucci, 2014). Following this reasoning, we also decided not to estimate independent phylogenetic contrasts that may be sensitive to large differences in branch length in our lithostrotian-biased sample to test for trait correlation between shape-PCs against log-transformed centroid size, contrary to previous studies (Bates et al., 2016). Instead, we opted for the traditional use of test for correlation between tree tips (specimens) shape-PCs against log-transformed centroid sizes via RMA and without incorporating the phylogenetic tree topology of our current time-calibrated supertree.
 
-## Conclusions
+### Conclusions
 
 Our results suggest that the main features related to the acquisition of an arched hind limb posture (presence of lateromedially wide femora with robust zeugopods) are typical of more deeply nested titanosaurs such as saltasaurines (Carrano, 2005; Lefebvre et al., 2022; Sander et al., 2011a; Ullmann et al., 2017; Vila et al., 2022; Wilson and Carrano, 1999) and exhibit a significant phylogenetic signal about titanosaurian evolution (Table 5, Figure 7). The arched morphology usually related to wide-gauge posture is an exaptation initially related to increasing body size. However, once fully acquired within Somphospondyli, these features are no longer related to increasing body size, as increases in the arched posture and the development of hyper-robust zeugopods are features that evolved independently in several lineages and are shared by several of both the smallest and largest taxa in different titanosaurian lineages (Figure 6, Table 4). Also, there is an evolutionary trend toward decreasing titanosaurian hind limb size (and body size; Figure 7), based on the size of the hind limb centroid. This trend is congruent with previous studies focused on the size evolution within Titanosauriformes (de Souza and Santucci, 2014), despite an increase in arched morphology and robustness of the hind limb in deeply nested titanosaurian subclades.
 
@@ -118,7 +1019,7 @@ The lack of correlation between the arched posture, position, and robustness of 
 
 ## Methods
 
-## 3D geometric morphometrics
+### 3D geometric morphometrics
 
 To analyze the morphology, 17 macronarian sauropod hind limbs (Table 1) were 3D-digitized and analyzed using 3D Geometric Morphometrics tool-kit (3D-GMM; Gunz et al., 2005; Páramo, 2020). The 3D digitizing process was based on the methodology proposed in previous analyses (i.e. Mallison, 2011; Páramo, 2020) and 3D-GMM analyses were conducted in R statistical software v4.1.3 (R Development Core Team, 2022). Code for the analyses can be accessed in Source code 1.
 
@@ -130,7 +1031,7 @@ A total of 28 landmarks and 12 semilandmark curves were placed on the hind limb 
 
 Evolutionary trend analyses were accomplished after the estimation of a consensus tree topology using the MRP-supertree methodology (Bininda-Emonds, 2004) with the phangorn package (Schliep et al., 2017; Schliep, 2011). For supertree construction, we compiled several of the more recent phylogenetic hypotheses that include all the available sampled data (resulting supertree can be accessed in Appendix 1; trimmed supertree in Figure 2). The resulting phylogenetic relationships were projected onto the shape-PCA to visualize the phylomorphospace. To analyze true morphological convergences between titanosaurian sub-clades, we tested for morphological differences in the hind limb skeleton using the shape variables (PCs) without the phylogenetic relationships involved using: (i) Mann Whitney U’s test and Kruskal-Wallis non-parametric tests accounting for the uneven distribution of the group (sub-clade) samples and (ii) phylogenetic ANOVA using the time-calibrated supertree topology with the phytools R package (Revell, 2012).
 
-## Hind limb size distribution and phylogenetic signal
+### Hind limb size distribution and phylogenetic signal
 
 Sauropod body mass was proxied by hind limb centroid size collected from the GPA. Body mass can be calculated preferably using both humeral and femoral measurements (Mazzetta et al., 2004) or a whole-body volumetric estimation (Bates et al., 2016). However, as the hind limb is the main sauropod body mass support, it can be better used as a ‘conservative-minimal’ approach to its body mass, with larger hind limb corresponding to giant titanosaurian taxa. We tested for allometric relationships between the sauropod hind limb shape variables (PCs) and the centroid size as proxy to body mass via Reduced Major Axis (RMA) regression using lmodel2 R package (Legendre, 2018); but an alternative set of analyses was carried out using femoral length and body mass estimations (see Supplementary file 2 and Appendix 2).
 

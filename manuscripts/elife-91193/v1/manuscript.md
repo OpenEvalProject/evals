@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0106qb496 Ministry of Education Key Laboratory of Ecology and Resource Use of the Mongolian Plateau, School of Ecology and Environment, Inner Mongolia University Hohhot China
+1. Ministry of Education Key Laboratory of Ecology and Resource Use of the Mongolian Plateau, School of Ecology and Environment, Inner Mongolia University Hohhot China ([ROR:0106qb496](https://ror.org/0106qb496))
 2. Otago Regional Council Dunedin New Zealand
 3. Collaborative Innovation Center for Grassland Ecological Security (Jointly Supported by the Ministry of Education of China and Inner Mongolia Autonomous Region) Hohhot China
 4. Autonomous Region Collaborative Innovation Center for Integrated Management of Water Resources and Water Environment in the Inner Mongolia Reaches of the Yellow River Hohhot China
@@ -31,9 +31,21 @@ The degree of habitat specialisation is a key ecological characteristic determin
 
 Currently, research on habitat loss and fragmentation per se focusses primarily on forest ecosystems (Fardila et al., 2017; Haddad et al., 2015; Ma et al., 2023). Grasslands have received considerably less attention, despite being one of the largest terrestrial ecosystems, and suffering severe fragmentation due to human activities, such as agricultural reclamation and urbanisation (Fardila et al., 2017). The agro-pastoral ecotone of northern China is a typical anthropogenically fragmented grassland landscape caused by historical agricultural reclamation, especially in the late Qing Dynasty (about 1840–1912). Due to land policy reforms, the region has experienced a rapid expansion of farmland since the 1960s, converting continuous natural grasslands into smaller and isolated fragments, seriously threatening the conservation of BEFs (Yan et al., 2022; Yan et al., 2023; Yang et al., 2020). Based on 130 landscapes with different fragmentation levels in the agro-pastoral ecotone of northern China (Figure 1), we investigated how fragmented landscape context (habitat loss and fragmentation per se) impact the relationship between grassland plant diversity and above-ground productivity in the community. Specifically, we aimed to evaluate whether habitat loss and fragmentation per se would weaken the positive relationship between grassland plant diversity and above-ground productivity by reducing the habitat specialisation of the community.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91193/elife-91193-fig1-v1.jpg)
+
+**Figure 1.:** (A) Location of the 130 survey sites in the study area. (B) Examples of four survey sites with varying levels of habitat loss and fragmentation per se shown with a 500m radius buffer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91193/elife-91193-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** PD: patch density; ED: edge density; AREA_MN: mean patch area; ENN: mean nearest-neighbour distance. PC1: the first principal component of the four fragmentation indices explained 51.1% of the variation. PC2: the second principal component of the four fragmentation indices explained 30.1% of the variation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91193/elife-91193-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Each point in the figure represents the landscapes with 500 m radius. PC1: the first principal component of the four fragmentation indices. The green lines represent quartiles of habitat amount. The red lines represent quartiles of fragmentation per se. The high, moderate, and low on the horizontal axis represent the levels of habitat amount. The high, moderate, and low on the vertical axis represent the levels of fragmentation per se.
+
 ## Results
 
-## Relationship of habitat loss and fragmentation per se with grassland plant richness and above-ground biomass
+### Relationship of habitat loss and fragmentation per se with grassland plant richness and above-ground biomass
 
 A total of 130 vascular plant species were identified in our study sites, including 91 grassland specialists and 39 weeds (Supplementary file 1). Habitat loss was significantly negatively correlated with overall species richness (R = −0.21, p < 0.05, Figure 2A) and grassland specialist richness (R = −0.41, p < 0.01, Figure 2A), but positively correlated with weed richness (R = 0.31, p < 0.01, Figure 2A). Fragmentation per se was not significantly correlated with overall species richness and grassland specialist richness, but was significantly positively correlated with weed richness (R = 0.26, p < 0.01, Figure 2B). Habitat loss (R = −0.39, p < 0.01, Figure 2C) and fragmentation per se (R = −0.26, p < 0.01, Figure 2D) were both significantly negatively correlated with above-ground biomass.
 
@@ -41,7 +53,7 @@ A total of 130 vascular plant species were identified in our study sites, includ
 
 **Figure 2.:** (A) Habitat loss and plant richness, (B) fragmentation per se and plant richness, (C) habitat loss and above-ground biomass, and (D) fragmentation per se and above-ground biomass.The R value in each panel is from the Pearson correlation coefficient analyses. The n in each panel is the number of surveying sites used in the Pearson correlation analyses. The trend lines in the figure are from linear regression models. The shaded area around the trend line represents the 95% confidence interval. * and ** represent significance at the 0.05 and 0.01 levels, respectively.
 
-## The relative effects of landscape context, plant diversity, and environmental factors on above-ground biomass
+### The relative effects of landscape context, plant diversity, and environmental factors on above-ground biomass
 
 Results of the multi-model averaging for the four optimal models affecting above-ground biomass (Supplementary file 2) showed that plant diversity had the strongest relative effects on above-ground biomass than landscape context and environmental factors. Grassland specialist richness (estimate: 0.61, p < 0.01, Figure 3) and weed richness (estimate: 0.24, p < 0.01, Figure 3) had significant positive relative effects on above-ground biomass. Habitat loss (estimate: −0.16, p > 0.05, Figure 3) and fragmentation per se (estimate: −0.05, p > 0.05, Figure 3) had insignificant negative relative effects on above-ground biomass. Soil water content (SWC) had a significant positive relative effect on above-ground biomass (estimate: 0.19, p < 0.01, Figure 3), and land surface temperature (LST) had an insignificant negative relative effect on above-ground biomass (estimate: −0.01, p > 0.05, Figure 3).
 
@@ -49,7 +61,7 @@ Results of the multi-model averaging for the four optimal models affecting above
 
 **Figure 3.:** Standardised estimates and 95% confidence intervals are calculated by the multi-model-averaging method based on the four optimal models affecting above-ground biomass (Supplementary file 2). ** represent significance at the 0.01 level.
 
-## The impact of habitat loss and fragmentation per se on the relationship between grassland plant richness and above-ground biomass
+### The impact of habitat loss and fragmentation per se on the relationship between grassland plant richness and above-ground biomass
 
 The linear regression models showed that habitat loss had a significant negative modulating effect on the positive relationship between plant richness and above-ground biomass (estimate = −0.23, p < 0.05, Supplementary file 3), and fragmentation per se had no significant modulating effect (estimate = −0.10, p > 0.05, Supplementary file 3). The positive relationship between plant richness and above-ground biomass weakened with increasing levels of habitat loss, strengthened and then weakened with increasing levels of fragmentation per se (Figure 4).
 
@@ -59,11 +71,19 @@ The linear regression models showed that habitat loss had a significant negative
 
 The Fisher’s C statistic indicated that the piecewise structural equation model fitted the data well (Fisher’s C = 19.3, p-value >0.05, Figure 5). The piecewise structural equation model showed that the percentage of grassland specialists increased the positive effect of plant richness on above-ground biomass (path coefficient: 0.34, Figure 5). Habitat loss decreased the positive effect of plant richness on above-ground biomass by decreasing the percentage of grassland specialists (path coefficient: −0.46, Figure 5). Fragmentation per se had no significant effect on the percentage of grassland specialists.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/91193/elife-91193-fig5-v1.jpg)
+
+**Figure 5.:** HL: habitat loss; FPS: fragmentation per se; LST: land surface temperature; SWT: soil water content; PS: percentage of grassland specialists; SR: plant richness; PS × SR: interaction term between percentage of grassland specialists and plant richness; AGB: above-ground biomass. Black and grey solid arrows represent the significant and not significant effects at the 0.05 level, respectively. Black and red numbers on the solid arrows represent the significant positive and negative path coefficients, respectively. The Fisher’s C and p-values are from the piecewise structural equation model.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91193/elife-91193-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Arrows represent the hypothesised paths among variables. See the main text for a description of arrow directions.
+
 Meanwhile, the piecewise structural equation model showed habitat loss to have an indirect negative effect on above-ground biomass through decreasing plant richness (path coefficient: −0.39, Figure 5) and through increasing fragmentation per se (path coefficient: 0.69, Figure 5) and in turn decreasing SWC (path coefficient: −0.35, Figure 5). Fragmentation per se had an indirect negative effect on above-ground biomass through decreasing SWC (path coefficient: −0.35, Figure 5) and an indirect positive effect on above-ground biomass through increasing plant richness (path coefficient: 0.26, Figure 5).
 
 ## Discussion
 
-## Habitat loss and fragmentation per se had inconsistent effects on grassland plant diversity and ecosystem function
+### Habitat loss and fragmentation per se had inconsistent effects on grassland plant diversity and ecosystem function
 
 Although habitat loss and fragmentation per se are generally highly associated in natural landscapes, they are distinct ecological processes that determine decisions on effective conservation strategies (Fahrig, 2017; Valente et al., 2023). Our study evaluated the effects of habitat loss and fragmentation per se on grassland plant diversity and above-ground productivity in the context of fragmented landscapes in the agro-pastoral ecotone of northern China, with our results showing the effects of these two facets to not be consistent.
 
@@ -73,7 +93,7 @@ Our results showed for a metric of ecosystem function that landscape context aff
 
 In our study, a possible mechanism for the positive impacts of fragmentation per se on plant diversity and above-ground productivity (indirect positive impact via plant diversity) is that fragmentation per se increases the habitat heterogeneity in the landscape, which can promote biodiversity through spatial asynchrony and spatial insurance effects (Tscharntke et al., 2012). Previous studies indicated that heterogeneity typically has nonlinear effects on BEF, as moderate heterogeneity can maximise spatial asynchrony (Redon et al., 2014; Wilcox et al., 2017). However, our study did not observe nonlinear patterns between fragmentation per se and plant diversity and above-ground productivity. This may be due to the low spatial heterogeneity of this area as a result of agricultural intensification (Benton et al., 2003; Chen et al., 2019). The gradient of fragmentation per se in our study may not cover the optimal heterogeneity levels for maximising plant diversity and above-ground productivity (Thompson and Gonzalez, 2016).
 
-## Habitat loss rather than fragmentation per se weakened the magnitude of the positive relationship between plant diversity and ecosystem function
+### Habitat loss rather than fragmentation per se weakened the magnitude of the positive relationship between plant diversity and ecosystem function
 
 Understanding the direction and magnitude of BEF relationships in fragmented landscapes is essential to understanding the importance of biodiversity for ecosystem function in the changing world (Gonzalez et al., 2020; van der Plas, 2019). In naturally assembled communities, ecosystem functions may be dominated by complex environmental factors and landscape context, showing a weak or even negative correlation with biodiversity (Grace et al., 2007; Hagan et al., 2021; Zirbel et al., 2019). Our study found grassland plant diversity showed a stronger positive impact on above-ground productivity than landscape context and environmental factors. This result is consistent with findings by Duffy et al., 2017 in natural ecosystems, indicating grassland plant diversity has an important role in maintaining grassland ecosystem functions in the fragmented landscapes of the agro-pastoral ecotone of northern China.
 
@@ -83,11 +103,11 @@ In addition, our study found that the BEF relationship showed a nonlinear patter
 
 ## Materials and methods
 
-## Study area
+### Study area
 
 Our study area is in the agro-pastoral ecotone of northern China, the Tabu River Basin in Siziwang Banner, Inner Mongolia Autonomous Region. The mean annual temperature ranges from 1.5 to 5.0°C, and the mean annual precipitation ranges from 225 to 322 mm. The type of soil is light chestnut soil. This area is a typical fragmented grassland landscape caused by agricultural intensification. Grassland is the dominant natural habitat type in this area, accounting for about 40.8% of the total area, with the dominant plant species being Stipa krylovii and S. breviflora. Farmland is the dominant matrix type in this area, accounting for about 30.6% of the total area, with the main crops grown being potatoes and maize. Further background information about the study area is described in our previous papers (Yan et al., 2022; Yan et al., 2023; Yan et al., 2021; Zhang et al., 2021).
 
-## Sampling landscape selection
+### Sampling landscape selection
 
 We quantified landscape-scale habitat loss and fragmentation per se in the study area to determine the spatial gradient of landscape context, then established the sampling landscapes. Grassland was defined as the focal habitat. Habitat amount was represented by the percentage of grassland cover in the landscape. Habitat loss was represented by the loss of grassland amount in the landscape. As the remaining grassland fragments in this region were mainly caused by grassland loss due to human activities such as cropland expansion (Chen et al., 2019; Yang et al., 2020), the percentage of non-grassland cover in the landscape was used in our study to represent habitat loss. Fragmentation per se was estimated by calculating four landscape indices that reflect the different fragmentation processes for a given amount of habitat in the landscape (Fahrig, 2003; Fahrig, 2017): (1) patch density metric, representing an increase in the number of grassland patches in the landscape; (2) edge density metric, representing an increase in the grassland edges in the landscape; (3) mean patch area metric, representing a decrease in the mean size of grassland patches in the landscape; and (4) mean nearest-neighbour distance metric, representing an increase in the isolation among grassland patches in the landscape. The patch density metric reflects the breaking apart of habitat in the landscape, which is a direct reflection of the definition of fragmentation per se (Fahrig et al., 2019). The edge density metric reflects the magnitude of the edge effect caused by fragmentation (Fahrig, 2017). The mean patch area metric and the mean nearest-neighbour distance metric are associated with the area and distance effects of island biogeography, respectively, reflecting the processes of local extinction and dispersal of species in the landscape (Fletcher et al., 2018).
 
@@ -97,7 +117,7 @@ Based on the quartiles of grassland amount and single fragmentation per se index
 
 The land-cover data used to quantify grassland fragmentation were obtained via supervised classification on a cloud-free Landsat 8 TOA composite image (30 m resolution) from 2019 (Yan et al., 2022). We used the random forest classifier in the Google Earth Engine platform (Gorelick et al., 2017) for the supervised classification. The overall classification accuracy was 84.3 %, and the kappa coefficient was 0.81. The moving window analysis and all landscape metric calculations were performed in FRAGSTATS v4.2.1 based on the eight-cell neighbourhood rule (McGarigal et al., 2012). The principal component analysis was performed in the R programming language v. 4.0.3 (R Development Core Team, 2020), and stratified sampling was conducted in ArcGIS v10.3.
 
-## BEF surveys
+### BEF surveys
 
 Based on the alternative sites selected above, we established 130 sites (30 m × 30 m) between late July and mid-August 2020 in the Tabu River Basin in Siziwang Banner, Inner Mongolia Autonomous Region (Figure 1). The types of the 130 sites were: 20 high–moderate, 13 high–low, 19 moderate–high, 16 moderate–moderate, 19 moderate–low, 16 low–high, 19 low–moderate, 8 low–low habitat amount, and fragmentation per se. In order to exclude the impact of historical agricultural activities, the habitat type of the established sites was natural grasslands with regional vegetation characteristics. Each site was not abandoned agricultural land, and there was no sign of agricultural reclamation.
 
@@ -105,7 +125,7 @@ At the 10 m × 10 m centre of each site, we randomly set up three 1 m × 1 m plo
 
 As grassland is the dominant habitat type in the fragmented landscape and farmland is the dominant matrix type, the specialists and generalists in this study were grouped as grassland specialists, that is, species that occur only in grassland, and weeds, that is, species that occur in both grassland and farmland. The classification of grassland specialists and weeds in this study was based on our experience with plant surveys in this region, the List of Main Crop Weeds in China, and available information in the Flora of China (http://www.iplant.cn/frps).
 
-## Data analysis
+### Data analysis
 
 For each site, we calculated the mean vascular plant richness of the three 1 m × 1 m plots, representing the vascular plant diversity, and the mean above-ground biomass of the three 1 m × 1 m plots, representing the above-ground productivity. The mean vascular plant richness and the mean above-ground biomass were assessed to be normally distributed by a Shapiro–Wilk normality test. The degree of habitat specialisation was represented by the percentage of grassland specialists in the community. Landscape context includes habitat loss and fragmentation per se. Habitat loss was represented by the percentage of non-grassland cover in the landscape and fragmentation per se was represented by the inverse of the PC1 of the four landscape indices (mean grassland patch area, mean nearest-neighbour distance among grassland patch, grassland patch density, and grassland patch edge). Environmental factors were LST and SWC.
 

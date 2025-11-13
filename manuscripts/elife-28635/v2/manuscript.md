@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.28635.001 Vertebrate embryonic patterning depends on signaling from Nodal, a TGFβ superfamily member. There are three Nodal orthologs in zebrafish; southpaw directs left-right asymmetries, while squint and cyclops function earlier to pattern mesendoderm. TGFβ member Vg1 is implicated in mesoderm formation but the role of the zebrafish ortholog, Growth differentiation factor 3 (Gdf3), has not been fully explored. We show that zygotic expression of gdf3 is dispensable for embryonic development, while maternally deposited gdf3 is required for mesendoderm formation and dorsal-ventral patterning. We further show that Gdf3 can affect left-right patterning at multiple stages, including proper development of regional cell morphology in Kupffer’s vesicle and the establishment of southpaw expression in the lateral plate mesoderm. Collectively, our data indicate that gdf3 is critical for robust Nodal signaling at multiple stages in zebrafish embryonic development.
+Vertebrate embryonic patterning depends on signaling from Nodal, a TGFβ superfamily member. There are three Nodal orthologs in zebrafish; southpaw directs left-right asymmetries, while squint and cyclops function earlier to pattern mesendoderm. TGFβ member Vg1 is implicated in mesoderm formation but the role of the zebrafish ortholog, Growth differentiation factor 3 (Gdf3), has not been fully explored. We show that zygotic expression of gdf3 is dispensable for embryonic development, while maternally deposited gdf3 is required for mesendoderm formation and dorsal-ventral patterning. We further show that Gdf3 can affect left-right patterning at multiple stages, including proper development of regional cell morphology in Kupffer’s vesicle and the establishment of southpaw expression in the lateral plate mesoderm. Collectively, our data indicate that gdf3 is critical for robust Nodal signaling at multiple stages in zebrafish embryonic development.
 
 ## Introduction
 
@@ -28,49 +28,69 @@ gdf3 is both maternally and zygotically expressed in zebrafish (Helde and Grunwa
 
 ## Results
 
-## Maternal gdf3 is required for embryonic mesendoderm patterning
+### Maternal gdf3 is required for embryonic mesendoderm patterning
 
 gdf3 is expressed maternally and ubiquitously during early stages of zebrafish development (Figure 1A) (Helde and Grunwald, 1993). The amount of gdf3 mRNA diminishes rapidly through the blastula and gastrula stages and disappears by approximately 90% epiboly (Helde and Grunwald, 1993). This is followed by the return of expression in a tissue-restricted manner starting at the late bud stage and progressing into somitogenesis, when expression is observed in the lateral plate mesoderm (LPM) and in cells around KV (Figure 1A) (Peterson et al., 2013). This temporal and positional variation suggests that gdf3 has multiple roles in zebrafish development.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig1-v2.jpg)
+
+**Figure 1.:** (A) RNA in situ hybridization shows gdf3 mRNA is broadly expressed throughout early zebrafish development, followed by specific expression in Kupffer’s vesicle (arrow) and the lateral plate mesoderm (arrowhead). Views are indicated. (B) Schematic of gdf3 mutant alleles predicted to form truncated proteins due to early stop codons in the first exon. Purple regions indicate changes in amino acid sequence prior to the premature stop codon in each allele (see Material and Methods for more details). (C–F) Loss of maternally deposited Gdf3 causes patterning defects. Embryos heterozygous (C) or homozygous (D) for the pr05 allele appeared normal at 26 hpf. Heterozygous embryos from homozygous mothers (Mgdf) exhibited defects in mesoderm and endoderm formation (E). Maternal-zygotic gdf3 embryos (MZgdf3) had similar mesoderm and endoderm defects as Mgdf3 embryos (F). gdf3 mRNA injected at the one cell stage rescued defects in both Mgdf3 (G) and MZgdf3 (H) embryos. C-H are lateral views.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The genetic changes generated using CRISPR/Cas9 are diagrammed. (A) gdf3 allele pr05 contains a 20 bp deletion. (B) gdf3 allele pr06 contains a 191 bp deletion and an 18 bp insertion, resulting in a net loss of 173 bp. (C) gdf3 allele pr11 contains a 2 bp deletion and a 15 bp insertion, resulting in a net insertion of 13 bp. The sgRNA target sites (blue text) and the PAM sites (blue highlights) are shown. Deletions are indicated by dashed lines in the mutant alleles. Insertions are represented by lowercase letters in the mutant (pr) sequence and corresponding dashed lines in the wild-type (gdf3) sequence.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Embryos from maternal homozygotes for pr11 phenocopied pr5 Mgdf and MZgdf embryos. (B-D) Embryos from maternal compound heterozygotes of the pr05 and pr06 alleles were phenotypic, demonstrating lack of complementation between the alleles. (E) Wild-type (WT) embryo at bud stage. (F) MZgdf3 embryos show abnormal development at the bud stage, with a 90 degree shift of anterior structures vegetally; a phenotype similar to that reported for MZtdgf1 embryos (Gritsman et al., 1999). All views are lateral.
 
 To investigate these potential roles, we used CRISPR/Cas9 to generate stable zebrafish lines containing mutations in the first exon of the gdf3 locus (Figure 1B, Figure 1—figure supplement 1). Each of the three mutant alleles contained a premature stop codon in the first exon, prior to the mature ligand domain-encoding region, and are thus predicted to be null alleles. Homozygous gdf3 zygotic mutant embryos (Zgdf3) displayed no gross morphological phenotypes, were indistinguishable from heterozygous controls (Figure 1C and D), and grew to adulthood. By contrast, embryos lacking maternal gdf3 (Mgdf3) displayed overt developmental defects (Figure 1E) and did not survive beyond 3 days post fertilization (dpf). Mgdf3 and maternal-zygotic gdf3 (MZgdf3) embryos were indistinguishable from each other (Figure 1E and F), suggesting that the loss of Zgdf3 did not contribute further to the gross Mgdf3 phenotype. Moreover, these defects could be rescued with wild-type (WT) gdf3 mRNA (Figure 1G and H), a result that confirms the mutant phenotypes arose from disruption of the gdf3 locus.
 
 The defects in Mgdf3 and in MZgdf3 embryos strongly resemble the phenotypes exhibited by double mutants for the zebrafish Nodal orthlogs ndr1 and ndr2 (Feldman et al., 1998) and MZ mutants for the essential Nodal co-receptor, teratocarcinoma-derived growth factor 1 (tdgf1; previously known as one eyed pinhead) (Gritsman et al., 1999). Similarities include the dorsal accumulation of cells following convergence and epiboly in Mgdf3 and MZgdf3 embryos at the tailbud stage, displacing the anterior most region of these embryos vegetally by 90 degrees compared to WT embryos (Figure 1—figure supplement 2E and F; compare to embryos in Gritsman et al., 1999). Additionally, Mgdf3 and MZgdf3 embryos at 26 hours post fertilization (hpf) are cyclopic and exhibit extensive defects in mesoderm and endoderm formation (Figure 1E and F and below), again reminiscent of ndr1;ndr2 double mutants and MZtdgf1 mutants (Feldman et al., 1998; Gritsman et al., 1999). Thus, maternally-supplied gdf3 is required for early embryogenesis, and loss of function cause defects that are consistent with strong reduction of early Nodal signaling.
 
-## Gdf3 is necessary for the expression of Nodal target genes responsible for mesendoderm formation
+### Gdf3 is necessary for the expression of Nodal target genes responsible for mesendoderm formation
 
 Since Mgdf3 and MZgdf3 mutants resemble embryos lacking Nodal signaling, we assessed Nodal target gene expression in these mutants. The Nodal target gene lefty1 (lft1) was absent in Mgdf3 and MZgdf3 embryos (Figure 2A–C). While expression of ndr2 initiated in Mgdf3 and MZgdf3 embryos, it was expressed at lower levels compared with controls (Figure 2D–F); since Nodal signals propagate ndr2 expression, this result and the absence of lft1 suggests that Nodal signaling is markedly reduced or lost in the absence of maternal gdf3. In agreement, Nodal targets required for mesoderm and endoderm formation (Feldman et al., 1998) were also lost or decreased in Mgdf3 and MZgdf3 mutants. goosecoid (gsc) (Stachel et al., 1993), a marker of progenitors of the prechordal plate, is absent in Mgdf3 and MZgdf3 embryos (Figure 2G–I). Expression of floating head (flh) (Talbot et al., 1995), a Nodal target that marks notochord progenitors (Gritsman et al., 2000), is decreased in Mgdf3 and MZgdf3 embryos (Figure 2J and K).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig2-v2.jpg)
+
+**Figure 2.:** (A–K) RNA in situ hybridization of Nodal target gene expression at 30% epiboly. (A–C) lefty1 (lft1) is normally expressed in the margin (A), but is lost in maternal-zygotic gdf3 mutant embryos (MZgdf3, B) and heterozygous embryos derived from maternal homozygotes (Mgdf3, C). (D–F) cyclops (cyc) is normally expressed in the margin (D). Expression of cyc is reduced in MZgdf3 (E) and Mgdf3 (F) embryos. (G–I) goosecoid (gsc) is normally expressed in the dorsal region (G), but is absent in MZgdf3 (H) and Mgdf3 (I) embryos. (J–K) floating head (flh) is normally expressed in the dorsal region (J) but is diminished in MZgdf3 (K) embryos. (L–Q) RNA in situ hybridization of Nodal target gene expression at the shield stage. (L–M) no tail (ntla) is expressed along the margin in WT embryos (L), but is absent from the dorsal end of MZgdf3 embryos (M, arrow). (N, O) axial (axl) is expressed in the dorsal region of WT embryos (N) but absent in MZgdf3 embryos (O). (P, Q) sox17 is expressed in the margin of WT embryos (P) but absent in MZgdf3 embryos (Q). (R–S) Loss of gsc in MZgdf3 embryos (R) can be rescued by injection of 50 pg gdf3 mRNA. All views are animal, with dorsal to the right and ventral to the left,unless otherwise indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Loss of lft1, ntl, and sox17 expression in MZgdf3 embryos (A,C, and E) can be rescued by injection of 50 pg gdf3 mRNA (B, D, and F). All views are animal.
+
 Similarly, expression of no tail (ntl) in the dorsal region (Schulte-Merker et al., 1992), a domain that requires the highest levels of Nodal signaling (Gritsman et al., 2000), is absent in Mgdf3 and MZgdf3 embryos (Figure 2L and M). axial (axl) (Strähle et al., 1993), a marker of progenitors of axial mesoderm and endoderm, and sox17 (Alexander and Stainier, 1999), a marker of presumptive endoderm, were both absent in Mgdf3 and MZgdf3 embryos (Figure 2N–Q). Taken together, these results suggest that Nodal signaling is strongly diminished or absent in Mgdf3 and MZgdf3 mutants and, as a result, mesoderm and endoderm are not induced. To confirm that these effects on Nodal target genes were a result of the loss of Gdf3, we injected gdf3 mRNA into MZgdf3 embryos at the one-cell stage. This led to the recovery of gsc (Figure 2R and S), lft1, ntl, and sox17 expression, (Figure 2—figure supplement 1A–F) confirming the role of gdf3 in regulating Nodal target genes.
 
-## Bmp and residual Nodal signaling promote tail mesoderm formation in Mgdf3 and MZgdf3 embryos
+### Bmp and residual Nodal signaling promote tail mesoderm formation in Mgdf3 and MZgdf3 embryos
 
 While Mgdf3 and MZgdf3 mutants strongly resemble ndr1:ndr2 double mutants, Mgdf3 and MZgdf3 embryos consistently exhibit longer tails. This phenotype resembles that of MZfoxh1p1r/pr1 mutants in which a subset of Nodal signaling is eliminated by loss of the Foxh1 transcription factor, but signaling through other Nodal-activated transcription factors is retained (Slagle et al., 2011). To determine if low levels of Nodal signaling remain in the absence of maternal Gdf3, we injected Mgdf3 and MZgdf3 embryos with ndr1:ndr2 MOs. Injection of the ndr1:ndr2 MOs into MZgdf3 mutants led to a tail defect that closely resembled the tail of ndr1:ndr2 double morphants (Figure 3A and B) and ndr1:ndr2 double mutants (Feldman et al., 1998). We then overexpressed Nodal using exogenous ndr1 mRNA to examine whether higher amounts of Nodal could activate target gene expression in MZgdf3 mutants. Although 1 pg of ndr1 led to a modest expansion of gsc expression in WT embryos (Figure 3C and D), it did not activate gsc expression in MZgdf3 embryos (Figure 3F and G). By contrast, 10 pg of injected ndr1 mRNA led to broad gsc expression in both WT and MZgdf3 mutant embryos (Figure 3E and H). These data, combined with our marker gene expression analysis, suggests that there is residual low-level Nodal activity present in the Mgdf3 and MZgdf3 mutant embryos that is inadequate for the formation of head and trunk endoderm.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig3-v2.jpg)
 
-**Figure 3.:** (A) Knockdown of nodal related 1 (ndr1) and nodal related 2 (ndr2) in wild-type (WT) embryos causes complete loss of head and trunk mesendoderm and defects in tail patterning. (B) ndr1:ndr2 knockdown in MZgdf3 embryos causes loss of residual tail patterning, producing embryos that more closely resemble those completely lacking Nodal signaling (A). (C-E) Overexpression of 1 pg or 10 pg ndr1 led to increased expression of the Nodal target gene goosecoid (gsc) in WT embryos. (F-H) Overexpression of 10 pg ndr1, but not 1 pg, produced widespread expression of gsc in MZgdf3 mutants. (I) Immunostaining of phosphorylated Smad1/5/8 (green) counterstained with DAPI (blue). Ventral pSmad levels were increased in MZgdf3 mutants. (J) Plotting the normalized pSmad1/5/8 intensity over position on the ventral-dorsal axis confirms that MZgdf3 embryos (n = 14) have increased BMP signaling in the ventral region compared to WT (n = 13). (K-M) RNA in situ hybridization of eve1 showed expansion of expression in the ventral region of MZgdf3 embryos (K) compared to WT (L). (M) Quantitative comparison of WT (n = 14) and MZgdf3 (n = 12) embryos confirmed expansion of the ventral eve1 expression domain in MZgdf3 embryos. (N-Q) RNA in situ hybridization of chordin (chd) revealed its expression is reduced in MZgdf3 embryos. All views are animal unless otherwise indicated. In M, p-value obtained by Student’s t-test (two-sided, homoscedastic). Error bars in J and M, standard error of the mean. Matlab code and data are available as Figure 3—source code 1, 2, and 3 and Figure 3—source data 1 and 2.10.7554/eLife.28635.008Figure 3—source code 1.eve1 RNA in situ stain.10.7554/eLife.28635.009Figure 3—source code 2.gdf3 mutant embryos.10.7554/eLife.28635.010Figure 3—source code 3.10.7554/eLife.28635.011Figure 3—source data 1.eve1 RNA in situ stain in WT and MZgdf3 embryos.10.7554/eLife.28635.012Figure 3—source data 2.gdf3 embryos.
+**Figure 3.:** (A) Knockdown of nodal related 1 (ndr1) and nodal related 2 (ndr2) in wild-type (WT) embryos causes complete loss of head and trunk mesendoderm and defects in tail patterning. (B) ndr1:ndr2 knockdown in MZgdf3 embryos causes loss of residual tail patterning, producing embryos that more closely resemble those completely lacking Nodal signaling (A). (C-E) Overexpression of 1 pg or 10 pg ndr1 led to increased expression of the Nodal target gene goosecoid (gsc) in WT embryos. (F-H) Overexpression of 10 pg ndr1, but not 1 pg, produced widespread expression of gsc in MZgdf3 mutants. (I) Immunostaining of phosphorylated Smad1/5/8 (green) counterstained with DAPI (blue). Ventral pSmad levels were increased in MZgdf3 mutants. (J) Plotting the normalized pSmad1/5/8 intensity over position on the ventral-dorsal axis confirms that MZgdf3 embryos (n = 14) have increased BMP signaling in the ventral region compared to WT (n = 13). (K-M) RNA in situ hybridization of eve1 showed expansion of expression in the ventral region of MZgdf3 embryos (K) compared to WT (L). (M) Quantitative comparison of WT (n = 14) and MZgdf3 (n = 12) embryos confirmed expansion of the ventral eve1 expression domain in MZgdf3 embryos. (N-Q) RNA in situ hybridization of chordin (chd) revealed its expression is reduced in MZgdf3 embryos. All views are animal unless otherwise indicated. In M, p-value obtained by Student’s t-test (two-sided, homoscedastic). Error bars in J and M, standard error of the mean. Matlab code and data are available as Figure 3—source code 1, 2, and 3 and Figure 3—source data 1 and 2.
 
 Low levels of Nodal signaling act in concert with Bmp signaling to correctly form the posterior structures in the zebrafish embryo (Fauny et al., 2009). It has been reported that Gdf3 actively inhibits Bmp signaling in Xenopus and in cultured stem cells (Levine and Brivanlou, 2006). Additionally, the depletion of Gdf3 in Xenopus results in reduced expression of the Bmp inhibitor chordin (Birsoy et al., 2006). We therefore examined Bmp signaling in Mgdf3 and MZgdf3 embryos by assessing levels of phosphorylated Smad1/5/8 (p-Smad1/5/8), a modification induced by Bmp signaling. At 70% epiboly, a ventral-to-dorsal increase in p-Smad1/5/8 was observed in MZgdf3 mutants compared to controls, with the ventral end exhibiting the largest increase in phosphorylation (Figure 3I and J). Consequently, we observed an expansion in expression of the Bmp target and ventral mesoderm marker eve1 (Joly et al., 1993) towards the dorsal side of the embryo (Figure 3K–M). These data suggest that Gdf3 plays a role in modulating Bmp signaling and restricting the expansion of the ventral mesoderm. We also note that dorsal expression of the Bmp inhibitor chordin (chd) (Figure 3N–Q) is decreased in Mgdf3 and MZgdf3 embryos; this would also allow for the increased Bmp signaling observed in Mgdf3 and MZgdf3 embryos.
 
-## Gdf3 is required for proper KV architecture and the expression of LPM spaw
+### Gdf3 is required for proper KV architecture and the expression of LPM spaw
 
 Nodal signaling has at least two roles in L-R patterning at different stages of zebrafish development: first at an early stage by directing correct patterning of the dorsal cells to properly form KV (Aamar and Dawid, 2010; Compagnon et al., 2014), and second, by inducing expression of the nodal ortholog spaw in the LPM (Long et al., 2003; Peterson et al., 2013). Gdf3 is also required for Nodal signaling in the LPM, since MO knockdown of Gdf3 reduces the expression of the nodal ortholog spaw in this tissue (Figure 4A) (Peterson et al., 2013). Therefore, we expected L-R patterning defects in our mutants. However, Zgdf3 mutants did not exhibit defects in the laterality of heart jogging (data not shown), an asymmetric morphogenetic event that acts as a measure of L-R patterning (Baker et al., 2008; Smith et al., 2008; de Campos-Baptista et al., 2008). Gdf3 is a stable protein since it remains detectable in the zebrafish embryo as late as 2.5 dpf, well beyond stages of reported mRNA expression (Helde and Grunwald, 1993; Dohrmann et al., 1996). In the absence of zygotic Gdf3, maternally supplied Gdf3 might compensate in L-R patterning events. Unfortunately, Mgdf3 and MZgdf3 mutants cannot be assessed for L-R patterning defects as they do not produce LPM or mesendoderm-derived organs. Therefore, we used a reported translation-blocking MO (Ye et al., 2010) to reduce the amount of maternal and zygotic Gdf3 to levels that allow for mesendoderm formation, and yet allow us to further analyze the role of Gdf3 in L-R patterning.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig4-v2.jpg)
 
-**Figure 4.:** (A) spaw expression is altered in gdf3 morphants, with most lacking expression in the lateral plate mesoderm (arrow), as shown by RNA in situ hybridization. (B) Immunostaining of aPKC (white) and GFP driven by the sox17 regulatory region (green) in Kupffer’s Vesicle (KV) at 10 ss. The anterior-posterior asymmetry in cell morphology is lost in gdf3 morphants. Cells are outlined by white dashed lines. (C) RNA in situ hybridization reveals dand5 expression is symmetric around KV in gdf3 morphants at 10 ss. (D) Loss of ntla leads to robust spaw expression in both the left and right LPM and a loss of KV and associated gene expression. spaw expression in ntla + gdf3 double morphants is completely lost, supporting the idea that Gdf3 is required for robust Nodal expression given Nodal is unable to activate in the absence of inhibitors. Raw data provided in Figure 4—source data 1–3.10.7554/eLife.28635.014Figure 4—source data 1.spaw RNA in situ results bar graph in Figure 4A.10.7554/eLife.28635.015Figure 4—source data 2.dand5 RNA in situ results bar graph in Figure 4C.10.7554/eLife.28635.016Figure 4—source data 3.spaw RNA in situ results bar graph in Figure 4D.
+**Figure 4.:** (A) spaw expression is altered in gdf3 morphants, with most lacking expression in the lateral plate mesoderm (arrow), as shown by RNA in situ hybridization. (B) Immunostaining of aPKC (white) and GFP driven by the sox17 regulatory region (green) in Kupffer’s Vesicle (KV) at 10 ss. The anterior-posterior asymmetry in cell morphology is lost in gdf3 morphants. Cells are outlined by white dashed lines. (C) RNA in situ hybridization reveals dand5 expression is symmetric around KV in gdf3 morphants at 10 ss. (D) Loss of ntla leads to robust spaw expression in both the left and right LPM and a loss of KV and associated gene expression. spaw expression in ntla + gdf3 double morphants is completely lost, supporting the idea that Gdf3 is required for robust Nodal expression given Nodal is unable to activate in the absence of inhibitors. Raw data provided in Figure 4—source data 1–3.
 
 KV development is aberrant in MO-injected embryos. Normally, the cells in the anterior-dorsal region of KV are columnar and more tightly packed as compared to the ventral region (Figure 4B, see uninjected). This architecture is proposed to generate left-ward asymmetric flow that is faster across the anterior-dorsal portion of KV (Prabhat et al., 2007; Okabe et al., 2008; Supatto et al., 2008; Wang et al., 2012; Grimes and Burdine, 2017). In Gdf3 knockdowns, this architecture is lost and all the cells exhibited a cuboidal morphology (Figure 4B, see gdf3 MO). These data demonstrate that Gdf3 knockdown can adversely affect the formation of KV, which would prevent the generation of normal asymmetric fluid flow.
 
 Proper KV formation and flow is important for generating asymmetric expression of the Nodal inhibitor dand5 in KV (Hashimoto et al., 2004; Hojo et al., 2007; Schweickert et al., 2010; Lopes et al., 2010). In contrast to WT embryos which exhibit a right-biased expression of dand5, Gdf3 knockdowns expressed dand5 symmetrically (Figure 4C). To determine if the symmetrical expression of dand5 leads to the loss of spaw expression in the left LPM of Gdf3 knockdowns, we prevented both the formation of KV and the expression of dand5 by also knocking down ntla with a MO. Loss of ntla leads to loss of KV, dand5 expression, and notochord (Amack et al., 2007; Hashimoto et al., 2004; Odenthal et al., 1996). In ntla mutants and morphants, spaw expression occurs at high levels in both the left and right LPM, presumably due to the loss of dand5 at KV and the Nodal inhibitor lefty1 in the midline (Long et al., 2003; Lenhart et al., 2011; Burdine and Grimes, 2016) (Figure 4D). We found that coinjection of ntla MO did not restore spaw expression in the LPM of gdf3 morphants (Figure 4D). This suggests that Gdf3 is required for robust Spaw signaling, and without Gdf3, Spaw is unable to induce its own expression, even in the absence of midline-derived Spaw inhibitors.
 
-## Rescue of mesendoderm defects in MZgdf3 embryos reveals a role for zygotic Gdf3 in L-R patterning
+### Rescue of mesendoderm defects in MZgdf3 embryos reveals a role for zygotic Gdf3 in L-R patterning
 
 To confirm our Gdf3 knockdown results, and to further examine the potential role of zygotic gdf3 in L-R patterning, we overexpressed gdf3 mRNA to rescue the early mesendoderm defects in Mgdf3 and MZgdf3 embryos, and then analyzed L-R asymmetry in the embryos. A similar strategy was utilized to examine L-R patterning in MZtdgf1 embryos (Yan et al., 1999). This approach additionally allows us to examine potential differences in L-R patterning between Mgdf3 and MZgdf3 mutants, i.e. in the presence or absence of zygotic gdf3, respectively. Injection of 50 pg of gdf3 mRNA in Mgdf3 embryos, which retain zygotic expression of gdf3, rescued mesendoderm formation and resulted in ~90% of embryos with normal L-R patterning based on the direction of heart jogging (Figure 5A). Injection of 50 pg of gdf3 mRNA in MZgdf3 embryos also rescued mesendoderm defects but these embryos exhibited defects in heart jogging laterality, with ~50% of hearts jogging incorrectly to the right or remaining midline (Figure 5A). These data suggest that zygotic gdf3 facilitates left-right patterning in the absence of sufficient maternal gdf3 contribution. However, since Zgdf3 mutants exhibit no L-R defects, zygotic Gdf3 is not required for L-R patterning in the presence of maternal Gdf3. In further support of the hypothesis that Gdf3 produced early in development is stable and sufficient to function in L-R patterning, injecting increasing amounts of gdf3 mRNA increased the number of MZgdf3 embryos with correct leftward jogged hearts (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28635/elife-28635-fig5-v2.jpg)
 
-**Figure 5.:** (A) Heart jogging defects improved with increasing amounts of injected gdf3 mRNA in MZgdf3 embryos. Zygotic gdf3 (present in Mgdf3 embryos) further rescued heart jogging defects in embryos injected with 50 pg of gdf3 mRNA. (B) M/MZgdf3 embryos lack spaw expression at 12 ss. Embryos injected with 50 pg of gdf3 mRNA rescued spaw expression in the LPM. Proper spaw expression in the left LPM was further restored in the presence of zygotic gdf3. (C) dand5 expression was recovered in MZgdf3 embryos injected with gdf3 mRNA, with most embryos containing symmetric expression of dand5 in KV (F,G). (C) Most Mgdf3 embryos injected with gdf3 mRNA contained proper right-biased asymmetric expression of dand5 (H,I). (D) dand5 expression was absent in all uninjected M/MZgdf3 embryos. Raw data provided in Figure 5—source data 1–3.10.7554/eLife.28635.018Figure 5—source data 1.Figure 5A.10.7554/eLife.28635.019Figure 5—source data 2.spaw RNA in situ results bar graph in Figure 5B.10.7554/eLife.28635.020Figure 5—source data 3.dand5 RNA in situ results bar graph in Figure 5C.
+**Figure 5.:** (A) Heart jogging defects improved with increasing amounts of injected gdf3 mRNA in MZgdf3 embryos. Zygotic gdf3 (present in Mgdf3 embryos) further rescued heart jogging defects in embryos injected with 50 pg of gdf3 mRNA. (B) M/MZgdf3 embryos lack spaw expression at 12 ss. Embryos injected with 50 pg of gdf3 mRNA rescued spaw expression in the LPM. Proper spaw expression in the left LPM was further restored in the presence of zygotic gdf3. (C) dand5 expression was recovered in MZgdf3 embryos injected with gdf3 mRNA, with most embryos containing symmetric expression of dand5 in KV (F,G). (C) Most Mgdf3 embryos injected with gdf3 mRNA contained proper right-biased asymmetric expression of dand5 (H,I). (D) dand5 expression was absent in all uninjected M/MZgdf3 embryos. Raw data provided in Figure 5—source data 1–3.
 
 We next analyzed molecular markers of L-R asymmetry in rescued mutants. While the LPM does not form in Mgdf3 and MZgdf3 embryos, presence of LPM and expression of spaw in the LPM is rescued in mutant embryos injected with gdf3 mRNA (Figure 5B). In injected MZgdf3 embryos, LPM spaw laterality was irregular with ~40% of embryos displaying correct left-sided expression at the 12 somite stage (ss). In injected Mgdf3 embryos, where zygotic gdf3 is still present, the number of embryos exhibiting correct left-sided expression of spaw increased to ~70%. This further supports the conclusion that zygotic gdf3 contributes to correct L-R patterning in the absence of maternal Gdf3.
 
@@ -94,11 +114,357 @@ Collectively, our data suggest that Gdf3 functions in multiple developmental pro
 
 ## Materials and methods
 
-## Fish care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>growth differentiation factor 3 (gdf3)</td>
+      <td>NA</td>
+      <td>ZFIN:ZDB-GENE-980526–389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>nodal-related 1 (ndr1)</td>
+      <td>NA</td>
+      <td>ZFIN:ZDB-GENE-990415–256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>nodal-related 2 (ndr2)</td>
+      <td>NA</td>
+      <td>ZFIN:ZDB-GENE-990415–181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>southpaw (spaw)</td>
+      <td>NA</td>
+      <td>ZFIN:ZDB-GENE-030219–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>DAN domain family, member 5 (dand5)</td>
+      <td>NA</td>
+      <td>ZFIN:ZDB-GENE-040421–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>gdf3 allele pr05</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated deletion, predicted null</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>gdf3 allele pr06</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated indel, predicted null</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (ID. rerio)</td>
+      <td>gdf3 allele pr11</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated indel, predicted null</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Digoxigenin-AP</td>
+      <td>Roche, 11093274910</td>
+      <td></td>
+      <td>1:3500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-phosphorylated SMAD1/5/8</td>
+      <td>Cell Signaling Technologies, 9511S</td>
+      <td></td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PKCzeta (aPKC)</td>
+      <td>Santa Cruz Biotechnology, SC-216</td>
+      <td></td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-Rabbit Alexa Fluor 647</td>
+      <td>Invitrogen, A21246</td>
+      <td></td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Donkey anti-Rabbit Alexa Fluor 647 secondary antibody</td>
+      <td>Invitrogen, A31573</td>
+      <td></td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCS2-nCas9n</td>
+      <td>Addgene plasmid # 47929</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pT7-gRNA</td>
+      <td>Addgene plasmid # 46759</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCS2(+)-gdf3-WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCS2-3XFlag-sqt</td>
+      <td>PMID:27101364</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>gdf3 in situ probe plasmid</td>
+      <td>PMID: 8405668</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>ndr2 in situ probe plasmid</td>
+      <td>PMID: 9707578</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>flh in situ probe plasmid</td>
+      <td>PMID: 7477317</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>ntla in situ probe plasmid</td>
+      <td>PMID: 1295726</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>gsc in situ probe plasmid</td>
+      <td>PMID: 8104775</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>lft1 in situ probe plasmid</td>
+      <td>PMID: 10375514</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>axial in situ probe plasmid</td>
+      <td>PMID: 7687227</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>sox17 in situ probe plasmid</td>
+      <td>PMID: 10531029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>spaw in situ probe plasmid</td>
+      <td>PMID: 12702646</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>dand5 in situ probe plasmid</td>
+      <td>PMID: 15084459</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>gdf3 morpholino</td>
+      <td>Genetools</td>
+      <td></td>
+      <td>5’-GCTCTGAGGAGGACCAAGAACATTA-3’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ntla morpholino</td>
+      <td>Genetools</td>
+      <td></td>
+      <td>5’- GACTTGAGGCAGGCATATTTCCGAT-3’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ndr1 morpholino</td>
+      <td>Genetools</td>
+      <td></td>
+      <td>5’-ATGTCAAATCAAGGTAATAATCCAC-3’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ndr2 morpholino</td>
+      <td>Genetools</td>
+      <td></td>
+      <td>5’-GCGACTCCGAGCGTGTGCATGATG-3’</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>T4 PNK</td>
+      <td>NEB, M0201S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>T4 DNA ligase</td>
+      <td>NEB, M0202S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>BsmBI</td>
+      <td>NEB, R0580S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>BglII</td>
+      <td>NEB, R0144S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>SalI</td>
+      <td>NEB, R0138S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>BamHI</td>
+      <td>NEB, R0136S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>XbaI</td>
+      <td>NEB, R0145S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Qiaquick PCR Purification Kit</td>
+      <td>Qiagen, 28104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>Qiagen, 28704</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>mMessage mMachine SP6</td>
+      <td>ThermoFisher, AM1340</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>MEGAshortscript T7 Transcription kit</td>
+      <td>ThermoFisher, AM1354</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep kit</td>
+      <td>Qiagen, 27106</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Phusion High- Fidelity PCR Kit</td>
+      <td>EB, E0553L</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Imaris</td>
+      <td></td>
+      <td></td>
+      <td>Image analysis and quantification</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td></td>
+      <td>Image analysis and quantification</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MATLAB</td>
+      <td></td>
+      <td></td>
+      <td>Image analysis and quantification</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish care
 
 Zebrafish husbandry was performed using protocols in accordance with Princeton University Institutional Animal Care and Use Committee. Embryos were maintained at 28°C in Egg Water (300 mg/L Instant Ocean Sea Salts and 0.02 mg/L Methylene Blue).
 
-## Generation of gdf3 mutants
+### Generation of gdf3 mutants
 
 Insertions and/or deletions were produced in the first exon of zebrafish gdf3 using the CRISPR-Cas9 genome editing system. Target sites GGGTACGAGGAAACATCGTG (Chr17:4086653–4086672; Ensembl 88:10; genome assembly GRCz10) and GGGTCAGAAGACAGGCTCTG (17:4086856–4086875 Ensembl 88:10; genome assembly GRCz10) were selected using CHOPCHOP (Montague et al., 2014) (Figure 1—figure supplement 1). The sgRNAs were made with the guidance of published protocols (Cong et al., 2013; Jao et al., 2013). Oligos for each target site were annealed (5’-TAGGGTACGAGGAAACATCGTG-3’ annealed to 5’-AAACCACGATGTTTCCTCGTAC-3’)(5’-TAGGGTCAGAAGACAGGCTCTG-3’ annealed to 5’-AAACCAGAGCCTGTCTTCTGAC-3’) and phosphorylated at the 5’-end by incubating a 10 µl reaction mixture (1X T4 ligase buffer (NEB, B0202S), 10 µM each of the two oligos from a target-site, and 5 units of T4 PNK (NEB, M0201S)) with the following heating profile: 30 min at 37°C, 5 min at 95°C, a 2 °C/s decrease in temperature until 85°C, and cooled at 0.1 °C/s until 25°C. The annealed oligos were cloned into pT7-gRNA (Jao et al., 2013) by incubating a 10 µl reaction mixture (40 ng/µl of pT7-gRNA, a 1:20 dilution of the annealed oligos for an individual target site, 1X NEB buffer 3.1 (NEB, B7203S), 1X T4 ligase buffer (NEB, B0202S), 5 units of BsmBI (NEB, R0580S), 5 units of BglII (NEB, R0144S), 5 units of SalI (NEB, R0138S), and 200 units of T4 DNA ligase (NEB, M0202S)) with the following heating profile: 3 cycles of 20 min at 37°C, 15 min at 16°C, 10 min at 37°C, and 15 min at 55°C. Plasmids with the correct insertion were confirmed by Sanger sequencing. Plasmids were transformed into E.coli. DH5α, grown, and isolated using a QIAprep Spin Miniprep kit (Qiagen, 27106). The sgRNAs were then synthesized from BamHI (NEB, R0136S) digested plasmids using a MEGAshortscript T7 Transcription kit (ThermoFisher, AM1354). Cas9 mRNA was synthesized from NotI (NEB, R0189S) digested pCS2-nCas9n (Jao et al., 2013) using an mMessage mMachine SP6 Transcription Kit (ThermoFisher, AM1340). Both pT7-gRNA (Addgene plasmid # 46759) and pCS2-nCas9n (Addgene plasmid # 47929) were gifts from Wenbiao Chen.
 
@@ -110,44 +476,44 @@ Since, Mgdf3 and MZgdf3 embryos exhibited the same phenotype, they were used int
 
 Images of gross morphological phenotypes were acquired using a Leica DFC365 FX camera attached to a Leica M205 FA stereomicroscope.
 
-## Morpholino and RNA rescue injections
+### Morpholino and RNA rescue injections
 
-## Morpholino injections
+#### Morpholino injections
 
 The previously published gdf3 AUG morpholino (Ye et al., 2010) (5’-GCTCTGAGGAGGACCAAGAACATTA-3’; Genetools), was used to knockdown translation of Gdf3. Each injection contained 5 ng of gdf3 AUG morpholino and 5 ng of p53 AUG morpholino (used to limit off-target effects [Ye et al., 2010]). Approximately 2 ng of the previously published ntla AUG morpholino (Nasevicius and Ekker, 2000) (5’- GACTTGAGGCAGGCATATTTCCGAT-3’; Genetools), was used to knockdown translation of Ntla. A mixture containing 10 ng of cyc (Karlen and Rebagliati, 2001) and 10 ng of sqt (Feldman and Stemple, 2001) AUG morpholinos (5’-GCGACTCCGAGCGTGTGCATGATG-3’, 5’-ATGTCAAATCAAGGTAATAATCCAC-3’; Genetools) was used to knockdown translation of Ndr1 and Ndr2. For all knockdowns, a morpholino mixture of ~1.8 nl was injected into the yolk of one cell stage embryos. All morpholino mixtures contained Danieau’s Buffer and 0.5 mg/ml phenol red.
 
-## RNA rescue injections and overexpression
+#### RNA rescue injections and overexpression
 
 The pCS2(+)-gdf3-WT construct was generated by inserting the complementary sequence of WT gdf3 mRNA into a pCS2(+) plasmid construct. The gdf3 insert was amplified from cDNA using primers with a 5’-end BamHI site (5’-AAGGATCCTGTTTTTATAATCTAATAATGTTCTTGG-3’) and a 5’-end XbaI site (5’-AATCTAGAATAGTAAAAGTTTTTATTATTACATTACAATG-3’). The amplicon was gel purified using a QIAquick Gel Extraction Kit (Qiagen, 28704) and both the gdf3 insert and the pCS2(+) destination plasmid were digested with BamHI (NEB, R0136S) and XbaI (NEB, R0145S). The digested DNA was purified using a Qiaquick PCR Purification Kit (Qiagen, 28104) and ligated using T4 DNA ligase (NEB, M0202S). The resulting plasmid was sequenced to confirm the insertion of gdf3 into the multiple cloning site of pCS2(+).The plasmid was digested with XbaI, and capped gdf3 mRNA was synthesized using an mMessage mMachine SP6 Transcription Kit. A 1.8 nl volume gdf3 mRNA in 0.1 M KCl was injected into the cell of a one cell stage Mgdf3 or MZgdf3 embryo. RNA in situ hybridization was used to analyze gsc, lft1, ntl, and sox17 expression. Nodal ovexpression was performed using nodal mRNA generated from a pCS2(+) plasmid, given to us as a gift from the Sampath Lab, containing the sequence for ndr1 linked to the sequence for 3XFlag (Wang et al., 2016). Capped nodal mRNA was synthesized and injected similar to the gdf3 mRNA rescues.
 
-## RNA in situ hybridization
+### RNA in situ hybridization
 
 Embryos were fixed at the 10 ss stage in 4% PFA overnight at 4°C. These embryos were washed with in PBST (1X PBS containing 0.1% Tween-20), dechorionated, transitioned to 100% methanol, and stored at −20°C for at least 1 day. The transition to methanol was done by performing five-minute washes in 75% 1X PBST:25% methanol, 50% 1X PBST:50% methanol, 25% 1X PBST:75% methanol, and 100% methanol. The embryos were then transitioned into 1X PBST by performing 5 min washes in 25% 1X PBST:75% methanol, 50% 1X PBST:50% methanol, and 75% 1X PBST:25% methanol. Embryos were then washed four times in 1X PBST with 5 min per wash. Somite stage embryos were incubated for 1 min in 1X PBST containing 0.01 mg/ml Proteinase K (Sigma-Aldrich, P2308) followed by a 20 min incubation in 1X PBST containing 4% paraformaldehyde. These embryos were then washed five more times in 1X PBST with 5 min per wash. Blastula and gastrula stage embryos did not undergo this Proteinase K treatment, extra fixation with 4% paraformaldehyde, or the extra five washes with 1X PBST. Embryos were incubated in HYB (50% formamide, 5X SSC, 500 µg/ml torula yeast RNA, 50 µg/ml heparin 0.1% Tween 20, and 9 mM Citric Acid (pH 6.0)) for 2 hr at 68°C. Embryos were then incubated overnight in HYB containing an insitu hybridization probe at 68°C. The next day, embryos were washed at 68°C in HYB, 75% HYB: 25% 2X SSC, 50% HYB: 50% 2X SSC, 25% HYB: 75% 2X SSC, and 2X SSC for 10 min each wash. Embryos were then washed twice in 0.2X SSC for 30 min each wash. The remaining washes were performed at room temperature. Embryos were washed in 75% 0.2X SSC: 25% 1X PBST, 50% 0.2X SSC: 50% 1X PBST, 25% 0.2X SSC: 75% 1X PBST, and 1X PBST for 5 min each wash. Next, embryos were incubated on a rocker for 2 hr in 1X PBST containing 2 mg/ml BSA and 2% normal sheep serum (NSS). Embryos were then incubated overnight on a rocker in 1X PBST containing 2 mg/ml BSA, 2% NSS, and 1:3500 of Anti-Digoxigenin-AP (Roche, 11093274910). The next day, the embryos were washed quickly in 1X PBST followed by six additional 15 min 1X PBST washes on a rocker. Embryos were then washed three times in NTMT (0.1 M Tris-Cl ph 9.5, 0.1 M NaCl, 0.05 M MgCl2, 0.1% Tween 20) and stained with 5 µl of NBT (Roche, 11383213001) and 3.75 µl BCIP (Roche, 11383221001) per 1 ml of NTMT. Staining was stopped by washing the embryos three times with NTMT, a 5 min wash with 1X PBST, and a 4°C overnight incubation in 1X PBST containing 4% paraformaldehyde. The embryos were then transitioned to methanol using the same four-step PBST:methanol washes listed above. Embryos were stored in −20°C or cleared in 2:1 Benzyl Benzoate:Benzyl Alcohol prior to imaging. Canada Balsam containing 10% methyl salicylate was used to mount cleared embryos on a slide. RNA in situ hybridization staining was visualized using a Leica DMRA2 microscope and images were acquired using a Leica DFC450 C camera. The following probes were used for the in situ hybridizations: gdf3 (Helde and Grunwald, 1993), nodal-related 2 (Rebagliati et al., 1998), lefty1 (Bisgrove et al., 1999), goosecoid (Stachel et al., 1993), floating head (Talbot et al., 1995), no tail (Schulte-Merker et al., 1992), axial (Strähle et al., 1993), sox17 (Alexander and Stainier, 1999), southpaw (Long et al., 2003), dand5 (Hashimoto et al., 2004), myl7 (Yelon et al., 1999).
 
-## Immunofluorescence
+### Immunofluorescence
 
-## Immunofluorescence for Bmp signaling
+#### Immunofluorescence for Bmp signaling
 
 Embryos were fixed at 75% epiboly stage in 4% PFA overnight at 4°C. These embryos were washed in PBST (1X PBS containing 0.1% Tween-20), transitioned to 100% methanol, and stored at −20°C for at least 1 day. The transition to methanol was done by performing five-minute washes in 75% PBST:25% methanol, 50% PBST:50% methanol, 25% PBST:75% methanol, and 100% methanol. The embryos were then transitioned into PBST by performing 5 min washes in 25% PBST:75% methanol, 50% PBST:50% methanol, 75% PBST:25% methanol, and 100% PBST. After three more five-minute washes in PBST, the embryos were washed once more in PBDT (PBST containing 1% DMSO) after which they were incubated in blocking solution of PBDT containing 10% normal goat serum (NGS) for 2 hr. Then, 1:100 anti-phosphorylatedSMAD1/5/8 antibody (Cell Signaling Technologies, 9511S) was added and incubated overnight at 4°C. The embryos were washed in PBDT containing 1% NGS and 0.1M NaCl for 1 min followed by six more 30 min washes at room temperature, after which the embryos underwent an overnight incubation in PBDT containing 10% NGS and 1:400 Donkey anti-Rabbit Alexa Fluor 647 secondary antibody (Invitrogen, A31573) at 4°C. After DAPI was added and the sample was rocked at room temperature for 20 min, the embryos were then washed in PBDT containing 1% NGS and 0.1M NaCl for one minute followed by five 30 min washes. The final PBDT wash was for 30 min.
 
-## Imaging
+#### Imaging
 
 The embryos were positioned with the animal side toward the coverslip of a 30 mm dish (MatTek, P35G-1.5–14 C) in 1.5% low-melt agarose. All the WT and mutant embryos were imaged in one session on the Nikon A1 inverted confocal microscope using the same parameters.
 
-## Immunofluorescence for KV morphology
+#### Immunofluorescence for KV morphology
 
 Immunofluorescence to examine KV morphology was performed with small changes to the protocol listed above for Bmp signaling. The embryos were blocked in PBDT containing 10% NSS (blocking solution). The first antibody incubation was performed in blocking solution containing 1:200 anti-PKCzeta (aPKC) (Santa Cruz Biotechnology, SC-216) primary antibody. The second antibody incubation was performed in PBDT containing 10% NSS and 1:400 Goat anti-Rabbit Alexa Fluor 647 (Invitrogen, A21246) secondary antibody. The subsequent washes were performed in PBDT containing 1% NSS and 0.1M NaCl. Analysis of KV morphology was performed in a Tg(sox17:GFP)s870 line (Sakaguchi et al., 2006).
 
-## Imaging
+#### Imaging
 
 The embryos were positioned with the posterior end toward the coverslip (KV facing down) of a 30 mm dish (MatTek, P35G-1.5–14 C) in 1.5% low-melt agarose. All the uninjected and morpholino injected embryos were imaged in one session on the Nikon A1 using the same parameters.
 
-## Quantification
+### Quantification
 
-## Quantification of phosphorylated SMAD1/5/8
+#### Quantification of phosphorylated SMAD1/5/8
 
 The resulting z-stacks were opened in Imaris and positioned so that the D-V axis of the embryo was parallel to the left-right axis of the screen using the Free Rotate command. Snapshots in grayscale were taken of the DAPI channel and the Cy5 channel individually. For each embryo, a rectangle 200 pixels high and 650 pixels wide was taken so as to completely cover the middle of the embryo and the Plot Profile command was used to extract intensity of the DAPI and Cy5 channels along the D-V axis. A MATLAB script was used to align the intensity profiles and report the Cy5/DAPI ratio along the embryo from the ventral side (0) to the dorsal side (1). See provided source files for MATLAB script and data sourse files: Figure 3—source code 1, 2, 3.
 
-## Quantification of eve1 domain extension
+#### Quantification of eve1 domain extension
 
 For the WT and mutant images, a combination of red, green, and blue pixel values was chosen to threshold the set of images in MATLAB, so as to detect the purple in situ signal in an unbiased manner. Given an input image, the MATLAB script also produced a modified image with the in situ signal in white and the rest of image darkened, which was used for the next step. In ImageJ, an oval was manually traced out around the embryo and the extent of the circumference of embryo with in situ signal was manually identified using the Oval_Profile plugin with Number of Points as 360 and Analysis mode as Radial Sums. From the plot, the extent of degrees that the in situ stain occupied was measured and divided by 360 to get extent of the expression domain. See supplement for MATLAB script (Figure 3—source code 1, 2 and 3).

@@ -10,18 +10,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Chemistry, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 California Institute for Quantitative Biosciences, University of California, Berkeley Berkeley United States
-3. https://ror.org/01an7q238 Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States
-4. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-5. https://ror.org/01an7q238 College of Chemistry Mass Spectrometry Facility, University of California, Berkeley Berkeley United States
-6. https://ror.org/02e7b5302 Institute for Digital Molecular Analytics and Science, Nanyang Technological University Singapore Singapore
+1. Department of Chemistry, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. California Institute for Quantitative Biosciences, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. College of Chemistry Mass Spectrometry Facility, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+6. Institute for Digital Molecular Analytics and Science, Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))
 
 † Corresponding author
 
 ## Abstract
 
-The Tec-family kinase Btk contains a lipid-binding Pleckstrin homology and Tec homology (PH-TH) module connected by a proline-rich linker to a ‘Src module’, an SH3-SH2-kinase unit also found in Src-family kinases and Abl. We showed previously that Btk is activated by PH-TH dimerization, which is triggered on membranes by the phosphatidyl inositol phosphate PIP 3 , or in solution by inositol hexakisphosphate (IP 6 ) (Wang et al., 2015, https://doi.org/10.7554/eLife.06074 ). We now report that the ubiquitous adaptor protein growth-factor-receptor-bound protein 2 (Grb2) binds to and substantially increases the activity of PIP 3 -bound Btk on membranes. Using reconstitution on supported-lipid bilayers, we find that Grb2 can be recruited to membrane-bound Btk through interaction with the proline-rich linker in Btk. This interaction requires intact Grb2, containing both SH3 domains and the SH2 domain, but does not require that the SH2 domain be able to bind phosphorylated tyrosine residues – thus Grb2 bound to Btk is free to interact with scaffold proteins via the SH2 domain. We show that the Grb2-Btk interaction recruits Btk to scaffold-mediated signaling clusters in reconstituted membranes. Our findings indicate that PIP 3 -mediated dimerization of Btk does not fully activate Btk, and that Btk adopts an autoinhibited state at the membrane that is released by Grb2.
+The Tec-family kinase Btk contains a lipid-binding Pleckstrin homology and Tec homology (PH-TH) module connected by a proline-rich linker to a ‘Src module’, an SH3-SH2-kinase unit also found in Src-family kinases and Abl. We showed previously that Btk is activated by PH-TH dimerization, which is triggered on membranes by the phosphatidyl inositol phosphate PIP3, or in solution by inositol hexakisphosphate (IP6) (Wang et al., 2015, https://doi.org/10.7554/eLife.06074). We now report that the ubiquitous adaptor protein growth-factor-receptor-bound protein 2 (Grb2) binds to and substantially increases the activity of PIP3-bound Btk on membranes. Using reconstitution on supported-lipid bilayers, we find that Grb2 can be recruited to membrane-bound Btk through interaction with the proline-rich linker in Btk. This interaction requires intact Grb2, containing both SH3 domains and the SH2 domain, but does not require that the SH2 domain be able to bind phosphorylated tyrosine residues – thus Grb2 bound to Btk is free to interact with scaffold proteins via the SH2 domain. We show that the Grb2-Btk interaction recruits Btk to scaffold-mediated signaling clusters in reconstituted membranes. Our findings indicate that PIP3-mediated dimerization of Btk does not fully activate Btk, and that Btk adopts an autoinhibited state at the membrane that is released by Grb2.
 
 ## Introduction
 
@@ -43,9 +43,17 @@ We now report the discovery, made using in-vitro reconstitution of Btk on PIP3-c
 
 ## Results and discussion
 
-## Btk recruits Grb2 to PIP3-containing supported-lipid bilayers through the proline-rich region of Btk
+### Btk recruits Grb2 to PIP3-containing supported-lipid bilayers through the proline-rich region of Btk
 
 To probe the interaction between Btk and Grb2, we utilized a supported-lipid bilayer system that we had used previously to characterize the interaction of the isolated Btk PH-TH module with lipids (Chung et al., 2019). Using this system we discovered, unexpectedly, that Grb2 can be recruited to the membrane via an interaction with membrane-bound full-length Btk. We had shown previously that the PH-TH module of Btk is recruited to membranes containing 4% PIP3, and that this recruitment exhibits a sharp dependence on PIP3 concentration in the membrane. To characterize the interaction between Grb2 and full-length Btk, we used supported-lipid bilayers containing 4% PIP3, to which full-length Btk is recruited from solution via the PH-TH module (Chung et al., 2019). We found that recruitment of Btk to the membrane also resulted in Grb2 being recruited to the membrane (Figure 2A and Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fluorescently labeled Grb2 was added to supported-lipid bilayers containing 4% PIP3, with (n=3) or without (n=1) Btk. The change in fluorescence intensity, monitored by TIRF, is plotted over time. (B) Various constructs of Btk [Btk (n=5), SH3-SH2-Kinase (n=5), SH2-Kinase (n=5), Proline-rich linker (n=3), Kinase (n=5), Blank (no protein, n=3)] with His tags were tethered to supported-lipid bilayers containing 4% DGS-NTA(Ni) lipids. The bilayers were washed after equilibration to remove any weakly bound Btk. Fluorescently-labeled Grb2 was added to these bilayers and the change in fluorescence intensity with time is shown. (C) The binding of Grb2 to membrane bound Btk is reversible. Grb2 was added to a bilayer decorated with His-tagged Btk. In one experiment (blue lines, n=2), the bilayer was washed with buffer, and in another experiment (green lines, n=2), the bilayer was washed with a solution containing 10-fold higher concentration of unlabeled Grb2. All error bars in this figure represent standard deviation across replicates. See Figure 2—source data 1 for TIRF intensity data for A-C, and Dryad repository for raw image files, Figure 2—source data 2 (https://dx.doi.org/10.5061/dryad.8sf7m0ctd).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** 4% PIP3-containing bilayers were equilibrated with 50 nM Grb2-AlexFluor647. Subsequently, 30 nM (n = 3 replicates) or 300 nM (n = 2 replicates) Btk was added along with 50 nM Grb2-AlexaFluor647. See Figure 2—source data 1 for TIRF intensity data.
 
 Recruitment of Grb2 to the membrane was measured using total internal reflection fluorescence (TIRF) microscopy and Grb2 labeled with Alexa Fluor 647 (Grb2-647) through maleimide coupling. Grb2 contains multiple surface cysteines, and therefore labeling was carried out at 1–2-fold molar excess to ensure that at most one cysteine was labeled on any molecule of Grb2. This resulted in about 17% labeling overall. TIRF imaging provides a highly selective measurement of membrane-associated Grb2-647, without picking up signal from protein in the solution phase (Huang et al., 2017a). When Btk and Grb2-647 were added together, Grb2-647 was recruited to the bilayer, as indicated by an increase in fluorescence (Figure 2A and Figure 2—figure supplement 1). When Grb2-647 was added to the supported-lipid bilayers without Btk there was no change in fluorescence above background (Figure 2A). These experiments indicate that Grb2 is capable of binding directly to Btk in the absence of other proteins.
 
@@ -57,21 +65,61 @@ An alternative, plausible mechanism for Grb2 recruitment to Btk is interaction b
 
 These experiments demonstrate that the proline-rich linker of Btk is able to recruit Grb2 to the membrane, without the other domains of Btk being present. No binding is detected to constructs that lack the PH-TH module and the proline-rich linker. We conclude that the proline-rich linker is a principal determinant of the interaction between Btk and Grb2.
 
-## Grb2 enhances the kinase activity of Btk
+### Grb2 enhances the kinase activity of Btk
 
 Btk is activated by PIP3-containing vesicles, as shown by experiments in which the phosphorylation of full-length Btk was monitored by western blot with pan-phosphotyrosine antibody (Wang et al., 2015). We repeated those experiments by incubating Btk (1 µM bulk solution concentration) in the presence or absence of lipid vesicles containing 4% PIP3, and then added increasing concentrations of Grb2, from 0 to 10 µM bulk solution concentration. In the absence of vesicles, no change in phosphorylation is detected when Grb2 is added to Btk (Figure 3A–B, and Figure 3—figure supplement 1). In the presence of PIP3-containing vesicles, the addition of Grb2 results in substantially increased levels of Btk phosphorylation, compared to the presence of PIP3-containing vesicles alone. When Btk is mixed with Grb2, the phosphorylation level detected at 5 min or 20 min for Btk without Grb2 (Figure 3A–B and Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-v1.jpg)
+
+**Figure 3.:** The activity of Btk is monitored by measuring the phosphorylation of Btk, Grb2, and a PLCγ2-peptide fusion protein by western blot. (A) Grb2 was titrated into samples containing Btk with or without 4% PIP3 lipid vesicles. These samples were activated for 5 min and then quenched with 100 mM EDTA. Total phosphorylation was measured by western blot with pan-phosphotyrosine antibody. See Figure 3—figure supplement 1 for an independent experimental replicate, and Figure 3—source data 1. (B) Btk phosphorylation measured from (A) along with one independent experimental replicate (Figure 3—figure supplement 1). (C) Phosphorylation of PLCγ2-peptide fusion by Btk. See blots in Figure 3—figure supplement 2 for raw data. Grb2 is titrated with or without PIP3, and phosphorylation of PLCγ2-peptide fusion is measured. Change in intensity is determined by comparison to the intensity observed for 0 nM Grb2 for either case (+/−Grb2). See Figure 3—source data 1 for raw images. (D) Measure of PLCγ2-peptide fusion phosphorylation over time with or without the addition of Grb2. All samples contain Btk, PLCγ2-peptide fusion and 4% PIP3 lipid vesicles. Samples were activated and quenched at the timepoints listed (0–20 min). See Figure 3—figure supplement 3 for raw data and Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Entire blot from Figure 3A in replicate, looking at autophosphorylation of Btk. For each lane 1 µM Btk was activated for 5 min in the presence or absence of 250 µM lipids, in the form of single unilamellar vesicles containing 4% PIP3, and the indicated concentrations of Grb2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Replicate blots quantified in Figure 3C, looking at phosphorylation of PLCγ2-peptide fusion. 1 µM Btk was activated for 10 minutes with or without 250 µM lipids, single unilamellar vesicles containing 4% PIP3, 10 µM PLCγ2 and 0-10 µM Grb2. A phosphorylation signature for Grb2 is observed in the top panels, scaling with the Grb2 concentration in the reaction. MS/MS failed to detect any phosphorylation on Grb2, and the signal is still observed in the absence of Btk, indicating a non-specific antibody interaction.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Entire blot from Figure 3C in replicate, looking at phosphorylation of PLCγ2-peptide fusion. 1 µM Btk was activated for the indicated amount of time in the presence of 250 µM lipids, single unilamellar vesicles containing 4% PIP3, 10 µM PLCγ2-peptide fusion with or without 1µM Grb2. Each experiment was carried out in at least duplicate.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) MS/MS spectrum for the precursor ion of m/z=631.2764, z=2 + , formed from a trypsin-digested sample of PLCγ2-peptide fusion incubated with Grb2 and Btk. The MS/MS spectrum identifies the precursor ion as the [M+2 H]2+ ion of the peptide, DINSL(pY)DVSR, corresponding to amino acid residues 376–385 of the PLCγ2-peptide fusion protein construct. The amino acid residue in position 381 of the PLCγ2-peptide fusion is identified as phosphotyrosine, this represents Tyr 753 in full-length PLCγ2. (B) MS/MS spectrum for the precursor ion of m/z=1111.0240,, z=4 + , formed from a trypsin-digested sample of His6-Sumo-eGFP-Plcg2 incubated with Grb2 and Btk. The MS/MS spectrum identifies the precursor ion as the [M+4 H]4+ ion of the peptide, RDHMVLLEFVTAAGITLGMDELYMGMERDINSL(pY)DVSR, corresponding to amino acid residues 348–385 of the PLCγ2-peptide fusion. The amino acid residue in position 381 is identified as phosphotyrosine, Tyr 753 in full-length PLCγ2. Each color represents a different type of ion in the tandem mass spectra, as follows: N-terminal fragment ions, that is, a and b-type ions (red), C-terminal fragment ions, that is, y-type ions (blue), precursor ion neutral losses (green). Fragment ions are labeled using standard nomenclature (Roepstorff and Fohlman, 1984).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** MS/MS spectrum for the precursor ion of m/z=1147.4385, z=1 + , formed from a trypsin-digested sample of PLCγ2-peptide fusion incubated with Grb2 and Btk. The MS/MS spectrum identifies the precursor ion as the [M+H]+ ion of the peptide, M(pY)VDPSEIN, corresponding to amino acid residues 386–394 of the PLCγ2-peptide fusion. The amino acid residue in position 387 of the PLCγ2-peptide fusion is identified as phosphotyrosine, corresponding to Tyr 759 in full-length PLCγ2. Each color represents a different type of ion in the tandem mass spectra, as follows: N-terminal fragment ions (red), C-terminal fragment ions (blue), precursor ion neutral losses (green).
+
 We also tested whether the binding of Grb2 to Btk influences the ability of Btk to phosphorylate its specific substrate, PLCγ2. To do this, we monitored phosphorylation of a peptide segment spanning residues 746–766 of PLCγ2 that contains two tyrosine residues (Tyr 753 and Tyr 759). Phosphorylation of this segment by Btk plays a key role in the activation of PLCγ2 in B cells (Ozdener et al., 2002; Rodriguez et al., 2001). This peptide segment was fused to an N-terminal SUMO protein and green fluorescent protein (GFP) (referred to as the PLCγ2-peptide fusion) to allow for visualization on a gel, as the substrate is otherwise too small to analyze by western blot. A protein in which the SUMO tag was cleaved is also included. We titrated Grb2 from 0 to 10 µM along with 1 µM Btk and 10 µM PLCγ2-peptide fusion, with or without 250 µM 4% PIP3-containing vesicles (Figure 3C and Figure 3—figure supplement 2). Additionally, we added 1 µM Btk to 250 µM 4% PIP3-containing vesicles in the presence of 10 µM PLCγ2-peptide fusion, with or without the addition of Grb2 (Figure 3D and Figure 3—figure supplement 3). Phosphorylation of PLCγ2-peptide fusion was measured by western blot analysis of total phosphotyrosine, using a pan-phosphotyrosine antibody. Under these conditions, the presence of Grb2 enhances phosphorylation of the PLCγ2-peptide fusion substantially (Figure 3C–D and Figure 3—figure supplements 2 and 3). We used mass spectrometry to confirm that both tyrosine residues, Tyr 753 and Tyr 759, within the PLCγ2 peptide were phosphorylated (Figure 3—figure supplements 4 and 5). Additionally, a tyrosine residue at the C-terminus of GFP was detected as phosphorylated.
 
-## All three domains of Grb2 are necessary for stimulation of Btk kinase activity
+### All three domains of Grb2 are necessary for stimulation of Btk kinase activity
 
 The observed stimulation of Btk catalytic activity by Grb2 prompted us to ask which domains of Grb2 are required for this phenomenon. We made constructs corresponding to each individual domain of Grb2 (N-terminal SH3, SH2, and C-terminal SH3), or combinations of domains (N-terminal SH3-SH2, SH2-C-terminal SH3, and N-terminal SH3-C-terminal SH3, see Materials and Methods for the specification of these constructs). We included an additional Grb2 construct, R86K, in which a conserved arginine residue in the SH2 domain that is critical for phosphotyrosine binding is mutated to lysine. Substitution of the corresponding arginine residue by lysine in other SH2 domains attenuates the binding of the SH2 domains to phosphorylated peptides (Mayer et al., 1992). We have demonstrated recently that the R86K mutation impairs the ability of Grb2 to promote phase separation of scaffold proteins (Lin et al., 2022). Another Grb2 variant (Y160E) has a reduced capacity for dimerization (Ahmed et al., 2015). The ability of each of these constructs to stimulate Btk activity was tested, as measured by phosphorylation of the PLCγ2-peptide fusion (Figure 4A and Figure 4—figure supplement 1). All reactions were carried out in the presence of unilamellar vesicles at a total lipid concentration of 250 µM containing 4% PIP3. Protein and vesicles were incubated together for 15 min in the absence of ATP, and the reaction time is measured from when ATP was added to the solution.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig4-v1.jpg)
+
+**Figure 4.:** (A) Quantification of PLCγ2-peptide fusion phosphorylation measured from two independent experimental replicates. Phosphorylation of PLCγ2-peptide fusion by Btk in the presence of 4% PIP3 lipid vesicles was monitored in the presence of various Grb2 constructs. These constructs include: full length Grb2, R86K, N-terminal SH3 fused to C-terminal SH3, Y160E, N-terminal SH3-SH2, SH2-C-terminal SH3, N-terminal SH3, SH2, and C-terminal SH3. See Figure 4—figure supplement 1 and Figure 4—source data 1 for raw images. (B) Diffusion coefficients for membrane bound Btk were determined by single-molecule tracking, and fitting to step-size distributions for each concentration of unlabeled Btk, with or without Grb2. Error bars represent the standard deviation determined from the fit step-size distribution. See Dryad repository for source data for this panel, Figure 4B – source data (https://dx.doi.org/10.5061/dryad.jwstqjqfd).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Entire blot from Figure 4A and replicate, looking at phosphorylation of PLCγ2-peptide fusion in the presence of Btk and varying constructs of Grb2. 1 µM Btk was activated for 10 minutes in the presence of 250 µM lipids, in the form of single unilamellar vesicles containing 4% PIP3, 10 µM PLCγ2 peptide fusion with 10 µM of the indicated construct of Grb2. Each experiment was carried out in at least duplicate.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Example of the step size distribution, taken from 1 nM Btk-Cy5 alone (no unlabeled Btk added). Frame skips (denoted as ‘time steps’ here) were taken to ensure that no artifacts arise from selection of the frame rate or size of the camera pixels relative to step size of the molecules. The three-component diffusion is fit to the step size distributions across all selected time steps globally. According to Fick’s law of diffusion, the scale factor of a chi distribution fit to a step-size distribution will correspond to the diffusion coefficient of that population. In this case, the population was fit to a sum of three chi distributions, corresponding to three different diffusion coefficients represented within the population. This fitting procedure is detailed in Materials and Methods. The fastest diffusion coefficient as determined by this fitting method is included in the main text (Figure 4B). (B) The middle component of the fit, remaining relatively constant across Btk concentrations. (C) The slowest component of the fit, also remaining relatively constant with increasing surface density of Btk. See Dryad repository for source data for this figure. Error bars in (B) and (C) represent the standard deviation determined from the fit step-size distribution.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Dwell time was calculated by plotting a histogram of the length of tracks from the same data as the Figure 4—figure supplement 2. This histogram was then normalized to instead represent survival probabilities, which was then fit to the sum of two exponential decays. See Dryad repository for source data for this figure.
 
 Full-length Grb2 increases the phosphorylation of the PLCγ2-peptide fusion by five to six-fold relative to the reaction in which no Grb2 was added (Figure 4A and Figure 4—figure supplement 1). The Grb2 variant in which the ability of the SH2 domain to bind to phosphopeptides is impaired (Grb2 R86K) stimulates the reaction to essentially the same extent as wild-type Grb2, indicating that the phosphopeptide-binding ability of the Grb2 SH2 domain is not required for stimulation of Btk activity by Grb2. This observation suggests that Grb2 bound to Btk will retain the capacity to dock on phosphorylated scaffold proteins via the SH2 domain, as discussed below. Removal of any of the three component domains of Grb2 results in substantial reduction of phosphorylation of the PLCγ2-peptide fusion (Figure 4A and Figure 4—figure supplement 1). Grb2-Y160E shows a reduction in the PLCγ2-peptide fusion phosphorylation by Btk, compared to the wild-type Grb2. This result indicates that Grb2 dimerization may be important for stimulation of Btk activity, although a definitive analysis of the mechanism awaits further study of additional Grb2 mutants.
 
 Constructs containing only the N-terminal SH3 domain of Grb2 increase phosphorylation to a greater extent than constructs containing only the C-terminal SH3 domain (Figure 4A and Figure 4—figure supplement 1). This indicates that the N-terminal SH3 domain of Grb2 is more important for the interaction with Btk, consistent with the earlier finding that fusion of the N-terminal SH3 domain of Grb2 to mIgG is sufficient for promoting Ca2+ flux through the activation of Btk (Engels et al., 2014).
 
-## Grb2 does not affect dimerization of Btk on the membrane
+### Grb2 does not affect dimerization of Btk on the membrane
 
 Btk activity is stimulated by homodimerization of the PH-TH modules (Chung et al., 2019; Wang et al., 2015). Given this, it is possible that Grb2 could promote activation by crosslinking two Btk molecules. This would be similar in mechanism to the recent findings that show activation of Btk through dimerization of HIV Nef (Aryal et al., 2022). To check whether Grb2 impacts the dimerization of Btk we measured the diffusion coefficient and the dwell time of Btk on the membrane in the presence or absence of Grb2 (Figure 4B and Figure 4—figure supplements 2 and 3; Chung et al., 2019). Although there is no simple relation connecting two-dimensional diffusion and molecular complex size as there is for three-dimensional diffusion, two-dimensional diffusion on a membrane surface nonetheless changes markedly between monomers and dimers and is a sensitive measurement of dimerization (Chung et al., 2018; Chung et al., 2019; Kaizuka and Groves, 2004; Knight and Falke, 2009). If Grb2 increases the population of Btk dimers, we would expect to see a decrease in the diffusion coefficient of individual complexes on the membrane in the presence of Grb2. If Grb2 increases the affinity of Btk for the membrane, this would be manifested as an increase in Btk dwell time, the time that single molecules of Btk stay at the membrane, through a reduction in off-rate.
 
@@ -79,7 +127,7 @@ To enable site-specific labeling of full-length Btk we used unnatural amino acid
 
 The surface density of Btk-Cy5 on the membrane was observed to increase when the solution concentration of unlabeled Btk was increased from 0 nM to 20 nM, in the presence of very low concentrations of Btk-Cy5 (500 pM-1 nM). This enables the monitoring of single molecules of Btk-Cy5, which was done either in the presence of Grb2 at 50 nM bulk concentration, or without Grb2. From each sample, step-size distributions were compiled from the single-molecule trajectories to assess the various time-dependent components to Btk diffusion on the membrane. Step-size distributions generally required fitting to three components, while two-component exponential fits were sufficient for fitting dwell time. Both with and without Grb2, the fastest of the three diffusion constants decreases with increasing Btk concentration, indicative of a transition from monomeric to dimeric Btk. The presence of Grb2 does not change the diffusive behavior of Btk at any of the concentrations used in these experiments (Figure 4B and Figure 4—figure supplement 2). This is supported by the same trend observed through dwell time measurement: overall dwell time increases with increasing Btk concentration, but Grb2 has no influence on this change (Figure 4—figure supplement 3). The decrease in the Btk diffusion constant with increasing solution concentration of Btk is consistent with what is observed for the Btk PH-TH module at these concentrations, confirming that full-length Btk interacts with the membrane in the same way as does the Btk PH-TH module (Figure 4B and Figure 4—figure supplement 2; Chung et al., 2019). These experiments show that Grb2 does not change the dynamics of membrane-bound Btk, either through changes in the dimer population or changes in the membrane affinity.
 
-## Grb2 can recruit Btk to clusters of scaffold proteins
+### Grb2 can recruit Btk to clusters of scaffold proteins
 
 We studied how the ability of Grb2 to bind to Btk might impact the localization of Btk on the membrane, by monitoring the interaction of Btk with the scaffold protein LAT on supported-lipid bilayers. LAT is similar to the B-cell scaffolding protein SLP65/BLNK. Our use of LAT, rather than SLP65/BLNK, was predicated on our extensive prior work with LAT on supported-lipid bilayers (Hashimoto et al., 1999; Huang et al., 2019; Huang et al., 2017a; Huang et al., 2017b; Huang et al., 2016; Koretzky et al., 2006; Su et al., 2016).
 
@@ -87,7 +135,15 @@ LAT signaling clusters can be generated from minimal components on supported-lip
 
 Single molecules of Btk-Cy5 were tracked and used to compile step-size distributions that reflect the diffusive behavior of Btk under a given condition: the shorter the step-sizes, the slower moving the Btk molecules (Lin et al., 2020). When Btk was incubated with phosphorylated LAT alone the step-size distribution shows a fast diffusing population, similar to that observed for Btk alone (Figure 5B). Addition of Grb2 shifts the step-size distribution to shorter steps, suggesting two possible situations. One possibility is that Grb2 is able to simultaneously bind Btk and LAT, thus slowing Btk molecules through an additional anchor point to the membrane (via the Grb2-LAT complex). The second possibility is that Grb2 alone has promoted small LAT condensates that are not immediately visible by eye (Lin et al., 2021), creating small domains of dense LAT, within which Btk cannot diffuse freely. The addition of SOS-PRR along with Grb2 induces the full phase transition of the phosphorylated LAT (Figure 5C and Figure 5—figure supplement 1). The step-size distribution shifts even further left under this condition, suggesting that Btk has been trapped within the LAT dense phase (Figure 5B). We found that Btk was not able to bind SOS-PRR directly (Figure 5—figure supplement 1). These observations suggest that Btk is likely to be tethered to the phosphorylated LAT molecules through binding of the SH2 domain of Grb2 to phosphotyrosine residues on LAT and binding of the SH3 domains of Grb2 to Btk. This interaction leads to recruitment of Btk into the LAT condensate.
 
-## Ideas and speculation
+![Figure 5.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cartoon schematic of predicted mechanism for Btk recruitment into LAT signaling clusters. (B) Step-size distribution for Btk-Cy5 under each condition: phospho-LAT, phospho-LAT + Grb2, phase transitioned LAT (phospho-LAT + Grb2 + SOS-PRR). The step-size distribution was calculated at multiple delay times. These delay times represent frame skips that were taken to ensure that no artifacts arise from selection of the frame rate or size of the camera pixels relative to step-size of the molecules. For each delay time, the dataset used to create the step-size distribution consists of frames from every 20 ms (every frame), 40 ms (every other frame), 60 ms, or 80 ms (every fourth frame). Six different positions across the bilayer were recorded for 500–600 frames each, and one independent experiment was used to confirm trends observed here. (C) Overlay of image of Btk-Cy5 (green) and LAT-Alexa Fluor 555 (red) after LAT phase transition. See Dryad repository for source data for this figure, Figure 5—source data 1 (https://dx.doi.org/10.5061/dryad.prr4xgxrf).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82676/elife-82676-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Grb2-AlexaFluor647 and Btk were added to a PIP3-containing membrane at time 0, and AlexaFluor647 fluorescence intensity was measured. After 30 minutes SOS-PRR is added at 1.45 µM. SOS-PRR appears to compete with Btk for Grb2 binding. (B) Btk, Grb2, and SOS-PRR-AlexaFluor647 or Grb2 and SOS-PRR-AlexaFluor647 was added to PIP3 containing membrane and AlexaFluor647 fluorescence intensity was measured. SOS-PRR does not interact with Btk on supported-lipid bilayers. These data show that SOS-PRR is not recruited to Btk on supported-lipid bilayers.
+
+### Ideas and speculation
 
 In this paper we present the discovery of an unexpected role for the scaffold protein Grb2 in the control of Btk activity. We show that Grb2 can bind to and enhance the kinase activity of Btk in the presence of PIP3. Previous studies have shown that the N-terminal SH3 domain of Grb2 could bind to Btk through interaction with mIgG tails and SLP65 and thereby potentiate downstream signaling (Engels et al., 2014; Kurosaki and Tsukada, 2000). Here we show that detectable activation of Btk by Grb2 only occurs when the PH-TH module of Btk engages PIP3 at the membrane. Thus, Grb2 activation of Btk is layered upon a necessary first step of PIP3 generation, which requires BCR stimulation. Enhanced activation of Btk results in increased phosphorylation of Btk itself as well as phosphorylation of the PLCγ2-peptide fusion.
 
@@ -103,7 +159,262 @@ By looking directly at Btk phosphorylation in the presence of Grb2 in our recons
 
 ## Materials and methods
 
-## Protein preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV (Tobacco etch virus) site-Grb2 pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length, UniProt P62993</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Btk pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length, UniProt Q06187</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Btk SH3-SH2-kinase pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 212–659</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Btk SH2-Kinase pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 281–659</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Btk kinase pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 402–659</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Btk proline-rich linker pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 171–214</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PLCγ2-peptide fusion pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PLCγ2 Residues 746–766 UniProt P16885, EGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH3N-SH2 pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 1–153</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH2-SH3C pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 60–217</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH3N-SH3C pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 1–59, 154–217</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH3N pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 1–59</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH2 pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 60–153</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 SH3C pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 154–217</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 R86K pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length, R86K</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Grb2 Y160E pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length, Y160E</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-SUMO-Btk T403AzF pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length, T403Amber STOP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-LAT pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 252–520, UniProt P08631</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-Hck pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Residues 1051–1333, UniProt Q07889</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV site-SOS-PRR pET28 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UniProt P15273</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YopH pCDFDuet (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>Thermo Fisher</td>
+      <td>C600003</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Phospho-Tyrosine mAb, pTyr-100 (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 9411</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Mouse HRP linked antibody (Horse)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 7076</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4-Azido-L-phenylalanine HCl</td>
+      <td>Amatek Chemical Co.</td>
+      <td>Cat#: 33173-53-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dibenzocyclooctyl (DBCO)-Cy5</td>
+      <td>Click Chemistry Tools</td>
+      <td>Cat#: A130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AlexFluor 647 C2 Maleimide</td>
+      <td>Thermo Fisher,</td>
+      <td>Cat#: A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AlexFluor 555 C2 Maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: A20346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PI(3,4,5)P3 di16 (ammonium salt)</td>
+      <td>Echelon Biosciences, Inc</td>
+      <td>Cat#: P-3916A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl)iminodiacetic acid)succinyl] (nickel salt) (DGS-NTA(Ni))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#: 790404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>18:1 1,2-dioleoyl-sin-glycero-3-phosphocholine (DOPC)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#: 850375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trackmate</td>
+      <td>FIJI (Image J)</td>
+      <td>Version: 2.9.0/1.53t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imtrack package</td>
+      <td>Groves lab (Darren McAffee, PhD)</td>
+      <td>https://github.com/lnocka/Single_molecule_tracking.git</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>multi_chi_global.py</td>
+      <td>This paper</td>
+      <td>https://github.com/lnocka/Single_molecule_tracking.git</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>analysis_overlay_3D_line.py</td>
+      <td>This paper</td>
+      <td>https://github.com/lnocka/Single_molecule_tracking.git</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein preparation
 
 For preparation of full-length Btk, the plasmid was transformed into BL21(DE3) Escherichia coli (E. coli) containing the YopH expression plasmid (described above) and plated on kanamycin and streptomycin containing agar plates (Seeliger et al., 2005). Transformed cells were first grown in a 200 mL Terrific broth containing 100 µg/mL kanamycin and streptomycin overnight culture at 37 °C. This was then split into 6 L of Terrific broth containing 100 µg/mL kanamycin and streptomycin and grown to an optical density of 1–1.5 at 37 °C. The cultures were mixed 1:1 with new media and antibiotic at 4 °C and 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) and maintained at 4 °C to grow overnight. After overnight expression, the cultures were spun down and resuspended in 15–30 mL of Ni A buffer (500 mM NaCl, 20 mM Tris-HCl pH 8.5, 20 mM Imidazole, 5% Glycerol). These were then flash frozen and kept at –80 °C until the next step of the purification.
 
@@ -113,17 +424,17 @@ After SUMO cleavage, the sample was run over a second HisTrap column, and this t
 
 All other constructs were purified in a similar manner with the following changes. All constructs that did not contain a kinase domain were transformed into BL21(DE3) E. coli without the YopH plasmid, and therefore they were grown with only kanamycin. Expression for these constructs was carried out overnight at 18 °C. Grb2 constructs and PLCγ2-peptide fusion express at much higher levels than the Btk constructs and therefore only 1–2 L were prepared at a given time, and therefore no overnight culture was required prior to protein expression. For all constructs that contain a His tag after purification (LAT, Hck, and His-tagged Btk constructs), the protease and second HisTrap column were eliminated. Grb2 constructs and SOS-PRR each contain a TEV site and therefore His tagged TEV protease was used to remove the His tag.
 
-## Protein fluorescent labeling by maleimide conjugation
+### Protein fluorescent labeling by maleimide conjugation
 
 Grb2 and SOS-PRR were each prepared at a concentration of 50 µM and incubated with 5 mM DTT for 30 min on ice to ensure all accessible cysteines were reduced. AlexaFluor 647 C2 Maleimide (Thermo Fisher, A20347) or AlexaFluor 555 C2 Maleimide (Thermo Fisher, A20346) was dissolved in anhydrous DMSO and added in equimolar amounts to Grb2 or threefold molar excess to SOS-PRR and incubated at room temperature (approximately 22 °C) for 30 min or at 4 °C overnight, depending on the stability of the protein. The reaction was then quenched with 10 mM DTT for 30 minutes at 4 °C. After quenching, the protein was diluted in 10–15 mL fresh buffer, and then concentrated in an Amicon Ultra-15 centrifugal filter (Millipore Sigma), allowing free dye to be removed in the flow through. This process was continued until no more free dye could be easily detected in the flow through. At this point the protein was then purified by gel filtration in Buffer B as described above. Labeling efficiency was calculated based on the absorbances at 280 nm and the peak excitation wavelength for the dye, taking into account dye contribution at 280 nm. A note about Grb2 labeling: the protein tends to aggregate when exposed to an excess of dye, and therefore we favored under labeling by only providing equimolar amount of dye.
 
-## Protein fluorescent labeling by azido phenylalanine incorporation
+### Protein fluorescent labeling by azido phenylalanine incorporation
 
 For site specific labeling of full-length Btk for single-molecule studies, we used unnatural amino acid incorporation of an Azido phenylalanine (AzF) residue (Amiram et al., 2015; Bard and Martin, 2018; Chatterjee et al., 2013;; Chin et al., 2002). An amber codon (UAG) was introduced at the desired labeling position in the plasmid for Btk expression, and it was ensured that the stop codon for this gene was not amber. This plasmid was co-transformed into BL21(DE3) containing a plasmid expressing YopH with the pUltra-pAzFRS plasmid. A 5 mL starter culture was grown overnight in TB at 37 °C from this transformation. This was used to inoculate 1 L TB the following morning which was grown to an optical density between 0.5 and 1 at 37 °C. This culture was spun down and resuspended in 167 mL cold (4 °C) TB containing 2 mM 4-Azido-L-phenylalanine HCl (Amatek Chemical Co., CAS no. 33173-53-4) before induction, this culture was allowed to grow for 1.25 hr at 4 °C. The culture was then induced with 1 mM IPTG and grown overnight at 4 °C. After this, protein purification proceeded as normal until just before the gel filtration step, except that all reducing agents were left out of the buffers. Yield of the protein is drastically reduced, however for our applications a low yield was not a problem as long as labeling was feasible.
 
 For labeling, the purified protein was concentrated to about 300 µL. 5 mM 5,5-dithio-bis-(2-nitrobenzoic acid) (DTNB, Ellman’s reagent) was prepared in 50 mM HEPES, pH 7.0, 250 mM KCl, 5% glycerol. DTNB was added at 15 X molar excess to the protein solution and incubated at room temperature for 10 min. The protein was then cooled back to 4 °C and 300 µM dibenzocyclooctyl (DBCO)-Cy5 (Click Chemistry Tools, Catalog no. A130) was added from a 30 mM stock in DMSO. This was incubated overnight at 4 °C. The reaction was quenched with 5 mM DTT and incubated at 4 °C for 1 hr. At this point the labeled protein was purified by gel filtration, then concentrated to an appropriate concentration, flash frozen and stored at –80 °C. This protocol was adapted from the lab of Andreas Martin (Bard et al., 2019; Bard and Martin, 2018; Lander et al., 2012).
 
-## Western blot assays for Btk kinase activity
+### Western blot assays for Btk kinase activity
 
 Samples were prepared with 2 X concentration of each component depending on the condition to be tested (2 µM Btk, 250 µM 4% PIP3 single unilamellar vesicles (SUVs), 0–20 µM Grb2) in Buffer A, final concentrations during the reaction are indicated for each blot. These components were incubated for 15 min at room temperature and then diluted 1:1 in activation buffer (20 mM MgCl2, 2 mM ATP, 2 mM sodium vanadate). These were mixed and the reaction proceeded at room temperature for the designated amount of time, indicated for each blot separately. The reaction was then quenched by mixing 1:1 with Quench buffer (166 mM Tris-HCl pH 6.8, 10% SDS, 10 mM DTT, 3 µM bromophenol blue, 10% glycerol, 100 mM EDTA). These samples were then immediately heated at 90 °C for 15 min, followed by loading onto two 12 or 15% SDS page gels, which were run at 250 V for 35 min. One gel was stained with Coomassie blue, the second was prepared for a western blot transfer.
 
@@ -131,7 +442,7 @@ Filters were soaked in western blot transfer buffer (25 mM Tris-HCl pH 7.4, 192 
 
 Blots were quantified using Fiji (ImageJ). Each lane of the gel was selected with a rectangle and Fiji Analyze Gels option. The lanes were then plotted and a linear baseline was marked. Any peaks in close proximity were separated with a vertical line. The wand tool was then used to select the peak area. These intensities were then plotted. In the case where a 0 timepoint was recorded, or if a titration of Grb2 was being assessed and a point with no Grb2 was added was recorded, these were used as baseline to define a change in intensity for the remaining samples (Figure 3B–D). It should be noted that this technique is only semi-quantitative as the intensity may not be linear with phospho-tyrosine concentration; these graphs are provided as a tool to compare trends rather than exact values. Replicates are provided to ensure that the observed trend was reproducible.
 
-## Supported-lipid bilayer preparation
+### Supported-lipid bilayer preparation
 
 Vesicles were prepared by first mixing the desired ratios of PIP3 (Echelon Biosciences, Inc), 1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl)iminodiacetic acid)succinyl] (nickel salt) (DGS-NTA(Ni)), and 18:1 1,2-dioleoyl-sin-glycero-3-phosphocholine (DOPC) (Avanti Polar Lipids). For experiments with full-length Btk (no His tag) 4% PIP3, 96% DOPC mixtures were prepared. For experiments using His-tagged Btk constructs 4% DGS-NTA(Ni), 96% DOPC mixtures were prepared. And for experiments involving LAT 4% PIP3, 4% DGS-NTA(Ni), 92% DOPC bilayers mixtures were prepared. All lipids were stored in solution with chloroform, except PIP3 which was stored in powder form and dissolved in a solution of 1:2:0.8 Chloroform:Methanol:Water just before use. After mixing, the solution was dried in an etched 50 mL round bottomed flask by rotary evaporation for 15 min and then under nitrogen for 15 min. Dried lipids could then be kept overnight at 4 °C, sealed from air or used immediately.
 
@@ -139,24 +450,28 @@ The lipids were rehydrated in water to 1 mg/mL lipid concentration by vortexing.
 
 For experiments where DGS-NTA(Ni) lipids were used to coordinate His-tagged protein to the bilayers, the protein was added at the desired incubation concentration and left at room temperature for 40 min. The chambers were then washed with 600 µL HBS gently by hand and incubated for 20 more minutes at room temperature. They were then again washed with 600 µL HBS. Finally, they were washed with 100 µL imaging buffer containing 100 µg/mL BSA or β-Casein (depending on the blocking agent that was used initially) and 10 mM BME in HBS.
 
-## Microscopy
+### Microscopy
 
 Total internal reflection fluorescence adsorption experiments were carried out and collected on a Nikon Eclipse Ti-inverted microscope (Nikon, Tokyo, Japan) with 100 x objective and Andor iXon electron-multiplying charge-coupled device (EMCCD) camera (Oxford Instruments), as previously described (Bhattacharyya et al., 2020). Adsorption curves were acquired with 15 second intervals with a laser power of 0.5–1 mW and exposure time of 75 ms, and data are displayed as a difference intensity, where the baseline for a given sample was calculated from the average of the four frames preceding Grb2 addition.
 
 Single-molecule traces were recorded as described previously (Lin et al., 2020). Btk was allowed to equilibrate with the supported-lipid bilayers for 30 min before imaging. This was determined to be sufficient for Btk to equilibrate on the bilayers based on previous work with the PH-TH module alone (Chung et al., 2019). Movies were recorded at exposure time of 20 ms, magnification of ×1.5 on ×100 objective, and laser power of 20 mW. Five or more traces of 500–600 frames were collected at various places across the sample.
 
-Fluorescent molecules in these movies were tracked using the TrackMate plugin from Fiji (Image J) (Tinevez et al., 2017). Particles were identified using the difference of Gaussian detector. Tracking parameters were kept consistent across experiments, 0.5 µm diameter spot size, threshold of 100 (determined by visual inspection), particle links determined using simple linear assignment problem tracker, with linking distance maximum of 1.5 µm, a maximum frame gap of 2, and maximum gap distance of 1.5 µm. An immobile fraction of fluorescent Btk was always observed, and this fraction was included in the analysis and showed minimal change across samples. Tracks were analyzed by calculating a step-size distribution for all tracked particles. In order to ensure that step size was sufficiently long compared to the camera pixel size, we calculated the step-size distribution for four different time delays (every 2 frames, 3 frames, 4 frames, and 5 frames). To prevent over-counting, these data were drawn from skips within the original dataset. The full data-set, including all time delays, was then fit to a three-component diffusion model:ρ(r,τ, D)=∑i=03αir2Dτe-r24Dτ
+Fluorescent molecules in these movies were tracked using the TrackMate plugin from Fiji (Image J) (Tinevez et al., 2017). Particles were identified using the difference of Gaussian detector. Tracking parameters were kept consistent across experiments, 0.5 µm diameter spot size, threshold of 100 (determined by visual inspection), particle links determined using simple linear assignment problem tracker, with linking distance maximum of 1.5 µm, a maximum frame gap of 2, and maximum gap distance of 1.5 µm. An immobile fraction of fluorescent Btk was always observed, and this fraction was included in the analysis and showed minimal change across samples. Tracks were analyzed by calculating a step-size distribution for all tracked particles. In order to ensure that step size was sufficiently long compared to the camera pixel size, we calculated the step-size distribution for four different time delays (every 2 frames, 3 frames, 4 frames, and 5 frames). To prevent over-counting, these data were drawn from skips within the original dataset. The full data-set, including all time delays, was then fit to a three-component diffusion model:
 
-Where r is molecular displacement, τ represents the delay time, D is the diffusion coefficient, and αi is the contribution from each component. The fastest diffusion coefficient is reported, as the other two remain consistent across all Btk concentrations. Error reported is the standard deviation determined from the fit distribution. Examples of the step-size distributions and their corresponding fits can be found in Figure 4—figure supplement 3.
+$$
+ρ(r,\tau, D)=\sumi=03\alpha_{i}\frac{r}{2D\tau}e^{\frac{-r^{2}}{4D\tau}}
+$$
 
-## Sample preparation for liquid chromatography-mass spectrometry
+Where r is molecular displacement, τ represents the delay time, D is the diffusion coefficient, and $\alpha_{i}$ is the contribution from each component. The fastest diffusion coefficient is reported, as the other two remain consistent across all Btk concentrations. Error reported is the standard deviation determined from the fit distribution. Examples of the step-size distributions and their corresponding fits can be found in Figure 4—figure supplement 3.
+
+### Sample preparation for liquid chromatography-mass spectrometry
 
 Two 20 µL reactions were prepared with His6-SUMO-Plcg2 peptide (35 µM), Grb2 (3.5 µM), 4% PIP3 lipid vesicles (250 µM), tris-buffered saline (0.25%), magnesium chloride (10 mM), ATP (1 mM), and sodium vanadate (1 mM), using gel-filtration buffer (25 mM Tris, pH 8.0, 150 mM sodium chloride, 1 mM TCEP, and 5% glycerol) for all dilutions. Btk (3.5 µM) was added to one of the two reactions and both aliquots were incubated at room temperature for 1 hr. Reactions were quenched by addition of urea (4 M) and DTT (6.2 mM) followed by a 55 °C incubation for 20 min. Samples were then alkylated with iodoacetamide (12.9 mM) for 30 min in the dark at room temperature. Following this incubation, samples were digested overnight at room temperature in a buffer containing tris (50 mM, pH 8.0), calcium chloride (1 mM), and mass-spectrometry grade trypsin (0.01 mg/mL, Trypsin/Lys-C Mix, Mass Spec Grade, Promega, catalog no. V5071).
 
-## Liquid chromatography-mass spectrometry
+### Liquid chromatography-mass spectrometry
 
 Samples of trypsin-digested proteins were analyzed using a liquid chromatography (LC) system (1200 series, Agilent Technologies, Santa Clara, CA) that was connected in line with an LTQ-Orbitrap-XL mass spectrometer equipped with an electrospray ionization (ESI) source (Thermo Fisher Scientific, Waltham, MA). The LC system contained the following modules: G1322A solvent degasser, G1311A quaternary pump, G1316A thermostatted column compartment, and G1329A autosampler unit (Agilent). The LC column compartment was equipped with a Zorbax 300 SB-C8 column (length: 150 mm, inner diameter: 1.0 mm, particle size: 3.5 µm, part number: 863630–906, Agilent). Acetonitrile, formic acid (Optima LC-MS grade, 99.5+%, Fisher, Pittsburgh, PA), and water purified to a resistivity of 18.2 MΩ·cm (at 25 °C) using a Milli-Q Gradient ultrapure water purification system (Millipore, Billerica, MA) were used to prepare LC mobile phase solvents. Solvent A was 99.9% water/0.1% formic acid and solvent B was 99.9% acetonitrile/0.1% formic acid (volume/volume). The elution program consisted of isocratic flow at 1% (volume/volume) B for 2 min, a linear gradient to 35% B over 30 min, a linear gradient to 95% B over 1 min, isocratic flow at 95% B for 5 min, a linear gradient to 1% B over 1 min, and isocratic flow at 1% B for 21 min, at a flow rate of 120 µL/min. The column compartment was maintained at 40 °C and the sample injection volume was 10 µL. External mass calibration was performed in the positive ion mode using the Pierce LTQ ESI positive ion calibration solution (catalog number 88322, Thermo Fisher Scientific) prior to running samples. Full-scan, high-resolution mass spectra were acquired in the positive ion mode over the range of mass-to-charge ratio (m/z)=340–1800 using the Orbitrap mass analyzer, in profile format, with a mass resolution setting of 60,000 (at m/z=400, measured at full width at half-maximum peak height). In the data-dependent mode, the ten most intense ions exceeding an intensity threshold of 10,000 raw ion counts were selected from each full-scan mass spectrum for tandem mass spectrometry (MS/MS) analysis using collision-induced dissociation (CID). MS/MS spectra were acquired using the linear ion trap, in centroid format, with the following parameters: isolation width 3 m/z units, normalized collision energy 28%, default charge state 3, activation Q 0.25, and activation time 30 ms. Real-time charge state screening was enabled to exclude unassigned charge states from MS/MS analysis. To avoid the occurrence of redundant MS/MS measurements, real-time dynamic exclusion was enabled to preclude re-selection of previously analyzed precursor ions, with the following parameters: repeat count 2, repeat duration 10 s, exclusion list size 500, exclusion duration 60 s, and exclusion mass width ±10 parts per million. Data acquisition was controlled using Xcalibur software (version 2.0.7, Thermo Fisher Scientific). Raw data files were searched against the amino acid sequences of the Btk, Grb2, and His6-Sumo-eGFP-Plcg2 proteins using Proteome Discoverer software (version 1.3, SEQUEST algorithm, Thermo Fisher Scientific), for tryptic peptides (i.e. peptides resulting from cleavage C-terminal to arginine and lysine residues, not N-terminal to proline residues) with up to two missed cleavages and carbamidomethylcysteine, dehydrocysteine (i.e. cystine), methionine sulfoxide and phosphotyrosine as dynamic post-translational modifications. Assignments were validated by manual inspection of MS/MS spectra.
 
-## Reconstitution of LAT phase preparation on supported-lipid bilayers
+### Reconstitution of LAT phase preparation on supported-lipid bilayers
 
 LAT was reconstituted on supported-lipid bilayers as described (Huang et al., 2017b). Supported-lipid bilayers were prepared as described above with 30 nM His6-Hck and 150 nM His6-LAT-Alexa Fluor 555 on a 4% DGS-NTA(Ni), 96% DOPC. The LAT was phosphorylated by including 1 mM ATP and 10 mM MgCl2 in the imaging buffer and incubating for 20 min before adding other components. The components of the LAT signaling cluster were added sequentially along with 1 nM Btk T403AzF-Cy5 (Btk-Cy5). In one condition, Btk-Cy5 was added alone to the phosphorylated LAT containing bilayers, in another condition 5.8 µM Grb2 and 1 nM Btk-Cy5 were added together, and in a third condition 5.8 µM Grb2, 1.45 µM SOS-PRR and 1 nM Btk-Cy5 were all added together (Figure 5A). For the final condition, the bilayers were allowed to incubate for 1 hr to promote formation of the condensed-phase LAT domains. We note that fluorescently labeled SOS-PRR cannot be recruited to supported-lipid bilayers containing Btk alone (Figure 5—figure supplement 1). Multiple traces of Btk diffusion were recorded and analyzed as described above for single molecule tracking.

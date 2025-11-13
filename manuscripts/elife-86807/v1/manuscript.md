@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany
-2. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
-3. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
+1. Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
 
 † Corresponding author
 

@@ -32,7 +32,7 @@ Here, we formally define and evaluate the GDDM framework for solving and fitting
 
 ## Results
 
-## GDDM as a generalization of the DDM
+### GDDM as a generalization of the DDM
 
 The classic DDM is a four-parameter model which specifies fixed values for drift, bound height or noise level, starting position bias, and non-decision time (Figure 1). It assumes that evidence is constant throughout the trial, and that the integration process does not directly depend on time. This form is mathematically accessible, and has been used to model choice and RT data (Ratcliff, 1978; Ratcliff et al., 2016).
 
@@ -48,7 +48,7 @@ The GDDM framework provides a flexible means for developing extensions to the DD
 
 Mathematically, these concepts are expressed using five functions, corresponding to the drift rate, noise, bound height, starting position, and post-factum modifications to the distribution (Equation 1). Collectively, the GDDM framework allows complicated models to be expressed in a consistent manner, simplifying the way which we may think about complicated DDM extensions.
 
-## GDDM mechanisms characterize empirical data
+### GDDM mechanisms characterize empirical data
 
 The cognitive mechanisms by which evidence is used to reach a decision is still an open question. One way to distinguish these mechanisms from one another is by fitting models of these cognitive mechanisms to empirical RT distributions. To demonstrate the flexibility of GDDMs, we constructed a GDDM including three plausible mechanisms which are difficult or impossible to implement in a standard DDM: collapsing bounds, leaky integration, and a parameterized nonlinear dependence of drift rate on stimulus coherence. As described below in more detail, we then tested the fit of a GDDM which includes these three mechanisms, compared to the DDM and the ‘full DDM’, in two psychophysical datasets from perceptual decision-making tasks: one from monkeys (Roitman and Shadlen, 2002), and one from human subjects (Evans and Hawkins, 2019). We found that these mechanisms allow the GDDM to provide a better fit to RTs with a more parsimonious model than the DDM or the ‘full DDM’ in the monkey dataset, suggesting that these mechanisms may be important to explaining the monkeys’ behavior. However, consistent with previous results (Hawkins et al., 2015a), the GDDM fit no better than the DDM or ‘full DDM’ in the human dataset, suggesting that different cognitive strategies may be used in each case.
 
@@ -58,13 +58,29 @@ We compared the GDDM to the ‘full DDM’ and to three different implementation
 
 Each model was fit to the data, using full-distribution maximum likelihood for PyDDM and HDDM, and an analytic expression for EZ-Diffusion (Figure 2, Figure 2—figure supplement 2). First we examine the fit of the model quantitatively. Bayesian information criterion (BIC) is a common way of quantifying model fit while penalizing for free parameters. According to BIC, the 6-parameter GDDM fit better than all other models (Figure 2a). To determine whether this improved fit was due to the penalty BIC places on the number of parameters, we compared the models directly with likelihood. Again, we found that the GDDM fit this dataset better than the other models which have more parameters (Figure 2b). Finally, we tested whether this improved fit is due to the fact that PyDDM and HDDM use full-distribution maximum likelihood as an objective function, whereas EZ-Diffusion does not. We found that the mean squared error (MSE) of the GDDM was also lower than all other models (Figure 2c). These findings of a good fit by this GDDM, compared to the DDM and the ‘full DDM’, can be interpreted as evidence supporting the cognitive mechanisms included in the GDDM.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig2-v2.jpg)
+
+**Figure 2.:** Five models (see Materials and methods) were fit with three different software packages to data from monkey N. Model fits are compared according to BIC (a), negative log likelihood (b), and mean squared error (MSE) (c). The psychometric (d) and chronometric (e) functions represent data as dots and models as lines. The probability density function (PDF) (f) of each model is shown for 12.8% coherence, 6.4% coherence, 3.2% coherence, and 0% coherence. The data RT histogram is shown in gray, and black dots show the smoothed kernel density estimate probability distribution derived from the data (Scott, 2015). Columns of the figure and the color of the line denote different models.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Two rhesus monkeys performed a perceptual decision-making task. Visual stimuli consisted of randomly placed dots on a screen which each moved independently to the left or right. The monkey was required to determine the majority direction of the dots. Task difficulty was varied by changing the fraction of dots which moved coherently in a single direction.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Format similar to Figure 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Format similar to Figure 2. For this dataset, from human subjects, this GDDM did not improve the fit compared to the DDM or ‘full DDM’.
+
 Additionally, we assessed the qualitative fit of the models to the data to gain insight into what aspects of the RT distributions the GDDM was better able to capture. All five models provided a good fit to empirical psychometric (Figure 2d and Figure 2—figure supplement 2d) and chronometric (Figure 2e and Figure 2—figure supplement 2e) functions. However, models varied substantially in their ability to fit the qualitative properties of the RT distribution. The standard DDMs fit with HDDM and PyDDM showed a faster increase in response rate for the RT distribution at all coherence levels, and hence underestimated the mode of the distribution (Figure 2f and Figure 2—figure supplement 2f). The DDM fit with EZ-Diffusion overestimated the rate of increase in responses but did not begin to increase until the monkeys had made many responses, better matching the mode but creating an incorrect shape (Figure 2f and Figure 2—figure supplement 2f). The ‘full DDM’ fit better than the DDMs, and managed to capture the general shape of the RT distribution at high coherences (Figure 2f and Figure 2—figure supplement 2f), in addition to low coherences for one monkey (Figure 2—figure supplement 2). However, the GDDM fit better and with fewer parameters than the ‘full DDM’, matching the rate of increased responses and the overall distribution shape for all models under all conditions (Figure 2f, Figure 2—figure supplement 2f).
 
 The RT distributions produced by monkeys may not be representative of those produced by humans (e.g., Hawkins et al., 2015a), which show a characteristic skewed distribution. This skew is characteristic of the DDM without collapsing bounds, and highlights that a different strategy may be used, potentially driven by overtraining or task structure (Hawkins et al., 2015a). We therefore fit the same GDDM to a more representative dataset from humans performing a similar perceptual decision-making task. Specifically, from the publicly available dataset of Evans and Hawkins, 2019, which used a random dot motion discrimination task (similar to Roitman and Shadlen, 2002), we fit the same set of models to the trials with no feedback delay, which the authors had found were better fit with no or little collapse of decision bounds. Consistent with the findings of Hawkins et al., 2015a and Evans and Hawkins, 2019, here we found that the 6-parameter GDDM provides no better fit than the 11-parameter ‘full DDM’ and 8-parameter DDM fit using HDDM (Figure 2—figure supplement 3a–c). The GDDM, ‘full DDM’, and DDMs fit with PyDDM and HDDM are all able to provide good fits to the psychometric function, chronometric function, and RT distributions for human subjects (Figure 2—figure supplement 3d–f). This lack of improved fit by the GDDM suggests that the human subjects employed a cognitive strategy closer to the standard DDM, and that the specific mechanisms of this GDDM (collapsing bounds, leaky integration, and input nonlinearity) are not important for explaining psychophysical behavior in this dataset.
 
 For the example datasets considered above, the GDDM presented here improved the fit to the monkey data and provided a good fit to the human data. We caution that this result does not necessarily mean that this particular GDDM is appropriate for any particular future study. Models should not only provide a good fit to data, but also be parsimonious in form and represent a clear mechanistic interpretation (Vandekerckhove et al., 2015). The examples here demonstrate the utility of GDDMs for quantitatively evaluating cognitive mechanisms of interest through fitting models to empirical data.
 
-## Methods for estimating RT distributions in the DDM and GDDM
+### Methods for estimating RT distributions in the DDM and GDDM
 
 There are three broad classes of methods for estimating a GDDM’s RT distribution. First, analytical expressions can be derived using stochastic calculus and sequential analysis (Wald, 1945; Anderson, 1960). Analytical expressions were favored historically because they can be computed quickly by humans or computers. However, apart from the simplest form of the DDM and a few particular classes of extensions, analytical solutions often do not exist. While analytical expressions offer maximum performance and accuracy, deriving new analytical expressions is not a practical way to rapidly implement and test new GDDMs.
 
@@ -78,7 +94,7 @@ By contrast, the third method may use the Fokker-Planck equation to numerically 
 
 We consider three such algorithms: forward Euler, backward Euler, and Crank-Nicolson (see Appendix). These algorithms differ in how they propagate the probability distribution over time: forward Euler iteratively approximates the probability distribution of trajectory position at each timestep using the distribution at the previous timestep, while backward Euler and Crank-Nicolson iteratively solve systems of linear equations to approximate the probability distribution (Voss and Voss, 2008). The three algorithms also differ in their conceptual and technical difficulty to implement, with forward Euler being easier than backward Euler or Crank-Nicolson. In section ‘Execution time vs error tradeoff’, we will show that the backward Euler and Crank-Nicolson algorithms provide higher accuracy for a given execution time—and a faster execution time for a given accuracy level—than the forward Euler algorithm and trial-wise trajectory simulation.
 
-## Execution time vs error tradeoff
+### Execution time vs error tradeoff
 
 Next, we evaluated the effectiveness of different methodologies for estimating the RT distribution. Two general methodological considerations for all of these models are the precision with which the simulations are performed (accuracy), and the amount of time it takes the simulation to run on a computer (execution time). Accurate RT distributions are important to ensure the result faithfully represents the model, and fast execution times are important to increase the feasibility of fitting models to data. In general, for a given algorithm, there is a tradeoff between execution time and the accuracy of the solution obtained. One algorithm may be more efficient than another algorithm if it produces similar accuracy in a shorter amount of time, or better accuracy in the same amount of time.
 
@@ -86,33 +102,256 @@ We directly evaluate the execution time vs error tradeoff in trial-wise trajecto
 
 First, we test trial-wise trajectory simulation. We perform a parameter sweep across timesteps Δt and sample sizes N. We simulate using the Euler-Maruyama method, which is standard in the DDM literature (e.g. Hawkins et al., 2015a; Hawkins et al., 2015b; Evans et al., 2017; Harty et al., 2017; Zhou et al., 2009; Atiya et al., 2020; Simen et al., 2011; Nguyen et al., 2019; Lewis et al., 2014; Verdonck et al., 2016) and for simple models provides identical truncation error but better execution time than more sophisticated methods such as stochastic fourth-order Runge-Kutta (Gard, 1988; Brown et al., 2006). Because decreasing Δt for a fixed N increases the number of timebins and thus increases the variability across each timebin, we employed a smoothing procedure on the resulting simulated histogram to account for this. For each simulation, we smoothed the simulated RT histogram with all mean filters of size 1 to 500 points and chose the filter with the lowest error; since a filter of size one is equivalent to applying no smoothing, this procedure could only improve accuracy. In practice, selecting a filter this way would not be possible due to the lack of analytical ground truth for most GDDMs, and so this smoothing procedure artificially inflates the method’s performance compared to other methods, and effectively yields an upper bound on trial-wise trajectory performance. Execution time and error are shown separately for a range of numerical parameters (Figure 4a,b). As a proxy for the execution time vs error tradeoff, we also show the product of execution time and mean squared error for the parameter sweep (Figure 4—figure supplement 1).
 
-In general, trial-wise trajectory simulation provides a suboptimal execution time vs error tradeoff. Using the product of MSE and execution time as a proxy measure of overall performance to illustrate this tradeoff, trial-wise trajectories perform most efficiently for highly imprecise models, i.e. those with a large timestep and a small number of trajectories simulated (Figure 4—figure supplement 1). To examine the execution times and accuracies which lead to this tradeoff, we fix Δ⁢t=0.01 and plot the execution time and accuracy across many different values of sample size N (Figure 4c). We see that as execution time increases, accuracy does not increase by more than one order of magnitude. Examples of these traces are provided in Figure 4—figure supplement 2.
+![Figure 4.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig4-v2.jpg)
 
-Next, we examine methods for solving the Fokker-Planck equation. We consider three different algorithms: forward Euler, backward Euler, and Crank-Nicolson (Table 1). The execution time vs accuracy tradeoff of these three algorithms are governed by two parameters: the timestep Δt, and the granularity of decision variable discretization Δx. Decreasing either of these two parameters slows down the execution time but increases accuracy. These three algorithms operate in a distinct but related manner. Forward Euler is the easiest algorithm to implement, however it is only numerically stable for values of Δt which are very small relative to Δx. Forward Euler is an approximation in the limit as Δ⁢t→0, and thus cannot be run for large Δt step sizes relative to Δx (see Materials and methods). Backward Euler solves this problem by providing a numerically stable solution across all values of Δt and Δx. While it provides a similar execution time and accuracy as forward Euler given Δt and Δx, the fact that it is numerically stable across all values of these parameters allows more efficient values of Δt and Δx to be chosen. Crank-Nicolson further improves the accuracy and execution time over backward Euler (Table 1). Like backward Euler, Crank-Nicolson does not have theoretical constraints on Δx or Δt, but unlike backward Euler, it may experience numerical instability for models with time-variant integration bounds. In practice, for each of these methods, the required maximum step size is constrained by how strongly varying the drift and noise are in space and time, where more varying drift would require a smaller step size. Convergence of the results can be evaluated by checking results with smaller step sizes.
+**Figure 4.:** A DDM with constant drift, noise, and bounds was estimated for different spatial (Δx) and temporal (Δt) resolutions. Execution time (a) and MSE (b) are shown across values of Δx and Δt. MSE was computed against the analytical DDM solution for the full distribution. Darker colors indicate a more favorable execution time vs error tradeoff. Gray color indicates numerical instability. (c) Relationships between execution time and error which approximately maximize this tradeoff are shown. Parametric expressions were empirically determined to approximately maximize accuracy vs error tradeoff (see Figure 4—figure supplement 1), and are given by $Δ⁢t=0.43⁢Δ⁢x^{2}$ for forward Euler and $Δ⁢t=Δ⁢x$ for trial-wise trajectory simulation, backward Euler, and Crank-Nicolson. The lower left indicates low error and fast execution time whereas the upper right indicates slow execution time and high error.
 
-To evaluate the execution time vs error tradeoff, we perform a parameter sweep across values of Δt and Δx for these three algorithms and again compute the product of execution time and mean squared error as a proxy for execution time vs error tradeoff (Figure 4a,b, Figure 4—figure supplement 1). Overall, the execution time vs error tradeoff is one to six orders of magnitude better for these algorithms than for trial-wise trajectory simulation. We find that, for backward Euler and Crank-Nicolson, the execution time vs error tradeoff in the model shown in Figure 4—figure supplement 1 is maximized approximately when Δ⁢t=Δ⁢x. Forward Euler is unstable in this parameterization, with the best execution time vs error tradeoff when it is closest to its stability condition. We examine the execution time and error for parameterizations which satisfy these constraints, and compare them to trial-wise trajectory simulation (Figure 4c). We see that Crank-Nicolson is strictly better than other methods: for a given error, Crank-Nicolson offers a faster execution time, and for a given execution time, Crank-Nicolson offers lower error. However, since Crank-Nicolson may not be appropriate for models with time-variant boundaries, the second best method is also of interest. We see that, for a given execution time, backward Euler is better than forward Euler by two orders of magnitude, and better than trial-wise trajectory simulations by up to five orders of magnitude. Therefore, solving the Fokker-Planck equation using Crank-Nicolson and backward Euler represents a key advantage over the forward Euler and trial-wise trajectory simulation methods.
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig4-figsupp1-v2.jpg)
 
-## Software package for GDDM fitting
+**Figure 4—figure supplement 1.:** As a proxy for the execution time vs error tradeoff, mean squared error (MSE) multiplied by execution time in seconds is shown for several values of Δx and Δt for each method. The lower left corner is the most accurate, and the upper right corner is the fastest. Darker colors indicate more favorable values.
 
-## Overview of our software package
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Example traces are shown for all four methods. These traces are compared to the analytic solution, shown as a dotted black line. (b) The execution time is plotted against the accuracy. Lines from Figure 4c are plotted in light colors for comparison. Note that not all points fall on these lines because the points don’t necessarily satisfy the constraints on Δx and Δt from Figure 4c and Figure 4—figure supplement 1.
+
+In general, trial-wise trajectory simulation provides a suboptimal execution time vs error tradeoff. Using the product of MSE and execution time as a proxy measure of overall performance to illustrate this tradeoff, trial-wise trajectories perform most efficiently for highly imprecise models, i.e. those with a large timestep and a small number of trajectories simulated (Figure 4—figure supplement 1). To examine the execution times and accuracies which lead to this tradeoff, we fix $Δ⁢t=0.01$ and plot the execution time and accuracy across many different values of sample size N (Figure 4c). We see that as execution time increases, accuracy does not increase by more than one order of magnitude. Examples of these traces are provided in Figure 4—figure supplement 2.
+
+Next, we examine methods for solving the Fokker-Planck equation. We consider three different algorithms: forward Euler, backward Euler, and Crank-Nicolson (Table 1). The execution time vs accuracy tradeoff of these three algorithms are governed by two parameters: the timestep Δt, and the granularity of decision variable discretization Δx. Decreasing either of these two parameters slows down the execution time but increases accuracy. These three algorithms operate in a distinct but related manner. Forward Euler is the easiest algorithm to implement, however it is only numerically stable for values of Δt which are very small relative to Δx. Forward Euler is an approximation in the limit as $Δ⁢t→0$, and thus cannot be run for large Δt step sizes relative to Δx (see Materials and methods). Backward Euler solves this problem by providing a numerically stable solution across all values of Δt and Δx. While it provides a similar execution time and accuracy as forward Euler given Δt and Δx, the fact that it is numerically stable across all values of these parameters allows more efficient values of Δt and Δx to be chosen. Crank-Nicolson further improves the accuracy and execution time over backward Euler (Table 1). Like backward Euler, Crank-Nicolson does not have theoretical constraints on Δx or Δt, but unlike backward Euler, it may experience numerical instability for models with time-variant integration bounds. In practice, for each of these methods, the required maximum step size is constrained by how strongly varying the drift and noise are in space and time, where more varying drift would require a smaller step size. Convergence of the results can be evaluated by checking results with smaller step sizes.
+
+**Table 1.**
+ Methods for estimating RT distributions, in order of priority within PyDDM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Time accuracy</th>
+      <th>Grid accuracy</th>
+      <th>Requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Analytical</td>
+      <td>Exact</td>
+      <td>Exact</td>
+      <td>Time- and position-independent drift rate, diffusion constant, and bounds (or linearly collapsing bounds); centered point source initial condition</td>
+    </tr>
+    <tr>
+      <td>Crank-Nicolson</td>
+      <td>O⁢(Δ⁢t2)</td>
+      <td>O⁢(Δ⁢x2)</td>
+      <td>Time independent bounds</td>
+    </tr>
+    <tr>
+      <td>Backward Euler</td>
+      <td>O⁢(Δ⁢t)</td>
+      <td>O⁢(Δ⁢x2)</td>
+      <td>None (fallback for all models)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Forward Euler</td>
+      <td>O⁢(Δ⁢t)</td>
+      <td>O⁢(Δ⁢x2)</td>
+      <td>Numerics Δ⁢t/Δ⁢x2&lt;1/σ2 (not used by PyDDM)</td>
+    </tr>
+    <tr>
+      <td>Trial-wise trajectories</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>(not used by PyDDM)</td>
+    </tr>
+  </tbody>
+</table>
+
+To evaluate the execution time vs error tradeoff, we perform a parameter sweep across values of Δt and Δx for these three algorithms and again compute the product of execution time and mean squared error as a proxy for execution time vs error tradeoff (Figure 4a,b, Figure 4—figure supplement 1). Overall, the execution time vs error tradeoff is one to six orders of magnitude better for these algorithms than for trial-wise trajectory simulation. We find that, for backward Euler and Crank-Nicolson, the execution time vs error tradeoff in the model shown in Figure 4—figure supplement 1 is maximized approximately when $Δ⁢t=Δ⁢x$. Forward Euler is unstable in this parameterization, with the best execution time vs error tradeoff when it is closest to its stability condition. We examine the execution time and error for parameterizations which satisfy these constraints, and compare them to trial-wise trajectory simulation (Figure 4c). We see that Crank-Nicolson is strictly better than other methods: for a given error, Crank-Nicolson offers a faster execution time, and for a given execution time, Crank-Nicolson offers lower error. However, since Crank-Nicolson may not be appropriate for models with time-variant boundaries, the second best method is also of interest. We see that, for a given execution time, backward Euler is better than forward Euler by two orders of magnitude, and better than trial-wise trajectory simulations by up to five orders of magnitude. Therefore, solving the Fokker-Planck equation using Crank-Nicolson and backward Euler represents a key advantage over the forward Euler and trial-wise trajectory simulation methods.
+
+### Software package for GDDM fitting
+
+#### Overview of our software package
 
 We developed a software package to encapsulate the methodological framework we have presented. Our package, PyDDM, allows the user to build models, simulate models, and fit them to data using the efficient GDDM framework methodology described previously. The structure and workflow of the package were designed to mirror the GDDM framework (Figure 5—figure supplement 1). PyDDM selects the most efficient approach to solve a GDDM by automatically determining whether the model can be solved analytically and whether it uses time-varying bounds (Table 1). PyDDM is also built to emphasize the modularity of the GDDM framework. Components of models may be readily reused in other models, and to promote this, we additionally provide an online database of models (the ‘PyDDM Cookbook’ https://pyddm.readthedocs.io/en/latest/cookbook/index.html) to promote code sharing and replication. Users are encouraged to submit their models to this database.
 
 Furthermore, PyDDM is designed to accommodate the arbitrary flexibility of GDDMs. For reliable parameters estimation, it supports differential evolution (Storn and Price, 1997) as a global optimization method in addition to local search methods such as the Nelder-Mead simplex algorithm (Nelder and Mead, 1965). Fits are performed using full-distribution maximum likelihood on the full probability distribution in order to use all available data to estimate parameters. Likelihood can be overly sensitive to outliers or ‘contaminants’ (Ratcliff and Tuerlinckx, 2002), and this problem has been solved elsewhere by using a mixture model of the DDM process with a uniform distribution in a fixed ratio (Wiecki et al., 2013; Wagenmakers et al., 2008b; Voss and Voss, 2007). PyDDM builds on this methodology by allowing a parameterizable mixture model of any distribution and a fittable ratio. Because some models can be difficult to understand conceptually, PyDDM also includes a GUI for visualizing the impact of different model parameters (Figure 5—figure supplement 2), analogous to a GDDM-compatible version of the tool by Alexandrowicz, 2020.
 
-## Comparison to other software packages
+#### Comparison to other software packages
 
 Besides PyDDM, several software packages are available to simulate DDMs, and one package to simulate GDDMs. We compare these in detail in Table 2, to emphasize a few key points of comparison.
+
+**Table 2.**
+ Comparison of existing DDM packages.PyDDM is compared to HDDM (Wiecki et al., 2013), EZ-Diffusion (Wagenmakers et al., 2007), CHaRTr (Chandrasekaran and Hawkins, 2019), Diffusion Model Analysis Toolbox (DMAT) (Grasman et al., 2009; Vandekerckhove and Tuerlinckx, 2008), and fast-dm (Voss and Voss, 2007; Voss and Voss, 2008; Voss et al., 2015). Red indicates limited flexibility, yellow indicates moderate flexibility, and green indicates maximal flexibility. For the solver, these colors indicate minimal, moderate, and maximal efficiency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PyDDM</th>
+      <th>HDDM</th>
+      <th>EZ-Diffusion</th>
+      <th>CHaRTr</th>
+      <th>DMAT</th>
+      <th>fast-dm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Language</td>
+      <td>Python3</td>
+      <td>Python2/3</td>
+      <td>Matlab, R, Javascript, or Excel</td>
+      <td>Requires both R and C</td>
+      <td>Matlab</td>
+      <td>Command line</td>
+    </tr>
+    <tr>
+      <td>Solver</td>
+      <td>Fokker-Planck, analytical</td>
+      <td>Analytical numerical hybrid</td>
+      <td>None</td>
+      <td>None (Monte Carlo)</td>
+      <td>Analytical numerical hybrid</td>
+      <td>Fokker-Planck</td>
+    </tr>
+    <tr>
+      <td colspan="7">Task parameters</td>
+    </tr>
+    <tr>
+      <td>Time dependence of drift/noise</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+    </tr>
+    <tr>
+      <td>Position dependence of drift/noise</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+    </tr>
+    <tr>
+      <td>Bounds</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+      <td>Any function</td>
+      <td>Constant</td>
+      <td>Constant</td>
+    </tr>
+    <tr>
+      <td>Parameter dependence on task conditions</td>
+      <td>Any relationship for any parameter</td>
+      <td>Regression model</td>
+      <td>Categorical</td>
+      <td>Categorical</td>
+      <td>Linear</td>
+      <td>Categorical</td>
+    </tr>
+    <tr>
+      <td colspan="7">Across-trial variability</td>
+    </tr>
+    <tr>
+      <td>Across-trial drift variability</td>
+      <td>Slow discretization (via extension)</td>
+      <td>Normal distribution</td>
+      <td>None</td>
+      <td>Any distribution</td>
+      <td>Normal distribution</td>
+      <td>Normal distribution</td>
+    </tr>
+    <tr>
+      <td>Across-trial starting point variability</td>
+      <td>Any distribution</td>
+      <td>Uniform distribution</td>
+      <td>None</td>
+      <td>Any distribution</td>
+      <td>Uniform distribution</td>
+      <td>Uniform distribution</td>
+    </tr>
+    <tr>
+      <td>Across-trial non-decision variability</td>
+      <td>Any distribution</td>
+      <td>Uniform distribution</td>
+      <td>None</td>
+      <td>Any distribution</td>
+      <td>Uniform distribution</td>
+      <td>Uniform distribution</td>
+    </tr>
+    <tr>
+      <td colspan="7">Model simulation and fitting</td>
+    </tr>
+    <tr>
+      <td>Hierarchical fitting</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Fitting methods</td>
+      <td>Any numerical (default: differential evolution)</td>
+      <td>MCMC</td>
+      <td>Analytical</td>
+      <td>Any numerical</td>
+      <td>Nelder-Mead</td>
+      <td>Nelder-Mead</td>
+    </tr>
+    <tr>
+      <td>Objective function</td>
+      <td>Any function (default: likelihood)</td>
+      <td>Likelihood</td>
+      <td>Mean/stdev RT and P(correct)</td>
+      <td>Any sampled (e.g. quantile maximum likelihood)</td>
+      <td>Quantile maximum likelihood or chi-squared</td>
+      <td>Likelihood, chi-squared, Kolmogorov-Smirnov</td>
+    </tr>
+    <tr>
+      <td>Mixture model</td>
+      <td>Any distribution(s)</td>
+      <td>Uniform</td>
+      <td>None (extendable)</td>
+      <td>None</td>
+      <td>Uniform and undecided guesses</td>
+      <td>Uniform</td>
+    </tr>
+  </tbody>
+</table>
 
 The choice of software package depends on the model to be fit. As demonstrated in Figure 2 and noted previously (Ratcliff, 2008), fitting a diffusion model to a small number of summary statistics, as in EZ-Diffusion, can lead to poor qualitative and quantitative model fit to the RT distribution. Better options for fitting the DDM and ‘full DDM’ are available, such as fast-dm and HDDM. However, these packages are limited in model form, and make it difficult to extend beyond the ‘full DDM’ to test additional cognitive mechanisms or harness time-varying stimulus paradigms. As we have shown previously (Figure 2), the GDDM is desirable for obtaining good model fits with few parameters.
 
 The major highlight of PyDDM compared to other packages is that it allows GDDMs to be simulated, and is thus compatible with time- and position-dependent drift rate and noise, time-varying bounds, starting point variability, and non-decision time variability. Besides PyDDM, the only other package to our knowledge capable of simulating GDDMs is the new R package CHaRTr (Chandrasekaran and Hawkins, 2019). This package is a major innovation compared to previous approaches, as it allows flexible model forms to be tested. However, CHaRTr is based on trial-wise trajectory simulations. As shown previously (Figure 4), trial-wise trajectory simulation is especially inefficient, reducing the accuracy of the model simulations and increasing execution time by several orders of magnitude. In practice, this makes it infeasible to fit data to more flexible models. For the user to define new models, CHaRTr requires defining models in C and modifying the CHaRTr source code. By contrast, PyDDM facilitates the specification and implementation of models by defining them in user scripts written in pure Python.
 
-## Parallel performance
+#### Parallel performance
 
 In addition to PyDDM’s efficient algorithms for solving GDDM models, PyDDM also includes the ability to further speed up simulations by solving models in parallel. Any model can be converted from single-threaded to multi-threaded with a single function call. PyDDM solves models for different conditions on multiple CPUs via the ‘pathos’ library (McKerns et al., 2012). It uses a so-called ‘embarrassingly parallel’ algorithm, which turns the most essential parts of the simulation into independent tasks and distributes them equally across CPUs. Such parallelization can be enabled in any PyDDM script with one line of code.
 
 In a perfectly efficient parallelized environment, a simulation utilizing N CPUs should be N times faster than a simulation utilizing one CPU. In practice, this is rare due to communication latency and other overhead. We evaluate the speedup gained by solving an example DDM (Equation 19)) on more than one CPU (Figure 5). As expected, the execution time decreases when more CPUs are used to perform the simulations. However, this speedup is strikingly linear (Figure 5a); for up to 20 CPUs, PyDDM achieves close to 100% parallel efficiency (Figure 5b). This means that PyDDM is able to effectively utilize multiple processors to decrease execution time. In practice, the 6-parameter GDDM shown above fits on one CPU in under 15 minutes, and the authors routinely fit 15-parameter GDDMs on 8 CPUs with differential evolution for global parameter optimization in under 5 hours.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig5-v2.jpg)
+
+**Figure 5.:** Simulations of a standard DDM were performed, varying numbers of CPUs each with ten replicates. (a) The speedup, defined as (execution time on 1 CPU)/(execution time on N CPUs), and (b) parallel efficiency, defined as speedup/(N CPUs), are shown for different numbers of CPUs. Because measured execution time varied run to run, the mean parallel efficiency could sometimes exceed 1. Error bars are bootstrapped 95% confidence intervals. Solid black lines indicate data, and dashed green lines indicate the theoretical maximum under noiseless conditions. Confidence intervals in (a) are hidden beneath the markers.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The PyDDM source code is organized in a way which mirrors the GDDM framework. Each model is built by defining five components, analogous to those described in ‘GDDM description’. Each of these components may have any number of fittable parameters, and these parameters may be shared across model components. They may also depend on task parameters, which vary trial to trial. There are three central functions which may be performed on a model: it may be fit to data, it can be simulated for a specific trial type (i.e. with a given set of task parameters), or it may visualized using the GUI.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56938/elife-56938-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The PyDDM GUI allows the user to interactively change the parameters of their model (right pane) and see how these changes are reflected in the RT distribution. This makes it possible to gain an intuition for how various parameters and interactions among parameters impact the shape of the RT distribution. The GUI may be used with or without experimental data. When experimental data are provided the model’s simulated RT distribution is overlaid on the empirical RT histogram. The data may be shown all at once, or subset by experimental condition (left pane). Shown here are the data from Roitman and Shadlen, 2002 and the 5-parameter GDDM from Figure 2.
 
 ## Discussion
 
@@ -136,88 +375,184 @@ In summary, we show that the GDDM framework is a flexible and efficient way to e
 
 ## Materials and methods
 
-## GDDM description
+### GDDM description
 
-The GDDM is described as the following differential equation for decision variable x:(1)d⁢x=μ⁢(x,t,…)⁢d⁢t+σ⁢(x,t,…)⁢d⁢Wwhere ‘…’ represents task conditions and fittable parameters. Initial conditions are drawn from the distribution x∼X0⁢(…). The process terminates when |x⁢(t,…)|≥B⁢(t,…). This can be parameterized by five functions:
+The GDDM is described as the following differential equation for decision variable x:
+
+$$
+d⁢x=\mu⁢(x,t,…)⁢d⁢t+\sigma⁢(x,t,…)⁢d⁢W
+$$
+
+where ‘$…$’ represents task conditions and fittable parameters. Initial conditions are drawn from the distribution $x∼X_{0}⁢(…)$. The process terminates when $|x⁢(t,…)|\geqB⁢(t,…)$. This can be parameterized by five functions:
 
 The organization of the code in PyDDM mirrors this structure (Figure 5—figure supplement 1).
 
-The GDDM framework supports Markovian processes, in that the instantaneous drift rate and diffusion constant of a particle is determined by its position xt and the current time t, without dependence on the prior trajectory leading to that state. Drift rate is discretized, such that the timestep of the discretization is equal to the timestep of the Fokker-Planck solution. In practice, for typical task paradigms and dataset properties, the impact of this discretization is expected to be minimal for a reasonable timestep size.
+The GDDM framework supports Markovian processes, in that the instantaneous drift rate and diffusion constant of a particle is determined by its position $x_{t}$ and the current time t, without dependence on the prior trajectory leading to that state. Drift rate is discretized, such that the timestep of the discretization is equal to the timestep of the Fokker-Planck solution. In practice, for typical task paradigms and dataset properties, the impact of this discretization is expected to be minimal for a reasonable timestep size.
 
-## Fokker-Planck formalism of the GDDM
+### Fokker-Planck formalism of the GDDM
 
-PyDDM solves the GDDM using the Fokker-Planck equation, a partial differential equation describing the probability density ρ⁢(x,t,…) of the decision variable to be at position x at time t, with initial condition X0⁢(…):(2)∂∂⁡t⁢ρ⁢(x,t,…)=-∂∂⁡x⁢(μ⁢(x,t,…)⁢ρ⁢(x,t,…))+∂2∂⁡x2⁢(σ2⁢(x,t,…)2⁢ρ⁢(x,t,…)).
+PyDDM solves the GDDM using the Fokker-Planck equation, a partial differential equation describing the probability density $ρ⁢(x,t,…)$ of the decision variable to be at position x at time t, with initial condition $X_{0}⁢(…)$:
 
-By definition, the GDDM has absorbing boundary conditions (ρ⁢(x,t,…)=0 for all x≤-B⁢(t,…) and x≥B⁢(t,…)), and any mass of the probability density crossing the boundaries are treated as committed, irreversible decisions.
+$$
+\frac{\partial}{\partial⁡t}⁢ρ⁢(x,t,…)=-\frac{\partial}{\partial⁡x}⁢(\mu⁢(x,t,…)⁢ρ⁢(x,t,…))+\frac{\partial^{2}}{\partial⁡x^{2}}⁢(\frac{\sigma^{2}⁢(x,t,…)}{2}⁢ρ⁢(x,t,…)).
+$$
 
-The Fokker-Planck equation permits numerical solutions of the GDDM. The numerical algorithm is described for the GDDM with fixed bounds in this section, and the algorithm for the GDDM with time-varying bounds is described in the next section. The system is first discretized with space and time steps Δx and Δt. Without loss of generality, we assume Δx divides 2⁢B⁢(t,…) and Δt divides the simulated duration. The probability density solution of Equation 2, ρ⁢(x,t,…), can then be approximated as the probability distribution function at spatial grids {-B⁢(t,…)+Δ⁢x,-B⁢(t,…)+2⁢Δ⁢x,…,0,…,B⁢(t,…)-2⁢Δ⁢x,B⁢(t,…)-Δ⁢x} and temporal grids {n⁢Δ⁢t} for any non-negative integer n. Due to absorbing bounds, the two spatial grids one step outward at ±B⁢(t,…) have 0 density, and are not considered explicitly. The choice of Δt is constrained by the stability criteria and accuracy vs execution time tradeoff (see Figure 4).
+By definition, the GDDM has absorbing boundary conditions ($ρ⁢(x,t,…)=0$ for all $x\leq-B⁢(t,…)$ and $x\geqB⁢(t,…)$), and any mass of the probability density crossing the boundaries are treated as committed, irreversible decisions.
 
-Define Pim as the probability distribution at the ith space-grid and the mth time-grid. For clarity, here and below Pim denotes the total probability inside a grid of lengths Δx and Δt, and its center represented by (i,m). As such, Pim is unitless, in contrast to ρ⁢(x,t) which has a unit of the inverse of the spatial dimension. Probability distribution functions can also be viewed as a discrete proxy of the continuous probability density (i.e. approximating ρ⁢(x,t) at the corresponding space and time grid), which will then have a unit of the inverse of the spatial dimension. Both views are mathematically equivalent (and just off by a Δx factor to the whole equation), but the former definition was used for simplicity and interpretability.
+The Fokker-Planck equation permits numerical solutions of the GDDM. The numerical algorithm is described for the GDDM with fixed bounds in this section, and the algorithm for the GDDM with time-varying bounds is described in the next section. The system is first discretized with space and time steps Δx and Δt. Without loss of generality, we assume Δx divides $2⁢B⁢(t,…)$ and Δt divides the simulated duration. The probability density solution of Equation 2, $ρ⁢(x,t,…)$, can then be approximated as the probability distribution function at spatial grids ${-B⁢(t,…)+Δ⁢x,-B⁢(t,…)+2⁢Δ⁢x,…,0,…,B⁢(t,…)-2⁢Δ⁢x,B⁢(t,…)-Δ⁢x}$ and temporal grids ${n⁢Δ⁢t}$ for any non-negative integer n. Due to absorbing bounds, the two spatial grids one step outward at $\pmB⁢(t,…)$ have 0 density, and are not considered explicitly. The choice of Δt is constrained by the stability criteria and accuracy vs execution time tradeoff (see Figure 4).
 
-The Fokker-Planck equations can be discretized in several distinct ways, including the forward Euler method, the backward Euler method, and the Crank-Nicolson method. In the forward Euler method, Equation 2 is approximated as:(3)Pjn−Pjn−1Δt=−(μP)j+1n−1−(μP)j−1n−12Δx+(DP)j+1n−1+(DP)j−1n−1−2(DP)jn−1Δx2where D=σ2/2 is the diffusion coefficient. Here and below, dependencies of space, time, and other variables are omitted for simplicity. Terms in parenthesis with subscripts and superscripts are evaluated at the subscripted space grid and superscripted time grid, in the same manner as Pjn. The spatial derivatives at the right side of Equation 2 are evaluated at the previous time step n-1, such that only one term of the equation is at the current time step n, generated from the temporal derivative at the left side of Equation 2. As such, Equation 3 for each j fully determines Pjn from the probability distributions at the previous time-step:(4)Pjn=Pjn−1−Δt2Δx((μP)j+1n−1−(μP)j−1n−1)+ΔtΔx2((DP)j+1n−1+(DP)j−1n−1−2(DP)jn−1)
+Define $P_{i}^{m}$ as the probability distribution at the ith space-grid and the mth time-grid. For clarity, here and below $P_{i}^{m}$ denotes the total probability inside a grid of lengths Δx and Δt, and its center represented by (i,m). As such, $P_{i}^{m}$ is unitless, in contrast to $ρ⁢(x,t)$ which has a unit of the inverse of the spatial dimension. Probability distribution functions can also be viewed as a discrete proxy of the continuous probability density (i.e. approximating $ρ⁢(x,t)$ at the corresponding space and time grid), which will then have a unit of the inverse of the spatial dimension. Both views are mathematically equivalent (and just off by a Δx factor to the whole equation), but the former definition was used for simplicity and interpretability.
 
-It is important to note that the forward Euler method, Equation 4, is an approximation method. Since the probability distribution is iteratively propagated from early to later times, any errors of the solution accumulate over the iterative process. Moreover, the forward Euler method is prone to instability. Assuming small Δ⁢x and Δ⁢t (i.e. much less than 1), Δ⁢tΔ⁢x2 is much larger than Δ⁢t2⁢Δ⁢x and thus the third term on the right side of Equation 4 should in general be much larger than the second term. If Δ⁢x and Δ⁢t are such that the third term is large for any n and j, then Pjn will not be properly computed in Equation 4, and such errors will propagate to the whole space over time. The forward Euler method thus has a stability criteria:(5)D⁢Δ⁢tΔ⁢x2<12
+The Fokker-Planck equations can be discretized in several distinct ways, including the forward Euler method, the backward Euler method, and the Crank-Nicolson method. In the forward Euler method, Equation 2 is approximated as:
+
+$$
+\frac{P_{j}^{n}−P_{j}^{n−1}}{Δt}=−\frac{(\muP)_{j+1}^{n−1}−(\muP)_{j−1}^{n−1}}{2Δx}+\frac{(DP)_{j+1}^{n−1}+(DP)_{j−1}^{n−1}−2(DP)_{j}^{n−1}}{Δx^{2}}
+$$
+
+where $D=\sigma^{2}/2$ is the diffusion coefficient. Here and below, dependencies of space, time, and other variables are omitted for simplicity. Terms in parenthesis with subscripts and superscripts are evaluated at the subscripted space grid and superscripted time grid, in the same manner as $P_{j}^{n}$. The spatial derivatives at the right side of Equation 2 are evaluated at the previous time step $n-1$, such that only one term of the equation is at the current time step n, generated from the temporal derivative at the left side of Equation 2. As such, Equation 3 for each j fully determines $P_{j}^{n}$ from the probability distributions at the previous time-step:
+
+$$
+P_{j}^{n}=P_{j}^{n−1}−\frac{Δt}{2Δx}((\muP)_{j+1}^{n−1}−(\muP)_{j−1}^{n−1})+\frac{Δt}{Δx^{2}}((DP)_{j+1}^{n−1}+(DP)_{j−1}^{n−1}−2(DP)_{j}^{n−1})
+$$
+
+It is important to note that the forward Euler method, Equation 4, is an approximation method. Since the probability distribution is iteratively propagated from early to later times, any errors of the solution accumulate over the iterative process. Moreover, the forward Euler method is prone to instability. Assuming small $Δ⁢x$ and $Δ⁢t$ (i.e. much less than 1), $\frac{Δ⁢t}{Δ⁢x^{2}}$ is much larger than $\frac{Δ⁢t}{2⁢Δ⁢x}$ and thus the third term on the right side of Equation 4 should in general be much larger than the second term. If $Δ⁢x$ and $Δ⁢t$ are such that the third term is large for any n and j, then $P_{j}^{n}$ will not be properly computed in Equation 4, and such errors will propagate to the whole space over time. The forward Euler method thus has a stability criteria:
+
+$$
+D⁢\frac{Δ⁢t}{Δ⁢x^{2}}<\frac{1}{2}
+$$
 
 Equation 5 poses a strict constraint on the step-sizes: while Δx and Δt should both be small to minimize the error due to discretization, decreasing Δx demands a much stronger decrease in Δt, resulting in a much longer execution time of the method. This can be seen in our simulations shown in Figure 4.
 
-The backward Euler and Crank-Nicolson methods largely circumvent the aforementioned problems. In the backward Euler method, the right side of Equation 2 is expressed at the current time step n:(6)Pjn-Pjn-1Δ⁢t=-(μ⁢P)j+1n-(μ⁢P)j-1n2⁢Δ⁢x+(D⁢P)j+1n+(D⁢P)j-1n-2⁢(D⁢P)jnΔ⁢x2,
+The backward Euler and Crank-Nicolson methods largely circumvent the aforementioned problems. In the backward Euler method, the right side of Equation 2 is expressed at the current time step n:
 
-In the Crank-Nicolson method, half of the right side of Equation 2) is expressed at the current time step n, and half at the previous time step n-1:(7)Pjn−Pjn−1Δt=0.5(−(μP)j+1n−1−(μP)j−1n−12Δx+(DP)j+1n−1+(DP)j−1n−1−2(DP)jn−1Δx2)+ 0.5(−(μP)j+1n−(μP)j−1n2Δx+(DP)j+1n+(DP)j−1n−2(DP)jnΔx2),
+$$
+\frac{P_{j}^{n}-P_{j}^{n-1}}{Δ⁢t}=-\frac{(\mu⁢P)_{j+1}^{n}-(\mu⁢P)_{j-1}^{n}}{2⁢Δ⁢x}+\frac{(D⁢P)_{j+1}^{n}+(D⁢P)_{j-1}^{n}-2⁢(D⁢P)_{j}^{n}}{Δ⁢x^{2}},
+$$
 
-With multiple terms at the current time-step, Equation 6 and Equation 7 cannot be directly solved. Instead, the equations across all spatial grids can be summarized in matrix form:(8)(𝟙+(1−α)M)P→n=(𝟙−αM)P→n−1for P→n=(Px=−B+Δxn⋮Px=B−Δxn),M=(2ν−ν+χ/2000−ν−χ/22ν−ν+χ/2000−ν−χ/2⋱⋱000⋱⋱−ν+χ/2000−ν−χ/22ν),
+In the Crank-Nicolson method, half of the right side of Equation 2) is expressed at the current time step n, and half at the previous time step $n-1$:
 
-Here, ν=D⁢Δ⁢t/Δ⁢x2 and χ=μ⁢Δ⁢t/Δ⁢x. In this formulation, α=1 for the forward Euler method, α=0 for the backward Euler method, and α=0.5 for the Crank-Nicolson method. Since 𝕄 is a tridiagonal matrix, it can be inverted from the left side to the right side of the equation in an efficient manner. Practically, this allows the backward Euler and Crank-Nicolson method to rapidly generate the discretized probability distribution function inside the boundaries at each time-step.
+$$
+\frac{P_{j}^{n}−P_{j}^{n−1}}{Δt}=0.5(−\frac{(\muP)_{j+1}^{n−1}−(\muP)_{j−1}^{n−1}}{2Δx}+\frac{(DP)_{j+1}^{n−1}+(DP)_{j−1}^{n−1}−2(DP)_{j}^{n−1}}{Δx^{2}})+ 0.5(−\frac{(\muP)_{j+1}^{n}−(\muP)_{j−1}^{n}}{2Δx}+\frac{(DP)_{j+1}^{n}+(DP)_{j−1}^{n}−2(DP)_{j}^{n}}{Δx^{2}}),
+$$
 
-Finally, the probability of decision formation at each time step is computed as the outward flux from the outermost grids ±B∓Δ⁢x (to the hypothetical grids at ±B):(9)Δpcorrectn=(−ν−χ/2)|x=B−Δxn px=B−ΔxnΔpincorrectn=(−ν+χ/2)|x=−B+Δxn px=−B+Δxn
+With multiple terms at the current time-step, Equation 6 and Equation 7 cannot be directly solved. Instead, the equations across all spatial grids can be summarized in matrix form:
 
-This provides the correct and incorrect reaction time distributions, as well as the total correct (∑nΔ⁢pc⁢o⁢r⁢r⁢e⁢c⁢tn) and incorrect (∑nΔ⁢pi⁢n⁢c⁢o⁢r⁢r⁢e⁢c⁢tn) probability.
+$$
+(𝟙+(1−\alpha)M)P→^{n}=(𝟙−\alphaM)P→^{n−1}for P→^{n}=(P_{x=−B+Δx}^{n}⋮P_{x=B−Δx}^{n}),M=(2ν−ν+χ/2000−ν−χ/22ν−ν+χ/2000−ν−χ/2⋱⋱000⋱⋱−ν+χ/2000−ν−χ/22ν),
+$$
 
-Unlike the forward-Euler method which iteratively propagates the solution and the approximation error in a feedforward manner, the backward Euler and Crank-Nicolson methods solve for the matrix equation of the probability distribution evolution, and are less susceptible to error being propagated. In addition, the two methods do not have any stability criteria which constrain the step size. Contrasting the two methods, the backward Euler method has larger truncation error (O⁢(Δ⁢x,Δ⁢t2)) than the Crank-Nicolson method (O⁢(Δ⁢x2,Δ⁢t2)) (Table 1), while the Crank-Nicolson method generally has twice the execution time of the backward Euler method, assuming the matrix construction is the slowest step of the algorithms. Crucially, the solution from the Crank-Nicolson method tends to be susceptible to oscillations over iterations, especially with varying bounds (see below). PyDDM automatically chooses the best solver for any given model (Table 1).
+Here, $ν=D⁢Δ⁢t/Δ⁢x^{2}$ and $χ=\mu⁢Δ⁢t/Δ⁢x$. In this formulation, $\alpha=1$ for the forward Euler method, $\alpha=0$ for the backward Euler method, and $\alpha=0.5$ for the Crank-Nicolson method. Since $𝕄$ is a tridiagonal matrix, it can be inverted from the left side to the right side of the equation in an efficient manner. Practically, this allows the backward Euler and Crank-Nicolson method to rapidly generate the discretized probability distribution function inside the boundaries at each time-step.
 
-## Fokker-Planck formalism with time-varying bounds
+Finally, the probability of decision formation at each time step is computed as the outward flux from the outermost grids $\pmB\mpΔ⁢x$ (to the hypothetical grids at $\pmB$):
+
+$$
+Δp_{correct}^{n}=(−ν−χ/2)|_{x=B−Δx}^{n} p_{x=B−Δx}^{n}Δp_{incorrect}^{n}=(−ν+χ/2)|_{x=−B+Δx}^{n} p_{x=−B+Δx}^{n}
+$$
+
+This provides the correct and incorrect reaction time distributions, as well as the total correct ($\sum_{n}Δ⁢p_{c⁢o⁢r⁢r⁢e⁢c⁢t}^{n}$) and incorrect ($\sum_{n}Δ⁢p_{i⁢n⁢c⁢o⁢r⁢r⁢e⁢c⁢t}^{n}$) probability.
+
+Unlike the forward-Euler method which iteratively propagates the solution and the approximation error in a feedforward manner, the backward Euler and Crank-Nicolson methods solve for the matrix equation of the probability distribution evolution, and are less susceptible to error being propagated. In addition, the two methods do not have any stability criteria which constrain the step size. Contrasting the two methods, the backward Euler method has larger truncation error ($O⁢(Δ⁢x,Δ⁢t^{2})$) than the Crank-Nicolson method ($O⁢(Δ⁢x^{2},Δ⁢t^{2})$) (Table 1), while the Crank-Nicolson method generally has twice the execution time of the backward Euler method, assuming the matrix construction is the slowest step of the algorithms. Crucially, the solution from the Crank-Nicolson method tends to be susceptible to oscillations over iterations, especially with varying bounds (see below). PyDDM automatically chooses the best solver for any given model (Table 1).
+
+### Fokker-Planck formalism with time-varying bounds
 
 The previous section considered the Fokker-Planck equation of the GDDM assuming fixed bounds. The formalism can be adapted to accommodate time-varying bounds. This is more generally studied as a free boundary problem, with a typical example including the Stefan problem (Meyer, 1978; Li, 1997).
 
-In particular, consider upper and lower bounds Bn=B⁢(n⁢Δ⁢t,…) and -Bn=-B⁢(n⁢Δ⁢t,…) at an arbitrary time t=n⁢Δ⁢t. If Bn is exactly on a grid point, the previous results apply. Alternatively, if Bn is in between two grid points (xj,xj+1), the solution is approximated by a linearly weighted summation of the solutions in two grid systems: an inner grid system {xk|k=-j,…,j} and an outer grid system {xk|k=-j-1,…,j+1}.
+In particular, consider upper and lower bounds $B_{n}=B⁢(n⁢Δ⁢t,…)$ and $-B_{n}=-B⁢(n⁢Δ⁢t,…)$ at an arbitrary time $t=n⁢Δ⁢t$. If $B_{n}$ is exactly on a grid point, the previous results apply. Alternatively, if $B_{n}$ is in between two grid points $(x_{j},x_{j+1})$, the solution is approximated by a linearly weighted summation of the solutions in two grid systems: an inner grid system ${x_{k}|k=-j,…,j}$ and an outer grid system ${x_{k}|k=-j-1,…,j+1}$.
 
-Define P→i⁢n/o⁢u⁢tn to be the probability distribution function at time t=n⁢Δ⁢t over the inner and outer grid systems, respectively. In the backward Euler method (α=0 in Equation 8), P→i⁢n/o⁢u⁢tn can be computed by propagating from the actual probability distribution function at the previous step P→n-1:(10)(𝟙+𝕄i⁢n/o⁢u⁢t)⁢P→i⁢n/o⁢u⁢tn=P→n-1,where 𝕄i⁢n/o⁢u⁢t are as in Equation 8, but defined over the domain of inner/outer grids respectively.
+Define $P→_{i⁢n/o⁢u⁢t}^{n}$ to be the probability distribution function at time $t=n⁢Δ⁢t$ over the inner and outer grid systems, respectively. In the backward Euler method ($\alpha=0$ in Equation 8), $P→_{i⁢n/o⁢u⁢t}^{n}$ can be computed by propagating from the actual probability distribution function at the previous step $P→^{n-1}$:
 
-Furthermore, define(11)wout=(Bn−xj)/Δxwin=(xj+1−Bn)/Δxas the weights of the linear approximation of the solution to that of the outer and inner grid systems. The resulting probability distribution function and the probabilities of decision formation at step n are:(12)P→n=woutP→outn+winP→innΔpcorrectn=wout(−ν+χ/2)|x=xj+1n Pj+1,outn+win(−ν+χ/2)|x=xjn Pj,innΔpincorrectn=wout(−ν−χ/2)|x=x−j−1n P−j−1,outn+win(−ν−χ/2)|x=x−jn P−j,inn
+$$
+(𝟙+𝕄_{i⁢n/o⁢u⁢t})⁢P→_{i⁢n/o⁢u⁢t}^{n}=P→^{n-1},
+$$
 
-In the literature of the DDM in cognitive psychology and neuroscience, collapsing bounds are the most common form of time-varying bounds considered. As bounds collapse, it is possible that the outermost grids at the previous step (with non-zero probability densities) become out-of-bound at the current step. Based on the side they become out of bound, such probabilities are added to the correct and incorrect probabilities respectively (and multiplied by wo⁢u⁢t/i⁢n for each of the outer/inner grid system). Nevertheless, increasing bounds are also supported. The algorithm for the Crank-Nicolson scheme of time-varying bounds often generates oscillatory solutions, and is thus not described here or implemented in PyDDM.
+where $𝕄_{i⁢n/o⁢u⁢t}$ are as in Equation 8, but defined over the domain of inner/outer grids respectively.
 
-## Empirical datasets
+Furthermore, define
+
+$$
+w_{out}=(B_{n}−x_{j})/Δxw_{in}=(x_{j+1}−B_{n})/Δx
+$$
+
+as the weights of the linear approximation of the solution to that of the outer and inner grid systems. The resulting probability distribution function and the probabilities of decision formation at step n are:
+
+$$
+P→^{n}=w_{out}P→_{out}^{n}+w_{in}P→_{in}^{n}Δp_{correct}^{n}=w_{out}(−ν+χ/2)|_{x=x_{j+1}}^{n} P_{j+1,out}^{n}+w_{in}(−ν+χ/2)|_{x=x_{j}}^{n} P_{j,in}^{n}Δp_{incorrect}^{n}=w_{out}(−ν−χ/2)|_{x=x_{−j−1}}^{n} P_{−j−1,out}^{n}+w_{in}(−ν−χ/2)|_{x=x_{−j}}^{n} P_{−j,in}^{n}
+$$
+
+In the literature of the DDM in cognitive psychology and neuroscience, collapsing bounds are the most common form of time-varying bounds considered. As bounds collapse, it is possible that the outermost grids at the previous step (with non-zero probability densities) become out-of-bound at the current step. Based on the side they become out of bound, such probabilities are added to the correct and incorrect probabilities respectively (and multiplied by $w_{o⁢u⁢t/i⁢n}$ for each of the outer/inner grid system). Nevertheless, increasing bounds are also supported. The algorithm for the Crank-Nicolson scheme of time-varying bounds often generates oscillatory solutions, and is thus not described here or implemented in PyDDM.
+
+### Empirical datasets
 
 As testbeds for fitting different models, we used two empirical datasets of choices and RTs during perceptual decision-making tasks: one from Roitman and Shadlen, 2002, one from Evans and Hawkins, 2019. These references contain full details of the tasks and datasets. For the dataset of Roitman and Shadlen, 2002, we used trials from the ‘reaction time’ task variant, for both monkeys. For the dataset of Evans and Hawkins, 2019, we used trials from the task variant with no feedback delay.
 
 In brief, these two publicly available datasets were selected for the following reasons. Both use random dot motion discrimination tasks, which facilitate comparison of behavior and fitting with the same GDDM. These two datasets span species, with behavior from monkeys (Roitman and Shadlen, 2002) and human subjects (Evans and Hawkins, 2019). Furthermore, both datasets have been analyzed in prior work fitting DDMs with collapsing bounds. Specifically, Hawkins et al., 2015a generally found that the dataset of Roitman and Shadlen, 2002 was better fit with collapsing bounds than with constant bounds, in contrast with typical human datasets which are well fit with constant bounds. In line with those findings, Evans and Hawkins, 2019 showed that behavior in a task variant with no feedback delay yielded behavior which was more representative of human datasets and was well fit by a DDM with decision bounds with no or little collapse. These two datasets therefore provided useful testbeds for GDDM fitting with distinct a priori predictions about the utility of collapsing bounds in a GDDM.
 
-## Compared models
+### Compared models
 
-The 6-parameter GDDM fit by PyDDM is parameterized by(13)μ(x,t,…)=μ0(C−Cmax)α−ℓxσ(x,t,…)=1X0(x,…)={1,x=00,otherwiseB(t,…)=B0e−t/τpi∗(t)=0.95pi(t−tnd)+0.025where fittable parameters are drift rate μ0, coherence nonlinearity α, leak constant ℓ, initial bound height B0, bound collapse rate τ, and non-decision time tn⁢d. Additionally, Cmax is the maximum coherence in the experiment, which is fixed at 0.512 for the Roitman and Shadlen, 2002 dataset and 0.4 for the Evans and Hawkins, 2019 dataset.
+The 6-parameter GDDM fit by PyDDM is parameterized by
 
-The three-parameter DDM fit by PyDDM is a subset of the GDDM framework parameterized by(14)μ(x,t,…)=μ0Cσ(x,t,…)=1X0(x,…)={1,x=00,otherwiseB(t,…)=B0pi∗(t)=0.95pi(t−tnd)+0.025where C is coherence and fittable parameters are μ0, B0, and tn⁢d.
+$$
+\mu(x,t,…)=\mu_{0}(C−C_{max})^{\alpha}−ℓx\sigma(x,t,…)=1X_{0}(x,…)={1,x=00,otherwiseB(t,…)=B_{0}e^{−t/\tau}p_{i}^{∗}(t)=0.95p_{i}(t−t_{nd})+0.025
+$$
 
-The 11-parameter ‘full DDM’ fit by HDDM does not fall into the GDDM framework because the across-trial variability in drift rate μ⁢(x,t,…) is a random variable. Thus, the ‘full DDM’ is parameterized by(15)μ(x,t,…)∼𝒩(μj,sv2)σ(x,t,…)=1X0(x,…)={12sz+1,−sz≤x≤sz0,otherwiseB(t,…)=B0pi∗(t)=12sT+1∑k∈[−sT,sT]pi(t−tnd−k)where 𝒩 is a normal distribution, and fittable parameters are six independent drift rates μj for each coherence level j, non-decision time tn⁢d, and bounds B0, as well as variability in drift rate sv, starting position sz, and non-decision time sT. It was fit an outlier probability of p_outlier=0.05.
+where fittable parameters are drift rate $\mu_{0}$, coherence nonlinearity α, leak constant ℓ, initial bound height $B_{0}$, bound collapse rate τ, and non-decision time $t_{n⁢d}$. Additionally, $C_{max}$ is the maximum coherence in the experiment, which is fixed at 0.512 for the Roitman and Shadlen, 2002 dataset and 0.4 for the Evans and Hawkins, 2019 dataset.
 
-The 8-parameter DDM fit by HDDM is a subset of the GDDM framework parameterized by(16)μ(x,t,…)=μjσ(x,t,…)=1X0(x,…)={1,x=00,otherwiseB(t,…)=B0pi∗(t)=pi(t−tnd)where fittable parameters are B0, tn⁢d, and six independent drift rates μj, one for each coherence level j. It was fit an outlier probability of p_outlier=0.05.
+The three-parameter DDM fit by PyDDM is a subset of the GDDM framework parameterized by
 
-The 18-parameter DDM fit by EZ-Diffusion is a subset of the GDDM framework parameterized by(17)μ(x,t,…)=μjσ(x,t,…)=1X0(x,…)={1,x=00,otherwiseB(t,…)=Bjpi∗(t)=pi(t−tndj)where fittable parameters are independent drift rates μj, bounds Bj, and non-decision times tn⁢dj, for each of the six coherence level j.
+$$
+\mu(x,t,…)=\mu_{0}C\sigma(x,t,…)=1X_{0}(x,…)={1,x=00,otherwiseB(t,…)=B_{0}p_{i}^{∗}(t)=0.95p_{i}(t−t_{nd})+0.025
+$$
+
+where C is coherence and fittable parameters are $\mu_{0}$, $B_{0}$, and $t_{n⁢d}$.
+
+The 11-parameter ‘full DDM’ fit by HDDM does not fall into the GDDM framework because the across-trial variability in drift rate $\mu⁢(x,t,…)$ is a random variable. Thus, the ‘full DDM’ is parameterized by
+
+$$
+\mu(x,t,…)∼𝒩(\mu_{j},s_{v}^{2})\sigma(x,t,…)=1X_{0}(x,…)={\frac{1}{2s_{z}+1},−s_{z}\leqx\leqs_{z}0,otherwiseB(t,…)=B_{0}p_{i}^{∗}(t)=\frac{1}{2s_{T}+1}\sumk\in[−s_{T},s_{T}]p_{i}(t−t_{nd}−k)
+$$
+
+where $𝒩$ is a normal distribution, and fittable parameters are six independent drift rates $\mu_{j}$ for each coherence level j, non-decision time $t_{n⁢d}$, and bounds $B_{0}$, as well as variability in drift rate $s_{v}$, starting position $s_{z}$, and non-decision time $s_{T}$. It was fit an outlier probability of $p_outlier=0.05$.
+
+The 8-parameter DDM fit by HDDM is a subset of the GDDM framework parameterized by
+
+$$
+\mu(x,t,…)=\mu_{j}\sigma(x,t,…)=1X_{0}(x,…)={1,x=00,otherwiseB(t,…)=B_{0}p_{i}^{∗}(t)=p_{i}(t−t_{nd})
+$$
+
+where fittable parameters are $B_{0}$, $t_{n⁢d}$, and six independent drift rates $\mu_{j}$, one for each coherence level j. It was fit an outlier probability of $p_outlier=0.05$.
+
+The 18-parameter DDM fit by EZ-Diffusion is a subset of the GDDM framework parameterized by
+
+$$
+\mu(x,t,…)=\mu_{j}\sigma(x,t,…)=1X_{0}(x,…)={1,x=00,otherwiseB(t,…)=B_{j}p_{i}^{∗}(t)=p_{i}(t−t_{nd}^{j})
+$$
+
+where fittable parameters are independent drift rates $\mu_{j}$, bounds $B_{j}$, and non-decision times $t_{n⁢d}^{j}$, for each of the six coherence level j.
 
 All simulations were fit separately for each monkey. In the human fits, data were pooled across all subjects for the 0 s delay condition only.
 
-## Execution time and accuracy analysis
+### Execution time and accuracy analysis
 
-To analyze the execution time vs error tradeoff, we benchmarked a DDM which fits into the GDDM framework, defined by:(18)μ(x,t,…)=2σ(x,t,…)=1.5X0(x,…)={1,x=00,otherwiseB(t,…)=1pi∗(t)=pi(t)
+To analyze the execution time vs error tradeoff, we benchmarked a DDM which fits into the GDDM framework, defined by:
+
+$$
+\mu(x,t,…)=2\sigma(x,t,…)=1.5X_{0}(x,…)={1,x=00,otherwiseB(t,…)=1p_{i}^{∗}(t)=p_{i}(t)
+$$
 
 The DDM was chosen because it permits closed-form solutions, providing a comparison for benchmarking simulation accuracy. Performance was measured on a Lenovo T480 computer with an Intel M540 i7-8650U 4.2 GHz CPU with hyperthreading disabled. Verification and parallelization were disabled for these evaluations. The simulated time was 2 s.
 
 In order to examine combinations of Δt and either Δx or N which simultaneously minimize both execution time and error, we plot the product of the MSE and execution time in seconds. This product should be interpreted as a heuristic which encompasses both execution time and accuracy rather than a fundamentally important quantity in and of itself.
 
-## Model for parallel performance
+### Model for parallel performance
 
-To analyze PyDDM’s parallel performance, we benchmarked a DDM which fits into the GDDM framework, defined by:(19)μ(x,t,…)=2Cσ(x,t,…)=1X0(x,…)={1,x=00,otherwiseB(t,…)=1pi∗(t)=pi(t)where the model was simulated using backward Euler for 64 coherence values C uniformly spaced from 0 to 0.63. Because PyDDM parallelizes functions by utilizing an embarrassingly parallel approach over experimental conditions, we included many such conditions to enable benchmarks which reflect the simulations instead of the specifics of the model. Simulations were performed on a high performance computing cluster using a single node with 28 Xeon E5-2660v4 cores. Verification was disabled for these simulations.
+To analyze PyDDM’s parallel performance, we benchmarked a DDM which fits into the GDDM framework, defined by:
 
-## Validity of results
+$$
+\mu(x,t,…)=2C\sigma(x,t,…)=1X_{0}(x,…)={1,x=00,otherwiseB(t,…)=1p_{i}^{∗}(t)=p_{i}(t)
+$$
+
+where the model was simulated using backward Euler for 64 coherence values C uniformly spaced from 0 to 0.63. Because PyDDM parallelizes functions by utilizing an embarrassingly parallel approach over experimental conditions, we included many such conditions to enable benchmarks which reflect the simulations instead of the specifics of the model. Simulations were performed on a high performance computing cluster using a single node with 28 Xeon E5-2660v4 cores. Verification was disabled for these simulations.
+
+### Validity of results
 
 It is important that simulation results are valid and reliable. Results could be inaccurate either due to bugs in user-specified models or in PyDDM itself. Due to the ability to easily construct user-defined models, PyDDM takes this issue very seriously. In addition to utilizing standard software engineering practices such as unit and integration testing with continuous integration (Beck Andres, 2004), PyDDM is the first neuroscience software to our knowledge which incorporates software verification methods for ensuring program correctness (Ghezzi et al., 2002). It does so using a library which checks for invalid inputs and outputs within the code, and also checks for invalid inputs and outputs in user-defined models which do not explicitly incorporate the library (Shinn, 2020). Invalid inputs and outputs include anything which invalidates the assumptions of the GDDM, such as initial conditions outside of the bounds, noise levels less than zero, or probability distributions which do not sum to 1. Such checking helps ensure that results generated by PyDDM are not due to a configuration or programming mistake, which is especially important because user-specified models logic can quickly become complicated for intricate experimental designs. This, combined with the ease of reproducibility and code reuse afforded by open source software in general, means that high validity and reliability are key advantages of PyDDM.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.37138.001 Human gut Bacteroides use surface-exposed lipoproteins to bind and metabolize complex polysaccharides. Although vitamins and other nutrients are also essential for commensal fitness, much less is known about how commensal bacteria compete with each other or the host for these critical resources. Unlike in Escherichia coli , transport loci for vitamin B 12 (cobalamin) and other corrinoids in human gut Bacteroides are replete with conserved genes encoding proteins whose functions are unknown. Here we report that one of these proteins, BtuG, is a surface-exposed lipoprotein that is essential for efficient B 12 transport in B. thetaiotaomicron. BtuG binds B 12 with femtomolar affinity and can remove B 12 from intrinsic factor, a critical B 12 transport protein in humans. Our studies suggest that Bacteroides use surface-exposed lipoproteins not only for capturing polysaccharides, but also to acquire key vitamins in the gut.
+Human gut Bacteroides use surface-exposed lipoproteins to bind and metabolize complex polysaccharides. Although vitamins and other nutrients are also essential for commensal fitness, much less is known about how commensal bacteria compete with each other or the host for these critical resources. Unlike in Escherichia coli, transport loci for vitamin B12 (cobalamin) and other corrinoids in human gut Bacteroides are replete with conserved genes encoding proteins whose functions are unknown. Here we report that one of these proteins, BtuG, is a surface-exposed lipoprotein that is essential for efficient B12 transport in B. thetaiotaomicron. BtuG binds B12 with femtomolar affinity and can remove B12 from intrinsic factor, a critical B12 transport protein in humans. Our studies suggest that Bacteroides use surface-exposed lipoproteins not only for capturing polysaccharides, but also to acquire key vitamins in the gut.
 
 ## Introduction
 
@@ -35,9 +35,17 @@ Here we report that unlike BtuE in E. coli, Bacteroides accessory proteins can p
 
 ## Results
 
-## Bacteroidetes btuG homologs display widespread genetic linkage to vitamin B12 transport genes and facilitate cyanocobalamin acquisition
+### Bacteroidetes btuG homologs display widespread genetic linkage to vitamin B12 transport genes and facilitate cyanocobalamin acquisition
 
 Nearly all of the Bacteroides B12 transport loci include homologs of a hypothetical gene that is exclusively found in the Bacteroidetes phylum (Figure 1A). We refer to these homologs as BtuG; one of which (BtuG2 from B. thetaiotaomicron, marked with a star in Figure 1A) has been crystallized and adopts a seven-bladed β-propeller fold (PDB 3DSM; Figure 1B). B. thetaiotaomicron encodes three genetic loci with vitamin B12 transport genes (locus1, locus2 and locus3; Figure 1A). Each locus encodes a btuG homolog (btuG1, btuG2 and btuG3, respectively) adjacent to a homolog of btuB (Figure 1A). Using BtuG1, BtuG2 and BtuG3 from B. thetaiotaomicron as representatives, we identified 112 putative BtuG homologs in 313 genome-sequenced human gut bacterial strains (Degnan et al., 2014a) by an initial BlastP search (Supplementary file 1). 106 are encoded in 106 of 109 btuB-containing operons identified previously (Degnan et al., 2014a). The six remaining btuG homologs identified by BlastP have operon annotations affected by incomplete genome assemblies, however, five are associated with a corrinoid riboswitch and one or more btu transport genes. Two of the three remaining btuB-containing operons encode a divergent btuG gene (e-value >1e-10, but Phyre2 match to the BtuG2 crystal structure). No homologs were detected outside of the Bacteroidetes using the defined BlastP parameters (Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genetic loci encoding corrinoid transport components in E. coli, B. thetaiotaomicron and other Bacteroidetes. (B) BtuG2 (PDB 3DSM) adopts a seven-bladed β-propeller fold. (C) Growth curves for the B. thetaiotaomicron parent strain, btuG2 deletion strain or complemented strain grown in minimal media supplemented with methionine or vitamin B12. Data are representative of three independent trials; error bars indicate ±SD from three technical replicates. (D) Gene expression ratios for B. thetaiotaomicron strains grown in minimal media with methionine and indicated concentrations of vitamin B12. Expression of locus2 (BT1956) was normalized first to 16S rRNA and then to each strain’s expression in 0 nM vitamin B12. Data are representative of two independent trials; error bars indicate ± SD from three biological replicates. (E, F) B. thetaiotaomicron strain ratios determined from gDNA extracted from fecal samples collected over time from gnotobiotic mice. (n.d., not detected; n = 4 mice/group; error bars indicate ± SD).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** B. thetaiotaomicron parent, ∆btuG2 and complemented (∆btuG2 + btuG2) strain ratios determined from gDNA extracted from fecal samples of gnotobiotic mice collected over time. (n = 5 mice; error bars indicate ± SD). The fitness defect of a B. thetaiotaomicron strain lacking btuB2 (Figure 1F) is also complemented by expression of btuB2 in single copy from a heterologous chromosomal locus (Degnan et al., 2014a).
 
 We sought to test whether BtuG is needed for B12-dependent growth, given the near universal genetic linkage of btuG homologs to known B12 transport genes. Because B. thetaiotaomicron encodes three homologous B12 transport loci (and corresponding btuG genes) that complicate the ability to assign functions to specific genes, we established a simplified genetic background that lacks locus1 and locus3 (hereafter referred to as the B. thetaiotaomicron ‘parent’ strain). We created an in-frame, unmarked deletion of btuG2 in this parent strain and tested its ability to grow in minimal media supplemented with cyanocobalamin (B12-dependent growth; B. thetaiotaomicron encodes MetH but not MetE) or methionine (B12-independent growth). We chose cyanocobalamin concentrations of 37 nM and 0.37 nM because these concentrations repress (37 nM) or activate (0.37 nM) B12 riboswitches in this species (Sonnenburg et al., 2005; Martens et al., 2008; Degnan et al., 2014a). As compared with its growth in methionine medium, the btuG2 deletion strain had a ~4 hr longer lag phase in 37 nM cyanocobalamin medium and did not display any growth during 72 hr in 0.37 nM cyanocobalamin medium (Figure 1C). By contrast, the parent and complemented strains grew indistinguishably in all three media.
 
@@ -45,9 +53,17 @@ Vitamin B12 riboswitches are RNA aptamers that bind B12 directly and repress dow
 
 B12 transport machinery encoded in locus2 are critical for B. thetaiotaomicron fitness in gnotobiotic mice (Goodman et al., 2009). To compare the relative contribution of BtuG2 and BtuB2 to fitness in the gut, we colonized germfree mice with a 1:1 mixture of the parent strain and ∆btuG2 (Figure 1E and Figure 1—figure supplement 1) or ∆btuB2 (Figure 1F), and monitored the relative abundance of each strain in fecal samples collected over time. In both groups of mice, the parent strain dominated while the abundance of the mutant strain dropped continuously until it was no longer detected on day 24 (Figure 1E–F). Surprisingly, these data indicate that the absence of BtuG2 has a similarly deleterious impact on in vivo fitness as the absence of the outer membrane transporter BtuB2. Together, these studies suggest that BtuG plays a critical role in mediating B. thetaiotaomicron B12 transport in the gut.
 
-## BtuG2 is a lipoprotein that localizes to the cell surface and associates with B12 transport machinery
+### BtuG2 is a lipoprotein that localizes to the cell surface and associates with B12 transport machinery
 
 We next sought to determine the subcellular localization of BtuG2 to better understand its role in B12 transport. Aligning the first 90 amino acids of 114 homologs of BtuG (Supplementary file 1) using ClustalW (Larkin et al., 2007) and displaying their conservation as a sequence logo (Crooks et al., 2004; Schneider and Stephens, 1990) revealed a number of important clues: firstly, nearly all homologs have a conserved cysteine residue within their first ~18–40 amino acids (Cys-32 of BtuG2) (Inouye et al., 1983); secondly, this cysteine is preceded by a conserved lipobox-like sequence typical of lipidated proteins (VFGS in BtuG2) (von Heijne, 1989); thirdly, this cysteine is followed by a conserved lipoprotein export signal or LES (MKWD in BtuG2), a feature exclusive to Bacteroidetes that allows lipoproteins to be flipped from the inner to the outer leaflet of the outer membrane (Figure 2A) (Lauber et al., 2016). Thus, from their primary sequences alone, we predicted BtuG homologs to be surface-exposed lipoproteins.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig2-v1.jpg)
+
+**Figure 2.:** (A) N-terminus of BtuG2 and sequence logo of 114 BtuG homologs reveal sequence signatures indicative of a surface-exposed lipoprotein, including a lipobox, adjacent cysteine residue and lipoprotein export signal (LES). (B) Protease degradation of BtuG2 on whole B. thetaiotaomicron cells suggests BtuG2 is surface-exposed. SusA is a periplasmic control. Data are representative of three independent trials. (C) B. thetaiotaomicron cells separated into membrane (M), cytoplasm/periplasm (C), and supernatant (S) fractions reveal that BtuG2 is predominantly associated with the membrane in parent cells, but predominantly associated with the supernatant in ∆btuB2 cells. Data are representative of four independent trials. (D) In vivo pull-down of BtuG2 by TAP-tagged BtuB2 suggests an interaction with BtuB2, but not with an unrelated outer membrane β-barrel protein SusC. Data are representative of two independent trials.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot of B. thetaiotaomicron whole cell lysates of parent strain and a panel of btuG2 complemented strains probed with anti-BtuG2. Data are representative of three independent trials. (B) qRT-PCR of B. thetaiotaomicron strains grown in minimal media supplemented with methionine and either 37 nM or 0.37 nM vitamin B12. Data are normalized first to 16S rRNA and then to expression of ∆btuG2 + btuG2 in 0.37 nM vitamin B12. Data are representative of two independent trials; error bars indicate ± SD from three biological replicates. (C) Western blot of B. thetaiotaomicron whole cell lysates of a panel of btuG2 complemented strains probed with anti-BtuG2. Data are representative of two independent trials. (D) Growth curves of B. thetaiotaomicron strains grown in minimal media supplemented with methionine or indicated concentrations of vitamin B12. Data are representative of two independent trials; error bars indicate ± SD from three technical replicates; ss, signal sequence; LES, lipoprotein export signal.
 
 To test whether BtuG2 is indeed surface-exposed, we treated intact cells grown in minimal medium with methionine (but without cyanocobalamin) with varying concentrations of proteinase K (0–100 µg/mL), ran whole cell lysates on an SDS-PAGE gel, and probed by Western blot for BtuG2 or a periplasmically localized control protein SusA (BT3704) appended with a C-terminal HA-tag (Shipman et al., 1999). While SusA was protected from protease treatment even at the highest concentration of protease, BtuG2 was progressively degraded at increasing concentrations of protease, consistent with it being surface-exposed (Figure 2B). Moreover, BtuG2 associated most strongly with the membrane of fractionated B. thetaiotaomicron cells (parent strain), and was even found in the supernatant fraction, consistent with its localization to the interface of the outer membrane of the cell and the extracellular milieu (Figure 2C).
 
@@ -55,13 +71,25 @@ Alteration of these surface-localizing sequence features diminished BtuG2 stabil
 
 Given that BtuG2 exhibits sequence signatures and protease sensitivity indicative of a surface-exposed lipoprotein, is localized to the cell membrane, and contributes to B12 acquisition, we hypothesized that it might interact with the outer membrane B12 transporter BtuB2. Consistent with this hypothesis, we found that deletion of btuB2 changes the predominant localization of BtuG2 from the membrane fraction to the culture supernatant (Figure 2C). Furthermore, tandem affinity purification (TAP) of BtuB2-associated proteins in growing B. thetaiotaomicron cells readily pulls down BtuG2 (Figure 2D). By contrast, TAP of an untagged strain, or of a strain with the TAP epitopes appended to an unrelated TonB-dependent outer membrane β-barrel-type transporter (SusC; BT1763) fails to pull down BtuG2. These data suggest that BtuG2 associates with known B12 transport machinery.
 
-## BtuG2 directly binds cyanocobalamin with femtomolar affinity
+### BtuG2 directly binds cyanocobalamin with femtomolar affinity
 
 All components of the canonical vitamin B12 transport pathway—BtuB, BtuF and BtuCD—bind cyanocobalamin directly during the process of transport from outside the cell into the periplasm and ultimately the cytoplasm. To test whether BtuG2 also binds cyanocobalamin, we expressed and purified BtuG2-10xHis in E. coli. We then took advantage of the ability of cyanocobalamin to absorb light at a wavelength of 362 nm, and aromatic amino acids within BtuG2 to absorb light at 280 nm, by performing size-exclusion chromatography with multi-angle light scattering (SEC-MALS) on BtuG2 after co-incubation with equimolar cyanocobalamin. At both wavelengths, we observed nearly identical traces corresponding to the elution volume for BtuG2, indicating that BtuG2 can directly bind cyanocobalamin in vitro (Figure 3A). Purified, recombinant BtuG homologs from B. vulgatus, B. uniformis and B. coprophilus (BVU2056, BACUNI04578 and BACCOPRO02032, respectively) also exhibit this function (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig3-v1.jpg)
+
+**Figure 3.:** (A) SEC-MALS traces for recombinant BtuG2 incubated with vitamin B12. BtuG2 (protein) absorbance is measured at 280 nm; vitamin B12 absorbance is measured at 362 nm. Data are representative of three independent trials. (B) Kinetic rate constants and equilibrium dissociation constant for BtuG2 binding to dicyanocobinamide and cyanocobalamin determined by SPR. Data are representative of three independent trials; error represents ± SD from rate constants measured across three Biacore chip cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A gene tree assembled from 114 BtuG homologs (Supplementary file 1) indicates the relative homology of three BtuG homologs from B. vulgatus, B. uniformis and B. coprophilus (BVU2056, BACUNI04578 and BACCOPRO02032, respectively; shown in red). (B) Purified proteins (and a no-protein control) were incubated with B12, filtered to remove free vitamin, and quantified for absorbance at 360 nm (corresponding to vitamin B12 absorbance). BSA, bovine serum albumin; B12, no-protein control after B12 incubation and filtering. *p<0.05 for samples compared against no-protein control (B12); error bars indicate ± SD from two technical replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Model of surface electrostatic profile based on the crystal structure of BtuG2 (PDB 3DSM; left) reveals a largely positive electrostatic potential (blue) on the face of BtuG2 harboring the C-terminal 6xHis tag, and a largely negative electrostatic potential (red) on the opposing face, unlike the unrelated seven-bladed β-propellers EUBREC_1955 from the human gut anaerobe Eubacterium rectale (PDB 3S25; center left) and MSMAS_RS11935 from the methanogenic archeon Methanosarcina mazei (PDB 1L0Q; center right). Opposing electrostatic charge surfaces on enzymes like acetylcholinesterase (PDB 1GQR; right) are thought to aid in ligand orientation and binding during catalysis (Tan et al., 1993; Getzoff et al., 1983; Ripoll et al., 1993). (B) Structural similarity between BtuG2 (PDB 3DSM; gold) and the β-propeller domain of MSMAS_RS11935 (PDB 1L0Q; blue) (Jing et al., 2002). These domains are superimposed with a root mean square deviation of 1.75 Å.
+
 We then sought to determine the kinetics and affinity of cyanocobalamin binding by BtuG2. Because BtuG2-cyanocobalamin saturation occurs too rapidly to measure the dissociation constant accurately by isothermal titration calorimetry (data not shown), we used surface plasmon resonance (SPR) to determine a KD of 1.87 ± 0.76 × 10−13 M for BtuG2-cyanocobalamin binding and 1.93 ± 0.63 × 10−13 M for BtuG2-dicyanocobinamide binding (Figure 3B). Both ligands bind BtuG2 at a 1:1 ratio. BtuG2 binds to cyanocobalamin with a measured kon = 1.40 ± 0.05 × 109 M−1s−1 and a koff = 2.59 ± 0.96 × 10−4 s−1; similarly, BtuG2 binds to dicyanocobinamide with a measured kon = 2.61 ± 1.56 × 109 M−1s−1 and a koff = 4.54 ± 1.38 × 10−4 s−1. Together, these measurements establish that BtuG2 binds cyanocobalamin and a corrinoid precursor with femtomolar affinity, at a rate generally observed for diffusion-limited enzymes and proteins. This ligand interaction is maintained for over 1 hr on average before spontaneous dissociation (Corzo, 2006). Notably, surface electrostatic analysis of the crystal structure of BtuG2 reveals a predominantly positive electrostatic potential on the face of BtuG2 displaying the C-terminal 6x-His tag, and a predominantly negative electrostatic potential on the opposing face (Figure 3—figure supplement 2A). The coordinated cobalt ion of a corrinoid carries a positive charge ranging from +1 to +3, depending in part on the upper ligand (–CN, –Me, –Ado, –OH) (Obeid et al., 2015). Therefore, if surface electrostatic charges on BtuG2 are involved in orienting corrinoids to facilitate protein-ligand interactions, these forces should draw the ligand into the negative electrostatic face of BtuG2.
 
-## BtuG2 can function extracellularly as an early step in vitamin B12 acquisition and confers a fitness advantage to producer cells
+### BtuG2 can function extracellularly as an early step in vitamin B12 acquisition and confers a fitness advantage to producer cells
 
 Because BtuG2 modulates intracellular corrinoid levels, is surface-exposed, associates with BtuB2 and binds cyanocobalamin directly, we reasoned that it might act as a critical extracellular step in the process of capturing and transporting corrinoids. To test whether BtuG2 can function extracellularly, we measured growth of btuG2 mutant cells upon supplementation with supernatants from btuB2 mutant cultures (this strain disproportionally partitions BtuG2 to the supernatant; Figure 2C). To this end, we collected, filter-sterilized, ultra-centrifuged, and concentrated culture supernatants from B. thetaiotaomicron ∆locus1 ∆locus3 ∆btuB2 (or ∆locus1 ∆locus3 ∆btuG2 as a control) strains grown to exponential phase in minimal medium lacking cyanocobalamin and supplemented with methionine. Concentrated supernatants were incubated in the presence or absence of 0.37 µM cyanocobalamin, diluted and concentrated repeatedly to remove unbound ligand and residual methionine, and introduced to recipient cells in medium lacking both cyanocobalamin and methionine.
 
@@ -73,7 +101,7 @@ Under these conditions, ∆btuG2 recipient cells grow robustly when provided wit
 
 The observation that BtuG2 can function in trans raises the possibility that this protein could act as a public good, secreted into the environment and shared across cells in the population. However, BtuG2-producing parent cells fail to rescue the cyanocobalamin-dependent growth defect of a ∆btuG2 strain when the two strains are co-cultured (Figure 4B), suggesting that this protein primarily functions in cis. This is consistent with its localization as a membrane-bound lipoprotein (Figure 2) and the competitive defect of a ∆btuG2 strain in the presence of parent B. thetaiotaomicron in the mouse gut (Figure 1E and Figure 1—figure supplement 1).
 
-## B. thetaiotaomicron can use BtuG2 to acquire cyanocobalamin from human intrinsic factor
+### B. thetaiotaomicron can use BtuG2 to acquire cyanocobalamin from human intrinsic factor
 
 Because BtuG2 is surface-exposed and binds cobalamin with femtomolar affinity, we wondered if it might affect the function of human B12-binding proteins that transport this vitamin through the length of the gastrointestinal tract. Humans absorb cobalamin from their diet with the help of two carrier proteins. The first, haptocorrin, is secreted from salivary glands and binds the vitamin as it is released from food broken down in the stomach; the second, intrinsic factor (IF), is released from parietal cells in the stomach and binds cobalamin in the duodenum following the degradation of haptocorrin by host enzymes (Nielsen et al., 2012). IF then carries the vitamin through several meters of intestinal tract to the distal ileum, where receptors on intestinal epithelial cells allow for the uptake of IF and its vitamin cargo (Nielsen et al., 2012). As IF traverses the small intestinal lumen, it encounters increasing densities of gut microbes (from ~103 to ~108 cells/g) (Scheithauer et al., 2016).
 
@@ -81,7 +109,7 @@ To test whether B. thetaiotaomicron can use BtuG2 to acquire vitamin B12 from IF
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37138/elife-37138-fig5-v1.jpg)
 
-**Figure 5.:** 12 piracy from host intrinsic factor.(A) Schematic (left) and measured CFUs (right) from an experiment in which B. thetaiotaomicron recipient cultures (parent or ∆btuG2) received recombinant human IF with or without vitamin B12, or the filtrate from the last IF–B12 wash. Recipient cultures were plated for CFUs over time. Data are representative of two independent trials; *p<0.05 for black bars compared against red, yellow or blue bars; error bars indicate ± SD from two biological replicates. (B) Schematic (left) and SEC-MALS traces at 362 nm absorbance (right) of recombinant human IF and/or recombinant BtuG2 incubated with vitamin B12. 362 nm absorbance measures B12-associated proteins and each trace represents one of the four conditions illustrated in the schematic. Data are representative of two independent trials. (C) Schematic (left) and CFUs (right) from an experiment in which B. thetaiotaomicron recipient cultures (∆btuG2) received recombinant human IF with or without vitamin B12 or the filtrate from the last IF–B12 wash, and donor supernatant from B. thetaiotaomicron strains (∆btuB2 or ∆btuG2). Recipient cultures were plated for CFUs over time. Data are representative of two independent trials; *p<0.05 for black bars compared against red, yellow or blue bars; error bars indicate ± SD from two biological replicates.
+**Figure 5.:** (A) Schematic (left) and measured CFUs (right) from an experiment in which B. thetaiotaomicron recipient cultures (parent or ∆btuG2) received recombinant human IF with or without vitamin B12, or the filtrate from the last IF–B12 wash. Recipient cultures were plated for CFUs over time. Data are representative of two independent trials; *p<0.05 for black bars compared against red, yellow or blue bars; error bars indicate ± SD from two biological replicates. (B) Schematic (left) and SEC-MALS traces at 362 nm absorbance (right) of recombinant human IF and/or recombinant BtuG2 incubated with vitamin B12. 362 nm absorbance measures B12-associated proteins and each trace represents one of the four conditions illustrated in the schematic. Data are representative of two independent trials. (C) Schematic (left) and CFUs (right) from an experiment in which B. thetaiotaomicron recipient cultures (∆btuG2) received recombinant human IF with or without vitamin B12 or the filtrate from the last IF–B12 wash, and donor supernatant from B. thetaiotaomicron strains (∆btuB2 or ∆btuG2). Recipient cultures were plated for CFUs over time. Data are representative of two independent trials; *p<0.05 for black bars compared against red, yellow or blue bars; error bars indicate ± SD from two biological replicates.
 
 To test whether BtuG2 acquires cobalamin from IF directly, we incubated cyanocobalamin with IF and/or recombinant BtuG2 and determined the relative amounts of the vitamin associated with each protein by SEC-MALS. As expected, incubation of BtuG2 with cyanocobalamin produces a distinct absorbance peak at 362 nm corresponding to the elution volume for BtuG2 (Figure 5B). Similarly, incubation of IF with cyanocobalamin produces a 362 nm absorbance peak at the elution volume corresponding to IF. Notably, addition of BtuG2 to IF-cobalamin shifts the majority of the 362 nm absorbance to the elution volume for BtuG2 (Figure 5B). This suggests that BtuG2 can directly acquire cobalamin from an IF-cobalamin complex.
 
@@ -107,80 +135,349 @@ Although our evidence of BtuG lipidation is indirect, the use of cell surface-le
 
 ## Materials and methods
 
-## Bacterial culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>S17-1 lambda pir</td>
+      <td>PMID_6340113</td>
+      <td></td>
+      <td>thi pro hdsR hdsM + recA, chromosomal insertion of RP4-2(Tc::Mu Km::Tn7), AmpS</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td>F- ompT hsdSB(rB- mB-) gal dcm (DE3) pRARE (CamR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides  thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk</td>
+      <td>PMID_18611383</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆locus3</td>
+      <td>PMID_24439897</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆btuG2 ∆locus3</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆btuB2 ∆locus3</td>
+      <td>PMID_24439897</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆locus2 ∆locus3</td>
+      <td>PMID_24439897</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆locus3 att::pNBU2_tet_BC01</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆btuG2 ∆locus3 att::pNBU2_tet_BC14</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆btuB2 ∆locus3 att::pNBU2_tet_BC14</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. thetaiotaomicron)</td>
+      <td>VPI-5482 ∆tdk ∆locus1 ∆btuG2 ∆locus3 att::pNBU2_tet_BC16_us1957_btuG2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3)  pET21_NESG_btuG2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3) pET21_NESG_btuG2_10xHis</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3) pET21_NESG_BVU2056</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3) pET21_NESG_BACUNI04578</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Rosetta (DE3) pET21_NESG_BACCOPRO02032</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pExchange-tdk</td>
+      <td>PMID: 18611383</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pExchange_tdk_∆btuG2</td>
+      <td></td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_ermG</td>
+      <td>PMID: 18611383</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_ermG_us1957</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_tet_BC01</td>
+      <td>PMID: 18996345</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_tet_BC14</td>
+      <td>PMID: 18996345</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_tet_BC16</td>
+      <td>PMID: 24439897</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957_btuG2_C32A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957_btuG2_∆ss</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957 _btuG2_K34A W35A D36A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957_btuG2_susD-ss</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957_btuG2_susD-ss-LES</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957_btuB2_FLAG_HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957 _BT1763_FLAG_HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNBU2_erm_us1957 _BT3704_HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21_NESG_btuG2</td>
+      <td>Northeast Structural Genomics Consortium; PDB 3DSM</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21_NESG_btuG2_10xHis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21_NESG_BVU2056</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21_NESG_ BACUNI04578</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21_NESG_ BACCOPRO02032</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial culture conditions
 
 Culturing of Bacteroides thetaiotaomicron VPI-5482 was carried out in an anaerobic chamber (Coy Laboratory Products, Grass Lake, MI, USA), filled with 70% N2, 20% CO2, and 10% H2 by volume, using minimal media with vitamin B12 omitted (Martens et al., 2008) supplemented where specified with 500 µM DL-methionine and/or vitamin B12 (0, 0.37 or 37 nM). Escherichia coli S17-1 lambda pir or BL21 Rosetta (DE3) strains were grown in LB medium and incubated aerobically at 37°C. Culture media were supplemented with antibiotics as needed at the following concentrations: ampicillin 100 μg/mL, chloramphenicol 30 µg/mL, erythromycin 25 μg/mL, gentamicin 200 μg/mL, tetracycline 2 μg/mL, and 5-fluoro-2′-deoxyuridine (FUdR) 200 μg/mL.
 
-## Genetic techniques
+### Genetic techniques
 
 Plasmid constructs (Supplementary file 1) were created, maintained and transformed using standard molecular cloning procedures. Primers (Supplementary file 1) were obtained from the Keck Biotechnology Resource Laboratory (Yale University, New Haven, CT, USA) and DNA amplification was performed using KAPA HiFi ReadyMix (Kapa Biosystems, Wilmington, MA, USA). Gene deletions in B. thetaiotaomicron were carried out as previously reported using B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 as a parent strain (Degnan et al., 2014a) by amplifying flanking regions (~1000 bp) of genes of interest and joining them by splicing by overlap extension (SOE) PCR or Gibson assembly. The concatenated fragments were inserted into the suicide vector pExchange-tdk (Martens et al., 2008) via ligation or Gibson assembly. Clones were sequence-verified and introduced into B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 by conjugation. Following counter selection, gene deletions were confirmed by PCR. Gene complementation constructs were created using pNBU2 vectors (with or without oligonucleotide barcodes) introduced in single copy into B. thetaiotaomicron as previously described (Martens et al., 2008). Complementation constructs contained 425 bp upstream of BT1957, the first gene in locus2, to capture the locus2 promoter and vitamin B12 riboswitch (us1957, Supplementary file 1).
 
-## Comparative genomics and computational analyses
+### Comparative genomics and computational analyses
 
-## Identification of BtuG homologs
+#### Identification of BtuG homologs
 
 BlastP searches were carried out with BT1490, BT1954 and BT2095 as queries against the predicted proteomes of 313 human gut bacteria (Degnan et al., 2014a) and e-value cutoff of 1e-10. Results were collated, de-replicated and BtuG homologs assigned to btuB-containing operons described previously (Degnan et al., 2014a). btuB-containing operons without a btuG homolog and btuG-containing operons without a previously characterized btuB gene were manually inspected using BlastP and Phyre2 (Altschul et al., 1990; Kelley and Sternberg, 2009).
 
-## BtuG sequence logo
+#### BtuG sequence logo
 
 The first 90 amino acids of 114 BtuG homologs (Supplementary file 1) were aligned in ClustalW (Larkin et al., 2007). Their sequence conservation was displayed via sequence logo (Crooks et al., 2004; Schneider and Stephens, 1990).
 
-## BtuG gene tree
+#### BtuG gene tree
 
 A multiple sequence alignment of 114 homologs of BtuG2 (Supplementary file 1) was generated in MAFFT (Katoh et al., 2002) and converted into a gene tree using FigTree.
 
-## Protein surface electrostatic analysis
+#### Protein surface electrostatic analysis
 
 PDB 3DSM, 3S25, 1L0Q and 1GQR were converted to PQR files using the PDB2PQR server under default settings (Dolinsky et al., 2004). The resulting surface electrostatic profiles were then analyzed and viewed using an adaptive Poisson-Boltzmann solver (APBS) in PyMOL.
 
-## Protein structure overlay
+#### Protein structure overlay
 
 The crystal structures of BtuG2 (PDB 3DSM) and the N-terminal domain of the M. mazei S-layer protein MSMAS_RS11935 (PDB 1L0Q, Chain A; Jing et al., 2002) were aligned by super-positioning of the C-alpha backbones using the TOPP program in the CCP4 protein crystallography suite (Lu, 1996), Collaborative Computational Project Number 4, 1994). Images were prepared using Chimera (Pettersen et al., 2004).
 
-## Growth curves
+### Growth curves
 
 Overnight cultures of B. thetaiotaomicron strains grown in minimal medium supplemented with methionine (no B12) were pelleted, washed three times in minimal medium without methionine or vitamin B12, and used to inoculate wells of a 96-well plate in triplicate containing minimal media with methionine or vitamin B12 (0, 0.37 or 37 nM). The plate was incubated anaerobically under constant agitation for 72 hr at 37˚C and OD600 measurements were taken at regular intervals using a BioTek Eon microplate spectrophotometer.
 
-## In vitro bacterial competitions
+### In vitro bacterial competitions
 
 B. thetaiotaomicron strains carrying unique oligonucleotide barcodes were co-cultured in minimal media in triplicate as previously described (Degnan et al., 2014a; Martens et al., 2008). Briefly, B. thetaiotaomicron strains were grown overnight in minimal media supplemented with methionine, washed and resuspended in minimal media without methionine or vitamin B12. OD600 was measured and used to create a 1:10 mixture of competing strains (1 part parent strain to 10 parts ∆btuG2 strain), which was then used to inoculate, at 1:1000, minimal media supplemented with methionine or vitamin B12 (0, 0.37, or 37 nM). These inoculations were then incubated anaerobically at 37 ˚C under static conditions or shaking (250 rpm). Cultures were passaged at 1:1000 into fresh media every 24 hr and an aliquot was stored at −20 ˚C for gDNA extraction (Truett et al., 2000). Relative strain abundances were determined by quantitative PCR (qPCR) using a CFX96 thermocycler (Bio-Rad, Hercules, CA, USA) and SYBR FAST Universal Mastermix (KAPA Biosystems, Wilmington, MA, USA) (Degnan et al., 2014a). Strain abundances were analyzed using a standard curve and efficiency-corrected ∆Cq method was used to determine relative fold changes (Bookout et al., 2006).
 
-## Gnotobiotic animal studies
+### Gnotobiotic animal studies
 
 All animal experiments were performed using protocols approved by the Yale University Institutional Animal Care and Use Committee. Male and female germfree 8- to 12-week-old Swiss Webster mice were individually caged and maintained in flexible plastic gnotobiotic isolators with a 12 hr light/dark cycle. Mice were provided with standard autoclaved mouse chow (5K67 LabDiet; Purina, St. Louis, MO, USA) ad libitum. Germfree mice were colonized with 200 µL bacterial glycerol stocks by oral gavage. Mice were divided into groups (n = 4 – 5/group). Each mouse in the first group was gavaged with 108 CFU each of B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 att1::pNBU2_tetQ_BC01 (‘parent’ strain) and B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 ∆btuG2 att1::pNBU2_tetQ_BC14 (‘∆btuG2’ strain). Each mouse in the second group was gavaged with 108 CFU each of the parent strain and B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 ∆btuB2 att1::pNBU2_tetQ_BC14 (‘∆btuB2’ strain). Each mouse in the third group was gavaged with ~107 CFU each of the parent strain, the ∆btuG2 strain, and B. thetaiotaomicron ∆tdk ∆locus1 ∆locus3 ∆btuG2 att1::pNBU2_tetQ_BC16_us1957_btuG2 (‘∆btuG2 + btuG2’ strain). Fecal samples were collected over time and stored at −80°C before genomic DNA extraction. DNA was extracted as described previously (Cullen et al., 2015). The relative abundance of each strain was determined using oligonucleotide barcode-specific primers (Supplementaryfile 1) in a qPCR assay as described above.
 
-## B12 riboswitch biosensor assays
+### B12 riboswitch biosensor assays
 
 B. thetaiotaomicron strains were grown in triplicate anaerobically at 37 ˚C to mid-log phase (OD600 ~0.3) in minimal media supplemented with methionine and vitamin B12 (0, 0.37, or 37 nM). RNA was extracted using a cell lysis buffer (10 mM Tris pH 8.0, 1 mM EDTA, 0.2 mg lysozyme, 0.5 mg proteinase K) and an RNeasy kit (Qiagen, Hilden, Germany). DNA was removed using DNA-free DNA Removal Kit (Invitrogen, Carlsbad, CA, USA), and RNA was again cleaned using an RNeasy kit (Qiagen, Hilden, Germany). cDNA was then made with SuperScript II Reverse Transcriptase (Invitrogen, Carlsbad, CA, USA) using the manufacturer’s instructions, and RNA was removed with 1 N NaOH at 65 ˚C for 30 min and neutralized with 1 N HCl. Samples were then cleaned using a PCR purification kit (Qiagen) and cDNA was quantified using a Qubit (Invitrogen, Carlsbad, CA, USA). Quantitative PCR was performed using SYBR FAST Universal Mastermix (KAPA Biosystems, Wilmington, MA, USA) and gene-specific primers (Supplementary file 1). Samples were normalized first to 16S rRNA expression for each individual sample and replicate, and then normalized to the expression level of each strain in 0 nM B12 (Figure 1D) or the btuG2 complement strain in 0.37 nM B12 (Figure 2—figure supplement 1B). A standard curve and efficiency-corrected ∆Cq method was used to determine relative fold changes (Bookout et al., 2006).
 
-## Immunoblotting
+### Immunoblotting
 
 Detection of BtuG2 from B. thetaiotaomicron lysates was performed by Western blot analysis using a custom-made rabbit anti-BtuG2 polyclonal antibody (Cocalico Biologicals, Reamstown, PA, USA).
 
-## Proteinase K assay
+### Proteinase K assay
 
 A B. thetaiotaomicron strain expressing an HA-epitope tagged allele of the periplasmic protein SusA (Shipman et al., 1999) was grown to OD600 ~0.8 in minimal media with methionine, pelleted and washed in 1x cOmplete EDTA-free protease-inhibitor cocktail (Roche, Basel, Switzerland) before being pelleted and stored at −80 ˚C. Pellets were thawed and resuspended in PBS with proteinase K (0, 10, 50 or 100 µg/mL; AmericanBio, Natick, MA, USA), and incubated at 37 ˚C aerobically under continuous agitation (250 rpm) for 8 hr. Cells were then pelleted and washed 3 times in 1x cOmplete EDTA-free protease-inhibitor cocktail, pelleted and stored at −80 ˚C. Thawed cells were lysed using BugBuster reagent (Millipore Sigma, Burlington, MA, USA), 20 µg of clarified protein lysate was loaded onto an SDS-PAGE gel, transferred to a PVDF membrane and probed with rabbit anti-BtuG2 and rabbit anti-HA (Santa Cruz Biotechnology, Dallas, TX, USA).
 
-## Cell fractionation
+### Cell fractionation
 
 B. thetaiotaomicron cultures were grown to OD600 ~0.6 in minimal media with methionine. Cells were pelleted (~3000 x g for 15 min at 4˚C) and supernatant was filtered through 0.2 µm filter and stored temporarily on ice. Pellets were resuspended in breakage buffer (50 mM Tris pH 8, 5 mM EDTA, 2 mM PMSF, 10% glycerol), lysed at 4˚C by sonication (40 Amps; 15 s ‘on’ and 30 s ‘off’; 3 min total), and clarified lysates were ultracentrifuged at 100,000 x g for 1 hr at 4˚C to separate membranes (insoluble) from cytoplasm/periplasm (soluble) fractions. Membrane fractions were resuspended in 250 µl of breakage buffer, while the cytoplasm/periplasm fraction was concentrated by centrifugal filtration (30K; Millipore Sigma, Burlington, MA, USA) to 250 µl. Membrane and cytoplasm/periplasm fractions were temporarily stored on ice. Filtered supernatant was utracentrifuged at ~100,000 x g for 1 hr at 4˚C to remove outer membrane vesicles. The soluble fraction was then concentrated by centrifugal filtration to 250 µl. 20 µl each of membrane, cytoplasm/periplasm, and supernatant fractions were loaded onto SDS-PAGE gels and analyzed by Western blot. PVDF membranes were probed with rabbit anti-BtuG2 and mouse anti-RpoB (Santa Cruz Biotechnology, Dallas, TX, USA) as a cytoplasmic control.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 B. thetaiotaomicron strains were grown to OD600 ~0.6 in minimal media with methionine. Cells were pelleted, supernatant was removed, and cells were lysed with BugBuster reagent. Co-immunoprecipitation was carried out using FLAG HA Tandem Affinity Purification kit (Millipore Sigma, Burlington, MA, USA) according to the manufacturer’s instructions. Eluates were probed with rabbit anti-BtuG2 by Western blot.
 
-## Trans-complementation assays
+### Trans-complementation assays
 
 Overnight cultures of B. thetaiotaomicron strains were grown in minimal media with methionine. Supernatant donor strains were subcultured (1:100) into 60 mL fresh minimal media with methionine and allowed to grow to OD600 ~0.6. Supernatant recipient strains were washed 3 times in minimal media without methionine or vitamin B12, subcultured to a final OD600 ~0.001 in 1 mL minimal media without methionine or vitamin B12, and incubated at 37 ˚C anaerobically for 8 – 12 hr. Supernatant donor cultures were pelleted and supernatant filtered (0.2 µm). Filtered supernatants were then ultracentrifuged at 100,000 x g for 1 hr at 4 ˚C to remove outer membrane vesicles and concentrated to <2 mL by centrifugal filtration (30K; Millipore Sigma, Burlington, MA, USA). Where indicated, concentrated supernatants were supplemented with 0.37 µM vitamin B12 or PBS and incubated for 20 min at room temperature aerobically on a nutator. Supernatants were then washed 4 times in 70 mL minimal media without methionine or vitamin B12 by centrifugal filtration (30K). Washed, concentrated supernatants were then applied to recipient cell cultures and incubated at 37 ˚C anaerobically. CFU measurements were taken at regular intervals. For assays involving IF, recombinant human IF (Xeragenx LLC) was incubated in 0.37 µM vitamin B12 or PBS for 20 min at room temperature on a nutator, and washed 4 times in 70 mL minimal media without methionine or vitamin B12 via centrifugal filtration (30K). IF (± vitamin B12) was provided either alone to recipient cell cultures (e.g., Figure 5A) or with B12-free donor supernatants (e.g., Figure 5C) at a final concentration of 10 nM IF per replicate. Cultures were incubated at 37˚C anaerobically and CFU measurements were taken at regular intervals.
 
-## Size-exclusion chromatography with multi-angle light scattering (SEC-MALS)
+### Size-exclusion chromatography with multi-angle light scattering (SEC-MALS)
 
 Recombinant BtuG2-6xHis or BtuG2-10xHis was expressed and purified from E. coli BL21 Rosetta (DE3) carrying a modified pET21 vector. Cells were grown to OD600 ~0.6 before being induced for 3 hr in 0.5 mM IPTG at 37 ˚C under constant agitation. Cell pellets were lysed using BugBuster reagent (Millipore Sigma, Burlington, MA, USA). Lysates were incubated for 1 hr at 4 ˚C with Ni-NTA agarose beads (Qiagen, Hilden, Germany) and washed with 12 – 18 mL of wash buffer (50 mM NaH2PO4, 300 mM NaCl, 20 mM imidazole pH 7.4), and eluted with 6 mL elution buffer (50 mM NaH2PO4, 300 mM NaCl, 250 mM imidazole, pH 7.4). BtuG2-6xHis or BtuG2-10xHis fractions were dialyzed overnight in 20 mM Tris pH eight before being spun through a PierceTM strong anion exchange column (ThermoFisher Scientific, Waltham, MA, USA) according to the manufacturer’s instructions. Eluted proteins were dialyzed twice for 4–8 hr in 4 L of PBS, pH 8. Proteins were quantified by Bradford assay (Bio-Rad, Hercules, CA, USA) according to the manufacturer’s instructions. BtuG2-6xHis was incubated at a 1:1 molar ratio of cyanocobalamin to protein for 30 min at 25 ˚C and analyzed by SEC-MALS. BtuG2-10xHis was enriched for protein monomers by size exclusion chromatography and quantified using a NanoDrop spectrophotometer (ThermoFisher Scientific, Waltham, MA, USA) for use in SPR experiments (described below).
 
-## Cyanocobalamin binding by BtuG homologs from B. thetaiotaomicron, B. vulgatus, B. uniformis and B. coprophilus
+### Cyanocobalamin binding by BtuG homologs from B. thetaiotaomicron, B. vulgatus, B. uniformis and B. coprophilus
 
 pET21_NESG was used to express and purify C-terminal 6xHis-tagged versions of the BtuG homologs BVU2056, BACUNI04578 and BACCOPRO02032 as described above for BtuG2. Each BtuG homolog, or BSA or PBS as controls, was incubated at a 1:1 molar ratio of cyanocobalamin to protein for 30 min at 25 ˚C before being spun through a centrifugal filter (30K; Millipore Sigma, Burlington, MA, USA) to elute unbound cyanocobalamin. Proteins were washed 3 times with 400 µl PBS. Retained protein-cyanocobalamin complexes were resuspended in 100 µl PBS and analyzed by spectrophotometry for absorbance at 360 nm, corresponding to cyanocobalamin.
 
-## Surface plasmon resonance (SPR)
+### Surface plasmon resonance (SPR)
 
 Binding studies were performed at 25°C using a Biacore T100 optical biosensor (GE HealthCare, Biacore, Piscataway, NJ, USA). Recombinant BtuG2-10xHis was purified from E. coli BL21 Rosetta (DE3) as described above and immobilized on a NTA chip. Cyanocobalamin was injected at 0.8, 0.4, 0.2, 0.1, and 0.05 nM and the binding was monitored in single cycle kinetics in PBS (Karlsson et al., 2006). Binding responses were double-referenced against non-specific binding to dextran and the NTA surface alone, and against injections of buffer alone. Binding affinity was determined by fitting the kinetics of the binding reaction to a 1:1 binding model using BioEvaluation software (GE HealthCare, Biacore, Piscataway, NJ, USA).

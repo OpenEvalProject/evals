@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04fegvg32 Center for Neurobiology of Stress Resilience and Psychiatric Disorders, and the Department of Physiology and Biophysics, Chicago Medical School, Rosalind Franklin University of Medicine and Science North Chicago United States
-2. https://ror.org/01kg8sb98 Department of Psychological and Brain Sciences, Indiana University Bloomington United States
+1. Center for Neurobiology of Stress Resilience and Psychiatric Disorders, and the Department of Physiology and Biophysics, Chicago Medical School, Rosalind Franklin University of Medicine and Science North Chicago United States ([ROR:04fegvg32](https://ror.org/04fegvg32))
+2. Department of Psychological and Brain Sciences, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
 
 † Corresponding author
 

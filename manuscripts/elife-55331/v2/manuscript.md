@@ -28,7 +28,7 @@
 
 ## Abstract
 
-This study examines how site-specific binding to three identified neurosteroid-binding sites in the α 1 β 3 GABA A receptor (GABA A R) contributes to neurosteroid allosteric modulation. We found that the potentiating neurosteroid, allopregnanolone, but not its inhibitory 3β-epimer epi-allopregnanolone, binds to the canonical β 3 (+)–α 1 (-) intersubunit site that mediates receptor activation by neurosteroids. In contrast, both allopregnanolone and epi-allopregnanolone bind to intrasubunit sites in the β 3 subunit, promoting receptor desensitization and the α 1 subunit promoting effects that vary between neurosteroids. Two neurosteroid analogues with diazirine moieties replacing the 3-hydroxyl (KK148 and KK150) bind to all three sites, but do not potentiate GABA A R currents. KK148 is a desensitizing agent, whereas KK150 is devoid of allosteric activity. These compounds provide potential chemical scaffolds for neurosteroid antagonists. Collectively, these data show that differential occupancy and efficacy at three discrete neurosteroid-binding sites determine whether a neurosteroid has potentiating, inhibitory, or competitive antagonist activity on GABA A Rs.
+This study examines how site-specific binding to three identified neurosteroid-binding sites in the α1β3 GABAA receptor (GABAAR) contributes to neurosteroid allosteric modulation. We found that the potentiating neurosteroid, allopregnanolone, but not its inhibitory 3β-epimer epi-allopregnanolone, binds to the canonical β3(+)–α1(-) intersubunit site that mediates receptor activation by neurosteroids. In contrast, both allopregnanolone and epi-allopregnanolone bind to intrasubunit sites in the β3 subunit, promoting receptor desensitization and the α1 subunit promoting effects that vary between neurosteroids. Two neurosteroid analogues with diazirine moieties replacing the 3-hydroxyl (KK148 and KK150) bind to all three sites, but do not potentiate GABAAR currents. KK148 is a desensitizing agent, whereas KK150 is devoid of allosteric activity. These compounds provide potential chemical scaffolds for neurosteroid antagonists. Collectively, these data show that differential occupancy and efficacy at three discrete neurosteroid-binding sites determine whether a neurosteroid has potentiating, inhibitory, or competitive antagonist activity on GABAARs.
 
 ## Introduction
 
@@ -46,23 +46,39 @@ The results show that 3α5αP binds to the canonical β(+)–α(-) intersubunit 
 
 ## Results
 
-## Distinct patterns of NS potentiation and enhancement of muscimol binding
+### Distinct patterns of NS potentiation and enhancement of muscimol binding
 
 The endogenous NS, 3α5αP is known to potentiate GABA-elicited currents (Figure 1A) and enhance [3H]muscimol binding to α1β3 GABAARs (Figure 1E; Chen et al., 2019; Harrison et al., 1987a). We examined a series of NS analogues with different stereochemistries or substituents in the 3- and 17-positions: 3β5αP, KK148, and KK150 (structures shown in Figure 1B–D) for their ability to potentiate GABA-elicited currents and enhance orthosteric agonist ([3H]muscimol) binding. 3β5αP is the 3β-epimer of 3α5αP. KK148 and KK150 are NS analogue photolabeling reagents, which have a 3-diazirinyl moiety instead of the 3-OH, and differ from each other by the stereochemistry of the 17-ether linkage (Jiang et al., 2016). We observed a discrepancy between the ability of these compounds to potentiate GABA-elicited currents and their ability to enhance [3H]muscimol binding in α1β3 GABAARs. None of the NS analogues lacking a 3α-OH potentiated GABA-elicited currents (Figure 1B–D). However, both 3β5αP and KK148 significantly enhanced [3H]muscimol binding (Figure 1E). KK150, in contrast, did not potentiate GABA-elicited currents and minimally enhanced [3H]muscimol binding (Figure 1D–E). Collectively, these data show that, NS analogues with different stereochemistry or substituents at the 3- and 17-positions show distinct patterns in modulation of α1β3 GABAAR currents and orthosteric ligand binding. We hypothesized that these patterns are a consequence of the various NS analogues stabilizing distinct conformational states of the GABAAR, possibly by binding and acting at different sites. Notably, the compounds with a 3-OH (3α5αP, 3β5αP) are 10-fold more potent than those with a 3-diazirine (KK148, KK150) in enhancing [3H]muscimol binding (Figure 1E), suggesting that the 3-OH is an important determinant of binding affinity to the site(s) mediating these effects.
 
-## State-specific actions of NS analogues
+![Figure 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structure of allopregnanolone (3α5αP) with carbon atoms numbered and sample current traces from α1β3 GABAAR activated by 0.3 μM GABA showing potentiation by 10 μM 3α5αP. The traces were recorded from the same cell. (B), (C) and (D) Structures of epi-allopregnanolone (3β5αP) with steroid rings labeled, neurosteroid analogue photolabeling reagents KK148 and KK150, respectively, and sample current traces from α1β3 GABAAR activated by 0.3 μM GABA showing the absence of potentiation by 10 μM neurosteroids. Each pair of traces was recorded from the same cell. (E) Concentration-response relationship for neurosteroid modulation of [3H]muscimol binding to α1β3 GABAAR. 3 nM–30 μM neurosteroids modulate [3H]muscimol (3 nM) binding in a concentration-dependent manner. Data points, EC50, Hill slope and maximal effect value [Emax (% of control): 100% means no effect] are presented as mean ± SEM (n = 6 for 3α5αP and KK148; n = 3 for 3β5αP and KK150).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Enhancement of specific [3H]muscimol (3 nM) binding to α1β3 GABAARs on intact HEK cell surfaces (left bars) and total receptors (cell surface receptors + intracellular receptors, right bars) by 10 μM KK148. The larger amount of control binding in total vs. cell surface demonstrates the distribution of GABAAR between plasma membrane and intracellular membrane. Statistical differences are compared using unpaired t-test (n = 6,± SEM). **p<0.01 vs. control.
+
+### State-specific actions of NS analogues
 
 To determine why 3β5αP and KK148 enhance [3H]muscimol binding but do not potentiate α1β3 GABAAR currents, we first considered the possibility that 3β5αP- and KK148-induced enhancement of [3H]muscimol binding is a selective effect on intracellular GABAARs, since the radioligand binding assay was performed on total membrane homogenates, whereas the electrophysiological assays report only from cell surface channels. NS are known to have effects on intracellular GABAARs and have been shown to accelerate GABAAR trafficking (Abramian et al., 2014; Comenencia-Ortiz et al., 2014; Smith et al., 2007). To test this possibility, we examined [3H]muscimol binding in intact cells (i.e. binding to receptors only in the plasma membrane) (Vauquelin et al., 2015; Bylund et al., 2004; Bylund and Toews, 1993) compared to permeabilized cells (plasma membranes plus intracellular membranes). Notably, [3H]muscimol binding was twofold greater in permeabilized cells than in intact cells, indicating a significant population of intracellular GABAARs. KK148 enhanced [3H]muscimol binding in intact cells as much or more than in permeabilized cells, indicating that this effect is not a result of selective NS actions on intracellular receptors (Figure 1—figure supplement 1).
 
 A second possibility is that 3β5αP and KK148 selectively bind to and stabilize a high-affinity non-conducting state, such as a pre-active (Gielen and Corringer, 2018) or a desensitized conformation of the GABAAR. This is expected to result in inhibition of receptor function; however, the magnitude of the effect may be small under the experimental conditions used to generate the traces in Figure 1. To examine the inhibitory effect of these NS analogues, we activated α1β3 GABAAR with a saturating concentration (1 mM) of GABA and tested the effect of the NS on steady-state currents (Germann et al., 2019a). KK148 and 3β5αP both decreased steady-state currents (Figure 2A and C), whereas KK150 did not (Figure 2B). To further delineate the electrophysiological effects of these compounds, we focused on 3β5αP, since it is an endogenous NS and we had limited availability of KK148. Co-application of 3β5αP with 1 mM GABA preferentially inhibited steady-state rather than peak currents (Figure 2—figure supplement 1). While this result is consistent with stabilization of a desensitized state rather than a pre-active state, it is ambiguous because it is possible that the steroid has a slower onset than GABA, thus minimizing the effect on peak current. Additional evidence that 3β-NAM-NS stabilize a desensitized state includes studies examining their effects on inhibitory post-synaptic currents (Wang et al., 2002) and single channel currents (Akk et al., 2001). The evidence that NAM-NS stabilize a desensitized rather than a pre-active state is more thoroughly explored in the Discussion. In the ensuing text, we refer to the inhibition of steady-state current as desensitization.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig2-v2.jpg)
+
+**Figure 2.:** Representative traces showing the effects of KK148, KK150 and epi-allopregnanolone (3β5αP) on maximal steady-state GABA-elicited currents. α1β3 GABAARs expressed in Xenopus laevis oocytes were activated with 1 mM GABA to maximally activate GABAAR current. (A–C) The effect of KK148 (10 μM), KK150 (10 μM) and 3β5αP (3 μM) on steady-state current. (D) The effect of 3β5αP (3 μM) on steady-state current in α1β3 GABAARs containing the α1V256S mutation, known to eliminate NS-induced desensitization. The results show that 3β5αP and KK148 reduce steady-state currents, consistent with enhanced desensitization, whereas KK150 does not. The effect of 3β5αP on steady-state currents is eliminated by the α1V256S mutation, consistent with 3β5αP enhancing desensitization rather than producing channel block.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative experiment showing serial brief applications of 1 mM GABA to oocytes expressing α1β3 GABAARs, followed by application of GABA + 3 µM epi-allopregnanolone (3β5αP). 3β5αP does not reduce the peak current amplitude. The horizontal bars above the tracings indicate the duration of drug application. The data are summarized in Panel C left. (B) Representative experiment of prolonged co-application of 1 mM GABA + 3 µM 3β5αP showing that 3β5αP increases the decay rate of GABA-elicited currents. The traces are from different cells. The amplitudes have been adjusted to precisely overlay the peak responses. The data are summarized in Panel C right. (C) (left) Five paired samples showing that 3β5αP has no significant effect of on the amplitude of GABA-elicited current. Peak currents were compared using a paired two-tailed t-test (n = 5,± SD). (right) Weighted time constants (τ) of current decay (from a two-exponential fit) between GABA and GABA + 3β5αP. The time constants were compared using a paired two-tailed t-test; p=0.001 (n = 5,± SD).
+
 The inhibitory effect of 3β5αP was not observed in receptors with the α1(V256S) TM2 pore-lining mutation, which was previously shown to remove the inhibitory effects of sulfated steroids (Akk et al., 2001; Wang et al., 2002; Figure 2D). Although both 3α5αP and 3β5αP enhance [3H]muscimol binding, the former predominantly results in receptor activation, whereas the latter results in inhibition. Consistent with this, the α1(V256S)β3 mutation which abolishes NS-induced inhibition (Akk et al., 2001; Wang et al., 2002) eliminated [3H]muscimol binding enhancement by 3β5αP but not 3α5αP (Figure 3). We infer that 3α5αP increases [3H]muscimol binding by stabilizing an active state of the receptor. In contrast, 3β5αP increases [3H]muscimol binding by stabilizing a desensitized state of the receptor; this effect is eliminated in the α1(V256S)β3 receptor. The mechanisms of enhancement of [3H]muscimol binding by allosteric activators and inhibitors are described in detail in our recent publication (Akk et al., 2020). Collectively, these data indicate that 3β5αP and KK148 enhance orthosteric ligand affinity by stabilizing a desensitized state of the GABAAR.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig3-v2.jpg)
 
-**Figure 3.:** 1(V256S)β3 mutation on neurosteroid enhancement of [3H]muscimol binding.(A) Enhancement of specific [3H]muscimol (3 nM) binding to α1β3 GABAAR WT by 10 μM epi-allopregnanolone (3β5αP) is absent in α1(V256S)β3 GABAAR. (B) Enhancement of [3H]muscimol binding by 10 μM allopregnanolone (3α5αP) is unaffected by the α1V256S mutation. These data indicate that 3β5αP enhancement of orthosteric ligand binding requires receptor desensitization, whereas 3α5αP does not. Statistical differences are compared using unpaired t-test (n = 6,± SEM). **p<0.01 vs. WT.
+**Figure 3.:** (A) Enhancement of specific [3H]muscimol (3 nM) binding to α1β3 GABAAR WT by 10 μM epi-allopregnanolone (3β5αP) is absent in α1(V256S)β3 GABAAR. (B) Enhancement of [3H]muscimol binding by 10 μM allopregnanolone (3α5αP) is unaffected by the α1V256S mutation. These data indicate that 3β5αP enhancement of orthosteric ligand binding requires receptor desensitization, whereas 3α5αP does not. Statistical differences are compared using unpaired t-test (n = 6,± SEM). **p<0.01 vs. WT.
 
-## Quantitative comparison of the effects of 3β5αP on [3H]muscimol binding and receptor desensitization
+### Quantitative comparison of the effects of 3β5αP on [3H]muscimol binding and receptor desensitization
 
 While there is qualitative agreement between the relative effects of the various NS analogues on orthosteric ligand binding and receptor desensitization, there is a quantitative discrepancy in the magnitude of the effects. For example, 3β5αP enhances [3H]muscimol binding by two-fold (Figure 1E), whereas it reduces steady-state current by only ~25% (Figure 2C). To address this difference, we considered that the radioligand binding and electrophysiological assays are performed under different experimental conditions. The radioligand-binding studies are performed using low [3H]muscimol concentrations to allow for sufficient dynamic range of ligand binding. In contrast, the desensitization experiments are performed at high orthosteric ligand (GABA) concentration to achieve high peak open probability and steady-state receptor desensitization, thus minimizing the number of channels in the resting state. To address the quantitative differences in results from the two assays, we analyzed the electrophysiological data in the framework of the three-state Resting-Open-Desensitized model (Germann et al., 2019a; Germann et al., 2019b). We assumed that both the open and desensitized states had higher affinity for muscimol than the resting state, and that the affinities were similar and could be treated as equal. We then calculated the predicted occupancy of the high-affinity states (Popen + Pdesensitized) using parameters derived from the functional responses, to compare to the observed changes in binding. The raw current amplitudes of peak and steady-state responses were converted to units of open probability as described previously in detail (Eaton et al., 2016), and the probabilities of being in the open (Popen) or desensitized (Pdesensitized) states were calculated for different experimental conditions (see Materials and methods).
 
@@ -70,9 +86,21 @@ Application of 1 mM GABA elicited a current response that had a peak Popen of 0.
 
 To compare the data from the radioligand binding and electrophysiology experiments, we exposed oocytes containing α1β3 GABAARs to 20 nM muscimol and recorded currents before and after co-application of 3 μM 3β5αP. The percent reduction in steady-state current following 3β5αP exposure was measured and used to estimate the relative probabilities of resting, open and desensitized receptors. The application of 20 nM muscimol elicited a peak response with Popen of 0.012 ± 0.004 (n = 6). The steady-state Popen was 0.011 ± 0.004. In the same cells, subsequent exposure to 3 µM 3β5αP reduced the steady-state Popen to 0.009 ± 0.004 (p=0.0174; paired t-test). The calculated steady-state Pdesensitized was 0.1001 in the presence of muscimol, and 0.2168 in the presence of muscimol + 3β5αP. Thus, there is a predicted two-fold increase in the sum of (Popen + Pdesensitized) when the steroid is combined with muscimol, consistent with the doubling of muscimol binding caused by 3β5αP in the [3H]muscimol binding experiments (Figure 1E). While the measured changes in current are small, they are precise because each experiment served as its own control; a steady-state current was achieved during continuous agonist administration and the response to 3β5αP was then measured. Overall, these data indicate that when Presting is high (low orthosteric ligand concentration), an agent that stabilizes desensitized receptors may produce a small decrease in steady-state current, but a relatively large increase in the occupancy of desensitized state, at the expense of resting receptors. Conversely, with high orthosteric ligand concentrations (low Presting), a desensitizing ligand produces a relatively larger change in steady-state current as open receptors are converted to desensitized receptors with minimal effect on the sum occupancy of high-affinity states.
 
-## Binding site selectivity for NS analogues
+### Binding site selectivity for NS analogues
 
 To determine whether KK148 and 3β5αP stabilize a desensitized conformation of the GABAAR by selectively binding to one or more of the identified NS-binding sites on the GABAAR (Chen et al., 2019), we first determined which of the identified NS sites they bind. We have previously shown that the 3α5αP-analogue photolabeling reagent, KK200 labels the β3(+)–α1(-) intersubunit (β3G308) and α1 intrasubunit (α1N408) sites on α1β3 GABAARs (Figure 4A), and that photolabeling can be prevented by a 10-fold excess of 3α5αP (Chen et al., 2019). As a first step to determine the binding sites for 3β5αP, KK148 or KK150, we examined whether a 10-fold excess of these compounds (30 μM) prevented KK200 (3 μM) photolabeling of either binding site. Photolabeling was performed on membranes from HEK293 cells transfected with epitope-tagged α1His-FLAGβ3 receptors, mimicking the conditions used in the [3H]muscimol binding assays and photolabeled residues were identified and labeling efficiency was determined using middle-down mass spectrometry (Chen et al., 2019). KK148, KK150, 3α5αP and 3β5αP all prevented KK200 photolabeling of α1N408 in the α1 intrasubunit site (Figure 4B), consistent with their binding to this site. In contrast, KK148, KK150 and 3α5αP but not 3β5αP prevented labeling of β3G308 in the intersubunit site (Figure 4C), indicating that 3β5αP does not bind to the intersubunit site. Similarly, 3β5αP did not prevent labeling of the intersubunit site by a similar NS-analogue photolabeling reagent in detergent-solubilized GABAARs (Jayakar et al., 2020).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig4-v2.jpg)
+
+**Figure 4.:** (A) Structures of the neurosteroid photolabeling reagent KK200 and the α1β3 GABAAR-TMDs highlighting the residues G308 in the β3(+)–α1(-) intersubunit site and N408 in the α1 intrasubunit site previously identified by KK200 photolabeling in pink. Shown in purple is Y415 in the α1 intrasubunit site, which is photolabeled by KK148 and KK150. Adjacent β3(+) and α1(-) subunits are shown and the channel pore is behind the subunits. (B) Photolabeling efficiency of α1 subunit TM4 (α1 intrasubunit site) in α1β3 GABAAR by 3 μM KK200 in the absence or presence of 30 μM allopregnanolone (3α5αP), KK148, KK150, and epi-allopregnanolone (3β5αP). Statistical differences are analyzed using one-way ANOVA with Bonferroni's multiple comparisons test (n = 3,± SEM). **p<0.01 vs. control. (C) Same as (B) for β3 subunit TM3 [β3(+)–α1(-) intersubunit site, n = 3,± SEM]. (D) HCD fragmentation spectrum of the α1 subunit TM4 tryptic peptide photolabeled by 30 μM KK148. Red and black indicate fragment ions that do or do not contain KK148, respectively. The schematic highlight in red identifies the TMD being analyzed and the asterisk denotes the approximate location of KK148. (E) Same as (D) photolabeled by 30 μM KK150.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Extracted ion chromatogram (XIC) of the β3 subunit TM4 tryptic peptide in the α1β3 GABAAR. The upper and lower XIC show representative unlabeled β3 subunit TM4 peptide and the peptide labeled with 30 μM KK148, respectively. (B) Same as (A) for KK150.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** HCD fragmentation spectrum of the α1 subunit TM4 unlabeled tryptic peptide in the α1β3 GABAAR.
 
 The KK148- and KK150-photolabeled (30 μM) samples were also analyzed to directly identify the sites of adduction. In both the KK148- and KK150-labeled samples, photolabeled peptides were identified from the TM4 helices of both the α1 and β3 subunits. The labeled peptides had longer chromatographic elution times than the corresponding unlabeled peptides and corresponded with high mass accuracy (<20 ppm) to the predicted mass of the unlabeled peptides plus the add weight minus N2 of KK148 or KK150 (Figure 4—figure supplement 1). Product ion (MS2) spectra of the KK148- and KK150-labeled peptides from the α1 subunit identified the labeled residue as Y415 for both KK148 and KK150 with photolabeling efficiencies of 0.77% and 0.62%, respectively (Figure 4D–E, Figure 4—figure supplement 2); Y415 is the same residue labeled by KK123 at the α1 intrasubunit site (Chen et al., 2019). The KK148 and KK150 labeled peptides in TM4 of the β3 subunit and corresponding unlabeled peptide were identified by fragmentation spectra as β3TM4 I426-N445. These data support labeling of the β3 intrasubunit site by KK148 and KK150. Fragmentation spectra of the peptide-sterol adducts were not adequate to determine the precise labeled residue because of low photolabeling efficiency (0.13% for KK148; 0.19% for KK150, Figure 4—figure supplement 1). No photolabeled peptides were identified in the β3(+)–α1(-) intersubunit site. This is likely because KK148 and KK150, similar to KK123, utilize an aliphatic diazirine that preferentially labels nucleophilic residues (Sugasawa et al., 2019; Budelier et al., 2017; Das, 2011); such residues are not present in the intersubunit site.
 
@@ -80,13 +108,189 @@ We have also shown that KK123 labeling of the α1 intrasubunit (α1Y415) and β3
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig5-v2.jpg)
 
-**Figure 5.:** 1 and β3 intrasubunit sites.(A) Structures of the neurosteroid photolabeling reagent KK123 and the α1β3 GABAAR-TMDs highlighting the residues Y442 in the β3 intrasubunit site and Y415 in the α1 intrasubunit site previously identified by KK123 photolabeling in purple. Adjacent β3(+) and α1(-) subunits are shown and the channel pore is behind the subunits. (B) Photolabeling efficiency of β3 subunit TM4 (β3 intrasubunit site) in α1β3 GABAAR by 3 μM KK123 in the absence or presence of 30 μM epi-allopregnanolone (3β5αP). Statistical differences are compared using unpaired t-test (n = 3,± SEM). **p<0.01 vs. control. (C) Same as (B) for α1 subunit TM4 (α1 intrasubunit site, n = 3,± SEM).
+**Figure 5.:** (A) Structures of the neurosteroid photolabeling reagent KK123 and the α1β3 GABAAR-TMDs highlighting the residues Y442 in the β3 intrasubunit site and Y415 in the α1 intrasubunit site previously identified by KK123 photolabeling in purple. Adjacent β3(+) and α1(-) subunits are shown and the channel pore is behind the subunits. (B) Photolabeling efficiency of β3 subunit TM4 (β3 intrasubunit site) in α1β3 GABAAR by 3 μM KK123 in the absence or presence of 30 μM epi-allopregnanolone (3β5αP). Statistical differences are compared using unpaired t-test (n = 3,± SEM). **p<0.01 vs. control. (C) Same as (B) for α1 subunit TM4 (α1 intrasubunit site, n = 3,± SEM).
 
-## Orthosteric ligand binding enhancement by NS analogues is mediated by distinct sites
+### Orthosteric ligand binding enhancement by NS analogues is mediated by distinct sites
 
 To determine which of the previously identified binding sites contributes to NS enhancement of [3H]muscimol binding, we performed site-directed mutagenesis of the NS-binding sites previously determined by photolabeling (Figure 6A; Chen et al., 2019). Specifically, α1(Q242L)β3 targets the β3(+)–α1(-) intersubunit site, α1(N408A/Y411F)β3 and α1(V227W)β3 the α1 intrasubunit site, and α1β3(Y284F) the β3 intrasubunit site. None of these mutations produced a significant change in [3H]muscimol Kd (Figure 7B and Figure 7—source data 1). Accordingly, concentration-dependent NS effects were assayed at a fixed concentration of [3H]muscimol (3 nM; ~EC5). It should be noted that earlier studies showed two-component binding curves for [3H]muscimol in brain membranes, with NS causing an increase in the Bmax of the high-affinity component (Harrison and Simmonds, 1984). In contrast, our results with expressed α1β3 GABAARs show a single-component [3H]muscimol binding curve with NS producing an increase in muscimol affinity. Our results are similar to results reported with expressed α1β3γ2 GABAARs, where allosteric modulators increased the affinity of a single-component [3H]muscimol binding curve (Dostalova et al., 2014). Whether the complex [3H]muscimol binding curves observed in brain is the result of heterogeneity of receptor subtypes or multiple states of the GABAAR is unresolved.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig6-v2.jpg)
+
+**Figure 6.:** (A) Structure of the α1β3 GABAAR-TMD highlighting the residues where mutations were made in putative binding sites for neurosteroids (Q242-green for β3–α1 intersubunit site; V227-yellow, N408-pink and Y411-red for α1 intrasubunit site; Y284-cyan for β3 intrasubunit site) and M286-blue for etomidate. Adjacent β3(+) and α1(-) subunits are shown and the channel pore is behind the subunits. (B) Concentration-response relationship for the effect of 3 nM–30 μM allopregnanolone (3α5αP) on [3H]muscimol (3 nM) binding to α1β3 GABAAR WT and indicated mutants. Data points represent mean ± SEM (n = 6). (C), (D) and (E) Same as (B) for 3 nM–30 μM epi-allopregnanolone (3β5αP) (n = 3), KK148 (n = 6) and 30 nM–200 μM etomidate (n = 6), respectively. The data for WT in panels 6B and 6D is a replot of the same data shown in Figure 1E.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Time course of [3H]muscimol binding enhancement by 10 µM allopregnanolone (3α5αP) and epi-allopregnanolone (3β5αP). Neurosteroids were added to α1β3 GABAAR membranes that had been fully equilibrated with 3 nM [3H]muscimol and binding was measured as a function of time (n = 4,± SEM). (B) Time constants for neurosteroid-induced enhancement of [3H]muscimol binding. The statistical difference is compared using unpaired t-test (n = 4,± SEM). **p<0.01 vs. 3α5αP.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig7-v2.jpg)
+
+**Figure 7.:** (A) [3H]muscimol binding isotherms (0.3 nM–1 μM) for α1β3 GABAAR WT and α1(N408A/Y411F)β3 GABAAR. Data points are presented as mean ± SEM (n = 3). (B) Normalized curves of [3H]muscimol binding isotherms (0.3 nM–1 μM) for α1β3 GABAAR WT and representative mutated receptors for each neurosteroid binding site [i.e. α1(Q242L)β3 for the β3–α1 intersubunit site; α1(N408A/Y411F)β3 for the α1 intrasubunit site; α1β3(Y284F) for the β3 intrasubunit site]. Each data point represents mean ± SEM (n = 6 for WT; n = 3 for mutated receptors). (C) Effect of 100 μM etomidate, 30 μM allopregnanolone (3α5αP) and 30 μM KK148 on [3H]muscimol binding isotherms in the α1β3 GABAAR WT. (D) Same as (C) in the α1(N408A/Y411F)β3 mutant. Each data point represents mean ± SEM (n = 3).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Representative total, nonspecific and specific binding curves to experimentally determine a [3H]muscimol binding isotherm (0.3 nM–1 μM) for WT α1β3 GABAARs. Data points are from a single experiment with triplicate determinations for total and nonspecific binding (± SEM). Inset shows curves using identical data set plotted on a linear scale for abscissa.
+
 Mutations in the β3(+)–α1(-) intersubunit and α1 intrasubunit sites decreased 3α5αP enhancement of [3H]muscimol binding by ~80%, while mutation of the β3 intrasubunit site led to a small decrease (Figure 6B, Table 1). The residual enhancement of [3H]muscimol binding observed in receptors with mutations in the intersubunit or α1 intrasubunit site occurs at 10fold higher concentrations of 3α5αP than wild-type (WT) and receptors with mutations in the β3 intrasubunit site (Table 1), suggesting that 3α5αP binds to the β3 intrasubunit site with lower affinity. In contrast, mutations in the α1 and β3 intrasubunit sites, but not the intersubunit site decreased the enhancement of [3H]muscimol binding by 3β5αP and KK148 (Figure 6C–D, Table 1). To confirm that the effect of these mutations on NS effect are steroid-specific, we also tested their effect on etomidate, which enhances [3H]muscimol binding in α1β3 GABAARs and acts through a binding site distinct from NS (Li et al., 2006; Jayakar et al., 2019). The mutations targeting NS-binding sites resulted in modest decreases in [3H]muscimol binding enhancement by etomidate; however, the α1β3(M286W) mutation which abolishes etomidate potentiation and activation of GABAARs (Stewart et al., 2008; Ziemba et al., 2018), also abolished [3H]muscimol binding enhancement (Figure 6E).
+
+**Table 1.**
+ Effects of mutations on neurosteroid modulation of [3H]muscimol binding.EC50, Hill slope and maximal effect values [Emax (% of control): 100% means no effect] for the concentration-response curves in Figure 6B–E. Statistical differences are analyzed using one-way ANOVA with Bonferroni's multiple comparisons test (*p<0.05 vs. WT; **p<0.01 vs. WT). Data are presented as mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>3α5αP</th>
+      <th>EC50 (μM)</th>
+      <th>Hill slope</th>
+      <th>Emax (% of control)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WTα1β3</td>
+      <td>0.24 ± 0.04</td>
+      <td>1.10 ± 0.14</td>
+      <td>374.1 ± 11.1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(Q242L)β3</td>
+      <td>**2.66 ± 0.51</td>
+      <td>1.16 ± 0.37</td>
+      <td>**159.8 ± 10.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(N408A/Y411F)β3</td>
+      <td>**2.30 ± 0.48</td>
+      <td>0.87 ± 0.44</td>
+      <td>**146.0 ± 9.3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1β3(Y284F)</td>
+      <td>0.19 ± 0.04</td>
+      <td>0.87 ± 0.16</td>
+      <td>342.3 ± 13.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(Q242L/N408A/Y411F)β3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>**105.9 ± 7.3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">3β5αP</td>
+    </tr>
+    <tr>
+      <td>WTα1β3</td>
+      <td>0.25 ± 0.08</td>
+      <td>0.84 ± 0.23</td>
+      <td>195.1 ± 6.7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>α1(Q242L)β3</td>
+      <td>0.27 ± 0.09</td>
+      <td>0.77 ± 0.21</td>
+      <td>204.3 ± 4.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>α1(N408A/Y411F)β3</td>
+      <td>0.61 ± 0.26</td>
+      <td>2.25 ± 0.92</td>
+      <td>**124.3 ± 2.6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>α1β3(Y284F)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>**148.6 ± 4.9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="5">KK148</td>
+    </tr>
+    <tr>
+      <td>WTα1β3</td>
+      <td>2.40 ± 0.36</td>
+      <td>1.36 ± 0.16</td>
+      <td>431.0 ± 19.5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(Q242L)β3</td>
+      <td>2.20 ± 0.31</td>
+      <td>1.24 ± 0.12</td>
+      <td>434.5 ± 5.6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(N408A/Y411F)β3</td>
+      <td>1.63 ± 0.53</td>
+      <td>0.73 ± 0.23</td>
+      <td>**161.7 ± 3.5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(V227W)β3</td>
+      <td>1.73 ± 0.68</td>
+      <td>0.76 ± 0.31</td>
+      <td>**209.2 ± 7.4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1β3(Y284F)</td>
+      <td>1.79 ± 0.44</td>
+      <td>1.35 ± 0.13</td>
+      <td>**357.2 ± 8.1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Etomidate</td>
+    </tr>
+    <tr>
+      <td>WTα1β3</td>
+      <td>7.24 ± 1.18</td>
+      <td>1.07 ± 0.17</td>
+      <td>331.1 ± 9.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(Q242L)β3</td>
+      <td>7.50 ± 0.95</td>
+      <td>1.35 ± 0.20</td>
+      <td>**277.8 ± 10.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1(N408A/Y411F)β3</td>
+      <td>9.14 ± 2.20</td>
+      <td>1.07 ± 0.26</td>
+      <td>**268.2 ± 5.9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1β3(Y284F)</td>
+      <td>7.71 ± 1.10</td>
+      <td>0.90 ± 0.11</td>
+      <td>303.5 ± 5.8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>α1β3(M286W)</td>
+      <td>*22.5 ± 6.17</td>
+      <td>0.50 ± 0.16</td>
+      <td>**128.6 ± 7.8</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 
 We did not test the effects of mutations on KK150 action because it minimally enhances [3H]muscimol binding. However, KK150 binds to all three of the identified NS-binding sites, and may thus be a weak partial agonist or antagonist at the sites mediating NS enhancement of [3H]muscimol binding. Consistent with this prediction, KK150 inhibited enhancement of [3H]muscimol binding by 3α5αP and KK148 (Figure 8).
 
@@ -98,7 +302,7 @@ Collectively, these results show that multiple NS-binding sites contribute to en
 
 It is important to note that the [3H]muscimol binding curves in Figure 6 are normalized to control. The raw data show that membranes containing WT receptors have 10–20-fold higher [3H]muscimol binding (Bmax) than membranes containing α1(N408A/Y411F)β3 receptors (Figure 7A), whereas the Bmax of membranes containing α1(Q242L)β3, α1β3(Y284F) or α1(V227W)β3 receptors was the same as for WT α1β3 GABAARs (Figure 7—source data 1). The lower total [3H]muscimol binding observed in α1(N408A/Y411F)β3 membranes is likely a consequence of decreased receptor expression. To assure that differences in NS effect between WT and α1(N408A/Y411F)β3 are not due to different muscimol affinities, we examined [3H]muscimol binding at a full range of concentrations. The α1(N408A/Y411F)β3 mutations did not have a significant effect on [3H]muscimol affinity (Figure 7B), but eliminated the modulatory effects of NS (3α5αP and KK148) on [3H]muscimol affinity (Figure 7C–D and Figure 7—source data 2). To assure that the effect of α1(N408A/Y411F)β3 was specific to NS, we also examined the effect of etomidate (a non-steroidal GABAAR PAM) on muscimol affinity. Etomidate enhanced [3H]muscimol affinity in both the WT and α1(N408A/Y411F)β3 receptors, indicating that the effect of these mutations are specific to NS action (Figure 7C–D).
 
-## 3β5αP increases desensitization through binding to α1 and β3 intrasubunit sites
+### 3β5αP increases desensitization through binding to α1 and β3 intrasubunit sites
 
 To further explore the relationship between desensitization and enhancement of [3H]muscimol binding, we examined the consequences of mutations to these sites on physiological measurements of desensitization induced by NS. Again, these experiments were performed with 3β5αP because it is the endogenous 3β-OH NS and because of limited quantities of KK148. Desensitization was quantified by defining the baseline steady-state current at 1 mM GABA as 100% and measuring percent reduction of the steady-state current elicited by a NS (Figure 9A inset). While GABA was at a saturating concentration for all receptors, the peak Popen it elicited was <<1.0 for several of the mutated receptors. To normalize Popen, mutated receptors with low peak Popen were activated by co-application of 1 mM GABA with 40 μM pentobarbital (PB) (Steinbach and Akk, 2001) prior to application of 3α5αP. This was done because the magnitude of negative allosteric modulation varies as a function of Popen (Germann et al., 2019a). To ensure that PB did not influence NS negative allosteric modulation, control experiments were performed in WT α1β3 GABAARs and showed no significant difference in the desensitization elicited by 3β5αP between receptors activated by GABA vs. GABA plus PB. The maximum Popen for the mutant receptors varied between 0.55 and 0.95; some of the NS effects on macroscopic currents may be influenced by these differences.
 
@@ -108,7 +312,7 @@ To further explore the relationship between desensitization and enhancement of [
 
 3β5αP reduced the steady-state current (i.e. enhanced desensitization) by 23.0 ± 2.8% (% of desensitization: mean ± SEM, n = 5, Figure 9A). Mutations in the α1 and β3 intrasubunit sites [i.e. α1(N408A/Y411F)β3 and α1β3(Y284F), respectively] prevented 3β5αP-enhanced desensitization by ~67% (Figure 9B), whereas mutation in the β(+)–α(-) intersubunit site [α1(Q242L)β3] was without effect (Figure 9B). Receptors with mutations in both the α1 and β3 intrasubunit sites [α1(N408A/Y411F)β3(Y284F)] showed less NS-enhancement of desensitization than receptors with mutations in either of the intrasubunit sites alone, indicating that both intrasubunit sites contribute to the desensitizing effect (Figure 9B). Although the desensitizing effect of 3β5αP is completely eliminated by the V2’S mutation α1(V256S)β3, it is not completely eliminated by combined mutations of all three binding sites [α1(Q242L/N408A/Y411F)β3(Y284F)] (Figure 9B). This suggests either that the effects of the mutations are incomplete or there are additional unidentified NS-binding sites contributing to desensitization. Since mutations of the α1 and β3 intrasubunit sites also disrupt 3β5αP-enhancement of [3H]muscimol binding (Figure 6C), we conclude that 3β5αP binding to these intrasubunit sites stabilizes the desensitized state of the GABAAR and thus enhances [3H]muscimol binding. Furthermore, KK148 increased GABAAR desensitization (% of desensitization = 27.2 ± 6.0: mean ± SEM, n = 3, Figure 2A) and the α1(V256S)β3 mutation abolished the effect (% of desensitization = 0, n = 1). These observations support the idea that binding of certain NS analogues to α1 and β3 intrasubunit sites, increases GABAAR desensitization. In contrast, KK150 showed a very small effect on desensitization (% of desensitization = 2.1 ± 0.7: mean ± SEM, n = 5, Figure 2B), consistent with the small increase in [3H]muscimol binding by KK150 (Figure 1E).
 
-## The effects of 3α5αP binding to intrasubunit sites on desensitization
+### The effects of 3α5αP binding to intrasubunit sites on desensitization
 
 3α5αP binds to all three of the NS-binding sites on α1β3 GABAAR, and mutations in all three sites reduce 3α5αP enhancement of [3H]muscimol binding (Figure 6B). This suggests the possibility that activation by 3α5αP (mediated primarily by the β3(+)–α1(-) intersubunit site) masks a desensitizing effect mediated through the β3 and/or α1 intrasubunit binding sites. To determine whether intrasubunit binding sites mediate increased desensitization by 3α5αP, we examined the effect of 3α5αP on steady-state currents in receptors with mutations in the α1 or β3 intrasubunit site. Mutations in the intrasubunit sites were prepared with a background α1(Q242L)β3 mutation to remove 3α5αP activation (Chen et al., 2019; Sugasawa et al., 2019; Akk et al., 2008; Bracamontes and Steinbach, 2009) and focus on the effects of 3α5αP on the equilibrium between the open and desensitized states.
 
@@ -116,7 +320,7 @@ To further explore the relationship between desensitization and enhancement of [
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig10-v2.jpg)
 
-**Figure 10.:** AR currents via binding to the β3 intrasubunit site.(A) Sample current trace showing the effect of 3 μM allopregnanolone (3α5αP) on α1(Q242L)β3 GABAAR activated by 1 mM GABA co-applied with 40 μM pentobarbital (PB). (B), (C) Same as (A) for α1(Q242L/N408A/Y411F)β3 GABAAR and α1(Q242L)β3(Y284F) GABAAR, respectively. (D) Percent desensitization of the steady-state currents elicited by 1 mM GABA with 40 μM PB in α1β3 GABAAR with specified mutations. Statistical differences are analyzed using one-way ANOVA with Bonferroni's multiple comparisons test [n = 4 for α1(V256S)β3; n = 5 for others,± SEM]. *p<0.05; **p<0.01 vs. α1(Q242L)β3, respectively.
+**Figure 10.:** (A) Sample current trace showing the effect of 3 μM allopregnanolone (3α5αP) on α1(Q242L)β3 GABAAR activated by 1 mM GABA co-applied with 40 μM pentobarbital (PB). (B), (C) Same as (A) for α1(Q242L/N408A/Y411F)β3 GABAAR and α1(Q242L)β3(Y284F) GABAAR, respectively. (D) Percent desensitization of the steady-state currents elicited by 1 mM GABA with 40 μM PB in α1β3 GABAAR with specified mutations. Statistical differences are analyzed using one-way ANOVA with Bonferroni's multiple comparisons test [n = 4 for α1(V256S)β3; n = 5 for others,± SEM]. *p<0.05; **p<0.01 vs. α1(Q242L)β3, respectively.
 
 ## Discussion
 
@@ -130,7 +334,7 @@ The selective binding of 3β5αP to a subset of identified NS-binding sites prov
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig11-v2.jpg)
 
-**Figure 11.:** 1β3 GABAAR TMD and the cryo-EM structure of an α1β3γ2 GABAAR (PDB ID: 6I53).The two structures were read into UCSF Chimera and mutually aligned using MatchMaker. The α1β3 model is shown in tan, while the α1β3γ2 structure is in cyan. (A) Representative poses for allopregnanolone (3α5αP) and epi-allopregnanolone (3β5αP) docked within the β3(+)–α1(-) intersubunit site, the poses for the α1β3 model are in pink, while those for the α1β3γ2 structure are in light green. The α1Q242 side chain is shown in yellow. (B) Same as for (A) for the α1 intrasubunit site; also shown are the sidechains V227, Y415, and N408. (C) Same as (A) for the β3 intrasubunit site; also shown are the sidechains Y284 and Y442. The Vina docking scores for 3α5αP and 3β5αP at each site in the α1β3 model and the α1β3γ2 structure are shown in Figure 11—source data 1.  Figure 11—source data 1.1β3 model and α1β3γ2 GABAAR structure.
+**Figure 11.:** The two structures were read into UCSF Chimera and mutually aligned using MatchMaker. The α1β3 model is shown in tan, while the α1β3γ2 structure is in cyan. (A) Representative poses for allopregnanolone (3α5αP) and epi-allopregnanolone (3β5αP) docked within the β3(+)–α1(-) intersubunit site, the poses for the α1β3 model are in pink, while those for the α1β3γ2 structure are in light green. The α1Q242 side chain is shown in yellow. (B) Same as for (A) for the α1 intrasubunit site; also shown are the sidechains V227, Y415, and N408. (C) Same as (A) for the β3 intrasubunit site; also shown are the sidechains Y284 and Y442. The Vina docking scores for 3α5αP and 3β5αP at each site in the α1β3 model and the α1β3γ2 structure are shown in Figure 11—source data 1.
 
 The functional analysis of mutations in each of the three NS-binding sites demonstrates that the activating and desensitizing effects of NS result from occupancy of distinct sites. In particular, binding of certain NS (3β5αP, KK148) to α1 and β3 intrasubunit sites modulates the open-desensitized equilibrium. Interestingly, lipid binding to intrasubunit pockets in bacterial pLGICs analogous to the α1 and β3 intrasubunit sites in GABAAR, also modulates receptor desensitization; docosahexaenoic acid binding to an intrasubunit site in GLIC (Basak et al., 2017) and phosphatidylglycerol in ELIC (Tong et al., 2019) increase and decrease agonist-induced desensitization, respectively. The combined results of mutational analyses and binding data demonstrate that the effects of various NS analogues are also a consequence of their efficacy at each of the sites they occupy. For example, KK148 and KK150 occupy the intersubunit site (Figure 4C), but do not activate GABAAR currents (Figure 1C–D), and KK150 occupies both intrasubunit sites (Figure 4B and Figure 4—figure supplement 1) but does not desensitize the receptor (Figure 2B).
 
@@ -138,7 +342,7 @@ To explain the effects of the 3-substituted NS analogues, we propose a model in 
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/55331/elife-55331-fig12-v2.jpg)
 
-**Figure 12.:** AR in different states.(A) Model showing three fundamental conformational states that depict the channel function in the GABAAR: a resting state; an open state; and a desensitized state. Agonist (GABA: ) binding shifts the equilibrium towards high-affinity states (open and desensitized). Allopregnanolone (3α5αP: ) allosterically stabilizes the high-affinity states (an open state through the β3–α1 intersubunit and the α1 intrasubunit sites; a desensitized state through the β3 intrasubunit site). The width of red arrows indicates relative affinities of 3α5αP for the open or desensitized state of the receptor. (B) Same as (A) for epi-allopregnanolone (3β5αP: ). 3β5αP stabilizes a desensitized state through the β3 and α1 intrasubunit sites. (C) Same as (A) for KK148 ( ). KK148 allosterically stabilizes a desensitized state through the β3 and α1 intrasubunit sites, and equally stabilizes all three states of the receptor through the β3–α1 intersubunit site. The width of orange arrows indicates relative affinities of KK148 for each state of the receptor. (D) Same as (A) for KK150 ( ). KK150 equally stabilizes all three states of the receptor through the β3 and α1 intrasubunit sites, and the β3–α1 intersubunit site.
+**Figure 12.:** (A) Model showing three fundamental conformational states that depict the channel function in the GABAAR: a resting state; an open state; and a desensitized state. Agonist (GABA: ) binding shifts the equilibrium towards high-affinity states (open and desensitized). Allopregnanolone (3α5αP: ) allosterically stabilizes the high-affinity states (an open state through the β3–α1 intersubunit and the α1 intrasubunit sites; a desensitized state through the β3 intrasubunit site). The width of red arrows indicates relative affinities of 3α5αP for the open or desensitized state of the receptor. (B) Same as (A) for epi-allopregnanolone (3β5αP: ). 3β5αP stabilizes a desensitized state through the β3 and α1 intrasubunit sites. (C) Same as (A) for KK148 ( ). KK148 allosterically stabilizes a desensitized state through the β3 and α1 intrasubunit sites, and equally stabilizes all three states of the receptor through the β3–α1 intersubunit site. The width of orange arrows indicates relative affinities of KK148 for each state of the receptor. (D) Same as (A) for KK150 ( ). KK150 equally stabilizes all three states of the receptor through the β3 and α1 intrasubunit sites, and the β3–α1 intersubunit site.
 
 The site-specific model of NS action (Figure 12) has significant implications for the synaptic mechanisms of PAM-NS action. At a synapse, GABAARs are transiently exposed to high (mM) concentrations of GABA leading to a channel Popen approaching one (Farrant and Nusser, 2005; Feng and Forman, 2018). GABA is quickly cleared from the synapse leading to rapid deactivation with minimal desensitization (Jones and Westbrook, 1995; Overstreet et al., 2000). In the presence of a PAM-NS, deactivation is slowed, resulting in a prolongation of the IPSC and increased inhibitory current (Harrison et al., 1987a; Zhu and Vicini, 1997; Harrison et al., 1987b; Chakrabarti et al., 2016). This effect is largely attributable to stabilization of the open state, presumably by binding to the intersubunit and α1 intrasubunit binding sites. A second effect has been observed in which the PAM-NS 3α5αP (Haage and Johansson, 1999) and 3α5α-THDOC (Zhu and Vicini, 1997) prolong the slow component of GABAAR desensitization and slow recovery from desensitization. This results in increased late channel openings (Zhu and Vicini, 1997; Jones and Westbrook, 1995) and IPSC prolongation (Harrison et al., 1987b; Chakrabarti et al., 2016). When the frequency of synaptic firing is rapid, the desensitizing effect of NS may also contribute to frequency-dependent reduction in IPSC amplitude (Zhu and Vicini, 1997; Jones and Westbrook, 1996). The desensitizing effect of 3α5αP is predominantly mediated by binding at the β3 intrasubunit site. The balance between stabilization of the open and desensitized channels should be determined by the relative occupancies for the intersubunit site of the active receptor and the β3 intrasubunit site of the desensitized receptor. Computational docking of 3α5αP to these sites indicates modest differences in affinity between the sites with a rank order affinity of: intersubunit > α1 intrasubunit > β3 intrasubunit sites (Figure 11—source data 1; Chen et al., 2019). Mutational analysis of the effects of NS on enhancement of [3H]muscimol binding also indicates that 3α5αP has a lower affinity to the β3 intrasubunit site (Figure 6B, Table 1). Thus ,binding to the β3 intrasubunit site may serve as a negative feedback mechanism preventing excessive PAM-NS effects on synaptic currents.
 
@@ -148,50 +352,70 @@ In summary, this study describes a unique NS pharmacology in which different NS 
 
 ## Materials and methods
 
-## Construct design
+### Construct design
 
 The human α1 and β3 GABAAR subunits were subcloned into pcDNA3 for molecular manipulations and cRNA synthesis. Using QuikChange Site-Directed Mutagenesis Kit (Agilent Technologies, Santa Clara, CA), a FLAG tag was first added to the α1 subunit then an 8xHis tag was added to generate the following His-FLAG tag tandem (QPSLHHHHHHHHDYKDDDDKDEL), inserted between the fourth and fifth residues of the mature peptide. The α1 and β3 subunits were then transferred into the pcDNA4/TO and pcDNA5/TO vectors (Thermo Fisher Scientific), respectively, for tetracycline inducible expression. Transient expression was done using the GABAAR subunits rat α1FLAG (Ueno et al., 1996) and human β3 obtained from Geoffrey White (Neurogen, Branford, CT), each were subcloned into pcDNA3 for molecular manipulations and cRNA synthesis. Point mutations were generated using the QuikChange Site-Directed Mutagenesis Kit (Agilent) and the coding region was fully sequenced prior to use. The cDNAs were linearized with XbaI (NEB Labs, Ipswich, MA), and the cRNAs were generated using T7 mMessage mMachine (Ambion, Austin, TX).
 
-## Cell lines
+### Cell lines
 
 Cell culture was performed as described in previous reports (Chen et al., 2019). The tetracycline inducible cell line T-REx-HEK293 (Thermo Fisher Scientific) was cultured under the following conditions: cells were maintained in DMEM/F-12 50/50 medium containing 10% fetal bovine serum (tetracycline-free, Takara, Mountain View, CA), penicillin (100 units/ml), streptomycin (100 g/ml), and blasticidin (2 μg/ml) at 37°C in a humidified atmosphere containing 5% CO2. Cells were passaged twice each week, maintaining subconfluent cultures. Stably transfected cells were cultured as above with the addition of hygromycin (50 μg/ml) and zeocin (20 μg/ml). A stable cell line was generated by transfecting T-REx-HEK293 cells with human α1-8xHis-FLAG pcDNA4/TO and human β3 pcDNA5/TO, in a 150 mm culture dish, using the Effectene transfection reagent (Qiagen, Germantown, MD). Two days after transfection, selection of stably transfected cells was performed with hygromycin and zeocin until distinct colonies appeared. Medium was exchanged several times each week to maintain antibiotic selection. Individual clones were selected from the dish and transferred to 24-well plates for expansion of each clone selected. When the cells grew sufficiently, about 50% confluence, they were split into two other plates, one for a surface ELISA against the FLAG epitope and a second for protein assay, to normalize surface expression to cell number. The best eight clones were selected for expansion into 150 mm dishes, followed by [3H]muscimol binding to examine the receptor density. Once the best expressing clone was determined, the highest expressing cells of that clone were selected through fluorescence activated cell sorting. Transient transfections were done in HEK293S GnTI- cells obtained from ATCC (CRL-3022) using Effectene (Qiagen). The identity of the cell lines has been authenticated using short tandem repeat analysis. Mycoplasma test performed on the cells used for these experiments was negative.
 
-## Membrane protein preparation
+### Membrane protein preparation
 
 Stably transfected cells were plated into dishes. After reaching 50% confluence, GABAA receptors were expressed by inducing cells with 1 μg/ml of doxycycline with the addition of 5 mM sodium butyrate. Cells were harvested 48 to 72 hr after induction. HEK cells, after induction, were grown to 100% confluence, harvested and washed with 10 mM potassium phosphate, 100 mM potassium chloride (pH 7.5) plus protease inhibitors (Sigma-Aldrich, St. Louis, MO) two times. The cells were collected by centrifugation at 1,000 g at 4°C for 5 min. The cells were homogenized with a glass mortar and a Teflon pestle for ten strokes on ice. The pellet containing the membrane proteins was collected after centrifugation at 20,000 g at 4°C for 45 min and resuspended in a buffer containing 10 mM potassium phosphate, 100 mM potassium chloride (pH 7.5). The protein concentration was determined with micro-BCA protein assay and membranes were stored at −80°C.
 
-## Photolabeling and purification of α1β3 GABAAR
+### Photolabeling and purification of α1β3 GABAAR
 
 The syntheses of neurosteroid photolabeling reagents (KK148, KK150, KK200, KK123) are detailed in previous reports (Jiang et al., 2016; Cheng et al., 2018). For all the photolabeling experiments, 10–20 mg of HEK cell membrane proteins (about 300 pmol [3H]muscimol binding) were thawed and resuspended in buffer containing 10 mM potassium phosphate, 100 mM potassium chloride (pH 7.5) and 1 mM GABA at a final concentration of 1.25 mg/ml. For the photolabeling competition experiments, 3 μM KK200 or KK123 in the presence of 30 μM competitor (3α5αP, KK148, KK150, and 3β5αP) or the same volume of ethanol was added to the membrane proteins and incubated on ice for 1 hr. The samples were then irradiated in a quartz cuvette for 5 min, by using a photoreactor emitting light at >320 nm. The membrane proteins were then collected by centrifugation at 20,000 g at 4°C for 45 min. The photolabeled membrane proteins were resuspended in lysis buffer containing 1% n-dodecyl-β-D-maltoside (DDM), 0.25% cholesteryl hemisuccinate (CHS), 50 mM Tris (pH 7.5), 150 mM NaCl, 2 mM CaCl2, 5 mM KCl, 5 mM MgCl2, 1 mM EDTA, 10% glycerol at a final concentration of 1 mg/ml. The membrane protein suspension was homogenized using a glass mortar and a Teflon pestle and incubated at 4°C overnight. The protein lysate was centrifuged at 20,000 g at 4°C for 45 min and supernatant was incubated with 0.5 ml anti-FLAG agarose (Sigma) at 4°C for 2 hr. The anti-FLAG agarose was then transferred to an empty column, followed by washing with 20 ml washing buffer (50 mM triethylammonium bicarbonate and 0.05% DDM). The GABAARs were eluted with aliquots of 200 μg/ml FLAG tag peptide and 100 μg/ml 3X FLAG (ApexBio) in the washing buffer. The pooled eluates (9 ml) containing GABAARs were concentrated to 100 μl using 100 kDa cut-off centrifugal filters.
 
-## Tryptic middle-down MS analysis
+### Tryptic middle-down MS analysis
 
 The purified α1β3 GABAAR (100 μl) was reduced with 5 mM tris(2-carboxyethyl)phosphine for 1 hr, alkylated with 5 mM N-ethylmaleimide (NEM) for 1 hr, and quenched with 5 mM dithiothreitol (DTT) for 15 min. These three steps were done at RT. Samples were then digested with 8 μg of trypsin for 7 days at 4°C to obtain maximal recovery of TMD peptides. The digestions were terminated by adding formic acid in a final concentration of 1%, followed directly by LC-MS analysis on an Orbitrap Elite mass spectrometer. 20 μl samples were injected into a home-packed PLRP-S (Agilent, Santa Clara, CA) column (10 cm ×75 μm, 300 Å), separated with a 145 min gradient from 10% to 90% acetonitrile, and introduced to the mass spectrometer at 800 nl/min with a nanospray source. MS acquisition was set as a MS1 Orbitrap scan (resolution of 60,000) followed by top 20 MS2 Orbitrap scans (resolution of 15,000) using data-dependent acquisition, and exclusion of singly charged precursors. Fragmentation was performed using high-energy dissociation with normalized energy of 35%. Analysis of data sets was performed using Xcalibur (Thermo Fisher Scientific) to manually search for TM1, TM2, TM3 or TM4 tryptic peptides with or without neurosteroid photolabeling modifications. Photolabeling efficiency was estimated by generating extracted chromatograms of unlabeled and labeled peptides, determining the area under the curve, and calculating the abundance of labeled peptide/(unlabeled + labeled peptide). Analysis of statistical significance comparing the photolabeling efficiency of KK200 and KK123 for α1β3 GABAAR was determined using one-way ANOVA with Bonferroni's multiple comparisons test and paired t-test, respectively (Prism 6, GraphPad Software, San Diego, CA). MS2 spectra of photolabeled TMD peptides were analyzed by manual assignment of fragment ions with and without photolabeling modification. Fragment ions were accepted based on the presence of a monoisotopic mass within 20 ppm mass accuracy. In addition to manual analysis, PEAKS (Bioinformatics Solutions Inc, Waterloo, ON, Canada) database searches were performed for data sets of photolabeled α1β3 GABAAR. Search parameters were set for a precursor mass accuracy of 20 ppm, fragment ion accuracy of 0.1 Da, up to three missed cleavages on either end of the peptide, false discovery rate of 0.1%, and variable modifications of methionine oxidation, cysteine alkylation with NEM and DTT, and NS analogue photolabeling reagents on any amino acid.
 
-## Radioligand-binding assays
+### Radioligand-binding assays
 
 [3H]muscimol-binding assays were performed using a previously described method (Chen et al., 2019). HEK cell membrane proteins (100 μg/ml final concentration) were incubated with 3 nM [3H]muscimol (30 Ci/mmol; PerkinElmer Life Sciences), neurosteroid (3 nM–30 μM) or etomidate (30 nM–200 μM) in different concentrations and binding buffer (10 mM potassium phosphate, 100 mM potassium chloride, pH 7.5) in a total volume of 1 ml. Assay tubes were incubated for 1 hr on ice in the dark. Nonspecific binding was determined by binding in the presence of 1 mM GABA. Membranes were collected on Whatman/GF-C glass filter papers using a Brandel cell harvester (Gaithersburg, MD). To perform [3H]muscimol binding isotherms, 100 μg/ml aliquots of membrane protein were incubated with 0.3 nM–1 μM [3H]muscimol for 1 hr on ice in the dark. The specific activity for [3H]muscimol concentrations from 30 nM to 1 μM was reduced to 2 Ci/mmol by dilution with nonradioactive muscimol. The membranes were collected on Whatman/GF-B glass filter papers using a vacuum manifold. Raw concentration-dependent total and nonspecific binding and calculated specific binding data from a representative experiment (WT receptors, no NS) are shown in Figure 7—figure supplement 1. For [3H]muscimol-binding experiments examining competitive interactions between neurosteroids, the combined neurosteroids (0.3 μM 3α5αP or 3 μM KK148 ±30 μM KK150) or the same volume of dimethyl sulfoxide (DMSO) were added to the membranes which were then incubated with 3 nM [3H]muscimol on ice for 1 hr. Time courses of neurosteroid [3H]muscimol binding enhancement were examined by adding 10 µM of neurosteroids (3α5αP, 3β5αP) to membranes that had been fully equilibrated with 3 nM [3H]muscimol for 1 hr on ice; binding was then measured as a function of time at 1, 3, 10, 30, 60 min. The membranes were collected on Whatman/GF-B glass filter papers using a vacuum manifold. Radioactivity bound to the filters was measured by liquid scintillation spectrometry using Bio-Safe II (Research Products International, Mount Prospect, IL).
 
-## Radioligand binding to intact cells
+### Radioligand binding to intact cells
 
 HEK cells were harvested by gently washing dishes with buffer containing 10 mM sodium phosphate (pH 7.5), 150 mM sodium chloride twice. The cells were collected by centrifugation at 500 g at 4°C for 5 min, and resuspended in isotonic (10 mM sodium phosphate, 150 mM sodium chloride, pH 7.5) or hypotonic (10 mM sodium phosphate, pH 7.5) buffer to prepare two different conditions for radioligand binding to intact cells [isotonic buffer for cell surface receptors; hypotonic buffer for total receptors (cell surface receptors + intracellular receptors)]. The cells were incubated on ice for 2 hr, after which the sodium chloride concentration was adjusted to be isotonic before the radioligand binding procedure. HEK cells were aliquoted to assay tubes (20 samples/150 mm dish) in a total volume of 1 ml, and incubated with 3 nM [3H]muscimol ±10 μM KK148 for 1 hr on ice in the dark. Nonspecific binding was determined by binding in the presence of 1 mM GABA. The membranes were collected on Whatman/GF-B glass filter papers using a vacuum manifold. Radioactivity bound to the filters was measured by liquid scintillation spectrometry using Bio-Safe II.
 
-## Receptor expression in Xenopus laevis oocytes and electrophysiological recordings
+### Receptor expression in Xenopus laevis oocytes and electrophysiological recordings
 
 The wild-type and mutant α1β3 GABAAR were expressed in oocytes from the African clawed frog (Xenopus laevis). Frogs were purchased from Xenopus 1 (Dexter, MI), and housed and cared for in a Washington University Animal Care Facility under the supervision of the Washington University Division of Comparative Medicine. Harvesting of oocytes was conducted under the Guide for the Care and Use of Laboratory Animals as adopted and promulgated by the National Institutes of Health. The animal protocol (No. 20180191) was approved by the Animal Studies Committee of Washington University in St. Louis. The oocytes were injected with a total of 12 ng cRNA. The ratio of cRNAs was 5:1 ratio (α1:β3) to minimize the expression of β3 homomeric receptors. Following injection, the oocytes were incubated in ND96 (96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES; pH 7.4) with supplements (2.5 mM Na pyruvate, 100 U/ml penicillin, 100 μg/ml streptomycin and 50 μg/ml gentamycin) at 16°C for 2 days prior to conducting electrophysiological recordings. The electrophysiological recordings were conducted at room temperature using standard two-electrode voltage clamp. The oocytes were clamped at −60 mV. The chamber (RC-1Z, Warner Instruments, Hamden, CT) was perfused with ND96 at 5–8 ml/min. Solutions were gravity-applied from 30 ml glass syringes with glass luer slips via Teflon tubing. The current responses were amplified with an OC-725C amplifier (Warner Instruments, Hamden, CT), digitized with a Digidata 1200 series digitizer (Molecular Devices), and stored using pClamp (Molecular Devices). Current traces were analyzed with Clampfit (Molecular Devices). Activation by steroids (Figure 1) was tested by coapplying a steroid with 0.3 µM GABA (Popen = 0.05–0.1). The desensitizing effects of steroids (Figures 9–10) were tested by coapplying a steroid with 1 mM (saturating) GABA, alone or in the presence of PB, during the steady-state phase of the current response. The combination of GABA and PB was used to activate some combinations of mutations to maintain a consistent, high peak open probability (0.55–0.95). In control experiments in WT α1β3 GABAARs, pentobarbital had no effect on 3β5αP inhibition of steady-state current (data not shown). The stock solution of GABA was made in ND96 at 500 mM, stored in aliquots at −20°C, and diluted on the day of experiment. The stock solution of muscimol was made at 20 mM in ND96 and stored at 4°C. The steroids were dissolved in DMSO at 10–20 mM and stored at room temperature.
 
-## Electrophysiological data analysis and simulations
+### Electrophysiological data analysis and simulations
 
 The raw amplitudes of the current traces were converted to units of open probability through comparison to the peak response to 1 mM GABA + 50 µM propofol, that was considered to have a peak Popen indistinguishable from 1 (Chen et al., 2019). The level of constitutive activity in the absence of any applied agonist was considered negligible and not included in this calculation. The converted current traces were analyzed in the framework of the three-state Resting-Open-Desensitized activation model (Germann et al., 2019a; Germann et al., 2019b). The model enables analysis and prediction of peak responses using four parameters that characterize the extent of constitutive activity (termed L; L = Resting/Open), affinity of the resting receptor to agonist (KC), affinity of the open receptor to agonist (KO), and the number of agonist binding sites (N). Analysis and prediction of steady-state responses requires an additional parameter, termed Q, that describes the equilibrium between open and desensitized receptors (Q = Open/Desensitized).
 
-The Popen of the peak response is expressed as:Popen,peak=11+LΓand the Popen of the steady-state response as:Popen,steady−state=11+1Q+LΓwhereΓ=[ (1+[X]/KC)(1+[X]/KO) ]N
+The Popen of the peak response is expressed as:
+
+$$
+P_{open,peak}=\frac{1}{1+LΓ}
+$$
+
+and the Popen of the steady-state response as:
+
+$$
+P_{open,steady−state}=\frac{1}{1+\frac{1}{Q}+LΓ}
+$$
+
+where
+
+$$
+Γ=[\frac{(1+[X]/K_{C})}{(1+[X]/K_{O})}]^{N_{}}
+$$
 
 [X]is the concentration of agonist present, and other terms are as described above. In practice, the value of LΓ was calculated using the experimentally determined Popen of the peak response, and then used as a fixed value in estimating Q from Popen,steady-state.
 
-The Pdesensitized was calculated using:Pdesensitized=11+Q+QLΓ
+The Pdesensitized was calculated using:
+
+$$
+P_{desensitized}=\frac{1}{1+Q+QLΓ}
+$$
 
 The effect of 3β5αP on 1 mM GABA-elicited steady-state current was expressed through a change in the value of Q. The modified Q (termed Q*) was then used to predict changes in Popen and Pdesensitized at low [GABA]. Calculated probabilities (e.g. Popen, Pdesentitized) are reported as mean ± SD.
 
-## Docking simulations
+### Docking simulations
 
 A model of the α1β3 GABAAR was developed using the crystal structure of the human β3 homopentamer (PDB ID: 4COF) as a structural template (Miller and Aricescu, 2014). In this structure, the cytoplasmic loop was replaced with the sequence SQPARAA (Jansen et al., 2008). The pentamer subunits were organized as A α1, B β3, C α1, D β3, E β3. The α1 sequence was aligned to the β3 sequence using the program MUSCLE (Edgar, 2004). The pentameric alignment was then used as input for the program Modeller (Sali and Blundell, 1993), using 4COF as the template; a total of 25 models were generated. The best model as evaluated by the DOPE score (Shen and Sali, 2006) was then submitted to the H++ server (http://biophysics.cs.vt.edu) to determine charges and optimize hydrogen bonding. The optimized structure was then submitted to the PPM server (https://opm.phar.umich.edu/ppm_server) for orientation into a lipid membrane. The correctly oriented receptor was then submitted to the CHARMM-GUI Membrane Builder server (http://www.charmm-gui.org) to build the fully solvated, membrane bound system oriented into a 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylcholine (POPC) bilayer. The system was fully solvated with 40715 TIP3 water molecules and ionic strength set to 0.15 M KCl. The NAMD input files produced by CHARMM-GUI (Lee et al., 2016) use a seven-step process of gradually loosening constraints in the simulation prior to production runs. A 100 ns molecular dynamics trajectory was then obtained using the CHARMM36 force field and NAMD (Lee et al., 2016). The resulting trajectory was then processed using the utility mdtraj (McGibbon et al., 2015), to extract a snapshot of the receptor at each nanosecond of time frame. These structures were then mutually aligned by fitting the alpha carbons, providing a set of 100 mutually aligned structures used for docking studies. The docking was performed using AutoDock Vina (Trott and Olson, 2010) on each of the 100 snapshots in order to capture receptor flexibility. 3α5αP and 3β5αP were prepared by converting the sdf file from PubChem into a PDB file using Open Babel (O'Boyle et al., 2011), and Gasteiger charges and free torsion angles were determined by AutoDock Tools. Docking grid boxes were built for the β3–α1 intersubunit, and the α1 and β3 intrasubunit sites with dimensions of 15 × 15 × 15 Ångströms encompassing each binding pocket. Docking was limited to an energy range of 3 kcal from the best docking pose and was limited to a total of 20 unique poses. The docking results for a given site could result in a maximum of 2000 unique poses (20 poses × 100 receptor structures); these were then clustered geometrically using the program DIVCF (Meslamani et al., 2009). The resulting clusters were ranked by Vina score and cluster size, and then visually analyzed. A comparison of proposed NS-binding sites between the modeled α1β3 GABAAR TMD and the experimentally determined α1β3γ2 cryo-EM structure PDB ID: 6I53 (Laverty et al., 2019) was performed. The two structures were read into UCSF Chimera and mutually aligned using MatchMaker (Meng et al., 2006). Using the same Vina docking configuration files discussed above, 3α5αP and 3β5αP were then docked into the respective sites of the α1β3γ2 cryo-EM structure. The results are shown in Figure 11 and Figure 11—source data 1; there was very little difference in the results between the modeled α1β3 and the α1β3γ2 cryo-EM structure.

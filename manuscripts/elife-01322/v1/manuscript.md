@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.01322.001 By directed evolution in the laboratory, we previously generated populations of Escherichia coli that exhibit a complex new phenotype, extreme resistance to ionizing radiation (IR). The molecular basis of this extremophile phenotype, involving strain isolates with a 3-4 order of magnitude increase in IR resistance at 3000 Gy, is now addressed. Of 69 mutations identified in one of our most highly adapted isolates, functional experiments demonstrate that the IR resistance phenotype is almost entirely accounted for by only three of these nucleotide changes, in the DNA metabolism genes recA , dnaB , and yfjK . Four additional genetic changes make small but measurable contributions. Whereas multiple contributions to IR resistance are evident in this study, our results highlight a particular adaptation mechanism not adequately considered in studies to date: Genetic innovations involving pre-existing DNA repair functions can play a predominant role in the acquisition of an IR resistance phenotype. DOI: http://dx.doi.org/10.7554/eLife.01322.001
+By directed evolution in the laboratory, we previously generated populations of Escherichia coli that exhibit a complex new phenotype, extreme resistance to ionizing radiation (IR). The molecular basis of this extremophile phenotype, involving strain isolates with a 3-4 order of magnitude increase in IR resistance at 3000 Gy, is now addressed. Of 69 mutations identified in one of our most highly adapted isolates, functional experiments demonstrate that the IR resistance phenotype is almost entirely accounted for by only three of these nucleotide changes, in the DNA metabolism genes recA, dnaB, and yfjK. Four additional genetic changes make small but measurable contributions. Whereas multiple contributions to IR resistance are evident in this study, our results highlight a particular adaptation mechanism not adequately considered in studies to date: Genetic innovations involving pre-existing DNA repair functions can play a predominant role in the acquisition of an IR resistance phenotype.
 
 ## Introduction
 
@@ -46,87 +46,2163 @@ It remained for us to determine which of those mutations underlay the increase i
 
 ## Results
 
-## Sequencing of multiple isolates from evolved populations reveals different evolutionary paths to IR resistance
+### Sequencing of multiple isolates from evolved populations reveals different evolutionary paths to IR resistance
 
-In the present study, we augmented the earlier data with the complete genomic sequences of 13 new isolates from populations IR-2-20, IR-3-20, and IR-4-20. In addition, we examined the complete genomic sequences of nine isolates derived from either 20 or 30 rounds of further evolution of CB1000, an isolate derived from IR-1-20. We note that IR resistance in this more highly evolved population (IR-CB1000-30) was impossible to measure accurately. The cells in this population grew more slowly than the Founder, but growth continued during irradiation at 6 Gy/min (John R Battista, unpublished data). The results from the previous (
+In the present study, we augmented the earlier data with the complete genomic sequences of 13 new isolates from populations IR-2-20, IR-3-20, and IR-4-20. In addition, we examined the complete genomic sequences of nine isolates derived from either 20 or 30 rounds of further evolution of CB1000, an isolate derived from IR-1-20. We note that IR resistance in this more highly evolved population (IR-CB1000-30) was impossible to measure accurately. The cells in this population grew more slowly than the Founder, but growth continued during irradiation at 6 Gy/min (John R Battista, unpublished data). The results from the previous (Harris et al., 2009) and new sequencing efforts are combined in Supplementary file 1A,B. The overall selection scheme is illustrated in Figure 1. The results give us a much-enhanced view of mutational patterns that are likely to contribute to the acquired IR resistance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01322/elife-01322-fig1-v1.jpg)
 
-**Figure 1.:** Red arrows denote cycles of irradiation and outgrowth. Evolved populations have titles beginning with “IR”. Isolates were derived from each listed population, as indicated by blue arrows. Isolates from each population are listed under the respective blue arrows, and each isolate features a name beginning with CB. Isolates listed in green text are described for the first time in this study. The sequences of the remaining isolates were described previously (Harris et al., 2009), and are listed here since the genomic data was utilized in the current analysis.DOI: http://dx.doi.org/10.7554/eLife.01322.003
+**Figure 1.:** Red arrows denote cycles of irradiation and outgrowth. Evolved populations have titles beginning with “IR”. Isolates were derived from each listed population, as indicated by blue arrows. Isolates from each population are listed under the respective blue arrows, and each isolate features a name beginning with CB. Isolates listed in green text are described for the first time in this study. The sequences of the remaining isolates were described previously (Harris et al., 2009), and are listed here since the genomic data was utilized in the current analysis.
 
-A summary of mutation types detected in the various sequenced isolates is presented in Table 1. In each case, the genomic sequence was compared to the 4,639,675-bp reference genome. In the isolates derived from the original four evolved populations, there were between 44 and 77 genetic alterations. The numbers of mutations jumped appreciably in the isolates derived from the further evolution of CB1000, with 242–267 mutations present in these strains. Transition mutations dominated the mutational spectrum.10.7554/eLife.01322.004Table 1.Summary of the mutational spectrum observed in strains derived from directed evolution of resistance to ionizing radiationDOI: http://dx.doi.org/10.7554/eLife.01322.004IR-1-20IR-2-20IR-3-20IR-4-20IR-CB1000-20IR-CB1000-30TransitionsCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1111111222222233333334111111111000000000000000000000011111111101111220000011000011102222300000234545034794602684790245701458 C → T192061015691213111211991414131413121214596469696360626362 G → A189111611111217171615131311171113131281510606578716057606060 T → C776461341181610991111413117697515140444747474747 A → G1516788141110667765614101091168424342545046505050Transversions G → T44111353423542554446421097865666 C → A1121156536334624213416325564554 A → C1121112112211742244333 T → G111111111121222411111 G → C111221111111211243333 C → G1231111112121122222 A → T1211312143112111221233333 T → A1111111111311121332333332Insertions 767bp IS12111111Deletions1 e141111111111111111111111111111111 93bp1Totals70634046495653665564565350516357636155535453243251249265250236246247244The mutational spectrum of the population is inferred based on the genetic alterations observed in the subset of strains sequenced.
+A summary of mutation types detected in the various sequenced isolates is presented in Table 1. In each case, the genomic sequence was compared to the 4,639,675-bp reference genome. In the isolates derived from the original four evolved populations, there were between 44 and 77 genetic alterations. The numbers of mutations jumped appreciably in the isolates derived from the further evolution of CB1000, with 242–267 mutations present in these strains. Transition mutations dominated the mutational spectrum.
+
+**Table 1.**
+ Summary of the mutational spectrum observed in strains derived from directed evolution of resistance to ionizing radiation
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">IR-1-20</th>
+      <th colspan="7">IR-2-20</th>
+      <th colspan="7">IR-3-20</th>
+      <th>IR-4-20</th>
+      <th colspan="5">IR-CB1000-20</th>
+      <th colspan="4">IR-CB1000-30</th>
+    </tr>
+    <tr>
+      <th rowspan="6">Transitions</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+    </tr>
+    <tr>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>4</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>2</th>
+      <th>2</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>3</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>4</th>
+      <th>5</th>
+      <th>0</th>
+      <th>3</th>
+      <th>4</th>
+      <th>7</th>
+      <th>9</th>
+      <th>4</th>
+      <th>6</th>
+      <th>0</th>
+      <th>2</th>
+      <th>6</th>
+      <th>8</th>
+      <th>4</th>
+      <th>7</th>
+      <th>9</th>
+      <th>0</th>
+      <th>2</th>
+      <th>4</th>
+      <th>5</th>
+      <th>7</th>
+      <th>0</th>
+      <th>1</th>
+      <th>4</th>
+      <th>5</th>
+      <th>8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C → T</td>
+      <td>19</td>
+      <td>20</td>
+      <td>6</td>
+      <td>10</td>
+      <td>15</td>
+      <td>6</td>
+      <td>9</td>
+      <td>12</td>
+      <td>13</td>
+      <td>11</td>
+      <td>12</td>
+      <td>11</td>
+      <td>9</td>
+      <td>9</td>
+      <td>14</td>
+      <td>14</td>
+      <td>13</td>
+      <td>14</td>
+      <td>13</td>
+      <td>12</td>
+      <td>12</td>
+      <td>14</td>
+      <td>59</td>
+      <td>64</td>
+      <td>69</td>
+      <td>69</td>
+      <td>63</td>
+      <td>60</td>
+      <td>62</td>
+      <td>63</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>G → A</td>
+      <td>18</td>
+      <td>9</td>
+      <td>11</td>
+      <td>16</td>
+      <td>11</td>
+      <td>11</td>
+      <td>12</td>
+      <td>17</td>
+      <td>17</td>
+      <td>16</td>
+      <td>15</td>
+      <td>13</td>
+      <td>13</td>
+      <td>11</td>
+      <td>17</td>
+      <td>11</td>
+      <td>13</td>
+      <td>13</td>
+      <td>12</td>
+      <td>8</td>
+      <td>15</td>
+      <td>10</td>
+      <td>60</td>
+      <td>65</td>
+      <td>78</td>
+      <td>71</td>
+      <td>60</td>
+      <td>57</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>T → C</td>
+      <td>7</td>
+      <td>7</td>
+      <td>6</td>
+      <td>4</td>
+      <td>6</td>
+      <td>13</td>
+      <td>4</td>
+      <td>11</td>
+      <td>8</td>
+      <td>16</td>
+      <td>10</td>
+      <td>9</td>
+      <td>9</td>
+      <td>11</td>
+      <td>11</td>
+      <td>4</td>
+      <td>13</td>
+      <td>11</td>
+      <td>7</td>
+      <td>6</td>
+      <td>9</td>
+      <td>7</td>
+      <td>51</td>
+      <td>51</td>
+      <td>40</td>
+      <td>44</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>A → G</td>
+      <td>15</td>
+      <td>16</td>
+      <td>7</td>
+      <td>8</td>
+      <td>8</td>
+      <td>14</td>
+      <td>11</td>
+      <td>10</td>
+      <td>6</td>
+      <td>6</td>
+      <td>7</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>6</td>
+      <td>14</td>
+      <td>10</td>
+      <td>10</td>
+      <td>9</td>
+      <td>11</td>
+      <td>6</td>
+      <td>8</td>
+      <td>42</td>
+      <td>43</td>
+      <td>42</td>
+      <td>54</td>
+      <td>50</td>
+      <td>46</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Transversions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G → T</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>4</td>
+      <td>2</td>
+      <td>10</td>
+      <td>9</td>
+      <td>7</td>
+      <td>8</td>
+      <td>6</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>C → A</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+      <td>5</td>
+      <td>3</td>
+      <td>6</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>6</td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>A → C</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>7</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>T → G</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>2</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>G → C</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>C → G</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>A → T</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>T → A</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Insertions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>767bp IS1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Deletions</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>e14</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>93bp</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Totals</td>
+      <td>70</td>
+      <td>63</td>
+      <td>40</td>
+      <td>46</td>
+      <td>49</td>
+      <td>56</td>
+      <td>53</td>
+      <td>66</td>
+      <td>55</td>
+      <td>64</td>
+      <td>56</td>
+      <td>53</td>
+      <td>50</td>
+      <td>51</td>
+      <td>63</td>
+      <td>57</td>
+      <td>63</td>
+      <td>61</td>
+      <td>55</td>
+      <td>53</td>
+      <td>54</td>
+      <td>53</td>
+      <td>243</td>
+      <td>251</td>
+      <td>249</td>
+      <td>265</td>
+      <td>250</td>
+      <td>236</td>
+      <td>246</td>
+      <td>247</td>
+      <td>244</td>
+    </tr>
+  </tbody>
+</table>
+
+_The mutational spectrum of the population is inferred based on the genetic alterations observed in the subset of strains sequenced._
 
 One straightforward pattern noted in the earlier study was continued. The only genetic change that is universal to all strains sequenced is deletion of the e14 prophage, a defective lambdoid prophage that is 15.4 kb in length. The deletion of occurs early, within the first three rounds of selection for IR resistance (EA Wood and JR Battista, unpublished data), and it makes a significant contribution (an approximately 10-fold increase in survival at 3000 Gy) to the overall IR resistance phenotype (Harris et al., 2009).
 
 Population IR-1-20 has a particularly complex population structure and is strikingly different from the IR-2-20 and IR-3-20 populations. Outside of the e14 deletion, there are no mutations shared by all seven of the IR-1-20 isolates. There are three groupings of mutations in subsets of the clonal isolates that reflect clonal interference (Gerrish and Lenski, 1998, Perron et al., 2012,Rozen et al., 2002) in this population (JR Battista, unpublished results). In contrast, isolates from the IR-2-20 and IR-3-20 populations each exhibit a number of mutations (23 in IR-2-20 and 30 in IR-3-20) that are present in all seven isolates from their respective populations, and are effectively fixed. The apparent fixation of a mutation in one of these populations may reflect its importance to the phenotype. Alternatively, this may reflect a genetic bottleneck at some stage in the evolution of these populations, and speaks to the close relationship of the isolates.
 
-## Identification of mutations contributing to IR resistance in IR-2-20
+### Identification of mutations contributing to IR resistance in IR-2-20
 
-To identify the mutations that are most likely to contribute to the IR resistance phenotype, we focused on genetic alterations that exhibited the following criteria: (I) the mutation is present in all or most isolates sequenced in at least one population, (II) the mutated gene was a prominent mutational target in at least one other sequenced population or mutations are found in genes in the same operon or pathway in other populations. Application of the second criterion requires data that was unavailable in our earlier study (Harris et al., 2009), and provides a pattern implicating a particular mutation in the acquisition of an extreme IR resistance phenotype. This criterion also assumes that there is a significant level of phenotypic parallelism (Hindre et al., 2012, Futuyama, 1986) between the independently evolved populations. Table 2 summarizes the results of applying these criteria, with nine altered genes or systems meeting these two criteria. The entire complement of mutations found in all isolates from the four evolved populations, both those sequenced for this study and those analyzed in the earlier study (Harris et al., 2009), are provided in Supplementary file 1A.10.7554/eLife.01322.005Table 2.Summary of prominent mutational patterns observed in multiple evolved populationsDOI: http://dx.doi.org/10.7554/eLife.01322.005IR-1-20IR-2-20IR-3-20IR-4-20IR CB1000−+GenePositionRef.CCCCCCCCCCCCCCCCCCCCCCChangeMutationBBBBBBBBBBBBBBBBBBBBBB111111122222223333333400000000000000000000000111122000001100001110Allele0234545034794602684790TypeclpP456127AGG+Y75CNclpP/clpX456637GAAAAAAA-IclpX457803AGY384CNgsiB868947AGGGGGGGN104SNgsiB869499TCCCCCCCL288PNgsiB870075TCV480ANfnr1396995ATTTTTTT+F185INrsxB1704735AGGGGGGG+K121ENrsxD1707299TCCCCCCCV44ANwcaM2113451TC+N156SNwcaK2116031TCCCCCY132CNwcaC2129153AGGGGGGGS313SSyfjK2759609GAH651YNyfjK2760683TCK293ENyfjK2760809GAP251SNyfjK2761108GTTTTTTTA151DNrecA2820924CAA289SNrecA2820962TGGGGD276ANrecA2820963CTTTTTTTTD276NNnanE3368674CTTTTTTT+A128TNnanT3369380AGGGGGGGF405SNdnaB4262560TC+L74SNdnaB4262578CAAAAAAAP80HNdnaB4262935CAP199QNpriA4123174CTTTTTTTV553INpriC489549AGGL162PNdnaT4599105GAAAAR145CNEntries in red denote mutations that are present in CB2000.
+To identify the mutations that are most likely to contribute to the IR resistance phenotype, we focused on genetic alterations that exhibited the following criteria: (I) the mutation is present in all or most isolates sequenced in at least one population, (II) the mutated gene was a prominent mutational target in at least one other sequenced population or mutations are found in genes in the same operon or pathway in other populations. Application of the second criterion requires data that was unavailable in our earlier study (Harris et al., 2009), and provides a pattern implicating a particular mutation in the acquisition of an extreme IR resistance phenotype. This criterion also assumes that there is a significant level of phenotypic parallelism (Hindre et al., 2012, Futuyama, 1986) between the independently evolved populations. Table 2 summarizes the results of applying these criteria, with nine altered genes or systems meeting these two criteria. The entire complement of mutations found in all isolates from the four evolved populations, both those sequenced for this study and those analyzed in the earlier study (Harris et al., 2009), are provided in Supplementary file 1A.
+
+**Table 2.**
+ Summary of prominent mutational patterns observed in multiple evolved populations
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="7">IR-1-20</th>
+      <th colspan="7">IR-2-20</th>
+      <th colspan="7">IR-3-20</th>
+      <th>IR-4-20</th>
+      <th>IR CB1000−+</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th rowspan="6">Gene</th>
+      <th rowspan="6">Position</th>
+      <th rowspan="5">Ref.</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th>C</th>
+      <th rowspan="6"></th>
+      <th rowspan="6">Change</th>
+      <th rowspan="5">Mutation</th>
+    </tr>
+    <tr>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>2</th>
+      <th>2</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>Allele</th>
+      <th>0</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>4</th>
+      <th>5</th>
+      <th>0</th>
+      <th>3</th>
+      <th>4</th>
+      <th>7</th>
+      <th>9</th>
+      <th>4</th>
+      <th>6</th>
+      <th>0</th>
+      <th>2</th>
+      <th>6</th>
+      <th>8</th>
+      <th>4</th>
+      <th>7</th>
+      <th>9</th>
+      <th>0</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>clpP</td>
+      <td>456127</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3">+</td>
+      <td>Y75C</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>clpP/clpX</td>
+      <td>456637</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td></td>
+      <td>-</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>clpX</td>
+      <td>457803</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y384C</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gsiB</td>
+      <td>868947</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3"></td>
+      <td>N104S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>gsiB</td>
+      <td>869499</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td></td>
+      <td>L288P</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>gsiB</td>
+      <td>870075</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td>V480A</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fnr</td>
+      <td>1396995</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td></td>
+      <td>+</td>
+      <td>F185I</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rsxB</td>
+      <td>1704735</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2">+</td>
+      <td>K121E</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>rsxD</td>
+      <td>1707299</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td></td>
+      <td>V44A</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wcaM</td>
+      <td>2113451</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td rowspan="3">+</td>
+      <td>N156S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>wcaK</td>
+      <td>2116031</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td>C</td>
+      <td></td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y132C</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>wcaC</td>
+      <td>2129153</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td>S313S</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>yfjK</td>
+      <td>2759609</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td rowspan="4"></td>
+      <td>H651Y</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>yfjK</td>
+      <td>2760683</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>K293E</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>yfjK</td>
+      <td>2760809</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>P251S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>yfjK</td>
+      <td>2761108</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A151D</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recA</td>
+      <td>2820924</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3"></td>
+      <td>A289S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>recA</td>
+      <td>2820962</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D276A</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>recA</td>
+      <td>2820963</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>D276N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nanE</td>
+      <td>3368674</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2">+</td>
+      <td>A128T</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>nanT</td>
+      <td>3369380</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td>F405S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dnaB</td>
+      <td>4262560</td>
+      <td>T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="6">+</td>
+      <td>L74S</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>dnaB</td>
+      <td>4262578</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>P80H</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>dnaB</td>
+      <td>4262935</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>P199Q</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>priA</td>
+      <td>4123174</td>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td></td>
+      <td>V553I</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>priC</td>
+      <td>489549</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>L162P</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>dnaT</td>
+      <td>4599105</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+      <td></td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R145C</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
+
+_Entries in red denote mutations that are present in CB2000._
 
 The prominent genetic alterations present in the various evolved isolates are not identical. We thus set out to define the genetic basis of the observed IR resistance in one representative isolate. We focused on the isolated strain CB2000 from the IR-2-20 population for several reasons. First, CB2000 is one of the most radiation resistant of the isolated strains from the original evolved populations (Harris et al., 2009). Second, it is particularly well characterized (Harris et al., 2009; and this study). Third, it was isolated from a population that lacks any sign of clonal interference, allowing us to focus on patterns present in a relatively simple population. Finally, the patterns of mutations we highlight below overlap patterns that are evident in other populations, making CB2000 a good barometer of mechanisms by which radiation resistance evolved in many of our strains. Of the 9 genes and/or systems reflected in Table 2, seven are represented in CB2000.
 
 The candidate CB2000 genes can be grouped into three functional categories: (I) DNA repair and replication (recA, dnaB, yfjK), (II) oxidative damage suppression (rsxB and gsiB), and (III) cell wall biogenesis (wcaK and nanE). All of these represent prominent mutational patterns.
 
-## DNA metabolism
+#### DNA metabolism
 
 Every evolved isolate sequenced features a mutation in one or another component of the replication restart primosome (priA, priC, dnaB, dnaT), critical for the origin-independent restart of stalled DNA replication forks after recombinational DNA repair has occurred (Cox et al., 2000, Marians, 2008; Rangarajan and Woodgate RGoodman, 2002). A mutation in the recA gene appears in 13 of 22 isolates from the original four evolved populations, appearing in every evolved population except IR-3-20. The RecA D276N substitution is fixed in IR-2-20 (including CB2000), and the identical allele also appears in the separately evolved isolate from IR-4-20, CB4000. Two different variants of RecA, D276A and A289S, appear in strains derived from population IR-1-20, helping to define two of the three sub-populations exhibiting clonal interference. Mutations in the cryptic helicase gene yfjK are present in three of the four populations, although a mutation appears in only one of three sub-populations of IR-1-20.
 
-## Oxidative damage suppression
+#### Oxidative damage suppression
 
 Over the sequenced isolates, quite a few mutations clustered in components of the rsxABCDGE gene cluster and gsiB. The rsx gene cluster encodes a multi-subunit complex involved in the reduction of SoxR, part of a regulatory circuit for up to 50 target genes. Some of these are directly involved in protection against reactive oxygen species (Demple, 1996). The gsiB gene encodes an ABC transporter for glutathione. Different mutations in gsiB are fixed in IR-2-20 and IR-3-20.
 
-## Cell wall biogenesis
+#### Cell wall biogenesis
 
 Mutations of wcaK and wcaC appear frequently in populations IR-2-20 and IR-3-20, respectively, and also appear in wcaA in the single isolate from IR-4-20. The pattern is reinforced by the appearance of a wcaL mutation in 5 of the 9 isolates derived from the continued evolution of CB1000. The products of the wca operon are involved in the synthesis of secreted exopolysaccharides that confer significant resistance to heat and acid stress (Mao et al., 2001). Mutations in nanE and nanT are fixed in IR-2-20 and IR-3-20, respectively. The pattern is again reinforced by the appearance of a mutation in nanA in all nine of the sequenced isolates derived from the continued evolution of CB1000 (Supplementary file 1B). The nan operon is involved in the recycling and/or synthesis of components of the bacterial cell wall, particularly N-acetylmannosamine and N-acetylneuraminate (Plumbridge and Vimr, 1999).
 
-## Defining the molecular basis of directly evolved extreme radiation resistance in CB2000
+### Defining the molecular basis of directly evolved extreme radiation resistance in CB2000
 
 To assess the importance of these seven CB2000 mutations quantitatively, we took three approaches:Mutations identified in CB2000 were moved into the radiosensitive Founder strain. This was done both individually and collectively with one or more of the other mutations. The e14 prophage was deleted (Δe14) in our wild-type background, since this genetic alteration occurs very early in the evolution of IR resistance in all of our strains, and the effects of this deletion have already been characterized (Harris et al., 2009). If any of the 7 mutations we identify above are contributing to the phenotype, they are doing so in a background that excludes the e14 prophage. In addition to the seven mutations identified in Table 2, we selected the glpD mutation as an additional target for analysis since it fulfilled criterion I above but did not quite fit criterion II. This mutation was fixed in population IR-2-20. Although this gene was not mutated in any other population, a mutation that might affect regulation of glpD was found in three isolates of IR-3-20.The same eight total mutations (including glpD) were reverted back to the original Founder sequence in CB2000 both individually and in combination with other mutations. This allows us to determine if the mutations contribute to IR resistance in a genetic background that includes all or most of the other 69 mutations present in CB2000.We deleted the nonessential genes carrying these mutations in the radiosensitive Founder strain (in a genetic background deleted for e14) individually. We wished to determine if a definitive knockout of an individual gene could mimic any observed effects of the individual mutations observed in CB2000. If the answer was yes, we reasoned that the mutation we observed in CB2000 was likely to be a loss of function mutation.
 
 All of the strains constructed for this effort were assayed for survival to 3000 Gy to measure the contribution of individual mutations and mutation combinations to the IR resistance phenotype.
 
-## Individual mutation contributions to the IR resistance phenotype
+#### Individual mutation contributions to the IR resistance phenotype
 
-All of the mutations identified above made a measurable contribution to the phenotype, some large and some small. As illustrated in
+All of the mutations identified above made a measurable contribution to the phenotype, some large and some small. As illustrated in Figure 2A, moving the CB2000 alleles of gsiB, rsxB, glpD, and wcaK individually into the Founder Δe14 background resulted in small increases in radioresistance, ranging from 2 (wcaK)–7 (gsiB) fold. Each of these mutations thus appears to contribute to the IR resistance phenotype, but in a relatively modest way. In contrast, moving the CB2000 alleles encoding the RecA D276N, YfjK A151D, or DnaB P80H proteins individually into Founder Δe14 resulted in 1–2 log increases in IR resistance, indicating that these mutations contribute in a more substantial way to the observed IR resistance of CB2000. Of these three mutations, the yfjK mutation had the greatest effect when present alone in the Founder Δe14 background (Figure 2A; the effects of these three mutations are summarized in Figure 2D). The effects of the individual mutations on IR resistance in the Founder Δe14 background were echoed by the effects of reverting these same mutations to wild type in the CB2000 background (Figure 2B). Individually reverting the recA, dnaB, and yfjK alleles back to the Founder sequence resulted in 1–2 log decreases in resistance. In this case, the recA reversion resulted in the largest loss of resistance with an approximately 50-fold decrease in IR resistance relative to CB2000. Reverting the other mutant alleles (gsiB, rsxB, glpD, wcaK, and nanE) to wild type in the CB2000 background had significant but relatively small effects.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01322/elife-01322-fig2-v1.jpg)
 
-**Figure 2.:** E. coli.Mid-logarithmic phase cultures were irradiated to 3000 Gy and plated to measure survival as described in ‘Material and methods’. (A) mutations discovered in CB2000 were moved individually and in combination into the Founder Δe14 background. Mutations present in a given strain are indicated by a + symbol. For reasons not understood, it proved impossible to move the nanE mutation into this background on its own. CB2000 itself is presented in the final lane. (B) the same point mutations (this time including nanE) were mutated back to Founder sequence in the CB2000 background. The first lane is CB2000. Mutations converted to the wild type allele in a given strain are indicated by a–symbol. (C) non-essential genes assayed in Panel A and B were deleted in the Founder Δe14 background, with the deleted gene indicated by a Δ symbol. D, The effects of mutations in genes recA, dnaB, and yfjK are summarized, with symbols as in panels A–C. All results were obtained with a 137Cs irradiator (∼7 Gy/min).DOI: http://dx.doi.org/10.7554/eLife.01322.006
+**Figure 2.:** Mid-logarithmic phase cultures were irradiated to 3000 Gy and plated to measure survival as described in ‘Material and methods’. (A) mutations discovered in CB2000 were moved individually and in combination into the Founder Δe14 background. Mutations present in a given strain are indicated by a + symbol. For reasons not understood, it proved impossible to move the nanE mutation into this background on its own. CB2000 itself is presented in the final lane. (B) the same point mutations (this time including nanE) were mutated back to Founder sequence in the CB2000 background. The first lane is CB2000. Mutations converted to the wild type allele in a given strain are indicated by a–symbol. (C) non-essential genes assayed in Panel A and B were deleted in the Founder Δe14 background, with the deleted gene indicated by a Δ symbol. D, The effects of mutations in genes recA, dnaB, and yfjK are summarized, with symbols as in panels A–C. All results were obtained with a 137Cs irradiator (∼7 Gy/min).
 
-## Mutation combinations
+#### Mutation combinations
 
 Combining multiple mutations in the Founder Δe14 background allowed us to assess whether mutations were acting additively or affected single pathways. As shown in Figure 2A, the deletion of the e14 prophage along with point mutations in recA, dnaB, and yfjK accounted for much of the radiation resistance of CB2000. Of the other 5, the gsiB mutation appeared to contribute the most (an additional threefold) when combined with the DNA repair function mutations. A strain incorporating the recA, dnaB, yfjK, wcaK, and gsiB mutations accounted for all but twofold of the overall increase in radiation resistance in CB2000. Further supporting the importance of the recA, dnaB, and yfjK mutations, conversion of each of these mutations back to the wild-type allele causes a substantial loss of IR resistance (Figure 2B). Figure 2B,D illustrate that the radiation resistant phenotype observed in CB2000 was eliminated–in its entirety–by converting only these three genes back to the wild type sequence. The effects of the other mutant alleles (gsiB, rsxB, glpD, wcaK, and nanE) were small to insignificant in all cases.
 
 Mutations in recA and dnaB appear to affect the same pathway, as a combination of the recA and dnaB mutations in the Founder Δe14 background did not increase resistance beyond that observed for the dnaB mutation alone. Combining the yfjK mutation with those in dnaB and recA generates a further increase in IR resistance (Figure 2A,D), suggesting that the yfjK mutation affects a different cellular process or pathway than the other two. A similar pattern is seen when mutations in the CB2000 background are reverted to wild type alleles. Individual reversion of the recA and dnaB mutations in CB2000 back to the Founder sequence resulted in a ∼50- and ∼10-fold decrease in resistance from CB2000, respectively (Figure 2B). Upon reversion of the CB2000 yfjK mutation to wildtype, a 15-fold decrease in radiation resistance was observed (Figure 2B). Again, reversion of both recA and dnaB to wild type in the same cell had no more effect than one (in this case recA) alone. When the mutation in yfjK was reverted in addition to recA and dnaB, IR sensitivity increased.
 
-Several of the key results of
+Several of the key results of Figure 2D were confirmed in direct competition experiments (Figure 3) (Lenski et al., 1991). We incorporated a neutral Ara−mutation into particular strains (which confers a red color on colonies when grown on tetrazolium arabinose [TA] indicator plates) to permit color based scoring of mixed populations (Lenski et al., 1991). When CB2000 (Ara−) was mixed in a 1:1 ratio with CB2000 in which the recA, dnaB, and yfjK mutations had been converted to wild type, and irradiated at 2000 and 3000 Gy, CB2000 exhibited at least a 2 log advantage in survival at the higher IR dose (Figure 3A). Similarly, Founder Δe14 (Ara−) was mixed with an isogenic strain carrying the recA, dnaB, and yfjK mutations. A 2 log advantage for the strain incorporating the three mutations was seen after irradiation at 2000 Gy (Figure 3B,C). When CB2000 in which the recA, dnaB, and yfjK mutations had been converted to wild type was mixed with Founder Δe14 (Ara−), survival of the two strains was similar (the CB2000 reversion strain had less than a 0.5 log advantage [Figure 3D,E]).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01322/elife-01322-fig3-v1.jpg)
 
-**Figure 3.:** Mid-logarithmic cultures consisting of a 1:1 ratio of the competiting Ara+ and Ara–strains were irradiated to 2000 and 3000 Gy and plated on tetrazolium arabinose indicator plates to distinguish the frequency of survival for both strains. (A) CB2000 Ara– (red, ^), vs CB2000 wtRecA wtDnaB wtYfjK, ☐ (B) Founder Δe14 Ara−, (red, △), vs Founder Δe14 RecA D276N DnaB P80H YfjK A151D, ◇ (C) TA plate of 2000 Gy survival competition of Founder Δe14 Ara−vs Founder Δe14 RecA D276N DnaB P80H YfjK A151D. The two red Founder Δe14 Ara–colonies are indicated by red arrows. (D) Founder Δe14 Ara− (red, ◇), vs CB2000 wtRecA wtDnaB wtYfjK, ☐. (E) Log advantage in survival to 2000 Gy of CB2000 Ara−over CB2000 wtRecA wtDnaB wt YfjK (in black), Founder Δe14 RecA D276N DnaB P80H YfjK P80H over Founder Δe14 Ara− (in grey), and CB2000 wtRecA wtDnaB wt YfjK over Founder Δe14 Ara− (in white).DOI: http://dx.doi.org/10.7554/eLife.01322.007
+**Figure 3.:** Mid-logarithmic cultures consisting of a 1:1 ratio of the competiting Ara+ and Ara–strains were irradiated to 2000 and 3000 Gy and plated on tetrazolium arabinose indicator plates to distinguish the frequency of survival for both strains. (A) CB2000 Ara– (red, ^), vs CB2000 wtRecA wtDnaB wtYfjK, ☐ (B) Founder Δe14 Ara−, (red, △), vs Founder Δe14 RecA D276N DnaB P80H YfjK A151D, ◇ (C) TA plate of 2000 Gy survival competition of Founder Δe14 Ara−vs Founder Δe14 RecA D276N DnaB P80H YfjK A151D. The two red Founder Δe14 Ara–colonies are indicated by red arrows. (D) Founder Δe14 Ara− (red, ◇), vs CB2000 wtRecA wtDnaB wtYfjK, ☐. (E) Log advantage in survival to 2000 Gy of CB2000 Ara−over CB2000 wtRecA wtDnaB wt YfjK (in black), Founder Δe14 RecA D276N DnaB P80H YfjK P80H over Founder Δe14 Ara− (in grey), and CB2000 wtRecA wtDnaB wt YfjK over Founder Δe14 Ara− (in white).
 
-## Mutations in wcaK, gsiB, yfjK, nanE, and glpD likely result in a loss of function
+#### Mutations in wcaK, gsiB, yfjK, nanE, and glpD likely result in a loss of function
 
 Nonessential genes mutated in these studies were individually deleted in the Founder Δe14 background and the resulting strains were assayed for survival of 3000 Gy and shown in Figure 2C. Strains deleted for wcaK, gsiB, glpD, and nanE respectively are twofold to threefold more resistant than Founder Δe14. For wcaK and glpD, this increase in resistance is similar to the resistance observed in Founder Δe14 strains carrying the point mutations in these genes, suggesting that the mutations result in loss of function. The twofold increase in resistance conferred by a gsiB deletion is less than that of the gsiB point mutation, suggesting a more complex situation. The situation with yfjK is similar. Founder Δe14 ΔyfjK cells are 13-fold more resistant than the isogenic parent strain as illustrated in Figure 2C. However, the Founder Δe14 strain encoding YfjK A151D is an additional 10-fold more resistant than the deletion, and nearly 2 orders of magnitude more resistant than Founder Δe14. It is possible that the mutation in yfjK is a partial loss of function, or that it eliminates one or more activities of the YfjK protein but not all of them. The effects of the yfjK deletion also suggests that this gene affects a process that is distinct in some manner from that affected by the recA and dnaB genes. Deletion of recA or dnaB results in slightly reduced growth or viability, or no viability, respectively, even without IR exposure.
 
 As detailed in Table 2, two additional mutational patterns are evident in the four evolved populations that are not manifested in CB2000. Mutations affecting the clpXP complex are prominent in populations IR-1-20 and IR-3-20, and new mutations potentially affecting this system also appear in the further evolution of CB1000. clpXP encodes a proteolytic system involved in turnover of many key cellular proteins including many involved in DNA metabolism (Baker and Sauer, 2006), and is essential for the transition from growth to stationary phase. It is possible that this complex is essential for the elimination of proteins that have been inactivated by oxidative carbonylation. A mutation in fnr is fixed in IR-3-20. While this gene is not targeted in any of the other three original populations, its importance is suggested by the appearance of a mutation that leads to a truncated Fnr protein in all nine isolates derived from the further evolution of CB1000 (Supplementary file 1B). Fnr is a regulator that oversees the transition between aerobic and anaerobic metabolism (Kiley and Beinert, 1998).
 
-## The IR resistance phenotype does not entail significant changes in the transcriptome, metabolome, or metal ion content
+### The IR resistance phenotype does not entail significant changes in the transcriptome, metabolome, or metal ion content
 
 We examined the baseline metabolic profiles of the Founder strain and several of the IR resistant isolates. The strains were not subjected to irradiation prior to analysis. The results measure the state of the cells when they first encounter irradiation.
 
 We used RNA-Seq (Marioni et al., 2008) to directly sequence and map RNAs that are expressed in the Founder, CB1000, and CB2000, with the comparison reported in Supplementary file 1C. Overall, there were few genes with different expression profiles when comparing the strains with a 1.5-fold cutoff enforced. The only commonality in expression patterns between the evolved strains was the >1.5-fold decrease in the transcript abundance compared to Founder of the following genes: fruBKA (fructose metabolism), sdaC (serine transport) and proK (proline tRNA). Transcription of the entire fimbrial operon is increased in CB1000, possibly due to phase variation of the fimS region, but in CB2000, only the fimC gene exhibits an increase in transcription of more than 1.5-fold. In both evolved strains icd (b4519) transcript levels are increased, likely due to the excision of the e14 prophage, which reconstitutes the icd gene with a different 3′ end of the gene containing 2 base substitutions. In general, changes are minimal. There are few genes that display a newly constitutive level of expression that is strikingly higher than in the parent Founder strain, in spite of the existence of mutations in a number of genes encoding global regulators.
 
-Using NMR, we investigated metabolite concentrations in the total soluble fraction of the cytosol from Founder, two evolved radioresistant strains, CB1000 and CB2000, and in CB1013 (an isolate from the IR-1-20 population that has a distinctively different mutational profile relative to CB1000) (
+Using NMR, we investigated metabolite concentrations in the total soluble fraction of the cytosol from Founder, two evolved radioresistant strains, CB1000 and CB2000, and in CB1013 (an isolate from the IR-1-20 population that has a distinctively different mutational profile relative to CB1000) (Figure 4A). There are no significant changes in metabolites between any of the strains measured, with the possible exception of small apparent decreases in the levels of acetate and succinate in CB2000 as compared to Founder. Unlike D. radiodurans, there is no evidence of accumulation of intermediate metabolites that could act as antioxidants. The measured metabolites included glutathione, a molecule that plays a particularly important role in cellular redox chemistry.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01322/elife-01322-fig4-v1.jpg)
 
-**Figure 4.:** A), Measurements of metabolites from three representative evolved E. coli strains as compared to Founder.Metabolites from whole cell pellets collected during logarithmic growth in LB were identified using a two-dimensional 1H-13C Heteronuclear Single Quantum Coherence (HSQC) experiment. Each metabolite is expressed as a ratio of the amount measured in the evolved strain (CB1000, CB1013, or CB2000; black, gray, and white bars, respectively) relative to the Founder. (B) Ratios of manganese to iron are plotted for all isolates for which genomic sequences were obtained. The average increase in Mn/Fe ratio in strains derived from the further evolution of CB1000 is 1.4-fold.DOI: http://dx.doi.org/10.7554/eLife.01322.008
+**Figure 4.:** Metabolites from whole cell pellets collected during logarithmic growth in LB were identified using a two-dimensional 1H-13C Heteronuclear Single Quantum Coherence (HSQC) experiment. Each metabolite is expressed as a ratio of the amount measured in the evolved strain (CB1000, CB1013, or CB2000; black, gray, and white bars, respectively) relative to the Founder. (B) Ratios of manganese to iron are plotted for all isolates for which genomic sequences were obtained. The average increase in Mn/Fe ratio in strains derived from the further evolution of CB1000 is 1.4-fold.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01322/elife-01322-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** E. coli.Cells sampled during mid-logarithmic growth were subjected to trace metal analysis as described in ‘Materials and methods’. The amount of each metal was plotted as a ratio normalized to the amount of potassium present in each sample, K, which was chosen arbitrarily to correct for variation in metal extraction.DOI: http://dx.doi.org/10.7554/eLife.01322.009
+**Figure 4—figure supplement 1.:** Cells sampled during mid-logarithmic growth were subjected to trace metal analysis as described in ‘Materials and methods’. The amount of each metal was plotted as a ratio normalized to the amount of potassium present in each sample, K, which was chosen arbitrarily to correct for variation in metal extraction.
 
 We also used trace metal analysis to measure total metal content of all strains for which we obtained genomic sequences. Mn/Fe ratios are reported in Figure 4B, and complete listings of metal ion measurements are provided in Figure 4—figure supplement 1. In spite of the demonstrable increases in radiation resistance exhibited by all of our isolates, we did not see a significant change in the Mn/Fe ratio (nor significant increases in the concentration of either metal) in most of our directly evolved highly radioresistant strains of E. coli. There is a minor elevation in manganese in the one evolved isolate from population IR-4-20 (CB4000) and in some strains derived from the further evolution of CB1000. There is no universal change in metal content in the evolved strains that mirror the apparent adaptation seen in D. radiodurans and other IR-resistant bacteria.
 
@@ -146,66 +2222,66 @@ Contributions to the extreme IR resistance phenotype by additional biochemical p
 
 ## Materials and methods
 
-## Bacterial strains used in this study
+### Bacterial strains used in this study
 
 All strains used in this study are E. coli K-12 derivatives and are listed in Supplementary file 1D. Genetic manipulations were performed by site directed mutagenesis (Stratagene) and as previously described (Datsenko and Wanner, 2000).
 
-## Directed evolution of Escherichia coli
+### Directed evolution of Escherichia coli
 
 Radioresistant populations IR-1-20, IR-2-20, IR-3-20, and IR-4-20 were generated in a directed evolution experiment described previously (Harris et al., 2009). To further evolve the CB1000 isolate, 1 ml of mid logarithmic phase liquid culture grown in LB was placed into two 1.5 ml plastic tubes. One was archived at −80°C, and the other was exposed to IR (60Co source from a Shepherd model 484 irradiator; 19 Gy/min). After irradiation, appropriate dilutions were plated to estimate survival. The balance of the irradiated culture was used to inoculate fresh LB broth. Survivors were grown to stationary phase (12–18 hr) and the protocol was repeated. The administered radiation dose was adjusted to allow approximately 1% survival after 1 day at 37°C, with the dose increasing as radio-resistance increased. Survivors at the end of 20 and 30 rounds of irradiation constitute a population of cells, designated IR-CB1000-20 and IR-CB1000-30, respectively. Single colony isolates from both populations were isolated and designated with the prefix ‘CB’. All archived populations and strains were stored at −80°C with 15% vol/vol DMSO added as cryoprotectant.
 
-## High-throughput sequencing using an Illumina instrument
+### High-throughput sequencing using an Illumina instrument
 
 New evolved isolates described in this study, were sequenced at the Joint Genome Institute, Walnut Creek, CA, as detailed previously (Harris et al., 2009). We used Illumina-based next generation sequencing that typically generates very low error levels in bacterial genome sequencing. SNP calls required their presence in at least three reads. Typically, the SNPs were based on 50–150 reads. To estimate error levels, the sequence alignments for one dataset (CB2004) were examined manually. Since this is a haploid genome, loci which contained multiple alleles (a mixture or reference and ‘variant’ alleles) are indications of alignment errors or sequence specific errors (Nakamura et al., 2011) and were not called as SNPs No false positives were identified in the manual examination and we estimate their appearance at rates of <2%. If reads can be aligned to multiple locations in the genome, their exact placement is ambiguous and assigned a map quality score of zero (MQ = 0). It is not possible to call SNPs in regions that contain only MQ = 0 reads and false negative calls are potentially present. Approximately, 100,000 bp of the genome was covered by only MQ = 0 reads, and thus the potential for false negatives extends over about 2.2% of the genome.
 
-## IR survival assay
+### IR survival assay
 
 Cells from a fresh single colony of each strain were cultured in Luria–Bertani (LB) broth (Miller, 1992) at 37°C with aeration. After growth overnight, cultures were diluted 1:1000 into 10 ml fresh LB broth in 125 ml flasks and grown at 37°C with shaking until an optical density (OD600) of ∼0.2 was reached. Each culture was incubated on ice for 5 min before a 1 ml sample was transferred to an eppendorf tube and irradiated in a Mark I 137Cs irradiator (from JL Shepherd and Associates, San Fernando, CA, USA) for a time corresponding to 3 kGy (∼7 Gy/min). Irradiated samples as well as the non-irradiated control samples for each culture were diluted appropriately, and plated on LB 1.5% agar medium to determine the total number of colony forming units (CFUs). Percent survival was calculated by dividing the titer of the surviving population by the titer of the non-irradiated control sample. Initial cell densities ranged from 2 to 6 × 107 CFU/ml (average 4 × 107 CFU/ml). For each strain, 3–5 biological replicates were carried out.
 
-## IR survival competition assays
+### IR survival competition assays
 
 Cells from a fresh single colony of each strain were cultured in LB broth (Miller, 1992) at 37°C with aeration. After growth overnight, competition cultures were started by inoculating 10 ml fresh LB broth with 35 μl of competition Ara+ and Ara−strains in 125 ml flasks and grown at 37°C with shaking until an optical density (OD600) of ∼0.2 was reached. Each competition culture was incubated on ice for 5 min before a 1 ml sample was transferred to an eppendorf tube and irradiated in a Mark I 137Cs irradiator (from JL Shepherd and Associates, San Fernando, CA) for a time corresponding to 2 kGy and 3 kGy (∼7 Gy/min). Irradiated samples were diluted appropriately, and plated on TA plates to determine the total number of surviving red and white colony forming units. A non-irradiated control sample for each competition culture was diluted and plated to determine the titer of each culture and the percent Ara+ vs Ara−cells before irradiation. For each competition, three biological replicates were carried out. Percent survival was calculated by dividing the titer of the surviving population by the titer of the non-irradiated control sample, for both Ara+ and Ara−strains. Selection rate, r, also referred to as log(advantage), was calculated as log(N1(IR))/(N1(No-IR)) − log(N2(IR))/(N2(No-IR)), where N1(No-IR) and N2(No-IR) represent the initial densities of the two competing strains before IR treatment, and N1(IR) and N2(IR) represent the corresponding densities after IR exposure. Normally, in a direct competition experiment, plates with fewer than 20 colonies of either competitor are usually excluded to reduce the effect of outliers caused by low counts (Breed and Dotterrer, 1916). However, because the differences in fitness after IR treatment is so great between CB2000 Ara−and CB2000 wtRecA wtDnaB wtYfjK and between Founder Δe14 Ara−and Founder Δe14 RecA D276N DnaB P80H YfjK A151D, it was virtually impossible to retrieve at least 20 colonies of the sensitive strains in a range that we could also use to calculate the density of the resistant strains. The selection rates in Figure 3E are approximate, because there were less than 20 colonies counted on plates for the sensitive strains. However, the trend that we show in Figure 2 is strongly conserved. By reverting the three mutations in DNA metabolism genes, CB2000 loses virtually all of its IR resistance. We report in Figure 3E that when treated with 2000 Gy, CB2000 Ara− has at least a two log fitness advantage over CB2000 wtRecA wtDnaB wtYfjK and inversely, Founder Δe14 Ara- RecA D276N DnaB P80H YfjK P80H has at least a two log advantage over Founder Δe14. Because their sensitivities to IR were so similar, we did not have a problem with retrieving more than 20 colonies for each strain in the competition of Founder Δe14 and CB2000 wtRecA wtDnaB wtYfjK. Rather, CB2000 wtRecA wtDnaB wtYfjK had less than a half log advantage (less than threefold) over Founder Δe14, again illustrating the importance of mutations in these three genes for extreme radiation resistance.
 
-## RNA-seq
+### RNA-seq
 
 This method is reviewed in Croucher and Thomson (2010). Sample preparation: samples were prepared as described in (Durfee et al., 2008) with modification as described here. Cell growth: Overnight cultures from single-cell inoculates grown in LB were used to inoculate 20 ml of LB in a 125 ml flask with appropriate antibiotic to an initial OD600 of 0.02. Cultures were grown at 37°C with aeration until an OD600 of ∼0.2 was reached. Aliquots of 15 ml of each culture were mixed with 30 ml of RNAprotect bacterial reagent (Qiagen), inverted to mix, and incubated at room temperature for 5 min. Cells were centrifuged at 4000×g for 20 min at 4° and the cell pellets were stored at −80°C.
 
-## Total RNA isolation
+### Total RNA isolation
 
 Total RNA was isolated using the MasterPure RNA purification kit according to the manufacturer’s specifications (Epicentre, Madison, WI, USA). Nucleic acid pellets were treated with 0.05 U/µl DNase I for 45 min at 37°C and then repurified with MasterPure.
 
-## mRNA enrichment and cDNA synthesis
+### mRNA enrichment and cDNA synthesis
 
 10 μg of total RNA was enriched for mRNA by targeted removal of rRNA using the MICROBExpress bacterial mRNA enrichment kit (Ambion). The resulting enriched mRNA was isopropanol precipitated, and the pelleted mRNA resuspended in TE. The enriched mRNA concentration was quantified by A260 measurement on a NanoDrop 1000 instrument. 10 µg of purified total RNA was reverse transcribed using the Superscript II double-stranded cDNA kit (Invitrogen) followed by RNase digestion and cDNA purification by phenol chloroform extraction and precipitation.
 
-## Illumina sequencing and analysis
+### Illumina sequencing and analysis
 
 cDNA samples were submitted to JGI for library preparation and sequencing using the Illumina Genome Analyzer IIx to generate single-ended 36 bp reads. Libraries were prepared for sequencing according to the manufacturer’s instructions.
 
-## Analysis
+### Analysis
 
 Analysis was performed using the CLC-Bio Genomics Workbench version 3.7. There were two biological replicates for each of the three samples (Founder, CB1000, CB2000). Read ends were trimmed to remove low quality and ambiguous bases and all reads less than 20 nt were discarded. Trimmed reads were mapped to the annotated CDSs of the reference genome (E. coli K-12 MG1655 m56 reference genome, RefSeq Accession Number NC_000913.2) with two mismatches allowed and 10 bases of each read were allowed to map beyond ORF boundaries. Expression was calculated independently for each duplicate sample. Any read that could be mapped to more than four locations was discarded. Genes encoding rRNA and tRNA transcripts were masked by removing their annotations from the reference genome prior to mapping so that did not affect normalization expression estimates of protein-coding genes. Expression values were reported in RPKM (Mortazavi et al., 2008).
 
-## Differential expression
+#### Differential expression
 
 Differential expression, reported as fold-change, was determined by separately comparing the expression estimates of each pair of duplicate samples to the control samples. CB1000 and CB2000 were also directly compared. Prior to analysis, all expression values (E) were transformed into log2(E+1) and then standardized by adjusting each sample to the expression level corresponding to 1 million mapped reads. Fold changes were tested using Baggerly’s test (Baggerly et al., 2003) on the fold changes estimated both from the original RPKM values and the transformed/standardized values. The resulting p-values were independently corrected using the Bonferroni method and via a determination of the false discovery rate (FDR). Heat maps were generated from the transformed/standardized expression values and dendrograms showing the clustering of genes were computed using complete linkage with Pearson product–moment correlations as the distance metric.
 
-## Growth of E. coli for metal analysis
+#### Growth of E. coli for metal analysis
 
 Flasks were soaked in 2 N nitric acid for 12 hr and then transferred into 1% (vol/vol) nitric acid for 24 hr and rinsed in high-purity water to minimize metal contamination. Cells of CB1000, CB2000, CB3000, and CB4000 were cultured in LB broth at 37°C (Miller, 1992) with aeration in polypropylene tubes. After growth overnight, cultures were diluted 1:100 into 25 ml fresh LB broth in 50 ml polypropylene tubes and grown at 37°C with shaking until an optical density (OD600) of ∼0.2 was reached. This was performed in triplicate for each strain. Cultures were chilled for 10 min on ice before 10 ml were pelleted and resuspended in 1 ml fresh LB. Aliquots of 0.6 ml of cells were transferred to treated microcentrifuge tubes prepared by the metal analysis facility and pelleted. Cell pellets were stored at −20°C. To determine the titer of each cell pellet, appropriate dilutions were plated on LB 15% agar medium and incubated overnight at 37°C.
 
-## Metal analysis
+### Metal analysis
 
 Cell pellets were submitted for analysis in acid-cleaned polypropylene vials and treated at 40°C with ultrapure HNO3 and subsequently diluted to volume for analysis with 2% HNO3. Samples were analyzed in the Trace Element Clean Laboratory at the Wisconsin State Laboratory of Hygiene, Madison, WI, using high-resolution inductively coupled plasma mass spectrometry. Each sample was measured twice. The metal content is reported as μg per pellet of bacteria submitted.
 
-## NMR sample preparation
+### NMR sample preparation
 
 Overnight cultures of Founder, CB1000, CB2000, and CB1013 were diluted into 1L M9 media containing glucose in 6-L flasks to an initial OD600 of 0.05 and grown at 37°C with aeration. When an OD600 of ∼0.80 was achieved, cultures were chilled on ice for 30 min before being centrifuged at 8000 rpm for 10 min at 4°C in a JLA 8.1 rotor. The supernatant was discarded, and cell pellets were washed in 25 ml of 1X M9 salts and transferred to a JA-20 tube before centrifuged 20 min at 5000×g at 4°C. The supernatant was discarded and 16 ml of boiling water with 250 μM MES (2-(N-morpholino)ethanesulfonic acid) was added to each pellet, vortexed briefly to loosen the pellet, and placed in boiling water for 7.5 min. Tubes were briefly vortexed again, and then centrifuged in a JA-20 rotor at 7000×g for 20 min at 4°C to clear cell debris. The supernatant was poured off into a clean 50-ml sterile polypropylene tube and frozen.
 
-## NMR sample processing
+### NMR sample processing
 
 Supernatants were transferred to microfilters (Sartorius Stedim Vivaspin 20, 3000 MWCO). The low MW fraction was frozen and lyophilized. Dried metabolites were dissolved in 800 μl D2O containing 300 μl DSS and 300 μl NaN3 and titrated to pH 7.40 (±0.01) with DCl/NaOD as needed. Samples were transferred to 5-mm NMR tubes (Wilmad Lab Glass, Vineland, NJ, USA). Spectroscopy was performed at the Nuclear Magnetic Resonance Facility at Madison (NMRFAM) in Madison, WI on a 600 MHz Varian Spectrometer with a cryoprobe and VNMRJ software. Two-dimensional 1H-13C HSQC spectra were acquired using 4 transits, 32 steady state transits, 0.3 s acquisition time, and 512 increments.
 
-## NMR analysis
+### NMR analysis
 
 Analysis was performed using rNMR, an open source software package developed at NMRFAM (Lewis et al., 2009). To quantify signals, standard compounds of the observed metabolites were prepared at 2, 5, and 10 mM. The resonances from these compounds were linearly regressed in order to measure concentration as a function of intensity. The samples were normalized to 5 mM MES and their resultant peak intensities used to obtain concentrations of the measured metabolites using the regression slopes.

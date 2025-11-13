@@ -37,28 +37,28 @@
 
 ### Affiliations
 
-1. https://ror.org/04js17g72 Environmental Health and Ecological Sciences Department, Ifakara Health Institute Dar es salaam United Republic of Tanzania
-2. https://ror.org/00vtgdb53 Boyd Orr Centre for Population and Ecosystem Health, School of Biodiversity, One Health & Veterinary Medicine, University of Glasgow Glasgow United Kingdom
-3. https://ror.org/041vsn055 Department of Global Health and Biomedical Sciences, School of Life Sciences and Bioengineering, Nelson Mandela African Institution of Science and Technology Arusha United Republic of Tanzania
-4. https://ror.org/00hx57361 Department of Ecology and Evolutionary Biology, Princeton University Princeton United States
-5. https://ror.org/02y9nww90 The University of Nairobi Nairobi Kenya
-6. https://ror.org/00n5re093 College of the Atlantic Bar Harbor United States
-7. https://ror.org/0378g3743 Animal & Plant Health Agency Weybridge United Kingdom
-8. https://ror.org/00jdryp44 Department of Veterinary Medicine and Public Health, Sokoine University of Agriculture Morogoro United Republic of Tanzania
-9. https://ror.org/00ks66431 Department of Comparative Biomedical Sciences, School of Veterinary Medicine, University of Surrey Guildford, Surrey United Kingdom
-10. https://ror.org/03vt2s541 Ministry for Health and Social Welfare Zanzibar United Republic of Tanzania
-11. https://ror.org/0369jpd83 Ministry of Livestock Development and Fisheries Dodoma United Republic of Tanzania
+1. Environmental Health and Ecological Sciences Department, Ifakara Health Institute Dar es salaam United Republic of Tanzania ([ROR:04js17g72](https://ror.org/04js17g72))
+2. Boyd Orr Centre for Population and Ecosystem Health, School of Biodiversity, One Health & Veterinary Medicine, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+3. Department of Global Health and Biomedical Sciences, School of Life Sciences and Bioengineering, Nelson Mandela African Institution of Science and Technology Arusha United Republic of Tanzania ([ROR:041vsn055](https://ror.org/041vsn055))
+4. Department of Ecology and Evolutionary Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+5. The University of Nairobi Nairobi Kenya ([ROR:02y9nww90](https://ror.org/02y9nww90))
+6. College of the Atlantic Bar Harbor United States ([ROR:00n5re093](https://ror.org/00n5re093))
+7. Animal & Plant Health Agency Weybridge United Kingdom ([ROR:0378g3743](https://ror.org/0378g3743))
+8. Department of Veterinary Medicine and Public Health, Sokoine University of Agriculture Morogoro United Republic of Tanzania ([ROR:00jdryp44](https://ror.org/00jdryp44))
+9. Department of Comparative Biomedical Sciences, School of Veterinary Medicine, University of Surrey Guildford, Surrey United Kingdom ([ROR:00ks66431](https://ror.org/00ks66431))
+10. Ministry for Health and Social Welfare Zanzibar United Republic of Tanzania ([ROR:03vt2s541](https://ror.org/03vt2s541))
+11. Ministry of Livestock Development and Fisheries Dodoma United Republic of Tanzania ([ROR:0369jpd83](https://ror.org/0369jpd83))
 12. Department of Epidemiology, Ministry of Health, Community Development, Gender, Elderly and Children (MoHCDGEC) Dodoma United Republic of Tanzania
-13. https://ror.org/0369jpd83 Department of Livestock Development, Pemba, Ministry of Livestock Development and Fisheries Zanzibar United Republic of Tanzania
+13. Department of Livestock Development, Pemba, Ministry of Livestock Development and Fisheries Zanzibar United Republic of Tanzania ([ROR:0369jpd83](https://ror.org/0369jpd83))
 14. Tanzania Veterinary Laboratory Agency Dar es salaam United Republic of Tanzania
-15. https://ror.org/0479aed98 Mbeya college of Health and Allied Sciences, University of Dar es Salaam Mbeya United Republic of Tanzania
-16. https://ror.org/01a77tt86 University of Warwick Coventry United Kingdom
+15. Mbeya college of Health and Allied Sciences, University of Dar es Salaam Mbeya United Republic of Tanzania ([ROR:0479aed98](https://ror.org/0479aed98))
+16. University of Warwick Coventry United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))
 
 † Corresponding author
 
 ## Abstract
 
-Dog-mediated rabies is endemic across Africa causing thousands of human deaths annually. A One Health approach to rabies is advocated, comprising emergency post-exposure vaccination of bite victims and mass dog vaccination to break the transmission cycle. However, the impacts and cost-effectiveness of these components are difficult to disentangle. We combined contact tracing with whole-genome sequencing to track rabies transmission in the animal reservoir and spillover risk to humans from 2010 to 2020, investigating how the components of a One Health approach reduced the disease burden and eliminated rabies from Pemba Island, Tanzania. With the resulting high-resolution spatiotemporal and genomic data, we inferred transmission chains and estimated case detection. Using a decision tree model, we quantified the public health burden and evaluated the impact and cost-effectiveness of interventions over a 10-year time horizon. We resolved five transmission chains co-circulating on Pemba from 2010 that were all eliminated by May 2014. During this period, rabid dogs, human rabies exposures and deaths all progressively declined following initiation and improved implementation of annual islandwide dog vaccination. We identified two introductions to Pemba in late 2016 that seeded re-emergence after dog vaccination had lapsed. The ensuing outbreak was eliminated in October 2018 through reinstated islandwide dog vaccination. While post-exposure vaccines were projected to be highly cost-effective ($256 per death averted), only dog vaccination interrupts transmission. A combined One Health approach of routine annual dog vaccination together with free post-exposure vaccines for bite victims, rapidly eliminates rabies, is highly cost-effective ($1657 per death averted) and by maintaining rabies freedom prevents over 30 families from suffering traumatic rabid dog bites annually on Pemba island. A One Health approach underpinned by dog vaccination is an efficient, cost-effective, equitable, and feasible approach to rabies elimination, but needs scaling up across connected populations to sustain the benefits of elimination, as seen on Pemba, and for similar progress to be achieved elsewhere. Wellcome [207569/Z/17/Z, 095787/Z/11/Z, 103270/Z/13/Z], the UBS Optimus Foundation, the Department of Health and Human Services of the National Institutes of Health [R01AI141712] and the DELTAS Africa Initiative [Afrique One-ASPIRE/DEL-15-008] comprising a donor consortium of the African Academy of Sciences (AAS), Alliance for Accelerating Excellence in Science in Africa (AESA), the New Partnership for Africa’s Development Planning and Coordinating (NEPAD) Agency, Wellcome [107753/A/15/Z], Royal Society of Tropical Medicine and Hygiene Small Grant 2017 [GR000892] and the UK government. The rabies elimination demonstration project from 2010-2015 was supported by the Bill & Melinda Gates Foundation [OPP49679]. Whole-genome sequencing was partially supported from APHA by funding from the UK Department for Environment, Food and Rural Affairs (Defra), Scottish government and Welsh government under projects SEV3500 and SE0421.
+Background:Dog-mediated rabies is endemic across Africa causing thousands of human deaths annually. A One Health approach to rabies is advocated, comprising emergency post-exposure vaccination of bite victims and mass dog vaccination to break the transmission cycle. However, the impacts and cost-effectiveness of these components are difficult to disentangle.Methods:We combined contact tracing with whole-genome sequencing to track rabies transmission in the animal reservoir and spillover risk to humans from 2010 to 2020, investigating how the components of a One Health approach reduced the disease burden and eliminated rabies from Pemba Island, Tanzania. With the resulting high-resolution spatiotemporal and genomic data, we inferred transmission chains and estimated case detection. Using a decision tree model, we quantified the public health burden and evaluated the impact and cost-effectiveness of interventions over a 10-year time horizon.Results:We resolved five transmission chains co-circulating on Pemba from 2010 that were all eliminated by May 2014. During this period, rabid dogs, human rabies exposures and deaths all progressively declined following initiation and improved implementation of annual islandwide dog vaccination. We identified two introductions to Pemba in late 2016 that seeded re-emergence after dog vaccination had lapsed. The ensuing outbreak was eliminated in October 2018 through reinstated islandwide dog vaccination. While post-exposure vaccines were projected to be highly cost-effective ($256 per death averted), only dog vaccination interrupts transmission. A combined One Health approach of routine annual dog vaccination together with free post-exposure vaccines for bite victims, rapidly eliminates rabies, is highly cost-effective ($1657 per death averted) and by maintaining rabies freedom prevents over 30 families from suffering traumatic rabid dog bites annually on Pemba island.Conclusions:A One Health approach underpinned by dog vaccination is an efficient, cost-effective, equitable, and feasible approach to rabies elimination, but needs scaling up across connected populations to sustain the benefits of elimination, as seen on Pemba, and for similar progress to be achieved elsewhere.Funding:Wellcome [207569/Z/17/Z, 095787/Z/11/Z, 103270/Z/13/Z], the UBS Optimus Foundation, the Department of Health and Human Services of the National Institutes of Health [R01AI141712] and the DELTAS Africa Initiative [Afrique One-ASPIRE/DEL-15-008] comprising a donor consortium of the African Academy of Sciences (AAS), Alliance for Accelerating Excellence in Science in Africa (AESA), the New Partnership for Africa’s Development Planning and Coordinating (NEPAD) Agency, Wellcome [107753/A/15/Z], Royal Society of Tropical Medicine and Hygiene Small Grant 2017 [GR000892] and the UK government. The rabies elimination demonstration project from 2010-2015 was supported by the Bill & Melinda Gates Foundation [OPP49679]. Whole-genome sequencing was partially supported from APHA by funding from the UK Department for Environment, Food and Rural Affairs (Defra), Scottish government and Welsh government under projects SEV3500 and SE0421.
 
 ## Introduction
 
@@ -72,17 +72,17 @@ Dog-mediated rabies is endemic in East Africa where thousands of human rabies de
 
 ## Methods
 
-## Study population
+### Study population
 
 Pemba (988 km2) is situated fifty kilometres from the Tanzanian mainland. The island comprises four administrative districts with 121 villages (shehias) and a projected human population of 438,765 in 2020 (National Bureau of Statistics Tanzania, 2012). The human: dog ratio is very high (~118 humans to 1 dog), in this predominantly muslim population. Almost all dogs on Pemba are unconfined and 10–20% are thought to be unowned, potentially posing a problem for reaching the vaccination coverage needed for elimination using central point vaccination strategies.
 
-## Epidemiological and laboratory investigations
+### Epidemiological and laboratory investigations
 
 Records of bite patients presenting to health facilities and of suspect or probable rabid animals reported to the district veterinary offices on Pemba Island from January 2010 until January 2021 were used to initiate contact tracing (Mancy et al., 2022). Bite victims and, if known, the owners of biting animals were exhaustively traced, recording details of all bite incidents, including dates and coordinates. Other people or animals that were identified as bitten were further traced. The status of animals was assessed from their reported behaviour and outcome (whether they died, disappeared or survived), and classified according to WHO case definitions (World Health Organization, 2018a). Briefly, an animal showing any clinical signs of rabies was considered a suspect case; if a suspect case had a reliable history of contact with a suspect rabid animal and/or was killed, died or disappeared within 10 days of observation of illness, the animal was considered a probable case. Animals that remained alive for more than 10 days after biting a person, were considered healthy. Brain tissue samples were collected from animal carcasses for diagnostic testing whenever possible (Rupprecht et al., 2018).
 
 Two batches of sequencing were performed to obtain 16 near whole-genome sequences (WGS) of rabies virus (RABV) from dog brain samples collected on Pemba, with the approach changing as protocols and capacity for in-country sequencing developed (Brunker et al., 2020). Eight of these sequences have been previously published within a methods paper (Brunker et al., 2020) and 8 are published for the first time here. The latter are archived 2011/12 samples (3) and samples (5) from early outbreak surveillance (September/October 2016) that were confirmed RABV positive at Pemba Veterinary Laboratory Department and shipped to the Animal & Plant Health Agency (APHA), UK. Total RNA was extracted using Trizol (Invitrogen) and a real-time PCR assay (Marston et al., 2019) was performed to confirm the presence of RABV and indicate viral load. Metagenomic sequencing libraries were prepared and sequenced on an Illumina MiSeq as previously described (Brunker et al., 2015). Subsequent sequencing of the 8 additional samples (September 2016 to May 2017) was conducted in-country in August 2017 at the Tanzania Veterinary Laboratory Agency (TVLA) following an end-to-end protocol using a multiplex PCR approach (Quick et al., 2016) for MinION (Oxford Nanopore Technology, Oxford, UK) sequencing of RABV genomes (Brunker et al., 2020). Fourteen previously unpublished WGS (via the metagenomic approach) from mainland Tanzania (2009 to 2017) are also published here and included in analyses. The newly published sequences are detailed in Supplementary file 1.
 
-## Control and prevention measures
+### Control and prevention measures
 
 We compiled data on rabies control and prevention measures implemented on Pemba, including numbers and timing of dog vaccination campaigns, and costs of dog vaccination and PEP provisioning (Supplementary file 2).
 
@@ -92,21 +92,41 @@ As part of the demonstration project PEP was procured for free provisioning at P
 
 In late 2016, a rabies outbreak was detected. The initial government response involved conducting central point dog vaccination campaigns in shehias reporting cases. However, these efforts were limited. Island-wide vaccination campaigns were therefore conducted from 2017 onwards, including door-to-door vaccination in some shehias where dog owners could not bring dogs to allocated central points. In 2017, the government of Zanzibar also began to subsidise PEP, making vaccines free-of-charge at Pemba’s main hospital and in hospitals in Zanzibar (1 day’s ferry travel), otherwise, post-exposure vaccines were available to purchase on the mainland.
 
-## Analyses
+### Analyses
 
-## Dog population and vaccination coverage
+#### Dog population and vaccination coverage
 
-To estimate time-varying vaccination coverage at the shehia level, it was necessary to first estimate dog population sizes. This was achieved using two datasets: (1) government dog population surveys for the years 2012 and 2017–2019, and (2) post-vaccination transects from the 2013 to 2014 vaccination campaigns together with associated numbers of dogs vaccinated in the preceding campaigns. Where at least one collared (i.e. vaccinated) dog and >10 total dogs were observed on a transect, the dog population of a shehia at the time of the transect was estimated as:D=Vd1+PARCdCd+Ud
+To estimate time-varying vaccination coverage at the shehia level, it was necessary to first estimate dog population sizes. This was achieved using two datasets: (1) government dog population surveys for the years 2012 and 2017–2019, and (2) post-vaccination transects from the 2013 to 2014 vaccination campaigns together with associated numbers of dogs vaccinated in the preceding campaigns. Where at least one collared (i.e. vaccinated) dog and >10 total dogs were observed on a transect, the dog population of a shehia at the time of the transect was estimated as:
+
+$$
+D=\frac{V_{d}1+PAR}{\frac{C_{d}}{C_{d}+U_{d}}}
+$$
 
 where D is the dog population size, Vd is the number of dogs vaccinated in the campaign preceding the transect, Cd is collared dogs, Ud is unmarked dogs, and PAR is the ratio of pups (<3 months) to adult dogs (Sambo et al., 2018). PAR was estimated to be 0.256 from a census of the Serengeti District dog population in Northern Tanzania between 2008–2016 (Sambo et al., 2017). By multiplying by (1+PAR), we assume both that vaccination campaigns fail to reach pups, and that pups are not counted during transects (Sambo et al., 2018).
 
 At least one Government or transect-based dog population estimate was available for each shehia, with some having estimates at up to six time points. For each shehia, the dog population in every month throughout the study period for which we did not already have an estimate was then projected. For months that lay between two known population estimates, a population projection was obtained via the exponential growth rate calculated between those two estimates. For months where there was only a preceding or subsequent dog population estimate available, we projected the population based on a human:dog ratio calculated from this preceding/subsequent estimate and the human population projected from the 2012 national census (National Bureau of Statistics Tanzania, 2012). In some cases, the projected dog population obtained for a month using this approach was lower than the number of dogs vaccinated during a campaign in that month. Where this occurred, the population estimates were adjusted as necessary to prevent coverage estimates exceeding 100%.
 
-The coverage achieved by each vaccination campaign in each shehia was obtained by dividing the number of dogs vaccinated by the estimated dog population for the month when the campaign occurred. We estimated the monthly number of dogs with vaccine-induced immunity as follows:λ=e−(1v+d)(112)min(1,DmDm−1)Pm={max(0,Vm−1λ−Nm),ifJanuarymax(0,Pm−1λ−Nm),ifanyothermonthVm=min(Dm,Vm−1λ+max(0,Nm−Pm−1λ))
+The coverage achieved by each vaccination campaign in each shehia was obtained by dividing the number of dogs vaccinated by the estimated dog population for the month when the campaign occurred. We estimated the monthly number of dogs with vaccine-induced immunity as follows:
+
+$$
+\lambda=e^{−(\frac{1}{v}+d)(\frac{1}{12})}min(1,\frac{D_{m}}{D_{m−1}})
+$$
+
+
+
+$$
+P_{m}={max(0,V_{m−1}\lambda−N_{m}),ifJanuarymax(0,P_{m−1}\lambda−N_{m}),ifanyothermonth
+$$
+
+
+
+$$
+V_{m}=min(D_{m},V_{m−1}\lambda+max(0,N_{m}−P_{m−1}\lambda))
+$$
 
 where Vm is the number of immune dogs at month m, Nm is the number of newly vaccinated dogs at m, Dm is the dog population at m estimated using the methods described above, and Pm is the number of immune dogs that were vaccinated during campaigns in previous years, not in the current year. Immunity wanes according to both v, the mean duration of vaccine-induced immunity (assumed to be 3 years), and d=0.595, the annual dog death rate (Czupryna et al., 2016). This approach conservatively assumes both that dogs that are immune from previous campaigns are preferentially vaccinated in subsequent campaigns and that, if the dog population declines between months, then this is a consequence of an above average death rate, rather than a below average birth rate. It also assumes that any top-up campaigns in a shehia in the current year focus on vaccinating susceptible dogs, avoiding re-vaccination of already vaccinated animals.
 
-## Phylogenetics
+### Phylogenetics
 
 Sequence data were used to understand the source and timing of introductions to Pemba and to resolve transmission chains. Raw sequence reads were processed and underwent quality control filtering (Brunker et al., 2020; Brunker et al., 2015). Pemba sequences were submitted to RABV-GLUE to determine which global RABV subclade they belonged to (Campbell et al., 2022). Clade assignment indicated that all Pemba sequences grouped within the RABV minor clade Cosmopolitan-AF1b. Therefore, an exploratory dataset of publically available genome sequences (coverage >90% of genome) from the Cosmopolitan-AF1b clade was obtained from RABV-GLUE (n=244) and supplemented with new sequences published in this paper (n=22, Supplementary file 1). Since the genome region and number of sequences varied widely in publically available data, an additional analysis was undertaken using an alignment, downloaded from RABV-GLUE, of all Cosmopolitan-AF1b sequences up to the year 2017 (inclusive) regardless of genome position or length.
 
@@ -116,7 +136,7 @@ A Bayesian discrete phylogeographic analysis was conducted in BEAST v1.10.4 on t
 
 The full dataset (i.e. all available sequences) extracted from RABV-GLUE was combined with the new sequences generated in this paper (n=22, Supplementary file 1) using MAFFT’s function to add new sequences to an existing alignment. R was used to categorise data into sequence types as follows: partial gene length sequences typically obtained from polymerase chain reaction (PCR) based diagnostic assays, full length (>90% coverage) gene sequences (gene) and whole (>90% coverage) genome sequences (WGS). Sequences were further categorised into genome position by gene: nucleoprotein (n), phosphoprotein (p), matrix protein (m), glycoprotein (g), RNA polymerase (l). This facilitated detailed exploration of publicly available RABV sequence data to obtain the most informative datasets to compare Pemba outbreak sequences. Background ML phylogenies were produced in IQ-TREE with default settings, using alignments of the variable length gene sequences. Extreme outliers with long branches (upper and lower 1st percentile of branch length distribution) were removed and a subtree extracted stemming from the most recent common ancestor (or one node back from) of all Pemba (historical and outbreak) sequences. Sequences from these subtrees (N and G gene) were subject to a more robust phylogenetic reconstruction with rapid bootstrapping in IQ-TREE and an outgroup sequence from the Cosmopolitan-AF1a minor clade (GenBank Accession: KC196743).
 
-## Transmission trees
+### Transmission trees
 
 Using the case data, we reconstructed transmission trees building on previously described methods (Mancy et al., 2022). Traced progenitors were assigned, otherwise links between cases were inferred probabilistically from dispersal kernel and serial interval distributions incorporating uncertainties in timings. We used distributions previously parameterized from contact tracing in northwest Tanzania (Lognormal serial interval, meanlog 2.85, sdlog 0.966, n=1107 rabid dog case histories; Weibull distance kernel, shape 0.698, scale 1263.954, n=6626 rabid dog biting incidents, with 3275 right-censored due to the unknown start location of the biting dog) (Mancy et al., 2022).
 
@@ -128,7 +148,7 @@ The effective reproduction number Re, which describes transmission in the presen
 
 We estimated the case detection achieved from our contact tracing using recently developed analytical methods (Mancy et al., 2022; Cori et al., 2018). Specifically, we used the times between statistically or directly-linked cases from the transmission tree reconstructions and the serial interval distribution for rabies, to fit the simulated distribution of numbers of unobserved intermediates, assuming all infected individuals have the same probability of being detected. To account for the long-tailed distribution of serial intervals, we sorted simulated values for initial intervals to most closely match observed values (i.e. so long incubators are accounted for and not always taken to be cases with multiple generations separating them from their progenitors). This approach with sorting generally performs better than the unsorted approach (Mancy et al., 2022) but tends to underestimate detection probabilities by about 10%, in particular for values between 0.3 and 0.75. We examined the fit across a range of detection probabilities for the endemic period (2010–2014), the subsequent outbreak (2016–2018) and overall, applying the method to 100 bootstrapped trees generated by the pruning strategies (with and without genetic information), and to the majority tree and the MCC tree, taking the mean of 10 estimates as the detection probability for each tree.
 
-## Cost-effectiveness analyses
+### Cost-effectiveness analyses
 
 We used the contact tracing data to inform a probabilistic decision tree model to estimate the impacts and cost-effectiveness of interventions on Pemba (Figure 6). We compared a baseline scenario without dog vaccination and with patients charged for PEP (as was initially the case on Pemba), with scenarios of free PEP provisioning but without dog vaccination, and with both free PEP and sustained island-wide dog vaccination carried out annually, that is, a One Health approach, over a ten-year time horizon. From compiled cost data (Supplementary file 2), we estimated the per campaign cost of island-wide dog vaccination and the per patient cost of PEP for use in the model. We estimated the probability of rabies-exposed bite victims starting and completing PEP (defined as at least 3 doses) from 2010 to 2015 (when most bite victims paid for PEP) and 2016–2020 (when most bite victims received free PEP), and the frequency of healthy dog bite victims presenting for PEP. After adjusting for case detection, we sampled the time series of rabid dogs on Pemba, to generate rabies incidence under scenarios with and without dog vaccination. For scenarios with dog vaccination, we assumed the first campaign took place in year one, translating to reduced incidence from year two onwards, as per the contact tracing data, sampled from 2010 to 2015 and from 2016 to 2020 with zero incidence thereafter. Using negative binomial parameters fitted to the offspring distribution of bite victims per rabid dog, adjusted for case detection, we simulated corresponding time series of rabies exposures. We tuned the simulated incidence of healthy bite patients to match the data under these scenarios. Parameter estimates for probabilities of starting and completing PEP and for rabies progression in the absence of PEP (Hampson et al., 2019) were used to estimate deaths and deaths averted. We took the perspective of the health provider and report cost-effectiveness per death averted, with costs discounted at 3%. All monetary values presented are in 2023 US dollars.
 
@@ -140,9 +160,69 @@ Rabies was endemic on Pemba in 2010 at the start of the study. That year we trac
 
 **Figure 1.:** (A) Monthly time series of traced human rabies exposures (red) and deaths (black), and patients presenting to clinics from bites by both healthy and rabid dogs (grey line). Periods when PEP was provided free of charge are indicated by the grey horizontal bars, as well as periods of shortages (red horizontal bar). (B) Dog rabies cases (orange) in relation to average dog vaccination coverage across the island (black line). (C) Location of Pemba (red) off the coast of mainland Tanzania. (D) Density of Pemba’s dog population and location of the four government hospitals that provide PEP (red squares), one in each district. (E) Dog rabies cases (orange circles) and human rabies exposures (red circles) and deaths (black circles) each year. Shading indicates dog vaccination coverage in December of each year, projected from the timing of shehia-level campaigns, dog turnover and a mean vaccine-induced immunity duration of three years. The arrows point to the last detected animal case in 2014, first detection in the 2016 outbreak and the final case found in 2018.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig2-v2.jpg)
+
+**Figure 2.:** (A) The effective reproductive number, Re (black line shows smoothed estimate from a LOESS regression against date of case) with 95% confidence interval (grey envelope) and mean secondary cases from each traced rabid dog inferred from the bootstrapped transmission trees (points). The grey dashed line indicates an Re equal to 1. (B) Inferred offspring distribution of bite victims from rabid dogs. Points/ bars are coloured by transmission chain (see methods and Figure 4) with unobserved rabid dogs that did not bite (122 inferred from our estimates of case detection) in grey. A negative binomial distribution fit to the offspring distribution had μ=0.75 and k=0.54 (fitting to 2010–2014: μ=0.37, k=0.42 and for 2016–2018: μ=1.28, k=1.07).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Number of secondary cases resulting from each case was averaged across the bootstrapped set of transmission trees generated by pruning to be consistent to the phylogeny. The points are the mean values for each case coloured by their consensus lineage assignment. For algorithms not using genetic data, the points are not coloured as they are not assigned to a lineage. Vaccination coverage is estimated at the time of symptoms in the shehia where the case occurred. The grey dashed line indicates an R of 1.
+
 In August 2016, an influx of bite patients was seen in hospitals on Pemba. By the year end, we had traced 35 human rabies exposures and 27 dog rabies cases. In response to this outbreak, the Ministry of Livestock and Fisheries Development initiated dog vaccination in shehias with recorded dog cases, but because the outbreak spread rapidly, islandwide dog vaccination was reinstated. In 2017, we traced three human rabies deaths, 126 rabies exposures and 62 rabid dogs (26.6 exposures and 0.63 deaths/100,000 people, and 19.6 cases/1000 dogs). High vaccination coverage was achieved consecutively over subsequent annual dog vaccination campaigns from 2017 to 2020 (median 61%, range 46–78% in 2019, Figure 1). Incidence rapidly declined from the 2017 peak with 19 human rabies exposures and 8 dog rabies cases detected in 2018. At the start of the outbreak Re was high (>1.5), but subsequently declined to <1, with all transmission interrupted by October 2018 (Figure 2). No human rabies exposures, deaths or rabid dogs have been identified since (as of September 2022).
 
 Phylogenetic analyses indicated considerable viral diversity from 2010 to 2014 (Figure 3). Pruning by time split the reconstructed tree into two transmission chains, from 2010 to 2014 and 2016 to 2018, respectively. Integrating the phylogenetic data further split the transmission chains into varying sizes associated with each sampled lineage, consequently resolving five distinct transmission chains from 2010 to 2014 (Figure 4, Video 1). During this period we detected approximately 54% of dog rabies cases circulating on the island (95% credible intervals (95% CI) 46.4–62.0%, 92 of an estimated 171 rabid dogs 95% CI: 148–198 rabid dogs, Figure 5). Further pruning by the dispersal kernel distance threshold created an additional 3–4 unsampled transmission chains and 5–6 orphaned cases, likely because links connecting these cases were either missed or human-mediated. At least one divergent lineage (reported as Tz5 in Brunker et al., 2020) is known to have circulated during this period. Figure 4—figure supplements 3–5 show in grey cases that were not grouped by the current phylogenetic assignment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig3-v2.jpg)
+
+**Figure 3.:** (A) Time-calibrated MCC tree of 153 whole-genome sequences from Tanzania, including 13 from the 2016–2018 Pemba outbreak and 6 historical Pemba sequences (2010–2012). Grey vertical bar highlights the window of emergence for the most recent common ancestors of the two introductions that led to the 2016 outbreak (2014.33–2016.29). The expanded subtrees (B and C) show the Pemba cases one node back from the most recent common ancestor of the 2016 introductions, with branches coloured according to the inferred ancestral location. Black diamonds indicate nodes with >90% posterior support (clade credibilities). Mainland clusters of more than one identical sequence are collapsed. Grey bars represent the 95% highest posterior density interval of node heights, that is estimated age of ancestral nodes. Names of sequences are shown so they can be related to metadata (Supplementary file 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sequences obtained from RABV-GLUE (n=2557) (A) Spatial distribution of sequences across Africa categorised by type: partial gene length sequences typically from polymerase chain reaction diagnostics, full length (>90% coverage) gene sequences (gene) and whole (>90% coverage) genome sequences (wgs). (B) Number of sequences per gene (pcr or whole gene) or whole genome. Nucleoprotein (n), phosphoprotein (p), matrix protein (m), glycoprotein (g), RNA polymerase (l).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Subtrees extracted from background phylogenies constructed from datasets of N (n=1042) or G sequences (n=1876). (A & B) Pemba cases from cluster 1 (red), shown in main text Figure 2b, in relation to N and G gene sequences respectively; (C & D) Pemba cases from cluster 2 (blue), shown in main text Figure 2c, in relation to N and G gene sequences. Tip labels indicate metadata in the format <isolate id | GenBank accession | country | location | year>. Bootstrap values are shown next to nodes of interest in grey text and scale bars represent the number of substitutions per site.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-v2.jpg)
+
+**Figure 4.:** (A) Time series of cases coloured by their transmission chain. (B) Consensus transmission tree (the highest probability transmission links that generate a tree consistent with the phylogeny) with chains pruned such that all unsampled cases are assigned to a sequenced chain of transmission. (C) Spatial distribution of these cases over the two periods. In (B), sequenced viruses from sampled cases are indicated by squares with a black outline, while only the tips are shown for unsampled cases. In (C), unsampled cases are shown by a filled circle. In all panels, the data are coloured by the transmission chain they were assigned to.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) We first assigned progenitors probabilistically based on the serial interval distribution and dispersal kernel, as previously described (Mancy et al., 2022) and built a directed graph based on this tree. (B) We then identify the paths between mismatched edges that are inconsistent with phylogenetic assignments (thin blue lines) and select the links to break first by filtering to the most frequently occurring edges before selecting one edge per path by the scaled probability of the link (selected links to remove are indicated by the red dashed lines, note that the same edge can be removed to resolve multiple phylogenetic mismatches). (C) For cases where links were removed, we reassign progenitors sequentially (in a random order), rescaling the probability to only those progenitors that can generate phylogenetically consistent trees (dashed lines). If no phylogenetically consistent progenitor is identified the case becomes the index case of the transmission chain. Panel (D) shows the final tree with phylogenetically consistent links between cases.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The distribution of topological uncertainty (that is what proportion of links in each bootstrapped tree were in the consensus tree) for approaches pruning by time and/or distance thresholds (y-axis) and using epidemiological data only vs. integrating phylogenetic data. (B) For approaches integrating genetic data, the comparison of the consensus progenitor probabilities (i.e. the proportion of times the most frequent progenitor is selected for each) vs. transmission chain probabilities (the proportion of times a case is assigned to the most frequent lineage). (C) For approaches integrating genetic data, the probability at which each unsampled case (x-axis, ordered by the date of symptoms) is assigned to a sampled lineage (y-axis ordered by date of symptoms; chains that were entirely unsampled are at the top). The black line separates pre-2015 cases from those that occurred after i.e. from the outbreak that began in 2016. These plots show how once trees are pruned by the distance kernel cutoff, more cases have a high probability of not being assigned to a genetic lineage.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Squares indicate cases that were sampled, and their viruses sequenced, and circles indicate cases without sequence data. The top row therefore illustrates progenitor assignments (and resulting trees) without lineage assignments from sequence data although sequenced cases coloured by lineage are shown. Without pruning all cases are assigned to a single consensus tree (top left), which is split into two trees, and then multiple lineages when pruned by time (centre) and distance (right) cutoffs, respectively. Horizontal lines delineate lineages, which increase with use of sequence data and pruning. Grey cases apparent in trees when sequence data is included, represent orphaned singletons or relatively short-transmission chains for which immediate progenitors are not assigned when pruning is applied.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Squares indicate cases that were sampled, and their viruses sequenced, and circles indicate cases without sequence data. Tree interpretation follows the guidance detailed for (Figure 4—figure supplement 3) and visual differences between trees illustrated in Figure 4—figure supplements 3–5 indicate different progenitor assignments under the alternate tree summaries.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Squares indicate cases that were sampled, and their viruses sequenced, and circles indicate cases without sequence data. Tree interpretation follows the guidance detailed for Figure 4—figure supplement 3 and visual differences between trees illustrated in Figure 4—figure supplements 3–5 indicate different progenitor assignments under the alternate tree summaries.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Probability of progenitor assignments for each case (across 1000 trees) and (B) pairwise probability of each case pair belonging to the same transmission chain (i.e. of being assigned to the same chain for each case pair across all 1000 trees). Progenitor assignments get increasingly constrained with increased stringency of pruning criteria (left to right). Without pruning or inclusion of sequence data, all cases are assigned to a single tree (B, top left). Sequence data and time interval cutoffs lead to differentiation of lineages, whereas distance cutoffs increase orphaned cases, likely due to increased separation from unsampled intermediates or human-mediated movement of incubating animals.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig5-v2.jpg)
+
+**Figure 5.:** (A) Estimated detection probabilities from simulated times between linked cases given a known detection probability (x-axis). Colours indicate the number of detected cases used in the simulations. The points show the mean and the lines the range of 10 estimates per simulation. The black dashed line shows the 1:1 line and the grey dashed line the 1.1:1 line. Estimates of detection from these simulations are generally recoverable, although with smaller sample sizes, the estimates are more dispersed. (B) Detection probabilities estimated from times between linked cases using the tree algorithm with pruning by the phylogenetic data only. For the estimation, the times between linked cases for a subsample of bootstrapped trees (N=100), as well as the MCC and the majority tree were used. The colours indicate the period for which estimates were generated, 2010–2014 (pre-elimination), 2016–2018 (reemergence) and overall combining cases. (C) Probability of detecting at least one case given estimated detection probabilities and chain sizes (x-axis) with colours corresponding to the period for which estimates were generated.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85262/elife-85262-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** For the estimation of case detection, the times between linked cases for a subsample of bootstrapped trees (N=100), as well as the MCC and the majority tree were used. The colours indicate the period for which estimates were generated, 2010–2014 (the pre-elimination period), 2016–2019 (the reemergence period) and overall combining cases. We found estimates to be robust to the alternative tree pruning algorithms, and with and without phylogenetic information.
+
+![Video 1.](https://cdn.elifesciences.org/articles/85262/elife-85262-video1.mp4.jpg)
+
+**Video 1.:** Transmission reconstruction using the consensus links consistent with the phylogenetic assignments. Cases are animated each month, with animals that are incubating infections shown as empty circles until infectious when they transition to filled circles (note that many cases become infectious within the same month of exposure). Inferred transmission links are shown by curved lines and at the approximate time of the exposure event, coloured by transmission chain. Cases identified as introductions are designated by a filled square. The top panel shows the monthly time series of cases by transmission chain.
 
 Using RABV-GLUE to obtain an alignment of all sequences from the Cosmopolitan-AF1b minor clade up to the year 2017 (inclusive) regardless of genome position or length resulted in a dataset of 2557 sequences (partial and whole-genome) from 21 countries (all sub-saharan Africa, aside from one Thailand sequence) spanning the years 1980–2017 (Figure 3—figure supplement 1). This provided a much wider geographic and temporal context than only the WGS sequences enabling the placement of 2016/17 Pemba outbreak sequences into the context of known background diversity. N and G genes were the most commonly sequenced, with 1042 and 1876 sequences respectively (including WGS), and both gene datasets were used to contextualise Pemba sequences. There was wide variation in the portion of each gene covered and the length of sequences (N: from 203 to full length 1353 basepairs (bp); G: from 277 to full length 1575 bp). The N gene dataset constituted a wider and more even geographic distribution (18 countries), whereas the G gene (16 countries) data was predominantly from South Africa and Tanzania.
 
@@ -153,6 +233,66 @@ Viruses sequenced from the outbreak starting in 2016 belonged to two distinct ph
 Our approach to case detection inferred from the transmission tree reconstructions were also generally robust, irrespective of the tree summary, pruning algorithm and for the amount of data available. However, our approach tended to underestimate detection probabilities (usually within 10%, Figure 5A) at the levels inferred for Pemba (50–70%). That withstanding, we show that given the estimated case detection probabilities, we likely detected most transmission chains comprising more than two cases (Figure 5C) and missed only dead-ends or very short chains of transmission.
 
 Of the bite patients presenting to the island’s four hospitals from 2010 to 2014 (n=117), a large proportion were bitten by probable rabid dogs (45–72% depending upon the status of unclassified biting dogs), while only a few patients that were bitten by apparently healthy dogs sought care during this period (6.6–12.8 per year, or 1.4–2.7/100,0000 /year). Based on the probability of rabies progression (Hampson et al., 2019) and the occurrence of three human rabies deaths in 2010 (Table 1), we estimated that 10–31 rabid bite victims did not receive complete or timely PEP and through contact tracing we identified 21 such rabies exposures. The total rabies exposures that we detected from 2010 to 2014 (63-94) were within expectations from triangulating case detection and rabid dog behaviour (Hampson et al., 2016; 65 exposures, range 46–86), and consistent with a 0.66–0.89 probability of rabies-exposed bite victims receiving adequate PEP. During the 2016–2018 outbreak we traced 39 rabid bite victims who did not obtain adequate PEP (late and/or incomplete) and estimated that exposures received appropriate PEP with probability 0.72–0.78 (with the three deaths that occurred early in the outbreak suggesting around 10–31 rabid bite victims did not receive adequate PEP). Probable exposures per rabid dog were higher during the 2016–2018 outbreak than from 2010 to 2014 (1.3 vs 0.34-0.51, both adjusted for case detection) driven in part by variability in dog biting behaviour; two rabid dogs in 2017 each bit more than 10 people (Figure 2).
+
+**Table 1.**
+ Characteristics of probable human rabies deaths and reported reasons for inadequate Post-Exposure Prophylaxis (PEP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Age</th>
+      <th>Bite site(s)</th>
+      <th>Type of wound</th>
+      <th>Reasons for not seeking PEP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2010</td>
+      <td>11–15 years</td>
+      <td>Both hands and the left palm</td>
+      <td>Severe wounds with broken bones</td>
+      <td>After the first hospital visit, the child’s family was not advised by health workers to return for subsequent PEP doses and family members were not aware of PEP requirements.</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>&gt;50 years</td>
+      <td>Lower left leg and upper thigh</td>
+      <td>Deep wounds with multiple tooth penetrations</td>
+      <td>Victim sought care at a facility (dispensary) that did not provide PEP. Received only first aid without referral to hospital for PEP.</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>&gt;50 years</td>
+      <td>Head (nose) and right arm</td>
+      <td>Lacerations to nose, large bite to arm, deep tooth penetration</td>
+      <td>After the wounds healed the victim did not seek their second or subsequent doses of PEP.</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>6–10 years</td>
+      <td>Neck</td>
+      <td>Large wound</td>
+      <td>PEP shortages in Pemba hospitals and prohibitive costs of seeking PEP elsewhere.</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>11–15 years</td>
+      <td>Face/head and shoulders</td>
+      <td>Severe wounds that led to hospitalisation</td>
+      <td>PEP shortages at the hospital where the victim was admitted. Health workers did not advise immediate PEP be sought from elsewhere.</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>&gt;50 years</td>
+      <td>Shoulders, legs, and chest</td>
+      <td>Large wounds with deep tooth penetrations</td>
+      <td>Victim thought a single dose of PEP was sufficient for protection and ignored health worker advice to seek subsequent doses.</td>
+    </tr>
+  </tbody>
+</table>
 
 Reasons reported for lack of, or inadequate PEP varied (detailed for deaths in Table 1). No PEP shortages were reported whilst PEP was provided for free during the elimination demonstration project (2011–2014). But, at the start of the outbreak in late 2016 patients had to buy PEP (~$12.9 per vial or >$38 for a complete course) and one child bitten in early 2017 by a confirmed rabid dog did not receive PEP due to a shortage. Although too late to be effective, health authorities sought PEP from Zanzibar when the child presented with symptoms, but none was available. In desperation the family took the child to the mainland but with no rabies treatment options they were advised to return home where the child died on arrival. Following the child’s death, Zanzibar’s Ministry of Health imported PEP and reinstated free-of-charge PEP provisioning. This policy change and sensitization around the outbreak likely contributed to increased health seeking and understanding of the critical need for timely PEP. Contact tracing revealed that 17.5% of rabies exposures were not aware of the importance of PEP early on (2010–2014) compared to <4% during the outbreak (2016–2018) and similarly around 20% of rabies exposures early on (2010–2014), reported not being advised by health workers to obtain PEP, declining to 3% during the outbreak (2016–2018). Patients presenting for healthy dog bites also increased during the outbreak to ~37 /year (7.8/100,000 vs 1.4-2.7/100,000 previously). In the decision tree we used estimates of the probabilities of rabies-exposed bite victims starting and completing PEP for the period 2010–2014 when most patients paid for PEP, and 2016–2020 when most patients received free PEP. Probabilities for starting and completing PEP were 0.667 and 0.397 respectively for 2010–2014 and 0.783 and 0.84 for 2016–2020 respectively (Figure 6).
 

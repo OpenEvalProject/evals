@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.31045.001 The postembryonic brain exhibits experience-dependent development, in which sensory experience guides normal brain growth. This neuroplasticity is thought to occur primarily through structural and functional changes in pre-existing neurons. Whether neurogenesis also mediates the effects of experience on brain growth is unclear. Here, we characterized the importance of motor experience on postembryonic neurogenesis in larval zebrafish. We found that movement maintains an expanded pool of forebrain neural precursors by promoting progenitor self-renewal over the production of neurons. Physical cues associated with swimming (bodily movement) increase neurogenesis and these cues appear to be conveyed by dorsal root ganglia (DRG) in the zebrafish body: DRG-deficient larvae exhibit attenuated neurogenic responses to movement and targeted photoactivation of DRG in immobilized larvae expands the pallial pool of proliferative cells. Our results demonstrate the importance of movement in neurogenic brain growth and reveal a fundamental sensorimotor association that may couple early motor and brain development.
+The postembryonic brain exhibits experience-dependent development, in which sensory experience guides normal brain growth. This neuroplasticity is thought to occur primarily through structural and functional changes in pre-existing neurons. Whether neurogenesis also mediates the effects of experience on brain growth is unclear. Here, we characterized the importance of motor experience on postembryonic neurogenesis in larval zebrafish. We found that movement maintains an expanded pool of forebrain neural precursors by promoting progenitor self-renewal over the production of neurons. Physical cues associated with swimming (bodily movement) increase neurogenesis and these cues appear to be conveyed by dorsal root ganglia (DRG) in the zebrafish body: DRG-deficient larvae exhibit attenuated neurogenic responses to movement and targeted photoactivation of DRG in immobilized larvae expands the pallial pool of proliferative cells. Our results demonstrate the importance of movement in neurogenic brain growth and reveal a fundamental sensorimotor association that may couple early motor and brain development.
 
 ## Introduction
 
@@ -27,23 +27,366 @@ Here, we sought to investigate the relationship between movement and neurogenesi
 
 All statistical tests are preceded by a superscript numeral that can be used to reference that test in our calculations of statistical powers, summarized in Table 1.
 
-## Movement restraint reduces swimming episodes without impairing swimming ability
+**Table 1.**
+ Statistical powers derived from posthoc power calculations for all major findings.All power analyses were performed using G*Power (Faul et al., 2007).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Statistical test</th>
+      <th>Power (1-β error probability)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.983</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.159</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0.053</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0.939</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.840</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0.076</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>0.110</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>0.956</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>0.886</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>0.062</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>0.998</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>0.814</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>0.060</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>0.164</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>0.918</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>0.992</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>0.383</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>0.683</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>0.226</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>0.702</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>0.600</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>0.910</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>0.420</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>0.075</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>0.050</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>0.836</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>0.603</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>0.585</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>0.575</td>
+    </tr>
+  </tbody>
+</table>
+
+### Movement restraint reduces swimming episodes without impairing swimming ability
 
 We first established a paradigm through which we could control the amount of swimming exhibited by zebrafish larvae noninvasively. We used movement restraint, in which larvae were confined to a smaller portion of 6-well plates by a mesh cylinder (Figure 1A) and tested if such restraint would reduce swimming from 3 to 9 days post fertilization (dpf). Movement restraint significantly reduced the hourly distance swam by 6 and 8 dpf in both non-repeated (Figure 1B; Treatment x Age Interaction: 1F2,80 = 14.08, p<0.01) and repeated (Figure 1C; Video 1; Treatment x Age Interaction: 2F2,34 = 14.16, p<0.01) experimental designs compared to unrestrained controls. Furthermore, movement restraint also prevented the increase in the proportion of fast swims (>10 mm/s) first exhibited by control larvae on 6 dpf (Figure 1D–E; Treatment x Age Interaction: 3F2,68 = 14.90, p<0.01).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig1-v1.jpg)
+
+**Figure 1.:** (A) Apparatus used to restrain movement in zebrafish larvae by reducing the volume of water available to the larvae to swim using a mesh barrier. Movement restraint reduced swimming on 6 to 8 dpf both between groups (B; control: n4,6,8 dpf = 12, 14, 11; restraint, n4,6,8 dpf = 13, 18, 18; Data are represented as mean ± SEM) and within individual larvae (C; control n = 6; restraint n = 13). Movement restraint also reduced the proportion of fast swims (>10 mm/s) exhibited by larvae by 6–8 dpf (D; n = 18). (E) Representative traces from 1 hr time-bins for recorded larvae from 4 to 8 dpf. Colour coding represents movement speed. *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Hourly distance swam (B; control n = 12, restraint n = 10) and proportion of fast swims (>10 mm/s, C; control n = 12, restraint n = 10) in unrestrained wells by larvae reared previously under restraint or control conditions. Data are represented as mean ± SEM.
+
+![Video 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-video1.mp4.jpg)
+
 Because of the possibility that chronic movement restraint may impair larval development, we sampled body length of control and restrained larvae throughout the restraint period. We found that movement restraint did not affect larval body length by 6 dpf, but reduced body length by 9 dpf (Figure 1—figure supplement 1A; 4F2,111 = 13.10, p<0.01). To test if this reduction in body length affected motor ability, we repeated our movement restraint paradigm and, on 8 dpf, we moved restraint larvae into control wells to record unrestrained swimming behaviour. Prior movement restraint did not impair either hourly distance swam (Figure 1—figure supplement 1B; 5t20 = 0.98, p=0.34) or proportion of fast swims (Figure 1—figure supplement 1C, 6t20 = 0.16, p=0.87) in unrestrained conditions. Collectively, we found that our restraint paradigm reduced motor experience in larvae by 6 dpf without impairing swimming ability.
 
-## Movement restraint promotes cell differentiation over self-renewal in forebrain neural precursor populations
+### Movement restraint promotes cell differentiation over self-renewal in forebrain neural precursor populations
 
 To test for changes in neurogenesis in the restrained larval zebrafish brain, we sampled the proportion of PCNA+ cells in the pallium, subpallium, olfactory bulb, and optic tectum of 6 dpf larval zebrafish. Movement restraint significantly reduced the proportion of proliferative (PCNA+) cells in the forebrain of zebrafish by 6 dpf (Figure 2A–C; 7t9 = 4.07, p<0.01) sampled across consecutive coronal sections (Figure 2—figure supplement 1), without affecting forebrain size (Table 2). This difference was attributed to a reduction in the proportion of PCNA+ cells in both the subpallium (Figure 2—figure supplement 2A; 8t5 = 3.77, p=0.01) and pallium (Figure 2—figure supplement 2B; 9t5 = 7.36, p<0.01). Conversely, movement restraint did not affect the size (Table 2) or proportion of PCNA+ cells in the olfactory bulb (Figure 2—figure supplement 2C; 10t9 = 0.53, p=0.61) or optic tectum (Figure 2—figure supplement 2D; 11t8 = 0.87, p=0.41) by 6 dpf. Movement restraint reduced forebrain size by 9 dpf (Table 2); however, after correcting for forebrain size, chronic restraint still significantly reduced the proportion of PCNA+ cells in the forebrain by 9 dpf compared to controls (Figure 2D–F; 12U = 0, p<0.01). Movement restraint also reduced the proportion of tbr2+ cells, a protein marker of intermediate progenitors and newly generated neurons (Englund et al., 2005), in the pallium by 9 dpf (Figure 2G–I; 13t16 = 3.37, p<0.01) without affecting the proportion of pallial GFAP+ radial neural stem cells in Tg(GFAP:gfp) embryos (Figure 2J–L; 14t12 = 0.35, p=0.73). Thus, movement restraint reduced the size of the pool of proliferative cells, presumably neural progenitors, in the forebrain specifically, without affecting the size of the resident radial stem cell population.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig2-v1.jpg)
+
+**Figure 2.:** By 6 dpf, movement restraint reduces the proportion of PCNA+ cells in the forebrain (A-C; control n = 5, restraint n = 6). This reduction in PCNA +cells is maintained when movement restraint is continued until 9 dpf (D-F; control n = 6, restraint n = 7). Movement restraint until 9 dpf also reduces tbr2+ cells in the pallium (G-I; n = 9) without affecting the number of GFAP+ radial glia stem cells in the pallium (J-L; n = 7; scale bar for micrographs in B-L = 30 µm). Following a 24 hr pulse with EdU starting on 5 dpf, fewer EdU+ cells in the subpallium (M) and pallium (N; n = 4) co-label for the neuronal fate marker Elavl3 in controls (O–Q) compared to movement restrained larvae (R-T; scale bar = 20 µm). White dotted lines mark the boundaries of Elavl3+ expression to highlight the increased overlap between EdU+ cell cohorts and Elavl3+ in restrained larvae. *p<0.05. Data are represented as mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Micrographs (20 µm thickness) with example boundaries traced for the olfactory bulb, pallium, subpallium, and optic tectum (white dotted line) along with their approximate rostrocaudal position on a schematic of a dorsal view of the larval zebrafish head. Scale bars = 20 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Movement restraint did not affect the number of PCNA +cells in the olfactory bulb (OB; C; control n = 5, restraint n = 6) or optic tectum (OT; D; control n = 4, restraint n = 6) on 6 dpf. Movement restraint did not affect the number of EdU+ cells produced in the pallium (E; n = 4) or subpallium (F; control n = 4, restraint n = 5) over 24 hr from 5 to 6 dpf. Movement restraint did not affect the number of activated caspase-3+ (Casp3) cells in the zebrafish forebrain on 6 dpf (G; control n = 5, restraint n = 4) and increased the number of Casp3+ cells in the forebrain by 9 dpf (H; control n = 7, restraint n = 8): this effect was not found in the subpallium (I; control n = 7, restraint n = 8) and was specific to the pallium (J; control n = 7, restraint n = 8). Data are represented as mean ± SEM.
+
+**Table 2.**
+ Changes in brain regions (sampled as Hoechst + cells/section following the procedures outlined underneath the ‘Cell Counting’ subheading in the Materials and methods) sampled across experiments.All power analyses were performed using G*Power (Peirce, 2008).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Region sampled (Hoechst + cells/Section)</th>
+      <th>Significantly different?</th>
+      <th>Test statistic</th>
+      <th>P value</th>
+      <th>Power (1-β error probability)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Restraint (3–6 dpf)</td>
+      <td>Forebrain</td>
+      <td>No</td>
+      <td>t9 = 1.018</td>
+      <td>0.3351</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>t5 = 0.4206</td>
+      <td>0.6915</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Subpallium</td>
+      <td>No</td>
+      <td>t5 = 1.685</td>
+      <td>0.1528</td>
+      <td>0.280</td>
+    </tr>
+    <tr>
+      <td>Olfactory Bulb</td>
+      <td>No</td>
+      <td>t7 = 0.3330</td>
+      <td>0.7489</td>
+      <td>0.060</td>
+    </tr>
+    <tr>
+      <td>Optic tectum</td>
+      <td>No</td>
+      <td>t8 = 1.664</td>
+      <td>0.1347</td>
+      <td>0.300</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Restraint (3–9 dpf</td>
+      <td>Forebrain</td>
+      <td>Yes (Control &gt; Restraint)</td>
+      <td>t11 = 3.890</td>
+      <td>0.0025</td>
+      <td>0.938</td>
+    </tr>
+    <tr>
+      <td>Pallium</td>
+      <td>Yes (Control &gt; Restraint)</td>
+      <td>t13 = 2.657</td>
+      <td>0.0198</td>
+      <td>0.704</td>
+    </tr>
+    <tr>
+      <td>Subpallium</td>
+      <td>Yes (Control &gt; Restraint)</td>
+      <td>t23 = 4.725</td>
+      <td>&lt;0.0001</td>
+      <td>0.995</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Exercise (3–6 dpf)</td>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>t8 = 1.260</td>
+      <td>0.2430</td>
+      <td>0.199</td>
+    </tr>
+    <tr>
+      <td>Subpallium</td>
+      <td>No</td>
+      <td>t7 = 1.435</td>
+      <td>0.1943</td>
+      <td>0.240</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Exercise (3–9 dpf)</td>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>t15 = 1.559</td>
+      <td>0.1397</td>
+      <td>0.310</td>
+    </tr>
+    <tr>
+      <td>Subpallium</td>
+      <td>No</td>
+      <td>t19 = 0.2109</td>
+      <td>0.8352</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Physical vs. Visual stimulation (3–6 dpf)</td>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>F2,14 = 0.5679</td>
+      <td>0.5792</td>
+      <td>0.122</td>
+    </tr>
+    <tr>
+      <td>Subpallium</td>
+      <td>No</td>
+      <td>F2,14 = 0.2594</td>
+      <td>0.7751</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td>AG1478 vs. DMSO (3 dpf)</td>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>t7 = 1.184</td>
+      <td>0.2751</td>
+      <td>0.170</td>
+    </tr>
+    <tr>
+      <td>AG1478 vs. DMSO (6 dpf)</td>
+      <td>Pallium</td>
+      <td>No</td>
+      <td>F3,79 = 1.852</td>
+      <td>0.1445</td>
+      <td>0.484</td>
+    </tr>
+  </tbody>
+</table>
+
 We then asked how movement restraint results in a reduced forebrain proliferative cell population. We reasoned that a reduction in this cell population might occur when either proliferative cells generate more differentiated cells at the expense of self-renewal, reducing the size of the proliferative population over successive divisions, or by apoptosis in the proliferative population. To sample cell differentiation in these forebrain populations, we exposed larvae to 5 mM 5-Ethynyl-2'-deoxyuridine (EdU), a synthetic thymidine analog that is incorporated in dividing cells, for 24 hr starting on 5 dpf, then sampled the proportion of EdU+ cells that also express Elavl3 protein, a marker of cells with a differentiated neuronal fate (Lindsey et al., 2012). If movement restraint biased the production of differentiating cells over progenitor self-renewal, we would predict that restrained larvae would exhibit more EdU+ cells that co-expressed Elavl3. Movement restraint significantly increased the proportion of newly generated cells that co-label with Elavl3 in both the pallium (Figure 2M; 15t6 = 6.02, p<0.01) and subpallium (Figure 2N–T; 16t6 = 3.43, p=0.01) without affecting the absolute number of EdU+ cells produced in the pallium (Figure 2—figure supplement 2E; 17t6 = 0.35, p=0.74) or subpallium (Figure 2—figure supplement 2F; 18t7 = 0.73, p=0.49). Conversely, movement restraint did not affect the number of cells expressing the apoptotic marker activated caspase-3 (Casp3) in the forebrain (Figure 2—figure supplement 2G; 19t7 = 1.06, p=0.32) by 6 dpf. By 9 dpf, however, movement restraint significantly increased the number of activated Casp3+ cells in the forebrain (Figure 2—figure supplement 2H; 20t13 = 3.56, p<0.01). This increase in apoptosis at 9 dpf was specific to the pallium (Figure 2—figure supplement 2I; 21U = 1, p<0.01) and not found in the subpallium (Figure 2—figure supplement 2J; 22t13 = 1.76, p=0.10). Despite this increase in pallial apoptosis, cell death rates remained low by 9 dpf and Casp3+ cells were not observed along the midline or dorsal surface of the brain, where the neurogenic niche lies. Together, these findings suggest that movement restraint biased newly generated cells to differentiate into neurons, ultimately at the expense of self-renewal.
 
-## Rearing larvae against a strong current increases the size of the pallial proliferative cell population
+### Rearing larvae against a strong current increases the size of the pallial proliferative cell population
 
 Because physical restraint may restrict more than just movement (i.e., reducing sensory input in a smaller space), we tested whether increasing movement could also impact forebrain cell proliferation. We raised larvae in groups (n = 15–20) housed in transparent plastic canals against different strengths of water current. Control larvae experienced no displacing current (Figure 3A; water dripping in and out, current did not displace larvae) and ‘exercised’ larvae experienced a strong current (Figure 3B; water flow strong enough to displace larvae) from 3 to 9 dpf following a daily schedule (Figure 3C). In the current condition, larvae would have to swim to counteract the flow of water and maintain their position in the canal, akin to forced exercise paradigms in rodents (Leasure and Jones, 2008). On 9 dpf, larvae reared against a strong current exhibited a greater proportion of PCNA+ cells in the pallium (Figure 3D; 25t15 = 2.80, p=0.01), but not the subpallium (Figure 3E; 26t19 = 1.22, p=0.24). On 9 dpf, the size of both brain regions was not affected by rearing treatment (Table 2). When we sampled pallial proliferation in larvae earlier, at 6 dpf, we again found an increase in the proportion of PCNA+ cells in the pallium in larvae reared against a strong current (Figure 3—figure supplement 1A; 23t7 = 2.76, p=0.03), while the subpallium was unaffected (Figure 3—figure supplement 1B; 24t6 = 1.27, p=0.25). Again, the size of both brain regions was not affected by rearing in a strong current on 6 dpf (Table 2). To test if increased movement affected cell differentiation as in our restraint paradigm, we exposed larvae to EdU in a petri dish overnight for 13 hr from 8 to 9 dpf prior to being returned to their swimming canals for a final 5 hr of current-rearing. Rearing larvae against a current reduced the number of newly generated (EdU+) cells that also expressed Elavl3 compared to controls (Figure 3F; 27t11 = 2.39, p=0.04), consistent with increased movement maintaining an expanded proliferative cell population over the generation of differentiated neurons. Rearing larvae against a current from 3 to 9 dpf did not affect body length (Figure 3G, 28U = 102, p=0.5081), suggesting these effects on pallial neurogenesis are not a product of overall growth. Together with our movement restraint data, the increase in pallial cell proliferation following exercise suggests that motor experience regulates forebrain neurogenesis specifically in the pallium, similar to the neurogenic effect of exercise in the mammalian SGZ.
 
-## Movement-dependent maintenance of pallial cell proliferation requires physical, not visual, input associated with movement
+![Figure 3.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig3-v1.jpg)
+
+**Figure 3.:** From 3 dpf, larvae were reared in groups in a plastic canal with water flow producing (A) a weak current that did not displace larvae or (B) a strong current that would displace larvae on a daily schedule (C). By 9 dpf, larvae reared against a strong current exhibited significantly more PCNA +cells in the pallium (D; control n = 10, current n = 7), but not subpallium (E; control n = 11, current n = 10) compared to controls. Larvae reared against a strong current exhibited significantly less Elavl3/EdU co-labeling compared to controls (F; n = 6) and did not differ in body length from controls (G; control n = 17, current n = 14). *p<0.05. n.s. = not significant. Data are represented as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** By 6 dpf, larvae reared against a strong current exhibited significantly more PCNA+ cells in the pallium (A; control n = 4, current n = 5), but not subpallium (B; control n = 3, current n = 4) compared to controls. *p<0.05. n.s. = not significant. Data are represented as mean ± SEM.
+
+### Movement-dependent maintenance of pallial cell proliferation requires physical, not visual, input associated with movement
 
 Upon establishing a link between motor experience and pallial neurogenesis, we asked if we could identify the modality of sensory feedback associated with movement driving cell proliferation. To isolate visual and physical components of movement, we restrained larvae entirely in agarose from 3 to 6 dpf, preventing locomotion. We then re-introduced visual stimulation associated with movement (optic flow) by exposing immobilized larvae to computer-generated visual gratings to simulate visual motion. Physical input associated with movement was re-introduced to immobilized larvae by cutting the tail of larvae free from agarose embedding, enabling swimming tail movement without bodily displacement in the environment. Control larvae were provided both visual stimulation (gratings) and tail movement (Figure 4A), whereas treatment groups experienced only either tail movement (Figure 4B) or visual stimulation (Figure 4C). Blocking tail movement (complete immobilization) significantly reduced the proportion of PCNA+ cells in the pallium by 6 dpf (Figure 4D; 29F2,14 = 7.89, p<0.01). Conversely, removing just visual stimulation had no impact on the number of PCNA+ cells in the pallium. Neither removing visual stimulation nor tail movement affected the proportion of PCNA+ cells in the subpallium (Figure 4E; 30F2,14 = 2.42, p=0.13).
 
@@ -53,7 +396,7 @@ Upon establishing a link between motor experience and pallial neurogenesis, we a
 
 Because immobilization could impair brain growth globally, we also sampled the number of Hoechst+ cells per section as a proxy for absolute forebrain size. Immobilization did not reduce the total number of cells in the pallium or subpallium (Table 2), instead affecting the PCNA+ cell population specifically. These results suggest that physical input associated with locomotion, specifically tail movement during swimming, drives changes in pallial neuroproliferation.
 
-## Ablation of the lateral line does not impact pallial neuroproliferation
+### Ablation of the lateral line does not impact pallial neuroproliferation
 
 One source of neural feedback that could detect physical movement is the lateral line, a system of hair cells distributed along the teleost body that detects changes in water flow (Dijkgraaf, 1963). We treated 3 dpf larvae with 30 µM copper sulfate for 30 min, an ototoxin that ablates lateral line hair cells and impedes subsequent regeneration of these cells over the following days (Mackenzie and Raible, 2012). We confirmed hair cell ablation by the complete absence of beta-acetylated tubulin (AcTub) expression in hair cell cuppulae following treatment with copper sulfate (Figure 5A). If the lateral line is involved in mediating movement-dependent neurogenesis, then removal of this feedback should affect PCNA+ cell populations in the pallium. However, copper sulfate treatment did not affect the proportion of PCNA+ cells in the 6 dpf larvae pallium (Figure 5B; 31t12 = 0.51, p=0.62) when all larvae were reared in unrestrained wells. Intact lateral line signaling does not appear to mediate movement-dependent changes in pallial neurogenesis.
 
@@ -61,90 +404,216 @@ One source of neural feedback that could detect physical movement is the lateral
 
 **Figure 5.:** On 3 dpf, 30 min exposure to CuSO4 destroyed kinocilia (as visualized by acetylated tubulin) associated with hair cell cupulae (white arrows) along the larval zebrafish lateral line (A). Prior ablation of lateral line hair cells on 3 dpf did not affect the number of PCNA+ cells in the pallium reared in unrestrained conditions (B; n = 7). Scale bar = 40 µm. n.s., not significant. Data are represented as mean ± SEM.
 
-## Larvae deficient in trunk dorsal root ganglia exhibit attenuated movement-dependent increases in pallial neuroproliferation
+### Larvae deficient in trunk dorsal root ganglia exhibit attenuated movement-dependent increases in pallial neuroproliferation
 
 In vertebrates, DRG collect sensory feedback from the body and communicate these signals via ascending pathways to the CNS in the spinal cord (Vandewauw et al., 2013). Accordingly, DRG represent another system of neural feedback that could convey physical cues associated with movement. We tested whether blocking DRG development in the trunk would reduce PCNA+ cell populations in the pallium associated with swimming. We blocked development of DRG along the larval trunk by treating embryos with the ErbB receptor antagonist AG1478 in a limited window from 8 to 30 hpf followed by a wash-out period of almost 2 days (Honjo et al., 2008). By 3 dpf, we confirmed that earlier AG1478 treatment reduced DRG development in Tg(isl2b:mgfp) transgenic embryos (Figure 6Ai–iii). However, AG1478 treatment affected neither the pallium size (Table 2) nor proportion of pallial PCNA+ cells on 3 dpf, prior to any motor treatments (Figure 6—figure supplement 1A; 32t7 = 0.04, p=0.97). Thus, we divided 3 dpf AG1478- and DMSO-treated larvae into control and movement restraint conditions and sampled PCNA+ cell populations as above.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig6-v1.jpg)
+
+**Figure 6.:** (Ai) Dorsal root ganglia (white arrow) and Rohon-Beard neurons (white asterisk) were visualized in Tg(isl2b:mgfp) larvae (scale bar = 40 µm). Treatment with AG1478 from 8 to 30 hpf prevented development of DRG along the trunk in larvae by 3 dpf without affecting RB neuron populations dorsal to the spinal cord (Aii-iii). Earlier treatment with AG1478 did not affect swimming compared to DMSO-treated controls on 8 dpf (B; n = 6). By 9 dpf, restrained larvae in both DMSO (F-G; control n = 6, restraint n = 7) and AG1478 (H-I; control n = 8, restraint n = 6) treatments exhibited fewer pallial PCNA+ cells compared to controls, however, AG1478-treated controls exhibited fewer pallial PCNA+ cells compared to DMSO-treated controls, despite similar swimming behaviour. *p<0.05. Data are represented as mean ± SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Treatment with AG1478 from 8 to 30 hpf did not affect swimming on 6 dpf in both restrained and unrestrained conditions compared to DMSO-treated controls (B; DMSO control n = 6, DMSO restraint n = 6, AG1478 Control n = 4, AG1478 Control n = 5). Treatment with AG1478 from 8 to 30 hpf eliminated the movement-dependent changes in the number of pallial PCNA+ cells by 6 dpf, whereas larvae treated with DMSO still exhibited movement-dependent neurogenesis (C; DMSO control n = 20, DMSO restraint n = 19, AG1478 Control n = 24, AG1478 Control n = 18). Treatment with AG1478 from 8 to 30 hpf increased Elavl3/EdU co-localization in unrestrained 6 dpf larvae exposed to EdU from 5 to 6 dpf (D; n = 5). *p<0.05. n.s. = not significant. Data are represented as mean ± SEM.
 
 By 6 dpf, prior AG1478 treatment did not affect swimming compared to DMSO-treated controls (Figure 6—figure supplement 1B; 33F3,17 = 16.16, p<0.01). Whereas DMSO-treated larvae exhibited a movement-dependent change in the proportion of pallial PCNA+ cells, prior AG1478 treatment blocked this effect (Figure 6—figure supplement 1C; 34F3,77 = 4.17, p<0.01). Prior AG1478 treatment did not affect 6 dpf pallium size between unrestrained larvae (Table 2). Furthermore, when unrestrained larvae were exposed to EdU from 5 to 6 dpf as in our restraint paradigm, prior AG1478 treatment increased the number of newly generated (EdU+) cells that also express Elavl3 (Figure 6—figure supplement 1D; 35t8 = 2.53, p=0.04) compared to DMSO-treated controls, suggesting early AG1478 treatment affects pallial neurogenesis similarly to chronic restraint, albeit at a reduced magnitude. To resolve differences in the proportion of PCNA+ cells in the pallium of AG1478- and DMSO-treated larvae, we repeated this experiment and extended control and movement restraint conditions until 9 dpf as above.
 
 Prior AG1478 treatment also did not affect swimming on 8 dpf (Figure 6B; 36F3,20 = 27.59, p<0.01). By 9 dpf, AG1478-treated larvae exhibited movement-dependent differences in the proportion of pallial PCNA+ cells, however, the magnitude of this effect was significantly attenuated compared to DMSO-treated controls (Figure 6C–G; 37F3,23 = 26.68, p<0.01). Prior AG1478 treatment did not affect 9 dpf pallium size between unrestrained larvae (Table 2). Together, these results suggest that neural feedback from DRG mediates, at least in part, movement-dependent forebrain neuroproliferation.
 
-## Activating DRG in immobilized larvae is sufficient to increase pallial neuroproliferation
+### Activating DRG in immobilized larvae is sufficient to increase pallial neuroproliferation
 
 If DRGs mediate neural feedback during movement to stimulate pallial cell proliferation, then direct stimulation of DRGs independent of movement should also drive pallial neurogenesis. We used an optopharmacological approach to activate DRGs by exposing larvae to a combination of light and Optovin, a small molecule that enables photoactivation of TRPA1 receptors (Kokel et al., 2013). TRPA1 receptors are found in DRG (Vandewauw et al., 2013), trigeminal neurons and Rohon-Beard cells in larval zebrafish (Prober et al., 2008). In zebrafish, Optovin acts specifically on the TRPA1b paralog, which is exclusively expressed in sensory ganglia up to 5 dpf (Prober et al., 2008). To repeatedly photoactivate DRGs using Optovin, we exposed unrestrained 5 dpf larvae isolated in a 24-well plate to either Optovin or DMSO and adjusted light exposures and intermittent darkness to achieve repeatable behavioural activation. Unrestrained larval zebrafish incubated in Optovin exhibited intense, sporadic bouts of movement during light exposure, presumably as spinal reflexes in response to intense DRG activation (Kokel et al., 2013). 5 dpf larvae exhibited repeatable, photo-activated motor responses to 2 s of exposure to light every 5 min, whereas larvae treated with DMSO exhibited no such responses (Figure 7A–B, Figure 7—figure supplement 1; Treatment x Timebin Interaction: 38F2,44 = 6.36, p<0.01). Therefore, we used 2 s of light stimulation every 5 min as a paradigm to regularly stimulate DRG in immobilized larvae.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig7-v1.jpg)
+
+**Figure 7.:** 5 dpf larvae incubated in Optovin exhibit repeatable movement bursts in response to light (A). Points on each line represent the mean distance swam (n = 12) during 5 s time bins by larvae treated with either Optovin (blue) or DMSO (grey) and exposed to 2 s of light (yellow arrows) every 5 min. (B) Expanded view of first light presentation from (A), including the 5 s of darkness prior to light presentation (pre-light), the 5 s time bin including light presentation for the first 2 s (light), and the following 5 s of darkness (post-light). Treating 5 dpf larvae immobilized in agarose with 2 s light pulses every 5 min for 5 hr increased the number of PCNA+ cells in the pallium 12 hr post treatment only when larvae were incubated with Optovin (C; DMSO dark n = 10, DMSO light n = 9, AG1478 dark n = 8, AG1478 light n = 9). Larvae treated with AG1478 from 8 to 30 hpf failed to exhibit an increase in the proportion of PCNA +cells in the pallium following this same Optovin + light treatment compared to controls (DMSO control n = 7, AG1478 n = 8). *p<0.05. Data are represented as mean ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31045/elife-31045-fig7-figsupp1-v1.jpg)
 
 We immobilized 3 dpf larvae in agarose individually in 24-well plates. On 5 dpf, larvae were incubated with either DMSO or Optovin and exposed to either darkness or a 5 hr session of light presentations as above. Twelve hours following the end of this session, light exposures significantly increased the proportion of PCNA+ cells in the pallium of larvae exposed to Optovin (Figure 7C; Drug x Light Treatment interaction; 39F1,32 = 4.47, p=0.04), whereas light treatments had no effect on the proportion of PCNA+ cells in DMSO-incubated larvae. Furthermore, 6 dpf larvae deficient in trunk DRGs (using a transient 8–30 hpf treatment with AG1478 as above) did not exhibit this optovin-and-light-dependent increase in the proportion of PCNA+ cells in the pallium compared to controls (8–30 hpf DMSO treatment; Figure 7D; 40t13 = 2.33, p=0.04). Thus, DRG activation appears sufficient to increase pallial neurogenesis in the zebrafish larvae in the absence of physical movement.
 
 ## Discussion
 
-## Movement regulates postembryonic neurogenic forebrain growth in larval zebrafish by regulating progenitor cell differentiation
+### Movement regulates postembryonic neurogenic forebrain growth in larval zebrafish by regulating progenitor cell differentiation
 
 We found that movement plays a critical role in determining the number of neural progenitors in the zebrafish forebrain during postembryonic development. Previous work has focused on coupling increased physical activity via aerobic exercise with increases in cell proliferation in the adult mammalian SGZ (Fabel and Kempermann, 2008). Here, we found that physical activity also modulates forebrain cell proliferation postembryonically in the larval zebrafish pallium. Whereas we found that increased physical activity in fish led to an increase in pallial cell proliferation, we also report a negative neurogenic response when movement is reduced via restraint or immobilization. In the most extreme case, restricting larval movement resulted in the near absence of a proliferative population in the pallium by 9 dpf, even though these larvae were fully capable of swimming normally thereafter. Furthermore, we found that these changes in progenitor populations had subsequent impacts on neurogenic brain growth: restrained larvae, who exhibit reduced pallial cell proliferation by 6 dpf, develop smaller forebrains by 9 dpf due to a combination of reduced neurogenesis and, to a lesser extent, pallial cell apoptosis.
 
 The mechanisms through which the neurogenic niche is affected by exercise in the adult rodent hippocampus include proposed changes in cell fate, cell cycling, and apoptosis in neural precursors (Overall et al., 2016). Here, we found that, postembryonically, movement appears to maintain proliferative cell populations in the zebrafish pallium primarily by promoting self-renewal in neural progenitor cell populations whereas restraining movement promoted their premature differentiation. Because control and restrained larvae produced the same number of cells in the forebrain from 5 to 6 dpf, movement-dependent regulation of postembryonic forebrain cell proliferation appears to occur predominantly through regulating self-renewal and the production of differentiated cells over factors that might affect the absolute number of cells produced, such as cell cycle length. Within the neurogenic niche, movement-dependent maintenance of the progenitor pool may involve the Shh signaling pathway, which expands progenitor populations via symmetric cell division (Lai et al., 2003; Machold et al., 2003; Yang et al., 2015). Collectively, our findings demonstrate the importance of movement in maintaining a source of new neurons to support forebrain growth postembryonically and present zebrafish as a novel model in which movement modulates early brain development over the course of a few days.
 
-## Movement produces non-visual, non-lateral line neural feedback conveyed via DRG to affect pallial neurogenesis
+### Movement produces non-visual, non-lateral line neural feedback conveyed via DRG to affect pallial neurogenesis
 
 In addition to characterizing the relationship between movement and postembryonic neurogenesis in the forebrain, we also sought to identify the nature of the feedback signal associated with movement that drives this neurogenic change. We found that physical cues associated with movement send ascending neural feedback to the brain via DRGs to drive changes in neurogenesis. Specifically, larvae deficient in DRGs along their trunk exhibited an attenuated neurogenic responses to swimming compared to controls. However, we still found significant modulation of pallial cell proliferation on 9 dpf in DRG-deficient larvae. This continued modulation of neurogenesis in the older larvae may be attributed to the nature of our treatment, which blocks the development of DRGs along the trunk, but does not affect DRG populations that are derived from neural crest cells in the head that may also signal movement (Honjo et al., 2008). Other proposed mechanisms of movement-dependent neurogenesis, such as the circulation of growth factors proposed to mediate exercise-dependent adult neurogenesis (Cotman et al., 2007), and other mechanosensory cell populations, such as Rohon-Beard cells, may also play a role in driving motor experience-dependent neurogenic brain development. A previous study has demonstrated that treating zebrafish embryos with AG1478 can impair proliferation during embryogenesis in the zebrafish optic tectum (Sato et al., 2015). In that study, changes in tectal neurogenesis were observed using a near 8-fold increase in AG1478 concentration (compared to that used here) and neurogenesis was found to resume normally within hours following drug washout. Recognizing the possibility of a lasting effect of early AG1478 treatment, we sampled forebrain neurogenesis in 3 dpf larvae treated earlier with AG1478 or DMSO and found no effect of AG1478 treatment on pallial neurogenesis prior to movement or Optovin manipulations. We also found that earlier AG1478 treatment had no effect of pallium size in restrained or unrestrained control larvae by 6 dpf. In conjunction with our original movement and Optovin experiments, which do not include AG1478 manipulations, our results suggest that motor experience-dependent neurogenesis is mediated, in part, via peripheral neural feedback and is likely not attributed to early AG1478 treatment. However, future work would benefit by contrasting the results obtained here with larvae in which DRG development is blocked using alternative means. Furthermore, the ErbB signaling inhibitor used in our studies may have non-neural effects on skin or heart development. Although it is unlikely that these could be a factor in determining transmission of movement information to the brain to alter forebrain neurogenesis, this could be examined in the future.
 
 Using completely immobilized larvae, we were able to stimulate pallial cell proliferation by stimulating DRG along with other cells. Furthermore, this increase in pallial cell proliferation due to stimulation was not observed in larvae deficient in trunk DRGs. In conjunction with our studies reducing specific DRG populations along the trunk, our results suggest that neural feedback associated with movement is sensed predominantly by DRG and that DRG activation is sufficient to expand a progenitor pool in the forebrain. This previously undocumented role for DRG in conveying physical cues associated with movement to expand pools of forebrain progenitors may in turn provide a larger source of neurons and support more neurogenic brain growth in the most active animals.
 
-## DRG are essential to receiving sensory input associated with movement independent of the lateral line
+### DRG are essential to receiving sensory input associated with movement independent of the lateral line
 
 We found that physical movement of the body was the most important component of movement driving pallial neurogenesis. Accordingly, we propose that movement triggers mechanosensory input detected by DRGs that are then sent to the brain. In zebrafish larvae, mechanosensory input is most likely to come from one of three sources. The first possibility is the lateral line, which detects changes in water flow and vibration in the environment (Dijkgraaf, 1963). Here, ototoxic ablation of this system had no impact on pallial proliferation, suggesting it does not play a role in maintaining pallial progenitor populations. Second, Rohon-Beard (RB) cells, an early-developing population of spinal neurons, transmit mechanosensory signals (Faucherre et al., 2013) and contain TRPA1b receptors (Prober et al., 2008) that can be activated by Optovin stimulation (Kokel et al., 2013). Originally, RB cells were thought to die off entirely by 4 dpf (Reyes et al., 2004), but subsequent work using transgenic markers suggests they may persist up to 1–2 weeks post-fertilization (Kucenas et al., 2006; Palanca et al., 2013). Our studies showed that early AG1478 treatment, which specifically affected DRG development with resident RB cell populations remaining unaffected, blocked the Optovin-induced increase in proportional PCNA+ cells in the pallium following light presentations, suggesting DRG and not RB are responsible for the increase in pallial neurogenesis following Optovin and light treatment. However, our data indicate that RBs may also contribute to motor experience-dependent pallial cell proliferation, particularly in DRG-deficient larvae by 9 dpf. Finally, DRGs can transmit mechanosensory information from the trunk owing to the array of sensory channels they contain including TRPA1b (Kokel et al., 2013). Because both the removal and activation of DRGs produced neurogenic consequences in the pallium, we propose that these sensory neurons are the primary mediators of movement-dependent postembryonic neurogenesis.
 
 TRPA1 channels exhibit deep evolutionary conservation across vertebrates (Christensen and Corey, 2007). Zebrafish have two orthologs of the TRPA1 channel: only TRPA1b, however, likely processes external signals (Prober et al., 2008) and is activated by Optovin treatment (Kokel et al., 2013). Whereas TRPA1 function has been implicated in touch stimuli in DRG of mice (Kwan et al., 2006; Brierley et al., 2011) and sensory neurons in C. elegans (Kindt et al., 2007), this channel is also associated with transducing chemosensory and nociceptive input (Prober et al., 2008). Here, we found evidence suggesting a novel function for TRPA1 in transducing physical cues associated with bodily movement during locomotion.
 
-## Movement and neurogenic brain growth are coupled early in life
+### Movement and neurogenic brain growth are coupled early in life
 
 Our results demonstrate a robust connection between motor and brain development during postembryonic development. Motor development in most vertebrates begins early in the postembryonic period, including both viviparous species, such as with fetal motor development in humans (de Vries et al., 1982), and oviparous species, such as the larvae studied here. Therefore, if conserved across taxa, this close relationship between movement and neurogenesis may couple early motor and brain development. Furthermore, this relationship could help explain correlations between early physical and mental development, such as the long-observed comorbidity of physical and mental impairments (Barnett et al., 2012) and correlation between sedentary lifestyle and depression (Anton et al., 2006), which has been previously associated with impaired neurogenesis (Jacobs et al., 2000), in children.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(dlx5/6:gfp)</td>
+      <td></td>
+      <td>ZFIN ID: ZDB-FISH-150901–22615</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(GFAP:gfp)</td>
+      <td></td>
+      <td>ZFIN ID: ZDB-ALT-060623–4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(βactin:gfp)</td>
+      <td></td>
+      <td>ZFIN ID: ZDB-ALT-061107–2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(isl2b:gfp)</td>
+      <td></td>
+      <td>ZFIN ID: ZDB-FISH-150901–2212</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zebralab</td>
+      <td>ViewPoint, Montreal, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS</td>
+      <td>Bitplane, Belfast, United Kingdom</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Human Neuronal Protein HuC/HuD</td>
+      <td>Life Technologies, Waltham, Massachusetts</td>
+      <td>A-21271; RRID: AB_221448</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-PCNA</td>
+      <td>Invitrogen, Carlsbad, California</td>
+      <td>MA5-11358; RRID: AB_10982348</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-activated caspase 3</td>
+      <td>Cell Signaling Technology, Danvers, Massachusetts</td>
+      <td>Asp175; RRID: AB_2341188</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GFP alexa 488-conjugated</td>
+      <td>Life Technologies, Waltham, Massachusetts</td>
+      <td>A-21311; RRID: AB_221477</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-tbr2</td>
+      <td>Abcam, Cambridge, United Kingdom</td>
+      <td>ab23345; RRID: AB_778267</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated goat anti-mouse</td>
+      <td>Jackson ImmunoReseach, West Grove, Pennsylvania</td>
+      <td>115-165-146; RRID: AB_2338690</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated goat anti-rabbit</td>
+      <td>Jackson ImmunoReseach, West Grove, Pennsylvania</td>
+      <td>111-165-003; RRID: AB_2338000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2-conjugated goat anti-rabbit</td>
+      <td>Jackson ImmunoReseach, West Grove, Pennsylvania</td>
+      <td>111-225-114</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AG1478</td>
+      <td>Sigma-Aldrich</td>
+      <td>T4182 SIGMA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Optovin</td>
+      <td>Hit2Lead, San Diego, California</td>
+      <td>Chemibridge ID#5707191</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All zebrafish used in this study were of an AB genetic background. Larval strains used in this study include: Tg(dlx5/6:gfp) (generously provided by Dr. Marc Ekker, University of Ottawa) and Tg(GFAP:gfp) (generously provided by Dr. Pierre Drapeau, Université de Montreal) in motor restraint and visual vs. physical movement cue experiments; Tg(βactin:gfp) (generously provided by Dr. Ashley Bruce, University of Toronto) for copper sulfate treatments; and Tg(isl2b:gfp) (generously provided by the late Dr. Chi-Bin Chien, University of Utah) larvae for all AG1478 and Optovin treatment experiments. All adult zebrafish crossings included 2–3 male and female fish. Larvae were collected on the day of fertilization in system water and moved to a dark incubator held at 28°C. On 1 dpf, larval water was bleached for 30 s, rinsed four times with fresh system water, and larvae were dechorionated using forceps, before being returned to the incubator. From 3 dpf onward (dpf), larvae were housed in a facility room held under a 14/10 light/dark cycle at 28°C (Lights on at 08:00/Lights off at 22:00; light intensity = 300 lux). Larvae housed individually in well plates had half of their system water replaced twice daily (at 08:00 and 14:00). From 5 dpf onward, larvae were also fed size 0 zebrafish food (Gemma Micro; Skretting, Tooele, Utah) twice daily immediately following water changes. Zebralab (ViewPoint, Montreal, Canada) recordings were made in a separate testing room with similar environmental conditions as the fish facility. After recordings, all larvae were returned to the housing facility. In all experiments aside from those involving movement tracking (see below), larvae were randomly assigned to experimental conditions from the same clutch prior to experimental manipulations. Minimum sample sizes were selected to mirror those in preliminary experiments and our initial findings reported here, in which we found that restraint influenced the number of proliferative cells in the forebrain. Following all experimental procedures, larvae were sacrificed using an overdose of tricaine prior to tissue collection and fixation (see below). All animal experiments were performed with the approval of the University of Toronto Animal Care Committee in accordance with the guidelines from the Canadian Council for Animal Care (CCAC).
 
-## Movement restraint apparatus
+### Movement restraint apparatus
 
 To restrict movement, we reared isolated 3 dpf larvae in wells of either unmodified 6-well plastic plates (well diameter = 3.5 cm) or modified 6-well plates in which larvae were confined to a central portion of each well within a cylinder of plastic mesh (Figure 1A; cylinder diameter = 1 cm). This mesh barrier was selected to both allow water flow in and out of the confined region and the rest of the well and prevent the larvae from escaping.
 
-## Movement tracking
+### Movement tracking
 
 To track swimming of larvae throughout experiments, we used the Zebralab automated tracking system. Larvae were recorded on 4, 6, and 8 dpf. On each recording day, one tray of larvae was moved into the Zebrabox (ViewPoint; held at 800 lux light intensity) recording apparatus by 08:30. Following a 30 min habituation period, swimming was recorded for 4 hr before larvae were moved into fresh system water in a new tray and returned into the Zebrabox recording apparatus for a 30 min habituation and then an additional 4 hr of swimming before being returned to the facility room (at 17:00). On 6 and 8 dpf, larvae were also fed prior to habituation in the morning (at 08:00) and between recording sessions (at 13:00). Because only single trays of larvae were recorded in a session, restraint and control groups were reared as cohorts offset by 1 day and, accordingly, were recorded on alternating days. In all movement tracking experiments, we used 2 tanks of mixed-sex adult zebrafish (each containing 3 males and 3 females) from the same genetic background to generate each cohort. To control for genetic variation between families, parentage was reversed and balanced between treatment groups in subsequent cohorts. For example, the tank of adult zebrafish crossed to generate the control group in our first cohort was crossed to generate the restraint group in our second cohort. Tracking experiments were repeated to achieve the sample sizes reported here and included at least two cohorts. Zebralab tracking thresholds were set up as follows: Inactive/Small Swim Threshold = 5 mm/s; Small/Large Swim Threshold = 10 mm/s.
 
-## Agarose embedding
+### Agarose embedding
 
 To prevent physical movement from 3 to 6 dpf, we embedded larvae in 1.2% agarose dissolved in system water at 12:00 on 3 dpf. We moved larvae into plastic wells in a droplet of system water, anesthetized larvae using tricaine (4 g/L; Sigma-Aldrich, Oakville, Canada), and introduced a drop of 1.2% agarose to mix with the system water. Once set, additional warmed agarose was added around the embedded larvae to secure the embedded larvae in the well. For treatments requiring free tail movement, newly embedded larvae were submerged in system water and a scalpel was used to cut a block of agarose free from below the larvae’s neck to beyond the base of the tail.
 
-## Visual grating
+### Visual grating
 
 To simulate optic flow, we generated a visual grating stimulus using PsychoPy (Peirce, 2008) in which a black-and-white striped gradient moves along a randomly selected axis (between 0–360°) for 30 s, remains stationary for 30 s, and then begins again along a new, randomly selected axis. Gratings were displayed on a Dell P2212Hb computer monitor mounted horizontally, with plastic trays containing immobilized larvae sitting on top of the screen. In pilot experiments, grating bandwidth and speed were adjusted such that they would drive 6 dpf free-swimming larvae in a petri dish placed on the screen to swim along the grating axis. Gratings were presented to immobilized larvae starting on 3 dpf from 15:00-19:00, on 4–5 dpf for two 4 hr sessions (08:00-12:00 and 15:00-19:00), and on 6 dpf for just the morning session.
 
-## Copper sulfate treatment
+### Copper sulfate treatment
 
 On 3 dpf, larvae were exposed to either system water or 30 µM copper sulfate (Sigma-Aldrich) added to the swimming media for 30 min starting at 09:00. Following copper sulfate exposure, both groups of larvae were rinsed three times with fresh system water. A subset of each treatment group was kept in a petri dish for an additional 30 min before sacrifice and tissue collection to validate ototoxicity of the copper treatment. The rest of the larvae were all isolated in control 6-well plates for the remainder of the experiment.
 
-## AG1478 treatment
+### AG1478 treatment
 
 We dechorionated Tg(isl2b:mgfp) embryos by 6 hpf and treated them with either 4 µM 4-(3-chloroanilino)−6,7-dimethoxyquinazoline (AG1478), an ErbB receptor antagonist (Sigma-Aldrich) dissolved in 0.4% DMSO in system water or 0.4% DMSO in system water from 8 to 30 hpf (Honjo et al., 2008). At 30 hpf, larvae were rinsed three times with fresh system water and kept in an incubator until 3 dpf. On 3 dpf, AG1478 treatment was confirmed using fluorescence microscopy to count trunk DRG, which express GFP in Tg(isl2b:mgfp), in treated transgenic larvae. We excluded any larvae treated with AG1478 that exhibited more than 4 DRGs in the trunk. These larvae were removed from all experiments to ensure experimental manipulations only included larvae with most or all of trunk DRGs missing.
 
-## Optovin treatment
+### Optovin treatment
 
 We incubated larvae in Optovin (Hit2Lead, San Diego, California), a photo-activated small molecule that activates TRPA1b receptors found in zebrafish sensory neurons (Kokel et al., 2013). To establish a paradigm involving repeated photoactivation of TRPA1b, we incubated 5 dpf unrestrained larvae housed individually in 24 well plates in either 10 µM Optovin (in 0.1% DMSO in system water) or just 0.1% DMSO in system water for 2 hr in the Zebrabox (Viewpoint) tracking apparatus with the lights off. Following incubation, larvae were exposed to 2 s of white light (800 lux) alternating with 5 min of dark and movement was recorded using the automated tracking parameters outlined above.
 
 After validating the utility of Optovin in unrestrained larvae, we incubated half of the larvae in 24-well plates containing 5 dpf larvae immobilized in agarose from 3 dpf (as above) in either Optovin or a DMSO vehicle. One tray of larvae was kept in the Zebrabox apparatus while the other was kept in complete darkness on the counter adjacent to the Zebrabox, beneath an opaque black plastic cover. From 15:00-20:00, larvae in the Zebrabox were exposed to 2 s of light (800 lux) alternating with 5 min of darkness. At 20:00, all larvae trays were rinsed using fresh system water three times and moved into the dark incubator overnight.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For coronal section immunohistochemistry, larvae were sectioned using a freezing cryostat (20 μm sections), thaw-mounted on Superfrost Plus slides (Sigma-Aldrich), and dried for 3 hr in the dark at room temperature. Tissue was rehydrated in 0.2% Tween20 in phosphate-buffered saline (PBT) for 30 min at room temperature. At this point, tissue that was labeled for Elavl3 production was refixed with 4% paraformaldehyde for 20 min at room temperature and exposed to 50 mM Tris (pH = 8.0) for 60 min at 75–80°C before being rinsed with PBS three times and PBT once. All tissue was washed with PBT three times and blocked with 2% Normal Goat Serum (NGS) in PBT for at least 2 hr at room temperature. Tissue was incubated with the primary antibody in 2% NGS in PBT at 4°C overnight. Primary antibodies used in this study included mouse anti-Human Neuronal Protein HuC/HuD, also called ELAV like neuron-specific RNA binding protein three in zebrafish (Elavl3; Life Technologies, Waltham, Massachusetts, 1:400), PCNA (Invitrogen, Carlsbad, California, 1:500), rabbit anti-activated caspase 3, a marker of apoptosis (Cell Signaling Technology, Danvers, Massachusetts, 1:500), rabbit anti-GFP (Alexa-488 conjugated, Life Technologies, 1:1000), and tbr2 (Abcam, Cambridge, United Kingdom, 1:500). On the next day, tissue was rinsed three times with PBT before being incubated in a secondary antibody in 2% NGS in PBT for 1–2 hr at room temperature. Secondary antibodies used included Cy3-conjugated Goat Anti-Mouse IgG (Jackson ImmunoResearch, West Grove, Pennsylvania, 1:500), Cy3-conjugated Goat Anti-Rabbit IgG (Jackson ImmunoResearch, 1:500), and Cy2-conjugated Goad Anti-Rabbit IgG (Jackson ImmunoResearch, 111-225-144, 1:500). Tissue was rinsed with PBT three times. To visualize EdU, a Click-iT EdU reaction was performed as per the instructions included in the kit using the Alexa 647 azide (Invitrogen). Next, tissue was rinsed with PBT, counterstained with Hoechst for 10 min at room temperature, rinsed four times with PBS and coverslipped using 90% glycerol in PBS. Coverslips were sealed with clear nail polish and stored at 4°C until imaging. Images were captured with a Leica SP8 confocal microscope using a 40x objective as image stacks throughout the focus of sections compared as z-stacks with a z sampling distance of 1 μm. The treatment identity of larvae was masked prior to image analysis, which was all performed using IMARIS (Bitplane, Belfast, United Kingdom).
 
 For whole mount immunohistochemistry larvae were fixed in 4% paraformaldehyde for 2 hr at room temperature, rinsed in PBS, exposed to acetone for 7 min at −20°C, rinsed again with PBS, and a mixture of 1% bovine serum albumin, 1% DMSO, and 0.1% TritonX-100 (PBDT) before being blocked in 10% NGS in PBDT for 1 hr. Following blocking, larvae were incubated overnight in mouse anti-alpha acetylated tubulin (Abcam, Cat No: 6-11B-1; 1:500). The second day of immunohistochemistry was completed as above, except exposure to the secondary antibody was extended to 5 hr at room temperature and whole mount larvae were kept in PBS at the end of staining, not coverslipped or sectioned.
 
-## Cell counting
+### Cell counting
 
 Images were captured with a Leica SP8 confocal microscope using a 40x objective as image stacks throughout the focus of sections compared as z-stacks with a z sampling distance of 1 μm. Image analyses performed using IMARIS (Bitplane, Belfast, United Kingdom). PCNA +cell sampling was performed using landmarks summarized in Figure 2—figure supplement 1. Olfactory bulb sampling was only possible in single, 20 µm sections and both hemispheres were sampled together. Both pallial and subpallial PCNA+, Hoechst+, tbr2+, and GFAP+ cell sampling were performed across both hemispheres in three consecutive, 20 µm sections for all histology involving 6 and 9 dpf larvae. PCNA +cell sampling in 3 dpf used only two consecutive coronal sections, as the telencephalon was not sufficiently grown to span 3 consecutive sections. Optic tectum sampling on 6 dpf was performed on the first coronal section posterior to the tectal neuropil, sampled in and averaged across both hemispheres in each brain.
 
-## Statistical analysis
+### Statistical analysis
 
 We define a biological replicate as an individual larvae derived from a mixed clutch borne of at least two male and two female adult zebrafish. Whereas we did not perform any technical replicates of our experiments, which we define as a complete repetition of a single experiment, we instead replicated our main findings by either repeating them in later, more elaborate experiments (for example, control vs. restraint paradigms in both initial experiments and AG1478 experiments) or repeating experiments over multiple time courses (for example, identifying the effects of exercise on forebrain neuroproliferation by both 6 and 9 dpf). All statistical test results are preceded by a superscript numeral enabling reference to each test in our calculations of statistical power summarized in Table 1. In experiments involving two groups, treatment groups were compared using Student’s t-test or, when parametric assumptions were not met, Mann-Whitney U tests. In experiments involving three or more groups, treatment groups were compared using either one-way ANOVA or two-way ANOVA (with a within-groups variable for repeated data). All post hoc comparisons were made using Tukey’s test with a correction for multiple comparisons. When neural precursor counts (PCNA+, tbr2+, and GFAP+ cells) were reanalyzed using the absolute number of cells/section (instead of corrected for the number of Hoechst+/cells), similar results were obtained as present here.

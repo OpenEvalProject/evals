@@ -10,17 +10,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02bqrry13 Musculoskeletal Disease Centre, Jerry L. Pettis VA Medical Center Loma Linda United States
+1. Musculoskeletal Disease Centre, Jerry L. Pettis VA Medical Center Loma Linda United States ([ROR:02bqrry13](https://ror.org/02bqrry13))
 2. Fulgent Genetics El Monte United States
-3. https://ror.org/04bj28v14 Departments of Medicine, Loma Linda University Loma Linda United States
-4. https://ror.org/04bj28v14 Departments of Biochemistry, Loma Linda University Loma Linda United States
-5. https://ror.org/04bj28v14 Departments of Physiology, Loma Linda University Loma Linda United States
+3. Departments of Medicine, Loma Linda University Loma Linda United States ([ROR:04bj28v14](https://ror.org/04bj28v14))
+4. Departments of Biochemistry, Loma Linda University Loma Linda United States ([ROR:04bj28v14](https://ror.org/04bj28v14))
+5. Departments of Physiology, Loma Linda University Loma Linda United States ([ROR:04bj28v14](https://ror.org/04bj28v14))
 
 † Corresponding author
 
 ## Abstract
 
-The proximal and distal femur epiphyses of mice are both weight-bearing structures derived from chondrocytes but differ in development. Mineralization at the distal epiphysis occurs in an osteoblast-rich secondary ossification center (SOC), while the chondrocytes of the proximal femur head (FH), in particular, are directly mineralized. Thyroid hormone (TH) plays important roles in distal knee SOC formation, but whether TH also affects proximal FH development remains unexplored. Here, we found that TH controls chondrocyte maturation and mineralization at the FH in vivo through studies in thyroid stimulating hormone receptor ( Tshr ) hypothyroid mice by X-ray, histology, transcriptional profiling, and immunofluorescence staining. Both in vivo and in vitro studies conducted in ATDC5 chondrocyte progenitors concur that TH regulates expression of genes that modulate mineralization ( -/- Ibsp , Bglap2 , Dmp1 , Spp1 , and Alpl ). Our work also delineates differences in prominent transcription factor regulation of genes involved in the different mechanisms leading to proximal FH cartilage calcification and endochondral ossification at the distal femur. The information on the molecular pathways contributing to postnatal cartilage calcification can provide insights on therapeutic strategies to treat pathological calcification that occurs in soft tissues such as aorta, kidney, and articular cartilage.
+The proximal and distal femur epiphyses of mice are both weight-bearing structures derived from chondrocytes but differ in development. Mineralization at the distal epiphysis occurs in an osteoblast-rich secondary ossification center (SOC), while the chondrocytes of the proximal femur head (FH), in particular, are directly mineralized. Thyroid hormone (TH) plays important roles in distal knee SOC formation, but whether TH also affects proximal FH development remains unexplored. Here, we found that TH controls chondrocyte maturation and mineralization at the FH in vivo through studies in thyroid stimulating hormone receptor (Tshr-/-) hypothyroid mice by X-ray, histology, transcriptional profiling, and immunofluorescence staining. Both in vivo and in vitro studies conducted in ATDC5 chondrocyte progenitors concur that TH regulates expression of genes that modulate mineralization (Ibsp, Bglap2, Dmp1, Spp1, and Alpl). Our work also delineates differences in prominent transcription factor regulation of genes involved in the different mechanisms leading to proximal FH cartilage calcification and endochondral ossification at the distal femur. The information on the molecular pathways contributing to postnatal cartilage calcification can provide insights on therapeutic strategies to treat pathological calcification that occurs in soft tissues such as aorta, kidney, and articular cartilage.
 
 ## Introduction
 
@@ -32,27 +32,35 @@ Previous studies have revealed that bone development culminates at a later timep
 
 ## Results
 
-## TH is necessary for mineralization of the proximal FH
+### TH is necessary for mineralization of the proximal FH
 
 In order to determine whether the cartilage mineralization that occurs at the proximal femur of mice (Cole et al., 2013) is dependent on TH signaling, we evaluated the hip joints of hypothyroid Tshr-/- and euthyroid Tshr+/- on day 21. X-ray imaging of genotyped mice revealed that compared with the tight apposition of the FH with the acetabulum of the pelvic bone in Tshr+/-, a distinct gap was evident between the FH and acetabulum in Tshr-/- mice (Figure 1A). Given that injection of TH on days 5–14 restores the SOC defect at the distal femur (Xing et al., 2014), we tested whether the defect observed at the proximal femur is also directly dependent on TH. While all three of the proximal femur structures (greater trochanter, FH, and lesser trochanter) were underdeveloped in Tshr-/- injected with vehicle compared to Tshr+/- mice (Figure 1B), restoration of all three structures in Tshr-/- injected with T3/T4 indicates TH signaling also regulates development and mineralization of the proximal femur epiphysis (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig1-v2.jpg)
 
-**Figure 1.:** Tshr proximal femur phenotype and onset of mineralization.-/-(Panel A) Ventral X-ray view of postnatal (P) 21-day-old mice. Arrows point to joint between hip (h) and femur (f). (Panel B) Lateral view of three-dimensional (3D) μCT scans from P21 proximal femurs. FH = femur head, GT = greater trochanter; LT = lesser trochanter. (Panel C) Lateral μCT hemi-section view of proximal femurs. Asterisk adjacent to region mineralized in FH. (Panel D) Lateral views of 3D nano-computed tomography (nano-CT) images of proximal FH (top row) and distal femur epiphysis (bottom row). Mineralized tissue is opaque ivory/gold colored. (Panel E) Two-dimensional sections of nano-CT. Mineralized tissue is white/bright gray. POF: primary ossification front, SOC: secondary ossification center. Asterisk and arrow point to mineralization at FH. Images shown are representative of three to five mice per group.
+**Figure 1.:** (Panel A) Ventral X-ray view of postnatal (P) 21-day-old mice. Arrows point to joint between hip (h) and femur (f). (Panel B) Lateral view of three-dimensional (3D) μCT scans from P21 proximal femurs. FH = femur head, GT = greater trochanter; LT = lesser trochanter. (Panel C) Lateral μCT hemi-section view of proximal femurs. Asterisk adjacent to region mineralized in FH. (Panel D) Lateral views of 3D nano-computed tomography (nano-CT) images of proximal FH (top row) and distal femur epiphysis (bottom row). Mineralized tissue is opaque ivory/gold colored. (Panel E) Two-dimensional sections of nano-CT. Mineralized tissue is white/bright gray. POF: primary ossification front, SOC: secondary ossification center. Asterisk and arrow point to mineralization at FH. Images shown are representative of three to five mice per group.
 
 Although mineralization of both distal femur and proximal tibia epiphysis initiates by the end of the first week after birth in mice (Aghajanian et al., 2017; Mackie et al., 2011), the time at which mineralization initiates in the proximal femur epiphysis remains poorly defined. Consequently, we evaluated the earliest appearance of mineralization in proximal FH cartilage in Tshr+/- mice by high-resolution nano-computed tomography (nano-CT). Our data revealed a 10-day delay in the initiation of mineralization at the FH compared to the distal femoral epiphysis (Figure 1D and E).
 
-## FH cartilage mineralization is delayed in hypothyroid mice
+### FH cartilage mineralization is delayed in hypothyroid mice
 
 To further characterize the tissue mineralized at the FH, longitudinal sections of proximal femurs of euthyroid Tshr+/- and hypothyroid Tshr-/- mice were compared at P10 and P21 by histology staining for cartilage (Safranin O and toluidine blue), bone (Von Kossa), and mineral (Alizarin red). Relative to Tshr+/- controls, the cartilage area was greater at the proximal FH in Tshr-/- mice (Figure 2A and B). In the proximal FH, Alizarin red and Von Kossa mineral staining were only detected on day 21 of Tshr+/- controls (Figure 2C and D), which corroborates nano-CT results. The proximal FH of Tshr-/- is eventually mineralized in more mature mice (Figure 2—figure supplement 1). Conversely, extensive mineral staining was seen at the distal femur SOC in euthyroid mice at both timepoints, but to a reduced extent in the distal femur SOC of Tshr-/- mice on day 21 (Figure 2C and D). Interestingly, positive staining for tartrate resistant acid phosphatase (TRAP, also known as ACP5) was found in the actively mineralizing region of distal femur SOC (Figure 2E), which was also dependent on TH status. However, TRAP staining was not detected in the FH of either genotype, even on day 21. These data suggest that while TH seems to play an important role in the mineralization of proximal FH as in the case of the distal femur, there are important differences in when mineralization occurs, and the type of tissue being mineralized at both ends.
 
-## Transcription profiles reveal delay in chondrocyte maturation in FH of Tshr-/- mice
+![Figure 2.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig2-v2.jpg)
+
+**Figure 2.:** Safranin O stained sections showing cartilage in red (Panel A), toluidine blue stained sections showing cartilage in violet (Panel B), Alizarin red stained sections showing mineral in red (Panel C), Von Kossa stained sections showing mineral in black (Panel D), and TRAP/ACP5 stained sections showing TRAP activity in red (Panel E) at the proximal femur, PF, and distal femur, DF, from Tshr+/- and Tshr-/- mice. P.Sp = primary spongiosa; GP = growth plate; SOC = secondary ossification center.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Postnatal week 8 proximal femur sections stained in red for Safranin O (Panel A), violet for toluidine blue (Panel B), dark blue-mineral, light blue-collagen, red-nuclei for trichrome (Panel C).
+
+### Transcription profiles reveal delay in chondrocyte maturation in FH of Tshr-/- mice
 
 Given that TH elicits distinct responses at proximal FH and distal femur epiphysis, which both develop from chondrocytes, we compared transcriptional changes of genes involved in chondrocyte/osteoblast maturation and ECM remodeling at both sites on days 10 and 21 between Tshr+/- and Tshr-/- mice that were treated with or without TH by reverse transcriptase quantitative polymerase chain reaction (RT-qPCR). A delay in maturation at both ends in day 10 hypothyroid femurs was evident by reduced mRNA levels of genes expressed in mature chondrocytes Ihh, Tnfsf11, Sp7, Col10a1, Alpl, and Mmp13 (Figure 3A–D). Moreover, markers of immature chondrocytes Shh and Sox9 were increased, but only significantly at the FH (Figure 3A and B), indicating a more substantial delay in maturation of FH chondrocytes on day 10. TH treatment increased Col10a1 expression in the distal femur but not proximal FH at day 10, further supporting a delay in chondrocyte maturation at the FH.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig3-v2.jpg)
 
-**Figure 3.:** (Panels A–G) Gene expression changes from femur head (FH) or DF between Tshr injected with vehicle, or T3/T4, plotted as fold-change relative to anatomical and stage matched region in euthyroid -/-Tshr with vehicle (dashed line). Day 10 samples (Panels A–D) were treated on days 5–9, while day 21 samples (Panels E–G) were treated on days 5–14. (Panel I) Fold-change of mRNA expression at FH versus DF epiphysis in +/-Tshr days 10 and 21. Statistics analyzed by t-test where A = p < 0.05, * = p < 0.05 between T3/T4 treatment and vehicle at FH or DF. (n = 6) Sonic hedgehog (+/-Shh), Indian hedgehog (Ihh), tumor necrosis factor receptor superfamily member 11b – synonym rank ligand (Tnfsf11b/Rankl), tumor necrosis factor receptor superfamily member 11b – synonym osteoprotegerin (Tnfrsf11b/opg), vascular endothelial growth factor a (Vegfa), bone morphogenetic protein 2 (Bmp2), transforming growth factor alpha (Tgfa), SRY-box transcription factor 9 (Sox9), runt-related transcription factor 2 (Runx2), Sp7 transcription factor – synonym osterix (Sp7/Osx), hypoxia inducible factor 1alpha (Hif1a), endothelial PAS domain protein 1 – synonym hypoxia inducible factor 2alpha (Epas1/Hif2a), collagen type 2 alpha 1 (Col2a1), collagen type 10 alpha 1 (Col10a1), integrin binding sialoprotein – synonym bone sialoprotein (Ibsp/bsp), secreted phosphoprotein 1 – synonym osteopontin (Spp1/Opn), bone gamma-carboxyglutamate protein 2 – synonym osteocalcin (Bglap2/Ocn), matrix gla protein (Mgp), matrix metallopeptidase 13 (Mmp13), alkaline phosphatase liver/bone/kidney (Alpl), acid phosphatase five tartrate resistant – synonym tartrate resistant acid phosphatase (Acp5/Trap), beta catenin (Ctnnb1), aggrecan (Acan), ADAM metallopeptidase with thrombospondin type 1 motif 4 (Adamts4), ADAM metallopeptidase with thrombospondin type 1 motif 5 (Adamts5).Figure 3—source data 1.Figure 3A–D.Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) data for day 10 Tshr femur head (FH) and distal femur (DF). Average fold changes plotted and t-test values are highlighted in yellow.Figure 3—source data 2.Figure 3E–H.Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) data for day 21 Tshr femur head (FH) and distal femur (DF). Average fold changes plotted and t-test values are highlighted in yellow.Figure 3—source data 3.Figure 3I.Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) data for day 10 and day 21 comparing femur head (FH) versus distal femur (DF) from euthyroid mice. Average fold changes plotted and t-test values are highlighted in yellow.
+**Figure 3.:** (Panels A–G) Gene expression changes from femur head (FH) or DF between Tshr-/- injected with vehicle, or T3/T4, plotted as fold-change relative to anatomical and stage matched region in euthyroid Tshr+/- with vehicle (dashed line). Day 10 samples (Panels A–D) were treated on days 5–9, while day 21 samples (Panels E–G) were treated on days 5–14. (Panel I) Fold-change of mRNA expression at FH versus DF epiphysis in Tshr+/- days 10 and 21. Statistics analyzed by t-test where A = p < 0.05, * = p < 0.05 between T3/T4 treatment and vehicle at FH or DF. (n = 6) Sonic hedgehog (Shh), Indian hedgehog (Ihh), tumor necrosis factor receptor superfamily member 11b – synonym rank ligand (Tnfsf11b/Rankl), tumor necrosis factor receptor superfamily member 11b – synonym osteoprotegerin (Tnfrsf11b/opg), vascular endothelial growth factor a (Vegfa), bone morphogenetic protein 2 (Bmp2), transforming growth factor alpha (Tgfa), SRY-box transcription factor 9 (Sox9), runt-related transcription factor 2 (Runx2), Sp7 transcription factor – synonym osterix (Sp7/Osx), hypoxia inducible factor 1alpha (Hif1a), endothelial PAS domain protein 1 – synonym hypoxia inducible factor 2alpha (Epas1/Hif2a), collagen type 2 alpha 1 (Col2a1), collagen type 10 alpha 1 (Col10a1), integrin binding sialoprotein – synonym bone sialoprotein (Ibsp/bsp), secreted phosphoprotein 1 – synonym osteopontin (Spp1/Opn), bone gamma-carboxyglutamate protein 2 – synonym osteocalcin (Bglap2/Ocn), matrix gla protein (Mgp), matrix metallopeptidase 13 (Mmp13), alkaline phosphatase liver/bone/kidney (Alpl), acid phosphatase five tartrate resistant – synonym tartrate resistant acid phosphatase (Acp5/Trap), beta catenin (Ctnnb1), aggrecan (Acan), ADAM metallopeptidase with thrombospondin type 1 motif 4 (Adamts4), ADAM metallopeptidase with thrombospondin type 1 motif 5 (Adamts5).
 
 Furthermore, while expression levels of genes involved in mineralization, Ibsp, Spp1 and Acp5, were reduced, Mgp expression was elevated at the distal femur of day 10 Tshr-/- mice, but none of these were affected in the FH (Figure 3C and D). These data are consistent with the histology data demonstrating active mineralization at distal but not proximal FH at this timepoint. Since others, and we, have shown a key role for hypoxia signaling in chondrocyte maturation (Cheng et al., 2016; Cheng et al., 2017; Schipani et al., 2001; Yellowley and Genetos, 2019), we measured expression of hypoxia signaling genes and found that in day 10 Tshr-/- femurs the expression levels of Hif1a were unchanged at both the FH and distal femur, while Epas1 and Vegfa were reduced at the FH and not restored by TH treatment (Figure 3A and B). Tgfa expression was negatively regulated by TH at the FH but not at the distal femur (Figure 3A), thus suggesting region-specific effects of TH on the femur.
 
@@ -60,7 +68,7 @@ On day 21, femurs of hypothyroid mice continued to display profiles suggesting a
 
 To further characterize temporal changes of chondrocyte maturation at FH and distal femur, we compared changes in expression levels of genes in the FH relative to stage matched distal femurs on days 10 and 21 in Tshr+/- mice. The reduced expression of Ihh, Tnfsf11, Sp7, Mmp13, Ibsp, and Alpl (Figure 3I) at day 10 was consistent with the delayed maturation of chondrocytes at the proximal FH. However, at day 21, many of these genes were expressed at higher levels in the FH, a finding consistent with active mineralization occurring at this time. Therefore, transcriptional profile data reveals that chondrocytes are at a relatively more immature state in the FH of day 10 compared to day 21, and there was a catch-up in maturation as noted by increased expression of genes associated with chondrocyte maturation and mineralization in the FH on day 21.
 
-## Spatiotemporal profile of protein expression in FH chondrocyte development
+### Spatiotemporal profile of protein expression in FH chondrocyte development
 
 To further characterize the molecular mechanisms that contribute to the development of the FH, we performed a time-course spatiotemporal analysis of proteins that report different stages of chondrocyte and osteoblast maturation by immunohistology on Tshr+/- days 10, 17, and 21, and in Tshr-/- on day 17, when FH mineralization commences. Antibody fidelity was determined by spatial domains of expression in the proximal tibia of day 10 Tshr+/-, where active bone mineralization is underway, and occurs identically as in the distal femur.
 
@@ -68,37 +76,274 @@ We previously showed that expression of collagen proteins follows a linear progr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig4-v2.jpg)
 
-**Figure 4.:** Longitudinal sections of Tshr were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of +/-Tshr on day 17 by immunofluorescence for collagens: COL2A1, COL10A1, COL1A1 (all green). Immunofluorescent images counterstained with DAPI (blue). Abbreviations are references for all immunohistology figures (-/-Figures 4—9); FH, femur head; AC, articular cartilage; SOC, secondary ossification center; GP, growth plate; P.Sp, primary spongiosa.
+**Figure 4.:** Longitudinal sections of Tshr+/- were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of Tshr-/- on day 17 by immunofluorescence for collagens: COL2A1, COL10A1, COL1A1 (all green). Immunofluorescent images counterstained with DAPI (blue). Abbreviations are references for all immunohistology figures (Figures 4—9); FH, femur head; AC, articular cartilage; SOC, secondary ossification center; GP, growth plate; P.Sp, primary spongiosa.
 
 The progressive remodeling of collagens associated with distinct phases of chondrocyte maturation is principally achieved by enzymatic degradation. The key enzyme to preferentially target COL2A1 destruction is MMP13 (Inada et al., 2004). Immunostaining revealed that on day 10, MMP13 was largely expressed in a non-overlapping domain with COL2A1, while on days 17 and 21, MMP13 overlapped both COL2A1 and COL10A1 in chondrocytes, but minimally overlapped COL1A1 in bone, and remained expressed in FH of Tshr-/- mice (Figure 5). MMP9 degrades collagens expressed by more mature chondrocytes (Stickens et al., 2004), and while it was detected in bone tissue of all samples including strong expression at the SOC, it was not expressed in FH chondrocytes (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig5-v2.jpg)
 
-**Figure 5.:** Longitudinal sections of Tshr were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of +/-Tshr on day 17 by immunofluorescence for enzymes: matrix metallopeptidase MMP13, MMP9, carbonic anhydrase 2 (CAR2) stained in green; counterstained with DAPI (blue).-/-
+**Figure 5.:** Longitudinal sections of Tshr+/- were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of Tshr-/- on day 17 by immunofluorescence for enzymes: matrix metallopeptidase MMP13, MMP9, carbonic anhydrase 2 (CAR2) stained in green; counterstained with DAPI (blue).
 
 Osteoblast mineralization is affected by a pH balanced extracellular matrix, the function of which is in part regulated by carbonic anhydrase 2 (CAR2) (Adeva-Andany et al., 2015). While we found expression of CAR2 in osteoblasts at the tibia SOC and in bone beneath the FH, we did not detect its expression in FH chondrocytes (Figure 5). We also evaluated expression of non-collagenous extracellular matrix proteins involved in mineralization, IBSP, BGLAP2, DMP1, and SPP1. They were all expressed highly in the SOC and bone below the FH at all timepoints analyzed, and only BGLAP2 was found in day 10 FH. On days 17 and 21 BGLAP2 expression was lower in FH than in the bone matrix below the FH. While there was some positive signal for IBSP in the FH on days 17 and 21, the signal intensity was much less than seen in the bone beneath the FH chondrocytes. DMP1 was not detected in the FH at any of the days evaluated, and SPP1 was expressed at high level in mineralizing chondrocytes of Tshr+/- FH on day 17 (Figure 6). None of these mineralization factors were expressed in Tshr-/- FH chondrocytes. ALPL activity was detected in bone and mineralizing regions of FH in Tshr+/- mice at days 17 and 21 (Figure 6—figure supplement 1). These results reveal that some of the players involved in mineralization are differentially expressed in the FH versus SOC.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig6-v2.jpg)
+
+**Figure 6.:** Longitudinal sections of Tshr+/- were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of Tshr-/- on day 17 by immunofluorescence for non-collagenous extracellular matrix proteins: IBSP, BGLAP2, dentin matrix protein 1 (DMP1), and SPP1 stained in green; samples were counterstained with DAPI (blue).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig6-figsupp1-v2.jpg)
 
 We next determined if key transcription factors involved in chondrocyte/osteoblast differentiation (SOX9, RUNX2, SP7, DLX3, DLX5, HIF1A) are differentially expressed during mineralization of FH versus distal epiphysis. SOX9 signal was limited to chondrocytes in all regions examined. While SOX9 was not detected in hypertrophic chondrocytes in the tibia growth plate on day 10, it was present throughout the FH at all stages analyzed. RUNX2 was preferentially expressed in osteoblasts of the SOC and maturing chondrocytes at the tibia growth plate, as well as bone in the proximal femur, but not detected in FH chondrocytes until day 17 and thereafter. Both SOX9 and RUNX2 were expressed in the FH of Tshr-/- mice. Strong SP7 expression was detected at the SOC and pre-hypertrophic chondrocytes of the tibia growth plate, as well as bone of proximal tibia, but minimally expressed in FH chondrocytes until day 21, and absent in Tshr-/- FH (Figure 7). Both DLX3 and DLX5 were detected in mineralizing bone both proximally and distally. While DLX3 is expressed in FH chondrocytes prior to and during mineralization, DLX5 expression is weak or absent in the mineralizing region of the FH. HIF1A was expressed in the differentiating chondrocytes of both proximal femur and tibia but to a reduced extent in mineralizing bone. These results reveal that unlike the distal femur where bone is formed by endochondral ossification, SP7 likely plays a limited role in the initiation of FH chondrocyte mineralization.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig7-v2.jpg)
 
-**Figure 7.:** Longitudinal sections of Tshr were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of +/-Tshr on day 17 by immunofluorescence for transcription factors: SOX9, HIF1A are stained in red. RUNX2, SP7, and distal-less homeobox 5 (DLX5) are stained in green. Immunofluroescence images counterstained with DAPI (blue). DLX3 stained in brown by colorimetric immunohistochemistry.-/-
+**Figure 7.:** Longitudinal sections of Tshr+/- were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of Tshr-/- on day 17 by immunofluorescence for transcription factors: SOX9, HIF1A are stained in red. RUNX2, SP7, and distal-less homeobox 5 (DLX5) are stained in green. Immunofluroescence images counterstained with DAPI (blue). DLX3 stained in brown by colorimetric immunohistochemistry.
 
 Since TH is known to be critically involved in regulating chondrocyte maturation, we determined if delayed chondrocyte maturation in the FH can be explained on the basis of differences in TH receptor expression pattern in the FH versus SOC at the proximal tibia. Interestingly, we found that THRA1 was minimally expressed in proximal FH chondrocytes on day 10 but was expressed in day 10 chondrocytes and pre-hypertrophic chondrocytes of the proximal tibia (Figure 8). A notable gradual increase in expression was then observed on days 17 and 21, and reduced expression was seen in Tshr-/-. By comparison, THRB1 was expressed on day 10 FH in subarticular chondrocytes and in an expanded domain at the FH on days 17 and 21, as well as in chondrocytes surrounding the SOC and in pre-hypertrophic chondrocytes of the growth plate in the proximal tibia (Figure 8). Consistent with our identification of IHH as a direct target of TH action (Aghajanian et al., 2017; Xing et al., 2016), we found IHH expression in differentiating chondrocytes of both FH and tibia in a pattern that overlapped COL10A1 expression.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig8-v2.jpg)
 
-**Figure 8.:** Longitudinal sections of Tshr were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of +/-Tshr on day 17 by immunofluorescence for thyroid hormone response factors: thyroid hormone receptor A1 (THRA1), THRB1, IHH stained green. Counterstained with DAPI (blue).-/-
+**Figure 8.:** Longitudinal sections of Tshr+/- were probed for protein expression in FH on days 10, 17, 21, proximal tibia epiphysis on day 10, and FH of Tshr-/- on day 17 by immunofluorescence for thyroid hormone response factors: thyroid hormone receptor A1 (THRA1), THRB1, IHH stained green. Counterstained with DAPI (blue).
 
-## Transcription factor regulation of chondroprogenitor differentiation
+### Transcription factor regulation of chondroprogenitor differentiation
 
 Next, we aimed to determine how TH affects chondrocyte differentiation under controlled culture conditions, and how perturbation of master regulator transcription factors (RUNX2, SP7) and their co-regulators (DLX3, DLX5) affect this process in the absence or presence of TH. We therefore knocked down each of these transcription factors in the ATDC5 chondroprogenitor cell line by lentiviral delivery of shRNAs targeting each factor and included a non-specific/random control shRNA. First, we measured the response of ATDC5 cells transduced with control shRNA to a selected panel of genes via RT-qPCR after 3 days of treatment with vehicle or TH in the absence or presence of ascorbic acid (AA), a known inducer of chondrocyte differentiation (Altaf et al., 2006; Figure 9A). Treatment with TH only resulted in significant repression of Sox9 and Col2a1, as well as induction of Col10a1, and modulators of mineralization, Ibsp, Spp1, Bglap2, Alpl, and Dmp1. By contrast, addition of AA results in significant upregulation of Runx2 and Sp7, an effect that was also observed in AA/TH treated cultures. Interestingly, compared with AA alone, treatment with AA/TH repressed Dlx3 and induced Dlx5 expression (Figure 9A), as well as Col10a1, Spp1, Bglap2, Alpl, and Dmp1. These data indicate that TH in general promotes expression of genes involved in chondrocyte maturation and bone mineralization in chondroprogenitors, although TH effects vary in some instances depending on whether AA is present.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig9-v2.jpg)
+
+**Figure 9.:** (Panels A–G) Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) on day 3 for ATDC5 cell line represented as fold-change for genes labeled on X-axis. (Panel A) ATDC5 with control shRNA following treatment with TH, ascorbic acid (AA), or AA and TH (AA/TH). (Panel B) Heat map of all 17 genes analyzed in ATDC5 with shRNA for RUNX2, SP7, DLX3, DLX5. Graphed are the response to treatment with vehicle, TH, AA, or AA/TH versus control shRNA. Reduction in expression signifies positive regulation (green), while increased expression signifies negative regulation (red). (Panels C–F) Individual transcription factor knockdown versus control shRNA following treatments versus vehicle. (Panel G) Comparison between groups knocked down for a given transcription factor combination on X-axis versus control shRNA in TH treatment at either Mmp9 or Bglap2. Statistics analyzed by t-test where * = p < 0.05 or less; b = p < 0.05–0.10, and in Panel G one-way ANOVA where comparison bars indicate p < 0.05 or less (n = 4).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) on day 3 for ATDC5 transduced with shRNA for individual transcription factors RUNX2, SP7, DLX3, or DLX5 comparing fold changes at genes labeled on x-axis versus control shRNA in vehicle treatment condition. Statistics analyzed by t-test where * = p < 0.05 or less; b = p < 0.05–0.10 (n = 4).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) on day 3 for ATDC5 with SP7 overexpression (OE) or knockdown with SP7 shRNA. Fold changes are relative to empty vector GFP control for OE, or control shRNA in vehicle treated cells. Statistics analyzed by t-test where * = p < 0.05 or less (n = 3).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/76730/elife-76730-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) for Sp7 or Dlx3 from cultured chondrocytes (CCs) isolated from femur head (FH) or distal femur (DF) treated with TH for 22 days. Statistics analyzed by t-test where * = p < 0.05 or less (n = 4).
 
 The consequence of knockdown of individual transcription factors on various targets is shown in Figure 9B–F. The knockdown of intended targets was validated by data shown in Figure 9B, Figure 9—figure supplement 1. In the absence of TH and/or AA treatment, RUNX2, SP7, and DLX3 positively regulate markers of chondrocyte maturation, Col10a1, Mmp13, but seem to inhibit expression levels of markers of matrix mineralization, Ibsp, Spp1, Dmp1, and Mgp. Interestingly, expression levels of bone formation markers, Bglap2 and Alpl, are regulated in an antagonistic fashion by DLX3 (negative) and DLX5 (positive). As expected, knockdown of RUNX2 results in Sp7 downregulation, but not vice versa (Nakashima et al., 2002).
 
 Since histological data revealed that SP7, CAR2, and TRAP/ACP5 are all expressed in the distal femur but not in the FH, we evaluated whether SP7 regulates expression of these enzymes. Validation of loss and gain of function approaches was confirmed by expected effect on Sp7 mRNA in basal conditions, and the results revealed that while SP7 perturbation positively regulates Car2, it does not affect Acp5 (Figure 9—figure supplement 2). This suggests SP7 contributes to CAR2 expression enabling bone mineralization at the distal femur.
 
 Next, we evaluated whether and how the four transcription factors alter TH’s effect on regulation of chondrocyte differentiation by comparing changes elicited by shRNA for each transcription factor with control shRNA while in TH with and without AA (Figure 9B-F, Table 1). RUNX2 positively regulates expression of Sox9, Sp7, Dlx3, and Dlx5 (Figure 9C), DLX3 negatively regulates expression levels of Sp7 and Dlx6 (Figure 9E). In the presence of TH, SP7 negatively regulates Dlx3 expression (Figure 9D) while DLX5 positively regulates Dlx3 expression (Figure 9F). While TH treatment alone represses Col2a1 and induces Col10a1 and Col1a1, in the presence of AA, TH promotes Col2a1 and Col10a1 expression, but not Col1a1 (Figure 9A). In TH treated cultures, Col10a1 expression is positively regulated by SP7 and DLX5, while RUNX2 is a negative regulator. All four transcription factors positively regulate Col10a1 and Col1a1 expression in AA/TH treated cultures. DLX3 and SP7 exert positive and negative effects respectively on Col2a1 expression in the presence of TH. These data suggest that TH promotes maturation of chondrocytes by inhibiting Sox9 expression and promoting Col10a1 expression, which is likely co-regulated by all transcription factors examined.
+
+**Table 1.**
+ Comparison of genes regulated by different transcription factors with a p-value < 0.05 from Figure 9 panel B after treatment with vehicle, TH, AA + TH, or AA.‘Negative’ indicates knockdown of a given transcription factor results in a significant increase of gene in question, while ‘positive’ indicates the opposite. 2 = RUNX2; 3 = DLX3; 5 = DLX5; 7 = SP7/OSX shRNAs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Vehicle treatment</th>
+      <th colspan="2">TH treatment</th>
+      <th colspan="2">AA + TH treatment</th>
+      <th colspan="2">AA treatment</th>
+    </tr>
+    <tr>
+      <th>Negative</th>
+      <th>Positive</th>
+      <th>Negative</th>
+      <th>Positive</th>
+      <th>Negative</th>
+      <th>Positive</th>
+      <th>Negative</th>
+      <th>Positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sox9</td>
+      <td></td>
+      <td>2,3,5</td>
+      <td></td>
+      <td>2,3,5,7</td>
+      <td></td>
+      <td>7</td>
+      <td></td>
+      <td>5,7</td>
+    </tr>
+    <tr>
+      <td>Runx2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Sp7</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Dlx3</td>
+      <td></td>
+      <td>7</td>
+      <td>7</td>
+      <td>2,5</td>
+      <td></td>
+      <td></td>
+      <td>2,5,7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dlx5</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dlx6</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Col2a1</td>
+      <td></td>
+      <td>2,3</td>
+      <td>7</td>
+      <td>3</td>
+      <td>7</td>
+      <td>2,3,5</td>
+      <td></td>
+      <td>2,3,5</td>
+    </tr>
+    <tr>
+      <td>Col10a1</td>
+      <td></td>
+      <td>2,3,7</td>
+      <td>2</td>
+      <td>5,7</td>
+      <td></td>
+      <td>2,3,5,7</td>
+      <td></td>
+      <td>2,3,5,7</td>
+    </tr>
+    <tr>
+      <td>Col1a1</td>
+      <td></td>
+      <td>2,3,5</td>
+      <td></td>
+      <td>2,3,5</td>
+      <td></td>
+      <td>2,3,5,7</td>
+      <td></td>
+      <td>2,3,5,7</td>
+    </tr>
+    <tr>
+      <td>Mmp13</td>
+      <td>5</td>
+      <td>2,3,7</td>
+      <td></td>
+      <td>2,3,7</td>
+      <td>5</td>
+      <td>2,3</td>
+      <td>5</td>
+      <td>2,3</td>
+    </tr>
+    <tr>
+      <td>Mmp9</td>
+      <td>2,3</td>
+      <td></td>
+      <td>2,3</td>
+      <td>5</td>
+      <td>2,3</td>
+      <td></td>
+      <td>2,3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Ibsp</td>
+      <td>2,3</td>
+      <td></td>
+      <td>2,5,7</td>
+      <td>3</td>
+      <td></td>
+      <td>2,3,7</td>
+      <td></td>
+      <td>2,3</td>
+    </tr>
+    <tr>
+      <td>Spp1</td>
+      <td>2,3,7</td>
+      <td>5</td>
+      <td>2,3,7</td>
+      <td>5</td>
+      <td>2,7</td>
+      <td>5</td>
+      <td>2,7</td>
+      <td>3,5</td>
+    </tr>
+    <tr>
+      <td>Bglap2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>2,7</td>
+      <td>5</td>
+      <td>2,3,7</td>
+      <td>5</td>
+      <td>2,7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Alpl</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3</td>
+      <td>2</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+      <td>2,5</td>
+    </tr>
+    <tr>
+      <td>Dmp1</td>
+      <td>2,7</td>
+      <td></td>
+      <td>2,7</td>
+      <td>5</td>
+      <td>2,7</td>
+      <td>3,5</td>
+      <td>2,7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Mgp</td>
+      <td>2,7</td>
+      <td></td>
+      <td>2,5,7</td>
+      <td></td>
+      <td>2,5,7</td>
+      <td>3</td>
+      <td>2,5,7</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 TH treatment represses Mmp13 expression regardless of AA involvement (Figure 9A). In TH treated cultures, Mmp13 is positively regulated by RUNX2, SP7, and DLX3, while in AA/TH treated cultures, Mmp13 is positively regulated by RUNX2 and DLX3 and negatively regulated by DLX5 (Figure 9C and E). Mmp9 was repressed by TH but only in the presence of AA (Figure 9A). Mmp9 is negatively regulated by RUNX2 and DLX3 in TH+ AA treated cultures as well as in control cultures (Figure 9, Figure 9—figure supplement 1). These results indicate that transcription factor regulation of Mmp13 and Mmp9 is the same in the presence or absence of TH, but RUNX2 and DLX3 impede TH-mediated repression of Mmp13, while DLX5 antagonizes the DLX3 effect, and further promotes TH-mediated repression of Mmp13. Also, RUNX2 and DLX3 further promote the negative regulation of Mmp9 by TH observed in the presence of AA.
 
@@ -134,46 +379,46 @@ The potential clinical relevance of our findings are as follows: it is known tha
 
 ## Materials and methods
 
-## Mouse model
+### Mouse model
 
 We obtained the Tshrhyt mouse strain from Jackson Laboratories (Bar Harbor, ME). Animals were inbred and tail snip extracted DNA was genotyped for Tshr mutation by RT-qPCR. Mice were housed in standard housing conditions at the VA Loma Linda Healthcare System Veterinary Medical Unit (Loma Linda, CA). All procedures were approved by the Institutional Animal Care and Use Committees of the VA Loma Linda Healthcare System (Permit #0029/204). At time of sacrifice, mice were anesthetized in isoflurane, then exposed to CO2 prior to cervical dislocation, and bones dissected for further processing. For TH replacement experiments, genotyped mice were injected intraperitoneally with 1 μg T3 and 10 μg thyroxine (T4) (Sigma-Aldrich), or an equal volume of vehicle (5 mM NaOH) for 10 days (on days 5–14). Bones of mice studied on day 10 were injected on days 5–9 and sacrificed on day 10. Tshr mice do not show gender differences until 5 or 6 weeks. Therefore, mice were pooled regardless of gender in all analysis.
 
-## X-ray
+### X-ray
 
 Femur X-rays of anesthetized hypothyroid Tshr-/- and euthyroid Tshr+/- were obtained from Faxitron Radiography system (Hologic, Bedford, MA) at postnatal day 21 using 20 kV X-ray energy for 10 s.
 
-## Micro-CT
+### Micro-CT
 
 Proximal femurs were evaluated by μCT (viva CT40; Scanco Medical, Switzerland) as described previously (Xing et al., 2014). Proximal femurs were isolated from postnatal day 21, fixed in 10% formalin overnight (ON), then washed and imaged in phosphate buffered saline (pH 7.4). Bones were scanned by X-ray at 55 kVp volts at a resolution of 10.5 μM/slice. Images were reconstructed using the 2D and 3D image software provided by Scanco Viva-CT 40 instrument (Scanco USA, Wayne, PA).
 
-## Nano-CT
+### Nano-CT
 
 Proximal and distal femurs of Tshr+/- were scanned at postnatal days 10, 14, 17, and 21 using a nano-CT at a voxel dimension of 0.3 µm (VersaXRM-500; Xradia, Pleasanton, CA). Images were captured using software provided by Xradia.
 
-## Histology
+### Histology
 
 Mouse femurs were fixed in 10% formalin overnight, washed, decalcified in 10% EDTA (pH 7.4) at 4°C for 7 days with shaking and embedded in paraffin for sectioning. Longitudinal sections of the proximal and distal femur were stained with various stains using standard procedures.
 
-## Immunohistology
+### Immunohistology
 
 Longitudinal 5 μM sections at regions of interest shown in figures were obtained by immunofluorescence following standard protocols. Both paraffin and cryosections were processed. Dissected bones were fixed for 3 days in either 10% formalin (paraffin) or 4% paraformaldehyde (cryosections) at 4°C, followed by 1 week of de-calcification in 20% EDTA in PBS buffer (pH 7.5). Cryosectioned samples were embedded and sectioned in OCT (FisherScientific, 23-730-571). Paraffin sections were deparaffinized in Histochoice clearing reagent (Amresco, H103-4L), gradually re-hydrated in ethanol through PBS, then permeabilized in 0.5% Triton X-100 (SIGMA, T-9284) for 15 min at room temperature (RT), rinsed in PBS, followed by an antibody-specific antigen retrieval approach (see Supplementary file 1). Cryosections were processed identically except they were thawed to RT then started at the permeabilization step. Following antigen retrieval, tissue sections were blocked in 2.5% serum and incubated in primary antibodies ON at RT. Commercial species-specific secondary antibodies were used (VECTOR labs, DI-1788 or DI-3088), and sections were counterstained with DAPI (Invitrogen, D1306). Colorimetric immunohistochemistry followed same steps as for immunofluorescence except (1) endogenous peroxidase was quenched with 3% H2O2 prior to permeabilization (2) biotinylated goat anti-rabbit HRP secondary antibody was added at 1:200 (Vector BA-1000), followed by a 1:200 dilution of streptavidin-HRP (Vector: SA-5004), and detected by enzyme reaction with Betazoid DAB chromogen (BIOCARE BDB2004H). The Vector lab’s mouse on mouse (MOM) kit (BMK-2202) was used with mouse primary antibodies according to manufacturer’s instructions. Other VECTOR reagents used with MOM kit: Avidin/Biotin block, #SP-2001; Fluorescein Avidin #DCS A-2011.
 
-## Microscopy
+### Microscopy
 
 Immunofluorescence images were obtained on a 5× dry objective on a Leica Digital Microscope DMI6000B with Leica Application Suite X software. Histological and colorimetric immunohistochemical images were obtained on an Olympus microscope with an Olympus DP72 camera with DP2-BSW software. All immunohistological results were processed together with consecutive sections that either received no primary antibody or species-specific IgG antibody. These were imaged at identical parameters as sections probed with antibodies.
 
-## ALPL histochemistry
+### ALPL histochemistry
 
 ALPL activity assay was performed on cryosectioned samples as described (Miao and Scutt, 2002). Sections were warmed to RT, OCT compound washed out, then incubated in ALPL buffer (6.055 g Tris; 5.84 g NaCl; 0.147 g CaCl2•2 H2O; 0.372 g KCl; 0.203 g MgCl2•6 H2O in 1 L H2O pH 8.6) containing 1% magnesium chloride at 4°C O/N. Next day, samples were directly transferred to ALPL buffer + substrate (0.2 mg/mL naphthol AS-MX phosphate [Sigma-Aldrich, N6125-1G] and 0.4 mg/mL Fast Red violet LB [Sigma-Aldrich, F3381-1G]). Reaction was monitored, sections were rinsed with PBS, and imaged immediately. All samples received identical reaction time.
 
-## Cell Culture
+### Cell Culture
 
 The ATDC5 mouse chondrocyte cell line was purchased from the American Type Culture Collection (Manassas, VA), tested negative for mycoplasm, and validated by upregulation of chondrocyte differentiation markers in response to chondrocyte differentiation protocols. Cells were maintained in DMEM-F12 medium containing 5% FBS, penicillin (100 U/mL), and streptomycin (100 μg/mL) at 5% CO2 in normoxic conditions at 37°C. Cells were incubated in the presence of serum-free DMEM-F12 medium containing 0.1% bovine serum albumin and antibiotics for 24 hr prior to treatment with 10 ng/mL T3 (Sigma-Aldrich), 50 μg/mL AA and/or 10 mM β-glycerol phosphate (BG). Vehicle control indicate cells treated with BG only. shRNA knockdown was achieved by transduction of Mission Lentiviral particles (Millipore, Sigma): control shRNA- Cat#SHC002V; RUNX2 NM_009820, Cat#TRCN0000095590; DLX3 NM_010055, Cat#TRCN0000430532; DLX5 NM_010056.2 Cat#TRCN0000428940; Sp7 NM_130458 Cat#TRCN0000423959. SP7 overexpression studies were performed as described (Lindsey et al., 2019).
 
-## Ex vivo chondrocyte culture
+### Ex vivo chondrocyte culture
 
 Proximal HF and distal femur epiphyses were surgically isolated from 7-day-old Sp7 floxed homozygous mice and cells isolated via enzymatic digestion with collagenase 1 (2 mg/mL) and hyaluronidase (1 mg/mL) or collagenase D (2 mg/mL) as described (Lindsey et al., 2019). Femoral head and epiphyseal chondrocytes infected with GFP adenovirus were grown in alpha MEM containing 10% fetal bovine serum, penicillin (100 units/mL) and streptomycin (100 µg/mL) and treated with TH (10 ng/mL) or vehicle for 22 days prior to RNA extraction and real-time RT-PCR.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 RNA was extracted from epiphyseal chondrocytes or ATDC5 cells in TRI reagent (Molecular Research Center INC, TR118) according to manufacturer’s instructions, and purified on silica columns with E.Z.N.A. Total RNA Kit I (Omega BIO-TEK, R6834-02). Total RNA was reverse transcribed to cDNA with oligo(dT)12-18 and Superscript IV Reverse transcriptase (Invitrogen, 18091050). A final concentration of 0.133 ng/μL was used per real-time PCR reaction with InVitrogen SYBR green (ThermoFisher, 4309155) and processed on a ViiA 7 RT-PCR system. All reactions were standardized with peptidyl prolyl isomerase A primers. Primer sequences used for RT-qPCR are listed in Supplementary file 2. Fold changes were calculated by the Delta Ct method, and statistics analyzed by t-test (processed on Microsoft Excel 365) or one-way ANOVA (processed on GraphPad Prism9). Error bars in all graphs indicate ± standard error of mean (SEM).

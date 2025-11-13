@@ -16,7 +16,7 @@
 
 ## Abstract
 
-RCK domains regulate the activity of K + channels and transporters in eukaryotic and prokaryotic organisms by responding to ions or nucleotides. The mechanisms of RCK activation by Ca 2+ in the eukaryotic BK and bacterial MthK K + channels are well understood. However, the molecular details of activation in nucleotide-dependent RCK domains are not clear. Through a functional and structural analysis of the mechanism of ATP activation in KtrA, a RCK domain from the B. subtilis KtrAB cation channel, we have found that activation by nucleotide requires binding of cations to an intra-dimer interface site in the RCK dimer. In particular, divalent cations are coordinated by the γ-phosphates of bound-ATP, tethering the two subunits and stabilizing the active state conformation. Strikingly, the binding site residues are highly conserved in many different nucleotide-dependent RCK domains, indicating that divalent cations are a general cofactor in the regulatory mechanism of many nucleotide-dependent RCK domains.
+RCK domains regulate the activity of K+ channels and transporters in eukaryotic and prokaryotic organisms by responding to ions or nucleotides. The mechanisms of RCK activation by Ca2+ in the eukaryotic BK and bacterial MthK K+ channels are well understood. However, the molecular details of activation in nucleotide-dependent RCK domains are not clear. Through a functional and structural analysis of the mechanism of ATP activation in KtrA, a RCK domain from the B. subtilis KtrAB cation channel, we have found that activation by nucleotide requires binding of cations to an intra-dimer interface site in the RCK dimer. In particular, divalent cations are coordinated by the γ-phosphates of bound-ATP, tethering the two subunits and stabilizing the active state conformation. Strikingly, the binding site residues are highly conserved in many different nucleotide-dependent RCK domains, indicating that divalent cations are a general cofactor in the regulatory mechanism of many nucleotide-dependent RCK domains.
 
 ## Introduction
 
@@ -32,17 +32,549 @@ MthK is another well-studied example of a K+ channel with a cation-dependent RCK
 
 Unlike cation-dependent RCK domains, the molecular mechanisms that underlie ligand-dependent conformational changes in nucleotide-activated RCK domains are not well understood. KtrAB is a cation channel with a nucleotide-dependent RCK domain. This channel is an essential component of the K+ homeostasis machinery in many bacteria, involved in adaptation to osmotic stress and in pH regulation (Holtmann et al., 2003; Ochrombel et al., 2011). The structure of the KtrAB complex revealed a homodimeric membrane protein (KtrB) assembled with a cytosolic RCK octameric ring, formed by the KtrA protein (Diskowski et al., 2017; Vieira-Pires et al., 2013). KtrA binds nucleotides, ATP or ADP. ATP binding induces the adoption of a square-conformation by the octameric ring and increased K+ flux activity through KtrAB; ADP binding results in a non-square conformation and decreased flux (Figure 1a). However, it is still not clear how ATP binding induces the activated conformation of the RCK ring.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig1-v2.jpg)
+
+**Figure 1.:** (a) Left - square conformation of the KtrA octameric ring bound to ATP. Right- view of the ATP binding pockets in a KtrA dimer showing dimer subunits and nucleotides positioned close together. (b) Left- non-square conformation of the KtrA octameric ring bound to ADP. Right - view of the ADP binding pockets showing dimer subunits and nucleotides positioned farther apart relative to a). Intra-dimer interface residues discussed in the main text are shown as stick and labeled. KtrA octameric ring subunits are colored alternately blue and red. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cartoon representation of ATP-bound (left) and ADP-bound (right) KtrA dimers, depicting the intra-dimer hinge angle measured between αF helices (black arc) and the D36-D36 intra-dimer distances. Dimer subunits are colored blue and red, D36 Cα are shown as purple spheres and nucleotides as yellow stick.
+
 In this study, we explored the mechanism of nucleotide-dependent activation in KtrA. In particular, we have identified residues in the intra-dimer interface of KtrA that are vital for activation in the presence of ATP and have demonstrated the role of these residues. We reveal that one of these residues is highly conserved and has a crucial role in cation binding especially, in the chelation of divalent cations. This role is essential for the adoption of the active conformation of the RCK domain. With this study, we have provided a new understanding of the mechanism of regulation by nucleotides in nucleotide-dependent RCK domains.
 
 ## Results
 
-## Impact of intra-dimer interface mutants on KtrA structure and function
+### Impact of intra-dimer interface mutants on KtrA structure and function
 
 A comparison of the KtrA structures with ATP (PDB: 4J90) and ADP (PDB: 4J91) shows the rings in different conformations: square and non-square, respectively (Figure 1a and b). As previously described (Albright et al., 2006; Rocha et al., 2019; Vieira-Pires et al., 2013), the adoption of the square conformation upon ATP binding involves a change in the intra-dimer hinge angle (Figure 1—figure supplement 1). This change brings closer together the two nucleotide-binding sites in the RCK dimeric units, as seen in the D36-D36 Cα intra-dimer distance, a conserved residue in the nucleotide binding site (Figure 1—figure supplement 1 and Supplementary file 2). Narrowing of the intra-dimer space with bound ATP allows the establishment of interactions between the phosphate groups and residues in both the same and opposite subunits of the KtrA dimer (Figure 1a and b). In particular, the R16 residues are positioned between the two nucleotides and appear to stabilize the closely positioned negatively-charged phosphate groups. In contrast, in the ADP-bound structure the nucleotide molecules do not establish interactions with opposing subunit residues. Based on this evidence, we previously proposed that bridging interactions mediated by R16 and ATP stabilize the square or high-flux conformation of the KtrA octameric ring (Vieira-Pires et al., 2013).
 
 In order to explore the functional role of R16 and E125, another residue in the dimer interface and close to the ATP phosphate groups (Figure 1a and b), we used an E. coli phenotype complementation assay. As a control, we also analyzed the impact of mutating A80 since substitution with a bulkier side-chain was expected to cause a distortion of the nucleotide-binding site. In the complementation assay, low-level constitutive expression of an active potassium channel in the K+-transport deficient-strain TK2420 rescues bacterial growth in a medium containing low amounts of K+ (Albright et al., 2007; Buurman et al., 2004). While empty vector-containing cells require a minimum of 30 mM K+, expression of wild-type KtrAB allows growth of TK2420 in only 1 mM K+ (Figure 2). We introduced the single-point mutations R16A, R16K, A80P and E125Q in KtrA and tested their impact in the complementation assay. As expected, A80P resulted in KtrAB inactivation. However, and contrary to our predictions, none of the R16 mutations had an impact on the growth phenotype, while E125Q resulted in an apparently inactive KtrAB (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig2-v2.jpg)
+
+**Figure 2.:** Optical density of overnight E. coli TK2420 cultures (expressing different KtrAB constructs) as a function of K+ concentration in the growth media. Mean ± SD (n = 6) from two independent experiments. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Elution profiles of KtrA proteins bound to ATP (left) and ADP (right). (b) Elution profiles of KtrB and KtrAB complexes assembled with wild-type or mutant KtrA in the presence of ATP.
+
 To understand the basis of these results we first verified that the KtrA mutants A80P and E125Q retained the same basic properties of the wild-type protein. Both mutants assemble as octamers and are able to form a stable complex with KtrB, as revealed by size-exclusion chromatography (Figure 2—figure supplement 1a and b). In addition, we determined the structures of all KtrA mutants with bound ATP or ADP (Table 1). The structures of R16K (at 2.7 Å resolution) and R16A (at 3.4 Å resolution) with ATP are very similar to that of the previously determined wild-type KtrA-ATP (WT-ATP) (Figure 3a and Figure 3—figure supplement 1), adopting the square conformation. A simple indicator of ring conformation is the pair of distances (L1 and L2) separating the Cα of N38 residues located in opposite subunits across a ring face (Figure 3a and Supplementary file 3). In the ATP-bound rings, these distances are similar in the R16K (30.8/30.8 Å), R16A (29.9/29.9 Å) mutants and wild-type (30.0/30.0 Å) structures. Like in the wild-type protein, the ADP-bound R16K (at 3.0 Å resolution) and R16A (at 3.7 Å resolution) rings adopt a non-square conformation (Figure 3a). However, the ADP-bound ring conformations are different from each other and from the wild-type, with L1/L2 distances for the wild-type of 40.7/30.7 Å and for R16K of 52.0/21.9 Å (Supplementary file 3). In the ADP-bound R16A mutant there are eight KtrA dimers present in the asymmetric unit, corresponding to two different rings with L1/L2 distances of 34/30 Å and 37/28 Å.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig3-v2.jpg)
+
+**Figure 3.:** Views of crystal structures of wild-type and mutant KtrA that are (a) functional or (b) not functional in the TK2420 phenotype rescue assay. Top rows show structures with bound ATP and bottom rows show structures with bound ADP. KtrA octameric rings are displayed with subunits colored alternately blue and red. L1 and L2 are the pair of distances between the Cα of N38 residues located in opposite subunits across the ring. In three of these rings (R16A_ADP_2, E125Q_ATP_1 and E125Q_ADP_1), poor electron-density prevented modelling of C-terminal domains. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Superposition of KtrA-ATP octameric rings that adopt the square conformation. KtrAWT (red), KtrAR16K (marine), KtrAR16A (orange), KtrAWT with bound calcium (green).
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Data collection statistics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID</td>
+      <td>6S2J</td>
+      <td>6S5B</td>
+      <td>6S5D</td>
+      <td>6S7R</td>
+    </tr>
+    <tr>
+      <td>Crystal</td>
+      <td>R16K_ATP</td>
+      <td>R16K_ADP</td>
+      <td>R16A_ATP</td>
+      <td>R16A_ADP</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>I4</td>
+      <td>P212121</td>
+      <td>I4</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>Unit-cell dimensions a, b, c (Å) α, β, γ (°)</td>
+      <td>123.3, 123.3, 84.4 90, 90, 90</td>
+      <td>85.8, 137.4, 202.6 90, 90, 90</td>
+      <td>121.6, 121.6, 83.7 90, 90, 90</td>
+      <td>93.0, 97.9, 144.6 90.4, 97.1, 110.3</td>
+    </tr>
+    <tr>
+      <td>Protomers in the asymmetric unit</td>
+      <td>2</td>
+      <td>8</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.954240</td>
+      <td>0.979480</td>
+      <td>0.978570</td>
+      <td>0.978570</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>46.16–2.67 (2.80–2.67)</td>
+      <td>49.51–3.05 (3.16–3.05)</td>
+      <td>45.60–3.39 (3.66–3.39)</td>
+      <td>48.80–3.73 (3.86–3.73)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections (measured/unique)</td>
+      <td>85203/17872</td>
+      <td>383771/46032</td>
+      <td>76213/8535</td>
+      <td>161349/46426</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>4.8 (4.5)</td>
+      <td>8.3 (4.2)</td>
+      <td>8.9 (8.5)</td>
+      <td>3.5 (3.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.0 (96.5)</td>
+      <td>99.2 (91.6)</td>
+      <td>99.8 (99.0)</td>
+      <td>94.0 (51.2)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (all I) (%)</td>
+      <td>5.5 (86.8)</td>
+      <td>14.8 (47.4)</td>
+      <td>4.7 (182.9)</td>
+      <td>9.5 (96.6)</td>
+    </tr>
+    <tr>
+      <td>Rmeasure (all I) (%)</td>
+      <td>6.2 (98.1)</td>
+      <td>15.8 (53.8)</td>
+      <td>5.0 (194.6)</td>
+      <td>11.2 (116.0)</td>
+    </tr>
+    <tr>
+      <td>Mean I / σ(I)</td>
+      <td>13.9 (1.7)</td>
+      <td>15.9 (0.2)</td>
+      <td>17.1 (1.3)</td>
+      <td>7.4 (1.1)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.999 (0.541)</td>
+      <td>0.995 (0.886)</td>
+      <td>1.000 (0.573)</td>
+      <td>0.996 (0.494)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>46.16–2.67</td>
+      <td>48.17–3.05</td>
+      <td>45.60–3.39</td>
+      <td>48.80–3.73</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>18.96/23.57</td>
+      <td>20.93/24.29</td>
+      <td>23.83/27.90</td>
+      <td>24.57/30.04</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>17870</td>
+      <td>46032</td>
+      <td>8535</td>
+      <td>46426</td>
+    </tr>
+    <tr>
+      <td>Total No. of atoms</td>
+      <td>6969</td>
+      <td>13784</td>
+      <td>3459</td>
+      <td>25028</td>
+    </tr>
+    <tr>
+      <td>No. of waters</td>
+      <td>2</td>
+      <td>-</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of ATP</td>
+      <td>2</td>
+      <td>-</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of ADP</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>No. of Mg</td>
+      <td>1</td>
+      <td>-</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor(Å2)</td>
+      <td>90.2</td>
+      <td>97.4</td>
+      <td>194.2</td>
+      <td>152.9</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond lengths (Å)</td>
+      <td>0.013</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond angles (°)</td>
+      <td>1.086</td>
+      <td>0.760</td>
+      <td>0.745</td>
+      <td>0.824</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Residues in favored/allowed regions (%)</td>
+      <td>98/2</td>
+      <td>99/1</td>
+      <td>97/3</td>
+      <td>98/2</td>
+    </tr>
+    <tr>
+      <td colspan="5">Data collection statistics</td>
+    </tr>
+    <tr>
+      <td>Crystal</td>
+      <td>E125Q_ATP</td>
+      <td>E125Q_ADP</td>
+      <td>A80P_ATP</td>
+      <td>A80P_ADP</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>6S5N</td>
+      <td>6S5O</td>
+      <td>6S5E</td>
+      <td>6S5G</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2221</td>
+      <td>C2221</td>
+      <td>P212121</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Unit-cell dimensions a, b, c (Å) α, β, γ (°)</td>
+      <td>109.1, 156.5, 286.4 90, 90, 90</td>
+      <td>108.2, 155.2, 285.9 90, 90, 90</td>
+      <td>85.7, 133.9, 205.1 90, 90, 90</td>
+      <td>85.3, 132.9, 203.3 90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Protomers in the asymmetric unit</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.978570</td>
+      <td>0.978570</td>
+      <td>0.978570</td>
+      <td>0.978570</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.24–4.09 (4.48–4.09)</td>
+      <td>48.07–3.98 (4.36–3.98)</td>
+      <td>49.63–3.89 (4.20–3.89)</td>
+      <td>49.28–4.33 (4.84–4.33)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections (measured/unique)</td>
+      <td>131430/19704</td>
+      <td>274868/20970</td>
+      <td>146620/22230</td>
+      <td>100662/14674</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.7 (6.8)</td>
+      <td>13.1 (13.0)</td>
+      <td>6.6 (6.6)</td>
+      <td>6.9 (4.7)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.5 (98.3)</td>
+      <td>99.4 (97.9)</td>
+      <td>99.5 (98.0)</td>
+      <td>91.9 (79.1)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (all I) (%)</td>
+      <td>12.7 (113.5)</td>
+      <td>11.2 (132.6)</td>
+      <td>8.1 (133.9)</td>
+      <td>19.1 (56.8)</td>
+    </tr>
+    <tr>
+      <td>Rmeasure (all I) (%)</td>
+      <td>13.7 (122.9)</td>
+      <td>11.7 (138.1)</td>
+      <td>8.8 (145.4)</td>
+      <td>20.5 (62.9)</td>
+    </tr>
+    <tr>
+      <td>Mean I / σ(I)</td>
+      <td>9.5 (1.7)</td>
+      <td>12.0 (1.9)</td>
+      <td>10.3 (1.3)</td>
+      <td>7.9 (2.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.999 (0.835)</td>
+      <td>0.999 (0.771)</td>
+      <td>0.999 (0.830)</td>
+      <td>0.995 (0.873)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>48.24–4.09</td>
+      <td>47.66–3.98</td>
+      <td>47.88–3.89</td>
+      <td>49.28–4.33</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>27.91/31.99</td>
+      <td>24.96/28.62</td>
+      <td>26.02/31.72</td>
+      <td>25.37/31.43</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>19704</td>
+      <td>20970</td>
+      <td>22230</td>
+      <td>14674</td>
+    </tr>
+    <tr>
+      <td>Total No. of atoms</td>
+      <td>12594</td>
+      <td>12426</td>
+      <td>13912</td>
+      <td>13744</td>
+    </tr>
+    <tr>
+      <td>No. of waters</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of ATP</td>
+      <td>8</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of ADP</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>No. of Mg</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor(Å2)</td>
+      <td>183.9</td>
+      <td>201.8</td>
+      <td>188.6</td>
+      <td>135.7</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond lengths (Å)</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond angles (°)</td>
+      <td>0.804</td>
+      <td>0.791</td>
+      <td>0.883</td>
+      <td>0.729</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Residues in favored/allowed regions (%)</td>
+      <td>98/2</td>
+      <td>97/3</td>
+      <td>98/2</td>
+      <td>97/3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data collection statistics</td>
+    </tr>
+    <tr>
+      <td>Crystal</td>
+      <td>WT_ATP_Ca</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>6S5C</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>I4</td>
+    </tr>
+    <tr>
+      <td>Unit-cell dimensions a, b, c (Å) α, β, γ (°)</td>
+      <td>122.7, 122.7, 84.0 90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Protomers in the asymmetric unit</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.978570</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>45.94–3.00 (3.18–3.00)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections (measured/unique)</td>
+      <td>123606/12614</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>9.8 (9.8)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (98.9)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (all I) (%)</td>
+      <td>4.3 (141.8)</td>
+    </tr>
+    <tr>
+      <td>Rmeasure (all I) (%)</td>
+      <td>4.6 (149.6)</td>
+    </tr>
+    <tr>
+      <td>Mean I / σ(I)</td>
+      <td>24.5 (1.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.999 (0.658)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>37.81–3.00</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>20.70/25.88</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>12614</td>
+    </tr>
+    <tr>
+      <td>Total No. of atoms</td>
+      <td>3475</td>
+    </tr>
+    <tr>
+      <td>No. of waters</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of ATP</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>No. of ADP</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>No. of Ca</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor(Å2)</td>
+      <td>135.1</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond lengths (Å)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. bond angles (°)</td>
+      <td>0.697</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Residues in favored/allowed regions (%)</td>
+      <td>98/2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Rmsd: root-mean-square deviation; values in parenthesis correspond to the highest resolution shell._
 
 Crystal structures of the mutants that did not rescue the TK2420 growth phenotype (A80P and E125Q) reveal a different picture (Figure 3b). The ATP-bound structures do not adopt a square conformation, displaying L1/L2 distances for A80P (at 3.9 Å resolution) of 52/23 Å and for E125Q (at 4.1 Å resolution and with two different half-rings in the asymmetric unit) of 34/30 Å and 42/27 Å. The ADP-bound structures are also non-square, showing ring conformations that are very similar to those observed with ATP: A80P (at 4.3 Å resolution) has L1/L2 distances of 52/22 Å and E125Q (at 4.0 Å resolution and with two rings) of 34/30 Å and 42/27 Å.
 
@@ -50,7 +582,7 @@ It is apparent that there is a large structural variability between rings adopti
 
 This structural analysis fits well with our phenotype rescue assay. KtrA mutants that show a wild-type protein function (R16K and R16A) are able to adopt a square conformation with ATP. In contrast, mutants that do not rescue growth (A80P and E125Q) also do not adopt the square conformation in the ATP-bound structures. Overall, these results confirm that KtrAB activation requires the adoption of a stable KtrA-ATP ring square conformation. Importantly, they also reveal that, while R16 does not play a major role in the mechanism, A80 and E125 are crucial residues in the adoption of this conformation.
 
-## Impact of A80P and E125Q mutations on the nucleotide-binding site
+### Impact of A80P and E125Q mutations on the nucleotide-binding site
 
 To understand the molecular basis of the functional impact of A80P and E125Q, we analyzed the nucleotide binding sites in these mutant ATP-bound structures. In this analysis, we took in consideration the low resolution of the structures and focused only on the impact of the mutations in the main-chain trace. It is worthwhile explaining that refinement of the low-resolution structures (worse than 3.5 Å) involved only rigid-body refinement of the molecular replacement model (wild-type KtrA), followed by all-atom refinement with non-crystallographic and secondary structure restraints. We performed minimal manual adjustments.
 
@@ -62,7 +594,7 @@ In the A80P-ATP structure, the main-chain atoms of residue P80 are positioned ou
 
 In contrast, in the maps for the E125Q-ATP structure we do not observe obvious changes in the main-chain trace that might explain the impact of the mutation in the conformation of the ring.
 
-## Magnesium binding site
+### Magnesium binding site
 
 A clue for the role of E125 is revealed by the 2.7 Å structure of the ATP-bound R16K KtrA mutant. In this structure, there was a distinct additional electron-density in the KtrA intra-dimer interface, between the γ-phosphates of the nucleotide (Figure 5a). After careful crystallographic refinement, we concluded that the density likely corresponds to a magnesium ion (Figure 5a and b). The ion is coordinated by six oxygen atoms, adopting octahedral geometry. The coordinating atoms are provided by the γ-phosphate of both ATP molecules, by two water molecules and by the carboxylic groups of the two E125 residues. In this structure, the K16 side-chain is well defined in the electron density, interacting with one of the Mg2+ coordinating water molecules, with the carbonyl group of Q105 from the opposite subunit and with the γ-phosphate from the ATP in the same subunit. The octahedral coordination of the ion along with the majority of the coordination distances fit well with the expected coordination of a magnesium ion; however, the interaction distances with the oxygen atoms in the phosphate groups are longer than expected (Bock et al., 1994; Harding, 2001; Zheng et al., 2008). Calcium could also be a possible solution for the density but calcium ions are often coordinated by seven oxygen atoms in crystal structures (Harding, 2001), acquiring preferentially a pentagonal bipyramidal geometry according to the MetalPDB server (http://metalweb.cerm.unifi.it). In addition, the ideal coordination distances established by calcium ions are longer than for Mg2+ (Zheng et al., 2008). Refinement of Ca2+ at the site showed the same interactions and very similar distances to Mg2+. Importantly, the temperature factor of Ca2+ became larger than for the atoms forming its coordination shell (Supplementary file 4), suggesting that the density corresponds to a less electron-dense cation. Overall, we conclude that the ion bound to the intra-dimer interface site is a magnesium ion. It is worthwhile mentioning that Mg2+ was not added to the protein or crystallization mixture and so the ion was sequestered during protein preparation or crystallization.
 
@@ -74,9 +606,21 @@ We revisited the electron-density maps of the previously resolved wild-type KtrA
 
 Overall, these structural results reveal that E125 coordinates Mg2+ at the intra-dimer interface. Importantly, the γ-phosphates of the ATP molecules complete the coordination of the divalent cation. In this arrangement, the divalent cation bridges the ligand molecules in two KtrA subunits, suggesting that the cation stabilizes the two subunits in the RCK dimers close together, favoring the adoption of the square conformation. Mutation to glutamine likely affects the coordination of the Mg2+ binding site, changing the stability of the square conformation and explaining the inability of the E125Q KtrA mutant to rescue the TK2420 phenotype.
 
-## Functional effect of magnesium ion in KtrAB
+### Functional effect of magnesium ion in KtrAB
 
 To establish the importance of the divalent cation in the function of KtrAB we adapted the ACMA-liposome K+ flux assay (Su et al., 2016). In this assay, KtrAB is reconstituted into liposomes in the presence of 150 mM KCl and a K+ gradient is established by dilution of the proteoliposomes into a low K+ concentration solution. The assay is initiated by addition of carbonyl cyanide m-chlorophenylhydrazone (CCCP, a H+-ionophore), which builds-up a H+ gradient across the membrane as potassium ions efflux through KtrAB. Formation of an H+ gradient results in quenching of 9-amino-6-chloro-2-methoxyacridine (ACMA) fluorescence (Figure 6). We have found that using 2 µM ACMA in the flux assay, as others have described, causes inhibition of KtrAB. We have therefore reduced the concentration of fluorescence probe to 550 nM. In these conditions, we observe a fluorescence quenching window of ~80% in our functional assays. One- or two-phase exponential equations were fitted to the fluorescence quenching curves and flux rate constants were determined as the inverse of time constants extracted from the fit (Figure 6—figure supplement 1 and Supplementary file 5). The fast component of the majority of double-exponential fits was the dominant term (larger amplitude) and is used in the analysis below. Exceptions are noted in the figure legends. In many of the experiments below we compared the activity of proteoliposomes reconstituted with different protein combinations, for example KtrB assembled with KtrA-ATP, KtrA-ADP or E125Q KtrA with bound ATP. Reconstitutions with different assemblies show similar amounts of protein associated with liposomes (Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig6-v2.jpg)
+
+**Figure 6.:** (a and b) Proteoliposome flux assay performed with KtrB and wild-type and mutant KtrAB with ATP or ADP, in the presence or absence of 2 mM magnesium, as indicated. All assays were performed with sorbitol in the external solution. Panels show representative fluorescence quenching curves. Empty liposomes were used as control. (c) Plot of flux rate constants for conditions in a) and b). Mean ± SD as well as individual rate constants (blue dots) are shown for n = 6–7 from at least two different proteoliposome preparations. See also Figure 6—figure supplement 1, Figure 6—figure supplement 2 and Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) KtrAB-ATP flux assay representative curve with sorbitol in the external solution. Fit was performed using a one-phase exponential equation: $y=y0+A1e^{-(x-x0)/\tau}$ (red line). (b) KtrAB-ATP flux assay representative curve with sorbitol in the external solution and in the presence of 2 mM magnesium. Fit was performed using a two-phase exponential equation: $y=y0+A1e^{-(x-x0)/\taufast}$+$A2e^{-(x-x0)/\tauslow}$ (red line). Attempt of fitting with a one phase exponential equation is shown as a blue line.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** 5 µl of proteoliposomes reconstituted with KtrB or KtrAB assemblies were loaded in each well. Molecular weight markers (MW) are shown on the left. Bands corresponding to KtrB and KtrA are indicated.
 
 We first compared the differences in the flux of KtrAB-ATP with and without Mg2+, in proteoliposomes resuspended in an external solution containing 150 mM sorbitol and 1.5 mM KCl (Figure 6a). Flux is ~10 fold faster in the presence of Mg2+, with the rate constant increasing from 0.011 ± 0.001 to 0.096 ± 0.008 s−1 (Figure 6c and Figure 6—source data 1).
 
@@ -84,13 +628,13 @@ Next, we removed the chemical groups that coordinate Mg2+ in the R16K and WT-ATP
 
 These functional data support the proposal that Mg2+ is a cofactor in the nucleotide-dependent activation of KtrAB by binding at the intra-dimer RCK interface site.
 
-## Calcium also activates KtrAB
+### Calcium also activates KtrAB
 
 To understand if the intra-dimer interface site is selective for Mg2+, we performed flux experiments with addition of Ca2+ and Mg2+ to an external solution containing 20 mM choline chloride and sorbitol (Figure 7). We chose to include choline chloride because we wanted to minimize any non-specific effect of divalent cations on the liposomes by increasing the ionic strength of the assay solution and because choline is an organic cation that does not permeate KtrAB.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig7-v2.jpg)
 
-**Figure 7.:** (a) Proteoliposome flux assay with KtrAB-ATP in an external solution with 20 mM choline chloride and sorbitol. The panel shows representative fluorescence quenching curves. Empty liposomes were used as control. (b) Plot of flux rate constants for conditions shown in a). Mean ± SD as well as individual flux rate constants (blue dots) are shown with n = 3–5 of the same proteoliposome preparation. For KtrAB-ATP + 5 mM Mg2+ the amplitude of the fast component in the double-exponential fit is slightly lower than of the slow component. Nevertheless, we plotted the rate constant of the fast component as it represents the initial decay phase of the curve, allowing comparison with other rate constants (see Supplementary file 5). (c) Structure of wild-type KtrA octameric ring with bound ATP supplemented with 5 mM CaCl2. Subunits of the octameric ring are colored alternately blue and red. L1 and L2 correspond to the distances between the Cα of N38 residues located in opposite subunits across the ring. d) Calcium-binding site showing cation coordination. Calcium ion is shown as blue sphere. Residues and nucleotides coordinating calcium are shown as stick with coordination distances indicated. See also Figure 7—source data 1.Figure 7—source data 1.Figure 7b.
+**Figure 7.:** (a) Proteoliposome flux assay with KtrAB-ATP in an external solution with 20 mM choline chloride and sorbitol. The panel shows representative fluorescence quenching curves. Empty liposomes were used as control. (b) Plot of flux rate constants for conditions shown in a). Mean ± SD as well as individual flux rate constants (blue dots) are shown with n = 3–5 of the same proteoliposome preparation. For KtrAB-ATP + 5 mM Mg2+ the amplitude of the fast component in the double-exponential fit is slightly lower than of the slow component. Nevertheless, we plotted the rate constant of the fast component as it represents the initial decay phase of the curve, allowing comparison with other rate constants (see Supplementary file 5). (c) Structure of wild-type KtrA octameric ring with bound ATP supplemented with 5 mM CaCl2. Subunits of the octameric ring are colored alternately blue and red. L1 and L2 correspond to the distances between the Cα of N38 residues located in opposite subunits across the ring. d) Calcium-binding site showing cation coordination. Calcium ion is shown as blue sphere. Residues and nucleotides coordinating calcium are shown as stick with coordination distances indicated. See also Figure 7—source data 1.
 
 Relative to the condition without divalent cation, adding 0.7 or 2 mM Ca2+ or Mg2+ increases flux up to 4-fold. Rate constants become similar to those measured in the sorbitol/Mg2+ condition (0.088 ± 0.0.002 s−1 for 2 mM Mg2+ and 0.092 ± 0.001 s−1 for 2 mM Ca2+) (Figure 7a and b and Figure 7—source data 1). Addition of 5 mM Ca2+ or Mg2+ resulted in a reduction in steady-state fluorescence at 500 s to ~60% for Mg2+ and ~35% for Ca2+ (Figure 7a). No changes in total fluorescence quenching were observed when valinomycin is added to these conditions, indicating that the high concentrations of divalent cations are not affecting the structure of the proteoliposomes. However, while the flux rate constant with 5 mM Mg2+ is unchanged, it decreases 9-fold with 5 mM Ca2+ (Figure 7b and Figure 7—source data 1), suggesting that, at high concentrations, Ca2+ inhibits flux by blocking the KtrAB channel.
 
@@ -100,9 +644,17 @@ The intra-dimer interface shows a bound calcium ion (Figure 7d). After refinemen
 
 These functional and structural experiments establish that the intra-dimer interface site binds both Mg2+and Ca2+, further supporting the idea that divalent cations stabilize the square conformation of the RCK domain ring and activate the KtrAB.
 
-## Monovalent cation effect
+### Monovalent cation effect
 
 While establishing the flux assay in choline chloride we tested an assay solution containing 150 mM choline chloride and 1.5 mM KCl. We were surprised to observe that fluorescence quenching was comparable to the sorbitol/Mg2+ condition above, with steady-state values of ~80% and a rate constant of 0.062 ± 0.007 s−1 (Figure 8a and c and Figure 8—source data 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig8-v2.jpg)
+
+**Figure 8.:** (a and b) Proteoliposome flux assay performed with KtrB and wild type and mutant KtrAB with ATP or ADP with choline chloride (ChCl) in the external solution. Panels show representative fluorescence quenching curves. Empty liposomes were used as control. (c) Plot of flux rate constants for conditions shown in a) and b). Mean ± SD as well as individual flux rate constants (blue dots) are shown for n = 5–9 from at least two different proteoliposome preparations. Conditions correspond to 150 mM choline chloride external solution except where stated otherwise. See also Figure 8—figure supplement 1 and Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** KtrAB-ATP proteoliposome flux assays with choline chloride or choline acetate in the external solution. Representative fluorescence quenching curves obtained for each condition. Empty liposomes were used as controls.
 
 Addition of Mg2+ had little or no effect in the rate constant (0.058 ± 0.003 or 0.079 ± 0.010 s−1 with addition of 0.7 mM or 2 mM Mg2+, respectively), confirming that KtrAB is fully active in the presence of 150 mM choline chloride (Figure 8a and c and Figure 8—source data 1). Lowering the concentration of choline to 20 mM decreased the flux rate by ~2 fold and, as shown above, addition of 0.7 or 2 mM Mg2+ reestablishes maximum activity (Figure 7a and c).
 
@@ -114,19 +666,63 @@ If choline is able to activate KtrAB-ATP, we asked whether the same happens with
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig9-v2.jpg)
 
-**Figure 9.:** + on KtrAB flux.(a) Proteoliposome flux assay performed with KtrB and wild-type and mutant KtrAB with ATP with lithium chloride (LiCl) in the external solution. Osmolarity differences were partially compensated with inclusion of sorbitol in the solution. Panels shows representative fluorescence quenching curves. Empty liposomes were used as control. (b) Plot of flux rate constants for conditions shown in a). Mean ± SD as well as individual flux rate constants (blue dots) are shown for n = 4 from one proteoliposome preparation. For conditions in 20 mM Li+ (with and without Mg2+) and in 5 mM (Li+ (without Mg2+) the amplitude of the fast component of the double-phase exponential fit is either equal or smaller than of the slow component. However, we plot the ‘fast’ rate constant as it represents the initial decay phase of the curve, allowing comparison with other rate constants (see Supplementary file 5). See also Figure 9—source data 1.Figure 9—source data 1.Figure 9b.
+**Figure 9.:** (a) Proteoliposome flux assay performed with KtrB and wild-type and mutant KtrAB with ATP with lithium chloride (LiCl) in the external solution. Osmolarity differences were partially compensated with inclusion of sorbitol in the solution. Panels shows representative fluorescence quenching curves. Empty liposomes were used as control. (b) Plot of flux rate constants for conditions shown in a). Mean ± SD as well as individual flux rate constants (blue dots) are shown for n = 4 from one proteoliposome preparation. For conditions in 20 mM Li+ (with and without Mg2+) and in 5 mM (Li+ (without Mg2+) the amplitude of the fast component of the double-phase exponential fit is either equal or smaller than of the slow component. However, we plot the ‘fast’ rate constant as it represents the initial decay phase of the curve, allowing comparison with other rate constants (see Supplementary file 5). See also Figure 9—source data 1.
 
 Overall, our data suggest that monovalent cations (both Li+ and choline) are able to activate KtrAB through a mechanism that involves the intra-dimer interface of the RCK domain.
 
 To compare the impact of choline and of Mg2+ on the activation mechanism of KtrAB we performed titrations of these two cations using the flux assay (Figure 10 and Figure 10—figure supplement 1). Although osmolarity differences did not affect flux (Figure 10—figure supplement 2), we matched the osmolarity of the conditions in the two titration experiments to directly compare results. In addition, we verified that the free concentration of Mg2+ in the assay solutions is similar to the added concentration. For this, we spun-down proteoliposomes after running the assay and measured Mg2+ in the supernatant using flame ionization spectroscopy. For example, for conditions with 25, 107 and 1156 µM added Mg2+, the determined free concentrations were 34 ± 0, 126 ± 8 and 1210 ± 9 µM, respectively. The titrations show that increasing concentrations of both Mg2+ and choline result in increased flux rate (Figure 10a and c). Fitting the titration curves with a Hill equation yielded a K1/2 of activation for Mg2+ of 155 ± 17 µM (Hill coefficient 1.8 ± 0.0) and for choline, 25 ± 2 mM for choline with a Hill coefficient 1.9 ± 0.2 (Figure 10b and d).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig10-v2.jpg)
+
+**Figure 10.:** (a) Magnesium ion titration of KtrAB-ATP using a proteoliposome flux assay performed with increasing amounts of MgCl2 added to a 300 mM sorbitol external solution. Panel shows representative fluorescence quenching titration curves normalized to their steady-state. Magnesium ion concentration increases with red color intensity from 0 to 2000 µM (b) Plot of flux rate constants (mean ± SD, from three separate titrations) as a function of magnesium ion concentration. (c) Choline titration of KtrAB-ATP using a proteoliposome flux assay performed with increasing amounts of choline chloride in the external solution while compensating the change in osmolarity with sorbitol. Panel shows representative fluorescence quenching titration curves normalized to their steady-state. Choline chloride concentration increases with blue color intensity from 0 to 150 mM (d) Plot of flux rate constants (mean ± SD, from three separate titrations) as a function of choline concentration. Titrations were fitted with a Hill equation, $y=Start+(End-Start)\times\frac{x^{n}}{K1/2^{n}+x^{n}}$. Mean ± SD of K1/2 and of Hill coefficients (n) determined from fits to separate titrations are shown. EDTA was not added to the external solution in these assays. See also Figure 10—figure supplement 1 and Figure 10—figure supplement 2.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (a) Raw fluorescence data from representative titration. (b) Same data after normalization to valinomycin quenching. Magnesium ion concentration increases with red color intensity from 0 to 2000 µM. In many of the manuscript figures depicting flux assay experiments, the steady-state levels of fluorescence quenching curves are different from each other, as shown in b), when it would be expectable to have the same level. In most cases this resulted from the impact of the external solution conditions on the initial fluorescence value (before addition of CCCP), as shown in a), and from normalization using the fluorescence values after valinomycin addition, which change little across different experiments. We do not fully understand the reason for the differences in initial fluorescence but it appears that ACMA fluorescence is sensitive to the ionic strength of bathing solutions.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** KtrAB-ATP proteoliposome flux assays with sorbitol at 150 or 300 mM (matching the osmolarity of a 150 mM choline chloride solution) in the external solution, showing little impact of the osmolarity change on the function of KtrAB-ATP.
+
 Overall, these data strongly suggest that monovalent cations, including an organic monovalent, are able to activate the KtrAB complex and that this effect is ATP dependent and dependent on an intact intra-dimer interface binding site. Nevertheless, we clearly show that the KtrAB activation mechanism is ~160 fold more sensitive to Mg2+ than choline.
 
-## Conserved divalent cation binding site in other nucleotide-dependent RCK domains
+### Conserved divalent cation binding site in other nucleotide-dependent RCK domains
 
 Nucleotide-dependent RCK domains are associated with different families of bacterial K+ or cation transporters and we wondered if the intra-dimer interface divalent cation-binding site is conserved in those proteins. More specifically, we verified the conservation of a glutamate (equivalent to E125) in the intra-dimer interface. For this we analyzed structures of RCK domains which are known to be nucleotide-dependent by having a bound nucleotide like KtrA or having the classical nucleotide binding site motif associated with a Rossmann fold (GxGxxG[17-18]xE/D; where G is glycine, E glutamate, D aspartate and x any amino acid) (Bellamacina, 1996). In this analysis, we did not consider the RCK domain from GsuK since only one of the domains in the RCK dimeric unit binds nucleotides (Kong et al., 2012).
 
 First, we analyzed the structure of the KtrA protein from the thermophilic archaean Methanocaldococcus jannaschii (PDB:1LSS) (Figure 11a). The structure clearly shows a glutamate residue in the same position as E125 in KtrA from B. subtilis. We generated a sequence alignment of KtrA orthologs by randomly selecting 2–3 species from all phyla of bacteria and archaea that have Ktr cation channels. We cured the alignment to retain only proteins that show the nucleotide binding site sequence motif (Figure 11b and Figure 11—figure supplement 1). The final alignment has 15 sequences, including KtrA from B. subtilis, of which 13 have a glutamate coincident with E125, corresponding to 87% sequence identity. Interestingly, a neighboring proline is also highly conserved, forming the motif PE.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-v2.jpg)
+
+**Figure 11.:** (a) View of nucleotide binding sites in M.jannaschii KtrA dimer (PDB:1LSS). (b) Partial view of sequence alignment of KtrA orthologs with conserved glutamate in yellow. Numbering and secondary structure elements are from B. subtilis KtrA. (c) View of nucleotide binding sites in V. parahaemolyticus TrkA pseudo-dimer (PDB:4J9V). The RCK2 glutamine in an equivalent position to KtrA E125 is shown as a green sphere. (d) Partial view of sequence alignment of TrkA orthologs with conserved glutamate in RCK1 in yellow. Numbering and secondary structure elements are from the V.parahaemolyticus TrkA. (e) View of nucleotide binding sites in E.coli KefC C-terminal dimer (PDB:3L9W). (f) Partial view of sequence alignment of Kef orthologs with conserved glutamate in yellow. Numbering and secondary structure elements are from the E.coli KefC C-terminal. (g) View of nucleotide binding sites in E.coli YbaL C-terminal dimer (PDB:3FWZ). (h) Partial view of sequence alignment of YbaL orthologs with conserved glutamate in yellow. Numbering and secondary structure elements are from the E.coli YbaL C-terminal. Dimer subunits are colored red and blue and conserved glutamates are shown as yellow spheres. Sequence alignments were obtained with MEGA software (Tamura et al., 2013) and figures made using ESPript (Robert and Gouet, 2014). In all alignments, the position corresponding to KtrA E125 or equivalent is marked with a star. See also Figure 11—figure supplement 1, Figure 11—figure supplement 2, Figure 11—figure supplement 3, Figure 11—figure supplement 4, Figure 11—figure supplement 5, Figure 11—figure supplement 6 and Figure 11—figure supplement 7.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the KtrA E125 is marked with a star. Conserved glutamates are highlighted in yellow and nucleotide binding motif positions are boxed in red.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the equivalent of KtrA E125 is marked with a star. Conserved glutamates are highlighted in yellow and nucleotide binding motif positions are boxed in red.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp3-v2.jpg)
+
+**Figure 11—figure supplement 3.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the equivalent of KtrA E125 is marked with a star. Positions without conserved glutamates are boxed in blue and nucleotide binding motif positions are boxed in red.
+
+![Figure 11—figure supplement 4.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp4-v2.jpg)
+
+**Figure 11—figure supplement 4.:** Maximum-likelihood tree of sequence alignment of Kef-related proteins. The tree reveals three groups: Kef1 corresponds to KefC proteins, with at least 580 amino acids; Kef2 corresponds to KefC-like proteins, with less than 580 amino acids; and YbaL orthologs. Tree was generated using MEGA software (Tamura et al., 2013).
+
+![Figure 11—figure supplement 5.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp5-v2.jpg)
+
+**Figure 11—figure supplement 5.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the equivalent of KtrA E125 is marked with a star. Conserved glutamates are highlighted in yellow and nucleotide binding motif positions are boxed in red.
+
+![Figure 11—figure supplement 6.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp6-v2.jpg)
+
+**Figure 11—figure supplement 6.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the equivalent of KtrA E125 is marked with a star. Positions without conserved glutamates are boxed in blue and nucleotide binding motif positions are boxed in red.
+
+![Figure 11—figure supplement 7.](https://cdn.elifesciences.org/articles/50661/elife-50661-fig11-figsupp7-v2.jpg)
+
+**Figure 11—figure supplement 7.:** Numbering and secondary structure features are from the first protein in the alignment. The position corresponding to the equivalent of KtrA E125 is marked with a star. Conserved glutamates are highlighted in yellow and nucleotide binding motif positions are boxed in red.
 
 We also inspected the TrkA protein from Vibrio parahaemolyticus (PDB:4J9V); this protein assembles with the membrane protein TrkH to form the non-selective TrkHA cation channel (Figure 11c). TrkA has two RCK domains in tandem (RCK1 and RCK2), forming a pseudo-dimeric unit, and both domains bind nucleotide. In the intra-dimer interface there is a glutamate in RCK1 in a position similar to that of E125 in KtrA. In contrast, in RCK2 there is a glutamine. A sequence alignment of TrkA orthologs generated using the approach described above shows that the PE sequence motif noted in KtrA is highly conserved in RCK1 (80% sequence identity) (Figure 11d and Figure 11—figure supplement 2). However, there are no glutamates or aspartates in the E125 position of RCK2 in any of the orthologs (Figure 11—figure supplement 3); instead, arginine and lysine residues are common, strongly suggesting that in TrkA the activation mechanism is not dependent on a divalent cation cofactor.
 
@@ -158,13 +754,163 @@ Importantly, analysis of structures and amino acid sequences of nucleotide-depen
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TK2420</td>
+      <td>other</td>
+      <td></td>
+      <td>Δ(kdpFAB)5 Δ(trkA-mscL’) trkD1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>doi: 10.1107/S0907444909047337</td>
+      <td>RRID:SCR_015652</td>
+      <td>http://xds.mpimf-heidelberg.mpg.de</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Aimless</td>
+      <td>doi: 10.1107/S0907444910045749</td>
+      <td>RRID: SCR_015747</td>
+      <td>http://www.ccp4.ac.uk/html/aimless.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>doi: 10.1107/S0021889807021206</td>
+      <td>RRID: SCR_014219</td>
+      <td>https://www.phenix-online.org/documentation/reference/phaser.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi: 10.1107/S0907444910007493</td>
+      <td>RRID: SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>doi: 10.1107/S0907444909052925</td>
+      <td>RRID: SCR_014224</td>
+      <td>http://phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID: SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID: SCR_015807</td>
+      <td>https://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin</td>
+      <td>OriginLab</td>
+      <td>RRID: SCR_014212</td>
+      <td>https://www.originlab.com/index.aspx?go=PRODUCTS/Origin</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA software</td>
+      <td>doi: 10.1093/molbev/mst197</td>
+      <td>RRID: SCR_000667</td>
+      <td>https://www.megasoftware.net</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ESPript</td>
+      <td>doi: 10.1093/nar/gku316</td>
+      <td>RRID: SCR_006587</td>
+      <td>http://espript.ibcp.fr/ESPript/ESPript/</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ACMA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A5806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 21855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valinomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: V0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Choline Chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: C7017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sorbitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S1876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Methyl-D-glucamine (NMG)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 66930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E. coli Polar Lipid Extract</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#: 100600C CAS Number: 1240502-50-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Beads SM-2 Adsorbents</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 1523920</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Tag-less wild-type KtrA and respective mutants, cloned in a modified pET-24d vector, were over-expressed in Escherichia coli BL21(DE3) strain. Cells were grown in LB media at 20°C for 14–16 hr after induction with IPTG. Cell lysis was done in Buffer A (50 mM Tris-HCl pH 7.5, 50 mM KCl, 5 mM DTT, 1 mM EDTA) supplemented with protease inhibitors. Spin-cleared lysate was loaded into an anion exchange column Hi-Trap Sepharose Q-HP (GE Healthcare). KtrA was eluted with a KCl gradient, fractions were pooled and incubated with an ATP-agarose resin (Immobilized γ-Aminophenyl-ATP C10-spacer from Jena Bioscience) overnight at 4°C with gentle agitation. Beads were then washed thoroughly with Buffer B (50 mM Tris-HCl pH 8.0, 150 mM KCl, 1 mM TCEP, 1 mM EDTA) and protein was eluted in Buffer B supplemented with 5 mM ADP or ATP (sodium salts). Protein was concentrated to ~5 mg/ml and further purified by size exclusion chromatography with a Superdex-S200 (GE Healthcare) column using Buffer C (50 mM Tris-HCl pH 7.5, 150 mM KCl, 5 mM DTT, 0.2 mM EDTA). KtrA was supplemented with 1 mM ATP or ADP.
 
 N-terminal Strep-tagged KtrB, cloned in a pRSFDuet-1 vector was over-expressed in Escherichia coli BL21(DE3) strain. Cells grown in LB media at 37°C were induced with IPTG for 2.5 hr; 1 mM BaCl2 was added together with inducer. Cells were lysed in Buffer D (50 mM Tris-HCl pH 8.0, 120 mM NaCl, 30 mM KCl, 1 mM EDTA) supplemented with protease inhibitors and KtrB was extracted with 40 mM DDM (n-dodecyl-β-D-maltoside, Sol-grade from Anatrace) overnight at 4°C with gentle agitation. Spin-cleared lysate was loaded into a Strep-Tactin Sepharose resin (IBA Lifesciences) and washed with Buffer E (50 mM Tris-HCl pH 8.0, 120 mM NaCl, 30 mM KCl, 1 mM DDM, 5 mM DTT, 1 mM EDTA, 1 mM ATP or ADP). Purified KtrA-ATP or ADP was then added to the beads and incubated for 30 min at 4°C to assemble the KtrAB complex. Beads were thoroughly washed with Buffer E and KtrAB was eluted with Buffer E supplemented with 5 mM desthiobiotin. Protein was dialysed overnight at 4°C against Buffer F (10 mM HEPES, 7 mM NMG (N-methylglucamine), pH 8.0, 150 mM KCl, 0.5 mM DDM, 5 mM DTT, 1 mM EDTA) in the presence of thrombin for tag cleavage. Protein was further purified by size-exclusion chromatography with a Superdex-S200 (GE Healthcare) column using Buffer F containing 0.2 mM EDTA. Eluted fractions were concentrated to 1 mg/ml and used for proteoliposome preparation when required. KtrB alone was purified in the same manner as the KtrAB complexes without the KtrA addition step. No nucleotide was added during dialysis and size-exclusion chromatography.
 
-## Crystallization
+### Crystallization
 
 KtrA-ATP and KtrA-ADP (WT and mutants) were purified in buffer C and supplemented with 1 mM ATP or ADP, respectively. Crystals were grown using the sitting-drop vapor diffusion method at 20°C.
 
@@ -186,7 +932,7 @@ KtrAA80P-ATP crystals grew in 100 mM HEPES-NaOH pH 7.5, 1% PEG 6000, 2% MPD. Bef
 
 KtrAA80P-ADP crystals grew in 100 mM HEPES-NaOH pH 7.5, 2% PEG 4000, 20% glycerol. Crystals were cryoprotected with to 100 mM HEPES-NaOH pH 7.5, 12% PEG 4000, 20% glycerol solution, before being flash-cooled in liquid nitogen.
 
-## Data processing and structure determination
+### Data processing and structure determination
 
 Diffraction data were collected at ALBA Synchrotron, Barcelona, Spain; European Synchrotron Radiation Facility (ESRF), Grenoble, France, and French National Synchrotron Source (SOLEIL), Gif-sur-Yvette, France. Data were processed using XDS (Kabsch, 2010) and AIMLESS (CCP4 program suite) (Winn et al., 2011).
 
@@ -194,31 +940,35 @@ KtrAR16K-ATP and KtrAWT-ATP-Ca2+ structures were determined by molecular replace
 
 The lower resolution structures were solved by molecular replacement with Phaser (McCoy et al., 2007) using a KtrAWT-ATP dimer as template (PDB: 4j90). Refinement was limited to an initial rigid body and TLS single group refinement in Phenix (Adams et al., 2010), followed by minimal adjustments to resolve stereo-chemical violations in Coot and refinement with secondary structure and non-crystallographic restraints in Phenix.
 
-## Complementation assay
+### Complementation assay
 
 The complementation assay with the E. coli TK2420 strain was performed as previously described (Albright et al., 2007; Vieira-Pires et al., 2013) with modifications. Wild-type KtrB and KtrA (wild-type or mutants) were cloned into a dicistronic constitutive expression plasmid (pKCe). Empty pKCe plasmid was used as negative control. Transformed cells were plated on LBK (Luria–Bertani broth where NaCl is replaced by KCl) agar plates. Three individual colonies for each protein version were picked and grown separately in 5 mL of minimal media containing 30 mM K+, overnight at 37°C. A 5 μl aliquot of the overnight cultures was then used to inoculate 5 ml of minimal media prepared with different K+ concentrations (0.1, 0.3, 1, 2, 6, 10, 30 or 115 mM) and incubated at 37°C. Optical density at 595 nm was measured after 16 hr.
 
-## Preparation of proteoliposomes
+### Preparation of proteoliposomes
 
 Preparation follows previously described methods with some modifications (Szollosi et al., 2016; Vieira-Pires et al., 2013). Briefly, E. coli polar lipids (Avanti) were resuspended at 10 mg/mL in Swelling Buffer (150 mM KCl, 10 mM HEPES, 7 mM NMG, pH 8.0, 0.2 mM EDTA) and solubilized by adding 40 mM DM (n-Decyl-β-D-Maltoside) (Sol-grade from Anatrace). KtrB alone and KtrAB complexes were purified just before reconstitution and supplemented with ATP or ADP to reach a final concentration of 0.1 mM after reconstitution. Protein was added to solubilized lipids at 1:100 (w:w) protein-to-lipid ratio and incubated for 30 min at room temperature. In control liposomes (empty), Swelling Buffer was added to the lipids instead of protein solution. Detergent was removed using adsorbing SM-2 Biobeads (Biorad): the protein-lipid mix was incubated twice with fresh Biobeads at 10:1 (w:w) bead-to-detergent ratio at room temperature for 1 hr and then incubated overnight at 4°C at a 20:1 (w:w) bead-to-detergent ratio. Proteoliposomes were then frozen in liquid nitrogen and stored at −80°C.
 
-## Fluorescence-based K+ flux assay
+### Fluorescence-based K+ flux assay
 
 The assay was adapted from a previously described method (Su et al., 2016). Proteoliposomes were thawed in a 37°C water bath for 15 min, briefly sonicated and kept at room temperature. In assays with the sorbitol external solution, proteoliposomes were diluted 100-fold in Flux Buffer (10 mM HEPES and 7 mM NMG (pH 8.0), 150 mM sorbitol, 0.1 mM ATP; 0.2 mM EDTA) to establish the K+ gradient. The pH-sensitive dye 9-amino-6-chloro-2-methoxyacridine (ACMA) was then added to the proteoliposomes to a final concentration of 550 nM, from a 111 µM stock in DMSO. Fluorescence was monitored every 2 s (λEx=410 nm, λEm=480 nm), using a 104F-QS 10 mm quartz cuvette with a small magnet in a Horiba FluoroMax four spectrometer. After measuring the initial baseline fluorescence during 100 s, the assay was initiated by adding 1 µM of the H+ ionophore carbonyl cyanide m-chlorophenyl hydrazine (CCCP) from a 200 µM stock in HNE Buffer (10 mM HEPES, 7 mM NMG (pH 8.0), 1 mM EDTA). CCCP enables H+ entry into the liposomes to counterbalance the negative potential created upon K+ efflux, leading to ACMA fluorescence signal quenching. The flux signal was monitored for 400 s. For each experimental condition, one additional replica was performed in which, after baseline fluorescence measurement and CCCP addition, 296 nM of the K+ ionophore valinomycin was quickly added from a 60 µM stock in DMSO and flux signal was monitored for an additional 100 s. This extra measurement was performed to avoid valinomycin contamination of the cuvette between sample measurements and was done every day for each proteoliposome preparation and external solution used. Valinomycin incorporates into all liposomes and mediates K+ efflux, indicating the total flux of the liposome population. The maximum value of fluorescence quenching change obtained was used to normalize the data.
 
 For assays with the choline or lithium external solution, the 150 mM sorbitol in the Flux Buffer was partially or totally replaced by choline chloride, choline acetate or lithium chloride.
 
-Fluorescence quenching curves were normalized individually as follows:NF=F-FvalFini-Fval
+Fluorescence quenching curves were normalized individually as follows:
+
+$$
+NF=\frac{F-Fval}{Fini-Fval}
+$$
 
 NF is the normalized fluorescence, F is the measured fluorescence in arbitrary units, Fini corresponds to the last baseline point measured before CCCP addition and Fval corresponds to the lowest point measured after valinomycin addition. For magnesium and choline titrations, normalization was performed taking into account the steady-state of each curve instead of the maximum value of fluorescence quenching change obtained with valinomycin. In these cases, Fval was replaced in the previous expression by Fss that corresponds to the average of the last 50 s of the assay (450–500 s).
 
-## Determination of magnesium ion concentration in flux assay solutions
+### Determination of magnesium ion concentration in flux assay solutions
 
 For several of the flux assay mixtures used for the Mg2+ titration, we collected 1 mL of the assay mixture after running the assay. Proteoliposomes were removed from these samples by centrifuging 800 µL at 267,000 g for 25 min at 4°C. 700 µL of the resulting supernatant were used for determination of magnesium ion concentration by flame ionization spectroscopy analysis at the FCUP|DQB-Lab and Services (University of Porto). Buffer solutions used in the flux assay were also tested for magnesium contamination.
 
-## Quantification of flux rate constants
+### Quantification of flux rate constants
 
-Individual fluorescence quenching curves (after CCCP addition) were fitted with a one-phase exponential equation:  y=y0+A1×e-(x-x0)/τ or a two-phase exponential equation y=y0+A1×e−(x−x0)/τfast+A2×e−(x−x0)/τslow using the Origin software, where A1 and A2 are amplitudes, x0 is the initial fit point, y0 corresponds to the plateau and τ is the time constant.
+Individual fluorescence quenching curves (after CCCP addition) were fitted with a one-phase exponential equation: $y=y0+A1\timese^{-(x-x0)/\tau}$ or a two-phase exponential equation $y=y0+A1\timese^{−(x−x0)/\taufast}+A2\timese^{−(x−x0)/\tauslow}$ using the Origin software, where A1 and A2 are amplitudes, x0 is the initial fit point, y0 corresponds to the plateau and τ is the time constant.
 
 In each case, the simplest model that explained the data was chosen. The first point measured immediately after CCCP addition was not considered in this fit due to uncertainty in the fluorescence measurement after compound addition.
 

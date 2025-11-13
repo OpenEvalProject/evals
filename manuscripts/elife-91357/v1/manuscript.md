@@ -23,14 +23,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Bioengineering, University of Pennsylvania Philadelphia United States
-2. https://ror.org/05hfa4n20 School of Life Sciences, Westlake University Hangzhou China
+1. Department of Bioengineering, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. School of Life Sciences, Westlake University Hangzhou China ([ROR:05hfa4n20](https://ror.org/05hfa4n20))
 3. Department of Genetics, Blavatnik Institute, Harvard Medical School Boston United States
-4. https://ror.org/00b30xv10 Department of Cell and Developmental Biology, Penn Institute of Epigenetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-5. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
-6. https://ror.org/00b30xv10 Department of Cell and Molecular Biology, University of Pennsylvania Philadelphia United States
-7. https://ror.org/042nb2s44 Departments of Biological Engineering and Brain and Cognitive Sciences, Media Lab and McGovern Institute, Massachusetts Institute of Technology Cambridge United States
-8. https://ror.org/00b30xv10 Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+4. Department of Cell and Developmental Biology, Penn Institute of Epigenetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+6. Department of Cell and Molecular Biology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+7. Departments of Biological Engineering and Brain and Cognitive Sciences, Media Lab and McGovern Institute, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+8. Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
@@ -50,13 +50,45 @@ Here, we designed probes to comprehensively interrogate the spatial localization
 
 ## Results
 
-## At least one intron of each observed endogenous gene is spliced post-transcriptionally
+### At least one intron of each observed endogenous gene is spliced post-transcriptionally
 
 The extent to which splicing is coupled to transcription, both in space (distance from transcription site) and in time (time since transcription has begun), has been difficult to measure. To address this question, we directly visualized the locations of spliced and unspliced RNA relative to the site of transcription in situ using single-molecule RNA FISH (Raj et al., 2008; Femino et al., 1998), to simultaneously fluorescently label the exons and several individual introns for a number of genes of interest: CPS1, EEF2, TM4SF1, and FKBP5. CPS1 was chosen because it is a long and highly expressed gene. EEF2 was chosen because it is a highly expressed housekeeping gene. TM4SF1 was chosen because it is highly expressed and sequencing data suggested it was highly post-transcriptionally spliced (see Materials and methods for details). Finally, FKBP5 was chosen because it is inducible in A549 cells by application of dexamethasone.
 
 By distinguishing the separate fluorescent signals from probes bound to exons and introns, we could visualize splicing intermediates (represented by colocalized intron and exon spots) relative to the site of transcription (represented by bright colocalized intron and exon spots) and fully spliced products (represented by exon spots alone). We were particularly interested in visualizing the location of splicing intermediates in order to distinguish between two possibilities: (1) an intron from a pre-mRNA being spliced out at the site of transcription and (2) an intron from a pre-mRNA being spliced out away from the site of transcription (Figure 1A; right; i and ii versus iii). Observing spliced RNA at the site of transcription could represent RNA that is spliced either co-transcriptionally (tracking along with or shortly behind the polymerase; Figure 1Ai) or proximally post-transcriptionally (near the site of transcription but after the process of transcription has been completed) (Figure 1Aii). However, observing pre-mRNA with unspliced introns that were sufficiently far away from the site of transcription such that they could no longer be attached to the location of the gene itself would suggest that that intron must be spliced out post-transcriptionally (distal post-transcriptional splicing, Figure 1Aiii).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depicting three categories of splicing. (B) Schematic depicting RNA FISH method and translation of RNA FISH images into dispersal graphs. Computed spots are calculated by fitting a Gaussian to the distribution of intensity signals and pinpointing the center of that Gaussian at sub-pixel resolution. Gene depicted is FKBP5. (C) Example images of dispersed (intron 4) and not dispersed (introns 1 and 3) transcription sites, via RNA FISH. Each image is a max merge of 30 optical z-sections, 0.3 µm step distance. (D) Graphs indicating dispersal distance or the distance of each detected pre-mRNA to its nearest transcription site. Leftmost graphs of CPS1, EEF2, and TM4SF1 data are from HeLa cells, FKBP5 data is from A549 cells after 8 hr in dexamethasone, rightmost graphs of EEF2 and TM4SF1 data are from CRL-2097. All scale bars represent 5 µm unless otherwise noted.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Histograms of intron intensities for TM4SF1 intron 1 and intron 4, before, after, and during defining a global thresholding cutoff and other transcription site selection methods, as well as dispersal graphs generated based on those transcription site selections. (B) Number of dispersed pre-mRNA per cell.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Parameter sweep of colocalization threshold and associated dispersal graphs. (B) Example classification of pre-mRNA as either transcription sites or dispersed pre-mRNA. (C) Distances between 5’ and 3’ ends of RNA as detected by RNA FISH for either the 3’ or 5’ end of the RNA of interest. (D) Example classification of RNA as ‘distal’ or ‘proximal’ to the transcription site. (E) Histogram showing type of pre-mRNA as defined by RNA FISH for stated introns in FKBP5, as a function of distance to the nearest transcription site.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of sequencing experiment design (in HeLa cells). (B) Comparison of mean dispersal (as assessed by RNA FISH, see Figure 1) and mean splicing index (as assessed by sequencing). FKBP5 is not present on this graph due to low read counts in HeLa cells (FISH was performed for FKBP5 in A549 cells). (C) Splicing index of each intron for which we obtained RNA FISH measurements. Error bars represent mean ± sd. n=2. (D) Comparison of transcription site size (as assessed by RNA FISH) and splicing index, as assessed by sequencing.
+
 To determine what fraction of splicing occurred far from the site of transcription, we first needed to classify each colocalized exon and intron spot as either a transcription site or a dispersed pre-mRNA. We computationally identified spots for both introns and exons of a particular gene, then each intron spot that was within 0.65 µm of an exon spot was designated a colocalized exon and intron spot (0.65 µm is the 75th percentile of mRNA lengths determined by measuring the distance from 5’ to 3’ signal; Figure 1B, see Figure 1—figure supplement 2C for mRNA lengths), which we assumed represents at least one nascent pre-mRNA (potentially several nascent pre-mRNA when found at the site of transcription). We chose this colocalization threshold such that at least 78% of exons (depending on the gene, CPS1=78%, EEF2=85%, TM4SF1=87%) colocalized with other exons of the same gene in the cytoplasm; however, varying this threshold from 0.13 µm (one pixel) to 2.6 µm (20 pixels) did not significantly change dispersal patterns (Figure 1—figure supplement 2A). Intron spots that did not colocalize with an exon spot were presumed to be degradation products or non-specific background and were discarded (these were generally <25% of intron spots; Supplementary file 1A). We used an intensity threshold to categorize each colocalized exon and intron spot as either a transcription site or a dispersed pre-mRNA (Figure 1, see Figure 1—figure supplement 1A and B for the scheme for the classification of transcription sites). We also tried several other methods for choosing transcription sites, all of which showed qualitatively similar results (Figure 1—figure supplement 1A), showing that the detection of dispersal is not dependent on the choice of method. Our chosen strategy likely grouped together the signal from multiple pre-mRNA (introns and exons) at the transcription site, rendering them indistinguishable at this level of spatial resolution; we separately analyzed these transcription sites further later (see Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig2-v1.jpg)
+
+**Figure 2.:** (A) Gene and probe position diagram for CPS1 pre-mRNA and mRNA. (B) Example images of RNA FISH for CPS1 before and after expansion microscopy for individual mRNA and transcription sites (in HeLa cells, different representative cells shown in each image). (C) Example images of 5’, 3’, and middle intron CPS1 RNA FISH after expansion. (D) Schematic depicting simulated RNA FISH signal for three potential scenarios: a slow-moving zone around the site of transcription (I), free diffusion away from the transcription site (II), or co-transcriptional splicing of tethered transcripts (III). (E) Schematic depicting RNA FISH signal for diffusion or a slow-moving proximal zone for completed (but not necessarily spliced) transcripts. (F) Line scans of fluorescence intensity (arbitrary units) from transcription sites like in C. (G) Example images of co-IF (polymerase II) and RNA FISH for CPS1 after expansion. Quantification of images like that in G, and others, representing distance from each RNA spot to the nearest polymerase II IF spot. (H) Graph depicting area (in pixels) of polygons drawn around individual transcription sites after expansion. (I) Distance from 5’ to 3’ of expanded and unexpanded mRNA and transcription sites, as detected by CPS1 RNA FISH. This distance was calculated using nearest neighbors with replacement. All scale bars represent 5 µm unless otherwise noted. All expanded images and calculations are shown in expanded space scale (reduced by 4.65× to yield original space scale).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of radii of nuclei (based on DAPI staining, and assuming spherical nuclei) before and after expansion. (B) Images of the same cell before and after expansion, with or without pladeinolide B treatment (as noted). Scale bars = 5 μm. (C) Transcription site area (microns squared) for 5’ and 3’ probes, with and without dye swap.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sample STORM image to demonstrate identification of transcription sites. (B) Comparison of CSP1 transcription site size in cells imaged through expansion microscopy and STORM. Distances are in unexpanded space. (C) Quantification of spots within transcription site clouds exemplified in Figure 2C. (D) Gene and probe position diagram for CPS1 pre-mRNA to test for a potential tether beyond the 3’ end of the gene. (E) Representative images of 3’ and post-3’ RNA FISH signal at transcription sites (in unexpanded cells). (F) Comparison of 3’ and post-3’ RNA FISH signal at transcription sites.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Comparison of intron size versus mean dispersal by RNA FISH. (B–C) Comparison of 3’ splice site (X3SS), (B) and 5’ splice site (X5SS), (C) scores versus mean dispersal by RNA FISH.
 
 We then calculated the distance of each dispersed pre-mRNA from the nearest transcription site for all cells, yielding population-wide measurements of dispersal per intron (Figure 1D). We found that for the genes CPS1, EEF2, TM4SF1, and FKBP5, at least one intron was present in dispersed pre-mRNA in both transformed cell lines (HeLa and A549) and non-transformed cells (CRL-2097) (three to five introns tested per gene, Figure 1D), suggesting that pre-mRNA dispersal is a generic feature of transcription and splicing that is not dependent on the particular cell line used. However, we found that the dispersal patterns for any one particular intron were not necessarily consistent between HeLa and CRL-2097 cells, suggesting splicing patterns may be influenced by cellular context. The presence of intermediates away from the site of transcription showed that for all the genes we tested, some introns were spliced post-transcriptionally and away from the gene body itself. We never observed introns in cytoplasmic mRNA, suggesting that all of these introns are eventually spliced out (i.e. transcripts with retained introns cannot be exported from the nucleus). We observed a large range in the number of pre-mRNA observed per cell (from 0 to ~20), which also varied from intron to intron (Figure 1—figure supplement 1B).
 
@@ -64,7 +96,7 @@ As a corroboration of RNA FISH dispersal as a metric to quantify distal post-tra
 
 It is possible that pre-mRNA away from the transcription site are ultimately degraded without ever being spliced and thus represent an alternative ‘dead-end’ fate for the pre-mRNA rather than an intermediate on the path to a mature mRNA. This alternative possibility is difficult to eliminate with data relying on a snapshot in time, and hence studies using sequencing or fixed cell imaging (such as ours) suffer from this limitation. The further development of live-cell imaging capable of tracking individual mRNA throughout their lifetime may help resolve these issues. However, we do note that pre-mRNA contain fewer introns as they increase in distance from the transcription site (Figure 1—figure supplement 2D), which is at least consistent with our assumption that these introns are spliced as they travel away from the transcription site. Furthermore, pulse-chase experiments have shown that the ‘yield’ of splicing events is high for mRNA, suggesting that most pre-mRNA do not go down a dead-end pathway (Eser et al., 2016; Wachutka et al., 2019). Given this assumption, the dispersion we observe suggests that at least one intron of each observed gene is spliced partly post-transcriptionally.
 
-## Different introns within the same gene are spliced largely independently of each other
+### Different introns within the same gene are spliced largely independently of each other
 
 In these experiments, we observed individual pre-mRNA with some but not all introns retained, and wondered whether these introns could be spliced in any order. Thus, we quantified the number of transcript intermediates that contained different introns in the same RNA molecule. For each RNA containing a pair of introns A and B, there are two alternative routes to generate a fully spliced mature mRNA: either intron A is spliced before intron B, or intron B is spliced before intron A. Were the splicing of these introns ordered, for instance if B always gets spliced after A, then we would expect the vast majority of partially spliced transcripts to contain intron B only, and that very few transcripts would contain intron A without intron B. We thus identified and counted partially spliced transcripts which contain only one intron without the other. To estimate the confidence in our measurements, we labeled the fourth intron of TM4SF1 with two colors; in this case, any transcripts detected as containing one color without the other must be due to technical reasons, thereby setting a ‘noise floor’ (see Materials and methods for details). The dye used to label each intron also did not affect these measurements (FKBP5 introns 8 and 9 dye-swap, rows 13 and 14 of Supplementary file 1B). It was also difficult for us to discriminate between models if both introns are spliced so rapidly that intermediates are not observed.
 
@@ -72,7 +104,7 @@ We observed a variety of patterns of splicing intermediates, some showing strong
 
 Overall, our data support a model in which splicing of different introns within the same primary transcript can occur in any order.
 
-## Transcripts are untethered to the transcription site and move through a slow-moving transcription-site-proximal zone where splicing occurs after transcription is completed
+### Transcripts are untethered to the transcription site and move through a slow-moving transcription-site-proximal zone where splicing occurs after transcription is completed
 
 While conventional single-molecule RNA FISH allowed us to determine what portion of splicing is happening post-transcriptionally and far from the site of transcription (Supplementary file 1A, Figure 1—figure supplement 2B), the resolution limits of conventional light microscopy made it impossible to distinguish whether transcripts are being spliced during the process of transcription (co-transcriptional) or after the completion of transcription but before the pre-mRNA moves away from the site of transcription (proximal post-transcriptional). Conventional light microscopy cannot easily distinguish these possibilities because all the RNA at or near the site of transcription are sufficiently close together that they are typically only visible as one large transcription site spot (see Figure 1B for example). It is therefore possible that lower mobility of transcripts near the transcription site may lead to the classification of proximal post-transcriptional splicing as co-transcriptional when using low-resolution imaging methods.
 
@@ -92,6 +124,10 @@ We next wanted to confirm the presence of this slow-moving zone in a live cell a
 
 It is challenging to rigorously discriminate between a diffraction limited spot and a blob with larger spatial extent based solely on the area of the fluorescent region because the thresholds chosen in determining area can be somewhat arbitrary, and the underlying data is often noisy. Hence, we instead used eccentricity (a measure of deviation from a perfect circle, ranging from 0 to 1) as a means to distinguish diffraction limited spots from blobs, reasoning that blobs larger than the diffraction limit could potentially be asymmetric, thus exhibiting increased eccentricity as compared to pure diffraction limited spots. Visually, several images showed evidence for such asymmetry (Figure 3A–C). We quantified the asymmetry by measuring the eccentricity for 205 transcription site images from 36 total temporal transcription site tracks (Figure 3D). We found that the majority of images (141 of 205) showed evidence of substantial eccentricity (defined as eccentricity >0.6) (Figure 3C). As these sites are unambiguously larger than a diffraction limited spot, we concluded that RNA were likely retained at the site for some time following transcription, corroborating the existence of the slow-moving zone.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Representative images from two cells of a transcriptional burst of TFF1 labeled with MS2-GFP. Each image is taken 1 s apart. Shown are the raw, computationally identified transcription site images, as well as the binarized image used to calculate eccentricity. (C) Plot of eccentricity for each transcription site image, alongside representative images that show both eccentric and non-eccentric sites. (D) Graphs of eccentricity measured in individual transcription sites tracked over time.
+
 It should be noted that not all transcription site images appeared eccentric. Possible reasons are that the transcription burst duration was short enough that there was not time for a buildup of pre-mRNA in the slow-moving zone, or that the blob happened to grow in a symmetric fashion, or that the three-dimensional (3D) orientation of the asymmetry was such that it was not detectable in the single x-y plane of the microscope.
 
 Similarly, in our expansion microscopy data, the relative positions of the 5’, 3’, and middle intron clouds adopted a wide variety of conformations, suggesting that the linear genomic order of the pre-mRNA may not be strictly maintained during transit through the proximal zone (Figure 2C). The length of each intron, as well as the strength of its 3’ and 5’ splice site, did not affect its dispersal from the transcription site, suggesting that transcript size and splice site sequence are not major contributors to the dynamics of the slow-moving zone (Figure 2—figure supplement 3). Also, neither the 5’ exon nor 3’ exon signals overlapped with actively elongating RNA polymerase II immunofluorescence signals (see Materials and methods), potentially suggesting the relatively few mRNA spots that are quite close to RNA polymerase II signal are undergoing active transcription, while the majority of pre-mRNA in the slow-moving proximal zone are not being actively transcribed (Figure 2G). It is important to note, however, that we do not label the entirety of the pre-mRNA molecule, nor can we be sure that we can detect single molecules of RNA polymerase II, thus it is difficult to eliminate the possibility that some other part of the pre-mRNA is close to RNA polymerase II or that a pre-mRNA is localized to an undetected single RNA polymerase II molecule.
@@ -100,9 +136,17 @@ Another interesting observation was that the size of 5’, intron, and 3’ clou
 
 Thus, expansion microscopy revealed that after the completion of transcription, pre-mRNA move slowly through a slow-moving proximal zone, during which splicing may be ongoing. This finding potentially unites existing conflicting reports of co-transcriptional versus post-transcriptional splicing, as splicing within the slow-moving zone would appear co-transcriptional when evaluated by conventional light microscopy but in reality occurs after transcription has been completed.
 
-## Localization of unspliced pre-mRNA to speckle-proximal compartments is gene specific
+### Localization of unspliced pre-mRNA to speckle-proximal compartments is gene specific
 
 We wondered where transcripts went after they were released from the slow-moving transcription-site-proximal zone that was revealed by expansion microscopy (see Figure 2C). We hypothesized that the transcripts could do one of three things (Figure 4A):
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of possibilities for RNA movement post- transcription. (B) Example images of introns of specified genes before and after pladienolide B treatment (treatment status as indicated in figure). Outline represents nucleus. (C) Description of three response types to pladienolide B. (D) EEF2 RNA FISH exon and intron images with pladeinolide B treatment. Scale bar = 5 µm. (E) EEF2 RNA FISH intron only images with pladeinolide B treatment. Scale bar = 5 µm. (F) RPL13A, GAPDH, and EEF2 RNA FISH intron images with pladeinolide B treatment. Scale bar = 5 µm. (G) Co-staining of RNA FISH for specified intron and SC35 IF in the same cell treated with pladeinolide B. Scale bar = 5 µm. (H) Quantification of speckle decile from previously published data (Tyramide Signal Amplification [TSA]-Seq 2.0), compared with distance from nearest speckle calculated based on RNA FISH of specified genes without pladeinolide B treatment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91357/elife-91357-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of compartmentalization phenotype with and without tether. (B) RNA FISH of RPL13A, EEF2, and GAPDH introns before pladienolide B treatment. Scale bar = 5 μm. (C) Combined RNA FISH for the stated introns and IF for SC35, before pladienolide B treatment. Scale bar = 5 μm.
 
 Owing to the lack of dispersal of some introns, relatively few unspliced RNA were detectable outside of the transcription-proximal zone, making it difficult to discriminate between these hypotheses. Thus, we inhibited splicing to generate more pre-mRNA, making it easier to track their localization after leaving the transcription-site-proximal zone. Upon splicing inhibition, we observed three distinct trafficking behaviors for pre-mRNA species: one in which there are increased numbers of dispersed pre-mRNA throughout the nucleus (nuclear dispersal; consistent with scenario 1), one in which the pre-mRNA are located in a large blob, likely around the transcription-site-proximal zone or another nuclear body (blobs; scenario 2 or 3), and one in which the pre-mRNA dispersal pattern looked identical with or without splicing inhibition (non-splicing inhibited) (Figure 4B and C).
 
@@ -114,7 +158,7 @@ We corroborated the spatial association we observed between speckles and compart
 
 Speckles form a set of subcompartments within the nucleus. We thus wondered whether pre-mRNA from the genes exhibiting ‘compartmentalization’ in their post-transcriptional trafficking would go to all of these speckle compartments, or rather just a gene-specific subset. To test these possibilities, we performed RNA FISH on multiple introns within the same ‘compartmentalization’ gene (EEF2) as well as introns from several different ‘compartmentalization’ genes simultaneously (EEF2, GAPDH, and RPL13A). We observed that multiple introns retained in pre-mRNA from the same gene colocalized to the same subset of speckles (Figure 4E), suggesting that all unspliced pre-mRNA from a particular gene localize to the same subset of speckles. We also observed that pre-mRNA from multiple ‘compartmentalization’ genes (EEF2, GAPDH, and RPL13A) localize to a similar set of speckles after splicing inhibition (Figure 4F), although there are some differences. However, when observing the intron distributions of pre-mRNA from EEF2, GAPDH, and RPL13A before splicing inhibition, they do not appear to colocalize with one another or with the same speckles (Figure 4—figure supplement 1C), suggesting perhaps that splicing inhibition impacts these responses. Overall, our results suggest that mRNA trafficking upon leaving the slow-moving zone is gene specific.
 
-## Dispersal is not an inherent trait of individual introns and can vary with transcription level
+### Dispersal is not an inherent trait of individual introns and can vary with transcription level
 
 We wondered whether the degree of dispersal (and thus, the degree of post-transcriptional splicing) was an inherent property of each intron or whether dispersal could vary due to other factors such as the level of transcription. To test whether the level of transcription affected the degree of dispersal, we treated A549 cells with dexamethasone to induce transcription of the gene FKBP5, and then performed RNA FISH against introns 1, 8, and 9 at various time points in dexamethasone to measure the degree of dispersion (Figure 5A and B). We saw an increase in both exon and intron spot counts (Figure 5B) over time and a corresponding increase in the dispersal of some, but not all, introns (Figure 5C).
 
@@ -144,29 +188,137 @@ One of the original models for splicing is the ‘first come, first serve’ mod
 
 Our splicing inhibition results show that the trafficking of transcripts after they escape the slow-moving transcription-proximal zone varies by gene. Our results were consistent with sequencing-based metrics, and those metrics are in turn largely consistent across multiple cell types, suggesting that the speckle-associative property is not subject to cell-type-specific regulation (Chen et al., 2018). The association between specific genes and speckles has been observed before in several studies by Jeanne Lawrence (Shopland et al., 2002; Johnson et al., 2000; Smith et al., 1999). Our observations are also consistent with those of Girard et al. in which certain genes are retained post-transcriptionally at speckles as splicing occurs and then are released and immediately exported from the nucleus (Girard et al., 2012). Wang et al. also observed speckle localization of RNA upon microinjection into nuclei (Wang et al., 1991). Our data further support the conclusion that speckle association can be gene specific and can help retain pre-mRNA in the gene’s vicinity until post-transcriptional splicing is completed.
 
-## Study limitations
+### Study limitations
 
 With the notable exception of our live-cell data in Figure 3, the experiments in this study utilize fixed cells and capture transcription at a single moment in time. As a result, many of the conclusions we draw can be strengthened by future work that evaluates active transcription through live-cell imaging or other methods that do not involve fixation. Our investigation of intron localization in Figure 4 relies upon the inhibition of splicing, which may impact several aspects of cellular physiology. This paper also does not address potential relationships between splicing and other co-transcriptional events, such as 5’ capping or 3’ end formation. Future work may unravel dependencies between these events and the splicing of introns, and a potential role for the transcription-site-proximal slow-moving zone in other aspects of mRNA processing. Lastly, a major outstanding question is what sequence-based features determine the distinct behaviors of different introns. Large-scale imaging and synthetic libraries of introns may be required to make such conclusions.
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
 
-## Lead contact
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SC35 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab11826</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho S2 polymerase II (rat monoclonal)</td>
+      <td>Active Motif</td>
+      <td>61083</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Lab of Dr. Phillip Sharp (MIT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa-S3</td>
+      <td>ATCC</td>
+      <td>CCL-2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CRL-2097</td>
+      <td>ATCC</td>
+      <td>CCD-1079Sk</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pladienolide B</td>
+      <td>Tocris Biosciences</td>
+      <td>6070500U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma</td>
+      <td>D2915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4sU (4-thiouridine)</td>
+      <td>Sigma</td>
+      <td>T4509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Single-molecule RNA FISH probes targeting CSP1, FKBP5, TM4SF1, and EEF2</td>
+      <td>IDT DNA</td>
+      <td></td>
+      <td>See Supplementary file 2 for sequences</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>rajlabimagetools</td>
+      <td>GitHub; Raj et al., 2018</td>
+      <td>https://github.com/arjunrajlaboratory/rajlabimagetools</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KNIME</td>
+      <td>GitHub; Larson and Wan, 2019</td>
+      <td>https://github.com/CBIIT/Larson-Lab-CCR-NCI/tree/master/Wan_GeneTrap_2019/KNIME_Workflows</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v2.5.1a)</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Lead contact
 
 Further information and requests should be directed to and will be fulfilled by the lead contact, Arjun Raj (arjunrajlab@gmail.com).
 
-## Materials availability
+#### Materials availability
 
 This study did not generate new materials.
 
-## Method details
+### Method details
 
-## Cell culture, splicing inhibition, and FKBP5 induction
+#### Cell culture, splicing inhibition, and FKBP5 induction
 
 HeLa (kind gift of the lab of Dr. Phillip Sharp, MIT) and A549 (human lung carcinoma, A549, ATCC CCL-185) cells were cultured in DMEM (Gibco) supplemented with 50 U/mL penicillin, 50 μg/mL streptomycin, and 10% fetal bovine serum (FBS, Fisher). Splicing inhibition was accomplished by treating HeLa cells with 1 µM pladienolide B (Tocris Biosciences, 6070500U) for 4 hr, as described by Pandya-Jones and Black, 2009. HeLa cells were then fixed and used for RNA FISH as described below. FKBP5 was induced by treating A549 cells with 25 nM dexamethasone (Sigma, D2915) for the specified lengths of time. A549 cells were then fixed and used for RNA FISH as described below.
 
-## RNA fluorescence in situ hybridization, STORM, and expansion microscopy
+#### RNA fluorescence in situ hybridization, STORM, and expansion microscopy
 
 Single-molecule RNA FISH was performed on samples as described previously (Johnson et al., 2000). Cells were fixed in 4% formaldehyde and permeabilized with 70% ethanol before in situ hybridization was performed using the probes described in Supplementary file 2. Samples were simultaneously co-stained with probes for the exon of gene of interest (labeled in cy3), two introns of the gene of interest (labeled in alexa594 or atto647N), and cyclin mRNA (labeled in either atto700 or atto647N) (Stellaris oligonucleotides, Biosearch Technologies). Samples were then washed twice with 2× saline sodium citrate buffer (SSC) containing 10% formamide (Ambion), and then 2× SSC supplemented with DAPI (Molecular Probes D3571) to stain the cell nuclei. Cells were submerged in 2× SSC with DAPI for imaging. Chromatic aberration was evaluated using multi-color fluorescent beads and was far smaller than any biologically relevant distances we measured (see Figure 1—figure supplement 2C).
 
@@ -184,17 +336,17 @@ Imaging cells were imaged using a Leica DMI600B automated widefield fluorescence
 
 Intron splice site strength (Figure 2—figure supplement 3) was calculated using MaxEnt (Yeo and Burge, 2004).
 
-## Immunofluorescence
+#### Immunofluorescence
 
 Staining for SC35 and polymerase II were performed with antibodies against SC35 (abcam ab11826, 1:200, NOTE: it has recently been described that this antibody may instead target SRRM2) and phospho S2 polymerase II (Active Motif, 61083, 1:200), respectively. Briefly, staining was performed on cells fixed and permeabilized as described above for RNA FISH. Primary antibody hybridization was carried out in 1× PBS overnight at 4°C. Samples were then washed with 1× PBS and incubated with secondary antibody (1:200) for 1 hr in 1× PBS at room temperature. Samples were then fixed for an additional 10 min in formaldehyde, washed with 1× PBS, and RNA FISH was performed as described above. RNA FISH data was quantified as described previously (Johnson et al., 2000). Briefly, cells were manually segmented, a Gaussian filter was applied to all spots, signal was distinguished from noise through semi-automated thresholding, each called spot was further fit to a Gaussian to get sub-pixel resolution, and transcription sites were chosen based on a global brightness threshold (Figure 1—figure supplement 1A and B). Data was processed to assess distances and graphed in R. Calculation of mRNA length was based on the 75th percentile of 5’–3’ distances of labeled mRNA seen in Figure 1—figure supplement 2A.
 
-## Live-cell imaging
+#### Live-cell imaging
 
 The live-cell imaging was conducted using human bronchial epithelial cells (single-cell clones containing 24× MS2 stem-loops in RAB7A first intron). To capture the diffusing RNA with MS2 labeling, live-cell imaging was performed on a Zeiss LSM780 laser scanning confocal microscope using 37°C incubation and 5% CO2. Imaging was performed using 488 nm excitation, pinhole size of 2 airy units. The pixel size was 0.066 µm. One z-plane was imaged every 1 s for 60 frames. Transcription site intensity tracks were analyzed using KNIME pipeline (Larson and Wan, 2019). MSD analysis was performed using MATLAB.
 
 Transcription site intensity tracks were then analyzed in MATLAB. Briefly, we identified the brightest pixel in each track, and called its location as the transcription site. We then cropped a 30×30 pixel region around this site, and used imresize() to increase resolution without interpolation. We then set a threshold of (((max pixel intensity – median pixel intensity)/2)+median pixel intensity) to create a binarized, Gaussian filtered image of the transcription site, for which we calculated the eccentricity using regionprops(). Images without clear, identifiable transcription sites were discarded.
 
-## 4sU labeled chromatin-associated RNA sequencing and splicing index analysis
+#### 4sU labeled chromatin-associated RNA sequencing and splicing index analysis
 
 HeLa S3 cells (ATCC, CCL-2.2) were maintained in DMEM media containing 10% FBS, 100 U/mL penicillin, and 100 μg/mL streptomycin to 75% confluency. Cells were labeled in media containing 500 μM 4-thiouridine (4sU, Sigma, T4509) for 7.5 min. Plates were washed twice with 1× PBS and cells were lifted by scraping. Labeled cells were collected by centrifugation at 500×g for 2 min. To purify chromatin-associated RNA, steps 8–21 were followed exactly as described in Smith et al., 1999. In brief, nuclei were collected by lysing samples of 10 M cells in 200 μL cytoplasmic lysis buffer (0.15% [vol/vol] NP-40 [Thermo Fisher Scientific, 28324], 10 mM Tris-HCl [pH 7.0], and 150 mM NaCl) for 2 min, layering over a 500 μL sucrose cushion (10 mM Tris-HCl [pH 7.0], 150 mM NaCl, 25% [wt/vol] sucrose), and centrifuging at 16,000×g for 10 min. The nuclei pellet was washed in 800 μL wash buffer (0.1% [vol/vol] Triton X-100, 1 mM EDTA, in 1× PBS) and collected by centrifuging at 1150×g for 1 min. Nuclei were resuspended in 200 μL glycerol buffer (20 mM Tris-HCl [pH 8.0], 75 mM NaCl, 0.5 mM EDTA, 50% [vol/vol] glycerol, 0.85 mM DTT), and mixed with 200 μL nuclei lysis buffer (1% [vol/vol] NP-40, 20 mM HEPES [pH 7.5], 300 mM NaCl, 1 M urea, 0.2 mM EDTA, 1 mM DTT) by pulse vortex and incubated on ice for 2 min. The chromatin pellet was collected by centrifugation at 18,500×g for 2 min and resuspended in 1× PBS. All steps were performed at 4°C and buffers were prepared with 25 μM α-amanitin (Sigma, A2263), 0.05 U/μL SUPERase.In (Thermo Fisher Scientific, AM2694), and protease inhibitor mix (Roche, 11873580001). Chromatin-associated RNA was extracted using Qiazol lysis reagent (QIAGEN, 79306) following the manufacturer’s instructions.
 
@@ -204,7 +356,7 @@ All samples were sequenced 2×80 on a NEXTseq 500 sequencer (Illumina, San Diego
 
 Sequencing data is available on GEO under accession number GSE254859.
 
-## Calculation of intron splicing order
+#### Calculation of intron splicing order
 
 For all independence calculations, it was first determined what proportion of RNA fell into each of the following categories:
 
@@ -214,23 +366,31 @@ Once each transcript was categorized, we focused our attention on partially spli
 
 We labeled the fourth intron of TM4SF1 with two colored probes, and determined the number of intermediate transcripts identified using this method, allowing us to measure the noise inherent in this analysis method. With 100% detection efficiency, we would expect this set of two probes labeling the same intron to be spliced out of pre-mRNA simultaneously. To calculate a ‘noise floor’ of intermediate transcripts, we took the number of intermediate transcripts divided by two (as both category 2 and category 3 in this case measure the same type of error), and divided by the total number of transcripts captured in this experiment. Values below this noise floor are likely below our ability to faithfully detect differences in intron splicing behavior. Rows marked with ** in Supplementary file 1B show intron pairs that fall below this threshold, potentially due to the low number of intermediate transcripts captured for fast-splicing introns.
 
-## Calculation of slow-moving zone dimension
+#### Calculation of slow-moving zone dimension
 
-To find the diameter of each (roughly circular) cloud, we used the equation 2⋅medianarea/π , then converted these values from expanded space into unexpanded space by dividing by 4.65. Because the 5’ end, 3’ end, and intron clouds were of a similar size, we averaged the values from each cloud to give an approximate slow-moving zone diameter of 0.36 µm. Given the uncertainties inherent to these calculations, these estimates are meant to provide an order of magnitude for the size of the zone, rather than precise measurements.
+To find the diameter of each (roughly circular) cloud, we used the equation $2⋅\sqrt{medianarea/\pi}$ , then converted these values from expanded space into unexpanded space by dividing by 4.65. Because the 5’ end, 3’ end, and intron clouds were of a similar size, we averaged the values from each cloud to give an approximate slow-moving zone diameter of 0.36 µm. Given the uncertainties inherent to these calculations, these estimates are meant to provide an order of magnitude for the size of the zone, rather than precise measurements.
 
 Below are the full calculations.
 
-## 3’ cloud
+##### 3’ cloud
 
-## 5’ cloud
+##### 5’ cloud
 
-## Intron cloud
+##### Intron cloud
 
-## Comparison to point source diffusion with degradation model
+### Comparison to point source diffusion with degradation model
 
-In order to evaluate whether diffusion of pre-mRNA from the site of transcription was compatible with our observations of clouds at the site of transcription revealed by expansion microscopy, we used a model of pre-mRNA diffusion that assumed a source at the site of transcription and a constant rate of degradation. The equation describing this model is given by Femino et al., 1998:dCdt=D∆C-γC+R0δr
+In order to evaluate whether diffusion of pre-mRNA from the site of transcription was compatible with our observations of clouds at the site of transcription revealed by expansion microscopy, we used a model of pre-mRNA diffusion that assumed a source at the site of transcription and a constant rate of degradation. The equation describing this model is given by Femino et al., 1998:
 
-where C is the concentration as a function of the radial distance and time, D is the diffusion constant, γ is the degradation rate, R0 is the rate of production, and δ(r) is the delta function. The steady-state solution in 3D is given by:Cr=C0exp⁡-rλ
+$$
+\frac{dC}{dt}=D\DeltaC-\gammaC+R_{0}\deltar
+$$
+
+where C is the concentration as a function of the radial distance and time, D is the diffusion constant, γ is the degradation rate, R0 is the rate of production, and δ(r) is the delta function. The steady-state solution in 3D is given by:
+
+$$
+Cr=C_{0}exp⁡\frac{-r}{\lambda}
+$$
 
 where C0 is the concentration at the site of transcription, and λ is sqrt(D/γ).
 

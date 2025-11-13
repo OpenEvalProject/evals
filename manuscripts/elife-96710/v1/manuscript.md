@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04dq56617 Department of Genes and Environment, Max Planck Institute of Psychiatry Munich Germany
+1. Department of Genes and Environment, Max Planck Institute of Psychiatry Munich Germany ([ROR:04dq56617](https://ror.org/04dq56617))
 
 † Corresponding author
 

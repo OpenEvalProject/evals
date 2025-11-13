@@ -43,13 +43,25 @@ Here, we build a genotype-(abstract)phenotype-fitness model for hundreds of adap
 
 ## Results
 
-## Mutants that improve fitness under glucose limitation vary in their genotype-by-environment interactions
+### Mutants that improve fitness under glucose limitation vary in their genotype-by-environment interactions
 
 A previous evolution experiment generated a collection of hundreds of adaptive yeast mutants, each of which typically harbors a single independent mutation that provides a benefit to growth in a glucose-limited environment (Levy et al., 2015). Many of these mutants, which began the evolution experiment as haploids, underwent whole-genome duplication to become diploid, which improved their relative fitness (Venkataram et al., 2016a). Some of these diploids acquired additional mutations, including increased copy number of either chromosome 11 or 12 as well as point mutations, which generated additional fitness benefits. The adaptive mutants that remained haploid acquired both gain- and loss-of-function mutations in nutrient-response pathways (Ras/PKA and TOR/Sch9). Some other mutations were also observed, including a mutation in the HOG pathway gene SSK2 (Venkataram et al., 2016a). Although these mutants have been well-characterized at the level of genotype and fitness, it is unclear what phenotypes they affect. The first question we address is whether these diverse mutations collectively affect a large number of phenotypes that matter to fitness, or whether these mutants are functionally similar in that they collectively alter a small set of fitness-relevant phenotypes.
 
 Understanding the map from genotype to phenotype to fitness is extremely challenging because each genetic change can influence multiple traits, not all of which are independent or contribute to fitness in a meaningful way. We contend with this challenge by measuring how the relative fitness of each adaptive mutant changes across a large collection of similar and dissimilar environments, which we term the ‘fitness profile’. When a group of mutants demonstrate similar responses to environmental change, we conclude that these mutants affect similar phenotypes. By clustering mutants with similar fitness profiles across a collection of environments, we can learn about which mutants influence similar phenotypes, as well as estimate the total number of fitness-relevant phenotypes represented across all mutants in all investigated environments.
 
 Because our mutant strains are barcoded, we can use previously established methods to measure their relative fitness in bulk and with high precision (Venkataram et al., 2016a). Specifically, we compete a pool of the barcoded mutants against an ancestral reference strain over the course of several serial dilution cycles. During each 48 hr cycle, the yeast are given fresh glucose-limited media which supports eight generations of exponential growth after which glucose is depleted and cells transition to non-fermentable carbon sources. After every 48 hr cycle, we transfer ~5×107 cells to fresh media to continue the growth competition. We also extract DNA from the remaining cells to PCR amplify and sequence their barcodes. We repeat this process four times, giving us an estimate of the frequency of each barcode at five time-points. By quantifying the log-linear changes in each barcode’s frequency over time and correcting for the mean-fitness change of population, we can calculate the fitness of each barcoded mutant relative to the reference strain (Figure 2A; Materials and methods).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of fitness measurement procedure. Adaptive mutants tagged with DNA barcodes are pooled at a 1:9 ratio with an ancestral reference strain. The pool is then propagated for several growth cycles, where the population is diluted into fresh media at fixed time intervals. DNA is extracted from each time-point, and the barcode region is PCR amplified and then sequenced. A mutant’s relative fitness is calculated based on the rate of change of its barcode’s frequency, corrected for the mean fitness of the population (see Materials and methods). Relative fitness is calculated in units of ‘per cycle’, representing the improvement of each barcode relative to the reference over the course of the time between transfers. (B) Fitness advantage of each mutant in the evolution condition relative to the ancestor. This fitness advantage is measured per transfer cycle and calculated as the average across all nine Evolution Condition (EC) batches. (C) (top) Environments are ordered from left to right depending on the degree to which they perturb mutant fitness from the average fitness observed across all EC batches. Environments in which average mutant fitness is within two standard deviations of average mutant fitness across EC batches are denoted in black and make up the subtle perturbation set. Environments in which aggregate mutant behavior exceeds two standard deviations are shown in red and make up the strong perturbations set. (bottom) This plot displays, for the four most common types of adaptive mutation observed in response to glucose limitation (Venkataram et al., 2016a), the average fitness in each of the 45 environments we study. Brackets on the right represent the amount of variation in fitness observed for each type of mutation across the EC batches, with the notch representing the mean and the arms representing two standard deviations on either side of the mean. For visualization purposes, we represent relative fitness values below −1.25 as arrows. Specifically, PDE2 mutants (orange arrows) have on average fitness −3.3 and −3.4 in 0.5 M KCl and 0.5 M NaCl, respectively. IRA1 nonsense mutants (blue arrows) have an average fitness −3.0 and −4.2 in 0.5 M KCl and 0.5 M NaCl, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Fitness differences among strains that are genetically identical and have very similar fitness effects tell us about the amount of measurement noise. Our strain collection includes 188 diploids that have similar fitnesses and possess no mutations other than diploidy. For each diploid fitness estimate, we calculated the percentile of deviation from the weighted average of all diploid fitness estimates in a particular environment. This is shown on the horizontal axis. The vertical axis shows the cumulative percent of diploids with deviations listed on the horizontal axis. If the noise model perfectly captures the uncertainty of each measurement, then it should be represented by the black dashed line, as, for instance, 20% of the diploids should have a difference from the mean in the 20th percentile. Each line represents a single experiment (we have 45 environments each with several replicates for a total of 109 experiments, see Materials and methods). For the vast majority of experiments, the diploids are closer to the mean than predicted by our noise model, as indicated by each line’s sigmoidal shape. This indicates that the noise model is conservative.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** This plot is similar to Figure 2C except that it displays all replicate experiments separately. The four most common types of adaptive mutations observed in response to glucose limitation are indicated by color. The vertical axis displays the average fitness advantage of each mutation type relative to the ancestor. Replicates of the same environment are grouped by shading. For visualization purposes, we represent relative fitness values below −1.25 as arrows.
 
 Using this method, we quantify the fitness of a large number of adaptive mutants in 45 environments. We focus on a set of 292 adaptive mutants that have been sequenced, show clear adaptive effects in the glucose-limited condition in which these mutants evolved (hereafter ‘evolution condition’; EC) (Figure 2B; Supplementary file 1), and for which we obtained high-precision fitness measurements in all 45 environments. These environments include some experiments from previously published work (Li et al., 2018; Venkataram et al., 2016a), as well as 32 new environments including replicates of the evolution condition, subtle shifts to the amount of glucose, changes to the shape of the culturing flask, changes to the carbon source, and addition of stressors such as drugs or high salt (Supplementary file 2).
 
@@ -63,15 +75,39 @@ The rank order of the fitnesses of many mutations is largely preserved across th
 
 The observation that different mutants have different and fairly complex fitness profiles suggests that they have different phenotypic effects. Even PDE2 and GPB2, which have similar fitnesses in the EC and are negative regulators of the same signalling pathway, have different fitness profiles. Do these diverse phenotypic effects contribute to fitness in the EC? To examine how many phenotypes matter to fitness in the EC, we test whether it is possible to create low-dimensional models that capture the complexity of the fitness profiles of all adaptive mutants across all subtle perturbations.
 
-## A model including eight fitness-relevant phenotypes captures fitness variation across subtle environmental perturbations
+### A model including eight fitness-relevant phenotypes captures fitness variation across subtle environmental perturbations
 
 We utilize these complex fitness profiles to estimate the number of phenotypes that contribute to fitness in the EC. Given that many of these mutants affect genes in the same nutrient response pathway, the number of unique phenotypes they affect may be small. Alternatively, given the observation that these mutants have different interactions with environments that represent strong perturbations (Figure 2C), this number may be large. We use singular value decomposition (SVD) to ask how much of the complexity in these fitness profiles can be captured by a low-dimensional phenotypic model (Figure 3A). SVD is a dimensionality reduction approach which here decomposes fitness profiles into two abstract multi-dimensional spaces described below.
 
-The first space, P, represents the phenotypic effects of mutants, where each phenotype is represented as a dimension (there are k phenotypic dimensions depicted in Figure 3A). Each mutant is represented by coordinates specifying a location in the phenotype space P (e.g. mutant one having coordinates (p11,p12,p13,...,p1k)). The ancestral reference lineage, which, by definition, has relative fitness zero in every environment, is placed at the origin (e.g. (0, 0, 0, … 0)) in this phenotypic space. In this sense, we can think of a mutation's effect on any phenotype as a measure of the distance from the location of the mutant in that phenotypic dimension to the origin.
+![Figure 3.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig3-v2.jpg)
 
-The second space, E, represents the contribution of each of the phenotypes in P to fitness, and thus has the same number of dimensions as P. If a phenotype does not contribute substantially to fitness in any environment, it is not represented as a dimension in either space. Therefore, our model captures only fitness-relevant phenotypes. In space E, each environment is represented by coordinates specifying a location (e.g. environment one having coordinates (e11,e21,e31,…,ek1)). These coordinates in E reflect the contribution (weight) of each of the k phenotypic dimensions on fitness in that environment. For example, an environment where only a single phenotype matters to fitness would be placed at the origin for all the axes, except for the axis corresponding to the single phenotypic dimension that matters. Environments for which the same phenotypes contribute to fitness will be placed closer together in the space E.
+**Figure 3.:** (A) To infer fitness-relevant phenotypes, we measure the fitness of mutants in a collection of environments and compare their fitness profiles. Mutants with similar fitness profiles (mutants 1 and 2) are inferred to have similar effects on phenotypes. Mutants with dissimilar fitness profiles (mutants 3 and 4) are inferred to have dissimilar phenotypic effects. We use SVD to decompose these fitness profiles into a model consisting of two abstract spaces: one that represents the fitness-relevant phenotypes affected by mutants (P) and another which represents the degree to which each phenotype impacts fitness in each environment (E). Here, we represent the model with k fitness-relevant phenotypes. The model’s estimate for fitness for a particular mutant in a particular environment is a linear combination of each mutant phenotype (mutant one is represented by the vector ($p_{11},p_{12},p_{13},...,p_{1k}$)) scaled by the degree to which that phenotype affects fitness in the relevant environment (environment one is represented by the vector $(e_{11},e_{12},e_{13},...,e_{1k})$). We show two examples of the equation used to estimate fitness for the mutants and environments highlighted in the left panel. Note that, for presentation purposes, we show SVD as inferring two matrices. It in fact infers three, but is consistent with our presentation if you fold the third matrix, which represents the singular values, into E (see Materials and methods). (B) Decomposing the fitness profiles of 292 adaptive mutants across 25 subtle environmental perturbations reveals eight fitness-relevant phenotypic components. The variance explained by each component is indicated as a percentage of the total variance. The percentages in parentheses indicate the relative amount of variation explained by each component when excluding the first component. Each of these components explain more variation in fitness than do components that capture variation across a simulated dataset in which fitness varies due to measurement noise. These simulations were repeated 1000 times (gray lines) and used to define the limit of detection (dotted line). (C) An abstract space containing eight fitness-relevant phenotypic components reflects known biological features. This plot shows the relationships of the mutants in a seven-dimensional phenotypic space that excludes the first component, visualized using Uniform Manifold Approximation and Projection (UMAP). Mutants that are close together have similar fitness profiles and are inferred to have similar effects on fitness-relevant phenotypes. Mutants with mutations in the same gene tend to be closer together than random, in particular IRA1 nonsense mutants in dark blue, GPB2 mutants in dark green, PDE2 mutants in dark orange, and diploid mutants in red. Six diploid mutants that had higher than average diploid EC fitness (and thus are likely to harbor additional mutation(s) so are categorized as ‘diploid with additional mutation’) also form a cluster. Colors are as in Figure 2B; IRA1 missense mutants shown in light blue, IRA2 in dark gray, GPB1 in light green, other Ras/PKA pathway mutants in brown, TOR/Sch9 pathway mutants in purple, other adaptive mutants in light gray, and known neutral lineages in black.
 
-In this model, each phenotype contributes to fitness independently, by definition, such that the fitness of mutant i in environment j is determined by each phenotypic effect of mutant i, scaled by the contribution of that phenotype to fitness in environment j. A linear combination of these weighted phenotypic effects determines the fitness of mutant i in environment j:fij=pi1e1j+pi2e2j+pi3e3j+...+pikekj
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The horizontal axis represents the number of phenotypic components in simulated data consisting of 100 mutants and 50 environments. The vertical axis indicates the number of components we detected when we only count components that explain more variation than does our noise model (see Materials and methods). For low levels of measurement noise (light blue), our method accurately detects the number of simulated components. As measurement noise increases (darker blue dots), the noise begins to swamp signal and the number of detected components decreases. (B) Same as (A), but here we set the threshold for detecting components using bi-cross validation rather than our noise model. Bi-cross validation is performed by holding out each environment and half of the mutants. Darker color indicates more measurement noise.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The horizontal axis shows the average fitness of each mutant across all 25 environments that represent subtle perturbations. The vertical axis shows the value of the first phenotypic component for each mutant. Mutants are colored as in Figure 2B. (B) The horizontal axis shows the average fitness of all 292 mutants in each environment, thus there are 45 points, one per environment. The vertical axis shows the value of the first phenotypic component in the environment weight space E.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The loadings of each mutant on each component, grouped by mutation type. Mutations types are ordered from bottom to top by their average fitness across nine EC batches. (B) The loadings of each environment on each component. Environments ordered from bottom to top as in Figure 2C.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) UMAP clusters mutants visually by gene when using the full eight-component phenotype space. (B) UMAP also shows some clustering when using only the three components that explain the least variation in mutant fitness in the EC. Although the clustering is clear for PDE2 and GPB2, it less clearly delineates IRA1 nonsense and diploid mutants. This suggests these mutants do not have substantial effects on these three phenotypic components in the EC.
+
+The first space, P, represents the phenotypic effects of mutants, where each phenotype is represented as a dimension (there are k phenotypic dimensions depicted in Figure 3A). Each mutant is represented by coordinates specifying a location in the phenotype space P (e.g. mutant one having coordinates $(p_{11},p_{12},p_{13},...,p_{1k})$). The ancestral reference lineage, which, by definition, has relative fitness zero in every environment, is placed at the origin (e.g. (0, 0, 0, … 0)) in this phenotypic space. In this sense, we can think of a mutation's effect on any phenotype as a measure of the distance from the location of the mutant in that phenotypic dimension to the origin.
+
+The second space, E, represents the contribution of each of the phenotypes in P to fitness, and thus has the same number of dimensions as P. If a phenotype does not contribute substantially to fitness in any environment, it is not represented as a dimension in either space. Therefore, our model captures only fitness-relevant phenotypes. In space E, each environment is represented by coordinates specifying a location (e.g. environment one having coordinates $(e_{11},e_{21},e_{31},…,e_{k1})$). These coordinates in E reflect the contribution (weight) of each of the k phenotypic dimensions on fitness in that environment. For example, an environment where only a single phenotype matters to fitness would be placed at the origin for all the axes, except for the axis corresponding to the single phenotypic dimension that matters. Environments for which the same phenotypes contribute to fitness will be placed closer together in the space E.
+
+In this model, each phenotype contributes to fitness independently, by definition, such that the fitness of mutant i in environment j is determined by each phenotypic effect of mutant i, scaled by the contribution of that phenotype to fitness in environment j. A linear combination of these weighted phenotypic effects determines the fitness of mutant i in environment j:
+
+$$
+f_{ij}=p_{i1}e_{1j}+p_{i2}e_{2j}+p_{i3}e_{3j}+...+p_{ik}e_{kj}
+$$
 
 In this model, mutants with similar fitness profiles, for example mutants 1 and 2 in Figure 3A, will be inferred as having similar phenotypic effects, and thus be located near each other in the phenotypic space P. Mutants with dissimilar fitness profiles, for example mutants 3 and 4 in Figure 3A, can be inferred to have at least some differing phenotypic effects, which might be mediated by a different effect on a single phenotypic component or different effects on many. Mutants with dissimilar fitness profiles are informative about the number of dimensions needed in this abstract model of phenotypic space.
 
@@ -83,7 +119,7 @@ We confirm that these eight phenotypic components capture meaningful biological 
 
 We iteratively construct phenotype spaces using the 60 training mutants while holding out one subtle perturbation at a time and creating the space with the data from the remaining 24 subtle perturbations. We then predict the fitness of the 232 held-out testing mutants in the held-out condition. We do so using all eight components, and again with only 7, 6, and so on. Then, we ask whether the eight component model does a better job at predicting mutant fitness than the other, lower dimensional models. If a component reflects measurement noise rather than biological signal, then the inclusion of this component would lead to overfitting and should harm the model’s ability to predict fitness in the held-out data. Instead we find that, on average across the 25 iterations, prediction power improves from the inclusion of each of the eight components. This confirms that even the smallest of these components captures biologically meaningful variation in fitness across the 25 subtle perturbations of the EC. However, the gain in predictive power decreases for each component. The model with only the first component explains on average 85% of weighted variance for the test mutants in the left-out conditions. A model with only the top five components explains 95.1%, and all eight components explain 96.2% of variation. This suggests that the last few components have very small contributions to fitness in the environments near the EC.
 
-## A model including eight fitness-relevant phenotypes recapitulates known features of adaptive mutations
+### A model including eight fitness-relevant phenotypes recapitulates known features of adaptive mutations
 
 We next ask whether the eight-dimensional phenotypic model clusters adaptive mutants found in similar genes or pathways (e.g. Ras/PKA or TOR/Sch9), or that represent similar mutation types (haploid v. diploid). Alternatively, our model may classify mutations into functional units (i.e. mutations that have similar phenotypic effects) in a way that does not conform to gene or pathway identity. We use Uniform Manifold Approximation and Projection (UMAP) to visualize the distance between all the mutants in this phenotypic space. As the first phenotypic dimension captures the average fitness of each mutant in the EC, and since we already know that mutations to the same gene have similar fitness in the EC (Figure 2B), we exclude the first phenotypic dimension from this analysis, although the inclusion of the first component does not change the identity of the clusters (Figure 3—figure supplement 4A). By focusing on the other seven components, we are asking whether genotype-by-environment interactions also cluster the mutants by gene, mutation type, and pathway.
 
@@ -91,21 +127,41 @@ These seven genotype-by-environment interactions indeed tend to cluster the adap
 
 Our approach also detects cases where mutations to the same gene or pathway do not cluster together. This suggests that our model captures phenotypic effects that would be obscured by assuming mutations to the same gene affect the same traits. For example, genotype-by-environment interactions do not cluster IRA1 missense mutations (p=0.317) (Figure 3C; light blue points), despite clustering the IRA1 nonsense mutations. Perhaps, IRA1 missense mutations have more diverse impacts on phenotype than do IRA1 nonsense mutations because the latter all likely result in a loss of the IRA1 protein, albeit not necessarily to the same extent. Our model also does not cluster the eight mutations in IRA2 (p=0.086) (Figure 3C; dark gray points). At the pathway level, our model does not cluster the three mutations to the TOR/Sch9 pathway away from the rest of the mutants, which are mainly in the Ras/PKA pathway (p=0.155) (Figure 3C; purple points). Our model also does not cluster all diploids that possess additional mutations, including those with increased copy number of chromosome 11 or chromosome 12 and those with mutations in IRA1 or IRA2 (p=0.863) (Figure 3C; dark red points). Interestingly, our model does find a distinct cluster of six diploids that have higher than average diploid fitness in the EC (p=0.0001) despite whole genome sequencing having revealed no mutations in their coding sequences (Figure 3C). This likely indicates that these diploids harbor difficult-to-sequence additional adaptive mutations that all have similar phenotypic consequences. In sum, these observations suggest that our genotype-phenotype-fitness model reveals new insights about which mutations affect the same functional units, specifically that these units do not always correspond to genes and pathways. Overall, these results suggests that our approach, like others that compare genotype-by-environment interactions (Li et al., 2018), is a useful and unbiased way to identify mutations that share functional effects.
 
-## Fitness variation across subtly different environments predicts fitness in substantially different environments
+### Fitness variation across subtly different environments predicts fitness in substantially different environments
 
 Now that we have identified the phenotypic components that contribute to fitness in environments that represent subtle perturbations of the EC, we can test the ability of these phenotypic components to predict fitness in more distant environments. Specifically, we can measure how the contribution of each of these components to fitness changes in new environments. We can also determine whether the phenotypic components that contribute very little to explaining fitness variation near the EC might at times have large explanatory power in distant environments (as depicted in the ‘fitness-relevant modularity’ model shown in Figure 1B).
 
 To test this we performed bi-cross-validation, using the eight component model constructed from fitness variation of 60 training mutants across 25 subtly different environments to predict the fitness of 232 test mutants in the environments that represent strong perturbations of the EC. To evaluate the predictive power of the model, we compare our model’s fitness predictions in each environment to predictions made using the average fitness in that environment. Thus, negative prediction power indicates cases where the model predicts fitness worse than predictions using this average (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig4-v2.jpg)
+
+**Figure 4.:** (A) Top panel vertical axis shows the accuracy of fitness predictions in each of 45 environments on the horizontal axis. The accuracy is calculated as the coefficient of determination, weighted such that each mutation type contributes equally. The left side of this plot represents predictions of mutant fitness in subtle environmental perturbations. These predictions are generated by holding out data from that environment when building the phenotypic model. The right side of the plot displays predictions of mutant fitness in strong environmental perturbations. These predictions are generated using a phenotypic model inferred from fitness variation across all 25 subtle different environments (denoted by each of the points or open circles) and for each of the 25 leave-one-out models (range of predictions is depicted with the error bars surrounding each point or open circle). Predictions from the eight-component model (red point) are typically better than the one-component model (open circle) and sometimes better than the five-component model (black point). Bottom panel vertical axis shows the percent of the eight-component model’s improvement due to the three minor components (calculated by the percent difference between the five- and eight-component models). The left side shows the improvement of the prediction in subtle environmental perturbations when that subtle perturbation was held out. The right side shows the improvement of the prediction in strong environmental perturbations when using the full model (dots) or the 25 leave-one-out models (the error bars represent the range of improvement). (B) For each subplot, the horizontal axis shows the measured fitness value. The vertical axis shows the predicted fitness value when predictions are made using the one-component (top row), five-component (middle row), or eight-component (bottom row) models. Columns represent different environments. Points are colored by the mutation type. Note that $R~^{2}$ less than zero indicates that the prediction is worse than predictions using the mean fitness in that condition (see Materials and methods).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The vertical axis shows the number of detected phenotypic components in various subsamples of the 25 environments that comprise our training set. The number of environments included in each subsample is shown on the horizontal axis. To select these environments, we randomly subsample from the full set of 25 training environments 25 times. Points are colored in accordance with the number of components detected from that subsample. The black dot represents the median number of components detected for each number of environments used. (B) The vertical axis shows the proportion of weighted variance explained for the fitness of the test mutants in the strong perturbation environments. The horizontal axis shows the number of subtle environments used to build the phenotypic model. For each number of environments used, the blue dots on the left show the proportion of weighted variance explained by a four-component model (solid blue dot with error bars shows mean and standard deviation). There are 25 blue dots because we subsampled the subtle environments 25 times. The multicolored dots on the right show the proportion of weighted variation explained by the full model picked for that subsample (solid red dot with error bars shows mean and standard deviation). The colors represent the number of components detected in the full model for each subsample and match the colors in panel (A).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The vertical axis shows the proportion of weighted variance explained for the fitness of the test mutants in the strong perturbation environments. The horizontal axis shows the number of mutation types included in the training set. Ten sets of each size were chosen. The solid black dot with error bars shows the mean and standard deviation across the 10 sets of each size.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** This plot is similar to the lower panel of Figure 4A, except here, black dots indicate the average improvement across 100 choices of the training and test sets, each with the same mutant type composition as the training and test set used in the main text. Error bars indicate two standard deviations from the mean.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/61271/elife-61271-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** These plots are similar to Figure 4A except here the vertical axis displays prediction power using a standard, rather than a weighted, coefficient of determination measure. Because diploids dominate the number of mutants in the collection, there are large differences between panel A (which shows all mutants) and panel B (which omits diploids).
+
 The eight-dimensional phenotypic model, which was generated exclusively with the data from subtle environmental perturbations, has substantial predictive power in distant environments (Figure 4). Predictions explain 29–95% of the variation in fitness of the 232 test mutants across strong environmental perturbations. For instance, in an environment where glucose concentration was increased from 1.5% to 1.8% and the flask was changed to one that increases the oxygenation of the media (the ‘Baffle, 1.8% Glucose’ environment), we predict 95% of weighted variance with the full eight-component phenotypic model, in contrast to 51% with a one-component model (Figure 4B). This ability to predict fitness is retained even when the first component (effectively the fitness in EC) is a poor predictor of mutant fitness. For example, in the environment where salt (0.5 M NaCl) was added to the media, the one-component model predicts fitness worse than predictions based on the average fitness for this environment, resulting in negative variance explained (Figure 4A and B). This is due to the fact that mutant fitness in this environment reflects extensive genotype-by-environment interactions, such that the fitness of mutants in this environment is uncorrelated with EC fitness. However, our predictions of mutant fitness in the 0.5 M NaCl environment improve when made using the eight-component phenotypic model, which predicts 72% of weighted variance. Astoundingly, the eight-component model captures strong tradeoffs between mutants with high fitness in the EC and very low fitness in this high-salt environment, specifically for IRA1 nonsense and, to a lesser extent, PDE2 mutants (Figure 4B). This was surprising because there appears to be very little variation in fitness of these mutants across the subtle compared to the strong perturbations (Figure 2C).
 
 This ability to predict fitness is also observed for mutations in genes and pathways that are not represented in the 60 that comprise the training set (e.g. those with mutations in TOR/Sch9 and HOG pathway genes). For example, the eight-component model explains 93% of variation in the ‘Baffle, 1.8% Glucose’ environment and 71% of variation in the 0.5M NaCl environment for these mutations, compared to 76% and 31% variance explained for the one-component model, respectively. This indicates that our model is able to capture shared phenotypic effects that extend beyond gene identity. Altogether, our ability to accurately predict the fitness of new mutants in new environments suggests that the phenotypes our model identifies reflect causal effects on fitness.
 
-Most strikingly, phenotypic models that include the three smallest phenotypic components, which together contribute only 1.1% to variance explained across the subtle environmental perturbations (Figure 4A), often explain a substantial amount of variance in the distant environments (Figure 4A; lower panel). For example, the three minor components contribute 17% of the overall weighted variance explained in the 1 Day condition (R~2 = 0.6–5-component model, R~2 = 0.73–8-component model; (0.73–0.6)/0.73 = 0.17) and 45% in the 6-Day environment, (R~2 = 0.25–5-component model, R~2 = 0.46–8-component model) (Figure 4A and B). In contrast, for other strong environments (e.g. Baffle — 1.8% Glucose, 8.5 µM GdA (B9) and Baffle — 2.5% Glucose), the three smallest components do not add much explanatory power (Figure 4A). These observations demonstrate that phenotypic components that make very small contributions to fitness in the EC can contribute substantially to fitness in other environments. Overall, these observations suggest an answer to questions about how adaptation is possible when mutations have collateral effects on multiple phenotypes: not all of those phenotypes contribute substantially to fitness in the EC (Figure 1B).
+Most strikingly, phenotypic models that include the three smallest phenotypic components, which together contribute only 1.1% to variance explained across the subtle environmental perturbations (Figure 4A), often explain a substantial amount of variance in the distant environments (Figure 4A; lower panel). For example, the three minor components contribute 17% of the overall weighted variance explained in the 1 Day condition ($R~^{2}$ = 0.6–5-component model, $R~^{2}$ = 0.73–8-component model; (0.73–0.6)/0.73 = 0.17) and 45% in the 6-Day environment, ($R~^{2}$ = 0.25–5-component model, $R~^{2}$ = 0.46–8-component model) (Figure 4A and B). In contrast, for other strong environments (e.g. Baffle — 1.8% Glucose, 8.5 µM GdA (B9) and Baffle — 2.5% Glucose), the three smallest components do not add much explanatory power (Figure 4A). These observations demonstrate that phenotypic components that make very small contributions to fitness in the EC can contribute substantially to fitness in other environments. Overall, these observations suggest an answer to questions about how adaptation is possible when mutations have collateral effects on multiple phenotypes: not all of those phenotypes contribute substantially to fitness in the EC (Figure 1B).
 
 The strength of our predictions depends on how many subtle environments we used to generate our phenotype model. When we use too few, we robustly detect the largest phenotypic components, but lose power to detect minor components, which can lead to less accurate predictions of fitness in strong environmental perturbations. We show this by randomly subsampling our 25 subtle environments and repeating all of our downstream analyses (Figure 4—figure supplement 1). We see a similar pattern when we reduce the number of mutation types used in the training set. Randomly excluding many mutation types from the training set decreases our ability to predict fitness, though the exclusion of any one mutation type from the training set has limited impact on our overall predictive accuracy (Figure 4—figure supplement 2).
 
-## Idiosyncratic behavior of some mutants in some environments reveals latent phenotypic complexity
+### Idiosyncratic behavior of some mutants in some environments reveals latent phenotypic complexity
 
 Next, we explore the extent to which the contribution of a phenotypic component to fitness is isolated to a specific environment and/or a specific type of mutation (Figure 5). We find that many phenotypic components matter more to fitness in some environments than others. For instance, component two adds on average 36% of the weighted variance in fitness across strong perturbations, despite adding only 7% on average across the subtle environmental perturbations. This contribution is, however, variable, with the second component adding over 90% of variance explained for the two environments with Benomyl and Baffled flasks (the ‘Baffle, 0.4 μg/mL Benomyl’ and ‘Baffle, 2 μg/mL Benomyl’ environments) and only 0.3% for the environment in which the transfer time was lengthened from 2 to 3 days (Figure 5A).
 
@@ -153,11 +209,91 @@ Despite the accumulation of large amounts of genomic and phenomic data, integrat
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OneTaq Hot Start 2X Master Mix with Standard Buffer</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0484L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0491L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApaLI restriction enzyme</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R0507L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MasterPure Yeast DNA Purification Kit</td>
+      <td>Lucigen</td>
+      <td>Cat#MPY80200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>S. cerevisiae constructed reference strain</td>
+      <td>Venkataram et al., 2016a</td>
+      <td>GSY 6704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT Index Kit v2</td>
+      <td>Illumina</td>
+      <td>Cat#FC-131–2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers F201-F212 and R301-R308</td>
+      <td>This paper</td>
+      <td>Step 1 PCR primers</td>
+      <td>See Materials and methods section ‘PCR Amplification of the Barcode Locus’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pipeline to determine the number of barcode reads</td>
+      <td>Venkataram et al., 2016a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pipeline to calculate fitness from barcode counts</td>
+      <td>Venkataram et al., 2016a</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Dmitri Petrov (dpetrov@stanford.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 The yeast strains used in this study can be grown and maintained using standard methods (e.g. YPD media in test tubes, glycerol stocks for long term storage at −80°C), but should be propagated in the appropriate selection environment (a glucose-limited minimal media - M3 medium for the evolution condition) for comparable fitness and phenotypic measurements. All the strains we study are of genetic background MATɑ, ura3Δ0, ybr209w::Gal-Cre-KanMX-1/2URA3-loxP-Barcode-1/2URA3-HygMX-lox66/71.
 
@@ -167,9 +303,9 @@ The majority of the fitness measurement experiments were conducted with a collec
 
 In a few experiments, we spiked in re-barcoded mutants and additional neutral lineages as internal controls. Since re-barcoded mutants are identical, except for the barcode, these teach us about the precision with which we can measure a mutant’s fitness. Specifically, we spiked in 10 re-barcoded IRA1 nonsense mutants (each with a frameshift insertion AT to ATT mutation at bp 4090) and 10 IRA1 missense mutants (each with a G to T mutation at bp 3776). Neutral lineages teach us about the behavior of the unmutated reference strain, which we must infer because its barcode is eliminated from the experiment before sequencing. The spiked in neutrals include ten barcoded lineages from the original evolution experiment (Levy et al., 2015) for which whole genome sequencing did not reveal any mutations (Venkataram et al., 2016a) and previous fitness measurements did not reveal any deviation from the reference (Li et al., 2018; Venkataram et al., 2016a).
 
-## Method details
+### Method details
 
-## Conducting the barcoded fitness measurements
+#### Conducting the barcoded fitness measurements
 
 Fitness measurement experiments were performed as described previously (Li et al., 2018; Venkataram et al., 2016a), where growth competitions were set up between a pool of barcoded mutants and a reference strain. The change in the frequency of each barcode over time reflects the fitness of the adaptive mutant possessing that barcode, relative to the reference strain.
 
@@ -179,7 +315,7 @@ After each transfer of 400 μL, the left-over 9600 μL was frozen so that we cou
 
 For experiments where additional neutral lineages and re-barcoded lineages were included, the initial inoculation mix consisted of 90% ancestral reference strain, 9.4% barcode mutant pool, 0.2% additional neutral spike-in pool, 0.2% re-barcoded IRA1 nonsense pool, and 0.2% re-barcoded IRA1 missense pool.
 
-## Growth conditions
+#### Growth conditions
 
 In this study, we present fitness measurement data from a collection of 45 conditions that each represent perturbations of the growth condition in which these adaptive mutants evolved. We refer to this original evolution condition as the ‘EC’. In the EC, cells are grown in flasks with a flat bottom and transferred to new flasks every 48 hr (see Conducting the barcoded fitness measurements). Cells are grown in M3 media (Verduyn et al., 1992). This media is glucose-limited, meaning the cells run out of glucose before any other nutrient. In the EC, the starting glucose concentration is 1.5%.
 
@@ -189,23 +325,121 @@ For each of these 45 conditions but three, we include between two and four repli
 
 Some conditions, including some Fluconazole conditions and Geldanamycin conditions, have unexpected orderings in the strength of perturbation (i.e. the smaller drug concentration shows a larger difference in fitness or similar concentrations seem to have different effects). Regardless of whether these observations reflect technical problems (e.g. degradation or poor solubility of the drug), we include these conditions because we use the effect of the realized perturbation on fitness to build low-dimensional phenotypic models. In other words, the identity of the perturbation does not matter in this study.
 
-## DNA extraction of each sample
+### DNA extraction of each sample
 
 After a growth competition is complete, we extracted DNA from frozen samples following either a protocol described previously (for batches 1–6 and 10) (Venkataram et al., 2016a) or a modified protocol that improves the ease and yield of extraction. Our modified protocol is as follows. For each sample, a single tube of the three that were frozen for each sample (see Conducting the barcoded fitness measurements) was removed from the freezer and thawed at room temperature. We extracted DNA from that sample using the following modification of the Lucigen MasterPure yeast DNA purification kit (#MPY80200). We transferred the thawed cells into a 15 mL conical and centrifuge for 3 min at 4000 RPM. After discarding the supernatant, the pellet was then resuspended with 1.8 mL of the MasterPure lysis buffer, and 0.5 mm glass beads were added to help with disruption of the yeast cell wall. The mix of pellet, lysis buffer, and beads was then vortexed for 10 s and incubated for 45 min at 65°C, with periodic vortexing. The solution was then put on ice for 5 min and then 900 μL of MPC Protein Reagent was mixed with the solution. We then separated protein and cell debris by centrifugation at 4000 RPM, transferring 1900 μL of supernatant to a 2 mL centrifuge tube. We further separated remaining protein and cell debris by centrifuging at 13,200 RPM for 5 min. The supernatant was then divided into two 2 mL centrifuge tubes, with 925 μL of the supernatant into each. Next, we added 1000 μL of isopropanol to each tube, mixed by inversion, centrifuged at 13,200 RPM for 5 min, and discarded the supernatant. The pellet, containing the DNA was then resuspended in 250 μL of Elution Buffer and 10 μL of 5 ng/μL RNAase A was added. This was either left at room temperature overnight or incubated at 60°C for 15 min. Next the two tubes per sample were combined into a single tube and 1500 μL of ethanol was added. This was then mixed by inversion, and strands of precipitating DNA appeared. This was centrifuged at 13200 RPM for 2 min, and the supernatant was discarded. We again precipitated the DNA by resuspending with 750 μL of ethanol, and collected the DNA by centrifuging 13200 RPM for 2 min. The supernatant was discarded, and the tubes were left to air dry. Finally, we resuspended the pellet in Elution Buffer to a final concentration of 50 ng/μL for later use in PCR reactions (approximately 3600 ng of DNA were used for the PCR reactions).
 
-## PCR amplification of the barcode locus
+#### PCR amplification of the barcode locus
 
 After extracting DNA, we PCR-amplified the barcode locus for each sample. Batches 1–6 and 10 were conducted with the protocols described in Li et al., 2018; Venkataram et al., 2016a. We made some slight modifications to this protocol, including using a new set of primers to allow for nested-unique-dual index labeling, for batches 7, 8, and 9. Our modified protocol is as follows.
 
 We used a two-step PCR protocol to amplify the barcodes from the DNA. The first PCR cycle uses primers with ‘inline indices’ to label samples (see Mitigating the effects of index hopping section for details). These inline indices are highlighted in bold below. Attaching unique indices to samples pertaining to different conditions or timepoints allows us to multiplex these samples on the same sequencing lane. Each primer also contains a Unique Molecular Identifier (UMI) – denoted by the sequence of ‘N’ nucleotides in the primer – which is used to determine if identical barcode sequences each represent yeast cells that were present at the time the sample was frozen, or a PCR amplification of the a barcode from a single cell (see Levy et al., 2015; Li et al., 2018; Venkataram et al., 2016a). Primers were HPLC purified to ensure they are the correct length.
 
-## Forward primers
+#### Forward primers
 
-Primer nameSequenceF201TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CGATGTT TAATATGGACTAAAGGAGGCTTTTF202TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ACAGTGT TAATATGGACTAAAGGAGGCTTTTF203TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TGACCAT TAATATGGACTAAAGGAGGCTTTTF204TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GCCAATT TAATATGGACTAAAGGAGGCTTTTF205TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ATCACGT TAATATGGACTAAAGGAGGCTTTTF206TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CAGATCT TAATATGGACTAAAGGAGGCTTTTF207TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GGCTACT TAATATGGACTAAAGGAGGCTTTTF208TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TAGCTTT TAATATGGACTAAAGGAGGCTTTTF209TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TTAGGCT TAATATGGACTAAAGGAGGCTTTTF210TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ACTTGAT TAATATGGACTAAAGGAGGCTTTTF211TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GATCAGT TAATATGGACTAAAGGAGGCTTTTF212TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CTTGTAT TAATATGGACTAAAGGAGGCTTTT
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F201</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CGATGTT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F202</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ACAGTGT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F203</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TGACCAT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F204</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GCCAATT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F205</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ATCACGT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F206</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CAGATCT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F207</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GGCTACT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F208</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TAGCTTT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F209</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN TTAGGCT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F210</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN ACTTGAT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F211</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN GATCAGT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>F212</td>
+      <td>TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG NNNNNNNN CTTGTAT TAATATGGACTAAAGGAGGCTTTT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Reverse primers
+#### Reverse primers
 
-Primer nameSequenceR301GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN TATATACGC TCGAATTCAAGCTTAGATCTGATAR302GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN CGCTCTATC TCGAATTCAAGCTTAGATCTGATAR303GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN GAGACGTCT TCGAATTCAAGCTTAGATCTGATAR304GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN ATACTGCGT TCGAATTCAAGCTTAGATCTGATAR305GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN ACTAGCAGA TCGAATTCAAGCTTAGATCTGATAR306GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN TGAGCTAGC TCGAATTCAAGCTTAGATCTGATAR307GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN CTGCTACTC TCGAATTCAAGCTTAGATCTGATAR308GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN GCGTACGCA TCGAATTCAAGCTTAGATCTGATA
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R301</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN TATATACGC TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R302</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN CGCTCTATC TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R303</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN GAGACGTCT TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R304</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN ATACTGCGT TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R305</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN ACTAGCAGA TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R306</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN TGAGCTAGC TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R307</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN CTGCTACTC TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+    <tr>
+      <td>R308</td>
+      <td>GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG NNNNNNNN GCGTACGCA TCGAATTCAAGCTTAGATCTGATA</td>
+    </tr>
+  </tbody>
+</table>
 
 For the first step of PCR, we performed eight reactions per sample to offset the effects of PCR jackpotting within each reaction. For each set of eight reactions, we used the master mix:
 
@@ -219,17 +453,17 @@ This master mix was then divided into three PCR tubes per reaction, and run with
 
 We then added 100 μL of binding buffer from the ThermoScientific GeneJET Gel Extraction Kit and purified the PCR product, eluting into 43 μL. We found that increasing the number of cycles in the second step PCR beyond 21 did not seem to improve the amount of DNA recovered after gel extraction. For some samples, we experimented with a touch down procedure for the second step PCR where we started with a hotter annealing temperature and slowly decreased it over the course of 27 cycles. This also did not seem to increase the yield of DNA recovered from the PCR.
 
-## Removal of the reference strain via digestion and gel purification
+### Removal of the reference strain via digestion and gel purification
 
 To avoid the vast majority of our sequencing reads mapping only to the reference strain (and thus not being informative to relative fitness of the mutants), we use restriction digest to cut the ApaLI restriction site in the middle of the reference strain’s barcode region. We mixed 43 μL of the second step PCR product with 2 μL of ApaLI (NEB #R0507L) and 5 μL of 10X Cutsmart and incubated at 37°C for at least 2 hr (up to overnight). After digestion, we conducted size selection by running the digested sample on a gel, removing all product less than 300 bp, and isolating the DNA using a standard ThermoScientific GeneJET Gel Extraction protocol. Our expected product is 350 bp. We did not remove longer sequences via gel extraction because of the possibility that some barcode sequences may selectively form complexes with themselves or other barcodes.
 
 Note that for some samples, we also digested the reference strain before PCR, in addition to after PCR, to decrease the amount of reference strain barcode. For these samples, we mixed 80 μL of genomic DNA (at concentration 50 ng/μL) with 10 μL of 10X Cutsmart and 2 μL of ApaLI and incubated 37°C for at least 2 hr (up to overnight). This product was then used as the template for PCR step 1 (with appropriate water volume adjustments to ensure 50 μL reactions).
 
-## Sample pooling and amplicon sequencing
+### Sample pooling and amplicon sequencing
 
 We used the Qubit High Sensitivity (ThermoFisher #Q32854) method to quantify the concentration of the final product for each sample, then pooled samples with different dual indices in equal frequency for sequencing. Our samples were then sent to either Novogene (https://en.novogene.com/) or Admera Health (https://www.admerahealth.com/) for quality control (qPCR and either Bioanalyzer or TapeStation) and sequencing. We used 2 × 150 paired-end sequencing along with index sequencing reads on Illumina HiSeq machines using patterned flow cells (either HiSeq 4000 or HiSeq X). We also used Illumina Nextseq machines with unpatterned flow cells. We found that the former was more subject to index hopping errors, please see Mitigating the effects of index hopping for a discussion of how our dual indexing reduces effects of index hopping. All amplicon samples were sequenced with at least 20% genomic DNA spiked in (either whole genomes from an unrelated project or phi-X) to ensure adequate diversity on the flow cell.
 
-## Mitigating the effects of index hopping
+### Mitigating the effects of index hopping
 
 To reduce the effects of index hopping observed on Illumina patterned flow cell technology (including HiSeq 4000, HiSeq X, and Novaseq machines) (Illumina, 2017; Sinha et al., 2017), we devise a nested unique-dual-indexing approach. This approach uses a combination of inline indices attached during the first step of PCR, as well as Nextera indices attached during the second step of PCR. The latter indices are not part of the sequencing read (they are read in a separate Index Read). This process uniquely labels both ends of all DNA strands such that DNA strands from multiple samples can be multiplexed on the same flow cell. Had we only labeled one end of each DNA strand, index hopping could have caused us to incorrectly identify some reads as coming from the wrong sample.
 
@@ -237,15 +471,15 @@ One approach to label samples with unique-dual-indices is to use 96 forward prim
 
 To reduce the effect of index hopping contamination on our results, we included only samples that were sequenced on non-patterned flow cell technology (HiSeq 2000 and 2500 for samples in batches 1–6, 10, NextSeq for samples in batch 9) or were sequenced on patterned flow cell technology (patterned flow cell HiSeq) with nested unique-dual indexing.
 
-## Processing of amplicon sequencing data
+### Processing of amplicon sequencing data
 
 We processed the amplicon sequencing data by first using the index tags to de-multiplex reads representing different conditions and timepoints. Then, using Bowtie2 (Langmead and Salzberg, 2012), we mapped reads to a known list of barcodes generated by Venkataram et al., 2016a, removed PCR duplicates using the UMIs from the first-step primers, and counted the number of reads for each barcode in each sample. The source code for this step can be found at Venkataram, 2020. We processed all raw data for this study using this pipeline, including re-processing the raw sequencing files for data from previous studies (Li et al., 2018; Venkataram et al., 2016a) so that all data was processed together using the most recent version of the code.
 
 Several samples included technical replicates where the sample was split at various times in the process, including before DNA extraction, before PCR, and prior to sequencing. Read counts across these technical replicates were merged in order to calculate the best estimate of barcode frequencies. Counts were merged after appropriately accounting for PCR duplicates as identified from Unique Molecular Identifiers.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Fitness estimate inference
+#### Fitness estimate inference
 
 The amplicon sequencing data shows the relative frequency of each barcode in each time-point of every one of our 109 fitness measurement experiments. To estimate the fitness of each barcoded mutant in each experiment, we calculate how barcode frequencies change over time. We do this using previously described methods (Venkataram et al., 2016a).
 
@@ -255,37 +489,53 @@ This results in 109 fitness measurements per each barcoded mutant, with some of 
 
 We aimed to sequence each timepoint at a depth of at least 100X coverage per barcode (totaling ~50,000 reads that map to barcodes that are not the ancestral barcode). Over 95% of all timepoints have coverage in excess of this target, with ~70% of the timepoints exceeding 500,000 mapped reads (~1000X coverage per barcode). In order to include as many conditions and timepoints as possible, we included lower coverage timepoints that had at least 2500 mapped reads as long as at least 400 barcoded mutants were represented. Because our noise model accounts for uncertainty due to read depth, these timepoints are under-weighted when calculating the overall fitness across all four or five timepoints. There were two conditions we included whose average coverage across included timepoints was below the target of 100X coverage per barcode. The Baffle, 2.5% Glucose condition had average mapped read counts per timepoint of 33918 and 17189 for replicates 1 and 2, respectively. The Baffle, 0.4 μg/ml Benomyl condition had average mapped reads counts per timepoint of 15,381 and 15,077 for replicates 1 and 2, respectively. However, despite having coverages lower than the target, there is reasonable agreement between the replicates (correlation coefficient r = 0.57 and r = 0.77, respectively). Additionally, both these environments are classified as strong perturbations from the evolution condition, so their inclusion does not affect the inference of the phenotype model. Finally, including these conditions is conservative in that any noise in their fitness estimate would make it more difficult to predict fitness in these environments.
 
-## Identification of neutral lineages
+#### Identification of neutral lineages
 
 Previous work using this fitness measurement method focused on a larger collection of 4800 barcoded yeast lineages, where the vast majority of these lineages were neutral (Li et al., 2018; Venkataram et al., 2016a). In order to increase the number of reads per adaptive lineage, we used a smaller pool of 500 lineages for most experiments. However, this prevents us from identifying neutral lineages as was done in previous studies, by rejecting outlier lineages with higher than typical fitness values. Instead, we used a set of 35 high-confidence neutral lineages to infer mean fitness (see Experimental model and subject details). These lineages showed no fitness differences from the neutral expectation in previous studies and were shown to possess no mutations detectable via whole genome sequencing. These high-confidence neutral lineages were present in all experiments, and were spiked into experiments from batch nine to increase their frequency. We used these neutrals to perform the fitness inference in two steps. First, we inferred fitness using this collection of high-confidence neutrals to make a first pass at inferring the fitness values. Next, we included lineages with similar behavior to the high-confidence neutrals to improve our estimate of mean fitness.
 
-## Noise model
+#### Noise model
 
 To quantify the uncertainty for each fitness measurement, we used the noise model as outlined in Venkataram et al., 2016a.
 
 Briefly, this noise model accounts for the uncertainty coming from several sources of noise. The first type of noise scales with the number of reads for a given lineage. This noise stems from stochasticity in population dynamics (coming from the inherent stochasticity in growth and noise associated with dilution), from counting noise associated with a finite coverage, and technical noise from DNA extraction and PCR. We fit this noise by quantifying the variation in the frequency of neutral lineages (see Identification of neutral lineages). There is additional variation in fitness observed for high-frequency lineages between replicate experiments (here we refer to variation across replicates that were performed simultaneously, not variation across batches). We also accounted for this uncertainty following previous studies. Specifically, we fit an additional frequency-independent source of noise using between-replicate variation.
 
-## Checks on noise model
+#### Checks on noise model
 
 Because our ability to count the phenotypes that matter to fitness hinges upon measurement error, we further assessed the accuracy of our noise model. We did so by using barcoded lineages that should have the same fitness because they are genetically identical. Since our fitness estimates are imperfect (i.e. they contain some noise), we estimated each of these lineages as having slightly different fitness. We then asked if the variation in fitness across these lineages is explained by our noise model, or if there is more variation than our noise model can account for. We did this explicitly by calculating, for each lineage, how far our fitness estimate is from the best guess for the true underlying fitness value (the group’s mean) in units of the estimate’s measurement precision. We then calculated the percent of lineages that are a given distance from the group’s average to understand the accuracy of the model. For instance, if the noise model perfectly captures the uncertainty of each measurement, then 10% of the diploid lineages should have a difference from the weighted diploid mean in the 10th percentile, 20% in the 20th percentile, etc. Because 188 of our 292 barcode mutants are diploids without additional mutations, diploids are an ideal group to use to assess the accuracy of the noise model. This procedure shows that, for the vast majority of replicates, the noise model is conservative. That is, diploid lineages tend to have less variation in fitness than expected by the noise model (Figure 2—figure supplement 1).
 
-## Classifying mutants by mutation type
+#### Classifying mutants by mutation type
 
 Some types of mutants are present more than others. For example, 188 of our 292 mutants are diploids and 30 mutants are in the IRA1 gene. If not properly accounted for, this imbalance can lead to some unfairness in predictions for our model. For example, if we use mostly diploid lineages to train our model, we will be very good at predicting the fitness of diploids but poor at predicting other types of mutants. This means that we must classify our mutants by mutation type in order to properly balance them. We classified mutants following previous work (Venkataram et al., 2016a) that classified mutants as either diploids, or if haploid, by the gene possessing the putative causal mutation. Because previous work finds differences in fitness between missense and nonsense/frameshift/indel mutations in IRA1, here we classified these mutants into ‘missense’ and ‘nonsense’ classes, where mutants with frameshift and indel mutations were classified as ‘nonsense’. We also classified diploid mutants with additional mutations in nutrient-response genes or chromosomal amplifications as separate groups. Additionally, we created a separate class for ‘high-fitness diploid’ mutants that possess no additional detected mutations (other than being diploid) but have very high fitness in the EC. To be classified as a high-fitness diploid, a diploid mutant must have an average fitness across all nine EC batches that is greater than two standard deviations above the average of all diploids. In the main text, we label these mutants as ‘diploid with additional mutation’ since they are likely to harbor additional mutation(s) due to their increased fitness.
 
-## Calculation of weighted average Z score
+#### Calculation of weighted average Z score
 
 To partition environments into subtle and strong perturbations of the EC, we relied on the nine experiments performed in the EC. As each of these experiments was performed at a different time, variation in fitness across these experiments represents batch effects, and we therefore refer to these nine experiments as ‘EC batches’. Environmental differences between batches are very subtle, as they represent the limit of our ability to minimize environmental variation. Thus, variation in fitness across the EC batches serves as a natural benchmark for the strength of environmental perturbations. If the deviations in fitness caused by an environmental perturbation are substantially stronger than those observed across the EC batches, we call that perturbation ‘strong’.
 
-More explicitly, to determine whether a given environmental perturbation is subtle or strong, we first quantified the typical variation in fitness for each mutant, across the EC batches:σi=1nbatches∑jbatches| fij− fi¯ |where σi2 represents the variance in fitness across the EC batches for mutant i, and fi¯  represents the average fitness of mutant i across the EC batches.
+More explicitly, to determine whether a given environmental perturbation is subtle or strong, we first quantified the typical variation in fitness for each mutant, across the EC batches:
 
-To ensure that each mutation type contributes equally to our classification of how different each environment is from the evolution condition, we weighed each mutant’s contribution to this difference. We did so based on the number of mutants with the same mutation type, such that the mutation-type-weighted average Z-score for a given environment j is given by:zj=∑imutants| fij− fi¯ |ntype(i)σiwhere ntype(i) represents the number of mutants that are the same mutation type as mutant i.
+$$
+\sigma_{i}=\frac{1}{n_{batches}}\sumjbatches|f_{ij}− f_{i}¯|
+$$
+
+where $\sigma_{i}^{2}$ represents the variance in fitness across the EC batches for mutant i, and $f_{i}¯ $ represents the average fitness of mutant i across the EC batches.
+
+To ensure that each mutation type contributes equally to our classification of how different each environment is from the evolution condition, we weighed each mutant’s contribution to this difference. We did so based on the number of mutants with the same mutation type, such that the mutation-type-weighted average Z-score for a given environment j is given by:
+
+$$
+z_{j}=\sumimutants\frac{|f_{ij}− f_{i}¯|}{n_{type(i)}\sigma_{i}}
+$$
+
+where $n_{type(i)}$ represents the number of mutants that are the same mutation type as mutant i.
 
 We then classified the environmental perturbations based on this Z-score. Sixteen environments provoked fitness differences resulting in a Z-score of less than two, and we classified these environmental perturbations as ‘subtle’. The remaining 20 environments had Z-scores greater than 2, which we classified as ‘strong’ environmental perturbations.
 
-## Model of phenotypes that contribute to fitness
+#### Model of phenotypes that contribute to fitness
 
-In order to count the phenotypes that affect fitness in our collection of mutants, we explored a low-dimensional phenotypic model. We explicitly used a model of fitness-relevant phenotypes such that each mutant is represented as having a fixed effect on each phenotype, represented by a vector of k phenotypes, for example mutant i is represented by the vector (pi1,pi2,pi3,...,pik). In addition, each environment is represented by a vector of phenotypic weights, representing the importance of each of the k phenotypes to fitness in that environment, for example environment j represented by the column vector (e1j,e2j,e3j,...,ekj). The fitness effect of mutant i in a given environment j is the linear combination of that mutant’s phenotypes, each weighted by its importance in environment j:fij=pi1e1j+pi2e2j+pi3e3j+...+pikekj
+In order to count the phenotypes that affect fitness in our collection of mutants, we explored a low-dimensional phenotypic model. We explicitly used a model of fitness-relevant phenotypes such that each mutant is represented as having a fixed effect on each phenotype, represented by a vector of k phenotypes, for example mutant i is represented by the vector $(p_{i1},p_{i2},p_{i3},...,p_{ik})$. In addition, each environment is represented by a vector of phenotypic weights, representing the importance of each of the k phenotypes to fitness in that environment, for example environment j represented by the column vector $(e_{1j},e_{2j},e_{3j},...,e_{kj})$. The fitness effect of mutant i in a given environment j is the linear combination of that mutant’s phenotypes, each weighted by its importance in environment j:
+
+$$
+f_{ij}=p_{i1}e_{1j}+p_{i2}e_{2j}+p_{i3}e_{3j}+...+p_{ik}e_{kj}
+$$
 
 Our fitness measurements reflect mutant fitness relative to a reference strain, therefore, our model places the reference strain (which has fitness 0 by definition) at the origin of this multi-dimensional space. Our model only includes phenotypes that differ between the reference strain and least one mutant. This is sensible given that our reference strain is a modified version of the ancestor of all these mutant lineages. Thus, if there exists a phenotype that contributes to fitness, but none of the adaptive mutants altered that phenotype, our model will not detect it. More explicitly, a phenotype that contributes to fitness would have a non-zero value of e, but if no mutant alters that phenotype from the reference, all mutants would have a zero value of p for that phenotype. Thus, the non-zero value of e would always be multiplied by a zero value for p and this phenotypic dimension would not be represented in our model. This is not to say that if only a single mutant of the 292 alters a particular phenotype we would include it as a phenotypic dimension. Our power to add dimensions to our model is limited by measurement noise. We only include dimensions that capture more variation in fitness than do dimensions that capture measurement noise (see Estimating the detection threshold using measurement error).
 
@@ -293,57 +543,83 @@ Similarly, because we measure fitness, and not phenotype, our model is blind to 
 
 Importantly, the phenotypic dimensions that we infer from our fitness measurements are abstract entities. They represent causal effects on fitness, rather than measurable features of cells. For this reason, they might be called ‘fitnotypes’ (a mash of the terms ‘fitness’ and ‘phenotype’). Even though the fitnotypes are independent with respect to their contribution of fitness, and contribute to fitness linearly, the mapping of commonly measured features of cells (e.g. growth rate, the expression levels of growth supporting proteins like ribosomes) onto fitnotypes may be more complicated. For instance, a commonly measured cellular feature that has a complicated nonlinear mapping to fitness could be detected as many, linearly contributing fitnotypes. This is another reason that our phenotypic dimensions are not necessarily comparable to what people traditionally think of as a ‘phenotype’.
 
-## Using SVD to decompose the fitness matrix
+#### Using SVD to decompose the fitness matrix
 
-Our goal is to use fitness measurements to learn about the phenotypic effects of mutations as well as the contribution of these phenotypes to fitness in different environments. We conducted fitness measurements for 292 mutants in each of 45 environments and organized these data into a fitness matrix, F, where every row corresponds to a mutant, every column corresponds to an environment, and every entry is a fitness measurement. Because our model (see Model of phenotypes that contribute to fitness) represents fitness in a given environment as the sum of multiple phenotypes, each scaled by their contribution to fitness in that environment, we can use SVD to decompose the fitness matrix F as:PΣET=F
+Our goal is to use fitness measurements to learn about the phenotypic effects of mutations as well as the contribution of these phenotypes to fitness in different environments. We conducted fitness measurements for 292 mutants in each of 45 environments and organized these data into a fitness matrix, F, where every row corresponds to a mutant, every column corresponds to an environment, and every entry is a fitness measurement. Because our model (see Model of phenotypes that contribute to fitness) represents fitness in a given environment as the sum of multiple phenotypes, each scaled by their contribution to fitness in that environment, we can use SVD to decompose the fitness matrix $F$ as:
 
-The left hand side of this equation consists of three matrices:P, which represents the positions of the mutants in our low-dimensional model of phenotypic space, ET, which represents the contribution of a phenotype to fitness in a given environment, and Σ, a diagonal matrix representing the singular values of the fitness matrix F. Though the singular values are informative in this separation of three matrices, particularly for the amount of variation captured by each of the inferred components, we can also think of this as a decomposition into two matrices, where we fold the singular values into either the mutant phenotypes or the environment weights, as described in the main text. Either way, this decomposition captures the data represented in the fitness matrix F, including measurement error as well as the underlying biological signals.
+$$
+PΣE^{T}=F
+$$
+
+The left hand side of this equation consists of three matrices:$P$, which represents the positions of the mutants in our low-dimensional model of phenotypic space, $E^{T}$, which represents the contribution of a phenotype to fitness in a given environment, and $Σ$, a diagonal matrix representing the singular values of the fitness matrix $F$. Though the singular values are informative in this separation of three matrices, particularly for the amount of variation captured by each of the inferred components, we can also think of this as a decomposition into two matrices, where we fold the singular values into either the mutant phenotypes or the environment weights, as described in the main text. Either way, this decomposition captures the data represented in the fitness matrix $F$, including measurement error as well as the underlying biological signals.
 
 Importantly, the dimensions in the phenotypic model we built using SVD are detected in the order of their explanatory power. Moreover, the first dimension is the best, linear one-component model that explains the data (if evaluated by mean squared error). This is true for any set of the first k components. This means, for example, that the model with the first eight components is the best possible eight-component linear model for the observed data (Eckart and Young, 1936).
 
 One issue in this type of analysis is that adding more components always improves the explanatory power of the model, even when those components capture variation that is primarily due to measurement noise. This type of overfitting problem is common in statistics, and several methods have been devised to select the appropriate number of components to include. We use two such methods here.
 
-## Estimating the detection threshold using measurement error
+#### Estimating the detection threshold using measurement error
 
 One method to select the appropriate number of components to include in the model and prevent overfitting (i.e. prevent fitting a component that primarily represents noise) is to use measurement error as a type of control. This is only possible if the amount of measurement error is known. We estimated the amount of noise in our fitness measurements using a previously described noise model (see Noise Model) (Venkataram et al., 2016a). Since this noise model includes counting noise, every fitness measurement may have a different amount of noise. For example, mutants present at low frequency will be subject to more stochasticity resulting from counting noise. We used this noise model to simulate fitness tables (F) where mutant fitnesses vary exclusively due to measurement noise. We simulated 1000 noise-only matrices, where each entry is pulled from a normal distribution centered at zero and with variance equal to the estimated measurement noise of the corresponding entry in the true fitness matrix F. We then applied SVD to each noise-only matrix, which gave us a set of singular values generated only by noise. From many such simulations, we took the average size of the largest component, which reveals how much variation can be explained by a component that captures only noise. We found that the largest noise-components are of the size that they would capture 0.07% of variation in our true fitness matrix. Thus, we set this as our limit of detection. In other words, in order for us to include eight components in our low-dimensional model, all of them must explain more than 0.07% of the variation in fitness. This approach is analogous to identifying a threshold when measurement noise is known but not identical for all entries in the matrix (Josse and Sardy, 2014).
 
-## Estimating detection threshold using bi-cross-validation
+#### Estimating detection threshold using bi-cross-validation
 
-Another method for identifying the appropriate number of components is to use their predictive power. This method relies on the intuition that measurement error is uncorrelated across different mutants and different environments. Therefore, a component that represents measurement error should not contain information that can help predict the fitnesses of these mutants in new environments. It should also not contain information that can help predict the fitness of unstudied mutants. We used a bi-cross-validation scheme of the SVD devised by Owen and Perry, 2009 which divides the mutants and environments into distinct groups of training and testing sets. This subsequently divided our matrix of fitness measurements into four submatrices: the fitness of the training mutants in the training environments (D), the fitness of the training mutants in the testing environments (C), the fitness of the testing mutants in the training environments (B), and the fitness of the testing mutants in the testing environments (A).F=(A  Test EnvironmentsTest Mutants B  Train EnvironmentsTest MutantsC  Test EnvironmentsTrain MutantsD  Train EnvironmentsTrain Mutants)
+Another method for identifying the appropriate number of components is to use their predictive power. This method relies on the intuition that measurement error is uncorrelated across different mutants and different environments. Therefore, a component that represents measurement error should not contain information that can help predict the fitnesses of these mutants in new environments. It should also not contain information that can help predict the fitness of unstudied mutants. We used a bi-cross-validation scheme of the SVD devised by Owen and Perry, 2009 which divides the mutants and environments into distinct groups of training and testing sets. This subsequently divided our matrix of fitness measurements into four submatrices: the fitness of the training mutants in the training environments (D), the fitness of the training mutants in the testing environments (C), the fitness of the testing mutants in the training environments (B), and the fitness of the testing mutants in the testing environments (A).
+
+$$
+F=(A  _{Test Environments}^{Test Mutants} B  _{Train Environments}^{Test Mutants}C  _{Test Environments}^{Train Mutants}D  _{Train Environments}^{Train Mutants})
+$$
 
 We carried out SVD on the training data (submatrix D), which returned a set of singular values and corresponding components that captured the fitness data in D. We then used these components to predict the fitness of the testing mutants in the testing environments (submatrix A). First, we tried to predict these fitness values by only using the first component. That is, we fixed this first component and the first singular value for the training mutants. We then found the best first component for the testing environments based on the fitness values of the training mutants in these environments (i.e. using the information in submatrix C), given the constraint that the training mutants can only be represented by the one component. We then conducted an analogous procedure to find the first component of the testing mutants by fixing the first component of the training environments by using the information in submatrix B. Then, we tried to predict the fitness of the testing mutants in the testing environments using the first component independently fit for each. We subsequently repeated this procedure, giving the testing mutants access to more of the training components each time. If the components detected by the training components represent biological signal, then this should improve the ability to predict the fitness of the testing mutants in the testing environments. However, once the components primarily represent measurement error, their inclusion should harm predictive power. Therefore, we use the number of components with the best ability to predict the held-out data (submatrix A) as the number of components that represent biological signal in our data.
 
-For computational efficiency, we explicitly used the formulation proposed by Owen and Perry, 2009 for the prediction of the held-out submatrix A:A^=B(D^(k))+Cwhere (D^(k))+ denotes the Moore-Penrose inverse of the rank k approximation of sub-matrix D. This prediction is equivalent to the procedure outlined above, provided that least-squares regression is used to identify the components of the testing mutants and testing conditions, conditional upon the training components (Owen and Perry, 2009).
+For computational efficiency, we explicitly used the formulation proposed by Owen and Perry, 2009 for the prediction of the held-out submatrix A:
+
+$$
+A^=B(D^^{(k)})^{+}C
+$$
+
+where $(D^^{(k)})^{+}$ denotes the Moore-Penrose inverse of the rank k approximation of sub-matrix D. This prediction is equivalent to the procedure outlined above, provided that least-squares regression is used to identify the components of the testing mutants and testing conditions, conditional upon the training components (Owen and Perry, 2009).
 
 We divided our mutants into fixed training and testing sets (see Division of Mutants into Training and Testing Sets) and used these sets throughout our study. As for training versus testing environments, these changed depending on our goal. For validating the number of components to include in our phenotypic model, we held out each of the 25 subtle environmental perturbations, using it as the testing environment and the other 24 for training. For making predictions of the fitness of the testing mutants in the strong environmental perturbations, we used all 25 subtle environmental perturbations as the training set, though we also show how these predictions vary when each of the 25 subtle environmental perturbations is held out from the training set.
 
-## Division of mutants into training and testing sets
+#### Division of mutants into training and testing sets
 
 In order to perform bi-cross-validation on our data, we need to divide our data into training and testing sets. Because some mutation types, in particular diploids and Ras/PKA mutants, are present more than others in our collection of mutants, we sampled the training set such that each mutation type is represented roughly equally (see Classifying mutants by mutation type). Specifically, we designated half of each mutation type, with a maximum of 20 representatives of each type, as belonging to the training set. The remaining mutants comprise the test set. For example, there are 188 diploids included in the 292 adaptive mutants. We included 20 in the training set and 168 in the test set. There are 20 IRA1 nonsense mutants included in the 292, and we included 10 in the training and 10 in the test set. Additionally, genes that are represented only once in the set of mutations are placed in the test set. This results in a training set of 60 mutants and a testing set of 232 mutants (see Supplementary file 1).
 
-## Using simulated data to validate detection threshold estimation
+#### Using simulated data to validate detection threshold estimation
 
 To further validate our approach for identifying the number of detectable phenotypic components from our data, we simulate data that consists of a known number of phenotypic components k and use our methods to estimate the number of phenotypic components detectable in the data. To simulate the phenotype space, we place 100 mutants at random in the k-dimensional phenotype space P. The coordinates of these mutants are pulled from a uniform distribution in the n-ball (e.g. the n-ball is a sphere if there are three dimensions) centered at coordinates (1, 0, …, 0) with radius 1. We center the mutants at one in the first dimension and 0 in all other dimensions in order to create data similar to our empirical data where the first component captures much of the variation in fitness. We then similarly place 50 environments at random in the k-dimensional environmental space E. Recall that this space represents the importance of each phenotype in each environment (see Figure 3 and see Model of phenotypes that contribute to fitness). The environments are pulled from a uniform distribution in the n-ball centered at (1, 1,..., 1) with a small radius of 0.1 chosen such that the environmental perturbations are subtle. Note, for computational efficiency, we use the algorithm from Marsaglia, 1972 to pull points uniformly distributed in the n-ball. Next, we calculate the fitness of each of these mutants in each environment as a linear combination of the mutant’s phenotypes weighted by the contribution of each of these phenotypes to fitness in the relevant environment (see Model of phenotypes that contribute to fitness). We then add measurement error to these fitness values to simulate the effect that measurement uncertainty has on our ability to detect phenotypic components. We simulate the data with various numbers of phenotypic components (2, 3, 4, 5, 10, 20, 30, 40, and 49) and use our methods to try to estimate the number in each set.
 
 We find that our method for identifying the number of detectable phenotypic components from the measurement error (see Estimating the detection threshold using measurement error) accurately identifies the simulated number of phenotypic components when measurement noise is very low (Figure 3—figure supplement 1A). As measurement noise increases, our approach detects fewer components, as expected due to measurement noise swamping the smallest components of signal (Figure 3—figure supplement 1A). Bi-cross-validation, which holds out each environment and half of the mutants (see Estimating the detection threshold using bi-cross-validation), performs similarly, detecting the appropriate number of phenotypic components when measurements are sufficiently precise (Figure 3—figure supplement 1B).
 
-## Clustering mutants in phenotype space
+#### Clustering mutants in phenotype space
 
 After inferring the low-dimensional model of phenotype space using SVD, we used Uniform Manifold Approximation and Projection (UMAP) to visualize how the mutants cluster in that space. For this analysis, we used the eight-component phenotypic model that we built from the 60 training mutants and the 25 subtle perturbations. We did this to avoid the model being dominated by variation in very common mutations, specifically the diploids, which make up 188/292 of our adaptive mutants. We added more mutants in the visualization by finding the location of each of the testing mutants (except diploids) by least sum of squares optimization. To do so, we fixed the coordinates for the 25 environments and found the coordinates for each mutant that best estimated its fitness in all environments. To further avoid our visualization being dominated by the diploids, we included only the diploids present in the training set in our visualization. For UMAP, we specified that 20 neighbors are used.
 
 Although UMAP tends to preserve both local and global structure (McInnes et al., 2018) it is not necessarily representative of the distance between objects in high-dimensional space. Thus, to quantify more precisely the clustering by gene observed, we explicitly compared the median pairwise distance between these apparent clusters to 10,000 randomly chosen sets of the same size and calculated empirical p-values. Because there are many diploids such that they will be the most prevalent type of mutant drawn in these randomly chosen sets, we only drew from strains that have other mutations besides or in addition to diploidy. We use the median pairwise distance, rather than the mean, to identify the typical distance between mutants in a given cluster to reduce the influence outlier mutations that might bias the mean pairwise distance.
 
-## Calculation of weighted coefficient of determination
+#### Calculation of weighted coefficient of determination
 
-Because mutants are present in unequal numbers in the test set, standard measures of variance explained are likely to be representative of our ability to predict mutants that have many barcoded lineages present in the data, for instance diploid and IRA1 nonsense mutations. These measures would be less representative of mutants with few lineages present, that is TOR/Sch9 pathway mutants. Thus, we use a measure of predictability (R~2) that weights the contribution of each mutant to overall variance explained based on the number of lineages that share its mutation type (diploids, IRA1 nonsense, IRA1 missense, GPB2, etc.). This effectively measures our ability to predict the fitness of each mutation type, rather than each mutant. For overall predictive power across all mutants and conditions, we used the measure:R~2=1−∑imutants∑jconditions1ntype(i)(fij− fij^)2∑imutants∑jconditions1ntype(i)(fij− f¯)2where  f¯  denotes the average fitness for all evaluated mutants and evaluated conditions.
+Because mutants are present in unequal numbers in the test set, standard measures of variance explained are likely to be representative of our ability to predict mutants that have many barcoded lineages present in the data, for instance diploid and IRA1 nonsense mutations. These measures would be less representative of mutants with few lineages present, that is TOR/Sch9 pathway mutants. Thus, we use a measure of predictability ($R~^{2}$) that weights the contribution of each mutant to overall variance explained based on the number of lineages that share its mutation type (diploids, IRA1 nonsense, IRA1 missense, GPB2, etc.). This effectively measures our ability to predict the fitness of each mutation type, rather than each mutant. For overall predictive power across all mutants and conditions, we used the measure:
 
-We used a similar measure to quantify the ability to predict fitness for each environment j. This is given by:Rj~2=1−∑imutants1ntype(i)(fij− fij^)2∑imutants1ntype(i)(fij− fj¯)2where  fj¯  denotes the average fitness across all evaluated mutants in condition j.
+$$
+R~^{2}=1−\frac{\sumimutants\sumjconditions\frac{1}{n_{type(i)}}(f_{ij}− f_{ij}^)^{2}}{\sumimutants\sumjconditions\frac{1}{n_{type(i)}}(f_{ij}− f¯)^{2}}
+$$
 
-Note that this measure explicitly compares a model’s fitness prediction in each environment to predictions made using the average fitness in that environment, such that if the model’s fitness prediction is the same as the average fitness, R~2 is zero. It is possible that a given model’s fitness prediction is worse than that of the average fitness in that environment, resulting in negative values of R~2. In our work, negative values occur for the one-component model when predicting the fitness of mutants in some of the strong environmental perturbations. In particular, this occurs when fitness in that environment is uncorrelated with EC fitness, which is captured by the first component, such that the EC fitness is unable to make reasonable predictions of fitness in this environment.
+where $ f¯ $ denotes the average fitness for all evaluated mutants and evaluated conditions.
+
+We used a similar measure to quantify the ability to predict fitness for each environment j. This is given by:
+
+$$
+R_{j}~^{2}=1−\frac{\sumimutants\frac{1}{n_{type(i)}}(f_{ij}− f_{ij}^)^{2}}{\sumimutants\frac{1}{n_{type(i)}}(f_{ij}− f_{j}¯)^{2}}
+$$
+
+where $ f_{j}¯ $ denotes the average fitness across all evaluated mutants in condition j.
+
+Note that this measure explicitly compares a model’s fitness prediction in each environment to predictions made using the average fitness in that environment, such that if the model’s fitness prediction is the same as the average fitness, $R~^{2}$ is zero. It is possible that a given model’s fitness prediction is worse than that of the average fitness in that environment, resulting in negative values of $R~^{2}$. In our work, negative values occur for the one-component model when predicting the fitness of mutants in some of the strong environmental perturbations. In particular, this occurs when fitness in that environment is uncorrelated with EC fitness, which is captured by the first component, such that the EC fitness is unable to make reasonable predictions of fitness in this environment.
 
 Note that we observe qualitatively similar results to this measure when we use a standard variance explained measure and exclude diploids, which dominate the test set (see Figure 4—figure supplement 4).
 
-## Evaluating the effect of the number of environments and mutations used
+#### Evaluating the effect of the number of environments and mutations used
 
 Because the detection of phenotypic components is dependent on the choice of environments and mutations used, it is important to understand how these influence the number of components we detect and our ability to predict fitness in held-out data.
 
@@ -351,21 +627,27 @@ To evaluate how the number of subtle environments included in the training of th
 
 To understand how the number of mutations included in the training set affects the number of detected components, we used SVD to infer phenotypic models using the full set of subtle environmental perturbations and random subsets of the 60 training mutants. We found that as we increased the number of mutants in the training set, the number of components and the ability of the model to predict the fitness of test mutants in the strong environmental perturbations increased, ranging from explaining on average 65% of weighted variance with only 10 mutants in the training set to explaining 74% of weighted variance with the full training set. To test if this pattern was primarily driven by the number of mutants or instead the number of distinct mutation types, we repeated this process, instead subsampling random sets of mutation types (see Classifying mutations by mutation type). Here, we find a strong relationship between the number of mutation types included in the training set and the amount of weighted variance predicted for the test mutants in the strong environmental perturbations. We explain on average 50% of weighted variance with only two mutation types, compared to the full 74% of weighted variance with the full training set (Figure 4—figure supplement 2). In addition, despite this general trend that the inclusion of more mutation types increases the ability to predict fitness of held-out data, there is relatively little variation in overall predictive accuracy when any single mutation type is excluded, suggesting the model’s predictive accuracy is robust to the inclusion of any particular mutation type in the training set.
 
-## Calculating mutant-specific improvement
+#### Calculating mutant-specific improvement
 
 It is possible that all 292 of our adaptive mutants each affect all eight of the phenotypic components in our low-dimensional model; however, it is also possible that some mutants influence some phenotypes more strongly than others. In order to quantify how much a specific component lends to the ability to predict the fitness of each mutant in each environment, we need a metric to calculate the difference in predictive accuracy for the model with and without this component. Specifically, to assess the impact of the inclusion of the kth component, we compared the prediction accuracy of the k-component model to the model that includes the first k-1 components.
 
 Because fitness estimates vary in their reliability due to finite coverage and other sources (see Noise model section), we should factor this uncertainty in our measure of prediction improvement. For example, a small improvement in prediction accuracy for a very uncertain fitness estimate is less meaningful than the same improvement in prediction accuracy for a fitness estimate that we are quite confident in. Thus, we scale the difference in prediction accuracy by the amount of uncertainty in the underlying fitness estimate.
 
-This gives us the measure of improvement in the estimate of the fitness of mutant i in condition j due to the inclusion of the nth component as:Iijk=( fij^k−1−fij)−( fij^k−fij)ϵijwhere fij^k and fij^k−1 represent the estimate of the fitness of mutant i in condition j for the model with k and k-1 components, respectively. fij and ϵij represent the measured fitness value and measurement uncertainty for the fitness of mutant i in condition j, respectively.
+This gives us the measure of improvement in the estimate of the fitness of mutant i in condition j due to the inclusion of the nth component as:
 
-## Data and code availability
+$$
+I_{ij}^{k}=\frac{( f_{ij}^^{k−1}−f_{ij})−( f_{ij}^^{k}−f_{ij})}{ϵ_{ij}}
+$$
 
-## Data resource
+where $f_{ij}^^{k}$ and $f_{ij}^^{k−1}$ represent the estimate of the fitness of mutant i in condition j for the model with k and k-1 components, respectively. $f_{ij}$ and $ϵ_{ij}$ represent the measured fitness value and measurement uncertainty for the fitness of mutant i in condition j, respectively.
+
+### Data and code availability
+
+#### Data resource
 
 The raw Illumina sequencing data for the fitness measurement assays conducted in this study can be found under NIH BioProject: PRJNA641718. Sequencing data previously published in Venkataram et al., 2016a can be found under NIH BioProject: PRJNA310010. Sequencing data previously published in Li et al., 2018 can be found under NIH BioProject: PRJNA388215.
 
-## Code
+#### Code
 
 The software repository for the barcode counting code can be found at Venkataram, 2020.
 

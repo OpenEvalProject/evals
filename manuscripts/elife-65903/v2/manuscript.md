@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The crystal structure of the light-gated anion channel Gt ACR1 reported in our previous Research Article (Li et al., 2019) revealed a continuous tunnel traversing the protein from extracellular to intracellular pores. We proposed the tunnel as the conductance channel closed by three constrictions: C1 in the extracellular half, mid-membrane C2 containing the photoactive site, and C3 on the cytoplasmic side. Reported here, the crystal structure of bromide-bound Gt ACR1 reveals structural changes that relax the C1 and C3 constrictions, including a novel salt-bridge switch mechanism involving C1 and the photoactive site. These findings indicate that substrate binding induces a transition from an inactivated state to a pre-activated state in the dark that facilitates channel opening by reducing free energy in the tunnel constrictions. The results provide direct evidence that the tunnel is the closed form of the channel of Gt ACR1 and shed light on the light-gated channel activation mechanism.
+The crystal structure of the light-gated anion channel GtACR1 reported in our previous Research Article (Li et al., 2019) revealed a continuous tunnel traversing the protein from extracellular to intracellular pores. We proposed the tunnel as the conductance channel closed by three constrictions: C1 in the extracellular half, mid-membrane C2 containing the photoactive site, and C3 on the cytoplasmic side. Reported here, the crystal structure of bromide-bound GtACR1 reveals structural changes that relax the C1 and C3 constrictions, including a novel salt-bridge switch mechanism involving C1 and the photoactive site. These findings indicate that substrate binding induces a transition from an inactivated state to a pre-activated state in the dark that facilitates channel opening by reducing free energy in the tunnel constrictions. The results provide direct evidence that the tunnel is the closed form of the channel of GtACR1 and shed light on the light-gated channel activation mechanism.
 
 ## Introduction
 
@@ -34,15 +34,144 @@ To address these questions, here we report the crystal structure of bromide-boun
 
 ## Results
 
-## Overall structure of bromide-bound GtACR1
+### Overall structure of bromide-bound GtACR1
 
 Bromide-bound GtACR1 crystals were obtained in the same conditions and pH used for the apo form structure, except for replacement of NaCl with NaBr in both protein purification and crystallization buffers. Avoiding radiation damage, small wedge data sets were collected using the in meso in situ serial data collection method (IMISX) (Huang et al., 2018). A detailed description of data collection and processing is provided in 'Materials and methods'. The structure of bromide-bound GtACR1 was determined at 3.2 Å resolution by molecular replacement (MR) using the apo form structure (PDB code 6EDQ) as the model (Table 1).
 
+**Table 1.**
+ Crystallographic data and refinement of the bromide-bound GtACR1 structure*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PDB ID</th>
+      <th>7L1E</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P 21</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>61.66, 77.64, 73.63</td>
+    </tr>
+    <tr>
+      <td>α, β. γ (°)</td>
+      <td>90, 95.59, 90</td>
+    </tr>
+    <tr>
+      <td>Beamline</td>
+      <td>SLS-X06SA</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.91882</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.15–3.20 (3.28–3.20)†</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.56 (2.81)</td>
+    </tr>
+    <tr>
+      <td>I /σ (I)</td>
+      <td>2.84 (0.54)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>95.6 (96.0)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>4.84 (3.31)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>97.5 (13.4)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>41.73–3.2 (3.28–3.20)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections</td>
+      <td>11,054 (800)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.24/0.29</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.730</td>
+    </tr>
+    <tr>
+      <td>B-factor</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Proteins</td>
+      <td>52.45</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>51.31</td>
+    </tr>
+    <tr>
+      <td>H2O</td>
+      <td>33.96</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.18</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.82</td>
+    </tr>
+    <tr>
+      <td>MolProbity Clash score</td>
+      <td>12.22</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data processing and refinement statistics are reported with Friedel pairs merged.†Values in parentheses are for the highest resolution shell._
+
 The bromide-bound GtACR1 exhibits a similar homodimeric overall structure as the apo form (rmsd: ~0.6 Å by comparing Cα from residues 1 to 295) (Figure 1A). All 7-helices and trans-configured retinal moieties are well superimposed, including the inter-subunit disulfide bridge stabilizing the N-terminus fragments of the two protomers on the extracellular surface. The two protomers, chain A and chain B, are also well superimposed with an rmsd of ~0.5 Å. Each protomer exhibits a continuous tunnel extending from the extracellular to intracellular surfaces of the protein similar to that seen in the apo form structure (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig1-v2.jpg)
+
+**Figure 1.:** (A) Superimposition of GtACR1 apo (orange, PDB 6EDQ) and bromide-bound (green) structures; one bromide ion (red sphere) is located at the cytoplasmic entry of the intramembrane tunnel (grey tube, predicted using the program CAVER [Chovancova et al., 2012] of each promoter). All-trans-retinal moieties are depicted as blue sticks. (B–C) Tunnel profiles of GtACR1 chain A (B) and chain B (C) predicted by CAVER: GtACR1 apo form (black line); bromide-bound form (red line). The sizes of chloride and bromide ions are indicated as dashed lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Bromide ion (dark red sphere) in the binding site (grey sticks) overlayed with the composite omit map depicted as magenta mesh in chain A (A) contoured at +2σ and chain B (B) contoured at +1.5σ. The composite omit map was calculated using PHENIX (Adams et al., 2010). (C–D) Fo-Fc difference map generated by the refinement of a water molecule at the bromide position showing positive electron density depicted as green mesh (contoured at +3σ) at the water position; (E–F) Fo-Fc difference map generated by the refinement of a bromide ion showing no positive (contoured at +3σ) and negative (contoured at −3σ, red mesh) electron density at the bromide position. 2Fo-Fc maps (contoured at +1σ) were depicted as blue mesh in (C–F).
 
 As seen from comparison of the tunnel profile diameters of the apo- and bromide-bound structures (Figure 1B–C), bromide binding enlarges the tunnel in constriction C3 on the cytoplasmic side of the tunnel, where it is bound (Figure 1A), and also in part of C2, adjacent to the binding site, and the more distant constriction C1 on the extracellular side of the tunnel. The widened constriction regions indicate a pre-activated conformation exhibiting a closed channel with fractional transition to an open-channel state. Despite the similar tunnel profiles of the two protomers, the changes in chain A (Figure 1B) are more profound than in chain B (Figure 1C), particularly near C1, indicating conformational differences between the tunnels of the two chains.
 
-## Bromide binding at the tunnel entry
+### Bromide binding at the tunnel entry
 
 A bromide ion was found at the cytoplasmic port of the tunnel in each protomer (Figure 1A). Based on the composite omit map, the signal of bromide in chain A is stronger than in chain B (Figure 1—figure supplement 1A–B). A priori, given the larger number of electrons in Br (Z = 35), it would be difficult to mistake it for a water molecule (Z = 10), but to test this possibility directly, the bromide ion was replaced with a water molecule and the structure refined using PHENIX (Adams et al., 2010). The refinement showed a strong positive electron density at the bromide position in the Fo-Fc difference map (Figure 1—figure supplement 1C–D) and it was diminished only when a bromide ion was placed at that position (Figure 1—figure supplement 1E–F). This evidence excludes a water molecule as responsible for the electron density at the position. From these data and additional evidence presented below, we conclude a bromide ion resides at the tunnel entry in each protomer.
 
@@ -50,25 +179,33 @@ The bromide-binding site is formed by three cyclic residues: Pro58 from the cyto
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig2-v2.jpg)
 
-**Figure 2.:** GtACR1 and electrophysiological properties of site mutants.(A) A bromide ion (magenta sphere) stabilized by three cyclic residues (green sticks) via H-bond interaction (black dashed line) with superimposition of the apo form structure (orange). (B) Functional probing of the bromide-binding site residues by patch clamp analysis of their mutants: Left: Rectification index (RI), defined as the ratio of peak photocurrent amplitudes recorded at +60 and −60 mV at the amplifier output. RI > 1 by one-sample Wilcoxon signed-rank test: *p<0.05, **p<0.01, n.s. not significant (p>0.05). Middle: Peak current at 60 mV. Comparison with the wild-type by Mann-Whitney test: *p<0.005. Right: Reversal potential at the reduced Cl- concentration in the bath. Comparison with the wild-type by Mann-Whitney test: n.s., not significant (p>0.05).  Figure 2—source data 1.
+**Figure 2.:** (A) A bromide ion (magenta sphere) stabilized by three cyclic residues (green sticks) via H-bond interaction (black dashed line) with superimposition of the apo form structure (orange). (B) Functional probing of the bromide-binding site residues by patch clamp analysis of their mutants: Left: Rectification index (RI), defined as the ratio of peak photocurrent amplitudes recorded at +60 and −60 mV at the amplifier output. RI > 1 by one-sample Wilcoxon signed-rank test: *p<0.05, **p<0.01, n.s. not significant (p>0.05). Middle: Peak current at 60 mV. Comparison with the wild-type by Mann-Whitney test: *p<0.005. Right: Reversal potential at the reduced Cl- concentration in the bath. Comparison with the wild-type by Mann-Whitney test: n.s., not significant (p>0.05).
 
 Our previous results implicated Pro58 in gating of GtACR1, in that substitution of Pro58 by Glu reduced photocurrent amplitude, altered the kinetics of channel closing, and caused strong outward rectification of the current-voltage dependence (Li et al., 2019; Sineshchekov et al., 2019). We observed similar effects in W246E and W250E mutants in the bromide-binding site (Figure 2B), in that photocurrent amplitudes were significantly reduced compared to the wild type and outward rectification was increased (Figure 2B). None of these three substitutions with Glu reduced the selectivity for anions, as assessed by reversal potential measurements (Figure 2B). Based on the structure, the two tryptophan residues, Trp246 and Trp250, appear to have different roles in bromide binding; for example, compared to distant Trp246 moving its aromatic ring away from the bromide, Trp250 is close to the anion and forms an H-bond interaction between its indole NH and the bromide. In further examination of this bromide binding conformation, we found that W250F shows reduction of the current amplitude by 50%, whereas W246F behaves like WT (Figure 2B). These results are consistent with the structural observations in which Trp250, but not Trp246, stabilizes bromide via H-bond interaction.
 
-## Assesment of bromide binding by FTIR
+### Assesment of bromide binding by FTIR
 
 To test for consequences of halide binding in the dark state with an alternative method, we investigated the effect of different halide anions on GtACR1 structure by measuring FTIR difference spectra at 80 K (see 'Materials and methods'). As previously shown, FTIR difference spectra of GtACR1 membranes recorded at 80 K reflect the photoinduced transition from the dark ground state to K and L-like intermediates formed upon illumination (Yi et al., 2017). Negative bands in the spectra measure vibrational frequencies of normal modes in the dark state structure, whereas positive bands measure photoinduced appearance of altered vibrational frequencies in the photoproducts. Figure 3A shows GtACR1 FTIR difference spectra recorded for GtACR1 multilamellar membrane films prepared using NaF, NaCl, or NaBr solutions. The major bands in the 1500–1600 cm−1 region reflect the ethylenic (C=C) stretch mode of the retinylidene chromophore in GtACR1 (Yi et al., 2017). Changes in γC=C in microbial rhodopsins entail alterations in the electron conjugation of the retinylidene polyene chain (Bergo et al., 2004; Bergo et al., 2002; Bergo et al., 2003; Smith et al., 1987a). Notably, the frequency of the negative ethylenic band (γC=C) undergoes an upshift from 1529 cm−1 in NaF to 1533 cm−1 in NaBr (Figure 3B). The significant upward shift of 3 and 4 cm−1 from that of Cl- and F-, respectively, by Br- in the dark state, provides compelling evidence for Br- binding in the dark. This Br- induced shift reveals an alteration in charge conjugation in the polyene chain of the retinylidene chromophore due to Br- binding. In the case of NaBr the frequency upshift accentuates the appearance of a negative feature near 1520 cm−1 that appears as a shoulder in the case of NaF and NaCl (Figure 3B). We conclude that Br- interacts with GtACR1 in the unilluminated ground state.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig3-v2.jpg)
 
-**Figure 3.:** GtACR1 detected by FTIR.(A) Comparison of FTIR difference spectra recorded at 80 K of GtACR1 hydrated multilamellar films formed using different halides. Spectra shown are the average of >5 individual difference spectra (see 'Materials and methods'). The scale bar shown is for the NaBr difference spectrum. (B) Comparison of FTIR difference spectra of GtACR1 in the ethylenic C=C stretch region. All spectra shown are from (A) (purple, green, and red plots) except the NaBr difference spectrum (blue plot) which was recorded on the same film after 3 days to evaluate the reproducibility of the FTIR measurement. The scale bar shown is for the NaBr difference spectrum (red plot).
+**Figure 3.:** (A) Comparison of FTIR difference spectra recorded at 80 K of GtACR1 hydrated multilamellar films formed using different halides. Spectra shown are the average of >5 individual difference spectra (see 'Materials and methods'). The scale bar shown is for the NaBr difference spectrum. (B) Comparison of FTIR difference spectra of GtACR1 in the ethylenic C=C stretch region. All spectra shown are from (A) (purple, green, and red plots) except the NaBr difference spectrum (blue plot) which was recorded on the same film after 3 days to evaluate the reproducibility of the FTIR measurement. The scale bar shown is for the NaBr difference spectrum (red plot).
 
 While the different halides alter the retinylidene γC=C band in the dark and L-like states, the all-trans to 13-cis isomerization that occurs upon light absorption and induces formation of the K and L-like intermediates appears to be unaffected. The unperturbed photoisomerization reaction, consistent with the photocurrent function observed with each of the three halides (Govorunova et al., 2015), is indicated by the absence of frequency shift differences in the negative and positive bands in the mixed C-C stretch fingerprint region from 1100 to 1300 cm−1 for the different halides (Figure 3) since these band frequencies (γC-C) are highly sensitive to the retinal isomeric configuration (Smith et al., 1987a; Smith et al., 1987b).
 
-## Conformational changes of the C1 and C3 constrictions
+### Conformational changes of the C1 and C3 constrictions
 
 Despite the similar overall structure to that of the apo form, conformational changes were observed at the C1 and C3 constrictions within the tunnel. Pro58 is an important component of C3. In the apo form structure, Pro58, together with Leu108, Ala61, and Leu245, constrains the cytoplasmic port, leading to the cytoplasmic half of the tunnel narrowing to 3.6 Å in diameter (Li et al., 2019). In the bromide-bound structure, the presence of bromide pushes Pro58 outward by ~1.8 Å (Figure 2A). As a result, the cytoplasmic half of the tunnel is broadened by 1 Å in diameter in both protomers (Figure 1B-C).
 
 Conformational changes were observed in the extracellular half of the tunnel between chain A and chain B (Figure 1B–C). In the apo form structure, the C1 constriction is stabilized by a salt-bridge formed between Arg94 and Glu223 near the extracellular surface (Li et al., 2019). In the bromide-bound structure, chain B exhibits a similar conformation of C1 as that in the apo form. In contrast, Arg94 undergoes salt-bridge switching along the tunnel in chain A (Figure 4A). The side-chain of Arg94 is flipped by ~180o to form an alternative salt-bridge with Asp234 in the photoactive site (Figure 4A), resulting in modest relaxation (~1 Å in diameter) of the C1 constriction (Figure 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig4-v2.jpg)
+
+**Figure 4.:** (A) Superimposition of chain A (green) and chain B (pink) of the bromide-bound GtACR1 structure showing salt-bridge switching (black dashed lines) of Arg94 from the extracellular Asp223 to Asp234 near the mid-membrane retinal (blue sticks). Arg94_A and Arg94_B designate Arg94 in chains A and B, respectively. (B) Superimposition of chain A of the bromide-bound GtACR1 (green) and Cl-pump ClR (red, PDB: 5G2A) structures showing a putative halide-binding site in the extracellular half of the tunnel of GtACR1. In the ClR structure, a chloride ion (maroon sphere) is stabilized via H-bond interactions (black dashed lines). The residues are labelled as in GtACR1 and analogous residues for ClR are indicated in parentheses.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65903/elife-65903-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Arg94 in chain A of GtACR1 forms a salt-bridge with Asp234 and a H-bond with a water molecule. (B) Arg95 is stabilized by a H-bond network with four polar residues and three water molecules. Salt-bridge and H-bonds are depicted as dashed lines.
 
 Arg94 is highly conserved in the microbial rhodopsin family and it is critical for anion conductance of GtACR1. The mutation R94A or R94E nearly abolished anion conductance (Li et al., 2019; Sineshchekov et al., 2019). Arg94 is the only positively charged residue in the extracellular half of the tunnel. It may enable transfer of anions across the extracellular half of the tunnel via charge-charge interaction. We found that this side chain rotation enables Arg94 and its neighboring residues to form a conformation nearly identical to the chloride-binding site of the Cl- pump ClR (Figure 4B). In the structure of ClR, a chloride ion (site 1) is bound between Arg95 and the Schiff base via H-bonds and salt-bridges. Based on the similar chemical conformations (Figure 4B), it is possible that Arg94 rotates its side chain to form an anion-binding site with the Schiff base in GtACR1.
 
@@ -90,32 +227,140 @@ FTIR data show that bromide binding in the dark significantly alters the electro
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Guillardia theta)</td>
+      <td>GtACR1</td>
+      <td>Synthetic</td>
+      <td>GenBank: KP171708</td>
+      <td>Humanized gene</td>
+    </tr>
+    <tr>
+      <td>Cell line (Pichia pastoris)</td>
+      <td>Pichia pastoris</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich: 89070101, RRID:CVCL_0549</td>
+      <td>Methylotrophic yeast</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL- 1573, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cellfectin II Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No.: 10362100</td>
+      <td>https://www.thermofisher.com/order/catalog/product/10362100</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ScreenFectA transfection reagent</td>
+      <td>Waco Chemicals USA</td>
+      <td>Cat. No.: 29973203</td>
+      <td>http://www.ereagent.com/uh/Shs.do?now=1544459665328</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPIC9K</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No.: V175–20</td>
+      <td>https://www.thermofisher.com/order/catalog/product/V17520#/V17520</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No.: V79020</td>
+      <td>https://www.thermofisher.com/order/catalog/product/V79020</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF Resource for Biocomputing, Visualization, and Bioinformatics</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID:20124702</td>
+      <td>RRID:SCR_014224</td>
+      <td>http://www.phenixonline.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:15572765</td>
+      <td>RRID:SCR_014222</td>
+      <td>http://www.biop.ox.ac.uk/coot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2016</td>
+      <td>OriginLab</td>
+      <td></td>
+      <td>https://originlab.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_01123</td>
+      <td>http://www.moleculardevices.com/products/software/pclamp.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Protein expression and purification of GtACR1 expressed in Pichia pastoris followed the procedure described (Li et al., 2019). The eluted protein was further purified using a Superdex Increase 10/300 GL column (GE Healthcare, Chicago, IL) equilibrated with buffer containing 350 mM NaBr, 5% glycerol, 0.03% DDM, 20 mM MES, pH 5.5, thereby replacing Cl- with Br- in the micelle suspension. Protein fractions with an A280/A515 absorbance ratio of ~1.9 were pooled, concentrated to ~20 mg/ml using a 100 K MWCO filter, flash-frozen in liquid nitrogen, and stored at −80°C until use. Molar protein concentration was calculated using the absorbance value at 515 nm divided by the extinction coefficient 45,000 M−1cm−1.
 
-## Protein crystallization
+### Protein crystallization
 
 Crystallization was carried out using the in meso method as with the apo protein (Li et al., 2019). The lipidic mesophase (lipidic cubic phase, LCP) sample was obtained by mixing 40 µl of GtACR1 protein with 60 µl monoolein (MO) (Sigma, St. Louis, MO; or Nu-chek, Waterville, MN) using two syringes until the mixture became transparent. Crystallization trials were set up using both 96-well LCP glass sandwich plates (Molecular Dimensions, Maumee, OH) and IMISX plates (MiTeGen), which are designed to perform in meso in situ serial X-ray crystallography (Huang et al., 2018; Huang et al., 2016) with 150 nl aliquots of the protein-mesophase mixture and overlaid with 1.5 µl of precipitant solution using a Gryphon crystallization robot (Art Robbins, Sunnyvale, CA). The plates were covered by aluminum foil to maintain a dark environment and incubated at room temperature. Bromide-bound GtACR1 was crystallized in essentially the same conditions and pH as previously used for the apo form (Li et al., 2019) except 100 mM NaBr bromide was supplied in both protein purification and crystallization buffers. The most highly diffracting crystals of ~20 µm in size were obtained after one month from a crystallization screen containing 15% 2-methyl-2,4-pentanediol (MPD), 0.1 M NaBr, and buffer of 0.1 MES, pH 5.5, or Na-acetate, pH 5.5. LCP crystals from glass plate were harvested using micromesh loops (MiTeGen, Ithaca, NY), and the wells with crystals-laden LCP in IMISX plate were retrieved using a glass cutter and scissors and mounted using 3D-printed holders (Huang et al., 2016; Huang et al., 2015). All the samples were flash-cooled in liquid nitrogen without any additional cryoprotectant and stored in uni-pucks (MiTeGen, Ithaca, NY) for X-ray diffraction. An improvement over our previous work was setting up the crystallization in the IMISX plates and shipping the plates to PSI. This step prevents potential damage to the crystals during harvesting and facilitates high-throughput screening in the beamline.
 
-## Data collection and processing
+### Data collection and processing
 
 X-ray diffraction data collections were performed on protein crystallography beamlines X06SA-PXI at the Swiss Light Source (SLS), Villigen, Switzerland. Data were collected with a 10 × 10 µm2 micro-focused X-ray beam of 13.49 keV (0.91882 Å in wavelength) at 100 K using SLS data acquisition software suites (DA+) (Wojdyla et al., 2018). Continuous grid-scans (Wojdyla et al., 2018) were used to locate crystals in frozen LCP samples both from conventional loop and IMISX samples (Huang et al., 2016). The crystals harvested on loop were collected by the rotation method with 0.2 s exposure time, 0.2o oscillation for data collection and 30o wedge for each crystals. The sample using IMISX setup was measured by an automated serial data collection protocol (CY+) as described (Basu et al., 2019) using the following parameters: 0.2o oscillation and 0.1 s exposure time for data collection with 10–20o wedge for each crystal. 217 data sets were collected using the EIGER 16M detector operated in continuous/shutterless data collection mode. Data were processed with XDS and scaled and merged with XSCALE (Kabsch, 2010a; Kabsch, 2010b). Isomorphic data sets were selected using XDSCC12 (Assmann et al., 2020). The selection is first performed using a multi-dimensional scaling procedure which identifies data sets with large non-isomorphism relative to clusters of other data sets, and then further selection based on the ΔCC1/2. The ΔCC1/2 represents the influence of a set of reflections on the overall CC1/2 of the merged data. By this mean, 31 IMISX data sets and five data sets obtained from loop-mounted samples were selected and then merged to a final complete data set yielding a 3.2 Å resolution structure. Data collection and processing statistics are provided in Table 1.
 
-## Structure determination and analysis
+### Structure determination and analysis
 
 The structure of bromide-bound GtACR1 was determined by the molecular replacement (MR) method using 6EDQ (Li et al., 2019) as the search model with the program Phaser (McCoy et al., 2007). The structure was refined using PHENIX (Adams et al., 2010) and model building was completed manually using COOT (Emsley and Cowtan, 2004). The final structure yields a Rwork/Rfree factor of 0.26/0.29. Refinement statistics are reported in Table 1. The structure factors and coordinates have been deposited in the Protein Data Bank (PDB entry code: 7L1E). Figures of molecular structures were generated with PyMOL (http://www.pymol.org). We analyzed the halide tunnel using the program CAVER with 0.9 Å as the detecting probe (Chovancova et al., 2012).
 
-## Electrophysiology of GtACR1 mutants
+### Electrophysiology of GtACR1 mutants
 
 GtACR1 mutants were characterized by whole-cell patch clamp recording as described in detail in our previous report (Li et al., 2019). Briefly, the wild-type expression construct was cloned into the mammalian expression vector pcDNA3.1 (Life Technologies, Carlsbad, CA) in frame with an EYFP (enhanced yellow fluorescent protein). Mutations were introduced using a QuikChange XL site-directed mutagenesis kit (Agilent Technologies, Santa Clara, CA) and verified by DNA sequencing. HEK293 (human embryonic kidney) cells were transfected using the ScreenFectA transfection reagent (Waco Chemicals USA, Richmond, VA). All-trans-retinal (Sigma, St. Louis, MO) was added at the final concentration 4 µM immediately after transfection. Photocurrents were recorded 48–72 hr after transfection in whole-cell voltage clamp mode at room temperature (25°C) with an Axopatch 200B amplifier (Molecular Devices, Union City, CA) and digitized with a Digidata 1440A using pClamp 10 software (both from Molecular Devices). Patch pipettes were fabricated from borosilicate glass and filled with the following solution (in mM): KCl 126, MgCl2 2, CaCl2 0.5, EGTA 5, HEPES 25, and pH 7.4. The standard bath solution contained (in mM): NaCl 150, CaCl2 1.8, MgCl2 1, glucose 5, HEPES 10, pH 7.4. To test for changes in the permeability for Cl-, this ion in the bath was partially replaced with non-permeable aspartate (the final Cl- concentration 5.6 mM). For each cell, a single value of the Erev was calculated. The holding potential values were corrected for liquid junction potentials calculated using the Clampex built-in LJP calculator. Continuous light pulses were provided by a Polychrome V light source (T.I.L.L. Photonics GMBH, Grafelfing, Germany) at 15 nm half-bandwidth in combination with a mechanical shutter (Uniblitz Model LS6, Vincent Associates, Rochester, NY; half-opening time 0.5 ms). The maximal light intensity at the focal plane of the objective lense was 7.7 mW mm−2 at 515 nm.
 
 Batches of culture were randomly allocated for transfection with a specific mutant; no masking (blinding) was used. Individual transfected HEK293 cells were selected for patching by inspecting their tag fluorescence; non-fluorescent cells were excluded, as were cells for which we could not establish a gigaohm seal. Results obtained from different individual cells were considered as biological replicates. The raw data obtained in individual cells are shown as diamonds. Sample size was estimated from previous experience and published work on a similar subject, as recommended by the NIH guidelines. No outliers were excluded. Normality of the data was not assumed, and therefore non-parametric statistical tests were used as implemented in OriginPro 2016 software; P values > 0.05 were considered not significant.
 
-## Cell lines
+### Cell lines
 
 Only a commercially available cell line authenticated by the vendor (HEK293 from ATCC) was used; no cell lines from the list of commonly misidentified cell lines were used. The absence of micoplasma contamination was verified by Visual-PCR mycoplasma detection kit (GM Biosciences, Frederick, MD).
 
-## FTIR difference spectroscopy
+### FTIR difference spectroscopy
 
 The expression, purification, and reconstitution of GtACR1 into proteolipid membranes using E. coli polar lipids was performed as described previously (Yi et al., 2017). The GtACR1 membranes were washed and centrifuged 5x in 1M NaF, NaCl and NaBr solutions and the pellet finally resuspended in a solution of 100 mM NaF, NaCl, or NaBr. Multilamellar films were formed by drying a small drop of this suspension on a BaF window which is rehydrated with a drop of water in a sealed cell. FTIR difference measurements at 80 K were performed as previously described (Yi et al., 2017). All spectra were recorded using a Bio-Rad FTS-60A FTIR spectrometer (Agilent Technologies, Inc) equipped with a liquid nitrogen cooled HgCdTe detector. Each acquired spectrum consisted of 200 scans (approximately one-minute total acquisition time) recorded at 4 cm−1 resolutions. Difference spectra consisted of an average of at least five difference spectra recorded immediately before illumination each subtracted from a spectrum recorded during illumination using 505 nm LED light. In order to repeat this measurement and average multiple differences, the sample was photoreversed after illumination with 590 nm light (Yi et al., 2017).

@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0495fxg12 Trypanosome Transmission Group, Trypanosome Cell Biology Unit, Institut Pasteur, Université Paris Cité Paris France
-2. https://ror.org/02en5vm52 Sorbonne Université, ED515 Complexité du Vivant Paris France
+1. Trypanosome Transmission Group, Trypanosome Cell Biology Unit, Institut Pasteur, Université Paris Cité Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+2. Sorbonne Université, ED515 Complexité du Vivant Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 3. Parasitology Unit, Institut Pasteur of Guinea Conakry Guinea
 
 † Corresponding author
 
 ## Abstract
 
-Schuster et al . demonstrated that bloodstream slender forms of African trypanosomes are readily transmissible to young tsetse flies where they can complete their complex life cycle (Schuster et al., 2021). In their experimental conditions, a single slender parasite was sufficient for productive infection. Here, we compared the infectivity of slender and stumpy bloodstream forms in adult flies with a mature immune system, and without using any chemical compounds that would alter the insect immune response and/or promote the infection. After ingestion of slender forms, infected flies were observed only in 1 out of 24 batches of non-immunocompetent teneral flies and with a high number of parasites. In contrast, infected flies were detected in 75% (18/24) of the batches infected with stumpy parasites, and as few as 10 stumpy parasites produced mature infections in immune adult flies. We discuss that, although Schuster et al. have demonstrated the intrinsic capacity of slender form trypanosomes to infect young and naive tsetse flies, highlighting the remarkable plasticity and adaptability of these protists, this phenomenon is unlikely to significantly contribute to the epidemiology of African trypanosomiases. According to both experimental and field observations, stumpy forms appear to be the most adapted forms for African trypanosome transmission from the mammalian host to the tsetse fly vector in natural conditions.
+Schuster et al. demonstrated that bloodstream slender forms of African trypanosomes are readily transmissible to young tsetse flies where they can complete their complex life cycle (Schuster et al., 2021). In their experimental conditions, a single slender parasite was sufficient for productive infection. Here, we compared the infectivity of slender and stumpy bloodstream forms in adult flies with a mature immune system, and without using any chemical compounds that would alter the insect immune response and/or promote the infection. After ingestion of slender forms, infected flies were observed only in 1 out of 24 batches of non-immunocompetent teneral flies and with a high number of parasites. In contrast, infected flies were detected in 75% (18/24) of the batches infected with stumpy parasites, and as few as 10 stumpy parasites produced mature infections in immune adult flies. We discuss that, although Schuster et al. have demonstrated the intrinsic capacity of slender form trypanosomes to infect young and naive tsetse flies, highlighting the remarkable plasticity and adaptability of these protists, this phenomenon is unlikely to significantly contribute to the epidemiology of African trypanosomiases. According to both experimental and field observations, stumpy forms appear to be the most adapted forms for African trypanosome transmission from the mammalian host to the tsetse fly vector in natural conditions.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Pleomorphic T. b. brucei bloodstream forms were either maintained in culture at 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91602/elife-91602-fig1-v1.jpg)
 
-**Figure 1.:** Comparison of (A) midgut and (B) salivary gland infection rates in teneral (T) vs. adult (A) tsetse flies (batches of 50 flies) infected with 10–100 (circles, three independent experiments), 100–1000 (squares, four independent experiments), or 1000–10,000 (triangles, five independent experiments) parasites in the slender (SL in blue) or stumpy (ST in red) forms.Figure 1—source data 1.Figure 1.
+**Figure 1.:** Comparison of (A) midgut and (B) salivary gland infection rates in teneral (T) vs. adult (A) tsetse flies (batches of 50 flies) infected with 10–100 (circles, three independent experiments), 100–1000 (squares, four independent experiments), or 1000–10,000 (triangles, five independent experiments) parasites in the slender (SL in blue) or stumpy (ST in red) forms.
 
 After ingestion of slender forms, infected flies were observed in only 1 batch out of 24. This occurred in not yet fully immunocompetent teneral flies and with the highest number of ingested parasites (1000–10,000 parasites). In contrast, midgut and salivary glands infected flies were observed in 75% (18/24) and 62.5% (15/24) of the batches infected with stumpy parasites, respectively. As few as 10 stumpy parasites produced mature infections in immunocompetent adult flies, and the infection rates were similar whatever the amounts of stumpy forms ingested. In more susceptible nonimmune teneral flies, the infection rates were increasing with the number of stumpy forms ingested.
 
@@ -40,7 +40,7 @@ Differences between the strain clones, the cell culture conditions, and/or the f
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91602/elife-91602-fig2-v1.jpg)
 
-**Figure 2.:** N-acetyl-glucosamine promotes trypanosome infection in teneral flies.Comparison of midgut infection rates in teneral vs. adult tsetse flies (blue triangles indicate batches of 50 flies, N=3 biological replicates) infected with 1000–10,000 slender parasites with (+) or without (-) N-acetyl-glucosamine (GlucNAc) supplement in the infective meal containing 105 slender parasites/ml (equivalent to 1000–10,000 slender parasites per meal).
+**Figure 2.:** Comparison of midgut infection rates in teneral vs. adult tsetse flies (blue triangles indicate batches of 50 flies, N=3 biological replicates) infected with 1000–10,000 slender parasites with (+) or without (-) N-acetyl-glucosamine (GlucNAc) supplement in the infective meal containing 105 slender parasites/ml (equivalent to 1000–10,000 slender parasites per meal).
 
 ## Discussion
 
@@ -58,20 +58,20 @@ Schuster et al. have demonstrated the intrinsic capacity of slender form trypano
 
 ## Materials and methods
 
-## Strains, culture, and in vitro differentiation
+### Strains, culture, and in vitro differentiation
 
 The AnTat 1.1E Paris pleomorphic strain of T. b. brucei was derived from a strain originally isolated from a bushbuck in Uganda in 1966 (Le Ray et al., 1977). Bloodstream form trypanosomes were cultivated in HMI-9 medium supplemented with 10% (vol/vol) FBS (Hirumi and Hirumi, 1989) at 37°C in 5% CO2. Proliferative slender cells were maintained at densities lower than 5·105 parasites/ml to prevent their natural quorum-sensing-dependent differentiation into stumpy forms. For in vitro slender to stumpy BSF differentiation, we used 8-pCPT-2′-O-Me-5′-AMP, a nucleotide analogue of 5’-AMP (BIOLOG Life Science Institute, Germany). Briefly, 2×106 pleomorphic AnTat 1.1E slender forms were incubated with 8-pCPT-2′-O-Me-5′-AMP (5 μM) for 48 hr (Barquilla et al., 2012). Freshly differentiated stumpy forms and slender cells were then centrifuged at 1400×g for 10 min and resuspended at the appropriate densities in SDM-79 medium supplemented with 10% FBS. Cells were resuspended at either 103, 104, or 105 parasites/ml. Assuming individual blood meal volumes ranging between 10 and 100 μl, this would correspond to ingestions of 10–100, 100–1000, or 1000–10,000 parasites per condition.
 
-## Tsetse fly maintenance, infection, and dissection
+### Tsetse fly maintenance, infection, and dissection
 
 Glossina morsitans morsitans tsetse flies were maintained in Roubaud cages at 27°C and 70% hygrometry and fed through a silicone membrane with fresh mechanically defibrinated sheep blood (BCL, France). Adult (between 2 and 3 weeks after emergence) or teneral males (between 24 and 72 hr post-emergence) were allowed to ingest parasites through a silicone membrane. No chemical supplement was used in the first set of experiments. For assessing the effect of immunomodulatory compounds in the second set of experiments, 60 mM N-acetylglucosamine was added to the infective meal. A total of three to five independent biological replicates per condition were performed with batches of 50 flies per condition.
 
 Flies were starved for at least 24 hr before being dissected blindly 28–31 days post-ingestion for isolation of all stages from the midgut and salivary glands. For recovery of all tsetse organs, after rapid isolation of the salivary glands in a first drop of phosphate-buffered saline (PBS), whole tsetse alimentary tracts, from the distal part of the foregut to the Malpighian tubules, were dissected and arranged lengthways in another drop of PBS as previously described (Rotureau et al., 2011; Rotureau et al., 2012). Isolated organs were then scrutinized under a microscope at ×40 magnification by two independent readers, and infection rates per organ were scored (Rotureau et al., 2014).
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Cultured parasites were washed in TDB and spread onto poly-L-lysine-coated slides. For flash methanol fixation, slides were air-dried for 10 min, fixed in methanol at –20°C for 5 s, and rehydrated for 20 min in PBS. For immunodetection of stumpy forms, slides were incubated for 1 hr at 37°C with a rabbit polyclonal anti-PAD1 antibody (kindly provided by Keith Matthews, University of Edinburgh) (Dean et al., 2009) diluted at 1:300 in PBS containing 0.1% bovine serum albumin (BSA). After three consecutive 5 min washes in PBS, a species and subclass-specific secondary antibody coupled to the Alexa 488 fluorochrome (Jackson ImmunoResearch) diluted at 1:1000 in PBS containing 0.1% BSA was applied for 1 hr at 37°C. After washing in PBS, slides were finally stained with 4',6-diamidino-2-phenylindole (1 µg/ml) for visualization of kinetoplast and nuclear DNA content and mounted under coverslips with ProLong Antifade Reagent (Invitrogen), as previously described (Rotureau et al., 2011). Slides were observed under an epifluorescence DMI4000 microscope (Leica) with a ×100 oil objective (NA 1.4) to assess the proportion of PAD1-positive cells in the infective meals (n>100 cells/condition).
 
-## Statistical analysis
+### Statistical analysis
 
 Infections rates were compared by a two-sided ANOVA at 95% confidence with Prism V10.0.3 (GraphPad). MG infection rate comparisons were statistically significant between teneral and adult flies infected with ST in each amount (p<0.02 with 10 parasites; p<0.0001 with 100 and 1000 parasites) and with 1000 SL (p<0.0001). MG infection rate comparisons were statistically significant (p<0.0001) between parasite stages (SL and ST) in each amount (10, 100, and 1000) and for each fly group (teneral and adult), except in teneral flies infected with 1000 parasites (p=0.2356).

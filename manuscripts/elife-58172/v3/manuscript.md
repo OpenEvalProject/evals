@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Irisin, a skeletal-muscle secreted myokine, facilitates muscle-bone crosstalk and skeletal remodeling in part by its action on osteoblasts and osteocytes. In this study, we investigated whether irisin directly regulates osteoclasts. In vitro, irisin (2–10 ng/mL) increased osteoclast differentiation in C57BL/6J mouse bone marrow progenitors; however, this increase was blocked by a neutralizing antibody to integrin α V β 5 . Irisin also increased bone resorption on several substrates in situ. RNAseq revealed differential gene expression induced by irisin including upregulation of markers for osteoclast differentiation and resorption, as well as osteoblast-stimulating ‘clastokines’. Forced expression of the irisin precursor Fndc5 in transgenic C57BL/6J mice resulted in lower bone mass at three ages and greater in vitro osteoclastogenesis from Fndc5 -transgenic bone marrow progenitors. This study demonstrates that irisin acts directly on osteoclast progenitors to increase differentiation and promote bone resorption, supporting the tenet that irisin not only stimulates bone remodeling but may also be an important counter-regulatory hormone.
+Irisin, a skeletal-muscle secreted myokine, facilitates muscle-bone crosstalk and skeletal remodeling in part by its action on osteoblasts and osteocytes. In this study, we investigated whether irisin directly regulates osteoclasts. In vitro, irisin (2–10 ng/mL) increased osteoclast differentiation in C57BL/6J mouse bone marrow progenitors; however, this increase was blocked by a neutralizing antibody to integrin αVβ5. Irisin also increased bone resorption on several substrates in situ. RNAseq revealed differential gene expression induced by irisin including upregulation of markers for osteoclast differentiation and resorption, as well as osteoblast-stimulating ‘clastokines’. Forced expression of the irisin precursor Fndc5 in transgenic C57BL/6J mice resulted in lower bone mass at three ages and greater in vitro osteoclastogenesis from Fndc5-transgenic bone marrow progenitors. This study demonstrates that irisin acts directly on osteoclast progenitors to increase differentiation and promote bone resorption, supporting the tenet that irisin not only stimulates bone remodeling but may also be an important counter-regulatory hormone.
 
 ## Introduction
 
@@ -37,23 +37,43 @@ Irisin is a peptide produced by proteolytic cleavage of fibronectin type III dom
 
 First, we used continuous treatment with a range of irisin doses (0, 2, 5, 10, and 20 ng/mL) for 7 days in an in vitro osteoclast differentiation assay using primary marrow hematopoietic progenitors. These doses were based on previous studies establishing the physiologic range of circulating irisin during and after exercise (Jedrychowski et al., 2015). We found a qualitative enhancement of both osteoclast number and size (Figure 1a), and significant increases in osteoclast number across this dose range (2, 5, and 10 ng/mL: p<0.0001, 20 ng/mL: p=0.044; Figure 1b, Source data 1). Based on these results, we selected 10 ng/mL irisin to compare continuous (7 days) and transient treatment for the first 4 or 24 hr of culture, and for all further experiments with resorption and gene expression. Both transient treatments led to enhanced osteoclast numbers versus controls (4 hr: p=0.0218, 24 hr: p=0.0008), but continuous irisin resulted in the greatest increase (p<0.0001) and was higher than both 4 hr (p=0.0002) and 24 hr only treatments (p=0.0152; Figure 1c, Source data 1). The stimulatory effect of continuous 10 ng/mL irisin was then further confirmed in primary hematopoietic cells from both sexes of C57BL/6J mice (p=0.0003) and in the RAW 264.7 macrophage cell line (p=0.0428; Figure 1d, Source data 1). RAW-derived osteoclasts appeared morphologically similar to primary cells and mirrored observations of qualitatively larger cells with irisin treatment (Figure 1e).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig1-v3.jpg)
+
+**Figure 1.:** Representative 10× and 40× (boxed inset) images of TRAP-positive stained osteoclasts after 7-day differentiation with 10 ng/mL irisin (ISN) or untreated controls (CTL) (a).
+Quantification of osteoclasts per well demonstrating enhanced osteoclastogenesis in response to continuous irisin across a physiologic range of 2–20 ng/mL (b, N = 6) and to treatment with 10 ng/mL irisin for only first 4 or 24 hr of culture compared to continuous treatment or CTL (c, N = 6–8). Quantification of osteoclasts per well confirming irisin stimulation of osteoclastogenesis with continuous 10 ng/mL treatment across primary murine gender with female BL6 mice, and with the macrophage cell line RAW 264.7 (d, N = 8), with representative images of differentiated RAW-derived osteoclasts (e). Expression of integrin receptor subunit αV (ITGAV) and β5 (ITGB5) in primary osteoclast cultures normalized to Hprt (f, N = 3), and quantification of osteoclast per well counts for CTL or continuous 10 ng/mL ISN in the presence of integrin αVβ5 neutralizing antibody (AVB5-AB), an IgG antibody control (IgG), or no antibody (CTL) (g, N = 5–6). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, not significant (NS) versus CTL within-group or as indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of in vitro osteoblast cultures with (ISN) or without (CTL) 10 ng/mL irisin during 18-day differentiation.
+Alkaline phosphatase and von Kossa staining show no qualitative effect of irisin on differentiation or mineralization, respectively.
+
 As integrins are present on the osteoclast membrane and known to play a role in differentiation (Duong et al., 2000; Yavropoulou and Yovos, 2008), and earlier work identified integrin αVβ5 as a receptor for irisin on osteocytes (Kim et al., 2018), we examined the expression of both subunits in osteoclast cultures and found increased relative mRNA expression above controls with irisin treatment (αV: p=0.552, β5: p=0.031; Figure 1f, Source data 1). Blocking integrin αVβ5 with a neutralizing antibody (AVB5-AB) resulted in no differences in osteoclast number per well with irisin treatment (10 ng/mL) versus untreated controls (p=0.79) compared to significant increases with an IgG antibody control (p=0.012) or no-antibody conditions (p=0.0295), indicating this integrin acts as the receptor for irisin on osteoclasts (Figure 1g, Source data 1).
 
 Next, we asked whether irisin-induced osteoclastogenesis led to enhanced bone resorption. Osteoclast differentiation cultures were performed on a variety of native and synthetic substrates with and without continuous 10 ng/mL irisin. TRAP-positive osteoclasts were observed in situ on dentin slices after 7 days (Figure 2a, left), and subsequent toluidine blue staining revealed a qualitative increase in resorption pit area on the surface with irisin treatment (Figure 2a, right). Irisin significantly increased osteoclast numbers on dentin (p=0.013), as well as total resorption area (p=0.045). However, when normalized by osteoclast number, resorption was not significantly different (p>0.99), indicating a dominant effect of cell number in increasing total resorption (Figure 2b, Source data 1). Irisin enhancement of total resorption was further confirmed via the Corning OsteoAssay, with a similar significant increase in total resorption area (p=0.048; Figure 2c, Source data 1). Release of carboxy-terminal collagen crosslinks (CTX) from osteoclast cultures on collagen substrates was measured to assess the effect of transient irisin treatment on resorption at early stages in culture and was significantly increased with both continuous irisin treatment for 3 days (p=0.0153) and for the first 24 hr only (p<0.0001), with this transient treatment also resulting in significantly higher resorption than continuous treatment (p=0.0041; Figure 2d, Source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig2-v3.jpg)
 
-**Figure 2.:** a).Quantification of osteoclast number, total resorption area, and resorption normalized to osteoclast number for dentin cultures (
-b, N = 3–4). Confirmation of irisin stimulation of resorption with Corning OsteoAssay resorbable calcium phosphate substrate, representative full-diameter images of 96-well plates with binary threshold to visualized resorption pits on von Kossa-stained substrate after 7-day osteoclast culture for ISN versus CTL, with quantification of total resorption by percent area (c, N = 8). Irisin stimulation of early-stage resorption with transient treatment for the first 24 hr alone, versus continuous ISN and CTL with quantification of resorption determined by ELISA of CTX release into media collected at day 3 of culture (d, N = 5). *p<0.05 versus CTL, **p<0.01, ****p<0.0001, not significant (NS) versus CTL within-group or as indicated.
+**Figure 2.:** Representative images of TRAP-positive osteoclasts on dentin after 7-day osteoclast culture (left), and underlying resorption pits (arrows) stained with toluidine blue dye after decellularization via sonication, demonstrating increased resorption with irisin treatment (ISN) versus untreated controls (CTL) (a).
+Quantification of osteoclast number, total resorption area, and resorption normalized to osteoclast number for dentin cultures (b, N = 3–4). Confirmation of irisin stimulation of resorption with Corning OsteoAssay resorbable calcium phosphate substrate, representative full-diameter images of 96-well plates with binary threshold to visualized resorption pits on von Kossa-stained substrate after 7-day osteoclast culture for ISN versus CTL, with quantification of total resorption by percent area (c, N = 8). Irisin stimulation of early-stage resorption with transient treatment for the first 24 hr alone, versus continuous ISN and CTL with quantification of resorption determined by ELISA of CTX release into media collected at day 3 of culture (d, N = 5). *p<0.05 versus CTL, **p<0.01, ****p<0.0001, not significant (NS) versus CTL within-group or as indicated.
 
 To investigate the key signaling pathways influenced by the action of irisin on the osteoclast, we performed an unbiased analysis of RNA sequencing (RNAseq) data from in vitro osteoclast cultures after 7 days of continuous 10 ng/mL irisin treatment, which demonstrated a qualitatively differential gene expression pattern compared to untreated controls, as typified by hierarchical clustering, volcano plot, and principal component analysis (Figure 3a). Irisin treatment significantly increased the expression of resorption markers Adamts5 (p=0.0381) and Loxl2 (p=0.009), and markers for secreted clastokines known to stimulate osteoblasts: Postn (p=0.0002), Igfbp5 (p=0.03), Tgfb2 (p=0.0073), and Sparc (p=0.0365). Significant decreases in the expression of macrophage markers Mst1r (p=0.0416) and Itgax (p<0.0001) and the lymphocyte markers Cd72 (p=0.0086), Slamf8 (p=0.0052), and H2-aa (p=0.0017) indicated a preferential shift of the hematopoietic progenitor lineage toward osteoclast differentiation (Source data 1). RT-qPCR further showed that irisin significantly increased the expression of key differentiation markers, namely, Rank, the receptor for RANKL (p=0.019), c-src (p=0.008), Fam102a (p=0.039), Nrf2 (p=0.0008), and the osteoclast fusion markers Dcstamp (p=0.0039) and Atp6vod2 (p=0.012). Other early markers of osteoclast differentiation such as Cfos (p=0.41), Itgb3 (p=0.09), Nfatc (p=0.11), Rela (p=0.12), and Rgs12 (p=0.09) were slightly but not significantly increased. Significant increases were confirmed for both key resorption markers: Acp5 (p=0.012) and Loxl2 (p=0.035), and clastokine markers: Sparc (p=0.009) and Wnt10a (p=0.047; Figure 3b, Source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig3-v3.jpg)
 
-**Figure 3.:** a, N = 2).Relative mRNA expression quantified by RT-qPCR of markers for osteoclast differentiation, resorption, and clastokines in irisin-treated osteoclasts (ISN) compared to untreated controls (CTL), normalized to 
-Hprt expression (b, N = 3–6). *p<0.05, **p<0.01, ***p<0.001 versus CTL within gene.
+**Figure 3.:** RNAseq analysis of differential gene expression pattern induced by continuous 10 ng/mL irisin treatment (ISN) compared to untreated controls (CTL) at day 7, as typified by representative sample hierarchical clustering, volcano plot, and principal component analysis (a, N = 2).
+Relative mRNA expression quantified by RT-qPCR of markers for osteoclast differentiation, resorption, and clastokines in irisin-treated osteoclasts (ISN) compared to untreated controls (CTL), normalized to Hprt expression (b, N = 3–6). *p<0.05, **p<0.01, ***p<0.001 versus CTL within gene.
 
 Next, we turned to a genetic model of forced expression of Fndc5 in C57BL/6J mice using the McK muscle-specific promoter. RT-qPCR analysis of the whole tibia demonstrated a significant increase in Fndc5 expression at both 4.5 months (p=0.000082) and 13 months (p=0.0041), indicating promoter activity in the bone marrow in addition to the muscle (Figure 4a, Source data 1). Markedly lower cortical bone area was observed by µCT at younger ages in Fndc5-transgenic (TG) mice compared to wild type (WT) (2 and 4.5 months), with significant decreases in trabecular bone volume fraction at 2 (p<0.0001) and 4.5 months (p=0.0003) and in cortical thickness at 2 months (p<0.0001; Figure 4b, Source data 1). Dynamic histomorphometry revealed smaller bones and similar decreases in overall bone volume fraction and trabecular thickness that persisted from 2 to 13 months (Figure 4c, Source data 1). Significant decreases in both the number of osteoblasts per bone perimeter (p=0.05) and bone formation rate (p=0.0046) were observed only at 2 months, and not at 13 months. However, in vitro osteoblast differentiation from bone marrow mesenchymal cells harvested at 2–3 months did not differ by genotype (Figure 4—figure supplement 1). Osteoclast numbers per bone perimeter were slightly increased in Fndc5-transgenic mice versus wild type across 2–13 months but did not reach statistical significance (Figure 4c). However, primary bone marrow progenitors isolated from Fndc5-transgenic mice at 2–3 months demonstrated markedly greater osteoclastogenic potential compared to the wild type, yielding significantly higher numbers of osteoclasts that were qualitatively larger than controls during in vitro differentiation (p<0.0001; Figure 4d, Source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig4-v3.jpg)
+
+**Figure 4.:** Skeletal phenotype and osteoclastogenic potential of Fndc5 forced expression with McK muscle promoter mice (MCK-FNDC5, TG) compared to wild type C57BL/6J controls (WT).
+Whole-bone gene expression from tibia shows increased Fndc5 expression out to 13 months (a, N = 3–5). Representative transverse slice images of trabecular bone at the midpoint of the distal femoral metaphysis (left) and cortical bone at the mid-diaphysis (right) demonstrates reduced cortical bone area in TG versus WT, especially at early ages, with trabecular BV/TV significantly lower at 2 and 4.5 months, and cortical thickness significantly lower at 2 months (b, N = 6). Tibial histomorphometry at 2 and 13 months demonstrated reduction of bone volume fraction at both time points, with slight increase in osteoclast numbers in tibia at 13 months (c, N = 6). In vitro MCSF/RANKL-induced osteoclast differentiation from bone marrow progenitors at 2–3 months of age yielded higher osteoclast numbers in TG versus WT (d, N = 8). ***p<0.001, ****p<0.0001 versus WT.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58172/elife-58172-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Representative images of in vitro osteoblast cultures from wild type (WT) or Fndc5-transgenic bone marrow progenitors after 18-day differentiation.
+Crystal violet and alkaline phosphatase staining for differentiation and von Kossa staining for mineralization show no qualitative difference between genotypes.
 
 This study demonstrates that irisin plays an important role in regulating bone remodeling not only by stimulating osteoblasts and osteocytes as previously described, but by also directly acting on osteoclasts to promote differentiation and resorption. This stimulatory effect was observed across multiple experiments with primary murine progenitors and the RAW 264.7 macrophage cell line and occurred with either intermittent or continuous irisin exposure across a range of physiologic concentrations previously reported in humans (Jedrychowski et al., 2015). Analogous to its action on osteocytes, we confirmed the expression of integrin subunits αV and β5 on osteoclasts and identified it as a likely receptor for irisin, particularly since blocking this receptor complex with a neutralizing antibody completely suppressed the stimulatory effect of irisin on osteoclastogenesis (Figure 1). Furthermore, we found that both recruitment and differentiation of more osteoclast progenitors with irisin treatment appeared to be driving factors of enhanced bone resorption, based on in situ studies on native dentin as well as synthetic calcium phosphate and collagen substrates (Figure 2). Using unbiased RNAseq analysis and qRT-PCR of irisin-treated osteoclasts, we noted that some markers of early osteoclast differentiation, nuclear fusion markers, and enzymes related to bone resorption were upregulated, matching the functional effects observed in vitro. In addition, several osteoclast-secretory factors known to stimulate osteoblasts were significantly upregulated, suggesting that the direct actions of irisin on this cell type may have further impact on cell signaling to enhance coupled remodeling (Figure 3).
 
@@ -65,31 +85,125 @@ Taken together, our studies provide more evidence that irisin mediates muscle-bo
 
 ## Materials and methods
 
-## Primary osteoclast culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus male/female)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td>IMSR Cat# JAX:000664, RRID:IMSR_JAX:000664</td>
+      <td>Wild type mouse line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>RAW 264.7</td>
+      <td>ATCC</td>
+      <td>TIB-71</td>
+      <td>Cryopreserved monocyte cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Integrin aVb5 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab78289, RRID:AB_1566022</td>
+      <td>Neutralizing antibody (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Irisin</td>
+      <td>Lake Pharma Kim et al., 2018</td>
+      <td>N/A (custom)</td>
+      <td>10 his-tag recombinant from HEK 293 cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RANKL, recombinant human</td>
+      <td>PeproTech</td>
+      <td>310–01</td>
+      <td>Osteoclast growth factor</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF, recombinant murine</td>
+      <td>PeproTech</td>
+      <td>315–02</td>
+      <td>Osteoclast growth factor</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Acid Phosphatase Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>387A</td>
+      <td>TRAP assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corning Osteo Assay</td>
+      <td>VWR</td>
+      <td>89184–614</td>
+      <td>Resorption assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OsteoLyse Assay Kit</td>
+      <td>Lonza</td>
+      <td>PA-1500</td>
+      <td>Resorption assay</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistics/graphing software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td>Image analysis software</td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary osteoclast culture
 
 Primary murine osteoclasts were differentiated and cultured in vitro by the following methods. Bone marrow was collected via centrifugation from the femur and tibia of 8-week-old male C57BL6/J mice and cultured in αMEM (VWR, Radnor, PA) supplemented with 10% fetal bovine serum VWR) and 1% Pen-Strep (VWR). After 48 hr, non-adherent hematopoietic progenitor cells were removed and plated at 1.563 × 105 cell/cm2 in 96-well tissue culture plates for cell counting or in 12-well tissue culture plates for RNA extraction. Osteoclast differentiation was stimulated by supplementation with 30 ng/mL M-CSF (PeproTech, Rocky Hill, NJ) and 100 ng/mL RANKL (PeproTech; Marino et al., 2014), with 200 µL or 2 mL media refreshed at days 3 and 5 after plating for 96- and 12-well plates, respectively. Irisin was produced in HEK 293 cells as a 10 His-tag recombinant, via previously established protocols (Lake Pharma, Hopkinton, MA; Kim et al., 2018), and supplemented continuously in the media at 10 ng/mL, or as otherwise indicated.
 
-## Primary source gender and cell line confirmations
+### Primary source gender and cell line confirmations
 
 We used 8-week-old male C57BL6/J mice as the primary cell source for all experiments unless otherwise stated. Confirmation of irisin effect on osteoclastogenesis was also established in female C57BL6/J mice to compare gender among this wild type murine primary source of progenitors, which were cultured and counted as described. Additionally, the RAW 264.7 macrophage cell line (ATCC TIB-71, Manassas, VA) was employed as a non-primary cell source, following previously published protocols for osteoclast differentiation from this cell line (Ng et al., 2018; Bharti et al., 2004). Briefly, RAW cells were played at a lower density in 96-well plates of 6 × 103 cells/well and cultured as described, but for the exclusion of MCSF in the media. The RAW 264.7 cell line is not included in the database of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee; identity authentication via STR profiling and a negative mycoplasma contamination test were performed by the supplier ATCC.
 
-## Osteoclast counts
+### Osteoclast counts
 
 At day 7, 96-well plates were fixed in 10% formalin and stained for TRAP (Acid Phosphatase Kit, Sigma-Aldrich, St Louis, MO) to visualize and count mature osteoclast numbers, where a TRAP-positive cell with three or more nuclei was defined as an osteoclast. Initial counting was performed via manual counting on an inverted microscope, with confirmative counts performed by manually counting blinded copies of composite images of each sample in ImageJ (Blind Analysis, Labcode).
 
-## Integrin antibody blocking
+### Integrin antibody blocking
 
 A separate experiment employed the culture and counting methods described above for irisin treatment in combination with a neutralizing antibody for integrin αVβ5 (Anti-Integrin aVb5 antibody, Abcam, Cambridge, UK) and an IgG control (Mouse IgG1 Isotype Control, R and D Systems, Minneapolis, MN), each supplied continuously in the media during the 7-day culture at 0.9 µg/mL.
 
-## Resorption assays
+### Resorption assays
 
 Multiple resorption assays were utilized to characterize and confirm the effect of irisin treatment on osteoclast resorptive capacity. The primary approach employed decellularized dentin slices as a native bone substrate. Hematopoietic progenitors were plated on the bone slices at 3 × 105 cell/cm2 in a 50 µL place on the top of the slice in a 10 mm Petri dish and incubated for 30 min to facilitate cell adhesion to the substrate alone. Slices were then moved into 96-well plates and cultured as described above. At day 7, dentin slices were TRAP stained and imaged as described for osteoclast counts. TRAP+ osteoclasts were visualized on the dentin surface via a top-down microscope used for histomorphometry analysis, with bright light illumination provided from below, through the thin dentin slice. To image the underlying resorption pits, the dentin slices were then sonicated briefly to removed cells and stained with toluidine blue to visualize resorption pits by previously published methods (Vesprey and Yang, 2016) on the same microscope. Briefly, each slice was placed face-down on a 20 µL drop of 1% toluidine blue solution (in 1% sodium borate 10-hydrate solution with distilled water) for 4 min and then rinsed and allowed to air dry before imaging and manual calculation of total pit areas for blinded images in ImageJ. Toluidine-stained pits were clearly identifiable on the dentin surface as rounded features with dark edges and were manually traced in Image J to generate binary thresholded masks from which the total area was calculated. Confirmation experiments were performed with the Osteo Assay resorption assay (Corning Inc, Corning, NY), whereby osteoclasts were cultured on the substrate treated 96-well plates by the previously described methods, then removed with 10% bleach and the substrate was stained with von Kossa stain (Sigma-Aldrich). Imaging of the wells on a dissecting scope with backlighting allowed visualization of pits, and automated area calculations based on binary thresholded masks of the images. To determine earlier time-point resorption, the OsteoLyse assay (Lonza, Basel, Switzerland) was employed, utilizing the same osteoclast culture methods on a collagen substrate, whereby detection of carboxy-terminal collagen crosslinks (CTX) allows for relative quantification of degraded collagen as an indicator of resorptive activity. Aliquots of the media at day 3 in culture were analyzed via ELISA for relative fluorescence indicative of CTX release and normalized to undifferentiated and no-cell controls.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was isolated from osteoclast cells cultured with or without 10 ng/mL irisin for 7 days with the Trizol reagent (ThermoFisher, Waltham, MA) and RNeasy mini kit (Qiagen, Hilden, Germany), with mRNA enrichment from 100 ng of total purified RNA and Illumina sequencing libraries preparation performed using Kapa stranded mRNA Hyper Prep (Roche Sequencing Solutions, Pleasanton, CA). Gene libraries were multiplexed in an equimolar pool and were sequenced on an Illumina NextSeq 500 with single-end 75 bp reads. Raw reads were aligned to the UCSC mm10 reference genome using a STAR aligner (Dobin et al., 2013; version STAR_2.4.2a), and raw gene counts were quantified using the quantMode GeneCounts flag. Differential expression testing was performed using Limma (Ritchie et al., 2015) and DESeq2 (Love et al., 2014). RNAseq analysis was performed using the VIPER snakemake pipeline (Cornwell et al., 2018). Follow-up RT-qPCR was performed on RNA from a separate set of osteoclasts for markers identified via RNAseq and additional targets for differentiation, resorption, and clastokines with primer sequences obtained PrimerBLAST (NCBI-NIH), using reverse transcriptase kit (Qiagen) and AzuraQuant Green Fast PCR Mix (Azura Genomics, Rynam, MA) with an IQ PCR detection system (Bio-Rad, Hercules, CA). Gene expression data were analyzed via the comparative Ct method, utilizing Hprt as the housekeeping gene and normalizing by untreated control mean Ct.
 
-## Forced expression of Fndc5 in the murine muscle
+### Forced expression of Fndc5 in the murine muscle
 
 Transgenic mice with muscle-specific forced expression of Fndc5 were generated on a C57BL/6J background utilizing a muscle creatine kinase (MCK) promoter as previously described for PGC1-a overexpression17, targeting the coding sequence of the mouse Fndc5 gene. Transgenic mice were backcrossed to the C57BL/6J background prior to experiments, and non-transgenic littermate controls were utilized for skeletal phenotyping (Lin et al., 2002). Microarchitecture of distal trabecular bone and midshaft cortical bone was analyzed at 2, 4.5, and 14 months by µCT and at 2 and 13 months by dynamic histomorphometry, with measures performed and analyzed according to standard nomenclatures.
 
@@ -99,7 +213,7 @@ Dynamic histomorphometry was performed on fixed right tibiae, dehydrated with ac
 
 Additional femur and tibia were pulverized at 4.5 and 13 months with RNA extraction and subsequent gene expression analysis was performed via previously described protocols. Bone marrow isolation and in vitro osteoclast cultures were performed via previously described protocols. In vitro osteoblast cultures were performed by previously established protocols from the same adherent mesenchymal cell population of the same bone marrow isolations from wild type and transgenic mice used for osteoclast cultures. Briefly, after removal of non-adherent hematopoietic progenitors from culture flask for osteoclast culture, adherent mesenchymal progenitors were trypsinized and plated at 1 × 106 cell/well in 6-well plates with three replicates per group, and cultured in αMEM supplemented with 10% fetal bovine serum and 1% Pen-Strep until confluent. Confluent cells were then cultured for 18 days, supplemented with β-glycerol phosphate (Sigma-Aldrich) and ascorbic acid (Sigma-Aldrich), and stained for cell proliferation with crystal violet stain (Sigma-Aldrich), differentiation with an alkaline phosphatase kit (Sigma-Aldrich), and mineralization with von Kossa staining (silver nitrate, Sigma-Aldrich). All experiments were conducted with six age-matched female mice.
 
-## Experimental design and data analysis
+### Experimental design and data analysis
 
 Isolation of primary murine bone marrow was conducted by pooling tissue from the maximum available number of same-gender littermates (N = 3–5). For in vitro cultures, the adequate number of biological replicates (replicate wells in a tissue culture plastic plate, or slices of dentin) was determined via power analyses based on preliminary data (α = 0.05, power = 0.8) as six, and so osteoclast counting and resorption experiments were conducted in triplicate with representative experiments shown, with 6–8 replicate wells per group in each experiment (Figure 1b,c,d,e,g, Figure 2c,d, Figure 4d). Similarly, gene expression analysis via RT-qPCR was conducted for duplicate repeat experiments with three biological replicates per group and two technical replicates (replicate wells read per sample and averaged), with pooled representative data for a sample number of six (Figure 1f, Figure 3b, Figure 4a). Due to limitations in the availability of dentin slices, this resorption experiment was conducted once with a sample size of five per group (Figure 2a), and was thus followed up with additional commercially available resorption assays (Figure 2c,d). Similarly, RNA sequencing analysis was performed on a separate experimental set with three biological replicates per group (Figure 3a). For characterization of the Fndc5-transgenic mouse, power analyses based on previous outcome metrics from histomorphometry and gene expression in the Fndc5-null mouse experiments (Kim et al., 2018; α = 0.05, power = 0.8) indicated an adequate sample size of six mice per group, which was employed for in vivo characterization of bone properties based on the availability of same-gender age-matched mice (Figure 4b,c), while in vitro culture of osteoclast progenitors from these mice were carried out with bone marrow isolates from maximal number of same-gender littermates (N = 3–5) and eight replicate wells of osteoclast differentiation cultures per group (Figure 4d).
 

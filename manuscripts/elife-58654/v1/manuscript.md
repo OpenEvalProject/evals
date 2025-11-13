@@ -48,7 +48,7 @@ To increase their chances of success these working groups need to ensure that wo
 
 ## Create a shared vision
 
-## Aligning policies and practices with an institution's mission
+### Aligning policies and practices with an institution's mission
 
 The re-examination of an institution's policies and procedures can reveal the real priorities that may be glossed over in aspirational mission statements. Although the journal impact factor (JIF) is widely discredited as a tool for research assessment, more than 40% of research-intensive universities in the United States and Canada explicitly mention the JIF in review, promotion, and tenure documents (McKiernan et al., 2019). The number of institutions where the JIF is not mentioned in such documents, but is understood informally to be a performance criterion, is not known. A key task for working groups is therefore to review how well the institution's values, as expressed in its mission statement, are embedded in its hiring, promotion, and tenure practices. Diversity, equity, and inclusion are increasingly advertised as core values, but work in these areas is still often lumped into the service category, which is the least recognized type of academic contribution when it comes to promotion and tenure (Schimanski and Alperin, 2018).
 
@@ -58,11 +58,11 @@ Bridging perception gaps requires courage and honesty within any institution –
 
 Arguably, universities face a stiffer challenge here. Institutions striving to improve their research assessment practices will likely be casting anxious looks at what their competitors are up to. However, one of the hopeful lessons from the October meeting is that less courage should be required – and progress should be faster – if institutions come together to collaborate and establish a shared vision for the reform of research evaluation.
 
-## Finding conceptual clarity
+### Finding conceptual clarity
 
 Conceptual clarity in hiring, promotion, and tenure policies is another area for institutions to examine when aligning practices with values (Hatch, 2019). Generic terms like 'world-class' or 'excellent' appear to provide standards for quality; however, they are so broad that they allow evaluators to apply their own definitions, creating room for bias. This is especially the case when, as is still likely, there is a lack of diversity in decision-making panels. The use of such descriptors can also perpetuate the Matthew Effect, a phenomenon in which resources accrue to those who are already well resourced. Moore et al., 2017 have critiqued the rhetoric of 'excellence' and propose instead focusing evaluation on more clearly defined concepts such as soundness and capacity-building. (See also Belcher and Palenberg, 2018 for a discussion of the many meanings of the words 'outputs', 'outcomes' and 'impacts' as applied to research in the field of international development).
 
-## Establishing standards
+### Establishing standards
 
 Institutions should also consider conceptual clarity when structuring the information requested from those applying for jobs, promotion, or funding. There have been some interesting innovations in recent years from institutions seeking to advance more holistic forms of researcher evaluation. UMC Utrecht, the Royal Society, the Dutch Research Council (NWO), and the Swiss National Science Foundation (SNSF) are also experimenting with structured narrative CV formats (Benedictus et al., 2016; Gossink-Melenhorst, 2019; Royal Society, 2020; SNSF, 2020). These can be tailored to institutional needs and values. The concise but consistently formatted structuring of information in such CVs facilitates comparison between applicants and can provide a richer qualitative picture to complement more the quantitative aspects of academic contributions.
 
@@ -74,13 +74,13 @@ Even though the imposition of structure promotes consistency, there is a confoun
 
 This lays the groundwork for the second step, which is to define the full range of performance standards for criteria to be used in the evaluation process. An example is the three-point rubric used by the Office for Faculty Equity and Welfare at University of California, Berkeley, which helps faculty to judge the commitment of applicants to advancing diversity, equity, and inclusion (UC Berkeley, 2020). A strong applicant is one who "describes multiple activities in depth, with detailed information about both their role in the activities and the outcomes. Activities may span research, teaching and service, and could include applying their research skills or expertise to investigating diversity, equity and inclusion." A weaker candidate, on the other hand, is someone who provides "descriptions of activities that are brief, vague, or describe being involved only peripherally."
 
-## Recognizing collaborative contributions
+### Recognizing collaborative contributions
 
 Researcher evaluation is rightly preoccupied with the achievements of individuals, but increasingly, individual researchers are working within teams and collaborations. The average number of authors per paper has been increasing steadily since 1950 (National Library of Medicine, 2020). Teamwork is essential to solve the most complex research and societal challenges, and is often mentioned as a core value in mission statements, but evaluating collaborative contributions and determining who did what remains challenging. In some disciplines, the order of authorship on a publication can signal how much an individual has contributed; but, as with other proxies, it is possible to end up relying more on assumptions than on information about actual contributions.
 
 More robust approaches to the evaluation of team science are being introduced, with some aimed at behavior change. For example, the University of California Irvine has created guidance for researchers and evaluators on how team science should be described and assessed (UC Irvine, 2019). In a separate development, led by a coalition of funders and universities, the Contributor Roles Taxonomy (CRediT) system (https://credit.niso.org), which provides more granular insight into individual contributions to published papers, is being adopted by many journal publishers. But new technological solutions are also needed. For scientific papers, it is envisioned that authorship credit may eventually be assigned at a figure level to identify who designed, performed, and analyzed specific experiments for a study. Rapid Science is also experimenting with an indicator to measure effective collaboration (http://www.rapidscience.org/about/).
 
-## Communicate the vision on campus and externally
+### Communicate the vision on campus and externally
 
 Although many individual researchers feel constrained by an incentive system over which they have little control, at the institutional level and beyond they can be informed about and involved in the critical re-examination of research assessment. This is crucial if policy changes are to take root, and can happen in different ways, during and after the deliberations of the working groups described above. For example, University College London (UCL) held campus-wide and departmental-level consultations in drafting and reviewing new policies on the responsible use of bibliometrics, part of broader moves to embrace open scholarship (UCL, 2018; Ayris, 2020). The working group at Imperial College London organized a symposium to foster a larger conversation within and beyond the university about implementing its commitment to DORA (Imperial College, 2018).
 

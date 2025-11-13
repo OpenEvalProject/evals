@@ -36,43 +36,139 @@ Although the molecular components of the JAK-STAT pathway have been well charact
 
 ## Results
 
-## IFN-α pretreatments confer opposite effects depending on their durations
+### IFN-α pretreatments confer opposite effects depending on their durations
 
 IFN-α activates the JAK-STAT pathway and upregulates the expression of IFN-stimulated genes (ISGs), initiating an acute inflammatory response to limit pathogen spread. Recent studies found that individual cells respond to IFNs in a highly heterogeneous manner, both in vitro (Czerkies et al., 2018; Rand et al., 2012; Patil et al., 2015) and in vivo (Miao et al., 2010; Stifter et al., 2019). Therefore, traditional assays that measure averaged responses across populations at static time points may not be able to accurately characterize cells’ responses to IFNs. To monitor the dynamics of JAK-STAT signaling at the single-cell level, we constructed a reporter cell line in HeLa cells, in which STAT1 was C-terminally tagged with mCherry at its native locus using CRISPR/Cas9. In addition, to monitor downstream gene expression, we inserted a yellow fluorescent protein (YFP) under the endogenous promoter of a representative ISG IRF9 (PIRF9), with a translational skip spacer (P2A) between the reporter and the IRF9 coding region (Figure 1A; Figure 1—figure supplement 1, A–C). We chose IRF9 because it has been well defined as one of the major early response ISGs and it encodes a key component of the ISGF3 complex (Cheon et al., 2013; Tsuno et al., 2009). Using this reporter cell line and time-lapse microscopy, we were able to simultaneously track nuclear translocation of STAT1 and downstream IRF9 expression in a large number of single cells (Figure 1B). We observed a rapid nuclear translocation (within ~0.5 hr) of STAT1 followed by a gradual increase in PIRF9-driven gene expression in response to IFN-α stimulation (Figure 1B and C; Video 1), consistent with traditional western blotting results (Figure 1—figure supplement 1, D). For each single cell, we quantified the nuclear to cytoplasmic ratio of STAT1, which resembles STAT1 activation, and the rate of increase in YFP fluorescence (dYFP/dt) to reflect the PIRF9-driven transcriptional activity. STAT1 nuclear translocation correlated temporally with the increase in PIRF9-driven transcriptional activity (Figure 1C). We examined single-cell responses to various doses of IFN-α (Figure 1—figure supplement 2) and chose 100 ng/ml (10,000 IU/ml), a sub-saturating and clinically relevant (Tarhini et al., 2012) concentration, for the following analyses.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of HeLa reporter cell line engineered using CRISPR/Cas9 (top). STAT1 was tagged with mCherry at C-terminus to monitor the translocation and expression. The coding sequence for P2A-YFP was inserted at the C-terminus of IRF9 coding sequence to generate a transcription reporter (PIRF9). A simplified diagram of the IFN-α pathway components that can be monitored using the reporter cell line (bottom). (B) Time lapse images of a representative cell treated with 100 ng/ml IFN-α for 48 hrs. Scale bar: 20 μm. The time traces of nuclear/cytoplasmic STAT1-mCherry and PIRF9-YFP signals of the cell are shown on the right. Vertical dashed lines represent cell divisions. (C) Averaged time traces of nuclear/cytoplasmic STAT1-mCherry, PIRF9-YFP, and the time derivative of PIRF9-YFP (dYFP/dt) (n = 257 cells). Data are represented as the mean (solid lines) and + standard deviation (SD) (shaded areas). (D) Schematic of IFN-α pretreatment experiments (top). Cells were pretreated with 100 ng/ml IFN-α for 0, 2, 10 and 24 hrs followed by 8 hrs of break time and re-stimulated with 100 ng/ml IFN-α for an additional 10 hrs. Bottom: A diagram of the microfluidic set-up. Two syringes filled with culture medium with or without IFN-α were connected to programmable Arduino-controlled valves that control the duration of IFN-α treatments. Images were captured every 5 min throughout the entire experiment that lasted for a total of 52 hr. (E) Averaged time traces of PIRF9-driven YFP induction (left) and the rate of induction (dYFP/dt, right) in response to the second IFN-α treatment under different pretreatment conditions. For PIRF9-YFP induction, the baselines at the beginning of the second stimulation were normalized to the same level for the comparison of induction levels under different pretreatment conditions. Results were from at least three independent experiments. (F) Amounts of PIRF9-YFP induction by the second IFN-α stimulation under different pretreatment conditions were shown in bar graph (left) and violin plot (right). The bar showed the averages from three independent experiments, represented as mean + standard error of the mean (SEM). The differences between the pretreatment conditions and the control are all statistically significant (p<0.001). The violin plots showed the distributions of single-cell responses under different pretreatment conditions. The violin plots cover single-cell data from three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Illustration of cell line construction steps. Full detail was described in Materials and methods. Fluorescent reporters introduced and the targeted genes are shown. In each step, homogenous clones grew from single cells were carefully validated with PCR and sequencing to determine correct integration and homozygosity. Only one positive clone was selected to proceed with the next step. (B) Schematics of the ACTB (top), STAT1 (middle) and IRF9 (bottom) tagged loci. Sequences of the gRNA along with the recognition direction and the synonymous substitutions to avoid Cas9 recognition are shown. Targeted integration loci and the design of the donor DNA with indicated homology arms along with the inserts are also shown. (C) Representative images of the reporter cell line in response to IFN-α. Cells were treated without or with 100 ng/ml IFN-α for 48 hrs. Scale bar: 20 μm. (D) Time course western blots showing the dynamics of phosphorylation (pY701) and expression of STAT1, and the dynamics of IRF9 expression in the reporter cell line. Cells were treated with 100 ng/ml IFN-α for indicated times, harvested and lysed for immunoblotting with indicated antibodies. The dynamics of the endogenous protein phosphorylation and expression, measured using immunoblotting, are similar to those measured using fluorescence microscopy (compare with Figure 1C).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Time traces of nuclear to cytoplasmic ratio for STAT1-mCherry, STAT1-mCherry fluorescence, and PIRF9-YFP fluorescence in response to different concentrations (ng/ml) of IFN-α, as indicated. Averages of single-cell traces were shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Bar graphs showing the amounts of PIRF9-YFP induction to the second IFN input (100 ng/ml) in WT (A - C) and USP18-KD (D – F), pretreated with different concentrations of IFN-α for different durations, as indicated. The results were normalized to the non-pretreatment condition (control). Error bars represent standard deviations of single cells.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Bar graphs showing the amounts of PIRF9-YFP induction to the second IFN input followed by different break time durations. Cells were pretreated with 100 ng/ml IFN-α for 24 hrs or not pretreated (control), washed with PBS three times and stimulated with 100 ng/ml IFN-α. The average PIRF9-YFP induction was normalized to the non-pretreatment control. Error bars represent standard deviations of single cells.
+
+![Video 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-video1.mp4.jpg)
+
+**Video 1.:** The image sequence was acquired for 50 hrs in which the first 2 hr were before the addition of IFN-α. The NLS-2xiRFP nuclear marker is shown in red and is merged with phase images of the cells. STAT1-mCherry and PIRF9-YFP in the same cells are also shown. Movie is shown at 50 frames/second.
+
 To examine the responses to repetitive IFN-α stimulation, we employed a previously reported microfluidic device designed for mammalian cell culturing (Kolnik et al., 2012). The device features rapid cell loading by on-chip vacuum and long-term cell culturing in chambers that are isolated from shear stress. In this study, we modified the device to enable constant flows for medium refreshing and computer-programmed dynamic control of IFN inputs (Figure 1D). Using this device, we first exposed the cells to a pulse of IFN-α pretreatment with different durations, followed by an 8-hr break time with the normal medium. We then imposed a second 10-hr IFN-α treatment and evaluated single-cell responses. The device was integrated with time-lapse microscopy to allow tracking of a large number of single cells throughout the experiments (Figure 1D). We found that a 2- or 10-hr pretreatment accelerated and enhanced the transcriptional response to the second IFN-α input, as indicated by increased induction rates and levels of the PIRF9-driven reporter, compared to the control without pretreatment (Figure 1E and F; compare green and blue curves/bars with black ones). Intriguingly, a 24-hr pretreatment, however, dramatically decreased the transcriptional response to the second input (Figure 1E and F compare red curves/bars with black ones). Therefore, a pretreatment of IFN-α, depending on its duration, could lead to opposite effects on the responses to the subsequent input. A short pretreatment induces a priming effect, whereas a prolonged pretreatment triggers desensitization. We also examined how changing the dose of IFN pretreatment impacts the effect on the response to the second input and found that a dose higher than 10 ng/ml is required for desensitization in 24-hr pretreatment (Figure 1—figure supplement 3, A–C). Furthermore, we tested how the break time between pretreatment and second stimulation influences desensitization and found that the effect of desensitization decreased as a function of break time (Figure 1—figure supplement 4).
 
-## USP18 is responsible for desensitization induced by the prolonged IFN-α pretreatment
+### USP18 is responsible for desensitization induced by the prolonged IFN-α pretreatment
 
 We next considered the mechanisms underlying the opposite effects induced by IFN pretreatments. Previous studies have demonstrated that the priming effect can be attributed to the expression induction of IRF9, STAT1 and STAT2, which are components of ISGF3 transcriptional complex that mediates IFN-driven gene expression (Cheon et al., 2013), and IFN-induced chromatin modifications (Kamada et al., 2018). To determine the mechanism of desensitization caused by the prolonged pretreatment, we use a short hairpin RNA (shRNA) to knock-down the expression of ubiquitin-specific peptidase 18 (USP18), a major negative regulator of JAK-STAT signaling that we identified previously (Zou et al., 2007; Kim et al., 2008; Ritchie et al., 2004; Malakhova et al., 2003), in the reporter cell line (Figure 2—figure supplement 1, USP18-KD). USP18 is transcriptionally upregulated by IFN treatment and exerts inhibition of IFN-α signaling at the receptor level, forming a negative feedback loop (Sarasin-Filipowicz et al., 2009; François-Newton et al., 2011; Arimoto et al., 2017; Malakhova et al., 2006).
 
 We found that a 24-hr IFN-α pretreatment substantially diminished STAT1 nuclear translocation in WT cells upon the second IFN input, whereas 2-hr or 10-hr pretreatment shows a modest effect (Figure 2A, ‘WT’; Figure 2—figure supplement 2, A and B). However, this desensitization effect was abolished when USP18 expression was knocked down (Figure 2A, ‘USP18-KD’; Figure 2—figure supplement 2, C and D). Furthermore, in accord with STAT1 nuclear translocation, IFN-α pretreatments boosted the transcriptional responses in USP18-KD cells upon the second input, exhibiting priming effects independent of their durations or doses (Figure 2, B and C; Figure 1—figure supplement 3, D–F). These results indicate that USP18 is required for desensitization. We also examined the role of suppressors of cytokine signaling 1 (SOCS1), another negative regulator of JAK-STAT signaling (Liau et al., 2018). In contrast to USP18-KD, knocking down SOCS1 (SOCS1-KD) did not affect the desensitization of STAT1 nuclear translocation by the prolonged IFN pretreatment (Figure 2—figure supplement 3). Moreover, to determine how USP18-mediated desensitization influences the antiviral effect of IFN-α treatment, we examined viral replication in WT and USP18-KD with or without 24-hr IFN-α pretreatment. We found that the IFN-α pretreatment resulted in a much more dramatic repression of viral replication in USP18-KD, ~15 times more effective than in WT (Figure 2—figure supplement 4), indicating that USP18-mediated desensitization attenuates the antiviral effect of prolonged IFN-α pretreatment.
 
-## Computational modeling suggests a delayed negative feedback loop through USP18
+![Figure 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative time-lapse images of STAT1 nuclear translocation in response to the second IFN-α treatment under different pretreatment conditions in WT cells (top) and USP18-KD (bottom). (B) Averaged time traces of PIRF9-driven YFP induction (left) and the rate of induction (dYFP/dt, right) in USP18-KD cells in response to the second IFN-α treatment under different pretreatment conditions. (C) Amounts of PIRF9-YFP induction in USP18-KD cells by the second IFN-α stimulation under different pretreatment conditions were shown in bar graph (left) and violin plot (right). The bar showed the averages from three independent experiments, represented as mean + standard error of the mean (SEM). The differences between the pretreatment conditions and the control are all statistically significant (p<0.001). The violin plots showed the distributions of single-cell responses under different pretreatment conditions. The violin plots cover single-cell data from three independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots of USP18 expression in WT and USP18-KD cells. Cells were treated with 100 ng/ml IFN-α for indicated times, harvested and lysed for immunoblotting with the USP18 antibody. Time traces of nuclear to cytoplasmic ratio for STAT1-mCherry (B) and PIRF9-YFP fluorescence (C) in WT (black) and USP18-KD (red) in response to IFN-α. Averages of single cell traces were shown. The shaded area represents ± SD. (D) Averaged cell cycle lengths of WT and USP18-KD. Cell divisions were identified in individual cells and the lengths between cell divisions were quantified. Error bars represent standard deviations of single cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Averaged time traces of nuclear/cytoplasmic STAT1-mCherry in WT in response to the second IFN-α treatment under different pretreatment conditions (depicted in Figure 1D). (B) Violin plot shows the single-cell distributions of the peak values of nuclear/cytoplasmic STAT1-mCherry traces in WT under different pretreatment conditions. Black line represents the mean value of single-cell responses. (C) Averaged time traces of nuclear/cytoplasmic STAT1-mCherry in USP18-KD in response to the second IFN-α treatment under different pretreatment conditions. (D) Violin plot shows the single-cell distributions of the peak values of nuclear/cytoplasmic STAT1-mCherry traces in USP18-KD under different pretreatment conditions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Quantitative PCR results comparing SOCS1 expression in WT (back) and SOCS1-KD (red). The data was normalized to WT without IFN-α treatment. The knockdown efficiency (73.71%) was calculated as the relative SOCS1 induction upon IFN-α treatment in SOCS1-KD and WT. Error bars represent ± SEM from three replicates. (B) Representative time-lapse images of STAT1 nuclear translocation upon the second IFN-α treatment in WT cells (top), SOCS1-KD (middle) and USP18-KD (bottom) cells. Cells were pretreated with 100 ng/ml IFN-α for 24 hrs followed by 8 hrs of break time and re-stimulated for 12 hrs. Scale bar: 20 μm. (C) Right: Averaged time traces of nuclear/cytoplasmic STAT1-mCherry in WT cells (red), SOCS1-KD (green) and USP18-KD (blue) cells in response to the second IFN-α treatment. Left: Violin plot shows the single-cell distributions of the peak values of nuclear/cytoplasmic STAT1-mCherry traces in WT cells (red), SOCS1-KD (green) and USP18-KD (blue) cells. Results were quantified from the experiments in panel B.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Cells with or without a 24-hr pretreatment of 100 ng/ml IFN-α and an 8-hr break time were infected with 2500 PFU (plaque forming units) of VSV. After 18 hrs, viral supernatant was collected and titered. Error bars represent ± SEM, n = 3. Note that the y-axis starts with 100 PFU/well as it is the limit of detection of our method.
+
+### Computational modeling suggests a delayed negative feedback loop through USP18
 
 Based on our experimental results, we postulated that the opposite effects induced by short versus prolonged pretreatment inputs might be caused by different expression kinetics of ISGF3 components and USP18: a short input is sufficient to trigger ISGF3 expression and thereby the priming effect, whereas a prolonged input is required to induce USP18 expression and hence desensitization. To test this hypothesis in silico, we devised a simple computational model, which is composed of two ordinary differential equations that govern the expression of IRF9, an ISGF3 component, and USP18. In this model, IRF9 and USP18 act as the positive and the negative feedback regulators of the JAK-STAT pathway, respectively. Another major difference is that, as we proposed above, the upregulation of USP18 expression features a delayed kinetics and hence requires a continuous IFN stimulation that lasts longer than the delay time τ, whereas the upregulation of IRF9 initiates immediately upon the IFN treatment (Figure 3A and Figure 3—figure supplement 1A; see Materials and methods for details).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig3-v1.jpg)
+
+**Figure 3.:** (A) A diagram for the simple kinetic model of the IFN-driven gene regulatory network. (B) Fitting errors between simulations and the data with different assigned values of the delay time in USP18 upregulation. (C) Amounts of PIRF9-YFP induction by the second IFN-α stimulation under different pretreatment conditions, from experimental data (solid bars) and model simulations with the best-fit parameters (open bars). Data were from Figure 1F and were normalized to the non-pretreatment condition (control). (D) Schematic of experimental design with repetitive IFN pulses versus a sustained IFN input. (E) Model prediction of the responses to pulsatile versus sustained IFN inputs in the presence and absence of USP18. Results were normalized to the amount of induction to the pulsatile IFN input in WT. (F) Experimental data of the responses to pulsatile versus sustained IFN inputs in WT and USP18-KD cells. The error bars represent standard deviations of single-cell data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A diagram for the simple kinetic model of the IFN-driven gene regulatory network with reaction parameters labeled. (B) Fitting results with different delay times. The model fitting results (solid lines) were shown for delay times from 1 to 20 hrs while keeping all the other parameters free (Figure 3B) and were compared with experimental data (solid circles) under different pretreatment conditions. The delay time of 8 hrs gave smallest error between simulation and data (dashed line). (C) Model simulation of the time trace of IRF9 induction in response to 100 ng/ml IFN-α. The model was fit to the end point data from pretreatment experiments with different durations, as well as the time trace data of IRF induction to IFN stimulation. The simulated time trace from the best-fit parameters were shown as the dashed line. The data were from Figure 1C and were represented as the mean (yellow solid lines) and + / - standard deviation (SD) of single cells (shaded areas). (D) Sensitivity analysis of the parameter values. For each parameter, its value was changed across a wide range, while all the other parameters remained at the best-fit values. The simulated results (solid lines) were shown and compared with experimental data (solid circles) under different pretreatment conditions. The dashed line represents the best-fit value. (E) Roles of the positive and feedback loops on model performance. (i) Original model with both positive and negative feedback loops, (ii) model without positive feedback loop, and (iii) model without negative feedback loop were compared and Akaike information criterion (AIC) was computed using the best-fit parameter set for each model and was shown in the figure. Experimental data (solid bars) and model simulations with the best-fit parameters (open bars) for PIRF9-YFP induction by the second IFN-α stimulation under different pretreatment conditions were shown for each model. Data were from Figure 1F and were normalized to the non-pretreatment condition (control).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The violin plots showing single-cell distributions of PIRF9-YFP induction upon 5 × 8-hr pulsatile (blue) or 40-hr sustained (red) IFN-α treatments in WT (top) and USP18-KD (bottom) cells. The normalized mean levels of PIRF9-YFP induction were 1 (WT, pulsatile), 0.6204 (WT, sustained), 1 (USP18-KD, pulsatile), and 1.0796 (USP18-KD, sustained), respectively. The coefficients of variance (CVs) for IRF9 induction were 0.1846, 0.1953, 0.2419, and 0.2273, respectively. (B) Scatterplots showing STAT1-mCherry versus PIRF9-YFP induction in single cells in response to 5 × 8 hr pulsatile or 40-hr sustained IFN-α treatments in WT (top) and USP18-KD (bottom) cells. Fluorescent signals without IFN-α treatment were used as control.
 
 This model was able to reproduce the results from pretreatment experiments, where the priming effect dominates for the short pretreatments (2- and 10-hr pretreatments) and the desensitization effect dominates when the pretreatment duration increases to 24-hr (Figure 3C; the data from Figure 1F), and positive and negative feedback loops are both important for these effects (parameter sensitivity analysis and model comparison are shown in Figure 3—figure supplement 1, D and E). To investigate the effect of the delay in USP18 upregulation, we altered the delay time from 1 to 20-hr while keeping all the other parameters free. By fitting the model to the data for each assigned delay time, we found that the fitting error (between simulations and data) reaches the minimum when the delay time is 8 hrs (Figure 3, B and C; Figure 3—figure supplement 1, B–E). These analyses supported the hypothesis about a substantial delay in USP18 upregulation. The model further predicted that repetitive transient IFN inputs that are shorter than the delay time could be less able to induce the USP18-mediated negative feedback loop and hence could lead to a higher transcriptional response than that induced by a prolonged input with the same total treatment time. For example, pulsatile inputs with 5 × 8-hr pulses could produce a higher transcriptional response than that induced by a 40-hr sustained input, and the difference should be USP18-dependent (Figure 3, D and E). This prediction was tested experimentally and a higher transcriptional response, indicated by the PIRF9-driven reporter, was observed when 5 × 8-hr IFN pulses were given, compared to that induced by a single 40-hr treatment. Furthermore, this difference caused by different input dynamics was abolished in USP18-KD cells (Figure 3F; Figure 3—figure supplement 2).
 
 In summary, our modeling results suggest that a prolonged input is required to initiate USP18 upregulation. Therefore, when the input duration is short, the ISGF3-mediated-positive feedback loop dominates the regulation of JAK-STAT pathway, conferring the priming effect to subsequent stimulation. Once the input duration is prolonged enough to induce USP18 upregulation, the negative regulation by USP18 overrides the positive regulation by ISGF3, resulting in desensitization.
 
-## The kinetics of USP18 upregulation by IFN is heterogeneous in single cells
+### The kinetics of USP18 upregulation by IFN is heterogeneous in single cells
 
 To test our model directly, we set out to compare the expression kinetics of IRF9 and USP18 in living cells. To this end, we built upon the dual reporter cell line constructed in Figure 1A and inserted a cyan fluorescent protein (CFP) with a nuclear localization signal (NLS) under the endogenous USP18 promoter (PUSP18) with a P2A spacer between the reporter and the USP18 coding region (Figure 4A; Figure 4—figure supplement 1). This cell line enabled us to simultaneously track the kinetics of PIRF9 and PUSP18-driven gene expression in the same cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the dual reporter cell line. A coding sequence for NLS-CFP-P2A was inserted endogenously into the N-terminus of USP18 coding sequence of the previous cell line. IFN-α induces nuclear translocation of STAT1 and upregulation of IRF9 (PIRF9-YFP) and USP18 (PUSP18-CFP). (B) Representative time traces of PIRF9-YFP and PUSP18-CFP of a single cell in response to IFN-α. Activation time is defined as the time required to initiate the upregulation of the reporters after IFN-α treatment onset. Delay time is defined as the time difference between PUSP18 and PIRF9 activation times. (C) Distributions of PIRF9 and PUSP18 activation times in single cells (n = 2021 cells). The mean activation times (with 95% confidence interval) of IRF9 and USP18 are 7.9008 ± 0.1914 and 12.1620 ± 0.2349 hrs, respectively. The coefficients of variation (CVs) for activation times of IRF9 and USP18 are 0.5558 and 0.4429, respectively. (D) Distributions of delay times in single cells, quantified from the activation times in C. Cells are classified into two groups based on the delay times. Representative time traces of PIRF9 and PUSP18 in a single cell from each group are shown (right). Proportion of Group 2 cells (with a delay longer than 10 hrs) is 16.48%. (E) Single-cell delay times as a function of the percentages of cell cycle progression upon IFN treatment onset. Left: Diagram illustrating the quantification of the percentage of cell cycle progression at the treatment onset in a single cell. The time between two cell divisions (dashed lines) was considered as the length of one cell cycle. % of cell cycle progression is calculated as the ratio of the time in a cell cycle before IFN-α addition versus the full cell cycle length (100%) (See Figure 4—figure supplement 3 for details). Right: Scatterplot of delay time in each single cell versus % of cell cycle progression upon treatment onset. Open circles represent cells in which PUSP18-CFP upregulation occurred within the same cell cycle as the IFN-α addition. Open triangles represent cells in which PUSP18-CFP upregulation occurred in the next cell cycle. Red dashed lines indicate the time window for immediate PUSP18 induction. A two-sample t-test was performed for the two populations within and beyond the time window and obtained a p-value<0.001, indicating a significant difference in delay times.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Illustration showing the introduction of PUSP18-CFP into the dual reporter cell line in Figure 1A. NLS-CFP-P2A coding sequence was inserted between the promoter and coding sequence of the USP18 gene to generate a transcriptional reporter. (B) Schematic of USP18 tagged locus. The sequence of the gRNA along with the recognition direction and the synonymous substitutions to avoid Cas9 recognition are shown. The design of the donor DNA with indicated homology arms along with the inserts are shown. (C) Representative images of the reporter cell line in response to IFN-α. Cells were treated without or with 100 ng/ml IFN-α for 48 hrs. Scale bar: 20 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Scatterplots showing the relationship of PUSP18-CFP expression upon IFN-α treatment with (i) the basal level of PIRF9-YFP, (ii) PIRF9-YFP expression upon IFN-α treatment, (iii) the basal level of STAT1-mCherry, (iv) STAT1-mCherry expression upon IFN-α treatment. (B) Scatterplots showing the relationship of PUSP18-CFP delay times with (i) the basal level of PIRF9-YFP, (ii) PIRF9-YFP expression upon IFN-α treatment, (iii) the basal level of STAT1-mCherry, (iv) STAT1-mCherry expression upon IFN-α treatment. Each dot represents a single cell. Correlation coefficients were calculated and shown in each panel. The single-cell data were from Figure 4.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Illustration of measurement of cell mitosis times from time-lapse images. (Top) Representative time-lapse images of cells over multiple cell divisions. (Bottom) The size of nucleus (left) and its absolute time derivatives (right) were plotted for a representative cell (pointed by the yellow arrow) as a function of time. Cell division times (dashed lines) were determined by the peaks in the derivative time trace, which correspond to cytokinesis during mitosis. (B) Diagram illustrating the quantification of the percentage of cell cycle progression at the treatment onset in a single cell. The time between two cell divisions (dashed lines) was defined as cell cycle length (T cell cycle length). The time between IFN treatment onset time and the next cell division was defined as T1. The percentage of cell cycle progression upon IFN treatment onset can be quantified using T cell cycle length and T1, as shown in the listed formula.
 
 To evaluate the temporal difference in IRF9 and USP18 upregulation, we measured and quantified, in each individual cell, the induction kinetics of PIRF9 and PUSP18 -driven gene expression upon IFN stimulation. We defined the time needed for induction to initiate as ‘activation time’ and the difference between the activation times of IRF9 and USP18 as ‘delay time’ (Figure 4B). We found that, consistent with our model, IRF9 and USP18, although induced by the same upstream JAK-STAT signaling, exhibited strikingly different activation times. PIRF9-driven expression was induced with a fast and relatively uniform kinetics among cells; in contrast, PUSP18-driven expression exhibited a slow and heterogeneous kinetics (Figure 4C). Intriguingly, we quantified the delay times of UPS18 induction, relative to that of IRF9, in single cells and observed a long-tail distribution: about 83.3% of cells showed modest delays in induction (<10 hrs), whereas the other 16.7% cells exhibited more prolonged delays (>10 hrs). We classified these two subpopulations as ‘Group 1’ and ‘Group 2’, respectively (Figure 4D).
 
 To determine the source of clonal heterogeneity in USP18 induction, we analyzed the relationship of USP18 expression with STAT1 or IRF9 expression at the single-cell level and found that the heterogeneity in these upstream components contributed partially to cell-to-cell variation in the expression levels of USP18. However, the delay times of USP18 upregulation correlated poorly with STAT1 or IRF9 expression (Figure 4—figure supplement 2). We further considered the contribution of the cell cycle stage at IFN treatment onset, as the cell cycle progression has been shown as a major factor that coordinates gene expression (Liu et al., 2017). To this end, we quantified the extent of cell cycle progression in each single cell at IFN treatment onset (‘% of cell cycle progression’; Figure 4—figure supplement 3) and examined its relationship with the USP18 delay time in the same cell. We found that cells showed modest delays if the treatment was added at the early phase of their cell cycles (0–35% of the cell cycle). In contrast, in those cells that progressed beyond this phase, the IFN treatment could not initiate USP18 induction until the next cell cycle, resulting in extended delay times proportional to the times needed to reach the next cell cycle (Figure 4E). These results suggest that the cell-to-cell variability in USP18 delay times may stem from different cell cycle stages among cells at the treatment onset.
 
-## Cell cycle phases differentially regulate USP18 expression
+### Cell cycle phases differentially regulate USP18 expression
 
 Our results in Figure 4E suggest that the early phase of cell cycle (0–35% of the cell cycle time), likely the G1 and early S stages, may provide a time window that allows immediate USP18 induction without significant delays. To directly test that, we imposed chemical perturbations to arrest cells in G1 or G1/S stage and monitored the delay times of USP18 induction, relative to that of IRF9. Specifically, we treated cells with serum starvation (Langan and Chou, 2011), lovastatin (Keyomarsi et al., 1991; Javanmoghadam-Kamrani and Keyomarsi, 2008), and roscovitine (Kolodziej et al., 2015), all of which arrested cells in G1 or G1/S stage, prior to the IFN-α treatment. As expected, we observed that cell cycle synchronization substantially reduced the fraction of cells with prolonged delays of USP18 induction (Figure 5A). We confirmed that these decreases in the delay times were primarily due to earlier USP18 upregulation (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distributions of delay times in cells treated with different cell cycle perturbations. Cells were serum-starved or treated with lovastatin (5 μM), or with roscovitine (5 μM) for 36 hrs prior to IFN-α treatment. Proportions of Group 2 cells (with a delay longer than 10 hrs) are 16.28% (control), 4.55% (serum starvation), 2.31% (lovastatin), and 0.21% (roscovitine), respectively. (B) Schematic of CDK2 activity reporter. Amino acids 994–1087 of human DNA helicase B (DHB) was fused with mCherry. The construct was stably integrated into PUSP18 cell line using lentivirus. The dynamics of nuclear translocation of DHB-mCherry can be used to infer the cell cycle phase. Representative time-lapse images of DHB-mCherry illustrate the inference of cell cycle phases. (C) Color maps showing nuclear DHB and PUSP18-driven gene expression in the same single cells. Each row represents the time trace of a single cell. Cells were grouped into G1 (n = 104), S (n = 124) and G2 (n = 144) based on the nuclear DHB signals (left) at the time of IFN-α addition. For each group, cells were sorted based on PUSP18-CFP activation time (middle). Right: Distributions of PUSP18-CFP activation times for each group. (D) Distributions of delay times in cells treated with decitabine, a DNA methyltransferase (DMNT) inhibitor. Left: Schematic of the effect of decitabine on DNA methylation and nucleosome occupancy. Right: Distribution of delay times upon decitabine treatment. Cells were cultured with medium in the absence (control) or presence of 100 μM decitabine for 48 hrs prior to 100 ng/ml IFN-α treatment. Cells with delay times longer than 10 hrs are shown in red. Proportions of Group 2 cells (with a delay longer than 10 hrs) are 17.89% (control) and 5.92% (decitabine treated).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Cells were serum-starved or treated with lovastatin (5 μM), or with roscovitine (5 μM) for 36 hrs prior to IFN-α treatment. The mean activation times (with 95% confidence interval) of IRF9 were 8.9482 ± 0.249 hrs (control), 8.2770 ± 0.2310 hrs (serum-starvation), 7.7281 ± 0.1588 hrs (lovastatin), and 9.8733 ± 0.3424 hrs (roscovitine), respectively. The coefficients of variance (CVs) for activation times of IRF9 were 0.3484, 0.3268, 0.2924, and 0.3868, respectively. The mean activation times (with 95% confidence interval) of USP18 were 13.7266 ± 0.4215 hrs (control), 11.4415 ± 0.3146 hrs (serum-starvation), 9.6591 ± 0.2210 hrs (lovastatin), and 8.7585 ± 0.2450 hrs (roscovitine), respectively. The CVs for activation times of USP18 were 0.3844, 0.3220, 0.3257, and 0.3121, respectively. For serum starvation, the mean IRF9 activation time was decreased by 0.67 hr (−7.5%) and the mean USP18 activation time was decreased by 2.29 hrs (−16.6%); For lovastatin, the mean IRF9 activation time was decreased by 1.22 hrs (−13.6%) and the mean USP18 activation time was decreased by 4.07 hrs (−29.6%); For roscovitine, the mean IRF9 activation time was increased by 0.93 hr (+10.3%) and the mean USP18 activation time was decreased by 4.97 hrs (−36.2%). For serum starvation and lovastatin, while both IRF9 and USP18 activation times were decreased, USP18 activation times were decreased to greater extents, resulting in shorter delay times. For roscovitine, IRF9 activation time was increased and USP18 activation time was decreased, both of which contribute to the decrease in the delay time. But the change in USP18 activation time is five times more dramatic than the change in IRF9 activation time (−4.97 hrs vs +0.93 hr), in agreement with the decrease in USP18 activation time being a major contributor to the change in the delay time under this condition.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Illustration of how the FUCCI reporter works. The fluorescent signals of chromatin licensing and DNA replication factor 1(Cdt1) and Geminin (Gem) proteins oscillate throughout a cell cycle to infer cell cycle phases. Middle: Images of a representative cell showing the Cdt1 and Gem level at different cell phases. Dynamics of Cdt1 and Gem signals in a single cell are shown along with the cell cycle phase inference. Dashed lines represent cell divisions. (B) Color maps of Cdt1, Gem and PUSP18-CFP expression in the same single cells. Each row represents the time trace of a single cell. Cells were grouped into G1 (n = 451), S (n = 388) and G2 (n = 325) based on Cdt1 and Gem signals (left) at the time of IFN-α addition. For each group, cells were sorted based on PUSP18-CFP activation time (middle). Right: Distributions of PUSP18-CFP activation times for each group.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Histogram showing the numbers of CpG sites at ISG promoters. The promoter region is defined as 1000 bp upstream of the transcription start site. The data are collected from ENCODE database and the list of the 278 ISGs is from Interferome Database. Blue bars: ISG promoters with less than 100 CpG sites; red bars: ISG promoters with more than 100 CpG sites. (B) Scatterplot showing the numbers of methylated CpG versus of the numbers of CpG sites for ISG promoters. A CpG site is considered methylated if the methylation level is greater than 50% according to the bisulfide sequencing. Data are from ENCODE database for HeLa cells.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Cells were cultured with medium in the absence (control) or presence of 100 μM decitabine for 48 hrs prior to 100 ng/ml IFN-α treatment. The mean activation times (with 95% confidence interval) of IRF9 were 9.1632 ± 0.2877 hrs (control) and 10.0063 ± 0.3244 hrs (decitabine), respectively. The coefficients of variance (CVs) for activation times of IRF9 were 0.5289 and 0.5604, respectively. The mean activation times (with 95% confidence interval) of USP18 were 13.1356 ± 0.3409 hrs (control) and 11.2538 ± 0.3071 hrs (decitabine), respectively. The CVs for activation times of USP18 were 0.4372 and 0.4718, respectively. The decitabine treatment increased the mean IRF9 activation time by 0.84 hr (+9.2%) and decreased the mean USP18 activation time by 1.88 hrs (−14.3%), both of which contribute to the decreased delay time.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/58825/elife-58825-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Representative single-cell time traces from decitabine-treated cells. Cells were treated with 100 μM decitabine for 36 hrs prior to being imaged and kept in decitabine throughout the experiment. The FUCCI reporter dynamics (nuclear Cdt1 and Geminin) was tracked in single cells to determine their cell cycle phases and the type of cell cycle arrest. Decitabine-treated cells can be classified into three subgroups: cells with no arrest, cells in G1 arrest, and cells in G2 arrest. (B) Pie chart showing the proportions of cells with no arrest, arrested in G1, or arrested in G2 in a population of decitabine-treated cells.
 
 Furthermore, to explicitly determine the cell cycle stages of individual cells at the treatment onset and their relationships with USP18 induction delays, we generated another reporter cell line in which a cyclin-dependent kinase 2 (CDK2) activity reporter (Spencer et al., 2013) is stably integrated, allowing us to infer the cell cycle stages based on the dynamics of DNA helicase B (DHB) nuclear translocation (Figure 5B). In the same cell line, PUSP18-driven fluorescent reporter was introduced as described in Figure 4A. Using this cell line, we classified cells into three groups, G1, S, and G2 cells, based on their cell cycle stages at the IFN treatment onset (Figure 5C, left). We found that G1 and S cells showed relatively fast USP18 activation times, whereas a large fraction of G2 cells exhibited a substantial delay in USP18 induction (Figure 5C, right). We also employed another cell cycle reporter system called fluorescent ubiquitination-based cell cycle indicator (FUCCI) (Bajar et al., 2016) and observed similar patterns to those obtained using the CDK2 activity reporter (Figure 5—figure supplement 2). These results, together with the cell cycle inhibitor data in Figure 5A, confirmed the influence of cell cycle stages on USP18 induction. The G1/S stages allow rapid induction of expression induction, but the G2 stage restrains the initiation of gene induction, resulting in a prolonged delay in USP18 expression.
 
 What is the molecular mechanism underlying the effects of cell cycle stages on USP18 expression? Previous studies revealed global variations of epigenetic modifications during cell cycle. For instance, DNA methylation decreases in G1 and increases during S and G2 phases (Brown et al., 2007; Woodcock et al., 1986; Desjobert et al., 2015). We postulated that cell cycle progression might influence USP18 expression through variations in DNA methylation. To test this possibility, we first searched the genome-wide DNA methylation profiles of various human cell types. Intriguingly, the promoter of USP18 contains a large number of CpG sites, which are highly methylated in all the cell types examined. In contrast, the IRF9 promoter contains less CpG sites and is less methylated (Komaki, 2018; Figure 5—figure supplement 3). To determine whether the promoter methylation influences USP18 expression, we treated cells with decitabine (also known as 5-Aza-2’deoxycytidine), a commonly-used DNA methyltransferase inhibitor (Christman, 2002; Momparler, 2005). We observed that the decitabine treatment reduced the fraction of cells with prolonged delay times in USP18 induction, which is in part due to earlier USP18 upregulation (Figure 5—figure supplement 4), supporting that the promoter methylation inhibits USP18 induction (Figure 5D). This result is consistent with a previous study showing that a decreased promoter methylation leads to increased USP18 expression in breast cancer (Tan et al., 2018). We note that decitabine also leads to cell cycle arrest in G1 or G2 (Shin et al., 2013; Lavelle et al., 2003). Because only a small fraction of decitabine-treated cells is arrested in G1 (Figure 5—figure supplement 5) and USP18 induction is largely delayed in G2 (Figure 5C), the accelerating effect of decitabine on USP18 expression should be via inhibition of methylation rather than cell cycle arrest. In summary, our results suggested that the cell cycle stages may impact the initiation of USP18 upregulation through modulating the promoter methylation level.
 
-## Cell-cycle-gated feedback control shapes single-cell responses to repetitive IFN inputs
+### Cell-cycle-gated feedback control shapes single-cell responses to repetitive IFN inputs
 
 Finally, we incorporated the cell-cycle-gated regulation into our model, in replace of the arbitrary delay time, to test whether it is sufficient to account for the experimentally observed delays in USP18 induction and, consequently, desensitization, at the single-cell level. Based on our experimental results (Figures 4 and 5), we assumed that USP18 can be induced immediately if the IFN input starts within a fixed time window (G1 and early S phases) of a cell cycle. However, if the input starts outside of the window, cells will have to wait until the open window of the next cell cycle with the delay time equals to the waiting time. We also assumed that the IFN input onset time for each single cell is a random number uniformly distributed within a cell cycle. The length of a full cell cycle was estimated to be 21.82 hrs based on the single-cell time trace measurements (Figure 2—figure supplement 1). The model was fit to the experimentally-determined distribution of USP18 delay times within a cell cycle (Figure 6B; the data from Figure 4E) and we obtained an estimate of the open window length to be 7.3 hrs (~33% of 21.82 hrs). Using these experimentally constrained parameters, we then performed stochastic simulations of single-cell responses to different pretreatment experiments, by introducing noise to gene expression reactions. We observed that the 24-hr pretreatment effectively induced UPS18 upregulation, to a much higher extent than those upon 2-hr and 10-hr pretreatments. Importantly, as shown in Figure 6C, the higher levels of USP18 expression by the prolonged pretreatment lead to reduced IRF9 induction upon the second stimulation at the single-cell level, qualitatively in agreement with our experimental data (Figure 6D).
 
@@ -96,15 +192,95 @@ Finally, due to the COVID-19 pandemic caused by SARS-CoV-2, there is an urgency 
 
 ## Materials and methods
 
-## Cell cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB</td>
+      <td>This paper</td>
+      <td>NHM003</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry</td>
+      <td>This paper</td>
+      <td>NHM008</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry, PIRF9-IRF9-P2A-mCitrine</td>
+      <td>This paper</td>
+      <td>NHM025</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry, PIRF9-IRF9-P2A-mCitrine, shRNA USP18</td>
+      <td>This paper</td>
+      <td>NHM026</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry, PIRF9-IRF9-P2A-mCitrine, shRNA USP18 negative control</td>
+      <td>This paper</td>
+      <td>NHM027</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry, PIRF9-IRF9-P2A-mCitrine, shRNA SOCS1</td>
+      <td>This paper</td>
+      <td>NHM031</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PSTAT1-STAT1-mCherry, PIRF9-IRF9-P2A-mCitrine, PUSP18-NLS-mCerulean-USP18</td>
+      <td>This paper</td>
+      <td>NHM032</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PUSP18-NLS-mCerulean-USP18, PCMV-DHB-mCherry</td>
+      <td>This paper</td>
+      <td>NHM035</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa PACTB-NLS-2iRFP-P2A-ACTB, PUSP18-NLS-mCerulean-USP18, PCMV-mCh-Gem1-P2A-CFP-Cdt1</td>
+      <td>This paper</td>
+      <td>NHM036</td>
+      <td>Available upon request from Hao lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cultures
 
 HeLa and HEK293T were ordered from ATCC (ATCC CCL-2 and ATCC CRL-11268, respectively) and tested negative for Mycoplasma using Mycoplasma detection kit (Southern Biotech). HeLa and HEK293T cells were cultured in Dullbecco minimal essential medium (DMEM: Thermo Scientific HyClone #SH30022FS) supplemented with 10% fetal bovine serum, 4 mM L-glutamine, 100 I.U./ml penicillin and 100 μg/ml streptomycin at 37°C, 5% CO2 and 90% humidity. The imaging media is phenol red free DMEM (Life Technology-Gibco) with identical supplements as the culture medium. The transfections were performed with 1 μg DNA: 2 μl Fugene HD (Promega E2311) ratio. Cells were seeded at 300,000 cells/well in six-well plate for 18 hrs before transfection. Two days after transfection puromycin was added to the medium at 1 μg/ml, and cells were selected for 2 days. Survival cells were grown for another 7 days before sorted with FACS into 96-well and expanded into monoclonal cell lines.
 
-## Drug treatments
+### Drug treatments
 
 Cells were treated with 100 ng/mL recombinant human IFN-α 1a (Prospec: cyt-520). Lovastatin (Selleck Chemicals, S2061) was used at 5 μM and Roscovitine (Sigma-Aldrich, R7772) was used at 5 μM. Decitabine (Sigma-Aldrich, A3656) was used at 100 μM. We note that we did not observe any cell death in the decitabine experiments. In our system, decitabine at 100 μM slowed down cell growth, but did not cause apoptosis at least during the time scales of our experiments. However, we did observe cell death at 200 μM decitabine.
 
-## Cell line construction
+### Cell line construction
 
 We followed the CRISPR/Cas9 protocol (Ran et al., 2013) to construct the reporter cell line. In general, the gRNAs were designed by online CRISPR tool (http://crispr.mit.edu) and the DNA oligos were ordered from Eurofins Genomics, annealed and cloned into pSpCas9(BB)−2A-Puro (Addgene #48139) vector plasmids. gRNA plasmids were transfected into HEK293T cells and tested for gRNA efficiency using the T7 endonuclease assay. Only the most efficient gRNA was used with the donor DNA. The donor plasmids were constructed using Gibson assembly method. We used site-directed in-vitro mutagenesis to make synonymous substitution in the donor plasmids to avoid gRNA recognition and Cas9 cutting of the linearized donor DNA.
 
@@ -116,48 +292,100 @@ For the cell cycle reporter cell lines, we transfected USP18 CRISPR constructs i
 
 Primers used in this study were listed in Supplementary file 1. Plasmids and cell lines constructed in this study were listed in Supplementary file 2 and Key Resources Table, respectively.
 
-## Microfluidic and cell culture setup for time-lapse microscopy
+### Microfluidic and cell culture setup for time-lapse microscopy
 
 Fabrication of the microfluidic device was conducted as described previously (Kolnik et al., 2012). For setting up the microfluidic experiments, HeLa cells were washed with dPBS and detached from the culture dish with 0.25% trypsin EDTA, centrifuged at 200 rcf for 3 min and resuspended with the complete imaging medium at a density of 7–10 million cells per mL. The suspension was loaded into the microfluidic device and allow the cells to adhere for at least 36 hrs in the standard incubator (37°C, 5% CO2 and 90% humidity). The detail of the loading protocol is described previously (Kolnik et al., 2012). The device was set up in a customized chamber with 5% CO2 and 37°C. The flow of the media was 1 ml/hr and the control of the valves were done with customized Arduino board.
 
 For experiment performed on 24-well tissue culture plate, cells were seeded at 25,000 cells/well for 18 hrs before the treatments. Cells were washed with PBS and replaced with new medium before setting with the microscope to acquire images.
 
-## Image acquisition
+### Image acquisition
 
 Time-lapse images were acquired using a Nikon Ti-E inverted microscope equipped with integrated Perfect-Focus (PFS), Nikon Plan Apochromat Lambda objective lens, and Evolve 512 EMCCD camera (Teledyne Photometrics). Time-lapse imaging was performed with an on-stage incubator equipped with temperature control and humidified 5% CO2. Images were taken every 5 min for phase, Cy5.5 and mCherry channel and every 20 min for YFP and 30 min for CFP using Nikon NES element software.
 
-## Image analysis and single-cell tracking
+### Image analysis and single-cell tracking
 
 Background correction was performed using ImageJ ‘rolling ball’ background subtraction algorithm with 50-pixel radius. Nuclear segmentation was done using the nuclear marker iRFP reporter and then refined by marker-based watershed and the mask was generated. The phase images were used to generate masks for whole-cell segmentation. The masks were applied to other channels to quantify fluorescent intensity. Single-cell segmentation, tracking and quantification were performed using a custom MATLAB code developed in our lab, as described previously (Li et al., 2017a; Li et al., 2017b).
 
-## Cell cycle phase inference
+### Cell cycle phase inference
 
 From the single-cell time traces, we used nuclear and cell morphology changes as markers to identify each cell division, since HeLa cells become rounded and non-adherent when dividing. For CDK2 activity reporter, within one cell cycle G1, S and G2 were identified based on the intensity and dynamics of nuclear DHB-mCherry. Similarly, for the FUCCI reporter, G1 phase was classified as the phase between the end of cell division and the time the YFP-Cdt1 signal reaches maximum. S phase began as YFP-Cdt1 signal starts to decline until it intersects with mCherry-Gem1 signal. The rest of the cell cycle was considered the G2 phase.
 
-## Viral replication assay
+### Viral replication assay
 
 Cells were pretreated with 100 ng/ml IFN-α for 0, 10 or 24 hrs and washed with PBS three times followed by 8 hrs of normal medium. Cells were infected by adding normal medium containing 2500 plaque forming units (PFU) of vesicular stomatitis virus (VSV), which corresponds to a multiplicity of infection (MOI) of ~0.01. Two hours after infection, medium was replaced again with normal medium. Viral supernatant was collected 18 hrs post-infection. Viral titer was quantified by plaque assay on BHK cells.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was performed as previously described in detail (Arimoto et al., 2017).
 
-## Computational modeling
+### Computational modeling
 
-## Deterministic model
+#### Deterministic model
 
-The simplified kinetic model of the gene regulatory network consists of two species, IRF9 and USP18, and they impose positive and negative regulation to gene expression, respectively. The positive regulation by IRF9 is represented by the function pf:pf=k1∙IRF9k2+IRF9and the negative regulation by USP18 is represented by the function nf:nf=k3k3+USP18
+The simplified kinetic model of the gene regulatory network consists of two species, IRF9 and USP18, and they impose positive and negative regulation to gene expression, respectively. The positive regulation by IRF9 is represented by the function $pf$:
 
-The expression of IRF9 and USP18 are both regulated by interferon (IFN) input and a combination of these two functions, and are governed by the ordinary differential equations (ODEs) below:ddtIRF9=I(t)∙k4+pf∙nfddtUSP18=I(t)∙Su∙k5+pf∙nfwhere I(t) is the IFN input, taking either 0 or 1. Su is a stepwise function that generates a delay in USP18 upregulation: Su={ 0, when the IFN input time <τ 1,when the IFN input time ≥τwhere τ is the delay time of USP18 production.
+$$
+pf=k_{1}∙\frac{IRF9}{k_{2}+IRF9}
+$$
 
-During the time scale of our experiments, we observed very modest decays of STAT1, IRF9 and USP18. Therefore, to keep our model simple, we considered only protein production, but not decay. We used the model to quantitatively analyze the USP18 delay time. To this end, we systematically assigned the value of τ to be from 1 to 20 hours, while keeping all the other parameters free. We fit the model to the data for each assigned value of τ. The ODEs were solved using custom MATLAB code based on the basic Euler’s method with dt=0.001. Fitting was done using MATLAB built-in function, lsqcurvefit. The time trace data of PIRF9-YFP reporter fluorescence under sustained IFN-α stimulation (Figure 1C) and the data from all the pretreatment experiments (Figure 1F) were used for the fitting. We found that the fitting error (between simulations and data) reaches the minimum when τ is 8 hours (Figure 3B and C). We included the fitting results for each delay time in Figure 3—figure supplement 1B. As shown in the figure, shorter delay times resulted in less desensitization effects from the 24-hr pretreatment, whereas longer delay times led to slightly less priming effects from the 2-hr pretreatment, compared with the data. We note that, these fitting analyses supported the hypothesis that there should be a substantial delay in USP18 induction to account for the observed effects, but did not provide sufficient power to quantitatively constrain the value of the delay time. The best-fit parameters are summarized in Supplementary file 3. The simulated time trace using the best-fit parameters was shown in Figure 3—figure supplement 1C. We note that our model, due to its simplicity, has limited capability to reproduce the dynamic response data. Therefore, we weighted more on the endpoint data under different conditions than the time trace data during fitting. The sensitivity analysis all the parameters was included in Figure 3—figure supplement 1D. To evaluate the roles of positive feedback and negative feedback loops on model performance, we compared the performance of three models: (1) the original model with both positive and negative feedback loops, (2) the model without positive feedback loop; and (3) the model without negative feedback loop. To this end, we computed Akaike information criterion (AIC) using the best-fit parameters for each model. The distribution of the data was assumed to be Gaussian, and the likelihood function was computed as:L=∏12πσ2e-y-y~22σ2where y is experimental result and y~ is the predicted result. Akaike information criterion is computed as:AIC=2k-2ln⁡(L)where k is the number of parameters and L is the computed likelihood function. We found that the original model performs better than the other two models with the smallest AIC, suggesting that both positive and negative feedback loops are important for the model to reproduce experimental data (Figure 3—figure supplement 1E).
+and the negative regulation by USP18 is represented by the function $nf$:
+
+$$
+nf=\frac{k_{3}}{k_{3}+USP18}
+$$
+
+The expression of IRF9 and USP18 are both regulated by interferon (IFN) input and a combination of these two functions, and are governed by the ordinary differential equations (ODEs) below:
+
+$$
+\frac{d}{dt}IRF9=I(t)∙k_{4}+pf∙nf
+$$
+
+
+
+$$
+\frac{d}{dt}USP18=I(t)∙S_{u}∙k_{5}+pf∙nf
+$$
+
+where I(t) is the IFN input, taking either 0 or 1. $S_{u}$ is a stepwise function that generates a delay in USP18 upregulation:
+
+$$
+ S_{u}={ 0, when the IFN input time <\tau 1,when the IFN input time \geq\tau
+$$
+
+where $\tau$ is the delay time of USP18 production.
+
+During the time scale of our experiments, we observed very modest decays of STAT1, IRF9 and USP18. Therefore, to keep our model simple, we considered only protein production, but not decay. We used the model to quantitatively analyze the USP18 delay time. To this end, we systematically assigned the value of $\tau$ to be from 1 to 20 hours, while keeping all the other parameters free. We fit the model to the data for each assigned value of $\tau$. The ODEs were solved using custom MATLAB code based on the basic Euler’s method with dt=0.001. Fitting was done using MATLAB built-in function, lsqcurvefit. The time trace data of PIRF9-YFP reporter fluorescence under sustained IFN-$\alpha$ stimulation (Figure 1C) and the data from all the pretreatment experiments (Figure 1F) were used for the fitting. We found that the fitting error (between simulations and data) reaches the minimum when $\tau$ is 8 hours (Figure 3B and C). We included the fitting results for each delay time in Figure 3—figure supplement 1B. As shown in the figure, shorter delay times resulted in less desensitization effects from the 24-hr pretreatment, whereas longer delay times led to slightly less priming effects from the 2-hr pretreatment, compared with the data. We note that, these fitting analyses supported the hypothesis that there should be a substantial delay in USP18 induction to account for the observed effects, but did not provide sufficient power to quantitatively constrain the value of the delay time. The best-fit parameters are summarized in Supplementary file 3. The simulated time trace using the best-fit parameters was shown in Figure 3—figure supplement 1C. We note that our model, due to its simplicity, has limited capability to reproduce the dynamic response data. Therefore, we weighted more on the endpoint data under different conditions than the time trace data during fitting. The sensitivity analysis all the parameters was included in Figure 3—figure supplement 1D. To evaluate the roles of positive feedback and negative feedback loops on model performance, we compared the performance of three models: (1) the original model with both positive and negative feedback loops, (2) the model without positive feedback loop; and (3) the model without negative feedback loop. To this end, we computed Akaike information criterion (AIC) using the best-fit parameters for each model. The distribution of the data was assumed to be Gaussian, and the likelihood function was computed as:
+
+$$
+L=\prod\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{\frac{-y-y~^{2}}{2\sigma^{2}}}
+$$
+
+where y is experimental result and $y~$ is the predicted result. Akaike information criterion is computed as:
+
+$$
+AIC=2k-2ln⁡(L)
+$$
+
+where k is the number of parameters and L is the computed likelihood function. We found that the original model performs better than the other two models with the smallest AIC, suggesting that both positive and negative feedback loops are important for the model to reproduce experimental data (Figure 3—figure supplement 1E).
 
 We further used the model to predict the responses to repetitive versus sustained IFN inputs. In particular, we simulated the responses to a 5 × 8-hr input and a 40-hr sustained input. We found that the 5 × 8-hr input induced a higher expression of IRF9 than that induced by the 40-hr input, and this difference is USP18-dependent (Figure 3, D and E). This prediction was validated by experiments, as shown in Figure 3F.
 
 All the code in this study is stored at https://github.com/yaj030/2020_Sorn_Elife (Jiang, 2020; copy archived at https://github.com/elifesciences-publications/2020_Sorn_Elife).
 
-## Incorporation of cell cycle regulation in the model
+#### Incorporation of cell cycle regulation in the model
 
-As described in the main text, based on the experimental results in Figures 4 and 5, we assumed that USP18 expression can be induced immediately if the IFN input starts within an open window of a cell cycle and the delay time would be 0. However, if the input misses the window, the cell will have to wait until the open window of the next cell cycle and the delay time will equal to the waiting time. The length of a full cell cycle was estimated to be 21.82 hrs based on the experimental data (Figure 2—figure supplement 1). The model was fit to the experimentally-determined distribution of USP18 delay times within a cell cycle (Figure 6B; the data from Figure 4E) to obtain an estimate of the open window length as 7.3 hrs. The stochastic simulation was performed with the stochastic differential equations:ddtIRF9=I(t)∙k4+pf∙nf+ξIRF9ddtUSP18=I(t)∙Suk5+pf∙nf+ξUSP18in which, ξIRF9 and ξUSP18 are white noise terms, representing expression noise for the two species. Both of the two terms are Gaussian random variables with a mean of zero and the standard deviations set to be 250 and 1000, respectively. These values of noise terms were manually chosen from observing the single-cell data in Figure 6D. The input onset times of single cells within a cell cycle are random numbers uniformly distributed within a cell cycle between 0 to 21.82 hours. Su is no longer a deterministic stepwise function with a fixed delay τ, instead it is a stochastic stepwise function, where the delay τ varies depending on the IFN treatment onset within a cell cycle, as described above. Other parameters are the same as those listed in Supplementary file 3. We simulated the single-cell responses of the pretreatment experiments with different input durations. For each pretreatment condition, we performed 400 simulations where each simulation represented a single cell exposed to the IFN inputs. Our simulated results were plotted as scatter plots in Figure 6C.
+As described in the main text, based on the experimental results in Figures 4 and 5, we assumed that USP18 expression can be induced immediately if the IFN input starts within an open window of a cell cycle and the delay time would be 0. However, if the input misses the window, the cell will have to wait until the open window of the next cell cycle and the delay time will equal to the waiting time. The length of a full cell cycle was estimated to be 21.82 hrs based on the experimental data (Figure 2—figure supplement 1). The model was fit to the experimentally-determined distribution of USP18 delay times within a cell cycle (Figure 6B; the data from Figure 4E) to obtain an estimate of the open window length as 7.3 hrs. The stochastic simulation was performed with the stochastic differential equations:
+
+$$
+\frac{d}{dt}IRF9=I(t)∙k_{4}+pf∙nf+ξ_{IRF9}
+$$
+
+
+
+$$
+\frac{d}{dt}USP18=I(t)∙S_{u}k_{5}+pf∙nf+ξ_{USP18}
+$$
+
+in which, $ξ_{IRF9}$ and $ξ_{USP18}$ are white noise terms, representing expression noise for the two species. Both of the two terms are Gaussian random variables with a mean of zero and the standard deviations set to be 250 and 1000, respectively. These values of noise terms were manually chosen from observing the single-cell data in Figure 6D. The input onset times of single cells within a cell cycle are random numbers uniformly distributed within a cell cycle between 0 to 21.82 hours. $S_{u}$ is no longer a deterministic stepwise function with a fixed delay $\tau$, instead it is a stochastic stepwise function, where the delay $\tau$ varies depending on the IFN treatment onset within a cell cycle, as described above. Other parameters are the same as those listed in Supplementary file 3. We simulated the single-cell responses of the pretreatment experiments with different input durations. For each pretreatment condition, we performed 400 simulations where each simulation represented a single cell exposed to the IFN inputs. Our simulated results were plotted as scatter plots in Figure 6C.
 
 To compare the simulation results with data, we calculated the correlation coefficients of IRF9 and USP18 in Figure 6C (simulation) and 6D (data), and obtained −0.37 and −0.49, respectively. In addition, we calculated the coefficients of variance (CVs) of single cells for IRF9 and USP18 under different pretreatment conditions. For IRF9, we obtained 0.44, 0.52, and 0.46 upon 2-hr, 10-hr, and 24-hr pretreatments, respectively, from the simulated results. We obtained 0.28, 0.37, and 0.56 upon 2-hr, 10-hr, and 24-hr pretreatments, respectively, from the data. For USP18, we obtained 0.71, 0.59, and 0.24 upon 2-hr, 10-hr, and 24-hr pretreatments, respectively, from the simulated results. We obtained 0.41, 0.49, and 0.35 upon 2-hr, 10-hr, and 24-hr pretreatments, respectively, from the data. Based on these analyses, we conclude that our stochastic simulations can qualitatively reproduce the negative correlation between USP18 expression upon pre-treatment and IRF9 induction by the second stimulation, but cannot quantitatively reproduce the expression levels or the cell-to-cell variance under different conditions.

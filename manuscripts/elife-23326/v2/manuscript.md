@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.23326.001 Upon fertilization, the genome of animal embryos remains transcriptionally inactive until the maternal-to-zygotic transition. At this time, the embryo takes control of its development and transcription begins. How the onset of zygotic transcription is regulated remains unclear. Here, we show that a dynamic competition for DNA binding between nucleosome-forming histones and transcription factors regulates zebrafish genome activation. Taking a quantitative approach, we found that the concentration of non-DNA-bound core histones sets the time for the onset of transcription. The reduction in nuclear histone concentration that coincides with genome activation does not affect nucleosome density on DNA, but allows transcription factors to compete successfully for DNA binding. In agreement with this, transcription factor binding is sensitive to histone levels and the concentration of transcription factors also affects the time of transcription. Our results demonstrate that the relative levels of histones and transcription factors regulate the onset of transcription in the embryo. DOI: http://dx.doi.org/10.7554/eLife.23326.001
+Upon fertilization, the genome of animal embryos remains transcriptionally inactive until the maternal-to-zygotic transition. At this time, the embryo takes control of its development and transcription begins. How the onset of zygotic transcription is regulated remains unclear. Here, we show that a dynamic competition for DNA binding between nucleosome-forming histones and transcription factors regulates zebrafish genome activation. Taking a quantitative approach, we found that the concentration of non-DNA-bound core histones sets the time for the onset of transcription. The reduction in nuclear histone concentration that coincides with genome activation does not affect nucleosome density on DNA, but allows transcription factors to compete successfully for DNA binding. In agreement with this, transcription factor binding is sensitive to histone levels and the concentration of transcription factors also affects the time of transcription. Our results demonstrate that the relative levels of histones and transcription factors regulate the onset of transcription in the embryo.
 
 ## Introduction
 
@@ -37,127 +37,127 @@ Here, we analyze the onset of zygotic transcription in zebrafish embryos. With a
 
 ## Results
 
-In zebrafish, zygotic transcription starts ~3 hr post-fertilization, around the tenth cell division (
+In zebrafish, zygotic transcription starts ~3 hr post-fertilization, around the tenth cell division (Aanes et al., 2011; Harvey et al., 2013; Heyn et al., 2014; Kane and Kimmel, 1993; Pauli et al., 2012) (Figure 1A). To analyze the onset of transcription in the embryo in detail, we identified six genes that are not maternally provided and that have previously been shown to be activated at the onset of genome activation (Aanes et al., 2011; Pauli et al., 2012) (Figure 1—figure supplement 1A). At the 1000-cell (1K) stage, transcripts can be detected, especially when choosing late stage embryos (Figure 1B). Thus, to clearly distinguish between transcription being off and on, we analyzed early 1K and (mid) high stage embryos. Using this approach, analysis by qPCR allowed us to detect consistent induction of these genes at high stage (Figure 1B and Figure 1—figure supplement 1B). We will refer to the stages before and after induction as before and following genome activation. To relate the onset of transcription to the number of cells present in the embryo, we next counted the number of cells in embryos ranging from 1K to dome stage. We imaged DAPI-stained nuclei on a two-photon microscope and counted them using the software Imaris (Figure 1C). Using nuclei as a proxy for cell number, we obtained counts that agreed with numbers of cells per embryo obtained by others for 1K (Keller et al., 2008). In contrast, our cell count for high stage, for example, was slightly higher (1900 vs 1800) (Keller et al., 2008), which is consistent with the later high stage which we analyzed (Figure 1D and Figure 1—source data 1). We conclude that the set of genes we selected is robustly induced at high stage, when embryos contain ~1900 cells, and thus represent a reliable system to analyze the onset of zygotic transcription during embryogenesis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig1-v2.jpg)
 
-**Figure 1.:** (A) In zebrafish, transcription begins ~3 hr post-fertilization. Stage-specific drawings of representative embryos are adapted from Kimmel et al. (1995) with permission. (B) Expression of six genes was analyzed by qPCR at 512-cell, early 1K, mid 1K, high and oblong stage in wild-type embryos. Inset shows the same data, focusing on 1K and high stage. Data were taken from Figures 2B and 3D. Error bars represent SEM (n ≥ 4). (C) Cell counting of DAPI-stained nuclei imaged with a two-photon microscope. Multiple z-slices and four tiles were stitched to allow rendering in imaging software Imaris and the calculation of cell number. Image shown is a representative example of high stage. Scale bar, 100 μm. (D) Quantification of the number of cells at 1K, high, oblong, sphere and dome stage. Each data point represents a biological replicate consisting of three embryos. Error bars represent SEM (n = 3). (E) Western blots showing the protein level of histone H3, H4, H2A, and H2B in embryos at 8-cell, 64-cell, 256-cell and 1K stages. Tubulin was used to control for equal loading in each experiment. Blots shown are representative examples (n > 3).DOI: http://dx.doi.org/10.7554/eLife.23326.00310.7554/eLife.23326.004Figure 1—source data 1.At every stage, cells were counted for three biological replicates, each consisting of three embryos.DOI: http://dx.doi.org/10.7554/eLife.23326.004
+**Figure 1.:** (A) In zebrafish, transcription begins ~3 hr post-fertilization. Stage-specific drawings of representative embryos are adapted from Kimmel et al. (1995) with permission. (B) Expression of six genes was analyzed by qPCR at 512-cell, early 1K, mid 1K, high and oblong stage in wild-type embryos. Inset shows the same data, focusing on 1K and high stage. Data were taken from Figures 2B and 3D. Error bars represent SEM (n ≥ 4). (C) Cell counting of DAPI-stained nuclei imaged with a two-photon microscope. Multiple z-slices and four tiles were stitched to allow rendering in imaging software Imaris and the calculation of cell number. Image shown is a representative example of high stage. Scale bar, 100 μm. (D) Quantification of the number of cells at 1K, high, oblong, sphere and dome stage. Each data point represents a biological replicate consisting of three embryos. Error bars represent SEM (n = 3). (E) Western blots showing the protein level of histone H3, H4, H2A, and H2B in embryos at 8-cell, 64-cell, 256-cell and 1K stages. Tubulin was used to control for equal loading in each experiment. Blots shown are representative examples (n > 3).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** eif4g2α as a normalizer gene.(A) Schematic representation of gene-selection procedures. (B) Maternally loaded eif4g2α mRNA was used as a control in qPCR analyses. To test whether the level of eif4g2α mRNA was stable during the stages of interest (not degraded and independent of zygotic transcription), the level of eif4g2α mRNA was analyzed in wild-type embryos and in embryos that were injected with the transcription inhibitor α-amanitin. As a control, sox19a mRNA was analyzed. Indicated are the Ct’s (threshold cycles in quantitative PCR analysis) for eif4g2α and sox19a as obtained at 512-cell, early 1K, high, oblong and late oblong in the presence (minus α-amanitin) and absence (plus α-amanitin) of zygotic transcription. Whereas the Ct’s for sox19a decrease starting at high stage (green), the Ct’s for eif4g2α do not (red). Moreover, α-amanitin inhibits the transcription of sox19a (black) but does not affect the levels of eif4g2α (blue). Together, this shows that eif4g2α is neither degraded nor zygotically transcribed during the stages we analyzed. Shown is a representative example of two replicates.DOI: http://dx.doi.org/10.7554/eLife.23326.005
+**Figure 1—figure supplement 1.:** (A) Schematic representation of gene-selection procedures. (B) Maternally loaded eif4g2α mRNA was used as a control in qPCR analyses. To test whether the level of eif4g2α mRNA was stable during the stages of interest (not degraded and independent of zygotic transcription), the level of eif4g2α mRNA was analyzed in wild-type embryos and in embryos that were injected with the transcription inhibitor α-amanitin. As a control, sox19a mRNA was analyzed. Indicated are the Ct’s (threshold cycles in quantitative PCR analysis) for eif4g2α and sox19a as obtained at 512-cell, early 1K, high, oblong and late oblong in the presence (minus α-amanitin) and absence (plus α-amanitin) of zygotic transcription. Whereas the Ct’s for sox19a decrease starting at high stage (green), the Ct’s for eif4g2α do not (red). Moreover, α-amanitin inhibits the transcription of sox19a (black) but does not affect the levels of eif4g2α (blue). Together, this shows that eif4g2α is neither degraded nor zygotically transcribed during the stages we analyzed. Shown is a representative example of two replicates.
 
-## Increasing the levels of all core histones delays onset transcription and gastrulation
+### Increasing the levels of all core histones delays onset transcription and gastrulation
 
 Experiments in Xenopus embryos led to the hypothesis that histone levels regulate the onset of zygotic transcription (Almouzni and Wolffe, 1995; Amodeo et al., 2015). To analyze whether in zebrafish, histones are potential candidates to be excess repressors, we analyzed the relative levels of the core histones—H3, H4, H2A and H2B—by Western blot. We found that they are present at relatively stable amounts from 8-cell to 1K stage (Figure 1E). Assuming that at 1K stage there are sufficient histones to wrap all genomes into chromatin, this suggests that histones are in excess relative to the amount of DNA during the earlier stages. Thus, histones could function as excess repressors of the zygotic genome in zebrafish.
 
-If histones function as excess repressors in zebrafish embryos, it would be predicted that their level would affect the onset of transcription. To test this, we analyzed the effect of increasing the amount of histones in the embryo on the timing of transcriptional activation. We injected a stoichiometric mixture of the four core histones (from here on referred to as histone cocktail, HC; see Materials and methods for more details) into embryos at the 1-cell stage and then analyzed the onset of transcription for the previously characterized set of genes (
+If histones function as excess repressors in zebrafish embryos, it would be predicted that their level would affect the onset of transcription. To test this, we analyzed the effect of increasing the amount of histones in the embryo on the timing of transcriptional activation. We injected a stoichiometric mixture of the four core histones (from here on referred to as histone cocktail, HC; see Materials and methods for more details) into embryos at the 1-cell stage and then analyzed the onset of transcription for the previously characterized set of genes (Figures 2A and 1B). An increase in the amount of histones delayed the onset of transcriptional activation: transcripts were detected at high stage in uninjected embryos, whereas in embryos injected with histone cocktail, transcription was only induced at oblong stage, a complete developmental stage later (Figure 2B and Figure 2—figure supplement 1A). Comparison of gene expression levels in uninjected and injected embryos at high stage (when transcripts can consistently be detected in uninjected embryos) revealed that the level of induction is reduced significantly upon injection of the histone cocktail but not upon injection of BSA as a control (Figure 2B and Figure 2—figure supplement 1A, bar graphs). Extending the analysis further, a large set of genes in Nanostring analysis confirmed that the effect we observed is general, and not limited to six genes (Figure 2C, Figure 2—figure supplement 2, Figure 2—source data 1). Staging by morphology was corroborated by cell counting, with absolute time between the analyzed stages being constant, confirming that changes in the timing of transcription were not due to effects on cell cycle length or developmental progression (Figure 2—figure supplement 1B). Moreover, the injected histones can be incorporated into chromatin, as indicated by labeling one of them with Cy5 and detecting this label in chromatin when imaging embryos after injection (Figure 2—figure supplement 1C), confirming that they are functional. Together, these data show that an increase in the excess amount of histones in the embryo delays the onset of transcription.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic representation of experimental procedure. Histone cocktail (HC) containing ~5800 genomes worth of histones, or BSA was injected into the yolk of 1-cell embryos and qPCR and NanoString analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of mxtx2 and fam212aa was analyzed by qPCR at early 1K, high, and oblong stage in uninjected, BSA-injected and HC-injected embryos. Bar graphs show the same data, focusing on high stage. Error bars represent SEM (n ≥ 13). ***p<0.001 (two-tailed Student’s t test, compared to BSA control). (C) Expression of 53 zygotically expressed genes was analyzed by NanoString analysis at high stage in uninjected, BSA-injected and HC-injected embryos. Mean counts of three independent biological replicates are shown. Location of mxtx2 and fam212aa counts is indicated (See Figure 2—figure supplement 2 for more details). (D) Relative expression level of mxtx2 and fam212aa at high stage, for embryos injected with BSA, HC, and HC minus H3, H4, H2A, or H2B. Error bars represent SEM (n = 7). ***p<0.001 (ordinary one-way ANOVA). (E) Brightfield images of embryos that were not injected, injected with BSA, or injected with HC. Boxed images represent the onset of gastrulation. Scale bar shown for the uninjected 2-cell embryo applies to all treatments except for 24 hpf embryos which have a different scale bar. All scale bars represent 250 μm. hpf, hours post-fertilization. (F) Bar graph shows the quantification of the extra time it takes embryos to start gastrulation upon injecting BSA, HC, or HC minus one histone, compared to uninjected embryos. Error bars represent SEM (n = 27 for BSA, n = 25 for HC, n = 7 for HC minus one histone experiments). ***p<0.001 (ordinary one-way ANOVA with Tukey’s multiple comparison test). In B and D, mRNA levels are normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.00610.7554/eLife.23326.007Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.23326.007
+**Figure 2.:** (A) Schematic representation of experimental procedure. Histone cocktail (HC) containing ~5800 genomes worth of histones, or BSA was injected into the yolk of 1-cell embryos and qPCR and NanoString analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of mxtx2 and fam212aa was analyzed by qPCR at early 1K, high, and oblong stage in uninjected, BSA-injected and HC-injected embryos. Bar graphs show the same data, focusing on high stage. Error bars represent SEM (n ≥ 13). ***p<0.001 (two-tailed Student’s t test, compared to BSA control). (C) Expression of 53 zygotically expressed genes was analyzed by NanoString analysis at high stage in uninjected, BSA-injected and HC-injected embryos. Mean counts of three independent biological replicates are shown. Location of mxtx2 and fam212aa counts is indicated (See Figure 2—figure supplement 2 for more details). (D) Relative expression level of mxtx2 and fam212aa at high stage, for embryos injected with BSA, HC, and HC minus H3, H4, H2A, or H2B. Error bars represent SEM (n = 7). ***p<0.001 (ordinary one-way ANOVA). (E) Brightfield images of embryos that were not injected, injected with BSA, or injected with HC. Boxed images represent the onset of gastrulation. Scale bar shown for the uninjected 2-cell embryo applies to all treatments except for 24 hpf embryos which have a different scale bar. All scale bars represent 250 μm. hpf, hours post-fertilization. (F) Bar graph shows the quantification of the extra time it takes embryos to start gastrulation upon injecting BSA, HC, or HC minus one histone, compared to uninjected embryos. Error bars represent SEM (n = 27 for BSA, n = 25 for HC, n = 7 for HC minus one histone experiments). ***p<0.001 (ordinary one-way ANOVA with Tukey’s multiple comparison test). In B and D, mRNA levels are normalized to the expression of eif4g2α.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Expression of nnr, vox, sox19a, and grhl3 was analyzed by qPCR at early 1K, high, and oblong stage in uninjected, BSA-injected and HC-injected embryos. Bar graphs show the same data, focusing on high stage. Error bars represent SEM (n ≥ 13). ***p<0.001 (two-tailed Student’s t-test, compared to BSA control). (B) Staging by morphology was verified by cell counting. Each data point represents a single embryo. Error bars represent SEM. (C) Confocal microscope images of transgenic fish line Tg(h2afz:h2afz-GFP) injected with Cy5 conjugated to H4. Arrow points at chromatin in dividing cell. Scale bar, 20 μm. (D) Relative expression level of nnr, vox, sox19a, and grhl3 at high stage, for embryos injected with BSA, HC, and HC minus H3, H4, H2A, or H2B. Error bars represent SEM (n = 7). *p<0.05; **p<0.01; ***p<0.001 (ordinary one-way ANOVA). In A and D, expression is normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.008
+**Figure 2—figure supplement 1.:** (A) Expression of nnr, vox, sox19a, and grhl3 was analyzed by qPCR at early 1K, high, and oblong stage in uninjected, BSA-injected and HC-injected embryos. Bar graphs show the same data, focusing on high stage. Error bars represent SEM (n ≥ 13). ***p<0.001 (two-tailed Student’s t-test, compared to BSA control). (B) Staging by morphology was verified by cell counting. Each data point represents a single embryo. Error bars represent SEM. (C) Confocal microscope images of transgenic fish line Tg(h2afz:h2afz-GFP) injected with Cy5 conjugated to H4. Arrow points at chromatin in dividing cell. Scale bar, 20 μm. (D) Relative expression level of nnr, vox, sox19a, and grhl3 at high stage, for embryos injected with BSA, HC, and HC minus H3, H4, H2A, or H2B. Error bars represent SEM (n = 7). *p<0.05; **p<0.01; ***p<0.001 (ordinary one-way ANOVA). In A and D, expression is normalized to the expression of eif4g2α.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** NanoString’s nCounter technology was used to analyze changes in gene expression upon HC injection for a large number of genes (see Materials and methods for more details). From a custom probe set with 84 zygotically expressed genes and 12 controls genes (see Figure 2—source data 1), 53 genes that are induced at high stage were used for analysis. mRNA was collected from high stage embryos that were uninjected, BSA-injected and HC-injected (n = 3). (A) Fold difference in expression of twelve control genes, for embryos injected with BSA or HC compared to uninjected. Control genes are maternally provided and were previously shown to be stable from 512 cell to dome stage in NanoString analysis (data not shown). Error bars represent SEM (n = 3). No significant difference was detected between BSA or HC-injected in control genes (Ordinary one-way ANOVA with Tukey’s multiple comparison test), showing that there are no differences in total RNA amount between samples. (B) Proportion of genes affected by BSA or HC injection at high stage in NanoString analysis. Error bars represent SEM (n = 3). A large proportion of genes are down-regulated in HC-injected embryos (86%) compared to BSA-injected embryos (4%). (C) Mean counts of three independent biological replicates in NanoString analysis for uninjected, BSA-injected and HC-injected embryos compared to a high (left) and 1K (right) standard from uninjected embryos. While uninjected and BSA-injected are statistically similar to the high standard, HC-injected is statistically similar to the 1K standard. Thus, HC-injected embryos that are developmentally at high stage, are transcriptionally delayed by one developmental stage. Error bars represent SEM (n = 3). ***p<0.001 (Ordinary one-way ANOVA with Tukey’s multiple comparison test). (D) Fold difference in mRNA counts for HC-injected and BSA-injected compared to uninjected embryos at high stage for all genes that were analyzed by qPCR in this study. Error bars represent SEM (n = 3). *p<0.05; **p<0.01; ***p<0.001 (two-tailed Student’s t-test ratio paired, compared to BSA-injected).DOI: http://dx.doi.org/10.7554/eLife.23326.009
+**Figure 2—figure supplement 2.:** NanoString’s nCounter technology was used to analyze changes in gene expression upon HC injection for a large number of genes (see Materials and methods for more details). From a custom probe set with 84 zygotically expressed genes and 12 controls genes (see Figure 2—source data 1), 53 genes that are induced at high stage were used for analysis. mRNA was collected from high stage embryos that were uninjected, BSA-injected and HC-injected (n = 3). (A) Fold difference in expression of twelve control genes, for embryos injected with BSA or HC compared to uninjected. Control genes are maternally provided and were previously shown to be stable from 512 cell to dome stage in NanoString analysis (data not shown). Error bars represent SEM (n = 3). No significant difference was detected between BSA or HC-injected in control genes (Ordinary one-way ANOVA with Tukey’s multiple comparison test), showing that there are no differences in total RNA amount between samples. (B) Proportion of genes affected by BSA or HC injection at high stage in NanoString analysis. Error bars represent SEM (n = 3). A large proportion of genes are down-regulated in HC-injected embryos (86%) compared to BSA-injected embryos (4%). (C) Mean counts of three independent biological replicates in NanoString analysis for uninjected, BSA-injected and HC-injected embryos compared to a high (left) and 1K (right) standard from uninjected embryos. While uninjected and BSA-injected are statistically similar to the high standard, HC-injected is statistically similar to the 1K standard. Thus, HC-injected embryos that are developmentally at high stage, are transcriptionally delayed by one developmental stage. Error bars represent SEM (n = 3). ***p<0.001 (Ordinary one-way ANOVA with Tukey’s multiple comparison test). (D) Fold difference in mRNA counts for HC-injected and BSA-injected compared to uninjected embryos at high stage for all genes that were analyzed by qPCR in this study. Error bars represent SEM (n = 3). *p<0.05; **p<0.01; ***p<0.001 (two-tailed Student’s t-test ratio paired, compared to BSA-injected).
 
 To test whether the effect we observe upon injecting the histone cocktail required an increase in the level of all four core histones, we next removed one histone at a time from the cocktail. The total protein content was kept constant by raising the level of the other three histones. Removing any histone from the histone cocktail impaired the ability of the histone cocktail to delay the onset of transcription (Figure 2D and Figure 2—figure supplement 1D). These results show that the injection of basic proteins into the embryo per se does not affect the onset of transcription. Moreover, these results argue that the effect of the histone cocktail relies on increasing the amount of all four histones and suggest that histones exert their repressive effect together.
 
 Since the onset of zygotic transcription is known to be required for gastrulation (Kane et al., 1996; Lee et al., 2013; Zamir et al., 1997), we analyzed the effect of injecting the histone cocktail on the onset of gastrulation. Embryos injected with the histone cocktail initiated gastrulation later than uninjected embryos (Figure 2E). Although there was a delay following injection of BSA, it was significantly shorter than that observed with the histone cocktail and appeared to be a non-specific effect of injection (Figure 2F). Following the onset of gastrulation, embryos appeared to develop normally (Figure 2E, 24 hpf). Removing any histone from the histone cocktail reduced the developmental delay we observed upon injecting the histone cocktail (Figure 2F). We note that the developmental delay in the minus-one histone experiments was not reduced to the level observed for BSA injections. We therefore expect that injecting histones has an additional effect on developmental progression that is independent of the delay in transcription. We conclude that the delay in transcription as a consequence of increased histone levels causes a delay in the onset of gastrulation.
 
-## Decreasing the pool of available histones causes premature transcription
+### Decreasing the pool of available histones causes premature transcription
 
-If the level of histones regulates zygotic genome activation, it can also be predicted that a reduction in histone levels would result in the premature induction of transcription. A large fraction of the histones that is present at the onset of transcription is loaded in the egg already as protein (
+If the level of histones regulates zygotic genome activation, it can also be predicted that a reduction in histone levels would result in the premature induction of transcription. A large fraction of the histones that is present at the onset of transcription is loaded in the egg already as protein (Figure 1E). Pentraxin three is a soluble pattern recognition molecule that has been shown to rapidly and irreversibly bind to the core histones H3 and H4 (Bottazzi et al., 2010; Daigo et al., 2014). We injected mRNA encoding PTX3 fused to RFP, to reduce the pool of available histones H3 and H4 in the zebrafish embryo (Figure 3A). As expected, total levels of H3 and H4 were not affected upon injection of this fusion construct (Figure 3B). Next, we examined if H4 co-precipitated with RFP-tagged PTX3 (Figure 3C). Indeed, this histone associates with PTX3 in vivo, suggesting that the injection of PTX3 results in a reduction of the soluble amount of histones H3 and H4 in zebrafish cells. A decrease in the soluble amount of histones caused premature transcription activation: transcripts were detected at early 1K stage, while in the uninjected embryos, transcripts were only detected at mid 1K (Figure 3D and Figure 3—figure supplement 1A). We included embryos at mid 1K in this experiment, in order to increase our resolution for detecting changes in transcription. Comparison of gene expression levels in uninjected and ptx3-injected embryos at early 1K stage (one time-point prior to when genes are first induced in uninjected embryos) revealed that the level of expression is increased upon injection of ptx3 mRNA (Figure 3D and Figure 3—figure supplement 1A, bar graphs). A control injection with rfp mRNA did not result in co-precipitation with H4 (Figure 3C), nor did it affect the onset of transcription (Figure 3D and Figure 3—figure supplement 1A). Staging by morphology was corroborated by cell counting (Figure 3—figure supplement 1B), with absolute time between the analyzed stages being constant. Taken together, our results provide evidence that the level of core histones in the embryo dictates the timing of transcriptional activation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic representation of experimental procedure. ptx3-rfp or rfp (control) mRNA was injected into the cell of 1-cell embryos and qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Western blot analysis of PTX3, histone H3 and H4 levels at 512-cell, 1K and high stage in uninjected embryos, rfp and ptx3-rfp mRNA-injected embryos. Tubulin was used to control for equal loading. Blots shown are representative examples (n = 3). (C) Western blot analysis for histone H4 after a pull-down using an RFP antibody at 1K stage. Uncoupled beads were used as a negative control. Blot shown is a representative example (n = 3). (D) Expression of mxtx2 and fam212aa was analyzed by qPCR at 512-cell, early 1K, and mid 1K stage in uninjected, rfp mRNA-injected and ptx3-rfp mRNA-injected embryos. Bar graphs focus on early 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05; **p<0.01 (two-tailed Student’s t-test, compared to rfp mRNA control). mRNA levels are normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.010
+**Figure 3.:** (A) Schematic representation of experimental procedure. ptx3-rfp or rfp (control) mRNA was injected into the cell of 1-cell embryos and qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Western blot analysis of PTX3, histone H3 and H4 levels at 512-cell, 1K and high stage in uninjected embryos, rfp and ptx3-rfp mRNA-injected embryos. Tubulin was used to control for equal loading. Blots shown are representative examples (n = 3). (C) Western blot analysis for histone H4 after a pull-down using an RFP antibody at 1K stage. Uncoupled beads were used as a negative control. Blot shown is a representative example (n = 3). (D) Expression of mxtx2 and fam212aa was analyzed by qPCR at 512-cell, early 1K, and mid 1K stage in uninjected, rfp mRNA-injected and ptx3-rfp mRNA-injected embryos. Bar graphs focus on early 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05; **p<0.01 (two-tailed Student’s t-test, compared to rfp mRNA control). mRNA levels are normalized to the expression of eif4g2α.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Expression of nnr, vox, sox19a, and grhl3 was analyzed by qPCR at 512 cell, early 1K and mid 1K in uninjected embryos, embryos injected with rfp (control) mRNA and embryos injected with ptx3-rfp mRNA. Bar graphs show the same data, focusing on early 1K stage. Error bars represent SEM (n ≥ 4). n.s. p>0.05; *p<0.05; **p<0.01 (two-tailed Student’s t-test, compared to rfp mRNA control). Expression is normalized to the expression of eif4g2α. (B) Staging by morphology was verified by cell counting at the stages used for the analysis. Each data point represents a single embryo. Error bars represent SEM.DOI: http://dx.doi.org/10.7554/eLife.23326.011
+**Figure 3—figure supplement 1.:** (A) Expression of nnr, vox, sox19a, and grhl3 was analyzed by qPCR at 512 cell, early 1K and mid 1K in uninjected embryos, embryos injected with rfp (control) mRNA and embryos injected with ptx3-rfp mRNA. Bar graphs show the same data, focusing on early 1K stage. Error bars represent SEM (n ≥ 4). n.s. p>0.05; *p<0.05; **p<0.01 (two-tailed Student’s t-test, compared to rfp mRNA control). Expression is normalized to the expression of eif4g2α. (B) Staging by morphology was verified by cell counting at the stages used for the analysis. Each data point represents a single embryo. Error bars represent SEM.
 
-## Onset of transcription coincides with a reduction in nuclear histone concentration
+### Onset of transcription coincides with a reduction in nuclear histone concentration
 
-If histones were to function as excess repressors according to the original excess repressor model, the concentration of non-DNA-bound histones would be predicted to decrease during the cleavage stages of development. To test this prediction, we determined the absolute (molar) content and, correspondingly, the number of molecules of core histones in embryos using a quantitative mass spectrometry approach we recently developed (Kumar et al., unpublished) (
+If histones were to function as excess repressors according to the original excess repressor model, the concentration of non-DNA-bound histones would be predicted to decrease during the cleavage stages of development. To test this prediction, we determined the absolute (molar) content and, correspondingly, the number of molecules of core histones in embryos using a quantitative mass spectrometry approach we recently developed (Kumar et al., unpublished) (Figure 4A and Materials and methods for more details). We analyzed embryos ranging from 1-cell to shield stage, when gastrulation is well underway (Figure 4B and Figure 4—source data 1). We observed an increase in the levels of histone protein until 1K stage, after which levels remained reasonably stable until sphere stage. Then, a rapid increase was observed, which is most likely the result of translation of zygotically produced histone mRNAs. Knowing the absolute numbers of histones per embryo as well as the calculated number of histones required to wrap a genome (Figure 4B, Figre 4—source data 1), allowed us to derive the number of genomes worth of histones per embryo. From that, we derived the number of excess (non-DNA bound) histones per cell in genomes worth of histones, for embryos ranging from 1-cell to dome stage (Figure 4C and Materials and methods for more details). For example, at the 1-cell stage, there are 3098 times more histones per cell than are required to wrap the genome into chromatin. Due to the exponential increase in cell number during cleavage divisions, this number has dropped dramatically at 1K stage (Figure 4C). However, due to the large number of histones that is loaded in the oocyte, as well as the increase in histone level due to translation (Figure 4B), there are still nine genomes worth of non-DNA-bound histones per cell. Moreover, because what matters for protein-binding kinetics is the concentration, we next calculated the concentration of non-DNA-bound histones. Because the cleavage divisions are not accompanied by significant growth (the total animal cap volume increases by 29% from 128-cell to 1K, Figure 4—figure supplement 1A), the decreasing number of histones per cell is accompanied by a decreasing cellular volume, and the concentration of non-DNA bound histones in the cell does not change substantially (Figure 4D). Taken together, this shows that during transcription activation there is still a significant amount of non-DNA-bound histone and that the overall concentration of non-DNA-bound histones in the cell has not decreased by much.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig4-v2.jpg)
 
-**Figure 4.:** (A) Our quantitative mass spectrometry approach. Zebrafish histones were quantified by comparing the abundances of native histone peptides with corresponding isotopically labeled peptides from the chimeric protein; chimeric protein was quantified by comparing the abundance of labeled (from chimera) and native (from standard) BSA peptides (see Materials and methods for more details). (B) Quantification of the number of histone H3, H4, H2A, and H2B per embryo at indicated stages by quantitative mass spectrometry. Error bars represent SEM (n = 3). (C) The excess number of histones per cell (in genomes worth) was calculated using H2B levels (Figure 4—source data 1) and cell numbers (Figure 1—source data 1), and by assuming an average of 1.5 genomes per cell (see Materials and methods for more details). For better visualization of the data at later developmental stages the values for 1-cell and 8-cell are not shown in the graph but are 3098 and 518, respectively. Error bars represent SEM (n = 3). GW, genomes worth of histones. (D) The total concentration of non-DNA-bound histones was calculated by dividing the excess genomes worth of histone H2B per embryo by the volume of the animal cap at the respective stages (Figure 4—figure supplement 1A). Error bars represent SEM of animal cap volumes (n = 3). GW, genomes worth of histones. (E) The nuclear concentration of non-DNA-bound histones was calculated from immunofluorescence (from left to right n = 12, 12, 14, 15) combined with live imaging and mass spectrometry data (see Materials and methods for more details). Error bars represent SEM of animal cap volumes (n = 3). (F) Relative differences in H2B intensity between chromatin fractions of 256-cell, 512-cell, 1K, and high stage embryos. Sphere stage embryos were used to determine the linear range of H2B detection (see also Figure 4—figure supplement 1C). Blots shown are representative examples (n ≥ 3). Plots show observed fold differences in H2B intensity in chromatin fractions comparing indicated stages compared to the differences that would be expected if the intensity were to scale with the amount of DNA (E, embryo). (G) Competition model. See text for more details (TFBS, transcription-factor-binding site).DOI: http://dx.doi.org/10.7554/eLife.23326.01210.7554/eLife.23326.013Figure 4—source data 1.See Materials and methods for details on calculations.DOI: http://dx.doi.org/10.7554/eLife.23326.01310.7554/eLife.23326.014Figure 4—source data 2.H4-sfGFP (left, green channel) intensities are transformed to logarithmic scale to compensate for intensity increase due to ongoing translation of mRNA into fluorescent fusion protein. PCNA-RFP (right, magenta channel) intensities are linear. Both channels are maximum z-projections, with a view upon the animal cap, time stamps are given in hour:minute format, starting with the first acquired frame.DOI: http://dx.doi.org/10.7554/eLife.23326.014
+**Figure 4.:** (A) Our quantitative mass spectrometry approach. Zebrafish histones were quantified by comparing the abundances of native histone peptides with corresponding isotopically labeled peptides from the chimeric protein; chimeric protein was quantified by comparing the abundance of labeled (from chimera) and native (from standard) BSA peptides (see Materials and methods for more details). (B) Quantification of the number of histone H3, H4, H2A, and H2B per embryo at indicated stages by quantitative mass spectrometry. Error bars represent SEM (n = 3). (C) The excess number of histones per cell (in genomes worth) was calculated using H2B levels (Figure 4—source data 1) and cell numbers (Figure 1—source data 1), and by assuming an average of 1.5 genomes per cell (see Materials and methods for more details). For better visualization of the data at later developmental stages the values for 1-cell and 8-cell are not shown in the graph but are 3098 and 518, respectively. Error bars represent SEM (n = 3). GW, genomes worth of histones. (D) The total concentration of non-DNA-bound histones was calculated by dividing the excess genomes worth of histone H2B per embryo by the volume of the animal cap at the respective stages (Figure 4—figure supplement 1A). Error bars represent SEM of animal cap volumes (n = 3). GW, genomes worth of histones. (E) The nuclear concentration of non-DNA-bound histones was calculated from immunofluorescence (from left to right n = 12, 12, 14, 15) combined with live imaging and mass spectrometry data (see Materials and methods for more details). Error bars represent SEM of animal cap volumes (n = 3). (F) Relative differences in H2B intensity between chromatin fractions of 256-cell, 512-cell, 1K, and high stage embryos. Sphere stage embryos were used to determine the linear range of H2B detection (see also Figure 4—figure supplement 1C). Blots shown are representative examples (n ≥ 3). Plots show observed fold differences in H2B intensity in chromatin fractions comparing indicated stages compared to the differences that would be expected if the intensity were to scale with the amount of DNA (E, embryo). (G) Competition model. See text for more details (TFBS, transcription-factor-binding site).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Changes in total animal cap volume, the fraction of the animal cap volume occupied by nuclei, and the size of individual nuclei for indicated stages. Volumes were measured by lightsheet microscopy of embryos injected with mRNA encoding H4-sfGFP and subsequent automated image analysis (error bars represent SEM, n = 3 embryos; offspring of transgenic PCNA-RFP was used to monitor integrity of imaged nuclei via a second color channel). (B) Image sequences showing nuclear import of H4-sfGFP fusion protein at 32- to 64- and 128-cell stages. Color scaling was kept constant and linear within each stage. Images show a representative maximum z-projection of a subset of a 3D microscopy stack of one of the embryos used in A. (C) The linear range of Western blots was determined using chromatin of sphere-stage embryos. Plotted are observed versus expected fold differences in H2B intensity using different numbers of embryos (n ≥ 3). Band intensities of test stages (Figure 4F) were only used for the analysis when they fell within the linear range.DOI: http://dx.doi.org/10.7554/eLife.23326.015
+**Figure 4—figure supplement 1.:** (A) Changes in total animal cap volume, the fraction of the animal cap volume occupied by nuclei, and the size of individual nuclei for indicated stages. Volumes were measured by lightsheet microscopy of embryos injected with mRNA encoding H4-sfGFP and subsequent automated image analysis (error bars represent SEM, n = 3 embryos; offspring of transgenic PCNA-RFP was used to monitor integrity of imaged nuclei via a second color channel). (B) Image sequences showing nuclear import of H4-sfGFP fusion protein at 32- to 64- and 128-cell stages. Color scaling was kept constant and linear within each stage. Images show a representative maximum z-projection of a subset of a 3D microscopy stack of one of the embryos used in A. (C) The linear range of Western blots was determined using chromatin of sphere-stage embryos. Plotted are observed versus expected fold differences in H2B intensity using different numbers of embryos (n ≥ 3). Band intensities of test stages (Figure 4F) were only used for the analysis when they fell within the linear range.
 
 Because transcription takes place in the nucleus, we next wanted to investigate the concentration of non-DNA-bound histones in this compartment of the cell. First, we analyzed the dynamics of histone localization by lightsheet microscopy of living embryos (Figure 4—figure supplement 1B and Figure 4—source data 2). As expected, we found a close coordination between the formation of nuclei after cell division and the import of histones from the cytoplasm into the nucleus: during each cell cycle, non-DNA-bound histones are concentrated in the nucleus. A direct quantification of non-DNA-bound, endogenous histones in the nucleus is difficult, but by combining lightsheet microscopy measurements of both the nuclear volume fraction and the relative fluorescence intensity of histone H4 in cytoplasm and nucleus with the absolute amount of histone H4 as quantified by mass spectrometry, we were able to calculate the nuclear concentration of non-DNA-bound histones from 256-cell to oblong stage (Figure 4E, Figure 4—figure supplement 1A and see Materials and methods for more details). Importantly, our calculations indicate a decrease in the nuclear concentration of non-DNA-bound histones at the onset of transcription. In combination with our finding that histone levels determine the timing of transcription, this suggests that a decrease in the concentration of non-DNA-bound histones in the nucleus causes the onset of transcription during embryogenesis.
 
-## Nucleosome density on DNA is unchanged during genome activation
+### Nucleosome density on DNA is unchanged during genome activation
 
 We next analyzed whether the decreased concentration of non-DNA bound histones in the nucleus is accompanied by a reduced density of nucleosomes on chromatin. We quantified the amount of histone H2B in the chromatin fraction of embryos ranging from 256-cell to high stage. Comparing the amount of histone H2B between stages revealed that the level of H2B scales with the amount of DNA (Figure 4F and Figure 4—figure supplement 1C). This is in agreement with a previous study in which we found that the density of nucleosomes does not significantly change during genome activation (Zhang et al., 2014). Our results reveal that global nucleosome density on DNA does not change during genome activation. Taken together, this suggests that the concentration of non-DNA-bound histones in the nucleus determines the timing of transcription without the need for a significant change in global nucleosome density.
 
-## A competition model for the onset of transcription
+### A competition model for the onset of transcription
 
 Our finding that the concentration of histones in the nucleus determines the onset of transcription without a significant change in global nucleosome density on DNA suggests that a simple depletion model cannot explain a role for histone levels in the timing of zygotic transcription. To explain the effect of histone levels on zygotic genome activation, we hypothesized that the transcriptional machinery (for simplicity referred to as transcription factors) competes with nucleosome-forming histones for binding to only a minimal fraction of the total DNA, corresponding to transcription-factor-binding sites (Figure 4G). In such a model, local substitution of nucleosomes by transcription factors allows for transcription to be activated, but will cause only localized changes in nucleosome positioning, and will barely affect the average nucleosome density. Transcription factors would lose the competition for DNA binding in the presence of an excess of histones (pre-ZGA), whereas a reduction of the concentration of non-DNA-bound histones in the nucleus would allow transcription factors to gain access to DNA (approaching ZGA) and initiate transcription (ZGA).
 
-## Decreasing transcription factor levels delays the onset of transcription
+### Decreasing transcription factor levels delays the onset of transcription
 
-If competition between nucleosome-forming histones and the transcriptional machinery determines the onset of transcription, it would be predicted that the levels at which transcription factors are present could also affect the timing of zygotic transcription. To test this, we changed the level of Pou5f3, a transcription factor that has been identified as being required for the activation of a large set of genes during genome activation (
+If competition between nucleosome-forming histones and the transcriptional machinery determines the onset of transcription, it would be predicted that the levels at which transcription factors are present could also affect the timing of zygotic transcription. To test this, we changed the level of Pou5f3, a transcription factor that has been identified as being required for the activation of a large set of genes during genome activation (Lee et al., 2013; Leichsenring et al., 2013; Onichtchouk et al., 2010). To analyze the effect on the onset of transcription (Figure 5A), we selected five genes that are activated at the onset of genome activation and that have been identified as Pou5f3 targets (Figure 1—figure supplement 1A) (Onichtchouk et al., 2010).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic representation of experimental procedure. Pou5f3 levels were decreased by injecting a morpholino, or increased by injecting pou5f3 mRNA (in combination with sox19b mRNA) into the cell of 1-cell embryos. Controls used were a dead-end morpholino and gfp mRNA, respectively. qPCR and ChIP-qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of apoeb and dusp6 was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Pou5f3 morpholino-injected embryos. The data in the bar graphs focus on the mid 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05 (two-tailed Student’s t-test, compared to control MO). (C) Expression of apoeb and dusp6 was analyzed by qPCR at 512-cell, early 1K and high stage in uninjected embryos, embryos injected with control mRNA and embryos injected with pou5f3 and sox19b mRNA. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). **p<0.01 (two-tailed Student’s t-test, compared to control mRNA). (D) Binding of Pou5f3 to its respective binding sites for apoeb and dusp6 (Leichsenring et al., 2013) and control region was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with pou5f3 + sox19b mRNA or pou5f3 + sox19b mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. Location of primer sets in respect to the transcription start-site used for ChIP-qPCR analysis are indicated by arrows. A genome control region on chromosome 23 was also used. Error bars represent SEM (n = 5). **p<0.01 (two-tailed Student’s t-test ratio paired, compared to pou5f3 + sox19b mRNA-injected embryos). In B and C, mRNA levels are normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.016
+**Figure 5.:** (A) Schematic representation of experimental procedure. Pou5f3 levels were decreased by injecting a morpholino, or increased by injecting pou5f3 mRNA (in combination with sox19b mRNA) into the cell of 1-cell embryos. Controls used were a dead-end morpholino and gfp mRNA, respectively. qPCR and ChIP-qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of apoeb and dusp6 was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Pou5f3 morpholino-injected embryos. The data in the bar graphs focus on the mid 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05 (two-tailed Student’s t-test, compared to control MO). (C) Expression of apoeb and dusp6 was analyzed by qPCR at 512-cell, early 1K and high stage in uninjected embryos, embryos injected with control mRNA and embryos injected with pou5f3 and sox19b mRNA. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). **p<0.01 (two-tailed Student’s t-test, compared to control mRNA). (D) Binding of Pou5f3 to its respective binding sites for apoeb and dusp6 (Leichsenring et al., 2013) and control region was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with pou5f3 + sox19b mRNA or pou5f3 + sox19b mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. Location of primer sets in respect to the transcription start-site used for ChIP-qPCR analysis are indicated by arrows. A genome control region on chromosome 23 was also used. Error bars represent SEM (n = 5). **p<0.01 (two-tailed Student’s t-test ratio paired, compared to pou5f3 + sox19b mRNA-injected embryos). In B and C, mRNA levels are normalized to the expression of eif4g2α.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Pou5f3 morpholino validation. Brightfield images of embryos that were injected with control or Pou5f3 morpholino. Embryos injected with Pou5f3 morpholino arrested at sphere or dome stage, as reported previously (Burgess et al., 2002). Scale bar, 250 μm. Western blot of embryos injected with 50 ng pou5f3-2xHA mRNA alone or in combination with 6 ng Pou5f3 moprholino. As expected, the morpholino reduces the expression of Pou5f3. (B) We injected embryos with Pou5f3 morpholino and analyzed the effect on transcription. Shown are the fold changes in relative expression levels of Pou5f3-morpholino-injected embryos compared to control morpholino-injected embryos at high stage for Pou5f3 targets apoeb, dusp6, klf17, irx7, and klf2b, and non-Pou5f3 targets sox19a, grhl3 and gadd45bb. Reduction of Pou5f3 results in decreased transcription for all Pou5f3 target genes analyzed at high stage, confirming that they are regulated by Pou5f3. Non-targets were not affected. Error bars represent SEM (n = 4). n.s. p>0.05; *p<0.05; **p<0.01; ***p<0.001 (two-tailed Student’s t-test, compared to control morpholino). (C) Expression of klf17, irx7 and klf2b was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Pou5f3 morpholino-injected embryos. Bar graphs focus on mid 1K stage. Error bars represent SEM (n ≥ 4). **p<0.01; **p<0.001 (two-tailed Student’s t-test, compared to control morpholino). (D) Western blot analysis of embryos injected with sox19b-2xHA mRNA alone and in combination with 2 ng of Sox19b morpholino validate the effect of the Sox19b morpholino. (E) Expression of dusp6 was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Sox19b morpholino-injected embryos. dusp6 was selected for analysis because it is the only gene from our selected Pou5f3-target genes that is also regulated by SoxB1 (Lee et al., 2013). Error bars represent SEM (n ≥ 4). (F) Validation of FoxH1 target genes. To verify that the genes we selected require FoxH1 for their expression, we injected embryos with FoxH1 morpholino and analyzed the effect on transcription. Shown are the fold changes in relative expression levels of FoxH1 morpholino-injected embryos compared to control morpholino-injected embryos at high stage for FoxH1 targets dusp6, flh, wnt11 and gadd45bb. Reduction of FoxH1 results in decreased transcription for all FoxH1 target genes. (G) Expression of dusp6, flh, wnt11 and gadd45bb was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and FoxH1 morpholino-injected embryos. All four target genes show a delay in the time when they are first transcribed in the FoxH1 morphants compared to control morpholino-injected embryos. Error bars represent SEM (n ≥ 4). (H) Staging by morphology was verified by cell counting at the stages used for the Pou5f3 morpholino analysis. Each data point represents a single embryo. Error bars represent SEM. Gene expression is normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.017
+**Figure 5—figure supplement 1.:** (A) Pou5f3 morpholino validation. Brightfield images of embryos that were injected with control or Pou5f3 morpholino. Embryos injected with Pou5f3 morpholino arrested at sphere or dome stage, as reported previously (Burgess et al., 2002). Scale bar, 250 μm. Western blot of embryos injected with 50 ng pou5f3-2xHA mRNA alone or in combination with 6 ng Pou5f3 moprholino. As expected, the morpholino reduces the expression of Pou5f3. (B) We injected embryos with Pou5f3 morpholino and analyzed the effect on transcription. Shown are the fold changes in relative expression levels of Pou5f3-morpholino-injected embryos compared to control morpholino-injected embryos at high stage for Pou5f3 targets apoeb, dusp6, klf17, irx7, and klf2b, and non-Pou5f3 targets sox19a, grhl3 and gadd45bb. Reduction of Pou5f3 results in decreased transcription for all Pou5f3 target genes analyzed at high stage, confirming that they are regulated by Pou5f3. Non-targets were not affected. Error bars represent SEM (n = 4). n.s. p>0.05; *p<0.05; **p<0.01; ***p<0.001 (two-tailed Student’s t-test, compared to control morpholino). (C) Expression of klf17, irx7 and klf2b was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Pou5f3 morpholino-injected embryos. Bar graphs focus on mid 1K stage. Error bars represent SEM (n ≥ 4). **p<0.01; **p<0.001 (two-tailed Student’s t-test, compared to control morpholino). (D) Western blot analysis of embryos injected with sox19b-2xHA mRNA alone and in combination with 2 ng of Sox19b morpholino validate the effect of the Sox19b morpholino. (E) Expression of dusp6 was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and Sox19b morpholino-injected embryos. dusp6 was selected for analysis because it is the only gene from our selected Pou5f3-target genes that is also regulated by SoxB1 (Lee et al., 2013). Error bars represent SEM (n ≥ 4). (F) Validation of FoxH1 target genes. To verify that the genes we selected require FoxH1 for their expression, we injected embryos with FoxH1 morpholino and analyzed the effect on transcription. Shown are the fold changes in relative expression levels of FoxH1 morpholino-injected embryos compared to control morpholino-injected embryos at high stage for FoxH1 targets dusp6, flh, wnt11 and gadd45bb. Reduction of FoxH1 results in decreased transcription for all FoxH1 target genes. (G) Expression of dusp6, flh, wnt11 and gadd45bb was analyzed by qPCR at 512-cell, early 1K, mid 1K and high stage in control and FoxH1 morpholino-injected embryos. All four target genes show a delay in the time when they are first transcribed in the FoxH1 morphants compared to control morpholino-injected embryos. Error bars represent SEM (n ≥ 4). (H) Staging by morphology was verified by cell counting at the stages used for the Pou5f3 morpholino analysis. Each data point represents a single embryo. Error bars represent SEM. Gene expression is normalized to the expression of eif4g2α.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Pou5f3 overexpression validation. Brightfield images of embryos that were injected with control or pou5f3 mRNA. Developmental defects at 24 hpf resembled the ventralized phenotypes described upon pou5f3-VP16 overexpression (Belting et al., 2011). Scale bar, 250 μm. Western blot using an HA antibody shows the protein level of Pou5f3-2xHA and Sox19b-2xHA in embryos at 1K stage after injection at the 1 cell stage. Blot shown is a representative example (n = 2). (B) To test whether Pou5f3 and Sox19b are sufficient to drive expression of the genes we selected, we increased the level of both transcription factors and analyzed the effect on transcription. Shown are the expression levels of apoeb, dusp6, klf17, irx7, and klf2b at high stage for embryos injected with pou5f3 + sox19b mRNA relative to control mRNA-injected. Error bars represent SEM (n ≥ 4). Increasing the levels of Pou5f3 and Sox19b only increased the relative expression level of apoeb and dusp6, suggesting that Pou5f3 and Sox19b are not sufficient to drive expression of the other genes. Error bars represent SEM (n ≥ 4). n.s p>0.05; *p<0.05 (two-tailed Student’s t-test, compared to control mRNA). (C) Expression of klf17, irx7 and klf2b and was analyzed by qPCR at 512-cell, early 1K, and high stage in uninjected, control and pou5f3 + sox19b mRNA-injected embryos. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). n.s p>0.05 (two-tailed Student’s t-test, compared to control mRNA). (D) Staging by morphology was verified by cell counting at the stages used for the analysis. Each data point represents a single embryo. Error bars represent SEM. In B and C, expression is normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.018
+**Figure 5—figure supplement 2.:** (A) Pou5f3 overexpression validation. Brightfield images of embryos that were injected with control or pou5f3 mRNA. Developmental defects at 24 hpf resembled the ventralized phenotypes described upon pou5f3-VP16 overexpression (Belting et al., 2011). Scale bar, 250 μm. Western blot using an HA antibody shows the protein level of Pou5f3-2xHA and Sox19b-2xHA in embryos at 1K stage after injection at the 1 cell stage. Blot shown is a representative example (n = 2). (B) To test whether Pou5f3 and Sox19b are sufficient to drive expression of the genes we selected, we increased the level of both transcription factors and analyzed the effect on transcription. Shown are the expression levels of apoeb, dusp6, klf17, irx7, and klf2b at high stage for embryos injected with pou5f3 + sox19b mRNA relative to control mRNA-injected. Error bars represent SEM (n ≥ 4). Increasing the levels of Pou5f3 and Sox19b only increased the relative expression level of apoeb and dusp6, suggesting that Pou5f3 and Sox19b are not sufficient to drive expression of the other genes. Error bars represent SEM (n ≥ 4). n.s p>0.05; *p<0.05 (two-tailed Student’s t-test, compared to control mRNA). (C) Expression of klf17, irx7 and klf2b and was analyzed by qPCR at 512-cell, early 1K, and high stage in uninjected, control and pou5f3 + sox19b mRNA-injected embryos. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). n.s p>0.05 (two-tailed Student’s t-test, compared to control mRNA). (D) Staging by morphology was verified by cell counting at the stages used for the analysis. Each data point represents a single embryo. Error bars represent SEM. In B and C, expression is normalized to the expression of eif4g2α.
 
 To reduce the level of Pou5f3, we used a previously characterized morpholino (Burgess et al., 2002) and confirmed its effect by analyzing the morphology of injected embryos and the effect of the morpholino on the translation of injected RNA encoding Pou5f3 (Figure 5—figure supplement 1A). We verified that the selected Pou5f3-target genes require Pou5f3 for their expression and that other genes do not (Figure 5—figure supplement 1B), and analyzed the effect of a reduction in Pou5f3 levels on the timing of transcription of target genes (Figure 5A). Consistent with our model, a reduction in the amount of Pou5f3 delayed the onset of transcriptional activation: transcripts were detected in the middle of 1K stage in embryos injected with control morpholino, while in the embryos injected with Pou5f3 morpholino, the genes started to be transcribed at high stage (Figure 5B and Figure 5—figure supplement 1C). We analyzed embryos at mid 1K in this experiment, because the delay that we observe is weaker than with the histone cocktail. Comparison of gene expression levels in control morpholino and Pou5f3 morpholino-injected embryos at mid 1K (when transcripts can first be detected in control morpholino-injected embryos) revealed that the level of induction is significantly reduced upon injection of Pou5f3 morpholino (Figure 5B and Figure 5—figure supplement 1C, bar graphs). Performing similar experiments for two additional transcription factors (Sox19b and FoxH1) revealed that this effect is general, and not specific to Pou5f3 (Figure 5—figure supplement 1D–G). Staging by morphology was corroborated by cell counting with absolute time between the analyzed stages being constant (Figure 5—figure supplement 1H). Together, these data show that a decrease in the level of transcription factors in the embryo delays the onset of transcription of target genes.
 
-## Increasing transcription factor levels causes premature transcription
+### Increasing transcription factor levels causes premature transcription
 
 Next, we analyzed the effect of increasing the level of Pou5f3 on the transcription of the selected Pou5f3 target genes (Figure 5A). We co-injected mRNA coding for Sox19b because it has been shown that Pou5f3 and Sox19b often co-occupy their target genes (Chen et al., 2014; Leichsenring et al., 2013; Onichtchouk et al., 2010). Injecting mRNA encoding these transcription factors resulted in overexpression of both proteins and the expected phenotypes for Pou5f3 overexpression (Figure 5—figure supplement 2A) (Belting et al., 2011). Although Pou5f3 was required for the expression of all genes we selected (Figure 5—figure supplement 1B), Pou5f3 and Sox19b were only sufficient to increase the expression level of apoeb and dusp6 at high stage (Figure 5—figure supplement 2B). In agreement with this observation, overexpression of Pou5f3 and Sox19b resulted in premature expression of apoeb and dusp6: transcripts were detected at early 1K stage in embryos injected with pouf53 and sox19b, whereas in the embryos injected with control mRNA, transcripts could be detected only at high stage (Figure 5C). Comparison of gene expression levels in control, and pouf53 and sox19b mRNA-injected embryos at early 1K stage (one time-point prior to when genes are first induced in uninjected embryos) revealed that the level of expression is increased significantly upon injection of pou5f3 and sox19b mRNA for apoeb and dusp6 (Figure 5C, bar graphs). Such an effect on the timing of transcription was not observed for the other genes (Figure 5—figure supplement 2C). Staging by morphology was corroborated by cell counting, with absolute time between the analyzed stages being constant (Figure 5—figure supplement 2D). These experiments show that an increase in the level of Pou5f3 and Sox19b in the embryo can cause premature transcription. Taken together, our results show that changing the concentration of endogenous transcription factors can affect the onset of transcription. This is in agreement with our model in which the relative levels of histones and transcription factors determine the onset of transcription.
 
-## Transcription factor binding is sensitive to histone levels
+### Transcription factor binding is sensitive to histone levels
 
 If transcription factors and histones compete for DNA binding, it would be predicted that transcription factor binding is sensitive to histone levels. To directly test competition at the chromatin level, we determined whether the binding of the transcriptional machinery is affected by histone levels. We analyzed the binding of Pou5f3 to its predicted target sites upstream of apoeb and dusp6 by chromatin immunoprecipitation (ChIP) and identified co-precipitated DNA fragments by qPCR (Figure 5D). In embryos that were injected with mRNA encoding both Pou5f3 and Sox19b, we found that the binding of Pou5f3 was readily detected at early 1K stage (Figure 5D, white bars). When the HC was co-injected, binding of the transcription factor was reduced (Figure 5D, gray bars). We expect, but did not test, that nucleosome density is concordantly increased at these binding sites. A control region in genomic DNA did not show any binding of Pou5f3 (Figure 5D). Taken together, this shows that the binding of an endogenous transcription factor is sensitive to the amount of histones present in the embryo.
 
-## Experimental evidence for competition using a heterologous transgene
+### Experimental evidence for competition using a heterologous transgene
 
-Our results support a model in which transcription is regulated by the relative levels of histones and transcription factors. Endogenous gene regulation, however, is intrinsically complex, with multiple transcription factors providing input on the same gene, and often there is limited information on the number and strength of activator-binding sites. Because this might have affected the results we obtained with endogenous transcription factors and genes (
+Our results support a model in which transcription is regulated by the relative levels of histones and transcription factors. Endogenous gene regulation, however, is intrinsically complex, with multiple transcription factors providing input on the same gene, and often there is limited information on the number and strength of activator-binding sites. Because this might have affected the results we obtained with endogenous transcription factors and genes (Figure 5), we decided to take advantage of a heterologous system to confirm our results. The integrated inducible transgene TRE:GFP (Figure 6A) contains seven binding sites for tTA–VP16 as well as a CMV promoter and is strictly dependent on tTA–VP16 for its expression (data not shown). tTA-VP16 was tagged with HA and a protein product was detected at the 1K stage following injection of mRNA (Figure 6—figure supplement 1A). Injection of 5 pg of mRNA encoding the heterologous transcription factor tTA-VP16 resulted in the detection of transcripts at high stage, in accordance with the onset of zygotic transcription of endogenous genes (Figure 6B). Next, we analyzed the transcriptional activity of this transgene upon injection of 300 pg of mRNA encoding tTA-VP16 and we observed that transcripts could be detected at early 1K (Figure 6B). Comparison of gene expression levels at early 1K stage (one stage prior to when genes are first induced in embryos injected with 5 pg of mRNA) in embryos injected with 5 and 300 pg of mRNA revealed that the number of transcripts is increased significantly upon increasing the level of transcription factor (Figure 6B, bar graph). Next, we tested whether an increase in histone levels would negate the effect of high levels of transcription factor. As predicted by the competition model, the increase in transcriptional activity that is observed upon the injection of 300 pg of tTA-VP16 mRNA is lost when the histone cocktail is co-injected (Figure 6C). Finally, we determined whether the binding of tTA is affected by histone levels. We analyzed the binding of tTA-VP16 to the TRE sites in the transgene by ChIP-qPCR (Figure 6A). We found that upon injecting 300 pg of tTA-VP16 mRNA, the binding of the transcription factor was readily detected at early 1K stage (Figure 6D and Figure 6—figure supplement 1B). As expected, binding of the transcription factor was significantly reduced when the HC was co-injected. Control regions within the transgene and in genomic DNA did not show any binding of tTA-VP16 (Figure 6D and Figure 6—figure supplement 1B). This shows that the binding of a heterologous transcription factor is sensitive to the amount of histones present in the embryo. These results are in agreement with the results obtained with the endogenous transcription factors (Figure 5). Taken together, our data provide direct evidence for a model in which competition between histones and transcription factors determines the onset of transcription.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic representation of the experimental procedure and TRE:GFP transgene. tTA-VP16 and/or histone levels were increased by injecting mRNA or HC into the cell or yolk, respectively, of 1-cell transgenic embryos. The TRE element contains seven binding sites for tTA-VP16 and is joined to a CMV promoter. qPCR and ChIP-qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of gfp was analyzed by qPCR at 512-cell, early 1K and high stage in embryos injected with 5 or 300 pg tTA-VP16 mRNA. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05 (two-tailed Student’s t-test, compared to 5 pg tTA-VP16 mRNA). (C) Expression of gfp was analyzed by qPCR at early 1K stage in embryos injected with 5 pg, 300 pg tTA-VP16 mRNA and 300 pg tTA-VP16 mRNA plus histone cocktail. Error bars represent SEM (n = 4). *p<0.05 (Ordinary one-way ANOVA). (D) Binding of tTA-VP16 to the TRE element and control regions was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with 300 pg tTA-VP16 mRNA or 300 pg tTA-VP16 mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. Primer sets used for ChIP-qPCR analysis are indicated by arrows in panel A. A control region on the transgene was used in addition to a genome control region on chromosome 23. Error bars represent SEM (n = 3). *p<0.05 (two-tailed Student’s t-test ratio paired, compared to 300 pg tTA-VP16 mRNA-injected embryos). In B and C, mRNA levels are normalized to the expression of eif4g2α.DOI: http://dx.doi.org/10.7554/eLife.23326.019
+**Figure 6.:** (A) Schematic representation of the experimental procedure and TRE:GFP transgene. tTA-VP16 and/or histone levels were increased by injecting mRNA or HC into the cell or yolk, respectively, of 1-cell transgenic embryos. The TRE element contains seven binding sites for tTA-VP16 and is joined to a CMV promoter. qPCR and ChIP-qPCR analysis was carried out at stages around genome activation. Orange crosses represent the timing of stages used for the analysis. (B) Expression of gfp was analyzed by qPCR at 512-cell, early 1K and high stage in embryos injected with 5 or 300 pg tTA-VP16 mRNA. Bar graphs focus on the early 1K stage. Error bars represent SEM (n ≥ 4). *p<0.05 (two-tailed Student’s t-test, compared to 5 pg tTA-VP16 mRNA). (C) Expression of gfp was analyzed by qPCR at early 1K stage in embryos injected with 5 pg, 300 pg tTA-VP16 mRNA and 300 pg tTA-VP16 mRNA plus histone cocktail. Error bars represent SEM (n = 4). *p<0.05 (Ordinary one-way ANOVA). (D) Binding of tTA-VP16 to the TRE element and control regions was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with 300 pg tTA-VP16 mRNA or 300 pg tTA-VP16 mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. Primer sets used for ChIP-qPCR analysis are indicated by arrows in panel A. A control region on the transgene was used in addition to a genome control region on chromosome 23. Error bars represent SEM (n = 3). *p<0.05 (two-tailed Student’s t-test ratio paired, compared to 300 pg tTA-VP16 mRNA-injected embryos). In B and C, mRNA levels are normalized to the expression of eif4g2α.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/23326/elife-23326-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Western blot using an HA antibody shows the protein level at 1K stage after injection of either 5 pg or 300 pg tTA-VP16 mRNA. Tubulin was used to control for equal loading. Blot shown is a representative example (n = 2). (B) Binding of tTA-VP16 to the TRE element was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with 300 pg tTA-VP16 or 300 pg tTA-VP16 mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. All primers used for ChIP-qPCR are indicated using arrows. Error bars represent SEM (n = 3). *p<0.05 (two-tailed Student’s t-test ratio paired, compared to 300 pg tTA-VP16 mRNA plus histone cocktail).DOI: http://dx.doi.org/10.7554/eLife.23326.020
+**Figure 6—figure supplement 1.:** (A) Western blot using an HA antibody shows the protein level at 1K stage after injection of either 5 pg or 300 pg tTA-VP16 mRNA. Tubulin was used to control for equal loading. Blot shown is a representative example (n = 2). (B) Binding of tTA-VP16 to the TRE element was analyzed by ChIP-qPCR at the early 1K stage in embryos injected with 300 pg tTA-VP16 or 300 pg tTA-VP16 mRNA plus histone cocktail. Enrichment of pulled-down fragments was normalized to input. All primers used for ChIP-qPCR are indicated using arrows. Error bars represent SEM (n = 3). *p<0.05 (two-tailed Student’s t-test ratio paired, compared to 300 pg tTA-VP16 mRNA plus histone cocktail).
 
 ## Discussion
 
 In this study, we have shown that the concentration of all four core histones determines the onset of transcription in zebrafish embryos by competing with transcription factors for binding to DNA. Upon fertilization, there is a large excess of histones stockpiled in the embryo and transcription starts when the concentration of non-DNA-bound histones in the nucleus drops, and the transcriptional machinery gains access to DNA. Thus, the relative concentrations of both histones and transcription factors determine the timing of zygotic genome activation (Figure 4G). Our observations provide, to our knowledge, the first example of a developmental transition in which competition for DNA binding between histones and transcription factors plays an important role in transcriptional regulation.
 
-## All core histones are important for timing of transcription
+### All core histones are important for timing of transcription
 
 Our observation that histone levels affect the time of transcription onset in zebrafish embryos is in agreement with previous studies that showed a role of histones in the regulation of transcription in early Xenopus embryos and extracts (Almouzni and Wolffe, 1995; Amodeo et al., 2015). However, our finding that histones are neither completely depleted from the soluble fraction, nor generally depleted from chromatin, argues against a model in which a global loss of nucleosome density on chromatin causes the onset of transcription (Amodeo et al., 2015). Our work does not exclude the importance of other factors, such as the linker histone H1 (Pérez-Montero et al., 2013), the embryonic form of which is stably present during zebrafish genome activation, but it establishes that core histones themselves function as actual repressors of transcription.
 
 Our discovery that all core histones are required to regulate the onset of transcription suggests that the nucleosome is important for the repressor function of histones. In a previous study, premature transcription of injected plasmids caused by an excess of non-specific DNA was negated by the addition of the four core histones, but histones were not tested separately and it was not clear whether one or more histones were required for the observed effect on transcription (Almouzni and Wolffe, 1995). This left open the possibility that single histones could repress transcriptional activity in the embryo, for example by binding to a transcription factor and preventing it from binding to DNA. However, our observation that in the embryo all core histones are important for the regulation of transcription would then require all histones to independently take part in this mode of repression. Because this is a very unlikely scenario, we propose that repression takes place close to DNA, where histones are assembled into a histone octamer to form the nucleosome.
 
-## Changes in nuclear histone concentration during genome activation
+### Changes in nuclear histone concentration during genome activation
 
 We propose that genome activation follows a decrease in the concentration of non-DNA bound histones in the nucleus. One possible way to explain the reduction in nuclear histone concentration is the exponential increase in DNA content during the cleavage stages of zebrafish development. Because histones have a high affinity for DNA, an increase in the amount of DNA would titrate out non-DNA-bound histones. Several experiments have indeed shown that changes in DNA content can affect the time of transcription in Drosophila, zebrafish and Xenopus (Dekens et al., 2003; Lu et al., 2009; Newport and Kirschner, 1982a; Prioleau et al., 1994). Our data suggest that these effects were the result of reducing the concentration of non-DNA-bound histones. In zebrafish embryos, the amount of histones is so large that the increase in DNA content leading up to genome activation may contribute only moderately to a decrease in the concentration of non-DNA-bound histones in the nucleus.
 
 Another possible explanation for the decrease in nuclear histone concentration is the marked increase in the ratio of nuclear over cytoplasmic volume during the cleavage stages (Figure 4—figure supplement 1A). We suggest that this may limit the capacity of the nucleus to concentrate histones. The process of nuclear transport has been investigated in great detail (Kim and Elbaum, 2013a, 2013b; Kopito and Elbaum, 2007, 2009), and we can assume that the nuclear envelope can create a certain fold difference in concentrations between the nucleus and cytoplasm. During the initial stages of zebrafish development, the nucleus occupies only a very small fraction of the cell volume (1.1% at 128-cell stage, Figure 4—figure supplement 1A). As a result, when the nucleus concentrates histones up to the maximum fold difference between cytoplasm and nucleus, the cytoplasmic histone concentration is hardly altered. Later in development, when approaching the onset of zygotic transcription, the nucleus takes up a notably larger part of the total cell volume (7.1% at high stage, Figure 4—figure supplement 1A). Now, when histones are imported into the nucleus, the concentration of histones in the cytoplasm noticeably decreases. The nuclear envelope is still able to create approximately the same fold difference of concentrations, but due to the reduced cytoplasmic concentration, the achieved nuclear concentration is not as high as during the initial stages. Thus, in this scenario, the nuclear histone concentration decreases due to the increasing relative nuclear size, which alters the distribution of histones among cellular compartments. It may be expected that the relative increase in nuclear size affects the nuclear concentration of transcription factors as well, and it remains to be seen how the concentration of histones and transcription factors change with respect to each other in order to activate transcription. Experiments recently performed in Xenopus showed that changing the size of the nucleus affects the timing of transcription (Jevtić and Levy, 2015), providing further evidence for a role of nuclear size in regulating the onset of transcription.
 
-## Competition for DNA binding determines transcription onset
+### Competition for DNA binding determines transcription onset
 
 Our finding that the onset of transcription depends on the concentration of histones, but also on the concentration of transcription factors, is consistent with previous studies that suggested an important role for transcriptional activators in the temporal regulation of zygotic transcription (Almouzni and Wolffe, 1995; Prioleau et al., 1994; Veenstra et al., 1999). Because transcription can be induced prior to the onset of genome activation, both by adding DNA (Dekens et al., 2003; Lu et al., 2009; Newport and Kirschner, 1982a) or removing histones (this study), we suggest that transcription factors required for the onset of transcription are in principle present prior to genome activation. To shift the balance from repression to activation, the relative concentrations of histones and transcription factors need to be changed in favor of transcription factors. This would explain previous observations in Xenopus, where the addition of TBP (in combination with adding DNA) or GAL4-VP16 resulted in premature transcription (Almouzni and Wolffe, 1995; Veenstra et al., 1999). Based on our findings, those experiments would have shifted the balance in favor of transcriptional activity, similar to the effect observed when we increased transcription factor levels or decreased histone levels.
 
@@ -167,7 +167,7 @@ Our experiments did not address when competition takes place during the cell cyc
 
 To gain further insight in the molecular details of competition that lead up to genome activation, it will be important to determine which factors compete with histones for DNA binding. In theory, the binding of all factors that require access to DNA could be affected by histone levels, suggesting that competition might take place at many levels of transcription regulation: the formation of higher order chromatin structure, chromatin remodeling, the binding of transcription factors, and the assembly of the basal transcription complex. Our results show that the transcription factors that have been identified to regulate many genes during genome activation in zebrafish (Pou5f3 and Sox19b) (Lee et al., 2013; Leichsenring et al., 2013), as well as FoxH1 and the heterologous transcription factor tTA-VP16, compete with histones for binding to DNA (Figures 5 and 6). In this context, it is interesting to note that the transcription factors that have been identified to play a role in genome activation have either been suggested to be pioneer factors (Lee et al., 2013; Leichsenring et al., 2013), or there is indication for such a role because of their homology with mammalian pioneer factors (Lee et al., 2013; Leichsenring et al., 2013; Soufi et al., 2012). Pioneer factors are able to interact with DNA that is nucleosome bound (Zaret and Carroll, 2011). In the context of the competition model, it will be interesting to see whether these factors also have pioneering activity in the early embryo, and how this affects their role in activating transcription in the embryo.
 
-## General relevance of competition in development
+### General relevance of competition in development
 
 The applicability of the competition model might extend well beyond the onset of zygotic transcription in zebrafish. First, given the excess of histones in a large number of species including Drosophila, Xenopus, and zebrafish (Adamson and Woodland, 1974; Li et al., 2012; Marzluff and Duronio, 2002; Osley, 1991; Vastenhouw et al., 2010; Woodland and Adamson, 1977), it is likely that histone levels play a role in the timing of zygotic transcription across these species. As discussed, in Xenopus embryos there is indeed evidence for a role of histone levels in regulating transcriptional activity (Almouzni and Wolffe, 1995; Amodeo et al., 2015). Additional experiments will be required to determine whether the competition model we propose applies to these and other species. Second, the onset of zygotic transcription in the embryo takes place in the context of the mid-blastula transition and is accompanied by a lengthening of the cell cycle and changes in chromatin structure. Although it had previously been suggested that the rapid cell cycles lacking G1 and G2 phases might interfere with productive transcription during early developmental stages (Collart et al., 2013; Edgar and Schubiger, 1986; Kimelman et al., 1987), it was recently shown that the lengthening of the cell cycle might be a direct consequence of the onset of transcription in Drosophila embryos (Blythe and Wieschaus, 2015b). This would suggest that what regulates the onset of zygotic transcription might also dictate the lengthening of the cell cycle. Finally, post-translational modification of histones often requires a chromatin-modifying enzyme to bind to DNA, much like transcription factors. Thus, competition is likely to affect the de novo modification of histones as well, explaining why many histone modifications are only observed around the onset of zygotic transcription in their temporal profile (Lindeman et al., 2011; Vastenhouw et al., 2010). Importantly, we observe an effect on the timing of transcription by adding unmodified histones. This suggests that post-translational modifications of histones are either downstream of the timing of transcriptional activation, or the enzymes that modify histones are not limiting in the embryo.
 
@@ -179,69 +179,490 @@ We have shown that the onset of transcription is regulated by a dynamic competit
 
 ## Materials and methods
 
-## Zebrafish husbandry and manipulation
+### Zebrafish husbandry and manipulation
 
-Zebrafish were maintained and raised under standard conditions. Wild-type (TLAB) (WT-TL RRID:ZIRC_ZL86, WT-AB RRID:ZIRC_ZL1) and transgenic embryos were dechorionated immediately upon fertilization, synchronized and allowed to develop to the desired stage at 28°C. Stage was determined by morphology and corroborated by cell counting. In terms of absolute time, the time between collected stages around ZGA was consistent between all conditions within an experiment and for all experiments. Histone cocktail and BSA (A9418; Sigma, St. Louis, MO) were injected into the yolk at the 1-cell stage at 22 ng per embryo. Pou5f3 anti-sense morpholino was injected at 6 ng per embryo, together with 1 ng of p53 morpholino (Langheinrich et al., 2002). Sox19b anti-sense morpholino (Okuda et al., 2010) was injected at 2 ng per embryo and FoxH1 anti-sense morpholino (Pei et al., 2007) was injected at 4 ng per embryo, together with 1 ng of p53 morpholino. Dead-end (Weidinger et al., 2003) or control morpholino were injected as a control at the same concentration. Morpholino sequences can be found in Table 1. α amanitin (A2263; Sigma) was injected at the 1-cell stage at a concentration of 0.2 ng per embryo. 2.8 mg/ml rhodamine-dextran (D3307; Molecular Probes, Eugene, OR) was used as an injection marker for the HC and BSA experiments. For all other injections, 0.1% Phenol red (P0290; Sigma) was injected. Bright-field images of whole embryos were acquired on a Leica M165 C dissecting scope equipped with a Leica MC170 HD camera (Leica, Wetzlar, Germany).10.7554/eLife.23326.021Table 1.List of morpholinos used.DOI: http://dx.doi.org/10.7554/eLife.23326.021MorpholinosTargetSequenceCompanyReferencep535’-GCGCCATTGCTTTGCAAGAATTGGeneToolsLangheinrich et al. (2002)Pou5f35′-CGCTCTCTCCGTCATCTTTCCGCTAGeneToolsBurgess et al. (2002)Sox19b5'-ACGAGCGAGCCTAATCAGGTCAAACGeneToolsOkuda et al. (2010)Foxh15'-TGCTTTGTCATGCTGATGTAGTGGGGeneToolsPei et al. (2007)Dead-end5'-GCTGGGCATCCATGTCTCCGACCATGeneToolsWeidinger et al. (2003)Ctrl MO5'-CCTCTTACCTCAGTTACAATTTATAGeneToolsGeneTools, LLC
+Zebrafish were maintained and raised under standard conditions. Wild-type (TLAB) (WT-TL RRID:ZIRC_ZL86, WT-AB RRID:ZIRC_ZL1) and transgenic embryos were dechorionated immediately upon fertilization, synchronized and allowed to develop to the desired stage at 28°C. Stage was determined by morphology and corroborated by cell counting. In terms of absolute time, the time between collected stages around ZGA was consistent between all conditions within an experiment and for all experiments. Histone cocktail and BSA (A9418; Sigma, St. Louis, MO) were injected into the yolk at the 1-cell stage at 22 ng per embryo. Pou5f3 anti-sense morpholino was injected at 6 ng per embryo, together with 1 ng of p53 morpholino (Langheinrich et al., 2002). Sox19b anti-sense morpholino (Okuda et al., 2010) was injected at 2 ng per embryo and FoxH1 anti-sense morpholino (Pei et al., 2007) was injected at 4 ng per embryo, together with 1 ng of p53 morpholino. Dead-end (Weidinger et al., 2003) or control morpholino were injected as a control at the same concentration. Morpholino sequences can be found in Table 1. α amanitin (A2263; Sigma) was injected at the 1-cell stage at a concentration of 0.2 ng per embryo. 2.8 mg/ml rhodamine-dextran (D3307; Molecular Probes, Eugene, OR) was used as an injection marker for the HC and BSA experiments. For all other injections, 0.1% Phenol red (P0290; Sigma) was injected. Bright-field images of whole embryos were acquired on a Leica M165 C dissecting scope equipped with a Leica MC170 HD camera (Leica, Wetzlar, Germany).
 
-## mRNA production and injection
+**Table 1.**
+ List of morpholinos used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Morpholinos</th>
+    </tr>
+    <tr>
+      <th>Target</th>
+      <th>Sequence</th>
+      <th>Company</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p53</td>
+      <td>5’-GCGCCATTGCTTTGCAAGAATTG</td>
+      <td>GeneTools</td>
+      <td>Langheinrich et al. (2002)</td>
+    </tr>
+    <tr>
+      <td>Pou5f3</td>
+      <td>5′-CGCTCTCTCCGTCATCTTTCCGCTA</td>
+      <td>GeneTools</td>
+      <td>Burgess et al. (2002)</td>
+    </tr>
+    <tr>
+      <td>Sox19b</td>
+      <td>5'-ACGAGCGAGCCTAATCAGGTCAAAC</td>
+      <td>GeneTools</td>
+      <td>Okuda et al. (2010)</td>
+    </tr>
+    <tr>
+      <td>Foxh1</td>
+      <td>5'-TGCTTTGTCATGCTGATGTAGTGGG</td>
+      <td>GeneTools</td>
+      <td>Pei et al. (2007)</td>
+    </tr>
+    <tr>
+      <td>Dead-end</td>
+      <td>5'-GCTGGGCATCCATGTCTCCGACCAT</td>
+      <td>GeneTools</td>
+      <td>Weidinger et al. (2003)</td>
+    </tr>
+    <tr>
+      <td>Ctrl MO</td>
+      <td>5'-CCTCTTACCTCAGTTACAATTTATA</td>
+      <td>GeneTools</td>
+      <td>GeneTools, LLC</td>
+    </tr>
+  </tbody>
+</table>
+
+### mRNA production and injection
 
 mRNA was synthesized using the Ambion mMESSAGE mMACHINE SP6 Transcription Kit (AM1430; ThermoFisher Scientific, Waltham, MA). Human PTX3 cDNA was cloned into a pCS2+ vector with a C-terminal RFP. ptx3-rfp and rfp mRNA were injected into the cell at the 1-cell stage at a concentration of 300 pg per embryo. Zebrafish Pou5f3 and Sox19b cDNA were cloned into a pCS2+ vector containing 2xHA sequences. For gene expression experiments, pou5f3-2xHA and sox19b-2xHA mRNA were each injected into the cell of 1-cell embryos at 300 pg per embryo. mRNA encoding cytoplasmic gfp was injected as a control at 600 pg per embryo. For ChIP-qPCR experiments, pou5f3-2xHA and sox19b-mEos2 mRNA were each injected into the cell of 1 cell embryos at 150 pg per embryo. A subsequent injection of either histone cocktail or mock (histone buffer) into the yolk was carried out. Human H4 cDNA was cloned into a pCS2+ vector with C-terminal sfGFP (50550; addgene, Cambridge, MA) (Olson et al., 2014). mRNA encoding H4-sfGFP was injected into the cell of 1-cell embryos at 240 pg per embryo. tTA-VP16 DNA was cloned into a pCS2+ vector containing 2xHA sequences. mRNA encoding tTA-VP16-2xHA was injected into the cell of 1-cell Tg(TRE:GFP) embryos either at 5 pg or 300 pg per embryo. The combination injection of 300 pg tTA-VP16-2xHA mRNA and histone cocktail, involved two subsequent injections into the cell of 1-cell embryos and yolk, respectively. The 300 pg tTA-VP16-2xHA mRNA only injections also received a secondary mock injection into the yolk.
 
-## Quantitative PCR
+### Quantitative PCR
 
-Twenty-five embryos per developmental stage were snap frozen in liquid nitrogen. RNeasy Mini Kit (74104; Qiagen, Venlo, the Netherlands) was used to extract RNA. For Tg(TRE:GFP) embryos, contaminating DNA was removed from RNA preparations using the DNA-free Kit (AM1906; ThermoFisher Scientific). mRNA was converted to cDNA using the iScript cDNA Synthesis Kit (1708891; Bio-Rad Laboratories, Hercules, CA). SYBR green (AB-1158.; ThermoFisher Scientific) with Rox (R1371; ThermoFisher Scientific; 100 nM) was used as the qPCR master mix. Primers were used at a final concentration of 500 nM and sequences can be found in Table 2. Two or three technical replicates were performed for each sample. Ct values were normalized to the maternally loaded gene eif4g2a or input in ChIP-qPCR analysis. Relative mRNA expression levels were calculated via 1/(2∧(gene-eif4g2a)). Fold difference was calculated by dividing the relative mRNA expression level value of the test sample over control.10.7554/eLife.23326.022Table 2.List of primers used. Location of primer sets with respect to transcription start-sites are indicated in brackets.DOI: http://dx.doi.org/10.7554/eLife.23326.022Primer listGenePrimerseif4g2α5’-GAGATGTATGCCACTGATGAT5’-GCGCAGTAACATTCCTTTAGmxtx25’-ACTGACTGCATTGCTCAA5’-ACCATACCTGAATACGTGATTfam212aa5’-GCAAATGAGTATCTAAAACTGCT5’-CATCATATAGCGCATCTGGTnnr5’-GAGACATACCACAGGTGAAGC5’-CCGCTCTGGTCTGTTGCvox5’-TTATTCGTCGGGTTATGAGAG5’-AACCAAGTTCTGATCTGTGTsox19a5’-GAGGATGGACAGCTACGG5’-CTATAGGACATGGGGTTGTAGgrhl35’-AGACGAGCAGAGAGTCCT5’-TTGCTGTAATGCTCGATGATGapoeb5’-GCAGAGAGCTTGACACACTAA5’-TGCATTCTGCTCCATCATGGdusp65'-AGCCATCAGCTTTATTGATGAG5'-CAAAGTCCAAGAGTTGACCCklf175’-ATAGTTCGGGACTGGAAAGTTG 5’- TGAGGTGTTGTCGTTGTCAGirx75’-TGGCACACATTAGCAATTCC5’-GCATGATCTTCTCGCCTTTGklf2b5’-GCTCTGGGAGGATAGATGGA5’-CTCGGAGTGGGAGATGAACflh5'-CACTGAAGCTCAGGTTAAAGTC5'-ACAATCTGGGGAAAATCATGGwnt115'-CAGACAGGTGCTTATGGACT5'-CATCTCTCGGGGCACAAGgadd45bb5'-CAACTCATGAATGTGGATCCAG5'-ATGCAGTGAAGGTCTCTTGGGFP5’-GCACCATCTTCTTCAAGGAC5’-TTGTCGGCCATGATATAGACPou5f3 binding site (−2270 apoeb)5'-TAAAGTGAGCAAATGTATGGCC5'-TTTGTTGATTAAATCGCTTGTGAPou5f3 binding site (−3095 dusp6)5'-CATATGTTAAGCGGGGTGAAAC5'-ATCCTGTCTCCTGTGTCATTTGTRE binding site (−222)5'-TCTTGATAGAGAGGCTGCAAAT5'-TCGAGATGGGCCCTTGATATRE binding site (13)5'-TCGTATAGGGATAACAGGGTAATG5'-TACACGCCTACCTCGACCTRE binding site (217)5'-GTACGGTGGGAGGCCTATAT5'-CTTCTATGGAGGTCAAAACAGCTransgene control5'-CTCTACAAATGTGGTATGGCTG 5'-ATTACCCTGTTATCCCTAAGGCGenomic control5'-CCATCATATTCACATCTTGCAAG5'-GTTCGTATGAACCGGAAGC
+Twenty-five embryos per developmental stage were snap frozen in liquid nitrogen. RNeasy Mini Kit (74104; Qiagen, Venlo, the Netherlands) was used to extract RNA. For Tg(TRE:GFP) embryos, contaminating DNA was removed from RNA preparations using the DNA-free Kit (AM1906; ThermoFisher Scientific). mRNA was converted to cDNA using the iScript cDNA Synthesis Kit (1708891; Bio-Rad Laboratories, Hercules, CA). SYBR green (AB-1158.; ThermoFisher Scientific) with Rox (R1371; ThermoFisher Scientific; 100 nM) was used as the qPCR master mix. Primers were used at a final concentration of 500 nM and sequences can be found in Table 2. Two or three technical replicates were performed for each sample. Ct values were normalized to the maternally loaded gene eif4g2a or input in ChIP-qPCR analysis. Relative mRNA expression levels were calculated via 1/(2∧(gene-eif4g2a)). Fold difference was calculated by dividing the relative mRNA expression level value of the test sample over control.
 
-## Staging embryos by cell counting
+**Table 2.**
+ List of primers used. Location of primer sets with respect to transcription start-sites are indicated in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Primer list</th>
+    </tr>
+    <tr>
+      <th>Gene</th>
+      <th>Primers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">eif4g2α</td>
+      <td>5’-GAGATGTATGCCACTGATGAT</td>
+    </tr>
+    <tr>
+      <td>5’-GCGCAGTAACATTCCTTTAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">mxtx2</td>
+      <td>5’-ACTGACTGCATTGCTCAA</td>
+    </tr>
+    <tr>
+      <td>5’-ACCATACCTGAATACGTGATT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">fam212aa</td>
+      <td>5’-GCAAATGAGTATCTAAAACTGCT</td>
+    </tr>
+    <tr>
+      <td>5’-CATCATATAGCGCATCTGGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">nnr</td>
+      <td>5’-GAGACATACCACAGGTGAAGC</td>
+    </tr>
+    <tr>
+      <td>5’-CCGCTCTGGTCTGTTGC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">vox</td>
+      <td>5’-TTATTCGTCGGGTTATGAGAG</td>
+    </tr>
+    <tr>
+      <td>5’-AACCAAGTTCTGATCTGTGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">sox19a</td>
+      <td>5’-GAGGATGGACAGCTACGG</td>
+    </tr>
+    <tr>
+      <td>5’-CTATAGGACATGGGGTTGTAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">grhl3</td>
+      <td>5’-AGACGAGCAGAGAGTCCT</td>
+    </tr>
+    <tr>
+      <td>5’-TTGCTGTAATGCTCGATGATG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">apoeb</td>
+      <td>5’-GCAGAGAGCTTGACACACTAA</td>
+    </tr>
+    <tr>
+      <td>5’-TGCATTCTGCTCCATCATGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dusp6</td>
+      <td>5'-AGCCATCAGCTTTATTGATGAG</td>
+    </tr>
+    <tr>
+      <td>5'-CAAAGTCCAAGAGTTGACCC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">klf17</td>
+      <td>5’-ATAGTTCGGGACTGGAAAGTTG</td>
+    </tr>
+    <tr>
+      <td>5’- TGAGGTGTTGTCGTTGTCAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">irx7</td>
+      <td>5’-TGGCACACATTAGCAATTCC</td>
+    </tr>
+    <tr>
+      <td>5’-GCATGATCTTCTCGCCTTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">klf2b</td>
+      <td>5’-GCTCTGGGAGGATAGATGGA</td>
+    </tr>
+    <tr>
+      <td>5’-CTCGGAGTGGGAGATGAAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">flh</td>
+      <td>5'-CACTGAAGCTCAGGTTAAAGTC</td>
+    </tr>
+    <tr>
+      <td>5'-ACAATCTGGGGAAAATCATGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">wnt11</td>
+      <td>5'-CAGACAGGTGCTTATGGACT</td>
+    </tr>
+    <tr>
+      <td>5'-CATCTCTCGGGGCACAAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">gadd45bb</td>
+      <td>5'-CAACTCATGAATGTGGATCCAG</td>
+    </tr>
+    <tr>
+      <td>5'-ATGCAGTGAAGGTCTCTTGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GFP</td>
+      <td>5’-GCACCATCTTCTTCAAGGAC</td>
+    </tr>
+    <tr>
+      <td>5’-TTGTCGGCCATGATATAGAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pou5f3 binding site (−2270 apoeb)</td>
+      <td>5'-TAAAGTGAGCAAATGTATGGCC</td>
+    </tr>
+    <tr>
+      <td>5'-TTTGTTGATTAAATCGCTTGTGA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pou5f3 binding site (−3095 dusp6)</td>
+      <td>5'-CATATGTTAAGCGGGGTGAAAC</td>
+    </tr>
+    <tr>
+      <td>5'-ATCCTGTCTCCTGTGTCATTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TRE binding site (−222)</td>
+      <td>5'-TCTTGATAGAGAGGCTGCAAAT</td>
+    </tr>
+    <tr>
+      <td>5'-TCGAGATGGGCCCTTGATA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TRE binding site (13)</td>
+      <td>5'-TCGTATAGGGATAACAGGGTAATG</td>
+    </tr>
+    <tr>
+      <td>5'-TACACGCCTACCTCGACC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TRE binding site (217)</td>
+      <td>5'-GTACGGTGGGAGGCCTATAT</td>
+    </tr>
+    <tr>
+      <td>5'-CTTCTATGGAGGTCAAAACAGC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Transgene control</td>
+      <td>5'-CTCTACAAATGTGGTATGGCTG</td>
+    </tr>
+    <tr>
+      <td>5'-ATTACCCTGTTATCCCTAAGGC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Genomic control</td>
+      <td>5'-CCATCATATTCACATCTTGCAAG</td>
+    </tr>
+    <tr>
+      <td>5'-GTTCGTATGAACCGGAAGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Staging embryos by cell counting
 
 Embryos were fixed in 4% formaldehyde in Danieau’s solution at 4°C overnight. The next day, embryos were washed with Danieau’s solution and then permeabilized with 0.2% Triton X in Danieau’s solution for 30 min. Subsequently, embryos were incubated for 10 min in DAPI (1 µg/ml) and then washed several times with Danieau’s solution. Embryos were placed in an inverted agarose holder and covered with Danieau’s solution for imaging. An upright Zeiss LSM 780 NLO microscope equipped with a coherent Chameleon Vision II infrared laser was used for two-photon excitation (Carl Zeiss AG, Oberkochen, Germany). DAPI was excited with 780 nm and detected using a non-descanned GaAsP detector (BIG-Module) with BP450/60 or SP485. Samples were imaged with either a Zeiss W Plan-Apochromat 20 × 1.0 or 40 × 1.0 dipping objective. Images were acquired using a four tile scan of multiple z-sections (3–3.5 µm steps). Tiles were stitched with the ZEN software (RRID:SCR_013672, Zeiss). Images were imported into the Imaris software (RRID:SCR_007370, Bitplane, Belfast, Northern Ireland) and the spot tool was used to calculate cell number.
 
-## Western blotting
+### Western blotting
 
-Embryos were manually deyolked at the desired stage and snap frozen in liquid nitrogen. For all proteins, equal numbers of embryos were analyzed for each developmental stage (H4 and H2A [n = 10], all other proteins [n = 5]). Samples were boiled with SDS loading buffer at 98°C, run on 4–12% polyacrylamide NuPAGE Bis-Tris gels (NP0321BOX; ThermoFisher Scientific) and blotted onto a nitrocellulose membrane (10600002; GE Life Sciences, Chicago, IL). Primary antibodies were incubated at RT for 1 hr or overnight at 4°C and secondary antibodies were incubated at RT for 45 min. Primary and secondary antibodies used are listed in Tables 3 and 4, respectively. Membranes were analyzed on an Odyssey Infrared Imaging System (LI-COR, Lincoln, NE) or via chemiluminescent detection (GE Life Sciences) and X-ray film (GE Life Sciences). Tubulin was examined visually on all blots as a loading control.10.7554/eLife.23326.023Table 3.List of primary antibodies used.DOI: http://dx.doi.org/10.7554/eLife.23326.023Primary antibodiesTarget/NameCompanyCompany codeRRID[WB][IF][IP]H3Abcamab1791AB_3026131:10,000H4Abcamab10158AB_2968881:10001:300H2AAbcamab18255AB_4702651:1000H2BAbcamab1790AB_3026121:3000α-tubulinSigmaT6074AB_4775821:20,000RFPAbcamab152123AB_2637080ExcessPTX3Cosmo BioPPZ1724AB_19622801:15,000RNA Pol IIBioLegendMMS-126RAB_100136651:1000HAAbcamab9110AB_3070191:5000ExcessIgG from rabbit serumSigmaI5006AB_1163659ExcessWB, Western blotting; IF, immunofluorescence; IP, immunoprecipitation.10.7554/eLife.23326.024Table 4.List of secondary antibodies used.DOI: http://dx.doi.org/10.7554/eLife.23326.024Secondary antibodiesNameCompanyCompany codeRRID[WB][IF]Alexa 488 goat anti-mouse IgG H&LThermoFisherA-11029AB_1384041:1000Alexa 594 goat anti-rabbit IgG H&LThermoFisherA-11037AB_25340951:500IRDye 800CW donkey anti-rabbit IgG H&LLI-CORP/N 926–32213AB_6218481:20,000IRDye 800CW donkey anti-mouse IgG H&LLI-CORP/N 926–32212AB_6218471:20,000Peroxidase AffiniPure goat anti-rabbit IgG H&LJackson ImmunoResearch111-035-144AB_23073911:20,000Peroxidase AffiniPure rabbit anti-mouse IgG H&LJackson ImmunoResearch315-035-003AB_23400611:20,000WB, Western blotting; IF, immunofluorescence.
+Embryos were manually deyolked at the desired stage and snap frozen in liquid nitrogen. For all proteins, equal numbers of embryos were analyzed for each developmental stage (H4 and H2A [n = 10], all other proteins [n = 5]). Samples were boiled with SDS loading buffer at 98°C, run on 4–12% polyacrylamide NuPAGE Bis-Tris gels (NP0321BOX; ThermoFisher Scientific) and blotted onto a nitrocellulose membrane (10600002; GE Life Sciences, Chicago, IL). Primary antibodies were incubated at RT for 1 hr or overnight at 4°C and secondary antibodies were incubated at RT for 45 min. Primary and secondary antibodies used are listed in Tables 3 and 4, respectively. Membranes were analyzed on an Odyssey Infrared Imaging System (LI-COR, Lincoln, NE) or via chemiluminescent detection (GE Life Sciences) and X-ray film (GE Life Sciences). Tubulin was examined visually on all blots as a loading control.
 
-## Quantitative mass spectrometry
+**Table 3.**
+ List of primary antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Primary antibodies</th>
+    </tr>
+    <tr>
+      <th>Target/Name</th>
+      <th>Company</th>
+      <th>Company code</th>
+      <th>RRID</th>
+      <th>[WB]</th>
+      <th>[IF]</th>
+      <th>[IP]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H3</td>
+      <td>Abcam</td>
+      <td>ab1791</td>
+      <td>AB_302613</td>
+      <td>1:10,000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>Abcam</td>
+      <td>ab10158</td>
+      <td>AB_296888</td>
+      <td>1:1000</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H2A</td>
+      <td>Abcam</td>
+      <td>ab18255</td>
+      <td>AB_470265</td>
+      <td>1:1000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H2B</td>
+      <td>Abcam</td>
+      <td>ab1790</td>
+      <td>AB_302612</td>
+      <td>1:3000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>α-tubulin</td>
+      <td>Sigma</td>
+      <td>T6074</td>
+      <td>AB_477582</td>
+      <td>1:20,000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RFP</td>
+      <td>Abcam</td>
+      <td>ab152123</td>
+      <td>AB_2637080</td>
+      <td></td>
+      <td></td>
+      <td>Excess</td>
+    </tr>
+    <tr>
+      <td>PTX3</td>
+      <td>Cosmo Bio</td>
+      <td>PPZ1724</td>
+      <td>AB_1962280</td>
+      <td>1:15,000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA Pol II</td>
+      <td>BioLegend</td>
+      <td>MMS-126R</td>
+      <td>AB_10013665</td>
+      <td></td>
+      <td>1:1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HA</td>
+      <td>Abcam</td>
+      <td>ab9110</td>
+      <td>AB_307019</td>
+      <td>1:5000</td>
+      <td></td>
+      <td>Excess</td>
+    </tr>
+    <tr>
+      <td>IgG from rabbit serum</td>
+      <td>Sigma</td>
+      <td>I5006</td>
+      <td>AB_1163659</td>
+      <td></td>
+      <td></td>
+      <td>Excess</td>
+    </tr>
+  </tbody>
+</table>
+
+_WB, Western blotting; IF, immunofluorescence; IP, immunoprecipitation._
+
+**Table 4.**
+ List of secondary antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Secondary antibodies</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Company code</th>
+      <th>RRID</th>
+      <th>[WB]</th>
+      <th>[IF]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alexa 488 goat anti-mouse IgG H&amp;L</td>
+      <td>ThermoFisher</td>
+      <td>A-11029</td>
+      <td>AB_138404</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Alexa 594 goat anti-rabbit IgG H&amp;L</td>
+      <td>ThermoFisher</td>
+      <td>A-11037</td>
+      <td>AB_2534095</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>IRDye 800CW donkey anti-rabbit IgG H&amp;L</td>
+      <td>LI-COR</td>
+      <td>P/N 926–32213</td>
+      <td>AB_621848</td>
+      <td>1:20,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IRDye 800CW donkey anti-mouse IgG H&amp;L</td>
+      <td>LI-COR</td>
+      <td>P/N 926–32212</td>
+      <td>AB_621847</td>
+      <td>1:20,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peroxidase AffiniPure goat anti-rabbit IgG H&amp;L</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-035-144</td>
+      <td>AB_2307391</td>
+      <td>1:20,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peroxidase AffiniPure rabbit anti-mouse IgG H&amp;L</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>315-035-003</td>
+      <td>AB_2340061</td>
+      <td>1:20,000</td>
+    </tr>
+  </tbody>
+</table>
+
+_WB, Western blotting; IF, immunofluorescence._
+
+### Quantitative mass spectrometry
 
 We selected five proteotypic peptides (Worboys et al., 2014) for each of the four histones: H3, H4, H2A and H2B. The peptides do not discriminate between known histone variants for H3 and H2A. A chimeric gene encoding these peptides (Beynon et al., 2005) in addition to reference peptides from BSA and Glycjogen Phosphorylase B (PhosB) (five each), and flanked by Strep- and His-tags, was chemically synthesized (Gene Art, ThermoFisher Scientific). This gene was expressed in a Lys, Arg dual-auxotroph E. coli strain (BL21DE3pRARE) that was grown in media complemented with 13C15N-Arg and 13C-Lys (Silantes, Munich, Germany). In a separate LC-MS/MS experiment, we established that the full-length chimeric protein was correctly expressed and the rate of incorporation of isotopically labeled amino acids was ca. 99%. The gel band corresponding to the chimeric protein was co-digested with the gel slab containing the histones from the samples of interest (Shevchenko et al., 2006) and with the band containing the exactly known amount of the reference protein (BSA). The recovered tryptic peptides were analysed by nanoLC-MS/MS on a LTQ Orbitrap Velos coupled with Dionex Ultimate 3000 nano-HPLC system (ThermoFisher Scientific). Three biological replicates were analyzed for each sample, with two technical replicates for each sample. The peptides were separated using C18 reversed phase column (Acclaim PepMap 100) over a linear gradient from 0 to 55% solvent B in a mixture of solvents A and B, delivered in 120 min (Solvent A 0.1% FA, Solvent B 60% ACN + 0.1% FA). The identification of peptides was performed using Mascot v2.2.04 (Matrix Science, London, United Kingdom) against a custom-made database composed of sequences from all histones, BSA, PhosB, affinity tag and the sequences of common contaminants such as human keratins and porcine trypsin. The raw abundances of extracted ion chromatograms (XIC) peaks of peptide precursors were reported by Progenesis LC-MS v4.1 software (Nonlinear Dynamics, Newcastle, United Kingdom). First the chimeric protein was quantified by comparing the abundances of BSA peptides comprised in its sequence with the corresponding peptides obtained by co-digestion of a known amount of BSA protein standard. In turn, the molar content of target zebrafish histones was inferred from the content of the chimera protein and the ratio of relative abundances of XIC peaks of precursor ions of matching pairs of labeled (originating from chimera) and unlabeled (originating from histones) peptides. Note that all peptides were recovered from the same in-gel digest and quantified at the same LC-MS/MS run.
 
-## Histone calculations
+### Histone calculations
 
 Absolute histone amounts were measured using mass spectrometry. The number of histones bound to a diploid zebrafish genome was calculated as 31,324,994 per genome for each histone. To arrive at this calculation (Figure 4—source data 1), we have previously shown that the average distance between the centers of neighboring nucleosomes in the zebrafish embryo around genome activation is 187 base pairs (Zhang et al., 2014). The size of a zebrafish genome is 1.46 Gb (GRCz10). This was multiplied by two to reach the diploid genome size which was then divided by the nucleosome repeat length to arrive at the number of nucleosomes per genome. As each histone is represented twice in a nucleosome, this number was multiplied by two to arrive at 3.13 × 107 copies of each histone that are required to wrap one zebrafish genome into chromatin (see Figure 4—source data 1). To arrive at numbers of histones in ‘genomes worth of histones’, the actual number of histones was divided by the amount of histones required to wrap one diploid genome. For the excess of histones per cell calculation (Figure 4D), the level of H2B (Figure 4—source data 1) and the cell numbers in Figure 1—source data 1 were used. Because we have shown that all four core histones contribute to the repressor effect, we used the level of H2B for these calculations, as H2B is the lowest abundant histone and therefore may be limiting for the formation of nucleosomes. We subtracted the number of histones that are assumed to be bound to DNA, which amounts to one to two genomes worth of histones assuming replication (we used the average). The total concentration of non-DNA bound histones was calculated by dividing the total amount of non-DNA-bound histones by the volume of the animal cap (Figure 4—figure supplement 1A).
 
-## Histone cocktail
+### Histone cocktail
 
 Recombinant histones were of human origin and produced in E. Coli (NEB, Ipswich, MA; 1 mg/ml: H3.1 M2503S, H4 M2504S, H2A M2502S, H2B M2505S). We used human histones because histones are highly conserved between species and these are readily available. To remove DTT, H3.1 was dialyzed in histone buffer (300 mM NaCl, 1 mM EDTA, 20 mM NaPO4, pH 7.0 at 25°C) using a Slide-A-Lyzer MINI dialysis device, 7K MWCO (ThermoFisher Scientific) at RT for 30 min or at 4°C overnight. Stoichiometric amounts of all four core histones were combined, spun for 5 min at 6600 rcf on a bench top centrifuge, supernatant was removed, and recovery of histones was measured via quantitative Western blot analysis and calculated using a standard. On average 5756 genomes worth of histone were injected with an error of ±388 (n = 3).
 
-## NanoString analysis
+### NanoString analysis
 
 This method involves assigning a unique color-coded barcode to transcripts of interest for single-molecule imaging and counting. The number of times the unique barcode is detected, is used as a readout of the expression level or number of ‘counts’ for the gene of interest. We developed a custom-made probe set of zygotically expressed genes as well as control genes (Figure 2, Figure 2—source data 1). Probe-sets were hybridized to 100 ng of mRNA extracted from a batch of 25 embryos using the RNeasy Mini Kit and processed following the manufacturer’s recommendations (NanoString Technologies, Seattle, WA) (Kulkarni, 2011). More information about the analysis can be found in the legend of Figure 2—figure supplement 2.
 
-## Chromatin fractionation
+### Chromatin fractionation
 
 At the desired stage, 65–100 embryos were manually deyolked and snap frozen in a cell lysis buffer (CLB: 10 mM HEPES pH 7.9, 10 mM KCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% glycerol, 0.1% NP-40, 1x protease inhibitor (Roche, Basel, Switzerland)) (Méndez and Stillman, 2000). Thawed embryos were shaken at 4°C for 5 min, then placed on ice and flicked intermittently for 5 min. Samples were spun in a bench top centrifuge at 1700 rcf for 5 min. Supernatant was removed and the pellet was washed with CLB. After another spin, the pellet was washed with a nuclear lysis buffer (3 mM EDTA, 0.2 mM EGTA). The sample was spun down and resuspended with high-salt solubilization buffer (50 mM Tris-HCL pH 8.0, 2.5 M NaCl, 0.05% NP-40, 1x protease inhibitor) (Shechter et al., 2009). The sample was vortexed for 2 min and placed on a rotator at RT for 10 min. The complete sample was then used in Western blot analysis.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Per IP, 500 staged embryos were deyolked as previously described (Link et al., 2006). Cells were immediately resuspended in cell lysis buffer (10 mM Tris-HCl at pH 7.5, 10 mM NaCl, 0.5% NP-40, 1x protease inhibitor (Roche)), and lysed for 15 min on ice. Nuclei were pelleted by centrifugation and the supernatant was collected and rotated overnight at 4°C with 25 mL of protein G magnetic Dynabeads (Invitrogen, Carlsbad, CA) that had been pre-bound to an excess amount of antibody. Bound complexes were washed six times with RIPA buffer (50 mM HEPES at pH 7.6, 1 mM EDTA, 0.7% DOC, 1% Igepal, 0.5 M LiCl, 1x protease inhibitor) followed by 10 min of boiling in SDS loading buffer. Beads from the sample were subsequently removed by centrifugation and Western blotting was used for further analysis.
 
-## Cy5 labeling
+### Cy5 labeling
 
 Histone H4 was incubated with Cyanine5 NHS ester (10:1 molar ratio) (Lumiprobe, Hannover, Germany) rotating overnight at 4°C. The next day, the solution was dialyzed in histone buffer for 30 min at RT. ~1 ng was injected into embryos of the Tg(h2afz:h2afz-GFP) transgenic fish line (Pauls et al., 2001) and embryos were imaged live on an upright LSM 510 META microscope equipped with a Zeiss W Plan-Apochromat 40 × 1.0 dipping objective. GFP was excited at 488 nm, detected with a PMT using BP527.5/545 and a pinhole size of 72 µm. Cy5 was excited at 633 nm, detected with the META detector using BP649-756 and a pinhole size of 96 µm. Images are 512*512 pixels, pixel size is 0.22 µm and were acquired with eight-bit mode.
 
-## Quantification of nuclear concentration of non-DNA-bound histones
+### Quantification of nuclear concentration of non-DNA-bound histones
 
 We determined the concentration of non-DNA bound histones in the nucleus as follows. First, we obtained volumetric data from live embryos, in which H4-sfGFP fusion protein was translated from injected mRNA to label animal cap and cell nuclei, at low- and high-intensity levels, respectively (see ‘Live embryo tracking of nuclei and animal cap volumes’ and ‘Automated image analysis’ below). Imaging live embryos prevented volume alterations due to fixation, permeabilization, and wash steps in immunofluorescence. Next, we determined relative histone distributions in cytoplasm and nucleus by immunofluorescence detection of endogenous histone H4, thus avoiding potential offsets or sub-cellular redistribution of the endogenous histone pool due to the addition of labeled fusion protein (see ‘Immunofluorescence’ and ‘Automated image analysis’ below). Then, we combined volumetric and nuclear-over-cytoplasmic intensity ratio data to allocate the total amount of histone H4 per embryo, as measured by mass spectrometry (Figure 4—source data 1), to the cytoplasmic and the nuclear sub-compartment (see ‘Calculation of non-DNA-bound nuclear histone concentration’ below). Lastly, aiming to calculate the concentration of only non-DNA-bound histones, the histones bound on chromatin in a given nucleus were subtracted from the total nuclear concentration of histones.
 
-## Live embryo tracking of nuclei and animal cap volumes
+### Live embryo tracking of nuclei and animal cap volumes
 
 To monitor the volumes of the animal cap and individual nuclei as well as nuclear import dynamics, histone H4 and PCNA were imaged in whole live embryos at a time resolution of 2 min or faster (see Figure 4—source data 2). H4 was introduced as a fusion with sfGFP by mRNA injection. PCNA was monitored using offspring of transgenic fish with PCNA-RFP (Tg(bactin:RFP-pcna) [Strzyz et al., 2015]).
 
 Embryos were mounted in glass capillaries with 1% low-melting agarose (Invitrogen) dissolved in 0.3x Danieau’s solution and imaged with a Zeiss Z.1 lightsheet microscope using a 10x water dipping objective (NA 0.5) for acquisition, a lightsheet thickness below 5 µm, and dual side illumination (Icha et al., 2016). The microscopy chamber was filled with 0.3x Danieau’s and kept at 28.5°C. Optical sectioning was 1 or 1.5 µm, time resolution was 2 min or faster for the acquisition of a whole 3D stack.
 
-## Immunofluorescence
+### Immunofluorescence
 
 A time series of wild-type TLAB embryos covering 64-cell to sphere stages was collected, immunostained following a protocol optimized for full transparency and penetration of antibody, and imaged using a Zeiss Z.1 lightsheet microscope. Wild-type TLAB embryos were transferred at a given stage by transfer from 0.3x Danieau’s into 2% formaldehyde in 0.3x Danieau’s with 0.2% Tween-20 and left to fix overnight at 4°C. On the next day, embryos were washed three times for 10 min in PBST (Dulbecco’s PBS with 0.1% Tween-20), then further permeabilized by washing twice in double-distilled water followed by 5 min waiting at room temperature, and then blocked with 4% BSA in PBST with 1% DMSO for at least 30 min. Primary antibodies against histone H4 and RNA polymerase II were diluted in 2% BSA in PBST with 1% DMSO and applied for incubation at 4°C for at least 48 hr. Embryos were washed three times for 10 min in PBST. Secondary antibodies were diluted in 2% BSA in PBST with 1% DMSO and applied overnight or longer at 4°C. Embryos were then washed three times for at least 10 min in PBST and stored at 4°C until imaging. Mounting for imaging was done in glass capillaries using 2% low-melting agarose dissolved in Dulbecco’s PBS. 3D stacks were acquired using a 20x water dipping objective (NA 1.0) for acquisition, a lightsheet thickness below 5 µm, and dual side illumination. The microscopy chamber was filled with Dulbecco’s PBS. Optical sectioning was 1 µm or less.
 
-## Automated image analysis
+### Automated image analysis
 
 Microscopy data were analyzed with a custom MatLab code using the Open Microscopy Environment bioformats plugin for stack reading. Nuclei were segmented using iterative thresholding for individual nuclei to compensate for differing intensities across the sample. 3D segments representing nuclei were dilated in two steps, giving a once- and a twice-extended shell around any given nucleus (Stasevich et al., 2014). The once-extended shell was removed from the twice-extended shell, along with any other nuclei that happened to be covered by the twice-extended shell. The resulting 3D segment thus covered cytoplasm in the vicinity of a given nucleus. The nucleus and the cytoplasm 3D segments were then used as masks to extract the mean intensity of a given cell’s nucleus and cytoplasm. The animal cap was segmented in 3D based a single, global threshold determined from maximum intensity z-projections using Otsu’s method. (For code, see Hilbert L. 2016 GitHub. https://github.com/lhilbert/NCRatio_Analysis. a7a5849).
 
@@ -249,24 +670,40 @@ For live-imaging data, individual nuclei were tracked across consecutive time fr
 
 For immunofluorescence data, nuclei were segmented based on the Pol II signal, which exhibited strong nuclear localization during interphase for all stages. Nuclear and cytoplasmic intensities for both Pol II and H4 were then extracted based on the Pol II segmentation as described above. To remove nuclei that were not in interphase or suffered signal degradation due to excessive spherical aberration or out-of-focus light, only nuclei with a nuclear-over-cytoplasmic intensity ration of greater than two were included in the analysis. Intensity ratios were strongly affected by background staining, so that H4 intensity values were corrected by subtraction of background levels before calculating ratios. Background levels were obtained from control embryos incubated with secondary, but not primary antibodies, which were imaged in the same session and with the same settings as the fully stained samples.
 
-## Calculation of non-DNA-bound nuclear histone concentration
+### Calculation of non-DNA-bound nuclear histone concentration
 
 To obtain nuclear histone concentration values, one considers that the total number of histones must correspond to the contributions from all cells’ cytoplasm and nuclei,
 
-Htotal=[Hnuclear]×Vnucleussum+[Hcytoplasm]×Vcytoplasmsum, where Htotal, Hnuclear, Hcytoplasm are the total, the nuclear, and the cytoplasmic concentration of endogenous histone H4, respectively. Vnucleussum and Vcytoplasmsum are the summed volumes of all cells’ nuclei and cytoplasm, respectively. Dividing both sides by the total animal cap volume, Vtotal, one findsHtotalVtotal=[Hnuclear]×v+[Hcytoplasm]×(1−v),
+$H_{total}=[H_{nuclear}]\timesV_{nucleus}^{sum}+[H_{cytoplasm}]\timesV_{cytoplasm}^{sum}$, where $H_{total}$, $H_{nuclear}$, $H_{cytoplasm}$ are the total, the nuclear, and the cytoplasmic concentration of endogenous histone H4, respectively. $V_{nucleus}^{sum}$ and $V_{cytoplasm}^{sum}$ are the summed volumes of all cells’ nuclei and cytoplasm, respectively. Dividing both sides by the total animal cap volume, $V_{total}$, one finds
 
-where v=Vnucleussum/Vtotal is the fraction of the total animal cap volume taken up by nuclei (also corresponds to the average fraction of cell volume occupied by the cell nucleus). Considering the N/C intensity ratio, R, to represent the concentration ratio, R≈[ Hnuclear ]/[Hcytoplasm], one can solve for [Hnuclear],[Hnuclear]=HtotalVtotal×R1+v(R−1).
+$$
+\frac{H_{total}}{V_{total}}=[H_{nuclear}]\timesv+[H_{cytoplasm}]\times(1−v),
+$$
 
-Realizing that this measured nuclear concentration results from non-DNA-bound histones as much as chromatin bound histones, one needs to subtract the concentration of chromatin bound histones to arrive at the non-DNA-bound histone H4 concentration,[ Hfree ]=[ Hnucleus ]−[ Hbound ]=[ Hnucleus ]−gVnucleussingle.
+where $v=V_{nucleus}^{sum}/V_{total}$ is the fraction of the total animal cap volume taken up by nuclei (also corresponds to the average fraction of cell volume occupied by the cell nucleus). Considering the N/C intensity ratio, R, to represent the concentration ratio, $R≈[H_{nuclear}]/[H_{cytoplasm}],$ one can solve for $[H_{nuclear}]$,
 
-g quantifies the number of complete, histone wrapped genomes (in units of genomes worth) being present in the volume of an individual nucleus, Vnucleussingle. Dropping the single superscript for ease of notation, the final expression is[Hfree]=HtotalVtotal×R1+v(R−1)−gVnucleus.
+$$
+[H_{nuclear}]=\frac{H_{total}}{V_{total}}\times\frac{R}{1+v(R−1)}.
+$$
 
-We measured all variables except g on the right hand side using mass spectrometry ([Htotal]), lightsheet imaging of whole live embryos injected with mRNA for H4-sfGFP (Vtotal, v, Vnucleus, see above), or immunofluorescence of endogenous histone H4 (R) (see Figure 4—figure supplement 1B). g was assigned a value of 1.5 genomes worth, to fall between 1 (before replication of the genome) and 2 (complete replication of the genome), under the assumption of full occupation of the DNA by histones.
+Realizing that this measured nuclear concentration results from non-DNA-bound histones as much as chromatin bound histones, one needs to subtract the concentration of chromatin bound histones to arrive at the non-DNA-bound histone H4 concentration,
 
-## Chromatin immunoprecipitation
+$$
+[H_{free}]=[H_{nucleus}]−[H_{bound}]=[H_{nucleus}]−\frac{g}{V_{nucleus}^{single}}.
+$$
+
+g quantifies the number of complete, histone wrapped genomes (in units of genomes worth) being present in the volume of an individual nucleus, $V_{nucleus}^{single}$. Dropping the single superscript for ease of notation, the final expression is
+
+$$
+[H_{free}]=\frac{H_{total}}{V_{total}}\times\frac{R}{1+v(R−1)}−\frac{g}{V_{nucleus}}.
+$$
+
+We measured all variables except g on the right hand side using mass spectrometry ($[H_{total}]$), lightsheet imaging of whole live embryos injected with mRNA for H4-sfGFP ($V_{total}, v, V_{nucleus}$, see above), or immunofluorescence of endogenous histone H4 (R) (see Figure 4—figure supplement 1B). g was assigned a value of 1.5 genomes worth, to fall between 1 (before replication of the genome) and 2 (complete replication of the genome), under the assumption of full occupation of the DNA by histones.
+
+### Chromatin immunoprecipitation
 
 Per IP, ~550 staged embryos were fixed at RT for 15 min in 1.85% formaldehyde. The fixative was quenched with 125 mM glycine and rotation at RT for 5 min. Embryos were then rinsed 3x in ice cold PBS (Accugene, Willowbrook, IL), resuspended in cell lysis buffer (same as co-IP) and lysed for 15 min on ice. Nuclei were pelleted by centrifugation, resuspended in nuclear lysis buffer (50 mM Tris-HCl at pH 7.5, 10 mM EDTA, 1% SDS, 1x protease inhibitor) and lysed for 10 min on ice. Two volumes of IP dilution buffer (16.7 mM Tris-HCl at pH 7.5, 167 mM NaCl, 1.2 mM EDTA, 0.01% SDS, 1x protease inhibitor) was added and the sample was sonicated to produce DNA fragments of between 200 and 300 bp (for Pou5f3-2xHA ChIP) or 400 and 500 bp (for tTA-VP16-2xHA ChIP) as determined using a bioanalyzer. 0.8% Triton X was added to the chromatin, which was then centrifuged to remove residual cellular debris. A sample was saved for input and the rest was divided over 25 mL of protein G magnetic Dynabeads that had been pre-bound to an excess amount of either HA antibody or IgG control antibody (Table 3). These were rotated overnight at 4°C. Bound complexes were washed six times with RIPA buffer followed by TBS. Elution buffer (50 mM NaHCO3, 1% SDS) was added to the beads, which were then vortexed and incubated for 15 min at RT on a rotator. Elutant was collected after centrifugation at 13,200 rcf, and beads were subjected to a repetition of the elution step. The same volume of elution buffer was added to the input sample, and 300 mM NaCl was added to all samples to reverse crosslink at 65°C overnight. Three volumes of 100% ethanol was added and samples were incubated for 1 hr at −80°C. Samples were spun at 13,200 rcf at 4°C for 10 min followed by supernatant removal and air drying. 100 µL water was added and samples were shaken at RT for 5 hr. A PCR purification kit (Qiagen) was used before qPCR analysis.
 
-## Sample-size determination
+### Sample-size determination
 
 A minimum of three biological replicates were used for each experiment, with most experiments having four or more biological replicates (see figure legends for sample size).

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Negative regulators of adult neurogenesis are of particular interest as targets to enhance neuronal repair, but few have yet been identified. Planarians can regenerate their entire CNS using pluripotent adult stem cells, and this process is robustly regulated to ensure that new neurons are produced in proper abundance. Using a high-throughput pipeline to quantify brain chemosensory neurons, we identify the conserved tyrosine kinase tec-1 as a negative regulator of planarian neuronal regeneration. tec-1 RNAi increased the abundance of several CNS and PNS neuron subtypes regenerated or maintained through homeostasis, without affecting body patterning or non-neural cells. Experiments using TUNEL, BrdU, progenitor labeling, and stem cell elimination during regeneration indicate tec-1 limits the survival of newly differentiated neurons. In vertebrates, the Tec kinase family has been studied extensively for roles in immune function, and our results identify a novel role for tec-1 as negative regulator of planarian adult neurogenesis.
+Negative regulators of adult neurogenesis are of particular interest as targets to enhance neuronal repair, but few have yet been identified. Planarians can regenerate their entire CNS using pluripotent adult stem cells, and this process is robustly regulated to ensure that new neurons are produced in proper abundance. Using a high-throughput pipeline to quantify brain chemosensory neurons, we identify the conserved tyrosine kinase tec-1 as a negative regulator of planarian neuronal regeneration. tec-1RNAi increased the abundance of several CNS and PNS neuron subtypes regenerated or maintained through homeostasis, without affecting body patterning or non-neural cells. Experiments using TUNEL, BrdU, progenitor labeling, and stem cell elimination during regeneration indicate tec-1 limits the survival of newly differentiated neurons. In vertebrates, the Tec kinase family has been studied extensively for roles in immune function, and our results identify a novel role for tec-1 as negative regulator of planarian adult neurogenesis.
 
 ## Introduction
 
@@ -30,9 +30,29 @@ We report here the identification of a Tec non-receptor tyrosine kinase gene thr
 
 ## Results
 
-## tec-1 limits the regeneration of brain neurons
+### tec-1 limits the regeneration of brain neurons
 
 To identify negative regulators of neuronal regeneration in planarians, we conducted an RNAi screen of ~50 kinases and receptors with expression enriched in neoblasts (Supplementary file 1). In order to quantitatively measure effects on neuronal regeneration, we used a histological assay for staining and enumerating chemosensory neurons of the brain expressing the cintillo gene homologous to the Degenerin superfamily of sodium channels (cto, Figure 1A). cto-expressing neurons are arranged in a stereotyped pattern in close proximity to the lateral brain branches, and their numbers scale with overall animal and brain size. Because these cells adopt a planar and well-spread configuration, quantification of whole animal cto cell number through automated image segmentation is straightforward and robust (Oviedo et al., 2003; Hill and Petersen, 2015). Decapitated animals which initially lack cto+ cells regenerate them as they form a new head until an appropriate ratio of cto+ cells to body size is attained. We treated animals with dsRNA and amputated to produce head, tail, and trunk fragments that were fixed and stained in 96-well mesh plates after regeneration. In order to maximize the effects of RNAi, regenerating trunk fragments were amputated again and scored for their ability to regenerate cto+ cells after the second round of regeneration, whereas tail and head fragments were only fixed and scored after a single round of regeneration (Reddien et al., 2005). After imaging, numbers of cto+ cells and total animal area were measured using a CellProfiler pipeline, and differences in relative cto+ cell regeneration due to RNAi treatment were determined by computing a normalized log2-fold change ratio as compared to groups treated with a non-targeting dsRNA (C. elegans unc-22). Treatment with a positive control dsRNA targeting ndk, a factor that restricts head regionalization in planarians (Cebrià et al., 2002), produced increased numbers of cto+ cells in the screen. The screen identified four genes whose inhibition reduced numbers of cto+ cells attained through regeneration (log2FC < −1 and padj <0.05), though several other treatments caused smaller cto+ cell decreases that did not meet the false-discovery corrected statistical cut-off (Supplementary file 2). Because these factors could either be required for expression of cto in mature neurons, be required for differentiation from neural progenitors, or be required for maintenance of neoblasts in general, we did not pursue any further analysis of them here (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig1-v1.jpg)
+
+**Figure 1.:** (A) Design of RNAi screen. Animals were fed over several weeks, challenged to regenerate after head and tail amputation, and then fixed and stained for cto expression using Hoechst as a counterstain to detect total animal tissue (heads and tail fragments fixed at d23, while and regenerating trunks were fed dsRNA at d10 then amputated again the following day and then fixed 12 days later). Numbers of cto+ cells were enumerated using CellProfiler and normalized to animal size as measured by Hoechst area in CellProfiler. (B) Log2-transformed fold changes of area-normalized cto-cell number were determined by comparison to similar fragments treated with control dsRNA, combined across head, trunk and tail fragment types for each dsRNA treatment and plotted in ascending order of average log2-fold change. Dots represent log2-fold change for each regenerating fragment, with boxplot shading representing average log2-fold change compared to controls. Knockdown of tec-1 increased cto+ cell number more than nou-darake positive control on average. Dotted line indicates log2FC for control RNAi conditions. (C) To measure tec-1 RNAi’s effect on head regeneration and injury-induced remodeling, animals were fed dsRNA for 2 weeks before decapitation and allowed to regenerate for 16 days. To measure the effects of tec-1 inhibition in homeostasis, animals were fed dsRNA for 60 days and fixed without injury. An increase in cto+ cell number was detected in all contexts. ***p<0.001 by two-tailed t-test. Scale bars: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Animals were fed tec-1 or control dsRNA for two weeks, fixed 3 days later, stained with a tec-1 riboprobe, and visualized by colorimetric in situ hybridization. tec-1 in situ hybridization signal was decreased by tec-1 dsRNA in 5/5 animals investigated. (B) Animals were fed dsRNA for 2 weeks and RNA was collected after an additional 17 days. tec-1 mRNA levels were assayed by qRT-PCR and analyzed by ΔΔCt to determine fold change. tec-1 mRNA levels are approximately 5-fold lower in tec-1(RNAi) animals. Significance determined by two-tailed t-tests (n.s., p>0.01). Error bars = s.d.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Predicted protein sequences for dd_Smed_v6_4818_0_1 (tec-1) and dd_Smed_v6_4313_0_1 (tec-2) were aligned to non-receptor tyrosine kinase sequences from well-annotated proteomes. The clade containing known Tec kinases is marked in blue. SMED-TEC-1 and SMED-TEC-2 consistently cluster together as TFKs and did not consistently cluster with any of the five mammalian TFKs. (B) Human Tec protein domain structure compared to TEC-1 and TEC-2 protein domain structure, as predicted by SMART [107, 108]. Species codes: mm = Mus musculus, hs = Homo sapiens, dm = Drosophila melanogaster, dr = Danio rerio, ce = Caenorhabditis elegans).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Data from regenerating animals in Figure 1C. The area of the animals was measured using Hoechst nuclear stain. Despite the increase in cto+ cell numbers from Figure 1C, animal size is not significantly altered after tec-1 inhibition in the context of both regenerating heads (top) and remodeling heads (bottom) (n.s., p>0.05 by two-tailed t-test).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Animals were fed dsRNA to inhibit tec-1, tec-2 or both genes simultaneously as indicated, amputated to remove heads and tails, and allowed to regenerate for 15 days. Regenerating trunk fragments were fixed and stained for cto expression, and relative cto+ cell abundance plotted by normalizing cto+ cell number to animal size measured by the square root of animal area determined by Hoechst staining. tec-2 RNAi did not increase cto+ cell number, nor did it enhance tec-1 RNAi (***, p<0.001, n.s., p>0.05 by two-tailed t-test).
 
 We sought to uncover factors that negatively regulated cto+ cell production and found one factor, a Tec-family kinase (tec-1), whose inhibition caused a statistically significant increase in abundance of cto+ cells (Figure 1B, Figure 1—figure supplement 1, Figure 1—figure supplement 2, Supplementary file 2). To verify these effects, we inhibited tec-1 in a similar design as the screen but with an increased sample size. These experiments confirmed that inhibition of the Tec homolog resulted in a robust ~50–100% increase to the number of cto+ cell numbers, which had approximately normal spatial distribution in the animal (Figure 1C). tec-1 knockdown led to an increase in cto+ cell number both in decapitated animals regenerating an entirely new head and also in head fragments undergoing tissue remodeling (Figure 1C). This increase in relative cto+ cell abundance was not due to a change in overall animal size, but rather to an increase in absolute numbers of cto+ cells (Figure 1—figure supplement 3). Regeneration of head and tail fragments involves extensive stem cell-dependent production of new brain neurons and control of the rates of cell death, as well as injury-induced signals that initiate the process. Uninjured planarians undergo perpetual homeostatic regeneration of all cell types, including neurons of the brain, but lack expression of injury induced factors. In order to test whether tec-1’s function depended on wound signaling, we fed animals tec-1 dsRNA for 60 days in the absence of injury and found that cto+ cell number increased to a similar extent as in amputated fragments (Figure 1C). Therefore, tec-1 functions to limit numbers of neurons independent of injury signaling.
 
@@ -40,11 +60,47 @@ To examine a possible redundancy of function, we scanned the Schmidtea mediterra
 
 RNAi phenotypes that modify body patterning (such as nou darake RNAi) can result in production of excess cto+ cells as a consequence of axis transformation (Gurley et al., 2008; Iglesias et al., 2008; Petersen and Reddien, 2008; Lander and Petersen, 2016; Scimone et al., 2016), so we tested whether tec-1 could operate similarly. Whereas ndk inhibition increased cto+ cell number concomitant with increasing the size of the brain (Cebrià et al., 2002), tec-1 inhibition did not alter brain size (Figure 2A). Instead, tec-1 RNAi, but not ndk RNAi, significantly increased the number of cto+ cells normalized to brain size. The observation that tec-1 inhibition increased numbers of cto+ neurons without altering the relative size of the head or brain raised the question of how such animals physically pack increased neurons. To clarify how planarian brains could increase the number of cells without altering their overall size, we mapped the 3D positions and sizes of cto+ cells in control versus tec-1(RNAi) animals, and determined their nearest-neighbor distances and cell body volumes using Fiji/ImageJ (Figure 2—figure supplement 1). tec-1 inhibition decreased the average nearest-neighbor distance of cto+ cells and also the average volume of each cell as measured by cto mRNA distribution. Therefore, tec-1 influences cto+ cell abundance and size.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig2-v1.jpg)
+
+**Figure 2.:** (A) Animals were fed dsRNA for 2 weeks, amputated to remove heads and tails, and allowed to regenerate for 16 days. FISH was performed on trunk fragments to simultaneously measure cto+ chemosensory neurons and chat+ cholinergic neurons that allow visualization of the brain. Effects on the brain:body size and density of cto+ cells normalized to brain size were quantified. ndk RNAi resulted in an increase in brain:body size but not in numbers of cto+ cells normalized to brain size. By contrast, tec-1 RNAi increased density of cto+ cells within the brain without increasing the proportion of the body axis occupied by the brain. (B) tec-1 RNAi did not strongly affect the expression of anterior-posterior positional control genes notum, ndl-3, and wntP-2 as measured by WISH (images representative for 27/27 animals probed). Scale bars: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Day 16 regenerating tails were stained for cto. Confocal image stacks were analyzed using Fiji to determine cell volume and nearest-neighbor distances (**, p<0.01; ***, p<0.001).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Day 15 regenerating head fragments were stained with WISH for notum and chat. (B) The region of the brain commissure containing notum+chat+ neurons from (A). Example brain commissure notum+chat+ cells are marked with white arrows. Examples of excess brain commissure notum+chat+ cells in tec-1 RNAi animals are marked with yellow arrows. Images show Hoechst-stained maximum projections. Scale bars: 100 μm.
+
 To confirm a lack of overall changes to body regionalization in tec-1(RNAi) animals, we examined positional control genes whose expression demarcates distinct body territories. ndl-3 and wntP-2 expression was not appreciably altered in tec-1 RNAi treatments that result in excess cto+ cells (Figure 2B). By WISH, tec-1 inhibition was observed to modestly alter the expression of the anteriorly expressed gene notum, but through FISH analysis this effect could be attributed to the expansion of a population of previously identified notum+chat+ neurons present in the anterior of the brain (Figure 2B, Figure 2—figure supplement 2). (Hill and Petersen, 2015). We conclude that tec-1 limits numbers of cto+ cells by altering neuron density rather than participating strongly in body patterning, and that tec-1 regulates the abundance of more than one type of neuron.
 
-## tec-1 negatively regulates the abundance of many neural cell types
+### tec-1 negatively regulates the abundance of many neural cell types
 
 In order to test the specificity tec-1’s function to limit differentiated cell abundance, we investigated the impact of tec-1 knockdown on other neural cell types whose abundances could be quantified with high precision. We began by examining neurons expressed more medially within the brain compared to chemosensory neurons. glutamic acid decarboxylase (gad) is expressed in GABAergic neurons in the ventral-medial and dorsal-lateral CNS (Nishimura et al., 2008b). Neurons in these domains have distinct progenitor populations expressing nkx2.1 and tcf1 respectively (Currie et al., 2016; Brown et al., 2018). Inhibition of tec-1 increased the total number of GABAergic cells and also numbers of cells within both domains (Figure 3A and Figure 3—figure supplement 1), suggesting that tec-1’s activity is not restricted to a single brain region or a specific neuronal lineage. To confirm this, we quantified cells found throughout the brain which expresses the neuropeptide precursor-encoding gene pyrokinin prohormone-like 1 (ppl-1) (Collins et al., 2010). Cephalic ppl-1+ cells increased in abundance after tec-1 knockdown (Figure 3A). ppl-1 is also expressed prominently in neurons of the pharynx, but these cells were unaffected by tec-1 RNAi (Figure 3B), indicating tec-1 does not regulate abundance of all neurons throughout the animal. We additionally examined serotonergic neurons in the CNS marked by serotonin transporter (sert), which have a defined progenitor cell type (Currie and Pearson, 2013; März et al., 2013), and dd17258+ neurons expressed in a domain similar to cto+ cells (Fincher et al., 2018). We observed that the numbers of both of these populations increased upon tec-1 inhibition. To test whether tec-1 might act exclusively within the CNS, we quantified the density of nociceptory trpA+ neurons (Wenemoser et al., 2012; Arenas et al., 2017) and peripheral cholinergic chat+ neurons (Nishimura et al., 2010) of the in the PNS and found that tec-1 RNAi increased the abundance of both cell types (Figure 3A). To obtain more information on the effects of tec-1 knockdown throughout the body axis, we also sought neuron cell types distributed throughout the body and with densities and abundances amenable to whole-animal enumeration. We selected four such cell types that had been identified in a prior scRNAseq cell atlas study (Figure 3—figure supplement 2) (Collins et al., 2010; Fincher et al., 2018). tec-1 knockdown increased the density of three of these cell types: dd2223+, dd3733+, and spp-4+ neurons. However, tec-1 knockdown did not affect the abundance of dd2723+ neurons, which are expressed in the CNS and pharynx (Figure 3—figure supplement 2A). In addition, we also examined photoreceptor neuron abundance, because tec-1(RNAi) animals regenerating a new head sometimes produced disorganized eyes (Figure 3B). Despite affecting eye morphology, tec-1 inhibition did not modify the number of photoreceptor neurons. Together, we found that tec-1 inhibition increased the abundance of 10 of 13 neuron markers investigated, indicating that tec-1 negatively regulates the abundance of many but not all types of neurons within the central and peripheral nervous systems.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-v1.jpg)
+
+**Figure 3.:** (A-C) Animals were fed dsRNA for two weeks, amputated to remove heads and tails, and allowed to regenerate for 15 days. Regenerating head fragments were fixed and stained for gad expression, regenerating tail fragments were stained for ppl-1, trpA, opsin/tyrosinase, glut, or if-1/cali expression, and regenerating trunks were stained for chat or dd17258 expression. Cell types amenable to total animal enumeration were quantified by normalizing cell number to body size by dividing by the square root of whole animal area (gad+, brain and pharynx ppl1+, brain sert+, dd17258+, opsin+ cells). Abundances of cell types too numerous for whole-body counting were quantified by manually scoring cell numbers in a region of interest and normalizing to the area of that region (trpA+ cells were scored in an anterolateral region, peripheral chat+ neurons scored in a postpharyngeal ventromedial region, if-1+;cali, and glut+ cells scored within the brain defined by Hoechst staining). (A) tec-1 RNAi animals had increased numbers of gad+ neurons, ppl-1+ neurons within the brain, dd17258+ neurons, sert+ brain neurons, trpA+ peripheral neurons, and chat+ peripheral neurons. (B) tec-1(RNAi) animals regenerated disorganized photoreceptors but had no alteration in opsin+ cell numbers. Likewise, tec-1 inhibition did not alter numbers of pharyngeal ppl-1+ neurons. (C) tec-1 knockdown decreased the density of glut+ and pooled if-1/cali+ glial cells in the brain. Significance determined by two-tailed t-tests (*, p<0.05; ***, p<0.001; n.s. p>0.05). Images show Hoechst-stained maximum projections except for maximum-projected pharyngeal ppl-1+ cells shown for clarity overlayed with a single slice of Hoechst-labeled pharynx tissue. Scale bars: 100 μm unless otherwise noted.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Images and quantification of dorso-lateral (top) and ventro-medial populations (bottom) gad+ neurons in animals from Figure 3A (**p<0.01, ***p<0.001 by two-tailed t-test). Scale bars: 100 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Animals were fed dsRNA for two weeks, amputated to remove heads and tails, and allowed to regenerate for 15 days. (A) Regenerating trunks were stained for markers of neuronal subpopulations that are expressed throughout the planarian body and quantified for changes in tec-1 RNAi (left). These genes were chosen for their body-wide expression, countability, and specficity to putatitve cell types identified by Fincher et al (right). (B and C) dd2223+ cells from (A) were scored manually for their position along the body in ImageJ, binned into either the anterior half or posterior half of the body, and counted. (B) Cell numbers in the anterior and posterior halves of the tec-1(RNAi) animals are significantly higher than those of CNTL animals. (C) The ratio of anterior dd2223+ cells to posterior dd2223+ cells was not altered in tec-1(RNAi) animals, suggesting tec-1 can act equally across the entire body axis (*, p<0.05; ***, p<0.001; n.s. p>0.05). Significance determined by two-tailed t-tests (*, p<0.05; n.s., p>0.05). Scale bars: 100 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Day 15 regenerating trunk fragments were fixed and stained for cto and either gad or ppl-1expression. (A) The ratio of cells expressing each marker was determined for each animal, and the difference between tec-1(RNAi) and CNTL animals was not found to be statistically significant for either pair of markers. (B) The animals stained for cto and gad (left) and the animals stained for cto and ppl-1 (right) had increased neuronal cell density. Significance determined by two-tailed t-tests (*, p<0.05;**, p<0.01; ***, p<0.001, n.s., p>0.05).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) FISH to detect cintillo identified projections associated with cto+ cell bodies (red arrows). Such processes could be identified in the majority cells from control and tec-1(RNAi) animals (red numbers). (B) α-tubulin staining to detect commissural fibers joining the cephalic ganglia. Fibers appeared thicker in tec-1(RNAi) animals. Scale bars: 100 μm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Day 15 regenerating trunk fragments were stained by FISH used to measure the density of body-wall muscle and epidermis by quantifying the numbers of collagen+ muscle cells and Hoechst+ epidermal nuclei scored in medial postpharyngeal and pre-pharyngeal domains, respectively, and normalized to the size of the imaged field. (B) Day 15 regenerating head or tail fragments were stained with FISH for slc6a-13, marking excretory cells, or porcupine, marking gut tissue, respectively. Images show Hoechst-stained maximum projections. (n.s., p>0.05 by two-tailed t-test). Scale bars: 100 μm except where otherwise noted.
 
 Because many of these effects were identified in brain-localized, anterior cell types, we wanted to understand whether the tec-1 RNAi phenotype only affected anterior cells. Planarian proliferative cells have differential sensitivities to DNA damage repair and cell death across the A-P axis (Peiris et al., 2016). To test a potential influence of axis position on the tec-1 RNAi phenotype, we determined the A-P position of all dd2223+ cells in control and tec-1 RNAi animals and binned these into anterior and posterior regions (Figure 3—figure supplement 2B). tec-1 inhibition increased the abundance of dd2223+ neurons in both the anterior and posterior of the animal. Furthermore, tec-1 RNAi did not alter the relative proportion of anterior versus posterior dd2223+ neurons. Together, we conclude that tec-1 can act equivalently on neurons independent of body position.
 
@@ -56,11 +112,31 @@ We reasoned that tec-1 might control cell abundance specifically within a subset
 
 In addition, we also examined non-neuronal cells in the CNS characterized as astrocyte-like glial cells (Roberts-Galbraith et al., 2016; Wang et al., 2016). tec-1 inhibition decreased the density of cells expressing pooled glial markers intermediate filament 1 (if-1) and calamari (cali) as well as those expressing glucose transporter (glut) (Figure 3C). The functions for planarian glial cells are not yet characterized, but these cells could have a role in neuron surveillance.
 
-## tec-1 suppresses neuronal cell number by regulating cell survival
+### tec-1 suppresses neuronal cell number by regulating cell survival
 
 We next sought to determine how tec-1 exerts its negative regulatory function on neuron abundance. Differentiated cells are produced continually from neoblasts in adult planarians, so that increases to numbers of differentiated cells could either arise from an increase in stem cell-dependent tissue production or through decreases in the death of differentiated cells. Because tec-1 knockdown broadly increased neuronal numbers while decreasing glial numbers, and it is known that neurons and glial cells can arise from common progenitor cells in some contexts in other organisms, we initially hypothesized that tec-1 might control a differentiation switch at some early point in neural specification (Mori et al., 2005; Homem and Knoblich, 2012).
 
 To better understand the dynamics of tec-1’s effects on regeneration, we measured cto+ cell abundance over time during head regeneration after decapitation and during remodeling of head fragments (Figure 4A). In decapitated tec-1(RNAi) animals regenerating a new head, the rate of production of new cto+ cells was not altered at early times (4 days), but abundance of cto+ cells was higher after a week of regeneration (8 days) and reached a maximum point at 16 days. We also confirmed through WISH that tec-1 is expressed broadly in the animal and throughout regeneration from day 2 to day 12 post-amputation without undergoing discernable regeneration-induced expression changes (Figure 4—figure supplement 1). Given this expression and that tec-1 affects neuron density in both regeneration and homeostasis, it is likely this gene functions constitutively to regulate neuron numbers. To test for the perdurance of the phenotype in regeneration, we measured cto+ cell number up to 4 weeks after decapitation and found that cto cells had reached a steady-state maximum by two weeks post-amputation (Figure 4—figure supplement 2). In tec-1(RNAi) head fragments undergoing tissue remodeling, the maximal cto+ cell abundance phenotype was observed somewhat earlier, by 4 days, and persisted (Figure 4A). The progressive nature of the phenotype in decapitated regenerating animals suggests that tec-1 is unlikely to regulate rates of differentiation commonly across all timescales and conditions. However, it remained possible that rates of neuron differentiation are maximal during early head regeneration, while tec-1 could restrict rates of differentiation in a process common to the contexts of late head regeneration, head remodeling, and homeostatic maintenance.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig4-v1.jpg)
+
+**Figure 4.:** All animals were fed dsRNA for 2 weeks before surgeries as indicated by cartoons. (A) Time courses of cto+ cell number in regeneration of a new head (left) or remodeling of a pre-existing head (right). Each data point represents sample size of between 4 and 12 animals. (B) Animals were transtioned into high-salt water one week before surgery, and either whole animals (day 0) or head fragments (days 2 and 4) were soaked in BrdU for 4 hr. Heads fragments were fixed at days 6, 8, 10, and 12 post-amputation. Co-staining of control versus tec-1(RNAi) animals for ppl-1 mRNA and BrdU showed no detectable increase in numbers of BrdU+ppl-1+ cells at any time point (left). Single confocal slices show staining of BrdU and ppl-1 in day 12 animals (right). White arrows show colocalization. (C) Regenerating tail fragments were fixed at 2, 4, 8, or 12 days post injury and stained with FISH to detect piwi-1 and coe or pax6 transcription factors, which label broad neuronal progenitors, or pitx transcription factor, labeling progenitors of serotonergic neurons. Single confocal slices show staining of transcription factors, piwi-1, and Hoechst counterstain in day 12 animals. No significant differences in numbers of neural progenitor cells were detected (***, p<0.001, n.s. p>0.05 by two-tailed t-test, error bars represent standard deviation). Scale bars: 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Trunk fragments were fixed 2, 4, 8, and 12 days post amputation and stained for tec-1 expression. tec-1 is expressed throughout the animal, including the anterior, throughout regeneration. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Trunk fragments were fixed 4, 14, 21, and 28 days post amputation and stained for cto expression. The increase in cto+ cell number after tec-1 inhibition was sustained for several weeks, suggesting cto+ neurons reach steady-state levels after two weeks of regeneration under these conditions. Significance determined by two-tailed t-tests (***, p<0.001, error bars represent standard deviation).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Animals were stained with tec-1 riboprobe and the indicated neural or progenitor marker (left and center) using in situ hybridizations or immunostainings (for PIWI-1 protein). Channels are merged (right) and a magnified image demonstrating colocalization is shown (right inset). Images show a single confocal slice. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Animals were fed dsRNA for 2 weeks before amputating and fixing at 48 hr to examine mitotic activity at the time of a proliferative burst in early regeneration. Regenerating head fragments were immunostained to detect phosopho-ser10-Histone3, and no significant difference in numbers of H3P+ cells were detected (n.s. p>0.05 by two-tailed t-test). Scale bars: 100 μm.
 
 To test this possibility, we designed a BrdU labeling strategy to test for possible effects of tec-1 inhibition on the rate of neuron differentiation. We chose to investigate regenerating head fragments undergoing brain remodeling because tec-1 inhibition caused a rapid attainment of excess neurons compared to control animals, so we reasoned these fragments would provide a context in which tec-1-dependent regulation is prominent. Neoblasts are the only proliferative cells in adult planarians, so a pulse of BrdU initially marks these cells, followed by labeling their newly-born post-mitotic descendants (Newmark and Sánchez Alvarado, 2000). In order to measure rates of neuron production, we soaked animals with BrdU earlier on same the day of amputation (d0) or at 2 or 4 days after amputations to generate head fragments, then fixed the animals at 6, 8, 10 and 12 days post-amputation in order to detect BrdU incorporation into new mature neurons (Figure 4B). We chose to analyze BrdU incorporation into ppl-1+ brain neurons because they are under robust control by tec-1 (Figure 3A), and they are more numerous than cell types such as cto+ or gad+ neurons, thus maximizing the ability to detect any influence of tec-1 on neuron differentiation given possible inefficiencies in BrdU label uptake. However, numbers of ppl-1+BrdU+ cells were not significantly different in control versus tec-1(RNAi) animals over a range of timepoints of BrdU pulsing and fixation in regeneration. These data indicate that tec-1 inhibition can increase numbers of neurons without modifying rates of differentiation, pointing instead to a function in controlling neuron survival.
 
@@ -69,6 +145,22 @@ A model in which tec-1 controls neuronal survival would predict that tec-1 does 
 We next examined tec-1 expression by double-FISH to determine whether this gene could be expressed preferentially within neurons, neural progenitors, or other cell types. However, we detected tec-1 FISH signal not only within each type of neuron tested (cto, gad, ppl-1) but also within pitx, coe, or pax6A-expressing cells, neoblasts or their differentiating progeny marked with anti-PIWI-1 antibody, and in if-1;cali+ glial cells (Figure 4—figure supplement 3). Therefore, tec-1 is a broadly expressed gene that exerts a specific effect on neuronal cell density. Consistent with these observations and the specificity of the tec-1(RNAi) phenotype, tec-1 inhibition did not modify numbers of H3P+ mitotically active cells in response to injury (Figure 4—figure supplement 4). Taken together, these results support the model that tec-1 does not regulate the process of neuronal differentiation or control a switch between neuronal and glial specification.
 
 In light of these results, we reasoned that tec-1 might function to activate cell death specifically of CNS and PNS neurons. Uninjured planarians undergo a basal rate of homeostatic cell death thought to occur across tissue types as older cells die off and require stem cell-dependent replacement, and amputation triggers a systemic elevation of cell death of differentiated cells as part of the tissue remodeling process (Pellettieri et al., 2010). We used TUNEL staining on remodeling head fragments to test whether tec-1 promotes cell death and found that tec-1 RNAi reduced but did not eliminate numbers of TUNEL+ cells (Figure 5A). This observation is consistent with a model in which tec-1 promotes cell death of some but not all cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig5-v1.jpg)
+
+**Figure 5.:** Animals were fed dsRNA for 2 weeks before amputation to measure numbers of dying cells and persistence of regenerated chemosensory neurons after lethal irradiation. (A) Head fragments were TUNEL stained 72 hr after injury and numbers of TUNEL+ cells normalized to fragment area quantified to find that tec-1 inhibition resulted in diminished numbers of dying cells. (B) Amputated trunk fragments were allowed to regenerate for 6 days, treated with 6000 rads of X-rays to eliminate neoblasts and subsequent neuron differentiation, then fixed at the indicated times post-injury, and numbers of cto+ cells detected and counted by FISH and normalized to brain length determined by Hoechst staining. Schematic shows predicted effects of lethal irradiation on population abundances (blue shading) for cells involved in producing new cto+ neurons in head regeneration: neoblasts, neural progenitors, and differentiated CNS neurons after irradiation during head regeneration over the course of days. In control animals, the density of cto+ neurons (red) decreased between four and six days after irradiation (bracket). By contrast, tec-1(RNAi) animals had normal numbers of newly formed cintillo+ cells, cto+ number is not significantly greater than controls at d10 post amputation, but is significantly greater than controls two days later. Each data point represents sample size of between 4 and 9 animals. (C) Model of normal neuronal production, where tec-1 acts to cull excess neurons in homeostasis and regeneration (*p<0.05, **p<0.01, ***p<0.001, n.s. p>0.05 by two-tailed t-test, error bars represent standard deviation). Scale bars: 100 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Trunk fragments were irradiated on day 6 post-amputation and fixed 48 hours later or allowed to regenerate until 12 days post-amputation without irradiation. Animals were stained for piwi-1 and counterstained with Hoechst. Neoblasts were completely ablated in control and tec-1(RNAi) animals, indicating that increased neuronal cell numbers after irradiation are not caused by resistance to irradiation. Scale bars: 100 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** FISH images of regenerating trunk fragments 8-12 days after amputation (left to right) from Figure 5B. All animals were irradiated 6 days post amupation. Scale bars: 100 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47293/elife-47293-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Single-cell RNA sequencing and tSNE subcluster analysis from Fincher et al. (2018), comparing tec-1’s expression in all cells and neurons (top) to clusters determined by tSNE (bottom). tec-1 is broadly expressed in numerous different cell types (left). tec-1 is expressed in many different neural subclusters (right) but is enriched in subcluster 6, previously identified as containing neural progenitors (adjusted p-value of 3.11e-23).
 
 We hypothesized based on the above results that tec-1 might promote cell death in a fraction of newly born neurons. The requirement of tec-1 under conditions of both homeostasis and regeneration would then suggest that, as in embryonic development in other organisms, regenerated brain neurons in planarians undergo an initial overproduction followed by rapid cell death. The regeneration of a new head in decapitated animals represented a condition in which we reasoned this phenomenon would be most easily detected, because in that context the new production of brain neurons is synchronized by amputation. However, detailed time course analysis of new neuron production in such animals has not yet identified such overproduction, suggesting that ongoing neuron production during the ~1–2 weeks of head regeneration might mask these effects. Therefore, we sought a means to isolate the fates of a limited cohort of neurons produced only within a narrow time window after amputation. To do this, we used lethal irradiation early during head regeneration to eliminate neoblasts acutely, followed by a timeseries of fixation and staining, to measure the survival of a cohort of neurons produced only within in a specific time frame. After tec-1 inhibition and head amputation, planarian fragments were irradiated 6 days later then fixed in a time series in the absence of proliferating cells. Staining these animals with a piwi-1 riboprobe 2 days after irradiation showed complete elimination of neoblasts by this time (Figure 5—figure supplement 1). In control animals, cto+ cell number decreased between days 10 and 12 post-amputation, consistent with the prediction of initial overproduction (Figure 5B and Figure 5—figure supplement 2). tec-1(RNAi) animals did not produce significantly more cto+ cells at day 10 compared to controls but did not undergo the day 12 decrease in cto+ cells. These data confirm that tec-1 does not influence rates of cell production but instead strongly suggest that tec-1 promotes the death of newly born neurons in order to limit the abundance of cells produced through adult neurogenesis (Figure 5C).
 
@@ -88,23 +180,103 @@ The identification of negative regulators of neurogenesis may be an important st
 
 ## Materials and methods
 
-## Planarian culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Schmidtea mediterranea)</td>
+      <td>Tec-1</td>
+      <td>Planmine</td>
+      <td>dd_Smed_v6_4818_0_1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-digoxigenin-POD, Fab fragments</td>
+      <td>Sigma/Roche</td>
+      <td># 11207733910 RRID: AB_514500</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-fluorescein-POD, Fab fragments</td>
+      <td>Sigma/Roche</td>
+      <td>#11426346910 RRID: AB_840257</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit digoxigenin-AP</td>
+      <td>Sigma/Roche</td>
+      <td>#11093274910</td>
+      <td>1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat polyclonal Anti-BrdU</td>
+      <td>Abcam</td>
+      <td>6326</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-ser10 Histone H3</td>
+      <td>Cell Signaling</td>
+      <td>D2C8</td>
+      <td>1:3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-TUBULIN-ALPHA AB-2</td>
+      <td>Thermo/Fisher</td>
+      <td>MS581P1</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL labeling kit</td>
+      <td>Thermo/Fisher</td>
+      <td>EP0162</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>112-036-072</td>
+      <td>1:1000 dilution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Planarian culture
 
 Asexual strain CIW4 of the planarian Schmidtea mediterranea were maintained in 1 × Montjuic salts at 19°C as described (Petersen and Reddien, 2011). Animals were fed a liver paste and starved for at least 7 days before experiments.
 
-## Screen
+### Screen
 
 60 putative regulatory molecules were selected by analysis of the planarian transcriptome to identify a set with expression detected in neoblasts after FACS sorting (Labbé et al., 2012), (into populations of X1 neoblasts in G2/S/M phases, X2 cells comprised of a mixture of G1 neoblasts and G0 newly postmitotic progenitor immediate descendants of neoblasts or other irradiation-sensitive G1/G0 cells, and Xins differentiated cells) with either X1/Xins or X2/Xins expression greater than two or either X1 or X2 FPKM >3. Genes classified through blastx or panther as receptor tyrosine kinases, protein tyrosine kinases, integrins, GPCRs, or other signaling factors were prioritized. dsRNA was generated through reverse transcription and two rounds of nested PCR with primers indicated (Table S1) and further amplified to add T7 sites for dsRNA production. dsRNA was produced by T7 in vitro transcription, annealing and purification by ethanol precipitation and added to liver as described previously. Animals were fed three times over a week and amputated to remove heads and tails. Head and tail fragments were fixed at 23 days following amputation (‘A-score’ heads and tails), while trunk fragments were fed again at d10 and amputated to remove heads and tails then regenerating trunk fragments were fixed 12 days later (‘B score’ trunks). Fixations, fluorescence in situ hybridizations, and Hoechst stainings to detect cto expression were carried out as described previously but in 96-well mesh-bottomed plates (Milipore Multiscreen Plates, MANMN4010) incubating in either Multiscreen receiver plates or rectangular 1-well dishes (VWR 73521–420). Stained animals were mounted and imaged at 40x using a fluorescence dissecting microscope to obtain a view of cto expression within the head and also at 25x to obtain a Hoechst-stained view of the entire fragment. A CellProfiler pipeline for automated image analysis was developed to quantify numbers of cto+ cells and also to measure area of the fragment as detected by Hoechst staining. Automated cell counting was optimized by adjusting the fixed detection threshold and object size range. Processed images were manually inspected for proper segmentation and scored manually in the event of visible errors in automated counting. Numbers of cto+ cells scale with animal length, so we normalized cto cell number to the square root of animal area as an approximate of animal length. Log2-fold change of normalized cto cell number was computed for each specimen by comparison to the average of control RNAi treatments, and these values for all fragment types (A-score heads and tails, B-score trunks), were binned and plotted in R using ggplot2. T-tests comparing area-normalized cto+ cell numbers between each RNAi condition and RNAi controls were adjusted for false discovery using the Benjamini-Hochberg method as implemented in R.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Protein sequences were aligned using MUSCLE with default settings (Chojnacki et al., 2017). Maximum likelihood analysis was run using PhyML with 100 bootstrap replicates, the WAG model of amino acid substitution, four substitution rate categories, and the proportion of invariable sites estimated from the dataset (Guindon and Gascuel, 2003; Guindon et al., 2010). We used proteins from Homo sapiens (hs), Mus musculus (mm), danio rerio (dr), Drosophila melanogaster (dm), and Caenorhabditis elegans (ce).
 
-## RNAi
+### RNAi
 
 RNAi was performed by dsRNA feeding. For RNAi, dsRNA was synthesized from in vitro transcription reactions (NxGen, Lucigen). dsRNA corresponding to Caenorhabditis elegans unc-22, not present in the planarian genome, served as a negative control. Unless noted otherwise, animals were fed a mixture of liver paste and dsRNA six times in two weeks prior to amputation of heads and tails.
 
-## In Situ hybridization, Immunostaining and qPCR
+### In Situ hybridization, Immunostaining and qPCR
 
 Animal fixation, bleaching, and in situ hybridization were performed as previously described (Pearson et al., 2009; King and Newmark, 2013). Briefly, fixation, bleaching, and probe synthesis and hybridization were performed according to Pearson et al. Antibody blocking and tyramide development were performed according to King and Newmark. Digoxigenin- or fluorescein-labeled riboprobes were detected with anti-digoxigenin-HRP (1:2000, Roche/Sigma-Aldrich 11207733910, RRID: AB_514500), anti-fluorescein-HRP (1:2000, Roche/Sigma-Aldrich 11426346910, RRID: AB_840357). Hoechst 33342 (Invitrogen) was used at 1:1000 as a counterstain. Colorimetric (NBT/BCIP) assays were performed as described and detected with anti-digoxigenin-AP (1:4000, Roche/Sigma-Aldrich 11093274910).
 
@@ -112,7 +284,7 @@ For immunostainings, animals were fixed in 4% formaldehyde. Antibodies against m
 
 For qPCR, total animal RNA was collected using Trizol with a tissue homogenizer, reverse transcribed with oligo-dT primers using Superscript II. qPCR was conducted to detect tec-1 mRNA using tec-1 primers (5’-GTTTTGATGCTAGAATGTTG-3’ and 5-TTTGACACACATACTCAAAG-3’), with normalization to a ubiquitously expressed gene gapdh detected with gapdh primers (5'-TGGTATTCAATTGACCGATACG-3' and 5'-GATCGATTACACGGCAACTG-3') using the delta-Ct method.
 
-## BrdU, TUNEL staining, and Irradiation
+### BrdU, TUNEL staining, and Irradiation
 
 For BrdU experiments, the concentration of Montjuic salts were gradually increased to 5x one week before surgery. Animals were treated with 0.0625% N‐acetyl cysteine dissolved in 1x Montjuic salts for one minute, washed with 1xMontjuic salts, and incubated in 25 mg/ml BrdU (Sigma) dissolved in 1x salts containing 3% dimethyl sulfoxide for 4 hr either 1 hr before amputation (day 0 soak), or 2 or 4 days post-amputation (day two soak or day four soak respectively). Animals were then maintained in 5x Montjuic salts until fixation on the day indicated in the experiment (Cowles et al., 2012; Zhu and Pearson, 2018). The BrdU and in situ hybridizations were carried out as previously described above, with all HRP inactivations carried out using formaldehyde (4% in 1xPBSTx for at least 45 min) (Hill and Petersen, 2018). Briefly, animals were rehydrated and bleached in 6% hydrogen peroxide in PBSTx for 3–4 hr on a light box. Following FISH protocol described as above, acid hydrolysis was performed in 2N HCl for 45 min, samples were washed with 1xPBS (twice) then 1xPBSTx (four times), and blocked in PBSTB for 6 hr at room temperature. Primary antibody incubation was performed using rat anti-BrdU antibody (1:1000 in PBSTB, Abcam 6326) overnight at room temperature, followed by 6x washes in PBSTB, and overnight incubation in anti-rat HRP secondary antibody (1:1000, Jackson ImmunoResearch 112-036-072). Tyramide development was performed at room temperature for 1 hr (Invitrogen Alexa568-TSA Kit, tyramide at final concentration of 1:150).
 
@@ -120,7 +292,7 @@ Terminal uridine nick-end labeling (TUNEL) was performed as described by Pellett
 
 To measure neuronal persistence after neoblast ablation, animals were fed and cut as described above. Regenerating trunk fragments were irradiated at 6 days post amputation. Irradiations were carried out in a RS2000 Biological Research Irradiator (Rad Source) at 160 kV over 13’30’ for a total, lethal dose of 60 Gy (Bardeen and Baetjer, 1904; Reddien et al., 2005). Irradiated fragments were fixed at 8, 10, and 12 days post-amputation.
 
-## Image analysis and cell counting
+### Image analysis and cell counting
 
 NBT/BCIP-stained animals were imaged with a Leica M210F dissecting microscope and a Leica DFC295, with adjustments to brightness and contrast using Adobe Photoshop. Fluorescent-stained animals were imaged with a Leica TCS SPE confocal microscope or a Leica DM5500B compound microscope.
 

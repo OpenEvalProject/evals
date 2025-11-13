@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0072zz521 Department of Psychological and Brain Sciences, University of Massachusetts Amherst Amherst United States
-2. https://ror.org/0072zz521 Commonwealth Honors College, University of Massachusetts Amherst Amherst United States
+1. Department of Psychological and Brain Sciences, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+2. Commonwealth Honors College, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
 
 † Corresponding author
 
@@ -24,6 +24,64 @@ Humans have an intuitive sense of number that allows numerosity estimation witho
 
 **Figure 1.:** (A) Properties of magnitude dimensions represented in three orthogonal axes defined by log-scaled number (N), size (Sz), and spacing (Sp) (Table 1). (B) Schematic illustration of the computational process from a dot-array image to the driving input (i.e., the model without divisive normalization), D, of the simulated neurons, versus the normalized response (i.e., the model with divisive normalization), R. A bitmap image of a dot array was fed into a convolutional layer with DoG filters in six different sizes (Equation 1). The resulting values, after half wave rectification, represented the driving input. Neighborhood weight, defined by η, was multiplied by the driving input across all the neurons across all the filter sizes, the summation of which served as the normalization factor (see Equations 2 and 3). This illustration of η is showing the case where r is defined by twice the size of the sigma for the DoG kernel. DOG, difference-of-Gaussians.
 
+**Table 1.**
+ Mathematical relationship between various magnitude dimensions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>As a function of n, rd, rf</th>
+      <th>As a function of N, Sz, Sp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individual area (IA)</td>
+      <td>πrd2</td>
+      <td>log⁡(IA)=1/2log⁡(Sz)−1/2log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Total area (TA)</td>
+      <td>n×πrd2</td>
+      <td>log⁡(TA)=1/2log⁡(Sz)+1/2log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Field area (FA)</td>
+      <td>πrf2</td>
+      <td>log⁡(FA)=1/2log⁡(Sp)+1/2log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Sparsity (Spar)</td>
+      <td>πrf2/n</td>
+      <td>log⁡(Spar)=1/2log⁡(Sp)−1/2log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Individual perimeter (IP)</td>
+      <td>2πrd</td>
+      <td>log⁡(IP)=log⁡(2π)+1/4log⁡(Sz)−1/4log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Total perimeter (TP)</td>
+      <td>n×2πrd</td>
+      <td>log⁡(TP)=log⁡(2π)+1/4log⁡(Sz)+3/4log⁡(N)</td>
+    </tr>
+    <tr>
+      <td>Coverage (Cov)</td>
+      <td>n×rd2/rf2</td>
+      <td>log⁡(Cov)=1/2log⁡(Sz)−1/2log⁡(Sp)</td>
+    </tr>
+    <tr>
+      <td>Closeness (Close)</td>
+      <td>π2×rd2×rf2</td>
+      <td>log⁡(Close)=1/2log⁡(Sz)+1/2log⁡(Sp)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: n=number; rd=radius of individual dot; rf=radius of the invisible circular field in which the dots are drawn._
+
 Nevertheless, it is unclear how feedforward neural activity creates a representation of numerosity within these brain regions. Specifically, the view of numerosity as a discrete number of items seems incompatible with the primary modes of information processing in the brain, such as firing rates and population codes, which are continuous. Indeed, some authors assume that continuous nonnumerical magnitude information is encoded first and integrated to produce the representation of numerosity (Dakin et al., 2011; Gebuis et al., 2016; Leibovich et al., 2017). In contradiction, however, recent empirical studies demonstrate that the magnitude of visual cortical activity is most sensitive to number and is relatively insensitive to other continuous dimensions such as size and spacing of a dot array (DeWind et al., 2019; Park, 2018; Paul et al., 2022; Van Rinsveld et al., 2020).
 
 What explains this insensitivity to spacing and size effects, despite robust sensitivity to number? Previous computational modeling studies offer some hints to this question. The computational model of Dehaene and Changeux, 1993 explains numerosity detection based on several neurocomputational principles. That model (hereafter D&C) assumes a one-dimensional linear retina (each dot is a line segment), and responses are normalized across dot size via a convolution layer that represents combinations of two attributes: (1) dot size, as captured by difference-of-Gaussians contrast filters of different widths; and (2) location, by centering filters at different positions. In the convolution layer, the filter that matches the size of each dot dominates the neuronal activity at the location of the dot owing to a winner-take-all lateral inhibition process. To indicate numerosity, a summation layer pools the total activity over all the units in the convolution layer. While the D&C model provided a proof of concept for numerosity detection, it has several limitations as outlined in the discussion. Of these, the most notable is that strong winner-take-all in the convolution layer discretizes visual information (e.g., discrete locations and discrete sizes yielding a literal count of dots), which is implausible for early vision. As a result, the output of the model is completely insensitive to anything other than number in all situations, which is inconsistent with empirical data (Park et al., 2021).
@@ -36,23 +94,71 @@ To determine the contribution of divisive normalization to numerosity encoding, 
 
 ## Results
 
-## Center-surround convolution captures total pixel intensities and eliminates the effect of spacing
+### Center-surround convolution captures total pixel intensities and eliminates the effect of spacing
 
 Images of dot arrays that varied systematically across number, size, and spacing (see Materials and methods) were fed into a convolutional layer with difference-of-Gaussians (DoG) filters in six different sizes. The driving input, D, for each filter was the convolution of a DoG with the display image, in other words a weighted sum of local pixel intensities (Figure 1B). The summed driving input in each filter size showed different effects as a function of number, size, and spacing (Figure 2A), but when the driving input was summed across all filter sizes it was most strongly modulated by both number and size equally but not by spacing (Figure 2B), suggesting that the neural activity tracks total area (TA; see Table 1; Figure 2—figure supplement 1). The effect of spacing existed in the fourth and sixth largest filter sizes, largely indicating effects of field area and density, respectively (Figure 2A); however, the effects in these two filter sizes were in opposite directions, which made the overall effect very small. These results illustrate that having multiple filter sizes is key to normalizing the spacing dimension. In sum, the driving input of the convolutional layer primarily captured total pixel intensity of the image regardless of the spatial configuration of dots.
 
-## Divisive normalization nearly eliminates the effect of size
+![Figure 2.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig2-v2.jpg)
+
+**Figure 2.:** (A) Summed driving input (ΣD) separately for each of the six filter sizes as a function of N, Sz, and Sp (see Materials and methods for the specific values of s). (B) ΣD across all filters is modulated by both number and size but not by spacing. (C) Summed normalized response (ΣR) showed a near elimination of the Sz effect leaving only the effect of N. The results were simulated using r=2σ and γ=2, but effects of Sz and Sp were negligible across all the tested model parameters (Figure 2—figure supplement 2). The value s on the horizontal axis indicates a median value for each dimension (see Materials and methods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation between summed driving input, ΣD, and log-scaled total area (TA), total perimeter (TP), and number (N).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Greater r resulted in a flatter curve for the size effect, and this flattening became more pronounced as γ increased, with the combination of high values for both parameters producing a modest negative effect of size as well as a modest positive effect of spacing. More specifically, the combination of high r and γ values produces a winner-take-all process across large regions of the display. Greater size, in these cases, thus leads to greater normalization factor (denominator) which results in reduced normalization activity, although the extent of this normalization depends on how far away the other dots are located (e.g., less normalization with spacing). Although this is an interesting phenomenon, empirical neural and behavioral studies show a positive effect of size, if any. Hence, larger values of r and γ in this model do not seem to be plausible in the case of numerosity perception. Therefore, we chose moderate values of r (=2) and γ (=2) for subsequent simulations.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The dots arrays were systematically constructed ranging equally across the dimensions of N, Sz, and Sp, which was achieved by using the following parameters: number (n)=from 90 to 360, dot radius (rd)=from 1 to 2 pixels, field radius (rf)=from 45 to 90 pixels. For each point in the 2×2×2 parameters space, 16 unique arrays were created. (B) Examples of dot array images are shown. These images were submitted to the current computational model with the same parameters used in our original analysis (r=2σ and γ=2). (C) Summed driving input (ΣD) was modulated primarily by N and Sz. Summed normalized response (ΣR) was most modulated by N but also by Sz and Sp to some degree. The slope of the linear fit to N, Sz, and Sp adjusted by the baseline (the slope estimate divided by the intercept estimate in the simple regression) was 0.4086, 0.1958, and 0.1488, respectively. Note that this baseline-adjusted slope allows comparison of relative change in the response driven by N, Sz, and Sp, despite differences in the baseline activity across different sets of images. In our original simulation, the baseline-adjusted slopes for N, Sz, and Sp were 0.5771, 0.0646, and 0.0321, respectively. Thus, the same computational network when representing much more densely packed dot arrays seems to show relatively decreased sensitivity to numerosity. These results indicate that neural sensitivity to various magnitude dimensions and the degree of that sensitivity differ based on the assumptions about the distribution of filters and filter sizes.
+
+### Divisive normalization nearly eliminates the effect of size
 
 We next added divisive normalization to the center-surround model, with different parameter values (neighborhood size and amplification factor) to determine the conditions under which divisive normalization might reduce or eliminate the effect of size and whether it might alter the absence of spacing effects in the driving input. Driving input was normalized by the normalization factor defined by a weighted summation of neighboring neurons and filter sizes (Equation 2). The summed normalized responses, ΣR, were strongly modulated by number but much less so, if any, by size and spacing (Figure 2C). The pattern of results was largely consistent across different parameter values for neighborhood size (r) and amplification factor (γ) of the normalization model (Figure 2—figure supplement 2); therefore, we chose moderate values of r (=2) and γ (=2) for subsequent simulations. As one way to quantify these modulatory effects, a simple linear regression with ΣR as the dependent variable with mean-centered values of N as the independent variable (as well as Sz and Sp in separate regression models) was performed. Then, the slope estimate was divided by the intercept estimate, so that these effects could be easily compared across different sets of images (see Figure 2—figure supplement 3). This baseline-adjusted regression slope for N, Sz, and Sp was 0.5771, 0.0646, and 0.0321, respectively. A multiple regression model with summed normalized responses as the dependent measure and the three orthogonal dimensions (N, Sz, and Sp) as the independent variables revealed a much larger coefficient estimate for N (b=13.68) than for Sz (b=1.541) and for Sp (b=0.7809). In sum, a modest degree of divisive normalization eliminated the effect of size and, at the same time, did not alter the absence of spacing effects.
 
-## Divisive normalization across space explains various visual illusions
+### Divisive normalization across space explains various visual illusions
 
 Next, we considered if the center-surround model with divisive normalization also explains some of the most well-known visual illusions of numerosity perception. If so, this would support the hypothesis that these visual illusions reflect early visual processing at the level of numerosity encoding, without requiring any downstream processing. In other words, early vision may be the root cause of both numerosity encoding and numerosity visual illusions.
 
 Empirical studies have long shown that irregularly spaced arrays (compared with regularly spaced arrays) and arrays with spatially grouped items (compared with ungrouped items) are all underestimated (Frith and Frit, 1972; Ginsburg, 1976; van Oeffelen and Vos, 1982). These illusions were indeed captured by the inclusion of divisive normalization. Irregular arrays yielded a 5.98% reduction (Cohen’s d=4.23) and grouped arrays yielded a 2.99% reduction (d=10.02) of normalized response (Figure 3A–B). Note that, in the absence of divisive normalization, there was either no effect or an effect in the opposite direction (Figure 3—figure supplement 1). The underestimation effects in the normalized response can be explained by greater normalization when neurons with overlapping normalization neighborhoods are activated, with this greater overlap occurring in subregions of the images for irregular or grouped dots. This explanation is functionally similar to one provided by the ‘occupancy model’ (Allik and Tuulmets, 1991), but our results demonstrate that these effects emerge naturally within early visual processing.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-v2.jpg)
+
+**Figure 3.:** Normalized response of the network units influenced by the (A) regularity, (B) grouping, and (C) heterogeneity of dot arrays, as well as by (D) adaptation and (E) context. Error bars represent one standard deviation of the normalized response across simulations; however, the error bars in most cases were too small to be visualized. Spatial normalization effects (A, B, and C) were simulated with r=2 and γ=2. Temporal normalization effects (D, E) used these same parameters values in combination with ω=8 and δ=1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** No underestimation was observed in any of these cases. If any, irregularly spaced arrays (by 2.19%), grouped arrays (by 1.98%), and more heterogeneous arrays (by 3.06%) were overestimated based on their driving input. In sum, without divisive normalization, the model failed to explain the typically observed visual illusions. Error bars indicate one standard deviation of the normalized response across 16 simulations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Images of small (radius=3.5), medium (radius=5), and large (radius=7) singly presented dots were fed into the computational model, and the driving input and the normalized response of the units with the receptive fields (RFs) targeting the dots were computed. As expected, driving input was nearly perfectly correlated with area of the dots (r=0.9983). In contrast, normalized response showed a linear relationship with the radius, which meant a logarithmic relationship with area. This occurs because a larger dot involves a greater number of filters overlapping with the dot (i.e., greater driving input), but this greater number of filters leads to a greater normalization factor (increase in the denominator of divisive normalization). In other words, the normalized response becomes tempered in a non-linear way, producing a saturating normalized response as a function of increasing dot area. (B) Schematic illustration of the saturating effect of normalized response for a single dot (within a hypothetical dot array) as a function of the area of the dot. Heterogeneous arrays are created by holding the total area and numerosity constant while changing individual dot size. Therefore, when medium-sized dots (M) are replaced with large dots (L), the same number of replacements must be done to go from medium-size dots (M) to small dots (S). However, because of the saturating effect, there is a greater decrease in normalized response than an increase in normalized response. Thus, the overall normalized response becomes necessarily smaller in a heterogeneous array compared to a homogeneous array.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** In this simulation, the target of 10 dots was preceded by an adaptor of 5, 10, or 20 dots. Temporal normalization could be understood in terms of a sigmoid response curve with the amplification factor (δ) determining the slope of the curve and the recency weighting factor (ω) determining the horizontal position of the curve. Smaller ω values resulted in a relative overestimation of the normalized response to the target, which can be explained by the relative leftward horizontal shift of the sigmoid response curve and hence relative increase in normalized activity (nonlinearly as a function of driving input). Larger δ values resulted in greater under- and overestimation effects, which can be explained by the sharpening of the sigmoid response curve. Error bars indicate one standard deviation of the normalized response across 32 simulations.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The target of medium-sized array was preceded by an adaptor of small-, medium-, or large-sized array. No systematic pattern of adaptation was observed in these simulations. Error bars indicate one standard deviation of the normalized response across 32 simulations.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** The target of medium-spaced array was preceded by an adaptor of small-, medium-, or large-spaced array. No systematic pattern of adaptation was observed in these simulations. Error bars indicate one standard deviation of the normalized response across 32 simulations.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** When the model saw 400 dot arrays that varied randomly across number, size, and spacing, the normalized responses to images corresponding to small, medium, and large sizes (Sz) showed no association with size. When then model saw 400 dot arrays that differed only in size, the normalized responses were strongly associated with size. Such a pattern was consistent across all the simulations over various amplification factors (δ) and recency weighting factors (ω) tested. Error bars represent one standard deviation of the normalized response across 128 simulations. Note that the error bars in the exclusive change in size conditions are extremely small.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/80990/elife-80990-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** In order to simulate the connectedness illusion, one set of ‘connected’ dot arrays and another set of ‘unconnected’ dot arrays were constructed. First, a large number of dot arrays with n=10, rd=6.5 pixels, and rf=64 pixels were created. Then, connected dot arrays were constructed by connecting the centers of two dots with a thin white line that was 2 pixels in width. The resulting images were visually checked, and all the images in which the lines cross or touch other lines or dots were removed from the set. Then, unconnected dot arrays were constructed from those connected dot arrays by breaking the midpoints of the interconnecting lines and rotating those broken lines about the center of each dot by ±30° in either direction randomly determined. The resulting images were checked again for any cross over of lines, in which case both that image and the corresponding connected image were removed. A total of 16 connected and 16 unconnected arrays entered the simulation. The connected arrays were underestimated by over 6% (Cohen’s d=5.72). Such an underestimation was not observed when considering the driving input (i.e., the model without divisive normalization). Error bars represent one standard deviation of the normalized response across simulations.
+
 A relatively understudied visual illusion is the effect of heterogeneity of dot size on numerosity perception. A recent behavioral study demonstrated that the point of subjective equality was about 5.5% lower in dot arrays with heterogeneous sizes compared with dot arrays with homogeneous sizes (Lee et al., 2016). Consistent with this behavioral phenomenon, our simulations revealed that greater heterogeneity leads to greater underestimation (Figure 3C). As compared to the homogeneous array, a moderately heterogeneous array (labeled ‘less heterogeneous’) yielded a 1.14% reduction (d=2.43) and the more heterogeneous array yielded a 5.87% reduction (d=8.11) in the magnitude of the normalized response. This occurs because the summed normalized response of a single dot saturates as dot area increases (Figure 3—figure supplement 2), which interacts with the heterogeneity of the dot array. As heterogeneity is manipulated by making some dots larger and other dots smaller while keeping total area and numerosity constant, this saturating effect makes the overall normalized response smaller as a greater number of dots deviates from the average size (the gains from making some dots larger is not as great as the losses from making some dots smaller). As in the case of other illusions, the same analysis in the absence of divisive normalization fails to produce this illusion (Figure 3—figure supplement 1).
 
-## Divisive normalization across time explains numerosity adaptation and context effects
+### Divisive normalization across time explains numerosity adaptation and context effects
 
 One of the most well-known visual illusions in numerosity perception is the adaptation effect (Burr and Ross, 2008). We reasoned that numerosity adaptation might reflect divisive normalization across time, similar to adaptation with light or odor (Carandini and Heeger, 2011), which shifts the response curve and produces a contrast aftereffect. Closely related to temporal adaptation, the recently discovered temporal contextual effect of numerosity perception is an amplified neural response to changes in one dimension (e.g., changes in dot size) when observers experience a trial sequence with only changes in that dimension (Park et al., 2021). Therefore, we also applied the model with temporal normalization to the context effect.
 
@@ -86,9 +192,9 @@ In conclusion, our results indicate that divisive normalization in a single conv
 
 ## Materials and methods
 
-## Stimulus sets
+### Stimulus sets
 
-## Dot arrays spanning across number, size, and spacing
+#### Dot arrays spanning across number, size, and spacing
 
 Inputs to the neural network were visual stimuli of white dot arrays on a black background (200×200 pixels). Dots were homogeneous in size within an array and were drawn within an invisible circular field. Any two dots in an array were at least a diameter apart from edge to edge. The number of dots in an array is referred to as n, the radius of each dot is referred to as rd, and the radius of the invisible circular field is referred to as rf. Table 1 provides mathematical definitions of other nonnumerical dimensions based on these terms.
 
@@ -96,41 +202,61 @@ Following the previously developed framework for systematic dot array constructi
 
 Across all the dot arrays, number (n) ranged between 5 and 20 dots, dot diameter (2×rd) ranged between 9 and 18 pixels, field radius (rf) ranged between 45 and 90 pixels, all having five levels in logarithmic scale. log(N) ranged from 2.322 to 4.322 with the median of 3.322; log(Sz) ranged from 16.305 to 18.305 with the median of 17.305; log(Sp) ranged from 19.646 to 21.646 with the median of 20.646. This approach resulted in 35 unique points in the three-dimensional parameter space (see Figure 1A). For each of the 35 unique points, a total of 100 dot arrays were randomly constructed for the simulation conducted in this study.
 
-## Dot arrays for testing regularity effects
+#### Dot arrays for testing regularity effects
 
 The ‘regular’ dot array was constructed following the previous study that first demonstrated the regularity effect (Ginsburg, 1976). This array contained 37 dots with rd=3 pixels, one of which at the center of the image and the rest distributed in three concentric circles with the radii of 20, 40, and 60 pixels. The ‘irregular’ arrays were constructed with the same number of and same sized dots randomly placed with rf=72.5 pixels. This radius for the field area was empirically calculated so that the convex hull of the regular array and the mean convex hull of the irregular arrays were matched. Sixteen irregular arrays were used in the simulation.
 
-## Dot arrays for testing grouping effects
+#### Dot arrays for testing grouping effects
 
 One set of ‘ungrouped’ dot arrays and another set of ‘grouped’ dot arrays were constructed. Both ungrouped and grouped arrays contained 12 dots, each of which with rd=4.5 pixels. However, in the ungrouped arrays the dots were randomly dispersed, while in the grouped arrays the dots were spatially grouped in pairs. The edge-to-edge distance between the two dots in each pair was approximately equal to rd. A large number of unique dot arrays were constructed using these criteria for each of the two sets. Then, a subset of unique arrays from each set was chosen so that the convex hull of the arrays between the two sets were numerically matched. A total of 16 grouped and 16 ungrouped arrays entered the simulation.
 
-## Dot arrays for testing heterogeneity effects
+#### Dot arrays for testing heterogeneity effects
 
 Three sets of dot arrays equated in the total area (TA) were created. The first set of ‘homogeneous’ (or zero level of heterogeneity) dot arrays contained n=15 with rd=5 pixels within a circular field defined by rf=75 pixels. The second set of ‘less heterogeneous’ dot arrays contained six dots with rd=3 pixels, six dots with rd=5 pixels, and three dots with rd=7.5 pixels. The last set of ‘more heterogeneous’ dot arrays contained 12 dots with rd=2.5 pixels and 3 dots with rd=10 pixels. Hence, the total area (TA) of all the arrays were approximately identical to each other while the variability of individual area (IA) differed across the sets. Rounding errors due to pixelation and anti-aliasing, however, caused differences in the actual cumulative intensity measure of the bitmap images. On average, the cumulative intensity values (0 being black and 1 being white in the bitmap image) were comparable between the three sets of arrays: 1209 in the homogeneous arrays, 1194 in the less heterogeneous arrays, and 1204 in the more heterogeneous arrays. Sixteen arrays in each of the three sets entered the simulation.
 
-## Neural network model with divisive normalization
+### Neural network model with divisive normalization
 
-## Convolution with DOG filters
+#### Convolution with DOG filters
 
-The model consisted of a convolutional layer with DoG filters of six different sizes, that convolved input values of the aforementioned bitmap images displaying dot arrays. This architecture hence provided a structure for 200×200×6 network units (or simulated neurons) activated by images of dot arrays (Figure 2). The DoG filters are formally defined as: , (1)Γ(x,y)=I⋅(12πσ2e−x2+y22σ2−12πK2σ2e−x2+y22K2σ2)
+The model consisted of a convolutional layer with DoG filters of six different sizes, that convolved input values of the aforementioned bitmap images displaying dot arrays. This architecture hence provided a structure for 200×200×6 network units (or simulated neurons) activated by images of dot arrays (Figure 2). The DoG filters are formally defined as:
+
+$$
+Γ(x,y)=I⋅(\frac{1}{2\pi\sigma^{2}}e^{−\frac{x^{2}+y^{2}}{2\sigma^{2}}}−\frac{1}{2\piK^{2}\sigma^{2}}e^{−\frac{x^{2}+y^{2}}{2K^{2}\sigma^{2}}})
+$$
 
 where I is the input image, σ2 is the spatial variance of the narrower Gaussian, and K is the scaling factor between the two variances. As recommended by Marr and Hildreth, 1980, K=1.6 was used to achieve balanced bandwidth and sensitivity of the filters. Considering that the input values range [0 1], the DoG filters were reweighted so that the sum of the positive portion equals to 1 and the sum of the negative portion equals to –1, making the summation across all domains 0. This reweighting ensured that the response is maximized when the input matches the DoG filter regardless of filter size and that the filter produces a response of value 0 if the input is constant across a region regardless of filter size. Finally, the output of this convolution process was followed by half-wave rectification at each simulated neuron (Heeger, 1991), where negative responses were replaced by zero. This stipulation sets the ‘firing threshold’ of the network such that the simulated neurons would not fire if the input does not match its DoG filter.
 
 Six different σ values were used (σk=1, 2, 4, 8, 16, and 32 for filter size k, respectively) which together were sensitive enough to represent various visual features of the input images, from the edge of the smallest dots to the overall landscape of the entire array. The activity of each stimulated neuron, i, in filter size k following this convolution procedure is referred to as Di,k.
 
-## Divisive normalization
+#### Divisive normalization
 
-Following Carandini and Heeger, 2011, the normalization model was defined as: , (2)Ri,k=Di,kγc+∑j,kη(i,j,k)Dj,kγ
+Following Carandini and Heeger, 2011, the normalization model was defined as:
 
-where distance similarity η(i,j) is defined as:(3)η(i,j,k)=e−d(i,j)rk
+$$
+R_{i,k}=\frac{D_{i,k}^{\gamma}}{c+\sumj,kη_{(i,j,k)}D_{j,k}^{\gamma}}
+$$
+
+where distance similarity η(i,j) is defined as:
+
+$$
+η_{(i,j,k)}=e^{−\frac{d(i,j)}{r_{k}}}
+$$
 
 Di is the driving input of neuron i (i.e., the output of the convolution procedure described above), d(i,j) is the Euclidean distance between neuron i and neuron j in any filter size, c is a constant that prevents division by zero. The denominator minus this constant, which was set to 1, is referred to as the normalization factor. The parameter rk, defined for each filter size, serves to scale between local and global normalization. As rk gets larger, activities from broader set of neurons constitute the normalization factor. In our model, rk was defined as a scaling factor of σk (e.g., rk=σk, rk=2σk, or rk=4σk), so that neurons with larger filter sizes have their normalization factor computed from broader pool of neighboring neurons. The parameter γ determines the degree of amplification of individual inputs and serves to scale between winner-take-all and linear normalization. Ri,k represents the normalized response of neuron i in filter size k.
 
-## Modeling temporal modulation of network units
+#### Modeling temporal modulation of network units
 
-Normalized responses of simulated neurons were further modeled to capture temporal modulations, with another normalization process this time working across time. First, a read-out neuron was assumed that summed up the normalized responses across all the neurons, ΣRi,k. This single firing activity, now referred to as M, underwent the following temporal normalization process that resulted in the normalized activity M*:(4)MT∗=MTδc+∑t=1TηtMtδ
+Normalized responses of simulated neurons were further modeled to capture temporal modulations, with another normalization process this time working across time. First, a read-out neuron was assumed that summed up the normalized responses across all the neurons, ΣRi,k. This single firing activity, now referred to as M, underwent the following temporal normalization process that resulted in the normalized activity M*:
 
-The temporal distance η is defined as: , (5)ηt=e−dω
+$$
+M_{T}^{∗}=\frac{M_{T}^{\delta}}{c+\sumt=1Tη_{t}M_{t}^{\delta}}
+$$
+
+The temporal distance η is defined as:
+
+$$
+η_{t}=e^{−\frac{d}{\omega}}
+$$
 
 where d is the distance between time point t and T. As in Equations 2 and 3, c is a constant that prevents division by zero, which was set to 1 for convenience. The parameter ω determines the amount of recent history contributing to the normalization factor, and the parameter δ determines the degree of amplification of Mt.
 

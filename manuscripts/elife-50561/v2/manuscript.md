@@ -35,21 +35,21 @@ To identify miRNAs with a key role in early human neural development, we investi
 
 ## Results
 
-## Transcriptome profiling for coding and small non-coding RNAs during directed human neuronal differentiation in vitro
+### Transcriptome profiling for coding and small non-coding RNAs during directed human neuronal differentiation in vitro
 
 We performed a directed differentiation protocol of hESCs/iPSCs towards hESC/iPSC-derived neural progenitors (NPCs) (13 days in vitro; DIV) and hESC/iPSC-derived neurons (48 DIV) (Figure 1a). We used the hESC line HUES6 (15) and iPSC lines [C1-1 and C1-2 clones derived from skin fibroblasts of a male healthy donor and PD1-1 and PD1-2 clones derived from skin fibroblasts of a male patient with familial Parkinson’s disease (PD)] generated and characterized as previously described (Kouroupi et al., 2017). For directed differentiation (Figure 1a), hESCs/iPSCs with characteristic expression of the pluripotency state transcription factor Nanog were allowed to form embryoid bodies (0–6 DIV) (Chambers et al., 2009). Neural induction towards anterior neuroectoderm was initiated in the presence of Noggin and TGFβ inhibitor, which favor the generation and expansion of Pax6+/Nestin+ cortical progenitor cells (NPCs) and the emergence of DCX+ neuroblasts/early neurons (NPC stage, 6–15 DIV; Figure 1a). Cells were then directed to differentiate further into neurons (15–48 DIV), which became prevalent in culture at 48 DIV (Figure 1a). RNA sequencing of long and small transcripts was performed at distinct stages of directed differentiation corresponding to hESCs/iPSCs, hESC/iPSC-derived NPCs (13 DIV) and hESC/iPSC-derived neurons (48 DIV). Global expression profiling of hESCs/iPSCs and their differentiated NPCs and neuronal derivatives confirmed a reset in both mRNA and miRNA expression following fibroblast reprogramming (Figure 1b–f). Distinct within-stage groupings were observed in the correlation map and the heatmap performed using the 300 most variable long RNA genes, respectively (Figure 1b,e). As shown in the heatmap in Figure 1g, the pluripotency markers NANOG and OCT4 (POU5F1) are primarily expressed in hESCs/iPSCs, while SOX2 has a more widespread profile, reflecting its association with both the pluripotency and NPC states. Expression of the neuronal precursor marker PAX6 and the proneural genes Neurogenins 1 and 2 (NEUROG1 and NEUROG2), characteristic of dorsal telenchephalon, and the early neuronal markers NCAM1 and DCX are already evident in NPC samples, while the neuronal marker MAP2 is most abundant at the more progressed neuronal differentiation stage. The up-regulated expression of PAX6 and DCX at the NPC stage was further validated by qRT-PCR (Figure 1h).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic representation of directed neural differentiation of hESCs/iPSCs. Embryoid body (EB) formation (5–6 DIV) is followed by dual SMAD inhibition for neural induction and NPC generation (14–15 DIV). Neuronal differentiation then proceeds until 43–48 DIV in the presence of indicated factors. hESCs are positive for the pluripotency marker Nanog. At 12 DIV, characteristic rosettes comprising NPCs double-positive for Pax6 and Nestin are evident while DCX-positive neuroblasts/early born neurons are also seen. βΙΙΙ-tubulin (TUJ-1)-positive neurons are predominantly detected at 48 DIV. Scale bar = 40 μm; (B) RNA expression correlation map incorporating the 300 RNA genes with highest standard deviations across all samples; groups exhibit distinct expression patterns and within-group uniformity. Darker blue colors depict stronger positive correlations between samples, as calculated by Pearson’s correlation coefficient. (C) Heatmap depicting similarity between samples based on expression of the 50 most expressed miRNAs. Darker blue colors denote higher similarity. (D) Graph depicting the first two principal components (PC1, PC2) of the top 1000 miRNAs with the highest variance across all samples. All groups exhibit distinct expression patterns and within-group uniformity. Samples: Fibroblasts (green): 1, Fetal; 2. Control (C1); 3, PD-1; hESCs/iPSCs (magenta): 4, hESCs; 5, C1 iPSCs; 6, C2 iPSCs; 7, PD1 iPSCs; 8, PD2 iPSCs; iPSC-derived NPCs (purple): 9, hESC-NPCs; 10, C1 NPCs ; 11, C2 NPCs ; 12, PD1 NPCs; 13, PD2 NPCs; iPSC-derived neurons (orange): 14, hESC-neurons ; 15, C1 neurons ; 16, C2 neurons; 17, PD1 neurons; 18, PD2 neurons. (E) Heatmap depicting Z scores of log2-transformed expression levels of the 300 genes with highest variance across all samples. (F) Heatmap depicting Z scores of log2-transformed expression levels of the 250 miRNAs with highest variance across all samples. (G) Heatmap showing that expression of proneural and neuronal markers starts at the stage of neural induction. (H) RT-qPCR analysis shows up-regulation of Pax6 and DCX mRNA at NPC stage (n = 3, for Pax6 31.1+10.1 at the NPC stage; p=0.006 compared to HUES6, and for DCX 5+0.58 at the NPC stage; p=0.01 compared to HUES6). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.Figure 1—source data 1.
+**Figure 1.:** (A) Schematic representation of directed neural differentiation of hESCs/iPSCs. Embryoid body (EB) formation (5–6 DIV) is followed by dual SMAD inhibition for neural induction and NPC generation (14–15 DIV). Neuronal differentiation then proceeds until 43–48 DIV in the presence of indicated factors. hESCs are positive for the pluripotency marker Nanog. At 12 DIV, characteristic rosettes comprising NPCs double-positive for Pax6 and Nestin are evident while DCX-positive neuroblasts/early born neurons are also seen. βΙΙΙ-tubulin (TUJ-1)-positive neurons are predominantly detected at 48 DIV. Scale bar = 40 μm; (B) RNA expression correlation map incorporating the 300 RNA genes with highest standard deviations across all samples; groups exhibit distinct expression patterns and within-group uniformity. Darker blue colors depict stronger positive correlations between samples, as calculated by Pearson’s correlation coefficient. (C) Heatmap depicting similarity between samples based on expression of the 50 most expressed miRNAs. Darker blue colors denote higher similarity. (D) Graph depicting the first two principal components (PC1, PC2) of the top 1000 miRNAs with the highest variance across all samples. All groups exhibit distinct expression patterns and within-group uniformity. Samples: Fibroblasts (green): 1, Fetal; 2. Control (C1); 3, PD-1; hESCs/iPSCs (magenta): 4, hESCs; 5, C1 iPSCs; 6, C2 iPSCs; 7, PD1 iPSCs; 8, PD2 iPSCs; iPSC-derived NPCs (purple): 9, hESC-NPCs; 10, C1 NPCs ; 11, C2 NPCs ; 12, PD1 NPCs; 13, PD2 NPCs; iPSC-derived neurons (orange): 14, hESC-neurons ; 15, C1 neurons ; 16, C2 neurons; 17, PD1 neurons; 18, PD2 neurons. (E) Heatmap depicting Z scores of log2-transformed expression levels of the 300 genes with highest variance across all samples. (F) Heatmap depicting Z scores of log2-transformed expression levels of the 250 miRNAs with highest variance across all samples. (G) Heatmap showing that expression of proneural and neuronal markers starts at the stage of neural induction. (H) RT-qPCR analysis shows up-regulation of Pax6 and DCX mRNA at NPC stage (n = 3, for Pax6 31.1+10.1 at the NPC stage; p=0.006 compared to HUES6, and for DCX 5+0.58 at the NPC stage; p=0.01 compared to HUES6). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.
 
-## Identification of miR-934 with species- and stage-specific expression during progenitor expansion and early neuron generation
+### Identification of miR-934 with species- and stage-specific expression during progenitor expansion and early neuron generation
 
 Small non-coding RNA expression also characterized the stage of cell differentiation, as demonstrated by clustering of the 50 most expressed miRNAs, and the principal component analysis based on the expression of 1000 most variable miRNAs (Figure 1c,d). This result was confirmed by unsupervised machine learning (clustering of gene expression) for the 250 miRNAs with most variable expression (Figure 1f). Further examination of miRNA sequencing data verified that the miR-302–367 cluster is highly expressed in the pluripotency stage (Figure 2a; Lipchina et al., 2012), whilst miR-9 and miR-125 which are implicated in neuronal differentiation characterize primarily the progressed neuronal stage (the significance for differential expression was p<0.05 vs all other stages) (Boissart et al., 2012; Delaloy et al., 2010). On the other hand, miR-124 with a similar function in neurogenesis (Yoo et al., 2009) and abundant expression in the mature mammalian nervous system exhibited a more widespread expression pattern from NPCs to neurons (p<0.05 for neurons compared to fibroblasts and hESCs/iPSCs, and p=0.06 compared to NPCs) (Figure 2a). The mRNA and miRNA expression data derived from our analysis confirm the validity of our in vitro system to simulate distinct stages of human neurogenesis and differentiation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig2-v2.jpg)
 
-**Figure 2.:** (A) Heatmap profiling the expression of selected characteristic miRNAs across directed neural differentiation of hESCs/iPSCs to NPCs and neurons, demonstrating also the high expression of miR-934 during neural induction (Fibroblasts vs NPCs; p=0.0004, iPSCs vs NPCs; p=0.0001, Neurons vs NPCs; p=3.5×10−6). Warmer colors signify higher expression Z scores of the log2-transformed expression values. (B) Heatmap profiling the expression (log2; reads per million) of 144 miRNAs with stage specificity (tau >0.7) which are sorted based on median expression in NPCs. miR-934 is the highest expressed miRNA in NPCs and clearly segregated, exhibiting a stage-specific expression pattern. Red arrow denotes miR-934 ranking on the top, while warmer and cooler colors signify higher and lower expression values, respectively. The blue and purple arrows indicate hsa-miR-302d-5p and hsa-miR-302b-5p, respectively, which are selected in the HUES/iPSCs stage. (C) RT-qPCR analysis of hESCs and their NPC- and neuronal derivatives confirms the highly segregated expression of miR-934 at the neural induction stage (2.6+0.2, n = 3, p=0.006). (D) Chromosomal location of miR-934 in human and non-human primate species (adapted from UCSC Genome Browser. (E, F) Graphs incorporating miRNA expression data from uniformly-analyzed small RNA-Seq libraries (detailed in Supplementary file 4) corresponding to human fetal and adult neural tissue (E) and cellular samples with reference to our NPCs data (F). miR-934 expression shows selective expression in samples associated with human cortical development in vivo and neural induction in vitro. Bars and error bars represent mean values and the corresponding SEMs; 0.001<**p<0.01.Figure 2—source data 1.
+**Figure 2.:** (A) Heatmap profiling the expression of selected characteristic miRNAs across directed neural differentiation of hESCs/iPSCs to NPCs and neurons, demonstrating also the high expression of miR-934 during neural induction (Fibroblasts vs NPCs; p=0.0004, iPSCs vs NPCs; p=0.0001, Neurons vs NPCs; p=3.5×10−6). Warmer colors signify higher expression Z scores of the log2-transformed expression values. (B) Heatmap profiling the expression (log2; reads per million) of 144 miRNAs with stage specificity (tau >0.7) which are sorted based on median expression in NPCs. miR-934 is the highest expressed miRNA in NPCs and clearly segregated, exhibiting a stage-specific expression pattern. Red arrow denotes miR-934 ranking on the top, while warmer and cooler colors signify higher and lower expression values, respectively. The blue and purple arrows indicate hsa-miR-302d-5p and hsa-miR-302b-5p, respectively, which are selected in the HUES/iPSCs stage. (C) RT-qPCR analysis of hESCs and their NPC- and neuronal derivatives confirms the highly segregated expression of miR-934 at the neural induction stage (2.6+0.2, n = 3, p=0.006). (D) Chromosomal location of miR-934 in human and non-human primate species (adapted from UCSC Genome Browser. (E, F) Graphs incorporating miRNA expression data from uniformly-analyzed small RNA-Seq libraries (detailed in Supplementary file 4) corresponding to human fetal and adult neural tissue (E) and cellular samples with reference to our NPCs data (F). miR-934 expression shows selective expression in samples associated with human cortical development in vivo and neural induction in vitro. Bars and error bars represent mean values and the corresponding SEMs; 0.001<**p<0.01.
 
 To identify molecular mechanisms underlying early human neurogenesis, we looked for miRNAs associated with the stage of neural induction. To locate stage-specific miRNA regulators, we adopted the tissue-specificity index tau, which is a reliable method for estimation of gene expression specificity that has been shown to outperform other relevant indices (Kryuchkova-Mostacci and Robinson-Rechavi, 2017). Calculation of tau index across the distinct differentiation phases revealed that 144 miRNAs exhibited a highly specific expression profile (tau >0.7) (Supplementary file 1). For example, members of the miR-302–367 cluster, which is a known marker of pluripotency (Lipchina et al., 2012) was allocated at the hESC/iPSC stage (Fig, 2b and Supplementary file 1). When these 144 miRNAs exhibiting tissue specificity (tau >0.7) were ranked by decreasing order of median expression in NPCs, miR-934 emerged on top of the list, scoring the highest expression among other miRNAs at the NPC stage and a strikingly segregated expression as compared to all other stages (tau value 0.76) (Figure 2b; Supplementary file 2). Moreover, according to median expression differences, no other miRNA was identified to have such a clear disparity against other stages.
 
@@ -57,17 +57,17 @@ The high and segregated expression of miR-934 during neural induction was verifi
 
 In order to define the expression pattern of miR-934, we analyzed a total of 58 small RNA-Seq libraries from various human tissues and cell samples (detailed in Supplementary file 4). The analysis confirmed a distinct expression signature for miR-934 which associates predominantly with neural tissues, particularly fetal cortical tissues (Figure 2e and Appendix 1—figure 1 for non-neural tissue assessment). Specifically, a recent study reported consistent expression of miR-934, even if at low levels, during cortical development at 16.5–19.5 gestational week (GW) (Nowakowski et al., 2018; Figure 2e). According to meta-analysis of available data, we attest that miR-934 expression is undetectable in the adult nervous system (Figure 2e). Moreover, in agreement with our results, there is no expression of miR-934 in publicly accessible miRNA data from samples of embryonic stem cells and differentiated neurons (Supplementary file 4 and Figure 2f). These findings further corroborated the tissue- and stage-specific expression of miR-934 and prompted us to investigate further its function.
 
-## miR-934 controls the balance between Pax6+ progenitors and DCX+ neuroblasts and affects the morphological transition of newly born neurons
+### miR-934 controls the balance between Pax6+ progenitors and DCX+ neuroblasts and affects the morphological transition of newly born neurons
 
 To gain insight into the physiological role of miR-934 in early human neural development, we examined the functional consequences of miR-934 modulation at the stage of neural induction of hESCs in vitro, using synthetic miRNA mimics or inhibitors to enhance mature miR-934 expression or block its function, respectively. Gain-of-function of miR-934 created a shift towards neurogenesis with the generation of an increased number of DCX+ neuroblasts/early neurons by 41.8% and a simultaneous reduction of PAX6+ progenitors by 39.4% (Figure 3a–d and quantification in Figure 3o,p). Conversely, inhibition of miR-934 action enhanced the number of PAX6+ precursors by 39.5%, while decreasing the levels of DCX+ neuroblasts/early neurons by 27.8% (Figure 3e–h and quantification in Figure 3q,r). This data suggests that miR-934 acts at the progenitor to neuroblast switch to promote differentiation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig3-v2.jpg)
 
-**Figure 3.:** (A–H) Representative confocal images of hESC-derived cultures at neural induction stage (DIV12) following immunolabeling for Pax6 (green) and Nestin (red) or for doublecortin (DCX, green), upon miR-934 overexpression or inhibition, as indicated. Cell nuclei were visualized with Hoechst (blue). Scale bar = 100 μm. (O, P) Overexpression of miR-934 resulted in a reduction of the percentage of PAX6+ progenitors out of all cells in culture (CT mimics: 100 ± 9.9 and miR934 mimics: 60.6 ± 9.2, p=0.04, n = 3) and an increase of the percentage DCX+ neuroblasts out of all cells in culture (CT mimics: 100 ± 6.1 and miR934 mimics: 141.8 ± 5.6, p=0.007, n = 3). (Q, R) Inhibition of miR-934 has the opposite effect (for PAX6+% cell quantification: CT inhibitors 100 ± 7.2 and miR934 inhibitors 139 ± 9.6, p=0.01, n = 5; for DCX+% cell quantification: CT mimics 100 ± 7.6 and miR934 inhibitors 72.2 ± 6.5, p=0.02, n = 5–6). (I–J, L–M) Representative confocal images following immunolabeling for DCX (green) and TUJ1 (red) of control cultures at neural induction (DIV12) or upon miR-934 inhibition. Scale bar = 100 μm. TUJ1+ cells in white insets in (J, M) are shown at higher magnification in (K, N), respectively. Scale bar = 50 μm. Measurements performed were based on TUJ1 expression: Inhibition of miR-934 during neural induction affects the morphology of newly-born neurons leading to (S) reduction of the length of the longest TUJ1+ neurite (μm): for control inhibitors (CT) 109.78 ± 14. 2 vs. 54.53 ± 2.8 for miR-934 inhibitors; p=0.02, n = 4, 280 cells and (T) to decreased number of TUJ1+ neurons exhibiting a bipolar phenotype (% bipolar neurons over total neurons analyzed for control CT inhibitors: 55.9 ± 3.1 vs. 34.4 ± 1.1 for miR-934 inhibitors; p=0.003, n = 4, 160 cells). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A–H) Representative confocal images of hESC-derived cultures at neural induction stage (DIV12) following immunolabeling for Pax6 (green) and Nestin (red) or for doublecortin (DCX, green), upon miR-934 overexpression or inhibition, as indicated. Cell nuclei were visualized with Hoechst (blue). Scale bar = 100 μm. (O, P) Overexpression of miR-934 resulted in a reduction of the percentage of PAX6+ progenitors out of all cells in culture (CT mimics: 100 ± 9.9 and miR934 mimics: 60.6 ± 9.2, p=0.04, n = 3) and an increase of the percentage DCX+ neuroblasts out of all cells in culture (CT mimics: 100 ± 6.1 and miR934 mimics: 141.8 ± 5.6, p=0.007, n = 3). (Q, R) Inhibition of miR-934 has the opposite effect (for PAX6+% cell quantification: CT inhibitors 100 ± 7.2 and miR934 inhibitors 139 ± 9.6, p=0.01, n = 5; for DCX+% cell quantification: CT mimics 100 ± 7.6 and miR934 inhibitors 72.2 ± 6.5, p=0.02, n = 5–6). (I–J, L–M) Representative confocal images following immunolabeling for DCX (green) and TUJ1 (red) of control cultures at neural induction (DIV12) or upon miR-934 inhibition. Scale bar = 100 μm. TUJ1+ cells in white insets in (J, M) are shown at higher magnification in (K, N), respectively. Scale bar = 50 μm. Measurements performed were based on TUJ1 expression: Inhibition of miR-934 during neural induction affects the morphology of newly-born neurons leading to (S) reduction of the length of the longest TUJ1+ neurite (μm): for control inhibitors (CT) 109.78 ± 14. 2 vs. 54.53 ± 2.8 for miR-934 inhibitors; p=0.02, n = 4, 280 cells and (T) to decreased number of TUJ1+ neurons exhibiting a bipolar phenotype (% bipolar neurons over total neurons analyzed for control CT inhibitors: 55.9 ± 3.1 vs. 34.4 ± 1.1 for miR-934 inhibitors; p=0.003, n = 4, 160 cells). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.
 
 As neuronal birth and differentiation are tightly linked processes, we next assessed the effect of miR-934 on the morphology of newly born neurons. We evaluated the length of the longest βΙΙΙ-tubulin+ process as a measure of neurite outgrowth and the acquisition of a bipolar shape as an indication of neuronal morphological transition (Pinheiro et al., 2011). Measurements on DCX-positive neurons co-expressing the neuronal marker βIII-tubulin (TUJ1) revealed a 50% reduction in the length of the longest TUJ1+ neurite [Figure 3i–n,s; p=0.02], and a 40% decrease in TUJ1+ bipolar cells (Figure 3i–n,t; p=0.003) due to miR-934 inhibition. These results indicate that miR-934 controls neuronal birth and influences tightly linked differentiation processes in newborn neurons.
 
-## The mRNA targets of miR-934 during neural induction are associated with progenitor proliferation and neuronal differentiation
+### The mRNA targets of miR-934 during neural induction are associated with progenitor proliferation and neuronal differentiation
 
 To locate mRNA targets of miR-934 we explored the RNA-seq data obtained upon transition from hESCs/iPSCs to NPCs, as well as a second set of RNA-seq data generated at the stage of neural induction of hESCs following sustained inhibition of miR-934 function via transduction with the miRZip lentivector-based anti-microRNA system. To identify miR-934 targets in each case, we integrated small RNA and RNA sequencing data using the algorithm presented in mirExTra v2 (Vlachos et al., 2016). Targets were detected using microT-CDS target prediction tool as the source of potential interactions (Paraskevopoulou et al., 2013; Supplementary file 5).
 
@@ -75,7 +75,7 @@ The identified miR-934 targets comprise Frizzled 5 (FZD5) (microT-CDS prediction
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig4-v2.jpg)
 
-**Figure 4.:** (A) Confocal image showing PAX6+ neural progenitors (red) at DIV 15 transduced with miRZip lentivector (GFP fluorescence, green) for sustained inhibition of miR-934. Scale bar: 20 μm. (B) qRT-PCR data showing upregulation of miR-934 targets upon sustained miR-934 inhibition: TFCP2L1 (scrambled control 1+0.006 vs miR934 inhibition 3.63+0.67, p=0.03, n = 4), STMN2 (scrambled control 1+0.003 vs miR934 inhibition 1.95+0.23, p=0.02, n = 4), RAB3B (scrambled control 1+0.003 vs miR934 inhibition 2.29+0.28, p=0.01, n = 4), and FZD5 (scrambled control 1,004+0005 vs miR934 inhibition 1,44+0,061, p=0,005, n = 4). No changes were observed in the mRNA expression of F11R or SLC16A1 (p=0,18 for SLC16A1and p=0,47 for F11R, n = 4). (C) Sequence complementarity of miR-934 with the 8-mer binding site in Fzd5 3'-UTR region (green) and corresponding mutated site (blue), used in luciferase activity assay. (D) Estimation of the suppression of luciferase activity in HEK293T cells upon co-transfection with miR-934 mimics and the MRE (8-mer binding site) reporter construct. Suppression of luciferase activity was released upon mutation of the FZD5 8mer binding site (p=0.002, n = 3). (E–G) Sustained inhibition of miR-934 results in increased protein levels of FZD5 (p=0.007, n = 4) (E, F) and active β-catenin (p=0.01, n = 4) (E, G). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** (A) Confocal image showing PAX6+ neural progenitors (red) at DIV 15 transduced with miRZip lentivector (GFP fluorescence, green) for sustained inhibition of miR-934. Scale bar: 20 μm. (B) qRT-PCR data showing upregulation of miR-934 targets upon sustained miR-934 inhibition: TFCP2L1 (scrambled control 1+0.006 vs miR934 inhibition 3.63+0.67, p=0.03, n = 4), STMN2 (scrambled control 1+0.003 vs miR934 inhibition 1.95+0.23, p=0.02, n = 4), RAB3B (scrambled control 1+0.003 vs miR934 inhibition 2.29+0.28, p=0.01, n = 4), and FZD5 (scrambled control 1,004+0005 vs miR934 inhibition 1,44+0,061, p=0,005, n = 4). No changes were observed in the mRNA expression of F11R or SLC16A1 (p=0,18 for SLC16A1and p=0,47 for F11R, n = 4). (C) Sequence complementarity of miR-934 with the 8-mer binding site in Fzd5 3'-UTR region (green) and corresponding mutated site (blue), used in luciferase activity assay. (D) Estimation of the suppression of luciferase activity in HEK293T cells upon co-transfection with miR-934 mimics and the MRE (8-mer binding site) reporter construct. Suppression of luciferase activity was released upon mutation of the FZD5 8mer binding site (p=0.002, n = 3). (E–G) Sustained inhibition of miR-934 results in increased protein levels of FZD5 (p=0.007, n = 4) (E, F) and active β-catenin (p=0.01, n = 4) (E, G). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05; 0.001<**p<0.01.
 
 The putative miRNA recognition elements (MREs) on the 3'-UTRs of the predicted targets FZD5, TFCP2L1, STMN2, and RAB3B contain binding sites with high probability for functional impact (8mer, 7mer and 9mer binding sites) (Agarwal et al., 2015). From an evolutionary point, it is worth noting that the identified 8mer binding site for STMN2 is expressed in various species whilst the respective MREs for TFCP2L1 and RAB3B are mainly conserved in primates (Supplementary file 6). To validate the bioinformatics data for target prediction we ran luciferase assays to selectively assess the interaction between miR934 and TFCP2L1 or RAB3B. To this end, we cloned regions of their 3’UTRs containing the individual binding sites for each target into the pmiRGLO luciferase reporter vector. Co-transfection of HEK293T cells with each of the modified vectors and miR934 mimics followed by measurement of luciferase activity confirmed the binding of miR934 at specific sites of these mRNAs (Appendix 1—figure 2).
 
@@ -85,13 +85,13 @@ Finally, we examined the effect of miR-934 on the Wnt pathway using immunoblot a
 
 Taken together our data support that miR-934 acts during neural induction to suppress genes implicated in stem cell self-renewal and neurogenesis.
 
-## Inhibition of miR-934 during neural induction affects molecular pathways of neurogenesis and alters the expression of subplate-enriched genes
+### Inhibition of miR-934 during neural induction affects molecular pathways of neurogenesis and alters the expression of subplate-enriched genes
 
 To further assess downstream signaling networks affected by miR-934, we examined the RNA profiling of hESC-derived cells at the neural induction phase upon sustained miR-934 inhibition. Differential gene expression analysis provided molecular data corroborating and extending our functional data. Overall miR-934 inhibition resulted in altered expression of 1458 genes (650 upregulated and 810 downregulated; p value<0.05), which according to GO (Gene Ontology) enrichment analysis (q value < 0.05) are primarily allocated to biological processes affecting progenitor cell proliferation, differentiation, axonal growth/guidance, neuronal migration, and neurotransmitter transport/release (Figure 5a). Moreover, the reported miR-934 targets STMN2 and RAB3B, match with the processes revealed by enrichment analysis, conforming to the categories of axonogenesis and neurotransmission (Figure 5c,e).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig5-v2.jpg)
 
-**Figure 5.:** (A) GO enrichment analysis of differential gene expression data following sustained inhibition of miR-934. (B–E) Heatmaps presenting the log2-fold change of molecules involved in the indicated biological processes following miR-934 inhibition, as determined by GO enrichment analysis, from three independent experiments 1, 2 and 3. miR-934 targets STMN2 and RAB3B are depicted in red. (F) Heatmap presenting the log2-fold change of progenitor-specific and SP-enriched genes. Warmer colors indicate higher fold changes. (G) Graph showing qRT-PCR validation data for genes affected by miR-934 inhibition (n = 3–4): LEF1 (scrambled control 1+0.0003 vs miR934 inhibition 1.57+0.09, p=0.009), TFAP2C (scrambled control 1+0.0006 vs miR934 inhibition 0.75+0.08, p=0.04), MOXD1 (scrambled control 1+0.0002 vs miR934 inhibition 0.6+0.14, p=0.04), ID2 (scrambled control 1+0.01 vs miR934 inhibition 1.52+0.14, p=0.03), NCAD (scrambled control 1+0.002 vs miR934 inhibition 1.75+0.17, p=0.01), GATA2 (scrambled control 1+0.01 vs miR934 inhibition 0.75+0.06, p=0.01), SYNGAP1 (scrambled control 1+0.0004 vs miR934 inhibition 2.4+0.33, p=0.02), PRSS12 (scrambled control 1+0.0002 vs miR934 inhibition 0.67+0.03, p=0.002) and TPD52L1 (scrambled control 1+0.0002 vs miR934 inhibition 0.65+0.07, p=0.03). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05.Figure 5—source data 1.
+**Figure 5.:** (A) GO enrichment analysis of differential gene expression data following sustained inhibition of miR-934. (B–E) Heatmaps presenting the log2-fold change of molecules involved in the indicated biological processes following miR-934 inhibition, as determined by GO enrichment analysis, from three independent experiments 1, 2 and 3. miR-934 targets STMN2 and RAB3B are depicted in red. (F) Heatmap presenting the log2-fold change of progenitor-specific and SP-enriched genes. Warmer colors indicate higher fold changes. (G) Graph showing qRT-PCR validation data for genes affected by miR-934 inhibition (n = 3–4): LEF1 (scrambled control 1+0.0003 vs miR934 inhibition 1.57+0.09, p=0.009), TFAP2C (scrambled control 1+0.0006 vs miR934 inhibition 0.75+0.08, p=0.04), MOXD1 (scrambled control 1+0.0002 vs miR934 inhibition 0.6+0.14, p=0.04), ID2 (scrambled control 1+0.01 vs miR934 inhibition 1.52+0.14, p=0.03), NCAD (scrambled control 1+0.002 vs miR934 inhibition 1.75+0.17, p=0.01), GATA2 (scrambled control 1+0.01 vs miR934 inhibition 0.75+0.06, p=0.01), SYNGAP1 (scrambled control 1+0.0004 vs miR934 inhibition 2.4+0.33, p=0.02), PRSS12 (scrambled control 1+0.0002 vs miR934 inhibition 0.67+0.03, p=0.002) and TPD52L1 (scrambled control 1+0.0002 vs miR934 inhibition 0.65+0.07, p=0.03). Bars and error bars represent mean values and the corresponding SEMs; 0.01<*p<0.05.
 
 In terms of precursor-to-neuron differentiation, miR-934 inhibition coincides with up-regulation of N-Cadherin, which promotes self-renewal of NPCs (Nowakowski et al., 2018), induction of ID2 (inhibitor of DNA binding protein 2) that inhibits differentiation and promotes proliferation (Paolella et al., 2011), and reduction of GATA2, a transcription factor essential for neurogenesis (El Wakil et al., 2006; Figure 5b,g). With respect to axonal development, we detected miR-934-driven dysregulation of SYNGAP1 expression, an essential repressive factor involved in neuronal differentiation by controlling the timing of dendritic spine synapse maturation (Kim et al., 2003; Rumbaugh et al., 2006; Vazquez et al., 2004; Figure 5c,g). We also observed dysregulation of genes associated with tract formation and pathfinding, including molecules that belong to the semaphorin – neuropilin – plexin pathway, of their downstream intracellular mediators CRMPs (collapsing response mediator proteins), and also Ephrins and ROBOs (Figure 5c; Polleux, 1998). Moreover, there were deviations in expression of the Neuregulin-1/ErbB4 signalling partners, as well as of Reelin, the stimulus-regulated transcription factor Serum Response Factor (SRF) and the extracellular matrix protein matrilin 2, which are involved in neuronal migration (Scandaglia et al., 2015; Figure 5d). Proteins linked to neurotransmitter release that were affected include Snapin and members of Syntaptotagmin family (Figure 5e). Verification by qRT-PCR of the differential expression of selected genes is shown in Figure 5g.
 
@@ -105,7 +105,7 @@ Finally, miRNA profiling showed significant changes in 79 miRNAs (p value<0.05) 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/50561/elife-50561-fig6-v2.jpg)
 
-**Figure 6.:** (A) Heatmap showing the 20 miRNAs with lowest p-values at differential expression analysis following miR-934 sustained inhibition. (B) Table describing the association of differentially expressed miRNAs with axon/dendrite development and/or synapse formation. miRNA associations taken from Fededa et al., 2016; Wu et al., 2014; Cho et al., 2013; Conte et al., 2014; Garaffo et al., 2015; Han et al., 2015; Li et al., 2019; Li et al., 2015; Poon et al., 2016; Rajman et al., 2017; Xu et al., 2013. (C) qRT-PCR showing downregulation of mir34c-5p following miR-934 sustained inhibition (scrambled control 1+0.005 vs miR934 inhibition 0.51+0.03, n = 3, p=0.005). Bars and error bars represent mean values and the corresponding SEMs; 0.001<**p<0.01. (D) Sketch depicting the neurogenic function of miR-934 also affecting subsequent neuronal differentiation processes as reflected in large-scale changes in the expression of genes and miRNAs associated with neurogenesis.Figure 6—source data 1.
+**Figure 6.:** (A) Heatmap showing the 20 miRNAs with lowest p-values at differential expression analysis following miR-934 sustained inhibition. (B) Table describing the association of differentially expressed miRNAs with axon/dendrite development and/or synapse formation. miRNA associations taken from Fededa et al., 2016; Wu et al., 2014; Cho et al., 2013; Conte et al., 2014; Garaffo et al., 2015; Han et al., 2015; Li et al., 2019; Li et al., 2015; Poon et al., 2016; Rajman et al., 2017; Xu et al., 2013. (C) qRT-PCR showing downregulation of mir34c-5p following miR-934 sustained inhibition (scrambled control 1+0.005 vs miR934 inhibition 0.51+0.03, n = 3, p=0.005). Bars and error bars represent mean values and the corresponding SEMs; 0.001<**p<0.01. (D) Sketch depicting the neurogenic function of miR-934 also affecting subsequent neuronal differentiation processes as reflected in large-scale changes in the expression of genes and miRNAs associated with neurogenesis.
 
 This data highlights the role of miR-934 in modulating molecular pathways mediating neurogenic events associated with early dorsal progenitor populations and the subplate zone.
 
@@ -129,27 +129,170 @@ In view of our collective functional and molecular data, miR-934 emerges as a re
 
 ## Materials and methods
 
-## hESC and iPSC culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>hESC line HUES6</td>
+      <td>Cowan CA, Klimanskaya I, McMahon J, Atienza J, Witmyer J, Zucker JP, et al. Derivation of embryonic stem-cell lines from human blastocysts. The New England journal of medicine. 2004;350 (Muñoz-Sanjuán and Brivanlou, 2002):1353–6.</td>
+      <td>RRID:CVCL_B19</td>
+      <td>Cell line (H. sapiens)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Knockout Serum Replacement (KSR)</td>
+      <td>Life Technologies Thermo Fisher</td>
+      <td>Life Technologies, Thermo Fisher 10828–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KnockOut DMEM medium</td>
+      <td>Life Technologies Thermo Fisher</td>
+      <td>Life Technologies, Thermo Fisher 10829–018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>matrigel matrix</td>
+      <td>BD biosciences</td>
+      <td>BD 354234</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Noggin</td>
+      <td>R and D Systems</td>
+      <td>R and D 6057 NG-25</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Tocris Biosciences</td>
+      <td>Tocris Biosciences 1614</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator kit</td>
+      <td>Zymo Research</td>
+      <td>Zymo Research R1018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmiR-GLO reporter vector</td>
+      <td>Promega</td>
+      <td>Promega E1330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>miRZip lentivector-based anti-microRNA system</td>
+      <td>Systems Biosciences</td>
+      <td></td>
+      <td>https://systembio.com/products/mirna-and-lncrna-research-tools/mirzip-knockdown-vectors/mirzip-anti-mirna-constructs/</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Life Technologies/Thermo</td>
+      <td>Life Technologies11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>miR-934 mimics</td>
+      <td>Exiqon/Qiagen</td>
+      <td></td>
+      <td>http://www.exiqon.com/ls/Pages/ProductDetails.aspx?ProductId=k1WVIuhVVQH848C13pCVyN5WGs82ItaE%2flSNAGCdK1%2bEWkr83WchdvRAbgzMNpIk3WDIx9O1eBJZUcYGe81LzgTaw2jJcGjXgRYNy58buck%3d&amp;CategoryType=2yRAQGj8eprRK3%2bx8lE0zg%3d%3d</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>miR-934 inhibitors</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td>https://horizondiscovery.com/products/gene-modulation/knockdown-reagents/mirna/PIFs/miRIDIAN-microRNA-Hairpin-Inhibitor?nodeid=mirnamature-mimat0004977</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-PAX6</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:AB_528427</td>
+      <td>Dilution (1:50) See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-doublecortin (DCX)</td>
+      <td>Santa Cruz</td>
+      <td>Sc-8067</td>
+      <td>Dilution (1:100) See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Frizzled 5</td>
+      <td>Abcam</td>
+      <td>Ab75234</td>
+      <td>Dilution (1:1000) See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-active β-catenin</td>
+      <td>Cell signaling</td>
+      <td>Cell signaling, 19807</td>
+      <td>Dilution (1:1000) See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 7</td>
+    </tr>
+  </tbody>
+</table>
+
+### hESC and iPSC culture
 
 We have used the hESC line HUES6, which has been tested and shown free of mycoplasma contamination. The hESC line HUES6 (46XX) was kindly provided by Douglas Melton at Harvard University (Cowan et al., 2004); iPSC lines [C1-1 and C1-2 clones derived from skin fibroblasts of a male healthy donor and PD1-1 and PD1-2 clones derived from skin fibroblasts of a male patient with familial Parkinson’s disease (PD) carrying the G209A (p.A53T) mutation in the α-synuclein gene SNCA] were generated and characterized as previously described (Kouroupi et al., 2017). HUES6/iPSC lines were cultured on irradiated mouse embryonic fibroblasts (MEFs, Globalstem) in HUES/iPSC medium consisting of KnockOut DMEM (KO-DMEM, Life Technologies), 20% Knockout Serum Replacement (KSR, Life Technologies), 2 mM GlutaMax, MEM Non-Essential Amino Acids (100x MEM NEAA, Life Technologies), 100 mM β-mercaptoethanol (Life Technologies) and 10 ng/ml human basic FGF2 (bFGF2, Miltenyi).
 
-## Neural induction of hESCs/iPSCs
+### Neural induction of hESCs/iPSCs
 
 A schematic summary of the differentiation procedure is shown in Figure 1a. Cultures were disaggregated using accutase (Life Technologies) for 10 min at 37°C, collected in hESC/iPSC medium supplemented with 10 µM ROCK inhibitor Y-27632 (Tocris Bioscience) in the absence of bFGF-2 (embryoid body/EB medium) and replated in 60 mm petri dishes to allow embryoid body formation for 5–6 days. For neural induction, floating embryoid bodies were collected by centrifugation, dissociated to single cells with accutase for 20 min at 37°C, and plated at a density of 50,000–65,000 cells/cm2 on Matrigel (BD)-coated glass coverslips in a 24-well plate. Neural induction was achieved by dual suppression of the SMAD signaling pathway using a combination of Noggin (250 ng/ml; R and D Systems) and SB431542 (10 µM; Tocris Bioscience) in 1:1 mixture of Dulbecco’s modified Eagle’s medium with high glucose content (DMEM) and F-12, containing HEPES buffer (8 mM; Invitrogen), N2 supplement, and Glutamax (Gibco).
 
-## Neuronal differentiation protocol
+### Neuronal differentiation protocol
 
 For neuronal differentiation, NPCs generated during the neural induction phase were dissociated with accutase and plated onto poly-L-ornithine (PLO; 20 µg/ml; Sigma-Aldrich)/laminin (5 µg/ml; Sigma-Aldrich)-coated coverslips. Neuronal differentiation was initiated for 8 days in Neurobasal medium supplemented with ascorbic acid (AA, Sigma-Aldrich; 200 μM), human recombinant sonic hedgehog (SHH, R and D Systems; 200 ng/ml), recombinant fibroblast growth factor 2b (FGF-2b, R and D Systems; 10 ng/ml), recombinant fibroblast growth factor 8b (FGF-8b, R and D Systems; 100 ng/ml), containing also 1% N2 supplement, 2% B-27 supplement and 1% Glutamax, followed by a cocktail consisting of brain-derived neurotrophic factor (BDNF, R and D Systems; 20 ng/ml), ascorbic acid (200 μM), glial cell-derived neurotrophic factor (GDNF, R and D Systems; 10 ng/ml), and cyclic-AMP (cAMP, Sigma-Aldrich; 0.5 mM) for further 21–26 days to allow neuronal maturation.
 
-## RNA isolation, cDNA Synthesis and RT-qPCR
+### RNA isolation, cDNA Synthesis and RT-qPCR
 
 Total RNA, including miRNAs, was extracted from cell pellets at different time points of neural induction, using TRIzol Reagent (Life Technologies). Residual DNA was degraded with DNase (Takara) for 30 min at 37°C and purified RNA was recovered using the RNA Clean and Concentrator kit (Zymo Research). 1 µg of total RNA was used for first-strand cDNA synthesis which was performed using the PrimeScript RT reagent Kit (Takara). miRNA first-strand cDNA synthesis (from 10 ng RNA) was performed using the Universal cDNA synthesis kit (Exiqon). In all cases, commercially available kits were used according to manufacturer's instructions. Quantitative reverse transcription polymerase chain reaction (RT–qPCR) was carried out on a ViiA-7 real time PCR instrument (Applied Biosystems) according to the manufacturer’s instructions. For mRNA expression detection, the RT–qPCR reactions were prepared with SYBR Green PCR Master mix (Kapa biosystems). LNA primer sets designed by Exiqon were used for miRNA expression detection and the RT–qPCR reactions were prepared with ExiLENT SYBR Green master mix (Exiqon). GAPDH and hsa-miR-103a-3p were used as reference genes. All primers used are listed in Supplementary file 7.
 
-## Generation of genome-wide RNA sequencing data
+### Generation of genome-wide RNA sequencing data
 
 RNA sequencing was performed at specific stages of hESC/iPSC directed differentiation and also upon sustained inhibition of miR-934 during neural induction of hESCs (NPC stage). In the first series of experiments, total cellular RNA isolated from samples at specific stages of the differentiation procedure (Figure 1a) corresponded to hESCs, hESC-derived NPCs (13 DIV) and neurons (48 DIV) alongside iPSCs, iPSC-derived NPCs and neurons cultured for the same DIV. Total RNA from two control iPSC lines (C1-1 and C1-2) derived from a healthy donor and two lines (PD1-1 and PD1-2) from a PD patient (Kouroupi et al., 2017). The originating fibroblasts as well as human fetal fibroblasts (Human Dermal Fibroblasts, foreskin, fetal; Cell Applications) were analyzed. In the second series, total RNA was isolated from three independent experiments of hESC-derived NPCs (15 DIV) transduced with an anti-miR-934 lentivirus or the scrambled control virus at DIV 10 of neural induction and collected 5 days later. Libraries of RNA transcripts following polyA selection were prepared using TruSeq RNA Sample Preparation Kit V2 (Illumina). Small RNA libraries were prepared using NEBNext Multiplex Small RNA Library Prep Set for Illumina. Next generation sequencing of RNAs (50 bp, paired-end) and small-RNAs (50 bp, single-end) was performed using an llumina HiSeq 2500 sequencer at the European Molecular Biology Laboratory (EMBL).
 
-## Quantification and integration of expressed microRNAs and mRNAs
+### Quantification and integration of expressed microRNAs and mRNAs
 
 More than 2 billion reads were obtained from the performed sequencing experiments. All sequencing libraries were quality checked using FastQC (www.bioinformatics.babraham.ac.uk/projects/fastqc/). Contaminant detection and pre-processing was performed using a combination of in-house scripts and available tools (Vlachos et al., 2016). RNA-Seq reads from the miR-934 activity inhibition experiments were aligned against GRCh38 human genome using STAR (Dobin et al., 2013) and quantified with featureCounts (Liao et al., 2014) against Ensembl v89. microRNA expression was quantified using miRDeep2 (Mackowiak, 2011). A gene/miRNA expression model encompassing the independent experiment number (i.e. 1, 2, 3) as a factor was built using DESeq2 (Love et al., 2014). RNA-Seq from the differentiation stages were analyzed as previously (Kouroupi et al., 2017). Differential expression analysis of miRNAs and RNAs across differentiation stages was performed using DESeq package in R (Anders and Huber, 2010). Functional analyses were performed using ClusterProfiler package (Yu et al., 2012). miR-934 expression across tissues was obtained by analyzing in-house 58 small RNA-Seq libraries from NCBI SRA repository with the same pipeline mentioned above for consistency. The accession IDs from the specific samples are indexed in Supplementary file 4. Validation of the differential expression for selected genes and miRNAs from the RNA-Seq analysis was performed by qRT-PCR in independent samples.
 
@@ -157,35 +300,35 @@ In silico miRNA target prediction was performed using DIANA-microT-CDS (Paraskev
 
 In heatmaps, Pearson’s correlation coefficient was used as a distance metric, while in the correlation plots the Euclidian distance between Pearson’s correlation coefficients was employed for clustering. Expression Heatmap data were centered and scaled using row Z-scores. Fold-Change heatmaps were not centered/scaled or clustered; the column order follows the independent experiment number.
 
-## Calculation of tissue-specificity-index tau for miRNAs across distinct differentiation stages
+### Calculation of tissue-specificity-index tau for miRNAs across distinct differentiation stages
 
 Tau was calculated on log2 (reads per million) values according to the recommended transformation (Kryuchkova-Mostacci and Robinson-Rechavi, 2017). miRNAs with tau >0.7 were selected as having highly specific expression signatures (n = 144), that is exhibiting disproportionally high expression in a single or few stages, while low or non-detectable in most other stages. The 144 miRNAs were subsequently ranked for median expression in NPCs in order to locate miRNAs with high and specific expression at the NPC stage.
 
-## 3'-UTR dual luciferase assay
+### 3'-UTR dual luciferase assay
 
 For cloning the 29nt long Fzd5 8-mer MRE, commercially available sense and anti-sense oligos (Eurofin) were annealed and inserted into the 3'-UTR of the pmiR-GLO reporter vector at the NheI and XbaI restriction sites. Oligos used for cloning are listed in Supplementary file 7. Clones were verified by sequencing analysis. HEK293T cells were co-transfected with the modified constructs and miRNA mimics (100 nM, Exiqon/Qiagen) and luciferase activity was measured 48 hr later with the Promega Luciferase assay system.
 
-## Transduction with miRZip lentivirus for sustained miR-934 inhibition
+### Transduction with miRZip lentivirus for sustained miR-934 inhibition
 
 Sustained inhibition of miR-934 during neural induction was achieved with the miRZip lentivector-based anti-microRNA system (Systems Biosciences). hESC cultures were transduced with the anti-miR-934 lentivirus or the scrambled control virus at DIV10 of neural induction and were collected for analysis 5 days later at DIV15. Samples were then examined by RNA sequencing, qRT-PCR or wWestern blot.
 
-## Transfection with miRNA mimics or inhibitors
+### Transfection with miRNA mimics or inhibitors
 
 hESC cultures at neural induction stage were transiently transfected with Lipofectamine 2000 (Life Technology) in Optimem (ThermoFisher Scientific) according to the manufacturer’s instructions. Cells were incubated in transfection mix overnight before fresh medium was added. A scrambled miRNA, which bears no homology to any known miRNA sequences in human, mouse or rat, was used as control. In a first set of experiments, 3 doses of miR-934 mimics (100 nM, Exiqon) or inhibitors (100 nM, Dharmacon) were applied at DIV6, DIV8 and DIV10 and the cultures were analyzed 2 days later at DIV12. Cells were either fixed or collected with Accutase and the cultures were analyzed by immunocytochemistry and/or RT-qPCR.
 
-## Immunocytochemistry and confocal microscopy
+### Immunocytochemistry and confocal microscopy
 
 Cultures were fixed at the indicated time points in 4% w/v paraforlmadehyde for 20 min, washed with phosphate-buffered saline (PBS), blocked and permeabilized with 5% donkey serum in PBS containing 0.1% Triton X-100. The following primary antibodies were used: mouse monoclonal anti-PAX6 (1:50, Developmental Studies Hybridoma Bank) to identify neural progenitors; rabbit polyclonal anti-Nestin (1:200, Millipore) to identify neuroepithelial cells; goat polyclonal anti-doublecortin (DCX, 1:100; Santa Cruz) to identify neuroblasts/early neurons; rabbit polyclonal βIII-tubulin (TUJ-1 antibody 1:1000, Cell Signaling) to identify neurons; and goat polyclonal anti-Nanog (1:100, R and D) to identify pluripotent cells. After incubation with appropriate secondary antibodies conjugated with AlexaFluor 488 (green) or 546 (red) (1:500; Molecular Probes, Eugene, OR, USA), coverslips were mounted with ProLong Gold antifade reagent with DAPI (Cell Signaling). For quantification of labeled cells, images from 10 randomly selected fields from each independent experiment were obtained using a 20X lens on a Leica TCS-SP5II confocal microscope (LEICA Microsystems) and analyzed using ImageJ software (NIH).
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were harvested, lysed at 4°C for 30 min in ice cold RIPA buffer containing PhosSTOP phosphatase inhibitors and a complete protease inhibitor mixture (Roche Life Science), and centrifuged at 20,000 g for 15 min. Protein concentration in the supernatant was estimated using the Bradford assay (Applichem). Proteins (50 μg) were separated by 10% SDS–PAGE electrophoresis and transferred onto nitrocellulose membranes (Trans-Blot, Biorad). Non-specific binding sites were blocked in Tris-buffered saline (TBS/0.1% Tween-20) containing 5% skimmed milk for 30 min at 37°C. Membranes were probed with the following primary antibodies: rabbit polyclonal anti-Frizzled 5 (1:1000, abcam), rabbit monoclonal anti-active β-catenin (1:1000, cell signaling), anti-Actin (1:1000, Millipore), and mouse monoclonal anti-GAPDH (1:1000, Santa Cruz). Immunodetection was performed by chemiluminescence (ECL) using the Amersham ECL Prime Western Blotting Detection Reagent (GE Healthcare) and quantification was performed against GAPDH and also verified against Actin.
 
-## Morphological analysis of TUJ1+/DCX+ neurons
+### Morphological analysis of TUJ1+/DCX+ neurons
 
 The outgrowth of the longest TUJ1+ process, and the percentage of neurons exhibiting a bipolar phenotype were estimated for TUJ+/DCX+ neurons in neural induction cultures transfected with miR-934 inhibitors. 160–280 neurons from four independent experiments were analyzed per condition using the Image J software and the Neuron J tool.
 
-## Statistical analysis for low throughput experiments
+### Statistical analysis for low throughput experiments
 
 All data were calculated as average of at least three independent experiments. Statistical analysis was performed using Student’s t-test. All data are presented as the mean and standard error of the mean (mean ±SED). Significance is defined at ***p<0.001, **p<0.01, *p<0.05.
 

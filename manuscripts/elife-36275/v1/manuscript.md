@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.36275.001 Communication in neural circuits across the cortex is thought to be mediated by spontaneous temporally organized patterns of population activity lasting ~50 –200 ms. Closed-loop manipulations have the unique power to reveal direct and causal links between such patterns and their contribution to cognition. Current brain–computer interfaces, however, are not designed to interpret multi-neuronal spiking patterns at the millisecond timescale. To bridge this gap, we developed a system for classifying ensemble patterns in a closed-loop setting and demonstrated its application in the online identification of hippocampal neuronal replay sequences in the rat. Our system decodes multi-neuronal patterns at 10 ms resolution, identifies within 50 ms experience-related patterns with over 70% sensitivity and specificity, and classifies their content with 95% accuracy. This technology scales to high-count electrode arrays and will help to shed new light on the contribution of internally generated neural activity to coordinated neural assembly interactions and cognition.
+Communication in neural circuits across the cortex is thought to be mediated by spontaneous temporally organized patterns of population activity lasting ~50 –200 ms. Closed-loop manipulations have the unique power to reveal direct and causal links between such patterns and their contribution to cognition. Current brain–computer interfaces, however, are not designed to interpret multi-neuronal spiking patterns at the millisecond timescale. To bridge this gap, we developed a system for classifying ensemble patterns in a closed-loop setting and demonstrated its application in the online identification of hippocampal neuronal replay sequences in the rat. Our system decodes multi-neuronal patterns at 10 ms resolution, identifies within 50 ms experience-related patterns with over 70% sensitivity and specificity, and classifies their content with 95% accuracy. This technology scales to high-count electrode arrays and will help to shed new light on the contribution of internally generated neural activity to coordinated neural assembly interactions and cognition.
 
 ## Introduction
 
@@ -43,19 +43,113 @@ We built a fully functional closed-loop system for real-time detection and ident
 
 Built on top of the Falcon open source framework for closed-loop neuroscience (Ciliberti and Kloosterman, 2017), the system reads and processes a continuous stream of multi-channel neural signals, analyzes the signals to search for potential replay events and emits a digital output pulse upon the detection of a replay event containing target content (Figure 1a, Figure 1—figure supplement 1a). We defined the target as a replay trajectory of one of the tracks in a multi-arm maze (e.g. a Y-maze). To detect replay content, we applied neural population decoding followed by the characterization of the spatial-temporal structure in the decoded locations (Figure 1b), similar to the approach that is often used for offline replay analysis (Davidson et al., 2009; Kloosterman, 2011). The incoming data stream is continuously decoded in 10 ms bins and, on the basis of the most recent 30 ms of decoded spiking activity, an assessment is made of whether or not a population burst with replay of one of the maze arms is present.
 
-In the online replay classification algorithm, burst and content detections are combined (Figure 1c, Figure 1—figure supplement 1b, see 'Materials and methods'). The burst detection component responds to the crossing of a user-defined threshold (θmua) in the causal moving average of multi-unit activity (MUA). The content detection component searches for sharp high-fidelity position estimates that are consistently located in the same maze arm in the last three 10-ms time bins. The sharpness of the estimates is computed as the causal moving average of the locally integrated probability around the maximum-a-posteriori (MAP) estimate and needs to cross a user-defined threshold (θsharp). A replay event is identified if the burst, sharpness and consistency conditions are all met simultaneously.
+![Figure 1.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic overview of a system for online identification and classification of hippocampal replay content. Top: during the initial active exploration of a 3-arm maze, the relation between the animal’s location and hippocampal population spiking activity is captured in an encoding model for subsequent online neural decoding. Bottom: streaming neural data are processed and analyzed in real-time to detect replay events with user-defined target content. Upon positive detection of a target, closed-loop feedback is provided to the animal within the lifetime of the replay event. (b) Algorithm for online classification of replay content. The top two plots show a raster of all spikes detected on a 14-tetrode array and the corresponding posterior probability distributions for location in the maze generated for non-overlapping 10-ms bins (gray scale maps to 0–0.1 probability). The lower three plots show the internal variables used by the online algorithm to identify and classify replay content. In the bottom plot, gray/black ticks indicate the lack/presence of content consistency across three consecutive bins. Red line: detection triggered when all variables reach preset thresholds (dashed lines for multi-unit activity (MUA) and sharpness, black tick for content consistency). (c) Effect of varying levels of compression on decoding performance and computing time. For the test dataset, compression thresholds in the range [1, 2.5] reduce the decode time to less than 1 ms per spike without affecting the accuracy of decoding the animal’s location in 200 ms time bins during active exploration of a 3-arm maze. Decoding performance was assessed using a 2-fold cross-validation procedure. Inset: full cumulative distributions of decoding error for varying compression thresholds. (d) Effect of compression on posterior probability distributions computed for 10-ms bins in candidate replay bursts. For each level of compression, the plot shows the fraction of posteriors for which the maximum-a-posteriori (MAP) estimate changes to a maze arm different from the no-compression reference condition. Modest compression levels ($\leq$2) have only a small effect on the MAP estimate, in particular for the most informative posterior distributions with MAP probability > 0.05. (e) Distribution of added latency, that is the time between the acquisition of the most recent 10 ms of raw data and the availability of the posterior probability distribution computed on the same data. Black vertical line represents median latency. Note that online spike extraction, neural decoding and online replay classification add a lag of less than 2 ms.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Falcon graph that implemented the real-time processing pipeline of online neural decoding and replay identification and classification. Each box represents a processor node that ran in a separate thread of execution in the central processing unit (CPU). Black arrows indicate ring buffers for data sharing between two connected processors. The first three serially connected processor nodes are responsible respectively for reading the incoming User Datagram Protocol (UDP) packets from the data acquisition system, parsing from the packets the relevant information about the multi-channel signals and dispatching the signals to the downstream processors. The dispatcher processor node streams data to a set of parallel pipelines, each processing data recorded from a different tetrode. Each parallel pipeline has three serially connected processor nodes that are used for digital filtering, spike detection and on-the-fly kernel density estimation of the joint amplitude-position probability density of the spike-sorting-free decoder, which uses the pre-loaded offline-generated encoding models. The likelihoods generated by decoder nodes, each for a different tetrode, are fed into the 'population decoder' node, which produces the final posterior probability distribution of the animal’s real or replayed position. Posterior probability data is streamed to a 'run decoder' node for estimating the animal’s real position and to a 'replay content classifier' node for online detection of a replay content. The output of these nodes are fed to 'file serializer' nodes for data dump (used in post-hoc analysis) and to a 'digital output' node for triggering a closed-loop transistor–transistor logic (TTL) pulse via the dedicated hardware. (b) Flow diagram of the algorithm for replay content identification and classification in streaming data. In the implementation of the 'replay classifier node', an additional check for the sharpness of the most recent 10 ms time bin is performed (threshold was set to$\theta_{sharp}$). In the software implementation, all criteria are evaluated with an AND condition.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Stress tests used a full decoding pipeline with injected spikes at a predetermined rate. (a) Left: tests performed on a workstation with four physical cores. Thick lines: median. Shaded region: 95% confidence interval (CI). Right: tests performed on workstation with 32 cores. (b) Distribution of actual per-tetrode spike rate in rest (left) and in run (right). Vertical black lines represent median values.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Cross-validated decoding performance in RUN1 for all maze arms combined and separately for each arm. Boxes indicate median in-arm error and inter-quartile range. Whiskers indicate most extreme point within 1.5x the inter-quartile range. Horizontal gray line indicates median in-arm error for all arms. Percentages at the top represent the fraction of position estimates that were located in the correct arm. (b) Decoding performance in RUN2 using an encoding model built from spiking data in RUN1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Median in-arm decoding error. Top, REST; bottom, RUN2. (b) Fraction of position estimates that were located in the correct arm. Top, REST; bottom, RUN2.
+
+In the online replay classification algorithm, burst and content detections are combined (Figure 1c, Figure 1—figure supplement 1b, see 'Materials and methods'). The burst detection component responds to the crossing of a user-defined threshold ($\theta_{mua}$) in the causal moving average of multi-unit activity (MUA). The content detection component searches for sharp high-fidelity position estimates that are consistently located in the same maze arm in the last three 10-ms time bins. The sharpness of the estimates is computed as the causal moving average of the locally integrated probability around the maximum-a-posteriori (MAP) estimate and needs to cross a user-defined threshold ($\theta_{sharp}$). A replay event is identified if the burst, sharpness and consistency conditions are all met simultaneously.
 
 The algorithms for neural decoding and replay content detection were adapted to fit the specific constraints of the online use case. In our approach, the most demanding computation is the online evaluation of the encoding model that directly relates spike waveform features to the animal’s position without the need for prior spike sorting (Kloosterman et al., 2014). Modest compression of the encoding model reduced the computational costs, resulting in an online decode time below 1 ms per spike, without affecting the system's ability to decode the animal’s position during run epochs (Figure 1c). The effect of compression on the integrity of posterior probability distributions in candidate replay population bursts is small for low to moderate compression levels, in particular for posteriors that have a MAP estimate with high probability (Figure 1d).
 
 Overall, the implementation of the algorithms, including the spike-by-spike construction of posterior probability distributions and parallel processing (see 'Materials and methods'), made sure that the determination of replay content and the triggering of a corresponding digital output pulse occurred within 2.2 ms of the time at which the neural data were acquired in over 95% of the cases (Figure 1e; median added latency: 1.1 ms). Stress tests of the system with artificially generated spikes showed that the added latency remains low for high per-tetrode spike rates and for a large number of tetrodes (up to 32) on a 32-core workstation (Figure 1—figure supplement 2a), thus demonstrating the scalability of our solution. Additional tests on a 4-core workstation revealed that added latency has higher variability, especially in the case of 32 tetrodes and high spike rates (Figure 1—figure supplement 2a), but that performance is similar to that of the 32-core workstation for up to 24 tetrodes and per-tetrode spike rates that match our datasets (Figure 1—figure supplement 2b).
 
-## Real-time detection of replay content during resting and awake states
+### Real-time detection of replay content during resting and awake states
 
 To test our closed-loop framework of online detection of replay content, we recorded hippocampal ensemble activity using tetrodes in a rat that repeatedly explored the arms of a 3-arm radial maze. In each of the three separate recording sessions, a first exposure to the maze (RUN1) was used to prepare the encoding model for online neural decoding. Cross-validation showed good decoding performance in RUN1 with a median error below 10 cm (Figure 1—figure supplement 3a), which required only a few traversals of the maze (Figure 1—figure supplement 4). Real-time closed-loop replay content detection was activated in a subsequent rest epoch (REST) and in a second exposure to the radial maze (RUN2). The encoding model built using data from RUN1 was also valid for decoding the animal’s position in RUN2 (Figure 1—figure supplement 3b), indicating that recordings were stable and spatial representations had not remapped (Anderson and Jeffery, 2003; Latuske et al., 2017). To evaluate the online detection performance without distortions of the signal, no actual feedback perturbation of brain activity was applied to the brain.
 
 Reference hippocampal population bursts were defined offline on the basis of the detrended MUA signal and classified as either associated or not associated with replay (Table 1). The offline reference data set contained a total of 3506 population bursts that were recorded in REST (n = 1321) and RUN2 (n = 2185) across all three sessions. The median duration of reference bursts was 83.0 ms (inter-quartile range (iqr) [65.3, 119.8]; REST: median 89.0 ms, iqr [70.0, 126.0]; RUN2: median 79.0 ms, iqr [63.0, 116.0]). In RUN2, the majority of reference bursts occurred when the animal paused at the distal reward platforms.
 
-Online, closed-loop replay identification resulted in a total of 2123 positive hits, a large majority of which (87.3%, 1854/2123) were associated with reference bursts. Very few online detections occurred immediately before and within 20 ms after reference burst onset, or after burst offset (Figure 2a). A small fraction of hits were non-burst false positives (FPnon_burst), predominantly in the third test session (Table 2). There was a slightly higher fraction of positive hits inside reference bursts in REST (91.9%, 694/755) as compared to RUN2 (84.8%, 1160/1368). The higher rate of FPnon_burst in RUN2 is possibly due to the more prominent spatially modulated firing present during active exploration behavior, which led to spurious crossings of the θmua threshold with posterior densities representing the actual, rather than a replayed, position of the animal. Indeed, 80.6% of FPnon_burst in RUN2 occurred when the rat was moving (speed > 5 cm/s), whereas the majority of online detections inside reference bursts (73.8%) occurred when the rat was immobile (speed < 5 cm/s). Overall, the majority of online detections corresponded to population bursts.
+**Table 1.**
+ Overview of datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Epoch</th>
+      <th># bursts</th>
+      <th>Burst rate [Hz]</th>
+      <th># replay bursts</th>
+      <th># bursts w/joint content</th>
+      <th>Mean burst duration [ms]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>REST</td>
+      <td>297</td>
+      <td>0.40</td>
+      <td>42</td>
+      <td>15</td>
+      <td>107.2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RUN2</td>
+      <td>663</td>
+      <td>0.56</td>
+      <td>345</td>
+      <td>85</td>
+      <td>94.4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>REST</td>
+      <td>537</td>
+      <td>0.43</td>
+      <td>68b) F</td>
+      <td>34</td>
+      <td>101.2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RUN2</td>
+      <td>808</td>
+      <td>0.64</td>
+      <td>315</td>
+      <td>77</td>
+      <td>93.6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>REST</td>
+      <td>487</td>
+      <td>0.38</td>
+      <td>134</td>
+      <td>46</td>
+      <td>102.5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RUN2</td>
+      <td>714</td>
+      <td>0.59</td>
+      <td>334</td>
+      <td>62</td>
+      <td>95.6</td>
+    </tr>
+  </tbody>
+</table>
+
+Online, closed-loop replay identification resulted in a total of 2123 positive hits, a large majority of which (87.3%, 1854/2123) were associated with reference bursts. Very few online detections occurred immediately before and within 20 ms after reference burst onset, or after burst offset (Figure 2a). A small fraction of hits were non-burst false positives (FPnon_burst), predominantly in the third test session (Table 2). There was a slightly higher fraction of positive hits inside reference bursts in REST (91.9%, 694/755) as compared to RUN2 (84.8%, 1160/1368). The higher rate of FPnon_burst in RUN2 is possibly due to the more prominent spatially modulated firing present during active exploration behavior, which led to spurious crossings of the $\theta_{mua}$ threshold with posterior densities representing the actual, rather than a replayed, position of the animal. Indeed, 80.6% of FPnon_burst in RUN2 occurred when the rat was moving (speed > 5 cm/s), whereas the majority of online detections inside reference bursts (73.8%) occurred when the rat was immobile (speed < 5 cm/s). Overall, the majority of online detections corresponded to population bursts.
 
 If positive online hits that were associated with reference bursts correctly indicated replay content, then it is expected that, as compared to the ignored bursts, the detected bursts scored higher on metrics used for offline replay identification. Indeed, reference population bursts that were identified online as replay events had higher posterior bias (biasmax and biasmax score) for one of the maze arms than did reference bursts that were ignored by the closed-loop system (Figure 2b). Likewise, online detected events scored higher on metrics for linear spatial-temporal structure (line fit score, Pearson correlation and sequence score; Figure 2c,d). These results are consistent with the closed-loop system preferentially detecting replay-containing reference bursts.
 
@@ -67,39 +161,230 @@ For quantification purposes, and absent ground-truth replay labels, we labeled o
 
 In both REST and RUN2, single and joint replay events were correctly detected and classified in real-time (Figure 3a,b). The system also correctly ignored bursts that did not contain consistent representations of any of the three maze arms (Figure 3c). False-positive detections were mainly caused by local matches to the identification criteria in the 30 ms window without significant reference replay present across the whole population burst (see examples in Figure 3—figure supplement 1a). False-negative detections were mainly caused by failure of noisy MUA, sharpness and consistency signals to cross threshold values concurrently (see examples in Figure 3—figure supplement 1b). Occasionally, false-positive/-negative detections were the result of a mismatch between the offline and online decoded position estimates, possibly resulting from compression of the encoding model or differences in spike detection.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig3-v1.jpg)
+
+**Figure 3.:** (a) Examples of reference single content replay events that were successfully detected online with correct identification of replay content (vertical red line). The gray bar below each plot represents the total event with duration (in ms) indicated inside the bar. The absolute detection latency from event onset is indicated in red above the bar and the detection latency relative to the duration of the event is indicated below the bar. (b) Similar to (a) but for joint replay events. All examples except the second show online detections triggered by the first replayed arm; the second example shows an online detection that was triggered by a replay of the second arm. (c) Similar to (a) but for reference bursts without replay content that were correctly ignored online.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Examples of false-positive detections. Most incorrect detections were due to spurious matching of the identification criteria in the 30 ms preceding window, without significant reference replay detected offline across the whole population burst. A smaller subset of false-positive detections were due to erroneous decoding of spiking activity (e.g. in the first two examples). (b) Examples of false-negative detections. In the first five events, individual identification criteria were met throughout the population burst but never concurrently. Other false-negative detections were caused by decoding errors (sixth example) or by an online detection that occurred just outside the event (last example).
+
 To quantify the performance, we treated the online detection of replay content in reference bursts as a binary classification problem and determined the number of true/false positives/negatives in the corresponding confusion matrix (Figure 4a). Overall, a high fraction of reference bursts with replay content were correctly flagged as such online (median sensitivity 0.78, range: [0.60, 0.95]) and a high fraction of non-replay reference bursts were correctly ignored by the online system (median specificity 0.71, range: [0.44, 0.80]) (Figure 4b, top; Table 3). The online detection favored a low number of false negatives at the expense of a higher number of false positives (median false omission rate (FOR) 0.11, false discovery rate (FDR) 0.54), in particular during REST (FOR 0.02, FDR 0.68) as compared to RUN2 (FOR 0.28, FDR 0.36) (Figure 4b, middle; Table 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig4-v1.jpg)
 
 **Figure 4.:** (a) Schematic overview of the true/false positive/negative classification of online replay detections (top), associated latencies (bottom left) and the confusion matrix used for measuring performance (bottom right). (b) Classification performance measures for all REST (black) and RUN2 (gray) test epochs. Diagonal gray lines in the top and middle plots represent isolines for informedness and markedness measures, respectively. Gray lines in the bottom plot represent isolines for Matthews correlation coefficient. In the bottom graph, two RUN2 epoch values overlap in the lowest gray dot. (c–d) Distribution of absolute (c) and relative (d) online detection latency in REST (top) and RUN2 (bottom) epochs. Light gray: all online detected reference bursts. Dark gray: reference bursts with duration longer than 100 ms.
 
-To further characterize the online detection of reference bursts with replay content, we computed unbiased performance measures informedness, markedness and Matthews correlation coefficient (Table 3), which are not sensitive to population prevalence and label bias (Powers, 2011). All three measures were well above zero, the performance score of a random classifier (Figure 4b bottom; Table 3), indicating good online identification of population bursts with replay content. For all datasets, the correlation between online hits and offline replay content was highly significant (χ2>50, p<2×10-12).
+**Table 3.**
+ Replay detection performance II.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Epoch</th>
+      <th>Sensitivity</th>
+      <th>Specificity</th>
+      <th>False omission rate</th>
+      <th>False discovery rate</th>
+      <th>Informedness</th>
+      <th>Markedness</th>
+      <th>Correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>REST</td>
+      <td>0.95</td>
+      <td>0.74</td>
+      <td>0.01</td>
+      <td>0.65</td>
+      <td>0.69</td>
+      <td>0.34</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RUN2</td>
+      <td>0.60</td>
+      <td>0.68</td>
+      <td>0.35</td>
+      <td>0.36</td>
+      <td>0.29</td>
+      <td>0.29</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>REST</td>
+      <td>0.86</td>
+      <td>0.75</td>
+      <td>0.02</td>
+      <td>0.72</td>
+      <td>0.61</td>
+      <td>0.26</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RUN2</td>
+      <td>0.69</td>
+      <td>0.80</td>
+      <td>0.18</td>
+      <td>0.34</td>
+      <td>0.49</td>
+      <td>0.48</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>REST</td>
+      <td>0.95</td>
+      <td>0.44</td>
+      <td>0.03</td>
+      <td>0.68</td>
+      <td>0.40</td>
+      <td>0.30</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RUN2</td>
+      <td>0.71</td>
+      <td>0.57</td>
+      <td>0.28</td>
+      <td>0.44</td>
+      <td>0.28</td>
+      <td>0.28</td>
+      <td>0.28</td>
+    </tr>
+  </tbody>
+</table>
+
+To further characterize the online detection of reference bursts with replay content, we computed unbiased performance measures informedness, markedness and Matthews correlation coefficient (Table 3), which are not sensitive to population prevalence and label bias (Powers, 2011). All three measures were well above zero, the performance score of a random classifier (Figure 4b bottom; Table 3), indicating good online identification of population bursts with replay content. For all datasets, the correlation between online hits and offline replay content was highly significant ($χ^{2}$>50, p<$2\times10^{-12}$).
 
 For the reference bursts that were correctly flagged by the online system as events with replay, the actual replay content (i.e. which of the three maze arms was represented in the replay event) was classified with high accuracy (Table 2; median content accuracy 0.95, range [0.83, 1.00]; REST 0.95, RUN2 0.95).
+
+**Table 2.**
+ Replay detection performance I.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Epoch</th>
+      <th>Out of burst rate [min−1]</th>
+      <th>Content accuracy</th>
+      <th>Median absolute latency [ms]</th>
+      <th>Median relative latency [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>REST</td>
+      <td>0.24</td>
+      <td>0.95</td>
+      <td>51.77</td>
+      <td>50.85</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RUN2</td>
+      <td>1.83</td>
+      <td>0.99</td>
+      <td>53.77</td>
+      <td>67.54</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>REST</td>
+      <td>0.33</td>
+      <td>0.96</td>
+      <td>49.77</td>
+      <td>54.10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RUN2</td>
+      <td>1.05</td>
+      <td>1.00</td>
+      <td>57.39</td>
+      <td>63.81</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>REST</td>
+      <td>2.37</td>
+      <td>0.83</td>
+      <td>44.62</td>
+      <td>50.49</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RUN2</td>
+      <td>7.46</td>
+      <td>0.87</td>
+      <td>49.95</td>
+      <td>62.53</td>
+    </tr>
+  </tbody>
+</table>
 
 Taken together, these results demonstrate the capability of our closed-loop system to identify and classify hippocampal replay content with high accuracy under realistic experimental conditions during both resting and active animal behavior.
 
 Next, we analyzed the latency of online detection, which is a critical metric for experiments that require on-time closed-loop feedback. Across all reference bursts that were detected online, the median closed-loop detection latency (Figure 4a; Table 2) relative to the offline-defined burst onset was 50.7 ms (90% CI [31.4, 116.2]) and the median relative detection latency, as percentage of the reference burst duration, was 59.5% (90% CI: [21.9, 89.0]) (Figure 4c,d; Table 2). The latency for online detection of reference bursts that contain replay content was similar (median detection latency 51.0 ms, 90% CI [30.3, 119.6]; median relative latency 53.6%, 90% CI [19.5, 87.4]). For long reference replay bursts (duration >100 ms), the median detection latency was slightly higher at 58.3 ms (90% CI [30.0, 127.2]), but the median relative latency of 41.9% (90% CI [18.1, 84.7]) was lower (Figure 4c,d). These results demonstrate that online replay detection occurred well before burst offset time, thus making our hardware–software system suitable for experiments requiring replay content-specific closed-loop manipulation.
 
-## Effect of parameters on replay content detection
+### Effect of parameters on replay content detection
 
 In the experimental tests, the parameters for online replay content identification and classification were chosen on the basis of pilot experiments and offline simulations carried out beforehand. However, such parameters may be tuned to meet the specific requirements of an experiment. For example, it may be desirable to detect the target replay content as completely as possible (i.e. high sensitivity) at the expense of a higher number of false positives (reduced specificity). Conversely, experimenters may want to favor high specificity at the expense of a higher number of missed target replay events.
 
-To characterize the influence of parameters on online detection performance, experimental data were played back offline while applying the online detection algorithm, using a range of values for the MUA and posterior sharpness thresholds θmua andθsharp. As expected, increasing values of θmua and θsharp parameters reduced the false-positive and false-discovery rates, at the expense of a decrease in sensitivity and an increase in false-omission rate during both REST (Figure 5—figure supplement 1) and RUN2 (Figure 5—figure supplement 2).
+To characterize the influence of parameters on online detection performance, experimental data were played back offline while applying the online detection algorithm, using a range of values for the MUA and posterior sharpness thresholds $\theta_{mua}$ and$\theta_{sharp}$. As expected, increasing values of $\theta_{mua}$ and $\theta_{sharp}$ parameters reduced the false-positive and false-discovery rates, at the expense of a decrease in sensitivity and an increase in false-omission rate during both REST (Figure 5—figure supplement 1) and RUN2 (Figure 5—figure supplement 2).
 
 We next asked how close the chosen parameters in the live test were to the pair of optimal parameters that maximize the Matthews correlation coefficient (Figure 5a), which balances all four elements of the confusion matrix (true positives (TP), true negatives (TN), in-burst false positives (FPburst), and false negatives (FN)). For each optimal pair of parameters, we separately assessed the corresponding rate of non-burst detections (FPnon_burst) (Figure 5b), which is not accounted for in the maximization of the Matthews correlation coefficient.
 
-We found that we used sub-optimal parameters in REST epochs, suggesting that a better detection could have been achieved by increasing θmua and θsharp thresholds (Figure 5 a,b Table 4). On the other hand, in the RUN2 epochs, the maximum attainable correlations were only marginally and not significantly higher than those obtained in the live tests (Table 4; Figure 5a, bottom). Moreover, the highest correlation for RUN2 was obtained at the same θsharp used in the live tests, but with lower θmua thresholds (Figure 5a, bottom; Table 4), thus allowing for a dramatically lower FPnon_burst rate than the parameters that maximize the Matthews correlation coefficient (Figure 5b, bottom; Table 4).
+![Figure 5.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig5-v1.jpg)
 
-Both content accuracy and detection latency were largely unaffected by changes in θmua or θsharp thresholds (Figure 5—figure supplement 1e, f and Figure 5—figure supplement 2e,f). Content accuracy is mainly dependent on the online decoding performance and is influenced by compression threshold (see Figure 1d) and the number of recorded neurons (or proxies thereof, such as the number of tetrodes). Detection latency is mainly dependent on the size of the integration window used to determine replay content, which was fixed to 30 ms (three 10 ms bins) in the live tests. The simulations show that detection latency varied with the size of the integration window (Figure 5—figure supplement 3). As expected, the use of smaller bin size and/or a lower number of Nbins decreases relative detection latency, at the expense of reduced detection accuracy (i.e. lower Matthews correlation coefficient). Thus, experimenters may also tune the integration window size to accommodate faster or more accurate online detections.
+**Figure 5.:** (a) Map of the Matthews correlation coefficient for different combinations of values for $\theta_{mua}$ and $\theta_{sharp}$ of a REST (top) and RUN2 (bottom) epoch; the map was computed using offline playback simulations (dataset 2). Circles indicate the value corresponding to the actual parameters used in the online tests (open circle) and the value corresponding to the set of parameters that maximizes the Matthews correlation coefficient (filled circle). (b) Same as (a) for the non-burst detection rate for different combination of thresholds. Circles indicate the value corresponding to the actual parameters used in the online tests (open circle) and the value corresponding to the set of parameters that maximizes the Matthews correlation coefficient (filled circle).
 
-## Online detection of replay content requires sufficiently high sampling of ensemble activity
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a–f) Dependence of online replay detection performance indices on algorithm parameters tested using offline playback simulations with varying combinations of values for $\theta_{mua}$ and $\theta_{sharp}$. Circles indicate the value corresponding to the actual parameters used in the online tests (open circle) and the value corresponding to the set of parameters that maximizes the Matthews correlation coefficient (filled circle). Note how lower values of both $\theta_{mua}$ and $\theta_{sharp}$ improve sensitivity, but negatively affect sspecificity and false discovery rate. On the other hand, median relative latency and content accuracy are not affected by parameter tuning as they depend on other elements of the replay content identification framework.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a–f) Dependence of online replay detection performance indices on algorithm parameters tested using offline playback simulations with varying combinations of values for $\theta_{mua}$ and $\theta_{sharp}$. Circles indicate the value corresponding to the actual parameters used in the online tests (open circle) and the value corresponding to the set of parameters that maximizes the Matthews correlation coefficient (filled circle). Note how lower values of both $\theta_{mua}$ and $\theta_{sharp}$ improve sensitivity, but negatively affect specificity and false discovery rate. On the other hand, median relative latency and content accuracy are not affected by parameter tuning as they depend on other elements of the replay content identification framework.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Note that larger Nbins and/or bin size result in both an improved detection performance (i.e. higher Matthews correlation coefficient; top left) and worse detection latency (bottom left). The white dot indicates the combination of bin size and Nbins used for online detections and most offline analyses.
+
+We found that we used sub-optimal parameters in REST epochs, suggesting that a better detection could have been achieved by increasing $\theta_{mua}$ and $\theta_{sharp}$ thresholds (Figure 5 a,b Table 4). On the other hand, in the RUN2 epochs, the maximum attainable correlations were only marginally and not significantly higher than those obtained in the live tests (Table 4; Figure 5a, bottom). Moreover, the highest correlation for RUN2 was obtained at the same $\theta_{sharp}$ used in the live tests, but with lower $\theta_{mua}$ thresholds (Figure 5a, bottom; Table 4), thus allowing for a dramatically lower FPnon_burst rate than the parameters that maximize the Matthews correlation coefficient (Figure 5b, bottom; Table 4).
+
+Both content accuracy and detection latency were largely unaffected by changes in $\theta_{mua}$ or $\theta_{sharp}$ thresholds (Figure 5—figure supplement 1e, f and Figure 5—figure supplement 2e,f). Content accuracy is mainly dependent on the online decoding performance and is influenced by compression threshold (see Figure 1d) and the number of recorded neurons (or proxies thereof, such as the number of tetrodes). Detection latency is mainly dependent on the size of the integration window used to determine replay content, which was fixed to 30 ms (three 10 ms bins) in the live tests. The simulations show that detection latency varied with the size of the integration window (Figure 5—figure supplement 3). As expected, the use of smaller bin size and/or a lower number of Nbins decreases relative detection latency, at the expense of reduced detection accuracy (i.e. lower Matthews correlation coefficient). Thus, experimenters may also tune the integration window size to accommodate faster or more accurate online detections.
+
+### Online detection of replay content requires sufficiently high sampling of ensemble activity
 
 Accurate real-time replay detection requires replay content to be predictable from the initial portion of the bursting event. Therefore, higher signal-to-noise and neatly structured decoded replay trajectories are easier to detect online as they are less susceptible to short timescale signal variability. Since the signal-to-noise ratio of replay is strongly influenced by the level of sampling of the spiking neuronal population (although biological factors might play a role too [Roumis and Frank, 2015; Tang et al., 2017]), spiking data recorded from poorly sampled neuronal populations are likely to lead to an increase in online replay detection errors.
 
 To determine how spike data availability affects online replay identification, we progressively excluded tetrodes in one dataset and performed offline simulations of online replay detection in REST and RUN2 (Figure 6 and Figure 6—figure supplement 1). Consistent with a higher signal-to-noise ratio, a higher tetrode number decreased the variability of the MUA rate estimate within 10 ms bins and increased the separability of the MUA rate distributions for non-burst periods, bursts without replay and bursts with replay (Figure 6—figure supplement 2a,c). The sharpness of the posterior probability distributions increased with higher tetrode numbers, whereas the sharpness distributions for non-burst periods and bursts with replay showed a clear separation (Figure 6—figure supplement 2b,d).
 
-To quantify the replay detection performance, a fixed replay reference was used (computed on the original dataset), so that the results were not affected by degradation of the reference. For each simulation, optimal θmua and θsharp thresholds were computed separately (Figure 6—figure supplement 1b, d). As expected, replay identification and classification performance improved when more tetrodes were included, as evidenced by higher correlation and content accuracy measures (Figure 6a). Relative detection latency decreased marginally with the number of tetrodes; whereas FPnon_burst rate remained low for REST and was variable for RUN2 (probably because θmua and θsharp thresholds were not optimized for low out-of-burst detections).
+![Figure 6.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig6-v1.jpg)
+
+**Figure 6.:** (a) Matthews correlation coefficient, content accuracy, relative detection latency and non-burst detection rate for REST (left) and RUN2 (right). Dots represent individual tests, lines represent the median. (b) Cross-validated RUN1 decoding performance as a function of the number of tetrodes. Top: median in-arm decoding errors. Bottom: fraction arm-correct position estimates. (c) Scatter plot of the relation between median in-arm decoding error and replay detection performance during REST (top) and RUN2 (bottom). Black lines represent the centroid for each color-coded number of tetrodes in vivo.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a,b) and RUN2 (c,d). (a,c) Top: sensitivity and false-positive rate. Bottom: false discovery and false omission rates. Diagonal gray lines in scatter plots represent isolines for informedness (top) and markedness (bottom) measures. (b,d) Optimal thresholds with $theta_{mua}$expressed in S.D. (top) or per-tetrode spiking rate (bottom).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36275/elife-36275-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (a) MUA rate per tetrode in REST. Top: example distributions of MUA rate for time bins outside and inside candidate replay bursts (with or without identified replay content) for a subset of 4, 9 and 14 tetrodes. Bottom, left: mean MUA rate as a function of the number of tetrodes. Note that the mean rate remains constant, but the variance increases with fewer tetrodes. Bottom, right: Hellinger distance between MUA rate distributions as a function of the number of tetrodes. (b) Sharpness of posterior probability distributions in REST. Top: example distributions of sharpness values for time bins outside and inside candidate replay bursts (with or without identified replay content) for a subset of 4, 9 and 14 tetrodes. Note shift towards higher sharpness values when more tetrodes are included. Bottom, left: mean sharpness value as a function of the number of tetrodes. Bottom, right: Hellinger distance between sharpness distributions as a function of the number of tetrodes. (c) MUA rate per tetrode in RUN2. Panels as in (a). (d) Sharpness of posterior probability distributions in RUN2. Panels as in (b).
+
+To quantify the replay detection performance, a fixed replay reference was used (computed on the original dataset), so that the results were not affected by degradation of the reference. For each simulation, optimal $\theta_{mua}$ and $\theta_{sharp}$ thresholds were computed separately (Figure 6—figure supplement 1b, d). As expected, replay identification and classification performance improved when more tetrodes were included, as evidenced by higher correlation and content accuracy measures (Figure 6a). Relative detection latency decreased marginally with the number of tetrodes; whereas FPnon_burst rate remained low for REST and was variable for RUN2 (probably because $\theta_{mua}$ and $\theta_{sharp}$ thresholds were not optimized for low out-of-burst detections).
 
 Matthews correlation coefficient does not appear to saturate at the maximum number of tetrodes in the test dataset (14), suggesting that further improvement is possible by increasing the number of sampled cells. Interestingly, Matthews correlation shows little variation for low number of tetrodes and improves most strongly from 10 tetrodes and up. This non-linear dependency is even more clearly present for content accuracy. It is conceivable that, given heterogeneity in spiking data across tetrodes, there is a critical subset of tetrodes that provide most of the information for accurate determination of replay content. The higher Matthews correlation was mainly due to an increased sensitivity and a reduction in false discovery and omission rates (Figure 6—figure supplement 1a,c).
 
@@ -113,7 +398,7 @@ Our system goes beyond recent efforts to decode or respond to hippocampal activi
 
 Our replay detection technology has similarities and differences with the large body of research in brain–computer interfaces (BCIs) and neuroprosthetics (Lebedev and Nicolelis, 2006). In common with some prototypes of invasive BCIs used for controlling external devices (Fraser et al., 2009; Li and Li, 2017), we applied online population decoding to unsorted large-scale single-unit recordings. The use of high-level signals that relate to cognitive processes such action planning or memory rather than to pure motor function is not new in neuroprosthetics (see cognitive neural prosthetics (Andersen et al., 2010; Hampson et al., 2018). In contrast to other BCI and neuroprosthetics applications, the development of a ‘replay BCI’ faced two unique challenges. First, while it is possible to test the accuracy of BCIs by measuring the difference between desired and actual output, the content of hippocampal replay does not have a ‘ground truth’ and requires assumptions and statistical analyses to quantify the goodness of the output. The second and most difficult challenge relates to the strict latency specifications in generating an online feedback. BCIs can operate with a processing latency of less than 50 ms when using slowly sampled (below 4800 Hz) EEG signals on few (8–32) channels (Fischer et al., 2014; Wilson et al., 2010). BCIs using rapidly sampled signals for spike detection on larger electrode arrays can reach latencies as low as 120 ms (Velliste et al., 2008); lower latencies are however not necessary as the natural control of motor output has a natural delay of 150 – 200 ms (Velliste et al., 2008; Xu et al., 2014). Here, we surpassed these limits by using more than 50 channels sampled at 32 kHz to generate estimates of brain state (animals’ position) every 10 ms and to classify hippocampal replay patterns with ~50 ms average latency.
 
-As with any system that aims to provide on-time feedback, a trade-off was made between the earliest possible prediction of replay content in a population burst and the most accurate possible prediction. This trade-off is reflected in the numbers of incorrect detections and omissions, when compared to a reference replay content classification. Ultimately, the experimental goals determine how the best trade-off is made. For a balanced trade-off between true and false positives/negatives, we opted for the Matthews correlation coefficient as a measure of performance. For some experiments, however, it may be desirable to be more content-specific and a corresponding increase in false negatives (lower sensitivity) is deemed acceptable. On the other hand, it may be more important to detect as many events with target replay content as possible and an increased rate of false positives (lower specificity) is taken for granted. The two main parameters in our replay content detection algorithm, θmua and θsharp, provide an intuitive means to tune the detection performance and to obtain the desired trade-off. While the exact parameter values depend on the data and optimal values are not known prior to the experiment, similar datasets collected beforehand (without disruptive closed-loop manipulations) are a guide to the actual parameter selection.
+As with any system that aims to provide on-time feedback, a trade-off was made between the earliest possible prediction of replay content in a population burst and the most accurate possible prediction. This trade-off is reflected in the numbers of incorrect detections and omissions, when compared to a reference replay content classification. Ultimately, the experimental goals determine how the best trade-off is made. For a balanced trade-off between true and false positives/negatives, we opted for the Matthews correlation coefficient as a measure of performance. For some experiments, however, it may be desirable to be more content-specific and a corresponding increase in false negatives (lower sensitivity) is deemed acceptable. On the other hand, it may be more important to detect as many events with target replay content as possible and an increased rate of false positives (lower specificity) is taken for granted. The two main parameters in our replay content detection algorithm, $\theta_{mua}$ and $\theta_{sharp}$, provide an intuitive means to tune the detection performance and to obtain the desired trade-off. While the exact parameter values depend on the data and optimal values are not known prior to the experiment, similar datasets collected beforehand (without disruptive closed-loop manipulations) are a guide to the actual parameter selection.
 
 The trade-off between accuracy and latency is affected by the performance of neural decoding. A high cell yield in the recordings will improve decoding performance and hence is expected to lead to better online replay detection. The no-spike-sort decoding approach (Kloosterman et al., 2014), which is at the core of our solution, helps by utilizing the information from all available spikes, whether or not they are part of well-isolated cell clusters. Compression of the encoding model and software parallelization in Falcon provided the necessary computational speed-up, which in our system results in the availability of the animal’s replayed position within 2 ms of data arrival, with acceptable decoding accuracy loss.
 
@@ -135,25 +420,47 @@ In conclusion, we successfully bridged the gap between the basic formulation of 
 
 ## Materials and methods
 
-## Neural decoding
+### Neural decoding
 
-We employed a Bayesian neural decoding approach that computes the posterior probability over position x given the unsorted spikes on K tetrodes (Kloosterman et al., 2014). For each tetrode k, Ak=a1k,…,ankk defines the peak amplitude vectors for a set of nk spikes in the decoding time bin with durationΔ. Following Bayes’ rule, the posterior is then given by:(1)P(x|A1:K)=P(A1:K|x)P(x)P(A1:K)
+We employed a Bayesian neural decoding approach that computes the posterior probability over position x given the unsorted spikes on K tetrodes (Kloosterman et al., 2014). For each tetrode k, $A^{k}=a_{1}^{k},…,a_{n_{k}}^{k}$ defines the peak amplitude vectors for a set of $n_{k}$ spikes in the decoding time bin with duration$Δ$. Following Bayes’ rule, the posterior is then given by:
 
-Here, PA1:K is a normalizing constant and we use a uniform priorPx. We assume conditional independence of the activity on each tetrode, and thus the joint likelihood is computed as the product of the individual likelihoods:(2)P(A1:K|x)=∏k=1KP(Ak|x)
+$$
+P(x|A^{1:K})=\frac{P(A^{1:K}|x)P(x)}{P(A^{1:K})}
+$$
 
-For each tetrode, the spiking statistics are modeled as a marked temporal Poisson process (where each mark is the vector of spike peak amplitudes) and the likelihood is expressed as (dropping super- and subscripts k on the right side for clarity):(3)P(Ak|x)=Δn[∏niλ(ai,x)]e−Δλ(x)
+Here, $PA^{1:K}$ is a normalizing constant and we use a uniform prior$Px$. We assume conditional independence of the activity on each tetrode, and thus the joint likelihood is computed as the product of the individual likelihoods:
 
-We refer to Equations 3 as the encoding model. The tetrode-specific joint rate function λa,x and marginal rate function λxcan be further expressed as a ratio of spike count (p) and position occupancy (π) probability distributions:(4)λ(a,x)=μp(a,x)π(x)(5)λ(x)=μp(x)π(x)
+$$
+P(A^{1:K}|x)=\prodk=1KP(A^{k}|x)
+$$
 
-Here, μ represents the mean firing rate. To compute the likelihoods, the rate functions are evaluated using a compressed kernel density based estimator (Sodkomkham et al., 2016) with kernel bandwidths of 8 cm and 30 µV respectively for the spatial and spike amplitude dimensions, and a compression level in the range [1, 2].
+For each tetrode, the spiking statistics are modeled as a marked temporal Poisson process (where each mark is the vector of spike peak amplitudes) and the likelihood is expressed as (dropping super- and subscripts k on the right side for clarity):
 
-## Online replay detection and classification algorithm
+$$
+P(A^{k}|x)=Δ^{n}[\prodni\lambda(a_{i},x)]e^{−Δ\lambda(x)}
+$$
+
+We refer to Equations 3 as the encoding model. The tetrode-specific joint rate function $\lambdaa,x$ and marginal rate function $\lambdax$can be further expressed as a ratio of spike count ($p$) and position occupancy ($\pi$) probability distributions:
+
+$$
+\lambda(a,x)=\mu\frac{p(a,x)}{\pi(x)}
+$$
+
+
+
+$$
+\lambda(x)=\mu\frac{p(x)}{\pi(x)}
+$$
+
+Here, $\mu$ represents the mean firing rate. To compute the likelihoods, the rate functions are evaluated using a compressed kernel density based estimator (Sodkomkham et al., 2016) with kernel bandwidths of 8 cm and 30 µV respectively for the spatial and spike amplitude dimensions, and a compression level in the range [1, 2].
+
+### Online replay detection and classification algorithm
 
 To detect and classify hippocampal replay events online in a continuous stream of spiking data from an array of electrodes, we used a two-step approach. First, we decoded spatial information from the hippocampal spikes for each 10 ms of incoming data as described above. Second, we applied a simple classification strategy to the most recently received T ms of data (i.e. Nbins x 10 ms) to determine the occurrence of a target replay event. The algorithm was designed to detect targets that represent replay of a specific trajectory (e.g. maze arm) in the environment. We defined a set of criteria and marked the successful detection of a target replay event when all criteria were met:
 
 The online detection and classification approach described above acts on fixed time windows in streaming data without knowledge of the exact start and end times of any replay event (which are only accessible offline). This means that the algorithm is expected to trigger multiple detections for the same replay event. By introducing a lock-out period after each positive detection, these multiple detections can be largely avoided. The use of a lock-out period is also consistent with closed-loop experiments that limit stimulation frequency to 4 – 5 Hz to avoid adverse side effects of over-stimulation (Girardeau et al., 2009; Jadhav et al., 2012).
 
-## Implementation of online replay detection
+### Implementation of online replay detection
 
 A live network stream of sample-by-sample (32 kHz) multi-channel data from a DigiLynx acquisition system (Neuralynx, Bozeman, MT) was fed into a workstation equipped with 256 GB of RAM, 40 MB of smart cache and two 16-core CPUs (Intel Xeon(R) CPU E5-2698 V3 @ 2.30 GHz) that support hardware-based simultaneous multi-threading for a total of 64 virtual cores. The workstation ran the open source real-time processing software Falcon (Ciliberti and Kloosterman, 2017), in which we defined a data processing graph that continuously performed neural decoding and replay identification algorithms on the incoming stream of data. The processing graph was composed of seven serial stages, some of which were split into parallel pipelines (one for each tetrode, indicated by * below):
 
@@ -161,9 +468,9 @@ To monitor decoding performance online during active exploration on the maze, an
 
 To characterize the time needed by the system to report a positive detection following the availability of the corresponding source data, we defined added latency as the difference between the first sample timestamp after the Nbins of data that triggered an online detection (as logged in Falcon) and the time-stamp of the corresponding detection TTL event as recorded in Cheetah (these time-stamps have a common time base as they both originate in the Digilynx acquisition hardware).
 
-## Evaluation of online replay classification
+### Evaluation of online replay classification
 
-## Experimental procedures
+#### Experimental procedures
 
 Experimental procedures were approved by the KU Leuven (Leuven, Belgium) animal ethics committee and are in accordance with the European Council Directive, 2010/63/EU. One male Long Evans rat was chronically implanted with a custom micro-drive array (Kloosterman et al., 2009) carrying up to 20 tetrodes. Each tetrode was constructed from four twisted 12 µm diameter polyimide coated nickel-chrome wires (Sandvik, Sweden) and gold-plated to an impedance of 300 kOhm using a nanoZ device (White Matter, Seattle, WA). For the surgical procedure, the rat was anesthetized with 5% isoflurane in an induction chamber and mounted in a stereotaxic frame. Throughout the surgery, body temperature, heart and respiratory rates were monitored and the anesthesia was maintained with 1–2% isoflurane delivered via a respiratory mask. The skull was exposed after an incision in the scalp and a hole centered above hippocampal area CA1 (2.5 mm lateral from the midline and 4 mm posterior to Bregma) was drilled to the size of the tetrode bundle. The implant was fixed to the skull using bone screws and light curable dental cement. A screw above the cerebellum served as animal ground. As part of another experiment, twisted bipolar stainless steel stimulation electrodes (60 µm diameter) were implanted in the ventral hippocampal commissure. During a 3 day post-surgical recovery, pain relief was provided through a daily subcutaneous injection of 1 ml/kg Metacam (Boehringer Ingelheim, Germany, 2 mg/ml).
 
@@ -171,7 +478,7 @@ Recordings were performed relative to a reference electrode in white matter abov
 
 Prior to electrode implantation, the rat was kept on a restricted diet to reduce body weight to 85 – 90% of baseline and was trained to run back and forth on a 120 cm long linear track for food rewards at the ends. As part of an unrelated study, the rat was trained to perform a reward-place association task in a radial maze for three weeks after implantation and prior to tests of online replay identification. In three daily sessions, the rat explored a 3-arm maze for 15 – 20 min before (RUN1) and after (RUN2) a short 10 – 20 min rest period (REST). The maze was composed of three 90 cm long and 8 cm wide elevated linear tracks that were connected to a central platform (50 cm diameter) and ended in a distal 20 × 20 cm reward platform. The configuration of the maze (angles between arms and orientation in the room) were changed daily in order to enhance novelty-induced replay activity (Cheng and Frank, 2008). In RUN1, the rat could retrieve choco-rice treats at each reward platform, which were replenished every time all three arms had been visited. The rat traversed each arm at least 14 times, providing sufficient data for constructing and validating the encoding model. During REST, the rat was placed in a familiar sleep box that was located in the same room. Following REST, the rat again explored the same maze in RUN2 and was awarded a variable amount of choco-rice treats at the reward platforms (again, to enhance replay activity [Ambrose et al., 2016; Singer and Frank, 2009]). In RUN2, the rat traversed each arm at least ten times.
 
-## Construction of encoding model for online replay identification
+#### Construction of encoding model for online replay identification
 
 Before the start of REST, the spiking and position data recorded in RUN1 were used to construct the encoding model that was needed for subsequent online decoding and replay identification in REST and RUN2. A dedicated processing graph in Falcon software was executed in RUN1 to extract spike times and peak amplitudes from the multi-channel data stream, as well as to collect a video tracking data stream from Cheetah software using Neuralynx’, NET-based NetCom API and a custom C++ router application. This setup ensured that the encoding model could be built with minimal delays and without interruption of data acquisition in Neuralynx’ Cheetah software.
 
@@ -181,7 +488,7 @@ Building the encoding model entails the construction of compressed kernel densit
 
 To test the decoding performance, a cross-validation procedure was used in which run epochs (speed >8.5 cm/s) in RUN1 were equally split into a training and testing set. An encoding model was built using the training data set and evaluated on 200 ms time bins in the testing data set. Online replay detection and identification was only tested in recording sessions with a cross-validated median decoding error lower than 10 cm.
 
-## Offline detection of reference replay events
+#### Offline detection of reference replay events
 
 A set of reference replay events were defined offline for comparison to the online detected events. First, a smoothed histogram (1 ms bins, Gaussian kernel with 15 ms bandwidth) of multi-unit activity (MUA) was constructed using all recorded spikes. Slow non-burst fluctuations were removed from the MUA signal by detrending with an exponentially weighted moving average filter applied forward and backwards (span = 7.5 s (750 samples); corresponding to a half-life of 2.6 s) (Ciliberti and Kloosterman, 2017). Bursts were defined as periods in which the standard normalized detrended MUA exceeded 0.5 and had maximum of at least 2.5. Multiple bursts were merged if separated by less than 20 ms.
 
@@ -193,7 +500,7 @@ Replayed trajectories may span two arms in a multi-arm maze (Wu and Foster, 2014
 
 Full and partial burst events were classified as containing replay content if their respective measures met the following criteria: biasmax score >3 and line fit score >0.1. For long burst events with putative joint replay, if either of the partial events were classified as containing replay content and the full event had a biasmax that was lower than that of the partial events, then the event was split in half and the two partial events were treated separately. In all, we defined three categories of burst events: short and long burst events without replay content, short and long burst events with a single replay content and long burst events that were split in two with the first, second or both partial events being classified as containing replay content.
 
-## Evaluation of detection performance
+#### Evaluation of detection performance
 
 Online replay content identification events were matched to offline reference population bursts if the time of detection occurred inside the burst window. For the purpose of evaluating replay detection performance, only the first online detection in each reference burst was considered. Reference bursts with confirmed replay content were counted as either true positives (TP) or false negatives (FN), depending on whether an online detection was associated with the burst or not. TP detections were further classified as accurate (TPacc) if the online identified content matched the reference replay content (i.e. the specific maze arm).
 
@@ -205,17 +512,17 @@ To characterize the online detection and identification performance, the followi
 
 For each (first) online detection that occurred inside a reference burst, the absolute detection latency was computed as the time between the start of the reference burst and the time of the TTL event triggered by the online detection. The relative detection latency was computed as the absolute latency divided by the reference burst duration.
 
-To test the statistical significance of the Matthews correlation coefficient, we used the χ2 test with the following relation between the correlation and χ2 statistic: χ2=N×MCC2, where N is the number of samples used to compute the correlation coefficient. To assess the difference between two Matthews correlation coefficients, we applied the Fisher z-transform and compared the difference of the z-scored correlation coefficients to a normal distribution with standard errorσ=1N1-3+1N2-3.
+To test the statistical significance of the Matthews correlation coefficient, we used the $χ^{2}$ test with the following relation between the correlation and $χ^{2}$ statistic: $χ^{2}=N\timesMCC^{2}$, where N is the number of samples used to compute the correlation coefficient. To assess the difference between two Matthews correlation coefficients, we applied the Fisher z-transform and compared the difference of the z-scored correlation coefficients to a normal distribution with standard error$\sigma=\sqrt{\frac{1}{N_{1}-3}+\frac{1}{N_{2}-3}}$.
 
-## Parameter characterization
+### Parameter characterization
 
-During live tests of replay detection, the parameters of the algorithm were fixed to θmua= 2.5, θsharp = 0.5 and Nbins= 3 for online detection in REST and to θmua= 3, θsharp = 0.65 and Nbins= 3 for online detections in RUN2. Offline, the effect of varying the threshold parameters θmua and θsharp on replay detection and identification performance was evaluated for all datasets. A simulator program, written in the Python language, applied the online algorithm (including 75 ms lock-out) to the saved posterior distributions that were produced by the decoder stage in Falcon’s processing graph. For the offline simulations, the closed-loop detection latency is unavailable and the identification latency, defined as the difference between the start of the reference burst and the end of the Nbins x 10 ms time window that triggered a positive detection, is reported instead.
+During live tests of replay detection, the parameters of the algorithm were fixed to $\theta_{mua}$= 2.5, $\theta_{sharp}$ = 0.5 and Nbins= 3 for online detection in REST and to $\theta_{mua}$= 3, $\theta_{sharp}$ = 0.65 and Nbins= 3 for online detections in RUN2. Offline, the effect of varying the threshold parameters $\theta_{mua}$ and $\theta_{sharp}$ on replay detection and identification performance was evaluated for all datasets. A simulator program, written in the Python language, applied the online algorithm (including 75 ms lock-out) to the saved posterior distributions that were produced by the decoder stage in Falcon’s processing graph. For the offline simulations, the closed-loop detection latency is unavailable and the identification latency, defined as the difference between the start of the reference burst and the end of the Nbins x 10 ms time window that triggered a positive detection, is reported instead.
 
-## Testing the effect of data availability
+### Testing the effect of data availability
 
-To explore the effect of data availability on online replay content detection, subsets of tetrodes were repeatedly sampled from one dataset (dataset #2). For each sample, online detection was simulated offline with playback of spiking data (previously recorded with Cheetah software). For each size of the tetrode subset (minimum 1 and maximum 14), we sampled either all possible combinations or 50 randomly selected combinations (whichever was smaller). For all subsampled tetrode sets, replay detection performance was assessed as before with θmua and θsharp parameters optimized separately each time. In all simulations, we used the reference content for performance evaluation that was computed on the original full dataset as described above. Reported detection latencies exclude the contribution of the online added computational latency.
+To explore the effect of data availability on online replay content detection, subsets of tetrodes were repeatedly sampled from one dataset (dataset #2). For each sample, online detection was simulated offline with playback of spiking data (previously recorded with Cheetah software). For each size of the tetrode subset (minimum 1 and maximum 14), we sampled either all possible combinations or 50 randomly selected combinations (whichever was smaller). For all subsampled tetrode sets, replay detection performance was assessed as before with $\theta_{mua}$ and $\theta_{sharp}$ parameters optimized separately each time. In all simulations, we used the reference content for performance evaluation that was computed on the original full dataset as described above. Reported detection latencies exclude the contribution of the online added computational latency.
 
-## Stress tests of closed-loop system
+### Stress tests of closed-loop system
 
 Stress tests were aimed at determining the added latency of the online decoding system in conditions with high spike rates (from 0 to 1000 spikes/s per tetrode) and high tetrode/channel counts (16-tetrode/64-channel, 24-tetrode/96-channel and 32-tetrode/128-channel).
 
@@ -224,3 +531,93 @@ An analog square wave signal was used as artificial spike generator and fed into
 Falcon software ran a processing graph that was very similar to that used for live experiments (Figure 1—figure supplement 1a), with a few modifications. First, file serializer nodes were removed and a separate dispatcher node for each group of 32 channels was used (to minimize chances of missed packets). Second, to simulate high tetrode numbers, the parallel per-tetrode processing pipelines (including encoding models built from the original data) were duplicated to test up to 32 tetrodes. Third, to replicate the computations performed during live tests, the neural decoding nodes used pre-recorded spike amplitudes instead of the amplitudes of the incoming artificial spikes. Finally, the replay content classifier node was programmed to generate a closed-loop feedback event every 100 ms (10 bins) for 5 min (for a total of 3000 test latencies). Added latency was computed as the difference between the recorded time-stamp of the closed-loop feedback event and the time-stamp that marked the end of a 100 ms test period.
 
 Stress tests were performed on the same 32-core workstation used for live tests (see 'Implementation of online replay detection') and also on a 4-core machine (single CPU, Intel Core i7-4790 @ 3.60 GHz, 16 GB of RAM and 8 MB of smart cache). Both machines used Hyper-Threading and ran a 64-bit Linux Mint 18 (kernel version: 4.4.0_2.1 generic) operating system.
+
+**Table 4.**
+ Optimal parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Epoch</th>
+      <th>Live θmua</th>
+      <th>Live θsharp</th>
+      <th>Optimal θmua</th>
+      <th>Optimal θsharp</th>
+      <th>Optimal correlation</th>
+      <th>ΔCorrelation live test*</th>
+      <th>Out of burst rate[min−1]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>REST</td>
+      <td>2.50</td>
+      <td>0.50</td>
+      <td>4.00</td>
+      <td>0.80</td>
+      <td>0.76</td>
+      <td>+0.27***</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RUN2</td>
+      <td>3.00</td>
+      <td>0.65</td>
+      <td>0.00</td>
+      <td>0.65</td>
+      <td>0.31</td>
+      <td>+0.03</td>
+      <td>28.57</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>REST</td>
+      <td>2.50</td>
+      <td>0.50</td>
+      <td>4.75</td>
+      <td>0.65</td>
+      <td>0.52</td>
+      <td>+0.12**</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RUN2</td>
+      <td>3.00</td>
+      <td>0.65</td>
+      <td>1.75</td>
+      <td>0.65</td>
+      <td>0.53</td>
+      <td>+0.05</td>
+      <td>5.68</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>REST</td>
+      <td>2.50</td>
+      <td>0.50</td>
+      <td>5.75</td>
+      <td>0.60</td>
+      <td>0.47</td>
+      <td>+0.13**</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RUN2</td>
+      <td>3.00</td>
+      <td>0.65</td>
+      <td>1.00</td>
+      <td>0.65</td>
+      <td>0.33</td>
+      <td>+0.05</td>
+      <td>30.81</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001_

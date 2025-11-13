@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.16070.001 What mechanisms support our ability to estimate durations on the order of minutes? Behavioral studies in humans have shown that changes in contextual features lead to overestimation of past durations. Based on evidence that the medial temporal lobes and prefrontal cortex represent contextual features, we related the degree of fMRI pattern change in these regions with people’s subsequent duration estimates. After listening to a radio story in the scanner, participants were asked how much time had elapsed between pairs of clips from the story. Our ROI analyses found that duration estimates were correlated with the neural pattern distance between two clips at encoding in the right entorhinal cortex. Moreover, whole-brain searchlight analyses revealed a cluster spanning the right anterior temporal lobe. Our findings provide convergent support for the hypothesis that retrospective time judgments are driven by 'drift' in contextual representations supported by these regions. DOI: http://dx.doi.org/10.7554/eLife.16070.001
+What mechanisms support our ability to estimate durations on the order of minutes? Behavioral studies in humans have shown that changes in contextual features lead to overestimation of past durations. Based on evidence that the medial temporal lobes and prefrontal cortex represent contextual features, we related the degree of fMRI pattern change in these regions with people’s subsequent duration estimates. After listening to a radio story in the scanner, participants were asked how much time had elapsed between pairs of clips from the story. Our ROI analyses found that duration estimates were correlated with the neural pattern distance between two clips at encoding in the right entorhinal cortex. Moreover, whole-brain searchlight analyses revealed a cluster spanning the right anterior temporal lobe. Our findings provide convergent support for the hypothesis that retrospective time judgments are driven by 'drift' in contextual representations supported by these regions.
 
 ## Introduction
 
@@ -47,27 +47,27 @@ Participants were scanned while they listened to a 25-minute science fiction rad
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
-## Participants were sensitive to the duration of story intervals
+#### Participants were sensitive to the duration of story intervals
+
+Figure 1 shows the experimental design, which consisted of an fMRI session, followed immediately by a behavioral session. After listening to a 25-min radio story in the scanner, participants were asked how much time had passed between 43 pairs of clips from the story. In actuality, 24 of the clip pairs had been presented 2 minutes apart in the story, while 19 of the clip pairs had been presented 6 minutes apart in the story (participants were not informed of this). Participants were able to estimate the duration of experienced minutes-long intervals far above chance, albeit with substantial intra- and inter-individual variability. On average, across participants, the 6-min intervals (M=5.70 min, SD=3.06) were judged to be significantly longer than the 2-min intervals (M=3.69 min, SD=1.96), t(17) = 5.20, p<10-4 (see Figure 2A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig1-v3.jpg)
 
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.16070.004
-
 ![Figure 2.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig2-v3.jpg)
 
-**Figure 2.:** A) and confident intervals (B) as a function of their actual duration.Each blue circle represents the mean duration estimate for an individual participant within a given interval duration (2 or 6 min). The blue bar heights represent the global means for 2 and 6-min intervals across intervals and participants.DOI: http://dx.doi.org/10.7554/eLife.16070.00510.7554/eLife.16070.006Figure 2—source data 1.To generate the plot in Figure 2, duration estimates for an objective duration (2 or 6 min) were first averaged within participants, for all intervals (Figure 2A) and for confident intervals only (Figure 2B). The global means (represented by the heights of the blue bars) were then obtained by averaging again across participants. Confidence ratings in this table are binary: 1 reflects a high-confidence interval and 0 reflects a low-confidence interval (see Removing low-confidence intervals in Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.16070.006
+**Figure 2.:** Each blue circle represents the mean duration estimate for an individual participant within a given interval duration (2 or 6 min). The blue bar heights represent the global means for 2 and 6-min intervals across intervals and participants.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** Between-group correlations were obtained by splitting the participants randomly into two equal groups and averaging the duration estimates for each interval (across participants) within a group. Each dot in the scatterplot represents a particular temporal interval; its x and y coordinates indicate the mean estimated duration of that interval for Group 1 and Group 2 participants, respectively. We repeated this procedure 1000 times to ensure that we sampled a variety of group splits. The average correlation between the two groups was 0.64 (SD=0.09) for 2-min intervals and 0.54 (SD=0.15) for 6-min intervals. The above plot shows the grouping that was most representative of the mean.DOI: http://dx.doi.org/10.7554/eLife.16070.007
+**Figure 2—figure supplement 1.:** Between-group correlations were obtained by splitting the participants randomly into two equal groups and averaging the duration estimates for each interval (across participants) within a group. Each dot in the scatterplot represents a particular temporal interval; its x and y coordinates indicate the mean estimated duration of that interval for Group 1 and Group 2 participants, respectively. We repeated this procedure 1000 times to ensure that we sampled a variety of group splits. The average correlation between the two groups was 0.64 (SD=0.09) for 2-min intervals and 0.54 (SD=0.15) for 6-min intervals. The above plot shows the grouping that was most representative of the mean.
 
 As described in the Materials and methods (see Removing low-confidence intervals), participants also provided confidence ratings reflecting their certainty about each clip’s place in the story. Based on this measure, we grouped each participant’s duration estimates into high-confidence and low-confidence intervals. To verify that participants were better at distinguishing 6-min intervals from 2-min intervals when they were confident, we calculated the difference between the mean duration estimates for 6-min intervals and the mean duration estimates for 2-min intervals for every participant. The difference score was significantly higher for high-confidence intervals (M=2.43, SD=1.82) than for all intervals (M=2.01, SD=1.64), t(17)=2.33, p=0.0324. Thus, participants were significantly more accurate at estimating an interval’s duration when they confidently remembered the temporal position of both clips delimiting that interval in the story (see Figure 2B).
 
 For a given interval duration, some intervals were consistently judged to be longer than other intervals across participants, although the actual amount of elapsed time was held constant. To test the reliability of duration estimates across participants, we split the subjects randomly into two groups, averaged the duration estimates within each group, and correlated the two averages with each other. We repeated this procedure 1000 times to ensure that we sampled a variety of group splits. The average correlation between the two groups was 0.64 (SD=0.09) for 2-min intervals and 0.54 (SD=0.15) for 6-min intervals (see Figure 2—figure supplement 1). This analysis suggests that features of the story made some intervals appear consistently shorter and other intervals appear consistently longer across participants.
 
-## Duration estimates are influenced by memory of the story
+#### Duration estimates are influenced by memory of the story
 
 We found that participants estimated six-minute intervals to be significantly longer than two-minute intervals (Figure 2), and that some intervals in the story tended to be systematically over-estimated by participants (Figure 2—figure supplement 1). However, it is possible that participants could judge the temporal distance between two clips purely based on the similarity between them (e.g. Are the same characters speaking? Is the background music the same? Is the topic of conversation similar?).
 
@@ -77,21 +77,21 @@ We found that naïve participants estimated 6-min intervals (M=6.21 min, SD=1.
 
 We hypothesized that both our original participants and the naïve participants would use consistent strategies to estimate the temporal distance between two clips, but that these strategies would differ across groups. If this is the case, duration estimates should be more correlated across participants within groups than across participants between groups. The correlation in duration estimates across participants within a group (see Materials and methods) was as strong for naïve participants (M=0.43, SD=0.18, 95% CI [0.40, 0.56]) as for our original participants (M=0.43, SD=0.25, 95% CI=[0.37, 0.58]), suggesting that both groups used a consistent strategy to estimate the distance between two clips. When we correlated duration estimates from our original group of participants with those of our naïve participants, we found that the between-group correlations (M=0.18, SD=0.22, 95% CI=[0.04, 0.28]) were significantly above 0, suggesting that a component of the original duration estimates was influenced by the similarity in content between clips. However, the between-group correlations were significantly lower than the within-group correlations (p<0.0001, as assessed by a permutation test described in the Materials and methods). In other words, there is a reliable component of our original participants’ behavior that cannot be captured by accounting for the perceptual and semantic similarity between clips. In summary, having memory of the story induced a qualitatively different pattern of behavior and produced significantly more accurate duration estimates.
 
-## Correlation between number of event boundaries and duration estimates
+#### Correlation between number of event boundaries and duration estimates
 
 To gain additional evidence that duration estimates were related to contextual change, we looked at the correlation between estimated duration and the number of event boundaries in the interval between the clips. The number of intervening event boundaries can be viewed as a proxy for contextual change, insofar as event boundaries often encompass changes in scene, characters and conversation topic (Kurby and Zacks, 2008; Zacks et al., 2009). As reviewed in the Introduction, numerous studies have found a relationship between changes in contextual features during an interval and duration estimates for that interval.
 
-A separate group of participants (n=9) listened to the story and was asked to press a button every time they felt an event boundary was occurring. These data were then averaged across participants to obtain the mean number of event boundaries inside each two-minute interval. We found that the mean number of boundaries in an interval was significantly correlated with the mean duration estimates from our original experiment (
+A separate group of participants (n=9) listened to the story and was asked to press a button every time they felt an event boundary was occurring. These data were then averaged across participants to obtain the mean number of event boundaries inside each two-minute interval. We found that the mean number of boundaries in an interval was significantly correlated with the mean duration estimates from our original experiment (r = 0.49, 95% CI [0.27, 0.57]; Figure 3). This suggests that our participants’ retrospective duration estimates were influenced by the number of contextual changes that had occurred during an interval.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig3-v3.jpg)
 
-**Figure 3.:** The number of event boundaries in an interval predicted retrospective duration estimates in our original experiment (A), but did not significantly predict duration estimates of naïve participants (B) who had never heard the story. This suggests that the number of contextual changes between two clips influenced temporal distance judgments significantly more when the content of the story between the two clips could be recalled.DOI: http://dx.doi.org/10.7554/eLife.16070.00810.7554/eLife.16070.009Figure 3—source data 1.Intervals appear in chronological order and the 'position in story' indicates the middle time point between the two clips delimiting the interval. Mean duration estimates were obtained by averaging the duration estimates for a specific interval across participants. The mean number of event boundaries in an interval was obtained by averaging data from a separate group of participants who pressed the spacebar every time a boundary was occurring.DOI: http://dx.doi.org/10.7554/eLife.16070.00910.7554/eLife.16070.010Figure 3—source data 2.As above, Intervals appear in chronological order and the 'position in story' indicates the middle time point between the two clips delimiting the interval.DOI: http://dx.doi.org/10.7554/eLife.16070.010
+**Figure 3.:** The number of event boundaries in an interval predicted retrospective duration estimates in our original experiment (A), but did not significantly predict duration estimates of naïve participants (B) who had never heard the story. This suggests that the number of contextual changes between two clips influenced temporal distance judgments significantly more when the content of the story between the two clips could be recalled.
 
 However, it is important to note that the number of event boundaries between two clips also influences the perceptual and semantic similarity between them (e.g., clips from the same scene might sound more similar than clips from different scenes). Thus, our participants’ duration estimates could correlate with the number of event boundaries, even if they were basing their estimates purely on the perceptual similarity between clips. To explore this possibility, we tested whether the number of event boundaries would correlate with duration estimates from naïve participants, who could only judge temporal distance based on the similarity between clips, given that they had never heard the story.
 
-Importantly, we found that the number of event boundaries in an interval did not significantly correlate with duration estimates of naïve participants (r=0.09, 95% CI [−0.05, 0.21]; Figure 3). Of course, we cannot definitively prove the null hypothesis that naïve duration estimates do not correlate with the number of event boundaries. However, the correlation between the number of boundaries and duration estimates was significantly higher for our original participants than for naïve participants (rdiff=0.40, 95% CI [0.15 0.56]). In other words, duration estimates from participants who remembered the story were significantly more correlated with the number of contextual changes between two clips than duration estimates from participants who were judging temporal distance based merely on the similarity between the two clips. This suggests that the number of event boundaries carries information about temporal context that is not contained within the clips alone, and that our original participants’ estimates were influenced by their memory of this contextual information.
+Importantly, we found that the number of event boundaries in an interval did not significantly correlate with duration estimates of naïve participants (r=0.09, 95% CI [−0.05, 0.21]; Figure 3). Of course, we cannot definitively prove the null hypothesis that naïve duration estimates do not correlate with the number of event boundaries. However, the correlation between the number of boundaries and duration estimates was significantly higher for our original participants than for naïve participants ($r_{diff}$=0.40, 95% CI [0.15 0.56]). In other words, duration estimates from participants who remembered the story were significantly more correlated with the number of contextual changes between two clips than duration estimates from participants who were judging temporal distance based merely on the similarity between the two clips. This suggests that the number of event boundaries carries information about temporal context that is not contained within the clips alone, and that our original participants’ estimates were influenced by their memory of this contextual information.
 
-## fMRI results
+### fMRI results
 
 We tested whether BOLD pattern change between two clips correlated with temporal distance estimates, using both ROI and whole-brain searchlight analyses. Each type of analysis was performed both within-participants across intervals and within-intervals across participants.
 
@@ -101,37 +101,37 @@ Next, we fit a mixed-effects model for each ROI (see Mixed-Effects Model Account
 
 Finally, we discuss the brain regions that showed significant effects across all analyses (see Comparing Results from ROI and Searchlight Analyses).
 
-As noted in the Materials and methods, the ROI and searchlight analyses were conducted only on high-confidence two-minute intervals. Six-minute intervals were excluded from the fMRI analysis, since we could not successfully dissociate neural pattern change at this timescale from low-frequency scanner noise (see
+As noted in the Materials and methods, the ROI and searchlight analyses were conducted only on high-confidence two-minute intervals. Six-minute intervals were excluded from the fMRI analysis, since we could not successfully dissociate neural pattern change at this timescale from low-frequency scanner noise (see Methodological challenges with analyzing pattern distance over long time scales in the Materials and methods).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig4-v3.jpg)
 
-**Figure 4.:** For each ROI in each participant, the pattern distance between each pair of clips at encoding was correlated with the participant’s retrospective duration estimate (A–B). The top panel (A) shows two example intervals. The neural distance (1-Pearson’s r) between clips 2 and 4 (second interval) is greater than the neural distance between clips 1 and 3 (first interval), as is the subjective duration estimate. (B) shows the correlation between neural distance and duration estimates in a hypothetical region and participant. (C) We used a permutation test to generate 10,000 surrogate pattern distance vectors (see Figure 4—figure supplement 1), which we then used to obtain a distribution of null correlations between neural distances and duration estimates. For each ROI in each participant, we calculated the z-scored correlation value, which reflects the strength of the empirical correlation relative to the distribution of null correlations. For each ROI, we performed a random effects t-test to assess whether the z-score was reliably positive across participants. P-values from this t-test were then subjected to multiple comparisons correction using False Discovery Rate (FDR).DOI: http://dx.doi.org/10.7554/eLife.16070.011
+**Figure 4.:** For each ROI in each participant, the pattern distance between each pair of clips at encoding was correlated with the participant’s retrospective duration estimate (A–B). The top panel (A) shows two example intervals. The neural distance (1-Pearson’s r) between clips 2 and 4 (second interval) is greater than the neural distance between clips 1 and 3 (first interval), as is the subjective duration estimate. (B) shows the correlation between neural distance and duration estimates in a hypothetical region and participant. (C) We used a permutation test to generate 10,000 surrogate pattern distance vectors (see Figure 4—figure supplement 1), which we then used to obtain a distribution of null correlations between neural distances and duration estimates. For each ROI in each participant, we calculated the z-scored correlation value, which reflects the strength of the empirical correlation relative to the distribution of null correlations. For each ROI, we performed a random effects t-test to assess whether the z-score was reliably positive across participants. P-values from this t-test were then subjected to multiple comparisons correction using False Discovery Rate (FDR).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig4-figsupp1-v3.jpg)
 
-**Figure 4—figure supplement 1.:** This procedure is described in the Materials and methods (see Statistical analysis of correlations between pattern change and behavior). (A,B) The time course of pattern change is constructed using the distance (1 - Pearson’s r) between each pattern and the pattern 80 TRs (2 min) after it. As in the main analysis, we averaged over the 5 consecutive TRs surrounding each pattern (for simplicity, this is not shown in the above figure). (C) 10,000 surrogate pattern distance time courses are generated by randomizing the phases of the original time course, thus conserving the amplitude of each frequency component. (D) Surrogate pattern distances are correlated with time estimates, generating 10,000 null correlations. A Z-value for each ROI / searchlight in each participant is computed to compare the strength of the empirical correlation with the distribution of null correlations. The p-value for a given ROI is obtained using a right-tailed t-test on the Z-values across participants.DOI: http://dx.doi.org/10.7554/eLife.16070.012
+**Figure 4—figure supplement 1.:** This procedure is described in the Materials and methods (see Statistical analysis of correlations between pattern change and behavior). (A,B) The time course of pattern change is constructed using the distance (1 - Pearson’s r) between each pattern and the pattern 80 TRs (2 min) after it. As in the main analysis, we averaged over the 5 consecutive TRs surrounding each pattern (for simplicity, this is not shown in the above figure). (C) 10,000 surrogate pattern distance time courses are generated by randomizing the phases of the original time course, thus conserving the amplitude of each frequency component. (D) Surrogate pattern distances are correlated with time estimates, generating 10,000 null correlations. A Z-value for each ROI / searchlight in each participant is computed to compare the strength of the empirical correlation with the distribution of null correlations. The p-value for a given ROI is obtained using a right-tailed t-test on the Z-values across participants.
 
-## Anatomical ROI analyses
+#### Anatomical ROI analyses
 
 We first tested whether pattern change in regions suggested by the literature to be important for representing temporal context (see ROI Selection) correlated with retrospective duration estimates. Anatomical ROIs were derived from FreeSurfer cortical parcellation (Desikan et al., 2006) and from a probabilistic MTL atlas (Hindy and Turk-Browne, 2015).
 
-## Within-participant correlation between pattern change and duration estimates
+##### Within-participant correlation between pattern change and duration estimates
 
-The within-participant analysis procedure is outlined in
+The within-participant analysis procedure is outlined in Figure 4. We calculated the correlation between neural pattern distance and duration estimates within participants (Figure 4A) in each of the 32 ROIs shown in Figure 5. To assess the likelihood of obtaining a correlation of that magnitude by chance, we used a phase randomization procedure (described in Materials and methods) to obtain 10,000 null correlations for each ROI in every participant. This enabled us to calculate a Z-value for every ROI in every participant, which reflects the strength of the actual correlation between pattern distance and duration estimates relative to the distribution of null correlations (Figure 4C). Here we report the regions whose Z-values were consistently positive across participants, corrected for multiple comparisons using False Discovery Rate (Benjamini et al., 2006).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig5-v3.jpg)
 
-**Figure 5.:** a priori ROIs.Z-values were obtained from the phase randomization procedure and reflect the strength of the empirical correlation relative to the distribution of null correlations. Error bars represent standard errors of the mean. The blue dots over the right entorhinal cortex and right pars orbitalis indicate that these ROIs survived FDR correction at q<0.05.DOI: http://dx.doi.org/10.7554/eLife.16070.01310.7554/eLife.16070.014Figure 5—source data 1.r values for all participants and grey matter regions derived from FreeSurfer segmentation and the probabilistic MTL atlas.Excel sheet 1 contains the Z-values for each participant and region, reflecting the strength of the empirical correlation between pattern distance and duration estimates relative to the distribution of null correlations. NaNs signify that a participant had fewer than 10 voxels in a given brain region, most likely due to signal dropout (this was only an issue for the frontal pole). The bar plots in Figure 5 were generated by plotting the mean Z-value (and standard error of the mean) across participants for each of the a priori ROIs. Excel sheet 2: T-values were obtained from a right-tailed t-test verifying whether the Z-values for a region were reliably positive across participants. The p-values from this t-test were then subjected to multiple comparisons correction using FDR. The three regions in bold survived whole-brain FDR correction at q<0.1 and are shown in Figure 5—figure supplement 1. Excel sheet 3 contains the Fisher-transformed Pearson’s r values for each participant and region.DOI: http://dx.doi.org/10.7554/eLife.16070.014
+**Figure 5.:** Z-values were obtained from the phase randomization procedure and reflect the strength of the empirical correlation relative to the distribution of null correlations. Error bars represent standard errors of the mean. The blue dots over the right entorhinal cortex and right pars orbitalis indicate that these ROIs survived FDR correction at q<0.05.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** In red are regions with q<0.1: the right entorhinal cortex, right pars orbitalis and left caudal ACC. This analysis was performed in native space on participant-specific ROIs. ROIs were transformed from native functional space to MNI space for display purposes.DOI: http://dx.doi.org/10.7554/eLife.16070.015
+**Figure 5—figure supplement 1.:** In red are regions with q<0.1: the right entorhinal cortex, right pars orbitalis and left caudal ACC. This analysis was performed in native space on participant-specific ROIs. ROIs were transformed from native functional space to MNI space for display purposes.
 
 Out of the regions selected a priori, the right entorhinal cortex and right pars orbitalis showed a significant positive correlation between pattern change and duration estimates for high-confidence 2-minute intervals (q<0.05). Figure 5 shows the mean Z-values across participants for all a priori ROIs (16 in each hemisphere), including lateral prefrontal regions (top panel A), medial temporal lobe regions, insula, putamen, and inferior parietal cortex (bottom panel B). While a large number of these regions had Z-values that were positive across participants (e.g., left hippocampus, left entorhinal cortex, right perirhinal cortex, right amygdala, bilateral insula, and right caudal middle frontal cortex, p<0.05 uncorrected), we report only those that survived FDR correction.
 
 As part of an exploratory search, we also performed this analysis on the other brain regions derived from FreeSurfer cortical parcellation. This included the 16 ROIs mentioned above, in addition to regions in the occipital lobe, parietal lobe, medial prefrontal cortex, lateral temporal lobe, basal ganglia, thalamus and brainstem (the complete list of regions can be found in Figure 5—source data 1). Out of the 84 regions tested (42 in each hemisphere), the right entorhinal cortex, right pars orbitalis, and left caudal anterior cingulate cortex (ACC) showed significant positive correlations between pattern change and duration estimates (q<0.1). This suggests that the right entorhinal cortex and right pars orbitalis, which were part of our list of a priori ROIs, contained effects that were apparent even after whole-brain correction, and reveals an additional effect in the left caudal ACC that we had not anticipated. Figure 5—figure supplement 1 displays the locations of these three regions in MNI space.
 
-## Within-interval correlation between pattern change and duration estimates
+##### Within-interval correlation between pattern change and duration estimates
 
 Above, in the within-participants analysis, we found that the neural pattern distance between two clips at encoding was correlated with retrospective duration judgments in the right entorhinal cortex, right pars orbitalis and left caudal ACC. However, in the Behavioral results, we found that the perceptual and semantic similarity between two clips could explain some of the variance in subjective duration across intervals, even though it could not explain all the variance. Thus, it is possible that neural pattern change in the regions we found correlates with the component of duration estimates that is driven by perceptual and semantic content, rather than the component that is driven by abstract, slowly varying contextual features.
 
@@ -139,43 +139,43 @@ To rule out this concern, we performed a within-interval (across participants) v
 
 As described in the Materials and methods, a permutation test was used to assess the statistical significance of each correlation. Duration estimates were scrambled across participants 10,000 times to obtain a distribution of null correlations for every interval in every ROI. This enabled us to calculate a Z-value, which reflects the strength of the actual correlation between pattern distance and duration estimates relative to the distribution of null correlations. Finally, a right-tailed t-test was performed to assess whether the Z-values for a region were reliably above 0 across intervals. The p-values from this t-test were subjected to multiple comparisons correction using FDR.
 
-Out of the regions selected
+Out of the regions selected a priori, the right entorhinal cortex, right amygdala, and right insula showed a significant positive correlation between pattern change and duration estimates for high-confidence 2-minute intervals (q<0.05). Figure 6 shows the mean Z-values across intervals for all a priori ROIs (16 in each hemisphere).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig6-v3.jpg)
 
-**Figure 6.:** a priori ROIs.Error bars represent standard errors of the mean. Correlations between pattern change and duration estimates were performed across participants, separately for each interval.DOI: http://dx.doi.org/10.7554/eLife.16070.01610.7554/eLife.16070.017Figure 6—source data 1.r values for all intervals and regions in the FreeSurfer and MTL atlases.NaNs for a given interval and region indicate that there were not enough participants who rated that interval as confident and who had at least 10 voxels in the specific region to calculate a correlation (this was only an issue for the frontal pole). The bar plots in Figure 6 were generated by plotting the mean Z-value (and standard error of the mean) across intervals for each of the a priori ROIs. The t-values were obtained from a right-tailed t-test on the Z-values for each region. The p-values from this t-test were then subjected to multiple comparisons correction using FDR.DOI: http://dx.doi.org/10.7554/eLife.16070.017
+**Figure 6.:** Error bars represent standard errors of the mean. Correlations between pattern change and duration estimates were performed across participants, separately for each interval.
 
 Extending this analysis to the whole brain (same anatomical masks as in Figure 5—source data 1) revealed only the right entorhinal cortex (q<0.05), suggesting that the effect in this region was strong enough to survive whole-brain correction.
 
 Importantly, the right entorhinal cortex is the only region with significant effects in both the within-interval analysis (Cohen’s d = 0.83) and the within-participant analysis (Cohen’s d = 0.79). If neural pattern distance between two clips in entorhinal cortex were driven solely by changes in clip content, we would have expected the correlation with duration estimates to be larger for the within-participant analysis (where story content differed across intervals) than for the within-interval analysis (where story content is held constant). The fact that the effect sizes are similar shows that perceptual or semantic differences in content between the two clips are not the main factor driving the correlation between duration estimates and neural pattern change in this region.
 
-## Mixed-effects model accounting for naïve duration estimates
+##### Mixed-effects model accounting for naïve duration estimates
 
 We analyzed our data using a hierarchical linear regression model (Gelman and Hill, 2006; see Materials and methods for additional detail). This analysis estimates population-level effects of interest, while controlling for the possibility of individual variability between subjects and between clip pairs. In other words, this approach leverages the power of the within-interval analysis to control for the objective content similarity between two clips, while also taking into account variability in the effect across participants. In addition, we included the mean duration estimates from our naïve participants as a covariate in the model (see Behavioral results). Since naïve participants had estimated the temporal distance between each pair of clips without hearing the story, this covariate is a further control for the inherent guessability of the temporal distance between two clips. Both controls strengthen our interpretation that the remaining effect of neural pattern distance on duration estimates is driven by the contextual dissimilarity (rather than perceptual or content dissimilarity) between two clips.
 
 For each anatomical region derived from FreeSurfer and MTL segmentation (42 in each hemisphere), we fit a model where duration estimates were predicted by naïve duration estimates as well as the neural pattern distance in that region (see Materials and methods for the complete formula). We then computed 95% confidence intervals of the fixed-effects parameter estimates using the asymptotic Gaussian approximation (see Materials and methods).
 
-The fixed effect of naïve estimates was positive in all models and its confidence intervals did not include zero in 80% of the models. This reproduced our finding that naïve duration estimates are correlated with the original duration estimates (see
+The fixed effect of naïve estimates was positive in all models and its confidence intervals did not include zero in 80% of the models. This reproduced our finding that naïve duration estimates are correlated with the original duration estimates (see Behavioral results), suggesting that interval durations are partially guessable based on the similarity between clips. However, even under this control, the fixed effect of neural pattern distance in left caudal ACC and right entorhinal cortex exhibited confidence intervals that did not include zero (Figure 7). Figure 7—source data 1 contains the parameter estimates and 95% confidence intervals for all 84 anatomical regions.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig7-v3.jpg)
 
-**Figure 7.:** We also included the right amygdala and right superior temporal cortex in the figure, because their confidence intervals did not include 0 when a slightly less conservative fitting procedure was used (see Figure 7—source data 1 and Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.16070.01810.7554/eLife.16070.019Figure 7—source data 1.Parameter estimates are provided for four variants of the mixed-effects ROI analysis: 1) full model (with naïve estimates) using the Chung et al., 2015 blme fitting procedure and Box-Cox transform of duration estimates (see Materials and methods), 2) model without naïve estimates, using the Chung et al., 2015 blme fitting procedure and Box-Cox transform of duration estimates, 3) full model (with naïve estimates) using the Bates et al., 2015 lme4 fitting procedure and Box-Cox transform of duration estimates, and 4) full model (with naïve estimates) using the Chung et al., 2015 blme fitting procedure, but without any transform of duration estimates. The first analysis variant, which is the most conservative, is the one reported in the Results and plotted in Figure 7.DOI: http://dx.doi.org/10.7554/eLife.16070.019
+**Figure 7.:** We also included the right amygdala and right superior temporal cortex in the figure, because their confidence intervals did not include 0 when a slightly less conservative fitting procedure was used (see Figure 7—source data 1 and Materials and methods).
 
 Importantly, including the naïve duration estimates as a covariate in the model did not significantly weaken the relationship between neural pattern distance and duration estimates in these regions (though the effects were slightly lower numerically). Figure 7 shows in green the 95% confidence intervals for the same ROIs when naïve duration estimates are excluded from the model.
 
-## Whole-brain searchlights
+#### Whole-brain searchlights
 
 As with the Anatomical ROI analyses, both within-participant and within-interval analyses were performed for the Whole-Brain Searchlight analyses, in order to rule out the possibility that our effects were driven either by participant or interval random effects.
 
-## Within-participant whole-brain searchlight
+##### Within-participant whole-brain searchlight
 
-We ran a cubic searchlight with 3x3x3 (27) voxels (972 mm
+We ran a cubic searchlight with 3x3x3 (27) voxels (972 mm3) through the entire brain and tested for a correlation between pattern change and duration estimates in each searchlight. The same phase-randomization procedure that was used for the within-participant anatomical ROI analysis was also applied here; this procedure generates Z-values that reflect how likely we are to get this strong of a correlation by chance, given the frequency spectrum of the fMRI data. When excluding low-confidence intervals, we found a significant cluster in the right anterior temporal lobe (p=0.034, FWE-corrected; Center of Gravity MNI coordinates (x, y, z) in mm: [45.6, −5.53, −21.7]; cluster size=572 voxels in 3 mm MNI space). Small parts of the cluster also extended to the right posterior insula and right putamen (see Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig8-v3.jpg)
 
-**Figure 8.:** Voxels in orange represent centers of searchlights that exhibited significant correlations between pattern change and duration estimates within participants across intervals (p<0.05, FWE). The significant cluster had peak MNI coordinates (in mm): x = 45.6, y = -5.53, z = -21.7.DOI: http://dx.doi.org/10.7554/eLife.16070.020
+**Figure 8.:** Voxels in orange represent centers of searchlights that exhibited significant correlations between pattern change and duration estimates within participants across intervals (p<0.05, FWE). The significant cluster had peak MNI coordinates (in mm): x = 45.6, y = -5.53, z = -21.7.
 
-## Within-interval Whole-brain searchlight
+##### Within-interval Whole-brain searchlight
 
 We also ran a searchlight version of the within-interval analysis. In order to match searchlights across participants, functional data were transformed to 3 mm MNI space. Since this transformation approximately doubles the number of brain voxels, we ran cubic searchlights of radius 2 with 5x5x5 (125) voxels through the entire brain.
 
@@ -183,23 +183,23 @@ As with the ROI analysis, this analysis was performed on high-confidence duratio
 
 To assess the significance of each correlation score, we used the same permutation test as for the ROI analysis. Duration estimates were scrambled across participants 10,000 times to obtain a distribution of null correlations, and Z-values were calculated for each interval. We thus obtained a brain map of Z-values for each of the 24 intervals, and FSL’s randomise function was used to control the family-wise error rate, as above.
 
-Similarly to the within-participant searchlight, we found a significant cluster in the right anterior temporal lobe (
+Similarly to the within-participant searchlight, we found a significant cluster in the right anterior temporal lobe (p=0.019, FWE-corrected; Center of Gravity MNI coordinates (x, y, z) in mm: [32.1, −10.2, −18.7]; cluster size=535 voxels in 3 mm MNI space). The cluster extended from the right parahippocampal gyrus, hippocampus and amygdala medially to the middle temporal gyrus and temporal pole laterally (see Figure 9).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig9-v3.jpg)
 
-**Figure 9.:** Voxels in orange represent centers of searchlights that exhibited significant correlations between pattern change and duration estimates across participants (p<0.05, FWE). The significant cluster had center of gravity MNI coordinates (in mm): x = 32.1, y = −10.2, z = −18.7.DOI: http://dx.doi.org/10.7554/eLife.16070.021
+**Figure 9.:** Voxels in orange represent centers of searchlights that exhibited significant correlations between pattern change and duration estimates across participants (p<0.05, FWE). The significant cluster had center of gravity MNI coordinates (in mm): x = 32.1, y = −10.2, z = −18.7.
 
-## Comparing results from ROI and searchlight analyses
+#### Comparing results from ROI and searchlight analyses
 
-The within-participant ROI analysis revealed significant effects in the right entorhinal cortex, right pars orbitalis and left caudal ACC. The within-interval ROI analysis revealed significant effects in the right entorhinal cortex, right amygdala and right insula. The mixed-effects ROI analysis showed that the right entorhinal cortex and left caudal ACC had confidence intervals above 0, even when naïve duration estimates were accounted for. Both the within-participant and within-interval searchlights revealed significant clusters in the right anterior temporal lobe.
+The within-participant ROI analysis revealed significant effects in the right entorhinal cortex, right pars orbitalis and left caudal ACC. The within-interval ROI analysis revealed significant effects in the right entorhinal cortex, right amygdala and right insula. The mixed-effects ROI analysis showed that the right entorhinal cortex and left caudal ACC had confidence intervals above 0, even when naïve duration estimates were accounted for. Both the within-participant and within-interval searchlights revealed significant clusters in the right anterior temporal lobe. Figure 10 enables a comparison of the two searchlight analyses; the right entorhinal cortex ROI that emerged in all three ROI analyses is also overlaid. The within-interval searchlight cluster was located more medially than the within-participant searchlight cluster, though the two overlapped in the right amygdala, right temporal pole, and the cerebral white matter of the right anterior temporal lobe. Moreover, the within-interval searchlight cluster overlapped with the right entorhinal cortex ROI (see green voxels, Figure 10).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig10-v3.jpg)
 
-**Figure 10.:** The within-participant searchlight cluster (p<0.05, FWE) is displayed in blue; the within-interval searchlight cluster (p<0.05, FWE) is displayed in yellow; voxels that overlap between the searchlights are shown in green. The right entorhinal cortex (q<0.05 FDR in both ROI analyses) is displayed in red; voxels that overlap between the within-interval searchlight and the right entorhinal ROI are shown in green.DOI: http://dx.doi.org/10.7554/eLife.16070.022
+**Figure 10.:** The within-participant searchlight cluster (p<0.05, FWE) is displayed in blue; the within-interval searchlight cluster (p<0.05, FWE) is displayed in yellow; voxels that overlap between the searchlights are shown in green. The right entorhinal cortex (q<0.05 FDR in both ROI analyses) is displayed in red; voxels that overlap between the within-interval searchlight and the right entorhinal ROI are shown in green.
 
 The difference in the set of regions that passed the significance threshold between the ROI and searchlight analyses is very likely due to the difference in shapes between the searchlight cube and the anatomical masks. Following the anatomy is particularly important for small, elongated regions like entorhinal cortex and caudal ACC, which are unlikely to be perfectly aligned across participants. For the searchlight analyses, the data needed to be transformed to MNI space in order to aggregate the results; consequently, imperfections in alignment can reduce the significance of searchlight results in these regions. On the other hand, anatomical ROI analyses were performed entirely in native space, making them more suitable for idiosyncratically shaped regions.
 
-## Patterns of activity in entorhinal cortex change slowly over time
+#### Patterns of activity in entorhinal cortex change slowly over time
 
 To further probe the idea that the regions we found represent slowly changing contextual features, we assessed whether their patterns of activity change slowly over time relative to the rest of the brain. We focused this analysis on the right entorhinal cortex and left caudal ACC, both of which were significant in the mixed-effects ROI analysis.
 
@@ -207,7 +207,78 @@ We quantified the speed of BOLD signal change in three different ways: (1) a mul
 
 Using these three procedures, we compared the FWHMs in the right entorhinal cortex and left caudal ACC with FWHMs in three regions known to be involved in auditory and language processing: the right transverse temporal cortex, which encompasses primary auditory cortex (Destrieux et al., 2010; Shapleske et al., 1999), the right banks of the superior temporal sulcus and the right superior temporal cortex, which are involved in auditory processing and the early cortical stages of speech perception (Binder et al., 2000; Hickok and Poeppel, 2004).
 
-Table 1 shows the FWHMs in the above regions derived using the three procedures, as well as the ranking of the right entorhinal cortex and left caudal ACC mean FWHMs relative to all the other masks in the brain (84 in total).10.7554/eLife.16070.023Table 1.Speed of pattern change in the right entorhinal cortex and left caudal ACC relative to the rest of the brain. Full-Width Half-Maximum (FWHM) values reflect how slowly patterns of activity (multivariate) or individual voxels (univariate) change over time. The Multivariate (-ROI size) column reflects the slowness of pattern change when controlling for the effect of ROI size.DOI: http://dx.doi.org/10.7554/eLife.16070.023MultivariateMultivariate (-ROI size) UnivariateRegionFWHM (TRs)RankingFWHM (TRs)RankingFWHM (TRs)RankingRight entorhinalM=18.9, SD=13.8 3rdM=1.2, SD=1.94thM=23, SD=15.61stLeft caudal ACCM=8.3, SD=1.866thM=-0.5, SD=0.567thM=9.2, SD=3.846thRight transverse temporal cortexM=7.3, SD=1.280thM=-0.8, SD=0.583rdM=7.9, SD=1.268thRight banks of superior temporal sulcusM=9.0, SD=2.148thM=-0.3, SD=0.449thM=8.8, SD=1.761stRight superior temporal cortexM=11.0, SD=3.128thM=0.4, SD=0.618thM=10.3, SD=2.434th
+Table 1 shows the FWHMs in the above regions derived using the three procedures, as well as the ranking of the right entorhinal cortex and left caudal ACC mean FWHMs relative to all the other masks in the brain (84 in total).
+
+**Table 1.**
+ Speed of pattern change in the right entorhinal cortex and left caudal ACC relative to the rest of the brain. Full-Width Half-Maximum (FWHM) values reflect how slowly patterns of activity (multivariate) or individual voxels (univariate) change over time. The Multivariate (-ROI size) column reflects the slowness of pattern change when controlling for the effect of ROI size.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Multivariate</th>
+      <th colspan="2">Multivariate (-ROI size)</th>
+      <th colspan="2">Univariate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td>FWHM (TRs)</td>
+      <td>Ranking</td>
+      <td>FWHM (TRs)</td>
+      <td>Ranking</td>
+      <td>FWHM (TRs)</td>
+      <td>Ranking</td>
+    </tr>
+    <tr>
+      <td>Right entorhinal</td>
+      <td>M=18.9, SD=13.8</td>
+      <td>3rd</td>
+      <td>M=1.2, SD=1.9</td>
+      <td>4th</td>
+      <td>M=23, SD=15.6</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <td>Left caudal ACC</td>
+      <td>M=8.3, SD=1.8</td>
+      <td>66th</td>
+      <td>M=-0.5, SD=0.5</td>
+      <td>67th</td>
+      <td>M=9.2, SD=3.8</td>
+      <td>46th</td>
+    </tr>
+    <tr>
+      <td>Right transverse temporal cortex</td>
+      <td>M=7.3, SD=1.2</td>
+      <td>80th</td>
+      <td>M=-0.8, SD=0.5</td>
+      <td>83rd</td>
+      <td>M=7.9, SD=1.2</td>
+      <td>68th</td>
+    </tr>
+    <tr>
+      <td>Right banks of superior temporal sulcus</td>
+      <td>M=9.0, SD=2.1</td>
+      <td>48th</td>
+      <td>M=-0.3, SD=0.4</td>
+      <td>49th</td>
+      <td>M=8.8, SD=1.7</td>
+      <td>61st</td>
+    </tr>
+    <tr>
+      <td>Right superior temporal cortex</td>
+      <td>M=11.0, SD=3.1</td>
+      <td>28th</td>
+      <td>M=0.4, SD=0.6</td>
+      <td>18th</td>
+      <td>M=10.3, SD=2.4</td>
+      <td>34th</td>
+    </tr>
+  </tbody>
+</table>
 
 Across all three procedures, a right-tailed Wilcoxon signed-rank test indicated that the FWHMs in the right entorhinal cortex were consistently larger across participants than the FWHMs in the right transverse temporal cortex (p<0.00005, p<0.0005 and p<0.00005), the right banks of the superior temporal sulcus (p<0.001, p<0.001 and p<0.0005) and the right superior temporal cortex (p<0.005, p=0.06 and p<0.0005). Thus, single voxels and multivariate patterns in entorhinal cortex changed consistently more slowly than those in regions involved in auditory and language processing. Moreover, the mean FWHM in the right entorhinal cortex was one of the largest among all 84 regions, ranking 3rd, 4th and 1st in the brain across the three procedures. The other regions with the slowest voxel and pattern change included the temporal pole, medial and lateral orbitofrontal cortex, frontal pole, perirhinal cortex, pars orbitalis and inferior temporal cortex.
 
@@ -215,13 +286,13 @@ On the other hand, the left caudal ACC ranked 66th, 67th and 46th out of 84 regi
 
 Taken together, all three variants of the analysis showed that the right entorhinal cortex, along with other regions of the anterior and medial temporal lobe, orbitofrontal cortex and frontal pole, had the slowest pattern change in the brain. These results do not seem to be due to differences in the sizes of the anatomical masks and suggest that the right anterior MTL regions found most consistently in our ROI and searchlight analyses process information that changes slowly over time. Our findings are consistent with those of Stephens et al. (2013), who showed that auditory cortex regions processing momentary stimulus features had intrinsically faster dynamics than higher-order regions that integrated information over longer time scales (see also Lerner et al., 2011).
 
-## Story position effects cannot explain the correlation between duration estimates and neural pattern change
+#### Story position effects cannot explain the correlation between duration estimates and neural pattern change
 
-We found that duration estimates systematically decreased as a function of position in the story, with earlier intervals being estimated as longer than later intervals (
+We found that duration estimates systematically decreased as a function of position in the story, with earlier intervals being estimated as longer than later intervals (Figure 11). The correlation between the estimated duration of an interval and its time in the story was consistently negative across participants (M=−0.40, SD= 0.22; t(16)=−7.59, p<0.00001).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig11-v3.jpg)
 
-**Figure 11.:** The middle time point of each 2-min interval (half-way between the two clips delimiting it) was chosen as the x-coordinate.DOI: http://dx.doi.org/10.7554/eLife.16070.02410.7554/eLife.16070.025Figure 11—source data 1.Data prior to high-pass filtering and after high-pass filtering (cut-off = 480 s) are provided. The unfiltered neural pattern distances tend to increase with time in story, even in the CSF and white matter. To generate the plots in Figure 11, duration estimates and pattern distances were averaged across participants for each interval and plotted as a function of the interval’s position in the story. The interval’s position in the story (in minutes) was set as the middle time point between the two clips delimiting it.DOI: http://dx.doi.org/10.7554/eLife.16070.025
+**Figure 11.:** The middle time point of each 2-min interval (half-way between the two clips delimiting it) was chosen as the x-coordinate.
 
 This result may be a replication of the positive time-order effect: the finding that people judge earlier durations in a series of durations to be longer than later durations (Block, 1982, 1985; Brown and Stubbs, 1988). The effect has been interpreted to mean that context usually changes more rapidly at the start of a novel episode (Block, 1982, 1986). However, another possibility is that the characteristics of the particular story we picked are driving this result. In our story, there was a strong negative correlation between the mean number of event boundaries per interval and the position of the interval in the story (r=−0.77). Thus, the decrease in mean duration estimates with story position may be due to the relationship between the number of event boundaries and duration estimates (see Behavioral results).
 
@@ -229,13 +300,13 @@ If the decrease in duration estimates over time is due to a decrease in the amou
 
 To investigate why the above regions did not show the expected decrease in pattern dissimilarity over time, we assessed whether any brain region in the FreeSurfer or MTL atlas might show this effect. There was no brain region whose pattern of activity changed more at the beginning than at the end of the story. Given that we were looking for a slow change in neural signal (unfolding over the entire course of the story), we thought that our high-pass filter might be removing this slow change; to address this possibility, we analyzed the unfiltered data. When we did this, we found that neural pattern change in the unfiltered data showed a consistent correlation in the opposite direction: almost all brain patterns changed more at the end of the story than at the beginning, including the CSF and white matter (q<0.05, FDR), suggesting that a signal unrelated to neural processing, such as scanner drift or motion, may cause activity patterns to change more as time passes (see Figure 11—source data 1). Thus, even if the degree of neural pattern change were decreasing over time, we might not be able to detect this effect, as it would have to overcome a global signal in the opposite direction that is not due to neural activity and that is present everywhere, including the CSF.
 
-## Replication of Jenkins and Ranganath (2010): activity at encoding predicts accuracy of temporal context memory
+#### Replication of Jenkins and Ranganath (2010): activity at encoding predicts accuracy of temporal context memory
 
-As described in the Materials and methods (
+As described in the Materials and methods (Time perception test section), besides estimating the elapsed duration between pairs of clips from the story, participants were given an additional test, where they indicated each clip’s position on the timeline of the story. The mean correlation (across participants) between the actual and estimated temporal position on the timeline of the story was r=0.885 (SD=0.05), suggesting that participants remembered the temporal position of each clip extremely well (p<10–21). Figure 12 shows the timeline estimates for a representative participant (top left panel), as well as the absolute residual error associated with each clip (top right panel), group averaged and plotted against time in the story.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig12-v3.jpg)
 
-**Figure 12.:** Jenkins and Ranganath (2010): activity at encoding predicts accuracy of temporal context memory.Top left panel: Timeline estimates for a representative participant. The estimated temporal position of each clip is plotted against its actual position in the story. Top right panel: Group-averaged residual error for each clip plotted against its time in the story. Our behavioral results mimic those of Figure 2 in Jenkins and Ranganath (2010) showing that accuracy increases for clips that occurred later in the story. Bottom panels: Clusters that showed a significant correlation between activity at encoding and subsequent accuracy at placing a clip on the timeline of the story. The prefrontal cluster in light blue was significant (p=0.008, FWE), while the medial parietal cluster (p=0.058, FWE) and the lateral temporal cluster in dark blue (p=0.098, FWE) were trending.DOI: http://dx.doi.org/10.7554/eLife.16070.026
+**Figure 12.:** Top left panel: Timeline estimates for a representative participant. The estimated temporal position of each clip is plotted against its actual position in the story. Top right panel: Group-averaged residual error for each clip plotted against its time in the story. Our behavioral results mimic those of Figure 2 in Jenkins and Ranganath (2010) showing that accuracy increases for clips that occurred later in the story. Bottom panels: Clusters that showed a significant correlation between activity at encoding and subsequent accuracy at placing a clip on the timeline of the story. The prefrontal cluster in light blue was significant (p=0.008, FWE), while the medial parietal cluster (p=0.058, FWE) and the lateral temporal cluster in dark blue (p=0.098, FWE) were trending.
 
 This behavioral dataset enabled us reproduce an fMRI analysis from Jenkins and Ranganath (2010), where voxel activity at encoding was correlated with subsequent accuracy in remembering when a trial occurred in the experiment. For each participant, we regressed the estimated timeline position against the actual position and used the absolute value of the residual as a measure of error. We found that the accuracy (negative error) of timeline placements was significantly correlated with encoding activity in large clusters of the left dorsolateral prefrontal cortex and medial prefrontal cortex, including dorsomedial PFC and anterior cingulate (p=0.008, FWE-corrected; Center of Gravity MNI coordinates (x, y, z) in mm: [−20, 34.8, 28.4]; cluster size = 1121 voxels in 3 mm MNI space), as well as sub-threshold clusters in the medial parietal cortex, including precuneus and posterior cingulate (p=0.058, FWE-corrected; Center of Gravity MNI coordinates (x, y, z) in mm: [−10.5, −54, 16.1]; cluster size = 419 voxels), and left superior temporal gyrus (p=0.098, FWE-corrected; Center of Gravity MNI coordinates (x, y, z) in mm: [−56.9, −19.1, −3.72]; cluster size = 270 voxels).
 
@@ -271,27 +342,27 @@ In addition to the anatomical ROI analysis, we performed a whole-brain searchlig
 
 Finally, we were able to replicate an analysis by Jenkins and Ranganath (2010), who showed that activity during encoding in the left lateral prefrontal cortex and right anterior hippocampus predicted accuracy in remembering when a trial had occurred in the experiment. Our analysis revealed a cluster in the left dorsolateral prefrontal cortex that is similar to that found in their study. However, we also found significant clusters in the medial prefrontal and medial parietal cortex. These regions may be important for maintaining narrative information over minutes-long timescales (Lerner et al., 2011; Hasson et al., 2015; Chen et al., 2015), which might explain why their activity predicted temporal context memory for clips from an auditory story, but did not appear in Jenkins and Ranganath (2010), where participants recalled the timing of trials which were not linked by a narrative. Moreover, our clusters overlap highly with the 'posterior medial network' (Ritchey and Ranganath, 2012), which has been consistently implicated in episodic memory, episodic simulation and theory of mind.
 
-## Conclusion
+### Conclusion
 
 After probing human participants’ time perception for intervals from an auditory story they had just heard, we found substantial variability in subjective estimates of the passage of time. This variability was significantly correlated with changes in BOLD activity patterns in the right anterior temporal lobe, particularly the right entorhinal cortex, between the start and end of each interval. Control experiments demonstrated that duration estimates were strongly driven by contextual boundaries and that the relationship between neural distance and behavior still held when we controlled for the perceptual and semantic similarity of the clips. Our findings suggest that patterns of activity in these regions might encode contextual information that participants can later retrieve to infer the durations of intervals on the scale of minutes. Additional work is needed to assess how these regions contribute to representing particular contextual features (such as physical environment, abstract task states, and emotional states) and whether changes in each of these features affect retrospective duration estimates differently.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 18 participants (13 female) took part in the study. All participants were recruited from the Princeton undergraduate and graduate student population and were between 18 and 31 years of age (mean = 22 years). All participants were screened to ensure no neurological or psychiatric disorders. Written informed consent was obtained for all participants in accordance with the Princeton Institutional Review Board regulations. Participants were compensated $20/hr for the scanning session, and $12/hr for the behavioral session.
 
 Given that no previous studies had related neural pattern change during a naturalistic stimulus to subsequent duration estimates for minutes-long intervals, we could not a priori estimate the variance in the pattern change signal, the variance in duration estimates, or the correlation between them. Therefore, rather than performing a power analysis, we chose a sample size that was in the same range as previous fMRI studies that had used naturalistic stimuli to study memory (Lerner et al., 2011, n=11 per condition; Chen et al., 2015, n=13, 14 and 24 per condition; Chen et al., 2016, n=22 [5 excluded]), as well as fMRI studies that had related neural pattern distance to mnemonic judgments (Ezzyat and Davachi, 2011, n=19; Jenkins and Ranganath, 2010, n=16 (1 excluded); Ezzyat and Davachi, 2014, n=21 (3 excluded), Jenkins and Ranganath, 2016, n=17).
 
-## Experimental design and stimuli
+### Experimental design and stimuli
 
 The experiment consisted of two parts: an approximately 40-min session in the MRI scanner, during which participants listened to the auditory story, followed immediately by a 1-hr behavioral session, during which participants completed a time perception test on the story they had just heard. Figure 1 illustrates the experimental procedure.
 
-## fMRI session
+#### fMRI session
 
 Prior to the fMRI session, participants were instructed to listen carefully to the auditory story while in the scanner, because they might be asked questions about it later. The nature of the follow-up questions was unknown to the participants. While in the scanner, participants listened to a 25-minute-long radio adaptation of a science fiction story called 'Tunnel Under the World' (written by Frederik Pohl), originally aired on the radio drama series, 'X Minus One', in 1956.
 
-## Time perception test
+#### Time perception test
 
 After leaving the scanner, participants were surprised with a time perception test, presented on a laptop with the Psychophysics toolbox (Brainard, 1997; Pelli, 1997) for MATLAB (The MathWorks Inc., Natick, MA). For each of 43 questions, participants listened to a 10 s clip from the story, followed by another 10 s clip, and were asked to estimate how much time had passed between the first and second clips when they initially heard the story. Participants were specifically asked to estimate how much time had passed in their own lives, rather than how much narrative time had passed in the story. They were also asked to make the judgments as intuitively as possible, without resorting to deductive reasoning about the sequence of events that unfolded in between the two excerpts.
 
@@ -303,29 +374,45 @@ After participants had provided duration estimates for all 43 intervals, the 86 
 
 Please note: the first of our 18 participants completed a version of the time perception test that differed only in the following way: the specific intervals in the story whose duration was asked about were different. In all other respects (half of the intervals were 2 min while the other half were 6 min apart), the behavioral test was identical to the subsequent 17 participants. For this reason, however, any analyses where duration estimates are compared across participants were performed on 17 rather than 18 participants. Any within-participant analyses were performed on all 18 data sets.
 
-## Naïve time perception test
+#### Naïve time perception test
 
 To address the concern that participants were estimating temporal distance between two clips based purely on the content of the clips (rather than their memory of when the clips had occurred in the story), we administered an identical time perception test to a separate group of 17 participants who had never heard the story. Naïve participants were asked to try their best to guess how much time passed between each pair of clips during the original telling of the story, even though they had never heard the story. Participants were told the length of the story (25 min, 33 s) and informed that the maximum distance between two clips could not exceed that duration.
 
-## Event boundary test
+#### Event boundary test
 
 A separate group of 9 participants were asked to listen to the same story and to press the space bar every time they thought an event had ended and a new event was beginning. This test was purely behavioral and fMRI data were not collected for these participants.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
-## Significance of correlation between duration estimates and event boundaries
+#### Significance of correlation between duration estimates and event boundaries
 
 To assess whether the number of event boundaries in an interval predicted duration estimates for that interval, we related our original participants’ duration estimates with event boundary data collected from a separate group of 9 participants. For each 2-min interval from the time perception test, we counted the number of event boundaries that a participant had indicated during that interval and averaged that number across the 9 participants. This resulted in a mean number of event boundaries per interval, which was then correlated with the mean estimated duration of that interval from our original participants.
 
 To assess the statistical significance of this correlation, we performed a bootstrapping procedure on the duration estimates. We obtained 1000 bootstrap samples, each time selecting with replacement a different subset of n individuals from our pool of n participants. The duration estimates for each subset were averaged across participants and correlated with the mean number of event boundaries. The upper limit (ul) for an x% confidence interval was set to the value of the Pearson correlation in percentile x% of the bootstrap distribution; the lower limit (ll) for the confidence interval was set to the value of the Pearson correlation in percentile 100-x of this distribution. Confidence intervals that did not encompass zero were considered reliable at the given level of confidence.
 
-## Significance of difference in correlations with event boundaries between original duration estimates and naïve duration estimates
+#### Significance of difference in correlations with event boundaries between original duration estimates and naïve duration estimates
 
-We hypothesized that duration estimates from our original participants (who had actually heard the story) would be significantly more correlated with the number of event boundaries between two clips than duration estimates from our naïve participants, who had never heard the story. To assess the significance of the difference in correlations, we computed the rdiff (empirical difference), as well as the upper confidence limits (uldiff) and lower confidence limits (lldiff) for the difference between the two correlations. We used the following formulae (Zou, 2007; Poppenk and Norman, 2012) for two bootstrapped correlation confidence intervals:rdiff=r1−r2lldiff=r1−r2−(r1−ll1)2+(ul2−r2)2uldiff=r1−r2+(ul1−r1)2+(r2−ll2)2
+We hypothesized that duration estimates from our original participants (who had actually heard the story) would be significantly more correlated with the number of event boundaries between two clips than duration estimates from our naïve participants, who had never heard the story. To assess the significance of the difference in correlations, we computed the $r_{diff}$ (empirical difference), as well as the upper confidence limits ($ul_{diff}$) and lower confidence limits ($ll_{diff}$) for the difference between the two correlations. We used the following formulae (Zou, 2007; Poppenk and Norman, 2012) for two bootstrapped correlation confidence intervals:
 
-The upper (ul1,ul2) and lower limits (ll1,ll2) for a 95% confidence interval of each group’s correlation were calculated as described above.
+$$
+r_{diff}=r_{1}−r_{2}
+$$
 
-## Reliability of duration estimates across participants within and between groups
+
+
+$$
+ll_{diff}=r_{1}−r_{2}−\sqrt{(r_{1}−ll_{1})^{2}+(ul_{2}−r_{2})^{2}}
+$$
+
+
+
+$$
+ul_{diff}=r_{1}−r_{2}+\sqrt{(ul_{1}−r_{1})^{2}+(r_{2}−ll_{2})^{2}}
+$$
+
+The upper ($ul_{1},ul_{2}$) and lower limits ($ll_{1},ll_{2}$) for a 95% confidence interval of each group’s correlation were calculated as described above.
+
+#### Reliability of duration estimates across participants within and between groups
 
 We hypothesized that both our original participants and the naïve participants (who had never heard the story) would use consistent strategies to estimate the temporal distance between two clips, but that these strategies would differ across groups. If this is the case, duration estimates should be more reliable across participants within groups than across participants between groups.
 
@@ -335,17 +422,17 @@ To assess the significance of the difference between the mean within-group ISC a
 
 Please note that the within-group and between-group correlations could be compared only because the group sizes were identical (17 participants in each) and because the within-group correlations were equally strong for the original and naïve groups (M=0.43, SD=0.25, 95% CI=[0.37, 0.58] vs. M=0.43, SD=0.18, 95% CI [0.40, 0.56]). Since the within-group ISCs are comparable, we can infer that the significant difference between the within-group and between-group reliability reflects a difference in the signals (strategies) underlying the two groups of duration estimates (Chow et al., 2015), rather than a difference in within-group reliability.
 
-## MRI acquisition
+### MRI acquisition
 
 Participants were scanned in a 3T full-body Skyra MRI scanner (Siemens, Munich, Germany) with a 20-channel head coil. Functional images were acquired using a T2*-weighted echo planer imaging (EPI) pulse sequence (repetition time [TR], 1500 ms; echo time [TE], 28 ms; flip angle, 64°), each volume comprising 27 slices of 4 mm thickness. In-plane resolution was 3×3 mm2 (field of view [FOV], 192×192 mm2). Slice acquisition order was interleaved. Anatomical images were acquired using a T1-weighted magnetization-prepared rapid-acquisition gradient echo (MPRAGE) pulse sequence (TR, 2300 ms; TE, 3.08 ms; flip angle 9°; 0.89 mm3 resolution; FOV, 256 mm2). Participants’ heads were stabilized with foam padding to minimize head movement. Auditory stimuli were presented using the Psychophysics toolbox (Brainard, 1997; Pelli, 1997). Participants were provided with MRI compatible in-ear mono earbuds (Model S14, Sensimetrics Corporation, Malden, MA), which provided the same audio input to each ear. MRI-safe passive noise-canceling headphones were placed over the earbuds for additional protection against noise.
 
-## fMRI data preprocessing
+### fMRI data preprocessing
 
 FMRI data processing was carried out using FEAT (FMRI Expert Analysis Tool) Version 5.98, part of FSL (FMRIB's Software Library, www.fmrib.ox.ac.uk/fsl). The following procedure was applied: motion correction using MCFLIRT (Jenkinson et al., 2002); slice-timing correction using Fourier-space time-series phase-shifting; non-brain removal using BET (Smith, 2002); spatial smoothing using a Gaussian kernel of FWHM 6.0 mm; grand-mean intensity normalization of the entire 4D dataset by a single multiplicative factor; and high-pass temporal filtering (Gaussian-weighted least-squares straight line fitting, with sigma=240.0 s). The procedure for selecting the high-pass filter is described below. Preprocessed data were kept in the native functional space for all analyses, except for the within-interval searchlight analysis, which was performed across participants.
 
 Preprocessed data were then despiked using the following procedure: for each voxel, data points that deviated from the mean by more than 5 times the inter-quartile range were removed and replaced using cubic interpolation.
 
-## Procedure for obtaining anatomical masks: FreeSurfer and MTL segmentation
+#### Procedure for obtaining anatomical masks: FreeSurfer and MTL segmentation
 
 Segmentation was performed in a semi-automated fashion using the FreeSurfer image analysis suite, which is documented and available online (version 5.1; http://surfer.nmr.mgh.harvard.edu) with details described previously (e.g. Fischl et al., 2004; Poppenk and Norman, 2014). Briefly, this processing includes removal of non-brain tissue using a hybrid watershed/surface deformation procedure (Ségonne et al., 2004), automated Talairach transformation, intensity normalization (Sled et al., 1998), tessellation of the grey matter / white matter boundary, automated topology correction (Fischl et al., 2001; Segonne et al., 2007), surface deformation following intensity gradients (Fischl and Dale, 2000), parcellation of cortex into units based on gyral and sulcal structure (Desikan et al., 2006; Fischl et al., 2004), and creation of a variety of surface-based data, including maps of curvature and sulcal depth.
 
@@ -353,17 +440,17 @@ We resampled and aligned FreeSurfer segmentations of all grey matter, white matt
 
 It is important to note that the medial temporal lobe (MTL) masks in the Desikan-Killiany Atlas do not match the canonical anatomical distinctions in the literature. For example, the parahippocampal gyrus mask comprises the medial part of the parahippocampal cortex and the posterior part of the entorhinal cortex. Therefore, instead of the FreeSurfer MTL masks, we used a probabilistic MTL atlas developed by Hindy and Turk-Browne (2015). MTL regions, including perirhinal cortex, entorhinal cortex and parahippocampal cortex were defined probabilistically in MNI space, based on a database of manual MTL segmentations from a separate set of 24 participants. Manual segmentations were created on T2-weighted turbo spin-echo images using anatomical landmarks (Duvernoy, 2005; Carr et al., 2010; Schapiro et al., 2012) and then registered to an MNI template. Finally, nonlinear registration (FNIRT; Andersson et al., 2007) was used to register the masks from MNI space to each participant's native space. After registration, voxels with a probability greater than 0.3 of being in a region were assigned to that ROI.
 
-## Residualization of non-neuronal signal sources
+#### Residualization of non-neuronal signal sources
 
 Slow changes of respiration over time (RV) have been shown to induce robust changes in the BOLD signal (Chang et al., 2009) in many areas around the cerebral midline. To minimize signal change unrelated to neural activity, we used multiple linear regression to project out 3 nuisance variables from the BOLD data (Behzadi et al., 2007; Silbert et al., 2014). Nuisance regressors were:
 
-All masks (grey matter, white matter and CSF) were obtained from the FreeSurfer segmentation procedure described above. The beneficial effects of this residualization procedure on the signal-to-noise ratio are shown in
+All masks (grey matter, white matter and CSF) were obtained from the FreeSurfer segmentation procedure described above. The beneficial effects of this residualization procedure on the signal-to-noise ratio are shown in Figure 13. Note that this procedure was always applied after removal of low-frequency components using the high-pass filter (see below).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/16070/elife-16070-fig13-v3.jpg)
 
-**Figure 13.:** Shaded error bars represent standard errors of the mean (across participants). Top panel (A) shows the mean ISCs after the residualization procedure has been applied (see Residualization of non-neuronal signal sources). The 480 s cut-off was the gentlest filter for which all of the grey matter regions listed above showed ISC values significantly above those in the CSF. Bottom panel (B) shows the mean ISCs prior to the residualization procedure. Without residualization, the ISCs of some grey matter regions never rise significantly above those in the white matter and CSF. Note that without high-pass filtering ('none') or residualization, all brain regions displayed spuriously high ISCs.DOI: http://dx.doi.org/10.7554/eLife.16070.027
+**Figure 13.:** Shaded error bars represent standard errors of the mean (across participants). Top panel (A) shows the mean ISCs after the residualization procedure has been applied (see Residualization of non-neuronal signal sources). The 480 s cut-off was the gentlest filter for which all of the grey matter regions listed above showed ISC values significantly above those in the CSF. Bottom panel (B) shows the mean ISCs prior to the residualization procedure. Without residualization, the ISCs of some grey matter regions never rise significantly above those in the white matter and CSF. Note that without high-pass filtering ('none') or residualization, all brain regions displayed spuriously high ISCs.
 
-## Methodological challenges with analyzing pattern distance over long time scales: Selection of temporal high-pass filter cut-off
+#### Methodological challenges with analyzing pattern distance over long time scales: Selection of temporal high-pass filter cut-off
 
 Because we were interested in the aspect of neural activity that changes slowly over time (reflecting gradual changes in context), we could not use a standard high-pass filter (with a cut-off period on the order of 120 s), as it would remove components of the signal that evolve on the scale of minutes. Thus, we were faced with the challenge of preserving slower components of the BOLD signal that reflect neural activity, while removing low-frequency components attributable to non-neuronal noise, including scanner drift and physiological noise (such as low-frequency respiratory variation and heart rate variation). Physiological noise (and a substantial component of scanner noise) was factored out using the residualization procedure described above. This enabled us to select a gentler high-pass filter than is generally used in the literature.
 
@@ -377,9 +464,9 @@ According to the Nyquist theorem, we need a filter cut-off of 4 min (240 s) or
 
 Figure 13 illustrates that, even for regions like the hippocampus – with relatively low inter-subject correlations – the 480 s filter cut-off, combined with the residualization procedure, succeeded at raising the grey matter ISCs significantly above those of the white matter and CSF.
 
-## fMRI data analysis
+### fMRI data analysis
 
-## Within-participant correlation between pattern change and duration estimates
+#### Within-participant correlation between pattern change and duration estimates
 
 Our primary hypothesis was that greater pattern dissimilarity between two clips (at the time of encoding) would correlate with greater subsequent duration estimates. For each pair of clips from the time perception test, we located the TRs (volumes) corresponding to when the participant first heard those clips and extracted the activity patterns for each ROI at those time points. Since the auditory clips were between 5 s and 10 s in duration (corresponding to about 5 volumes), we averaged the patterns over 5 consecutive TRs for every clip, with the 5-TR window centered on the middle of each clip.
 
@@ -387,27 +474,31 @@ We then related the pattern distance between the two clips at encoding to how mu
 
 To assess the reliability of the correlation across participants for a given ROI, we ran a phase-randomization procedure, which is described in detail below. The results of the phase-randomization procedure were then subjected to multiple comparisons correction.
 
-## Removing low-confidence intervals
+#### Removing low-confidence intervals
 
 If a participant could not remember when in the story a particular clip had occurred, it would be difficult for them to estimate the temporal distance between that clip and another clip. It is possible that participants would invoke different retrieval strategies in such cases (for instance, they might base their duration estimates purely on the content of the clips, without recollecting their context). It is also possible that such estimates could be random guesses. To filter out guesses, we used the confidence ratings collected after the time perception test, in which participants rated how well they could remember when in the story each individual clip had occurred. Specifically, we located the participant’s confidence for the two clips delimiting each temporal interval, and took the smaller of the two ratings as the confidence for that interval. We performed the main analysis relating neural drift to time estimation only on high-confidence intervals, removing pairs of clips with the lowest confidence. Since participants calibrated their confidence ratings differently (some were more prone to rate their confidence as 4/5, while others were more prone to rate it as 2/5), we picked the confidence threshold for each participant that removed at least 33% of the intervals with the lowest confidence, while preserving at least 33% of the intervals with the highest confidence. Our behavioral analysis (see Behavioral results) shows that participants’ duration estimates were significantly more accurate for high-confidence intervals than when all intervals were included.
 
-## Statistical analysis of correlations between pattern change and behavior
+#### Statistical analysis of correlations between pattern change and behavior
 
 Because of the presence of long-range temporal autocorrelation in the BOLD signal (Zarahn, 1997), the statistical likelihood of each observed correlation (between neural distance and duration estimates) was assessed using a permutation procedure based on surrogate data. The surrogate data were generated using phase randomization (Theiler et al., 1992). Phase-randomized surrogates have the same autocorrelation as the original signal.
 
-Since our analysis measures pattern change over multiple voxels, rather than the time course of a single voxel, we generated surrogate time courses of pattern change (Figure 4—figure supplement 1 shows how that time course was obtained). Having extracted the time course of pattern change for each ROI, we applied a Fourier transform to that signal. To randomize its phases, we multiplied each complex amplitude by ejϕ, where ϕ is independently chosen for each frequency from the interval [0, 2π]. In order for the inverse Fourier transform to be real (no imaginary components), we symmetrized the phases, so that ϕ(f)=−ϕ(−f). Finally, we took the inverse Fourier transform to produce the surrogate time courses.
+Since our analysis measures pattern change over multiple voxels, rather than the time course of a single voxel, we generated surrogate time courses of pattern change (Figure 4—figure supplement 1 shows how that time course was obtained). Having extracted the time course of pattern change for each ROI, we applied a Fourier transform to that signal. To randomize its phases, we multiplied each complex amplitude by $e^{jϕ}$, where $ϕ$ is independently chosen for each frequency from the interval [0, 2π]. In order for the inverse Fourier transform to be real (no imaginary components), we symmetrized the phases, so that $ϕ(f)=−ϕ(−f)$. Finally, we took the inverse Fourier transform to produce the surrogate time courses.
 
-Each surrogate dataset was analyzed in the same manner as the empirical data: pattern dissimilarity between each pair of clips was correlated with duration estimates. Thus, we generated a distribution of 10,000 null correlations for every ROI in every participant (see Figure 4—figure supplement 1). As above, all correlation coefficients were Fisher-transformed to ensure that they follow a Gaussian distribution. For every ROI, we were then able to compare the empirical Pearson correlation with the distribution of null correlations. We calculated a Z-value for every participant:z−value=empirical correlation−mean(null correlations)standard deviation(null correlations)
+Each surrogate dataset was analyzed in the same manner as the empirical data: pattern dissimilarity between each pair of clips was correlated with duration estimates. Thus, we generated a distribution of 10,000 null correlations for every ROI in every participant (see Figure 4—figure supplement 1). As above, all correlation coefficients were Fisher-transformed to ensure that they follow a Gaussian distribution. For every ROI, we were then able to compare the empirical Pearson correlation with the distribution of null correlations. We calculated a Z-value for every participant:
+
+$$
+z−value=\frac{empirical correlation−mean(null correlations)}{standard deviation(null correlations)}
+$$
 
 A large positive Z-value implies that the empirical correlation is large relative to the distribution of null correlations. To assess whether the Z-values for a given ROI were reliably positive across participants, we performed a right-tailed t-test against 0. The p-values from the above t-test were then subjected to multiple comparisons correction. For anatomical ROIs (derived from the FreeSurfer and MTL atlases), we used MATLAB’s fdr_bky.m function, which executes the 'two-stage' Benjamini et al. (2006) procedure for controlling the false discovery rate (FDR) of a family of hypothesis tests. The procedure implemented by this function is more powerful than the original Benjamini and Hochberg (1995) procedure when a considerable percentage of the hypotheses in the family are false. For the searchlight analysis, we controlled the family-wise error (FWE) rate, as described below.
 
-## ROI selection
+#### ROI selection
 
 The literature reviewed above suggests that the MTL, lateral prefrontal cortex, insula, putamen and inferior parietal cortex might all process information important for inferring the duration of past events. We therefore performed an ROI analysis on the following regions, derived from both the FreeSurfer and MTL atlases: hippocampus, parahippocampal cortex, entorhinal cortex, perirhinal cortex, amygdala, superior frontal cortex, caudal and rostral middle frontal gyrus (dorsolateral prefrontal cortex), pars opercularis (frontal operculum), pars triangularis, pars orbitalis, lateral orbitofrontal cortex, frontal pole, insula, putamen and inferior parietal cortex. This resulted in an analysis on 16 regions of interest (in each hemisphere) motivated by the literature. ROIs with q-values < 0.05 (FDR) are reported as significant.
 
 As part of an exploratory, whole-brain search, we also ran the same analysis on all grey matter regions in the Desikan-Killiany Atlas, which contained 42 regions in each hemisphere, including the ones mentioned above (see Procedure for obtaining anatomical masks: FreeSurfer and MTL segmentation). The complete list of regions can be found in Figure 5—source data 1. For the exploratory analysis, we report regions with q-values < 0.1 (FDR).
 
-## Within-interval correlation between pattern change and duration estimates
+#### Within-interval correlation between pattern change and duration estimates
 
 Our main analysis verified whether the pattern distance between two clips was correlated with duration estimates in a given participant and then aggregated the results across participants. To address the concern that pattern distance between two clips might reflect only the difference in story content between those clips (rather than change in abstract factors like mental context), we performed the same analysis for a given interval across participants and aggregated the results across intervals. Since this analysis is performed within intervals, it ensures that story content is held constant across participants, such that differences in pattern distances and duration estimates are due to individual differences only. To ensure that pattern distances and duration estimates were comparable across participants, all vectors were z-scored within participants. The Pearson correlation between pattern distances and duration estimates across participants was then calculated for every 2 min interval in every ROI.
 
@@ -417,25 +508,37 @@ The significance of each correlation score was assessed using a permutation test
 
 As above, a Z-value was obtained for every interval, reflecting the degree to which the empirical correlation was higher than the distribution of null correlations. Finally, a right-tailed t-test was performed to assess whether a given ROI’s Z-values were reliably positive across intervals. The p-values from this t-test were subjected to multiple comparisons correction using FDR.
 
-To compare effect sizes between the within-interval and within-participants analyses, we calculated Cohen’s d for a region as:Cohen′sd=mean r(across participants or intervals)standard deviation r
+To compare effect sizes between the within-interval and within-participants analyses, we calculated Cohen’s d for a region as:
 
-where r is the Pearson’s correlation between pattern distance and duration estimates. (Using the Z-values derived from the permutation procedures rather than the raw correlation coefficients yielded practically identical results.)
+$$
+Cohen^{′}sd=\frac{mean r(across participants or intervals)}{standard deviation r}
+$$
 
-## Mixed-effects model accounting for naïve duration estimates
+where $r$ is the Pearson’s correlation between pattern distance and duration estimates. (Using the Z-values derived from the permutation procedures rather than the raw correlation coefficients yielded practically identical results.)
+
+#### Mixed-effects model accounting for naïve duration estimates
 
 We analyzed our data using a hierarchical linear regression model (Gelman and Hill, 2006). Known in different fields as hierarchical, mixed, or multi-level models, such regressions correctly account for non-independence of repeated observations of the same subject and stimulus (in our case, interval). In doing this, they estimate the population effects (coefficients) of interest, even assuming that individual subjects or items (henceforth, collectively 'groups') may have idiosyncratic perturbations from the population and that those perturbations may be correlated within a group. They are a generalization of approaches that treat all observations as independent (e.g. t-test, ANOVA, linear regression), as well as of approaches that can take into account the non-independence across a single grouping factor (e.g. repeated-measures ANOVA), and are more conservative than any of the above (Barr et al., 2013). (More precisely, methods that do assume observation independence are anti-conservative in the presence of correlated observations.)
 
-Formally, the model is the following:yi=Xi(β+sj[i]+mk[i])+ϵsj∼N(0,Σs),mk∼N(0,ΣM),ϵ∼N(0,σ)
+Formally, the model is the following:
 
-Here, yi is the ith observed duration judgment, Xi is a matrix of predictors (neural pattern distance) and covariates (naïve duration estimates), βi is a vector of coefficients (as in conventional linear regression), j[i] is the subject of the ith observation, so that sj[i] is a subject-specific perturbation of all of the coefficients, and mk[i] is similarly an item-specific perturbation of the coefficients.
+$$
+y_{i}=X_{i}(\beta+s_{j[i]}+m_{k[i]})+ϵs_{j}∼N(0,Σ_{s}),m_{k}∼N(0,Σ_{M}),ϵ∼N(0,\sigma)
+$$
+
+Here, $y_{i}$ is the ith observed duration judgment, $X_{i}$ is a matrix of predictors (neural pattern distance) and covariates (naïve duration estimates), $\beta_{i}$ is a vector of coefficients (as in conventional linear regression), $j[i]$ is the subject of the ith observation, so that $s_{j[i]}$ is a subject-specific perturbation of all of the coefficients, and $m_{k[i]}$ is similarly an item-specific perturbation of the coefficients.
 
 This model is undefined when either the subject or item effects approach zero (either because there is truly no variability, or more realistically when there is insufficient data to estimate this variability). Since such rich models often fail to converge or approach singularity given typical psychological datasets (Bates et al., 2015a), we imposed a weak Wishart prior on the group covariances, which regularizes the model away from singularity (Chung et al., 2015). This weak, boundary-avoiding prior on our random effects covariance structure regularizes the model towards simpler random effects structures unless the data suggests otherwise (Chung et al., 2015). All models converged under this prior. This fitting procedure was implemented using the R package blme (Chung et al., 2013), which extends the lme4 package (Bates et al., 2015b) and performs maximum-a-posteriori estimation of linear mixed-effects models.
 
 Please note that we also verified that our results were replicable using an alternative fitting procedure suggested by Bates et al. (2015a). We used the lme4 package to fit the ‘maximal’ model (in the sense of Barr et al., 2013) and removed zero-variance random effects terms until the model converged and until the estimated random effects covariance matrix was full-rank, indicating a non-degenerate estimate. We obtained highly consistent results using both fitting procedures. In the Results section, we report only the first procedure, which has been found to be more conservative (Chung et al., 2015). Chung et al. (2015) report: 'Uncertainty for the fixed coefficients is less underestimated than under classical ML or restricted maximum likelihood estimation.' Indeed, our effects were very slightly stronger using the second procedure (Bates et al., 2015a). Both sets of results can be found in Figure 7—source data 1.
 
-Finally, the duration estimates are bounded at zero and positively skewed, which resulted in heteroskedastic residuals. To mitigate this, we power-transformed the duration estimates using the Box-Cox power transformation (Box and Cox, 1964). We picked the exponent λ for each model by maximizing the profile likelihood in a model without group effects (though see e.g. Gurka et al. (2006) for an extension to the hierarchical case).
+Finally, the duration estimates are bounded at zero and positively skewed, which resulted in heteroskedastic residuals. To mitigate this, we power-transformed the duration estimates using the Box-Cox power transformation (Box and Cox, 1964). We picked the exponent $\lambda$ for each model by maximizing the profile likelihood in a model without group effects (though see e.g. Gurka et al. (2006) for an extension to the hierarchical case).
 
-In R formula notation, a model of the following form was fit to the data from each region of interest:TransformedDurationEstimates∼1+NaiveEstimates+NeuralPatternDistance+(1+NaiveEstimates+NeuralPatternDistance∣Subject)+(1+NeuralPatternDistance∣Interval)
+In R formula notation, a model of the following form was fit to the data from each region of interest:
+
+$$
+TransformedDurationEstimates∼1+NaiveEstimates+NeuralPatternDistance+(1+NaiveEstimates+NeuralPatternDistance∣Subject)+(1+NeuralPatternDistance∣Interval)
+$$
 
 Please note that participants from the original experiment could not be 'matched' with participants from the naïve experiment. For this reason, naïve duration estimates were group-averaged and the mean vector of naïve estimates was placed as a covariate in the model. The above formula shows that the slope of the relationship between naïve estimates and original duration estimates was allowed to vary by subject (i.e. each participant’s duration estimates might be differently related to the naïve group mean). On the other hand, the slope for naïve estimates could not vary by interval, since naïve estimates did not vary by subject.
 
@@ -443,7 +546,7 @@ We computed 0.95 confidence intervals of β using the asymptotic Gaussian approx
 
 Note that all of the above choices (including the choice of fitting procedure and the power transform of the data) are conservative relative to their alternatives. For instance, prior to power-transforming the duration estimates, the fixed effects of neural pattern distance were estimated to be stronger (as reported in Figure 7—source data 1.) These alternative analyses revealed additional significant regions that are either false positives or regions we lack the power to detect.
 
-## Whole-brain searchlights
+#### Whole-brain searchlights
 
 In addition to using anatomical ROIs, we ran a cubic searchlight throughout the entire brain. The same analysis as described above was performed for every searchlight, and the Z-value for each searchlight was assigned to the center voxel.
 
@@ -453,7 +556,7 @@ The within-interval analysis was performed in 3 mm MNI space, in order to match
 
 Family-wise error rate was controlled using FSL’s randomise function (version 5.0.4, Winkler et al., 2014). An uncorrected p-value image was first generated, reflecting voxel-wise (searchlight) reliability across participants or intervals. The significance of supra-threshold clusters (defined by the cluster-forming threshold, p<0.01) was then assessed by cluster mass. Specifically, a corrected p-value was assigned to each cluster by assessing its cluster mass with respect to the null distribution of the maximum cluster mass during 10,000 permutation simulations (Hayasaka and Nichols, 2003; Nichols and Holmes, 2002). Cluster coordinates are reported in MNI space, and cluster size reflects the number of voxels in 3x3x3mm MNI space.
 
-## Comparing speed of pattern change across brain regions
+#### Comparing speed of pattern change across brain regions
 
 If the brain regions that showed significant effects in our main analysis represent mental context, then the pattern of activity in these regions should change more slowly over time than the patterns in regions representing sensory information. To quantify the speed of pattern change in a given ROI, we obtained the correlation of the pattern at every time point (TR) with itself at every other time point. (As for our main analysis, the BOLD time course of every voxel was smoothed using a moving average filter of 5 TRs. This temporal smoothing was used as a de-noising technique and did not affect the results.) We then averaged the auto-correlation curves across TRs to obtain a mean auto-correlation function for every region in every participant. The more rapidly a pattern changes over time, the more sharply the auto-correlation should decrease as we move away from 0. To quantify this, we defined the Full-Width Half-Maximum (FWHM) of the auto-correlation curve as the number of time points (TRs) for which the auto-correlation was equal to or greater than half its maximum value (the maximum was always 1.)
 
@@ -463,6 +566,6 @@ Since the anatomical masks we used varied substantially in size, we sought to en
 
 Since the above regression would only account for a linear effect of ROI size on the speed of pattern change, we additionally performed a univariate analysis that calculated the auto-correlation function for each voxel individually. The auto-correlation curve was obtained by correlating the BOLD time course of every voxel with itself at all possible lags. The mean auto-correlation for an ROI was obtained by averaging the auto-correlation curves across all the voxels in that ROI. The FWHM values were then calculated in the same manner as above for every ROI in every participant.
 
-## Replication of Jenkins and Ranganath (2010) 'coarse temporal memory' fMRI analysis
+#### Replication of Jenkins and Ranganath (2010) 'coarse temporal memory' fMRI analysis
 
 As in Jenkins and Ranganath (2010), we correlated each voxel’s activity during encoding of a clip with the accuracy of a participant’s placement of that clip on the timeline. Voxel activity was averaged over a 5-TR window centered on the mid-point of the clip. For each participant, the estimated clip position on the timeline was regressed against actual position. Accuracy was defined as the negative error, which was the absolute value of the residual for a clip. Within participants, voxel activity was then correlated with accuracy across all clips, and the Pearson’s r score was Fisher-transformed. As for the within-participant searchlight analysis, transformed r score maps were registered to 3mm MNI space, and FSL’s randomise was used to control the FWE rate.

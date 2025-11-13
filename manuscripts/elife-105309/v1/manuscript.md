@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/042nb2s44 Department of Chemistry, Massachusetts Institute of Technology Cambridge United States
-2. https://ror.org/042nb2s44 Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology Cambridge United States
+1. Department of Chemistry, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+2. Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ In this study, we employ the ESM2 model to investigate the mutational landscape 
 
 ## Results
 
-## Protein language model for quantifying the mutational landscape of MLO proteins
+### Protein language model for quantifying the mutational landscape of MLO proteins
 
 To examine the mutational tolerance of IDRs and their connection to phase separation, we compiled a database of human proteins with disordered regions. From this, we identified a subset of 939 proteins associated with the formation of MLOs, referred to as MLO-hProt. The Methods section provides additional information on the dataset preparation. The dataset contains proteins with varying numbers of disordered residues, ranging from a few dozen to several thousand per protein (Figure 1A). These proteins are involved in the assembly of various MLOs, including P-bodies, Cajal bodies, and centrosome granules, and are distributed across both nuclear and cytoplasmic compartments.
 
@@ -43,15 +43,27 @@ To examine the mutational tolerance of IDRs and their connection to phase separa
 
 We analyzed proteins in the MLO-hProt dataset using the protein language model, ESM2 (Lin et al., 2023). As illustrated in Figure 1B, ESM2 is a conditional probabilistic model (masked language model) that predicts the likelihood of specific amino acids appearing at a given position, based on the surrounding sequence context.
 
-The mutational tolerance of a specific amino acid at a given site is defined as follows. ESM2 enables the quantification of the probability, or likelihood, of observing any of the 20 amino acids at site i\begin{document}$  i$\end{document}. To assess the preference for a mutant over the wild-type (WT) residue, we calculate the log-likelihood ratio (LLR) between the mutant and WT residues. Consequently, a 20-element vector representing the LLRs for each amino acid can be generated at each site (Figure 1B). This vector is then condensed into a single value, referred to as the ESM2 score, which is derived using an information entropy expression for the LLR probabilities of individual amino acids (Equation 1 in the Methods section).
+The mutational tolerance of a specific amino acid at a given site is defined as follows. ESM2 enables the quantification of the probability, or likelihood, of observing any of the 20 amino acids at site $i$. To assess the preference for a mutant over the wild-type (WT) residue, we calculate the log-likelihood ratio (LLR) between the mutant and WT residues. Consequently, a 20-element vector representing the LLRs for each amino acid can be generated at each site (Figure 1B). This vector is then condensed into a single value, referred to as the ESM2 score, which is derived using an information entropy expression for the LLR probabilities of individual amino acids (Equation 1 in the Methods section).
 
 The ESM2 score provides a measure of the overall mutational tolerance of a given residue. Lower scores indicate higher mutational constraint and reduced flexibility, implying that these residues are more likely essential for protein function, as they exhibit fewer permissible mutational states.
 
-## ESM2 identifies conserved, disordered residues
+### ESM2 identifies conserved, disordered residues
 
 We next used ESM2 to analyze the mutational tolerance of amino acids in both structured and disordered regions. We carried out ESM2 predictions for all proteins in the MLO-hProt dataset and determined the ESM2 scores of individual amino acids. In addition, to quantify structural disorder, we computed the AlphaFold2-predicted Local Distance Difference Test (pLDDT) scores for each residue. The pLDDT scores have been shown to correlate well with protein flexibility and disorder (Jumper et al., 2021), making them a reliable tool for distinguishing structured from unstructured regions. Following previous studies (Ruff and Pappu, 2021; Alderson et al., 2023), we used a threshold of pLDDT = 70 to differentiate ordered from disordered residues. This threshold reflects amino acid composition preferences for folded versus disordered proteins (see Figure 2—figure supplement 1; Ruff and Pappu, 2021; Alderson et al., 2023).
 
 We first analyzed the relationship between ESM2 and pLDDT scores for human Heterochromatin Protein 1α (HP1α, residues 1–191). HP1α is a crucial chromatin organizer that promotes phase separation and facilitates the compaction of chromatin into transcriptionally inactive regions (Larson et al., 2017; Sanulli et al., 2019; Latham and Zhang, 2021; Tortora et al., 2023; Brennan et al., 2024). HP1α comprises both structured and disordered segments, as illustrated in Figure 2A. Here, residues with pLDDT scores exceeding 70 (indicating ordered regions) are shown in white, while disordered segments (pLDDT ≤70) are highlighted in blue. Similar plots for other proteins are included in Figure 2—figure supplement 2. Figure 2B displays the AlphaFold2-predicted structure of HP1α, with residues colored according to their pLDDT scores.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig2-v1.jpg)
+
+**Figure 2.:** (A) The ESM2 scores for amino acids in the human HP1α protein (UniProt ID: P45973) are presented, with residues having predicted Local Distance Difference Test (pLDDT) scores below 70 highlighted in blue to signify regions lacking a defined structure. (B) A detailed view of the mutational landscape across three regions with varying degrees of structural order. On the left, the AlphaFold2-predicted structure of the human HP1α protein is displayed in cartoon representation, with residues colored according to their pLDDT scores. Three specific regions, representing flexible disordered (residues 75–85), conserved disordered (residues 87–92), and folded (residues 120–130) segments, are highlighted in blue, orange, and red, respectively, using ball-and-stick styles. The panels on the right depict the ESM2 log-likelihood ratio (LLR) predictions for each of these regions. Histograms of pLDDT and ESM2 score distributions for structured (C) and disordered (D) residues are presented. Contour lines indicate free energy levels computed as $−log⁡P(pLDDT,ESM2)$, where $P$ is the probability density of residues based on their pLDDT and ESM2 scores. Contours are spaced at 0.5-unit intervals to distinguish areas of differing density.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The structured (predicted Local Distance Difference Test [pLDDT] >70) and the disordered (pLDDT ≤70) residues were identified using the AlphaFold2 pLDDT score.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** ESM2 scores for all amino acids in the dMLO-hProt proteins (full-length) are shown, with UniProt IDs indicated above each plot. Residues with predicted Local Distance Difference Test (pLDDT) ≤70 are blue (disordered). Of these residues, those with ESM2 scores ≤1.5 are colored plum (conserved disordered segments).
 
 Our analysis demonstrated that HP1α’s structured domains consistently yield low ESM2 scores, reflecting strong mutational constraints characteristic of folded regions. These constraints are further evident in the local LLR predictions, as shown in Figure 2B, where we illustrate the folded region G120–T130. Given the critical role of maintaining the 3D conformation of structured domains, mutations with pronounced deleterious effects are likely to significantly disrupt protein folding. This interpretation aligns with prior studies that have reported a strong correlation between ESM2 LLRs and changes in free energy associated with protein structural stability (Brandes et al., 2023; Lin et al., 2023).
 
@@ -61,11 +73,17 @@ We then examined the distribution of ESM2 scores for all amino acids in the MLO-
 
 In contrast, disordered residues (pLDDT ≤70) predominantly show high ESM2 scores (region II, ESM2 score ≥2.0), consistent with the rapid evolution and higher mutational tolerance typical of disordered proteins (Brown et al., 2011; Liu and Huang, 2014; Forman-Kay and Mittag, 2013). However, as shown in Figure 2D, a substantial subset of disordered amino acids also exhibits low ESM2 scores (region I). Given that low ESM2 scores generally reflect mutational constraint in folded proteins, the presence of region I among disordered residues suggests that certain disordered amino acids are evolutionarily conserved and likely functionally significant.
 
-## ESM2 scores correlate with sequence conservation
+### ESM2 scores correlate with sequence conservation
 
 Our analysis indicates that a substantial proportion of amino acids within disordered regions exhibit low mutational tolerance. To evaluate this hypothesis, we conducted an evolutionary analysis of MLO-hProt proteins, examining the conservation patterns of individual amino acids.
 
 This analysis was based on an MSA of homologs of MLO-hProt proteins. We employed HHblits for homolog detection, a method particularly suited to disordered proteins as it effectively captures distant sequence similarities in highly divergent sequences (Sharma et al., 2016; Jarnot et al., 2022; Peng et al., 2023). The presence of folded domains in these proteins facilitates reliable alignment between references and their query homologs. To exclude sequences that no longer qualify as homologs, we filtered for sequences with at least 20% identity to the reference, resulting in homologous sets ranging from tens to thousands per protein (Figure 3A). From these aligned sequences, we calculated the conservation score for each reference amino acid as the ratio of its occurrence in homologs to the total number of sequences (see Equation 2 in the Methods section).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig3-v1.jpg)
+
+**Figure 3.:** (A) Estimating amino acid conservation using multiple sequence alignment. The conservation score calculation is demonstrated for human HP1α protein along with a subset of its homologs found by HHblits. In the aligned sequences, missing residues appear as dashed lines, insertions are shown in lowercase letters, and mismatches are highlighted in red. The three rows below the alignment indicate at position $i$, the number of conserved residues from the reference sequence to the query sequences; $N_{i}$; the total number of existing residues; and $CS_{i}$, the conservation score calculated from Equation 2, respectively. The right panel illustrates the distribution of homolog counts for each MLO-hProt found by HHblits. (B) Histograms showing conservation and ESM2 score distributions for all residues in MLO-hProt, grouped by predicted Local Distance Difference Test (pLDDT) scores from AlphaFold2. The contour lines denote free energy levels, calculated as $−log⁡P(CS,ESM2)$, where $P$ is the probability density of residues based on their conservation and ESM2 scores. Contours are spaced at 0.5-unit intervals to highlight regions of distinct density. (C) Correlation between mean conservation and ESM2 scores for amino acids classified by structural order levels. Pearson correlation coefficients, $r$, are reported in the legends.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig3-figsupp1-v1.jpg)
 
 Our findings reveal a strong correlation between ESM2 scores and conservation scores. In Figure 3B, we present the histograms of ESM2 and conservation scores for all amino acids from MLO-hProt proteins. Given that folded domains generally show higher conservation scores than disordered regions, we further classified residues into four groups based on their AlphaFold2 pLDDT scores to assess conservation patterns across varying levels of structural disorder. This stratification allowed us to analyze conservation trends in detail. Across all categories, we observed bimodal distributions, reinforcing the correlation between increasing ESM2 scores and decreasing conservation.
 
@@ -73,19 +91,63 @@ The conservation of amino acids with low ESM2 scores is also apparent in Figure 
 
 While ESM2 scores align closely with conservation scores, the relative conservation of specific amino acids varies across structural order groups. In more disordered regions, hydrophilic residues such as glutamine (Q), lysine (K), and arginine (R) exhibit lower ESM2 scores, indicating that mutations in these residues are particularly detrimental. Conversely, hydrophobic residues like valine (V) and isoleucine (I) show higher ESM2 scores, suggesting they experience reduced evolutionary constraints. In more folded domains, hydrophobic residues such as W and F are more conserved (see Figure 3—figure supplement 1), consistent with the characteristic conservation patterns of proteins across different disorder levels (Yang et al., 2023; Chavali et al., 2020). Overall, these findings strongly support our hypothesis that ESM2 scores effectively capture evolutionary conservation, enabling the identification of functionally significant residues through the mutational landscape, independent of structural flexibility.
 
-## Regions driving phase separation are enriched with conserved, disordered residues
+### Regions driving phase separation are enriched with conserved, disordered residues
 
 The presence of evolutionarily conserved disordered residues raises the question of their functional significance. To explore this, we identified disordered regions of MLO-hProt using a pLDDT score ≤70 and partitioned these regions into two categories: drivers (dMLO-hIDR), which actively drive phase separation, and clients (cMLO-hIDR), which are present in MLOs under certain conditions but do not promote phase separation themselves (Farahi et al., 2021). Additionally, IDRs from human proteins not associated with MLOs, termed nMLO-hIDR, were included as a control. To enhance statistical robustness, we extended our dataset by incorporating driver proteins from additional species (Orti et al., 2024), resulting in the expanded dMLO-IDR dataset. Figure 4—figure supplement 1 shows the amino acid composition across these datasets. Beyond the pLDDT-based classification, the majority of residues in these datasets are also predicted to be disordered by various computational tools and supported by experimental evidence (Figure 4—figure supplements 2 and 3).
 
 As illustrated in Figure 4A, there is a progressive increase in the fraction of conserved disordered residues and a corresponding decline in flexible disordered residues from non-phase-separating proteins (nMLO-hIDR) to clients (cMLO-hIDR) and drivers (dMLO-hIDR and dMLO-IDR) (see also Figure 4—figure supplement 4). Driver proteins, particularly those in the expanded dataset, display a notable reduction in flexible residues. These findings imply that disordered regions with a role in phase separation tend to contain functionally significant and evolutionarily conserved regions.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-v1.jpg)
+
+**Figure 4.:** (A) Population of ESM2 score for disordered residues in proteins from nMLO-hIDR, cMLO-hIDR, dMLO-hIDR, and dMLO-IDR datasets. Red dots indicate the mean values of the respective distributions. The selection of proteins in the dMLO-IDR dataset is shown in the right panel. See also methods for details in dataset preparation. (B) The classification of three IDR functional groups based on their overlap with the experimentally identified phase separation (PS) segments. (C) The distribution of the ESM2 score for residues in three IDR groups, driving (blue), participating (orange), and non-participating (green) shown in the violin plot. The distribution of the conservation score (CS) for residues in three IDR groups shown in the violin plot in the left panel with same coloring scheme as in the right. Pairwise statistical comparisons were conducted using two-sided Mann–Whitney U tests on the ESM2 score distributions (null hypothesis: the two groups have equal medians). p-values indicate the probability of observing the observed rank differences under the null hypothesis. Statistical significance is denoted as follows: ***p < 0.001; **p < 0.01; *p < 0.05; †p < 0.10 (marginal); n.s.: not significant, p ≥ 0.10.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Panels (A, B) show amino acid composition of disordered and folded residues, respectively. For nMLO-/cMLO-/dMLO-hProt sets, order uses AlphaFold2-predicted Local Distance Difference Test (pLDDT); for dMLO-IDR, disorder is from MLOsmetaDB (Orti et al., 2024).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Computational predictors (fraction disordered). (B) Experimental techniques (fraction disordered).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Top-left: pie chart of fraction annotated as disordered versus not for MLO-hIDR; top-right: histogram of lengths of the 24% lacking annotations; bottom: distributions analogous to Figure 4—figure supplement 2. (B) Same analyses for nMLO-hIDR.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Two-sided Mann–Whitney U tests; significance: ***p < 0.001; **p < 0.01; *p < 0.05.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Counts (and circle areas) per subgroup; overlaps arise when subgroups share proteins. (B) Amino acid proportions across IDRs per subgroup.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Fraction of conserved residues per region relative to total conserved per protein; ‘LLPS’ = driving/participating (Figure 4B), ‘non-LLPS’ = not involved. (B) Per-region probability of conservation (conserved count/segment length). Means shown with diamonds. Thresholds: ESM2 ≤0.5, ≤1.0, ≤1.5. Two-sided Mann–Whitney U tests; significance: ***p < 0.001; **p < 0.01; *p < 0.05; †p < 0.10 (marginal); n.s.: not significant, p ≥ 0.10.
+
 We further examined the sequence location of conserved, disordered residues in driver proteins (dMLO-IDR). For these proteins, experimentally verified segments have been identified, the deletion or mutation of which impairs phase separation (Mészáros et al., 2020; You et al., 2020; Ning et al., 2020; Li et al., 2020; Orti et al., 2024; Figure 4B). These segments can include both structured and disordered regions. Herein, if a disordered region constitutes over 50% of the phase-separating segment, we designate it as ‘driving’, indicating a likely critical contribution to phase separation. If the disordered region represents less than 50%, we classify it as ‘participating’, with a potentially limited role. Finally, if there is no overlap between the disordered region and the phase-separating segment, we categorize it as ‘non-participating’. The number of segments in the three IDR groups, along with their amino acid compositions, is shown in Figure 4—figure supplement 5.
 
 We then analyzed the distribution of ESM2 predictions across these IDR groups. In alignment with Figure 3A, we observed a significantly higher proportion of conserved disordered residues within driving IDRs, while few were present in non-participating IDRs. Supporting the ESM2 predictions, conservation analysis based on MSA also indicated that driving IDRs contain a greater concentration of conserved residues (Figure 4C). Collectively, these findings demonstrate that ESM2 effectively identifies evolutionarily conserved functional sites, enriched in IDR regions likely involved in driving phase separation.
 
-## Conserved, disordered residues form motifs
+### Conserved, disordered residues form motifs
 
 Finally, we investigated the chemical identities of conserved residues within driving IDRs to understand their potential role in phase separation. Figure 5A displays the average ESM2 LLR predictions for each of the 20 amino acids in the mutational matrix, indicating that mutations to most amino acids are generally unfavorable, as reflected by their low, negative LLR values. This trend is particularly pronounced in driving IDRs compared to nMLO-IDRs or non-participating IDRs (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mean log-likelihood ratio (LLR) values for the 20 amino acids calculated by averaging across all residues of each amino acid type. (B) Clustering of amino acids based on the two UMAP embeddings of their LLR vectors presented in part A. The dashed lines are manually added for a clear visualization of the separation of each group. (C) The percent of conserved residues locating in motifs for all amino acids. (D) Word cloud of motifs identified by ESM2. The word font size reflects the relative motif length, while the color represents the proportion of ‘sticker’ residues (Y, F, W, R, K, and Q) within each motif.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Structured residues from nMLO-hIDR (predicted Local Distance Difference Test [pLDDT] >70), (B) disordered residues from nMLO-hIDR (pLDDT ≤70), (C) driving intrinsically disordered regions (IDRs) from dMLO-IDR, and (D) non-participating IDRs from dMLO-IDR.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Box plot comparing conserved amino acids in non-motifs versus motifs with scatter overlay. (B) Proportion conserved within motifs across minimum motif length thresholds.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/105309/elife-105309-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** ClinVar (March 2024). (A) Log-likelihood ratio (LLR) distributions for mutations in folded versus disordered residues by ClinVar categories (Landrum et al., 2014; Landrum et al., 2018); red dashed line: LLR = −5.4 (ESM2 score 0.5 if uniform). (B) LLR distributions across membraneless organelle (MLO) databases (pathogenic vs. benign as defined). (C) ClinVar category pies for variants in motif versus non-motif regions of dMLO-IDR and MLO-hProt.
 
 We further characterize these conserved residues within driving IDRs. Using hierarchical clustering on two UMAP-derived embeddings from the LLR vectors, we grouped amino acids into five clusters (Figure 5B). This approach distinguishes more conserved residues (Groups I–III) from the more flexible residues (Groups IV and V). Notably, W, F, and Y—often referred to as ‘stickers’ due to their crucial role in phase separation (Wang et al., 2018; Saar et al., 2021; Ozawa et al., 2023; Rekhi et al., 2024)—are uniquely grouped within the highly conserved Group I. These findings support the expectation that amino acids essential to phase separation are often evolutionarily conserved, aligning with their central role in functional stability.
 
@@ -99,7 +161,7 @@ These results suggest that IDRs crucial for phase separation frequently contain 
 
 We have utilized the protein language model ESM2 to investigate the mutational landscape of IDRs. Our analysis reveals a substantial population of mutation-resistant amino acids. MSA confirms their evolutionary conservation. Notably, regions actively involved in phase separation are enriched with these conserved, disordered residues, supporting their potential role in the formation of MLOs. These findings underscore evolutionary constraints on specific IDRs to preserve their functional roles in scaffolding phase separation processes.
 
-We emphasize that the results presented in Figure 4 do not directly demonstrate that conserved residues are preferentially located in regions associated with phase separation. Although these regions are more enriched in conserved amino acids, their total sequence length can be smaller than that of non-phase-separating regions. As a result, the absolute number of conserved residues may still be higher outside phase-separating regions. To quantitatively assess this, we calculated, for each protein in the MLO-hProt dataset, the probability p\begin{document}$  p$\end{document} of finding conserved residues within regions contributing to phase separation. These regions include both ‘driving’ and ‘participating’ segments, as defined in Figure 4 of the main text. Figure 4—figure supplement 6 shows the distribution of p\begin{document}$  p$\end{document} across all proteins. For comparison, we also present the distribution of 1−p\begin{document}$  1-p$\end{document}, which reflects the probability of finding conserved residues in non-phase-separating regions. While the average value of p\begin{document}$  p$\end{document} exceeds 0.5, indicating a trend toward conserved residues being more frequently located in phase-separating regions, the difference between the two distributions is not statistically significant. Future studies with expanded datasets may be necessary to clarify this trend.
+We emphasize that the results presented in Figure 4 do not directly demonstrate that conserved residues are preferentially located in regions associated with phase separation. Although these regions are more enriched in conserved amino acids, their total sequence length can be smaller than that of non-phase-separating regions. As a result, the absolute number of conserved residues may still be higher outside phase-separating regions. To quantitatively assess this, we calculated, for each protein in the MLO-hProt dataset, the probability $p$ of finding conserved residues within regions contributing to phase separation. These regions include both ‘driving’ and ‘participating’ segments, as defined in Figure 4 of the main text. Figure 4—figure supplement 6 shows the distribution of $p$ across all proteins. For comparison, we also present the distribution of $1−p$, which reflects the probability of finding conserved residues in non-phase-separating regions. While the average value of $p$ exceeds 0.5, indicating a trend toward conserved residues being more frequently located in phase-separating regions, the difference between the two distributions is not statistically significant. Future studies with expanded datasets may be necessary to clarify this trend.
 
 Related work. Numerous studies have sought to identify functionally relevant amino acid groups within IDRs (Wang et al., 2018; Li et al., 2024; Latham and Zhang, 2021; Zhang et al., 2021; Saar et al., 2021; Liu et al., 2025; Schuster et al., 2020; Pak et al., 2016; Cohan et al., 2022; Dao et al., 2018). For instance, using multiple sequence alignment, several groups have identified evolutionarily conserved residues that contribute to phase separation (Dasmeh et al., 2022; Ho and Huang, 2022; Jiang et al., 2015; Tatavosian et al., 2019; Schuster et al., 2020; Yang et al., 2019; Larson et al., 2017; DiRusso et al., 2023; Mitrea et al., 2016; Xiao et al., 2019). Alderson et al. employed AlphaFold2 to detect disordered regions with a propensity to adopt structured conformations, suggesting potential functional relevance (Alderson et al., 2023).
 
@@ -123,38 +185,46 @@ Future studies should aim to dissect the roles of these motifs in isolation and 
 
 ## Methods
 
-## Data collection and preprocessing
+### Data collection and preprocessing
 
 Human protein dataset. To construct the MLO-hProt dataset, we initially identified human proteins with disordered residues using the UniProtKB database (Coudert et al., 2023). From these proteins, we selected candidates with at least 10% of their residues exhibiting a pLDDT score ≤70, yielding a total of 5121 candidates. These were then cross-referenced with entries in the CD-code Database (Rostam et al., 2023), yielding a final subset of 939 proteins associated with MLO formation (Figure 1A). The remaining 4182 proteins, which were not linked to MLO formation, comprise the nMLO-hProt dataset. We further identified disordered regions from the datasets by selecting residues with pLDDT score ≤70, referred to as MLO-hIDR and nMLO-hIDR. The CD-code Database also classifies the MLO-hProt proteins into two categories: drivers (n = 82) and clients (n = 814), with the corresponding disordered regions labeled as dMLO-hIDR and cMLO-hIDR. Additional information on MLO-hIDR candidate proteins and their biological roles is available in (MLO-hIDR.csv).
 
 dMLO-IDR dataset. In addition to datasets comprising only human proteins, we developed a specialized dMLO-IDR database incorporating proteins from diverse species involved in driving phase separation. This database includes all Driver proteins cataloged in the MLOsMetaDB database (Orti et al., 2024), which documents experimentally validated disordered and phase-separating regions. Beginning with 780 Driver proteins, we filtered the dataset to retain entries where disordered regions overlap with phase-separating segments, yielding 399 candidates across 40 species (Figure 4A). To further refine the dataset, we analyzed sequence identity, excluding homologous pairs with sequence identity exceeding 50%. This process resulted in a final set of 341 non-redundant candidates. These proteins play critical roles in mediating the formation of various MLOs, including P-bodies, stress granules, paraspeckles, and centrosomes (see Supplementary file 3 (dMLO-IDR.csv)).
 
-## AlphaFold2 score for structural order
+### AlphaFold2 score for structural order
 
 The pLDDT scores for human proteins were retrieved from the AlphaFold Protein Structure Database (Varadi et al., 2024) by selecting the Homo sapiens organisms (Reference Proteome ID: UP000005640).
 
-## ESM2 predictions for mutational preferences
+### ESM2 predictions for mutational preferences
 
-We employed the code and pretrained parameters for ESM2 available from the model’s official GitHub repository at https://github.com/facebookresearch/esm (Hsu et al., 2023) to conduct mutational predictions. To optimize computational efficiency, we utilized the esm2_t33_650M_UR50D model, which has 650 million parameters and achieves prediction accuracy comparable to the larger 15B parameter model (Brandes et al., 2023). In addition to calculating the LLR for individual mutations, we defined an ESM2 score at each position to quantify mutational tolerance, formulated as(1)ESM2 Score=−∑i=120(eLLRi∑j=120eLLRjlog⁡(eLLRi∑j=120eLLRj))\begin{document}$$\displaystyle  \text{ESM2 Score} = -\sum_{i=1}^{20} \left(\frac{e^{\text{LLR}_i}}{\sum_{j=1}^{20} e^{\text{LLR}_j}} \log \left(\frac{e^{\text{LLR}_i}}{\sum_{j=1}^{20} e^{\text{LLR}_j}} \right) \right)$$\end{document}
+We employed the code and pretrained parameters for ESM2 available from the model’s official GitHub repository at https://github.com/facebookresearch/esm (Hsu et al., 2023) to conduct mutational predictions. To optimize computational efficiency, we utilized the esm2_t33_650M_UR50D model, which has 650 million parameters and achieves prediction accuracy comparable to the larger 15B parameter model (Brandes et al., 2023). In addition to calculating the LLR for individual mutations, we defined an ESM2 score at each position to quantify mutational tolerance, formulated as
 
-where LLRi\begin{document}$  \text{LLR}_{i}$\end{document} denotes the LLR value for the ith amino acid mutation type.
+$$
+ESM2 Score=−\sumi=120(\frac{e^{LLR_{i}}}{\sumj=120e^{LLR_{j}}}log⁡(\frac{e^{LLR_{i}}}{\sumj=120e^{LLR_{j}}}))
+$$
 
-## Evolutionary sequence analysis
+where $LLR_{i}$ denotes the LLR value for the ith amino acid mutation type.
+
+### Evolutionary sequence analysis
 
 We performed MSA analysis using HHblits from the HH-suite3 software suite (Suzek et al., 2007; Suzek et al., 2015; Remmert et al., 2012; Steinegger et al., 2019), a widely used open-source toolkit known for its sensitivity in detecting sequence similarities and identifying protein folds. HHblits builds MSAs through iterative database searches, sequentially incorporating matched sequences into the query MSA with each iteration. Sequence alignment was performed using the full-length protein sequences, encompassing both folded and disordered regions.
 
 The HH-suite3 software was obtained from its GitHub repository (https://github.com/soedinglab/hh-suite; Soeding et al., 2020). Homologous sequences were identified through searches against the UniRef30 protein database (release 2023/02) (Mirdita et al., 2017). For each query, we performed three iterations of HHblits searches, incorporating sequences from profile HMM matches with an E-value threshold of 0.001 into the query MSA in each cycle. Using a lower E-value threshold (closer to 0) ensures greater sequence similarity among the matches, while multiple iterations enhance the alignment’s depth and accuracy. The resulting alignments in A3M format were converted to CLUSTAL format using the reformat.pl script provided in HH-suite, aligning all sequences to a uniform length (Figure 3A).
 
-To refine alignment quality by focusing on closely related homologs, we filtered out sequences with ≤20% identity to the query, excluding weakly related sequences where only short segments show similarity to the reference. For each sequence, we calculated the percent identity by counting the number of positions, denoted as n\begin{document}$  n$\end{document}, at which the amino acid matches the reference. The percent identity was then computed as n/N\begin{document}$  n/N$\end{document}, where N\begin{document}$  N$\end{document} represents the total length of the aligned reference sequence. This total includes residues in folded and disordered regions, as well as gap positions introduced during alignment.
+To refine alignment quality by focusing on closely related homologs, we filtered out sequences with ≤20% identity to the query, excluding weakly related sequences where only short segments show similarity to the reference. For each sequence, we calculated the percent identity by counting the number of positions, denoted as $n$, at which the amino acid matches the reference. The percent identity was then computed as $n/N$, where $N$ represents the total length of the aligned reference sequence. This total includes residues in folded and disordered regions, as well as gap positions introduced during alignment.
 
-The conservation score CSi for position i\begin{document}$  i$\end{document} was then calculated from the MSA as(2)CSi=ni(ref=query)Ni(non\_gap),\begin{document}$$\displaystyle \text{CS}_i = \frac{n_i(\text{ref=query})}{N_i(\text{non\_gap})},$$\end{document}
+The conservation score CSi for position $i$ was then calculated from the MSA as
 
-where ni(ref=query)\begin{document}$  n_{i}(\text{ref=query})$\end{document} represents the number of times the residues from the reference sequence appear across all sequences, and Ni(non\_gap)\begin{document}$  N_{i}(\text{non\_gap})$\end{document} represents the total non-gap residues across the aligned sequences.
+$$
+CS_{i}=\frac{n_{i}(ref=query)}{N_{i}(non\_gap)},
+$$
 
-## Motif identification
+where $n_{i}(ref=query)$ represents the number of times the residues from the reference sequence appear across all sequences, and $N_{i}(non\_gap)$ represents the total non-gap residues across the aligned sequences.
 
-We defined motifs as contiguous stretches of amino acid sequences with an average ESM2 score of 0.5 or lower. To identify motifs within a given IDR, we implemented the following iterative procedure. Starting from either the N- or C-terminus of the sequence, we first locate the initial residue i\begin{document}$  i$\end{document} whose ESM2 score falls within 0.5. From i\begin{document}$  i$\end{document}, residues are sequentially appended in the direction toward the opposite terminus until the segment’s average ESM2 score exceeds 0.5; the first residue to breach this threshold is denoted j\begin{document}$  j$\end{document}. The segment (i,i+1,…,j−1)\begin{document}$  (i,i+1,\dots,j-1)$\end{document} is then recorded as a candidate motif. This process repeats starting from j\begin{document}$  j$\end{document} until the end of the IDR is reached.
+### Motif identification
+
+We defined motifs as contiguous stretches of amino acid sequences with an average ESM2 score of 0.5 or lower. To identify motifs within a given IDR, we implemented the following iterative procedure. Starting from either the N- or C-terminus of the sequence, we first locate the initial residue $i$ whose ESM2 score falls within 0.5. From $i$, residues are sequentially appended in the direction toward the opposite terminus until the segment’s average ESM2 score exceeds 0.5; the first residue to breach this threshold is denoted $j$. The segment $(i,i+1,…,j−1)$ is then recorded as a candidate motif. This process repeats starting from $j$ until the end of the IDR is reached.
 
 We perform this full procedure independently from both termini and designate the final motif as the intersection of the two candidate‐motif sets. This bidirectional overlap strategy excludes terminal residues that might transiently satisfy the average‐score criterion only due to adjacent low‐scoring regions, thereby isolating the conserved core of each motif. All other residues—those not included in either directional pass—are classified as non‐motif regions, minimizing peripheral artifacts.
 
-When two motifs are in close proximity along the sequence, they may be merged into a single motif. Specifically, if the starting position of one motif is within eight residues of the ending position of another, we define a candidate segment as the sequence spanning both motifs and the intervening residues. If the candidate segment’s average ESM2 score is below 0.5, it is included as a merged motif, replacing the individual motifs in the final list (Supplementary file 1 (ESM2_motif_with_exp_ref.csv)). In the analyses shown in Figure 5, we showed all motifs with n≥\begin{document}$  n$\end{document} ≥ 4; however, varying motif minimal length n\begin{document}$  n$\end{document} does not alter the overall conclusions (Figure 5—figure supplement 2B).
+When two motifs are in close proximity along the sequence, they may be merged into a single motif. Specifically, if the starting position of one motif is within eight residues of the ending position of another, we define a candidate segment as the sequence spanning both motifs and the intervening residues. If the candidate segment’s average ESM2 score is below 0.5, it is included as a merged motif, replacing the individual motifs in the final list (Supplementary file 1 (ESM2_motif_with_exp_ref.csv)). In the analyses shown in Figure 5, we showed all motifs with $n\geq$ ≥ 4; however, varying motif minimal length $n$ does not alter the overall conclusions (Figure 5—figure supplement 2B).

@@ -33,7 +33,7 @@
 
 ## Abstract
 
-The intricate lattice of Gn and Gc glycoprotein spike complexes on the hantavirus envelope facilitates host-cell entry and is the primary target of the neutralizing antibody-mediated immune response. Through study of a neutralizing monoclonal antibody termed mAb P-4G2, which neutralizes the zoonotic pathogen Puumala virus (PUUV), we provide a molecular-level basis for antibody-mediated targeting of the hantaviral glycoprotein lattice. Crystallographic analysis demonstrates that P-4G2 binds to a multi-domain site on PUUV Gc and may preclude fusogenic rearrangements of the glycoprotein that are required for host-cell entry. Furthermore, cryo-electron microscopy of PUUV-like particles in the presence of P-4G2 reveals a lattice-independent configuration of the Gc, demonstrating that P-4G2 perturbs the (Gn-Gc) 4 lattice. This work provides a structure-based blueprint for rationalizing antibody-mediated targeting of hantaviruses.
+The intricate lattice of Gn and Gc glycoprotein spike complexes on the hantavirus envelope facilitates host-cell entry and is the primary target of the neutralizing antibody-mediated immune response. Through study of a neutralizing monoclonal antibody termed mAb P-4G2, which neutralizes the zoonotic pathogen Puumala virus (PUUV), we provide a molecular-level basis for antibody-mediated targeting of the hantaviral glycoprotein lattice. Crystallographic analysis demonstrates that P-4G2 binds to a multi-domain site on PUUV Gc and may preclude fusogenic rearrangements of the glycoprotein that are required for host-cell entry. Furthermore, cryo-electron microscopy of PUUV-like particles in the presence of P-4G2 reveals a lattice-independent configuration of the Gc, demonstrating that P-4G2 perturbs the (Gn-Gc)4 lattice. This work provides a structure-based blueprint for rationalizing antibody-mediated targeting of hantaviruses.
 
 ## Introduction
 
@@ -47,23 +47,55 @@ Although elicitation of a productive nAb response constitutes an essential compo
 
 ## Results
 
-## Recombinantly derived and Gc-specific bank vole mAb P-4G2 potently neutralizes PUUV
+### Recombinantly derived and Gc-specific bank vole mAb P-4G2 potently neutralizes PUUV
 
 The hybridoma cell line producing the Gc-specific neutralizing mAb P-4G2 was reported in 1992 following experimental infection of the natural reservoir species, bank voles (Myodes glareolus), with PUUV (Lundkvist and Niklasson, 1992). While mAb P-4G2 has been shown to be potently neutralizing against PUUV, with a mAb concentration of ~4 nM (0.6 µg/ml) (Lundkvist and Niklasson, 1992) resulting in 80% inhibition of PUUV infection in focus reduction neutralization tests (Heiskanen et al., 1997; Lundkvist and Niklasson, 1992; Lundkvist et al., 1993c), there has been a paucity of information with regard to the structural basis for neutralization by this or any other Gc-specific antibody. We rescued the sequence of the P-4G2 variable heavy (VH) and kappa (VK) chain regions (see Figure 1—figure supplement 1) from hybridoma cells by PCR with gene-specific primers originally designed for mouse VH and VK chains (von Boehmer et al., 2016). The resulting recombinantly produced mAb P-4G2 comprised bank vole variable and mouse constant regions and, consistent with previously reported in vitro studies of hybridoma-derived mAb P-4G2 (Hepojoki et al., 2010; Lundkvist and Niklasson, 1992), potently neutralizes PUUV in a hantavirus-pseudotyped VSV-ΔG RFP (Red Fluorescent Protein) neutralization assay at an IC50 value of 0.088 μg/ml (Figure 1).
 
-## Crystal structure of the Fab P-4G2 in complex with PUUV Gc reveals the P-4G2 epitope on pre-fusion Gc
+![Figure 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig1-v1.jpg)
+
+**Figure 1.:** (A) Composition of the complementarity-determining regions (CDRs) of the mAb P-4G2 antigen-binding fragment (Fab) heavy (VH) and kappa (VK) chains. For the full sequence of Fab P-4G2 variable regions, please see Figure 1—figure supplement 1. (B) A hantavirus-pseudotyped VSV-ΔG RFP neutralization assay shows that recombinantly produced mAb P-4G2 neutralizes Puumala virus- and Andes virus-pseudotyped VSV (black and blue traces, respectively), but not Hantaan virus-pseudotyped VSV (gray trace). Each neutralization assay was carried out three times in duplicate. A representative experiment is shown. Error bars represent the range of the value for the experiment performed in duplicate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Fab P-4G2 variable regions with variable regions from representative mouse (Mus musculus) antibodies. Mouse homologues used in the alignment were identified by NCBI BLAST (Altschul et al., 1990; Johnson et al., 2008). The P-4G2 heavy chain variable region (VH) was aligned with the VH sequence from mouse IgG (GenBank: BAN14007.1). The P-4G2 light chain variable region (VK) was aligned with the VK sequence from mouse IgG (GenBank: ATI98427.1). Complementarity-determining regions (CDRs) of P-4G2 are annotated under the alignment.
+
+### Crystal structure of the Fab P-4G2 in complex with PUUV Gc reveals the P-4G2 epitope on pre-fusion Gc
 
 To ascertain the molecular basis for P-4G2-mediated recognition of PUUV, we determined the crystal structure of the PUUV Gc ectodomain in complex with the antigen-binding fragment (Fab) of P-4G2 to 3.50 Å resolution (Figure 2, Figure 2—figure supplement 1, and Supplementary file 1). Consistent with previous studies of hantaviral Gc glycoproteins (Guardado-Calvo et al., 2016; Willensky et al., 2016), PUUV Gc assumes a class II fusion glycoprotein architecture composed of three domains (domains I−III), with domain I and domain II forming an elongated structure and domain III forming inter-domain contacts at the side of domain I. Fab P-4G2 recognizes a protein-specific epitope at the junction of domain I and domain II of PUUV Gc, distal from the hydrophobic fusion loop at the tip of domain II (Figure 2). The epitope comprises ~830 Å2 of buried surface area and all complementarity-determining region (CDR) loops participate in the interaction (Figure 2—figure supplement 2). Arg100 (CDRH3) is the most centrally located paratope residue, and is predicted to form multiple hydrogen bonds and a putative salt bridge with Gc residue Glu725 and across the antibody−antigen interface (Figure 2B and Figure 2—figure supplement 2; interacting residues were identified using the PDBePISA server [Krissinel and Henrick, 2007]). Site-directed mutagenesis of Arg100 to Ala considerably reduced the potency of P-4G2 to neutralize PUUV (Figure 2C). One Fab P-4G2−PUUV Gc complex was observed in the crystallographic asymmetric unit, and there was no evidence for the formation of higher-order Gc dimers or trimers, such as those observed in pre- and post-fusion class II fusion glycoprotein structures (Modis, 2013).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig2-v1.jpg)
+
+**Figure 2.:** (A) Crystal structure of Fab P-4G2−PUUV Gc complex at 3.5 Å resolution. PUUV Gc, a class II fusion protein, comprises domains I−III (colored red, yellow, and blue, respectively), a Gc C-terminal tail (light blue) and the viral fusion loop at Ser771–Thr785 (orange). Fab P-4G2, comprised of a heavy chain (dark gray) and a light chain (white), is observed bound at the junction of domains I and II on PUUV Gc. A domain schematic of the PUUV glycoprotein precursor with the signal peptide (SP), transmembrane domains (TM), intra-virion domain (IV), and WAASA signal peptidase cleavage site is shown alongside the construct used in crystallization (schematic was produced using the DOG software [Ren et al., 2009]). N-linked glycosylation sequons are shown in the domain schematic as pins and the N-linked glycan observed at Asn937 is rendered as sticks. There was no evidence of glycosylation at Asn898. (B) A close-up view of the central portion of the Fab P-4G2-PUUV Gc interface around paratope residue Arg100 of the Fab P-4G2 CDRH3. Residues contributing to a putative hydrogen bonding network (indicated by dashed lines) are rendered as sticks and were identified using the PDBePISA server (Krissinel and Henrick, 2007). (C) Site-directed mutagenesis of Arg100 to Ala reduces the neutralizing potency of mAb P-4G2, confirming the importance of this residue in the interaction interface. We compared the neutralization potency of mAb P-4G2 R100A mutant (magenta trace) to that of the wild-type mAb P-4G2 (black trace) against PUUV pseudovirus in a hantavirus-pseudotyped VSV-ΔG RFP neutralization assay. The virus neutralization assay presented in panel C was conducted as a part of the same experiment as the neutralization assay presented in Figure 1B. Each neutralization assay was carried out three times in duplicate. A representative experiment is shown. Error bars represent the range of the value for the experiment performed in duplicate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Stereo-view of the interaction between PUUV Gc and CDRH3 of Fab P-4G2, with the simulated annealing composite omit electron density map shown contoured at 1σ. The structure is shown in stick representation, with nitrogen atoms colored blue, oxygen atoms red, and carbon atoms yellow for Gc, salmon for Fab P-4G2 CDRH2, and magenta for Fab P-4G2 CDRH3, respectively. Arginine 100 of CDRH3 and residues Ile726 and Glu725 of Gc, which are predicted by the PDBePISA server to form hydrogen bonds and a salt bridge with Arg100, are labeled.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Paratope and epitope residues involved in hydrogen bonding (dashed black lines) for contacts made by the heavy (A) and light (B) chains were identified using the PDBePISA server (Krissinel and Henrick, 2007). Residues involved in hydrophobic interactions (dashed blue lines) were identified with LigPlot+ (Laskowski and Swindells, 2011). The interface was visualized using LigPlot+. Residues contributing to hydrophobic interactions are shown as curved lines with dashes. Atoms in residues participating in hydrogen bonding are depicted as circles, with oxygen in red, carbon in black, and nitrogen in blue.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** A sequence alignment of Gc glycoproteins from Puumala virus (PUUV; CAB43026.1), Andes virus (ANDV; AAO86638.1), and Hantaan virus (HTNV; AIL25319.1) numbered according to PUUV Gc. In the alignment, fully conserved residues are shown white on a red background, partially conserved residues red on a white background, and variable residues are rendered black and blue. Residues comprising the mAb P-4G2 epitope were identified using the PDBePISA server (Krissinel and Henrick, 2007) and are demarcated by dark gray bars above the alignment. The relatively high level of similarity between PUUV and ANDV is in line with the ability of mAb P-4G2 to cross-neutralize ANDV-pseudotyped VSV (Figure 1).
+
 Consistent with the hypothesis that mAb P-4G2 targets a pre-fusion conformation of PUUV Gc representative of that displayed on the native virion surface, structure overlay analysis reveals that PUUV Gc from the Gc–P-4G2 complex (PUUV GcGc–P-4G2) is highly similar to the recently reported pre-fusion state of Andes virus (ANDV) Gc (Serris et al., 2020), and is distinct from the known PUUV Gc post-fusion structure (Willensky et al., 2016; Figure 3 and Figure 3—figure supplement 1). Notably, the conformations of domain III from both the recently determined ANDV Gc (Serris et al., 2020) and our PUUV Gc contrast those observed across hantavirus Gc structures (Figure 3—figure supplement 1), suggesting that this region is likely flexible in the absence of the stabilizing environment of the glycoprotein lattice or crystal environments. Additionally, the conformation of PUUV GcGc–P-4G2 closely resembles class II fusion protein pre-fusion states, such as those observed for RVFV Gc (PDB 4HJ1) and ZIKV E (PDB 5IRE) (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig3-v1.jpg)
+
+**Figure 3.:** (A) Puumala virus (PUUV) Gc from the Gc-4G2 complex displays a domain III conformation distinct from that observed in (B) post-fusion PUUV Gc (Willensky et al., 2016). (C) Fab P-4G2 binding precludes the rearrangement of domain III (blue arrow) to the post-fusion conformation. PUUV Gc is represented as a surface, with the epitope of Fab P-4G2 outlined dark gray. Fab P-4G2 is shown in ribbon representation, with heavy and light chains colored gray and white, respectively. (D) Top view of the P-4G2 epitope shows that it overlaps with the neutralization evasion mutation sites reported for PUUV-neutralizing human antibody 1C9 (Hörling and Lundkvist, 1997; Lundkvist et al., 1993a) and HTNV-neutralizing mouse antibodies HC02 and 16E6 (Arikawa et al., 1989; Wang et al., 1993). Furthermore, the epitope overlaps with the binding site of domain III in the post-fusion conformation (medium blue). Interfacing residues were identified using the PDBePISA server (Krissinel and Henrick, 2007).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The conformation of PUUV GcGc-P-4G2 is distinct from (B) the previously reported PUUV Gc post-fusion structure (PDB 5J9H) (Willensky et al., 2016), and from (C) the intermediate configuration of HTNV Gc (PDB 5LJY) (Guardado-Calvo et al., 2016), and aligns more closely with (D) the recently published prefusion Andes virus (ANDV) Gc, crystallized in complex with cognate ANDV Gn (PDB 6Y5F) (Serris et al., 2020), and (E) the experimentally confirmed pre-fusion conformations of RVFV Gc (PDB 4HJ1) (Dessau and Modis, 2013) and (F) Zika E (PDB 5IRE) (Sirohi et al., 2016). Cartoon representations of the structure are colored according to domain boundaries (red, yellow, and blue for domains I, II, and III, respectively). Dotted arrows highlight conformational differences between overlaid structures.
 
 Investigation into the residues that comprise the P-4G2 epitope revealed that many of these residues are buried in the post-fusion trimeric Gc (Figure 3D), indicating that mAb P-4G2 is specific to the pre-fusion state of PUUV Gc. This observation is consistent with previous experimental findings, which demonstrated that mAb P-4G2 did not recognize PUUV under low pH conditions but remained bound to the virus and protected the epitope if introduced prior to low-pH exposure (Hepojoki et al., 2010). Taken together, these results support a model whereby P-4G2 specifically targets pre-fusion Gc and may sterically preclude the formation of a fusogenic configuration of the Gc.
 
-## The epitope of P-4G2 is targeted for neutralization across hantaviral species
+### The epitope of P-4G2 is targeted for neutralization across hantaviral species
 
 Hantaviruses are often divided into two groups, termed Old World and New World hantaviruses (Jonsson et al., 2010), reflecting their distribution and pathobiological features. Interestingly, while PUUV is an Old World hantavirus prevalent in Northeastern Europe, the residues comprising the P-4G2 epitope on PUUV Gc exhibit a relatively high level of sequence conservation with Gc proteins from New World hantaviruses, such as ANDV (72% sequence identity across the P-4G2 epitope), and a lower level of conservation with Hantaan virus (HTNV), an Old World hantavirus (38% sequence identity across the epitope) (Figure 2—figure supplement 3). The epitope-based sequence analysis provides a rational basis for understanding the cross-reactivity of P-4G2 with ANDV but not HTNV, where we identify a greater level of sequence variation on HTNV Gc at the epitope and fewer sequence differences on ANDV Gc (Figure 2—figure supplement 3). The observed similarity at the epitope between PUUV and New World hantaviruses is in line with the evolutionary history of these viruses and their hosts (Plyusnin and Sironen, 2014), and provides a structural basis for the ability of P-4G2 to neutralize ANDV, albeit at a lower IC50 value (6.48 μg/ml) (Figure 1B). Furthermore, despite the sequence variation at the P-4G2 epitope between the two Old World hantaviruses PUUV and HTNV (Figure 2—figure supplement 3), and the lack of HTNV cross-neutralization (Figure 1B), we note that the observed P-4G2 binding site overlaps with the putatively assigned binding sites of HTNV-neutralizing mAbs HCO2 and 16E6 (Arikawa et al., 1989; Wang et al., 1993; Figure 3), indicating that this region of the Gc is likely to be immunologically accessible across hantaviral species.
 
-## Mab P-4G2 is specific to a lattice-free state of virion-displayed PUUV Gc
+### Mab P-4G2 is specific to a lattice-free state of virion-displayed PUUV Gc
 
 Previous investigations of the non-pathogenic viral orthologue, Tula virus (TULV), have revealed the ultrastructure of Gn−Gc assemblies, as displayed on the hantaviral envelope (Huiskonen et al., 2010; Li et al., 2016). These studies indicate that the Gc forms elongated structures that extend from the virion membrane and are shielded by the cognate Gn (Li et al., 2016).
 
@@ -71,13 +103,37 @@ To ascertain the position of the P-4G2 epitope in the context of the hantaviral 
 
 Following the validation that PUUV VLP presents a glycoprotein architecture that accurately resembles the native virion, we applied an identical cryo-ET approach to VLPs treated with Fab P-4G2. The data were split in two sets: (i) spikes that were part of a lattice, and (ii) spikes in regions of incomplete lattice. The former yielded a reconstruction similar to the VLP sample prepared without the Fab (Figure 4A and Figure 4—figure supplement 1), while the reconstruction focused on lattice-free spikes yielded a discrete (Gn−Gc)4 spike with additional density (Figure 4B). These results suggest that mAb P-4G2 binding is incompatible with glycoprotein lattice formation, and further, that Fab P-4G2 binding may affect the higher order lattice assembly. To test this hypothesis, we quantified the number of neighbors for each spike on VLPs both in the presence and absence of Fab P-4G2. The frequency of lattice-free spikes (with zero neighbors) was higher in the presence of Fab P-4G2, while the frequency of lattice-bound spikes (with four or more neighbors) was higher in the particles not treated with Fab P-4G2 (Figure 4C and D and Figure 4—figure supplement 2). We note that treatment with Fab P-4G2 had a heterogeneous effect on the lattice of different VLPs, as can be observed in Figure 4—figure supplement 2. These results suggest that Fab P-4G2 influences the presentation of the Gn−Gc lattice by dislodging the (Gn−Gc)4 spikes from each other.
 
-Fitting of the crystal structure of Fab P-4G2−PUUV Gc complex and PUUV Gn (Li et al., 2016) into the reconstruction of the Fab-treated (Gn−Gc)4 spike confirms that the additional density is comprised of Fab P-4G2 (Figure 5). PUUV GcGc−P-4G2 fits well within the cryo-ET reconstruction, where the crystallographically observed conformation of domain III accurately matches a feature of the glycoprotein spike (Figure 5C), further supporting that PUUV Gc has crystallized in the pre-fusion conformation presented on the mature virion. Additionally, this fitting confirms the location of Gc in the density spanning from the membrane-distal globular lobes to the viral membrane, as we and others have proposed previously (Li et al., 2016; Serris et al., 2020). The fitting locates domain III of the Gc adjacent to the membrane, allowing the transmembrane region of the C-terminus to be linked to the virion envelope (Figures 5A and 2A), and places the fusion loop from Gc domain II into membrane-distal lobe density in close contact with Gn (Figure 5A and B), in a manner similar to that observed for other class II fusion proteins and their cognate accessory proteins (Halldorsson et al., 2018; Voss et al., 2010).
+![Figure 4.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig4-v1.jpg)
+
+**Figure 4.:** Cryo-ET reconstructions of the Fab P-4G2-treated PUUV VLP surface, derived from (A) regions of continuous lattice (14.3 Å) and (B) regions of incomplete lattice (13.4 Å). While both reconstructions show the canonical Gn−Gc architecture (density colored white) and the viral lipid bilayer (light blue), additional density is observed in the latter reconstruction (dark gray). (C) The hantaviral surface carries tetragonal (Gn−Gc)4 spikes that can organize in patches of ordered lattice. (D) A box plot describing the frequency of (Gn−Gc)4 spikes that have a given number of lattice compatible neighbors, from zero to a maximum of eight, shows that treatment with Fab P-4G2 alters the presentation of the (Gn−Gc)4 spike assemblies at the VLP surface.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Size-distribution plot of the VLPs (upper right corner) shows that the pleomorphic particles vary in size, with most particles measuring between 80 and 100 nm in the longest dimension. Despite the variable resolutions of the present reconstructions of hantaviral surfaces, the tetragonal lattice organization observed in PUUV VLP (13.9 Å) and in PUUV VLP treated with P-4G2 (14.3 Å) is similar to that of Tula virus (TULV, 15.6 Å, EMDB-4867) (Li et al., 2016) and Hantaan virus (HTNV, 25 Å, EMDB-2056) (Battisti et al., 2011). A top view of each viral surface reconstruction is shown, and densities corresponding to viral membrane and envelope glycoproteins are rendered in light blue and shades of gray and white, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Tomographic slices of the selected PUUV VLPs (left) and corresponding Mercator projections (right) describing the positions of (Gn−Gc)4 spikes on VLP surfaces are shown (A) in the absence and (B) presence of Fab P-4G2. The subset of spike positions that belong to regular patches (determined using the PatchFinder script; please see main Methods) are displayed in black and the remainder in gray. Units shown are in nanometers and scale bars are 50 nm.
+
+Fitting of the crystal structure of Fab P-4G2−PUUV Gc complex and PUUV Gn (Li et al., 2016) into the reconstruction of the Fab-treated (Gn−Gc)4 spike confirms that the additional density is comprised of Fab P-4G2 (Figure 5). PUUV GcGc−P-4G2 fits well within the cryo-ET reconstruction, where the crystallographically observed conformation of domain III accurately matches a feature of the glycoprotein spike (Figure 5C), further supporting that PUUV Gc has crystallized in the pre-fusion conformation presented on the mature virion. Additionally, this fitting confirms the location of Gc in the density spanning from the membrane-distal globular lobes to the viral membrane, as we and others have proposed previously (Li et al., 2016; Serris et al., 2020). The fitting locates domain III of the Gc adjacent to the membrane, allowing the transmembrane region of the C-terminus to be linked to the virion envelope (Figures 5Aand 2A), and places the fusion loop from Gc domain II into membrane-distal lobe density in close contact with Gn (Figure 5A and B), in a manner similar to that observed for other class II fusion proteins and their cognate accessory proteins (Halldorsson et al., 2018; Voss et al., 2010).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig5-v1.jpg)
 
 **Figure 5.:** (A) Side view and (B) top view of the Fab P-4G2-treated PUUV virus-like particle (VLP) spike at 13.4 Å resolution. Crystal structures of Fab P-4G2−PUUV, along with PUUV Gn (PDB id 5FXU), were fitted in the cryo-ET reconstruction as rigid bodies and display excellent conformity with the cryo-ET derived envelope. (C) A zoom-in of the fit of domain III of Gc into the cryo-ET reconstruction presented from two points of view, which are related by a 180° rotation. The goodness of fit supports the hypothesis that domain III has crystallized in a conformation that closely resembles the pre-fusion state presented in the mature hantaviral spike. (D) A close-up of Fab P-4G2 similarly presents a high-correlation fit. A simplified look at the composition of the hantaviral spike, where fitted Gc and Gn are represented as surfaces, is shown from side view (E) and top view (F).
 
 Drawing upon the fitting generated above, we used a 13.9 Å cryo-ET reconstruction of the lattice-incorporated (non-Fab P-4G2 treated) PUUV VLP surface to create a model of the higher-order (Gn−Gc)4 spike lattice. While the overall assembly of (Gn−Gc)4 spikes remain similar to that obtained from fitting into the cryo-ET reconstruction of an individual, Fab-treated glycoprotein spike (Figure 5) fitting into the latticed reconstruction provides a structural basis for the formation of PUUV Gc homo-dimers at contact points between neighboring spikes (Figure 6), which closely resemble a crystallographically observed homo-dimer interface reported previously for HTNV Gc (Bignon et al., 2019; Guardado-Calvo et al., 2016; Figure 6—figure supplement 1). Furthermore, modeling of Fab P-4G2 binding onto the Gc homodimer demonstrates that neighboring epitopes are not mutually accessible for Fab binding in their lattice-integrated form, providing clues to how Fab P-4G2 recognition may be accompanied by dissociation of the Gc homodimer assembly (Figure 6—figure supplement 2). Altogether, our combined crystallographic and cryo-EM investigation reveals, in molecular detail, that P-4G2 is specific to the lattice-free, pre-fusion state of PUUV Gc presented on the mature viral envelope.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig6-v1.jpg)
+
+**Figure 6.:** (A) Top- and side views of the PUUV lattice. Crystal structures of PUUV Gc from the Fab P-4G2 complex, and PUUV Gn (PDB id: 5FXU) are shown fitted into a cryo-ET reconstruction of the PUUV VLP surface at 13.9 Å resolution. PUUV Gn and Gc are shown in cartoon representation and colored as presented at the bottom of panel C. (B) A zoom-in of an individual spike reveals that contacts between spikes are mediated by Gc. (C) The fitting identifies the topology of Gc dimers formed between neighboring spikes. Gc domain I is indicated to be involved in the formation of the dimer interface, corroborating the model reported by Bignon et al. (Bignon et al., 2019) based on a crystallographically observed HTNV Gc homo-dimer (Guardado-Calvo et al., 2016).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Gc homodimer interface generated by fitting Puumala virus (PUUV) GcGc-P-4G2 into a cryo-ET reconstruction of PUUV virus-like particle (VLP) surface at 13.9 Å resolution (see also Figure 6C). Within the constraints of low-resolution fitting, the interface matches with the homodimerization interface from the (B) crystallographically observed HTNV Gc dimer (Guardado-Calvo et al., 2016). The twofold symmetry axis is indicated by an oval.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/58242/elife-58242-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Top (panel A) and side (panel B) view representations of the PUUV Gn–Gc surface at the Fab P-4G2 epitope are shown. The surface of PUUV Gn and Gc are colored according to the legend at the bottom of the figure. Neighboring Fab P-4G2 epitope residues were identified using the PDBePISA server (Krissinel and Henrick, 2007) and are highlighted in red (‘epitope a.’) and blue (‘epitope b.’). A ribbon representation of Fab P-4G2 bound to epitope b is shown in the side view representation and indicates that lattice-incorporated, neighboring Gc glycoproteins are unlikely to be able to sterically accommodate more than one Fab molecule in this region.
 
 ## Discussion
 
@@ -97,23 +153,418 @@ At present, treatment and prevention options for hantaviral disease remain extre
 
 ## Materials and methods
 
-## Sequencing mAb P-4G2 variable regions from hybridoma cell line
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Puumala orthohantavirus)</td>
+      <td>Glycoprotein precursor (GPC); used in recombinant Gc production</td>
+      <td>GenBank</td>
+      <td>CAB43026.1</td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Gene (Puumala orthohantavirus)</td>
+      <td>Glycoprotein precursor (GPC); used in PUUV VLP production</td>
+      <td>GenBank</td>
+      <td>CCH22848.1</td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Gene (Hantaan orthohantavirus)</td>
+      <td>Glycoprotein precursor (GPC)</td>
+      <td>GenBank</td>
+      <td>AIL25321.1</td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Gene (Andes orthohantavirus)</td>
+      <td>Glycoprotein precursor (GPC)</td>
+      <td>GenBank</td>
+      <td>AAO86638.1</td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Subcloning Efficiency DH5α Competent Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 18265017</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human embryonic kidney HEK 293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human embryonic kidney HEK293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Myodes Glareolus, Mus musculus)</td>
+      <td>Bank vole-mouse heterohybridoma producing mAb P-4G2</td>
+      <td>Lundkvist and Niklasson, 1992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Indiana vesiculovirus)</td>
+      <td>VSV-ΔG RFP</td>
+      <td>Reynard and Volchkov, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHLsec plasmid</td>
+      <td>Aricescu et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHLsec-8H-SUMO-1D4 plasmid</td>
+      <td>Chang et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pgk-φC31/pCB92 plasmid</td>
+      <td>Chen et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pURD plasmid</td>
+      <td>Zhao et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tim1/pCAGGs plasmid</td>
+      <td>Watt et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS plasmid</td>
+      <td>Niwa et al., 1991</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse IgG1 plasmid</td>
+      <td>von Boehmer et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse IgK plasmid</td>
+      <td>von Boehmer et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fab P-4G2 light chain synthetic DNA fragment</td>
+      <td>This study</td>
+      <td></td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fab P-4G2 heavy chain synthetic DNA fragment</td>
+      <td>This study</td>
+      <td></td>
+      <td>Synthetic cDNA was produced by GeneArt, Life Technologies</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse IgG sequencing primers</td>
+      <td>von Boehmer et al., 2016</td>
+      <td></td>
+      <td>List of primer sequences is provided in the referenced study</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUUV Gc ectodomain cloning primer, forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>CGCACCGGTGAGACACAGAACCTGAACAGCGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUUV Gc ectodomain cloning primer, reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>GCGGTACCCTCGCCGGACTTGGTGAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fab P-4G2 HC R100A mutagenesis primer, forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>GTATTACTGTACAAGAGATGCATTAGGCCCTTTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fab P-4G2 HC R100A mutagenesis primer, reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TCAAAAGGGCCTAATGCATCTCTTGTACAGTAATAC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion High-Fidelity PCR Master Mix with HF Buffer</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: M0531S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III reverse transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Ligation kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: M2200S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI Max 40K</td>
+      <td>Polysciences, Inc</td>
+      <td>Cat#: 24765–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI</td>
+      <td>Polysciences, Inc</td>
+      <td>Cat#: 23966–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kifunensine</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#: 10009437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XIA2</td>
+      <td>Winter, 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>Potterton et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL</td>
+      <td>Waterhouse et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REFMAC</td>
+      <td>Murshudov et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>Davis et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMGT/V-QUEST server</td>
+      <td>Brochet et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, San Diego, CA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PDBePISA server</td>
+      <td>Krissinel and Henrick, 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>The PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LigPlot+ software</td>
+      <td>Laskowski and Swindells, 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Motioncor2</td>
+      <td>Zheng et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tomo_preprocess script</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>Mastronarde and Held, 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dynamo</td>
+      <td>Castaño-Díez et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PatchFinder script</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromatography column, Superdex 200 10/300 Increase</td>
+      <td>Cytiva</td>
+      <td>Cat#: 28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromatography column, HisTrap FF Crude 5 ml</td>
+      <td>Cytiva</td>
+      <td>Cat#: 17528601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1-MDa cut-off dialysis membrane</td>
+      <td>Spectrum Chemical</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Holey carbon grids, 2 μm hole diameter</td>
+      <td>Protochips</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequencing mAb P-4G2 variable regions from hybridoma cell line
 
 RNA from the P-4G2 hybridoma cell line was converted into cDNA (SuperScript III reverse transcriptase, Life Technologies) using random hexamers following the manufacturer’s protocol. The bank vole antibody variable regions of heavy and kappa chains were PCR amplified using previously described mouse primers and PCR conditions (von Boehmer et al., 2016). PCR products were purified and cloned into mouse IgG expression plasmids (von Boehmer et al., 2016) using sequence and ligation independent cloning (SLIC) under ampicillin selection. Antibody variable regions were sequenced by Sanger sequencing, and CDRs were determined from the sequences with IMGT/V-QUEST (Brochet et al., 2008) server using Mus musculus as comparison group.
 
 Antibody heavy and light plasmids were co-transfected at a 1:1 ratio into HEK 293F cells (Thermo Fisher Scientific) using PEI Max 40K (linear polyethylenimine hydrochloride, Polysciences, Inc), as previously described (Zeltina et al., 2017). Antibody supernatants were harvested 7 days following transfection and purified using protein G affinity chromatography following the manufacturer’s protocol (GE healthcare). In order to validate the functional relevance of Arg100, the R100A mutation was introduced into the P-4G2 heavy chain plasmid using site directed mutagenesis (forward primer: GTATTACTGTACAAGAGATGCATTAGGCCCTTTTGA, reverse primer: TCAAAAGG GCCTAATGCATCTCTTGTACAGTAATAC) and the mutation was verified using Sanger sequencing. Mab P-4G2 R100A mutant was expressed and purified as described above for WT mAb P-4G2.
 
-## Generation of hantavirus-pseudotyped VSV-ΔG RFP
+### Generation of hantavirus-pseudotyped VSV-ΔG RFP
 
 8 × 106 HEK 293T (ATCC CRL-3216) cells were transfected with a plasmid encoding PUUV GPC (35 μg in pCAGGS vector) and Tim-1 (3 μg) using PEI (3:1 PEI:DNA, Polysciences, Inc). After 24 hr, cells were infected with a VSV-G pseudotyped VSV-ΔG RFP stock (40 μl). Infection was monitored using RFP expression and virus (first stock) was harvested when cells showed rounding and began to detach (typically 24–48 hr).
 
 Two additional rounds of transfection and virus production were carried out. 15 × 106 HEK 293T cells were transfected with a plasmid encoding PUUV GPC, ANDV GPC, or HTNV GPC (100 μg, in pCAGGS vector) and Tim-1 (6 μg) using PEI (3:1 PEI: DNA, Polysciences, Inc). After 24 hr, cells were infected with 400 μl of ‘first stock’ virus. Infection was monitored using RFP expression and virus was harvested (second stock) when cells showed rounding and began to detach (48–72 hr). This process was repeated to generate ‘third stock’ virus which was used in subsequent neutralization assays.
 
-## Hantavirus-pseudotyped VSV neutralization assay
+### Hantavirus-pseudotyped VSV neutralization assay
 
 Neutralizing activity was assessed using a single-round replication pseudovirus assay with HEK 293T target cells. Briefly, the antibody was serially diluted in a 96-well black, flat-bottom plate and preincubated with virus for 1 hr at 37°C. Cells at a concentration of 30,000/well were added to the virus–antibody mixture, and RFP quantified 72 hr following infection (Envision plate reader, Perkin Elmer). Dose–response curves were fitted using nonlinear regression (GraphPad Prism) to determine 50% inhibitory concentration (IC50).
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 Codon-optimized synthetic cDNA (GeneArt, Life Technologies) coding for Fab P-4G2 light chain and Fab P-4G2 heavy chain were individually cloned into the pHLsec mammalian expression vector and co-transfected into HEK 293T cells (ATCC CRL-3216) for transient expression, as previously described (Avanzato et al., 2019). Fab P-4G2-containing supernatant was collected, clarified by centrifugation, and diafiltrated using the ÄKTA Flux tangential flow filtration system. Diafiltrated cell supernatant was purified by immobilized nickel affinity chromatography (5 ml fast flow crude column and ÄKTA fast protein liquid chromatography [FPLC] system; GE Healthcare) at room temperature, using 250 mM imidazole for elution. Finally, the sample was purified by size exclusion chromatography (SEC) using a Superdex 200 10/300 Increase column (GE Healthcare), in 10 mM Tris (pH 8.0)–150 mM NaCl buffer.
 
@@ -121,25 +572,25 @@ In order to produce PUUV Gc, a HEK 293T cell line stably expressing the protein
 
 Prior to crystallization, the N-terminal SUMO and hexahistidine tags were cleaved from the PUUV Gc (1:10 molar ratio of protein to 3C protease added to purified sample, followed by incubation at 21°C for 12 hr). PUUV Gc sample was then mixed with pure Fab P-4G2 in 1:1.2 molar ratio, and the complex was purified by SEC using a Superdex 200 10/300 Increase column (GE Healthcare), in 10 mM Tris (pH 8.0)–150 mM NaCl buffer.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 A solution containing a complex of PUUV Gc ectodomain and Fab P-4G2 was crystallized by sitting drop vapor diffusion using 100 nl protein (1.3 mg/ml) with 100 nl precipitant (20% vol/vol PEG 6000, 0.1 M MES pH 6, and 1 M lithium chloride) and 100 nl additive (6% 2-methyl-2,4-pentanediol) at room temperature. Crystals formed over 2 weeks and were flash frozen by immersion into a cryo-protectant containing 25% (vol/vol) glycerol followed by rapid transfer into liquid nitrogen. X-ray diffraction data were recorded at beamline I24 (λ = 0.9686 Å), Diamond Light Source, United Kingdom.
 
 Data were indexed and integrated with XIA2/XDS (Winter, 2010) and scaled using CCP4/SCALEPACK2MTZ. Processing statistics are presented in Supplementary file 1. The structure of Fab P-4G2−PUUV Gc was solved by molecular replacement in Phenix-MR (Adams et al., 2002) using PUUV Gc (PDB 5J81) and a homology model of the Fab P-4G2, generated using the SWISS-MODEL server (Waterhouse et al., 2018) with PDB 6BPB as the template structure, as search models. Structure refinement was performed by iterative refinement using REFMAC and Phenix (Adams et al., 2002). Coot (Emsley and Cowtan, 2004) was used for manual rebuilding and MolProbity (Davis et al., 2007) was used to validate the model.
 
-## Cell lines
+### Cell lines
 
 Authenticated cell lines were obtained from ATCC (HEK 293T cells) or, in the case of FreeStyle 293F cell line, from the manufacturer Thermo Fisher, and were tested for mycoplasma contamination and found negative.
 
-## Molecular graphics and protein interface analysis
+### Molecular graphics and protein interface analysis
 
 Molecular graphics images were generated using PyMOL (The PyMOL Molecular Graphics System, Version 1.7.0.3, Schrödinger, LLC) and UCSF Chimera (Pettersen et al., 2004). Interfacing and interacting residues were identified using the PDBePISA server (Krissinel and Henrick, 2007) run with default parameters, where the maximum allowable distance between the heavy atoms of a hydrogen bond donor and acceptor was limited to 3.89 Å, and the angle between acceptor-hydrogen-donor atoms was limited to between 90 and 270°. The maximal allowable distance between heavy atoms of a salt bridge was 4.0 Å. LigpPlot+ (Laskowski and Swindells, 2011) was used to visualize the Fab P-4G2−Gc interface (Figure 2—figure supplement 2).
 
-## Preparation of PUUV VLPs
+### Preparation of PUUV VLPs
 
 PUUV VLPs were produced by transient expression of the complete PUUV M-segment (GenBank CCH22848.1) cloned into the pHLsec vector (Aricescu et al., 2006) in HEK 293T cells. Six five-layer 875 cm² flasks (Falcon) were used to produce 750 ml of VLP-containing media that was clarified at 3000 × g for 20 min to remove cell debris and filtered through a 0.45 μm filter. The virus containing medium was concentrated down to approximately 30 ml using a pump-powered filter (100 kDa cut-off; Vivaflow, Sartorius) and then dialyzed into an excess of buffer (10 mM Tris pH 8.0–150 mM NaCl) through a 1-MDa cut-off dialysis membrane (Biotech CE Tubing, Spectrum Chemical) for a few days. The media was further concentrated to ~3 ml with a 100 kDa cut-off centrifugal concentrator filter (Amicon Ultra, Merck Millipore) and layered onto a 20–60% w/v sucrose density gradient in PBS buffer. The gradient was prepared using a Gradient Master (BioComp Instruments, Canada) in a SW32 Beckman tube, and the VLP banded by ultracentrifugation at 4°C for 4 hr at 25,000 rpm. The diffuse band (volume of ~3–4 ml) was collected manually, diluted to 20 ml with PBS and pelleted through a cushion of 10% sucrose in PBS to further clean and concentrate the sample (SW32 Beckman centrifuge tube at 25,000 rpm at 4°C for 2 hr). Finally, the pellet was resuspended in 60 μl of PBS and stored at 4°C.
 
-## Cryo-EM grid preparation, data acquisition, and data processing
+### Cryo-EM grid preparation, data acquisition, and data processing
 
 A 3 μl aliquot of VLP sample supplemented with 3 μl of 6 nm gold fiducial markers (Aurion) was applied on a holey carbon grid (2 μm hole diameter, C-flat, Protochips) that had been glow discharged in a plasma cleaner (Harrick) for 15 s. The grids were blotted for 3–4 s and plunged into an ethane/propane mixture using a vitrification apparatus (Vitrobot, Thermo Fisher Scientific). For Fab P-4G2-treated VLP EM sample preparation, a suspension of purified VLPs was incubated with 2.71 μM Fab P-4G2 for 1 hr at room temperature prior to grid preparation.
 
@@ -151,14 +602,14 @@ Subvolume averaging was performed in Dynamo following previously established pro
 
 A custom script (Stass, 2020; available at https://github.com/OPIC-Oxford/PatchFinder) was used to divide the spikes into those that were part of a lattice and those that were not. The script locates the eight closest spikes for each particle and iterates through each with two checks. First, the position of the neighbor must be within a given distance (49 Å) of the ideal values determined from the positions of neighbors in the previously reported hantaviral reconstruction (EMD code; EMD-4867) and the orientation of the neighbor must match the parent particle within a set tolerance (25°). Spikes were defined as being part of a lattice if they had at least three interacting neighbors. This classification approach allowed reconstructing the structure of the lattice-bound spike for both VLP datasets (with and without Fab P-4G2) in addition to a lattice-free, P-4G2-bound spike in the case of the Fab P-4G2 sample (Supplementary file 1). In the latter case, the refinement was repeated using P-4G2-bound spike as a starting model and by excluding weakly correlating particles (below 0.15). This led to a reconstruction with a lattice-free spike fully decorated with Fab P-4G2 around its perimeter (Supplementary file 1). The final maps were filtered to the resolution determined by FSC (0.143 threshold) and rendered as isosurfaces. The surface threshold value was determined according to the molecular weight of the viral ectodomain proteins (and additional Fab) assuming an average protein density of 0.81 Da/Å³.
 
-## Quantification of the frequency of lattice formation on VLP surface in the presence and absence of Fab P-4G2
+### Quantification of the frequency of lattice formation on VLP surface in the presence and absence of Fab P-4G2
 
 The positions of each spike and the number of interacting neighbors were analyzed in PUUV VLPs in the presence and absence of Fab P-4G2 from eight VLPs from each cryo-ET dataset. To facilitate the analysis, only VLPs displaying good glycoprotein coverage and roughly spherical morphology were included. Both datasets were processed using the workflow described above, and the PatchFinder script was applied to locate those spikes that were part of a lattice. The particles on the top and bottom of the virus were then removed from further analysis by restricting the second Euler angle (tilt) to 45–135°. This was done in order to exclude those spikes that are facing the air–water interface, which can in itself result in a loss of visible lattice due to its denaturing effect. The number of neighbors for each spike was quantified and the 3D locations of the spikes were plotted in 2D using Mercator projections (Figure 4—figure supplement 2).
 
-## Fitting of the crystal structure into the cryo-EM map
+### Fitting of the crystal structure into the cryo-EM map
 
 The crystal structure of Fab P-4G2−PUUV Gc was docked into the reconstruction of the Fab-decorated PUUV Gn–Gc spike using the fitmap function in Chimera (Pettersen et al., 2004). A map was simulated for the crystal structure to the resolution of 13.4 Å, to match the resolution of the spike reconstruction, and fitting was performed using an initial global search followed by a local fitting that accounts for the C4 symmetry of the spike. The top solution (presented in Figure 5) yielded a local map-to-map correlation score of 0.91 (Supplementary file 1). In order to complete our model of the hantaviral spike, we then added PUUV Gn to the fit based on the recently reported ANDV Gn−Gc complex crystal structure (PDB 6Y5F) that describes the native Gn−Gc assembly. In short, MatchMaker function in Chimera was used to superpose ANDV Gn−Gc crystal structure on the docked Fab P-4G2−PUUV Gc structure, and PUUV Gn (PDB 5FXU) was then similarly superposed on the ANDV Gn−Gc structure. Models of PUUV Gc (docked) and PUUV Gn (placed according to the known Gn−Gc assembly from PDB 6Y5F) were then combined in order to generate a Gn−Gc model that could be reliably fitted into a reconstruction of lattice-incorporated PUUV VLP surface, where no Fab P-4G2 density is present. Local fitting of this PUUV Gn−PUUV Gc assembly into a reconstruction of lattice-incorporated PUUV VLP surface, using the fitmap function in Chimera, yielded a correlation score of 0.89 (PUUV VLP without Fab; map for structure simulated to 13.9 Å resolution). C4 symmetry was then applied to generate (Gn–Gc)4 spike assemblies, which were docked to the densities of the central spike and the neighboring spikes in Chimera. Finally, clashes at spike interfaces were resolved by sequential fitting of the interfacing components. The resulting model of the Gn–Gc assemblies that comprise the hantaviral lattice is presented in Figure 6.
 
-## Accession codes
+### Accession codes
 
 Atomic coordinates and structure factors of the PUUV Gc−Fab P-4G2 complex have been deposited in the PDB (accession code 6Z06). Cryo-EM reconstructions of the PUUV VLP surface alone and in the presence of Fab P-4G2 from areas of continuous and discontinuous lattice have been deposited in the EMDB at the EBI under accession codes EMD-11966, EMD-11965, and EMD-11964, respectively. Coordinates of protein structures fitted into these cryo-EM reconstructions have been deposited in the PDB database (accession code 7B09 for the Fab P-4G2-PUUV Gc and PUUV Gn fitted into EMD-11964, and accession code 7B0A for PUUV Gc and PUUV Gn fitted into EMD-11966, respectively).

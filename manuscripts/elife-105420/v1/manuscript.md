@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/026zzn846 Centre for Oral Immunobiology and Regenerative Medicine, Institute of Dentistry, Queen Mary University of London London United Kingdom
-2. https://ror.org/026zzn846 Barts Centre for Squamous Cancer, Queen Mary University of London London United Kingdom
+1. Centre for Oral Immunobiology and Regenerative Medicine, Institute of Dentistry, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+2. Barts Centre for Squamous Cancer, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
 
 † Corresponding author
 

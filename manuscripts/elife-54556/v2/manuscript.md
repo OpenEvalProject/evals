@@ -45,25 +45,53 @@ The aims of our study were firstly, to assess whether CFTR modulators could dire
 
 ## Results
 
-## Monocyte cytokine responses in healthy controls versus drug-naïve individuals homozygous for Phe508del
+### Monocyte cytokine responses in healthy controls versus drug-naïve individuals homozygous for Phe508del
 
 We have previously established that monocytes isolated from clinically stable ‘drug-naïve’ CF patients (homozygous for Phe508del) have an increased secretion of IL-18 and IL-1β when compared to healthy control (HC) monocytes. This response was attenuated in vitro with the addition of inhibitors either targeting components of the NLRP3-inflammasome or the ENaC (Scambler et al., 2019). Using monocytes isolated from clinically stable patients homozygous for the common Phe508del CF mutation, we examined whether the in vitro application of clinically approved CFTR modulator combinations (IVA/LUM and IVA/TEZ), could also regulate IL-18 and IL-1β levels. In parallel we established whether these combinations could influence HC cells devoid of pathogenic CFTR mutations. We monitored monocyte stimulated cytokine responses, in cells harvested from drug-naïve patients with CF, in the presence or absence of IVA/LUM or IVA/TEZ combinations. In vitro pre-administration of IVA/LUM for 24 hr to CF monocytes in culture halved the seven-fold rise in IL-18 observed in their absence (p<0.0001, for responses to stimulation with LPS-ATP, Figure 1A). In complete contrast, there was no drug-induced attenuation of the near six-fold rise in LPS-ATP-stimulated IL-1β levels (p=0.9434, Figure 1B). Although HC cells showed a two-fold elevation in cytokines after exposure to LPS-ATP alone, IVA/LUM could not attenuate this small rise (Figure 1A,B). Also, in marked contrast, the in vitro pre-administration of the other drug combination, IVA/TEZ, for 24 hr, significantly reduced the post-stimulus increments in both IL-18 (p<0.0001, Figure 1C) and IL-1β levels (p=0.0001, Figure 1D), in monocytes of patients with CF. IVA/TEZ also had no discernable reductive effect on monocytes from HC volunteers in the presence/absence of LPS and ATP (Figure 1C,D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig1-v2.jpg)
 
-**Figure 1.:** ELISA assays were used to detect A, C IL-18; B, D IL-1β secretion in monocytes from patients with CF-associated mutations (n = 10 IVA/LUM; n = 4 IVA/TEZ) vs HC (n = 4). Monocytes were treated with IVA/LUM (A, B) for 24 hr or IVA/TEZ (C, D) for 24 hr, then stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. A two-way ANOVA statistical test with Tukey’s multiple comparison was performed (p values * = ≤ 0.05, ** = ≤ 0.01, *** = ≤ 0.001 and **** = ≤ 0.0001). N.S. not-significant. IL-18 levels for HC (no treatment 10.84 pg/ml; IVA/TEZ 11.71 pg/ml); IL-1β levels for HC (no treatment 5.91 pg/ml; IVA/TEZ 5.27 pg/ml).Figure 1—source data 1.ELISA assays were used to detect IL-18 or IL-1β secretion (n = 10 IVA/LUM; n = 4 IVA/TEZ) vs HC (n = 4).
+**Figure 1.:** ELISA assays were used to detect A, C IL-18; B, D IL-1β secretion in monocytes from patients with CF-associated mutations (n = 10 IVA/LUM; n = 4 IVA/TEZ) vs HC (n = 4). Monocytes were treated with IVA/LUM (A, B) for 24 hr or IVA/TEZ (C, D) for 24 hr, then stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. A two-way ANOVA statistical test with Tukey’s multiple comparison was performed (p values * = ≤ 0.05, ** = ≤ 0.01, *** = ≤ 0.001 and **** = ≤ 0.0001). N.S. not-significant. IL-18 levels for HC (no treatment 10.84 pg/ml; IVA/TEZ 11.71 pg/ml); IL-1β levels for HC (no treatment 5.91 pg/ml; IVA/TEZ 5.27 pg/ml).
 
-## Serum cytokine responses in patients receiving IVA/LUM or IVA/TEZ therapy
+### Serum cytokine responses in patients receiving IVA/LUM or IVA/TEZ therapy
 
 Next, we investigated the effects of IVA/LUM or IVA/TEZ CFTR modulator therapy on cytokine secretion in serum from patients homozygous for Phe508del, receiving one or other therapy over a three-month period. Our rationale was that blood is routinely drawn from such patients every few months, thus making any findings much simpler to incorporate into future studies. Thus, blood samples were taken from patients starting IVA/LUM therapy (n = 13) or IVA/TEZ (n = 8) at baseline (pre-therapy), and again at one month and three months of treatment (Supplementary file 1). All patients receiving these therapies met the criteria for the UK compassionate use program, that is reflective of their percent predicted forced expiratory volume (ppFEV1) of less than 40 (HC values are typically greater than 80). To ensure maximal clinical stability, patients received a pre-emptive course of intravenous antibiotics prior to starting treatment. Over this three month study period there were no significant differences in C-reactive protein (CRP), ppFEV1, forced vital capacity (ppFVC), white blood count (WBC), neutrophil count, weight (kg) or body mass index (BMI) in either group (Supplementary file 1; Figure 2—figure supplement 1 for IVA/LUM; Figure 2—figure supplement 2 for IVA/TEZ).
 
 To obtain normal ranges for serum cytokines, baseline ranges were established from 10 HC and 51 clinically stable drug-naïve CF patients (with ppFEV1 ranging from 12 to 90; Figure 2—figure supplement 3A–D). From these data, the 95% confidence interval generated upper limits of healthy control values and equivalent CF values which were plotted as horizontal solid blue and pink lines, respectively, with shaded areas extending to the lower 5% confidence interval in Figures 2 and 3, (A-D). The baseline (pre-therapy, zero month) values for each patient were calculated as a percentage of the average baseline within each patient group (IVA/LUM or IVA/TEZ), which explains why the starting values do not all congregate at 100% in the graphs. The one month and three month samples are calculated as a percentage of the baseline average.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig2-v2.jpg)
+
+**Figure 2.:** Sera were collected at baseline, one month and three months of treatment from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM (n = 13) or IVA/TEZ (n = 8) therapy. ELISA assays were used to detect levels of A, IL-18; B, IL-1β; C, TNF and D, IL-6 in serum from the IVA/LUM treated group. ELISA assays were used to detect levels of E, IL-18; F, IL-1β; G,TNF; H, IL-6; in serum from the IVA/TEZ treated group. A one-way ANOVA statistical test with Tukey’s multiple comparison was performed. P value for baseline to three months shown on each graph. Baseline ranges were established for each cytokine from HC and clinically stable drug-naïve CF patients (Figure 2—figure supplement 3). Upper 95% confidence interval for baseline HC (solid blue line) or CF (solid pink line) with block colour shading (HC, blue; CF, pink) to lower 5% confidence interval is displayed for each cytokine.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Clinical measurements were taken at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM (n = 13). Measurements were plotted as % baseline. A, CRP; B, ppFEV1; C, ppFVC1; D, WBC; E, Neutrophil; F, Weight; G, BMI. A non-parametric Kruskal-Wallis statistical test with Dunn’s multiple comparison was performed. P value for baseline to three months is shown on each graph.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Clinical measurements were taken at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/TEZ therapy. Measurements were plotted as % baseline. A, CRP (n = 8); B, ppFEV1 (n = 6); C, ppFVC1 (n = 6); D, WBC (n = 7); E, Neutrophil (n = 8); F, Weight (n = 8); G, BMI (n = 8). A non-parametric Kruskal-Wallis statistical test with Dunn’s multiple comparison was performed. P value for baseline to three months is shown on each graph.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Serum collected and PBMCs isolated at baseline from patients homozygous for Phe508del CFTR mutations (HC, n = 10; CF, n = 51). ELISA assays were used to detect levels of A, IL-18; B, IL-1β; C, TNF and D, IL-6 in serum. ELISA assays were used to detect levels of E, IL-18; F, IL-1β; G,TNF; H, IL-6; I, IL-10 secretion in PBMCs. PBMCs were stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. For PBMC data IL-18, IL-1β (HC n = 11, CF n = 32); TNF (HC n = 6, CF n = 27); IL-6 and IL-10 (CF n = 20) A non-parametric Mann Whitney test was performed. Error bars displayed as 5–95% percentile range with median (p values * = ≤ 0.05, ** = ≤ 0.01, *** = ≤ 0.001 and **** = ≤ 0.0001).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Serum collected at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM (n = 13) or IVA/TEZ (n = 8) therapy. ELISA assays were used to detect A, IL-18; B, IL-1β; C, TNF and D, IL-6 in serum from the IVA/LUM treated group. ELISA assays were used to detect levels of E, IL-18; F, IL-1β; G,TNF; H, IL-6; in serum from the IVA/TEZ treated group. Baseline for each patient set at 100% and proportional change at one and three months plotted.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig3-v2.jpg)
+
+**Figure 3.:** PBMCs isolated at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM (n = 12/13) or IVA/TEZ (n = 8) therapy. Following isolation, PBMCs were immediately stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. ELISA assays were used to detect levels of A, IL-18; B, IL-1β; C, TNF; D, IL-6 and E, IL-10 secretion from PBMCs in the IVA/LUM treated group. ELISA assays were used to detect levels of F, IL-18; G, IL-1β; H,TNF; I, IL-6; J, IL-10 secretion from PBMCs in the IVA/TEZ treated group. For IVA/LUM: IL-18 (n = 13); IL-1β (n = 13); TNF (n = 12); IL-6 (n = 13); IL-10 (n = 12). A two-way ANOVA statistical test with Tukey’s multiple comparison was performed. P value for baseline to three months is shown on each graph. For IL-6 (IVA/LUM), a non-parametric Kruskal-Wallis statistical test with Dunn’s multiple comparison was performed. Baseline ranges were established for each cytokine from HC and clinically stable drug-naïve CF patients (Figure 2—figure supplement 3). Upper 95% confidence interval for baseline HC (solid blue line) or CF (solid pink line) with block colour shading (HC, blue; CF, pink) to lower 5% confidence interval is displayed for each cytokine.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** PBMCs isolated at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM (n = 12/13) or IVA/TEZ (n = 8) therapy. Following isolation, PBMCs were immediately stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. ELISA assays were used to detect levels of A, IL-18; B, IL-1β; C, TNF; D, IL-6 and E, IL-10 secretion from PBMCs in the IVA/LUM treated group. ELISA assays were used to detect levels of F, IL-18; G, IL-1β; H,TNF; I, IL-6; J, IL-10 secretion from PBMCs in the IVA/TEZ treated group. Baseline for each patient set at 100% and proportional change at one and three months plotted. For IVA/LUM: IL-18 (n = 13); IL-1β (n = 13); TNF (n = 12); IL-6 (n = 13); IL-10 (n = 12).
+
 There was a significant reduction in serum IL-18 levels, following three month’s treatment with either IVA/LUM (p<0.0001, Figure 2A) or IVA/TEZ (p<0.0001, Figure 2E). The net effect was a final IL-18 cytokine level lower than the CF upper limit for both groups. Interestingly, values bordering on the upper limit of HC values were mainly seen after IVA/TEZ. However, marked drug-dependent differences between cytokine responses were also observed. There was no decline in serum IL-1β levels after three months therapy with IVA/LUM (Figure 2B), and yet IVA/TEZ treatment resulted in a highly significant reduction in serum IL-1β (p=0.0009, Figure 2F; compare 2B). This differential response was mirrored with the NLRP3-inflammasome-independent cytokines which, in both treatment groups, showed a significant reduction in serum TNF (IVA/LUM, p=0.0004, Figure 2C; IVA/TEZ, p=0.0224, Figure 2G) but no change in serum IL-6 levels (Figure 2D and H).
 
 To establish the individual response to therapy (IVA/LUM or IVA/TEZ), serum cytokine baselines were set to 100% for each patient, and the percentage change at one month and three months post-therapy were displayed (Figure 2—figure supplement 4). We observed that there were fast (<25% decrease from baseline) and slow responders (<10% decrease from baseline) at one-month post-therapy for each cytokine; however, the individual therapy response for each cytokine was different, and no correlation between individuals was observed at this time point. Although IVA/LUM therapy significantly decreased IL-18 and TNF levels in serum (Figure 2A,C), the percentage to baseline response at three months revealed a broad range of effectiveness (IL-18; 109–19%; TNF 135–18%) (Figure 2—figure supplement 4A,C), whereas for IVA/TEZ therapy, at three months, the minimum percentage decrease from baseline was 25% for IL-18, IL-1β and TNF cytokine measurements (IL-18 75–29%; IL-1β 74–33% and TNF 68–19%) (Figure 2—figure supplement 4, E–G) suggesting that overall, the therapy response to IVA/TEZ is more consistent across this patient group.
 
-## PBMC cytokine response following LPS and ATP stimulation in patients receiving IVA/LUM or IVA/TEZ therapy
+### PBMC cytokine response following LPS and ATP stimulation in patients receiving IVA/LUM or IVA/TEZ therapy
 
 Next, we investigated the above differences at a cellular level, initially using unstimulated peripheral blood monocytes (PBMC) isolated from CF patients. Our rationale was that the isolation procedures for such cells might be easier to incorporate into future trials when compared to the more cumbersome monocyte isolation protocol. Generally, levels ranged below 50 pg/ml, irrespective of exposure to either of the two drug combinations. There were no significant changes in the levels of pro-inflammatory cytokines IL-18, IL-1β, TNF, IL-6 and IL-10 secretion by unstimulated PBMCs, at baseline, or at one or three months of treatment in patients receiving either IVA/LUM or IVA/TEZ (Supplementary file 2).
 
@@ -75,13 +103,21 @@ Following oral treatment, stimulated PBMC TNF secretion was also significantly r
 
 When we examined the individual patient response to therapy (IVA/LUM or IVA/TEZ) in LPS-ATP-stimulated PBMCs, we observed a range of cytokine responses at one month post-therapy in a similar manner to the serum response, and the individual therapy responses for each cytokine was different, and again no correlation between individuals was observed at this time point (Figure 3—figure supplement 1). However, in contrast to the serum cytokine profiles which showed a broad range of effectiveness for IL-18, LPS-ATP-stimulation of PBMCs following IVA/LUM therapy at three months, was found to produce a minimum percentage decrease from baseline of 31% for IL-18 but TNF remained similar to the response observed in serum (IL-18 59–22%; TNF 119–16%) (Figure 3—figure supplement 1A,C). Interestingly, LPS-ATP-stimulated PBMCs, post IVA/TEZ therapy, mirrored the cytokine profiles observed at three-months in serum, with the minimum percentage decrease from baseline of 29% for IL-18, IL-1β and TNF cytokines measurements (IL-18 69–20%; IL-1β 71–8% and TNF 67–19%) (Figure 3—figure supplement 1F–H).
 
-## NLRP3-inflammasome activation in patients receiving IVA/LUM or IVA/TEZ therapy
+### NLRP3-inflammasome activation in patients receiving IVA/LUM or IVA/TEZ therapy
 
 In a further pilot study, aimed at assessing possible reasons for the differential drug responses seen above, caspase-1 activity and mRNA levels were monitored in a subset of patients receiving IVA/LUM (n = 4) and IVA/TEZ (n = 8/7). Serum caspase-1 activation was reduced following three months of IVA/LUM (p=0.0349, Figure 4A) and IVA/TEZ therapy (p<0.0001, Figure 4D). At three months, a significant decrease in mRNA levels of pro-IL-1β was only seen with IVA/TEZ (p<0.0001, Figure 4F) and not with IVA/LUM. There were no significant differences in NLRP3 (Figure 4B) or TNF transcript levels, from baseline to three months, in the IVA/LUM group, and there was a non-significant trend to increased mRNA transcript levels, both IL-6 and IL-10 (Figure 4—figure supplement 1, B–D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig4-v2.jpg)
+
+**Figure 4.:** PBMCs isolated at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate use IVA/LUM or IVA/TEZ therapy. Following isolation, PBMCs were immediately stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. Caspase-1 activity was detected in stimulated PBMCs at each time point for A, IVA/LUM (n = 4) and D, IVA/TEZ (n = 8). qPCR analysis was used to asses a fold change in mRNA expression of B, E NLRP3, and C, F pro-IL-1β for IVA/LUM (n = 4) (B–C) or IVA/TEZ (n = 7) (E–F). A one-way ANOVA with Tukey’s multiple comparison was performed on caspase-1 activity data and a non-parametric Kruskal-Wallis statistical test with Dunn’s multiple comparison was performed on the mRNA data. P value for baseline to three months indicated on each graph.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54556/elife-54556-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** PBMCs isolated at baseline, one month and three months from patients homozygous for Phe508del CFTR mutations receiving compassionate IVA/LUM or IVA/TEZ treatment. Following isolation, PBMCs were immediately stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. qPCR analysis was used to asses a fold change in mRNA expression of A, E NLRC4, B, F TNF, C, G IL-6, D, H IL-10 for IVA/LUM (n = 4) (A–D) or IVA/TEZ (n = 7) (E–H). A non-parametric Kruskal-Wallis statistical test with Dunn’s multiple comparison was performed on mRNA data. P value for baseline to three months indicated on each graph.
+
 In the IVA/TEZ group, mRNA levels of IL-6 mRNA showed a non-significant trend to increased levels (p=0.0595, Figure 4—figure supplement 1, G), from baseline to three months, and there was a non-significant decrease in NLRC4 and TNF, plus an increase in IL-10 mRNA transcripts (Figure 4—figure supplement 1, E,F,H).
 
-## Sustainability of oral therapy (IVA/LUM or IVA/TEZ) on NLRP3-stimulated cytokine production in PBMCs isolated from patients on therapy for three months
+### Sustainability of oral therapy (IVA/LUM or IVA/TEZ) on NLRP3-stimulated cytokine production in PBMCs isolated from patients on therapy for three months
 
 Next, we attempted to establish how long oral drug therapy might be sustained in vitro by measuring cytokine levels in stimulated PBMCs at 12 and 36 hr post-oral therapy. We also wished to determine whether re-application of a given drug combination on isolated cells in vitro at 12 hr post-oral therapy would have any effect on stimulated PBMCs. In patients on IVA/LUM (n = 5), caspase-1 activity (p=0.0194, Figure 5D) was significantly reduced at 12 hr post-oral therapy (compared to 36 hr), but the changes in IL-18 (228–446 pg/mL, p=0.0644, Figure 5B) and IL-1β levels (799–1025 pg/mL, p=0.619, Figure 5C) were not significant. Following in vitro exposure of these cells to IVA/LUM there was a decrease in caspase-1 activity at 36 hr (p=0.04) but no significant change in either IL-18 (232 pg/ml, p=0.0707) or IL-1β levels (690 pg/mL, p=0.3661).
 
@@ -113,36 +149,172 @@ In summary, systemic inflammation plays a major role in the pathogenesis of CF a
 
 ## Materials and methods
 
-## Patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human Blood Samples</td>
+      <td>St James's University Hospital</td>
+      <td>Health Research Authority REC reference 17/YH/0084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lymphoprep</td>
+      <td>Axis Shield</td>
+      <td>Cat# 1114544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pan Monocyte Isolation Kit, human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-096-537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysacchride Ultrapure EK</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-eklps</td>
+      <td>10ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-atpl</td>
+      <td>5 mM, 30 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lumacaftor (LUM)</td>
+      <td>AdooQ Bioscience</td>
+      <td>Cat#A10986</td>
+      <td>3 μM, 24 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ivacaftor (IVA)</td>
+      <td>Cayman chemicals</td>
+      <td>Cat#15145</td>
+      <td>5 μM, 24 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tezacaftor (TEZ)</td>
+      <td>TargetMol</td>
+      <td>Cat#T2263</td>
+      <td>5 μM, 24 hr</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-1 beta Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1213</td>
+      <td>Assay sensitivity &lt; 31.2 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-18 Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# BMS267/2MST</td>
+      <td>Assay sensitivity 78 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-6 Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1263</td>
+      <td>Assay sensitivity 15.6 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TNF alpha Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1753</td>
+      <td>Assay sensitivity &lt; 15.6 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL1RA Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1183</td>
+      <td>Assay sensitivity &lt; 31.2 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(TMB) substrate solution</td>
+      <td>Sigma</td>
+      <td>Cat# T0440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caspase-1 Colorimetrix Assay</td>
+      <td>R and D Systems</td>
+      <td>Cat# BF15100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism7</td>
+      <td>Graphpad software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients
 
 Adult patients entering the Vertex compassionate use program for IVA/LUM (n = 13) and IVA/TEZ (n = 8) were prospectively recruited between 2016 and 2019, from the Leeds Regional Adult CF Unit. Those on continued treatment for three months were included in the analyses. All subjects on combination therapy were homozygous for Phe508del, had a ppFEV1 <40% and had received a course of intravenous antibiotics prior to starting treatment. Lung function, weight, BMI, CRP, WBC, serum cytokines were all measured at baseline, and again at one and three months of treatment (Supplementary file 1). Venous blood for peripheral blood mononuclear cell (PBMC) assays was taken at the same time points. The study was approved by Yorkshire and The Humber Research Ethics Committee (17/YH/0084).
 
-## Samples
+### Samples
 
 Patients’ bloods were collected, using Vacuette tubes (Greiner-Bio-One) containing serum clot activator gel or EDTA for whole blood. Bloods in serum clot activator tubes were allowed to clot for 60 min, followed by centrifugation at 1000xg for 10 min. Sera were collected into 1 mL tubes for storage at −80°C.
 
-## Cell culture
+### Cell culture
 
 PBMCs were isolated from whole blood, using Lymphoprep gradient media (Axis-Shield, Dundee, UK) and cultured in complete RPMI medium (RPMI medium containing 10% heat-inactivated fetal bovine serum, 2 mM L-glutamine, 50 U/mL penicillin, 50 μg/mL streptomycin). PBMCs (2 × 106/ mL) were allowed to settle overnight, prior to experimentation for Figures 1 and 2. NLRP3-inflammasome stimulation was achieved using LPS (10 ng/mL, Ultrapure Escherichia coli K12, Invivogen) for 4 hr, with the addition of ATP (5 mM, Invivogen, San Diego, California) for the final 30 min of stimulation.
 
 Monocytes were isolated by negative selection from PBMCs on the same day using the Pan Monocyte Isolation Kit II (Miltenyi Biotec GmbH), and plated at 1 × 106 cells/mL. All cells were kept in a humidified incubator at 37°C, 5% CO2.
 
-## Cytokine quantification using ELISA
+### Cytokine quantification using ELISA
 
 Two pro-inflammatory, NLRP3-associated cytokines, IL-1β and IL-18, were measured, as well three other cytokines also associated with innate immune cell activation, namely IL-6, TNF and IL-10. Levels of IL-18, IL-1β, TNF, IL-6 and IL-10 cytokines were detected by ELISAs from patients’ sera and cell cultured media, using commercially available ELISA kits (ThermoFisher Scientific, Loughborough, UK) as per manufacturers ' recommendations.
 
-## Caspase-1 activity assay
+### Caspase-1 activity assay
 
 A colorimetric assay (Caspase-1 Colorimetrix Assay, R and D Systems, Abingdon, UK) measured caspase-1 activity, via the cleavage of a caspase-specific peptide conjugated to a colour reporter molecule, p-nitroalinine (pNA), performed on cell lysates. Protein concentrations in lysates were determined using the Pierce bicinchoninic acid (BCA) assay (Thermo Fisher Scientific, Loughborough, UK).
 
-## Detection of mRNA by RT-qPCR
+### Detection of mRNA by RT-qPCR
 
 Total RNA isolation was performed using Trizol reagent and the Phasemaker Tubes (ThermoFisher Scientific) according to the manufacturers’ protocol. RNA quality and quantity were further determined by 260/280 and 260/230 ratios using a NanoDrop spectrophotometer. RNA was converted to cDNA, using no more than 1 μg of sample with the High-Capacity cDNA Reverse Transcription Kit (ThermoFisher Scientific). Real-time quantitative PCR was done using PowerUp SYBR Green Master Mix reagent in the QuantStudio 7 Flex Real-Time PCR System (ThermoFisher Scientific) to determine the mRNA levels of the reported genes (NLRP3, NLRC4, pro-IL-1β, TNF, IL-6 and IL-10). mRNA levels were normalised to the levels of HPRT RNA transcripts. All primers were optimised for specific amplification of the target gene.
 
-## Sustainability of oral therapy (IVA/LUM or IVA/TEZ) on NLRP3-stimulated cytokine production in PBMCs
+### Sustainability of oral therapy (IVA/LUM or IVA/TEZ) on NLRP3-stimulated cytokine production in PBMCs
 
 Blood samples were collected from patients homozygous for Phe508del receiving compassionate use IVA/LUM or IVA/TEZ to determine how long oral drug therapy would be sustained in vitro by measuring cytokine levels in stimulated PBMCs at two time-points (12 hr and 36 hr post oral-therapy), and also to establish whether the in vitro application of each drug could sustain the drug therapy effect. Both patient cohorts received treatment for at least three months and the last dose was given within six hours of blood sampling (Figure 4). PBMCs were isolated, and either immediately stimulated with LPS and ATP (12 hr post-oral therapy) or stimulated with LPS and ATP 36 hr post-oral therapy. In parallel, PBMCs were treated at 12 hr post-oral therapy in vitro with 3 μM LUM/5 μM IVA (lumacaftor; cat#A10986, AdooQ Bioscience, Generon, Slough; cat#15145, Cayman chemicals, Michigan), or 5 μM TEZ/5 μM IVA (Tezacaftor; cat#T2263, TargetMol, MA, USA), respectively, and stimulated with LPS and ATP 36 hr post-treatment.
 
-## Statistical analyses
+### Statistical analyses
 
 All analyses were performed using GraphPad Prism v 7. Shapiro-Wilk test was performed to determine if data was normally distributed for all data sets. The Kruskal-Wallis test, with Dunn’s multiple comparison or Mann Whitney test was performed when comparing non-parametric populations. A one-way ANOVA or two-way ANOVA statistical test, with Tukey’s multiple comparison was performed when calculating variance between samples with a normal distribution (p values *≤0.05, **≤0.01, ***≤0.001 and ****≤0.0001). A p<0.05 was considered significant).

@@ -108,31 +108,411 @@ The development of standardized assays for quantifying DNA methylation at specif
 
 In this study we extend our previous analysis, quantifying DNA methylation across the genome in a total of 4483 participants from seven independent case-control cohorts including patients with schizophrenia or first-episode psychosis (FEP) (Figure 1). This represents the largest EWAS of schizophrenia and psychosis, and one of the largest case-control studies of DNA methylation for any disease phenotype. In each cohort, genomic DNA was isolated from whole blood, and DNA methylation was quantified across the genome using either the Illumina Infinium HumanMethylation450 microarray (‘450K array’) or the HumanMethylationEPIC microarray (‘EPIC array’) (see 'Materials and methods'). We implemented a stringent pipeline to meta-analyze EWAS results across datasets to identify associations between psychosis cases and variation in DNA methylation. We show how DNA methylation data can be leveraged to identify biological (e.g., differential cell counts) and environmental (e.g., smoking) factors associated with psychosis, and present evidence for molecular variation associated with clozapine exposure in patients with treatment-resistant schizophrenia (TRS).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** With the exception of the IoPPN and EUGEI cohorts, there is little ethnic heterogeneity in each of the cohorts with samples being predominantly of Caucasian origin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** DNAmAge was calculated using the algorithm described by Horvath, 2013. Each point represents an individual and is colored by psychosis status (blue = psychosis, red = control). The solid diagonal line depicts x=y, that is, where the estimated and actual values are the same. The dashed diagonal line depicts the line of best fit. Presented at the top of the graph is the Pearson’s correlation coefficient (r) between the estimated and actual age across all samples in that cohort. Also shown in the bottom right-hand corner of each panel is an interaction p-value from a test for different correlations between DNAmAge and actual age between psychosis cases and controls.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** PhenoAge was calculated using the algorithm described by Levine et al., 2018. Each point represents an individual and is colored by psychosis status (blue = psychosis, red = control). The solid diagonal line depicts x=y, that is, where the estimated and actual values are the same. The dashed diagonal line depicts the line of best fit. Presented at the top of the graph is the Pearson’s correlation coefficient (r) between the estimated and actual age across all samples in that cohort. Also shown in the bottom right-hand corner of each panel is an interaction p-value from a test for different correlations between PhenoAge and actual age between psychosis cases and controls.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** DNAmAge was calculated using the algorithm described by Horvath, 2013. Each point represents an individual and is colored by medication status (yellow = schizophrenia cases not prescribed clozapine, green = treatment-resistant schizophrenia cases prescribed clozapine). The solid diagonal line depicts x=y, that is, where the estimated and actual values are the same. The dashed diagonal line depicts the line of best fit. Presented at the top of the graph is the Pearson’s correlation coefficient (r) between the estimated and actual age across all samples in that cohort. Also shown in the bottom right-hand corner of each panel is an interaction p-value from a test for different correlations between DNAmAge and actual age for schizophrenia patients prescribed clozapine and schizophrenia patients prescribed alternative medications.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** PhenoAge was calculated using the algorithm described by Levine et al., 2018. Each point represents an individual and is colored by schizophrenia status (yellow = schizophrenia cases not prescribed clozapine, green = treatment-resistant schizophrenia cases prescribed clozapine). The solid diagonal line depicts x=y, that is, where the estimated and actual values are the same. The dashed diagonal line depicts the line of best fit. Presented at the top of the graph is the Pearson’s correlation coefficient (r) between the estimated and actual age across all samples in that cohort. Also shown in the bottom right-hand corner of each panel is an interaction p-value from a test for different correlations between PhenoAge and actual age for schizophrenia patients prescribed clozapine and schizophrenia patients prescribed alternative medications.
+
 ## Results
 
-## Study overview and cohort characteristics
+### Study overview and cohort characteristics
 
 We quantified DNA methylation in samples derived from peripheral venous whole blood in seven independent psychosis case-control cohorts (total n = 4483; 2379 cases and 2104 controls). These cohorts represent a range of study designs and recruitment strategies and were initially designed to explore different clinical and etiological aspects of schizophrenia (see Materials and methods and Table 1); they include studies of FEP (EU-GEI and IoPPN), established schizophrenia and/or clozapine usage (UCL, Aberdeen, Dublin, IoPPN), mortality in schizophrenia (Sweden), and a study of twins from monozygotic pairs discordant for schizophrenia (Twins). All cohorts were characterized by a higher proportion of male participants (range = 52.1–71.1% male, pooled mean = 62.6% male, Table 1) than females. Although there was an overall significantly higher proportion of males among cases compared to controls (χ2 = 37.5, p=9.35×10−10), consistent with reported incidence rates (Aleman et al., 2003; van der Werf et al., 2014), there was significant heterogeneity in the sex by diagnosis proportions across different cohorts (χ2 = 348, p=4.86×10−63) with the overall excess of male patients driven by two cohorts (UCL [χ2 = 52.7, p=3.81×10−13] and EU-GEI [χ2 = 25.9, p=3.68×10−7]). Most cohorts were enriched for young and middle-aged adults, although there was considerable heterogeneity across the studies reflecting the differing sampling strategies (Table 1). For example, the IoPPN cohort has the lowest average age, reflecting the inclusion of a large number of FEP patients (mean = 34.9 years; SD = 12.42 years) (Di Forti et al., 2009). In contrast, individuals in the Sweden cohort were older (mean = 60.0 years; SD = 8.9 years) (Kowalec et al., 2019). There was no overall difference in mean age between cases and controls (mean difference = 0.076 years; p=0.975) (Figure 1—figure supplement 1), although differences were apparent in individual cohorts; in UCL (mean difference = 6.8 years; p=6.55×10−9) and IoPPN (mean difference = 6.2 years; p=1.46×10−11), patients were significantly older than controls, while in the EU-GEI (mean difference = −7.9 years; p=1.24×10−22) and the Sweden cohort (mean difference = −7.3 years; p=1.05×10−16), the cases were significantly younger. With the exception of individuals in the IoPPN and EU-GEI cohorts, which are more ethnically diverse, individuals included in this study were predominantly Caucasian. SNP array data from each donor was merged with HapMap phase 3 data, and genetic principal components (PCs) were calculated with GCTA (Yang et al., 2011) to further confirm the ethnicity of each sample (Figure 1—figure supplement 2).
 
-## Psychosis patients are characterized by differential blood cell proportions and smoking levels using measures derived from DNA methylation data
+**Table 1.**
+ Summary of cohort demographics included in the psychosis epigenome-wide association study (EWAS) meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Cohort</th>
+      <th>UCL</th>
+      <th>Aberdeen</th>
+      <th>Twins</th>
+      <th>IoPPN</th>
+      <th>Dublin</th>
+      <th>EU-GEI</th>
+      <th>Sweden</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Total sample</td>
+      <td>675</td>
+      <td>847</td>
+      <td>192</td>
+      <td>800</td>
+      <td>679</td>
+      <td>912</td>
+      <td>378</td>
+      <td>4483</td>
+    </tr>
+    <tr>
+      <td colspan="2">% Cases</td>
+      <td>52.3</td>
+      <td>48.9</td>
+      <td>45.3</td>
+      <td>74.6</td>
+      <td>51.3</td>
+      <td>42.9</td>
+      <td>50.0</td>
+      <td>53.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">% Schizophrenia</td>
+      <td>52.3</td>
+      <td>48.9</td>
+      <td>45.3</td>
+      <td>36.3</td>
+      <td>51.3</td>
+      <td>0.0</td>
+      <td>50.0</td>
+      <td>37.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">% First-episode psychosis</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>38.4</td>
+      <td>0.0</td>
+      <td>42.9</td>
+      <td>0.0</td>
+      <td>15.6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">% Males</td>
+      <td>All</td>
+      <td>58.7</td>
+      <td>71.1</td>
+      <td>52.1</td>
+      <td>63.0</td>
+      <td>71.0</td>
+      <td>54.4</td>
+      <td>59.5</td>
+      <td>62.6</td>
+    </tr>
+    <tr>
+      <td>Cases</td>
+      <td>72.0</td>
+      <td>68.4</td>
+      <td>54.0</td>
+      <td>65.3</td>
+      <td>71.6</td>
+      <td>64.2</td>
+      <td>60.3</td>
+      <td>66.8</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td>44.1</td>
+      <td>73.7</td>
+      <td>50.5</td>
+      <td>56.2</td>
+      <td>70.4</td>
+      <td>47.0</td>
+      <td>58.7</td>
+      <td>57.8</td>
+    </tr>
+    <tr>
+      <td>Chi-square test p-value</td>
+      <td>3.81E-13</td>
+      <td>0.103</td>
+      <td>0.730</td>
+      <td>0.024</td>
+      <td>0.804</td>
+      <td>3.68E-07</td>
+      <td>0.834</td>
+      <td>9.35E-10</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Age (years)</td>
+      <td>Mean</td>
+      <td>40.4</td>
+      <td>44.6</td>
+      <td>35.3</td>
+      <td>28.8</td>
+      <td>41.7</td>
+      <td>35.3</td>
+      <td>60.0</td>
+      <td>40.5</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>15.0</td>
+      <td>12.9</td>
+      <td>10.8</td>
+      <td>9.46</td>
+      <td>12.0</td>
+      <td>12.8</td>
+      <td>8.86</td>
+      <td>14.7</td>
+    </tr>
+    <tr>
+      <td>Mean in controls</td>
+      <td>43.7</td>
+      <td>44.2</td>
+      <td>37.9</td>
+      <td>27.8</td>
+      <td>41.4</td>
+      <td>30.7</td>
+      <td>56.3</td>
+      <td>41.6</td>
+    </tr>
+    <tr>
+      <td>Mean in cases</td>
+      <td>36.8</td>
+      <td>44.9</td>
+      <td>33.3</td>
+      <td>30.3</td>
+      <td>42.0</td>
+      <td>38.7</td>
+      <td>63.7</td>
+      <td>39.4</td>
+    </tr>
+    <tr>
+      <td>t-test p-value</td>
+      <td>6.55E-09</td>
+      <td>0.529</td>
+      <td>0.033</td>
+      <td>0.007</td>
+      <td>0.505</td>
+      <td>1.24E-22</td>
+      <td>1.05E-16</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Psychosis patients are characterized by differential blood cell proportions and smoking levels using measures derived from DNA methylation data
 
 A number of robust statistical classifiers have been developed to derive estimates of both biological phenotypes (e.g., age [Hannum et al., 2013; Horvath, 2013; Zhang et al., 2019] and the proportion of different blood cell types in a whole blood sample [Houseman et al., 2012; Koestler et al., 2013]) and environmental exposures (e.g., tobacco smoking [Elliott et al., 2014; Sugden et al., 2019]) from DNA methylation data. These estimates can be used to identify differences between groups and are often included as covariates in EWAS analyses where empirically measured data is not available. For each individual included in this study, we calculated two measures of ‘epigenetic age’ from the DNA methylation data; DNAmAge using the Horvath, 2013 multitissue clock, which was developed to predict chronological age, and PhenoAge, which was developed as biomarker of advanced biological aging (Levine et al., 2018). We found a strong correlation between reported age and both derived age estimates across the cohorts (Pearson's correlation coefficient range 0.821–0.928 for DNAmAge and 0.795–0.910 for PhenoAge) and no evidence for age acceleration – that is, the difference between epigenetic age and chronological age – between patients with psychosis and controls (Kowalec et al., 2019; Figure 1—figure supplements 3 and 4).
 
 Because of the importance of considering variation in the composition of the constituent cell types in analyses of complex cellular mixtures (Mill and Heijmans, 2013; Relton and Davey Smith, 2010), we used established methods to estimate the proportion (Houseman et al., 2012; Koestler et al., 2013) and abundance (Horvath, 2013) of specific cell types in whole blood. Using a random effects meta-analysis to combine the results across the seven cohorts, which were adjusted for age, sex, and DNAm smoking score, we found that psychosis cases had elevated estimated proportions of granulocytes (mean difference = 0.0431; p=5.09×10−4) and monocytes (mean difference = 0.00320; p=1.15×10−4), and significantly lower proportions of CD4+ T-cells (mean difference = −0.0177; p=0.00144), CD8+ T-cells (mean difference = −0.0144; p=0.00159), and natural killer cells (mean difference = −0.0113; p=0.00322) (Table 2 and Figure 2). Interestingly, the differences in granulocytes, natural killer cells, CD4+ T-cells, and CD8+ T-cells were most apparent in cohorts comprising patients with a diagnosis of schizophrenia (Figure 2), with cohorts including FEP patients characterized by weaker or null effects. Limiting the analysis of derived blood cell estimates to a comparison of schizophrenia cases and controls did not perceivably change the estimated differences of our random effects model but did reduce the magnitude of heterogeneity compared to including the FEP cases (Supplementary file 1). This indicates that changes in blood cell proportions may reflect a consequence of diagnosis, reflecting the fact that people with schizophrenia are likely to have been exposed to a variety of medications, social adversities, and somatic ill-health – and for longer periods – than FEP patients. Finally, we used an established algorithm to derive a quantitative DNA methylation ‘smoking score’ for each individual (Elliott et al., 2014), building on our previous work demonstrating the utility of this variable for characterizing differences in smoking exposure between schizophrenia patients and controls, and using it as a covariate in an EWAS (Hannon et al., 2016a). We observed a significantly increased DNA methylation smoking score (Figure 3) in psychosis patients compared to controls across all cohorts (mean difference = 3.89; p=2.88×10−11). Although of smaller effect, this difference was also present when comparing FEP and controls in the EU-GEI cohort (mean difference = 2.38; p=2.68×10−8). As expected, for individuals where self-reported smoking data was available, the DNA methylation smoking score was significantly elevated in current and former smokers compared to never smokers (Figure 3—figure supplement 1).
 
-## An EWAS meta-analysis identifies DNA methylation differences associated with psychosis
+![Figure 2.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig2-v2.jpg)
+
+**Figure 2.:** Shown are forest plots from meta-analyses of differences in blood cell proportions derived from DNA methylation data between psychosis patients and controls for (A) monocytes, (B) granulocytes, (C) natural killer cells, (D) CD4+ T-cells, and (E) CD8+ T-cells. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Shown are forest plots from meta-analyses of differences in estimated blood cell proportions derived from DNA methylation data between treatment-resistant schizophrenia patients prescribed clozapine and schizophrenia patients prescribed other medications for granulocytes, CD8+ T-cells. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Shown are forest plots from meta-analyses of differences in estimated granulocyte proportions derived from DNA methylation data between (A) schizophrenia patients and controls and (B) treatment-resistant schizophrenia patients prescribed clozapine, and schizophrenia patients prescribed other medications. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Shown are forest plots from meta-analyses of differences in estimated granulocyte proportions derived from DNA methylation data between (A) schizophrenia patients and controls and (B) treatment-resistant schizophrenia patients prescribed clozapine and schizophrenia patients prescribed other medications. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig3-v2.jpg)
+
+**Figure 3.:** Forest plot from a meta-analysis of differences in smoking score derived from DNA methylation data between psychosis patients and controls. The smoking score was calculated from DNA methylation data using the method described by Elliott et al., 2014. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Shown is the DNA methylation smoking score (y-axis) from individuals in the IoPPN cohort for whom self-reported smoking data was available regarding current (left panel) and former (right panel) smoking behavior. 0 = no, 1 = yes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Forest plot from meta-analyses of differences in smoking derived from DNA methylation data between treatment-resistant schizophrenia patients prescribed clozapine and schizophrenia patients prescribed other medications. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schizophrenia diagnosis was associated with a significant increase in smoking score (mean difference = 3.98; p=2.19×10-8) with (B) TRS status associated with an additional increase within cases (mean difference = 2.15; p=2.22×10-7). TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+**Table 2.**
+ Results of a meta-analysis of differences in blood cell composition estimates derived from DNA methylation data between schizophrenia cases and controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cell type</th>
+      <th rowspan="2">Measure type</th>
+      <th rowspan="2">Number of cohorts</th>
+      <th colspan="3">Random effects model</th>
+      <th colspan="3">Fixed effects model</th>
+      <th rowspan="2">Heterogeneity p-Value</th>
+    </tr>
+    <tr>
+      <th>Mean difference</th>
+      <th>SE</th>
+      <th>p-Value</th>
+      <th>Mean difference</th>
+      <th>SE</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monocytes</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>0.00320</td>
+      <td>0.00083</td>
+      <td>0.000115</td>
+      <td>0.00320</td>
+      <td>0.00083</td>
+      <td>0.000115</td>
+      <td>0.6490</td>
+    </tr>
+    <tr>
+      <td>Granulocytes</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>0.04312</td>
+      <td>0.01241</td>
+      <td>0.000509</td>
+      <td>0.03930</td>
+      <td>0.00315</td>
+      <td>1.21E-35</td>
+      <td>2.22E-16</td>
+    </tr>
+    <tr>
+      <td>Natural killer cells</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>−0.01135</td>
+      <td>0.00385</td>
+      <td>0.003221</td>
+      <td>−0.00827</td>
+      <td>0.00133</td>
+      <td>4.48E-10</td>
+      <td>2.43E-08</td>
+    </tr>
+    <tr>
+      <td>CD4+ T-cells</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>−0.01767</td>
+      <td>0.00555</td>
+      <td>0.00144</td>
+      <td>−0.01569</td>
+      <td>0.00196</td>
+      <td>1.15E-15</td>
+      <td>1.23E-07</td>
+    </tr>
+    <tr>
+      <td>CD8+ T-cells</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>−0.01444</td>
+      <td>0.00457</td>
+      <td>0.001586</td>
+      <td>−0.01443</td>
+      <td>0.00148</td>
+      <td>1.31E-22</td>
+      <td>8.13E-10</td>
+    </tr>
+    <tr>
+      <td>B-cells</td>
+      <td>Proportion</td>
+      <td>7</td>
+      <td>−0.00495</td>
+      <td>0.00280</td>
+      <td>0.077103</td>
+      <td>−0.00477</td>
+      <td>0.00102</td>
+      <td>2.75E-06</td>
+      <td>2.25E-07</td>
+    </tr>
+    <tr>
+      <td>PlasmaBlast</td>
+      <td>Abundance</td>
+      <td>5</td>
+      <td>0.05626</td>
+      <td>0.02987</td>
+      <td>0.059671</td>
+      <td>0.05332</td>
+      <td>0.00722</td>
+      <td>1.55E-13</td>
+      <td>8.45E-13</td>
+    </tr>
+    <tr>
+      <td>CD8pCD28nCD45RAn</td>
+      <td>Abundance</td>
+      <td>5</td>
+      <td>0.06280</td>
+      <td>0.22674</td>
+      <td>0.781792</td>
+      <td>0.10797</td>
+      <td>0.14981</td>
+      <td>0.4711</td>
+      <td>0.0826</td>
+    </tr>
+    <tr>
+      <td>CD8 naive T-cells</td>
+      <td>Abundance</td>
+      <td>5</td>
+      <td>7.21687</td>
+      <td>3.12594</td>
+      <td>0.02096</td>
+      <td>8.03957</td>
+      <td>1.89169</td>
+      <td>2.14E-05</td>
+      <td>0.0443</td>
+    </tr>
+    <tr>
+      <td>CD4 naive T-cells</td>
+      <td>Abundance</td>
+      <td>5</td>
+      <td>11.77240</td>
+      <td>4.72532</td>
+      <td>0.012726</td>
+      <td>11.77240</td>
+      <td>4.72532</td>
+      <td>0.0127</td>
+      <td>0.824</td>
+    </tr>
+  </tbody>
+</table>
+
+### An EWAS meta-analysis identifies DNA methylation differences associated with psychosis
 
 To identify differentially methylated positions (DMPs) in blood associated with psychosis, we performed an association analysis within each of the seven schizophrenia and FEP cohorts controlling for age, sex, derived cellular composition variables (from DNA methylation data), derived smoking score (from DNA methylation data), and experimental batch (see 'Materials and methods'). We used a Bayesian method to control p-value inflation using the R package bacon (van Iterson et al., 2017) before combining the estimated effect sizes and standard errors across cohorts with a random effects meta-analysis, including all autosomal and X-chromosome DNA methylation sites analyzed in at least two cohorts (n = 839,131 DNA methylation sites) (see 'Materials and methods'). Using an experiment-wide significance threshold derived for the Illumina EPIC array (Mansell et al., 2019) (p<9×10−8), we identified 95 psychosis-associated DMPs mapping to 93 independent loci and annotated to 68 genes (Figure 4A and Supplementary file 1). Across these DMPs, the mean difference in DNA methylation between cases and controls was relatively small (0.789%, SD = 0.226%) and there was a striking enrichment of hypermethylated DMPs in psychosis cases (n = 91 DMPs [95.8%] hypermethylated; p=1.68×10−22). A number of the top-ranked DMPs are annotated to genes that have direct relevance to the etiology of psychosis including the GABA transporter SLC6A12 (Park et al., 2011) (cg00517261, mean difference = 0.663%; p=1.53×10−8), the GABA receptor GABBR1 (Le-Niculescu et al., 2007) (cg00667298, mean difference = 0.619%; p=5.07×10−9), and the calcium voltage-gated channel subunit gene CACNA1C (cg01833890, mean difference = 0.458%; p=8.42×10−9) that is strongly associated with schizophrenia and bipolar disorder (Cross-Disorder Group of the Psychiatric Genomics Consortium, 2013; Psychiatric GWAS Consortium Bipolar Disorder Working Group, 2011; Ripke et al., 2011; Figure 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig4-v2.jpg)
+
+**Figure 4.:** Manhattan plots depicting the –log10 p-value from the epigenome-wide association study meta-analysis (y-axis) against genomic location (x-axis). (A) presents results from the analysis comparing psychosis patients and controls, and (B) presents results from the analysis comparing diagnosed schizophrenia cases and controls.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Shown is a scatterplot of statistics (–log10 p-value) from an epigenome-wide association study (EWAS) of psychosis in the IoPPN cohort without the inclusion of any genetic PCs in the analysis model (x-axis) compared to an EWAS of psychosis including five genetic PCs in the analysis model (y-axis).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig5-v2.jpg)
 
 **Figure 5.:** Shown are forest plots for differentially methylated positions (DMPs) annotated to the GABA transporter SLC6A12 (cg00517261; p=1.53×10−8), the GABA receptor GABBR1 (cg00667298; p=5.07×10−9), and the calcium voltage-gated channel subunit gene CACNA1C (cg01833890; p=8.42×10−9). TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
 
-## A specific focus on clinically diagnosed schizophrenia cases identifies more widespread DNA methylation differences
+### A specific focus on clinically diagnosed schizophrenia cases identifies more widespread DNA methylation differences
 
 We next repeated the EWAS focusing specifically on the subset of psychosis cases with diagnosed schizophrenia (schizophrenia cases = 1681, controls = 1583). Compared to our EWAS of psychosis, we identified more widespread differences in DNA methylation (Figure 4B), with 1048 schizophrenia-associated DMPs (p<9×10−8) representing 1013 loci and annotated to 692 genes (Supplementary file 1). Although the list of schizophrenia-associated DMPs included 61 (64.21%) of the psychosis-associated DMPs, the total number of significant differences was much larger, potentially reflecting the less heterogeneous clinical characteristics of the cases. Schizophrenia-associated DMPs had a mean difference of 0.789% (SD = 0.204%) and, like the psychosis-associated differences, were significantly enriched for sites that were hypermethylated in cases compared to controls (n = 897 [87.4%]; p=1.27×10−129). A number of the top-ranked DMPs are annotated to genes that have direct relevance to the etiology of schizophrenia and gene ontology (GO) analysis highlighted multiple pathways previously implicated in schizophrenia including several related to the extracellular matrix (Berretta, 2012) and cell-cell adhesion (O'Dushlaine et al., 2011; Supplementary file 1). Given the large range of ages across the samples included in this study, we tested whether there was evidence for a relationship between age and differential DNA methylation at the 1048 schizophrenia DMPs by refitting our analysis model using an additional interaction term between age and schizophrenia status individually for each cohort prior to the interaction effects being meta-analyzed (see 'Materials and methods'). Overall, we found limited evidence for a relationship between age and DNA methylation at schizophrenia-associated DMPs; controlling for multiple testing (p<0.00004771), only two (0.002%) DMPs were identified as showing a significant interaction with age (Supplementary file 1). We used the same approach to explore for an interaction between sex and DNA methylation, finding no evidence for sex differences at these sites or evidence for a significant interaction between sex and DNA methylation (p<0.00004771) (Supplementary file 1). Finally, although most of the cohorts included in this study were predominantly Caucasian, there was some ethnic heterogeneity in the IoPPN and EU-GEI cohorts. To explore the extent to which this diversity might be influencing our results, we merged SNP array data from each donor with HapMap phase 3 data and calculated genetic PCs using GCTA (Yang et al., 2011; Figure 1—figure supplement 2). We re-analyzed data from individual cohorts including increasing numbers of genetic PCs to the model, finding that even in the most ethnically diverse cohort (IoPPN) the inclusion of up to five genetic PCs had negligible effects, with a very strong correlation in test statistics between models (Figure 4—figure supplement 1).
 
-## Schizophrenia-associated DNA methylation differences show overlap with previous analyses of schizophrenia and other traits
+### Schizophrenia-associated DNA methylation differences show overlap with previous analyses of schizophrenia and other traits
 
 Two of our experiment-wide significant schizophrenia-associated DMPs (cg00390724 and cg09868768) overlapped with those reported in a previous smaller whole blood schizophrenia EWAS performed by Montano et al., 2016 with the same direction of effect; of note, 119 (71.3%) of the 167 replicated DMPs reported by this study were characterized by a consistent direction of effect in our meta-analysis, representing a significantly higher rate than expected by chance (p=3.83×10−8). Unfortunately, we could not check the extent to which our schizophrenia-associated DMPs were replicated in the Montano et al. dataset because the full results from their analysis are not publicly available. We next compared our results with those from a prefrontal cortex EWAS meta-analysis of schizophrenia also performed by our group (Viana et al., 2017), finding that 627 (60.2%) of the 1042 DMPs tested in both analyses had the same direction of effect, a significantly higher rate than expected by chance (p=5.43×10−11). Finally, we also explored the extent to which DMPs associated with schizophrenia overlapped with other traits using the database of results in the online EWAS catalog (http://ewascatalog.org/); across EWAS undertaken using blood DNA (isolated from whole blood or cord blood), this resource includes 101,091 significant DMPs (at p<1×10−7) associated with 87 traits. Of the 1048 schizophrenia-associated DMPs identified in our meta-analysis, 219 (20.9%) were present in the database and significantly associated with 18 different traits (Supplementary file 1). Where effect sizes for individual DMPs were available in the EWAS catalog, we tested for an enrichment of consistent (or discordant) associations to those identified with schizophrenia. Schizophrenia DMPs also associated with C-reactive protein (CRP) and gestational age, for example, were significantly enriched for a consistent direction of effect (CRP: 10 overlapping DMPs, 10 consistent direction of effect, p=0.001953; gestational age: 105 overlapping DMPs, 72 consistent direction of effect, p=0.000178). In contrast, schizophrenia DMPs also associated with age and high-density lipoprotein (HDL) cholesterol were enriched for discordant effect directions (age: 30 overlapping DMPs, 28 same direction of effect, p=8.68×10−7; HDL: 12 overlapping DMPs, 12 same direction of effect, p=0.00049) (Figure 6).
 
@@ -140,7 +520,7 @@ Two of our experiment-wide significant schizophrenia-associated DMPs (cg00390724
 
 **Figure 6.:** Shown for each overlapping DMP is the association effect size for the other trait (x-axis) taken from the online EWAS catalog (http://ewascatalog.org/) compared to the effect size identified in our meta-analysis of schizophrenia (y-axis).
 
-## Schizophrenia-associated DMPs colocalize to regions nominated by genetic association studies
+### Schizophrenia-associated DMPs colocalize to regions nominated by genetic association studies
 
 As the etiology of schizophrenia has a large genetic component, we next sought to explore the extent to which DNA methylation at schizophrenia-associated DMPs is influenced by genetic variation. Using results from a quantitative genetic analysis of DNA methylation in monozygotic and dizygotic twins (Hannon et al., 2018c), we found that DNA methylation at schizophrenia-associated DMPs is more strongly influenced by additive genetic factors compared to non-associated sites matched for comparable means and standard deviations (Figure 7) (mean additive genetic component across DMPs = 23.0%; SD = 16.8%; p=1.61×10−87). Using a database of blood DNA mQTL previously generated by our group (Hannon et al., 2018a), we identified common genetic variants associated with 256 (24.4%) of the schizophrenia-associated DMPs. Across these 256 schizophrenia-associated DMPs, there were a total of 455 independent genetic associations with 448 genetic variants, indicating that some of these DMPs are under polygenic control with multiple genetic variants associated. Of note, 31 of these genetic variants are located within 12 schizophrenia-associated GWAS regions (Supplementary file 1) with 19 genetic variants associated with schizophrenia DMPs located in the MHC region on chromosome 6. To further support an overlap between GWAS and EWAS signals for schizophrenia, we compared the list of genes identified in this study with those from the largest GWAS meta-analysis of schizophrenia (Pardiñas et al., 2018) identifying 21 schizophrenia-associated DMPs located in 11 different GWAS regions. To more formally test for an enrichment of differential DNA methylation across schizophrenia-associated GWAS regions, we calculated a combined EWAS p-value for each of the GWAS-associated regions using all DNA methylation sites within each region identifying 21 significant regions (p<3.16×10−4, corrected for testing 158 regions; Supplementary file 1). Three of these regions also contained a significant schizophrenia-associated DMP and a genetic variant associated with that schizophrenia-associated DMP. These include a region located within the MHC, another located on chromosome 17 containing DLG2, TOM1L2, and overlapping the Smith-Magenis syndrome deletion, and another on chromosome 16 containing CENPT and PRMT7.
 
@@ -148,17 +528,29 @@ As the etiology of schizophrenia has a large genetic component, we next sought t
 
 **Figure 7.:** A series of density plots for estimates of additive genetic effects (A, left), common environmental effects (C, middle), and non-shared environmental effects (E, right) derived using data from a dataset generated by Hannon et al., 2018b: schizophrenia DMPs (red) and matched background sites (green).
 
-## Schizophrenia-associated patterns of DNA methylation are observed in individuals with FEP
+### Schizophrenia-associated patterns of DNA methylation are observed in individuals with FEP
 
 To explore whether schizophrenia-associated differences in DNA methylation are present before a formal diagnosis of schizophrenia, we next performed an EWAS of FEP in the IoPPN and EU-GEI cohorts (total n = 698 FEP cases and 724 controls), meta-analyzing the results across 384,217 common DNAm sites. Although we identified no significant DMPs at our stringent experiment-wide significance threshold, this is not surprising given the greatly attenuated sample size and the high phenotypic heterogeneity among individuals with FEP compared to diagnosed schizophrenia; both factors negatively influence power to detect effects. We next repeated our EWAS of diagnosed schizophrenia, excluding the IoPPN cohort to ensure that there were no overlapping samples between the schizophrenia vs. control analysis and the FEP vs. control analysis, identifying 125 significant DMPs of which 101 were also tested in the FEP EWAS. To see if there was any evidence for differential DNAm at these sites prior to a diagnosis of schizophrenia, we compared the estimated differences between schizophrenia cases and controls and FEP cases and controls (Supplementary file 1). Strikingly, 96 (95.0%) of the tested DMPs had a consistent direction of effect in the FEP EWAS, a significantly higher rate than expected by chance (p=6.58×10-23). While this result is consistent with schizophrenia-associated differences being present prior to diagnosis, it is not sufficient to state that they are causal; they may still reflect some underlying environmental risk factor or be a consequence of FEP (e.g., medication exposure).
 
-## TRS cases differ from treatment-responsive schizophrenia patients for blood cell proportion estimates and smoking score derived from DNA methylation data
+### TRS cases differ from treatment-responsive schizophrenia patients for blood cell proportion estimates and smoking score derived from DNA methylation data
 
 Up to 25% of schizophrenia patients are resistant to the most commonly prescribed antipsychotic medications, and clozapine is a second-generation antipsychotic often prescribed to patients with such TRS who may represent a more severe subgroup (Ajnakina et al., 2018). Using data from four cohorts for which medication records were available (UCL, Aberdeen, IoPPN, and Sweden), we performed a within-schizophrenia analysis comparing schizophrenia patients prescribed clozapine (described as TRS cases) and those prescribed standard antipsychotic medications (total n = 399 TRS and 636 non-TRS). Across each of the four cohorts, the proportion of males prescribed clozapine was slightly higher than the proportion of males on other medications (χ2 = 7.04; p=7.96×10−3; Supplementary file 1) consistent with findings from epidemiological studies that report increased rates of clozapine prescription in males (Bachmann et al., 2017), although there was statistically significant heterogeneity in the sex distribution between groups across cohorts (χ2 = 20.5; p=0.0150). TRS cases were significantly younger than non-TRS cases (mean difference = −5.48 years; p=0.00533), although there was significant heterogeneity between the cohorts (I2 = 89%; p=7.40×10−32). There was no evidence of accelerated epigenetic aging between TRS and non-TRS patients (Figure 1—figure supplement 5 and Figure 1—figure supplement 6). Interestingly, cellular composition variables derived from the DNA methylation data suggest that TRS cases are characterized by a significantly higher proportion of granulocytes (meta-analysis mean difference = 0.00283; p=8.10×10−6) and lower proportions of CD8+ T-cells (mean difference = −0.0115; p=4.37×10−5; Supplementary file 1 and Figure 2—figure supplement 1) compared to non-TRS cases. Given the finding of higher derived granulocyte and lower CD8+ T-cell levels in the combined psychosis patient group compared to controls described above, a finding driven primarily by patients with schizophrenia, we performed a multiple regression analysis of granulocyte proportion to partition the effects associated with schizophrenia status from effects associated with TRS status. After including a covariate for TRS, schizophrenia status was not significantly associated with granulocyte proportion using a random effects model (p=0.210) but there was significant heterogeneity of effects across the four cohorts (I2 = 91%, p=4.93×10−7). Within the group of patients with schizophrenia, however, there were notable differences between TRS and non-TRS groups (mean difference = 0.0275; p=3.22×10−6; Figure 2—figure supplement 2). In contrast, a multiple regression analysis found that both schizophrenia status (mean difference = −0.0113; p=0.00818) and TRS status (mean difference = −0.0116; p=2.82×10−5) had independent additive effects on CD8+ T-cell proportion (Figure 2—figure supplement 3). Finally, TRS was also associated with significantly higher DNA methylation-derived smoking scores than non-TRS in all four cohorts (mean difference = 2.16; p=7.79×10−5; Figure 3—figure supplement 2). Testing both schizophrenia diagnosis status and TRS status simultaneously, we found that both remained significant; schizophrenia diagnosis was associated with a significant increase in smoking score (mean difference = 3.98; p=2.19×10−8) with TRS status associated with an additional increase within cases (mean difference = 2.15; p=2.22×10−7) (Figure 3—figure supplement 3).
 
-## There are widespread DMPs between TRS patients and treatment-responsive patients
+### There are widespread DMPs between TRS patients and treatment-responsive patients
 
 We next performed an EWAS within schizophrenia patients comparing TRS cases to non-TRS cases, including each autosomal and X-chromosome DNA methylation site analyzed in at least two cohorts (n = 431,659 DNA methylation sites). We identified seven DMPs associated with clozapine exposure (p<9×10−8; Supplementary file 1) with a mean difference of 1.47% (SD = 0.242%) and all sites being characterized by elevated DNA methylation in TRS cases (p=0.0156). We were interested in whether the DNA methylation differences associated with TRS overlapped with those identified between all schizophrenia cases and non-psychiatric controls. Although there was no direct overlap between the clozapine associated DMPs and the schizophrenia-associated DMPs identified for each analysis, the direction of effects across the 1048 schizophrenia-associated DMPs were enriched for consistent effects (n = 738 [70.4%] DMPs with consistent direction; p=7.57×10−41). Given these observations, we formally tested whether the schizophrenia-associated differences are driven by the subset of TRS cases on clozapine by fitting a model that simultaneously estimates the effect of schizophrenia status and TRS status across all 1048 sites (Supplementary file 1). While the vast majority of schizophrenia-associated DMPs remained at least nominally significant (n = 1003, 95.7%; p<0.05) between schizophrenia patients and controls; among those that did not, 25 (2.39%) had a significant effect associated with TRS status. For example, differential DNA methylation at the schizophrenia-associated DMP cg16322565, located in the NR1L2 gene on chromosome 3 (schizophrenia EWAS meta-analysis: mean DNA methylation difference = 0.907%; p=3.52×10−9), is driven primarily by cases with TRS (Figure 8; multiple regression analysis mean DNA methylation difference between schizophrenia cases and controls = 0.323%; p=0.123; mean DNA methylation difference between TRS cases and non-TRS controls = 1.01%; p=8.71×10−5). One hundred and fifty-two (14.5%) of the schizophrenia-associated DMPs were associated with a significant effect between schizophrenia cases and controls and a significant effect within schizophrenia patients between TRS and non-TRS patients, with the majority (128 [84.2%]) characterized by the same direction of effect in both groups and indicative of an additive effect of both schizophrenia diagnosis and TRS status (e.g., Figure 8—figure supplement 1). Of particular interest are 24 DMPs which are significantly associated with both schizophrenia and TRS but with an opposite direction of effect, highlighting how that at some DNA methylation sites, TRS counteracts changes induced by schizophrenia (e.g., Figure 8—figure supplement 2). Taken together, 177 (16.9%) of the schizophrenia-associated DMPs identified in our EWAS meta-analysis are influenced by TRS and reflect either differences induced by exposure to a specific antipsychotic therapy or other differences (e.g., treatment resistance) in individuals who are prescribed clozapine.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig8-v2.jpg)
+
+**Figure 8.:** Forest plots from a meta-analysis of differences in DNA methylation at cg16322565 located in the NR1L2 gene on chromosome 3 between (A) schizophrenia patients and controls and (B) TRS patients prescribed clozapine and non-TRS prescribed other medications. TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/58430/elife-58430-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** TE: treatment effect (i.e., the mean difference between cases and controls); seTE: standard error of the treatment effect.
 
 ## Discussion
 
@@ -180,72 +572,72 @@ In conclusion, our analysis of 4483 participants represents the largest study of
 
 ## Materials and methods
 
-## Cohort descriptions
+### Cohort descriptions
 
-## University College London samples
+#### University College London samples
 
 Four hundred and forty-seven schizophrenia cases and 456 controls from the University College London schizophrenia sample cohort were selected for DNA methylation profiling. A full description of this cohort can be found elsewhere (Datta et al., 2010) but briefly comprises unrelated ancestrally matched cases and controls from the United Kingdom. Case participants were recruited from UK NHS mental health services with a clinical ICD-10 diagnosis of schizophrenia. All case participants were interviewed with the Schedule for Affective Disorders and Schizophrenia-Lifetime Version (SADS-L) (Spitzer and Endicott, 1977) to confirm Research Diagnostic Criteria (RDC) diagnosis. A control sample screened for an absence of mental health problems was recruited. Each control subject was interviewed to confirm that they did not have a personal history of an RDC-defined mental disorder or a family history of schizophrenia, bipolar disorder, or alcohol dependence. UK National Health Service multicenter and local research ethics approval was obtained and all subjects signed an approved consent form after reading an information sheet.
 
-## Aberdeen samples
+#### Aberdeen samples
 
 Four hundred and eighty-two schizophrenia cases and 468 controls from the Aberdeen schizophrenia sample were selected for DNA methylation profiling. The Aberdeen case-control sample has been fully described elsewhere (International Schizophrenia Consortium, 2008) but briefly contains schizophrenia cases and controls who have self-identified as born in the British Isles (95% in Scotland). All cases met the Diagnostic and Statistical Manual for Mental Disorders-IV edition (DSM-IV) and International Classification of Diseases 10th edition (ICD-10) criteria for schizophrenia. Diagnosis was made by Operational Criteria Checklist (OPCRIT). Controls were volunteers recruited through general practices in Scotland. Practice lists were screened for potentially suitable volunteers by age and sex and by exclusion of subjects with major mental illness or use of neuroleptic medication. Volunteers who replied to a written invitation were interviewed using a short questionnaire to exclude major mental illness in individual themselves and first-degree relatives. All cases and controls gave informed consent. The study was approved by both local and multiregional academic ethical committees.
 
-## Monozygotic twins discordant for schizophrenia
+#### Monozygotic twins discordant for schizophrenia
 
 The Twins cohort is a multicenter collaborative project aimed at identifying DNA methylation differences in monozygotic twin pairs discordant for a diagnosis of schizophrenia. Ninety-six informative twin pairs (n = 192 individuals) were identified from European twin studies based in Utrecht (The Netherlands), Helsinki (Finland), London (United Kingdom), Stockholm (Sweden), and Jena (Germany). Of the monozygotic twin pairs utilized in the analysis, 75 were discordant for diagnosed schizophrenia, 6 were concordant for schizophrenia, and 15 twin pairs were free of any psychiatric disease. Each twin study has been approved; ethical permission was given by the relevant local ethics committee and the participating twins have provided written informed consent.
 
-## Dublin samples
+#### Dublin samples
 
 Three hundred and sixty-one schizophrenia cases and 346 controls were selected from the Irish Schizophrenia Genomics consortium; a detailed description of this cohort can be found in Morris et al., 2014. Briefly, participants from the Republic of Ireland or Northern Ireland were interviewed using a structured clinical interview, and diagnosis of schizophrenia or a related disorder (schizoaffective disorder; schizophreniform disorder) was made by the consensus lifetime best estimate method using DSM-IV criteria. Control subjects were ascertained with written informed consent from the Irish GeneBank and represented blood donors from the Irish Blood Transfusion Service. Ethics Committee approval for the study was obtained from all participating hospitals and centers.
 
-## IoPPN samples
+#### IoPPN samples
 
 The IoPPN cohort comprises 290 schizophrenia cases, 308 FEP patients, and 203 non-psychiatric controls recruited from the same geographical area into three studies via the South London and Maudsley Mental Health National Health Service (NHS) Foundation Trust. Established schizophrenia cases were recruited to the Improving Physical Health and Reducing Substance Use in Severe Mental Illness (IMPACT) study from three English mental health NHS services (Gaughran et al., 2019). FEP patients were recruited to the GAP study (Di Forti et al., 2015) via in-patient and early intervention in psychosis community mental health teams. All patients aged 18–65 years who presented with an FEP to the Lambeth, Southwark, and Croydon adult in-patient units of the South London and Maudsley Mental Health NHS Foundation Trust between May 1, 2005, and May 31, 2011, who met ICD-10 criteria for a diagnosis of psychosis (codes F20–F29 and F30–F33). Clinical diagnosis was validated by administering the Schedules for Clinical Assessment in Neuropsychiatry (SCAN). Cases with a diagnosis of organic psychosis were excluded. Healthy controls were recruited into the GAP study from the local population living in the area served by the South London and Maudsley Mental Health NHS Foundation Trust, by means of internet and newspaper advertisements, and distribution of leaflets at train stations, shops, and job centers. Those who agreed to participate were administered the Psychosis Screening Questionnaire (Bebbington and Nayani, 1995) and excluded if they met criteria for a psychotic disorder or reported to have received a previous diagnosis of psychotic illness. All participants were included in the study only after giving written informed consent. The study protocol and ethical permission was granted by the Joint South London and Maudsley and the Institute of Psychiatry NHS Research Ethics Committee (17/NI/0011).
 
-## Sweden samples
+#### Sweden samples
 
 One hundred and ninety schizophrenia cases and 190 controls from the Sweden Schizophrenia Study (S3) were selected for DNA methylation profiling, as described previously (Kowalec et al., 2019). Briefly, S3 is a population-based cohort of individuals born in Sweden including 4936 schizophrenia cases and 6321 healthy controls recruited between 2004 and 2010. Schizophrenia cases were identified from the Sweden Hospital Discharge Register with ≥2 hospitalizations with an ICD discharge diagnosis of schizophrenia or schizoaffective disorder . Controls were also selected through Swedish Registers and were group-matched by age, sex, and county of residence and had no lifetime diagnoses of schizophrenia, schizoaffective disorder, or bipolar disorder or antipsychotic prescriptions. Blood samples were drawn at enrollment. All subjects were 18 years of age or older and provided written informed consent. Ethical permission was obtained from the Karolinska Institutet Ethical Review Committee in Stockholm, Sweden.
 
-## The European Network of National Schizophrenia Networks Studying Gene-Environment Interactions cohort (EU-GEI)
+#### The European Network of National Schizophrenia Networks Studying Gene-Environment Interactions cohort (EU-GEI)
 
 Four hundred and fifty-eight FEP cases and 558 controls from the incidence and case-control work package (WP2) of the European Network of National Schizophrenia Networks Studying Gene-Environment Interactions (EU-GEI) cohort were selected for DNA methylation profiling (Jongsma et al., 2018). Patients presenting with FEP were identified, between May 1, 2010, and April 1, 2015, by trained researchers who carried out regular checks across the 17 catchment area Mental Health Services across six European countries. FEPs were included if (1) age 18–64 years and (2) resident within the study catchment areas at the time of their first presentation and with a diagnosis of psychosis (ICD-10: F20–33). Using the Operational Criteria Checklist algorithm (McGuffin et al., 1991; Quattrone et al., 2019), all cases interviewed received a research-based diagnosis. FEPs were excluded if (1) previously treated for psychosis, (2) they met criteria for organic psychosis (ICD-10: F09), or for a diagnosis of transient psychotic symptoms resulting from acute intoxication (ICD-10: F1X.5). FEPs were approached via their clinical team and invited to participate in the assessment. Random and Quota sampling strategies were adopted to guide the recruitment of controls from each of the sites. The most accurate local demographic data available were used to set quotas for controls to ensure the samples’ representativeness of each catchment area’s population at risk. Controls were excluded if they had received a diagnosis of, and/or treatment for, a psychotic disorder. All participants provided written informed consent. Ethical approval was provided by relevant research ethics committees in each of the study sites.
 
-## Genome-wide quantification of DNA methylation
+### Genome-wide quantification of DNA methylation
 
 Approximately 500 ng of blood-derived DNA from each sample was treated with sodium bisulfite in duplicate, using the EZ-96 DNA methylation kit (Zymo Research, CA, USA). DNA methylation was quantified using either the Illumina Infinium HumanMethylation450 BeadChip (Illumina Inc, CA, USA) or Illumina Infinium HumanMethylationEPIC BeadChip (Illumina Inc) run on an Illumina iScan System (Illumina) using the manufacturers’ standard protocol. Samples were batched by cohort and randomly assigned to chips and plates to ensure equal distribution of cases and controls across arrays and minimize batch effects. For the Twins cohort, both members of the same twin pair were run on the same chip. A fully methylated control sample (CpG Methylated HeLa Genomic DNA; New England BioLabs, MA, USA) was included in a random position on each plate to facilitate plate tracking. Signal intensities were imported in R programming environment using the methylumIDAT function in the methylumi package (Davis et al., 2015). Our stringent quality control pipeline included the following steps: (1) checking methylated and unmethylated signal intensities, excluding samples where this was <2500; (2) using the control probes to ensure the sodium bisulfite conversion was successful, excluding any samples with median <90; (3) identifying the fully methylated control sample was in the correct location; (4) all tissues predicted as of blood origin using the tissue prediction from the Epigenetic Clock software (https://DNAmAge.genetics.ucla.edu/) (Horvath, 2013); (5) multidimensional scaling of sites on X and Y chromosomes separately to confirm reported gender; (6) comparison with genotype data across SNP probes; (7) pfilter function from wateRmelon package (Pidsley et al., 2013) to exclude samples with >1% of probes with detection p-value>0.05 and probes with >1% of samples with detection p-value>0.05. PCs were used (calculated across all probes) to identify outliers, samples >2 standard deviations from the mean for both PC1 and PC2 were removed. An additional QC step was performed in the Twins cohort using the 65 SNP probes to confirm that twins were genetically identical. Normalization of the DNA methylation data was performed using the dasen function in the wateRmelon package (Pidsley et al., 2013). As cell count data were not available for these DNA samples, these were estimated from the 450K DNA methylation data using both the Epigenetic Clock software (Horvath, 2013) and Houseman algorithm (Houseman et al., 2012; Koestler et al., 2013), including the seven variables recommended in the documentation for the Epigenetic Clock in the regression analysis. For cohorts with the EPIC array DNA methylation data, we were only able to generate the six cellular composition variables using the Houseman algorithm (Houseman et al., 2012; Koestler et al., 2013), which were included as covariates. Similarly as smoking data was incomplete for the majority of cohorts, we calculated a smoking score from the data using the method described by Elliott et al., 2014 and successfully used in our previous (phase 1) analyses (Hannon et al., 2016a). Raw and processed data for the UCL, Aberdeen, Dublin, IoPPN, and EU-GEI cohorts are available through GEO accession numbers GSE84727, GSE80417, GSE147221, GSE152027, and GSE152026, respectively.
 
-## Data analysis
+### Data analysis
 
 All analyses were performed with the statistical language R unless otherwise stated. Custom codes for all steps of the analysis are available on GitHub https://github.com/ejh243/SCZEWAS/tree/master/Phase2; Hannon, 2021; copy archived at swh:1:rev:006e92b11dbd3eb7e75dcc173853010fa93461a5.
 
-## Comparison of estimates of cellular composition and tobacco smoking derived from DNA methylation data
+### Comparison of estimates of cellular composition and tobacco smoking derived from DNA methylation data
 
 A linear regression model was used to test for differences in 10 cellular composition variables estimated from the DNA methylation data, reflecting either proportion or abundance of blood cell types. These estimated cellular composition variables were regressed against case/control status with covariates for age, sex, and smoking. Estimated effects and standard errors were combined across the cohorts using a random effects meta-analysis implemented with the meta package (Schwarzer, 2007). The same methodology was used to test for differences in the smoking score derived from DNA methylation data between cases and controls including covariates for age and sex. p-Values are from two-sided tests.
 
-## Within-cohort EWAS analysis
+### Within-cohort EWAS analysis
 
 A linear regression model was used to test for differentially methylated sites associated with schizophrenia or FEP. DNA methylation values for each probe were regressed against case/control status with covariates for age, sex, derived cellular composition scores (from the DNA methylation data), derived smoking score (from the DNA methylation data), and experimental batch. For the EU-GEI cohort, there was an additional covariate for contributing study. For the Twins cohort, a linear model was used to generate regression coefficients, but p-values were calculated with clustered standard errors using the plm package (Croissant and Millo, 2008), recognizing individuals from the same twin pair.
 
-## Within-patient EWAS of clozapine prescription
+### Within-patient EWAS of clozapine prescription
 
 Four individual cohorts (UCL, Aberdeen, IoPPN, and Sweden) had information on medication and/or clozapine exposure and were included in the TRS EWAS. TRS patients were defined as any case that had ever been prescribed clozapine, and non-TRS patients were defined as schizophrenia cases that had no record of being prescribed clozapine. Within each cohort, DNA methylation values for each probe were regressed against TRS status with covariates for age, sex, cell composition, smoking status, and batch as described for the case-control EWAS.
 
-## Multiple regression analysis of schizophrenia and clozapine prescription
+### Multiple regression analysis of schizophrenia and clozapine prescription
 
 Using the four cohorts that were included in the TRS EWAS (UCL, Aberdeen, IoPPN, and Sweden), we fitted a multiple regression model with two binary indicator variables: one that identified the schizophrenia patients and a second that identified the TRS patients. Within each cohort, DNA methylation values for each probe were regressed against these two binary variables, with covariates for age, sex, derived cellular composition scores (from the DNA methylation data), derived smoking score (from the DNA methylation data), and experimental batch as described above for the other EWAS analyses.
 
-## Meta-analysis
+### Meta-analysis
 
 The EWAS results from each cohort were processed using the bacon R package (van Iterson et al., 2017), which uses a Bayesian method to adjust for inflation in EWAS p-values. All probes analyzed in at least two studies were taken forward for meta-analysis. This was performed using the metagen function in the R package meta (Schwarzer, 2007), using the effect sizes and standard errors adjusted for inflation from each individual cohort to calculate weighted pooled estimates and test for significance. p-Values are from two-sided tests and significant DMPs were identified from a random effects model at a significance threshold of 9 × 10−8, which controls for the number of independent tests performed when analysis data generated with the EPIC array (Mansell et al., 2019). DNA methylation sites were annotated with location information for genome build hg19 using the Illumina manifest files (CHR and MAPINFO).
 
-## Overlap with schizophrenia GWAS loci
+### Overlap with schizophrenia GWAS loci
 
 The GWAS regions were taken from the largest published schizophrenia GWAS to date by Pardiñas et al., 2018 made available through the Psychiatric Genomics Consortium (PGC) website (https://www.med.unc.edu/pgc/results-and-downloads). Briefly, regions were defined by performing a ‘clumping’ procedure on the GWAS p-values to collapse multiple correlated signals (due to linkage disequilibrium) surrounding the index SNP (i.e., with the smallest p-value) into a single associated region. To define physically distinct loci, those within 250 kb of each other were subsequently merged to obtain the final set of GWAS regions. The outermost SNPs of each associated region defined the start and stop parameters of the region. Using the set of 158 schizophrenia-associated genomic loci, we used Brown’s method (Brown, 1975) to calculate a combined p-value across all probes located within each region (based on hg19) using the probe-level p-values and correlation coefficients between all pairs of probes calculated from the DNA methylation values. Briefly, correlation statistics were calculated and (along with the p-values) were inputted into Brown’s formula. As correlations between probes could only be calculated using probes profiled on the same array, this analysis was limited to probes included on the EPIC array. Correlations between probes were calculated within the EU-GEI cohort as this had the largest number of samples.
 
-## Enrichment analyses
+### Enrichment analyses
 
 Enrichment of the heritability statistics of DMPs was performed against a background set of probes selected to match the distribution of the test set for both mean and standard deviation. This was achieved by splitting all probes into 10 equally sized bins based on their mean methylation level and 10 equally sized bins based on their standard deviation, to create a matrix of 100 bins. After counting the number of DMPs within each bin, we selected the same number of probes from each bin for the background comparison set. This was repeated multiple times, without replacement, until all the probes from at least one bin were selected giving the maximum possible number of background probes (n = 42,968) such that they matched the characteristics of the test set of DMPs.
 
-## GO analysis
+### GO analysis
 
 Illumina UCSC gene annotation, which is derived from the genomic overlap of probes with RefSeq genes or up to 1500 bp of the transcription start site of a gene, was used to create a test gene list from the DMPs for pathway analysis. Where probes were not annotated to any gene (i.e., in the case of intergenic locations), they were omitted from this analysis, and where probes were annotated to multiple genes, all were included. A logistic regression approach was used to test if genes in this list predicted pathway membership, while controlling for the number of probes that passed quality control (i.e., were tested) annotated to each gene. Pathways were downloaded from the GO website (http://geneontology.org/) and mapped to genes including all parent ontology terms. All genes with at least one 450K probe annotated and mapped to at least one GO pathway were considered. Pathways were filtered to those containing between 10 and 2000 genes. After applying this method to all pathways, the list of significant pathways (p<0.05) was refined by grouping to control for the effect of overlapping genes. This was achieved by taking the most significant pathway and retesting all remaining significant pathways while controlling additionally for the best term. If the test genes no longer predicted the pathway, the term was said to be explained by the more significant pathway, and hence these pathways were grouped together. This algorithm was repeated, taking the next most significant term, until all pathways were considered as the most significant or found to be explained by a more significant term.

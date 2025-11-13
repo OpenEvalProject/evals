@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03h2bxq36 Division of Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom
+1. Division of Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
 
 † Corresponding author
 
@@ -29,21 +29,29 @@ Here, we present a novel human pluripotent cell-derived in vitro neural rosette 
 
 ## Results
 
-## In vitro generation of human dorsal spinal cord rosettes
+### In vitro generation of human dorsal spinal cord rosettes
 
 An in vitro protocol which generates dorsal spinal cord from human pluripotent cell-derived NMP-like cells with brachial/ thoracic character (Verrier et al., 2018) was used to make neural rosettes (Figure 1A). The precise timing with which NMP-like cells (derived from H9 human Embryonic Stem Cells - ESCs) enter the neural differentiation programme was assessed by quantifying cells expressing a range of neural progenitor markers during the first 10 days of two-dimensional culture in a minimal medium (Figure 1A, B, Figure 1—source data 1 and Figure 1—source data 2). This early neural tissue formed compact condensations of cells by day 4 (D4) of NMP-like cell differentiation, which lacked overt apico-basal polarity as indicated by localisation of N-Cadherin (Cadherin-2) at most cell-cell interfaces (Hatta and Takeichi, 1986; Dady et al., 2012; Figure 1B). These cells expressed SOX2, characteristic of both pluripotent, NMP and neural progenitor cells (Uchikawa et al., 2003; Uchikawa et al., 2011; Bylund et al., 2003; Ellis et al., 2004), and the neural progenitor protein PAX6 (Walther and Gruss, 1991; Pevny et al., 1998). Some cells expressing the early neural crest marker SNAI2 were also detected on D4 (Nieto, 2002; Jiang et al., 2009; Dady and Duband, 2017; Figure 1B, Figure 1—source data 1). The expression of PAX7, which distinguishes dorsal neural progenitors (Jostes et al., 1990; Gruss and Walther, 1992) and the absence of OLIG2, characteristic of more ventral spinal cord (Mizuguchi et al., 2001; Novitch et al., 2001) further indicated that at D4 this differentiation protocol had generated human neural tissue with dorsal spinal cord identity (Figure 1B, Figure 1—source data 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig1-v2.jpg)
 
-**Figure 1.:** (A) Timeline and protocol for induction and differentiation of dorsal spinal cord neural rosette from human pluripotent stem cells (hPSC); (B) Expression patterns and quantification of cell type specific proteins in rosettes on days D4, D6, and D10 detected by immunofluorescence (IF) combined with DNA stain DAPI: apical polarity marker N-Cadherin (NCAD), neural progenitor markers SOX2, PAX6, early neural crest marker SNAIL2, and dorso-ventrally restricted neural progenitor markers PAX7 and OLIG2. Quantifications indicate proportions of expressing cells in either a defined field on D4 or within a rosette from D6, in 15 samples for each marker (n = 5 rosettes from each of 3 independent differentiations, each data point represents a single rosette), see section ‘Materials and Methods’. Data analysed with Mann–Whitney test, errors bars ± SEM, p values: *p<0.05; **p<0.01; **** p<0.0001; scale bar = 50 μm.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.
+**Figure 1.:** (A) Timeline and protocol for induction and differentiation of dorsal spinal cord neural rosette from human pluripotent stem cells (hPSC); (B) Expression patterns and quantification of cell type specific proteins in rosettes on days D4, D6, and D10 detected by immunofluorescence (IF) combined with DNA stain DAPI: apical polarity marker N-Cadherin (NCAD), neural progenitor markers SOX2, PAX6, early neural crest marker SNAIL2, and dorso-ventrally restricted neural progenitor markers PAX7 and OLIG2. Quantifications indicate proportions of expressing cells in either a defined field on D4 or within a rosette from D6, in 15 samples for each marker (n = 5 rosettes from each of 3 independent differentiations, each data point represents a single rosette), see section ‘Materials and Methods’. Data analysed with Mann–Whitney test, errors bars ± SEM, p values: *p<0.05; **p<0.01; **** p<0.0001; scale bar = 50 μm.
 
 By D6 neural rosettes composed of apico-basally polarised SOX2, PAX6, and PAX7 expressing progenitors had formed, with a single, central lumen and peripheral SNAI2 neural crest cells (Figure 1B). This spatial reorganisation was accompanied by decline in SNAI2+ cells and the appearance, by D10, of a scattering of OLIG2 expressing cells (Figure 1B, Figure 1—source data 1). This emergence of neural rosettes from a condensing epiblast cell population at D4, may equate to the formation of the neural plate and establishment of the pseudostratified neuroepithelium, but it is also reminiscent of the phases of embryonic secondary neurulation (Schoenwolf and Nichols, 1984; Catala et al., 1995; Dady et al., 2012; Dady et al., 2014; Fedorova et al., 2019).
 
 These findings show that differentiation of human ESC derived NMP-like cells in a minimal culture medium containing retinoic acid (RA) is sufficient to generate self-organising dorsal spinal cord rosettes and accompanying neural crest.
 
-## Sequential differentiation of human dorsal spinal cord progenitors is recapitulated in vitro
+### Sequential differentiation of human dorsal spinal cord progenitors is recapitulated in vitro
 
 Dorsal spinal cord rosettes were further characterised as they progressed through their differentiation programmes (Figure 2A). Decline of SNAI2-expressing cells at D10 coincided with the emergence of migrating neural crest cells expressing HNK1 (Tucker et al., 1984; Bronner-Fraser, 1986), SOX10 (Bondurand et al., 1998), and TFAP2α (Zhang et al., 1996; Betters et al., 2010) in cells now just outside the rosettes (Jiang et al., 2009; Figure 2B, Figure 2—source data 1). The onset of neuron production was assessed in several ways: (i) by analysis of immature neuronal marker Doublecortin (DCX) expression (Gleeson et al., 1999; Brown et al., 2003) (using a hESC [H1] neuronal reporter cell line in which a yellow fluorescent protein [YFP] sequence is fused to endogenous DCX [Yao et al., 2017; Figure 2C, Figure 2—source data 2]),and (ii) by characterisation of cdk inhibitor P27/KIP1 expression, which identifies post-mitotic cells in the neural tube (Gui et al., 2007; Figure 2D, Figure 2—source data 3). These analyses defined a neurogenesis timeline which commenced by D8, peaked at D14 and progressed through to D20.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of in vitro sequence of cell-type specific differentiation of dorsal spinal cord rosettes; (B) emergence of migrating neural crest from rosettes by D10, documented by IF for key marker proteins HNK1, (lumen defined by apical marker ZO-1), SOX10 (neural progenitors defined by SOX2), and TFAP2α and quantified for SOX10 and TFAP2α; (C) transition from neurogenesis to gliogenesis documented and quantified in immature neuronal reporter line (H1:DCX-YFP) with co-IF for gliogenesis marker Nuclear Factor I-A (NFIA) at key timepoints; (D) P27/KIP1 expression which by analogy identifies most dorsal post-mitotic neurons, confirms neurogenesis onset by D8; (E–G) emergence of dorsal interneuron (dIs) subtypes by D10 indicated by dI1s/LHX2 (E), dI3s/ISLET1 (F) (note lack of HB9/ ISLET1 co-expression distinguishes these cells from motor neurons) and dI5s/BRN3A. Sample numbers, statistics and error bars as in Figure 1, each data point represents a single rosette and see section ‘Materials and Methods’; scale bar = 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) dl2 neuron differentiation analysed by IF for expression of LHX1 in stages CS12 and CS18 human embryonic spinal cord; note dI2 neurons are only detected at CS18 (arrow indicates LHX1 expressing cells, dashed white boxes indicate area of magnification in next adjacent image); (B) LHX1 is not detected in neural rosettes differentiated in vitro. Three sections were analysed at each stage in n = 1 CS12; n = 1 CS13; and n = 1 CS18 human embryos. Three independent cell differentiations were performed to generate rosettes. Five neural rosettes from each experiment were then analysed for quantification at each time point (n = 15). Data were analysed using non-parametric Mann–Whitney test. Scale bar = 50 μm.
 
 By D20 DCX-expressing neurons largely resided at the rosette perimeter and the early glial progenitor marker, the transcription factor Nuclear factor 1 A-type (NFIA) (Deneen et al., 2006), was now detected in cells within the rosette (Figure 2C, Figure 2—source data 2). This indicates operation of a switch from neurogenic to gliogenic differentiation programmes in the human spinal cord rosettes that is similar to that observed in the mouse embryo (Deneen et al., 2006).
 
@@ -51,11 +59,19 @@ Finally, we determined the identity of neurons generated in this in vitro assay 
 
 These data document the differentiation capacity in this human spinal cord rosette assay and demonstrate that it reproducibly generates dorsal neural differentiation programmes. These begin with dorsal neural progenitors and emerging neural crest, progress to neurogenesis (of specific dorsal interneurons dI1s, dI3s, and dI5s) and a later switch to gliogenesis: a sequence that recapitulates the temporal order of differentiation observed in the spinal cord of mouse and avian embryos (Figure 2A; Deneen et al., 2006; Glasgow et al., 2017; Andrews et al., 2017).
 
-## Human spinal cord differentiation in vitro progresses more rapidly than in the human embryonic spinal cord
+### Human spinal cord differentiation in vitro progresses more rapidly than in the human embryonic spinal cord
 
 This conservation in the sequence of the dorsal neural differentiation programme contrasts with the longer duration of human embryogenesis in comparison with that observed in the mouse and chicken. Indeed, the pace of differentiation in the developing nervous system and that of body axis segmentation is slower in human embryos (Rayon et al., 2020; Matsuda et al., 2020). These latter studies indicate the presence of species-specific cell intrinsic differences that govern developmental tempo. To understand how well this tempo is captured in our in vitro assay, we next sought to compare the sequence and timing of differentiation progression in human spinal cord rosettes with that observed in the human embryo.
 
 The pattern and timing of key marker protein expression in human embryonic spinal cord was investigated using tissue samples provided by the HDBR (Figure 3A–H and Figure 3—figure supplement 1) and available data. One way in which to assess differentiation progression is to take advantage of the spatial separation of the temporal events of differentiation along the embryonic body axis, and so analyses were carried out at distinct rostro-caudal levels in Carnegie stage (CS) 12/13 (gestational weeks 4–4.5) human embryonic spinal cord (sections from two embryos were analysed, one at CS12 and one at CS13, both showed the same expression patterns) O’Rahilly, 1987; sacral (the most caudal and least differentiated region), lumbar and thoracic/brachial (more rostral and progressively more differentiated regions). Developmental time along the body axis can be approximated by that indicated by segmentation progression from the sacral to thoracic/brachial region, which involves generation of ~20 somites with one human somite generated every 5 hr (Turnpenny et al., 2007; Hubaud and Pourquié, 2014; Matsuda et al., 2020) this represents, 100 hr or ~4 days (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig3-v2.jpg)
+
+**Figure 3.:** (A) CS12 human embryo with anatomical sub-regions indicated and their alignment with in vitro spinal cord rosette differentiation (see text); (B–H) transverse sections through human embryonic spinal cord at sacral, lumbar and thoracic levels at 4/4.5 weeks (CS12/CS13) and at brachial/thoracic at 7/7.5 weeks (CS18) analysed by IF for expression of (B, B’) dorsal, PAX7, or ventral, OLIG2, spinal cord progenitor markers (note novel PAX7 detection in the floor plate, arrow) and (B’) waning PAX7 at CS18 (arrow); (C) premigratory neural crest cell marker SNAI2 is only detected in sacral regions (arrow) shown here with pan-neural progenitor marker SOX2; (D) differentiating migrating neural crest expressing HNK1 emerges from the lumbar region (arrow); (E) neuronal differentiation detected with pan-neuronal marker TUJ1 is manifest dorsally in lumbar regions; dorsal interneurons indicated by (F) dI1 specific transcription factor LHX2 and (G) dI3 identifying ISLET1 expressing cells were not detected dorsally in any region of the spinal cord at CS12/CS13; (G’) dorsal ISLET1 interneurons at CS18; (H, H’) gliogenesis marker NFIA detected dorsally only at CS18; (I) Schematic aligning dorsal brachial/thoracic spinal cord differentiation in human embryo and in hPSC derived dorsal spinal cord rosettes, based on (1) Bondurand et al., 1998, O’Rahilly and Müller, 2007; (2) This study, Rayon et al., 2020, Marklund et al., 2014; (3) This study, Rayon et al., 2020; three sections were analysed at each level for each marker in n = 2 CS12/13 and n = 1 CS18 human embryos. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Neuronal differentiation detected with markers P27 and ISLET1 detected dorsally in the brachial/thoracic region in a CS13 embryonic stage and is strongly detected later at stages CS16 and CS18 Scale bar = Scale bar = 50 μm.
 
 The sacral spinal cord at CS12/13 stage was composed of progenitors expressing dorsal (PAX7) and ventral (OLIG2) markers (Figure 3B) as well as pre-migratory neural crest cells expressing SNAI2 (Figure 3C) and lacking migratory neural crest cell marker HNK1 (Figure 3D). Moreover, neurogenesis, revealed by the pan-neuronal marker TUJ1, was only detected ventrally (Menezes and Luskin, 1994; Figure 3E). The differentiation state in the dorsal region of the CS12/13 sacral neural tube therefore aligns well with that found in D6 dorsal spinal cord rosettes, which constitute apico-basally polarised neuroepithelium expressing PAX6, PAX7, and SNAI2 (Figure 1B) that lacks migratory neural crest and neurons (Figure 2B–G).
 
@@ -65,11 +81,31 @@ Importantly, dorsal interneuron markers LHX2 (dI1) and ISLET1/HB9 (dI3) were als
 
 A further way to assess differentiation tempo is to align progression of a defined cell population in vitro and in vivo using time elapsed from a key landmark event. The NMP-like cells generated in our protocol have a brachial/thoracic regional character as indicated by Hox gene expression (Verrier et al., 2018) and differentiation of this region can be compared in vitro and in embryos over time. Detailed analysis of the first appearance of spinal cord neural crest in the human embryo provides a clear landmark with which to align in vivo and in vitro differentiation (Bondurand et al., 1998; O’Rahilly and Müller, 2007). These latter studies identify morphological emergence of migrating neural crest in cervical level spinal cord in the CS11 human embryo (O’Rahilly and Müller, 2007) and in even more caudal spinal cord at this stage using SOX10 mRNA expression (Bondurand et al., 1998). From this we infer that pre-migratory neural crest is present prior to CS11 in brachial/thoracic spinal cord, and so aligns this region in CS10-11 embryos with D6 in our neural rosettes, which express SNAI2 but lack migratory neural crest marker proteins SOX10, HNK1, and TFAP2α (Figures 1B and 2B). Using this alignment point we then compared time to appearance of later cell type specific markers in neural rosettes and human embryos (Figure 3I). As above, dorsally located ISLET1/dI3s first appear ~CS13 (Figure 3—figure supplement 1) and are robustly detected at CS15 (Rayon et al., 2020; Rayon et al., 2021; and see HDBR Atlas http://hdbratlas.org), and here this indicates that these neurons appear ~4 days earlier in D10 rosettes (Figures 2E, F, 3I). The landmark switch from neurogenesis to gliogenesis indicated by NFIA expression in dorsal neural progenitors was detected in human embryos at CS18 (gestational weeks 7–7.5) (Figure 3H’) but not at CS17 (Rayon et al., 2020). This is ~1 week later than in neural rosettes, where NFIA was robustly found at D20 (Figures 2C and 3I). Moreover, the overall time from spinal cord migratory neural crest appearance to dorsal gliogenesis takes ~2 weeks (D6 –D20) in human dorsal spinal cord rosettes in vitro and ~3–3.5 weeks (CS10/11-CS17/18) in the human embryonic spinal cord (Figure 3I). These further comparisons also suggest that differentiation of neural rosettes in vitro proceeds more quickly than equivalent neural progenitor cells in vivo.
 
-## In vitro differentiation pace of human neural progenitors is initially unaltered by iso-chronic grafting into the more rapidly developing chicken embryonic environment
+### In vitro differentiation pace of human neural progenitors is initially unaltered by iso-chronic grafting into the more rapidly developing chicken embryonic environment
 
 In the vertebrate embryo, the timing of neural differentiation is orchestrated by signals from adjacent tissues, which drive and coordinate axial differentiation but the localised and temporally controlled characteristics of this regulatory influence are lacking in vitro. Indeed, in the embryo, neural progenitors will generate more cells to make a bigger structure and so proliferative phases that expand cell populations might be longer. We have found that the smaller rosette structures generated in vitro differentiate more rapidly and this raises the possibility that differentiation pace in this minimal assay reflects species-specific intrinsic constraints on this process (Rayon et al., 2020). To test whether rosette cells retain in vitro differentiation timing or if this can run still faster in a more rapidly developing embryo that also provides a more coherent extracellular environment, we next iso-chronically grafted human neural rosettes into the dorsal neural tube of the chicken embryo.
 
 To this end, human induced pluripotent stem cells (iPSCs) (Cellartis hIPS4 cell line engineered to express a plasma membrane tagged GFP, ChiPS4-pmGFP, see section ‘Materials and Methods’) were differentiated into NMP-like cells and then into D6 neural rosettes as described above (Figure 1A). Multiple plates of rosettes were generated so that control in vitro differentiation of iPSC derived rosettes was monitored in parallel with that of D6 rosettes grafted into the chicken embryo. The expression of key marker proteins in these ChiPS4-pmGFP derived rosettes was found to be the same as that in D6 rosettes derived from the hESC H9 line (Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1). Individual neural rosettes were micro-dissected, lightly dissociated and grafted in place of one side of the dorsal neural tube, adjacent to newly formed somites in stage HH10-11 (Embryonic day 2, E2) chicken embryos (Figure 4A–B’, Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation experiment; (B-B’) two days after grafting human cells were observed in: (1) ICG: incorporated cell group or (2) ISC: incorporated single cells isolated within the chicken neural tube, or (3) CR: contiguous rosette with chick neural tube; (C–G) IF to detect key marker proteins in control (note, these non-grafted /sham operated embryos regenerate the dorsal neural tube by 2 days post-operation) and grafted embryos after 2 days incubation (C) ZO1, (D) SOX2, (E) PAX7, (F) P27, (G) ISLET1 (arrowheads indicate examples of candidate protein expressing cells in the chicken host tissue; arrow indicates examples of P27 and GFP co-expressing cells, dashed white boxes indicate area of magnification in next adjacent image), three transverse sections from each of at least three grafted chicken embryos were analysed for each marker combination and the proportions of SOX2/GFP+ ve, PAX7/GFP+ ve and P27/GFP+ ve cells in configurations 1, 2 or 3 were quantified, no ISLET1+ ve cells were found (this included three sections from three different grafts/embryos in which GFP+ ve cells were located within the chicken host Islet1 domain), each data point represents data from one histological section. Note that the small number of single cells (group 2) underlies lack of significant difference between groups (see Materials and Methods and metadata), data analysed with Mann–Whitney U test. Errors bars are ± SD. Scale bar = 50 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Human dorsal spinal cord rosettes from the same differentiation assays used for Iso-chronic grafting experiments were cultured in parallel in vitro and subjected to IF for SOX2, PAX7, SNAI2, P27, ISLET1, HNK1 and TFAP2α SOX2, PAX7, and SNAI2 were expressed from D6(D0). P27, HNK1, and TFAP2α were detected from D8 (+2 D). ISLET1 was detected from D11 (+5 D). (B) Quantifications, percentage of cells in D6 rosettes expressing each marker on the day of grafting operation D6(D0), 2 days after transplantation (+2 D) which equals D8 in vitro, and 5 days after transplantation (+5 D), which equals D11 in vitro differentiation. Five rosettes from each of three independent differentiation experiments were used for quantifications, each data point represents data from a single rosette. See section ‘Materials and methods’ for statistical analysis. Errors bars are ± S.E.M. Probability of similarity, p-value: **p<0.01 and ****p<0.0001. Scale bar = 50 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) E2 (10–15 somite stage, HH 10/11+) chicken embryo following removal of the dorsal part of neural tube. (B) High magnification of the newly formed somite region, where the dorsal part of the neural tube was surgically removed prior to grafting. (C) Transverse sections of chicken neural tube subjected to IF for SOX2, SNAI2, PAX7, OLIG2, ISLET1, NCAD, ZO1, and HNK1 in the region anterior to the removal site (1), the removal region (2), and the region caudal to the site (3). The neural tube region removed is only composed of neural crest and neural progenitors expressing respectively SNAI2 and PAX7 and is similar to D6 human spinal cord neural rosettes. At least three chicken embryos and three sections were analysed for each marker combination. Scale bar = 50 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** To control for any disturbance in differentiation resulting from grafting procedures, the dorsal neural tube (~half of one side of the neural tube) from E2 (stage HH11-12) chicken embryos expressing plasma membrane tagged with GFP (Myr-GFP transgenic line) was transplanted in place of the same region of E2 wild-type chicken embryos. Transplanted embryos were allowed to develop for 2 days and fixed prior to analysis. (A–D) Transverse sections of transplanted chicken embryos subjected to IF for (A) Snai2, (B) Pax7, (C) Islet1, and (D) HNK1. At least three sections from three different chicken embryos and were analysed for each marker combination. Scale bar = 50 μm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–F) Detection of key marker proteins in chicken embryos after control sham operation (non-grafted) and after grafting with a small group of human neural progenitors assessed after 2 and 5 days incubation, (A and D) neural progenitor marker PAX7, (B and E) post-mitotic neuronal marker P27, and (C and F) dorsal interneuron type 3, dI3s, marker ISLET1 (note host ISLET expressing cells either side of GFP-expressing graft in C). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of PAX7/GFP+ ve, P27/GFP+ ve, ISLET1/GFP+ ve cells in configurations (1) ISCG: integrated small cell group, or (2) integrated single cells (ISC) were quantified, each data point represents quantification from one section (note, no ISLET1/GFP+ ve cells were found in 4 sections from three grafts/embryos in which GFP cells were located in the host ISLET1 domain). (G) Comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing PAX7, P27, and ISLET1 in rosettes cultured in vitro in parallel with those transplanted into chicken embryos (ICG within the chicken neural tube), and finally the smaller group of human transplanted cells (ISGC ), assessed after 2 and 5 days, each data point represents a single rosette (five rosettes quantified from each to three independent differentiations), see Figure 4—figure supplement 1 and proportion of cells expressing these same marker proteins in transplanted rosettes after 2 and 5 days in the chicken embryonic environment, each data point represents data from one section, with three sections from each of three grafted chick embryos, analysis Mann-Whitney U test. Errors bars are ± SD. p-values (see section ‘Materials and Methods’). Scale bar = 50 μm.
 
 The precision of dorsal neural tube removal was evaluated in a subset of embryos immediately after operation and this showed that tissue removed included only neural crest and neural progenitors expressing respectively SNAI2 and PAX7, as found in D6 human neural rosettes (Figure 4—figure supplements 1 and 2). To control for any disturbance in the timing of differentiation due to transplantation procedures we monitored expression of key marker proteins following transplantation of dorsal neural tube from transgenic myr-GFP-expressing chicken embryos at the same stage and into the same position in wildtype chicken embryos. This demonstrated the robust ability of the E2 chicken embryo to accommodate the grafting procedure and no differences were found between transplanted and the contralateral un-operated side of the neural tube after 2 days (Figure 4—figure supplement 3). Similar observations were also made in embryos in which the hemi-dorsal neural tube was removed but no rosette was transplanted prior to incubation and these embryos were processed as controls alongside grafted embryos (Figure 4C–G). This experimental design allowed comparison of differentiation between chicken dorsal neural tube and human D6 rosettes composed of similar populations of dorsal neural progenitors (Figure 4—figure supplement 2). Moreover, the D6 rosettes, which have brachial/thoracic character, were grafted into the corresponding region in the developing chicken embryo (opposite somites 10–16) providing an appropriate rostro-caudal regional context for iso-chronic evaluation of differentiation progression.
 
@@ -79,33 +115,49 @@ One possibility to consider is that a community effect (Gurdon, 1988) operates w
 
 Analysis of neural crest differentiation in transplanted rosettes after 2 days further confirmed the asynchrony between human and host chicken cell differentiation. SNAI2-expressing neural crest cells were still found within these rosettes, while delamination of host neural crest was now complete, as indicated by absence of Snail2 positive cells in the chicken dorsal neural tube (Figure 5A, Figure 5—source data 1). Moreover, expression of migratory neural crest markers HNK1 and TFAP2α in the rosette periphery further aligned human rosette differentiation in vivo with that observed in vitro (Figure 5B and C, Figure 5—source data 1 and Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 2): single integrated human cells were more likely to express markers of migrating neural crest cells HNK1 (Figure 5B, Figure 5—source data 1) and TFAP2α (Figure 5C, Figure 5—source data 1) exhibiting neural crest differentiation progression similar to that found in in vitro conditions (Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) IF to detect key neural crest marker proteins in control (non-grafted) and grafted embryos after 2 days incubation (A) SNAIL2, (B) HNK1, (C) TFAP2α (arrowheads indicate examples of candidate protein expressing cells in the chicken host tissue; arrows indicate examples of candidate protein and GFP co-expressing cells, note most cells at graft periphery, dashed white boxes indicate area of magnification in next adjacent image). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of SNAIL2/GFP+ ve, HNK1/GFP+ ve, and TFAP2α /GFP+ ve cells in cell configurations (1) ICG or (2) ISC within the chicken neural tube, or (3) CR with chick neural tube, each data point represents data from one histological section, note the small number of isolated cells (group 2) underlies lack of significant difference between groups (see section ‘Materials and Methods’), data analysed with Mann–Whitney U test. Errors bars are ± SD. Scale bar = 50μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (IF) to detect expression of the neural crest marker (A) SOX10 in control operated/non-grafted, and (B) grafted chicken embryo following 2 days incubation (dashed white box indicates area of magnification in next adjacent image). One chicken embryo and three sections were analysed. Scale bar = 50 μm.
+
 Intriguingly, despite this apparent lack of influence of the chick host on grafted human cells, we found some evidence that human cells altered chick neural crest differentiation. At this stage, chicken neural crest cells have normally delaminated and migrated to the dorsal root ganglia (DRGs) (Le Douarin and Kalcheim, 1999). However, close to integrated human cells chicken neural crest expressed early migration phase markers HNK1 (Figure 5B), TFAP2α (Figure 5C) and Sox10 (Figure 5—figure supplement 1) suggesting that the presence of human cells delays progression of the host neural crest differentiation program.
 
 Together these findings indicate that after 2 days, differentiation in grafted human spinal cord rosettes progresses at the same pace as in vitro despite exposure to the more rapidly differentiating environment of the chicken host embryo.
 
-## Longer term analysis reveals impaired differentiation of iso-chronically transplanted human neural progenitors
+### Longer term analysis reveals impaired differentiation of iso-chronically transplanted human neural progenitors
 
 To address whether the differentiation pace in grafted human rosettes continues in synchrony with that in vitro, further analysis was undertaken 5 days after transplantation. At this time most human cells were incorporated within the host neuroepithelium, either as cell groups or single cells (Figure 6A, B) and the majority of cells remained dorsal neural progenitors expressing SOX2 and PAX7 (Figure 6C, D, Figure 6—source data 1). Importantly, neuronal differentiation still continued (Figure 6E–I, Figure 6—source data 1) as indicated by the presence of P27 positive human cells. However, the proportion of cells expressing P27 in transplanted rosettes decreased between days 2 and 5 and was also significantly reduced compared with their in vitro counterparts, where the proportion of P27 cells increased in this time frame (Figure 6I, Figure 6—source data 1 and Figure 4—figure supplement 1—source data 3). The neuronal marker ISLET1 was first detected 5 days after grafting, both in vivo and in vitro (equivalent to D11 rosettes) (Figure 6I, Figure 6—source data 1 and Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 3). However, the proportion of ISLET1 positive cells was significantly less in transplanted rosettes compared with their in vitro counterparts (Figure 6I, Figure 6—source data 1 and Figure 4—figure supplement 1—source data 3). Moreover, the neural progenitor cell population continued to expand in vivo to a greater extent than in vitro, as indicated by the higher proportion of SOX2 and PAX7 expressing cells in transplanted rosettes (Figure 6I, Figure 6—source data 1 and Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 3). The expansion of human neural progenitors was further indicated by the high proportion of cells expressing the proliferative marker Ki67 (Figure 6G, Figure 6—source data 2) while few apoptotic (cleaved caspase 3 expressing) cells were observed (Figure 6H, Figure 6—source data 2). Although it is formally possible that neuronal death takes place discretely between day 2 and day 5 and so was not detected in this analysis, together these findings indicate that neurogenesis attenuates in these initially iso-chronically transplanted rosettes while the neural progenitor population expands.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation protocol and (B-B’) transplanted cell configurations 5 days after transplantation; (C–H) IF to detect key marker proteins in control (non-grafted) and grafted chicken embryos after 5 days incubation, neural progenitor markers (C) SOX2, and (D) PAX7, post-mitotic neuronal (E) P27 and dorsal interneuron type 3, dI3s, (F) ISLET1 markers, proliferative cell marker (G) Ki67 and cell death marker (H) CASPASE-3 (arrows indicate examples of P27 or ISLET1 and GFP co-expressing cells, dashed white boxes indicate area of magnification in next adjacent image, asterisks indicate examples of host blood cells). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of SOX2/GFP+ ve, PAX7/GFP+ ve, P27/GFP+ ve, ISLET1/GFP+ ve, Ki67/GFP+ ve, and CAS-3/ GFP + ve cells in configurations (1) ICG or (2) ISC within the chicken neural tube were quantified, each data point represents one section analysed, no significant differences were found between expression in ICG and ISC; (G) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing SOX2, PAX7, P27, and ISLET1 in rosettes cultured in vitro in parallel with those transplanted into chicken embryos, assessed after 2 and 5 days, each data point represents a single rosette (five rosettes sampled from each to three independent differentiations), see Figure 4—figure supplement 1 and proportions of these same marker proteins in transplanted rosettes after 2 and 5 days in chicken embryonic environment, each data point represents data from one section, with three sections from each of three grafted chick embryos, analysis Mann–Whitney U test. Errors bars are ± SD. p-values (see section ‘Materials and Methods’). Scale bar = 50 μm.Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation protocol and (B-B’) transplanted cell configurations 5 days after transplantation; (C–H) IF to detect key marker proteins in control (non-grafted) and grafted chicken embryos after 5 days incubation, neural progenitor markers (C) SOX2, and (D) PAX7, post-mitotic neuronal (E) P27 and dorsal interneuron type 3, dI3s, (F) ISLET1 markers, proliferative cell marker (G) Ki67 and cell death marker (H) CASPASE-3 (arrows indicate examples of P27 or ISLET1 and GFP co-expressing cells, dashed white boxes indicate area of magnification in next adjacent image, asterisks indicate examples of host blood cells). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of SOX2/GFP+ ve, PAX7/GFP+ ve, P27/GFP+ ve, ISLET1/GFP+ ve, Ki67/GFP+ ve, and CAS-3/ GFP + ve cells in configurations (1) ICG or (2) ISC within the chicken neural tube were quantified, each data point represents one section analysed, no significant differences were found between expression in ICG and ISC; (G) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing SOX2, PAX7, P27, and ISLET1 in rosettes cultured in vitro in parallel with those transplanted into chicken embryos, assessed after 2 and 5 days, each data point represents a single rosette (five rosettes sampled from each to three independent differentiations), see Figure 4—figure supplement 1 and proportions of these same marker proteins in transplanted rosettes after 2 and 5 days in chicken embryonic environment, each data point represents data from one section, with three sections from each of three grafted chick embryos, analysis Mann–Whitney U test. Errors bars are ± SD. p-values (see section ‘Materials and Methods’). Scale bar = 50 μm.
 
 Furthermore, day 5 transplanted rosettes lacked the neural crest markers (SNAI2, HNK1 ,and TFAP2α), but these were detected in rosettes cultured in parallel in vitro (Figure 7A-C, Figure 7—source data 1 and Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 3). This indicates that this later chicken embryo environment is no longer conducive to human neural crest differentiation. However, we note that human neural crest cells were still generated in one chimera excluded due to open neural tube defects (Figure 7—figure supplement 1), suggesting that human neural rosettes retain the potential for such differentiation in an appropriate environment.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) IF to detect key neural crest marker proteins in control (non-grafted) and grafted chicken embryos after 5 days incubation reveals no expression of neural crest progenitor markers in any cell configurations (A) SNAI2 (1: 0/860 GFP+ cells and 2: 0/70 GFP+ cells), (B) differentiated neural crest cells HNK1 (1: 0/956 GFP+ cells and 2: 0/57 GFP+ cells) and (C) TFAP2α (1: 0/1175 GFP+ cells and 2: 0/66 GFP+ cells) (asterisks indicate host blood cells). At least three chicken embryos and three cross-sections were analysed for each marker. Scale bar = 50 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Chicken open neural tube with a human dorsal spinal cord rosette following transplantation 5 days previously, analysed with IF to detect expression of differentiated neural crest cell markers (A) HNK1, (B) TFAP2α, and (C) pan-neural marker SOX2 (arrows indicate examples of cells co-expressing protein of interest and GFP, dashed white boxes indicate area of magnification in next adjacent image). One chicken embryo and three sections were analysed. Scale bar = 50 μm.
+
 Overall, this longer-term analysis of differentiation in transplanted human rosettes revealed that rather than proceeding more rapidly in the chicken embryo, the apparently intrinsic differentiation pace of human dorsal neural progenitors and neural crest is not sustained and cells in the human rosettes largely remain in a neural progenitor cell state.
 
-## Heterochronic transplantation of human neural progenitors into a developmentally older chicken neuroepithelium ultimately promotes human neurogenesis
+### Heterochronic transplantation of human neural progenitors into a developmentally older chicken neuroepithelium ultimately promotes human neurogenesis
 
 To assess whether the differentiation pace of human neural rosette cells can be altered by transplantation into a more developmentally advanced chicken neuroepithelium, D6 neural rosettes were next transplanted into the dorsal spinal cord of older chicken embryos (E3, stage HH 20–21) (Figures 8A and 9A): a stage at which the chicken neuronal differentiation programme is well established (Andrews et al., 2017). After 2 days, most of the transplanted human cells retained expression of the dorsal progenitor marker PAX7 (Figure 8C, Figure 8—source data 1) and some also expressed the post-mitotic/neuronal marker P27 (Figure 8D, Figure 8—source data 1). Moreover, as found in vitro, ISLET1 was also not detected in these hetero-chronically transplanted human cells at this time (Figure 8E, Figure 8—source data 1 and Figure 4—figure supplement 1—source data 2). Furthermore, while the dorsal glial marker NFIA was now expressed in the surrounding chicken neuroepithelium (and see Deneen et al., 2006), this is not detected in the transplanted human cells (Figure 8F, Figure 8—source data 1). These findings indicate that the host chicken environment does not impact human neural progenitor differentiation over this timeframe.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig8-v2.jpg)
 
-**Figure 8.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation experiment; (B-B’) Two days after grafting human cells were observed in: (1) ICG or (2) ISC within the chicken neural tube. Note the E3 chicken embryo has a less regulative response to hemi-dorsal tube removal, this did not alter expression of differentiation markers, but distorted tissue morphology in some operated non-grafted controls; (C–F) IF to detect key marker proteins in control (note, these non-grafted /sham operated embryos regenerate the dorsal neural tube by 2 days post-operation) and grafted embryos after 2 days incubation (C) PAX7, (D) P27, (E) ISLET1, and (F) glial marker, NFIA (dashed white boxes indicate area of magnification in next adjacent image), three transverse sections from each of at least three grafted chicken embryos were analysed for each marker combination and the proportions of PAX7/GFP + ve and P27/GFP + ve cells in configurations 1 and 2 were quantified, each data point represents data from one histological section(see ‘Materials and Methods’); (E) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing PAX7 and P27 in rosettes cultured in vitro in parallel with those transplanted iso-chronically and hetero-chronically into chicken embryos, assessed after 2 days, each data point represents a single rosette (five rosettes sampled from each to three independent differentiations), see Figure 4—figure supplement 1, and proportions of these same marker proteins in transplanted rosettes after 2 days in chicken embryonic environment, each data point represents all data from one section, with three sections from each of three grafted chicken embryos, analysis Mann–Whitney U test. Errors bars are± SD. p-values (see ‘Materials and Methods’). Scale bar = 50 μm.Figure 8—source data 1.
+**Figure 8.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation experiment; (B-B’) Two days after grafting human cells were observed in: (1) ICG or (2) ISC within the chicken neural tube. Note the E3 chicken embryo has a less regulative response to hemi-dorsal tube removal, this did not alter expression of differentiation markers, but distorted tissue morphology in some operated non-grafted controls; (C–F) IF to detect key marker proteins in control (note, these non-grafted /sham operated embryos regenerate the dorsal neural tube by 2 days post-operation) and grafted embryos after 2 days incubation (C) PAX7, (D) P27, (E) ISLET1, and (F) glial marker, NFIA (dashed white boxes indicate area of magnification in next adjacent image), three transverse sections from each of at least three grafted chicken embryos were analysed for each marker combination and the proportions of PAX7/GFP + ve and P27/GFP + ve cells in configurations 1 and 2 were quantified, each data point represents data from one histological section(see ‘Materials and Methods’); (E) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing PAX7 and P27 in rosettes cultured in vitro in parallel with those transplanted iso-chronically and hetero-chronically into chicken embryos, assessed after 2 days, each data point represents a single rosette (five rosettes sampled from each to three independent differentiations), see Figure 4—figure supplement 1, and proportions of these same marker proteins in transplanted rosettes after 2 days in chicken embryonic environment, each data point represents all data from one section, with three sections from each of three grafted chicken embryos, analysis Mann–Whitney U test. Errors bars are± SD. p-values (see ‘Materials and Methods’). Scale bar = 50 μm.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/67283/elife-67283-fig9-v2.jpg)
 
-**Figure 9.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation experiment; (B-B’) Five days after grafting human cells were observed in: (1) ICG or (2) ISC within the chicken neural tube. (C–E) IF to detect key marker proteins in control (non-grafted) and grafted chicken embryos after 5 days incubation, (C) neural progenitor marker PAX7, (D) post-mitotic neuronal P27, and (E) dorsal interneuron type 3, dI3s, marker ISLET1, (arrows indicate examples of P27 or ISLET1 and GFP co-expressing cells, dashed white boxes indicate area of magnification in next adjacent image). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of PAX7/GFP+ ve, P27/GFP+ ve, and ISLET1/GFP+ ve cells in configurations one or two were quantified, each data point represents counts from one histological section; (F) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing PAX7, P27, or ISLET1 in rosettes cultured in vitro in parallel with those transplanted iso-chronically and hetero-chronically into chicken embryos, assessed after 5 days, each data point represents data from a single rosette (five rosettes sampled from each of three independent differentiations), see Figure 4—figure supplement 1, and proportions of these same marker proteins in transplanted rosettes after 5 days in the chicken embryonic environment, each data point represents all data from one section, with three sections from each of three grafted chick embryos, analysis Mann–Whitney U test. Errors bars are ± SD. p-values (see section ‘Materials and methods’). Scale bar = 50 μm.Figure 9—source data 1.
+**Figure 9.:** (A) Schematic of human dorsal spinal cord neural rosette transplantation experiment; (B-B’) Five days after grafting human cells were observed in: (1) ICG or (2) ISC within the chicken neural tube. (C–E) IF to detect key marker proteins in control (non-grafted) and grafted chicken embryos after 5 days incubation, (C) neural progenitor marker PAX7, (D) post-mitotic neuronal P27, and (E) dorsal interneuron type 3, dI3s, marker ISLET1, (arrows indicate examples of P27 or ISLET1 and GFP co-expressing cells, dashed white boxes indicate area of magnification in next adjacent image). Three transverse sections from each of at least three grafted chicken embryos were analysed for each marker and the proportions of PAX7/GFP+ ve, P27/GFP+ ve, and ISLET1/GFP+ ve cells in configurations one or two were quantified, each data point represents counts from one histological section; (F) comparison of proportion of ChiPS4-pmGFP derived neural progenitors and neurons expressing PAX7, P27, or ISLET1 in rosettes cultured in vitro in parallel with those transplanted iso-chronically and hetero-chronically into chicken embryos, assessed after 5 days, each data point represents data from a single rosette (five rosettes sampled from each of three independent differentiations), see Figure 4—figure supplement 1, and proportions of these same marker proteins in transplanted rosettes after 5 days in the chicken embryonic environment, each data point represents all data from one section, with three sections from each of three grafted chick embryos, analysis Mann–Whitney U test. Errors bars are ± SD. p-values (see section ‘Materials and methods’). Scale bar = 50 μm.
 
 Strikingly, 5 days after hetero-chronic transplantation human neural rosettes now exhibited fewer PAX7-expressing cells and increased P27 and ISLET1 expressing cells in comparison to the same age rosettes in vitro (or following isochronic transplantation) (Figure 9C–F, Figure 9—source data 1, Figure 4—source data 1, Figure 4—figure supplement 1—source data 3). All GFP expressing cells were located within the spinal cord either as incorporated cell groups or as single cells. While the latter exhibited reduced PAX7 and increased P27 and ISLET1 these single cells were located close to the periphery of the rosette consistent with neuronal birth taking place in this position as cells emerge from the rosette. Overall, these data show that transplanted human cells can respond to signals provided by this more differentiated chicken host environment and indicate that the onset of human neurogenesis can be advanced if neural progenitors are exposed to an older differentiating environment over a period longer than 2 days.
 
@@ -131,7 +183,353 @@ This interpretation places emphasis on the signalling environment and predicts t
 
 ## Materials and methods
 
-## Human pluripotent cell authentication and quality control
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>Human embryo tissue (stage CS12, CS13, CS16 CS18)</td>
+      <td>Human Developmental Biology Resource (HDBR: https://www.hdbr.org)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>ChiPSC4 line</td>
+      <td>Cellartis, AB and HPCF, University of Dundee</td>
+      <td>RRID:CVCL_RM97</td>
+      <td>Cell line maintained in HPCFUniversity of Dundee(Dr Lindsay Davidson)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hESCs line (H9)</td>
+      <td>WiCell</td>
+      <td>RRID:CVCL_9773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hESCs line (H1) expressing DCXCit/Y</td>
+      <td>Allen Institute and WiCell</td>
+      <td>PMID:28094016</td>
+      <td>Dr Boaz Levi</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Chicken eggs)</td>
+      <td>myr-GFP Chicken embryos</td>
+      <td>National Avian Research Facility Roslin Institute, University of Edinburgh</td>
+      <td>PMID:25812521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX2(Goat polyclonal)</td>
+      <td>Immune Systems</td>
+      <td>Cat# GT15098, RRID: AB_2732043</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO1(Rabbit polyclonal)</td>
+      <td>Invitrogen ThermoFisher</td>
+      <td>Cat# 40–2200RRID:AB_2533456</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-N-Cadherin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C3865RRID:AB_262097</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TUJ1(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T2200RRID:AB_262133</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TUJ1(Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 801,201RRID:AB_2313773</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-OLIG2(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB9610RRID:AB_570666</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LHX2(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA000838RRID:AB_2666109</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ISLET1(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab20670RRID:AB_881306</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HB9(Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>Cat# 81.5C10RRID:AB_2145209</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SNAI2(Rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 9,585RRID:AB_2239535</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX10(Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# AF2864-SPRRID:AB_442208</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TFAP2α(Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc8975RRID:AB_2240215</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HNK1(Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>Cat# 3H5RRID:AB_2314644</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-P27(Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# BD610642RRID:AB_397637</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-activated CASPASE3(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# MAB10753RRID:AB_2904207</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67(Rat monoclonal)</td>
+      <td>Invitrogen ThermoFisher</td>
+      <td>Cat# 14-5698-82RRID:AB_10854564</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NFIA(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA008884RRID:AB_1854421</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PAX7(Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>Cat# PAX7RRID:AB_2299243</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PAX6(Mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# MAB1260RRID:AB_2159696</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat 594(Donkey clonality unknown)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A-11058RRID:AB_142540</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse 488(Donkey clonality unknown)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A-21202RRID:AB_141607</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse 568(Donkey clonality unknown)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A-10037RRID:AB_2534013</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit 488(Donkey clonality unknown)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A-21206RRID:AB_2535792</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit 568(Donkey clonality unknown)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A-10042RRID:AB_2534017</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>aPX1 (Plasmid)</td>
+      <td>Dr Timothy A. Sanders</td>
+      <td></td>
+      <td>Dr Timothy A. Sanders,University of Chicago</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>bFGF</td>
+      <td>PreproTech</td>
+      <td>Cat# 100-18B</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Noggin</td>
+      <td>PreproTech</td>
+      <td>Cat# 120–10 C</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neon Transfection System 10 μl Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# MPK1025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pENTR /D-TOPO Cloning Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase Enzyme mix</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 11791019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans-Retinoic Acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R2625</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR 99021</td>
+      <td>Tocris</td>
+      <td>Cat# 4,953</td>
+      <td>3 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Tocris</td>
+      <td>Cat# 1,614</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Tocris</td>
+      <td>Cat# 1,254</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPadPrism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www. graphpad. com/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurobasal Medium, minus phenol red</td>
+      <td>Gibco</td>
+      <td>Cat# 12348017</td>
+      <td>500 ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>B-27 Supplement</td>
+      <td>Gibco</td>
+      <td>Cat# 17504044</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N-2 Supplement</td>
+      <td>Gibco</td>
+      <td>Cat# A1370701</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutamax</td>
+      <td>Gibco</td>
+      <td>Cat# 35050061</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Geltrex</td>
+      <td>Life Technologies</td>
+      <td>Cat# A1413302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TryPLE select</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 12563011</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human pluripotent cell authentication and quality control
 
 Human ES cell lines were obtained from WiCell, H9 (WA09) and from the Allen Institute/ WiCell (Dr Boaz Levi) (Yao et al., 2017), H1-DOUBLECORTIN (DCX)-CITRINE line (AI03e-DCX-YFP (aka DCXCit/Y) H1), and the human iPSC line ChiPS4 was provided by Cellartis AB (now Takara Bio). Suppliers (WiCell and Cellartis AB) provided documentation confirming cell identity. STR DNA profiling for ChiPS4, ChiPS4-pmGFP, H9 (WA09) and H1-DCX-CITRINE confirmed identity of these lines in our laboratory.
 
@@ -139,38 +537,38 @@ All cell lines were expanded and banked on arrival. Prior to experiments represe
 
 H9 (WA09) hES cells were supplied at passage 24, the cells were thawed, and cell banks prepared at passage 29: for experiments the cells were used between passage 29 and 39. H1-DOUBLECORTIN-CITRINE cells were supplied at passage 63 and cell banks prepared at passage 66: for experiments the cells were used between passage 66 and 76. ChiPS4 hiPS cells were supplied at passage nine and cell banks prepared at passage 13: for experiments the cells were used between passage 13 and 23. To make ChiPS4-pmGFP, the cells were transfected with the PiggyBac and transposase constructs at passage 17 and GFP+ ve cells selected by fluorescence activated cell sorting at passage 19. The polyclonal cell line was banked at passage 23; for experiments the cells were used between passage 23 and 33. After two passages all cell lines were tested to check for the uniform expression of pluripotency markers (Oct4, Sox2, Nanog, SSEA-3, SSEA-4, TRA-1–60, and TRA-1–81) and absence of differentiation markers (SSEA-1, HNF-3 beta, beta-III-tubulin, and smooth muscle alpha-actinin) by immunofluorescence.
 
-## hESC and hiPSCs culture and differentiation
+### hESC and hiPSCs culture and differentiation
 
 hESC (H9 or DCXCit/Y H1 line) and hiPSCs (ChIPS4) were maintained as feeder-free cultures in DEF-based medium supplemented with bFGF (30 ng/mL, Peprotech, Cat. No. 100-18B) and Noggin (10 ng/ml, Peprotech, Cat. No. 120–10C) on Geltrex matrix coated plates (10 μg/cm2, Life Technologies, Cat. No. A1413302), and enzymatically passaged using TryPLselect (Thermofisher, Cat. No. 12563011). For PSC passaging, the medium was complemented by addition of the Rho kinase inhibitor Y-27632 (10 mM, Tocris, Cat. No. 1254).
 
 For differentiation assays, PSC were plated on Geltrex matrix at 40,000 cells/cm2 and shifted to N2B27 medium after 24 hr. Cells were then differentiated for 3 days (D) in N2B27 supplemented with 3 µM Chiron99021 (Tocris, Cat. No. 4953) and 20 ng/ml bFGF (PeproTech, Cat. No. 100-18B), in the presence of 50 ng/ml Noggin (Peprotech, Cat. No. 120–10C) and 10 ng/ml SB431542 (Tocris, Cat. No. 1614) from D2 to D4 to generate NMP-like cells, see Verrier et al., 2018. For further differentiation, NMP-like cells were passaged using PBS-EDTA 0.5 mM and seeded back at controlled density (105 cells/cm2) on Geltrex (20 μg/cm2, Life Technologies, Cat. No. A1413302) in the presence of Y-27632 (10 mM, Tocris, Cat. No. 1254). Cells were then cultured in N2B27 containing 100 nM all-trans-RA (SIGMA, Cat. No. R2625) for the indicated time to obtain and differentiate neural progenitors. First human neural rosettes were observed from D06 with this regime. All work with hESCs was undertaken in approval of the UK Stem Cell Bank steering committee (license number SCSC14-29).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Human embryonic tissue was provided by the Human Developmental Biology Resource (HDBR; https://www.hdbr.org) following fixation in 4% paraformaldehyde (PFA) for 2 hr at 4°C and chicken embryonic neural tube at indicated stages was preserved in the same way, prior to processing for cryo-sectioning using standard procedures. hESCs or iPSCs derived neural rosettes were fixed in 1% PFA overnight at 4°C, permeabilised with 0.1% Triton X-100 in PBS. Tissue sections or rosettes grown in ibdi dishes (μ-Slide eight well, Cat. No. 80826) in vitro were subject to a standard immunofluorescence protocol using commercial primary and secondary antibodies at concentrations indicated in Key resources table. Finally, sections were stained with DAPI to visualize cell nuclei. Fluorescent images were captured using a Leica SP8 confocal using a 20X air or 63X NA1.2 APO water immersion objectives. Images of protein localisation in human embryonic spinal cord have been deposited in the HDBR atlas https://hdbratlas.org/organ-systems/nervous-system/cns/spinal-cord/storeylab.html.
 
-## Pm-eGFP plasmid construction for engineering hiPS cells
+### Pm-eGFP plasmid construction for engineering hiPS cells
 
 A plasmid was constructed for engineering hIPSCs with the piggybac transposase system using the aPX1 transposon plasmid (Timothy Sanders, University of Chicago), containing the cytomegalovirus (CMV) enhancer, chicken b-actin (CAG) promoter expression and including the Invitrogen Gateway RfA cassette, allowing for phiC31-mediated recombination from Gateway Entry vectors. Finally, the CAG promoter and Gateway cassette (cargo) are flanked by two Inverted Terminal Repeat sequences (ITR, TTAA) allowing the piggyback transposon action. To label the cell membrane, a plasma membrane (pm) associated palmitoylated fluorescent protein was generated by the addition of the 20-amino acid sequence of ratGAP-43 MLCCMRRTKQVEKNDEDQKI to the N-terminus of the monomeric enhanced GFP (eGFP) (K. Svoboda, Addgene plasmid 18696) through sequential PCR amplification to make a pm-eGFP sequence. This pm-eGFP sequence was then inserted into the aPX1 donor vector using the Gateway System (ThermoFisher).
 
-## HiPSCs transfection and creation of ChIPS4- Pm-GFP line
+### HiPSCs transfection and creation of ChIPS4- Pm-GFP line
 
 HiPSCs (Cellartis hIPS4 cell line) cells were transfected using the Neon transfection System (Life Technologies, Cat. No. MPK10025). Briefly, a mix of aPX1-pm-eGFP construct and piggyback transposase (Yusa et al., 2011), with a final concentration of 1–2 μg/μl, was added to a solution of 107 cells and a single pulse of 1100 V with 30 ms duration was delivered via the Neon transfection system. Transfected cells were then plated back on Geltrex coated dishes (10 μg/cm2, Life Technologies) and cultured in DEF-based medium supplemented with bFGF (30 ng/ml, Peprotech) and Noggin (10 ng/ml, Peprotech). In this way, a polyclonal line ChiPS4-pm-GFP was created, and this was used in the experiments reported here.
 
-## Chick embryo transplantation assays
+### Chick embryo transplantation assays
 
-## Isochronic transplantation assay
+#### Isochronic transplantation assay
 
 Fertilized chicken eggs (Gallus gallus domesticus) from a commercial source (Winter Farm, Hertfordshire-Royston, UK) were incubated at 38°C to Hamburger and Hamilton (HH) stage 11–12 (13–16 somites) (Hamburger and Hamilton, 1951). ChIPS4-pm-eGFP were differentiated to NMP-Like cells and these were then replated and for cultured 6 days in neural differentiation conditions (as described above), and newly formed human neural rosettes were then manually micro-dissected using a sharp glass needle (0.290–0.310 mm) (Vitrolife). After resting in CO2 incubator at 37°C for 2 hr, cell aggregates (diameter ≈ 50–100 μm) were gently dissociated and implanted into the dorsal region of one side of the neural tube of stage HH 11–12 chicken embryos. For transplantation of small groups of human dorsal neural progenitors, micro-dissected single human rosettes were further sub-dissected and mechanically dissociated prior to transplantation. Before implantation, the dorsal region on one side of the neural tube was removed at the level of the most recently formed somite (Figure S3). Embryos were then harvested 2 or 5 days post-transplantation (Stage HH 23–24 and HH 30–31 respectively). Chicken embryos were fixed in 4% PFA overnight at 4 °C, rinsed in PBS and left in PBS/30% sucrose solution overnight at 4 °C, then embedded and in agar, frozen and cryo-sectioned at 20 μm and subjected to immunofluorescence processing (as above).
 
-## Heterochronic transplantation assay
+#### Heterochronic transplantation assay
 
 To create an asynchrony between the donor (human neural progenitors) and the host (chicken embryos), newly formed human neural rosettes were micro-dissected after 6 days of neural differentiation from NMP-L cells, gently dissociated and implanted into the dorsal region of one side of the neural tube of stage HH 20–21 chicken embryos. Before transfer, the dorsal region on one side of the neural tube was removed at the mid-trunk, thoracic region (just posterior to the forelimb region). Similar to the isochronic transplantation assay, embryos were then harvested 2 or 5 days post-transplantation (stage HH 26–27 and HH 32–33, respectively). Chicken embryos were then fixed, processed and subjected to immunofluorescence as described above.
 
-## Isotopic and isochronic transplantation of GFP chicken neural tube
+### Isotopic and isochronic transplantation of GFP chicken neural tube
 
 Fertilized chicken eggs (G. gallus domesticus) from a commercial source (Winter Farm, Hertfordshire-Royston, UK) (wild type) or from a transgenic chicken line expressing a myristoylation sequence fused to GFP (myr-GFP) which localises to the plasma membrane (National Avian Research Facility, Roslin Institute, see Rozbicki et al., 2015), were incubated at 38°C to stage HH11–12 (13–16 somites). Briefly, the neural tube of the myr-GFP chicken embryos was removed and then micro-dissected to keep only the dorsal region of one side. Before transplantation, the dorsal region on one side of the host wild-type neural tube was removed at the rostro-caudal level of the most recently formed somite. Embryos were harvested 2 days post-transplantation (stage HH23–24). Chicken embryos were then fixed in in 4% PFA, processed and subjected to immunofluorescence as described above.
 
-## Cell counts and statistical analysis
+### Cell counts and statistical analysis
 
 At D4 of in vitro differentiation from NMP-like cells, defined fields (200 μm2) of neural progenitors forming a neural plate-like shape were selected for quantification. At later time points, human neural rosettes were selected for analysis and quantification by their shape (round with a single lumen) and size (neural rosette diameter, D6: 70–100 μm, average: 84±2.7 μm; D10: 125–137 μm, average: 129±1.5 μm; D14: 155–195 μm, average: 179 ±2.7 μm, Figure 1—source data 3). The proportion of cells expressing marker proteins of interest was determined by counting positive cells within a field of neural progenitors (D4) or in three optical sections in a rosette (D6 and later, includes rosette and contacting cells at its periphery at later timepoints) out of total (DAPI+ or GFP+) cells. Fifteen fields of neural progenitors (D4) or 15 rosettes (D6 and later) were analysed for each marker (n = 15, five fields of neural progenitors or rosettes from each of three independent differentiation experiments). For transplanted human rosettes at least three sections from grafts in three different embryos were used to determine the proportion of cells expressing a protein of interest. Transplanted human cells were only counted when cells were positive for GFP, immunoreactivity for protein of interest and DAPI. To avoid counting the same cells in consecutive sections, alternate sections were used for each different immunolabelling assay (four different immunofluorescence assays/transplanted embryo) (Figures source data). Statistical analysis was performed using non-parametric Mann-Whitney U test for non normally distributed data using Prism V8. Results are represented as means ± SEM or SD as indicated in figures and p-values are indicated with *p<0.05, **p<0.01, *** p<0.001, and ****p<0.0001.

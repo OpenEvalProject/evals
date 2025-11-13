@@ -20,17 +20,17 @@
 
 ### Affiliations
 
-1. https://ror.org/040gcmg81 National Cancer Institute, Center for Cancer Research, Radiation Oncology Branch Bethesda United States
-2. https://ror.org/01z1gye03 Institute for Research in Biomedicine, The Barcelona Institute of Science and Technology Barcelona Spain
-3. https://ror.org/03a1kwz48 Department of Experimental and Clinical Pharmacology and Pharmacogenomics, University of Tübingen Tübingen Germany
-4. https://ror.org/032000t02 Institute of Biochemistry and Molecular Biology, Ulm University Ulm Germany
-5. https://ror.org/05t8khn72 Department of Cell Biology, Instituto de Biología Molecular de Barcelona Barcelona Spain
-6. https://ror.org/024d6js02 Department of Paediatrics and Inherited Metabolic Disorders, First Faculty of Medicine, Charles University and General University Hospital in Prague Prague Czech Republic
-7. https://ror.org/00g5sqv46 Universitat Rovira i Virgili, Department of Electronic Engineering, IISPV Tarragona Spain
-8. https://ror.org/00ca2c886 CIBER de Diabetes y Enfermedades Metabólicas Asociadas (CIBERDEM), Instituto de Salud Carlos III Madrid Spain
-9. https://ror.org/0371hy230 ICREA Barcelona Spain
-10. https://ror.org/021018s57 Institute of Complex Systems (UBICS), Universitat de Barcelona Barcelona Spain
-11. https://ror.org/021018s57 Section of General Linguistics, Universitat de Barcelona Barcelona Spain
+1. National Cancer Institute, Center for Cancer Research, Radiation Oncology Branch Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+2. Institute for Research in Biomedicine, The Barcelona Institute of Science and Technology Barcelona Spain ([ROR:01z1gye03](https://ror.org/01z1gye03))
+3. Department of Experimental and Clinical Pharmacology and Pharmacogenomics, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+4. Institute of Biochemistry and Molecular Biology, Ulm University Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))
+5. Department of Cell Biology, Instituto de Biología Molecular de Barcelona Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))
+6. Department of Paediatrics and Inherited Metabolic Disorders, First Faculty of Medicine, Charles University and General University Hospital in Prague Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+7. Universitat Rovira i Virgili, Department of Electronic Engineering, IISPV Tarragona Spain ([ROR:00g5sqv46](https://ror.org/00g5sqv46))
+8. CIBER de Diabetes y Enfermedades Metabólicas Asociadas (CIBERDEM), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+9. ICREA Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))
+10. Institute of Complex Systems (UBICS), Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+11. Section of General Linguistics, Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
 
 † Corresponding author
 
@@ -52,55 +52,111 @@ To address the potential roles of ADSL deficiency in neurodevelopment, we system
 
 ## Results
 
-## ADSL depletion causes p53-dependent proliferation defects
+### ADSL depletion causes p53-dependent proliferation defects
 
 To investigate the impact of ADSL on cellular homeostasis, we depleted ADSL with a pool of four siRNAs in hTERT-immortalized human retinal epithelial cells (hTERT-RPE-1, referred to henceforth as RPE-1). Depletion of ADSL was effective as we observed 80% depletion of the mRNA and a clear reduction in protein levels (Figure 1A and B). This was accompanied by reduced levels of AMP and GMP, as well as accumulation of S-Ado (Figure 1C, Figure 1—figure supplement 2A and B). SAICAr levels were at the limit of detection in RPE-1 cells and differences could not be assessed (Figure 1—figure supplement 2B), but elevated SAICAr could be readily observed following ADSL depletion in HeLa, potentially due to elevated levels of DNPS enzymes that have been observed in cancer cells (Figure 1—figure supplement 2C; Zurlo et al., 2019; Agarwal et al., 2020; Yamauchi et al., 2022; Taha-Mehlitz et al., 2021). We deconvolved the siRNA pool and identified an effective single siRNA (#2) to further validate results from the siRNA pool (Figure 1—figure supplement 2D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig1-v3.jpg)
+
+**Figure 1.:** (A) Reduced mRNA levels of ADSL confirmed by qRT-PCR experiments. hTERT-RPE-1 were silenced with smart pool RNAi for 96 hr before harvesting. Two independent experiments in triplicate are shown in the panel (n = 2, two-tailed t-test, ****p<0.0001) (B) Western blot of RPE-1 cell extracts treated as in (A). One experiment is shown as representative of four independent experiments. Actin was used as a loading control. Quantifications of ADSL intensity in four different experiments were performed by ImageJ software and normalized to actin first and then to the relative controls (n = 4, two-tailed t-test, ****p<0.0001). Ponceau is shown as an additional loading and transfer control. (C) S-Ado levels in RPE-1 cells silenced with a single control or ADSL siRNA (n = 4, two-tailed t-test, *p<0.05). (D) Cell proliferation rates of RPE-1 cells quantified every 3 days after treatment with a single control or ADSL siRNA in medium with serum (n = 3, two-tailed t-test ****p<0.0001). ΔPDL represent the difference in population doubling levels quantified through the formula described in Materials and methods. (E) Ki67-positive cells (indicated by arrows) upon 96 hr of silencing with control or ADSL smart pool siRNAs. Scale bar 10 μm (n = 4, scored 767 cells for siC, 694 cells for siADSL conditions, ****p<0.0001). (F) The percentage of p53-positive cells (indicated by arrows) following treatment with control or ADSL smart pool siRNAs was quantified in three independent experiments (n = 3, scored 835 cells for siC and 1126 cells for siADSL, *p<0.05). (G) Cell proliferation rates in RPE-1 wt and p53 knockout KO cells as in (D) were counted for 6 days (n = 3, two-tailed t-test, **p<0.01, *p<0.05). (H) RPE-1 cells stably expressing EGFP or ADSL*-EGFP were transfected with a single control or ADSL siRNAs for 96 hr and immunostained with anti-Ki67 antibody. Scale bar = 20 μm. Quantification of Ki67-positive cells (n = 3, scored 278 cells for EGFP siC, 264 for EGFP siADSL, 266 for ADSL* siC, 232 cells for ADSL* siADSL conditions, ns not significant, ****p<0.0001). (I) Quantification of RPE-1 transfected with a single control or ADSL siRNA for 96 hr in the presence or absence of 60 μM nucleosides. Cells were fixed and immunostained with anti-Ki67 antibody (n = 3, at least 100 cells per conditions were counted in each experiment, ns not significant, ****p<0.0001). (J) Quantification of RPE-1 in the same conditions of (I) and immunostained with anti-p53 antibody (n = 3, at least 100 cells were counted for each condition per experiment, ns not significant, ****p<0.0001). (K) Quantification of p53-positive cells in ADSL-depleted cells in the presence or absence of the phosphoribosylaminoimidazole carboxylase (PAICS) inhibitor MRT00252040 (n = 3, scored 223 cells for siC, 248 cells for siADSL, 336 cells for siC+ MRT00252040, 365 cells for siADSL + MRT00252040, ns not significant, ****p<0.001, *p<0.05). (L) Quantification of Ki67-positive cells in ADSL-depleted cells in the presence or absence of MRT00252040 (n = 5, more than 60 cells were counted in each condition for each experiment, ns not significant, ***p<0.001). Positive cells are indicated with arrows in siADSL panels. All graphs depict means ± SD with individual values shown in circles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Schematic of the DNPS pathway, purine nucleotide cycle, purine salvage pathway, and tetrahydrofolate cycle. Enzymes are indicated in purple and metabolites in blue. ADSL is shown in orange and the small-molecule inhibitors used in red. Circles in the corresponding colors indicate the reactions affected by ADSL or inhibitors, respectively. Metabolites that accumulate following ADSL depletion are shown in green.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Analysis of AMP and GMP levels following ADSL depletion in RPE-1 cells (see also Figure 1C). (B) Analysis of S-Ado and SAICAr levels following ADSL depletion in RPE-1 cells treated or not with 4 μM MRT00252040 (phosphoribosylaminoimidazole carboxylase [PAICS] inhibitor). Box–Cox transformation was applied using lambda = 0 for SAICAr and lambda = −0.5 for S-Ado values. (C) Analysis of S-Ado and SAICAr levels following ADSL depletion in HeLa cells treated or not with 4 μM MRT00252040 (PAICS inhibitor). Box–Cox transformation was applied using lambda = 0 for SAICAr and lambda = −0.5 for S-Ado values. (D) qRT-PCR confirmed ADSL depletion with a single siRNA against ADSL (siRNA#2; n = 4 in triplicate, two-tailed t-test, ****p<0.0001). (E) Flow cytometry analysis of cell cycle using propidium iodide staining in RPE-1 cells treated with control (Ci) siRNA or siRNA against ADSL. Representative data is shown (left) and data from n = 3 independent cultures is graphed (right). Student’s t-test was applied (n = 3 scored more than 10,000 cells for each condition in each experiment, *p<0.05). (F) Quantification of cell viability by Trypan Blue in RPE-1 cells transfected with single control or ADSL siRNAs (n = 5, scored 807 cells for siC, 682 cells for siADSL, ns not significant). (G) β-Galactosidase assay in RPE-1 cells upon ADSL depletion treated as in panel (F). Doxorubicin (doxo) was used as a positive control to induce senescence. (H) Flow cytometry analysis of cell cycle using propidium iodide staining in RPE-1 p53 KO cells treated with control (Ci) siRNA or siRNA against ADSL. Representative data is shown (left) and data from n = 3 independent cultures is graphed (right). Student’s t-test was applied (n = 3 scored more than 10,000 cells for each condition in each experiment, ns not significant). (I) Ki67 staining in RPE-1 p53 KO upon silencing with a single control or ADSL siRNA (siRNA#2; n = 2, at least 200 cells for each condition per experiment were counted, ns not significant). Scale bar = 20 μm. All graphs depict means ± SD with individual values shown in circles. (J) Control of ADSL depletion and siRNA-resistant mutant expression 96 hr post-ADSL depletion. Scale bar = 20 μm. (K) Cells were transfected with a single control or ADSL siRNA (siADSL#2) for 96 hr, fixed, and stained against vimentin and cytokeratin-20 (CK20). Serum starvation (SS) for 144 hr was used as positive control for differentiation and CK20 staining. Quantification of the percentage of cells positive for vimentin is shown. No CK20-positive cells were observed in ADSL-depleted cells. Scale bar = 20 μm.
 
 As ADSL is critical for DNPS, we examined cell growth following ADSL depletion and found reduced levels of proliferation in ADSL-depleted cells compared to controls (Figure 1D). ADSL-depleted cells frequently lacked Ki67 expression, indicating that some cells were exiting the cell cycle, had increased levels of p53, and showed accumulation in G1 phase of the cell cycle (Figure 1E and F, Figure 1—figure supplement 2E). Trypan Blue and β-galactosidase assays indicated that cell death was not increased (Figure 1—figure supplement 2F) and that the Ki67-negative cells were likely quiescent and not senescent (Figure 1—figure supplement 2G). Deletion of TP53 rescued proliferation, prevented G1 arrest, and restored the number of Ki67-positive cells (Figure 1G, Figure 1—figure supplement 2H and I). The reduction in Ki67-positive cells could be rescued by stable expression of an siRNA-resistant allele of ADSL (ADSL*) (Figure 1H, Figure 1—figure supplement 2J). We also checked whether ADSL-depleted RPE-1 cells underwent differentiation by staining with vimentin, a marker of undifferentiated cells (Tamiya et al., 2010), and cytokeratin 20 (CK20), a marker of differentiation, upon ADSL depletion. We did not observe any CK20 signal or a reduction in vimentin-positive cells in the population upon ADSL silencing compared to the controls, arguing against premature differentiation (Figure 1—figure supplement 2K).
 
 To identify the cause of cell cycle exit in ADSL-depleted cells, we performed specific treatments. To restore purine levels, we supplemented cells with a mixture of nucleosides or with adenosine alone. To reduce potential accumulation of SAICAr that is generated by DNPS, we treated with MRT00252040, a small-molecule inhibitor of PAICS, the enzyme required to generate SAICAr upstream of ADSL (Figure 1—figure supplement 1; Hoxhaj et al., 2017). Supplementation of ADSL-depleted RPE-1 cells with nucleosides or adenosine did not prevent p53 induction or cell cycle exit (Figure 1I and J). Similarly, treatment with MRT00252040 did not influence p53 induction or loss of Ki67 (Figure 1K and L). This demonstrated that ADSL depletion in non-transformed human epithelial cells leads to a partial p53-dependent cell cycle exit/arrest that is not rescued by complementing the defects of ADSL depletion with nucleoside supplementation or inhibiting PAICS to prevent SAICAR/r production upstream of ADSL.
 
-## ADSL depletion causes elevated DNA damage signaling
+### ADSL depletion causes elevated DNA damage signaling
 
 Reduced levels of purine nucleotides in ADSL-depleted cells may cause replication stress and DNA damage (Kim et al., 2015; Benedict et al., 2018; Gottifredi et al., 2001). To address this, we examined the levels of chromatin-bound RPA, a surrogate marker of ssDNA accumulation and indicator of replication stress. In ADSL-depleted cells, chromatin-bound RPA levels were increased, indicative of replication stress, although the effect was mild (Figure 2A). Additionally, we observed an increased number of cells with more than five 53BP1 foci per cell, indicative of DNA double-strand break (DSBs) accumulation (Figure 2B). 53BP1 foci were reduced by treatment with a small-molecule inhibitor for ATM (Figure 2C), indicating an active DNA damage response. Supplementation of cells with nucleosides suppressed the appearance of DNA DSBs detected by 53BP1 following ADSL depletion or treatment with the ribonucleotide reductase inhibitor hydroxyurea (HU) that depletes dNTP pools (Figure 2D and E). A similar reduction in 53BP1 foci was also observed with adenosine supplementation of ADSL-depleted cells (Figure 2F). Nucleoside supplementation also reduced the increase in γH2AX, the phosphorylated form of the histone variant H2AX, which is also a marker of DSBs (Figure 2G). In contrast to nucleoside supplementation, the PAICS inhibitor MRT00252040 did not rescue the increased levels of DSBs (Figure 2H). These data indicate that ADSL depletion in cultured cells induces mild levels of DNA damage signaling that can be suppressed by nucleoside supplementation, but not by the inhibition of PAICS. This implicates defects in the purine nucleotide cycle, rather than impaired DNPS or specific metabolite accumulation resulting from ADSL depletion, in replication stress and DSB formation. In addition, it indicates that the partial p53-dependent cell cycle exit is not solely a consequence of DNA damage signaling or purine metabolite accumulation, as it was not rescued by either intervention.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig2-v3.jpg)
 
-**Figure 2.:** (A) RPE-1 were silenced for 96 hr with a smart pool of ADSL siRNAs, chromatin extracted, and immunostained with an anti-RPA2 antibody. Nuclear intensity of cells was measured- Quantification of one representative experiment of four that showed similar results is shown; SD and average are indicated in black. After normalization to the average of the control (siC), two-tailed t-test was used for statistical analysis of n = 4 independent experiments: *p<0.05 was observed for siADSL to siC. (B) RPE-1 were silenced for 96 hr with a smart pool of ADSL siRNAs, fixed, and immunostained with anti-53BP1 antibody. Scale bar = 10 μm. Quantification of positive cells that have more than five foci per cell (n = 5 scored 1134 cells for siC, 1144 cells for siADSL, ***p<0.001). (C) RPE-1 were silenced with a single control or ADSL siRNA with or without 5 mM ATM inhibitor (KU5593) (n = 4, scored 359 cells for siC, 322 cells for siADSL, 307 cells for siC + KU5593, 279 cells for siADSL + KU5593, ****p<0.0001). (D) Cells were silenced for 96 hr, treated or not with 60 μM (1×) nucleosides, and stained for 53BP1. Scale bar = 10 μm (n = 5, scored 717 cells for siC, 608 cells for siADSL, 576 cells for siC + nucl, 512 cells for siADSL + nucl, ****p<0.0001). (E) RPE-1 cells were treated with 2 mM hydroxyurea (HU) for 6 hr and treated or not with 1× nucleosides and stained for 53BP1. Cells with more than five foci per nucleus were counted as positive. Three independent experiments were performed (n = 3, at least 100 cells per experiment per condition were counted, ****p<0.0001). (F) Cells were silenced for 96 hr, treated or not with 80 μg/ml adenosine, and stained for 53BP1 (n = 3, scored 544 cells for siC, 428 cells for siADSL, 485 cells for siC+ adenosine, 411 cells for siADSL + adenosine, ****p<0.0001). (G) RPE-1 treated as in (A) were fixed and stained for γH2AX (H2AX phosphorylated on Ser-139). Scale bar = 10 μm. 5 Gy X-ray irradiation (IR) was used as positive control. Quantification of one representative experiment of two that showed similar results is shown; median is indicated in black. After normalization to the average of the control (siC), one-tailed t-test was used for statistical analysis of n = 3 independent experiments: *p<0.05 was observed for siADSL (to siC), and for siADSL relative to siADSL + nucl. There is no statistical difference between siC and siC + nucl. (H) RPE-1 were silenced in the presence or absence of 4 μM MRT00252040, fixed and stained for 53BP1 (n = 4, scored 367 cells for siC, 313 cells for siADSL, 294 cells for siC + MRT00252040, 241 cells for siADSL + MRT00252040, ns not significant, ****p<0.0001). All bar graphs show means ± SD with individual values in circles.Figure 2—source data 1.Figure 2.GraphPad Prism file.
+**Figure 2.:** (A) RPE-1 were silenced for 96 hr with a smart pool of ADSL siRNAs, chromatin extracted, and immunostained with an anti-RPA2 antibody. Nuclear intensity of cells was measured- Quantification of one representative experiment of four that showed similar results is shown; SD and average are indicated in black. After normalization to the average of the control (siC), two-tailed t-test was used for statistical analysis of n = 4 independent experiments: *p<0.05 was observed for siADSL to siC. (B) RPE-1 were silenced for 96 hr with a smart pool of ADSL siRNAs, fixed, and immunostained with anti-53BP1 antibody. Scale bar = 10 μm. Quantification of positive cells that have more than five foci per cell (n = 5 scored 1134 cells for siC, 1144 cells for siADSL, ***p<0.001). (C) RPE-1 were silenced with a single control or ADSL siRNA with or without 5 mM ATM inhibitor (KU5593) (n = 4, scored 359 cells for siC, 322 cells for siADSL, 307 cells for siC + KU5593, 279 cells for siADSL + KU5593, ****p<0.0001). (D) Cells were silenced for 96 hr, treated or not with 60 μM (1×) nucleosides, and stained for 53BP1. Scale bar = 10 μm (n = 5, scored 717 cells for siC, 608 cells for siADSL, 576 cells for siC + nucl, 512 cells for siADSL + nucl, ****p<0.0001). (E) RPE-1 cells were treated with 2 mM hydroxyurea (HU) for 6 hr and treated or not with 1× nucleosides and stained for 53BP1. Cells with more than five foci per nucleus were counted as positive. Three independent experiments were performed (n = 3, at least 100 cells per experiment per condition were counted, ****p<0.0001). (F) Cells were silenced for 96 hr, treated or not with 80 μg/ml adenosine, and stained for 53BP1 (n = 3, scored 544 cells for siC, 428 cells for siADSL, 485 cells for siC+ adenosine, 411 cells for siADSL + adenosine, ****p<0.0001). (G) RPE-1 treated as in (A) were fixed and stained for γH2AX (H2AX phosphorylated on Ser-139). Scale bar = 10 μm. 5 Gy X-ray irradiation (IR) was used as positive control. Quantification of one representative experiment of two that showed similar results is shown; median is indicated in black. After normalization to the average of the control (siC), one-tailed t-test was used for statistical analysis of n = 3 independent experiments: *p<0.05 was observed for siADSL (to siC), and for siADSL relative to siADSL + nucl. There is no statistical difference between siC and siC + nucl. (H) RPE-1 were silenced in the presence or absence of 4 μM MRT00252040, fixed and stained for 53BP1 (n = 4, scored 367 cells for siC, 313 cells for siADSL, 294 cells for siC + MRT00252040, 241 cells for siADSL + MRT00252040, ns not significant, ****p<0.0001). All bar graphs show means ± SD with individual values in circles.
 
-## ADSL depletion impairs neurogenesis in the developing chicken neural tube
+### ADSL depletion impairs neurogenesis in the developing chicken neural tube
 
 Given the effects of ADSL depletion on cell growth and proliferation, we sought to examine the consequences of its loss in vivo. To this end, we used the chicken embryo system to examine the influence of ADSL depletion on nervous system development. We electroporated one side of the neural tube with plasmid expressing GFP as a transfection marker in combination with either control or ADSL shRNA vectors. After confirming efficient ADSL depletion (Figure 3A), we evaluated neurogenesis by staining with markers for proliferating neural progenitors (SOX2 positive) and post-mitotic neurons (ELAVL3/4 positive). We found that in the ADSL-depleted side both cell populations were reduced when compared to the non-transfected side (Figure 3B) and that the size of the tissue was smaller, suggesting reduced growth and/or increased cell death. Staining for the apoptotic marker cleaved caspase-3 (CC3) revealed no notable differences, suggesting that this was not due to increased cell death (Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig3-v3.jpg)
+
+**Figure 3.:** (A) mRNA levels of ADSL and GAPDH were measured by qRT-PCR in chicken embryonic fibroblasts (CEFs) transfected for 24 hr with shCONTROL or shADSL to confirm knockdown efficiency (n = 3, two-tailed t-test, **p<0.01). (B) Transverse sections of HH12 chicken neural tubes 48 hr post electroporation (hpe) with shCONTROL or shADSL plasmids and stained with antibodies against SOX2 (green) and ELAVL3/4 (magenta). Transfection was detected by GFP (blue). Scale bar = 50 μm. Average ratio of neural stem cells (NSCs, SOX2+) 48 hpe with shCONTROL or shADSL obtained by comparing the mean number of SOX2+ cells on the electroporated and non-electroporated side (n = 7 embryos, two-tailed t-test, **p<0.01). Average ratio of cells differentiated into neurons (ELAVL3/4) at 48 hpe with shCONTROL or shADSL obtained by comparing the mean number of ELAVL3/4-positive cells on the electroporated and the non-electroporated side (n = 7 embryos, two-tailed t-test, ***p<0.001). (C) Percentage of electroporated cells identified as NSCs (SOX2) or neurons (ELAVL3/4) 48 hpe with shCONTROL or shADSL (n = 11 embryos, two-tailed t-test, ****p<0.0001). (D) The cell cycle profiles of NSCs (GFP+/ELAVL3/4-) obtained by fluorescence-associated cell sorting (FACS) 48 hpe with shCONTROL or shADSL into HH12 chicken neural tubes. The mean of two independent experiments is shown in the left panel. 6–8 embryos per condition were used for each experiment. Two-tailed t-test was used for statistical analysis of n = 2 independent experiments, ns not significant, *p<0.05. Cell cycle profiles of a representative experiment are shown in the right panels. (E) Transverse sections of HH12 chicken neural tubes 48 hpe with shCONTROL or shADSL plasmids, and stained with EdU (green) and an antibody against pH3S10 (magenta). Transfection was detected by GFP (blue). Scale bar = 50 μm. Areas indicated in yellow are amplified in the right panels showing separated channels in black. Green circles in pH3S10 amplification show punctate pH3S10-positive cells. Percentage of transfected cells identified as EdU-positive 48 hpe with shCONTROL or shADSL (n = 12 embryos [shCONTROL] and 14 embryos [shADSL], two-tailed t-test, ****p<0.0001). Percentage of pH3S10 among the GFP+ cell population 48 hpe with shCONTROL or shADSL (n = 14 embryos, two-tailed t-test, ns not significant, **p<0.01, ****p<0.0001). Average ratio of EdU and pH3S10-positive cells 48 hpe of shCONTROL or shADSL plasmids, obtained by comparing the mean number of EdU cells on the electroporated and the non-electroporated side (EdU: n = 11 embryos [shCONTROL], 15 embryos [shADSL], two-tailed t-test, ***p<0.001; pH3S10: n = 18 embryos [shCONTROL], 15 embryos [shADSL], two-tailed t-test, ns not significant). (F) Percentage of punctate pH3S10 (G2 phase) and mitotic pH3S10 (M phase) among the GFP+ cell population 48 hpe of shCONTROL or shADSL plasmids (n = 14 embryos, two-tailed t-test, ns not significant, ****p<0.0001). Bar graphs show means ± SD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative transverse neural tube sections and quantification of mean cleaved caspase-3 (CC3; green) immunofluorescence intensity obtained by comparing mean CC3 intensity on TUJ1- or TUJ1+ area (magenta) on the electroporated side (GFP area, blue) with the respective area on the non-electroplated side after 48 hr post electroporation (hpe) with shCONTROL or shADSL (n = 7 embryos [shCONTROL] and 6 embryos [shADSL], two-tailed t-test, ns not significant). Scale bar = 50 μm. (B) Rate of differentiation was analyzed by fluorescence-associated cell sorting (FACS) after 48 hpe into HH12 neural tubes with shCONTROL or shADSL. 6–8 embryos per condition were used for each experiment. The mean of two independent experiments is shown in the left panel. Dot plots in right panels represent ELAVL3/4 intensity versus GFP intensity of a representative experiment.
+
 We then analyzed SOX2 and ELAVL3/4 staining only within the GFP-positive transfected cells and found that ADSL depletion increased the percentage of SOX2-positive progenitors relative to ELAVL3/4-positive neurons (Figure 3C, Figure 3—figure supplement 1B). This suggested that reduced tissue growth was not due to premature differentiation but possibly due to a proliferation defect in the progenitor population. To study cell cycle progression in neural stem cells, we performed fluorescence-associated cell sorting (FACS) analysis of GFP-positive, ELAVL3/4-negative cells following electroporation of control or ADSL shRNA. We found that there was a slight increase in the G2/M population after ADSL depletion (Figure 3D). Further analysis of stained tissue sections showed that ADSL depletion caused a reduction in the fraction of cells that incorporated EdU and an increase in the fraction of cells positive for the G2/M marker phosphorylated histone H3-Ser10 (pH3S10) (Figure 3E). We separated the pH3S10-positive cells into two populations: G2 cells, identified by punctate pH3S10 staining, and mitotic cells, displaying broadly distributed pH3S10 staining. This revealed that only the G2 fraction of cells was increased by ADSL depletion, indicating that ADSL depletion caused a specific delay in G2 phase in the SOX2+ population, rather than during mitosis (Figure 3F). Together, our in vitro data indicate that ADSL depletion leads to a mild induction of DNA damage signaling and impaired cell cycle progression. In vivo, this manifests as reduced cellularity in the developing brain, without a clear induction of cell death or senescence.
 
-## Ciliogenesis defects following ADSL depletion
+### Ciliogenesis defects following ADSL depletion
 
 As there are non-cycling cells in the brain and ADSL depletion caused cell cycle exit in RPE-1 cells, a condition frequently accompanied by ciliogenesis, we tested the ability of control and ADSL-depleted RPE-1 cells to assemble cilia. Following treatment with siRNA, cells were serum-starved for 48 hr and analyzed by immunofluorescence microscopy. Ki67 staining confirmed that most of the cells in both conditions exited the cell cycle (Figure 4A). We next examined ciliogenesis by staining for the ciliary marker ARL13B and the centrosome marker pericentrin (PCNT). Fewer cells treated with the ADSL siRNA pool had cilia, and the cilia that were present were shorter when compared to controls (Figure 4B). We also observed shorter cilia upon depletion with single siRNAs for ADSL (Figure 4—figure supplement 1A). To exclude the possibility that ciliogenesis was simply delayed, we quantified the number of ciliated cells 72 hr after serum starvation and observed a similar defect (Figure 4—figure supplement 1B). Defective ciliogenesis was rescued by expression of an siRNA-resistant cDNA (ADSL*), but not by nucleoside supplementation (Figure 4C and D). Inhibition of the DNPS pathway with methotrexate (MTX), which impairs steps in DNPS up- and downstream of ADSL (Figure 1—figure supplement 1), had no effect on ciliogenesis in control cells (Figure 4—figure supplement 1C), but rescued both the number of ciliated cells and cilia length in ADSL-depleted RPE-1 cells (Figure 4—figure supplement 1D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig4-v3.jpg)
+
+**Figure 4.:** (A) RPE-1 were transfected with control or ADSL smart pool siRNAs. After 96 hr, cells were serum starved for 48 hr to induce ciliogenesis followed by staining against Ki67 and negative cells quantified (n = 2, two-tailed t-test, ns not significant). (B) Ciliated cells silenced as in (A) were stained for ARL13B (magenta) and pericentrin (PCNT) (green). Scale bar = 10 μm. Magenta squares show enlargements of the areas. Graphs show quantification of ciliated cells and cilia length (line indicates median) (n = 3, scored 108 cells for siC, 82 cells for siADSL, ****p<0.0001). (C) RPE1 cells stably expressing EGFP or ADSL*-EGFP were silenced for 96 hr with control or a single ADSL siRNA, serum starved for 48 hr, fixed, and stained for ARL13B (red). Scale bar = 5 μm. Graphs summarize three experiments (one-way ANOVA, ns not significant, ***p<0.001, **p<0.01, *p<0.05). (D) RPE-1 cells silenced with a single ADSL siRNA (siADSL#2) for 96 hr in the absence or presence of 1× nucleosides. Cilia frequency and cilia length were quantified; mean ± SD of n = 3 siC (scored 557 cells) and siADSL (scored 499 cells), n = 5 for siC (588 cells) and siADSL (scored 297 cells) with nucleosides, ns not significant, ***p<0.001. (E) RPE-1 cells were ADSL-depleted, treated or not with MRT00252040 and serum starved, and then immunostained for ARL13B (magenta) and PCNT (green). Cilia frequency and cilia length were quantified (n = 3, scored 261 cells for siC, 166 cells for siADSL, 287 cells for siC + MRT0025204, 170 cells for siADSL + MRT00252040, **p<0.01, ****p<0.0001). Scale bar = 10 μm. (F) Quantification of the cilia frequency in control and SAICAR-treated cells (n = 4, scored 589 cells for control, 456 cells for SAICAR-treated, ****p<0.0001). (G) Cilia length measurement of cells treated as in (F) (n = 5, two-tailed t-test, *p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of cilia length in RPE-1 cells transfected with a single control or ADSL siRNA (n = 3, two-tailed t-test, **p<0.01). (B) Quantification of cilia frequency in RPE-1 silenced as in (A) and serum starved for 72 hr (n = 3, two-tailed t-test **p<0.01). (C) Quantification of cilia length in RPE-1 cells treated for 24 hr with 5 μM MTX (DHFR inhibitor) (n = 3, two-tailed t-test, ns not significant). (D) Quantification of cilia frequency and cilia length in RPE-1 cells transfected with single control or ADSL siRNAs treated or not with 5 μM MTX for 24 hr before serum starvation (n = 3, scored 324 cells for siC, 294 cells for siADSL, 253 cells for siC + MTX, 271 cells for siADSL + MTX, **p<0.01, *p<0.05). (E) Western blotting for total AKT or active AKT (pS473) following 24 hr SS, SS with SAICAr (48 hr pre-treatment, 24 hr SS), or 24 hr SS followed by 20% serum for 30 min. (F) Quantification of the number of ciliated cells and cilia length in RPE-1 p53KO cells upon ADSL depletion (n = 3, scored 338 cells for siC, 321 cells for siADSL, **p<0.01, *p<0.05). (G) Quantification of the number of ciliated cells and cilia length in RPE-1 cells upon ADSL depletion for 96 hr, serum starved for 48 hr (t = 0), and serum add back at different timepoints (t = 3, t = 6 hr) (n = 2, scored 95 cells for siC, 89 cells for siADSL).
+
 Since defective ciliogenesis caused by ADSL depletion was rescued by MTX, but not by nucleoside supplementation, we next examined whether specific inhibition of PAICS was sufficient to induce the phenotype. Following ADSL depletion, we treated cells with the PAICS inhibitor MRT00252040 (Hoxhaj et al., 2017). Similar to MTX, this rescued ciliogenesis as the number and length of cilia were similar in control and ADSL-depleted cells (Figure 4E). As inhibition of PAICS impairs DNPS upstream of SAICAR production, we treated cells with SAICAr and observed that this recapitulated the ciliogenesis defect observed in ADSL-depleted cells (Figure 4F and G). SAICAr treatment did not activate AKT activity, which has recently been shown to inhibit ciliogenesis due to serum starvation (Figure 4—figure supplement 1E; Walia et al., 2019). To exclude additional indirect effects as a cause for the reduction in the number of ciliated cells, such as cell cycle progression defects caused by DNA damage, p53 activation or defective cilia removal from interphase cells, we repeated the experiment in p53 KO cells and examined cilia resorption following the addition of serum. While the overall percentage of ciliated cells was slightly lower in p53 KO cells, depletion of ADSL recapitulated the result obtained in RPE-1 wt cells, a reduction in ciliated cells and cilia length compared to controls (Figure 4—figure supplement 1F). In addition, the kinetics of cilia removal following serum add back was similar in both controls and ADSL-depleted cells (Figure 4—figure supplement 1G). We concluded that impairing DNPS specifically at the ADSL-dependent step and/or SAICAr accumulation caused by ADSL depletion impairs the generation of primary cilia.
 
-## ADSL depletion and SAICAr accumulation impair CP110 removal
+### ADSL depletion and SAICAr accumulation impair CP110 removal
 
 To understand the origin of the ciliogenesis defect, we examined centriole configurations since mother centrioles, after conversion to basal bodies, template formation of the primary cilium. Centrosomes in ADSL-depleted cells had normal levels of PCNT and a normal number of centrioles (Figure 5A, Figure 5—figure supplement 1A). However, we found that the removal of CP110 from the mother centriole, a key step in early ciliogenesis, was impaired in serum-starved, ADSL-depleted cells. Compared to controls, a larger number of ADSL-depleted cells contained centrosomes with two CP110 foci (Figure 5B). This could be phenocopied by administration of SAICAr and was rescued by PAICS inhibition (Figure 5C and D). To determine if the retention of CP110 could underlie the phenotype, we co-depleted CP110 with ADSL using three different siRNAs. All three siRNAs silenced CP110, as verified by Western blot (Figure 5—figure supplement 1B) and partially depleted CP110 at centrioles (Figure 5—figure supplement 1C). In non-serum-starved conditions, CP110 siRNA-treated cells had fewer than the two centriolar CP110 foci typically observed in control cells (Figure 5—figure supplement 1D). The remaining centriolar signal was associated with daughter centrioles (distal to the base of the cilium in ciliated cells; Figure 5—figure supplement 1C). Co-depletion of CP110, using three independent siRNAs, with ADSL rescued the ciliogenesis defect (Figure 5E). These data demonstrated that ADSL deficiency or SAICAr administration impairs primary ciliogenesis, and this can be rescued by CP110 depletion or inhibition of PAICS, but not by supplementation of purine levels.
 
-## Depletion of Adsl in zebrafish results in developmental defects
+![Figure 5.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig5-v3.jpg)
+
+**Figure 5.:** (A) Quantification of the number of centrin foci present in mitotic RPE-1 cells transfected with control or ADSL smart pool siRNAs for 96 hr (n = 2, two-tailed t-test, ns not significant). (B) ADSL-silenced cells and controls were stained for centrin (magenta) and CP110 (green). Nuclei are shown by DAPI (blue). Graph depicts the number of ciliated cells with two CP110 foci per centrosome (n = 3, scored 342 cells for siC, 221 cells for siADSL, *p<0.05). (C) Cells mock or treated with SAICAr were processed and analyzed as described in panel (B) (n = 3, scored 288 cells for control and 253 cells for SAICAr, ***p<0.001). (D) RPE-1 cells depleted with ADSL or control siRNAs were treated with vehicle or MRT00252040 and stained as in (B, C). Graph depicts the percentage of cells presenting two CP110 foci per centrosome (n = 2; scored 177 cells for siC + DMSO, 180 cells for siADSL + DMSO, 75 cells for siC + MRT00252040, 78 cells for siADSL + MRT00252040, *p<0.05). (E) RPE-1 cells depleted with ADSL and/or CP110 (silenced for 24 hr with three different siRNAs) were serum starved for 48 hr, fixed, and stained for ARL13B (magenta) and pericentrin (PCNT) (green). Graphs show the number of ciliated cells (n = 3 for siC, siADSL, siCP110#1, siADSL + siCP110#1; n = 2 for siCP110#2, siCP110#3, siADSL + siCP110#2 and siADSL + siCP110#3, scored 461 cells for siC, 301 cells for siADSL, 277 cells for siCP110#1, 289 cells for siADSL + siCP110#1, 119 cells for siCP110#2, 90 cells for siADSL + siCP110#2, 141 cells for siCP110#3, 98 cells for siADSL + siCP110#3, ****p<0.0001, ***p<0.001) and cilia length (n = 3, one-way ANOVA ***p<0.001, **p<0.01, *p<0.05). All graphs show means ± SD with individual values shown in circles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of PCNT intensity upon adenylosuccinate lyase (ADSL) depletion with a single siRNA#2 (n = 2, two-tailed t-test applied, ns not significant; median is shown). (B) Western blot to confirm CP110 depletion after 24 hr of silencing with three different siRNAs. (C) CP110 presence in both centrioles (stained by anti-centrin antibody, in magenta) upon 24 hr of CP110 depletion in normal serum (10%) conditions. Quantification of centrioles presenting two foci per centrosome in control and CP110-depleted cells with three different siRNAs (n = 2, scored 82 cells for siC, 85 cells for siCP110#1, 77 cells for siCP110#2, 79 cells for siCP110#3, **p<0.01, *p<0.05). Scale bar = 5 μm. (D) CP110 foci (in green) colocalizing with centrobin (marker of daughter centriole, in red) upon CP110 depletion for 24 hr in normal serum (10%). Three different siRNAs were used. Scale bar = 5 μm.
+
+### Depletion of Adsl in zebrafish results in developmental defects
 
 To test whether ADSL deficiency caused ciliary defects in vivo, we employed a zebrafish model. As CRISPR/Cas9-mediated gene knockout did not yield viable mutants, we used two different antisense morpholino oligonucleotides (MO) to deplete Adsl in zebrafish embryos. Adsl is ubiquitously expressed at early embryonic stages and, by the 18-somite stage, highly expressed in several areas of the developing brain, including the midbrain and mesencephalon (Figure 6—figure supplement 1A–L). Antibody staining demonstrated expression of Adsl in neurons, which was abolished upon injection of either MO (Figure 6—figure supplement 2). Examination of embryo morphology 48 hr post fertilization (hpf) revealed pericardial edema, kinked tail, hydrocephalus, and pinhead (microcephaly) phenotypes (Figure 6A–E). Defects in head size, which are consistent with the clinical presentation of ADSLD patients, were further corroborated by staining for skull formation that is coordinated with brain development. Alcian Blue staining showed that nearly 50% of the Adsl-depleted embryos exhibited weak or absent staining (Figure 6F). Defects in skull formation could be largely rescued by zebrafish Adsl or human ADSL expression but not expression of a human ADSL R426H mutant, the most frequently observed ADSLD mutation (Figure 6F; https://www.adenylosuccinatelyasedeficiency.com/). Examination of DNA damage signaling in the developing neural tube revealed an increase in γH2AX-positive cells. Similar to what was observed in RPE-1 cells, treatment with nucleosides suppressed DNA damage signaling (Figure 6G). These data demonstrated that Adsl depletion strongly impaired normal zebrafish development, leading to DNA damage that could be suppressed with nucleoside supplementation and several phenotypes consistent with ciliary defects.
 
-## Adsl depletion impairs ciliogenesis in zebrafish
+![Figure 6.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig6-v3.jpg)
+
+**Figure 6.:** (A) Live images of 48 hr post fertilization (hpf) zebrafish embryos showing pericardial edema (green arrow), kinked tail (yellow arrow), hydrocephalus (red arrow), and pinhead (blue arrow). NI (uninjected controls), CTRL MO (embryos injected with a standard control MO), Adsl ATG MO (injected with a translation blocking MO against Adsl). Scale bar = 500 μm. (B–E) Quantification of the percentage of embryos developing the indicated phenotypes. For (B–E), each circle indicates one experiment. Data from eight experiments with 311 embryos (NI), 275 (CTRL MO), and 227 (Adsl ATG MO) is shown. Kruskal–Wallis test with Dunn’s multiple comparison. Dashes show median. **p=0.0042 (pericardial edema), **p=0.0032 (kinked tail), **p=0.0011 (pinhead), ***p=0.0005 (hydrocephalus). (F) Adsl-depleted zebrafish display skull formation defects. Cartilage staining of zebrafish embryos (4 days post fertilization [dpf]) with Alcian Blue. Embryos were classified according to the severity of their phenotype in normal staining, weak staining, or absent cartilage. Lateral and ventral view. Cartilage formation could be rescued by co-injection of capped mRNA encoding zebrafish Adsl. 6–8 experiments with a total of 178 embryos (NI), 133 (CTRL MO), 169 (Adsl ATG MO), and 123 (Rescue). Injection of mRNA encoding human wt ADSL, but not the R426H ADSLD variant, restores cartilage formation in embryos. Four experiments with a total of 116 embryos (NI), 81 (CTRL MO), 80 (Adsl ATG MO), 91 (+ hADSL wt), and 89 (+ hADSL R426H). Two-tailed Fisher’s exact test; ****p<0.0001. Scale bar = 200 μm. (G) Immunofluorescence staining of the neural tube (dorsal view) of control and Adsl-depleted embryos 24 hpf for γH2AX (green) and acetylated-tubulin (Ac-tub: red). Treatment with 60 mM nucleosides was carried out in indicated samples. Experiments with 45 embryos per treatment are shown, dashes indicate median. Data were analyzed by using Kruskal–Wallis test with Dunn’s correction. *p<0.05, ****p<0.0001. Scale bar = 300 μm. Unless indicated, comparisons are not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Whole-mount in situ hybridization for detection of adsl expression during zebrafish development. All scale bars = 100 µm. (A–D) adsl is ubiquitously expressed. (E, F) adsl is expressed in the anterior part of the embryo including the optic primordium (arrow in F). (G, H) At 18-somite stage (ss), adsl is expressed in the developing midbrain and hindbrain (arrows). (I, J) adsl is expressed in several areas of the brain including the mesencephalon (arrows). (K, L) adsl is expressed in several areas of the brain including the midbrain hindbrain boundary (arrows). (D, F, H, J, L) Dorsal views.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Whole-mount antibody staining for acetylated tubulin (red) to visualize neurons and Adsl (green) in 24 hr post fertilization (hpf) zebrafish embryos. Injection of ATG morpholino resulted in a very weak expression of Adsl along axons. Images show anterior views of zebrafish heads. Scale bar = 200 µm.
+
+### Adsl depletion impairs ciliogenesis in zebrafish
 
 As the observed phenotypes were potentially indicative of defects in cilium function, we examined heart looping by staining for cardiac myosin light chain 2 (cmcl2) mRNA. Adsl-depleted embryos showed higher frequencies of defects, including inverse looping and to a lesser extent no loops (Figure 7A). Inverse heart looping may be indicative of laterality impairment (situs inversus) that can arise due to ciliary defects. To corroborate this possibility, we examined liver placement by staining for angiopoietin-like 3 (angptl3). A significant increase in inverse liver placement was observed in Adsl-depleted embryos compared to controls, supporting a general defect in laterality (Figure 7B). To further investigate the laterality defects, we examined left-right asymmetry at the 20-somite stage, staining for the mRNA of the left lateral plate mesoderm marker southpaw (spaw). Consistent with the altered distribution of cmcl2 and angptl3, asymmetric spaw mRNA localization was changed in about 40% of Adsl-depleted embryos. Most of these embryos showed symmetric patterning and a smaller fraction of no or only weak staining. The correct asymmetric distribution of spaw mRNA could be largely restored by expression of mRNA encoding zebrafish Adsl (Figure 7C).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig7-v3.jpg)
 
-**Figure 7.:** (A) At 48 hr post fertilization (hpf), the ventricle (V) of the two-chambered zebrafish heart is placed left and above the atrium (A). Adsl-depleted embryos more frequently develop inversely looped hearts or developed unlooped hearts (no loop) (as scored by whole-mount in situ hybridization for cardiac myosin light chain 2 [cmlc2]). N = 6 experiments with a total of 266 embryos (NI), 176 embryos (CTRL MO), and 188 embryos (Adsl ATG MO). Scale bar = 100 μm. (B) Whole-mount in situ hybridization for angiopoietin-like 3 (angptl3) to assess liver placement in 48 hpf embryos. Dorsal view. Scale bar = 200 μm. 185 NI, 121 CTRL MO, and 99 Adsl ATG MO embryos. (A, B) Two-tailed Fisher’s exact test; **p<0.0015, ****p<0.0001. (C) Whole-mount in situ hybridization for the left lateral plate mesoderm marker southpaw (spaw) at 20 somite stage (ss). Spaw is normally expressed in the left lateral plate mesoderm. When LR asymmetry is disturbed, spaw can be detected on the right side or on both sides. Aberrant expression of spaw in Adsl morphants. Co-injection of RNA encoding zebrafish Adsl restores proper spaw expression. Two-tailed Fisher’s exact test; *p=0.0451, **p=0.0016, ****p<0.0001. Results from five experiments with 121 embryos (NI), 142 (CTRL MO), 128 (Adsl ATG MO), and 105 (Rescue) are shown. Scale bar = 200 μm. (D) Confocal z-stacks of the Kupffer’s vesicle (KV) of six ss embryos. Cilia are stained red (acetylated tubulin), while apical cell borders were stained for PKCζ (green). Scale bar = 10 μm. (E) No significant changes in the size of the KV upon Adsl depletion. n = 25 (CTRL MO), 25 (Adsl ATG MO), and 18 embryos (rescue with zebrafish adsl RNA). Each circle is one embryo, line indicates median. Kruskal–Wallis test with Dunn’s correction. p-values: CTRL MO vs. Adsl ATG MO: 0.2582; CTRL MO vs. Rescue: >0.9999; Adsl ATG MO vs. Rescue: 0.1684. (F) No significant changes in the number of cilia per KV. n = 32 (CTRL MO), 30 (Adsl ATG MO), and 20 embryos (rescue with zebrafish adsl RNA). Each circle is one embryo, lines show means. One-way ANOVA with Sidak’s multiple comparison test. p=0.5538 (CTRL MO vs. Adsl ATG MO), 0.2844 (CTRL MO vs. Rescue), and 0.9225 (Adsl ATG MO vs. Rescue). (G) Shorter cilia in Adsl morphants can be partially elongated by co-injection of RNA encoding zebrafish Adsl. n = 960 cilia (CTRL MO), 798 (Adsl ATG MO), and 540 (Rescue). Kruskal–Wallis test with Dunn’s correction, lines indicate medians; ***p=0.0008.Figure 7—source data 1.Figure 7A and B.GraphPad Prism file.Figure 7—source data 2.Figure 7C.GraphPad Prism file.Figure 7—source data 3.Figure 7E.GraphPad Prism file.Figure 7—source data 4.Figure 7F.GraphPad Prism file.Figure 7—source data 5.Figure 7G.GraphPad Prism file.
+**Figure 7.:** (A) At 48 hr post fertilization (hpf), the ventricle (V) of the two-chambered zebrafish heart is placed left and above the atrium (A). Adsl-depleted embryos more frequently develop inversely looped hearts or developed unlooped hearts (no loop) (as scored by whole-mount in situ hybridization for cardiac myosin light chain 2 [cmlc2]). N = 6 experiments with a total of 266 embryos (NI), 176 embryos (CTRL MO), and 188 embryos (Adsl ATG MO). Scale bar = 100 μm. (B) Whole-mount in situ hybridization for angiopoietin-like 3 (angptl3) to assess liver placement in 48 hpf embryos. Dorsal view. Scale bar = 200 μm. 185 NI, 121 CTRL MO, and 99 Adsl ATG MO embryos. (A, B) Two-tailed Fisher’s exact test; **p<0.0015, ****p<0.0001. (C) Whole-mount in situ hybridization for the left lateral plate mesoderm marker southpaw (spaw) at 20 somite stage (ss). Spaw is normally expressed in the left lateral plate mesoderm. When LR asymmetry is disturbed, spaw can be detected on the right side or on both sides. Aberrant expression of spaw in Adsl morphants. Co-injection of RNA encoding zebrafish Adsl restores proper spaw expression. Two-tailed Fisher’s exact test; *p=0.0451, **p=0.0016, ****p<0.0001. Results from five experiments with 121 embryos (NI), 142 (CTRL MO), 128 (Adsl ATG MO), and 105 (Rescue) are shown. Scale bar = 200 μm. (D) Confocal z-stacks of the Kupffer’s vesicle (KV) of six ss embryos. Cilia are stained red (acetylated tubulin), while apical cell borders were stained for PKCζ (green). Scale bar = 10 μm. (E) No significant changes in the size of the KV upon Adsl depletion. n = 25 (CTRL MO), 25 (Adsl ATG MO), and 18 embryos (rescue with zebrafish adsl RNA). Each circle is one embryo, line indicates median. Kruskal–Wallis test with Dunn’s correction. p-values: CTRL MO vs. Adsl ATG MO: 0.2582; CTRL MO vs. Rescue: >0.9999; Adsl ATG MO vs. Rescue: 0.1684. (F) No significant changes in the number of cilia per KV. n = 32 (CTRL MO), 30 (Adsl ATG MO), and 20 embryos (rescue with zebrafish adsl RNA). Each circle is one embryo, lines show means. One-way ANOVA with Sidak’s multiple comparison test. p=0.5538 (CTRL MO vs. Adsl ATG MO), 0.2844 (CTRL MO vs. Rescue), and 0.9225 (Adsl ATG MO vs. Rescue). (G) Shorter cilia in Adsl morphants can be partially elongated by co-injection of RNA encoding zebrafish Adsl. n = 960 cilia (CTRL MO), 798 (Adsl ATG MO), and 540 (Rescue). Kruskal–Wallis test with Dunn’s correction, lines indicate medians; ***p=0.0008.
 
 To test if impaired laterality may involve ciliary defects, we examined the Kupffer’s vesicle (KV, organ of laterality). While KV area and cilia number were not significantly affected by Adsl depletion, cilia length was reduced in Adsl ATG MO-treated embryos, a phenotype that was partially rescued by co-injection of RNA encoding zebrafish Adsl (Figure 7D–G). These data, in combination with additional phenotypes, including laterality defects and hydrocephalus, support the role of ADSL in promoting proper cilia formation or function in vivo.
 
-## MTX treatment rescues neurogenesis in Adsl-depleted zebrafish
+### MTX treatment rescues neurogenesis in Adsl-depleted zebrafish
 
 As ciliogenesis defects were linked to impaired DNPS and excess SAICAr in human cells (Figure 4), we examined the effects of inhibiting the DNPS pathway during zebrafish development. We quantified the effects of Adsl depletion on differentiating neuronal cells by staining for the marker Elavl3/4. Similar to what we observed in the chicken neural tube, depletion of Adsl caused a significant reduction in Elavl3/4-positive cells that could be rescued by the co-injection of RNA encoding zebrafish Adsl (Figure 8A). We next treated control and Adsl-depleted embryos with MTX to attenuate the DNPS pathway upstream of ADSL and reduce SAICAR production. Treatment with MTX completely rescued the reduction in Elavl3/4-positive cells in the neural tube, indicating that this was not a result of impaired DNPS per se, but likely a consequence of intermediate metabolite accumulation (Figure 8B). Similar results were observed with a second morpholino targeting Adsl (Figure 8—figure supplement 1). We next examined the effect of MTX treatment on Sox2-positive neural progenitors in the developing forebrain (Figure 8C, upper right panel). Depletion of Adsl reduced the number of Sox2-positive cells, and this was rescued by co-treatment with MTX (Figure 8C). In contrast, supplementation with nucleosides did not rescue the reduced number of Sox2-positive progenitors in Adsl-depleted embryos (Figure 8D). These data indicate a specific role of impaired DNPS, and likely SAICAr accumulation, in the neural progenitor defects associated with Adsl depletion.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig8-v3.jpg)
+
+**Figure 8.:** (A) Immunofluorescence whole-mount microscopy of neural tubes of 24 hr post fertilization (hpf) zebrafish embryos (dorsal view) stained for acetylated tubulin (axons, red) and Elavl3/4 (green). Fewer Elavl3/4-positive cells in Adsl-depleted embryos that can be rescued by co-injection with RNA encoding zebrafish Adsl (Rescue). Graph shows Elavl3/4 counts of individual embryos, line indicates median. Three experiments with 45 embryos (NI), 45 (CTRL MO), 45 (Adsl ATG MO), and 45 (Rescue). Kruskal–Wallis test with Dunn’s correction. ns, not significant. p>0.9999, ****p<0.0001. Scale bar = 100 μm. (B) MTX treatment rescues Elavl3/4-positive cell numbers. Staining of the neural tube (dorsal view) of 24 hpf zebrafish embryos for acetylated tubulin (red) and or Elavl3/4 (green). Adsl morphants show fewer Elavl3/4-positive cells, which could be rescued by treatment with 100 µM MTX. Five experiments with 69 (CTRL MO), 75 (CTRL MO + MTX), 63 (Adsl ATG MO), and 58 (Adsl ATG MO + MTX) embryos. One-way ANOVA with Sidak’s multiple comparison. ns p>0.9999, ****p<0.0001. Scale bar = 100 μm. (C) Forebrains of 24 hpf zebrafish embryos (left panels) stained for acetylated tubulin (red) and Sox2-positive neural progenitors (green), anterior view. Scale bar = 200 μm. Schematic of the developing brain of zebrafish embryos adapted from Vaz et al., 2019, top-right panel. The forebrain (red) is composed of the telencephalon with the olfactory bulb (1), the pallium (2), the optic recess region (3), and the diencephalon with the hypothalamus (4). Quantification of phenotypes (bottom-right panel). Adsl morphants show fewer neural progenitor cells in the forebrain, a defect that can partially be rescued with 100 µM MTX from tailbud stage on. Data were analyzed using one-way ANOVA with Sidak’s multiple comparison. Dashes show medians. Experiments with 45 embryos (CTRL MO + DMSO), 45 embryos (CTRL MO + MTX), 45 embryos (Adsl ATG MO + DMSO), and 47 embryos (Adsl ATG MO + MTX). If not shown in the graph, all other comparisons are not significant. (D) Forebrains of 24 hr post fertilization (hpf) zebrafish embryos (left panels) stained for acetylated tubulin (red) and Sox2-positive neural progenitors (green), anterior view. Scale bar = 100 μm. Quantification of phenotypes (right panel). Adsl morphants show similar neural progenitor cells in the forebrain regardless of supplementation with 1× nucleosides. Data were analyzed using one-way ANOVA with Sidak’s multiple comparison, n.s. = p>0.9999. Dashes show medians. Experiments with 45 embryos (CTRL MO + DMSO), 45 embryos (CTRL MO + MTX), 45 embryos (Adsl ATG MO + DMSO), and 47 embryos (Adsl ATG MO + MTX).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70518/elife-70518-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** Acetylated tubulin (Ac-tub) is shown in red. Neural cells are stained for Elavl3+4 (green). Adsl morphants (splMO) show fewer neuronal cells, which can be partially rescued by treatment with 100 µM methotrexate (MTX) from tailbud stage on. Data were analyzed by using one-way ANOVA with Sidak’s multiple comparison. Dashes show median. Experiments with 45 embryos (CTRL MO + DMSO), 45 embryos (CTRL MO + MTX), 45 embryos (Adsl splMO + DMSO), and 45 embryos (Adsl splMO + MTX). If not shown in graph, all other comparisons are not significant. Scale bar = 100 µm. Source data is provided in Figure 8—figure supplement 1—source data 1.
 
 ## Discussion
 
@@ -120,51 +176,873 @@ To our knowledge, this is the first demonstration of a specific purine metabolit
 
 ## Materials and methods
 
-## Human cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ADSL isoform1</td>
+      <td>NCBI Gene</td>
+      <td>CCDS14001.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Gallus gallus)</td>
+      <td>Adsl</td>
+      <td>GenBank</td>
+      <td>M37901.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>adsl</td>
+      <td>GenBank</td>
+      <td>NM_199899.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>angptl3</td>
+      <td>GenBank</td>
+      <td>AF379604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>spaw</td>
+      <td>GenBank</td>
+      <td>NM_180967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>cmlc2</td>
+      <td>GenBank</td>
+      <td>PMID:10491254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gallus gallus, eggs)</td>
+      <td>White leghorn fertilized eggs</td>
+      <td>Granja Gilbert S.A.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio, male and female)</td>
+      <td>AB</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENO-960809-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio, male and female)</td>
+      <td>EK</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENO-990520-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT-RPE-1</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-4000;RRID:CVCL_4388</td>
+      <td>Authenticated by STR testing, routinely tested for mycoplasma and found negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-2;RRID:CVCL_0030</td>
+      <td>Authenticated by STR testing, routinely tested for mycoplasma and found negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT-RPE-1 p53KO</td>
+      <td>Kind gift from Bryan Tsou, Sloan-Kettering Institute</td>
+      <td>PMID:27371829</td>
+      <td>P53 genotype confirmed by western blotting, routinely tested for mycoplasma and found negative.</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>AD-293</td>
+      <td>Agilent</td>
+      <td>Cat# 240085;RRID:CVCL_9804</td>
+      <td>Authenticated by STR testing, routinely tested for mycoplasma and found negative.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLenti-CMV-GFP-BLAST (659-1)</td>
+      <td>Addgene</td>
+      <td>Cat# 17445;RRID:Addgene_17445</td>
+      <td>pLenti CMV GFP Blast (659-1) was a gift from Eric Campeau and Paul Kaufman (Addgene plasmid # 17445; http://n2t.net/addgene:17445; RRID:Addgene_17445)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pMDLg/pRRE</td>
+      <td>Addgene</td>
+      <td>Cat# 12251;RRID:Addgene_12251</td>
+      <td>pMDLg/pRRE was a gift from Didier Trono (Addgene plasmid # 12251; http://n2t.net/addgene:12251; RRID:Addgene_12251)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pCMV-VSV-G</td>
+      <td>Addgene</td>
+      <td>Cat# 8454;RRID:Addgene_8454</td>
+      <td>pCMV-VSV-G was a gift from Bob Weinberg (Addgene plasmid # 8454; http://n2t.net/addgene:8454; RRID:Addgene_8454)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRSV-REV</td>
+      <td>Addgene</td>
+      <td>Cat# 12253;RRID:Addgene_12253</td>
+      <td>pRSV-Rev was a gift from Didier Trono (Addgene plasmid # 12253; http://n2t.net/addgene:12253; RRID:Addgene_12253)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated α-tubulin (6-11B-1) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Cat# sc-23950;RRID:AB_628409</td>
+      <td>IF (1:1000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Elav3/4 (rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX128365;RRID:AB_2885764</td>
+      <td>IF (1:1000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab97959;RRID:AB_2341193</td>
+      <td>IF (1:1000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γH2AX (rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX127342;RRID:AB_2833105</td>
+      <td>IF (1:400 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKT (pan) (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2920;RRID:AB_1147620</td>
+      <td>Western (1:2000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKT p-S473 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4060;RRID:AB_2315049</td>
+      <td>Western (1:2000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vinculin (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 13901; RRID:AB_2728768</td>
+      <td>Western (1:2000 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ADSL (rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# HPA000525;RRID:AB_1078106</td>
+      <td>IF (1:200 fish, 1:100 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PKCζ(C-20) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Cat# sc-216;RRID:AB_2300359</td>
+      <td>IF (1:500 fish)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 donkey anti-mouse IgG (donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A10037;RRID:AB_2534013</td>
+      <td>IF (1:1000 fish)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey anti-rabbit IgG (donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A32790;RRID:AB_2762833</td>
+      <td>IF (1:1000 fish)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 goat anti-mouse IgG cross-adsorbed (goat polyclonal)</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>Cat# A32742;RRID:AB_2762825</td>
+      <td>IF (1:400 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rabbit IgG cross-adsorbed (goat polyclonal)</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>Cat# A11034;RRID:AB_2576217</td>
+      <td>IF (1:400 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin-AP Fab fragments (sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11093274910;RRID:AB_514497</td>
+      <td>ISH (1:5000 fish)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (AC-40)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# A4700;RRID:AB_476730</td>
+      <td>Western (1:1500 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (mouse monoclonal)</td>
+      <td>Novocastra</td>
+      <td>Cat# NCL-Ki-67p;RRID:AB_442102</td>
+      <td>IF (1:500 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (1C12)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2524;RRID:AB_331743</td>
+      <td>IF (1:100 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vimentin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab45939;RRID:AB_2257290</td>
+      <td>IF (1:100 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CK20 (Ks20.8) (mouse monoclonal)</td>
+      <td>Dako/Agilent</td>
+      <td>Cat# GA77761-2</td>
+      <td>IF (1:200 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-53BP1 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB100-304;RRID:AB_10003037</td>
+      <td>IF (1:400 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γH2AX-pS139 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Cat# sc-517336;RRID:AB_2133718</td>
+      <td>IF (1:100 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPA32</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# NA19L;RRID:AB_565123</td>
+      <td>IF (1:100 human cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (rabbit polyclonal)</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>Cat# 48-1400;RRID:AB_2533841</td>
+      <td>IF (1:500 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ELAVL3/4 (HuC/HuD) 16A11</td>
+      <td>Molecular Probes/Thermo Fisher Scientific</td>
+      <td>Cat# A21271;RRID:AB_221448</td>
+      <td>IF (1:500 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pH3S10 (rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 06-570;RRID:AB_310177</td>
+      <td>IF (1:500 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase-3 (CC3)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# AB3623;RRID:AB_91556</td>
+      <td>IF (1:500 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TUJ1</td>
+      <td>Covance</td>
+      <td>Cat# MMS-435P;RRID:AB_2313773</td>
+      <td>IF (1:1000 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PAX6 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# AB_528427;RRID:AB_528427</td>
+      <td>IF (1:250 chicken)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ARL13B (C5) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-515784;RRID:AB_2890034</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pericentrin (PCNT) (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP1-87772;RRID:AB_11018354</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CP110 (rabbit polyclonal)</td>
+      <td>Kind gift from Andrew Holland</td>
+      <td>Unpublished reagent</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrin (20H5) (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 04-1624;RRID:AB_AB_10563501</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrobin (mouse monoclonal)</td>
+      <td>Kind gift from Ciaran Morrison</td>
+      <td>PMID:29440264</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-CMV-ADSL*-EGFP siRNA resistant</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR2.1-TOPO</td>
+      <td>Invitrogen/Thermo FisherScientific</td>
+      <td>Cat# 450640;RRID:Addgene_26778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCRII-zfAdsl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Template for generation of antisense in situ probe (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ Flag-zfAdsl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Template for generation of capped mRNA (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ Flag-zfAdsl MO mut</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Template for generation of capped mRNA (insensitive to ATG MO) (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ hAdsl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Template for generation of capped mRNA (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ hAdslR426H</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Template for generation of capped mRNA (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSHIN</td>
+      <td>Kind gift of Dr. Kojima</td>
+      <td>PMID:24741441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ADSL Smartpool siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat# M-010986-01-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ADSL siRNA#2</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>CAAGAUUUGCACCGACAUA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CP110 siRNA#1</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>GCAAAACCAGAAUACGAGAUU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CP110 siRNA#2</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>CAAGCGGACUCACUCCAUATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CP110 siRNA#3</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>TAGACTTATGCAGACAGATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGFP siRNA</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>GGCUACGUCCAGGAGCGCCGCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GL2 siRNA (siC, targets luciferase)</td>
+      <td>MilliporeSigma</td>
+      <td>Custom, published in PMID:11373684</td>
+      <td>CGUACGCGGAAUACUUCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ADSL-BsiWI-F</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>5′AAAACGTACGATGGCGGCTGGAGGCGATCAT3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ADSL-EcoR1-R</td>
+      <td>MilliporeSigma</td>
+      <td>Custom</td>
+      <td>5′TTTTGAATTCCAGACATAATTCTGCTTTCA3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shCONTROL</td>
+      <td>MilliporeSigma</td>
+      <td>Custom, for control in chicken embryo</td>
+      <td>5′-CCGGTCTCGACGGTCGAGT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shADSL</td>
+      <td>MilliporeSigma</td>
+      <td>Custom, for ADSL depletion in chicken embryo</td>
+      <td>5′-GAGCTGGACAGATTAGTGA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adsl ATG MO</td>
+      <td>GeneTools</td>
+      <td>Custom, for Adsl depletion in fish</td>
+      <td>5′-TCCCTCCATGCCTGCAGCGGTTAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adsl splMO</td>
+      <td>GeneTools</td>
+      <td>Custom, for Adsl depletion in fish</td>
+      <td>5′-CCAACTGTGGGAGAGAGCGACTGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Std. CTRL MO</td>
+      <td>GeneTools</td>
+      <td>Custom, for control in fish</td>
+      <td>5′-CCTCTTACCTCAGTTACAATTTATA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU imaging kit</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>Cat# C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOPO TA cloning</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>Cat# 450640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AmpliCapTM SP6 High Yield Message Maker Kit</td>
+      <td>Cellscript</td>
+      <td>Cat# C-AC0706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Lightning mutagenesis kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 210518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC protein assay</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 500-0111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilion ECL Ultra</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# WBULS0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde, 37%</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 47608-500ML-F</td>
+      <td>Used at 4% for cell fixation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Senescence β-Galactosidase Staining Kit</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Capacity RNA-to-cDNA Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 4387406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Universal PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 4324018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick ligation kit</td>
+      <td>NEB</td>
+      <td>Cat# 4324018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Opti-MEM</td>
+      <td>Gibco</td>
+      <td>Cat# 31985070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM-F12</td>
+      <td>Gibco</td>
+      <td>Cat# 21331046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tri-reagent</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# T2494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KOD Hot start DNA polymerase</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 71086-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenimine (PEI), linear (MW 25,000)</td>
+      <td>Polyscience Euro</td>
+      <td>Cat# 23966-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# F7524</td>
+      <td>10% in culture media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypan Blue</td>
+      <td>Gibco/Thermo FisherScientific</td>
+      <td>Cat# 15250061</td>
+      <td>0.4% solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100 (TX-100)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase inhibitor cocktail 2</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# P5726-5ML</td>
+      <td>1× in lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase inhibitor cocktail 3</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# P0044-5ML</td>
+      <td>1× in lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, EDTA free Protease inhibitors</td>
+      <td>Roche/MilliporeSigma</td>
+      <td>Cat# 4693132001</td>
+      <td>1× in lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcian Blue Solution</td>
+      <td>Sigma</td>
+      <td>Cat# B8438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTX (methotrexate)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 13960</td>
+      <td>100 µM in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EmbryoMax Nucleosides 100×</td>
+      <td>Merck</td>
+      <td>Cat# ES-008-D</td>
+      <td>1× in media or saline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TWEEN 20</td>
+      <td>Sigma</td>
+      <td>Cat# P2287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MRT00252040</td>
+      <td>Kindly provided by Simon Osborne, LifeArc, London, UK</td>
+      <td></td>
+      <td>PAICS inhibitorStock solution 2 mM in DMSO, used at final concentration of 2 µM in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methotrexate (MTX)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# M8407-100MG</td>
+      <td>DHFR inhibitorStock solution of 100 µM and used at final concentration of 4 µM in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KU-55933</td>
+      <td>Selleckchem</td>
+      <td>Cat# 118500-2MG</td>
+      <td>ATM inhibitorUsed at final concentration of 5 µM in DMSO in cell culture media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin–streptomycin (10K U/ml)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15140122</td>
+      <td>Used 1% in cell culture media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SAICAr</td>
+      <td>CarboSynth</td>
+      <td>Cat# NS16860</td>
+      <td>Stock solution 20 mg/ml in water and used as final concentration at 1 mg/ml in cell culture media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# D1515</td>
+      <td>Used at 1 µg/ml in cell culture media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AscI</td>
+      <td>NEB</td>
+      <td>Cat# R0558S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NotI-HF</td>
+      <td>NEB</td>
+      <td>Cat# R3189S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# C9231-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>Invitrogen/Thermo FisherScientific</td>
+      <td>Cat# A1113902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>PanReac AppliChem</td>
+      <td>Cat# 14145.1211</td>
+      <td>Used at 2% in cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7–9</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version: 7.0e, 8.4.3, 9.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe Photoshop</td>
+      <td>RRID:SCR_014199</td>
+      <td>Version: 22.4.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Illustrator</td>
+      <td>RRID:SCR_010279</td>
+      <td>Version: 24.3, 25.2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td>Version: 2.0.0-rc-69/1.52p</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS AF</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td>Version: 3.7.3.23245</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human cell culture
 
 Human immortalized hTERT-RPE-1 WT (ATCC), TP53 knockout (kind gift from Brian Tsou), RPE-1-expressing pLenti-EGFP and pLenti-ADSL*EGFP (siRNA-resistant mutant) cells were cultured in Dulbecco’s modified Eagle medium-F12 (DMEM-F12; Thermo Fisher Scientific) supplemented with 10% (v/v) fetal bovine serum (MilliporeSigma) and 100 U/ml penicillin–streptomycin at 37°C and 5% CO2 in humidified atmosphere. For cilia experiments, silenced RPE-1 cells were serum starved for 48 hr in OptiMEM (Thermo Fisher Scientific). Hela (ATCC) and AD293 (Agilent) cells were cultured in DMEM with high glucose (Thermo Fisher Scientific) supplemented with 10% (v/v) fetal bovine serum (MilliporeSigma) and 100 U/ml penicillin–streptomycin at 37°C and 5% CO2 in humidified atmosphere. All cell lines were authenticated by STR testing (ATCC) and routinely tested for mycoplasma and found negative (Universal Mycoplasma Detection Kit; ATCC).
 
-## Drugs used and concentrations
+### Drugs used and concentrations
 
 1 mg/ml SAICAr (Carbo Synth) was added to the cells for 96 hr to mimic ADSL depletion. 60 μM nucleosides (100X Embryomax, Merck Millipore) were added from the first silencing to the end at 1× in the culture medium. MRT00252040 (kindly provided by Simon Osborne, LifeArc, London, UK) dissolved in DMSO was used at 2 μM and MTX (MilliporeSigma) at 4 μM as described in Hoxhaj et al., 2017. ATM inhibitor (KU-55933; Selleckchem) was used at 5 mM for 24 hr before fixation. Doxorubicin (MilliporeSigma) was used as positive control for senescence at 1 μg/ml for 6 days. Adenosine (MilliporeSigma) was dissolved in water at a concentration of 0.8 mg/ml and diluted 100× to reach a final concentration of 80 μg/ml for 96 hr. HU (from MilliporeSigma) has been freshly dissolved in water and used at a final concentration of 2 mM in cell culture for 6 hr.
 
-## Antibodies
+### Antibodies
 
 Staining of human cells was performed with the following primary antibodies: α-ADSL (MilliporeSigma, rabbit, 1:100 IF, 1:1000 western), α-ARL13B (Santa Cruz Biotechnology, mouse monoclonal C5, 1:100), PCNT (Novus Biologicals, rabbit, 1:400), α-p53 (Cell Signaling, mouse monoclonal 1C12, 1:100), α−RPA2 (Calbiochem, mouse monoclonal Ab-3, 1:100), a-53BP1 (Novus Biologicals, rabbit, 1:400), α-pSer139-H2A.X (Santa Cruz Biotechnology, rabbit, 1:100), α-AKT (Cell Signaling, rabbit polyclonal, 1:2000), α-pAKT-S473 (Cell Signaling, rabbit polyclonal, 1:2000), α-vinculin (Cell Signaling, rabbit polyclonal, 1:2000), α-actin (MilliporeSigma, mouse monoclonal AC-40, 1:1500), α-vimentin (Abcam, rabbit, 1:100), α-CK20 (DaKo, mouse, 1:200), α-Ki67 (Novocastra, mouse, 1:500), α-centrobin (a kind gift from Ciaran Morrison, mouse, 1:500 [Ogungbenro et al., 2018]), α-centrin (EMD Millipore, mouse, 1:1000), α-CP110 (a kind gift from Andrew Holland, rabbit, 1:1000), α-mouse-Alexa Fluor 594 (Molecular Probes, goat, 1:400), and α-rabbit-Alexa Fluor 488 (Molecular Probes, goat, 1:400). Staining of chicken tissues was performed with the following primary antibodies: α-ELAVL3/4 (Molecular Probes, mouse, 1:500), α-β-TubulinIII-Tuj1 (Covance, mouse, 1:1000), Pax6 (DSHB, mouse, 1:250), SOX2 (Invitrogen, rabbit, 1:500), pH3S10 (Millipore, rabbit, 1:500), and cleaved caspase-3 (Millipore, rabbit, 1:500). Staining of zebrafish tissues was performed with the following primary and secondary antibodies: α-ELAVL3/4 (GeneTex, rabbit, 1:1000), α-acetylated-alpha-tubulin (Santa Cruz Biotechnology, mouse monoclonal 6-11B-1, 1:1000), α-SOX2 (Abcam, rabbit, 1:1000), α-γH2AX (GeneTex, rabbit, 1:400), α-ADSL (MilliporeSigma, rabbit, 1:200), α-PKCζ (Santa Cruz Biotechnology, rabbit, 1:500), α-digoxigenin-AP Fab fragments (Roche, sheep, 1:5000 ISH), α-mouse-Alexa Fluor 568 (Molecular Probes, donkey, 1:1000), and α-rabbit-Alexa Fluor 488 (Molecular Probes, donkey, 1:1000).
 
-## siRNA transfections
+### siRNA transfections
 
 RPE-1 (hTERT-RPE-1; ATCC) were transfected with 100 nM siRNAs (MilliporeSigma or Dharmacon) with Lipofectamine RNAiMAX (Thermo Fisher Scientific) in Opti-MEM (Gibco) without antibiotics for one or two rounds of 48 hr, depending on the gene to be silenced. We used siGFP (GGCUACGUCCAGGAGCGCCGCACC) and siGL2 (siC) (CGUACGCGGAAUACUUCGA) as negative controls. In this study, we used a smart pool (four siRNAs) against ADSL (Dharmacon) or single oligos siADSL#2 5′-CAAGAUUUGCACCGACAUA-3′ (MilliporeSigma). The siRNA-resistant mutant was designed to be resistant to siADSL#2. For rescue experiments with siCP110, we used three oligos (#1 5′-GCAAAACCAGAAUACGAGAUU-3′, #2 5′-CAAGCGGACUCACUCCAUATT-3′, and #3 5′- TAGACTTATGCAGACAGATAA-3′ [MilliporeSigma] for 24 hr).
 
-## RNA extraction and quantitative real-time PCR
+### RNA extraction and quantitative real-time PCR
 
 RPE-1 cells (ATCC) were seeded in a six-well plate, silenced for 96 hr, washed twice in PBS, and resuspended in 300 μl of Tri-Reagent (MilliporeSigma). RNA was isolated by centrifugation followed by chloroform extraction, isopropanol precipitation, washing twice in 75% ethanol, and resuspended in 20 μl DEPC-treated water (Thermo Fisher Scientific). Total RNA was quantified with a Nanodrop 8000 Instrument (Thermo Fisher Scientific). 1 μg of total RNA was used for the reverse transcription reaction performed by High-Capacity RNA-to-cDNA Kit (Applied Biosystems), according to the manufacturer’s recommendations, in a 2× RT buffer mix, supplemented with dNTPs, random primers, and RT enzyme in a final volume of 20 μl. Quantitative real-time PCR (qRT-PCR) was performed using the comparative CT method and a Step-One-Plus Real-Time PCR Instrument (Thermo Fisher). Amplification of the 16 ng of cDNA was done in triplicate with TaqMan Universal PCR Master Mix (Thermo Fisher) for ADSL and GAPDH.
 
-## Plasmid cloning and generation of stable cell line
+### Plasmid cloning and generation of stable cell line
 
 The siRNA-resistant mutant, ADSL*, was produced by introducing five different silent mutations using the QuikChange mutagenesis kit (Thermo Fisher) with the following primers: forward, 5′-GGTTTGCCAGGAGGCGTAGGTCTTTGCAAATTGTGTGCACTGATGCCCCCA-3′; reverse, 5′-CCAAACGGTCCTCCGCATCCAGAAACGTTTAACACACGTGACT ACGGGGGT-3′. Constructs were checked by sequencing (Macrogen), and expression was checked by Western blot and immunofluorescence into the pLenti-CMV-eGFP-BLAST (659-1) plasmid, a gift from Eric Campeau and Paul Kaufman (Addgene plasmid #17445; http://n2t.net/addgene:17445; RRID:Addgene_17445) (Campeau et al., 2009) using the primers containing XhoI and EcoRI overhangs (ADSL-XhoI forward 5′-AAAACTCGAGCGATGGCGGCTGGAGGCGATCAT-3′ and ADSL-EcoRI reverse 5′-TTTTGAATTCCAGACATAATTCTGCTTCA-3′). The siRNA-resistant mutant was produced by introducing five different silent mutations using the QuikChange mutagenesis kit (Thermo Fisher) with the following primers: forward, 5′-GGTTTGCCAGGAGGCGTAGGTCTTTGCAAATTGTGTGCACTGATGCCCCCA-3′; reverse, 5′-CCAAACGGTCCTCCGCATCCAGAAACGTTTAACACACGTGACT ACGGGGGT-3′. Constructs were checked by sequencing (Macrogen), and expression was checked by Western blot and immunofluorescence. For lentivirus preparation: 6 × 106 AD293 cells were plated in 15 cm culture dishes and transfected with 20 μg pLenti-CMV-EGFP empty and pLenti-CMV-ADSL*-EGFP, 2  μg pRSV-REV, a gift from Didier Trono (Addgene plasmid # 12253; http://n2t.net/addgene:12253; RRID:Addgene_12253), 6  μg pMDLg/pRRE, a gift from Didier Trono (Addgene plasmid # 12251; http://n2t.net/addgene:12251; RRID:Addgene_12251), and 2  μg pCMV-VSV-G, a gift from Bob Weinberg (Addgene plasmid # 8454; http://n2t.net/addgene:8454; RRID:Addgene_8454), plasmids with 160  μl PEI pH 7.0 (Polyscience Euro), and 150  mM NaCl (Dull et al., 1998; Stewart et al., 2003). After 48 hr, the medium containing the viruses was cleared with a 0.45 mm filter (Millipore) and added to the target cells. Three days after the infection, cells were selected with blasticidin (Invitrogen) for 7 days.
 
-## Immunofluorescence (human cells)
+### Immunofluorescence (human cells)
 
 Silenced RPE-1 cells were seeded on 18 mm round coverslips after 96 hr of silencing and fixed accordingly with the antibody requirements, with 4% paraformaldehyde (PFA) for 10 or 30 min, followed by permeabilization in 0.1% Triton-PBS for 5 min and stored in 100% EtOH. For RPA2 and γH2AX detection, pre-extraction was performed using cold 0.2% Triton X-100 in 1× PBS on ice for 5 min, before fixation and permeabilization as described before. Cells were incubated with the blocking solution of 3% bovine serum albumin (MilliporeSigma) in PBT for 30 min. Primary antibodies (listed below) were diluted in the same blocking solution and incubated for 1 hr at room temperature (RT). After three washes, cells were incubated with Alexa Fluor-conjugated 594 and 488 secondary antibodies (Thermo Fisher Scientific) at 1:400 dilution for 1 hr at RT. DAPI was used to visualize the DNA. Slides were imaged using Orca AG camera (Hamamatsu) on a Leica DMI6000B microscope equipped with 1.4 100× oil immersion objective. AF6000 software (Leica) was used for image acquisition. Image processing and quantification was performed with ImageJ software. Intensities were measured in images acquired with the same exposure settings and subtracting the background for each image.
 
-## Cell proliferation and cell death
+### Cell proliferation and cell death
 
 150,000 RPE-1 cells were plated in six-well plates and silenced with control or siADSL oligos (MilliporeSigma or Dharmacon) for 72 hr, when they were counted and plated again in the same amount for the second round of silencing. After 3 days, cells were counted as second timepoint (144 hr, 6 days) and seeded for a third timepoint (9 days). Cells were cultured in the presence of serum for all the experiments. The ΔPDL (difference in population doubling levels) was obtained by using the formula: log(N1/N0)/log2, where N1 is the number of cells at the timepoint we collected them and N0 is the initial number of cells plated (Pantoja and Serrano, 1999). For detecting cell death, cells in suspension were collected in the growth medium and the attached ones were trypsinized and resuspended in complete medium to block trypsin activity. Cells were then mixed in 0.4% Trypan Blue solution (Gibco). The number of blue-positive cells and total cell number was quantified at the microscope.
 
-## Cell cycle profile
+### Cell cycle profile
 
 10 * 106 cells were collected after 96 hr of siRNA depletion, as previously described, and fixed in cold 100% EtOH dropwise and stored at –20°C for 24 hr. Cells were stained with propidium iodide (MilliporeSigma) in PBS and RNase, and 10,000 cells were analyzed at the Parc Cientific de Barcelona flow cytometry facility using a Gallios (Beckman Coulter) instrument. The data were collected and analyzed using FlowJo v10.7.2.
 
-## Cell extracts and Western blotting
+### Cell extracts and Western blotting
 
 RPE-1 cells were seeded in a six-well plate, and after 96 hr of silencing they were trypsinized, washed once in PBS, and resuspended in a 2× SDS lysis buffer (2× SDS lysis buffer contained 4% SDS, 20% glycerol, 120 mM Tris/HCl pH 6.8, 1X protease [Roche], and phosphatase inhibitors [MilliporeSigma]). Protein concentration was quantified using the DC Protein Assay (Bio-Rad), and proteins separated by SDS-PAGE and transferred to 0.2 μm nitrocellulose membrane (Amersham Protran) or 0.45 μm PVDF membrane (MilliporeSigma) depending on the molecular weight. Membranes were blocked in 5% milk in PBT (PBS containing 0.2% Tween-20) for 30 min and then incubated with primary antibodies for 1 hr at RT. After three washes in PBS containing Tween-20 0.02%, membranes were incubated with secondary antibodies conjugated to HRP and protein bands were visualized by ECL-Plus (MilliporeSigma).
 
-## Senescence-associated (SA) β-galactosidase assay
+### Senescence-associated (SA) β-galactosidase assay
 
 RPE-1 were silenced for 96 hr with siControl and siADSL#2, then fixed in ice-cold X-gal fixative solution (containing 4% formaldehyde, 0.5% glutaraldehyde, 0.1 M sodium phosphate buffer pH 7.2) for 4 min. After two washes in PBS, X-gal (Roche) was diluted 1:100 at a final concentration of 1 mg/ml in X-gal solution (containing 5 mM K3Fe(CN)6, 5 mM K4Fe(CN)6, 2 mM MgCl2 in PBS). Incubation was performed at 37°C for 8 hr in the dark. Two washes in PBS were performed before taking the images. Doxorubicin was used as a positive control.
 
-## Targeted liquid chromatography-mass spectrometry (LC-MS) analyses
+### Targeted liquid chromatography-mass spectrometry (LC-MS) analyses
 
 For Figure 1C and Figure 1—figure supplement 2A, metabolites were extracted from snap-frozen cell pellets by adding 300 μl ACN:MeOH:H2O (5:4:1, v:v:v) solution and vortexing samples for 30 s. Samples were immersed in liquid N2 to disrupt cell membranes followed by 30 s of ultrasonication. These two steps were repeated three times. Then, samples were incubated at −20°C for 1 hr, centrifuged at 15,200 rpm for 10 min at 4°C, and the supernatant was collected into an LC-MS vial.
 
@@ -176,58 +1054,58 @@ The reverse-phase column Prontosil 120-3C18 AQ 150 × 3 mm (Bischoff Chromatogra
 
 The chromatographic conditions were the same as in the HPLC-HRMSn analysis mentioned above. Detection was performed on an Orbitrap Elite operating in positive ionization mode with the same setting as above. The detection method was divided into four time segments. Full scan analysis within the mass range m/z 70–1000 was performed in the first (0.0–3.0 min) and fourth (12.0–17.0 min) segments. The selected ion monitoring (SIM) method was applied in the second segment (3.0–7.0 min) for the analysis of ribosides (m/z 177–417) and in the third segment (7.0–12.0 min) for the analysis of ribotides (m/z 257–497) to enhance the sensitivity towards these metabolites (except for the measurement of SAdo, which had m/z ranges 379–389). The resolution was set to 60,000 FWHM. The mass error was below 3 ppm. All cell lines were measured in hexaplicate, and the intensity values are presented as averages. The identities of the accumulated compounds in both cell lysates and media were confirmed by MS2 fragmentation analysis. Fragmentation spectra were produced via CID with the fragmentation energy set to 30 units of normalized collision energy.
 
-## Statistical analysis (cells)
+### Statistical analysis (cells)
 
 In vitro data were analyzed with an unpaired two-sided t-test when two samples were compared, while one-way ANOVA was used to compare more than two samples in the same graph (GraphPad Prism 6.0, GraphPad Software Inc). Values of p<0.05 were considered statistically significant (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Two or more independent experiments were performed for each condition, and this is indicated in individual figure legends. Statistical analysis for percentages of positive cells: counts of cells belonging to the positive and negative condition were used to fit a generalized linear model with binomial distribution. The R [1] packages ‘lme4’ (Jaeken and Van den Berghe, 1984) and ‘multcomp’ (Jurecka et al., 2015) were used to fit the model and compute raw and adjusted p-values with the ‘Shaffer’ method.
 
-## Cloning (fish)
+### Cloning (fish)
 
 To generate a template for the generation of an antisense in situ probe, a 921 bp fragment of the Danio rerio adsl open-reading frame was cloned into pCRII via TOPO TA cloning (Invitrogen). To have a template for the generation of capped mRNA using the AmpliCap SP6 High Yield Message Maker Kit (Cellscript), the whole open-reading frame of zebrafish adsl was cloned with an N-terminal Flag-tag into pCS2+ using EcoRI and XhoI.
 
-## Immunofluorescence (fish)
+### Immunofluorescence (fish)
 
 Zebrafish embryos were fixed with 4% buffered PFA at the indicated stages. Antibody staining was performed as described (Jaffe et al., 2010) using the primary antibodies previously described (see also section ‘Antibodies’) and detected with Alexa Fluor-labeled secondary antibodies (1:1000, Molecular Probes).
 
-## Statistical analysis (fish)
+### Statistical analysis (fish)
 
 The number of fertilized eggs per clutch determined the size of experimental groups with clutches having been randomly and equally divided into treatment groups. No additional statistical methods have been applied to predetermine sample size. All zebrafish experiments were done at least three times with eggs from different mating tanks or different mating days. Embryo numbers are given in the legends. All statistical analyses were performed with GraphPad Prism 7 and 8, respectively. Data were tested for normality and analyzed accordingly by parametric or nonparametric tests. Graphs display, if not indicated otherwise, individual datapoints and medians in case of nonparametric datasets. An α level of <0.5 was considered significant.
 
-## Zebrafish maintenance and manipulation
+### Zebrafish maintenance and manipulation
 
 Zebrafish were maintained in a 14 hr light and 10 hr dark cycle in a standardized, water recycling housing system (Tecniplast) with automatic monitoring and adjustments of pH, conductivity, and temperature. Fertilized eggs were generated by natural matings of the wild-type strains EK or AB. Eggs were incubated at 28.5°C and allowed to develop until the desired stages. In order to achieve Adsl knockdown, a translation blocking antisense MO (Adsl ATG MO) (5′-TCCCTCCATGCCTGCAGCGGTTAAA) was used or a MO that targets the exon-intron boundary at exon 4 of Adsl (Adsl SplMO) (5′-CCAACTGTGGGAGAGAGCGACTGTA). A standard control MO was also used in all experiments. MOs (GeneTools Inc) were injected at the 1–2-cell stage directly into the yolk. In addition, noninjected wild-type embryos served as internal control for clutch quality. For pharmacological manipulation, zebrafish embryos were immersed in embryo water containing 1% DMSO or 1% DMSO and 100 µM MTX (Cayman Chemical) from 10 until 24 hr post fertilization (hpf) or 50 µM nucleosides. All zebrafish maintenance and procedures have been approved by the Veterinary Care Unit at Ulm University and University of Tübingen, respectively, and the animal welfare commissioner of the regional board for scientific animal experiments in Tübingen, Germany. Zebrafish experiments were performed according to the European Union Directive 86/609/EEC for the protection of animals used for experimental and other scientific purposes.
 
-## In situ hybridization (fish)
+### In situ hybridization (fish)
 
 Zebrafish were fixed overnight at 4°C at the indicated stages using 4% buffered PFA, dehydrated with a gradual methanol series, and stored at –20°C until further use. For in situ hybridization (ISH), embryos were rehydrated in a methanol series containing PBST (PBS containing 0.1% Tween-20) and processed according to standard protocols (Thisse and Thisse, 2014). Genes of interest were detected using DIG-labeled in situ probes, which were in vitro transcribed from linearized plasmids carrying fragments of the gene of interest: adsl (GenBank no.199899.2), angiopoietin-like 3 (angptl3, GenBank no. AF379604). The probes against cardiac myosin light chain 2 (cmcl2) and spaw have been described before (Burkhalter et al., 2013).
 
-## Analysis of cartilage formation
+### Analysis of cartilage formation
 
 4 days post fertilization (dpf), old zebrafish embryos were fixed for 2 hr at RT using 4% buffered PFA. After rinsing with PBS, embryos were washed for 10 min with 50% EtOH in PBS before the staining solution (0.02% Alcian Blue [MilliporeSigma], 70% EtOH, 50 mM MgCl2) was added, and the embryos were incubated overnight at RT. On the next day, embryos were rinsed with H2O and subsequently bleached for 20 min at RT with opened lid of the reaction tube (bleaching solution: 1.5% H2O2 in 1% KOH). A clearing series was performed (30 min 20% glycerol/0.25% KOH, 2 hr 50% glycerol/0.1% KOH). Stained embryos were stored at 4°C in 50% glycerol/0.1% KOH.
 
-## Measurements of cilia and neural progenitors/differentiated cell populations
+### Measurements of cilia and neural progenitors/differentiated cell populations
 
 To count neural progenitors, anterior views of 24 hpf embryos were taken using a fluorescent whole-mount microscope. The number of Sox2-positive cells within the forebrain was determined. To count differentiated neural cells, dorsal views of embryos were captured by fluorescent whole-mount microscopy and the number of ELAVL3/4-positive cells per 100 µm was counted. γH2AX-positive cells were counted over a distance of 300 µm in the neural tube. Cilia were counted and measured after acquiring confocal z-stacks of flat-mounted tails of six somite stage (ss) embryos. The Simple Neurite Tracer in Fiji was used to trace and measure cilia through the whole z-stack. ImageJ was also used to trace and measure the outline of the KVs.
 
-## Microscopy of zebrafish embryos
+### Microscopy of zebrafish embryos
 
 Live zebrafish embryos and those processed by ISH or for cartilage staining were imaged using a M125 whole-mount microscope equipped with a Leica IC80 HD camera. Zebrafish embryos undergoing immunofluorescence stainings were assessed with an M205 FCA and a DFC 9000 GT sCMOS camera. Confocal z-stacks were acquired on a TCS SP5II with LAS AF software (all microscopes and software: Leica).
 
-## Chick embryo in ovo electroporation
+### Chick embryo in ovo electroporation
 
 Eggs from white leghorn chickens were incubated at 37.5°C in an atmosphere of 45% humidity, and the embryos were staged according to HAMBURGER and HAMILTON, 1951. Chick embryos were electroporated with column-purified plasmid DNA (3 μg/μl for shRNAs) in H2O containing Fast Green (0.5 μg/μl). Briefly, plasmid DNA was injected into the lumen of HH12 or HH16 neural tubes, electrodes were placed on either side of the neural tube, and electroporation was carried out by applying five 50 ms square pulses using an Intracel Dual Pulse (TSS10) electroporator set at 25 V. Transfected embryos were allowed to develop to the specific stages and then dissected under a fluorescence dissection microscope.
 
-## DNA constructs
+### DNA constructs
 
 shRNAs were generated using pSHIN plasmid (a GFP expressing evolution of pSUPER): shCONTROL sequence (CCGGTCTCGACGGTCGAGT) and shADSL sequence (GAGCTGGACAGATTAGTGA). The knockdown efficiency of shRNAs was assessed by RT-qPCR in electroporated chicken embryonic fibroblast cultures (Herrera et al., 2014).
 
-## Immunostaining and EdU incorporation in chicken embryos
+### Immunostaining and EdU incorporation in chicken embryos
 
 Embryos were fixed overnight at 4°C in 4% PFA, and immunostaining was performed on vibratome sections (60 μm) following standard procedures. After washing in PBS-0.1% Triton X-100, the sections were incubated overnight with the appropriate primary antibodies diluted in a solution of PBS-0.1% Triton supplemented with 10% bovine serum albumin. After washing in PBS-0.1% Triton, sections were incubated for 2 hr at RT with the appropriate Alexa-conjugated secondary antibodies diluted in a solution of PBS-0.1% Triton supplemented with 10% bovine serum albumin. After staining, the sections were mounted and examined on a Leica SP5 or a Zeiss Lsm 780 multiphoton microscope. For EdU incorporation, 200 μl of EdU solution (1 mM) was added on the vitelline membrane of each embryo 2 hr before fixation in 4% PFA. EdU was detected in sections using the Click-iT EdU imaging kit (Invitrogen).
 
-## Fluorescence-associated cell sorting
+### Fluorescence-associated cell sorting
 
 HH-12 chicken embryos were electroporated with shCONTROL or shADSL plasmids, and 48 hr post electroporation (hpe), a single-cell suspension was obtained by digestion for 10–15 min with Trypsin-EDTA (MilliporeSigma) and labeled with Hoechst and α-ELAVL3/4 antibody used with Alexa 647-conjugaded anti-mouse secondary antibody. Alexa 647, Hoechst, and GFP fluorescence were determined by FACSAria Fusion cytometer (BD Biosciences), and the data were analyzed with FlowJo software (Tree Star) and Multicycle software (Phoenix Flow Systems; cell cycle profile analysis).
 
-## Quantitative fluorescence image analysis
+### Quantitative fluorescence image analysis
 
 Quantification of cleaved caspase-3 immunofluorescence intensity was done using ImageJ software. Tuj1+ and Tuj1- areas on the electroporated side and the respective areas on the non-electroporated side were delimitated by polygonal selection, and the mean intensity of cleaved caspase-3 immunofluorescence was quantified as mean gray values. At least three different images were used to calculate the mean value per embryo. Each mean value was normalized to the mean value obtained for the respective non-electroporated area of the same embryo.

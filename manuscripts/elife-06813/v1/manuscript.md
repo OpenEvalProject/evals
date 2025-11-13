@@ -14,33 +14,89 @@
 
 ## Abstract
 
-10.7554/eLife.06813.001 The deer mouse (genus Peromyscus ) is the most abundant mammal in North America, and it occupies almost every type of terrestrial habitat. It is not surprising therefore that the natural history of Peromyscus is among the best studied of any small mammal. For decades, the deer mouse has contributed to our understanding of population genetics, disease ecology, longevity, endocrinology and behavior. Over a century's worth of detailed descriptive studies of Peromyscus in the wild, coupled with emerging genetic and genomic techniques, have now positioned these mice as model organisms for the study of natural variation and adaptation. Recent work, combining field observations and laboratory experiments, has lead to exciting advances in a number of fields—from evolution and genetics, to physiology and neurobiology. DOI: http://dx.doi.org/10.7554/eLife.06813.001
+The deer mouse (genus Peromyscus) is the most abundant mammal in North America, and it occupies almost every type of terrestrial habitat. It is not surprising therefore that the natural history of Peromyscus is among the best studied of any small mammal. For decades, the deer mouse has contributed to our understanding of population genetics, disease ecology, longevity, endocrinology and behavior. Over a century's worth of detailed descriptive studies of Peromyscus in the wild, coupled with emerging genetic and genomic techniques, have now positioned these mice as model organisms for the study of natural variation and adaptation. Recent work, combining field observations and laboratory experiments, has lead to exciting advances in a number of fields—from evolution and genetics, to physiology and neurobiology.
 
 ## Introduction
 
 Peromyscus is a genus of small North American rodents known colloquially as deer mice (Emmons, 1840). When the first Peromyscus specimens were shipped to European systematicists in the late 18th century, their resemblance to the local wood mouse prompted the designation Mus sylvaticus (Hooper, 1968). At the time, little was known of the diversity of rodents worldwide and most were assigned the generic term Mus (Linnaeus, 1758). The name Peromyscus (Gloger, 1841) was first employed, albeit narrowly, in the middle of the 19th century. Quadrupeds of North America (Audubon and Bachman, 1854) recognized only three species now known to belong to Peromyscus, and Mammals of North America (Baird, 1859) included a mere 12. But by the turn of the 20th century, Peromyscus included 143 forms, 42 of which represented monotypic or good biological species (Osgood, 1909). The genus saw several additional revisions throughout the 20th century as North American mammalogy matured and natural history collections expanded. Today 56 species are recognized, the most widespread and diverse being Peromyscus maniculatus (Musser and Carleton, 2005).
 
-Thus, although not immediately appreciated,
+Thus, although not immediately appreciated, Peromyscus includes more species than any other North American mammalian genus and, apart from Mus and Rattus, more is known concerning its biology in the laboratory than any other group of small mammals (Figure 1; King, 1968; Kirkland and Layne, 1989). Several disciplines including ecology, evolution, physiology, reproductive biology and behavioral neuroscience have all employed Peromyscus, inspiring its label as ‘the Drosophila of North American mammalogy’ (Dewey and Dawson, 2001). Arguably, the emergence of Peromyscus as a model system was propelled by our cumulative knowledge of its fascinating and varied natural history.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06813/elife-06813-fig1-v1.jpg)
 
-**Figure 1.:** Peromyscus belong to the Cricetidae family, which includes voles (Microtus), hamsters (Mesocricetus), and New World rats and mice. Old World rats and mice belong to the Muridae family, which include the familiar laboratory rat (Rattus norvegicus) and mouse (Mus musculus). Muridae and Cricetidae diverged roughly 25 million years ago. Schematic based on based on phylogeny data from Steppan et al. (2004). Image credit, Nicole Bedford and Hopi Hoekstra.DOI: http://dx.doi.org/10.7554/eLife.06813.002
+**Figure 1.:** Peromyscus belong to the Cricetidae family, which includes voles (Microtus), hamsters (Mesocricetus), and New World rats and mice. Old World rats and mice belong to the Muridae family, which include the familiar laboratory rat (Rattus norvegicus) and mouse (Mus musculus). Muridae and Cricetidae diverged roughly 25 million years ago. Schematic based on based on phylogeny data from Steppan et al. (2004). Image credit, Nicole Bedford and Hopi Hoekstra.
 
 ## Distribution and habitat
 
 ‘Within the range of one species (maniculatus) it is probable that a line, or several lines, could be drawn from Labrador to Alaska and thence to southern Mexico throughout which not a single square mile is not inhabited by some form of this species’ (Osgood, 1909).
 
-Wilfred H Osgood asserted that some form of
+Wilfred H Osgood asserted that some form of Peromyscus had been trapped in nearly every patch of North America ever visited by a mammal collector. Members of the genus are distributed from the southern edge of the Canadian Arctic to the Colombian border of Panama (Figure 2). Various demographic and biogeographic factors (e.g., Pleistocene glacial and pluvial cycles, population expansions, mountain range elevations and sea-level changes) have influenced the diversity and distribution of deer mice (Sullivan et al., 1997; Riddle et al., 2000; Dragoo et al., 2006; Kalkvik et al., 2012; López-González et al., 2014). The result is a mosaic of widespread and restricted species ranges shaped by both dispersal and vicariance events. Our knowledge of the distributions, home ranges and habitat preferences of deer mice comes primarily from the trapping data and field notes of early natural historians (e.g., Sumner, 1917; Dice, 1931; Blair, 1940, 1951). Osgood's influential 1909 taxonomic revision was built on examinations of more than 27,000 specimens from diverse locales that were collected primarily by the US Biological Survey. Today, more than 120,000 Peromyscus specimens are accessioned in Natural History museums across North America and the United Kingdom (Table 1). These invaluable collections document more than a century of dynamic relationships between deer mice and their environment. For example, by comparing past and present-day collecting locales, shifts in the distributions of deer mice have been linked to climate change (Moritz et al., 2008; Yang et al., 2011; Rowe et al., 2014), and morphological analyses of these museum specimens reveal how deer mice respond to changing environments (Grieco and Rizk, 2010).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06813/elife-06813-fig2-v1.jpg)
 
-**Figure 2.:** Peromyscus species currently maintained as outbred laboratory stocks (based on data from Hall, 1981).Some ranges are narrow and others are extensive, with many overlapping to a large extent. Simplified tree indicating phylogenetic relationships among taxa is shown; branch lengths are arbitrary (based on data from Bradley et al., 2007). The most widespread and ecologically diverse group is also the best represented in the laboratory: six P. maniculatus subspecies are maintained in laboratories across the United States. Collecting localities of colony founders are indicated by numbered squares (see also Table 2). Image credit, Nicole Bedford and Hopi Hoekstra.DOI: http://dx.doi.org/10.7554/eLife.06813.003
+**Figure 2.:** Some ranges are narrow and others are extensive, with many overlapping to a large extent. Simplified tree indicating phylogenetic relationships among taxa is shown; branch lengths are arbitrary (based on data from Bradley et al., 2007). The most widespread and ecologically diverse group is also the best represented in the laboratory: six P. maniculatus subspecies are maintained in laboratories across the United States. Collecting localities of colony founders are indicated by numbered squares (see also Table 2). Image credit, Nicole Bedford and Hopi Hoekstra.
 
-Although not strictly commensal, deer mice (particularly in New England) do enter human households and partake of their larders. According to legend, Walt Disney drew inspiration for Mickey Mouse from the ‘tame field mice’ (most likely
+**Table 1.**
+ Museums with the largest collections of Peromyscus specimens
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection</th>
+      <th>Location</th>
+      <th>No. specimens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Smithsonian National Museum of Natural History</td>
+      <td>Washington, DC</td>
+      <td>38,406</td>
+    </tr>
+    <tr>
+      <td>Museum of Vertebrate Zoology</td>
+      <td>Berkeley, CA</td>
+      <td>34,131</td>
+    </tr>
+    <tr>
+      <td>American Museum of Natural History</td>
+      <td>New York, NY</td>
+      <td>19,234</td>
+    </tr>
+    <tr>
+      <td>Field Museum</td>
+      <td>Chicago, IL</td>
+      <td>8939</td>
+    </tr>
+    <tr>
+      <td>Museum of Comparative Zoology</td>
+      <td>Cambridge, MA</td>
+      <td>7754</td>
+    </tr>
+    <tr>
+      <td>Canadian Museum of Nature</td>
+      <td>Ottawa, ON</td>
+      <td>6315</td>
+    </tr>
+    <tr>
+      <td>Academy of Natural Science</td>
+      <td>Philadelphia, PA</td>
+      <td>2425</td>
+    </tr>
+    <tr>
+      <td>Natural History Museum</td>
+      <td>London, UK</td>
+      <td>2238</td>
+    </tr>
+  </tbody>
+</table>
+
+Although not strictly commensal, deer mice (particularly in New England) do enter human households and partake of their larders. According to legend, Walt Disney drew inspiration for Mickey Mouse from the ‘tame field mice’ (most likely Peromyscus leucopus) that would wander into his old Kansas City animation studio (Updike, 1991). Nevertheless, Peromyscus are most commonly trapped in woodlands and brushlands and are also found in tropical and temperate rainforests, grasslands, savannas, swamps, deserts and alpine habitats (Figure 3; Baker, 1968). Local adaptation to these various environments has been the subject of much recent inquiry (e.g., Linnen et al., 2013; Natarajan et al., 2013; MacManes and Eisen, 2014), and the detailed cataloguing of phenotypic diversity by early naturalists inspired much of this work. However, we still require a more complete understanding of ecological diversity across the entire genus, as well as an enlightened view of phylogenetic relationships informed by whole-genome sequences (see Box 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06813/elife-06813-fig3-v1.jpg)
 
-**Figure 3.:** Peromyscus varies considerably both within and among species.(A) The forest-dwelling deer mouse, P. maniculatus nubiterrae, perches high on a tree branch in Southwestern Pennsylvania. (B) The beach mouse, P. polionotus phasma, takes shelter among the dune grasses on Florida's Atlantic coast. (C) Its mainland counterpart, the oldfield mouse, P. polionotus sumneri, is typically found in fallow fields and is sympatric with the cotton mouse, P. gossypinus (D), which occupies adjacent stands of long leaf pine. Image credits: A, Evan P Kingsley; B, JB Miller; C, D, Nicole Bedford.DOI: http://dx.doi.org/10.7554/eLife.06813.005
+**Figure 3.:** (A) The forest-dwelling deer mouse, P. maniculatus nubiterrae, perches high on a tree branch in Southwestern Pennsylvania. (B) The beach mouse, P. polionotus phasma, takes shelter among the dune grasses on Florida's Atlantic coast. (C) Its mainland counterpart, the oldfield mouse, P. polionotus sumneri, is typically found in fallow fields and is sympatric with the cotton mouse, P. gossypinus (D), which occupies adjacent stands of long leaf pine. Image credits: A, Evan P Kingsley; B, JB Miller; C, D, Nicole Bedford.
 
 ## Adaptation to mountains, cities and deserts
 
@@ -76,21 +132,134 @@ Rosenfeld (2015) argues that parental and social behaviors are particularly vuln
 
 ## Home building
 
-Behavioral genetics studies have historically been restricted to a handful of genetic model organisms that display behaviors of unclear ecological relevance (Fitzpatrick et al., 2005). Sufficient resources are now available—from a medium-density genetic linkage map (Kenney-Hunt et al., 2014) to draft genome sequences (Baylor College of Medicine, Peromyscus Genome Project)—that we can attribute natural variation in Peromyscus behavior to specific genetic variants. For instance, P. maniculatus and P. polionotus display considerable differences in stereotyped burrowing behavior. P. maniculatus digs short, simple burrows in contrast to the long, complex burrows constructed by P. polionotus that consist of an entrance tunnel, nest chamber and escape tunnel (Dawson et al., 1988; Weber et al., 2013). Remarkably, mice raised in the laboratory for several generations recapitulate the species-specific burrow architectures observed in nature (Video 1). Furthermore, the complex burrows of P. polionotus are derived (Weber and Hoekstra, 2009) and likely evolved through changes at only a handful of genetic loci, each affecting distinct behavioral modules (i.e., entrance tunnel length and escape tunnel presence; Weber et al., 2013). Next steps include isolating genetic variants, understanding their effects on the neural circuitry underlying burrowing behavior and quantifying the adaptive value of burrowing in the wild.10.7554/eLife.06813.007Video 1.Innate burrowing behavior in Peromyscus can be directly observed in a laboratory setting. Here, P. polionotus is busy constructing the long entrance tunnel of its complex burrow. Video credit, Nicole Bedford and Hopi Hoekstra.DOI: http://dx.doi.org/10.7554/eLife.06813.007
+Behavioral genetics studies have historically been restricted to a handful of genetic model organisms that display behaviors of unclear ecological relevance (Fitzpatrick et al., 2005). Sufficient resources are now available—from a medium-density genetic linkage map (Kenney-Hunt et al., 2014) to draft genome sequences (Baylor College of Medicine, Peromyscus Genome Project)—that we can attribute natural variation in Peromyscus behavior to specific genetic variants. For instance, P. maniculatus and P. polionotus display considerable differences in stereotyped burrowing behavior. P. maniculatus digs short, simple burrows in contrast to the long, complex burrows constructed by P. polionotus that consist of an entrance tunnel, nest chamber and escape tunnel (Dawson et al., 1988; Weber et al., 2013). Remarkably, mice raised in the laboratory for several generations recapitulate the species-specific burrow architectures observed in nature (Video 1). Furthermore, the complex burrows of P. polionotus are derived (Weber and Hoekstra, 2009) and likely evolved through changes at only a handful of genetic loci, each affecting distinct behavioral modules (i.e., entrance tunnel length and escape tunnel presence; Weber et al., 2013). Next steps include isolating genetic variants, understanding their effects on the neural circuitry underlying burrowing behavior and quantifying the adaptive value of burrowing in the wild.
+
+![Video 1.](https://cdn.elifesciences.org/articles/06813/elife-06813-media1.mov.jpg)
 
 ## Pigmentation
 
-Among the several cases of adaptive phenotypic variation in
+Among the several cases of adaptive phenotypic variation in Peromyscus, perhaps the most obvious is coat coloration. Recent advances have identified not only the genes, but also the specific mutations, leading to local variation in coat color. Beach mice (P. polionotus leucocephalus) living on the coastal sand dunes and barrier islands of Florida are considerably paler than their inland counterparts (P. p. subgriseus) that inhabit dark, loamy soils (Figure 4; Howell, 1920; Sumner, 1929). For beach mice on Florida's Gulf Coast, light coloration is due, in part, to a fixed single nucleotide polymorphism (SNP) in the melanocortin-1 receptor (Mc1r) coding region (Hoekstra et al., 2006). However, this Mc1r allele does not contribute to light pelage in Florida's Atlantic coast mice, suggesting that the two populations converged on light coloration independently (Steiner et al., 2007).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06813/elife-06813-fig4-v1.jpg)
 
-**Figure 4.:** P. polionotus leucocephalus (top row left) and the darker mainland mouse P. p. polionotus (top row right) result in first-generation F1 hybrids, all with intermediate coloration (second row).Intercrosses between F1 hybrids produce a variable F2 generation, showing a continuous distribution of pigmentation phenotypes ranging from light to dark (third and fourth rows; Steiner et al., 2007). This segregation pattern—initially described by Francis Sumner—is among the earliest empirical evidence that several discrete loci may collectively contribute to a quantitative trait (Dobzhansky, 1937; see also Box 1). Image credit, Nicole Bedford and Hopi Hoekstra.DOI: http://dx.doi.org/10.7554/eLife.06813.008
+**Figure 4.:** Intercrosses between F1 hybrids produce a variable F2 generation, showing a continuous distribution of pigmentation phenotypes ranging from light to dark (third and fourth rows; Steiner et al., 2007). This segregation pattern—initially described by Francis Sumner—is among the earliest empirical evidence that several discrete loci may collectively contribute to a quantitative trait (Dobzhansky, 1937; see also Box 1). Image credit, Nicole Bedford and Hopi Hoekstra.
 
 Similarly, background matching in P. maniculatus of the Nebraska Sand Hills affords a strong selective advantage against avian predators (Linnen et al., 2013). Yet, cryptic coloration is a complex phenotype composed of multiple component traits (i.e., tail stripe, dorsal-ventral boundary, ventral color, dorsal brightness and hue). Linnen and colleagues (2013) identified multiple distinct mutations within the Agouti locus, each associated with a different color trait that independently affected fitness. Thus, parallel studies of Peromyscus pigmentation nicely illustrate the marriage between classical natural history studies and modern molecular techniques, thereby providing new insights into the molecular basis of adaptation.
 
 ## Peromyscus in the laboratory
 
-Francis Sumner, considered the grandfather of Peromyscus biology (see Box 2), first demonstrated the feasibility of the deer mouse as a laboratory organism in the 1910s and 20s. He famously built the first Peromyscus ‘mouse house’ in what is now referred to as Sumner Canyon at the Scripps Institution in La Jolla, California. When his Peromyscus work at Scripps was discontinued, Sumner bequeathed his stocks to Lee R Dice at the University of Michigan who honed the methods for generating and maintaining Peromyscus colonies in the 1930s and 40s. During this time, Dice began to catalogue single factor genetic mutations in his stocks (e.g., gray, dilute, epilepsy). These mice served as the founding strains for the Peromyscus Genetic Stock Center (PGSC) established in 1985 by Wallace Dawson at the University of South Carolina, which currently maintains wild-derived stocks of six species, as well as 13 coat-color mutants and four additional mutants on P. maniculatus genetic backgrounds. Additional wild-derived stocks are kept in individual laboratories (Table 2) and still more mutants have been cryopreserved. The PGSC also maintains an extensive online reference library (http://stkctr.biol.sc.edu) with more than 3000 citations.10.7554/eLife.06813.009Table 2.Current laboratory colonies of PeromyscusDOI: http://dx.doi.org/10.7554/eLife.06813.009SpeciesYearSource populationLocation1P. californicus insignis1979–1987Santa Monica Mts., CAPGSC2P. eremicus sp.1993Tucson, AZPGSC3P. polionotus subgriseus1952Ocala National Forest, FLPGSC4aP. maniculatus bairdii1946–1948Ann Arbor, MIPGSC4bP. m. sonoriensis1995White Mtn. Research Station, CAPGSC4cP. m. rufinus1998Manzano Mtn., NMUNM4dP. m. nubiterrae2010Powder Mill Nature Reserve, PAHU4eP. m. rufinus2014Mt. Evans, COUIUC4fP. m. nebrascensis2014Lincoln, NEUIUC5P. leucopus sp.1982–1985Linville, NCPGSC6P. gossypinus gossypinus2009Jackson County, FLHU7P. melanophrys xenerus1970–1978Zacatecas, MexicoUIUC8P. aztecus hylocetes1986Sierra Chincua, MexicoUIUCThe year and population from which the founders were collected are noted. Numbers refer to collecting localities shown in Figure 2. PGSC: Peromyscus Genetic Stock Center; UNM: University of New Mexico; HU: Harvard University; UIUC: University of Illinois at Urbana-Champaign.
+Francis Sumner, considered the grandfather of Peromyscus biology (see Box 2), first demonstrated the feasibility of the deer mouse as a laboratory organism in the 1910s and 20s. He famously built the first Peromyscus ‘mouse house’ in what is now referred to as Sumner Canyon at the Scripps Institution in La Jolla, California. When his Peromyscus work at Scripps was discontinued, Sumner bequeathed his stocks to Lee R Dice at the University of Michigan who honed the methods for generating and maintaining Peromyscus colonies in the 1930s and 40s. During this time, Dice began to catalogue single factor genetic mutations in his stocks (e.g., gray, dilute, epilepsy). These mice served as the founding strains for the Peromyscus Genetic Stock Center (PGSC) established in 1985 by Wallace Dawson at the University of South Carolina, which currently maintains wild-derived stocks of six species, as well as 13 coat-color mutants and four additional mutants on P. maniculatus genetic backgrounds. Additional wild-derived stocks are kept in individual laboratories (Table 2) and still more mutants have been cryopreserved. The PGSC also maintains an extensive online reference library (http://stkctr.biol.sc.edu) with more than 3000 citations.
+
+**Table 2.**
+ Current laboratory colonies of Peromyscus
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Species</th>
+      <th>Year</th>
+      <th>Source population</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>P. californicus insignis</td>
+      <td>1979–1987</td>
+      <td>Santa Monica Mts., CA</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>P. eremicus sp.</td>
+      <td>1993</td>
+      <td>Tucson, AZ</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>P. polionotus subgriseus</td>
+      <td>1952</td>
+      <td>Ocala National Forest, FL</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>4a</td>
+      <td>P. maniculatus bairdii</td>
+      <td>1946–1948</td>
+      <td>Ann Arbor, MI</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>4b</td>
+      <td>P. m. sonoriensis</td>
+      <td>1995</td>
+      <td>White Mtn. Research Station, CA</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>4c</td>
+      <td>P. m. rufinus</td>
+      <td>1998</td>
+      <td>Manzano Mtn., NM</td>
+      <td>UNM</td>
+    </tr>
+    <tr>
+      <td>4d</td>
+      <td>P. m. nubiterrae</td>
+      <td>2010</td>
+      <td>Powder Mill Nature Reserve, PA</td>
+      <td>HU</td>
+    </tr>
+    <tr>
+      <td>4e</td>
+      <td>P. m. rufinus</td>
+      <td>2014</td>
+      <td>Mt. Evans, CO</td>
+      <td>UIUC</td>
+    </tr>
+    <tr>
+      <td>4f</td>
+      <td>P. m. nebrascensis</td>
+      <td>2014</td>
+      <td>Lincoln, NE</td>
+      <td>UIUC</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>P. leucopus sp.</td>
+      <td>1982–1985</td>
+      <td>Linville, NC</td>
+      <td>PGSC</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>P. gossypinus gossypinus</td>
+      <td>2009</td>
+      <td>Jackson County, FL</td>
+      <td>HU</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>P. melanophrys xenerus</td>
+      <td>1970–1978</td>
+      <td>Zacatecas, Mexico</td>
+      <td>UIUC</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>P. aztecus hylocetes</td>
+      <td>1986</td>
+      <td>Sierra Chincua, Mexico</td>
+      <td>UIUC</td>
+    </tr>
+  </tbody>
+</table>
+
+_The year and population from which the founders were collected are noted. Numbers refer to collecting localities shown in Figure 2. PGSC: Peromyscus Genetic Stock Center; UNM: University of New Mexico; HU: Harvard University; UIUC: University of Illinois at Urbana-Champaign._
 
 While the genetic causes and phenotypic consequences differ among strains, Peromyscus colonies are invariably susceptible to inbreeding depression, which necessitates their maintenance as relatively outbred stocks (Lacy et al., 1996; Joyner et al., 1998). Thus, although the deer mouse is amenable to laboratory life, its biology has not been purposely altered by generations of inbreeding or artificial selection. Life history traits and even behaviors such as burrow construction or ultrasonic vocalization are generally preserved in laboratory strains (Dawson et al., 1988; Millar, 1989; Kalcounis-Rueppell et al., 2010). Thus, the traits we scrutinize in the laboratory (e.g., aerobic performance, photoperiodism, mating and parental behavior) are arguably faithful representations of phenotypes in nature. The ability to study genetically diverse, wild-derived mice under controlled laboratory conditions has opened up several constructive research programs centered on understanding the phenotypic consequences of natural genetic variation.
 

@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/027m9bs27 Cancer Biomarker Centre, Cancer Research UK Manchester Institute, The University of Manchester Macclesfield United Kingdom
+1. Cancer Biomarker Centre, Cancer Research UK Manchester Institute, The University of Manchester Macclesfield United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
 2. Cancer Research UK Lung Cancer Centre of Excellence Alderley Park United Kingdom
-3. https://ror.org/027m9bs27 Translational Lung Cancer Biology Laboratory, Cancer Research UK Manchester Institute, University of Manchester Macclesfield United Kingdom
-4. https://ror.org/03nd63441 Department of Histopathology, The Christie Hospital Manchester United Kingdom
-5. https://ror.org/05qwgg493 Boston University School of Medicine Boston United States
+3. Translational Lung Cancer Biology Laboratory, Cancer Research UK Manchester Institute, University of Manchester Macclesfield United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+4. Department of Histopathology, The Christie Hospital Manchester United Kingdom ([ROR:03nd63441](https://ror.org/03nd63441))
+5. Boston University School of Medicine Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
 
 † Corresponding author
 
 ## Abstract
 
-Lung squamous cell carcinoma (LUSC) is a type of lung cancer with a dismal prognosis that lacks adequate therapies and actionable targets. This disease is characterized by a sequence of low- and high-grade preinvasive stages with increasing probability of malignant progression. Increasing our knowledge about the biology of these premalignant lesions (PMLs) is necessary to design new methods of early detection and prevention, and to identify the molecular processes that are key for malignant progression. To facilitate this research, we have designed XTABLE (E x ploring T r a nscriptomes of B ronchial L esions), an open-source application that integrates the most extensive transcriptomic databases of PMLs published so far. With this tool, users can stratify samples using multiple parameters and interrogate PML biology in multiple manners, such as two- and multiple-group comparisons, interrogation of genes of interests, and transcriptional signatures. Using XTABLE, we have carried out a comparative study of the potential role of chromosomal instability scores as biomarkers of PML progression and mapped the onset of the most relevant LUSC pathways to the sequence of LUSC developmental stages. XTABLE will critically facilitate new research for the identification of early detection biomarkers and acquire a better understanding of the LUSC precancerous stages.
+Lung squamous cell carcinoma (LUSC) is a type of lung cancer with a dismal prognosis that lacks adequate therapies and actionable targets. This disease is characterized by a sequence of low- and high-grade preinvasive stages with increasing probability of malignant progression. Increasing our knowledge about the biology of these premalignant lesions (PMLs) is necessary to design new methods of early detection and prevention, and to identify the molecular processes that are key for malignant progression. To facilitate this research, we have designed XTABLE (Exploring Transcriptomes of Bronchial Lesions), an open-source application that integrates the most extensive transcriptomic databases of PMLs published so far. With this tool, users can stratify samples using multiple parameters and interrogate PML biology in multiple manners, such as two- and multiple-group comparisons, interrogation of genes of interests, and transcriptional signatures. Using XTABLE, we have carried out a comparative study of the potential role of chromosomal instability scores as biomarkers of PML progression and mapped the onset of the most relevant LUSC pathways to the sequence of LUSC developmental stages. XTABLE will critically facilitate new research for the identification of early detection biomarkers and acquire a better understanding of the LUSC precancerous stages.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ LUSC progresses through a series of premalignant stages characterized by alterat
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig1-v2.jpg)
 
-**Figure 1.:** xploring Transcriptomes of Bronchial Lesions).PMLs are typically classified as normal epithelium (including hyperplasia), low-grade and high-grade. Two studies (Mascaux et al., 2019, and Beane et al., 2019) carried out gene expression analysis of multiple developmental stages, whereas Merrick et al., 2018, and Teixeira et al., 2019, focused on dysplasias (blue boxes) and carcinomas in situ (CIS) (pink boxes), respectively. The most relevant findings of each article are summarized in the figure. Error bars=50 µm.
+**Figure 1.:** PMLs are typically classified as normal epithelium (including hyperplasia), low-grade and high-grade. Two studies (Mascaux et al., 2019, and Beane et al., 2019) carried out gene expression analysis of multiple developmental stages, whereas Merrick et al., 2018, and Teixeira et al., 2019, focused on dysplasias (blue boxes) and carcinomas in situ (CIS) (pink boxes), respectively. The most relevant findings of each article are summarized in the figure. Error bars=50 µm.
 
 The detection of PMLs cannot be carried out by routine patient imaging techniques such as CT or PET scans as the morphological change that they cause in the airway does not result in radiological contrast. Alternatively, ablation of high-grade PMLs detected by autofluorescence bronchoscopy using minimally invasive endoscopic procedures in high-risk populations is an innovative and interesting strategy to prevent LUSC (Guibert et al., 2016). Nonetheless autofluorescence bronchoscopy is an expensive and complex technique of limited use in large screening programmes. Therefore, simpler, more cost effective, and scalable methods of high-grade PML detection are needed to prevent deaths by LUSC. Improving the detection of PMLs requires a better understanding of their biology and the validation of adequate biomarkers of progressive lesions that can be translated into new technologies for large screening initiatives. Cell surface proteins, metabolites, nasal-based biomarkers, blood and sputum/bronchoalveolar lavage biomarkers are examples of biomarkers that can be used to improve and/or complement current diagnostic techniques (such as CT and PET scans) or develop new ones. A user-friendly application to interrogate gene expression from studies focusing on precancerous LUSC stages will enhance the advances in PML biology. However, such application does not exist.
 
@@ -45,67 +45,139 @@ Transparent and straightforward accessibility to transcriptomic databases is a k
 
 ## Results
 
-## Description of the studies included in XTABLE
+### Description of the studies included in XTABLE
 
 Four datasets originating from four independent PML transcriptomic studies have been included in the XTABLE application (Figure 1, Table 1). Two datasets, GSE109743 (Beane et al., 2019) and GSE33479 (Mascaux et al., 2019), provide gene expression data of the developmental LUSC stages (with and without progression status information, respectively), whereas the remaining studies, GSE114489 (Merrick et al., 2018) and GSE108124 (Teixeira et al., 2019), focus on analysing specific PML stages (dysplasias and CIS, respectively) that have been followed up to establish their progressive, persistent, or regressive potential.
+
+**Table 1.**
+ Description of the four cohorts included in XTABLE (Exploring Transcriptomes of Bronchial Lesions).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GEO accession</th>
+      <th>PMID</th>
+      <th>Stages</th>
+      <th>Progression status known</th>
+      <th>Number of samples</th>
+      <th>Sample type</th>
+      <th>Transcriptome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSE33479</td>
+      <td>31243362</td>
+      <td>Multiple</td>
+      <td>No</td>
+      <td>122</td>
+      <td>Whole biopsies</td>
+      <td>Microarray</td>
+    </tr>
+    <tr>
+      <td>GSE109743</td>
+      <td>31015447</td>
+      <td>Multiple*</td>
+      <td>Yes</td>
+      <td>448Discovery cohort (197 Bx, 91 Br)Validation cohort (111Bx, 49 Br)</td>
+      <td>Whole biopsies and brushings</td>
+      <td>RNAseq</td>
+    </tr>
+    <tr>
+      <td>GSE114489</td>
+      <td>29997230</td>
+      <td>Dysplasias normal</td>
+      <td>Yes</td>
+      <td>63</td>
+      <td>Whole biopsies</td>
+      <td>Microarray</td>
+    </tr>
+    <tr>
+      <td>GSE108124</td>
+      <td>30664780</td>
+      <td>CIS</td>
+      <td>Yes</td>
+      <td>33</td>
+      <td>Microdissected</td>
+      <td>Microarray</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bx: biopsies; Br: brushings.*This cohort includes neither carcinomas in situ (CIS) nor invasive carcinomas._
 
 Dataset GSE33479 (Mascaux et al., 2019) comprises expression microarray analyses of 122 endobronchial biopsies of unknown progression status. Samples were obtained following autofluorescence bronchoscopy and as no enrichment or microdissection of the biopsy epithelium was carried out, variable levels of stromal component are present in samples. Although this results in dilution of epithelial signals, it has the advantage of providing information about the microenvironment as well as insights into the infiltrated immune cells. Dataset GSE109743 (Beane et al., 2019) consists of a transcriptomic analysis of whole PML biopsies with no purification of the epithelial compartment as well as bronchial brushings obtained from adjacent normal regions of the bronchial mucosa. Unlike GSE33479, GSE109743 used RNAseq and more importantly, includes the progression status for some lesions established by serial biopsies. Samples were classified as ‘normal-stable’ when they changed between normal, hyperplasia, and metaplasia, ‘regressive’ when they regress from dysplasia to a less severe dysplastic grade, or from dysplasia to normal/hyperplasia/metaplasia. Remaining samples were considered persistent/progressive. One advantage of this dataset is the large number of samples divided into a discovery and a validation cohort (Figure 1, Table 1). However, the representation of each PML stage is not homogeneous and CIS samples are not included.
 
 Datasets GSE114489 (Merrick et al., 2018) and GSE108124 (Teixeira et al., 2019) constitute a different type of study. Both make use of sequential biopsies to classify lesions according to their progression potential, but they differ in the stages included, the classification of progression status and sample processing. In GSE114489, the authors collected 63 baseline bronchial biopsies (with corresponding follow-up biopsies) and classified samples in four groups: 23 persistent dysplasias (dysplastic lesions with the same or higher severity scores in follow-up biopsies), 15 regressive dysplasias (dysplasias progressing to lower severity scores), 9 progressive non-dysplasias (biopsies with normal or hyperplastic morphologies that progress to more severe morphologies), and 16 stable non-dysplasias (normal or hyperplastic pathology that remains stable in follow-up biopsies). Microarray analysis of gene expression was performed on whole biopsies. The study published by Teixeira et al., 2019 (GSE108124) also makes use of follow-up biopsies to classify the progression potential of PMLs, but unlike GSE114489, GSE108124 focuses on CIS and progression is defined as the transition to invasive carcinomas in follow-up biopsies. RNA for gene expression microarray analysis was extracted from microdissected FFPE samples to enrich the epithelial component.
 
-## XTABLE access, interface, and functions
+### XTABLE access, interface, and functions
 
 XTABLE download can be carried out from https://gitlab.com/cruk-mi/xtable (copy archived at Roberts, 2022) following the instructions in the Materials and methods section and Video 1. XTABLE has been designed using the shiny app interface (see Materials and methods section) and its functions have been divided into 11 interrelated tabs that contain a specific function to interrogate each dataset separately (Figure 2A).
 
-## Introduction
+![Video 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-video1.mp4.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-v2.jpg)
+
+**Figure 2.:** (A) Organization of all the functions in the XTABLE interface. The functions are interrelated and completing certain analyses requires the use of several functions. For instance, the GSEA and PA functions operate with gene lists obtained with the DEG function. (B) Workflow to obtain differentially expressed genes between two groups using the DEG function. The example shows groups of samples arranged by developmental stage to compare low-grade and high-grade premalignant lesions (PMLs) in the GSE33479 cohort. (C and D) Workflow to obtain differentially expressed genes between two groups using the DEG function. The two groups have been arranged by progression status using in the GSE114489 and GSE108124 cohorts, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The example shows CIN70 scores in GSE109743 cohort. The CIN signature can be changed in the ‘Pick signature’ option and the sample classification used in the x-axis can be selected with the ‘Plot x-axis’ option.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp3-v2.jpg)
+
+#### Introduction
 
 Detailed description of the four studies, analyses performed in each tab, output formats, links to the four articles used in the application, bioinformatic packages used in the different functions and additional references.
 
-## Dataset tab
+##### Dataset tab
 
 Explanation of the differences in methodology and progression status definitions between the four studies.
 
-## Load tab
+### Load tab
 
 In this tab, the user selects the database (GSE114489, GSE108124, GSE109743, or GSE33479) for subsequent interrogation. Due to specific differences between the four studies, only one dataset can be interrogated at a time. Since dataset GSE109743 contains a discovery and a validation cohort, as well as biopsies and brushings, preselection of the cohort and type of sample has to be carried out (Figure 2—figure supplement 1).
 
-## CIN-score tab
+### CIN-score tab
 
 CIN has been identified as a good predictor of PML progression. Except for Teixeira et al., 2019, the other three studies do not provide genomic analyses that provide an estimate of the level of chromosomal alterations in the samples. Several gene expression signatures that correlate with CIN (CIN-scores) have been described in the literature (Teixeira et al., 2019; Carter et al., 2006). This CIN-score function returns a list of several CIN-scores (CIN70, CIN25, and CIN5, depending on the number of genes included in the signature) for all samples included in the study and a graph depicting CIN-scores in different sample types classified according to the sample classification defined in the study. A line marking a selected CIN-score threshold can be added for visualization purpose and to help determine appropriate thresholds for additional CIN-related analyses (Figure 2—figure supplement 2).
 
-## DEG tab
+### DEG tab
 
 Function to identify differentially expressed genes in comparisons of two groups of samples determined by the user. This function allows the selection of p-value and fold-change cutoffs for the analysis. Additionally, AUC is calculated for each gene to provide further confidence to the differentially expressed gene results and additional gene IDs are added at this stage that have been sourced from two separate datasets to maximize identification and discrepancies manually reviewed to improve downstream enrichment and pathway analyses.
 
-## GSEA and PA
+### GSEA and PA
 
 In these two tabs, the user can carry out gene set and pathway enrichment analyses using multiple tools (goseq/ideal, fgsea/MSigDB, enrichR, gage/gageData, kegga/pathview, ReactomePA, Progeny, and Dorothea). This function operates with the list of differentially expressed genes obtained with the DEG function.
 
-## Signature
+### Signature
 
 This function returns the gene expression values of a user-defined gene list. Lists can be manually entered or uploaded from a .csv file.
 
-## Deconvolution
+### Deconvolution
 
 Estimation of immune and stromal component in samples from gene expression data using the ESTIMATE tool.
 
-## ROC
+### ROC
 
 This function returns receiver operating characteristic (ROC) curves in a user-defined comparison of two groups of samples stratified by the expression of a gene or by CIN-scores.
 
-## Heatmap
+### Heatmap
 
 Returns a gene expression heatmap for genes selected by variance, user-defined gene signatures, and differentially expressed genes in the DEG tab.
 
-## PCA
+### PCA
 
 Principal component analysis (PCA) of all the samples included in each study. Several sample characteristics can be highlighted in the PCA plot including CIN signatures, progression status, and PML stage.
 
-## Gene
+### Gene
 
 Statistical analysis of expression of individual genes selected by the user. Several options for sample groupings are available.
 
-## Two-group differential expression analysis
+### Two-group differential expression analysis
 
 The discovery of candidate biomarkers for the detection of PMLs at high risk of malignant progression and the interrogation of PML biology depends greatly on the comparison of gene expression profiles between lesions with known progressive or regressive potential. The four databases included in XTABLE contain different types of information which influence how users can interrogate these databases. To facilitate the interrogation of the four transcriptomic databases in a manner that allows the versatile stratification of samples, we have designed a module in XTABLE named DEG (Figure 2B–D), that returns the differentially expressed genes in two user-defined groups of samples stratified by PML stage (GSE33479 and GSE109743), by known progression status (GSE109743, GSE114489, and GSE108124) or by CIN-score thresholds. In XTABLE, we have included three CIN-scores, named CIN70, CIN25 (Carter et al., 2006), and CIN5 (Teixeira et al., 2019). CIN70 and CIN25 have been reported in the literature, with the former containing the greatest number of genes for interrogation. CIN5 is derived from the signature used by Teixeira et al., 2019, and is reported to show a good correlation with progression in CIS lesions.
 
@@ -117,7 +189,13 @@ Setting contrast groups by stage using DEG allows the comparison of two individu
 
 The list of differentially expressed genes obtained in the DEG tab can be automatically used in the GSEA and PA tabs to carry out gene set enrichment and pathway analyses. The GSEA tab allows the user to select the gene set enrichment tool (goseq, fgsea/MSigDB, enrichR, and gage), p-value cutoff, and the gene sets to analyse (Figure 4A). For instance, using the goseq function enables us to select one of the three Gene Ontology domains (biological process, cellular compartment, and molecular function) to consider for analysis (Figure 4A). Similarly, with the fgsea/MSigDB tool, the user can select the gene set of interest (Figure 4B). The PA tab operates in a similar manner using four pathway analysis tools (kegga/pathview, ReactomePA, Progeny, and Dorothea) (Figure 4—figure supplement 1).
 
-## Gene-centred analysis and user-defined transcriptional signatures
+![Figure 4.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig4-v2.jpg)
+
+**Figure 4.:** (A) Gene set enrichment analysis using the goseq tool of a list of differentially expressed genes obtained in the DEG tab. One of the three main Gene Ontologies (GO) can be selected for analysis at a time. After selection of a p-value, XTABLE (Exploring Transcriptomes of Bronchial Lesions) returns a downloadable list of GO with associated statistics. (B) Gene set enrichment analysis using the fgsea/MSigDB tool. This tool allows the selection of any collection included in MSigDB and returns a list of signatures with associated statistics. The example shows the selection of the C3_TFT_GTRD collection (Transcription Factor Targets annotated in the Gene Transcription Regulation Database).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig4-figsupp1-v2.jpg)
+
+### Gene-centred analysis and user-defined transcriptional signatures
 
 Users can investigate their own gene or group of genes of interest in the application. To facilitate this type of gene-centred analyses, we have included the Genes and Signature functions in XTABLE.
 
@@ -125,19 +203,53 @@ In the Genes tab, the user can analyse the expression of one gene of interest. T
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig5-v2.jpg)
 
-**Figure 5.:** xploring Transcriptomes of Bronchial Lesions) functions to implement analyses on individual genes (Gene tab) and user defined gene signatures (Signature tab).(A) The ‘Expr’ function (under the Gene tab) retrieves the normalized expression values for a gene of interest in all samples. (B) The ‘Indiv_Contrast’ tool compares the expression of a gene of interest in groups of samples with a predetermined group. In the example, the function compares the expression of MYC in all stages with the normal normofluorescent group in GSE33479. (C) The ‘Mult_Contrast’ tool enables the grouping of samples in up to four groups (contrasts) and statistical comparison with a reference group determined by the user. The example shows the analysis of MYC expression in four groups of samples from the GSE33479 cohort (normal, low-grade, high-grade, and invasive carcinomas). The ‘normal’ group is set as reference group for statistical analysis. (D) Example of the use of the Heatmap tab to interrogate to visualize the expression of gene sets in premalignant lesions (PMLs). Gene sets can be defined by the user (as in the example) and are shown using the stage classification and entered manually or from a .csv file. Alternatively, the heatmap can be generated from a list of differentially expressed genes from the DEG tab or a selected number of genes filtered by variance. The three options can be selected in the scroll-down menu. In the example shown, the heatmap shows all microarray probes associated to each gene symbol. p-Values calculated using Welch’s t-test.
+**Figure 5.:** (A) The ‘Expr’ function (under the Gene tab) retrieves the normalized expression values for a gene of interest in all samples. (B) The ‘Indiv_Contrast’ tool compares the expression of a gene of interest in groups of samples with a predetermined group. In the example, the function compares the expression of MYC in all stages with the normal normofluorescent group in GSE33479. (C) The ‘Mult_Contrast’ tool enables the grouping of samples in up to four groups (contrasts) and statistical comparison with a reference group determined by the user. The example shows the analysis of MYC expression in four groups of samples from the GSE33479 cohort (normal, low-grade, high-grade, and invasive carcinomas). The ‘normal’ group is set as reference group for statistical analysis. (D) Example of the use of the Heatmap tab to interrogate to visualize the expression of gene sets in premalignant lesions (PMLs). Gene sets can be defined by the user (as in the example) and are shown using the stage classification and entered manually or from a .csv file. Alternatively, the heatmap can be generated from a list of differentially expressed genes from the DEG tab or a selected number of genes filtered by variance. The three options can be selected in the scroll-down menu. In the example shown, the heatmap shows all microarray probes associated to each gene symbol. p-Values calculated using Welch’s t-test.
 
 To facilitate the interrogation of biological processes driving PML progression, XTABLE also allows the interrogation of transcriptomic signatures using multiple functions. The Signature tab returns a list of normalized expression values and a graph with the signature scores (sum of log-normalized expression values) for a gene set determined by the user in all samples of the selected study.
 
 The Heatmap tab returns a heatmap that displays the expression values in all samples in a selected study. The gene set shown in the heatmap can be selected using three options from the scroll-down menu. With the ‘Signature’ option, the user can manually enter or upload a list of genes. The example in Figure 5D shows a heatmap generated from the GSE33479 dataset with five transcriptional targets of SOX2, an important LUSC driver. The ‘DEG’ option automatically selects the list of genes differentially expressed in the DEG tab. Finally, the ‘Variance’ option selects genes using a user-defined number of genes with the highest variance.
 
-## Assessment of the correlation between CIN signatures and progression potential
+### Assessment of the correlation between CIN signatures and progression potential
 
 Two studies have highlighted the potential role of CIN as predictor of low-grade (van Boerdonk et al., 2014) and high-grade (Teixeira et al., 2019) PMLs progression in LUSC. XTABLE can be used to explore this correlation in the four cohorts, identify genes and pathways altered by CIN, and involved in driving it. Furthermore, XTABLE enables the user to carry out cross-comparisons between cohorts to identify high-confidence signals. One interesting example of this cross-comparisons is the correlation between CIN-scores and progression in different cohorts using the CIN-score and ROC tabs. Cohort GSE108124 focuses on CIS lesions with known progressive potential. As reported in that study (Teixeira et al., 2019), we found that the CIN5 signature segregates progressive and regressive lesions (AUC = 1) (Figure 6A, Figure 6—figure supplement 1), whereas CIN70 and CIN25 signatures are somewhat poorer predictors of progression (Figure 6—figure supplement 2) (AUC = 0.82 and 0.81, respectively). Apart from the varied performance of different CIN-scores, this difference can also be attributed to the lack of data about some of the genes in the sequencing output. Furthermore, cohort GSE114489, which also contains dysplastic samples with known progression potential, demonstrates that although signatures are elevated in persistent dysplasias, neither CIN5 (AUC = 0.72) (Figure 6B, Figure 6—figure supplement 3) nor CIN70 (AUC = 0.74) and CIN25 (AUC = 0.73) (Figure 6—figure supplement 4) could accurately segregate persistent from regressive samples as efficiently as CIN5 in the GSE108124 cohort. Similarly, CIN-scores did not accurately segregate regressive from persistent/progressive samples by progression status in the discovery cohort of GSE109743 (Figure 6C, Figure 6—figure supplement 5). A similar result was found with the validation cohort of GSE109743 (Figure 6—figure supplement 6). However, in cohorts with multiple stages represented (GSE109743 and GSE33479), there was a clear increase in CIN-scores with increasing PML grade (Figure 6D and E, Figure 6—figure supplement 7), which is consistent with the increased risk of malignant progression in high-grade lesions. In summary, we found that CIN-scores (specifically CIN5) are good predictors of malignant progression in CIS (GSE108124). In GSE114489, we observed an increase in the CIN5 score in persistent dysplasias but the discrimination between persistent and regressive dysplasias was poorer. In GSE109743, we did not observe significant differences between progressive/persistent PMLs and regressive lesions. This different performance of CIN-scores in different cohorts can be attributed to multiple factors both technical and biological. The most important differences are the differing definitions of progression status, and that GSE108124 focuses on CIS lesions, a high-grade precursor of invasive LUSC, whereas the other cohorts focus on earlier lesions (GSE114489) or combinations of different stages (GSE109743). Additionally, microarray analysis was carried out with RNA extracted from microdissected PMLs in cohort GSE108124 providing an enriched epithelial signal.
 
-## Mapping the evolution of the most relevant pathways involved in LUSC using XTABLE
+![Figure 6.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-v2.jpg)
+
+**Figure 6.:** (A) CIN5 score in regressive (Re) and progressive (Pr) carcinomas in situ (CIS) lesions from cohort GSE108124. (B) CIN5 scores in stable non-dysplasias (StND), progressive non-dysplasias (PrND), regressive dysplasias (ReD), and persistent dysplasias (PerD) from cohort GSE114489. (C) CIN5 scores in Re, normal-stable (NSt), and progressive/persistent (Pr/Per) premalignant lesions (PMLs) from cohort GSE109743. (D and E) Evolution of CIN-scores in lung squamous cell carcinoma (LUSC) developmental stages for cohorts GSE109743 and GSE33479. N: normal; NN: normal normofluorescent; NH: normal hypofluorescent; Hy: hyperplasia; Me:metaplasia; MD: mild dysplasia; MoD: moderate dysplasia; SeD: severe dysplasia; CIS: carcinoma in situ; IC: invasive carcinoma. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Sample size: regressive n=16, progressive n=17. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Sample size: StND n=16, PrND n=9, ReD n=15, PerD=23. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp5-v2.jpg)
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Sample size: Regressive n=18, Normal Stable n=35, Progressive/Persistent n=20. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** Sample size: N n=23, Hy n=31, MD n=13, MoD n=20, SeD n=4. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
+
+### Mapping the evolution of the most relevant pathways involved in LUSC using XTABLE
 
 Inactivation of the tumour suppressor genes TP53 and CDKN2A (Figure 7A) are the most frequent somatic events in LUSC (Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012). Other somatic alterations in driver genes are found at a lower frequency but often target the same pathways in different ways (Figure 7A; Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012). The squamous differentiation, PI3K/Akt, and oxidative stress response are the most frequently targeted pathways in LUSC (The Cancer Genome Atlas Research Network, 2012). The most frequent alteration targeting the squamous differentiation pathway is SOX2 amplification, although inactivations of NOTCH proteins have also been proposed to target this pathway as they are mutually exclusive with SOX2 amplification. A similar pattern of mutually exclusive somatic alterations targeting the same pathway has also been observed in the PI3K/Akt and oxidative stress response pathways (Figure 7A; The Cancer Genome Atlas Research Network, 2012). The role of these pathways in the transition between the LUSC developmental stages has not been addressed to date. The main reason for this is the paucity of genomic characterizations of PMLs and the lack of preclinical models of PMLs. Using XTABLE (Signature tab) to interrogate published transcriptional signatures correlated with these pathways can shed information about the stages at which they become active, and therefore what their potential role is in LUSC progression. To map changes in the activation of these three pathways to LUSC developmental stages, we use pre-designed transcriptional signatures from the MSigDB collections (Subramanian et al., 2005; Liberzon et al., 2011; Liberzon et al., 2015). Namely, the SOX2_BENPORATH (squamous differentiation) (Ben-Porath et al., 2008), HALLMARK_PI3K_AKT_MTOR_PATHWAY (PI3k/AKT pathway), and WP_NRF2_PATHWAY (oxidative stress response) signatures (Figure 7B, C and D, respectively). When GSE33479 was interrogated, the signature scores of the three pathways increased significantly in either moderate or severe dysplasias when compared with normal normofluorescent mucosa. No significant increases were detected in mild dysplasias or earlier lesions. Similar results were observed with the GSE109743 cohort except for the WP_NRF2_PATHWAY (Figure 7—figure supplement 1). In this pathway, an increase of the signature was detected only in mild dysplasias compared with normal samples, and no significant changes were detected in any other PMLs stages.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig7-v2.jpg)
+
+**Figure 7.:** (A) Diagram showing the most important pathways involved in LUSC and the genes involved in such pathways that are found genetically altered in LUSC tumours. (B) Evolution of the SOX2 (the most frequent driver of the squamous differentiation pathway) transcriptional signature (SOX2_BENPORATH) during LUSC progression (GSE33479 cohort). (C) Evolution of the PI3K/Akt pathway during LUSC progression (HALLMARK_PI3K_AKT_MTOR_SIGNALING). (D) Evolution of the NRF2 (WP_NRF2_PATHWAY) transcriptional signature (correlated with the oxidative stress response) during LUSC progression. (E) Evolution of a transcriptional signature correlated with cyclin-D1 and CDK4 (MOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN) during LUSC progression. CDKN2A alterations in LUSC lead to the inactivation of the p16INK4a, a CDK4 inhibitor. (F) Evolution of the expression of E2F targets (HALLMARK_E2F_TARGETS). Sample size: NN n=13, NH n=14, Hy n=15, Me n=15, MD n=13, MoD n=13, SeD n=12, CIS n=13, IC n=14. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR. *p<0.05, **p<0.01, ***p<0.001, p<0.0001 (Welch’s t-test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Sample size: N n=61, Hy n=61, Me n=60, MD n=34, MoD n=34, SeD n=17. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5× IQR.
 
 We also interrogated the MSigDB collection to investigate the stages wherein the activation of CDK4/cyclin-D1 activity is detected using an associated transcriptional signature. The CDK4/cyclin-D1 axis controls the transition through the G1-phase of the cell cycle and is frequently altered in LUSC by multiple mechanisms such as CDKN2A inactivation (which encodes the p16INK4a tumour suppressor and inhibits the activity of the CDK4/cyclin-D1 complexes and E2F transcriptional activity), and cyclin-D1 amplification. Activation of transcriptional signatures associated with these cell cycle regulators (MOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN and HALLMARK_E2F_TARGETS) can be used to monitor CDK4/cyclin-D1 dysregulation (Molenaar et al., 2008). The CDK4/cyclin-D1 signature showed a significant increase in moderate dysplasias and later stages in cohort GSE33479 (Figure 7E) and in mild dysplasias and later stages in the GSE109743 (Figure 7—figure supplement 1). The increase of E2F signature was already detectable in metaplasias and later stages (Figure 7F) in the GSE33479 cohort, whereas in the GSE109743 cohort the increase in the E2F signature was observed starting in mild dysplasias (Figure 7—figure supplement 1).
 
@@ -167,17 +279,17 @@ Finally, the aim of this article is not to prioritize any of the studies include
 
 ## Materials and methods
 
-## XTABLE download and installation
+### XTABLE download and installation
 
 XTABLE can be downloaded from the GitLab repository (https://gitlab.com/cruk-mi/XTABLE) and it requires the previous installation of RStudio. Copy the commands, paste them on the RStudio console, and run the command (Video 1).
 
-## XTABLE packages and construction
+### XTABLE packages and construction
 
 Bioconductor package GEOquery (2.54.1) was used to retrieve the data and the Bioconductor package Biobase (2.46.0) used to extract the gene expression values for microarray datasets. The Bioconductor package limma (3.42.2) was used to generate differentially expressed gene analysis results. Bioconductor packages AnnotationDbi (1.48.0) and org.Hs.eg.db (3.10.0) were used to retrieve additional gene IDs. Additional gene IDs were retrieved from Ensembl BioMart website (https://www.ensembl.org/biomart/martview/) with Ensembl Genes 104 dataset and Human Genes GRCh38.p13 to generate four mapping files with the following attributes: ‘Gene stable ID’ and ‘AGILENT WholeGenome 4×44k v1 probe’; ‘Gene stable ID’ and ‘Transcript stable ID’; ‘Gene stable ID’ and ‘Gene name’; ‘Gene stable ID’ and ‘NCBI gene (formerly Entrezgene) ID’ for GSE33479. For GSE114489, a file containing the attributes ‘Gene stable ID’ and ‘AFFY HuGene 1 0 st v1 probe’ was downloaded. The Bioconductor package edgeR (3.28.1) was used to calculate CPM values. R package pROC (1.17.0.1) was used to calculate AUC and generate ROC curves. Gene set enrichment analysis and pathway analysis were performed using Bioconductor packages ideal (1.10.0), fgsea (1.14) with MSigDB (https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp) gene set collections (7.1), limma (3.42.2), pathview (1.26.0), enrichR (3.0), gage (2.36.0) with gageData (2.24.0), ReactomePA (1.30), progeny (1.8.0), and dorothea (0.99.0).
 
 Deconvolution analysis was performed for microarray data using estimate (1.0.11) and for RNAseq data using imsig (1.1.3). imsig requires filtering out genes with low variance which was performed with the package matrixStats (0.59.0). R package stats (3.6.0) used to generate PCA data. ggplot2 (3.3.3), pheatmap (1.0.12), RColorBrewer (1.1–2) were used for making plots and ggpubr (0.4.0) was used to perform Welch’s t-test. tidyr (1.1.3), tibble (3.1.2), dplyr (2.0.6), and magrittr (2.0.1) were used for general data processing and formatting. Code was written using RStudio Workbench (1.4.1717.3) using R (4.0.3).
 
-## Transcriptional signatures
+### Transcriptional signatures
 
 To investigate the evolution of LUSC pathways, we downloaded the following gene sets from the Molecular Signatures Database (MSigDB v7.5.1):
 

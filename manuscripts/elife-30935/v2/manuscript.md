@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.30935.001 Kinesin super family protein 2A (KIF2A), an ATP-dependent microtubule (MT) destabilizer, regulates cell migration, axon elongation, and pruning in the developing nervous system. KIF2A mutations have recently been identified in patients with malformed cortical development. However, postnatal KIF2A is continuously expressed in the hippocampus, in which new neurons are generated throughout an individual's life in established neuronal circuits. In this study, we investigated KIF2A function in the postnatal hippocampus by using tamoxifen-inducible Kif2a conditional knockout ( Kif2a -cKO) mice. Despite exhibiting no significant defects in neuronal proliferation or migration, Kif2a -cKO mice showed signs of an epileptic hippocampus. In addition to mossy fiber sprouting, the Kif2a -cKO dentate granule cells (DGCs) showed dendro-axonal conversion , leading to the growth of many aberrant overextended dendrites that eventually developed axonal properties. These results suggested that postnatal KIF2A is a key length regulator of DGC developing neurites and is involved in the establishment of precise postnatal hippocampal wiring.
+Kinesin super family protein 2A (KIF2A), an ATP-dependent microtubule (MT) destabilizer, regulates cell migration, axon elongation, and pruning in the developing nervous system. KIF2A mutations have recently been identified in patients with malformed cortical development. However, postnatal KIF2A is continuously expressed in the hippocampus, in which new neurons are generated throughout an individual's life in established neuronal circuits. In this study, we investigated KIF2A function in the postnatal hippocampus by using tamoxifen-inducible Kif2a conditional knockout (Kif2a-cKO) mice. Despite exhibiting no significant defects in neuronal proliferation or migration, Kif2a-cKO mice showed signs of an epileptic hippocampus. In addition to mossy fiber sprouting, the Kif2a-cKO dentate granule cells (DGCs) showed dendro-axonal conversion, leading to the growth of many aberrant overextended dendrites that eventually developed axonal properties. These results suggested that postnatal KIF2A is a key length regulator of DGC developing neurites and is involved in the establishment of precise postnatal hippocampal wiring.
 
 ## Introduction
 
@@ -32,19 +32,27 @@ In this study, we generated tamoxifen-inducible Kif2a conditional knockout (Kif2
 
 ## Results
 
-## Weight loss, hyperactivity, and severe epilepsy were exhibited by 3w-Kif2a-cKO mice
+### Weight loss, hyperactivity, and severe epilepsy were exhibited by 3w-Kif2a-cKO mice
 
 To determine the role of KIF2A in the postnatal brain, we generated tamoxifen-induced Kif2a conditional knockout mice (Kif2a-cKO, Figure 1A). Before tamoxifen injection, these mice were normal in appearance and did not exhibit any abnormal phenotypes. We injected both wild-type (WT) and Kif2a-cKO siblings with tamoxifen for 7 days during the third postnatal week, after the peak expression of KIF2A in the hippocampus (Figure 1B and C). In addition, by the end of the second postnatal week, cortical neurons have almost finished migration and the injection timing was chosen to minimize the neuronal migratory defects in the developing cortex, which are severe in conventional knockout mice (Homma et al., 2003). As a result, KIF2A expression was lost in the cKO brain within 1 week of tamoxifen injection (Figure 1D). These cKO mice were designated 3w-Kif2a-cKO mice because the tamoxifen injections began at postnatal week 3. As a control for the Kif2a-cKO mice, WT siblings were used in all experiments after confirmation that the phenotypes of all siblings except for tamoxifen-injected Kif2a-cKO mice were not significantly different.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig1-v2.jpg)
 
-**Figure 1.:** Kif2a-cKO mice.(A–D) The generation of Kif2a-cKO mice. (A) Schematic diagram of the conditional Kif2a targeting strategy. The conventional targeting allele is also shown at the bottom. Tamoxifen-induced Cre recombinase deletes the floxed p, p+1, and p+2 exons. (B). Developmental expression of KIF2A in the hippocampus. The expression peaked at P14. (C) The timeline for tamoxifen injection. (D). The loss of KIF2A. KIF2A expression was lost within 1 week after the start of the tamoxifen injection. (E) 3w-Kif2a-cKO mice at P35. The 3w-Kif2a-cKO mice developed smaller bodies than the WT mice. (F) The weight curves of WT and 3w-Kif2a-cKO mice. The cKO mice showed weight loss after the loss of KIF2A (n = 20, results indicate ± SD, *p<0.01; Welch’s t-test). (G) Behavioral test. 3w-Kif2a-cKO mice showed hyperactivity at postnatal week 5 (n = 10, error bar indicates ± SD, *p<0.01; Welch’s t-test). (H) The frequency of epilepsy. The 3w-Kif2a-cKO mice showed epileptic convulsions during a 30-min observation during postnatal week 5 (five mice each from five independent experiments, error bar indicates ± SEM, *p<0.01; Welch’s t-test). (I) Survival rate of 3w-Kif2a-cKO mice (n = 20). These mice began to die starting in postnatal week 5, and all mice died by the end of week 6. Bars: 1 cm in E.10.7554/eLife.30935.004Figure 1—source data 1.Kif2a-cKO mice.
+**Figure 1.:** (A–D) The generation of Kif2a-cKO mice. (A) Schematic diagram of the conditional Kif2a targeting strategy. The conventional targeting allele is also shown at the bottom. Tamoxifen-induced Cre recombinase deletes the floxed p, p+1, and p+2 exons. (B). Developmental expression of KIF2A in the hippocampus. The expression peaked at P14. (C) The timeline for tamoxifen injection. (D). The loss of KIF2A. KIF2A expression was lost within 1 week after the start of the tamoxifen injection. (E) 3w-Kif2a-cKO mice at P35. The 3w-Kif2a-cKO mice developed smaller bodies than the WT mice. (F) The weight curves of WT and 3w-Kif2a-cKO mice. The cKO mice showed weight loss after the loss of KIF2A (n = 20, results indicate ± SD, *p<0.01; Welch’s t-test). (G) Behavioral test. 3w-Kif2a-cKO mice showed hyperactivity at postnatal week 5 (n = 10, error bar indicates ± SD, *p<0.01; Welch’s t-test). (H) The frequency of epilepsy. The 3w-Kif2a-cKO mice showed epileptic convulsions during a 30-min observation during postnatal week 5 (five mice each from five independent experiments, error bar indicates ± SEM, *p<0.01; Welch’s t-test). (I) Survival rate of 3w-Kif2a-cKO mice (n = 20). These mice began to die starting in postnatal week 5, and all mice died by the end of week 6. Bars: 1 cm in E.
 
 During the postnatal week 4, the 3w-Kif2a-cKO mice became smaller than the WT siblings (Figure 1E) and showed weight loss (Figure 1F). They also gradually developed hyperactivity (Figure 1G), twitching, and seizures. An open-field test showed that almost half of the 3w-Kif2a-cKO mice experienced an epileptic seizure within 30 min (Figure 1H). Eventually, all 3w-Kif2a-cKO mice died by postnatal day 42 (P42), the end of the postnatal week 6 (Figure 1I). Among them, some 3w-Kif2a-cKO mice died immediately after experiencing severe epileptic convulsions, which may have been one of the causes of death. The source data of body weight and activity of 3w-Kif2a-cKO mice and all siblings were shown in Figure 1—source data 1.
 
-## The epileptic hippocampus was developed in 3w-Kif2a-cKO mice
+### The epileptic hippocampus was developed in 3w-Kif2a-cKO mice
 
 To determine the focal point of the seizures, we simultaneously recorded electroencephalograms (EEGs) and behavior during postnatal week 5. The electrodes were inserted into the hippocampus and the cortex of WT and 3w-Kif2a-cKO siblings. In the hippocampus, 3w-Kif2a-cKO mice showed aberrant spikes in the EEG (arrowheads in Figure 2A) that coincided with twitching in the resting or locomotive state (Figure 2B and C). Moreover, during the epileptic seizure (Figure 2—video 1), the paroxysmal EEG events were clearly detected in the hippocampus but not in the cortex (Figure 2D). The source data of those EEG was shown in Figure 2—source data 1. These results suggested that the loss of postnatal KIF2A resulted in an epileptic hippocampus in 3w-Kif2a-cKO mice.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Electroencephalography (EEG) recordings. (A) Representative baseline EEG recordings of WT and 3w-Kif2a-cKO hippocampi in postnatal week 6. Some spikes were observed in the cKO brain, even in mice at rest (arrowheads). (B–C) Power spectra obtained from a fast Fourier analysis of baseline EEG recordings. Intervals of 4.5 s (for the cKO, the intervals were separated from a paroxysmal EEG recordings by at least 10 s) were selected for analysis. Three independent experiments involving two mice were performed for each frequency: *p<0.01 (repeated-measures ANOVA). Error bars indicate ± SEMs. (D) Representative paroxysmal EEG recordings of the cKO brain at postnatal week 4. The seizure occurred in the hippocampus. The mouse during the ictal phase of the seizure is shown in Figure 2—video 1. (E–H) Development of hippocampal sclerosis in a cKO brain. (E) Bodian-stained coronal hippocampus sections at postnatal week 6. (F-G) Magnified images within rectangles ‘F’ (CA3) and ‘G’ (dentate gyrus) in (E) Defasciculating fibers (arrowheads in F) and hypertrophic scattered granular cells (arrowheads in G) were observed in the cKO hippocampus. (H) Statistical analysis of the cell size. cKO DGCs are larger than the WT cells. The results are shown as the mean ± SD (7 slices each, n = 259 for WT, n = 233 for cKO). *p<0.01 (Welch’s t-test). (I–K) An electrophysiological study was used to detect recurrent circuits in hippocampal primary cultures. (I–J) Representative electrographs showing data from the WT and cKO hippocampi. The black arrowhead indicates the stimulation time point. The WT slice (I) did not yield a response, and long paroxysmal depolarization shifts (PDSs) were detected in the cKO slice (J). (K) Statistical analysis of PDSs. The results are shown as the mean ± SD, n = 45, for five independent experiments involving 3 PDSs from 3 slices each. Abbreviations: ML, molecular layer; GCL, granule cell layer. Bars: 100 μm in E and 10 μm in F, G.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) The typical features of hippocampal sclerosis in 4w-Kif2a-cKO mice at postnatal week 12. The 4w-Kif2a-cKO mice clearly showed hippocampal atrophy (A), including CA1 loss (B), sprouting MFs in CA3 (C), and hypertrophic granule cells (D). (E–G) Gliosis in 3w-Kif2a-cKO mice. (E–F) Representative images of astroglia stained with an anti-GFAP antibody. More astroglia were distributed in the 3w-Kif2a-cKO mice. (G) Statistical analysis of the GFAP-positive area. The GFAP-positive area of the cKO mice was substantially wider than that of WT mice. The results are shown as the mean ± SD (n = 15, three independent experiments. *p<0.01 (Welch’s t-test)). (H) Schematic of the patch-clamp recordings of DCGs. A stimulating electrode (Stim) and a recording electrode (Rec) were inserted into the hilus and granule cell layer (GCL). Bars: 100 μm in A and 20 μm in B-F.
 
 Supporting evidence for the epileptic hippocampus was provided by three experiments: a histological analysis of the hippocampus of 3w-Kif2a-cKO siblings using Bodian’s silver staining method, an immunohistological analysis of frozen hippocampal sections of 3w-Kif2a-cKO siblings using an anti-glial antibody to detect gliosis, and a physiological analysis of the cultured hippocampal slices from P3-Kif2a-cKO siblings collected on P5. The third experiment required P3-Kif2a-cKO mice because P4-P6 mice should be used for hippocampal slice cultures (Ikegaya, 1999).
 
@@ -54,17 +62,29 @@ In the second analysis, frozen sections were stained with an anti-glial fibrilla
 
 In the third analysis, we attempted to demonstrate the endogenous development of excitatory recurrent circuits in the P3-Kif2a-cKO hippocampus. We dissected the hippocampus at postnatal day 5 (P5), sliced it for culturing, and performed an electrophysiological analysis at 10 days in vitro (DIV10). We then placed a stimulating electrode into the hilus and a detecting electrode into the granule cell layer (GCL) in the dentate gyrus (Figure 2—figure supplement 1H) to record the presence of excitatory signals, which would indicate the development of excitatory recurrent circuits in the P3-Kif2a-cKO slice. As shown in Figure 2J, an apparent paroxysmal depolarization shift (PDS) was observed in the P3-Kif2a-cKO slice (Figure 2K, Figure 2—source data 2) but not in the WT hippocampus (Figure 2I), suggesting that the P3-Kif2a-cKO hippocampal slices had endogenously developed excitatory recurrent circuits without application of any excitatory drugs, such as picrotoxin. Together, the results suggested that recurrent excitatory circuits are endogenously induced by the loss of KIF2A without extrinsic excitation.
 
-## Defects in cell proliferation and cell migration were not significant in the 3w-Kif2a-cKO hippocampus
+### Defects in cell proliferation and cell migration were not significant in the 3w-Kif2a-cKO hippocampus
 
 To demonstrate how the loss of postnatal KIF2A contributes to the development of an epileptic hippocampus, we first analyzed neurogenesis and cell migration in the dentate gyrus because abnormally generated or migrated DGCs often affect epileptogenesis, seizure frequency, and seizure severity (Korn et al., 2016; Hester and Danzer, 2013; Koyama et al., 2012; Houser, 1990). Two types of thymidine analogs, 5-chloro-2’-deoxyuridine (CldU) and 5-iodo-2’-deoxyuridine (IdU), were injected for 7 days before and after tamoxifen injection to detect the newly synthesized DNA of replicating cells before and after the loss of KIF2A (Figure 3A). The brains of injected mice were fixed at P35, and sliced sections were stained with anti-CldU and anti-IdU antibodies. Importantly, the numbers of CldU- and IdU-positive cells were not significantly different between WT and 3w-Kif2a-cKO slices (Figure 3B, Figure 3—source data 1). Then, the vertical distance from the baseline of the GCL (white broken lines in Figure 3C–3F) to the dU-positive cells was calculated. When cells migrated into the GCL or hilus (white and blue arrowheads in Figure 3E and F, respectively), the distance was given a plus (+) or minus (-) value, respectively. Migration histograms show that CldU-positive cells migrated farther than IdU-positive cells, but the difference in the cellular distribution between the WT and 3w-Kif2a-cKO mice was not significant (Figure 3H, compared with 3G, see also Figure 3I, Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig3-v2.jpg)
 
-**Figure 3.:** Kif2a-cKO hippocampus.(A) The injection scheme of thymidine analogs and tamoxifen. CldU and IdU were injected during postnatal weeks 2 and 3, respectively. The mice were fixed and double-stained with anti-CldU and anti-IdU antibodies. (B) The number of proliferated cells before and after KIF2A loss. The results are the means ± SD. (n = 15, three independent experiments. Student’ t-test, CldU p=0.61, IdU p=0.52). (C–F) Representative images of the immunostained dentate gyrus. E and F are magnified images of C and D. The broken white line indicates the bottom line of the GCL. Note that, in both WT (C and E) and cKO (D and F) mice, CldU-positive cells migrated slightly more than IdU-positive cells, and some aberrant cells migrated backward (blue arrowheads in the hilus) or ectopically (white arrowheads in the OML) from the bottom lines. (G–H) Representative graphs of the cell migration ratio. Zero represents the starting line for migrating cells at the bottom of the GCL. The distribution of CldU-positive cells and IdU-positive cells are shown in blue bars and red bars, respectively. (I) Statistical analysis of the cell migration ratio. The results are the means ± SEM. The average migration distance of CldU-positive cells (CldU(+)) and IdU-positive cells (IdU(+)) is not significantly different between WT (G) and cKO (H) cells. CldU (WT; n = 210, cKO; n = 235), and IdU (WT; n = 394, cKO; n = 364), three independent experiments. Welch’ t-test, (CldU;p=0.82, IdU;p=0.89). Abbreviations: IML, inner molecular layer; OML, outer molecular layer; GCL, granule cell layer; SGZ, sub granular zone. Bars: 20 μm in D and F.10.7554/eLife.30935.012Figure 3—source data 1.Kif2a-cKO DGCs at P35.
+**Figure 3.:** (A) The injection scheme of thymidine analogs and tamoxifen. CldU and IdU were injected during postnatal weeks 2 and 3, respectively. The mice were fixed and double-stained with anti-CldU and anti-IdU antibodies. (B) The number of proliferated cells before and after KIF2A loss. The results are the means ± SD. (n = 15, three independent experiments. Student’ t-test, CldU p=0.61, IdU p=0.52). (C–F) Representative images of the immunostained dentate gyrus. E and F are magnified images of C and D. The broken white line indicates the bottom line of the GCL. Note that, in both WT (C and E) and cKO (D and F) mice, CldU-positive cells migrated slightly more than IdU-positive cells, and some aberrant cells migrated backward (blue arrowheads in the hilus) or ectopically (white arrowheads in the OML) from the bottom lines. (G–H) Representative graphs of the cell migration ratio. Zero represents the starting line for migrating cells at the bottom of the GCL. The distribution of CldU-positive cells and IdU-positive cells are shown in blue bars and red bars, respectively. (I) Statistical analysis of the cell migration ratio. The results are the means ± SEM. The average migration distance of CldU-positive cells (CldU(+)) and IdU-positive cells (IdU(+)) is not significantly different between WT (G) and cKO (H) cells. CldU (WT; n = 210, cKO; n = 235), and IdU (WT; n = 394, cKO; n = 364), three independent experiments. Welch’ t-test, (CldU;p=0.82, IdU;p=0.89). Abbreviations: IML, inner molecular layer; OML, outer molecular layer; GCL, granule cell layer; SGZ, sub granular zone. Bars: 20 μm in D and F.
 
-## Aberrant axon terminals of DGCs were widespread throughout the entire molecular layer in 3w-Kif2a-cKO mice
+### Aberrant axon terminals of DGCs were widespread throughout the entire molecular layer in 3w-Kif2a-cKO mice
 
 Before further experiments were conducted to elucidate the contribution of KIF2A to the development of an epileptic hippocampus, we analyzed the detailed distribution of KIF2A in the hippocampus by using an anti-KIF2A antibody at P21. As shown in Figure 4A, KIF2A expression was highly localized in the hilus and stratum lucidum of WT mice, where MFs were found (white arrowhead), whereas this effect was absent in 3w-Kif2a-cKO mice (Figure 4B). MFs are the excitatory axons of DGCs (Watson et al., 2012) and create synapses with their targets, which are pyramidal cells in the CA3, mossy cells in the hilus, and basket cells in the dentate gyrus (Amaral and Dent, 1981).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) The expression of postnatal KIF2A in the hippocampus at P21. Note that KIF2A is highly expressed in the dentate hilus (Hil) and stratum lucidum (SL) (A) where DGCs extend their axons, termed MFs. The loss of KIF2A was observed in the cKO hippocampus (B). (C–H) Representative images showing Timm staining of the hippocampus at P35. (E–H) are magnified images indicated by the red rectangles in (C–D). Coronal cryosections in the hippocampus were processed for Timm histochemistry. An abnormally high dark brown density of the reaction product was observed in the SO (yellow arrowheads in F) and the entire dentate ML (a yellow bar in H) in the cKO mice compared to that in the WT mice. (I) Statistical analysis of Timm grain intensities. Intensities in OML and IML were significantly higher in the cKO mice than in the WT mice. The results are shown as the mean ± SEMs (5 slices each, n = 6). *p<0.01; Welch’s t-test. (J) Positive control for the pilocarpine-induced TLE mouse model. Note that Timm reaction products are observed only in the IML (a yellow bar). Broken lines indicate the hippocampal sulcus (G), which forms a boundary between the ML and the SBI. Abbreviations; SL, stratum lucidum; SO, stratum oriens; SBI, subiculum; DGC, dentate granule cells; MF, mossy fiber; IML/OML, inner/outer molecular layer; GCL, granule cell layer. Bars: 400 μm in D and 100 μm in F, H, and J. See the figure supplement as well.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Representative images showing Timm staining of the hippocampus at P35. C and D are magnified images of the areas indicated by the red rectangles in A and B. Coronal cryosections in the hippocampus were processed for Timm histochemistry. Similar to the results for the untreated cKO hippocampus, a large amount of dark brown reaction product was present in the SO (yellow arrowheads in B) and the entire ML (arrowheads in D) in CBZ-injected cKO mice. Broken lines indicate the hippocampal sulcus (C). (E) Statistical analysis of Timm grain intensities. The OML and IML intensities were significantly higher in the CBZ-injected cKO mice than in the WT mice. The results are shown as the mean ± SEMs (5 slices each, n = 8). *p<0.01; Welch’s t-test. Abbreviations; SO, stratum oriens; SBI, subiculum; IML/OML, inner/outer molecular layer; GCL, granule cell layer. Bars: 400 μm in B, 100 μm in D.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Representative images of cryosections immunostained with anti-NFM and anti-MAP2 at P35. Images are 1-μm-thick confocal optical sections (OS). Compared with WT (A), 3w-Kif2a-cKO mice had more NFM-positive axons in the ML (B). (C) Statistical analysis of the NFM staining intensity. The results are shown as the mean ± SEMs (5 slices each, n = 5). *p<0.01; Welch’s t-test. (D–E). Representative images of the ML immunostained with a marker of DGC axons, anti-synaptoporin, at P35. The images are 1-μm-thick confocal OSs. Note the lack of obvious synaptoporin staining in the WT OML (D) but the presence of aberrant synaptoporin staining in the cKO OML (E). (F) Statistical analysis of intensity, as quantified in 2-μm-thick OSs in the ML. The procedures were similar to the procedures used for the Timm grain intensity analysis. All statistical results are shown as the mean ± SEMs for 5 slices each; n = 6, *p<0.01, **p<0.05; Welch t-test. Abbreviations; IML/OML, inner/outer molecular layer; GCL, granule cell layer. Bars: 100 μm in B and E.
 
 In addition, MFs are closely related to TLE as MFS is often observed in the hippocampus of patients and animal models of TLE. Thus, we hypothesized that KIF2A specifically regulates MF elongation and that the loss of KIF2A induces MFS, thus resulting in aberrant excitatory circuits and an epileptic hippocampus. Early reports have also suggested that sprouted MFs contribute to TLE pathogenesis (Kwak et al., 2008).
 
@@ -76,7 +96,7 @@ In WT mice, Zn-positive axons of DGCs were observed in the hilus and stratum luc
 
 Supporting those results, a different axon marker (neurofilament M, NFM), which specifically detects axons but not dendrites of DGCs in the hippocampus (Kron et al., 2010; Parent et al., 1997), and a DGC-axonal synaptic marker (synaptoporin) both exhibited wider distributions in 3w-Kif2a-cKO mice than in WT mice (Figure 4—figure supplement 2B and E compared with Figure 4—figure supplement 2A and D. See also Figure 4—figure supplement 2C and F. Figure 4—figure supplement 2—source datas 1 and 2).
 
-## DGCs showed aberrant morphological changes in axons, cell bodies, and dendritic spines in 3w-Kif2a-cKO mice
+### DGCs showed aberrant morphological changes in axons, cell bodies, and dendritic spines in 3w-Kif2a-cKO mice
 
 To investigate the identity of the aberrant DGC axons in the entire ML, we attempted to visualize the morphology of a single DGC in the hippocampus. To this end, Kif2a-cKO mice were crossed with thy1-YFP transgenic mice (M-line) in which yellow fluorescent protein (YFP) is genetically encoded downstream of the Thy1 promoter (Feng et al., 2000) and selectively expressed in a specific neuronal subset. YFP allowed for full visualization of the hippocampal neurons, including their axons, nerve terminals, dendrites, and dendritic spines. The offspring of the cross, thy1; YFP; Kif2a-cKO mice, were injected with tamoxifen beginning at postnatal week 3, and their tissues were fixed 3 weeks later. We treated 300-μm-thick sliced sections with ScaleView, an optically transparent reagent (Hama et al., 2011), to clarify the structure of granule cells without decreasing their fluorescence signal.
 
@@ -84,15 +104,27 @@ We focused on three morphological queries (Figure 5A). The first was whether the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig5-v2.jpg)
 
-**Figure 5.:** Kif2a-cKO mice.(A) Schematics of unsolved questions in developing DGCs in the Kif2a-cKO dentate granule layer (DGL). In the postnatal hippocampus (left panel), DGCs continuously proliferated in the SGZ, migrated through the GCL, and then incorporated newly developed neurites into the existing hippocampal wiring. In 3w-Kif2a-cKO mice (right panel), the origin of overextended axons (Q1) and the difference in the immature and mature DGC phenotypes (Q2) and dendritic morphology (Q3) needs to be investigated. (B–C) Representative images of GFP-expressing DGCs. Z-stacked images of 300-μm-thick slices were acquired and reconstructed in 3D. In the outer area of the DGL, some mature cKO DGCs (a red asterisk in C) were aberrantly located in the IML, and developed an aberrant apical axon (red arrowheads in C), whereas WT DGCs (a red asterisk in B) extended single axons (white arrows in B) and thick dendrites (white arrowheads in B). In the middle area, some cKO DGCs (a white asterisk in C) developed recurrent axons (white arrowheads in C), whereas WT DGCs (white asterisks in B) did not. In the inner area, some cKO immature DGCs (an orange asterisk in C) developed multiple aberrant protrusions (orange arrowheads in C), whereas WT DGCs only showed a slight development of protrusions. (D–E) Representative images of the dendrites of matured DGCs. Z-stack images of dendrites in the IML and OML were acquired and reconstructed in 3D. Note that the spines of cKO mice appeared thinner (E) than those of the WT mice (D). (F–H) Statistical analysis of inner immature DGCs with apical axons (F) and cells with protrusions (G) and the number of ectopic DGCs (H). Cell bodies were counted in 50-μm-thick OSs (five slices each from five mice; results indicate the mean ± SDs *p<0.01, Welch’s t-test). (I) Statistical analysis of spine density. The total spine densities were higher in both the OML and IML of cKO mice than in those of WT mice. Morphologically, the density of thin spines was especially increased in cKO mice compared to that in WT mice. The results indicate the mean ± SDs, n = 5, *p<0.05, Welch’s t-test. Bars: 20 μm in C, and 1 μm in D and E.10.7554/eLife.30935.021Figure 5—source data 1.Kif2a-cKO dentate gyrus at P35.10.7554/eLife.30935.022Figure 5—source data 2.Kif2a-cKO dentate gyrus at P35.
+**Figure 5.:** (A) Schematics of unsolved questions in developing DGCs in the Kif2a-cKO dentate granule layer (DGL). In the postnatal hippocampus (left panel), DGCs continuously proliferated in the SGZ, migrated through the GCL, and then incorporated newly developed neurites into the existing hippocampal wiring. In 3w-Kif2a-cKO mice (right panel), the origin of overextended axons (Q1) and the difference in the immature and mature DGC phenotypes (Q2) and dendritic morphology (Q3) needs to be investigated. (B–C) Representative images of GFP-expressing DGCs. Z-stacked images of 300-μm-thick slices were acquired and reconstructed in 3D. In the outer area of the DGL, some mature cKO DGCs (a red asterisk in C) were aberrantly located in the IML, and developed an aberrant apical axon (red arrowheads in C), whereas WT DGCs (a red asterisk in B) extended single axons (white arrows in B) and thick dendrites (white arrowheads in B). In the middle area, some cKO DGCs (a white asterisk in C) developed recurrent axons (white arrowheads in C), whereas WT DGCs (white asterisks in B) did not. In the inner area, some cKO immature DGCs (an orange asterisk in C) developed multiple aberrant protrusions (orange arrowheads in C), whereas WT DGCs only showed a slight development of protrusions. (D–E) Representative images of the dendrites of matured DGCs. Z-stack images of dendrites in the IML and OML were acquired and reconstructed in 3D. Note that the spines of cKO mice appeared thinner (E) than those of the WT mice (D). (F–H) Statistical analysis of inner immature DGCs with apical axons (F) and cells with protrusions (G) and the number of ectopic DGCs (H). Cell bodies were counted in 50-μm-thick OSs (five slices each from five mice; results indicate the mean ± SDs *p<0.01, Welch’s t-test). (I) Statistical analysis of spine density. The total spine densities were higher in both the OML and IML of cKO mice than in those of WT mice. Morphologically, the density of thin spines was especially increased in cKO mice compared to that in WT mice. The results indicate the mean ± SDs, n = 5, *p<0.05, Welch’s t-test. Bars: 20 μm in C, and 1 μm in D and E.
 
 As shown in Figure 5B, WT DGCs in both the inner and outer GCL (orange and red asterisks, respectively) projected a single primary axon into the hilus and extended several apical dendrites into the ML (white arrows). However, 3w-Kif2a-cKO mice (Figure 5C), which were more than 10% of outer mature DGCs, extended an aberrant axon recurrently to the ML (similarly to the cell with a white asterisk), and more than 5% of outer mature DGCs extended aberrant axons directly from the cell body (similarly to the cell with a red asterisk) (Figure 5C and F). In contrast, among inner immature DGCs, almost 30% of the cells had some aberrant protrusions on the cell bodies (orange arrowheads of the cell with orange asterisk in Figure 5C and G). Moreover, there were more ectopic DGCs in the 3w-Kif2a-cKO inner ML than in the ML of WT mice (Figure 5H). The source data of those processes were shown in Figure 5—source data 1.
 
 In addition, the spine density of the dendrites of outer mature cells was higher in 3w-Kif2a-cKO mice (Figure 5E) than in WT mice (Figure 5D). Morphologically, the number of thin spines, not mushroom or stubby spines, was specifically higher in both the IML and OML of 3w-Kif2a-cKO dendrites than in those of WT dendrites (Figure 5I, Figure 5—source data 2). The results suggested that the loss of KIF2A results in more unstable or immature spines.
 
-## Cultured Kif2a-cKO DGCs showed dendro-axonal conversion from DIV3
+### Cultured Kif2a-cKO DGCs showed dendro-axonal conversion from DIV3
 
 To analyze how DGCs develop and differentiate their axons and dendrites, we prepared a primary culture of dissociated DGCs from P3-Kif2a-cKO mice at P5, and characterized their processes with axonal markers (Tau1 or NFM) and dendritic markers (MAP2) at different stages. Before this analysis, we confirmed the DGC characteristics of the cultured cells and the loss of KIF2A from the DGCs by immunostaining the cells with anti-Prox1 (a DGC marker) and anti-KIF2A antibodies. More than 80% of cultured cells were Prox1-positive (Figure 6—figure supplement 1A and B), and almost all cells had lost KIF2A expression (Figure 6—figure supplement 1C). At DIV1, both WT and P3-Kif2a-cKO DGCs generated a short Tau1-dominant axon (Figure 6B and F) and a MAP2-dominant dendrite (Figure 6C and G). At DIV3, however, P3-Kif2a-cKO DGCs gradually generated more aberrant axons than they did dendrites. At that time, in WT DGCs, ankyrin G, the marker of the axon hillock, was detected at the neck of one axonal neurite (an arrow in Figure 6—figure supplement 1E). In the P3-Kif2a-cKO DGCs, however, ankyrin G was detected in more than one neurite (arrows in Figure 6—figure supplement 1H) and the population of DGCs with multiple axonal nurites was significantly larger in P3-Kif2-cKO DGCs than in WT DGCS (Figure 6—figure supplement 1J). Eventually, at DIV5, the WT DGCs developed a single long axon (a white arrowhead in Figure 6I) and several dendrites (a white arrow in Figure 6K), whereas P3-Kif2a-cKO DGCs developed long, defasciculated, NFM-positive axons (white arrowheads in Figure 6J) and generated some dendrites with multiple additional axons around their cell bodies (Figure 6L). A statistical analysis also demonstrated significant neogenesis of aberrant axons in P3-Kif2a-cKO DGCs (Figure 6M green bars, Figure 6—source data 1). These phenotypes were rescued by the KIF2A transfection (Figure 6—figure supplement 2A–G). The observations suggested that the neogenesis of aberrant axons in P3-Kif2a-cKO DGCs could be the result of a cell autonomous process rather than an altered response to the external environment, such as alterations in chemo-attraction/repulsion.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig6-v2.jpg)
+
+**Figure 6.:** (A–L) Representative images of dissociated cultured DGCs immunostained with an axon marker (NFM or Tau1) and a dendrite marker (MAP2) at DIV1 (A–H) and DIV5 (I–L). At DIV1, both WT DGCs (A–D) and cKO DGCs (E–H) extended an axonal process (a arrowhead) and a dendritic process (an arrow). KIF2A was expressed in both processes (A compared with E). At DIV5, WT DGCs developed a single primary axon (an arrowhead in I) and several dendrites (an arrow in K), whereas cKO DGCs developed aberrant collateral branches from a primary axon (arrowheads in J) and multiple aberrant axons originating from their cell bodies (a white arrow and yellow arrowheads in L) in addition to some dendrites. (K and L) are magnified images of the regions indicated by the dashed squares in (I–J) M, DGC neuronal processes at DIV5. The numbers of processes, not including primary axons, were counted. A MAP2-positive dendrite (D), MAP2A- and NFM- or Tau1-positive processes (D/A) and NFM- or Tau1- positive aberrant axons (A) are shown. The results are shown as the mean ± SEMs for 20 cells each; n = 120. Error bars pointing downward indicate the SEMs for each type of neurite. The error bars pointing up indicate the SEMs for the total number of processes (*p<0.01, Welch’s t-test). Bars: 100 μm in J, 50 μm in D, H, and L.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Characterization of dissociated cultured granule cells and confirmation of their loss of KIF2A. A-B. Representative images of cultured DGCs. Granule cells from the hippocampal dentate gyri of the WT (A) and Kif2a-cKO (B) mice were cultured for 4 days (DIV4) and then the cells were fixed and stained with an anti-Prox1 antibody. C. KIF2A deletion in cultured DGCs. KIF2A expression was analyzed using western blot analysis in extracts from the WT and Kif2a-cKO cultured cells obtained on DIV4. (D-I) Representative images of ankyrin G-positive neurites in WT (D–F) and P3-Kif2a-cKO (G–I) cultured DGCs. At an early stage of DGC development, all neurites are MAP2-positive around the cell body (D and G, see also Figure 6A). Among those developing neurites, there were more neurites with ankyrin G at the neck in cKO DGCs (arrowheads in H) than in WT DGCs (arrowheads in E). Statistical analysis of the population of DGCs with the number of ankyrin G-positive neurites/cell is shown in (J). The results are shown as the mean ± SDs for approximately 60 cells each; n = 4. (*p<0.001, Welch’s t-test). Bars: 50 μm in B, F and I.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/30935/elife-30935-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–G) The rescue experiment. (A–D) Representative images of single cultured DGCs. DGCs were transfected with YFP or YFP-KIF2A at DIV3 and then observed at DIV4. Compared with the WT DGCs (A), cKO DGCs developed many collaterals (B, C). The phenotype was rescued by expressing YFP-KIF2A (D). (E–G) Statistical analysis of the length of primary axons (E), the number of collaterals per 100-μm-long primary axon (F) and the total lengths of the collaterals (G). Note that the cKO DGCs developed significantly more and longer collaterals than did the WT DGCs. The results are shown as the mean ± SEM from three independent experiments including n = 30 cells each. *p=0.01, one-way ANOVA. (H–I) Characterization of recorded neuronal processes. After recording, the DGCs were fixed and immunostained with anti-Tau1 and anti-MAP2 antibodies. Dendritic processes that were actively overextended in the cKO DGC video are Tau1-positive (arrows in I), whereas the WT DGC had a single Tau1-positive axon and MAP2-positive dendrites (an arrow and an arrowhead in H).
 
 Finally, we recorded living DGCs for 24 hr at DIV2. In a WT DGC (Figure 6—video 1), both an axon with a single branch and a dendrite are shown to gently elongate and contract. In contrast, P3-Kif2a-cKO DGCs did not exhibit length control for axons or dendrites (Figure 6—video 2). In the video, an axon with a single branch dramatically sprouted and extended multiple branches. Even dendrites actively generated many thin spinous processes. Moreover, some protrusions instantly appeared from the cell body, and then elongated, seemingly contacting one another. After the recording, the DGCs were fixed and stained with anti-Tau1 and anti-MAP2 antibodies (Figure 6—figure supplement 2H and I), revealing that the overextended dendrites had axonal (Tau1-positive, arrows in Figure 6—figure supplement 2I), rather than dendritic characteristics (MAP2-positive, arrowheads in Figure 6—figure supplement 2I). These results suggested that the loss of postnatal KIF2A might disrupt axon/dendrite determination and induce the development of multiple short axons in the hippocampus, thus resulting in complex networks in the dentate gyrus.
 
@@ -104,13 +136,13 @@ In this study, we sought to determine how KIF2A functions in the postnatal hippo
 
 **Figure 7.:** (A) KIF2A function in DGC development. At the early stages of development, both WT and cKO DGCs normally make axonal and dendritic processes. However, whereas WT DGCs regulate the length of dendritic processes and extend a primary axon, Kif2a-cKO DGCs overextend and sprout both axon and dendrites, eventually developing many sprouted axonal processes. (B) KIF2A function in postnatal hippocampal wiring. In WT mice (center panel), KIF2A is highly expressed in MFs (yellow area) and actively suppresses both aberrant MFS and the elaboration of aberrant processes. The excitation of DGCs is unidirectionally transmitted along a MF (blue arrow). When the suppression is released by the loss of KIF2A (right panel), DGCs might start sprouting MFs, thus generating aberrant apical axons, and altering the dendritic features. The aberrant processes are extended into the entire ML and make reflective excitatory circuits. The excitation of DGCs is multidirectionally transmitted, and DGCs are recurrently excited (orange arrows). The repetitive excitation enhances MFS and then eventually causes TLE. In TLE mice (left panel), repetitive excitation induces MFS, but the distribution of aberrant axon terminals is limited to the IML.
 
-## The contribution of KIF2A to the postnatal proliferation and migration of DGCs
+### The contribution of KIF2A to the postnatal proliferation and migration of DGCs
 
 KIF2A was predicted to play an important role in postnatal proliferation or migration, due to its effect as an MT destabilizer (Desai et al., 1999; Wordeman and Mitchison, 1995; Manning et al., 2007) and its critical role in proliferation (Ems-McClung and Walczak, 2010; Chen et al., 2016) and neuronal migration in the prenatal hippocampus (Homma et al., 2003). In this study, however, neither abnormal neurogenesis nor significant migratory defects were detected in 3w-Kif2a-cKO mice within 3 weeks after tamoxifen injection (Figure 3). Thus, from our present results, whether KIF2A is crucial for postnatal neurogenesis and migration is difficult to confirm.
 
 However, 3 weeks may be too short a period to allow for the detection of migratory defects in postnatal neuronal migration as the variation in the migratory distance was greater than the average DGC migration distance. The use of adult-Kif2a-cKO such as 8w-Kif2a-cKO, which can survive long enough for newborn DGCs to migrate through the entire DGC layer, may reveal the function of KIF2A in neuronal migration in the future.
 
-## The contribution of KIF2A to the development of DGCs
+### The contribution of KIF2A to the development of DGCs
 
 Previously, KIF2A has been shown to be a key axonal collateral suppressor of prenatal hippocampal pyramidal neurons. The loss of KIF2A, a MT destabilizer, resulted in the activation of MT polymerization at the growth cone and the overextension of neuronal processes (Homma et al., 2003). In agreement with its prenatal functions, the expression of postnatal KIF2A was strongly distributed in the MF tract of DGCs in the hippocampus (Figure 4A), and the loss of KIF2A induced MFS both in vivo and in vitro (Figures 2C, 4F, 6J and Figure 6—figure supplement 1B), whereas KIF2A transfection rescued the aberrant collaterals (Figure 6—figure supplement 2D). In addition to KIF2A expression in axons, cultured DGCs expressed KIF2A in the cell bodies and dendrites at DIV1 (Figure 6A). The loss of KIF2A from DGCs induced the generation of multiple protrusions (Figure 5C and Figure 6—video 2) and aberrant axons from the cell bodies both in vivo and in vitro (Figures 4H, 5C and 6L), and resulted in a change in the appearance and characteristics of dendrites (Figures 5E, I and 6L). These effects of KIF2A loss are interesting and may indicate a new function of KIF2A in axon/dendrite determination.
 
@@ -118,7 +150,7 @@ The activation of MT polymerization by collapsin response mediator protein (CRMP
 
 More intriguingly, similar phenotypes of aberrant neurite growth have been associated with knockout mutations of phosphatase and tensin homologs on chromosome 10 (PTEN) in DGCs, which extended multiple long axons both in vitro and in vivo. The loss of PTEN constitutively activated Akt kinase activity (Gary and Mattson, 2002) and the mTORC1 pathway (Zhou et al., 2009). In addition, another phenotype of 3w-Kif2a-KO mice resembles the phenotype of Pten-KO mice (Kwon et al., 2006). Pten-KO mice showed signs of gliomas, microcephaly, and an epileptic hippocampus (Luikart et al., 2011; Althaus and Parent, 2012). Moreover, PTEN expression in neurons starts postnatally, and Pten-KO neurons developed neuronal hypertrophy and a loss of neuronal polarity. Therefore, the association of KIF2A with a PTEN-related cascade should be further elucidated. We schematically present KIF2A function in DGC development in Figure 7A.
 
-## The contribution of postnatal KIF2A loss to hippocampal wiring and epilepsy
+### The contribution of postnatal KIF2A loss to hippocampal wiring and epilepsy
 
 The function of KIF2A in the development of DGCs might affect postnatal hippocampal wiring because DGCs continue to proliferate in the subgranular layer (SGL), migrate through the GCL, and mature, incorporating their new processes into preliminary existing neuronal networks in the hippocampus throughout their life (Figure 7B, center panel) (Gonçalves et al., 2016; Kaplan and Hinds, 1977). In Kif2a-cKO mice (Figure 7B, right panel), inner immature DGCs might develop aberrant protrusions, migrating DGCs might develop aberrant axons, and outer maturing DGCs might incorporate their aberrant processes into the dentate ML and hippocampal circuits. In addition, the spine morphology is altered in dendrites lacking KIF2A. These phenotypes might mainly occur because of a lack of control of MT dynamics and might result in aberrant hippocampal wiring and epileptogenesis.
 
@@ -128,19 +160,288 @@ However, the influence of TLE on the Kif2a-cKO hippocampal phenotypes is still a
 
 Regarding the regulation of KIF2A function, the phenotypes of tamoxifen-injected Kif2a-KO DGCs suggested that KIF2A may possibly contribute to MFS in ordinary TLE. After epileptic fits in the hippocampus, hyper-excitation locally up-regulates brain-derived neurotrophic factor (BDNF) in the target site of the MF projection, the stratum lucidum (SL). The local activity of BDNF in the hilus initiates MFS, thus eventually resulting in hippocampal hyper-excitability (Koyama et al., 2004; Tamura et al., 2009). As shown in Figure 4A, KIF2A is highly expressed in the SL, and previous research has shown that BDNF-derived kinases p21-activated kinase 1 (PAK1) and cyclin-dependent kinase 5 (CDK5) block the function of KIF2A by phosphorylation in cortical neurons (Ogawa et al., 2012); thus, the hyper-excitation-induced local activation of BDNF might potentially block KIF2A function and therefore induce MFS only in the hilus. Detailed analysis of tamoxifen-injected Kif2a-KO DGCs would demonstrate the contribution of KIF2A to MFS in ordinary TLE.
 
-## The contribution of KIF2A loss to weight loss and hyperactivity
+### The contribution of KIF2A loss to weight loss and hyperactivity
 
 The 3w-Kif2a-cKO mice exhibited weight loss (Figure 1F) and hyperactivity (Figure 1G), first becoming hyperactive, then gradually losing interest in food, becoming weak, and eventually dying. The link between these phenotypes and epilepsy remains unclear, but some reports have suggested that these phenotypes are associated with hippocampal dysfunction (Fallet-Bianco et al., 2008). Doublecortin (DCX)-KO mice, which exhibit both weight loss and hyperactivity, harbor a neuronal lamination defect in the hippocampus (Håvik et al., 2012). Tuba1a-KO mice, which are hyperactive, exhibit prominent hippocampal lamination defects (Fallet-Bianco et al., 2008). Although 3w-Kif2a-cKO mice did not show an apparent hippocampal laminar defect at P35 (Figure 2E), ectopic cells in the dentate gyrus or pyramidal cells displaced by sprouted MFs would result in weight loss and hyperactivity.
 
 Moreover, both phenotypes have also often been reported in MCD patients and animal models (Stottmann et al., 2013; Stottmann et al., 2017). Four recently reported KIF2A-mutated human pediatric patients with MCD display band heterotopia, posterior predominant pachygyria, a thin corpus callosum, severe congenital microcephaly, and neonatal-onset seizures (Poirier et al., 2013). Because the patients were young at the time of the report (3 and 5 months old), further research is necessary to confirm the hippocampal phenotypes of Kif2a-mutated MCD patients.
 
-## Future perspectives
+### Future perspectives
 
 We herein demonstrated that postnatal KIF2A regulates the development of DGCs and the wiring of neuronal circuits in the hippocampus. However, the relevance of the hippocampal phenotypes of Kif2a-KO mice to human patients with mutations in Kif2a is not certain. In the future, the molecular mechanisms of KIF2A regulation in DGC development and hippocampal wiring should be explored in both KO mice and in human patients. The progress of this line of research will allow for analysis of the pathogenesis of Kif2a-related diseases, including schizophrenia (Li et al., 2006), juvenile myoclonic epilepsy (Kapoor et al., 2007), mental retardation, ocular defects (Jaillard et al., 2011), and MCD (Poirier et al., 2013). We hope that the collection of data on KIF2A-deficient mice will clarify the pathogenesis of these diseases and lead to a more accurate diagnosis in humans.
 
 ## Materials and methods
 
-## Conditional gene targeting of the Kif2a gene
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus muscu/us)</td>
+      <td>Kif2a</td>
+      <td>PMID:1447303</td>
+      <td>MGl:108390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus muscu/us)</td>
+      <td>C57BU6NJcl, C57BU6JJcl</td>
+      <td>Clea Japan</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus muscu/us)</td>
+      <td>CreERt(CAG-cre/Esr1)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Tg(CAG-cre/Esr1 *)5Amc/J (Stock No: 004453)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus muscu/us)</td>
+      <td>R26R (lacZ expression with the ROSA26 Cre reporter strain)</td>
+      <td>PMID:9916792</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus muscu/us)</td>
+      <td>Thy1-EGFP line M</td>
+      <td>The Jackson Laboratory</td>
+      <td>Tg(Thy1-EGFP)MJrs/J (Stock No: 007788)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>CMTl-1</td>
+      <td>Merck Millipore</td>
+      <td>129/Sv-derived ES cell (ESC) line</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KIF2A (mouse monoclonal)</td>
+      <td>PMID: 7535303</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KIF2A (rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: PA3-16833</td>
+      <td>(1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP(mouse monoclonal)</td>
+      <td>BO Transduction Laboratory</td>
+      <td>BO Bioscience: 610565 (Clone 52/GFAP)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU (mouse monoclonal) for ldU</td>
+      <td>BO Pharmingen</td>
+      <td>BO Bioscience: 555627 (Clone 304)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU (rat monoclonal) for CldU</td>
+      <td>Accurate Chemicals</td>
+      <td>Accurate Chemicals (Clone: BU1/75)</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tau1 (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore: MAB3410 (Clone PC1C6)</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Neurofilament M (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma: N5264 (Clone NN18)</td>
+      <td>(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP2 (chicken monoclonal)</td>
+      <td>Abeam</td>
+      <td>Abeam: AB5392 (Clone 304)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Synaptoporin (rabbit polyclonal)</td>
+      <td>Synapitic Systems</td>
+      <td>SYSY:102002</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Prox1 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore: AB5475</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ankyrin G (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: 338800 (Clone 4G318)</td>
+      <td>(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-, 546-, 555-, 647, (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1: 200–1: 500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEYFP-C1 (vector)</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YFP-Kif2a (full length)</td>
+      <td>PMID: 14980225</td>
+      <td></td>
+      <td>Progenitors: pEYFP-C1 vector</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LA PCR Kit</td>
+      <td>Takara</td>
+      <td>TaKaRa:RR013A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Sigma:T5648</td>
+      <td>(30 mg/kg body weight/day)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pilocarpine</td>
+      <td>Sigma</td>
+      <td>Sigma: P6503</td>
+      <td>(290 mg/kg body weight/day},</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Scopolamine methyl bromide</td>
+      <td>Sigma</td>
+      <td>sigma: 8502</td>
+      <td>(1 mg/kg body weight/day)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ScaleView</td>
+      <td>Olympus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-iodo-2'-deoxyuridine</td>
+      <td>Sigma</td>
+      <td>Sigma: 17125</td>
+      <td>50 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-chloro-2 '-deoxyuridene</td>
+      <td>Sigma</td>
+      <td>Sigma: C6891</td>
+      <td>50 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly-L-lysine</td>
+      <td>Sigma</td>
+      <td>Sigma: P-2636</td>
+      <td>100 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin</td>
+      <td>lnvitrogen</td>
+      <td>lnvitrogen: 23017–015</td>
+      <td>25 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroMax 1. 3</td>
+      <td>AccuScan Instrument</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex 9.2 software</td>
+      <td>Axon Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS 7.2</td>
+      <td>Bitplane:Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>lmageJ 1.51 hr</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS V22</td>
+      <td>IBM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Machine</td>
+      <td>MicroMax Monitor</td>
+      <td>AccuScan Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Machine</td>
+      <td>Axopatch 1D amplifier</td>
+      <td>Axon Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Conditional gene targeting of the Kif2a gene
 
 A 3loxP-type targeting vector was constructed by using a genomic clone obtained from an EMBL3 genomic library, and genomic fragments were amplified from the 129/Sv-derived ES cell (ESC) line CMT1-1 (Chemicon/Millipore, Billerica, MA) by using an LA-PCR kit (Takara, Japan). The CMT1-1 ESCs were transfected with the targeting vector and screened for homologous recombinants using PCR. The 3loxP/+ESCs were electroporated using a pCre-Pac plasmid to remove the selection cassette flanked by loxP sequences. The 2loxP/+ESCs were injected into blastocysts, and chimeric male mice were obtained and bred with C57BL/6J female mice. Germline transmission was confirmed by PCR using tail DNA samples. Kif2afl/fl mice were produced by an intercross with Kif2afl/+ mice. To conditionally delete exons flanked by loxP and driven by the chicken beta-actin promoter/enhancer coupled with the cytomegalovirus (CMV) enhancer (CBA), tamoxifen-inducible Cre transgenic mice (CreERt; CAG-Cre/Esr1; Jax #004453, JAX MICE Laboratories, Bar Harbor, ME) were used. The CBA-CreERt mice were characterized by using lacZ expression with ROSA26 reporter mice (R26R), which have a loxP-flanked STOP sequence followed by the lacZ gene inserted into the gene trap ROSA26 locus (By courtesy of Prof. Soriano [Soriano, 1999]). Conventional knockout mice (Homma et al., 2003) were crossed with CBA-CreERt+/− mice to obtain Kif2a+/−;CBA-CreERt+/− mice. Male Kif2a+/−; CBA-CreERt+/− mice were mated with female Kif2afl/fl mice to produce offspring that contained the Kif2afl/+, Kif2afl/+; CBA-CreERt+/−, Kif2afl/−, and Kif2afl/−; CBA-CreERt+/− alleles. Tamoxifen (Sigma, St. Louis, MO, 10 mg/ml) was dissolved in sunflower oil and administered at a dose of 30 mg per kg body weight daily for 7 consecutive days. The Kif2a deletion occurred when the tamoxifen-induced Cre recombinase deleted the floxed DNA domain, which was followed by a frameshift during the Kif2a RNA translation. Deletion was confirmed by a western blot analysis of the crude extracts of whole brain tissues at P21 by using a monoclonal antibody against the N-terminal region of KIF2A (Noda et al., 2012). For control mice, we generally used wild-type mice after ensuring that the Kif2afl/−; CBA-CreERt+/− mice and WT mice were not significantly different. The genotypes were determined by PCR of tail DNA or DNA from ES cells with the following primers (see Figure 1A):
 
@@ -150,42 +451,42 @@ R1, 5’- CACCCCACTATAACCCAGCATTCG-3’;
 
 F2, 5’-GCTGCCAGTGACATAGACTAC-3’, and the Neo and Cre transgenes. The mice were maintained by repeated backcrossing with C57BL/6J mice (>12 times) in a pathogen-free environment.
 
-## TLE model mice
+### TLE model mice
 
 The mice received an intraperitoneal (i.p.) injection of scopolamine methyl bromide (Sigma, St. Louis, MO, 1 mg/kg) in a sterile saline vehicle (0.9% NaCl, 0.1 ml total volume) 30 min prior to an injection of pilocarpine to decrease the peripheral cholinergic effects of pilocarpine. The experimental animals were then i.p. injected with a single dose of pilocarpine (Sigma, 290 mg/kg), as previously described (Shibley and Smith, 2002). The WT mice were age-matched with treated mice and received a comparable volume of vehicle.
 
-## Behavior tests
+### Behavior tests
 
 WT male mice and 3w-Kif2a-cKO (P25 littermates) were used in all behavioral tests in a blinded manner. The home cage activity tests were conducted using a MicroMax Monitor (AccuScan Instruments, Columbus, OH) and quantified using a computer-operated MicroMax 1.3 (AccuScan Instrument). The monitor displayed 16 invisible infrared light beams per axis with synchronous filtering, double modulation and digital hysteresis. These beams provide information that describes the movement of an animal in its home cage, thus allowing an animal’s behavior to be monitored. Mice that were housed singly in their home cages were placed in the beam boxes for 5 min, and their activity was continually recorded. The measurements used to assess home cage activity included active time. The average amount of active time was analyzed using Student’s t-tests. For epilepsy, five mice were isolated in a cage and observed for 30 min. The epileptic mice were genotyped after the observation.
 
-## EEG recording
+### EEG recording
 
 WT and 3w-Kif2a-cKO siblings were anesthetized in the postnatal week 4 by using ketamine/xylazine and were surgically implanted with a set of electrodes. Two 0.1 mm diameter silver wires were bonded, including a 1.2-mm-long reference electrode and a 2.0-mm-long working electrode with a hard epoxy resin coat (except for its 0.2-mm-long exposed tip), which served to electrically insulate the probe from the reference electrode. Dental cement (GC Dental, Tokyo, Japan) was used to fix the electrode set to the skull. The electrode positions in the left hemisphere and the CA1 of the left hippocampus were stereotaxically determined as 1.3/1.3 mm or 2.0/1.8 mm anterior to the bregma and 1.2/1.2 mm or 1.5/1.5 mm lateral to the midline at a depth of 1.3/1.2 mm or 1.5/1.3 mm for the WT or 3w-Kif2a-cKO mice, respectively. These differences were due to the differences in the average brain sizes between the two genotypes. EEG recordings were obtained from mice after complete recovery. The electrodes, measurement system, and software were all purchased from Unique Medical (Tokyo, Japan). EEG recordings were obtained from five mice for each genotype. After EEG recordings, we confirmed the electrode position using a histological examination.
 
-## Electrophysiology
+### Electrophysiology
 
 The patch-clamp recordings of DGCs were obtained at room temperature using an Axopatch 1D amplifier (Axon Instruments, Union City, CA). Patch pipettes (3–5 MΩ) were filled with 122.5 mM Cs gluconate, 17.5 mM CsCl, 10 mM HEPES, 0.2 mM EGTA, 8 mM NaCl, 2 mM Mg-ATP, and 0.3 Na-GTP (pH 7.2, 290–300 mM mOsm). A slice was transferred to a recording chamber and continuously perfused with cold oxygenated ACSF containing 119 mM NaCl, 2.6 mM KCl, 1.3 mM MgSO4, 1 mM NaH2PO4, 26 mM NaHCO3, 2.5 mM CaCl2, and 11 mM D-glucose. Single pulse stimuli were delivered by bipolar tungsten electrodes, which were positioned on the hilus far from the recorded cells, to avoid antidromic activation. Absence of antidromic activation contamination was concluded if CNQX-AP-5 completely eliminated any responses to the stimulus. The signals were filtered at 2 kHz, digitized at 10 kHz, and analyzed using Clampex 9.2 software (Axon Instruments, Union City, CA).
 
-## Histological analysis
+### Histological analysis
 
 The nervous elements were stained using the standard Bodian method (Bodian, 1936; Bodian, 1937). Briefly, the brains were fixed in FEA (formalin-ethanol-acetic acid: 90 ml of 80% ethanol with 5 ml of formaldehyde and 5 ml of glacial acetic acid), dehydrated with ethanol, and embedded in paraffin. The tissue was sectioned at a thickness of 7 μm. The paraffin sections were hydrated in distilled water (DW), and the slides were then incubated in 2% Protargol solution for 48 hr at 37°C in the dark with 5 g of polished copper shot. The samples were then rinsed three times with DW; reduced in 1% hydroquinone for 10 min; rinsed three times with DW; immersed in 1% aqueous gold chloride for 10 min; rinsed three times with DW; developed in 2% oxalic acid for 20 min; rinsed twice with DW; fixed in 5% sodium thiosulfate for 5 min; rinsed five times with DW; dehydrated; and mounted with cover slips.
 
 For brain tissue immunohistochemistry, the mice were perfused with a solution of 4% paraformaldehyde (PFA) and 0.1% glutaraldehyde (GA) in 0.1 M sodium phosphate buffer (PB, pH 7.4). Subsequently, 30-μm-thick frozen slices were rinsed in PBS, fixed for 10 min, permeabilized with 0.1% Triton X-100 in PBS for 10 min, incubated in blocking solution (5% normal goat serum in PBS) for 30 min, and incubated with primary antibodies at 4°C overnight. After the tissues were washed with PBS, secondary antibodies were applied at 4°C overnight. To stain thick sections, 0.1% Triton X-100 was added to the blocking solution. All antibodies were as described in the previous section. To visualize YFP-expressing GCs in mouse brains, the mice were perfused with a fixation solution, and 300-μm-thick sections were immersed in ScaleView (Olympus, Japan), an optically transparent reagent, at 4°C for 24 hr. For all experiments, we used littermates for controls and selected slices at comparable positions determined with a brain atlas. The samples were observed under an LSM710 or LSM 780 confocal microscope (Zeiss).
 
-## Birth-dating analysis
+### Birth-dating analysis
 
 Immunofluorescence detection of two thymidine analogues (CldU and IdU) was performed along with Tuttle’s methods (Tuttle et al., 2010). Briefly, 5-iodo-2’-deoxyuridine and 5-chloro-2’-deoxyuridene (IdU and CldU; Sigma, St. Louis, MO) were dissolved in saline at 10 mg/ml as stock solution. Proliferating cells in the hippocampus were labeled by sequential intraperitoneal injection at 50 mg/kg for 1 week before or after tamoxifen injection. All mice were perfused with 4% PFA/PBS, dehydrated with ethanol, and embedded in paraffin. The 7-μm-thick sections were rehydrated with ethanol, washed for 5 min in PBS, and permeabilized with 0.1% Triton-X 100 for 5 min; then, antigen retrieval was performed in boiling 0.01 M pH 6.0 sodium citrate buffer for 20 min by using a microwave oven. Slides were immersed in 1.5 N HCL for 40 min at RT, washed twice in PBS for 5 min, and immersed in blocking solution (5% goat serum in PBS). Then an anti-IdU antibody diluted in blocking solution was applied and incubated overnight at 4°C. After being agitated in PBS for 20 min in a shaking jar at 37°C, the slices were washed four times in PBS, and anti-CldU antibodies diluted in blocking solution were applied and incubated overnight at 4°C. The slides were washed twice for 5 min per wash in PBS, and then, the appropriate secondary antibody solution (1:300) was applied for 2 hr at RT. The slices were washed 5 times for 5 min per wash in PBS, and a cover glass was applied with PBS.
 
 The distance between the bottom edge of the GCL and the dentate granule cells was measured using IMARIS software (Zeiss).
 
-## Timm staining
+### Timm staining
 
 To visualize zinc and other metals in the hippocampus, 30-μm-thick frozen brain sections were stained using the neo-Timm method with some modifications (Danscher and Zimmer, 1978). The pixel intensities were measured as previously described (Koyama et al., 2004). Briefly, in an image acquired using a 20 × objective, at least five 20 μm × 20 μm cursor points at 20 μm intervals were positioned in each hilus, granular and IML, OML, and subicular area located just outside the hippocampal sulcus. The mean signal intensity (I) within these cursor points was measured at an 8-bit resolution using ImageJ software (NIH, USA). The Timm grain intensity was determined by dividing the values of these subregions by the value of the subiculum (background). The same method was used to measure the NFM intensity. As an internal control, we used the intensity of NFM staining in the hilus, because the intensity in the subicular or other areas in the dentate gyrus was not stable.
 
-## Dispersed dentate granule cell cultures
+### Dispersed dentate granule cell cultures
 
 P3-Kif2a-cKO and WT mice were euthanized at P5, and their hippocampal dentate gyri were dissected (Hagihara et al., 2009). Each dentate gyrus was trypsinized and gently triturated to isolate cells (3.5 × 104 cells/cm2), which were placed in a four-well glass chamber (Nunc, 155411). Chambers were coated with poly-L-lysine overnight at room temperature (Sigma, St. Louis, MO), washed with DW for 2 hr twice, and then coated with laminin overnight at 4°C (inquiry) to clearly visualize any morphological differences in the rapid growth of neurites. Dispersed cells were cultured in MEM (Gibco Thermo Fisher, MA)/Neuro Brew-21 (MACS, Bergisch Gladbach, Germany) at 37°C in a humidified atmosphere containing 5% CO2. To confirm the characteristics of the cultured neurons, the cells were stained with anti-NFM, anti-MAP2, anti-Prox1, and anti-AnkyrinG antibodies.
 
-## Organotypic hippocampal slice cultures
+### Organotypic hippocampal slice cultures
 
 To confirm excitatory recurrent circuits in the tamoxifen-injected Kif2a-cKO hippocampus, organotypic hippocampal slice cultures were prepared as previously described (Koyama et al., 2004). Briefly, P4 mice were deeply anesthetized, and their brains were removed and cut into 300-μm-thick transverse slices using a VR-1200S (Leica Biosystems, Wetzlar, Germany) in a cold oxygenated Gey’s balanced salts solution supplemented with 25 mM glucose. Entorhino-hippocampi were dissected and cultured using a membrane interface technique (Stoppini et al., 1991). Briefly, the slices were placed on sterile 30-mm-diameter membranes (Millicell-CM; Millipore, Bedford, MA) and transferred to six-well tissue culture trays. The cultures were fed with 1 ml of 50% minimal essential medium (Invitrogen, Gaithersburg, MD), 25% horse serum (Cell Culture Lab, Cleveland, OH), and 25% HBSS and the cells were maintained in a humidified incubator at 37°C containing 5% CO2. The medium was changed every 3.5 days.

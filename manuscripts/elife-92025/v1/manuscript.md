@@ -20,11 +20,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03h2bxq36 Molecular, Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom
-2. https://ror.org/03h2bxq36 Cell Signalling & Immunology, School of Life Sciences, University of Dundee Dundee United Kingdom
-3. https://ror.org/03h2bxq36 Human Pluripotent Stem Cell Facility, School of Life Sciences, University of Dundee, Dow St, Dundee DD1 5EH Dundee United Kingdom
-4. https://ror.org/03h2bxq36 Dundee Imaging Facility, School of Life Sciences, University of Dundee Dundee United Kingdom
-5. https://ror.org/01zg1tt02 MRC Protein Phosphorylation and Ubiquitylation Unit, School of Life Sciences, University of Dundee Dundee United Kingdom
+1. Molecular, Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+2. Cell Signalling & Immunology, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+3. Human Pluripotent Stem Cell Facility, School of Life Sciences, University of Dundee, Dow St, Dundee DD1 5EH Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+4. Dundee Imaging Facility, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+5. MRC Protein Phosphorylation and Ubiquitylation Unit, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:01zg1tt02](https://ror.org/01zg1tt02))
 
 † Corresponding author
 
@@ -44,21 +44,35 @@ In this study, we have addressed the similarity of hiPSCs to hESCs by performing
 
 ## Results
 
-## hESCs and hiPSCs display quantitative differences in protein abundances
+### hESCs and hiPSCs display quantitative differences in protein abundances
 
 For this study, we compared multiple hESC and hiPSC lines, all derived from different donors and cultured using identical growth conditions. First, the expression levels of the main pluripotency markers were verified in each of the lines, with no differences detected between the respective hESC and hiPSC types (Figure 1a). From these data, representative sets of four hiPSCs and four hESCs lines were selected for detailed proteomic analysis using mass spectrometry (MS). The proteomes were characterised using tandem mass tags (TMT) (Thompson et al., 2003), within a single 10-plex (TMT channel allocation) and using MS3-based synchronous precursor selection (SPS) (McAlister et al., 2014). To further optimise quantification accuracy, each sample was allocated to a specific isobaric tag to minimise cross-population reporter ion interference (Figure 1b), as previously described (Brenes et al., 2019). In total 8491 protein groups (henceforth referred to as ‘proteins’) were detected at 1% false discovery rate (FDR), with >99% overlap between the proteins detected from both the hESC and hiPSC lines (Figure 1c). However, it is important to highlight that TMT is not the best method to use when looking for proteins that are specific to one condition or population, as protein detected in one channel are frequently seen across all other channels as well (Brenes et al., 2019).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig1-v1.jpg)
+
+**Figure 1.:** (a) Western blots showing the expression of the pluripotency factors NANOG, OCT4, and SOX2 across all human embryonic stem cell (hESC) and human induced pluripotent stem cell (hiSPC) lines. The eight lines showed with * were used within the proteomic analysis. (b) Diagram showing the SPS-MS3 tandem mass tag (TMT) proteomic workflow used for the experiment. (c) Venn diagram showing the overlap of proteins identified within the hiPSC and hESC populations. (d) Average copy number histogram for the hESCs (N=4). (e) Average copy number histogram for the hiPSCs (N=4). (f) Bubble plot showing proteins coloured by specific categories where the size is represented by the average hESC estimated protein copy numbers. (g) Bubble plot showing proteins coloured by specific categories where the size is represented by the average hiPSC estimated protein copy numbers. (h) Principal component analysis (PCA) plot based on the log10 copy numbers for all eight stem cell lines. hESCs are shown in purple and hiPSCs in orange.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** For the boxplots, the bottom and top hinges represent the first and third quartiles. The top whisker extends from the hinge to the largest value no further than 1.5 × IQR from the hinge; the bottom whisker extends from the hinge to the smallest value at most 1.5 × IQR of the hinge.
+
 To provide a quantitative comparison of the respective proteomes, we focussed on analysing the 7878 proteins that were detected with at least two unique and razor peptides (see Materials and methods). After confirming that there were no differences in the abundance levels of histones between the two cell types (Figure 1—figure supplement 1), protein copy numbers were estimated via the ‘proteomic ruler’ (Wiśniewski et al., 2014) (see Materials and methods). The copy number data (Supplementary file 1) highlighted that both the hESC (Figure 1d) and hiPSC (Figure 1e) proteomes display a similar dynamic range, with estimated protein copy numbers extending from a median of less than 100 copies, to over 100 million copies per cell. Furthermore, the composition of the respective proteomes is highly similar. Both cell types display high expression levels of ribosomal proteins, protein chaperones, and glycolytic enzymes (Figure 1f and g), consistent with rapid proliferation and dependence on glycolysis for energy generation (Folmes et al., 2011). It is only when the quantitative data are examined in more detail that differences between the cell types become apparent (Figure 1h). A principal component analysis (PCA), based on the protein copy numbers, revealed a clear separation between the two stem cell populations within the main component of variation, which accounted for 69% of variance. The PCA suggested that the independent hiPSC lines were clearly different to the hESC lines, and vice versa.
 
-## Standard normalisation methods mask changes in total protein content in hiPSCs compared to hESCs
+### Standard normalisation methods mask changes in total protein content in hiPSCs compared to hESCs
 
 A previous proteomic study reported that there were virtually no protein level differences between hESCs and hiPSCs (Munoz et al., 2011). However, in that study the intensity data were median normalised. We therefore decided to compare two different normalisation methods: i.e., the previously used median normalisation method and the ‘proteomic ruler’ (Wiśniewski et al., 2014). The median normalisation produces concentration-like results and is frequently used to normalise proteomic data. With this approach, our data also show no major differences in protein abundances between the hESC and hiPSC lines (Figure 2a; Supplementary file 2), i.e., ~94% of all proteins displayed no significant changes in abundance (FC>1.5-fold; q-value<0.001), similar to the previously reported conclusion (Munoz et al., 2011). However, median (or total intensity) normalisation methods lack the capacity to detect changes in absolute abundance, cell size, or protein content. By artificially forcing all medians to be almost identical, such changes are invisible.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig2-v1.jpg)
+
+**Figure 2.:** (a) Concentration-based volcano plot showing the -log10 p-value and the log2 fold change comparing human induced pluripotent stem cells (hiPSCs) (N=4) to human embryonic stem cells (hESCs) (N=4). Elements shaded in red are considered significantly changed. All dots above the red line have a q-value lower than 0.001. (b) Copy number-based volcano plot showing the -log10 p-value and the log2 fold change comparing hESCs (N=4) to hiSPC (N=4). Elements shaded in red are considered significantly changed. All dots above the red line have a q-value lower than 0.001. (c) Boxplot showing the mass spectrometry (MS)-based estimated protein content for hESCs (N=4) and hiPSC(N=4). (d) Boxplot showing the protein amount per million cells derived from the EZQ Protein Quantification Kit for all hESCs (N=4) and hiPSC (N=4). (e) Boxplot showing the median forward scatter of hESCs (N=4) and hiPSCs (N=6). (f) Boxplot showing the median side scatter of hESCs (N=4) and hiPSCs (N=6). (g) Boxplot showing the median percentage of cells across cell cycle stages for hESCs (N=4) and hiPSCs (N=6). For all boxplots, the bottom and top hinges represent the first and third quartiles. The top whisker extends from the hinge to the largest value no further than 1.5 × IQR from the hinge; the bottom whisker extends from the hinge to the smallest value at most 1.5 × IQR of the hinge.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig2-figsupp1-v1.jpg)
 
 This is not the case for the results produced with the ‘proteomic ruler’ (Wiśniewski et al., 2014). The copy number-based analysis enables an approximation to absolute protein abundance and can reveal changes in cell mass, as we previously reported (Howden et al., 2019; Marchingo et al., 2020). Using the proteomic ruler method highlighted systematic differences between hESCs and hiPSCs (Figure 2b; Supplementary file 3), with 56% (4426/7878) of all proteins detected significantly increased in hiPSCs (FC>1.5-fold; q-value<0.001) and with particular enrichment in translation-related processes (Figure 2—figure supplement 1). In contrast, only 40 proteins (0.5%) showed significantly lower expression levels in hiPSCs. With thousands of proteins displaying higher abundance, we hypothesised that hiPSCs have higher total protein content, compared to hESCs. Using the protein copy numbers to estimate the total protein content showed that hiPSCs had >50% higher protein content compared to hESCs (Figure 2c). To validate this observation, an independent assay (EZQ assay; see Materials and methods) was used to measure the total protein yield from similar numbers of freshly grown hiPSCs and hESCs. From these experiments, the calculated protein amount per million cells was >70% higher (Figure 2d; p-value=0.0018) in hiPSCs, relative to hESCs. We conclude that hiPSCs have a higher total protein content.
 
 Changes in protein content could potentially be linked to differences in the cell cycle profile. Hence, to test this, we used fluorescence-activated cell sorting (FACS) to study the cell cycle distribution of hESCs and hiPSCs. The FACS data showed that hiPSCs have significantly higher forward scatter (Figure 2e), correlated to increased cell size, as well as significantly higher side scatter (Figure 2f), correlating to increased cell granularity. However, the FACS analysis revealed no significant differences between hiPSCs and hESCs in the percentage of cells at each of the cell cycle stages (Figure 2e). We conclude that hiPSCs have significantly higher total protein content, with increased size and granularity, but that these differences with hESCs are independent of changes in cell cycle distribution.
 
-## hiPSCs have elevated nutrient transporters, metabolic proteins, and protein and lipid synthesis machinery
+### hiPSCs have elevated nutrient transporters, metabolic proteins, and protein and lipid synthesis machinery
 
 To maintain a higher protein content than hESCs with a comparable cell cycle profile, hiPSCs would require higher protein synthesis capacity, which in turn requires increased access to nutrients and energy. Energy metabolism in primed pluripotent stem cells is largely dependent on glycolysis (Turner et al., 2014), which is sensitive to glucose uptake and lactate shuttling. Therefore, we compared the expression of the respective glucose and lactate transporters between hiPSCs and hESCs. The data showed both main glucose transporters, GLUT1 (SLC2A1) and GLUT3 (SLC2A3), had higher abundance in hiPSCs, as did the lactate transporters SLC16A1 and SLC16A3 (Figure 3a). Other rate limiting enzymes, including Hexokinase 1 (HK1) and 2 (HK2), were also significantly increased within hiPSCs (Figure 3b), suggesting increased glycolytic potential.
 
@@ -74,7 +88,7 @@ Having established that hiPSCs have increased expression of nutrient transporter
 
 The data also highlighted increased fatty acid and lipid droplet (LD) synthesis potential in hiPSCs, with increased abundance of the protein SREBP1 (SREBF1; Figure 3h), a master regulator of lipid synthesis (Eberlé et al., 2004), as well as FASN (Figure 3i) and SCD (Figure 3j). Similarly, a crucial regulator for LD assembly, PLIN3 (Nose et al., 2013, Figure 3k), displayed >2-fold increased abundance in hiPSCs. To examine the potential phenotypic impact of this increased abundance of proteins involved in LD synthesis, we performed transmission electron microscopy (TEM) analyses to compare hiPS and hES cells. This showed that LDs were clearly visible in hiPSCs (Figure 3l), but not visible in hESCs (Figure 3m). We conclude that the hiPSCs have elevated levels of LDs, resulting from the increased expression of proteins involved in lipid synthesis and LD assembly.
 
-## hiPSCs show altered mitochondrial metabolism compared to hESCs
+### hiPSCs show altered mitochondrial metabolism compared to hESCs
 
 Our data also highlighted important changes in mitochondrial proteins, including increases in the levels of metabolic proteins that are encoded within the mitochondrial genome (Taanman, 1999, Figure 4a). The latter proteins, which are translated by specialised mitochondrial ribosomes (mitoribosomes), are embedded in the mitochondrial membrane. The protein components of mitoribosomes also showed increased expression in hiPSCs (Figure 4b), along with virtually all proteins involved in the translation initiation, elongation, and termination of mitochondrial genome-encoded proteins (Figure 4c).
 
@@ -86,7 +100,7 @@ The analysis of transporter proteins revealed a cluster of 22/27 mitochondrial t
 
 As the proteomic data showed clear differences between hiPSCs and hESCs in the levels of mitometabolism proteins, we performed experiments to explore whether this was reflected in phenotypic differences between hiPSCs and hESCs. This was tested using high-resolution respirometry (see Materials and methods). The data showed that hiPSCs had a higher P/E control ratio to hESCs, which denotes an increased capacity of the phosphorylation system to produce ATP (Figure 4l). We conclude that hiPSCs have elevated levels of mitometabolism proteins relative to hESCs, resulting in higher respiratory activity.
 
-## hiPSCs upregulate secreted proteins affecting their microenvironment
+### hiPSCs upregulate secreted proteins affecting their microenvironment
 
 Among the most upregulated proteins in hiPSCs were a subset of secreted proteins. Secreted proteins are of great importance because changes in their absolute abundance can affect the extracellular environment. These secreted proteins mostly represented four categories: structural extracellular matrix (ECM) proteins, growth factors, protease inhibitors, and proteases (Figure 5a). The ECM both provides physical support for cells and actively participates in cell signalling by providing domains for growth factors (Mouw et al., 2014). The ECM can also be reshaped in tumours, thereby promoting cancer cell growth and migration (Rømer et al., 2021). The current data show that both laminins and collagens were all increased in abundance in hiPSCs (Figure 5b). Collagens are reported to alter the stiffness of the ECM and their synthesis is iron intensive. Interestingly, the data also show that proteins involved in importing and storing iron were increased in abundance in hiPSCs (Figure 5c–f).
 
@@ -96,7 +110,7 @@ Among the most upregulated proteins in hiPSCs were a subset of secreted proteins
 
 The data also showed that 13 growth factors were increased in abundance in hiPSCs, compared to hESCs. A subset of these, i.e., FGF1, FGF2, and NODAL, are reported to have direct relevance to the maintenance of pluripotency and can modulate important processes in PSCs (Lanner and Rossant, 2010; Xu et al., 2008; Weinberger et al., 2016, Figure 5g). Other growth factors that are upregulated in hPSCs are linked to disease mechanisms and cancer. This includes VGF (Figure 5h), which is linked to promoting growth and survival in glioblastoma (Wang et al., 2018) and MDK (Figure 5i), which is highly expressed in malignant tumours (Filippou et al., 2020) and has been shown to play a role in chemoresistance (Lu et al., 2018).
 
-## hiPSCs display increased abundance of immunosuppressive proteins
+### hiPSCs display increased abundance of immunosuppressive proteins
 
 NODAL wasn’t the only growth factor in the TGFB family that was increased in hiPSCs, with TGFB1 displaying an ~5-fold increase in abundance in hiPSCs compared to hESCs (Figure 5j). Besides its role as a growth factor, TGFB1 has been shown to have important roles in the regulation of the immune response, promoting the generation of regulatory T cells, while inhibiting the generation and function of effector T cells. As immunogenicity of PSCs is a topic of relevance to clinical adaptations, we looked for differences in modulators of the immune response.
 
@@ -104,9 +118,21 @@ Arginine availability is vital to effector T cells and other leukocytes, where d
 
 hiPSCs also displayed increased abundance of inhibitory ligands that suppress the immune function of other leukocytes. The data show hiPSCs have increased abundance of the non-classical HLA-E (Figure 5m), which has been shown to interact with the NK cell receptor, NKG2A, to mediate immune evasion in ageing cells (Pereira et al., 2019). They also displayed increased abundance of CD200 (Figure 5n), a ligand for CD200R, which can inhibit the immune response from macrophages, basophils, NK cells, and T cells, as well as CD47 (Figure 5o), a ligand of SIRPA that helps cells to escape macrophage phagocytosis. These data indicate that hiPSCs have increased abundance of known immunosuppressive proteins, compared to hESCs.
 
-## hiPSCs display reduced abundance of H1 histones
+### hiPSCs display reduced abundance of H1 histones
 
 A striking feature of this proteomic study is how few proteins (<1%; 40/7878) showed significantly decreased abundance in hiPSCs, compared to hESCs. A high proportion of these decreased abundance proteins affect nuclear processes. Thus, an overrepresentation analysis showed that proteins whose abundance was decreased in hiPSCs were enriched in GO terms related to DNA recombination, nucleosome positioning, and chromatin silencing (Figure 6a). Notably, this included four H1 histone variants, which are reported to influence nucleosomal repeat length (Woodcock et al., 2006) and stabilise chromatin structures (Robinson and Rhodes, 2006). Our data show that the most abundant H1 variant in hESCs, HIST1H1E, is decreased in abundance in hiPSCs by ~3.5-fold (Figure 6b), while HIST1H1C (Figure 6c), HIST1H1D (Figure 6d), and H1FX (Figure 6e) are all decreased by >1.7-fold.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig6-v1.jpg)
+
+**Figure 6.:** (a) Barplot showing the GO term enrichment results for proteins significantly decreased in abundance (see Materials and methods) in human induced pluripotent stem cells (hiPSCs). Boxplots showing estimated copy numbers for (b) HIST1H1E, (c) HIST1H1D, (d) HIST1H1C, and (e) H1FX in human embryonic stem cells (hESCs) (N=4) and hiPSC (N=4). (f) Barplot showing the median estimated copy numbers for all histones in hESCs and hiPSCs. Boxplots showing estimated copy numbers for (g) HIST1H3A and (h) HIST1H4A in hESCs and hiPSCs. Western blot showing the abundance of (i) H3 and (j) H4 histones in hESCs (N=4) and hiPSC (N=4). Boxplots showing estimated copy numbers for (k) H2AFV, (l) H2AFY, and (m) H2AFY2 in hESCs (N=4) and hiPSC (N=4). For all boxplots, the bottom and top hinges represent the first and third quartiles. The top whisker extends from the hinge to the largest value no further than 1.5 × IQR from the hinge; the bottom whisker extends from the hinge to the smallest value at most 1.5 × IQR of the hinge.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** For all boxplots, the bottom and top hinges represent the first and third quartiles. The top whisker extends from the hinge to the largest value no further than 1.5 × IQR from the hinge; the bottom whisker extends from the hinge to the smallest value at most 1.5 × IQR of the hinge.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92025/elife-92025-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** For all boxplots, the bottom and top hinges represent the first and third quartiles. The top whisker extends from the hinge to the largest value no further than 1.5 × IQR from the hinge; the bottom whisker extends from the hinge to the smallest value at most 1.5 × IQR of the hinge.
 
 As histone variants have very similar protein sequences, where peptides detected by MS can potentially match to multiple H1 histone variants, a peptide level analysis was necessary to deconvolute the signal (Figure 6—figure supplement 1). The Andromeda search engine (Cox et al., 2011) assigns peptide intensities to a protein following a razor peptide approach, where the intensity of a peptide is assigned to only one protein, regardless of whether it is unique or shared by two or more proteins. This makes the analysis of specific variants challenging at the protein level. Hence, we focussed on a peptide-specific approach with the MS data and found that the intensity of the peptides that were shared between these 3 H1 histone variants displayed a consistent reduction in abundance in hiPSCs (Figure 6—figure supplement 1).
 
@@ -130,65 +156,280 @@ In summary, our data show that hiPSCs and hESCs, despite their clear similaritie
 
 ## Materials and methods
 
-## HipSci hiPSC line generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>wibj_2</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_AE65</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>kucg_2</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_AE60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>bubh_3</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_AE78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>aqd_3</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_EE62</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>ueah_1</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_AG29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>aizi_1</td>
+      <td>HipSci Consortium (https://www.hipsci.org/)</td>
+      <td>RRID:CVCL_AG87</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H1 (WA01)</td>
+      <td>WiCell Research Institute (https://www.wicell.org/)</td>
+      <td>RRID:CVCL_9771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H9 (WA09)</td>
+      <td>WiCell Research Institute (https://www.wicell.org/)</td>
+      <td>RRID:CVCL_9773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SA121</td>
+      <td>Takara Bio Europe AB (Cellartis)</td>
+      <td>RRID:CVCL_B296</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SA181</td>
+      <td>Takara Bio Europe AB (Cellartis)</td>
+      <td>RRID:CVCL_B299</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>https://www.maxquant.org/</td>
+      <td>RRID:SCR_014485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LIMMA</td>
+      <td>http://bioinf.wehi.edu.au/limma/</td>
+      <td>RRID:SCR_010943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>qvalue</td>
+      <td>Bioconductor</td>
+      <td>RRID:SCR_001073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>TreeStar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_302613</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H4 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_296888</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10695459</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2756824</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OCT4A (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2167691</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2195767</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NANOG (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10559205</td>
+      <td>(1:10,000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### HipSci hiPSC line generation
 
 As part of the HipSci project (Kilpinen et al., 2017) hiPSC lines were generated in the Sanger Centre. hiPSCs were generated from fibroblasts obtained by skin punch biopsies. The fibroblasts were reprogrammed as described previously (Kilpinen et al., 2017), in brief Sendai vectors expressing hOCT3/4, hSOX2, and hc-MYC were used.
 
-## HipSci hiPSC line quality control
+### HipSci hiPSC line quality control
 
 The hiPSC lines were passaged a mean of 16 times before being subjected to the first tier of molecular data for quality control, which included genotyping (‘gtarray’), gene expression data (‘gexarray’), and an assessment of the pluripotency and differentiation potential of each line (‘Cellomics’). Pluripotency of the lines was additionally verified in silico, using the PluriTest assay (Müller et al., 2011). Subsequently one or two lines per donor were subjected to a set of molecular data QC assays. The criteria for line selection were: (i) level of pluripotency, as determined by the PluriTest assay, (ii) number of copy number abnormalities, and (iii) ability to differentiate into each of the three germ layers. These included proteomics, DNA methylation (‘mtarray’), RNA-sequencing, and high-content cellular imaging.
 
-## Cell line authentification
+### Cell line authentification
 
 STR profiling was conducted for H1, H9, SA121, and SA181, the profiles matched to available profiles on Cellosaurus. HipSci cell lines (aizi_1, bubh_3, kucg_2, oaqd_3, ueah_1 and wibj_2) were directly received from the HipSci consortium with the details provided above. The cell lines were routinely tested for mycoplasma contamination using MycoAlert Detection Kit (Lonza), aerobic bacteria and fungi were tested by inoculation of conditioned cell culture medium into tryptic soy broth (Millipore).
 
-## hiPSC and hESC culture
+### hiPSC and hESC culture
 
 hiPSCs generated by the HipSci consortium (Kilpinen et al., 2017) (aizi_1, bubh_3, kucg_2, oaqd_3, ueah_1 and wibj_2) and hESCs (SA121 and SA181, H1, H9) were both grown in identical conditions, maintained in TESR medium (Ludwig et al., 2006) supplemented with FGF2 (Peprotech, 30 ng/ml) and noggin (Peprotech, 10 ng/ml) on growth factor reduced Geltrex basement membrane extract (Life Technologies, 10 μg/cm2) coated dishes at 37°C in a humidified atmosphere of 5% CO2 in air.
 
 Cells were routinely passaged twice a week as single cells using TrypLE select (Life Technologies) and replated in TESR medium that was further supplemented with the Rho kinase inhibitor Y27632 (Tocris, 10 μM) to enhance single-cell survival. Twenty-four hours after replating Y27632 was removed from the culture medium. For proteomic analyses cells were plated in 100 mm Geltrex-coated dishes at a density of 5×104 cells/cm2 and allowed to grow for 3 days until confluent with daily medium changes.
 
-## Immunoblotting
+### Immunoblotting
 
 Equal volumes of hiPSC or hESCs protein lysates were boiled in LDS/RA buffer for 5 min at 95°C and loaded into 4–15% NuPAGE Bis-Tris SDS-PAGE gels in running buffer (50 mM MES, 50 mM Tris, 0.1% SDS, 1 mM EDTA, pH 7.3), transferred onto nitrocellulose membrane (Amersham #10600041) in transfer buffer (8 mM Tris, 30 mM glycine, 20% methanol) and stained with Ponceau S (Sigma-Aldrich, #P7170). Membranes were blocked in TBS-T+5% BSA for 1 hr at room temperature (RT) and incubated overnight at 4°C in primary antibodies prepared in TBS-T+5% BSA. Membranes were washed 3×15 min in TBS-T, incubated with secondary antibody for 1 hr at RT, washed, and imaged using Odyssey CLx (LI-COR). Antibodies: Histone H3 (Abcam, ab1791, 1:1000); Histone H4 (Abcam, ab10158, 1:1000), Vimentin (Cell Signalling Technology (CST), #5741S, 1:1000), IRDye 680RD Donkey anti-Rabbit IgG Secondary Antibody (LI-COR, 926-68073, 1:10,000), GAPDH (CST, #97166, 1:10,000), OCT4A (CST, #2840, 1:10,000), SOX2 (CST, #3579, 1:10,000), NANOG (CST, #4903, 1:10,000).
 
-## Flow cytometric analysis
+### Flow cytometric analysis
 
 Cells were seeded on Geltrex-coated dishes in TESR medium at a density of 3×103 cells/cm2. After 24 hr the medium was replaced with fresh TESR medium and after a further 24 hr the cells were harvested using TrypLE select, resuspended in TESR medium and counted (cell density at harvest was approximately 1×105 cells/cm2 for each cell line). 5×105 cells were then collected by centrifugation at 300×g for 2 min then resuspended with 1 ml of Dulbecco’s PBS (without calcium or magnesium) containing 1% fetal bovine serum. The cells were then collected by centrifugation at 300×g for 2 min and resuspended in 1 ml of ice-cold 90% methanol/10% dH2O while vortexing. Samples were then incubated for 30 min at RT before being stored at –20°C until they were analysed.
 
 For cell cycle analysis the cells were collected by centrifugation at 300×g for 2 min, washed with PBS, then resuspended in 300 µl of staining buffer (Dulbecco’s PBS+1% FBS+50 µg/ml propidium iodide, 50 µg/ml ribonuclease A) for 20 min at RT in the dark. Cellular DNA content was determined by analysis on a FACSCanto Flow Cytometer (BD Biosciences). PI fluorescence was detected using 488 nm excitation and fluorescence emission collected at 585/42 nm. Data was analysed using FlowJo software. Doublet discrimination was performed on the basis of PI-A v PI-W measurements and cell cycle distribution determined using the Watson Pragmatic model.
 
-## Cell line selection for MS
+### Cell line selection for MS
 
 hiPSCs (bubh_3, kucg_2, oaqd_3 and wibj_2) and hESCs (SA121 and SA181, H1 and H9) were analysed by MS using TMT as described below.
 
-## Protein extraction
+### Protein extraction
 
 Cell pellets were resuspended in 300 µl extraction buffer (4% SDS in 100 mM triethylammonium bicarbonate [TEAB], phosphatase inhibitors [PhosSTOP, Roche]). Samples were boiled (15 min, 95°C, 350 rpm) and sonicated for 30 cycles in a bath sonicator (Bioruptor Pico bath sonicator, Diagenode, Belgium; 30 s on, 30 s off) followed by probe sonication for 50 s (20 s on, 5 s off). 2 µl Benzonase nuclease HC (250 U/µl, Merck Millipore) was added and incubated for 30 min (37°C, 750 rpm). Reversibly oxidised cysteines were reduced with 10 mM TCEP (45 min, 22°C, 1000 rpm) followed by alkylation of free thiols with 20 mM iodoacetamide (45 min, 22°C, 1000 rpm, in the dark). Proteins were quantified using the fluorometric EZQ assay (Thermo Fisher Scientific).
 
-## Protein digestion using the SP3 method
+### Protein digestion using the SP3 method
 
 Protein extracts were cleaned and digested with the SP3 method as described previously with modifications (Hughes et al., 2014; Hughes et al., 2019). Briefly, 50 µl of a 20 µg/µl SP3 bead stock (Sera-Mag SpeedBead carboxylate-modified magnetic particles; GE Healthcare Life Sciences) and 500 µl acetonitrile (ACN; final concentration of 70%) were added to 150 µl of protein extract and incubated at RT for 10 min (1000 rpm). Tubes were mounted on a magnetic rack, supernatants were removed and beads were washed twice with 70% ethanol and once with ACN (1 ml each). Beads were resuspended in 80 µl 100 mM TEAB and digested for 4 hr with LysC followed by tryptic digestion overnight (1:50 protease:protein ratio, 37°C, 1000 rpm). Peptides were cleaned by addition of 3.5 µl formic acid (final concentration of 4%) and 1.7 ml ACN (final concentration of 95%) followed by incubation for 10 min. After spinning down (1000×g) tubes were mounted on a magnetic rack and beads were washed once with 1.5 ml ACN. Peptides were eluted from the beads with 100 µl 2% DMSO and acidified with 5.2 µl 20% formic acid (final concentration of 1%) followed by centrifugation (15,000×g). Peptide amounts were quantified using the fluorometric CBQCA assay (Thermo Scientific).
 
-## TMT labelling
+### TMT labelling
 
 For each sample 15 µg peptides per sample were dried in vacuo in a Concentrator plus (Eppendorf) and resuspended in 50 µl 200 mM EPPS pH 8.5. TMT10plex tags (Thermo Scientific) were dissolved in anhydrous ACN and added to the peptide sample in a 1:10 peptide:TMT ratio. Additional anhydrous ACN was added to a final volume of 22 µl. Samples were incubated for 2 hr (22°C, 750 rpm). Unreacted TMT was quenched by incubation with 5 µl 5% hydroxylamine for 30 min. Samples were combined, dried in vacuo, and resuspended in 1% TFA followed by clean-up with solid-phase extraction using Waters Sep-Pak tC18 50 mg. Samples were loaded, washed five times with 1 ml 0.1% TFA in water, and peptides were eluted with 70% ACN/0.1% TFA (1 ml) and dried in vacuo in a Concentrator plus (Eppendorf).
 
-## High pH reversed phase peptide fractionation
+### High pH reversed phase peptide fractionation
 
 TMT labelled peptide samples were fractionated using off-line high pH reverse phase chromatography. Dried samples were resuspended in 5% formic acid and loaded onto a 4.6×250 mm XBridge BEH130 C18 column (3.5 µm, 130 Å; Waters). Samples were separated on a Dionex Ultimate 3000 HPLC system with a flow rate of 1 ml/min. Solvents used were water (A), ACN (B), and 100 mM ammonium formate pH 9 (C). While solvent C was kept constant at 10%, solvent B started at 5% for 3 min, increased to 21.5% in 2 min, 48.8% in 11 min and 90% in 1 min, was kept at 90% for further 5 min followed by returning to starting conditions and re-equilibration for 8 min. Peptides were separated into 48 fractions, which were concatenated into 24 fractions and subsequently dried in vacuo. Peptides were redissolved in 5% formic acid and analysed by LC-MS.
 
-## LC-MS analysis
+### LC-MS analysis
 
 TMT labelled samples were analysed on an Orbitrap Fusion Tribrid mass spectrometer coupled to a Dionex RSLCnano HPLC (Thermo Scientific). Samples were loaded onto a 100 µm×2 cm Acclaim PepMap-C18 trap column (5 µm, 100 Å) with 0.1% trifluoroacetic acid for 7 min and a constant flow of 4 µl/min. Peptides were separated on a 75 µm×50 cm EASY-Spray C18 column (2 µm, 100 Å; Thermo Scientific) at 50°C using a linear gradient from 10% to 40% B in 153 min with a flow rate of 200 nl/min. Solvents used were 0.1% formic acid (A) and 80% ACN/0.1% formic acid (B). The spray was initiated by applying 2.5 kV to the EASY-Spray emitter. The ion transfer capillary temperature was set to 275°C and the radio frequency of the S-lens to 50%. Data were acquired under the control of Xcalibur software in a data-dependent mode. The number of dependent scans was 12. The full scan was acquired in the orbitrap covering the mass range of m/z 350–1400 with a mass resolution of 120,000, an AGC target of 4×105 ions and a maximum injection time of 50 ms. Precursor ions with charges between 2 and 7 and a minimum intensity of 5×103 were selected with an isolation window of m/z 1.2 for fragmentation using collision-induced dissociation in the ion trap with 35% collision energy. The ion trap scan rate was set to ‘rapid’. The AGC target was set to 1×104 ions with a maximum injection time of 50 ms and a dynamic exclusion of 60 s. During the MS3 analysis, for more accurate TMT quantification, five fragment ions were co-isolated using SPS in a window of m/z 2 and further fragmented with an HCD collision energy of 65%. The fragments were then analysed in the orbitrap with a resolution of 50,000. The AGC target was set to 5×104 ions and the maximum injection time was 105 ms.
 
-## TMT channel allocation
+### TMT channel allocation
 
-## High-resolution respirometry in wibj_2 and H1 stem cells
+<table>
+  <thead>
+    <tr>
+      <th>TMT tag</th>
+      <th>Cell line</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>126C</td>
+      <td>bubh_3 (hiPSC - female)</td>
+    </tr>
+    <tr>
+      <td>127N</td>
+      <td>H01 (hESC - male)</td>
+    </tr>
+    <tr>
+      <td>127C</td>
+      <td>kucg_2 (hiPSC - male)</td>
+    </tr>
+    <tr>
+      <td>128N</td>
+      <td>H09 (hESC - female)</td>
+    </tr>
+    <tr>
+      <td>128C</td>
+      <td>aqd_3 (hiPSC - male)</td>
+    </tr>
+    <tr>
+      <td>129N</td>
+      <td>SA121 (hESC - male)</td>
+    </tr>
+    <tr>
+      <td>129C</td>
+      <td>wibj_2 (hiPSC - female)</td>
+    </tr>
+    <tr>
+      <td>130N</td>
+      <td>SA181 (hESC - male)</td>
+    </tr>
+    <tr>
+      <td>130C</td>
+      <td>Empty</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>Empty</td>
+    </tr>
+  </tbody>
+</table>
+
+### High-resolution respirometry in wibj_2 and H1 stem cells
 
 Mitochondrial respiration was studied in digitonin-permeabilised wibj_2 and H1 stem cells (10 μg/1×106 cells) with six technical replicates per cell line, to keep mitochondria in their architectural environment. The analysis was performed in an oxygraphic chamber with thermostat set to 37°C with continuous stirring (Oxygraph-2 k, Oroboros Instruments, Innsbruck, Austria). Cells were collected with trypsin, pelleted, and then placed in MiR05 respiration medium (110 mM sucrose, 60 mM lactobionic acid, 0.5 mM EGTA, 3 mM MgCl2, 20 mM taurine, 10 mM KH2PO4, 20 mM HEPES adjusted to pH 7.1 with KOH at 30°C, and 1 g/l BSA, essentially fatty acid free). Substrate-Uncoupler-Inhibitor titration protocol number 2 (SUIT-002) (Doerrier et al., 2018) was used to determine respiratory rates. Briefly, after residual oxygen consumption in absence of endogenous fuel substrates, residual oxygen consumption (ROX), in presence of 2.5 mM ADP, was measured, fatty acid oxidation pathway state (F) was evaluated by adding malate (0.1 mM) and octanoyl carnitine (0.2 mM) (OctMP). Membrane integrity was tested by adding cytochrome c (10 μM) (OctMcP). Subsequently, the NADH electron transfer pathway state (FN) was studied by adding a high concentration of malate (2 mM, OctMP), pyruvate (5 mM, OctPMP), and glutamate (10 mM, OctPGMP). Then, succinate (10 mM, OctPGMSP) was added to stimulate the S pathway (FNS), followed by glycerophosphate (10 mM, OctPGMSGpP) to reach convergent electron flow in the FNSGp pathway to the Q-junction. Uncoupled respiration was next measured by performing a titration with CCCP (OctPGMSGpE), followed by inhibition of complex I (SGpE) with rotenone (0.5 μM, SGpE). Finally, ROX was measured by adding Antimycin A (2.5 μM). ROX was then subtracted from all respiratory states, to obtain mitochondrial respiration. Results are expressed in pmol · s−1 · 1×106 cells. The P/E control ratio, which reflects the control by coupling and limitation by the phosphorylation system, was subsequently calculated by dividing the OctPGMSGpP value by the OctPGMSGpE value.
 
-## Radiolabelled glutamine uptake (protocol was adapted from Yeramian et al., 2006)
+### Radiolabelled glutamine uptake (protocol was adapted from Yeramian et al., 2006)
 
 Two hiPSC lines (wibj_2 and oaqd_3) with three technical replicates each were compared to two hESC lines (SA121 and SA181) with three technical replicates of each. Both hiPSCs and hESCs were plated in six-well plates 2 days before the transport assay (5×104 cells/cm2 – this gives 1×106 cells/well on ‘uptake day’). The cell growth media was carefully aspirated so as not to disturb the adherent monolayer of cells. They were washed gently by pipetting with 5 ml preheated (37°C) uptake solution (HBSS [pH 7.4], Gibco) and aspirating off. This was repeated three times. They were then incubated with 0.5 ml of uptake solution containing [3H]glutamine (5 μCi/ml; Perkin Elmer, NET 55100) in either the presence, or absence, of L-glutamine (5 mM; Sigma) for 2 min.
 
@@ -196,42 +437,42 @@ Glutamine uptake was stopped by removing the uptake solution and washing cells w
 
 The net glutamine CPM values were calculated by subtracting the Quench CPM values from the glutamine CPM values.
 
-## TEM sample preparation
+### TEM sample preparation
 
 wibj_2 and H1 cells were fixed on the dish in 4% paraformaldehyde and 2.5% glutaraldehyde in 0.1 M sodium cacodylate buffer (pH 7.2) for 30 min then scraped and transferred to a tube and fixed for a further 30 min prior to pelleting. The pellets were cut into small pieces, washed three times in cacodylate buffer and then post-fixed in 1% OsO4 with 1.5% Na ferricyanide in cacodylate buffer for 60 min. After another three washes in cacodylate buffer they were contrasted with 1% tannic acid and 1% uranyl acetate. The cell pellets were then dehydrated through alcohol series into 100% ethanol, changed to propylene oxide left overnight in 50% propylene oxide 50% resin and finally embedded in 100% Durcupan resin (Sigma). The resin was polymerised at 60°C for 48 hr and sectioned on a Leica UCT ultramicrotome. Sections were contrasted with 3% aqueous uranyl acetate and Reynolds lead citrate before imaging on a JEOL 1200EX TEM using a SIS III camera.
 
-## Proteomics search parameters
+### Proteomics search parameters
 
 The data were searched and quantified with MaxQuant (Cox and Mann, 2008) (version 1.6.7) against the human SwissProt database from UniProt (The UniProt, 2017) (November 2019). The data were searched with the following parameters: type was set to Reporter ion on MS3 with 10plex TMT, stable modification of carbamidomethyl (C), variable modifications of oxidation (M), acetylation (proteins N terminus), and deamidation (NQ). The missed cleavage threshold was set to 2, and the minimum peptide length was set to 7 amino acids. The FDR was set to 1% for positive identification at the protein and peptide spectrum match level.
 
-## Unique, shared, and razor peptides
+### Unique, shared, and razor peptides
 
 Peptides which are exclusive to a single protein group are considered unique peptides. Peptides whose sequences match more than one protein group are called shared peptides. Razor peptides are shared peptides whose intensity gets assigned to a single protein group despite matching multiple protein groups.
 
-## Data filtering
+### Data filtering
 
 All protein groups identified with less than either 2 razor or unique peptides or labelled as ‘Contaminant’, ‘Reverse’, or ‘Only identified by site’ were removed from the analysis.
 
-## Peptide normalisation
+### Peptide normalisation
 
 For Figure 6—figure supplement 1 and Figure 6—figure supplement 2 peptide intensities were divided by the sum of the intensity from all histone peptides and were multiplied by 1×106.
 
-## Copy number calculations
+### Copy number calculations
 
 Protein copy numbers were estimated following the ‘proteomic ruler’ method (Wiśniewski et al., 2014), but adapted to work with TMT MS3 data. The summed MS1 intensities were allocated to the different experimental conditions according to their fractional MS3 reporter intensities.
 
-## Protein content estimations
+### Protein content estimations
 
 The protein content was estimated using the following formula: CN × MW and then converting the data from daltons to picograms, where CN is the protein copy number and MW is the protein molecular weight (in Da).
 
-## Differential expression analysis
+### Differential expression analysis
 
 Fold changes and p-values were calculated in R. For individual proteins the p-values were calculated with the bioconductor package LIMMA (Ritchie et al., 2015) version 3.7. The q-values provided were generated in R using the ‘qvalue’ package version 2.10.0. p-Values for protein families and protein complexes were calculated in R using Welch’s t-test.
 
-## hiPSC vs hESC overrepresentation analysis
+### hiPSC vs hESC overrepresentation analysis
 
 All overrepresentation analysis were done on WebGestalt. The first analysis selected proteins with a fold change>2 and a q-value<0.001. The second analysis selected proteins whose fold change was lower than the median minus one standard deviation (0.195) and a q-value<0.001. Both analyses used all identified proteins with 2 or more razor and unique peptides as a background and required an FDR lower than 0.05.
 
-## Peptide coverage figures
+### Peptide coverage figures
 
 Figure 6—figure supplement 1 and Figure 6—figure supplement 2 were generated with Protter (Omasits et al., 2014).

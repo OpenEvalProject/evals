@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 Department of Psychology, University of Arizona Tucson United States
+1. Department of Psychology, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 

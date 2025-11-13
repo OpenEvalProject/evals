@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0495fxg12 Institut Pasteur, Université Paris Cité, Malaria Infection and Immunity, BioSPC Paris France
-2. https://ror.org/041kmwe10 Department of Life Sciences, Imperial College London London United Kingdom
+1. Institut Pasteur, Université Paris Cité, Malaria Infection and Immunity, BioSPC Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+2. Department of Life Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ Yet, while the role of the skin in anti-CSP Abs-mediated sporozoite neutralizati
 
 ## Results
 
-## Tissue-dependent neutralization of Pb sporozoites
+### Tissue-dependent neutralization of Pb sporozoites
 
 To assess how efficiently the anti-PbCSP repeat mAb 3D11 targets sporozoites in the skin and in the BL, mice were passively immunized intraperitoneally with 100 µg of mAb 3D11 or with an isotype control (W24). Twenty-four hours later, animals were challenged either i.v. or micro-injected into the skin with, respectively, 1000 and 5000 GFP-expressing sporozoites. The sporozoite inoculum was adjusted to achieve comparable infection regardless of the route of parasite injection as reflected by the similar parasitemia of the control groups, measured by the percentage of infected red blood cells by flow cytometry (Figure 1A, W24). In addition, we compared the results obtained following these two routes of inoculation with infection initiated by sporozoites naturally transmitted by mosquitos. The extent of bite exposure was adjusted to reach a level of host infection equivalent to that obtained after skin and i.v. challenge. Protection was assessed by measuring the parasitemia 5 days after sporozoite inoculation when parasites are still growing exponentially in the blood (Figure 1A). Sterile protection was defined as the percentage of uninfected animals 10 days after the challenge (Figure 1B). The skin and the bite challenge allowed us to study 3D11 neutralizing activity in the cutaneous tissue as well as in the BL, while the i.v. challenge bypasses the skin, and reflects only the mAb-neutralizing activity in the BL.
 
@@ -44,25 +44,51 @@ Passive transfer of 100 µg of mAb 3D11 sterilely protected animals only when sp
 
 Next, we investigated the impact of higher mAb concentration on sporozoite neutralization in the BL. Following the same passive immunization schedule, we compared the parasitemia of mice injected intraperitoneally with 100 and 300 µg of mAb 3D11 and challenged i.v. 24 hr later. Increasing the mAb dose to 300 µg further reduced the parasitemia by ~100-fold compared to the control (Figure 1C). However, this threefold increase of the mAb dose still failed to confer sterile protection against i.v. challenge while 100 µg of 3D11 were sufficient to clear the infection in 86–100% of the mice after skin or bite challenge (Figure 1A, C). These results indicate that 3D11 sporozoite neutralization in the BL is concentration dependent but is not as efficient as in the skin.
 
-## Kinetics of Pb sporozoite elimination in the liver
+### Kinetics of Pb sporozoite elimination in the liver
 
 To further characterize 3D11 sporozoite neutralization in the BL, we first quantified the biodistribution and elimination of parasites in the mouse body by bioluminescence imaging following infection with sporozoites constitutively expressing a GFP-luciferase fusion protein. By comparing parasite load in 3D11- and PBS-treated mice at four critical time points covering the parasite hepatic life cycle (Figure 2A), we measured the potential of 3D11 to (1) kill parasites in the blood, (2) inhibit the specific arrest of sporozoites in the liver, and (3) hinder their intracellular development.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig2-v1.jpg)
+
+**Figure 2.:** (A–E) To assess the kinetics of parasite killing by 3D11, either PBS (control) or 100 µg of 3D11 mAb (3D11) were i.v. injected in mice 10–15 min before the i.v. inoculation of sporozoites expressing GFP-luciferase. Parasite load in the liver was assessed by bioluminescence. (A) Top: Schematic representation of sporozoite homing, invasion, and development in the liver after i.v. injection. Bottom: Time schedule of the experiment. spz: sporozoites. (B) Exemplary picture of the recorded bioluminescence images and selected regions of interest (in red, ROIs). The signal in the third quadrant was used to measure liver infection. Measurement was performed 7 min after spz inoculation in control and mice passively transferred with 3D11. Scale in radiance (photons/s/cm2/sr). (C) Quantification of the percentage of the signal collected from the liver compared to the whole body. Statistical significance was analyzed using the unpaired t-test. (D) Total flux (photons/s) in the liver of mice from control and 3D11 groups. Statistical significance was determined by Kruskal–Wallis test. BG: background signal. (E) The ratio of the total flux in the liver between control and 3D11mAb-treated mice. (C–E) n = 5 mice from two independent experiments. Data are presented as means ± SD. The cartoon was created with BioRender.com.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The analyzed region of interest (ROI) at 24 and 44 hr was located in the upper abdominal region. In comparison, at 72 hr, we analyzed the signal of the whole body since, at this time point, the parasites are outside the liver and have invaded the erythrocytes. The Kruskal–Wallis test determined statistical significance. Data are presented as means ± SD.
 
 For the quantification of parasite load in the hepatic tissue, the body of each animal was divided into four regions of interest (ROIs), and the bioluminescent signal emanating from the upper abdominal ROI was attributed to the liver (Figure 2B; Tavares et al., 2017). Mice were i.v. injected with PBS or 100 µg of 3D11 to maximize mAb transfer into the blood circulation. Bioluminescence distribution in the mouse body was then measured 7 min after parasite inoculation to quantify the specific arrest of sporozoites in the liver (Tavares et al., 2017). By calculating the ratio between the total flux of photons in the hepatic ROI and the total flux in the whole body over 5 min acquisition (Figure 2B), we estimated the percentage of parasites accumulating in the liver between 7 and 12 min after sporozoite injection (Figure 2B, left: control, right: 3D11-treated mouse). The total flux and the percentage of signal in the liver were not affected by the presence of 3D11 (83% for control vs. 87% for 3D11-treated mice p = 0.36, Figure 2C, D, 7 min), indicating that 3D11 neither significantly killed parasites at this early time point of infection nor affected sporozoite arrest in the liver.
 
 Bioluminescence was further measured in the same animals 4, 24, 44 hr (Figure 2), and 72 hr later (Figure 2—figure supplement 1). Since most sporozoites cross the liver sinusoidal barrier within 3 hr post-i.v. inoculation (Mathieu et al., 2015; Tavares et al., 2013), the bioluminescent signal acquired in the hepatic region at 4 hr in the control group should correspond to sporozoites inside the liver parenchyma, while between 24 and 44 hr, the signal should reflect the development of exoerythrocytic forms (EEFs) within the hepatocytes (Figure 2A). At 4 hr, the difference between the 3D11- and the vehicle-treated group was ~twofold, but it was not statistically different. In comparison, at 24 hr, a >20-fold decrease in the relative parasite load was evident (p = 0.008, Figure 2D, E). This difference slightly increased but not significantly from 24 to 72 hr (Figure 2D, Figure 2—figure supplement 1), suggesting a potential although small effect of 3D11 mAb at this concentration on late liver stages. Altogether, these data indicate that 3D11, rather than having an early effect on i.v. inoculated sporozoites in the blood circulation for example, by inhibiting the homing or killing the parasite in the blood, requires more than 4 hr to eliminate most parasites in the liver.
 
-## The effect of a cytotoxic mAb on sporozoite crossing of the sinusoidal barrier
+### The effect of a cytotoxic mAb on sporozoite crossing of the sinusoidal barrier
 
 In vivo bioluminescence imaging of liver infection showed that 3D11 mAb eliminated most of the parasites between 4 and 24 hr post-i.v. inoculation. Yet, it remained unclear whether parasites were dying in the lumen of the hepatic sinusoids or inside the hepatic parenchyma. To better observe 3D11’s neutralizing mode of action, we imaged parasites in the liver using intravital fluorescence high-speed confocal microscopy.
 
 A titanium window was surgically inserted in the abdomen of mice (Ritsma et al., 2013) expressing GFP in endothelial cells (Xu et al., 2010), allowing for the longitudinal visualization of sporozoites and liver sinusoids. For these experiments, we followed the same experimental design as for the bioluminescent assay (Figure 3A). After the i.v. injection of 100 µg of 3D11, mice were anesthetized and placed on the heated stage of an inverted microscope. Similar amounts of 3D11-susceptible Pb sporozoites expressing mCherry (Pb mCherry) and non-susceptible Pb sporozoites expressing PfCSP and GFP (PbPf GFP) were then co-injected (Figure 3—figure supplement 1A) while simultaneously recording to capture the first moments of parasite arrest in the liver sinusoids (Tavares et al., 2017). Equivalent numbers of susceptible (n = 80) and non-susceptible (n = 86) sporozoites were observed by microscopy in the analyzed fields, indicating that 3D11 did not impair parasite arrest in the liver sinusoids or significantly kill sporozoites during the first 2 hr after i.v. inoculation (Figure 3B), as observed by bioluminescence (Figure 2C, 7 min).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig3-v1.jpg)
+
+**Figure 3.:** (A) Graphical representation of the experimental setup to analyze sporozoite localization in the liver. For intravital experiments (in vivo), flk1-GFP female mice were transferred intravenously with 100 µg of 3D11. Ten minutes later, the animals were placed on the microscope stage and susceptible (Pb mCherry) and control sporozoites (PbPf GFP) were co-inoculated i.v. into the tail vein. For ex vivo experiments, 3D11 was transferred 10 min before sporozoite injection, and 1 hr later the liver was dissected and imaged. (B) Quantification of motility inhibition over time. Data from four independent experiments. (C) Representative images of one focal plane showing sporozoites inside the sinusoid lumen (left panel) or the hepatic parenchyma (right panel). Pb mCherry is shown in red and the GFP expressed by liver sinusoidal endothelial cells in white. Scale bar: 10µm. (D) Left panel: Quantification of the localization of Pb mCherry (red) and PbPf GFP (black) sporozoites determined in vivo between 30 min to 3 hr post-inoculation. Data from two independent experiments including a total of three animals. Statistical significance was determined by the Chi-square test. Right panel: Quantification of sporozoite localization ex vivo determined 1 hr post-inoculation. Data from two independent experiments. On top of the graphs is represented the number of quantified sporozoites. Data are presented as means ± SD. Cartoon was done with BioRender.com.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The total amount of sporozoites as well as the percentage of Pb mCherry or PbPf GFP sporozoites that were injected in each experiment in Figure 3. 8.2, 8.3, 8.4, 8.6: motility analysis. 8.2, 8.3: intravital imagining experiments. 8.7 and 8.10: ex vivo imaging. (B) Log percentage parasitemia of mice used for intravital imaging experiments 3 days after sporozoites injection. Statistical significance was determined using the paired t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig3-figsupp2-v1.jpg)
+
 Next, we quantified the inhibition of sporozoite motility by 3D11 in vivo. Sporozoites were scored as motile if they moved at least one body length in 5 min, otherwise, they were considered non-motile. Additionally, we also quantified if the parasites were inside the vessel or outside that is, in the hepatic parenchyma (Figure 3C, Figure 3—figure supplement 2). Since 3D11 does not target PbPf GFP parasites, most of them are motile in the first hour of analysis, making them easily distinguishable from GFP-expressing endothelial cells (Figure 3—figure supplement 2). Already 10 min after inoculation, 3D11-susceptible parasites displayed a strong impairment in motility compared to the control parasites in passively immunized mice (Figure 3B). At this time point, sporozoites were only occasionally observed dying during these first minutes. Thirty minutes after sporozoite injection, almost none of the susceptible Pb mCherry parasites were motile while 50% of the control PbPf GFP sporozoites were still moving. Two hours later, a similar number of PbPf (n = 18, Figure 3D) and Pb (n = 29, Figure 3D) sporozoites were found in the liver, all, already immotile. Strikingly, only 52% of the Pb mCherry susceptible sporozoites were found in the parenchyma in contrast to 89% of non-susceptible parasites, indicating that 3D11 affects sporozoite entry into the hepatic parenchyma (Figure 3D). To exclude any effect coming from the insertion of the window on these results, additional experiments were performed by imaging dissected livers of passively immunized mice. Ex vivo, we observed that after 1 hr, 97% of the control parasites (n = 34) were inside the parenchyma in contrast to 53% of the susceptible sporozoites (n = 45), confirming the results of the in vivo experiments. Since comparable numbers of Pb mCherry and PbPf GFP sporozoites were found in the microscopic fields quantified in vivo and ex vivo (Figure 3D), we can infer that 3D11 blocks sporozoite entry into the hepatic parenchyma by around twofold. Yet, this impairment alone cannot explain the decrease of at least one order of magnitude in the parasitemia measured 3–4 days after infection in the mice used for in vivo imaging (Figure 3—figure supplement 1B). Hence, in 3D11-treated mice, most sporozoites die in the hepatic parenchyma probably due to the loss of fitness caused by the 3D11 mAb. However, whether the late reduction in parasite load occurring after 4 hr post-infection is associated with the death of extracellular sporozoites that failed to invade hepatocytes or corresponds to the clearance of parasites undergoing abortive intracellular development could not be addressed in vivo.
 
-## In vitro effect of 3D11 on sporozoite invasion and development
+### In vitro effect of 3D11 on sporozoite invasion and development
 
 To better understand the late-neutralizing effect of 3D11 mAb observed on sporozoites in vivo, we performed an invasion and development assay in vitro (Prudêncio et al., 2008) using Pb GFP-expressing sporozoites to infect the hepatoma cell line HepG2 in the presence or absence of 3D11. We quantified sporozoite invasion at 2 hr and ensuing intracellular development at 15 or 44 hr post-infection by flow cytometry. To overcome the variable invasion rates achieved across multiple experiments, the number of GFP+ cells in the cultures treated with 3D11 was normalized by the corresponding value in matching PBS-treated cultures and expressed as a percentage of control. In addition, by comparing the total number of recovered GFP+ sporozoites at 2 hr in the two studied conditions, we measured the early lethality (%viable sporozoites, Figure 4B) of the anti-CSP Ab on the extracellular forms of the parasite (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental setup to measure the impact of 3D11 on sporozoite invasion and exoerythrocytic form (EEF) development in HepG2 cells. Each experiment was performed in triplicates in the presence or absence of different concentrations of 3D11. Two identical plates were prepared to assess invasion at 2 hr and development at 15 and 44 hr post-infection. Cells, as well as the supernatant, were analyzed by flow cytometry (B). Inhibition of HepG2 invasion by sporozoites was measured 2 hr after parasites were added to the culture in the presence of 3D11 (blue square). In the same assay, sporozoite viability was quantified as the percentage of viable sporozoites after 2 hr relative to the control (yellow triangle). (C) In addition to the invasion assay, development inhibition was quantified at 15 (pink inverted triangle) and 44 hr (blue rhombus) after sporozoite addition to the cells. (D) Comparison between the percentage of infected HepG2 cells at 44 and 2 hr. (E) Mean fluorescent intensity (MFI) of EEFs 44 hr post-infection. (B–E) Data were combined from three to seven independent experiments. Bars represent the mean ± SEM. (F) Left: Representative images of intracellular parasites after being treated with 1.25 µg/ml 3D11. For treated parasites: 2, 15, and 44 hr after sporozoite and 3D11 addition, the cultures were washed, fixed, and permeabilized, allowing the internalized 3D11 to be revealed using a goat anti-mouse 647 antibody (cyan). Right: Control parasites were labeled post-permeabilization with 3D11 to visualize circumsporozoite protein (CSP) expression (green). Scale bar: 10µm. (G) The effect of 3D11 after sporozoite invasion was measured by adding 3D11 2 hr after sporozoites were added to the culture (purple triangle, 2 hr). 3D11 was added simultaneously with the sporozoites for 2 hr in the positive control group (green circle, 0 hr). Symbols represent two independent experiments, each with two technical replicates. Schematic created using BioRender.com.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105291/elife-105291-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** After 2 hr, sporozoites can be found in the supernatant in the culture, attached to the cells, or inside the cells. We used the following gating strategy to analyze these three populations using the supernatant and the trypsinized cells (Figure 4A). (A) Gating strategy used to detect sporozoites that did not attach to or invaded cells at 2 hr in samples supernatant. This parasite population was quantified using the green gate (SPZ outside HepG2). (B) After trypsinization, we used the same gating strategy to quantify the sporozoites inside (invaded, orange gate) or outside (attached, green gate) the HepG2 cells. The total number of sporozoites was calculated using these three populations: parasites found outside the cells in the supernatant and inside and outside of HepG2 cells after trypsinization. (C) Forty-four hours later, only the exoerythrocytic forms (EEFs) inside the cells (GFP+ cells) were quantified.
 
 At 2 hr, increasing concentrations of 3D11 were associated with a drastic reduction in the number of recovered extracellular sporozoites as well as a marked decrease in the percentage of GFP+ invaded cells compared to PBS controls. 3D11, therefore, kills and inhibits parasite entry into cells in a dose-dependent manner (Figure 4B, 2 hr). The inhibition patterns of cell invasion and parasite killing were similar suggesting that the Ab’s cytotoxic effect could account for part of the invasion inhibition in this setting. However, the causality of this association still needs to be demonstrated since at low 3D11 concentrations the inhibition of invasion was higher than killing.
 
@@ -90,7 +116,87 @@ In conclusion, this study shows the kinetics of sporozoite elimination by the cy
 
 ## Materials and methods
 
-## Parasites, mosquitoes, and mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>HB-8065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>RjOrl:SWISS</td>
+      <td>Janvier Laboratories</td>
+      <td>Cat#SN-SWISS-F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Laboratories</td>
+      <td>Cat#SC-C57J-F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Anopheles stephensi)</td>
+      <td>SDA 500</td>
+      <td>CEPIA</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium berghei)</td>
+      <td>ANKA, Pb GFP</td>
+      <td>Ishino et al., 2006</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium berghei)</td>
+      <td>ANKA, Pb mCherry</td>
+      <td>Aguirre-Botero et al., 2023</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium berghei)</td>
+      <td>ANKA, Pb GFP- luciferase</td>
+      <td>Franke-Fayard et al., 2008</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium berghei)</td>
+      <td>ANKA, PbPf</td>
+      <td>Wang et al., 2020</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>3D11 (mouse monoclonal)</td>
+      <td>BEI Resources</td>
+      <td>MRA-100</td>
+      <td>(0.006–100 µg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasites, mosquitoes, and mice
 
 For the i.v., skin, and bite challenges, we used transgenic Pb ANKA strain parasites expressing GFP (PbGFP) (Ishino et al., 2006). Pb parasites expressing GFP-luciferase (Pb GFP-luciferase) (Franke-Fayard et al., 2008) were used for bioluminescence imaging. For intravital and ex vivo microscopy of the infected livers, Pb ANKA expressing both GFP and the full-length Pf 3D7 CSP (PbPf GFP) (Wang et al., 2020) and Pb ANKA expressing mCherry (Pb mCherry) (Aguirre-Botero et al., 2023) were used.
 
@@ -98,33 +204,33 @@ Anopheles stephensi (strain SDA 500) mosquitoes were reared at the Center for Pr
 
 Sporozoite challenge and bioluminescence experiments were performed on female 4-week-old C57BL/6JRj mice (Janvier Labs). For intravital and ex vivo experiments flk1-GFP female mice aged of 5–8 weeks were used. Mice were kept in the animal facility of the CEPIA at the Institut Pasteur in Paris accredited by the French Ministry of Agriculture for performing experiments on live rodents. All experiments were performed according to French and European regulations and were approved by the Ethics Committee #89 (references MESR 01324, APAFIS#32422-2021071317049057 v2, APAFIS #32989-2021091516594748 v1).
 
-## mAb production and injection
+### mAb production and injection
 
 The mouse 3D11 anti-Pb CSP repeats IgG1 mAb was produced by an established hybridoma cell line (MRA-100, BEI Resources) (Eichinger et al., 1986). W24 binds to the N-terminal domain of Py CSP and was used as an isotype control (Aliprandini et al., 2018). The hybridoma was cultured after the protocol of Köhler and Milstein, 1975. The mAbs were isolated from the culture supernatants by affinity chromatography using Protein G beads (GE Healthcare).
 
-## Sporozoite challenge
+### Sporozoite challenge
 
 Abs were diluted in 1× PBS and transferred intraperitoneally 24 hr before sporozoite injection or mosquito bite challenge. Mice were treated with the 3D11 mAb or, as control, with either PBS or W24 mAb. For the skin challenge, 5000 sporozoites were injected into the footpad of the mice using a 35 G needle mounted on a NanoFil 10 μl syringe (Word Precision Instruments). The i.v. challenge was performed by inoculating 1000 sporozoites in the tail vein. Bite challenge experiments were performed using infected female A. stephensi mosquitoes. Mice were anesthetized using a mixture of ketamine (60 mg/kg body weight; Imalgene 1000, Merial) and xylazine (6 mg/kg body weight; 2% Rompun, Bayern). Then mice were exposed to 10–16 mosquitoes (2 mice per pot) to be bitten for 30 min. The animals were rotated between the pots of each experimental group every 30–60 s.
 
 To determine parasitemia, a drop of blood was collected at the tip of the tail in PBS 3–10 days after infection. Infected red blood cells were distinguished from non-infected by detecting the fluorescence emitted by the parasite’s cytoplasmic GFP and quantified by cytometry (CytoFLEX S, Beckman). 250,000–500,000 events were recorded. Previously, the sample size was determined by comparing two unmatched group means using a parametric two-tailed test, taking experimental data into account.
 
-## Bioluminescence experiments
+### Bioluminescence experiments
 
 Analysis of the parasite load within animals infected with Pb expressing luciferase sporozoites was performed as previously described (Tavares et al., 2017). Briefly, the abdominal areas of 4-week-old C57BL/6JRj female mice were shaved 24 hr before infection. Ten minutes after i.v. transfer of 100 µg of 3D11 Abs in 1× PBS, 150,000 sporozoites were i.v. injected. Immediately after parasite inoculation, mice were anesthetized with 2.5% isoflurane for 2 min. Subsequently, the animals were injected subcutaneously with 150 mg/kg body weight of D-luciferin/PBS (PerkinElmer). After 5 min the signal was acquired using the IVIS SpectrumCT (PerkinElmer). Succeeding acquisitions were taken 4, 24, and 44 hr later. For analysis, four ROIs were manually defined using the Living Image. For Figure 2F, the background noise was eliminated by subtracting from each ROI the signal obtained from the corresponding ROI applied to a non-infected mouse injected with D-luciferin.
 
-## Intravital and ex vivo microscopy
+### Intravital and ex vivo microscopy
 
 For intravital imaging, the liver of flk1-GFP mice was surgically exposed by inserting on the abdomen of the animal a titanium ring covered by a 12-mm coverslip. Twenty-four hours after the operation, the mice were injected with 3D11 Ab, anesthetized, and positioned on the microscope stage where they were injected with 0.5 × 106 to 1 × 106 PbPf GFP and Pb mCherry parasites (1:1 ratio). Image acquisition was started immediately after parasite injection. The time-lapse between Ab and parasite injection was 10 min. For ex vivo experiments, no titanium window was inserted into the abdomen of the flk1-GFP mice. Ab and parasite injections were performed as described above in unanesthetized mice. One hour after the injections, the animals were anesthetized, the liver was surgically removed, and imaged.
 
 For intravital and ex vivo microscopy experiments, livers were scanned systematically and for each field, a Z-stack and a time-lapse of 5–10 min were acquired over 2–3 hr after infection. Imaging was performed on a spinning-disk confocal system (UltraView ERS, PerkinElmer) controlled by Volocity (PerkinElmer) and composed of 4 Diode Pumped Solid State Lasers (excitation wavelengths: 405, 488, 561, and 640 nm), a Yokogawa Confocal Scanner Unit CSU22, a z-axis piezoelectric actuator and a Hamamatsu Orca-Flash 4.0 camera mounted on a Axiovert 200 microscope (Zeiss), using a 5–40× long-distance dry or oil-immersion objectives (Zeiss). Images were processed using Fiji (Schindelin et al., 2012).
 
-## In vitro invasion and development assay
+### In vitro invasion and development assay
 
 Sporozoite invasion and development of the EEFs were quantified by flow cytometry as previously described (Prudêncio et al., 2008). Briefly, HepG2 cells (4 × 104/well) were seeded in a 96-well plate and cultured overnight in DMEM (Invitrogen) supplemented with 10% heat-inactivated FCS, 1× of non-essential amino acids (Sigma) and 2% of penicillin–streptomycin–neomycin antibiotic mixture (Sigma). Uninfected and infected cells were maintained at 37°C and 5% CO2. 10,000 PbGFP parasites were incubated with the cells (1:4 ratio) in the presence or absence of different 3D11 Ab concentrations. After 2 hr, the supernatant was collected, and the culture was washed 2× with 0.5 volume of PBS. The cells were subsequently trypsinized. The supernatant plus the washing steps and the trypsinized cells were analyzed by flow cytometry to quantify the amount of GFP+ events inside and outside cells (Figure 4A, Figure 4—figure supplement 1). Viability was then quantified by the sum of the total number of sporozoites (GPF+ events) in the supernatant, inside and outside the cells. We calculated the percentage of parasite viability by dividing the average of the total number of sporozoites in the treated samples by the average in controls using three technical replicates for each condition.
 
 Additionally, we quantified the percentage of infected cells using the total number of GFP+ events in the HepG2 gate (Figure 4—figure supplement 1). To compare the biological replicates, we further normalized to the control of each experiment. For the samples used to analyze parasite development, the cells were incubated for 15 or 44 hr after sporozoite addition, and the medium was changed after 2 and 24 hr. The cells were trypsinized and the percentage of intracellular parasites was determined by flow cytometry as described above (Figure 4—figure supplement 1). The prolonged effect between 2 and 15/44 hr was calculated by normalizing the percentage of infected cells at 15/44 hr to that of 2 hr. For all flow cytometry measurements, the same volume was acquired.
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 Cells were infected and maintained for the immunofluorescence analysis of the parasites in the HepG2 culture, as described above. In this case, 2.5 × 104 cells per condition with 6250 sporozoites were incubated in a half 96-well plate with or without of 1.25 µg/ml 3D11. After 2, 4, and 44 hr, cultures were fixed with 4% formaldehyde. The double immunostaining protocol was used to differentiate between the extra- and intracellular parasites (Rénia et al., 1988; Silvie et al., 2002).
 
@@ -132,6 +238,6 @@ To visualize the presence of 3D11 in intracellular parasites, a goat anti-mouse 
 
 For the UIS4 staining, extracellular parasites were labeled with 1 µg/ml 3D11 and revealed with a goat anti-mouse Alexa 568 IgG. Cells were subsequently permeabilized, stained using a goat anti-UIS4 antibody, and revealed with a rabbit anti-goat Alexa 547 antibody. For nuclear visualization, 1 µg/ml Hoechst 33342 was used. Imaging was performed on a spinning-disk confocal system (UltraView ERS, PerkinElmer).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was determined with a one-way ANOVA with Holm–Šídák correction for multiple comparisons, the Kruskal–Wallis test with Dunn’s correction for multiple comparisons, paired and unpaired t-tests, and the Chi-square test with the help of GraphPad Prism 10.

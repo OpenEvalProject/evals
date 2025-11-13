@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.48971.001 The subjective inner experience of mental imagery is among the most ubiquitous human experiences in daily life. Elucidating the neural implementation underpinning the dynamic construction of mental imagery is critical to understanding high-order cognitive function in the human brain. Here, we applied a frequency-tagging method to isolate the top-down process of speech mental imagery from bottom-up sensory-driven activities and concurrently tracked the neural processing time scales corresponding to the two processes in human subjects. Notably, by estimating the source of the magnetoencephalography (MEG) signals, we identified isolated brain networks activated at the imagery-rate frequency. In contrast, more extensive brain regions in the auditory temporal cortex were activated at the stimulus-rate frequency. Furthermore, intracranial stereotactic electroencephalogram (sEEG) evidence confirmed the participation of the inferior frontal gyrus in generating speech mental imagery. Our results indicate that a disassociated neural network underlies the dynamic construction of speech mental imagery independent of auditory perception.
+The subjective inner experience of mental imagery is among the most ubiquitous human experiences in daily life. Elucidating the neural implementation underpinning the dynamic construction of mental imagery is critical to understanding high-order cognitive function in the human brain. Here, we applied a frequency-tagging method to isolate the top-down process of speech mental imagery from bottom-up sensory-driven activities and concurrently tracked the neural processing time scales corresponding to the two processes in human subjects. Notably, by estimating the source of the magnetoencephalography (MEG) signals, we identified isolated brain networks activated at the imagery-rate frequency. In contrast, more extensive brain regions in the auditory temporal cortex were activated at the stimulus-rate frequency. Furthermore, intracranial stereotactic electroencephalogram (sEEG) evidence confirmed the participation of the inferior frontal gyrus in generating speech mental imagery. Our results indicate that a disassociated neural network underlies the dynamic construction of speech mental imagery independent of auditory perception.
 
 ## Introduction
 
@@ -37,23 +37,270 @@ Here, we apply the frequency-tagging method in a behavioral task involving speec
 
 ## Results
 
-## Cortical tracking of speech mental imagery
+### Cortical tracking of speech mental imagery
 
 In the MEG study, we aimed to identify the cortical representations of speech mental imagery independent of stimulus-driven responses. We constructed a 4 Hz sequence of auditory stimuli that were mentally organized into 0.8 Hz groups by a speech mental imagery task (Figure 1a). Specifically, participants were asked to count in their minds following a sequence of 50 ms pure tones presented at 250 ms onset-to-onset intervals, and they were instructed to count from 1 to 10 in groups of 5 numbers (1, 2, 3, 4, 5, 2, 2, 3, 4, 5, 3, 2, 3, 4, 5…10, 2, 3, 4, 5) until the 50 pure tones terminated. As a result, when the subjects were performing the task, the spectral peaks were significant at the frequency of 0.8 Hz, corresponding to the grouping-rate rhythm of the mental imagery (t19 = 5.33, p=4.2 × 10−4, Cohen’s d = 1.19, one-tailed paired t test, false discovery rate [FDR] corrected), and at the frequency of 4 Hz, corresponding to the rate of the auditory stimuli (t19 = 18.45, corrected p=3.0 × 10−12, Cohen’s d = 4.13) (Figure 1b). An additional harmonic peak at 1.6 Hz was found at the significance level of 0.05 (t19 = 3.18, corrected p=0.04, Cohen’s d = 0.96). No significant peaks were observed at the harmonic frequencies of 2.4 Hz (t19 = 2.46, corrected p=0.10, Cohen’s d = 0.55) and 3.2 Hz (t19 = 2.75, corrected p=0.07, marginally significant, Cohen’s d = 0.62). In contrast, under the control (baseline) condition, in which the participant received identical auditory stimuli without the imagery task, a significant peak was observed only at the stimulus-rate frequency of 4 Hz (t19 = 14.23, corrected p=3.1 × 10−10, Cohen’s d = 3.18). The topographic distribution of the grand averaged power at the imagery-rate frequency (0.8 Hz) and stimulus-rate frequency (4 Hz) displayed bilateral responses. Specifically, the two-tailed paired t test showed that the averaged power over the sensors in the right hemisphere was significantly stronger than that in the left hemisphere at 4 Hz under both the mental imagery condition (t19 = 3.78, p=0.001, Cohen’s d = 0.84) and the baseline condition (t19 = 3.21, p=0.004, Cohen’s d = 0.72) but not at the imagery-rate frequency of 0.8 Hz under the mental imagery condition (t19 = 0.34, p=0.72, Cohen’s d = 0.08).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig1-v1.jpg)
 
-**Figure 1.:** (a) Under the mental imagery condition (left), a sequence of pure tones was presented with 250 ms onset-to-onset intervals. The participants were asked to loudly count in their minds by grouping every five numbers (with the imagery task), forming an imagery-rate frequency of 0.8 Hz and a stimulus-rate frequency of 4 Hz. Under the baseline condition (right), the participants passively listened to the same sounds without performing a task. (b) Significant spectral peaks were found at 0.8 Hz and its harmonics under the mental imagery condition, and significant 4 Hz peaks were found under both conditions (paired one-sided t test, FDR corrected). The topographic distribution was right-lateralized at 4 Hz but not at 0.8 Hz. The shaded area represents the standard error (SE). ***p<0.001, *p<0.05, m.s. represents marginally significant.10.7554/eLife.48971.003Figure 1—source data 1.
+**Figure 1.:** (a) Under the mental imagery condition (left), a sequence of pure tones was presented with 250 ms onset-to-onset intervals. The participants were asked to loudly count in their minds by grouping every five numbers (with the imagery task), forming an imagery-rate frequency of 0.8 Hz and a stimulus-rate frequency of 4 Hz. Under the baseline condition (right), the participants passively listened to the same sounds without performing a task. (b) Significant spectral peaks were found at 0.8 Hz and its harmonics under the mental imagery condition, and significant 4 Hz peaks were found under both conditions (paired one-sided t test, FDR corrected). The topographic distribution was right-lateralized at 4 Hz but not at 0.8 Hz. The shaded area represents the standard error (SE). ***p<0.001, *p<0.05, m.s. represents marginally significant.
 
 The comparison of the peak power between the two conditions confirmed the presence of imagery-induced cortical manifestations at the frequency of 0.8 Hz (Figure 2a). The peak power at the frequencies of 0.8 Hz and 4 Hz was calculated by subtracting the average of two neighboring frequency bins from the power of the peak frequency bin. A two-tailed paired t test showed that the peak power at the imagery-rate frequency of 0.8 Hz when the participants induced rhythmic mental imagery was significantly larger than that under the baseline condition (t19 = 2.40, p=0.027, Cohen’s d = 0.54). No significant difference was observed between the two conditions at 4 Hz (t19 = −0.30, p=0.764, Cohen’s d = 0.07). Interestingly, the power of the neural responses at an imagery rate of 0.8 Hz was negatively correlated with that at a stimulus rate of 4 Hz when the participants induced the rhythmic mental imagery following the sound sequence (r = −0.68, p=0.001) but not when they passively listened to the auditory stimuli (r = −0.11, p=0.63) (Figure 2b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig2-v1.jpg)
 
-**Figure 2.:** (a) Mental imagery increased the peak power at the imagery-rate frequency of 0.8 Hz. No significant difference in peak power at 4 Hz was observed between the conditions. (b) A significant negative correlation was observed between the grand averaged power at 4 Hz and 0.8 Hz under the mental imagery condition but not under the baseline condition. **p<0.01, *p<0.05.10.7554/eLife.48971.005Figure 2—source data 1.
+**Figure 2.:** (a) Mental imagery increased the peak power at the imagery-rate frequency of 0.8 Hz. No significant difference in peak power at 4 Hz was observed between the conditions. (b) A significant negative correlation was observed between the grand averaged power at 4 Hz and 0.8 Hz under the mental imagery condition but not under the baseline condition. **p<0.01, *p<0.05.
 
-## Brain regions activated by speech mental imagery
+### Brain regions activated by speech mental imagery
 
 Using the frequency-tagging method, we identified the imagery-induced MEG manifestation in the frequency domain, but which neural networks generated such neural activity? Taking advantage of the previously developed minimum L1-norm source estimation methods (Huang et al., 2006; Huang et al., 2012; Sheng et al., 2019), we addressed this question by evaluating the neural sources in the MEG data within the single-frequency bins at the target frequencies of 0.8 Hz and 4 Hz. As a result, we found the following significant clusters activated at the imagery-rate frequency of 0.8 Hz (Figure 3, Table 1): (1) the left central-frontal lobe, including the pars opercularis part of the inferior frontal gyrus (operIFG), the inferior part of the precentral gyrus (PrG) and the postcentral gyrus (PoG), (2) the left inferior occipital gyrus (IOG) and (3) the right inferior parietal lobe (IPL), including the supramarginal gyrus (SMG) and the inferior part of the PoG (cluster level p<0.01, family-wise error [FWE] corrected with a voxel-level threshold of p<0.001). Regarding the stimulus-rate frequency of 4 Hz, a more extensive brain network involving the bilateral Heschl’s gyrus (HG), right middle temporal gyrus (MTG), left SMG, bilateral superior temporal gyrus (STG), bilateral PrG, bilateral PoG and bilateral insula (INS) was significantly activated under both the mental imagery and the baseline conditions. An additional region in the right middle frontal gyrus (MFG) was also activated at 4 Hz under the mental imagery condition.
+
+**Table 1.**
+ Major brain activity at the source level.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Brain region</th>
+      <th colspan="3">Peak MNI coordinate</th>
+      <th rowspan="2">T value</th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Imagery condition at 0.8 Hz</td>
+    </tr>
+    <tr>
+      <td>R postcentral gyrus</td>
+      <td>56</td>
+      <td>−22</td>
+      <td>29</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>L postcentral gyrus</td>
+      <td>−51</td>
+      <td>-7</td>
+      <td>23</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <td>L precentral gyrus</td>
+      <td>−50</td>
+      <td>-6</td>
+      <td>21</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>L inferior frontal gyrus</td>
+      <td>−46</td>
+      <td>3</td>
+      <td>28</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>L inferior occipital gyrus</td>
+      <td>−40</td>
+      <td>−75</td>
+      <td>-6</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>R supramarginal gyrus</td>
+      <td>60</td>
+      <td>−31</td>
+      <td>24</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td colspan="5">Imagery condition at 4 Hz</td>
+    </tr>
+    <tr>
+      <td>R superior temporal gyrus</td>
+      <td>61</td>
+      <td>−12</td>
+      <td>8</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td>L superior temporal gyrus</td>
+      <td>−51</td>
+      <td>-5</td>
+      <td>5</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td>R middle temporal gyrus</td>
+      <td>67</td>
+      <td>−19</td>
+      <td>-3</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>L Heschl’s gyrus</td>
+      <td>−50</td>
+      <td>-7</td>
+      <td>5</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>R Heschl’s gyrus</td>
+      <td>58</td>
+      <td>−10</td>
+      <td>8</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>R postcentral gyrus</td>
+      <td>59</td>
+      <td>−16</td>
+      <td>17</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>L postcentral gyrus</td>
+      <td>−57</td>
+      <td>−19</td>
+      <td>17</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td>R precentral gyrus</td>
+      <td>55</td>
+      <td>0</td>
+      <td>19</td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td>L precentral gyrus</td>
+      <td>−50</td>
+      <td>-6</td>
+      <td>21</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>R insula</td>
+      <td>46</td>
+      <td>−10</td>
+      <td>8</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>L insula</td>
+      <td>−46</td>
+      <td>-9</td>
+      <td>2</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>R middle frontal gyrus</td>
+      <td>6</td>
+      <td>50</td>
+      <td>−11</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>L supramarginal gyrus</td>
+      <td>−58</td>
+      <td>−21</td>
+      <td>17</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <td colspan="5">Baseline condition at 4 Hz</td>
+    </tr>
+    <tr>
+      <td>R superior temporal gyrus</td>
+      <td>56</td>
+      <td>−16</td>
+      <td>1</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <td>L superior temporal gyrus</td>
+      <td>−50</td>
+      <td>−18</td>
+      <td>12</td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td>R middle temporal gyrus</td>
+      <td>55</td>
+      <td>−27</td>
+      <td>0</td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td>L Heschl’s gyrus</td>
+      <td>−42</td>
+      <td>−22</td>
+      <td>12</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>R Heschl’s gyrus</td>
+      <td>54</td>
+      <td>−13</td>
+      <td>8</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>R postcentral gyrus</td>
+      <td>61</td>
+      <td>−15</td>
+      <td>15</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td>L postcentral gyrus</td>
+      <td>−53</td>
+      <td>−11</td>
+      <td>18</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>R precentral gyrus</td>
+      <td>45</td>
+      <td>-8</td>
+      <td>29</td>
+      <td>6.3</td>
+    </tr>
+    <tr>
+      <td>L precentral gyrus</td>
+      <td>−54</td>
+      <td>-4</td>
+      <td>21</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <td>R insula</td>
+      <td>48</td>
+      <td>−10</td>
+      <td>4</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>L insula</td>
+      <td>−38</td>
+      <td>−24</td>
+      <td>22</td>
+      <td>6.8</td>
+    </tr>
+    <tr>
+      <td>L supramarginal gyrus</td>
+      <td>−43</td>
+      <td>−27</td>
+      <td>23</td>
+      <td>8.3</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig3-v1.jpg)
 
@@ -63,13 +310,240 @@ Then, we compared the activation of regions of interest (ROIs) in different brai
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig4-v1.jpg)
 
-**Figure 4.:** The brain activation in the left IOG at 0.8 Hz under the mental imagery condition was stronger than that at 4 Hz. The brain activation in the right MFG at 4 Hz under the mental imagery condition was stronger than that under the baseline condition. In the left HG, left STG, left INS, left SMG, right HG, right STG, right INS, right PrG, right PoG and right MTG, the activation at 4 Hz under the mental imagery condition and/or the baseline condition was stronger than that at 0.8 Hz under the mental imagery condition. Multiple comparisons were Bonferroni corrected. ***p<0.001, **p<0.01, *p<0.05, m.s. represents marginally significant.10.7554/eLife.48971.009Figure 4—source data 1.
+**Figure 4.:** The brain activation in the left IOG at 0.8 Hz under the mental imagery condition was stronger than that at 4 Hz. The brain activation in the right MFG at 4 Hz under the mental imagery condition was stronger than that under the baseline condition. In the left HG, left STG, left INS, left SMG, right HG, right STG, right INS, right PrG, right PoG and right MTG, the activation at 4 Hz under the mental imagery condition and/or the baseline condition was stronger than that at 0.8 Hz under the mental imagery condition. Multiple comparisons were Bonferroni corrected. ***p<0.001, **p<0.01, *p<0.05, m.s. represents marginally significant.
 
-## Localization of neural tracking speech imagery using sEEG
+### Localization of neural tracking speech imagery using sEEG
 
 To further confirm the localization of the neural sources in the MEG data, we recorded sEEG responses to the same auditory stimuli with and without the imagery task. The sEEG responses are neurophysiological signals with a high temporal and spatial resolution recorded from patients with intracranial electrode implantation for the clinical assessment of epilepsy. We analyzed the power of sEEG data in the high gamma band (60–100 Hz), which is highly correlated with the neural firing rate (Mukamel et al., 2011; Ray and Maunsell, 2011). We found responsive contacts in five subjects with significant 4 Hz spectral peaks in the left posterior INS, left anterior SMG, bilateral middle STG, left HG and right middle MTG under the mental imagery and/or baseline conditions. Most importantly, we found significant spectral responses at the imagery-rate frequency of 0.8 Hz when the participant was asked to perform a mental imagery task following the 4 Hz sound sequence (t19 = 3.61, p=0.021, Cohen’s d = 0.81, paired one-sided t test, FDR corrected) (Figure 5a). The imagery-responsive contact was localized in the operIFG, which is consistent with the MEG source results in the Montreal Neurological Institute (MNI) space (Figure 5b). Unlike in the baseline condition, under the mental imagery condition, the averaged time course of the high gamma activity in the operIFG periodically changed every 1.25 s (0.8 Hz), with an increasing amplitude near the last number of each mentally constructed group (Figure 5c). Due to limited intracranial cases, we did not obtain sEEG data from the regions of the left IOG and right IPL, which were the other two neural clusters in the MEG source results.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig5-v1.jpg)
+
+**Figure 5.:** (a) Subject one with contacts in the left operIFG, middle STG, posterior INS and anterior SMG. Significant spectral responses at 0.8 Hz were detected in the operIFG, and the remaining contacts were responsive to the 4 Hz frequency. (b) The cluster including the operIFG from MEG sources is presented in the upper panel. The electrode with contact in the operIFG in Subject one was projected in the MNI space and is shown in the lower panel. SEEG localization supports the MEG source estimation results. (c) Averaged time course of high gamma activity in the operIFG in Subject 1. Periodical changes presented every 1.25 s (0.8 Hz) with increasing amplitude near the onset of the last number (black arrow) in each mentally constructed group under the mental imagery condition (red line) but not the baseline condition (blue line). (d) Subject two with contacts in the left HG. Significant spectral peaks were observed at 4 Hz in the HG. (e) Subject three with contacts in the right middle STG. Significant spectral peaks were observed at 4 Hz in the middle STG. (f) Contact locations in the MNI space. Different colored marks represent each subject’s responsive contacts with significant spectral peaks at 0.8 Hz and/or 4 Hz. Gray marks represent non-responsive contacts with no significant spectral peaks. (g) In each brain region with contacts responsive at 4 Hz, the normalized peaks were significantly larger than zero under the baseline condition (blue stars). Among these peaks, the normalized peaks were significant in the left posterior INS, left anterior SMG, left HG and right middle STG (red stars). The peaks in the bilateral middle STG were smaller under the mental imagery condition than the baseline condition (gray stars). ***p<0.001, **p<0.01, *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48971/elife-48971-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Subject four with a contact in the left HG. A significant spectral peak was observed at 4 Hz in the imagery condition. (b) Subject five with contacts in the left anterior SMG and right middle MTG. Significant spectral peaks were observed at 4 Hz in the anterior SMG under both conditions and in the middle MTG under the baseline condition.
+
 In addition, we found significant spectral responses at the stimulus-rate frequency of 4 Hz (Figures 5a, d and e for subjects 1, 2, and 3; Figure 5—figure supplement 1 for subjects 4 and 5; Table 2 for statistical results). In the left hemisphere, significant 4 Hz peaks were observed at the contacts localized in the posterior INS, anterior SMG and HG under the mental imagery condition and at the contacts localized in the middle STG, posterior INS, anterior SMG and HG under the baseline condition. In the right hemisphere, we found significant spectral responses at 4 Hz in the middle STG and middle MTG. Specifically, the right middle STG was responsive to the 4 Hz stimuli under the baseline condition and the mental imagery condition. The right middle MTG was responsive to the 4 Hz stimuli only under the baseline condition. These brain regions with significant spectral peaks at 4 Hz mainly agreed with the estimated neural sources based on the MEG data (Table 1).
+
+**Table 2.**
+ Statistical details for the sEEG results
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Contact localization</th>
+      <th>Subject no.</th>
+      <th>Df</th>
+      <th>T</th>
+      <th>Corrected P</th>
+      <th>Cohen’s d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mental imagery condition at 4 Hz</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L posterior insula</td>
+      <td>1</td>
+      <td>19</td>
+      <td>5.57</td>
+      <td>&lt;0.001</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <td>L anterior supramarginal gyrus</td>
+      <td>1</td>
+      <td>19</td>
+      <td>3.40</td>
+      <td>0.034</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>19</td>
+      <td>2.99</td>
+      <td>0.084</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>18</td>
+      <td>3.29</td>
+      <td>0.046</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>L Heschl’s gyrus</td>
+      <td>2</td>
+      <td>15</td>
+      <td>5.00</td>
+      <td>0.002</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>15</td>
+      <td>4.64</td>
+      <td>0.004</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>19</td>
+      <td>4.57</td>
+      <td>0.002</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>R middle superior temporal gyrus</td>
+      <td>3</td>
+      <td>19</td>
+      <td>4.08</td>
+      <td>0.007</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>19</td>
+      <td>5.29</td>
+      <td>&lt;0.001</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td>Baseline condition at 4 Hz</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L middle superior temporal gyrus</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4.47</td>
+      <td>0.003</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>L posterior insula</td>
+      <td>1</td>
+      <td>19</td>
+      <td>8.06</td>
+      <td>&lt;0.001</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td>L anterior supramarginal gyrus</td>
+      <td>1</td>
+      <td>19</td>
+      <td>3.35</td>
+      <td>0.037</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>18</td>
+      <td>3.43</td>
+      <td>0.034</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>L Heschl’s gyrus</td>
+      <td>2</td>
+      <td>19</td>
+      <td>4.41</td>
+      <td>0.003</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>19</td>
+      <td>4.58</td>
+      <td>0.002</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>19</td>
+      <td>4.60</td>
+      <td>0.002</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>19</td>
+      <td>3.44</td>
+      <td>0.031</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>R middle superior temporal gyrus</td>
+      <td>3</td>
+      <td>19</td>
+      <td>5.29</td>
+      <td>&lt;0.001</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>19</td>
+      <td>4.35</td>
+      <td>0.004</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>19</td>
+      <td>3.81</td>
+      <td>0.013</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>19</td>
+      <td>3.97</td>
+      <td>0.009</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>19</td>
+      <td>3.79</td>
+      <td>0.014</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>R middle middle temporal gyrus</td>
+      <td>5</td>
+      <td>18</td>
+      <td>4.52</td>
+      <td>0.003</td>
+      <td>1.34</td>
+    </tr>
+  </tbody>
+</table>
 
 Subsequently, we combined all the trials at the contacts localized in the same brain regions across different subjects. Figure 5f displays the localization of contacts in the MNI space from all five subjects. We calculated the normalized peak power in each brain region and examined the following two questions: (1) whether the 4 Hz peak responses were significant and (2) whether there were significant differences between the conditions (Figure 5g). The one-tailed paired t tests revealed significant 4 Hz peak powers under the baseline condition in several brain areas, including the left posterior INS (t19 = 24.82, p<0.001, Cohen’s d = 3.05), left anterior SMG (t58 = 2.32, p=0.012, Cohen’s d = 0.30), left HG (t99 = 10.10, p<0.001, Cohen’s d = 1.07), bilateral middle STG (left, t19 = 8.60, p<0.001, Cohen’s d = 1.92; right, t99 = 9.28, p<0.001, Cohen’s d = 0.93) and right middle MTG (t18 = 4.59, p<0.001, Cohen’s d = 1.05). Among these regions, the 4 Hz peaks were also significantly larger than zero under the mental imagery condition in the brain areas of the left posterior INS (t19 = 6.71, p<0.001, Cohen’s d = 1.50), left anterior SMG (t58 = 4.73, p<0.001, Cohen’s d = 0.62), left HG (t83 = 8.97, p<0.001, Cohen’s d = 0.98) and right middle STG (t99 = 2.69, p=0.004, Cohen’s d = 0.27).
 
@@ -93,62 +567,80 @@ In summary, our study applied a frequency-tagging paradigm to track the neural p
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty Mandarin-speaking young students (8 females and 12 males, 24.6 ± 3.6 years old, all right-handed) participated in the MEG experiment. The participants all had normal hearing abilities and reported having no history of mental disorders. Written informed consent was obtained from all participants. The participants were paid, and the experimental protocol was approved by the Peking University Institutional Review Board.
 
-## Stimuli
+### Stimuli
 
 The auditory signal was a 50 ms pure tone generated by Adobe Audition software (Adobe Systems Incorporated, San Jose, CA). The frequency of the pure tone was 440 Hz, and the sampling rate was 1.6 kHz.
 
-## Procedures
+### Procedures
 
 During the experiment, each participant was seated in a dimly lit and magnetically shielded room (VACUUMSCHMELZE GmbH and Co. KG, Hanau, Germany) with a distance of 1 m from a projected screen. The acoustic signals were delivered to the participants using a MEG-compatible inserted ear-phone. Two blocks (a mental imagery block and a baseline block) were performed, and each block included 15 trials. The presentation order of the blocks was counterbalanced across subjects. Within each trial, the instruction was first presented on the screen. For the imagery block, the instructions were “Please count loudly in mind with five numbers in a group, 1, 2, 3, 4, 5, 2, 2, 3, 4, 5, 3, 2, 3, 4, 5…10, 2, 3, 4, 5, following the rhythm of the sound until the sound is terminated’. In this counting task, the first number in each group increased from ‘1’ to ‘10’, and the remaining numbers in the group were always ‘2, 3, 4, 5’. For the baseline block, the instructions were ‘Please listen carefully to the sound until the sound is terminated’. The participants pressed the button when they were ready, and then a central fixation cross remained on the screen until the trial terminated. After a silent random interval ranging from 1 to 1.5 s, a pure tone was presented 50 times repeatedly with an onset-to-onset interval of 250 ms. Thus, the frequency of the presentation of the pure tones was 1/0.25 Hz, that is 4 Hz. More importantly, the frequency of the occurrence of the rhythmic imagery was 1/1.25 Hz, that is 0.8 Hz. The sound sequence in each trial lasted for 12.5 s.
 
 Before the formal experiment, the subjects received a training session in which they were asked to orally report their inner performance after each trial. The training session was supervised to ensure that each subject could perform the task correctly. After the training, all the participants were able to generate the mental imagery of 50 numbers with every five numbers in a group following the 50 pure tones.
 
-## MEG recording and structural MRI data acquisition
+### MEG recording and structural MRI data acquisition
 
 The continuous neuromagnetic signal was recorded using a 306-channel, whole-head MEG system (Elekta-Neuromag TRIUX, Helsinki, Finland) at Peking University. Before each block started, the head position of each subject was determined by four head-position indicator (HPI) coils. The electrooculogram (EOG) signal was simultaneously captured by two electrodes placed near the eyes as follows: one electrode was placed above the right eye, and one electrode was placed below the left eye. The continuous MEG data were on-line bandpass filtered at 0.1–330 Hz. The sampling rate was 1000 Hz.
 
 The subjects’ structural MRI images were obtained with a 3T GE Discovery MR750 MRI scanner (GE Healthcare, Milwaukee, WI, USA). A three-dimensional (3D) fast gradient-recalled acquisition in the steady state with a radiofrequency spoiling (FSPGR) sequence was used to obtain 1 × 1 × 1 mm3 resolution T1-weighted anatomical images. We co-registered the MEG data with the MRI data based on the location of three fiducial marks (the nasion and two pre-auricular points) and approximately 150 digitalization points on each subject’s scalp.
 
-## Data pre-processing
+### Data pre-processing
 
 The raw data were first processed using the temporal Signal Space Separation (tSSS) method (Taulu and Simola, 2006) implanted in Maxfilter software (Elekta-Neuromag) for magnetic artefact suppression. Manually identified bad channels (3–5 channels per subject) with excessive noise were excluded from further analysis. The head position of the second block was co-registered to that of the first block using MaxMove software (Elekta-Neuromag). The independent component analysis (ICA) method was applied to remove the ocular artefacts using the MNE software (http://www.martinos.org/mne/). Specifically, the ICA component with the highest correlation to the EOG signal was selected and rejected. Then, a bandpass filter (0.2 to 60 Hz) and a notch filter (50 Hz power-line interference) were applied to the de-noised data using the FieldTrip toolbox (http://www.fieldtriptoolbox.org), during which edge effects after filtering were eliminated by padding extra data on either side of each epoch. Finally, the event-related field (ERF) response was obtained by averaging the data with a time window of −0.5 to 12.5 s.
 
 The cortical reconstruction and volume-based segmentation were completed based on each subject’s T1-weighted image using Freesurfer (http://surfer.nmr.mgh.harvard.edu/). A realistic boundary element method (BEM) model was employed to solve the forward problem. A 5 mm cubic grid was prepared as the source space, resulting in approximately 10,000 nodes in the entire brain.
 
-## Sensor-level analysis
+### Sensor-level analysis
 
 The ERF response acquired during the pre-processing stage was modified by excluding the first 1.25 s of the stimulus to eliminate the transient response. Therefore, the stimulus length of the ERF was 11.25 s, leading to a frequency resolution of 1/11.25 Hz, that is 0.089 Hz. To pre-whiten all the magnetometers and gradiometers, a diagonal noise covariance matrix was calculated based on the 500 ms pre-stimulus baseline. Then, the pre-whitened data were transformed into the frequency domain using the fast Fourier transform (FFT). The average response power of all channels was calculated to compare the rhythmic response among the different conditions.
 
-## Source estimation method
+### Source estimation method
 
-The present source estimation method was rooted in the previously developed minimum L1-norm estimation methods (Huang et al., 2006; Huang et al., 2012; Sheng et al., 2019), which offer high spatial resolution for MEG analysis. The m × t sensor waveform matrix, where m and t represent the number of MEG sensors and the number of time points, respectively, was transformed using the FFT into frequency domain matrix K, which included both real and imaginary parts. To focus on the peak response at a given frequency (for example, 0.8 Hz in the imagery block during which the rhythm of mental imagery was manifested), we chose the single-frequency bin Kf for the source estimation, where f refers to the target frequency bin. Furthermore, a convex second-order cone programming (SOCP) method for solving the minimum L1-norm problem was applied to minimize the bias toward the coordinate axes (Ou et al., 2009) as follows:min∑i=1nwi(ωi,realθ)2+(ωi,imagθ)2+(ωi,realϕ)2+(ωi,imagϕ)2(1)s.t.Kf=GΩfwhere w refers to the depth weighting vector, G refers to the m × 2N gain matrix obtained from the BEM calculation, n is the number of the source grid, and i is the index of the source grid. θ and ϕ refer to the two dominant directions of the gain matrix (i.e. dominant source directions) using singular value decomposition. The solution is the n × 1 complex vector Ωf.
+The present source estimation method was rooted in the previously developed minimum L1-norm estimation methods (Huang et al., 2006; Huang et al., 2012; Sheng et al., 2019), which offer high spatial resolution for MEG analysis. The m × t sensor waveform matrix, where m and t represent the number of MEG sensors and the number of time points, respectively, was transformed using the FFT into frequency domain matrix K, which included both real and imaginary parts. To focus on the peak response at a given frequency (for example, 0.8 Hz in the imagery block during which the rhythm of mental imagery was manifested), we chose the single-frequency bin Kf for the source estimation, where f refers to the target frequency bin. Furthermore, a convex second-order cone programming (SOCP) method for solving the minimum L1-norm problem was applied to minimize the bias toward the coordinate axes (Ou et al., 2009) as follows:
 
-## Statistical analysis
+$$
+min\sumi=1nw_{i}\sqrt{(\omega_{i,real}^{\theta})^{2}+(\omega_{i,imag}^{\theta})^{2}+(\omega_{i,real}^{ϕ})^{2}+(\omega_{i,imag}^{ϕ})^{2}}
+$$
+
+
+
+$$
+s.t.K_{f}=GΩ_{f}
+$$
+
+where w refers to the depth weighting vector, G refers to the m × 2N gain matrix obtained from the BEM calculation, n is the number of the source grid, and i is the index of the source grid. θ and ϕ refer to the two dominant directions of the gain matrix (i.e. dominant source directions) using singular value decomposition. The solution is the n × 1 complex vector Ωf.
+
+### Statistical analysis
 
 For the sensor-level analysis, a one-tailed paired t test was conducted to evaluate whether a significant spectral peak occurred at a frequency bin compared to the average of two neighboring frequency bins. This test was applied to all the frequency bins between 0.5 and 4.5 Hz, and the p values were adjusted by a false discovery rate (FDR) correction for multiple comparisons.
 
 For the source-level analysis, each subject’s ERF response ranging from 1.25 to 12.5 s was first transformed into the frequency domain for the source estimation. The brain activation to the target frequency bin was obtained by calculating the root mean square (RMS) of the real and imaginary parts. A control state was created by averaging the sources of two neighbor frequency bins adjacent to the target frequency. Before the group analysis, individual brain result was projected to the MNI-152 template using FSL software (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/) and spatially smoothed with a Gaussian kernel of 5 mm full-width at half-maximum (FWHM). The brain results were further log-transformed to reduce the skewness of the distribution of the minimum L1-norm solutions (Huang et al., 2016). A brain activation map at a certain frequency bin under each condition was obtained by comparing the brain responses with the average of their neighboring controls using a one-tailed paired t test (cluster level p<0.01, family-wise error [FWE] corrected with a voxel-level threshold of p<0.001). Furthermore, several regions of interest (ROIs) were identified by finding the local maximum of the significant neural clusters, and a 5 mm cube was used to extract the activation data from each ROI. Then, the brain activation was quantitatively compared among the following three levels: (1) at the frequency of 0.8 Hz under the imagery condition; (2) at the frequency of 4 Hz under the imagery condition; and (3) at the frequency of 4 Hz under the baseline condition. Repeated measures ANOVAs were used to examine the differences among the three levels. A Greenhouse-Geisser correction was applied for violation of sphericity. Post hoc comparisons were conducted using Bonferroni corrections. Here, non-independent ROI selection criteria were chosen to quantitatively compare the source-level neural activation between conditions; thus, we interpreted the results with caution to avoid overestimation of the ROI data.
 
-## SEEG experiment
+### SEEG experiment
 
-## SEEG Participants
+#### SEEG Participants
 
 Five subjects (three females; 27.6 ± 12.0 years old, range 14–46 years old) who were undergoing clinical intracerebral evaluation for epilepsy participated in the sEEG experiment. All the participants were right-handed and had normal hearing abilities. Before the experiment, the participants gave their written consent for participation, including permission for scientific publication. As one subject was a minor, written informed consent from his/her parent was obtained. Intracerebral electrodes were stereotactically implanted within the participants’ brains solely for clinical purposes. All analyses were performed offline and did not interfere with the clinical management of the subjects. The sEEG study was approved by the Ethics Committee of the Sanbo Brain Hospital, Capital Medical University.
 
-## SEEG recordings
+#### SEEG recordings
 
 Each 0.8 mm diameter intracerebral electrode contained 12–18 independent recording contacts of 2 mm in length and 1.5 mm apart from each other. The reference site was attached to the skin of each subject’s forehead. For each subject, the cortical reconstruction and segmentation were computed based on the T1-weighted image obtained before the electrode implantation using BrainSuite software (http://brainsuite.org/). Then, the CT with the electrode localizations and the anatomical images were co-registered and normalized to the MNI-152 template. The contact locations were identified and visualized with MNI coordinates using the Brainstorm toolbox (http://neuroimgage.usc.edu/brainstorm/) and the BrainNetViewer toolbox (https://www.nitrc.org/projects/bnv/) in the MATLAB environment. The intracranial neural responses were collected with the Nicolet clinical amplifier. The sampling rate was 512 Hz in four subjects (subjects 1 to 4) and 2048 Hz in one subject (subject 5).
 
-## SEEG procedures
+#### SEEG procedures
 
 The subjects listened to the same stimuli and performed the same task as the healthy subjects in the previous MEG experiment. The participants were asked to count in their mind every five numbers in a group (imagery-rate frequency = 0.8 Hz) following a sequence of 50 pure tones (stimulus-rate frequency = 4 Hz). The auditory stimuli and trial structure were identical to those used in the MEG study, except that at the end of each trial under the mental imagery condition, the participants were instructed to orally report whether they had counted correctly following all the sounds. Then, the experimenter recorded their subjective report (correct/incorrect). Only correct trials were included in the subsequent analyses. In addition, the number of trials under each condition was dependent on each patient’s physical status, while a fixed number of trials was used in the MEG experiment. Furthermore, to reduce the confusion caused by the imagery task among the patients, the baseline condition was presented first, followed by the mental imagery condition. Before the formal mental imagery trials, the participants engaged in a practice session to ensure that they had fully understood the imagery task.
 
-## SEEG data processing
+#### SEEG data processing
 
 The sEEG data from each contact were first analyzed separately, and the high gamma activity, which is related to the neural firing rate (Mukamel et al., 2011; Ray and Maunsell, 2011), was extracted by a bandpass filter of 60–100 Hz. The instantaneous amplitude envelope was obtained from the filtered data by applying the Hilbert transform and then converted to the frequency domain in each trial using the FFT. A significant spectrum peak was reported if the response power at the target frequency was significantly stronger than the average of its two neighboring frequencies using a one-tailed paired t test among all the trials under the same condition. This test was applied to all frequency bins between 0.5 and 4.5 Hz, and the p values were FDR corrected for multiple comparisons. The spectral power at each contact under both conditions was transformed to the Z-score for visual presentation (Figure 5a,c,d and Figure 5—figure supplement 1). Specifically, the Z-score was computed as the difference between the power response in a frequency bin and the mean power response between 0.5 Hz and 4.5 Hz excluding the frequency bins of 0.8 Hz and 4 Hz divided by the standard deviation (SD) of the power response in these frequency bins.
 
-To compare the responses among the contacts, the spectral peaks at each contact were first extracted and normalized as follows:(2)Normalized Peak=Powertarget−PowerneighboringPowertarget+Powerneighboringwhere Powertarget refers to the response power at a target frequency (i.e. 4 Hz), and Powerneighboring refers to the averaged response power at the two frequency bins neighboring the target frequency. For each brain region, a one-tailed paired t test was used to evaluate whether the normalized peak of all trials in that region was significantly larger than zero. Then, a two-tailed independent t test was used to identify the difference in the normalized peak responses between the imagery condition and the baseline condition. The significance level was set at p<0.05.
+To compare the responses among the contacts, the spectral peaks at each contact were first extracted and normalized as follows:
+
+$$
+Normalized Peak=\frac{Power_{target}−Power_{neighboring}}{Power_{target}+Power_{neighboring}}
+$$
+
+where Powertarget refers to the response power at a target frequency (i.e. 4 Hz), and Powerneighboring refers to the averaged response power at the two frequency bins neighboring the target frequency. For each brain region, a one-tailed paired t test was used to evaluate whether the normalized peak of all trials in that region was significantly larger than zero. Then, a two-tailed independent t test was used to identify the difference in the normalized peak responses between the imagery condition and the baseline condition. The significance level was set at p<0.05.

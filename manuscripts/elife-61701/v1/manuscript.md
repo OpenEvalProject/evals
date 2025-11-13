@@ -36,23 +36,376 @@ In this study we evaluate the impact of AMF in a cultivated field and distinguis
 
 ## Results
 
-## Mutation in a maize common symbiosis gene demonstrates the importance of arbuscular mycorrhizae in the field
+### Mutation in a maize common symbiosis gene demonstrates the importance of arbuscular mycorrhizae in the field
 
 To generate AMF-resistant maize varieties for use in field experiments, we identified maize (var. B73) orthologs of the common-symbiosis genes CASTOR and POLLUX (DMI1) (Parniske, 2008; www.maizegdb.org). As in rice, CASTOR and POLLUX were found to be single copy genes in maize, and designated ZmCastor (GRMZM2G099160; Zm00001d012863; chromosome 5, 1 Mb) and ZmPollux (GRMZM2G110897; Zm00001d042694; chromosome 3, 177 Mb). We searched publicly available genetic resources (McCarty et al., 2005) and identified two Mutator (Mu) transposon insertions in the Castor gene, castor-1 (44 bp upstream of the translational start site) and castor-2 (39 bp downstream of the translational start site. Figure 1A). Following controlled inoculation with AMF, we saw fungal colonization of castor-1 plants but found castor-2 plants to be free from root-internal fungal structures, reflecting the different sites of transposon insertion in the two alleles (Figure 1B). We advanced castor-2 (hereafter, castor) mutants for more detailed quantitative characterization, finding the transcript to be disrupted in the mutants and confirming the absence of fungal colonization following inoculation with either crude (sand-pot produced) or plate-cultured (in vitro produced) inoculum (Figure 1C,D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the maize Castor gene (GRMZM2G099160_T01 gene model). Boxes indicate coding regions. Red triangles indicate the insertion of Mutator transposable elements in the alleles castor-1 and castor-2. (B) Root segments stained with trypan blue 7 weeks after inoculation with Rhizophagus irregularis. Characteristic root-internal hyphal structures, such as intraradical hyphae (IH) and arbuscules (A) , seen in wild-type (WT) and castor-1 plants are absent from the castor-2 mutant. (C) RT-PCR analysis of Castor transcript accumulation in the roots of WT and castor-2 plants that were non-inoculated (NM) or inoculated with plate (Mp. In vitro produced) or crude (Mc. Sand-pot produced) inoculum. Castor cDNA was amplified using a primer set spanning the castor-2 mutator insertion site (5’) and a second set spanning the 3’-most intron (3’). Primers to the maize actin gene Act1 were used as a control. (D) Colonization by AMF (% root length) of the plants analyzed in C. TC, total colonization; EH, external hyphae; IH, internal hyphae; A, arbuscules; V, vesicles; S, spores; H, hyphapodia. C, crude inoculum. P, plate inoculum. Lowercase letters indicate significant differences among genotypes and inoculum, determined by the Kruskal-Wallis test and LSD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) An F1hybrid was generated from the cross between the CML312 inbred line and a plant homozygous for the castor-2 allele in the W22 background. The F1 was self-pollinated to generate an F2 stock segregating castor-2 along with CML312 and W22 genome content. Homozygous wild-type and mutant individuals were identified by PCR genotyping and self-pollinated to generate F2:3 families. Additional tissue from the F2 parents was used for genotypic analysis on an Illumina 3047 SNP microarray chip as described in the main text. (B) An F2 ear from the cross of the color-converted bz-mum9 Uniform Mu stock carrying castor-2 and the white-kernelled subtropical inbred line CML312.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Field evaluation of castor-2 mutants, Irapuato, Mexico. Two complete blocks with four treatments were used: (1) AMF-S (wt) families without inoculation with exogenous AMF (NC), (2) AMF-R families (castor-2) without inoculation with AMF (NC), (3) AMF-S families (wt) with inoculation with AMF (M), and (4) AMF-R families (castor-2) with inoculation of AMF (M). The inoculum used was the commercial consortium BioMic which includes: Glomus constrictum, Glomus geosporum, Glomus tortuosum, Acaulospora scrobiculata, Gigaspora margarita, and Glomus sp. Field colonization of wt families without application of exogenous inoculum indicates the action of the native community of AMF.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** A subset of 20 AMF-S and 20 AMF-R families was evaluated in a winter season in a managed (fertigation, herbicide, pesticide; sandy soil allowing free availability of nutrients to plants) field site near Puerto Vallarta on the Mexican Pacific Coast. No difference was seen between AMF-S and AMF-R families in plant height or days-to-silking (female flowering). By contrast, in the medium-input Ameca site used for the full evaluation, AMF-S and AMF-R families were distinct. The box in violin plots represents the interquartile range with the horizontal line representing the median and whiskers extend 1.5 times the interquartile ranges. The shape of the violin plot represents the probability density of data at different values along the y-axis. Results were based on two-group Wilcoxon tests with Bonferonni adjusted p-values. Note: *: p<0.05; **: p<0.01; ***: p<0.001; NS: not significant.
 
 Having identified a source of resistance to AMF, we proceeded to generate a population for mapping host response in the field. We crossed the castor mutant in its original temperate W22 background to the subtropical inbred line CML312 and performed two rounds of self-pollination to generate F2:3 families. We used PCR genotyping to select F2 individuals homozygous for either the wild-type or mutant allele at the Castor locus, such that the resulting F3 families were ‘fixed’ with respect to the mutation. In this way, we generated a mapping population of 73 homozygous wild-type (susceptible; AMF-S) and 64 homozygous castor (resistant; AMF-R) F2:3 families (Figure 1—figure supplement 1). Outside of the Castor locus, the different families segregated for W22 and CML312 gene content. The F2 parents were further genotyped using genome-wide markers to build a genetic map for use in QTL mapping. We confirmed that resistance to AMF was stable in the field (Figure 1—figure supplement 2) and that under high-nutrient field conditions the castor mutation did not result in any gross defects in plant development or show marked pleiotropic effects beyond the block in mycorrhizal colonization (Figure 1—figure supplement 3). We note that our observations do not exclude more subtle, or environmentally dependent, pleiotropy.
 
 To characterize the genetic architecture of host response to AMF in the field, we evaluated the 73 AMF-S and 64 AMF-R families in a replicated trial under rain-fed, medium-input, conditions (Ameca, Mexico. Figure 2A, Figure 2—figure supplements 1, 2 and 3; three replicates, using three-row plots at 15 individuals per row). We chose an agronomic scenario that was representative of medium scale, subtropical production, and conditions under which we might expect AMF to be important. Overall, AMF-R families tended to exhibit mild-chlorosis (Figure 2B) and produce visibly poorer ears than AMF-S families (Figure 2C–D). We inspected the roots of a random sampling of plants, finding clear colonization by AMF of AMF-S families and an absence of AM fungal structures in AMF-R families. To estimate the overall host response, we compared all susceptible to all resistant families. We collected fifteen phenological and morphological traits and yield-components (Figure 2E–H, Figure 2—figure supplement 4; Supplementary file 1). Ten of fifteen traits differed significantly between AMF-S and AMF-R families, corresponding to positive host responses ranging from 3% to 51% (Table 1; positive defined here as greater values of growth traits and yield components or accelerated/more synchronous flowering). AMF-R families were reduced in stature and delayed in silking (female flowering), resulting in an extension of anthesis (male flowering)-silking interval (ASI; Figure 2E,F; Supplementary file 1) - a classic symptom of abiotic stress in maize. Ear size was reduced in AMF-R families, along with ear and total kernel weight (Table 1; Figure 2—figure supplements 4 and 5). Individual kernels were not significantly different in weight or size between AMF-S and AMF-R families (Figure 2G; Table 1). However, the total number of kernels per ear was reduced in AMF-R families (Figure 2H; Table 1), indicative of poor seed set, a possible consequence of increased ASI.
 
-## QTL x AMF effects underlie variation in mycorrhiza response
+![Figure 2.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-v1.jpg)
+
+**Figure 2.:** (A) Susceptible (AMF-S) and resistant (AMF-R) families segregate genomic content from two founder parents, shown as red and blue bars, but are homozygous for the wild-type (green) or mutant (yellow) allele at Castor (black arrow), respectively, blocking AM symbiosis in AMF-R. (B), Border between representative AMF-S and AMF-R plots, Ameca, Mexico, 2019. (C), Representative AMF-S ears. (D), Representative AMF-R ears. (E), Plant height (PH) of 73 AMF-S (green) and 64 AMF-R (yellow) families. (F), Anthesis-silking interval (ASI). (G), Kernel shape (KS) based on the analysis of scanned kernel images . (H), Total kernel number (TKN). The violin plots in (E, F and H) are a hybrid of boxplot and density plot. The box represents the interquartile range with the horizontal line representing the median and whiskers extending 1.5 times the interquartile range. The shape of the violin plot represents the probability density at different values along the y-axis. ***, difference between AMF-S and AMF-R significant at p<0.001 (Wilcoxon test; Bonferonni adjustment based on the total trait number).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Satellite view of the Ameca site used for the principal field evaluation (20.57 lat, −104.04 lon, 1268 masl). Yellow rectangle shows the field area. (B) Satellite view of the Puerto Vallarta (PV) site used for population generation and preliminary high-input evaluation (20.78 lat, −105.243 lon, 41 masl). Red rectangle shows the field area. (C) Mexico showing the two sites.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Winter PV field in 2020, located in Nayarit, Mexico. (B) Summer Ameca field in 2019, located in Jalisco, Mexico.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Summer experimental field 2019, located in Ameca, Jalisco. Three complete blocks were evaluated. Forty-five seeds were sown per three-row plot (15 seed per row). AMF-S and AMF-R families were alternated with the order of the families within each subpopulation randomized within each block. The rows marked with red, blue, and green correspond to blocks 1, 2, and 3, respectively. A commercial UNISEM hybrid was planted on the border of the experiment and used as a check throughout the field. The field was fertilized at planting with 250 kg / Ha of diammonium phosphate (DAP) as a source of nitrogen and phosphorus (18-46-00, NPK). A further application of 250 kg / Ha of urea was given (46-00-00, NPK) at 40 days after planting.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The box in violin plots represents the interquartile range with the horizontal line representing the median and whiskers representing 1.5 times the interquartile ranges. The shape of the violin plot represents the probability density of data at different values along the y-axis. Results were based on two-group Wilcoxon tests with Bonferonni adjusted p-values. Note: *: p<0.05; **: p<0.01; ***: p<0.001; NS: not significant. Trait codes as in Table 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The shape of maize ear (A), cob (B), and kernel (C) of AMF-S (wt) and AMF-R (castor) families. Median shapes of ear, cob, and kernel from two families were shown in thick green and yellow lines, whereas individual genotypes of two groups were shown in thin, semi-transparent green, and yellow lines. Shapes were extracted from scanned images from 3 ears per plot, 50 kernels per ear.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** A, Phenotypic variation captured by the first five principal components (PCs). The first two principal components (PCs) explained more than 50% of the phenotypic variance. PC1 (40.1%) was primarily associated with ASI and maize yield-related traits, such as ear weight (EW), total kernel number (TKN), and total kernel weight (TKW). B, Loading of AMF-S and AMF-R families on PC1 and PC2. The position of trait names (as Table 1) with respect to the origin indicates contribution to each PC.
+
+**Table 1.**
+ Summary of the host response and QTLs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Mean AMF-S</th>
+      <th>Mean AMF-R</th>
+      <th>Adj. P-value1</th>
+      <th>HR2</th>
+      <th>HR (%)3</th>
+      <th>QTLs4</th>
+      <th>AMFxQTL5</th>
+      <th>Chr6</th>
+      <th>Type7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STD</td>
+      <td>11</td>
+      <td>10</td>
+      <td>NS</td>
+      <td>1</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DTA</td>
+      <td>56</td>
+      <td>57</td>
+      <td>NS</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>DTS</td>
+      <td>59</td>
+      <td>60</td>
+      <td>***</td>
+      <td>-1</td>
+      <td>-3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>AP</td>
+    </tr>
+    <tr>
+      <td>ASI</td>
+      <td>2</td>
+      <td>4</td>
+      <td>***</td>
+      <td>-2</td>
+      <td>−34</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>PH</td>
+      <td>196.8</td>
+      <td>171.8</td>
+      <td>***</td>
+      <td>25</td>
+      <td>15</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2, 4</td>
+      <td>D, B</td>
+    </tr>
+    <tr>
+      <td>TBN</td>
+      <td>13</td>
+      <td>12</td>
+      <td>NS</td>
+      <td>1</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1</td>
+      <td>5, 7,</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>GC</td>
+      <td>0. 56</td>
+      <td>0. 4</td>
+      <td>NS</td>
+      <td>0.15</td>
+      <td>38</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EW</td>
+      <td>86.6</td>
+      <td>60.6</td>
+      <td>***</td>
+      <td>26</td>
+      <td>43</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1, 4</td>
+      <td>AP, B</td>
+    </tr>
+    <tr>
+      <td>EL</td>
+      <td>13.9</td>
+      <td>12.4</td>
+      <td>***</td>
+      <td>1.5</td>
+      <td>13</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>ED</td>
+      <td>40.3</td>
+      <td>37.2</td>
+      <td>***</td>
+      <td>3.1</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2, 5</td>
+      <td>D, D</td>
+    </tr>
+    <tr>
+      <td>KRN</td>
+      <td>16</td>
+      <td>15</td>
+      <td>*</td>
+      <td>1</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KPR</td>
+      <td>25</td>
+      <td>18</td>
+      <td>***</td>
+      <td>7</td>
+      <td>37</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1, 7</td>
+      <td>D, AP</td>
+    </tr>
+    <tr>
+      <td>KC</td>
+      <td>0. 3</td>
+      <td>0.23</td>
+      <td>NS</td>
+      <td>−0.06</td>
+      <td>21</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CD</td>
+      <td>26.6</td>
+      <td>26.1</td>
+      <td>NS</td>
+      <td>0.5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FKW</td>
+      <td>10.4</td>
+      <td>9.4</td>
+      <td>NS</td>
+      <td>1</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1, 10</td>
+      <td>D, AP</td>
+    </tr>
+    <tr>
+      <td>TKW</td>
+      <td>67.7</td>
+      <td>44.8</td>
+      <td>***</td>
+      <td>22.9</td>
+      <td>51</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>AP</td>
+    </tr>
+    <tr>
+      <td>TKN</td>
+      <td>330</td>
+      <td>230</td>
+      <td>***</td>
+      <td>100</td>
+      <td>44</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>PC1</td>
+      <td>−1.23</td>
+      <td>1.7</td>
+      <td>***</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>1, 5</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>PC2</td>
+      <td>0.126</td>
+      <td>−0.182</td>
+      <td>NS</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>PC3</td>
+      <td>0.251</td>
+      <td>−0.288</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>0</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PC4</td>
+      <td>−0.033</td>
+      <td>0.037</td>
+      <td>NS</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>3, 10</td>
+      <td>AP</td>
+    </tr>
+    <tr>
+      <td>PC5</td>
+      <td>−0.245</td>
+      <td>0.282</td>
+      <td>***</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>8</td>
+      <td>AP</td>
+    </tr>
+  </tbody>
+</table>
+
+_1Wilcoxon tests with Bonferonni adjusted p-values. Note: *: p<0.05; **: p<0.01; ***: p<0.001; NS: not significant. 2Host response calculated as mean AMF-S - AMF-R. 3Host response expressed as a percentage of AMF-R mean. 4Number of QTL associated with a given trait. 5Number of QTL showing significant QTL x AMF effect. 6Chromosomes where the QTLs are located. 7Pattern of QTL x AMF effect: D: dependence QTL expressed primarily in AMF-R families; B, benefit QTL expressed primarily in AMF-S families; AP, antagonistic pleiotropy. Trait codes: STD, stand count; DTA, days to anthesis; DTS, days to silking; ASI, anthesis-silking interval; PH, plant height; TBN, tassel branch number; EW, ear weight; EL, ear length; ED, ear diameter; KRN, kernel row number; KPR, kernels per row; CD, cob diameter; FKW, fifty kernel weight; TKW, total kernel weight; TKN, total kernel number. PC, principal components from an analysis of all traits, numbered in descending order of variance explained._
+
+### QTL x AMF effects underlie variation in mycorrhiza response
 
 We performed a Quantitative Trait Locus (QTL) analysis using the trait estimates obtained for F2:3 families and the genotypes of their respective F2 parents. We combined AMF-S and AMF-R families in a single analysis, including the Castor genotype as an interactive covariate. Under this model, the Castor additive effect (hereafter, AMF effect) estimated the marginal host response across all families, QTL additive effects captured genetic differences between the parents, and QTL × AMF effects indicated underlying heritable differences in the response of CML312 and W22 parents. In addition to directly analyzing trait values, we combined groups of correlated traits by principal component (PC) analysis (Figure 2—figure supplement 6), running the first five PCs in QTL mapping. We identified 28 QTLs, of which 21 showed evidence of AMF × QTL interaction (Figure 3A, Figure 3—figure supplements 1 and 2; Table 1). We combined significant QTL, AMF and AMF x QTL terms, into a single multiple-QTL model for each trait and calculated the percentage of phenotypic variation explained by AMF, by additive QTL and by AMF × QTL terms (Figure 3B; Supplementary file 1). For plant height, ear weight and total kernel weight, the combination of AMF and AMF x QTL effects explained more than half of the total genetic variance (based on an estimation of broad-sense heritability, H2), and over a quarter of the total phenotypic variance (Figure 3B). The identification of significant AMF × QTL effects reveals heritable differences in the response to AMF between the CML312 and W22 parents.
 
-## The genetic architecture of response variation distinguishes dependence and benefit
+![Figure 3.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig3-v1.jpg)
+
+**Figure 3.:** (A) Genomic position of QTL identified in this study. Boxes indicate the position of the peak marker. Bars represent the drop-1 LOD interval. Colors denote patterns of AMF × QTL interaction as described in the text. (B) The contribution of different components to phenotypic variance in different plant traits among AMF-S and AMF-R families. Total genetic variance was estimated based on differences between experimental blocks and partitioned into variation explained by the additive effect of AMF, the additional variation explained by interactive QTL and QTL × AMF interaction (QTL × AMF), the additional variation explained by additive QTL (QTL) and residual genetic variation (Res H2). The balance of the phenotypic variance was assigned to the environment (E). Traits codes as in Table 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Plot of genetic (y axis) and physical (x axis) position for 1050 genetic markers that compose the genetic map of the CML312 x W22 castor-2 F2 population.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Plot representing the estimated genetic map and the marker distribution across the ten chromosomes of maize for the CML312 × W22 castor-2 F2 population.
+
+### The genetic architecture of response variation distinguishes dependence and benefit
 
 Variation in host response confounds differences in dependence and benefit (Figure 4A,B, Figure 4—figure supplement 1; Janos, 2007; Sawers et al., 2010) - the former being the capacity of a given variety to perform in the absence of AMF, the latter the degree to which a plant host profits from the association. Having identified significant AMF × QTL interaction, we distinguished dependence and benefit by inspecting QTL effects separately in AMF-S and AMF-R families (Figure 4—source data 1). For 12 of the 17 QTLs showing significant interaction, the effect was conditional - that is expressed predominantly in either the AMF-S or AMF-R families, but not in both (Figures 3A and 4; Table 1; Des Marais and Juenger, 2010). We considered conditional QTLs expressed specifically in the AMF-R families to represent variation in dependence. Conversely, we considered conditional QTLs expressed specifically in the AMF-S families to be variation in benefit (Figures 3 and 4; Table 1). Two regions of the genome were associated with multiple QTLs, suggesting a shared mechanistic basis: a region on the long arm of chromosome (chr) one linked to ear-traits and a region on chr four linked to plant height and flowering time (Figure 3A). Combining traits using PCs further refined these two QTL ‘hot-spots’ and demonstrated the difference between dependence and benefit (Figure 4D. Table 1).
 
-## Antagonistic QTL effects suggest a trade-off between mycorrhizal and non-mycorrhizal performance
+![Figure 4.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig4-v1.jpg)
+
+**Figure 4.:** (A) Host response (R) is the difference in trait value between mycorrhizal (M; green) and non-mycorrhizal (NM, yellow) plants. Increased response can result from either greater dependence (D; poorer performance of NM plants) or greater benefit (B; greater performance of M plants). (B), QTL × AMF effects underlying variation in response reveal the balance of benefit and dependence. In this theoretical example, the effect is conditional on mycorrhizal colonization, reflecting a difference in benefit more than dependence. (C, D) Effect plots for major QTL associated with PC1 and PC2, respectively. Effect of the homozygous CML312 (red), homozygous W22 (blue), or heterozygous (brown) genotypes in AMF-S and AMF-R families. The PC1 QTL is conditional on AMF-R, indicating a difference in dependence. The PC2 QTL is conditional on AMF-S, indicating a difference in benefit.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61701/elife-61701-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Theoretical performance (arbitrary units; y axis) of mycorrhizal (M) and non-mycorrhizal (NM) plants of two genotypes (red and blue). The difference between M and NM defines response for a given genotype. (Top left) No AMF × genotype interaction. Both genotypes respond equally to AMF; the difference between varieties is constant between M and NM. (Top right) NM conditional. Response is higher in the blue genotype; difference between genotypes is conditional on NM treatment; response variation is driven by greater dependence of the blue genotype. (Bottom left) M conditional. Response is higher in the red genotype; difference between genotypes is conditional on M treatment; response variation is driven by greater benefit of the blue genotype. (Bottom right) Antagonistic pleiotropy. Response is higher in the red genotype; difference between the genotypes is expressed in both M and NM, but the sign of the effect changes; the red genotype is superior in M growth but inferior in NM growth.
+
+### Antagonistic QTL effects suggest a trade-off between mycorrhizal and non-mycorrhizal performance
 
 Several QTLs showed more extreme QTL × AMF in which the effect was expressed in both AMF-S and AMF-R families, but with a change of sign (i.e. a ‘swap’ in the relative performance of the parental alleles) - a condition described as antagonistic pleiotropy (Figure 4—figure supplements 1, Figure 5A; Des Marais and Juenger, 2010). Under this scenario, the superior allele in mycorrhizal plants is detrimental to performance in the absence of mycorrhiza, and vice versa, providing evidence for a trade-off at the single-locus level. Significantly, several QTLs associated with key yield components showed antagonistic pleiotropy (Figure 3, Figure 4—source data 1, Figure 5B, C; Table 1). We observed analogous ‘rank changing’ effects at the level of the whole genotype. Although our mapping design did not permit direct evaluation of the same families as both AMF-S and AMF-R, we could fit QTL models to all genotypes across both levels of AMF. The resulting estimates showed evidence of rank change with respect to performance with or without AMF (Figure 5D). To explore further the response at the genotype level, we used whole-genome models to predict mycorrhizal and non-mycorrhizal trait values across the 137 families. Specifically, we used the AMF-S families to train a model for mycorrhizal performance that we applied across the whole population. Similarly, we used the AMF-R families to train a model for non-mycorrhizal performance. Whole-genome predictions aligned well with the observed values of their training sets, although they did not capture the extreme observed values (Figure 5E). Comparison of the two models indicated that genotypes associated with the highest values of the major yield components in one condition were unexceptional or poor in the other (Figure 5F), indicating a trade-off between dependence and benefit.
 
@@ -74,39 +427,39 @@ QTL × AMF effects were in many cases driven by plasticity associated with the t
 
 ## Materials and methods
 
-## Plant material and generation of the F2:3 mapping population
+### Plant material and generation of the F2:3 mapping population
 
 The castor-1 (mu1018108; stock UFMu-01071) and castor-2 (mu1045205; stock UFMu-05472) alleles were identified as insertions in the gene GRMZM2G099160/Zm00001d012863 in the publicly available Uniform Mu collection (www.maizegdb.org; McCarty et al., 2005). The castor-1 insertion was located 44 bp upstream of the translational start site. The castor-2 event was located 39 bp downstream of the translational start site. The F2:3 population was developed from the cross between a stock homozygous for the castor-2 allele in the W22 background and the subtropical CIMMYT (www.cimmyt.org) inbred line CML312. The initial F1 was self-pollinated to generate an F2 segregating castor-2 and W22/CML312 genome content. F2 plants were genotyped by PCR to identify homozygous wild-type and mutant individuals, and these self-pollinated to generate susceptible (AMF-S) and resistant (AMF-R) F2:3 families, respectively. F2:3 families were increased by sibling-mating within families. Material was generated in Valle de Banderas, Nayarit, Mexico and Irapuato, Guanajuato, Mexico from 2016 to 2019. Small amounts of seed are available for distribution through direct contact with the authors.
 
-## Mycorrhizal colonization assays
+### Mycorrhizal colonization assays
 
 Wild-type (W22) and mutant seedlings were inoculated with Rhizophagus irregularis - either 5 mL of crude inoculum (produced by sand culture with Tagetes multiflora) or 500 fungal spores isolated from transgenic hairy root carrot root cultures. Plants were grown in a growth chamber at 28/20°C, 65% humidity, and 12 h / 12 h day/night cycle. Plants were irrigated with water for the first 2 weeks and subsequently twice a week with Hoagland solution adjusted to 100 µM phosphate. Plants were harvested at 7 weeks and fungal colonization quantified microscopic inspection. Root segments (~1 cm in size) were incubated in 10% KOH for 30 min at 96°C, washed three times in distilled water, incubated in 0.3 M HCl for 30–120 min at room temperature, and then heated at 96°C for 8 min in a 0.1% w/v trypan blue staining solution in a 2:1:1 mixture of lactic acid: glycerol: distilled water. Samples were de-stained with a 1:1 solution of glycerol and 0.3 M HCl and 10 segments per sample were mounted on a cover slide. Fungal colonization was scored as the presence or absence of specific fungal structures at ten points per root piece (Gutjahr et al., 2008).
 
-## RT-PCR analysis
+### RT-PCR analysis
 
 RT-PCR to quantify Castor transcripts was performed as previously described (Gutjahr et al., 2008) using primer pairs flanking the castor-2 insertion site (HUN1 5’ Fwd: CCC CTC GAC CCC GAC TC; HUN1 5’ Rev: AAG AGA AGT TCC TGC GGA GA) or spanning the last intron (HUN1 3’ Fwd: GTT CCC CGA GGG ACC TTT TC; HUN1 3’ Rev: GCC TCA AGA CGG TAC CCA AT). The maize Act1 gene was used as a control (ACT1 Fwd: GGT GGC TCT ATT TTG GCT TCT; ACT1 Rev: CGT ACC ATG TCG AAC TTC CC).
 
-## DNA extraction and PCR genotyping of castor
+### DNA extraction and PCR genotyping of castor
 
 DNA extraction was performed as described in Fulton et al., 1995. The genotype at the Castor locus was determined by running wild-type and mutant PCR reactions. To amplify the wild-type fragment, a pair of gene-specific primers were used (HUNF01-CGCGAAGAAACGCAGACATTCC and HUNR04-TAACCTGGAGCGAACAGAATCCAC), generating a product of 606 bp. To amplify the mutant fragment a combination of Mutator primer and gene-specific primer was used (HUNF03-CTTGGGCGCATTGGAAATTCATCG and RS183-CGCCTCCATTTCGTCGAATCCSCTT), generating a fragment of 839 bp. PCR conditions were: 1 cycle of initial incubation at 94°C for 3 min, 32 cycles of 94°C for 30 s, 60°C for 30 s and 72°C for 1 min, and 1 cycle of a final extension at 72°C for 5 min. PCR used the Kapa Taq PCR kit from Kapa Biosystems (Wilmington, MA) following the manufacturer’s instructions. Products were visualized on 1% agarose gel.
 
-## Whole-genome genotyping and genetic map construction
+### Whole-genome genotyping and genetic map construction
 
 Approximately 200 F2 parents were analyzed using the Illumina MaizeLD BeadChip (https://www.illumina.com/products/by-type/microarray-kits/maize-ld.html). Approximately 3000 single nucleotide polymorphisms (SNPs) were detected, with a call rate of ~96% for all samples. The SNP set was processed using TASSEL 5 (Bradbury et al., 2007). SNPs were transformed to ABH format (A: CML312; B: W22) and filtered to remove sites matching any of the following criteria: >30% missing data; monomorphic sites outside of the Castor locus; SNPs outside the Castor locus showing segregation distortion (X2 test, p<0.05); redundant sites. The markers ‘5_2269274’, ‘5_3096229’, and ‘5_4270584’ (physical position on chromosome 5 at 2.67, 3.1, and 4.27 Mb, respectively) were used to confirm the expected genotype at the Castor locus. The genetic map was built in R (R core team 2020) using R/ASMAP (Taylor and Butler, 2017) and R/qtl (Broman et al., 2003; Broman and Sen, 2009).
 
-## Field evaluation and phenotypic analysis
+### Field evaluation and phenotypic analysis
 
 The F2:3 population was evaluated in the summer of 2019 at the UNISEM experimental station in Ameca, Jalisco, Mexico (20.78,–105.243). Three complete blocks of 73 AMF-S and 64 AMF-R families were evaluated. Within each block, AMF-S and AMF-R families were alternated. The order of the families within the AMF-S or AMF-R sub-populations was randomized within each block. For each replicate, 45 seeds of each family were sown in a plot of three 2 m long rows. Only the second row of each plot was considered for evaluation, the first and third rows providing a buffer between adjacent families. Phenotypic data were collected at flowering and after harvest as follows: stand count (STD), number of plants per row; days to anthesis (DTA), number of days from planting until anthers visible on the main spike of half of the plants in the row; days to silking (DTS), number of days from planting until silks visible on half of the plants in the row; anthesis-silking interval (ASI), difference in days between anthesis and silking; plant height (PH), distance in cm from the ground to the flag leaf; tassel branch number (TBN), number of primary lateral branches originating from the main spike; ear weight (EW), the weight in g of the ear; ear length (EL), distance in centimeters from the base to the tip of the ear; ear diameter (ED), the diameter in cm at the middle part of the ear; kernel row number (KRN), number of rows in the middle part of the ear; kernels per row (KPR), number of kernels in a single row from the base to the tip of the ear; cob diameter (CD), diameter in cm at the middle part of the cob; fifty kernel weight (FKW), weight in g of 50 randomly selected kernels; total kernel weight (TKW), weight in g of all kernels on the ear; total kernel number (TKN), estimated from TKW/FKW * 50.
 
-## Image analysis
+### Image analysis
 
 An image-based phenotyping method was used to quantify the size and shape of maize ear, cob, and kernel. Ears and cobs (1-3) from each plot, and approximately 50 kernels from associated ears, were scanned using an Epson Perfection V600 scanner at 1200 dots per inch. Scanned images were uploaded to Cyverse (Merchant et al., 2016) and analyzed using an automatic pipeline to quantify ear, cob, and kernel attributes (Miller et al., 2017). Width profiles of ear and cob and contour data of kernels were extracted in R to compute their shapes.
 
-## Principal component analysis
+### Principal component analysis
 
 Principal Component Analysis (PCA) was conducted to analyze major sources of plant phenotypic variance and to visualize the relationships among all measured phenotypic traits across two maize families. PCA was performed using the prcomp function in R.
 
-## QTL mapping and whole-genome prediction
+### QTL mapping and whole-genome prediction
 
 QTL mapping was performed using the R/qtl package (Broman et al., 2003) on a population composed of 73 AMF-S and 64 AMF-R F2:3 families. Single-QTL standard interval mapping was run using the scanone function with Haley-Knott regression, with the genotype at Castor (wt = 1; mutant = 0) treated as a covariate (hereafter, AMF). To assess QTL × AMF interaction (Broman and Sen, 2009), QTL analysis was performed under four different models: separate analyses for AMF-S (H0wt) and AMF-R (H0mut) subpopulations; considering AMF as an additive covariate (Ha) and considering AMF as an interactive covariate (Hf). The LOD significance threshold for each trait and model was established with a permutation test (α = 0.05, 1000 permutations). Evidence of QTL × AMF interaction was obtained by comparing Hf and Ha models, where the difference LODi = LODf - LODa was considered with reference to the threshold difference LOD_thri = LOD_thrf - LOD_thra for evidence of possible interaction. Individual QTL were combined into multiple-QTL models on a per trait basis. Where evidence was found of QTL × AMF interaction in the single scan, the interaction was also included in the multiple-QTL model. Multiple-QTL models were evaluated using the fitqtl function and non-significant (α = 0.1) terms removed according to the drop-one table.
 

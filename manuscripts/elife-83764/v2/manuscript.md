@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Division of Cancer Epidemiology, McGill University Montreal Canada
+1. Division of Cancer Epidemiology, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 
 ## Abstract
 
-The coronavirus disease 2019 (COVID-19) pandemic has caused disruptions to cancer care by delaying diagnoses and treatment, presenting challenges and uncertainties for both patients and physicians. We conducted a nationwide online survey to investigate the effects of the pandemic and capture modifications, prompted by pandemic-related control measures, on cervical cancer screening-related activities from mid-March to mid-August 2020, across Canada. The survey consisted of 61 questions related to the continuum of care in cervical cancer screening and treatment: appointment scheduling, tests, colposcopy, follow-up, treatment of pre-cancerous lesions/cancer, and telemedicine. We piloted the survey with 21 Canadian experts in cervical cancer prevention and care. We partnered with the Society of Canadian Colposcopists, Society of Gynecologic Oncology of Canada, Canadian Association of Pathologists, and Society of Obstetricians and Gynecologists of Canada, which distributed the survey to their members via email. We reached out to family physicians and nurse practitioners via MDBriefCase. The survey was also posted on McGill Channels (Department of Family Medicine News and Events) and social media platforms. The data were analyzed descriptively. Unique responses were collected from 510 participants (November 16, 2020, to February 28, 2021), representing 418 fully and 92 partially completed surveys. Responses were from Ontario (41.0%), British Columbia (21.0%), and Alberta (12.8%), and mostly comprised family physicians/general practitioners (43.7%), and gynecologist/obstetrician professionals (21.6%). Cancelled screening appointments were mainly reported by family physicians/general practitioners (28.3%), followed by gynecologist/obstetrician professionals (19.8%), and primarily occurred in private clinics (30.5%). Decreases in the number of screening Pap tests and colposcopy procedures were consistently observed across Canadian provinces. About 90% reported that their practice/institution adopted telemedicine to communicate with patients. The area most severely impacted by the pandemic was appointment scheduling, with an important level of cancellations reported. Survey results may inform resumptions of various fronts in cervical cancer screening and management. The present work was supported by the Canadian Institutes of Health Research (operating grant COVID-19 May 2020 Rapid Research Funding Opportunity VR5-172666 Rapid Research competition and foundation grant 143347 to Eduardo L Franco). Eliya Farah and Rami Ali each received an MSc stipend from the Department of Oncology, McGill University.
+Background:The coronavirus disease 2019 (COVID-19) pandemic has caused disruptions to cancer care by delaying diagnoses and treatment, presenting challenges and uncertainties for both patients and physicians. We conducted a nationwide online survey to investigate the effects of the pandemic and capture modifications, prompted by pandemic-related control measures, on cervical cancer screening-related activities from mid-March to mid-August 2020, across Canada.Methods:The survey consisted of 61 questions related to the continuum of care in cervical cancer screening and treatment: appointment scheduling, tests, colposcopy, follow-up, treatment of pre-cancerous lesions/cancer, and telemedicine. We piloted the survey with 21 Canadian experts in cervical cancer prevention and care. We partnered with the Society of Canadian Colposcopists, Society of Gynecologic Oncology of Canada, Canadian Association of Pathologists, and Society of Obstetricians and Gynecologists of Canada, which distributed the survey to their members via email. We reached out to family physicians and nurse practitioners via MDBriefCase. The survey was also posted on McGill Channels (Department of Family Medicine News and Events) and social media platforms. The data were analyzed descriptively.Results:Unique responses were collected from 510 participants (November 16, 2020, to February 28, 2021), representing 418 fully and 92 partially completed surveys. Responses were from Ontario (41.0%), British Columbia (21.0%), and Alberta (12.8%), and mostly comprised family physicians/general practitioners (43.7%), and gynecologist/obstetrician professionals (21.6%). Cancelled screening appointments were mainly reported by family physicians/general practitioners (28.3%), followed by gynecologist/obstetrician professionals (19.8%), and primarily occurred in private clinics (30.5%). Decreases in the number of screening Pap tests and colposcopy procedures were consistently observed across Canadian provinces. About 90% reported that their practice/institution adopted telemedicine to communicate with patients.Conclusions:The area most severely impacted by the pandemic was appointment scheduling, with an important level of cancellations reported. Survey results may inform resumptions of various fronts in cervical cancer screening and management.Funding:The present work was supported by the Canadian Institutes of Health Research (operating grant COVID-19 May 2020 Rapid Research Funding Opportunity VR5-172666 Rapid Research competition and foundation grant 143347 to Eduardo L Franco). Eliya Farah and Rami Ali each received an MSc stipend from the Department of Oncology, McGill University.
 
 ## Introduction
 
@@ -31,17 +31,17 @@ We conducted a national cross-sectional survey-based descriptive study among hea
 
 ## Materials and methods
 
-## Target population
+### Target population
 
 The survey questions were formulated to gather the opinions and firsthand experiences of colposcopists, colposcopy registered nurses, registered practical nurses, cytopathologists, technologists, general practitioners, family physicians, obstetrician and gynecology staff, gynecological oncologists, gynecology nurses, pathologists, and physician assistants working in private and public health institutions in Canada.
 
-## Survey design, development, and validation
+### Survey design, development, and validation
 
 We used the Checklist for Reporting Results of Internet E-Surveys (CHERRIES) to guide survey development and reporting of results (Eysenbach, 2004). The survey (Supplementary file 1), designed by members of the research team, consisted of 61 questions including informed e-consent and occupational demographics (questions Q2-Q5) such as attributes of the specialty, provider type, and affiliations of respondents. It was constructed around five themes related to screening practice (Q6-Q37), treatment of pre-cancerous lesions and cancer (Q38-Q42), telemedicine (Q43-Q47), over- and under-screening in the pre-COVID-19 era (Q48-Q51), and resumption of in-person practice (Q52-Q61). The first two themes covered a range of questions that reflected the continuum of care in cervical cancer screening and management. The screening practice theme included sub-sections focusing on appointment scheduling (Q6-Q13), screening tests (Q14-Q21), human papillomavirus (HPV) self-sampling (Q22-Q23), colposcopy (Q24-Q29), and screening follow-up (Q30-Q37). Questions 6 through 47 were designed to collect data during the early COVID-19 period spanning from mid-March until mid-August 2020. For questions pertaining to the ‘resumption of in-person practice’, the period of interest was from mid-August 2020 until the date of survey completion. We also collected data on sex and age of the respondents. Respondents were asked to provide their impressions and best estimates when completing the survey, without necessarily confirming the proportions that they reported with their institution’s statistics.
 
 For content validation and to determine question suitability and flow prior to the launch of the online survey, we conducted three iterative rounds of pilot testing by distributing the initial survey questionnaire to members of the Survey Study Group, consisting of 21 leading cervical cancer specialists and physicians in Canada who were not involved in study conception or design. Collective feedback in terms of relevance, appropriateness, and clarity of theme-related questions, as well as questionnaire length, was incorporated into the survey after each round; it was also used to refine the wording, type, and order of questions. Most were closed-ended (nominal, ordinal, and Likert-type questions), with few free-text questions and sub-questions that required elaborated responses.
 
-## Survey administration and data management
+### Survey administration and data management
 
 The survey, constructed as a web-based questionnaire (originally developed in English and translated to French), was administered using LimeSurvey, an online-based survey tool hosted by McGill University. It was pretested by our research team and the panel of experts to ensure experiential functionality and valid data collection.
 
@@ -55,17 +55,204 @@ Analyses included descriptive statistics and summaries of responses by province/
 
 ## Results
 
-## Survey administration and responses
+### Survey administration and responses
 
 As shown in Figure 1, 778 potentially eligible respondents clicked on the survey link. Of those who started the survey, 235 were excluded as they were non-Canadian, had non-valid professions or places of practice, left the survey blank, or only completed the demographic section. Another 33 surveys were considered questionable; respondents took the survey multiple times, gave multiple non-sequitur or contradictory answers, or plagiarized responses (copied text from websites/Internet Google search). The final analysis sample comprised answers from 510 individuals, among whom the median time spent to complete the survey was 11 min and 53 s (interquartile range 6 min and 52 s to 17 min and 46 s). The survey was completed between November 16, 2020, and February 28, 2021.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig1-v2.jpg)
 
-## Characteristics of survey respondents
+### Characteristics of survey respondents
 
 Table 1 summarizes the characteristics of the study population. There were more female than male respondents. The mean age was 44.4 years±11.9 (range 20–86, median: 42 years, interquartile range 35–54). Responses were mainly from Ontario, followed by British Columbia and Alberta. Most respondents were general practitioners/family physicians (43.7%), gynecologists/obstetrician-gynecologists (21.6%), nurse practitioners/registered nurses (14.1%), and colposcopists (10.2%). Regarding the place of practice, 32.9% reported working in private clinics, whereas comparable proportions reported working in university-affiliated hospitals (24.3%), community-affiliated hospitals (27.8%), and public clinics (25.3%). Some respondents selected multiple professions and/or places of practice. Of note, 42 of the 52 colposcopists were also gynecologists/obstetrician-gynecologists. Of the 124 respondents who practice in a university-affiliated hospital, 14, 11, and 16 respondents also selected community hospital, public clinic, and private clinic as a place of practice, respectively. Additionally, of the 142 respondents who work in a community hospital, 17 stated practicing in a public clinic and 23 in a private clinic.
 
-## Theme 1: Screening practice
+**Table 1.**
+ Characteristics of survey respondents (n=510).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Categories</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Sex</td>
+      <td>Female</td>
+      <td>284 (55.7)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>124 (24.3)</td>
+    </tr>
+    <tr>
+      <td>Not reported</td>
+      <td>102 (20.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Age</td>
+      <td>20–29</td>
+      <td>26 (5.1)</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>122 (23.9)</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>98 (19.2)</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>70 (13.7)</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>42 (8.2)</td>
+    </tr>
+    <tr>
+      <td>70+</td>
+      <td>7 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Not reported</td>
+      <td>145 (28.4)</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Province/territory</td>
+      <td>Alberta</td>
+      <td>65 (12.8)</td>
+    </tr>
+    <tr>
+      <td>British Columbia</td>
+      <td>107 (21.0)</td>
+    </tr>
+    <tr>
+      <td>Manitoba</td>
+      <td>18 (3.5)</td>
+    </tr>
+    <tr>
+      <td>New Brunswick</td>
+      <td>19 (3.7)</td>
+    </tr>
+    <tr>
+      <td>Newfoundland and Labrador</td>
+      <td>7 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Northwest Territories</td>
+      <td>9 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Nova Scotia</td>
+      <td>21 (4.1)</td>
+    </tr>
+    <tr>
+      <td>Nunavut</td>
+      <td>4 (0.8)</td>
+    </tr>
+    <tr>
+      <td>Ontario</td>
+      <td>209 (41.0)</td>
+    </tr>
+    <tr>
+      <td>Prince Edward Island</td>
+      <td>2 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Quebec</td>
+      <td>21 (5.1)</td>
+    </tr>
+    <tr>
+      <td>Saskatchewan</td>
+      <td>26 (5.1)</td>
+    </tr>
+    <tr>
+      <td>Yukon</td>
+      <td>1 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Not reported</td>
+      <td>1 (0.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="11">Profession*</td>
+      <td>Colposcopist</td>
+      <td>52 (10.2)</td>
+    </tr>
+    <tr>
+      <td>Colposcopy registered nurse/registered practical nurse</td>
+      <td>16 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Cytopathologist/technologist</td>
+      <td>44 (8.6)</td>
+    </tr>
+    <tr>
+      <td>General practitioner/family physician</td>
+      <td>223 (43.7)</td>
+    </tr>
+    <tr>
+      <td>Gynecologist/obstetrician-gynecologist</td>
+      <td>110 (21.6)</td>
+    </tr>
+    <tr>
+      <td>Gynecology oncologist</td>
+      <td>32 (6.3)</td>
+    </tr>
+    <tr>
+      <td>Gynecology nurse</td>
+      <td>21 (4.1)</td>
+    </tr>
+    <tr>
+      <td>Nurse practitioner/registered nurse</td>
+      <td>72 (14.1)</td>
+    </tr>
+    <tr>
+      <td>Pathologist</td>
+      <td>17 (3.3)</td>
+    </tr>
+    <tr>
+      <td>Physician assistant</td>
+      <td>7 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Other (manager in a community health center)</td>
+      <td>1 (0.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Place of practice*</td>
+      <td>University-affiliated hospital</td>
+      <td>124 (24.3)</td>
+    </tr>
+    <tr>
+      <td>Community hospital</td>
+      <td>142 (27.8)</td>
+    </tr>
+    <tr>
+      <td>Public clinic</td>
+      <td>129 (25.3)</td>
+    </tr>
+    <tr>
+      <td>Private clinic</td>
+      <td>168 (32.9)</td>
+    </tr>
+    <tr>
+      <td>Community health center</td>
+      <td>37 (7.3)</td>
+    </tr>
+    <tr>
+      <td>Other (homeless shelter [nurse]; private lab [cytotechnologist])</td>
+      <td>2 (0.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Frequency count exceeded number of respondents (510) as some selected more than one answer._
+
+### Theme 1: Screening practice
 
 Cancellations and postponements of screening appointments were reported by 63.7% and 74.9% of respondents, respectively (Table 2). These are characterized in Figure 2 by province (largely reported by healthcare professionals in Ontario), profession (largely reported by those in primary settings), and place of practice (largely reported by those in private clinics). Of the 325 respondents who reported cancellations of appointments, 55.7% stated that up to 49% of these appointments were cancelled by the physician or provider’s institution (Table 2). Similarly, 63.7% and 40.6% reported that up to 49% were cancelled by the patient or converted to telemedicine, respectively. Of the 382 healthcare professionals who reported that appointments were postponed, 51.6%, 68.4%, and 42.9% respectively stated that up to 49% of these appointments were postponed by the physician or provider’s institution, by the patient, or converted to telemedicine. The majority of appointments (64.4%) were at most deferred by less than 4 months, whereas 9.4% were deferred by more than 6 months. Figures 3—5 show the proportions of all cancelled and postponed screening appointments by province, profession, and place of practice, respectively; most responses were once again from professionals in Ontario, primary care, and private clinics. Of the respondents who experienced Pap test deferral periods of 2 months or longer, 38% (100/26) worked in private clinics. Those who practiced in community hospitals reported deferral periods of 2 months or more for HPV test (36.8% [42/114]) and HPV/Pap co-test (42.7% [53/124]) more frequently than other places of practice. A total of 99 respondents (19.4%) reported that their practice/institution did not allow in person consultation appointments during the pandemic’s peak period (Supplementary file 2a). Of those who reported allowance of in-person consultations (378, 74.1%), most were from Ontario, in primary care, and practicing in private clinics (Figure 6).
 
@@ -89,6 +276,237 @@ Cancellations and postponements of screening appointments were reported by 63.7%
 
 **Figure 6.:** Number of in person consultations is shown by (A) province, (B) profession, and (C) place of practice. Answers include responses for question 11 by questions 2 (province), 4 (profession), and 5 (place of practice). Panel A: Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). Panel B: Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, physician assistants, and a manager of a community health center; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; Secondary (cytological) includes cytopathologists/technologists and pathologists; Tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Panels B and C: Frequency count exceeded total number of respondents as some reported multiple professions and places of practice. DK: Don’t know; NA: Not applicable to my practice.
 
+**Table 2.**
+ Cancellations and postponements of cervical cancer screening appointments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Question number and content (number of responses)</th>
+      <th>Categories</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4" colspan="2">Q6 Cancellations of screening appointments (n=510)</td>
+      <td>Yes</td>
+      <td>325 (63.7)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>114 (22.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>39 (7.7)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>32 (6.3)</td>
+    </tr>
+    <tr>
+      <td rowspan="18">Q7 Percentage of cancelled screening appointments (n=325)</td>
+      <td rowspan="6">Cancelled by physician or provider’s institution</td>
+      <td>0%</td>
+      <td>37 (11.4)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>107 (32.9)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>74 (22.8)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>53 (16.3)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>35 (10.8)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>19 (5.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Cancelled by patient</td>
+      <td>0%</td>
+      <td>8 (2.5)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>124 (38.2)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>83 (25.5)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>44 (13.5)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>42 (12.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>24 (7.4)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Converted to telemedicine</td>
+      <td>0%</td>
+      <td>77 (23.7)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>88 (27.1)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>44 (13.5)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>56 (17.2)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>36 (11.1)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>24 (7.4)</td>
+    </tr>
+    <tr>
+      <td rowspan="4" colspan="2">Q8 Postponements of screening practices (n=510)</td>
+      <td>Yes</td>
+      <td>382 (74.9)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>73 (14.3)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>24 (4.7)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>31 (6.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="18">Q9 Percentage of postponed screening appointments (n=382)</td>
+      <td rowspan="6">Postponed by physician or provider’s institution</td>
+      <td>0%</td>
+      <td>40 (10.5)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>110 (28.8)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>87 (22.8)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>66 (17.3)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>54 (14.1)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>25 (6.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Postponed by patient</td>
+      <td>0%</td>
+      <td>12 (3.1)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>153 (40.1)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>108 (28.3)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>46 (12.0)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>33 (8.7)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>30 (7.9)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Converted to telemedicine</td>
+      <td>0%</td>
+      <td>103 (27.0)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>104 (27.2)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>60 (15.7)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>53 (13.9)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>29 (7.6)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>33 (8.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="7" colspan="2">Q10 Length of deferral period for postponed screening appointments (n=382)</td>
+      <td>1 week to &lt;2 weeks</td>
+      <td>15 (3.9)</td>
+    </tr>
+    <tr>
+      <td>2 weeks to &lt;4 weeks</td>
+      <td>47 (12.3)</td>
+    </tr>
+    <tr>
+      <td>1 month to &lt;2 months</td>
+      <td>66 (17.3)</td>
+    </tr>
+    <tr>
+      <td>2 months to &lt;4 months</td>
+      <td>118 (30.9)</td>
+    </tr>
+    <tr>
+      <td>4 months to &lt;6 months</td>
+      <td>78 (20.4)</td>
+    </tr>
+    <tr>
+      <td>&gt;6 months</td>
+      <td>36 (9.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>22 (5.7)</td>
+    </tr>
+  </tbody>
+</table>
+
 In terms of the type of test usually employed for primary cervical cancer screening (Supplementary file 2b), 76.1% of respondents reported cytology, 32.8% the HPV test, and 25.4% reported using both. Compared to pre-COVID-19, 15.8%, 4.9%, and 3.8% reported a decrease by 75% or more in the number of Pap, HPV, and co-tests, respectively. Delays in scheduling of these tests were correspondingly reported by 56.9%, 22.6%, and 21.8% of respondents. Of the 469 healthcare professionals who reported cancellations of a scheduled screening test, 48.1%, 19.8%, and 17.3% stated that up to 49% of Pap, HPV, and co-tests were cancelled, whereas of the 468 professionals who reported postponements, the corresponding proportions were 46.8%, 22.3%, and 20.1% (Supplementary file 2c). Pap tests (56.5%), HPV tests (31.5%) and HPV/Pap co-tests (25.5%) were deferred by less than 4 months, at the most, whereas 10.1%, 6.6%, and 6.6% of these tests were deferred by more than 6 months, respectively. Figure 7 illustrates the deferral period of these postponed screening tests appointments by province, profession, and place of practice. Regarding the delay in forwarding tests to the laboratory, 15%, 15.6%, and 13.9% of respondents reported such delays for Pap, HPV, and co-tests, respectively (Supplementary file 2d).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig7-v2.jpg)
@@ -99,7 +517,39 @@ When asked about whether the pandemic will encourage/facilitate/accelerate the i
 
 With respect to colposcopy appointments, cancellations, and postponements were reported by 25.2% and 37% of respondents (Supplementary file 2f), with patterns and changes by province, profession, and place of practice (Figure 8, Figure 8—figure supplements 1–3) similar to those reported for screening appointments. The same was observed for reported cancellations (33.3%) and postponements (53.5%) of follow-up appointments (Supplementary file 2g, Figure 9, and Figure 9—figure supplements 1–3). Professionals from community hospitals saw longer deferral periods for postponed colposcopy appointments than those from other settings, accounting for 40.9% (38/93) of deferrals of 2 months or longer, whereas respondents from community health centers accounted for 34.9% (38/109) of deferrals of 2 months or longer of follow-up appointments. With respect to receiving test results from the lab prior to follow-up with patients, 21.1%, 19.3%, and 12.1% of respondents reported delays for Pap, HPV, and co-tests, respectively (Supplementary file 2h).
 
-## Theme 2: Treatment of pre-cancerous lesions and cancer
+![Figure 8.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig8-v2.jpg)
+
+**Figure 8.:** Number of cancellations are shown by (A) province, (B) profession, and (C) place of practice. Number of postponements are shown by (D) province, (E) profession, and (F) place of practice. Answers include responses for questions 25 (cancellations) and 27 (postponements) by questions 2 (province), 4 (profession), and 5 (place of practice). Panels A and D: Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). Panels B and E: Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, physician assistants, and a manager of a community health center; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; secondary (cytological) includes cytopathologists/technologists and pathologists; tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Panels B, C, E, and F: Frequency count exceeded total number of respondents as some reported multiple professions and places of practice. DK: Don’t know; NA: Not applicable to my practice.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Number cancelled by (A) physician or providers’ institution and (B) patient. Number postponed by (C) physician or providers’ institution and (D) patient. Answers include responses for questions 26 (cancellations) and 28 (postponements) by question 2 (province). Respondents were asked to ensure that their answers did not exceed 100% for each question. (i.e., for each respondent, A+B ≈ 100% and C+D ≈ 100%). The x axis represents frequency of responses by province. Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). The y axis represents cancelled or postponed colposcopy appointments using a predefined interval scale. DK: Don’t know.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Number cancelled by (A) physician or providers’ institution and (B) patient. Number postponed by (C) physician or providers’ institution and (D) patient. Answers include responses for questions 26 (cancellations) and 28 (postponements) by question 4 (profession). Respondents were asked to ensure that their answers did not exceed 100% for each question. (i.e., for each respondent, A+B ≈ 100% and C+D ≈ 100%). The x axis represents frequency of responses by profession. Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, and physician assistants; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; secondary (cytological) includes cytopathologists/technologists and pathologists; tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Frequency count exceeded total number of respondents as some reported multiple professions. The y axis represents cancelled or postponed colposcopy appointments using a predefined interval scale. DK: Don’t know.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Number cancelled by (A) physician or providers’ institution and (B) patient. Number postponed by (C) physician or providers’ institution and (D) patient. Answers include responses for questions 26 (cancellations) and 28 (postponements) by question 5 (place of practice). Respondents were asked to ensure that their answers did not exceed 100% for each question. (i.e., for each respondent, A+B ≈ 100% and C+D ≈ 100%). The x axis represents frequency of responses by place of practice. Frequency count exceeded total number of respondents as some reported multiple places of practice. The y axis represents cancelled or postponed colposcopy appointments using a predefined interval scale. DK: Don’t know.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig9-v2.jpg)
+
+**Figure 9.:** Number of cancellations are shown by (A) province, (B) profession, and (C) place of practice. Number of postponements are shown by (D) province, (E) profession, and (F) place of practice. Answers include responses for questions 31 (cancellations) and 33 (postponements) by questions 2 (province), 4 (profession), and 5 (place of practice). Panels A and D: Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). Panels B and E: Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, physician assistants, and a manager of a community health center; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; secondary (cytological) includes cytopathologists/technologists and pathologists; tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Panels B, C, E, and F: Frequency count exceeded total number of respondents as some reported multiple professions and places of practice. DK: Don’t know; NA: Not applicable to my practice.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Number cancelled by (A) physician or providers’ institution, (B) patient, and (C) converted to telemedicine. Number postponed by (D) physician or providers’ institution, (E) patient, and (F) converted to telemedicine. Answers include responses for questions 32 (cancellations) and 34 (postponements) by question 2 (province). Respondents were asked to ensure that their answers did not exceed 100% for each question (i.e., for each respondent, A+B+C ≈ 100% and D+E+F ≈ 100%). The x axis represents frequency of responses by province. Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). The y axis represents cancelled or postponed follow-up appointments using a predefined interval scale. DK: Don’t know.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Number cancelled by (A) physician or providers’ institution, (B) patient, and (C) converted to telemedicine. Number postponed by (D) physician or providers’ institution, (E) patient, and (F) converted to telemedicine. Answers include responses for questions 32 (cancellations) and 34 (postponements) by question 4 (profession). Respondents were asked to ensure that their answers did not exceed 100% for each question. (i.e., for each respondent, A+B+C ≈ 100% and D+E+F ≈ 100%). The x axis represents frequency of responses by profession. Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, and physician assistants; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; secondary (cytological) includes cytopathologists/technologists and pathologists; tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Frequency count exceeded total number of respondents as some reported multiple professions. The y axis represents cancelled or postponed follow-up appointments using a predefined interval scale. DK: Don’t know.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** Number cancelled by (A) physician or providers’ institution, (B) patient, and (C) converted to telemedicine. Number postponed by (C) physician or providers’ institution, (D) patient, and (E) converted to telemedicine. Answers include responses for questions 32 (cancellations) and 34 (postponements) by question 5 (place of practice). Respondents were asked to ensure that their answers did not exceed 100% for each question. (i.e., for each respondent, A+B+C ≈ 100% and D+E+F ≈ 100%). The x axis represents frequency of responses by place of practice. Frequency count exceeded total number of respondents as some reported multiple places of practice. The y axis represents cancelled or postponed follow-up appointments using a predefined interval scale. DK: Don’t know.
+
+### Theme 2: Treatment of pre-cancerous lesions and cancer
 
 Supplementary file 2i presents the observed changes in the number of treatment procedures by treatment type reported by 431 respondents; cold knife conization (15.8% decrease, 12.5% unaffected, 15.8% increase), other excisional (20.0% decrease, 12.8% unaffected, 15.5% increase), ablative procedures (15.8% decrease, 10.9% unaffected, 16.3% increase), hysterectomy (23.9% decrease, 9.3% unaffected, 13.4% increase), chemotherapy (10.9% decrease, 10.9% unaffected, 15.1% increase), and radiation (13.7% decrease, 7.9% unaffected, 14.0% increase). The number of cancellations or postponements of treatment procedures (13.5% for cold knife conization, 23.7% for other excisional, 19.5% for ablative procedures, 21.1% for hysterectomy, 10.4% for chemotherapy, and 11.6% for radiation) are shown by province (Figure 10), profession (Figure 11), and place of practice (Figure 12). Community hospitals accounted for almost half of deferrals of 2 months or longer of cold knife conisation procedures (48.9% [43/88]), other excisional procedures (47.6% [39/82]), ablative procedures (46.7% [43/92]), hysterectomies (49.0% [47/96]), chemotherapy (46.8% [36/77]), and radiation (48.6% [35/72]).
 
@@ -115,25 +565,705 @@ Supplementary file 2i presents the observed changes in the number of treatment p
 
 **Figure 12.:** Number of cancellations or postponements of (A) cold knife conization, (B) other excisional (e.g., LEEP), (C) ablative procedures, (D) hysterectomy, (E) chemotherapy, and (F) radiation are shown by place of practice. Answers include the responses for question 39 by question 5. Frequency count exceeded total number of respondents as some reported multiple places of practice. DK: Don’t know; NA: Not applicable to my practice.
 
-## Theme 3: Telemedicine
+### Theme 3: Telemedicine
 
 Table 3 presents responses reported by 429 respondents regarding the adoption of telemedicine. A total of 384 respondents (89.5%) reported that their practice/institution adopted telemedicine to communicate with patients; 26.8% indicated that they called 25–49% of their patients for distance consultations and 19.8% indicated the use of telemedicine with 25–49% of patients for follow-up appointments related to a cervical cancer screening procedure. Around two-thirds (72.7%) of healthcare professionals reported that virtual consultations are covered by their jurisdictional public health insurance system. Regarding which interactions with patients would be appropriate to convert to telemedicine, 82.1% of respondents selected test results reporting, 66% health and medical history reporting, 51.7% consent forms prior to in-person procedures, 42.9% post-procedure follow-up, and 33.1% selected in-person appointment planning/scheduling.
 
-## Theme 4: Over- and under-screening in the pre-COVID-19 era
+**Table 3.**
+ Adoption of telemedicine (n=429*).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Question number and content</th>
+      <th>Categories</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Q43 Adoption of telemedicine to communicate with patients</td>
+      <td>Yes, with all patients</td>
+      <td>179 (41.7)</td>
+    </tr>
+    <tr>
+      <td>Yes, with low-risk patients only</td>
+      <td>205 (47.8)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>23 (5.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>9 (2.1)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>13 (3.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q44 Percentage of patients called (audio/video) for distance consultation</td>
+      <td>0%</td>
+      <td>17 (4.0)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>83 (19.4)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>115 (26.8)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>105 (24.5)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>83 (19.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>5 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>21 (4.9)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q45 Percentage of patients called (audio/video) for follow-up to a cervical cancer screening procedure</td>
+      <td>0%</td>
+      <td>46 (10.7)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>103 (24.0)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>85 (19.8)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>83 (19.3)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>68 (15.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>18 (4.2)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>26 (6.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Q46 Virtual consultations compensated by jurisdictional public health insurance system</td>
+      <td>Yes</td>
+      <td>312 (72.7)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>43 (10.0)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>44 (10.3)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>30 (7.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Q47 Appropriate interactions to convert to telemedicine†</td>
+      <td>Health and medical history reporting</td>
+      <td>283 (66.0)</td>
+    </tr>
+    <tr>
+      <td>Test results reporting</td>
+      <td>352 (82.1)</td>
+    </tr>
+    <tr>
+      <td>Consent forms completion prior to in-person procedures</td>
+      <td>222 (51.7)</td>
+    </tr>
+    <tr>
+      <td>Post-procedure follow-up</td>
+      <td>219 (42.9)</td>
+    </tr>
+    <tr>
+      <td>In-person appointment planning/scheduling</td>
+      <td>169 (33.1)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 (1.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Eighty-one respondents did not answer; the total number of complete responses was used as the denominator.†Frequency count exceeded number of respondents (429) as some selected more than one answer._
+
+### Theme 4: Over- and under-screening in the pre-COVID-19 era
 
 There was a total of 190 responses (44.5%) indicating issues of over-screening/over-diagnosis/over-treatment prior to the onset of the pandemic, with over-diagnosis (20.1%) of cervical lesions being the most commonly reported issue (Table 4). A minority of respondents reported that the current delays/cancellations of screening and management procedures may have had a positive impact in reducing unnecessary screening (15.2% of responses), diagnosis (20.6% of responses), and treatment (10.5% of responses). Conversely, 350 responses (81.9%) indicated issues of under-screening/under-diagnosis/under-treatment pre-COVID-19, and in turn, reported that the current delays/cancellations of screening and management procedures may have had a negative impact by reducing necessary screening (47.8% of responses), diagnosis (48.4% of responses), and treatment (25.3% of responses).
 
-## Theme 5: Resumption of in-person practice
+**Table 4.**
+ Over-screening and under-screening in the pre-coronavirus disease 2019 (pre-COVID-19) era (n=427*).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Question number and content†</th>
+      <th>Categories</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Q48 Prevalence of over-screening/over-diagnosis/over-treatment of cervical lesions pre-COVID-19</td>
+      <td>Yes, over-screening</td>
+      <td>68 (15.9)</td>
+    </tr>
+    <tr>
+      <td>Yes, over-diagnosis</td>
+      <td>86 (20.1)</td>
+    </tr>
+    <tr>
+      <td>Yes, over-treatment</td>
+      <td>36 (8.5)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>224 (52.5)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>37 (8.7)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Q49 Current delays/cancellations of screening/management procedures have had a positive impact by reducing unnecessary screening/diagnosis/treatment</td>
+      <td>Yes, over-screening</td>
+      <td>65 (15.2)</td>
+    </tr>
+    <tr>
+      <td>Yes, over-diagnosis</td>
+      <td>88 (20.6)</td>
+    </tr>
+    <tr>
+      <td>Yes, over-treatment</td>
+      <td>45 (10.5)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>188 (44.0)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>66 (15.5)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Q50 Prevalence of under-screening/under-diagnosis/under-treatment of cervical lesions pre-COVID-19</td>
+      <td>Yes, under-screening</td>
+      <td>161 (37.7)</td>
+    </tr>
+    <tr>
+      <td>Yes, under-diagnosis</td>
+      <td>127 (29.7)</td>
+    </tr>
+    <tr>
+      <td>Yes, under-treatment</td>
+      <td>62 (14.5)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>109 (25.5)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>54 (12.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Q51 Current delays/cancellations of screening/management procedures have had a negative impact by reducing necessary screening/diagnosis/treatment</td>
+      <td>Yes, under-screening</td>
+      <td>204 (47.8)</td>
+    </tr>
+    <tr>
+      <td>Yes, under-diagnosis</td>
+      <td>207 (48.4)</td>
+    </tr>
+    <tr>
+      <td>Yes, under-treatment</td>
+      <td>129 (25.3)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>48 (9.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>50 (11.7)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Eighty-three respondents did not answer; the total number of complete responses was used as the denominator.†Frequency count exceeded number of respondents (427) as some selected more than one answer._
+
+### Theme 5: Resumption of in-person practice
 
 Nearly half (45.1%) of respondents reported that their practice/institution has caught up with the cancellations/postponements of appointments caused by restrictions introduced at the beginning of the pandemic, whereas 34.9% reported ongoing disruptions and delays (Table 5). Allowing longer workdays and/or working on weekends, increasing availability of operating rooms for treatment procedures, and converting operating room procedures to take place in clinics constituted the main measures that were implemented to catch up with these cancellations/postponements. A total of 160 respondents (38%) indicated that their practice/institution has currently caught up with 50% or more of the cancellations/postponements. Nonetheless, 51.3% reported that patients have not been coming in for routine screening procedures at a capacity equivalent to the pre-COVID-19 era. Almost a third of respondents (29.2%) answered that 25–49% of patients have been attending routine screening procedures, in comparison to the pre-COVID-19 era. Most of these respondents were from Ontario, practicing in primary care settings at community hospitals (Figure 13). Notably, 32.3% mentioned an increase in the frequency of patients presenting with worsened symptoms, and 16.6% reported that 25–49% of patients had been diagnosed with more advanced cytological abnormalities and/or lesions confirmed by histology, compared to the pre-COVID-19 era (Table 5).
+
+**Table 5.**
+ Resumption of in-person practice (n=421*).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Question number and content</th>
+      <th>Categories</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Q53 Practice/institution caught up with cancellations/postponements</td>
+      <td>Yes</td>
+      <td>190 (45.1)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>147 (34.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>58 (13.8)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>26 (6.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q54 Measures implemented to catch up with cancellations/postponements†</td>
+      <td>Allow longer workdays and/or working on weekends</td>
+      <td>91 (21.6)</td>
+    </tr>
+    <tr>
+      <td>Increase availability of OR for treatment procedures</td>
+      <td>91 (21.6)</td>
+    </tr>
+    <tr>
+      <td>Convert OR procedures, if possible, to take place in clinics</td>
+      <td>74 (17.6)</td>
+    </tr>
+    <tr>
+      <td>Increase availability to labs for processing test samples</td>
+      <td>48 (11.4)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>51 (11.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>41 (9.7)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>92 (21.9)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q55 Percentage of cancellations/postponements currently caught up with</td>
+      <td>0%</td>
+      <td>5 (1.2)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>60 (14.3)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>98 (23.3)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>72 (17.1)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>88 (20.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>55 (13.1)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>43 (10.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Q56 Patients attending routine screening at equivalent capacity to pre-COVID-19 era</td>
+      <td>Yes</td>
+      <td>132 (31.4)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>216 (51.3)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>52 (12.4)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>21 (5.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q57 Percentage of patients attending routine screening compared to pre-COVID-19</td>
+      <td>0%</td>
+      <td>3 (0.7)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>75 (17.8)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>123 (29.2)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>89 (21.1)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>76 (18.1)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>35 (8.3)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>20 (4.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Q58 Increase in frequency of patients with worsening of symptoms during screening</td>
+      <td>Yes</td>
+      <td>136 (32.3)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>216 (51.3)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>47 (11.2)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>22 (5.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q59 Percentage of patients diagnosed with more advanced cytological abnormalities/lesions, in comparison to pre-COVID-19</td>
+      <td>0%</td>
+      <td>98 (23.3)</td>
+    </tr>
+    <tr>
+      <td>1–24%</td>
+      <td>94 (22.3)</td>
+    </tr>
+    <tr>
+      <td>25–49%</td>
+      <td>70 (16.6)</td>
+    </tr>
+    <tr>
+      <td>50–74%</td>
+      <td>42 (10.0)</td>
+    </tr>
+    <tr>
+      <td>≥75%</td>
+      <td>6 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>95 (22.6)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>16 (3.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Q60 Screening patients (with COVID-19) for cervical cancer</td>
+      <td>Yes</td>
+      <td>113 (26.8)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>222 (52.7)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>58 (13.8)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>28 (6.7)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Eighty-nine respondents did not answer; the total number of complete responses was used as the denominator.†Frequency count exceeded number of respondents (421) as some selected more than one answer._
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig13-v2.jpg)
 
 **Figure 13.:** Proportions are shown by (A) province, (B) profession, and (C) place of practice. Answers include responses for question 57 by questions 2 (province), 4 (profession), and 5 (place of practice). Panel A: Territories include Northwest Territories, Nunavut, and Yukon. Other provinces include Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Quebec, and Saskatchewan (and one respondent who preferred not to say). Panel B: Primary includes general practitioners/family physicians, nurse practitioners/registered nurses, physician assistants, and a manager of a community health center; secondary (clinical) includes colposcopists and colposcopy registered nurses/registered practical nurses; secondary (cytological) includes cytopathologists/technologists and pathologists; tertiary includes gynecologists/obstetrician-gynecologists, gynecology oncologists, and gynecology nurses. Panels B and C: Frequency count exceeded total number of respondents as some reported multiple places of practice. DK: Don’t know; NA: Not applicable to my practice.
 
-## Answers to open-ended questions
+### Answers to open-ended questions
 
 Table 6 presents a categorization of the open-ended feedback provided by respondents. Several topics were discerned among the diverse raw responses for each open question. Around 40% of respondents mentioned that the pandemic would facilitate HPV self-sampling and is a favorable approach to implement in cervical cancer screening. Several challenges were described including operational, implementation, and evaluation considerations as well as healthcare system considerations. Of the 206 responses to Q22, 30 survey respondents stated that they were not familiar with HPV self-sampling, whether it be with the mechanism or validity of the test. The vast majority of those who were not familiar with HPV self-sampling were primary care providers (90.0%), and the largest proportion were in Ontario (43.3%) and worked in private clinics (56.7%) (Figure 14). Similarly, 60 of the 197 respondents to Q23 explained that they were not familiar enough with HPV self-sampling to express a favorable or unfavorable opinion about its implementation as an alternative screening method. Of those, most were in Ontario (56.7%), were primary care providers (75.0%), and worked in private clinics (40.0%) (Figure 15). Not surprisingly, of those who responded that they were ‘maybe’ in favor of implementing HPV self-sampling as an alternative screening procedure, 47.1% (49/104) reported that they were not familiar enough with this screening modality to express their view. Respondents identified additional interactions deemed appropriate to convert to telemedicine, such as counselling services, follow-up with the patient, discussion of treatment options, and research-related activities. A substantial portion (36.2%) stated that no measures were implemented by their practice/institution to catch up with cancellations, postponements, and ongoing delays. Almost one-quarter of respondents to Q52 (24.7%) were forced to interrupt the services at their practice or institution for between 2 and 4 months due to the pandemic, and 13.1% reported interruptions of over 6 months. Many of those who did not experience interruptions to their practice (11.2%) described severely reduced services, deferral of patients with lower risk or lower grade disease, and use of telemedicine. Respondents had different interpretations of Q60; whereas a few reported the continuation of regular practice (10.3%) and use of personal protective equipment (4.4%) to screen COVID-19-positive patients, most (54.4%) reported that appointments were deferred until after the patient’s isolation period. When asked about which cervical cancer screening guidelines the respondent’s practice/institution has been following, 63.5% answered governmental and 17.3% answered professional association/society.
+
+**Table 6.**
+ Content analysis of open-ended questions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Question number and content(number of responses)</th>
+      <th>Opinions and perspectives</th>
+      <th>n (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Q22 COVID-19 to encourage/facilitate/accelerate implementation of HPV self-sampling in cervical cancer screening programs, briefly justify your answer(n=206)</td>
+      <td>Favorable approach</td>
+      <td>85 (41.3)</td>
+    </tr>
+    <tr>
+      <td>Not favorable</td>
+      <td>18 (8.7)</td>
+    </tr>
+    <tr>
+      <td>Challenges faced*</td>
+      <td>47 (22.8)</td>
+    </tr>
+    <tr>
+      <td>Not familiar with HPV self-sampling†</td>
+      <td>30 (14.6)</td>
+    </tr>
+    <tr>
+      <td>‘No comment’ written</td>
+      <td>6 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>12 (5.8)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer</td>
+      <td>8 (3.9)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Q23 In favor of implementing HPV self-sampling as alternative screening method in practice, briefly justify your answer(n=197)</td>
+      <td>Favorable approach</td>
+      <td>80 (40.1)</td>
+    </tr>
+    <tr>
+      <td>Not favorable</td>
+      <td>12 (6.1)</td>
+    </tr>
+    <tr>
+      <td>Challenges described*</td>
+      <td>29 (14.7)</td>
+    </tr>
+    <tr>
+      <td>Not familiar with HPV self-sampling†</td>
+      <td>60 (30.5)</td>
+    </tr>
+    <tr>
+      <td>‘No comment’ written</td>
+      <td>2 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>4 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer</td>
+      <td>10 (5.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Q47 Appropriate interactions to convert to telemedicine, other(n=5)</td>
+      <td>All of the above, but not in all cases</td>
+      <td>1 (20.0)</td>
+    </tr>
+    <tr>
+      <td>Counselling and family meetings</td>
+      <td>1 (20.0)</td>
+    </tr>
+    <tr>
+      <td>Research-related activities</td>
+      <td>1 (20.0)</td>
+    </tr>
+    <tr>
+      <td>Follow-up any issues</td>
+      <td>1 (20.0)</td>
+    </tr>
+    <tr>
+      <td>Discuss treatment options</td>
+      <td>1 (20.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Q52 Duration of service interruption in practice/institution due to pandemic, before resumption (n=421)</td>
+      <td>No interruption</td>
+      <td>47 (11.2)</td>
+    </tr>
+    <tr>
+      <td>&lt;1 month</td>
+      <td>41 (9.7)</td>
+    </tr>
+    <tr>
+      <td>1 month to &lt;2 months</td>
+      <td>51 (12.1)</td>
+    </tr>
+    <tr>
+      <td>2 months to &lt;4 months</td>
+      <td>104 (24.7)</td>
+    </tr>
+    <tr>
+      <td>4 months to &lt;6 months</td>
+      <td>47 (11.2)</td>
+    </tr>
+    <tr>
+      <td>&gt;6 months</td>
+      <td>55 (13.1)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>5 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>3 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer</td>
+      <td>68 (16.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Q54 Measures implemented to catch up with cancellations/postponements, other(n=58)</td>
+      <td>Increased screening capacity (clinic space and staff)</td>
+      <td>12 (20.7)</td>
+    </tr>
+    <tr>
+      <td>Prioritizing patients</td>
+      <td>2 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Adapting and enforcing screening criteria</td>
+      <td>3 (5.2)</td>
+    </tr>
+    <tr>
+      <td>Allowing in-person screening</td>
+      <td>3 (5.2)</td>
+    </tr>
+    <tr>
+      <td>Contacting and rebooking patients</td>
+      <td>6 (10.3)</td>
+    </tr>
+    <tr>
+      <td>Telemedicine</td>
+      <td>4 (6.9)</td>
+    </tr>
+    <tr>
+      <td>Screening continued during COVID-19</td>
+      <td>2 (3.4)</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>21 (36.2)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer</td>
+      <td>5 (8.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Q60 Screening patients (with COVID-19) for cervical cancer, if yes, briefly describe the process of cervical cancer screening of COVID-19 patients’(n=68) ‡</td>
+      <td>Only those who are asymptomatic</td>
+      <td>1 (1.5)</td>
+    </tr>
+    <tr>
+      <td>COVID-19 screening pre-appointment</td>
+      <td>12 (17.6)</td>
+    </tr>
+    <tr>
+      <td>Use of PPE</td>
+      <td>3 (4.4)</td>
+    </tr>
+    <tr>
+      <td>Deferral</td>
+      <td>37 (54.4)</td>
+    </tr>
+    <tr>
+      <td>Telemedicine</td>
+      <td>1 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Regular practice</td>
+      <td>7 (10.3)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>3 (4.4)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer</td>
+      <td>6 (8.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Q61 Which cervical cancer screening guidelines has your practice/institution been following(n=422)‡</td>
+      <td>Governmental</td>
+      <td>268 (63.5)</td>
+    </tr>
+    <tr>
+      <td>Local/institutional</td>
+      <td>19 (4.5)</td>
+    </tr>
+    <tr>
+      <td>Professional association/society</td>
+      <td>73 (17.3)</td>
+    </tr>
+    <tr>
+      <td>Cancer organization/society</td>
+      <td>10 (2.4)</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>13 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Don’t know</td>
+      <td>11 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Not applicable to my practice</td>
+      <td>4 (0.1)</td>
+    </tr>
+    <tr>
+      <td>Unclear answer/acronym</td>
+      <td>40 (9.5)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Include cost and whether it will be funded by the government; the need to be added to the guidelines and endorsed by government and professionals along with having a well-designed program that helps with patient compliance and the need for professionals to be well educated on the subject; implementation challenges (including delays due to the pandemic, burnout, lack of available healthcare spending, lack of appropriate healthcare infrastructure, lack of prioritization of women’s health); patient education (awareness, proper technique given with clear simple instructions); and logistics (material currently not available or test not routinely offered, should kits be mailed to participants).†Respondents were either not familiar with the test itself, with whether the test is available, or with the test’s validity (in terms of its sensitivity and specificity).‡Frequency count exceeded number of respondents (68 respondents for Q60 and 422 respondents for Q61) as some provided more than one answer._
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/83764/elife-83764-fig14-v2.jpg)
 

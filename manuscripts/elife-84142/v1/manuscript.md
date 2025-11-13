@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Anthropology, New York University New York United States
+1. Department of Anthropology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 

@@ -29,7 +29,7 @@ Here, we report that Drosophila SP received from a second male can bind to a pri
 
 ## Results
 
-## Sex peptide from one male can associate with sperm from another
+### Sex peptide from one male can associate with sperm from another
 
 In matings with wt males, SP binds to sperm with which it enters the female. We wondered if sperm stored by mates of SP-null males, that lack bound SP, could become decorated with SP from a second male even if he did not provide sperm. If so, this would mean that SP from a second (spermless) male can bind to sperm from a prior male, already present in the female's reproductive tract (Figure 1. Cartoon).
 
@@ -41,25 +41,49 @@ To test whether SP from a second male can bind to SP-deficient sperm stored by m
 
 To see if mating order was important, we carried out the reciprocal cross, that is, testing if SP deposited by a first male (spermless, in this scheme) could bind to sperm that were subsequently introduced by a second (SP-null) male (Figure 2. Cartoon). Spermless males transfer SP to the female tract after mating (Kalb et al., 1993), but we did not detect any SP in females mated to spermless males by 1d after the start of mating (ASM; Figure 1D. lane 4). We saw no SP signal in samples isolated from females that had mated to spermless males, and then subsequently to SP-null males at 1d ASFM (Figure 1D. lane 5). Our immunofluorescence data were consistent with our western blots: we saw no SP-sperm binding in females that mated first with a spermless male and a day later with SP-null male (Figure 2B). Therefore, if SP entered the female without sperm, it was unavailable to bind to sperm from a subsequent SP-deficient male.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig2-v2.jpg)
+
+**Figure 2.:** (Cartoon): Pictorial representation of the cross (fly images from Biorender); it is reciprocal of that in Figure 1. Females mated first with spermless (SOT) males and then a day later with SP-null males that provided sperm. Sperm heads were stained with DAPI (blue) and SP visualized with Alexa fluor 488, staining the sperm tail (green) and sperm head (cyan; overlapping blue/green). (A) Sperm from females singly mated to SP-null males, 2 hr ASM. (B) Sperm from females mated to spermless males and then remated to SP-null males, 1d ASFM. (C) Sperm from females mated to spermless males and then remated to SP+ males, 1d ASFM, serve as positive controls. Flies were frozen 2 hr ASSM. White arrows indicate sperm heads. Bar = 20 µm (D) Western blot lane numbers 1: M, a pair of male accessory gland (positive control; n = 1), 2: Fv, reproductive tract (RT) of virgin female (negative control; n = 5), 3: SP+, reproductive tract of females mated to control males (TM3 siblings of SP-null males; n = 5; positive control), 4: SP-, reproductive tract of females mated to SP-null males (n = 5; negative control). 5–12: Proteins from Bursa (B) or seminal receptacle (SR) from females mated to spermless males frozen at 0 min immediately after mating, 35 min, 1 hr, and 3 hr ASM, respectively (n = 15). Actin served as loading control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Females mated first with spermless (sot) male and then 3–6 hr ASFM with SP-null male that provided sperm. Panel: Sperm from SR of females mated to spermless males and then remated to SP-null males, 3–6 hr ASFM, frozen at 2 hr ASSM. Sperm heads were stained with DAPI (blue) and SP (green) probed with Alexa fluor 488 (n = 5; Bar = 20 µm).
+
 We hypothesized that we did not see SP bound to sperm in this second (reciprocal) crossing scheme because by the time of the second mating SP from the spermless male was no longer present in the female at 1d ASFM, since it could not be retained without binding to sperm (Peng et al., 2005) and no sperm were being supplied by these first males. To circumvent this, we attempted to remate females that had previously mated to spermless males as soon as 3–6 hr ASFM. However, few females remated, likely due to the recent experience of copulation, or to the effects of pheromones from the previous mating (Shao et al., 2019; Laturney and Billeter, 2016). In the few females that did remate, no SP-sperm binding was observed (Figure 2—figure supplement 1). Since the simplest explanation for these results was that SP transferred without sperm had disappeared from females by the time of the second mating, we performed western blotting to determine how long SP persists in the reproductive tract of females in absence of sperm. We probed for SP in proteins from the SR and bursa of females at 0 min, 35 min, 1 hr, and 3 hr ASM after mating. We detected SP in the bursa protein samples at 0 min, 35 min, and 1 hr ASM. (Figure 2D. lanes 5, 7, 9). However, SP was undetected in bursa or seminal receptacles of females at 3 hr ASM (Figure 2D. lane 11, 12). Thus, we could not determine whether SP from mating with a spermless male could bind a second male’s sperm, because SP received from the first mating was lost from the female reproductive tract before a second mating could occur. Xue and Noll, 2000 reported that a similar cross (females mated first to spermless males and then to Prd males) also gave no progeny (showed no copulation complementation), which they proposed to be due to inactivation or early loss of SFPs in the absence of sperm. Our results, showing that SP can bind to stored sperm from a prior male, provide the molecular explanation for their observation.
 
-## SP from a second male restores fertility, inhibits receptivity and regulates optimal release of the first male’s sperm from storage
+### SP from a second male restores fertility, inhibits receptivity and regulates optimal release of the first male’s sperm from storage
 
 SP is needed for efficient sperm release and utilization from the female sperm storage organs (Avila et al., 2010). We tested whether SP from a second male could restore the use of a first male’s sperm. Females mated to spermless males have no progeny (Figure 3A). Females singly-mated to SP-null males have significantly reduced numbers of progeny (Figure 3A. SE of diff = 8.043; p***=<0.001) relative to females mated to control males (Figure 3A), likely because lack of SP prevents the increase in egg production (Chapman et al., 2003; Liu and Kubli, 2003; Chen et al., 1985) and release of sperm from storage (Avila et al., 2010). However, females mated to SP-null males and then remated to spermless males at 1d (Figure 3B; p=0.2487) and 4d (Figure 3C; p=0.8618) ASFM had progeny levels similar to those of females that had mated to control (SP+) males and were subsequently remated to spermless males at the same time points. Thus, SP from a second (SOT) male could rescue the fertility defects that resulted from the lack of SP from an SP-null first male.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig3-v2.jpg)
+
+**Figure 3.:** (A) Graphical representation of numbers of progeny produced by each female over the span of 10 days, following mating to control (TM3 siblings of SP-null males: SP+; red), SP-null males (SP-null; green), or spermless males (SOT), p***=<0.001; n = 15–20. (B) Fertility of females mated to SP-null males and then remated to spermless males at 1d ASFM (SP-null, SOT; blue, n = 15–20) and (C) Fertility of females mated to SP-null males and then remated to spermless males at 4d ASFM (SP-null, SOT; blue, n = 15–20) compared to females mated to control males and then remated to spermless males (SP+, SOT, red, ns = non significant). (D) Percentage receptivity of females mated to SP-null males and then remated to spermless males (SP-null, SOT) at 1d ASFM, when compared to females singly mated to SP-null males (red arrows), spermless (SOT, blue arrows) or CS males, 1d ASM (p*=<0.05; p***=<0.001; n = 15–20 for each technical replicate). (E) Percentage receptivity of females mated to SP-null males and then remated to spermless males (SP-null, SOT) at 4d ASFM, when compared to females singly mated to SP-null males, spermless (SOT) or CS males (purple arrows), 4d ASM (p***=<0.001; n = 15–20 for each technical replicate). (F) Western blot lane numbers 1: Fv, reproductive tract (RT) of five virgin females (negative control); 2: M, a pair of male accessory gland (positive control); 3, 4, 5: RT of females mated to CS males, flash frozen at 2 hr (n = 5), 1d (n = 15) and 4d (n = 15) ASM, respectively; 6, 7, 8: RT of females mated to SP-null males and then subsequently mated to spermless males at 1d ASFM, flash frozen 2 hr (n = 5), 1d (n = 15) and 4d (n = 15) ASSM, respectively. Actin served as loading control. (G) Sperm in the seminal receptacle (SR) of a typical female mated to a control male (SP+; ProtB-eGFP) at 4d ASM. (H) Sperm in the SR of a typical female mated to SP-null; ProtB-eGFP male at 4d ASM. (I) Sperm in the SR of a typical female, mated to SP-null; ProtB-eGFP and subsequently remated to a spermless male at 1d ASFM, and frozen at 4d ASSM. In (G–I) sperm heads are green due to eGFP. Bar = 50 µm. (J) Graphical representation of sperm counts in SRs of females singly-mated to control (SP+, red, TM3 siblings of SP-null; ProtB-eGFP), SP-null (green) or doubly-mated to SP-null and spermless male (SP-null, SOT, blue) represented in G, H, I panels (p**=<0.01; p*=<0.05; ns = non significant; n = 15–20).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Lanes/samples are 1: Fv, reproductive tract (RT) of three virgin females (negative control); 2: M, one pair of male accessory glands (positive control); 3: SP+, RT of three females mated to control (TM3 siblings of SP-null males; positive control) males at 2 hr ASM; 4: SP-, RT of three females mated to SP-null males at 2 hr ASM; 5: SP+ eGFP, RT of three females mated to control (TM3 siblings of SP-null; ProtB-eGFP males; positive control) males at 2 hr ASM; 6: SP- eGFP, RT of three females mated to SP-null; ProtB-eGFP males at 2 hr ASM. Actin served as loading control.
 
 Reducing the likelihood of mated females to remate is another crucial postmating response regulated by SP (Liu and Kubli, 2003; Chen et al., 1988). Females that do not receive SP generally fail to exhibit this reluctance, and remate readily. We tested whether SP from a second male could delay the receptivity of females that had previously mated to SP-null males. Females singly-mated to SP-null males or spermless males show a significantly higher tendency to remate at 1d ASM (Figure 3D; p***=<0.001) or 4d ASM (Figure 3E; p***=<0.001) relative to females mated to wt (CS) males (Figure 3D and E). In contrast, females mated to SP-null males and then remated to spermless males at 1d ASFM (Figure 3D; p=0.43) showed receptivity similar to mates of control males at 1d after the start of second mating (ASSM). The effect, however, did not persist as long as after a mating to a wt male. At 4d ASSM (Figure 3E; p***=<0.001) doubly-mated females exhibited higher receptivity relative to females mated to wt males but lower than those mated to spermless males. This could be either because less SP from the second (spermless) mating is able to bind to stored sperm from the previous mating and thus SP levels have been more depleted by 4 days ASSM than after a control mating where the sperm-SP enter the female together. Alternatively, the active portion of SP received from a rival male, bound to first male’s sperm might be released from the sperm at a higher rate. We performed western blots to determine how long SP received from the second (spermless) male persists in the reproductive tract of females previously mated to SP-null males. Protein was extracted, and probed for SP, from females singly-mated to CS males and those doubly-mated to SP-null males and spermless males at 1d ASFM, or at 2 hr, 1d or 4d ASM/ASSM, respectively. SP signals were detected in females mated to CS males at 2 hr, 1d or 4d ASM (Figure 3F. lanes 3, 4, 5). SP was detected in females mated to SP-null males and then remated to spermless males at 2 hr and 1d ASSM (Figure 3F. lanes 6, 7) but not (or very weakly) at 4d ASSM (Figure 3F. lane 8). Taken together, our results show that SP from a second male can rescue the receptivity defects that resulted from the first male’s of lack of SP but that sufficient SP for such an effect is not retained for as long as in a control situation (e.g. a mating with a wt male).
 
 SP is also needed for release of sperm from storage within the mated female (Avila et al., 2010). Thus, females mated to SP-null males retain significantly more sperm in their seminal receptacle at 4d ASM. To test whether SP acquired from a spermless male in a second mating could also rescue this defect, we counted sperm in storage after a single mating with SP-null; ProtB-eGFP males and after mates of SP-null; ProtB-eGFP males had remated with spermless males. As expected, females mated to control (SP+; ProtB-eGFP) males had fewer sperm in their seminal receptacle (average of 192; Figure 3G and J) relative to mates of SP-null; ProtB-eGFP males, which had significantly higher sperm counts, indicating poor release of stored sperm (Figure 3H and J; p**=<0.01; average of 304 at 4d ASM). However, mates of SP-null; ProtB-eGFP males that had remated with spermless males retained sperm in numbers similar to those observed in females mated to control males (average of 212; Figure 3I and J; p=ns). We also counted sperm stored in seminal receptacle of females mated to SP-null; ProtB-eGFP males at 5d ASM (Figure 3J. average of 313) to make sure that the evident decline in sperm counts or release of stored sperm in doubly mated females (SP-null; ProtB-eGFP mates remated to spermless males and assayed at 5d ASFM or 4d ASSM) was not dependent on days after mating, but rather on receipt of SP from spermless males. Thus, SP from a second male can rescue the sperm release defects of prior mating to a male that lacked SP.
 
-## SP from a second male can bind to stored sperm from a previous male, while still binding strongly to his own sperm
+### SP from a second male can bind to stored sperm from a previous male, while still binding strongly to his own sperm
 
 In the experiments described above SP was provided by a spermless second male, but in nature females are much more likely to encounter a male who has his own sperm, capable of binding his SP. To test whether SP from a male with sperm can still bind to sperm from another male, we modified our experimental protocol such that females were mated to SP-null males as described earlier, but rather than spermless males, we now used ProtB-dsRed males (Manier et al., 2010) as the second male (Figure 4I. Cartoon). These second males have a full suite of SFPs and sperm, and their sperm-heads are labeled with ProtB-dsRed. This allowed us to distinguish between sperm received from SP-null males (blue heads) and those received from ProtB-dsRed males (red heads). Females were frozen at 2 hr ASSM and sperm dissected from their seminal receptacles were probed for SP. We observed anti-SP staining along the entire sperm (head and tail) from ProtB-dsRed males (Figure 4B). Sperm received from the SP-null males (blue heads) were also stained with anti-SP along their length (head and tail; Figure 4B). Therefore, a control (wt) male with a complete suite of SFPs and sperm of his own can also provide SP to bind to SP-deficient sperm from another male.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig4-v2.jpg)
+
+**Figure 4.:** Cartoon (I): Pictorial representation of the experimental cross (fly images from Biorender). Females mated to SP-null males were remated to control (ProtB-dsRed) males at 1d ASFM. (A) Sperm from females singly mated to SP-null males, 2 hr ASM (blue sperm-head). (B) Sperm from females mated to SP-null males (blue sperm-head) remated to ProtB-dsRed (red+ blue sperm-head) males at 1d ASFM. SP was visualized with Alexa fluor 488, staining the sperm (head+ tail) green. Flies were frozen 2 hr ASSM. White arrows indicate sperm heads (n = 10; Bar = 20 µm). Cartoon (II): Pictorial representation of the substitute cross (fly images from Biorender). Females mated to SFP depleted control (CS) males were remated to control (Prot B-dsRed) males at 4d ASFM. (C) Sperm from females singly-mated to SFP depleted CS males at 4d ASM (blue sperm-head). (D) Sperm from females mated to SFP depleted CS males (blue sperm-head), remated to ProtB-dsRed (red+ blue sperm-head) males at 4d ASFM. SP was visualized with Alexa fluor 488, staining the sperm (head+ tail)green. Flies were frozen 2 hr ASSM. White arrows indicate sperm heads (n = 10; Bar = 20 µm).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot probed for SP. Lanes/samples are 1: Fv, reproductive tract (RT) of two virgin females (negative control); 2: M, one pair of male accessory glands from a 3-day-old unmated virgin male; 3: B1, RT of four females mated to control unmated virgin males, frozen at 2 hr ASM; 4: M(d), one pair of male accessory glands dissected from a multiply mated male (previously mated with six virgin females); 5: B7, RT of four females mated to multiply-mated males, frozen at 2 hr ASM. Actin served as loading control. (B) Sperm dissected from females mated to unmated males, frozen at 2 hr ASM. (C) Sperm dissected from females mated to multiply mated males, frozen at 2 hr ASM. Sperm heads were stained with DAPI (blue) and presence of SP (green) was detected with Alexa fluor 488 (n = 5; Bar = 20 µm).
 
 The likelihood of finding an SP-null male in nature is very low. However, multiple-mating has been shown to deplete SFP reserves (Hihara, 1981), so it is possible that inter-ejaculate interaction could occur if the first male had depleted his SFP reserves. To test whether this could occur, we performed a crossing scheme in which we substituted multiply-mated control (CS) males with exhausted seminal reserves (Hihara, 1981) for the SP-null males used in Figure 4A. We carried out western blotting to determine the levels of SP in accessory glands (AG) of such multiply mated (CS) males and the amount of SP in their mates at 2 hr ASM. We observed relatively weak SP signals in the AG of multiply-mated males (Figure 4—figure supplement 1. A, lane 4) and a very faint SP signal in females mated to these males (Figure 4—figure supplement 1. A, lane 5) compared to relatively strong SP signal in virgin (unmated) males and the females mated to these males (Figure 4—figure supplement 1. A, lanes 2, 3 respectively). Our immunofluorescence data showed no (or extremely weak) SP-sperm binding in sperm dissected from the seminal receptacle of females mated to SFP-depleted males (Figure 4—figure supplement 1. C). Females mated to SFP-depleted CS males were then subsequently remated at 4d ASFM (long enough to have lost any SP signal from their first multiply-mated, mates) to ProtB-dsRed males. Sperm dissected from the seminal receptacles of these females at 2 hr ASSM were probed for SP (Figure 4II. Cartoon). There was no detectable SP signal on sperm stored in females singly-mated to SFP-depleted CS males at 4d ASM (Figure 4C). However, we observed anti-SP staining along the entire sperm (head and tail) received by the doubly-mated female from the SFP-depleted CS male (blue heads; Figure 4D) and ProtB-dsRed males (red+ blue heads; Figure 4D).
 
 Thus, in a normal mating, the amount of SP that a male transfers is sufficient to bind not only his own sperm but also to remaining sperm from a rival. Moreover, SP from an unmated control male can bind to previously stored sperm of a male that had his SFP reserves depleted prior to mating with the female.
 
-## Sex peptide binding to sperm of a prior male does not require receipt of LTR- SFPs from the second male
+### Sex peptide binding to sperm of a prior male does not require receipt of LTR- SFPs from the second male
 
 SP binding to sperm requires the action of a network of other SFPs- ‘LTR-SFPs’ (Ravi Ram and Wolfner, 2009; Findlay et al., 2014). Most of the known LTR-SFPs bind to sperm transiently (CG1656, CG1652, CG9997 and Antares) (Singh et al., 2018), while others do not bind to sperm (CG17575 or seminase; LaFlamme et al., 2012) the latter facilitate the localization of other LTR-SFPs, and SP, to the seminal receptacle. However, no LTR-SFPs are detectable on sperm or in female RT at 1d ASM (Figure 5). We wondered whether LTR-SFPs were required from the second male in order to bind his SP to the first male’s sperm.
 
@@ -79,6 +103,14 @@ Thus, sperm no longer detectably bind new LTR-SFPs after they have bound LTR-SFP
 
 Unlike the four LTR-SFPs assessed above, the two other LTR-SFPs, CG17575 and seminase, do not bind to sperm, yet are crucial for SFP-sperm binding. In the absence of CG17575 or seminase, SP fails to bind to sperm (Ravi Ram and Wolfner, 2009; LaFlamme et al., 2012). To determine if these proteins were required for a second male’s SP binding to a first male’s sperm, we first crossed females to SP-null males and then to CG17575-null or seminase-null males at 1d ASFM (Figure 6. Cartoon). In this situation, CG17575 and seminase had entered the female with the first male’s sperm, but by the time of the second mating, were undetectable in the female (Figure 6—figure supplement 1). We examined whether in this situation SP transferred by CG17575-null (or seminase-null) males would still bind to the SP-null sperm stored in the female. We made use of ProtB-eGFP labeled SP-null males to differentiate between sperm received from first (cyan (DAPI+ eGFP) sperm heads) and second (blue (DAPI) sperm heads) males. Immunostaining and western blots for detection of SP on sperm dissected from females mated to SP-null; ProtB-eGFP males and then remated to seminase-null (Figure 6. A and C, lane 4) or CG17575-null (Figure 6. B and C, lane 5) males showed that SP received from the second male bound to sperm (head and tail) received from SP-null; ProtB-eGFP males. Sperm dissected from females singly-mated to SP-null; ProtB-eGFP males gave no SP signal, as expected (Figure 6. D, lane 3 and E) and sperm dissected from females singly-mated to seminase-null (Figure 6. D, lane 4 and F) or CG17575-null (Figure 6. D, lane 5 and G) males also showed no SP-sperm binding, as expected, due to lack of the LTR-SFP.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig6-v2.jpg)
+
+**Figure 6.:** Cartoon: Pictorial representation of the experimental cross (fly images from Biorender). Females mated first with SP-null; ProtB-eGFP males [cyan sperm-head; DAPI(blue)+eGFP(green)] and then a day later with CG17575-null or seminase-null males (blue sperm-head; DAPI stained) and frozen, 2 hr ASSM. SP was visualized with Alexa fluor 594, staining the sperm (head+ tail) red. (A) Sperm from females mated to SP-null; ProtB-eGFP males and then remated to seminase-null males, 1d ASFM. (B) Sperm from females mated to SP-null; ProtB-eGFP males and then remated to CG17575-null males, 1d ASFM. (C) Western blot probed for SP. Lanes/samples are 1: Fv, reproductive tract (RT) of three virgin females (negative control); 2: M, one pair of male accessory glands (positive control); 3: SP-, sperm dissected from 20 females mated to SP-null; ProtB-eGFP males at 2 hr ASM; 4: SP-, sem-, sperm dissected from 20 females mated to SP-null; ProtB-eGFP males and subsequently to seminase-null males at 1d ASFM, frozen at 2 hr ASSM; 5: SP-, 17575-, sperm dissected from 20 females mated to SP-null; ProtB-eGFP males and subsequently to CG17575-null males at 1d ASFM, frozen at 2 hr ASSM. (D) Western blot probed for SP. Lanes/samples are 1: Fv, reproductive tract (RT) of three virgin females (negative control); 2: M, one pair of male accessory glands (positive control); 3: SP-, sperm dissected from 20 females mated to SP-null; ProtB-eGFP males at 2 hr ASM; 4: sem-, sperm dissected from 20 females mated to seminase-null males at 2 hr ASM 5: 17575-, sperm dissected from 20 females mated to CG17575-null males at 2 hr ASM. Actin served as loading control. (E) Sperm isolated from females singly mated to SP-null; ProtB-eGFP males, 2 hr ASM. (F) Sperm isolated from females singly mated to seminase-null male, 2 hr ASM. (G) Sperm isolated from females singly mated to CG17575-null male, 2 hr ASM. White arrows indicate sperm heads (represented as SH, n = 10; Bar = 20 µm).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58322/elife-58322-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Lanes/samples are 1: Fv, reproductive tract (RT) of three virgin females (negative control); 2: M, one pair of male accessory glands (positive control); 3–4: RT of five females mated to wild type (CS) males at 2 hr and 1d ASM, respectively; 5–6: RT of five females mated to SP-null; ProtB-eGFP males at 2 hr and 1d ASM, respectively; 7: RT of five females mated to seminase-null males at 2 hr ASM; 8: RT of five females mated to CG17575-null males at 2 hr ASM. Black arrows indicate full length seminase, red arrows indicate the cleavage products of seminase, post-mating in the female RT. Actin served as loading control.
+
 Therefore, sperm no longer require even CG17575 or seminase from the second male’s ejaculate, after they have received the LTR-SFPs from their own (SP-null) male.
 
 ## Discussion
@@ -87,17 +119,17 @@ Ejaculate molecules, particularly the SFPs that are received by females during m
 
 Studies of SFP functions have tended to investigate how a male’s SFPs can promote the interests of his own (self) sperm. However, some data suggest that one male’s SFPs (ovulin, ACP36DE) can indirectly benefit a subsequent male within a polyandrous female (Neubaum and Wolfner, 1999; Rubinstein and Wolfner, 2013; Avila and Wolfner, 2009; Chapman et al., 2000; Nguyen and Moehring, 2018). Here, we tested for direct effects of one male’s SFPs on another male’s sperm and/or fertility. Specifically, we show that SP from a second male can bind to and act with sperm received from a previous mating. Sperm stored in females mated to SP-null males show no SP-sperm binding (as expected), but if these mated females subsequently remate to a spermless male, his SP can bind to stored sperm from the prior male. This binding of SP to the SP-null sperm restores his fertility and proper sperm release dynamics. Even if a second male transfers sperm, he transfers sufficient SP to bind to his own and rival sperm. Finally, our data suggest that the LTR-SFPs (that usually assist in binding of SP to sperm) are not required from the second male for the association of his SP with sperm received from the first male (who had already provided LTR-SFPs). The first male’s sperm appear to be sufficiently ‘primed’ by prior receipt of their own LTR-SFPs to be able to bind SP from a second male.
 
-## SP from a second male can associate with a prior male’s sperm that were stored within the female
+### SP from a second male can associate with a prior male’s sperm that were stored within the female
 
 Xue and Noll, 2000 reported that sperm transferred to females by Prd mutant males that lack the entire suite of SFPs were capable of fertilizing a few eggs to yield progeny, but only after the females were subsequently remated to spermless males. They coined the term ‘copulation complementation’ to describe this phenomenon, and proposed that SFPs from the second male might interact with the first male’s sperm to yield this result. Consistent with this idea, several reports suggested that first-males that provided sperm but lacked particular SFPs (Avila et al., 2010; Ravi Ram and Wolfner, 2007b; Mueller et al., 2008; Wong et al., 2008; Hopkins et al., 2019) can have higher paternity shares in competitive situations: they were better competitors, compared to control males, in defensive sperm competition assays (Avila et al., 2010; Avila and Wolfner, 2009; Fricke et al., 2009). These reports align and are consistent with our observations that SP from a second male can bind to and assist the sperm from a prior SP-deficient male. A simple explanation for these results, based on the findings that we report here, is that the deficiency of these SFPs in the first male led to impaired release/use, and thus retention, of his sperm, and this was rescued by receipt of the second male’s SFPs, as we have shown here, for SP.
 
 SP is the only SFP thus far known to persist within the Drosophila female (for 10–14 days post-mating), eliciting long-term post mating responses through gradual release of its C-terminal portion (Peng et al., 2005). The long-term persistence of SP on sperm made it an excellent candidate to examine for interaction with rival sperm. Here, we report that SP subsequently received from a spermless male binds to a first male’s sperm (SP-null). This association is apparent even if the second mating occurs at 1d or as long as 4d ASFM, indicating that binding of SP to the first male’s sperm occurs irrespective of how long sperm have been in the storage organs. It remains unclear how SP received from spermless (second) male enters the sperm storage organs, where sperm from the first mating had been stored. However, Manier et al., 2010 reported that 60–90 min after the start of a second mating, 26% of the resident sperm (received from the previous mating) are moved from storage back into the bursa where they mix with the second male’s ejaculate before moving back into the storage. Therefore, it is possible that SP received from the spermless male binds to the first male’s sperm that relocated to the bursa, and the newly SP-bound sperm are then transferred back into storage in the seminal receptacle.
 
-## The binding of SP received from one male to sperm of another can restore defects that resulted from lack of SP from the first male
+### The binding of SP received from one male to sperm of another can restore defects that resulted from lack of SP from the first male
 
 In the absence of sperm, or if SP is not bound to sperm, females do not maintain post-mating responses and fail to efficiently release sperm from storage resulting in fewer sperm available for fertilization and fewer progeny (Avila et al., 2010; Ravi Ram and Wolfner, 2009; Chapman et al., 2003; Liu and Kubli, 2003). We observed that these defects were rescued when SP was received by females in a remating with spermless males. Thus, the second male’s SP bound to the first male’s sperm is functional. The rescue of the phenotype, however, was not as long lasting as in a normal single mating with SP transfer, wearing off by 4d postmating rather than the normal ~10 d. This could be because only fewer sperm relocated from storage to the bursa (Manier et al., 2010), so they may not carry sufficient SP back into storage to associate with SP-null sperm. Consistent with this, the levels of SP that we see stained in these situations are lower than those in a wild type mating.
 
-## An unmated male transfers sufficient SP to bind to his own as well rival sperm
+### An unmated male transfers sufficient SP to bind to his own as well rival sperm
 
 We did not know whether the amount of SP that is transferred during mating is more than the available binding sites on sperm. Here, we observed that an unmated control male does transfer enough SP to bind his own as well as pre-stored sperm (SP-null) in a previously mated female. Consistent with our findings, several reports suggest that in response to potential threats of sperm competition and conflicts, males adjust the levels of SFPs and transfer high amounts of SP, yet less ovulin, to previously mated females (Wigby et al., 2009; Sirot et al., 2011). Rubinstein and Wolfner, 2013 demonstrated that ovulin induces ovulation, acting through octopamine (OA) neuronal signaling and increases the number of synapses that the female’s Tdc2 neurons make on the musculature of the oviduct. Persistence of this latter effect could benefit rivals too, so second-mating males may thus be able to mitigate the levels of ovulin in their ejaculate. But the question remains that if SP from one male’s ejaculate can bind to and assist another’s sperm, why do males not lower the amount of SP transferred while mating? A potential explanation is that a male would still benefit by transferring enough SP to ensure that his own sperm remains saturated with SP, even at a cost of part of his SP binding to another male’s sperm.
 
@@ -105,7 +137,7 @@ SP binds to sperm through its N-terminal region, and this region remains bound t
 
 Therefore, our results support the idea that in nature males who have multiply-mated might get some help from the SFPs of subsequent, less depleted, males. Interestingly, this inter-ejaculate interaction might also confer an advantage to the second male. More of the second male’s SP will be retained in the female reproductive tract, for even longer, if it binds to previously-stored sperm in addition to his own sperm. This could allow the post-mating responses in polyandrous females to be maintained for longer than in singly-mated females.
 
-## Association of a second male’s SP to sperm received from a prior male does not require the receipt of LTR-SFPs from the second male
+### Association of a second male’s SP to sperm received from a prior male does not require the receipt of LTR-SFPs from the second male
 
 Binding of SP to sperm is facilitated by a network of LTR-SFPs (Ravi Ram and Wolfner, 2009). Two LTR-SFPs, CG17575 and seminase, do not themselves bind to sperm, whereas other LTR-SFPs bind sperm transiently (CG1652, CG1656, CG9997, antares). CG17575 and seminase localize the other LTR-SFPs, and SP, to sperm storage organs (Ravi Ram and Wolfner, 2009; Singh et al., 2018; LaFlamme et al., 2012; Ravi Ram and Wolfner, 2007a; Ravi Ram et al., 2006). We found that SP from a second male (spermless or control) can associate with sperm from the first male (SP-null) even if it enters the female in absence of its own LTR-SFPs. This suggested that SP-null sperm (or the mated female RT) had already received modifications (‘priming’) from its own LTR-SFPs that were required for SP binding. This further suggests that once primed, a sperm can bind SP from a rival’s ejaculate without the need for additional LTR-SFPs, and can restore its own post-mating dynamics.
 
@@ -115,34 +147,205 @@ Additionally, our findings raise some intriguing questions for further study. Fi
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tudor</td>
+      <td>R. Boswell; similar stock now available from BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:1735; FBst0001735;RRID:BDSC_1735</td>
+      <td>FlyBase Genotype:tud1 bw1 sp1/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Δ325/TM3; Sb ry (SP-knockout line)</td>
+      <td>Gift from Eric Kubli</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Δ130/TM3; Sb ry (deficiency line)</td>
+      <td>Gift from Eric Kubli</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ProtB-eGFP(X); TM3/TM6</td>
+      <td>Gift from Scott Pitnick</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ProtB-DsRed</td>
+      <td>Gift from Scott Pitnick</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SP (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>IF (1:200), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CG1656 (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CG1652 (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>IF (1:50), WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CG9997 (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>IF (1:50), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (H+L) Goat anti-Rabbit, Alexa Fluor 488 (goat anti-rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. # A11008 RRID:AB_143165</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (H+L) Goat anti-Rabbit, Alexa Fluor 594 (goat anti-rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. # A11012 RRID:AB_2534079</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Antares (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-seminase (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CG17575 (rabbit polyclonal)</td>
+      <td>Wolfner lab</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (mouse monoclonal)</td>
+      <td>Millipore Corp</td>
+      <td>Cat# MAB1501 RRID:AB_2223041</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Rabbit IgG (goat anti-rabbit polyclonal)</td>
+      <td>Jackson Research</td>
+      <td>Code#111-035-003 RRID:AB_2313567</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG (goat anti-mouse polyclonal)</td>
+      <td>Jackson Research</td>
+      <td>Code#115-035-003 RRID:AB_10015289</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat. # PI62247</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly-L-Lysine (0.1 % w/v in H2O)</td>
+      <td>Sigma</td>
+      <td>P8920-100ML</td>
+      <td>0.01% w/v in H2O</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Albumin from Bovine Serum (BSA)</td>
+      <td>Sigma</td>
+      <td>A9418-50G</td>
+      <td>5% in 1X PBS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CitiFluor Mountant Solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat. #17970–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Graph Pad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 6.01</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 Spermless males, [sons of tudor, (SOT) that lack sperm but produce and transfer a complete suite of SFPs] were the progeny of bw sp tud1 females (Boswell and Mahowald, 1985) mated to control, Canton S (CS) males. Sex peptide null mutant males (Δ325/Δ130; which have sperm and the entire suite of SFPs except for SP) (Liu and Kubli, 2003) were generated by crossing the SP knockout line (Δ325/TM3, Sb ry) to a line carrying a deficiency for the SP gene (Δ130/TM3, Sb ry). Control males were the TM3 siblings of SP-null mutants. Matings were conducted with wild type D. melanogaster females (CS). To determine sperm numbers, we generated a line carrying the SP-null mutation and Protamine B-eGFP tagged sperm (ProtB-eGFP/Y; Δ325/Δ130) by series of crosses between the SP knockout line (Δ325/TM3, Sb ry) and ProtB-eGFP (X); TM3/TM6 (Manier et al., 2010). The TM3 siblings of these males, (SP+; ProtB-eGFP) served as controls. Sperm-heads of these control males were tagged with ProtB-eGFP, but the males had normal levels of SP (Figure 3—figure supplement 1). ProtB-ds Red males with Protamine B-dsRed tagged sperm heads (Manier et al., 2010) served as additional controls. All flies were reared under a 12:12 hr light-dark cycle at 22 ± 1°C on standard yeast-glucose medium. Mating experiments were carried out by single-pair mating 3–5 day old virgin CS females to 3- to 5-day-old unmated males of genotypes indicated in the text and remating the same female 1 day or 4 days after the start of first mating (ASFM) to age matched unmated males of the genotypes indicated in the text.
 
-## Crossing scheme to study first male’s sperm and rival’s SP binding
+### Crossing scheme to study first male’s sperm and rival’s SP binding
 
 Xue and Noll, 2000 reported copulation complementation in females mated to Prd males (which produce sperm but lack SFPs) remated to spermless males that produce SFPs. We followed a similar scheme but to focus on SP specifically, we used SP-null males as the first male. As described in Results, we then remated these females to spermless males, which make SFPs but not sperm. We attempted to do the reciprocal experiment, where females were mated to spermless males and then remated to SP-null males, but consistent with what was reported by Xue and Noll, 2000, we could not detect copulation complementation in this direction for technical reasons: SP from the spermless male did not persist long enough in the mated female to interact with the second male’s sperm (see Results). We carried out rematings at three time points, 3–6 hr, 1d, and 4d AFSM. We assessed results at 2 hr after the start of the second mating (ASSM).
 
-## Fertility
+### Fertility
 
 The reproductive performances of singly-mated or doubly-mated females were assayed by analyzing fertility (numbers of progeny eclosed over ten days) (Kalb et al., 1993). Briefly, the fertility assays were carried out with (A). ‘Single matings’: Females were singly mated to (i) spermless males, (ii) SP-null males, or their (iii) TM3 siblings (genetically-matched control males) in three individual sub-batches, and (B). ‘Rematings’: Females were mated to SP-null males or their TM3 siblings (SP+) and were then subsequently remated to spermless males at 1d and 4d ASFM. Matings that lasted 15 mins or more were considered successful. At the end of a mating, males were removed from the vials and females were allowed to lay eggs for 10 days after the start of mating (ASM) in the first batch and after the start of second mating (ASSM) in the second batch. Females were transferred to fresh food vials every 3 days. Flies emerging from each vial were counted. Fertility is represented as total number of progeny produced by each female over a period of 10 days. The differences in fertility were analyzed through one-way Analysis of Variance (ANOVA) followed by Tukey’s multiple comparison tests for single-matings and Mann Whitney U-tests for rematings. All assays were repeated more than two times and comprised of two technical replicates, with each group consisting of a minimum sample size of 15–20.
 
-## Receptivity
+### Receptivity
 
 To determine the propensity of females to remate, receptivity assays (Chapman et al., 2003) were set for females singly mated to SP-null, spermless or CS males and females mated to SP-null males and then subsequently remated to spermless males at 1d ASFM. For the assay, females from singly-mated and doubly-mated groups were then provided with (CS) males at 1d and 4d ASM or ASSM, respectively. We determined the number of females that mated within 1 hr from when the CS male was introduced within the vial. Assays were repeated more than two times, with each group consisting of a minimum sample size of 15–20. The data were analyzed by Fisher exact tests and Chi-squared group analyses.
 
-## Sperm utilization/release from sperm storage organs in females
+### Sperm utilization/release from sperm storage organs in females
 
 To study the effect of first male’s sperm and rival male’s SP binding on sperm utilization and release, we generated SP-null males whose sperm-heads are labelled with ProtB-eGFP (Manier et al., 2010). Females were mated to SP-null; ProtB-eGFP or SP+; ProtB-eGFP (control) males. Some of the mated females were frozen at 4d ASM (or 5d ASM) for sperm counts. The remaining mates of SP-null; ProtB-eGFP males were remated to spermless males at 1d ASFM. These flies were frozen at 4d ASSM. Subsequently, seminal receptacles of females singly-mated to SP-null; ProtB-eGFP and SP+; ProtB-eGFP, or doubly-mated to SP-null; ProtB-eGFP and spermless males, were dissected and eGFP sperm were counted (at a total magnification of 200X, with FITC filter on an Echo-Revolve microscope). Mature sperm in the seminal receptacles of mated females were counted twice and groups were blindfolded to ensure reproducibility and avoid bias. The percent repeatability was 90–94%. Assays were repeated more than two times, with two technical replicates. Every group contained a minimum sample size of 15–25. Differences in the sperm counts between groups were analyzed statistically through one-way ANOVA followed by Tukey’s multiple comparison tests.
 
-## Brood matings
+### Brood matings
 
 Control (CS) males were subjected to brood matings (Misra et al., 2014; Gilchrist and Partridge, 1995) to deplete SFPs, as their levels are known to become exhausted at a higher rate than sperm numbers (Hihara, 1981). Briefly, 3-day-old control males were mated to CS females in two broods (each consisting of three virgin females) over 2 days. The first mating of both broods was observed. On the third day, previously mated females were removed and the male was provided with an additional virgin female (7th mate), matings were observed and depleted CS males were removed. Half of the 7th mated females were frozen at 4d ASM, while the others were subsequently remated to control (ProtB-dsRed) males at 4d ASFM, and then frozen at 2 hr ASSM. Sperm stored in the seminal receptacle of the frozen flies were dissected and immunostained for SP.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence was performed to detect SP-sperm binding (Ravi Ram and Wolfner, 2009; Peng et al., 2005; Singh et al., 2018). Sperm dissected from seminal receptacles of experimental or control females were attached to poly-L-Lysine (Sigma) coated slides. Sample processing was carried out according to the protocol of Ravi Ram and Wolfner, 2009 with minor modifications. Samples were blocked with 5% bovine serum albumin (BSA) in 1X PBS for 30 min. Subsequently, samples were incubated overnight in rabbit anti-SP(1:200), CG1656(1:100), CG1652(1:50), CG9997(1:50) (Singh et al., 2018), in 0.1% BSA at 4°C overnight. Samples were then washed in PBS and incubated at room temperature for 2 hr in goat anti-rabbit IgG coupled to alexa fluor 488 (green) or 594 (red; Invitrogen) at a concentration of 1:300 in 1x PBS at room temperature in the dark. Samples were then washed in PBS, incubated in 0.01% DAPI for 3 min at room temperature in the dark, rewashed and mounted using antifade (CitiFluor mountant solution; EMS). The fluorescence was visualized under an Echo-Revolve fluorescence microscope at a magnification of 200X. A minimum of three independent immunostaining batches, with a minimum sample size of 10, were analyzed for each group.
 
-## Sample preparation and western blotting
+### Sample preparation and western blotting
 
 To further examine transfer, persistence or binding of SP to sperm stored in singly-mated or doubly-mated females, the lower reproductive tract (RT) or sperm stored (SS) in seminal receptacles of mated female were dissected. The dissected tissues (lower RT, n = 5–10 or sperm, n = 20–30) were suspended in 5 µl of homogenization buffer (5% 1M Tris; pH 6.8, 2% 0.5M EDTA) and processed further according to the protocol of Ravi Ram and Wolfner, 2009. Proteins from stored sperm or lower female reproductive tract were then resolved on 12% polyacrylamide SDS gel and processed further for western blotting. Affinity purified rabbit antibodies against SP(1:2000), CG1656(1:1000), CG1652(1:500), antares(1:500), CG9997(1:1000), CG17575(1:1000), seminase(1:1000) (Ravi Ram and Wolfner, 2009; Singh et al., 2018; LaFlamme et al., 2012) and mouse antibody against actin (as a loading control; Millipore Corp., cat no. #MAB1501 at 1:3000) were used as primary antibodies. HRP conjugated secondary anti-rabbit and anti-mouse antibodies (Jackson Research) were used for detection of SFPs at a concentration of 1:2000.

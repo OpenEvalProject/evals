@@ -15,19 +15,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00t3r8h32 Institute of Neurobiology, Center of Brain Behavior & Metabolism, University of Lübeck Lübeck Germany
-2. https://ror.org/056d84691 Department of Medical Biochemistry and Biophysics, Karolinska Institute Stockholm Sweden
-3. https://ror.org/036rp1748 Department of Physiology, Institute of Bioscience, University of Sāo Paulo Sāo Paulo Brazil
-4. https://ror.org/03pnv4752 Australian Centre for Health Services Innovation and Centre for Healthcare Transformation, School of Public Health and Social Work, Faculty of Health, Queensland University of Technology Kelvin Grove Australia
-5. https://ror.org/01tvm6f46 Institute of Experimental and Clinical Pharmacology, University Hospital Schleswig-Holstein Kiel Germany
-6. https://ror.org/00rqy9422 School of Biomedical Sciences, Faculty of Medicine, University of Queensland Brisbane Australia
-7. https://ror.org/00t3r8h32 Center of Brain Behavior & Metabolism, Institute for Endocrinology and Diabetes – Molecular Endocrinology, University of Lübeck Lübeck Germany
+1. Institute of Neurobiology, Center of Brain Behavior & Metabolism, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+2. Department of Medical Biochemistry and Biophysics, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+3. Department of Physiology, Institute of Bioscience, University of Sāo Paulo Sāo Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
+4. Australian Centre for Health Services Innovation and Centre for Healthcare Transformation, School of Public Health and Social Work, Faculty of Health, Queensland University of Technology Kelvin Grove Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))
+5. Institute of Experimental and Clinical Pharmacology, University Hospital Schleswig-Holstein Kiel Germany ([ROR:01tvm6f46](https://ror.org/01tvm6f46))
+6. School of Biomedical Sciences, Faculty of Medicine, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+7. Center of Brain Behavior & Metabolism, Institute for Endocrinology and Diabetes – Molecular Endocrinology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 
 † Corresponding author
 
 ## Abstract
 
-Diurnal (i.e., 24 hr) physiological rhythms depend on transcriptional programs controlled by a set of circadian clock genes/proteins. Systemic factors like humoral and neuronal signals, oscillations in body temperature, and food intake align physiological circadian rhythms with external time. Thyroid hormones (THs) are major regulators of circadian clock target processes such as energy metabolism, but little is known about how fluctuations in TH levels affect the circadian coordination of tissue physiology. In this study, a high triiodothyronine (T 3 ) state was induced in mice by supplementing T 3 in the drinking water, which affected body temperature, and oxygen consumption in a time-of-day-dependent manner. A 24-hr transcriptome profiling of liver tissue identified 37 robustly and time independently T 3 -associated transcripts as potential TH state markers in the liver. Such genes participated in xenobiotic transport, lipid and xenobiotic metabolism. We also identified 10–15% of the liver transcriptome as rhythmic in control and T 3 groups, but only 4% of the liver transcriptome (1033 genes) were rhythmic across both conditions – amongst these, several core clock genes. In-depth rhythm analyses showed that most changes in transcript rhythms were related to mesor (50%), followed by amplitude (10%), and phase (10%). Gene set enrichment analysis revealed TH state-dependent reorganization of metabolic processes such as lipid and glucose metabolism. At high T 3 levels, we observed weakening or loss of rhythmicity for transcripts associated with glucose and fatty acid metabolism, suggesting increased hepatic energy turnover. In summary, we provide evidence that tonic changes in T 3 levels restructure the diurnal liver metabolic transcriptome independent of local molecular circadian clocks.
+Diurnal (i.e., 24 hr) physiological rhythms depend on transcriptional programs controlled by a set of circadian clock genes/proteins. Systemic factors like humoral and neuronal signals, oscillations in body temperature, and food intake align physiological circadian rhythms with external time. Thyroid hormones (THs) are major regulators of circadian clock target processes such as energy metabolism, but little is known about how fluctuations in TH levels affect the circadian coordination of tissue physiology. In this study, a high triiodothyronine (T3) state was induced in mice by supplementing T3 in the drinking water, which affected body temperature, and oxygen consumption in a time-of-day-dependent manner. A 24-hr transcriptome profiling of liver tissue identified 37 robustly and time independently T3-associated transcripts as potential TH state markers in the liver. Such genes participated in xenobiotic transport, lipid and xenobiotic metabolism. We also identified 10–15% of the liver transcriptome as rhythmic in control and T3 groups, but only 4% of the liver transcriptome (1033 genes) were rhythmic across both conditions – amongst these, several core clock genes. In-depth rhythm analyses showed that most changes in transcript rhythms were related to mesor (50%), followed by amplitude (10%), and phase (10%). Gene set enrichment analysis revealed TH state-dependent reorganization of metabolic processes such as lipid and glucose metabolism. At high T3 levels, we observed weakening or loss of rhythmicity for transcripts associated with glucose and fatty acid metabolism, suggesting increased hepatic energy turnover. In summary, we provide evidence that tonic changes in T3 levels restructure the diurnal liver metabolic transcriptome independent of local molecular circadian clocks.
 
 ## Introduction
 
@@ -41,27 +41,47 @@ In this study, we investigated how a high T3 state in mice affects diurnal trans
 
 ## Results
 
-## Effects of high T3 on behavioral and metabolic diurnal rhythms
+### Effects of high T3 on behavioral and metabolic diurnal rhythms
 
 We used an experimental mouse model of hyperthyroidism by supplementing the drinking water with T3 (0.5 mg/L in 0.01% BSA). Control animals (CON) were kept under the same conditions with 0.01% BSA supplementation (Sjögren et al., 2007; Vujovic et al., 2015). TH state was validated by analyzing diurnal profiles of T3 and T4 levels in serum. Significant diurnal (i.e., 24 hr) rhythmicity was detected for T3 in CON with peak concentrations around the dark-to-light phase transition. T3-supplemented mice showed ca. fivefold increased T3 levels compared to CON mice with no significant diurnal rhythm. However, T3 levels showed a temporal variation (ANOVA, p=0.006), which was classified as ultradian by JTK_CYCLE (12 hr period length, Supplementary file 1, p=0.01) in the T3-treated group. T4 levels were nonrhythmic in all groups (Figure 1A, B, Supplementary file 1). Compared to CON, overall T4 levels were reduced two- to threefold in T3-supplemented animals (Figure 1B). Resembling the human hyperthyroid condition, T3 mice showed increased average body temperature (Figure 1—figure supplement 1A), as well as food and water intake compared to CON mice (Figure 1—figure supplement 1B and C). Conversely, T3 mice showed higher body weight on the third week of experimentation (Figure 1—figure supplement 1D), as previously shown (Johann et al., 2019).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig1-v3.jpg)
+
+**Figure 1.:** (A–F) Serum levels of T3 and thyroxine (T4), 24 hr profiles of locomotor activity, body temperature, O2 consumption, and respiratory quotient are shown. Rhythm evaluation was performed by JTK_CYCLE (p<0.01, Supplementary file 1). Presence (R) or absence of circadian rhythm (NR) is depicted. In the presence of significant 24 hr rhythmicity, a sine curve was fit. In (A) and (B), data are double plotted to emphasize the absence or presence of rhythms. (G–I) Linear regression of T3 average levels with average of locomotor activity, temperature, and O2 consumption. (J–O) Correlation between thyroid hormone levels and normalized levels of metabolic outputs is shown as z-scores (additional information is described in Supplementary file 2). In (A) and (B), n = 4–6 animals per group and/or timepoint. In (C) and (D), n = 4 and 5 for CON and T3 groups, respectively. In (E) and (F), n = 4 for each group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Assessment of body temperature, food and water intake (per cage, n = 8), and body weight. (E–I) Metabolic parameters (described in the y-axis) were obtained from the third week of experiment (days 19/20). Day and night data were obtained by averaging values from Zeitgeber time (ZT) 0–12 (day) and from ZT 12–24 (night) and plot accordingly. Letters represent a difference between the same group in day vs. night comparisons. Asterisks represent significant differences between CON and T3 mice. In (H), 95% confidence intervals are shown. Comparison of the slope and elevations/intercept between the groups was performed: p=0.30 and 0.01, respectively. Data are shown either as mean ± SEM or by boxplot. n = 24 for (A) and (D). (E–I) n = 4–5 per group.
 
 Metabolism-associated parameters such as locomotor activity, body temperature, O2 consumption (VO2), and respiratory quotient (RQ) showed significant diurnal rhythms in both conditions (Figure 1C–F, Supplementary file 1). No marked differences in locomotor activity were seen between the groups (Figure 1C, Figure 1—figure supplement 1E). In contrast, in the T3 group, body temperature was elevated in the light (rest) phase (Figure 1D, Figure 1—figure supplement 1F), leading to a marked reduction in diurnal amplitude. Oxygen consumption in T3 was elevated throughout the day, but this effect was more pronounced during the dark phase (Figure 1E, Figure 1—figure supplement 1G), leading to an increase in diurnal amplitude. Linear regression of energy expenditure (EE) against body weight in CON and T3 mice (Tschöp et al., 2012) revealed no difference in slope, but a higher elevation/intercept was found in T3 mice (Figure 1—figure supplement 1H). These data suggest that the higher EE of T3 mice is not only a consequence of increased body weight, but also arises from a higher metabolic state. In T3 mice, RQ was slightly higher in the second half of the dark and the beginning of the light phase, indicating higher carbohydrate utilization during this period (Figure 1F, Figure 1—figure supplement 1l). In summary, TH-dependent changes in overall metabolic activity were observed resembling the human hyperthyroid condition, albeit with marked diurnal phase-specific effects.
 
 These findings prompted us to evaluate to which extent T3 and T4 levels would be predictive of the overall metabolic state (TH state effects) or, alternatively, for changes in metabolic activity across the day (temporal TH effects) by correlating hormone levels with metabolic parameters. Correlating the average levels of T3 against activity, body temperature, and VO2 revealed that body temperature and VO2 were positively correlated with T3 levels (Figure 1G–I). TH levels and metabolic parameters, however, did not correlate across daytime. Therefore, neither T3 nor T4 qualified as markers for diurnal variations in energy metabolism (Figure 1J–O, Supplementary file 2). In summary, our data suggest that T3 levels are valid predictors of baseline metabolic state but fail to mirror diurnal changes in metabolic activity at, both, physiological and high T3 states. T4 is an overall poor metabolic biomarker.
 
-## Daytime-independent effects of TH on the liver transcriptome
+### Daytime-independent effects of TH on the liver transcriptome
 
 To study the molecular pattern underlying the observed diurnal modulation of metabolic activity in T3-treated mice, we focused on the liver as a major metabolic tissue. We initially identified time-of-day-independent transcriptional markers reflecting TH state in this tissue. Comparing the liver transcriptome, without taking into consideration the sampling time, 2343 differentially expressed probe sets (2336 genes – DEGs) were identified (±1.5-fold change, false discovery rate [FDR] <0.1, Figure 2A, Supplementary file 3). Of these DEGs, 1391 and 945 genes were up- or downregulated, respectively, by elevated T3 (Figure 2A, Supplementary file 3). Gene set enrichment analysis (GSEA) of upregulated DEGs yielded processes related to xenobiotic metabolism/oxidation-reduction, immune system, and cholesterol metabolism, amongst others. On the other hand, GSEA of downregulated DEGs yielded biological processes pertaining to FA and carbohydrate metabolism, as well as cellular responses to insulin (Figure 2B, Supplementary file 3). We identified 37 genes whose expression was robustly up- or downregulated by T3 across all timepoints (Figure 2C, Supplementary file 4). Genes involved in xenobiotic transport/metabolism (Abcc3, Abcg2, Ces4a, Ugt2b37, Papss2, Gstt1, Sult1d1, Cyp2d12, Ephx2, and Slc35e3), lipid, FA, and steroids metabolism (Cyp39a1, Ephx2, Akr1c18, Acnat1, Cyp4a12a/b, Cyp2c44), vitamin C transport (Slc23a1), and vitamin B2 (Rfk) and glutathione metabolism (Glo1) were identified. Additional genes involved in mitosis and replication were also identified (Cep126, Mdm2, Trim24, and Mcm10) (Figure 2D, Supplementary file 4).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig2-v3.jpg)
 
-**Figure 2.:** 3) mice.(A) Global (all Zeitgeber times [ZTs] included) evaluation of liver transcriptomes revealed 2336 DEGs of which 1391 and 945 were considered as up- or downregulated, respectively, using a false discovery rate (FDR) < 0.1. Genes with an FDR <0.1 were classified as different irrespectively of fold change values. (B) Top 10 list of biological processes from gene set enrichment analysis (GSEA) of up- and downregulated DEGs is represented. Additional processes can be found in Supplementary file 3. (C) Heatmap of liver DEGs showing significant T3-dependent regulation across all timepoints. Light and dark phases are shown as gray and black, respectively. (D) Diurnal expression profiles of most robustly regulated DEGs. Gene expression of all groups was normalized by CON mesor. Additional information is described in Supplementary file 4. None of these genes showed rhythmic regulation across the day (NR). n = 4 samples per group and timepoint, except for the T3 group at ZT 22 (n = 3).
+**Figure 2.:** (A) Global (all Zeitgeber times [ZTs] included) evaluation of liver transcriptomes revealed 2336 DEGs of which 1391 and 945 were considered as up- or downregulated, respectively, using a false discovery rate (FDR) < 0.1. Genes with an FDR <0.1 were classified as different irrespectively of fold change values. (B) Top 10 list of biological processes from gene set enrichment analysis (GSEA) of up- and downregulated DEGs is represented. Additional processes can be found in Supplementary file 3. (C) Heatmap of liver DEGs showing significant T3-dependent regulation across all timepoints. Light and dark phases are shown as gray and black, respectively. (D) Diurnal expression profiles of most robustly regulated DEGs. Gene expression of all groups was normalized by CON mesor. Additional information is described in Supplementary file 4. None of these genes showed rhythmic regulation across the day (NR). n = 4 samples per group and timepoint, except for the T3 group at ZT 22 (n = 3).
 
 We suggest that these transcripts could serve as robust daytime-independent biomarkers of TH state in the liver.
 
-## TH-dependent regulation of liver diurnal transcriptional rhythms
+### TH-dependent regulation of liver diurnal transcriptional rhythms
 
 We used the JTK_CYCLE algorithm (Hughes et al., 2010) to describe the effects of TH state changes on 24 hr liver gene expression rhythms. We identified 3354 and 2592 probes – comprising 3329 and 2585 unique genes – as significantly rhythmic (p<0.05) in CON or T3, respectively (Figure 3A, Supplementary file 5). Of these, 2319 and 1557 probes were classified as exclusively rhythmic in CON or T3, respectively. A total of 1035 probes (1032 genes) were identified as rhythmic in both groups (Figure 3A, Supplementary file 5), amongst these most core circadian clock genes (Supplementary file 5). Principal component analysis (PCA) showed a distinct pattern of organization across time between the groups for the shared genes (Figure 3—figure supplement 1). We next assessed the distribution of phase and amplitude across 24 hr between the groups. Rose plot analyses revealed a similar distribution pattern of phase, but T3 mice showed a higher number of genes peaking in the light phase (Zeitgeber time [ZT] 7–9) and the first half of the dark phase (ZT 13–20) compared to CON (Figure 3B). Cross-condition comparison of genes with robust rhythmicity revealed only a minor phase advance of around 1 hr in T3 (Figure 3C), which was independently confirmed by qPCR (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig3-v3.jpg)
+
+**Figure 3.:** (A) Rhythmic probes were identified using the JTK_CYCLE algorithm (Supplementary file 5). Venn diagram represents the distribution of rhythmic probes for each group. (B) Rose plot of all rhythmic genes from control (CON) (gray) and T3 (red) are represented by the acrophase and amplitude. Phase estimation was obtained from CircaSingle algorithm. (C) Phase difference between shared rhythmic genes. Each dot represents a single gene. One-sample t-test against zero value was performed and a significant interaction (mean 0.7781, p<0.001) was found. (D) Top 7 gene set enrichment analysis (GSEA) of exclusive genes from CON, T3, and shared are depicted. Additional processes are shown in Supplementary file 5. (E) Sine curve was fitted for the selected clock genes. Gene expression of all groups was normalized by CON mesor. (F) For mesor, amplitude, and phase delta assessment, CircaCompare algorithm was used. The CON group was used as baseline. Additional genes (Per3, Rorc, Tef, Hif1a, and Nfil3) were used for these analyses. One-sample t-test against zero value was used and only phase was different from zero (mean 1.036, p<0.001). n = 4 samples per group and timepoint, except for the T3 group at Zeitgeber time (ZT) 22 (n = 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Each timepoint was averaged into a single replicate, and PCA were performed using the factoextra package in R and Hartigan-Wong, Lloyd, and Forgy MacQueen algorithms.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** CircaCompare was used to evaluate the difference in rhythmic parameters, and one-sample t-test against zero value was performed (mean 0.9069 hr, p=0.0221). Sine curve was fitted for rhythmic genes (R). n = 3–4 samples per group and timepoint.
 
 GSEA of rhythmic genes was performed to detect rhythmically regulated pathways under both TH conditions. In CON mice, transport, RNA splicing, lipid and glucose metabolism, and oxidation-reduction processes were overrepresented. In the high T3 condition, several immune-related processes, FA oxidation, and regulation of mitogen-activated protein kinase 1 (MAPK) signaling were found. Interestingly, robustly rhythmic genes were enriched for lipid and cholesterol metabolism and circadian-related processes, suggesting that these processes are tightly coupled to circadian core clock regulation (Figure 3D, Supplementary file 5). Individual inspection of clock genes revealed the absence of marked effects on mesor (i.e., the midline statistic of the diurnal rhythm sine fit) and amplitude but a slight phase advance (Figure 3E–F), which corroborates the phase advance effects seen at the rhythmic transcriptome level (Figure 3C).
 
@@ -69,13 +89,21 @@ We next focused on the diurnal regulation of TH signaling by analyzing the expre
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig4-v3.jpg)
 
-**Figure 4.:** 3) compared to control (CON).(A, B) Genes involved in TH regulation, including transporters, Dio1, TH receptors, and well-known T3 outputs are presented. Presence (R) or absence of circadian rhythm (NR) detected by CircaCompare is depicted. Sine curve was fitted for rhythmic genes. Gene expression of all groups was normalized by CON mesor. (C) Evaluation of rhythmic parameters from genes described in (B) was performed by CircaCompare using CON group as baseline. One-sample t-test against zero value was used and only mesor was different from zero (mean 1.371, p<0.01). n = 4 samples per group and timepoint, except for the T3 group at Zeitgeber time (ZT) 22 (n = 3).
+**Figure 4.:** (A, B) Genes involved in TH regulation, including transporters, Dio1, TH receptors, and well-known T3 outputs are presented. Presence (R) or absence of circadian rhythm (NR) detected by CircaCompare is depicted. Sine curve was fitted for rhythmic genes. Gene expression of all groups was normalized by CON mesor. (C) Evaluation of rhythmic parameters from genes described in (B) was performed by CircaCompare using CON group as baseline. One-sample t-test against zero value was used and only mesor was different from zero (mean 1.371, p<0.01). n = 4 samples per group and timepoint, except for the T3 group at Zeitgeber time (ZT) 22 (n = 3).
 
 In summary, we provide evidence that the molecular clock of the liver functions independent of TH state. At the same time, changes in diurnal expression patterns were found for FA oxidation- and immune system-related genes in T3 mice. These changes were associated with marked gene expression profile alterations for TH signal regulators and outputs. Collectivity, these data indicate an adaptation of the diurnal liver transcriptome in response to changes in TH state in a largely tissue clock-independent manner.
 
-## Quantitative characterization of TH-dependent changes in liver diurnal transcriptome rhythms
+### Quantitative characterization of TH-dependent changes in liver diurnal transcriptome rhythms
 
 To dissect TH state-dependent rhythm alterations in the liver transcriptome, we employed CircaCompare (Parsons et al., 2020) to assess mesor and amplitude in genes that were rhythmic in at least one condition. For precise phase estimation, analyses were performed only on robustly rhythmic genes. Of note, some differences in rhythm classification between JTK_CYCLE and CircaCompare were detected, which is expected due to the different statistical methods. Since we used CircaCompare’s rhythm parameter estimations for quantitative comparisons, gene rhythmicity cutoffs in the following analyses were taken from this algorithm. Pairwise comparisons of rhythm parameters (i.e., mesor, amplitude, and phase) revealed predominant effects of TH state on mesor (2519 probes/2504 genes) followed by alterations in amplitude (518 probes/516 genes) and phase (491 probes/genes, Figure 5A, Supplementary file 6).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig5-v3.jpg)
+
+**Figure 5.:** (A) Venn diagram demonstrates the number of probes that displayed differences in each rhythmic parameter (mesor, amplitude, and phase). (B) Top 5 enriched biological processes for each rhythmic parameter category. (C) Summary of the CircaCompare analyses regarding glucose and fatty acid (FA) metabolism. (D, E) Representation of glucose and FA metabolism biological processes obtained from transcriptome data. (F) Diurnal rhythm evaluation of liver triacylglyceride (TAG) and day (Zeitgeber time [ZT] 2–6) vs. night (ZT18–22) serum TAG levels comparisons. (G) Summary of the CircaCompare analyses regarding cholesterol metabolism. (H) Representation of cholesterol homeostasis obtained from transcriptome data. (I) Diurnal rhythm evaluation of liver and serum cholesterol. Gene expression from each biological process was averaged per ZT and plotted. The reader should refer to the text for detailed information regarding the changes found at the gene level of these processes. Sine curve was fitted for each rhythmic biological process. Individual gene expression pertaining to these processes is found in Figure 5—figure supplement 1. n = 4 samples per group and timepoint, except for the T3 group at ZT 22 (n = 3).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79405/elife-79405-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Diurnal profile of genes from glucose (A), fatty acid (B), and cholesterol metabolism (C). Diurnal overall gene expression was normalized by CON mesor and plotted. Sine curve was fitted for rhythmic genes (R). Absence of rhythmic is represented by connected lines and NR symbol. n = 4 samples per group and timepoint, except for the T3 group at Zeitgeber time (ZT) 22 (n = 3). CircaCompare data is provided in Supplementary file 6.
 
 We further differentiated CircaCompare outcomes into mesor or amplitude elevated (UP) or reduced (DOWN) and phase delayed or advanced for subsequent GSEA. In these analyses, lipid metabolism was enriched in all categories, except for the phase advance group, which suggests a differential regulation of different gene sets related to lipid metabolism. GSEA of genes with reduced amplitude showed enrichment for FA metabolism and cholesterol biosynthesis, whereas GSEA of elevated amplitude genes showed a strong enrichment for immune system-related genes. Interestingly, genes associated with circadian processes and response to glucose were enriched in the phase delay group (Figure 5B, Supplementary file 6).
 
@@ -123,48 +151,184 @@ One limitation of our finding is the lack of data on the diurnal regulation of T
 
 ## Materials and methods
 
-## Mouse model and experimental conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Janvier Labs, Germany</td>
+      <td>C57BL6JRj</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C57BL6JRj, male)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs, Germany</td>
+      <td></td>
+      <td>2–3-month-old male</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Liver and serum</td>
+      <td>Collected and immediately frozen in dry ice</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNA extraction</td>
+      <td>TRIzol, Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNA isolation</td>
+      <td>RNA Miniprep kit Zymo Research</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cDNA synthesis</td>
+      <td>High-Capacity Complementary DNA Reverse Transcription Kit, Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR</td>
+      <td>GoTaq, Promega, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Microarray</td>
+      <td>WT Plus Kit, Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td></td>
+      <td>Sequences are provided in the supplementary information</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T3 hormone</td>
+      <td>T6397, Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>A7906-50G, Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T3 detection kit</td>
+      <td>DNOV053, NovaTec</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 detection kit</td>
+      <td>EIA-1781, DRG Diagnostics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglycerides quantification kit</td>
+      <td>MAK266, Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cholesterol quantification kit</td>
+      <td>STA 384, Cell Biolabs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>R 4.0.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prisma 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse model and experimental conditions
 
 Two- to three-month-old male C57BL/6J mice (Janvier Labs, Germany) were housed in groups of three under a 12 hr light, 12 hr dark (LD, ~300 lux) cycle at 22 ± 2°C and a relative humidity of 60 ± 5% with ad libitum access to food and water. To render mice hyperthyroid (i.e., high T3 levels), the animals received 1 week of 0.01% BSA (Sigma-Aldrich, St. Louis, USA, A7906-50G) in their drinking water, followed by 2 weeks with water supplemented with T3 (0.5 mg/L, Sigma-Aldrich T6397, in 0.01% of BSA). Control animals received only 0.01% BSA in the drinking water over the whole treatment period. During the treatment period, mice were monitored for body weight and rectal temperature (BAT-12, Physitemp, Clifton, USA) individually and food and water intake per cage. All in vivo experiments were ethically approved by the Animal Health and Care Committee of the Government of Schleswig-Holstein and were performed according to international guidelines on the ethical use of animals. Sample size was calculated using G-power software (version 3.1) and is shown as biological replicate in all graphs. Experiments were performed 3–4 times. Euthanasia was carried out using cervical dislocation and tissues were collected every 4 hr. Night experiments were carried out under dim red light. Tissues were immediately placed on dry ice and stored at –80°C until further processing. Blood samples were collected from the trunk, and clotting was allowed for 20 min at room temperature. Serum was obtained after centrifugation at 2500 rpm, 30 min, 4°C and samples stored at –20°C.
 
-## Total T3 and T4 evaluation
+### Total T3 and T4 evaluation
 
 Serum quantification of T3 and T4 was performed using commercially available kits (NovaTec, Leinfelden-Echterdingen, DNOV053, Germany, for T3 and DRG Diagnostics, Marburg, EIA-1781, Germany, for T4) following the manufacturer’s instructions.
 
-## Serum and tissue TAG and cholesterol evaluation
+### Serum and tissue TAG and cholesterol evaluation
 
 TAG and total cholesterol evaluation of tissue and serum were processed according to the manufacturer’s instructions (Sigma-Aldrich, MAK266 for TAG and Cell Biolabs, San Diego, USA, STA 384 for cholesterol).
 
-## Telemetry and metabolic evaluation
+### Telemetry and metabolic evaluation
 
 Core body temperature and locomotor activity were monitored in a subset of single-housed animals using wireless transponders (E-mitters, Starr Life Sciences, Oakmont, USA). Probes were transplanted into the abdominal cavity of mice 7 days before starting the drinking water treatment. During the treatment period, mice were recorded once per week for at least two consecutive days. Recordings were registered at 1 min intervals using the Vital View software (Starr Life Sciences). Temperature and activity data were averaged over two consecutive days (treatment days: 19/20) and plotted in 60 min bins.
 
 An open-circuit indirect calorimetry system (TSE PhenoMaster, TSE Systems, USA) was used to determine respiratory quotient (RQ = carbon dioxide produced/oxygen consumed) and EE in a subset of single-housed mice during drinking water treatment. Mice were acclimatized to the system for 1 week prior to starting the measurement. Monitoring of oxygen consumption, water intake, as well as activity took place simultaneously in 20 min bins. VO2 and RQ profiles were averaged over two consecutive days (treatment days: 19/20) and plotted in 60 min bins. EE was estimated by determining the caloric equivalent according to Heldmaier, 1975: heat production (mW) = (4.44 + 1.43 * RQ) * VO2 (mL O2/hr). A linear regression between EE and body weight was performed to rule out a possible confounding factor of body weight (Tschöp et al., 2012).
 
-## Microarray analysis
+### Microarray analysis
 
 Total RNA was extracted using TRIzol (Thermo Fisher, Waltham, USA) and the Direct-zol RNA Miniprep kit (Zymo Research, Irvine, USA) according to the manufacturer’s instructions. Genome-wide expression analyses were performed using Clariom S arrays (Thermo Fisher Scientific) using 100 ng RNA of each sample according to the manufacturer’s recommendations (WT Plus Kit, Thermo Fisher Scientific). Data was analyzed using Transcriptome Analyses Console (Thermo Fisher Scientific, version 4.0) and expressed in log2 values.
 
-## DEG analysis
+### DEG analysis
 
 To identify global DEGs, all temporal data from each group were considered and analyzed by Student’s t-test and corrected for FDRs (FDR < 0.1). Up- or downregulated DEGs were considered when a threshold of 1.5-fold (0.58 in log2 values) regulation was met. As multiple probes can target a single gene, we curated the data to remove ambiguous genes. To identify DEGs at specific timepoints (ZTs; ZT0 = ‘lights on’), the procedure described above for each ZT was performed separately. Time-independent DEGs were identified by finding consistent gene expression pattern across all ZTs.
 
-## Rhythm analysis
+### Rhythm analysis
 
 To identify probes that showed diurnal (i.e., 24 hr) oscillations, we employed the nonparametric JTK_CYCLE algorithm (Hughes et al., 2010) in the Metacycle package (Wu et al., 2016) with a set period of 24 hr and an adjusted p-value (ADJ.P) cutoff of 0.05. For visualization, data were plotted in Prism 9.0 (GraphPad, USA) and a sine wave was fit with a period set at 24 hr. Rhythmic gene detection by JTK_CYLCE was evaluated by CircaSingle, a nonlinear cosinor regression included in the CircaCompare algorithm (Parsons et al., 2020), largely (ca. 99%) confirming the results from JTK_CYCLE. Phase and amplitude parameter estimates from CircaSingle were used for rose plot visualizations. To directly compare rhythm parameters (mesor and amplitude) in gene expression profiles between T3 and CON, CircaCompare fits were used irrespective of rhythmicity thresholds. Phase comparisons were only performed when a gene was considered rhythmic in both conditions (p<0.05).
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 Functional enrichment analysis of DEGs was performed using the Gene Ontology (GO) annotations for Biological Processes on the Database for Annotation, Visualization, and Integrated Discovery software (DAVID 6.8; Huang et al., 2009). Processes were considered significant for a biological process containing at least five genes (gene count) and a p-value<0.05. To remove the redundancy of GSEA, we applied the REVIGO algorithm (Supek et al., 2011) using default conditions and a reduction of 0.5. For enrichment analyses from gene sets containing less than 100 genes, biological processes containing at least two genes were included. Overall gene expression evaluation of a given biological process was performed by normalizing each timepoint of CON and T3 by CON mesor. A sine curve was plot and used for representation of significantly rhythmic profiles.
 
-## PCA plots
+### PCA plots
 
 For PCA, each timepoint was averaged to a single replicate and analyses were performed using the factoextra package in R and Hartigan-Wong, Lloyd, and Forgy MacQueen algorithms (version 1.0.7).
 
-## Data handling and statistical analysis of non-bioinformatic-related experiments
+### Data handling and statistical analysis of non-bioinformatic-related experiments
 
 Samples were only excluded upon technical failure. For temporal correlation analyses, normalized values were obtained by dividing each value by the daily group average followed by Z-score transformation. Spearman’s correlation analyses were performed between different groups of animals that underwent the same treatment. Analyses were done in Prism 9.0 (GraphPad), and a p-value of 0.05 was used to reject the null hypothesis. Data from ZT0–12 were considered as light phase and from ZT 12–24 as dark phase. Data were either averaged or summed as indicated. Temporal data between groups were analyzed by two-way ANOVA followed by Bonferroni post-test. Single timepoint data were evaluated by unpaired Student’s t-test with Welch correction or Mann–Whitney test for parametric or nonparametric samples, respectively.
 
-## Data handling and statistical analysis of bioinformatic experiments
+### Data handling and statistical analysis of bioinformatic experiments
 
 Statistical analyses were conducted using R 4.0.3 (R Foundation for Statistical Computing, Austria) or in Prism 9.0 (GraphPad). Rhythmicity was calculated using the JTK_CYLCE algorithm in meta2d, a function of the MetaCycle R package v.1.2.0 (Wu et al., 2016). Rhythmic features were calculated and compared among multiple groups using the CircaCompare R package v.0.1.1 (Parsons et al., 2020). Data visualization was performed using the ggplot2 R package v.3.3.5, eulerr R package v.6.1.1, and Prism 9.0 (GraphPad). Heatmaps were created using the Heatmapper tool (http://www.heatmapper.ca).

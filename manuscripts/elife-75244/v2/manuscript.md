@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0011qv509 Department of Preventive Medicine, University of Tennessee Health Science Center, College of Medicine Memphis United States
-2. https://ror.org/0011qv509 Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, College of Medicine Memphis United States
-3. https://ror.org/046rm7j60 Department of Human Genetics, David Geffen School of Medicine, University of California Los Angeles Los Angeles United States
-4. https://ror.org/046rm7j60 Department of Biostatistics, Fielding School of Public Health, University of California Los Angeles Los Angeles United States
-5. https://ror.org/04mb6s476 YCI Laboratory for Next-Generation Proteomics, RIKEN Center for Integrative Medical Sciences Yokohama Japan
-6. https://ror.org/01swzsf04 University of Geneva Geneva Switzerland
+1. Department of Preventive Medicine, University of Tennessee Health Science Center, College of Medicine Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+2. Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, College of Medicine Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+3. Department of Human Genetics, David Geffen School of Medicine, University of California Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+4. Department of Biostatistics, Fielding School of Public Health, University of California Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. YCI Laboratory for Next-Generation Proteomics, RIKEN Center for Integrative Medical Sciences Yokohama Japan ([ROR:04mb6s476](https://ror.org/04mb6s476))
+6. University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
 
 † Corresponding author
 
 ## Abstract
 
-Changes in DNA methylation (DNAm) are linked to aging. Here, we profile highly conserved CpGs in 339 predominantly female mice belonging to the BXD family for which we have deep longevity and genomic data. We use a ‘pan-mammalian’ microarray that provides a common platform for assaying the methylome across mammalian clades. We computed epigenetic clocks and tested associations with DNAm entropy, diet, weight, metabolic traits, and genetic variation. We describe the multifactorial variance of methylation at these CpGs and show that high-fat diet augments the age-related changes. Entropy increases with age. The progression to disorder, particularly at CpGs that gain methylation over time, was predictive of genotype-dependent life expectancy. The longer-lived BXD strains had comparatively lower entropy at a given age. We identified two genetic loci that modulate epigenetic age acceleration (EAA): one on chromosome (Chr) 11 that encompasses the Erbb2/Her2 oncogenic region, and the other on Chr19 that contains a cytochrome P450 cluster. Both loci harbor genes associated with EAA in humans, including STXBP4 , NKX2- 3, and CUTC . Transcriptome and proteome analyses revealed correlations with oxidation-reduction, metabolic, and immune response pathways. Our results highlight concordant loci for EAA in humans and mice, and demonstrate a tight coupling between the metabolic state and epigenetic aging.
+Changes in DNA methylation (DNAm) are linked to aging. Here, we profile highly conserved CpGs in 339 predominantly female mice belonging to the BXD family for which we have deep longevity and genomic data. We use a ‘pan-mammalian’ microarray that provides a common platform for assaying the methylome across mammalian clades. We computed epigenetic clocks and tested associations with DNAm entropy, diet, weight, metabolic traits, and genetic variation. We describe the multifactorial variance of methylation at these CpGs and show that high-fat diet augments the age-related changes. Entropy increases with age. The progression to disorder, particularly at CpGs that gain methylation over time, was predictive of genotype-dependent life expectancy. The longer-lived BXD strains had comparatively lower entropy at a given age. We identified two genetic loci that modulate epigenetic age acceleration (EAA): one on chromosome (Chr) 11 that encompasses the Erbb2/Her2 oncogenic region, and the other on Chr19 that contains a cytochrome P450 cluster. Both loci harbor genes associated with EAA in humans, including STXBP4, NKX2-3, and CUTC. Transcriptome and proteome analyses revealed correlations with oxidation-reduction, metabolic, and immune response pathways. Our results highlight concordant loci for EAA in humans and mice, and demonstrate a tight coupling between the metabolic state and epigenetic aging.
 
 ## Introduction
 
@@ -44,31 +44,281 @@ Our results are consistent with a faster clock for cases on HFD and with higher 
 
 ## Results
 
-## Description of samples
+### Description of samples
 
 Liver DNAm data was from 321 females and 18 males belonging to 45 members of the BXD family, including both parental strains and F1 hybrids. Age ranged from 5.6 to 33.4 months. Mice were all weaned onto a normal chow (control diet [CD]), and a balanced subset of cases were then randomly assigned to HFD (see Roy et al., 2021 for details). Tissues were collected at approximately 6 months’ intervals (see Williams et al., 2022). Individual-level data are given in Supplementary file 1.
 
-## DNAm clocks, entropy, and chronological age prediction
+### DNAm clocks, entropy, and chronological age prediction
 
 We built three different clocks, and each was developed as a pair depending on whether the training set used all tissues (pan-tissue) or a specific tissue (in this case, liver). These are (1) a general DNAm clock (referred to simply as DNAmAge): clock trained without pre-selecting for any specific CpGs; (2) developmental clock (dev.DNAmAge): built from CpGs that change during development (defined as the period from prenatal to 1.6 months); and (3) interventional clock (int.DNAmAge): built from CpGs that change in response to aging-related interventions (caloric restriction and growth hormone receptor knockout). The clocks we report here were trained in a larger mouse dataset that excluded the BXDs and are therefore unbiased to the characteristics of the BXD family (Lu et al., 2021; Li et al., 2021; Haghani et al., 2022). The specific clock CpGs and coefficients for DNAmAge computation are given in Supplementary file 2. All clocks performed well in age estimation and had an average r of 0.89 with chronological age. However, the interventional clocks had higher deviation from chronological age and higher median predictive error (Table 1, Figure 1a). The age-adjusted EAA derived from these clocks showed wide individual variation (Figure 1b).
 
+**Table 1.**
+ Chronological age prediction and correlation with methylome-wide entropy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clock type</th>
+      <th>DNAmAge name</th>
+      <th>Tissue</th>
+      <th>r with age (n = 339)*</th>
+      <th>Age prediction median error</th>
+      <th>r with entropy(n = 339)*, †</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Standard clocks</td>
+      <td rowspan="2">DNAmAge</td>
+      <td>Pan</td>
+      <td>0.89</td>
+      <td>0.12</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.92</td>
+      <td>0.10</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Developmental clocks</td>
+      <td rowspan="2">dev.DNAmAge</td>
+      <td>Pan</td>
+      <td>0.87</td>
+      <td>0.14</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.91</td>
+      <td>0.12</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Interventional clocks</td>
+      <td rowspan="2">int.DNAmAge</td>
+      <td>Pan</td>
+      <td>0.85</td>
+      <td>0.17</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.86</td>
+      <td>0.15</td>
+      <td>0.47</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.0001.†Methylome-wide entropy calculated from ~28K CpGs._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig1-v2.jpg)
+
+**Figure 1.:** (a) Correlation between chronological age and predicted age (shown for the liver intervention clock or int.DNAmAge). Black circles are control diet (CD, n = 210); red crosses are high-fat diet mice (HFD, n = 128). (b) Violin plots of age-adjusted epigenetic age acceleration (EAA) (‘int,’ interventional; ‘dev,’ developmental). (c) Shannon entropy, calculated from the full set of high-quality CpGs, increases with age. (d) Methylome entropy has a direct correlation with EAA (shown for the liver int.EAA). (e) For 48 mice, initial body weight (BW0) was measured 1 or 3 days after introduction to HFD, and these showed significant correlation with EAA. (f) Weight was first measured at mean age of 4.5 ± 2.7 months (BW0), and then at 6.3 ± 2.8 months (BW1). Weight gains during this interval (deltaBW = BW1 – BW0) are a direct correlate of EAA. (g) For BXD genotypes with males and females samples, males have higher age acceleration. Bars represent mean ± standard error; 40 females (26 CD, 14 HFD) and 18 males (10 CD, 8 HFD). (h) Relative effects of different predictor variables on EAA shown as logworth scores (-log10p). The dashed lines correspond to p=0.01. Positive logworth values indicate positive regression estimates (for diet, positive means higher in HFD compared to CD). BWF, final weight; Chol, serum total cholesterol; Gluc, fasted glucose levels. (i) The residual plot displays association between methylome-wide entropy and the pan-tissue int.EAA after adjustment for diet, age, weight, glucose, cholesterol, and batch.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Logworth scores of the predictors (–log10p) with dashed lines corresponding to p=0.01. Positive logworth values indicate positive regression estimates, and negative values indicate negative regression estimates (for diet, positive means higher in high-fat diet compared to control diet). BW0, baseline weight; Chol, serum total cholesterol, Gluc, fasted glucose levels.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** This inverse correlation is depicted for the (a) 75th quartile age at natural death, (b) minimum lifespan, and (c) median lifespan (analysis in 302 female samples with lifespan data). CD, control diet; HFD, high-fat diet. The negative correlations are modest with explained variance values, r2, of ~ 3%.
+
 We next estimated the methylome-wide entropy as a measure of randomness and information loss. This was computed from 27,966 probes that provide high-quality data and have been validated to perform well in mice (Arneson et al., 2022). Consistent with previous reports (Hannum et al., 2013; Sziráki et al., 2018), this property increased with chronological age, and age accounted for about 6% (in CD) to 28% (in HFD) of the variance in entropy (Figure 1c). As direct correlates of chronological age, all the DNAmAge estimates also had significant positive correlations with entropy (Table 1). We hypothesized that higher entropy levels will be associated with higher EAA, and based on this bivariate comparison, most of the EAA showed a significant positive correlation with entropy (Figure 1d; Supplementary file 3).
 
-## How the epigenetic readouts relate to diet, sex, and metabolic traits
+### How the epigenetic readouts relate to diet, sex, and metabolic traits
 
-## Diet
+#### Diet
 
 HFD was associated with higher EAA for four of the clocks (Table 2). For instance, the liver-specific interventional clock diverged between the diets (Figure 1a), and CD mice had an average of –0.04 years of age deceleration, and HFD mice had an average of +0.11 years of age acceleration (Table 2). The two clocks that were not affected by diet were the liver general and developmental clocks. Methylome-wide entropy was not different between the diets.
 
-## Body weight
+**Table 2.**
+ Association with diet and weight, and heritability of the epigenetic readouts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>EAA</th>
+      <th>Diet</th>
+      <th>Mean (SD)</th>
+      <th>Diet (p)</th>
+      <th>rBW0*</th>
+      <th>pBW0</th>
+      <th>rBWF*</th>
+      <th>pBWF</th>
+      <th>h2</th>
+      <th>Strain r†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="12">Mouse clocks</td>
+      <td rowspan="2">EAA, pan</td>
+      <td>CD</td>
+      <td>–0.05 ± 0.21</td>
+      <td rowspan="2">&lt;0.0001</td>
+      <td>0.19</td>
+      <td>0.006</td>
+      <td>0.29</td>
+      <td>&lt;0.0001</td>
+      <td>0.49</td>
+      <td rowspan="2">0.54</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0.07 ± 0.21</td>
+      <td>0.21</td>
+      <td>0.01</td>
+      <td>0.42</td>
+      <td>&lt;0.0001</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td rowspan="2">EAA, liver</td>
+      <td>CD</td>
+      <td>0 ± 0.17</td>
+      <td rowspan="2">ns</td>
+      <td>0.09</td>
+      <td>ns</td>
+      <td>0.20</td>
+      <td>0.003</td>
+      <td>0.40</td>
+      <td rowspan="2">0.73</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0.03 ± 0.14</td>
+      <td>0.22</td>
+      <td>0.01</td>
+      <td>0.49</td>
+      <td>&lt;0.0001</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dev.EAA, pan</td>
+      <td>CD</td>
+      <td>–0.04 ± 0.23</td>
+      <td rowspan="2">0.004</td>
+      <td>0.09</td>
+      <td>ns</td>
+      <td>0.22</td>
+      <td>0.001</td>
+      <td>0.53</td>
+      <td rowspan="2">0.76</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0.03 ± 0.22</td>
+      <td>0.27</td>
+      <td>0.002</td>
+      <td>0.45</td>
+      <td>&lt;0.0001</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dev.EAA, liver</td>
+      <td>CD</td>
+      <td>0 ± 0.2</td>
+      <td rowspan="2">ns</td>
+      <td>0.19</td>
+      <td>0.002</td>
+      <td>0.29</td>
+      <td>&lt;0.0001</td>
+      <td>0.46</td>
+      <td rowspan="2">0.78</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0 ± 0.16</td>
+      <td>0.29</td>
+      <td>0.0007</td>
+      <td>0.47</td>
+      <td>&lt;0.0001</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td rowspan="2">int.EAA, pan</td>
+      <td>CD</td>
+      <td>–0.05 ± 0.25</td>
+      <td rowspan="2">0.0003</td>
+      <td>0.03</td>
+      <td>ns</td>
+      <td>0.21</td>
+      <td>0.002</td>
+      <td>0.27</td>
+      <td rowspan="2">0.66</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0.06 ± 0.33</td>
+      <td>0.22</td>
+      <td>0.01</td>
+      <td>0.46</td>
+      <td>&lt;0.0001</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td rowspan="2">int.EAA, liver</td>
+      <td>CD</td>
+      <td>–0.04 ± 0.22</td>
+      <td rowspan="2">&lt;0.0001</td>
+      <td>0.05</td>
+      <td>ns</td>
+      <td>0.18</td>
+      <td>0.01</td>
+      <td>0.59</td>
+      <td rowspan="2">0.80</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>0.11 ± 0.25</td>
+      <td>0.27</td>
+      <td>0.002</td>
+      <td>0.58</td>
+      <td>&lt;0.0001</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Entropy</td>
+      <td rowspan="2">-</td>
+      <td>CD</td>
+      <td>2.67 ± 0.02</td>
+      <td rowspan="2">ns</td>
+      <td>0.09</td>
+      <td>ns</td>
+      <td>0.05</td>
+      <td>ns</td>
+      <td>0.31</td>
+      <td rowspan="2">0.24(ns)</td>
+    </tr>
+    <tr>
+      <td>HFD</td>
+      <td>2.67 ± 0.02</td>
+      <td>0.15</td>
+      <td>0.09</td>
+      <td>0.15</td>
+      <td>0.09</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+
+_CD, control diet; HFD, high-fat diet; EAA, epigenetic age acceleration; int, interventional; dev, developmental.*BW0 is body weight at about 4.5 months of age (n = 339; 210 CD and 129 HFD); BWF is final weight at tissue collection (1 HFD case missing data; n = 338; 210 CD and 128 HFD).†Pearson correlation between strain means for n = 29 BXD genotypes kept on CD and HFD._
+
+#### Body weight
 
 Body weight was first measured when mice were at an average age of 4.5 ± 2.7 months. We refer to this initial weight as baseline body weight (BW0). For mice on HFD, this was usually before introduction to the diet, except for 48 cases that were first weighed 1 or 3 days after HFD (Supplementary file 1). In the CD group, only the EAA from the pan-tissue standard and liver developmental clocks showed modest but significant positive correlations with BW0 (Table 2). In the HFD group, the positive correlation with BW0 was more robust and consistent across all the clocks, and this may have been due to the inclusion of the 48 cases that had been on HFD for 1 or 3 days. Taking only these 48 cases, we found that higher weight even after 1 day of HFD had an age-accelerating effect on all the clocks, and this was particularly strong for the interventional clocks (r = 0.45, p=0.001 for the pan-tissue int.EAA; r = 0.58, p<0.0001 for the liver int.EAA) (Figure 1e). Second weight was measured 7.4 ± 5.2 weeks after BW0 (mean age 6.3 ± 2.8 months). We refer to this as BW1 and estimated the weight change as deltaBW = BW1 – BW0. DeltaBW was a positive correlate of EAA in both diets, albeit more pronounced in the HFD group (Figure 1f). The final body weight (BWF) was measured at the time of tissue harvest, and EAA from all the mouse clocks were significant correlates of BWF in both diets (Table 2). In contrast, entropy did not show an association with either BW0 or BWF. We do note that when stratified by diet the entropy level had a slight positive correlation with BW1 in the HFD group (r = 0.23, p=0.008), but not in the CD group (Supplementary file 3).
 
-## Sex
+#### Sex
 
 Four BXD genotypes (B6D2F1, D2B6F1, BXD102, B6) had cases from both males and females. We used these to test for sex effect. All the clocks showed significant age acceleration in male mice, and this was particularly strong for both dev.EAA and pan-tissue int.EAA (Figure 1g, Supplementary file 3). The effect of sex was independent of the higher BWF of males, and the higher age acceleration in males was detected after adjusting for BWF (Supplementary file 4a). There was no significant difference in entropy between the sexes.
 
-## Metabolic measures
+#### Metabolic measures
 
 278 cases with DNAm data also had fasted serum glucose and total cholesterol (Williams et al., 2022; Roy et al., 2021), and we examined whether these metabolic traits were associated with either the EAA measures or methylome entropy. Since these are highly dependent on diet, weight, and age, we applied a multivariable model to jointly examine how the different metabolic variables (cholesterol and glucose, as well as diet and weight) and entropy relate to EAA after adjusting for age. To test the robustness of associations, we also include the methylation array batch as another covariate (Supplementary file 1 has batch information; Supplementary file 5 has the full statistics). Figure 1h shows the relative strengths and directions of associations between these variables and the EAA traits. Except for the pan-tissue interventional clock, entropy had a strong positive correlation with EAA. For example, a plot of residuals between entropy and the liver int.EAA indicates that after adjusting for all the other covariates, the methylome-wide entropy explains 17% of the variance in int.EAA (Figure 1i). Since diet strongly influences BWF, the inclusion of BWF in the regression diminished the effect of diet. For the two clocks that were not influenced by diet (the liver EAA and liver dev.EAA), adjusting for the effect of BWF resulted in an inverse association with diet (i.e., the residual EAA values after accounting for BWF were slightly lower in the HFD group). Fasted glucose did not have a significant effect on EAA. Cholesterol had a positive association with the interventional clocks but the effects were modest (residual R2 = 0.02 and p=0.02 for cholesterol and the pan-tissue int.EAA).
 
@@ -76,15 +326,27 @@ We also performed a similar analysis with BW0 instead of BWF (Figure 1—figure 
 
 To summarize, our results indicate that the degree of disorder in the methylome increases with age and may partly contribute to the epigenetic clocks as higher entropy is associated with higher EAA. The EAA traits were also associated with biological variables (i.e., body weight, diet, and sex). Of these, BWF was the strongest modulator of EAA.
 
-## How the epigenetic readouts relate to strain longevity
+### How the epigenetic readouts relate to strain longevity
 
 We next obtained longevity data from a parallel cohort of female BXD mice that were allowed to age on CD or HFD (Roy et al., 2021). Since the strain lifespan was determined from female BXDs, we restricted this to only the female cases. For strains with natural death data from n ≥ 5, we computed the minimum (minLS), 25th quartile (25Q-LS), mean, median lifespan, 75th quartile (75Q-LS), and maximum lifespan (maxLS) (Supplementary file 1). Specifically, we postulated an accelerated clock for strains with shorter lifespan. Overall, the EAA measures showed the expected inverse correlation trend with the lifespan statistics (Supplementary file 4b). However, these correlations were weak. The correlations were significant only for the pan-tissue general clock (Figure 1—figure supplement 2a) and the liver intervention clock, with explained variance in lifespan of only ~3% (Figure 1—figure supplement 2b and c). When separated by diet, these correlations became weaker, indicating that while we see the expected inverse relationship, the EAA is only weakly predictive of strain longevity. Entropy estimated from the full set of CpGs was unrelated to strain longevity.
 
-## Multifactor variance of the conserved CpGs
+### Multifactor variance of the conserved CpGs
 
 Both entropy and clock readouts capture the overall variation across multiple CpGs, and to gain insights into the underlying variance patterns, we performed a multivariable epigenome-wide association study (EWAS). For this, we applied a site-by-site regression on the 27,966 validated CpGs (Arneson et al., 2022) and tested for association with age, BWF, diet, and genotype-dependent strain median lifespan (full set of probes, annotations, and EWAS results in Supplementary file 6).
 
 Age was clearly the most influential variable, and this is apparent from the volcano plots (Figure 2a–d). We used a cutoff of Bonferroni p≤0.05 to define differentially methylated CpGs (DMCs), and 6553 CpGs were associated with age (referred to as age-DMCs), 733 with weight (weight-DMCs), 321 with diet (diet-DMCs), and 236 with genotype-dependent lifespan (LS-DMCs). We note extensive overlap among the lists of DMCs that shows that variation at these CpGs are multifactorial in nature (Figure 1e). Majority of the age-DMCs (77%) gained methylation (or age-gain), and consistent with previous observations, age-gain CpGs tended to be in regions with low methylation, whereas age-DMCs that declined in methylation (age-loss) were in regions with high methylation (Figure 2f; Sandoval-Sierra et al., 2020; Sziráki et al., 2018; Slieker et al., 2016). By overlaying the volcano plots with the age-gain and age-loss information, we see distinct patterns in how these age-DMCs vary with weight (Figure 2b), diet (Figure 2c), and genotype lifespan (Figure 2d). While the majority of CpGs, including several age-loss CpGs, had negative regression estimates for weight (i.e., decrease in DNAm with unit increase in weight), HFD was associated with higher methylation levels (positive regression estimates) including at several age-DMCs (Figure 2c). This pattern of inverse correlation with weight but heightened methylation due to HFD is illustrated by the CpG in the 3′UTR of Mettl23 (cg10587537) (Figure 2g). Taking the 6553 age-DMCs, a comparison of the regression estimates for age (i.e., the change in methylation per day of aging) versus diet (difference in HFD relative to CD) shows that the age-gains were augmented in methylation by HFD (Figure 2h), and again, this is illustrated by the CpG in the Mettl23 3′UTR (Figure 2i). For the LS-DMCs, sites that had negative regression estimates for lifespan (i.e., lower DNAm per day increase in strain median longevity) had higher proportion of age-gain CpGs (Figure 2d). A comparison between the regression estimates for age versus the regression estimates for lifespan shows that CpGs that gain methylation with age tended to have lower methylation in strains with longer lifespan (Figure 2j).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig2-v2.jpg)
+
+**Figure 2.:** (a) Volcano plot comparing regression estimates (change in methylation beta-value per day of age) versus the statistical significance for age effect. Dashed line denotes the Bonferroni p=0.05 for ~28K tests. Similar volcano plots for predictor variables: (b) final body weight (regression estimates are change per gram of weight), (c) diet (change in high-fat diet [HFD] compared to control diet [CD]), and (d) strain median lifespan (per day increase in median longevity). CpGs that were significantly associated with age are denoted by colored markers (red circles: age-gain; yellow triangles: age-loss). (e) Overlap among the lists of differentially methylated CpGs. (f) Each dot represents the mean methylation beta-values for the 5030 age-gain and 1523 age-loss CpGs. (g) Correlation between body weight and methylation beta-values for the CpG (cg10587537) located in the 3′UTR of Mettl23. Mice on HFD have higher methylation than mice on CD, but the inverse correlation with weight is consistent for both groups (r = –0.45, p<0.0001 for CD; r = –0.15, p=0.08 for HFD). (h) Contour density plot for the 6553 CpGs that are significantly associated with age (age-DMCs). This relates the pattern of change with age (x-axis) with change on HFD (y-axis). CpGs that gain methylation with age are also increased in methylation by HFD. (i) Correlation between age and methylation at the Mettl23 3′UTR CpG (r = 0.35 for CD; r = 0.46 for HFD). (j) For the 6553 age-DMCs, the contour density plot relates the pattern of change with age (x-axis) vs. change with median longevity (y-axis). CpGs that gain methylation with age have lower methylation with higher lifespan.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Enrichment is (a) genomic location and (b) chromatin states among the differentially methylated CpGs (DMC) (expansions for the chromatin states are provided in Supplementary file 9). Asterisks denote hypergeometric enrichment p<0.001. For the 15 chromatin states (and regions with no replicable signal [NRS]), we compare the methylation levels and mean regression estimates for the effects of (c) age, (d) diet, and (e) body weight.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Density plot for the 339 cases using the full set of CpG probes. (b) Variance explained by the top 10 principal components (PCs) derived from the full set of probes. (c) Plot between component 1 and 2 shows the PC1 captures some batch effect. Here batch is the 96-well plates.
 
 As in Sziráki et al., 2018, we divided the CpGs by age effect: age-gain, age-loss, and those that do not change strongly with age (age-ns; i.e., the remaining 21,413 CpGs that were not classified as age-DMCs). For these conserved CpGs, both sets of age-DMCs had significant increases in entropy with age regardless of diet (Figure 3a and b), and even the age-ns showed a modest entropy gain with age in the HFD group (Figure 3c). The reason for this increase in disorder becomes evident when we compare the density plots using the full set of CpGs for one of the younger mice (UT319; 0.56 years old) and one of the older mice (UT573; 2.3 years) (Figure 3d). Concordant with previous reports (Sziráki et al., 2018; Kerepesi et al., 2022), the older sample showed a subtle flattening of the bimodal peaks towards a slightly more hemi-methylated state. The entropy of the age-gain CpGs was modestly but significantly higher in the HFD group (p=0.001; Figure 3e). Entropy of the age-loss and age-ns CpGs was not different between the diets. Body weight, on the other hand, was associated specifically with the entropy score of the age-loss CpGs, and both higher BW0 (Figure 3f) and BWF predicted higher entropy for age-loss CpGs.
 
@@ -96,7 +358,7 @@ We applied a multivariable regression to compare the relative effects of age, di
 
 Taken together, our results show that the conserved CpGs are influenced by multiple predictors. HFD augmented the age-dependent changes with a prominent effect on age-gain CpGs. Body weight showed a strong association with the age-loss CpGs. Additionally, strains with longer life expectancy tended to have lower methylation levels at age-gain CpGs with an overall lower entropy state at these CpGs that suggests a more ‘youthful’ methylome for longer lived genotypes.
 
-## Functional and genomic context of DMCs
+### Functional and genomic context of DMCs
 
 To uncover the potential biological pathways represented by the DMCs, we performed genomic regions enrichment analyses for the CpGs (McLean et al., 2010). The age-gain CpGs were highly enriched in transcription factors, regulators of development and growth, menarche and menstrual phases, energy metabolism, and transcription factor networks such as HNF1 and HNF3B pathways (Supplementary file 8). The age-loss CpGs had somewhat modest enrichment and represented cell adhesion and cytoskeletal processes, endothelial cell proliferation, and p38 signaling. The BW-DMCs were enriched in actin and protein metabolism, and WNT, and platelet-derived growth factor (PDGF) and ErbB signaling. Similarly, the diet-DMCs were highly enriched in PDGF, epidermal growth factor (EGFR), and ErbB signaling, as well as the mTOR signaling pathway, and regulation of energy homeostasis (Supplementary file 8). Seeming to converge on common pathways, the LS-CpGs that were negatively correlated with lifespan had modest enrichment in cell signaling pathways such as EGFR, PDGF, and ErbB signaling. The LS-CpGs with positive correlation with lifespan were highly enriched in lipid metabolic genes and also included pathways related to chromosome maintenance and telomere expansion (Supplementary file 8).
 
@@ -104,11 +366,19 @@ We next examined the genomic annotations and chromatin states of the DMCs. Consi
 
 For an overview of the general methylation and variance patterns by chromatin annotations, we used the full set of 27,966 CpGs and computed the average methylation beta-values, and average regression coefficients (i.e., change in beta-value per unit change in the respective predictor variable, or contrast between diets). As expected, promoter CpGs and Hc-P were sites with the lowest methylation. Hc-H, Tr-S, and Tr-P had higher methylation, and many of the enhancer sites were in the hemi-methylated zone. For age effect, mean regression estimates had a significant inverse linear fit with mean methylation (r = –0.63, p=0.009; Figure 2—figure supplement 1c), and this is consistent with the greater age-loss at hypermethylated CpGs and greater age-gains at hypomethylated CpGs (Figure 2f). The effects of diet and weight were not linearly related to the mean methylation of the chromatin states. Instead, both showed a U-shaped fit with a significant negative quadratic effect for diet (R2 = 0.69, p=0.0005, quadratic estimate = –0.05; Figure 2—figure supplement 1d) and a positive quadratic effect for weight (R2 = 0.50, p=0.01, quadratic estimate = 0.001; Figure 2—figure supplement 1e). Methylation variation as a function of strain longevity did not relate to mean methylation with either a linear or polynomial fit, and indicates that variance due to background genotype is less dependent on the chromatin and mean methylation status. While this is a very low-resolution and broad view of methylation levels and methylation variation, the observations show that while aging results in erosion of the hypo- and hypermethylated peaks, diet and body weight appear to have generally stronger associations with hemi-methylated sites.
 
-## Genetic analysis of epigenetic age acceleration
+### Genetic analysis of epigenetic age acceleration
 
 The EAA traits had moderate heritability at an averaged h2 of 0.50 (Table 2; Ashbrook et al., 2021). Another way to gauge the level of genetic correlation is to compare between members of strains maintained on different diets. All the EAA traits shared high strain-level correlations between diets, indicating an effect of background genotype that is robust to dietary differences (Table 2). The methylome-wide entropy had a heritability of ~0.30 and had no strain-level correlation between diets.
 
 To uncover genetic loci, we applied QTL mapping using mixed linear modeling that corrects for the BXD kinship structure (Zhou and Stephens, 2014). First, we performed the QTL mapping for each EAA trait with adjustment for diet and body weight. EAA from the two interventional clocks had the strongest QTLs (Supplementary file 10). The pan-tissue int.EAA had a significant QTL on Chr11 (90–99 Mb) with the highest linkage at ~93 Mb (p=3.5E-06; equivalent to a LOD score of 4.7) (Figure 4a). Taking a genotype marker at the peak interval (BXD variant ID DA0014408.4 at Chr11, 92.750 Mb) (Ashbrook et al., 2021), we segregated the BXDs homozygous for either the D2 (DD) or the B6 (BB) alleles. Strains with DD genotype at this locus had significantly higher int.EAA (Figure 4a, inset). The liver int.EAA had the highest QTL on Chr19 (35–45 Mb) with the most significant linkage at markers between 38 and 42 Mb (p=9E-07; LOD score of 5.2) (Figure 4b). We selected a marker at the peak interval (rs48062674 at Chr19, 38.650 Mb), and the BB genotype had significantly higher liver int.EAA compared to DD (Figure 4b, inset).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig4-v2.jpg)
+
+**Figure 4.:** The Manhattan plots represent the location of genotyped markers (x-axis) and linkage –log10p (y-axis). (a) The peak QTL for age acceleration from the pan-tissue interventional clock (int.EAA) is on chromosome (Chr) 11 at ~93 Mb. The inset shows the mean (± standard error) trait values for BXDs homozygous for the C57BL/6J allele (BB; gray) versus BXDs homozygous for the DBA/2J allele (DD; black) on control diet (CD) and high-fat diet (HFD). (b) The liver-specific int.EAA has a peak QTL on Chr19 (~38 Mb). Trait means by genotype at this locus are shown in inset; BB has higher age acceleration. (c) Linkage statistics are weaker for the methylome-wide entropy. However, there is a nominally significant linkage on the Chr19 locus, but the peak markers are at ~47.5 Mb. Here, the BB genotype has higher entropy.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The Manhattan plot displays the combined meta p-values for EAA. These meta p-values are based on a simple p-value combination for the six EAA traits and are mainly to highlight regions with the highest consensus QTLs. The highest peaks are on chromosomes 11 (Eaa11) and 19 (Eaa19). (b) BXDs were segregated by genotype at a representative marker in Eaa11 (variant at 92.750 Mb). In the control diet group (CD), mean EAA (± standard error) is higher for mice with the DD genotype. Only the EAA derived from the liver interventional clock (int.EAA) shows no difference between the genotypes. (c) BXDs were segregated by the genotype at a marker in Eaa19 (38.650 Mb). Mean EAA is higher in the BB genotype, and this genotype effect is seen for all the clocks in both diets.
 
 We performed a similar QTL mapping for methylome-wide entropy with adjustment for major covariates (diet, chronological age, and body weight). There were no genome-wide significant QTLs. A region on Chr19 that overlapped the liver int.EAA showed a modest peak (Figure 4c, Supplementary file 10). However, the peak markers for entropy were located slightly distal to the peak EAA QTL (~47.5 Mb at rs30567369, minimum p=0.0005). At this locus, the BB genotype had higher average entropy.
 
@@ -116,7 +386,146 @@ To identify regulatory loci that are consistent across the different EAA measure
 
 We performed marker-specific linkage analyses for each of the clocks using a regression model that adjusted for diet. With the exception of the liver int.EAA, all the EAA traits had nominal to highly significant associations with the representative Eaa11 marker (DA0014408.4), and the DD genotype had higher age acceleration (Table 3). Mean plots by genotype and diet show that this effect was primarily in the CD mice (Figure 4—figure supplement 1b). The effect of this locus appeared to be higher for the pan-tissue clocks compared to the corresponding liver-specific clocks. For proximal Eaa19, the representative marker (rs48062674) was associated with all the EAA traits and the BB mice had higher age acceleration in both diets (Figure 4—figure supplement 1c). We also tested if these peak markers were associated with the recorded lifespan phenotype, and we found no significant association with the observed lifespan of the BXDs.
 
-## Association of EAA QTLs with body weight trajectory
+**Table 3.**
+ Marker-specific linkage analyses for epigenetic age acceleration and body weight trajectory.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Linear regression*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Predictor</td>
+      <td>Outcome</td>
+      <td>Estimate</td>
+      <td>Standard error</td>
+      <td>t ratio</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Eaa11DA0014408.4[DD]Chr11, 92.750 Mb(133 BB cases, and 173 DD cases)</td>
+      <td>EAA, pan</td>
+      <td>0.096</td>
+      <td>0.023</td>
+      <td>4.184</td>
+      <td>3.8E-05</td>
+    </tr>
+    <tr>
+      <td>EAA, liver</td>
+      <td>0.067</td>
+      <td>0.017</td>
+      <td>3.880</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>dev.EAA, pan</td>
+      <td>0.077</td>
+      <td>0.025</td>
+      <td>3.041</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>dev.EAA, liver</td>
+      <td>0.037</td>
+      <td>0.020</td>
+      <td>1.878</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>int.EAA, pan</td>
+      <td>0.153</td>
+      <td>0.029</td>
+      <td>5.278</td>
+      <td>2.5E-07</td>
+    </tr>
+    <tr>
+      <td>int.EAA, liver</td>
+      <td>–0.033</td>
+      <td>0.025</td>
+      <td>–1.284</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Eaa19rs48062674[DD]Chr19, 38.650 Mb(238 BB cases, and 67 DD cases)</td>
+      <td>EAA, pan</td>
+      <td>–0.083</td>
+      <td>0.028</td>
+      <td>–2.954</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>EAA, liver</td>
+      <td>–0.137</td>
+      <td>0.020</td>
+      <td>–6.972</td>
+      <td>2.0E-11</td>
+    </tr>
+    <tr>
+      <td>dev.EAA, pan</td>
+      <td>–0.206</td>
+      <td>0.029</td>
+      <td>–7.218</td>
+      <td>4.3E-12</td>
+    </tr>
+    <tr>
+      <td>dev.EAA, liver</td>
+      <td>–0.124</td>
+      <td>0.023</td>
+      <td>–5.461</td>
+      <td>9.9E-08</td>
+    </tr>
+    <tr>
+      <td>int.EAA, pan</td>
+      <td>–0.143</td>
+      <td>0.035</td>
+      <td>–4.028</td>
+      <td>7.1E-05</td>
+    </tr>
+    <tr>
+      <td>int.EAA, liver</td>
+      <td>–0.250</td>
+      <td>0.027</td>
+      <td>–9.238</td>
+      <td>4.6E-18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="5">Mixed model for longitudinal change in body weight†</td>
+    </tr>
+    <tr>
+      <td>Predictor</td>
+      <td>Outcome</td>
+      <td>Estimate</td>
+      <td>Standard error</td>
+      <td>t ratio</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>Eaa11DA0014408.4[DD]Number of observations = 6885; Number of individuals = 2112</td>
+      <td>Body weight</td>
+      <td>0.619</td>
+      <td>0.345</td>
+      <td>1.794</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Eaa19rs48062674[DD]Number of observations = 6132; Number of individuals = 1852</td>
+      <td>Body weight</td>
+      <td>–1.847</td>
+      <td>0.374</td>
+      <td>–4.945</td>
+      <td>7.6E-07</td>
+    </tr>
+  </tbody>
+</table>
+
+_int, interventional; dev, developmental; EAA, epigenetic age acceleration.*Regression model: lm(EAA ~ genotype + diet).†lmer(weight ~age + diet + genotype + (1|mouseID))._
+
+### Association of EAA QTLs with body weight trajectory
 
 Since gain in body weight with age was an accelerator of the clocks, we examined whether the selected markers in Eaa11 and Eaa19 are also related to body weight change. We retrieved longitudinal weight data from a larger cohort of the aging BXD mice that were weighed at regular intervals. After excluding heterozygotes, we tested the effect of genotype. Concordant with the higher EAA for the DD genotype at Eaa11 in the CD group, the DD genotype in the CD group also had slightly higher mean weight in older adulthood (12 and 18 months; Figure 5a). However, this marker had no significant association with body weight when tested using a mixed-effects model (p=0.07; Table 3). In Eaa19, it was the BB genotype that consistently exhibited an accelerated clock in both diets, and also higher entropy, and the BB genotype had higher average body weight by 6 months of age (Figure 5b), and this locus had a significant influence on the body weight trajectory (p=7.6E-07; Table 3).
 
@@ -124,15 +533,23 @@ Since gain in body weight with age was an accelerator of the clocks, we examined
 
 **Figure 5.:** Body weight was measured at regular age intervals (x-axis) from (a) 2112 BXD mice that were homozygous at the Eaa11 marker (DA0014408.4; 842 BB, 1279 DD) and (b) 1852 BXD mice that were homozygous at the proximal Eaa19 marker (rs48062674; 1252 BB, 600 DD). Mice were maintained on either control diet (CD) or high-fat diet (HFD). The graphs show the segregation of body weight over time by diet and genotype. Mean ± standard error; heterozygotes were excluded.
 
-## Candidate genes for epigenetic age acceleration
+### Candidate genes for epigenetic age acceleration
 
 There are several positional candidate genes in Eaa11 and Eaa19. To narrow the list, we applied two selection criteria: genes that (1) contain missense and/or stop variants, and/or (2) contain non-coding variants and regulated by cis-acting expression QTLs (eQTL). For the eQTL analysis, we utilized an existing liver transcriptome data from the same aging cohort (Williams et al., 2022). We identified 24 positional candidates in Eaa11 that includes Stxbp4, Erbb2 (Her-2 oncogenic gene), and Grb7 (growth factor receptor binding) (Supplementary file 11, Figure 4a). Eaa19 has 81 such candidates that includes a cluster of cytochrome P450 genes, and Chuk (inhibitor of NF-kB) in the proximal region, and Pcgf6 (epigenetic regulator) and Elovl3 (lipid metabolic gene) in the distal region (Supplementary file 11, Figure 4b and c).
 
 For further prioritization, we converted the mouse QTL regions to the corresponding syntenic regions in the human genome and retrieved GWAS annotations for these intervals (Buniello et al., 2019). We specifically searched for the traits: epigenetic aging, longevity, age of menarche/menopause/puberty, Alzheimer’s disease, and age-related cognitive decline and dementia. This highlighted five genes in Eaa11 and three genes in Eaa19 (Supplementary file 4c). We also identified a GWAS that found associations between variants near Myof-Cyp26a1 and human longevity (Yashin et al., 2018), and a meta-GWAS that found gene-level associations between Nkx2–3 and Cutc, and epigenetic aging (Supplementary file 4c; McCartney et al., 2021).
 
-## Gene expression correlates of EAA
+### Gene expression correlates of EAA
 
 A subset of the BXD cases had liver RNA-seq data (94 CD and 59 HFD) (Williams et al., 2022). Using this set, we performed transcriptome-wide correlation analysis for the general pan-tissue EAA and the more specific liver int.EAA. To gain insights into biological pathways, we selected the top 2000 transcriptome correlates for functional enrichment analysis (Supplementary file 12a). The common themes for both clocks were that (1) there were far fewer negative correlates (223 out of 2000 for pan-tissue EAA, and 337 out of 2000 transcripts for liver int.EAA) than positive correlates, and (2) the negative correlates were highly enriched (Bonferroni corrected p<0.05) in oxidation-reduction and mitochondrial genes (Supplementary file 12b and c). The pan-tissue general clock was also highly enriched in pathways related to steroid metabolism, epoxygenase p450 pathway, and xenobiotics, which are pathways that are particularly relevant to liver. The p450 genes included candidates that are in Eaa19 (e.g., Cyp2c29, Cyp2c37). The positive correlates were enriched in a variety of gene functions, including mitosis for both clocks, and immune and inflammatory response for the general pan-tissue clock (functions that are not specific to liver). 563 transcripts (315 unique genes) were correlated with both pan-tissue EAA and liver int.EAA. Based on hierarchical clustering (HC) of these common mRNA correlates of EAA, the transcripts could be clustered into three groups (Figure 6a; heatmap in Figure 6—figure supplement 1a). While none of these were significantly enriched in any particular Gene Ontology (GO), cluster 3 included several oxidation-reduction genes, including the Eaa11 candidate, Cyp2c29, and cluster 2 included several cell cycle genes (Figure 6a). To verify that these transcriptomic associations are robust to the effect of diet, we repeated the correlation and enrichment analysis in the CD group only for the pan-tissue general clock (n = 94). Again, taking the top 2000 correlates (|r| ≤ 0.22; p≤0.03), we found the same enrichment profiles for the positive correlates (immune, cell cycle) and the negative correlates (oxidation-reduction and mitochondrial).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig6-v2.jpg)
+
+**Figure 6.:** (a) mRNAs that are correlated with the acceleration of both pan-tissue general clock (pan EAA) and liver interventional clock (liver int.EAA) were grouped based on unsupervised hierarchical clustering (HC). Few representative genes and gene ontologies are highlighted. For liver proteome, the level of APOE is the strongest correlate for both (b) liver int.EAA and (c) pan-tissue EAA. (d) For liver proteins that are correlated with both pan-tissue EAA and liver int.EAA, HC grouped the proteins into clusters enriched in oxidation-reduction and lipid metabolism, and a cluster enriched in glycogen metabolism. In adipose tissue, the expression level of the APOE protein is higher with higher age acceleration for both (e) liver int.EAA and (f) pan-tissue EAA.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75244/elife-75244-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The dendrograms represent the liver expression of (a) mRNA and (b) proteins that are correlated with age acceleration derived from both pan-tissue general clock and liver interventional clock.
 
 Liver proteome was also available for 164 of the BXDs, and 53 also had adipose proteome. The liver proteome data quantifies over 32,000 protein variants from 3940 unique genes and has been reported in Williams et al., 2022. Similar to the transcriptome-wide analysis, we extracted the top 2000 protein correlates of EAA (Supplementary file 12d) and performed functional enrichment analysis (Supplementary file 12b and c). For both liver int.EAA and pan-tissue EAA, the top liver protein correlate was APOE, and higher expression of APOE was associated with higher age acceleration (Figure 6b and c). Similar to the transcriptome, the negative correlates of EAA were highly enriched in oxidation-reduction (several cytochrome proteins), steroid metabolism, and epoxygenase 450 pathway. The positive correlates were also highly enriched in oxidation-reduction (several hydroxy-delta-5 steroid dehydrogenases proteins), lipid and carbohydrate metabolism, as well as phospholipid efflux (particularly enriched for the liver int.EAA). There was a high degree of overlap at the proteomic level for the two clocks, and 1241 protein variants (332 unique genes) were correlated with both pan-tissue EAA and liver int.EAA (Supplementary file 12d). For these common protein correlates, the HC divided the proteins into clusters that represented metabolic pathways mainly related to steroid metabolism, and also glycolysis and gluconeogenesis (Figure 6d; heatmap in Figure 6—figure supplement 1b).
 
@@ -162,21 +579,29 @@ In summary, we have identified two main QTLs – Eaa11 and Eaa19 – that contri
 
 ## Materials and methods
 
-## Biospecimen collection and processing
+### Biospecimen collection and processing
 
 Samples for this study were selected from a larger colony of BXD mice that were housed in a specific pathogen-free facility at the University of Tennessee Health Science Center (UTHSC). All animal procedures were in accordance with a protocol approved by the Institutional Animal Care and Use Committee (IACUC) at the UTHSC. Detailed description of housing conditions and diet can be found in Williams et al., 2022; Roy et al., 2021. Mice were given ad libitum access to water and either standard laboratory chow (Harlan Teklad; 2018, 18.6% protein, 6.2% fat, 75.2% carbohydrates) or high-fat chow (Harlan Teklad 06414; 18.4% protein, 60.3% fat, 21.3% carbohydrate). Animals were first weighed within the first few days of assignment to either diets, and this was mostly but not always prior to introduction to HFD. Following this, animals were weighed periodically and a final time (BWF) when animals were humanely euthanized (anesthetized with avertin at 0.02 ml/g of weight, followed by perfusion with phosphate-buffered saline) at specific ages for tissue collection. This work utilizes the biobanked liver specimens that were pulverized and stored at –80°C, and overlaps samples described in Williams et al., 2022. DNA was extracted using the DNeasy Blood & Tissue Kit from QIAGEN. Nucleic acid purity was inspected with a NanoDrop spectrophotometer and quantified using a Qubit fluorometer dsDNA BR Assay.
 
-## Methylation array and quality checks
+### Methylation array and quality checks
 
 DNA samples from ~350 BXD mice were profiled on the Illumina HorvathHumanMethylChip40 array. Samples were in 96-well plate format (Supplementary file 1), and the plates were randomized for major covariates such as age and diet. Details of this array are described in Arneson et al., 2022; Horvath and Haghani, 2021. The array contains probes that target ~36K CpGs that are highly conserved in mammals. Over 33K probes map to homologous regions in the mouse genome. For downstream statistical tests, we further filtered the probes and used only 27,966 probes that have been validated for the mouse genome using calibration data generated from synthetic mouse DNA (Arneson et al., 2022). Data was normalized using the SeSame method (Zhou et al., 2018). Unsupervised HC was performed to identify outliers and failed arrays, and those were excluded. We also performed strain verification as an additional quality check. While the majority of the probes were free of DNA sequence variants, we found 45 probes that overlapped variants in the BXD family. We leveraged these as proxies for genotypes and performed a principal component analysis (PCA). The top genotype principal components (genoPC1 and genoPC2; Supplementary file 1) segregated the samples by strain identity, and samples that did not cluster close to the reported strains were removed. After excluding outliers, failed arrays, and samples that failed strain verification, the final liver DNAm data consisted of 339 samples. The beta-values for these ~28K probes in the 339 samples show the expected bimodal distribution (Figure 2—figure supplement 2a), but for these highly conserved CpGs, we note a much higher representation of hypermethylated CpGs instead of the slightly hypomethylated state of the methylome when a wider spectrum of CpGs is assayed (Sziráki et al., 2018).
 
-## BXD-unbiased mouse clock estimation
+### BXD-unbiased mouse clock estimation
 
 Three different mouse clocks are reported here, and all three are based on penalized regression modeling using glmnet (Friedman et al., 2010). Training was done in a larger mouse dataset that excluded the BXDs (Lu et al., 2021; Li et al., 2021; Haghani et al., 2022). The clocks are therefore unbiased to the characteristics of the BXDs. For pan-tissue clocks, all mouse samples were used for training. For the liver-specific clocks, the training was limited to data from liver samples.
 
-The general DNAmAge clock did not preselect for any CpGs, and the full set of CpGs that map to Mus musculus was used. First, a log-linear transformation was applied to the chronological age using the function:f(Age)= {Age1.2+0.06+log⁡(1.2+0.06)−1.21.2+0.06,Age>1.2log⁡(Age+0.06), Age≤1.2
+The general DNAmAge clock did not preselect for any CpGs, and the full set of CpGs that map to Mus musculus was used. First, a log-linear transformation was applied to the chronological age using the function:
 
-This is similar to the age transformation described in the original Horvath pan-tissue human clock, but with offset at 0.06 and adult mouse age at 1.2 (Horvath, 2013). Following this transformation, an elastic net regression was implemented to regress the transformed chronological age on the CpG beta-values in the training data. The alpha was set at 0.5, and the optimal lamda parameter was determined by 10-fold cross-validation (function cv.glmnet). This selected subsets of clock CpGs and coefficients. DNAmAge was then calculated as:DNAmAge= f−1(b0+b1CpG1+b2CpG2+…+biCpGib0+b1+b2+…+bi)
+$$
+f(Age)= {\frac{Age}{1.2+0.06}+log⁡(1.2+0.06)−\frac{1.2}{1.2+0.06},Age>1.2log⁡(Age+0.06), Age\leq1.2
+$$
+
+This is similar to the age transformation described in the original Horvath pan-tissue human clock, but with offset at 0.06 and adult mouse age at 1.2 (Horvath, 2013). Following this transformation, an elastic net regression was implemented to regress the transformed chronological age on the CpG beta-values in the training data. The alpha was set at 0.5, and the optimal lamda parameter was determined by 10-fold cross-validation (function cv.glmnet). This selected subsets of clock CpGs and coefficients. DNAmAge was then calculated as:
+
+$$
+DNAmAge= f^{−1}(\frac{b_{0}+b_{1}CpG_{1}+b_{2}CpG_{2}+…+b_{i}CpG_{i}}{b_{0}+b_{1}+b_{2}+…+b_{i}})
+$$
 
 where b0 is the intercept, b1 to bi are the coefficients, CpG1 to CpGi denote the beta-values for the respective clock CpGs, and f–1() denotes the inverse function of f().
 
@@ -184,25 +609,25 @@ A similar method was used to build the developmental and interventional clocks, 
 
 Training for the interventional clock started with 537 CpGs that relate to gold-standard anti-aging interventions (caloric restriction, growth hormone receptor knockout) (Haghani et al., 2022; Coschigano et al., 2003). These ‘interventional CpGs’ were identified from an independent mouse liver caloric restriction (n = 95) and one growth hormone receptor knockout (n = 71) data that were not included in the clock estimation (Haghani et al., 2022). Top CpGs associated with these interventions were identified, and the 537 CpGs are the sites that are consistently associated with these anti-aging interventions. Of the 537, 121 CpGs increased in methylation and 416 decreased in methylation with application of the pro-longevity interventions. Given the small number of CpGs that went into training for the int.DNAmAge, we expected this clock to be less correlated with chronological age, and possibly more responsive to variables such as diet.
 
-## Entropy calculation
+### Entropy calculation
 
 Methylome-wide entropy was calculated from the 27,966 probes. The beta-values were discretized into 20 bins, and the Shannon entropy for each sample was estimated using the R package, ‘entropy’ (v1.2.1) with method = ‘ML’: maximum likelihood (Hausser and Strimmer, 2009). The optimal number of bins was determined using the Freedman–Diaconis rule (breaks = ‘FD’ for the hist() function in R). We also estimated the methylome-wide entropy after discretizing into 100 and 2000 bins (values provided in Supplementary file 1), and the results we report are consistent and robust to the number of bins. For the age-gain, age-loss, and age-ns CpGs, entropy for each set was estimated, also following discretization into 20 bins.
 
-## Statistics
+### Statistics
 
 Statistical analyses were done using R or the JMP Pro software (version 15). Associations between the epigenetic predictors and continuous variables (body weight, strain lifespan, fasted serum glucose, and total cholesterol) were based on Pearson correlations, and t-test was used to evaluate the effect of categorical predictors (sex, diet). Multivariable regression models were also used to control for covariates (R regression equations provided with relevant tables and supplementary files). All these traits are directly accessible from GeneNetwork 2 (GN2; more information on how to retrieve these data from GN2 is provided in Supplementary file 13; Williams, 2022; Mulligan et al., 2017). Longevity data was obtained from a parallel cohort of BXD mice housed in the same UTHSC colony, and members of this ‘longevity cohort’ were allowed to age until natural death (more detail on the longevity cohort can be found in Roy et al., 2021). Males were excluded and strain-by-diet lifespan summary statistics were derived. Only strain-by-diet groups with five or more observations for lifespan were included in the correlational analyses with the epigenetic predictors.
 
-## Multivariable EWAS
+### Multivariable EWAS
 
 Site-by-site differential methylation analysis (EWAS) was performed on the 27,966 CpGs using a multivariable regression model. As such genome-wide explorations are vulnerable to unmeasured confounders, we included the top PC derived from a PCA of the 27,966 probes (McClay et al., 2014). The top 10 PCs cumulatively accounted for ~62% of the variance (Figure 2—figure supplement 2b). A plot of PC1 (19% of variance) and PC2 (14% of variance) showed that PC1 captured some noise due to batch (Figure 2—figure supplement 2b). The remaining top PCs (PC2 onwards) were strongly associated with biological variables, particular age, and also weight and diet (top 10 PCs provided in Supplementary file 1). For this reason, we included PC1 as a correction factor in the EWAS. The regression model we used was lm(CpGi ~ age + median lifespan + diet + BWF + PC1), where CpGi is the ith CpG from 1 to 27,966. As lifespan was from female mice, this EWAS excluded the few male samples.
 
-## CpG annotation and enrichment
+### CpG annotation and enrichment
 
 Functional annotation and enrichment analyses for the DMCs were done using the genomic region enrichment R package, rGREAT (version 3.0.0; McLean et al., 2010) with the array content (i.e., the 27,966 CpGs) as background. Enrichment p-values are based on hypergeometric tests, and categories with Benjamini–Hochberg adjusted p-values≤0.05 are reported. Annotations were for the GRCm38/mm10 reference genome.
 
 For chromatin state annotation, we used bedtools to annotate the 27,966 CpGs coordinates using chromatin annotation.bed files for neonatal (P0) mouse liver tissue created by Gorkin et al., 2020; Quinlan and Hall, 2010. This provides the 15-state model using ChromHMM (Ernst and Kellis, 2012), and we downloaded the file for the ‘replicated set’ (here, the regions annotated as NRS are sites that did not produce replicable signal). Enrichment and depletion analyses for genomic annotations and chromatin annotations were based on the hypergeometric test (phyper R function). The R codes are provided with the results data (Supplementary file 9).
 
-## Genetic analyses
+### Genetic analyses
 
 Heritability within diet was estimated as the fraction of variability that was explained by background genotype (Ashbrook et al., 2021; Ashbrook et al., 2018; Belknap, 1998). For this, we applied an ANOVA: aov(EAA ~ strain), and heritability was computed as h2 = SSqstrain/(SSqstrain + SSqresidual), where SSqstrain is the strain sum of squares, and SSqresidual is the residual sum of squares.
 
@@ -212,18 +637,18 @@ For marker-specific linkage, we selected SNPs located at the peak QTL regions (D
 
 To test the effect of genotype on body weight change, body weight data measured at approximately 4 (baseline), 6, 12, 18, and 24 months were downloaded from GN2 (Supplementary file 13). Detailed description of these weight data is given in Roy et al., 2021. We then applied a mixed-effects regression model using the lme4 R package (Bates et al., 2021): lmer(weight ~ age + diet + genotype + (1|ID)), where ID is the identifier for individual mouse.
 
-## Bioinformatic tools for candidate genes selection
+### Bioinformatic tools for candidate genes selection
 
 Sequence variation between B6 and D2 in the QTL intervals (Chr11:90–99 Mb and Chr19:35–48 Mb) was retrieved from the Wellcome Sanger Institute Mouse Genomes Project database (release 1505 for GRCm38/mm10) (Wellcome Sanger Institute Mouse Genome Project, 2022; Keane et al., 2011; Yalcin et al., 2011). Positional candidates were required to contain at least one coding variant (missense and/or nonsense variants) or have noncoding variants with evidence of cis-regulation in liver tissue of the BXDs. cis-eQTLs for the candidate genes were obtained from the liver RNA-seq data described in Williams et al., 2022. An interface to search and analyze this transcriptome data is available from GN2 and is catalogued under Group: BXD NIA Longevity Study; Type: Liver mRNA; and Dataset: UTHSC BXD Liver RNA-seq (Oct 19) TMP Log2.
 
 For human GWAS annotations, we navigated to the corresponding syntenic regions on the human genome by using the coordinate conversion tool in the UCSC Genome Browser. The Chr11 90–95 Mb interval on the mouse reference genome (GRCm38/mm10) corresponds to human Chr17:50.14–55.75 Mb (GRCh38/hg38) (40.7% of bases; 100% span). The Chr11 95–99 Mb interval in the mouse corresponds to human Chr17:47.49–50.14 Mb (29.3% of bases, 57.9% span) and Chr17:38.19–40.39 Mb (20.7% of bases, 44.1% span). Likewise, for the Chr19 QTL, the mm10 35–40 Mb corresponds to hg38 Chr10:89.80–95.06 Mb (32.2% of bases, 89.2% span), 40–45 Mb corresponds to hg38 Chr10:95.23–100.98 Mb (46.6% of bases, 95.6% span), and 45–48 Mb corresponds to hg38 Chr10:100.98–104.41 Mb (46.5% of bases, 100% span). We then downloaded the GWAS data for these regions from the NHGRI-EBI GWAS catalog (Buniello et al., 2019) and retained the GWAS hits that were related to aging.
 
-## Transcriptome and proteome analyses
+### Transcriptome and proteome analyses
 
 The liver RNA-seq data mentioned above was also used for the transcriptome-wide correlational analysis for EAA in the 153 cases that had both DNAm and RNA-seq data. We considered the top 2000 highest mRNA correlates (|r| = 0.24, p=0.003 for the pan-tissue EAA; |r| = 0.3, p=0.0002 for the liver int.EAA), and the list of transcripts was collapsed to a nonredundant list of gene symbols, which was uploaded to the DAVID Bioinformatics Database (version 2021 update) for GO enrichment analysis (Huang et al., 2009a; Huang et al., 2009b). Proteome correlational analysis was carried out using the data: Group: BXD NIA Longevity Study; Type: Liver Proteome; and Dataset: EPFL/ETHZ BXD Liver Proteome CD-HFD (Nov19). Detailed description of this data is given in Williams et al., 2022. 164 BXD cases had both DNAm and liver proteomics, and similar to the RNA-seq, we selected the top 2000 correlates (|r| = 0.24, p=0.002 for both the pan-tissue EAA and liver int.EAA) for enrichment analysis.
 
 59 of the BXD cases also have proteome data from adipose tissue (Group: BXD NIA Longevity Study; Type: Adipose Proteome; and Dataset: Riken-Wu BXD Liver Proteome CD-HFD (Sep20)). While small in sample number, we used this data to test whether we could recapitulate the same functional enrichment profiles in a different tissue. Details of sample preparation and processing steps for the adipose proteome are provided in the dataset’s ‘Info’ page on GN2. In brief, protein was extracted from the adipose samples by first lysis in a buffer with protease inhibitor, followed by homogenization with a glass dounce and sonication. The protein fraction was isolated from the homogenate by centrifugation and processed for assay on a liquid chromatography tandem mass spectrometry (LC-M/MS) using a modified Phase Transfer Surfactant Method as described in Masuda et al., 2008 and Mostafa et al., 2020. Samples were measured using a Q Exactive Plus Orbitrap LC-MS/MS System (Thermo Fisher). For each sample, 600 ng was injected and the samples were measured with data-independent acquisition (DIA). A portion of the peptides from the samples was pooled and fractionated using a Pierce High pH Reversed-Phase (HPRP) Peptide Fractionation Kit (Thermo Fisher Scientific) to generate a spectral library. For the HPRP fractions, 450 ng was injected and the samples were measured with data-dependent acquisition (DDA). For protein identification, the raw measurement files were searched against a mouse database using the (uniprot-reviewed_Mus_musculus_10090_.fasta) with Proteome Discoverer v2.4 software (Thermo Fisher Scientific). Filtered output was used to generate a sample-specific spectral library using the Spectronaut software (Biognosys, Switzerland). Raw files from DIA measurements were used for quantitative data extraction with the generated spectral library, as previously described (Mostafa et al., 2020). The false discovery rate was estimated with the mProphet approach and set to 0.01 at both peptide precursor level and protein level (Reiter et al., 2011; Rosenberger et al., 2017). Due to the small sample size, for this dataset, we considered the top 1000 protein correlates of EAA (|r| = 0.25, p=0.06 for the pan-tissue EAA; |r| = 0.31, p=0.02 for the liver int.EAA).
 
-## Data availability
+### Data availability
 
 The normalized microarray data and raw files are available from the NCBI Gene Expression Omnibus (accession ID GSE199979). The HorvathMammalMethylChip40 array manifest files and genome annotations of CpGs can be found on GitHub at https://github.com/shorvath/MammalianMethylationConsortium (Horvath and Haghani, 2021). Individual-level BXD data, including the processed microarray data, are available on https://www.genenetwork.org (Williams, 2022) in FAIR+-compliant format; data identifiers and way to retrieve data are described in Supplementary file 13.

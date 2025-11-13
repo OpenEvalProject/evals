@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.39694.001 We introduce a filament-based simulation model for coarse-grained, effective motor-mediated interaction between microtubule pairs to study the time-scales that compose cytoplasmic streaming. We characterise microtubule dynamics in two-dimensional systems by chronologically arranging five distinct processes of varying duration that make up streaming, from microtubule pairs to collective dynamics. The structures found were polarity sorted due to the propulsion of antialigned microtubules. This also gave rise to the formation of large polar-aligned domains, and streaming at the domain boundaries. Correlation functions, mean squared displacements, and velocity distributions reveal a cascade of processes ultimately leading to microtubule streaming and advection, spanning multiple microtubule lengths. The characteristic times for the processes extend over three orders of magnitude from fast single-microtubule processes to slow collective processes. Our approach can be used to directly test the importance of molecular components, such as motors and crosslinking proteins between microtubules, on the collective dynamics at cellular scale.
+We introduce a filament-based simulation model for coarse-grained, effective motor-mediated interaction between microtubule pairs to study the time-scales that compose cytoplasmic streaming. We characterise microtubule dynamics in two-dimensional systems by chronologically arranging five distinct processes of varying duration that make up streaming, from microtubule pairs to collective dynamics. The structures found were polarity sorted due to the propulsion of antialigned microtubules. This also gave rise to the formation of large polar-aligned domains, and streaming at the domain boundaries. Correlation functions, mean squared displacements, and velocity distributions reveal a cascade of processes ultimately leading to microtubule streaming and advection, spanning multiple microtubule lengths. The characteristic times for the processes extend over three orders of magnitude from fast single-microtubule processes to slow collective processes. Our approach can be used to directly test the importance of molecular components, such as motors and crosslinking proteins between microtubules, on the collective dynamics at cellular scale.
 
 ## Introduction
 
@@ -26,7 +26,7 @@ The vigorous motion of the intracellular fluid, known as cytoplasmic streaming, 
 
 Motor-mediated MT sliding occurs because molecular motors crosslink adjacent MTs and use ATP (adenosine triphosphate) molecules as fuel to 'walk’ on them unidirectionally in the direction of MT polarity (Vale and Milligan, 2000). This leads to significantly different active dynamics of MT pairs that are polar-aligned and antialigned (Gao et al., 2015; Blackwell et al., 2016; Ravichandran et al., 2017): Motors that crosslink polar-aligned MTs hold the polar-aligned MTs together, generating an effective attraction (Ravichandran et al., 2017). Active motors crosslink and slide antialigned MTs. The motors thus act as force dipoles that break nematic symmetry in MT solutions. In the absence of permanent crosslinkers, which are known to render the active network contractile (Belmonte et al., 2017), this ultimately can cause large-scale flows in the cytoskeleton (Jolly et al., 2010; Lu et al., 2016). Several approaches to analyse the collective motion, such as the displacement correlation function or the analysis of velocity distributions, are inspired by studies on collective motion of self-propelled agents (Duman et al., 2018; Needleman and Dogic, 2017; Zöttl and Stark, 2016; Bechinger et al., 2016; Elgeti et al., 2015).
 
-In vivo, individual MTs are stationary most of the time before suddenly undergoing a burst of long-distance travel with velocities reaching ≈10 μm/s (Jolly et al., 2010). Also, fluorescence microscopy has shown the formation of long extended arms for an initially circular photoconverted area (Jolly et al., 2010). A possible mechanism for such a behaviour is illustrated in Figure 1: In the absence of active motor stresses, MTs in polar-aligned bundles diffuse slowly. When they encounter antialigned MTs, they can be actively and rapidly transported away from a polar-aligned bundle to another polar-aligned bundle where they again exhibit slow diffusive behaviour. These transitions between slow-bundling motion and fast-streaming bursts can give rise to Levy flight-like MT dynamics (Chen et al., 2015).
+In vivo, individual MTs are stationary most of the time before suddenly undergoing a burst of long-distance travel with velocities reaching $≈10$ μm/s (Jolly et al., 2010). Also, fluorescence microscopy has shown the formation of long extended arms for an initially circular photoconverted area (Jolly et al., 2010). A possible mechanism for such a behaviour is illustrated in Figure 1: In the absence of active motor stresses, MTs in polar-aligned bundles diffuse slowly. When they encounter antialigned MTs, they can be actively and rapidly transported away from a polar-aligned bundle to another polar-aligned bundle where they again exhibit slow diffusive behaviour. These transitions between slow-bundling motion and fast-streaming bursts can give rise to Levy flight-like MT dynamics (Chen et al., 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig1-v2.jpg)
 
@@ -42,113 +42,356 @@ We employ a ’bottom-up’ approach, where we study MT streaming induced by MT 
 
 In order to capture cellular-scale dynamics in computer simulations, modelling individual motors along with MTs, although done before in several studies (Mizuno et al., 2007; Hiraiwa and Salbreux, 2016; Ronceray et al., 2016; Head et al., 2014; Blackwell et al., 2016; Gao et al., 2015; Freedman et al., 2017), can prove to be unwieldy due to the wide ranges of length and time scales involved. The sizes of individual kinesin molecules that crosslink and slide MTs are three orders of magnitude smaller than that of the cells within which they bring about large-scale dynamics. Also, there is a large disparity between the residence time of a cross-linking motor (10 seconds) (Toprak et al., 2009), and the characteristic time scale of motor-induced MT streaming or pattern formation in active gels (1 hr) (Ganguly et al., 2012; Jolly et al., 2010; Lu et al., 2016; DeCamp et al., 2015). In order to capture motor-induced cellular-level phenomena, such as organelle distribution, cytoplasmic streaming, and active cytoskeleton-induced lipid bilayer fluctuations, a coarse-grained description of cytoskeletal activity seems therefore appropriate.
 
-## Coarse-grained model
+### Coarse-grained model
 
 Coarse-grained and continuum approaches are successfully applied to study cytoskeletal-motor systems. A well-developed model and simulation package is Cytosim that can be used to simulate flexible filaments together with further building blocks that, for example, act as nucleation sites, bind filaments together, and induce motility or severing (Nedelec and Foethke, 2007). It has been applied to study–among other processes in the cell–meiosis (Burdyniuk et al., 2018), mitosis (Lacroix et al., 2018), and centrosome centering (Letort et al., 2016). A different model that includes MT flexibility, MT polymerization and depolymerization, explicit motors, and hydrodynamics has recently been applied to study mitosis (Nazockdast et al., 2017a; Nazockdast et al., 2017b). Because the MTs are mostly radially oriented, steric interactions between MTs can be neglected and have not been taken into account. However, MT-MT repulsion is important to obtain nematic order at high MT densities, an essential ingredient for the bottom-up model systems containing suspensions of MTs and kinesins (Sanchez et al., 2012). Our model includes MT flexibility, effective-motor potentials, and excluded-volume interactions. Polymerization and depolymerization does not occur in the model system and is not taken into account. Effective-motor models in general aim to reduce the computational effort to efficiently study large systems (Swaminathan et al., 2010; Jia et al., 2008). Including hydrodynamic interactions using a particle-based approach is straightforward (Winkler and Gompper, 2018; Müller et al., 2015; Gompper et al., 2009), but beyond the scope of this paper.
 
-## Microtubules
+### Microtubules
 
-In our two-dimensional model, MTs are modelled as impenetrable, semi-flexible filaments of length L, thickness σ, and aspect ratio L/σ. Each of the N filaments in the system is discretised into a chain of n beads with diameter σ that are connected by harmonic bonds. The configurational potential,(1)Ui=Ubond+Uangle+Uwca.is the sum of passive potentials, that is the spring potential Ubond between adjacent beads, the angle potential Uangle between adjacent bonds, and the volume exclusion UWCA between MTs.
+In our two-dimensional model, MTs are modelled as impenetrable, semi-flexible filaments of length $L$, thickness $\sigma$, and aspect ratio $L/\sigma$. Each of the $N$ filaments in the system is discretised into a chain of $n$ beads with diameter $\sigma$ that are connected by harmonic bonds. The configurational potential,
 
-The bond energy,(2)Ubond=ks2⁢∑bonds(ri,i+1-r0)2,acts between adjacent beads of the same MT. Here, ks is the bond stiffness, r0=σ/2 is the equilibrium bond length, and ri,i+1=|𝐫i,i+1| is the distance between adjacent beads i and i+1, which make up the MT. Uangle is the bending energy, which is calculated using the position of three adjacent beads,(3)Uangle=κr0⁢∑angles(1-cos⁡θi),that make up the angle θi (Isele-Holder et al., 2016). It acts between all groups of three adjacent beads that make up the same MT. The bending modulus κ of the filament determines its persistence length ℓp=κ/kB⁢T.
+$$
+U_{i}=U_{bond}+U_{angle}+U_{wca}.
+$$
 
-MT bead pairs that are not connected by harmonic springs interact with each other via the repulsive Weeks-Chandler-Andersen (WCA) potential (Weeks et al., 1971),(4)Uwca=4⁢ϵ⁢[(ri⁢jσ)12-(ri⁢jσ)6]+ϵ,with interaction cutoff rcut=21/6⁢σ.
+is the sum of passive potentials, that is the spring potential $U_{bond}$ between adjacent beads, the angle potential $U_{angle}$ between adjacent bonds, and the volume exclusion $U_{WCA}$ between MTs.
 
-## Effective molecular motors
+The bond energy,
+
+$$
+U_{bond}=\frac{k_{s}}{2}⁢\sumbonds(r_{i,i+1}-r_{0})^{2},
+$$
+
+acts between adjacent beads of the same MT. Here, $k_{s}$ is the bond stiffness, $r_{0}=\sigma/2$ is the equilibrium bond length, and $r_{i,i+1}=|𝐫_{i,i+1}|$ is the distance between adjacent beads $i$ and $i+1$, which make up the MT. $U_{angle}$ is the bending energy, which is calculated using the position of three adjacent beads,
+
+$$
+U_{angle}=\frac{κ}{r_{0}}⁢\sumangles(1-cos⁡\theta_{i}),
+$$
+
+that make up the angle $\theta_{i}$ (Isele-Holder et al., 2016). It acts between all groups of three adjacent beads that make up the same MT. The bending modulus $κ$ of the filament determines its persistence length $ℓ_{p}=κ/k_{B}⁢T$.
+
+MT bead pairs that are not connected by harmonic springs interact with each other via the repulsive Weeks-Chandler-Andersen (WCA) potential (Weeks et al., 1971),
+
+$$
+U_{wca}=4⁢ϵ⁢[(\frac{r_{i⁢j}}{\sigma})^{12}-(\frac{r_{i⁢j}}{\sigma})^{6}]+ϵ,
+$$
+
+with interaction cutoff $r_{cut}=2^{1/6}⁢\sigma$.
+
+### Effective molecular motors
 
 Various theoretical studies have strived to circumvent short time and length scales involved in cytoskeletal dynamics, such as diffusion and active motion of individual motors (Kruse and Jülicher, 2000; Kruse et al., 2005; Swaminathan et al., 2010; Jia et al., 2008; Aranson and Tsimring, 2005; Aranson and Tsimring, 2006; Salbreux et al., 2009; Córdoba et al., 2015). For example, in the phenomenological flux-force model the motion of MTs in one dimension occurs solely due to the orientation of neighbouring MTs (Kruse et al., 2004; Kruse et al., 2001). Many two-dimensional models, where MTs are modelled as stiff, polar rods of equal length, take motors into account using a Maxwellian model of inelastic interactions between the rods (Aranson and Tsimring, 2005; Aranson and Tsimring, 2006; Jia et al., 2008; Swaminathan et al., 2010). These probabilistic collision rules result in the alignment of rods. Although these models capture the self-organization of MT-motor mixtures into stable patterns of vortices, asters, and smectic bundles, the collision rule approaches do not reproduce the sliding of antialigned MTs described in Figure 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig2-v2.jpg)
 
-**Figure 2.:** The vectors, , 𝐩i, and 𝐩j, represent the unit orientation vectors of MT 𝐦i⁢j, MT i, and the motor vector that crosslinks the beads of adjacent MTs, respectively. The white circles represent the maximum extension of motors between the two MTs.j
+**Figure 2.:** The vectors, $𝐩_{i}$, $𝐩_{j}$, and $𝐦_{i⁢j}$, represent the unit orientation vectors of MT $i$, MT $j$, and the motor vector that crosslinks the beads of adjacent MTs, respectively. The white circles represent the maximum extension of motors between the two MTs.
 
-Sliding of antialigned MTs due to kinesin motors has been identified as key ingredient for cytoplasmic advection in vivo (Jolly et al., 2010; Winding et al., 2016; Lu et al., 2016). Instead of modelling individual motors, in our model MT motion manifests itself as a result of a distribution of motors in an ensemble of orientations between neighbouring MT pairs. Hence, we coarse-grain MT-motor interactions using an effective motor potential that gives a contribution to Umot. A motor bond can form when the crosslinked beads are antialigned, that is the angle that a motor bond vector 𝐦i⁢j makes with the unit orientation vector is acute on both MTs simultaneously, see Figure 2,(5)pi⋅mij>0andpj⋅mij<0.
+Sliding of antialigned MTs due to kinesin motors has been identified as key ingredient for cytoplasmic advection in vivo (Jolly et al., 2010; Winding et al., 2016; Lu et al., 2016). Instead of modelling individual motors, in our model MT motion manifests itself as a result of a distribution of motors in an ensemble of orientations between neighbouring MT pairs. Hence, we coarse-grain MT-motor interactions using an effective motor potential that gives a contribution to $U_{mot}$. A motor bond can form when the crosslinked beads are antialigned, that is the angle that a motor bond vector $𝐦_{i⁢j}$ makes with the unit orientation vector is acute on both MTs simultaneously, see Figure 2,
 
-Here the orientation vector assigned to bead i on an MT is 𝐩i=(𝐫i+1-𝐫i)/|𝐫i+1-𝐫i|, and the extension of a motor that crosslinks MTs i and j is 𝐦i⁢j⁢(si,sj)=𝐫i⁢(si)-𝐫j⁢(sj), with the motor heads bound at the positions si and sj along the contour of the MTs. This is similar to the activity-inducing scenario a dimeric or tetrameric motor (Ravichandran et al., 2017) encounters when it crosslinks a pair of antialigned MTs, that is the motor arms are oriented towards the + direction of either crosslinked MT.
+$$
+p_{i}⋅m_{ij}>0andp_{j}⋅m_{ij}<0.
+$$
 
-Each effective motor is a harmonic spring of equilibrium bond length deq=σ and stiffness km that exists for one simulation time step (Although the force for each motor lasts for a single time step, this duration is not a characteristic time for the motor. Our model describes continuum propulsion forces on MTs imposed by motors. This is supported by Figure 3; Figure 3—figure supplement 1, which shows that the MT parallel velocity is proportional to the fraction of time that motors are active, independent of the duration of each active phase.). The system is inherently out of equilibrium because the motor bonds occur dependent on the relative orientation of neighboring MTs, and exist and exert forces only for short times, mimicking the ratchet model for molecular motors (Jülicher et al., 1997). The potential for a motor with extension mi⁢j=|𝐦i⁢j| is(6)Umot(mij)={km2(mij−deq)2mij≤dt0mij>dt,and the motor binding rate is(7)kon⁢(mi⁢j)=pa⁢exp⁢(-Umot⁢(mi⁢j)kB⁢T).
+Here the orientation vector assigned to bead $i$ on an MT is $𝐩_{i}=(𝐫_{i+1}-𝐫_{i})/|𝐫_{i+1}-𝐫_{i}|$, and the extension of a motor that crosslinks MTs $i$ and $j$ is $𝐦_{i⁢j}⁢(s_{i},s_{j})=𝐫_{i}⁢(s_{i})-𝐫_{j}⁢(s_{j})$, with the motor heads bound at the positions $s_{i}$ and $s_{j}$ along the contour of the MTs. This is similar to the activity-inducing scenario a dimeric or tetrameric motor (Ravichandran et al., 2017) encounters when it crosslinks a pair of antialigned MTs, that is the motor arms are oriented towards the $+$ direction of either crosslinked MT.
 
-Here, pa controls the probability that an antialigned motor binds (Similarly, we can also implement motors between polar-aligned MTs). Motors bind only for extensions mi⁢j<dt=2⁢σ, when kon/pa>exp⁡(-1/2). This also corresponds well to the experimentally measured length of a kinesin motor (Kerssemakers et al., 2006). The motor model described here for two dimensions is analogous to the phenomenological model for one dimension described in Kruse and Jülicher (2000); these one-dimensional calculations show that the relative velocity between two antialigned MTs is a linear function of pa and km. Similarly, a kinesin-5 induced effective torque between MTs has been calculated to study forces in the mitotic spindle (Winters et al., 2018).
+Each effective motor is a harmonic spring of equilibrium bond length $d_{eq}=\sigma$ and stiffness $k_{m}$ that exists for one simulation time step (Although the force for each motor lasts for a single time step, this duration is not a characteristic time for the motor. Our model describes continuum propulsion forces on MTs imposed by motors. This is supported by Figure 3; Figure 3—figure supplement 1, which shows that the MT parallel velocity is proportional to the fraction of time that motors are active, independent of the duration of each active phase.). The system is inherently out of equilibrium because the motor bonds occur dependent on the relative orientation of neighboring MTs, and exist and exert forces only for short times, mimicking the ratchet model for molecular motors (Jülicher et al., 1997). The potential for a motor with extension $m_{i⁢j}=|𝐦_{i⁢j}|$ is
+
+$$
+U_{mot}(m_{ij})={\frac{k_{m}}{2}(m_{ij}−d_{eq})^{2}m_{ij}\leqd_{t}0m_{ij}>d_{t},
+$$
+
+and the motor binding rate is
+
+$$
+k_{on}⁢(m_{i⁢j})=p_{a}⁢exp⁢(-\frac{U_{mot}⁢(m_{i⁢j})}{k_{B}⁢T}).
+$$
+
+Here, $p_{a}$ controls the probability that an antialigned motor binds (Similarly, we can also implement motors between polar-aligned MTs). Motors bind only for extensions $m_{i⁢j}<d_{t}=2⁢\sigma$, when $k_{on}/p_{a}>exp⁡(-1/2)$. This also corresponds well to the experimentally measured length of a kinesin motor (Kerssemakers et al., 2006). The motor model described here for two dimensions is analogous to the phenomenological model for one dimension described in Kruse and Jülicher (2000); these one-dimensional calculations show that the relative velocity between two antialigned MTs is a linear function of $p_{a}$ and $k_{m}$. Similarly, a kinesin-5 induced effective torque between MTs has been calculated to study forces in the mitotic spindle (Winters et al., 2018).
 
 ## Results
 
 We characterise several distinct processes comprising the phenomenology of active MT motion that arise because of the sliding of adjacent, antialigned MT pairs.
 
-## Regimes of MT dynamics
+### Regimes of MT dynamics
 
-Figure 3 provides an overview of the processes that comprise MT streaming. The fundamental sliding mechanism, which is imposed through the effective motor potential, is the process which occurs at the sliding time τN,m⁢i⁢n. The three processes that occur on longer time scales are characterised by the polarity-inversion time τQ/2, the activity time τ*, and the collective-migration time τN,max. The active-rotation time τr characterises the time when an active MT reaches the end of a polar-ordered domain and changes its orientation.
+Figure 3 provides an overview of the processes that comprise MT streaming. The fundamental sliding mechanism, which is imposed through the effective motor potential, is the process which occurs at the sliding time $\tau_{N,m⁢i⁢n}$. The three processes that occur on longer time scales are characterised by the polarity-inversion time $\tau_{Q/2}$, the activity time $\tau^{*}$, and the collective-migration time $\tau_{N,max}$. The active-rotation time $\tau_{r}$ characterises the time when an active MT reaches the end of a polar-ordered domain and changes its orientation.
 
-Figure 3(a) and Video 1 show multiple, small, polar-aligned MT domains with dynamic interfaces of antialigned MTs between them for MT surface fraction ϕ=0.3 and motor activity pa=1. Note that choosing different values for ϕ and pa can have a pronounced effect on the structure of the system (Figure 3—figure supplement 2). The domains are formed by polarity sorting (Wollrab et al., 2018) and are in dynamic equilibrium due to MTs that perpetually enter and leave them, see Figure 3(b) and Video 2. Tracing the individual trajectories shows that MT dynamics consists of a fast streaming mode and a slow diffusion mode, see Figure 3(c) and Video 3. Uncorrelated displacements in time correspond to slow diffusion within a polar-aligned domain of MTs, and correlated displacements correspond to fast, ballistic streaming at interfaces between domains. This leads to a highly dynamic overall MT structure illustrated by Video 4. At steady state, the length of antialigned interfaces and the size of polar-aligned domains remain constant. The polarity-inversion time τQ/2 characterises the duration that MTs stay in polar-aligned bundles or in antialigned streams.
+![Figure 3.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-v2.jpg)
 
-Figure 3(d) shows the MT mean squared displacement(8)MSD(τ)≡⟨|di(t,τ)|2⟩≡⟨|ri(t+τ)−ri(t)|2⟩for MT surface fraction ϕ=0.3 and various motor probabilities (We use m=1 and γ=1 in simulation units. The single MT center-of-mass dynamics is overdamped for times t/τR>2⁢m/γ⁢τR≈10-2, which is shorter than the shortest time scale of interest shown in Figure 3(d).). Here, 𝐫i⁢(t) is the center-of-mass position vector of MT i at time t, and 𝐝i⁢(t,τ) is the displacement vector of the center-of-mass of MT i between t and t+τ. For passive MTs, pa=0.0, the ballistic regime MSD∝τ2 at short times due to inertia is followed by a diffusive regime MSD∝τ where the MT velocity is dissipated by the environment. For all simulations at finite pa, we find a superdiffusive regime 10−1≲τ/τR≲101 with MSD∝τα and α>1 with active ballistic motion. Finally, we find a diffusive regime at long times with an active diffusion coefficient that is much higher than for passive Brownian diffusion. A larger motor activity thus leads to faster filament motion. Filament dynamics is fastest for intermediate MT surface fractions ϕ=0.3 and ϕ=0.4 (Figure 3—figure supplement 3). For smaller densities the required MT-MT contacts are reduced, whereas for large densities (ϕ=0.6) excluded volume interactions lead to a larger effective friction hindering filament motion.
+**Figure 3.:** (a) Simulation snapshot of MTs organised by effective motors. MTs are coloured based on their orientation according to the colour legend on the right. See corresponding Video 1. (b) Trajectories of MTs within a time window of 1.2 $\tau_{R}$ separated based on the antialigned and polar-aligned categories. See corresponding Video 2. (c) Plots of the trajectory of three selected MTs coloured based on the correlation of adjacent steps in their velocity. The entire trajectory is for a time window of $300 \tau_{R}$ is the unit vector of MT displacement. The fast-streaming and slow-diffusion modes correspond with the yellow and red parts of the trajectories respectively. The scale bar corresponds to the length of five MTs. See corresponding Video 3. (d) MSD/lag time for various levels of activity $p_{a}$ and MT density $ϕ=0.3$. The time scale of maximal activity, $\tau^{*}$, calculated from the time of maximal $v_{∥}$ skew is indicated by the squares on the curves. (e) Histogram of parallel velocity for various $\tau$. The curve closest corresponding to the time scale of maximal activity, $\tau^{*}$, is indicated with a box marker. All figures are for $ϕ=0.3$. (a), (b), (c) and (e) are for $p_{a}=1.0$.
 
-Figure 3(e) shows the histogram of the MT velocity that is projected on the MT orientation vector 𝐩⁢(t)=(𝐫nb⁢(t)-𝐫1⁢(t))/|𝐫nb⁢(t)-𝐫1⁢(t)|,(9)v∥⁢(τ)=⟨𝐝i⁢(t,τ)⋅𝐩⁢(t)⟩τfor ϕ=0.3, pa=1.0, and various lag times τ, see Figure 3—figure supplements 1, 4 and 5 for parallel velocities at other MT surface fractions. At short lag times, the MT displacement is strongly correlated with the MT’s initial orientation vector and dominated by thermal noise, giving the largest absolute values for v∥. With increasing lag time, the increasing importance of the active motor force is reflected by the increasing asymmetry of the distributions of parallel velocities that are skewed towards positive velocities. At long lag times, the MTs reorient due to active forces, such that both the width of the velocity distribution and the skew again decrease. We characterise the time delay that corresponds to the maximum skew as collective-migration time τN,max. This time characterises collective motion of neighbouring MTs with similar orientations that travel in the same direction. The parallel velocity distributions also depend on lag time, filament density, and motor probability (Figure 3—figure supplements 6, 7 and 9).
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp1-v2.jpg)
 
-Finally, the active orientational correlation time τr for MTs is denoted by τr. This time characterises the crossover between the active-ballistic and the active-diffusive regime in Figure 3(d). It therefore increases both with increasing size of polar or nematic domains as well as with decreasing rod activity at the interfaces, in agreement with the diffusion of tracer particles in Sanchez et al. (2012) (Figure 3—figure supplement 10).
+**Figure 3—figure supplement 1.:** Parallel velocity $v_{∥}$, extrapolated to $\tau=0$ as function of the antialigned motor probability $p_{a}$ for various MT surface fractions $ϕ$.
 
-## Microtubule sliding
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp2-v2.jpg)
 
-The displacement-correlation function,(10)Cd⁢(r,τ)=⟨∑i,i≠j𝐝i⋅𝐝j⁢δ⁢(r-|𝐫i⁢(t)-𝐫j⁢(t)|)⟩tc0⁢⟨∑i,i≠jδ⁢(r-|𝐫i⁢(t)-𝐫j⁢(t)|)⟩t,quantifies both spatial and temporal correlations of MT motion. Here, 𝐝i=𝐫i⁢(t+τ)-𝐫i⁢(t), and c0=⟨∑i𝐝i2/N⟩τ is used for normalisation. Figure 4(a) shows displacement correlation functions for various lag times. At short times and distances, we find negative displacement correlations due to the effective motor potential, which selectively displaces neighbouring antialigned MTs. These negative correlations decay rapidly in space and do not contribute substantially for r/L=1. At intermediate lag times we find positive displacement correlations with a slower spatial decay, and at long lag times no correlations. In the limit τ→0, Cd is the equal-time spatial velocity correlation function (Wysocki et al., 2014).
+**Figure 3—figure supplement 2.:** Simulation snapshots at steady state for various antialigned motor probabilities $p_{a}$ and MT surface fractions $ϕ$. Data for $0.0<p_{a}\leq1.0$ and $0.3<ϕ<0.5$.The surface fractions of MTs are varied by changing the size of the periodic box, while keeping the number of MTs constant. The scale bars correspond to the length of a single MT. The colours represent the orientation of the polar MTs with respect to the system reference frame according to the colour wheel above.
 
-The neighbour displacement correlation function Nd⁢(τ)=Cd⁢(σ,τ) is defined as the displacement-displacement correlation function at contact Cd⁢(σ,τ) (Doliwa and Heuer, 2000; Wysocki et al., 2014). Figure 4(b) shows neighbour displacement correlation functions for various values of pa and ϕ=0.3. Firstly, for passive systems, Nd is positive for all MT surface fractions but considerably weaker compared to the correlations in active systems. The small positive correlation is due to steric interactions and friction because of to the roughness of MTs (made up of overlapping beads). For active systems, Figure 4(b) illustrates that the temporal dependence of Nd⁢(τ) displays three regimes: for short times, Nd⁢(τ) is negative and MTs slide antiparallel, for intermediate times, Nd⁢(τ) is positive and MTs move collectively, and for long times, Nd⁢(τ) tends to zero and there is no coordinated motion. We focus here on the first regime, whereas the other regimes will be discussed in later sections.
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp3-v2.jpg)
 
-In the short-time regime, τ/τR∼10-1, the effective motor potential propels neighbouring antialigned MTs away from each other and Nd is negative. This is aided by higher pa but hindered by higher ϕ, which opposes active motion sterically (Figure 4—figure supplement 1). The times τN,min at which the minima occur represent maximal MTs propulsion because of effective motor interactions, due to presence of the antialigned neighbours. At this time MTs move a small fraction of their length. In Figure 4(c) the sliding times are collected for different MT surface fractions showing that the sliding is strongly enhanced by activity, where τN,min decreases approximately exponentially with pa and increases with surface fraction.
+**Figure 3—figure supplement 3.:** Translational MT mean squared displacements for various antialigned motor probilities $p_{a}$ and MT surface fractions $ϕ$.The symbols on the plots indicate the time scale at which the parallel velocity is maximally skewed due to active forces.
 
-## Polarity inversion of local MT environment
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp4-v2.jpg)
 
-In order to characterise an MT’s neighbourhood, we define a pairwise motor partition function (Gao et al., 2015; Ravichandran et al., 2017),(11)qi⁢j=ρ2⁢∑i=1nb∑j=1nbe-Umot⁢(mi⁢j)/(kB⁢T),where ρ=nb/L is the linear density of binding sites on a single MT, and mi⁢j is the extension of the motor bound at positions si and sj on MTs i and j, respectively (Ravichandran et al., 2017). Local polar order thus weighs pairwise interactions of MTs on the basis of motor binding site availability. It is a function of relative orientation and distance between the beads that are used to model the MTs. Because of the Boltzmann weight, qi⁢j is significant only for pairs of MTs in close proximity. When two MTs are perfectly overlapping each other, qi⁢j=1. When two MTs are sufficiently far away, , qi⁢j=0 because the MTs are outside the motor cut-off range. Since the motor energy Umot(mij) increases quadratically with increasing motor extension, the partition function qi⁢j decays rapidly for increasing distance between the binding sites on the MTs.
+**Figure 3—figure supplement 4.:** Parallel velocity $v_{∥}$ as a function of the time window $\tau$ for various antialigned motor probabilities $p_{a}$ and MT surface fractions $ϕ$.
 
-The polarity of an MTs environment is quantified by the local polar order parameter ψ⁢(i). MTs within motor cut-off range are defined to be antialigned if (pi⋅pj)<0 and polar-aligned if (𝐩i⋅𝐩j)≥0. By taking the sum of all interacting MTs j≠i with MT i (Gao et al., 2015; Ravichandran et al., 2017), we ensure that the local polar order parameter(12)ψ⁢(i)=∑j≠i(𝐩i⋅𝐩j)⁢qi⁢j∑j≠iqi⁢jdepends on the polarity of the neighbourhood of MT i. Here qi⁢j is given by Equation 11. The environment of the MT can now be classified into polar (subscript-P, 0.5<ψ(τ)<1), antipolar (subscript-A, −1<ψ(τ)<−0.5), and mixed (subscript-M, −0.5<ψ(τ)<0.5), see Figure 3—figure supplement 8 and Figure 5—figure supplement 1. When a single MT’s environment changes from predominantly antipolar to polar its active motion is stopped and it only moves diffusively.
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp5-v2.jpg)
 
-By tracking changes in ψi for single MTs, see Video 2, we measure the time that MTs spend in antialigned or polar-aligned environments for various values of pa and ϕ. The change in local polar order of MT i can be written as(13)Δ⁢ψi⁢(τ)=ψi,0-ψi⁢(τ),where ψi,0=ψi(τ=0). Figure 5(a) shows ⟨ψi,A⁢(τ)⟩ and ⟨ψi,P⁢(τ)⟩ for pa=1 and pa=0. In both cases, we find that ⟨ψi,A⁢(τ)⟩ increases with time, indicating antialigned MTs leaving their antialigned environments, and that ⟨ψi,P⁢(τ)⟩ decreases with time, indicating polar-aligned MTs leaving their polar-aligned environments. At long times, ψi,A and ψi,P converge to the long-time mean ⟨ψi,∞⟩=0 for passive systems, and to ⟨ψi,∞⁢(τ)⟩>0 for active systems. The time scale for relaxing ⟨ψi⟩ to the equilibrium value is, as expected, shorter for the active than for the passive system.
+**Figure 3—figure supplement 5.:** Maximum parallel MT velocities $v_{∥,A}⁢(\tau^{*})$ as function of the antialigned motor probability $p_{a}$ for various MT surface fractions $ϕ$.
 
-In order to quantify the change in ⟨ψi⟩, we construct the deviation of local polar order,(14)Q⁢(τ)=1-⟨Δ⁢ψi⁢(τ)⟩⟨ψi,0⟩-⟨ψi,∞⟩.
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp6-v2.jpg)
 
-Q⁢(τ) for the antialigned MTs is shown in Figure 5(b); the lag time for that Q⁢(τ) reaches half its initial value is τQ/2,A. While MTs that stay within a polar-ordered domain determine the offset for ϕi,A at long times, only MTs entering polar aligned domains determine τQ/2,A. Figure 5(c) shows that τQ/2,A decreases almost exponentially with pa and increases with ϕ. In stationary state, the time scales for the inversion of local polar order of initially antialigned and initially polar-aligned MTs are equal, τQ/2,A=τQ/2,P, compare Figure 5(b) and Figure 5—figure supplement 2. The dependence of ⟨ψi,∞⟩ ϕ and pa is shown in Figure 5—figure supplement 3.
+**Figure 3—figure supplement 6.:** Histogram of $v_{∥}$ for various MT surface fractions $ϕ$ and five time windows $\tau$.The darkness of the curve represents the time window used to measure the parallel velocity. The darkest-coloured curve represents the parallel velocity obtained for the shortest time window, and the lightest-coloured curve is obtained from the longest time window. The box symbols mark the displacement distributions that are closest to the distribution which is most skewed.
 
-## Maximal activity
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp7-v2.jpg)
 
-The mean squared displacements of MTs are ballistic, diffusive, or superdiffusive depending on the lag time, see Figure 3(d). This is reflected in the distributions of the parallel velocity v∥, see Equation 9 and Figure 3(e). The v∥ distributions become increasingly asymmetric with increasing lag time when active propulsion dominates over Brownian motion for antialigned MTs–and again less asymmetric when the lag time is further increased and orientational memory is lost. Because of the high number of parallel MTs in our simulations the position of the main peak is at ⟨v∥⟩=0 as expected for passive MTs. A skew of the distribution can then be understood as a superposition of a high peak of non-propelled polar-aligned MTs and a small peak that is shifted to positive values of v∥ for antialigned MTs, see also Videos 2 and 4.
+**Figure 3—figure supplement 7.:** Histogram of $v_{∥}⁢(\tau^{*})$ for various $p_{a}$ and $ϕ$.The duration of the time window corresponds to the maximal skew, see Figure 6. This indicates the structure of the velocity distribution when the skew is maximal. The ordinate axis is log scaled to show the deviation of the distribution from a Gaussian, which would appear as a symmetric inverted parabola.
 
-In Figure 6, we plot skews of v∥ distributions (Figure 3(e)) as function of lag time for various pa values for ϕ=0.3. Both maximal skew and maximal lag time for that we detect finite skews increase with increasing ϕ, Figure 6—figure supplement 1. The lag time at which the skew of the v∥ distribution is maximal is defined as the activity time τ*, where the ratio of the displacements due to active forces to the thermal displacements is largest. This activity time τ* falls into the regime where the MSD is most superdiffusive, see Figure 3(d). As shown in Figure 6(b), τ* exponentially decreases with increasing pa and increases with ϕ. Increasing motor concentration, and thus a higher amount of active forces in the system, is akin to exponentially shifting the activity time to shorter values.
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp8-v2.jpg)
 
-The proportion of aligned (passive) and antialigned (propelled) MTs depends strongly on the area fraction, where the number of antialigned MTs decreases with surface fraction ϕ. This corresponds to larger domain sizes and less interfaces with increasing ϕ, see Figure 3—figure supplement 2 and Figure 6—figure supplement 2. Further, we notice that for all surface fractions ϕ increasing pa widens the v∥⁢(τ) distributions, see Figure 3—figure supplement 6. The widening of the distribution becomes less pronounced with increasing ϕ. The shifting of the negative part of the v∥ distribution (v∥(τ∗)<0) to more negative values with increasing pa is because τ* decreases simultaneously.
+**Figure 3—figure supplement 8.:** Probability densities of the MT local polar order parameter $ψ_{i}$. Data for various antialigned motor probabilities $p_{a}$ and MT surface fractions $ϕ$. The arrows indicate the changes of the probability densities for increasing activity. A, M and P indicate $ψ_{i}\leq-0.5$ (green), $-0.5<ψ_{i}<0.5$ (white), $ψ_{i}\geq0.5$ (blue), respectively. $N_{A}$, $N_{m}$ and $N_{P}$ are the number of MTs in antialigned, perpendicular and polar-aligned environments respectively. Note that the scale of the ordinate is different for each MT surface fraction.
 
-## Collective migration
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp9-v2.jpg)
 
-The observables discussed so far characterise the motion of individual MTs. They only take collective effects into consideration indirectly, for example via the asymmetry of the v∥ distribution for polar-aligned MTs. For a direct discussion of the time scale of collective effects, we return to Figure 4(b). For times around τ/τR=10, in the intermediate time regime, we observe a positive neighbour displacement correlation. This behaviour is altogether absent at low surface fractions, ϕ=0.2, but for larger ϕ the positive correlations increase with increasing ϕ. This suggests that neighbouring MTs in a particular stream (likely polar-aligned) travel in the same direction. These polar-aligned MTs will collectively migrate in the same direction because they are in a similarly antialigned environment, that is at the same interface with another domain. Correlations in their motion can only manifest at longer lag times, since at short lag times the correlation contribution will be dominated by fast-moving antialigned MTs. We denote the lag time for the maximum of Nd⁢(τ), when collective migration occurs, τN,max.
+**Figure 3—figure supplement 9.:** Data for $v_{∥}$ for a time window of duration $\tau^{*}$ and $ϕ=0.3$, decomposed based on MT environments (A, M, P) determined by their local polar order parameter, $ψ_{i}$, see Figure 8. (a) and (b) show probability density histograms of $v_{∥}⁢(\tau^{*})$ for $p_{a}=0.2$ and $1.0$, respectively. (c) and (d) show frequencies of occurrence of $v_{∥}⁢(\tau^{*})$ for $p_{a}=0.2$ and $1.0$, respectively. The sum of the decomposed curves in (c) and (d) gives the solid curves.
 
-In order to explicitly show that positive neighbour displacement correlations observed in the intermediate time regime are due to collective migration of similarly oriented MTs, we can predict the results of photobleaching or photoactivation experiments (Gao et al., 2015; Mitchison, 1989; Hush et al., 1994). Experimentally, in a photobleaching experiment a high-intensity laser beam can be used to inactivate fluorescent molecules in a circular region (Axelrod et al., 1976). The time evolution of the distribution of the light-inactivated regions gives clues about the underlying mechanisms which mediate this motion. Figure 7(a) illustrates that we expect little or no MT sliding to occur in a polar-aligned region, and the photobleached area maintains its shape. In Figure 7(b), however, the photobleached area is antialigned and we expect bundles of antialigned domains to slide away, causing the photobleached spot to separate into two elongated regions. In our simulations, we perform a similar measurement, where instead of inactivating regions to inhibit fluorescence, we selectively label MT beads within a certain region. We then track their locations for t=τN,max and investigate their displacements. MTs move in response to the effective motor potential and form streams. In Figure 7(c), we visualise a four-MT length radius circular area for ϕ=0.4 and pa=1.0. The structures become more diffuse for ϕ=0.3 and more compact for ϕ=0.5 (Figure 7—figure supplement 1).
+![Figure 3—figure supplement 10.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig3-figsupp10-v2.jpg)
 
-## Active rotation
+**Figure 3—figure supplement 10.:** (a) Normalized MSD curves from our simulations for several motor probabilities $p_{a}$. (b) Normalized MSD curves as a function of lag time for experiments eLifeMediumGrey (Sanchez et al., 2012) for selected ATP concentrations. Here $L$ is the filament length, $\tau_{R}^{0}$ the single filament rotation time and $\tau$ the lag time.
 
-The longest relevant time scale for the MT dynamics is that of active rotational motion characterised by the orientational correlation function(15)⟨𝐩⁢(t)⋅𝐩⁢(t+τ)⟩=e-τ/τr.
+Figure 3(a) and Video 1 show multiple, small, polar-aligned MT domains with dynamic interfaces of antialigned MTs between them for MT surface fraction $ϕ=0.3$ and motor activity $p_{a}=1$. Note that choosing different values for $ϕ$ and $p_{a}$ can have a pronounced effect on the structure of the system (Figure 3—figure supplement 2). The domains are formed by polarity sorting (Wollrab et al., 2018) and are in dynamic equilibrium due to MTs that perpetually enter and leave them, see Figure 3(b) and Video 2. Tracing the individual trajectories shows that MT dynamics consists of a fast streaming mode and a slow diffusion mode, see Figure 3(c) and Video 3. Uncorrelated displacements in time correspond to slow diffusion within a polar-aligned domain of MTs, and correlated displacements correspond to fast, ballistic streaming at interfaces between domains. This leads to a highly dynamic overall MT structure illustrated by Video 4. At steady state, the length of antialigned interfaces and the size of polar-aligned domains remain constant. The polarity-inversion time $\tau_{Q/2}$ characterises the duration that MTs stay in polar-aligned bundles or in antialigned streams.
 
-By fitting Equation 15 to the simulation data (Figure 8(a)), we obtain the transition time to long-time active diffusive behaviour, τr. Figure 8(b) shows τr for various pa. For passive systems (pa=0), τr increases with MT surface density ϕ. For active systems, τr decreases with increasing pa and with decreasing ϕ. In the nematic state, MTs are no longer able to rotate freely as in the isotropic case. The decrease of τr with increasing pa is more pronounced at higher MT surface fractions. Smaller values of τr correspond to smaller domain sizes. In larger domains, the streams appear at interfaces between polar-ordered domains and antialigned MTs. The streams extend in the same direction over larger lengths, for longer times, and MTs do not rotate away from their initial orientation as quickly. Also, MTs that are trapped in aligned MT bundles are less likely to exit their environments and their rotational diffusion is smaller for higher ϕ and lower pa. Only for τ>τr the MTs show again diffusive motion with an active diffusion coefficient DA∝v||2⁢τr, see Figure 3(d).
+![Video 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-video1.mp4.jpg)
+
+**Video 1.:** Steady-state dynamics of the MT-effective motor system shown in Figure 3(a) for 100 $\tau_{R}$.MTs are coloured based on their orientation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/39694/elife-39694-video2.mp4.jpg)
+
+**Video 2.:** Streaming motion of antialigned and diffusive motion of polar-aligned MTs for 100 $\tau_{R}$, corresponding to Figure 3(b). The scale bar corresponds to the length of 10 MTs.Trajectories of MTs are shown within time windows of $1.2⁢\tau_{R}$.
+
+![Video 3.](https://cdn.elifesciences.org/articles/39694/elife-39694-video3.mp4.jpg)
+
+**Video 3.:** Center-of-mass trajectories for selected MTs for $300⁢\tau_{R}$, corresponding to Figure 3(c).Fast streaming and slow diffusion is indicated by yellow and red, respectively. The scale bar corresponds to the length of five MTs.
+
+![Video 4.](https://cdn.elifesciences.org/articles/39694/elife-39694-video4.mp4.jpg)
+
+**Video 4.:** Inhomogeneous dynamics over a period of 100 $\tau_{R}$.Fast MTs are coloured yellow, and slow MTs are coloured blue.
+
+Figure 3(d) shows the MT mean squared displacement
+
+$$
+MSD(\tau)≡⟨|d_{i}(t,\tau)|^{2}⟩≡⟨|r_{i}(t+\tau)−r_{i}(t)|^{2}⟩
+$$
+
+for MT surface fraction $ϕ=0.3$ and various motor probabilities (We use $m=1$ and $\gamma=1$ in simulation units. The single MT center-of-mass dynamics is overdamped for times $t/\tau_{R}>2⁢m/\gamma⁢\tau_{R}≈10^{-2}$, which is shorter than the shortest time scale of interest shown in Figure 3(d).). Here, $𝐫_{i}⁢(t)$ is the center-of-mass position vector of MT $i$ at time $t$, and $𝐝_{i}⁢(t,\tau)$ is the displacement vector of the center-of-mass of MT $i$ between $t$ and $t+\tau$. For passive MTs, $p_{a}=0.0$, the ballistic regime $MSD∝\tau^{2}$ at short times due to inertia is followed by a diffusive regime $MSD∝\tau$ where the MT velocity is dissipated by the environment. For all simulations at finite $p_{a}$, we find a superdiffusive regime $10^{−1}≲\tau/\tau_{R}≲10^{1}$ with $MSD∝\tau^{\alpha}$ and $\alpha>1$ with active ballistic motion. Finally, we find a diffusive regime at long times with an active diffusion coefficient that is much higher than for passive Brownian diffusion. A larger motor activity thus leads to faster filament motion. Filament dynamics is fastest for intermediate MT surface fractions $ϕ=0.3$ and $ϕ=0.4$ (Figure 3—figure supplement 3). For smaller densities the required MT-MT contacts are reduced, whereas for large densities ($ϕ=0.6$) excluded volume interactions lead to a larger effective friction hindering filament motion.
+
+Figure 3(e) shows the histogram of the MT velocity that is projected on the MT orientation vector $𝐩⁢(t)=(𝐫_{n_{b}}⁢(t)-𝐫_{1}⁢(t))/|𝐫_{n_{b}}⁢(t)-𝐫_{1}⁢(t)|$,
+
+$$
+v_{∥}⁢(\tau)=\frac{⟨𝐝_{i}⁢(t,\tau)⋅𝐩⁢(t)⟩}{\tau}
+$$
+
+for $ϕ=0.3$, $p_{a}=1.0$, and various lag times $\tau$, see Figure 3—figure supplements 1, 4 and 5 for parallel velocities at other MT surface fractions. At short lag times, the MT displacement is strongly correlated with the MT’s initial orientation vector and dominated by thermal noise, giving the largest absolute values for $v_{∥}$. With increasing lag time, the increasing importance of the active motor force is reflected by the increasing asymmetry of the distributions of parallel velocities that are skewed towards positive velocities. At long lag times, the MTs reorient due to active forces, such that both the width of the velocity distribution and the skew again decrease. We characterise the time delay that corresponds to the maximum skew as collective-migration time $\tau_{N,max}$. This time characterises collective motion of neighbouring MTs with similar orientations that travel in the same direction. The parallel velocity distributions also depend on lag time, filament density, and motor probability (Figure 3—figure supplements 6, 7 and 9).
+
+Finally, the active orientational correlation time $\tau_{r}$ for MTs is denoted by $\tau_{r}$. This time characterises the crossover between the active-ballistic and the active-diffusive regime in Figure 3(d). It therefore increases both with increasing size of polar or nematic domains as well as with decreasing rod activity at the interfaces, in agreement with the diffusion of tracer particles in Sanchez et al. (2012) (Figure 3—figure supplement 10).
+
+### Microtubule sliding
+
+The displacement-correlation function,
+
+$$
+C_{d}⁢(r,\tau)=\frac{⟨\sum_{i,i\neqj}𝐝_{i}⋅𝐝_{j}⁢\delta⁢(r-|𝐫_{i}⁢(t)-𝐫_{j}⁢(t)|)⟩_{t}}{c_{0}⁢⟨\sum_{i,i\neqj}\delta⁢(r-|𝐫_{i}⁢(t)-𝐫_{j}⁢(t)|)⟩_{t}},
+$$
+
+quantifies both spatial and temporal correlations of MT motion. Here, $𝐝_{i}=𝐫_{i}⁢(t+\tau)-𝐫_{i}⁢(t)$, and $c_{0}=⟨\sum_{i}𝐝_{i}^{2}/N⟩_{\tau}$ is used for normalisation. Figure 4(a) shows displacement correlation functions for various lag times. At short times and distances, we find negative displacement correlations due to the effective motor potential, which selectively displaces neighbouring antialigned MTs. These negative correlations decay rapidly in space and do not contribute substantially for $r/L=1$. At intermediate lag times we find positive displacement correlations with a slower spatial decay, and at long lag times no correlations. In the limit $\tau→0$, $C_{d}$ is the equal-time spatial velocity correlation function (Wysocki et al., 2014).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig4-v2.jpg)
+
+**Figure 4.:** (a) Spatio-temporal correlation function $C_{d}⁢(r,\tau)$ for $ϕ=0.3$ and $p_{a}=1.0$, for some selected lag times. The arrow and the colours of the curves indicate increasing lag time. The lag times are picked from a logarithmic scale. (b) Neighbour correlation function $N_{d}⁢(\tau)=C_{d}⁢(\sigma,\tau)$ for $ϕ=0.3$ and various $p_{a}$ values. (c) The sliding time scale indicated by $\tau_{N,min}$ is shown for various MT surface fractions and $p_{a}$ values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Neighbour displacement correlation function $N_{d}⁢(\tau)$ for various MT surface fractions $ϕ$ and antialigned motor probabilities $p_{a}$.The lag times at which the minimum and maximum of $N_{d}⁢(\tau)$ occur are $\tau_{N,min}$ and $\tau_{N,max}$, respectively.
+
+The neighbour displacement correlation function $N_{d}⁢(\tau)=C_{d}⁢(\sigma,\tau)$ is defined as the displacement-displacement correlation function at contact $C_{d}⁢(\sigma,\tau)$ (Doliwa and Heuer, 2000; Wysocki et al., 2014). Figure 4(b) shows neighbour displacement correlation functions for various values of $p_{a}$ and $ϕ=0.3$. Firstly, for passive systems, $N_{d}$ is positive for all MT surface fractions but considerably weaker compared to the correlations in active systems. The small positive correlation is due to steric interactions and friction because of to the roughness of MTs (made up of overlapping beads). For active systems, Figure 4(b) illustrates that the temporal dependence of $N_{d}⁢(\tau)$ displays three regimes: for short times, $N_{d}⁢(\tau)$ is negative and MTs slide antiparallel, for intermediate times, $N_{d}⁢(\tau)$ is positive and MTs move collectively, and for long times, $N_{d}⁢(\tau)$ tends to zero and there is no coordinated motion. We focus here on the first regime, whereas the other regimes will be discussed in later sections.
+
+In the short-time regime, $\tau/\tau_{R}∼10^{-1}$, the effective motor potential propels neighbouring antialigned MTs away from each other and $N_{d}$ is negative. This is aided by higher $p_{a}$ but hindered by higher $ϕ$, which opposes active motion sterically (Figure 4—figure supplement 1). The times $\tau_{N,min}$ at which the minima occur represent maximal MTs propulsion because of effective motor interactions, due to presence of the antialigned neighbours. At this time MTs move a small fraction of their length. In Figure 4(c) the sliding times are collected for different MT surface fractions showing that the sliding is strongly enhanced by activity, where $\tau_{N,min}$ decreases approximately exponentially with $p_{a}$ and increases with surface fraction.
+
+### Polarity inversion of local MT environment
+
+In order to characterise an MT’s neighbourhood, we define a pairwise motor partition function (Gao et al., 2015; Ravichandran et al., 2017),
+
+$$
+q_{i⁢j}=ρ^{2}⁢\sumi=1n_{b}\sumj=1n_{b}e^{-U_{mot}⁢(m_{i⁢j})/(k_{B}⁢T)},
+$$
+
+where $ρ=n_{b}/L$ is the linear density of binding sites on a single MT, and $m_{i⁢j}$ is the extension of the motor bound at positions $s_{i}$ and $s_{j}$ on MTs $i$ and $j$, respectively (Ravichandran et al., 2017). Local polar order thus weighs pairwise interactions of MTs on the basis of motor binding site availability. It is a function of relative orientation and distance between the beads that are used to model the MTs. Because of the Boltzmann weight, $q_{i⁢j}$ is significant only for pairs of MTs in close proximity. When two MTs are perfectly overlapping each other, $q_{i⁢j}=1$. When two MTs are sufficiently far away, , $q_{i⁢j}=0$ because the MTs are outside the motor cut-off range. Since the motor energy $U_{mot}(m_{ij})$ increases quadratically with increasing motor extension, the partition function $q_{i⁢j}$ decays rapidly for increasing distance between the binding sites on the MTs.
+
+The polarity of an MTs environment is quantified by the local polar order parameter $ψ⁢(i)$. MTs within motor cut-off range are defined to be antialigned if $(p_{i}⋅p_{j})<0$ and polar-aligned if $(𝐩_{i}⋅𝐩_{j})\geq0$. By taking the sum of all interacting MTs $j\neqi$ with MT $i$ (Gao et al., 2015; Ravichandran et al., 2017), we ensure that the local polar order parameter
+
+$$
+ψ⁢(i)=\frac{\sum_{j\neqi}(𝐩_{i}⋅𝐩_{j})⁢q_{i⁢j}}{\sum_{j\neqi}q_{i⁢j}}
+$$
+
+depends on the polarity of the neighbourhood of MT $i$. Here $q_{i⁢j}$ is given by Equation 11. The environment of the MT can now be classified into polar (subscript-$P$, $0.5<ψ(\tau)<1$), antipolar (subscript-$A$, $−1<ψ(\tau)<−0.5$), and mixed (subscript-$M$, $−0.5<ψ(\tau)<0.5$), see Figure 3—figure supplement 8 and Figure 5—figure supplement 1. When a single MT’s environment changes from predominantly antipolar to polar its active motion is stopped and it only moves diffusively.
+
+By tracking changes in $ψ_{i}$ for single MTs, see Video 2, we measure the time that MTs spend in antialigned or polar-aligned environments for various values of $p_{a}$ and $ϕ$. The change in local polar order of MT $i$ can be written as
+
+$$
+Δ⁢ψ_{i}⁢(\tau)=ψ_{i,0}-ψ_{i}⁢(\tau),
+$$
+
+where $ψ_{i,0}=ψ_{i}(\tau=0)$. Figure 5(a) shows $⟨ψ_{i,A}⁢(\tau)⟩$ and $⟨ψ_{i,P}⁢(\tau)⟩$ for $p_{a}=1$ and $p_{a}=0$. In both cases, we find that $⟨ψ_{i,A}⁢(\tau)⟩$ increases with time, indicating antialigned MTs leaving their antialigned environments, and that $⟨ψ_{i,P}⁢(\tau)⟩$ decreases with time, indicating polar-aligned MTs leaving their polar-aligned environments. At long times, $ψ_{i,A}$ and $ψ_{i,P}$ converge to the long-time mean $⟨ψ_{i,∞}⟩=0$ for passive systems, and to $⟨ψ_{i,∞}⁢(\tau)⟩>0$ for active systems. The time scale for relaxing $⟨ψ_{i}⟩$ to the equilibrium value is, as expected, shorter for the active than for the passive system.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig5-v2.jpg)
+
+**Figure 5.:** (a) Mean local polar order $⟨ψ_{i}⁢(\tau)⟩$ for $p_{a}=0.0$ and $p_{a}=1.0$ at $ϕ=0.3$, for MTs starting from antialigned (dotted line) and aligned (solid line) environments at $\tau=0$. (b) Deviation of local polar order $Q⁢(\tau)$ for $ϕ=0.3$ for various $p_{a}$ for antialigned MTs. (c) Relaxation time for the polar order parameter, $\tau_{Q/2}$ for various $p_{a}$ and $ϕ$, estimated by the time for $Q$ to decrease to half its initial value.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** MTs coloured based on their local polar order parameter $ψ_{i}$ for $p_{a}=1.0$, $ϕ=1.0$.The colour corresponding to $-1<ψ_{i}<1$ is given on the right. Zoomed in illustrations of MTs show examples of MTs in the three $ψ_{i}$ categories distinguished in Figure 8. The MT in question is highlighted in yellow in the zoomed in graphics. (M) $ψ_{i}≈0$ values can occur either when MTs are perpendicularly oriented with respect to its surrounding or when MTs have neighbours which are both polar-aligned and antialigned. (P) $ψ_{i}>0.5$ occurs when MTs have neighbours which are mostly polar-aligned. (A) $ψ_{i}<−0.5$ occurs when MTs have neighbours which are mostly antialigned.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Deviation from local polar order $Q⁢(\tau)$ as function of the lag time $\tau$ for various antialigned motor probabilities $p_{a}$ for polar-aligned MTs.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Mean local polar order parameter of MTs at long times, $⟨ψ_{∞}⟩$, for various surface fractions $ϕ$ and antialigned motor probabilities $p_{a}$.
+
+In order to quantify the change in $⟨ψ_{i}⟩$, we construct the deviation of local polar order,
+
+$$
+Q⁢(\tau)=1-\frac{⟨Δ⁢ψ_{i}⁢(\tau)⟩}{⟨ψ_{i,0}⟩-⟨ψ_{i,∞}⟩}.
+$$
+
+$Q⁢(\tau)$ for the antialigned MTs is shown in Figure 5(b); the lag time for that $Q⁢(\tau)$ reaches half its initial value is $\tau_{Q/2,A}$. While MTs that stay within a polar-ordered domain determine the offset for $ϕ_{i,A}$ at long times, only MTs entering polar aligned domains determine $\tau_{Q/2,A}$. Figure 5(c) shows that $\tau_{Q/2,A}$ decreases almost exponentially with $p_{a}$ and increases with $ϕ$. In stationary state, the time scales for the inversion of local polar order of initially antialigned and initially polar-aligned MTs are equal, $\tau_{Q/2,A}=\tau_{Q/2,P}$, compare Figure 5(b) and Figure 5—figure supplement 2. The dependence of $⟨ψ_{i,∞}⟩$ $ϕ$ and $p_{a}$ is shown in Figure 5—figure supplement 3.
+
+### Maximal activity
+
+The mean squared displacements of MTs are ballistic, diffusive, or superdiffusive depending on the lag time, see Figure 3(d). This is reflected in the distributions of the parallel velocity $v_{∥}$, see Equation 9 and Figure 3(e). The $v_{∥}$ distributions become increasingly asymmetric with increasing lag time when active propulsion dominates over Brownian motion for antialigned MTs–and again less asymmetric when the lag time is further increased and orientational memory is lost. Because of the high number of parallel MTs in our simulations the position of the main peak is at $⟨v_{∥}⟩=0$ as expected for passive MTs. A skew of the distribution can then be understood as a superposition of a high peak of non-propelled polar-aligned MTs and a small peak that is shifted to positive values of $v_{∥}$ for antialigned MTs, see also Videos 2 and 4.
+
+In Figure 6, we plot skews of $v_{∥}$ distributions (Figure 3(e)) as function of lag time for various $p_{a}$ values for $ϕ=0.3$. Both maximal skew and maximal lag time for that we detect finite skews increase with increasing $ϕ$, Figure 6—figure supplement 1. The lag time at which the skew of the $v_{∥}$ distribution is maximal is defined as the activity time $\tau^{*}$, where the ratio of the displacements due to active forces to the thermal displacements is largest. This activity time $\tau^{*}$ falls into the regime where the MSD is most superdiffusive, see Figure 3(d). As shown in Figure 6(b), $\tau^{*}$ exponentially decreases with increasing $p_{a}$ and increases with $ϕ$. Increasing motor concentration, and thus a higher amount of active forces in the system, is akin to exponentially shifting the activity time to shorter values.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig6-v2.jpg)
+
+**Figure 6.:** (a) Skew of parallel velocity ($v_{∥}$) distribution computed as function of lag times for different $p_{a}$ for $ϕ=0.3$. The probability distributions that correspond to the maximal skew are shown in Figure 3—figure supplement 6 together with distributions for few other lag times. (b) Lag time at which maximal skew is observed in the $v_{∥}⁢(\tau)$ distribution (compare Figure 1). The ordinate is log-scaled to show that $\tau^{*}$ is exponentially decreasing with $p_{a}$.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Skews $\alpha_{3}$ of parallel velocity distributions ($v_{∥}$) (Fig.Figure 6) computed as a function of lag times for various antialigned motor probabilities $p_{a}$ and surface fractions $ϕ$. The probability distributions that correspond to the maximal skew are shown in Figure 6 together with distributions for few other lag times. The ordinate scale is the same for comparison of the skews for different MT surface fractions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Ratios of MT populations in (a) antialigned to polar-aligned environments, and (b) perpendicular environments to total number of MTs, for various MT surface fractions $ϕ$ and antialigned motor probabilities $p_{a}$.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** First three moments of the parallel velocity ($v_{∥}$) distribution.First three moments, (a) mean, (b) variance, (c) skew of the $v_{∥}$ distribution for a time window of duration $\tau^{*}$ for MTs in (A) antialigned, ($ψ_{i}<-0.5$, blue), (P) polar-aligned ($ψ_{i}>0.5$, red), and (M) mixed ($|ψ_{i}|\leq0.5$, green) environments, for different $ϕ$ and $p_{a}$. The blue, red and green markers indicate moment calculated from raw data. The yellow markers are obtained from calculating moments from fits to the antialigned parallel MT velocity distribution $v_{∥,A}$. (d) Example of differences in structures of $v_{∥}$ distributions due to increasing activity from $p_{a}=0.4$ (dotted line) to $p_{a}=1.0$ (solid line) for $ϕ=0.3$, for A, P and M categories of MT environment.
+
+The proportion of aligned (passive) and antialigned (propelled) MTs depends strongly on the area fraction, where the number of antialigned MTs decreases with surface fraction $ϕ$. This corresponds to larger domain sizes and less interfaces with increasing $ϕ$, see Figure 3—figure supplement 2 and Figure 6—figure supplement 2. Further, we notice that for all surface fractions $ϕ$ increasing $p_{a}$ widens the $v_{∥}⁢(\tau)$ distributions, see Figure 3—figure supplement 6. The widening of the distribution becomes less pronounced with increasing $ϕ$. The shifting of the negative part of the $v_{∥}$ distribution ($v_{∥}(\tau^{∗})<0$) to more negative values with increasing $p_{a}$ is because $\tau^{*}$ decreases simultaneously.
+
+### Collective migration
+
+The observables discussed so far characterise the motion of individual MTs. They only take collective effects into consideration indirectly, for example via the asymmetry of the $v_{∥}$ distribution for polar-aligned MTs. For a direct discussion of the time scale of collective effects, we return to Figure 4(b). For times around $\tau/\tau_{R}=10$, in the intermediate time regime, we observe a positive neighbour displacement correlation. This behaviour is altogether absent at low surface fractions, $ϕ=0.2$, but for larger $ϕ$ the positive correlations increase with increasing $ϕ$. This suggests that neighbouring MTs in a particular stream (likely polar-aligned) travel in the same direction. These polar-aligned MTs will collectively migrate in the same direction because they are in a similarly antialigned environment, that is at the same interface with another domain. Correlations in their motion can only manifest at longer lag times, since at short lag times the correlation contribution will be dominated by fast-moving antialigned MTs. We denote the lag time for the maximum of $N_{d}⁢(\tau)$, when collective migration occurs, $\tau_{N,max}$.
+
+In order to explicitly show that positive neighbour displacement correlations observed in the intermediate time regime are due to collective migration of similarly oriented MTs, we can predict the results of photobleaching or photoactivation experiments (Gao et al., 2015; Mitchison, 1989; Hush et al., 1994). Experimentally, in a photobleaching experiment a high-intensity laser beam can be used to inactivate fluorescent molecules in a circular region (Axelrod et al., 1976). The time evolution of the distribution of the light-inactivated regions gives clues about the underlying mechanisms which mediate this motion. Figure 7(a) illustrates that we expect little or no MT sliding to occur in a polar-aligned region, and the photobleached area maintains its shape. In Figure 7(b), however, the photobleached area is antialigned and we expect bundles of antialigned domains to slide away, causing the photobleached spot to separate into two elongated regions. In our simulations, we perform a similar measurement, where instead of inactivating regions to inhibit fluorescence, we selectively label MT beads within a certain region. We then track their locations for $t=\tau_{N,max}$ and investigate their displacements. MTs move in response to the effective motor potential and form streams. In Figure 7(c), we visualise a four-MT length radius circular area for $ϕ=0.4$ and $p_{a}=1.0$. The structures become more diffuse for $ϕ=0.3$ and more compact for $ϕ=0.5$ (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig7-v2.jpg)
+
+**Figure 7.:** Schematic of expected evolution of photobleached regions in (a) polar-aligned and (b) antialigned regions. (c) Selectively visualised MTs in a circular region within the simulation box, and their evolution after a time of $\tau_{N,max}$, for $ϕ=0.4$ and $p_{a}=1.0$. The black backgrounds are predictions of FRAP results.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** FRAP-like predictions for various MT surface fractions $ϕ$.Predictions for photobleaching experiments with $ϕ=0.3$, $0.4$, and $0.5$. MTs retain the orientation colour from when they were tagged at $t=0$. The black shadow shows our predictions for photobleaching experiments at time $\tau_{N,max}$ after bleaching a circular patch.
+
+### Active rotation
+
+The longest relevant time scale for the MT dynamics is that of active rotational motion characterised by the orientational correlation function
+
+$$
+⟨𝐩⁢(t)⋅𝐩⁢(t+\tau)⟩=e^{-\tau/\tau_{r}}.
+$$
+
+By fitting Equation 15 to the simulation data (Figure 8(a)), we obtain the transition time to long-time active diffusive behaviour, $\tau_{r}$. Figure 8(b) shows $\tau_{r}$ for various $p_{a}$. For passive systems ($p_{a}=0$), $\tau_{r}$ increases with MT surface density $ϕ$. For active systems, $\tau_{r}$ decreases with increasing $p_{a}$ and with decreasing $ϕ$. In the nematic state, MTs are no longer able to rotate freely as in the isotropic case. The decrease of $\tau_{r}$ with increasing $p_{a}$ is more pronounced at higher MT surface fractions. Smaller values of $\tau_{r}$ correspond to smaller domain sizes. In larger domains, the streams appear at interfaces between polar-ordered domains and antialigned MTs. The streams extend in the same direction over larger lengths, for longer times, and MTs do not rotate away from their initial orientation as quickly. Also, MTs that are trapped in aligned MT bundles are less likely to exit their environments and their rotational diffusion is smaller for higher $ϕ$ and lower $p_{a}$. Only for $\tau>\tau_{r}$ the MTs show again diffusive motion with an active diffusion coefficient $D_{A}∝v_{||}^{2}⁢\tau_{r}$, see Figure 3(d).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig8-v2.jpg)
 
-**Figure 8.:** (a) Orientational correlation function for  for various antialigned motor probabilities ϕ=0.3. (pab) Inverse of rotational diffusion,  for various antialigned motor probabilities τr and surface fractions pa (ϕc) Active diffusion coefficient  for DA.pa=110.7554/eLife.39694.036Figure 8—source data 1.Figure 8 (a,a-one filament,b,c).
+**Figure 8.:** (a) Orientational correlation function for $ϕ=0.3$ for various antialigned motor probabilities $p_{a}$. (b) Inverse of rotational diffusion, $\tau_{r}$ for various antialigned motor probabilities $p_{a}$ and surface fractions $ϕ$ (c) Active diffusion coefficient $D_{A}$ for $p_{a}=1$.
 
 ## Discussion
 
-In our two-dimensional simulation model, dipolar effective motor forces that drive antialigned MT pairs are sufficient to bring about MT streams which are perpetually created and annihilated, akin to MT streaming in biology. Processes that occur on several characteristic times characterise streaming in our MT-motor mixtures: the characteristic time τN,m⁢i⁢n corresponds to the strongest anti-aligned motion of neighbouring MTs, the time τQ/2 that an MT stays within a stream, the time τ* that corresponds to maximal skew of the MT velocity distribution, the collective migration time τN,m⁢a⁢x that characterises maximal directed active motion, and the active rotation time τr that corresponds to single rods traveling the distance of a polar-aligned domain when they loose their orientational memory. Figure 9 and Table 1 summarise our findings. (We do not show ϕ=0.2, because there is no evidence of streaming in these systems, and the chronology of events is not consistent with those observed for higher surface fractions.)
+In our two-dimensional simulation model, dipolar effective motor forces that drive antialigned MT pairs are sufficient to bring about MT streams which are perpetually created and annihilated, akin to MT streaming in biology. Processes that occur on several characteristic times characterise streaming in our MT-motor mixtures: the characteristic time $\tau_{N,m⁢i⁢n}$ corresponds to the strongest anti-aligned motion of neighbouring MTs, the time $\tau_{Q/2}$ that an MT stays within a stream, the time $\tau^{*}$ that corresponds to maximal skew of the MT velocity distribution, the collective migration time $\tau_{N,m⁢a⁢x}$ that characterises maximal directed active motion, and the active rotation time $\tau_{r}$ that corresponds to single rods traveling the distance of a polar-aligned domain when they loose their orientational memory. Figure 9 and Table 1 summarise our findings. (We do not show $ϕ=0.2$, because there is no evidence of streaming in these systems, and the chronology of events is not consistent with those observed for higher surface fractions.)
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/39694/elife-39694-fig9-v2.jpg)
 
-**Figure 9.:** and surface fractions pa, ϕ=0.3, and (ϕ=0.4c)  as indicated.ϕ=0.510.7554/eLife.39694.038Figure 9—source data 1.Figure 9 (a,b,c).
+**Figure 9.:** Chronology of MT streaming. Events from antialigned MT propulsion to MT rotation (left to right) which make up the streaming process, for various antialigned motor probabilities $p_{a}$ and surface fractions $ϕ=0.3$, $ϕ=0.4$, and (c) $ϕ=0.5$ as indicated.
 
-All characteristic times increase with decreasing motor attachment probability pa. We expect the sliding time τN,m⁢i⁢n and the active rotation time τr to diverge with vanishing motor attachment probability, while the collective migration time τN,m⁢a⁢x and the polarity-inversion time τQ/2 attain finite values due to thermal motion and steric interaction between the MTs. The activity time τ* is not defined for passive systems. Overall, the characteristic times increase with increasing MT surface density, because the lifetime and the coherence of the streams increases. However, our simulations also reveal details of the multi-scale process of streaming in MT-motor mixtures. For example, the time for an MT to transition from a polar-aligned to an antialigned environment is similar to the sliding time for low motor forces, where thermal motion dominates, and to the activity time for high motor forces when the streams are more stable.
+**Table 1.**
+ Table of time scales involved in MT dynamics.The time scales reported are approximate values for various antialigned motor probabilities $p_{a}$ and surface fractions $ϕ$.
 
-The closest ’bottom-up’ experimental system to our simulation model is the in vitro model system of microtubule bundles, kinesin complexes, and depletants at the oil-water interface, investigated in Sanchez et al. (2012). A detailed quantitative comparison is currently not possible because the characteristic length scales in simulations and experiment are quite different. The depletion-induced MT bundle formation in the experiments leads to a characteristic length scale of the order of 10⁢μ⁢m, whereas the MTs in the simulations have lengths below 1⁢μ⁢m. However, on a more qualitative level interesting correspondences are revealed. The transition between diffusive and ballistic MSDs in the simulations has also been reported for the in vitro model system (Sanchez et al., 2012). This allows the comparison of the active diffusive regime for times τ>τr and for lengths longer than a typical domain size. Whereas the motion in suspensions of passive MTs is diffusive, a ballistic regime at large lag times is found for increasing concentrations of active motors (simulations) and for increasing ATP concentration (experiment).
 
-Some of our results can be used to interpret experimental results in vivo. For example, using Particle Image Velocimetry (PIV) in Drosophila cells, fluid velocity distributions have been measured for wild-type oocytes and those lacking pat1, a protein required for kinesin heavy chain to maximise its motility (Ganguly et al., 2012). The main peak is close to a velocity of 10 nm/s, which hints that the majority of the MTs are propelled. As in our simulations, heavy tails in the velocity distribution have been reported in the experiments. A compariston of the experimental data for wild-type and pat1-deficient systems showed that for the wild-type system the mean speed was slower and the velocity distribution had heavier tails. This qualitatively agrees with our findings for varying pa. It was suggested in Ganguly et al. (2012) that the heavy tails in the velocity distribution of the cytosol reflect a combination of an underlying distribution of motor speeds, and a complex MT network geometry. From our simulations, we conclude that neither a complex three-dimensional cytoskeletal geometry nor a combination of different motor speeds are required to reproduce cytoskeletal velocity distributions with heavy tails.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Symbols</th>
+      <th>Time scale (τR)</th>
+      <th>Derivation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Passive diffusion</td>
+      <td>τD</td>
+      <td>τ&lt;10-1</td>
+      <td>Slope of MSD ≈1</td>
+    </tr>
+    <tr>
+      <td>Antialigned propulsion</td>
+      <td>τN,min</td>
+      <td>τ≈10-1</td>
+      <td>Minimum of Nd</td>
+    </tr>
+    <tr>
+      <td>Streaming</td>
+      <td>τQ/2</td>
+      <td>10-1&lt;τ&lt;100</td>
+      <td>⟨ψi⟩ decay time</td>
+    </tr>
+    <tr>
+      <td>Maximal skew</td>
+      <td>τ*</td>
+      <td>100&lt;τ&lt;101</td>
+      <td>Maximum skew of 𝐩0⋅𝐝</td>
+    </tr>
+    <tr>
+      <td>Collective migration</td>
+      <td>τN,max</td>
+      <td>τ≈101</td>
+      <td>Maximum of Nd</td>
+    </tr>
+    <tr>
+      <td>Active rotation</td>
+      <td>τr</td>
+      <td>τ&gt;101</td>
+      <td>Orientational correlation time</td>
+    </tr>
+  </tbody>
+</table>
+
+All characteristic times increase with decreasing motor attachment probability $p_{a}$. We expect the sliding time $\tau_{N,m⁢i⁢n}$ and the active rotation time $\tau_{r}$ to diverge with vanishing motor attachment probability, while the collective migration time $\tau_{N,m⁢a⁢x}$ and the polarity-inversion time $\tau_{Q/2}$ attain finite values due to thermal motion and steric interaction between the MTs. The activity time $\tau^{*}$ is not defined for passive systems. Overall, the characteristic times increase with increasing MT surface density, because the lifetime and the coherence of the streams increases. However, our simulations also reveal details of the multi-scale process of streaming in MT-motor mixtures. For example, the time for an MT to transition from a polar-aligned to an antialigned environment is similar to the sliding time for low motor forces, where thermal motion dominates, and to the activity time for high motor forces when the streams are more stable.
+
+The closest ’bottom-up’ experimental system to our simulation model is the in vitro model system of microtubule bundles, kinesin complexes, and depletants at the oil-water interface, investigated in Sanchez et al. (2012). A detailed quantitative comparison is currently not possible because the characteristic length scales in simulations and experiment are quite different. The depletion-induced MT bundle formation in the experiments leads to a characteristic length scale of the order of $10⁢\mu⁢m$, whereas the MTs in the simulations have lengths below $1⁢\mu⁢m$. However, on a more qualitative level interesting correspondences are revealed. The transition between diffusive and ballistic MSDs in the simulations has also been reported for the in vitro model system (Sanchez et al., 2012). This allows the comparison of the active diffusive regime for times $\tau>\tau_{r}$ and for lengths longer than a typical domain size. Whereas the motion in suspensions of passive MTs is diffusive, a ballistic regime at large lag times is found for increasing concentrations of active motors (simulations) and for increasing ATP concentration (experiment).
+
+Some of our results can be used to interpret experimental results in vivo. For example, using Particle Image Velocimetry (PIV) in Drosophila cells, fluid velocity distributions have been measured for wild-type oocytes and those lacking pat1, a protein required for kinesin heavy chain to maximise its motility (Ganguly et al., 2012). The main peak is close to a velocity of 10 nm/s, which hints that the majority of the MTs are propelled. As in our simulations, heavy tails in the velocity distribution have been reported in the experiments. A compariston of the experimental data for wild-type and pat1-deficient systems showed that for the wild-type system the mean speed was slower and the velocity distribution had heavier tails. This qualitatively agrees with our findings for varying $p_{a}$. It was suggested in Ganguly et al. (2012) that the heavy tails in the velocity distribution of the cytosol reflect a combination of an underlying distribution of motor speeds, and a complex MT network geometry. From our simulations, we conclude that neither a complex three-dimensional cytoskeletal geometry nor a combination of different motor speeds are required to reproduce cytoskeletal velocity distributions with heavy tails.
 
 We have studied the characteristic times of MT-motor dynamics relevant for the cytoskeleton using a coarse-grained motor model and Langevin Dynamics simulations in the overdamped regime. This allows us to access both the single-MT level as well as the collective-MT level. In previous studies that use a similar coarse-graining technique for the motor activity, the focus has been on understanding and capturing biologically relevant cytoskeletal structures (Aranson and Tsimring, 2005; Jia et al., 2008). Here, for the first time, we have decomposed the time scales of activity from single MTs to system-scale ordering and streaming.
 
-MT advection has also been analysed using photoconversion in interphase Drosophila S2 cells, where MTs were observed to buckle and loop (Jolly et al., 2010). MT motion was visualised by photoconverting a circular region within the cell. These MTs were observed over a 7 minute period, during which 36% of the MTs were determined to be motile. It was observed that MTs spent most of the time not moving, but underwent abrupt long-distance streaming. They were found to achieve velocities up to 13 μm/min, during these bursts of active motion. These observations are very similar to those in our simulations, where MTs spend most of their times in stable polar-aligned bundles, but when in contact with an antialigned MTs coherently stream over large distances. We find similar fractions of motile MTs between 30% and 40% also for ϕ=0.3 in our simulations. Our study provides the basis for a more detailed quantitative comparison with experiments because the model can be easily extended to include further relevant aspects, such as a 3D cytoskeletal network, crosslinking proteins, and cellular confinement.
+MT advection has also been analysed using photoconversion in interphase Drosophila S2 cells, where MTs were observed to buckle and loop (Jolly et al., 2010). MT motion was visualised by photoconverting a circular region within the cell. These MTs were observed over a 7 minute period, during which 36% of the MTs were determined to be motile. It was observed that MTs spent most of the time not moving, but underwent abrupt long-distance streaming. They were found to achieve velocities up to 13 $\mu$m/min, during these bursts of active motion. These observations are very similar to those in our simulations, where MTs spend most of their times in stable polar-aligned bundles, but when in contact with an antialigned MTs coherently stream over large distances. We find similar fractions of motile MTs between 30% and 40% also for $ϕ=0.3$ in our simulations. Our study provides the basis for a more detailed quantitative comparison with experiments because the model can be easily extended to include further relevant aspects, such as a 3D cytoskeletal network, crosslinking proteins, and cellular confinement.
 
-Our simulations show collective migration of MTs that is maximal at τN,max. Using a FRAP-like visualisation of our data, we find elongated MT stream patterns similar to those observed in experiments (Jolly et al., 2010). This confirms that similarly oriented MTs move colletively in the same stream. Based on the polarity-sorting mechanism of MTs, qualitatively similar FRAP results have previously been predicted using computer simulations (Gao et al., 2015). Experimental studies of a system on various length and time scales should allow testing the chronology that we predict. For example, systems with different fractions of fluorescent MTs with fixed lengths should give access to both collective as well as single-MT dynamics, for example using FRAP/photoactivation for systems with many labeled MTs to quantify collective dynamics and confocal microscopy for systems with few labeled MTs to investigate correlations in single-MT motion.
+Our simulations show collective migration of MTs that is maximal at $\tau_{N,max}$. Using a FRAP-like visualisation of our data, we find elongated MT stream patterns similar to those observed in experiments (Jolly et al., 2010). This confirms that similarly oriented MTs move colletively in the same stream. Based on the polarity-sorting mechanism of MTs, qualitatively similar FRAP results have previously been predicted using computer simulations (Gao et al., 2015). Experimental studies of a system on various length and time scales should allow testing the chronology that we predict. For example, systems with different fractions of fluorescent MTs with fixed lengths should give access to both collective as well as single-MT dynamics, for example using FRAP/photoactivation for systems with many labeled MTs to quantify collective dynamics and confocal microscopy for systems with few labeled MTs to investigate correlations in single-MT motion.
 
 We have studied collective motion in active gels based on single MTs. Our spatio-temporal displacement correlation functions show that antialigned MTs slide away from each other in opposite directions for short time windows, while in agreement with experiments positive correlations occur for long time windows (Ganguly et al., 2012). Our two-dimensional simulations resemble systems close to an interface that have been used to experimentally study hierarchically assembled active matter (Sanchez et al., 2012). They also lay the foundations for future studies of 3D systems and have allowed us to test parameter regimes using less computationally expensive, two-dimensional systems. Furthermore, although we observe streaming without hydrodynamics, hydrodynamic interactions may still be an important player for motor-MT systems, which can be investigated in future studies.
 
@@ -156,18 +399,173 @@ To summarize, our results provide a direct handle to fully characterise MT strea
 
 ## Materials and methods
 
-## Langevin dynamics
+### Langevin dynamics
 
-We simulate the MT-motor systems in two dimensions using periodic boundary conditions. The motion of the beads is described by the Langevin equation,(16)md2ridt2=−∇Ui+Fmot−γdridt+ξi(t),where 𝐫i is the position of bead i, m is the mass of a bead, γ is the friction coefficient of the solvent for bead motion, Fmot=-∇⁡Umot is the active motor force and ξi is the Gaussian-distributed thermal force. The friction coefficient can be estimated using the Stokes friction γ=6⁢π⁢η⁢R for a spherical particle with radius R in a solvent with viscosity η. The thermal forces ξi have ⟨ξi⟩=0 and, from the fluctuation-dissipation theorem,(17)⟨ξα(t)ξβ(t′)⟩=2γkBTδαβδ(t−t′),where kB is the Boltzmann constant, T is the temperature, and ξα(t) is the α-th component of the vector ξi(t).
+We simulate the MT-motor systems in two dimensions using periodic boundary conditions. The motion of the beads is described by the Langevin equation,
 
-Langevin dynamics simulations allow the use of larger time steps compared with Brownian dynamics simulations without a particle mass. The friction constant γ and bead mass m are chosen such that the center-of-mass motion of passive MTs at the same density is diffusive at length scales larger than a fraction of the MT length and at time scales τ/τR≥0.01 (see SI), such that passive MTs only move ballistically at times shorter than the relevant times.
+$$
+m\frac{d^{2}r_{i}}{dt^{2}}=−∇U_{i}+F_{mot}−\gamma\frac{dr_{i}}{dt}+ξ_{i}(t),
+$$
+
+where $𝐫_{i}$ is the position of bead $i$, $m$ is the mass of a bead, $\gamma$ is the friction coefficient of the solvent for bead motion, $F_{mot}=-\nabla⁡U_{mot}$ is the active motor force and $ξ_{i}$ is the Gaussian-distributed thermal force. The friction coefficient can be estimated using the Stokes friction $\gamma=6⁢\pi⁢η⁢R$ for a spherical particle with radius $R$ in a solvent with viscosity $η$. The thermal forces $ξ_{i}$ have $⟨ξ_{i}⟩=0$ and, from the fluctuation-dissipation theorem,
+
+$$
+⟨ξ_{\alpha}(t)ξ_{\beta}(t^{′})⟩=2\gammak_{B}T\delta_{\alpha\beta}\delta(t−t^{′}),
+$$
+
+where $k_{B}$ is the Boltzmann constant, T is the temperature, and $ξ_{\alpha}(t)$ is the $\alpha$-th component of the vector $ξ_{i}(t)$.
+
+Langevin dynamics simulations allow the use of larger time steps compared with Brownian dynamics simulations without a particle mass. The friction constant $\gamma$ and bead mass $m$ are chosen such that the center-of-mass motion of passive MTs at the same density is diffusive at length scales larger than a fraction of the MT length and at time scales $\tau/\tau_{R}\geq0.01$ (see SI), such that passive MTs only move ballistically at times shorter than the relevant times.
 
 The simulation package LAMMPS has been employed to perform the simulations (Plimpton, 1995), see Source code file 1.
 
-## System parameters
+### System parameters
 
-Each simulation consists of nf=1250 semiflexible filaments with aspect ratio 10, each made up of nb=21 overlapping beads, which reduces the friction of the otherwise corrugated MTs (Abkenar et al., 2013; Isele-Holder et al., 2015). The MT surface fraction ϕ=nf⁢L⁢σ/Lb2 is controlled by adjusting the box size Lb. Our effective-motor model is a coarse-grained model and individual effective motors in the simulations may not represent individual motors in experiments. However, the system parameters are based on those of biological systems, see Table 2.
+Each simulation consists of $n_{f}=1250$ semiflexible filaments with aspect ratio 10, each made up of $n_{b}=21$ overlapping beads, which reduces the friction of the otherwise corrugated MTs (Abkenar et al., 2013; Isele-Holder et al., 2015). The MT surface fraction $ϕ=n_{f}⁢L⁢\sigma/L_{b}^{2}$ is controlled by adjusting the box size $L_{b}$. Our effective-motor model is a coarse-grained model and individual effective motors in the simulations may not represent individual motors in experiments. However, the system parameters are based on those of biological systems, see Table 2.
 
-The WCA potential is used with the interaction cutoff at 21/6⁢σ, such that the potential between MTs is purely repulsive. The bond stiffness is large, such that the contour length of the MTs remains approximately constant throughout a simulation run. The angle potential is chosen such that MTs are rigid; the persistence length is ℓp=200⁢L. We use a time step of duration δ⁢t=5.31×10-6⁢τR. Each run for a particular parameter set consists of 3 107 time steps.
+**Table 2.**
+ Parameter values used in the simulations.
 
-We nondimensionalise the key parameters using the MT diameter σ or length L, thermal energy kB⁢T, and the single-MT rotational diffusion time τR, see Table 3.
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Notes/Biological Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Thermal energy</td>
+      <td>kB⁢T</td>
+      <td>4.11⁢pN⁢nm</td>
+      <td>room temperature</td>
+    </tr>
+    <tr>
+      <td>MT length</td>
+      <td>L</td>
+      <td>0.625μm</td>
+      <td>2.5±1.4μm (Howard et al., 1989)</td>
+    </tr>
+    <tr>
+      <td>MT diameter</td>
+      <td>σ</td>
+      <td>25 nm</td>
+      <td>(Chrétien and Wade, 1991)</td>
+    </tr>
+    <tr>
+      <td>MT bond angle constant</td>
+      <td>κ</td>
+      <td>2.055×104⁢pN⁢nm2</td>
+      <td>rigid MTs</td>
+    </tr>
+    <tr>
+      <td>MT bond spring constant</td>
+      <td>ks</td>
+      <td>13.15⁢pN/nm</td>
+      <td>preserves MT length (Isele-Holder et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Dynamic viscosity</td>
+      <td>η</td>
+      <td>1 Pa s</td>
+      <td>viscosity of cytoplasm (Wirtz, 2009)</td>
+    </tr>
+    <tr>
+      <td>Characteristic energyof WCA potential</td>
+      <td>ϵ</td>
+      <td>4.11 pN nm</td>
+      <td>(Bates and Frenkel, 2000; Bolhuis and Frenkel, 1997; McGrother et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>Motor spring constant</td>
+      <td>km</td>
+      <td>6.6×10-3 pN/nm</td>
+      <td>0.33⁢pN/nm per kinesin (Coppin et al., 1995), high number of effective motors</td>
+    </tr>
+    <tr>
+      <td>Equilibrium motor length</td>
+      <td>deq</td>
+      <td>25 nm</td>
+      <td>MT-MT distance at contact</td>
+    </tr>
+    <tr>
+      <td>Motor dwell time</td>
+      <td>δ⁢t</td>
+      <td>4.16×10-4 s</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+The WCA potential is used with the interaction cutoff at $2^{1/6}⁢\sigma$, such that the potential between MTs is purely repulsive. The bond stiffness is large, such that the contour length of the MTs remains approximately constant throughout a simulation run. The angle potential is chosen such that MTs are rigid; the persistence length is $ℓ_{p}=200⁢L$. We use a time step of duration $\delta⁢t=5.31\times10^{-6}⁢\tau_{R}$. Each run for a particular parameter set consists of $3 10^{7}$ time steps.
+
+We nondimensionalise the key parameters using the MT diameter $\sigma$ or length $L$, thermal energy $k_{B}⁢T$, and the single-MT rotational diffusion time $\tau_{R}$, see Table 3.
+
+**Table 3.**
+ Dimensionless parameters and ranges of the values used in the simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Symbol</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MT surface fraction</td>
+      <td>ϕ</td>
+      <td>0.2-0.5</td>
+    </tr>
+    <tr>
+      <td>MT aspect ratio</td>
+      <td>L/σ</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Reduced MT bond angle stiffness</td>
+      <td>κ⁢σ/kB⁢T</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Reduced MT persistence length</td>
+      <td>ℓp/L</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>MT bond spring constant</td>
+      <td>ks⁢σ2/kB⁢T</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>Reduced motor spring constant</td>
+      <td>km⁢σ2/kB⁢T</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Reduced motor equilibrium length</td>
+      <td>deq/σ</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Antialigned motor probability</td>
+      <td>pa</td>
+      <td>0-1.0</td>
+    </tr>
+    <tr>
+      <td>Reduced single-bead friction</td>
+      <td>γ/(km⁢δ⁢t)</td>
+      <td>171.6</td>
+    </tr>
+    <tr>
+      <td>Reduced system size</td>
+      <td>Lb/L</td>
+      <td>16-25</td>
+    </tr>
+  </tbody>
+</table>

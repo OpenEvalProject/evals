@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02ttsq026 Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder United States
+1. Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Two central players in endosomal retrieval are Retromer and Commander. Retromer,
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig1-v1.jpg)
 
-**Figure 1.:** (A) Cartoon representation of the Retromer and Commander complexes. (B) Table listing genes encoding the subunits of the Retromer and Commander complexes. (C) Ranking of genes encoding the Retromer and Commander complexes in an unbiased CRISPR screen that was conducted to identify genes required for the surface homeostasis of GLUT-SPR (Wang et al., 2023). The GLUT-SPR reporter was constructed by inserting a hemagglutinin (HA) epitope into an exoplasmic loop of the glucose transporter GLUT4, with a GFP tag fused to the intracellular C-terminus of GLUT4 (Gulbranson et al., 2017; Klip et al., 2019; Blot and McGraw, 2008). Surface expression (HA staining) of the reporter was normalized to total reporter expression (GFP fluorescence) as a measure of relative surface levels of the reporter. Each dot represents a gene. The dashed line depicts the P-value cutoff at 0.05. (D) Essentiality scores of genes encoding the Retromer and Commander complexes were calculated by comparing gRNA abundance in a passage cell population (without any selection) with that in the initial CRISPR library. Genes with essentiality scores below the horizontal cutoff line are predicted to be essential to cell survival or growth. Full datasets of the CRISPR screens are included in a previous report (Wang et al., 2023).Figure 1—source data 1.Figure 1C.Figure 1—source data 2.Figure 1D.
+**Figure 1.:** (A) Cartoon representation of the Retromer and Commander complexes. (B) Table listing genes encoding the subunits of the Retromer and Commander complexes. (C) Ranking of genes encoding the Retromer and Commander complexes in an unbiased CRISPR screen that was conducted to identify genes required for the surface homeostasis of GLUT-SPR (Wang et al., 2023). The GLUT-SPR reporter was constructed by inserting a hemagglutinin (HA) epitope into an exoplasmic loop of the glucose transporter GLUT4, with a GFP tag fused to the intracellular C-terminus of GLUT4 (Gulbranson et al., 2017; Klip et al., 2019; Blot and McGraw, 2008). Surface expression (HA staining) of the reporter was normalized to total reporter expression (GFP fluorescence) as a measure of relative surface levels of the reporter. Each dot represents a gene. The dashed line depicts the P-value cutoff at 0.05. (D) Essentiality scores of genes encoding the Retromer and Commander complexes were calculated by comparing gRNA abundance in a passage cell population (without any selection) with that in the initial CRISPR library. Genes with essentiality scores below the horizontal cutoff line are predicted to be essential to cell survival or growth. Full datasets of the CRISPR screens are included in a previous report (Wang et al., 2023).
 
 The Commander complex is ubiquitously expressed, and its 16 subunits display a stringent equimolar stoichiometry within the holo-complex (Healy et al., 2023; Boesch et al., 2024; Laulumaa et al., 2024; Uhlén et al., 2015), supporting the notion that these subunits function collectively in endosomal recycling. However, Commander subunits exhibit distinct tissue-specific expression patterns and can associate with different sets of proteins (Laulumaa et al., 2024; Singla et al., 2019; Burstein et al., 2005; You et al., 2023). Furthermore, CCC and Retriever also exist as subcomplexes, whereas COMMD proteins are found in pools of homo- and hetero-oligomers independent of the Commander complex (Healy et al., 2023; Boesch et al., 2024; Singla et al., 2019; Healy et al., 2018). These observations have led to the hypothesis that Commander subunits may have functions beyond their role in the Commander holo-complex (Shirai et al., 2023; Nakai et al., 2019; Campion et al., 2018; Suraweera et al., 2021). However, direct evidence for this hypothesis is still lacking.
 
@@ -34,7 +34,7 @@ In this work, we systematically dissected the Commander complex through unbiased
 
 ## Results
 
-## Genetic analysis of the Retromer and Commander complexes using unbiased genome-wide CRISPR screens
+### Genetic analysis of the Retromer and Commander complexes using unbiased genome-wide CRISPR screens
 
 Unbiased genome-wide genetic screens are a powerful approach to study the functions of membrane trafficking genes in cultured mammalian cells (Wang et al., 2023; Gulbranson et al., 2019; Gulbranson et al., 2017). Previously, we conducted a genome-wide CRISPR screen to identify new regulators of surface protein homeostasis using a surface protein reporter (GLUT-SPR) based on the glucose transporter GLUT4 (Wang et al., 2023). Mouse preadipocytes expressing the GLUT-SPR reporter were mutagenized using the genome-wide GeCKO v2 CRISPR library (Ran et al., 2013). In the genome-wide CRISPR screen, we used fluorescence-activated cell sorting (FACS) to isolate mutant preadipocytes with reduced surface levels of the GLUT-SPR reporter (Wang et al., 2023). The screen recovered known regulators of cargo exocytosis and enabled us to identify previously uncharacterized exocytic regulators, including Reps1 and Ralbp1 (Wang et al., 2023). Importantly, the new exocytic regulators identified in this GLUT-SPR-based CRISPR screen broadly regulate the surface proteostasis of membrane proteins (Wang et al., 2023).
 
@@ -44,55 +44,79 @@ To further characterize the functional roles of Retromer- and Commander-encoding
 
 Together, these global genetic analyses suggest that COMMD3 plays an unrecognized role in GLUT-SPR trafficking, independent of its canonical function within the Commander holo-complex.
 
-## Deletion of COMMD3 disrupts endosomal trafficking
+### Deletion of COMMD3 disrupts endosomal trafficking
 
 To validate the role of COMMD3 in the surface homeostasis of GLUT-SPR, we deleted the Commd3 gene in mouse preadipocytes (Figure 2A). Indeed, surface levels of GLUT-SPR were strongly reduced in Commd3 KO preadipocytes, which were either cultured under standard conditions or stimulated with insulin to mimic a physiological fed state (Figure 2B). These data confirm the findings from the CRISPR screen (Figure 1C). To examine whether COMMD3 regulates the surface homeostasis of GLUT-SPR in another cell type, the fibroblast-like preadipocytes were differentiated into mature adipocytes, which are morphologically and functionally distinct from preadipocytes (Ahfeldt et al., 2012). Using flow cytometry, we observed that surface GLUT-SPR levels were markedly reduced in Commd3 KO adipocytes (Figure 2C), indicating that the role of COMMD3 in surface protein homeostasis is not restricted to a single cell type. Similar findings were observed in adipocytes using confocal imaging (Figure 2D). Surface levels of GLUT-SPR were substantially decreased in Commd3 KO cells, concomitant with elevated intracellular accumulation of the reporter (Figure 2D). These results demonstrated a critical role of COMMD3 in the endosomal trafficking of GLUT-SPR.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative immunoblots showing the indicated proteins in wild-type (WT) and Commd3 KO mouse preadipocytes. (B) Normalized surface levels of GLUT-SPR measured by flow cytometry in WT and KO preadipocytes. The cells were either untreated or treated with 100 nM insulin for 1 hr before surface GLUT-SPR was labeled using anti-HA antibodies and APC-conjugated secondary antibodies. To calculate surface levels of GLUT-SPR, mean APC values were divided by mean GFP fluorescence. To inhibit insulin signaling, 100 nM wortmannin was added prior to insulin stimulation. In all figures, data normalization was performed by setting the mean value of WT data points as 100 or 1, and all data points including WT ones were normalized to that mean value. Data are presented as mean ± SD of three biological replicates. **p<0.01; *p<0.05 (calculated using Student’s t-test). (C) Normalized surface levels of GLUT-SPR in WT and KO adipocytes. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using Student’s t-test). (D) Representative confocal images showing the localization of GLUT-SPR in unpermeabilized WT and Commd3 KO adipocytes, which were either untreated or treated with 100 nM insulin for one hour. Surface GLUT-SPR was labeled using anti-HA antibodies and Alexa Fluor 568-conjugated secondary antibodies. Nuclei were stained with Hoechst 33342. Scale bars: 10 µm.Figure 2—source data 1.Figure 2A, indicating the relevant bands and treatments.Figure 2—source data 2.Figure 2A.Figure 2—source data 3.Commd3 KO preadipocytes shown in Figure 2B.Figure 2—source data 4.Commd3 KO adipocytes shown in Figure 2C.
+**Figure 2.:** (A) Representative immunoblots showing the indicated proteins in wild-type (WT) and Commd3 KO mouse preadipocytes. (B) Normalized surface levels of GLUT-SPR measured by flow cytometry in WT and KO preadipocytes. The cells were either untreated or treated with 100 nM insulin for 1 hr before surface GLUT-SPR was labeled using anti-HA antibodies and APC-conjugated secondary antibodies. To calculate surface levels of GLUT-SPR, mean APC values were divided by mean GFP fluorescence. To inhibit insulin signaling, 100 nM wortmannin was added prior to insulin stimulation. In all figures, data normalization was performed by setting the mean value of WT data points as 100 or 1, and all data points including WT ones were normalized to that mean value. Data are presented as mean ± SD of three biological replicates. **p<0.01; *p<0.05 (calculated using Student’s t-test). (C) Normalized surface levels of GLUT-SPR in WT and KO adipocytes. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using Student’s t-test). (D) Representative confocal images showing the localization of GLUT-SPR in unpermeabilized WT and Commd3 KO adipocytes, which were either untreated or treated with 100 nM insulin for one hour. Surface GLUT-SPR was labeled using anti-HA antibodies and Alexa Fluor 568-conjugated secondary antibodies. Nuclei were stained with Hoechst 33342. Scale bars: 10 µm.
 
 To further characterize the function of COMMD3 in the endosomal trafficking of GLUT-SPR, we stained for EEA1, an early endosome marker (Mishra et al., 2010), and examined the morphology of EEA1-positive organelles. We observed that the morphology of EEA1-positive endosomes was significantly altered in Commd3 KO cells (Figure 3A). The size of the EEA1-positive endosomes markedly increased in Commd3 KO cells (Figure 3A and B), reminiscent of the endosome enlargement observed in Retromer-deficient cells (Neuman et al., 2021). We also observed elevated GLUT-SPR accumulation in EEA1-positive endosomes in Commd3 KO cells (Figure 3C). Next, we used Structured Illumination Microscopy (SIM) to visualize the localization of GLUT-SPR and Rab5, another marker of the early endosome (Langemeyer et al., 2018). We found that a portion of GLUT-SPR resided in Rab5-positive compartments and its co-localization with Rab5 increased in Commd3 KO cells (Figure 3D and E).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig3-v1.jpg)
 
-**Figure 3.:** (A) Representative confocal images showing the localization of EEA1 and GLUT-SPR in permeabilized wild-type (WT) and Commd3 KO adipocytes stimulated with 100 nM insulin for 1 hr (scale bars: 10 µm). Enlarged inset images depict co-localization of EEA1 and GLUT-SPR (scale bars: 5 µm). (B) Violin plot showing quantification of EEA1-positive puncta using Fiji threshold analysis. Data of the KO adipocytes were normalized to those of WT cells. Three independent experiments are shown with ten cells analyzed in each experiment. ***p<0.001 (calculated using Student’s t-test). (C) Violin plot depicting quantification of GFP mean fluorescence intensity (MFI) in EEA1-positive puncta using Fiji threshold analysis. Data of KO adipocytes were normalized to those of WT cells. Three independent experiments are shown with ten cells analyzed in each experiment. ***p<0.001 (calculated using Student’s t-test). (D) Representative Structured Illumination Microscopy (SIM) images showing the subcellular localization of Rab5 and GLUT-SPR in WT and Commd3 KO preadipocytes (scale bars: 5 µm). (E) Quantification of Rab5 and GLUT-SPR co-localization based on SIM images, which were captured as in (D) and analyzed using ImageJ. Each dot represents data of a subcellular region of interest. Five cells were analyzed and three regions per cell were quantified. ***p<0.001 (calculated using Student’s t-test).Figure 3—source data 1.Commd3 KO cells is shown in Figure 3B.Figure 3—source data 2.Commd3 KO cells is shown in Figure 3C.Figure 3—source data 3.Commd3 KO cells is shown in Figure 3D.
+**Figure 3.:** (A) Representative confocal images showing the localization of EEA1 and GLUT-SPR in permeabilized wild-type (WT) and Commd3 KO adipocytes stimulated with 100 nM insulin for 1 hr (scale bars: 10 µm). Enlarged inset images depict co-localization of EEA1 and GLUT-SPR (scale bars: 5 µm). (B) Violin plot showing quantification of EEA1-positive puncta using Fiji threshold analysis. Data of the KO adipocytes were normalized to those of WT cells. Three independent experiments are shown with ten cells analyzed in each experiment. ***p<0.001 (calculated using Student’s t-test). (C) Violin plot depicting quantification of GFP mean fluorescence intensity (MFI) in EEA1-positive puncta using Fiji threshold analysis. Data of KO adipocytes were normalized to those of WT cells. Three independent experiments are shown with ten cells analyzed in each experiment. ***p<0.001 (calculated using Student’s t-test). (D) Representative Structured Illumination Microscopy (SIM) images showing the subcellular localization of Rab5 and GLUT-SPR in WT and Commd3 KO preadipocytes (scale bars: 5 µm). (E) Quantification of Rab5 and GLUT-SPR co-localization based on SIM images, which were captured as in (D) and analyzed using ImageJ. Each dot represents data of a subcellular region of interest. Five cells were analyzed and three regions per cell were quantified. ***p<0.001 (calculated using Student’s t-test).
 
 Together, these data demonstrate that deletion of Commd3 leads to the enlargement of early endosomes and accumulation of GLUT-SPR in these compartments, consistent with a trafficking defect occurring at the endosomal recycling step.
 
-## COMMD3 regulates endosomal trafficking in a Commander-independent manner
+### COMMD3 regulates endosomal trafficking in a Commander-independent manner
 
 Next, we sought to confirm the Commander-independent function of COMMD3 using comparative targeted mutations. We deleted genes encoding other Commander subunits and compared the phenotypes of the KO cells with that of Commd3 KO cells. The COMMD proteins are found in three subcomplexes prior to forming the heterodecameric COMMD complex: subcomplex A (COMMD1-4-6-8), subcomplex B (COMMD2-3-4-8), and subcomplex C (COMMD5-7-9-10) (Healy et al., 2023). Here, we selected COMMD1, COMMD3, and COMMD5 as representative subunits of the three subcomplexes. We measured surface levels of integrin alpha-6 (ITGA6), a known Commander-dependent cargo (McNally et al., 2017), in cells lacking one of the COMMD proteins. As expected, surface levels of ITGA6 were downregulated in all these KO cell lines (Figure 4A), confirming the canonical role of COMMD3 within the Commander holo-complex.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Normalized surface levels of ITGA6 (A), GLUT-SPR (B), TfR (C), and LAMP1 (D) measured by flow cytometry in the indicated preadipocyte cell lines. To calculate surface levels of GLUT-SPR, mean APC values were divided by mean GFP fluorescence. Data of all cell samples were normalized to those of wild-type (WT) cells. Data of ITGA6 (n=3), GLUT-SPR (n=6), TfR (n=10), and LAMP1 (n=3) are presented as mean ± SD. **p<0.01; ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of total TfR levels in the indicated preadipocyte cell lines based on protein intensities from immunoblots, analyzed using ImageJ. Data were normalized to WT cells. Data are presented as mean ± SD from three biological replicates. **p<0.01; n.s., p>0.05 (one-way ANOVA). (B) Normalized surface-to-total TfR ratio. Surface TfR levels, measured by flow cytometry, were normalized to total protein expression. Data are presented as mean ± SD from three biological replicates. *p<0.05; ***p<0.001; n.s., p>0.05 (one-way ANOVA).
+
 Next, we examined the trafficking of other cargo proteins. We found that surface levels of GLUT-SPR were slightly increased in the Commd1 KO cells, in contrast to the strong reduction observed in Commd3 KO cells (Figure 4B). Surface levels of GLUT-SPR were only slightly affected in Commd5 KO cells (Figure 4B). Surface levels of the transferrin receptor (TfR), a Commander-independent cargo (Puthenveedu et al., 2010), were markedly decreased in Commd3 KO cells but remained intact in Commd1 or Commd5 KO populations (Figure 4C). Total TfR levels also decreased in Commd3 KO cells (Figure 4—figure supplement 1), consistent with the notion that unretrieved cargo is routed to the lysosome for degradation (Healy et al., 2023; Simonetti and Cullen, 2019; Cullen and Steinberg, 2018). Surface levels of lysosomal-associated membrane protein 1 (LAMP1) were also strongly decreased in Commd3 KO cells but were not substantially changed in Commd1 or Commd5 KO cells (Figure 4D). Together, comparative analysis of these diverse membrane proteins clearly demonstrates that COMMD3 regulates a group of cargo proteins independent of the Commander holo-complex, in addition to its canonical function within the Commander complex.
 
-## Mutations of CCDC93 or Retriever lead to upregulation of COMMD3
+### Mutations of CCDC93 or Retriever lead to upregulation of COMMD3
 
 To further characterize the Commander-independent function of COMMD3, we examined the KO phenotypes of other Commander subunits. We observed that the expression of CCDC93 and VPS35L was substantially decreased in Commd3 KO cells, and VPS35L expression was diminished in Ccdc93 KO cells. These findings are consistent with the notion that stability of subunits within a protein complex is interdependent (Wang et al., 2023; Gulbranson et al., 2019). Interestingly, we observed that COMMD3 expression was not reduced but upregulated in Ccdc93 or Vps35l KO cells (Figure 5A, Figure 5—figure supplement 1). Thus, unlike other Commander subunits, COMMD3 persists when other subunits of the Commander complex are depleted, further supporting the ability of COMMD3 to regulate endosomal trafficking independent of the Commander holo-complex.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative immunoblots showing protein expression in the indicated preadipocyte cell lines. (B–D) Normalized surface levels of transferrin receptor (TfR) measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of WT cells. Data are presented as mean ± SD of three biological replicates. **p<0.01; ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Total COMMD3 levels in the indicated preadipocyte cell lines were quantified based on protein intensities from immunoblots, analyzed using ImageJ. Data were normalized to wild-type (WT) cells. Data are presented as mean ± SD from three biological replicates. ***p<0.001; *p<0.05 (one-way ANOVA).
+
 The upregulation of COMMD3 in Commander-deficient cells, which likely reflects a compensatory mechanism, offers another strategy to test the Commander-independent function of COMMD3. We reasoned that if a cargo is dependent on COMMD3 but not on the Commander complex, its surface levels could be increased in cells with elevated COMMD3. Indeed, we observed that surface levels of TfR, a cargo dependent on Commd3 but not on the Commander complex (Figure 4C; Puthenveedu et al., 2010), were markedly increased in Ccdc93 or Vps35l KO cells (Figure 5B). Conversely, surface TfR levels were diminished in Commd3 KO cells and were fully restored by expression of a Commd3 rescue gene (Figure 5B). Total TfR expression was also reduced in Commd3 KO cells and was rescued by the Commd3 rescue gene (Figure 7D, Figure 4—figure supplement 1A). KO of both Commd3 and Ccdc93 resulted in decreased surface levels of TfR (Figure 5C), confirming that the elevated surface TfR observed in Ccdc93 KO cells was caused by COMMD3 upregulation. Consistent with this notion, overexpression of Commd3 in WT cells markedly elevated TfR surface levels (Figure 5D). Altogether, these results demonstrate that COMMD3 is upregulated in Retriever- or CCDC93-deficient cells and enhances the endosomal retrieval of COMMD3-dependent cargoes, further supporting a Commander-independent role of COMMD3 in endosomal recycling.
 
-## The NTD of COMMD3 mediates its Commander-independent function and interacts with ARF1
+### The NTD of COMMD3 mediates its Commander-independent function and interacts with ARF1
 
 Next, we sought to determine the molecular mechanism by which COMMD3 regulates endosomal trafficking in a Commander-independent manner. The COMMD3 protein is comprised of two autonomously folded domains – NTD and CTD (Figure 6A). The C-terminal COMMD domains of COMMD proteins are well-conserved and mediate the formation of the heterodecameric COMMD complex within the Commander holo-complex (Boesch et al., 2024; Maine and Burstein, 2007). The NTDs of COMMD proteins share a similar structure but are more divergent in sequence (Laulumaa et al., 2024; Healy et al., 2018). The function of the COMMD NTDs is unknown. Next, we examined whether the Commander-independent function of COMMD3 relies on its NTD. We expressed the COMMD3 NTD in Commd3 KO cells and examined whether the KO phenotype could be rescued. Indeed, expression of the COMMD3 NTD fully restored the surface levels of TfR in Commd3 KO cells while the CTD did not (Figure 6B, Figure 6—figure supplement 1), indicating that the NTD is sufficient for this function.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig6-v1.jpg)
+
+**Figure 6.:** (A) Top, diagram depicting the domain organization of COMMD3. Bottom: the structural model of COMMD3 (AlphaFold Protein Structure Database: AF-Q9UBI1-F1) showing the independently folded NTD and C-terminal domain (CTD). (B) Normalized surface levels of transferrin receptor (TfR) measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of wild-type (WT) cells. Data are presented as mean ± SD of three biological replicates. *p<0.05; ***p<0.001 (calculated using one-way ANOVA). (C) Diagrams of full-length (FL) and truncated COMMD3 proteins used in proteomic experiments. The proteins were tagged with mCherry (mCh) and 3xFLAG (3xF). (D) Procedures of proteomic analysis to determine the interactomes of FL and truncated COMMD3 proteins. (E) Venn diagram showing the interactomes of COMMD3 proteins. (F) A scatter plot showing the fold change of protein abundance over vector control in the interactomes of FL COMMD3 and the NTD of COMMD3. Selected proteins are labeled. (G) Representative immunoblots showing the interactions of ARF1 Q71L with COMMD3-NTD. HA-tagged ARF1 Q71L and 3xFLAG-tagged COMMD3-NTD were co-expressed in 293T cells. COMMD3-NTD and associated proteins were immunoprecipitated using anti-FLAG antibodies and detected using immunoblotting. The ARF Q71L mutant was used here because it adopts a GTP-bound configuration (Cohen and Donaldson, 2010; Zhang et al., 1994).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Normalized surface levels of TfR were measured by flow cytometry in the indicated preadipocyte cell lines. Data were normalized to wild-type (WT) cells. Results are presented as mean ± SD from three biological replicates. ***p<0.001; n.s., p>0.05 (one-way ANOVA).
+
 To gain molecular insights into the NTD of COMMD3, we determined the interactomes of full-length (FL) COMMD3, NTD, and C-terminal domain (CTD) (Figure 6C and D). FL COMMD3, NTD, and CTD were individually expressed and isolated through co-immunoprecipitation (co-IP), and the associated proteins within these samples were identified using mass spectrometry. Through this proteomic analysis, we identified a group of proteins present in the interactomes of FL COMMD3 and NTD but absent from the CTD interactome (Figure 6E, Supplementary file 1). Among these proteins, ARF1 emerged as a strong candidate because it acts as a membrane trafficking regulator known to function on endosomes (Figure 6F; Nakai et al., 2013; Stockhammer et al., 2024). The ARF family of proteins is small GTPases involved in the recruitment of coat proteins, activation of membrane lipid-modifying enzymes, and interaction with the cytoskeleton (Stockhammer et al., 2024; D’Souza-Schorey and Chavrier, 2006). Using co-IP, we observed that the NTD of COMMD3 interacted with ARF1 (Figure 6G), confirming the results of the proteomic experiments. Together, these data demonstrate that the NTD of COMMD3 mediates its Commander-independent function and interacts with ARF1.
 
-## COMMD3 regulates the stability of ARF1
+### COMMD3 regulates the stability of ARF1
 
 To further characterize the interaction between COMMD3 and ARF1, we used SIM to visualize their subcellular localization. We observed significant co-localization between ARF1 and the NTD of COMMD3 (Figure 7A and B), consistent with their interactions detected in proteomic and co-IP experiments (Figure 6). We noted that, in the co-IP assays using 293T cells, ARF1 expression levels were significantly elevated when co-expressed with the NTD of COMMD3 (Figure 6G). A similar ARF1-stabilizing effect was also observed in HeLa cells (Figure 7C). These findings raised the possibility that COMMD3 uses its NTD to bind and stabilize ARF1. To test this model, we examined endogenous ARF1 levels in Commd3 KO cells. Interestingly, we found that ARF1 levels were markedly reduced in Commd3 KO cells and were fully restored upon introduction of a COMMD3 rescue gene (Figure 7D). To further investigate the functional link between COMMD3 and ARF1, we overexpressed ARF1 in Commd3 KO cells. Strikingly, ARF1 overexpression fully restored the surface levels of TfR in Commd3 KO cells (Figure 7E). These data demonstrate that COMMD3 regulates endosomal trafficking through binding and stabilizing ARF1.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig7-v1.jpg)
 
-**Figure 7.:** (A) Representative Structured Illumination Microscopy (SIM) images showing the subcellular localization of ARF1 and COMMD3-NTD expressed in HeLa cells. HA-tagged ARF1 and 3xFLAG-tagged COMMD3-NTD were transiently expressed in HeLa cells and stained using anti-HA and anti-FLAG antibodies, respectively (scale bars: 5 µm). (B) Quantification of ARF1 and COMMD3-NTD co-localization based on SIM images, which were captured as in (A) and analyzed using ImageJ. Each dot represents data of an individual cell. In randomized samples, ARF1 images were rotated 90° clockwise, whereas COMMD3-NTD images were not rotated. ***p<0.001 (calculated using Student’s t-test). (C) Representative immunoblots showing the ARF1-stabilizing effects of COMMD3-NTD. HA-tagged ARF1 Q71L and 3xFLAG-tagged COMMD3-NTD were transiently expressed in HeLa cells and their total expression levels were measured using immunoblotting. (D) Representative immunoblots showing protein expression in the indicated preadipocyte cell lines. (E) Normalized surface levels of TfR measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of wild-type (WT) preadipocytes. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA).Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7C and D, indicating the relevant bands and treatments.Figure 7—source data 3.Figure 7C and D.Figure 7—source data 4.Figure 7E.
+**Figure 7.:** (A) Representative Structured Illumination Microscopy (SIM) images showing the subcellular localization of ARF1 and COMMD3-NTD expressed in HeLa cells. HA-tagged ARF1 and 3xFLAG-tagged COMMD3-NTD were transiently expressed in HeLa cells and stained using anti-HA and anti-FLAG antibodies, respectively (scale bars: 5 µm). (B) Quantification of ARF1 and COMMD3-NTD co-localization based on SIM images, which were captured as in (A) and analyzed using ImageJ. Each dot represents data of an individual cell. In randomized samples, ARF1 images were rotated 90° clockwise, whereas COMMD3-NTD images were not rotated. ***p<0.001 (calculated using Student’s t-test). (C) Representative immunoblots showing the ARF1-stabilizing effects of COMMD3-NTD. HA-tagged ARF1 Q71L and 3xFLAG-tagged COMMD3-NTD were transiently expressed in HeLa cells and their total expression levels were measured using immunoblotting. (D) Representative immunoblots showing protein expression in the indicated preadipocyte cell lines. (E) Normalized surface levels of TfR measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of wild-type (WT) preadipocytes. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA).
 
-## Mutations disrupting the COMMD3-ARF1 interaction impair the Commander-independent function of COMMD3
+### Mutations disrupting the COMMD3-ARF1 interaction impair the Commander-independent function of COMMD3
 
 Finally, we sought to determine whether ARF1 binding is required for the Commander-independent function of COMMD3. AlphaFold3 predicted a high-confidence structure of the ARF1-GTP:COMMD3-NTD heterodimeric complex (Figure 8A and B). According to this structural model, the α1 helix of COMMD3-NTD binds to the switch 1 of ARF1, while the α3 and α4 helices of COMMD3-NTD interact with the switch 2 of ARF1 (Figure 8A and B, Source data 1). The switches 1 and 2 of ARF1 are highly conserved regions that are regulated by GTP binding and interact with effectors involved in endosomal recycling (Goldberg, 1998; Sauvageau et al., 2017). The binding of COMMD3 to ARF1 is mainly mediated by hydrophobic interactions and hydrogen bonds, including hydrogen bonds formed by K60 and H61 of COMMD3 with Y81 of ARF1, K60 of COMMD3 with R79 and Q83 of ARF1, H63 of COMMD3 with H80 of ARF1 (Figure 8A and B, Source data 1). AphaFold3 did not predict high-confidence structural models between COMMD3-NTD and ARF1-GDP or apo-ARF1, suggesting that COMMD3 selectively recognizes the GTP-bound form of ARF1. This conclusion is consistent with the observation that COMMD3 strongly stabilizes GTP-bound ARF1 (Figures 6G and 7C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/105264/elife-105264-fig8-v1.jpg)
 
-**Figure 8.:** (A) Left: the AlphaFold3-predicted structure of the COMMD3:ARF1 heterodimer visualized using ChimeraX1.8. The structural prediction was performed using COMMD3-NTD (a.a. 1–120, purple), ARF1 (pink), and GTP (green) as input. Right: key residues at the COMMD3-ARF1 binding interface. The CIF file of the structural model is included in Supplementary Dataset 1. (B) Predicted alignment error (PAE) heatmap of the structural model shown in (A). (C) Diagrams showing the residues mutated in a COMMD3-NTD mutant (COMMD3-NTD*, only a.a. 56–65 are shown). Mutated residues are shown in red. (D) Quantification of COMMD-NTD and NTD* stably expressed in preadipocytes based on Structured Illumination Microscopy (SIM) images, which were captured and analyzed as in Figure 7A–B. Each dot represents data of an individual cell. MFI, mean fluorescence intensity. n.s., p>0.05 (calculated using Student’s t-test). (E) Normalized surface levels of transferrin receptor (TfR) measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of wild-type (WT) cells. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA). (F) Quantification of endogenous ARF1 in the indicated preadipocyte cell lines based on intensities of proteins on immunoblots quantified using ImageJ. Data of all samples were normalized to those of WT cells. Data are presented as mean ± SD of three biological replicates. *p<0.05; n.s., p>0.05; **p<0.01 (calculated using one-way ANOVA).Figure 8—source data 1.Figure 8D.Figure 8—source data 2.Figure 8E.Figure 8—source data 3.Figure 8F.
+**Figure 8.:** (A) Left: the AlphaFold3-predicted structure of the COMMD3:ARF1 heterodimer visualized using ChimeraX1.8. The structural prediction was performed using COMMD3-NTD (a.a. 1–120, purple), ARF1 (pink), and GTP (green) as input. Right: key residues at the COMMD3-ARF1 binding interface. The CIF file of the structural model is included in Supplementary Dataset 1. (B) Predicted alignment error (PAE) heatmap of the structural model shown in (A). (C) Diagrams showing the residues mutated in a COMMD3-NTD mutant (COMMD3-NTD*, only a.a. 56–65 are shown). Mutated residues are shown in red. (D) Quantification of COMMD-NTD and NTD* stably expressed in preadipocytes based on Structured Illumination Microscopy (SIM) images, which were captured and analyzed as in Figure 7A–B. Each dot represents data of an individual cell. MFI, mean fluorescence intensity. n.s., p>0.05 (calculated using Student’s t-test). (E) Normalized surface levels of transferrin receptor (TfR) measured by flow cytometry in the indicated preadipocyte cell lines. Data of all cell samples were normalized to those of wild-type (WT) cells. Data are presented as mean ± SD of three biological replicates. ***p<0.001; n.s., p>0.05 (calculated using one-way ANOVA). (F) Quantification of endogenous ARF1 in the indicated preadipocyte cell lines based on intensities of proteins on immunoblots quantified using ImageJ. Data of all samples were normalized to those of WT cells. Data are presented as mean ± SD of three biological replicates. *p<0.05; n.s., p>0.05; **p<0.01 (calculated using one-way ANOVA).
 
 Altogether, these results further support the conclusion that COMMD3 regulates endosomal trafficking through binding and stabilizing ARF1 (Figure 9).
 
@@ -114,11 +138,308 @@ Our findings raise the intriguing possibility that other COMMD proteins may also
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>COMMD3</td>
+      <td>Uniprot</td>
+      <td>Q9UBI1</td>
+      <td>Sequence codon optimized to avoid Cas9 targeting</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ARF1</td>
+      <td>Entrez</td>
+      <td>PVNH8</td>
+      <td>Cloned from Addgene # 39554</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Preadipocytes</td>
+      <td>Dr. Shingo Kajimura</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (M. musculus)</td>
+      <td>pLenti-CRISPR-v2</td>
+      <td>Addgene</td>
+      <td>#52961</td>
+      <td>Lentiviral construct to infect and express Cas9 and gRNA.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (M. musculus)</td>
+      <td>pLentiGuide-Puro vector</td>
+      <td>Addgene</td>
+      <td>#52963</td>
+      <td>Lentiviral construct to infect and express gRNA.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens, M. musculus)</td>
+      <td>SHC003 GFPD</td>
+      <td>Addgene</td>
+      <td>#133301</td>
+      <td>Mammalian expression plasmid backbone.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens, M. musculus)</td>
+      <td>SHC003 GFPD-humanCOMMD3-FL-mCherry-3xFLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to infect/transfect cells and express genes.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens, M. musculus)</td>
+      <td>SHC003 GFPD-humanCOMMD3-NTD-mCherry-3xFLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to infect/transfect cells and express genes.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens, M. musculus)</td>
+      <td>SHC003 GFPD-mCherry-humanCOMMD3-CTD-3xFLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to infect/transfect cells and express genes.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens, M. musculus)</td>
+      <td>SHC003 GFPD-humanARF1-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to infect/transfect cells and express genes.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>COMMD3 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CTTCGCGCTTCTCCTCCGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>COMMD3 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTTGAAACAGATCGACCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>COMMD1 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TCACGGACACTCGGGTGTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Commd1 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ACTGCTCAAACCAAAAAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Commd5 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GTTGTTGAAACTCGTAGTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Commd5 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TGCCAGCGCCAACCTGTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Ccdc93 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGAAAGTACCGACGGCAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Ccdc93 CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GATGACCGCCATGGCAAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Vps35l CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGATTATGTGAACCGCATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Vps35l CRISPR guide RNA sequence primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGAGGTTTGCAAGTGCATCA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA mouse monoclonal</td>
+      <td>BioLegend</td>
+      <td>#901501, RRID:AB_2565006</td>
+      <td>Flow (1:250), IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-LAMP1 mouse monoclonal</td>
+      <td>BioLegend</td>
+      <td>#328619, RRID:AB_1279055</td>
+      <td>Flow (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ITGA6 rat monoclonal</td>
+      <td>Invitrogen</td>
+      <td>#14-0495-82, RRID:AB_891480</td>
+      <td>Flow (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse secondary antibodies rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>#17-4015-82, RRID:AB_2573205</td>
+      <td>Flow (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-rat antibodies goat polyclonal</td>
+      <td>Invitrogen</td>
+      <td>#A10540, RRID:AB_10562535</td>
+      <td>Flow (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-TfR/CD71 antibodies mouse monoclonal</td>
+      <td>BioLegend</td>
+      <td>#334108, RRID:AB_10915138</td>
+      <td>Flow (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#F1804, RRID:AB_262044</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-conjugated anti-rabbit IgG goat polyclonal</td>
+      <td>Invitrogen</td>
+      <td>#A32733, RRID:AB_2633282</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated anti-mouse IgG goat polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#A11004, RRID:AB_2534072</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COMMD3 rabbit polyclonal</td>
+      <td>Bethyl</td>
+      <td>#A304-092A, RRID:AB_2621341</td>
+      <td>IB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VPS35L rabbit polyclonal</td>
+      <td>Invitrogen</td>
+      <td>#PA5-28553, RRID:AB_2546029</td>
+      <td>IB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CCDC93 mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>#sc-514600</td>
+      <td>IB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha-tubulin mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>#12G10, RRID:AB_1210456</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-FLAG M2 mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A8592, RRID:AB_439702</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-HA rat monoclonal</td>
+      <td>Roche</td>
+      <td>#12013819001, RRID:AB_390917</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit IgG goat polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A6154, RRID:AB_258284</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgG sheep polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A6782, RRID:AB_258315</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold3 (AF3)</td>
+      <td>PMID:38718835</td>
+      <td></td>
+      <td>Used for structural prediction</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 HeLa and 293T cells were obtained from ATCC and had been authenticated by the vendor. Mouse preadipocytes were immortalized cells derived from mouse adipose tissue and were validated using expression markers such as GLUT4, as well as functional assays including differentiation into adipocytes and insulin responsiveness. All cell lines were routinely tested for mycoplasma contamination by the StemTech core facility at the University of Colorado Boulder. The cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% FB Essence (FBE, VWR, #10803–034) and penicillin/streptomycin (Thermo Scientific, #15140122). The cells were maintained in a humidified incubator at 37 ℃ with 5% CO2. To differentiate preadipocytes into mature adipocytes, preadipocytes were grown to ~95% confluence before a differentiation cocktail was added at the following final concentrations: 5 µg/mL insulin (Sigma, #I0516), 1 nM Triiodo-L-thyronine (T3, Sigma, #T2877), 125 µM indomethacin (Sigma, #I-7378), 5 µM dexamethasone (Sigma, #D1756), and 0.5 mM 3-isobutyl-1-methylxanthine (IBMX, Sigma, #I5879). After two days, the cells were switched to DMEM supplemented with 10% FBE, 5 µg/mL insulin, and 1 nM T3. After another two days, fresh DMEM media supplemented with 10% FBE and 1 nM T3 were added to the cells. Differentiated adipocytes were usually analyzed six days after addition of the differentiation cocktail.
 
-## Gene KO using CRISPR-Cas9
+### Gene KO using CRISPR-Cas9
 
 Genome-wide CRISPR screens of GLUT-SPR surface homeostasis and gene essentiality were described previously (Wang et al., 2023). To individually ablate a candidate gene, gRNAs targeting the gene were chosen via the CRISPick algorithm (https://portals.broadinstitute.org/gppx/crispick/public) to maximize KO efficiency and minimize off-target effects. The upstream guide was cloned into the pLenti-CRISPR-v2 vector (Addgene, #52961) and the downstream guide was cloned into a modified version of the pLentiGuide-Puro vector (Addgene, #52963), in which the puromycin selection marker was replaced with a hygromycin selection marker.
 
@@ -126,30 +447,30 @@ Guide sequences targeting the mouse Commd3 gene are: CTTCGCGCTTCTCCTCCGGG and CT
 
 CRISPR plasmids were transfected into HEK 293T cells along with pAdVAntage (Promega, #E1711), pCMV-VSVG (Addgene, #8454), and psPax2 (Addgene, #12260). The 293T cell culture media containing lentiviral particles were harvested daily for four days and centrifuged at 25,000 rpm (113,000 g) for 1.5 hr at 4 °C using a Beckman SW28 rotor. Viral pellets were resuspended in PBS and used to infect target cells. After lentiviral infection, cells were selected using 3.5 µg/mL puromycin (Sigma, #3101118) for 2 days, followed by selection using 500 µg/mL hygromycin B (Thermo, #10687010) for another 2 days. All KO cells used in this work were pooled KO cell populations.
 
-## Gene expression in mammalian cells
+### Gene expression in mammalian cells
 
 The codon-optimized human COMMD3 gene with a 3xFLAG-encoding sequence or an mCherry-3xFlag-encoding sequence was subcloned into the SHC003BSD-GFPD vector (Addgene, #133301). This COMMD3 gene was not targeted by gRNAs used in the KO experiments. The plasmid expressing the NTD (amino acids 1–124) of human COMMD3 was generated in a similar way. For the IP experiments, DNA fragments encoding FL and truncated human COMMD3 were subcloned into the SHC003BSD-GFPD vector. FL COMMD3 (amino acids 1–195) and NTD were fused to mCherry and 3xFlag tags at their C-termini. The CTD (amino acids 125–195) was fused to an mCherry tag at its N-terminus and a 3xFlag tag at its C-terminus. The human ARF1 gene was subcloned into the SHC003BSD-GFPD vector with an HA-encoding sequence at the 3’ end. The constructs were transfected into 293T cells to produce lentiviral particles using a similar procedure as CRISPR lentiviral production. The lentiviruses were used to infect target cells, followed by selection using 10 µg/mL blasticidin (Thermo Fisher Scientific, #BP2647).
 
-## Flow cytometry
+### Flow cytometry
 
 Cells grown on cell culture plates were washed with ice-cold KRH buffer and blocked at 4 °C with KRH buffer supplemented with 5% FBE. Subsequently, the cells were labeled for 1 hr with KRH buffer containing 2% FBE and the following antibodies: anti-HA (BioLegend, #901501, RRID:AB_2565006), APC-conjugated anti-LAMP1 (BioLegend, #328619, RRID:AB_1279055), anti-ITGA6 (Invitrogen, #14-0495-82, RRID:AB_891480), APC-conjugated anti-mouse secondary antibodies (eBioscience, #17-4015-82, RRID:AB_2573205), APC-conjugated anti-rat antibodies (Invitrogen, #A10540, RRID:AB_10562535), and APC-conjugated anti-TfR/CD71 antibodies (BioLegend, #334108, RRID:AB_10915138). Following antibody labeling, cells were washed twice with KRH buffer containing 5% FBE and once with PBS. Cells were dissociated using Accutase before resuspension in PBS buffer containing 5% FBE. Cells were analyzed in triplicate on a CyAN ADP analyzer (Beckman Coulter).
 
-## Immunostaining and imaging
+### Immunostaining and imaging
 
 Cells grown on glass coverslips were washed with PBS and fixed using 4% PFA in PBS. Cells were then permeabilized using 0.1% Tween-20 and blocked with PBS buffer containing 5% FBE. Permeabilization was omitted when surface proteins were stained. Cells were labeled for 1 hr with 2% FBE in PBS using the following antibodies: anti-HA, anti-FLAG M2 (Sigma-Aldrich, #F1804, RRID:AB_262044), Alexa Fluor 647-conjugated anti-mouse IgG (Invitrogen, #A32733, RRID:AB_2633282), and Alexa Fluor 568-conjugated anti-rabbit IgG (Thermo Fisher Scientific, #A11004, RRID:AB_2534072). Confocal images were acquired on a Nikon A1 laser scanning confocal microscope using a ×100×oil immersion objective. In SIM, images were captured using a 100 x oil immersion objective on a Nikon SIM microscope as previously described (Wan et al., 2024).
 
-## Immunoprecipitation (IP) and immunoblotting
+### Immunoprecipitation (IP) and immunoblotting
 
 In IP experiments, cells were lysed in IP buffer (25 mM HEPES [pH 7.4], 138 mM NaCl, 10 mM Na3PO4, 2.7 mM KCl, 0.5% CHAPS, 1 mM DTT, and a protease inhibitor cocktail). After centrifugation, proteins were immunoprecipitated from cell extracts using primary antibodies and protein A/G agarose beads (Thermo Scientific, #WF324079). For immunoblotting, immunoprecipitates or whole cell lysates were resolved on 8% Bis-Tris SDS–polyacrylamide gel electrophoresis (SDS-PAGE) and transferred to PVDF membranes. Proteins were detected using unlabeled primary antibodies and horseradish peroxidase (HRP)-conjugated secondary antibodies, or HRP-conjugated primary antibodies. Primary antibodies used in immunoblotting include anti-COMMD3 (Bethyl, #A304-092A, RRID:AB_2621341), anti-VPS35L (Invitrogen, #PA5-28553, RRID:AB_2546029), anti-CCDC93 (Santa Cruz Biotechnology, #sc-514600), anti-alpha-tubulin (DSHB, #12G10, RRID:AB_1210456), HRP-conjugated anti-FLAG M2 (Sigma-Aldrich, #A8592, RRID:AB_439702), and HRP-conjugated anti-HA (Roche, #12013819001, RRID:AB_390917). Secondary antibodies used in this work include HRP-conjugated anti-rabbit IgG (Sigma-Aldrich, #A6154, RRID:AB_258284) and HRP-conjugated anti-mouse IgG (Sigma-Aldrich, #A6782, RRID:AB_258315). All experiments were run in biological triplicates. Intensities of protein bands on immunoblots were quantified using ImageJ.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Mass spectrometry was carried out as previously described (Wang et al., 2023). Immunoprecipitates on protein A/G beads were snap-frozen and stored at –70 °C. Peptides were pre-fractionated using high-pH fractionation and analyzed on the Thermo Ultimate 3000 RSLCnano System via direct injection. Data were processed using MaxQuant/Andromeda (version 1.6.2.10) and compared to Uniprot-annotated protein sequences. False discovery rates were set to 0.01 for protein and peptide assignment with a minimum peptide length of four residues and a minimum peptide number of one.
 
-## Structural prediction and analysis
+### Structural prediction and analysis
 
 The structural model of the ARF1-GTP:COMMD3-NTD (a.a. 1–120) heterodimer was predicted using AlphaFold3 with default settings (Abramson et al., 2024). Five independent structural models were generated for each protein complex, and the quality of the predicted models was assessed through their interface predicted template modeling (ipTM) scores, predicted template modeling (pTM) scores, predicted alignment error (PAE) plots, and predicted local distance difference test (pLDDT) scores (Abramson et al., 2024; Mirdita et al., 2022). Structural analysis was conducted using UCSF ChimeraX (v1.8) (Goddard et al., 2018) and PDBePISA (Krissinel and Henrick, 2007).
 
-## Statistical analysis
+### Statistical analysis
 
 All data shown in the figures are from at least three independent biological replicates. Biological replicates were plated, treated, and analyzed in parallel. Statistical analyses were performed using GraphPad Prism 10. Student’s t-tests were used for comparisons between two groups. One-way ANOVA with Dunnett’s multiple comparisons test (comparing all groups to control) or Sidak’s multiple comparisons test (for internal group comparisons) was used when analyzing experiments with more than two groups. Significance is indicated as follows: n.s., not significant; *p<0.05; **p<0.01; ***p<0.001. Additional details on sample size, error bars, and statistical tests are provided in the figure legends.

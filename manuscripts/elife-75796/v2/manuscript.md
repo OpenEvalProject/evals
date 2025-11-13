@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Vertebrates evolved mechanisms for sodium conservation and gas exchange in conjunction with migration from aquatic to terrestrial habitats. Epithelial Na + channel (ENaC) function is critical to systems responsible for extracellular fluid homeostasis and gas exchange. ENaC is activated by cleavage at multiple specific extracellular polybasic sites, releasing inhibitory tracts from the channel’s α and γ subunits. We found that proximal and distal polybasic tracts in ENaC subunits coevolved, consistent with the dual cleavage requirement for activation observed in mammals. Polybasic tract pairs evolved with the terrestrial migration and the appearance of lungs, coincident with the ENaC activator aldosterone, and appeared independently in the α and γ subunits. In summary, sites within ENaC for protease activation developed in vertebrates when renal Na + conservation and alveolar gas exchange were required for terrestrial survival.
+Vertebrates evolved mechanisms for sodium conservation and gas exchange in conjunction with migration from aquatic to terrestrial habitats. Epithelial Na+ channel (ENaC) function is critical to systems responsible for extracellular fluid homeostasis and gas exchange. ENaC is activated by cleavage at multiple specific extracellular polybasic sites, releasing inhibitory tracts from the channel’s α and γ subunits. We found that proximal and distal polybasic tracts in ENaC subunits coevolved, consistent with the dual cleavage requirement for activation observed in mammals. Polybasic tract pairs evolved with the terrestrial migration and the appearance of lungs, coincident with the ENaC activator aldosterone, and appeared independently in the α and γ subunits. In summary, sites within ENaC for protease activation developed in vertebrates when renal Na+ conservation and alveolar gas exchange were required for terrestrial survival.
 
 ## Introduction
 
@@ -28,13 +28,13 @@ ENaCs are heterotrimers comprising α, β, and γ subunits that each have intrac
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75796/elife-75796-fig1-v2.jpg)
 
-**Figure 1.:** + channel (ENaC) subunits.(A) Space filling model of ENaC (pdb code: 6BQN) with plane indicating position of outer membrane border. The α and γ subunits are white and gray, respectively. The β subunit is colored by domain as indicated in panel B. Intracellular structures are absent in this structural model. (B) Linear model of human ENaC subunits showing domain organization and highlighting position of polybasic cleavage sites and PY motifs. (C) Sequences (Supplementary file 1) were aligned using MUSCLE (Edgar, 2004; Figure 1—source data 1). Residue symbol sizes are proportional to frequency at a given position. Key features in the sequence are indicated, as are the approximate position of α helices (rounded rectangles) and β-strands (arrows). Colors correspond to protein domains, as indicated in panel B. The GRIP (gating release of inhibition by proteolysis) domain is unique to ENaC subunits in the ENaC/Deg family. The P1 and P2 β-strands in the GRIP domain are not indicated, but are likely near the inhibitory tract and distal site, respectively, if present.Figure 1—source data 1.Residues are colored by domain, as in Figure 1: transmembrane and intracellular domains are blue, palm and β-ball domains are orange, finger domain is light green, GRIP (gating release of inhibition by proteolysis) domain is dark green, thumb domain is yellow-green, and the knuckle domain is brown. GRIP domain polybasic tracts and C-terminal PY motifs are underlined in red. Select conserved residues in epithelial Na+ channel (ENaC) subunits are bold.
+**Figure 1.:** (A) Space filling model of ENaC (pdb code: 6BQN) with plane indicating position of outer membrane border. The α and γ subunits are white and gray, respectively. The β subunit is colored by domain as indicated in panel B. Intracellular structures are absent in this structural model. (B) Linear model of human ENaC subunits showing domain organization and highlighting position of polybasic cleavage sites and PY motifs. (C) Sequences (Supplementary file 1) were aligned using MUSCLE (Edgar, 2004; Figure 1—source data 1). Residue symbol sizes are proportional to frequency at a given position. Key features in the sequence are indicated, as are the approximate position of α helices (rounded rectangles) and β-strands (arrows). Colors correspond to protein domains, as indicated in panel B. The GRIP (gating release of inhibition by proteolysis) domain is unique to ENaC subunits in the ENaC/Deg family. The P1 and P2 β-strands in the GRIP domain are not indicated, but are likely near the inhibitory tract and distal site, respectively, if present.
 
 Here, we investigated the evolution of ENaC regulatory mechanisms to determine which features coevolved with the marine–terrestrial transition. We consistently found both activating cleavage sites in the ENaC α and γ subunits of terrestrial vertebrates, while they appeared only sporadically in fishes. We confirmed that cleavage occurred at sites found in the γ subunit from Australian lungfish, leading to channel activation. Phylogenetic analysis and likelihood ratio tests showed a coevolutionary dependence of the polybasic tracts with each other. They also showed a coevolutionary dependence of tandem polybasic tracts with terrestrial status and with lungs. Analysis of ancestral reconstructions strongly suggests that the polybasic tracts appeared independently in the α and γ subunits. Similar analyses of the PY motif showed no coevolutionary pattern and that the PY motif first arose in an ancient ancestral ENaC subunit. Our data suggest that changes associated with adaptation to terrestrial life provided selective pressure for the development of ENaC activation by cleavage.
 
 ## Results
 
-## ENaC subunit sequence conservation and evolution
+### ENaC subunit sequence conservation and evolution
 
 The subphylum Vertebrata encompasses the vast majority of species in the phylum Chordata. We identified ENaC subunit sequences in each of the classes of Vertebrata, including all four ENaC subunits in each mammalian order. In order Rodentia, we found the δ subunit in Spalacidae (blind mole rats; accession XP_008850903), but in neither Muridae (mice and rats) nor Cricetidae (hamsters and voles), suggesting that the δ subunit was lost on the lineage to mice and rats after the divergence of Spalacidae ~34 million years ago (Blanga-Kanfi et al., 2009; Steppan, 2017). Notably, although we found ENaC subunits in Sarcopterygii (lobe-finned fishes) and the ray-finned Polypteriformes (ropefish), we did not find ENaC subunits in any other ray-finned fishes. Instead, BLAST searches using human ENaC subunits identified ENaC-related acid-sensing ion channels (ASICs) and uncharacterized ENaC-like proteins. This suggests ray-finned fishes lost all ENaC subunits after the early divergence of the Polypteriformes order and before the divergence of Chondrostei (sturgeons) and Neopterygii (gars and teleosts). Similarly, we only found ENaC-related proteins in nonvertebrate chordates (e.g., tunicates or cephalochordates).
 
@@ -44,49 +44,388 @@ To examine the evolution of ENaC subunits, we assessed the phylogenetic relation
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75796/elife-75796-fig2-v2.jpg)
 
-**Figure 2.:** + channel (ENaC) subunits.Maximum likelihood tree calculated from ENaC subunit sequences of marine species and select terrestrial vertebrates, and ENaC-related proteins. Branch support bootstrap values are shown. Scale bar indicates the number of substitutions per site. Key ancestral nodes are indicated by circled numbers. A. Lungfish = Australian Lungfish, E. Shark = Elephant Shark, E. Lamprey = European River Lamprey, J. Lamprey = Japanese Lamprey, J. Medaka = Japanese Medaka, S. Lamprey = Sea Lamprey, W. Lungfish = West African Lungfish.
+**Figure 2.:** Maximum likelihood tree calculated from ENaC subunit sequences of marine species and select terrestrial vertebrates, and ENaC-related proteins. Branch support bootstrap values are shown. Scale bar indicates the number of substitutions per site. Key ancestral nodes are indicated by circled numbers. A. Lungfish = Australian Lungfish, E. Shark = Elephant Shark, E. Lamprey = European River Lamprey, J. Lamprey = Japanese Lamprey, J. Medaka = Japanese Medaka, S. Lamprey = Sea Lamprey, W. Lungfish = West African Lungfish.
 
-## Polybasic tracts in the ENaC GRIP domains varied over time
+### Polybasic tracts in the ENaC GRIP domains varied over time
 
 We then examined the sequence conservation of the polybasic tracts in the ENaC subunit GRIP domains required for ENaC activation by cleavage. In mammals, the GRIP domains of the α and γ subunits are each subject to double cleavage, leading to the release of embedded inhibitory tracts and channel activation. The β and δ subunits are not similarly processed. The proprotein convertase furin cleaves both the proximal and distal sites of the α subunit, and the proximal site of the γ subunit (Hughey et al., 2004a). Cleavage distal to the γ subunit inhibitory tract can be catalyzed by several proteases at the cell surface, including prostasin at a polybasic tract (Carattino et al., 2008a; Balchak et al., 2018). Similar results were reported for ENaC from Xenopus laevis (Wichmann et al., 2018). We inspected our multiple sequence alignment for polybasic tracts that aligned closely with the tracts in mammalian and frog α and γ subunits (Figure 1—source data 1). We found polybasic tracts aligning with the proximal and distal sites of the human α and γ subunits for all tetrapod α and γ subunits (Table 1). We also found both sites present in the γ subunit from Erpetoichthys calabaricus (Ropefish) and Neoceratodus forsteri (Australian lungfish), but not in Protopterus annectens (West African lungfish). In coelacanth, we identified single polybasic tracts in the α, β, and γ subunits. The elephant shark’s γ subunit also had a single distal polybasic tract. The human δ subunit sequence also exhibits a polybasic tract in this region, but experimental evidence shows that it is not cleaved (Haerteis et al., 2009).
 
-## Australian lungfish ENaC γ subunit is cleaved at GRIP domain polybasic tracts
+**Table 1.**
+ Polybasic sequences aligning with human epithelial Na+ channel (ENaC) subunit proximal (site 1) and distal (site 2) cleavage sites.Terr., terrestrial. Dashes indicate the absence of polybasic tract. 1The ENaC δ subunit in mammals has a polybasic sequence in the aligned region, but is not cleaved in human channels (Haerteis et al., 2009). Ø, no sequence was available. (⋯), GRIP (gating release of inhibition by proteolysis) domain sequence was missing in the available sequence. Species abbreviations are as in Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">α</th>
+      <th colspan="2">δ</th>
+      <th colspan="2">β</th>
+      <th colspan="2">γ</th>
+    </tr>
+    <tr>
+      <th>Animal</th>
+      <th>Terr.</th>
+      <th>Lungs</th>
+      <th>site 1</th>
+      <th>site 2</th>
+      <th>site 1</th>
+      <th>site 2</th>
+      <th>site 1</th>
+      <th>site 2</th>
+      <th>site 1</th>
+      <th>site 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S.Lamprey</td>
+      <td></td>
+      <td></td>
+      <td>—</td>
+      <td>—</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>J.Lamprey</td>
+      <td></td>
+      <td></td>
+      <td>—</td>
+      <td>—</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>E.Shark</td>
+      <td></td>
+      <td></td>
+      <td>(⋯)</td>
+      <td>(⋯)</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RQHR</td>
+    </tr>
+    <tr>
+      <td>Ropefish</td>
+      <td></td>
+      <td>X</td>
+      <td>—</td>
+      <td>—</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RKRR</td>
+      <td>NRKR</td>
+    </tr>
+    <tr>
+      <td>Coelacanth</td>
+      <td></td>
+      <td></td>
+      <td>RSNR</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>KRER</td>
+      <td>—</td>
+      <td>—</td>
+      <td>VKQR</td>
+    </tr>
+    <tr>
+      <td>W.Lungfish</td>
+      <td></td>
+      <td>X</td>
+      <td>—</td>
+      <td>—</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>A.Lungfish</td>
+      <td></td>
+      <td>X</td>
+      <td>—</td>
+      <td>—</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RKLR</td>
+      <td>RQYR</td>
+    </tr>
+    <tr>
+      <td>Frog</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RVKR</td>
+      <td>RVSR</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RSKR</td>
+      <td>KRTR</td>
+    </tr>
+    <tr>
+      <td>Salamander</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RERR</td>
+      <td>RVRR</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>Ø</td>
+    </tr>
+    <tr>
+      <td>Turtle</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RSPR</td>
+      <td>RHKR</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>KVRR</td>
+      <td>NKRK</td>
+    </tr>
+    <tr>
+      <td>Chicken</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RTSR</td>
+      <td>RQKR</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>KVRR</td>
+      <td>RKRK</td>
+    </tr>
+    <tr>
+      <td>Cow</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RSRR</td>
+      <td>RGVR</td>
+      <td>—</td>
+      <td>RLQR1</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RKRR</td>
+      <td>RKRK</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>X</td>
+      <td>X</td>
+      <td>RSRR</td>
+      <td>RRAR</td>
+      <td>—</td>
+      <td>RLQR1</td>
+      <td>—</td>
+      <td>—</td>
+      <td>RKRR</td>
+      <td>RKRK</td>
+    </tr>
+  </tbody>
+</table>
+
+### Australian lungfish ENaC γ subunit is cleaved at GRIP domain polybasic tracts
 
 To determine whether apparent cleavage sites are functional in a subunit rooted before the emergence of tetrapods, we examined the ENaC γ subunit from Australian lungfish (Aγ) in X. laevis oocytes. Aγ has two furin cleavage motifs predicted to lead to activation (Table 1, Figure 3A). To isolate functional effects to Aγ, we coexpressed an α subunit from mouse lacking residues excised by furin (mouse α∆206–231; mαΔ), rendering it incapable of proteolytic activation (Carattino et al., 2008b). We also coexpressed a mouse β subunit truncated before the C-terminal PY motif (mouse βR564X; mβT) to decrease channel turnover (Shimkets et al., 1997). All γ subunits contained a C-terminal hemagglutinin (HA) epitope tag to facilitate detection (Figure 3A). Oocytes expressing ENaC were conjugated with a membrane impermeant biotin reagent to label surface proteins. We then lysed the oocytes, isolated biotin-labeled proteins using NeutrAvidin beads, and analyzed whole cell and surface enriched samples by western blot using anti-HA antibodies. We detected full-length and cleaved forms of mγ and Aγ (Figure 3B). In both cases, the proportion of cleaved γ subunit was higher in the surface pool than the total pool (Figure 3C), consistent with trafficking-dependent processing reported for mammalian ENaC (Hughey et al., 2004b). To confirm that cleavage occurred at the predicted sites, we mutated the terminal Arg in both sites to Ala (Aγ2A). When we expressed Aγ2A in oocytes, the higher molecular weight band remained readily apparent while the lower molecular weight band largely disappeared. Comparison of quantified band densities confirmed that mutation of predicted cleavage sites in Aγ greatly diminished apparent cleavage (p = 0.007). The extent of any cleavage was similar in total and surface pools for Aγ2A, in contrast to Aγ.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75796/elife-75796-fig3-v2.jpg)
 
-**Figure 3.:** + channel (ENaC) γ subunit from Australian lungfish are functional.(A) Schematic of Aγ topology. Aγ has two predicted furin cleavage sites in its extracellular GRIP (gating release of inhibition by proteolysis) domain. All γ subunits were labeled with C-terminal epitope tags to facilitate detection of full-length subunits and the larger of the cleaved fragments. (B) Xenopus oocytes were injected with cRNAs encoding mα∆, mβT, and hemagglutinin (HA)-tagged γ subunits, as indicated. One day after injection, whole cell lysates and cell surface isolates were blotted and probed for HA and glyceraldehyde-3-phosphate dehydrogenase (GAPDH). Full-length and cleaved bands are indicated and band densities were quantified. An overexposed blot is shown to highlight cell surface bands. Over exposed areas are red. (C) Cleavage %, calculated as cleaved/(cleaved + full length) × 100 is shown. Data were analyzed by repeated measures two-way analysis of variance (ANOVA) with Šidák’s multiple comparison test. p values are shown for indicated comparisons. Cleavage was also greater for Aγ than for mγ (p = 0.05). (D) Normalized total expression was calculated by normalizing the sum of full-length and cleaved bands to the mean of mγ after normalizing each sample for loading based on GAPDH from the same blot. (E) Surface expression % was calculated using band densities adjusted for the fraction of the respective sample loaded. (F) Normalized surface expression was calculated by multiplying values from the same sample in D and E, and then normalizing to the mean of mγ. Data in D–F were analyzed by one-way ANOVA with Tukey’s multiple comparison test. No significant differences between groups were found. Note that due to the lack of GAPDH data for one blot, the number of replicates for D and F (n = 6) is one fewer than for C and E (n = 7). (G) Whole cell currents were measured in injected oocytes by two-electrode voltage clamp, with voltage clamped at −100 mV. Representative traces of indicated subunit combinations are shown. Currents were continuously recorded in a bath solution containing 110 mM Na+. The ENaC-blocking drug amiloride (100 µM) was added at the end of each experiment to determine the ENaC-mediated current. (H) Log-transformed amiloride-sensitive inward currents are plotted, and were analyzed by one-way ANOVA followed by Tukey’s multiple comparison test. p values for comparisons where p < 0.05 are shown. Bars indicate mean values; errors shown are standard deviation (SD).Figure 3—source data 1.Quantification for both blotting and two-electrode voltage clamp experiments are provided in a Microsoft Excel file.
+**Figure 3.:** (A) Schematic of Aγ topology. Aγ has two predicted furin cleavage sites in its extracellular GRIP (gating release of inhibition by proteolysis) domain. All γ subunits were labeled with C-terminal epitope tags to facilitate detection of full-length subunits and the larger of the cleaved fragments. (B) Xenopus oocytes were injected with cRNAs encoding mα∆, mβT, and hemagglutinin (HA)-tagged γ subunits, as indicated. One day after injection, whole cell lysates and cell surface isolates were blotted and probed for HA and glyceraldehyde-3-phosphate dehydrogenase (GAPDH). Full-length and cleaved bands are indicated and band densities were quantified. An overexposed blot is shown to highlight cell surface bands. Over exposed areas are red. (C) Cleavage %, calculated as cleaved/(cleaved + full length) × 100 is shown. Data were analyzed by repeated measures two-way analysis of variance (ANOVA) with Šidák’s multiple comparison test. p values are shown for indicated comparisons. Cleavage was also greater for Aγ than for mγ (p = 0.05). (D) Normalized total expression was calculated by normalizing the sum of full-length and cleaved bands to the mean of mγ after normalizing each sample for loading based on GAPDH from the same blot. (E) Surface expression % was calculated using band densities adjusted for the fraction of the respective sample loaded. (F) Normalized surface expression was calculated by multiplying values from the same sample in D and E, and then normalizing to the mean of mγ. Data in D–F were analyzed by one-way ANOVA with Tukey’s multiple comparison test. No significant differences between groups were found. Note that due to the lack of GAPDH data for one blot, the number of replicates for D and F (n = 6) is one fewer than for C and E (n = 7). (G) Whole cell currents were measured in injected oocytes by two-electrode voltage clamp, with voltage clamped at −100 mV. Representative traces of indicated subunit combinations are shown. Currents were continuously recorded in a bath solution containing 110 mM Na+. The ENaC-blocking drug amiloride (100 µM) was added at the end of each experiment to determine the ENaC-mediated current. (H) Log-transformed amiloride-sensitive inward currents are plotted, and were analyzed by one-way ANOVA followed by Tukey’s multiple comparison test. p values for comparisons where p < 0.05 are shown. Bars indicate mean values; errors shown are standard deviation (SD).
 
 When we measured whole cell currents in oocytes expressing Aγ, we found that mutating predicted furin sites decreased ENaC-mediated currents by 82% (p < 0.0001), consistent with mutation precluding proteolytic activation (Figure 3G, H). Notably, currents from oocytes expressing Aγ2A were similar to currents from oocytes lacking γ subunits altogether. Similar surface expression levels for Aγ and Aγ2A (Figure 3D–F) suggest that differences in expression or surface delivery do not account for the differences we observed in ENaC-mediated currents. Together, these data provide evidence that Aγ undergoes activating cleavage at the predicted furin cleavage sites.
 
-## GRIP domain cleavage sites coevolved with each other
+### GRIP domain cleavage sites coevolved with each other
 
 Activation by cleavage requires two cleavage events within a single subunit and the release of embedded inhibitory tracts (Bruns et al., 2007; Sheng et al., 2006). The data in Table 1 suggest that sites 1 and 2 coevolved with each other. To test this idea, we calculated the probability that the sites coevolved with each other using nested likelihood models based on our model of ENaC evolution in BayesTraits (see Supplementary file 2; Meade, 2022 ; Pagel et al., 2004). Each sequence was assigned the traits of the presence or absence of ‘site 1’ and ‘site 2’, as indicated in Table 1. All models considered the evolutionary gains and losses of these traits over the full phylogenetic tree capturing the four ENaC subunits (Figure 2).
 
 To test for dependence between the two sites, we contrasted two nested models, an independent model and a dependent model. The independent model contained two parameters: an appearance rate for both sites and a loss rate for both sites. The loss or gain of a site did not depend on the status of the other site, and therefore served as the null hypothesis. The dependent model added two free parameters by having separate gain and loss rates depending on the status of the other site. A likelihood ratio test between nested models showed a strong preference for the dependent model (p = 0.01). Fits to the dependent model suggest little selection pressure in the change from 0 sites to one site, with loss rates 11-fold higher than gain rates. In contrast, in the change from one site to two sites, gain rates were sevenfold higher than loss rates. This is congruent with the requirement for two cleavage sites within a single subunit’s GRIP domain for channel activation, and supports the notion that selection pressure derives from the functional consequence of double cleavage (Bruns et al., 2007; Sheng et al., 2006).
 
-## GRIP domain double cleavage coevolved with the terrestrial migration and with Lungs
+### GRIP domain double cleavage coevolved with the terrestrial migration and with Lungs
 
 The data in Table 1 also suggest that the terrestrial migration or the development of lungs may have provided the selection pressure for channel activation by cleavage. ENaC function is also important in aldosterone-insensitive tissues, including the airway, where control of airway surface liquids is essential for lung function. We first calculated the likelihood of site 1, site 2, or both sites coevolving with the terrestrial transition using nested likelihood models. Each sequence was assigned the traits of the presence or absence of ‘site 1’, ‘site 2’, or ‘tandem sites’, and ‘terrestrial’ or ‘marine’ states, as indicated in Table 1. The independent model contained three parameters: a site appearance and loss rate, and a rate for transition from marine to terrestrial status (see Supplementary file 2). The independent model does not allow a relationship between rates of site gain or loss with respect to marine or terrestrial state, and therefore served as the null hypothesis. The dependent model added two free parameters by having separate site gain and loss rates in the marine and terrestrial states. A likelihood ratio test between nested models showed a strong preference for the dependent model for site 1 (p = 0.0053) and for tandem sites (p = 0.0098), but not for site 2 (p = 0.26). Fits to the dependent model suggest that in the marine state, site appearance and disappearance were dynamic, with a disappearance rate being fivefold higher than the appearance rate. However, once in the terrestrial state, both rates dropped to 0, supporting the notion of selection pressure favoring the presence of cleavage sites in the terrestrial state. We then calculated the likelihood of site 1, site 2, or both sites coevolving with the development of lungs using analogous procedures. A likelihood ratio test between nested models showed a preference for the dependent model for site 1 (p = 0.031) and for tandem sites (p = 0.018), but not for site 2 (p = 0.94).
 
-## ENaC expression in fishes with lungs and amphibians
+### ENaC expression in fishes with lungs and amphibians
 
 Lungs coevolved with the terrestrial migration of vertebrates (p = 0.0004 in our dataset), and may have driven the coevolution of GRIP domain polybasic tracts with lungs that we observed. However, ENaC subunit transcripts were not detected in lung tissues from either of the lungfish species examined (Uchiyama et al., 2015; Uchiyama et al., 2012). To further investigate the role of ENaC in fishes with lungs, we examined the tissue distribution of ENaC transcripts in ropefish, which evolved lungs independently from tetrapods (Graham and Wegner, 2010). We observed clear bands for the transcripts of all three ENaC subunits in the gills and kidneys of the ropefish (Figure 4A), which are important organs for ion homeostasis. In the lung, we observed a clear band for the β subunit, a faint band for the α subunit, and a barely perceptible band for the γ subunit. In the other tissues examined, we observed broad expression of β subunit transcripts, faint bands for the α subunit in the liver and intestine, and no bands for the γ subunit. Taken together with the lungfish data (Uchiyama et al., 2015; Uchiyama et al., 2012), these data suggest that transcripts for ENaC subunits with GRIP domain polybasic tracts (Table 1) are readily detected at important sites of ion exchange, but are difficult to detect in lungs.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75796/elife-75796-fig4-v2.jpg)
 
-**Figure 4.:** A) Erpetoichthys calabaricus (ropefish) and (B) Xenopus laevis epithelial Na+ channel (ENaC) subunit transcripts by reverse transcription-PCR (RT-PCR).cDNA libraries were generated from tissue homogenates. PCR reactions were performed using primers indicated in Supplementary file 3.Figure 4—source data 1.
+**Figure 4.:** cDNA libraries were generated from tissue homogenates. PCR reactions were performed using primers indicated in Supplementary file 3.
 
 We also investigated the tissue distribution of ENaC subunit transcripts from the African clawed frog, in which both the α and γ subunits have GRIP domain cleavage sites (Wichmann et al., 2018). Similar to mammals, we detected bands for α, β, and γ subunit transcripts in both kidneys and lungs (Figure 4B). In contrast to humans where bands for the δ subunit were relatively faint for both kidneys and lungs (Waldmann et al., 1995), we observed a strong band for the δ subunit transcript in the kidney, and no band in the lung. The expression pattern we observed is consistent with a previous investigation of α and δ subunit expression in X. laevis tissues (Wichmann et al., 2018), and suggest that cleavage regulates ENaC function in both the lungs and kidneys of frogs, similar to mammals.
 
-## α and γ subunit GRIP domain cleavage sites evolved independently
+### α and γ subunit GRIP domain cleavage sites evolved independently
 
 The absence of cleavage sites in species rooted closest to the early gene duplication events suggests that each cleavage site did not result from a common ancestor, but rather appeared independently in the α and γ subunits. To test this idea, we performed ancestral reconstruction of nodes 1–4 in our phylogenetic tree (Figure 2) using BayesTraits and MCMC methods. In the unconstrained evolutionary model, each of these nodes was free to adopt any status for the site of interest. In the divergent evolutionary model, nodes 1–4 were constrained to contain the site of interest. In the convergent evolutionary model, node 1 was constrained to exclude the site of interest. Models were compared by converting marginal likelihoods resulting from MCMC runs of each model to log Bayes Factors, where values of >2, 5–10, and >10 support positive, strong, and very strong preferences for the better fitting model, respectively. Within the framework of sites 1 and 2 coevolving with each other, comparison of the unconstrained evolutionary model with the convergent evolutionary model resulted in log Bayes Factors of 0.38 for site 1 and 0.34 for site 2, supporting no preference between models. Comparison of the divergent evolutionary model to the convergent model for each of the sites resulted in log Bayes Factors of 6.5 in both cases, supporting a strong preference for the convergent evolutionary model for each of the cleavage sites. This suggests that, despite analogous molecular mechanisms in the α and γ subunits, the appearance of cleavage sites in the α and γ subunits were independent events. Neither the proximal nor the distal cleavage site arose from a common pre-α/γ ENaC subunit.
 
-## ENaC PY motifs evolved through divergent evolution
+### ENaC PY motifs evolved through divergent evolution
 
 Our data suggest that cleavage of the α and γ subunits evolved contemporaneously with aldosterone synthase. Indeed, aldosterone enhances activating cleavage of ENaC subunits (Frindt and Palmer, 2015; Terker et al., 2016). Due to the apparent connection to aldosterone, we examined another ENaC target of aldosterone-dependent regulation, the PY motifs in the C-termini. The PY motifs facilitate enhanced channel turnover via Nedd4-2, which can be inhibited by aldosterone and other hormones through kinase signaling (Rotin and Staub, 2012). Mutation or deletion of the PY motifs increases ENaC function, leading to Liddle syndrome which is characterized by hypertension, hypokalemia, and low aldosterone levels (Cui et al., 2017). We found PY motifs in all α, β, and γ subunits where sequences of the C-termini were available (Table 2, Figure 1—source data 1), suggesting a divergent evolutionary model that did not depend on terrestrial status. Interestingly, δ subunits apparently lost their PY motifs after their divergence from the α subunit in the coelacanth ancestor. We tested whether appearance of the PY motif depended on the terrestrial migration or the development of lungs using nested likelihood models, as above. A likelihood ratio test between the nested models showed no preference for the dependent model for either terrestrial status (p = 0.54) or lungs (p = 0.28), suggesting their evolution was affected by neither. To test whether the PY motifs evolved from a common ancestor, we tested models of PY motif evolution using ancestral reconstruction at nodes 1–4 in Figure 2 and MCMC methods. The unrestricted model suggested probabilities of a PY motif present at 98.1%, 99.3%, 91.5%, and 75.9% for nodes 1, 2, 3, and 4, respectively. We then tested a series of restricted models to test competing evolutionary models. In the divergent evolutionary model, nodes 1–4 were restricted to contain PY motifs. Comparison of the unrestricted and divergent evolutionary models resulted in a log Bayes Factor of 0.19, suggesting these models were nearly equivalent. In convergent evolutionary models, one of the four early nodes was restricted to not contain a PY motif, resulting in four models. Comparison of the divergent model to each of the convergent models resulted in log Bayes Factors ranging from 4.7 to 8.9, suggesting a strong preference for the divergent model over each of the nondivergent models. These data suggest that the PY motif in each subunit, in contrast to the polybasic tracts, arose from a common progenitor.
+
+**Table 2.**
+ PY motifs (L/P-P-X-Y) in the C-terminal tails of epithelial Na+ channel (ENaC) subunits from various species.Ø, no sequence was available. (⋯), sequence for the C-terminal region was missing in the available sequence. Species abbreviations are as in Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Terrestrial</th>
+      <th>Lungs</th>
+      <th>α</th>
+      <th>δ</th>
+      <th>β</th>
+      <th>γ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S.Lamprey</td>
+      <td></td>
+      <td></td>
+      <td>PPPSF</td>
+      <td>Ø</td>
+      <td>PPPHY</td>
+      <td>PPPQY</td>
+    </tr>
+    <tr>
+      <td>J.Lamprey</td>
+      <td></td>
+      <td></td>
+      <td>PPDY</td>
+      <td>Ø</td>
+      <td>PPPHY</td>
+      <td>PPPQY</td>
+    </tr>
+    <tr>
+      <td>E.Shark</td>
+      <td></td>
+      <td></td>
+      <td>(⋯)</td>
+      <td>Ø</td>
+      <td>PPPRY</td>
+      <td>PPPNY</td>
+    </tr>
+    <tr>
+      <td>Ropefish</td>
+      <td></td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>Ø</td>
+      <td>PPPHY</td>
+      <td>PPPNY</td>
+    </tr>
+    <tr>
+      <td>Coelacanth</td>
+      <td></td>
+      <td></td>
+      <td>PPAY</td>
+      <td>(⋯)</td>
+      <td>PPPNY</td>
+      <td>PPPTY</td>
+    </tr>
+    <tr>
+      <td>W.Lungfish</td>
+      <td></td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>Ø</td>
+      <td>PPPHY</td>
+      <td>PPPQY</td>
+    </tr>
+    <tr>
+      <td>A.Lungfish</td>
+      <td></td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>Ø</td>
+      <td>PPPKY</td>
+      <td>PPPQY</td>
+    </tr>
+    <tr>
+      <td>Frog</td>
+      <td>X</td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>—</td>
+      <td>PPPNY</td>
+      <td>PPPKY</td>
+    </tr>
+    <tr>
+      <td>Salamander</td>
+      <td>X</td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>Ø</td>
+      <td>Ø</td>
+      <td>Ø</td>
+    </tr>
+    <tr>
+      <td>Turtle</td>
+      <td>X</td>
+      <td>X</td>
+      <td>LPSY</td>
+      <td>—</td>
+      <td>PPPNY</td>
+      <td>PPPNY</td>
+    </tr>
+    <tr>
+      <td>Chicken</td>
+      <td>X</td>
+      <td>X</td>
+      <td>LPSY</td>
+      <td>—</td>
+      <td>PPPNY</td>
+      <td>PPPNY</td>
+    </tr>
+    <tr>
+      <td>Cow</td>
+      <td>X</td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>—</td>
+      <td>PPPNY</td>
+      <td>PPPRY</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>X</td>
+      <td>X</td>
+      <td>PPPAY</td>
+      <td>—</td>
+      <td>PPPNY</td>
+      <td>PPPKY</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -94,7 +433,7 @@ Our results suggest that the two ENaC GRIP domain cleavage sites in each of the 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75796/elife-75796-fig5-v2.jpg)
 
-**Figure 5.:** + channel (ENaC), and ENaC regulatory motifs.ENaC subunits were not found in nonvertebrate chordates or in teleosts. The ancestral ENaC subunit likely had a PY motif and was a substrate for Nedd4-2-dependent regulation. Like mammalian ENaC α subunits, the ancient ENaC subunit may have formed functional homotrimers, or may have formed channels with other ENaC paralogs. ENaC α, β, and γ subunits appeared before the emergence of jawless fishes, whereas ENaC δ subunits first appeared in an ancestor of the lobe-finned coelacanth. Proteins required for aldosterone signaling (mineralocorticoid receptor [MR], 11β-hydroxysteroid dehydrogenase [11β-HSD2], and aldosterone synthase) evolved before the emergence of tetrapods. Lungs appeared in lobe-finned fishes on the lineage to tetrapods. Air-breathing organs (e.g., respiratory gas bladders and labyrinth organs) evolved independently in ray-finned fishes, including morphologically distinct lungs in Polypteriformes. Individual GRIP (gating release of inhibition by proteolysis) domain ENaC cleavage sites first appeared sporadically in marine species. Dual cleavage sites appeared consistently in the ENaC α and γ subunits in terrestrial vertebrates. CR, corticoid receptor; GR, glucocorticoid receptor. Animal silhouettes courtesy of PhyloPic (http://www.phylopic.org).
+**Figure 5.:** ENaC subunits were not found in nonvertebrate chordates or in teleosts. The ancestral ENaC subunit likely had a PY motif and was a substrate for Nedd4-2-dependent regulation. Like mammalian ENaC α subunits, the ancient ENaC subunit may have formed functional homotrimers, or may have formed channels with other ENaC paralogs. ENaC α, β, and γ subunits appeared before the emergence of jawless fishes, whereas ENaC δ subunits first appeared in an ancestor of the lobe-finned coelacanth. Proteins required for aldosterone signaling (mineralocorticoid receptor [MR], 11β-hydroxysteroid dehydrogenase [11β-HSD2], and aldosterone synthase) evolved before the emergence of tetrapods. Lungs appeared in lobe-finned fishes on the lineage to tetrapods. Air-breathing organs (e.g., respiratory gas bladders and labyrinth organs) evolved independently in ray-finned fishes, including morphologically distinct lungs in Polypteriformes. Individual GRIP (gating release of inhibition by proteolysis) domain ENaC cleavage sites first appeared sporadically in marine species. Dual cleavage sites appeared consistently in the ENaC α and γ subunits in terrestrial vertebrates. CR, corticoid receptor; GR, glucocorticoid receptor. Animal silhouettes courtesy of PhyloPic (http://www.phylopic.org).
 
 Air-breathing organs evolved independently several times as an adaptation to chronic or periodic environmental hypoxia (Graham and Wegner, 2010). Lungs appeared in lobe-finned fishes after their divergence from other bony fishes, and developmental and morphological evidence support homology between the lungs of lungfishes and tetrapods. Extant deep-water coelacanths possess vestigial lungs that correspond to the likely functional lungs of the Cretaceous shallow-water coelacanth Axelrodichthys (Cupello et al., 2015; Brito et al., 2010). Air-breathing organs evolved several times in ray-finned fishes, giving Polypteridae (ropefish) morphologically distinct lungs, and other ray-finned fishes air-breathing capabilities through modified gas bladders and labyrinth organs (Figure 5). Notably, we identified ENaC subunits in ropefish and not in any other ray-finned fish, suggesting ENaC subunits were lost soon after the divergence of Polypteriformes from ray-finned fishes in the Devonian period ~360 million years ago (Hughes et al., 2018). Their loss reflects a lack of selective pressure to maintain the ENaC subunits. Evidence supports electrogenic Na+ transport through an ENaC-like channel in the gills of ray-finned fishes (Evans et al., 2005). Related proteins like ASIC4, proposed to play this role (Dymowska et al., 2014), or the uncharacterized ENaC-like paralogs may have left ENaC subunits dispensable. Airway surface liquids are critical to the function of mammalian lungs and are regulated by ENaC and other ion channels (Haq et al., 2016). ENaC α subunit knockout mice die of asphyxiation shortly after birth due to an inability to clear fluid from the lung (Hummler et al., 1996), and ENaC polymorphisms have been associated with lung dysfunction (Rauh et al., 2010; Schaedel et al., 1999). ENaC regulation by cleavage is relevant in primary airway epithelial cell cultures (Reihill et al., 2016; Myerburg et al., 2010), where ENaC is regulated by glucocorticoids rather than by aldosterone (Stokes and Sigmund, 1998). However, transcripts of ENaC subunits with GRIP domain polybasic tracts were not detected in the lungs of lungfishes (Uchiyama et al., 2015; Uchiyama et al., 2012) and were faint in the lungs of the ropefish (Figure 4). As lungs coevolved with the terrestrial migration of vertebrates, concurrent stresses may have provided selection pressure for ENaC activation by cleavage.
 
@@ -108,32 +447,32 @@ In summary, we found that two forms of ENaC regulation modulated by aldosterone 
 
 ## Materials and methods
 
-## Sequence retrieval, alignment, and phylogenetic tree calculation
+### Sequence retrieval, alignment, and phylogenetic tree calculation
 
 Human ENaC subunit protein sequences were used as query sequences in BLAST searches of databases (see Supplementary file 1). Organism restrictions and organism specific databases were used to identify proteins in each of the major vertebrate classes. Alignment using MUSCLE 3.8.31 (Edgar, 2010), curation using Gblocks 0.91b (Talavera and Castresana, 2007), and phylogenetic tree calculation using PhyML (Guindon et al., 2010) were performed using Phylogeny.fr (Dereeper et al., 2008). The final tree (Supplementary file 4) was calculated using the smaller final blocks option in Gblocks and the bootstrapping procedure option (100 bootstraps) in PhyML. Residue frequency in the aligned sequences was visualized using WebLogo (Crooks et al., 2004). Trees were visualized using FigTree (http://tree.bio.ed.ac.uk/software/figtree/).
 
-## Motif analysis
+### Motif analysis
 
 Furin cleaves human α ENaC after RSRR178 and RRAR204, and human γ ENaC at RKRR138 (Hughey et al., 2004a). Furin requires Arg at P1 and has a preferred P4–P3–P2–P1↓ = RX-R/K-R↓ substrate sequence, although deviations at P2 and P4 have been observed, for example Ala-203 at P2 in the ENaC α subunit (Duckert et al., 2004; Tian et al., 2011). Prostasin cleaves the human ENaC γ subunit after RKRK181 (Bruns et al., 2007). Prostasin cleavage requires Arg or Lys at P1, and prefers basic residues at P2, P3, and P4 (Shipway et al., 2004). We inspected the region in the alignment that contains the human ENaC cleavage sites (Figure 1—source data 1) for ideal furin sites or alternatively, for polybasic tracts ending in Arg that aligned within five residues of either of the α subunit furin sites for α and δ subunits, the γ subunit furin site for β and γ subunits, or for any of the furin sites for ASIC subunits. We also inspected the alignment for polybasic tracts ending in Arg or Lys that aligned within five residues of the human γ subunit prostasin site for β and γ subunits. For the PY motif (L/P-P-X-Y) required for Nedd4-2-dependent regulation (Persaud et al., 2009), we inspected the C-terminal region of the alignment. All sequences found aligned with human ENaC subunit PY motifs in the C-termini.
 
-## Testing phylogenetic models of site gain and Loss
+### Testing phylogenetic models of site gain and Loss
 
 BayesTraits V3 (Meade, 2022; Pagel et al., 2004) was used to compare evolutionary models of two binary traits using maximum likelihood methods, as described above. Traits were assigned as indicated in Tables 1 and 2: absent, present, or ambiguous (in cases where the relevant region was missing). ASICs in our dataset were all assigned ‘marine’, and only coelacanth ASIC2 was assigned as having a polybasic tract at site 2 (Figure 1—source data 1). BayesTraits run parameters are provided in Supplementary file 2 and results are provided in Source data 1. Nested models were compared using a likelihood ratio test, with degrees of freedom equal to the difference in the number of parameters for each model. The likelihood ratio statistic is calculated as: likelihood ratio = 2 × {log-likelihood(dependent model) − log-likelihood(independent model)}, and was converted to a p value using the chisq.dist.rt function of Excel. BayesTraits was also used to determine whether traits likely appeared independently (convergent model), or derived from a common ancestor (divergent model). Program parameters are provided in Supplementary file 2 and results are provided in Source data 1. Values of a given trait at all key ancestral nodes were determined while trait values at specific nodes were fixed to reflect each of the hypothetical evolutionary models. Maximum likelihood runs of each model were used to determine likely average values for model parameters. Uniform priors were selected for parameters with large expected values, and exponentially distributed priors with a mean of 0.001 were selected for parameters with small expected values. MCMC runs for each model were performed for the default number of iterations (1,010,000), and generated model parameters with means similar to those from maximum likelihood runs, consistent with convergence. The stepping stone sampler (100 stones with 10,000 iterations) was used to calculate log marginal likelihood values from MCMC runs. Log marginal likelihood values were converted to log Bayes Factors {log Bayes Factors = 2 × (log marginal likelihood model 1 − log marginal likelihood model 2)} for model comparisons. Values of log Bayes Factors were used as evidence for model preference, where <2 was weak evidence, >2 was positive evidence, 5–10 was strong evidence, and >10 was very strong evidence.
 
-## Tissue distribution of ENaC subunit transcripts
+### Tissue distribution of ENaC subunit transcripts
 
 All animals were handled according to approved institutional animal care and use committee protocols (#20037084 and #21018704) of the University of Pittsburgh. Total RNA was extracted from various tissues isolated from E. calabaricus and X. laevis (RRID:XEP_Xla100) using TRIzol Reagent (Invitrogen) and denatured by heating at 70°C for 10 min. Using 2 µg of RNA isolated from each tissue, cDNA libraries were synthesized using RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher). Specific primers for the frog ENaC α, β, and γ subunits, each of the ropefish ENaC subunits, and glyceraldehyde-3-phosphate dehydrogenase (GAPDH) as an internal standard (Supplementary file 3) were designed using the NCBI Primer-Blast tool (https://www.ncbi.nlm.nih.gov/tools/primer-blast/). Primers for frog δ ENaC subunits and β-actin were previously described (Wichmann et al., 2018). All primers were custom synthesized (Integrated DNA Technologies). PCR was run for 30 cycles using GoTaq G2 Green master mix (Promega) and specific primers, with the annealing temperature set at 60°C. PCR products were visualized after agarose gel electrophoresis using GelRed stain (Sigma) and a GelDoc imaging system (BioRad).
 
 Plasmids and site-directed mutagenesis cDNAs encoding mouse ENaC subunits were previously described (Shimkets et al., 1997; Passero et al., 2010; Hughey et al., 2003). Australian lungfish γ subunit with a C-terminal epitope tag (Aγ) was synthesized by Twist Bioscience (San Francisco, CA) and cloned into pcDNA 3.1 hygro (+). Site-directed mutagenesis of Aγ was performed using the QuikChange II XL Site-directed Mutagenesis Kit (Agilent, Santa Clara, CA). cRNAs were transcribed using mMessage mMachine Transcription Kits (Invitrogen), and purified using the RNeasy MiniElute Cleanup Kit (Qiagen).
 
-## ENaC expression in Xenopus oocytes
+### ENaC expression in Xenopus oocytes
 
 Oocytes were harvested from X. laevis following a protocol approved by the University of Pittsburgh Institutional Animal Care and Use Committee, as previously described (Wang et al., 2019). Stage V–VI oocytes were injected with 4 ng of cRNA per ENaC subunit, as indicated. Injected oocytes were maintained in modified Barth’s saline (MBS: 88 mM NaCl, 1 mM KCl, 2.4 mM NaHCO3, 0.3 mm Ca(NO3)2, 0.41 mM CaCl2, 0.82 mM MgSO4, and 15 mM HEPES, pH 7.4) supplemented with 10 µg/ml sodium penicillin, 10 μg/ml streptomycin sulfate, and 100 μg/ml gentamycin sulfate at 18°C for 24 h.
 
-## Current measurement by two-electrode voltage clamp
+### Current measurement by two-electrode voltage clamp
 
 Oocytes were mounted in a continuously perfused 20 µl recording chamber and impaled by two 0.1–1 MΩ recording pipettes filled with 3 M KCl. Voltage was clamped at −100 mV and currents were continuously recorded using an Axoclamp 900A voltage clamp amplifier (Molecular Devices, Sunnyvale, CA) and pClamp 10.5 software (Molecular Devices). Baseline currents were measured in Na-110 buffer (110 mM NaCl, 2 mM KCl, 2 mM CaCl2, and 10 mM HEPES, pH 7.4). Amiloride (Na-110 supplemented with 100 µM amiloride) was added at the end of each experiment to block ENaC and determine the ENaC-mediated portion of the current. Statistical analysis of current data was performed using Prism 9 (GraphPad Software).
 
-## Surface biotinylation and western blotting
+### Surface biotinylation and western blotting
 
 One day after injection, oocytes were transferred to a 12-well dish and incubated in MBS on ice for 30 min. After washing twice, surface proteins were labeled with biotin by adding 1 mg/ml membrane impermeant EZ-Link Sulfo-NHS-SS-Biotin (Thermo Fisher) in 137 mM NaCl and 15 mM sodium borate, pH 9.0 for 30 min. Excess reagent was quenched with MBS supplemented with 192 mM glycine. After two washes with MBS, approximately 40 oocytes were lysed in 500 µl detergent solution (100 mm NaCl, 40 mm KCl, 1 mm EDTA, 10% glycerol, 1% NP-40, 0.4% deoxycholate, 20 mm HEPES, pH 7.4, supplemented with protease inhibitor mixture III [Calbiochem]). After reserving 2% of the whole cell lysate, the remainder was incubated with NeutrAvidin agarose (Thermo Fisher) overnight at 4°C on a rocker to isolate biotinylated proteins. Biotinylated proteins were eluted by boiling in 2× Laemmli buffer (BioRad). Biotinylated proteins representing the total and surface pools were separated by SDS–PAGE (4%–15% Tris/glycine, BioRad) and blotted for the γ subunit using anti-HA-Peroxidase antibodies (1:2000, RRID:AB_439705) or GAPDH using anti-GAPDH-Peroxidase antibodies (1:10,000, RRID:AB_1078992). Band densities were measured using a ChemiDoc Imaging system (BioRad). Statistical analyses were performed using Prism 9.

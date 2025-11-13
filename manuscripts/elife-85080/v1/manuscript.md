@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Cellular and Molecular Medicine, Faculty of Life Sciences, University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 Bristol Veterinary School, Faculty of Health Sciences, University of Bristol Bristol United Kingdom
+1. School of Cellular and Molecular Medicine, Faculty of Life Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Bristol Veterinary School, Faculty of Health Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Genome-wide association studies identified the BIN1 locus as a leading modulator of genetic risk in Alzheimer’s disease (AD). One limitation in understanding BIN1 ’s contribution to AD is its unknown function in the brain. AD-associated BIN1 variants are generally noncoding and likely change expression. Here, we determined the effects of increasing expression of the major neuronal isoform of human BIN1 in cultured rat hippocampal neurons. Higher BIN1 induced network hyperexcitability on multielectrode arrays, increased frequency of synaptic transmission, and elevated calcium transients, indicating that increasing BIN1 drives greater neuronal activity. In exploring the mechanism of these effects on neuronal physiology, we found that BIN1 interacted with L-type voltage-gated calcium channels (LVGCCs) and that BIN1–LVGCC interactions were modulated by Tau in rat hippocampal neurons and mouse brain. Finally, Tau reduction prevented BIN1-induced network hyperexcitability. These data shed light on BIN1’s neuronal function and suggest that it may contribute to Tau-dependent hyperexcitability in AD.
+Genome-wide association studies identified the BIN1 locus as a leading modulator of genetic risk in Alzheimer’s disease (AD). One limitation in understanding BIN1’s contribution to AD is its unknown function in the brain. AD-associated BIN1 variants are generally noncoding and likely change expression. Here, we determined the effects of increasing expression of the major neuronal isoform of human BIN1 in cultured rat hippocampal neurons. Higher BIN1 induced network hyperexcitability on multielectrode arrays, increased frequency of synaptic transmission, and elevated calcium transients, indicating that increasing BIN1 drives greater neuronal activity. In exploring the mechanism of these effects on neuronal physiology, we found that BIN1 interacted with L-type voltage-gated calcium channels (LVGCCs) and that BIN1–LVGCC interactions were modulated by Tau in rat hippocampal neurons and mouse brain. Finally, Tau reduction prevented BIN1-induced network hyperexcitability. These data shed light on BIN1’s neuronal function and suggest that it may contribute to Tau-dependent hyperexcitability in AD.
 
 ## Introduction
 
@@ -40,9 +40,50 @@ In this study, we addressed BIN1’s role in neurons by expressing the predomina
 
 ## Results
 
-## Higher BIN1 induces network hyperexcitability
+### Higher BIN1 induces network hyperexcitability
 
 To begin studying the effects of altered BIN1 levels in neurons, we first used AAV to express the predominant neuronal isoform of human BIN in primary rat hippocampal neuronal cultures. We verified expression of BIN1 using an mKate2 fluorophore fused to the C-terminus. A construct encoding mKate2 alone was used as a control. We determined that BIN1 expression increased ~8–9-fold by immunocytochemistry and remained stable up to 3.5 weeks post transduction (Figure 1A–C). Higher BIN1 did not change neuronal morphology (Figure 1B), the total number of neurons per well (Figure 1D–E), nor the resting membrane potential (RMP) or input resistance (Rin) of cultured neurons (Table 1), indicating no significant toxic or trophic effect of overexpressing BIN1 under these conditions.
+
+**Table 1.**
+ Resting membrane potential (RMP) and input resistance (Rin) in patched hippocampal neurons did not differ across untransduced, AAV-mKate2, and AAV-BIN1-mKate2 groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RMP, mV</th>
+      <th>Rin, MΩ</th>
+      <th>N, Cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Untransduced</td>
+      <td>–60.43 ± 5.36</td>
+      <td>843.04 ± 55.11</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>AAV-mKate2</td>
+      <td>–59.90 ± 3.70</td>
+      <td>834.83 ± 41.09</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AAV-BIN1-mKate2</td>
+      <td>–62.40 ± 2.24</td>
+      <td>790.18 ± 15.74</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>One-way ANOVA, p</td>
+      <td>0.85</td>
+      <td>0.36</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57354/elife-57354-fig1-v2.jpg)
 
@@ -50,7 +91,7 @@ To begin studying the effects of altered BIN1 levels in neurons, we first used A
 
 We then recorded action potentials and burst firing in these neurons on multielectrode arrays (MEAs) after 10 days (Figure 1F–G). Local field potential (LFP) traces representing neuronal action potential and burst firing were recorded for 20 min then analyzed (Figure 1H–I). We found that higher BIN1 levels were associated with increased frequency of action potentials (2.3-fold, Figure 1J) and action potential bursts (2.1-fold, Figure 1K). There was no change in the total number of active neurons on MEAs (Figure 1L).
 
-## Higher BIN1 increases frequency of spontaneous excitatory and inhibitory synaptic transmission
+### Higher BIN1 increases frequency of spontaneous excitatory and inhibitory synaptic transmission
 
 Since higher BIN1 levels increased action potential and burst frequencies in the MEA recordings, we hypothesized that this would be associated with an increased frequency of spontaneous excitatory postsynaptic currents (sEPSCs). To test this, we used whole-cell voltage-clamp recordings from BIN1-transduced neurons at DIV 19–21 (Figure 2A), pharmacologically isolating sEPSCs using picrotoxin to block inhibitory GABAAR currents. (Figure 2B). Consistent with the increased action potential frequency observed in MEA recordings (Figure 1E), higher BIN1 levels were associated with dramatically increased sEPSC frequency (interevent interval decreased >50%) (Figure 2C). sEPSC amplitudes differed by <10% (Figure 2D).
 
@@ -62,7 +103,7 @@ To investigate if this effect of higher BIN1 levels was selective for excitatory
 
 Overall, these findings suggest that higher BIN1 levels increase the frequency of both sEPSCs and sIPSCs in primary hippocampal cultures, agreeing with the increased action potential firing observed using MEAs (Figure 1E–F).
 
-## Higher BIN1 in mature neurons increases calcium influx
+### Higher BIN1 in mature neurons increases calcium influx
 
 Using AAVs requires transduction soon after plating (DIV 2) because of the time required for transgene expression, so some effects could be due to increasing BIN1 levels during early neuronal development. To dissociate the effect of higher BIN1 on network hyperexcitability from neuronal development, we transiently transfected primary hippocampal cultures at DIV 14, when neurons are more fully developed (Figure 3A). We co-transfected BIN1 constructs with the genetically encoded calcium indicator, GCaMP6f, which allows for single neuron calcium imaging in primary hippocampal cultures. We used two BIN1 constructs, both based on human isoform one tagged with the mKate2 fluorophore. In addition to the full-length BIN1 construct used in Figures 1–2, we also used a construct engineered to remove the BAR domain (ΔBAR), which is predicted to abolish BIN1 membrane localization, and thus likely its activity. As before, mKate2 alone was used as a control construct. Interestingly, the pattern of mKate2 distribution within the neurons was strikingly different across groups, as mKate2 and BIN1-ΔBAR exhibited diffuse localization throughout the soma, neurites, and nucleus, while wild-type BIN1 had a punctate distribution throughout the cytosol but was excluded from the nucleus (Figure 3B). These observations agree with BAR-domain dependent membrane localization of BIN1 found in other cell types (Hong et al., 2010; Picas et al., 2014).
 
@@ -74,7 +115,7 @@ We monitored basal calcium activity of individual transfected neurons by imaging
 
 About a third of neurons were inactive under control conditions (Figure 3D), consistent with prior studies (Kuijlaars et al., 2016; Lerdkrai et al., 2018). However, neurons expressing the full-length human BIN1 construct were almost never inactive (Figure 3D). As expected, the BIN1-ΔBAR construct was similar to controls (Figure 3D), indicating the importance of BIN1 membrane localization for the effect. Increasing BIN1 levels roughly doubled calcium influx as measured by both area under the curve (Figure 3E) and the number of calcium transients (Figure 3F).
 
-## BIN1 interacts with LVGCCs in neurons
+### BIN1 interacts with LVGCCs in neurons
 
 We were interested to find that the ability of BIN1 to increase neuronal activity was dependent on the presence of the BAR domain, which is critical for its membrane localization. One of BIN1’s known functions outside of the brain is localizing LVGCCs to the membrane of cardiomyocyte T-tubules (Hong et al., 2010; Hong et al., 2014). Therefore, we asked if BIN1 interacts with LVGCCs in neurons and if increased interaction between BIN1 and LVGCCs could be a potential mechanism by which BIN1 increases neuronal activity.
 
@@ -84,7 +125,7 @@ To begin addressing this question, we first examined BIN1 interactions with LVGC
 
 **Figure 4.:** (A) Localization of endogenous BIN1, LVGCC-β1, and endogenous BIN1-LVGCC-β1 interaction detected by PLA. Scale bar = 10 µm. (B) Experimental timeline: neurons were plated on DIV 0, transduced with AAV-BIN1-mKate2 or AAV-mKate2 on DIV 2, and fixed and stained on DIV 19–21. (C) Representative images of mKate2 fluorescence, BIN1–LVGCC-β1 PLA puncta, and BIN1 ICC in primary hippocampal neurons. Scale bar = 10 µm. (D) BIN1–LVGCC-β1 interaction was increased by BIN1 (n = 3–4 coverslips per group, each with 5 fields of view averaged, from three different primary neurons harvests; one-way ANOVA, p<0.0001; Endogenous vs. AAV-BIN1-mKate2 ****p=0.0001 by Dunnett’s post-hoc). All data are expressed as mean ± SEM.
 
-## BIN1-LVGCC interaction is Tau-dependent
+### BIN1-LVGCC interaction is Tau-dependent
 
 Multiple studies have demonstrated that BIN1 directly interacts with Tau, both in vitro and in vivo (Chapuis et al., 2013; Lasorsa et al., 2018; Sartori et al., 2019). This interaction between BIN1 and Tau is mediated by the SH3 domain of BIN1 and PxxP motifs in Tau’s central proline-rich region. Interestingly, LVGCC-β1 also harbors an SH3 domain that could also interact with Tau. Thus, we hypothesized that the BIN1 interaction with LVGCC-β1 might be at least in part scaffolded by Tau (Figure 5A).
 
@@ -98,7 +139,7 @@ We then tested the hypothesis that Tau affects the BIN1–LVGCCβ1 interaction, 
 
 Next, we determined if the BIN1–LVGCC-β1 interaction is also Tau-dependent in vivo. Using cortical brain lysates from wild-type and Tau knockout (Tau KO) mice, we immunoprecipitated LVGCC-β1 and blotted for BIN1. BIN1 co-immunoprecipitated with LVGCC-β1 from these brain lysates, and the BIN1–LVGCC-β1 complex was reduced in Tau KO brains, without any difference in LVGCC-β1 immunoprecipitation (Figure 5F). Taken together, these data indicate that the BIN1–LVGCC interaction is partially Tau-dependent both in vitro and in vivo.
 
-## Tau reduction prevents network hyperexcitability induced by higher BIN1
+### Tau reduction prevents network hyperexcitability induced by higher BIN1
 
 Tau reduction is protective in many models of AD and it reduces network hyperexcitability in many disease models, including AD and epilepsy models (Chin et al., 2007; Roberson et al., 2007; Holth et al., 2011; Roberson et al., 2011; DeVos et al., 2013; Gheyara et al., 2014; Liu et al., 2017). Thus, since Tau reduction decreases BIN1–LVGCC-β1 interaction in primary hippocampal neurons and brain homogenates, we asked whether Tau reduction attenuates network hyperexcitability induced by increased BIN1.
 
@@ -128,80 +169,250 @@ In summary, we have shown that BIN1 promotes neuronal firing in a Tau-dependent 
 
 ## Materials and methods
 
-## Primary neuron cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BIN1</td>
+      <td>NCBI</td>
+      <td>Gene ID 274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN Rabbit polyclonal</td>
+      <td>abcam</td>
+      <td>Cat# ab104225; RRID:AB_10711153</td>
+      <td>ICC (1:500), Lot #GR3321966-1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAD67 Mouse monoclonal</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# MAB5406; RRID:AB_2278725</td>
+      <td>ICC (1:500), Lot #3015328</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BIN1 Rabbit polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-30099; RRID:AB_2243399</td>
+      <td>ICC/PLA/IP (1:500), Lot #K1605; H-100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LVGCC-β1 Mouse monoclonal</td>
+      <td>abcam</td>
+      <td>Cat# ab85020; RRID:AB_1861569</td>
+      <td>ICC/PLA/IP (1:1000), Lot #413-8RR-52</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tau Rabbit polyclonal</td>
+      <td>DAKO</td>
+      <td>Cat# A0024; RRID:AB_10013724</td>
+      <td>ICC/IP (1:1000), Lot #20031827</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BIN1 Mouse monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-13575; RRID:AB_626753</td>
+      <td>ICC/IP (1:1000), Lot #L3014; 99D</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>Primary neuron</td>
+      <td>Charles River</td>
+      <td></td>
+      <td>Fresh from E19 albino Sprague Dawley rats</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>AAV-BIN1-mKate2</td>
+      <td>UPenn Vector Core</td>
+      <td></td>
+      <td>AAV2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>AAV-mKate2</td>
+      <td>UPenn Vector Core</td>
+      <td></td>
+      <td>AAV2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tau ASO</td>
+      <td>PMID:23904623 IDT</td>
+      <td></td>
+      <td>5-ATCACTGATTTTGAAGTCCC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scrambled ASO</td>
+      <td>PMID:23904623 IDT</td>
+      <td></td>
+      <td>5-CCTTCCCTGAAGGTTCCTCC-3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Duolink PLA kit</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#s DUO92014; DUO92002; DUO92004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>GCaMP6f</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_40755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>mKate2</td>
+      <td>PMID:25156556 Evrogen</td>
+      <td>Cat# FP184</td>
+      <td>Actin was removed from the construct obtained</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BIN1</td>
+      <td>Horizon Discovery ORFeome Collaboration Clones</td>
+      <td>OHS5894-202501160</td>
+      <td>Isoform 1</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# 85051005-1VL</td>
+      <td>Chinese Hamster Ovary cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>mKate2-Tau-mKate2</td>
+      <td>PMID:25156556</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Fyn-SH3-CBG</td>
+      <td>PMID:25156556</td>
+      <td></td>
+      <td>BIN1-SH3 or LVGCC-β1-SH3 was cloned in replacing Fyn-SH3</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>BIN1-SH3</td>
+      <td>IDT</td>
+      <td>AAC28646.1</td>
+      <td>Codon optimized</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>LVGCC-β1-SH3</td>
+      <td>IDT</td>
+      <td>AAA35632.1</td>
+      <td>Codon optimized</td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary neuron cultures
 
 Primary hippocampal culture protocols were adapted from Rush et al., 2020. Briefly, hippocampal tissue from E19 Sprague Dawley albino rat (Rattus norvegicus) embryos was harvested on ice in 4°C Hibernate E (Life Technologies, A1247601) and digested with 20 units/mL papain (Worthington Biochemical Corporation, LK003178) for 10 min at 37°C. Neurons were then dissociated by manual trituration to a single-cell suspension in Neurobasal medium (Life Technologies, 21103049) supplemented with 1x B-27 (Gibco, 17504044), 2 mM L-Glutamine (Life Technologies, 25030081) and 10% premium select fetal bovine serum (Atlanta Biologicals, S11550). Neuronal plating conditions depended on the experiment, as follows.
 
-## Multi electrode array cultures
+#### Multi electrode array cultures
 
 For 6-well multielectrode array recordings, neurons were plated at 100,000 per well in six-well MEA plates (ALA Scientific, ALAMEA-MEMMR5). For 48-well plate multielectrode array recordings, neurons were plated at 30,000 per well in 48-well MEA plates (Axion Biosystems, M768-tMEA-48B-5).
 
-## Calcium imaging, electrophysiology, and immunocytochemistry cultures
+#### Calcium imaging, electrophysiology, and immunocytochemistry cultures
 
 Neurons were plated at 50,000 neurons per well on 12 mm coverslips (Carolina Biological, 633029) in 24-well plates coated overnight at 4°C with 0.1 mg/mL Poly-D-Lysine (Sigma, P6407−10 × 5 MG) and 0.2 mg/mL laminin (Sigma, L2020-1MG) 24–48 hr prior to the neuron harvest, with the outer wells containing autoclaved ultrapure water (MilliQ filtered) to prevent evaporation.
 
-## Immunoblotting
+#### Immunoblotting
 
 Neurons were plated at 200,000 per well in six-well plates (Corning, 08-772-1B) and maintained in a 37°C humidified incubator with 5% CO2. 24 hr after plating, 75% of the medium was exchanged for serum-free Neurobasal supplemented with B-27 and L-Glutamine, with 5 μM cytosine β-D-arabinofuranoside (AraC, Sigma Aldrich, C6645) to inhibit glial proliferation. 50% medium changes were performed weekly with Neurobasal supplemented with B-27 and L-Glutamine until experiments were started at DIV 19–21.
 
-## BIN1 constructs and vectors
+### BIN1 constructs and vectors
 
 A BIN1-mKate2 (GE Dharmacon, OHS5894-202501160) construct was developed to encode human BIN1 isoform 1 (593 AA, the major neuronal isoform) tagged with mKate2 (Evrogen, FP184, to allow for fluorescent visualization) at the C-terminus to allow for proper function of the N-terminal membrane-interacting BAR domain. A similar construct lacking the BAR domain (amino acids 32–273, BIN1-ΔBAR-mKate2) was produced as a BIN1 BAR domain deletion mutant. A construct encoding mKate2 only was used as a control. These constructs were then cloned into the CIGW vector (rAAV9-CBA-IRES-GFP-WPRE-rBG) (St Martin et al., 2007). Due to size limitations for efficient gene expression, the IRES-GFP was removed from the CIGW vector.
 
-## Neuronal transduction
+#### Neuronal transduction
 
 BIN1-mKate2 and mKate2 vectors were packaged into rAAV2 at the University of Pennsylvania Vector Core (stock titers: AAV-BIN1-mKate2: 3.2e12 genomes/ml, AAV-mKate2: 9.69e12 genomes/ml; used titers: AAV-BIN1-mKate2 and AAV-mKate2: 1e10 genomes/ml, used MOI: AAV-BIN1-mKate2 and AAV-mKate2: 200,000). AAV vectors were used in MEA and electrophysiology experiments. Neuronal cultures were transduced on DIV 2.
 
-## Neuronal transfection
+#### Neuronal transfection
 
 BIN1-mKate2, BIN1-ΔBAR-mKate2, and mKate2 vectors were used in transient transfections in calcium imaging experiments. Transfections were performed at DIV 14 using a calcium phosphate precipitation protocol adapted from Frandemiche et al., 2014. Briefly, Neurobasal medium was removed and kept until the last step of transfection used as conditioned Neurobasal medium. Neurons were washed for 1–1.5 hr in DMKY buffer containing 1 mM kynurenic acid, 0.9 mM NaOH, 0.5 mM HEPES, 10 MgCl2, plus phenol red 0.05%, pH 7.4. Then, 3.5 μg of the vectors were mixed with 120 mM CaCl2 in HBSS (Life Technologies, 14175095) containing 25 mM HEPES, 140 mM NaCl, and 0.750 mM Na2HPO4, pH 7.06, left for 20 min to precipitate the DNA, and applied to the primary hippocampal cultures for 30 min. The medium was then replaced with conditioned Neurobasal medium (Life Technologies, 21103049) and cultures were returned to the incubator until use.
 
-## Multielectrode array recordings
+### Multielectrode array recordings
 
-## Multi Channel Systems MEA
+#### Multi Channel Systems MEA
 
 MEA recording protocols were adapted from Savell et al., 2019b. Briefly, E19 rat hippocampal neurons were seeded to six-well MEAs containing nine extracellular recording electrodes and a ground electrode. Neurons were transduced with AAV expressing BIN1 or control constructs on DIV2. Transduced neurons had 50% medium changes with BrainPhys (StemcellTech, 05793) medium supplemented with N2A and SM1 at DIV 5 and 9 to promote maturation, then with supplemented Neurobasal (Life Technologies, 21103049) at DIV 12. 20 min MEA recordings were performed at DIV 12–13 in the temperature-controlled headstage at 37°C. Neuronal firing was amplified and acquired at 30 kHz, digitized, and further analyzed in MC_Rack (Multi Channel Systems). Data were filtered at 10 Hz and 10,000 Hz filters and thresholded to detect action potentials at each electrode. Detected action potentials were transferred to Offline Sorter (v. 4.0 Plexon) to differentiate multiple neurons detected with a single electrode using principal component analysis (PCA) of waveform properties. Offline Sorter automatically completes and plots PCA on waveforms for each electrode. Manual inspection of PCA, shape, inter-spike intervals, auto-correlograms, and cross-correlograms allowed us to distinguish between multiple units on a single electrode and to do per-neuron analyses. After waveforms were split into units, analysis of each unit’s action potential frequency and burst firing was completed in NeuroExplorer (v. 5.0, Plexon) using the built-in Burst Analysis function, with Poisson burst surprise = 5. Next, firing rates and bursting analysis were performed in NeuroExplorer (v. 5.0 Plexon). Researchers were blinded to experimental conditions performed in all MEA analyses.
 
-## Axion Biosciences MEA
+#### Axion Biosciences MEA
 
 Single neuron electrophysiological activity was recorded using an Axion Maestero recording system as in Savell et al., 2019a. Briefly, neurons were plated on the 48-well MEA (Axion Biosystems, M768-tMEA-48B-5) with 16 extracellular recording electrodes and a ground electrode per well at a density of 30,000 neurons per well in Neurobasal medium (5 μL) with 10% FBS (Atlanta Biologicals, S11550) and placed in a 37°C incubator with 5% CO2. After allowing neurons to attach to the plate for 2 hr, 300 μL serum-free Neurobasal (Life Technologies, 21103049) was added. The next day, AraC was added as with other experiments and a 50% medium change with BrainPhys (Stemcell Technologies Inc, 05790) supplemented with SM1 and L-glutamine was done at DIV 5. At DIV 6, neurons were treated with ASO to reduce Tau protein levels. At DIV 9, a 50% medium change was completed with supplemented BrainPhys, followed by a 50% medium change with supplemented Neurobasal at DIV 12. At DIV 13, neurons were recorded using Axion AxIS software for 15 min. Electrical activity was measured by an interface board at 12.5 kHz, digitized, and transmitted to an external computer for data acquisition and analysis in Axion AxIS Navigator software (Axion Biosystems). All data were filtered using dual 0.01 Hz (high pass) and 5,000 Hz (low-pass) Butterworth filters. Action potential thresholds were set automatically using an adaptive threshold for each electrode (>6 standard deviations from the electrode’s mean signal). Neuronal waveforms collected in Axion AxIS Navigator were exported to Offline Sorter (v. 4.0 Plexon). Offline Sorter automatically completes and plots PCA on waveforms for each electrode. Manual inspection of PCA, shape, inter-spike intervals, auto-correlograms, and cross-correlograms allowed us to distinguish between multiple units on a single electrode and to do per-neuron analyses. After waveforms were split into units, analysis of each unit’s action potential frequency and burst firing was completed in NeuroExplorer (v. 5.0, Plexon) using the built-in Burst Analysis function, with Poisson burst surprise = 5. Next, firing rates and bursting analysis were performed in NeuroExplorer (v. 5.0 Plexon). Researchers were blinded to experimental conditions performed in all MEA analyses.
 
-## Antisense oligonucleotide application
+### Antisense oligonucleotide application
 
 Tau anti-sense oligonucleotide (ASO) sequences were adapted from DeVos et al., 2013 and produced by Integrated DNA Technology (Tau ASO: 5-ATCACTGATTTTGAAGTCCC-3, Nontargeting control ASO: 5-CCTTCCCTGAAGGTTCCTCC-3). ASOs were dissolved to 100 μM in 10 mM Tris with 0.1 mM EDTA and stored at −20°C until use. At DIV 6, one week before testing for both MEA experiments and PLA, neurons were treated with ASO to a final concentration of 1 μM.
 
-## Calcium imaging
+### Calcium imaging
 
-Calcium imaging was adapted from Léveillé et al., 2008. Briefly, rat primary hippocampal neurons (DIV 14) were transfected (see Neuronal transfection section) with the genetically engineered calcium sensor GCaMP6f (gift from Dr. Alain Buisson, originally developed by Douglas Kim and GENIE Project, Addgene plasmid #40755, Chen et al., 2013). At DIV 21, the neurons were incubated for 15 min at room temperature in HEPES and bicarbonate buffered saline solution (HBBSS) containing 116 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 0.8 mM MgSO4, 1.3 mM NaH2PO4, 12 mM HEPES, 5.5 mM glucose, 25 mM bicarbonate and 10 μM glycine at pH 7.45. Neurons that were transfected with mKate2 or BIN1-mKate2 vectors (see BIN1 constructs and vectors section) were recorded for 8 min. Experiments were performed at room temperature with continuous perfusion at 2 ml/min with a peristaltic pump, on the stage of a Nikon A1R Confocal (Nikon, TE2000) inverted microscope equipped with a 100 W mercury lamp and oil-immersion Nikon 40x objective with 1.3 numerical aperture (Nikon, Tokyo, Japan). GCaMP6f (excitation: 340/380 nm, emission: 510 nm) ratio images were acquired at 8 Hz with a digital camera (Princeton Instruments, Trenton, NJ) using Metafluor 6.3 software (Universal Imaging Corporation, West Chester, PA, USA). Fluorescence ratios (340/380 nm) were converted to intracellular Ca2+ concentration using the following formula:[Ca2+]i=Kd(R−RminRmax−R)(F0Fs)where R is the measured ratio of 340/380 fluorescence, Rmin is the ratio measured in a Ca2+-free solution, Rmax is the ratio measured in a saturated Ca2+ solution, Kd = 135 nM (the dissociation constant for GCaMP6f), and F0 and Fs are the fluorescence intensities measured at 380 nm, respectively, in a Ca2+-free solution or in a saturated Ca2+ solution.
+Calcium imaging was adapted from Léveillé et al., 2008. Briefly, rat primary hippocampal neurons (DIV 14) were transfected (see Neuronal transfection section) with the genetically engineered calcium sensor GCaMP6f (gift from Dr. Alain Buisson, originally developed by Douglas Kim and GENIE Project, Addgene plasmid #40755, Chen et al., 2013). At DIV 21, the neurons were incubated for 15 min at room temperature in HEPES and bicarbonate buffered saline solution (HBBSS) containing 116 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 0.8 mM MgSO4, 1.3 mM NaH2PO4, 12 mM HEPES, 5.5 mM glucose, 25 mM bicarbonate and 10 μM glycine at pH 7.45. Neurons that were transfected with mKate2 or BIN1-mKate2 vectors (see BIN1 constructs and vectors section) were recorded for 8 min. Experiments were performed at room temperature with continuous perfusion at 2 ml/min with a peristaltic pump, on the stage of a Nikon A1R Confocal (Nikon, TE2000) inverted microscope equipped with a 100 W mercury lamp and oil-immersion Nikon 40x objective with 1.3 numerical aperture (Nikon, Tokyo, Japan). GCaMP6f (excitation: 340/380 nm, emission: 510 nm) ratio images were acquired at 8 Hz with a digital camera (Princeton Instruments, Trenton, NJ) using Metafluor 6.3 software (Universal Imaging Corporation, West Chester, PA, USA). Fluorescence ratios (340/380 nm) were converted to intracellular Ca2+ concentration using the following formula:
 
-## Electrophysiology
+$$
+[Ca^{2+}]_{i}=K_{d}(\frac{R−R_{min}}{R_{max}−R})(\frac{F_{0}}{F_{s}})
+$$
+
+where R is the measured ratio of 340/380 fluorescence, Rmin is the ratio measured in a Ca2+-free solution, Rmax is the ratio measured in a saturated Ca2+ solution, Kd = 135 nM (the dissociation constant for GCaMP6f), and F0 and Fs are the fluorescence intensities measured at 380 nm, respectively, in a Ca2+-free solution or in a saturated Ca2+ solution.
+
+### Electrophysiology
 
 All electrophysiological recordings were performed in primary hippocampal neuronal cultures after 19–21 DIV. Whole-cell patch-clamp recordings were made from visually identified pyramidal neurons. Recorded signals were amplified with a MultiClamp 700B amplifier (Molecular Devices), filtered at 5 kHz, and sampled at 10 kHz with Digidata 1550A (Molecular Devices). Recordings were acquired using pClamp (v.10) and analyzed using Clampfit (Molecular Devices). Patch pipettes had a resistance of 2.5–5 MΩ when filled with the internal solution required for the experiments described below. All recordings were performed at room temperature (21–23°C). Internal solution included 120 mM Cs-gluconate, 0.6 mM EGTA, 2.8 mM NaCl, 5 mM MgCl2, 2 mM ATP, 0.3 mM GTP, 20 mM HEPES, and 5.0 mM QX-314. External solution included 119 mM NaCl, 2.5 mM KCl, 1.3 mM MgSO4, 2.5 mM CaCl2, 1 mM NaH2PO4, 26 mM NaHCO3, 11 mM glucose (pH 7.3). Voltage-clamp recordings to measure sEPSCs were performed from cultured neurons by whole-cell patch-clamp holding the neurons at –70 mV with 100 µM picrotoxin (GABAAR antagonist, Tocris, 11–281 G) in the bath solution. Voltage-clamp recordings to measure sIPSCs were performed from cultured neurons by whole-cell patch-clamp holding the neurons at 0 mV in 10 µM DNQX (AMPAR antagonist, Sigma, D0540-25MG), 100 µM APV (NMDAR antagonist, Tocris, 01-055-0), and 10 µM nifedipine (L-type VGCC antagonist, Sigma, N7634-25G) to enrich for sIPSCs from spontaneously active interneurons rather than from interneuron-driven by excitatory transmission.
 
-## Immunocytochemistry (ICC) and NeuN quantification
+### Immunocytochemistry (ICC) and NeuN quantification
 
 ICC was adapted from Rush et al., 2020. Briefly, primary neurons on coverslips were fixed with 4% PFA and 4% sucrose in 1x PBS. Coverslips were permeabilized with 0.25% Triton X-100 in 1x PBS for 10 min at room temperature then blocked for one hour in 5% FBS in 1x PBS. Primary antibody for NeuN (abcam, ab104225, 1:500), GAD67 (Millipore Sigma, MAB5406, 1:500), BIN1 (Santa Cruz, sc-30099, 1:500), or LVGCC-β1 (Abcam, S7-18, 1:1,000) in 1% FBS in 1x PBS was applied overnight at 4°C. Coverslips were then washed 3 × 5 min in 1x PBS, then incubated in Alexa Fluor fluorescent antibodies (1:1,000) in 1% FBS in 1x PBS for 1 hr at room temperature. Coverslips were washed 3 × 5 min in 1x PBS, then mounted in Prolong Diamond. For neuron quantification, 10 × 10 images at 20x were taken with an epiflourescent microscope and automatically stitched together using Nikon NIS-Elements. NeuN images were thresholded in ImageJ, then quantified using ImageJ (v. 2.0.0-rc-69/1.52 p) particle analyzer.
 
-## Proximity Ligation Assay (PLA)
+### Proximity Ligation Assay (PLA)
 
 PLA was adapted from Rush et al., 2020. Briefly, neurons on coverslips were fixed and permeabilized as with ICC, then were incubated overnight with primary antibodies for BIN1 (Santa Cruz, sc-30099, 1:500) and LVGCC-β1 (Abcam, S7-18, 1:1,000) overnight at 4°C, then PLA was performed using the Duolink In Situ Fluorescence kit (Sigma, DUO92004-100RXN). After PLA, coverslips were incubated with secondary antibody to view BIN1 and mounted with Duolink In Situ Mounting Medium with DAPI. Fluorescent images were taken using an epifluorescence microscope at 60x with four channels: DAPI (nuclei), FITC (PLA), and TRITC (mKate2). 7–9 images per slide were obtained and analyzed using ImageJ (v. 2.0.0-rc-69/1.52 p). PLA puncta were quantified using ImageJ particle analyzer, and the average number of puncta per field of view (FOV) or each coverslip was used for analysis.
 
-## Bioluminescence Resonance Energy Transfer (BRET)
+### Bioluminescence Resonance Energy Transfer (BRET)
 
 BRET was conducted as described in Cochran et al., 2014. Codon-optimized human BIN1-SH3 or LVGCC-β1-SH3 domains were fused on the C-terminus to click beetle green (CBG) luciferase (Promega, E1461) replacing the Fyn-SH3 in the previously described donor construct. Tau tagged at each terminus with mKate2 (Evrogen, FP184) served as the acceptor. Chinese hamster ovary (CHO) cells (Sigma, 85051005-1VL) obtained from ECACC (Lot number 12G006) were authenticated using DNA Fingerprinting and DNA bar-coding sequencing and tested negative for mycoplasma contamination using PCR, a Vero indicator cell line, and Hoechst 33258 fluorescent detection system (Certificate of Analysis test number 47856). CHO cells were plated in 24-well opaque white plates (Promega, 6005168) using the manufacturer’s instructions and transfected with donor and acceptor constructs using Fugene. Forty-eight hours later, fluorescence was read by excitation with a 530/25 nm filter and emission with a 645/40 nm filter on a Synergy2 (BioTek) to control for the concentration of the donor. Immediately after fluorescence measurement, D-luciferin (Promega, E1605) was added to a final concentration of 200 µM to each well. Two to 4 hr later, after the signal had stabilized, plates were read with 645/40 nm filter. Measured BRET fluorescence was normalized to mKate2 fluorescence.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Mouse hemibrains were finely chopped while frozen, then thawed on ice in PBS plus protease inhibitors (Fisher PI-78439), phosphatase inhibitors (Sigma-Aldrich, P5726), and 1 mM of the cell-permeable cross-linker DSP (Fisher, PI-22585). Hemibrains were then homogenized for 15 s using a hand-held Kontes Pellet Pestle homogenizer, then pipetted up and down 20x to obtain a smooth lysate. Lysates were spun 2 × 10 min at 800 x g, then cleared lysates were incubated for 15 min at 4°C on an end-over-end rotator. Next, lysates were brought to 100 mM Tris to inactivate DSP and incubated for another 15 min at 4°C on an end-over-end rotator. Samples were then diluted 1:1 with a mild co-IP buffer: 10 mM Tris (pH 7.5), 10 mM NaCl, 3 mM MgCl2, 1 mM EGTA, and 0.05% Nonidet P-40, a mild lysis buffer previously shown to be amenable to co-IP experiment (Filiano et al., 2008). At this point, an input fraction was set aside before adding IP antibody to the lysate, with 5 µg of antibody used in each case. Lysate/antibody mixtures were incubated overnight on an end-over-end rotator. Next, 50 uL of Protein G–coated magnetic beads (Life Technologies, 10004D) were added and incubated for 8 hr at 4°C on an end-over-end rotator. Next, non-interacting lysate was removed, the bead/antibody/antigen complex was washed, then protein was eluted with 50 mM Glycine (pH 2.8) and neutralized with 1 M Tris, reduced with β-Mercaptoethanol and an 80°C incubation for 10 min, then cooled and probed by immunoblotting.
 
-## Immunoblots
+### Immunoblots
 
 5 µg of immunoprecipitated samples were loaded and separated on 4–12% NuPage acrylamide gels (Invitrogen) with NuPage MOPS running buffer for 2 hr at 110 V. Next, proteins were transferred to Immobilon-FL PVDF membranes (Millipore) using the NuPage transfer buffer transfer system (Invitrogen) overnight. The membrane was blocked in LI-COR Odyssey blocking buffer (LI-COR, 927–40000) for 1 hr at room temperature and incubated with the appropriate primary antibody. After primary antibody treatment, membranes were washed three times in tris-buffered saline with 0.1% Tween (TBS-T), followed by incubation for 1 hr with Alexa Fluor 700– or 800–conjugated goat antibodies specific for mouse immunoglobulin G (1:20,000, LI-COR). Membranes were then washed three times in TBST-T, followed by a single wash in TBS, imaged on the LI-COR Odyssey fluorescence imaging system, and quantified using LI-COR Image Studio (v. 5.2.5).
 
-## Animals
+### Animals
 
 All breeding and experimental procedures were approved by the University of Alabama at Birmingham Institutional Animal Care and Use Committee and follow the guidelines by the National Institutes of Health. Male and female Tau+/– mice lacking exon 1 of MAPT gene were bred to obtain Tau–/– mice with littermate Tau+/+ controls. Mice were maintained under standard laboratory conditions (12 hr light/dark cycle, 50% humidity, Harlan 2916 diet, and water ad libitum). Genotype was verified by standard PCR protocol.
 
-## Statistics
+### Statistics
 
 Statistical distribution of data varied widely between data sets in this study, so we analyzed each data set for normality and analyzed using either parametric or non-parametric tests accordingly. The specific test used is indicated in the figure legend in each case. All statistical tests were performed with Prism 8 (GraphPad, v. 8.4.0).

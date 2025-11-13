@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.11214.001 A prerequisite for the systems biology analysis of tissues is an accurate digital three-dimensional reconstruction of tissue structure based on images of markers covering multiple scales. Here, we designed a flexible pipeline for the multi-scale reconstruction and quantitative morphological analysis of tissue architecture from microscopy images. Our pipeline includes newly developed algorithms that address specific challenges of thick dense tissue reconstruction. Our implementation allows for a flexible workflow, scalable to high-throughput analysis and applicable to various mammalian tissues. We applied it to the analysis of liver tissue and extracted quantitative parameters of sinusoids, bile canaliculi and cell shapes, recognizing different liver cell types with high accuracy. Using our platform, we uncovered an unexpected zonation pattern of hepatocytes with different size, nuclei and DNA content, thus revealing new features of liver tissue organization. The pipeline also proved effective to analyse lung and kidney tissue, demonstrating its generality and robustness. DOI: http://dx.doi.org/10.7554/eLife.11214.001
+A prerequisite for the systems biology analysis of tissues is an accurate digital three-dimensional reconstruction of tissue structure based on images of markers covering multiple scales. Here, we designed a flexible pipeline for the multi-scale reconstruction and quantitative morphological analysis of tissue architecture from microscopy images. Our pipeline includes newly developed algorithms that address specific challenges of thick dense tissue reconstruction. Our implementation allows for a flexible workflow, scalable to high-throughput analysis and applicable to various mammalian tissues. We applied it to the analysis of liver tissue and extracted quantitative parameters of sinusoids, bile canaliculi and cell shapes, recognizing different liver cell types with high accuracy. Using our platform, we uncovered an unexpected zonation pattern of hepatocytes with different size, nuclei and DNA content, thus revealing new features of liver tissue organization. The pipeline also proved effective to analyse lung and kidney tissue, demonstrating its generality and robustness.
 
 ## Introduction
 
@@ -39,161 +39,422 @@ In this study, we addressed these challenges by developing a set of new algorith
 
 Despite its importance and a long history of histological studies, only a few geometrical models of liver tissue have been published (Hardman et al., 2007; Hoehme et al., 2010; Hammad et al., 2014). The liver is composed of functional units, the lobules. In each lobule, bile canaliculi and sinusoidal endothelial cells form two 3D networks between the portal vein (PV) and the central vein (CV). The bile canalicular (BC) network is formed by hepatocytes and transports the bile, whereas the sinusoidal endothelial network transports the blood. The liver tissue has a number of remarkable features. One is the zonation of metabolic functions due to the fact that the hepatocytes located in the vicinity of the PV do not have the same metabolic activities as the hepatocytes located near the CV (Kuntz and Kuntz, 2006). Second, hepatocytes are remarkably heterogeneous in terms of number of nuclei (mono- and bi-nucleated) and ploidy (Martin et al., 2002; Guidotti et al., 2003; Faggioli et al., 2011). Third, the lobules contain two additional important cell types, stellate and Kupffer cells (Baratta et al., 2009).
 
-To analyse the 3D organization of liver tissue, we established a workflow for confocal imaging of mouse liver specimens and developed an adjustable pipeline of new and established image analysis algorithms to process the images and build digital models of the tissue (
+To analyse the 3D organization of liver tissue, we established a workflow for confocal imaging of mouse liver specimens and developed an adjustable pipeline of new and established image analysis algorithms to process the images and build digital models of the tissue (Figure 1 and Figure 1—figure supplement 1). First, we established a protocol for the preparation of tissue specimens for single- and double-photon confocal microscopy at different resolutions. To cover multiple scales from subcellular organelles to tissue spanning over three orders of magnitude, we used a 3D multi-resolution tissue image acquisition approach (Figure 1A). This consisted of imaging a tissue sample at low resolution (1 μm × 1 μm × 1 μm per voxel) and zooming on the parts of interest at high resolution (0.3 μm × 0.3 μm × 0.3 μm per voxel). Second, the multi-scale reconstruction of tissue architecture was obtained following the pipeline of Figure 1B and Figure 1—figure supplement 1. Briefly, (1) images were filtered using a novel Bayesian de-noising algorithm; (2) individual low-resolution images of each physical section were assembled in 3D mosaics; (3) tissue deformations caused by sample preparation were corrected; (4) large vessels were segmented; (5) the 3D mosaics of sections were combined in a full-scale low-resolution model; (6) high-resolution images were registered into the low-resolution one; (7) sinusoidal and BC networks as well as nuclei were segmented and, finally, (8) the different cell types were identified, classified and segmented. We used the geometrical model to provide a detailed and accurate quantitative description of liver tissue geometry, including the complexity of the sinusoidal and BC networks, hepatocyte size distribution, stellate and Kupffer cells distribution in the tissue. Additionally, our platform comprises a set of methods for the proper statistical analysis of different morphometric parameters of the tissue as well as their spatial variability (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-v2.jpg)
 
-**Figure 1.:** (A) 3D multi-resolution image acquisition: example of arrays of 2D images of liver tissue acquired at different resolutions. Low- (1 μm × 1 μm × 1 μm per voxel) and high- (0.3 μm × 0.3 μm × 0.3 μm per voxel) resolution images on the left and right sides, respectively. (B) Multi-scale reconstruction of tissue architecture: on the left, reconstruction of a liver lobule showing tissue-level information, i.e., the localization and relative orientation of key structures such as the portal vein (PV) (orange) and central vein (CV) (light blue). The high-resolution images registered into the low-resolution one are shown in white. On the middle, a cellular-level reconstruction of liver showing the main components forming the tissue, i.e., bile canalicular (BC) network (green), sinusoidal network (magenta) and cells (random colours). The reconstruction corresponds to one of the high-resolution cubes (white) registered on the liver lobule reconstruction (left side). On the right, reconstruction of a single hepatocyte showing subcellular-level information, i.e., apical (green), basal (magenta) and lateral (grey) contacts. (C) Quantitative analysis of the tissue architecture: example of the statistical analysis performed over a morphometric tissue parameter (hepatocyte volume) using the information extracted from the multi-scale reconstruction. On the left, hepatocyte volume distribution over the sample (traditional statistics). On the right, spatial variability (spatial statistics) of the same parameter within the liver lobule. Our workflow allows not only to perform traditional statistical analysis of different morphometric parameters but also to perform spatial characterizations of them. The graphs were generated from the analysis of one high-resolution cube of the multi-scale reconstruction (the one shown in middle of panel B). Boundary cells were excluded from the analysis.DOI: http://dx.doi.org/10.7554/eLife.11214.003
+**Figure 1.:** (A) 3D multi-resolution image acquisition: example of arrays of 2D images of liver tissue acquired at different resolutions. Low- (1 μm × 1 μm × 1 μm per voxel) and high- (0.3 μm × 0.3 μm × 0.3 μm per voxel) resolution images on the left and right sides, respectively. (B) Multi-scale reconstruction of tissue architecture: on the left, reconstruction of a liver lobule showing tissue-level information, i.e., the localization and relative orientation of key structures such as the portal vein (PV) (orange) and central vein (CV) (light blue). The high-resolution images registered into the low-resolution one are shown in white. On the middle, a cellular-level reconstruction of liver showing the main components forming the tissue, i.e., bile canalicular (BC) network (green), sinusoidal network (magenta) and cells (random colours). The reconstruction corresponds to one of the high-resolution cubes (white) registered on the liver lobule reconstruction (left side). On the right, reconstruction of a single hepatocyte showing subcellular-level information, i.e., apical (green), basal (magenta) and lateral (grey) contacts. (C) Quantitative analysis of the tissue architecture: example of the statistical analysis performed over a morphometric tissue parameter (hepatocyte volume) using the information extracted from the multi-scale reconstruction. On the left, hepatocyte volume distribution over the sample (traditional statistics). On the right, spatial variability (spatial statistics) of the same parameter within the liver lobule. Our workflow allows not only to perform traditional statistical analysis of different morphometric parameters but also to perform spatial characterizations of them. The graphs were generated from the analysis of one high-resolution cube of the multi-scale reconstruction (the one shown in middle of panel B). Boundary cells were excluded from the analysis.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The necessary methods for each step (implemented in our software) are listed. They include newly developed ones (N) as well as standard image analysis algorithms (S) and modified versions of them (M).DOI: http://dx.doi.org/10.7554/eLife.11214.004
+**Figure 1—figure supplement 1.:** The necessary methods for each step (implemented in our software) are listed. They include newly developed ones (N) as well as standard image analysis algorithms (S) and modified versions of them (M).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Single 2D plane of a high-resolution image stained with phalloidin for actin (cell borders) and Flk1 for sinusoids (A, D) before and (B, E) after applying our probabilistic image de-noising algorithm. The outlier-tolerant estimation of the background was done using a 10-pixel window. (C, F) Phalloidin/Flk1 intensity values of pixels along the horizontal yellow line for both, the original and the de-noised images. Our probabilistic image de-noising algorithm efficiently reduces the noise while preserving the edges present in the image even in the presence of high diffusive background. (G) Mean variance for each intensity level (I). The experimental data are represented by the red dots, the error bar represents SEM and the theoretical curve (straight line) is represented by the solid black line. (H) Prediction of the background intensity using linear fitting by least-squares method (solid black line) and the outlier-tolerant algorithm (solid red line) for a set of sequential intensities in z-direction (blue dots). The dots represent the intensity values of the voxels along the vertical yellow line at the original image on the left [stained with CD13 for bile canalicular (BC) network].DOI: http://dx.doi.org/10.7554/eLife.11214.005
+**Figure 1—figure supplement 2.:** Single 2D plane of a high-resolution image stained with phalloidin for actin (cell borders) and Flk1 for sinusoids (A, D) before and (B, E) after applying our probabilistic image de-noising algorithm. The outlier-tolerant estimation of the background was done using a 10-pixel window. (C, F) Phalloidin/Flk1 intensity values of pixels along the horizontal yellow line for both, the original and the de-noised images. Our probabilistic image de-noising algorithm efficiently reduces the noise while preserving the edges present in the image even in the presence of high diffusive background. (G) Mean variance for each intensity level (I). The experimental data are represented by the red dots, the error bar represents SEM and the theoretical curve (straight line) is represented by the solid black line. (H) Prediction of the background intensity using linear fitting by least-squares method (solid black line) and the outlier-tolerant algorithm (solid red line) for a set of sequential intensities in z-direction (blue dots). The dots represent the intensity values of the voxels along the vertical yellow line at the original image on the left [stained with CD13 for bile canalicular (BC) network].
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) The mask defining the objects vicinity in the case of bile canalicular (BC) network (yellow) is shown in red and was created by applying an inflation of two voxels (~0.5 µm) to the original objects. (B) Selection of the best parameters for the ‘pure denoise’ method. We used as fixed parameter the number of cycles (10, the maximum possible). ‘Number of frames’ = 11 (the maximum available in the plug-in) shows the best results, i.e., minimum global mean square error (MSE) as well as MSE in the vicinity of the objects. (C) Selection of the best parameters for the ‘edge preserving de-noising and smoothing’ method. We used as fixed parameter the number of cycles (100). ‘Smoothing level’ = 70 corresponds the point before the MSE in the vicinity of the objects starts increasing while the global MSE remains low.DOI: http://dx.doi.org/10.7554/eLife.11214.006
+**Figure 1—figure supplement 3.:** (A) The mask defining the objects vicinity in the case of bile canalicular (BC) network (yellow) is shown in red and was created by applying an inflation of two voxels (~0.5 µm) to the original objects. (B) Selection of the best parameters for the ‘pure denoise’ method. We used as fixed parameter the number of cycles (10, the maximum possible). ‘Number of frames’ = 11 (the maximum available in the plug-in) shows the best results, i.e., minimum global mean square error (MSE) as well as MSE in the vicinity of the objects. (C) Selection of the best parameters for the ‘edge preserving de-noising and smoothing’ method. We used as fixed parameter the number of cycles (100). ‘Smoothing level’ = 70 corresponds the point before the MSE in the vicinity of the objects starts increasing while the global MSE remains low.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Panel (A) shows single 2D plane projections of an artificial high-resolution image of bile canalicular (BC) network (2:1 signal-to-noise ratio) before adding Poisson noise (ground truth) and the result of the application of our de-noising algorithm (BFBD) as well as a median filter, a Gauss low-pass filter and an anisotropic diffusion. (B) The resulting images were analysed in terms of the global mean square error (MSE) and coefficient of correlation (CoC). (C) The same metrics were evaluated only on the vicinity of the BC. Our method shows considerably better noise reduction (low global MSE and high global CoC) than the other methods, except the Gauss low-pass filter. However, the Gauss low-pass filter shows a high MSE and low CoC in the vicinity of the objects (in comparison with our method), suggesting a blurring of the object edges. The bars show the average values over three samples and the error bars correspond to standard deviations. A median filter (smooth window 3 ×3 ×3 voxels), a Gauss low-pass filter (s = 1 voxels) and an anisotropic diffusion (), where D = 0.05, α = 2, number iterations= 100, were applied.∂I∂t=-D1 α|∇I|∆IDOI: http://dx.doi.org/10.7554/eLife.11214.007
+**Figure 1—figure supplement 4.:** Panel (A) shows single 2D plane projections of an artificial high-resolution image of bile canalicular (BC) network (2:1 signal-to-noise ratio) before adding Poisson noise (ground truth) and the result of the application of our de-noising algorithm (BFBD) as well as a median filter, a Gauss low-pass filter and an anisotropic diffusion. (B) The resulting images were analysed in terms of the global mean square error (MSE) and coefficient of correlation (CoC). (C) The same metrics were evaluated only on the vicinity of the BC. Our method shows considerably better noise reduction (low global MSE and high global CoC) than the other methods, except the Gauss low-pass filter. However, the Gauss low-pass filter shows a high MSE and low CoC in the vicinity of the objects (in comparison with our method), suggesting a blurring of the object edges. The bars show the average values over three samples and the error bars correspond to standard deviations. A median filter (smooth window 3 ×3 ×3 voxels), a Gauss low-pass filter (s = 1 voxels) and an anisotropic diffusion ($\frac{\partialI}{\partialt}=-\frac{D}{1\alpha|\nablaI|}\DeltaI$), where D = 0.05, α = 2, number iterations= 100, were applied.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** Luisier et al., 2010) and ‘edge preserving de-noising and smoothing’ (EPDS) (Beck and Teboulle, 2009).Panel (A) shows single 2D plane projections of an artificial image of bile canalicular (BC) network (2:1 signal-to-noise ratio) after applying our de-noising algorithm as well as PD and EPDS. (B) The resulting images were analysed in terms of the global mean square error (MSE) and coefficient of correlation (CoC). (C) The same metrics evaluated only on the vicinity of the BC. Our method shows a better reduction of the noise (low global MSE and high global CoC) than the other methods. Additionally, it shows a relatively low MSE and high CoC in the vicinity of the objects. Panel (D) shows that global MSE increases with the depth of the sample for PD and EPDS, whereas it is more stable in our method. In the graph, each curve represents one independent sample. (E) Execution time of the algorithms in an Intel(R) Xeon(R) CPU E5-2620 @ 2.00 GHz. EPDS and BFBD are ~ 20 times faster than PD. The bars show the average values over three samples and the error bars correspond to standard deviations. PD and FPDS were performed using the optimal parameters shown in Figure 1—figure supplement 3. For the BFBD, we use a window of five pixels and a threshold = 1.25.DOI: http://dx.doi.org/10.7554/eLife.11214.008
+**Figure 1—figure supplement 5.:** Panel (A) shows single 2D plane projections of an artificial image of bile canalicular (BC) network (2:1 signal-to-noise ratio) after applying our de-noising algorithm as well as PD and EPDS. (B) The resulting images were analysed in terms of the global mean square error (MSE) and coefficient of correlation (CoC). (C) The same metrics evaluated only on the vicinity of the BC. Our method shows a better reduction of the noise (low global MSE and high global CoC) than the other methods. Additionally, it shows a relatively low MSE and high CoC in the vicinity of the objects. Panel (D) shows that global MSE increases with the depth of the sample for PD and EPDS, whereas it is more stable in our method. In the graph, each curve represents one independent sample. (E) Execution time of the algorithms in an Intel(R) Xeon(R) CPU E5-2620 @ 2.00 GHz. EPDS and BFBD are ~ 20 times faster than PD. The bars show the average values over three samples and the error bars correspond to standard deviations. PD and FPDS were performed using the optimal parameters shown in Figure 1—figure supplement 3. For the BFBD, we use a window of five pixels and a threshold = 1.25.
 
-## Sample preparation and multi-resolution tissue imaging
+### Sample preparation and multi-resolution tissue imaging
 
 Mouse livers were fixed by trans-cardial perfusion instead of the conventional immersion fixation (Burton et al., 1987) to minimize the time lag between the termination of blood flow and fixation (Gage et al., 2012). This proved to be absolutely essential to preserve the tissue architecture and the epitopes for immunostaining. Serial sections of fixed tissues were prepared at a thickness of 100 µm to maximize antibody penetration and limit laser light scattering. Liver sections were stained to visualize key subcellular and tissue structures, namely nuclei (DAPI), the apical surfaces of hepatocytes (CD13), the sinusoidal endothelial cells (Flk1) or ECM (Laminin and Fibronectin) and the cell cortex (F-actin stained by phalloidin). We tested various reagents and protocols to clear the liver tissue, such as glycerol and 2,2′thiodiethanol (TDE), and found that SeeDB (Ke et al., 2013) yielded the best results. Stained sections were imaged sequentially (generating Z-stacks) by one- and two-photon laser scanning confocal microscopy to maximize the number of fluorescent channels available. The same section was imaged twice, at low and high magnification, using 25×/0.8 and 63×/1.3 objectives, respectively. The first covers a large volume to reconstruct the whole lobule and the latter focuses on a small area to reconstruct the tissue at high resolution. The registration of 3D high-resolution images within low-resolution ones provides tissue-scale context information that is essential for the interpretation of the data at the cellular and subcellular level.
 
-## Bayesian foreground/background discrimination (BFBD) de-noising
+### Bayesian foreground/background discrimination (BFBD) de-noising
 
 A major problem for the image analysis of thick tissue sections is the low signal-to-noise ratio deep into the tissue, especially for stainings that yield high and diffuse background (e.g. actin staining with phalloidin throughout the cytoplasm). To address this problem, we developed a new Bayesian de-noising algorithm that first makes a probabilistic estimation of the background and separates it from the foreground (see ‘Methods’). Subsequently, the estimated background and foreground signals are independently smoothed and summed to generate a new de-noised image (Figure 1—figure supplement 2). We applied BFBD de-noising to both low- and high-resolution images. BFBD de-noising provides better results than the standard ones in the field, such as median filtering, Gauss low-pass filtering and anisotropic diffusion (Figure 1—figure supplement 4), but also outperforms (by quality and computational performance) other algorithms, known to be more elaborate, such as the ‘Pure Denoise’ (Luisier et al., 2010) and ‘edge preserving de-noising and smoothing’ (Beck and Teboulle, 2009) (see ‘Methods’) (Figure 1—figure supplement 5).
 
-## Reconstruction of multi-scale tissue images
+### Reconstruction of multi-scale tissue images
 
 The tissue was imaged at low- and high-resolution for the multi-scale reconstruction. The reconstruction was performed in three steps: (1) images of physical sections were assembled as mosaics of low-resolution images, (2) all mosaics were corrected for physical distortions and combined in a single 3D image (image stitching) and (3) the high-resolution images were registered into the low-resolution one.
 
-In more detail, the partially overlapping (~10% overlap) low-resolution images of each physical section were combined in 3D mosaics (
+In more detail, the partially overlapping (~10% overlap) low-resolution images of each physical section were combined in 3D mosaics (Figure 2A and Figure 2—figure supplement 1A) using the normalized cross-correlation (NCC) approach (see ‘Methods’). NCC was chosen because it allows finding accurate shifts given a coarse initial match between 3D images (Emmenlauer et al., 2009; Peng et al., 2010; Bria and Iannello, 2012). Then, the 3D image mosaics were combined into a single 3D image. The mechanical distortion and tissue damage produced by sectioning are such (as illustrated in Figure 2B and Figure 2—figure supplement 1C) that even advanced and well-established methods for image stitching (Preibisch et al., 2009; Saalfeld et al., 2012; Hayworth et al., 2015) fail due to the lack of texture correlations between adjacent sections. To address this problem, we developed a Bayesian algorithm for stitching images of bended and partially damaged soft tissue sections. The algorithm first corrects section bending and then uses the empty space at the interior of large structures (e.g. vessels) within adjacent sections to register and stitch them.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic representing a single serial section obtained from a grid of M × N partially overlapping 3D images (tiles). The cross-correlation between two neighbouring tiles in the grid provides a local metric, which describes the value of their relative shifts. The reconstruction of each section was performed by maximizing the sum correlations of each tile to all adjacent tiles (see ‘Methods’ for details). (B, C) Correction of tissue deformations (introduced during the sample preparation process) using a surface detection algorithm and β-spline transformation. (B) Output of the surface detection algorithm. The proposed Bayesian approach uses prior information about expected bending of the section, its thickness and measurement error (see ‘Methods’ for details) to determine the volume of the image belonging to the tissue and to the out-of-field region. (C) The tissue section after correcting its bending by using quadratic β-splines. (D) Tissue section before (left) and after (right) the correction of the mechanical distortions and the tissue damage. (E) Full lobule-level reconstruction established by the alignment of six low-resolution sections (1 μm × 1 μm × 1 μm per voxel) and the interpolation of blood vessels. Two high-resolution images (0.3 μm × 0.3 μm × 0.3 μm per voxel) were registered in the low-resolution reconstruction and are shown in grey (see Video 1).DOI: http://dx.doi.org/10.7554/eLife.11214.009
+**Figure 2.:** (A) Schematic representing a single serial section obtained from a grid of M × N partially overlapping 3D images (tiles). The cross-correlation between two neighbouring tiles in the grid provides a local metric, which describes the value of their relative shifts. The reconstruction of each section was performed by maximizing the sum correlations of each tile to all adjacent tiles (see ‘Methods’ for details). (B, C) Correction of tissue deformations (introduced during the sample preparation process) using a surface detection algorithm and β-spline transformation. (B) Output of the surface detection algorithm. The proposed Bayesian approach uses prior information about expected bending of the section, its thickness and measurement error (see ‘Methods’ for details) to determine the volume of the image belonging to the tissue and to the out-of-field region. (C) The tissue section after correcting its bending by using quadratic β-splines. (D) Tissue section before (left) and after (right) the correction of the mechanical distortions and the tissue damage. (E) Full lobule-level reconstruction established by the alignment of six low-resolution sections (1 μm × 1 μm × 1 μm per voxel) and the interpolation of blood vessels. Two high-resolution images (0.3 μm × 0.3 μm × 0.3 μm per voxel) were registered in the low-resolution reconstruction and are shown in grey (see Video 1).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Tissue section reconstruction: (A) Schematic representation of an M × N grid of partially overlapping 3D images. The regions in light blue and light red represent the overlapping areas between neighbouring images. The colour-coded maps show the cross-correlation matrixes between neighbouring images. (B) Reconstructed tissue section from 4×4 a grid of low-resolution images. The pattern of DAPI staining (nuclei) at the intersection of two neighbouring images is shown. Correction mechanical distortion and tissue damage on serial sections: (C) x–z section of the image of a tissue section showing the main obstacles for the tissue surface detection: unstained volume of blood vessels (C') and blurring (C''). Probabilities (D) , (p(ym1,ym2,|y1,y2)E)  and (p(y2|y1)F)  calculated from the maximum entropy segmentation (red), model equations (blue) and manual solution (green). All distributions in the figure were averaged over all tissue sections in the benchmark. (p(y1)G) Comparison of manual and automated surfaces calculated for two tissue sections from P16 (upper) and adult (lower) mice datasets. (H) Accuracy of surface detection. Plot presenting the mean absolute deviation calculated between manually and automatically detected surfaces for 33 different tissue sections in 4 data sets. Since tissue section segmentation is ambiguous, the control experiment was conducted by segmenting the same tissue sections manually three times.DOI: http://dx.doi.org/10.7554/eLife.11214.010
+**Figure 2—figure supplement 1.:** Tissue section reconstruction: (A) Schematic representation of an M × N grid of partially overlapping 3D images. The regions in light blue and light red represent the overlapping areas between neighbouring images. The colour-coded maps show the cross-correlation matrixes between neighbouring images. (B) Reconstructed tissue section from 4×4 a grid of low-resolution images. The pattern of DAPI staining (nuclei) at the intersection of two neighbouring images is shown. Correction mechanical distortion and tissue damage on serial sections: (C) x–z section of the image of a tissue section showing the main obstacles for the tissue surface detection: unstained volume of blood vessels (C') and blurring (C''). Probabilities (D) $p(y_{m1},y_{m2},|y_{1},y_{2})$, (E) $p(y_{2}|y_{1})$ and (F) $p(y_{1})$ calculated from the maximum entropy segmentation (red), model equations (blue) and manual solution (green). All distributions in the figure were averaged over all tissue sections in the benchmark. (G) Comparison of manual and automated surfaces calculated for two tissue sections from P16 (upper) and adult (lower) mice datasets. (H) Accuracy of surface detection. Plot presenting the mean absolute deviation calculated between manually and automatically detected surfaces for 33 different tissue sections in 4 data sets. Since tissue section segmentation is ambiguous, the control experiment was conducted by segmenting the same tissue sections manually three times.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Tissue-level network segmentation: (A) Reconstructed image of a tissue section. Large vessels appear as empty space in the image. (B) Spatial distribution of the local maximum entropy threshold value. (C) Segmentation of large vessel in a single tissue section. Registration of high-resolution images into low-resolution ones: Representative region of a 2D plane of (D) a low-resolution (yellow) and (E) a high-resolution (red) image stained with Flk1 for sinusoids. (F) Superimposed images after the registration.DOI: http://dx.doi.org/10.7554/eLife.11214.011
+**Figure 2—figure supplement 2.:** Tissue-level network segmentation: (A) Reconstructed image of a tissue section. Large vessels appear as empty space in the image. (B) Spatial distribution of the local maximum entropy threshold value. (C) Segmentation of large vessel in a single tissue section. Registration of high-resolution images into low-resolution ones: Representative region of a 2D plane of (D) a low-resolution (yellow) and (E) a high-resolution (red) image stained with Flk1 for sinusoids. (F) Superimposed images after the registration.
 
 A prerequisite for the correction of section bending is the detection of its upper and lower surfaces (Figure 2B). The high degree of image axial blurring in thick samples (Nasse and Woehl, 2010) and the presence of large vessels pose problems for the detection of surfaces (see Figure 2—figure supplement 1C). The algorithm reconstructed the probability distribution of the surface excursion (deviation from the mean position over the neighbourhood) and then used it to predict the localization of each point at the surface (see ‘Methods’). The surface predicted by the algorithm closely matched the surface detected manually (Figure 2—figure supplement 1G). Then, the bending correction was performed by standard β-spline transformation (Figure 2C,D).
 
 Next, the individual sections were combined. Since approximately one cell layer is removed upon sectioning, direct matching of two adjacent sections is impossible. Therefore, we first segmented the large vessels and then aligned the sections by matching them (Figure 2D). The vessels were segmented by using the local maximum entropy (LME) approach (Brink, 1996) (see ‘Methods’). Subsequently, the segmented vessels were classified (marked as PV or CV) revealing the precise arrangement of lobule-level structures. Finally, we interpolated these vessels within the gaps caused by tissue removal by tri-linear intensity approximation.
 
-Following the assembly of the low-resolution model, we registered the high-resolution images within it using rigid body transformation. To accelerate the search for registration parameters, we built a hierarchy of binned images and performed registration sequentially from the coarsest to the finest one (see ‘Methods’). This method was used for the reconstruction of a liver tissue model from six serial sections, each imaged as a 3 × 3 mosaic grid with 10% overlap and resolution of 1 μm × 1 μm × 1 μm per voxel. Then, two sections, each imaged as a 2 × 2 mosaic grid at high-resolution (0.3 μm × 0.3 μm × 0.3 μm per voxel) were registered within the low-resolution model. The reconstruction covers about 1300 μm × 1300 μm × 600 μm of the tissue and is presented in Figure 2E and Video 1.10.7554/eLife.11214.012Video 1.3D image visualization of a multi-resolution geometrical model of liver tissue.A set of six low-resolution (1.0 μm × 1.0 μm × 2.0 μm per voxel) and two high-resolution tissue sections (0.3 μm × 0.3 μm × 0.3 μm per voxel) were used. Central veins are shown in light blue, portal veins in orange and high-resolution cubes in grey.DOI: http://dx.doi.org/10.7554/eLife.11214.012
+Following the assembly of the low-resolution model, we registered the high-resolution images within it using rigid body transformation. To accelerate the search for registration parameters, we built a hierarchy of binned images and performed registration sequentially from the coarsest to the finest one (see ‘Methods’). This method was used for the reconstruction of a liver tissue model from six serial sections, each imaged as a 3 × 3 mosaic grid with 10% overlap and resolution of 1 μm × 1 μm × 1 μm per voxel. Then, two sections, each imaged as a 2 × 2 mosaic grid at high-resolution (0.3 μm × 0.3 μm × 0.3 μm per voxel) were registered within the low-resolution model. The reconstruction covers about 1300 μm × 1300 μm × 600 μm of the tissue and is presented in Figure 2E and Video 1.
 
-## 3D image segmentation and active mesh tuning for the accurate reconstruction of tubular networks (sinusoids and BC) and nuclei
+![Video 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-media1.mp4.jpg)
+
+**Video 1.:** A set of six low-resolution (1.0 μm × 1.0 μm × 2.0 μm per voxel) and two high-resolution tissue sections (0.3 μm × 0.3 μm × 0.3 μm per voxel) were used. Central veins are shown in light blue, portal veins in orange and high-resolution cubes in grey.
+
+### 3D image segmentation and active mesh tuning for the accurate reconstruction of tubular networks (sinusoids and BC) and nuclei
 
 The next step was to reconstruct the tubular structures present in the tissue, that is, sinusoidal and BC networks. One of the most popular tools for image segmentation is global thresholding (Pal and Pal, 1993). In particular, the maximum entropy approach has been widely applied to image reconstruction problems, including the segmentation of fluorescent microscopy images (Dima et al., 2011; Pecot et al., 2012). However, since 3D confocal images are usually heterogeneous in intensity due to staining unevenness and light scattering in the tissue (Lee and Bajcsy, 2006), global thresholding approaches may produce segmentation artefacts. In contrast, local thresholding allows adjusting the segmentation threshold to the spatial variability. We applied the LME method to find segmentation thresholds in the de-noised images. For this, we split the 3D image into a set of cubes and calculated the maximum entropy segmentation threshold (Brink, 1996) within each cube. The threshold values were tri-linearly interpolated to the entire 3D image.
 
-However, this segmentation approach produced two major artefacts. The objects were moderately swollen and contained holes resulting from local uneven staining. We used standard approaches to close the holes by morphological operations (opening/closing), which unfortunately led to even higher overestimation of the diameter of thin structures, such as sinusoids and BC. To correct this, we extended the segmentation algorithm by including the following steps. We generated a triangulation mesh of the segmented surfaces by the cube marching algorithm (
+However, this segmentation approach produced two major artefacts. The objects were moderately swollen and contained holes resulting from local uneven staining. We used standard approaches to close the holes by morphological operations (opening/closing), which unfortunately led to even higher overestimation of the diameter of thin structures, such as sinusoids and BC. To correct this, we extended the segmentation algorithm by including the following steps. We generated a triangulation mesh of the segmented surfaces by the cube marching algorithm (Lorensen and Cline, 1987) (Figure 3A). Then, we tuned the active mesh so that the triangle mesh vertexes aligned to the maximum gradient of fluorescence intensity in the original image (Figure 3A). Finally, we generated a representation of the skeletonized image via a 3D graph describing the geometrical and topological features of the BC and sinusoidal networks. The reconstruction of sinusoidal and BC networks are shown in Figure 3B,C, respectively.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-v2.jpg)
 
-**Figure 3.:** (A) A single 2D image section is shown with the contours of the sinusoidal network reconstruction overlaid on the de-noised image. The contours of the initial mesh are drawn in yellow, and the ones of the tuned mesh are drawn in cyan. (B–E) 3D representation of the different structures segmented in a sample of liver tissue: sinusoids (B), BC (C), nuclei (D) and cells (E). All the reconstructed structures are shown together in (F). The reconstructed triangle meshes are drawn inside the inner box and the raw images are outside. In the case of tubular networks (i.e. sinusoids and BC), the central lines of the structures are shown together with the raw images.DOI: http://dx.doi.org/10.7554/eLife.11214.013
+**Figure 3.:** (A) A single 2D image section is shown with the contours of the sinusoidal network reconstruction overlaid on the de-noised image. The contours of the initial mesh are drawn in yellow, and the ones of the tuned mesh are drawn in cyan. (B–E) 3D representation of the different structures segmented in a sample of liver tissue: sinusoids (B), BC (C), nuclei (D) and cells (E). All the reconstructed structures are shown together in (F). The reconstructed triangle meshes are drawn inside the inner box and the raw images are outside. In the case of tubular networks (i.e. sinusoids and BC), the central lines of the structures are shown together with the raw images.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) 3D visualization of a confocal image of closely packed nuclei (DAPI). (B) Objects resulting from the initial segmentation and reconstruction: triangle meshes of the artificially merged structures. The approximation of different structures (C) by (D) one or (E) two overlapping ellipsoids is shown. Prediction of multi-nuclear structures: (F) distribution of the  values obtained from the nuclei approximation by one and double ellipsoids. The distribution was fitted by a sum of two Gaussian distributions. The fitting curve is shown in blue (solid line) and the components in magenta and red (dash lines). (In(MSE)G) Calculated threshold that discriminates between bi/mono-nuclear and multi-nuclear structures. The graphs were obtained from the analysis of a sample of liver tissue, which covers the entire central vein (CV)-portal vein (PV) axis. Multi-nuclei splitting: (H) original confocal image where the nuclei seeds were detected (I) and expanded to the real nuclei shape (J). (K) The performance of the splitting algorithm was evaluated in both synthetic and real 3D images. The synthetic image consisted of 150 nuclei, which included single nuclei, double- and triple-nucleated structures. The individual nuclei had a radius between 5 and 7 µm. The multi-nucleated structures were generated with different degrees of overlap. A global background of 10% of the intensity of the nuclei was added to the whole image, then it was blurred using a Gaussian filter and finally salt and paper noise was added. The real image corresponds to an adult mouse tissue sample of 2.3 ×10–3 mm3 volume. The initial segmentation yielded 281 structures, which were analysed (the nuclei touching the borders of the sample were excluded from the analysis). The performance was evaluated in terms of true positive (TP), false positive (FP), true negative (TN) and false negative (FN) values. TP = correctly split, FP = over-splitting, TN = correctly not split, FN = under-splitting. Precision (PR) = TP/(TP FP), sensitivity (SN) = TP/(TP FN), specificity (SP) = TN/ (TN FP), F-score = 2 × (PR × SN)/(PR SN) and accuracy (AC) = (TP TN)/(TP TN FP FN).DOI: http://dx.doi.org/10.7554/eLife.11214.014
+**Figure 3—figure supplement 1.:** (A) 3D visualization of a confocal image of closely packed nuclei (DAPI). (B) Objects resulting from the initial segmentation and reconstruction: triangle meshes of the artificially merged structures. The approximation of different structures (C) by (D) one or (E) two overlapping ellipsoids is shown. Prediction of multi-nuclear structures: (F) distribution of the In(MSE) values obtained from the nuclei approximation by one and double ellipsoids. The distribution was fitted by a sum of two Gaussian distributions. The fitting curve is shown in blue (solid line) and the components in magenta and red (dash lines). (G) Calculated threshold that discriminates between bi/mono-nuclear and multi-nuclear structures. The graphs were obtained from the analysis of a sample of liver tissue, which covers the entire central vein (CV)-portal vein (PV) axis. Multi-nuclei splitting: (H) original confocal image where the nuclei seeds were detected (I) and expanded to the real nuclei shape (J). (K) The performance of the splitting algorithm was evaluated in both synthetic and real 3D images. The synthetic image consisted of 150 nuclei, which included single nuclei, double- and triple-nucleated structures. The individual nuclei had a radius between 5 and 7 µm. The multi-nucleated structures were generated with different degrees of overlap. A global background of 10% of the intensity of the nuclei was added to the whole image, then it was blurred using a Gaussian filter and finally salt and paper noise was added. The real image corresponds to an adult mouse tissue sample of 2.3 ×10–3 mm3 volume. The initial segmentation yielded 281 structures, which were analysed (the nuclei touching the borders of the sample were excluded from the analysis). The performance was evaluated in terms of true positive (TP), false positive (FP), true negative (TN) and false negative (FN) values. TP = correctly split, FP = over-splitting, TN = correctly not split, FN = under-splitting. Precision (PR) = TP/(TP FP), sensitivity (SN) = TP/(TP FN), specificity (SP) = TN/ (TN FP), F-score = 2 × (PR × SN)/(PR SN) and accuracy (AC) = (TP TN)/(TP TN FP FN).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Example of an image used to generate the training set for the classifier. The different types of nuclei forming in liver tissue where manually classified using the specific markers, that is, Flk1 (magenta) for sinusoidal endothelial cells (SECs), the macrophage antibody F/4/80 (yellow) for Kupffer cells and the intermediate filament Desmin (green) for stellate cells. The training set was extracted from three samples covering the entire central-portal vein axis. (B) Selection of the set of parameters for the linear discriminant analysis (LDA). The 74 calculated parameters were sorted by the Fisher score and the top five ranked parameters with the largest Fisher scores are shown. The classifier accuracy in dependency of the number of parameters used for the classification is plotted. The set of parameters that yielded the highest accuracy of the classifier was chosen. (C) Features dependency obtained in the Bayesian network classifier. The Bayesian network structure learning from the experimental data revealed that 15 parameters were relevant for the nuclei classification. The five parameters with the highest mutual information to the nuclei type are shown in inset.DOI: http://dx.doi.org/10.7554/eLife.11214.015
+**Figure 3—figure supplement 2.:** (A) Example of an image used to generate the training set for the classifier. The different types of nuclei forming in liver tissue where manually classified using the specific markers, that is, Flk1 (magenta) for sinusoidal endothelial cells (SECs), the macrophage antibody F/4/80 (yellow) for Kupffer cells and the intermediate filament Desmin (green) for stellate cells. The training set was extracted from three samples covering the entire central-portal vein axis. (B) Selection of the set of parameters for the linear discriminant analysis (LDA). The 74 calculated parameters were sorted by the Fisher score and the top five ranked parameters with the largest Fisher scores are shown. The classifier accuracy in dependency of the number of parameters used for the classification is plotted. The set of parameters that yielded the highest accuracy of the classifier was chosen. (C) Features dependency obtained in the Bayesian network classifier. The Bayesian network structure learning from the experimental data revealed that 15 parameters were relevant for the nuclei classification. The five parameters with the highest mutual information to the nuclei type are shown in inset.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Confusion matrixes obtained with the (A) linear discriminant analysis and (B) the Bayesian network classifier. The instances (e.g. nuclei) in each predicted class are represented in the columns of the matrix, while the instances in an actual class (manually identified) are represented in the rows. 3D representation of the different nuclei types identified in a representative sample of liver tissue: (C) hepatocytes, (D) sinusoidal endothelial cells (SECs), (E) stellate and (F) Kupffer cells.DOI: http://dx.doi.org/10.7554/eLife.11214.016
+**Figure 3—figure supplement 3.:** Confusion matrixes obtained with the (A) linear discriminant analysis and (B) the Bayesian network classifier. The instances (e.g. nuclei) in each predicted class are represented in the columns of the matrix, while the instances in an actual class (manually identified) are represented in the rows. 3D representation of the different nuclei types identified in a representative sample of liver tissue: (C) hepatocytes, (D) sinusoidal endothelial cells (SECs), (E) stellate and (F) Kupffer cells.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** Single 2D image planes are shown with contours of (A) sinusoidal and (B) and bile canalicular (BC) networks, (C) nuclei and (D) cells reconstructions overlaid on raw data. Insets show zoomed areas of the image.DOI: http://dx.doi.org/10.7554/eLife.11214.017
+**Figure 3—figure supplement 4.:** Single 2D image planes are shown with contours of (A) sinusoidal and (B) and bile canalicular (BC) networks, (C) nuclei and (D) cells reconstructions overlaid on raw data. Insets show zoomed areas of the image.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp5-v2.jpg)
 
-**Figure 3—figure supplement 5.:** (A) Generation of images with uneven staining. The image of the idealized structure (homogeneous tubes) created for the bile canalicular (BC) network is shown in the top left image. The initial coarse grained sampling (6 × 6 ×6 binning) of intensities is shown in the top-right image. The fine sampling (unbinned image) of intensities is shown in the bottom-right image and final result in the bottom-left one. (B) 3D representation and 2D projections of a model image of BC with uneven staining. (C) Characteristic point spread function (PSF) of a confocal microscope. (D) 3D representation and 2D projections of a model image of BC convolved with the PSF. (E) Mean variance of each intensity level for different depth (z-direction) levels of a confocal image. (F) Linear increase of the intensity scaling factor (alpha) with the sample depth for different channels. The error bars represent the standard deviation between three samples. (G) 3D representation and 2D projections of a final model image of BC after adding spatially variable Poisson noise.DOI: http://dx.doi.org/10.7554/eLife.11214.018
+**Figure 3—figure supplement 5.:** (A) Generation of images with uneven staining. The image of the idealized structure (homogeneous tubes) created for the bile canalicular (BC) network is shown in the top left image. The initial coarse grained sampling (6 × 6 ×6 binning) of intensities is shown in the top-right image. The fine sampling (unbinned image) of intensities is shown in the bottom-right image and final result in the bottom-left one. (B) 3D representation and 2D projections of a model image of BC with uneven staining. (C) Characteristic point spread function (PSF) of a confocal microscope. (D) 3D representation and 2D projections of a model image of BC convolved with the PSF. (E) Mean variance of each intensity level for different depth (z-direction) levels of a confocal image. (F) Linear increase of the intensity scaling factor (alpha) with the sample depth for different channels. The error bars represent the standard deviation between three samples. (G) 3D representation and 2D projections of a final model image of BC after adding spatially variable Poisson noise.
 
 ![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp6-v2.jpg)
 
-**Figure 3—figure supplement 6.:** Example of a realistic 3D image of liver tissue. 3D representation and 2D projections (xy and xz) of a high-resolution image created for bile canalicular (BC) (A) and sinusoidal (B) networks as well as nuclei (C) and cell borders (D). The images size is 256 ×256 ×256 voxels with a resolution of 0.3 μm × 0.3 μm × 0.3 μm per voxel. The image shown corresponds to a 2:1 signal-to-noise ratio.DOI: http://dx.doi.org/10.7554/eLife.11214.019
+**Figure 3—figure supplement 6.:** Example of a realistic 3D image of liver tissue. 3D representation and 2D projections (xy and xz) of a high-resolution image created for bile canalicular (BC) (A) and sinusoidal (B) networks as well as nuclei (C) and cell borders (D). The images size is 256 ×256 ×256 voxels with a resolution of 0.3 μm × 0.3 μm × 0.3 μm per voxel. The image shown corresponds to a 2:1 signal-to-noise ratio.
 
 ![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig3-figsupp7-v2.jpg)
 
-**Figure 3—figure supplement 7.:** The reconstructions of the different structures forming the tissue were evaluated in terms of true positive (TP), false positive (FP), true negative (TN) and false negative (FN) values extracted from the comparison of the reconstructed image and the ground truth (image without distortions). The precision (PR) and sensitivity (SN) are defined as TP/ (TP FP) and TP/ (TP FN), respectively. F-score is given 2 × (PR × SN)/ (PR SN). The tests were performed in three sets of images (three images per set) with different signal-to-noise ratio (10:1, 4:1, 2:1). (A–C) and (D–F) The results for the bile canalicular (BC) and sinusoidal networks, respectively. (G–I) and (J–L) The ones for nuclei and cells, respectively. Whereas in the case of BC, sinusoids and nuclei, the error bar corresponds to standard deviations of the values between three images, for the cells the error bar corresponds to the standard deviation of the values over all the cells in the samples (32 cells). Only the cells that were not in contact with the boundary of the image were analysed. (M–N) The mean values for the radius of BC and sinusoidal networks. (O) The mean error in the estimation of the cell volume. The error was calculated as , where 100×Vs-VgtVgtVand s Vare the volumes of the reconstructed and ground truth cells, respectively.gt DOI: http://dx.doi.org/10.7554/eLife.11214.020
+**Figure 3—figure supplement 7.:** The reconstructions of the different structures forming the tissue were evaluated in terms of true positive (TP), false positive (FP), true negative (TN) and false negative (FN) values extracted from the comparison of the reconstructed image and the ground truth (image without distortions). The precision (PR) and sensitivity (SN) are defined as TP/ (TP FP) and TP/ (TP FN), respectively. F-score is given 2 × (PR × SN)/ (PR SN). The tests were performed in three sets of images (three images per set) with different signal-to-noise ratio (10:1, 4:1, 2:1). (A–C) and (D–F) The results for the bile canalicular (BC) and sinusoidal networks, respectively. (G–I) and (J–L) The ones for nuclei and cells, respectively. Whereas in the case of BC, sinusoids and nuclei, the error bar corresponds to standard deviations of the values between three images, for the cells the error bar corresponds to the standard deviation of the values over all the cells in the samples (32 cells). Only the cells that were not in contact with the boundary of the image were analysed. (M–N) The mean values for the radius of BC and sinusoidal networks. (O) The mean error in the estimation of the cell volume. The error was calculated as $100\times\frac{V_{s}-V_{gt}}{V_{gt}}$, where Vs and Vgt are the volumes of the reconstructed and ground truth cells, respectively.
 
 Nuclei were reconstructed similar to the tubular structures. However, as shown in Figure 3—figure supplement 1A,B, closely packed nuclei are optically not well-resolved in 3D confocal images, resulting in artificially merged structures. Since 30–60% (depending on the animal strain and age) of hepatocytes in adult liver are bi-nucleated, artificial nuclei merging compromises the tissue analysis. To address this problem, we used a probabilistic algorithm for double- and multi-nuclei splitting (Figure 3—figure supplement 1). Briefly, the algorithm first discriminated between mono-, double and multi-nuclear structures by learning the misfit distribution of triangulation mesh and nuclei approximation by single and double ellipsoids (Figure 3—figure supplement 1A–G). Then, the seed points for the multi-nuclear structures were detected using the Laplacian-of-Gaussian (LoG) scale-space maximum intensity projection (Stegmaier et al., 2014) and, finally, the real nuclear shapes were found using an active mesh expansion starting from the nuclei seeds (see ‘Methods’ for details). Tested in both synthetic and real 3D images, the algorithm proved capable of splitting clustered nuclei with different degrees of overlap (Figure 3—figure supplement 1K) with an accuracy of over 90%. Although this approach is based on active triangulation mesh, it achieved similar accuracy values to other recently published voxel-based methods for nuclei segmentation (Amat et al., 2014; Chittajallu et al., 2015).
 
-## Cell classification and reconstruction
+### Cell classification and reconstruction
 
 Generating geometrical models of tissues requires the proper recognition of different cell types. A previous automated classification system discriminated hepatocytes from non-parenchymal cells in 2D human liver images with a 97.8% accuracy (O'Gorman et al., 1985). However, the automatic classification of non-parenchymal cells in 3D liver tissue is more challenging. Given their importance in physiology and disease (Bouwens et al., 1992; Kmiec, 2001; Malik et al., 2002) and the limitation on the number of fluorescent markers that can be simultaneously imaged, we designed an algorithm to automatically classify different cell types in the tissue based on nuclear morphological features. We chose two deterministic supervised classifiers, linear discriminant analysis (LDA) and Bayesian network classifier (BNC). LDA, also known as Fisher LDA (Fisher, 1936), is a fundamental and widely used technique to classify data into several mutually exclusive groups (Duda et al., 2001). It has been successfully applied for nuclei discrimination in microscopy images (Huisman et al., 2007; Lin et al., 2007). On the other hand, BNCs are more recently developed classifiers which not only show good performance but also allow for probabilistic classification. In addition, BNCs reveal the hierarchy of parameters used for the classification (Friedman et al., 1997), which may provide insights into underlying biological processes.
 
-As input for the classifiers, we manually built a training set of 2301 nuclei using specific cellular markers (Figure 3—figure supplement 2A) and computed for each nucleus a profile of 74 parameters (Table 1) describing nuclei morphology, texture and localization relative to sinusoids and cell borders (density of actin in vicinity of nuclei) (see ‘Methods’). For the LDA, the parameters were ranked using Fisher score (Duda et al., 2001), and the most relevant ones were selected based on the classification accuracy (Figure 3—figure supplement 2B and ‘Methods’). Independently, the most relevant parameters were selected on the basis of Bayesian network structure reconstruction (Friedman et al., 1999) (Figure 3—figure supplement 2C).10.7554/eLife.11214.021Table 1.List of the 74 parameters calculated for the nuclei classification.DOI: http://dx.doi.org/10.7554/eLife.11214.021ParameterF-scoreParameterF-scoreFLK1 surface intensity 1 vx4.802Mean radius0.920FLK1 surface intensity 0 vx4.737FLK1 KURT0.915FLK1 mean4.674MB Frac Dim0.904FLK1 surface intensity 2 vx4.570Log Lac20.885FLK1 surface intensity 3 vx4.100HF20.833Phallo surface intensity 2 vx3.477HF130.825FLK1 surface intensity 4 vx3.453HF30.817Phallo surface intensity 1 vx3.430Phallo surface intensity 9 vx0.787FLK1 SKEW3.351Surface area0.768Phallo surface intensity 3 vx3.253Log lac 30.718Phallo surface intensity 0 vx3.236Radius variance0.669Norm lac 32.930Volume0.668Norm lac 22.913BC Frac Dim0.649FLK1 surface intensity 5 vx2.857Log lac 40.612Norm lac 42.847Phallo surface intensity 10 vx0.554Phallo surface intensity 4 vx2.838Log lac 50.536Norm lac 52.753Sphericity0.423Phallo surface intensity 5 vx2.347HF70.408FLK1 surface intensity 6 vx2.310Shape index0.402HF92.141Lacunarity 10.381FLK1 surface intensity 7 vx1.893b/c0.342Phallo surface intensity 6 vx1.868Lacunarity 20.333HF51.575Lacunarity 30.309HF81.554Lacunarity 40.295FLK1 surface intensity 8 vx1.552HF40.287HF111.471Lacunarity 50.285Phallo surface intensity 7 vx1.444HF120.153a/c1.406DAPI Sd0.123Log lac 11.287DAPI gradient surface0.094FLK1 surface intensity 9 vx1.265Log norm lac 20.087HF61.158CVM0.076Phallo surface intensity 8 vx1.084Log norm lac 30.062FLK1 surface intensity 10 vx1.018Log norm lac 40.045HF10.978DAPI SKEW0.035FLK1 Sd0.942Log norm lac 50.033HF100.939DAPI mean0.029a/b0.937DAPI KURT0.022Note: The parameters are sorted based on their Fisher score, which is a measure of the discriminative power of the parameter.
+As input for the classifiers, we manually built a training set of 2301 nuclei using specific cellular markers (Figure 3—figure supplement 2A) and computed for each nucleus a profile of 74 parameters (Table 1) describing nuclei morphology, texture and localization relative to sinusoids and cell borders (density of actin in vicinity of nuclei) (see ‘Methods’). For the LDA, the parameters were ranked using Fisher score (Duda et al., 2001), and the most relevant ones were selected based on the classification accuracy (Figure 3—figure supplement 2B and ‘Methods’). Independently, the most relevant parameters were selected on the basis of Bayesian network structure reconstruction (Friedman et al., 1999) (Figure 3—figure supplement 2C).
+
+**Table 1.**
+ List of the 74 parameters calculated for the nuclei classification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>F-score</th>
+      <th>Parameter</th>
+      <th>F-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FLK1 surface intensity 1 vx</td>
+      <td>4.802</td>
+      <td>Mean radius</td>
+      <td>0.920</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 0 vx</td>
+      <td>4.737</td>
+      <td>FLK1 KURT</td>
+      <td>0.915</td>
+    </tr>
+    <tr>
+      <td>FLK1 mean</td>
+      <td>4.674</td>
+      <td>MB Frac Dim</td>
+      <td>0.904</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 2 vx</td>
+      <td>4.570</td>
+      <td>Log Lac2</td>
+      <td>0.885</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 3 vx</td>
+      <td>4.100</td>
+      <td>HF2</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 2 vx</td>
+      <td>3.477</td>
+      <td>HF13</td>
+      <td>0.825</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 4 vx</td>
+      <td>3.453</td>
+      <td>HF3</td>
+      <td>0.817</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 1 vx</td>
+      <td>3.430</td>
+      <td>Phallo surface intensity 9 vx</td>
+      <td>0.787</td>
+    </tr>
+    <tr>
+      <td>FLK1 SKEW</td>
+      <td>3.351</td>
+      <td>Surface area</td>
+      <td>0.768</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 3 vx</td>
+      <td>3.253</td>
+      <td>Log lac 3</td>
+      <td>0.718</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 0 vx</td>
+      <td>3.236</td>
+      <td>Radius variance</td>
+      <td>0.669</td>
+    </tr>
+    <tr>
+      <td>Norm lac 3</td>
+      <td>2.930</td>
+      <td>Volume</td>
+      <td>0.668</td>
+    </tr>
+    <tr>
+      <td>Norm lac 2</td>
+      <td>2.913</td>
+      <td>BC Frac Dim</td>
+      <td>0.649</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 5 vx</td>
+      <td>2.857</td>
+      <td>Log lac 4</td>
+      <td>0.612</td>
+    </tr>
+    <tr>
+      <td>Norm lac 4</td>
+      <td>2.847</td>
+      <td>Phallo surface intensity 10 vx</td>
+      <td>0.554</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 4 vx</td>
+      <td>2.838</td>
+      <td>Log lac 5</td>
+      <td>0.536</td>
+    </tr>
+    <tr>
+      <td>Norm lac 5</td>
+      <td>2.753</td>
+      <td>Sphericity</td>
+      <td>0.423</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 5 vx</td>
+      <td>2.347</td>
+      <td>HF7</td>
+      <td>0.408</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 6 vx</td>
+      <td>2.310</td>
+      <td>Shape index</td>
+      <td>0.402</td>
+    </tr>
+    <tr>
+      <td>HF9</td>
+      <td>2.141</td>
+      <td>Lacunarity 1</td>
+      <td>0.381</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 7 vx</td>
+      <td>1.893</td>
+      <td>b/c</td>
+      <td>0.342</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 6 vx</td>
+      <td>1.868</td>
+      <td>Lacunarity 2</td>
+      <td>0.333</td>
+    </tr>
+    <tr>
+      <td>HF5</td>
+      <td>1.575</td>
+      <td>Lacunarity 3</td>
+      <td>0.309</td>
+    </tr>
+    <tr>
+      <td>HF8</td>
+      <td>1.554</td>
+      <td>Lacunarity 4</td>
+      <td>0.295</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 8 vx</td>
+      <td>1.552</td>
+      <td>HF4</td>
+      <td>0.287</td>
+    </tr>
+    <tr>
+      <td>HF11</td>
+      <td>1.471</td>
+      <td>Lacunarity 5</td>
+      <td>0.285</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 7 vx</td>
+      <td>1.444</td>
+      <td>HF12</td>
+      <td>0.153</td>
+    </tr>
+    <tr>
+      <td>a/c</td>
+      <td>1.406</td>
+      <td>DAPI Sd</td>
+      <td>0.123</td>
+    </tr>
+    <tr>
+      <td>Log lac 1</td>
+      <td>1.287</td>
+      <td>DAPI gradient surface</td>
+      <td>0.094</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 9 vx</td>
+      <td>1.265</td>
+      <td>Log norm lac 2</td>
+      <td>0.087</td>
+    </tr>
+    <tr>
+      <td>HF6</td>
+      <td>1.158</td>
+      <td>CVM</td>
+      <td>0.076</td>
+    </tr>
+    <tr>
+      <td>Phallo surface intensity 8 vx</td>
+      <td>1.084</td>
+      <td>Log norm lac 3</td>
+      <td>0.062</td>
+    </tr>
+    <tr>
+      <td>FLK1 surface intensity 10 vx</td>
+      <td>1.018</td>
+      <td>Log norm lac 4</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td>HF1</td>
+      <td>0.978</td>
+      <td>DAPI SKEW</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td>FLK1 Sd</td>
+      <td>0.942</td>
+      <td>Log norm lac 5</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>HF10</td>
+      <td>0.939</td>
+      <td>DAPI mean</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>a/b</td>
+      <td>0.937</td>
+      <td>DAPI KURT</td>
+      <td>0.022</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The parameters are sorted based on their Fisher score, which is a measure of the discriminative power of the parameter._
 
 The performance of the classifiers was measured using the leave-one-out cross-validation method on the training set. Both classifiers recognized hepatocytes with ~100% accuracy, thus further improving the previous performance (O'Gorman et al., 1985). The overall cell-type classification yielded 95.4% and 92.6% accuracy for the LDA and BNC, respectively. Although discriminating non-parenchymal cells is difficult even for a person skilled in the art, our algorithms achieved accuracy higher than 90%. The predictive performance of the classifiers is shown in Figure 3—figure supplement 3A,B. As expected, the first largest population of cells corresponds to hepatocytes (44.6% ± 2.7%, mean ± SEM) followed by sinusoidal endothelial cells (29.8% ± 2.5%). Surprisingly, we found important quantitative differences for Kupffer and stellate cells. The percentage of Kupffer cells (8.7% ± 0.7%) was lower than that of stellate cells (11.2% ± 1.0%), against previous estimates on 2D images (Baratta et al., 2009). The percentage of other cells was 5.7% ± 0.8%. A 3D visualization of the localization of the nuclei of the different cell types is shown in Figure 3—figure supplement 3C–F.
 
-Finally, cells were segmented by expansion of the active mesh from the nuclei to the cell surface. The expansion was either limited to the cell cortex (i.e. the maximum density of actin) or to contacts with neighbouring cells or tubular structures (Figure 3E). The active mesh expansion was parameterized by inner pressure and mesh rigidity. However, this algorithm over-segmented bi-nucleated cells into two cells with a single nucleus. Therefore, we used phalloidin intensity and nucleus-to-nucleus distance to recognize over segmented multinuclear cells and merge them. A manual check of segmentation of 2559 cells revealed only ~2% error for hepatocyte segmentation that is a further improvement of the state-of-the-art achievements by voxel-based segmentation methods (Mosaliganti et al., 2012). The results of the segmentation of all imaged cellular and subcellular structures in the liver tissue (i.e. cells, nuclei, sinusoidal and BC networks) are presented in Figure 3E, Figure 3—figure supplement 4, and Videos 2 and 3.10.7554/eLife.11214.022Video 2.Reconstruction of all imaged structures in a high-resolution image.A 2x2 stitched (~ 400 μm × 400 μm × 100 μm) high-resolution image (0.3 μm × 0.3 μm × 0.3 μm per voxel) was used. First, the reconstruction of the large vessels, that is, central vein (CV) (cyan), portal vein (PV) (orange) and bile duct (green) are shown. Then, raw images and the corresponding reconstructed objects of the different structures are shown sequentially: sinusoids (magenta), BC (green), nuclei (random colours) and cells (random colours). Additionally, central lines are shown for the tubular structures. Finally, all segmented structures are shown. This video provides a complete over view of the reconstructed objects in a typical high-resolution image.DOI: http://dx.doi.org/10.7554/eLife.11214.02210.7554/eLife.11214.023Video 3.Detailed reconstruction of all imaged structures in a high-resolution image.In order to highlight the details of the reconstruction of small structures [e.g. nuclei, bile canalicular (BC) network, etc.], a video of a small, cropped (~125 μm × 125 μm × 75 μm) high-resolution image (3 μm × 0.3 μm × 0.3 μm per voxel) was generated. Similarly to Video 2, the raw image and the corresponding reconstructed structures of sinusoids (magenta), BC (green), nuclei (random colours) and cells (random colours) are shown sequentially.DOI: http://dx.doi.org/10.7554/eLife.11214.023
+Finally, cells were segmented by expansion of the active mesh from the nuclei to the cell surface. The expansion was either limited to the cell cortex (i.e. the maximum density of actin) or to contacts with neighbouring cells or tubular structures (Figure 3E). The active mesh expansion was parameterized by inner pressure and mesh rigidity. However, this algorithm over-segmented bi-nucleated cells into two cells with a single nucleus. Therefore, we used phalloidin intensity and nucleus-to-nucleus distance to recognize over segmented multinuclear cells and merge them. A manual check of segmentation of 2559 cells revealed only ~2% error for hepatocyte segmentation that is a further improvement of the state-of-the-art achievements by voxel-based segmentation methods (Mosaliganti et al., 2012). The results of the segmentation of all imaged cellular and subcellular structures in the liver tissue (i.e. cells, nuclei, sinusoidal and BC networks) are presented in Figure 3E, Figure 3—figure supplement 4, and Videos 2 and 3.
 
-## Model validation
+![Video 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-media2.mp4.jpg)
+
+**Video 2.:** A 2x2 stitched (~ 400 μm × 400 μm × 100 μm) high-resolution image (0.3 μm × 0.3 μm × 0.3 μm per voxel) was used. First, the reconstruction of the large vessels, that is, central vein (CV) (cyan), portal vein (PV) (orange) and bile duct (green) are shown. Then, raw images and the corresponding reconstructed objects of the different structures are shown sequentially: sinusoids (magenta), BC (green), nuclei (random colours) and cells (random colours). Additionally, central lines are shown for the tubular structures. Finally, all segmented structures are shown. This video provides a complete over view of the reconstructed objects in a typical high-resolution image.
+
+![Video 3.](https://cdn.elifesciences.org/articles/11214/elife-11214-media3.mp4.jpg)
+
+**Video 3.:** In order to highlight the details of the reconstruction of small structures [e.g. nuclei, bile canalicular (BC) network, etc.], a video of a small, cropped (~125 μm × 125 μm × 75 μm) high-resolution image (3 μm × 0.3 μm × 0.3 μm per voxel) was generated. Similarly to Video 2, the raw image and the corresponding reconstructed structures of sinusoids (magenta), BC (green), nuclei (random colours) and cells (random colours) are shown sequentially.
+
+### Model validation
 
 To evaluate the performance of the pipeline for the reconstruction of dense tissues, we generated a benchmark comprising a set of realistic 3D images of liver tissue. Each synthetic image consisted of four channels for the main structures forming the tissue, that is, cell nuclei, cell borders, sinusoidal and BC networks. We first generated 3D models of liver tissue based on experimental data (see ‘Methods’). The benchmark models had levels of complexity similar to that of the real tissue (Figure 3—figure supplement 5,6). Second, we imposed uneven staining to the models in order to resemble the experimental data. Third, the artificial microscopy images were simulated by convolving the models according to the 3D confocal microscope point spread function (PSF) (Nasse et al., 2007; Nasse and Woehl, 2010) and adding z-dependent Poisson noise. The resulting benchmark image statistics were similar to those from the images acquired in our experimental setup (see ‘Methods’) (Figure 3—figure supplement 5). Given their general usefulness for testing image analysis software, the benchmark images and models are provided as supplementary material (Supplementary file 1, Morales-Navarrete et al., 2016). Finally, we applied our 3D tissue reconstruction pipeline to the benchmark images and quantified the accuracy of the reconstructed models using the precision-sensitivity framework (Powers, 2011). The overall quality was expressed as F-score, the harmonic mean between precision and sensitivity. The benchmark tests were performed in three sets of images with different signal-to-noise ratio (10:1, 4:1, 2:1). For tubular structures, we achieved average (over the different noise level sets) F-scores of 0.90 ± 0.04 and 0.73 ± 0.06 for sinusoidal and BC networks, respectively. In the case of the nuclei and cell segmentation, we found average F-scores 0.91 ± 0.03 and 0.92 ± 0.03, respectively. The detailed quantifications are shown in Figure 3—figure supplement 7A–L. Additionally, we measured morphometric parameters of the reconstructed structures such as the average radius of the tubular structures (BC and sinusoidal networks) and cell volumes. We obtained values of 2.72 ± 0.13 µm (ground truth value = 3.0 µm) and 0.58 ± 0.05 µm (ground truth value = 0.5 µm) for sinusoidal and BC networks, respectively (Figure 3—figure supplement 7M,N). The average error for cell volume estimation was found to be 5.17% ± 1.97% (Figure 3—figure supplement 7O). The benchmark experiments showed high accuracy for the reconstruction of the ‘ground truth’ models of all the morphologically different structures forming the liver tissue (Figure 3—figure supplement 7).
 
-## New insights into liver tissue organization from the geometrical model
+### New insights into liver tissue organization from the geometrical model
 
 Next, we applied our software to quantitatively analyse the geometric features of liver tissue from three adult mice. Geometric features have important implications, for example, for the development of models of fluid exchange between blood and hepatocytes (Wisse et al., 1985). A critical parameter for blood flux models is the radius of sinusoids. We measured a radius of 4.0 ± 1.1 μm, a value close to quantifications by electron microscopy (EM) analysis (Wisse et al., 1985; Oda et al., 2003; McCuskey, 2008). In the sinusoidal networks, we determined the angles between two branching arms to be 111.6° ± 12.37° (Figure 4—figure supplement 1B), against previous estimates (Hammad et al., 2014). Moreover, the values for the BC network are similar to the sinusoidal network (110.36° ± 9.85°, Figure 4—figure supplement 1B). Additionally, we provided new geometric information such as the cardinality of the branching nodes (Figure 4—figure supplement 1C).
 
-Recent studies on the morphometric parameters of the liver tissue (
+Recent studies on the morphometric parameters of the liver tissue (Hammad et al., 2014; Friebel et al., 2015) provided either average values or limited data measurements of the hepatocytes volume, omitting information on their heterogeneity. We could not only perform accurate measurements of hepatocytes volumes and poly-nucleation, but also correlate them with polyploidy and spatial localization within the tissue. Interestingly, we found a multi-modal distribution of hepatocyte volumes (Figure 4A) in line with measurements on isolated hepatocytes (Martin et al., 2002). A trivial explanation is that it reflects the presence of mono- and bi-nucleated hepatocytes. However, we found that this was not the case. The distribution of volumes of both mono- and bi-nucleated hepatocytes can be independently described by a mixture of two populations with mean volumes 3126 ± 1302 µm3 (~14% of cells) and 5313 ± 1175 µm3 (~10% of cells), and 5678 ± 1176 µm3 (~45% of cells) and 10606 ± 1532 µm3 (~30% of cells), respectively (Figure 4B,C). Hence, surprisingly, although the bi-nucleated hepatocytes are assumed to be larger than the mono-nucleated, we found that a population of mono-nucleated hepatocytes can have a volume that does not differ from that of bi-nucleated hepatocytes (Figure 4A–C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig4-v2.jpg)
 
-**Figure 4.:** A, B) and separated by number of nuclei (B, C and E, F).Whereas experimental data are shown by dots, the log-normal components fitted to data are shown by solid lines. (A) Cell volume distribution of all hepatocytes. (B, C) Cell volume distribution obtained for mono and bi-nucleated hepatocytes, respectively. (D) Distribution of DAPI integral intensity (proportional to the content of DNA) of all hepatocytes. (E, F) Distributions of DAPI integral intensity obtained for mono and bi-nucleated hepatocytes, respectively. The analysis was performed on 2559 hepatocytes (excluding boundary cells) from three adult mice.DOI: http://dx.doi.org/10.7554/eLife.11214.024
+**Figure 4.:** Whereas experimental data are shown by dots, the log-normal components fitted to data are shown by solid lines. (A) Cell volume distribution of all hepatocytes. (B, C) Cell volume distribution obtained for mono and bi-nucleated hepatocytes, respectively. (D) Distribution of DAPI integral intensity (proportional to the content of DNA) of all hepatocytes. (E, F) Distributions of DAPI integral intensity obtained for mono and bi-nucleated hepatocytes, respectively. The analysis was performed on 2559 hepatocytes (excluding boundary cells) from three adult mice.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Radius distribution of the sinusoidal capillary network. (B) Distributions of the angles between branches of BC and sinusoidal networks. (C) Cardinality of branching nodes of BC and sinusoidal networks. The data shown here correspond to a representative sample of adult mouse liver.DOI: http://dx.doi.org/10.7554/eLife.11214.025
+**Figure 4—figure supplement 1.:** (A) Radius distribution of the sinusoidal capillary network. (B) Distributions of the angles between branches of BC and sinusoidal networks. (C) Cardinality of branching nodes of BC and sinusoidal networks. The data shown here correspond to a representative sample of adult mouse liver.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** A, B) DAPI integral intensity normalization.Distribution of DAPI integral intensity per nucleus calculated for each sample (A) before and (B) after normalization. We found scaling (stretching) factors 1.19 and 0.93 for the second and third samples, respectively. (C, D) DNA content in bi-nuclear hepatocytes. DAPI integral intensity per nucleus was calculated for each nucleus of the cells. (C) The distribution of the ratio between DAPI integral intensity of the two nuclei in each cell. It follows a normal distribution with mean value 1.0 ± 0.21 (mean ± SD). (D) The dependency between DAPI integral intensity of the two nuclei in bi-nuclear cells. They show a linear dependency (R2 = 0.945433) with a slope of 0.995, showing that both nuclei have the same DNA content in bi-nuclear hepatocytes. (E, F) Scatter plot of the volume versus DAPI integral intensity of (E) mono-nuclear and (F) bi-nuclear hepatocytes. The results of the hierarchical clustering of (E) mono-nuclear and (F) bi-nuclear hepatocytes are shown. Four (2n, 4n, 8n, 16n) and three (2×2n, 2×4n, 2×8n) populations were found for mono-nuclear and bi-nuclear hepatocytes, respectively. The classification was performed using volume and DAPI integral intensity per cell. We used an agglomerative hierarchical cluster algorithm and tested several distances for the dissimilarity calculation and different methods for the clustering. We found that the standardized Euclidean distance with the Ward method yielded the best results.DOI: http://dx.doi.org/10.7554/eLife.11214.026
+**Figure 4—figure supplement 2.:** Distribution of DAPI integral intensity per nucleus calculated for each sample (A) before and (B) after normalization. We found scaling (stretching) factors 1.19 and 0.93 for the second and third samples, respectively. (C, D) DNA content in bi-nuclear hepatocytes. DAPI integral intensity per nucleus was calculated for each nucleus of the cells. (C) The distribution of the ratio between DAPI integral intensity of the two nuclei in each cell. It follows a normal distribution with mean value 1.0 ± 0.21 (mean ± SD). (D) The dependency between DAPI integral intensity of the two nuclei in bi-nuclear cells. They show a linear dependency (R2 = 0.945433) with a slope of 0.995, showing that both nuclei have the same DNA content in bi-nuclear hepatocytes. (E, F) Scatter plot of the volume versus DAPI integral intensity of (E) mono-nuclear and (F) bi-nuclear hepatocytes. The results of the hierarchical clustering of (E) mono-nuclear and (F) bi-nuclear hepatocytes are shown. Four (2n, 4n, 8n, 16n) and three (2×2n, 2×4n, 2×8n) populations were found for mono-nuclear and bi-nuclear hepatocytes, respectively. The classification was performed using volume and DAPI integral intensity per cell. We used an agglomerative hierarchical cluster algorithm and tested several distances for the dissimilarity calculation and different methods for the clustering. We found that the standardized Euclidean distance with the Ward method yielded the best results.
 
 Having found such a peculiar size distribution of bi-nucleated hepatocytes, we measured the total content of DNA per nucleus in every cell sub-population as the integral intensity of DAPI (Coleman et al., 1981; Xing and Lawrence, 1991; Dmitrieva et al., 2011; Zhao and Darzynkiewicz, 2013) (see ‘Methods’). The resulting distribution (Figure 4D) shows three well-separated peaks. These presumably correspond to the 2n (diploid nuclei), 4n and 8n (polyploid nuclei) DNA content previously reported (Guidotti et al., 2003; Martin et al., 2002) (note that this analysis does not resolve the aneuploidy of specific chromosomes (Faggioli et al., 2011)).
 
 Next, we asked how the nuclei are distributed between the mono- and bi-nucleated cell populations. Interestingly, in the small bi-nucleated hepatocytes (volume < 8000 µm3) both nuclei had 2n DNA content, whereas in the large hepatocytes (volume > 8000 µm3) both had 4n DNA content. Almost no bi-nuclear hepatocytes (<1.0%) with different amount of DNA per nucleus (e.g. one nucleus with 2n and one with 4n) were observed (Figure 4—figure supplement 2C,D). These results suggest that the hepatocyte volume does not depend on the number of nuclei but rather on their polyploidy, in agreement with previous reports (Miyaoka and Miyajima, 2013). Therefore, we classified hepatocytes with respect to number of nuclei, volume and DNA content using a hierarchical cluster algorithm. We identified seven populations, namely 2n, 4n, 8n, 16n for mono-nuclear and 2×2n, 2×4n, 2×8n for bi-nuclear hepatocytes (Figure 4—figure supplement 2E,F). Four populations (mono-nucleated 2n and 4n, and bi-nucleated 2×2n and 2×4n) were major, representing around 97% of all hepatocytes.
 
-The reports on the spatial distribution of polyploid hepatocytes are controversial (
+The reports on the spatial distribution of polyploid hepatocytes are controversial (Gentric and Desdouets, 2014). Whereas some suggest that periportal hepatocytes show a lower polyploidy than the perivenous ones (Gandillet et al., 2003; Asahina et al., 2006), others suggest that both regions have similar polyploid compositions (Margall-Ducos et al., 2007; Pandit et al., 2012). These discrepancies prompted us to analyse the spatial distribution of mono- and bi-nucleated hepatocytes within the lobule. We particularly analysed the largest populations of hepatocytes, 2n, 4n, 2×2n and 2×4n. Strikingly, we found a pronounced zonation in their localization. Whereas the 2n mono-nucleated were enriched in the PC and PV regions, mono-nucleated 4n showed a homogeneous distribution between PV and PC regions (Figure 5). The 2×2n bi-nucleated hepatocytes have a similar pattern as the 2n mono-nucleated (highly enriched in the CV and PV regions), but the density of 2×4n bi-nucleated was lower in those regions and increased in the middle region (Figure 5). As far as we know, this is the first time that polyploidy and poly-nuclearity are found to be zonated and follow a specific pattern. These findings have important implications for both the structural organization of liver tissue and its proliferating and metabolic activities.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig5-v2.jpg)
 
-**Figure 5.:** (A, C, E, G) Relative density of 2n mono-nucleated, 2x×2n bi-nucleated, 4n mono-nucleated, 2x×4n bi-nucleated hepatocytes, respectively. (B, D, F, H) 3D visualization of the corresponding sub-populations of hepatocytes. The analysis was performed on 2559 hepatocytes (excluding boundary cells) from three adult mice. The CV-PV axis is determined by the coordinate χ, which describes the position of a point relative to the closest CV and PV. , where χ=50×( |D-dpv|-|D-dcv|D+1)dand cv dare the distances to the closest CV and PV respectively, and pv D is the CV-PV distance. χ takes values between 0 and 100, where 0 and 100 represents a localization at the CV and PV surfaces, respectively.DOI: http://dx.doi.org/10.7554/eLife.11214.027
+**Figure 5.:** (A, C, E, G) Relative density of 2n mono-nucleated, 2x×2n bi-nucleated, 4n mono-nucleated, 2x×4n bi-nucleated hepatocytes, respectively. (B, D, F, H) 3D visualization of the corresponding sub-populations of hepatocytes. The analysis was performed on 2559 hepatocytes (excluding boundary cells) from three adult mice. The CV-PV axis is determined by the coordinate χ, which describes the position of a point relative to the closest CV and PV. $χ=50\times(\frac{|D-d_{pv}|-|D-d_{cv}|}{D}+1)$, where dcv and dpv are the distances to the closest CV and PV respectively, and D is the CV-PV distance. χ takes values between 0 and 100, where 0 and 100 represents a localization at the CV and PV surfaces, respectively.
 
-## Application of the pipeline to lung and kidney tissue
+### Application of the pipeline to lung and kidney tissue
 
-To test the general applicability of the pipeline as well as the robustness of our algorithms, we applied it to two morphologically distinct tissues, lung and kidney. Lung and kidney sections were stained for nuclei (DAPI) and the cell cortex (F-actin by phalloidin). Kidney samples were additionally stained for the apical (CD13) and basal (fibronectin and laminin) cell surface. The pipeline allowed us to generate geometrical reconstructions of the tissues (
+To test the general applicability of the pipeline as well as the robustness of our algorithms, we applied it to two morphologically distinct tissues, lung and kidney. Lung and kidney sections were stained for nuclei (DAPI) and the cell cortex (F-actin by phalloidin). Kidney samples were additionally stained for the apical (CD13) and basal (fibronectin and laminin) cell surface. The pipeline allowed us to generate geometrical reconstructions of the tissues (Figure 6 and Videos 4 and 5, respectively) without fine-tuning of the parameters. As proof of principle, we extracted some statistics of the most relevant structures from each tissue. Structural information from both relatively large structures like alveoli in lung or glomerulus in kidney, and smaller ones like cells and nuclei were extracted from the geometrical models. Figure 6—figure supplement 1,2 show the statistical distributions of some interesting tissue features, such as cell volume and elongation, number of neighbouring cells, etc. Information about the spatial organization of the alveolar cells (i.e. their localization relative to the alveoli) in the lung was extracted as well.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig6-v2.jpg)
 
-**Figure 6.:** 3D representation of the different structures segmented in each tissue: (A, C) nuclei and (B, D) cells in the lung and kidney tissues, respectively. The triangle meshes are drawn inside the inner box and the raw images outside.DOI: http://dx.doi.org/10.7554/eLife.11214.028
+**Figure 6.:** 3D representation of the different structures segmented in each tissue: (A, C) nuclei and (B, D) cells in the lung and kidney tissues, respectively. The triangle meshes are drawn inside the inner box and the raw images outside.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Distributions of (A) volume, (B) elongation and (C) number of neighbouring cells for the lung cells. (D) Distribution of the cell position (centre of the cell) relative to the closest alveoli.DOI: http://dx.doi.org/10.7554/eLife.11214.029
+**Figure 6—figure supplement 1.:** Distributions of (A) volume, (B) elongation and (C) number of neighbouring cells for the lung cells. (D) Distribution of the cell position (centre of the cell) relative to the closest alveoli.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/11214/elife-11214-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** (A) and (B) The size and volume distribution of the two cell types identified in the kidney tissue, proximal and distal tubular structures. It was observed that the two cell populations have different characteristic sizes, proximal cells were found to be larger than distal ones. (C) and (D) The distribution for the cells elongation and the number of neighbouring cells, respectively.DOI: http://dx.doi.org/10.7554/eLife.11214.030
+**Figure 6—figure supplement 2.:** (A) and (B) The size and volume distribution of the two cell types identified in the kidney tissue, proximal and distal tubular structures. It was observed that the two cell populations have different characteristic sizes, proximal cells were found to be larger than distal ones. (C) and (D) The distribution for the cells elongation and the number of neighbouring cells, respectively.
+
+![Video 4.](https://cdn.elifesciences.org/articles/11214/elife-11214-media4.mp4.jpg)
+
+**Video 4.:** Nuclei and cells reconstructed from a high-resolution image (∼220 μm × 220 μm × 80 μm). First, the raw images of the cell cortex (F-actin by phalloidin) and nuclei (DAPI) staining are displayed. Then, the reconstruction of the nuclei (random colours) and the cells (random colours) are shown.
+
+![Video 5.](https://cdn.elifesciences.org/articles/11214/elife-11214-media5.mp4.jpg)
+
+**Video 5.:** Nuclei and cells reconstructed from a high-resolution image (∼220 μm × 220 μm × 80 μm). First, the raw images of the cell cortex (F-actin by phalloidin) and nuclei (DAPI) staining are displayed. Then, the reconstruction of the nuclei (random colours) and the cells (random colours) are shown.
 
 For example, in the lung, we found that the alveolar cells constitute around 19% of the volume, consistent with previous measurements (Irvin and Bates, 2003). In the kidney, we found that proximal tubule cells have larger volumes than distal tubule cells (Figure 6—figure supplement 2), also in agreement with previous studies (Nyengaard et al., 1993; Rasch and Dørup, 1997). Altogether, the new data show that our pipeline is versatile and able to reconstruct geometrical models of tissues with fairly different architectures.
 
@@ -217,63 +478,125 @@ Geometrical models provide the means of extracting structural information as a p
 
 ## Methods
 
-## Mice and ethics statement
+### Mice and ethics statement
 
 Six- to nine-week-old C57BL/6JOlaHsd mice were purchased from Charles River Laboratory. All animal studies were conducted in accordance with German animal welfare legislation and in strict pathogen-free conditions in the animal facility of the Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany. Protocols were approved by the Institutional Animal Welfare Officer (Tierschutzbeauftragter) and all necessary licenses were obtained from the regional Ethical Commission for Animal Experimentation of Dresden, Germany (Tierversuchskommission, Landesdirektion Dresden) (license number: AZ 24-9168.24-9/2012-1, AZ 24-9168.11-9/2012-3).
 
-## BFBD algorithm for de-noising images of fluorescent microscopy
+### BFBD algorithm for de-noising images of fluorescent microscopy
 
-We took advantage of the fact that point-spread-function of confocal microscopes is strongly elongated in z-axis and developed a new de-noising algorithm based on the linear approximation of the image background intensity in the z-direction. Since confocal microscopy images are photon-limited and therefore obey Poisson statistics, we first found the parameters α and β that convert the photon counts (N) into the intensity (I) units, such that:I=αN+β
+We took advantage of the fact that point-spread-function of confocal microscopes is strongly elongated in z-axis and developed a new de-noising algorithm based on the linear approximation of the image background intensity in the z-direction. Since confocal microscopy images are photon-limited and therefore obey Poisson statistics, we first found the parameters α and β that convert the photon counts (N) into the intensity (I) units, such that:
 
-where the operator . represents the average, α is the conversion coefficient from number of photons to intensity values and β is the offset of the microscope digitization system (dark current).
+$$
+I=\alphaN+\beta
+$$
 
-For this, we calculated the variance of the intensities between sequential optical z-sections for each X–Y pixel and binned them according to the pixel intensities. Then, the mean variance was calculated within each bin and, as a result, the dependency of mean variance upon the intensities was found (Figure 1—figure supplement 2G). This dependency was found to be linear, as expected for a Poisson noise model:V(I)=α2N=α(I-β)
+where the operator $.$ represents the average, α is the conversion coefficient from number of photons to intensity values and β is the offset of the microscope digitization system (dark current).
 
-where V(I) is the variance for each intensity level I.
+For this, we calculated the variance of the intensities between sequential optical z-sections for each X–Y pixel and binned them according to the pixel intensities. Then, the mean variance was calculated within each bin and, as a result, the dependency of mean variance upon the intensities was found (Figure 1—figure supplement 2G). This dependency was found to be linear, as expected for a Poisson noise model:
+
+$$
+V(I)=\alpha^{2}N=\alpha(I-\beta)
+$$
+
+where V(I) is the variance for each intensity level $I$.
 
 Moreover, when thick 3D tissue samples are imaged, it is required to use different laser intensity and microscope gain. This results in an increase of the intensity scaling factor α with the image depth. Therefore, we calculated the Poisson noise model for different image depths (z-direction) and then, we used α and β to estimate the variance for every pixel.
 
 After that, we estimated the background intensity of every pixel. Briefly, for each pixel a set of sequential intensities in z-direction was extracted (Figure 1—figure supplement 2H, left). Then, the intensities were fitted by a straight line using the outlier-tolerant algorithm described in (Sivia, 1996) (Figure 1—figure supplement 2H, right). The prediction of the straight line was considered as the background intensity, and the difference between the measured intensity and background was considered as candidate foreground intensity. The candidate foreground intensities below a defined threshold (expressed in variance units) were excluded. Finally, the background was added to the foreground to form the de-noised image.
 
-To evaluate the performance of our algorithm, we applied it to a set of three artificial images of BC from our benchmark (2:1 signal-to-noise ratio). Additionally, we applied other methods such as median filtering, Gauss low-pass filtering and anisotropic diffusion, ‘pure denoise’ (PD) (Luisier et al., 2010) and ‘edge preserving de-noising and smoothing’ (EPDS) (Beck and Teboulle, 2009) for comparison. The performance of each method was quantitatively evaluated using the metrics mean square error (MSE) and coefficient of correlation (CoC), defined as follows:MSE=∑i∈Ω(Ii-Ii*)2|Ω|CoC=∑i∈Ω(Ii-I)·(Ii*-I*)(∑i∈Ω(Ii-I)2·∑i∈Ω(Ii*-I*)2)1/2
+To evaluate the performance of our algorithm, we applied it to a set of three artificial images of BC from our benchmark (2:1 signal-to-noise ratio). Additionally, we applied other methods such as median filtering, Gauss low-pass filtering and anisotropic diffusion, ‘pure denoise’ (PD) (Luisier et al., 2010) and ‘edge preserving de-noising and smoothing’ (EPDS) (Beck and Teboulle, 2009) for comparison. The performance of each method was quantitatively evaluated using the metrics mean square error (MSE) and coefficient of correlation (CoC), defined as follows:
 
-where Ω is the region of interest in the image, Ii and Ii* are the intensities at voxel i of the de-noised and noise-free (ground truth) images respectively, I and I* are the mean intensities of the de-noised and noise-free images, respectively. We calculated the MSE and CoC over the whole images (global) as well as in the vicinity of the objects (Figure 1—figure supplement 3A). For PD and EPDS, we selected the best parameters for their performance before the comparison (Figure 1—figure supplement 3B,C). The results of our quantifications are shown in Figure 1—figure supplement 4–5.
+$$
+MSE=\frac{\sum_{i\inΩ}(I_{i}-I_{i}^{*})^{2}}{|Ω|}
+$$
 
-## Methods for the reconstruction of 3D multi-scale images
 
-## Reconstruction of physical sections
+
+$$
+CoC=\frac{\sum_{i\inΩ}(I_{i}-I)·(I_{i}^{*}-I^{*})}{(\sum_{i\inΩ}(I_{i}-I)^{2}·\sum_{i\inΩ}(I_{i}^{*}-I^{*})^{2})^{1/2}}
+$$
+
+where Ω is the region of interest in the image, Ii and $I_{i}^{*}$ are the intensities at voxel i of the de-noised and noise-free (ground truth) images respectively, $I$ and $I^{*}$ are the mean intensities of the de-noised and noise-free images, respectively. We calculated the MSE and CoC over the whole images (global) as well as in the vicinity of the objects (Figure 1—figure supplement 3A). For PD and EPDS, we selected the best parameters for their performance before the comparison (Figure 1—figure supplement 3B,C). The results of our quantifications are shown in Figure 1—figure supplement 4–5.
+
+### Methods for the reconstruction of 3D multi-scale images
+
+#### Reconstruction of physical sections
 
 To image large and complex tissue structures such as the liver lobule, we generated a grid of partially overlapping low-resolution 3D images (stacks) for each individual tissue section. We applied an image mosaicking procedure to merge the stacks into a single 3D image of the section (Figure 2A and Figure 2—figure supplement 1A). Our merging procedure adopts a standard approach to maximize the sum of cross-correlations calculated for pairs of neighbouring tiles in the grid. The input data set for the reconstruction of physical sections was composed of N-by-M grids of partially overlapping 3D images (Z-stacks) (Figure 2—figure supplement 1A). It is assumed that an approximation of their overlapping area is known and that transitional image registration is sufficient for reconstruction purposes.
 
-Let (Zx,y'Zx',y') be a pair of neighbour images located within the grid (0 ≤ x < N, 0 ≤ y < M, 0 ≤ x′ < N, 0 ≤ y′ < M, |x − x′| = 1 ⋎ |y − y′| = 1), and Cx,y,x′,y′(i,j,k) the cross-correlation of their overlapping areas. The quality of their local alignment for a given shift (i,j,k) is measured by the corresponding value of the cross-correlation Cx,y,x′,y′(i,j,k). The goal of the reconstruction is to find a set of shifts (i,j,k) (one for each image) that maximizes the global metric:G(i,j,k)=∑x=0N∑y=0M∑(x',y')∈x+1,y,x,y+1,x+1,y+1x'∈0,Nλy'∈0,MCx,y,x',y'(ix,y,jx,y,kx,y)
+Let $(Z_{x,y'}Z_{x',y'})$ be a pair of neighbour images located within the grid (0 ≤ x < N, 0 ≤ y < M, 0 ≤ x′ < N, 0 ≤ y′ < M, |x − x′| = 1 ⋎ |y − y′| = 1), and Cx,y,x′,y′(i,j,k) the cross-correlation of their overlapping areas. The quality of their local alignment for a given shift (i,j,k) is measured by the corresponding value of the cross-correlation Cx,y,x′,y′(i,j,k). The goal of the reconstruction is to find a set of shifts (i,j,k) (one for each image) that maximizes the global metric:
+
+$$
+G(i,j,k)=\sumx=0N\sumy=0M\sum_{(x',y')\inx+1,y,x,y+1,x+1,y+1x'\in0,Nλy'\in0,M}C_{x,y,x',y'}(i_{x,y,}j_{x,y},k_{x,y})
+$$
 
 To solve this maximization problem, we used the optimization technique proposed in (Griffiths et al., 1999), which allowed finding the appropriate shifts with high accuracy (Figure 2—figure supplement 1B). All input 3D images were shifted according to the optimization results and registered using the multi-band blending approach (Burt and Adelson, 1983; Brown and Lowe, 2003).
 
-## Bayesian algorithm for the detection of the surface of tissue sections
+#### Bayesian algorithm for the detection of the surface of tissue sections
 
 Most publicly available 3D image stitching methods were developed for EM data, where the samples are first embedded in resin or deep-frozen, which makes them solid and prevents partial removal of tissue by cutting. Therefore, they are based on local correlation of the images (Saalfeld et al., 2012; Hayworth et al., 2015). In the case of soft tissues, the removal of tissue upon cutting is much more significant, leading to a lack of texture correlations between two adjacent sections. The sample preparation process introduces several mechanical artefacts to the imaged sample, including uneven thickness of the section and tissue bending. When large vessels are aligned along the section surface, it becomes difficult to determine whether the empty space corresponds to the interior of the vessel or section damages or bending, which constitutes a major obstacle in their segmentation (Figure 2—figure supplement 1C). To address this issue, we propose a surface detection method, which uses prior distributions of expected section shape to find the border between the volume of the image of the sample (including blood vessels) and the out-of-field region.
 
-Our approach is based on Bayesian statistics. According to the Bayes theorem:p(y1,y2|ym1,ym2)=p(ym1,ym2|y1,y2)p(y1,y2)p(ym1,ym2)
+Our approach is based on Bayesian statistics. According to the Bayes theorem:
 
-Using the chain rule to obtain the joint probability distribution p(y1,y2), we got:p(y1,y2|ym1,ym2)≈p(ym1,ym2|y1,y2)p(y1|y2)p(y1)
+$$
+p(y_{1},y_{2}|y_{m1},y_{m2})=\frac{p(y_{m1},y_{m2}|y_{1},y_{2})p(y_{1},y_{2})}{p(y_{m1},y_{m2})}
+$$
 
-The empirical analysis of several tissue sections with manually specified surfaces allowed us to estimate the probabilities (ym1,ym2|y1,y2), p(y1|y2) and p(y1) :p(ym1,ym2|y1,y2)=∏x,y1πs1+y1,x,y-ym1,x,ys21πs1+y2,x,y-ym2,x,ys2p(y1|y2)=∏x,y12πσexp(y2,x,y-y1,x,y)22σ2p(y1)=∏x,y∏εx∈[-1,1]∏ εy∈[-1,1]λexp(-λ|y1,x+εx,y+εx-y1,x,y|)
+Using the chain rule to obtain the joint probability distribution $p(y_{1},y_{2})$, we got:
+
+$$
+p(y_{1},y_{2}|y_{m1},y_{m2})≈p(y_{m1},y_{m2}|y_{1},y_{2})p(y_{1}|y_{2})p(y_{1})
+$$
+
+The empirical analysis of several tissue sections with manually specified surfaces allowed us to estimate the probabilities $(y_{m1},y_{m2}|y_{1},y_{2}), p(y_{1}|y_{2}) and p(y_{1})$ :
+
+$$
+p(y_{m1},y_{m2}|y_{1},y_{2})=\prodx,y\frac{1}{\pis1+\frac{y_{1,x,y}-y_{m1,x,y}}{s}^{2}}\frac{1}{\pis1+\frac{y_{2,x,y}-y_{m2,x,y}}{s}^{2}}
+$$
+
+
+
+$$
+p(y_{1}|y_{2})=\prodx,y\frac{1}{\sqrt{2πσ}}exp\frac{(y_{2,x,y}-y_{1,x,y})^{2}}{2\sigma^{2}}
+$$
+
+
+
+$$
+p(y_{1})=\prodx,y\prod\epsilonx\in[-1,1]\prod \epsilony\in[-1,1]\lambdaexp(-\lambda|y_{1,x+\epsilonx,y+\epsilonx}-y_{1,x,y}|)
+$$
 
 Where s is a parameter that specifies how close the real surface is to the measured one, σ describes the variability of the section thickness, λ specifies the smoothness of the real surface and (x,y) are the coordinates of the real surface nodes.
 
-By analysing our benchmark data set, we found that the median absolute deviation (tMAD) of the section thickness |ym2 -− ym1| constituted a good approximation for the parameters s and σ. The parameter λ was found by the maximum likelihood estimation of the empirical distribution measured from the maximum entropy segmentation. Then, the final posterior probability for surface detection has the following form: p(ym1,ym2|y1,y2)≈∏x,y1π2tMAD1+ y1,x,y-ym1,x,yπ2tMAD21π2tMAD1+ y2,x,y-ym2,x,yπ2tMAD2×∏x,y12ππ2tMADexpy2,x,y-y1,x,y22π2tMAD2×∏x,y∏εx∈[-1,1]∏εy∈[-1,1]λMLexp(-λML|y1,x+εx,y+εx-y1,x,y|)
+By analysing our benchmark data set, we found that the median absolute deviation (tMAD) of the section thickness |ym2 -− ym1| constituted a good approximation for the parameters s and σ. The parameter λ was found by the maximum likelihood estimation of the empirical distribution measured from the maximum entropy segmentation. Then, the final posterior probability for surface detection has the following form: 
 
-To check whether the surface energy model of this equation can be applied to different images, we created a benchmark data set composed of 10 section images with manually segmented surfaces. The model distributions p(ym1,ym2|y1,y2), p(y1|y2) and p(y1) closely matched with the corresponding empirical distributions calculated from the manual detection (Figure 2—figure supplement 1D–F).
+$$
+p(ym_{1},ym_{2}|y_{1},y_{2})≈\prodx,y\frac{1}{\frac{\pi}{2}t_{MAD}1+\frac{y_{1,x,y}-y_{m1,x,y}}{\frac{\pi}{2}t_{MAD}}^{2}}\frac{1}{\frac{\pi}{2}t_{MAD}1+\frac{y_{2,x,y}-y_{m2,x,y}}{\frac{\pi}{2}t_{MAD}}^{2}}
+$$
 
-The proposed model was used for the automated surface detection by minimizing the posterior p(y1,y2|ym1,ym2) probability . This minimization was performed using iterative conditional modes. The surfaces calculated by the maximum entropy approach were used as initial guess. To evaluate the quality of the automatically detected surfaces, we created a benchmark data set composed of 30 sections collected from three tissue samples. The average displacement between the manual and the automatic segmentation was 4.53 ± 1.12 voxels (Figure 2—figure supplement 1G,H).
 
-## Segmentation of tissue-level networks
+
+$$
+\times\prodx,y\frac{1}{\sqrt{2\pi}\frac{\pi}{2}t_{MAD}}exp\frac{y_{2,x,y}-y_{1,x,y}^{2}}{2\frac{\pi}{2}t_{MAD}^{2}}
+$$
+
+
+
+$$
+\times\prodx,y\prod\epsilonx\in[-1,1]\prod\epsilony\in[-1,1]\lambda_{ML}exp(-\lambda_{ML}|y_{1,x+\epsilonx,y+\epsilonx}-y_{1,x,y}|)
+$$
+
+To check whether the surface energy model of this equation can be applied to different images, we created a benchmark data set composed of 10 section images with manually segmented surfaces. The model distributions $p(y_{m}_{1},y_{m}_{2}|y_{1},y_{2}), p(y_{1}|y_{2}) and p(y_{1})$ closely matched with the corresponding empirical distributions calculated from the manual detection (Figure 2—figure supplement 1D–F).
+
+The proposed model was used for the automated surface detection by minimizing the posterior $p(y_{1},y_{2}|y_{m}_{1},y_{m}_{2})$ probability . This minimization was performed using iterative conditional modes. The surfaces calculated by the maximum entropy approach were used as initial guess. To evaluate the quality of the automatically detected surfaces, we created a benchmark data set composed of 30 sections collected from three tissue samples. The average displacement between the manual and the automatic segmentation was 4.53 ± 1.12 voxels (Figure 2—figure supplement 1G,H).
+
+#### Segmentation of tissue-level networks
 
 The goal of the segmentation of tissue-level networks is to identify the volume of a sample, which is occupied by large vessels such as CV, PV, hepatic artery or bile ducts. These structures appear in the images as empty volume (Figure 2—figure supplement 2A); therefore, their segmentation is possible without using a specific staining.
 
 The direct application of thresholding methods like maximum entropy (Kapur et al., 1985) is troublesome due to several obstacles that arise from sample preparation artefacts. First, mechanical distortions such as uneven cutting of the section or tissue bending during imaging are introduced in the imaged sample. Since large vessels are not stained, it is impossible to distinguish them from out-of-field region using only the voxels intensities. Second, image intensities vary spatially within the sample due to uneven staining. In consequence, a global threshold underestimates the size of vessels in the bright regions of the image and overestimates it in the dark ones. To address these problems,we introduced two pre-processing steps. At first, we used the detected surfaces of the section to discriminate the parts of the image belonging to the sample from the ones in the out-of-field region. Subsequently, the 3D images (excluding the out-of-field region) were split into regular grids of overlapping sub-regions and the maximum entropy threshold was calculated for each of them. After that, the threshold values were interpolated over the entire image using tri-linear interpolation (Figure 2—figure supplement 2B). Finally, the vessels were segmented using the calculated threshold values (Figure 2—figure supplement 2C).
 
-## Multi-resolution image positioning
+#### Multi-resolution image positioning
 
 Multi-resolution image positioning involves the rigid-body registration of a high-resolution 3D image (moving image) within the reconstructed low-resolution image of a section (fixed image). Since individual images have sizes up to 500 Mpx, we performed the image registration in the scaled-space using a stepwise approach.
 
@@ -281,49 +604,69 @@ We built a three-level scale pyramid using the original images and their copies 
 
 Then, a registration based on polar transformations (Wolberg and Zokai, 2000) was performed. First, the relative shift between two images was found by the peak of their NCC, the images were shifted accordingly and its overlapping part was cropped. Second, the cropped images were transformed to polar coordinates (where a shift is equivalent to a rotation in the Cartesian coordinate system) and their NCC was calculated. The updated angle r was extracted from the peak of the cross-correlation of the transformed image. Note that the initial estimation of r (±15°) found in the initial step is required for the convergence of the polar registration. The polar registration procedure was repeated subsequently using the images stored in the second and first level of scale pyramid, which results in the increase of the registration accuracy and computational time in each iteration of the algorithm. Also, 2–3 iterations were sufficient to achieve full convergence and register images with subcellular accuracy (Figure 2—figure supplement 2D–F).
 
-## Methods for 3D image segmentation
+### Methods for 3D image segmentation
 
-## Nuclei splitting algorithm
+#### Nuclei splitting algorithm
 
 In order to split artificially clustered structures, either the volumetric data from the segmented image or the triangle meshes of the reconstructed objects can be used (Bilgin et al., 2013). We used the information of the triangle meshes in a probabilistic algorithm, which first learns from the error distribution for the nuclei approximation by single and double ellipsoids. Based on the extracted statistics, the algorithm identifies and splits multi-nuclear structures. Further, we will refer to both the mono-, bi- and multi-nucleated structures as 3D objects.
 
-First, all 3D objects were approximated by single and double overlapping ellipsoids. The first model corresponds to the minimum volume ellipsoid (MVE) that encloses the vertexes of the triangle mesh (Figure 3—figure supplement 1D). For the second model, the triangle mesh was symmetrically split in two subsets and each subset was approximated by an MVE (Figure 3—figure supplement 1E). Both models were evaluated on the data (vertexes) by using mean square error (MSE):MSE=1n-9∑i=1n((pi-c)TE(pi-c)-1)2
+First, all 3D objects were approximated by single and double overlapping ellipsoids. The first model corresponds to the minimum volume ellipsoid (MVE) that encloses the vertexes of the triangle mesh (Figure 3—figure supplement 1D). For the second model, the triangle mesh was symmetrically split in two subsets and each subset was approximated by an MVE (Figure 3—figure supplement 1E). Both models were evaluated on the data (vertexes) by using mean square error (MSE):
+
+$$
+MSE=\frac{1}{n-9}\sumi=1n((p_{i}-c)^{T}E(p_{i}-c)-1)^{2}
+$$
 
 where n is the number of vertexes, pi is the coordinates vector of the vertex i, c is the centre of the ellipsoid and E is the matrix describing the orientation and dimensions of the ellipsoid. The model with the lowest MSE was selected as the best model for the 3D object.
 
 Second, the error distribution (from the best models) resulting from the first step was analysed as follows: the natural logarithm of each MSE value was computed and the resulting histogram was fitted with a sum of two Gaussian distributions (Figure 3—figure supplement 1F). The two distributions were split by a threshold value, which was chosen such that it corresponded to the upper limit of the 95% confidence interval of the first component (the one with lowest mean value) (Figure 3—figure supplement 1G). The objects whose In(MSE) is smaller than the threshold corresponds either to one nucleus or two overlapping nuclei, and the rest corresponds to multi-nuclear structures. The 3D objects recognized as two overlapping ellipsoids were reconstructed using the models as boundaries to split the initially segmented images.
 
-The multi-nuclear objects were split following two steps: first, the nuclei seeds were detected as proposed in (Stegmaier et al., 2014) and then the real shape of the nuclei was found by an active mesh expansion from the seeds. The nuclei seeds were extracted from the Laplacian of Gaussian scale-space maximum intensity projection (LoGMP) image (Stegmaier et al., 2014):LoGMP(x,σmin,σmax)=maxσmin≤σ≤σmaxLoG(x,σ)
+The multi-nuclear objects were split following two steps: first, the nuclei seeds were detected as proposed in (Stegmaier et al., 2014) and then the real shape of the nuclei was found by an active mesh expansion from the seeds. The nuclei seeds were extracted from the Laplacian of Gaussian scale-space maximum intensity projection (LoGMP) image (Stegmaier et al., 2014):
+
+$$
+LoGMP(x,\sigma_{min},\sigma_{max})=max\sigma_{min}\leq\sigma\leq\sigma_{max}LoG(x,\sigma)
+$$
 
 where LoG(x,σ) represents the Laplacian of Gaussian filtered image found using a standard deviation σ. Considering that the radius (r) of the objects to be detected is given by r=√2σ (Al-Kofahi et al., 2010), σmin and σmax are determined by a priori knowledge of the typical size of the nuclei we want to detect. Each local maximum in the LoGMP image corresponds to a nuclei seed. Then, we used an active mesh expansion from the seeds to the real shape of the nuclei. The expansion was either limited to the nuclei border (regions of maximum intensity at the complement image of the LoGMP) or to the contact with neighbouring nuclei (Figure 3—figure supplement 1H –J).
 
-## Methods for cell classification
+### Methods for cell classification
 
-## Feature extraction
+#### Feature extraction
 
 For each nucleus, a profile of 74 parameters was calculated (Table 1). We used the information of the triangle mesh of the reconstructed nucleus as well as the information of the DAPI, Flk1 and phalloidin channels. All channel intensities were normalized using histogram equalization before the parameter extraction. The parameters include:
 
-## Feature selection for the LDA
+#### Feature selection for the LDA
 
-In order to get the most relevant parameter for the LDA classifier, we used the Fisher score and one-leave-out cross-validation as measure of the classifier accuracy. Firstly, the Fisher scores (Fi) was calculated for each parameter i as follows:Fi=∑k=1mnk(uki-ui)2∑k=1mnk(σki)2
+In order to get the most relevant parameter for the LDA classifier, we used the Fisher score and one-leave-out cross-validation as measure of the classifier accuracy. Firstly, the Fisher scores (Fi) was calculated for each parameter i as follows:
 
-where m is the number of classes, nk is the size of the kth class uki and σki are the mean values and the standard deviation of the parameter i for the kth class ui is the mean value of the parameter i over the whole sample.
+$$
+F_{i}=\frac{\sum_{k=1}^{m}n_{k}(u_{k}^{i}-u^{i})^{2}}{\sum_{k=1}^{m}n_{k}(\sigma_{k}^{i})^{2}}
+$$
+
+where m is the number of classes, nk is the size of the kth class $u_{k}^{i} and \sigma_{k}^{i}$ are the mean values and the standard deviation of the parameter i for the kth class ui is the mean value of the parameter i over the whole sample.
 
 The parameters were sorted based on Fi (Table 1) and systematically added to the classification while the accuracy of the algorithm was calculated, i.e., the first parameter from the sorted vector was taken, the classification was performed and the accuracy was calculated, then the second parameter was added and the process was repeated. Figure 3—figure supplement 2B shows how the classifier accuracy depends on the number of parameters used in the classification. For further analysis, only the set of parameters that yielded the highest accuracy was used.
 
 The LDA was performed in three independent steps. Each corresponds to a two-class classification. First, hepatocytes were classified from other nuclei, then SECs were classified from the remaining nuclei and, finally, the rest of the nuclei were classified either into Kupffer or stellate cells.
 
-## Cell classification by Bayesian network
+#### Cell classification by Bayesian network
 
-The training set was presented as a vector of 75 parameters. The first one corresponded to the cell type and the following 74 were the measured nucleus features. Each parameter was discretized into 5 bins with equal population. Then, we calculated the mutual information MI between every parameter and the cell type parameter asMI(X,Y)=∑x,yP(x,y)lnP(x,y)P(x)P(y)
+The training set was presented as a vector of 75 parameters. The first one corresponded to the cell type and the following 74 were the measured nucleus features. Each parameter was discretized into 5 bins with equal population. Then, we calculated the mutual information MI between every parameter and the cell type parameter as
 
-where X and Y denote sets of parameters, x and y denote instances of parameters. The probabilities were calculated from the training set asP(x)=nx+ 1∑xnx+ r
+$$
+MI(X,Y)=\sumx,yP(x,y)ln\frac{P(x,y)}{P(x)P(y)}
+$$
+
+where X and Y denote sets of parameters, x and y denote instances of parameters. The probabilities were calculated from the training set as
+
+$$
+P(x)=\frac{n_{x}+1}{\sum_{x}n_{x}+r}
+$$
 
 where nx denotes the number of instances in the bin x and r is the number of bins (in our case r = 5 for all parameters but the first one). Then the parameters were sorted in descent order according to the mutual information. The structure of Bayesian network was learned from the training data by the K2 algorithm (Heckerman et al., 1995) (Figure 3—figure supplement 2C). For each nucleus, the probability for each cell type was calculated. The type with the highest probability was taken as classification output.
 
-## Validation of the resulting model
+### Validation of the resulting model
 
-## Benchmark for the evaluation of 3D reconstructions of dense tissue
+#### Benchmark for the evaluation of 3D reconstructions of dense tissue
 
 We generated a set of artificial images of liver tissue that can be used for developing and evaluating methods for the reconstruction of geometrical models of dense tissue. The benchmark consists of a set of realistic 3D high-resolution images (0.3 μm × 0.3 μm × 0.3 μm per voxel) of normal liver tissue. To generate artificial images that emulate the complexity of the real tissue images as well as exhibit meaningful biological characteristics, we extracted data from real images to produce idealized ground truth images of the main structures forming the tissue, that is, nuclei, sinusoids, BC and cell borders. Then, distortions coming from different sources such as uneven staining, optical distortion due to the PSF of the confocal microscope and spatially variation of Poisson noise were added to the idealized ground truth images (Figure 3—figure supplement 5).
 
@@ -333,16 +676,73 @@ Next, the uneven staining was simulated by applying random intensities at differ
 
 In thick samples far from the coverslip, the acquired images are highly distorted by the illumination PSF, leading to an asymmetric smearing of the image in z-direction (Nasse et al., 2007; Nasse and Woehl, 2010). We convolved the uneven stained images with realist PSFs (Figure 3—figure supplement 5C,D). The PSFs were generated using different excitations wavelengths for each structure: 568, 647, 780 and 488 nm for BC, sinusoids, nuclei and cell borders, respectively. Finally, we added Poisson noise with different scaling factors according to the models extracted from the real data (Figure 3—figure supplement 5E–G). An example of the resulting images is shown in Figure 3—figure supplement 6.
 
-## Internal consistency of the data extracted from sinusoidal network reconstruction
+#### Internal consistency of the data extracted from sinusoidal network reconstruction
 
-In order to check the internal consistency of the morphometric features that we extracted from the reconstructed sinusoidal networks, we independently calculated the fraction of volume of the sinusoids (VS), the length of the sinusoidal network per volume unit (LS) and the average radius of the network (rs). Then, we estimated the fraction of volume of sinusoids (VC) using LS and rs, and approximating the tubular network by a cylindrical network. We found that Vc⁄Vs = 0.99 ± 0.09, showing the internal consistency of our data. When applying the same calculation to the data reported in (Hammad et al., 2014), we found Vc⁄Vs = 2.55, which suggests an over-estimation of the network parameters (e.g. number of intersection nodes per mm3, network length per mm3); see Table 2.10.7554/eLife.11214.033Table 2.Internal consistency of the sinusoidal network data.DOI: http://dx.doi.org/10.7554/eLife.11214.033SampleVsLs/(mm/mm3)rs/(mm × 103) Vc ∼ π × rs2 × Ls Vc/Vs10.162853.44.050.150.9220.142976.43.750.130.9530.203505.84.500.221.09Hammad et al., 20140.155400.04.800.392.55Notes: The fraction of volume of the sinusoids (Vs), the length of the sinusoidal network per volume unit (Ls) and the average radius of the network (rs) were measured independently for each sample. A theoretical approximation of the fraction of volume of the sinusoids (Vc), considering it consists of ideal cylinders, was calculated (Vc ∼ π × rs2 × Ls). Then, the ratio between the measured and the calculated fractions of volume (Vc/Vs) was calculated. Values close to 1.0 reflect auto consistency on the data. We performed the same calculation with the data reported in Hammad et al. (2014).
+In order to check the internal consistency of the morphometric features that we extracted from the reconstructed sinusoidal networks, we independently calculated the fraction of volume of the sinusoids (VS), the length of the sinusoidal network per volume unit (LS) and the average radius of the network (rs). Then, we estimated the fraction of volume of sinusoids (VC) using LS and rs, and approximating the tubular network by a cylindrical network. We found that Vc⁄Vs = 0.99 ± 0.09, showing the internal consistency of our data. When applying the same calculation to the data reported in (Hammad et al., 2014), we found Vc⁄Vs = 2.55, which suggests an over-estimation of the network parameters (e.g. number of intersection nodes per mm3, network length per mm3); see Table 2.
 
-## Quantitative analysis of liver tissue architecture
+**Table 2.**
+ Internal consistency of the sinusoidal network data.
 
-## DAPI integral intensity calculation
 
-For each nucleus, the total content of DNA was calculated as the integral intensity of the original DAPI image inside the corresponding 3D triangle mesh. Since calculation was performed for three independent samples, the integral intensity per nucleus was normalized to the intensity of first one. Briefly, the distribution of DAPI integral intensity per nucleus was independently calculated for each sample (Figure 4—figure supplement 2). Then, each distribution was aligned (stretched) to the reference one (the first one in our case) by minimizing the functional:dj=∑i(f0(xi0))2-∑i(f0(xi0)·fj(s·xi1))∑i(fj(s*xi1))2
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Vs</th>
+      <th>Ls/(mm/mm3)</th>
+      <th>rs/(mm × 103)</th>
+      <th>Vc ∼ π × rs2 × Ls</th>
+      <th>Vc/Vs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.16</td>
+      <td>2853.4</td>
+      <td>4.05</td>
+      <td>0.15</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.14</td>
+      <td>2976.4</td>
+      <td>3.75</td>
+      <td>0.13</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.20</td>
+      <td>3505.8</td>
+      <td>4.50</td>
+      <td>0.22</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <td>Hammad et al., 2014</td>
+      <td>0.15</td>
+      <td>5400.0</td>
+      <td>4.80</td>
+      <td>0.39</td>
+      <td>2.55</td>
+    </tr>
+  </tbody>
+</table>
 
-where ∑i is the sum over the bins of the distributions, f0(xi0) is the height of the i bin of the reference curve, fj(xij) is the height of the i bin of the j curve to be aligned and s is the scaling (stretching) factor.
+_Notes: The fraction of volume of the sinusoids (Vs), the length of the sinusoidal network per volume unit (Ls) and the average radius of the network (rs) were measured independently for each sample. A theoretical approximation of the fraction of volume of the sinusoids (Vc), considering it consists of ideal cylinders, was calculated (Vc ∼ π × rs2 × Ls). Then, the ratio between the measured and the calculated fractions of volume (Vc/Vs) was calculated. Values close to 1.0 reflect auto consistency on the data. We performed the same calculation with the data reported in Hammad et al. (2014)._
+
+### Quantitative analysis of liver tissue architecture
+
+#### DAPI integral intensity calculation
+
+For each nucleus, the total content of DNA was calculated as the integral intensity of the original DAPI image inside the corresponding 3D triangle mesh. Since calculation was performed for three independent samples, the integral intensity per nucleus was normalized to the intensity of first one. Briefly, the distribution of DAPI integral intensity per nucleus was independently calculated for each sample (Figure 4—figure supplement 2). Then, each distribution was aligned (stretched) to the reference one (the first one in our case) by minimizing the functional:
+
+$$
+d_{j}=\frac{\sum_{i}(f^{0}(x_{i}^{0}))^{2}-\sum_{i}(f^{0}(x_{i}^{0})·f^{j}(s·x_{i}^{1}))}{\sum_{i}(f^{j}(s*x_{i}^{1}))^{2}}
+$$
+
+where ∑i is the sum over the bins of the distributions, $f^{0}(x_{i}^{0})$ is the height of the i bin of the reference curve, $f^{j}(x_{i}^{j})$ is the height of the i bin of the j curve to be aligned and s is the scaling (stretching) factor.
 
 We found scaling factors 1.19 and 0.93 for the second and third samples respectively. Finally, the DAPI integral intensity of each nucleus was recalculated using the corresponding scaling factor.

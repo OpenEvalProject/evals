@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01wy3h363 Center for Cell Structure and Function, Shandong Provincial Key Laboratory of Animal Resistance Biology, Collaborative Innovation Center of Cell Biology in Universities of Shandong, College of Life Sciences, Shandong Normal University Jinan China
-2. https://ror.org/01y1kjr75 State Key Laboratory of Medicinal Chemical Biology, Haihe Laboratory of Cell Ecosystem, College of Life Sciences, Nankai University Tianjin China
+1. Center for Cell Structure and Function, Shandong Provincial Key Laboratory of Animal Resistance Biology, Collaborative Innovation Center of Cell Biology in Universities of Shandong, College of Life Sciences, Shandong Normal University Jinan China ([ROR:01wy3h363](https://ror.org/01wy3h363))
+2. State Key Laboratory of Medicinal Chemical Biology, Haihe Laboratory of Cell Ecosystem, College of Life Sciences, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Although structural and genetic studies have significantly broadened our underst
 
 ## Physiological and pathological roles of the BBSome in diseases
 
-## Bardet-Biedl syndrome
+### Bardet-Biedl syndrome
 
 In 1866, two ophthalmologists, Laurence and Moon, reported the cases of patients with familial blindness, obesity, cognitive deficits, and spastic paraparesis (Laurence and Moon, 1995). Later descriptions of additional symptoms by Bardet and Biedl resulted in the description of ‘Laurence-Moon-Bardet-Biedl syndrome’. Currently, however, Laurence-Moon and Bardet-Biedl syndromes are recognized as separate entities on the same disease spectrum. Diagnosis is based on the presence of four major symptoms (retinal degeneration, postaxial polydactyly, truncal obesity, cognitive impairment, hypogonadism, and renal anomalies) or three major symptoms plus two minor symptoms (speech delay, developmental delay, diabetes mellitus, dental anomalies, congenital heart disease, brachydactyly/syndactyly, ataxia/poor coordination, anosmia/hyposmia) (Caba et al., 2022). Over 26 gene loci have now been attributed to BBS symptoms, the functions of which can be subtyped into three categories: the BBSome, BBSome assembly chaperonins, and other IFT and ciliary proteins (Caba et al., 2022). Mutations in any BBSome subunit can cause BBS, suggesting that every subunit of the BBSome is essential for complete BBSome function.
 
@@ -37,7 +37,7 @@ Corresponding to the symptoms of BBS, the BBSome is necessary for the developmen
 
 Our understanding of the pathogenic role played by the BBSome in BBS patients has benefitted from several animal models including mice, zebrafish, and Caenorhabditis elegans, which recapitulate some of the human phenotypes (Song et al., 2020; Kretschmer et al., 2019; Bentley-Ford et al., 2022). For example, the zebrafish is a well-established animal model used to investigate the role of the BBSome in photoreceptor development (Masek et al., 2022). Indeed, recent use of the BBS4 mouse model established a link between immune/hematopoietic defects and BBS (Tsyklauri et al., 2021). However, animal models do not always precisely reproduce the clinical manifestations due to physiological differences between different species. The application of patient-derived cellular models, especially induced pluripotent stem cells (iPSCs) that can be reprogrammed and differentiated into multifunctional tissues, represents a technological solution for BBS disease modeling and in vitro assessment of personalized therapies (Wang et al., 2021; Hey et al., 2021; Hey et al., 2019). For example, analysis of the BBS1-M390R mutation model of iPSC-derived hypothalamic arcuate-like neurons revealed downregulation of insulin and leptin signaling pathways, which may contribute to energy homeostasis regulation by the BBSome in neurons (Wang et al., 2021). Improving our understanding of the dynamics of BBS pathology using these disease models will shed further light on the mechanisms of disease onset in humans and help in the discovery and optimization of new treatment strategies.
 
-## Ciliopathies
+### Ciliopathies
 
 Besides BBS, nephronophthisis (NPHP), Joubert (JBTS), Meckel-Gruber (MKS), and oral-facial digital (OFD) syndromes are all diseases caused by motile and non-motile primary cilia dysfunction and are collectively known as ciliopathies. These diseases often share common signatures including retinal degeneration, renal or liver dysfunction, polydactyly, brain anomalies, and cognitive impairment. Ciliopathies are genetically complicated disorders, as single gene variants can associate with different ciliopathies (although particular genes are most commonly associated with a specific ciliopathy). Individual ciliopathy patients can also contain variants in multiple genes, which may partially explain the observed symptom diversity as a result of genetic interactions (Muller et al., 2010; Beales et al., 2003; Badano et al., 2003b).
 
@@ -47,19 +47,246 @@ The transition zone is a mutation hub for several ciliopathies including MKS, an
 
 ## Structure and formation of the BBSome
 
-## BBS proteins and the BBSome
+### BBS proteins and the BBSome
 
 Discovery of the BBSome was driven by the identification of the genes associated with BBS phenotypes. The first identified BBS gene, BBS6, which is similar to group II chaperonins, was discovered at the beginning of the 21st century by positional cloning (Katsanis et al., 2000; Slavotinek et al., 2000). Subsequently, other BBS genes including BBS1, 2, and 4 were cloned using similar methods (Mykytyn et al., 2002; Mykytyn et al., 2001; Nishimura et al., 2001). However, given that these proteins did not share any similarities with other characterized proteins at that time, their function remained elusive.
 
 Nevertheless, other BBS genes were soon identified by screening similar sequences of the cloned BBS genes with the help of bioinformatic comparisons. For example, searching the conceptual translation of the human subset of the EST database with the human and zebrafish BBS2 peptide sequence defined a novel BBS locus corresponding to BBS7 (Badano et al., 2003a). However, it was not until the discovery of BBS8, with its region of similarity to the BBS4 protein sequence and localization to the basal body of ciliated cells, that BBS proteins were hypothesized to be related to ciliary function (Ansley et al., 2003). Notably, patients with BBS8 variants possess defects in left-right axis determination, which is reminiscent of the nodal cilia dysfunction phenotype (Ansley et al., 2003). The attempt to demonstrate the ciliary role of BBS8 paved the way for the study of ciliary function in BBS. Indeed, most BBS proteins now have established roles in BBSome- or cilia-related functions, and the major functions of the twenty-six BBS proteins are listed in Table 1.
 
+**Table 1.**
+ Characteristics and functions of BBS genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Gene Symbol</th>
+      <th>Gene Name</th>
+      <th>Protein</th>
+      <th>Functions</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>BBS1</td>
+      <td>Bardet-Biedl syndrome 1</td>
+      <td>Bardet-Biedl syndrome 1 protein</td>
+      <td>Member of the BBSome complex</td>
+      <td>Mykytyn et al., 2002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>BBS2</td>
+      <td>Bardet-Biedl syndrome 2</td>
+      <td>Bardet-Biedl syndrome 2 protein</td>
+      <td>Member of the BBSome complex</td>
+      <td>Nishimura et al., 2001</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ARL6</td>
+      <td>ADP ribosylation factor like GTPase 6</td>
+      <td>ADP-ribosylation factor-like protein 6</td>
+      <td>Small GTPase; Facilitate BBSome assembly and recruitment to the cilium</td>
+      <td>Chiang et al., 2004; Fan et al., 2004</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>BBS4</td>
+      <td>Bardet-Biedl syndrome 4</td>
+      <td>Bardet-Biedl syndrome 4 protein</td>
+      <td>Member of the BBSome complex</td>
+      <td>Mykytyn et al., 2001</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>BBS5</td>
+      <td>Bardet-Biedl syndrome 5</td>
+      <td>Bardet-Biedl syndrome 5 protein</td>
+      <td>Member of the BBSome complex</td>
+      <td>Woods et al., 1999; Young et al., 1999</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MKKS</td>
+      <td>MKKS centrosomal shuttling protein</td>
+      <td>McKusick-Kaufman/Bardet-Biedl syndromes putative chaperonin</td>
+      <td>Chaperonin protein for BBSome complex assembly</td>
+      <td>Katsanis et al., 2000; Slavotinek et al., 2000</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>BBS7</td>
+      <td>Bardet-Biedl syndrome 7</td>
+      <td>Bardet-Biedl syndrome 7 protein</td>
+      <td>Member of the BBSome complex</td>
+      <td>Badano et al., 2003a</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>TTC8</td>
+      <td>Tetratricopeptide repeat domain 8</td>
+      <td>Tetratricopeptide repeat protein 8</td>
+      <td>Member of the BBSome complex</td>
+      <td>Ansley et al., 2003</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>BBS9</td>
+      <td>Bardet-Biedl syndrome 9</td>
+      <td>Protein PTHB1</td>
+      <td>Member of the BBSome complex</td>
+      <td>Nishimura et al., 2005</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>BBS10</td>
+      <td>Bardet-Biedl syndrome 10</td>
+      <td>Bardet-Biedl syndrome 10 protein</td>
+      <td>Chaperonin protein for BBSome complex assembly</td>
+      <td>Stoetzel et al., 2006</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>TRIM32</td>
+      <td>Tripartite motif containing 32</td>
+      <td>E3 ubiquitin protein ligase TRIM32</td>
+      <td>E3 ubiquitin ligase</td>
+      <td>Chiang et al., 2006</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>BBS12</td>
+      <td>Bardet-Biedl syndrome 12</td>
+      <td>Bardet-Biedl syndrome 12 protein</td>
+      <td>Chaperonin protein for BBSome complex assembly</td>
+      <td>Stoetzel et al., 2007</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>MKS1</td>
+      <td>MKS transition zone complex subunit 1</td>
+      <td>Meckel syndrome type 1 protein</td>
+      <td>Transition zone component; Regulates ciliary trafficking</td>
+      <td>Leitch et al., 2008</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>CEP290</td>
+      <td>Centrosomal protein 290</td>
+      <td>Centrosomal protein of 290 kDa (Cep290)</td>
+      <td>Transition zone component; Regulates ciliary entry</td>
+      <td>Leitch et al., 2008</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>WDPCP</td>
+      <td>WD repeat containing planar cell polarity effector</td>
+      <td>WD repeat containing and planar cell polarity effector protein fritz homolog (hFRTZ)</td>
+      <td>Component of the CPLANE (ciliogenesis and planar polarity effectors) complex; regulates ciliogenesis</td>
+      <td>Kim et al., 2010</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>SDCCAG8</td>
+      <td>SHH signaling and ciliogenesis regulator SDCCAG8</td>
+      <td>Serologically defined colon cancer antigen 8</td>
+      <td>Regulates ciliogenesis and Hedgehog signaling pathway</td>
+      <td>Otto et al., 2010</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>LZTFL1</td>
+      <td>Leucine zipper transcription factor like 1</td>
+      <td>Leucine zipper transcription factor-like protein 1</td>
+      <td>Regulates the BBSome trafficking</td>
+      <td>Marion et al., 2012b</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>BBIP1</td>
+      <td>BBSome interacting protein 1</td>
+      <td>BBSome-interacting protein 1</td>
+      <td>Member of the BBSome complex</td>
+      <td>Loktev et al., 2008</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>IFT27</td>
+      <td>Intraflagellar transport 27</td>
+      <td>Intraflagellar transport protein 27 homolog</td>
+      <td>IFT-B complex component; Required for ciliary trafficking</td>
+      <td>Aldahmesh et al., 2014</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>IFT172</td>
+      <td>Intraflagellar transport 172</td>
+      <td>Intraflagellar transport protein 172 homolog</td>
+      <td>IFT-B complex component</td>
+      <td>Bujakowska et al., 2015</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>CFAP418</td>
+      <td>Cilia And Flagella Associated Protein 418</td>
+      <td>Cilia- and flagella-associated protein 418</td>
+      <td>A ciliary protein of unknown function</td>
+      <td>Khan et al., 2016; Heon et al., 2016</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>IFT74</td>
+      <td>Intraflagellar transport 74</td>
+      <td>Intraflagellar transport protein 74 homolog</td>
+      <td>IFT-B complex component</td>
+      <td>Lindstrand et al., 2016</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>NPHP1</td>
+      <td>Nephrocystin 1</td>
+      <td>Nephrocystin-1</td>
+      <td>Transition zone component</td>
+      <td>Lindstrand et al., 2014</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>SCAPER</td>
+      <td>S-phase cyclin A associated protein in the ER</td>
+      <td>S phase cyclin A-associated protein in the endoplasmic reticulum (S phase cyclin A-associated protein in the ER)</td>
+      <td>Regulates ciliary dynamics</td>
+      <td>Wormser et al., 2019</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>CCDC28B</td>
+      <td>Coiled-coil domain containing 28B</td>
+      <td>Coiled-coil domain-containing protein 28B</td>
+      <td>Centrosomal protein that regulates ciliogenesis</td>
+      <td>Badano et al., 2006</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>SCLT1</td>
+      <td>Sodium channel and clathrin linker 1</td>
+      <td>Sodium channel and clathrin linker 1</td>
+      <td>Distal appendage component that regulates ciliogenesis</td>
+      <td>Morisada et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
 In 2007, Nachury et al. applied localization and tandem affinity purification (LAP) to BBS4 in hTERT RPE-1 (RPE-1) cells and pulled down six other BBS proteins (BBS1, BBS2, BBS5, BBS7, BBS8, and BBS9) in a stoichiometric ratio with BBS4. This indicated that these seven BBS proteins form a stable complex, which they named the BBSome (Nachury et al., 2007). Another 10 kDa BBSome subunit, BBS18, was identified one-year later (Loktev et al., 2008), completing the identification of the entire octameric protein complex. Later, another subset of BBS proteins (BBS6, BBS10, and BBS12) were demonstrated to mediate BBSome assembly (Seo et al., 2010).
 
 As well as these BBS proteins, some IFT-B complex components (IFT74, IFT172, and IFT27) have also been reported in association with BBS, suggesting that BBS proteins genetically interact with IFT components (Zhou et al., 2022b; Bujakowska et al., 2015; Luo et al., 2021). In addition, clinical case reports of different BBS families identified other BBS proteins, some of which are associated with additional ciliopathies. For example, variants in the transition zone protein MKS1 result in MKS and BBS, while CEP290 variants are associated with NPHP, JBTS, and BBS (Leitch et al., 2008; Coppieters et al., 2010). These findings indicate that variants in genes encoding ciliary proteins, especially transition zone and IFT proteins, share a wide range of phenotypes, and more BBS proteins will potentially be identified from those proteins.
 
-## Molecular structure and assembly of the BBSome
+### Molecular structure and assembly of the BBSome
 
-## Assembly of the BBSome
+#### Assembly of the BBSome
 
 Consisting of eight subunits, BBSome assembly is thought to proceed sequentially, with all BBSome subunits interdependent to create stability (Prasai et al., 2020; Zhang et al., 2012b). In addition to the core BBSome subunits, several other BBS proteins are important for BBSome assembly, including chaperonin-like BBS proteins and small GTPases.
 
@@ -87,7 +314,7 @@ Structurally, BBS1, BBS2, BBS7, and BBS9 share similar domain architectures incl
 
 BBSome assembly is also regulated by the small Arf-like GTPase ARL6, which helps the BBSome to assemble into a coat complex for membrane targeting (Jin et al., 2010; Mourão et al., 2014). BBS1 binds to the switch regions of the GTP site of ARL6, indicating that the BBSome is an effector for ARL6 (Mourão et al., 2014). The overall formation of the BBSome shows a domain architecture similar to vesicle-forming complex proteins such as COPI/COPII and clathrin, and the interaction between the BBSome and ARL6 is reminiscent of the activation of clathrin-AP complexes by ARF1/SAR1 GTPases (Jin et al., 2010). The detailed mechanisms of regulation of the BBSome by ARL6 are discussed further below.
 
-## Molecular structure of the BBSome
+#### Molecular structure of the BBSome
 
 Determining the crystal structure of the BBSome has been a long-standing challenge, as recombinant BBSome complexes are notoriously difficult to purify. Recent analyses based on single-particle cryoelectron microscopy (cryo-EM) and purified BBSomes from the bovine retina or insect cells have advanced our knowledge about BBSome architecture and provided insights into how the BBSome is organized, recruited to the membrane, and binds to cargoes (Chou et al., 2019; Klink et al., 2020).
 
@@ -129,13 +356,13 @@ BBSome components are localized to cilia as well as the basal body and centriola
 
 **Figure 5.:** (A) The BBSome is recruited to the basal body through ARL6-GTP and IFT22-GTP. LZTFL1 also facilitates basal body recruitment of the BBSome. At the ciliary tip, IFT25/27 promotes BBSome reassembly for retrograde transport. At the proximal ciliary region above the transition zone, a portion of cargo-laden BBSome sheds off retrograde IFT and acts as the effector of ARL3 for ciliary retrieval. (B) The BBSome is recruited to the membrane as an effector of ARL6-GTP. Ciliary entry of the BBSome is facilitated by IFT-A and transition zone proteins NPHP5 and CEP290. (C) The BBSome rides on the retrograde transport train, probably mediated by the IFT-B components IFT27 and IFT25. Whether the adaptor protein LZTFL1 functions as the linker between the BBSome and IFT-B remains to be demonstrated (D) At the ciliary tip, IFT27 disassociates from IFT-B to activate ARL6. Then, ARL6-GTP arranges the BBSome onto the membranes for retrograde transport. (E) During ciliary exit, the BBSome is transported across the transition zone on IFT-B, where Rabl2-GTP hydrolyses to the Rabl2-GDP form to dissociate from IFT trains. The BBSome sheds off from the IFT-B trains and fails to pass through the transition zone when the IFT-B is persistently bound by the GTP-locked Rabl2.
 
-## Recruitment to the basal body
+### Recruitment to the basal body
 
 The BBSome is present at the basal body in various species, where it is loaded onto IFT trains for cilium entry (Ansley et al., 2003; Lechtreck et al., 2009; Wingfield et al., 2017). BBS1 is particularly abundant at the centrosome in non-ciliated cells and its absence stalls other BBSome components at the centriolar satellites, while the centrosomal localization of BBS1 is not otherwise affected by BBS4 depletion (Prasai et al., 2020). Consistently, BBS5 is absent from the basal bodies in BBS1-depleted Chlamydomonas strains (Liu et al., 2021). Thus, BBS1 is predicted to mediate basal body recruitment of the BBSome for ciliary entry (Prasai et al., 2020).
 
 In C. reinhardtii, ARL6/IFT22 is required for recruiting the BBSome to the basal body when they are both in GTP-bound states (Figure 5A; Xue et al., 2020). IFT22 is a Rab-like 5 (RABL5) GTPase, and its depletion results in a dramatic decrease in basal body and ciliary BBS1 and BBS5, which are restored by GTP-bound but not GDP-bound IFT22 (Xue et al., 2020). IFT22 binds and stabilizes ARL6 in the cell body independent of their nucleotide states, while their recruitment to the basal body requires both proteins to be in their GTP-bound states (Xue et al., 2020). In contrast with mammalian cells, in which only GTP-ARL6 binds the BBSome, the binding between ARL6 and the BBSome is independent of the nucleotide state of ARL6 in the cell body of C. reinhardtii, but only GTP-bound ARL6 can recruit BBSomes to the basal body or bind BBSomes in cilia (Liu et al., 2021). Note that IFT22 or ARL6 mutants, in which IFT22 or ARL6 has normal basal body localization but fails to localize in cilia, also retain the ciliary localization of the BBSome, indicating that IFT22 and ARL6 only function in the basal body recruitment of BBSomes but not their ciliary entry (Liu et al., 2021; Xue et al., 2020). Once in the cilium, BBSome transport along the cilium does not require IFT22 or ARL6 either. Thus, IFT22 and ARL6 are only required to recruit the BBSome to the basal body to make it available for loading onto anterograde IFT trains for ciliary entry in C. reinhardtii. In addition, C. reinhardtii LZTFL1 also directs BBSome basal body recruitment by promoting basal body targeting of ARL6 without binding to IFT22/ARL6 (Sun et al., 2021).
 
-## Ciliary entry and trafficking
+### Ciliary entry and trafficking
 
 In mammalian cells, it is believed that the BBSome is recruited to membrane structures as the major effector of ARL6, which binds the BBSome through BBS1 (Figure 5B; Jin et al., 2010). The ciliary localization of the BBSome and ARL6 are likely interdependent, and both require GTP binding of ARL6. The BBSome subunits BBS1 and BBS18 fail to localize to cilia when ARL6 is depleted in mammalian cells, and ciliary localization of ARL6 dramatically decreases in BBS2-, BBS4-, and BBS5-depleted cells (Jin et al., 2010). However, C. reinhardtii ARL6 is not required for the BBSome to enter cilia from the basal body, and it diffuses into the cilium without IFT movement, indicating that the entry of ARL6 to the cilium does not depend on BBSomes either (Liu et al., 2021; Xue et al., 2020). In the retinal photoreceptor of Arl6 knockout mice, the BBSome is fully assembled and recruited to cilia, indicating that the recruitment of BBSomes to photoreceptor cilia is ARL6 independent (Hsu et al., 2021). These studies suggest that the ciliary entry of the BBSome is differentially regulated across tissues or species, and the detailed mechanisms underlying its ciliary entry are still not well characterized.
 
@@ -149,13 +376,13 @@ Inside the cilium, the BBSome moves both anterogradely and retrogradely at the s
 
 **Figure 6.:** (A) The anchoring of the BBSome on IFT trains. The BBSome interacts with IFT-B through IFT38. The Rabl2 GTPase and the IFT25-IFT27 dimer bind to IFT74-IFT81 of IFT-B in a mutually exclusive manner and may regulate BBSome-mediated cargo loading. (B) During the cargo’s ciliary entry, the BBSome either regulates vesicle targeting in a Rab8-Rabin8-dependent manner or regulates the cargo’s lateral transport between the plasma and ciliary membrane. At the ciliary base and at the ciliary tip, the BBSome may regulate IFT assembly to ensure their ciliary entry and turnaround and hold them together during transport. At the ciliary tip, ARL6 and ARL13 regulate cargo pickup by the BBSome for retrieval. During the cargo’s exit, β-arrestin arranges the cargo for ubiquitin modification, followed by BBSome-mediated exit across the transition zone. TOM1L2 may function as an adapter between the BBSome and ubiquitin sidechains. The BBSome facilitates endocytic sorting of select membrane proteins at the base of the cilium. The unretrieved GPCRs can also be shed into ectocytosis vesicles for disposal.
 
-## Turnaround at the ciliary tip
+### Turnaround at the ciliary tip
 
 Once reaching the ciliary tip, the BBSome and IFT trains are thought to undergo remodeling before turning around for retrograde transport to exit cilia (Figure 5A; Wei et al., 2012; Wingfield et al., 2021). IFT27, a small G protein with very low intrinsic GTPase activity distantly related to the Rab subfamily of Ras-like GTPases, is a component of IFT-B and forms a stable heterodimer with IFT25 (Bhogaraju et al., 2011). BBSome subunits (BBS5 and BBS9) and BBS regulators (ARL6 and LZTFL1) accumulate in the cilia of IFT27-knockout cells (Eguether et al., 2014). The ciliary exit rate of the BBSome measured by fluorescence loss after photobleaching (FLAP) decreases in IFT27-knockdown cells, while ciliary entry measured by fluorescence recovery after photobleaching (FRAP) does not alter, indicating that a defect in ciliary exit but not entry contributes to ciliary accumulation of the BBSome (Liew et al., 2014). In LZTFL1-mutant cells, ciliary staining of IFT27 remains normal, suggesting that LZTFL1 functions downstream of IFT27 (Eguether et al., 2014). BBSome depletion does not affect IFT27 and LZTFL1 localization, indicating that they function upstream of the BBSome (Eguether et al., 2014). Based on the above observations, the proposed model indicates that LZTFL1 coordinates interactions between the BBSome and IFT particles to remove ciliary cargoes from the cilium (Figure 5C). However, Chlamydomonas LZTFL1 does not interact with IFT in cilia, thus refuting the role of LZTFL1 as the BBSome/IFT linker, at least in C. reinhardtii (Sun et al., 2021).
 
 In an alternative model, IFT27/25 may regulate BBSome loading onto retrograde IFT for ciliary removal at the ciliary tip. Mammalian IFT27 was previously considered to work as the guanine exchange factor (GEF) for ARL6 at the ciliary tip to prepare for retrograde BBSome trafficking (Figure 5D; Liew et al., 2014). In murine cells, IFT25/IFT27 is transiently released from IFT-B at the distal tip of the cilium, where IFT27 then binds and stabilizes the nucleotide-free form of ARL6 to promote ARL6 activation and subsequent capture of the BBSome to membranes (Liew et al., 2014). However, ARL6 is not required for loading BBSomes onto retrograde IFT trains for ciliary exit at the ciliary tip in C. reinhardtii, as ARL6 and BBSome transport separately in C. reinhardtii cilia and ciliary loss of ARL6 does not cause ciliary hyperaccumulation of BBS1, BBS4, BBS5, or BBS7 (Liu et al., 2021). The ARL6 GEF activity of IFT27 should also be considered with caution, considering that the GEF activity of IFT27 in vitro is low and the biochemical assays are performed on whole cell samples rather than cilia alone (Liew et al., 2014). In C. reinhardtii, IFT25/27 does not depend on IFT27’s nucleotide state to cycle on and off IFT-B and fails to activate ARL6 in vitro, arguing against a GEF function for IFT27 (Liu et al., 2023a; Liu et al., 2023b). Similar to IFT27, IFT25 depletion also has no effect on ciliary entry of the BBSome, but it does impair BBSome ciliary exit (Dong et al., 2017). Closely related to IFT27, IFT25 depletion causes a dramatic decrease in IFT27 levels and a BBSome exit defect similar to the defects induced by IFT27 depletion both in mice and C. reinhardtii (Eguether et al., 2014; Dong et al., 2017; Keady et al., 2012). At the ciliary tip of IFT25-knockdown cells, BBS1 and BBS5 cannot assemble into the intact BBSome and hyperaccumulate there (Liu et al., 2021). In summary, Chlamydomonas IFT25/27 promotes BBSome reassembly for coupling with IFT-B during the BBSome turnaround at the ciliary tip (Figure 5A; Sun et al., 2021; Dong et al., 2017). Meanwhile, Chlamydomonas LZTFL1 mediates BBSome reassembly at the ciliary tip for its removal by stabilizing IFT25/27 in the cell body (Sun et al., 2021). Note that Ift25, Ift27, and Lztfl1 homologs are absent from the genomes of D. melanogaster and C. elegans (van Dam et al., 2013), suggesting a different mechanism underlying retrograde BBSome transport in flies and worms.
 
-## Ciliary removal
+### Ciliary removal
 
 For ciliary exit, the BBSome must pass through the transition zone (Ye et al., 2018). Rabl2 is a Rab-like small GTPase capable of self-activation into a GTP-binding form, and it was previously found to initiate ciliary entry of IFT (Kanie et al., 2017). BBS5, BBS7, and ARL6 accumulate in cilia in GTP-locked Rabl2 mutant (Q80L) cells (Duan et al., 2021): although anterograde and retrograde transport velocities were not affected, BBSome export dramatically decreased. In cells expressing Rabl2-Q80L, super-resolution imaging revealed that the BBSome distributes exclusively above the transition zone, where the BBSome reaches but fails to pass across. Interestingly, disrupting the Rabl2-Q80L and IFT-B interaction ensures transition zone passage of the BBSome, indicating that persistent binding of Rabl2-GTP to IFT-B results in shedding of the BBSome before it passes across the transition zone (Duan et al., 2021). Thus, it is proposed that the BBSome is transported and reaches the transition zone on the IFT-B retrograde machinery in the presence of Rabl2-GTP, which hydrolyses to its Rabl2-GDP form to dissociate from IFT trains and to allow the BBSome to pass through the transition zone (Figure 5E). In C. reinhardtii, a portion of cargo-laden BBSome sheds off retrograde IFT at the proximal ciliary region and acts as the effector of ARL3 to pass the transition zone for ciliary retrieval, likely via diffusion (Figure 5A; Liu et al., 2022). Whether a Rabl2-ARL3 cascade exists, in which Rabl2 functions as the GEF of ARL3, remains to be confirmed in C. reinhardtii.
 
@@ -165,17 +392,17 @@ Unlike IFT mutants, which typically result in pronounced structural ciliary abno
 
 Early studies revealed that the BBSome is required for ciliary entry of several GPCRs, as somatostatin receptor type 3 (SSTR3) and melanin-concentrating hormone receptor 1 (MCHR1) are absent from hippocampal neuron cilia in Bbs2- or Bbs4-mutant mice (Berbari et al., 2008b). NPY2R failed to localize to cilia in Bbs18-mutant mice hypothalamus (Loktev and Jackson, 2013). However, recent results support a role for the BBSome in ciliary exit, excluding non-ciliary proteins leaked into the cilium, and regulating the balance of ciliary receptor concentration (Lechtreck et al., 2009; Ye et al., 2018). For example, SSTR3 was also shown to exit the cilium in IMCD3 cells in a BBSome-dependent manner (Ye et al., 2018). These pleiotropic outcomes may be influenced by the activation state of the receptors or be cell type- and species-dependent, and the detailed mechanisms remain unclear (Domire et al., 2011). In summary, the BBSome acts as a cargo adaptor of the IFT, expanding the cargo range of IFT in ciliary trafficking to regulate the movement of cargo proteins in and out of cilia (Lechtreck, 2022).
 
-## Target recognition
+### Target recognition
 
 To mediate cargo transport, the BBSome should be able to bind cargoes on specific domains involved in cilium targeting (ciliary targeting sequence, CTS). It has been reported that the third intracellular loops of SSTR3, 5-hydroxytryptamine receptor 6 (HTR6), MCHR1, and dopamine receptor 1 (D1) are sufficient for ciliary localization and can be bound by the holo-BBSome (Jin et al., 2010; Berbari et al., 2008a; Domire et al., 2011). Comparing these loops reveals a loose consensus sequence, Ax[S/A]xQ (Berbari et al., 2008a). Other CTSs include the C-terminal VxP sequence in rhodopsin, polycystin 1, and polycystin 2 (Deretic et al., 1998; Su et al., 2015) and the (F/Y/W)(K/R) motif in Smo (Corbit et al., 2005). There is also some evidence implicating the RVxP motif in the N-terminal domain of polycystin 2 (Geng et al., 2006). However, a recent study challenged the legitimacy of some of the previously identified hot spots, and showed that the heterologously expressed BBSome hexamer (BBS1, 4, 5, 8, 9, and 18) has robust affinity for the (F/Y/W)(K/R) motif and other sequences containing one or more basic or aromatic residues (Klink et al., 2017). Note that these CTSs seem to be sufficient but not necessary for ciliary cargo localization, indicating that the regulation of cargo localization is rather complex and may involve several parallel mechanisms.
 
 BBS1 is considered the major subunit for BBSome cargo recognition, interacting with several ciliary cargoes including Smo, Patched, leptin receptor, and polycystin 1 (Zhang et al., 2012a; Seo et al., 2009; Su et al., 2014). Besides BBS1, the C-terminal of Smo is also reported to bind the BBSome through BBS4, 5, and 7 (Seo et al., 2011). BBS5 specifically interacts with the third intracellular loop of D1 (Domire et al., 2011). Regardless, cargo binding may depend on the 3-dimensional arrangement of the holo-BBSome, which exploits different binding modes to cope with different cargoes (Singh et al., 2020).
 
-## Cargo entry
+### Cargo entry
 
 BBSome-mediated ciliary entry can be achieved by targeting vesicles to the cilium to promote ciliary membrane elongation or by functioning as a planar coat for lateral transport between the plasma and ciliary membranes (Figure 6B; Jin et al., 2010; Nachury et al., 2007). At the basal body, the BBSome interacts with Rabin8, a guanine nucleotide exchange factor (GEF) for Rab8, through BBS1, which may potentiate the GEF activity of Rabin8 to facilitate vesicle docking and fusion to the base of the cilium (Nachury et al., 2007). Interestingly, a recent study also established a unique role for the BBSome in preventing entry (Yu et al., 2020). Fluorescence protein-tagged carbonic anhydrase 6 (CAH6-mNG) preferentially localized to the trans-flagellum emerging from the older basal body, which was established early during flagellar assembly and restored after photobleaching. The uneven distribution in both cilia was disrupted in BBS1-mutant strains. Considering that the BBSome localizes to the transition zone, it may serve as a roadblock that prevents the entry of CAH6-mNG into the cis-flagellum (Dean et al., 2016; Yu et al., 2020).
 
-## Cargo exit
+### Cargo exit
 
 It has been reported that several GPCRs, such as Smo, GPR161, Patched, and D1, accumulate in BBS-mutant cilia (Domire et al., 2011; Nozaki et al., 2018). A role for the BBSome in ciliary exit is further supported by a proteomic analysis that detected over 130 non-ciliary proteins accumulated in the photoreceptor outer segments of Bbs-mutant mice (Datta et al., 2015). It has been suggested that the BBSome promotes ciliary export of proteins by linking them to IFT particles for retrograde transport, facilitating their passage across the transition zone, and shedding ciliary extracellular vesicles for disposal (Figure 6B).
 

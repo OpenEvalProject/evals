@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-2. https://ror.org/02yrq0923 Developmental Biology Program, Memorial Sloan Kettering Cancer Center New York United States
-3. https://ror.org/00cvxb145 Institute for Protein Design, University of Washington Seattle United States
-4. https://ror.org/00cvxb145 Molecular and Cellular Biology Program, University of Washington Seattle United States
-5. https://ror.org/006w34k90 Howard Hughes Medical Institute Seattle United States
+1. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Developmental Biology Program, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
+3. Institute for Protein Design, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Molecular and Cellular Biology Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+5. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
 6. Brotman Baty Institute for Precision Medicine Seattle United States
 7. Allen Discovery Center for Cell Lineage Tracing Seattle United States
 8. Seattle Hub for Synthetic Biology Seattle United States
@@ -23,7 +23,7 @@
 
 ## Abstract
 
-One of the goals of synthetic biology is to enable the design of arbitrary molecular circuits with programmable inputs and outputs. Such circuits bridge the properties of electronic and natural circuits, processing information in a predictable manner within living cells. Genome editing is a potentially powerful component of synthetic molecular circuits, whether for modulating the expression of a target gene or for stably recording information to genomic DNA. However, programming molecular events such as protein-protein interactions or induced proximity as triggers for genome editing remains challenging. Here, we demonstrate a strategy termed ‘P3 editing’, which links p rotein- p rotein p roximity to the formation of a functional CRISPR-Cas9 dual-component guide RNA. By engineering the crRNA:tracrRNA interaction, we demonstrate that various known protein-protein interactions, as well as the chemically induced dimerization of protein domains, can be used to activate prime editing or base editing in human cells. Additionally, we explore how P3 editing can incorporate outputs from ADAR-based RNA sensors, potentially allowing specific RNAs to induce specific genome edits within a larger circuit. Our strategy enhances the controllability of CRISPR-based genome editing, facilitating its use in synthetic molecular circuits deployed in living cells.
+One of the goals of synthetic biology is to enable the design of arbitrary molecular circuits with programmable inputs and outputs. Such circuits bridge the properties of electronic and natural circuits, processing information in a predictable manner within living cells. Genome editing is a potentially powerful component of synthetic molecular circuits, whether for modulating the expression of a target gene or for stably recording information to genomic DNA. However, programming molecular events such as protein-protein interactions or induced proximity as triggers for genome editing remains challenging. Here, we demonstrate a strategy termed ‘P3 editing’, which links protein-protein proximity to the formation of a functional CRISPR-Cas9 dual-component guide RNA. By engineering the crRNA:tracrRNA interaction, we demonstrate that various known protein-protein interactions, as well as the chemically induced dimerization of protein domains, can be used to activate prime editing or base editing in human cells. Additionally, we explore how P3 editing can incorporate outputs from ADAR-based RNA sensors, potentially allowing specific RNAs to induce specific genome edits within a larger circuit. Our strategy enhances the controllability of CRISPR-based genome editing, facilitating its use in synthetic molecular circuits deployed in living cells.
 
 ## Introduction
 
@@ -41,11 +41,23 @@ Here, we present a strategy named ‘P3 editing’ (protein-protein proximity), 
 
 ## Results
 
-## Testing three strategies for leveraging the gRNA as a dimerization module
+### Testing three strategies for leveraging the gRNA as a dimerization module
 
 To achieve a molecular proximity sensor that drives genome editing, a specific physical interaction between two molecules needs to be converted into a successful genome editing event. One possibility is to ‘split’ a key molecule into two parts, but in such a way that bringing complementary non-functional parts into proximity restores its molecular function. This strategy has been successful in various protein designs (Michnick et al., 2007), such as split-GFP (Ghosh et al., 2000), split-Luciferase (Kim et al., 2004), or split-Protease (Wehr et al., 2006) to convert protein-protein interactions or proximities into various output signals based on fluorescence, bioluminescence, or protein modification. In the split architecture, the ‘dimerization module’ is a key sensor component. Although strategies that split the protein component of the genome editing complex have been described (e.g. split-Cas9 [Yu et al., 2020]), we reasoned that having the gRNA serve as the dimerization module rather than the protein, i.e., by splitting it into two parts, and making the restoration of its function dependent on a molecular proximity event, would afford even more control. For example, if multiple split gRNAs were present within the same cell, they could be independently controlled, whereas a split Cas9 would only allow a single control point. In our initial experiments, we focused on splitting the pegRNA used in prime editing.
 
 We considered three broad strategies in designing a ‘split-pegRNA’ system. First, the pegRNA could be split into a functional sgRNA and its 3’-extension sequence containing the reverse-transcription template and primer binding sequence, the latter also referred to as prime editing trans RNA or petRNA by a recent report (Liu et al., 2022; Figure 1a, top). Second, an extra sequence motif such as a self-splicing split-ribozyme could be inserted within the pegRNA sequence, such that the coming together of split-ribozyme parts would be required to splice out the extraneous sequence and yield a functional pegRNA (Figure 1a, middle). Third, the pegRNA could be divided at the repeat:anti-repeat junction, which was originally joined with a GAAA RNA tetraloop to form a single-guide RNA (sgRNA) molecule from crRNA and tracrRNA (Jinek et al., 2012; Figure 1a, bottom).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig1-v1.jpg)
+
+**Figure 1.:** (a) We tested three classes of split-pegRNA designs: (Top) pegRNA is split into sgRNA and petRNA. (Center) Self-splicing ribozyme is inserted into pegRNA, thus splitting it into two parts. (Bottom) The Cas9-binding scaffold is split at the crRNA:tracrRNA junction, which is joined through a GAAA RNA tetraloop in the standard sgRNA. (b) Dimerization of crRNA and prime editing tracrRNA (petracrRNA) for Cas9 activity is guided by RNA annealing sequences (shown in purple) that are complementary. (c) Different designs of complementary sequences for the crRNA-petracrRNA interaction. (d–e) Editing efficiencies for prime editing (CTT insertion to HEK3 native genomic locus) using matching (d) or mixed (e) crRNA/petracrRNA pairs. CTT insertion efficiency using enhanced pegRNA (epegRNA) was used as the positive control (‘eCTT control’). The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic of splitting functional prime editing guide RNA (pegRNA) into single-guide RNA (sgRNA) with extended sequence on 3’-end and petRNA with extended sequence on 5’-end for controlling dimerization. Annealing of two dimerization sequences would result in an active pegRNA. (b) Example design of dimerization sequence. Each design is named after the length of the reverse-complementary sequence (22 bp shown here). In both sgRNA and petRNA, evoPreQ1 RNA pseudoknot domains are added to reduce the degradation of the non-Cas9-bound RNA portion. (c) The editing efficiency was measured for seven different sgRNA:petRNA pairs along with prime editing control (pegRNA targeting HEK3 locus for CTT insertion at +0 position from the nick) and a single pegRNA construct with 22 bp RNA stem-loop between the sgRNA and reverse-transcription template (RTT) portion (pegRNA w/ SL) to test whether having extra RNA duplex affects the prime editing efficiency. The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic of self-splicing ribozyme strategy. Insertion of the ribozyme into functional prime editing guide RNA (pegRNA) would lead to self-splicing after RNA transcription, which would result in an active pegRNA and spliced ribozyme sequence. If this worked, the ribozyme could be further split into two functional parts, where extra dimerization domains can be added to control ribozyme function. (b) Six positions within the pegRNA (targeting HEK3 locus for CTT insertion) were tested for inserting the self-splicing ribozyme sequence. Ribozyme needs to start with a uridine base for splicing, which remains after the ribozyme is spliced out. (c) Editing efficiencies were measured for six ribozyme insertion sites within pegRNA. For Site-1 and Site-2, two additional designs were constructed with inactive ribozyme (G264A mutation). The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.
 
 We first tested splitting the pegRNA into a functional sgRNA and petRNA (Figure 1a, top; Figure 1—figure supplement 1a–b). We reasoned that the addition of complementary RNA sequences as a ‘dimerization module’ at the split junction of sgRNA and petRNA would drive the formation of an active pegRNA complex only when the correct complementary sequences are present. To inhibit early degradation of split RNAs, we appended an additional RNA pseudoknot structure at the ends of both molecules, borrowing from the strategy used to form the enhanced pegRNA or ‘epegRNA’ for higher prime editing efficiency (Nelson et al., 2022). We tested a handful of RNA:RNA dimerization sequences that range from 13 to 164 base-pairs, with an expectation that base-pairing between dimerization sequences would drive the formation of active pegRNA molecules. To measure the editing efficiency of the sgRNA:petRNA splitting strategy, we cloned each RNA in separate RNA expression vectors. We programmed crRNA:petracrRNA to target the endogenous HEK3 locus and insert CTT at the +0 position relative to the nick in combination with the ‘PE4max’ prime editor (also referred to as PEmax-P2A-hMLH1dn), as this edit has been previously used to benchmark prime editing (Anzalone et al., 2019; Chen et al., 2021). In general, we observed a low editing efficiency (<2%) by sgRNA-petRNA pairs that are expected to be dimerized by complementary RNA sequences, even with an additional 3’ RNA pseudoknot structure that inhibits RNA degradation from 3’-end (Nelson et al., 2022; Figure 1—figure supplement 1c). The inefficiency in editing is unlikely to be due to the inserted dimerization domain because a single pegRNA with additional RNA stem-loop structure at the PE-junction exhibited moderate editing efficiency (~10%; pegRNA w/ SL condition in Figure 1—figure supplement 1c). The underlying cause might be the inefficient dimerization driven by RNA-RNA duplex formation in the cellular environment without additional protein binding to the RNA duplex, or possible degradation of RNA duplex that lies outside of the Cas9-gRNA complex, unprotected from other factors for binding.
 
@@ -57,9 +69,17 @@ We cloned six pairs of crRNA-petracrRNA pairs, varying sequences that are likely
 
 In summary, we tested three strategies to split the pegRNA into two molecules (Figure 1a). Among these, splitting the pegRNA at the repeat:anti-repeat portion is the most promising strategy, and can be potentially extended to the general gRNA used with CRISPR-Cas9 (Figure 1a, bottom; Figure 1b–e). The resulting rates of prime editing are strongly dependent on the complementarity between the repeat:anti-repeat region of crRNA and petracrRNA. Furthermore, our design mimics the functional molecules within the native CRISPR-Cas9 system, initially discovered as the dual-RNA-guided system (Jinek et al., 2012). Therefore, we pursued this strategy in further developing a molecular proximity sensor that drives genome editing.
 
-## Controlling genome editing with protein-protein proximity
+### Controlling genome editing with protein-protein proximity
 
 To convert protein-protein interaction events into genome editing events, we reasoned that the RNA dimerization domain within crRNA and tracrRNA could be replaced with an RNA-based protein dimerization domain, such that specific protein-protein interactions or prolonged proximity would aid in the formation of active gRNA that would then bind to Cas9 (Figure 2a). To date, many specific protein-RNA interaction parts have been identified, including the MS2 RNA aptamer that binds to the MCP domain (Johansson et al., 1997). Among different RNA-protein pairs, we chose two pairs, MS2-MCP and BoxB-LambdaN (Katrekar et al., 2022; Legault et al., 1998; Salstrom and Szybalski, 1978), which can be used as adaptors for using protein-protein interactions to drive RNA-RNA interactions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig2-v1.jpg)
+
+**Figure 2.:** (a) Schematic of P3 editing, which couples protein-protein interactions to genome editing. The binding of two proteins (e.g. MCP-tagged GCN4 epitope and LambdaN-tagged scFv) brings two RNA species (e.g. crRNA-MS2 and BoxB-petracrRNA) into close proximity to form an active prime editing guide RNA (pegRNA) complex, which binds to the prime editor for genome editing. (b) Normalized editing efficiencies measured with different protein pair interactions. Editing efficiencies were normalized to a consistent eCTT control included in each experiment (left-most). Transfection of filler GFP-expressing plasmid instead of proteins tagged with MCP/LambdaN was used to quantify the background levels of editing as a negative control (right-most). (c) Using chemically inducible dimerization to control genome editing. For example, FKBP and FRB domains dimerize in the presence of the small molecule rapamycin. (d) Normalized editing efficiencies measured for chemically induced genome editing. The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates for both panels c and d.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The upper four base-pairs of the Cas9-binding region of repeat:anti-repeat duplex were altered to generate 12 pairs of crRNA-MS2/BoxB-petracrRNA designs. The editing efficiency is normalized with the eCTT positive control included in each experiment (targeting HEK3 locus with CTT insertion at position +0 using standard enhanced prime editing guide RNA [epegRNA]), to control for variable transfection efficiencies. Two normalized editing efficiencies were measured for each pair of RNAs: one with tagged split-GFP to promote dual-RNA-guide formation, and one with standard, untagged GFP to measure the background editing level non-specific to protein-protein proximity. The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.
 
 We designed a crRNA and petracrRNA pair, for which previously identified dimerization sequences of the upper portion of the repeat:anti-repeat duplex were replaced with MS2 and BoxB RNA aptamers. To aid the formation of the proper bulge within the RNA duplex (A and AAG in crRNA and petracrRNA, respectively), we replaced the original sequence of GCUA in crRNA with GCGC, and UAGC in petracrRNA with GCGC. Finally, we added evoPreQ1 RNA pseudoknot sequence on both RNA molecules to reduce RNA degradation from 3’-ends, resulting in crRNA-MS2 and BoxB-petracrRNA.
 
@@ -73,23 +93,23 @@ First, we observe that both epitope-antibody/nanobody interactions were able to 
 
 Lastly, we tested whether this strategy could be adapted to facilitate small molecule-based control of genome editing. In the past 30 years, several chemicals have been identified as critical signaling molecules for promoting protein-protein interactions (Schreiber, 2021). We reasoned that the addition of such chemicals to cell culture could be used to control genome editing of specific targets and editing outcomes. To demonstrate the chemical control of P3 editing, we chose rapamycin-induced dimerization of FKBP and FRB protein domains of the mTOR pathway (Banaszynski et al., 2005; Bierer et al., 1990; Brown et al., 1994) from human proteome, and abscisic acid (ABA)-induced dimerization of pyrabactin resistance domain (PYL) and ABA-insensitive (ABI) domain found in plant (Liang et al., 2011; Figure 2c). We observed a strong increase in the editing efficiency of the FKBP-FRB and PYL-ABI pairs upon the addition of small molecules that induce dimerization (Figure 2d). For example, we observed 3.9-fold higher editing upon the addition of 200 nM rapamycin to the FKBP-FRB pair compared to no rapamycin condition (58% vs 15% normalized editing efficiency), and 2.7-fold higher editing upon the addition of 100 μM ABA to the PYL-ABI pair compared to no ABA condition (36% vs 13% normalized editing efficiency) (Figure 2d).
 
-## Optimizing the efficiency vs specificity tradeoff of P3 editing
+### Optimizing the efficiency vs specificity tradeoff of P3 editing
 
 Overall, these experiments demonstrate that P3 editing can be used to control genome editing via specific interactions between a pair of tagged protein domains. Next, we sought to improve the efficiency and specificity of P3 editing by engineering the crRNA-MS2/BoxB-petracrRNA design. We designed 12 pairs of crRNA-MS2/BoxB-petracrRNA guides, varying the base composition and length of the upper 4 bp region within the Cas9-binding region of repeat:anti-repeat duplex (Figure 2—figure supplement 1). Each RNA design was cloned into an RNA expression vector with flanking U6 promoter and TTTTTTT terminator sequences. We transfected HEK293T cells with the mix of four plasmids expressing each component: crRNA-MS2, BoxB-petracrRNA, PE4max, and either split-GFP (GFP1-10 tagged with MCP and GFP11 tagged with LambdaN; to measure the editing efficiency induced by protein-protein interaction) or standard GFP (to measure the background level of editing without protein-protein interaction).
 
 Across 12 designs, we observe a tradeoff between efficiency (ranging between 2% and 53% of normalized eCTT control) and specificity (background editing level without the addition of tagged protein pair ranging between 0.3% and 35%). The efficiency increases with a higher number of G-C base-pairs and annealing length within the varied region, supporting our hypothesis that crRNA-MS2 and BoxB-petracrRNA can form an active pegRNA complex without the addition of protein-mediated proximity, although at a lower rate. However, as the efficiency of P3 editing decreases, the specificity of P3 editing to protein-protein interaction can increase. For example, in our design that uses GAUA:UAUC pairing, we observe 3.8 ± 1.0% normalized editing efficiency with the addition of tagged split-GFP protein, and only 0.27 ± 0.07% normalized editing efficiency without it, a 14-fold increase driven by specific protein-protein interaction. Our optimization effort suggests that the efficiency and specificity of P3 editing can be tuned using different designs of crRNA-MS2/BoxB-petracrRNA, depending on the experimental goal.
 
-## Coupling various modes of genome editing to protein-protein proximity
+### Coupling various modes of genome editing to protein-protein proximity
 
 While our demonstrations so far coupled the P3 strategy to prime editing, we reasoned that the same strategy could be adapted to other precision editing methods such as base editing (Figure 3a). To confirm this, we tested three different base editors (CBE2 [Komor et al., 2016], CBE4max [Koblan et al., 2018], and ABE8 [Richter et al., 2020]), which can target the HEK3 locus and make either C-to-T or A-to-G edits (Figure 3b). To facilitate compatibility with base editing, we designed BoxB-tracrRNA that lacks the 3’-extension specific to prime editing and cloned it into an RNA expression vector with a U6 promoter. We transfected HEK293T cells with a mix of plasmids expressing: crRNA-MS2, BoxB-tracrRNA, one of the three base editors, and either the LambdaN-MCP fusion protein that brings crRNA-MS2 and BoxB-tracrRNA into close proximity or GFP to serve as a negative control and measure the base-level editing efficiency without a protein component that aids the formation of gRNA complex.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig3-v1.jpg)
 
-**Figure 3.:** (a) Schematics of P3 editing strategy adapted to base editing. The LambdaN-MCP fusion protein will bring crRNA-MS2 and BoxB-tracrRNA in close proximity to aid gRNA complex formation, which then binds to the base editor for genome editing. (b) Cytosine and adenine residues targeted by base editing are highlighted within the target HEK3 sequence. (c) Editing efficiency measured with P3 editing (left) and standard sgRNA (right). For each base editor and guide-RNA combination, editing efficiencies were measured with either LambdaN-MCP expressing plasmid (blue) or a filler plasmid expressing GFP (gray). The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.Figure 3—source data 1.Figure 3 and figure supplements.
+**Figure 3.:** (a) Schematics of P3 editing strategy adapted to base editing. The LambdaN-MCP fusion protein will bring crRNA-MS2 and BoxB-tracrRNA in close proximity to aid gRNA complex formation, which then binds to the base editor for genome editing. (b) Cytosine and adenine residues targeted by base editing are highlighted within the target HEK3 sequence. (c) Editing efficiency measured with P3 editing (left) and standard sgRNA (right). For each base editor and guide-RNA combination, editing efficiencies were measured with either LambdaN-MCP expressing plasmid (blue) or a filler plasmid expressing GFP (gray). The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates.
 
 For all three base editors tested, we observe that the addition of LambdaN-MCP increases the editing efficiency (Figure 3c, left), although the change in the editing was greater for CBE4max (3.5-fold increase) and ABE8 (2.1-fold increase) than CBE2 (1.4-fold increase). The observed differences are possibly related to different endonuclease activity, as CBE2 uses deactivated Cas9 instead of Cas9 nickase as in the case of the prime editor and other base editors. Of note, the observed genome editing efficiencies of the P3 strategy for all three base editors (Figure 3c, left) are comparable to our base editing efficiencies measured with standard sgRNA (Figure 3c, right), despite the fact that the P3 strategy uses a three-component system (using crRNA-MS2, BoxB-petracrRNA, and LambdaN-MCP) instead of one sgRNA.
 
-## Combining ADAR-based editing with P3 editing to control genome editing with RNA expression
+### Combining ADAR-based editing with P3 editing to control genome editing with RNA expression
 
 In both prime editing and base editing demonstrations of the P3 strategy, we used the presence of LambdaN-MCP fusion protein to control the genome editing efficiency, forming a synthetic circuit with the input of protein expression and the output of genome editing. Recently, a similar synthetic circuit was developed using ADAR-based RNA editing, where the input of specific target RNA expression can be used to control an output of cargo protein expression. In this system (termed CellREADR [Qian et al., 2022], RADAR [Kaseniit et al., 2023], or RADARS [Jiang et al., 2023]), an ADAR-guide-RNA is specifically designed to bind the target RNA molecule and promote an RNA base editing event that converts an internal stop codon into a sense codon within the ADAR-guide-RNA, thus initiating cargo protein expression.
 
@@ -97,7 +117,7 @@ To combine the ADAR-based RNA sensor and P3 editing concepts, we programmed the 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/98110/elife-98110-fig4-v1.jpg)
 
-**Figure 4.:** (a) Schematics of combining ADAR-based RNA sensors with P3 editing. ADAR-guide-RNA senses target RNA by forming extended RNA duplex based on reverse-complementary sequence, which is a substrate for RNA editing by ADAR. RNA editing converts the in-frame stop codon into a sense codon, which then starts the expression of cargo protein. In combination with P3 editing, the cargo protein will be LambdaN-PCP, which will then help prime editing complex formation by bringing crRNA-PP7 and BoxB-petracrRNA together. (b) The six pairs of crRNA/petracrRNA with three different RNA aptamers (BoxB, MS2, and PP7) were tested for P3 editing. Pairing of crRNA-PP7 and BoxB-petracrRNA is similarly compatible with P3 editing as pairing of crRNA-MS2 and BoxB-petracrRNA, and is preferable in this context as it avoids using the MS2 RNA element which is used in RADARS strategy for the ADAR-based RNA sensing. The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates. (c) Composition of transfection condition with six expression plasmid. The percentage is based on the mass amount of plasmid added to the transfection mix. (d) The normalized editing efficiency was measured to characterize the efficiency and specificity of ADAR-based RNA sensing and P3 editing strategy. p-Values were obtained using a two-tailed Student’s t-test with Bonferroni correction. The center and error bars are mean and standard deviations, respectively, from n=3 transfection replicates.Figure 4—source data 1.Figure 4 and figure supplements.
+**Figure 4.:** (a) Schematics of combining ADAR-based RNA sensors with P3 editing. ADAR-guide-RNA senses target RNA by forming extended RNA duplex based on reverse-complementary sequence, which is a substrate for RNA editing by ADAR. RNA editing converts the in-frame stop codon into a sense codon, which then starts the expression of cargo protein. In combination with P3 editing, the cargo protein will be LambdaN-PCP, which will then help prime editing complex formation by bringing crRNA-PP7 and BoxB-petracrRNA together. (b) The six pairs of crRNA/petracrRNA with three different RNA aptamers (BoxB, MS2, and PP7) were tested for P3 editing. Pairing of crRNA-PP7 and BoxB-petracrRNA is similarly compatible with P3 editing as pairing of crRNA-MS2 and BoxB-petracrRNA, and is preferable in this context as it avoids using the MS2 RNA element which is used in RADARS strategy for the ADAR-based RNA sensing. The center and error bars are mean and standard deviations, respectively, from n = 3 transfection replicates. (c) Composition of transfection condition with six expression plasmid. The percentage is based on the mass amount of plasmid added to the transfection mix. (d) The normalized editing efficiency was measured to characterize the efficiency and specificity of ADAR-based RNA sensing and P3 editing strategy. p-Values were obtained using a two-tailed Student’s t-test with Bonferroni correction. The center and error bars are mean and standard deviations, respectively, from n=3 transfection replicates.
 
 In combining RADARS with P3 editing, we transfected HEK293T cells with a mix of six plasmids that express: MCP-ddADAR, ADAR-guide-RNA-LambdaN-PCP (also referred to as ogRNA in RADARS), IL6 RNA for target RNA (specifically chosen in RADARS system because it is not natively expressed in HEK293T cells) crRNA-PP7, BoxB-petracrRNA, and PE4max (Figure 4c). We observed the normalized editing efficiency of 11.6 ± 0.7%, which was significantly higher than a condition where the IL-6 RNA-expressing plasmid has been replaced with a filler GFP-expression plasmid (8.2 ± 0.3%; p=0.005, where p-values were obtained using the two-tailed Student’s t-test with Bonferroni correction) (Figure 4d).
 
@@ -115,22 +135,144 @@ In our view, there are four outstanding challenges for P3 editing to be broadly 
 
 ## Materials and methods
 
-## Plasmid cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>NEB C3040H Competent cells</td>
+      <td>NEB</td>
+      <td>C3040H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>PE4max</td>
+      <td>Addgene</td>
+      <td>Addgene_174828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pU6-pegRNA-GG-acceptor</td>
+      <td>Addgene</td>
+      <td>Addgene_132777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pU6-crRNA-MS2</td>
+      <td>Addgene</td>
+      <td>Addgene_207624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pU6-BoxB-petracrRNA</td>
+      <td>Addgene</td>
+      <td>Addgene_207625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pCMV-LambdaN-MCP</td>
+      <td>Addgene</td>
+      <td>Addgene_207626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pCMV-LambdaN-NbALFA</td>
+      <td>Addgene</td>
+      <td>Addgene_207627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pCMV-ALFA-MCP</td>
+      <td>Addgene</td>
+      <td>Addgene_207628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (cloning)</td>
+      <td>T4 DNA ligase</td>
+      <td>NEB</td>
+      <td>M0202S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (cloning)</td>
+      <td>BsaI-HF-v2</td>
+      <td>NEB</td>
+      <td>R3733S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (cloning)</td>
+      <td>NEBuilder HiFi DNA assembly master mix</td>
+      <td>NEB</td>
+      <td>E2621S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (plasmid purification)</td>
+      <td>Qiagen miniprep</td>
+      <td>Qiagen</td>
+      <td>27106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (transfection reagent)</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher</td>
+      <td>L3000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (PCR)</td>
+      <td>KAPA2G Robust 2 x Hotstart mix</td>
+      <td>Roche</td>
+      <td>KK5702</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid cloning
 
 All crRNA and petracrRNA constructs were cloned using ligation after restriction (T4 DNA Ligase, New England Biolabs), following the protocol outlined in Anzalone et al., 2019. Single-stranded DNAs (IDT) were annealed to have 4 bp overhangs in both ends of double-stranded DNAs, which is a substrate for T4 DNA ligase. The plasmid backbone (pU6-pegRNA-GG-acceptor, Addgene_132777) was digested using BsaI-HFv2, and mixed with annealed double-stranded DNA constructs with 4 bp overhangs. At the end of all crRNA and petracrRNA constructs (Supplementary file 1), we added the evoPreQ1 sequence and poly-T terminator sequence. A small amount (1–2 µL) of T4 ligation reaction mix was added to NEB Stbl cell (C3040) for transformation and grown at 37°C for the plasmid DNA preparation (QIAGEN miniprep). The resulting plasmids were sequence-verified using Sanger sequencing (GENEWIZ).
 
 All protein expression constructs (Supplementary file 1) were cloned using Gibson Assembly (NEB, where double-stranded DNA fragments are either ordered from IDT as gBlocks or PCR-amplified from existing constructs with at least 25 bp overlap in sequence). A small amount (1–2 µL) of Gibson Assembly reaction mix was added to NEB Stbl cell (C3040) for transformation and grown at 30°C or 37°C for the plasmid DNA preparation (QIAGEN miniprep). The resulting plasmids were sequence-verified using Sanger sequencing (GENEWIZ).
 
-## Tissue culture, transfection, lentiviral transduction, and transgene integration
+### Tissue culture, transfection, lentiviral transduction, and transgene integration
 
 The HEK293T cell line was purchased from ATCC, and maintained by following the recommended protocol from the vendor. HEK293T cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) with high glucose (GIBCO), supplemented with 10% fetal bovine serum (Rocky Mountain Biologicals) and 1% penicillin-streptomycin (GIBCO). Cells were grown with 5% CO2 at 37°C. The HEK293T cell lines were authenticated and tested for mycoplasma using ATCC Cell Line Authentication and Mycoplasma PCR tests.
 
 For transient transfection, HEK293T cells were cultured to 70–90% confluency in a 24-well plate. For prime editing with crRNA/petracrRNA and without protein components, 375 ng of PE4max enzyme plasmid (Addgene_174828), 62.5 ng of crRNA plasmid, and 62.5 ng of petracrRNA plasmid were mixed, and prepared with a transfection reagent (Lipofectamine 3000) following the recommended protocol from the vendor. For transfection with protein components, 250 ng of PE4max enzyme plasmid, 125 ng of protein (MCP-LambdaN, GFP filler plasmid, or 62.5 ng each of two MCP/LambdaN-tagged protein domains), 62.5 ng of crRNA plasmid, and 62.5 ng of petracrRNA plasmid were used in transfection. The transfection mix composition for the experiment with the ADAR-based RNA sensor is described in Figure 4c. Cells were cultured for 3–4 days after the initial transfection, and their genomic DNA was harvested following cell lysis and protease protocol from Anzalone et al., 2019.
 
-## Genomic DNA collection and sequencing library preparation
+### Genomic DNA collection and sequencing library preparation
 
 The targeted region from collected genomic DNA was amplified using two-step PCR and sequenced using the Illumina sequencing platform (NextSeq). The first PCR (KAPA Robust polymerase) included 1.5 µL of cell lysate, and 0.04–0.4 µM of forward and reverse primers (Supplementary file 1) in a final reaction volume of 25 µL. We programmed the first PCR to be: (1) 3 min at 95°C, (2) 15 s at 95°C, (3) 10 s at 65°C, (4) 90 s at 72°C, (5) 25–28 cycles of repeating step 2 through 4, and (6) 1 min at 72°C. Primers included sequencing adapters to their 3′-ends, appending them to both termini of PCR products that amplified genomic DNA. After the first PCR step, products were added to the second PCR that appended dual sample indexes and flow cell adapters. The second PCR program was identical to the first PCR program except we ran it for only 5–10 cycles. Products were purified using AMPure and assessed on the TapeStation (Agilent) before being denatured for the sequencing run.
 
-## Genomic DNA amplicon sequencing data processing and analysis
+### Genomic DNA amplicon sequencing data processing and analysis
 
 Sequencing reads from Illumina NextSeq platforms are first demultiplexed using BCL2fastq software (Illumina). Sequencing libraries were single-end sequenced to cover the DNA Tape from one direction. Editing efficiencies were calculated using pattern-matching software such as Regular Expression (package REGEX) in Python, counting correct amplicon reads with or without intended edits. For prime editing, CTT insertions to the HEK3 locus (Anzalone et al., 2019) were counted, and editing efficiencies were calculated by: reads with CTT insertions/all reads matching the HEK3 locus. In quantifying base editing efficiencies, we first used CRISPResso to identify the top 10 base editing outcomes of the HEK3 locus, and used these editing patterns to calculate editing efficiency as follows: all reads matching the top 10 base editing outcomes/all reads matching HEK3 locus.

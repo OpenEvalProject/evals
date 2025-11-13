@@ -91,91 +91,167 @@ Here, we charted developmental changes in structural connectome organization, ba
 
 These findings were based on the Neuroscience in Psychiatry Network (NSPN) cohort (Kiddle et al., 2018; Whitaker et al., 2016). In brief, we studied 208 healthy individuals enrolled in an accelerated longitudinal study, with approximately equal numbers of males and females in each of five age-related strata that collectively spanned the time period from 14 to 25 years coinciding with transition from adolescence to young adulthood. Participants (48% female) had a mean age of 18.82 years (range = 14–25 years) at baseline and 19.95 years (15–26 years) at follow-up. The average interval between baseline and follow-up scan was 11.28 months (range = 6–12 months). See Materials and methods for details on participant selection, image processing, and analysis.
 
-## Macroscale structural connectome manifold
+### Macroscale structural connectome manifold
 
 For every participant, we built cortex-wide structural connectome manifolds formed by the eigenvectors displaying spatial gradients in structural connectome organization using non-linear dimensionality reduction techniques (Vos de Wael et al., 2020a; Vos de Wael et al., 2020b, https://github.com/MICA-MNI/BrainSpace). Individual manifolds were aligned to a template manifold estimated from a hold-out dataset (see Materials and methods) (Langs et al., 2015; Vos de Wael et al., 2020a). Three eigenvectors (E1, E2, and E3) explained approximately 50% of information in the template affinity matrix (i.e., 20.7/15.8/13.5% for E1/E2/E3, respectively), with each eigenvector showing a different axis of spatial variation across the cortical mantle (Figure 1A). Eigenvectors depicted a continuous differentiation between medial and lateral cortices (E1), between inferior and superior cortices (E2), and between anterior and posterior areas (E3). For each participant and time point, we calculated manifold eccentricity, which depicts how far each node is located from the center of the template manifold (see Materials and methods). It thus quantifies the changes in eigenvectors between the time points in terms of expansion and contraction instead of comparing multidimensional connectome manifolds (Bethlehem et al., 2020). The manifold eccentricity showed high values in frontal and somatomotor regions, while temporoparietal, visual, and limbic regions showed low values (Figure 1B).
 
-## Changes in manifold eccentricity across age
+![Figure 1.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-v2.jpg)
+
+**Figure 1.:** (A) Systematic fiber tracking based on diffusion magnetic resonance imaging generated a cortex-wide structural connectome, which was subjected to diffusion map embedding. As shown in the scree plot, three eigenvectors (E1, E2, E3) accounted for approximately 50% information of connectome data, and each depicted a different gradual transition across the cortical mantle. (B) Manifold eccentricity measured by Euclidean distance between the template center and each data point. Arrows depict average positional change in connectivity space from baseline to follow-up. The color of each arrow represents each brain region mapped on the surface on the bottom. (C) The histogram represents age distribution of all subjects at baseline and follow-up. The colors on brain surfaces indicate t-statistics of regions showing significant longitudinal changes in manifold eccentricity across age, following multiple comparisons correction with a false discovery rate < 0.05. Datapoint colors in the scatter plot represent t-statistics. Identified regions are represented with arrows that originate from baseline to follow-up. (D) Stratification of age-related changes in manifold eccentricity according to prior models of cortical hierarchy (Mesulam, 1998) and functional magnetic resonance imaging communities (Yeo et al., 2011).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Six clusters defined within the identified regions that showed significant age-related changes in manifold eccentricity (see Figure 1C). (B) Associations between within-subject changes in manifold eccentricity and those of each connectome topology measure. Brain surfaces on the right side represent changes in each measure between baseline and follow-up. Significances were corrected for multiple comparisons using false discovery rate adjustment.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Pipeline for constructing a connectivity consistency matrix. We constructed individual subject-wise consistency matrices by considering whether two different nodes were involved in the same module. (B) The group-wise consistency matrix was constructed by averaging subject-wise consistency matrices. The k-means clustering with silhouette coefficient was used to define modules. Seven modules on the brain surface are reported on the right side.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Age-related changes in manifold eccentricity, degree centrality, connectivity distance, within-module degree, and participation coefficient. y: years.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–D) Main findings were replicated using a different parcellation scale. For details, see Figure 1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) The t-statistics of identified regions that showed significant age-related changes in manifold eccentricity. (B) Interaction effects of the relationship between age and manifold eccentricity for sites and (C) biological sexes. WIBC: Wolfson Brain Imaging Centre; CBU: MRC Cognition and Brain Sciences Unit; UCL: University College London.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The t-statistics of regions showing significant longitudinal changes in manifold eccentricity across age are reported on cortical surfaces. Effects are stratified with respect to levels of cortical hierarchy (Mesulam, 1998) and intrinsic functional communities (Yeo et al., 2011).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Scree plot showing eigenvalue decay, and the first three eigenvectors (E1, E2, E3) are shown on cortical surfaces. Manifold eccentricity is shown in the bottom panel. (B) Surface plots displaying t-statistics of regions showing significant longitudinal changes in manifold eccentricity across age. Effects are stratified with respect to levels of cortical hierarchy (Mesulam, 1998) and intrinsic functional communities (Yeo et al., 2011).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** Cortical surface map showing t-statistics of significant age-related longitudinal changes in betweenness, degree, and eigenvector centrality.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Generated eigenvectors (E1–E9) and (B) correspinding manifold eccentricity. (C) The t-statistics of regions showing significant longitudinal changes in manifold eccentricity across age are reported on the cortical surface. Effects are stratified along levels of cortical hierarchy (Mesulam, 1998) and intrinsic functional communities (Yeo et al., 2011).
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp10-v2.jpg)
+
+**Figure 1—figure supplement 10.:** Spatial maps of three eigenvectors derived from group representative structural connectivity matrices based on different consistency thresholds are reported.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp11-v2.jpg)
+
+**Figure 1—figure supplement 11.:** (A) A scree plot shows eigenvalues of each component, and the first three eigenvectors (E1, E2, E3) are shown on brain surfaces. (B) Manifold eccentricity. (C) The t-statistics of regions showing significant longitudinal changes in manifold eccentricity and (D) subcortical-weighted manifolds across age. The effects of manifold eccentricity are stratified along cortical hierarchy (Mesulam, 1998) and functional community (Yeo et al., 2011). For details, see Figure 1.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp12-v2.jpg)
+
+**Figure 1—figure supplement 12.:** Findings were stratified relative to seven intrinsic functional communities (Yeo et al., 2011). The matrix displays t-statistics of connections showing longitudinal changes in edge weights, and significant (false discovery rate [FDR] < 0.05) results are marked with asterisks.
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp13-v2.jpg)
+
+**Figure 1—figure supplement 13.:** (A) Cortex t-statistics of age-related longitudinal effect. (B) Interaction effect between manifold eccentricity and Tanner scale. Colors of dots indicate Tanner stage of individuals, and lines indicate linear correlations between age and manifold eccentricity for individuals with the same Tanner stage.
+
+![Figure 1—figure supplement 14.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp14-v2.jpg)
+
+**Figure 1—figure supplement 14.:** (A–C) Structural connectome manifolds and association to age using different template cohort. Three representative cases are reported. For details, see Figure 1.
+
+![Figure 1—figure supplement 15.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig1-figsupp15-v2.jpg)
+
+**Figure 1—figure supplement 15.:** Each dot in the scatter plot represents a single brain region, and the colors matched with regions on the brain surface. The triangle in the middle of the scatter plot is the manifold origin, and all brain regions (i.e., dots) are connected to the origin with lines. Manifold eccentricity of a given region is the length (i.e., Euclidean distance) of this line.
+
+### Changes in manifold eccentricity across age
 
 Leveraging linear mixed effect models that additionally controlled for effects of sex, site, head motion, and subject-specific random intercepts (Worsley et al., 2009), we assessed changes in manifold eccentricity across age (see Materials and methods). Manifold eccentricity expanded as age increased, especially in bilateral prefrontal and temporal areas, as well as left early visual and right lateral parietal cortices (false discovery rate [FDR] < 0.05; Benjamini and Hochberg, 1995; Figure 1C). Stratifying these effects along four cortical hierarchical levels, defined using an established taxonomy based on patterns of laminar differentiation and tract-tracing data in non-human primates (Mesulam, 1998), we identified peak effects in heteromodal association and paralimbic areas (Figure 1D). Convergent findings were observed when analyzing the effects with respect to intrinsic functional communities (Yeo et al., 2011), showing highest effects in default mode and limbic areas followed by visual and frontoparietal cortices. No significant contraction of manifold eccentricity was observed. In addition, we could not find any significant effects when we fitted the model with a quadratic form of age (i.e., age2), indicating the manifold eccentricity linearly increases across age.
 
 To conceptualize the findings derived from manifold eccentricity with respect to conventional network topologies, we correlated manifold eccentricity changes with several graph-theoretical measures of structural connectome (Figure 1—figure supplement 1; Rubinov and Sporns, 2010). We first defined six spatially contiguous clusters within the regions that showed significant age-related changes in manifold eccentricity (see Figure 1C) and correlated within-subject changes in manifold eccentricity with developmental changes in degree centrality, connectivity distance, and modular parameters (i.e., within-module degree and participation coefficient based on modules defined via Louvain’s community detection algorithm [Blondel et al., 2008]; see Materials and methods; Figure 1—figure supplement 2). We found significant positive associations for degree centrality and within-module degree, suggesting that connectome manifold expansion reflects a concurrent increase of overall connectivity, particularly within modules. Stratifying changes in manifold eccentricity, as well as connectome topology measures, according to the discretized age bins confirmed these age-related trends (Figure 1—figure supplement 3). Indeed, except for participation coefficient, values in general increased from childhood to young adulthood.
 
-## Effects of cortical morphology and microstructure
+### Effects of cortical morphology and microstructure
 
 Previous studies demonstrated significant changes in cortical morphology and microstructure during adolescence, showing co-occurring reductions in cortical thickness and MT skewness, the latter being an index of depth-dependent intracortical myelin changes in multiple lobes (Gogtay et al., 2004; Khundrakpam et al., 2017; Paquola et al., 2019a; Shaw et al., 2006). We replicated these findings by showing cortical thinning in almost all brain regions across the studied age window as well as reductions in depth-dependent MT skewness, suggestive of supragranular enrichment of myelin (Figure 2A). To evaluate whether the age-related changes in manifold eccentricity were robust above and beyond these regional changes in cortical thickness and MT, we implemented linear mixed effect models including cortical thickness and MT as covariates in the analysis of developmental change in manifold eccentricity (Figure 2B). While we observed virtually identical spatial patterns of manifold eccentricity changes in models that controlled for thickness, MT skewness, and both, age-related effects in regions of significant manifold eccentricity findings (see Figure 1C) were reduced in models that additionally controlled for these covariates (average reduction of t-value in models controlling for thickness/MT skewness/both = 42/18/68%).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig2-v2.jpg)
 
-**Figure 2.:** (A) The t-statistics of identified regions that showed significant age-related changes in cortical thickness (upper row) and magnetization transfer ratio MT (bottom row), and stratification of t-statistics according to cortical hierarchy (Mesulam, 1998) and functional community (Yeo et al., 2011). (B) Age-related changes in manifold eccentricity after controlling for cortical thickness and MT.Figure 2—source data 1.
+**Figure 2.:** (A) The t-statistics of identified regions that showed significant age-related changes in cortical thickness (upper row) and magnetization transfer ratio MT (bottom row), and stratification of t-statistics according to cortical hierarchy (Mesulam, 1998) and functional community (Yeo et al., 2011). (B) Age-related changes in manifold eccentricity after controlling for cortical thickness and MT.
 
-## Age-related changes in subcortico-cortical connectivity
+### Age-related changes in subcortico-cortical connectivity
 
 Besides visualizing these changes in cortico-cortical connectivity, we also capitalized on the manifold representation to assess adolescent changes in the connectivity of subcortical regions, to obtain a more holistic insight into whole-brain connectome reconfigurations during this time period, and to examine whether subcortical connectivity patterns undergo parallel developmental trajectories (Hwang et al., 2017; Shine et al., 2019). Specifically, we assessed changes in subcortical-weighted manifolds across age, defined by projecting the streamline strength of subcortical regions to cortical targets to the manifold space (see Materials and methods). Such an analysis situates changes in subcortico-cortical pathways in the macroscale context of cortico-cortical connectivity identified in the previous analyses. After multiple comparisons correction, the caudate and thalamus showed significant age-related effects on subcortical-weighted manifolds (FDR < 0.05; Figure 3), and marginal effects were observed in the putamen, pallidum, and hippocampus (FDR < 0.1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig3-v2.jpg)
 
-**Figure 3.:** The t-statistics of age-related changes in subcortical-weighted manifolds. The effects of each subcortical region are reported on the radar plot. FDR: false discovery rate.Figure 3—source data 1.
+**Figure 3.:** The t-statistics of age-related changes in subcortical-weighted manifolds. The effects of each subcortical region are reported on the radar plot. FDR: false discovery rate.
 
-## Transcriptomic association analysis
+### Transcriptomic association analysis
 
 Connectome organization, in general, and macroscale gradients, in particular, have been argued to reflect genetic expression profiles, underscoring the close link between the physical layout of the brain and innate transcriptional patterning (Buckner and Krienen, 2013; Fornito et al., 2019). Here, we carried out a transcriptomic association analysis and developmental enrichment analyses to contextualize the age-related manifold eccentricity changes with respect to patterns of post-mortem gene expression from a sample of independent adults (Figure 4A). Specifically, leveraging mixed effect models, we associated the spatial patterns of manifold change across age in the NSPN sample (controlling for covariation of cortical thickness and MT) with cortical maps of post-mortem gene expression data from the Allen Institute for Brain Sciences (Arnatkeviciute et al., 2019; Gorgolewski et al., 2015; Gorgolewski et al., 2014; Hawrylycz et al., 2012; Markello et al., 2020). Among the list of most strongly associated genes (FDR < 0.05), we selected only genes that were consistently expressed across different donors (r > 0.5) (Arnatkeviciute et al., 2019; Hawrylycz et al., 2012; Markello et al., 2020; Supplementary file 1). We performed developmental gene set enrichment analysis using the cell-type-specific expression analysis (CSEA) tool, which compares the selected gene list with developmental enrichment profiles (see Materials and methods) (Dougherty et al., 2010; Xu et al., 2014). This analysis highlights developmental time windows across macroscopic brain regions in which genes are strongly expressed. We found marked expression of the genes enriched from childhood onward in the cortex, thalamus, and cerebellum (FDR < 0.001; Figure 4B). Although signal was reduced, genes were also enriched for expression in the striatum at the transition from childhood to adolescence (FDR < 0.05). On the other hand, identified genes were not found to be expressed in the hippocampus and amygdala.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig4-v2.jpg)
 
-**Figure 4.:** (A) Gene decoding process by associating t-statistics from the linear mixed effect model with post-mortem gene expression maps. (B) We identified genes that were spatially correlated with the input t-statistic map (false discovery rate [FDR] < 0.05) and selected only those that were furthermore consistently expressed across different donors (r > 0.5). These genes were input to a developmental enrichment analysis, showing strong associations with cortex, thalamus, striatum, and cerebellum during the childhood-to-adulthood time window. The degree of gene expression for developmental windows is reported on the bottom. The curve represents log transformed FDR-corrected p-values, averaged across the brain regions for each of the time windows reported on the bottom. ***FDR < 0.001, ** FDR < 0.01, *FDR < 0.05.Figure 4—source data 1.
+**Figure 4.:** (A) Gene decoding process by associating t-statistics from the linear mixed effect model with post-mortem gene expression maps. (B) We identified genes that were spatially correlated with the input t-statistic map (false discovery rate [FDR] < 0.05) and selected only those that were furthermore consistently expressed across different donors (r > 0.5). These genes were input to a developmental enrichment analysis, showing strong associations with cortex, thalamus, striatum, and cerebellum during the childhood-to-adulthood time window. The degree of gene expression for developmental windows is reported on the bottom. The curve represents log transformed FDR-corrected p-values, averaged across the brain regions for each of the time windows reported on the bottom. ***FDR < 0.001, ** FDR < 0.01, *FDR < 0.05.
 
-## Association between connectome manifold and cognitive function
+### Association between connectome manifold and cognitive function
 
 Finally, to establish associations between connectome reconfigurations and cognitive functioning, we utilized supervised machine learning to predict full IQ at follow-up using manifold eccentricity features. Independent variables were combinations of cortical and subcortical manifold features at baseline and their age-related trajectory data. We used elastic net regularization with nested ten-fold cross-validation (Cawley and Talbot, 2010; Parvandeh et al., 2020; Tenenbaum et al., 2000; Varma and Simon, 2006; Zou and Hastie, 2005) (see Materials and methods), and repeated the prediction 100 times with different training and test dataset compositions to mitigate subject selection bias. Across cross-validation and iterations, 6.24 ± 5.74 (mean ± SD) features were selected to predict IQ using manifold eccentricity of cortical regions at baseline, 6.20 ± 5.14 cortical features at baseline and maturational change, 5.45 ± 5.99 cortical and subcortical features at baseline, and 5.16 ± 5.43 at baseline and maturational change, suggesting that adding more independent variables may not per se lead to improvement in prediction accuracy. The manifold eccentricity of cortical regions at baseline significantly predicted future IQ score (mean ± SD r = 0.14 ± 0.04; mean absolute error [MAE] = 8.93 ± 0.16, p=0.09). Prediction performance was slightly improved when we combined the manifold eccentricity both at baseline and differences between follow-up and baseline (r = 0.18 ± 0.04; MAE = 9.10 ± 0.19, p=0.04) (Figure 5A). Notably, prediction accuracy was improved if we additionally considered subcortical manifold features (baseline: r = 0.17 ± 0.03; MAE = 8.74 ± 0.11, p=0.04; baseline and maturational change: r = 0.21 ± 0.02; MAE = 8.86 ± 0.14, p=0.01) (Figure 5B). The regions showing strongest predictive validity for IQ were prefrontal, parietal, and temporal cortices, as well as the caudate and thalamus. The probability map of the selected brain regions (bottom right of Figure 5B) was further decoded using Neurosynth (Yarkoni et al., 2011), revealing strong associations with higher-order cognitive and social terms (Figure 5—figure supplement 1). We compared the prediction performance of our model with a baseline model, where IQ of the test set was simple average of training set (r = −0.15 ± 0.06, MAE = 8.98 ± 0.04, p=0.12; see Materials and methods). We found that our model outperformed this baseline model (Meng’s z-test p < 0.001) (Meng et al., 1992). We also predicted the change of IQ between the baseline and follow-up, instead of IQ at follow-up, using the imaging features. However, we could not find significant results.
 
-## Sensitivity analysis
+![Figure 5.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig5-v2.jpg)
 
-## Spatial scale
+**Figure 5.:** (A) Probability of selected brain regions across ten-fold cross-validation and 100 repetitions for predicting future IQ using only baseline manifold eccentricity (left), and both baseline and maturational change in the feature (right). Correlations between actual and predicted IQ are reported. Black lines indicate mean correlation, and gray lines represent 95% confidence interval for 100 iterations with different training/test dataset. (B) The prediction performance when both cortical and subcortical features were considered. MAE: mean absolute error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Probability of selected cortical and subcortical regions for predicting future IQ using both baseline and maturational changes (see Figure 5). (B) A word cloud derived by cognitive decoding using Neurosynth (Yarkoni et al., 2011).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64694/elife-64694-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The prediction performance using cortical features. Probability of selected brain regions across ten-fold cross-validation and 100 repetitions for predicting future IQ are represented on brain surfaces, and correlations between actual and predicted IQ are reported with scatter plots. (B) The prediction performance when both cortical and subcortical features were considered. For details, see Figure 5.
+
+### Sensitivity analysis
+
+#### Spatial scale
 
 Repeating the longitudinal modeling with a different spatial scale (i.e., 300 parcels), findings were highly consistent (Figure 1—figure supplement 4).
 
-## Site and sex effects
+#### Site and sex effects
 
 Furthermore, manifold eccentricity of the identified cortical regions and age consistently correlated positively across different sites and within both biological sexes, yielding non-significant interaction effects (Figure 1—figure supplement 5).
 
-## Different parameters for diffusion map embedding
+#### Different parameters for diffusion map embedding
 
 When we changed parameters of diffusion map embedding for generating connectome manifolds (see Materials and methods), t-statistic maps of age-related changes in manifold eccentricity were largely consistent (mean ± SD linear correlation r = 0.92 ± 0.10).
 
-## Gradient alignment fidelity
+#### Gradient alignment fidelity
 
 When calculating linear correlations between template and individual manifolds before and after alignment, we found significant increases after alignment (r = 0.92 ± 0.03/0.93 ± 0.03/0.94 ± 0.03) compared to before alignment (−0.02 ± 0.03/–0.001 ± 0.37/0.003 ± 0.12) for E1/E2/E3, respectively, supporting effectiveness of alignment. After excluding 10% of subjects with poor alignment (cutoff r = 0.83; the new set was correlated with the template manifold, r = 0.94 ± 0.01), we found consistent age-related changes in manifold eccentricity (Figure 1—figure supplement 6), with the t-statistic map showing strong correlation to the map derived in the whole sample (r = 0.97, p<0.001).
 
-## Connectome manifold generation using principal component analysis
+#### Connectome manifold generation using principal component analysis
 
 In a separate analysis, we generated eigenvectors using principal component analysis (Wold et al., 1987), instead of diffusion map embedding (Coifman and Lafon, 2006), and found consistent spatial maps (linear correlation = 0.998 ± 0.001 across E1/E2/E3; Figure 1—figure supplement 7A) and longitudinal findings (Figure 1—figure supplement 7B).
 
-## Longitudinal changes in graph-theoretical measures
+#### Longitudinal changes in graph-theoretical measures
 
 Repeating the longitudinal modeling using graph-theoretical centrality measures, we found significant age-related longitudinal changes in degree and eigenvector centrality, while betweenness centrality did not reveal significant effects, in similar regions to those that had significant age-related changes in manifold eccentricity (Figure 1—figure supplement 8). Correlating the effect size maps for manifold eccentricity and each graph measure, we found a significant yet variable spatial similarity of the effect maps (betweenness centrality: r = 0.18, spin-test p = 0.02; degree centrality: r = 0.57, p < 0.001; eigenvector centrality: r = 0.47, p < 0.001).
 
-## Manifold eccentricity based on all eigenvectors
+#### Manifold eccentricity based on all eigenvectors
 
 Repeating manifold eccentricity calculation and age modeling using all eigenvectors, instead of using only the first three, we observed relatively consistent results with our original findings (linear correlation of manifold eccentricity r = 0.54, p<0.001; t-statistic map r = 0.68, p<0.001), also pointing to manifold expansion in transmodal cortices (Figure 1—figure supplement 9).
 
-## Robustness of group representative structural connectome
+#### Robustness of group representative structural connectome
 
 We compared gradients derived from the group representative structural connectome, based on (i) distance-dependent thresholding (Betzel et al., 2019) and (ii) consistency thresholding (Wang et al., 2019; Figure 1—figure supplement 10). We found high similarity in spatial maps of the estimated manifolds (r = 0.89 ± 0.01 for E1; 0.93 ± 0.004 for E2; 0.85 ± 0.01 for E3 across six different thresholds), indicating robustness.
 
-## Connectome manifolds based on structural parcellation
+#### Connectome manifolds based on structural parcellation
 
 We repeated our analyses with a structural parcellation, defined using a sub-parcellation of folding based on the Desikan–Killiany atlas (Desikan et al., 2006; Vos de Wael et al., 2020a; Figure 1—figure supplement 11). Despite slight differences in the topography of manifold eccentricity in lateral prefrontal, temporal, and occipital cortices, we could replicate strong age-related effects in heteromodal association areas, together with effects in caudate and hippocampus (FDR < 0.05), and marginally in thalamus (FDR < 0.1).
 
-## Longitudinal modeling using edge weights
+#### Longitudinal modeling using edge weights
 
 Repeating the longitudinal modeling across age using connectome edge weights, we found significant increases in edge weights within frontoparietal and default mode networks, as well as in attention and sensory networks (FDR < 0.05; Figure 1—figure supplement 12), consistent with findings based on manifold eccentricity.
 
-## Manifold eccentricity and pubertal stages
+#### Manifold eccentricity and pubertal stages
 
 We repeated the longitudinal modeling within a subset of participants who completed the Tanner scale (n = 73) (Marshall and Tanner, 1970; Marshall and Tanner, 1969) and found relatively consistent albeit weaker age-related changes in manifold eccentricity as for the overall sample (Figure 1—figure supplement 13A). Notably, manifold eccentricity within the identified regions derived from overall sample and Tanner scale revealed a significant interaction effect (t = 2.36, p=0.01; Figure 1—figure supplement 13B), suggesting that participants in early pubertal stages show more marked changes in manifold eccentricity across age compared to those in later stages.
 
-## IQ prediction using nonlinear model
+#### IQ prediction using nonlinear model
 
 We predicted IQ at follow-up using a regression tree method (Breiman et al., 1984), instead of linear regression model, but we could not find improved prediction performance (Figure 5—figure supplement 2).
 
@@ -195,98 +271,108 @@ Adolescence is a time characterized by ongoing brain changes (Baum et al., 2020;
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We obtained imaging and phenotypic data from the NSPN 2400 cohort, which contains questionnaire data on 2402 individuals (with MRI data on a subset of ~300) from adolescence to young adulthood in a longitudinal setting (Kiddle et al., 2018; Whitaker et al., 2016). The NSPN study was ethically approved by the National Research Ethics Service and conducted in accordance with NHS research governance standards. All participants provided informed consent in writing, with additional parental consent for participants aged less than 16 years at enrollment. Included participants completed quality-controlled (see Data preprocessing section) multimodal MRI scans consisting of T1-weighted, MT, and dMRI for at least two time points. Our final sample consisted of a total of 208 participants (48% female; mean [range] age = 18.82 [14–25] years at baseline and 19.95 [15–26] at follow-up; inter-scan interval of 11.28 [6–12] months), collected from three different UK sites: Wolfson Brain Imaging Centre and MRC Cognition and Brain Sciences Unit in Cambridge; and University College London. We divided the participants into template and non-template cohorts with matched age, sex, and site ratio. The template dataset (n = 30; 50% female; mean [range] age = 18.69 [15–24] years at baseline and 19.84 ± 2.66 [16–25] at follow-up) was used for constructing the group mean template manifold and the non-template dataset (n = 178; 47% female; mean [range] age = 18.84 [14–25] years at baseline and 19.97 [15–26] at follow-up) was used for conducting main analyses. Of note, changing the template dataset composition did not markedly affect main findings (Figure 1—figure supplement 14).
 
-## MRI acquisition
+### MRI acquisition
 
 Imaging data were obtained using Siemens Magnetom TIM Trio 3T scanners. T1-weighted and MT sequences were acquired using a quantitative multiparameter mapping sequence (repetition time [TR]/flip angle = 18.7 ms/20° for T1-weighted and 23.7 ms/6° for MT; six equidistance echo times [TE] = 2.2–14.7 ms; voxel size = 1 mm3; 176 slices; field of view [FOV] = 256 × 240 mm; matrix size = 256 × 240 × 176) (Weiskopf et al., 2013). The dMRI data were acquired using a spin-echo echo-planar imaging sequence (TR = 8700 ms; TE = 90 ms; flip angle = 90°; voxel size = 2 mm3; 70 slices; FOV = 192 × 192 mm2; matrix size = 96 × 96 × 70; b-value = 1000 s/mm2; 63 diffusion directions; and 6 b0 images).
 
-## Data preprocessing
+### Data preprocessing
 
 T1-weighted data were processed using the fusion of neuroimaging preprocessing (FuNP) pipeline integrating AFNI, FSL, FreeSurfer, ANTs, and Workbench (Avants et al., 2011; Cox, 1996; Fischl, 2012; Glasser et al., 2013; Jenkinson et al., 2012; Park et al., 2019), which is similar to the minimal preprocessing pipeline for the Human Connectome Project (Glasser et al., 2013). Gradient nonlinearity and b0 distortion correction, non-brain tissue removal, and intensity normalization were performed. The white matter and pial surfaces were generated by following the boundaries between different tissues (Dale et al., 1999), and they were averaged to generate the midthickness contour, which was used to generate the inflated surface. The spherical surface was registered to the Conte69 template with 164k vertices (Van Essen et al., 2012) and downsampled to a 32k vertex mesh. Quality control involved visual inspection of surface reconstruction of T1-weighted data, and cases with faulty cortical segmentation were excluded. Surface-based co-registration between T1-weighted and MT weighted scans was performed. We generated 14 equivolumetric cortical surfaces within the cortex and sampled MT intensity along these surfaces (Paquola et al., 2019a). The vertex-wise MT profiles for each surface depth were averaged based on the Schaefer atlas with 200 parcels (Schaefer et al., 2018). The dMRI data were processed using MRtrix3 (Tournier et al., 2019), including correction for susceptibility distortions, head motion, and eddy currents. We visually inspected the quality of co-registration between the adolescence data and adult-driven surface template as well as parcellation atlas, and all data showed reasonable registration results.
 
-## Structural connectome manifold identification
+### Structural connectome manifold identification
 
 Structural connectomes were generated from preprocessed dMRI data (Tournier et al., 2019). Anatomically constrained tractography was performed using different tissue types derived from the T1-weighted image, including cortical and subcortical gray matter, white matter, and cerebrospinal fluid (Smith et al., 2012). Multi-shell and multi-tissue response functions were estimated (Christiaens et al., 2015), and constrained spherical-deconvolution and intensity normalization were performed (Jeurissen et al., 2014). The tractogram was generated with 40 million streamlines, with a maximum tract length of 250 and a fractional anisotropy cutoff of 0.06. Subsequently, spherical-deconvolution informed filtering of tractograms (SIFT2) was applied to reconstruct whole-brain streamlines weighted by the cross-section multipliers, which considers the fiber bundle’s total intra-axonal space across its full cross-sectional extent (Smith et al., 2015). The structural connectome was built by mapping the reconstructed cross-section streamlines onto the Schaefer 7-network based atlas with 200 parcels (Schaefer et al., 2018) then log-transformed to adjust for the scale (Fornito et al., 2016). We opted for this atlas as it (i) allows contextualization of our findings within macroscale intrinsic functional communities (Yeo et al., 2011), (ii) incorporates the option to assess results across different granularities, and (iii) aligns the current study with previous work from our group (Benkarim et al., 2020; Paquola et al., 2020; Park et al., 2021b; Park et al., 2021a; Rodríguez-Cruces et al., 2020) and others (Baum et al., 2020; Betzel et al., 2019; Osmanlıoğlu et al., 2019).
 
-Cortex-wide structural connectome manifolds were identified using BrainSpace (https://github.com/MICA-MNI/BrainSpace; Vos de Wael et al., 2020a). First, a template manifold was estimated using a group representative structural connectome of the template dataset. The group representative structural connectome was defined using a distance-dependent thresholding that preserves long-range connections (Betzel et al., 2019). An affinity matrix was constructed with a normalized angle kernel, and eigenvectors were estimated via diffusion map embedding (Figure 1A), a nonlinear dimensionality reduction technique (Coifman and Lafon, 2006) that projects connectome features into low-dimensional manifolds (Margulies et al., 2016). This technique is only controlled by a few parameters, computationally efficient, and relatively robust to noise compared to other nonlinear techniques (Errity and McKenna, 2007; Gallos et al., 2020; Hong et al., 2020; Tenenbaum et al., 2000), and has been extensively used in the previous gradient mapping literature (Hong et al., 2019; Hong et al., 2020; Huntenburg et al., 2017; Larivière et al., 2020a; Margulies et al., 2016; Müller et al., 2020; Paquola et al., 2019a; Park et al., 2021b; Valk et al., 2020; Vos de Wael et al., 2020a). It is controlled by two parameters α and t, where α controls the influence of the density of sampling points on the manifold (α = 0, maximal influence; α = 1, no influence) and t controls the scale of eigenvalues of the diffusion operator. We set α = 0.5 and t = 0 to retain the global relations between data points in the embedded space, following prior applications (Hong et al., 2019; Margulies et al., 2016; Paquola et al., 2019a; Paquola et al., 2019b; Vos de Wael et al., 2020a). Briefly, the eigenvectors estimated from the decomposition technique generate a connectivity coordinate system (Bijsterbosch et al., 2020; Haak et al., 2018; Huntenburg et al., 2018; Margulies et al., 2016; Mars et al., 2018) – the diffusion map, where Euclidean distances in the manifold correspond to diffusion times between the nodes of the network (Coifman and Lafon, 2006). In this manifold space, interconnected brain regions with similar connectivity patterns are closely located, and regions with weak similarity in connectivity patterns are located farther apart. After generating the template manifold, individual-level manifolds were estimated from the non-template dataset and aligned to the template manifold via Procrustes alignment (Langs et al., 2015; Vos de Wael et al., 2020a). To analyze change in the low-dimensional manifold space, we simplified the multivariate eigenvectors into a single scalar value that is., manifold eccentricity (Figure 1B). Manifold eccentricity was calculated as the Euclidean distance between the manifold origin and all data points (i.e., brain regions) in manifold space. The template center was defined as the centroid of the first three eigenvectors, which explained 50% variance. Specifically, manifold eccentricity was defined as follows:(1)CT=1N∑i=1NTE1i, ∑i=1NTE2i, ∑i=1NTE3i(2)ME=∑e=13IEe-CTe2
+Cortex-wide structural connectome manifolds were identified using BrainSpace (https://github.com/MICA-MNI/BrainSpace; Vos de Wael et al., 2020a). First, a template manifold was estimated using a group representative structural connectome of the template dataset. The group representative structural connectome was defined using a distance-dependent thresholding that preserves long-range connections (Betzel et al., 2019). An affinity matrix was constructed with a normalized angle kernel, and eigenvectors were estimated via diffusion map embedding (Figure 1A), a nonlinear dimensionality reduction technique (Coifman and Lafon, 2006) that projects connectome features into low-dimensional manifolds (Margulies et al., 2016). This technique is only controlled by a few parameters, computationally efficient, and relatively robust to noise compared to other nonlinear techniques (Errity and McKenna, 2007; Gallos et al., 2020; Hong et al., 2020; Tenenbaum et al., 2000), and has been extensively used in the previous gradient mapping literature (Hong et al., 2019; Hong et al., 2020; Huntenburg et al., 2017; Larivière et al., 2020a; Margulies et al., 2016; Müller et al., 2020; Paquola et al., 2019a; Park et al., 2021b; Valk et al., 2020; Vos de Wael et al., 2020a). It is controlled by two parameters α and t, where α controls the influence of the density of sampling points on the manifold (α = 0, maximal influence; α = 1, no influence) and t controls the scale of eigenvalues of the diffusion operator. We set α = 0.5 and t = 0 to retain the global relations between data points in the embedded space, following prior applications (Hong et al., 2019; Margulies et al., 2016; Paquola et al., 2019a; Paquola et al., 2019b; Vos de Wael et al., 2020a). Briefly, the eigenvectors estimated from the decomposition technique generate a connectivity coordinate system (Bijsterbosch et al., 2020; Haak et al., 2018; Huntenburg et al., 2018; Margulies et al., 2016; Mars et al., 2018) – the diffusion map, where Euclidean distances in the manifold correspond to diffusion times between the nodes of the network (Coifman and Lafon, 2006). In this manifold space, interconnected brain regions with similar connectivity patterns are closely located, and regions with weak similarity in connectivity patterns are located farther apart. After generating the template manifold, individual-level manifolds were estimated from the non-template dataset and aligned to the template manifold via Procrustes alignment (Langs et al., 2015; Vos de Wael et al., 2020a). To analyze change in the low-dimensional manifold space, we simplified the multivariate eigenvectors into a single scalar value that is., manifold eccentricity (Figure 1B). Manifold eccentricity was calculated as the Euclidean distance between the manifold origin and all data points (i.e., brain regions) in manifold space. The template center was defined as the centroid of the first three eigenvectors, which explained 50% variance. Specifically, manifold eccentricity was defined as follows:
 
-CT is the template manifold origin, N the number of brain regions, T∙ the template manifold, ME the manifold eccentricity, I∙ the individual manifold, and CTe the origin of e-th template manifold. Simply, as shown in Figure 1—figure supplement 15, each brain region (i.e., each dot in the scatter plot) is described as a vector from the manifold origin (i.e., triangular mark in the scatter plot), and manifold eccentricity is simply a length (i.e., Euclidean distance) of that vector. Shifts in connectivity patterns of a given region thus will lead to shifts in the vectors, which in turn changes the manifold eccentricity. Thus, manifold eccentricity quantifies global brain organization based in the connectivity space.
+$$
+C_{T}=\frac{1}{N}\sum_{i=1}^{N}TE1_{i},\sum_{i=1}^{N}TE2_{i},\sum_{i=1}^{N}TE3_{i}
+$$
 
-## Age-related changes in structural manifolds
+
+
+$$
+ME=\sqrt{\sum_{e=1}^{3}IE_{e}-C_{T}e^{2}}
+$$
+
+$C_{T}$ is the template manifold origin, $N$ the number of brain regions, $T∙$ the template manifold, $ME$ the manifold eccentricity, $I∙$ the individual manifold, and $C_{T}e$ the origin of e-th template manifold. Simply, as shown in Figure 1—figure supplement 15, each brain region (i.e., each dot in the scatter plot) is described as a vector from the manifold origin (i.e., triangular mark in the scatter plot), and manifold eccentricity is simply a length (i.e., Euclidean distance) of that vector. Shifts in connectivity patterns of a given region thus will lead to shifts in the vectors, which in turn changes the manifold eccentricity. Thus, manifold eccentricity quantifies global brain organization based in the connectivity space.
+
+### Age-related changes in structural manifolds
 
 We assessed changes in manifold eccentricity across age using a linear mixed effect model (Worsley et al., 2009), controlling for effects of sex, site, head motion, and subject-specific random intercept to improve model fit in accelerated longitudinal designs. The t-statistics of each brain region were computed, and we corrected for multiple comparisons by using an FDR threshold of q < 0.05 (Figure 1C; Benjamini and Hochberg, 1995). We stratified age-related effects based on a seminal model of neural organization and laminar differentiation that contains four cortical hierarchical levels (Mesulam, 1998), as well as seven intrinsic functional communities (Yeo et al., 2011; Figure 1D). To assess the effects with respect to age2, we repeated implementing a linear mixed effect model by adding a quadratic term of age to the model.
 
 To provide the underlying structure of manifold eccentricity, we compared the changes in manifold eccentricity with those in connectome topology measures. We first defined clusters within the identified regions based on their spatial boundaries (Figure 1—figure supplement 1A). Then, we calculated degree centrality, as well as modular measures of within-module degree and participation coefficient using the Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/) (Rubinov and Sporns, 2010) and connectivity distance using a recently published approach (Larivière et al., 2020b). Degree centrality is defined as the row-wise sum of the weighted connectivity matrix, representing the connection strength of a given node (Rubinov and Sporns, 2010). Connectivity distance is a given brain region’s geodesic distance to its structurally connected brain areas within the cortex (Oligschläger et al., 2019), and it is defined as the multiplication between the geodesic distance and the binarized structural connectome (Hong et al., 2019; Oligschläger et al., 2019). Within-module degree and participation coefficient are nodal measures reflecting different facets of community organization (Rubinov and Sporns, 2010). For each individual subject, community structure was defined using Louvain’s algorithm (Blondel et al., 2008) and a consistency matrix was constructed, where each element of the matrix represents whether the two different nodes are involved in the same community (i.e., 1) or not (i.e., 0) (Figure 1—figure supplement 2A). We constructed the group-wise consistency matrix by averaging the consistency matrix of all subjects and applied k-means clustering (Figure 1—figure supplement 2B). The optimal number of clusters was determined using the silhouette coefficient, that is, the k that maximized the silhouette coefficient (Kannan et al., 2010). We calculated within-module degree and participation coefficient based on these modules. Within-module degree is the degree centrality within a community, indicating intra-community connection strength, while participation coefficient represents inter-community connectivity (Rubinov and Sporns, 2010). We calculated linear correlations between changes in manifold eccentricity and those in each graph-theoretical measure for each cluster (Figure 1—figure supplement 1B). The significance of the correlation was corrected using 1000 permutation tests by randomly shuffling subject indices in one of the data vectors, and we corrected for multiple comparisons across clusters using an FDR procedure (Benjamini and Hochberg, 1995). To visualize age-related changes in these parameters, we stratified each measure according to discretized age bins (<17, 17–19, 19–21, 21–23, ≥23; Figure 1—figure supplement 3).
 
-## Cortical morphology and microstructure
+### Cortical morphology and microstructure
 
 It has been shown that macroscale cortical morphology and microstructure significantly change during development (Gogtay et al., 2004; Khundrakpam et al., 2017; Paquola et al., 2019a; Shaw et al., 2006). Here, we confirmed these changes by assessing age-related changes in MRI-based cortical thickness measures and intracortical measures of MT, an index sensitive to myelin content (Weiskopf et al., 2013), using linear mixed effect models (Figure 2A; Worsley et al., 2009). We further regressed out cortical thickness and MT from the connectome manifold eccentricity metric. We then implemented linear mixed effect models using the residuals of manifold measures to assess whether age-related connectome manifold effects exist above and beyond age-related effects on cortical morphology and microstructure (Figure 2B).
 
-## Subcortico-cortical connectivity
+### Subcortico-cortical connectivity
 
 To assess age-related changes in subcortical manifold organizations in addition to cortical manifold structures, we first parcellated the accumbens, amygdala, caudate, hippocampus, pallidum, putamen, and thalamus for each individual (Patenaude et al., 2011), and approximated cross-sectionl streamlines connect each subcortical region to the rest of the brain. For each individual and each subcortical region, we projected the streamline strength to cortical manifold space by weighting the cortical manifolds with the streamline strength of the connection between each subcortical region and cortical parcels, yielding a matrix with the form of (number of brain regions × number of cortical manifolds). We averaged the matrix across the axis of cortical manifolds to construct subcortical-weighted manifold vector. We assessed age-related changes in the subcortical-weighted manifold using a linear mixed effect model (Worsley et al., 2009), controlling for sex, site, head motion, and subject-specific random intercept, and FDR corrected for multiple comparisons (Figure 3; Benjamini and Hochberg, 1995).
 
-## Transcriptomic analysis
+### Transcriptomic analysis
 
 We performed spatial correlation analysis to post-mortem gene expression data and carried out a developmental enrichment analysis (Figure 4). In brief, we first correlated the t-statistics map, which represents age-related changes in manifold eccentricity that controlled for cortical morphology and microstructure, with the post-mortem gene expression maps provided by the Allen Institute using the Neurovault gene decoding tool (Gorgolewski et al., 2015; Gorgolewski et al., 2014; Hawrylycz et al., 2012). Leveraging mixed effect models to associate the input t-statistic map with the genes of six donor brains, Neurovault yields the gene symbols associated with the input spatial map. Gene symbols that passed for a significance level of FDR < 0.05 were further tested whether they are consistently expressed across different donors using abagen toolbox (Markello et al., 2020; copy archived at https://github.com/rmarkello/abagen; Arnatkeviciute et al., 2019; Hawrylycz et al., 2012). For each gene, we estimated whole-brain gene expression map and correlated it between all pairs of donors. Leveraging CSEA developmental expression tool (http://genetics.wustl.edu/jdlab/csea-tool-2; Dougherty et al., 2010; Xu et al., 2014), we evaluated the significance of overlap between the genes showing consistent whole-brain expression pattern across donors (FDR < 0.05) with RNAseq data obtained from BrainSpan dataset (http://www.brainspan.org). The significance was calculated based on Fisher’s exact test (Fisher, 1922) with FDR correction (Benjamini and Hochberg, 1995). The CSEA tool provides simplified results of gene enrichment profiles along six major brain regions (i.e., cortex, thalamus, striatum, cerebellum, hippocampus, amygdala) across 10 developmental periods (from early fetal to young adulthood) approximated from mouse data, yielding a total of 60 combinations of developmental enrichment profiles (Xu et al., 2014). We repeated developmental enrichment analysis using the genes identified from the rotated maps of the age-related changes in manifold eccentricity (100 spherical rotations). For each iteration, we obtained developmental expression profiles using the identified genes, where the FDR-corrected p-values built a null distribution. For each brain division and developmental period, if the actual p-value is placed outside 95% of the null distribution, it was deemed significant. As the Allen Brain Institute repository is composed of adult post-mortem datasets, it should be noted that the associated gene symbols represent indirect associations with the input t-statistic map derived from the developmental data.
 
-## Association with the development of cognitive function
+### Association with the development of cognitive function
 
 Leveraging a supervised machine learning with ten-fold cross-validation, we predicted full IQ score measured by the Wechsler Abbreviated Scale of Intelligence (Wechsler, 1999) at follow-up using cortical and subcortical features. Four different feature sets were evaluated: (i) manifold eccentricity of the identified cortical regions at baseline and (ii) manifold eccentricity at baseline and its longitudinal change (i.e., differences between follow-up and baseline), and (iii) cortical manifold eccentricity and subcortical-weighted manifold of the identified regions at baseline and (iv) manifold eccentricity and subcortical-weighted manifold at baseline and their longitudinal changes. For each evaluation, a subset of features that could predict future IQ was identified using elastic net regularization (ρ=0.5) with optimized regularization parameters (L1 and L2 penalty terms) via nested ten-fold cross-validation (Cawley and Talbot, 2010; Parvandeh et al., 2020; Tenenbaum et al., 2000; Varma and Simon, 2006; Zou and Hastie, 2005). We split the dataset into training (9/10) and test (1/10) partitions, and each training partition was further split into inner training and testing folds using another ten-fold cross-validation. Within the inner fold, elastic net regularization finds a set of non-redundant features to explain the dependent variable. Using a linear regression, we predicted the IQ scores of inner fold test data using the features of the selected brain regions by controlling for age, sex, site, and head motion. The model with minimum MAE across the inner folds was applied to the test partition of the outer fold, and the IQ scores of outer fold test data were predicted. The prediction procedure was repeated 100 times with different training and test sets to reduce subject selection bias. Prediction accuracy was indexed by computing linear correlations between the actual and predicted IQ scores as well as MAE. A 95% confidence interval of the accuracy measures was also reported. Permutation-based correlations across 1000 tests were conducted by randomly shuffling subject indices to check whether the prediction performance exceeded chance levels. To assess whether our model outperforms baseline model, we predicted IQ of test data using average of IQ of training data (i.e., predicted IQ = mean(training set IQ)). The improvement of prediction performance was assessed using Meng’s z-test (Meng et al., 1992). In addition to predicting future IQ, we performed the same prediction analysis to predict the change of IQ between the baseline and follow-up.
 
-## Sensitivity analysis
+### Sensitivity analysis
 
-## Spatial scale
+#### Spatial scale
 
 To assess the consistency of our findings across spatial scales, we additionally performed the linear mixed effect modeling using a finer parcellation scheme of 300 parcels (Figure 1—figure supplement 4; Schaefer et al., 2018).
 
-## Site and sex effect
+#### Site and sex effect
 
 Participants were recruited from three different sites. To assess whether the longitudinal changes in manifold eccentricity across age are consistent across different sites, we calculated interaction effects of the relationship between age and manifold eccentricity of the identified regions across sites (Figure 1—figure supplement 5B). In addition, we computed interaction effect of the relationship between age and manifold eccentricity across male and female subjects to assess whether the age-related changes are affected by biological sexes (Figure 1—figure supplement 5C).
 
-## Different parameters for diffusion map embedding
+#### Different parameters for diffusion map embedding
 
 To assess the sensitivity of our findings, we generated connectome manifolds with different parameters for diffusion map embedding (α = 0.25, 0.5, 0.75; t = 0, 1, 2, 3). We assessed age-related changes of the newly defined manifold eccentricity and calculated linear correlation with t-statistic map of the default setting (α = 0.5; t = 0; Figure 1C).
 
-## Gradient alignment fidelity
+#### Gradient alignment fidelity
 
 To assess robustness of individual alignment, we computed linear correlations between the template and individual manifolds before and after alignment. We also repeated the linear mixed effect modeling after excluding 10% of subjects with the lowest alignment to the template manifold (Figure 1—figure supplement 6).
 
-## Connectome manifold generation using principal component analysis
+#### Connectome manifold generation using principal component analysis
 
 To explore consistency of our results when using different dimensionality reduction techniques, we generated connectome manifolds using principal component analysis (Wold et al., 1987), instead of relying on diffusion map embedding (Coifman and Lafon, 2006), and performed longitudinal modeling (Figure 1—figure supplement 7). We compared the eigenvectors estimated from diffusion map embedding and principal component analysis using linear correlations.
 
-## Longitudinal changes in graph-theoretical measures
+#### Longitudinal changes in graph-theoretical measures
 
 To compare longitudinal changes in manifold eccentricity with those in graph-theoretical centrality measures, we calculated betweenness, degree, and eigenvector centrality of the structural connectomes and built similar linear mixed effects models to assess longitudinal change (Figure 1—figure supplement 8). Betweenness centrality is the number of weighted shortest paths between any combinations of nodes that run through that node, degree centrality is the sum of edge weights connected to a given node, and eigenvector centrality measures the influence of a node in the whole network (Lohmann et al., 2010; Rubinov and Sporns, 2010; Zuo et al., 2012). Spatial similarity between t-statistics of centrality and manifold measures was assessed with 1000 spin tests that account for spatial autocorrelation (Alexander-Bloch et al., 2018).
 
-## Manifold eccentricity analysis based on all eigenvectors
+#### Manifold eccentricity analysis based on all eigenvectors
 
 We repeated our analysis by calculating manifold eccentricity from all eigenvectors to assess consistency of the findings (Figure 1—figure supplement 9).
 
-## Robustness of group representative structural connectome
+#### Robustness of group representative structural connectome
 
 We compared the distance-dependent thresholding (Betzel et al., 2019) that was adopted for the main analysis with a consistency thresholding approach (Wang et al., 2019). The latter averages subject-specific matrices, in addition to performing a 50, 40, 30, 20, and 10% thresholding, as well as simple averaging (i.e., 0% thresholding) (Figure 1—figure supplement 10).
 
-## Connectome manifolds based on structural parcellation
+#### Connectome manifolds based on structural parcellation
 
 To confirm whether functional and structural parcellation schemes yield consistent results, we repeated our main analyses using 200 cortical nodes structural parcellation scheme, which preserves the macroscopic boundaries of the Desikan–Killiany atlas (Desikan et al., 2006; Vos de Wael et al., 2020a; Figure 1—figure supplement 11).
 
-## Longitudinal modeling using edge weights
+#### Longitudinal modeling using edge weights
 
 In addition to the analyses based on manifold eccentricity, linear mixed effect modeling using connectome edge weights assessed age-related longitudinal changes in streamline strength (Figure 1—figure supplement 12).
 
-## Manifold eccentricity and pubertal stages
+#### Manifold eccentricity and pubertal stages
 
 To assess the relationship between manifold eccentricity and pubertal stages, we selected a subset of participants who completed Tanner scale (Marshall and Tanner, 1970; Marshall and Tanner, 1969), which quantifies pubertal stages from 1 (pre-puberty) to 5 (final phase of physical maturation). However, the score was collected at baseline and for 73/208 participants only. To confirm robustness, we performed linear mixed effect modeling using this subset (Figure 1—figure supplement 13A). In addition, we assessed interaction effects of Tanner scale and manifold eccentricity restricted to the regions identified from the overall sample (Figure 1—figure supplement 13B).
 
-## IQ prediction using nonlinear model
+#### IQ prediction using nonlinear model
 
 We additionally predicted future IQ score using decision tree learning, a nonlinear approach that builds a regression tree model a root node and split leaf nodes, where the leaf nodes contain the response variables (Breiman et al., 1984; Figure 5—figure supplement 2).
 
-## Data and code availability
+### Data and code availability
 
 The imaging and phenotypic data were provided by the NSPN 2400 cohort. As stated in https://doi.org/10.1093/ije/dyx117, the NSPN project is committed to make the anonymised dataset fully available to the research community, and participants have consented to their de-identified data being made available to other researchers. A data request can be made to openNSPN@medschl.cam.ac.uk. Codes for connectome manifold generation are available at https://doi.org/10.1038/s42003-020-0794-7; https://github.com/MICA-MNI/BrainSpace (copy archived at swh:1:rev:1fb001f4961d3c0b05b7715f42bcc362b31b96a5; Vos de Wael et al., 2020b), and those for calculating manifold eccentricity and subcortical-weighted manifold, as well as performing linear mixed effect modeling to assess age-effects on these features, at out GitHub (https://github.com/MICA-MNI/micaopen/tree/master/manifold_features; copy archived at swh:1:rev:d3988d51e01940007595761dab6b846ce2506433; Park, 2021). Source data are provided with this paper.

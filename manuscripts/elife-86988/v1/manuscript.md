@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01keh0577 Program in Ecology, Evolution, and Conservation Biology, Department of Biology, University of Nevada Reno United States
-2. https://ror.org/00byf8747 Department of Scientific Services, Gorongosa National Park Sofala Mozambique
-3. https://ror.org/01keh0577 Hitchcock Center for Chemical Ecology, University of Nevada Reno United States
-4. https://ror.org/056s65p46 Lab. de Biodiversidade, Departamento de Biodiversidade, Evolução e Meio Ambiente, Instituto de Ciências Exatas e Biológicas, Universidade Federal de Ouro Preto Ouro Preto Brazil
-5. https://ror.org/00rs6s651 Departamento de Entomología, Museo de Historia Natural, Universidad Nacional Mayor de San Marcos Lima Peru
-6. https://ror.org/036rp1748 Department of Fundamental Chemistry, Institute of Chemistry, University of São Paulo São Paulo Brazil
-7. https://ror.org/0039d5757 Department of Ecology, Universidade Federal de Goiás Goiânia Brazil
-8. https://ror.org/01keh0577 Department of Biology, University of Nevada Reno United States
+1. Program in Ecology, Evolution, and Conservation Biology, Department of Biology, University of Nevada Reno United States ([ROR:01keh0577](https://ror.org/01keh0577))
+2. Department of Scientific Services, Gorongosa National Park Sofala Mozambique ([ROR:00byf8747](https://ror.org/00byf8747))
+3. Hitchcock Center for Chemical Ecology, University of Nevada Reno United States ([ROR:01keh0577](https://ror.org/01keh0577))
+4. Lab. de Biodiversidade, Departamento de Biodiversidade, Evolução e Meio Ambiente, Instituto de Ciências Exatas e Biológicas, Universidade Federal de Ouro Preto Ouro Preto Brazil ([ROR:056s65p46](https://ror.org/056s65p46))
+5. Departamento de Entomología, Museo de Historia Natural, Universidad Nacional Mayor de San Marcos Lima Peru ([ROR:00rs6s651](https://ror.org/00rs6s651))
+6. Department of Fundamental Chemistry, Institute of Chemistry, University of São Paulo São Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
+7. Department of Ecology, Universidade Federal de Goiás Goiânia Brazil ([ROR:0039d5757](https://ror.org/0039d5757))
+8. Department of Biology, University of Nevada Reno United States ([ROR:01keh0577](https://ror.org/01keh0577))
 9. Yanayacu Biological Station Cosanga Ecuador
-10. https://ror.org/04qk6pt94 Department of Biological Sciences, Wright State University Dayton United States
-11. https://ror.org/01e3m7079 Department of Biological Sciences, University of Cincinnati Cincinnati United States
-12. https://ror.org/0451s5g67 Department of Biology, Mesa State College Grand Junction United States
+10. Department of Biological Sciences, Wright State University Dayton United States ([ROR:04qk6pt94](https://ror.org/04qk6pt94))
+11. Department of Biological Sciences, University of Cincinnati Cincinnati United States ([ROR:01e3m7079](https://ror.org/01e3m7079))
+12. Department of Biology, Mesa State College Grand Junction United States ([ROR:0451s5g67](https://ror.org/0451s5g67))
 
 † Corresponding author
 
@@ -48,7 +48,59 @@ As climate change and anthropogenic activity alter ecosystems at unprecedented r
 
 Very few multi-site, manipulative diversity experiments have been reported from tropical areas compared to temperate environments (Clarke et al., 2017), limiting our knowledge of the role of biodiversity in ecosystem function in the most species-rich regions of the planet (Gentry, 1992). In the context of several established hypotheses (Table 1), we investigate how multiple dimensions of plant diversity affect ecosystem processes at five neotropical sites and explore how diversity modulates how ecosystems respond to changes in water availability at three of those sites. We focus on ecosystem responses that represent changes in energy fluxes between trophic levels as measured by herbivory, herbivore diversity, and plant mortality. By altering plant uptake of nutrients and plant defense production, abnormal levels of precipitation can alter herbivore pressure, affecting the movement of resources into higher trophic levels (White, 1974). As such, extreme dry and wet periods of climate are expected to strongly perturb plant-insect interactions and thereby alter ecosystem function (White, 1974; Côté and Darling, 2010; Koricheva et al., 1998). The insurance hypothesis suggests that greater biodiversity can act to stabilize ecosystems and improve their resilience to environmental change (Naeem and Li, 1997; Yachi and Loreau, 1999). While greater interspecific plant richness is expected to lead to increased diversity in higher trophic levels due to the accumulation of specialist herbivores, field studies have demonstrated both positive and neutral effects of interspecific plant richness on ecosystem resilience (Klaus et al., 2016; Lanta et al., 2012). Despite traditional views that interspecific richness has a greater impact on ecosystem processes than intraspecific diversity (Hughes et al., 2008), recent research suggests that plant intra- and interspecific richness can have similar effects on ecosystem productivity and consumer abundance (Raffard et al., 2019; Koricheva and Hayes, 2018). As changes to intraspecific richness can alter the diversity of resources available to herbivores (Crutsinger et al., 2006), it is necessary to consider both inter- and intraspecific diversity when investigating the effects of biodiversity loss on ecosystem processes.
 
+**Table 1.**
+ Path models and explanatory hypotheses.Causal path labels refer to Figure 3—figure supplement 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hypothesis</th>
+      <th>Causal paths</th>
+      <th>Sites tested</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bottom-up diversity:Host plant diversity impacts insect richness through multiple mechanisms, such as reducing host density, masking or amplifying host signals, or altering the proportion of specialist herbivores (Agrawal et al., 2006; Barbosa et al., 2009; Root, 1973)</td>
+      <td>All models;paths A, C</td>
+      <td>All sites</td>
+    </tr>
+    <tr>
+      <td>Neighborhood effects:Plant diversity directly affects herbivory through mechanisms which do not alter herbivore diversity (Agrawal et al., 2006; Barbosa et al., 2009)</td>
+      <td>All models;paths B, D</td>
+      <td>All sites</td>
+    </tr>
+    <tr>
+      <td>Water affects herbivore diversity: Changes in water availability induce changes to plant nutrition and defenses which can benefit or harm different herbivore taxa, leading to changes in herbivore diversity (Gely et al., 2020; Lenhart et al., 2015)</td>
+      <td>Models I, II;path G</td>
+      <td>Costa Rica, Ecuador, Peru</td>
+    </tr>
+    <tr>
+      <td>Water affects herbivory: Water addition directly affects plant physiology, altering both the nutritive quality of plant tissue and the ability of plants to combat herbivores and leading to changes in herbivory (White, 1974)</td>
+      <td>Models I, III;path F</td>
+      <td>Costa Rica, Ecuador, Peru</td>
+    </tr>
+  </tbody>
+</table>
+
 We conducted common garden experiments at five sites across Central and South America to test the insurance hypothesis by quantifying (1) the relative strength of intra- and interspecific plant richness in driving ecosystem function and (2) the effects of increased water availability on ecosystem function. Using 33 species in the genus Piper (Piperaceae) as a model system (Dyer and Palmer, 2004), we manipulated intra- and interspecific plant richness in Costa Rica, Ecuador, Peru, and two sites in Brazil. We additionally manipulated water availability in Costa Rica, Ecuador, and Peru (Figure 1). We predicted that reduced Piper diversity would lead to reduced diversity of higher trophic levels, that water addition would lead to altered herbivore pressure, and that lower Piper diversity would be associated with more extreme changes in herbivory and plant mortality in response to water addition. Finally, we predicted that changes in intraspecific and interspecific plant richness would affect ecosystem processes, including herbivory, herbivore diversity, and plant mortality, with similar magnitudes.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig1-v1.jpg)
+
+**Figure 1.:** White tiles represent treatment combinations which were not tested in a given site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Treatments of intraspecific richness, interspecific richness, and water addition at the beginning of the experimental period at each of the five study sites, and (B) final treatments at the end of the experimental period in each site. White numerals indicate number of plots used. Changes in Piper species richness and the loss of some treatment combinations were due to Piper mortality over the course of the experimental period.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Percent herbivory, percentage of leaves with any damage, herbivorous insect richness, and percent mortality of Piper in Costa Rica (CR), Ecuador (EC), Peru (PE), Uaimii (UI), and Mogi-Guaçu (MG), across treatments. (B) Proportion of herbivorous insect taxa observed at each site measured by feeding damage patterns. Proportion of herbivory attributed to each taxon at five study sites. Colored regions represent the percentage of each leaf consumed by each taxon at each site. White tiles represent sites where no leaf damage by that insect taxon was observed.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Monthly precipitation over the experimental period at Costa Rica (CR), Ecuador (EC), and Peru (PE). (B) Difference in monthly precipitation from climate normals at the three sites across the experimental periods for those sites. Bars indicate median values, black points indicate mean values. (C) Cumulative precipitation over the course of the experimental period. Dotted lines indicate average cumulative precipitation, shaded regions indicate 95%, 80%, and 50% quantiles. Climate normals are based on monthly precipitation for a period from 1958 to 1998.
 
 ## Results
 
@@ -56,11 +108,41 @@ Considerable variation in herbivory and plant mortality was observed among study
 
 Our experiments revealed pronounced heterogeneity in ecosystem responses to water availability and Piper diversity between sites (Figure 2). Posterior predictive checks (PPCs) for all hierarchical Bayesian models (HBMs), and for models I and III were within 0.03 of 0.5, indicating models fit well. Model III (Figure 3—figure supplement 2) was selected as the most parsimonious causal model for Bayesian structural equation models (BSEMs) in Costa Rica (PPC = 0.499), Ecuador (PPC = 0.499), and Peru (PPC = 0.498). Fit was high for models in Mogi (PPC = 0.5) and Uaimii (PPC = 0.497). Across all sites where the water addition treatment was applied, percent herbivory was 4.2 ± 3.6% (mean ± 95% CI) lower in plots that received additional water (probability of direction [PD] = 98.7%; Figure 2A and B). Greater Piper interspecific richness was associated with a 15 ± 18.6% increase in the richness of insect herbivores (PD = 95.0%; Figure 2E) and an indirect increase in herbivory was mediated by insect richness (Figure 3). Insect richness was associated with an 8.8 ± 2.8% increase in herbivory per insect taxon present (PD = 100%) and a 6.7 ± 6.9% increase in the percentage of leaves with any damage (p=97%) (Figure 2A and B). Intra- and interspecific richness affected herbivory, although effects varied in strength and direction across sites (Figure 3, Supplementary file 1). Intraspecific richness had similar or greater effects on plant mortality and insect richness than interspecific richness. However, intra- and interspecific richness often had contrasting directions of effect on insect richness and measures of herbivore pressure (Figures 2 and 3). For example, in Costa Rica insect richness was 6.0 ± 5.9% (PD = 93.7%) lower in plots with high interspecific plant richness, while high intraspecific richness increased insect richness by 7.2 ± 6.9% (PD = 98.1%). In contrast, in Ecuador high interspecific richness was associated with a 43.6 ± 6.4% (PD = 100%) increase in insect richness, and high intraspecific richness decreased insect richness by 13.6 ± 5.2% (PD = 100%; Figure 2—figure supplement 2B and C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig2-v1.jpg)
+
+**Figure 2.:** Violins represent the cross-site posterior parameter distribution for each relationship in site-level hierarchical Bayesian models. Black lines represent the median posterior estimate and white bars represent 95% credible intervals. Percentages above violins indicate the probability of an effect being positive or negative (as indicated by a negative probability) in response to an increase of the independent variable. Distributions for water addition compare watered and control plots; distributions for interspecific richness compare Piper species richness standardized as the proportion of the maximum richness used at a site; distributions for intraspecific richness compare low and high intraspecific richness treatments; distributions for insect richness compare responses per insect taxon present on an individual leaf.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Violins represent the posterior parameter distribution for each relationship across sites and within sites in Costa Rica (CR), Ecuador (EC), Peru (PE), Uaimii (UI), and Mogi-Guaçu (MG). Black lines represent the median posterior estimate while white bars represent 95% credibility intervals. Percentages above violins indicate the probability of an effect being entirely positive or entirely negative in response to an increase of the manipulated variable. Distributions for water addition compare unwatered control and watered plots; distributions for interspecific richness compare Piper species richness and are standardized as a percentage of the high richness treatment level; distributions for intraspecific richness compare low and high intraspecific richness plots; distributions for insect richness compare responses per insect taxon present at the leaf level.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Violins represent the posterior parameter distribution for each relationship across sites and within sites at Costa Rica (CR), Ecuador (EC), Peru (PE), Uaimii (UI), and Mogi-Guaçu (MG). Black lines represent the median posterior estimate while white bars represent 95% credibility intervals. Percentages above violins indicate the probability of an effect being entirely positive or entirely negative in response to an increase of the manipulated variable. Distributions for water addition compare the unwatered control and watered plots; distributions for interspecific richness compare Piper species richness and are standardized as a percentage of the high richness treatment level; distributions for intraspecific richness compare low and high intraspecific richness plots.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig3-v1.jpg)
+
+**Figure 3.:** Bayesian structural equation models comparing effects of different drivers of herbivorous insect richness and herbivory at five sites. Standardized path coefficients are means of the posterior distribution for the effects estimated at each causal path. Positive relationships are indicated in blue with triangular heads, and negative relationships are indicated in red with circular heads. Black arrows indicate path coefficients of zero magnitude. Dot plots summarize the standardized mean of the posterior distribution for each causal path with 95% and 80% credible intervals. Asterisks indicate causal paths where the probability of an effect being positive or negative is >95%.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Path coefficients indicate the standardized mean of the posterior distribution for each causal path. Positive relationships are indicated in blue with triangular heads, and negative relationships are indicated in red with circular heads. Dot plots indicate the standardized mean of the posterior distribution for each causal path in A with 95% and 80% credibility intervals. Asterisks indicate causal paths where the probability of an effect being entirely positive or entirely negative is >95%.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Models I-III were tested in Costa Rica, Ecuador, and Peru. A model without water addition was tested in Mogi and Uiamii. Model II was selected as the best performing model at all sites where the water addition treatment was applied.
+
 The effects of water addition were altered by Piper intra- and interspecific richness at all sites (Figure 4). Water availability reduced herbivory in Costa Rica (4.7 ± 2.5%, PD = 100%) and Peru (5.1 ± 3.7%, PD = 100%), but this effect was only present in Ecuador when intraspecific richness was high (Figure 3—figure supplement 1). Across sites, water addition had negligible or negative effects on insect richness at low interspecific richness, but this pattern was reduced or reversed when interspecific richness was high. Insect richness increased by 20.8 ± 18.9% more in interspecifically diverse water plots compared to unwatered plots in Costa Rica (PD = 99%). Insect richness increased by 15.2 ± 16.8% more in rich, watered plots in Ecuador (PD = 96%), and 29.3 ± 31.5% more in Peru (PD = 98%). Additionally, water addition had a negligible effect on insect richness in Ecuador when intraspecific richness was low, but increased insect richness by 12.1% when intraspecific richness was high (PD = 99%; Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig4-v1.jpg)
+
+**Figure 4.:** Bars indicate mean response and standard error of the mean. Percentages above each sub-figure indicate the probability that the two slopes are different as calculated using site-level hierarchical Bayesian models. Due to high mortality in Peru, interactions between water and intraspecific richness could not be compared for any responses except mortality. Single and two species richness plots have been combined for visualization purposes only.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86988/elife-86988-fig4-figsupp1-v1.jpg)
 
 Water addition had a negative effect on Piper survival in Costa Rica when intraspecific richness was low, but improved survival by 12.1 ± 8.5% in high intraspecific richness plots (PD = 99%; Figure 4C). Interactions with water in Peru may have been influenced by an El Niño related drought which resulted in high Piper mortality, while the typically wetter sites in Costa Rica and Ecuador experienced greater precipitation than average (Figure 1—figure supplement 3).
 
-## Analysis of plant survival
+### Analysis of plant survival
 
 Water addition did not affect Piper survival in Costa Rica (z=–1.2, p>0.2), or in Ecuador (z=0.2, p>0.8), but survival was reduced by 48% in plots without water in Peru (z=3.2, p=0.001). Intraspecific richness increased survival by 38% in Costa Rica (z=–3.3, p<0.001) and by 32% in Ecuador (z=–4.9, p<0.001), but had no effect on survival in Peru (z=–1.55, p>0.1), Mogi (z=–0.22, p>0.8), or Uaimii (z=0.18, p>0.8). Interspecific richness had no effect on survival in Costa Rica (z=–1.5, p>0.1), Ecuador (z=–0.56, p>0.5), Peru (z=–0.49, p>0.6), or Uaimii (z=0.21, p>0.8). In Mogi, survival was reduced by 13% in plots with higher interspecific richness (z=–2.16, p=0.031). There was an interaction between intraspecific richness and water addition in Costa Rica and Peru. Survival in Costa Rica increased in response to water in high intraspecific richness plots, and decreased in response to water in low intraspecific richness plots (z=3.8, p<0.001), while the opposite pattern was observed in Peru (z=–2.4, p=0.02; Figure 4—figure supplement 1). Although plant die-offs cause a loss in richness in some plots, plant species identity was not related to survival with the exception of Podophyllum peltatum, which had the lowest survival rate of any species planted in Costa Rica. Further statistical results are available in Supplementary file 1.
 
@@ -78,13 +160,13 @@ A long-standing question in ecology has been the extent to which ecosystem funct
 
 ## Materials and methods
 
-## Study sites and focal plant genus
+### Study sites and focal plant genus
 
 We conducted a large-scale transplant experiment replicated across five sites spanning 42° latitude in the Neotropics (Figure 1, Supplementary file 2) encompassing a range in annual precipitation from 1271 to 4495 mm (Supplementary file 2). At each site, we studied herbivory on planted individuals in the genus Piper (Piperaceae) in response to experimental treatments. Study sites included lowland equatorial humid forest at La Selva Biological Station, Costa Rica; high elevation equatorial humid forest in Yanayacu Biological Station, Ecuador; high elevation equatorial humid forest at El Fundo Génova, Peru; lowland seasonally dry gallery forest in the cerrado within the phytogeographic domain of the Atlantic Forest in Mogi-Guaçu Biological Reserve, Brazil; and lowland seasonally semideciduous forest in the transition between the Atlantic Forest and the cerrado phytogeographic domains in Uaimii State Forest, Brazil. Climate classifications follow the Köppen-Geiger climate model ( Kottek et al., 2006; Supplementary file 2).
 
 Multiple species of Piper are found at all sites, ranging from 11 species in Mogi-Guaçu to 50 species in Costa Rica (Salazar et al., 2016). Piper is an ideal genus for large-scale comparative studies, as it is found across the Neotropics and subtropics, from ~10° N to about ~32° S. In addition to being widespread, Piper is abundant and diverse across its range, encompassing ~1000 species in the Neotropics (Davidse et al., 2020). Piper has been the subject of detailed studies of herbivory, and its herbivore fauna has been surveyed across its range (Dyer and Letourneau, 1999; Dyer and Letourneau, 2003; Dyer et al., 2004; Letourneau et al., 2004; Connahs et al., 2009; Dyer et al., 2010; Bodner et al., 2012; Abarca et al., 2014; Glassmire et al., 2016; Slinn et al., 2018; Cosmo et al., 2019; Campos‐Moreno et al., 2021). Members of the genus host both specialist caterpillars and beetles as well as generalist caterpillars and Orthopterans (Dyer and Palmer, 2004; Dyer and Letourneau, 1999; Dyer and Letourneau, 2003; Dyer et al., 2004; Letourneau et al., 2004; Dyer et al., 2010). Leaf damage patterns produced by the different classes of herbivores are well documented and allow for the determination of unique taxa of herbivores (Dyer et al., 2010).
 
-## Experimental design
+### Experimental design
 
 Executing experiments across the Americas presents challenges, including nuanced variations in methodologies at each site. Nonetheless, the advantages of this expansive and consistent approach provides a greater understanding in the role of biodiversity in ecosystem function than examining isolated single-site studies. Here, we describe the experimental design applied across sites, see Figure 1 and Supplementary files 2 and 3 for site-specific details.
 
@@ -98,11 +180,11 @@ Piper mortality resulted in a reduction in species richness in many plots and th
 
 To determine the effects of site variation in natural levels of precipitation on the outcomes of the water addition treatment, the absolute level of precipitation and precipitation anomalies relative to climate normals were collected for each month of the experimental periods in Costa Rica, Ecuador, and Peru (Figure 1—figure supplement 3). Climate data for Costa Rica were obtained from La Selva Biological Station. Data for Ecuador and Peru were obtained using TerraClimate (Abatzoglou et al., 2018), and an interpolation error in the precipitation for Peru in February 2016 was corrected using data from the National Service of Meteorology and Hydrology of Peru (SENAMHI).
 
-## Measures of herbivory and insect richness
+### Measures of herbivory and insect richness
 
 Plots were open to naturally occurring herbivores, and herbivory was recorded by taking photographs of all the experimental leaves at the end of the experimental period. Additional photos were taken every 3 months in Uaimii and Mogi-Guaçu, and in the first 5 months of the experiment in Costa Rica. These data were used to measure herbivory and to determine the types of herbivores feeding on leaves based on patterns of damage. When herbivores were observed on plants, they were photographed but were left to continue feeding so as to not interfere with the experiment. Herbivory was quantified by eye for each type of herbivore on each leaf by a single parataxonomist with extensive experience measuring herbivory on Piper following established protocols (Dyer et al., 2010). The amount of leaf area consumed was measured in relation to the total leaf area by visually dividing the leaf into equal sized segments to determine the percent area missing. This was measured as a continuous value to the greatest possible accuracy, typically 1–5% of the total leaf area. Insect herbivores were identified to the lowest taxonomic level possible based on their damage patterns (genus for specialist Lepidoptera, family for generalist Lepidoptera, family for Coleoptera, order for Orthoptera). Direct observations of herbivores were rare, so only damage patterns were used in analyses. As insect damage patterns on leaves are tightly correlated with insect richness in tropical forests (Carvalho et al., 2014), the different types of damage recorded were used as proxy for the richness of above ground insect herbivores on Piper. Hereafter, the term ‘insect richness’ refers to the richness of insect herbivore damage patterns on plants.
 
-## Data analyses
+### Data analyses
 
 The percentage of leaf tissue consumed by each insect taxon (based on damage patterns) on individual leaves was summed to determine the total percentage of herbivory on each leaf, and the variance in herbivory was calculated as the variance in leaf damage within each plant in a plot. Due to high mortality rates across sites, Piper interspecific richness in each plot was the final number of Piper species present in each plot at the end of the experiment (rather than the number of species planted) and was analyzed as a continuous covariate rather than a categorical treatment. Because most plant deaths occurred early in the experiments, final Piper interspecific richness more accurately reflects the local plant richness experienced by herbivores. Interspecific diversity for each plot was analyzed as the proportion of the interspecific diversity present in the species pools at each site. This enabled easier comparisons between intra- and interspecific richness, as intraspecific richness was only quantified as low and high, where high treatments represent the maximum intraspecific richness available at each site. The effect of intra- and interspecific diversity on each response variable is reported as the change in response as diversity changes from the lowest possible value at each site to the highest.
 
@@ -112,7 +194,7 @@ We acknowledge that treatment-level combinations were not the same across the di
 
 BSEMs were constructed for each site using all treatments as exogenous variables and insect richness and herbivory as endogenous variables. Three path models were developed under the assumptions that (1) intraspecific and interspecific richness may influence herbivory both directly and indirectly by modulating insect richness, (2) water addition may influence both herbivory and insect richness, and (3) insect richness may influence herbivory directly (Table 1). Models I-III were tested in Ecuador, Costa Rica, and Peru, while a model without the water addition variable was used to analyze data from Mogi-Guaçu and Uaimii (Figure 3—figure supplement 2). Additional models incorporating interactions between intraspecific richness, interspecific richness, and water availability were tested in Costa Rica, Ecuador, and Peru.
 
-Models were run at the leaf level for herbivory and insect richness, and at the plant level for the percentage of leaves with damage, variance of herbivory, and Piper survival. For all HBMs and BSEMs, model convergence was estimated visually using traceplots and an R^ discriminatory threshold of 1.1 (Gelman and Rubin, 1992). Model fit was determined via PPCs using the sum of squares of the residuals as the discriminatory function (Gelman et al., 1996). A PPC near 0.5 indicates a high model fit, while values near one or zero indicate poor fit. BSEMs were further compared using the deviance information criterion.
+Models were run at the leaf level for herbivory and insect richness, and at the plant level for the percentage of leaves with damage, variance of herbivory, and Piper survival. For all HBMs and BSEMs, model convergence was estimated visually using traceplots and an $R^$ discriminatory threshold of 1.1 (Gelman and Rubin, 1992). Model fit was determined via PPCs using the sum of squares of the residuals as the discriminatory function (Gelman et al., 1996). A PPC near 0.5 indicates a high model fit, while values near one or zero indicate poor fit. BSEMs were further compared using the deviance information criterion.
 
 All Bayesian models were written in JAGS via the jagsUI package in R (Kellner et al., 2021) using Markov chain Monte Carlo (MCMC) sampling with weakly informative priors. Residuals were modeled as normally distributed based on PPC comparisons between models. Models using gamma distributions for herbivory and binomial distributions for damage presence and mortality were found to consistently underestimate the magnitude of variance in the data based on PPC. For the majority of models, MCMC runs were conducted for 10,000 iterations using the first 1000 iterations as a burn-in phase to generate posterior distributions of parameter estimates for each response variable. HBMs modeling interactions required 20,000 iterations with the first 5000 as burn-ins for all models to consistently converge. Mean parameter estimates and 95% credible intervals (CIs) were calculated for all responses. 95% CIs which do not cross the y-axis are typically associated with less than a 2.5% type S error rate (Gelman and Tuerlinckx, 2000). A posterior PD was calculated based on the percentage of the posterior distribution responding in the same direction as the median response. A PD of 95%, for example, indicates that the same direction of response (e.g. a positive or negative response) was observed in 95% of iterations, regardless of the magnitude of the response (Makowski et al., 2019). PDs less than 95% indicate lower confidence that a relationship exists, but can still be interpreted as the probability that an effect exists.
 

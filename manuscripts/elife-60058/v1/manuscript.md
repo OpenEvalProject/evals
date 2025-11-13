@@ -43,9 +43,45 @@ Given the widespread use of ACTs for malaria treatment and in mass drug administ
 
 ## Results
 
-## Exposure to DHA at the trophozoite stage enhances sexual conversion
+### Exposure to DHA at the trophozoite stage enhances sexual conversion
 
 To examine the effect of ARTs on P. falciparum sexual conversion, we administered a 3 hr pulse of DHA to synchronous cultures of the NF54-gexp02-Tom reporter line. This parasite line expresses the fluorescent reporter tdTomato under the control of the promoter of the sexual stage-specific gene gexp02 (PF3D7_1102500), which allows accurate flow cytometry-based detection of very early gametocytes within a few hours after sexual conversion (Portugaliza et al., 2019). The short drug pulse mimics the short plasma half-life of ARTs (de Vries and Dien, 1996). Cultures were regularly maintained in choline-containing culture medium (Albumax-based medium with a supplement of choline) to mimic the repression of sexual conversion by healthy human serum, and choline was either maintained or removed during the experiment to repress or stimulate sexual conversion (Brancucci et al., 2017; Filarsky et al., 2018). The DHA pulse was administered at the trophozoite (Figure 1A) or the ring (see below) stage, using subcurative DHA concentrations (5 and 10 nM) that in trophozoites resulted in a reduction of growth of <40% (Figure 1B). The sexual conversion rate was calculated as the proportion of parasites that developed into gametocytes at the cycle after exposure (i.e., after reinvasion) (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Representative SYTO 11 (stains parasite DNA) versus TdTomato (marks gametocytes) flow cytometry plots. (D) Sexual conversion rate determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (E) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel D). In all panels, data are presented as the average and s.e.m. of four independent biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We used parasite lines expressing the fluorescent reporter tdTomato under the control of the gexp02 (A) or etramp10.3 (B) promoters. Generation 0 is the growth cycle at which the culture is exposed to different conditions (e.g., choline removal, or drugs), with parasite age indicated in h post-invasion (hpi). In all cases, the sexual conversion rate (SC) is calculated as the percentage of Generation 1 parasites that develop into non-replicative sexual forms (gametocytes). The total parasitemia (sexual + asexual parasites) at Generation 1 is measured by flow cytometry using fluorescent markers that stain DNA in all parasites (green dots) or active mitochondria in viable parasites (not represented here), by immunofluorescence assay using a fluorescent DNA stain (blue dots) or by light microscopy using Giemsa-stained smears (pale blue marks). Gametocytemia is measured by flow cytometry based on tdTomato signal (red marks), by immunofluorescence based on Pfs16 signal (pale green marks), or by light microscopy using Giemsa-stained smears (gametocyte-shaped pale blue marks). In immunofluorescence assays, the number of parasites and gametocytes in a given number of fields is determined instead of parasitemia and gametocytemia, but since both total parasites and gametocytes are determined simultaneously from the same samples (i.e., the total erythrocytes denominator is the same for both parameters), this does not affect the sexual conversion rate calculation. Detection of gametocytes based on tdTomato expression in the NF54-gexp02-Tom and E5-gexp02-Tom lines is performed as early as 24 hpi in Generation 1. Detection based on Pfs16 expression is performed at 48 hpi, and requires addition of ML10 to prevent schizont bursting and reinvasion, which would increase the number of asexual parasites observed. Detection of gametocytes based on tdTomato expression or light microscopy analysis of Giemsa-stained smears in the NF54-10.3-Tom line is performed at 72 or 96 hpi, respectively, and requires the addition of N-acetyl-D-glucosamine (GlcNAc) to prevent multiplication of asexual parasites, which would collapse the culture.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia of live parasites (asexual + sexual parasites) determined with a mitochondrial membrane potential stain (MitoTracker Deep Red FM). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Representative MitoTracker Deep Red FM versus TdTomato (marks gametocytes) flow cytometry dot plots. (D) Sexual conversion rates determined by flow cytometry, calculated using MitoTracker-positive cells only. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (E) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel D). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the E5-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites) based on identification of all parasites with SYTO 11 or viable parasites only with MitoTracker Deep Red FM. For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-10.3-Tom line (expression of the fluorescence reporter starts later during gametocyte development than in the NF54-gexp02-Tom line) under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by (i) flow cytometry analysis (FACS) on D1 (D0 is the first day of Generation 1) to determine the initial parasitemia (using the SYTO 11 stain), and on D3 to determine the gametocytemia (SYTO 11 and TdTomato signal) in cultures treated with N-acetylglucosamine (GlcNAc); (ii) immunofluorescence assay (IFA) analysis of cultures treated with ML10 using the Pfs16 marker; (iii) flow cytometry analysis on D1 to determine the initial parasitemia, and on D4 light microscopy analysis of Giemsa-stained blood smears (Giemsa) to determine the gametocytemia in cultures treated with GlcNAc. (B) Survival rate of cultures exposed to the different drug doses, using total D1 parasitemia values (asexual + sexual parasites) determined by flow cytometry (FACS). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by FACS, IFA, and Giemsa-stained blood smears. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites, determined by flow cytometry (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at various low doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites) based on identification of all parasites using SYTO 11. For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at various doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites) based on identification of all parasites or viable parasites only, with SYTO 11 or MitoTracker Deep Red FM, respectively. For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the 3D7-A wild-type parasite line (does not have the TdTomato gene, does not produce gametocytes) were exposed to a 3 hr dihydroartemisinin (DHA) pulse at subcurative doses at the ring stage (0–20 hpi) or maintained under a lethal dose (200 nM, ‘kill’ control) for ~24 hr. Flow cytometry measurements were performed the next day, within the same asexual cycle. (B) Total parasitemia as determined using SYTO-11, and the distribution of MitoTracker (MT) Deep Red FM-positive (viable) and –negative (non-viable and non-stained) parasites after DHA exposure. (C) Dot plots of the initial gating strategy. The red blood cell (RBC) population was gated first for cell granularity and size (SSC-A versus FSC-A plot) and then for a defined singlet population (FSC-H versus FSC-A plot). (D) Flow cytometry dot plots for MitoTracker Deep Red FM, SYTO 11, and TdTomato (marks gametocytes in the gametocyte-reporter lines). Some presumably healthy parasites were not stained with MitoTracker, as revealed by the presence of MitoTracker-negative/SYTO 11-positive parasites in the no-drug control.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line were exposed to a 3 hr dihydroartemisinin (DHA) pulse at subcurative doses at the ring stage (0–10 hpi) or maintained under a lethal dose (200 nM, ‘kill’ control) for up to 48 hr. Flow cytometry measurements were performed at different times within the same cycle, and after reinvasion, as indicated. (B) Total parasitemia as determined using SYTO-11, and distribution of MitoTracker (MT) Deep Red FM-positive (viable) and –negative (non-viable and non-stained) parasites after DHA exposure. (C–E) Flow cytometry dot plots for MitoTracker Deep Red FM, SYTO 11, and TdTomato (marks gametocytes) at 6–16 hpi (C) and 24–34 hpi (D) of the same cycle of DHA treatment, and ~24–34 hpi of the next cycle (E). Some presumably healthy parasites were not stained with MitoTracker, as revealed by the presence of MitoTracker-negative/SYTO 11-positive parasites in the no-drug control (especially in ring-stage cultures).
 
 In cultures supplemented with choline, the sexual conversion rate increased from <10% in control cultures to ~40% in cultures exposed to a 5 or 10 nM DHA pulse at the trophozoite stage (Figure 1C–D). Importantly, total gametocytemia (determined at the next multiplication cycle after drug exposure, i.e., early gametocytes) was also clearly higher in DHA-exposed cultures than in control cultures (Figure 1E). This result indicates that the increase in the sexual conversion rate is not only attributable to the lower number of asexual parasites after drug treatment, but also to a net increase in the number of gametocytes produced. By contrast, in cultures in which sexual conversion was already stimulated by choline depletion, DHA treatment did not result in a further increase in the sexual conversion rate or in the absolute number of gametocytes (Figure 1C–E). Similar results were obtained in experiments in which sexual conversion rates were calculated based only on viable parasites as identified by a marker of active mitochondria (Figure 1—figure supplement 2), using an analogous reporter line generated in the 3D7-E5 genetic background that has lower levels of basal sexual conversion than NF54 (E5-gexp02-Tom line, Figure 1—figure supplement 3; Portugaliza et al., 2019), and using a transgenic line with the fluorescent reporter under the control of the etramp10.3 (PF3D7_1016900) gametocyte-specific promoter (NF54-10.3-Tom line) (Portugaliza et al., 2019). Using this latter parasite line, we measured sexual conversion rates by flow cytometry, by immunofluorescence assay (IFA) detecting the Pfs16 (PF3D7_0406200) early gametocyte marker and by light microscopy analysis of Giemsa-stained blood smears (Figure 1—figure supplement 1B). All approaches yielded similar results and confirmed enhanced sexual conversion after exposure of trophozoites to subcurative doses of DHA (Figure 1—figure supplement 4).
 
@@ -59,11 +95,39 @@ Gametocytes of the NF54-gexp02-Tom line produced in cultures treated with 5 nM D
 
 **Figure 2.:** (A) Schematic representation of the assay. Sorbitol-synchronized cultures of the NF54-gexp02-Tom line were maintained under control non-inducing conditions (+ choline, CTL), exposed to a 3 hr 5 nM DHA pulse (in the presence of choline) at the trophozoite stage, or maintained in the absence of choline (– choline, used as a positive control for a gametocyte-inducing condition). On the first day of Generation 1, N-acetylglucosamine (GlcNAc) was added and maintained for 4 d to eliminate asexual parasites and obtain pure gametocyte cultures. The different cultures were used to infect Anopheles mosquitoes by standard membrane feeding. (B) Gametocytemia at the time of mosquito infection (10–13 d after DHA treatment), exflagellation levels (after 10 min of activation with fetal calf serum), number of oocysts/mosquito (n = 53 for CTL, n = 103 for DHA 5 nM, and n = 79 for – choline, data for all individually dissected mosquitoes from all replicates is shown) and average number of sporozoites/mosquito in each independent biological replicate (obtained from pooled dissections; in total, n = 65 for CTL; n = 111 for DHA; n = 123 for – choline). Results are from three independent biological replicates, but in one experiment the CTL culture was lost and in another one the – choline control was not included. Data are presented as the average and s.e.m. of the independent biological replicates, except for oocysts/mosquito results that are presented as standard box and whisker plots. The p-value is indicated only for significant differences (p<0.05) between conditions. (C) Representative images of gametocytes at different stages and activated gametes from DHA-treated cultures, showing no apparent abnormality. Images from live cell fluorescence analysis (Hoechst stains nuclei; TdTomato is expressed under the control of the gexp02 promoter) and Giemsa-stained smears are shown. (D) Representative images of mosquito midguts (transparent, circular structures are oocysts), oocysts, and sporozoites from DHA-treated and – choline cultures, showing no apparent abnormality.
 
-## DHA exposure at the ring stage does not enhance sexual conversion
+### DHA exposure at the ring stage does not enhance sexual conversion
 
 A DHA pulse (5 or 10 nM) at the early ring stage that reduced growth by <25% (Figure 3A–B) did not enhance sexual conversion. Instead, it resulted in a reduction of sexual conversion and gametocytemia, both in choline-supplemented and choline-depleted NF54-gexp02-Tom cultures (Figure 3C–E; Figure 3—figure supplement 1). This unexpected result was confirmed using the NF54-10.3-Tom reporter line and the different methods described above to assess sexual conversion (Figure 3—figure supplement 2). In an additional set of experiments using NF54-gexp02-Tom cultures, we tested higher concentrations of the drug, and again observed a decrease in sexual conversion rates that in choline-depleted cultures was more marked with higher concentrations of the drug (Figure 3—figure supplement 3). In these experiments, we determined sexual conversion by measuring expression of the gametocyte reporter at 24 and 48 hr post invasion (hpi), and observed no difference between sexual conversion determined at the two different time points. This result excludes the possibility that the lower conversion rates observed in cultures exposed to DHA at the ring stage are attributable to a DHA-induced delay in sexual conversion or gametocyte development (Figure 3—figure supplement 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–40 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Representative SYTO 11 (stains parasite DNA) versus TdTomato (marks gametocytes) flow cytometry plots. (D) Sexual conversion rate determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (E) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel D). In all panels, data are presented as the average and s.e.m. of four independent biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–40 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia of live parasites (asexual + sexual parasites) determined with a mitochondrial membrane potential stain (MitoTracker Deep Red FM). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Representative MitoTracker Deep Red FM versus TdTomato (marks gametocytes) flow cytometry dot plots. (D) Sexual conversion rates determined by flow cytometry, calculated using MitoTracker-positive cells only. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (E) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel D). In all panels, data are presented as the average and s.e.m. of four independent biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-10.3-Tom line (expression of the fluorescence reporter starts later during gametocyte development than in the NF54-gexp02-Tom line) under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the ring stage (1–6 hpi). Sexual conversion was measured by (i) flow cytometry analysis (FACS) on D1 (D0 is the first day of Generation 1) to determine the initial parasitemia (using the SYTO 11 stain), and on D3 to determine the gametocytemia (SYTO 11 and TdTomato signal) in cultures treated with N-acetylglucosamine (GlcNAc); (ii) immunofluorescence assay (IFA) analysis of cultures treated with ML10 using the Pfs16 marker; (iii) flow cytometry analysis on D1 to determine the initial parasitemia, and on D4 light microscopy analysis of Giemsa-stained blood smears (Giemsa) to determine the gametocytemia in cultures treated with GlcNAc. (B) Survival rate of cultures exposed to different drug doses, using total D1 parasitemia values (asexual + sexual parasites) determined by flow cytometry (FACS). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates as determined by FACS, IFA, and Giemsa-stained blood smears. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites, determined by flow cytometry (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion, at 24 or 48 hpi of the next multiplication cycle. To measure sexual conversion at 48 hpi, cultures were treated with ML10 to prevent an additional round of reinvasion that would increase the asexual parasitemia. (B) Survival rate of cultures exposed to the different drug doses, using 24 hpi total parasitemia values (asexual + sexual parasites) based on identification of all parasites or viable parasites only, with SYTO 11 or MitoTracker Deep Red FM, respectively. For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry. The p-value is indicated only for comparison between 24 and 48 hpi readouts of sexual conversion and for treatment versus control (no drug) significant differences (p<0.05); a single value is shown when all drug concentrations tested yielded a similar p-value. A two-way ANOVA test was used (time of readout was included as a variable). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
 To explore the possibility that DHA exposure at the early ring stage may stimulate immediate sexual conversion via the same cycle conversion (SCC) pathway (Bancells et al., 2019), rather than by the canonical next cycle conversion (NCC) pathway, we assessed the effect of DHA exposure at the ring stage on the level of gametocytes produced within the same cycle of exposure (Figure 4A). We observed no apparent differences in sexual conversion rates via the SCC route between DHA-exposed cultures and their controls (Figure 4B–C; Figure 4—figure supplement 1). Similar results were obtained using the NF54-10.3-Tom reporter line and flow cytometry or light microscopy analysis of Giemsa-stained smears to measure sexual conversion by the SCC pathway. However, IFA analysis of this parasite line using anti-Pfs16 antibodies revealed an increase in the proportion of parasites expressing this endogenous protein upon DHA exposure (Figure 4—figure supplement 2). The significance of this observation remains unclear but it may indicate a rapid effect of DHA on the expression of some gametocyte specific genes without further sexual development.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) within the same multiplication cycle (~30–40 hpi) to determine the effect of the drug pulse only on production of new gametocytes by the SSC route. (B) Sexual conversion rate determined by flow cytometry. No significant difference (p<0.05) with the control (no drug) was observed for any treatment condition. (C) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel B). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) within the same cycle (~30–40 hpi) to determine the effect of the drug pulse only on production of new gametocytes by the SSC route. (B) Sexual conversion rates determined by flow cytometry, calculated using MitoTracker-positive cells only. No significant difference (p<0.05) with the control (no drug) was observed for any treatment condition. (C) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel B). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-10.3-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the early ring stage (1–6 hpi). Sexual conversion was measured by: (i) flow cytometry analysis (FACS) on D1 (D0 is the first day of Generation 0, that is, the day of drug treatment) to determine the initial parasitemia (using the SYTO 11 stain), and on D3 to determine the gametocytemia (SYTO 11 and TdTomato signal) in cultures treated with N-acetylglucosamine (GlcNAc); (ii) immunofluorescence assay (IFA) analysis of cultures treated with ML10 using the Pfs16 marker; (iii) flow cytometry analysis on D1 to determine the initial parasitemia, and on D4 light microscopy analysis of Giemsa-stained blood smears (Giemsa) to determine the gametocytemia in cultures treated with GlcNAc. (B) Sexual conversion rates as determined by FACS, IFA, and Giemsa-stained blood smears. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (C) Distribution of absolute parasitemia of asexual and sexual parasites, determined by flow cytometry (from the same flow cytometry measurements as in panel B). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
 
 In these experiments, choline depletion did not increase sexual conversion via the SCC route (Figure 4B). This result may be explained by two alternative scenarios: (i) conversion via the SCC route is insensitive to choline depletion; (ii) ring stages are insensitive to stimulation of sexual conversion by choline depletion. To distinguish between these two possibilities, we assessed sexual conversion via the NCC pathway in cultures in which choline was depleted at different stages of the life cycle (Figure 5A). We found that choline depletion at the ring stage does not induce sexual conversion, in contrast to depletion at the trophozoite stage (Figure 5B–C). Altogether, these results show that in parasites at the ring stage neither a DHA pulse nor choline depletion induces sexual conversion, suggesting that this developmental stage is largely insensitive to environmental stimulation of sexual conversion.
 
@@ -71,9 +135,25 @@ In these experiments, choline depletion did not increase sexual conversion via t
 
 **Figure 5.:** (A) Schematic representation of the assay. Choline was removed from tightly synchronized cultures of the NF54-gexp02-Tom line for the periods indicated, and sexual conversion rates measured after reinvasion by flow cytometry (FACS;~24–29 hpi of the following multiplication cycle) or by light microscopy analysis of Giemsa-stained smears (Giemsa;~96 hpi) in cultures treated with GlcNac. Control (CTL) cultures were maintained with choline all the time. (B) Sexual conversion rate for cultures under different conditions. The p-value is indicated only for choline depletion versus control significant differences (p<0.05). (C) Distribution of absolute parasitemia of asexual and sexual parasites, determined by flow cytometry (from the same flow cytometry measurements as in panel B). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
 
-## Exposure to CQ or heat shock at the trophozoite stage can also enhance sexual conversion
+### Exposure to CQ or heat shock at the trophozoite stage can also enhance sexual conversion
 
 Using the same drug pulse approach, we assessed whether CQ, a drug with a different mode of action than DHA (Haldar et al., 2018), also stimulates sexual conversion (Figure 6A). Exposure to 80 nM CQ at the trophozoite stage, a dose that induces ~40% lethality (Figure 6B), resulted in enhanced sexual conversion rates in choline-supplemented cultures (Figure 6C–D; Figure 6—figure supplement 1). However, the level of induction was only ~ twofold, much lower than induction by DHA, and there was no consistent induction at higher or lower drug doses. Similar to DHA, CQ exposure at the trophozoite stage did not increase sexual conversion in choline-depleted cultures (Figure 6C–D), and exposure to CQ at the ring stage did not enhance sexual conversion by either the NCC or the SCC (Figure 6—figure supplements 2–3) routes. Reduced sexual conversion was observed in choline-depleted cultures treated with CQ doses that kill the vast majority of parasites, but this needs to be interpreted with caution because of the intrinsic limitations of sexual conversion assays when the majority of parasites are killed (Figure 6; Figure 6—figure supplements 1–2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr CQ pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rate determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr CQ pulse at subcurative doses at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia of live parasites (asexual + sexual parasites) determined with a mitochondrial membrane potential stain (MitoTracker Deep Red FM). For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry, calculated using MitoTracker-positive cells only. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr CQ pulse at subcurative doses at the ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–40 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to the different drug doses, using total parasitemia values (asexual + sexual parasites) based on identification of all parasites with SYTO 11 or viable parasites only with MitoTracker Deep Red FM. For each choline condition, values are presented relative to the parasitemia in the control cultures (no drug). (C) Sexual conversion rates determined by flow cytometry. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr CQ pulse at subcurative doses at the early ring stage (0–10 hpi). Sexual conversion was measured by flow cytometry (FACS) within the same cycle (~30–40 hpi) to determine the effect of the drug pulse only on the production of new gametocytes by the SSC route. (B) Sexual conversion rates as determined by flow cytometry using SYTO 11 or MitoTracker Deep Red FM to identify all parasites or viable parasites only, respectively, in addition to TdTomato to identify gametocytes. No significant difference (p<0.05) with the control (no drug) was observed for any treatment condition. (C) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel B). In all panels, data are presented as the average and s.e.m. of two independent biological replicates.
 
 We also tested the effect of an unrelated type of stress, a 3 hr heat shock at 41.5°C mimicking a malarial febrile episode, on sexual conversion. Exposure of choline-supplemented cultures at the trophozoite stage to heat shock, which reduced survival by ~40%, resulted in a ~ fourfold increase in sexual conversion and gametocytemia (Figure 7).
 
@@ -81,9 +161,17 @@ We also tested the effect of an unrelated type of stress, a 3 hr heat shock at 4
 
 **Figure 7.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr heat shock (41.5°C) at the trophozoite stage (25–30 hpi). Sexual conversion was measured by flow cytometry (FACS) after reinvasion (~30–35 hpi of the next multiplication cycle). (B) Survival rate of cultures exposed to heat shock (HS) or maintained at 37°C (CTL), using total parasitemia values (asexual + sexual parasites). For each choline condition, values are presented relative to the parasitemia in the control cultures. (C) Sexual conversion rate determined by flow cytometry. The p-value is indicated only for heat shock versus control significant differences (p<0.05). (D) Distribution of absolute parasitemia of asexual and sexual parasites (from the same flow cytometry measurements as in panel C). In all panels, data are presented as the average and s.e.m. of three independent biological replicates.
 
-## Enhancement of sexual conversion by DHA operates via pfap2-g
+### Enhancement of sexual conversion by DHA operates via pfap2-g
 
 To determine whether stimulation of sexual conversion by DHA involves the activation of the master regulator pfap2-g (PF3D7_1222600), we analyzed the transcript levels for this gene after a DHA pulse, and also for one of its earliest known targets, gexp02 (Filarsky et al., 2018; Josling et al., 2020; Llorà-Batlle et al., 2020; Portugaliza et al., 2019; Silvestrini et al., 2010). Transcript levels for the two genes were determined at the schizont stage of the cycle of exposure and at the ring stage of the next cycle. A subcurative DHA pulse at the trophozoite stage resulted in upregulation of both pfap2-g and gexp02 relative to the serine-tRNA ligase (PF3D7_0717700) reference gene in choline-supplemented cultures, but not in choline-depleted cultures (Figure 8A–C). By contrast, exposure to DHA at the ring stage resulted in reduced expression of both genes (Figure 8D–F). Analysis of transcripts only 2 hr after DHA exposure at the ring stage did not reveal induction of pfap2-g or gexp02 (Figure 8G–I), ruling out activation of the genes at a time consistent with conversion via the SCC route. Identical results were obtained when normalizing pfap2-g or gexp02 transcript levels against ubiquitin-conjugating enzyme (PF3D7_0812600) as a reference gene (Figure 8—figure supplement 1). Overall, the findings of these transcriptional analyses clearly mirror the effect of the drug on sexual conversion rates, indicating that induction of sexual conversion by DHA is associated with pfap2-g activation.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig8-v1.jpg)
+
+**Figure 8.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). RNA for transcriptional analysis was collected from ML10-treated cultures at the mature schizont stage (48–53 hpi) and, after reinvasion, from cultures at the early ring stage (cultures not treated with ML10,~5 hpi). (B–C) Transcript levels of pfap2-g (B) or gexp02 (C) normalised against the serine-tRNA ligase (serrs) gene. (D–F) Same as panels A-C, but cultures were exposed to DHA at the ring stage (0–10 hpi). (G–I) Same as panels D-F, but RNA for transcriptional analysis was collected only 2 hr after completing the drug pulse. Data are presented as the average and s.e.m. of four (panels B-C, rings) or two (other panels) independent biological replicates. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/60058/elife-60058-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic representation of the assay. Tightly synchronized cultures of the NF54-gexp02-Tom line under non-inducing (+ choline) or inducing (– choline) conditions were exposed to a 3 hr DHA pulse at subcurative doses at the trophozoite stage (25–30 hpi). RNA for transcriptional analysis was collected from ML10-treated cultures at the mature schizont stage (48–53 hpi) and, after reinvasion, from cultures at the early ring stage (cultures not treated with ML10,~5 hpi). (B–C) Transcript levels of pfap2-g (B) or gexp02 (C) normalized against the ubiquitin-conjugating enzyme (uce) gene. (D–F) Same as panels A-C, but cultures were exposed to DHA at the ring stage (0–10 hpi). (G–I) Same as panels D-F, but RNA for transcriptional analysis was collected only 2 hr after completing the drug pulse. Data are presented as the average and s.e.m. of four (panels B-C, rings) or two (other panels) independent biological replicates. The p-value is indicated only for treatment versus control (no drug) significant differences (p<0.05).
 
 ## Discussion
 
@@ -99,7 +187,164 @@ Altogether, here we provide a detailed characterization of the changes in P. fal
 
 ## Materials and methods
 
-## Parasite cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>pfap2-g</td>
+      <td>PlasmoDB</td>
+      <td>PF3D7_1222600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>gexp02</td>
+      <td>PlasmoDB</td>
+      <td>PF3D7_1102500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-gexp02-Tom</td>
+      <td>PMID:31601834</td>
+      <td></td>
+      <td>Maintained in culture with 2 mM choline</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>E5-gexp02-Tom</td>
+      <td>PMID:31601834</td>
+      <td></td>
+      <td>Maintained in culture with 2 mM choline</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-10.3-Tom</td>
+      <td>PMID:31601834</td>
+      <td></td>
+      <td>Maintained in culture with 2 mM choline</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. No. 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ML10</td>
+      <td>PMID:28874661; S. Osborne (LifeArc) and D. Baker (LSHTM)</td>
+      <td></td>
+      <td>cGMP-dependent protein kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydroartemisinin (DHA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. D7439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. C6628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Choline chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. C7527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl-d-glucosamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. A8625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACSDiva Software</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_001456</td>
+      <td>Flow cytometryacquisition andanalysis using BD LSRFortessa machine</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowing Software version 2.5.1</td>
+      <td>Perttu Terho</td>
+      <td>RRID:SCR_015781</td>
+      <td>Flow cytometry data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pfs16 (mouse, monoclonal)</td>
+      <td>R.Sauerwein, Radboud University</td>
+      <td>32F717:B02</td>
+      <td>IFA (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti-mouse IgG–Alexa Fluor 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. A11029</td>
+      <td>IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYTO 11</td>
+      <td>Life Technologies</td>
+      <td>Cat. No. S7573</td>
+      <td>Flow cytometry (0.016 μM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MitoTracker Deep Red FM</td>
+      <td>Invitrogen</td>
+      <td>Cat. No. M22426</td>
+      <td>Flow cytometry (0.6 µM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Applichem lifescience</td>
+      <td>Cat. No. A4099.0005</td>
+      <td>IFA (5 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33258</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. H3569</td>
+      <td>Live cellfluorescence microscopy (2 μM)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite cultures
 
 The transgenic reporter lines NF54-gexp02-Tom, E5-gexp02-Tom, and NF54-10.3-Tom were previously described and characterized (Portugaliza et al., 2019). These parasite lines carry a tdTomato reporter gene under the control of either the gexp02 or the etramp10.3 promoters. Since these P. falciparum lines were generated and validated in our laboratory, and the expression pattern of the fluorescent markers confirms their identities, additional authentication was considered unnecessary. They were not tested for Mycoplasma, but Mycoplasma contamination is not known to affect any of the parameters analyzed in this study.
 
@@ -107,28 +352,28 @@ Cultures were regularly maintained at 37°C under shaking (100 rpm) or static co
 
 Cultures for the production of mature gametocytes for mosquito infection were maintained in a semi-automated shaker incubator system as described (Mogollon et al., 2016). Fresh human serum and erythrocytes for these experiments were obtained from the Dutch National Blood Bank (Sanquin Amsterdam, the Netherlands; permission granted from donors for the use of blood products for malaria research and microbiology; tested for safety). Erythrocytes and human serum from diﬀerent donors were pooled.
 
-## Drug treatment and determination of drug survival rates
+### Drug treatment and determination of drug survival rates
 
 To test the impact of drugs on sexual conversion in the presence or absence of choline, after tight synchronization (0–5 or 0–10 hpi) cultures at ~1.5% parasitemia were split in two and one culture was maintained with a 2 mM choline supplement whereas the other had no choline added. Drug pulses with DHA (Sigma-Aldrich no. D7439) or CQ (Sigma-Aldrich no. C6628) were performed at 1–6 hpi (NF54-10.3-Tom) or 0–10 hpi (NF54-gexp02-Tom) for exposure at the ring stage, or at 25–30 hpi for exposure at the trophozoite stage. After 3 hr, the drug was removed and fresh, pre-warmed culture medium was added. In some experiments, 200 nM DHA was maintained for 48 hr as a ‘kill’ control (Xie et al., 2014).
 
 The survival rate was calculated as the total parasitemia (asexual + sexual parasites) at the next cycle after drug exposure (measured at ~30–35 hpi or ~30–40 hpi) in treated cultures relative to control cultures, and expressed as percentage. Parasitemia was measured by flow cytometry (see below).
 
-## Determination of sexual conversion rates
+### Determination of sexual conversion rates
 
 A schematic of our approach to determine sexual conversion rates is provided in Figure 1—figure supplement 1. We define day 0 (D0) as the first day of the next cycle after drug exposure, which corresponds to the first day of Generation one in the schematics in the figures. D1 corresponds to the day when new sexual parasites become stage I gametocytes. When using the NF54-gexp02-Tom and E5-gexp02-Tom lines, the sexual conversion rate was calculated as the sexual stage parasitemia divided by the total (sexual + asexual) parasitemia, and expressed as percentage. Asexual and sexual parasites were quantified by flow cytometry at ~30–35 hpi or ~30–40 hpi (D1) of the cycle after drug treatment, in the absence of chemicals that inhibit asexual replication. When using the NF54-10.3-Tom line, the sexual conversion rate was measured by dividing the gametocytemia on day 3 (D3) by the initial ring stage parasitemia on D0. In this case, cultures were treated with 50 mM N-acetyl-D-glucosamine (GlcNAc; Sigma-Aldrich no. A8625) from D1 onwards to inhibit asexual replication. In experiments with the NF54-10.3-Tom line, gametocytemia was also measured on D0 to identify gametocytes already present in the culture at the beginning of the experiment, but it was found to be negligible. In any case, it was subtracted from D3 gametocytemia, such that only gametocytes newly formed during the assay were considered. Unless otherwise indicated, statistical analysis of differences in sexual conversion was performed using one-way ANOVA with Tukey HSD as the post hoc test. Variance was assumed to be homogenous because the sample size was the same for all groups, and they contain the same type of data.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry analysis to measure parasitemia at the cycle of drug exposure was performed using the nucleic acid stain SYTO 11 (0.016 μM) (Life Technologies no. S7573) and a BD FACSCalibur machine as previously described (Rovira-Graells et al., 2016). To measure asexual and tdTomato-positive sexual parasites, we used a BD LSRFortessa machine as previously described (Portugaliza et al., 2019), with small modifications after the addition of the mitochondrial membrane potential MitoTracker Deep Red FM fluorescent dye (Invitrogen no.M22426) at 0.6 µM to identify live parasites (Figure 1—figure supplements 7–8; Amaratunga et al., 2014). Briefly, the erythrocyte population was defined using the side scatter area (SCC-A) versus forward scatter area (FSC-A) plot, followed by singlet gating using the forward scatter height (FSC-H) versus FSC-A plot. From the singlet population, the parasites were simultaneously analyzed for tdTomato fluorescence (laser: 561 nm; filter: 582/15; power: 50 mW), SYTO 11 fluorescence (laser: 488 nm; Filter: 525/50-505LP; power: 50 mW), and MitoTracker fluorescence (laser: 640 nm; Filter: 670/14-A; power: 40 mW). Total gametocytes were quantified on the double-positive gate of the tdTomato versus SYTO 11 plot. Total asexual stages were quantified on the tdTomato-negative but SYTO 11-positive gate, whereas viable asexual stages were measured on the tdTomato-negative but MitoTracker-positive gate. Flowing Software version 2.5.1 (Perttu Terho) was used for downstream analysis.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 Immunofluorescence assays (IFA) were performed as previously described (Bancells et al., 2019; Portugaliza et al., 2019). Briefly, an aliquot of culture was treated with 80 nM ML10 (cGMP-dependent protein kinase inhibitor) (Baker et al., 2017), starting at ~30–35 hpi until ~48–53 hpi, to inhibit schizont rupture and allow maturation of gametocytes to the stage when all of them express Pfs16. Air-dried blood smears containing schizonts and stage I gametocytes (~48–53 hpi) were fixed with 1% paraformaldehyde in PBS, permeabilized with 0.1% Triton X-100 in PBS, and blocked with 3% BSA in PBS. The gametocyte-specific primary antibody mouse-anti-PfS16 (1:400; 32F717:B02, a gift from R. Sauerwein, Radboud University) and the goat-anti-mouse IgG–Alexa Fluor 488 secondary antibody (1:1,000, Thermo Fisher no.A11029) were used to identify stage I gametocytes, whereas DAPI (5 μg/mL) was added to stain parasite DNA. IFA slides were mounted using Vectashield (Palex Medical) and viewed under an Olympus IX51 epifluorescence microscope for determination of sexual conversion rates. A minimum of 200 DAPI-positive cells was counted for each sample.
 
-## Transcriptional analysis
+### Transcriptional analysis
 
 Trizol reagent (Invitrogen no. 15596026) was used to collect and preserve total RNA, followed by extraction using a protocol designed for samples with low RNA concentration (Mira-Martínez et al., 2017). Briefly, RNA from Trizol samples was purified using a commercial kit (RNeasy Mini Kit, Qiagen no. 74104) with additional on-column DNAse treatment (Qiagen no. 79254). Next, cDNA synthesis was performed using the AMV Reverse Transcription System (Promega), with a combination of oligo (dT) and random primers. Quantitative PCR (qPCR) analysis of the cDNAs was performed as previously described (Bancells et al., 2019) using triplicate wells (technical replicates) for each biological replicate of each sample. Transcript levels of pfap2-g and gexp02 were normalized against the housekeeping genes serine-tRNA ligase and ubiquitin-conjugating enzyme. All qPCR primers used have been previously described (Bancells et al., 2019; Portugaliza et al., 2019). Statistical analysis of transcript levels was performed using one-way ANOVA with Tukey HSD as the post hoc test, as for the analysis of sexual conversion rates.
 
-## Production of mature gametocytes and mosquito feeding
+### Production of mature gametocytes and mosquito feeding
 
 Cultures maintained in a medium containing 0.5% Albumax and supplemented with 2 mM choline were synchronized for ring stages by D-Sorbitol treatment and diluted to a ﬁnal parasitemia of 1.5%. At 22 hr after synchronization, DHA (5 nM) was added to the cultures for 3 hr, and 24 hr later (i.e., after reinvasion) culture conditions were changed to medium with 10% human serum instead of Albumax and choline, and GlcNac (50 mM) was added to kill asexual stages. GlcNac was maintained for 4 d. Gametocyte cultures were followed during 9–13 d after DHA-treatment with medium changes twice a day, but without replenishing with fresh erythrocytes. At days 9–13, gametocyte development was analyzed in Giemsa stained blood smears and exflagellation was monitored after activation as described (Marin-Mogollon et al., 2018). Gametocytes (day 10–13) were fed to Anopheles stephensi mosquitoes using the standard membrane feeding assay (SMFA) (Marin-Mogollon et al., 2018; Ponnudurai et al., 1989). Oocysts (day 7 and 14) and salivary gland sporozoites (day 14) were counted as described (Marin-Mogollon et al., 2018). Statistical analysis of differences in the parameters measured (Figure 2) was performed using one-way ANOVA with Tukey HSD as the post hoc test, except for oocyst/mosquito values. For the oocyst/mosquito analysis, we used the Kruskal-Wallis test with post hoc Dunn’s test (this is used because the data is not normally distributed, Shapiro-Wilk test p<0.001).

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.39633.001 The Mediator complex stimulates the cooperative assembly of a pre-initiation complex (PIC) and recruitment of RNA Polymerase II (Pol II) for gene activation. The core Mediator complex is organized into head, middle, and tail modules, and in budding yeast ( Saccharomyces cerevisiae ), Mediator recruitment has generally been ascribed to sequence-specific activators engaging the tail module triad of Med2-Med3-Med15 at upstream activating sequences (UASs). We show that yeast lacking Med2-Med3-Med15 are viable and that Mediator and PolII are recruited to promoters genome-wide in these cells, albeit at reduced levels. To test whether Mediator might alternatively be recruited via interactions with the PIC, we examined Mediator association genome-wide after depleting PIC components. We found that depletion of Taf1, Rpb3, and TBP profoundly affected Mediator association at active gene promoters, with TBP being critical for transit of Mediator from UAS to promoter, while Pol II and Taf1 stabilize Mediator association at proximal promoters.
+The Mediator complex stimulates the cooperative assembly of a pre-initiation complex (PIC) and recruitment of RNA Polymerase II (Pol II) for gene activation. The core Mediator complex is organized into head, middle, and tail modules, and in budding yeast (Saccharomyces cerevisiae), Mediator recruitment has generally been ascribed to sequence-specific activators engaging the tail module triad of Med2-Med3-Med15 at upstream activating sequences (UASs). We show that yeast lacking Med2-Med3-Med15 are viable and that Mediator and PolII are recruited to promoters genome-wide in these cells, albeit at reduced levels. To test whether Mediator might alternatively be recruited via interactions with the PIC, we examined Mediator association genome-wide after depleting PIC components. We found that depletion of Taf1, Rpb3, and TBP profoundly affected Mediator association at active gene promoters, with TBP being critical for transit of Mediator from UAS to promoter, while Pol II and Taf1 stabilize Mediator association at proximal promoters.
 
 ## Introduction
 
@@ -32,11 +32,19 @@ To investigate PIC-dependent Mediator recruitment in vivo we have performed ChIP
 
 ## Results
 
-## The tail module triad is non-essential but is important for recruitment of Mediator and Pol II to all promoters
+### The tail module triad is non-essential but is important for recruitment of Mediator and Pol II to all promoters
 
 As outlined in the Introduction, recruitment of Mediator by a mechanism independent of the tail module triad has been proposed on the basis of experiments employing med3∆ med15∆ yeast mutants. However, the possibility that residual tail module function supported by Med2 is sufficient to allow Mediator and Pol II recruitment has not been formally excluded. Therefore, to assess more rigorously the role of the tail module triad in Mediator function, we sought to determine the effect of deletion of all three tail module triad subunits on yeast viability and Mediator recruitment.
 
 Segregants from diploid yeast heterozygous for MED2, MED3, and MED15 (complete ORF deletions) included viable med2∆ med3∆ med15∆ mutants, which showed modest growth defects similar to those seen for med3∆ med15∆ yeast (Figure 1A). RNA-seq showed that two independent segregants exhibited genome-wide expression patterns more similar to each other than to wild type yeast (Figure 1B) (Fisher’s z-score = 37, p<10−10 for the null hypothesis that the correlations are not significantly different). Down-regulated genes were enriched for SAGA-dominated promoters (75 of 164 genes down-regulated by >2X in both segregants; p<10−34, hypergeometric test), while up-regulated genes showed marginal enrichment for SAGA-dominated promoters (35 of 442 genes, p=0.04), consistent with previous findings (Ansari et al., 2012a). RNA-seq also confirmed the triple deletion phenotype, with no reads present for sequences from the MED2, MED3, or MED15 ORF.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig1-v2.jpg)
+
+**Figure 1.:** (A) Spot dilutions (five-fold from left to right) of the indicated strains were made on YPD or CSM plates and allowed to grow at 30 ˚C for 3 days. The two med2∆ med3∆ med15∆ strains are independent segregants. (B) Comparison of transcript levels (reads per million) by RNA-seq for two independent med2∆ med3∆ med15∆ segregants (left panel), and between segregant one and the wild type parent strain (right panel). Only data for mRNA genes are plotted, after normalization to total mRNA. (C) Normalized Med17 occupancy in kin28-AA and med2∆ med3∆ med15∆ kin28-AA yeast after 1 hr treatment with rapamycin (designated ‘AAR’). Reads were mapped to all SAGA-dominated genes, all TFIID-dominated genes, and to the 498 genes exhibiting detectable Mediator ChIP signal at UAS regions in wild type yeast (Jeronimo et al., 2016). Genes were normalized for length and aligned by transcription start site (TSS) and transcription end site (TES), and are sorted according to average signal intensity. A compressed color scale was used for heat maps to better allow visualization of signal. (D) Browser scan showing normalized Med17 occupancy in wild type and med2∆ med3∆ med15∆ yeast over a short region of Chromosome VII; the upper end of the occupancy scale (reads) is indicated on the upper right for each graph. Note that the peak associated with LEU1 (TFIID-dominated) is essentially unchanged in med2∆ med3∆ med15∆ relative to wild type yeast, while the two peaks at the left (associated with TFIID-dominated transcripts) and that associated with PMA1 (SAGA-dominated) are all reduced in med2∆ med3∆ med15∆ yeast.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Occupancy in kin28-AA yeast after rapamycin treatment for Med17 (Srb4; head), Med18 (Srb5; head), Med15 (Gal11; tail) and for Rpb1, and signal for an untagged control (KHW127, the kin28-AA strain) and input control, in reads per million (RPM) aligned at the TSS at all promoters (top) or promoters with Mediator peaks (bottom). (B) Overlap of Mediator peaks identified in this study after depletion of Kin28 using the anchor away technique with Med15 peaks identified by Jeronimo and Robert (Jeronimo and Robert, 2014) after inactivating Kin28 in kin28-as yeast. (C) ChIP-seq at UAS genes following IP against c-myc in kin28-AA med2∆ med3∆ med15∆ med17-myc yeast treated with rapamycin and an untagged control strain (KHW127).
 
 We next examined the effect of loss of the tail module triad on Mediator recruitment. Mediator association with UAS elements is seen in ChIP experiments at only a fraction of active yeast genes, and its association with active promoters appears to be transient, making it difficult to assess Mediator association with gene regulatory regions in wild type yeast (Fan et al., 2006; Fan and Struhl, 2009; Jeronimo and Robert, 2014; Paul et al., 2015; Wong et al., 2014). Mediator ChIP signal at promoters is greatly enhanced under conditions in which phosphorylation of the Pol II CTD by the Kin28 subunit of TFIIH is prevented, apparently by inhibiting escape of Pol II from the promoter proximal region (Jeronimo and Robert, 2014; Wong et al., 2014). We therefore constructed a Kin28 anchor away (kin28-AA) strain harboring the med2∆ med3∆ med15∆ mutations to assess Mediator occupancy genome-wide. Treatment of this strain with rapamycin tethers Kin28 to the Rpl13A ribosomal subunit via FKBP12 and FRB tags on the respective proteins, and leads to Kin28 eviction from the nucleus during ribosomal protein processing (Haruki et al., 2008). The strain also includes the tor1-1 mutation, which prevents the normal stress response provoked by rapamycin (Haruki et al., 2008).
 
@@ -48,15 +56,35 @@ Despite a considerable decrease in Mediator occupancy at gene promoters as measu
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig2-v2.jpg)
 
-**Figure 2.:** med2∆ med3∆ med15∆ yeast.(A) ChIP-seq of Rpb1 in wild type (BY4741) and med2∆ med3∆ med15∆ (∆tail) yeast. Left panel: normalized occupancy at S. cerevisiae UAS genes, defined as in Figure 1. Right panel: normalized occupancy over 1150 s. pombe genes having expression levels > 1 (Shetty et al., 2017). (For unknown reasons, ChIP-seq against Rpb1 in S. pombe exhibits low signal at 5’ regions and stronger signal at and beyond 3’ regions of transcribed genes; see for example (Shetty et al., 2017; Lee et al., 2017)). (B) Browser scans showing normalized Rpb1 occupancy in wild type (BY4741) and med2∆ med3∆ med15∆ yeast.
+**Figure 2.:** (A) ChIP-seq of Rpb1 in wild type (BY4741) and med2∆ med3∆ med15∆ (∆tail) yeast. Left panel: normalized occupancy at S. cerevisiae UAS genes, defined as in Figure 1. Right panel: normalized occupancy over 1150 s. pombe genes having expression levels > 1 (Shetty et al., 2017). (For unknown reasons, ChIP-seq against Rpb1 in S. pombe exhibits low signal at 5’ regions and stronger signal at and beyond 3’ regions of transcribed genes; see for example (Shetty et al., 2017; Lee et al., 2017)). (B) Browser scans showing normalized Rpb1 occupancy in wild type (BY4741) and med2∆ med3∆ med15∆ yeast.
 
-## Mediator association at UAS regions is stabilized by loss of TBP or Pol II
+### Mediator association at UAS regions is stabilized by loss of TBP or Pol II
 
 Previous work had indicated, and results of Figure 1 demonstrate unequivocally, that Mediator can associate with many promoters independently of the tail module triad, albeit at lower occupancy (Jeronimo et al., 2016; Petrenko et al., 2016). Based on known interactions of Mediator head and middle subunits with the general transcription machinery (Plaschka et al., 2015; Plaschka et al., 2016; Ansari and Morse, 2013; Soutourina et al., 2011; Eychenne et al., 2016; Esnault et al., 2008; Nozawa et al., 2017; Tsai et al., 2017; Robinson et al., 2016), we had previously suggested that Mediator might be recruited to tail module-independent targets via interactions with PIC components (Ansari et al., 2012a; Ansari and Morse, 2012b). To examine this possibility, we monitored Mediator occupancy genome-wide before and after depletion of PIC components using the anchor away method (Haruki et al., 2008).
 
 We chose three PIC components to subject to depletion: TATA-binding protein (TBP); Rpb3, an essential subunit of Pol II; and Taf1, a TFIID subunit that is not shared with the SAGA complex (Bhaumik, 2011). Depletion of any of these PIC components resulted in loss of viability, as expected (Figure 3—figure supplement 1A–B) (Haruki et al., 2008; Petrenko et al., 2017; Warfield et al., 2017). Pilot experiments showed that treatment of tbp-AA yeast with rapamycin resulted in depletion of TBP to near background levels, as measured by ChIP, within 30–60 min, consistent with prior work (Figure 3—figure supplement 2A) (Haruki et al., 2008; Wong et al., 2014; Tramantano et al., 2016; Grimaldi et al., 2014). Previous studies using anchor away of components of the transcription machinery have employed rapamycin treatment times varying from 30 min to 2 hr (Anandhakumar et al., 2016; Baptista et al., 2017; Haruki et al., 2008; Jeronimo et al., 2016; Petrenko et al., 2016; Petrenko et al., 2017; Tramantano et al., 2016; Warfield et al., 2017; Wong et al., 2014). Based on these studies and our results on TBP depletion, we chose to use one hr of rapamycin treatment as a time likely to allow a reasonable balance between attaining thorough depletion while also keeping indirect effects to a minimum.
 
 We first examined Mediator binding before and after depletion of TBP, Rpb3, and Taf1 using myc-tagged Med15, from the tail module triad, and Med18, from the head module. As mentioned earlier, Mediator ChIP signal at promoters is generally low due to rapid turnover during transcription, and many active promoters do not exhibit detectable Mediator ChIP signal at UAS sites (Jeronimo and Robert, 2014; Wong et al., 2014). We therefore narrowed our examination of Mediator occupancy to the 498 ‘UAS genes’ that exhibit Mediator occupancy at UAS regions in wild type yeast (Jeronimo et al., 2016). In agreement with prior reports, we observed association of both Med15 and Med18 at UAS regions for most of these genes, while a shift to the promoter region was seen for both Mediator subunits in kin28-AA yeast after rapamycin treatment (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig3-v2.jpg)
+
+**Figure 3.:** ChIP-seq was performed against (A) Med15 and (B) Med18 in tbp-AA, rpb3-AA, and taf1-AA yeast with (‘AAR’) and without (‘AA’) rapamycin treatment, and in kin28-AA yeast after rapamycin treatment. Heat maps and line graphs (normalized reads per million, RPM) depict results combined from two independent experiments (except for Med18 in taf1-AA yeast) averaged over 498 genes exhibiting detectable Mediator ChIP signal at UAS regions in wild type yeast (Jeronimo et al., 2016). (C) Browser scans showing occupancy of Med15 at two chromosomal regions in tbp-AA, rpb3-AA, and taf1-AA yeast with and without rapamycin treatment. YBL044W, between COR7 and ECM13, is an uncharacterized ORF and likely contains a UAS, as has been observed at many other uncharacterized or dubious ORFs (Paul et al., 2015). (D) Med2 and Med14 occupancy measured by ChIP-seq with and without depletion of TBP or Rpb3, at UAS genes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Ten-fold dilutions of indicated strains spotted onto YPD plates from left to right incubated 48 hr at 30 ˚C. (B) Growth in liquid YPD medium measured by OD600 at the indicated times after addition of 1 μg/ml of rapamycin. Error bars represent standard deviation for three biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Time course of TBP occupancy at RPL12A and PDC1 after rapamycin treatment measured by ChIP followed by qPCR. ChIP signals were normalized to a mock (no antibody) control after first subtracting input from IP values for both. Error bars represent standard deviation (n = 3). (B) Med15 occupancy determined by ChIP-seq is shown at UAS genes in strains YFR1321 (no FRB tag), EKY8 (tbp-AA), EKY13 (rpb3-AA), and EKY25 (taf1-AA). Line graphs depict average occupancy for taf1-AA yeast (green line), tbp-AA yeast (blue line), rpb3-AA yeast (brown line), and YFR1321 lacking an FRB tag (dark blue line).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) TBP occupancy in tbp-AA yeast with and without rapamycin addition. (B) Pol II occupancy in rpb3-AA yeast with and without rapamycin addition. ChIP was performed against Rpb3 in Replicate one and against Rpb1 in Replicate 2. (C) Taf1 occupancy in taf1-AA yeast with and without rapamycin addition. (D) Rpb1 occupancy in tbp-AA yeast with and without rapamycin addition (left), and TBP occupancy in rpb3-AA yeast with and without rapamycin addition.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Browser scans showing depletion of PIC components by anchor away in replicate experiments. Scans are normalized for read number within each set of strains (e.g., all four tbp-AA TBP experiments are normalized together). Note that depletion of Taf1 results in a decrease in Taf1 signal at the SAGA-dominated gene SNQ2 but not at the TFIID-dominated RPL4 promoter. Pol II occupancy was measured by performing ChIP against Rpb3 in Replicate one using rpb3-AA yeast (Figure 3—figure supplement 3), but this experiment yielded signal too low for browser scans to be informative. (B) Normalized occupancy shown in browser scans for Mediator subunits at PGK1 and PMA1 in kin28-AA yeast treated with rapamycin. Note the upstream (UAS) peak seen for Med15 but absent for Med17 and Med18.
 
 We had anticipated that depletion of PIC components might, by reducing interactions with Mediator at promoter regions, reduce Mediator occupancy at both promoter and UAS regions. However, Med15 and Med18 occupancy at UAS regions did not decrease upon depletion of TBP, Rpb3, or Taf1 (Figure 3A–B). For Med15, high occupancy was observed at UAS regions upon depletion of all three PIC components; occupancy was increased relative to that seen before depletion for TBP and Rpb3, but was constitutively high in the taf1-AA strain. This behavior was also evident at individual promoters, as Med15 occupancy increased at UAS sites upon depletion of TBP or Rpb3 but was constitutively high in taf1-AA yeast (Figure 3C). Consistent with these results, comparison of Med15 ChIP signal at UAS genes in FRB-tagged anchor away strains with an untagged control indicated that no effect of the epitope tag was seen in rpb3-AA yeast in the absence of rapamycin, while a modest increase (about 1.5 to 2-fold) was observed in tbp-AA yeast. A greater increase in signal was observed in taf1-AA yeast (Figure 3—figure supplement 2B); possibly the FRB tag in the latter strain interferes in some way with PIC assembly or function. For Med18, the ChIP signal was unchanged by depletion of TBP, Rpb3, or Taf1 (Figure 3B). ChIP-seq confirmed that all three PIC components were depleted, although Taf1 depletion was somewhat less efficient (Figure 3—figure supplements 3A–C and and 4A). Depletion of TBP essentially eliminated Pol II association, as expected, while depletion of Pol II resulted in a moderate reduction in TBP association, consistent with recently published work (Figure 3—figure supplement 3D) (Joo et al., 2017). ChIP-seq before and after depletion of TBP and Rpb3 against another tail module triad subunit, Med2, and against the scaffold subunit Med14 yielded results most similar to those seen with Med15, with both subunits showing increased occupancy after depletion of TBP or Rpb3 (Figure 3D).
 
@@ -70,7 +98,7 @@ A possible explanation for increased occupancy of Mediator subunits at UAS regio
 
 Although the notion of Mediator transit from UAS to promoter depending on PIC integrity is consistent with recent models of Mediator function at UAS regions (Jeronimo et al., 2016; Petrenko et al., 2016), the results so far do not help clarify how Mediator is recruited to promoters at the many genes for which Mediator association is not readily observed at upstream regions, or how recruitment occurs in the absence of the Mediator tail module triad. We therefore next modified our approach to allow PIC component depletion under conditions in which Mediator association with gene promoters was stabilized.
 
-## Mediator association with promoters depends on PIC components
+### Mediator association with promoters depends on PIC components
 
 We next asked how PIC component depletion affected Mediator association under conditions in which Mediator binding to proximal gene promoters was stabilized. For this purpose, we constructed double anchor away strains in which Kin28 and either TBP, Taf1, or Rpb3 were tagged with FRB to allow nuclear depletion upon treatment with rapamycin. We then separately introduced Myc-tagged Med15 and Med18 into each double anchor away strain. Depletion of Kin28 alone allows detection by ChIP of Mediator occupancy at promoters (Jeronimo and Robert, 2014; Wong et al., 2014); comparison with the double depletion strains after rapamycin treatment then allows determination of the effect of depleting TBP, Taf1, and Rpb3 on Mediator occupancy at gene promoters. As expected, these strains were all sensitive to rapamycin (Figure 3—figure supplement 1). We note that the kin28-tbp-AA strain harboring the Med15-myc epitope was slow growing; the med15-myc allele has been previously been found to behave as a hypomorph in conjuction with a med3∆ mutation (Ansari et al., 2012a; Zhang et al., 2004), and it evidently exhibits a negative growth phenotype in the context of the kin28-tbp-AA strain as well.
 
@@ -78,7 +106,25 @@ We first examined the effect of depleting PIC components on Mediator occupancy a
 
 Depletion of either Taf1 or Rpb3 resulted in decreased occupancy of Med15 and Med18 in comparison to depletion of Kin28 alone at almost all TFIID-dominated genes (Figure 5A–D). Decreased Med15 and Med18 occupancy was also observed at SAGA-dominated genes and UAS genes upon depletion of Rpb3, along with a partial shift towards the UAS region, while depletion of Taf1 also resulted in decreased Med18 occupancy but little change in Med15 occupancy, other than a small upstream shift, at SAGA-dominated and UAS genes. A more pronounced decrease in Med15 or Med18 occupancy at TFIID-dominated genes compared to SAGA-dominated genes after depletion of Rpb3 or Taf1 could also be observed at genes having similar levels of transcription (Figure 5—figure supplement 1), and examples can also be found of individual TFIID-dominated genes exhibiting greater loss of Mediator ChIP signal than at SAGA-dominated genes (Figure 5—figure supplement 2). We conclude that under conditions of Kin28 depletion, Mediator occupancy at promoters of TFIID-dominated genes, and to lesser extent SAGA-regulated genes, depends on both Taf1 and Pol II.
 
-## TBP is required for transit of Mediator from UAS to promoter
+![Figure 5.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heat maps showing occupancy of Med15 after depletion of Kin28 alone, or in combination with Taf1, TBP, or Rpb3, at SAGA-dominated and TFIID-dominated genes. (B) Same as (A), for Med18 occupancy. (C) Line graphs (normalized reads per million) depicting Med15 occupancy after depletion as in (A) and (B), aligned at the TSS and shown for SAGA-dominated (top), TFIID-dominated (middle), and UAS (bottom) genes. (D) Same as (C), but for Med18. Combined data for two replicate experiments was used for kin28-tbp-AA yeast; all other plots derive from single experiments that were consistent with replicate experiments. We note that variable results were observed for the effect on Med15 occupancy in kin28-taf1-AA yeast at SAGA-dominated genes, with peak intensity being reduced in some experiments and nearly unchanged in others, while reduced occupancy was consistently observed at TFIID genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Normalized Med15 (left) and Med18 (right) occupancy at similarly expressed (transcript levels between 5 and 10 (Nagalakshmi et al., 2008) SAGA-dominated and TFIID-dominated genes after depletion of Kin28 alone or in combination with Taf1, TBP, or Rpb3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Browser scans of two chromosomal regions showing greater reduction in normalized occupancy of Med15 (tail, red traces) and Med18 (head, green traces) at a TFIID-regulated gene (AFB1) and a SAGA/TFIID-regulated gene (CIS3) than at two SAGA-regulated genes (PDC1 and HSP150) in kin28-AA yeast after depletion of Rpb3 or Taf1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/39633/elife-39633-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (Med15 was used as a proxy for Med2 in kin28-AA yeast).
+
+### TBP is required for transit of Mediator from UAS to promoter
 
 The effect of depleting TBP together with Kin28 was markedly different from that of depleting Taf1 or Rpb3 and Kin28 (Figure 5A–D). At SAGA-dominated genes, occupancy of Med15 from the Mediator tail module did not decrease and shifted upstream in kin28-tbp-AA yeast compared to kin28-AA yeast (Figure 5A & C). This shift is also evident at UAS genes (Figure 5C), and yields a profile nearly identical to that seen upon depletion of TBP alone (Figure 5—figure supplement 3), suggesting that Mediator transit from UAS to promoter was inhibited by depletion of TBP. At TFIID-dominated genes, depletion of TBP resulted in an upstream shift of smaller magnitude, along with a reduction in the Med15 ChIP signal (Figure 5A & C). The smaller shift seen for TFIID-dominated genes than for SAGA-dominated genes is consistent with the average distance between UAS and TSS being larger for TATA-containing than for TATA-less promoters (Erb and van Nimwegen, 2011; Kristiansson et al., 2009), supporting the notion that depletion of TBP causes Mediator to be stranded at the UAS.
 
@@ -130,7 +176,213 @@ In summary, the work here provides new insights into the role of the Mediator ta
 
 ## Materials and methods
 
-## Yeast strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yFR1321</td>
+      <td>PMID: 24704787</td>
+      <td></td>
+      <td>Francois Robert (University of Montreal)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>KHW127</td>
+      <td>PMID: 24746699</td>
+      <td></td>
+      <td>Kevin Struhl (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>LS01</td>
+      <td>PMID: 15254252</td>
+      <td></td>
+      <td>Alan Hinnebusch (National Institutes of Health)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>LS10</td>
+      <td>PMID: 15254252</td>
+      <td></td>
+      <td>Alan Hinnebusch (National Institutes of Health)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>FWP510</td>
+      <td>PMID: 24100010</td>
+      <td></td>
+      <td>Fred Winston (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>8WG16 (Pol II) (mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>Cat# 664906</td>
+      <td>ChIP, 2 μg (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rpb3 (mouse monoclonal)</td>
+      <td>Neoclone</td>
+      <td>Cat# W0012</td>
+      <td>ChIP, 1 μg (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>9E10 (Myc) (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11667141001</td>
+      <td>ChIP, 2 μg (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>9E10 (Myc) (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# 11667149001</td>
+      <td>ChIP, 5 μg (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-protein A (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# P3775</td>
+      <td>ChIP, 2.5 μg (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TBP (affinity-purified rabbit polyclonal)</td>
+      <td>Tony Weil, Vanderbilt University</td>
+      <td>NA</td>
+      <td>ChIP, 2.5 μg (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>58C9 (TBP) (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab61411</td>
+      <td>ChIP, 5 μg (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Taf1 antisera (rabbit polyclonal)</td>
+      <td>Joseph Reese and Song Tan, Pennsylvania State University</td>
+      <td>NA</td>
+      <td>ChIP, 2 μL (1:250)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-FRB-kanMX6</td>
+      <td>Euroscarf</td>
+      <td>P30578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-2-FKB12-His3MX6</td>
+      <td>Euroscarf</td>
+      <td>P30583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSC11</td>
+      <td>Burke et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Magnetic Bead Isolation Kit</td>
+      <td>New EnglandBiolabs</td>
+      <td>Cat# S1550S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB Next Ultra RNA Library Prep Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E7530S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Library Prep Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E7645S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Multiplex Oligos for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E7710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEXTflex barcodes</td>
+      <td>BIOO Scientific</td>
+      <td>Cat# 514122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>Cat# R-5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bwa</td>
+      <td>PMID: 10571001</td>
+      <td>RRID: SCR_010910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SICER</td>
+      <td>PMID: 19505939</td>
+      <td>RRID: SCR_010843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioConductor</td>
+      <td>PMID: 15461798</td>
+      <td>RRID:SCR_006442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>PMID: 21221095</td>
+      <td>RRID: SCR_011793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tophat2</td>
+      <td>PMID: 23618408</td>
+      <td>RRID: SCR_013035 (Tophat)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains
 
 Anchor away (AA) strains used in this study were constructed as described previously and contain the tor1-1 mutation and deletion of FPR1 (Haruki et al., 2008). To allow the AA technique, Taf1, TBP, and Rpb3 were chromosomally tagged with the FRB domain by lithium acetate transformation of PCR products amplified from pFA6a-FRB-kanMX6 into the AA parent strain (yFR1321, generous gift of F. Robert, Institut de Recherches Cliniques de Montréal) (Hill et al., 1991; Longtine et al., 1998; Jeronimo and Robert, 2014). Mediator subunits Med2-TAP, Med14-TAP, Med15-myc, Med18-myc, and Med17-myc were tagged by transformation of PCR products amplified from prior strains, as described (Ansari et al., 2014; Paul et al., 2015).
 
@@ -138,17 +390,17 @@ To generate double kin28-taf1-AA and kin28-rpb3-AA strains containing either Med
 
 Strain genotypes are provided in Table S1, and oligonucleotides used in strain construction are listed in Table S2. Loss of viability of anchor away strains in the presence of rapamycin is documented in Figure 3—figure supplement 1. For spot dilution assays, yeast cells were grown to an OD600 1.0 and serial dilutions were spotted on YPD medium and incubated at 30°C for 2–3 days, as indicated in the figure legends.
 
-## RNA-seq
+### RNA-seq
 
 RNA was prepared from exponentially growing yeast cultures by the hot phenol method, using two independently derived med2∆ med3∆ med15∆ isolates and two biological replicate samples for wild type yeast (BY4741) (Schmitt et al., 1990). PolyA +RNA was prepared using a Magnetic Bead Isolation Kit (New England Biolabs), yielding from 1.3% to 9% recovery. Library preparation was performed using the NEB Next Ultra RNA Library Prep kit. Sequencing was performed on the Illumina NextSeq platform at the Wadsworth Center, New York State Department of Health.
 
-## ChIP-seq
+### ChIP-seq
 
 Whole cell extracts (WCE) of AA strains were prepared from 50 mL of culture grown in yeast peptone dextrose (YPD) at 30°C to doubling phase at an OD600 of 0.8. Rapamycin (LC Laboratories, Woburn, MA) was then added one hour prior to crosslinking to a final concentration of 1 µg/mL from a 1 mg/mL stock, stored in ethanol at −20 ˚C for not more than one month. (Concentration of rapamycin stock solutions was determined using A267 = 42 and A277 = 54 for a 1 mg/ml solution.) Immunoprecipitations were performed using the following antibodies: 5.0 µg Pol II unphosphorylated CTD (8WG16, Biolegend, San Diego, CA), 1 μg Rpb3 (Neoclone), 2–5 µg c-Myc epitope (9E10; Roche, Sigma), 2.5 µg protein A (Sigma), 2.5–5 µg TBP (58C9, Abcam, or 5 µL serum, generous gift from A. Weil, Vanderbilt University), and 2.0 µL Taf1 (serum, generous gift from J. Reese and Song Tan, Penn State University). For spike-in experiments, whole cell extract was prepared from S. pombe strain FWP510 (DeGennaro et al., 2013) grown in Yeast Extract Supplemental (YES) medium and added to S. cerevisiae whole cell extract in a ratio of 1:4 to 1:5 prior to antibody incubation. At least two biological replicates (from independent cultures, on different days) were performed for all ChIP-seq experiments except as follows: Single ChIP-seq experiments were performed for tbp-AA yeast against Rpb1, with and without rapamycin; for ChIP against Med2-TAP and Med14-TAP in tbp-AA and rpb3-AA yeast; for Med17-myc in kin28-tbp-AA yeast; and for experiments targeting Rpb1 and Rpb3 (separately) in rpb3-AA yeast, with and without rapamycin. See Table S3 for details.
 
 Library preparation for Illumina paired-end sequencing was performed with the NEBNext Ultra II library preparation kit (New England Biolabs) according to manufacturer’s protocol and barcoded using NEXTflex barcodes (BIOO Scientific, Austin, TX) or NEBNext Multiplex Oligos for Illumina. In some experiments, a size selection step was performed on barcoded libraries by isolating fragment sizes between 200–500 bp on a 2% E-Gel EX agarose gel apparatus (ThermoFisher Scientific). Sequencing was performed on the Illumina NextSeq 500 platform at the Wadsworth Center, New York State Department of Health.
 
-## ChIP-Seq and RNA-seq analysis
+### ChIP-Seq and RNA-seq analysis
 
 Unfiltered sequencing reads were aligned to the S. cerevisiae reference genome (Saccer3) using bwa (Seoighe and Wolfe, 1999). Up to one mismatch was allowed for each aligned read. Reads mapping to multiple sites were retained to allow evaluation of associations with non-unique sequences (Seoighe and Wolfe, 1999) and duplicate reads were retained. Binding peaks were identified using SICER (Zang et al., 2009) with the following parameters: effective genome size 0.97 (97% of the yeast genome is mappable,), window size 50 bp, and gap size 50 bp. Calculation of coverage, comparisons between different data sets, and identification of overlapping binding regions were preceded by library size normalization, and were performed with the ‘chipseq’ and ‘GenomicRanges’ packages in BioConductor (Gentleman et al., 2004). Control subtraction was carried out in the following way: coverage (exp)/N1 − coverage (control)/N2, in which ‘exp’ is the data set (in. bam format) to be examined, N1 is the library size of the experimental data (‘exp’), and N2 is the library size of the control. For the spike-in experiments of Figure 2, normalization was performed as described (Orlando et al., 2014). Occupancy profiles were generated using the Integrative Genomics Viewer (Robinson et al., 2011). For metagene analysis, a list of 498 genes exhibiting Mediator ChIP signal upstream of promoters (‘UAS genes’) was downloaded from Jeronimo et al. (2016); SAGA-dominated and TFIID-dominated genes were selected according to Huisinga and Pugh (2004); and genes were sorted according to transcript levels using data from Nagalakshmi et al. (2008).
 

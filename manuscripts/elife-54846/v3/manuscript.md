@@ -34,7 +34,7 @@ To overcome this confound, we asked whether visual search involving letter strin
 
 We performed six key experiments and several supporting experiments (reported in the Appendix). In Experiment 1, subjects performed visual search involving single letters, and we used this to construct artificial neurons tuned for letter shape. In Experiments 2–4, we show that search for longer strings can be predicted using these artificial neurons with a simple compositional rule. In Experiment 5, we show that this model also explains human performance on a commonly studied word recognition task. Finally, in Experiment 6, we measured brain activations during word recognition to elucidate the underlying neural representations.
 
-## Experiment 1: Single letter searches
+### Experiment 1: Single letter searches
 
 In Experiment 1, subjects had to perform an oddball visual search task involving uppercase letters (n = 26), lowercase letters (n = 26) and digits (n = 10). An example search with two oddball targets is shown in Figure 2A, illustrating how finding W is harder compared to finding T in an array of Ns. In the actual experiment, search arrays consisted of only one oddball target among 15 distractors, and subjects had to indicate the side of the screen (let/right) containing the target (see Materials and methods).
 
@@ -48,7 +48,7 @@ Since shape dissimilarity in visual search matches closely with neural dissimila
 
 As expected, increasing the number of MDS dimensions led to increased match to the observed letter dissimilarities (Figure 2D). Taking 10 MDS dimensions, which explain nearly 95% of the variance, we obtained the single letter responses of 10 such artificial neurons. We used these single letter responses to predict their response to longer letter strings in all the experiments. Varying this choice yielded qualitatively similar results. Analogous results for all letters and numbers are shown in Appendix 1.
 
-## Experiment 2: Bigram searches
+### Experiment 2: Bigram searches
 
 Next, we proceeded to ask whether searches for longer strings can be explained using single letter responses. In Experiment 2, we asked subjects to perform oddball searches involving bigrams. We chose seven uppercase letters (A, D, H, I, M, N, T) and combined them in all possible ways to obtain 49 bigram stimuli. Subjects performed all possible pairs of 49C2 searches with one bigram as target and another as distractor (see Materials and methods). An example search is depicted in Figure 3A. It can be seen that, finding TA among AT is harder than finding UT among AT. Thus, letter transpositions are more similar compared to letter substitutions, consistent with the classic results on reading (Norris, 2013; Grainger, 2018). To characterize the effect of bigram frequency, we included both frequent bigrams (e.g. IN, TH) and infrequent bigrams (e.g. MH, HH). As before, subjects were highly consistent in their performance (split-half correlation between odd and even-numbered subjects across all bigrams: r = 0.82, p<0.00005).
 
@@ -64,7 +64,7 @@ This letter model yielded excellent fits to the observed data (r = 0.85, p<0.0
 
 According to an influential account of word reading, specialized detectors are formed for frequently occurring combinations of letters (Dehaene et al., 2005). If this were the case, searches involving frequent bigrams (e.g. TH, ND) or two letter words (e.g. AN, AM) should produce larger model errors compared to infrequent bigrams, since our model does not incorporate any bigram-selective units. Alternatively, if bigram discrimination was driven entirely by single letters, we should find no difference in errors. In keeping with this latter prediction, we observed no visually obvious difference in model fits for frequent bigram pairs or word-word pairs compared to other bigram pairs (Figure 3C). To quantify this observation, we compared the model error (absolute difference between observed and predicted dissimilarity) for the 20 bigram pairs with the largest mean bigram frequency with the model error of the 20 pairs with the lowest mean bigram frequency. This too revealed no systematic difference (mean ± sd of residual error: 0.10 ± 0.08 for the 20 most frequent bigrams and words; 0.11 ± 0.09 for 20 least frequent bigrams; p=0.80, rank-sum test). Thus, model errors are not systematically different for frequent compared to infrequent bigram pairs. We conclude that bigram search can be explained entirely using single neurons tuned to single letters.
 
-## Experiment 3: Upright versus inverted bigrams
+### Experiment 3: Upright versus inverted bigrams
 
 In the letter model described above, the response to bigrams is a weighted sum of the single letter responses. As detailed earlier, a critical prediction of this model is that the response to transposed bigrams such as AB and BA will be different only if the summation weights are unequal. By contrast, repeated letter bigrams such as AA and BB will remain discriminable regardless of the nature of summation, since their response will be proportional to the respective single letter responses. Since reading expertise can modulate sensitivity to letter transpositions, we reasoned that familiarity might modulate the summation to make it more asymmetric. We therefore predicted that this would make transposed letter searches (with AB as target and BA as distractor, or vice-versa) easier to discriminate in a familiar upright orientation compared to the (unfamiliar) inverted orientation. By contrast, searches involving repeated letter bigrams (with AA as target and BB as distractor), which also have a change in two letters, will remain equally easy in both upright and inverted orientations.
 
@@ -72,17 +72,17 @@ We tested this prediction in Experiment 3 by asking subjects to perform searches
 
 We conclude that familiarity leads to asymmetric spatial summation. We note, however, that this familiarity could be due to purely visual familiarity of the letters or due to linguistic factors, which we cannot distinguish in our study.
 
-## Experiment 4: Generalization to longer strings
+### Experiment 4: Generalization to longer strings
 
 The above analyses show that the letter-based model explains dissimilarities in visual search between bigrams, which rarely contain valid words. We therefore wondered whether these results would extend to longer strings which form words. In Experiment 4, subjects performed visual search involving six-letter strings that were either valid compound words (e.g. FORGET, TEAPOT) or pseudowords (FORPOT, TEAGET). The single letter model yielded excellent fits to the data (Figure 3F). These fits were superior to a widely used measure of string similarity, the Orthographic Levenshtein Distance (OLD) model (Figure 3G). Importantly, the letter model fits were equivalent for both word-word pairs and nonword-nonword pairs (Figure 3H). These and other analyses are described in Appendix 3.
 
 We performed several experiments to investigate this for other string lengths. Again, the letter model yielded excellent fits across all string lengths (Appendix 4). We also tested lowercase and mixed-case strings because word shape is thought to play a role when letters vary in size or have upward and downward deflections (Pelli and Tillman, 2007). Even here, the letter model, without any explicit representation of overall word shape, was able to accurately predict most of the search performance. These results are detailed in Appendix 4.
 
-## Estimating letter dissimilarities from string dissimilarities
+### Estimating letter dissimilarities from string dissimilarities
 
 The letter model described is neurally plausible and compositional, but is based on dissimilarities between letters presented in isolation. It could be that the representation of a letter within a bigram, although compositional, differs from its representation when seen in isolation. To explore these possibilities we developed an alternate model in which bigram dissimilarities can be predicted using a sum of (unknown) part dissimilarities at different locations. The resulting model, which we denote as the part sum model, yielded comparable fits to the data. It is completely equivalent to the letter model under certain conditions. Unlike the letter model which is nonlinear and could suffer from multiple local minima, the part sum model is linear and its parameters can be estimated uniquely using standard linear regression. Its complexity can be drastically reduced using simplifying assumptions without affecting model fits. These results are detailed in Appendix 5.
 
-## Experiment 5: Lexical decision task
+### Experiment 5: Lexical decision task
 
 The above experiments show that discrimination of strings in visual search can be explained by neurons tuned for single letter shape with letter responses that combine linearly. Could the same shape representation drive reading behavior? We evaluated this possibility through two separate word recognition experiments.
 
@@ -92,7 +92,7 @@ Consider what happens when we view the string ‘PENICL’, as opposed to the st
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54846/elife-54846-fig4-v3.jpg)
 
-**Figure 4.:** (A) Schematic of visual word space, with one stored word (PENCIL) and two nonwords (PENICL and EPNCIL). We hypothesize that subjects would take longer to categorize a nonword when it is similar to a word, that is RT for PENICL would be larger than for EPNCIL. Thus, 1/RT would be proportional to this dissimilarity. Likewise we predicted that subjects would be faster to respond to frequent words which have a stronger stored representation. (B) Response times for words in the lexical decision task, sorted in descending order. The solid line represents the mean categorization time for words and the shaded bars represent s.e.m. Some example words are indicated using dotted lines. The split-half correlation between subjects (r) is indicated on the top. (shC) Cross-validated model correlation between observed and predicted word response times across all words for various models: log word frequency (blue), number of orthographic neighbors (orange), log mean bigram frequency (purple), log mean letter frequency (cyan) and a combined model containing all these factors (red). Shaded error bars indicate mean ± sd of the correlation across 1000 random splits of the observed data. The asterisk indicates statistical significance of the comparison obtained by estimating the fraction of bootstrap samples in which the observed difference was violated (* is p<0.05, ** is p<0.005). (D) Response times for nonwords in the lexical decision task, sorted in descending order. Conventions as in (A). (E) Observed reciprocal response times for nonwords in the lexical decision task plotted against letter model predictions fit to the full data (450 nonwords). Some example nonwords are depicted. (F) Percent change in response time (nonword-RT – word-RT)/word-RT for middle and edge letter transpositions and for middle and edge substitutions for observed data (left) and for letter model predictions (right). MS: middle substitution. In both cases, asterisks represent statistical significance comparing the means of the corresponding groups using a rank-sum test (* is p<0.05, ** is p<0.005, etc.). (G) Observed reciprocal response times plotted against the Orthographic Levenshtein Distance (OLD), a popular model for edit distance between strings. (H) Cross-validated model correlation between observed and predicted nonword RTs for the letter model, OLD model, lexical model and the combined neural+lexical model. Conventions are as in (B).
+**Figure 4.:** (A) Schematic of visual word space, with one stored word (PENCIL) and two nonwords (PENICL and EPNCIL). We hypothesize that subjects would take longer to categorize a nonword when it is similar to a word, that is RT for PENICL would be larger than for EPNCIL. Thus, 1/RT would be proportional to this dissimilarity. Likewise we predicted that subjects would be faster to respond to frequent words which have a stronger stored representation. (B) Response times for words in the lexical decision task, sorted in descending order. The solid line represents the mean categorization time for words and the shaded bars represent s.e.m. Some example words are indicated using dotted lines. The split-half correlation between subjects (rsh) is indicated on the top. (C) Cross-validated model correlation between observed and predicted word response times across all words for various models: log word frequency (blue), number of orthographic neighbors (orange), log mean bigram frequency (purple), log mean letter frequency (cyan) and a combined model containing all these factors (red). Shaded error bars indicate mean ± sd of the correlation across 1000 random splits of the observed data. The asterisk indicates statistical significance of the comparison obtained by estimating the fraction of bootstrap samples in which the observed difference was violated (* is p<0.05, ** is p<0.005). (D) Response times for nonwords in the lexical decision task, sorted in descending order. Conventions as in (A). (E) Observed reciprocal response times for nonwords in the lexical decision task plotted against letter model predictions fit to the full data (450 nonwords). Some example nonwords are depicted. (F) Percent change in response time (nonword-RT – word-RT)/word-RT for middle and edge letter transpositions and for middle and edge substitutions for observed data (left) and for letter model predictions (right). MS: middle substitution. In both cases, asterisks represent statistical significance comparing the means of the corresponding groups using a rank-sum test (* is p<0.05, ** is p<0.005, etc.). (G) Observed reciprocal response times plotted against the Orthographic Levenshtein Distance (OLD), a popular model for edit distance between strings. (H) Cross-validated model correlation between observed and predicted nonword RTs for the letter model, OLD model, lexical model and the combined neural+lexical model. Conventions are as in (B).
 
 In this experiment, the words comprised four, five or six-letter words and the nonwords consisted of random strings and jumbled versions of the words (see Materials and methods). Subjects were highly accurate in responding to both words and nonwords (mean ± sd: 96 ± 2% for words, 95 ± 3% for nonwords). Importantly, their response times across words and nonwords were consistent between subjects as evidenced by a significant split-half correlation (correlation between odd- and even-numbered subjects: r = 0.59 for words, r = 0.73 for nonwords, p<0.00005).
 
@@ -112,7 +112,7 @@ In sum, we conclude that word response times are explained primarily by word fre
 
 As a further test of the ability of this compositional code to explain word reading, we performed an additional experiment in which subjects had to recognize the identity of a jumbled word. Here too, response times were explained best by the letter model compared to lexical and OLD models (Appendix 6).
 
-## Experiments 6–7: Neural correlates of lexical decisions
+### Experiments 6–7: Neural correlates of lexical decisions
 
 The above results show that visual discrimination of strings can be explained using a letter-based compositional neural code, and that dissimilarities calculated using this code can explain human performance on nonwords during lexical decision tasks. Here, we sought to uncover the brain regions that represent this code and guide eventual lexical decisions. In Experiment 6, we recorded BOLD responses using fMRI while subjects performed a lexical decision task.
 
@@ -128,7 +128,7 @@ In the event-related runs, subjects had to make a response on each trial to indi
 
 We then compared the overall brain activation levels for words, nonwords and letters in each ROI. While V4 showed greater activation for words compared to nonwords, VWFA and TG regions showed greater activation to nonwords compared to words, presumably reflecting greater engagement to discriminate nonwords that are highly similar to words (Appendix 7). Although the visual regions did not show differential overall activations, there could still be differential activation at the population level for words and nonwords. This revealed above-chance decoding in all ROIs, and better separation between words and substituted compared to transposed nonwords, matching the trend observed in behavior (Appendix 7).
 
-## Neural basis of perceptual space
+### Neural basis of perceptual space
 
 Next, we sought to compare the neural representations in each ROI with perceptual and semantic representations. The perceptual and semantic representations can be quite distinct, as depicted in Figure 5B: in perceptual space, TRAIL and TRIAL can be quite similar since one is obtained from the other by transposing letters, but the word PATH is distinct. By contrast, in semantic space, TRAIL and PATH have similar meanings and usage whereas TRIAL is distinct. Indeed, perceptual and semantic dissimilarities across words were uncorrelated for the words used in this experiment (r = 0.03, p=0.55).
 
@@ -138,13 +138,13 @@ To further investigate the link between the compositional letter code and the LO
 
 In sum, we conclude that the LO region is the likely neural substrate for the compositional letter code predicted from behavior.
 
-## Neural basis of semantic space
+### Neural basis of semantic space
 
 Next we compared neural representations in each ROI to semantic space. The match to semantic space was significant only in the LO and TG regions (correlation between 496 pairwise dissimilarities between words: r = 0.18 ± 0.05 for LO, 0.22 ± 0.04 for TG; Figure 5D). A searchlight analysis confirmed that semantic dissimilarities were best correlated with the TG region with additional peaks in prefrontal and motor regions (Appendix 7).
 
 The above analysis shows that neural activations in LO are correlated with both perceptual and semantic dissimilarities, but these correlations cannot be directly compared since they are based on different pairs of stimuli. To investigate whether the neural representation in LO matches better with perceptual or semantic space, we compared the match for word-word pairs alone. This revealed no significant difference between the two correlations (r = 0.16 ± . 04 for LO with visual search, r = 0.16 ± 0.05 for LO with semantic dissimilarites; p=0.49 across 1000 bootstrap samples). To confirm that there is no shared variance between the perceptual and semantic space correlation, we calculated the partial correlation between neural dissimilarities in LO for word-word pairs and the perceptual dissimilarities after factoring out the dependence on semantic dissimilarities (or vice-versa). As expected, both partial correlations were significant (partial correlations: r = 0.13, p<0.005 with perceptual space; r = 0.17, p<0.0005 with semantic space). We conclude that both LO and TG regions represent semantic space.
 
-## Neural basis of lexical decisions
+### Neural basis of lexical decisions
 
 If the LO region represents each string (word or nonword) using a compositional code, then according to the preceding experiments, lexical decisions for words and nonwords must involve some comparison with stored word representations. Recall that lexical decision times for words are correlated with word frequency, and lexical decision times for nonwords are correlated with word-nonword dissimilarity. We therefore asked whether these lexical decision times are correlated with the average activity (across voxels and subjects) in a given ROI. The resulting correlations are shown in Figure 5F. Across the ROIs, only the VWFA showed a consistently positive correlation with lexical decision times for both words and nonwords (r = 0.52, p<0.005 for words; r = 0.47, p<0.05 for nonwords, Figure 5E). A searchlight analysis confirmed that there was indeed a peak in the correlation with lexical decision times centred on the VWFA, with additional peaks in the parietal and frontal regions (Appendix 7). Interestingly, VWFA activations were larger for nonwords compared to words (mean ± std of VWFA activations across subjects: 1.46 ± 0.22 for words, 2.03 ± 0.28 for nonwords; p<0.005, signed-rank test across 17 subject activations). However, activations were similar for transposed nonwords compared to substituted words (mean ±std VWFA activations across subjects: 1.42 ± 0.33 for transposed nonwords, 1.38 ± 0.33 for substituted nonwords; p=0.62, signed-rank test). We conclude that lexical decisions are driven by the VWFA.
 
@@ -152,19 +152,19 @@ If the LO region represents each string (word or nonword) using a compositional 
 
 Here, we investigated whether jumbled word reading can be explained using a purely visual representation. We have two major findings. First, we show that a compositional neural code explains visual search for string and responses to nonwords during reading tasks including many orthographic processing phenomena. Second, when subjects performed a lexical decision task, neural dissimilarities in the LO region matched best with perceptual dissimilarities, and lexical decision times were correlated with the activation of the visual word form area (VWFA). This suggests that viewing a string of letters activates a compositional neural code in LO that is subsequently matched with stored word representations in the VWFA. Below we discuss these findings in relation to the existing literature.
 
-## Relation to models of reading
+### Relation to models of reading
 
 Our compositional letter code stands in stark contrast to existing models of reading. Existing models of reading assume explicit encoding of letter position and do not account for letter shape (Gomez et al., 2008; Davis, 2010; Norris and Kinoshita, 2012; Norris, 2013). By contrast, our model encodes letter shape explicitly and position implicitly through asymmetric spatial summation. The implicit coding of letter position avoids the complication of counting transpositions (Yarkoni et al., 2008; Yap et al., 2015). Our model can thus easily be extended to any language by simply estimating letter dissimilarities using visual search and then estimating the unknown summation weights from visual search for longer strings.
 
 Unlike existing models of reading, our compositional letter code is neurally plausible and grounded in well-known principles of object representations. The first principle is that images that elicit similar activity across neurons in high-level visual cortex will appear perceptually similar (Op de Beeck et al., 2001; Sripati and Olson, 2010a; Zhivago and Arun, 2014). This is non-trivial because it is not necessarily true in lower visual areas or in image pixels (Ratan Murty and Arun, 2015). We have turned this principle around to construct artificial neurons whose shape tuning matches visual search. The second principle is that the neural response to multiple objects is typically the average of the individual object responses (Zoccolan et al., 2005; Sripati and Olson, 2010b) that can be biased toward a weighted sum (Ghose and Maunsell, 2008; Bao and Tsao, 2018). Finally, we note that our letter code assumes no explicit calculations of letter position in a word, since the neurons in our model only need to be tuned for retinal position. We speculate that these neurons may be tuned not only to retinal position but also to the relative size and position of letters, as observed in high-level visual cortex (Sripati and Olson, 2010a; Vighneshvel and Arun, 2015).
 
-## Relation to theories of word recognition
+### Relation to theories of word recognition
 
 We have found that lexical decisions for nonwords are driven by the dissimilarity between the viewed string and the nearest word. This idea is consistent with the well-known Interactive Activation model (McClelland and Rumelhart, 1981; Rumelhart and McClelland, 1982), where viewing a string activates the nearest word representation. However, the Interactive Activation model does not explain lexical decisions or scrambled word reading, and also does not integrate letter shape and position into a unified code. Our findings are consistent with previous work showing that nonword responses are influenced by the number of orthographic neighbors (Yap et al., 2015). Likewise, we found word frequency to be a major factor influencing lexical decisions, in keeping with previous work (Ratcliff et al., 2004; Dufau et al., 2012; Yap et al., 2015). We note also that personal familiarity with words, as opposed to the word frequency estimated from text corpora, might also influence lexical decisions (Colombo et al., 2006; Kuperman and Van Dyke, 2013). We have gone further to demonstrate a unified letter-based code that integrates letter shape and position, and localized the underlying neural substrates of the letter code to the LO region, and the comparison process to the VWFA. We propose that the compositional shape code provides a quick match to unscramble a word, failing which subjects may initiate more detailed symbolic manipulation.
 
 The success of our letter code challenges the widely held belief that efficient visual processing of letter strings requires higher-order detectors for letter combinations (Grainger and Whitney, 2004; Dehaene et al., 2005; Dehaene et al., 2015; Grainger, 2018). The presence of these specialized detectors should have caused larger model errors for valid words and frequent n-grams, but we observed no such trend (Figure 3). However, it is possible that there are combination detectors in subsequent stages where multiple letters have to activate single syllables. So what happens to visual letter representations upon expertise with reading? Our comparison of upright and inverted bigrams suggests that reading should increase letter discrimination and increase the asymmetry of spatial summation (Figure 3D,E). This is consistent with our recent finding that reading makes words more predictable from letters (Agrawal et al., 2019). It is also consistent with differences in letter position effects for symbols and letters (Chanceaux and Grainger, 2012; Scaltritti et al., 2018). We propose that both processes may be driven by visual exposure: repeated viewing of letters makes them more discriminable (Mruczek and Sheinberg, 2005), while viewing letter combinations induces asymmetric spatial weighting or increased separability. Whether these effects require active discrimination such as letter-sound association training or can be induced even by passive viewing will require comparing letter string discrimination under these paradigms.
 
-## Neural basis of word recognition
+### Neural basis of word recognition
 
 Our results elucidate the neural representations that guide lexical decision in several ways. First, we found that perceptual dissimilarities between strings, regardless of word/nonword status, matched best with neural representations in the LO region (Figure 5C). This is consistent with similar findings using letters (Agrawal et al., 2019) and natural objects (Khaligh-Razavi and Kriegeskorte, 2014).
 
@@ -174,7 +174,7 @@ Third, our results confirm and extend our understanding of the VWFA. We found a 
 
 Fourth, our results point a way to resolve contradictory findings regarding VWFA in the literature. Some studies have reported equal activity in VWFA for words and nonwords (Baker et al., 2007), and others have reported higher activity for word-like stimuli (Vinckier et al., 2007; Glezer et al., 2009) – but these observations have been made while subjects performed tasks orthogonal to reading. There have been surprisingly few studies of VWFA activations during word processing tasks (Baeck et al., 2015; Sussman et al., 2018; Bouhali et al., 2019; Carlos et al., 2019). By comparing brain activations directly with behavioral responses during a lexical decision task, we found an interesting functional dissociation whereby orthographic (perceptual) similarity between strings was encoded not by VWFA but by LO (Figure 5C) and lexical decisions were encoded by VWFA and not LO (Figure 5F). This finding implies that most orthographic processing phenomena are driven by compositional neural representations in LO, rather than by the VWFA. These findings are consistent with recent intracranial EEG recordings that report a progression from early to late, or letter-level to word-level representations along the ventral occipitotemporal cortex regions (Thesen et al., 2012; Hirshorn et al., 2016; Lochy et al., 2018). We suggest that fine-grained comparisons between brain activations and behavior will elucidate the roles of the many cortical areas involved in reading.
 
-## Does the compositional letter code explain orthographic processing?
+### Does the compositional letter code explain orthographic processing?
 
 Our letter code explains many orthographic processing phenomena reported in the literature. Its integrated representation of both letter shape and position explains both letter transposition and substitution effects and their relative importance (Figure 4F). Its asymmetric spatial weighting favoring the first letter (Appendix 3), explains the first-letter advantage observed previously (Scaltritti et al., 2018). It also explains why increasing letter spacing can benefit reading in poor readers, presumably because it increases asymmetry in spatial summation (Zorzi et al., 2012).
 
@@ -186,7 +186,7 @@ To elucidate how various jumbled versions of a word are represented according to
 
 Finally, as a powerful demonstration of this code, we used it to arbitrarily manipulate reading difficulty along a sentence (Figure 6B), or across multiple transpositions and even number substitutions (Figure 6C). We propose that this compositional neural code can serve as a powerful baseline for the purely visual shape-based representation triggered by viewing words, thereby enabling the study of higher order linguistic influences on reading processes.
 
-## Relation between word recognition and reading sentences
+### Relation between word recognition and reading sentences
 
 Our results constitute an important first step in understanding how we read single words, but reading sentences is much more complex, with potentially many words sampled with each eye movement (Rayner, 1998). Our ability to sample multiple letters or words at a single glance is limited by two factors. The first is our visual acuity, which reduces with eccentricity. The second is crowding, by which letters become unrecognizable when flanked by other letters – this effect increases with eccentricity (Pelli and Tillman, 2008).
 
@@ -196,118 +196,215 @@ The visual search experiments in our study involved searching for an oddball tar
 
 All subjects had normal or corrected-to-normal vision and gave informed consent to an experimental protocol approved by the Institutional Human Ethics Committee of the Indian Institute of Science (IHEC # 6–15092017). All subjects were fluent English-speaking students at the institute, where English is the medium of instruction. All subjects were multi-lingual and knew at least one other Indian language apart from English.
 
-## Experiment 1 – Single letter searches
+### Experiment 1 – Single letter searches
 
-## Procedure
+#### Procedure
 
 A total of 16 subjects (eight males, 24.4 ± 2.5 years) participated in this experiment. Subjects were seated comfortably in front of a computer monitor placed ~60 cm away under the control of custom programs written in Psychtoolbox (Brainard, 1997) and MATLAB. In all experiments, we selected sample sizes based on our previous studies which yielded highly consistent data (Agrawal et al., 2019).
 
-## Stimuli
+#### Stimuli
 
 Single letter images were created using the Arial font. There were 62 stimuli in all comprising 26 uppercase letters (A-Z), 26 lowercase letters (a-z), and 10 digits (0–9). Uppercase stimuli were scaled to have a height of 1°.
 
-## Task
+#### Task
 
 Subjects were asked to perform an oddball search task without any constraints on eye movements. Each trial began with a fixation cross shown for 0.5 s followed by a 4 × 4 search array (measuring 40° by 25°). The search array always contained only one oddball target with 15 identical distractors. Subject were instructed to locate the oddball target as quickly and as accurately as possible, and respond with a key press (‘Z’ for left, ‘M’ for right). A red line divided the screen in two halves. The search display was turned off after the response or after 10 s, whichever was sooner. All stimuli were presented in white against a black background. Incorrect or missed trials were repeated after a random number of other trials. Subjects completed a total of 3782 correct trials (62C2 letter pairs x two repetitions with either letter as target once). For each search pair, the oddball target appeared equally often on the left and right sides so as to avoid creating any response bias. Only correct responses were considered for further analysis. The main experiment was preceded by 20 practice trials involving unrelated stimuli.
 
-## Data analysis
+#### Data analysis
 
 Subjects were highly accurate on this task (mean ±std: 98 ± 1%). Outliers in the reaction times were removed using built-in routines in MATLAB (isoutlier function, MATLAB R2018a). This function removes any value greater than three scaled absolute deviations away from the median, and was applied to each search pair separately. This step removed 6.8% of the response time data, but we obtained qualitatively similar results without this step.
 
-## Estimation of single letter tuning using multidimensional scaling
+### Estimation of single letter tuning using multidimensional scaling
 
 To estimate neural responses to single letters from the visual search data, we used a multidimensional scaling (MDS) analysis. We first calculated the average search time for each letter pair by averaging across subjects and trials. We then converted this search time (RT) into a distance measure by taking its reciprocal (1/RT). This is a meaningful measure because it represents the underlying rate of evidence accumulation in visual search (Sunder and Arun, 2016), behaves like a mathematical distance metric (Arun, 2012) and combines linearly with a variety of factors (Pramod and Arun, 2014; Pramod and Arun, 2016; Sunder and Arun, 2016). Next, we took all pairwise distances between letters and performed MDS to embed letters into n dimensions, where we varied n from 1 to 15. This yielded n-dimensional coordinates corresponding to each letter, whose distances matched best with the observed distances. We then took the activation of each letter along a given dimension as the response of a single neuron. Throughout we performed MDS embedding into 10 dimensions, resulting in single letter responses of 10 neurons. We obtained qualitatively similar results on varying this number of dimensions.
 
-## Estimation of data reliability
+### Estimation of data reliability
 
 To obtain upper bounds on model performance, we reasoned that any model can predict the data as well as the consistency of the data itself. Thus, a model trained on one half of the subjects can only predict the other half as well as the split-half correlation rsh. This process was repeated 100 times to obtain the mean and standard deviation of the split-half correlation. However, when a model is trained on all the data, the upper bound will be larger than the split-half correlation. We obtained this upper bound, which represents the reliability of the entire data (rdata) by applying a Spearman-Brown correction on the split-half correlation, as given by rdata = 2rsh/(rsh+1).
 
-## Experiment 2 – Bigram searches
+### Experiment 2 – Bigram searches
 
 A total of eight subjects (five male, aged 25.6 ± 2.9 years) took part in this experiment. We chose seven uppercase letters (A, D, H, I, M, N, T) and combined them in all possible ways to obtain 49 bigram stimuli. These letters were chosen to maximize the number of two-letter words for example HI, IT, IN, AN, AM, AT, AD, AH, and HA. Letters measured 3° along the longer dimension. Subjects completed 2352 correct trials (49C2 search pairs x two repetitions). All other details were identical to Experiment 1. Letter/Bigram frequencies were obtained from an online database (http://norvig.com/mayzner.html).
 
-## Data analysis
+#### Data analysis
 
 Subjects were highly accurate on this task (mean ±std: 97.6 ± 1.8%). Outliers in the reaction times were removed using built-in routines in MATLAB (isoutlier function, MATLAB R2018a). This step removed 8% of the response time data, but we obtained qualitatively similar results without this step.
 
-## Estimating letter model parameters from observed dissimilarities
+### Estimating letter model parameters from observed dissimilarities
 
-The total dissimilarity between two bigrams in the letter model is calculated by calculating the average dissimilarity across all neurons. For each neuron, the dissimilarity between bigrams AB and CD is given by:dAB,CD=rAB-rCD=|w1rA+w2rB-w1rC+w2rD|where rA, rB, rC and rD are the responses of the neuron to individual letters A, B, C and D respectively (derived from single letter dissimilarities), and w1, w2 are the spatial summation weights for the first and second letters of the bigram. Note that w1, w2 are the only free parameters for each neuron.
+The total dissimilarity between two bigrams in the letter model is calculated by calculating the average dissimilarity across all neurons. For each neuron, the dissimilarity between bigrams AB and CD is given by:
+
+$$
+dAB,CD=r_{AB}-r_{CD}=|w_{1}r_{A}+w_{2}r_{B}-w_{1}r_{C}+w_{2}r_{D}|
+$$
+
+where $r_{A},r_{B},r_{C}andr_{D}$ are the responses of the neuron to individual letters A, B, C and D respectively (derived from single letter dissimilarities), and $w_{1},w_{2}$ are the spatial summation weights for the first and second letters of the bigram. Note that $w_{1},w_{2}$ are the only free parameters for each neuron.
 
 To estimate the spatial weights of each neuron, we adjusted them so as to minimize the squared error between the observed and predicted dissimilarity. This adjustment was done using standard gradient descent methods starting from randomly initialized weights (nlinfit function, MATLAB R2018a). We followed a similar approach for experiments involving longer strings.
 
-## Experiment 3 – Upright and inverted bigrams
+### Experiment 3 – Upright and inverted bigrams
 
-## Methods
+#### Methods
 
 A total of eight subjects (six males, aged 24 ± 1.5 years) participated in this experiment. Six uppercase letters: A, L, N, R, S, and T were combined in all pairs to form a total of 36 stimuli. These uppercase letters were chosen because their images change when inverted (as opposed to letters like H that are unaffected by inversion), and were chosen to maximize the occurrence of frequent bigrams. The same stimuli were inverted to create another set of 36 stimuli. Detailed analyses for this experiment are presented in Appendix 2.
 
-## Experiment 4 – compound words
+### Experiment 4 – compound words
 
 A total of eight subjects (four female, aged 25 ± 2.5 years) participated. Twelve three-letter words were chosen: ANY, FOR, TAR, KEY, SUN, TEA, ONE, MAT, GET, PAD, DAY, POT. Each word was jumbled to obtain 12 three-letter nonwords containing the same letters. The 12 words were combined to form 36 compound words (shown in Appendix 3), such that they appeared equally on the left and right half of the compound words. Detailed analyses for this experiment are included in Appendix 3.
 
-## Calculation of Orthographic Levenshtein Distance (OLD)
+#### Calculation of Orthographic Levenshtein Distance (OLD)
 
 For each pair of strings, we calculated the OLD metric using built-in MATLAB function ‘editdistance’. This function estimates the number of insertions, deletions, or substitutions are required to convert one string to other. We set the substitution cost to 2, but obtained qualitatively similar results on varying this cost.
 
-## Experiment 5 – Lexical decision task
+### Experiment 5 – Lexical decision task
 
-## Procedure
+#### Procedure
 
 A total of 16 subjects (nine male, aged 24.8 ± 2.1 years) participated in this task as well as the jumbled word task.
 
-## Stimuli
+#### Stimuli
 
 The stimuli comprised 450 words + 450 nonwords. Words were chosen to avoid multiple possible anagrams (i.e. we avoid words like RATS that could be anagrammed as STAR, ARTS) and to maximize the range of word frequency. The nonwords were either random strings or modified versions of the 450 words (Table 1). Strings were presented in uppercase and subtended 1° in visual angle.
 
-## Task
+**Table 1.**
+ Non-word stimuli in lexical decision task (Experiment 5).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Variations of word ABCDE</th>
+      <th>four letter words</th>
+      <th>five letter words</th>
+      <th>six letter words</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1)</td>
+      <td>Edge transpositions: BACDE or ABCED</td>
+      <td>15</td>
+      <td>15</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>Middle transposition: ACBDE or ABDCE</td>
+      <td>15</td>
+      <td>15</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Two-step edge transposition: CBADE or ABEDC</td>
+      <td>0</td>
+      <td>20</td>
+      <td>30</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>4)</td>
+      <td>Two-step middle transposition: ADCBE</td>
+      <td>0</td>
+      <td>20</td>
+      <td>30</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Random transposition: CDABE, ACDBE, etc.</td>
+      <td>25</td>
+      <td>35</td>
+      <td>40</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>6)</td>
+      <td>Edge substitution: MZCDE or ABCMZ</td>
+      <td>15</td>
+      <td>15</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>7)</td>
+      <td>Middle substitution: ABMZE</td>
+      <td>15</td>
+      <td>15</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>8)</td>
+      <td>Random substitution and permutation: MACZE, AMDEZ, etc.</td>
+      <td>15</td>
+      <td>15</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>100</td>
+      <td>150</td>
+      <td>200</td>
+      <td>450</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Task
 
 Each trial began a fixation cross shown for 0.75 s followed by a letter string for 0.2 s after which the screen went blank. The trial ended either with the subject’s response or after at most 3 s. Subjects were instructed to press ‘Z’ for words and ‘M’ for nonwords as quickly and accurately as possible. All stimuli were presented at the centre of the screen and were white letters against a black background. Before starting the main task, subjects were given 20 practice trials using other words and nonwords not included in the main experiment.
 
-## Data analysis
+#### Data analysis
 
 Some nonwords were removed from further analysis due to low accuracy (n = 8, average accuracy <20%). Subjects made accurate responses for both words and nonwords (mean ±std of accuracy: 96 ± 2% for words, 95 ± 3% for nonwords). Outliers in the reaction times were removed using built-in routines in MATLAB (isoutlier function, MATLAB R2018a). This step removed 6.4% of the data, but we obtained qualitatively similar results without this step.
 
-## Experiment 6 (Lexical Decision Task – fMRI)
+### Experiment 6 (Lexical Decision Task – fMRI)
 
 A total of 17 subjects (10 males, 25 ± 4.2 years) participated in this experiment. All subjects were screened for safety and comfort beforehand to avoid adverse outcomes in the scanner.
 
-## Stimuli
+#### Stimuli
 
 The functional localizer block included English words, objects, scrambled words, and scrambled objects. In each run, 14 images were randomly selected from a pool of images. The English words list comprised of 90 five-letter words. Each word was divided into grids of dimension 9 × 3. Scrambled words were generated by randomly shuffling the grids. The object pool comprised 80 naturalistic objects. To generate scrambled objects, the phase of the Fourier transformed images was scrambled and then reconstructed back using inverse Fourier transform. The object images were about 4.5° along the longer dimension and the height of the word stimuli subtended 2° of visual angle.
 
 The event block consisted of 10 single letters and 64 five-letter strings (32 words and 32 nonwords formed using these single letters). The stimulus set comprised of 64 five-letter words and nonwords. The words were chosen from a wide range of frequency of occurrence and the nonwords were created by manipulating the chosen words that is They were: 1) 8-middle transposed version of words, 2) 8-edge transposed version of words, 3) 8-middle substituted version of words, and 4) 8-edge substituted version of words. The stimuli subtended 2° in height, which was the same as in the localizer block. All stimuli were presented as white against a black background.
 
-## Procedure
+#### Procedure
 
 In the localizer block, a total of 16 images were presented for 0.8 s with an inter stimulus interval of 0.2 s. There were 14 unique stimuli and 2 of them repeated at random time point, in which subjects performed one-back task. Each block ended with a blank screen with fixation cross present for 4 s. Thus, each block lasted 20 s. Each block was repeated thrice in each run.
 
 In the event-related design block, an image was presented at the centre of the screen for 300 ms followed by 3.7 s of blank screen with a fixation cross. In a run, all 74 stimuli were presented once along with 16 trials of fixation cross to jitter inter stimulus interval. Hence there were a total of 92 trials including 4 s fixation trials at the start and end of each run. Each run lasted 376 s. Subjects performed lexical decision task only on strings and were instructed to not press any key for single letters. Overall, subjects completed 2 runs of localizer block, 8 runs of event block and a structural scan block.
 
-## Data acquisition
+#### Data acquisition
 
 Subjects viewed images in a mirror-based projection system. Functional MRI data was acquired using a 32-channel head coil on a 3T Siemens Skyra scanner at HealthCare Global Hospital, Bengaluru. Functional scans were performed using a T2*-weighted gradient-echo-planar imaging sequence with the following parameters: TR = 2 s, TE = 28 ms, flip angle = 79o, voxel size = 3×3 × 3 mm3, field of view = 192×192 mm2, and 33 axial-oblique slices covering the whole brain. Anatomical scans were performed using T1-weighted images with the following parameters: TR = 2.30 s, TE = 1.99 ms, flip angle = 9°, voxel size = 1×1 × 1 mm3, field of view = 256×256 × 176 mm3.
 
-## Data preprocessing
+#### Data preprocessing
 
 All raw fMRI data were processed using the SPM 12 toolbox (https://www.fil.ion.ucl.ac.uk/spm/software/spm12/, RRID:SCR_007037). Raw images were realigned, slice-time corrected, co-registered with the anatomical image, segmented, and finally normalized to the MNI305 anatomical template. The results were qualitatively similar without normalization. Smoothing operation was performed only on functional localizer blocks using a Gaussian kernel with FWHM of 5 mm. All SPM parameters were set to default and the voxel size after normalization was set to 3 × 3×3 mm3. Prior to normalization, the data was preprocessed using GLMdenoise v1.4 (Kay et al., 2013). This step improved the signal-to-noise ratio in the data by regressing out the noise pattern common across all the voxels in the brain. The noise pattern is estimated from voxels unrelated to the task. The activity corresponding to each condition was estimated by modeling the denoised data using a generalized linear model (GLM) in SPM after removing the low frequency drift using a high-pass filter with a cutoff at 128 s. The event block data was modeled using 89 regressors (74 stimuli + one fixation + six motion regressors + eight runs). The localizer block data was modeled using 13 regressors (four stimuli + one fixation + six motion regressors + two runs).
 
-## ROI definitions
+#### ROI definitions
 
 All the regions of interest (ROI) were defined using functional localizer while taking the anatomical location into consideration. Early visual area was defined as the region that responds more to the scrambled object than fixation cross. This functional region was further parsed into V1-V3 and V4 using an anatomical mask from SPM anatomy toolbox (Eickhoff et al., 2005). Lateral Occipital (LO) region was defined as a group of voxels that responded more to objects than scrambled objects. The voxels in the LO region was restricted to Inferior Temporal Gyrus, Inferior Occipital Gyrus, and Middle Occipital Gyrus. These anatomical regions were obtained from Tissue Probability Map (TPM) labels in SPM 12. Visual Word Form Area (VWFA) was defined as a region that responded more for words than scrambled words within fusiform Gyrus. The activity for known words was also higher in Superior and Middle Temporal regions. These groups of voxels were grouped under Temporal Gyrus (TG) label. For each contrast, voxel-level threshold of p<0.001 (uncorrected) or cluster level threshold p<0.05 (FWE correction) was used to obtain a contiguous region. For one subject, very few VWFA voxels cross the pre-specified threshold. Hence, the threshold was lowered to p=0.1 (uncorrected). The VWFA voxels were restricted to top-40 voxels (based on T-value in the function localizer contrast). All these regions were visualized on the inflated brain using the BSPMVIEW toolbox (http://www.bobspunt.com/bspmview/).
 
-## Calculation of neural dissimilarity (fMRI)
+#### Calculation of neural dissimilarity (fMRI)
 
 For each ROI and subject, the pair-wise dissimilarity between any two image pairs was computed using the cross-validated Mahalanobis distance (rsa.distanceLDC function, RSA toolbox) (Nili et al., 2014). Briefly, it calculates the leave-one-run-out Mahalanobis distance, and the final dissimilarity matrix is estimated by averaging across all the runs. Outliers in dissimilarity values across subjects were removed using built-in routines in MATLAB (isoutlier function, MATLAB R2018a). This function was applied to each dissimilarity pair separately, and removed 12.3% of the dissimilarity data. The results were qualitatively similar without this step. The median dissimilarity across all the subjects was considered for further analysis. We obtained qualitatively similar results for other distance measures.
 
-## Calculation of semantic dissimilarity
+#### Calculation of semantic dissimilarity
 
 The semantic distance between every pair of words was computed as the cosine distance between the GloVe feature vectors (Pennington et al., 2014) activated by the two words (MATLAB function word2vec). These features are based on the co-occurrence statistics of words in a large text corpus, and therefore reflect semantic dissimilarity rather than purely visual dissimilarity.
 
-## Experiment 7 (Five-letter string searches)
+### Experiment 7 (Five-letter string searches)
 
 A total of 11 subjects (six males, 26 ± 2.7 years) participated in this experiment, of which seven also participated in Experiment 6. Stimuli were identical to Experiment 6, except that they were scaled down to a height of 1° to allow placement in a visual search array. Subjects performed a total of 2048 correct trials (32C2 search pairs x two conditions (words and nonwords) + 32 word-nonword pairs x two repetitions). All trials were interleaved, and incorrect/missed trials appeared randomly later in the task but were not analyzed. All other details were identical to Experiment 1.
 
-## Data analysis
+#### Data analysis
 
 Subjects were highly accurate on this task (mean ±std: 98.6 ± 1%). Outliers in the reaction times were removed using built-in routines in MATLAB (isoutlier function, MATLAB R2018a). This step removed 7% of the response time data, but we obtained qualitatively similar results without this step.

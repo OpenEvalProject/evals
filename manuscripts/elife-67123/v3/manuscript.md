@@ -23,7 +23,7 @@
 
 ## Abstract
 
-The nuclear pore complex (NPC) is the sole and selective gateway for nuclear transport, and its dysfunction has been associated with many diseases. The metazoan NPC subcomplex RanBP2, which consists of RanBP2 (Nup358), RanGAP1-SUMO1, and Ubc9, regulates the assembly and function of the NPC. The roles of immune signaling in regulation of NPC remain poorly understood. Here, we show that in human and murine T cells, following T-cell receptor (TCR ) stimulation, protein kinase C-θ (PKC-θ) directly phosphorylates RanGAP1 to facilitate RanBP2 subcomplex assembly and nuclear import and, thus, the nuclear translocation of AP-1 transcription factor. Mechanistically, TCR stimulation induces the translocation of activated PKC-θ to the NPC, where it interacts with and phosphorylates RanGAP1 on Ser 504 and Ser 506 . RanGAP1 phosphorylation increases its binding affinity for Ubc9, thereby promoting sumoylation of RanGAP1 and, finally, assembly of the RanBP2 subcomplex. Our findings reveal an unexpected role of PKC-θ as a direct regulator of nuclear import and uncover a phosphorylation-dependent sumoylation of RanGAP1, delineating a novel link between TCR signaling and assembly of the RanBP2 NPC subcomplex.
+The nuclear pore complex (NPC) is the sole and selective gateway for nuclear transport, and its dysfunction has been associated with many diseases. The metazoan NPC subcomplex RanBP2, which consists of RanBP2 (Nup358), RanGAP1-SUMO1, and Ubc9, regulates the assembly and function of the NPC. The roles of immune signaling in regulation of NPC remain poorly understood. Here, we show that in human and murine T cells, following T-cell receptor (TCR) stimulation, protein kinase C-θ (PKC-θ) directly phosphorylates RanGAP1 to facilitate RanBP2 subcomplex assembly and nuclear import and, thus, the nuclear translocation of AP-1 transcription factor. Mechanistically, TCR stimulation induces the translocation of activated PKC-θ to the NPC, where it interacts with and phosphorylates RanGAP1 on Ser504 and Ser506. RanGAP1 phosphorylation increases its binding affinity for Ubc9, thereby promoting sumoylation of RanGAP1 and, finally, assembly of the RanBP2 subcomplex. Our findings reveal an unexpected role of PKC-θ as a direct regulator of nuclear import and uncover a phosphorylation-dependent sumoylation of RanGAP1, delineating a novel link between TCR signaling and assembly of the RanBP2 NPC subcomplex.
 
 ## Introduction
 
@@ -39,67 +39,115 @@ In this study, we reveal that PKC-θ directly regulates the nuclear import funct
 
 ## Results
 
-## PKC-θ translocates to the NE and colocalizes with NPCs upon TCR stimulation
+### PKC-θ translocates to the NE and colocalizes with NPCs upon TCR stimulation
 
 Several PKC isoforms translocate to the NE after phorbol ester (PMA, a diacylglycerol mimetic and PKC activator) treatment (Collas, 1999; Leach et al., 1989). We therefore examined whether PKC-θ also translocates to the NE in stimulated Jurkat E6.1 T cells, a human leukemic T-cell line widely used for the study of TCR signaling (Abraham and Weiss, 2004). By biochemically isolating the NE, we observed that anti-CD3 plus anti-CD28 antibody (Ab) costimulation or stimulation with APCs that were pulsed with a superantigen, staphylococcal enterotoxin E (SEE), promoted PKC-θ translocation to the NE fraction (Figure 1A,B, respectively). Consistent with previous findings, TCR stimulation also promoted PKC-θ translocation to the plasma membrane (PM) fraction (Figure 1A,B). In addition, transmission electron microscopy analysis of immunogold-labeled PKC-θ showed its translocation to the cytoplasmic face of the NE in response to anti-CD3 plus anti-CD28 costimulation (Figure 1—figure supplement 1A). Quantitation showed that after 15 min of stimulation, >20% of total PKC-θ was localized 100 nm or less from the NE and >30% of total PKC-θ was localized 100 nm or less from the PM (Figure 1—figure supplement 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig1-v3.jpg)
+
+**Figure 1.:** (A, B) Subcellular fractionation of Jurkat E6.1 cells stimulated for 0–15 min with anti-CD3 plus anti-CD28 (A) or with superantigen (SEE)-pulsed Raji B cells (B) and immunodetection with the indicated antibodies. NE, nuclear envelope; PM, plasma membrane. (C) Confocal imaging of PKC-θ (green) and NPCs (Mab414, red) colocalization in representative Jurkat E6.1 cells left unstimulated (US) or stimulated for 15 min with anti-CD3 plus anti-CD28 or with PMA plus Iono. Nuclei are stained with DAPI (blue). Areas outlined by squares in the merged images are enlarged at right. Scale bars, 2 μm. (D) Quantification of PKC-θ colocalization with NPCs by Pearson correlation coefficient. Analysis was based on at least three different images covering dozens of cells using the ImageJ software. ****p<0.0001 (one-way ANOVA with post hoc test). (E, F) Immunoblot analysis of NPC IPs (Mab414) or whole-cell lysates (WCL) from human primary T cells (E) or Jurkat E6.1 cells (F) stimulated for 0–30 min with anti-CD3 plus anti-CD28. Control IP with normal IgG is shown in the left lane. Nup62, an NPC component, was used a as loading control for the IPs. The arrowhead indicates the Nup62 protein band. (G) Confocal imaging of importin-β1 and Ran in representative wild-type (WT) or Prkcq−/− mouse primary splenic T cells stained with the indicated antibodies. Areas outlined by squares in the merged images are enlarged at right. Scale bars, 2 μm. (H) Subcellular fractionation of mouse splenic T cells and immunodetection with the indicated antibodies. (I) Immunoblot analysis of NPC IPs (Mab414) or whole-cell lysates (WCL) from unstimulated or anti-CD3 plus anti-CD28-stimulated WT or Prkcq−/− mouse splenic T cells. Control IP with normal IgG is shown in the left lane. (J, K) Confocal imaging of importin-β1 and Ran (J) and subcellular fractionation (K), analyzed as in (G, H), of Jurkat E6.1 cells transfected with scrambled siRNA-negative control (siNC) or PKC-θ targeting siRNA (siPKC-θ). Scale bars, 2 μm. (L) Immunoblot analysis of NPC IPs (Mab414) or WCL from unstimulated or stimulated Jurkat E6.1 T cells stably expressing a control small hairpin RNA (shRNA) or a PKC-θ targeting shRNA (shPKC-θ), analyzed as in (I). Data are representative of three (A, B, E, F, H, I, K, L) or two (C, D, G, J) biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Transmission electron microscopy (TEM) images of PKC-θ labeled by antibody-conjugated gold particles in Jurkat E6.1 cells stimulated for 0–15 min with anti-CD3 plus anti-CD28. The areas outlined by small white squares in middle are enlarged at bottom right corner (black squares). C, cytoplasm; N, nucleus; NE, nuclear envelope; PM, plasma membrane. Scale bars, 500 nm. (B) Quantitation of the percentage of gold particles localized ≤100 nm from the NE or from the PM in cells from (A). **p<0.01, ****p<0.0001 (one-way ANOVA with post hoc test). (C) Confocal imaging of PKC-θ and NPCs colocalization in Jurkat E6.1 cells unstimulated (US) or stimulated for 15 min with superantigen (SEE)-pulsed Raji B cells that have been labeled with Cell Tracker Blue (blue). Areas outlined by squares in the merged images are enlarged at right. Scale bars, 2 μm. (D, E) Confocal imaging showing colocalization of endogenous PKC-θ (red) with lamin B1 (green) in representative Jurkat E6.1 cells left unstimulated or stimulated for 15 min with PMA plus Iono (D). Nuclei are stained with DAPI (blue). Lamin B1 marks the NE. Scale bars, 2 μm. Pixel intensity along a line from M to N in the merged images is shown in (E). (F) Quantification of ~30 cells with NE-localized PKC-θ from two biological replicates in (D). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. ****p<0.0001 (two-tailed unpaired Student’s t-test). (G) Quantification of the N/C ratio of importin β1 (left) and Ran (right) based on analysis of ~30 cells in about six random fields from two biological replicates of Figure 1G. Horizontal lines indicate the mean ± s.e.m. ***p<0.001, ****p<0.0001 (two-tailed unpaired Student’s t-test). (H) Statistical analysis of importin β1 and Ran in nuclear extract from the experiment of Figure 1H. Analysis was based on three biological replicates. *p<0.05 (two-tailed unpaired Student’s t-test). (I) Statistical analysis of importin β1 binding to NPCs in Mab414 antibody IPs from the experiment of Figure 1I. Analysis was based on three biological replicates. n.s., not significant, *p<0.05 (one-way ANOVA with post hoc test). (J) Quantification of the N/C ratios of importin β1 (left) and Ran (right) based on analysis of ~30 cells in about six random fields from two biological replicates of Figure 1J. Horizontal lines indicate the mean ± s.e.m. ***p<0.001, ****p<0.0001 (two-tailed unpaired Student’s t-test). (K) Statistical analysis of importin β1 and Ran in nuclear extract from the experiment of Figure 1K. Analysis as based on three biological replicates. *p<0.05 (two-tailed unpaired Student’s t-test). (L) Statistical analysis of importin β1 binding to NPCs (immunoprecipitated with Mab414 antibody) in the experiment shown in Figure 1L. Analysis was based on three biological replicates. n.s., not significant, *p<0.05 (one-way ANOVA with post hoc test). (M) Immunoblot analysis of NPC IPs (Mab414) or WCL from unstimulated or stimulated Jurkat E6.1 T cells transfected with scrambled siRNA-negative control (siNC) or PKC-θ targeting siRNA (siPKC-θ). Data are representative of two (A–F) or three (G–M) biological replicates.
+
 Given that NPCs are the important components of the NE, we next determined whether PKC-θ colocalized with NPCs. We stimulated Jurkat T cells with anti-CD3 plus anti-CD28 Abs or with PMA plus a Ca2+ ionophore, ionomycin (Iono), for 15 min and imaged the cells by confocal microscopy. Staining with an anti-PKC-θ Ab and a monoclonal Ab (Mab414) that recognizes a subset of NPC proteins revealed that stimulation significantly increased PKC-θ colocalization with NPCs (Figure 1C,D). Similarly, T cells stimulated with SEE-pulsed APCs also displayed partial PKC-θ colocalization with the NPCs (Figure 1—figure supplement 1C). Immunoprecipitation (IP) with Mab414 showed that costimulation increased PKC-θ binding to NPCs in primary human T cells (Figure 1E) and in Jurkat T cells (Figure 1F). When we stimulated T cells with PMA plus Iono, a portion of PKC-θ molecules translocated to the NE (Figure 1—figure supplement 1D-F). Together, these results demonstrate that TCR stimulation induces PKC-θ translocation to the NE and, more specifically, colocalization and physical association with NPCs, suggesting that PKC-θ may participate in the process of nucleo-cytoplasmic transport.
 
-## PKC-θ deficiency decreases NPC association of importin-β1
+### PKC-θ deficiency decreases NPC association of importin-β1
 
 Importin-β1 and Ran proteins play a key role in nucleo-cytoplasmic transport, and importin-β1 can be specifically recruited to NPCs and then mediate the passage of proteins, including transcription factors such as AP-1, NF-κB, and NFAT, into the nucleus through NPCs (Tetenbaum-Novatt and Rout, 2010; van der Watt et al., 2016). To determine the physiological relevance of the PKC-θ–NPC association, we first analyzed the cellular distribution of importin-β1 and Ran in resting T cells from wild-type and Prkcq−/− mice. Using confocal microscopy, we found that PKC-θ deletion resulted in a decreased ratio of nuclear-to-cytoplasmic of importin-β1 and Ran (Figure 1G, Figure 1—figure supplement 1G). PKC-θ deletion also resulted in a decreased translocation of importin-β1 and Ran to the nuclear fraction (Figure 1H, Figure 1—figure supplement 1H). Next, we assessed the binding of importin-β1 to NPCs. In wild-type T cells, importin-β1 constitutively coimmunoprecipitated with NPCs, and anti-CD3 plus anti-CD28 costimulation significantly increased their association; in contrast, in Prkcq−/− T cells, importin-β1 barely bound to NPCs, regardless of stimulation (Figure 1I, Figure 1—figure supplement 1I). Similar results were found when we knocked down PKC-θ expression in Jurkat T cells with a specific small interfering RNA or short hairpin RNA (siPKC-θ or shPKC-θ, respectively) (Figure 1J–L, Figure 1—figure supplement 1J-M). These data indicate that PKC-θ deficiency alters both the basal state and TCR-induced nucleo-cytoplasmic transport.
 
-## PKC-θ binds to RanGAP1 at the NE in a sumoylation-dependent manner
+### PKC-θ binds to RanGAP1 at the NE in a sumoylation-dependent manner
 
 To further investigate how PKC-θ regulates nuclear transport, we constructed GST-tagged proteins, including nucleoporins, RanGAP1, and other NE proteins, and performed GST pull-down assays to determine whether these proteins can interact with PKC-θ. Among them, GST-RanGAP1 showed the most obvious association and a direct interaction with PKC-θ in unstimulated Jurkat cells lysate (Figure 2A,B, Figure 2—figure supplement 1A). Reciprocal co-IP from Jurkat T cells showed that PKC-θ weakly interacted constitutively with sumoylated RanGAP1, and costimulation with anti-CD3 plus anti-CD28 Abs markedly increased the association of PKC-θ with both forms of RanGAP1 (Figure 2C). A significant colocalization of PKC-θ and RanGAP1 in NPCs was also observed in Jurkat T cells after anti-CD3 plus anti-CD28 or PMA plus Iono stimulation (Figure 2—figure supplement 1B,C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig2-v3.jpg)
+
+**Figure 2.:** (A) Scheme for in vitro protein direct binding assay. (B) Analysis of direct association between RanGAP1 and PKC-θ using approach in (A). GST-fusion proteins were detected by Coomassie blue staining (bottom). (C) Immunoblot analysis of PKC-θ or RanGAP1 IPs or WCL from Jurkat E6.1 cells stimulated for 0–15 min with anti-CD3 plus anti-CD28. (D) Reciprocal IP analysis of the association between endogenous PKC-θ and transfected Flag-tagged wild-type or mutated RanGAP1 in Jurkat-TAg cells. (E) Immunoblot analysis of c-Myc-tagged PKC-θ IPs or WCL from Jurkat-TAg cells that were transiently transfected with wild-type PKC-θ or the indicated PKC-θ mutants. (F) Subcellular fractionation of Jurkat-TAg cells transiently transfected with wild-type PKC-θ or the indicated PKC-θ mutants (2KR, K325R/K506R desumoylation mutant; K409R, kinase dead; A148E, constitutive active), followed by immunodetection with the indicated antibodies. (G) Immunoblot analysis of c-Myc-tagged PKC-θ IPs or WCL from Jurkat-TAg cells that were transiently transfected with the indicated expression vectors. Data are representative of at least three biological replicates (B–G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Association of PKC-θ with the indicated GST-fusion proteins representing different NPC components demonstrated by a pull-down assay from unstimulated Jurkat E6.1 cell. The recombinant proteins were revealed by Coomassie blue staining. Purple arrows indicate the bands corresponding to GST, GST-fusion proteins. (B) Confocal imaging of intracellular of PKC-θ (green) and RanGAP1(red) colocalization in Jurkat E6.1 cells left unstimulated or stimulated for 15 min with anti-CD3 plus anti-CD28 or with PMA plus Iono. Cell nuclei are stained with DAPI. Areas outlined by squares in the merged images are enlarged at right. Scale bar, 2 μm. (C) Quantitative analysis of colocalization of PKC-θ with RanGAP1 shown in (B). Statistical analysis was based on at least three different colocalization images covering dozens of cells using the ImageJ software. ****p<0.0001 (one-way ANOVA with post hoc test). (D) Immunoblot analysis of endogenous PKC-θ IPs from Jurkat-TAg cells, detected by HA antibody. (E) Statistical analysis of RanGAP1 binding to PKC-θ in c-Myc antibody IPs from the experiment of Figure 2E. Analysis was based on three biological replicates. *p<0.05, **p<0.01 (one-way ANOVA with post hoc test). Total RanGAP1 included RanGAP1 and RanGAP1-SUMO1. (F) Immunoblot analysis of endogenous RanGAP1 IPs from Jurkat-TAg cells transfected with the indicated c-Myc-tagged PKC-θ expression vectors. Data are representative of three independent experiments. (G) Statistical analysis of c-Myc-PKC-θ in nuclear extract from the experiment of Figure 2F. Analysis was based on three biological replicates. *p<0.05, **p<0.01, ****p<0.0001 (one-way ANOVA with post hoc test). (H) Statistical analysis of c-Myc-PKC-θ sumoylation from the experiment of Figure 2G. Analysis was based on three biological replicates. *p<0.05, ***p<0.001 (one-way ANOVA with post hoc test). Data are representative of three biological replicates.
 
 To elucidate the contribution of sumoylation to the association of RanGAP1 with PKC-θ, we transfected Jurkat T cells with wild-type or non-sumoylated RanGAP1 mutant (RanGAP1-K524R) having an N-terminal Flag tag or a C-terminal HA tag. PKC-θ coimmunoprecipitated efficiently with RanGAP1-K524R (Figure 2D, Figure 2—figure supplement 1D), implying that RanGAP1 sumoylation is not required for its interaction with PKC-θ. Next, we mapped the PKC-θ determinants required for its NE translocation and RanGAP1 interaction by transfecting Jurkat T cells with c-Myc-tagged wild-type PKC-θ, a desumoylated mutant PKC-θ−2KR (K325R/K506R) (Wang et al., 2015), a constitutively active PKC-θ-A148E mutant, or a catalytically inactive PKC-θ-K409R mutant. Reciprocal IP showed that both the sumoylated and non-sumoylated forms of RanGAP1 interacted more strongly with PKC-θ-A148E than with wild-type PKC-θ, whereas PKC-θ−2KR and PKC-θ-K409R displayed a much weaker interaction, if at all (Figure 2E, Figure 2—figure supplement 1E,F). Following biochemical isolation of the NE, we observed that wild-type PKC-θ translocated to the NE in response to PMA plus Iono stimulation (Figure 2F, Figure 2—figure supplement 1G), consistent with the results in Figure 1. Interestingly, PKC-θ-A148E was constitutively localized to the NE regardless of stimulation, while no apparent NE localization of either PKC-θ−2KR or PKC-θ-K409R was observed even after PMA plus Iono stimulation (Figure 2F, Figure 2—figure supplement 1G), consistent with the result in Figure 2E.
 
 We next compared the sumoylation of wild-type PKC-θ and its mutants. As expected, wild-type PKC-θ, but not PKC-θ−2KR, was sumoylated (Figure 2G). Interestingly, PKC-θ-K409R, like PKC-θ−2KR, could not be sumoylated, whereas PKC-θ-A148E was sumoylated more strongly than wild-type PKC-θ (Figure 2G, Figure 2—figure supplement 1H), indicating that the catalytic activity of PKC-θ is required for its sumoylation. Combining the results in Figure 2E–G with the result in Figure 2D, we conclude that PKC-θ sumoylation, rather than the sumoylation of RanGAP1, was important for their association and that PKC-θ sumoylation is required for its NE translocation.
 
-## PKC-θ deficiency inhibits the association of RanGAP1 with the NPC by reducing its sumoylation
+### PKC-θ deficiency inhibits the association of RanGAP1 with the NPC by reducing its sumoylation
 
 Given the association between PKC-θ and RanGAP1, we next explored the physiological significance of this interaction. We first inspected the localization of RanGAP1 in resting T cells from wild-type or Prkcq−/− mice. Confocal microscopy revealed that NE-localized RanGAP1 was decreased in Prkcq−/− T cells, with most RanGAP1 found in the cytosol (Figure 3A). When we used siPKC-θ to transiently knock down endogenous PKC-θ in Jurkat T cells, the amount of cytosol-localized RanGAP1 increased, while NE-localized RanGAP1 decreased (Figure 3B). Consistent with this result, stimulation of human primary T cells with anti-CD3 plus anti-CD28 or with PMA plus Iono increased the ratio of sumoylated to unsumoylated RanGAP1 (Figure 3C). A similar increase in this ratio was observed when mouse primary T cells or Jurkat T cells were costimulated with anti-CD3 plus anti-CD28 Abs; however, this increase was not observed when expression of PKC-θ was knocked out or knocked down (Figure 3D,E, Figure 3—figure supplement 1A, respectively; whole-cell lysates [WCL]). Consistently, PKC-θ deficiency also decreased the ratio in resting cells (Figure 3D,E, respectively; WCL and Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig3-v3.jpg)
+
+**Figure 3.:** (A, B) Confocal imaging of RanGAP1 (red) and lamin B1 (green) localization in representative unstimulated WT or Prkcq−/− mouse primary T cells (A), or in representative unstimulated Jurkat E6.1 cells transfected with siNC or siPKC-θ (B). Nuclei are stained with DAPI (blue). Areas outlined by squares in the merged images from (A) or (B) are enlarged at right in (A) or (B). Scale bars, 2 μm. Quantification of the ratio of NE/total RanGAP1 based on analysis of ~30 cells in about six random fields from two biological replicates as presented in (A) or (B) is shown at far right in (A) or (B), with each symbol representing an individual cell. Horizontal lines indicate the mean ± s.e.m. ****p<0.0001 (two-tailed, unpaired Student’s t-test). (C) Immunoblot analysis of RanGAP1-SUMO1 and RanGAP1 in human primary T cells unstimulated or stimulated for 15 min with anti-CD3 plus anti-CD28 or PMA plus Iono. (D–F) Immunoblot analysis of Mab414 IPs or WCL from WT and Prkcq−/− mouse primary splenic T cells (D) and thymocytes (F) stimulated with or without anti-CD3 plus anti-CD28 for 15 min, or from Jurkat E6.1 cells transfected with siNC or siPKC-θ stimulated for 0–15 min with anti-CD3 plus anti-CD28. (E) Statistical analysis of the amount ratio of RanGAP1-SUMO1 to Nup62 or to RanGAP1 in IPs or in WCL from the experiment in (D), (E), or (F) is shown at right in each figure. Analysis was based on three biological replicates for each experiment. n.s., not significant, *p<0.05, **p<0.01 (one-way ANOVA with post hoc test). (G, I) Confocal imaging of c-Jun (red) localization in representative WT or Prkcq−/− mouse splenic T cells (G) or thymocytes (I) unstimulated (US) or stimulated with anti-CD3 plus anti-CD28, costained with anti-lamin B1 (green) and DAPI (blue). Areas outlined by squares in the merged images from (G) or (I) are enlarged at right in (G) or (I). Scale bars, 2 μm. Quantitative analysis of the N/C ratio of c-Jun analyzed in ~30 cells in about six random fields from two biological replicates as presented in in (G) or (I) is shown at far right in (G) or (I). Each symbol represents an individual cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant; ****p<0.0001 (one-way ANOVA with post hoc test). (H, J) Subcellular fractionation of WT or Prkcq-/- mouse splenic T cells (H) or thymocytes (J) stimulated for 0–15 min with anti-CD3 plus anti-CD28, followed by immunodetection with the indicated antibodies. Data are representative of two (A, B, G, I) or three (C–F, H, J) biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoblot analysis of the association between RanGAP1-SUMO1 and NPC in Mab414 IPs, and of the indicated proteins expression in WCL from NC and shPKC-θ Jurkat T cells stimulated for 0–15 min with anti-CD3 plus anti-CD28. (B) Statistical analysis of the amount ratio of RanGAP1-SUMO1 to Nup62 or to RanGAP1 in IPs or in WCL under unstimulated condition from the experiment in Figure 3D–F. Analysis was based on three biological replicates. n.s., not significant, *p<0.05, **p<0.01 (two-tailed unpaired Student’s t-test). (C, D) Immunoblot analysis of phospho-c-Jun in lysates of WT or Prkcq−/− mouse peripheral T cells (C) or thymocytes (D) that were left unstimulated (US) or stimulated with anti-CD3 plus anti-CD28 for 15 min. (E,F) Statistical analysis of c-Jun nuclear import from the experiment of Figure 3H, J. Analysis was based on three biological replicates. n.s., not significant, **p<0.01, ***p<0.001 (two-tailed unpaired Student’s t-test). Immunoblot analysis of NPC IPs (Mab414) or whole-cell lysates (WCL) (G) and subcellular fractionation (H) of NC or shPKC-θ Jurkat E6.1Jurkat E6.1 T cells stimulated for 0–12 hr with anti-CD3 plus anti-CD28 and immunodetection with the indicated antibodies. Data are representative of three biological replicates.
+
 Sumoylated RanGAP1 was present in Mab414 NPC IPs prepared from mouse primary peripheral T cells or Jurkat T cells regardless of stimulation, but was largely absent or substantially reduced when these cells were depleted of PKC-θ both in resting and in activated T cells (Figure 3D,E, Figure 3—figure supplement 1A, respectively; IP and Figure 3—figure supplement 1B). Together, these results indicate that PKC-θ promotes the sumoylation of RanGAP1 as well as the incorporation of RanGAP1 into the NPC both in resting and activated cells. Interestingly, however, and in contrast to peripheral T cells or Jurkat cells, in Prkcq−/− mouse thymocytes, TCR plus CD28 costimulation appeared to increase the association of RanGAP1 with the NPC (Figure 3F; IP) as well as its relative increased sumoylation (Figure 3F; WCL) in a manner that was not affected by PKC-θ deletion, although PKC-θ deficiency did decrease the ratio of RanGAP1-SUMO1 to RanGAP1 in resting thymocytes (Figure 3F, WCL), similar to the mature T cells (Figure 3D, WCL). Upon TCR stimulation, ERK phosphorylation was decreased in Prkcq−/− mature T cells (Figure 3D, WCL), consistent with the finding that PKC-θ activates ERK via RasGRP1-Ras signaling (Roose et al., 2005). Notably, the activation of ERK was also reduced in Prkcq−/− thymocytes (Figure 3F, WCL), consistent with a previous report (Morley et al., 2008), but in contrast to another report (Pfeifhofer et al., 2003; Sun et al., 2000). These apparently contrasting results about the effect of Prkcq deletion on ERK activation in thymocytes could be due to the fact that the earlier study Pfeifhofer et al., 2003; Sun et al., 2000 used Prkcq−/− mice on a mixed background, whereas the later study (Morley et al., 2008) and ours used mice that were extensively backcrossed on the B6 background. Collectively, these results indicate that PKC-θ controls constitutive RanGAP1 sumoylation in both resting mature and immature T cells, but is critical for the TCR-induced RanGAP1 sumoylation and RanGAP1-SUMO association with NPCs only in mature T cells.
 
-## PKC-θ deficiency inhibits TCR-induced nuclear import of c-Jun in mature, but not immature T cells
+### PKC-θ deficiency inhibits TCR-induced nuclear import of c-Jun in mature, but not immature T cells
 
 Given the finding that PKC-θ is required for AP-1 activation in mature T cells, but not in thymocytes (Sun et al., 2000) and the difference between thymocytes and peripheral T cells observed above (Figure 3D vs. Figure 3F), we considered the possibility that the activation and/or nuclear import of c-Jun, which is a component of AP-1 transcription factor, may display difference in its PKC-θ dependence in mature peripheral T cells vs. thymocytes. Whereas PKC-θ deficiency did not affect TCR-induced phosphorylation of JNK and c-Jun (indicative of its activation) in either mouse splenic T cells or thymocytes (Figure 3—figure supplement 1C,D), confocal microscopy and nuclear fractionation showed that the TCR-induced nuclear localization of c-Jun was blocked in Prkcq−/− splenic T cells (Figure 3G,H, Figure 3—figure supplement 1E), but remained intact in Prkcq−/− thymocytes (Figure 3I,J, Figure 3—figure supplement 1F), suggesting that PKC-θ regulates the nuclear import of c-Jun through the NPC in mature T cells, but not in thymocytes. To test whether PKC-θ deletion impact is long lasting, we stimulated shPKC-θ cells with anti-CD3 plus anti-CD28 for 0–12 hr. As shown in Figure 3—figure supplement 1G,H, after 12 hr stimulation, PKC-θ deletion-induced defects in RanGAP1 sumoylation and its binding to NPCs and c-Jun nuclear translocation still remain. Thus, PKC-θ may promote c-Jun nuclear import, but not its phosphorylation per se, suggesting that it regulates AP-1 activation primarily by controlling the function of the NPC.
 
-## PKC-θ-mediated phosphorylation of RanGAP1 on Ser504 and Ser506 facilitates its sumoylation
+### PKC-θ-mediated phosphorylation of RanGAP1 on Ser504 and Ser506 facilitates its sumoylation
 
 Given the fact that phosphorylation of proteins often regulates their sumoylation (Hendriks et al., 2017; Hietakangas et al., 2006; Tomasi and Ramani, 2018), we next explored the possibility that PKC-θ may regulate the sumoylation of RanGAP1 via phosphorylating it. Using a mixture of phospho-Ser- and phospho-Thr-specific antibodies, we found that TCR plus CD28 costimulation increased phosphorylation of RanGAP1 in control Jurkat T cells, but not in PKC-θ knockdown cells (Figure 4A, Figure 4—figure supplement 1A). Furthermore, an in vitro kinase assay demonstrated that PKC-θ immunoprecipitated from Jurkat T cells efficiently phosphorylated RanGAP1 (Figure 4B), indicating that RanGAP1 is most likely a direct PKC-θ substrate. Mass spectrometry analysis of PKC-θ-phosphorylated RanGAP1 identified five potential phosphorylation serine or threonine sites on RanGAP1 (Figure 4—figure supplement 1B). Upon mutating each of these residues individually to alanine, we found that mutation both Ser504 and Ser506, but not the three other residues, reduced the phosphorylation of RanGAP1, while phosphorylation of the double mutant S504A/S506A (RanGAP1AA) was significantly decreased (Figure 4C,D, Figure 4—figure supplement 1C). In the in vitro kinase assay, we detected phosphorylation of truncated GST-RanGAP1431-587 but not the S504A/S506A double mutant (RanGAP1AA; Figure 4E). Sequence alignment of RanGAP1 from different species showed that S504 (10/11) and S506 (8/11) sites and three adjacent serines are conserved (Figure 4—figure supplement 1D). A mouse RanGAP1 fragment containing these conserved sites was also phosphorylated by PKC-θ in an in vitro kinase assay (Figure 4—figure supplement 1E). When we calculated the ratio of RanGAP1-SUMO1 to RanGAP1 in the mutant cells, we observed that this ratio was significantly decreased in cells expressing the S504A mutant or the double mutant RanGAP1AA and, to a lesser extent, in S506A-expressing cells (Figure 4F). Similar result was also observed when RanGAP1 antibody instead of HA antibody was used to detect HA-RanGAP1 and its SA mutants (Figure 4—figure supplement 1F). And HA-RanGAP1 and its SA mutants had a much higher expression level than endogenous RanGAP1, which could be caused by a strong promoter of the expression vector and contributed to the low sumoylation ratio of HA-RanGAP1. Together, these findings suggest that PKC-θ-mediated phosphorylation of RanGAP1, particularly on Ser504, promotes its sumoylation.
 
-## PKC-θ-mediated phosphorylation of RanGAP1 is required for RanBP2/RanGAP1-SUMO1/Ubc9 subcomplex assembly
+![Figure 4.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig4-v3.jpg)
+
+**Figure 4.:** (A) Immunoblot analysis of serine-phosphorylated RanGAP1 in Jurkat E6.1 T cells transfected with siNC or siPKC-θ, and left unstimulated or stimulated with anti-CD3 plus anti-CD28. (B) In vitro PKC-θ kinase assay using PKC-θ immunoprecipitated from Jurkat E6.1 cells and recombinant GST-RanGAP1 as substrate. (C, D) Immunoblot analysis of the phosphorylation of transfected wild-type or Ser-mutated HA-tagged RanGAP1 using a mixture of p-Ser- and p-Thr-specific antibodies in Jurkat-TAg cells, which were left unstimulated or stimulated for 15 min with anti-CD3 (C). Immunoblotting of the indicated proteins in WCL is shown at bottom. The ratio of phospho-RanGAP1 to immunoprecipitated RanGAP1 is shown in (D). Analysis is based on three biological replicates. n.s., not significant, *p<0.05, **p<0.01 (one-way ANOVA with post hoc test). (E) In vitro PKC-θ kinase assay as in (B), using purified truncated GST-RanGAP1 or GST-RanGAP1 AA (S504A/S506A) as substrate. (F) Immunoblot analysis of the sumoylation of wild-type or the indicated HA-tagged RanGAP1 mutants in Jurkat-TAg cells using an anti-HA antibody (top panel). The ratios of RanGAP1-SUMO1 to RanGAP1 are shown at the bottom panel. Analysis is based on three biological replicates. n.s., not significant, *p<0.05, **p<0.01, ***p<0.001 (one-way ANOVA with post hoc test). Data are representative of three biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblot analysis of the serine-phosphorylated RanGAP1 in stably transfected control (NC) or shPKC-θ-expressing Jurkat E6.1 T cells left unstimulated or stimulated with anti-CD3 plus anti-CD28. Asterisk indicates a nonspecific protein band. (B) Listing of 5 RanGAP1 Ser/Thr phosphorylation sites (red) identified by MS analysis of RanGAP1 phosphorylated in vitro by PKC-θ. (C) Immunoblot analysis of the phosphorylation of transfected wild-type or Ser-mutated HA-tagged RanGAP1 using a mixture of p-Ser- and p-Thr-specific antibodies in Jurkat-TAg cells, which were left unstimulated or stimulated for 15 min with anti-CD3 (left). Immunoblotting of the indicated proteins in WCL is shown at bottom. The ratio of phospho-RanGAP1 to immunoprecipitated RanGAP1 is shown in (right). Analysis is based on three biological replicates. n.s., not significant (one-way ANOVA with post hoc test). (D) Sequence alignment of RanGAP1 proteins from the indicated species, showing conservation of Ser504 and Ser506. (E) In vitro PKC-θkinase assay using recombinant truncated GST-mouse mRanGAP1463-588 as a substrate. (F) Immunoblot analysis of both HA-RanGAP1 and endogenous RanGAP1 in WCL from Figure 4F, detected by RanGAP1 antibody. Data are representative of three (A, C, E, F) or two (B) biological replicates.
+
+### PKC-θ-mediated phosphorylation of RanGAP1 is required for RanBP2/RanGAP1-SUMO1/Ubc9 subcomplex assembly
 
 The SUMO E2 enzyme Ubc9 directly interacts with and conjugates SUMO1 to RanGAP1 (Bernier-Villamor et al., 2002), and the sumoylation of RanGAP1 is essential for assembly of the RanBP2/RanGAP1-SUMO1/Ubc9 subcomplex (Hampoelz et al., 2019a; Hampoelz et al., 2019b; Hutten et al., 2008; Joseph et al., 2004; Mahajan et al., 1997; Reverter and Lima, 2005; Ritterhoff et al., 2016; von Appen et al., 2015; Werner et al., 2012). We therefore hypothesized that PKC-θ-mediated phosphorylation of RanGAP1 might regulate the interaction between Ubc9 and RanGAP1 and, furthermore, that RanGAP1 phosphorylation would be required for assembly of this subcomplex. Hence, we first examined whether RanGAP1 sumoylation affects its binding to Ubc9 and found that a non-sumoylated RanGAP1 mutant (K524R) was still capable of associating with Ubc9 (Figure 5A). Next, we generated two RanGAP1 mutants: One, which was mutated at both its sumoylation (K524R) and phosphorylation (S504A/S506A) sites (HA-RanGAP1AA/K524R), and another K524R mutant with a replacement of Ser504 and Ser506 PKC-θ phosphorylation sites by a glutamic acid as a phosphorylation mimic (HA-RanGAP1EE/K524R). We then analyzed the association of these mutants with Ubc9 by reciprocal co-IP and found that, compared with HA-RanGAP1-K524R, HA-RanGAP1AA-K524R showed a decreased association with Ubc9, while HA-RanGAP1EE-K524R had a stronger interaction (Figure 5A,B). This result indicates that RanGAP1 phosphorylation promotes its binding to Ubc9 and provides an explanation for our finding that mutation of the RanGAP1 PKC-θ phosphorylation sites inhibits its sumoylation (Figure 4F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) Reciprocal IP analysis of the association between HA-tagged wild-type or K524-mutated RanGAP1 and endogenous Ubc9. RanGAP1 expression was analyzed by anti-HA antibody immunoblotting in WCL (bottom panels). RanGAP1AA (S504A/S506A); RanGAP1EE (S504E/S506E). (C–E) Immunoblot analysis of HA-RanGAP1 IPs (C) and Ubc9 IPs or RanBP2 IPs (D) from Jurkat-TAg cells transfected with HA-RanGAP1 and HA-RanGAP1 mutants. The ratio of RanGAP1-SUMO1 to RanGAP1 in the WCL of (C) and (D) is quantified in (E); quantification is based on three biological replicates. *p<0.05 (one-way ANOVA with post hoc test). Data are representative of three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblot analysis of both HA-RanGAP1 and endogenous RanGAP1 in WCL from Figure 5(D), detected by RanGAP1 antibody. (B) Prediction of RanGAP1 stability changes upon mutating Ser504 and Ser506 to Glu. Predicted increase of protein stability due to mutations at serine 504 or serine 506 of RanGAP1 to glutamic acid as determined by i-Mutant2.0 (folding.biofold.org/i-mutant/i-mutant2.0.html). Data are representative of three (A) biological replicates.
+
 Next, we transfected Jurkat T cells with HA-RanGAP1, HA-RanGAP1AA, or HA-RanGAP1EE and analyzed their association with Ubc9 and RanBP2 by reciprocal co-IP. HA-RanGAP1AA bound to Ubc9 and RanBP2 less effectively than non-mutated HA-RanGAP1; in contrast, HA-RanGAP1EE bound more effectively to Ubc9 and RanBP2 (Figure 5C,D). As expected, due to its stronger association with Ubc9, the RanGAP1EE mutant protein displayed an increased ratio of RanGAP1-SUMO1 to RanGAP1 relative to the two other RanGAP1 proteins (Figure 5E). Similar result was also observed when HA-RanGAP1EE transfected cell lysates was blotted with RanGAP1 antibody instead of HA antibody (Figure 5—figure supplement 1A). These results reveal that PKC-θ-mediated phosphorylation of RanGAP1 is essential for assembly of the RanBP2/RanGAP1-SUMO1/Ubc9 subcomplex in NPCs. Intriguingly, in silico analysis showed that replacement of the two PKC-θ phosphorylation sites in RanGAP1 by glutamic acid (S504E/S506E) increased the overall structural stability of RanGAP1 (Figure 5—figure supplement 1B); this increased stability likely contributed to the observed increased association between RanGAP1 and Ubc9. Collectively, these findings demonstrate that PKC-θ phosphorylates RanGAP1 to increase its association with Ubc9 and, in turn, the sumoylation of RanGAP1, thereby facilitating assembly of the RanBP2/RanGAP1-SUMO1/Ubc9 subcomplex upon TCR stimulation.
 
-## RanGAP1AA mutant inhibits TCR/CD28-induced AP-1, NF-ATc1, and NF-κB nuclear import and IL-2 production
+### RanGAP1AA mutant inhibits TCR/CD28-induced AP-1, NF-ATc1, and NF-κB nuclear import and IL-2 production
 
 Based on the results above (Figures 4 and 5), we hypothesized that the non-phosphorylatable RanGAP1 mutant (RanGAP1AA) will have impaired ability to promote nuclear transport of key TCR-activated transcription factors that are required for productive T-cell activation. As a positive control, we generated a RanGAP1 knockdown Jurkat E6.1 cell line (RanGAP1-KD) having a RanGAP1 mutation with decreased RanGAP1 protein level due to an in-frame nucleotide deletion (Figure 6—figure supplement 1A,B). We confirmed that expression of this mutant resulted in blocked TCR-induced nuclear translocation of NFATc1, p65 (NF-κB), and c-Jun and c-Fos (AP-1) (Figure 6—figure supplement 1C,D).
 
 We next determined whether transfection of the RanGAP1-KD cell line with wild-type RanGAP1 or RanGAP1AA can rescue the nuclear translocation of NFATc1, p65, or AP-1, with unedited Jurkat cells serving as a negative control. Using subcellular fractionation (Figure 6A) or confocal microscopy (Figure 6B,C), we observed that the defective nuclear translocation of these transcription factors in RanGAP1-KD cells was largely rescued by wild-type RanGAP1, but not by the RanGAP1AA mutant. Similarly, while stimulated RanGAP1-KD cells displayed reduced IL-2 production, which is known to require the cooperative activity of the above transcription factors, as compared to control cells, transfection with wild-type RanGAP1 rescued IL-2 production, while RanGAP1AA did not (Figure 6D). Moreover, by knocking down endogenous RanGAP1 with two different siRNAs designed to specifically target the 3’-UTR of RanGAP1 (Figure 6—figure supplement 1E), we validated the effect of the RanGAP1-AA mutation on TCR-induced nuclear translocation of the three transcription factors in human primary T cells (Figure 6—figure supplement 1E-G).
 
-## PKC-θ-RanGAP signaling axis is differentially required in various nuclear transport pathways
+![Figure 6.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig6-v3.jpg)
+
+**Figure 6.:** (A) Immunoblot analysis of NC (transfected with CRISPR/Cas9 vector expressing a scrambled gRNA) and RanGAP1(KD) (containing an in-frame nucleotide deletion in RanGAP1 gene induced by CRISPR/Cas9 genome editing) Jurkat E6.1 cells transfected with HA-RanGAP1 or HA-RanGAP1AA, which were left unstimulated or stimulated for 15 min with anti-CD3 plus anti-CD28, followed by nuclear fractionation and immunodetection with the indicated antibodies. RanGAP1AA (S504A/S506A). (B) Confocal imaging of the nuclear import of GFP-tagged NF-ATc1, p65 (NF-κB), c-Jun and c-Fos in RanGAP1 (KD) cells cotransfected with HA-RanGAP1 or HA-RanGAP1AA, and left unstimulated or stimulated with anti-CD3 plus anti-CD28. Scale bars, 3 μm. (C) Quantification of the nuclear import of GFP-tagged NF-ATc1, p65 (NF-κB), c-Jun and c-Fos in ~30 cells from two biological replicates as presented in (B). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant, ****p<0.0001 (one-way ANOVA with post hoc test). (D) Enzyme-linked immunosorbent assay of IL-2 in supernatants of NC or RanGAP1 (KD) cells transfected with HA-RanGAP1 or HA-RanGAP1AA and left unstimulated or stimulated for 24 hr with anti-CD3 plus anti-CD28. n.s., not significant, ****p<0.0001 (one-way ANOVA with post hoc test). Data are representative of three (A, D) or two (B, C) biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RanGAP1 expression in negative control (NC, cells transfected with scrambled gRNA) Jurkat E6.1 T cells or cells with stable CRISPR/Cas9-edited RanGAP1 knockdown (KD). (B) Sequence alignment of RanGAP1 genomic fragment (WT) and the CRISPR/Cas9-edited RanGAP1 genomic fragment in the RanGAP1 (KD) Jurkat T cell line (top). The underlined sequence represents the guide RNA. The mRNA expression levels of RanGAP1 in NC and RanGAP1 (KD) T cells are shown at the bottom. Horizontal lines indicate the mean ± s.e.m. n.s., ***p<0.001 (two-tailed unpaired Student’s t-test). (C) Confocal imaging showing the nuclear import of GFP-tagged NF-ATc1, p65 (NF-κB), c-Jun and c-Fos in NC and RanGAP1 (KD) T cells unstimulated or stimulated with anti-CD3 plus anti-CD28. Scale bars, 2 μm. These images are representative of ~30 cells analyzed in each group from two biological replicates. (D) Quantification of the nuclear import of GFP-tagged NF-ATc1, p65 (NF-κB), c-Jun, and c-Fos as presented in (C). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant, ***p<0.0001 (one-way ANOVA with post hoc test). (E) The knockdown effect of siRanGAP1 in human primary T cells. (F) Confocal imaging showing the nuclear import of transfected GFP-tagged NF-ATc1, p65 (NF-κB) or c-Jun in human primary T cells cotransfected with siNC or siRanGAP1 (siRNA 1 + 2), unstimulated or stimulated with anti-CD3 plus anti-CD28. Scale bars, 2 μm. These images are representative of ~30 cells analyzed in each group from two biological replicates. (G) Quantification of the nuclear import of GFP-tagged NF-ATc1, p65 (NF-κB), c-Jun as presented in (F). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant, ****p<0.0001 (one-way ANOVA with post hoc test). Data are representative of three (A, E) or two (C, D, F, G) biological replicates.
+
+### PKC-θ-RanGAP signaling axis is differentially required in various nuclear transport pathways
 
 To determine whether the nuclear transport defect resulting from PKC-θ deficiency is a generalized effect, we compared the nuclear transport of additional proteins in wild-type or PKC-θ knockdown Jurkat T cells (Figure 7). The proteins we tested were as follows: RNA exosome complex subunit Dis3, ribosome subunits RPS3 and RPL26, tumor suppressor p53, histone H1, which are importin-β1-dependent; histones (H2B, H3), protein/RNA export receptor CRM1, which are Ran-dependent but importin-β1-independent; and Ran-independent mRNA export receptor NXF1 (Bernardes and Chook, 2020; Serpeloni et al., 2011).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig7-v3.jpg)
 
-**Figure 7.:** (A) Subcellular fractionation of Jurkat E6.1 cells transfected with siNC or siPKC-θ and stimulated for 0–15 min with anti-CD3 plus anti-CD28, followed by immunodetection with the indicated antibodies. (B) Statistical analysis of the indicated proteins in nuclear extract from the experiment of (A). n.s., not significant, *p<0.05, **p<0.01, ***p<0.001 (two-tailed, unpaired Student’s t-test). Data are representative of three biological replicates.Figure 7—source data 1.Figure 7.Figure 7—source data 2.Figure 7.
+**Figure 7.:** (A) Subcellular fractionation of Jurkat E6.1 cells transfected with siNC or siPKC-θ and stimulated for 0–15 min with anti-CD3 plus anti-CD28, followed by immunodetection with the indicated antibodies. (B) Statistical analysis of the indicated proteins in nuclear extract from the experiment of (A). n.s., not significant, *p<0.05, **p<0.01, ***p<0.001 (two-tailed, unpaired Student’s t-test). Data are representative of three biological replicates.
 
 In resting T cells, PKC-θ knockdown led to reduced nuclear import of Dis3, RPS3, and RPL26, as well as impaired nuclear export of CRM1, consistent with their requirement for importin-β1 or the Ran system; however, the Ran-independent NXF1 also displayed impaired nuclear export (i.e., nuclear retention) (Figure 7A,B). In TCR-activated cells, PKC-θ knockdown did not affect the nuclear transport of CRM1, Dis3, RPS3, or RPL26 (Figure 7A,B). However, TCR stimulation did not alleviate siPKC-θ-caused defects in importin-β1 nuclear import and in NXF1 nuclear export. Interestingly, independent of the stimulation status, PKC-θ knockdown did not affect the nuclear transport of histones, nor did it affect the nuclear import of stimulation-induced p53. In summary, neither PKC-θ nor TCR signaling regulates histones transport; in resting T cells, the importin-β1- or Ran-dependent nuclear transport pathways we tested, with the exception of histones, are dependent on PKC-θ; in activated cells, PKC-θ was dispensable for their nuclear transport, except for the nuclear transport of importin-β1; and PKC-θ was required for NXF1 transport under both statuses. Therefore, PKC-θ-RanGAP signaling axis is differentially required in various nuclear transport pathways.
 
-## RanGAP1EE mutant rescues c-Jun nuclear import in PKC-θ-deficient T cells upon TCR stimulation
+### RanGAP1EE mutant rescues c-Jun nuclear import in PKC-θ-deficient T cells upon TCR stimulation
 
 To further confirm our finding that the defective nuclear import of AP-1, NF-AT, and NF-κB transcription factors in PKC-θ-deficient cells is linked to the impaired phosphorylation of RanGAP1, we next determined whether a phospho-mimic RanGAP1EE mutant can rescue the nuclear translocation of c-Jun (AP-1), NF-ATc1 (NFAT), or p65 (NF-κB) in PKC-θ-deficient T cells. We transfected PKC-θ knockdown Jurkat T cells or retrovirally transduced murine splenic Prkcq−/− T cells with RanGAP1 EE or the negative control AA mutant expression vectors and analyzed their effect. As expected, the nuclear import of importin-β1 was partially rescued by RanGAP1EE both before or after TCR stimulation in siPKC-θ T cells (Figure 8A), consistent with our results that PKC-θ is required for RanGAP1 SUMOylation in both states (Figures 1G–L and 3D–F). Moreover, in contrast to RanGAP1AA mutant, RanGAP1EE mutant did rescue TCR-induced nuclear translocation of c-Jun in siPKC-θ Jurkat T cells (Figure 8A) or in Prkcq−/− primary T cells (Figure 8B,C). The incomplete rescue of c-Jun translocation may be explained by other NPC functional defects caused by PKC-θ deficiency. As expected, NFATc1 or p65 nuclear import was not rescued by the RanGAP1EE mutant, consistent with the fact that TCR-proximal upstream signaling pathways are also disrupted in PKC-θ-deficient T cells (Pfeifhofer et al., 2003; Sun et al., 2000). As to the mRNA export receptor NXF1, siPKC-θ-induced nuclear retention (Figure 7) was reversed by forced RanGAP1EE expression (Figure 8A). Thus, we conclude that formation of the RanBP2 subcomplex is the key step downstream of PKC-θ signaling that regulates the nuclear transport of transcription factors, especially c-Jun.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/67123/elife-67123-fig8-v3.jpg)
 
-**Figure 8.:** EE, but not RanGAP1AA, rescues TCR-induced nuclear import of c-Jun in PKC-θ-deficient cells.(A) Immunoblot analysis of Jurkat-TAg cells cotransfected with siNC or siPKC-θ plus HA-RanGAP1AA or HA-RanGAP1EE as indicated, which were left unstimulated or stimulated for 15 min with anti-CD3, followed by nuclear fractionation and immunodetection with the indicated antibodies. (B) Confocal imaging showing the nuclear import of c-Jun, NF-ATc1 or p65 (NF-κB) in wild-type (WT) murine splenic T cells transduced with GFP-vector or Prkcq murine splenic T cells transduced with GFP-vector or RanGAP1−/−AA or RanGAP1EE, left unstimulated or stimulated with anti-CD3 plus anti-CD28 for 15 min. Scale bars, 2 μm. These images are representative of ~30 cells analyzed in each group in two independent experiments. (C) Quantification of the nuclear import of c-Jun, NF-ATc1, or p65 as presented in (B). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant, ****p<0.0001 (one-way ANOVA with post hoc test). Data are representative of two biological replicates.Figure 8—source data 1.Figure 8.Figure 8—source data 2.Figure 8.
+**Figure 8.:** (A) Immunoblot analysis of Jurkat-TAg cells cotransfected with siNC or siPKC-θ plus HA-RanGAP1AA or HA-RanGAP1EE as indicated, which were left unstimulated or stimulated for 15 min with anti-CD3, followed by nuclear fractionation and immunodetection with the indicated antibodies. (B) Confocal imaging showing the nuclear import of c-Jun, NF-ATc1 or p65 (NF-κB) in wild-type (WT) murine splenic T cells transduced with GFP-vector or Prkcq−/− murine splenic T cells transduced with GFP-vector or RanGAP1AA or RanGAP1EE, left unstimulated or stimulated with anti-CD3 plus anti-CD28 for 15 min. Scale bars, 2 μm. These images are representative of ~30 cells analyzed in each group in two independent experiments. (C) Quantification of the nuclear import of c-Jun, NF-ATc1, or p65 as presented in (B). Each symbol represents an individual T cell. Horizontal lines indicate the mean ± s.e.m. n.s., not significant, ****p<0.0001 (one-way ANOVA with post hoc test). Data are representative of two biological replicates.
 
 ## Discussion
 
@@ -125,27 +173,485 @@ The RanBP2 subcomplex is a multifunctional component of NPC in the animal kingdo
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 (Prkcq−/−)</td>
+      <td>A gift from D. Littman (Wang et al., 2015)</td>
+      <td>PMID:26390157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Jurkat, Clone E6-1</td>
+      <td>ATCC</td>
+      <td>TIB-152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Jurkat-TAg</td>
+      <td>Cellosaurus</td>
+      <td>CVCL_C831 RRID:CVCL_C831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-PKC-θ</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-1875, RRID:AB_675806</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-RanGAP1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-28322, RRID:AB_2176987</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-importin β1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-137016, RRID:AB_2133993</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- Ran</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-271376, RRID:AB_10610890</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- RanBP2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-74518, RRID:AB_2176784</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- Ubc9</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-271057, RRID:AB_10610674</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- NF-ATc1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-7294, RRID:AB_2152503</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-c-Myc</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-40, RRID:AB_2857941</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- actin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-8432, RRID:AB_626630</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p-Ser/Phosphoserine</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-81516, RRID:AB_1128626</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Lamin B1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-30264, RRID:AB_2136305</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p65(NF-κB)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-109, RRID:AB_632039</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Histone 1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-8030, RRID:AB_675641</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-c-Jun</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9165, RRID:AB_2130165</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Dis3</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-398663</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-c-Fos</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 2250, RRID:AB_2247211</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-Ser/Thr</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9631, RRID:AB_330308</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-phospho-ERK1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9106, RRID:AB_331768</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Na/K-ATPas</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 3010, RRID:AB_2060983</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GAPDH</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 2118, RRID:AB_561053</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CRM1</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 46249, RRID:AB_2799298</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Histone 2B</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 12364, RRID:AB_2714167</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Histone 3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 4499, RRID:AB_10544537</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-NF-ATc1</td>
+      <td>Abcam</td>
+      <td>Cat #: ab25916, RRID:AB_448901</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-RanGAP1</td>
+      <td>Abcam</td>
+      <td>Cat #: ab92360, RRID:AB_10564003</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RPL26</td>
+      <td>Abcam</td>
+      <td>Cat #: ab59567, RRID:AB_945306</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-RPS3</td>
+      <td>Abcam</td>
+      <td>Cat #: ab181992</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-NXF1</td>
+      <td>Abcam</td>
+      <td>Cat #: ab129160, RRID:AB_11142853</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- Mab414</td>
+      <td>BioLegend</td>
+      <td>Cat #: 902901, RRID:AB_2565026</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD3</td>
+      <td>BioLegend</td>
+      <td>Cat #: 100202, RRID:AB_312659</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Syrian Hamster monoclonal anti-mouse CD28</td>
+      <td>BioLegend</td>
+      <td>Cat #: 102102, RRID:AB_312867</td>
+      <td>2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Human CD3(OKT3)</td>
+      <td>BioLegend</td>
+      <td>Cat #: 317302, RRID:AB_571927</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Human CD28(CD28.2)</td>
+      <td>BioLegend</td>
+      <td>Cat #: 302902, RRID:AB_314304</td>
+      <td>2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-coupled chicken anti-mouse IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21200, RRID:AB_2535786</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594-coupled chicken anti-mouse IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21201, RRID:AB_141630</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594-coupled chicken anti-rabbit IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21442, RRID:AB_141840</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-coupled donkey anti-goat IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-11055, RRID:AB_2534102</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cell Tracker Blue</td>
+      <td>Invitrogen</td>
+      <td>Cat #: C2110</td>
+      <td>IF: 10 μM</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1( ) (plasmid)</td>
+      <td>Invitrogen</td>
+      <td>Cat #: V79020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T-2</td>
+      <td>GE</td>
+      <td>Cat #: 27-4581-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFlag-CMV2</td>
+      <td>Sigma</td>
+      <td>Cat #: E7396</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-IRES-GFP Retroviral Vector</td>
+      <td>Cell Biolabs</td>
+      <td>Cat #: RTV-013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiCRISPRv2</td>
+      <td>Addgene</td>
+      <td>Cat #: 52961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-F</td>
+      <td>NM_001278651.2</td>
+      <td>CGGGATCCATGGCCTCGGAAGACATTGCCAAGC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-R</td>
+      <td>NM_001278651.2</td>
+      <td>ATAAGAATGCGGCCGCCTAGACCTTGTACAGCGTCTGCAGC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S34A-F</td>
+      <td>NM_001278651.2</td>
+      <td>CAAGAGCCTCAAACTCAACGCCGCAGAAGATGCTAAAGATG</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-T419A-F</td>
+      <td>NM_001278651.2</td>
+      <td>CTGGACCCTAACGCCGGGGAGCCAGCTC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S478A-F</td>
+      <td>NM_001278651.2</td>
+      <td>CCTTCCTAAAGGTGTCAGCCGTGTTCAAGGACGAAG</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S504A-F</td>
+      <td>NM_001278651.2</td>
+      <td>GAAGGCTTTCAACGCCTCGTCCTTCAAC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S506A-F</td>
+      <td>NM_001278651.2</td>
+      <td>CTTTCAACTCCTCGGCCTTCAACTCCAAC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S504A/S506A-F</td>
+      <td>NM_001278651.2</td>
+      <td>CTGATGCAGAAGGCTTTCAACGCCAGCGCCTTCAA CTCCAACACCTTCC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-S504E/S506E-F</td>
+      <td>NM_001278651.2</td>
+      <td>CTGATGCAGAAGGCTTTCAACGAGAGCGAGTTCAAC TCCAACACCTTCC</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1-K524R-F</td>
+      <td>NM_001278651.2</td>
+      <td>CATGGGTCTGCTCAGGAGTGAAGACAAG</td>
+      <td>Primer for PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RanGAP1 sgRNA</td>
+      <td>NM_001278651.2</td>
+      <td>CACCGCAGAGGGAGTGCCACT</td>
+      <td>CRISPR-Cas9 guides</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shPKC-θ</td>
+      <td>NM_006257.5</td>
+      <td>GAGTATGTCGAATCAGAGA</td>
+      <td>dsRNA for RNAi</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siPKC-θ</td>
+      <td>Previous study in lab (Wang et al., 2015)</td>
+      <td>GCUUGUAACUUGAGAUCUA</td>
+      <td>dsRNA for RNAi</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRanGAP1-1</td>
+      <td>NM_001278651.2</td>
+      <td>GGAGUGUUGACAACCCAAA</td>
+      <td>dsRNA for RNAi</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRanGAP1-2</td>
+      <td>NM_001278651.2</td>
+      <td>GUGAGCUGCUCCGCCAUUAAA</td>
+      <td>dsRNA for RNAi</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Fiji/Image-J</td>
+      <td>MPI-CBG, Dresden/ National Institutes of Health (NIH)</td>
+      <td>PMID:22743772 RRID:SCR_002285</td>
+      <td>Image processing and analysis</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Graphpad Prism v6</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Graphs and statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 (B6) and Prkcq−/− mice (a gift from D. Littman) were housed under specific pathogen-free conditions and were manipulated according to the guidelines approved by the Animal Care and Ethics committee of Sun Yat-Sen University.
 
-## Plasmids
+### Plasmids
 
 The cDNAs encoding RanGAP1, p65/NF-κB, NF-ATc1, c-Jun, c-Fos were amplified by PCR from a Jurkat E6.1 T-cell cDNA library and were cloned into the vectors pcDNA3.1-HA (Invitrogen), pGEX-4T-2 (Sigma), or pcDNA3.1-GFP (Invitrogen). Plasmids encoding HA-tagged SUMO1, and c-Myc-tagged PKC-θ, PKC-θ−2KR, PKC-θ-K409R, PKC-θ-A148E have been described (Wang et al., 2015). Specific point mutations of RanGAP1 were introduced by site-directed mutagenesis with a QuikChange Site-Directed Mutagenesis Kit (Stratagene).
 
-## Human primary T cells
+### Human primary T cells
 
 Buffy coat cells from de-identified healthy human peripheral blood was provided by the Guangzhou blood center; it was handled according to the guidelines of the Ethics committee of Sun Yat-Sen University. Peripheral blood mononuclear cell isolation and T-cell enrichment were performed as previously described (Wang et al., 2015).
 
-## Cell culture, transfection, and stimulation
+### Cell culture, transfection, and stimulation
 
 Spleens and thymi of Prkcq−/− mice were dissociated into single-cell suspensions in PBS containing 1% FBS (Gibco), and samples were depleted of red blood cells with RBC lysis buffer (Sigma). Mouse splenic T cells were isolated with a Pan T Cell Isolation Kit II (Miltenyi Biotec). Jurkat T cells and Raji B cells were cultured in complete RPMI-1640 (Hyclone, Logan, UT) medium supplemented with 10% FBS, and 100 U/ml each of penicillin and streptomycin (Life Technologies). Jurkat E6.1 T cells stably expressing PKC-θ-specific short hairpin RNA (shPKC-θ) were grown in the presence of aminoglycoside G418 (700 μg/ml; Invitrogen). Cell lines were electro-transfected with various vectors using the Cell Line Nucleofector Kit (Lonza, Germany), and human primary T cells were transfected with various vectors using the P3 Primary Cell 4D-Nucleofector Kit (Lonza). For APC stimulation of T cells, Raji B lymphoma cells were incubated for 30 min at 37°C in the presence or absence of SEE (100 ng/ml; Toxin Technology). The cells were washed with PBS and were mixed with Jurkat T cells at a ratio of 1:1, followed by incubation for various times at 37°C. For antibody stimulation, mouse or human T cells were stimulated for various times with anti-CD3 (5 μg/ml) and/or anti-CD28 (2 μg/ml), which were crosslinked with goat anti-mouse IgG (10 μg/ml). Cell lines were authenticated using short tandem repeat profiling at GENEWIZ, Inc (Suzhou, China). Mycoplasma test for cell culture was done in a monthly basis using PCR Mycoplasma Detection Kit (abm, G238). Cells used in experiments were within 10 passages from thawing.
 
-## IP and immunoblotting
+### IP and immunoblotting
 
 Cells washed with ice-cold PBS and lysed in lysis buffer (20 mM Tris–HCl, pH 7.5, 150 mM NaCl, 5 mM EDTA, 1% Nonidet-P-40, 5 mM NaPPi, 1 mM sodium orthovanadate [Na3VO4], 1 mM PMSF, and 10 μg/ml each aprotinin and leupeptin). Whole-cell lysates were incubated overnight at 4°C with the indicated antibodies, and proteins were collected on protein G-Sepharose beads (GE Healthcare) for an additional 4 hr at 4°C with gentle shaking. The immunoprecipitated proteins were resolved by SDS–PAGE, transferred onto PVDF membranes, and probed with primary antibodies. Signals were visualized by enhanced chemiluminescence (YESEN, Shanghai, CHINA) and films were exposed in the ChemiDoc XRS system (Bio-Rad) or to X-ray film. Densitometry analysis was performed with ImageJ software.
 
-## PM, NE, and NPC fractionation
+### PM, NE, and NPC fractionation
 
 For the PM purification (Figure 1A,B), cells washed with ice-cold PBS were resuspended in an ice-cold hypotonic buffer (10 mM HEPES, pH 7.4, 42 mM KCl, 5 mM MgCl2, 1 mM DTT, and protease inhibitors [leupeptin, PMSF, and aprotinin]) for 20 min on ice. The cell suspension was pushed 10 times through a 30-gauge needle, followed by centrifugation at 200 × g for 10 min. The pellet as was used as the nuclear fraction. The supernatant was centrifugation at 25,000 × g for 1 hr, and the pellet was used as the PM.
 
@@ -153,42 +659,42 @@ The nuclear and NE fractions were prepared using the NE-PERTM Nuclear and Cytopl
 
 The NPC fraction was prepared as described (Jafferali et al., 2014), with minor modifications. Cells were washed with PBS and treated with 1 mM dithiobis (succinimidyl propionate) (Sangon Biotech) in RPMI-1640 medium for 15 min at room temperature to crosslink the NPC. The reaction was stopped by adding 15 mM Tris–HCl (pH 7.4) for 10 min at room temperature. Nuclei were pelleted as described above, followed by incubation in 5 volumes of 7 M urea containing 1% Triton X-100 (TX-100) and protease inhibitors for 20 min on ice to resuspend the nuclei pellet. The suspension was collected as the NPC fraction, diluted eightfold in PBS containing protease inhibitors, sonicated on ice, and cleared by centrifugation at 1000 × g for 10 min.
 
-## Fluorescence microscopy and analysis
+### Fluorescence microscopy and analysis
 
 Immunofluorescence was conducted as previously described (Wang et al., 2015). Briefly, conjugates of Jurkat T cells and Raji APCs were plated on poly-l-lysine-coated slides, incubated for 15 min at room temperature, fixed for 15 min with 4% PFA, and permeabilized with 0.2% Triton X-100 for 10 min at room temperature. The slides were blocked with 2% BSA for 1 hr, and samples were stained with indicated antibodies overnight at 4°C. After washing with PBS, slides incubated for 1 hr at room temperature with secondary antibodies. After three washes with PBS, the cells were mounted with a drop of mounting medium. Images were obtained with a Leica SP5 laser-scanning confocal microscope equipped with 100× objective lens with laser excitation at 405 nm, 488 nm, 561 nm, or 633 nm. Each image is a single z-section, and the z-position closest to the center of the cell (the equatorial plane) was chosen. Images were analyzed and processed with ImageJ and Adobe Photoshop CS6 software. Briefly, quantitative colocalization analysis of confocal microscopy images was performed with the JACoP module of the FIJI-ImageJ software (https://imagej.nih.gov/ij/index.html) to generate the Pearson’s correlation coefficient (PCC) with a range of 1 (perfect correlation) to −1 (perfect exclusion). PCC measures the pixel-by-pixel covariance in the signal levels of two channels of an image. The protein nuclear/cytoplasmic (N/C) expression ratio of confocal microscope images was quantified as follows: N/C = Total fluorescence intensity in nuclear area/(Total fluorescence intensity in whole-cell area – total fluorescence intensity in nucleus). The fluorescence intensities of PKC-θ or RanGAP1 in the NE were quantified with FIJI-ImageJ software. The region of NE was automatically segmented as described with FIJI-ImageJ software (Tosi et al., 2020).
 
-## Expression and purification of GST-fusion proteins
+### Expression and purification of GST-fusion proteins
 
 GST-fusion proteins were expressed in E. coli BL21 after induction with 0.3 mM isopropyl-beta-d-thiogalactopyranoside (Sangon Biotech) for 12 hr at 18°C. Bacteria were resuspended in lysis buffer (1× PBS: 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, and 1.8 mM KH2PO4, pH 7.4; proteinase inhibitors, and 1% Triton X-100 for GST-Nups or 0.1% Triton X-100 for GST-RanGAP1). Bacterial extracts were sonicated for 10 min and centrifuged. GST-fusion proteins were purified by incubation with glutathione-Sepharose beads (GE Healthcare). The precipitates were washed 3× with lysis buffer, then eluted with elution buffer (50 mM Tris–HCL, pH 8.0, 15 mM reduced glutathione). Coomassie Brilliant Blue staining was used as loading control.
 
-## PKC-θ in vitro kinase assay
+### PKC-θ in vitro kinase assay
 
 The kinase assay was conducted as previously described (Wang et al., 2015). Jurkat T-cell lysates were immunoprecipitated with anti-PKC-θ or a control IgG. The IPs were washed 5× with RIPA buffer containing 0.2% SDS and 1× with PKC-θ kinase buffer (20 mM HEPES, pH 7.2–7.4, 10 mM MgCl2, and 0.1 mM EGTA) and were resuspended in 25 μl of kinase buffer containing 20 μM cold ATP, 10 μM PMA, 200 μg/ml phosphatidyserine, and 1 μg of recombinant GST-RanGAP1 protein or GST-RanGAP1 mutant proteins as substrate. After incubation for 30 min at 30°C with gentle shaking, the reaction was stopped by adding 5× loading buffer. Samples were boiled at 95°C for 10 min, separated by SDS–PAGE, and detected by western blot with an anti-p-Ser/Thr antibody (a mixture of phospho-Ser- and phospho-Thr-specific antibodies, BD Biosciences, 9631).
 
-## Mass spectrometric analysis
+### Mass spectrometric analysis
 
 Samples for co-IP were prepared as described previously with minor modification (Wang et al., 2015). In brief, anti-CD3/CD28-stimulated Jurkat T cells were lysed and followed by IP with anti-PKC-θ or anti-IgG. IPs immobilized on protein G beads and 1 μg recombinant GST-RanGAP1 protein immobilized on GSH Sepharose beads were separately washed 2× with kinase buffer and mixed to initiate the kinase assay. Reactions were terminated by Laemmli sample buffer, boiled, and resolved on SDS–PAGE. Gel bands of interest were excised and subjected to tryptic digestion. After desalting, the peptides were analyzed by tandem MS. A splitless Ultra 2D Plus system (Eksigent) coupled to the TripleTOF 5600 System (AB SCIEX) with a Nanospray III source (AB SCIEX) were performed to analyze immunoprecipitated proteins and identify posttranscriptional modification sites of RanGAP1. The search engine ProteinPilot V4.5 was used to assigned potential modification sites with high confidence.
 
-## Immunoelectron microscopy
+### Immunoelectron microscopy
 
 Immunoelectron microscopy was performed on Jurkat T cells stimulated for 0–15 min with anti-CD3 plus anti-CD28. Cells were fixed in buffer (4% paraformaldehyde, 0.2% glutaraldehyde), pelleted, treated with LR white acrylic resin (L9774, Sigma-Aldrich), and then frozen for 72 hr at −20°C with UV irradiation. Frozen pellets were sectioned by a cryo-ultramicrotome (EM UC6 and FC6, Leica). Cryosections were thawed, rinsed in PBS with 1% glycine, and incubated in 0.01 M PBS containing 0.1% BSA and 5% goat serum for 30 min at room temperature. The samples were incubated with mouse anti-PKC-θ antibody diluted 1:50 overnight at 4°C, and rinsed in 0.01 M PBS, then incubated with 10 nm colloidal gold-labeled anti-mouse IgG secondary antibody (G7652, Sigma-Aldrich) diluted 1:25 for 3 hr at room temperature. Grids were then rinsed in 0.01 M PBS and ultrapure water and embedded in 2% uranyl acetate with lead citrate. Images were taken on an electron microscope (JEM1400, JEOL).
 
-## Enzyme-linked immunosorbent assay
+### Enzyme-linked immunosorbent assay
 
 Samples for enzyme-linked immunosorbent assay (ELISA) were prepared as described previously (Wang et al., 2015). Aliquots of T cells (3 × 106) transfected with HA-RanGAP1 or HA-RanGAP1AA vectors were stimulated for 24 hr with anti-CD3 plus anti-CD28, and the concentration of IL-2 in culture supernatants was determined by ELISA according to the manufacturer’s instructions (BD Biosciences).
 
-## CRISPR/Cas9 gene editing
+### CRISPR/Cas9 gene editing
 
 LentiCRISPRv2 which contains Cas9 and GFP was used to edit a RanGAP1 genomic fragment in the Jurkat E6.1 cell line. The gRNA targeting sequences are listed in the Key resources table. Cells in a logarithmic growth phase were transfected with plasmids encoding gRNA by nucleofection (Lonza 4D Nucleofector system). Forty-eight hours after transfection, GFP-positive cells were sorted on a flow cytometer (BD FACSAria II) and seeded individually into 96-well plates. The RanGAP1genome-edited cell line was identified by genomic DNA sequencing.
 
-## Retrovirus transduction
+### Retrovirus transduction
 
 Platinum-E packaging cells were plated in a six-well plate in 2 ml RPMI-1640 medium plus 10% FBS. After 24 hr, cells were transfected with empty pMX vector or RanGAP1 (AA or EE)-expressing vector DNA (5 μg) with Lipofectamine 3000 Reagent (Thermo Fisher Scientific). After an overnight incubation, the medium was replaced and cultures were maintained for another 24 hr. Retroviral supernatants were then collected and filtered, supplemented with 5 μg/ml of polybrene and 100 U/ml of recombinant IL-2, and then used to infect T cells that had been pre-activated for 48 hr with plate-bound monoclonal anti-CD3 antibody (5 μg/ml) and soluble anti-CD28 monoclonal antibody (2.5 μg/ml) in the presence of recombinant IL-2 (100 U/ml). Plates were centrifuged for 1 hr at 2000 r.p.m. and incubated for 4 hr at 32°C and overnight at 37°C, followed by one additional retroviral transduction the next day. On day 4, cells were washed and cultured in RPMI-1640 medium containing 10% (vol/vol) FBS and recombinant IL-2 (100 U/ml) for another 3 days before re-stimulation with monoclonal anti-CD3 plus –CD28 antibodies.
 
-## Computational analysis
+### Computational analysis
 
 I-Mutant2.0 (folding.biofold.org/i-mutant/i-mutant2.0.html) was using to predict RanGAP1 protein stability changes with single point mutation from the protein sequence (NP_002874.1).
 
-## Statistical analysis
+### Statistical analysis
 
 Prism (GraphPad 6.0 Software) was used for graphs and statistical analysis. Statistical analysis was performed with a two-tailed, unpaired Student’s t-test or one-way ANOVA with post hoc test. p-values of less than 0.05 were considered statistically significant. Graphs represent mean ± standard error of the mean (s.e.m).

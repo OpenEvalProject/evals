@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01qv8fp92 Department of Physiology, Louisiana State University Health Sciences Center New Orleans United States
+1. Department of Physiology, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
 
 † Corresponding author
 

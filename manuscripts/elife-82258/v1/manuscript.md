@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01kj2bm70 School of Education, Communication and Language Sciences, Newcastle University Newcastle upon Tyne United Kingdom
-2. https://ror.org/01kj2bm70 Biosciences Institute, Newcastle University Newcastle upon Tyne United Kingdom
+1. School of Education, Communication and Language Sciences, Newcastle University Newcastle upon Tyne United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))
+2. Biosciences Institute, Newcastle University Newcastle upon Tyne United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))
 
 † Corresponding author
 

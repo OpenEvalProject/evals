@@ -37,13 +37,21 @@ HIV-1 Vpr has also been linked to Karyopherins and manipulation of nuclear impor
 
 ## Results
 
-## HIV-1 replication in cGAMP-stimulated MDMs requires Vpr
+### HIV-1 replication in cGAMP-stimulated MDMs requires Vpr
 
 A considerable body of evidence suggests an important role for Vpr in supporting HIV-1 replication in macrophages, but the relevant Vpr mechanisms for this function have been enigmatic. We set out to investigate the role of Vpr in manipulating host innate immune mechanisms during HIV-1 infection of primary human cells. We prepared human monocyte-derived macrophages (MDM) by purifying monocytes from peripheral blood by adherence and treating with M-CSF (Rasaiyaah et al., 2013). Macrophages prepared in this way are particularly permissive to HIV-1 replication facilitating study of HIV-1 biology in a primary myeloid cell type. We found that wild-type HIV-1 and HIV-1∆Vpr replicated equally well in (MDM) (Figure 1A; Rasaiyaah et al., 2013) Consistent with previous studies, wild-type HIV-1, and HIV-1 deleted for Vpr replicated equally well in activated primary human CD4+ T cells (Figure 1—figure supplement 1A; Dedera et al., 1989; Fouchier et al., 1998).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig1-v3.jpg)
+
+**Figure 1.:** (A) Replication of WT Yu2 HIV-1 or Yu2 HIV-1ΔVpr in MDMs stimulated with 1 μg/ml, 2 μg/ml or 4 μg/ml cGAMP or left unstimulated, infection measured by counting Gag-positive cells stained with anti-p24. Mean+/-SEM n = 3 1 and 2 μg/ml cGAMP; n = 2 4 μg/ml cGAMP. *** = two-way ANOVA p value < 0.001, *=p < 0.05. (B) Fold induction of IFIT1-Luc after activation of STING by cGAMP (5 μg/ml) and infection with HIV-1 virus-like particles (VLP) lacking genome and bearing Vpr (+Vpr) or lacking Vpr (-Vpr) (1 RT U/ml) in IFIT1-Luc reporter THP-1 cells. cGAMP and virus were added to cells at the same time. (C) Fold induction of CXCL10 after infection of THP-1 cells with HIV-GFP -Vpr or HIV-GFP +Vpr at the indicated MOI. (D) Percentage of THP-1 cells infected by HIV-GFP -Vpr or HIV-GFP +Vpr in (C). (E) Fold induction of CXCL10 after infection of THP-1 cells with HIV-GFP -Vpr, HIV-GFP +Vpr, or HIV-1 particles lacking Vpr and genome, at indicated doses measured by reverse transcriptase SG-PERT assay. (F) Percentage of THP-1 cells infected by HIV-GFP viruses in (E). (G) Fold induction of CXCL10 after infection of unmodified control, cGAS-/-or MAVS-/- THP-1 knock out cells with HIV-GFP lacking Vpr (0.3 RT U/ml). (H) Percentage infection of control, cGAS-/-or MAVS-/- THP-1 knock out cells infected with HIV-GFP at indicated doses of RT (SG-PERT). (B–H) Data are expressed as means ± SD (n = 3) with two-way ANOVA * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to virus without genome (B), HIV GFP+Vpr (C, E) and control (G).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Replication of wild-type (WT) NL4-3 HIV-1, or NL4-3 HIV-1ΔVpr, in activated primary human CD4+ T cells stimulated with 1, 2, or 4 μg/ml cGAMP or left unstimulated as a control. Two representative examples of three are shown with virus replication measured by percentage T-cell p24 positivity, measured by flow, (top panels) or supernatant RT activity (lower panels). This experiment was also performed twice in Jurkat cells with virus replication measured by percentage T-cell p24 positivity, measured by flow, giving similar results as shown.’ Replication of WT NL4-3 HIV-1 or NL4-3 HIV-1ΔVpr in activated CD4+ T cells stimulated with 1 μg/ml, 2 μg/ml, or 4 μg/ml cGAMP or left unstimulated, measured by flow cytometry staining infected cells with anti-p24 antibody. (B) HIV-GFP titre in control, cGAS-/-or MAVS-/- THP-1 cells used in Figure 1G. (C) Immunoblot detecting cGAS, MAVS, or actin as a loading control, from extracted cGAS-/-or MAVS-/- knock out THP-1 cells or their CRISPR/Cas control cells. Size marker positions are shown on the right (kDa).
+
 Vpr has been shown to antagonize innate immune signaling in HeLa cells reconstituted for DNA sensing by STING expression (Trotard et al., 2016), so we hypothesized that Vpr might be particularly important when DNA sensing is activated. To test this, we mimicked activation of the DNA sensor cGAS by treating MDM with cGAMP, the product of activated cGAS. In the presence of cGAMP, HIV-1 replication in MDM was, indeed, Vpr-dependent. One µg/ml cGAMP specifically suppressed HIV-1∆Vpr more potently than wild-type virus and 4 µg/ml cGAMP overcame Vpr activity and suppressed replication of both wild-type and mutant viruses (Figure 1A). Intriguingly, Vpr did not rescue HIV-1 replication from cGAMP-mediated inhibition in primary human CD4+ T cells, and cGAMP had only minimal effect on HIV-1 replication in Jurkat T cells (Figure 1—figure supplement 1A). These data demonstrate that HIV-1 replication in cGAMP-stimulated MDM is Vpr-dependent. They are consistent with previous observations suggesting Vpr is more important in macrophages than T cells and that the consequences of cGAMP treatment differ between these cell types (Gulen et al., 2017; Xu et al., 2016).
 
-## HIV-1 particle delivered Vpr inhibits gene expression stimulated by DNA sensing
+### HIV-1 particle delivered Vpr inhibits gene expression stimulated by DNA sensing
 
 We next investigated the effect of particle-associated Vpr on innate immune activation. The myeloid cell line THP-1 expresses cGAS and STING and has a functional DNA-sensing pathway (Mankan et al., 2014). We used THP-1 cells expressing the Gaussia luciferase gene under the control of the endogenous IFIT1 promoter (herein referred to as THP-1 IFIT1-luc) (Mankan et al., 2014) to measure the effect of Vpr on cGAMP-induced IFIT1-luc expression. IFIT1 (ISG56) is a well-characterized ISG that is highly sensitive to cGAMP and type 1 IFN. Treatment of THP-1 IFIT-luc cells with cGAMP induced IFIT1-luc expression by two orders of magnitude. This activation was significantly suppressed if cells were infected with VSV-G pseudotyped, genome-free, HIV-particles bearing Vpr (referred to here as virus-like particles or VLP), but not by VLP lacking Vpr, immediately prior to cGAMP addition (Figure 1B). IFIT1-Luc was measured 6, 8, and 24 hr after cGAMP addition/infection.
 
@@ -53,43 +61,93 @@ Genome-free, non-infectious, HIV-1 particles did not induce CXCL10 expression (F
 
 As expected, a lower dose of virus was required to see the effect of Vpr when the particles themselves activated sensing, and in this latter experiment, Vpr effects were clear at MOIs of 3 (Figure 1C,E). Moreover, single round titer of HIV-1 GFP was not affected by cGAS or MAVS knock out, confirming that sensing activation does not impact single round infectivity of HIV-1 GFP VSV-G pseudotypes in this assay consistent with HIV-1 vector not being particularly sensitive to IFN (Figure 1H, Figure 1—figure supplement 1B).
 
-## HIV-1 Vpr expression inhibits innate immune activation
+### HIV-1 Vpr expression inhibits innate immune activation
 
 We next tested whether Vpr expressed in isolation can suppress innate immune activation by cGAMP. Vpr from the primary founder HIV-1 clone SUMA (Fischer et al., 2010) was expressed in THP-1 IFIT1-luc cells using an HIV-1 vector we called pCSVIG (Figure 2—figure supplement 1A, B). Vpr was expressed using MOIs of approximately 0.2–1. Forty hours after transduction, cells were treated with cGAMP (5 µg/ml), and IFIT1-luc was measured 8 hr later. Prior expression of Vpr reduced IFIT1-luc responses in a dose-dependent manner, whereas the highest dose of empty vector had no effect, measured as a negative control (Figure 2A; infection data in Figure 2—figure supplement 1C). Vpr expression (MOI = 1, Figure 2—figure supplement 1D) also suppressed cGAMP-mediated induction of endogenous ISG mRNA expression, measured by qRT-PCR for MxA, CXCL10, IFIT2, and viperin (Figure 2B) and inhibited cGAMP-induced CXCL10 secretion (Figure 2C; infection data to gauge MOI in Figure 2—figure supplement 1E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig2-v3.jpg)
+
+**Figure 2.:** (A) Fold induction of IFIT1-Luc, after activation of STING by cGAMP (5 μg/ml), in IFIT1-Luc reporter THP-1 cells expressing Vpr from a lentiviral vector delivered at MOIs of 0.25, 0.5, 1, or after empty vector transduction (MOI 1) or in untransduced cells. (B) Fold induction of ISGs MxA, CXCL10, IFIT2, and Viperin after activation of STING by cGAMP (5 μg/ml) in cells expressing Vpr from a lentiviral vector (MOI 1), or after empty vector transduction (MOI 1) or in untransduced THP-1 cells. (C) Secreted CXCL10 (ELISA) after activation of STING by cGAMP (5 μg/ml) in cells expressing Vpr from a lentiviral vector (MOI 0.5, 1), or after transduction with empty vector (MOI 0.5, 1) or in untransduced THP-1 cells. Dotted line shows limit of detection. (D) Fold induction of IFIT1-Luc after HT-DNA transfection (5 μg/ml) of cells expressing Vpr from a lentiviral vector (MOI 0.5, 1), or empty vector (MOI 0.5, 1) or in untransduced IFIT1-Luc reporter THP-1 cells. (E) Fold induction of IFIT1-Luc, after Sendai virus infection, of cells expressing Vpr from a lentiviral vector (MOI 0.5, 1), or after transduction by empty vector (MOI 0.5, 1) or in untransduced IFIT1-Luc reporter THP-1 cells. (F) Fold induction of IFIT1-Luc, after LPS treatment (1 μg/ml), of cells expressing Vpr from a lentiviral vector (MOI 0.25, 0.5, 1), after transduction by empty vector (MOI 1) or in untransduced IFIT1-Luc reporter THP-1 cells. Data are expressed as mean ± SD (n = 3) analyzed using two-way ANOVA * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to data for empty vector. n = 3 (A, D–F) or 2 (B–C) independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Vpr-encoding lentiviral expression construct (pCSVIG) contained self-inactivating long-terminal repeat (SIN LTR), Rev response element (RRE), central polypurine tract (cPPT), spleen focus-forming virus promoter (SFFV), internal ribosome entry site (IRES), green fluorescent protein (GFP), and Woodchuck hepatitis virus post‐transcriptional regulatory element (WPRE). (B) Immunoblot detecting VSV-G envelope, capsid (p24) and Vpr in vector supernatant and Vpr additionally in target cell lysate. Size markers in kDa are indicated on the right. (C) Percentage of THP-1 cells in Figure 2A transduced by the vector encoding Vpr and GFP (MOI 0.25, 0.5, 1) or empty vector encoding GFP alone (MOI 1) and treated with cGAMP (5 μg/ml) or left untreated as a control. (D) Percentage of THP-1 cells in Figure 2B transduced by the vector encoding Vpr and GFP (MOI 1) or empty vector encoding GFP alone (MOI 1) and treated with cGAMP (5 μg/ml) or left untreated as a control. (E) Percentage of THP-1 cells in Figure 2C transduced by the vector encoding Vpr and GFP (MOI 0.5, 1) or empty vector expressing GFP alone (MOI 0.5, 1) and treated with cGAMP (5 μg/ml) or left untreated as a control. (F) Percentage of THP-1 cells in Figure 2D transduced by the vector encoding Vpr and GFP (MOI 0.5, 1) or empty vector encoding GFP alone (MOI 0.5, 1) and stimulated with HT-DNA transfection (5 μg/ml) or left untreated as a control. (G) Percentage of THP-1 cells in Figure 2E transduced by the vector encoding Vpr and GFP (MOI 0.5, 1) or empty vector expressing GFP alone (MOI 0.5, 1) and stimulated with Sendai virus infection or left untreated as a control. (H) Percentage of THP-1 cells in Figure 2F transduced by the vector encoding Vpr and GFP (MOI 0.25, 0.5, 1) or empty vector encoding GFP alone (MOI 1) and stimulated with LPS treatment (1 μg/ml) or left untreated as a control. Data are expressed as means ± SD (n = 3). Data are representative of three (C, F–H) or two (B, D, E) independent experiments.
+
 IFIT1-luc expression stimulated by transfection of herring testis (HT) DNA was also inhibited by Vpr expression, consistent with the notion that Vpr antagonizes DNA sensing (Figure 2D, Figure 2—figure supplement 1F). Strikingly, Vpr also reduced Sendai-virus-induced activation of IFIT1-luc, which is mediated by MDA5 and RIGI RNA sensing (Andrejeva et al., 2004; Rehwinkel et al., 2010; Figure 2E, Figure 2—figure supplement 1G) and IFIT1-luc activation after stimulation with the TLR4 ligand LPS (Figure 2F, Figure 2—figure supplement 1H). Thus, Vpr expression appeared to mediate a generalized suppression of innate immune activation.
 
-## Vpr inhibition of innate immune activation is dependent on DCAF1 but independent of cell cycle arrest
+### Vpr inhibition of innate immune activation is dependent on DCAF1 but independent of cell cycle arrest
 
 In order to separate innate immune antagonism from other Vpr functions, we used three Vpr mutants with distinct functional deficits. Vpr R80A, is defective in inducing cell cycle arrest Laguette et al., 2014; Vpr Q65R fails to recruit DCAF1 and so cannot degrade target proteins Laguette et al., 2014; and Vpr F34I/P35N fails to bind cyclophilin A and does not localize to the nuclear membrane (Vodicka et al., 1998; Zander et al., 2003).
 
 All three mutant Vprs were efficiently incorporated into HIV-1 GFP particles (Figure 3A). When delivered by viral particles, Vpr R80A effectively suppressed IFIT1-luc induction by cGAMP in THP-1 cells; however, Vpr Q65R and Vpr F34I/P35N had little if any suppressive effect (Figure 3B). In these experiments, cGAMP was added to the target cells directly after the virus. Suppression of IFIT1-luc induction by Vpr R80A suggested that cell cycle arrest was not required for innate immune antagonism. To further test this, we measured the effect of all three Vpr mutants on cell cycle progression. As reported, WT Vpr expression in THP-1 cells induced a significant increase of cells in G2/M phase of cell cycle and Vpr R80A had no effect (Figure 3C, Figure 3—figure supplement 1G; Laguette et al., 2014). Vpr F34I/P35N, which cannot effectively suppress cGAMP-mediated IFIT1-luc/ISG expression (Figure 3B and G), also induced G1/M cell cycle arrest, albeit slightly less efficiently than wild-type Vpr protein, as previously described (Vodicka et al., 1998; Figure 3C). The DCAF1 Vpr-binding mutant Q65R did not inhibit cell cycle, as reported (Figure 3C; Laguette et al., 2014). These data genetically separate the effects of Vpr expression on cell cycle, and on inhibition of innate immune activation, suggesting that these functions depend on manipulation of different target proteins. It is striking that amino acids at positions 34/35 and 80 are close in Vpr structures and distant from the UNG2-binding site, suggesting an additional target binding interface, as seen in the highly related Vpx protein (Figure 3—figure supplement 1B,C; Morellet et al., 2003; Schwefel et al., 2014; Wu et al., 2016).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig3-v3.jpg)
+
+**Figure 3.:** (A) Immunoblot detecting p24 (capsid) and Vpr in pelleted VSV-G pseudotyped VLP lacking genome used in (B). Size markers in kDa are indicated on the right. (B) Fold induction of IFIT1-Luc after activation of STING by cGAMP (5 μg/ml) and infection with VLP bearing WT or mutant Vpr, or lacking Vpr (1 RT U/ml) in IFIT1-Luc reporter THP-1 cells. Cells were infected at the same time as cGAMP treatment. (C) Flow cytometry plots showing cell cycle phases of THP-1 cells transduced with an empty vector, WT Vpr, or mutant Vpr, encoding vector (MOI 1) or left untransduced as a control and stained with propidium iodide to label DNA. Percentage cells in each cell cycle stage are shown. (D) Fold induction of IFIT1-Luc after activation of STING by cGAMP (5 μg/ml) in cells expressing Vpr from a lentiviral vector, or expressing empty vector, or in untransduced IFIT1-Luc reporter THP-1 cells expressing a control, or a DCAF1 targeting shRNA. Mean +/- SEM n = 3 independent experiments. (E) Immunoblot detecting DCAF1, or actin as a loading control, from extracted THP-1 cells expressing a non-targeting, or DCAF1-targeting, shRNA. Size markers are shown in kDa on the right. (F) Fold induction of IFIT1-Luc after activation of STING by cGAMP (5 μg/ml) in cells expressing WT, or mutant, Vpr from a lentiviral vector (MOI 1), or empty vector (MOI 1) or in untransduced IFIT1-Luc reporter THP-1 cells. (G) Fold induction of MxA mRNA after activation of STING by cGAMP (5 μg/ml) in cells expressing WT, or mutant, Vpr from a lentiviral vector (MOI 1), or after transduction by empty vector (MOI 1) or in untransduced THP-1 cells. Data are mean ± SD (n = 3). Two-way ANOVA test: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to no Vpr or empty vector controls. Data are representative of three (B–D, F) or two (A, E, G) independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Percentage of THP-1 cells in Figure 3C transduced by the vector encoding Vpr and GFP, or empty vector encoding GFP alone, at the indicated MOI and treated with cGAMP (5 μg/ml) or left untreated. (B) NMR structure of full-length Vpr showing position of Vpr mutants (PDB: 1M8L). White region (c-terminus) of Vpr shown in (B) is unresolved in the crystal structure (C). (C) Crystal structure of Vpr (orange) with its target protein UNG2 (blue) and cofactors DCAF1(pink) and DDB1 (green) showing position of Vpr mutations (PDB: 5JK7). (D) Percentage of THP-1 cells in Figure 3F transduced by the vector encoding WT, or mutant, Vpr and GFP (MOI 1), or empty vector encoding GFP alone (MOI 1), and treated with cGAMP (5 μg/ml), or left untreated as a control. (E) Fold induction of IFIT1-Luc after HT-DNA (5 μg/ml) transfection in cells expressing WT, or mutant, Vpr from a lentiviral vector (MOI 1), or empty vector (MOI 1), or in untransduced IFIT1-Luc reporter THP-1 cells. (F) Percentage of THP-1 cells in Figure 3E transduced with HIV-1 vector encoding WT, or mutant, Vpr and GFP (MOI 1), or empty vector encoding GFP alone (MOI 1), and transfected with HT-DNA (5 μg/ml) or left untransfected as a control. (G) Percentage of THP-1 cells in G2/M phase of cell cycle after transduction with an empty vector (MOI), or vector encoding WT Vpr, or mutant Vpr, (MOI 1) or left untransduced as a control. Mean+/-SEM n = 2. Unless stated data are expressed as means ± SD (n = 3). Data is analyzed using two-way ANOVA test. * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to empty vector. Data are representative of three (A), (D) or two (E–G) independent experiments.
+
 We next asked whether DCAF-1 was required for innate immune antagonism, as suggested by the Vpr Q65R mutant, which fails to recruit DCAF1, and cannot suppress cGAMP-induced IFIT1-luc expression (Figure 3B). Depletion of DCAF1 in THP-1 cells by shRNA prevented Vpr from inhibiting cGAMP induction of IFIT1-luc (Figure 3D). Neither DCAF1 depletion, nor cGAMP treatment reduced infectivity of HIV-1 GFP vector (Figure 3—figure supplement 1A). Vpr was active in cells expressing a non-targeting shRNA (shControl) and suppressed IFIT1-luc induction (Figure 3D). Expression of empty (no Vpr) vector had no effect on IFIT1-luc induction (Figure 3D). Effective depletion of DCAF1 was evidenced by immunoblot (Figure 3E). Thus, Vpr inhibition of innate immune activation requires DCAF1.
 
 Expressed Vpr had similar mutation sensitivity as Vpr delivered by HIV-1 particles (compare Figure 3F,G and B). Expression of wild-type Vpr, or Vpr R80A, prevented cGAMP activation of the IFIT1-luc reporter (Figure 3F), and induction of endogenous MxA message in THP-1 cells (Figure 3G, Figure 3—figure supplement 1D). HT DNA transfection, but not lipofectamine alone, activated IFIT1-luc reporter expression, as expected, and this was also sensitive to wild type and VprR80A expression, but not expression of Vpr F34I/P35N (Figure 3—figure supplement 1E,F). Vpr Q65R had only a small inhibitory effect consistent with data in Figure 3B.
 
-## Wild-type Vpr, but not sensing antagonism inactive Vpr mutants, colocalize with nuclear pores
+### Wild-type Vpr, but not sensing antagonism inactive Vpr mutants, colocalize with nuclear pores
 
 Having identified Vpr mutants defective for antagonism of innate immune sensing, we sought further clues about Vpr mechanism by examining wild type and mutant Vpr location within cells. Vpr expressed in isolation is found in the nucleus and associated with nuclear pores (Fouchier et al., 1998; Le Rouzic et al., 2002). Concordantly, we found FLAG-Vpr in the nucleus, and colocalized with antibody staining the nuclear pore complex (NPC), when expressed by transient transfection in HeLa cells (Figure 4A,B). As previously reported for the single mutant F34I (Jacquot et al., 2007; Vodicka et al., 1998), we found that the double Vpr mutant F34I/P35N, as well as Vpr Q65R, were mislocalized, as compared to wild type and R80A Vpr. Thus, these mutants which fail to inactivate innate immune sensing, fail to localize to the nuclear membrane. Defective Vpr mutants F34I/P35N and Q65R appeared qualitatively different inside the nucleus, and nuclear rim staining was less well defined, suggesting that they have lost interactions with a protein(s) that normally influences their position within the cell. Fluorescence intensity measurements along transverse sections of nuclei in single confocal images showed two distinct peaks of nuclear pore staining representing each edge of the nucleus. These peaks overlapped with WT and Vpr R80A fluorescence but not with Vpr F34I/P35N or Vpr Q65R fluorescence, which was more diffuse and less well defined at the nuclear rim (Figure 4C). These data link Vpr nuclear membrane association with antagonism of innate immune sensing for the first time.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig4-v3.jpg)
+
+**Figure 4.:** (A) Immunofluorescence confocal projections of HeLa cells transfected with Flag-tagged WT, or mutant, Vpr encoded by pcDNA3.1 plasmid (50 ng) and stained using antibodies detecting the Flag-tag (green) or nuclear pore complex (mab414) (red). 4′,6-Diamidine-2′-phenylindole dihydrochloride (DAPI) stains nuclear DNA (Blue). (B) Selected confocal images (z-section) of cells in (A) showing effect of Vpr mutation on Vpr colocalization with mab414 nuclear pore staining. (C) Assessment of colocalization of Vpr with mab414 nuclear pore staining. Scale bars represent 10 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunofluorescence images of HeLa cells expressing a control, or Nup358 targeting, shRNA transfected with empty vector or Flag-tagged Vpr encoding pcDNA3.1 plasmid (50 ng) using antibodies detecting the Flag-tag (green) or the nuclear pore complex (mab414) (red). 4′,6-Diamidine-2′-phenylindole dihydrochloride (DAPI) stains nuclear DNA (Blue). (B) Selected confocal images (z-section) of cells in (A) showing effect of Nup358 depletion on colocalization of Vpr with mab414 nuclear pore staining (C) Immunoblot detecting Nup358, or actin as a loading control, from extracted Hela cells expressing a control, or Nup358 targeting, shRNA in cells from A. Size markers are shown (kDa). (D) Assessment of colocalization of Flag-tagged Vpr and mab414-stained nuclear pores in cells expressing a control, or Nup358 targeting, shRNA. Scale bars represent 10 μm.
+
 Vpr has been described to interact with cyclophilin A (CypA) and mutating Vpr residue P35 was reported to prevent this interaction (Zander et al., 2003). The nuclear pore complex has cyclophilin-like domains, which are structurally very similar to CypA, at the end of the Nup358 fibers that protrude into the cytoplasm (Schaller et al., 2011). To test whether Nup358 was required for Vpr association with the nuclear rim, we expressed FLAG-Vpr in Nup358-depleted HeLa cells (Schaller et al., 2011) and stained the Vpr FLAG tag (green) and NPC (red) (Figure 4—figure supplement 1A,B). Despite effective Nup358 depletion (Figure 4—figure supplement 1C), Vpr remained associated with the nuclear rim suggesting that Nup358 is not required for Vpr nuclear rim association (Figure 4—figure supplement 1A,B,D).
 
-## Vpr inhibits IRF3 nuclear translocation
+### Vpr inhibits IRF3 nuclear translocation
 
 cGAMP is produced by activated cGAS and is recruited by STING, which then forms an active kinase complex in which TBK1 phosphorylates STING, TBK1 itself, and the transcription factor IRF3 (Liu et al., 2015a; Zhang et al., 2019). IRF3 phosphorylation promotes nuclear translocation and subsequent activation of gene expression including type 1 IFNs (Chen et al., 2008). As expected, transfection of THP-1 IFIT1-luc cells, with HT DNA,induced phosphorylation of STING, TBK1, and IRF3-S386 (Figure 5A). Measurement of IFIT1-luc expression, in the same samples, 3 hr after stimulation, indicated induction of IFIT1-luc by HT DNA, but not after prior Vpr expression using a lentiviral vector (Figure 5B). Strikingly, Vpr expression for 48 hr did not impact STING, TBK1, or IRF3 protein levels, or their phosphorylation status, 3 hr after DNA transfection, measuring IRF3 phosphorylation at S386 (Figure 5A). Empty vector expression had no detectable effect on protein levels or phosphorylation (Figure 5A). Actin was detected as a loading control and Vpr/empty vector were used at a vector MOI of about 1 (Figure 5—figure supplement 1A). A second example of this experiment is presented in Figure 5—figure supplement 1B–E. IRF3 is phosphorylated at multiple sites during activation including at IRF3 S396. We therefore examined IRF3 S396 phosphorylation using a phospho-IRF3-S396 specific antibody and flow cytometry because this antibody did not work well by immunoblot. We found that in this case, Vpr delivery by VLP did reduce phosphorylation of IRF3-S396 after stimulation by either cGAMP or HT DNA in THP-1 cells (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig5-v3.jpg)
+
+**Figure 5.:** (A) Immunoblot detecting Phospho-STING (Ser366), total STING, phospho-TBK1 (Ser172), total TBK1, phospho-IRF3 (Ser386), total IRF3, or actin as a loading control, from extracted THP-1 cells expressing Vpr from a lentiviral vector (MOI 1), expressing empty vector, or THP-1 left untransduced as a control and transfected with HT-DNA (5 μg/ml) or left untransfected as a control. Size markers are shown in kDa. (B) Mean fold induction of IFIT1-Luc in cells from A and B (C) Flow cytometry plot (forward scatter vs pIRF3-S396 fluorescence) of THP-1 cells infected with Vpr bearing virus-like particles (VLP) lacking genome (1 RT U/ml), or Vpr free VLP, stimulated with cGAMP (5 μg/ml) or HT-DNA transfection (5 μg/ml). Lower panel shows the flow cytometry data as a bar graph, plotting pIRF3-S396-positive cells. (D) Single-cell immunofluorescence measurement of IRF3 nuclear translocation in PMA differentiated THP-1 cells treated with cGAMP, or left untreated, and infected with HIV-1 GFP bearing Vpr, lacking Vpr or left untransduced. Cells were fixed and stained 3 hrs after infection/transfection. Red line shows the translocation coefficient threshold. Blue lines represent mean translocation coefficient. (E) Percentage of cells in D with IRF3 translocation coefficient greater than 0.5 (above red line). (F) Single-cell immunofluorescence measurement of IRF3 nuclear translocation in PMA-differentiated THP-1 cells stimulated with cGAMP (5 μg/ml), or left unstimulated, and infected with HIV-1 GFP lacking Vpr or bearing WT Vpr or Vpr mutants as shown (1 RT U/ml) or left uninfected. (G) Single cell immunofluorescence measurement of IRF3 nuclear translocation in PMA differentiated THP-1 cells transfected with HT-DNA (5 μg/ml), or left untransfected, and infected with HIV-1 GFP lacking Vpr, or bearing WT or mutant Vpr (1 RT U/ml) or left uninfected. Data in B is expressed as means ± SEM (n = 2). Data is analyzed using two-way ANOVA: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to data from infection with HIV-1 lacking Vpr. Data are representative of three (C–G) or two (A, B) independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Percentage of THP-1 cells in Figure 5A transduced by HIV-1 GFP vector bearing Vpr, or HIV-1 GFP lacking Vpr, transfected with HT-DNA (5 μg/ml) or left untransfected as a control. (B) Immunoblot detecting Phosho-STING (Ser366), total STING, phospho-TBK1 (Ser172), total TBK1, phospho-IRF3 (Ser386) or total IRF3 from extracted THP-1 cells expressing Vpr, empty vector or left untransduced as a control, and transfected with HT-DNA (5 μg/ml), or left untransfected as a control. Size markers are shown (kDa). (C) Fold induction of IFIT1-Luc in cells from gel in Figure 5A, expressing Vpr, or empty vector, and transfected with HT-DNA (5 μg/ml) or left untransfected as a control. (D) Percentage of THP-1 cells from Figure 5B transduced by HIV-1 GFP bearing Vpr, or lacking Vpr, transfected with HT-DNA (5 μg/ml) or left untransfected as a control. (E) Fold induction of IFIT1-Luc in cells from second experiment (gel presented in Figure 5B) expressing Vpr, or empty vector, and transfected with HT-DNA (5 μg/ml) or left untransfected as a control. (F) Single cell measurement of IRF3 nuclear translocation in PMA-differentiated THP-1 cells stimulated with LPS, or left unstimulated, and infected with HIV-1 GFP lacking Vpr or bearing Vpr (1 RT U/ml), or left uninfected (top panel). Percentage of cells with IRF3 translocation coefficient greater than 0.5 plotted as a percentage (bottom panel). (G) Percentage of cells with IRF3 translocation coefficient greater than 0.5 plotted as a percentage from Figure 5F. (H) Percentage of cells with IRF3 translocation coefficient greater than 0.5 plotted as a percentage from Figure 5G. (I) Single-cell measurement of IRF3 nuclear translocation in PMA differentiated THP-1 cells transfected with poly I:C, or left untransfected, and infected with HIV-1 GFP lacking Vpr or bearing WT or mutant Vpr (1 RT U/ml), or left uninfected. (J) Percentage of cells with IRF3 translocation coefficient greater than 0.5 plotted as a percentage from Figure 5I. Data is analyzed using two-way ANOVA test: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to empty vector. Data are representative of three (F–K) or two (A–E) independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig5-figsupp2-v3.jpg)
+
 Given that Vpr is associated with the nuclear rim, and Vpr mutations that break antagonism of innate-sensing mislocalize Vpr, we hypothesized that rather than impacting levels of signaling proteins, Vpr may act at nuclear pores to influence nuclear transport of inflammatory transcription factors. This would be consistent with the broad innate immune antagonism that we have observed (Figure 2), and with previous reports of Vpr influencing nuclear transport, for example, of viral nucleic acids (Heinzinger et al., 1994; Miyatake et al., 2016; Popov et al., 1998), and inhibiting sensing of HIV-1 (Trotard et al., 2016). We therefore investigated the effect of Vpr on cGAMP-induced IRF3 nuclear translocation. THP-1 were differentiated with 50 ng/ml phorbol-12 myristate acetate (PMA) to attach them to glass for microscopy. In these experiments, VLP with or without Vpr are used to infect cells immediately after they are treated with innate immune stimulants. IRF3 translocation is measured three hours later by immunofluorescent labeling. VSV-G pseudotyped HIV-1 GFP-bearing Vpr reduced cGAMP-stimulated IRF3 nuclear translocation in a dose-dependent way, while HIV-1 lacking Vpr had no effect (Figure 5D,E, Figure 5—figure supplement 2A). These data are consistent with a previous report in which Vpr suppressed nuclear transport of IRF3-GFP on HIV-1 infection of HeLa cells in which DNA sensing had been reconstituted by expression of STING (Trotard et al., 2016). Importantly, in our experiments in THP-1, suppression of IRF3 nuclear translocation by Vpr was sensitive to Vpr mutation, with the same specificity as before (Compare Figures 3, 4 and 5F, Figure 5—figure supplement 1G–J). HIV-1 GFP-bearing Vpr F34I/P35N, or Vpr Q65R, failed to efficiently suppress IRF3 nuclear localization after cGAMP stimulation (Figure 5F, S5G) or after transfection of differentiated THP-1 with HT DNA (Figure 5G, S5H). Conversely, HIV-1 GFP bearing wild-type Vpr, or Vpr R80A, effectively suppressed IRF3 nuclear localization after stimulation with cGAMP or HT DNA (Figure 5F, G S5G, H). Similar inhibition specificity by Vpr was also seen after activation of IRF3 nuclear translocation by transfection with the RNA mimic poly I:C (Figure 5—figure supplement 1I,J) or treatment with LPS (Figure 5—figure supplement 1F). Thus, suppression of IRF3 nuclear translocation correlates with the capacity of Vpr mutants to antagonize innate immune activation.
 
-## Vpr inhibits NF-κB p65 nuclear translocation and NF-κB-sensitive plasmid expression
+### Vpr inhibits NF-κB p65 nuclear translocation and NF-κB-sensitive plasmid expression
 
 DNA sensing by cGAS is known to activate NF-κB as well as IRF3 (Fang et al., 2017). To test whether Vpr influenced NF-κB activation we repeated the experiment in Figure 1C–F but using THP-1 cells bearing an NF-κB-luciferase reporter (THP-1 NF-κB-luc) (Figure 6A–C). VSV-G pseudotyped HIV-1 GFP vector bearing Vpr minimally activated NF-κB-luc expression, whereas Vpr-negative HIV-1 GFP activated NF-κB-luc expression effectively (Figure 6A). Activation was dependent on viral genome because similar doses of HIV-1 VLP, made without genome, did not induce NF-κB-luc expression (Figure 6A). Viral doses were equalized by measurement of RT activity (SGPERT) (Vermeire et al., 2016). Vpr bearing, and Vpr negative, HIV-1 GFP were equally infectious and genome-free VLP were not infectious, as expected (Figure 6B). VSV-G pseudotyped HIV-1 GFP-bearing Vpr, but not virus lacking Vpr, suppressed cGAMP-mediated activation of the NF-κB-sensitive gene IL6 (Figure 6C). We could not detect NF-κB nuclear localization in THP-1 after cGAMP treatment, perhaps due to timing, so we tested mutant Vpr specificity using Poly I:C to stimulate NF-κB p65 nuclear localization. Again, we transfected differentiated THP-1 cells, this time with Poly I:C and then immediately infected them with HIV-1 GFP bearing or lacking Vpr and fixed and stained for NF-κB p65 localization 3 hr later. We found Vpr inhibited NF-κB p65 nuclear localization with similar sensitivity to mutation as for IRF3: VLP bearing wild-type Vpr or Vpr R80A inhibited NF-κB p65 nuclear localization but VLP bearing Vpr F34I/P35N or Vpr Q65R did not (Figure 6D, Figure 6—figure supplement 1B). Vpr also suppressed NF-κB p65 nuclear localization after treatment of THP-1 with LPS (Figure 6—figure supplement 1C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig6-v3.jpg)
+
+**Figure 6.:** (A) Fold induction of NF-κB-Luc after infection of THP-1 cells with HIV-GFP lacking Vpr, HIV-GFP bearing Vpr, or HIV-GFP lacking Vpr and genome, at the indicated doses. (B) Percentage of THP-1 cells in (A). (C) Fold induction of IL-6 after activation of STING by cGAMP (5 μg/ml) in cells expressing empty vector or Vpr encoding vector (MOI 1), or in untransduced THP-1 cells. (D) Single-cell immunofluorescence measurement of NF-κB (p65) nuclear translocation in PMA differentiated THP-1 cells transfected with Poly I:C (50 ng/ml), or left untreated, and infected with HIV-1 GFP lacking Vpr, HIV-1 GFP bearing Vpr (1 RT U/ml) or left uninfected. Cells were stained 3 hr after transfection and infection. (E) Immunoblot detecting Flag-Vpr, GFP, or actin as a loading control, from HEK293T cells transfected with 50 ng of empty vector, Flag-tagged WT Vpr vector, or Flag-tagged mutant Vpr vector, and CMV-GFP vector (50 ng). Size markers are shown in kDa. GFP expression from two independent immunoblots was quantified by densitometry and is shown in the lower panel. (F) Immunoblot detecting Flag-Vpr, GFP, or actin as a loading control, from HEK293T cells transfected with empty vector (200 ng) or Vpr vector (50 ng, 100 ng, 200 ng) and CMV-GFP, EF1α-GFP or Ub-GFP plasmids (50 ng). Size markers are shown in kDa. GFP expression quantified by densitometry is shown in the lower panel. (G) Immunoblot detecting GFP, or actin as a loading control, from HEK293T cells transfected with CMV-GFP, EF1α-GFP or Ub-GFP plasmids (10 ng, 2 ng, 0.4 ng) and stimulated with TNFα (200 ng/ml) or left unstimulated. Size markers are shown in kDa. GFP expression, from two independent immunoblots, quantified by densitometry, is shown in the lower panel. Data in (A, B, C) is expressed as mean ± SD (n = 3). Data in (E, F, G) is expressed as mean ± SD (n = 2). Two-way ANOVA: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to empty vector or HIV GFP+Vpr.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Induction of luciferase reporter in HEK293T cells transfected with CSLW, CMV-Luc, TK-Luc, or M5P-Luc (10 ng), and empty vector, or Vpr encoding vector (50 ng, 100 ng, 200 ng). Table shows the promoters driving the luciferase reporter in each plasmid. (B) Percentage of cells in Figure 6D with translocation coefficient greater than 0.5. (C) Single-cell measurement of NF-κB nuclear translocation in PMA differentiated THP-1 cells stimulated with LPS, or left unstimulated, and infected with HIV-1 GFP lacking Vpr or bearing Vpr (1 RT U/ml), or left uninfected (top panel). Percentage of cells with NF-κB translocation coefficient greater than 0.5 plotted as a percentage (bottom panel). Data is analyzed using two-way ANOVA: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001) compared to data from infection with HIV-1 lacking Vpr. (D) Quantification of GFP expression by densitometry for the immunoblot in Figure 6E. (E) Immunoblot detecting flag-Vpr, GFP or actin as a loading control from HEK293T cells transfected with empty vector, flag-tagged WT Vpr encoding vector or flag-tagged mutant Vpr encoding vector and CMV-GFP vector or left untransfected. Size markers are shown in kDa. Quantification of GFP expression by densitometry for the immunoblot is shown below. (F) Quantification of GFP expression by densitometry for the immunoblot in Figure 6G. (G) Immunoblot detecting GFP, or actin as a loading control, from HEK293T cells transfected with CMV-GFP, EF1α-GFP or Ub-GFP plasmids (10 ng, 2 ng, 0.4 ng) and stimulated with TNFα (200 ng/ml) or left unstimulated. Size markers are shown in kDa. Quantification of GFP expression by densitometry for the immunoblot is shown below.
+
 Previous work has shown that Vpr inhibits the activity of the human CMV major immediate early promoter (MIEP) (Liu et al., 2015a). We hypothesized that this effect may be due to the dependence of this promoter on NF-κB (DeMeritt et al., 2004). As expected Flag-Vpr expression suppressed GFP expression from a co-transfected CMV MIEP – GFP construct (Figure 6E) as well as several other NF-κB-sensitive constructs expressing luciferase (Figure 6—figure supplement 1A). Importantly, Vpr mutants F34I/P35N, and Vpr Q65R suppressed GFP expression much less effectively than WT Vpr, or Vpr R80A, consistent with this effect being due to inhibition of NF-κB nuclear entry (Figure 6E, S6D, E). To probe this further, we used two constructs lacking NF-κB binding sites in which GFP is driven from the Ubiquitin C (Ub) promoter (Matsuda and Cepko, 2004) or from the elongation factor one alpha (EF1α) promoter (Matsuda and Cepko, 2004). Expression of GFP from these constructs was minimally affected by Vpr co-transfection, but GFP expression from the CMV MIEP was reduced as before (Figure 6F). Importantly, CMV MIEP-GFP expression was induced by activation of NF-κB with exogenous tumour necrosis factor alpha (TNFα), whereas Ub-GFP and EF1α-GFP were not, providing further evidence that Vpr inhibition correlated with promoter sensitivity to NF-κB (Figure 6G, Figure 6—figure supplement 1F–G). Thus, inhibition of NF-κB nuclear transport by Vpr likely explains the observation that Vpr suppresses expression from the CMV MIEP, but not promoters that are independent of NF-κB activity for expression. This is important because previous studies have used Vpr co-transfection with CMV MIEP driven promoters to address Vpr function (Su et al., 2019).
 
-## HIV-1 Vpr interacts with karyopherins and inhibits NF-κB (p65) and IRF3 recruitment
+### HIV-1 Vpr interacts with karyopherins and inhibits NF-κB (p65) and IRF3 recruitment
 
 WT Vpr suppresses nuclear entry of IRF3 and NF-κB, but Vpr DCAF1 binding mutant Q65R does not (Figures 5 and 6). This suggested that Vpr might degrade particular nuclear transport proteins to exert its effect. We therefore tested whether Vpr expression caused degradation of karyopherins KPNA1, KPNA2, KPNA3, KPNA4, KPNA5, KPNA6, or KPNB1. We infected cells with Vpr encoding HIV-1 vector, extracted total protein 48 hr after infection, and detected each protein using immunoblot (Figure 7A). However, we did not detect reduced levels of any of these karyopherins. It is possible that Vpr recruits karyopherins but does not degrade them. To test this, we sought interaction between Vpr and karyopherins KPNA1, KPNA2, and KPNA3 by co-immunoprecipitation. We found that immunoprecipitation of wild-type HA-Vpr co-precipitated Flag-KPNA1, as has been reported previously (Miyatake et al., 2016; Nitahara-Kasahara et al., 2007; Vodicka et al., 1998) and to a lesser degree Flag-KPNA2 and Flag-KPNA3, but not Flag-tagged GFP (Figure 7B). In a second experiment, we tested whether KPNA1-3 interacted with the inactive Vpr mutant F34I/P35N. WT Vpr interacted with KPNA1 as before, with less efficient interaction with KPNA2 and KPNA3 (Figure 7C). Importantly, KPNA1 interacted with the Vpr F34I/P35N only very weakly, and much less than WT Vpr, consistent with the mutant’s reduced activity in antagonizing innate immune sensing (Figure 7C). Given that Vpr expression did not cause KPNA1 degradation, we sought evidence for Vpr disturbing interactions between KPNA1 and IRF3 or NF-κB p65. HA-IRF3 immunoprecipitated with Flag-KPNA1 as expected and this interaction was reduced by expression of WT Vpr, but not inactive mutant Vpr F34I/P35N (Figure 7D). A competing immunoprecipitation experiment with KPNA1 and NF-κB p65 gave similar results. Immunoprecipitation of Flag-KPNA1 co-precipitated NF-κB p65 and this was reduced by co-expression of WT Vpr, but not Vpr F34I/P35N (Figure 7E). Thus, for the first time, we explain the interaction of Vpr with karyopherins, by demonstrating that it prevents them from efficiently recruiting and transporting transcription factors IRF3 and NF-κB into the nucleus after innate immune activation. This finding provides a mechanistic basis for the broad innate immune antagonism activity of Vpr and links manipulation of nuclear transport with antagonism of innate immunity rather than with infection itself.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig7-v3.jpg)
+
+**Figure 7.:** (A) Immunoblot detecting KPNA1-6 or KPNB1 from extracted HEK293T cells infected with empty vector, or Vpr encoding vector at a dose of 0.05 RT U/ml (MOI = 2). Size markers are shown in kDa. Percentage infection by HIV-1 GFP bearing Vpr encoding or empty vector is shown on the right. (B) Co-immunoprecipitation of Flag-KPNA1-3 and HA-Vpr. Input shows immunoblot detecting extracted HEK293T whole cell lysates expressing flag-KPNA1-3, flag-GFP and HA-Vpr before immunoprecipitation. Co-immunoprecipitation precipitates Vpr with HA-beads and detects Flag-KPNA1-3. (C) Co-immunoprecipitation of Flag-KPNA1-3 and WT HA-Vpr or HA-Vpr F34I+P35N. Input shows immunoblots detecting HA-Vpr or Flag-KPNA1-3 in extracted HEK293T whole cell lysates (WCL) before immunoprecipitation. β-Actin is detected as a loading control. Co-immunoprecipitation precipitates Vpr with HA-beads and detects Flag-KPNA1-3. (D) Co-immunoprecipitation of HA-IRF3 and Flag-KPNA1 in the presence and absence of WT Vpr or Vpr F34I+P35N to detect competition between Vpr and IRF3 for KPNA1. Input shows immunoblots detecting HA-IRF3 or Flag-KPNA1 or Vpr in extracted HEK293T whole cell lysates (WCL) before immunoprecipitation. CypB is detected as a loading control. Co-immunoprecipitation precipitates KPNA1 with Flag-beads and detects HA-IRF3 in the presence and absence of WT Vpr or inactive Vpr F34I+P35N. (E) Co-immunoprecipitation of HA-NF-κB p65 and Flag-KPNA1 in the presence and absence of WT Vpr or Vpr F34I+P35N to detect competition between Vpr and p65 for KPNA1. Input shows immunoblots detecting HA-p65 or Flag-KPNA1 or Vpr in extracted HEK293T whole cell lysates (WCL) before immunoprecipitation. CypB is detected as a loading control. Co-immunoprecipitation precipitates KPNA1 with Flag-beads and detects HA-p65 in the presence and absence of WT Vpr or Vpr F34I+P35N.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60821/elife-60821-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (1) Stimulation of various PRRs results in activation of transcription factors such as IRF3 and NF-κB. To activate ISGs or proinflammatory genes expression, NF-κB and IRF3 translocate to the nucleus via the classical Karyopherin-α/β-dependent nuclear import pathway. (2) Nuclear import of a plasmid transfected into cellular cytoplasm is essential for gene expression. Transcription factors such as IRF3 and NF-κB bind to their cognate response elements present in the promoter of the plasmid and allow nuclear import via the classical karyopherin-α/β-dependent pathway (Mesika et al., 2001) as well as transcription. (3) HIV-1-based vectors deliver genes to the nucleus in a karyopherin-α/β-independent manner. Vpr localizes to the nuclear pores and targets karyopherin-α-dependent nuclear import in a DCAF1 E3 ubiquitin ligase-dependent manner. This inhibits nuclear translocation of transcription factors such as IRF3 and NF-κB and subsequent antiviral ISG expression. This also inhibits IRF3 and NF-κB-dependent plasmid expression or nuclear import but does not impact lentiviral gene delivery.
 
 ## Discussion
 
@@ -123,59 +181,335 @@ In summary, our findings connect Vpr manipulation of nuclear transport with inhi
 
 ## Materials and methods
 
-## Cells and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FXFG repeats (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab24609</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG tag (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F3165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRF3 (rabbit polyclonal)</td>
+      <td>Santa Cruz biotechnology</td>
+      <td>Cat# sc-9082</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit alexa fluor 488 IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11008</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor 546 IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11030</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VSV-G (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# V4888</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 p24 (mouse monoclonal)</td>
+      <td>NIH AIDS reagent program</td>
+      <td>Cat# 3537</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STING (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 13647</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho STING (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 19781</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TBK1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3504S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho TBK1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 5483</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRF3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4302</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho -IRF3 S386 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76493</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho- IRF3 S396 (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat# D6O1M</td>
+      <td>Flow Cytometry (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (mouse polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8227</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cGAS (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 15102</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAVS (mouse polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3993</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DCAF1(rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat# A301-887A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nup358 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab64276</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F3165</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6556</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA1 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A1742</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA2 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A1623</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA3 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A8347</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA4 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A2026</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA5 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A7331</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNA6 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A7363</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KPNB1 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A8610</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CypB (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab16045</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# H6908</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vpr (rabbit polyclonal)</td>
+      <td>NIH AIDS reagents programme</td>
+      <td>Cat# 11836</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG IRdye 800CW (goat poly clonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–32210</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG IRdye 800CW (goat poly clonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–32211</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Herring testes DNA</td>
+      <td>Sigma</td>
+      <td>Cat# D6898</td>
+      <td>Amount used stated in text</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cGAMP</td>
+      <td>Invivogen</td>
+      <td>Cat code (tlrl-nacga23-1)</td>
+      <td>Amount used stated in text</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly I:C</td>
+      <td>Invivogen</td>
+      <td>Cat code (tlrl-pic)</td>
+      <td>Amount used stated in text</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipopolysaccaride</td>
+      <td>Invivogen</td>
+      <td>Cat code (tlrl-smlps)</td>
+      <td>Amount used stated in text</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and reagents
 
 HEK293T cells were maintained in DMEM (Gibco) supplemented with 10% fetal calf serum (FCS, Labtech) and 100 U/ml penicillin and 100 μg/ml streptomycin (Pen/Strep; Gibco). THP-1 cells were maintained in RPMI (Gibco) supplemented with 10% FCS and Pen/Strep. THP-1-IFIT-1 luciferase reporter cells express Gaussia luciferase under the control of the endogenous IFIT1 promoter have been described (Mankan et al., 2014). THP-1 CRISPR control, cGAS-/- and MAVS -/- knock out cells have been described (Mankan et al., 2014). Nup358 depleted HeLa cells have been described (Schaller et al., 2011). Lipopolysaccharide, poly I:C and TNFα were obtained from PeproTech. Sendai virus was obtained from Charles River Laboratories. Herring-testis DNA was obtained from Sigma. cGAMP was obtained from Invivogen. NF-ĸB Lucia THP-1 reporter cells were obtained from Invivogen. All cell lines were tested negative for mycoplasma.
 
-## Cloning and plasmids
+### Cloning and plasmids
 
 The Vpr gene from HIV-1 founder clone SUMA (Fischer et al., 2010) was codon optimized and synthesized by GeneArt. To generate the HIV-1 vector encoding Vpr (pCSVIG), the codon optimized SUMA Vpr gene was cloned into pSIN-BX-IRES-Em between BamHl and Xhol sites under the control of the SFFV LTR promoter. pSIN-BX-IRES-Em was obtained from Dr Yasuhiro Takeuchi. EF1α-GFP and UB-GFP were obtained from Addgene (Matsuda and Cepko, 2004). The CMV-GFP construct was pEGFPC1 (Clontech). HIV-1 bearing a Ba-L envelope gene has been described (Rasaiyaah et al., 2013). Flag- KPNA1-3 plasmids were obtained from Prof. Geoffrey Smith. HIV-1∆Vpr was a gift from Richard Sloan and encoded an 17 nucleotide insertion (Vpr 64–81) that destroys the Vpr coding sequence.
 
-## Production of virus in HEK293T cells
+### Production of virus in HEK293T cells
 
 Replication competent HIV-1 and VSV-G pseudotyped HIV-1 GFP vectors were produced by transfection of HEK293T cells in T150 flasks using Fugene six transfection reagent (Promega) according to the manufacturer's instructions. Briefly, just-subconfluent T150 flasks were transfected with 8.75 μg of HIV-1 YU2 or HIV-1 YU2 lacking Vpr (HIV-1 YU2 ∆Vpr) and 30 µl Fugene 6 in 500 µl Optimem (Thermofisher Scientific). To make VSV-G pseudotyped HIV-1 GFP, each T150 flask was transfected with 2.5 μg of vesicular stomatitis virus-G glycoprotein encoding plasmid (pMDG) (Genscript), 2.5 μg of packaging plasmid, p8.91 (encoding Gag-Pol, Tat and Rev) or p8.2 (encoding Gag-Pol, Tat and Rev and Vif, Vpr, Vpu and Nef) (Zufferey et al., 1997), and 3.75 μg of GFP encoding genome plasmid (pCSGW) using 30 µl Fugene 6 in 500 µl optimum. To make Vpr encoding HIV-1 GFP, 3.75 μg pCSVIG was transfected with 2.5 μg of pMDG and 2.5 μg of p8.91. To make HIV-1 GFP particles bearing Vpr, 1 μg of Vpr expressing pcDNA3.1 (wild-type SUMA Vpr or Vpr mutants) was transfected with 2.5 μg of pMDG and 2.5 μg of p8.91 in 30 μl Fugene-6 and 500 µl Optimem. All virus supernatants were harvested at 48 and 72 hr post-transfection, replicate flasks were pooled, and supernatants subjected to ultracentrifugation through a 20% sucrose cushion at 23,000 rpm for 2 hr in a 30 ml swingout rotor (Sorvall) (72000G). Viral particles were resuspended in RPMI supplemented with 10% FCS. HIV-GFP produced with p8.91 or p8.2 used in Figure 1 were DNase treated for 2 hr at 37°C (DNaseI, Sigma) prior to ultracentrifugation. Viruses were titrated by infecting THP-1 cells (2 × 105 cells/ml) with dilutions of sucrose purified virus in the presence of polybrene (8 μg/ml, Sigma) and incubating for 48 hr. GFP-positive, infected cells were counted by flow cytometry using a BD Accuri C6 (BDBiosciences). HIV-1 vector encoding shRNA targeting DCAF1 has been described and was prepared as above (Berger et al., 2015).
 
-## SG-PERT
+### SG-PERT
 
 Viral doses were determined by measuring reverse transcriptase activity of virus preparations by qPCR using an SYBR Green-based product-enhanced PCR assay (SG-PERT) as described (Vermeire et al., 2012).
 
-## Isolation of primary MDMs and CD4+ T cells from peripheral blood
+### Isolation of primary MDMs and CD4+ T cells from peripheral blood
 
 Primary MDMs were prepared from fresh blood from healthy volunteers. This study was approved by the UCL/UCLH Committees on the Ethics of Human Research, Committee Alpha reference (06/Q0502/92). All participants provided written informed consent and consent for publication. Primary CD4+ T cells were obtained from leukocyte cones from healthy donors purchased from the National Blood Service UK. Peripheral blood mononuclear cells (PBMCs) were isolated by density gradient centrifugation using Lymphoprep (Stemcell Technologies). For MDM preparation, healthy donor PBMCs were washed three times with PBS and plated to select for adherent cells. Non-adherent cells were washed away after 1.5 hr and the remaining cells incubated in RPMI (Gibco) supplemented with 10% heat-inactivated pooled human serum (Sigma) and 40 ng/ml macrophage colony stimulating factor (R and D systems). Cells were further washed after 3 days and the medium changed to RPMI supplemented with 10% heat-inactivated human serum (Sigma). MDM were then infected 3–4 days later at low multiplicity of infection. Spreading infection was detected by Gag staining and counting Gag-positive cells as described (Rasaiyaah et al., 2013). For CD4+ T cells, untouched CD4+ T cells were purified from PBMCs with an indirect magnetic labeling system (MACS, Miltenyi Biotec), according to manufacturer’s instructions. Cells were then cultured with 2 μg/ml of plate-bound anti-CD3 and anti-CD28 monoclonal antibodies (αCD3αCD28 stimulation) (mAbs) (eBioscience) and 25 U/ml of recombinant human interleukin-2 (IL-2; Roche Applied Science) at a concentration of 1.5–2 × 106 cells/ml in RPMI supplemented with 10% heat-inactivated Human Serum (HS) (SigmaAldrich). Cells were maintained at 37°C in 5% CO2 in a humidified incubator for 72 hr. CD4+ T cells were then assessed for spreading infection of CXCR4-tropic HIV-1 NL4.3 WT and ΔVPR at low multiplicity of infection (300 mU of HIV-1 RT Activity per 1 × 106 cells). Percentage of HIV-1-infected primary CD4+ T cells was determined by flow cytometry measuring p24Gag antigen employing the monoclonal antibody p24Gag-FITC (HIV-1 p24 (24-4), Santa Cruz Biotechnology).
 
-## Innate immune sensing assays
+### Innate immune sensing assays
 
 THP-1 cells were seeded in 96-well plates (5 × 105 cells/ml). For Vpr expression, cells were infected with an empty or Vpr expressing (pCSVIG) lentiviral vectors for 40 hr. Cell viabilities were similar at 40 hr as assessed by eye, for an example see Figure 5K. For stimulation of cells with HT-DNA or poly I:C, 0.2 μl of lipofectamine and 25 μl of Optimem were incubated with HT-DNA or poly I:C (amounts stated in figure legends) for 20 min and added to cells. Lipopolysaccharide (1 μg/ml), TNFα (200 ng/ml), Sendai virus (200 HA U/ml) or cGAMP (5 μg/ml) were added directly to the media. For experiments with virion delivered/associated Vpr, cells were stimulated at the time of infection. Gaussia/Lucia luciferase activities were measured 8 hr post cell stimulation/infection by transferring 10 μl supernatant to a white 96-well assay plate, injecting 50 μl per well of coelenterazine substrate (Nanolight Technologies, 2 μg/ml) and analysing luminescence on a FLUOstar OPTIMA luminometer (Promega). Data were normalized to a mock-treated control to generate a fold induction.
 
-## ELISA
+### ELISA
 
 Cell supernatants were harvested for ELISA at 8 hr post-stimulation and stored at −80°C. CXCL-10 protein was measured using Duoset ELISA reagents (R and D Biosystems) according to the manufacturer’s instructions.
 
-## ISG qPCR
+### ISG qPCR
 
 RNA was extracted from THP-1 cells using a total RNA purification kit (Norgen) according to the manufacturer’s protocol. Five hundred ng RNA was used to synthesize cDNA using Superscript III reverse transcriptase (Invitrogen), also according to the manufacturer’s protocol. cDNA was diluted 1:5 in water and 2 μl was used as a template for real-time PCR using SYBR Green PCR master mix (Applied Biosystems) and a 7900HT Real-Time PCR machine (Applied Biosystems). Expression of each gene was normalized to an internal control (GAPDH) and these values were then normalized to mock-treated control cells to yield a fold induction. The following primers were used:
 
-## Immunofluorescence
+### Immunofluorescence
 
 For confocal microscopy, HeLa cells (5 × 104 cells/ml) were seeded into 24-well plates containing sterile glass coverslips. For nuclear translocation assays, we used THP-1 cells (4 × 105 cells/ml) adhered in an optical 96-well plate (PerkinElmer) with 50 ng/ml phorbol 12-myristate 13-acetate (PMA, Peprotech) for 48 hr. Where cells were infected and transfected (DNA, PolyI:C) or treated (cGAMP) with innate immune stimulants, the cells were treated or transfected first, and then viral supernatant added to the cultures. Cells were then fixed and stained three hours after this. For fixation, HeLa or adhered THP-1 cells were washed twice with ice-cold PBS and fixed in 4% (vol/vol) paraformaldehyde. Autofluorescence was quenched in 150 mM ammonium chloride, the cells permeabilized in 0.1% (vol/vol) Triton X-100 in PBS and blocked for 30 min in 5% (vol/vol) FCS in PBS. Cells were incubated with primary Ab for 1 hr followed by incubation with secondary Ab for 1 hr. Cells were washed with PBS three times between each step. The coverslips were placed on a slide prepared with a 30 μl drop of mounting medium (Vectashield, containing 4',6-diamidino-2-phenylindole (DAPI)) and allowed to set before storing at 4°C. Images were taken on a Leica TCS SPE confocal microscope and analyzed in ImageJ. For IRF3/NF-κB(p65) translocation, images were taken on Hermes WISCAN (IDEA Bio-Medical) and analyzed with Metamorph software (Molecular Devices). Metamorph calculated a translocation coefficient representing the proportion of staining in nuclear versus cytoplasmic compartments. A value of 1 represents ‘all staining in the nucleus’, −1 is ‘exclusively in cytoplasm’ and 0 is ‘equally distributed’.
 
-## Immunoblotting
+### Immunoblotting
 
 For immunoblotting of viral particles, sucrose purified (as described above) virions (1 × 1011 RT units) were boiled for 10 min in 6X Laemmli buffer (50 mM Tris-HCl (pH 6.8), 2% (w/v) SDS, 10% (v/v) glycerol, 0.1% (w/v) bromophenol blue, 100 mM β-mercaptoethanol) before separating on 12% polyacrylamide gel. Cells were lysed in lysis buffer containing 50 mM Tris pH 8, 150 mM NaCl, 1 mM EDTA, 10% (v/v) glycerol, 1% (v/v) Triton X100, 0.05% (v/v) NP40 supplemented with protease inhibitors (Roche), clarified by centrifugation at 14,000 x g for 10 min and boiled in 6X Laemmli buffer for 10 min. Proteins were separated by SDS-PAGE on 12% polyacrylamide gels. Proteins were transferred to a Hybond ECL membrane (Amersham biosciences) using a semi-dry transfer system (Biorad).
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 WT Vpr or Vpr mutants were expressed in THP-1 cells using pCSVIG at an MOI of 1. Cells were incubated for 48 hr and then washed with PBS and fixed in 1 ml cold 70% ethanol on ice for 30 min. To ensure efficient fixing and minimize clumping, ethanol was added dropwise while vortexing. Cell were pelleted in a microfuge and ethanol was removed followed by two wash steps with PBS. To remove RNA from the samples, RNase A (100 µg/ml) was added and the cells were stained with propidium iodide (PI) (50 µ g/ml) to stain cellular DNA. Cells were incubated for 10 min at room temperature and DNA content analyzed by flow cytometry on a BD FACSCalibur (BD Biosciences). The data were analyzed with FlowJo.
 
-## Generation of Vpr mutants
+### Generation of Vpr mutants
 
 Site directed mutagenesis was performed using Pfu Turbo DNA Polymerase (Agilent) according to the manufacturer’s instructions with the following primers using either pCDNA3.1 or pCSVIG encoding SUMA Vpr as template.
 
-## Co-immunoprecipitation assays
+### Co-immunoprecipitation assays
 
 For KPNA-cargo IPs HEK293T cells were grown in 10 cm dishes and co-transfected with 1 µg of a plasmid expressing FLAG-tagged KPNA1, 1 µg of a plasmid expressing HA-tagged p65 or IRF3 and 1 µg of a plasmid expressing un-tagged SUMA VprF34I+P35N or empty vector control. To account for the effects of SUMA Vpr on expression from CMV promoter-containing plasmids, for IPs containing wild-type SUMA Vpr cells were co-transfected with 2 µg of a plasmid expressing FLAG-tagged KPNA1, 3 µg of a plasmid expressing HA-tagged p65 or IRF3 and 1 µg of a plasmid expressing un-tagged wild-type SUMA Vpr. All transfection mixes were made up to 6 µg with an empty vector plasmid. After 24 h cells were lysed in lysis buffer (0.5 (v/v)) % NP-40 in PBS supplemented with protease inhibitors (Roche) and phosphatase inhibitors (Roche), pre-cleared by centrifugation and incubated with 25 µl of mouse-anti-HA agarose beads (Millipore) or mouse-anti-FLAG M2 agarose affinity gel (Sigma) for 2–4 hr. Immunoprecipitates were washed three times in 1 ml of lysis buffer and eluted from the beads by boiling in 20 µl of 2X sample buffer containing SDS and β-mercaptoethanol. Proteins were resolved by SDS-polyacrylamide gel electrophoresis (NuPAGE 4–12% Bis-Tris protein gels, Invitrogen) and detected by immunoblotting.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were analyzed by statistical tests as indicated in the figure legends. * represent statistical significance: * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001).
 

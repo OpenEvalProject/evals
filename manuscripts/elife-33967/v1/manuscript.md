@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.33967.001 Proneural bHLH proteins are transcriptional regulators of neural fate specification. Extra macrochaetae (Emc) forms inactive heterodimers with both proneural bHLH proteins and their bHLH partners (represented in Drosophila by Daughterless). It is generally thought that varying levels of Emc define a prepattern that determines where proneural bHLH genes can be effective. We report that instead it is the bHLH proteins that determine the pattern of Emc levels. Daughterless level sets Emc protein levels in most cells, apparently by stabilizing Emc in heterodimers. Emc is destabilized in proneural regions by local competition for heterodimer formation by proneural bHLH proteins including Atonal or AS-C proteins. Reflecting this post-translational control through protein stability, uniform emc transcription is sufficient for almost normal patterns of neurogenesis. Protein stability regulated by exchanges between bHLH protein dimers could be a feature of bHLH-mediated developmental events.
+Proneural bHLH proteins are transcriptional regulators of neural fate specification. Extra macrochaetae (Emc) forms inactive heterodimers with both proneural bHLH proteins and their bHLH partners (represented in Drosophila by Daughterless). It is generally thought that varying levels of Emc define a prepattern that determines where proneural bHLH genes can be effective. We report that instead it is the bHLH proteins that determine the pattern of Emc levels. Daughterless level sets Emc protein levels in most cells, apparently by stabilizing Emc in heterodimers. Emc is destabilized in proneural regions by local competition for heterodimer formation by proneural bHLH proteins including Atonal or AS-C proteins. Reflecting this post-translational control through protein stability, uniform emc transcription is sufficient for almost normal patterns of neurogenesis. Protein stability regulated by exchanges between bHLH protein dimers could be a feature of bHLH-mediated developmental events.
 
 ## Introduction
 
@@ -31,15 +31,23 @@ Our initial focus was the cross regulation of Emc and Da. The results did not in
 
 ## Results
 
-## Da and emc protein levels are proportional to da gene dose
+### Da and emc protein levels are proportional to da gene dose
 
 Da and Emc show fairly uniform protein levels in most imaginal disc cells but they change dynamically in proneural regions (Cronmiller and Cummings, 1993; Brown et al., 1995; Bhattacharya and Baker, 2011)(Figure 1A–B). We first investigated the non-proneural regions. If Da and Emc levels were kept even by homeostatic negative feedback, they should compensate for modest changes in expression levels. We decided to compare protein levels in cells homozygous for a null allele (‘clones’), heterozygous for a null allele and a wild type allele (non-recombined cells), and homozygous for wild type alleles (‘twin-spots’). Since the da and emc genes map to different chromosomes, parallel mitotic recombination of both chromosomes can generate up to nine different genotypes in the same tissue (1. da-/-; emc-/-, 2.da-/-; emc-/+, 3. da-/-; emc+/+; 4. da-/+; emc-/-, 5. da-/+; emc-/+, 6. da-/+ emc+/+, 7. da+/+; emc-/-, 8. da+/+; emc-/+, 9. da+/+; emc+/+). Comparing Da and Emc expression in those genotypes in parallel should reveal any homeostatic regulation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig1-v1.jpg)
 
-**Figure 1.:** Panels show immunofluorescence labeling of Drosophila eye imaginal discs (A) and wing imaginal discs (B). Yellow arrowheads indicate the morphogenetic furrow of the eye disc (A) and future anterior wing margin of the wing disc (B). Neural precursor cells arise in those proneural regions and are labeled by Sens (blue). Da (green) and Emc (red) proteins are broadly detected. Da levels are elevated within proneural regions whereas Emc levels are reduced. At the wing margin Da may be elevated in fewer cells than those where Emc is reduced. In addition, higher Emc protein levels are often higher in the equatorial region of the anterior eye disc (white arrowhead, panel A;see text). Genotype: w.1118
+**Figure 1.:** Panels show immunofluorescence labeling of Drosophila eye imaginal discs (A) and wing imaginal discs (B). Yellow arrowheads indicate the morphogenetic furrow of the eye disc (A) and future anterior wing margin of the wing disc (B). Neural precursor cells arise in those proneural regions and are labeled by Sens (blue). Da (green) and Emc (red) proteins are broadly detected. Da levels are elevated within proneural regions whereas Emc levels are reduced. At the wing margin Da may be elevated in fewer cells than those where Emc is reduced. In addition, higher Emc protein levels are often higher in the equatorial region of the anterior eye disc (white arrowhead, panel A;see text). Genotype: w1118.
 
 Unless otherwise regulated, gene expression is proportional to gene copy number (Ciferri et al., 1969). This was the case for GFP expressed from the [Ubi-GFP] transgene. Mitotic recombination in [Ubi-GFP] transgene heterozygotes led to clones with 0 or two transgene copies in the background of cells with one copy. GFP fluorescence intensity from confocal images was proportional to [Ubi-GFP] copy number (Figure 2A–B). When GFP expression was instead detected using indirect immunohistochemistry with an anti-GFP antibody, this signal was also proportional to [Ubi-GFP] copy number and to GFP fluorescence (Figure 2A–B). Thus, immunostaining and confocal microscopy were consistent with linear detection of protein expression levels in wing imaginal discs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig2-v1.jpg)
+
+**Figure 2.:** (A) GFP signals in wing imaginal disc mosaic for the ubi-GFP transgene detected simultaneously by native GFP fluorescence (green) and by anti-GFP antibody (magenta). (B) Quantification of native GFP signal and anti-GFP antibody signal in (A), showing their linearity to the gfp gene dose (N = 4). Panels (C–D) show mosaic imaginal disc tissues obtained after mitotic recombination of heterozygous genotypes (see text). Homozygous da and emc mutant clones are negatively marked by GFP (green) or βGal (blue), respectively, within the same wing disc. Reciprocal twin spots are brightly labeled while unrecombined heterozygous cells show intermediate labeling. (C) Anti-Da labeling (red) in cells with different da and emc gene copies. Note that da-/+ emc+/+ (red arrowheads) and da-/+; emc-/+ (yellow arrowheads) cells have indistinguishable levels of Da protein. Cells with higher da gene dose have more Da protein (green arrowheads). (D) Anti-Emc labeling (red) in cells with different da and emc gene copies. Note that da-/+; emc-/+ (red arrowheads) and da-/+ emc+/+ (yellow arrowheads) have similar Emc protein levels, while da+/+; emc-/+ (green arrowheads) cells express higher levels of Emc than da-/+; emc-/+ (red arrowheads) cells do. (E–F) Quantification of Da (E) and Emc (F) antibodies fluorescence intensities. Mean ± SEM is shown (N = 7). X-axes represent the endogenous da gene dose and different colors represent different emc gene dose (E–F). In panel (E), the Da level in da+/-; emc+/+ cells appears greater than half that in to da+/+; emc+/+ cells but this was not reproduced in other studies (see panel G and Figure 2—figure supplement 1C). The Da level in da+/-; emc+/+ cells was not statistically different from that in da+/-; emc+/- cells. Remarkably, da+/+; emc-/+ cells have higher Emc protein levels than da-/+ emc+/+ cells do (p=0.00068, two-tailed t-test). (G) Quantification of Da antibody labeling from mosaic wing discs where clones vary the copy number of the endogenous da locus from 0–2 and independently vary the copy number of an unlinked genomic rescue transgene from 0 to 2 (see text and Figure 2—figure supplement 1E). X-axis represents the endogenous da gene dose and different colors represent da rescue transgene dose. Dashed horizontal lines represent mean Da levels for 1,2,3 and 4 gene copy genotypes. Note that the genomic transgene consistently expresses more Da protein than the endogenous locus. Mean ± SEM is shown,(N = 10). (H–I) Random flip-on clones overexpressing emc using a UAS-emc line are marked by GFP (green). Emc (red) over-expression abolishes Da (blue) upregulation in the morphogenetic furrow of the eye disc (H, yellow arrowheads) and the presumptive wing margin in the wing disc (I, yellow arrowheads), but has no discernible effect elsewhere. Genotypes: (A) hsFLP; Ubi-GFP FRT40/FRT40, (C–D) hsFLP; da3 FRT40/Ubi-GFP FRT40; emcAP6 FRT80/arm-LacZ FRT80, (H–I) hsFLP; UAS-emc 5.3/+; act > CD2>Gal4, UAS-GFP/+.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Homyzygous mutant cells are negatively marked by GFP or βGal (green). (A) Very little Emc (blue) is detected in da-/- cells. da+/+ cells have more Da (red) and Emc (blue) proteins. (B) Da goes up in emc-/- cells, while emc -/+ and emc+/+ cells have similar Da (red) and Emc (blue) protein levels. (C) Mean ± SEM of GFP, Da and Emc protein levels showing their linear response to da (gfp) gene dose (N = 8). (D) Mean ± SEM of LacZ, Da and Emc protein levels. Da and Emc levels are indistinguishable in emc-/+ and emc+/+ (N = 8). (E) Panels showing Da protein in mosaic clones of different da gene dose. The endogenous da locus is negatively marked by βGal (blue) and the da rescue transgene is positively labeled by GFP (green). Da proteins (red) go up as the gene copies of da increase (two: red and green arrowheads; three: yellow arrowheads and four: blue arrowheads).
 
 Next, mitotic recombination was induced in the da-/+; emc-/+ genotype and Da protein levels were quantified in cell populations with different doses of the wild type da and emc genes. Contrary to the idea that uniform levels of Da protein were subject to homeostatic feedback, Da protein levels were instead proportional to da gene dose (Figure 2C,E and Figure 2—figure supplement 1A,C). In the background wild type for emc (i.e. emc+/+), cells with two copies of the wild type da gene had almost twice as much Da protein as cells with only one copy (Figure 2E and Figure 2—figure supplement 1A,C). This did not support the notion that the level of Da expression was buffered by negative feedback regulation from emc. Accordingly, Da protein levels did not change when one copy of emc was removed, that is Da protein levels were indistinguishable in the emc+/+ and emc-/+ backgrounds, so long as da gene copy number was the same (Figure 2C,E and Figure 2—figure supplement 1B,D). In the total absence of emc (i.e. emc-/-), Da levels were elevated, as reported previously (Bhattacharya and Baker, 2011)(Figure 2E and Figure 2—figure supplement 1B,D). We extended these observations using a genomic rescue transgene to vary da copy number from 0 to 4. Extra da gene dose increased Da protein levels linearly (Figure 2G and Figure 2—figure supplement 1E). In summary, Da expression was proportional to da gene dose and unaffected by emc gene dose unless the emc gene was completely deleted. This suggested that Da autoregulation was not significant at the Emc levels normal for imaginal disc cells outside proneural regions.
 
@@ -49,7 +57,7 @@ Emc protein levels were measured in the same da and emc genetic combinations res
 
 We focused on the wing disc for quantification of Emc and Da levels since it mostly consists of similar cells, developing synchronously (see Materials and methods for details). Similar results were observed in eye discs, although we did not perform quantitative analysis because of the multiple cell types and developmental stages present in eye discs.
 
-## Emc is stabilized by Da in S2 cells
+### Emc is stabilized by Da in S2 cells
 
 Emc dimerizes with bHLH proteins, including Da, through HLH-mediated interactions (Van Doren et al., 1991; Cabrera et al., 1994). Our observations on Emc levels could be explained if Emc protein was unstable except in a heterodimer with Da. To test this, the half-life of Emc was measured in cultured S2 cells.
 
@@ -65,17 +73,25 @@ To verify these findings in vivo, Da was overexpressed in wing imaginal discs us
 
 Altogether, these data suggested Emc becomes stabilized in Da/Emc heterodimers. This could explain both why Emc protein levels depend on Da levels and are relatively homogenous outside proneural regions, rather than transcriptional regulation of emc by da, as suggested previously(Bhattacharya and Baker, 2011). Emc might also affect Da stability, to a lesser degree.
 
-## Ato is required for altering Da and Emc levels in the morphogenetic furrow
+### Ato is required for altering Da and Emc levels in the morphogenetic furrow
 
 Emc instability could also explain its reduction in proneural regions. Da might become limiting where Da also heterodimerizes with proneural proteins. Significantly, Dpp and Hh, the same signals that induce Ato expression in the morphogenetic furrow, are also required to change Da and Emc levels (Greenwood and Struhl, 1999; Curtiss and Mlodzik, 2000; Bhattacharya and Baker, 2011), consistent with the possibility that destabilization of Emc is linked to Ato expression.
 
 Apparently contradicting this idea, however, Da and Emc levels continue to change in the morphogenetic furrow in clones of cells homozygous for the ato1 mutation (Bhattacharya and Baker, 2011). The ato1 mutation contains three coding substitutions, A25T, K253N and N261I (Jarman et al., 1994)(Figure 4A). K253 and N261 lie in the basic domain that is required for DNA-binding (Figure 4A). The ato1 allele has been considered genetically amorphic, since its effects on neurogenesis resemble that of a deletion of the gene (Jarman et al., 1994), but it still encodes detectable protein that is expected to contain a helix-loop-helix domain and therefore may be able to heterodimerize with Da (Figure 4—figure supplement 1A) (Jarman et al., 1995). To characterize a true protein null allele we determined the sequence of ato3, which has the same loss-of-function phenotype as ato1 with respect to neurogenesis but does not encode detectable protein (Jarman et al., 1995)(Figure 4—figure supplement 1B). Sequencing of ato3 genomic DNA revealed a single base-pair change 8278687C > T that introduced a premature stop codon (Q188X) upstream of the bHLH domain (Figure 4A). Therefore even if the ato3 mutant cells contain a protein not detected by the available antibody, this protein should lack the bHLH domain and thus not be able to form heterodimers.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cartoon of Ato protein showing sequence changes in ato1 and ato3 mutants. ‘B’ indicating the basic domain and ‘HLH’ indicating the helix-loop-helix domain of wild type Ato. (B–E) Homozygous ato1 (B and C) or ato3 (D and E) mutant clones are marked by the absence of βGal (green). (B) Emc (magenta) goes down in ato1 clones in the furrow (arrow). (C) Da (magenta) goes up in ato1 clones in the furrow (arrow), at levels comparable to (if not higher) than the normal high level of Da in the furrow. (D) Emc (magenta) is retained in ato3 clones in the furrow (arrow), at levels comparable to the normal Emc levels ahead of the furrow. (E) Da (magenta) fail to upregulate in ato3 clones in the furrow (arrow). (F–G) ato1 MARCM clones are positively labeled by GFP. (F) cells homozygous for ato1 mutant (arrow) upregulatd Da (magenta). (G) Overexpression of Emc in ato1 mutant clones prevents Da upregulation (arrow). (H–I) Homozygous scB57 mutant clones are marked by the absence of GFP (green). (H) Emc (magenta) is retained in cells lacking all the four AS-C genes in the wing margin of the wing discs (arrow). (I) Da (magenta) is not elevated in wing margin cells homozygous for the AS-C mutant (arrow). Genotypes: (B–C) hsFLP; FRT82 ato1/FRT82 arm-lacZ; (D–E) hsFLP; FRT82 ato3/FRT82 arm-lacZ; (F) hsFLP, UAS-GFP; tub-Gal4/+; FRT82 tub-Gal80/FRT82 ato1; (G) hsFLP, UAS-GFP; tub-Gal4/UAS-emc 5.3; FRT82 tub-Gal80/FRT82 ato1; (H–I) Df(1)scB57FRT101/Ubi GFP FRT101; hsFLP/+..
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Homozygous ato1 or ato3 mutant clones are marked by the absence of βGal (green). (A) Ato1 protein (magenta) is detected by an anti-Ato antibody in the ato1 clones. Initial expression of Ato appeared to be normal but the refinement of Ato expression was disrupted(Chen and Chien, 1999). (B) No protein is detected by the anti-Ato antibody in ato3 clones. Genotypes: (A) hsFLP; FRT82 ato1/FRT82 arm-lacZ; (B) hsFLP; FRT82 ato3/FRT82 arm-lacZ..
+
 As reported previously, cells homozygous for ato1 mutant downregulated Emc (Figure 4B) and upregulated Da (Figure 4C) in the morphogenetic furrow, like wild type cells (Bhattacharya and Baker, 2011)(Figure 1A). By contrast, cells homozygous for ato3 retained Emc in the morphogenetic furrow (Figure 4D) and failed to upregulate Da (Figure 4E). Thus, ato function does regulate Da and Emc expression levels in the morphogenetic furrow, but independently of aspects of ato function altered in the ato1 allele, which behaves as a null allele for neurogenesis. We have been unable to express Ato in S2 cells and therefore could not test whether Ato destabilizes Emc directly or by sequestering Da.
 
 To gain further insight into the upregulation of Da that occurs in ato1 clones, we performed MARCM (Lee and Luo, 1999; Lee and Luo, 2001) experiments to overexpress Emc in ato1 mutant cells. Unlike plain ato1 mutant cells (Figure 4C,F), cells homozygous for ato1 and also overexpressing Emc failed to upregulate Da and maintained pre-existing Da levels (Figure 4G). This suggests that Da upregulation is bHLH-mediated, for example by transcriptional autoregulation of the da gene, or by greater stability of Da-Da and Da-Ato1 dimers in the absence of Emc.
 
-## AS-C is required for altering Da and Emc levels in wing disc proneural regions
+### AS-C is required for altering Da and Emc levels in wing disc proneural regions
 
 Like the morphogenetic furrow, proneural cells of the anterior wing margin also elevate Da and reduce Emc (Bhattacharya and Baker, 2011) (Figure 1B). When all the four AS-C bHLH genes were deleted, Da was no longer elevated at the wing margin (Figure 4I) and Emc was not downregulated (Figure 4H). Thus AS-C gene function regulates Da and Emc levels in the anterior wing margin, as ato does in the eye disc.
 
@@ -83,25 +99,53 @@ It has been reported that Emc regulation is independent of AS-C in the notum pri
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig5-v1.jpg)
 
-**Figure 5.:** (A) In sc wing discs, fewer cells are labeled by Sens (green) in the wing margin (yellow arrowheads). Emc (red) and Da (blue) levels are not affected as strongly as in the wild type (compare 10-1Figure 1B). (B) In wild type notum, Sens (green) marks single sensory organ precursor (SOP) cells. Emc (red) and Da (blue) proteins are expressed widely, although the SOP cells generally have lower Emc and higher Da (eg yellow arrowheads)(Bhattacharya and Baker, 2011). In addition, Emc protein levels are higher in particular domains (white arrowheads). High-Emc domains lack SOP cells. (C) Homozygous sc clones lack GFP. SOP cells with lower Emc(red) and higher Da(blue) were never observed in B57sc clones, although the regions of high Emc were unchanged (white arrowheads). (B57D) The whole sc notum lacks Sens positive SOP cells (green). SOP cells with lower Emc(red) and higher Da(blue) were never observed in 10-1scnotum, although the regions of high Emc were unchanged (white arrowheads). (10-1A, D) Df(1)sc; (10-1B) w; (1118C) Df(1)sc.B57FRT101/Ubi GFP FRT101; hsFLP/+
+**Figure 5.:** (A) In sc10-1 wing discs, fewer cells are labeled by Sens (green) in the wing margin (yellow arrowheads). Emc (red) and Da (blue) levels are not affected as strongly as in the wild type (compare Figure 1B). (B) In wild type notum, Sens (green) marks single sensory organ precursor (SOP) cells. Emc (red) and Da (blue) proteins are expressed widely, although the SOP cells generally have lower Emc and higher Da (eg yellow arrowheads)(Bhattacharya and Baker, 2011). In addition, Emc protein levels are higher in particular domains (white arrowheads). High-Emc domains lack SOP cells. (C) Homozygous scB57 clones lack GFP. SOP cells with lower Emc(red) and higher Da(blue) were never observed in scB57 clones, although the regions of high Emc were unchanged (white arrowheads). (D) The whole sc10-1 notum lacks Sens positive SOP cells (green). SOP cells with lower Emc(red) and higher Da(blue) were never observed in sc10-1notum, although the regions of high Emc were unchanged (white arrowheads). (A, D) Df(1)sc10-1; (B) w1118; (C) Df(1)scB57FRT101/Ubi GFP FRT101; hsFLP/+.
 
 The notum differentiates a number of innervated bristles derived from individual sensory organ precursor (SOP) cells which express elevated Da and low Emc (Bhattacharya and Baker, 2011). In addition, other more subtle differences in Emc occur (Figure 5B)(Troost et al., 2015). Emc expression is higher in a large domain along the anterior margin, and two small ventral domains located posteriorly and centrally (Figure 5B). Proneural regions, which can be identified by Sca-LacZ (Mlodzik et al., 1990), lie in between these higher Emc domains (Troost et al., 2015). These Emc domains are not affected by sc10-1 (Troost et al., 2015) (Figure 5D) or by scB57 clones (Figure 5C). By contrast, we did not succeed in locating cells lacking Emc at the locations of the missing SOP cells (Figure 5C–D). Although it might be difficult to locate individual cells lacking Emc expression in the absence of any SOP marker, we also did not see cells with higher Da, which would be expected if regulation of Emc and Da was independent of AS-C (Figure 5C–D), suggesting the AS-C may regulate Emc and Da levels in the precursors of thoracic macrochaetae as well as at the anterior wing margin.
 
-## Proneural genes regulate Emc levels post-transcriptionally
+### Proneural genes regulate Emc levels post-transcriptionally
 
 To further investigate how proneural proteins regulate Emc expression in proneural regions, the regulation of emc transcription was examined. Three enhancer trap lines, emc-GFPYB0040, emc-GFPYB0067 and emc04322 largely recapitulating the mRNA distribution (Figure 6A and data not shown)(Baonza et al., 2000; Baonza and Freeman, 2001; Bhattacharya and Baker, 2009; Spratford and Kumar, 2015). They exhibited reduced expression in the morphogenetic furrow and the anterior wing margin (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig6-v1.jpg)
+
+**Figure 6.:** (A) emc enhancer trap expression in the eye disc in the emc-GFPYB0067 line. Downregulation in the morphogenetic furrow (arrow) is broader and less complete than seen fpr the Emc protein (compare Figure 1A). (B) ato3 mutant clones are marked by the absence of βGal (green). emc enhancer trap (magenta) is lower in the furrow both inside and outside ato3 mutant clones. Genotypes: (A) emc-GFPYB0067; (B) eyFLP; emc-GFPYB0067, FRT82 arm-lacZ/FRT82 ato3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** emc enhancer trap shows similar downregulation in the furrow in ato1 clones. Genotype: eyFLP; emc-GFPYB0067, FRT82 arm-lacZ/FRT82 ato1.
+
 In both ato1 and ato3 mutant clones, emc reporter expression remained low in the morphogenetic furrow region (Figure 6B and Figure 6—figure supplement 1). Mutant cells posterior to the furrow also exhibited lower reporter expression (Figure 6B and Figure 6—figure supplement 1), possibly due to eye differentiation being prevented by ato mutations (Jarman et al., 1994). These data indicated ato was not required to repress emc transcription in the morphogenetic furrow. Therefore, regulation of Emc expression by Ato was post-transcriptional, like regulation of Emc expression by Da.
 
-## Proneural genes are not sufficient to regulate Da or Emc protein levels
+### Proneural genes are not sufficient to regulate Da or Emc protein levels
 
 If proneural proteins destabilize Emc by sequestering Da, then ectopic expression of Ato (or AS-C proteins) should have this effect in other, non-proneural regions of imaginal discs. Gal4-mediated Ato expression was driven in clones of cells to test this. When HA-tagged Ato was induced in eye discs or wing discs clones, Da was slightly upregulated but Emc was not reduced (Figure 7A and Figure 7—figure supplement 1A). Similar results were obtained with weaker expression of untagged Ato from a different transgene (Figure 7—figure supplement 1B). The levels of ectopic HA-tagged Ato were generally similar to the endogenous levels in the morphogenetic furrow of wild type eye discs (Figure 7B) and in many cases were sufficient to express scabrous, a general reporter of proneural gene activity (Mlodzik et al., 1990)(Figure 7E). The ectopic Ato levels were somewhat heterogenous, however, with individual clones containing cells with higher and lower Atonal in a salt-and-pepper fashion. We measured the levels of Emc and Da in individual cells with different Ato levels of ectopic Ato, without observing any correlation (Figure 7C–D and Figure 7—figure supplement 1C–D). Interestingly, the GAL4-induced expression level of ectopic Ato was lower in a region spanning the morphogenetic furrow (Figure 7B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig7-v1.jpg)
+
+**Figure 7.:** Flip-on clones expressing ato or sc using act-Gal4 and UAS-ato or UAS-sc lines are marked by GFP (green). (A) Ectopic Ato expression from UAS-ato.ORF-3HA had little effect on Emc levels (red) but slightly elevated Da (blue). (B) Ectopic Ato (red) levels ahead of the furrow were comparable to normal physiological levels in the furrow but failed to induce ectopic neuronal differentiation (Elav: blue). Notably, ectopic Ato levels declined close to the furrow, both anteriorly and posteriorly. (C) Cells with higher (yellow arrowheads) and lower (green arrowheads) levels of ectopic Ato had similar levels of Emc protein. White arrowhead indicates the morphogenetic furrow. (D) Cells with higher (yellow arrowheads) and lower (green arrowheads) levels of ectopic Ato had similar levels of Da protein. White arrowhead indicates the morphogenetic furrow. (E) Ectopic Ato expression activates its downstream target Sca (red) in the eye disc (arrows) but only affected neuronal differentiation (blue) posterior to the furrow (green arrow). (F) Ectopic Sc expression from UAS-sc in wing discs sightly elevated Da (red) in clones and perhaps also Emc (blue) expression. Genotypes: (A–E) hsFLP; act > CD2>Gal4, UAS-GFP/UAS-ato.ORF-3HA; (F) hsFLP; UAS-sc.39/+; act > CD2>Gal4, UAS-GFP/+.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Ectopic Ato induced from the UAS-ato.ORF-3HA allele slightly upregulates Da (blue) in wing disc but has little effect on Emc (red). Ato-expressing nuclei often localize more basally than their normal counterparts. (B) Ectopic Ato induced from a second transgene UAS-ato-4 has little effect on Da (red) or Emc (blue) expression in eye disc. (C) Quantification of Emc levels with Ato (HA) levels in individual cells expressing ectopic Ato. Emc levels are estimated by measuring the anti-Emc antibody fluorescence intensities and subtracting that in the morphogenetic furrow. Each dot represents measurement from one individual cell and each color represents one individual imaginal disc (N = 8). Overall labeling is somewhat variable between imaginal discs. (Da) Quantification of Da levels with Ato (HA) levels in individual cells expressing ectopic Ato (N = 8). Genotypes: (A) hsFLP; act > CD2>Gal4, UAS-GFP/UAS-ato.ORF-3HA; (B) hsFLP; UAS-ato-4/+; act > CD2>Gal4, UAS-GFP/+.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Ectopic Sc induced from UAS-sc.39 slightly upregulated Da (red), especially posterior to the furrow, but had little effect on Emc (blue) expression. Genotypes: (A) hsFLP; UAS-sc.39/+; act > CD2>Gal4, UAS-GFP/+.
+
 Consistent with previous conclusions (Bhattacharya and Baker, 2011), Ato expression by itself was insufficient to induce premature neuronal differentiation anterior to the morphogenetic furrow (Figure 7B,E). In similar experiments, ectopic Sc expression in wing or eye discs only slightly upregulated Da and mildly increased Emc expression (Figure 7F and Figure 7—figure supplement 2). These results indicated that although proneural genes like Ato and AS-C genes may be required to downregulate Emc, they were not sufficient.
 
-## Uniform emc transcription supports neural patterning
+### Uniform emc transcription supports neural patterning
 
 To confirm the primacy of post-translational control of Emc protein, we used the Gal4-UAS system to replace endogenous emc expression with ubiquitous transcription under the control of Actin-Gal4 in the background of the embryonic lethal, amorphic genotype emcAP6/emc∆1. High levels of ubiquitous Emc in the absence of the endogenous locus abolished sensory neurons to various degrees in many tissues (Figure 8—figure supplement 1A–F), just like ectopic Emc in the presence of the endogenous locus (Bhattacharya and Baker, 2011). At lower temperatures, lower levels of uniform transcription led to different results. Despite uniform transcription, Emc protein patterns resembled wild type (Figure 8C,F and I). Emc protein was reduced in the morphogenetic furrow, and higher in regions of the notum primordium, and Da protein levels also resembled the wild type (Figure 8C,F and I). One difference, however, was that whereas in wild type higher Emc protein levels were often noticed around the equator near the anterior of the eye disc, a region where emc transcription is positively regulated by Notch signaling (Bhattacharya and Baker, 2009)(Figure 1A), Emc protein levels were uniform here in the flies rescued by uniform emc transcription (Figure 8C). The rescued emc mutants survived to pharate adults, and a small proportion emerged as adults. Both adults and pharate adults exhibited significant rescue of neural patterning. This included almost normal eye development, including the interommatidial bristles (Figure 8B), an essentially normal pattern of thoracic macrochaetae, a spaced pattern of some microchaetae (Figure 8E), and essentially normal pattern of sensory bristles along the anterior wing margin (Figure 8H). Therefore, uniform emc transcription was sufficient for most neural patterning, which did not depend critically on patterns of emc transcription.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig8-v1.jpg)
+
+**Figure 8.:** (A) Wild type adult eye showing ommatidia and interommatidial bristles. (B) Actin-Gal4-mediated ubiquitous transcription of emc at 18C in the absence of the endogenous locus gives rise to normal adult eye. (C) Eye imaginal discs from the rescued larvae show almost normal protein patterns, including the downregulation of Emc and upregulation of Da in the morphogenetic furrow, and normal neurogenesis shown by Sens staining. Unlike wild type discs, however, Emc protein levels are not discernibly elevated near the equatorial anterior margin (contrast with Figure 1A). Scattered cells show higher Emc levels. (D) Wild type thorax displays 11 pairs macrochaetae (at least seven pairs are shown here) and evenly-spaced microchaetae. (E) Ubiquitous emc expression gives rise to nearly all macrochaetae. Spaced microchatae are present over some regions. (F) Wing imaginal discs with ubiquitous emc expression elevated Emc in many cells. The number and position of Sens positive SOP cells resemble the wild type notum, and they also also showed higher Da expression (compare Figure 5B). (G) Anterior wing margin from wild type adult flies display mechanosensory and chemosensory bristles. (H). Uniform emc expression gives rise to normal bristles on the anterior and posterior wing margin (wings from this genotype do not inflate properly). (I) Wing imaginal discs from (H) show broad Emc expression with higher levels in scattered cells, more frequently in central portions of the wing pouch. Sens and Da shows normal upregulation in the presumptive anterior wing margin. Genotypes: (A, D, G) w1118; (B–C, E–F and H–I) act > Gal4/UAS-emc 5.3; emcΔ1 FRT80/emcAP6 FRT80.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/33967/elife-33967-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Rescued pharate adults have essentially normal eye with interommatidial bristles. (B) Eye imaginal discs from (A) display broad Emc expression and numerous cells with higher levels, but always reduced around the morphogenetic furrow. Sens expression is almost normal. Da is ubiquitously expressed but not elevated in the furrow. (C) Pharate adult thorax has many normal macrochaetae but lacks most microchaetae. (D) Emc is uniformly expressed at high level in the notum. The number of SOP cells labeled by Sens was reduced, although at normal locations, and they did not elevate Da expression. (E) Sensory bristles along the wing margin were reduced. (F) Emc was expressed at high level in the wing pouch. Sens expression was normal at the wing margin but Da was not elevated.
 
 ## Discussion
 
@@ -125,26 +169,309 @@ Like Emc, mammalian ID1, ID2 and ID3 proteins are also short-lived proteins degr
 
 ## Materials and methods
 
-## Mosaic analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>emc</td>
+      <td></td>
+      <td>FlyBase: FBgn0000575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>da</td>
+      <td></td>
+      <td>FlyBase: FBgn0267821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>ato</td>
+      <td></td>
+      <td>FlyBase: FBgn0010433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>sc</td>
+      <td></td>
+      <td>FlyBase: FBgn0004170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>da[3]</td>
+      <td>PMID: 3802198</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>emc[AP6]</td>
+      <td>PMID: 7947322</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>emc[Δ1]</td>
+      <td>this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>act &gt; CD2&gt;Gal4, UAS-GFP</td>
+      <td>PMID: 9053304</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>ato[1]</td>
+      <td>PMID: 8196767</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>ato[3]</td>
+      <td>PMID: 7635049</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>emc-GFP[YB0040]</td>
+      <td>PMID: 17179094</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>emc-GFP[YB0067]</td>
+      <td>PMID: 17179094</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>P{PZ}emc[04322]</td>
+      <td>PMID: 9529525</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>Df(1)sc[B57]</td>
+      <td>PMID: 2510998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>Df(1)sc[10-1]</td>
+      <td>PMID: 3111716</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-HA-da</td>
+      <td>PMID: 25579975</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-ato.ORF-3HA</td>
+      <td>PMID: 23637332</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-sc</td>
+      <td>PMID: 8978666</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-ato-4</td>
+      <td>PMID: 8324823</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-emc5.3</td>
+      <td>PMID: 10804180</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>DGRC</td>
+      <td>Stock Number: 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-βGal (mouse)</td>
+      <td>DSHB</td>
+      <td>40-1a</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ElaV (rabbit)</td>
+      <td>DSHB</td>
+      <td>7E8A10</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Da (mouse)</td>
+      <td>PMID: 3802198</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Emc (rabbit)</td>
+      <td>Y.N. Jan</td>
+      <td></td>
+      <td>(1:8000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Ato (rabbit)</td>
+      <td>PMID: 8196767</td>
+      <td></td>
+      <td>(1: 50000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Sca (mouse)</td>
+      <td>PMID: 8622662</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP (rat)</td>
+      <td>Nacalai Tesque</td>
+      <td>GF090R</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Sens (guinea pig)</td>
+      <td>PMID: 10975525</td>
+      <td></td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-V5 (mouse)</td>
+      <td>Invitrogen</td>
+      <td>46–0706</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Flag (mouse)</td>
+      <td>Sigma</td>
+      <td>F3165</td>
+      <td>(1:8000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Tubulin (mouse)</td>
+      <td>Abcam</td>
+      <td>ab18251</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Tubulin (rabbit)</td>
+      <td>Abcam</td>
+      <td>ab7291</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA (rabbit)</td>
+      <td>Cell Signaling Tech</td>
+      <td>C29F4</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA (mouse)</td>
+      <td>Roche</td>
+      <td>12CA5</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Emc-V5 (plasmid)</td>
+      <td>this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Da-Flag (plasmid)</td>
+      <td>PMID: 25694512</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>GFP (plasmid)</td>
+      <td>PMID: 25694512</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mosaic analysis
 
 Mosaic clones were obtained using FLP/FRT mediated mitotic recombination(Xu and Rubin, 1993). Larvae were subjected to heat shock for 1 hr at 37°C at 60 ± 12 hr after egg laying, and dissected 72 hr after heat shock. To make ‘flip-on’ clones, larvae were heat shocked for 30 min instead. All flies were maintained at 25°C unless otherwise stated.
 
-## Drosophila Strains
+### Drosophila Strains
 
 w1118, da3 (Cronmiller and Cline, 1987); emcAP6(Ellis, 1994); emcΔ1(an apparent null allele corresponding to a 1 bp deletion that frameshifts the open reading frame in the 5th codon whose characterization will be described elsewhere); act > CD2>Gal4, UAS-GFP (Pignoni and Zipursky, 1997), Neufeld, Neufeld et al., 1998); UAS-emc5.3 (Baonza et al., 2000); ato1(Jarman et al., 1994); ato3(Jarman et al., 1995); UAS-HA-da (Wang and Baker, 2015a); UAS-ato.ORF-3HA (Bischof et al., 2013); UAS-sc(Parras et al., 1996); emc-GFPYB0040 and emc-GFPYB0067 (Quiñones-Coello et al., 2007); P{PZ}emc04322 (Röttgen et al., 1998); Df(1)scB57(González et al., 1989); UAS-ato-4(Jarman et al., 1993); Df(1)sc10-1 (Villares and Cabrera, 1987).
 
-## Immunohistochemistry and image processing
+### Immunohistochemistry and image processing
 
 Antibody staining was performed as previously described(Baker et al., 2014). The following primary antibodies were used: mouse anti-βGal (1:100, DSHB 40-1a), rabbit anti-βGal, rat anti-ElaV(1:50, DSHB 7E8A10), mouse anti-Da(1:200)(Cronmiller and Cummings, 1993), rabbit anti-Emc (1:8000, a gift from Y. N. Jan)(Brown et al., 1995), rabbit anti-Ato(1:50000)(Jarman et al., 1994), mouse anti-Sca (1:200)(Lee et al., 1996), rat anti-GFP(1:1000, Nacalai Tesque GF090R), guinea pig anti-Sens (Nolo et al., 2000), mouse anti-HA (1:1000, Roche 12CA5), rabbit anti-HA (1:1000, Cell Signaling Tech C29F4). Seondary antibodies conjugated with Cy2, Cy3 and Cy5 dyes (1:200) were from Jackson ImmunoResearch Laboratories. Multi-labeled samples were sequentially scanned with Leica SP2 or SP5 confocal microscopes. Z-stacks were projected using Max Intensity and processed with ImageJ. Genotypes were identified according to GFP and βGal staining. For quantification of GFP, βGal, Da and Emc levels in mosaic discs, mean fluorescence intensities were measured for all areas of each genotype and averaged for each wing disc. Fluorescence intensities in gfp-/-, lacZ-/-, da-/- and emc-/- genotypes were measured as an estimate of background to be substracted from anti-GFP, anti- anti-βGal, anti-Da and anti-Emc fluorescence intensities. The wing margin and notum regions were excluded from this analysis of the main wing disc.
 
-## DNA constructs
+### DNA constructs
 
 ORFs of each gene were cloned from cDNA of 0–6 hours w1118 embryos to make constructs used in transfection. Emc open reading frame with Kozak sequences were cloned in-frame into pAc5.1/V5-His vector (Invitrogen) to make pAc-Emc-V5 construct. pAc-Da-Flag and pAc-GFP constructs were obtained from was obtained from Dr. Marianthi Kiparaki (Kiparaki et al., 2015).
 
-## Cell culture, transient transfection and western blotting
+### Cell culture, transient transfection and western blotting
 
 Drosophila S2 cells obtained from Drosophila Genomics resource Center were cultured at 25°C in Schneider’s Medium supplemented with 10% heat inactivated fetal bovine serum and Penicillin-Streptomycin. Cells were transiently transfected with Effectene Transfection Reagent (Qiagen, Valencia, CA) or TransIT-2020 Transfection Reagent (Mirus, Madison, WI) according to manufacturer’s instructions. Cells were treated with 50 µM MG132 or 50 µg/ml cycloheximide where noted (Kiparaki et al., 2015). Whole cell lysates were collected 48–72 hr after transfection using RIPA buffer (150 mM sodium chloride, 1.0% NP-40, 0.5% sodium deoxycholate, 0.1% SDS and 50 mM Tris, pH 8.0) with addition of protease inhibitors cocktail (Roche) and phosphatase inhibitors cocktails (Sigma). Total protein concentration was determined using Pierce BCA Protein Assay Kit (ThermoFisher Scientific). Protein lysates were separated on 10–12% homemade SDS–polyacrylamide gels and electrotransferred onto PVDF membranes (Bio-Rad) for following detection by western blotting. The following primary antibodies were used for western blotting: mouse anti-V5 (1:5000, Invitrogen 46–0706), mouse anti-Flag (1:8000, Sigma F3165), mouse anti-Tubulin (1:5000, Abcam ab18251), rabbit anti-Tubulin (1:5000, Abcam ab7291). Secondary antibodies conjugated with IRDye 680RD and IRDye 800CW were used (LI-COR, Lincoln, NE). Membranes were imaged on LI-COR Odyssey scanner and images were quantified in ImageJ.
 
-## Sequencing of ato mutant alleles
+### Sequencing of ato mutant alleles
 
 Both ato1 and ato3 flies were outcrossed to w1118 flies to obtain ato1/+ and ato3/+ flies. Genomic DNA was isolated from w1118, ato1/+ and ato3/+ flies and PCR products were obtained using primers flanking the endogenous ato locus. Amplified products were gel purified and subjected to Sanger sequencing. Re-sequencing of ato1 confirmed three point mutations (8278198G > A, 8278884G > T and 8278907A > T, numbers represented genomic coordinates on chromosome 3L).

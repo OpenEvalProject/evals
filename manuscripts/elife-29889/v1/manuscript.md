@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.29889.001 Mushroom bodies are the iconic learning and memory centers of insects. No previously described crustacean possesses a mushroom body as defined by strict morphological criteria although crustacean centers called hemiellipsoid bodies, which serve functions in sensory integration, have been viewed as evolutionarily convergent with mushroom bodies. Here, using key identifiers to characterize neural arrangements, we demonstrate insect-like mushroom bodies in stomatopod crustaceans (mantis shrimps). More than any other crustacean taxon, mantis shrimps display sophisticated behaviors relating to predation, spatial memory, and visual recognition comparable to those of insects. However, neuroanatomy-based cladistics suggesting close phylogenetic proximity of insects and stomatopod crustaceans conflicts with genomic evidence showing hexapods closely related to simple crustaceans called remipedes. We discuss whether corresponding anatomical phenotypes described here reflect the cerebral morphology of a common ancestor of Pancrustacea or an extraordinary example of convergent evolution.
+Mushroom bodies are the iconic learning and memory centers of insects. No previously described crustacean possesses a mushroom body as defined by strict morphological criteria although crustacean centers called hemiellipsoid bodies, which serve functions in sensory integration, have been viewed as evolutionarily convergent with mushroom bodies. Here, using key identifiers to characterize neural arrangements, we demonstrate insect-like mushroom bodies in stomatopod crustaceans (mantis shrimps). More than any other crustacean taxon, mantis shrimps display sophisticated behaviors relating to predation, spatial memory, and visual recognition comparable to those of insects. However, neuroanatomy-based cladistics suggesting close phylogenetic proximity of insects and stomatopod crustaceans conflicts with genomic evidence showing hexapods closely related to simple crustaceans called remipedes. We discuss whether corresponding anatomical phenotypes described here reflect the cerebral morphology of a common ancestor of Pancrustacea or an extraordinary example of convergent evolution.
 
 ## Introduction
 
@@ -36,19 +36,210 @@ Their similarity of brain structures has suggested phylogenetic proximity of ins
 
 ## Results
 
-## Identification of mushroom bodies in crustaceans
+### Identification of mushroom bodies in crustaceans
 
 We have surveyed a broad range of Crustacea, particularly Malacostraca, for evidence of centers that would correspond to mushroom bodies identified in insects. Surprisingly, as outlined above, there have been very few criteria employed for identifying insect mushroom bodies. Those criteria are the presence of lobes, with or without an outer ‘calyx’ or ‘cap’, arising from many hundreds of minute cell bodies clustered laterally in the forebrain (Flögel, 1878). Original descriptions of mushroom bodies emphasized a distal dendritic elaboration, called a calyx, although subsequent studies have shown that many insect groups lack this, as do Myriapoda and Chelicerata (Wolff and Strausfeld, 2015).
 
 Surprisingly, just these few characters have sufficed historically for claiming homology of lobed centers across Hexapoda. However they are hardly adequate to claim homology of neuropils in divergent arthropod lineages such as the two sub-phyla, Crustacea and Hexapoda, that comprise the clade Pancrustacea. Here we expand neuroanatomical criteria to unique characters that we view as necessary and sufficient to claim a center’s identity as a mushroom body and hence support possible phenotypic homology across species. Table 1 lists these characters and their occurrence in representative insects (Drosophila and the cockroach Periplaneta americana) and, within eumalacostracan crustaceans, Stomatopoda and five decapod species. Here Stomatopoda are represented by two species, Gonodactylus smithii (Figure 1A,B) and Neogonodactylus oerstedii. Examples of these characters are shown in Figure 1—figure supplement 1.
 
-## Identification of mushroom bodies in Stomatopoda
+![Figure 1.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig1-v1.jpg)
+
+**Figure 1.:** (A) Eyestalks and antennules of Gonodactylus smithii. With the largest compound eyes of any panarthropod, and long antennules, mantis shrimps are equipped for high-level visual and olfactory perception. Information from both sensory systems reaches the mushroom body calyces and its column-like extensions. (B) Periplaneta americana, the American cockroach provides the hexapod species for comparisons with the stomatopod. (C) The central forebrain of the stomatopod Gonodactylus smithii is defined by the central complex (CX) and associated protocerebral bridge (PB). This contrasts with the forebrain’s enormous lateral protocerebra in which optic neuropils and mushroom bodies (MB) dominate. Bifurcating axon bundles of the main tract from the olfactory lobes (OL) to the protocerebrum, called the olfactory-globular tract [OGT shown orange] supply the mushroom body calyces [MB(Ca), green]. Proximal to the optic lobes, units of the optic glomerular complex (OGC) and the reniform body (RB) send relays to the mushroom body columns [MB(Clm), magenta]. Boxed areas in the inset, show the locations of panels D-F. (D) Silver-stained calyx (Ca) associated with just one of four columns (Clm) is shown with the dense population of globuli cells (gc) that supply all four columns. (E) Golgi impregnation resolving the calyx (Ca) and three of the four mushroom body columns (Clm) originating from the globuli cell layer (gc). (F) Parallel fibers decorated by beaded or spiny arborizations indicative of pre- and postsynaptic sites (Strausfeld and Meinertzhagen, 1998) are a defining feature of insect mushroom bodies. Here parallel fibers in G. smithii (upper panel) are compared to those in the α′-lobe of Drosophila melanogaster (lower panel). (G) Regions along mushroom body columns in G. smithii (left) and the mushroom body lobes of the cockroach P. americana (right) show corresponding orthogonal networks of parallel fibers intercepted by the arborizations of afferent (input) neurons. (H) Parallel fibers intercepted by dendritic trees of output (efferent) neurons in a mushroom body column of G. smithii (left) and a lobe of P. americana (right). Scale bars: b, c, 100 µm; d-f, 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** 1. Density of dorsal cluster of globuli cells exceeds 3.0 × 106/mm3. 2. Distal calycal/domed (synonymous) neuropil. 3. Distal microglomeruli (in inset to 2,3). 4. Spiny globuli cell dendrites. 5. Clawed globuli cell dendrites. 6. Globuli cells lacking dendrites. 7. Parallel fibers. 8. Orthogonal networks. 9. Efferent dendritic trees intersecting columns/lobes. 10. Aminergic afferents. 11. Afferent/efferent processes partitioned in sequential domains. 12. GAD/GABAergic recurrent pathways. 13. Elevated expression of proteins required for learning and memory.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Globuli cell clusters shown green, lobe/columnar extension shown magenta. Abbreviations: LA, lamina; ME, medulla; LO, Lobula; LPR lateral protocerebrum; PB, protocerebral bridge; BU, lateral bulbs of the central complex; OL, olfactory lobes. Yellow lines connect corresponding locations. The eyestalks of N. oerstedii have been foreshortened.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B). Two successive Golgi-impregnated sections of the lateral protocerebrum show impregnated globuli cells (gc) with their converging neurites (at arrows) denoting the origin of columns (Clm). Calyces (Ca) are associated with just two of the four columns. One calyx is large, bilayered (A) with the deeper inner volume (B) giving rise to its column. The second calyx is very small (boxed area, panel B enlarged in inset upper right) and entirely separate from the larger calyx. Scale bar A, B: 100 µm.
+
+**Table 1.**
+ Matrix of characters 1–13 defining insect-type mushroom bodies.‘1’ denotes character presence, ‘0’ denotes character absence, and “– “denotes lack of data. Character list. 1. Density of dorsal cluster of globuli cells exceeds 3.0 × 106/mm3. 2. Distal calycal/domed (synonymous) neuropil. 3. Distal microglomeruli. 4. Spiny globuli cell dendrites. 5. Clawed globuli cell dendrites. 6. Globuli cells lacking dendrites. 7. Parallel fibers. 8. Orthogonal networks. 9. Efferent dendritic trees intersecting columns/lobes. 10. Aminergic afferents. 11. Afferent/efferent processes partitioned into domains. 12. GAD/GABAergic recurrent pathways. 13. Elevated expression of proteins required for learning and memory. Examples of characters. For character 1–11, see Figure 1—figure supplement 1; for example of character 12 see Figure 3B,C; for examples of character 13 see Figure 4 and Figure 5—figure supplements 1 and 2. Species list. Neopteran insects: Drosophila melanogaster, Periplaneta americana, Odonata (dragonflies, darters): Perithemis tenera, Libellula depressa, Aeschna sp.). Stomatopod crustaceans: Neogonodactylus oerstedii, Gonodactylus smithii. Decapod crustaceans: Alpheus bellulus, Stenopus hispidus, Procambarus clarkii, Coenobita clypeatus, Hemigrapsus (H. nudus and H. oregonensis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D. melanogaster</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>P. americana</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Odonata</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>–</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Stomatopoda</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A. bellulus</td>
+      <td>1</td>
+      <td>1</td>
+      <td>–</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>S. hispidus</td>
+      <td>1</td>
+      <td>1</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>C. clypeatus</td>
+      <td>1</td>
+      <td>1</td>
+      <td>–</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>–</td>
+      <td>1</td>
+      <td>–</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>P. clarkii</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>–</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hemigrapsus</td>
+      <td>0</td>
+      <td>1</td>
+      <td>–</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification of mushroom bodies in Stomatopoda
 
 In stomatopods, as in most stalk-eyed crustaceans, the brain’s lateral protocerebra are contained within the distal eyestalks (Figure 1C). These are exceptionally capacious in mantis shrimps due to the voluminous nested optic lobe neuropils, which serve the largest and most complex compound eyes yet described (Figure 1A). The eyestalk also accommodates elaborate neuropils that in the literature have been collectively referred to as the ‘medulla terminalis.’ These neuropils comprise the lateral protocerebrum, just as they do in insects (Figure 1C, Figure 1—figure supplement 2). In the mantis shrimp, the largest of these neuropils originates from a dorsal cell body cluster of about 170,000 (in N. oerstedii) minute and tightly clustered neuronal perikarya, which we here refer to as globuli cells. This population provides the neurons that form four columnar neuropils, each comprising thousands of parallel fibers. Only one of the four columns is surmounted by a large calyx-like neuropil (Figure 1D) composed of layers of dendritic arborizations. The four columns (Figure 1E), which extend latero-caudally, together demarcate the proximal margin of the eyestalk neuropil, near its junction with the eyestalk nerve (Figure 1C).
 
 Globuli cells provide one very large dome-like neuropil (here termed the calyx, indicated Ca in Figure 1D,E) from which one of the smaller columns originates (Figure 1—figure supplement 3A). Globuli cells also provide parallel fibers constituting three additional columns (Figure 1E; Figure 2B,C), one of which is equipped with a small calyx distally (Figure 1—figure supplement 3B). The two other columns lack distal dendrites entirely. Neurites from globuli cells converge at the origin of each column, as they do at the pedunculus (or initial stalk) of an insect mushroom body (Figure 1—figure supplement 3A,B). Each cell body neurite then increases in girth and extends for hundreds of microns as a thicker process decorated with varicosities and spines representing, respectively, pre- and postsynaptic sites (Strausfeld and Meinertzhagen, 1998). Like Kenyon cells in insect mushroom bodies, globuli cells in stomatopods lack a proper axon: each globuli cell’s parallel fiber serves as a local interneuron, corresponding in shape and decoration to the parallel fibers of the insect mushroom body lobes, exemplified by D. melanogaster (Figure 1F). And by comparison to the Drosophila mushroom body lobe, each parallel fiber is assumed to contribute to local computational circuits within its column (Cervantes-Sandoval et al., 2017). Comparing the columns of the stomatopod mushroom body and the mushroom body lobes of the cockroach Periplaneta americana (Figure 1G,H) further demonstrates that parallel fibers in both species are regularly intersected by the branched processes of efferent and afferent neurons. As in the insect mushroom body, in the stomatopod mushroom body orthogonally organized neurons and local circuits provided by parallel fibers (Figure 1H) offer many thousands of possible sensory associations (Heisenberg, 2003; Cassenaer and Laurent, 2007; Huerta et al., 2004; Aso et al., 2014a).
 
 In insects, the packing density of globuli cells associated with a mushroom body exceeds the packing density of neuronal cell bodies elsewhere in the brain. Our measurements show that the packing density of globuli cells supplying the stomatopod mushroom body is comparable to that of globuli cells supplying the mushroom bodies of insects, here exemplified by P. americana (Figure 2A). An important identifier of mushroom bodies in insects is the morphology of its Kenyon cells and their specializations; in particular, clawed specializations that partially wrap around large terminal boutons of sensory afferents in the calyces of flies and other insects (Yasuyama et al., 2002). These are also identified in stomatopods, but only on dendrites contributing to the smaller of the two calyces (Figure 2D). In the larger calyx, spined dendritic processes correspond to the spined dendrites of the mushroom body calyx of P. americana (Figure 2A). However, the stomatopod calyx is deeper than is an insect calyx and is composed of four distinct levels, the second of which is characterized by hundreds of thousands of synaptic clusters comparable to microglomeruli identified in the calyces of insects (Figure 3A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig2-v1.jpg)
+
+**Figure 2.:** (A1, A2 upper panels) Globuli cell domains reconstructed from serial sections from Neogonodactylus oerstedii (A1) and Periplaneta americana (A2). (A1, A2 middle panels): Globuli cell packing (reduced-silver-stained sections). (A1, A2 lower panels) Golgi impregnations showing corresponding neuronal organization in calyces. (B) Three-dimensional reconstruction from serial sections of N. oerstedii, stained by reduced silver, demonstrates a mushroom body consisting of a globuli cell layer (gc, green), a calyx (Ca, cyan) and four distinct columns (Clm 1–4, purple, magenta, blue, orange), with Clm 1 accompanied by distal branch (Clm 1*). (C) Golgi impregnation of the columns, each defined by its characteristic arrangement of parallel fibers. (D) Clawed specializations (arrowed) are mushroom body identifiers found on dendrites arising distally from parallel fibers. These are shown here in the stomatopod (upper panel), cockroach (middle panel) and honeybee (lower panel). (E, F) The dense spiny processes of efferent (output) neurons form discrete domains along the length of the columns. Paired corresponding arrangements are here demonstrated from the stomatopod N. oerstedii (left in each pair) and P. americana. Scale bars: A, panels, second row, 25 µm; lower panels, 20 µm; C, 100 µm; D, scales in all panels, 10 µm; E-F, all scales = 50 µm.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig3-v1.jpg)
 
@@ -62,17 +253,33 @@ To summarize, the combination of neuroanatomical characters that distinguish the
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig4-v1.jpg)
 
-**Figure 4.:** Drosophila learning and memory.(A) Reconstruction from reduced-silver serial sections of the mushroom body of Neogonodactylus oerstedii (globuli cell layer, green; calyx, cyan; columns are shown purple, magenta, blue, orange). Brackets indicate panels B-E showing corresponding regions of the columns. (B–E) Mushroom body columns in N. oerstedii labeled by anti-DC0 in magenta (B, C). (D) Labeling for Leo (magenta). (E) Labeling for pCaMKII (magenta). (F) Mushroom body lobes of Periplaneta americana labeled with antibodies against DC0 in magenta and showing globuli cells (gc), the underlying calyx (Ca) and vertical and medial lobes (V-Lob, M-Lob). In panels B-F, globuli cells are labeled green with the nucleic acid stain, Syto-13; antibodies against α-tubulin (cyan) reveal background structure. Scale bars: 100 µm.
+**Figure 4.:** (A) Reconstruction from reduced-silver serial sections of the mushroom body of Neogonodactylus oerstedii (globuli cell layer, green; calyx, cyan; columns are shown purple, magenta, blue, orange). Brackets indicate panels B-E showing corresponding regions of the columns. (B–E) Mushroom body columns in N. oerstedii labeled by anti-DC0 in magenta (B, C). (D) Labeling for Leo (magenta). (E) Labeling for pCaMKII (magenta). (F) Mushroom body lobes of Periplaneta americana labeled with antibodies against DC0 in magenta and showing globuli cells (gc), the underlying calyx (Ca) and vertical and medial lobes (V-Lob, M-Lob). In panels B-F, globuli cells are labeled green with the nucleic acid stain, Syto-13; antibodies against α-tubulin (cyan) reveal background structure. Scale bars: 100 µm.
 
-## Divergent evolution of the mushroom bodies
+### Divergent evolution of the mushroom bodies
 
 Mapping brain morphologies onto a representative genomic phylogeny of Pancrustacea (Oakley et al., 2013) demonstrates the absence of mushroom bodies in all taxa intervening between the clade Hexapoda+Remipedia and Eumalacostraca (Figure 5A). To examine whether mushroom bodies may have evolved divergent arrangements within Eumalacostraca (Figure 5A), we analyzed five species of more recently evolved groups of decapods (Shen et al., 2013): Caridea (including snapping or pistol shrimps), Stenopodidea (cleaner shrimps), Astacidea (including lobsters and crayfish), Anomura (land hermit crabs), and Brachyura (true crabs; Figure 5B). Alpheid caridids (‘pistol shrimps’) are the only group known to have evolved eusociality. Stenopid (‘cleaner shrimps’) hemiellipsoid bodies have been previously described, published images suggesting a short extension from a large hemiellipsoid body (Sullivan and Beltz, 2004). Comparing the DC0 immunocytology of these taxa with that of the Drosophila mushroom bodies (Figure 5—figure supplement 1A) identifies DC0-positive structures in two of the investigated species. In the banded coral shrimp Stenopus hispidus (Stenopodidea), anti-DC0 resolves a pedestal-like extension from its domed hemiellipsoid body (Figure 5—figure supplement 1B), which is divided into three distinct territories. Anti-DC0 also reveals prominent mushroom body-like centers in Alpheus bellulus (Caridea). Golgi impregnations of A. bellulus show these prominently in the lateral protocerebrum where they are of comparable size to those of social or parasitoid hymenopteran insects (Figure 5—figure supplement 1C,D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig5-v1.jpg)
+
+**Figure 5.:** (A) Molecular phylogenetics resolves Hexapoda more closely related to Remipedia than either is to Malacostraca (see Oakley et al., 2013). In insects and stomatopods mushroom bodies share all the key characters identified in this study, and the brains of these two groups possess other common organization: three nested optic neuropils, fusion of three brain neuromeres – all identified as a ground pattern in the lower Cambrian euarthropod Fuxianhuia protensa (Ma et al., 2012) – as well as corresponding central complexes. These features define the ancestral ground pattern of the pancrustacean brain. In contrast, all other brains have evolved divergent modifications including reduction and loss of some or all of these ancestral components. (B) Phyletic positions of five eumalacostracan sister groups to Stomatopoda showing modifications of the ancestral columnar mushroom body present in Stomatopoda. In representative species belonging to these lineages, column-like extensions from globuli cells have become enormously enlarged (Alpheoidea), greatly reduced but still indicated by DC0 immunoreactivity (Stenopodidea), subsumed as discrete layers within the hemiellipsoid body (Anomura), or lost entirely (Brachyura and Astacidea). Confocal images of each example, comparing these with the lobed organization of the Drosophila mushroom body, are shown in Figure 5—figure supplements 1 and 2. In Stenopodidea and crownward, the calyx observed in Stomatopoda assumes the morphology of a hemiellipsoid body.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Vertical lobes (Lob) of the Drosophila mushroom bodies. (B) The single DC0 immunoreactive lobe originating from the modified calyx of the cleaner shrimp Stenopus hispidus. The calyx is synonymous with the hemiellipsoid body described by Sullivan and Beltz (Montgomery et al., 2016), here shown at a level that depicts their ‘b’ and ‘c’ neuropils (nb, nc). The lobe corresponds to their ‘lateral protocerebral complex’ (ref 17, Figure 3D). (C) Large convoluted lobes of the mushroom body of the pistol shrimp Alpheus bellulus. As in other pistol shrimps, the visual system is greatly reduced and the lateral protocerebrum is situated entirely within the head capsule. (D) Alpheus bellulus. Golgi-impregnation of some of the calyx and parallel fibers of the mushroom body lobes. Anti-DC0 is labeled in magenta, cell bodies are labeled in green with the nucleic acid stain Syto-13, and anti-α-tubulin is labeled in cyan. Abbreviations as for Figure 1. Scale bars: A, 50 µm; B, C, D. 100 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) In the land hermit crab Coenobita clypeatus (Anomura) elevated expression of DC0 resolves strata in the hemiellipsoid body (HB) containing orthogonal networks corresponding to those of insect mushroom body lobes (Brown and Wolff, 2012; Wolff et al., 2012). (B) In the shore crab Hemigrapsus nudus the hemiellipsoid body lacks elevated DC0 although an axon tract from the lobula (LO) shows clear DC0 immunoreactivity. (C) In the freshwater crayfish Procambarus clarkii the subdivided hemiellipsoid body shows no elevated DC0 although structures distal to it, corresponding to the reniform body show moderate expression. Scale bars: A, C 100 µm; B 50 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/29889/elife-29889-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Fossil brain of the lower Cambrian stem arthropod Fuxianhuia protensa. (B) Centers common to Stomatopoda and Hexapoda superimposed onto the brain profile of F. protensa. (C) Silver-stained brain of the extant coleopteran Chauliognathus profundus, shown at the same magnification as that of panel A. (D) Schematic of the brain of C. profundus. The brain of F. protensa preserved as a carbon film (Ma et al., 2015) corresponds to that of C. profundus in comprising 3 fused brain segments, which are indicated by, (1) an enlarged forebrain attached to 3 nested optic neuropils, and two peripheral sensory nerve trunks, (2) to the antennae and (3) post-antennal appendage (not shown at this level). The lateral protocerebrum (LP) in the stem arthropod extends into the eyestalk, suggesting that is the plesiomorphic condition, whereas the insect protocerebrum’s location in the head capsule is the derived condition.
 
 The land hermit crab C. clypeatus (Anomura) is distinct: its hemiellipsoid body consists of an enormous domed neuropil that is characterized by concentrically arranged DC0- and pCaMKII-immunoreactive layers (Figure 5—figure supplement 2A). Each is a flat sheet comprising a planar arrangement of globuli cell processes that are orthogonally intersected by the arborizations of input and output neurons. Although these arrangements are peculiar to land hermit crabs, they demonstrate that the network organization within each layer corresponds to the three-dimensional networks that are defined by the sequential domains of input and output arborizations that extend across parallel fibers in the insect mushroom body (Brown and Wolff, 2012; Wolff et al., 2012). Only in one group outside Malacostraca, is there a neuropil at all reminiscent of a mushroom body. This is in Cephalocarida, where an allantoid center, occupying an otherwise drastically reduced protocerebrum, receives inputs from the olfactory lobes on the same side of the brain, as occurs in insects (Stegner and Richter, 2011).
 
 In crayfish (Astacidea), the dorsal globuli cell cluster provides a prominent domed center in the lateral protocerebrum. However this hemiellipsoid body does not show discernable levels of the proteins involved in Drosophila learning and memory (Figure 5—figure supplement 2C). The hemiellipsoid bodies of the examined varunid crabs (Brachyura) are inconspicuous and they too lack elevated levels of those proteins (Figure 5—figure supplement 2B). Together, with other neuroanatomical criteria (Table 1), these observations suggest that more recently evolved Eumalacostraca show a reduction or complete loss of mushroom body-like lobes (columns), accompanied by accentuation and diversification of domed neuropils that have been historically referred to as hemiellipsoid bodies (Figure 5B).
 
-## The reniform body
+### The reniform body
 
 Other elongated centers exist within eyestalk neuropils. One that is conspicuous in Stomatopoda, and which has an equivalent in the Varunidae (shore crabs belonging to Brachycera), offers an interesting counterpoint to the identification of the stomatopod mushroom body. This is the reniform body, a prominent compound neuropil located near the inner margin of the optic lobes (RB in Figure 1C), which in N. oerstedii arises from a dense cluster of about a thousand cell bodies. These provide a pedestal-like arrangement of smooth parallel neurites supplying four domains: an initial zone and a lateral, distal, and proximal zone. It is the latter three that define the center’s characteristic kidney shape.
 
@@ -84,7 +291,7 @@ All four zones contain the dendritic processes of collaterals branching from the
 
 ## Discussion
 
-## Mushroom bodies characterize insects and stomatopod crustaceans
+### Mushroom bodies characterize insects and stomatopod crustaceans
 
 It is broadly accepted that insects originated from crustaceans. Molecular phylogenies favor blind, morphologically simple anchialine crustaceans, called remipedes as the closest relatives of the insects (Regier et al., 2005; Oakley et al., 2013; von Reumont et al., 2012; Schwentner et al., 2017). This view conflicts with neural cladistics, which resolves insect brain organization closely corresponding to that of phylogenetically distant malacostracan crustaceans (e.g., Decapoda) (Strausfeld and Andrew, 2011). One source of conflict is that molecular phylogenies cannot provide reliable information about morphological changes that have occurred since related groups diverged. It is expected that through the course of evolution there will have arisen both genetic and structural novelties, as well as reversals and losses (Chen et al., 2013; Jenner, 2004), the latter impossible to code in relational trees based on morphological characters (Strausfeld and Andrew, 2011). For example, branchiopod crustaceans, closely related to both hexapods and remipedes, lack most features that define the brains of those two groups, and possess only a pair of nested optic neuropils (Figure 5A). Cephalocarids, a lineage closely related to Hexapoda and Remipedia, are also blind crustaceans, whose brains comprise predominantly olfactory centers and lack other cerebral neuropils common to hexapods and malacostracans (Stegner and Richter, 2011). Compared with Branchiopoda and Cephalocarida, the Remipedia midbrain shares more neural features with Malacostraca than it does with Hexapoda (Fanenbruck et al., 2004).
 
@@ -94,15 +301,15 @@ A comparable arrangement pertains to insects, with a few notable differences. Fe
 
 To summarize, the combination of neuroanatomical characters that distinguish the insect mushroom body also distinguishes the stomatopod mushroom body (Table 1).
 
-## The identity of the hemiellipsoid body
+### The identity of the hemiellipsoid body
 
 That hemiellipsoid bodies of only the closest eumalacostracan relatives of stomatopods possess some, but not all, mushroom body characters suggests that the hemiellipsoid body has derived from an ancestral mushroom body. Our analysis of five species of crown group Eumalacostraca show that only Alpheoidea, Stenopodidea (Table 1), and a single group of anomurans, the land hermit crabs, possess some mushroom body characters. There has been a reduction or complete loss of mushroom body columns in Anomura, Astacidea and Brachyura accompanied by an apparent elaboration of the ancestral calyx to provide a variety of morphologies of domed hemiellipsoid bodies, each characteristic of a genus (Figure 5B). A central debate has been whether hemiellipsoid bodies, which support multisensory functions comparable to those supported by insect mushroom bodies, can be viewed as their homologues or as crustacean apomorphies. The abundance of divergent hemiellipsoid body morphologies described by Sullivan and Beltz across an even broader range of taxa (Sullivan and Beltz, 2004; Sullivan and Beltz, 2005), and their observations of taxon-specific innervation by the olfactory tract, support an interpretation of the hemiellipsoid body as a highly divergent mushroom body calyx, a suggestion originally entertained by a remarkable study by Giuseppe Bellonci in 1882 (Bellonci, 1882).
 
-## Visual habituation centers are not mushroom bodies
+### Visual habituation centers are not mushroom bodies
 
 Reported activity in an elongated volume of neuropil situated close to the inner margin of the lobula of the varunid crab Neohelice granulata (Maza et al., 2016) suggested its identity as a learning and memory center. Recordings from this center showed long-term habituation in response to repetitive visual stimuli. It was proposed that this center is homologous to the insect mushroom body on the basis of a cluster of small cell bodies located ventro-medially in the eyestalk neuropil providing a columnar domain showing elevated p-CAMKII-α (Maza et al., 2016). Two territories populated by branched processes were referred to as vertical and medial lobes, adopting terms for insect mushroom body lobes. We have been unable to reconcile those neuroanatomical observations with characters defining the insect and stomatopod mushroom bodies. Parallel fibers comprising pedestal-like structures (Figure 1E in Maza et al., 2016) are shown as smooth, lacking spines and varicosities. They also lack efferent and afferent domains that would provide orthogonal networks typical of mushroom bodies. Dendrites described as clawed (Maza et al., 2016, Figure 1F) appear to be afferent terminals. Immunoreactivity to anti-pCaMKII shows elevated expression tightly constrained to the region of cell body neurites, after which its levels diminish in unspecific neuropil. In all respects, the described neuropil in N. granulata corresponds to the Hemigrapsus reniform body (Figure 6F–I). Although more elaborate in Stomatopoda (Figure 6A–E), its reniform body neuropils unambiguously correspond to those attributed to the N. granulata habituation center and to H. nudus. We are unable to show evidence for any lobed center that meets the relevant criteria for a mushroom body in varunids and suggest that the reniform body is an intriguing visual association center that may be unique to eumalacostracan crustaceans. Nothing comparable has yet been identified in the Drosophila lateral protocerebrum or in that of any other insect.
 
-## Are mushroom bodies a key indicator of pancrustacean ancestry?
+### Are mushroom bodies a key indicator of pancrustacean ancestry?
 
 Our survey across Pancrustacea (Crustacea+Hexapoda) identifies mushroom bodies in stomatopods and insects. No other eumalacostracan crustacean outside Stomatopoda has yet provided clear evidence of an insect-like mushroom body.
 
@@ -110,7 +317,7 @@ Comparisons across this pancrustacean phylogeny (Figure 5A) thus suggest two int
 
 Attendant to such considerations is that many elements of the ancestral ground pattern have been lost or drastically reduced in numerous crustacean lineages, even to just a few neurons such as in Cirripedia and Cephalocarida (Callaway and Stuart, 1999). Simplification from genealogically ancient complexity is common in nature at many phylogenetic levels (Collin et al., 2009). It should come as no surprise to find examples of simplification or independent retentions of past complexity in the neuromorphological landscape.
 
-## Are insect and stomatopod mushroom bodies homologous or convergent?
+### Are insect and stomatopod mushroom bodies homologous or convergent?
 
 The demonstration that phenotypically identical organs in widely separated species can be ascribed to convergent genomic evolution (Pankey et al., 2014) suggests caution in claiming homology of identical phenotypes. Thus, although corresponding morphologies in stomatopods and insects suggest mushroom body homology, transcriptomic evaluation must, eventually, be the arbiter of whether these centers indeed correspond genealogically. At present, the strongest argument against is that the sister group of all hexapods (Remipedia) and the sister group of all Malacostracans (Leptostraca) possess simple hemiellipsoid bodies, not mushroom bodies (Fanenbruck et al., 2004; Kenning et al., 2013).
 
@@ -122,11 +329,11 @@ We are obliged to conclude that there is, as yet, no definitive conclusion. Phen
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 One hundred and eight mature stomatopods (both sexes), Neogonodactylus oerstedii, were obtained commercially from waters off the coast of Florida. Forty-seven Gonodactylus smithii were obtained from designated areas overseen by the Lizard Island Research Station, Australia (GBRMPA Permit no. G12/35005.1, Fisheries Act no. 140763). Five Stenopus hispidus (Caribbean) and 25 Alpheus bellulus (Caribbean) were obtained from LiveAquaria.com, Rhinelander, WI, USA. Animals were maintained isolated in small perforated transparent ‘Ziplock’ containers immersed in running artificial seawater. Drosophila melanogaster and Periplaneta americana were reared in laboratory cultures at the University of Arizona, Tucson and Washington University, Seattle. Five specimens of Coenobita clypeatus were purchased locally and maintained in a vivarium. Thirty Hemigrapsus nudus and H. oregonensis were collected from designated sites on San Juan Island, WA, USA. Six Procambarus clarkii were purchased from domestic suppliers (Carolina Biological Supply Company, Burlington, NC). Golgi impregnations were performed on 72 N. oerstedii and 40 G. smithii. Each immunocytological method was performed identically on at least 3 individuals. Bodian and Golgi silver staining was performed on 6 N. oerstedii. Cell body counts were obtained from two mushrooms bodies from N. oerstedii and P. americana.
 
-## Antibodies and immunocytology
+### Antibodies and immunocytology
 
 A monoclonal antiserum against α-tubulin (DSHB Cat# 12G10 anti-alpha-tubulin, RRID:AB_1157911) used at a concentration of 1:100, was obtained from the Developmental Studies Hybridoma Bank developed under the auspices of the NICHD and maintained by the University of Iowa, Department of Biology (Iowa City, IA). Monoclonal antiserum against synapsin (anti-SYNORF1, DSHB Cat# 3C11RRID:AB_528479) obtained from the same source were used at a concentration of 1:100. Polyclonal antiserum raised against serotonin (ImmunoStar, Hudson, WI, Cat# 22941, RRID:AB_572268) was used at a concentration of 1:500. Anti-DC0 (D. Kalderon, Columbia University; New York; USA Cat# DC0, RRID:AB_2314291), a generous gift from Dr. Daniel Kalderon, was used at a concentration of 1:250 for immunohistochemistry. Anti-Leonardo, a generous gift from Dr. Ronald Davis was used at a concentration of 1:500 and anti-pCaMKII (Santa Cruz Biotechnology Cat# sc-12886-R, RRID:AB_2067915) was used at a concentration of 1:100 for immunohistochemistry. Each antiserum was from aliquots demonstrated for specific affinity to Drosophila mushroom body lobes. As pioneered by studies on remipede brains (Stemme et al., 2016), a polyclonal antibody raised against of the synthesizing enzyme glutamic acid decarboxylase (GAD) (Sigma-Aldrich Cat# G5163, RRID:AB_477019) was used to detect putative GABAergic neurons. A monoclonal antibody against tyrosine hydroxylase (TH) raised in rats (ImmunoStar, Hudson, WI Cat# 22941, RRID:AB_572268) which had been previously shown to specifically label dopaminergic neurons in the lobes of insect mushroom bodies was used on intact stomatopod and cockroach brains.
 
@@ -136,26 +343,26 @@ For labeling F-actin, preparations were left to incubate in phalloidin conjugate
 
 For tyrosine hydroxylase (TH) immunocytology, eyestalks were fixed at 4°C for 30 min in 0.01M phosphate buffered 4% paraformaldehyde containing 10% sucrose. The tissue was then dissected free, and whole eyestalk neuropils were soaked for 2 hr in PBS containing 1% Triton X-100, before being transferred to a vial containing 1% PBS-TX and 5% normal donkey serum (Jackson ImmunoResearch Labs Cat# 017-000-121, RRID:AB_2337258). After 2 hr, primary antibody diluted 1:250 was added to the container, which was left on a slow agitating shaker for 48 hr at room temperature. Tissue was then washed several times in 0.5% PBS-TX over 3 hr before treatment with Cy5 conjugated IgGs, as above. Tests using an antiserum against dopamine (Polyclonal Rabbit anti Dopamine (Abcam Cat# ab8888, RRID:AB_306841) resolved identical neurons but with poor resolution of fine processes and twigs, hence the exclusive use of TH for this study. Secondary antibody treatment lasted for 24 hr followed by several washes in PBS-TX, cleared in glycerol and then mounting in welled glass slides under glycerol for confocal microscopy. Tissue was subjected to the two cycle microwave treatment described above once every 24 hr while the tissue was incubating in either primary or secondary antibody. When labeling tissue with a second primary antibody, such a serotonin, in conjunction with TH, after whole tissue labeling the specimen was again fixed as if it were fresh, for an additional 12 hr at 4°C in 4% paraformaldehyde in PBS. The next day, the tissue was embedded and sectioned as described above, and subjected to the relevant immunohistochemical treatment.
 
-## Reduced silver staining
+### Reduced silver staining
 
 Bodian's original (Bodian, 1936) method was used on brains fixed in AAF (16 ml 80% ethanol, 1 ml glacial acetic acid, 3 ml 37% formaldehyde), dehydrated, cleared in terpineol, and embedded in Paraplast Plus (Sherwood Medical, St. Louis, MO).
 
-## Golgi impregnations
+### Golgi impregnations
 
 Stomatopods were briefly immobilized by covering with granulated ice. The head and eyestalks were removed and neural tissue dissected and desheathed in 1 part 25% glutaraldehyde and 5 parts 2.5% potassium dichromate adjusted with sucrose (Thoen et al., 2017). After a suitable incubation period, tissue was washed in potassium dichromate before immersion in a 0.01% osmium tetroxide carried in 2.5% potassium dichromate for 12 hr before a 24 hr immersion in 0.75% silver nitrate. These last two steps were then repeated before embedding tissue in Durcupan plastic and serial sectioning at 40 µm. Images through depths of 50–100 µm were obtained using serial step-through focusing and reconstitution using Adobe Photoshop.
 
-## Imaging and reconstruction
+### Imaging and reconstruction
 
 Immunohistological images were collected using a Zeiss Pascal or 880 confocal microscope. Light microscopy images were obtained with a Leitz Orthoplan microscope. Step focus series of stitched images were reconstructed using the software Helicon Focus (Helicon Soft, Kharkov, Ukraine; RRID:SCR_014462). Three-dimensional reconstruction of the hemiellipsoid body and its lobes employed 220 stacked 12 µm-thick serial silver-stained and interpolated profiles processed using ImageJ (RRID:SCR_003070). Sections were prealigned with reference to 5 fiducial landmarks provided by non-neural elements, such as blood vessels and neural sheath extending vertically through the section series.
 
-## Globuli cell densities
+### Globuli cell densities
 
 Bodian-stained brains of N. oerstedii and P. americana were used for estimating densities of globuli cells, which provide mushroom body parallel fibers. Serial photographs at 1 µm intervals through a depth of 10 µm captured images of perikarya, their nuclei and nucleoli. Counts of the latter were made within 50 × 50 × 10 (25,000 µm3) volumes. Averages were calculated for globuli cell packing densities within 1 mm3, arriving at 3.48 × 106/mm3 for N. oerstedii and 4.8 × 106/mm3 for P. americana. The total volume of the globuli cell population was calculated from serial reduced-silver sections. For N. oerstedii images were taken at 1173 × 846 pixels at a resolution of 0.5068 pixels per micron. Voxel size was calculated as 1.9730 × 1.9730 µm3, with 12-µm-thick sections, resulting in 6.08 pixels per z-level. P. americana was imaged at 2080 × 1542 pixels at a resolution of 2.02 pixels per micron. Voxel size was calculated as 0.4950 µm3 12-µm-thick sections resulting in 24.24 pixels per z-level. Sections were aligned as described above and the regions containing the globuli cell population were segmented using the TrakEM2 plugin in Fiji (Cardona et al., 2012; Schindelin et al., 2012) using the TrakEM2 measuring tool to calculate the total volume.
 
-## Reconstruction of the lower Cambrian stem arthropod brain
+### Reconstruction of the lower Cambrian stem arthropod brain
 
 Depiction of the fossilized brain of Fuxianhuia protensa (Figure S6) was obtained by superimposing the imaged brain of specimen YKLP 11357 onto the montaged part and counterpart of YKLP 15006. Original data for these specimens is published in Ma et al., 2015.
 
-## Terminology
+### Terminology
 
 Terms and abbreviations follow the recommendations of the insect brain consortium that has devised terms applicable to both insect and crustacean (Pancrustacea) central nervous systems. These are provided and comprehensively explained in Ito et al. (2014).

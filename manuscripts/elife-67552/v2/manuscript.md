@@ -30,33 +30,65 @@ To probe the in vivo mechanism and understand the impact of error-prone polymera
 
 ## Results
 
-## Monitoring mechanisms of DNA lesion repair in non-replicating bacteria
+### Monitoring mechanisms of DNA lesion repair in non-replicating bacteria
 
 To test whether non-replicating cells can indeed engage in lesion repair, and understand the in vivo mechanism of such activity, we used Caulobacter crescentus swarmer cells as our model system. We regulated the state of replication so as to ensure that swarmer cells, with a single chromosome, do not initiate replication (and hence prevent possibility of recombination-based repair) by utilizing a previously described system to control the expression of the replication initiation regulator, dnaA, from an isopropyl β-D-1-thiogalactopyranoside (IPTG) inducible promoter (Badrinarayanan et al., 2015). In our experimental setup, we first depleted cells of DnaA for one generation of growth, followed by synchronization to isolate non-replicating swarmer cells (Figure 1A, top panel). Flow cytometry profiles of cells confirmed the presence of a single chromosome during the course of the entire experiment (Figure 1A, bottom panel).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig1-v2.jpg)
+
+**Figure 1.:** (A) Above: Schematic of experimental setup used to isolate non-replicating Caulobacter swarmer cells to monitor DNA lesion repair and tolerance independent of ongoing replication. Cells were treated with DNA damage (30 min mitomycin C [MMC] or UV at specified doses), after which damage was removed and cells were allowed to grow in fresh media (damage recovery), without ongoing replication. Below: Flow cytometry profiles show DNA content in an asynchronous population (i), synchronized non-replicating swarmer cells before (ii) and after DNA damage recovery (iii). (B) Representative images of Caulobacter cells with fluorescently-tagged replisome components (SSB-YFP, HolB-YFP, DnaN-YFP, or DnaE-mNG) in replicating or non-replicating conditions, without DNA damage (scale bar is 2 µm here and in all other images).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Growth of fluorescently tagged replisome strains with or without (control) mitomycin C (MMC) damage. For reference, growth of wild type (no tag) and recA deletion strains is also shown (representative image of one experiment from three independent repeats). (B) Growth of fluorescently-tagged replisome strains with or without (control) UV damage. For reference, growth of wild type (no tag) and recA deletion strains is also shown (representative image of one experiment from three independent repeats). (C) Relative position of fluorescently-tagged replisome components in Caulobacter cells during one round of replication (no damage). Localization of SSB-YFP, HolB-YFP, DnaN-YFP, or DnaE-mNG was tracked every 10 min using time-lapse imaging. A focus tended to localize at one cell pole at initiation and proceeded towards the opposite cell pole as replication progressed (n = 25, solid line represents mean and shaded region represents the upper and lower limits at specific time points).
+
 Given the requirement of the β-clamp for activity of specialized polymerases and evidence for damage-dependent changes in localization of replisome components such as SSB in actively replicating E. coli (Chang et al., 2019; Henrikus et al., 2018; Soubry et al., 2019; Thrall et al., 2017), we generated fluorescent fusions to the Caulobacter β-clamp (DnaN), component of the clamp-loader complex (HolB), the replicative polymerase PolIII (DnaE), and single-strand DNA binding protein (SSB) (using previously described approaches in Caulobacter [Aakre et al., 2013; Collier and Shapiro, 2009]; and 'Materials and methods') in order to visualize them in non-replicating swarmers. These fusions did not perturb the function of the proteins as cells displayed wild type growth dynamics in steady-state conditions (Figure 1—figure supplement 1A and B ‘control’). They also did not show increased sensitivity to DNA damage treatment via MMC or UV (Figure 1—figure supplement 1A and B). The fusion proteins localized on DNA in actively replicating cells (Figure 1B, +replication), and as anticipated, their localizations gradually shifted from one pole to the other within one cycle of DNA replication (Figure 1—figure supplement 1C). These observations are in line with previous reports of replisome dynamics in several bacterial systems including Caulobacter crescentus, Bacillus subtilis, and E. coli (Aakre et al., 2013; Collier and Shapiro, 2009; Jensen et al., 2001; Lemon and Grossman, 1998; Mangiameli et al., 2017; Reyes-Lamothe et al., 2008). In contrast to actively replicating cells, replication-inhibited swarmer cells were devoid of replisome foci (Figure 1B), consistent with the idea that the localization of replisome components is indicative of active DNA replication.
 
-## Replisome components are recruited to damaged DNA in non-replicating Caulobacter swarmer cells
+### Replisome components are recruited to damaged DNA in non-replicating Caulobacter swarmer cells
 
 Using the above described system, we treated non-replicating Caulobacter swarmer cells with mitomycin C (MMC) to induce DNA lesions and followed DNA damage recovery via live-cell imaging to track dynamics of the β-clamp and other replisome components (Figure 1A). MMC is a naturally produced antibiotic that acts predominantly on the guanine residue of DNA, making three major forms of damage: mono-adducts, intra-strand cross-links, and inter-strand cross-links (Bargonetti et al., 2010). In case of Caulobacter, it is thought that DnaE2 preferentially acts on MMC-induced damage as all mutagenesis associated with MMC treatment is mediated via action of this specialized polymerase; in absence of the polymerase, cells show high sensitivity to MMC treatment (Galhardo et al., 2005). To determine the range of MMC concentrations for this study, we first assessed the viable cell count for a steady-state population of wild type and ∆dnaE2 cells across increasing concentrations of MMC treatment (0.125–2 µg/ml). We focused on a treatment range where DnaE2 essentiality was observed (Figure 2—figure supplement 1A) and TLS-dependent mutagenesis has been previously reported (Galhardo et al., 2005).
 
 We then treated non-replicating swarmer cells with the specified doses of MMC. We found that DNA damage treatment resulted in the formation of β-clamp foci in non-replicating cells (Figure 2A–B). This was found to be the case for other replisome components as well (Figure 2A–B). The percentage of cells with damage-induced β-clamp foci increased with increasing doses of MMC. At 0.125 µg/ml MMC treatment, 9% cells had β-clamp foci, while at higher doses of 0.75 µg/ml MMC, foci were observed in 59% cells (Figure 4—figure supplement 1C). To further characterize the dynamics of these localizations during the course of damage recovery, we released MMC-treated non-replicating swarmers into fresh media without damage and followed the localization of replisome components over time. We maintained the block on replication initiation, thus ensuring that cells carried only a single non-replicating chromosome during the course of the experiment (Figure 1A). Consistent with the possibility of dissociation during recovery, we found that percentage of cells with DnaN localizations gradually decreased with time (Figure 2C) and across all doses of damage tested (Figure 4—figure supplement 1C). For example, after 30 min of 0.5 µg/ml MMC treatment, 52% cells on average had DnaN localization and at 90 min after damage removal, the number reduced to 30%. This pattern of localization after damage treatment, followed by reduction in percentage of cells with foci during recovery was also observed in the case of SSB, HolB, and DnaE (Figure 2D). Interestingly, we noticed that cells had more SSB localizations on average than DnaN. 14% cells had ≥2 DnaN foci after MMC treatment, while 37% cells harbored ≥2 SSB localizations. These numbers reduced with increasing time of recovery (Figure 2D). Assessment of the extent of colocalization between DnaN and SSB further showed that 90% of DnaN foci colocalized with SSB (with distance of a DnaN focus from the nearest SSB localization being within 300 nm), while only 51% of SSB foci colocalized with DnaN (Figure 2—figure supplement 1B and C), suggesting that not all SSB may be associated with the β-clamp or that SSB could precede β-clamp localization.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative images of non-replicating swarmer cells with fluorescently tagged replisome components (SSB-YFP, HolB-YFP, DnaN-YFP, or DnaE-mNG) with (+MMC) or without (no damage) 30 min of treatment with MMC. (B) Percentage cells with SSB, HolB, DnaN, or DnaE localization (foci) in non-replicating swarmers with (+) or without (-) MMC treatment (n ≥ 324 cells, three independent repeats). Dashed line represents median here and in all other graphs. (C) Percentage swarmer cells with 0, 1, or ≥2 DnaN foci at 0, 30, 60, and 90 min after damage removal (recovery) (n ≥ 476 cells, three independent repeats). (D) Percentage swarmer cells with 0, 1, or ≥2 foci of SSB, HolB, or DnaE at 0 and 90 min after damage removal (recovery) (n ≥ 324 cells, three independent repeats).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Survival of wild type, ∆dnaE2, and ∆recA strains under different doses of mitomycin C (MMC) (mean and SD from three independent experiments). Shaded region indicates the concentrations used for experiments in this study. (B) Representative images of swarmer cells expressing DnaN-mCherry and SSB-GFP with or without MMC treatment (scale bar is 2 µm here and in all other images). (C) Distance of a DnaN focus from the nearest SSB focus was measured and cumulative frequency distribution is plotted (solid line). Dotted line is the distribution of distance between the DnaN focus and any random position inside the cell. Inset: Percentage colocalization for DnaN with SSB and vice versa is provided (mean and SD from three independent repeats). (D) Survival of wild type, ∆dnaE2, and ∆recA strains under different doses of UV (mean and SD from three independent experiments). Shaded region indicates the concentrations used for experiments in this study. (E) Representative images of swarmer cells expressing SSB-YFP, HolB-YFP, DnaN-YFP, or DnaE-mNG with or without (no damage) UV treatment. (F) Percentage wild type swarmer cells with 0, 1, or ≥2 foci of DnaN at 0 and 90 min after DNA damage recovery from 75 J/m2 or 150 J/m2 of UV (n ≥ 322 cells, three independent repeats). (G) Percentage wild type swarmer cells with 0, 1, or ≥2 foci of SSB, HolB, or DnaE at 0 and 90 min after DNA damage recovery from 75 J/m2 of UV (n ≥ 334 cells, three independent repeats).
+
 We asked whether similar dynamics of replication machinery components were observed in the presence of a different lesion-inducing agent as well. For this, we treated cells with sub-inhibitory doses of UV radiation (Galhardo et al., 2005 and Figure 2—figure supplement 1D). Exposure of cells to two doses of UV damage (75 and 150 J/m2) also resulted localization and subsequent reduction in percentage of cells with replisome foci during recovery (Figure 2—figure supplement 1E,F,G). Taken together, these data support the idea that SSB, along with components of the PolIIIHE, including the clamp-loader, β-clamp, and the replicative polymerase, associates with DNA during damage even in the absence of ongoing replication. Decrease in localizations over time could be indicative of potential repair in non-replicating cells.
 
-## Nucleotide excision repair (NER) generates long ssDNA gaps for localization of replisome components in non-replicating cells
+### Nucleotide excision repair (NER) generates long ssDNA gaps for localization of replisome components in non-replicating cells
 
 How do replisome components localize in non-replicating cells? SSB foci under these conditions indicate the presence of ssDNA stretches long enough to accommodate SSB tetramers (30 nt or more) (Bell et al., 2015; Lohman and Ferrari, 1994). In replicating cells, ssDNA tracts are thought to be generated as a result of helicase activity that continues to unwind double-stranded DNA ahead of the replisome that has encountered a lesion (Belle et al., 2007). It is unclear how such tracts are formed in non-replicating cells. We wondered whether this could be mediated via pathways involved in DNA damage repair and tolerance. Given that several repair pathways are regulated under the SOS response (Baharoglu and Mazel, 2014), we first assessed the induction of the response in non-replicating cells under DNA damage. For this, we measured the induction of yfp from an SOS-inducible promoter (PsidA) integrated on the Caulobacter chromosome at the xyl locus (Badrinarayanan et al., 2015; Figure 3A). We found that non-replicating cells activated the DNA damage response after MMC exposure, providing further evidence for the formation of ssDNA gaps in such conditions (Figure 3A). We thus asked whether the SOS response is essential for the formation of such gaps or if the activation of this response is a consequence of gap generation. Deletion of the SOS activator, recA, did not perturb localization of DnaN under damage. However, RecA was essential for dissociation during damage recovery as DnaN foci persisted in non-replicating cells lacking recA (Figure 3B). These observations suggest that a RecA-independent pathway is required for regulating the association of replisome components with DNA in cells that are not undergoing active DNA synthesis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig3-v2.jpg)
+
+**Figure 3.:** (A) SOS induction was measured by assessing the expression of yfp from an SOS-inducible promoter (PsidA-yfp). On the left are representative images of cells expressing the reporter at 0 or 90 min after MMC removal and control cells (no damage). On the right, total fluorescence intensity normalized to cell area is plotted for both time points for cells with or without damage treatment. Each dot represents a single cell. Mean and SD are shown in black (n ≥ 219). (B) Percentage wild type, ∆recA, or ∆uvrA swarmer cells with DnaN foci at 0, 30, 60, and 90 min after DNA damage recovery (n ≥ 308 cells, three independent repeats). (C) Representative images of wild type or ∆uvrA swarmer cells with SSB-YFP or DnaN-YFP, treated with MMC or UV. (D) As (A) for cells lacking uvrA (n ≥ 325).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of mechanism of long ssDNA gap generation by nucleotide excision repair (NER). (B) Percentage wild type or ∆uvrA swarmer cells with SSB foci with (+MMC) or without (-, control) damage treatment (n ≥ 325 cells, three independent repeats, wild type data from Figure 2B). (C) Percentage wild type or ∆uvrA swarmer cells with DnaN or SSB foci after DNA damage (UV) (n ≥ 340 cells, three independent repeats). (D) Percentage wild type or ∆mutL swarmer cells with DnaN foci with (+MMC) or without (-, control) damage treatment (n ≥ 324 cells, three independent repeats, wild type data from Figure 2B). MMC: mitomycin C.
 
 In most organisms, helix distorting lesions are recognized and excised by nucleotide excision repair (NER) (Kisker et al., 2013). A small proportion of the short gaps generated during this process could also be converted into longer stretches of ssDNA tracts under certain conditions, such as under high doses of DNA damage (Cooper, 1982; Giannattasio et al., 2010). This would require extensive DNA synthesis outside the active replication fork (Figure 3—figure supplement 1A). To test if this could be the mechanism by which replisome components associate with DNA in cells that are not replicating, we assessed the involvement of NER in orchestrating the same in Caulobacter swarmer cells. We observed that non-replicating cells with deletion of uvrA (part of the NER pathway) did not form DnaN foci under MMC or UV damage (Figure 3B–C, Figure 3—figure supplement 1C). In contrast, percentage of cells with DnaN foci in a ∆mutL background (deficient in mismatch repair; Marinus, 2012) was similar to wild type, indicating that mismatch repair did not contribute to loading of the β-clamp in non-replicating cells (Figure 3—figure supplement 1D).
 
 Thus, our data suggest that lesion processing by NER alone results in the formation of ssDNA gaps on which replisome components can localize in non-replicating cells. Consistent with this, we observed lack of SSB localization in ∆uvrA cells both under MMC and UV damage (Figure 3C, Figure 3—figure supplement 1B–C). Furthermore, cells without NER were deficient in SOS induction (Figure 3D), suggesting that NER-mediated gap generation serves two functions: (a) providing ssDNA substrate for recruitment of SSB and other replisome components to these regions and (b) induction of the SOS response. Together, this facilitates ssDNA gap-filling in non-replicating Caulobacter.
 
-## SOS-induced low-fidelity polymerase, DnaE2, is essential for subsequent dissociation of replisome components
+### SOS-induced low-fidelity polymerase, DnaE2, is essential for subsequent dissociation of replisome components
 
 As stated above, we observed that ∆recA cells were not deficient in DnaN recruitment to ssDNA gaps. However, given that these cells had persistent β-clamp foci, we wondered what would be the requirement for RecA or the SOS response in ssDNA gap-filling. We ruled out a role for homologous recombination in this process as our experimental setup of non-replicating swarmer cells (with a single chromosome) does not permit gap-filling by recombination, due to absence of a homologous template for repair (Figure 1A, bottom panel). In addition, we also conducted our damage recovery experiments in cells lacking the recombination protein RecN (Vickridge et al., 2017), an essential component of recombination-based repair in Caulobacter (Badrinarayanan et al., 2015). We observed similar dynamics of β-clamp foci to that seen in wild type cells in this case as well (Figure 4—figure supplement 1A).
 
 Reports in E. coli as well as eukaryotic systems (including yeast and human cells) have suggested that ssDNA gaps generated by NER can sometimes be filled by specialized polymerases like Polκ (Janel-Bintz et al., 2017; Kozmin and Jinks-Robertson, 2013; Sertic et al., 2018). Given that the SOS response is activated in non-replicating cells (Figure 3A), it is possible that gap-filling in Caulobacter swarmer cells is mediated via such specialized polymerases expressed under this regulon (Galhardo et al., 2005). Although we were unable to generate a functional fluorescent fusion to Caulobacter low-fidelity polymerase DnaE2, we confirmed that DnaE2 is expressed in our experimental conditions (Figure 4—figure supplement 1B) and that deletion of dnaE2 resulted in severe sensitivity of a steady-state population of cells to MMC-treatment (Figure 2—figure supplement 1A, Figure 4—figure supplement 1F). To test the involvement of DnaE2 in gap-filling, we conducted our damage recovery experiments in cells deleted for the same. Similar to ∆recA cells, we found that non-replicating cells lacking dnaE2 had persistent DnaN foci during damage recovery (Figure 4A–B). For example, in case of wild type, 52% cells had foci after 30 min of 0.5 µg/ml MMC treatment and this number reduced to 30% 90 min post-MMC removal. In contrast, in the case of ∆dnaE2 cells, 61% cells had foci after 30 min of damage treatment and this number remained constant even after removal of MMC from the growth media. DnaN foci in ∆dnaE2 cells was significantly higher than wild type after 90 min of damage recovery in the case of UV damage as well, at the two doses of damage tested (Figure 4—figure supplement 1D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images of wild type or ∆dnaE2 swarmer cells with SSB-YFP, DnaN-YFP, or DnaE-YFP after MMC treatment. (B) Percentage wild type or ∆dnaE2 swarmer cells with 0, 1, or ≥2 DnaN foci at 0, 30, 60, and 90 min of DNA damage recovery (n ≥ 467 cells, three independent repeats, wild type data from Figure 2C). (C) Percentage wild type or ∆dnaE2 swarmer cells with SSB or DnaE foci at 0 and 90 min of DNA damage recovery (n ≥ 325 cells, mean and SD from three independent repeats). (D) Percentage wild type, dnaE2 catalytic mutant (dnaE2*) or ∆imuB swarmer cells with DnaN foci at 0, 30, 60, and 90 min of mitomycin C (MMC) damage recovery (n ≥ 342 cells, three independent repeats, wild type data from Figure 3B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percentage wild type or ∆recN swarmer cells with 0, 1, or ≥2 DnaN foci at 0, 30, 60, and 90 min of DNA damage recovery (n ≥ 309 cells, three independent repeats, wild type data from Figure 2C). (B) Representative image of a western blot of DnaE2-3X-Flag during mitomycin C (MMC) damage recovery. As a control, cells without damage treatment were also probed for DnaE2 (image of one experiment from three independent repeats). (C) Percentage wild type or ∆dnaE2 swarmer cells with DnaN foci at 0 and 90 min of DNA damage recovery (n ≥ 321 cells, mean and SD from three independent repeats, under indicated doses of DNA damage). Asterisks denote significant differences and ‘ns’ denotes not significant differences in unpaired t-tests here and in all other graphs. Exact p-values are summarized in Supplementary file 4. (D) Percentage wild type or ∆dnaE2 swarmer cells with DnaN foci after 90 min of damage recovery (post-treatment with two doses of UV) (n ≥ 332 cells, three independent repeats). (E) Multiple sequence alignment of the catalytic domain of C-family polymerases from different bacteria. Conserved amino acid residues highlighted in pink were mutated in DnaE2* (catalytic mutant) (Warner et al., 2010). (F) Growth of wild type, ∆dnaE2, and dnaE2* strains with (MMC) or without (control) DNA damage (image of one experiment from three independent repeats). (G) Rifampicin-resistant mutants that arise from wild type and ∆dnaE2 cells treated with (MMC) or without (control) DNA damage. Cells were either immediately released into replication-permissive media after damage removal (no recovery) or allowed to recover from damage for 90 min in non-replicating phase before release into replication-permissive conditions (recovery). Dashed line shows median from three independent experiments.
 
 Replisome persistence in the absence of dnaE2 appeared to be a dose-dependent phenomenon (Figure 4—figure supplement 1C). At low dose of MMC treatment (0.125 µg/ml), fewer cells had DnaN foci post-DNA damage exposure (14.5% cells). The number further reduced to 9.5% during recovery in a DnaE2-independent manner. However, the percentage of cells with persistent β-clamp foci increased with increasing concentrations of damage in the absence of dnaE2, with minimal recovery observed at 0.5–0.75 µg/ml of MMC treatment (Figure 4—figure supplement 1C). The following observations in our study lend additional support to the proposed idea that a specialized polymerase is required for gap-filling across long ssDNA tracts generated by NER at higher doses of DNA damage: a. Persistence of components of PolIIIHE (DnaE and DnaN) in the absence of DnaE2. Apart from β-clamp foci, we found that the replicative polymerase, DnaE, was also unable to dissociate during damage recovery in cells lacking dnaE2 (Figure 4C), suggesting that the replicative polymerase alone cannot complete synthesis across these NER-generated ssDNA tracts. Such lack of dissociation after localization was found to be the case for SSB as well, again suggesting that long ssDNA gaps persisted in the absence of DnaE2 (Figure 4C). b. Requirement for DnaE2-mediated synthesis. To test whether synthesis by DnaE2 contributed to gap-filling in non-replicating cells, we mutated two residues known to be essential for DnaE-mediated synthesis (Lamers et al., 2006; Pritchard and McHenry, 1999). These residues have been mutated previously in M. smegmatis DnaE2, where it was shown to inhibit DnaE2-dependent mutagenesis (Warner et al., 2010; Figure 4—figure supplement 1E). In the case of Caulobacter as well, catalytic mutant dnaE2* showed similar growth defects as ∆dnaE2 under MMC damage (Figure 4—figure supplement 1F). In our experimental regime, we found that cells expressing catalytically inactive DnaE2 also had persistent DnaN foci during damage recovery, as seen in the case of cells lacking the specialized polymerase (Figure 4D).
 
@@ -64,11 +96,19 @@ To assess the contribution of DnaE2 in damage-induced mutagenesis, we conducted
 
 Finally, we also assessed the requirement for the accessory protein ImuB in DnaE2 function. ImuB is an inactive Y-family polymerase and carries a β-clamp binding motif. It is thought to act as a bridge between DnaE2 and the clamp (Warner et al., 2010). In Caulobacter, it is co-operonic with dnaE2 and is expressed in response to SOS activation (Galhardo et al., 2005). When we conducted our recovery experiments in cells lacking imuB, we observed that these cells also exhibited persistent DnaN foci, as seen for cells lacking dnaE2 (Figure 4D). These results are consistent with the idea that DnaE2-mediated synthesis contributes to gap-filling and subsequent dissociation of replisome components in non-replicating cells.
 
-## DnaE2 activity on NER-generated long ssDNA gaps enhances survival of non-replicating cells under DNA damage
+### DnaE2 activity on NER-generated long ssDNA gaps enhances survival of non-replicating cells under DNA damage
 
 Taken together, our data provide in vivo support for cross-talk between NER and specialized, low-fidelity polymerases during gap-filling in non-replicating bacteria. What could be the relevance of this in the context of damage recovery and survival of bacteria that are not actively replicating? To investigate the impact of NER-mediated DnaE2 activity in Caulobacter swarmer cells, we assessed the growth dynamics of these cells once released into replication-permissive conditions after damage recovery with three parameters: (a). Time to division and percentage of cells with successful division events after release in replication-permissive conditions (as a read-out for division restoration post-DNA damage clearance) (b). Cell length restoration (as a read-out for SOS deactivation following DNA damage clearance). (c). Cell survival measured via viable cell count assays.
 
 To measure division restoration, we released replication-blocked swarmer cells into media containing IPTG (to allow for replication initiation via induction of dnaA) either immediately after damage treatment or after 90 min of damage recovery. We followed single cells via time-lapse imaging to assess the time taken to first division after replication initiation (Figure 5A–B). Control cells without damage treatment and with or without an additional 90 min arrest in swarmer stage were able to robustly resume cell growth and division, with >94% cells undergoing their first division within 240 min of release into replication-permissive conditions. Based on this, we followed cell division dynamics for cells treated with damage during this time window, wherein control cells (without damage) were successfully able to restore cell division. In MMC-treated conditions, we found that cells released into replication-permissive conditions immediately after damage treatment did not recover efficiently, with only 5% cells undergoing their first division within 240 min (Figure 5C). In contrast, wild type cells that were provided time for damage recovery before reinitiating replication showed restoration of cell division in the same time period, with 30% cells undergoing at least one division and 9% cells undergoing ≥2 divisions within 240 min (Figure 5B–C). These recovery dynamics were dependent on DnaE2 as only 7% cells lacking dnaE2 underwent divisions even when they were provided the same time duration as wild type for damage recovery before replication reinitiation (Figure 5B–C). Thus, DnaE2-mediated gap-filling provided significant survival advantage to non-replicating cells as measured by their ability to robustly restore cell cycle progression and cell division.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of experimental setup used to assess the impact of lesion repair/ tolerance in non-replicating cells. After mitomycin C (MMC) treatment for 30 min, cells were either released into replication-permissive media (i: no recovery) or allowed to grow for 90 min without damage and then released into replication-permissive media (ii: damage recovery). Cells were followed via time-lapse microscopy and time to division was estimated. Control cells were taken through the same growth regimes; however, no damage is added to the culture. (B) Representative time-lapse montage of wild type or ∆dnaE2 cells in replication-permissive media after DNA damage recovery. Cell divisions are marked with white asterisk. In the panel shown here, three divisions were scored in wild type, while none were observed in ∆dnaE2 cells. (C) Percentage cell division over time after replication reinitiation for wild type and ∆dnaE2 cells either without (i: no recovery) or with (ii: recovery) damage recovery time in replication-blocked conditions (n ≥ 368 cells). Inset: Percentage cells divided at 240 min in each of these conditions is summarized. (D) Survival of wild type and ∆dnaE2 cells either without (i: no recovery) or with (ii: recovery) damage recovery time in replication-blocked conditions was measured via estimation of viable cell count (three independent repeats). Fraction survival was calculated by normalizing viable cell count under DNA damage to that without DNA damage (mean with SD from three independent experiments).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67552/elife-67552-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell length distribution for wild type (purple) or ∆dnaE2 (green) cells. Control cells were not treated with DNA damage, while + damage cells were exposed to mitomycin C (MMC) treatment for 30 min. Solid lines represent length distribution prior to release into replication-permissive conditions while dashed lines represent length distribution after 240 min in replication-permissive conditions. Median and inter-quartile range of the distribution is indicated. ‘No recovery’ and ‘recovery’ as outlined in Figure 5A (n ≥ 300 cells). (B) Schematic of experimental design to estimate survival advantage from recovery in non-replicating phase (Figure 5D). Fraction survival was calculated by normalizing viable cell counts obtained with damage to that obtained without damage. A similar experimental design was used for estimation of mutation frequencies (Figure 4—figure supplement 1G and 'Materials and methods').
 
 To further assess the consequence of gap-filling, we measured the cell length distributions for cells released into replication-permissive conditions with or without 90 min of DNA damage recovery (Figure 5—figure supplement 1A). Continued cell length elongation would be reflective of a continued division block, a hallmark of the SOS response. On the other hand, cell length restoration would be expected only for those cells where damage has been repaired (Raghunathan et al., 2020). We found that cells that did not face damage (with or without dnaE2) had a median cell length of 4.6 µm after 90 min incubation in swarmer conditions. At 240 min after reinitiation of replication, the cell length distribution was restored close to a wild type-like pattern (control) with the median cell length dropping to 2.9 µm (Figure 5—figure supplement 1A, ‘no damage’). Length restoration was also observed in wild type cells able to engage in DnaE2-mediated gap-filling in the 90 min recovery window (Figure 5—figure supplement 1A, ‘+ damage, recovery, wild type’). This restoration in cell length was dependent on the time provided for damage recovery as well as presence of DnaE2. In the absence of recovery or dnaE2, cells continued to elongate after release into IPTG-containing media (Figure 5—figure supplement 1A, ‘+damage, no recovery’ and ‘+damage, recovery, ∆dnaE2’).
 
@@ -80,7 +120,7 @@ In summary, our cell biological and genetic read-outs suggest that DnaE2-mediate
 
 DNA lesion repair and tolerance have been well studied in a replication-centric paradigm (Gabbai et al., 2014; Indiani et al., 2005; Marians, 2018). Characterization of error-prone polymerases in E. coli has informed us about mechanisms of tolerance that could occur at the replication fork or behind it, in gaps generated due to replisome skipping over the lesion, followed by repriming downstream of it (Chang et al., 2019; Gabbai et al., 2014; Indiani et al., 2005). However, DNA damage is a universal event that can occur across all stages of the cell cycle, including in non-replicating conditions. This can have effects on transcription and could also perturb replication progression upon reinitiation (Jeiranian et al., 2013; Lang and Merrikh, 2018; Rudolph et al., 2007). For example, bacteria such as Caulobacter have distinct cell cycle phases including a non-replicating swarmer state, with a single copy of its chromosome. Hence, it is imperative that DNA damage is repaired efficiently even in these conditions. Here, we provide in vivo evidence for NER-coupled DnaE2 function that is active in non-replicating bacteria. This study complements a growing body of work that supports the possibility of low-fidelity polymerase-mediated synthesis (including mutagenesis) in replication-independent conditions (such as in stationary phase cells) across domains of life (Bull et al., 2001; Corzett et al., 2013; Janel-Bintz et al., 2017; Sung et al., 2003; Yeiser et al., 2002) and underscores the need to reconsider function of such polymerases outside canonical, isolated roles of lesion bypass during replication.
 
-## DNA damage repair and tolerance in non-replicating cells: requirement for DnaE2
+### DNA damage repair and tolerance in non-replicating cells: requirement for DnaE2
 
 Here, we develop a system to specifically assess mechanisms of damage repair and tolerance employed in cells that are not undergoing active DNA synthesis. Using replication initiation-inhibited Caulobacter swarmer cells, we show that lesions can be dealt with in two main steps: a. damage processing by NER to reveal SSB-bound long ssDNA gaps and b. gap-filling by SOS-induced specialized polymerase, DnaE2. Due to absence of a second copy of the chromosome in our assay (all cells are non-replicating and have a single chromosome), role for homologous recombination in this process is unlikely. Hence, our observations are consistent with a scenario where the low-fidelity polymerase alone is sufficient to synthesize across these long ssDNA gaps generated by NER action. Why is there a need for a specialized polymerase during gap-filling of NER-generated substrates? We explore two possible scenarios here:
 
@@ -90,7 +130,7 @@ Here, we develop a system to specifically assess mechanisms of damage repair and
 
 A limitation of our current study is that we do not observe all NER events, a significant proportion of which could be mediated via gap-filling by PolI on short ssDNA stretches. The relative contribution of these two arms of NER (long vs. short patch repair) could vary with increasing doses of damage and subsequently impact the requirement for DnaE2 action in gap-filling. Unfortunately, using our mutagenesis assays (measuring generation of rifampicin resistant mutations during damage), we were unable to satisfactorily disentangle the individual contributions of DnaE2-mediated mutagenesis in non-replicating vs. replicating conditions (Figure 4—figure supplement 1G). Hence, we cannot reliably distinguish between the ‘gap-filling alone’ or ‘gap-filling associated with lesion bypass’ activities of this polymerase in our present study. It must be noted though, that a role for DnaE2 in gap-filling alone has not been reported before. In addition, unlike E. coli, it is the only polymerase implicated in TLS-associated functions (mutagenesis) in the bacteria that encode it. However, irrespective of the specific nature of DnaE2 activity, our work underscores a novel and necessary function for this highly conserved specialized polymerase in conjunction with NER in replication-independent conditions.
 
-## Long ssDNA gaps generated by NER serve two functions
+### Long ssDNA gaps generated by NER serve two functions
 
 Previous studies in E. coli have found that NER activity in GGR is dependent on the activation of the SOS response (Crowley and Hanawalt, 1998). In contrast, our results suggest that NER functions upstream of the SOS response in non-replicating Caulobacter in the context of long patch repair. Although uvr genes are SOS-induced even in Caulobacter (da Rocha et al., 2008), it is possible that basal levels of Uvr proteins are sufficient to carry out damage scanning and subsequent lesion processing. Indeed, in E. coli, basal UvrA levels are variable, but range from 9 to 43 copies in minimal media and more than 120 copies in rich media (Ghodke et al., 2020). Long ssDNA gaps generated by NER serve two purposes:
 
@@ -100,7 +140,7 @@ Previous studies in E. coli have found that NER activity in GGR is dependent on 
 
 It would be interesting now to ask how these additional components (such as ImuB and other accessory components to DnaE2) contribute to the regulation of the ‘specialized replisome’ outside the realms of active replication and whether the properties of the ssDNA gaps generated vary under damaging conditions that result in different types of lesions (CPDs in UV vs. monoadducts and cross-links in MMC) (Bargonetti et al., 2010; Chatterjee and Walker, 2017; Mitchell and Nairn, 1989). Indeed, although discussed in the context of non-replicating cells, it is plausible that, under high doses of damage, this mechanism can occur spatially and temporally disconnected from the active replication fork in replicating cells as well, in support of observations in E. coli that have reported localization of PolIIIHE and specialized polymerases away from the active replication fork (Henrikus et al., 2018; Soubry et al., 2019).
 
-## Relevance of NER-mediated specialized polymerase activity in non-replicating cells
+### Relevance of NER-mediated specialized polymerase activity in non-replicating cells
 
 Our study provides comprehensive insights into a mechanism of lesion repair and gap-filling in non-replicating bacteria, which relies on a coordinated action between NER and low-fidelity polymerases. Our data suggests a method through which an error-prone polymerase, DnaE2, functions beyond replication forks, impinging on its implications in growth and survival of non-replicating cells. The experimental system in this study provides a novel tool to investigate these mechanisms as well as additional players further and assess impacts of lesion repair and tolerance in replication-independent, but metabolically active conditions, where damage to DNA via molecules including ROS is possible (Gray et al., 2019; Manina and McKinney, 2013) (such as Caulobacter cells in ‘swarmer’ state or other cells outside S phase of cell cycle).
 
@@ -108,7 +148,122 @@ The relevance of the process described here is highlighted by the survival advan
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background Caulobacter crescentus NA1000</td>
+      <td>Caulobacter crescentus NA1000 strains</td>
+      <td>PMID:334726 This study</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagents</td>
+      <td>Oligos</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804 (RRID:AB_262044)</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>7076S (RRID:AB_330924)</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperSignal West Pico Plus Chemiluminescent Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>34577</td>
+      <td>Western blot</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mitomycin C (MMC)</td>
+      <td>AG Scientific</td>
+      <td>M-2715</td>
+      <td>DNA damaging agent</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SYTOX Green Nucleic Acid Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>S7020</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Percoll</td>
+      <td>GE Healthcare</td>
+      <td>17-0891-01</td>
+      <td>Synchrony</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2020a</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Oufti</td>
+      <td>Paintdakhi et al., 2016</td>
+      <td>RRID:SCR_016244</td>
+      <td>Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicrobeTracker</td>
+      <td>Sliusarenko et al., 2011</td>
+      <td>RRID:SCR_015939</td>
+      <td>Analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 Bacterial strains, plasmids, and primers used in the study are listed in Key Resources Table (and Supplementary files 1–3). Construction of plasmids and strains is also detailed in respective supplementary files. Transductions were performed using ɸCR30 (Ely, 1991). Caulobacter crescentus cultures were grown at 30°C in PYE media (0.2% peptone, 0.1% yeast extract and 0.06% MgSO4) supplemented with appropriate concentrations of antibiotics, as required. While growing strains carrying dnaA under an IPTG-inducible promoter, liquid media were supplemented with 0.5 mM IPTG and solid media with 1 mM IPTG. Microscopy experiments were performed in minimal media containing 1X M2 salts (0.087% Na2HPO4, 0.53% KH2PO4, 0.05% NH4Cl) supplemented with 1% PYE, 0.2% glucose, 0.01 mM FeSO4, and 0.01 mM CaCl2.
 
@@ -116,7 +271,7 @@ Non-replicating swarmer cells were isolated using synchrony protocols described 
 
 For flow cytometry analysis, 300 µl of cultures were fixed in 700 µl of 70% chilled ethanol and stored at 4°C until further processing. These samples were treated with 2 µg/ml RNaseA in 50 mM sodium citrate for 4 hr at 50°C. DNA was stained with Sytox green nucleic acid stain (5 mM solution in DMSO from Thermo Fisher Scientific) and analyzed using a BD Accuri flow cytometer.
 
-## Fluorescence microscopy and image analysis
+### Fluorescence microscopy and image analysis
 
 For time course imaging, 1 ml aliquots of cultures were taken at specified time points, pelleted, and resuspended in 100 µl of growth medium. Images were taken without damage treatment (no damage control), after 30 min of damage treatment (+ damage) and again at 0, 30, 60, and 90 min after removal of DNA damage (recovery). Control cells were grown under same treatment regime, but no damaging agent was added to growth media. 2 µl of cell suspension was spotted on 1% agarose pads (prepared in minimal medium) and imaged. For time-lapse imaging, 2 µl cell suspension was spotted on 1.5% GTG agarose (prepared in minimal medium), grown inside an OkoLab incubation chamber maintained at 30°C and imaged at specific intervals for the indicated period of time. For cell division tracking after replication reinitiation, cells were grown on 1.5% GTG agarose prepared in growth medium with 1 mM IPTG.
 
@@ -156,16 +311,16 @@ dist_micr= dist_pix*0.108;
 
 Graphs were generated in GraphPad Prism 8. Statistical analysis was performed in GraphPad Prism 8. Exact p-values are summarized in Supplementary file 4.
 
-## Survival assay
+### Survival assay
 
 For calculating viability of an asynchronous steady-state population under DNA damage (Figure 2—figure supplement 1A and D), Caulobacter cultures were grown in PYE with 0.5 mM IPTG to OD600 of 0.3. For assessing survival under MMC, serial dilutions were made in 10-fold increments and 6 µl of each dilution (10−1 to 10−8) was spotted on PYE agar containing 1 mM IPTG and appropriate amounts of MMC. For assessing survival under UV, similar serial dilutions were made, spotted on PYE agar containing 1 mM IPTG and exposed to appropriate doses of UV in a UV Stratalinker 1800 (STRATAGENE). Growth was quantified by multiplying dilution factor of the last visible spot with number of colonies on the last spot. Percentage survival for each strain was calculated by normalizing growth of that specific strain treated with different doses of DNA damage to that in media without DNA damage.
 
 For assessing survival of non-replicating cells under MMC (Figure 5D), non-replicating swarmer cells (10 ml, OD600 0.1) were treated with different concentrations of DNA damage for 30 min. After washing off damage, these replication-blocked cells were taken through either ‘damage recovery’ (90 min recovery) or ‘no recovery’ regime. Cells from both regimes were serially diluted, plated on PYE agar containing 1 mM IPTG, and colony counts were estimated after 48 hr. Fraction survival was calculated by normalizing viable cell count of MMC-treated cells to viable cell count without DNA damage treatment. Refer Figure 5—figure supplement 1B for schematic of the experimental setup.
 
-## Rifampicin resistance assay
+### Rifampicin resistance assay
 
 Non-replicating swarmer cells (10 ml, OD600 0.1) were grown in ‘no recovery’ or ‘damage recovery’ conditions (as described above for survival experiments; Figure 5—figure supplement 1B). At the end of each experimental treatment, cultures were spun down, resuspended in 10 ml PYE containing 0.5 mM IPTG, and grown at 30°C overnight. These cultures were plated on PYE agar containing 1 mM IPTG and 100 µg/ml Rifampicin. Rifampicin-resistant colonies were counted 48 hr after plating, and mutation frequencies were calculated by normalizing to viable cell count for that specific culture.
 
-## Western blotting
+### Western blotting
 
 At specific time points of the experiment, 1.5 ml aliquots of 0.1 OD600 cultures were pelleted down at 10000 rpm for 5 min, pellets were snap frozen in liquid nitrogen and stored at −80°C. Pellets were resuspended in SDS sample buffer, and boiled at 95°C for 10 min. Equal amounts of lysates were loaded on 6% SDS-PAGE gel, resolved at 100 V and transferred to polyvinylidene fluoride (PVDF) membrane (BIO-RAD, #1620177) in a wet electroblotting system. Non-specific binding to the membrane was blocked with 5% Blotting-Grade Blocker (BIO-RAD, #170–6404), followed by probing with 1:2000 dilution of monoclonal anti-flag antibody (Sigma, #F1804, RRID:AB_262044) and 1:5000 dilution of HRP-linked anti-mouse secondary antibody (Cell Signaling Technology, #7076S, RRID:AB_330924). The blots were visualized after incubation with SuperSignal West PICO PLUS Chemiluminescent Substrate (Thermo Scientific, #34577) using an iBright FL1000 imager (ThermoFisher Scientific).

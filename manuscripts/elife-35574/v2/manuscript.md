@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.35574.001 We generated a library of ~1000 Drosophila stocks in which we inserted a construct in the intron of genes allowing expression of GAL4 under control of endogenous promoters while arresting transcription with a polyadenylation signal 3’ of the GAL4. This allows numerous applications. First, ~90% of insertions in essential genes cause a severe loss-of-function phenotype, an effective way to mutagenize genes. Interestingly, 12/14 chromosomes engineered through CRISPR do not carry second-site lethal mutations. Second, 26/36 (70%) of lethal insertions tested are rescued with a single UAS- cDNA construct. Third, loss-of-function phenotypes associated with many GAL4 insertions can be reverted by excision with UAS-flippase . Fourth, GAL4 driven UAS-GFP/RFP reports tissue and cell-type specificity of gene expression with high sensitivity. We report the expression of hundreds of genes not previously reported. Finally, inserted cassettes can be replaced with GFP or any DNA. These stocks comprise a powerful resource for assessing gene function.
+We generated a library of ~1000 Drosophila stocks in which we inserted a construct in the intron of genes allowing expression of GAL4 under control of endogenous promoters while arresting transcription with a polyadenylation signal 3’ of the GAL4. This allows numerous applications. First, ~90% of insertions in essential genes cause a severe loss-of-function phenotype, an effective way to mutagenize genes. Interestingly, 12/14 chromosomes engineered through CRISPR do not carry second-site lethal mutations. Second, 26/36 (70%) of lethal insertions tested are rescued with a single UAS-cDNA construct. Third, loss-of-function phenotypes associated with many GAL4 insertions can be reverted by excision with UAS-flippase. Fourth, GAL4 driven UAS-GFP/RFP reports tissue and cell-type specificity of gene expression with high sensitivity. We report the expression of hundreds of genes not previously reported. Finally, inserted cassettes can be replaced with GFP or any DNA. These stocks comprise a powerful resource for assessing gene function.
 
 ## Introduction
 
@@ -54,37 +54,69 @@ Here, we report the conversion of 619 intronic MiMICs with T2A-GAL4. Given that 
 
 ## Results
 
-## Comparison of GFSTF and Trojan-GAL4 tagging of MiMIC-containing genes
+### Comparison of GFSTF and Trojan-GAL4 tagging of MiMIC-containing genes
 
 As a part of the Gene Disruption Project, we created and sequenced the flanks of ~15,660 MiMIC insertions (Nagarkar-Jaiswal et al., 2015b; Venken et al., 2011a). Of these 2854 are intronic insertions that permit tagging of 1862 different genes. We classified 1399 insertions as ‘Gold’ as they are predicted to tag all transcripts annotated in FlyBase, 550 are ‘Silver’ and tag more than 50% of all gene transcripts, whereas 193 are ‘Bronze’ and tag less than 50% of the transcripts. As some genes are tagged with multiple MiMICs, the total is greater than 1862. We prioritized the tagging of 881 genes that have one or more human homolog (DIOPT Score ≥4 (Hu et al., 2011)) and are part of the ‘Gold’ collection (Nagarkar-Jaiswal et al., 2015b; Yamamoto et al., 2014). In addition, 139 ‘Gold’ MiMICs in genes with low-confidence orthologs (DIOPT Score ≤3) or not conserved in humans were also selected, along with a number of ‘Silver’ and ‘Bronze’ insertions (see Flypush: http://flypush.imgen.bcm.tmc.edu/MIMIC/lines.php). We successfully tagged 611 genes with GFSTF (Nagarkar-Jaiswal et al., 2015a; Nagarkar-Jaiswal et al., 2015b; Venken et al., 2011a), and 211 in this work. We previously showed that conversion of MiMICs with GFSTF allows for efficient tagging of genes that carry intronic MiMICs and that 90% of intronically GFP-tagged proteins show robust GFP signals in third instar larval brains (Nagarkar-Jaiswal et al., 2015b). However, staining of adult brains revealed robust expression in only ~19% of the GFP-tagged genes tested (114/611, Figure 1—figure supplement 1). To achieve higher adult brain expression we prioritized genes based on the presence of human homologs and converted 619 MiMIC insertions to SA-T2A-GAL4-polyA (see Flypush: http://flypush.imgen.bcm.tmc.edu/pscreen/rmce).
 
 We generated both GFP (GFSTF) and T2A-GAL4 tagged lines by converting the same original MiMIC line through RMCE and compared the expression patterns for 104 genes, to assess if expression was consistently increased. Figure 1A shows expression in third instar larvae and adult brains of four proteins tagged with GFP. The expression and localization of the proteins encoded by nAChRalpha1, dpr15, Pxn and Gprk2 are easily detectable in third instar larval brains and ventral nerve cords, yet exhibit weak or no detectable signals in adult brains. In contrast, the gene expression pattern visualized using T2A-GAL4 converted MiMICs and assayed with UAS-mCD8::GFP (Figure 1B and C) exhibits robust GFP signals in third instar and adult brains. This method of integrating the T2A-GAL4 is very efficient and is less time consuming than integrating GFSTF (Nagarkar-Jaiswal et al., 2015b), as RMCE-mediated conversion events can be easily detected by scoring insertion events crossed to UAS-2xEGFP and screening for expression in any tissue in embryos, larvae, or adults (Diao et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig1-v2.jpg)
+
+**Figure 1.:** The MiMIC transposon contains two inverted attP sites that allow RMCE. (A) Detection of the expression domains of the indicated genes tagged with GFSTF in larvae and adult brains. GFP: green (B) Schematic of the MiMIC conversion with Trojan triplet T2A-GAL4 cassettes (Diao et al., 2015). Only the inserted T2A-GAL4 cassette with the correct orientation and phase results in GAL4 expression that drives UAS-mCD8::GFP expression. (C) Detection of the expression domains in larvae and adult brains of genes tagged with T2A-GAL4 using UAS-mCD8::GFP. mCD8::GFP: green. Scale bar: 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We document the expression patterns and protein localization associated with 49 genes. The MiMIC identification number and affected genes are shown. Note that only ~19% of all genes tested showed detectable GFP signals in adult brains. Images are available on Flypush (http://flypush.imgen.bcm.tmc.edu/pscreen/rmce/). Many patterns are in agreement with the expression patterns of published genes/proteins (e.g. brp, Rgk1, dlg1, cact). Green: GFSTF. Scale bar: 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparison of T2A-GAL4 > UAS-mCD8::GFP with anti-body stainings for arm (larval wing disc), Mhc (larval muscle), osa (larval eye-antennal imaginal disc) and trio (larval CNS and boutons/NMJ). Green: mCD8::GFP, Red: antibody labeling. (B) Comparison of T2A-GAL4 > UAS-mCD8::GFP with GFSTF for SIFaR, zip, VGlut and mbl in adult brains. Note the striking differences. Green in left panel: mCD8::GFP; Green in right panel: GFSTF. Scale bar is shown in figure.
+
 We previously showed that genes tagged with GFSTF faithfully reproduce the expression and subcellular distribution pattern of all tagged proteins tested (Nagarkar-Jaiswal et al., 2015b). We confirmed this observation as the similarities between GFSTF localization (Figure 1—figure supplement 1) and published antibody staining for Cactus (Zhou et al., 2015), Rgk1 (Murakami et al., 2017), Discs large 1, and Bruchpilot (Nagarkar-Jaiswal et al., 2015b) in the brain are obvious. However, GAL4 strongly amplifies the expression of UAS-mCD8::GFP when compared to the endogenous GFP tagged proteins but the subcellular protein distribution is lost. As shown in Figure 1—figure supplement 2, in non-neuronal tissue the expression patterns as gauged with mCD8::GFP driven by T2A-GAL4 or antibody staining overlap significantly for arm in larval wing disc, Mhc in larval muscle, and osa in larval eye-antenna imaginal discs (Figure 1—figure supplement 2A) when assessed at low resolution. However, for trio, which encodes a Rho guanyl-nucleotide exchange factor that regulates filamentous actin, the expression patterns do not overlap extensively, even at low resolution. Trio is known to play a role in the mushroom body (MB) neurons (Awasaki et al., 2000) as well as in motor neurons at neuromuscular junctions (NMJs) (Ball et al., 2010). However, the localization of the Trio protein (Figure 1—figure supplement 2A red, bottom row) in the larval central brain and ventral nerve cord (VNC) appears different from the GAL4 >UAS-mCD8::GFP pattern since GFP is strongly expressed throughout the MB and VNC, whereas the expression of Trio protein is low in VNC and the protein is localized to NMJs (red staining, insert). Similarly, we observe that mCD8::GFP driven by T2A-GAL4 is also present at the NMJs (green staining, inset). In summary, the data are consistent and suggest that Trio is expressed in many neurons, including the motor neurons.
 
 A comparison of the expression patterns of four genes tagged with both GFSTF and T2A-GAL4>mCD8::GFP exemplifies differences in the expression patterns. As shown in Figure 1—figure supplement 2B, the patterns of SIFaR, zip, VGlut and mbl are difficult to reconcile without further characterization. In summary, both the T2A-GAL4 and the GFSTF conversions provide valuable information and should permit different applications.
 
-## CRISPR-mediated insertion of MiMIC-like vectors
+### CRISPR-mediated insertion of MiMIC-like vectors
 
 In order to vastly expand the collection of MiMIC-tagged genes, we initially tried to use CRISPR technology to insert MiMIC-like constructs and developed two vectors, pM14 and pM36. pM14 contains a MiMIC-like cassette (attP-FRT-SA-3XSTOP-polyA-3xP3-EGFP-FRT-attP) whereas pM36 lacks the FRT sites present in pM14 (Figure 2A). Homology arms approximately 500–1000 bp in length were added to each side of these cassettes by Golden Gate Assembly (GGA) (Engler et al., 2008) to generate donor plasmids for homology directed repair (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig2-v2.jpg)
+
+**Figure 2.:** (A) Structures of pM14 and pM36. The CRIMIC pM14 cassette contains MiMIC-like cassette (SA-3xstop-polyA) and two FRT sites. The CRIMIC pM36 cassette was modified by removing the two FRT sites from PM14. (B) Golden Gate Assembly. Two sets of primers containing Type IIS RE sites are typically used to amplify ~1 kb homology arms by PCR. These arms, pM37 DNA and pBH vector (KanR) digested with Type IIS Restriction Enzymes and cloned using Golden Gate Assembly to generate the donor construct in a single reaction. The pM14/pM36 based donor DNAs were constructed with the same approach. The complete donor construct is selected with kanamycin. The components in these diagrams are not drawn to scale.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Summary of the microinjection success rates for pM14 and pM36. We injected embryos for 89 genes with pM14 and the success rate was 57.3%. We also injected embryos for 114 genes with pM36 and the success rate was 26.3%. (B) The CRIMIC flies were verified by PCR to ensure that cassettes are in the correct position. Two specific primers outside homology arms (gene-F/gene-R) in each gene were designed to amplify the homologous arm regions by PCR with attP-R primer. The CR00711 (slim T2A-GAL4) and CR00684 (boca T2A-GAL4) are shown here. The genomic DNA of individual alleles was extracted and PCR was performed (see Materials and methods). The #2, #3 and #6 of slim T2A-GAL4s are correct alleles, and #2 and #3 of boca T2A-GAL4s are correct alleles. L: left region of the inserted cassette; R: right region of the inserted cassette.
 
 To ensure similar and clean genetic backgrounds for all transformation experiments, we isogenized the second and third chromosomes of the nos-Cas9 flies into which we injected our constructs. We used the FindCRISPR tool which is based on a pre-computed database of CRISPR sgRNA designs requiring the presence of a PAM sequence at the end and a unique seed region (Housden et al., 2015). All sgRNA designs used the reference genome from FlyBase. Homology arms were amplified from genomic DNA from the isogenized nos-Cas9 injection lines.
 
 The mix of sgRNAs and donor vectors was injected into embryos expressing Cas9, under the nanos promoter (nos-Cas9), to ensure germline expression (Kondo and Ueda, 2013; Ren et al., 2013) for integration into introns of the GOI in a directional manner (Casini et al., 2015). We injected constructs for 89 genes with pM14 with a success rate of 57%, and 114 genes with pM36 with a success rate of only 26% (Figure 2—figure supplement 1A). The insertion efficiencies of these constructs were deemed too low, and thus they are no longer used in our production pipeline.
 
-## CRISPR-mediated insertion of T2A-GAL4 cassettes
+### CRISPR-mediated insertion of T2A-GAL4 cassettes
 
 The utility of the T2A-GAL4 lines generated by RMCE of MiMICs encouraged us to use CRISPR/Cas9 (Zhang et al., 2014) to insert SA-T2A-GAL4-polyA in introns of GOI using the CRISPR/Cas9 system, similar to the T-GEM vector developed by Diao et al. (2015). However, we added flanking FRT sites to allow excisions of the cassette with Flippase. We therefore designed a set of vectors with a swappable MiMIC-like cassette that contains attP-FRT-SA-T2A-GAL4 (with phases 0, 1, and 2)-polyA- 3xP3-EGFP-FRT-attP named pM37 (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig3-v2.jpg)
 
-**Figure 3.:** T2A-GAL4 integration using CRISPR and expression patterns of tagged genes.(A) Structure of the CRIMIC pM37 cassette. (B) Schematic of the CRIMIC insertion strategy through two 1 kb homology arms by HDR (homology directed repair) based on CRISPR/Cas9 technology. (C) Expression patterns observed in adult fly brains of T2A-GAL4 > UAS-mCD8::RFP. mCD8::RFP (red). Scale bar: 50 μm.
+**Figure 3.:** (A) Structure of the CRIMIC pM37 cassette. (B) Schematic of the CRIMIC insertion strategy through two 1 kb homology arms by HDR (homology directed repair) based on CRISPR/Cas9 technology. (C) Expression patterns observed in adult fly brains of T2A-GAL4 > UAS-mCD8::RFP. mCD8::RFP (red). Scale bar: 50 μm.
 
 Upon many trials we settled on injecting 25 ng/µl of a single sgRNA and 150 ng/µl of the -SA-T2A-GAL4-polyA- donor construct (pM37) with ~1 kb homology arms on either side in isogenized nos-Cas9 flies (Housden et al., 2016; Housden and Perrimon, 2016). As summarized in Figure 4A, we injected approximately 500 embryos for each of 557 different genes. The fly crosses for each target chromosome are documented in Supplementary file 1. The percentage of injected embryos surviving to first instar was 23% and on average 4.6 flies expressing GFP in the eye (3xP3-GFP) were recovered per injection. Molecular analysis of lines started from each individual GFP+ fly revealed that at least one insertion in the GOI was obtained for nearly 70% of the genes (Figure 4A). All insertions were confirmed by PCR (see Materials and Methods or Flypush for protocols and corresponding primers; Figure 2—figure supplement 1B). Note that the efficiency is higher if we omit the data for genes that map to the third chromosome as the nos-Cas9 transgene insertion on the second chromosome carries a recessive lethal mutation, reducing the efficiency significantly. Alternative nos-Cas9 insertions on the second and X chromosomes are being tested to improve the efficiency.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig4-v2.jpg)
+
+**Figure 4.:** (B) Complementation test: 90% of the T2A-GAL4 containing chromosomes fail to complement the corresponding Dfs; 5% produced less than 1/3 of the expected progeny; and 5% fully complemented the Dfs. For details see Supplemental Information 2. (C) T2A-GAL4 cassette excision. The lethality associated with 8 out 11 insertions is reverted in the presence of UAS-FLP. (D) Rescue of the lethality of the T2A-GAL4 cassette insertions with UAS-cDNA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The CRIMIC pM37 cassette contains polyA 3’ of GAL4 which will arrest transcription and typically generate a severe loss-of-function allele. (B) The lethality caused by SA-T2A-GAL4-polyA cassette insertion can often be reverted by cassette excision using the FRT sites at the ends of the cassette and FLP. (C) The inserted SA-T2A-GAL4-polyA cassette can be replaced with other DNA fragments containing two attB sites and phiC31 integrase by RMCE such as GFSTF. (D) The SA-T2A-GAL4-polyA insertion produces GAL4 that can be used to rescue the phenotype (lethality caused by the cassette insertion) with UAS-cDNA.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** CRIMIC T2A-GAL4 cassette, pM37 contains two FRT sites. The cassettes in three genes (Dsor1, Raf, Marf) failed to revert the lethality when exposed to UAS-FLP. However, cassette excision is still effective based on the loss of the 3XP3 Eye-GFP in Dsor1; however, weak GFP expression remains in Raf and Marf. Left panel: CRIMIC T2A-GAL4s; Right panel: CRIMIC T2A-GAL4s > UAS FLP. Scale bar: 0.2 mm.
+
 To assess expression patterns of the GOIs, we crossed the transgenic flies to UAS-mCD8::RFP, which labels cell membranes (Belenkaya et al., 2008) and thus can be easily distinguished from the 3XP3-GFP tag, which is used as a selectable marker for transgenesis and is sparsely expressed in the nervous system (Figure 3B). As shown in Figure 3C, the insertions in different genes produce a variety of expression patterns. For ten genes picked at random, several different independently isolated and sequenced insertions for a given gene exhibited very similar expression patterns, suggesting that the method is robust.
 
-## Coding intronic insertions of the SA-T2A-GAL4-polyA cassette generate loss-of-function mutations for ~90% of insertions
+### Coding intronic insertions of the SA-T2A-GAL4-polyA cassette generate loss-of-function mutations for ~90% of insertions
 
 The design of pM37 and the ability to use CRISPR should provide the following advantages: first, the ability to insert the CRIMIC cassettes in sites that affect all transcripts encoded by a gene and create severe loss-of-function or null alleles (Figure 4—figure supplement 1A); second, the ability to excise the mutagenic cassette in vivo (revert) using UAS-FLP under the control of GAL4 inserted in the GOI to assess if the CRIMIC cassette is indeed responsible for the observed phenotypes (Figure 4—figure supplement 1B); third, the ability to revert loss-of-function phenotypes in any tissues at any time to assess when a protein is required and if loss of the gene causes a permanent or reversible phenotype at the time of excision; fourth, the ability to choose an integration site that does not disrupt protein domains upon retagging with GFSTF (Figure 4—figure supplement 1C); fifth, the ability to insert any DNA flanked by attB sites and replace the SA-T2A-GAL4-polyA cassette. These include the following available cassettes: GFSTF, mCherry, GAL80, LexA, QF, and split-GAL4 (Diao et al., 2015; Venken et al., 2011a). Finally, the ability to test for rescue of the mutant phenotypes by driving the corresponding UAS-cDNA, a feature that also allows for structure-function analysis (Figure 4—figure supplement 1D).
 
@@ -92,13 +124,401 @@ Insertion of a SA-T2A-GAL4-polyA in a coding intron should arrest transcription 
 
 Because the SA-T2A-GAL4-polyA cassette should prematurely terminate transcription, and as the cassette in CRIMICs is flanked by FRT sequences, we next tested if the lethality associated with eleven insertions can be reverted by using the GAL4 to drive UAS-FLP (Figure 4—figure supplement 1B). We tested excision of 11 CRIMIC T2A-GAL4 insertions in essential genes on the X chromosome by simply crossing them with UAS-FLP. As shown in Figure 4C, eight out of eleven hemizygous lethal insertions on the X chromosome produced numerous viable flies when crossed to UAS-FLP. To assess the efficiency of FLP/FRT mediated CRIMIC cassette excision for the three genes for which we did not observe viable flies (Dsor1, Raf and Marf), we tested if the T2A-GAL4/+;+/+;UAS-FLP/+ females lacked the 3xP3-GFP marker associated with the T2A-GAL4 insertions. As shown in Figure 4—figure supplement 2, these flies did not express or barely expressed GFP in the eye, indicating that the efficiency of FLP-mediated excision is high. Given the rescue failure, we also tested whether these lines carry second-site recessive lethal mutations. However, all three are rescued by a genomic P[acman] clone (Table 1) indicating that these chromosomes do not carry second-site lethal mutations. All together, we conclude that cassette excision can revert the phenotype in most cases, providing a simple and powerful tool to assess the requirement for a gene product in a variety of cells and assess if the phenotype of interest is caused by the loss-of-function of the GOI (see Discussion).
 
-## Expression of UAS-cDNA rescues lethality associated with SA-T2A-GAL4-polyA insertions for ~70% of genes
+**Table 1.**
+ Rescue of the lethality of T2A-GAL4s insertions/Dfs with aUAS-cDNA and genomic duplications with P[acman] clones.*1:(Luo et al., 2017)*2:(Chao et al., 2017)*3:(Yoon et al., 2017)*4:(Sandoval et al., 2014). Note that a failure to rescue lethality does not mean that it cannot partially rescue other scorable phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">Flies for rescue</th>
+    </tr>
+    <tr>
+      <th>Line</th>
+      <th>Gene</th>
+      <th>Chr.</th>
+      <th>Protein isoforms</th>
+      <th>Flies for complementation test</th>
+      <th>Fly cDNA</th>
+      <th>Genomic DNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MI01374-TG4.0</td>
+      <td>sbr</td>
+      <td>X</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>no tag</td>
+      <td>Dp(1;3)DC508</td>
+    </tr>
+    <tr>
+      <td>MI02836-TG4.0</td>
+      <td>cac*1</td>
+      <td>X</td>
+      <td>8</td>
+      <td>NA</td>
+      <td>EGFP</td>
+      <td>Dp(1;3)DC131</td>
+    </tr>
+    <tr>
+      <td>MI07818-TG4.0</td>
+      <td>acj6</td>
+      <td>X</td>
+      <td>13</td>
+      <td>NA</td>
+      <td>3xHA</td>
+      <td>Dp(1;3)DC192</td>
+    </tr>
+    <tr>
+      <td>MI08675-TG4.1</td>
+      <td>arm</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>3xHA</td>
+      <td>Dp(1;3)DC034</td>
+    </tr>
+    <tr>
+      <td>MI10323-TG4.1</td>
+      <td>flw</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>1xHA</td>
+      <td>Dp(1;3)DC224</td>
+    </tr>
+    <tr>
+      <td>MI12214-TG4.2</td>
+      <td>if</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>no tag</td>
+      <td>Dp(1;3)DC319</td>
+    </tr>
+    <tr>
+      <td>MI00783-TG4.0</td>
+      <td>stj</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Df(2R)Exel7128/CyO</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI02963-TG4.0</td>
+      <td>CAP</td>
+      <td>2</td>
+      <td>20</td>
+      <td>Df(2R)BSC281/CyO</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI03306-TG4.1</td>
+      <td>kuz</td>
+      <td>2</td>
+      <td>4</td>
+      <td>Df(2L)BSC147/CyO</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI03597-TG4.1</td>
+      <td>mol</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(2R)Exel6066/CyO</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI04800-TG4.1</td>
+      <td>lola</td>
+      <td>2</td>
+      <td>20</td>
+      <td>Df(2R)ED2076/SM6a</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI06876-TG4.1</td>
+      <td>spin</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Df(2R)Jp8, w[+]/CyO</td>
+      <td>myc-EGFP</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI09180-TG4.1</td>
+      <td>Bsg</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(2L)ED548/SM6a</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI09585-TG4.1</td>
+      <td>Lpt</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(2R)BSC610/SM6a</td>
+      <td>1xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI13162-TG4.0</td>
+      <td>Rho1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Df(2R)ED2457/SM6a</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI13708-TG4.0</td>
+      <td>Cka</td>
+      <td>2</td>
+      <td>4</td>
+      <td>P{ry[+t7.2]=PZ}Cka[05836] cn[1]/CyO</td>
+      <td>EGFP</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI15480-TG4.2</td>
+      <td>kn*2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>Df(2R)BSC429/CyO</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI02220-TG4.1</td>
+      <td>dally</td>
+      <td>3</td>
+      <td>1</td>
+      <td>Df(3L)ED4413/TM6C, cu[1] Sb[1]</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI04910-TG4.1</td>
+      <td>ftz-f1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>Df(3L)BSC844/TM6C, Sb[1] cu[1]</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI06026-TG4.1</td>
+      <td>Nc73EF*3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>Df(3L)ED4685/TM6C,cu[1] Sb[1]</td>
+      <td>Flag</td>
+      <td>Dp(1;3)DC245</td>
+    </tr>
+    <tr>
+      <td>MI07056-TG4.0</td>
+      <td>Atg1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>Df(3L)BSC613/TM6C, cu[1] Sb[1]</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI08143-TG4.0</td>
+      <td>Sod1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>Df(3L)BSC817/TM6C, Sb[1] cu[1]</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MI05068-TG4.0</td>
+      <td>kdn</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Dp(1;3)DC154</td>
+    </tr>
+    <tr>
+      <td>Line</td>
+      <td>Gene</td>
+      <td>Chr.</td>
+      <td>Transcripts</td>
+      <td>Df</td>
+      <td>Fly cDNA</td>
+      <td>Genomic DNA</td>
+    </tr>
+    <tr>
+      <td>CR00323</td>
+      <td>Marf</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>1xHA*4</td>
+      <td>Dp(1;3)DC155</td>
+    </tr>
+    <tr>
+      <td>CR00446</td>
+      <td>Dsor1</td>
+      <td>X</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>3xHA</td>
+      <td>Dp(1;3)DC205</td>
+    </tr>
+    <tr>
+      <td>CR00483</td>
+      <td>Raf</td>
+      <td>X</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>no tag</td>
+      <td>Dp(1;3)DC404</td>
+    </tr>
+    <tr>
+      <td>CR00505</td>
+      <td>Rbf</td>
+      <td>X</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>3xHA</td>
+      <td>Dp(1;3)DC012</td>
+    </tr>
+    <tr>
+      <td>CR00638</td>
+      <td>Moe</td>
+      <td>X</td>
+      <td>7</td>
+      <td>NA</td>
+      <td>myc</td>
+      <td>Dp(1;3)DC199</td>
+    </tr>
+    <tr>
+      <td>CR00354</td>
+      <td>sax</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Df(2R)BSC265/CyO</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00465</td>
+      <td>Dap160</td>
+      <td>2</td>
+      <td>6</td>
+      <td>Df(2L)BSC302/CyO</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00466</td>
+      <td>Eps-15</td>
+      <td>2</td>
+      <td>4</td>
+      <td>Df(2R)BSC606/SM6a</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00494</td>
+      <td>l(2)gd1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(2L)Exel6027/CyO</td>
+      <td>1xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00521</td>
+      <td>Npc1a</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(2L)BSC143/CyO</td>
+      <td>YFP</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00559</td>
+      <td>Sod2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Df(2R)Exel7145/CyO</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00587</td>
+      <td>Hr38</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Df(3R)BSC510/TM6C, Sb[1] cu[1]</td>
+      <td>3xHA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00762</td>
+      <td>Wee1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Df(2L)BSC108/CyO</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CR00452</td>
+      <td>sr</td>
+      <td>3</td>
+      <td>4</td>
+      <td>Df(3R)BSC510/TM6C, Sb[1] cu[1]</td>
+      <td>no tag</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Blue: fail to complementGray: partially complementGreen: rescuedPink: fail to rescueOrange: rescue phenotype but not lethality_
+
+### Expression of UAS-cDNA rescues lethality associated with SA-T2A-GAL4-polyA insertions for ~70% of genes
 
 Expression of GAL4 may allow rescue of the lethality associated with an insertion by driving expression of a UAS-cDNA in a pattern that corresponds to the gene (Figure 4—figure supplement 1D). However, this may not be effective in many cases as the vast majority of genes have more than one splice isoform, and rescue with any one isoform encoded by a UAS-cDNA construct might not work (Table 1). In addition, many cDNAs are tagged at the C-terminal end and it has been estimated that about 22% of the genes tagged with 3XHA (Bischof et al., 2013) and 33% tagged with GFP disrupt gene function (Sarov et al., 2016). Moreover, since the GAL4/UAS system is an over-expression system, cDNA rescue may not be possible for genes that are sensitive to dosage. Nevertheless, we assessed the ability of a single UAS-cDNA per gene to rescue mutant phenotypes associated with disruption of 36 genes for which we were able to find a UAS-cDNA (Bischof et al., 2013; Gramates et al., 2017). For 11 genes on the X-chromosome, we assessed rescue of male lethality, whereas for genes on the second and third chromosomes, we assessed rescue of SA-T2A-GAL4-polyA-induced lethality over the corresponding Dfs that fail to complement the lethality. To ensure that the lethality of the genes on the X-chromosome is indeed associated with the insertions, we first performed genomic rescue using the 80 kb P[acman] BAC transgenic lines (Venken et al., 2010). The lethality of all genes on the X-chromosome was rescued with the corresponding P[acman] clones (Table 1), indicating that these chromosomes are very unlikely to carry second-site mutations. Of the 36 essential genes that carry SA-T2A-GAL4-polyA, 25 (~70%) could be rescued by a single UAS-cDNA driven by the endogenous GAL4 (Figure 4D; Table 1).
 
-## Characterization of cell type-specific expression patterns of genes tagged with T2A-GAL4
+### Characterization of cell type-specific expression patterns of genes tagged with T2A-GAL4
 
 The sensitivity of T2A-GAL4 tagging allows us to determine where genes are expressed, especially when expression levels in specific cell populations are low, as shown for the adult brain in Figure 1. We therefore determined the expression patterns of 550 genes in adult brains and documented expression patterns of many genes that have not been previously reported (Gramates et al., 2017) (Figure 5; Figure 5—figure supplements 1–3). Nearly 80% of all tested tagged genes are expressed in adult brains.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig5-v2.jpg)
+
+**Figure 5.:** The GAL4s (underlined) are existing P-element enhancer traps expressing GAL4 in specific cell populations and serve as controls. mCD8::GFP: green. Scale bar: 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Five genes previously not reported to be expressed in trachea (sprt, geko, ex, Samuel, Cad96Ca). Expression in trachea in adult brains and VNC. MiMIC T2A-GAL4s were crossed with UAS-mCD8::GFP (green). Scale bar: 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Two genes (Egfr, Tret1-1) previously documented to be expressed in glia and twelve genes not previously documented to be expressed in glia (bdl, Zasp52, rols, ine, CG5404, CG14688, CG31663, ry, CG4752,βTub97EF, CG32473, LManII) in adult brains. MiMIC T2A- GAL4s were crossed with UAS-mCD8::GFP (green). Note that the damages were caused by dissections in MI02852-Egfr and MI02136-ry. Scale bar: 50 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/35574/elife-35574-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** 16 genes (NimB2, Lerp, CG7744, cnc, CG2656, spin, gem, Fs, Aldh-III, CG33056, grsm, CG31075, Pi3K68D, Dh44-R2, Lgr4, Atg16) exhibit relatively specific expression in PI neurons in adult brains. MiMIC T2A-GAL4s were crossed with UAS-mCD8::GFP (green). Scale bar: 50 μm.
 
 The smallest category of genes (9/550 or 2%) corresponds to genes expressed in trachea, a tubular system that provides oxygen to all tissues (Varner and Nelson, 2014). For example, breathless (btl) encodes a protein kinase expressed specifically in the trachea and is involved in tracheal branching (Lee et al., 1996). A comparison of the GAL4>UAS-mCD8::GFP expression pattern of a GAL4 based P-element enhancer detector in btl (P[GawB]btlNP6593) (Hayashi et al., 2002) and the T2A-GAL4 insertion (MI03286-TG4.0) in the brain and thoracicoabdominal ganglion (TAG) show very similar mesh-like tracheal patterns. Another gene previously documented to be expressed in trachea, empty spiracles (emp), also shows that the T2A-GAL4 insertion drives expression in trachea (Hart and Wilcox, 1993). In Figure 5 and Figure 5—figure supplement 1, we report the expression of seven other genes that have not been reported to be expressed in trachea (FlyBase 2.0/FB2017_06). Hence, nine genes out of 550 tested are expressed in trachea and for seven of these, detection of expression in the trachea is novel (Frl, CG8213, sprt, geko, ex, Samuel, Cad96Ca).
 
@@ -124,11 +544,11 @@ In summary, this library provides a set of ~1000 gene-specific GAL4 drivers for
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 Fly stocks were maintained on standard cornmeal-yeast-agar medium at 25°C, and on a 12/12 hr light/dark cycle. The MiMIC and CRIMIC flies were created in the Bellen lab (see Flypush or Supplementary file 2). UAS-2xEGFP, hs-Cre,vas-dϕC31, Trojan T2A-GAL4 triplet flies were from Dr. Ben White (Diao et al., 2015). The RMCE conversion of MiMICs with GFSTF and T2A-GAL4 cassettes was described in previous studies (Diao et al., 2015; Nagarkar-Jaiswal et al., 2015a; Nagarkar-Jaiswal et al., 2015b). The crossing schemes for CRIMICs are shown in Supplemental Information 1. btl-GAL4, Ilp2-GAL4, repo-GAL4, gcm-GAL4, UAS-mCD8::GFP, UAS-mCD8::RFP, P[acman] flies, and UAS-FLP flies were obtained from the Bloomington Drosophila Stock Center (BDSC, USA). UAS-if was from Dr. Celeste Berg (Beumer et al., 1999). NP1243-GAL4, NP2222-GAL4, and NP6250-GAL4 are from Kyoto Stock Center (Kyoto DGGR, Japan). Dfs flies were from BDSC or Kyoto DGGR. UAS-cDNA flies were from BDSC or FlyORF (Switzerland). y,w;attP40(y+){nos-Cas9(v+)}/CyO (Kondo and Ueda, 2013) and y,w;+/+; attP2(y+){nos-Cas9(v+)} (Ren et al., 2013) were isogenized in this work. See Supplementary file 2 for the genotypes and stock numbers of fly stocks. All references to FlyBase are based on FlyBase 2.0/FB2017_06 (Gramates et al., 2017).
 
-## Plasmid construction
+### Plasmid construction
 
 TypeIISRE-attP-FRT-SA-3xStop-SV40-3xP3-GFP-SV40-FRT-attP-TypeIISRE fragment was synthesized in two parts by GENEWIZ (www.genewiz.com) in the pUC57 vector (pM5 and pM7 were synthesized by GENEWIZ). Next, the ~1.2 kb fragment of attP-FRT-SA-3xStop-SV40-3xP3 in pM5 was digested with BstXI and EagI. The ~1.3 kb fragment of GFP-SV40-FRT-attP in pM7 was digested with EagI and EcoRV. To generate pM14, these two DNA fragments were separated and purified from agarose gel and ligated with pBS-deltaBsaI vector which was digested with BstXI and EcoRV (molar ratio of insert:vector = 5:1). The ligation mix (1 μg/8 μl total DNA + 1 μl 10xT4 DNA Ligase Buffer + 1 μl T4 DNA ligase) was incubated at 16°C overnight then transformed into NEB® Stable E. coli competent cells. Cells were raised on ampicillin (50 μg/ml)/LB agar plate at 37°C overnight. pM14 plasmids were checked by double digestion of BstXI and EcoRV.
 
@@ -138,7 +558,7 @@ CACACCGAAGCccc (fwd) and DLK331 = AGAGAGAATTCCTACATGGTAATGT TACTAGAGAATAGGAACTTC
 
 pM37 vectors were modified from pM14 by replacing 3xStop with T2A-GAL4 of different phases from pT-GEM vectors of the corresponding phase (Diao et al., 2015). Briefly the EcoRI-PstI fragment of pM14 was subcloned in pBluescript SK and mutagenized by PCR mutagenesis to replace 3XStop sequences with AscI restriction enzyme site and subcloned back in pM14 vector. T2A-GAL4 sequences were PCR amplified from pT-GEM vector and cloned in EcoRI/MfeI and AscI sites in mutated pM14, generating pM14 T2A-GAL4 vector. AscI-SbfI fragment of T2A-GAL4 was resynthesized to remove Type IIS RE sites by substituting base pairs corresponding to Type IIS REs with synonymous mutations eliminating the sites. The resulting fragment was subcloned in pM14 T2A-GAL4 vector. pM14 and pM36 vectors were found to be unstable in bacteria, frequently recombining out the 3XP3-GFP cassette. Further analysis showed that 3XP3 promoter fragment of pM14 and pM36 was 290 bps longer than other vectors that use the same marker. Shortening this fragment by PCR and replacing the AscI-FseI fragment with the shortened fragment improved stability of the vector in bacteria, creating the pM37 vector. Sequences of pM14, pM36 and pM37 can be found in Supplementary file 3.
 
-## CRIMIC production
+### CRIMIC production
 
 We analyzed the introns of all protein-coding genes of Drosophila melanogaster annotated at FlyBase and selected the genes that have at least one CDS intron that is >100 bp and is shared by all isoforms. Based on FlyBase release 6.16, there are 5822 protein-coding genes that meet these criteria. Then, we removed the genes that are covered by the MIMIC Gold collection and prioritized the genes if their human ortholog(s) are disease-related (Hu et al., 2011). We also prioritized genes based on the nomination from scientific community through a web site (http://www.flyrnai.org/tools/crimic/web/). sgRNA targeting the qualified CDS introns were selected based on their efficiency score and specificity annotated at Find CRISPR Tool (Ren et al., 2013). The homology arms upstream or downstream of the cutting site were designed using Primer3 (Untergasser et al., 2012). We required that the homology arms are between 500 and 1200 bp in length, less than 40 bp apart from each other, and free of one or more of the three restriction enzymes (BsaI, BbsI, BsmBI) used for cloning.
 
@@ -146,14 +566,14 @@ Donor constructs were generated as previously described (Housden and Perrimon, 2
 
 sgRNA constucts were generated as previously described (Housden et al., 2016). Briefly, sense and antisense oligos containing the 20 bp guide target sequence were annealed and phosphorylated with T4 Polynucleotide Kinase (NEB), then inserted between BbsI sites in the pl100 sgRNA expression vector (Ren et al., 2013). Ligation products were transformed into TOP10 Competent Cells (ThermoFisher), and plated overnight. Colonies were cultured, DNA prepared by miniprep, and sequences verified prior to injection. We injected a mix of 25 ng/μl sgRNA and 150 ng/μl donor DNA in isogenized fly embryos of the following genotypes y,w; attP40(y+){nos-Cas9(v+)}/CyO (Kondo and Ueda, 2013) and y,w; +/+; attP2(y+){nos-Cas9(v+)} (Ren et al., 2013) to generate CRIMIC insertions (Housden et al., 2016; Housden and Perrimon, 2016).
 
-## PCR validation
+### PCR validation
 
 For validation of MiMIC conversion and CRIMIC cassette insertion events, the genomic DNA was extracted from ~20 adult flies using the PureLink Genomic DNA Mini Kit (Invitrogen). For MiMIC conversions, four reactions of PCR were performed with tag-specific primers and MiMIC specific primers as described previously (Diao et al., 2015; Venken et al., 2011a). The PCR reaction mix was: 1 μl genomic DNA (~10 ng), 1 μl primer 1 (10 μM), 1 μl primer 2 (10 μM), 4.5 μl H2O, and 7.5 μl GoTaq Green Master Mix (Promega). Hot start PCR conditions in C100 Touch Thermal Cycler (Bio-Rad) were: denaturation at 95° for 1 min, 34 cycles at 95° for 30 s, 56° for 30 s and 72° for 60 s, and post-amplification extension at 72° for 10 min. For CRIMIC cassette insertion, two reactions of PCR were performed with target-specific primers (see our website at Flypush) and attP-R primer (5’-CCCCAGTTGGGGC-3’) (Figure 2—figure supplement 1). PCR reaction mix was: 1 μl genomic DNA (~10 ng), 1 μl primer 1 (10 μM), 1 μl primer 2 (10 μM), 4.5 μl H2O, and 7.5 μl GoTaq Green Master Mix (Promega). Hot start PCR conditions in C100 Touch Thermal Cycler (Bio-Rad) were: denaturation at 95° for 1 min, 40 cycles at 95° for 30 s, 56° for 30 s and 72° for 2 min 30 s, and post-amplification extension at 72° for 10 min.
 
-## pM37 cassette excision
+### pM37 cassette excision
 
 Virgin female pM37 flies were collected and crossed with male flies carrying a UAS-FLP on the third chromosome. The adult eyes of pM37/+;+/+;UAS-FLP/+ for insertions in Dsor1, Raf and Marf were imaged with a fluorescent microscope (Zeiss SteREO Discovery.V20).
 
-## Confocal imaging
+### Confocal imaging
 
 Confocal imaging was performed as described previously (Lee et al., 2011). In brief, dissected adult brains or VNCs were fixed in 4% paraformaldehyde/1xPBS at 4°C overnight, transferred to 2% Triton X-100/1xPBS at room temperature, vacuumed for 1 hr and left overnight in the same solution at 4°C. The larvae brains or other tissues were fixed in 4% paraformaldehyde/1 xPBS at 4°C for at least 2 hr, transferred to 0.5% Triton X-100/1xPBS at 4°C for overnight. For immunostaining, the samples were blocked in 10% NGS/0.5% Triton X-100/1xPBS and incubated with primary antibodies (1:50 ~ 200 dilution) at 4°C for overnight with shaking, then washed with 0.5% Triton X-100/1xPBS for 5 min three times. The secondary antibodies conjugated with Alexa-488 or Alexa-647 (Jackson ImmunoResearch) were diluted 1:100 ~ 500 in 0.5% Triton X-100/1xPBS and incubated with samples at 4°C for overnight with shaking. For immunostaining of GFP, the samples were incubated with anti-GFP antibody conjugated with FITC (1:500) (Abcam) in 1xPBS with 0.5% Triton X-100 for overnight. Samples were cleared and mounted in RapiClear (SunJin Lab Co.) and imaged with a Zeiss LSM 880 Confocal Microscope under a 20x or 40x C-Apochromat water immersion objective lens.

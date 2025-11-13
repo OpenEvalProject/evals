@@ -17,13 +17,13 @@
 
 1. Department of Ultrasound, the General Hospital of Tibet Military Command Tibet China
 2. Department of High Mountain Sickness, the General Hospital of Tibet Military Command Tibet China
-3. https://ror.org/02d217z27 Department of Ultrasound, Xinqiao Hospital, Army Medical University Chongqing China
+3. Department of Ultrasound, Xinqiao Hospital, Army Medical University Chongqing China ([ROR:02d217z27](https://ror.org/02d217z27))
 
 † Corresponding author
 
 ## Abstract
 
-Individuals residing in plateau regions are susceptible to pulmonary hypertension (PH) and there is an urgent need for a prediction nomogram to assess the risk of PH in this population. A total of 6603 subjects were randomly divided into a derivation set and a validation set at a ratio of 7:3. Optimal predictive features were identified through the least absolute shrinkage and selection operator regression technique, and nomograms were constructed using multivariate logistic regression. The performance of these nomograms was evaluated and validated using the area under the curve (AUC), calibration curves, the Hosmer–Lemeshow test, and decision curve analysis. Comparisons between nomograms were conducted using the net reclassification improvement (NRI) and integrated discrimination improvement (IDI) indices. Nomogram I was established based on independent risk factors, including gender, Tibetan ethnicity, age, incomplete right bundle branch block (IRBBB), atrial fibrillation (AF), sinus tachycardia (ST), and T wave changes (TC). The AUCs for Nomogram I were 0.716 in the derivation set and 0.718 in the validation set. Nomogram II was established based on independent risk factors, including Tibetan ethnicity, age, right axis deviation, high voltage in the right ventricle, IRBBB, AF, pulmonary P waves, ST, and TC. The AUCs for Nomogram II were 0.844 in the derivation set and 0.801 in the validation set. Both nomograms demonstrated satisfactory clinical consistency. The IDI and NRI indices confirmed that Nomogram II outperformed Nomogram I . Therefore, the online dynamic Nomogram II was established to predict the risks of PH in the plateau population.
+Individuals residing in plateau regions are susceptible to pulmonary hypertension (PH) and there is an urgent need for a prediction nomogram to assess the risk of PH in this population. A total of 6603 subjects were randomly divided into a derivation set and a validation set at a ratio of 7:3. Optimal predictive features were identified through the least absolute shrinkage and selection operator regression technique, and nomograms were constructed using multivariate logistic regression. The performance of these nomograms was evaluated and validated using the area under the curve (AUC), calibration curves, the Hosmer–Lemeshow test, and decision curve analysis. Comparisons between nomograms were conducted using the net reclassification improvement (NRI) and integrated discrimination improvement (IDI) indices. NomogramI was established based on independent risk factors, including gender, Tibetan ethnicity, age, incomplete right bundle branch block (IRBBB), atrial fibrillation (AF), sinus tachycardia (ST), and T wave changes (TC). The AUCs for NomogramI were 0.716 in the derivation set and 0.718 in the validation set. NomogramII was established based on independent risk factors, including Tibetan ethnicity, age, right axis deviation, high voltage in the right ventricle, IRBBB, AF, pulmonary P waves, ST, and TC. The AUCs for NomogramII were 0.844 in the derivation set and 0.801 in the validation set. Both nomograms demonstrated satisfactory clinical consistency. The IDI and NRI indices confirmed that NomogramII outperformed NomogramI. Therefore, the online dynamic NomogramII was established to predict the risks of PH in the plateau population.
 
 ## Introduction
 
@@ -37,11 +37,590 @@ In this study, we developed and validated two risk prediction models for high-al
 
 ## Results
 
-## Subjects’ characteristics
+### Subjects’ characteristics
 
 Following a 7:3 allocation ratio, 4622 subjects were placed in the derivation set and 1981 subjects in the validation set. The characteristics of the subjects are presented in Table 1. The prevalence of PH of Grade I or higher was 39.57% (1829 cases) in the derivation set and 39.27% (778 cases) in the validation set (p = 0.820 > 0.05). The prevalence of PH of Grade II or higher was 8.55% (395 cases) in the derivation set and 8.58% (170 cases) in the validation set (p = 0.962 > 0.05). No significant difference was observed in the age distribution between the derivation and validation sets (42.43 ± 16.93 vs 42.05 ± 16.41, p = 0.390 > 0.05), with age categorised into ≤42 and >42 subgroups based on the mean age. The composition ratios of the two age subgroups did not significantly differ between the validation and derivation sets (p = 0.6352 > 0.05). Furthermore, no significant differences were observed in the characteristics related to gender, Tibetan or not, right axis deviation (RAD), clockwise rotation (CR), counterclockwise rotation (CCR), high voltage in the right ventricle (HVRV), incomplete right bundle branch block (IRBBB), complete right bundle branch block (CRBBB), atrial fibrillation (AF), sinus arrhythmia (SA), sinus tachycardia (ST), sinus bradycardia (SB), T wave changes (TC), ST-segment changes (STC), atrial premature beats (APB), ventricular premature beats (VPB), junctional premature beats (JPB), pulmonary P waves (PP), atrioventricular block (IAB, I-degree atrioventricular block), and complete left bundle branch block (CLBBB) (Table 1).
 
-## Independent risk factors in PH ≥ I grade group and PH ≥ II grade group
+**Table 1.**
+ Baseline characteristics of individuals in the derivation and validation sets.Table 1—source data 1.The raw data of Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th></th>
+      <th>Derivation set (n = 4622)</th>
+      <th>Validation set (n = 1981)</th>
+      <th></th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AgeTotal (mean ± SD)</td>
+      <td></td>
+      <td>42.43 ± 16.93</td>
+      <td>42.05 ± 16.41</td>
+      <td></td>
+      <td>0.390</td>
+    </tr>
+    <tr>
+      <td>Age ≤42, n (%)</td>
+      <td></td>
+      <td>2619 (56.66)</td>
+      <td>1135 (57.29)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age &gt;42, n (%)</td>
+      <td></td>
+      <td>2003 (43.34)</td>
+      <td>846 (42.71)</td>
+      <td></td>
+      <td>0.635</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tibetan, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.538</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>2856 (61.79)</td>
+      <td>1240 (62.59)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>1766 (38.21)</td>
+      <td>741 (37.41)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.260</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td></td>
+      <td>1219 (26.37)</td>
+      <td>549 (27.71)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td></td>
+      <td>3403 (73.63)</td>
+      <td>1432 (72.29)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RAD, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.141</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>3833 (82.93)</td>
+      <td>1672 (84.40)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>789 (17.07)</td>
+      <td>309 (15.60)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CR, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.387</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4000 (86.54)</td>
+      <td>1730 (87.33)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>622 (13.46)</td>
+      <td>251 (12.67)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCR, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.402</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>3994 (86.41)</td>
+      <td>1727 (87.18)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>628 (13.59)</td>
+      <td>254 (12.82)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HVRV, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.102</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4151 (89.81)</td>
+      <td>1805 (91.12)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>471 (10.19)</td>
+      <td>176 (8.88)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IRBBB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.573</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4547 (98.38)</td>
+      <td>1945 (98.18)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>75 (1.62)</td>
+      <td>36 (1.82)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRBBB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.945</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4444 (96.15)</td>
+      <td>1904 (96.11)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>178 (3.85)</td>
+      <td>77 (3.89)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AF, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.594</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4551 (98.46)</td>
+      <td>1954 (98.64)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>71 (1.54)</td>
+      <td>27 (1.36)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SA, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.243</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4247 (91.89)</td>
+      <td>1837 (92.73)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>375 (8.11)</td>
+      <td>144 (7.27)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.910</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4395 (95.09)</td>
+      <td>1885 (95.15)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>227 (4.91)</td>
+      <td>96 (4.85)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.345</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4245 (91.84)</td>
+      <td>1833 (92.53)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>377 (8.16)</td>
+      <td>148 (7.47)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TC, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.769</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4003 (86.61)</td>
+      <td>1721 (86.88)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>619 (13.39)</td>
+      <td>260 (13.12)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STC, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.415</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4399 (95.18)</td>
+      <td>1876 (94.70)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>223 (4.82)</td>
+      <td>105 (5.30)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.219</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4587 (99.24)</td>
+      <td>1960 (98.94)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>35 (0.76)</td>
+      <td>21 (1.06)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JPB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.425</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4603 (99.59)</td>
+      <td>1970 (99.44)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>19 (0.41)</td>
+      <td>11 (0.56)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VPB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.844</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4580 (99.09)</td>
+      <td>1962 (99.04)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>42 (0.91)</td>
+      <td>19 (0.96)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PP, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.439</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4507 (97.51)</td>
+      <td>1938 (97.83)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>115 (2.49)</td>
+      <td>43 (2.17)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CLBBB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.757</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4610 (99.74)</td>
+      <td>1975 (99.70)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>12 (0.26)</td>
+      <td>6 (0.30)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IAB, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.910</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4556 (98.57)</td>
+      <td>1952 (98.54)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>66 (1.43)</td>
+      <td>29 (1.46)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PH ≥ I grade, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>2793 (60.43)</td>
+      <td>1203 (60.73)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>1829 (39.57)</td>
+      <td>778 (39.27)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PH ≥ II grade, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.962</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td></td>
+      <td>4227 (91.45)</td>
+      <td>1811 (91.42)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td>395 (8.55)</td>
+      <td>170 (8.58)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Independent risk factors in PH ≥ I grade group and PH ≥ II grade group
 
 In the PH ≥ I grade group, based on the λ_min criterion in the least absolute shrinkage and selection operator (LASSO) regression model, 18 out of 22 variables were selected. However, this selection was deemed excessive for practical clinical applications. Therefore, we further refined the model using the λ_1se criterion, which reduced the number of variables, albeit with a significant decrease in the area under the curve (AUC) of the receiver operating characteristic (ROC) curve (λ_1se) compared to the ROC curve (λ_min) (Figures 1 and 2C, E, and G). Ultimately, nine variables were chosen according to λ_1se, including gender, Tibetan ethnicity, age ≤42, age >42, IRBBB, CRBBB, AF, ST, and TC (Figure 2I). Gender, Tibetan ethnicity, age, IRBBB, AF, ST, and TC were subsequently identified as independent risk factors for PH ≥ I grade through multivariate logistic regression analysis and were used to develop NomogramI (Table 2).
 
@@ -51,45 +630,193 @@ In the PH ≥ I grade group, based on the λ_min criterion in the least absolute
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98169/elife-98169-fig2-v1.jpg)
 
-**Figure 2.:** Panels A and B depict the measurement of tricuspid regurgitation spectra via transthoracic echocardiography in patients with Grade I pulmonary hypertension (PH) (A) and Grade III PH (B). Panels C to J demonstrate the identification of the optimal penalisation coefficient lambda (λ) in the LASSO model using 10-fold cross-validation for the PH ≥ I grade group (C) and the PH ≥ II grade group (D). The dotted line on the left (λ_min) represents the value of the harmonic parameter log(λ) at which the model’s error is minimised, and the dotted line on the right (λ_1se) indicates the value of the harmonic parameter log(λ) at which the model’s error is minimal minus 1 standard deviation. The LASSO coefficient profiles of 22 predictive factors for the PH ≥ I grade group (E) and the PH ≥ II grade group (F) show that as the value of λ decreased, the degree of model compression increased, enhancing the model’s ability to select significant variables. Receiver operating characteristic (ROC) curves were constructed for three models (LASSO, LASSO-λ_min, and LASSO-λ_1se) in both the PH ≥ I grade group (G) and the PH ≥ II grade group (H). Histograms depict the final variables selected according to λ_1se and their coefficients for the PH ≥ I grade group (I) and the PH ≥ II grade group (J). Asterisks denote levels of statistical significance: *p < 0.05, **p < 0.01, ***p < 0.001.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Panels A and B depict the measurement of tricuspid regurgitation spectra via transthoracic echocardiography in patients with Grade I pulmonary hypertension (PH) (A) and Grade III PH (B). Panels C to J demonstrate the identification of the optimal penalisation coefficient lambda (λ) in the LASSO model using 10-fold cross-validation for the PH ≥ I grade group (C) and the PH ≥ II grade group (D). The dotted line on the left (λ_min) represents the value of the harmonic parameter log(λ) at which the model’s error is minimised, and the dotted line on the right (λ_1se) indicates the value of the harmonic parameter log(λ) at which the model’s error is minimal minus 1 standard deviation. The LASSO coefficient profiles of 22 predictive factors for the PH ≥ I grade group (E) and the PH ≥ II grade group (F) show that as the value of λ decreased, the degree of model compression increased, enhancing the model’s ability to select significant variables. Receiver operating characteristic (ROC) curves were constructed for three models (LASSO, LASSO-λ_min, and LASSO-λ_1se) in both the PH ≥ I grade group (G) and the PH ≥ II grade group (H). Histograms depict the final variables selected according to λ_1se and their coefficients for the PH ≥ I grade group (I) and the PH ≥ II grade group (J). Asterisks denote levels of statistical significance: *p < 0.05, **p < 0.01, ***p < 0.001.
+
+**Table 2.**
+ Risk factors for pulmonary hypertension (PH) ≥ I grade in the derivation set.Table 2—source data 1.Raw data of Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>β-Coefficient</th>
+      <th></th>
+      <th>OR (95% CI)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tibetan</td>
+      <td>0.34</td>
+      <td></td>
+      <td>1.40 (1.23–1.60)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>−0.3</td>
+      <td></td>
+      <td>0.74 (0.65–0.84)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.034</td>
+      <td></td>
+      <td>1.03 (1.03–1.04)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>IRBBB</td>
+      <td>1.106</td>
+      <td></td>
+      <td>3.02 (1.96–4.67)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>AF</td>
+      <td>1.431</td>
+      <td></td>
+      <td>4.18 (2.19–7.97)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ST</td>
+      <td>0.369</td>
+      <td></td>
+      <td>1.45 (1.14–1.84)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>TC</td>
+      <td>0.306</td>
+      <td></td>
+      <td>1.36 (1.16–1.59)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 In the PH ≥ II grade group, based on the λ_1se criterion in the LASSO regression model (Figure 2D, F), 11 variables were selected to align with clinical needs. These variables were Tibetan ethnicity, age ≤42, age >42, RAD, HVRV, IRBBB, CRBBB, AF, PP, ST, and TC (Figure 2J). Tibetan ethnicity, age, RAD, HVRV, IRBBB, AF, PP, ST, and TC were determined to be independent risk factors for PH ≥ II grade through multivariate logistic regression analysis and were utilised to construct NomogramII (Table 3).
 
-## Construction of NomogramI in PH ≥ I grade group and NomogramII in PH ≥ II grade group
+**Table 3.**
+ Risk factors for pulmonary hypertension (PH) ≥ II grade in the derivation set.Table 3—source data 1.The raw data of Table 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>β-Coefficient</th>
+      <th></th>
+      <th>OR (95% CI)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tibetan</td>
+      <td>0.689</td>
+      <td></td>
+      <td>1.99 (1.55–2.57)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.042</td>
+      <td></td>
+      <td>1.04 (1.03–1.05)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>RAD</td>
+      <td>0.751</td>
+      <td></td>
+      <td>2.12 (1.56–2.88)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>HVRV</td>
+      <td>0.486</td>
+      <td></td>
+      <td>1.63 (1.14–2.31)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>IRBBB</td>
+      <td>1.512</td>
+      <td></td>
+      <td>4.53 (2.77–7.42)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>AF</td>
+      <td>2.102</td>
+      <td></td>
+      <td>8.18 (5.13–13.05)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ST</td>
+      <td>1.247</td>
+      <td></td>
+      <td>3.48 (2.58–4.70)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>TC</td>
+      <td>0.592</td>
+      <td></td>
+      <td>1.81 (1.44–2.27)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>PP</td>
+      <td>1.486</td>
+      <td></td>
+      <td>4.42 (2.96–6.61)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of NomogramI in PH ≥ I grade group and NomogramII in PH ≥ II grade group
 
 In the PH ≥ I grade group, a predictive NomogramI for PH ≥ I grade was developed based on independent risk factors, including gender, Tibetan ethnicity, age, IRBBB, AF, ST, and TC. Points are assigned to each independent factor by drawing a vertical line to the points scale. The total points for an individual correspond to their risk of developing PH. Patients were then classified into high- and low-risk subgroups according to the total score’s cut-off value (cut-off value: 45), which was determined based on the ROC curve (Figure 3A). The risks for the two groups were evaluated in both the derivation and validation sets. In the derivation set, the risk of PH in the high-risk group was significantly higher than in the low-risk group (odds ratio [OR]: 4.210, 95% confidence interval [CI]: 3.715–4.775) (Figure 3B), as was also observed in the validation set (OR: 4.207, 95% CI: 3.476–5.102) (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98169/elife-98169-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) NomogramI for the prediction of PH ≥ I grade in the PH ≥ I grade group. Points for each independent factor are summed to calculate total points, determining the corresponding ‘risk’ level. Patients were divided into ‘High-risk’ and ‘Low-risk’ subgroups according to the cut-off of the total points (A). Histograms illustrate the odds ratio (OR) comparing the ‘High-risk’ group to the ‘Low-risk’ group in the derivation set (B) and validation set (C). (D–F) NomogramII for predicting PH ≥ II grade within the PH ≥ II grade group: Similarly, points from each independent factor are totalled, and the corresponding ‘risk’ level is ascertained. Patients are divided into ‘High-risk’ and ‘Low-risk’ groups based on the cut-off value of the total points (D). Histograms display the OR for the ‘High-risk’ group compared to the ‘Low-risk’ group in the derivation (E) and validation set (F). ***p < 0.001. (G) Screenshot of dynamic NomogramII’s web page.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–C) NomogramI for the prediction of PH ≥ I grade in the PH ≥ I grade group. Points for each independent factor are summed to calculate total points, determining the corresponding ‘risk’ level. Patients were divided into ‘High-risk’ and ‘Low-risk’ subgroups according to the cut-off of the total points (A). Histograms illustrate the odds ratio (OR) comparing the ‘High-risk’ group to the ‘Low-risk’ group in the derivation set (B) and validation set (C). (D–F) NomogramII for predicting PH ≥ II grade within the PH ≥ II grade group: Similarly, points from each independent factor are totalled, and the corresponding ‘risk’ level is ascertained. Patients are divided into ‘High-risk’ and ‘Low-risk’ groups based on the cut-off value of the total points (D). Histograms display the OR for the ‘High-risk’ group compared to the ‘Low-risk’ group in the derivation (E) and validation set (F). ***p < 0.001. (G) Screenshot of dynamic NomogramII’s web page.
 
 In the PH ≥ II grade group, a predictive NomogramII for PH ≥ II grade was developed using independent risk factors, including Tibetan ethnicity, age, RAD, HVRV, IRBBB, AF, PP, ST, and TC. Based on the cut-off value of the total score (cut-off value: 76), determined in line with the ROC curve, patients were categorised into high- and low-risk subgroups (Figure 3D). The risks for the two groups were evaluated in both the derivation and validation sets. In the derivation set, the risk of PH in the high-risk group was significantly greater than in the low-risk group (OR: 11.591, 95% CI: 9.128–14.845) (Figure 3E), a finding that was replicated in the validation set (OR: 7.103, 95% CI: 5.106–9.966) (Figure 3F).
 
-## Assessment and validation of NomogramI in the PH ≥ I grade group and NomogramII in the PH ≥ II grade group
+### Assessment and validation of NomogramI in the PH ≥ I grade group and NomogramII in the PH ≥ II grade group
 
 In the PH ≥ I grade group, NomogramI was developed to predict the risk of PH ≥ I grade, utilising the AUC to assess its discriminative ability. The AUC value for NomogramI was 0.716 (95% CI: 0.701–0.731) in the derivation set (Figure 4A) and 0.718 (95% CI: 0.695–0.741) in the validation set (Figure 4D). Furthermore, ROC curves were used to compare the discriminative capacity of NomogramI and single independent factors in predicting PH ≥ I grade. Notably, the AUC of NomogramI was significantly higher than that of any single independent factor in the derivation (Figure 4B, C) and the validation set (Figure 4E, F). The calibration curves for the derivation set (Figure 5A) and the validation set (Figure 5B) demonstrated high agreement between predicted and actual values, indicating that NomogramI accurately predicts PH ≥ I grade. The results of the Hosmer–Lemeshow test in both the derivation set (p = 0.109 > 0.05) and the validation set (p = 0.317 > 0.05) further confirmed the effective performance of NomogramI (Figure 5E).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/98169/elife-98169-fig4-v1.jpg)
 
-**Figure 4.:** I in pulmonary hypertension (PH) ≥ I and NomogramII in PH ≥ II grade groups.In the PH ≥ I grade group, the ROC and corresponding AUC of NomogramI and independent factors in the derivation set (A–C) and validation set (D–F). In the PH ≥ II grade group, the ROC and corresponding AUC of NomogramII and independent factors in the derivation set (G–I) and validation set (J–L).Figure 4—source data 1.Figure 4.
+**Figure 4.:** In the PH ≥ I grade group, the ROC and corresponding AUC of NomogramI and independent factors in the derivation set (A–C) and validation set (D–F). In the PH ≥ II grade group, the ROC and corresponding AUC of NomogramII and independent factors in the derivation set (G–I) and validation set (J–L).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/98169/elife-98169-fig5-v1.jpg)
 
-**Figure 5.:** I in pulmonary hypertension (PH) ≥ I and NomogramII in PH ≥ II grade groups.In the PH ≥ I grade group, the calibration plots of NomogramI in the derivation set (A) and the validation set (B). In the PH ≥ II grade group, the calibration plots of NomogramII in the derivation set (C) and the validation set (D). (E) In the PH ≥ I grade group, Hosmer–Lemeshow test results for NomogramI in the derivation set and the validation set. (F) In the PH ≥ II grade group, Hosmer–Lemeshow test results for NomogramII in the derivation set and the validation set.Figure 5—source data 1.Figure 5.
+**Figure 5.:** In the PH ≥ I grade group, the calibration plots of NomogramI in the derivation set (A) and the validation set (B). In the PH ≥ II grade group, the calibration plots of NomogramII in the derivation set (C) and the validation set (D). (E) In the PH ≥ I grade group, Hosmer–Lemeshow test results for NomogramI in the derivation set and the validation set. (F) In the PH ≥ II grade group, Hosmer–Lemeshow test results for NomogramII in the derivation set and the validation set.
 
 NomogramII was developed to predict the risk of PH ≥ II grade. The AUC for NomogramII was 0.844 (95% CI: 0.823–0.865) in the derivation set (Figure 4G) and 0.801 (95% CI: 0.763–0.838) in the validation set (Figure 4J). Furthermore, ROC curves were used to compare the discriminative capacity of NomogramII and individual independent factors in predicting PH ≥ II grade. The AUC of NomogramII was significantly higher than that of any single independent factor in the derivation set (Figure 4H, I) and the validation set (Figure 4K, L). The calibration curves for the derivation set (Figure 5C) and the validation set (Figure 5D) demonstrated high agreement between the predicted and actual values, indicating that NomogramII accurately predicts PH ≥ II grade. Additionally, the results of the Hosmer–Lemeshow test in the derivation set (p = 0.377 > 0.05) and the validation set (p = 0.127 > 0.05) further confirmed the good performance of NomogramII (Figure 5F).
 
-## Clinical utility of NomogramI and NomogramII
+### Clinical utility of NomogramI and NomogramII
 
 In the PH ≥ I grade group, the clinical utility of NomogramI for predicting the risk of PH ≥ I grade was assessed using decision curve analysis (DCA). This analysis revealed a significant net benefit with a threshold probability range of 20–91% in the derivation set (Figure 6A) and 14–74% in the validation set (Figure 6B). Moreover, the DCA curve from the derivation set indicated that the clinical predictive capability of NomogramI surpassed that of any single independent factor, a finding that was corroborated in the validation set (Figure 6C, D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/98169/elife-98169-fig6-v1.jpg)
 
-**Figure 6.:** I in the pulmonary hypertension (PH) ≥ I grade and NomogramII in the PH ≥ II grade group.In the PH ≥ I grade group, the DCAs of NomogramI and independent factors in the derivation (A, C) and validation set (B, D). In the PH ≥ II grade group, the DCAs of NomogramII and independent factors in the derivation (E, G) and validation set (F, H).Figure 6—source data 1.Figure 6.
+**Figure 6.:** In the PH ≥ I grade group, the DCAs of NomogramI and independent factors in the derivation (A, C) and validation set (B, D). In the PH ≥ II grade group, the DCAs of NomogramII and independent factors in the derivation (E, G) and validation set (F, H).
 
 In the PH ≥ II grade group, the clinical utility of NomogramII for predicting the risk of PH ≥ II grade was evaluated using DCA, which showed a clear net benefit within the threshold probability range of 1–70% in the derivation set (Figure 6E) and 1–82% in the validation set (Figure 6F). Additionally, the DCA curve for the derivation set demonstrated that the clinical predictive effectiveness of NomogramII exceeded that of any single independent factor, a conclusion that was also confirmed in the validation set (Figure 6G, H).
 
-## Comparison between NomogramI and NomogramII
+### Comparison between NomogramI and NomogramII
 
 In the PH ≥ I grade group, when comparing NomogramI to NomogramII, NomogramI exhibited an integrated discrimination improvement (IDI) of −0.0012 (95% CI: −0.0032 to 0.0009, p = 0.2777), a categorical net reclassification improvement (NRI) of 0.0117 (95% CI: −0.0004 to 0.0237, p = 0.0575), and a continuous NRI of −0.2423 (95% CI: −0.2992 to −0.1854, p < 0.001) in predicting the risk of PH ≥ I grade.
 
@@ -97,7 +824,7 @@ In the PH ≥ II grade group, compared to NomogramI, NomogramII demonstrated an 
 
 These results indicate that NomogramII outperformed NomogramI in terms of IDI and NRI values.
 
-## Website of NomogramII
+### Website of NomogramII
 
 Patients and physicians can calculate the risk of PH through a free web-based dynamic NomogramII (https://dapeng.shinyapps.io/dynnomapp-1/), and the screenshot of dynamic NomogramII’s web page was shown (Figure 3G).
 
@@ -113,13 +840,13 @@ In this study, age and Tibetan ethnicity were identified as independent predicto
 
 Our study has several limitations. Firstly, TTE serves only as a screening method for PH and is not the gold standard; its results merely indicate the risk of PH in the examined individuals. Secondly, given the constrained medical resources in remote areas, we primarily incorporated readily ECG results and basic demographic information into the nomograms, resulting in a relatively simple set of independent predictors. Lastly, the dataset for this study was exclusively sourced from Tibet, China, meaning the validation of the nomograms lacks external validation sets.
 
-## Conclusion
+### Conclusion
 
 We have developed a reliable and straightforward nomogram to predict the risks associated with PH, demonstrating satisfactory discrimination and calibration. Upon rigorous validation using internal datasets, the nomogram has shown clinical utility and favourable predictive accuracy. It is anticipated to serve as an effective and convenient clinical tool for assessing the risk of PH in populations residing at high altitudes.
 
 ## Materials and methods
 
-## Study population and data collection
+### Study population and data collection
 
 Upon gathering data from all patients who underwent both TTE and 12-lead ECG examinations at the General Hospital of Tibet Military Command between April 2021 and October 2023, we further screened the records based on the following criteria: (1) age >14 years; (2) interval between the TTE and ECG examinations <2 months, and (3) for patients with multiple TTE and/or ECG records, only the examination with the shortest interval between TTE and ECG was selected. Ultimately, we compiled examination data for 6603 eligible patients.
 
@@ -127,7 +854,7 @@ The retrospectively collected clinical data were categorised into two main group
 
 All procedures were conducted following the approval of the Ethics Committee of the General Hospital of Tibet Military Command (Approval Number: 2024-KD002-01). Subsequently, the data from all participants were anonymised and de-identified prior to analysis. Consequently, the requirement for informed consent was waived.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with R software version 4.3.2. p < 0.05 (double-tailed) was considered statistically significant.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.44522.001 All cells maintain ionic gradients across their plasma membranes, producing transmembrane potentials (V mem ). Mounting evidence suggests a relationship between resting V mem and the physiology of non-excitable cells with implications in diverse areas, including cancer, cellular differentiation, and body patterning. A lack of non-invasive methods to record absolute V mem limits our understanding of this fundamental signal. To address this need, we developed a fluorescence lifetime-based approach (VF-FLIM) to visualize and optically quantify V mem with single-cell resolution in mammalian cell culture. Using VF-FLIM, we report V mem distributions over thousands of cells, a 100-fold improvement relative to electrophysiological approaches. In human carcinoma cells, we visualize the voltage response to growth factor stimulation, stably recording a 10–15 mV hyperpolarization over minutes. Using pharmacological inhibitors, we identify the source of the hyperpolarization as the Ca 2+ -activated K + channel K Ca 3.1. The ability to optically quantify absolute V mem with cellular resolution will allow a re-examination of its signaling roles.
+All cells maintain ionic gradients across their plasma membranes, producing transmembrane potentials (Vmem). Mounting evidence suggests a relationship between resting Vmem and the physiology of non-excitable cells with implications in diverse areas, including cancer, cellular differentiation, and body patterning. A lack of non-invasive methods to record absolute Vmem limits our understanding of this fundamental signal. To address this need, we developed a fluorescence lifetime-based approach (VF-FLIM) to visualize and optically quantify Vmem with single-cell resolution in mammalian cell culture. Using VF-FLIM, we report Vmem distributions over thousands of cells, a 100-fold improvement relative to electrophysiological approaches. In human carcinoma cells, we visualize the voltage response to growth factor stimulation, stably recording a 10–15 mV hyperpolarization over minutes. Using pharmacological inhibitors, we identify the source of the hyperpolarization as the Ca2+-activated K+ channel KCa3.1. The ability to optically quantify absolute Vmem with cellular resolution will allow a re-examination of its signaling roles.
 
 ## Introduction
 
@@ -30,11 +30,35 @@ An alternative approach to improved quantification in optical measurements is fl
 
 Fluorescent voltage indicators that use photoinduced electron transfer (PeT) as a voltage-sensing mechanism are promising candidates for a FLIM-based approach to optical Vmem quantification. Because PeT affects the nonradiative decay rate of the fluorophore excited state, it has been successfully translated from intensity to τfl imaging with a number of small molecule probes for Ca2+ (Lakowicz et al., 1992). We previously established that VoltageFluor (VF)-type dyes transduce changes in cellular membrane potential to changes in fluorescence intensity and that the voltage response of VF dyes is consistent with a PeT-based response mechanism (Miller et al., 2012; Woodford et al., 2015). Changes in the transmembrane potential alter the rate of PeT (Li, 2007; de Silva et al., 1995) from an electron-rich aniline donor to a fluorescent reporter, thereby modulating the fluorescence intensity of VF dyes (Miller et al., 2012) (Figure 1A,B). VoltageFluors also display low toxicity and rapid, linear responses to voltage.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-v2.jpg)
+
+**Figure 1.:** (A) Mechanism of VoltageFluor dyes, in which depolarization of the membrane potential attenuates the rate of photoinduced electron transfer. (B) Structures of the VF molecules used in this study. (C) Schematic of the TCSPC system used to measure fluorescence lifetime. Simultaneous electrophysiology was used to establish lifetime-voltage relationships. (D) Fluorescence intensity and (E) lifetime of HEK293T cells loaded with 100 nM VF2.1.Cl. (F) Intensity and (G) lifetime images of HEK293T cells voltage clamped at the indicated membrane potential. (H) Quantification of the single trial shown in (G), with a linear fit to the data. (I) Evaluation of VF2.1.Cl lifetime-voltage relationships in many individual HEK293T cells. Gray lines represent linear fits on individual cells. Black line is the average lifetime-voltage relationship across all cells (n = 17). (J) VF2.0.Cl lifetime does not exhibit voltage-dependent changes. Gray lines represent linear fits on individual cells, and the black line is the average lifetime-voltage relationship across all cells (n = 17). Scale bars represent 20 μm. Error bars represent mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Time-correlated photon data (black dots, first panel) collected at each pixel were fit to an exponential decay model (green) with iterative reconvolution of the instrument response function (IRF, blue). The two components of the fluorescence lifetimes were converted to a weighted average (middle panel). Cell membranes (white outlines) were identified, and τm was averaged within each of these regions of interest (ROIs, right panel). These lifetimes were then converted to voltage via a previously determined lifetime-Vmem standard curve with slope m and y-intercept b. Additional details of this process are provided in the Methods. Wtd. Res.: weighted residuals of the fit, τm: weighted average fluorescence lifetime, PC: photon count. τm + PC represents an overlay of the lifetime data (color heat map) onto the photon count image. Pixels that appear black in τm + PC images were below the required photon count threshold for fitting lifetime data; PC only images show photon counts without any such thresholds applied. Scale bar is 20 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Changes in lifetime arising from addition of a range of concentrations of (A) VF2.1.Cl or (B) voltage-insensitive control VF2.0.Cl in HEK293T cells. Biexponential fit models were used for all VF2.1.Cl concentrations and 1 μM VF2.0.Cl; a monoexponential model was used for all other VF2.0.Cl concentrations. Box plots represent the interquartile range, with whiskers and outliers determined with the Tukey method. Sample sizes indicate number of cell groups. Data were obtained over 2 to 4 different days from a total of 3 or 4 coverslips at each concentration. Asterisks indicate significant differences between the indicated concentration and the VF concentration used for electrophysiology experiments (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Photon count and (B) lifetime images of a single HEK293T cell loaded with 100 nM VF2.0.Cl, with the membrane potential held at the indicated value via whole-cell voltage clamp electrophysiology. White arrow indicates patch pipette. Scale bar is 20 μm. (C) Quantification of images shown in (B) for this individual cell. Black line is the line of best fit.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Photon count and (B) lifetime images of a HEK293T cell expressing CAESR and held at the indicated Vmem with voltage-clamp electrophysiology. White arrow indicates voltage-clamped cell. (C) Lifetime-Vmem relationship from the cell in (B), based on a single fit from combined fluorescence decays of all pixels in the cell membrane at each potential (see Materials and methods). Points indicate recordings at a given potential; solid line is line of best fit. (D) Evaluation of VF2.1.Cl lifetime-voltage relationships in many individual CAESR-expressing HEK293T cells. Gray lines represent linear fits on individual cells. Black line is the average fit across all cells (n = 9). (E) Representative lifetime images of CAESR in HEK293T cells. Scale bars represent 20 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Different fluorescence excitation wavelengths (blue and green) were used to generate ratiometric images; emission wavelengths were constant throughout the experiment. Details of epifluorescence ratiometric imaging and data processing are described in the Materials and methods Simultaneous ratiometric imaging and whole cell patch clamp electrophysiology were used to determine the ratio between the blue and green excitation channels (blue/green ratio, R). Representative images of (A) blue-excited signal, (B) green-excited signal and (C) R of a HEK293T cell held at the indicated membrane potential with whole cell voltage clamp electrophysiology. White arrow indicates voltage clamped cell. Differences in background brightness between images are attributable to photobleaching of the probe; images were acquired in the order: 0,–80, +40,–40, +80 mV. (D) Time course of the voltage step protocol used for each cell (black line, top), along with a representative response in the fluorescence ratio (orange), blue excited fluorescence intensity (blue) and green excited fluorescence intensity (green). AU, arbitrary units. (E) R at various potentials for an individual HEK293T cell (black dots), along with an R-Vmem line of best fit (black line). Values shown are the average of all ratio images from a particular cell at a given potential, excluding the first and last ratio image taken for each Vmem value. Data shown in (D) and (E) are from the cell depicted in (A)-(C). (F) Aggregated lines of best fit (gray) for R-Vmem calibrations on multiple HEK293T cells. Average response is shown in black; ratios at each potential are depicted as mean ± SEM (n = 16 cells). (G) Additional representative R images of Di-8-ANEPPS in HEK293T cells. The cell indicated with the white arrow is held at 0 mV with electrophysiology; other cells are unperturbed. Images represent one frame at the given voltage and are not averaged. Regions of interest (ROIs) were drawn around the membrane only, avoiding both the internalized dye signal and the artificially high ratios just outside the cells (which appear as white edges) as much as possible. Scale bars represent 20 µm.
+
 Here, we develop fluorescence lifetime imaging of VoltageFluor dyes (VF-FLIM) as a quantitative, all-optical approach for recording absolute membrane potential with single cell resolution. Using patch-clamp electrophysiology as a standard, we demonstrate that VF-FLIM reports absolute membrane potential in single trials with 10 to 23 mV accuracy (root mean square deviation, RMSD; 15 s acquisition), depending on the cell line. In all cases tested, VF-FLIM tracks membrane potential changes with better than 5 mV accuracy (RMSD). We benchmark VF-FLIM against previously reported optical absolute Vmem recording approaches and demonstrate resolution improvements of 8-fold over ratiometric strategies and 19-fold over other lifetime-based strategies. To highlight the increased throughput relative to manual patch-clamp electrophysiology, we document resting membrane potentials of thousands of cells. To our knowledge, this work represents the first broad view of the distribution of resting membrane potentials present in situ. VF-FLIM is limited to acquisition speeds on the order of seconds, but it is well-suited for studying gradual Vmem dynamics. Using VF-FLIM, we quantify and track the evolution of a 10–15 mV Vmem hyperpolarization over minutes following epidermal growth factor (EGF) stimulation of human carcinoma cells. Through pharmacological perturbations, we conclude that the voltage changes following EGF stimulation arise from activation of the calcium-activated potassium channel KCa3.1. Our results show that fluorescence lifetime of VF dyes is a generalizable and effective approach for studying resting membrane potential in a range of cell lines (Lakowicz et al., 1992).
 
 ## Results
 
-## VoltageFluor fluorescence lifetime varies linearly with membrane potential
+### VoltageFluor fluorescence lifetime varies linearly with membrane potential
 
 To characterize how the photoinduced electron transfer process affects fluorescence lifetime, we compared the τfl of the voltage-sensitive dye VF2.1.Cl with its voltage-insensitive counterpart VF2.0.Cl (Figure 1B). We recorded the τfl of bath-applied VF dyes in HEK293T cells using time-correlated single-photon counting (TCSPC) FLIM (Figure 1C–E, Scheme 1). VF2.1.Cl is localized to the plasma membrane and exhibits a biexponential τfl decay with decay constants of approximately 0.9 and 2.6 ns (Figure 1—figure supplement 1). For all subsequent analysis of VF2.1.Cl lifetime, we refer to the weighted average τfl, which is approximately 1.6 ns in HEK293T cell membranes at rest. VF2.0.Cl (Figure 1B), which lacks the aniline substitution and is therefore voltage-insensitive (Woodford et al., 2015), shows a τfl of 3.5 ns in cell membranes, which is similar to the lifetime of an unsubstituted fluorescein (Magde et al., 1999) (Figure 1—source data 2). We also examined VoltageFluor lifetimes at a variety of dye loading concentrations to test for concentration-dependent changes in dye lifetime, which have been reported for fluorescein derivatives (Chen and Knutson, 1988). Shortened VF lifetimes were observed at high dye concentrations (Figure 1—figure supplement 2); all subsequent VF-FLIM studies were conducted at dye concentrations low enough to avoid this concentration-dependent change in lifetime.
 
@@ -44,27 +68,99 @@ We compared the performance of VF-FLIM in HEK293T cells to that of two previousl
 
 We also measured the absolute voltage resolution of the ratio-based sensor di-8-ANEPPS, which reports membrane potential by the wavelength of its excitation and emission spectra (Loew et al., 1979). Ratio-based imaging can be achieved by comparing the fluorescence emission at different excitation wavelengths (Zhang et al., 1998); here, we used the ratio, R, of the blue-excited emission to the green-excited emission (see Materials and methods). Via simultaneous ratio imaging and whole cell voltage clamp electrophysiology, we record a sensitivity of 0.0039 ± 0.0004 R per mV, with a y-intercept (0 mV) R value of 1.8 ± 0.2 (Figure 1—figure supplement 5; mean ± SEM of n = 16 HEK293T cells). R depends on the excitation and emission conditions used but should be relatively reproducible on a given microscope rig. To compare R from our system with previous work, we normalized all R values to the R value at 0 mV for each cell. Using the above data, we obtain a sensitivity of 0.0022 ± 0.0002 normalized R per mV, with a 0 mV normalized R of 1.02 ± 0.02, in good agreement with reported values (0.0015 normalized R per mV) (Zhang et al., 1998). For analysis of voltage resolution, we compare VF-FLIM to the non-normalized R, since normalization requires an electrode-based measurement for every recording and is thus not a truly optical strategy. From the non-normalized di-8-ANEPPS R, we obtain an intra-cell resolution (RMSD) of 18 ± 3 mV (5-fold less accurate than VF-FLIM) and an inter-cell resolution (RMSD) of 150 mV (8-fold less accurate than VF-FLIM). The sensitivities and resolutions of VF-FLIM, CAESR, and di-8-ANEPPS in HEK293T are tabulated in Figure 1—source data 3. Because cellular resting membrane potentials and voltage changes (e.g. action potentials) are on the order of tens of millivolts, the resolution improvements achieved by VF-FLIM enable biologically relevant absolute Vmem recordings: impossible with previous approaches.
 
-## Evaluation of VF-FLIM across cell lines and culture conditions
+### Evaluation of VF-FLIM across cell lines and culture conditions
 
 To test the generalizability of VF-FLIM, we determined τfl-Vmem calibrations in four additional commonly used cell lines: A431, CHO, MDA-MB-231, and MCF-7 (Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2). We observe a linear τfl response in all cell lines tested. The slope (voltage sensitivity) and y-intercept (0 mV lifetime) of the τfl-Vmem response varied slightly across cell lines, with average sensitivities of 3.1 to 3.7 ps/mV and average 0 mV lifetimes ranging from 1.74 to 1.87 ns. In all cell lines, we observed better voltage resolution for quantification of Vmem changes on a given cell versus comparisons of absolute Vmem between cells. Changes in voltage for a given cell could be quantified with resolutions at or better than 5 mV (intra-cell resolution, Materials and methods). For absolute Vmem determination of a single cell, we observed voltage resolutions ranging from 10 to 23 mV (inter-cell resolution, 15 s acquisition time, Figure 2—source data 1). Statistically significant differences among the cell lines tested were observed for cellular τfl-Vmem calibrations in both the slope (One-way ANOVA with Welch’s correction: F(4, 23.07)=18.12, p<0.0001) and average 0 mV lifetime (One-way ANOVA: F(4, 67)=14.43, p<0.0001). There were no statistically significant differences between A431, CHO, and HEK293T cells (p>0.05, Games-Howell and Tukey-Kramer post hoc tests for the slope and 0 mV lifetime respectively). MDA-MB-231 and MCF-7 cells showed statistically significant variability from other cell lines in slope and/or 0 mV lifetime.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig2-v2.jpg)
+
+**Figure 2.:** VF2.1.Cl lifetime-voltage relationships were determined with whole cell voltage clamp electrophysiology in five cell lines. (A) Slopes of the linear fits for single cell lifetime-voltage relationships, shown as mean ± S.E.M. Gray dots indicate results from individual cells. Statistically significant differences exist between groups (One-way ANOVA with Welch’s correction: F(4, 23.07)=18.12, p<0.0001). Data were tested for normality (Shapiro-Wilk test, p>0.05 for all cell lines) and homoscedasticity (Levene’s test on the median, F(4,67) = 5.07, p=0.0013). ** indicates p<0.01; if significance is not indicated, p>0.05 (Games-Howell post hoc test). (B) 0 mV reference point of linear fits for the lifetime-voltage relationship, shown as mean ± S.E.M. Gray dots indicate results from individual cells. Significant differences exist between groups (One-way ANOVA: F(4, 67)=14.43, p<0.0001). Data were tested for normality (Shapiro-Wilk test, p>0.05 for all cell lines) and homoscedasticity (Levene’s test on the median, F(4,67) = 1.29, p=0.28). ** indicates p<0.01; if significance is not indicated, p>0.05 (Tukey-Kramer post hoc test). (C) Representative lifetime-intensity overlay images for each cell line with the indicated cells (white arrow) held at −80 mV (top) or +80 mV (bottom). Lifetime scales are in ns. Scale bar is 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative photon count and (B) lifetime images of a VF2.1.Cl in A431 cells with Vmem held at the indicated value with voltage-clamp electrophysiology. A431 cells were not serum starved for these experiments. (C) Quantification of the images in (B), with the line of best fit for this single trial. (D) Lines of best fit for the lifetime-Vmem relationships of 12 A431 cells (gray lines). Average lifetime at each potential is shown as mean ± SEM, with the average line of best fit in black. (E)-(H) Lifetime-Vmem standard curve determination in CHO cells (n = 8). (I)-(L) Lifetime-Vmem standard curve determination in MCF-7 cells (n = 24). (M)-(P) Lifetime-Vmem standard curve determination in MDA-MB-231 cells (n = 11). VF2.1.Cl concentration was 100 nM in all cases. White arrows indicates the voltage-clamped cell. Scale bars are 20 μm..
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Percent change in VF2.1.Cl lifetime per 100 mV change in voltage, relative to the lifetime at −60 mV. Significant differences exist between cell lines (one-way ANOVA with Welch’s correction, F(4,24.08) = 41.75, p<0.0001). Data were tested for normality (Shapiro-Wilk test, p>0.05 for all cell lines) and homoscedasticity (Levene’s test on the median, F(4,67) = 5.74, p=0.00049). Asterisks indicate statistically significant differences (*p<0.05, **p<0.01, Games-Howell post hoc test). (B) Correlation coefficients (r2) for the lines of best fit of VF2.1.Cl lifetime versus membrane potential. No significant differences exist in r2values between cell lines (Kruskal-Wallis test, H = 3.20, 4 degrees of freedom, p=0.53). Data were tested for normality (Shapiro-Wilk test, p<0.05 for 4 of 5 cell lines) and homoscedasticity (Levene’s test on the median, F(4,67) = 1.55, p=0.20). In both (A) and (B), data are shown as mean ± S.E.M., with gray dots indicating values from individual patches.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Electrophysiological calibration of lifetime was performed on small groups of A431 cells and on serum starved (SS) A431 cells to verify that the Vmem-lifetime standard curves for a given cell line are generalizable across many cellular growth conditions. For all graphs, each line represents a group of cells. Letters on the graphs indicate the subfigure where images from that recording are shown. (A) Lifetime-voltage relationships in cell pairs, in which only one cell was directly controlled with voltage-clamp electrophysiology. (B) Lifetime-voltage relationships in groups of three cells, in which only one cell was directly controlled with voltage-clamp electrophysiology. (C) Lifetime for the most responsive cell from pairs and groups of three in (A) and (B). Line color codes are maintained from (A) and (B). (D, E) Representative lifetime images from (A) and (B) respectively. White arrow indicates cell directly controlled with electrophysiology. (F) Lifetime-voltage relationship in SS single cells, (G) pairs, and (H) groups of three cells. (I)-(K) Representative images from (F)-(H). Scale bars are 20 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** A431 cells were analyzed with VF2.1.Cl both in (A) full serum and (B) serum-starved conditions. (C) VF2.0.Cl in serum-starved A431 cells. (D) VF2.1.Cl in CHO cells. (E) VF2.1.Cl in MCF-7 cells. (F) VF2.1.Cl in MDA-MB-231 cells. All VF2.1.Cl data were fit with a biexponential model, and all VF2.0.Cl data were fit with a monoexponential model. Box plots represent the interquartile range, with whiskers and outliers determined with the Tukey method. Sample sizes indicate number of cell groups. Data were acquired over 2 to 4 different days from a total of 3 or 4 coverslips at each concentration. Asterisks indicate significant differences between the indicated concentration and the VF concentration selected for additional experiments (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test).
 
 To verify that VF-FLIM was robust in groups of cells in addition to the isolated, single cells generally used for patch clamp electrophysiology, we determined lifetime-voltage relationships for small groups of A431 cells (Figure 2—figure supplement 3A–E). We found that calibrations made in small groups of cells are nearly identical to those obtained on individual cells, indicating that VF-FLIM only needs to be calibrated once for a given type of cell. For pairs or groups of three cells we recorded a sensitivity of 3.3 ± 0.2 ps/mV and a 0 mV lifetime of 1.78 ± 0.02 ns (mean ± SEM of 7 cells (5 pairs and 2 groups of 3); values are for the entire group, not just the cell in contact with the electrode), which is similar to the sensitivity of 3.55 ± 0.08 ps/mV and 0 mV lifetime of 1.74 ± 0.02 ns we observe in single A431 cells. The slight reduction in sensitivity seen in cell groups is likely attributable to space clamp error, which prevents complete voltage clamp of the cell group (Williams and Mitchell, 2008; Armstrong and Gilly, 1992). Indeed, when we analyzed only the most responsive cell in the group (in contact with the electrode), we obtained a slope of 3.7 ± 0.1 ps/mV and 0 mV lifetime of 1.79 ± 0.02 ns, in good agreement with the single cell data. The space clamp error can be clearly visualized in Figure 2—figure supplement 3E, where one cell in the group of 3 responded much less to the voltage command.
 
 To test whether VF-FLIM is also extensible to cells maintained with different culture conditions, we recorded lifetime-Vmem relationship in serum-starved A431 cells (Figure 2—figure supplement 3F–K), obtaining an average sensitivity of 3.6 ± 0.1 ps/mV and a 0 mV lifetime of 1.76 ± 0.01 ns (n = 7; two single cells, two pairs, 3 groups of 3 cells; values are average lifetime across the whole cell group), in excellent agreement with the values obtained for non-serum starved cells. We also tested for concentration-dependent changes in VF lifetime in all five cell lines and in serum starvation conditions. Similar to VF2.1.Cl lifetime in HEK293T cells (Figure 1—figure supplement 2), we observed shortening of VF2.1.Cl lifetimes beginning between 200 and 500 nM dye in all cases (Figure 2—figure supplement 4). All subsequent experiments were carried out at VF2.1.Cl concentrations well below the regime where VF concentration-dependent lifetime changes were observed.
 
-## Optical determination of resting membrane potential distributions
+### Optical determination of resting membrane potential distributions
 
 The throughput of VF-FLIM enables cataloging of resting membrane potentials of thousands of cells in only a few hours of the experimenter’s time. We optically recorded resting membrane potential distributions for A431, CHO, HEK293T, MCF-7, and MDA-MB-231 cells using VF-FLIM (Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2). We report resting membrane potentials by cell group (Materials and methods, Figure 1—figure supplement 1) because adjacent cells in these cultures are electrically coupled to some degree via gap junctions (Meşe et al., 2007). Each group of cells represents an independent sample for Vmem. In addition, the fluorescent signal originating from membranes of adjacent cells cannot be separated with a conventional optical microscope, so assignment of a region of membrane connecting multiple cells would be arbitrary. VF-FLIM images (Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2) contain spatially resolved voltage information, but caution should be employed in interpreting pixel to pixel differences in lifetime. Because VF-FLIM was calibrated here using the average plasma membrane τfl for each cell, optical Vmem should be interpreted per cell or cell group.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig3-v2.jpg)
+
+**Figure 3.:** Fluorescence lifetime images of cells incubated with 100 nM VF2.1.Cl were used to determine Vmem from previously performed electrophysiological calibration (Figure 2). (A) Histograms of Vmem values recorded in A431 cells incubated with 6 mM extracellular K+ (commercial HBSS, n = 1056) or 120 mM K+ (high K+ HBSS, n = 368). (B) Representative lifetime image of A431 cells in 6 mM extracellular K+. (C) Representative lifetime image of A431 cells in 120 mM extracellular K+. (D) Histograms of Vmem values observed in CHO cells under normal (n = 2410) and high K+ (n = 1310) conditions. Representative lifetime image of CHO cells in (E) 6 mM and (F) 120 mM extracellular K+. Histogram bin sizes were determined by the Freedman-Diaconis rule. Intensities in the lifetime-intensity overlay images are not scaled to each other. Scale bars, 20 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Fluorescence lifetime images of cells incubated with 100 nM VF2.1.Cl were used to determine Vmem from previously performed electrophysiological calibration (Figure 2). (A) Histograms of Vmem values recorded in HEK293T cells incubated with 6 mM extracellular K+ (commercial HBSS, n = 1613) or 120 mM K+ (high K+ HBSS, n = 520). (B) Representative lifetime image of HEK293T cells with 6 mM extracellular K+. (C) Representative lifetime image of HEK293T cells in 120 mM extracellular K+. (D) Histograms of Vmem values observed in MCF-7 cells under normal (n = 1259) and high K+ (n = 681) conditions. Representative lifetime images of MCF-7 cells in (E) 6 mM and (F) 120 mM extracellular K+. (G) Histograms of Vmem values observed in MDA-MB-231 cells under normal (n = 1840) and high K+ (n = 558) conditions. Representative lifetime images of MDA-MB-231 cells in (H) 6 mM and (I) 120 mM extracellular K+. Histogram bin sizes were determined by the Freedman-Diaconis rule. Intensities in the lifetime-intensity overlay images are not scaled to each other. Scale bars, 20 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Representative VF-FLIM images of cells in standard imaging buffer (HBSS, 6 mM extracellular K+) and high K+ imaging buffer (high K+ HBSS, 120 mM extracellular K+). Membrane potential was calculated per cell group; analyses of pixel by pixel differences in lifetime fall beyond the resolution limit of the VF-FLIM calibrations in this work. Images depict A431 cells in (A) HBSS and (B) high K+ HBSS, CHO cells in (C) HBSS and (D) high K+ HBSS, HEK293T cells in (E) HBSS and (F) high K+ HBSS, MCF-7 cells in (G) HBSS and (H) high K+ HBSS, and MDA-MB-231 cells in (I) HBSS and (J) high K+ HBSS.
+
 Mean resting membrane potentials recorded by VF-FLIM range from −53 to −29 mV, depending on the cell line. These average Vmem values fall within the range reported in the literature for all of the cell lines we measured (Figure 3—source data 1). We also recorded resting membrane potentials in a high K+ buffer (120 mM K+, ‘high K+ HBSS’), where we observed a depolarization of 15 to 41 mV, bringing the mean Vmem up to −26 mV to +4 mV, again depending on the cell line. Although 120 mM extracellular K+ should be strongly depolarizing, it will not necessarily produce a membrane potential of 0 mV. Because few literature reports of electrophysiological measurements in 120 mM K+ exist as a point of comparison, we obtained a rough estimate of Vmem in 6 mM extracellular K+ and 120 mM extracellular K+ using the Goldman-Hodgkin-Katz (GHK) equation (Hodgkin and Katz, 1949). Under our imaging conditions and with a broad range of possible ion permeabilities and intracellular ion concentrations, the GHK equation allows Vmem ranging from −91 to −27 mV in 6 mM extracellular K+ and −25 to +2 mV in 120 mM extracellular K+ (see Materials and methods). Recorded VF-FLIM values fall well within this allowed range. Notably, although the GHK equation can determine ranges of reasonable Vmem values, GHK-based Vmem results are approximate at best because of the difficulty in obtaining accurate values of permeabilities and intracellular ion concentrations for specific cell lines. Direct measurement of Vmem, rather than theoretical calculation, is required to obtain accurate values.
 
-## Membrane potential dynamics in epidermal growth factor signaling
+### Membrane potential dynamics in epidermal growth factor signaling
 
 We thought VF-FLIM was a promising method for elucidating the roles of membrane potential in non-excitable cell signaling. Specifically, we wondered whether VF-FLIM might be well-suited to dissect conflicting reports surrounding changes in membrane potential during EGF/EGF receptor (EGFR)-mediated signaling. Receptor tyrosine kinase (RTK)-mediated signaling is a canonical signaling paradigm for eukaryotic cells, transducing extracellular signals into changes in cellular state. Although the involvement of second messengers like Ca2+, cyclic nucleotides, and lipids are well characterized, membrane potential dynamics and their associated roles in non-excitable cell signaling remain less well-defined. In particular, the activation of EGFR via EGF has variously been reported to be depolarizing (Rothenberg et al., 1982), hyperpolarizing (Pandiella et al., 1989), or electrically silent (Moolenaar et al., 1982; Moolenaar et al., 1986).
 
 We find that treatment of A431 cells with EGF results in a 15 mV hyperpolarization within 60–90 s in approximately 80% of cells (Figure 4A–C, Figure 4—figure supplement 1, Figure 4—figure supplement 2), followed by a slow return to baseline within 15 min (Figure 4D–F, Figure 4—figure supplements 3 and 0 second acquisitions). The voltage response to EGF is dose-dependent, with an EC50 of 90 ng/mL (14 nM) (Figure 4—figure supplement 4). Vehicle-treated cells show very little τfl change (Figure 4A–F). Identical experiments with voltage-insensitive VF2.0.Cl (Figure 4G–H, Figure 4—figure supplement 1, Figure 4—figure supplement 3, Figure 4—figure supplement 5) reveal little change in τfl upon EGF treatment, indicating the drop in τfl arises from membrane hyperpolarization. We observe the greatest hyperpolarization 1 to 3 min after treatment with EGF, which is abolished by inhibition of EGFR and ErbB2 tyrosine kinase activity with the covalent inhibitor canertinib (Figure 4I–J, Figure 4—figure supplement 6). Blockade of the EGFR kinase domain with gefitinib, a non-covalent inhibitor of EGFR, also results in a substantial decrease in the EGF-evoked hyperpolarization (Figure 4I–J, Figure 4—figure supplement 6). Together, these results indicate that A431 cells exhibit an EGF-induced hyperpolarization, which depends on the kinase activity of EGFR and persists on the timescale of minutes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative VF-FLIM time series of A431 cells treated with imaging buffer vehicle (top) or 500 ng/mL EGF (80 nM, bottom). (B) Quantification of images in (A), with Vehicle (Veh.)/EGF added at black arrow. (C) Aggregated responses for various trials of cells treated with vehicle or EGF. (D) Lifetime images of longer-term effects of vehicle (top) or EGF (bottom) treatment. (E) Quantification of images in (D). (F) Average response of cells over the longer time course. (G) Images of VF2.0.Cl (voltage insensitive) lifetime before and after EGF treatment. No τfl change is observed 2.5 (top) or 15 min (bottom) following EGF treatment. (H) Average VF2.0.Cl lifetime changes following EGF treatment. VF2.0.Cl graphs and images are scaled across the same lifetime range (350 ps) as VF2.1.Cl plots and images. The small drift observed would correspond to 2–4 mV of voltage change in VF2.1.Cl lifetime. (I) Lifetime images of A431 cells before and after EGF addition, with 500 nM canertinib (top) or 10 μM gefitinib (bottom). (J) Voltage changes 2.5 min after EGF addition in cells treated with DMSO (vehicle control) or an EGFR inhibitor. Scale bars are 20 μm. (C,F,H): Asterisks indicate significant differences between vehicle and EGF at that time point. (J): Asterisks reflect significant differences between EGF-induced voltage responses with DMSO vehicle or an EGFR inhibitor (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-tailed, unpaired, unequal variances t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative 3 min VF-FLIM recordings of A431 cells loaded with 50 nM VF2.1.Cl. 500 ng/mL EGF was added 30 s into the time series (black arrow). (B) Quantification of the images in (A), with a single trace per image series shown. (C) Average voltage change in A431 cells following the addition of imaging buffer vehicle (gray) or EGF (purple). (D) Control VF2.0.Cl (not voltage sensitive, 50 nM) images of A431 cells treated as in (A). Images are scaled across the same amount of lifetime space (350 ps) as the VF2.1.Cl images. (E) Quantification of the images in (D). (F) Average VF2.0.Cl lifetime change seen in A431 cells following the addition of imaging buffer vehicle (gray) or EGF (purple) in A431 cells. Graph is scaled across the same amount of lifetime space as the VF2.1.Cl data in (C). Asterisks indicate significant differences between vehicle and EGF treated cells at a given time point (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test). Scale bars are 20 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Comparison of Vmem changes observed in A431 cells 2.5 min after treatment with (A) imaging buffer vehicle or (B) 500 ng/mL EGF. Data shown here are compiled from Figure 4C and Figure 5A to provide a sense of overall distribution of the responses. Each recording contained a single group of approximately 5 to 10 cells. Sample sizes (number of recordings): Vehicle 93, EGF 92.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Representative longer term VF-FLIM recordings of A431 cells loaded with 50 nM VF2.1.Cl. 500 ng/mL EGF was added 30 s into the time series. (B) Quantification of the images in (A), with a single trace per image series shown. (C) Control VF2.0.Cl (not voltage sensitive, 50 nM) images of A431 cells treated as in (A). Images are scaled across the same total lifetime range (350 ps) as the VF2.1.Cl images. (D) Quantification of the recordings in (C). (E) Average VF2.0.Cl lifetime change seen in A431 cells following the addition of imaging buffer vehicle (gray) or EGF (purple). Asterisks indicate significant differences between vehicle and EGF treated cells at a given time point (***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test). Scale bars are 20 μm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Data were fit to a four-parameter logistic function to obtain an EC50 of 90 ng/mL (95% CI: 47–130 ng/mL). Response to each EGF concentration is shown as mean ± SEM of 6 or 7 recordings (one group of 5–10 cells per recording).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Average lifetime changes observed in A431 cells following the addition (black arrow) of imaging buffer vehicle (gray) or 500 ng/mL EGF (purple). (A) Cells incubated with 50 nM VF2.1.Cl and imaged for 3 min. (B) Cells incubated with 50 nM VF2.0.Cl (not voltage sensitive) and imaged for 3 min. (C) Cells incubated with 50 nM VF2.1.Cl and imaged intermittently for 15 min. (D) Cells incubated with 50 nM VF2.0.Cl (not voltage sensitive) and imaged intermittently for 15 min. Data are reproduced from Figure 4, Figure 4—figure supplement 1, and Figure 4—figure supplement 3, but here data are scaled in units of lifetime rather than voltage for facile comparison. Data are shown as mean ± SEM for the indicated number of recordings (one group of 5–10 cells per recording). Asterisks indicate significant differences between vehicle and EGF treated cells at a given time point (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Average Vmem changes following the addition (black arrow) of imaging buffer vehicle (gray) or 500 ng/mL EGF (purple) to A431 cells pre-treated with the indicated drug or DMSO vehicle. 2.5 min time points from this data are shown elsewhere (Figure 4J); entire time series are shown here. Data are presented as mean ± SEM for the indicated number of recordings (one group of 5–10 cells per recording). Asterisks indicate significant differences between vehicle and EGF treated cells at a given time point (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test).
+
 Outward K+ currents could mediate EGF-induced hyperpolarization. Consistent with this hypothesis, dissipation of the K+ driving force by raising extracellular [K+] completely abolishes the typical hyperpolarizing response to EGF and instead results in a small depolarizing potential of approximately 3 mV (Figure 5A, Figure 5—figure supplement 1B). Blockade of voltage-gated K+ channels (Kv) with 4-aminopyridine (4-AP) prior to EGF treatment enhances the hyperpolarizing response to EGF (Figure 5A and B, Figure 5—figure supplement 1C). In contrast, blockade of Ca2+-activated K+ channels (KCa) with charybdotoxin (CTX) results in a depolarizing potential of approximately 4 mV after exposure to EGF, similar to that observed with high extracellular [K+] (Figure 5A and B, Figure 5—figure supplement 1D). TRAM-34, a specific inhibitor of the intermediate-conductance Ca2+ activated potassium channel KCa3.1 (Wulff et al., 2000), also abolishes EGF-induced hyperpolarization (Figure 5A, Figure 5—figure supplement 1E). CTX treatment has little effect on the resting membrane potential, while TRAM-34 or 4-AP depolarizes cells by approximately 5–10 mV (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison of the Vmem change 2.5 min after EGF addition in cells incubated in unmodified imaging buffer (HBSS) or in modified solutions. (B) Lifetime images of A431 cells treated with 4-AP or CTX. (C) Model for membrane hyperpolarization following EGFR activation. Scale bar is 20 μm. Bars are mean ± SEM. Sample sizes listed are (Veh, EGF); where only one number is given, sample size was the same for both. Asterisks reflect significant differences in EGF-stimulated Vmem change between the unmodified control (HBSS or DMSO) and modified solutions (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-tailed, unpaired, unequal variances t-test). DMSO: 0.1% DMSO, high K+: 120 mM K+, 4-AP: 5 mM 4-aminopyridine, CTX: 100 nM charybdotoxin, TRAM-34: 200 nM TRAM-34, Ca2+ free: 0 mM Ca2+ and Mg2+, BAPTA-AM: 10 μM bisaminophenoxyethanetetraacetic acid acetoxymethyl ester, Na3VO4: 100 μM sodium orthovanadate, wortmannin: 1 μM wortmannin.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Average Vmem changes following the addition (black arrow) of imaging buffer vehicle (gray) or 500 ng/mL EGF (purple) to A431 cells pre-treated with the indicated drug or ionic composition change. 2.5 min time points from this data are shown elsewhere (Figure 5); entire time series are shown here to illustrate the time courses of the large hyperpolarizing current and small depolarizing current. Data are shown as mean ± SEM for the indicated number of recordings (one group of 5–10 cells per recording). Asterisks indicate significant differences between vehicle and EGF treated cells at a given time point (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Data are the initial Vmem reference images for recordings used in EGF addition time series. Data are shown as mean ± SEM for the indicated number of images (one group of 5–10 cells per image), and gray dots represent individual images. Asterisks indicate significant differences between the appropriate vehicle (HBSS or 0.1% DMSO) and pharmacology treated cells (n.s. p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided, unpaired, unequal variances t-test). CTX = charybdotoxin, 4-AP = 4-aminopyridine, BAPTA-AM = bisaminophenoxyethanetetraacetic acid acetoxymethyl ester.
 
 To explore the effects of other components of the EGFR pathway on EGF-induced hyperpolarization, we perturbed intra- and extracellular Ca2+ concentrations during EGF stimulation. Reduction of extracellular Ca2+ concentration did not substantially alter the EGF response (Figure 5A, Figure 5—figure supplement 1F). However, sequestration of intracellular Ca2+ with BAPTA-AM disrupts the hyperpolarization response. BAPTA-AM treated cells show a small, 4 mV depolarization in response to EGF treatment, similar to CTX-treated cells (Figure 5A, Figure 5—figure supplement 1G). Perturbation of Ca2+ levels had little effect on the resting membrane potential (Figure 5—figure supplement 2). Introduction of wortmannin (1 μM) to block downstream kinase activity has no effect on the membrane potential response to EGF, while orthovanadate addition (Na3VO4, 100 μM) to block phosphatase activity results in a small increase in the hyperpolarizing response (Figure 5A, Figure 5—figure supplement 1H–I). These results support a model for EGF-EGFR mediated hyperpolarization in which RTK activity of EGFR causes release of internal Ca2+ stores to in turn open KCa channels and hyperpolarize the cell (Figure 5C).
 
@@ -72,7 +168,7 @@ To explore the effects of other components of the EGFR pathway on EGF-induced hy
 
 We report the design and implementation of a new method for optically quantifying absolute membrane potential in living cells. VF-FLIM enjoys 100-fold improved throughput over patch clamp electrophysiology, as well as improved spatial resolution. The performance of VF-FLIM hinges on a balance between resolution in three dimensions: membrane potential, space, and time. We discuss the advantages and disadvantages of VF-FLIM in this light, as well as the new application space that is made accessible by VF-FLIM.
 
-## Resolution of VF-FLIM: voltage, space, and time
+### Resolution of VF-FLIM: voltage, space, and time
 
 The key advantage of VF-FLIM over previously reported optical approaches is its superior Vmem resolution. Resolution can be interpreted as stability of the τfl-Vmem calibration over time and between cells. Any factors other than Vmem that change τfl decrease resolution. VF-FLIM exhibits a 19-fold improvement in inter-cell Vmem resolution over FLIM with the GEVI CAESR (Brinks et al., 2015) and a 8-fold improvement over di-8-ANEPPS excitation ratios (Zhang et al., 1998). Although all optical strategies, including VF-FLIM, have worse Vmem resolution than modern electrophysiology, the greater throughput, improved spatial resolution, and reduced invasiveness of optical strategies make them a powerful complement to electrode-based recordings.
 
@@ -84,11 +180,11 @@ Vmem recordings in systems too large or too small for electrophysiological study
 
 To obtain absolute Vmem measurements with fluorescence lifetime, VF-FLIM sacrifices some of the temporal resolution of electrophysiology or intensity-based voltage imaging. VF-FLIM acquisition times are limited by the large numbers of photons needed per pixel in time-correlated single photon counting (see Materials and methods). As a result, VF-FLIM in its current implementation can track Vmem events lasting longer than a few seconds. For ‘resting’ membrane potential or Vmem dynamics associated with cell growth or differentiation, this temporal resolution is likely sufficient. Nevertheless, in the future, we envision allying VF-FLIM with recently developed, faster lifetime imaging technology to enable optical quantification of more rapid Vmem responses (Raspe et al., 2015; Gao et al., 2014).
 
-## Resting membrane potential distributions in cultured cells
+### Resting membrane potential distributions in cultured cells
 
 Using the improved Vmem resolution and throughput of VF-FLIM, we optically documented resting membrane potential distributions in cultured cells to characterize the membrane potential state(s) present. The presence and significance of distinct Vmem states in cell populations is mostly uncharacterized due to the throughput limitations of patch-clamp electrophysiology, but some reports suggest that distinct Vmem states arise during the various phases of the cell cycle (Ouadid-Ahidouch et al., 2001; Wonderlin et al., 1995). Vmem histograms presented in this work appear more or less unimodal, showing no clear sign of cell cycle-related Vmem states (Figure 3A,D; Figure 3—figure supplement 1A,D,G). We considered the possibility that VF-FLIM does not detect cell-cycle-related Vmem states because we report average Vmem across cell groups in cases where cells are in contact (Figure 1—figure supplement 1). This explanation is unlikely for two reasons. First, Vmem distributions for CHO cells appear unimodal, even though CHO cultures were mostly comprised of isolated cells under the conditions tested (Figure 3D–F). Second, theoretical work suggests that dramatically different Vmem states in adjacent cells are unlikely, as electrical coupling often leads to equilibration of Vmem across the cell group (Cervera et al., 2016a; Cervera et al., 2016b). Although we cannot rule out the possibility of poorly separated Vmem populations (i.e. with a mean difference in voltage below our resolution limit), VF-FLIM both prompts and enables a re-examination of the notion that bi- or multimodal Vmem distributions exist in cultured cells. Furthermore, VF-FLIM represents an exciting opportunity to experimentally visualize theorized Vmem patterns in culture and in more complex tissues. Studies towards this end are ongoing in our laboratory.
 
-## Epidermal growth factor induces Vmem signaling in A431 cells
+### Epidermal growth factor induces Vmem signaling in A431 cells
 
 In the present study, we use VF-FLIM to provide the first cell-resolved, direct visualization of voltage changes induced by growth factor signaling. For long term Vmem recordings during growth-related processes, an optical approach is more attractive than an electrode-based one. Electrophysiology becomes increasingly challenging as time scale lengthens, especially if cells migrate, and washout of the cytosol with pipette solution can change the very signals under study (Horn and Korn, 1992; Malinow and Tsien, 1990). Previous attempts to electrophysiologically record Vmem in EGF-stimulated A431 cells were unsuccessful due to these technical challenges (Pandiella et al., 1989). Because whole cell voltage-clamp electrophysiology was intractable, the Vmem response in EGF-stimulated A431 cells was addressed indirectly through model cell lines expressing EGFR exogenously (Pandiella et al., 1989), bulk measurements on trypsinized cells in suspension (Magni et al., 1991), or cell-attached single channel recordings (Peppelenbosch et al., 1991; Lückhoff and Clapham, 1994; Mozhayeva et al., 1989). By stably recording Vmem during EGF stimulation, VF-FLIM enables direct study of Vmem signaling in otherwise inaccessible pathways.
 
@@ -100,6 +196,170 @@ VF-FLIM represents a novel and general approach for interrogating the roles of m
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>A431</td>
+      <td>UC Berkeley Cell Culture Facility</td>
+      <td>RRID:CVCL_0037</td>
+      <td>Cell line maintained in E. Miller lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>HEK293T</td>
+      <td>UC Berkeley Cell Culture Facility</td>
+      <td>RRID:CVCL_0063</td>
+      <td>Cell line maintained in E. Miller lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>MCF-7</td>
+      <td>UC Berkeley Cell Culture Facility</td>
+      <td>RRID:CVCL_0031</td>
+      <td>Cell line maintained in E. Miller lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>MDA-MB-231</td>
+      <td>UC Berkeley Cell Culture Facility</td>
+      <td>RRID:CVCL_0062</td>
+      <td>Cell line maintained in E. Miller lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus, female)</td>
+      <td>CHO</td>
+      <td>UC Berkeley Cell Culture Facility</td>
+      <td>RRID:CVCL_0214</td>
+      <td>Cell line maintained in E. Miller lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAESR, FCK-QuasAR2-Citrine</td>
+      <td>Addgene, PMID: 25118186</td>
+      <td>Addgene:59172, RRID:Addgene_59172</td>
+      <td>Developed by Adam Cohen, Harvard University</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human epidermal growth factor (EGF)</td>
+      <td>PeproTech</td>
+      <td>Cat#:AF10015500UG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep spin miniprep kit</td>
+      <td>VWR International</td>
+      <td>Cat#:27106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium orthovanadate</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:13721-39-6, Cat#:S6508</td>
+      <td>Activated before use (Gordon, 1991)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Canertinib</td>
+      <td>other</td>
+      <td>CAS:267243-28-7</td>
+      <td>Gift from John Kuriyan, UC Berkeley</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gefitinib</td>
+      <td>Fisher Scientific</td>
+      <td>CAS:184475-35-2, Cat#:50-101-6270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-aminopyridine, 4-AP</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:504-24-5, Cat#:A78403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Charybdotoxin, CTX</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:95751-30-7, Cat#:C7802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRAM-34</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:289905-88-0, Cat#:T6700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAPTA-AM, bisamino-phenoxy-ethanetetra-acetic acid acetoxymethyl ester</td>
+      <td>Fisher Scientific</td>
+      <td>CAS:126150-97-8, Cat#:50-101-0334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>wortmannin</td>
+      <td>Fisher Scientific</td>
+      <td>CAS:19545-26-7, Cat#:ICN19569001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPCM</td>
+      <td>Becker and Hickl</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Di-8-ANEPPS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CAS:157134-53-7, Cat#:D3167</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VF2.1.Cl</td>
+      <td>Synthesized in-house (Woodford et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VF2.0.Cl</td>
+      <td>Synthesized in-house (Woodford et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 VoltageFluor (VF) dyes VF2.1.Cl and VF2.0.Cl were synthesized in house according to previously described syntheses (Woodford et al., 2015). VFs were stored either as solids at room temperature or as 1000x DMSO stocks at −20°C. VF stock concentrations were normalized to the absorption of the dichlorofluorescein dye head via UV-Vis spectroscopy in Dulbecco’s phosphate buffered saline (dPBS, Thermo Fisher Scientific, Waltham, MA) pH 9 with 0.1% sodium dodecyl sulfate (w/v, SDS). Di-8-ANEPPS was purchased from Thermo Fisher Scientific. Di-8-ANEPPS was prepared as a 2 mM (2000x) stock solution in DMSO and stored at −20°C. Di-8-ANEPPS concentrations were determined via UV-Vis spectroscopy in methanol (ε at 498 nm: 41,000 cm−1 M−1 according to the manufacturer’s certificate of analysis).
 
 All salts and buffers were purchased from either Sigma-Aldrich (St. Louis, MO) or Fisher Scientific. TRAM-34, 4-aminopyridine, and charybdotoxin were purchased from Sigma-Aldrich. Gefitinib, wortmannin, sodium orthovanadate, and BAPTA-AM were purchased from Fisher Scientific. Canertinib was a gift from the Kuriyan laboratory at UC Berkeley. Gefitinib, wortmannin, canertinib, and TRAM-34 were made up as 1000x-10000x stock solutions in DMSO and stored at −20°C. Charybdotoxin was made up as a 1000x solution in water and stored at −80°C. 4-aminopyridine was made up as a 20x stock in imaging buffer (HBSS) and stored at 4°C. Recombinantly expressed epidermal growth factor was purchased from PeproTech (Rocky Hill, NJ) and aliquoted as a 1 mg/mL solution in water at −80°C.
@@ -108,9 +368,9 @@ Solid sodium orthovanadate was dissolved in water and activated before use (Gord
 
 Unless otherwise noted, all imaging experiments were performed in Hank’s Balanced Salt Solution (HBSS; Gibco/Thermo Fisher Scientific). HBSS composition in mM: 137.9 NaCl, 5.3 KCl, 5.6 D-glucose, 4.2 NaHCO3, 1.3 CaCl2, 0.49 MgCl2, 0.44 KH2PO4, 0.41 MgSO4, 0.34 Na2HPO4. High K+ HBSS was made in-house to 285 mOsmol and pH 7.3, containing (in mM): 120 KCl, 23.3 NaCl, 5.6 D-glucose, 4.2 NaHCO3, 1.3 CaCl2, 0.49 MgCl2, 0.44 KH2PO4, 0.41 MgSO4, 0.34 Na2HPO4. Nominally Ca2+/Mg2+ free HBSS (Gibco) contained, in mM: 137.9 NaCl, 5.3 KCl, 5.6 D-glucose, 4.2 NaHCO3, 0.44 KH2PO4, 0.34 Na2HPO4.
 
-## Methods
+### Methods
 
-## Cell culture
+#### Cell culture
 
 All cell lines were obtained from the UC Berkeley Cell Culture Facility and discarded after twenty-five passages. A431, HEK293T, MCF-7, and MDA-MB-231 cells were authenticated by short tandem repeat (STR) profiling. All cells were routinely tested for mycoplasma contamination. Cells were maintained in Dulbecco’s Modified Eagle Medium (DMEM) with 4.5 g/L D-glucose supplemented with 10% FBS (Seradigm (VWR); Radnor, PA) and 2 mM GlutaMAX (Gibco) in a 5% CO2 incubator at 37°C. Media for MCF-7 cells was supplemented with 1 mM sodium pyruvate (Life Technologies/Thermo Fisher Scientific) and 1x non-essential amino acids (Thermo Fisher Scientific). Media for CHO.K1 (referred to as CHO throughout the text) cells was supplemented with 1x non-essential amino acids. HEK293T and MDA-MB-231 were dissociated with 0.05% Trypsin-EDTA with phenol red (Thermo Fisher Scientific) at 37°C, whereas A431, CHO, and MCF-7 cells were dissociated with 0.25% Trypsin-EDTA with phenol red at 37°C. To avoid potential toxicity of residual trypsin, all cells except for HEK293T were spun down at 250xg or 500xg for 5 min and re-suspended in fresh complete media during passaging.
 
@@ -118,11 +378,11 @@ For use in imaging experiments, cells were plated onto 25 mm diameter poly-D-lys
 
 A431, CHO, HEK293T, and MCF-7 were seeded onto glass coverslips 16–24 hr before microscopy experiments. MDA-MB-231 cells were seeded 48 hr before use because it facilitated formation of gigaseals during whole-cell voltage clamp electrophysiology. Cell densities used for optical resting membrane potential recordings (in 103 cells per cm2) were: A431 42; CHO 42; HEK293T 42; MCF-7 63; MDA-MB-231 42. To ensure the presence of single cells for whole-cell voltage clamp electrophysiology, fast-growing cells were plated more sparsely (approximately 20% confluence) for electrophysiology experiments. Cell densities used for electrophysiology (in 103 cells per cm2) were: A431 36–52; CHO 21; HEK293T 21; MCF-7 63; MDA-MB-231 42. To reduce their rapid growth rate, HEK293T cells were seeded onto glass coverslips in reduced glucose (1 g/L) DMEM with 10% FBS, 2 mM GlutaMAX, and 1 mM sodium pyruvate for electrophysiology experiments.
 
-## Cellular loading of VoltageFluor dyes
+#### Cellular loading of VoltageFluor dyes
 
 Cells were loaded with 1x VoltageFluor in HBSS for 20 min in a 37°C incubator with 5% CO2. For most experiments, 100 nM VoltageFluor was used. Serum-starved A431 cells were loaded with 50 nM VoltageFluor. After VF loading, cells were washed once with HBSS and then placed in fresh HBSS for imaging. All imaging experiments were conducted at room temperature under ambient atmosphere. Cells were used immediately after loading the VF dye, and no cells were kept for longer than an hour at room temperature.
 
-## Whole-cell patch-clamp electrophysiology
+#### Whole-cell patch-clamp electrophysiology
 
 Pipettes were pulled from borosilicate glass with filament (Sutter Instruments, Novato, CA) with resistances ranging from 4 to 7 MΩ with a P97 pipette puller (Sutter Instruments). Internal solution composition, in mM (pH 7.25, 285 mOsmol/L): 125 potassium gluconate, 10 KCl, 5 NaCl, 1 EGTA, 10 HEPES, 2 ATP sodium salt, 0.3 GTP sodium salt. EGTA (tetraacid form) was prepared as a stock solution in either 1 M KOH or 10 M NaOH before addition to the internal solution. Pipettes were positioned with an MP-225 micromanipulator (Sutter Instruments). A liquid junction potential of −14 mV was determined by the Liquid Junction Potential Calculator in the pClamp software package (Barry, 1994) (Molecular Devices, San Jose, CA), and all voltage step protocols were corrected for this offset.
 
@@ -132,7 +392,7 @@ For di-8-ANEPPS, electrophysiology recordings were made in the same manner as th
 
 For electrophysiology involving small groups of cells (Figure 2—figure supplement 3), complete voltage clamp across the entire cell group was not possible. Recordings were used as long as Ra remained below 30 MΩ for at least three voltage steps. Most recordings also retained Rm:Ra ratios greater than 20:1.
 
-## Epidermal growth factor treatment
+#### Epidermal growth factor treatment
 
 A431 cells were serum starved prior to epidermal growth factor studies. Two days before the experiment, cells were trypsizined and suspended in complete media with 10% FBS. Cells were then spun down for 5 min at 500xg and re-suspended in reduced serum DMEM (2% FBS, 2 mM GlutaMAX, 4.5 g/L glucose). Cells were seeded onto 25 mm coverslips in six well plates at a density of 84 × 103 cells per cm2. 4–5.5 hr before the experiment, the media was exchanged for serum-free DMEM (0% FBS, 2 mM GlutaMAX, 4.5 g/L glucose).
 
@@ -140,19 +400,23 @@ After 4–5.5 hr in serum-free media, cells were loaded with 50 nM VF dye as des
 
 For analysis of short-term responses to EGF (3 min time series), VF lifetime was recorded in 6 sequential 30 s exposures. Immediately after the conclusion of the first frame (30–35 s into the recording), EGF or vehicle (imaging buffer only) was added to the indicated final concentration from a 2x solution in HBSS imaging buffer. For analysis of long-term responses to EGF (15 min time series), EGF addition occurred in the same way, but a gap of 150 s (without laser illumination) was allotted between each 30 s lifetime recording. Times given throughout the text correspond to the start of an exposure. Voltage changes at 2.5 min were calculated from the difference between an initial image (taken before imaging buffer vehicle or EGF addition) and a final image (a 30 s exposure starting 2.5 min into the time series).
 
-## Transfection and imaging of CAESR in HEK293T
+#### Transfection and imaging of CAESR in HEK293T
 
 The CAESR plasmid was obtained as an agar stab (FCK-Quasar2-Citrine, Addgene #59172), cultured overnight in LB with 100 μg/mL ampicillin, and isolated via a spin miniprep kit (Qiagen). HEK293T cells were plated at a density of 42,000 cells per cm2directly onto a six well tissue culture plate and incubated at 37°C in a humidified incubator for 24 hr prior to transfection. Transfections were performed with Lipofectamine 3000 according to the manufacturer’s protocol (Thermo Fisher Scientific). Cells were allowed to grow an additional 24 hr after transfection before they were plated onto glass coverslips for microscopy experiments (as described above for electrophysiology of untransfected HEK293T cells).
 
-## Determination of EC50 for EGF in A431 cells
+#### Determination of EC50 for EGF in A431 cells
 
 Average voltage changes 2.5 min after addition of EGF to serum deprived A431 cells were determined at different EGF concentrations, and these means were fit to a four parameter logistic function in MATLAB (MathWorks, Natick, MA).
 
-## Goldman-Hodgkin-Katz estimation of Vmem ranges in different imaging buffers
+#### Goldman-Hodgkin-Katz estimation of Vmem ranges in different imaging buffers
 
-If intracellular and extracellular concentrations, as well as relative permeabilities, of all ionic species are known, the Goldman-Hodgkin-Katz (GHK) equation (Equation 1) can be used to calculate the resting membrane potential of a cell (Hodgkin and Katz, 1949). In practice, the intracellular ion concentrations [X]in and relative permeabilities Px are difficult to determine, so the GHK equation is not a substitute for direct measurement of Vmem. To obtain a range of reasonable Vmem values in systems where these concentrations and relative permeabilities are not known, we calculated possible Vmem using the ‘standard’ parameters derived from Hodgkin and Katz (1949), as well as a value above and a value below each ‘standard’ point. The values evaluated were the following: PK 1; PNa 0.01, 0.05, 0.2; PCl 0.2, 0.45, 0.9; [K+]in 90, 150, 200 mM; [Na+]in 5, 15, 50 mM; [Cl-]in 2, 10, 35 mM. Extracellular ion concentrations [X]out were known (see Materials and methods). In Equation 1, R is the universal gas constant, T is the temperature (293 K for this experiment), and F is Faraday’s constant.(1)Vmem=RTFlnPK[K+]out+PNa[Na+]out+PCl[Cl-]inPK[K+]in+PNa[Na+]in+PCl[Cl-]out
+If intracellular and extracellular concentrations, as well as relative permeabilities, of all ionic species are known, the Goldman-Hodgkin-Katz (GHK) equation (Equation 1) can be used to calculate the resting membrane potential of a cell (Hodgkin and Katz, 1949). In practice, the intracellular ion concentrations [X]in and relative permeabilities Px are difficult to determine, so the GHK equation is not a substitute for direct measurement of Vmem. To obtain a range of reasonable Vmem values in systems where these concentrations and relative permeabilities are not known, we calculated possible Vmem using the ‘standard’ parameters derived from Hodgkin and Katz (1949), as well as a value above and a value below each ‘standard’ point. The values evaluated were the following: PK 1; PNa 0.01, 0.05, 0.2; PCl 0.2, 0.45, 0.9; [K+]in 90, 150, 200 mM; [Na+]in 5, 15, 50 mM; [Cl-]in 2, 10, 35 mM. Extracellular ion concentrations [X]out were known (see Materials and methods). In Equation 1, R is the universal gas constant, T is the temperature (293 K for this experiment), and F is Faraday’s constant.
 
-## Fluorescence lifetime data acquisition
+$$
+V_{mem}=\frac{RT}{F}ln\frac{P_{K}[K^{+}]_{out}+P_{Na}[Na^{+}]_{out}+P_{Cl}[Cl^{-}]_{in}}{P_{K}[K^{+}]_{in}+P_{Na}[Na^{+}]_{in}+P_{Cl}[Cl^{-}]_{out}}
+$$
+
+#### Fluorescence lifetime data acquisition
 
 Fluorescence lifetime imaging was conducted on a LSM 510 inverted scanning confocal microscope (Carl Zeiss AG, Oberkochen, Germany) equipped with an SPC-150 or SPC-150N single photon counting card (Becker and Hickl GmbH, Berlin, Germany) (Scheme 1). 80 MHz pulsed excitation was supplied by a Ti:Sapphire laser (MaiTai HP; SpectraPhysics, Santa Clara, CA) tuned to 958 nm and frequency-doubled to 479 nm. The laser was cooled by a recirculating water chiller (Neslab KMC100). Excitation light was directed into the microscope with a series of silver mirrors (Thorlabs, Newton, NJ or Newport Corporation, Irvine, CA).
 
@@ -166,74 +430,168 @@ Fluorescence emission was collected through a 40x oil immersion objective (Zeiss
 
 Routine evaluation of the proper functioning of the lifetime recording setup was performed by measurement of three standards (Figure 1—source data 2): 2 μM fluorescein in 0.1 N NaOH, 1 mg/mL erythrosin B in water (pH 7), and the instrument response function (IRF). The IRF was determined from a solution of 500 μM fluorescein and 12.2 M sodium iodide in 0.1 N NaOH. Because of the high concentration of iodide quencher, the IRF solution has a lifetime shorter than the detector response time, allowing approximation of the instrument response function under identical excitation and emission conditions as data acquisition (Liu et al., 2014).
 
-## IRF deconvolution
+#### IRF deconvolution
 
 Signal from photons detected in a TCSPC apparatus are convolved with the instrument response (IRF). IRFs can be approximated by the SPCImage fitting software, but consistency of lifetime fits on VF-FLIM datasets was improved by using a measured IRF. Measured IRFs were incorporated by the iterative reconvolution method using SPCImage analysis software (Becker, 2012).
 
-## VoltageFluor lifetime fitting model
+#### VoltageFluor lifetime fitting model
 
-All VoltageFluor lifetime data were fit using SPCImage (Becker and Hickl), which solves the nonlinear least squares problem using the Levenberg-Marquadt algorithm. VF2.1.Cl lifetime data were fit to a sum of two exponential decay components (Equation 2). Attempts to fit the VF2.1.Cl data with a single exponential decay (Equation 3) were unsatisfactory.(2)Ft=a1e-tτ1+ a2e-tτ2
+All VoltageFluor lifetime data were fit using SPCImage (Becker and Hickl), which solves the nonlinear least squares problem using the Levenberg-Marquadt algorithm. VF2.1.Cl lifetime data were fit to a sum of two exponential decay components (Equation 2). Attempts to fit the VF2.1.Cl data with a single exponential decay (Equation 3) were unsatisfactory.
 
-The fluorescence lifetime of VF2.0.Cl was adequately described by a single exponential decay for almost all data (Equation 3). A second exponential component was necessary to fit data at VF2.0.Cl concentrations above 500 nM, likely attributable to the concentration-dependent decrease in lifetime that was observed high VF concentrations.(3)Ft=ae-tτ
+$$
+Ft=a_{1}e^{\frac{-t}{\tau_{1}}}+a_{2}e^{\frac{-t}{\tau_{2}}}
+$$
 
-For all data fit with the two component model, the weighted average of the two lifetimes, τm (Equation 4), was used in subsequent analysis.(4)τm=a1τ1+a2τ2a1+ a2
+The fluorescence lifetime of VF2.0.Cl was adequately described by a single exponential decay for almost all data (Equation 3). A second exponential component was necessary to fit data at VF2.0.Cl concentrations above 500 nM, likely attributable to the concentration-dependent decrease in lifetime that was observed high VF concentrations.
+
+$$
+Ft=ae^{\frac{-t}{\tau}}
+$$
+
+For all data fit with the two component model, the weighted average of the two lifetimes, τm (Equation 4), was used in subsequent analysis.
+
+$$
+\tau_{m}=\frac{a_{1}\tau_{1}+a_{2}\tau_{2}}{a_{1}+a_{2}}
+$$
 
 All lifetime images are represented as an overlay of photon count (pixel intensity) and weighted average lifetime (pixel color) throughout the text (τm + PC, Figure 1—figure supplement 1). Pixels with insufficient signal to fit a fluorescence decay are shown in black. The photon counts, as well as the lifetimes, in image sequences on the same set of cells are scaled across the same range.
 
-## Additional fit parameters for VoltageFluor lifetimes
+#### Additional fit parameters for VoltageFluor lifetimes
 
 Pixels with photon counts below 300 (VF2.1.Cl) or 150 (VF2.0.Cl) photons at the peak of the decay (time bin with the most signal) were omitted from analysis to ensure reproducible fits. Because the lifetime of VFs does not fully decay to baseline in a single 12.5 ns laser cycle, the incomplete multiexponentials fitting option was used, allowing the model to attribute some signal early in the decay to the previous laser cycle. Out of 256 time bins from the analog-to-digital converter (ADC), only data from time bins 23 to 240 were used in the final fit. The offset parameter (detector dark counts per ADC time bin per pixel) was set to zero. The number of iterations for the fit in SPCImage was increased to 20 to obtain converged fits. Shift between the IRF and the decay trace was fixed to 0.5 (in units of ADC time bins), which consistently gave lifetimes of standards erythrosin B (1 mg/mL in H2O) (Boens et al., 2007) and fluorescein (2 μM in 0.1 N NaOH, H2O) (Magde et al., 1999) closest to reported values (Figure 1—source data 2).
 
-## Acquisition time and effective pixel size in lifetime data
+#### Acquisition time and effective pixel size in lifetime data
 
 To obtain sufficient photons but keep excitation light power minimal, binning between neighboring pixels was employed during fitting. This procedure effectively takes the lifetime as a spatial moving average across the image by including adjacent pixels in the decay for a given pixel. To obtain larger photon counts, the confocal pinhole was set between 2.5 and 3.5 airy units, which corresponds to optical section thickness of approximately 2.5 µm.
 
-Data typeAcquired pixel width (μm)Binned pixel width (μm)Acquisitiontime (s)Img size (pixels)Concentration Curve (Figure 1—figure supplement 2, Figure 2—figure supplement 4)0.443.0875–90256 × 256Vmem Distributions (Figure 3)1.248.6890–120256 × 256Electrophysiology Recording1.003.0115–3064 × 64EGF Time Series0.882.643064 × 64
+<table>
+  <thead>
+    <tr>
+      <th>Data type</th>
+      <th>Acquired pixel width (μm)</th>
+      <th>Binned pixel width (μm)</th>
+      <th>Acquisitiontime (s)</th>
+      <th>Img size (pixels)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Concentration Curve (Figure 1—figure supplement 2, Figure 2—figure supplement 4)</td>
+      <td>0.44</td>
+      <td>3.08</td>
+      <td>75–90</td>
+      <td>256 × 256</td>
+    </tr>
+    <tr>
+      <td>Vmem Distributions (Figure 3)</td>
+      <td>1.24</td>
+      <td>8.68</td>
+      <td>90–120</td>
+      <td>256 × 256</td>
+    </tr>
+    <tr>
+      <td>Electrophysiology Recording</td>
+      <td>1.00</td>
+      <td>3.01</td>
+      <td>15–30</td>
+      <td>64 × 64</td>
+    </tr>
+    <tr>
+      <td>EGF Time Series</td>
+      <td>0.88</td>
+      <td>2.64</td>
+      <td>30</td>
+      <td>64 × 64</td>
+    </tr>
+  </tbody>
+</table>
 
 All tabulated values are for an individual frame, although multiple sequential frames were recorded in both the electrophysiology and EGF experiments. For each recording type, the width of each pixel at acquisition is reported, as well as the width of the area included in the binned lifetime signal during fitting. All pixels are square. The acquisition time reflects the total time to collect the image, not the total time exposing each pixel. All FLIM images have 256 time bins in the ns regime, so a 256 × 256 spatial image size represents a 256 × 256 × 256 total dataset. Img = image.
 
-## Determination of regions of interest
+#### Determination of regions of interest
 
 Images were divided into cell groups, with each cell group as a single region of interest (ROI). ROIs were determined from photon count images, either manually from the cell morphology in FIJI (Schindelin et al., 2012) or automatically by sharpening and then thresholding the signal intensity with custom MATLAB code (Source code 2). Regions of images that were partially out of the optical section or contained punctate debris were omitted. Sample ROIs are shown in Figure 1—figure supplement 1.
 
 For cells that adjoin other cells, attribution of a membrane region to one cell versus the other is not possible. As such, we chose to interpret each cell group as an independent sample (‘n’) instead of extracting Vmem values for individual cells. Adjacent cells in a group are electrically coupled to varying degrees, and their resting membrane potentials are therefore not independent (Meşe et al., 2007). While this approach did not fully utilize the spatial resolution of VF-FLIM, it prevented overestimation of biological sample size for the effect in question.
 
-## Conversion of lifetime to transmembrane potential
+#### Conversion of lifetime to transmembrane potential
 
-The mean τm across all pixels in an ROI was used as the lifetime for that ROI. Lifetime values were mapped to transmembrane potential via the lifetime-Vmem standard curves determined with whole-cell voltage-clamp electrophysiology. For electrophysiology measurements, the relationship between the weighted average lifetime (Equation 4) and membrane potential for each patched cell was determined by linear regression, yielding a sensitivity (m, ps/mV) and a 0 mV lifetime (b, ps) for each cell (Equation 5). The average sensitivity and 0 mV point across all cells of a given type were used to convert subsequent lifetime measurements (τ) to Vmem (Figure 2—source data 1, Equation 6). For quantifying changes in voltage (ΔVmem) from changes in lifetime (Δτ), only the average sensitivity is necessary (Equation 7).(5)τ=m*Vmem+b(6)Vmem= (τ- b)m(7)ΔVmem= (Δτ)m
+The mean τm across all pixels in an ROI was used as the lifetime for that ROI. Lifetime values were mapped to transmembrane potential via the lifetime-Vmem standard curves determined with whole-cell voltage-clamp electrophysiology. For electrophysiology measurements, the relationship between the weighted average lifetime (Equation 4) and membrane potential for each patched cell was determined by linear regression, yielding a sensitivity (m, ps/mV) and a 0 mV lifetime (b, ps) for each cell (Equation 5). The average sensitivity and 0 mV point across all cells of a given type were used to convert subsequent lifetime measurements (τ) to Vmem (Figure 2—source data 1, Equation 6). For quantifying changes in voltage (ΔVmem) from changes in lifetime (Δτ), only the average sensitivity is necessary (Equation 7).
 
-Where standard error of the mean of a voltage determination (δVmem) is given, error was propagated to include the standard errors of the slope (δm) and y-intercept (δb) of the voltage calibration, as well as the standard error of the lifetime measurements (δτ) in the condition of interest (Equation 8). For error in a voltage change (δΔVmem), only error in the calibration slope was included in the propagated error (Equation 9). Where standard deviation of VF-FLIM derived Vmem values is shown, a similar error propagation procedure was applied, using the standard deviation of the average sensitivity and 0 mV lifetime for that cell line.(8)δVmem=Vmemδτ2+δb2τ-b2+δmm2(9)δΔVmem=ΔVmemδΔτΔτ2+δmm2
+$$
+\tau=m*V_{mem}+b
+$$
 
-## Resolution of VF-FLIM voltage determination
 
-The intrinsic nature of fluorescence lifetime introduces a point of reference into the voltage measurement, from which a single lifetime image can be interpreted as resting membrane potential. Differences in this reference point (reported here as the 0 mV lifetime) over time and across cells provides an estimate of the voltage-independent noise in VF-FLIM. We report resolution as the root-mean-square deviation (RMSD) between the optically calculated voltage (VFLIM) and the voltage set by whole-cell voltage clamp (Vephys), which is analogous to the resolution calculations described previously by Cohen and co-workers (Hou et al., 2014). The RMSD of n measurements (Equation 10) can be determined from the variance σ (Cone and Cone, 1976) (Equation 11) and the bias (Equation 12) of the estimator (in this case, VF-FLIM) relative to the ‘true’ value (in this case, electrophysiology). These calculations are described graphically in Scheme 2 below.(10)RMSD=σ2+Bias2(11)σ2=1n∑i=1n(VFLIM, i- Vephys, i)2(12)Bias=1n∑i=1nVFLIM, i- 1n∑i=1nVephys,i
+
+$$
+V_{mem}=\frac{(\tau-b)}{m}
+$$
+
+
+
+$$
+ΔV_{mem}=\frac{(Δ\tau)}{m}
+$$
+
+Where standard error of the mean of a voltage determination (δVmem) is given, error was propagated to include the standard errors of the slope (δm) and y-intercept (δb) of the voltage calibration, as well as the standard error of the lifetime measurements (δτ) in the condition of interest (Equation 8). For error in a voltage change (δΔVmem), only error in the calibration slope was included in the propagated error (Equation 9). Where standard deviation of VF-FLIM derived Vmem values is shown, a similar error propagation procedure was applied, using the standard deviation of the average sensitivity and 0 mV lifetime for that cell line.
+
+$$
+\deltaV_{mem}=V_{mem}\sqrt{\frac{\sqrt{\delta\tau^{2}+\deltab^{2}}}{\tau-b}^{2}+\frac{\deltam}{m}^{2}}
+$$
+
+
+
+$$
+\deltaΔV_{mem}=ΔV_{mem}\sqrt{\frac{\deltaΔ\tau}{Δ\tau}^{2}+\frac{\deltam}{m}^{2}}
+$$
+
+#### Resolution of VF-FLIM voltage determination
+
+The intrinsic nature of fluorescence lifetime introduces a point of reference into the voltage measurement, from which a single lifetime image can be interpreted as resting membrane potential. Differences in this reference point (reported here as the 0 mV lifetime) over time and across cells provides an estimate of the voltage-independent noise in VF-FLIM. We report resolution as the root-mean-square deviation (RMSD) between the optically calculated voltage (VFLIM) and the voltage set by whole-cell voltage clamp (Vephys), which is analogous to the resolution calculations described previously by Cohen and co-workers (Hou et al., 2014). The RMSD of n measurements (Equation 10) can be determined from the variance σ (Cone and Cone, 1976) (Equation 11) and the bias (Equation 12) of the estimator (in this case, VF-FLIM) relative to the ‘true’ value (in this case, electrophysiology). These calculations are described graphically in Scheme 2 below.
+
+$$
+RMSD=\sqrt{\sigma^{2}+Bias^{2}}
+$$
+
+
+
+$$
+\sigma^{2}=\frac{1}{n}\sumi=1n(V_{FLIM,i}-V_{ephys,i})^{2}
+$$
+
+
+
+$$
+Bias=\frac{1}{n}\sumi=1nV_{FLIM,i}-\frac{1}{n}\sumi=1nV_{ephys,i}
+$$
 
 The voltage-independent variations in lifetime are much larger between cells than within a cell. Therefore, the error in measuring absolute voltage changes on a given cell (‘intra-cell’ comparisons) is lower than the error in determining the absolute Vmem of that cell (‘inter-cell’ comparisons, since the calibration used is from another cell). We can therefore determine an ‘intra-cell’ RMSD and an ‘inter-cell’ RMSD to reflect the voltage resolution of these two types of measurements. To calculate ‘intra-cell’ error, we look at the RMSD between Vephys and VFLIM using the τfl-Vmem relationship for that specific cell. Phrased another way, we are looking at the amount of error that would be expected in estimating Vmem of a cell if its exact τfl-Vmem relationship were known. This ‘intra cell’ RMSD estimates the error expected in quantifying changes in Vmem on a given cell. We calculate an intra cell error for each cellular recording, so intra cell errors are reported throughout the text as a mean ± SEM of the intra cell errors for all individual cells of a given type. The average intra cell error was at or below 5 mV for all cell lines tested (Figure 2—source data 1).
 
 ![Scheme 2.](https://cdn.elifesciences.org/articles/44522/elife-44522-fig7-v2.jpg)
 
-**Scheme 2.:** mem resolution calculations.Data are taken directly from Figure 1H,I as an example. (A) Intra cell values are the RMSD between the voltage equivalent of the measured lifetime (VFLIM) and voltage set by electrophysiology (Vephys). VFLIM values are calculated using that particular cell’s line of best fit, so one value is obtained per cell. Here, we present intra cell error as the mean ± SEM of all cells from a given cell line. (B) Inter cell errors are the RMSD between the voltage-equivalent of the 0 mV lifetime for all cells tested from a cell line (VFLIM, determined with the average slope and y-intercept for that cell line) and the ground truth value of 0 mV. Inter-cell accuracy is calculated from all of the calibration data for a cell line, so there is one value per cell line. Black points are experimental y-intercepts and blue points are the VFLIM optical voltage determinations from those lifetimes. Gray lines are lines of best fit for individual cells. Green line in (B) represents the average τfl-Vmem relationship for a cell line.
+**Scheme 2.:** Data are taken directly from Figure 1H,I as an example. (A) Intra cell values are the RMSD between the voltage equivalent of the measured lifetime (VFLIM) and voltage set by electrophysiology (Vephys). VFLIM values are calculated using that particular cell’s line of best fit, so one value is obtained per cell. Here, we present intra cell error as the mean ± SEM of all cells from a given cell line. (B) Inter cell errors are the RMSD between the voltage-equivalent of the 0 mV lifetime for all cells tested from a cell line (VFLIM, determined with the average slope and y-intercept for that cell line) and the ground truth value of 0 mV. Inter-cell accuracy is calculated from all of the calibration data for a cell line, so there is one value per cell line. Black points are experimental y-intercepts and blue points are the VFLIM optical voltage determinations from those lifetimes. Gray lines are lines of best fit for individual cells. Green line in (B) represents the average τfl-Vmem relationship for a cell line.
 
 The error in the absolute membrane potential determination (‘inter-cell’) is calculated here as the RMSD between the y-intercept (0 mV lifetime) of all of the individual cells’ lifetime-voltage relationships and the 0 mV value for the averaged calibration for all cells of a given type. This metric quantifies how well the lifetime-Vmem relationship for a given cell line represents an individual cell’s lifetime-Vmem relationship. This ‘inter cell’ RMSD ranged from 10 to 23 mV for the tested cell lines (Figure 2—source data 1). Much smaller errors for a population value of Vmem can be obtained by averaging Vmem recordings from multiple cells.
 
 This method of calculating error assumes that the electrophysiology measurement is perfectly accurate and precise. Realistically, it is likely that some of the variation seen is due to the quality of the voltage clamp. As a result, these RMSD values provide a conservative upper bound for the voltage errors in VF-FLIM.
 
-## Analysis of CAESR lifetimes
+#### Analysis of CAESR lifetimes
 
 For sample images of CAESR in HEK293T (Figure 1—figure supplement 4), fluorescence decays were fit using SPCImage to a biexponential decay model as described for VF2.1.Cl above, using a peak photon threshold of 150 and a bin of 2 (binned pixel width of 5 μm). To better match the studies by Cohen and co-workers (Brinks et al., 2015), which isolated the membrane fluorescence from cytosolic fluorescence by directing the laser path, the lifetime-voltage relationships were not determined with these square-binned images. Instead, membranes were manually identified, and the fluorescence decays from all membrane pixels were summed together before fitting once per cell. (This is in contrast to the processing of VoltageFluor data, where the superior signal to noise and localization enables fitting and analysis of the lifetime on a pixel by pixel basis). This ‘one fit per membrane’ analysis of CAESR was performed in custom MATLAB code implementing a Nelder-Mead algorithm (Source code 1, adapted from Enderlein and Erdmann, 1997). CAESR data were fit to a biexponential model with the offset fixed to 0 and the color shift as a free parameter.
 
-## Di-8-ANEPPS ratio-based imaging
+#### Di-8-ANEPPS ratio-based imaging
 
 In preparation for imaging, HEK293T cells were plated as described above for electrophysiology. 1 µM di-8-ANEPPS was loaded for ten minutes in HBSS at room temperature and atmospheric CO2. Coverslips were washed twice in HBSS and transferred to fresh HBSS for imaging. No surfactants were used in the loading (e.g. Pluronic F-127) because their presence worsened cell robustness for whole-cell patch-clamp electrophysiology. All recordings were made with HBSS as an extracellular solution; no cells were kept for more than 30 min after dye loading due to the increasing presence of internalized dye.
 
 Epifluorescence imaging was performed with an inverted Observer.Z1 (Carl Zeiss Microscopy) controlled with µManager 1.4 (Open Imaging) (Edelstein et al., 2014). Images were acquired with an Orca Flash 4 Digital CMOS camera (Hamamatsu Corporation; San Jose, CA). Excitation light was provided with a Spectra X light engine (Lumencor, Inc.; Beaverton, OR). Excitation wavelengths were selected with built-in filters in the Spectra X (440/20 bandpass filter for blue and 550/15 bandpass filter for green). Blue-excited images were obtained with an excitation power of 71 mW/mm2 and an exposure time of 50 ms. Green-excited images were obtained with an excitation power of 136 mW/mm2 and an exposure time of 500 ms. Emission light was collected with a 40x magnification oil immersion objective lens using Immersol 518F immersion oil (Zeiss). Fluorescence emission was selected with a 562 nm long pass dichroic mirror and further filtered by a 593/40 bandpass filter (Semrock). Excitation and emission wavelengths were selected to match previous work with this probe as closely as possible (Zhang et al., 1998) (current excitation [blue]: 440 ± 10 nm; reported excitation [blue]: 440 ± 15 nm; current excitation [green]: 550 ± 7.5 nm; reported excitation [green]: 530 ± 15 nm; current dichroic: 562 nm long-pass; reported dichroic: 565 nm; current emission: 593 ± 20 nm; reported emission: 570 nm long pass).
 
-## Di-8-ANEPPS data analysis
+#### Di-8-ANEPPS data analysis
 
 Single color (e.g. blue excited or green excited) fluorescence images were background subtracted at each pixel before ratios were calculated. The background value was determined from a region of interest near the center of the image that contained no cells and minimal fluorescent debris. Excitation ratios (‘R’, blue signal divided by green signal, B/G) were then calculated pixelwise from the background subtracted fluorescence images. Pixels with less than 100 arbitrary units of signal in either the blue or the green channel were excluded from analysis and are depicted in black. Regions of interest (ROIs) were manually selected in FIJI to include only area corresponding to the cell membrane. The ratio was averaged across all pixels in a given ROI (similar to the treatment for VF-FLIM, as described in Figure 1—figure supplement 1). The ratio values per value of Vmem (set by whole cell patch clamp electrophysiology) in Figure 1—figure supplement 5E,F are the average of these cell-averaged ratios obtained in 6 or 7 sequential images acquired while the Vmem was held at the indicated value.
 
 Where normalized R values are discussed, these values were calculated by dividing the ratio at a given potential (averaged for an ROI as discussed above) by the ratio at 0 mV, as reported previously (Zhang et al., 1998). This normalization procedure requires electrode-based calibration for every individual recording and cannot be stably extended to all cells from a particular cell line. Therefore, it is not analogous to VF-FLIM and is not the point of comparison for voltage resolution.
 
-## Statistical analysis
+#### Statistical analysis
 
 Mean ± standard error of the mean (SEM) of data is reported throughout the text. Hypothesis testing was performed as indicated with either analysis of variance (ANOVA) followed by appropriate post hoc tests or two-sided, unpaired, unequal variances t-tests. Statistical tests were performed in Python 2 or 3 with the SciPy, pandas and Pingouin (Vallat, 2018) packages. Unless otherwise noted, all data shown reflect at least three biological replicates (independent cultures measured on different days). Each of these biological replicates contained between 1 and 5 technical replicates (different samples of cells that were measured on the same day and had been prepared from the same cell stock). For tandem electrophysiology-FLIM measurements, each τfl-Vmem calibration includes at least three biological replicates to capture the variability expected during applications of VF-FLIM. No power analyses were performed before data were collected. Sample sizes throughout the text refer to the total number of cells or cell groups of a given type analyzed across all biological and technical replicates. Cell group identification is discussed in Methods. For experiments where resting membrane potential or resting membrane potential changes are compared to a baseline (Figures 3–5 and supplements), both control measurements and their physiologically or pharmacologically altered counterparts were recorded on each experimental day. Masking was not used during data collection or analysis.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45342.001 Identification of pro-regenerative approaches to improve tendon healing is critically important as the fibrotic healing response impairs physical function. In the present study we tested the hypothesis that S100a4 haploinsufficiency or inhibition of S100a4 signaling improves tendon function following acute injury and surgical repair in a murine model. We demonstrate that S100a4 drives fibrotic tendon healing primarily through a cell non-autonomous process, with S100a4 haploinsufficiency promoting regenerative tendon healing. Moreover, inhibition of S100a4 signaling via antagonism of its putative receptor, RAGE, also decreases scar formation. Mechanistically, S100a4 haploinsufficiency decreases myofibroblast and macrophage content at the site of injury, with both cell populations being key drivers of fibrotic progression. Moreover, S100a4-lineage cells become α-SMA + myofibroblasts, via loss of S100a4 expression. Using a combination of genetic mouse models, small molecule inhibitors and in vitro studies we have defined S100a4 as a novel, promising therapeutic candidate to improve tendon function after acute injury.
+Identification of pro-regenerative approaches to improve tendon healing is critically important as the fibrotic healing response impairs physical function. In the present study we tested the hypothesis that S100a4 haploinsufficiency or inhibition of S100a4 signaling improves tendon function following acute injury and surgical repair in a murine model. We demonstrate that S100a4 drives fibrotic tendon healing primarily through a cell non-autonomous process, with S100a4 haploinsufficiency promoting regenerative tendon healing. Moreover, inhibition of S100a4 signaling via antagonism of its putative receptor, RAGE, also decreases scar formation. Mechanistically, S100a4 haploinsufficiency decreases myofibroblast and macrophage content at the site of injury, with both cell populations being key drivers of fibrotic progression. Moreover, S100a4-lineage cells become α-SMA+ myofibroblasts, via loss of S100a4 expression. Using a combination of genetic mouse models, small molecule inhibitors and in vitro studies we have defined S100a4 as a novel, promising therapeutic candidate to improve tendon function after acute injury.
 
 ## Introduction
 
@@ -29,15 +29,35 @@ In the present study we delineate the relative contributions of S100a4 expressio
 
 ## Results
 
-## S100a4 is expressed by resident tendon cells and the S100a4+population expands during healing
+### S100a4 is expressed by resident tendon cells and the S100a4+population expands during healing
 
 Spatial localization of S100a4 was examined before and after flexor digitorum longus (FDL) tendon repair surgery in S100a4-Cre; ROSA-Ai9 reporter mice to trace S100a4-lineage cells (S100a4Lin+; Figure 1A & B), and S100a4-GFPpromoter mice to identify cells actively expressing S100a4 (S100a4-GFPpromoter+; Figure 1D and E). Most resident tendon cells were S100a4Lin+ in the uninjured tendon. Following tendon repair, S100a4Lin+ cells were located in the native tendon and bridging scar tissue at D7 and D14 post-surgery (Figure 1B). Quantitatively, there was a transient reduction in the S100a4Lin+ area at D7, relative to un-injured tendon. However, by 14 there was no significant difference (Figure 1C). Many resident tendon cells were actively expressing S100a4 at baseline, however many S100a4- cells were also present (Figure 1E). Following injury, there were abundant S100a4-GFPpromoter+ cells in the bridging scar tissue from D3 to D14, with S100a4-GFPpromoter+ cells persisting at least through D28 (Figure 1E). Interestingly, the S100a4-GFPpromoter+ area was significantly increased at D14 relative to D3, D7 and D28 (p=0.05) (Fig. F). Notably, the persistence of the S100a4-GFPpromoter+ population was also observed in the healing Achilles tendon (Figure 1—figure supplement 1), suggesting potential conservation of S100a4 function between tendons. Consistent with changes in spatial expression over time, S100a4 mRNA expression increased from D3 to a peak at D10, followed by a progressive decline through D28 (Figure 1G).
 
-## S100a4 haploinsufficiency promotes regenerative, mechanically superior tendon healing
+![Figure 1.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) S100a4-Cre; Rosa-Ai9 reporter mice demonstrate efficient targeting of resident tendon cells. Following injury, the S100a4-lineage (S100a4Lin+) population expands, with S100a4Lin+ cells in the native tendon stubs and the bridging scar tissue at D7 and D14 post-surgery. Tendons are outlined in white, and bridging granulation tissue outlined in blue. (C) Quantification of S100a4Lin+ area over time. (*) indicates p<0.05 (1-way ANOVA). (D) The S100a4-GFPpromoter construct identifies cells actively expressing S100a4 (S100a4-GFPpromoter+). (E) A subpopulation of resident tenocytes is S100a4-GFPpromoter+ at baseline, and the S100a4-GFPpromoter+ population increases following injury, with S100a4-GFPpromoter+ cells observed in the bridging scar tissue and native tendon ends through D28 post-surgery. Tendons are outlined in white, and bridging granulation tissue outlined in orange, (*) identifies sutures. (F) Quantification of the S100a4-GFPpromoter+ area over time. (*) indicates p<0.05 (1-way ANOVA). (G) qPCR analysis of S100a4 during tendon healing demonstrates peak S100a4 expression at D10, followed by a progressive decline through D28 (n = 3 per time-point). (*) indicates p<0.05 vs. D3 repair (1-way ANOVA). Data were normalized to expression in D3 repairs, and the internal control β-actin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** S100a4-GFPPromoter+ cells are observed in the native Achilles tendon, and a S100a4+ population persists following complete transection and repair of the Achilles tendon at D14 post-surgery.
+
+### S100a4 haploinsufficiency promotes regenerative, mechanically superior tendon healing
 
 To determine the functional implications of decreasing S100a4 expression during FDL tendon healing (Figure 2A), we utilized S100a4 haploinsufficient mice (S100a4GFP/+), which results in a 50% reduction in S100a4 mRNA expression in the tendon (Figure 2B), as well as a robust decrease in S100a4 protein expression during tendon healing (Figure 2C). S100a4 haploinsufficiency did not alter baseline tendon function, with no significant differences observed in MTP Flexion Angle (p=0.22), Gliding Resistance (p=0.094), max load at failure (p=0.4), or stiffness (p=0.6) in un-injured contralateral control tendons (Figure 2—figure supplement 1). In addition, decreased S100a4 expression did not noticeably alter the spatial localization of S100a4+ cells in either the un-injured tendon or at D14 post-surgery (Figure 2—figure supplement 2). However, at D14 post-surgery, functional outcomes of scar formation in healing S100a4GFP/+ tendons were significantly improved compared to WT. A significant 36% increase in MTP Flexion Angle was observed in S100a4GFP/+ repairs, relative to WT (p=0.04) (Figure 2D). Gliding Resistance was significantly decreased by 43% in S100a4GFP/+ repairs, relative to WT (p=0.028) (Figure 2E), suggesting a reduction in scar formation in S100a4GFP/+ repairs. In addition, maximum load at failure was significantly increased (+35%) in S100a4GFP/+ repairs relative to WT (p=0.003) (Figure 2F), while stiffness was increased 28% in S100a4GFP/+ repairs, relative to WT, however this increase was not statistically significant (p=0.08) (Figure 2G). Taken together, these data suggest that S100a4 haploinsufficiency improves functional outcomes, while also improving tendon strength.
 
-## S100a4 haploinsufficiency improves tendon morphology and decreases myofibroblast content
+![Figure 2.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig2-v2.jpg)
+
+**Figure 2.:** (A) S100a4GFP/+ haploinsufficient and wild type (WT) littermates underwent transection and repair of the FDL tendon, and tendons were harvested at D14 post-surgery. (B) S100a4 mRNA expression was reduced by 50% in S100a4GFP/+ tendon repairs, relative to WT (n = 3 per group). (C) A substantial reduction in S100a4 protein expression was observed in S100a4GFP/+ tendon repairs, relative to WT. Tendon ends are outlined in blue and bridging scar tissue outlined in black (n = 3–4 per group). (D–G) At D14, MTP Flexion Angle was significantly increased in S100a4GFP/+ repairs (D), and Gliding Resistance was significantly decreased in S100a4GFP/+ repairs (E). Max load at failure was significantly improved in S100a4GFP/+ repairs (F), while no change in Stiffness was observed between genotypes (G) (n = 7–10 per group). (*) indicates p<0.05, (**) indicates p<0.01 between genotypes, n = 7–10 for (D–G) (un-paired t-test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** No changes in (A) MTP Flexion Angle, (B) Gliding Resistance, (C) Max load at failure, or (D) Stiffness were observed between WT and S100a4GFP/+ un-injured contralateral control FDL tendons. n = 11–13, (un-paired t-test).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** To determine if S100a4 haploinsufficiency altered the S100a4+ population during healing, fluorescent imaging of uninjured and D14 repairs from S100a4GFP/+ and S100a4+/+ (WT) mice were analyzed. No GFP expression was observed in S100a4+/+ WT mice either at baseline or at D14 post-surgery. In contrast, knock-down of S100a4 does not alter the S100a4GFP+ resident tendon cell population, or the expansion of the S100a4GFP+ population at D14 post-surgery. Orange insets identify high-power magnification images.
+
+### S100a4 haploinsufficiency improves tendon morphology and decreases myofibroblast content
 
 Morphologically, both Alcian blue Hematoxylin/Orange G (ABH/OG) and picrosirius red staining demonstrate collagen fibers bridging the tendon ends in both WT and S100a4 haploinsufficient mice at D14 (blue arrows, Figure 3A). Quantitatively, Col1a1 expression was significantly increased 5.6-fold (p=0.0095) in S100a4GFP/+ repairs, relative to WT repairs (Figure 3B), while no change in Col3a1 or Scx were observed between groups at D14 (Figure 3C and D). Expression of the myofibroblast marker α-SMA was decreased 2.4-fold in S100a4GFP/+ repairs, relative to WT (p=0.02) (Figure 3E). Consistent with this, a marked decrease in α-SMA staining was also observed in S100a4GFP/+ repairs, relative to WT (white arrows, Figure 3F). These data suggest that S100a4 haploinsufficiency promotes regenerative tendon healing via deposition of a Col1 ECM and a decrease in pro-fibrotic myofibroblasts.
 
@@ -45,21 +65,37 @@ Morphologically, both Alcian blue Hematoxylin/Orange G (ABH/OG) and picrosirius 
 
 **Figure 3.:** (A) ABH/OG and picrosirius red staining demonstrate an increase in mature collagen fibers (blue arrows) bridging the tendon ends in S100a4GFP/+ repairs compared to WT littermates (n = 3–4 per group) (*) indicate sutures. (B–D) S100A4GFP/+ tendons expressed significantly more Col1a1 mRNA (B), while transcript levels of Col3a1 (C) and Scx (D) were unaffected by S100a4 haploinsufficiency. (*) indicates p<0.05 (un-paired t-test), n = 3 per group. (E and F) α-SMA mRNA expression was significantly decreased in S100a4GFP/+ repairs (E) (n = 3 per group), while a substantial reduction in α-SMA protein expression was observed in S100a4GFP/+, relative to WT, using immunofluorescence (F). White arrows indicate areas of α-SMA+ cells in the healing tissue, yellow arrowheads denote α-SMA staining of vessels, blue boxes indicate location of higher magnification images.
 
-## S100a4 modulates macrophage content and function
+### S100a4 modulates macrophage content and function
 
 Given the fibrotic nature of scar-mediated tendon healing, and the ability of macrophages to modulate multiple aspects of the fibrotic process (Gibbons et al., 2011; Murray et al., 2011; Wynn and Ramalingam, 2012; Wynn and Vannella, 2016), we examined changes in macrophage content and polarization during the proliferative phase of healing in WT and S100a4GFP/+ mice. While an apparent reduction in F4/80+ macrophages was observed in S100a4GFP/+ repairs, relative to WT at D14 (white arrows, Figure 4A), no differences in the F4/80+ percent area were observed between genotypes (Figure 4D), likely due to the reduced area of scar tissue. In terms of polarization, fewer iNOS+ (M1 marker) macrophages were observed in S100a4GFP/+ repairs at D14 (Figure 4B), while a trending decrease in the iNOS+ percent area was also observed (p=0.08) (Figure 4D). Expression of the M2 macrophage marker IL1ra was not different between WT and S100a4GFP/+ at D14 (Figure 4C), and no difference in IL1ra+ percent area was observed (Figure 4D). Taken together, these data suggest that S100a4 haploinsufficiency may suppress macrophage recruitment or retention during tendon healing, and result in a less pro-inflammatory macrophage environment.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig4-v2.jpg)
+
+**Figure 4.:** (A) F4/80 staining demonstrates decreased macrophage content in the healing tendon of S100a4GFP/+ repairs at D14. White arrows identify concentrated areas of macrophages. (B) Expression of the M1 macrophage marker iNOS is markedly reduced in S100a4GFP/+ repairs at D14. (C) Expression of the M2 macrophage marker IL1ra is not different between WT and S100a4GFP/+ repairs at D14. Tendon ends are outlined in white, scar tissue is outlined in yellow, blue boxes indicate location of higher magnification images (n = 4 per group). (D) The percent area of F4/80+, iNOS+ and IL1ra+ staining, normalized to tissue area was quantified (n = 4) (un-paired t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** To identify S100a4+ macrophages, Csf1r-iCre; Rosa-Ai9; S100a4-GFPpromoter+ mice were induced with tamoxifen. Tmx was given on D0-2 for mice harvested on D3, and D0-2 and every 48 hr thereafter until harvest for samples harvested at D14. On D3 several macrophages actively express S100a4 (white arrows). By D14 the presence of Csfr1Lin+ cells increased, but very few cells actively expressed S100a4 (white arrows).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) S100a4 promotes migration of C57BL/6J bone marrow derived macrophages (BMDMs). (****) Indicates p<0.0001 vs. vehicle treated cells (1-way ANOVA). (B) No change in migration was observed in vehicle treated WT and S100a4GFP/+ BMDMs, while significant increases in migration were observed in WT and S100a4GFP/+ BMDM treated with 50 ng/mL and 1000 ng/mL S100a4-RP. (*) indicates p<0.05, (**) indicates p<0.01 vs. genotype-matched vehicle treated cells (2-way ANOVA). (C and D) Following treatment with S100a4-RP (20–1000 ng/mL), significant increases in M1 polarization markers (iNos, CD64) were observed relative to vehicle treated C57BL/6J BMDMs, as was a significant decrease in TNFα, and no change in CD86 expression (C). Significant increases in M2 markers Arg2 and IL1ra were seen with S100a4-RP treatment, while a decrease in CD163 expression, and no change in CD206 was also observed in C57BL/6J BMDMs (D). (*) indicates p<0.05 between vehicle and S100a4-RP treatment (1-way ANOVA). (E and F) Expression of M1 (E) and M2 (F) macrophage markers were not significantly different between WT and S100a4GFP/+ BMDMs in vehicle treated or upon treatment with 1000 ng/mL S100a4-RP. (*) indicates p<0.05 vs. genotype-matched vehicle treated cells (2-way ANOVA). (n = 3 per treatment).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) qPCR analysis primary tendon cells from WT and S100a4GFP/+ mice. Expression of S100a4 is significantly reduced (~50%) in S100a4GFP/+ tendon cells, relative to WT. No changes in tenogenic genes Scx, Tnmd and Mkx. (*) indicates p<0.05 vs. expression in WT cells. (B) No changes in expression of matrix genes Col1a1, Col3a1 or Fn are observed between WT and S100a4GFP/+ tendon cells. Data are normalized to WT expression and β-actin. (un-paired t-test). (C) No changes in proliferation were observed between WT and S100a4GFP/+ tendon cells (2-way ANOVA). (D). Cell migration was assessed by measuring closure of a scratch wound. Data are plotted as % of initial scratch area. Closure was significantly increased in S100a4GFP/+ tendon cells at 24 hr (2-way ANOVA).
 
 To begin to define the S100a4+ cell population(s) during healing, and to determine if macrophages express S100a4 during tendon healing, we labeled macrophages (Csf1rLin+) and assessed overlapping expression of S100a4 (S1004-GFPpromoter+). At D3 post-surgery there were many Csf1rLin+; S100a4GFPpromoter+ cells (white arrows, Figure 4—figure supplement 1), however there was a large proportion of cells that were only Csf1rLin+ or S100a4-GFPpromoter+. By D14 a few Csf1rLin+; S100a4GFPpromoter+ cells were observed (white arrows, Figure 4—figure supplement 1), however, this population was markedly reduced relative to D3. Taken together these data suggest that additional populations of cells express S100a4 during tendon healing, and that the predominant role for S100a4+ macrophages may be during the early phases of healing.
 
 To determine the effects of exogenous S100a4 and S100a4 haploinsufficiency on macrophages in vitro, primary bone marrow derived macrophages (BMDMs) were isolated from C57BL/6J, S100a4GFP/+ and WT mice. S100a4 recombinant protein (S100a4-RP) treatment enhanced C57BL/6J BMDM migration, relative to vehicle-treated cells, with a significant increase at the highest dose of 1000 ng/mL S100a4-RP (Figure 4—figure supplement 2A). No changes in macrophage migration were observed between vehicle-treated WT and S100a4GFP/+ macrophages. In addition, treatment with 50 ng/mL and 1000 ng/mL S100a4-RP enhanced macrophage migration in both WT and S100a4GFP/+ cells, relative to vehicle-treated cells (Figure 4—figure supplement 2B), suggesting that S100a4 haploinsufficiency in macrophages does not alter migration ability, or responsiveness to S100a4, and indicating that S100a4 modulates macrophage migration via cell non-autonomous effects.
 
-## S100a4-RP treatment of primary macrophages had a variable impact on polarization
+### S100a4-RP treatment of primary macrophages had a variable impact on polarization
 
 Expression of the M1 markers iNOS and CD64 were significantly up-regulated in a dose-dependent manner following S100a4-RP treatment of C57BL/6J BMDMs, while TNFα was downregulated and no change was observed in CD86 expression (Figure 4—figure supplement 2C). M2 markers Arg1 and IL1ra were significantly up-regulated with higher doses of S100a4-RP, while CD163 was down-regulated and no change in CD206 expression was observed in C57BL/6J BMDMs (Figure 4—figure supplement 2D). No differences in macrophage polarization were observed in vehicle-treated WT and S100a4GFP/+ BMDMs, and in contrast to the C57BL/6J BMDMs, S100a4-RP (1000 ng/mL) treatment had minimal effects on M1 or M2 polarization (Figure 4—figure supplement 2E and F).
 
 Given that not all S100a4-GFPpromoter+ cells are Csf1rLin+ during healing and that resident tendon cells express S100a4 (Figure 1E), we also examined the cell autonomous effects of S100a4 haploinsufficiency in primary tendon cells. A significant 50% reduction in S100a4 expression was confirmed in S100a4GFP/+ tenocytes, while no significant differences in tenogenic marker expression (Scx, Tnmd, Mkx) or matrix gene expression (Col1a1, Col3a1, Fn) were observed between WT and S100a4GFP/+ tendon cells (Figure 4—figure supplement 3A and B). In addition, no changes in proliferation were observed between WT and S100a4GFP/+ tenocytes (Figure 4—figure supplement 3C). To assess potential changes in migration we used a scratch wound assay. No changes in wound closure were observed between genotypes between 0–12 hr, however, trending improvements in closure were observed at 8 hr (p=0.059) and 12 hr (p=0.08) in S100a4GFP/+ tendon cells. By 24 hr there was a significant increase in percent wound closure in S100a4GFP/+ tendon cells, relative to WT (p=0.017) (Figure 4—figure supplement 3D), suggesting that S100a4 may modulate tendon cell migration through a cell autonomous process.
 
-## Inhibition of S100a4 signaling, via antagonism of RAGE improves tendon healing
+### Inhibition of S100a4 signaling, via antagonism of RAGE improves tendon healing
 
 Considering that S100a4 haploinsufficiency improves tendon healing, and S100a4 can function as an extracellular signaling molecule to drive fibrotic progression (Miranda et al., 2010; Tomcik et al., 2015; Yammani et al., 2006), we next examined expression of the putative S100a4 receptor, RAGE (Receptor for Advanced Glycation Endproducts) (Donato et al., 2013; Grotterød et al., 2010; Sorci et al., 2013). RAGE expression was observed throughout the scar tissue during tendon healing, with abundant co-localization of S100a4 and RAGE (Figure 5A). Consequently, we investigated the feasibility of inhibiting S100a4 signaling via disruption of S100a4-RAGE interaction using RAGE antagonist peptide (RAP) (Arumugam et al., 2012). In vivo, RAP treatment (Figure 5B) significantly improved measures of gliding function relative to vehicle treated controls, with a 41% increase in MTP Flexion Angle (p=0.008) (Figure 5C), and a 39% decrease in Gliding Resistance (p=0.007) (Figure 5D). No differences in maximum load at failure (p=0.57) and stiffness (p=0.30) were observed between groups (Figure 5E,F). These data suggest that inhibition of S100a4-RAGE recapitulates the improvements in gliding function seen with S100a4 haploinsufficiency but is insufficient to improve mechanical properties.
 
@@ -67,23 +103,39 @@ Considering that S100a4 haploinsufficiency improves tendon healing, and S100a4 c
 
 **Figure 5.:** (A) Co-immunofluorescence demonstrated co-localization of S100a4 and its putative receptor RAGE in the healing tendon (n = 3). (B) C57Bl/6J mice were treated with either RAP or vehicle, via i.p. injection from D5-10 post-surgery, and harvested at D14 for functional testing. (C–F) At D14 RAP treatment significantly improved measures of gliding function relative to vehicle, with a (C) significant increase in MTP Flexion Angle, and (D) a significant decrease in Gliding Resistance. No change in (E) Max load at failure, or (F) Stiffness was observed between treatments (n = 13 per group). (**) indicates p<0.01 between treatments (un-paired t-test).
 
-## S100a4+ cell ablation results in aberrant matrix deposition during tendon healing
+### S100a4+ cell ablation results in aberrant matrix deposition during tendon healing
 
 While S100a4 haploinsufficiency and inhibition of S100a4 signaling improves tendon healing, S100a4 can also function in a cell-autonomous manner (Figure 4—figure supplement 3D; Chow et al., 2017). To determine the effects of S100a4+ cell ablation on tendon healing, we depleted proliferating S100a4+ cells from D5-10 post-surgery (immediately preceding peak S100a4 expression) using S100a4-thymidine kinase (S100a4-TK) mice (Figure 6A). Depletion of S100a4+ cells from D5-10 resulted in a significant 91% reduction in S100a4 mRNA expression at D10 (p<0.001) (Figure 6B), and a substantial reduction in S100a4 protein expression, relative to WT at D14 (Figure 6C). Functionally, slight but non-significant improvements in gliding function were observed in S100a4-TK (D5-10), relative to WT (Figure 6D and E). However, max load at failure was significantly decreased by 43% (p=0.02) (Figure 6F), while stiffness was unchanged (Figure 6G). Morphologically, S100a4-TK (D5-10) tendons healed with thinner, more acellular bridging scar tissue between the native tendon ends, compared to the larger, more cellular granulation tissue in WT repairs (Figure 6H). Picrosirius staining demonstrated a substantial reduction in bridging ECM in S100a4-TK (D5-10) repairs, relative to WT (Figure 6I). In contrast to this, qPCR revealed significant increases in ECM proteins Col1a1 (3.9-fold, p=0.04) (Figure 6—figure supplement 1A) and Col3a1 (1.9-fold, p=0.033) (Figure 6—figure supplement 1B) mRNA expression in S100a4-TK (D5-10) mice. Additionally, significant decreases in the tenogenic transcription factor Scx (1.75-fold, p=0.04), and the myofibroblast marker α-SMA (9-fold, p=0.0003) were observed in S100a4-TK (D5-10), relative to WT (Figure 6—figure supplement 1C & D). Consistent with this, and the phenotype in S100a4GFP/+ repairs, α-SMA staining was markedly reduced in S100a4-TK (D5-10) repairs, relative to WT (Figure 6—figure supplement 2), as was total macrophage content (Figure 6—figure supplement 3). Taken together, S100a4-cell depletion alters normal matrix deposition during tendon healing, leading to pronounced morphological changes in the scar tissue and a loss of overall strength, while recapitulating the changes in myofibroblast and macrophage populations observed in S100a4GFP/+ repairs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig6-v2.jpg)
+
+**Figure 6.:** (A) WT and S100a4-TK mice were treated twice daily with ganciclovir (GCV) from D5-10 post-surgery. (B) S100a4+ cell depletion results in a 91% reduction in S100a4 mRNA at D10 post-surgery (n = 3). (C) A substantial reduction in S100a4 protein expression was observed S100a4-TK repairs, relative to WT. Tendon is outlined in blue, scar tissue is outlined in black and (*) identify sutures (n = 4). (D–G) At D14 no change in MTP Flexion Angle (D) and Gliding Resistance (E) were observed between WT and S100a4-TK repairs. (F) Max load at failure was significantly reduced following S100a4-cell depletion, while no change in Stiffness was observed (G) (n = 7–10), (**) indicates p<0.01 (un-paired t-test). (H and I) Morphologically, (H) ABH/OG and (I) Picrosirius staining demonstrate reduced matrix deposition bridging the tendon ends in the S100a4-TK repairs, relative to WT. (*) Indicates sutures.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** qPCR analyses demonstrated significant increases in (A) Col1a1, and (B) Col3a1 expression, while (C) Scx and (D) α-SMA expression levels were significantly reduced in S100a4-TK, relative to WT. Data were normalized to expression in WT samples and the internal control β-actin. (*) Indicates p<0.05, (***) indicates p<0.001, (n = 3 per group) (un-paired t-test).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** At D14 post-surgery, abundant α-SMA+ myofibroblasts (red) were observed in WT repairs. In contrast, α-SMA+ myofibroblast content was markedly reduced in S100a4-TK (D5-10) repairs. White arrows indicate areas of α-SMA+ cells in the healing tissue, while yellow arrowheads denote α-SMA staining of vessels. Tendons are outlined in white and scar tissue outlined in red.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** At D14 post-surgery abundant F4/80+ macrophages (red) were observed in WT repairs. In contrast, F4/80+ macrophage content was markedly reduced in S100a4-TK (D5-10) repairs. White arrows identify concentrated areas of macrophages. Tendon ends are outlined in white, while scar tissue is outlined in red. (*) indicates sutures.
 
 We then investigated the effects of continuous S100a4+ cell depletion (D1-14) on healing (Figure 7A). In contrast to depletion from D5-10, depletion from D1-14 significantly reduced MTP Flexion Angle (−53%, p=0.0003) (Figure 7B), and increased gliding resistance (+187%, p<0.001) (Figure 7C), indicating impairment of normal gliding function with sustained S100a4+ cell depletion. Consistent with D5-10 depletion, depletion from D1-14 reduced mechanical properties, with a 43% decrease in max load (p=0.025) (Figure 7D), and a 49% decrease in stiffness (p=0.0078) (Figure 7E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig7-v2.jpg)
 
-**Figure 7.:** +impairs restoration of gliding function and mechanical properties.(A) WT and S100a4-TK mice were treated with GCV from D1-14 post-surgery to ablate proliferating S100a4+ cells. At D14 (B) MTP Flexion Angle was significantly reduced, and (C) Gliding Resistance was significantly increased in S100a4-TK repairs, relative to WT. (D) A non-significant decrease in Max load at failure and (E) a significant reduction in Stiffness were observed in S100a4-TK repairs (n = 8–11). (*) indicates p<0.05, (**) indicates p<0.01 (un-paired t-test).
+**Figure 7.:** (A) WT and S100a4-TK mice were treated with GCV from D1-14 post-surgery to ablate proliferating S100a4+ cells. At D14 (B) MTP Flexion Angle was significantly reduced, and (C) Gliding Resistance was significantly increased in S100a4-TK repairs, relative to WT. (D) A non-significant decrease in Max load at failure and (E) a significant reduction in Stiffness were observed in S100a4-TK repairs (n = 8–11). (*) indicates p<0.05, (**) indicates p<0.01 (un-paired t-test).
 
-## S100a4-lineage cells represent differentiated a-SMA myofibroblasts in the scar tissue of healing tendon
+### S100a4-lineage cells represent differentiated a-SMA myofibroblasts in the scar tissue of healing tendon
 
 Examination of S100a4GFP/+ and S100a4-TK (D5-10) healing tendons demonstrate dramatically reduced myofibroblast content, suggesting potential interplay between S100a4+ cells and myofibroblasts. The relationship between S100a4 and pro-fibrotic myofibroblasts is controversial and likely tissue-dependent, with conflicting reports of myofibroblast fate for S100a4+ cells (Humphreys et al., 2010; Li et al., 2018; Picard et al., 2008; Tanjore et al., 2009). To understand the relationship between these cell populations during tendon healing we examined α-SMA expression in both S100a4-lineage cells and cells actively expressing S100a4 (S100a4-GFPpromoter+). S100a4-Cre; Ai9 mice demonstrate that ~ 65% of α-SMA+ myofibroblasts at D14 post-surgery are derived from S100a4-lineage, as shown by co-localization (Figure 8A, arrows, Figure 8C). In contrast, very few (~16%) S100a4-GFPpromoter+ cells demonstrated co-localization with α-SMA (Figure 8B and C). Taken together these data suggest that S100a4-lineage cells lose S100a4 expression during the transition to α-SMA+ myofibroblasts.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/45342/elife-45342-fig8-v2.jpg)
 
-**Figure 8.:** +myofibroblasts.(A) Co-localization of Red Fluorescent Protein (S100a4Lin+ cells; red) and the myofibroblast marker α-SMA (white) demonstrated abundant co-localization (yellow arrows) during tendon healing. (B) Minimal co-localization of α-SMA (white) and cells actively expressing S100a4 (S100a4-GFPpromoter+; green) was observed during healing (n = 3). (C) Quantification of the percent α-SMA+ area that is also S100a4Lin+ (red and white bar) or S100a4-GFPpromoter+ (green and white bar) at D14 (n = 3–4 per group) (**) indicates p<0.01 between groups (un-paired t-test). (D) Schematic representation of the proposed cell non-autonomous signaling functions of S100a4 in fibrotic healing, as well as cell fate of S100a4-lineage cells. The identities and discrete functions of specific populations of S100a4+ cells remains to be determined.
+**Figure 8.:** (A) Co-localization of Red Fluorescent Protein (S100a4Lin+ cells; red) and the myofibroblast marker α-SMA (white) demonstrated abundant co-localization (yellow arrows) during tendon healing. (B) Minimal co-localization of α-SMA (white) and cells actively expressing S100a4 (S100a4-GFPpromoter+; green) was observed during healing (n = 3). (C) Quantification of the percent α-SMA+ area that is also S100a4Lin+ (red and white bar) or S100a4-GFPpromoter+ (green and white bar) at D14 (n = 3–4 per group) (**) indicates p<0.01 between groups (un-paired t-test). (D) Schematic representation of the proposed cell non-autonomous signaling functions of S100a4 in fibrotic healing, as well as cell fate of S100a4-lineage cells. The identities and discrete functions of specific populations of S100a4+ cells remains to be determined.
 
 ## Discussion
 
@@ -105,68 +157,462 @@ Restoring satisfactory function following tendon injury has remained an intracta
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>B6.Cg-Tg(S100a4-EGFP)M1Egn/YunkJ (S100A4-GFPpromoter)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012893 RRID: MGI:4819362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(S100a4-TK)M31Egn/YunkJ (S100a4-TK)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012902 RRID:MGI:4454768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129S6-S100a4tm1Egn/YunkJ (S100a4GFP/+)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012904 RRID:MGI:4819358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>BALB/c-Tg(S100a4-cre)1Egn/YunkJ (S100a4-Cre)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012641 RRID:MGI:4454332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (ROSA-Ai9)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007909 RRID:MGI:3809523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tg(Csf1r-Mer-iCre-Mer)1Jwp (Csf1r-iCre)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 019098 RRID:IMSR_JAX:019098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:MGI:3028467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RAGE (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-365154 RRID:AB_10707685</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-F4/80 (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-26642 RRID:AB_2098333</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab6673 RRID:AB_305643</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab62341 RRID:AB_945213</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-S100a4 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab197896 RRID:AB_2728774</td>
+      <td>1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-iNOS (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab15323 RRID: AB_301857</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ILIRa (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab124962 RRID:AB_11130394</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha-SMA-Cy3 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C6198 RRID: AB_476856</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit AlexaFluor594 secondary</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 711-585-152 RRID: AB_2340621</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit 647 secondary</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 711-605-152 RRID: AB_2492288</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Rhodamine-Red-X</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 711-296-152 RRID:AB_2340614</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat 488 secondary</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 705-546-147 RRID: AB_2340430</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse AlexaFluor488 secondary</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: A11029 RRID:AB_138404</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nucleoside analog ganciclovir (GCV)</td>
+      <td>TSZCHEM</td>
+      <td>Cat #: 82410-32-0</td>
+      <td>75 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RAGE Antagonist Peptide (RAP)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat. #: 553031</td>
+      <td>100 ug (peptide)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human S100a4 Recombinant protein</td>
+      <td>LSBio</td>
+      <td>Cat #: G1305</td>
+      <td>20–1000 ng/mL (recombinant protein)</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Rabbit polymer kit</td>
+      <td>Vector Laboratories</td>
+      <td>Cat #: MP-7401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>OlyVIA software</td>
+      <td>Olympus (https://www.olympus-lifescience.com/en/support/downloads/)</td>
+      <td>RRID:SCR_016167</td>
+      <td>Version 2.9</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 8.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All animal studies were approved by the University of Rochester Committee for Animal Resources.
 
-## Mouse strains
+### Mouse strains
 
 S100A4-GFPpromoter mice (#012893), S100a4-TK (#012902), S100a4GFP/+ (#012904), S100a4-Cre (#012641), ROSA-Ai9 (#007909), Csf1r-iCre (#019098), and C57BL/6J (#000664) were acquired from The Jackson Laboratory (Bar Harbor, ME).
 
 S100a4-GFP promoter mice contain a construct encoding EGFP under control of the S100a4 promoter sequence, resulting in green fluorescence in cells actively expressing S100a4 (Iwano et al., 2002). S100a4-TK mice contain a viral thymidine kinase gene downstream of the S100a4 promoter, and treatment with the nucleoside analog ganciclovir (GCV) halts DNA replication in proliferating cells expressing S100a4, resulting in apoptosis and S100a4+ cell ablation (Iwano et al., 2001). Mice were treated twice per day (i.p) with 75 mg/kg GCV. S100a4GFP/+ mice contain a GFP-encoding gene knocked into the exons 2–3 of the S100a4 gene, resulting in a 50% reduction in S100a4 protein expression (Xue et al., 2003). To determine whether macrophages express S100a4 during healing, Csf1r-iCre; Rosa-Ai9; S100a4-GFPpromoter mice were treated with Tamoxifen (Tmx; 100 mg/kg) to label Csf1r-lineage (Csf1rLin+) cells. For samples harvested on D3, mice were treated with Tmx on D0-2 post-surgery. Mice harvested at D14 were treated with Tmx on D0-2 post-surgery, and every other day thereafter until harvest. Cells actively expressing S100a4 were labeled green (S100a4-GFPpromoter+). For RAGE Antagonist Peptide (RAP) studies, C57BL/6J mice were treated with either 100 μg RAP or vehicle (0.5% bovine serum albumin in saline) via i.p. injection on D5-10 post-surgery.
 
-## Murine model of tendon injury and repair
+### Murine model of tendon injury and repair
 
 Male and female mice aged 10–12 weeks underwent complete transection and surgical repair of the flexor digitorum longus (FDL) tendon as previously described (Ackerman and Loiselle, 2016). Mice were monitored and given analgesics post-operatively as needed.
 
-## RNA extraction and qPCR for in vivo studies
+### RNA extraction and qPCR for in vivo studies
 
 The tendon repair site was excised from the hind paw at D10 following injury, along with 1–2 mm of native tendon on either side. Three repairs were pooled, and RNA was extracted with TRIzol reagent (Life Technologies, Carlsbad CA). cDNA was generated with 500 ng of RNA using an iScript cDNA synthesis kit (BioRad, Hercules CA). Quantitative PCR was carried out with gene specific primers (Table 1), and expression normalized to β-actin. All experiments were done in biological triplicates and repeated twice (technical replicates).
 
-## Assessment of gliding function and mechanical properties
+**Table 1.**
+ qPCR Primer Sequences
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th></th>
+      <th>Sequence (5'- &gt; 3')</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Actb</td>
+      <td>Fwd</td>
+      <td>AGATGTGCATCAGCAAGCAG</td>
+      <td rowspan="2">NM_007393.5</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCGCAAGTTAGGTTTTGTCA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S100a4</td>
+      <td>Fwd</td>
+      <td>AAGCTGAACAAGACAGAGCTCAAG</td>
+      <td rowspan="2">NM_011311.2</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTCCTTTTCCCCAGGAAGCTA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fn</td>
+      <td>Fwd</td>
+      <td>CGAGGTGACAGAGACCACAA</td>
+      <td rowspan="2">NM_001276413.1</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CTGGAGTCAAGCCAGACACA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tnmd</td>
+      <td>Fwd</td>
+      <td>TGTACTGGATCAATCCCACTCT</td>
+      <td rowspan="2">NM_022322.2</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCTCATTCTGGTCAATCCCCT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Scx</td>
+      <td>Fwd</td>
+      <td>TGGCCTCCAGCTACATTTCT</td>
+      <td rowspan="2">NM_198885.3</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TGTCACGGTCTTTGCTGAAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mkx</td>
+      <td>Fwd</td>
+      <td>CACCGTGACAACCCGTACC</td>
+      <td rowspan="2">NM_177595.4</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCACTAGCGTCATCTGCGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Col1a1</td>
+      <td>Fwd</td>
+      <td>GCTCCTCTTAGGGGCCACT</td>
+      <td rowspan="2">NM_007742.4</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCACGTCTCACCATTGGGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Col3a1</td>
+      <td>Fwd</td>
+      <td>ACGTAGATGAATTGGGATGCAG</td>
+      <td rowspan="2">NM_009930.2</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GGGTTGGGGCAGTCTAGTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Acta2</td>
+      <td>Fwd</td>
+      <td>GAGGCACCACTGAACCCTAA</td>
+      <td rowspan="2">NM_007392.3</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CATCTCCAGAGTCCAGCACA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iNOS</td>
+      <td>Fwd</td>
+      <td>CAGAGGACCCAGAGACAAGC</td>
+      <td rowspan="2">NM_001313921.1</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TGCTGAAACATTTCCTGTGC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TNFa</td>
+      <td>Fwd</td>
+      <td>AACTGTAAGCGGGGCAATCA</td>
+      <td rowspan="2">NM_013693.3</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCCCTTTCCTCCCAAACCAA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd86</td>
+      <td>Fwd</td>
+      <td>TCTCCACGGAAACAGCATCT</td>
+      <td rowspan="2">NM_019388.3</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CTTACGGAAGCACCCATGAT</td>
+    </tr>
+    <tr>
+      <td>Cd64</td>
+      <td>Fwd</td>
+      <td>TCCTTCTGGAAAATACTGACC</td>
+      <td rowspan="2">NM_010186.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rev</td>
+      <td>GTTTGCTGTGGTTTGAGACC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd206</td>
+      <td>Fwd</td>
+      <td>CAGGTGTGGGCTCAGGTAGT</td>
+      <td rowspan="2">NM_008625.2</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TGTGGTGAGCTGAAAGGTGA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Arg1</td>
+      <td>Fwd</td>
+      <td>AGGAACTGGCTGAAGTGGTTA</td>
+      <td rowspan="2">NM_007482.3</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GATGAGAAAGGAAAGTGGCTGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IL1ra</td>
+      <td>Fwd</td>
+      <td>GCATCTTGCAGGGTCTTTTC</td>
+      <td rowspan="2">NM_001159562.1</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTGAGACGTTGGAAGGCAGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd163</td>
+      <td>Fwd</td>
+      <td>TCCACACGTCCAGAACAGTC</td>
+      <td rowspan="2">NM_001170395.1</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCTTGGAAACAGAGACAGGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Assessment of gliding function and mechanical properties
 
 Following sacrifice, the hindlimb was harvested at the knee. The medial side of the hindlimb was carefully dissected to free the FDL, and the proximal end was secured between two pieces of tape with cyanoacrylate. The distal tendon was loaded via the tape with weights ranging from 0 to 19 g, with digital images taken upon application of each weight. MTP Flexion Angle and Gliding Resistance were calculated as previously described (Ackerman et al., 2017; Hasslund et al., 2008; Loiselle et al., 2009), with lower MTP Flexion Angle and higher Gliding Resistance corresponding to restricted range of motion and impaired gliding function. Following gliding testing, the FDL was released from the tarsal tunnel, and the proximal end of the tendon and the digits were secured in opposing custom grips on an Instron 8841 uniaxial testing system (Instron Corporation, Norwood, MA). The tendon was loaded until failure at a rate of 30 mm/minute (Hasslund et al., 2008). Samples were excluded from analysis if the MTP Flexion Angle was less than 3° as dissection of samples below this threshold demonstrates consistent failure of the repair.
 
-## Histology, Immunohistochemistry and Immunofluorescence
+### Histology, Immunohistochemistry and Immunofluorescence
 
 Following sacrifice, hind paws were dissected just above the ankle, and underwent routine processing for paraffin or frozen sectioning. Paraffin samples were fixed for 72 hr in 10% NBF, then decalcified for 2 weeks in 14% EDTA before processing. Three-micron sagittal sections were stained with Alcian Blue Hematoxylin/Orange G (ABH/OG) or picrosirius red stain (Polysciences Inc, Warrington PA). Frozen samples were fixed overnight, decalcified for 4 days, incubated in 30% sucrose (in PBS) overnight, and embedded in Cryomatrix (#6769006, ThermoFisher, Waltham MA). Eight-micron sagittal sections on Cryofilm tape (Section-lab, Hiroshima, Japan) were cut on a Leica CM1860UV cryostat, and adhered to slides with 1% chitosan in 0.25% acetic acid.
 
 Chromogen immunohistochemistry was performed on paraffin sections for S100a4 (1:20000, #197896, Abcam, Cambridge MA), with a rabbit polymer kit (#MP-7401, Vector Laboratories, Burlingame CA). Immunofluorescence was carried out with the following primary and secondary antibodies: RAGE (1:100, #sc-365154, Santa Cruz Biotechnology, Dallas TX), with goat anti-mouse AlexaFluor488 secondary (1:1000, #A11029, ThermoFisher, Waltham MA); F4/80 (1:500, #sc-26642, Santa Cruz Biotechnology, Dallas TX) with a donkey anti-rabbit AlexaFluor594 secondary (1:200, #711-585-152, Jackson ImmunoResearch, West Grove PA); iNOS (1:100, #Ab15323, Abcam), with a Rhodamine-Red-X donkey anti-rabbit secondary (1:100, #711-296-152, Jackson ImmunoResearch); IL1Ra (1:10000, #Ab124962, Abcam), with a with a Rhodamine-Red-X donkey anti-rabbit secondary (1:100, #711-296-152, Jackson ImmunoResearch); GFP (1:5000, #ab6673, Abcam, Cambridge MA), with a donkey anti-goat 488 secondary (1:200, #705-546-147, Jackson ImmunoResearch, West Grove PA); RFP (1:500, #ab62341, Abcam, Cambridge MA), with a donkey anti-rabbit 647 secondary (1:200, #711-605-152, Jackson ImmunoResearch, West Grove PA); and α-SMA-Cy3 (1:250, #C6198 Sigma-Aldrich, St Louis MO). All slides were imaged with the Olympus slide scanner and processed with Olyvia software (Olympus, Waltham MA). Images were pseudo-colored using ImageJ software (v1.51j8, NIH). At least three animals were evaluated per genotype per time-point.
 
-## Quantification of fluorescence
+### Quantification of fluorescence
 
 Slide scanned fluorescent images were analyzed with Visiopharm image analysis software v.6.7.0.2590 (Visiopharm, Hørsholm, Denmark) as previously described (Ackerman et al., 2017). Briefly, the percent area coverage of endogenous fluorescence or immunofluorescent staining was quantified in a semi-automated fashion using a threshold classifier for each fluorescent channel. Regions of interest were drawn to include only tendon and scar tissue. Manual correction excluded quantification of staining in blood vessels, auto-fluorescent sutures and debris smaller than 10 μm2. Data are presented as the percent area of the region of interest that is positive for the appropriate fluorescent channel(s). Images were analyzed from 3 to 4 individual samples per genotype.
 
-## In Vitro Studies
+### In Vitro Studies
 
-## Primary macrophage isolation
+#### Primary macrophage isolation
 
 Bone marrow derived primary macrophages (BMDM) were grown from the bone marrow of C57Bl/6J, S100a4GFP/+ and WT mice. Following sacrifice, femurs were flushed with ice-cold phosphate buffered saline (PBS, without Ca2+ /Mg2+). The cell suspension was strained through a 70 µm filter, resuspended in differentiation medium (Weischenfeldt and Porse, 2008) and plated at a concentration of 3 × 106 cells per 10 cm plate. At D7 of differentiation, primary macrophages were re-plated as needed for experimental use. All BMDM experiments were conducted in biological triplicates with 2–4 technical replicates.
 
-## Macrophage Migration assay
+#### Macrophage Migration assay
 
 Primary BMDMs were seeded at confluence in Oris 96-well plates (Platypus Technologies, Madison WI) with silicon stoppers inserted and incubated overnight. Plugs were removed, and cells washed once with PBS (with Ca2+ /Mg2+) prior to addition of treatment. Vehicle (0.5% Bovine Serum Albumin in PBS) or recombinant S100a4 protein (S100a4-RP) was added to wells at 20, 50, 200, 500, and 1000 ng/mL in quadruplicate, and cells allowed to migrate for 24 hr. Following migration, cells were gently washed with PBS and stained with NucBlue Live ReadyProbe (Life Technologies, Carlsbad CA). A detection mask was affixed to the bottom of the plate to obscure cells that had not migrated, and the plate read on a Synergy two plate reader (Biotek, Winooski VT) at 360ex/480em, and fluorescence normalized to vehicle treated cells.
 
-## Assessment of in vitro macrophage polarization
+#### Assessment of in vitro macrophage polarization
 
 Primary BMDMs were seeded into 6-well plates at 85% confluence overnight. Cells were treated with either S100a4-RP (20–1000 ng/mL) or vehicle for 24 hr. Cells were lysed in Trizol (Life Technologies, Carlsbad CA), and RNA extracted using the RNeasy mini kit (Qiagen, Germantown MD). Quantitative PCR was performed with gene specific primers (Table 1) for markers of M1 (iNOS, Tnfα, CD86, CD64) and M2 (CD206, Arg1, IL-1ra, CD163) polarization, and data normalized expression in vehicle treated WT cells, and to β-actin expression.
 
-## Primary tendon cell isolation
+#### Primary tendon cell isolation
 
 FDL tendons (n = 4 per genotype) were aseptically excised, pooled, and collagenase digested (0.075% collagenase I; #C6885, Sigma) in fibroblast grown medium-2 (FGM; #CC-3132, Lonza, Basel, Switzerland) for one hour at room temperature with stirring. The collagenase mixture was then filtered (70 μM filter) and cells were pelleted, resuspended in FGM, and plated at 5,000 cells/cm2 in collagen-coated plates (rat tail collagen type 1, 5 μg/cm2; #354236, Corning, Tewksbury, MA). Cell were maintained under standard culture conditions (37°C, 5% CO2, 90% humidity), with complete media exchanges every other day. Upon reaching 70% confluence, cells were passaged using 0.05% trypsin-EDTA (#25300–054, Gibco, Waltham, MA).
 
-## Tendon cell RNA isolation and qPCR
+#### Tendon cell RNA isolation and qPCR
 
 Total RNA was isolated from tendon cells at passage 1, by column purification (TRIzol Reagent; #15596026, Fisher Scientific; Direct-zol RNA Microprep kit, #R2061, Zymo Research) and converted to cDNA (qScript; #84034, Quantabio, Beverly, MA). Primers for murine genes of interest were designed (Table 1) (Primer Express, Applied Biosystems; Table 1), validated, and used for qPCR (PerfeCTa SYBR Green; #84069, Quantabio, CFX Connect Real-Time System; Bio-Rad). Data were normalized to β-actin (Actb) and expression in WT.
 
-## Tendon cell proliferation assay
+#### Tendon cell proliferation assay
 
 Tendon cells (passage 2) were plated onto collagen-coated black 96 well plates at 5,000 cells/cm2 in FGM. Cell proliferation was evaluated every 24 hr for 4 days using the CellTiter-Glo Luminescent Cell Viability Assay (#PR-G7570, Fisher Scientific) in quadruplicate. Cell proliferation is shown relative to the average initial luminescent read for each genotype.
 
-## Tendon cell scratch wound closure assay
+#### Tendon cell scratch wound closure assay
 
 Tendon cells (passage 2) were plated into collagen-coated 24 well plates in duplicate at 5,000 cells/cm2 in FGM. At confluence, scratches were created in the cell monolayer using a p200 pipet tip. Monolayers were rinsed 3x with dPBS to remove debris and covered with fresh FGM containing 0.5% FBS. Triplicate images were taken at 0, 3, 5, 8, 12, and 24 hr to evaluate cell migration (ImageJ; National Institutes of Health).
 
-## Statistical analyses and animal stratification
+#### Statistical analyses and animal stratification
 
 Statistically significant differences between genotypes or treatments in in vitro and in vivo studies were assessed by unequal variance un-paired t-test, with the following exceptions: The S100a4 qPCR time-course was analyzed by one-way ANOVA, followed by Tukey’s multiple comparisons test. The BMDM migration and polarization data, as well as the tenocyte proliferation and scratch wound assay were analyzed by two-way ANOVA with Sidak’s multiple comparison test. All analyses were conducted using GraphPad Prism software (v8.0.0, La Jolla CA). Data are presented as mean ± SD. p values ≤ 0.05 were considered significant, with the following conventions: *=p ≤ 0.05, **=p ≤ 0.01, and ***=p ≤ 0.001.: Mice were randomly allocated to specific experimental outcome metrics prior to surgery. Analysis of subjective quantitative data (MTP Flexion Angle, Gliding Resistance) were done in a blinded manner. Outlier data points for tested for using GraphPad Prism software using the ROUT method, and the Q value set at 1%, however no outliers were identified in any quantitative data sets.

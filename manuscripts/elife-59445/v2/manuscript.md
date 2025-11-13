@@ -43,37 +43,101 @@ Here we adapted the 2D micropatterned gastruloid culture (Warmflash et al., 2014
 
 ## Results
 
-## BMP4 differentiates hESCs in micro-discs into radial patterns of germ layers and ExE-like cells
+### BMP4 differentiates hESCs in micro-discs into radial patterns of germ layers and ExE-like cells
 
 To study aspects of human gastrulation, we adapted the hESC micropattern differentiation method developed by Warmflash et al., 2014. After treating H1 hESCs cultured on 500 µm-diameter ECM micro-discs with BMP4 for 44 hr (Figure 1—figure supplement 1), immunofluorescence analysis revealed a radial gradient of the downstream effector phosphorylated SMAD1, which declined from the edge to the center (Figure 1A). Consistent with previous work (Warmflash et al., 2014), we observed SOX2+POU5F1(OCT4)- ectoderm, Brachyury or T+ mesoderm, SOX17+ endoderm, and CDX2+ ExE-like cells, arranged radially from center to edge (Figure 1B–D). Therefore, BMP4 treatment of H1 hESCs cultured on ECM micro-discs produced microcolonies termed ‘gastruloids’ with three prospective germ layers surrounded by a ring of ExE-like cells. We observed a similar radial differentiation pattern with H9 hESCs (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunofluorescence images (top) and quantification of fluorescence intensity (bottom) for BMP4 downstream effector pSMAD1 relative to the DAPI fluorescence marking nuclei (N = 4 experiments; n = 26 gastruloids; pSAMD1 fluorescence intensity normalized against that of DAPI for each gastruloid along the radius and average normalized value of all gastruloids is shown; error bar represents standard error of the mean). (B) Immunofluorescence images of ectoderm marker SOX2, mesoderm marker T, endoderm marker SOX17, and TE marker CDX2. (C) Quantification of fluorescence intensity of indicated markers, normalized to DAPI and shown as averages along the radius of gastruloid (N = 2, 5, 6, 4 experiments; n = 63, 84, 71, 35 gastruloids, respectively for SOX2, T, SOX17, CDX2; fluorescence intensity of each marker is normalized against that of DAPI for each gastruloid along the radius and average normalized value of all gastruloids is shown; error bars represent standard error of the mean). (D) Schematic representation of cell differentiation in gastruloids. (E) Total number (top) and fraction (bottom) of cells expressing indicated markers in gastruloids (each dot represents a gastruloid; same number of gastruloids for each marker as in (C); error bars represent standard deviation). Scale bar is 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of protocol for fabricating PDMS (poly-dimethylsiloxane) stamp used in microcontact printing. (B) An image of a typical stamp used in microcontact printing with a ruler and one-inch mark for scale. (C) Schematic of protocol for Matrigel discs microcontact printing using PDMS stamp. (D) Protocol for BMP4-induced gastruloid differentiation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar is 100 µm.
+
 We assessed the number of cells expressing various markers by using a fully convolutional neural network analysis of immunofluorescence images (see ‘Materials and methods’) (He et al., 2019). The majority of H1 cells differentiated into SOX2+ ectodermal cells (61 ± 14%), followed by T+ mesodermal cells (42 ± 8%), CDX2+ ExE-like cells (32 ± 13%), and SOX17+ endodermal cells (18 ± 6%) (Figure 1E). Both the differentiation pattern and the proportion were consistent across multiple experiments (Figure 1C,E), highlighting the reproducibility of the micropattern culture system (Warmflash et al., 2014).
 
-## Single-cell profiling reveals additional cell types relevant to gastrulation
+### Single-cell profiling reveals additional cell types relevant to gastrulation
 
 Our cell counting data indicated that the proportion of cells expressing ectoderm, mesoderm, endoderm, and ExE markers (61, 42, 18, and 32%, respectively) exceeded that of nuclei stained with DAPI or total cells per gastruloid (Figure 1E), suggesting that some cells co-expressed a combination of markers. Thus, we reasoned gastruloids contained more than four distinct cell types and transitional states, previously undescribed. To define all gastruloid cell types and determine their comprehensive transcriptomes, we performed scRNA-seq on two independent biological replicates; each replicate was pooled from 36 individual H1 hESC gastruloids. After quality control (see ‘Materials and methods’), we selected 1722 and 753 cells from replicates 1 and 2, respectively (Figure 2A, Figure 2—figure supplement 1). Using the Seurat R toolkit (Butler et al., 2018; Stuart et al., 2019), we integrated datasets from the two replicates using canonical correlation analysis and analyzed 2,475 cells expressing 23,271 genes. Unsupervised clustering revealed seven clusters (Figure 2B, Figure 2—figure supplement 2A). We found close correlation in gene expression between corresponding clusters of replicates 1 and 2 (Figure 2—figure supplement 2B). Likewise, all seven clusters overlapped well between the replicates (Figure 2B, Figure 2—figure supplement 2C). These data, along with immunofluorescence studies (Figure 1C,E), demonstrate that gastruloid differentiation is highly reproducible and consistent across independent biological replicates.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic showing scRNA-seq workflow for gastruloids from two biological replicates. (B) UMAP display of seven cell clusters detected by unsupervised clustering in gastruloids replicate 1 (left), replicate 2 (middle), and both replicates combined (right). (C) Dot plot showing expression of canonical markers of ectoderm, epiblast, mesoderm, endoderm, PGC, TE, and amnion in the seven gastruloid clusters (PGC = Primordial Germ Cell; TE = Trophectoderm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Bar plot indicating relative proportion of cells in each cluster of replicates 1 and 2. (B) Heatmap showing correlation of average expression of 23,271 total genes between scRNA-seq clusters from replicates 1 and 2. (C) UMAP showing overlap of cells from replicates 1 and 2. (D) UMAP presenting expression of four markers used in immunofluorescence staining in replicates 1 and 2. (E) Dot plot showing expression of canonical markers of ectoderm, epiblast, mesoderm, endoderm, PGC, TE, and amnion in the seven gastruloid clusters in replicates 1 and 2 (PGC = Primordial Germ Cell; TE = Trophectoderm).
 
 We used canonical markers, including those in the immunofluorescence study (Figure 2—figure supplement 2D), to annotate the seven clusters. We identified Ectoderm (SOX2highPOU5F1low), Mesoderm-1 and -2 (T+MIXL1+), Endoderm (SOX17+PRDM1+FOXA2+), and ExE-like (CDX2+GATA3+), as expected from protein expression analysis (Figure 2B–C). Mesoderm-2 differs from Mesoderm-1 in the enrichment of markers for more mature mesoderm such as MESP1, TBX6, and LHX1 (Figure 2C). Interestingly, we identified a cluster enriched in PGC markers, NANOS3 and TFAP2C (Chen et al., 2019), suggesting that gastruloids may contain human PGC-like cells (hPGCLCs) (Figure 2C), a cell type previously not described in the micropatterned gastruloid culture system. Furthermore, we discovered that the ExE-like cluster is enriched not only in TE markers, CDX2 and GATA3, as previously reported, but also in amnion markers such as TFAP2A, WNT6, and HAND1 (Ma et al., 2019; Niu et al., 2019; Zheng et al., 2019). All markers used to annotate clusters were well-represented in both replicates (Figure 2—figure supplement 2E). Overall, these data showed reproducibility between the two scRNA-seq replicates and the identification of seven clusters based on canonical markers. We used the combined dataset of replicates 1 and 2 in downstream analyses unless otherwise noted.
 
 We next wished to probe further the characteristics of the gastruloid clusters beyond canonical marker expression. First, what stage of the gastrulation in vivo does the gastruloid platform model? Second, can the gastruloids model conserved mechanisms of gastrulation and reveal its primate and/or human-specific features? Third, can the gastruloid platform be used to discover new mechanisms of human gastrulation? Thus, we queried gastruloid cellular identities in an unbiased and comprehensive manner using published datasets (Figure 2A), including gastrulating mouse embryos (Pijuan-Sala et al., 2019), post-implantation primate cyno monkey embryos (Ma et al., 2019; Nakamura et al., 2016), in vitro cultured human embryos (Lv et al., 2019; Xiang et al., 2020), and hESC-differentiated cell types (Chen et al., 2019; Chu et al., 2016; Loh et al., 2016; Lu et al., 2018; Zheng et al., 2019).
 
-## Cross-species comparisons suggest similarity of gastruloid to early-mid gastrula stage
+### Cross-species comparisons suggest similarity of gastruloid to early-mid gastrula stage
 
 We performed a cross-species comparison with scRNA-seq data from gastrulating mouse embryos at E6.5, 6.75, 7.0, 7.25, and 7.5 (Pijuan-Sala et al., 2019) and in vitro cultured primate cyno monkey embryos at 11, 12, 13, 14, 16, and 17 dpf (Ma et al., 2019). Briefly, gastruloid and mouse or monkey data at all indicated stages were first integrated. For each gastruloid cell, we computed cell type or stage prediction scores based on the labels of its nearest neighbors in the reference mouse or monkey dataset (Stuart et al., 2019). The reference cell type or stage with the highest prediction score was assigned as the predicted cell type or stage for each gastruloid cell (see ‘Materials and methods’). Thus, each gastruloid cell contains labels for the original cluster annotation based on marker expression (Figure 2B–C) and predicted (or projected) mouse or monkey cell types and stages.
 
 We found that gastruloid data overlapped with specific mouse and monkey cells during gastrulation (Figure 3A–B). The composition of predicted cell types in gastruloids showed high similarity to E7.0 mouse and 16 dpf monkey in terms of cell type composition (Figure 3—figure supplement 1), implying that gastruloids represent early-mid gastrula stage in cellular composition. Alternatively, projection of mouse or monkey cell stages onto gastruloid data showed that the greatest number of gastruloid cells were predicted to be E7.0 mouse (42%; Figure 3C) and 16 dpf monkey (54%; Figure 3D). Similarly, predicted mouse or monkey cell stage scores for individual gastruloid cells revealed the highest score for E7.0 mouse and 16 dpf monkey (Figure 3E–F). Corroborating these findings, we found the closest correlation in gene expression between gastruloids and E7.0 mouse or 16 dpf monkey (Figure 3G–H). Emphasizing the reproducibility of the micropatterned gastruloid system, we found a strikingly similar composition of predicted mouse or monkey cell stages and types between the two gastruloid replicates (Figure 3I–J, Figure 3—figure supplement 2). Furthermore, 16 dpf monkey cells also scored the highest for E7.0 mouse (Figure 3—figure supplement 3A), and their gene expression correlated closely to E7.0 mouse (Figure 3—figure supplement 3B). These data suggest that the developmental stage of 16 dpf cyno monkey corresponds to that of E7.0 mouse, and that gastruloids resemble cell stages at both E7.0 mouse and 16 dpf cyno monkey gastrulae. Based on these results, we posit that micropatterned gastruloids after 44 hr of BMP4 differentiation resemble early-mid gastrula stage.
 
-## EPI-like cluster with characteristics of post-implantation epiblast
+![Figure 3.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) UMAP displaying overlap of cells in gastruloids and mouse (A), and monkey (B) at indicated gastrulation stages. (C, D) Bar plots showing composition of predicted mouse (C) and monkey (D) cell stages in all gastruloids, replicate 1, and replicate 2. (E, F) Violin plots showing predicted score of mouse (E) and monkey (F) cell stages in gastruloid cells (ns = not significant; *, **, ***, **** indicates p<0.05, 0.01, 0.001, 0.0001, respectively, one-way ANOVA with Tukey’s multiple comparisons test; dash lines indicate 1 st, 2nd, and 3rd quartiles). (G, H) Gene expression correlation between gastruloids and mouse (G) and monkey (H) developmental stages using top 500 shared highly variable genes. (I, J) Dot plots showing predicted mouse (I) and monkey (J) cell types and stages in gastruloid clusters (Statistical significance of gastruloid cell types’ correspondences to monkey or mouse cell types is calculated by randomized permutation test; PS, primitive streak; postE/L-EPI, post-implantation early/late epiblast; E/L-Gast, early/late gastrulating cells; EXMC, ExE mesenchyme; VE/YE, visceral/yolk sac endoderm; E-PGC, early PGC; E/L-AM, early/late amnion; TE, trophectoderm).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Bar plots showing cellular composition of mouse (A) and cynomolgus monkey (B) embryos at indicated stages, and gastruloids with predicted cell types (each color bar represents a cell type).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Dot plots showing predicted mouse (A) and cynomolgus monkey (B) cell types and stages in each cluster of gastruloid replicate 1 and replicate 2.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Violin plot showing predicted score of mouse development stages in 16 dpf cynomolgus monkey cells (**** indicates p<0.0001, using one-way ANOVA with Tukey’s multiple comparisons test; dash lines indicate 1st, 2nd, and 3rd quartiles). (B) Correlation of average expression of top 500 shared highly variable genes between indicated mouse and cynomolgus monkey developmental stages. (C) Dot plot showing predicted mouse cell types and stages in cynomolgus monkey cell types (Statistical significance of monkey cell types’ correspondences to mouse cell types is calculated by randomized permutation test).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (Based on 492 shared highly variable genes between gastruloids and cynomolgus monkey dataset from Nakamura et al., 2016).
+
+### EPI-like cluster with characteristics of post-implantation epiblast
 
 Our scRNA-seq analyses defined a cell cluster enriched for human epiblast markers, DPPA4, NANOG, POU5F1, SOX2, GDF3, NODAL, and TDGF1 (Petropoulos et al., 2016; Xiang et al., 2020; Figure 2C). Strong expression of NODAL, GDF3, and TDGF1 suggested activity of NODAL signaling, which is known to posteriorize epiblast and is an evolutionarily conserved mesendoderm inducer from fish to mammals (Brennan et al., 2001; Schier, 2009). Projecting mouse (Pijuan-Sala et al., 2019) or monkey (Ma et al., 2019) cell type labels onto the gastruloid data showed that the majority of cells in the EPI-like cluster was predicted to correspond to mouse epiblast (86%; Figure 3I), and monkey post-implantation epiblast (postE-EPI, 71% and postL-EPI, 28%; Figure 3J). We also found that monkey postE-EPI and postL-EPI are predicted to correspond to mouse epiblast cells (Figure 3—figure supplement 3C). Moreover, the gastruloid EPI-like cluster exhibited the closest correlation in average gene expression to monkey postE-EPI and postL-EPI from another study (Nakamura et al., 2016; Figure 3—figure supplement 4), and in vitro cultured 6–14 dpf human embryo (Xiang et al., 2020; Figure 4A). These results suggest that the EPI-like cluster is transcriptionally similar to human, monkey, and mouse post-implantation epiblast.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-v2.jpg)
+
+**Figure 4.:** (A) Average expression correlation of 434 shared highly variable genes between the gastruloid EPI-like cluster and epiblast-related cell types from in vitro cultured human embryos. (B) UMAP displaying pseudotime overlay in gastruloid clusters. (C) Heatmap illustrating probabilities of a gastruloid cluster transitioning into other clusters. (D) Dot plot showing expression of indicated neural and nonneural ectoderm markers. (E) Average expression correlation of 546 shared highly variable genes between gastruloid clusters and hESC-differentiated neuro progenitors. (F) Average expression correlation of 323 shared highly variable genes between gastruloid Mesoderm-1 and -2 clusters, and hESC-differentiated PS- and mesoderm-related cell types. (G) Immunofluorescence images of CDH2 and indicated markers in gastruloids. (H) Cosine similarity analysis of expression domains between CDH2 and indicated markers (each dot represents a pair of indicated markers in a gastruloid; number of gastruloids used for each pair of indicated makers shown right of the chart; ****p<0.0001, one-way ANOVA with Tukey’s multiple comparisons test; error bars represent standard deviation). (I) Immunofluorescence images of primitive endoderm marker GATA6 and definitive endoderm maker FOXA2 in gastruloids. (J) Average gene expression correlation between gastruloid clusters and hESC-differentiated definitive endoderm, and primitive endoderm from in vitro cultured human embryos (based on 434, 374, and 546 shared highly variable genes with Xiang et al., Lu et al., and Chu et al., respectively). Scale bar is 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 3D plot showing gastruloid clusters in the first three diffusion coordinates (arrow lines indicate plausible differentiation trajectories). (B) Chart illustrating proportion of cells from all gastruloid clusters along the pseudotime. (C) UMAP plot showing all gastruloid clusters overlaid with transition probabilities (each line indicates transition probability between pairs of cells; 10,000 highest cell-to-cell transition probabilities shown).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Violin plot showing expression of indicated mesoderm markers in the gastruloid Mesoderm-1 and -2 clusters (**** indicates p<0.0001 using Mann-Whitney test). (B) Violin plot showing expression of indicated markers for organizer cells in gastruloids. (C) Violin plots showing expression of WNT, NODAL, and FGF pathway components in the gastruloid Mesoderm-1 and -2 clusters. (D) Violin plots showing expression of FGF8 and FGF17 in the gastruloid Mesoderm-1 and -2 clusters, monkey gastrulating cells, and mouse primitive streak and mesoderm cells (E/L-Gast = early/late gastrulating).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (N = 2, 5, 6, 1, five experiments; n = 63, 84, 71, 21, 63 gastruloids, respectively for SOX2, T, SOX17, GATA3, CDH2; fluorescence intensity of each marker is normalized against that of DAPI for each gastruloid along the radius and average normalized value of all gastruloids is shown; error bars represent standard error of the mean).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig4-figsupp6-v2.jpg)
+
 Using the R Bioconductor destiny package (Angerer et al., 2016), we calculated diffusion maps (Figure 4—figure supplement 1A) to investigate pseudotime and transition probabilities among gastruloid clusters. Pseudotime placed germ layer-related Ectoderm and Mesoderm-1 immediately after the EPI-like cluster (Figure 4B, Figure 4—figure supplement 1B), which also had the highest probability to transition to Ectoderm and Mesoderm-1 (Figure 4C, Figure 4—figure supplement 1C). Therefore, our results are consistent with cells in the EPI-like cluster representing precursors of those in Ectoderm and Mesoderm-1 clusters, similar to epiblast cells being precursors of the germ layers.
 
-## Ectodermal cluster expressing nonneural and neural ectoderm markers
+### Ectodermal cluster expressing nonneural and neural ectoderm markers
 
 Cells in the SOX2highPOU5F1low Ectoderm cluster expressed neuroectoderm markers, NES (Lendahl et al., 1990), VIM (Schnitzer et al., 1981), DLK1 (Surmacz et al., 2012), and LGI1 (Tchieu et al., 2017). We also detected transcripts expressed in mouse ectodermal derivatives, CYFIP2, PTN, GLI3, ID3, CRABP2, and SFRP1 (Pijuan-Sala et al., 2019; Figures 2C and 4D). While CYFIP2, PTN, CRBP2, and GLI3 are expressed in rostral neuroectoderm, CYFIP2 is also found in surface ectoderm of the E7.0 mouse embryo. CRBP2 and SFRP1 are spinal cord markers, while PTN and GLI3 are forebrain/midbrain/hindbrain markers (Pijuan-Sala et al., 2019). The expression of these marker genes in the gastruloid Ectoderm, however, does not distinguish two distinct populations of surface and neural ectoderm, suggestive of prospective ectoderm identity in gastruloids (Figure 4—figure supplement 2). Cross-species comparison showed that cells in this cluster were predicted to be mouse rostral neuroectoderm (35%; Figure 3I) and monkey postL-EPI (66%; Figure 3J). Also suggesting that some cells have not fully differentiated into ectoderm, a portion of them had a predicted label for mouse epiblast (26%; Figure 3I). Interestingly, some cells were predicted as ExE mesenchyme in mouse (19%) and monkey (26%). Nonetheless, the average gene expression of this cluster showed the closest correlation to that of hESC-derived neuro progenitors (Chu et al., 2016; Figure 4E). Overall, these data suggest that this cluster resembles prospective ectoderm, expressing nonneural and neural ectoderm genes.
 
-## Mesodermal clusters with characteristics of PS and nascent mesoderm
+### Mesodermal clusters with characteristics of PS and nascent mesoderm
 
 During gastrulation, mesoderm precursors within the PS undergo EMT, ingress through the PS, and then migrate to differentiate into paraxial, intermediate, and lateral plate mesoderm (Tam and Behringer, 1997). Our analyses revealed two presumptive mesoderm clusters, termed Mesoderm-1 and -2, both of which expressed markers of PS and mesoderm, T, MIXL1, and EOMES (Costello et al., 2011; Figure 2C). Interestingly, Mesoderm-1 expressed T at slightly higher levels than Mesoderm-2, suggesting that Mesoderm-1 may represent PS-like cells. Mesoderm-2 showed significantly higher transcript levels (p<0.001) of genes expressed in mesodermal cells that have already traversed through the PS, including SNAI1, and markers of lateral plate PDGFRA, MESP1, APLNR, and HAS2 (Chan et al., 2013; Klewer et al., 2006; Vodyanik et al., 2010), paraxial TBX6 and DLL3 (Lam et al., 2014; Loh et al., 2016), and intermediate mesoderm LHX1 (Lam et al., 2014; Figure 4—figure supplement 3A). Moreover, both clusters expressed transcripts encoding the organizer marker GSC, and associated secreted inhibitors DKK1 and CER1 (Martyn et al., 2018; Figure 4—figure supplement 3B). Pseudotime analysis placed Mesoderm-2 after Mesoderm-1, which in turn, was placed after EPI-like (Figure 4B, Figure 4—figure supplement 1B), suggesting that Mesoderm-1 represents cells in transition to Mesoderm-2. Consistent with this, the Mesoderm-1 cluster had the highest probability to transition to Mesoderm-2 (Figure 4C). Hence, the Mesoderm-2 cluster likely represents nascent mesoderm and/or precursors of differentiating mesodermal lineages.
 
@@ -83,17 +147,25 @@ During gastrulation, nascent mesendodermal cells undergo EMT, which is marked by
 
 Coincident with CDH2 upregulation in T+ mesodermal cells, our scRNA-seq analyses revealed expression of FGFR1 (Figure 4—figure supplement 3C) and enrichment of its downstream target SNAI1 (Warmflash et al., 2014) in Mesoderm-1 and −2 (Figure 4—figure supplement 3A). SNAI1 is a CDH1 transcriptional repressor and evolutionarily conserved EMT inducer (Barrallo-Gimeno and Nieto, 2005), suggesting that EMT is mediated through a similar mechanism in gastruloids. We also found expression of components of FGF, WNT, and NODAL pathways (Figure 4—figure supplement 3C), suggesting activation of these pathways, which underlies the EMT induction in mouse (Nieto et al., 2016). We observed absent or low transcript levels of FGF8 (Figure 4—figure supplement 3D), which is dispensable for EMT but required for cell migration away from the PS during mouse gastrulation (Sun et al., 1999). Instead, the gastruloid Mesoderm-1 and -2 clusters expressed FGF17 (Figure 4—figure supplement 3D). Interestingly, FGF8lowFGF17high signature was also found in the monkey but not in the mouse gastrulating cells (Figure 4—figure supplement 3D), suggesting that a different FGF ligand is responsible for promoting cell migration during human/primate gastrulation. Hence, we interpret these data that while gastruloid cells utilize evolutionarily conserved pathways to undergo EMT and cell migration, specific components involved may differ between human and mouse.
 
-## Gastruloids contain cells resembling primitive and definitive endoderm
+### Gastruloids contain cells resembling primitive and definitive endoderm
 
 In gastruloids, we identified a SOX17+PRDM1+ presumptive Endoderm cluster, which expressed both primitive endoderm marker GATA6 and definitive endoderm marker FOXA2 (Figure 2C). However, GATA6 and FOXA2 expression was not mutually exclusive in the gastruloid Endoderm (Figure 4—figure supplement 6). Similarly, we detected immunofluorescence staining of GATA6 and FOXA2 in subsets of SOX17+ cells (Figure 4I). Projection of mouse cell type labels showed that the Endoderm cluster had predicted labels of definitive endoderm (23%), anterior PS (18%), ExE Endoderm (13%), and PS (12%; Figure 3I). Projection of cell type labels from the monkey dataset, which lacks definitive endoderm (Ma et al., 2019), showed that the Endoderm cluster had predicted labels of visceral endoderm (VE/YE, 36%), ExE mesenchyme (EXMC,31%), and gastrulating cells (E-Gast and L-Gast1/2, 28%; Figure 3J). Further comparison with 3D human embryo culture (Xiang et al., 2020) and hESC-derived definitive endoderm (Chu et al., 2016; Lu et al., 2018) showed that gastruloid Endoderm cluster exhibited close correlation in gene expression to both primitive and definitive endoderm (Figure 4J). Thus, we reasoned that the Endoderm cluster represents precursors or a mixture of both primitive and definitive endoderm.
 
-## Gastruloids contain cells similar in gene expression profiles to primordial germ cells
+### Gastruloids contain cells similar in gene expression profiles to primordial germ cells
 
 The presence of hPGCLC has not been described in BMP4-differentiated gastruloids (Warmflash et al., 2014). Our scRNA-seq discovered a hPGCLC cluster significantly enriched for PGC markers NANOS3 and TFAP2C (Chen et al., 2019; Sasaki et al., 2016) (p<0.0001; Figure 5A), suggesting that hPGCLCs arose in gastruloids. This cluster had gene expression profile, SOX17+TFAP2C+PRDM1+POU5F1+NANOG+T+SOX2low (Figure 5—figure supplement 1A), as reported for cyno monkey PGCs (Sasaki et al., 2016). The co-expression of SOX17, TFAP2C, NANOG, and NANOS3 in hPGCLC was also reported in a recent study that implicated TFAP2C in SOX17 regulation during human germline development (Chen et al., 2019). We calculated the PGC module score, the difference between the average expression of PGC markers (NANOS3, SOX17, TFAP2C, PRDM1, and NANOG) and that of randomly assigned genes (Butler et al., 2018; Tirosh et al., 2016), and found that the hPGCLC cluster scored the highest (Figure 5B). Validating scRNA-seq findings, we observed SOX17+TFAP2C+ cells in all gastruloids analyzed (47/47; Figure 5C, Figure 5—figure supplement 1B). We noted that TFAP2C is primarily co-expressed in SOX17+ cells, some in amnion marker TFAP2A+ cells but not in T+ mesodermal or GATA3+ ExE-like cells (Figure 5—figure supplement 1B–E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig5-v2.jpg)
+
+**Figure 5.:** (A) Violin plot showing expression of PGC markers NANOS3 and TFAP2C in gastruloid clusters (**** indicates p<0.0001; one-way ANOVA with Tukey’s multiple comparisons test; dash lines indicate 1st, 2nd, and 3rd quartiles). (B) UMAP showing module score of PGC signature NANOS3, SOX17, TFAP2C, PRDM1, and NANOG in gastruloid clusters. (C) Immunofluorescence images of indicated markers in 2D (left) and 3D (right) (arrows indicate selected TFAP2C+SOX17+ hPGCLCs). (D) Heatmap showing average gene expression correlation between gastruloid clusters and hESC-derived hPGCLC in 2D (left) and 3D (right) culture conditions (based on 1055 and 1129 shared highly variable genes with Chen et al. and Zheng et al., respectively). (E) Violin plot illustrating module scores of primate PGC signature NANOS3, SOX17, TFAP2C, PRDM1, and NANOG in mouse PGC, monkey PGC, and gastruloid hPGCLC (ns = not significant; ****p<0.0001, one-way ANOVA with Tukey’s multiple comparisons test; dash lines indicate 1st, 2nd, and 3rd quartiles). Scale bar is 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap showing the expression of monkey early PGC signature in the gastruloid hPGCLC cluster. (B) Additional replicates of immunofluorescence images showing indicated markers (arrows indicate selected TFAP2C+SOX17+ hPGCLCs). (C) Immunofluorescence images of PGC marker TFAP2C, mesoderm marker T, and ExE marker GATA3 (note very few or no cell co-expresses TFAP2C and T or GATA3). (D) Immunofluorescence images of amnion marker TFAP2A in SOX17+TFAP2C+ hPGCLC (arrows indicate selected TFAP2A+SOX17+TFAP2C+ cells). (E) UMAP showing co-expression of amnion marker TFAP2A in NNSTP (NANOS3+NANOG+SOX17+TFAP2C+PRDM1+) cells in the scRNA-seq of the hPGCLC cluster.
+
 Cross-species comparison indicated that gastruloid hPGCLCs have predicted labels of monkey early PGCs (80%; Figure 3J). Gastruloid hPGCLCs also showed the closest gene expression correlation to hESC-derived hPGCLCs in 2D (Chen et al., 2019) and 3D (Zheng et al., 2019) culture conditions (Figure 5D). Interestingly however, cross-species comparison with mouse showed that the hPGCLC cluster had predicted labels of epiblast (64%), ExE ectoderm (13%), and ExE endoderm (10%; Figure 3I). We reasoned the mismatch occurred because hPGCLC formation and gene expression diverge from mouse PGCs (Tan and Tee, 2019). Accordingly, we found that the PGC module score, based on primate PGC predictors, of monkey PGCs was similar to that of gastruloid hPGCLCs but significantly higher than that of mouse PGCs (p<0.0001; Figure 5E). Taken together, these findings suggest that gastruloids contain hPGCLCs that are transcriptionally similar to monkey and human PGCs.
 
-## ExE-like cluster contains cells with gene expression profiles similar to TE and amnion
+### ExE-like cluster contains cells with gene expression profiles similar to TE and amnion
 
 We identified an ExE-like cluster enriched in TE markers CDX2, GATA3, and KRT7 (Blakeley et al., 2015; Deglincerti et al., 2016). This cluster also expressed GATA2 and TBX3 (Figure 2C), genes required for trophoblast differentiation in mouse (Bai et al., 2013) and human (Lv et al., 2019), respectively. Validating scRNA-seq results, immunofluorescence staining showed CDX2, GATA3, and KRT7 expression in the outermost ExE-like cells. ZO-1 localization at the apical cell membranes indicated the epithelial character of these cells (Figure 6A). Furthermore, the ExE-like cluster showed the closest gene expression correlation to hESC-derived trophoblast (Chu et al., 2016) and human TE (Lv et al., 2019; Figure 6D). However, only a subset of ExE-like cells co-expressed KRT7 (Figure 6A), a marker for pan TE lineage in human (Deglincerti et al., 2016), suggesting the presence of TE and/or other ExE cellular subtypes.
 
@@ -103,21 +175,59 @@ We identified an ExE-like cluster enriched in TE markers CDX2, GATA3, and KRT7 (
 
 Notably, the ExE-like cluster also expressed amnion markers TFAP2A, HAND1, and WNT6 (Ma et al., 2019; Zheng et al., 2019; Figure 2C). Investigation at single-cell resolution revealed that ExE-like cells co-expressed TE markers GATA3 or CDX2 and amnion marker TFAP2A (Figure 6B–C), and cannot be distinguished into distinct TE or amnion cell types. Accordingly, comparison with published datasets suggested that the ExE-like cluster resembled both TE and amnion cells. Specifically, cross-species comparison with the mouse embryo dataset (Pijuan-Sala et al., 2019), which does not contain amnion cells, showed cells in the ExE-like cluster had predicted labels for ExE ectoderm (76%; Figure 3I), a derivative of mouse polar TE (Shahbazi and Zernicka-Goetz, 2018). Mouse ExE ectoderm was also predicted to resemble monkey TE in our cross-species analysis (Figure 3—figure supplement 3C). In contrast, comparison with the in vitro human amnion model (Zheng et al., 2019), lacking TE cells, showed the closest correlation between gastruloid ExE-like cells and hESC-derived amnion-like cells (AMLC; Figure 6D). Reconciling these results, comparison with monkey embryos, which possess both TE and amnion, showed gastruloid ExE-like cells had predicted labels for both TE (51%) and amnion (E-AM and L-AM2, 47%; Figure 3J). Likewise, the ExE-like cluster exhibited close gene expression correlation to monkey TE and amnion cells (Ma et al., 2019; Nakamura et al., 2016), and amniotic epithelium and trophoblast cell types from 12 and 14 dpf in vitro human embryos (Xiang et al., 2020; Figure 6D). Taken together, the ExE-like cluster likely contains both TE- and amnion-like cells, or an ExE-like cell type with TE and amnion gene expression signatures.
 
-## BMP4-differentiated germ layer and ExE-like cells exhibit cell sorting behaviors
+### BMP4-differentiated germ layer and ExE-like cells exhibit cell sorting behaviors
 
 During amphibian and fish gastrulation, upon leaving the blastopore (PS equivalent), cells migrate to form distinct layers and organ rudiments. Cell sorting is thought to be a key driver of these early morphogenetic cell behaviors (Fagotto, 2015; Krens and Heisenberg, 2011; Winklbauer and Parent, 2017). Classic experiments of Holtfreter and colleagues revealed cell sorting behaviors, where dissociated cells from amphibian gastrulae were able to aggregate into the three germ layers in vitro (Townes and Holtfreter, 1955). Whether gastrulating mammalian cells exhibit such sorting behaviors remains to be tested.
 
 We set out to investigate whether human gastruloid cells undergo cell sorting in vitro. H1 hESC gastruloids after 44 hr BMP4 treatment were dissociated into single cells. The resulting single-cell suspension was reseeded onto 500 µm-diameter ECM micro-discs at 72,000 cells/cm2 in mTeSR alone (Figure 7A). Time-lapse analyses of re-seeded cultures revealed that many cells were actively migrating on the ECM substrate and started to form aggregates by 15 hr (Figure 7—figure supplement 1A, Video 1). Immunostaining at 2 hr after reseeding revealed a random salt-and-pepper distribution of SOX2+, T+, SOX17+, and CDX2+ cells (Figure 7B). By 24 hr, SOX2+, T+, SOX17+, and CDX2+ cells tended to aggregate with cells expressing the same marker, suggesting the affinity to form homogeneous aggregates with same cell types. This tendency was more pronounced by 48 hr. By 72 hr, while aggregation of SOX2+, T+, and SOX17+ cells was still observable, CDX2+ cells mostly dominated individual microcolonies (Figure 7B, Figure 7—figure supplement 1B–C). At higher reseeded cell densities (143,000 cells/cm2 and 286,000 cells/cm2), we observed aggregation behavior earlier, within 24-hr post-reseeding. However, cells reseeded at the highest density overpopulated the culture discs and aggregation patterns were not as evident (Figure 7B–D). Moreover, immunofluorescence revealed a rapid loss of SOX2+ cells by 48 hr at the highest reseeded density, possibly due to overcrowding of other cell types (Amoyel and Bach, 2014; Figure 7—figure supplement 1C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schema of protocol for assaying cell sorting behaviors from dissociated gastruloids. (B, C, D) Immunofluorescence images of indicated markers in reseeded gastruloid cells at indicated timepoints and indicated cell densities (dashed lines indicate cellular aggregates). (E) UMAP showing the seven original gastruloid clusters in 48-hr post-reseed cells. (F) UMAP displaying overlap of gastruloid and reseeded cells. (G) Dot plot showing predicted cell type scores in reseeded clusters using the seven gastruloid clusters as reference. Scale bar is 100 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Still time-lapse images of dissociated gastruloid cells reseeded in micropattern after 3, 10, 17, and 24 hr (arrow indicates motile cells, arrowhead indicates non-motile cells, dotted line indicates cellular aggregates). (B, C) Average number (B) and fraction (C) of dissociated and reseeded gastruloid cells positive for indicated markers at indicated timepoints and cell densities (number of reseeded colonies analyzed for each cell density and time point for (B) and (C) shown in parenthesis under each marker in (B); SD indicates standard deviation in (B); fraction in (C) calculated from cell numbers in (B); error bars indicate SD).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Gene Ontology analysis of downregulated and upregulated genes between reseeded cultures and gastruloids. (B) Heatmap illustrating gene expression correlation of 2000 shared highly variable genes between clusters of reseeded and gastruloid cells. (C) Cellular composition of each cluster in gastruloids and reseeded cell population.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse confocal series from 3 to 27 hr after reseeding of dissociated gastruloid cells in 500 µm ECM microdiscs.
+
 We further characterized cell sorting behaviors in dissociated gastruloids at medium reseeding density (143,000 cells/cm2) since we observed aggregation behavior within 24 hr without overcrowding. ScRNA-seq analysis of gastruloid cells reseeded at medium density for 48 hr (479 cells expressing 16,253 genes; Figure 2—figure supplement 1) revealed the original seven gastruloid clusters (Figure 7E). The reseeded cells also overlapped closely with gastruloid cells (Figure 7F), arguing against significant changes in cell identities after reseeding. We noted 318 upregulated and 537 downregulated genes (1.2 and 2%, respectively, of total number of genes) in reseeded cells, but Gene Ontology analysis revealed that these genes are not associated with development or differentiation (Figure 7—figure supplement 2A). Further suggesting that gene expression did not alter significantly, reseeded clusters showed high gene expression correlation (Figure 7—figure supplement 2B), and predicted cell type scores (Figure 7G) to corresponding gastruloid clusters. Thus, these data argue against significant changes in cellular identity or gene expression between the reseeded and the original gastruloid cultures. However, we noted changes in proportions of the seven cell types (Figure 7—figure supplement 2C). Taken together, dissociated gastruloids, upon reseeding, maintained the seven original cell types for 48 hr, and showed cellular aggregation behavior, a characteristic of cell sorting capability.
 
-## Selective cell sorting of reseeded gastruloid cells
+### Selective cell sorting of reseeded gastruloid cells
 
 In a typical gastrula, including human, germ layers are arranged so that mesoderm is sandwiched between ectoderm and endoderm. Thus, ectoderm lies adjacent to mesoderm but is separated from endoderm (Gilbert, 2010). Similarly, in BMP4-derived gastruloids, the mesoderm ring separates ectoderm from endoderm (Warmflash et al., 2014; Figure 1B and D). We used SOX2, T, SOX17, and CDX2 to identify ectoderm, mesoderm, endoderm, and ExE-like cells, respectively, in our reseeding studies. However, we noted that SOX17 expression was shared by Endoderm and hPGCLC (Figures 4I and 5C). Immunofluorescence images of 48 hr reseeded cultures showed that SOX2+ cells tended to mix with T+ cells, with some cells overlapping on top of each other (Figure 8A, Figure 8—figure supplement 1A–B), but segregated from SOX17+ cells (Figure 8B and Figure 8—figure supplement 1A). Cosine similarity analysis, quantifying the spatial overlap between pairs of cell types, showed significantly higher cosine value between expression domains of SOX2 and T compared to that between SOX2 and SOX17 at all cell densities by 48 hr (p<0.0001; Figure 8C, Figure 8—figure supplement 2), suggesting that ectodermal cells readily associate with mesodermal cells but segregate from endodermal cells.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-v2.jpg)
+
+**Figure 8.:** (A, B) Immunofluorescence images of indicated markers in 48 hr post-reseed cultures. (C) Cosine similarity analysis of expression domains between pairs of indicated markers (*, **, ***, **** indicates p<0.05, 0.01, 0.001, 0.0001, respectively, one-way ANOVA with Tukey’s multiple comparisons test; error bars represent standard deviation; each dot represents a pair of indicated markers in a reseeded colony; number of reseeded colonies used for each indicated pair of markers shown below the chart). Scale bar is 100 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Additional replicates of immunofluorescence staining showing indicated markers of dissociated and reseeded gastruloid cells after 48 hr (note mixing between SOX2+ and T+ cells, but segregation between SOX2+ and SOX17+ cells). (B) 2D and 3D-perspective images showing mixing between SOX2+ and T+ cells in dissociated and reseeded gastruloid cells after 48 hr. (C, D) Immunofluorescence images showing relative sorting between SOX2+ ectoderm cells (C) or GATA3+ ExE-like cells (D) and FOXA2+ definitive endoderm or GATA6+ primitive endoderm cells. Scale bar is 100 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A, B) Cosine value depicting overlap between expression domains of pairs of indicated markers at indicated timepoints and cell densities (*, **, ***, **** indicates p<0.05, 0.01, 0.001, 0.0001, respectively, using one-way ANOVA with Tukey’s multiple comparisons test; error bars represent standard deviation; each dot represents a pair of indicated markers in a reseeded colony; number of reseeded colonies used for each indicated pair of markers shown below the chart).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) UMAP display of reseeded culture from dissociated gastruloids showing combined clusters with strong expression of SOX2 (EPI-like and Ectoderm clusters into reEcto), T (Mesoderm-1 and -2 clusters into reMeso), SOX17 (Endoderm and hPGCLC clusters into reEndo), and CDX2 (ExE-like cluster into reExE). (B) UMAP depicting expression of genes encoding the protein markers used in immunofluorescence studies in reseed culture.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-figsupp4-v2.jpg)
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/59445/elife-59445-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** (A) Dot plot showing predicted Ephrin-Eph interactions between indicated pairs of cell clusters. Arrows in x-axis labels indicate direction of signaling (signaling to receiving cluster). In each interacting pair in y-axis, first partner is expressed in the signaling cluster and second partner is expressed in the receiving cluster; p value indicates enrichment of predicted Ephrin-Eph interactions among all predicted receptor-ligand interactions (see Source Data File 7); mean indicates average expression of receptor and ligand in interacting cluster. (B) Violin plot illustrating expression of genes encoding Ephrins and Ephs from the interaction analysis.
+
 While cell sorting experiments have been performed in frog and fish gastrulae comprised of the three germ layers (Davis et al., 1997; Klopper et al., 2010; Ninomiya and Winklbauer, 2008), it is unclear whether ExE cells sort relative to embryonic cells. In our assay, CDX2+ ExE-like cells readily mixed with T+ and SOX17+ cells, but tended to segregate from SOX2+ cells, as shown by immunofluorescence images (Figure 8A–B, Figure 8—figure supplement 1A) and significantly higher cosine value between expression domains of T or SOX17 and CDX2 compared to that between SOX2 and CDX2 across all densities at all time-points (p<0.0001; Figure 8C, Figure 8—figure supplement 2). Since SOX17 expression was shared by Endoderm and hPGCLC, we used FOXA2 and GATA6 to identify definitive endoderm and primitive endoderm, respectively. Similar to SOX17+ cells, FOXA2+ and GATA6+ cells tended to segregate from SOX2+ ectodermal cells (Figure 8—figure supplement 1C), but associate with GATA3+ ExE-like cells (Figure 8—figure supplement 1D). Taken together, these experiments reveal the ability of human germ layer and ExE-like cells from dissociated gastruloids to sort in vitro relative to different cell types, and form discrete germ layer and ExE aggregates.
 
-## Reseeded gastruloid cells exhibit differential expression of adhesion molecules and complementary expression of Ephrin-Eph signaling components
+### Reseeded gastruloid cells exhibit differential expression of adhesion molecules and complementary expression of Ephrin-Eph signaling components
 
 In cell sorting experiments, we used immunofluorescence staining of SOX2, T, SOX17, and CDX2 to identify ectoderm, mesoderm, endoderm, and ExE-like cells, respectively. To correlate sorting behaviors observed in these studies with scRNA-seq data, we combined clusters with strong expression of SOX2 (EPI-like and Ectoderm), T (Mesoderm-1 and -2), SOX17 (Endoderm and hPGCLC), and CDX2 (ExE-like), termed reEcto, reMeso, reEndo, and reExE, respectively (Figure 8—figure supplement 3).
 
@@ -153,19 +263,316 @@ Our work provides a rich resource for transcriptomic signatures of human germ la
 
 ## Materials and methods
 
-## Cell line verification and testing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>WA01 (H1) human embryonic stem cell</td>
+      <td>WiCell</td>
+      <td>RRID:CVCL_9771, hPSCReg ID: WAe001-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>WA09 (H9) human embryonic stem cell</td>
+      <td>WiCell</td>
+      <td>RRID:CVCL_9773, hPSCReg ID: WAe009-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX2 (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4900, RRID:AB_10560516</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3579, RRID:AB_2195767</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX1 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF3369, RRID:AB_2239879</td>
+      <td>(10 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-T (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF2085, RRID:AB_2200235</td>
+      <td>(2 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX17 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF1924, RRID:AB_355060</td>
+      <td>(1 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CDX2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12306, RRID:AB_2797879</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pSMAD1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9516, RRID:AB_491015</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CDH1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3195, RRID:AB_2291471</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CDH2 (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 14215, RRID:AB_2798427</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GATA3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5852, RRID:AB_10835690</td>
+      <td>(1:1600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GATA3 (Mouse monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# MAB6330, RRID:AB_10640512</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GATA6 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5851, RRID:AB_10705521</td>
+      <td>(1:1600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FOXA2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8186, RRID:AB_10891055</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-OCT3/4(POU5F1) (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-5279, RRID:AB_628051</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO-1 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 33–9100, RRID:AB_2533147</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KRT7 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4465, RRID:AB_11178382</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AP-2α (Rabbit monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-12726, RRID:AB_667767</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AP-2γ (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2320, RRID:AB_2202287</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentle Cell Dissociation Reagent</td>
+      <td>Stemcell Technologies</td>
+      <td>Cat # 07174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Accutase solution</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # A6964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI 1640 Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 11879020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ROCK Inhibitor (Y-27632)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat # SCM075</td>
+      <td>(10 μM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human BMP-4 Protein</td>
+      <td>R and D Systems</td>
+      <td>Cat # 314 BP</td>
+      <td>(50 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mTeSR1</td>
+      <td>Stemcell Technologies</td>
+      <td>Cat # 85857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chromium Single Cell 3’ Library and Gel Bead Kit v2</td>
+      <td>10xGenomics</td>
+      <td>Cat # 120237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chromium Single Cell 3’ Chip Kit v2</td>
+      <td>10xGenomics</td>
+      <td>Cat # 120236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chromium i7 Multiplex Kit</td>
+      <td>10xGenomics</td>
+      <td>Cat # 120262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat 3.1</td>
+      <td>Stuart et al., 2019 Butler et al., 2018</td>
+      <td>Seurat, RRID:SCR_016341</td>
+      <td>scRNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellPhoneDB</td>
+      <td>Efremova et al., 2020</td>
+      <td></td>
+      <td>Receptor-ligand interaction analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Bioconductor destiny</td>
+      <td>Angerer et al., 2016 (https://bioconductor.org/packages/release/bioc/html/destiny.html)</td>
+      <td></td>
+      <td>Pseudotime and transition probabilities</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>ImageJ/FIJI</td>
+      <td>RRID:SCR_002285</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI plugin – Concentric Circles</td>
+      <td>https://imagej.nih.gov/ij/plugins/concentric-circles.html</td>
+      <td></td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI plugin – ClearVolume</td>
+      <td>Royer et al., 2015 (https://imagej.net/ClearVolume)</td>
+      <td></td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistics and graphs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# D9542</td>
+      <td>(0.4 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Donkey anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21202, RRID:AB_141607</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Donkey anti-Goat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21432, RRID:AB_2535853</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-31573, RRID:AB_2536183</td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell line verification and testing
 
 Cell lines used in this study have been authenticated using Short Tandem Repeat (STR) profiling, and are regularly tested and negative for mycoplasma contamination.
 
-## PDMS stamp fabrication
+### PDMS stamp fabrication
 
 Standard photolithography methods were used to fabricate the Master, which was used as a template in molding stamps for micro-contactprinting (Alom Ruiz and Chen, 2007; Théry and Piel, 2009). Briefly, the silicon wafer was cleaned by dipping in hydrogen fluoride solution for 1 min and rinsing with water twice. A thin layer of photoresist, SU-8 3000 (Kayaku Advanced Materials, Westborough, MA) was then spin-coated on the wafer at 500 rpm for 10 s, followed by 3,000 rpm for 30 s. The wafer with spin-coated photoresist layer was baked at 65°C for 5 min and 95°C for 15 min. The optical mask with desired features was placed in contact with photoresist layer and illuminated with the UV light at 150–250 mJ/cm2 at 350–400 nm. The photoresist layer was then baked at 65°C for 5 min and 95°C for 10 min. Subsequently, the photoresist was developed in developer solution for 5 min. The photoresist Master was then coated with a layer of chlorotrimethylsilane in the vacuum for 30 min. Polydimethylsiloxane (PDMS) and its curing agent, Sylgard 184, (Dow Corning, Midland, MI) in 10:1 ratio were mixed, degassed, poured over the top of Master, and cured at 60°C overnight, after which the PDMS layer was peeled off to be used as a stamp in micro-contactprinting.
 
-## Microcontact printing
+### Microcontact printing
 
 PDMS stamps (approximately 1 x 1 cm) were sterilized by washing in ethanol solution and dried in a laminar flow hood. The stamps were treated with O2 plasma at 100–150 microns for 2 min. Growth factor reduced Matrigel (Corning, Corning, NY) was diluted in DMEM/F-12 (Gibco, Waltham, MA) at 1:20 dilution and incubated on the stamps to cover the entire surface of the feature side at room temperature for 45 min. Matrigel solution was then aspirated off the stamps, which were air-dried. Using tweezers, Matrigel-coated surface of stamps were brought in contact with glass or plastic substrate for 2 min, ensuring conformal contact between features and substrate. The stamps were then removed and rinsed in ethanol for future uses. Matrigel-printed substrates were incubated with 0.1% Pluronic F-68 (Gibco) in DPBS-/-at room temperature for 1 hr. In some experiments, we skipped incubation with Pluronic F-68, and did not observe a difference in cell attachment. Finally, the substrates were washed with DPBS-/-for four times. Matrigel-printed substrates were stored in DPBS-/-solution at 4°C for up to 2 weeks.
 
-## Cell seeding protocol
+### Cell seeding protocol
 
 Two human embryonic stem cell lines were used in this study: H1 and H9 (WiCell, Madison, WI). Both cell lines were routinely cultured on six-well plates coated with growth factor reduced Matrigel in mTeSR media (Stemcell Technologies, Vancouver, Canada) with daily media replacement. The cells were passaged at 80% confluence using Gentle Cell Dissociation Reagent (Stemcell Technologies) per manufacturer’s protocol. Both cell lines were cultured at 37°C and 5% CO2.
 
@@ -173,29 +580,39 @@ For gastruloid differentiation, we adapted the protocol developed by Warmflash e
 
 For cell sorting experiments, gastruloids that have been treated with BMP4 for 44 hr were collected by Accutase incubation at 37°C and 5% CO2 for 10 min, after which an equal volume of RPMI medium 1640 was added. A single-cell suspension was generated by gently pipetting the cell suspension for five times. The cell suspension was centrifuged at 300 rcf for 5 min, after which the supernatant was removed. A single-cell suspension was then generated with fresh mTeSR. Cells were then counted and seeded onto fresh micropattern at 72,000 cells/cm2, 143,000 cells/cm2, or 286,000 cells/cm2 in mTeSR with 10 μM ROCKi Y-27632. After 4 hr, medium containing ROCKi was replaced with mTeSR. mTeSR was replaced daily to wash away unattached cells.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells were rinsed once with PBS, fixed in 4% paraformaldehyde for 30 min, and rinsed twice with PBS at room temperature. Blocking solution was made with 0.1% Triton-X and 3% Normal Donkey Serum (Jackson Immunoresearch, West Grove, PA) in PBS and washing solution was made with 0.1% Tween-20 in PBS. Fixed cells were incubated in blocking solution for 30 min at room temperature before incubation with primary antibodies in blocking solution at 4°C overnight. Cells were then washed three times in washing solution before being incubated with secondary antibodies and DAPI at 0.4 μg/mL (Invitrogen, Carlsbad, CA) in blocking solution for 1 hr. Finally, cells were washed three times in washing solution and stored in PBS or mounted with coverslips using Vectashield Antifade Mounting Medium (Vector Laboratories, Burlingame, CA).
 
-## Microscopy and visualization of fluorescence images
+### Microscopy and visualization of fluorescence images
 
 All confocal images were acquired on Olympus IX81 Inverted Spinning Disk Confocal Microscope with 10X or 20X lenses. Z-stack images of ~150 µm thick were acquired in four channels corresponding to DAPI, Alexa 488, Alexa 555, and Alexa 647 conjugated antibodies. Each z-stack was projected into a single image for all channels prior to analysis. Fiji software (Schindelin et al., 2012) and its plugin ClearVolume (Royer et al., 2015) were used to visualize images.
 
-## Quantification of fluorescence intensity
+### Quantification of fluorescence intensity
 
 Fiji (Schindelin et al., 2012) was used to process and analyze fluorescent microscopic images. We first created masks for each fluorescent image. We then used Concentric Circles plugin to overlay 20 equally spaced concentric circles on the image of gastruloid. We measured the average fluorescence intensity along the circumference of each concentric circle. We normalized the fluorescence intensity of each marker of interest to that of DAPI, resulting in normalized average fluorescence intensity value of each marker along 20 different radii of every gastruloid colony. Finally, these values were averaged for multiple colonies per marker and presented.
 
-## Density map-based cell counting and cosine similarity analysis
+### Density map-based cell counting and cosine similarity analysis
 
 We estimated the number of cells expressing each marker in a given fluorescence image by first estimating the marker’s corresponding density map, which represents the expected spatial distribution of the number of cells over pixels in the fluorescence image acquired for the marker. Individual 2D fluorescence images were converted into 2D density maps, where the density value of a pixel is the expected number of cells at that pixel in the corresponding image. The density map of a given image X ∈ RNxN , was estimated by use of deeply-supervised fully convolutional neural network (FCNN) models (He et al., 2019) that perform an end-to-end mapping from to the desired density map, Y ∈ RNxN. The FCNN model was learned by use of a set of training data, each of which contains an annotated image and the associated ground-truth density maps. Here, each image was manually annotated by identifying the locations of centroids of cells expressing markers of interest. The ground-truth density map of each image was generated based on the annotated centroids by use of methods introduced in previous works (He et al., 2019). Specifically, 5 FCNN models, each representing SOX2, CDX2, SOX17, DAPI, and T, were separately trained and developed with corresponding annotated images. In each FCNN model, seven annotated images with 512 × 512 pixels were employed as the training images for the FCNN model training, and three annotated images were employed to validate select values of parameters in the FCNN models.
 
-Interpreting the density map of an image as the expected spatial distribution of the number of cells over all pixels, the total number of cells in the image is calculated by summing up all the densities on the map:C= ∑i=1N∑j=1NYij,where Yij is the estimated density value of the location (i,j) in the corresponding image. Density map generation or cell counting for CDH2 and GATA3 was performed with FCNN model trained with DAPI and CDX2, respectively.
+Interpreting the density map of an image as the expected spatial distribution of the number of cells over all pixels, the total number of cells in the image is calculated by summing up all the densities on the map:
 
-Representing the density maps corresponding to two cell distributions as Y ∈ RNxN and Y' ∈ RNxN, the spatial overlap between the two cell populations is measured based on the density maps using cosine similarity value (cosine value):CosSim= ∑i=1N∑j=1NYij′⋅Yij∑i=1N∑j=1NYij′2⋅∑i=1N∑j=1NYij2.
+$$
+C= \sumi=1N\sumj=1NY_{ij},
+$$
+
+where Yij is the estimated density value of the location (i,j) in the corresponding image. Density map generation or cell counting for CDH2 and GATA3 was performed with FCNN model trained with DAPI and CDX2, respectively.
+
+Representing the density maps corresponding to two cell distributions as Y ∈ RNxN and Y' ∈ RNxN, the spatial overlap between the two cell populations is measured based on the density maps using cosine similarity value (cosine value):
+
+$$
+CosSim= \frac{\sumi=1N\sumj=1NY_{ij}^{′}⋅Y_{ij}}{\sqrt{\sumi=1N\sumj=1NY_{ij}^{′}^{2}}⋅\sqrt{\sumi=1N\sumj=1NY_{ij}^{2}}}.
+$$
 
 Cosine values ranged from 0 to 1, with one representing a complete overlap between expression patterns of two markers, whereas 0 representing no overlap. Intuitively, the cosine value based on density maps is a straightforward way to measure the spatial overlap between two cell populations (cells expressing two markers of interest). According to the definition above, pixels where both of the two cell populations have higher number of cells contribute more to the global overlap; the pixels where only one of the two or neither of them have higher densities may contribute less to the global overlap; when two cell populations have larger amount of cells, but relatively less amount of overlapped pixels, the global overlap is small.
 
-## scRNA-seq and data analysis
+### scRNA-seq and data analysis
 
 Cells were collected by Accutase incubation at 37°C and 5% CO2 for 10 min. Cell clumps were further broken up into single cells by gently pipetting the cell solution five times, after which equal volume of RPMI medium 1640 was added. The cell suspension was centrifuged at 300 rcf for 5 min, after which the supernatant was removed. A single-cell suspension was then generated with cold DPBS-/-. Cells were then counted and resuspended at 20,000 cells per 200 μL of cold DPBS-/-in centrifuge tubes. For each cell suspension, 800 μL of cold methanol was added dropwise. The final cell suspension was incubated on ice for 15 min and kept at −80°C until use.
 
@@ -209,10 +626,16 @@ Diffusion maps for single cells were calculated based on the normalized and scal
 
 Module score was calculated using AddModuleScore function in Seurat using default settings. This function calculates average expression of a given set of marker genes, subtracted by that of a set of randomly chosen genes (Tirosh et al., 2016).
 
-Datasets used for comparison analyses with gastruloids include gastrulating mouse embryos (Pijuan-Sala et al., 2019), post-implantation primate cyno monkey embryos (Ma et al., 2019; Nakamura et al., 2016), in vitro cultured 6–12 dpf human embryos (Lv et al., 2019; Xiang et al., 2020), and hESC-differentiated cell types (Chen et al., 2019; Chu et al., 2016; Loh et al., 2016; Lu et al., 2018; Zheng et al., 2019). Each dataset was normalized, scaled, and processed using Seurat. Average gene expression correlations between gastruloid clusters and reference cell types were calculated using Spearman correlation on the basis of shared HVGs between gastruloids and each reference data, and presented in heatmaps. For interspecies comparison with gastrulating mouse (Pijuan-Sala et al., 2019) and post-implantation monkey embryos (Ma et al., 2019), each dataset was integrated with human gastruloid object applying Seurat anchor-based integration method. Cell type labels from mouse or monkey were transferred to human gastruloid cells using FindTranferAnchors and TransferData functions, resulting in each gastruloid cell with prediction scores for multiple mouse or monkey cell types. We defined a gastruloid cell as a predicted mouse or monkey cell type with the highest prediction score. Similar analyses were used to predict mouse or monkey cell stages in gastruloid cells. For cell type prediction analyses in interspecies comparisons, we used randomization test to identify reference cell types that map to query cell types with statistical significance of p<0.05. For randomization test for significant transferred cell types of each gastruloid cluster i of size ni, we sampled ni cells with replacement from all gastruloid cells 1000 times. For each of the kth time resampling of size ni, we calculated Percijk, the percentage of transferred cell types j in ni sampled cells and built a background distribution with Percij1, …, Percij1000. We then computed the p-value for cell type j in cluster i as:p−valueij=#(Percijk ≥ the composition of transferred cell type j in cluster i)+11000+1where a pseudo-count of 1 was introduced to avoid p values of 0. Then for cluster i, if p-valueij is less than or equal to 0.05, we identify transferred cell type j as a significant transferred cell type for cluster i. Similar tests were performed in monkey and mouse comparison analysis to identify mouse cell types that correspond to monkey cell types with statistical significance.
+Datasets used for comparison analyses with gastruloids include gastrulating mouse embryos (Pijuan-Sala et al., 2019), post-implantation primate cyno monkey embryos (Ma et al., 2019; Nakamura et al., 2016), in vitro cultured 6–12 dpf human embryos (Lv et al., 2019; Xiang et al., 2020), and hESC-differentiated cell types (Chen et al., 2019; Chu et al., 2016; Loh et al., 2016; Lu et al., 2018; Zheng et al., 2019). Each dataset was normalized, scaled, and processed using Seurat. Average gene expression correlations between gastruloid clusters and reference cell types were calculated using Spearman correlation on the basis of shared HVGs between gastruloids and each reference data, and presented in heatmaps. For interspecies comparison with gastrulating mouse (Pijuan-Sala et al., 2019) and post-implantation monkey embryos (Ma et al., 2019), each dataset was integrated with human gastruloid object applying Seurat anchor-based integration method. Cell type labels from mouse or monkey were transferred to human gastruloid cells using FindTranferAnchors and TransferData functions, resulting in each gastruloid cell with prediction scores for multiple mouse or monkey cell types. We defined a gastruloid cell as a predicted mouse or monkey cell type with the highest prediction score. Similar analyses were used to predict mouse or monkey cell stages in gastruloid cells. For cell type prediction analyses in interspecies comparisons, we used randomization test to identify reference cell types that map to query cell types with statistical significance of p<0.05. For randomization test for significant transferred cell types of each gastruloid cluster i of size ni, we sampled ni cells with replacement from all gastruloid cells 1000 times. For each of the kth time resampling of size ni, we calculated Percijk, the percentage of transferred cell types j in ni sampled cells and built a background distribution with Percij1, …, Percij1000. We then computed the p-value for cell type j in cluster i as:
+
+$$
+p−value_{ij}=\frac{#(Perc_{ijk} \geq the composition of transferred cell type j in cluster i)+1}{1000+1}
+$$
+
+where a pseudo-count of 1 was introduced to avoid p values of 0. Then for cluster i, if p-valueij is less than or equal to 0.05, we identify transferred cell type j as a significant transferred cell type for cluster i. Similar tests were performed in monkey and mouse comparison analysis to identify mouse cell types that correspond to monkey cell types with statistical significance.
 
 Reseed data was integrated with two replicates of gastruloids using Seurat. FindTransferAnchors and TransferData functions were used to annotate reseed cells using gastruloid data as the reference. Predicted cell type scores were calculated with Seurat, which identified nearest neighbors across gastruloid and reseed dataset, and assigned weighted score on each reseed cell based on the seven annotated gastruloid clusters (Stuart et al., 2019). CellPhoneDB (v.2.1.1) (Efremova et al., 2020), a python package, was used to investigate directionality and cross-talks of interaction between pairs of cell types.
 
-## Statistical analysis
+### Statistical analysis
 
 Randomized permutation tests were used to calculate statistical significance of cell type correspondences in interspecies comparisons. Graphpad Prism 8 software was used to perform the remaining statistical analyses: one-way ANOVA with Tukey’s multiple comparisons test, or unpaired nonparametric Mann-Whitney test, as appropriate and described in figure legends.

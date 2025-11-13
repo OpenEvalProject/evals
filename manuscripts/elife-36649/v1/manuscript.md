@@ -15,4 +15,4 @@
 
 ## Abstract
 
-A mutation in a transcription factor makes people susceptible to Tropheryma whipplei , the bacterium that causes a rare condition called Whipple's disease.
+A mutation in a transcription factor makes people susceptible to Tropheryma whipplei, the bacterium that causes a rare condition called Whipple's disease.

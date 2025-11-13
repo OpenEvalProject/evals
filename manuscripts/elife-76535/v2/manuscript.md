@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04dese585 Centre for BioSystems Science and Engineering, Indian Institute of Science Bangalore Bangalore India
+1. Centre for BioSystems Science and Engineering, Indian Institute of Science Bangalore Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
 2. Department of Biotechnology, RV College of Engineering Bangalore India
-3. https://ror.org/05m169e78 Department of Biotechnology, PES University Bangalore India
+3. Department of Biotechnology, PES University Bangalore India ([ROR:05m169e78](https://ror.org/05m169e78))
 
 † Corresponding author
 
@@ -26,17 +26,37 @@ Understanding the principles of cellular decision-making is a fundamental questi
 
 ## Results
 
-## EMP network topology can lead to a largely bimodal phenotypic stability landscape
+### EMP network topology can lead to a largely bimodal phenotypic stability landscape
 
 EMP is a developmental program that enables cells to attain phenotypes in a spectrum ranging from epithelial (E) to hybrid (E/M) to mesenchymal (M) phenotypes. While identifying the number of possible hybrid phenotypes is an ongoing research area (Brown et al., 2022; Cook and Vanderhyden, 2020; Karacosta et al., 2019), their stability characteristics have been well-studied. The epithelial and mesenchymal phenotypes at the end of the spectrum (referred to as terminal phenotypes here) have been observed to be more ‘stable’ than the hybrid phenotypes in various contexts. These stability differences lead to an uneven, bimodal phenotypic stability ‘landscape’, that is, a highly stable group of terminal phenotypes and a weakly stable group of hybrid phenotypes (Pastushenko et al., 2018). To understand the role of network topology in the emergence of such a bimodal landscape, we chose to investigate a collection of five EMP networks that have been shown to be previously investigated via different simulation formalisms (Silveira and Mombach, 2020; Silveira et al., 2020; Huang et al., 2017; Tripathi et al., 2020a; Font-Clos et al., 2018; Figure 1A, Figure 1—figure supplement 1A). We chose these networks to range over various sizes and densities (18N 33E to 57N 113E, where N is the number of nodes and E is the number of edges in the network). Each of these networks depicts the regulation of EMP at the transcriptional/post-transcriptional level (compiled under different biological/experimental contexts). Therefore, each node is either a TF or a micro-RNA, and each edge represents transcriptional or post-transcriptional activation or inhibition. We classify these nodes into two categories based on their topological configuration: ‘peripheral’ nodes and ‘core’ nodes. The peripheral nodes are the ones that either have no incoming edges (i.e., input nodes/signals) or no outgoing edges (i.e., output nodes). Based on their biochemical nature, we further classify the core nodes as epithelial nodes, which are the drivers of the epithelial phenotype, and mesenchymal nodes, known to be the drivers of the mesenchymal phenotype. In the 22N 82E network shown in Figure 1A, the mesenchymal nodes are TWIST1/2, GSC, FOXC2, ZEB1/2, SNAI1/2, and TGFb; the epithelial nodes are miR-200a, miR-200b, miR-200c, miR-34a, miR-141, and miR-101; and the peripheral nodes are KLF8, TCF3, VIM, CDH1, miR205, miR30c, and miR9 (Tripathi et al., 2020b; Deshmukh et al., 2021; Brabletz and Brabletz, 2010). Similar classification of nodes has been implemented for other networks (Figure 1—figure supplement 1A; Silveira and Mombach, 2020; Silveira et al., 2020; Huang et al., 2017; Tripathi et al., 2020a; Font-Clos et al., 2018). The interactions between these nodes are referred to as edges and are either activating or inhibiting in nature. We simulate the dynamics of these networks using a threshold-based, parameter-independent, Boolean formalism (Font-Clos et al., 2018), where each node can be either active (1) or inactive (–1). We define the state of a node as an array of –1s and 1s, where each element of the array depicts the activity of a node. The activity of each node is affected by the activity of all the incoming edges based on a majority rule, that is, if there are more inhibiting edges active, the node gets inactivated and vice versa (see ‘Methods’). We update the state of the network using an asynchronous formalism where only one node (randomly chosen) is updated at a time step. This formalism captures the inherent stochasticity in the emergent dynamics of these networks. We simulated these networks until the system reaches a steady state, that is, the state of the network does not change with time.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig1-v2.jpg)
+
+**Figure 1.:** (A) EMP network of size 22N 82E, where N stands for number of nodes and E stands for number of edges. (B) Demonstration of network randomization. (C) (i) Distribution of number of steady states in random networks of size 22N 82E. The wild-type EMP network of the same size is represented using the red line. (ii) Percentile of the WT network in the distribution of the number of steady states in random networks. (D) Heatmap depicting the steady states of the 22N 82E network. Each column represents a steady state. Each row represents a node. White cells indicate low-expressing/inactive node (–1) in a state and black cells indicate high expression/active (1). The width of each column is proportional to the frequency of the given steady state. (E) Comparison of the cumulative frequency of the terminal (epithelial and mesenchymal) states vs. that of the hybrid states for all five EMP networks.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Epithelial–mesenchymal plasticity (EMP) networks of size (i) 18N 33E, (ii) 20N 40E, (iii) 26N 100E, and (iv) 57N 113E, where N stands for number of nodes and E stands for number of edges. (B) Table for the number of observed steady states and the number of possible states for wild-type (WT) EMP networks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Each row represents the activity of a node (–1 or 1), and each column represents a steady state.
 
 Despite the size and complexity of these networks, we noticed a relatively smaller number of states, indicating canalization (36 steady states for the 22N 82E network, out of the 222 possible states, Figure 1—figure supplement 1B). To check whether this property depends on the network topology, we generated 500 random (hypothetical) networks by randomly selecting and swapping different pairs of edges in the network. This ensured that the in and out degrees of all nodes remain the same, but the way they are connected (network topology) changes (Figure 1B, ‘Methods’). The wild-type (WT) EMP networks showed a much smaller number of steady states than those shown by most random networks (Figure 1C), suggesting that the topology of the EMP networks plays a significant role in limiting the phenotypic repertoire.
 
 We represent the steady states of WT EMP networks in a heatmap, where each row corresponds to one node in the network, and each column corresponds to a steady state (Figure 1D, Figure 1—figure supplement 2). As expected, we see three categories of states: epithelial states that have all epithelial nodes (highlighted by a blue border) as active (dark cells) and all mesenchymal nodes (highlighted by a red border) as inactive (white cells); mesenchymal states that have all mesenchymal nodes as active and epithelial nodes as inactive; and hybrid states that have one of the possible combinations of epithelial and mesenchymal nodes as active. The steady-state frequency (SSF) is calculated as the fraction of initial conditions that converge to the given steady state. We represent the SSF for each steady state as the width of the corresponding column. The epithelial and mesenchymal states account for >70% of the SSF in four of the five EMP networks (Figure 1E). These results indicate the emergence of the experimentally observed uneven (bimodal) stability landscape (Pastushenko et al., 2018) that can be explained from the network topology alone, without any specific kinetic parameters.
 
-## Bimodality of the phenotypic landscape is weakened upon randomizing the network topology
+### Bimodality of the phenotypic landscape is weakened upon randomizing the network topology
 
 SSF, the fraction of the possible states that converge to a given steady state, is a measure of the stability of a steady state. SSF shows a bimodal distribution in WT EMP networks (Figure 2A), following the observation that terminal phenotypes have much higher SSF than hybrid phenotypes (Figure 1D and E, Figure 1—figure supplement 2). SSF measures the global stability of a given steady state/phenotype in the state space. Specifically, SSF is an estimate of the fraction of the state space that can converge to the given steady state. Similarly, the local stability of the steady state can be estimated by measuring the fraction of neighboring states in the state-space that converges to the steady state. We hence used a metric – ‘coherence’ - based on the idea of local stability proposed previously (Willadsen and Wiles, 2007). The calculation of coherence follows the perturbation procedure depicted in Figure 2B. For each steady state, we perturb the activity of one node at a time (active nodes flipped to be inactive and vice versa) and simulate the dynamics till a steady state is reached. We then measure the fraction of times the original steady state is regained upon such perturbations and label it as the coherence of the corresponding steady state (‘Methods’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of steady-state frequency (SSF) of the steady states obtained for the five EMP networks, in log10 scale. The corresponding Sarle’s bimodality coefficients have been reported. A value greater than 0.55 indicates bimodality. (B) Depiction of coherence calculation. The blue balls indicate unperturbed steady state (P1, say). The green and dark blue balls represent the perturbations given to the steady state. The red balls represent a different steady state that the system reached after the perturbation. The fraction of perturbations that reverted to the original state P1 (3 out of 7 balls) is calculated as coherence. (C) Similar to (A), but for coherence of the steady states of WT EMP networks. (D) Scatterplot between coherence and SSF of WT EMP networks. Spearman’s correlation coefficient for each network has been reported. *p<0.05. (E) Comparison of the distribution of coherence of the steady states of WT EMP network (22N 82E), with the distribution of maximum coherence values and minimum coherence values of the corresponding random networks. (F) Similar to (E), but for SSF. (G) Distribution of the SSF bimodality coefficients for random networks of size 22N 82E. The red vertical line represents the WT network. (H) Percentile of the WT networks in the distribution of multiple stability metrics obtained from random networks.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of the distribution of coherence of the steady states of wild-type (WT) epithelial–mesenchymal plasticity (EMP) networks with the distribution of maximum SSF values and minimum SSF values of the corresponding random networks. (B) Same as (A) but for steady state frequency (SSF). (C) Distribution of the SSF bimodality coefficients for random networks corresponding to WT EMP networks. The corresponding WT network in each panel is represented by the red vertical line. (D) Same as (C) but for coherence.
 
 Next, we quantified the SSF and coherence for all steady states from the randomized (hypothetical) networks and compared the stability of the phenotypes emerging from WT and random networks. We calculated the minimum, maximum, and mean coherence and SSF across all steady states for a given random network and plotted the distribution of these values (Figure 2E and F). When comparing with the corresponding values observed for the WT networks, we found that the maximum coherence seen for the 22N 82E WT network was more than that seen for most of the corresponding random networks (compare columns 2 and 3 in Figure 2E); consistent results were obtained for other WT networks (Figure 2—figure supplement 1A).
 
@@ -46,15 +66,35 @@ When comparing the patterns for minimum coherence, we observed similar trends fo
 
 We then investigated what factors determine the emergence of the bimodal landscape, where terminal phenotypes show higher relative stability (SSF and coherence) than hybrid phenotypes. One possible way to stabilize a state is to have a strong agreement between the state configuration and the network topology. For instance, if A activates B in a network, and for a given state, if A and B have opposite values (e.g., –1,1), there is a disagreement between the state configuration and the particular edge. Such disagreement is referred to as the edge of being frustrated. For a given network and a state, we measure the fraction of such frustrated edges and call this fraction the frustration of the state (Figure 3A, Tripathi et al., 2020a). The higher the frustration, the lesser the chance of a state being stable (see Appendix 1, Appendix text).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig3-v2.jpg)
+
+**Figure 3.:** (A) Depiction of calculation of frustration. represents the interaction from ith node to jth node, si and sj represent the activity of the ith node and the jth node for a given state $S$. (B) Scatterplot between frustration and (i) steady-state frequency (SSF), (ii) coherence for WT epithelial–mesenchymal plasticity (EMP) networks. Spearman’s correlation coefficient for each network has been reported. *p<0.05. Each dot corresponds to a steady state for the given network. (C) Comparison of the distribution of frustration of the steady states of WT EMP network (22N 82E), with the distribution of maximum frustration values and minimum frustration values of the corresponding random networks. (D) Heatmap of the percentile of WT network values in the random network value distribution for the minimum, maximum, and mean frustration. (E) Representation of WT steady states in a scatterplot of frustration and coherence with the color representing the corresponding SSF. Spearman’s correlation coefficient between the axis metrics is reported. *p<0.05. The terminal and hybrid phenotypes are highlighted with red rectangles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Distribution of Spearman’s correlation coefficient of (A) steady-state frequency (SSF) – coherence, (B) SSF – frustration, and (C) coherence – frustration for random networks corresponding to wild-type (WT) epithelial–mesenchymal plasticity (EMP) networks. The corresponding WT network in each panel is represented by the red vertical line. (D) Comparison of the distribution of frustration of the steady states of WT EMP networks with the distribution of maximum frustration values and minimum frustration values of the corresponding random networks. (E) Representation of WT steady states in a 2D stability axes with color as SSF.
+
 We quantified the frustration for each state for each EMP network and observed a strong negative correlation of frustration with both SSF and coherence (Figure 3B and C). We then calculated the pairwise correlation for the three metrics in random networks. While the correlation between SSF and coherence was consistently positive (Figure 3—figure supplement 1A), the correlation of frustration with SSF and coherence was positive in some random networks (Figure 3—figure supplement 1B and C, 18N, and 20N networks). These results suggest that, while frustration, a measure of the support that the network topology provides to a given state, can explain the stability of a state in terms of SSF and coherence in WT networks, the same may not be accurate for random networks.
 
 Next, we compared the minimum and maximum frustration values for random networks with those of corresponding WT EMP networks. As noted earlier for coherence and SSF (Figure 2E and F, Figure 2—figure supplement 1A and B), not all metrics (maximum, minimum, mean) of frustration show the same trend across EMP networks. While minimum frustration of EMP networks was lower than that of most random networks, the maximum and mean frustration do not necessarily follow the same trend (Figure 3D, Figure 3—figure supplement 1D). Furthermore, the bimodality coefficient of frustration for WT networks is also higher than most of the random networks (Figure 3D), similar to that observed in SSF and coherence (Figure 2G and H, Figure 2—figure supplement 1C and D). Finally, having investigated three different metrics – coherence, SSF, and frustration – to measure state stability, we collated this information for the steady states of WT networks on a scatterplot of coherence vs. frustration, with the color marked by SSF. In this plot, we can clearly visualize the bimodal landscape, that is, the terminal phenotypes have high SSF, high coherence, and low frustration, and hybrid phenotypes, on the other hand, have low SSF, low coherence, and high frustration (Figure 3F).
 
-## EMP networks contain two mutually inhibiting teams of nodes
+### EMP networks contain two mutually inhibiting teams of nodes
 
 Next, we asked what salient features of network topology for WT EMP networks may underlie their specific bimodal phenotypic stability landscape and the limited phenotypic repertoire. We had earlier observed that a large and complex network regulating phenotypic heterogeneity in SCLC gave rise to predominantly only four phenotypes and, consequently, a bimodal phenotypic stability landscape (Chauhan et al., 2021). The hallmark of the topology of the SCLC network was the presence of ‘teams’ of nodes mutually inhibiting each other. Furthermore, the composition of the dominant phenotypes perfectly coincided with the composition of the ‘teams.’ Hence, we hypothesized that these EMP networks consist of similar ‘teams’ of nodes and that these teams underlie their bimodal stability landscape.
 
-Unlike the SCLC network, these EMP networks were highly sparse, that is, the ratio between the number of edges (E) and the number of possible edges (N2) given the number of nodes (N) is very less (5–15%) (Figure 4A). However, pairs of nodes can influence each other not only directly but also via indirect paths (connected edges) of length >1 that can connect them. Thus, we decided to use the pairwise influence among the nodes of these networks rather than just the direct interactions among them to analyze the structure of these networks. This ‘influence matrix’ represents the effective regulation of one node by another when many different indirect paths are also counted (up to path length <=10) in addition to direct regulation. Each path is assigned a weight inversely proportional to its length while calculating the influence matrix (see the formula below Figure 4A and Methods section : Figure 4). To check whether the influence matrix can explain phenotypic stability, we calculated the ‘strength’ of each steady state corresponding to the influence matrix (Appendix 1 ‘Methods’). While in WT networks the state strength was higher for terminal phenotypes, the same was not true in random networks (Figure 4—figure supplement 1A–C). Furthermore, the correlation between state strength and stability metrics was weak in random networks as compared to that of WT networks (Figure 4—figure supplement 1D), suggesting that the influence matrix alone is not enough to explain phenotypic stability.
+Unlike the SCLC network, these EMP networks were highly sparse, that is, the ratio between the number of edges ($E$) and the number of possible edges ($N^{2}$) given the number of nodes ($N$) is very less (5–15%) (Figure 4A). However, pairs of nodes can influence each other not only directly but also via indirect paths (connected edges) of length >1 that can connect them. Thus, we decided to use the pairwise influence among the nodes of these networks rather than just the direct interactions among them to analyze the structure of these networks. This ‘influence matrix’ represents the effective regulation of one node by another when many different indirect paths are also counted (up to path length <=10) in addition to direct regulation. Each path is assigned a weight inversely proportional to its length while calculating the influence matrix (see the formula below Figure 4A and Methods section : Figure 4). To check whether the influence matrix can explain phenotypic stability, we calculated the ‘strength’ of each steady state corresponding to the influence matrix (Appendix 1 ‘Methods’). While in WT networks the state strength was higher for terminal phenotypes, the same was not true in random networks (Figure 4—figure supplement 1A–C). Furthermore, the correlation between state strength and stability metrics was weak in random networks as compared to that of WT networks (Figure 4—figure supplement 1D), suggesting that the influence matrix alone is not enough to explain phenotypic stability.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig4-v2.jpg)
+
+**Figure 4.:** (A) Adjacency matrix of the 22N 82E network. Each row depicts the links originating from the node (i.e., input) corresponding to the row (y-axis) and all other nodes (x-axis, outputs). The color represents the nature of the edge: red for activating links, blue for inhibiting links, and white for no links. The formula for the conversion of adjacency matrix to influence matrix is given below the panel, where $A⁢d⁢j$ is the adjacency matrix, $A⁢d⁢j_{m⁢a⁢x}$ is the adjacency matrix with all –1s replaced with 1s. $A⁢d⁢j^{l}$ is the adjacency matrix raised to the power of $l$. The division $\frac{A⁢d⁢j^{l}}{A⁢d⁢j_{m⁢a⁢x}^{l}}$ is element-wise. $l_{m⁢a⁢x}$ is the maximum path length considered for calculating the influence. (B) The influence matrix for the 22N 82E network. The signal and output nodes (peripheral) are highlighted with a gray box, the mesenchymal nodes (team 1) are highlighted with a blue box, and the epithelial nodes (team 2) are highlighted with a red box. The formula for team strength (Ts) is given below the influence matrix. T1 and T2 represent the two teams of nodes in the network (epithelial and mesenchymal nodes, respectively). $n_{K⁢L}$ is the number of cells in the rectangle $T_{K⁢L}$ (C) (i) Distribution of team strength (Ts) for random networks of size 22N 82E. The Ts value for the corresponding wild-type (WT) EMP network has been highlighted using the red vertical line. (ii) Percentiles corresponding to the WT team strength in the corresponding distribution obtained from random networks for networks of all sizes (y-axis). (D) Correlation matrix for the expression levels of nodes of the 22N 82E network, as obtained by the Boolean formalism. (E) Same as (D) but for RAndom CIrcuit PErturbaiton (RACIPE). (F) Scatterplot of the difference between the influence matrix and Boolean correlation matrix (y-axis) and the mean group strength of the network (x-axis) for random networks of size 22N 82E. The wild-type EMP network is highlighted in red. Spearman’s correlation coefficient is reported. *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Influence matrices for the epithelial–mesenchymal plasticity (EMP) networks. (B) Distribution of the team strength (Ts) for EMP networks (i) 18N 33E, (ii) 20N 40E, and (ii) 26N 100E. (C) Correlation matrices for Boolean expression levels of EMP networks, in increasing order of number of nodes except for 22N 82E network. (D) Same as (C) but for RAndom CIrcuit PErturbaiton (RACIPE). (E) Similar to Figure 2F, for networks other than 22N 82E.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Distribution ofsteady-state frequency(SSF)for theRAndom CIrcuit PErturbaiton(RACIPE)states of22N82Ewild-type (WT)epithelial–mesenchymal plasticity(EMP)network.The state classification is done based on teams identified in (B). (B) Distribution of the strength of states of the EMP networks from RACIPE. (C) Comparisonof the state strength distributions forepithelial,mesenchymal,andhybrid phenotypes obtained from WT and random networks of labelled sizes. (D) (i) Correlation of state strength with SSF andfrustration for22N82E WT network. (ii) Correlation between the stability metrics (y-axis) and the strength for the states of the five different WT EMP networks (x-axis). The team strengths of the networksarerepresented using a different color scheme at the bottom of the heatmap. (iii) Correlation between the quantities in (D(ii)) and Gs for random networks of corresponding to WT networks of different sizes.
 
 To investigate the relationship between team structure and stability of the phenotypes, we defined a metric called team strength that quantifies the strength of teams in a given network (formula below Figure 4B). We first identified teams in random networks via hierarchical clustering of the corresponding influence matrix and calculated the corresponding team strength. We find that the WT EMP networks have stronger teams than most (>98%) of their randomized counterparts (Figure 4C, Figure 4—figure supplement 2B), indicating that the team structure is a unique topological feature of the WT EMP networks.
 
@@ -64,9 +104,21 @@ We further explored the connection between teams of nodes in the influence matri
 
 We quantified the difference between the influence matrix and Boolean correlation matrix for the biological network (WT case) as well as the hypothetical networks (see ‘Methods’). Intriguingly, the difference between the matrices was lower for the biological networks as compared to that of the hypothetical networks. Also, the hypothetical networks that have a relatively higher team strength showed a lower difference between influence and correlation matrices, with an overall negative correlation between the difference and the team strength (Figure 4F, Figure 4—figure supplement 2E). These results suggest a possible causative relationship between the existence of the team structure of nodes and the emergent dynamic phenotypes of a network. Furthermore, for all networks taken together (WT and random), the correlation matrix and influence matrix differ by a maximum of 2–3%, suggesting that the influence matrix can be a good predictor of the correlation matrix, irrespective of the strength of teams observed in a given network.
 
-## Strong teams of nodes stabilize terminal phenotypes in WT EMP networks
+### Strong teams of nodes stabilize terminal phenotypes in WT EMP networks
 
 Our results demonstrate that the WT EMP networks show higher maximum global (measured by SSF) and local (measured by coherence) stability than most of their randomized counterparts (Figure 2H), quantities that correspond to the terminal phenotypes in WT EMP networks. However, the stability of phenotypes could not robustly be explained just by considering either the interaction matrix alone (frustration, Figure 3—figure supplement 1B and C) or the influence matrix alone (state strength, Figure 4—figure supplement 1) for random networks. Additionally, random networks showed weaker teams than the WT EMP networks. Together, these observations strengthen our hypothesis that teams of nodes lead to the stable terminal phenotypes observed in WT EMP networks. To quantify the relationship between team strength and phenotypic stability, we obtained the correlation of the stability metrics (SSF, coherence, and frustration) against the team strength of a given network (Figure 5A). Across all five EMP networks and their corresponding random counterparts, Ts correlate consistently positively with maximum coherence and negatively correlated with minimum frustration, suggesting that an increase in team strength increases the stability of the most dominant state emergent from the network.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmap depicting the Spearman’s correlation of Ts with stability metrics and frustration metrics for random networks of all sizes (y-axis). Insignificant correlations (p>0.05) are marked by ‘X.’ (B) Violin plots depicting the effect of change in Ts against the maximum stability metrics. (i) Maximum steady-state frequency (SSF), (ii) maximum coherence, and (iii) coherence bimodality coefficient for random networks of size 22N 82E. The p-value for one-way ANOVA is reported. (C) Scatterplot showing the states of top 10 and bottom 10 (based on mean group strength) random networks of size 22N 82E.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Maximum steady-state frequency (SSF), (B) maximum coherence, and (C) coherence bimodality coefficient for random networks of size 22N 82E. The p-value for one-way ANOVA is reported. (D) Scatterplot showing the states of top 10 and bottom 10 (based on mean group strength) random networks of corresponding sizes labeled.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Minimum steady-state frequency (SSF), (B) minimum coherence, and (C) SSF bimodality coefficient. (D–F) Same as (A–C) but for Spearman’s correlation between (D) SSF – frustration, (E) coherence – frustration, and (F) SSF – coherence.
 
 We then generated violin plots between the stability metrics and team strength to understand the effect of teams on phenotypic stability better. We found that networks with high team strength consistently had high values of maximum SSF and maximum coherence. As the team strength decreases, the maximum stability shows a distribution ranging from high values closer to the high team strength networks to a significantly lower value (Figure 5Bi,ii, Figure 5—figure supplement 1A and B). The effect of team strength on the minimum stability metrics, however, was negligible, with no trend to observe in the scatterplots either (Figure 5—figure supplement 2A and B).
 
@@ -76,9 +128,19 @@ To better visualize the effect of bimodality coefficient, we took 10 random netw
 
 Together, these results suggest that as team strength increases the stability of the most dominant states increases, thereby increasing the bimodality in the phenotypic stability landscape. Additionally, teams increase the agreement between the compositions of steady states and the network topology. However, as teams weaken, the trends do not hold in any particular direction. Hence, we can conclude from these results that teams are sufficient to maximize the phenotypic stability and the bimodality of the landscape of a network but might not be necessary.
 
-## Teams’ structure imparts unique transition characteristics to hybrid phenotypes
+### Teams’ structure imparts unique transition characteristics to hybrid phenotypes
 
 Having identified that the presence of ‘teams’ of nodes that cooperate with/activate each other can reinforce a given steady state when a perturbation to one of the node values was made (coherence), we next asked whether the positive reinforcement in a network offered by ‘teams’ can be extended to a scenario when more than one node is perturbed. First, we took a closer look at the coherence metric by analyzing the coherence patterns of the steady states when each node of the network is perturbed one at a time (Figure 6A, Figure 6—figure supplement 1A). As expected, the terminal phenotypes remained unchanged (coherence = 1) when any one core node (e.g., ZEB1, miR200c, miR34a in Figure 6A) was perturbed, but the hybrid phenotypes had a relatively smaller coherence for such cases. While perturbing signal nodes (miR9, miR30c, miR205 in Figure 6A) results in a coherence of 0 for all states, it is because signal nodes do not have any inputs and hence cannot revert upon perturbation. However, the configuration of core nodes does not change in terminal phenotypes in such cases (see Methods 4.7.1). Similarly, output nodes (CDH1, VIM, TCF3, KLF8) are always restored back upon perturbation without any effect on the steady state as they do not influence any other node in the network. Next, we perturbed multiple nodes (randomly chosen) simultaneously and calculated the coherence of the steady states. While the terminal states show resilience up to 25% of nodes being perturbed, the hybrid states lose their identity (i.e., switch to another state) upon relatively minor perturbations (Figure 6B, Figure 6—figure supplement 1B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig6-v2.jpg)
+
+**Figure 6.:** (A) Heatmap depicting the mean coherence of the Boolean states of 22N 82E wild-type (WT) epithelial–mesenchymal plasticity (EMP) network when each node is individually perturbed. (B) Mean coherence of states of 22N 82E EMP network with multiple nodes perturbed at once (Level of perturbation). (C) The extent of perturbation required to bring the coherence of terminal phenotypes (x-axis) and hybrid phenotypes (y-axis) below 0.5. x = y line is shown. (D) (i) Representative mean Hamming distance plot of an epithelial state obtained from 22N 82E WT network. Three levels of perturbation are highlighted based on regions of the sigmoidal plot. (ii) Distribution of the Hamming distance from the starting state in (D) (i) at different levels of perturbation, colored by the phenotype. (E) (i) Representative mean Hamming distance plot comparing the dynamic transition of an epithelial state from WT and that from a random network. (ii) Corresponding distribution of Hamming distances for the random network.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Single-node perturbation coherence heatmaps for wild-type (WT) epithelial–mesenchymal plasticity (EMP) networks. (B) Multinode perturbation coherence heatmaps for WT EMP networks. (C) Half-minimum perturbation for terminal and hybrid states for the random networks. Each dot represents mean half-minimum perturbation for terminal and hybrid states for a network, and the bars represent standard deviation. (D) Influence matrix of the random network with low group strength taken as the representative case for Figure 6E (E) Representative cases of comparison of transition dynamics for (i) mesenchymal and (ii) hybrid steady states between WT and random network. (iii) Representative distribution of hamming distance for perturbation of hybrid phenotype.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig6-figsupp2-v2.jpg)
 
 We quantified this difference in the EMP networks by measuring the extent of perturbation at which the coherence goes below 0.5 (termed as half-minimum perturbation) for the terminal as well as hybrid states (Figure 6C). As expected, the half-minimum value for the terminal states is always higher than the same for the hybrid states (all five EMP networks lie below the x = y diagonal in Figure 6C). Interestingly, the 57N113E network that had a lower team strength among the EMP networks showed slightly higher resilience for hybrid states as compared to the other EMP networks, suggesting that as the strength of teams decreases, the difference between hybrid and terminal states in their stability tends to reduce. This argument is further strengthened by analysis of random networks (with Ts often less than that in WT networks), showing a comparatively higher resilience of hybrid states (as visualized by the distance from the x = y diagonal) (Figure 6—figure supplement 1C). Put together, these results endorse that ‘teams’ of nodes can also play a crucial role in maintaining a terminal phenotype, even when multiple nodes within a network are disrupted. Given the clear difference in the dynamic stability of hybrid and terminal phenotypes, we wanted to understand the biological implications of the dynamic stability characteristics and the presence of ‘teams.
 
@@ -88,13 +150,21 @@ The terminal phenotypes of EMP networks show a sigmoidal transition curve in ter
 
 To better understand the dependence of the transition dynamics on the team strength, we quantified the area under the curve (AUC) for phenotypic distributions for various levels of perturbations (for panels shown in Figure 6Dii,Eii). When starting from an epithelial phenotype, the networks with high team strength show low frequencies of the hybrid states as compared to the networks with low team strength, irrespective of the degree of perturbation made (Figure 7Ai), suggesting that the presence of ‘teams’ does not enhance the frequency of hybrid states. A quantification across the epithelial states for random networks as well revealed a negative correlation of the hybrid AUC with team strength at all levels of perturbation (Figure 7Aii). The correlation is positive with mesenchymal AUC at high perturbation and positive with epithelial AUC at high perturbation as expected since these are the dominant final (terminal) states in each case, respectively. Similar trends were seen for cells starting from mesenchymal phenotypes (Figure 7—figure supplement 1A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig7-v2.jpg)
+
+**Figure 7.:** (A) (i) Scatterplot between mean area under the curve (AUC) of epithelial states and mean AUC of hybrid states when starting from epithelial phenotype. Each dot is a random network, colored by its team strength. (ii) Heatmap depicting the Spearman’s correlation between team strength and AUC for the final phenotype (y-axis) and the regions in the sigmoidal plot (x-axis). (B) Same as (A), but for hybrid as the starting phenotypes. (C) (i) Depiction of cooperativity with a terminal and hybrid state of the wild-type (WT) epithelial–mesenchymal plasticity (EMP) network 22N 82E. (ii) Team strength vs. cooperativity for random and WT networks of size 22N 82E. Each dot represents the mean cooperativity for one network. The bars show standard deviation. (iii) Correlation between team strength and cooperativity for random networks corresponding to WT EMP networks of different sizes.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Same as Figure 7A but for mesenchymal phenotype as the beginning. (B) Heatmaps depicting the correlation between mean group strength and area under the curve (AUC) for combinations of perturbation strengths (x-axis) and final phenotypes (y-axis) for all networks. The starting phenotypes are shown to the right.
+
 The AUC analysis for cases with hybrid states as the initial conditions revealed similarly consistent trends. At low and high levels of perturbation, as the team strength of the network increases, the AUC of epithelial approaches 0.4 and that of hybrid approaches 0.1. At medium levels of perturbation, epithelial AUC nears 0.5, and hybrid AUC nears 0 for the maximum team strength network (Figure 7Bi). Unlike the trajectories seen for terminal phenotypes, because there is no preferred phenotype here in terms of either epithelial or mesenchymal, team strength correlated positively with both epithelial and mesenchymal AUCs and negatively with hybrid AUC (Figure 7Bii). These trends between the AUC and team strength were consistently seen across networks of all sizes (Figure 7—figure supplement 1B). Together, these observations indicate that the presence of two teams – one composed of epithelial master regulators and the other composed of mesenchymal master regulators – may reduce the frequency and stability of hybrid E/M phenotypes.
 
 While the AUC analysis provided a good understanding of the transition properties, the mean Hamming distance plots intuitively demonstrated the difference in dynamic characteristics between the terminal and hybrid phenotypes of WT networks and that of random networks well. Hence, we quantified the sigmoidal nature of these transition curves by fitting them to a simple Hill’s function and calculating the coefficient of cooperativity (n) for each such fit (Figure 7Ci). We then compared the mean cooperativity coefficient for trajectories obtained for terminal phenotypes and hybrid phenotypes of all random and WT networks against the team strength of the networks. The cooperativity coefficient of terminal phenotypes increased with increasing team strength (Figure 7Cii). The correlation of the mean cooperativity coefficient corresponding to terminal phenotypes with that of team strength was consistently positive across networks of different sizes, while no such trend was observed for hybrid phenotypes (Figure 7Ciii). The higher the value of n, the more step-like the corresponding sigmoidal function is. Thus these results endorse that the presence of teams makes the transition dynamics highly nonlinear and confers initial ‘resistance’ to exit a terminal phenotype (lag phase of sigmoidal curves).
 
 Therefore, using the random networks as case studies, we were able to establish that the ‘teams‘’ structure supports the terminal phenotypes dynamically and leads to unique dynamic transition signatures of the terminal and hybrid phenotypes in these different EMP networks.
 
-## Targeted reduction of team strength in a network can reduce stability and robustness of EMP phenotypes
+### Targeted reduction of team strength in a network can reduce stability and robustness of EMP phenotypes
 
 We have established the connection between the ‘teams’’ structure and stability of terminal phenotypes in a correlative manner across multiple EMP networks of varying sizes. To propose a causative connection, we performed in silico edge deletion experiments in the WT EMP networks. In a given network, we ranked different edges in terms of their deletion, being able to maximize a reduction in team strength after deleting that edge. Sequential deletion of edges in this manner was performed to bring down the team strength to lower values (Figure 8Ai). The networks thus obtained saw a reduction in the stability of the terminal phenotypes, as measured by minimum frustration (Figure 8Aii), maximum coherence (Figure 8Aiii), and the frequency of terminal phenotypes (Figure 8Aiv). The dependence of the stability of terminal phenotypes on team strength is especially prominent in the areas corresponding to the initial linear regime (number of edges deleted <5 in Figure 8Ai), where the team strength falls sharply. The estimated cooperativity coefficient (n in Hills function) of the transition dynamics of the terminal and hybrid phenotypes also showed expected trends: the higher the team strength, the higher the cooperativity (i.e., the more sigmoidal the curve) (Figure 8B). A summary of the correlations obtained between Ts and various metrics is given as a heatmap in Figure 8C. We see a positive correlation between Ts and measures of stability of terminal phenotypes (cooperativity, terminal state frequency). Maximum coherence and minimum frustration showed consistent trends (positive and negative correlation with Ts, respectively) in four and three out of five networks, respectively. While the inconsistency for the 57N 113E network could be due to the low team strength of the network (Figure 4—figure supplement 2B), that in the 26N 100E network could possibly be due to the high frustration in the network (Figure 3—figure supplement 1D). These results suggest that as long as the structure of ‘teams’ is maintained, terminal phenotypes remain dominantly stable, and their stability can be predicted by the strength of ‘teams,’ which can be calculated from the influence matrix alone, without performing any dynamic simulations.
 
@@ -102,9 +172,17 @@ We have established the connection between the ‘teams’’ structure and stab
 
 **Figure 8.:** (A) (i) Lineplot to demonstrate the reduction of team strength with each edge perturbed. Change in (ii) minimum frustration, (iii) maximum coherence, and (iv) terminal state frequency with increase in team strength. (B) Mean cooperativity for the perturbed networks against the team strength. (C) Correlation between team strength and stability metrics for the perturbed networks (edge deleted one at a time sequentially as shown for 18N 33E network in panel A) obtained from all five epithelial–mesenchymal plasticity (EMP) networks.
 
-## Teams stabilize terminal phenotypes in SCLC and melanoma networks as well
+### Teams stabilize terminal phenotypes in SCLC and melanoma networks as well
 
 We next asked whether teams can be seen in other cell-fate decision networks. As mentioned earlier, we had seen such teams in the SCLC network (Chauhan et al., 2021). Similarly, teams of nodes have been seen in a regulatory network underlying melanoma that has been shown to be capable of driving phenotypic heterogeneity in melanoma (Figure 9A, Pillai and Jolly, 2021). We wanted to check whether the effect of teams on the stability of phenotypes is extendable beyond EMP. First, we looked at the phenotypes emergent from SCLC and melanoma networks and found that in SCLC there are two classes of states, the terminal states with high stability and hybrid states with low stability. Interestingly, the melanoma network only resulted in terminal states (Figure 9—figure supplement 1A and B). Similar to EMP networks, we generated random networks from the SCLC and melanoma networks. The team strength of the WT networks, while a lower value as compared to that of WT EMP networks, was higher than most of the corresponding random networks (Figure 9B). Furthermore, high team strength networks showed high maximum stability of the networks (Figure 9C). Furthermore, we studied an EMP network obtained by combining the five EMP networks analyzed here and another related EMP network (8N 17E, Hong et al., 2015). We were able to clearly identify teams in this combined network (Figure 9—figure supplement 1C), and the influence matrix was very similar to the correlation matrix (Figure 9—figure supplement 1D). Again, the terminal phenotypes (characterized based on the team structure) had high SSF (Figure 9—figure supplement 1E). Together, these observations imply that the role of teams of nodes in determining the stability landscape can be an extendable phenomenon to contexts other than EMP. Specifically, strong teams improve the stability of terminal phenotypes, leading to a strongly bimodal phenotypic stability landscape (Figure 9D).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig9-v2.jpg)
+
+**Figure 9.:** (A) Influence matrices of (i) melanoma (17N 64E) and (ii) SCLC (33N 357E) networks, depicting the two team structure observed. (B) Comparison of team strength distributions obtained for random networks corresponding to (i) melanoma and (ii) SCLC, with the wild-type (WT) melanoma and SCLC team strengths labeled by red vertical line. (C) Scatterplots depicting the maximum coherence against the team strength of the random networks corresponding to (i) melanoma and (ii) SCLC. Spearman’s correlation coefficient reported. *p<0.05. (D) Schematic showing the effect of team structure on the phenotypic stability landscape emergent from the network topology.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/76535/elife-76535-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A, B) Heatmaps showing the steady-state composition and the corresponding steady-state frequency (SSF) of (A) small cell lung cancer (SCLC) and (B) melanoma Gene Regulatory Netowrks. Each row represents a state and each column a node. The height of each row represents the SSF of that state. (C) Influence matrix of the combined epithelial–mesenchymal plasticity (EMP) network. (D) Correlation matrix of the combined EMP network obtained from Boolean simulations. (E) Same as (A, B), but for the combined EMP network.
 
 ## Discussion
 
@@ -130,110 +208,172 @@ Overall, our study highlights that despite their apparent complexity, design pri
 
 ## Methods
 
-## Notations
+### Notations
 
 The following notations are followed throughout the article unless mentioned otherwise:
 
-## Figure 1
+### Figure 1
 
-## Network visualization
+#### Network visualization
 
 Cytoscape 3.9.0 (Shannon et al., 2003) was used to visualize the networks studied. Edges were colored based on the sign (inhibiting and activating), and nodes were colored based on their nature (epithelial, mesenchymal, and peripheral).
 
-## Boolean simulations
+#### Boolean simulations
 
-Boolean modeling is a logic-based, simple and discrete system for capturing the dynamics of biological networks. The framework describes each node of the network as a binary variable (–1 or 1) by considering a threshold value or quantity of the molecule that can elicit the necessary downstream function. In the framework used in this study (Font-Clos et al., 2018), a state of a network is defined by a binary string of variables si, which gives information about which node is active/ON (si=1) or inactive/OFF (si=-1). The interactions between the nodes are represented using the nonsymmetric adjacency matrix A⁢d⁢j, where each element of the matrix, A⁢d⁢ji⁢j, is the interaction strength of the edge from ith to jth node of the network. All activations are given a weight of 1, and all inhibitions are given weight of –1. The simulations are conducted asynchronously (one randomly chosen node is updated at each iteration). The state of the system is updated using a majority rule given below:(3)si(t+1)={+1,∑jAdjijsj(t)>0−1,∑jAdjijsj(t)<0si(t),∑jAdjijsj(t)=0
+Boolean modeling is a logic-based, simple and discrete system for capturing the dynamics of biological networks. The framework describes each node of the network as a binary variable (–1 or 1) by considering a threshold value or quantity of the molecule that can elicit the necessary downstream function. In the framework used in this study (Font-Clos et al., 2018), a state of a network is defined by a binary string of variables si, which gives information about which node is active/ON $(s_{i}=1)$ or inactive/OFF $(s_{i}=-1)$. The interactions between the nodes are represented using the nonsymmetric adjacency matrix $A⁢d⁢j$, where each element of the matrix, $A⁢d⁢j_{i⁢j}$, is the interaction strength of the edge from ith to jth node of the network. All activations are given a weight of 1, and all inhibitions are given weight of –1. The simulations are conducted asynchronously (one randomly chosen node is updated at each iteration). The state of the system is updated using a majority rule given below:
 
-Simulations are carried out until either of the two conditions is reached: (1) t > 1000 or (2)si(t+1)=si(t)∀i∈{1,...,N}. The latter condition implies that a steady state has been reached. S⁢(t) is identified as the steady state.
+$$
+s_{i}(t+1)={+1,\sumjAdj_{ij}s_{j}(t)>0−1,\sumjAdj_{ij}s_{j}(t)<0s_{i}(t),\sumjAdj_{ij}s_{j}(t)=0
+$$
 
-## Steady-state frequency (SSF)
+Simulations are carried out until either of the two conditions is reached: (1) t > 1000 or (2)$s_{i}(t+1)=s_{i}(t)∀i\in{1,...,N}$. The latter condition implies that a steady state has been reached. $S⁢(t)$ is identified as the steady state.
+
+#### Steady-state frequency (SSF)
 
 To obtain SSF, we simulate the network with multiple randomly chosen initial states and count the fraction of such simulations that end in a given steady state.
 
-## Random network generation
+#### Random network generation
 
 The generation of random networks is an important technique that enables us to analyze the similarities and/or differences between biological networks and networks that do not occur in nature (essentially ‘random’). To create random networks, we start with a biological network, select a pair of edges randomly in the network, and swap the nature of the edges (see Figure 1B). This exercise was repeated k times to create random networks. We found that larger values of k lead to the random networks having very low team strength. Hence, to capture networks with moderate levels of team strengths as well, we chose k = 10. This scheme conserves node degree, activatory and inhibitory contacts, and the number of nodes activated and inhibited.
 
-## Figure 2
+### Figure 2
 
-## Coherence
+#### Coherence
 
-Coherence is calculated by perturbing the node expression levels in a state. ‘Perturbation’ in the context of Boolean networks corresponds to essentially flipping or reversing a state. For instance, if the level of Si is ON (1), then perturbing it entails switching it to OFF (–1). The general form is given below:(4)sipert={1,si=−1−1,si=1
+Coherence is calculated by perturbing the node expression levels in a state. ‘Perturbation’ in the context of Boolean networks corresponds to essentially flipping or reversing a state. For instance, if the level of $S_{i}$ is ON (1), then perturbing it entails switching it to OFF (–1). The general form is given below:
 
-where nip⁢e⁢r⁢t is the perturbed node. Node perturbations were done for every node in every steady state one at a time. For a steady state S, coherence is defined as the probability that simulation followed by a single node perturbation of that state would result in the original steady state. To calculate the coherence of a steady state, we perturb the state at one node at a time to simulate the network with the perturbed state as the initial condition. For each simulation, we assign a score of 1 if the original state is achieved, and 0 if it is not. We repeat these simulations for each node in the network for K = 100 iterations and define coherence as the average of the assigned scores over all simulations as follows:(5)CoherenceS=∑k=1100∑i=1N{1,Spert=S0,Spert≠SN∗K
+$$
+s_{i}^{pert}={1,s_{i}=−1−1,s_{i}=1
+$$
 
-where Sip⁢e⁢r⁢t is the steady state obtained after simulation of the perturbed steady state, and N is the number of nodes in the network.
+where $n_{i}^{p⁢e⁢r⁢t}$ is the perturbed node. Node perturbations were done for every node in every steady state one at a time. For a steady state S, coherence is defined as the probability that simulation followed by a single node perturbation of that state would result in the original steady state. To calculate the coherence of a steady state, we perturb the state at one node at a time to simulate the network with the perturbed state as the initial condition. For each simulation, we assign a score of 1 if the original state is achieved, and 0 if it is not. We repeat these simulations for each node in the network for K = 100 iterations and define coherence as the average of the assigned scores over all simulations as follows:
 
-## Bimodality coefficient
+$$
+Coherence_{S}=\frac{\sumk=1100\sumi=1N{1,S^{pert}=S0,S^{pert}\neqS}{N∗K}
+$$
 
-Bimodality coefficients have been calculated using the following formula (Knapp, 2007):(6)BC=m32+1m4+3(n−1)2(n−2)(n−3)
+where $S_{i}^{p⁢e⁢r⁢t}$ is the steady state obtained after simulation of the perturbed steady state, and N is the number of nodes in the network.
 
-where n is the number of observations, m3 is the skewness, and m4 is the kurtosis of the distribution of the metric of interest.
+#### Bimodality coefficient
 
-## Figure 3
+Bimodality coefficients have been calculated using the following formula (Knapp, 2007):
 
-## Frustration
+$$
+BC=\frac{m_{3}^{2}+1}{m_{4}+3\frac{(n−1)^{2}}{(n−2)(n−3)}}
+$$
 
-Frustration is a measure of the agreement between the network topology and a given steady state. For a given network and state, the frustration is calculated as follows:(7)∑i,j=1N{1,Adjijsisj<00,otherwiseE
+where $n$ is the number of observations, m3 is the skewness, and m4 is the kurtosis of the distribution of the metric of interest.
 
-where E is the number of edges in the network.
+### Figure 3
 
-## Figure 4
+#### Frustration
 
-## Influence matrix
+Frustration is a measure of the agreement between the network topology and a given steady state. For a given network and state, the frustration is calculated as follows:
 
-The influence matrix, as the name suggests, is a matrix where each element at (i,j) position records the influence of ith node on the jth node in the network. This influence is mediated through one or more serially connected edges that form a path from the ith node to the jth node in the network. Path length (l) is defined as the length of such paths being considered for the calculation of influence. As a result, for a path length of 1, the influence matrix is equivalent to the adjacency matrix A⁢d⁢j. For a path length of l, the influence is calculated as A⁢d⁢jl. Similarly, the influence is calculated for all path lengths up to a maximum path length of lm⁢a⁢x=10 edges. Finally, the influence matrix for a path length of lm⁢a⁢x is calculated by the following equation (Chauhan et al., 2021):(8)Inflmax=∑l=1lmaxAdjlAdjlmaxllmax
+$$
+\frac{\sumi,j=1N{1,Adj_{ij}s_{i}s_{j}<00,otherwise}{E}
+$$
 
-where A⁢d⁢jm⁢a⁢x is derived by setting all nonzero entries of the adjacency matrix to 1, and is thus utilized as the normalizing factor. The division A⁢d⁢jlA⁢d⁢jm⁢a⁢xl is element-wise:(9)AdjlAdjmaxl(i,j)={0,Adjmaxl(i,j)=0Adjl(i,j)Adjmaxl(i,j),otherwise
+where $E$ is the number of edges in the network.
 
-The division with lm⁢a⁢x ensures that the elements of I⁢n⁢flm⁢a⁢x are constrained between –1 and 1.
+### Figure 4
 
-## Identifying teams and calculating team strength
+#### Influence matrix
 
-In a given network, a set of ‘core’ nodes T are said to be a team ifInflij>0∀i,j∈T
+The influence matrix, as the name suggests, is a matrix where each element at (i,j) position records the influence of ith node on the jth node in the network. This influence is mediated through one or more serially connected edges that form a path from the ith node to the jth node in the network. Path length ($l$) is defined as the length of such paths being considered for the calculation of influence. As a result, for a path length of 1, the influence matrix is equivalent to the adjacency matrix $A⁢d⁢j$. For a path length of $l$, the influence is calculated as $A⁢d⁢j^{l}$. Similarly, the influence is calculated for all path lengths up to a maximum path length of $l_{m⁢a⁢x}=10$ edges. Finally, the influence matrix for a path length of $l_{m}⁢a⁢x$ is calculated by the following equation (Chauhan et al., 2021):
+
+$$
+Infl_{max}=\frac{\suml=1l_{max}\frac{Adj^{l}}{Adj_{l_{max}}^{l}}}{l_{max}}
+$$
+
+where $A⁢d⁢j_{m⁢a⁢x}$ is derived by setting all nonzero entries of the adjacency matrix to 1, and is thus utilized as the normalizing factor. The division $\frac{A⁢d⁢j^{l}}{A⁢d⁢j_{m⁢a⁢x}^{l}}$ is element-wise:
+
+$$
+\frac{Adj^{l}}{Adj_{max}^{l}}(i,j)={0,Adj_{max}^{l}(i,j)=0\frac{Adj^{l}(i,j)}{Adj_{max}^{l}(i,j)},otherwise
+$$
+
+The division with $l_{m⁢a⁢x}$ ensures that the elements of $I⁢n⁢f_{l_{m⁢a⁢x}}$ are constrained between –1 and 1.
+
+#### Identifying teams and calculating team strength
+
+In a given network, a set of ‘core’ nodes $T$ are said to be a team if
+
+$$
+Infl_{ij}>0∀i,j\inT
+$$
 
 Additionally, we find that nodes belonging to different teams influence each other negatively. The algorithm used to identify such teams in the influence matrix is as follows:
 
-Once the two teams are obtained, the team strength of a network is calculated as follows:(10)Tk⁢l=∑i∈Tk,j∈TlI⁢n⁢f⁢li⁢jnk⁢l,k,l∈{1,2}(11)TS=∑k,l∈{1,2}|Tk⁢l|4
+Once the two teams are obtained, the team strength of a network is calculated as follows:
 
-where T1 and T2 are the two teams of nodes identified using hierarchical clustering, and nk⁢l is the product of the number of nodes in Tk and Tl. To classify the teams as epithelial or mesenchymal, we counted the number of microRNAs present in each team. Because the microRNAs in the five EMP networks considered here are exclusively epithelial, we labeled the team that has the highest number of microRNAs as the epithelial team.
+$$
+T_{k⁢l}=\frac{\sum_{i\inT_{k},j\inT_{l}}I⁢n⁢f⁢l_{i⁢j}}{n_{k⁢l}},k,l\in{1,2}
+$$
 
-## Distance between influence and interaction matrices
 
-The distance between influence and correlation matrices was calculated using the following formula:(12)d=∑i=1N∑j=1N|Corij−Inflij|2N2
 
-where C⁢o⁢r is the correlation matrix obtained over Boolean simulations.
+$$
+T_{S}=\frac{\sum_{k,l\in{1,2}}|T_{k⁢l}|}{4}
+$$
 
-## State strength
+where T1 and T2 are the two teams of nodes identified using hierarchical clustering, and $n_{k}⁢l$ is the product of the number of nodes in $T_{k}$ and $T_{l}$. To classify the teams as epithelial or mesenchymal, we counted the number of microRNAs present in each team. Because the microRNAs in the five EMP networks considered here are exclusively epithelial, we labeled the team that has the highest number of microRNAs as the epithelial team.
 
-The strength of a state S is similar to frustration in that it calculates the support of the influence matrix to the state and is calculated using the following formula:(13)StrengthS=∑i,j=1NInflijsisj,si,sj∈{0,1}
+#### Distance between influence and interaction matrices
 
-## Figure 6
+The distance between influence and correlation matrices was calculated using the following formula:
 
-## Single-node perturbation
+$$
+d=\sumi=1N\sumj=1N\frac{|Cor_{ij}−Infl_{ij}|}{2N^{2}}
+$$
 
-For single-node coherence (Figure 6A), we perturb the steady states one node at a time, resulting in the following calculation:(14)CoherenceSi=∑k=1100{1,Spert=S0,Spert≠SK
+where $C⁢o⁢r$ is the correlation matrix obtained over Boolean simulations.
 
-where C⁢o⁢h⁢e⁢r⁢e⁢n⁢c⁢eSi is the coherence of steady state S when node i is perturbed. We further calculate the coherence specific to a set of core nodes upon perturbing signal nodes (Figure 6—figure supplement 2).(15)CoherenceSi=∑k=1100{1,SCorepert=SCore0,SCorepert≠SCoreK,i∈Sig
+#### State strength
 
-where, SC⁢o⁢r⁢e is the configuration of core nodes in the state S.
+The strength of a state S is similar to frustration in that it calculates the support of the influence matrix to the state and is calculated using the following formula:
 
-## Multinode perturbation
+$$
+Strength_{S}=\sumi,j=1NInfl_{ij}s_{i}s_{j},s_{i},s_{j}\in{0,1}
+$$
 
-We performed experiments to characterize the stability of terminal and hybrid steady states over ‘n’ node perturbations, ‘n’ ranging from 1 to N (total number of nodes in a given network). Essentially, this means perturbing ‘n’ nodes at a time for each steady state, instead of perturbing just one node as seen for coherence calculations. For simplicity, the number of such perturbations for a particular value of ‘n’ was decided by the following rule:(16)Numberofperturbations=min(100,(Nn))
+### Figure 6
+
+#### Single-node perturbation
+
+For single-node coherence (Figure 6A), we perturb the steady states one node at a time, resulting in the following calculation:
+
+$$
+Coherence_{S_{i}}=\frac{\sumk=1100{1,S^{pert}=S0,S^{pert}\neqS}{K}
+$$
+
+where $C⁢o⁢h⁢e⁢r⁢e⁢n⁢c⁢e_{S_{i}}$ is the coherence of steady state $S$ when node $i$ is perturbed. We further calculate the coherence specific to a set of core nodes upon perturbing signal nodes (Figure 6—figure supplement 2).
+
+$$
+Coherence_{S_{i}}=\frac{\sumk=1100{1,S_{Core}^{pert}=S_{Core}0,S_{Core}^{pert}\neqS_{Core}}{K},i\inSig
+$$
+
+where, $S_{C⁢o⁢r⁢e}$ is the configuration of core nodes in the state $S$.
+
+#### Multinode perturbation
+
+We performed experiments to characterize the stability of terminal and hybrid steady states over ‘n’ node perturbations, ‘n’ ranging from 1 to N (total number of nodes in a given network). Essentially, this means perturbing ‘n’ nodes at a time for each steady state, instead of perturbing just one node as seen for coherence calculations. For simplicity, the number of such perturbations for a particular value of ‘n’ was decided by the following rule:
+
+$$
+Numberofperturbations=min(100,(\frac{N}{n}))
+$$
 
 The perturbed steady states were then simulated using Boolean formalism for 1000 time steps, with 10 repeats to accommodate the fact that asynchronous Boolean simulations can allow a single initial condition to converge to multiple steady states. The final state obtained is compared with the original steady state by employing coherence and Hamming distance measures. The latter entails comparing these two states by considering the number of bit positions in which the two bits are different. The EMT score is also calculated for the final state obtained. We repeat these simulations for each ‘n’ number of perturbations in the network for K = 100 iterations and take the average of the final coherence, Hamming, and EMT score values for each original steady state.
 
-## Statistical tests
+### Statistical tests
 
-## Percentile calculation
+#### Percentile calculation
 
-We calculate the percentile of the WT networks in the corresponding random network distribution for many metrics in this study. For a list of numbers v that holds the measures of a given metric for random networks, and W being the corresponding measure for the WT network, we calculate the fraction of members of v less than w and multiply the fraction with 100 to get the percentile.
+We calculate the percentile of the WT networks in the corresponding random network distribution for many metrics in this study. For a list of numbers $v$ that holds the measures of a given metric for random networks, and $W$ being the corresponding measure for the WT network, we calculate the fraction of members of $v$ less than $w$ and multiply the fraction with 100 to get the percentile.
 
-## Correlations
+#### Correlations
 
 All correlation analyses were done using Spearman’s correlation method using ‘cor.test’ function in R 4.1.2. The corresponding statistical significance values are represented by ‘*’s, to be translated as *p<0.05.
 
-## Data and code availability
+### Data and code availability
 
 The codes used for generating the data (random networks and simulation), analyzing the data, and generating figures are made available as an R package at https://github.com/askhari139/Teams (Hari et al., 2022 copy archived at swh:1:rev:fdf4f636f6762e6d2193d1bc71944d20a087bf3a). A detailed description of the codes has been included for ease of reproducibility.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.05005.001 MicroRNA targets are often recognized through pairing between the miRNA seed region and complementary sites within target mRNAs, but not all of these canonical sites are equally effective, and both computational and in vivo UV-crosslinking approaches suggest that many mRNAs are targeted through non-canonical interactions. Here, we show that recently reported non-canonical sites do not mediate repression despite binding the miRNA, which indicates that the vast majority of functional sites are canonical. Accordingly, we developed an improved quantitative model of canonical targeting, using a compendium of experimental datasets that we pre-processed to minimize confounding biases. This model, which considers site type and another 14 features to predict the most effectively targeted mRNAs, performed significantly better than existing models and was as informative as the best high-throughput in vivo crosslinking approaches. It drives the latest version of TargetScan (v7.0; targetscan.org), thereby providing a valuable resource for placing miRNAs into gene-regulatory networks. DOI: http://dx.doi.org/10.7554/eLife.05005.001
+MicroRNA targets are often recognized through pairing between the miRNA seed region and complementary sites within target mRNAs, but not all of these canonical sites are equally effective, and both computational and in vivo UV-crosslinking approaches suggest that many mRNAs are targeted through non-canonical interactions. Here, we show that recently reported non-canonical sites do not mediate repression despite binding the miRNA, which indicates that the vast majority of functional sites are canonical. Accordingly, we developed an improved quantitative model of canonical targeting, using a compendium of experimental datasets that we pre-processed to minimize confounding biases. This model, which considers site type and another 14 features to predict the most effectively targeted mRNAs, performed significantly better than existing models and was as informative as the best high-throughput in vivo crosslinking approaches. It drives the latest version of TargetScan (v7.0; targetscan.org), thereby providing a valuable resource for placing miRNAs into gene-regulatory networks.
 
 ## Introduction
 
@@ -37,35 +37,35 @@ Here, we examined the function of non-canonical binding sites identified in rece
 
 ## Results
 
-## Inefficacy of recently reported non-canonical binding sites
+### Inefficacy of recently reported non-canonical binding sites
 
 Several high-throughput crosslinking-immunoprecipitation (CLIP) approaches have been applied to identify sites that bind Argonaute in vivo (Chi et al., 2009; Hafner et al., 2010; Helwak et al., 2013; Grosswendt et al., 2014). These experiments all observe significant enrichment for cognate seed-matched sites in the vicinity of the crosslinks, which validates their ability to detect authentic sites. Despite this enrichment, some crosslinks do not correspond to canonical sites to the relevant miRNAs, raising the prospect that these results might reveal novel types of non-canonical binding that could mediate repression. Indeed, five studies have reported crosslinking to non-canonical binding sites proposed to mediate repression (Chi et al., 2012; Loeb et al., 2012; Helwak et al., 2013; Khorshid et al., 2013; Grosswendt et al., 2014). In addition, another biochemical study has reported the identification of non-canonical sites without using any crosslinking (Tan et al., 2014). Reasoning that these experimental datasets might provide a resource for defining of novel types of sites to be used in target prediction, we re-examined the functionality of these sites in mediating target mRNA repression.
 
-We first examined the efficacy of ‘nucleation-bulge’ sites (
+We first examined the efficacy of ‘nucleation-bulge’ sites (Chi et al., 2012), which were identified from analysis of differential CLIP (dCLIP) results reporting the clusters that appear in the presence of miR-124 (Chi et al., 2009). Nucleation-bulge sites consist of 8 nt motifs paired to positions 2–8 of their cognate miRNA seed, with the nucleotide opposing position 6 protruding as a bulge but sharing Watson-Crick complementarity to miRNA position 6. Meta-analyses of miRNA and small-RNA transfection datasets revealed significant repression of mRNAs with the canonical site types but found no evidence for repression of mRNAs that contain nucleation-bulge sites but lack perfectly paired seed-matched sites in their 3′ UTRs (Figure 1—figure supplement 1A,B). Reasoning that the nucleation-bulge site might be only marginally effective, we examined the early zebrafish embryo with and without Dicer, analyzing the targeting by miR-430, the most highly expressed miRNA of the early embryo. Even in this system, one of the most sensitive systems for detecting the effects of targeting (where a robust repression is observed for mRNAs with only a single 6mer or offset-6mer sites to miR-430), we observed no evidence for repression of mRNAs with nucleation-bulge sites to miR-430 (Figure 1A, Figure 1—figure supplement 1C, and Figure 1—figure supplement 4A). Because the nucleation-bulge sites were originally identified and characterized as sites to miR-124, we next tried focusing on only miR-124–mediated repression. However, even in this more limited context, the mRNAs with nucleation-bulge sites were no more repressed than mRNAs without sites (Figure 1—figure supplement 1D–F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-v1.jpg)
 
-**Figure 1.:** (A) Response of mRNAs to the loss of miRNAs, comparing mRNAs that contain either a canonical or nucleation-bulge site to miR-430 to those that do not contain a miR-430 site. Plotted are cumulative distributions of mRNA fold changes observed when comparing embryos that lack miRNAs (MZDicer) to those that have miRNAs (WT), focusing on mRNAs possessing a single site of the indicated type in their 3′ UTR. Similarity of site-containing distributions to the no-site distribution was tested (one-sided Kolmogorov–Smirnov [K–S] test, P values); the number of mRNAs analyzed in each category is listed in parentheses. See also Figure 1—figure supplement 1C and Figure 1—figure supplement 4A. (B and C) Response of mRNAs to the loss of miR-155, focusing on mRNAs that contain either a single canonical or ≥1 CLIP-supported non-canonical site to miR-155. These panels are as in (A), but compare fold changes for mRNAs with the indicated site type following genetic ablation of mir-155 in either T cells (B) or Th1 cells (C). See also Figure 1—figure supplement 2. (D and E) Response of mRNAs to the knockdown of miR-92a, focusing on mRNAs that contain either a single canonical or ≥1 CLASH-identified non-canonical site to miR-92a. These panels are as in (A), except CLASH-supported non-canonical sites were the same as those defined previously (Helwak et al., 2013) and thus were permitted to reside in any region of the mature mRNA, and these panels compare fold changes for mRNAs with the indicated site type following either knockdown of miR-92a (D) or combined knockdown of miR-92a and 24 other miRNAs (E) in HEK293 cells. See also Figure 1—figure supplement 3A,B. (F) As in (D), but focusing on mRNAs that contain ≥1 chimera-identified site. See also Figure 1—figure supplement 3C–E and Figure 1—figure supplement 4B. (G) Response of mRNAs to the transfection of 16 miRNAs, focusing on mRNAs that contain either a canonical or MIRZA-predicted non-canonical site. This panel is as in (A), but compares the fold changes for mRNAs with the indicated site type after introducing miRNAs, aggregating results from 16 individual transfection datasets. Fold changes are plotted for the top 100 non-canonical predictions for each of 16 miRNAs compiled either before (MIRZA, top 100) or after (MIRZA, no 6mers) removing mRNAs containing 6mer or offset-6mer 3′-UTR sites. (H) Response of mRNAs to a transfection of miR-522, focusing on mRNAs that contain either a single canonical or ≥1 IMPACT-seq–supported non-canonical site to miR-522. These panels are as in (A), except IMPACT-seq–supported non-canonical sites were the same as those defined previously (Tan et al., 2014) and thus were permitted in any region of the mature mRNA. (I) Response of ribosomes to the loss of miR-155, focusing on mRNAs that contain either a single canonical or ≥1 CLIP-supported non-canonical site to miR-155. This panel is as in (B and C) but compares the response of mRNAs using ribosome-footprint profiling (Eichhorn et al., 2014) after genetic ablation of mir-155 in B cells. Ribosome-footprint profiling captures changes in both mRNA stability and translational efficiency through the high-throughput sequencing of ribosome-protected mRNA fragments (RPFs).DOI: http://dx.doi.org/10.7554/eLife.05005.003
+**Figure 1.:** (A) Response of mRNAs to the loss of miRNAs, comparing mRNAs that contain either a canonical or nucleation-bulge site to miR-430 to those that do not contain a miR-430 site. Plotted are cumulative distributions of mRNA fold changes observed when comparing embryos that lack miRNAs (MZDicer) to those that have miRNAs (WT), focusing on mRNAs possessing a single site of the indicated type in their 3′ UTR. Similarity of site-containing distributions to the no-site distribution was tested (one-sided Kolmogorov–Smirnov [K–S] test, P values); the number of mRNAs analyzed in each category is listed in parentheses. See also Figure 1—figure supplement 1C and Figure 1—figure supplement 4A. (B and C) Response of mRNAs to the loss of miR-155, focusing on mRNAs that contain either a single canonical or ≥1 CLIP-supported non-canonical site to miR-155. These panels are as in (A), but compare fold changes for mRNAs with the indicated site type following genetic ablation of mir-155 in either T cells (B) or Th1 cells (C). See also Figure 1—figure supplement 2. (D and E) Response of mRNAs to the knockdown of miR-92a, focusing on mRNAs that contain either a single canonical or ≥1 CLASH-identified non-canonical site to miR-92a. These panels are as in (A), except CLASH-supported non-canonical sites were the same as those defined previously (Helwak et al., 2013) and thus were permitted to reside in any region of the mature mRNA, and these panels compare fold changes for mRNAs with the indicated site type following either knockdown of miR-92a (D) or combined knockdown of miR-92a and 24 other miRNAs (E) in HEK293 cells. See also Figure 1—figure supplement 3A,B. (F) As in (D), but focusing on mRNAs that contain ≥1 chimera-identified site. See also Figure 1—figure supplement 3C–E and Figure 1—figure supplement 4B. (G) Response of mRNAs to the transfection of 16 miRNAs, focusing on mRNAs that contain either a canonical or MIRZA-predicted non-canonical site. This panel is as in (A), but compares the fold changes for mRNAs with the indicated site type after introducing miRNAs, aggregating results from 16 individual transfection datasets. Fold changes are plotted for the top 100 non-canonical predictions for each of 16 miRNAs compiled either before (MIRZA, top 100) or after (MIRZA, no 6mers) removing mRNAs containing 6mer or offset-6mer 3′-UTR sites. (H) Response of mRNAs to a transfection of miR-522, focusing on mRNAs that contain either a single canonical or ≥1 IMPACT-seq–supported non-canonical site to miR-522. These panels are as in (A), except IMPACT-seq–supported non-canonical sites were the same as those defined previously (Tan et al., 2014) and thus were permitted in any region of the mature mRNA. (I) Response of ribosomes to the loss of miR-155, focusing on mRNAs that contain either a single canonical or ≥1 CLIP-supported non-canonical site to miR-155. This panel is as in (B and C) but compares the response of mRNAs using ribosome-footprint profiling (Eichhorn et al., 2014) after genetic ablation of mir-155 in B cells. Ribosome-footprint profiling captures changes in both mRNA stability and translational efficiency through the high-throughput sequencing of ribosome-protected mRNA fragments (RPFs).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A and B) These panels are as in Figure 1A but compare the response of cognate site-containing mRNAs in a compendium of either 11 miRNA transfection datasets (A) or 74 sRNA transfection datasets (B). The datasets were pre-processed (Figure 3) and are provided in Supplementary file 1. (C) This panel is as in Figure 1A but compares the response of mRNAs in MZDicer embryos in which miR-430 has been injected. (D–F) These panels are as in Figure 1A but compare the response of mRNAs with the indicated miR-124 site types after transfecting miR-124 into either HEK293 cells (D), HeLa cells (E), or Huh7 cells (F).DOI: http://dx.doi.org/10.7554/eLife.05005.004
+**Figure 1—figure supplement 1.:** (A and B) These panels are as in Figure 1A but compare the response of cognate site-containing mRNAs in a compendium of either 11 miRNA transfection datasets (A) or 74 sRNA transfection datasets (B). The datasets were pre-processed (Figure 3) and are provided in Supplementary file 1. (C) This panel is as in Figure 1A but compares the response of mRNAs in MZDicer embryos in which miR-430 has been injected. (D–F) These panels are as in Figure 1A but compare the response of mRNAs with the indicated miR-124 site types after transfecting miR-124 into either HEK293 cells (D), HeLa cells (E), or Huh7 cells (F).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A and B) These panels are as in Figure 1B but compare the response of mRNAs after genetic ablation of miR-155 in Type 2 helper T cells (Th2, A) or B cells (B).DOI: http://dx.doi.org/10.7554/eLife.05005.005
+**Figure 1—figure supplement 2.:** (A and B) These panels are as in Figure 1B but compare the response of mRNAs after genetic ablation of miR-155 in Type 2 helper T cells (Th2, A) or B cells (B).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** (A–D) These panels are as in Figure 1D but compare the response of mRNAs with sites cognate to any one of four miRNA families (miR-15/16, miR-19, miR-17/20/93/106, or miR-25/92), for either all CLASH-supported targets (A), mRNAs with CLASH-supported 3′-UTR sites (B), all chimera-supported targets (C), or mRNAs with chimera-supported 3′-UTR sites (D). These four miRNA families were chosen because their predicted targets were the most responsive to knockdown of the 25 miRNAs. p values reflect the median p value (as evaluated by a K–S test) across 100 trials in which a no-site control cohort with matched 3′-UTR lengths was chosen for each site-containing distribution. Length-matched no-site controls were required for this analysis because longer 3′ UTRs had a greater chance of containing additional sites to at least one of the many miRNAs that were knocked down, and thus had a greater chance of being derepressed as a result of interactions otherwise not considered in the analysis. To populate each control cohort, 500 different no-site mRNAs were chosen, considering the 3′-UTR length of each site-containing mRNA and selecting (without replacement) control mRNAs from among the 10 no-site mRNAs with the most similar 3′-UTR lengths. Shown is the response of a control cohort for mRNAs containing non-canonical sites. mRNAs with 3′ UTRs >2000 nt were excluded from the analysis because so many of the 3′ UTRs >2000 nt had a site to at least one of the four miRNA families, making it impossible to select appropriate length-matched controls. (E) This panel is as in Figure 1F but compares the response of mRNAs with the indicated miR-302 site types after knocking down miR-302/367 in hESCs.DOI: http://dx.doi.org/10.7554/eLife.05005.006
+**Figure 1—figure supplement 3.:** (A–D) These panels are as in Figure 1D but compare the response of mRNAs with sites cognate to any one of four miRNA families (miR-15/16, miR-19, miR-17/20/93/106, or miR-25/92), for either all CLASH-supported targets (A), mRNAs with CLASH-supported 3′-UTR sites (B), all chimera-supported targets (C), or mRNAs with chimera-supported 3′-UTR sites (D). These four miRNA families were chosen because their predicted targets were the most responsive to knockdown of the 25 miRNAs. p values reflect the median p value (as evaluated by a K–S test) across 100 trials in which a no-site control cohort with matched 3′-UTR lengths was chosen for each site-containing distribution. Length-matched no-site controls were required for this analysis because longer 3′ UTRs had a greater chance of containing additional sites to at least one of the many miRNAs that were knocked down, and thus had a greater chance of being derepressed as a result of interactions otherwise not considered in the analysis. To populate each control cohort, 500 different no-site mRNAs were chosen, considering the 3′-UTR length of each site-containing mRNA and selecting (without replacement) control mRNAs from among the 10 no-site mRNAs with the most similar 3′-UTR lengths. Shown is the response of a control cohort for mRNAs containing non-canonical sites. mRNAs with 3′ UTRs >2000 nt were excluded from the analysis because so many of the 3′ UTRs >2000 nt had a site to at least one of the four miRNA families, making it impossible to select appropriate length-matched controls. (E) This panel is as in Figure 1F but compares the response of mRNAs with the indicated miR-302 site types after knocking down miR-302/367 in hESCs.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-figsupp4-v1.jpg)
 
-**Figure 1—figure supplement 4.:** (A) This panel is as in Figure 1A but compares the response of mRNAs using ribosome footprint profiling (Bazzini et al., 2012), which captures changes in both mRNA stability and translational efficiency through the high-throughput sequencing of ribosome-protected mRNA fragments (RPFs). (B) This panel is as in (Figure 1I) but compares protein fold changes for chimera-supported targets, as evaluated by pulsed SILAC (Selbach et al., 2008) after transfection of miR-155 in HeLa cells.DOI: http://dx.doi.org/10.7554/eLife.05005.007
+**Figure 1—figure supplement 4.:** (A) This panel is as in Figure 1A but compares the response of mRNAs using ribosome footprint profiling (Bazzini et al., 2012), which captures changes in both mRNA stability and translational efficiency through the high-throughput sequencing of ribosome-protected mRNA fragments (RPFs). (B) This panel is as in (Figure 1I) but compares protein fold changes for chimera-supported targets, as evaluated by pulsed SILAC (Selbach et al., 2008) after transfection of miR-155 in HeLa cells.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig1-figsupp5-v1.jpg)
 
-**Figure 1—figure supplement 5.:** (A) Conservation of chimera-supported non-canonical sites detected in an analysis modeled after that of Grosswendt et al. (2014) but modified to control for background conservation. Plotted for the indicated miRNAs is the average conservation of chimera-supported non-canonical sites, as measured by branch-length score (BLS), compared to the average conservation of 100 equally sized cohorts of controls; error bars, standard deviation of cohort averages; **, p < 0.01; *, p < 0.05, one-sided Z test. We considered chimera-supported non-canonical sites that mapped within 3′ UTRs and contained a single mismatch to the 6 nt seed of the miRNA. This set of sites mirrored that analyzed previously (Grosswendt et al., 2014), and excluded offset 6mers, which as a class was already known to mediate repression and exhibit preferential conservation (Friedman et al., 2009). Cohorts of control sites were generated such that for each chimera-supported site, each control cohort contained a single example of the identical 6 nt motif that was present in the indicated region (either an AGO cluster or 3′ UTR) but not supported by chimeric reads. To control for local background conservation and thereby avoid treating sites within slowly evolving 3′ UTRs the same as those within rapidly evolving 3′ UTRs, we used the binning procedure developed for calculating PCT scores (Friedman et al., 2009); 3′ UTRs were partitioned into 10 conservation bins (based on the median BLS of the nucleotides of the human sequence), and control sites were randomly selected (with replacement) from 3′ UTRs in the same bin as the actual site. Control AGO clusters were collected as was done previously (Grosswendt et al., 2014), using genome-wide data downloaded from clipz.unibas.ch and derived from multiple AGO PAR-CLIP experiments performed in HEK293 cells (Kishore et al., 2011). The union of AGO clusters for all experiments was computed and filtered for overlap with Ensembl-annotated 3′ UTRs, using the ‘merge’ and ‘intersectBED’ utilities, respectively, found in BEDTools v2.20.1 (parameter ‘-s’) (Quinlan and Hall, 2010). (B) Attribution of the conservation signal to the confounding effects of conserved regions. Considered are 1443 non-canonical chimera-supported sites selected as in (A) but including sites of all miRNA families. For each chimera-supported site, a z score was generated using the distribution of BLSs for 100 control sites chosen as in panel (A) from either AGO clusters or 3′ UTRs, as indicated. Each z score reflected how the conservation of the actual site differed from that of its controls. Compared are cumulative distributions of the z scores for sites of broadly conserved miRNAs and those of less conserved miRNAs, using the previously defined sets of broadly and less conserved miRNAs (Friedman et al., 2009). If the chimera-supported non-canonical sites were preferentially conserved because of their function in mediating repression, then sites of broadly conserved miRNAs would be expected to have a right-shifted distribution compared to sites of less conserved miRNAs. However, no significant difference was discerned between each pair of z-score distributions. The remainder of this legend outlines the rationale for the analysis of this panel. One way to reconcile the conservation signal observed in panel (A) with our conclusion that a large majority if not all of these sites bind miRNA but do not mediate repression is to consider the potentially confounding biochemical properties of conserved regions, which are illustrated by the observation that artificial siRNAs preferentially target sites that are evolutionarily conserved over those that are not (Nielsen et al., 2007). Because these siRNAs are not natural (and do not share a seed with conserved miRNAs) the evolutionary conservation of these preferred sites could not have arisen because they function to mediate sRNA-guided repression. Instead, some other function of these 3′-UTR regions, such as greater accessibility to RNA-binding factors, must explain their preferential conservation and also endow them with properties that favor sRNA binding (Nielsen et al., 2007). To examine whether confounding properties of conserved 3′-UTR regions might similarly explain the elevated conservation of chimera-supported sites, we compared the z scores for sites bound by broadly conserved miRNAs (miRNAs in families conserved beyond mammals, as listed in TargetScan7) with those bound by less conserved miRNAs. MicroRNAs conserved among mammals but not more broadly were grouped with the less conserved miRNAs because canonical 6mer and 7mer sites to these miRNAs have no conservation signal above background, presumably because these miRNAs have not been present long enough for the number of preferentially conserved 6mer and 7mer sites to rise above the background (Friedman et al., 2009); we reasoned that the same would be true of non-canonical sites, to the extent that any are preferentially conserved. If the conservation signal observed in panel (A) were related to miRNA binding, we would have expected a difference between the scores for the sites of broadly and less conserved miRNAs. The lack of a significant difference supports the idea that chimera-supported non-canonical sites tend to be conserved for the same reason that functional sites to artificial siRNAs tend to be conserved.DOI: http://dx.doi.org/10.7554/eLife.05005.008
+**Figure 1—figure supplement 5.:** (A) Conservation of chimera-supported non-canonical sites detected in an analysis modeled after that of Grosswendt et al. (2014) but modified to control for background conservation. Plotted for the indicated miRNAs is the average conservation of chimera-supported non-canonical sites, as measured by branch-length score (BLS), compared to the average conservation of 100 equally sized cohorts of controls; error bars, standard deviation of cohort averages; **, p < 0.01; *, p < 0.05, one-sided Z test. We considered chimera-supported non-canonical sites that mapped within 3′ UTRs and contained a single mismatch to the 6 nt seed of the miRNA. This set of sites mirrored that analyzed previously (Grosswendt et al., 2014), and excluded offset 6mers, which as a class was already known to mediate repression and exhibit preferential conservation (Friedman et al., 2009). Cohorts of control sites were generated such that for each chimera-supported site, each control cohort contained a single example of the identical 6 nt motif that was present in the indicated region (either an AGO cluster or 3′ UTR) but not supported by chimeric reads. To control for local background conservation and thereby avoid treating sites within slowly evolving 3′ UTRs the same as those within rapidly evolving 3′ UTRs, we used the binning procedure developed for calculating PCT scores (Friedman et al., 2009); 3′ UTRs were partitioned into 10 conservation bins (based on the median BLS of the nucleotides of the human sequence), and control sites were randomly selected (with replacement) from 3′ UTRs in the same bin as the actual site. Control AGO clusters were collected as was done previously (Grosswendt et al., 2014), using genome-wide data downloaded from clipz.unibas.ch and derived from multiple AGO PAR-CLIP experiments performed in HEK293 cells (Kishore et al., 2011). The union of AGO clusters for all experiments was computed and filtered for overlap with Ensembl-annotated 3′ UTRs, using the ‘merge’ and ‘intersectBED’ utilities, respectively, found in BEDTools v2.20.1 (parameter ‘-s’) (Quinlan and Hall, 2010). (B) Attribution of the conservation signal to the confounding effects of conserved regions. Considered are 1443 non-canonical chimera-supported sites selected as in (A) but including sites of all miRNA families. For each chimera-supported site, a z score was generated using the distribution of BLSs for 100 control sites chosen as in panel (A) from either AGO clusters or 3′ UTRs, as indicated. Each z score reflected how the conservation of the actual site differed from that of its controls. Compared are cumulative distributions of the z scores for sites of broadly conserved miRNAs and those of less conserved miRNAs, using the previously defined sets of broadly and less conserved miRNAs (Friedman et al., 2009). If the chimera-supported non-canonical sites were preferentially conserved because of their function in mediating repression, then sites of broadly conserved miRNAs would be expected to have a right-shifted distribution compared to sites of less conserved miRNAs. However, no significant difference was discerned between each pair of z-score distributions. The remainder of this legend outlines the rationale for the analysis of this panel. One way to reconcile the conservation signal observed in panel (A) with our conclusion that a large majority if not all of these sites bind miRNA but do not mediate repression is to consider the potentially confounding biochemical properties of conserved regions, which are illustrated by the observation that artificial siRNAs preferentially target sites that are evolutionarily conserved over those that are not (Nielsen et al., 2007). Because these siRNAs are not natural (and do not share a seed with conserved miRNAs) the evolutionary conservation of these preferred sites could not have arisen because they function to mediate sRNA-guided repression. Instead, some other function of these 3′-UTR regions, such as greater accessibility to RNA-binding factors, must explain their preferential conservation and also endow them with properties that favor sRNA binding (Nielsen et al., 2007). To examine whether confounding properties of conserved 3′-UTR regions might similarly explain the elevated conservation of chimera-supported sites, we compared the z scores for sites bound by broadly conserved miRNAs (miRNAs in families conserved beyond mammals, as listed in TargetScan7) with those bound by less conserved miRNAs. MicroRNAs conserved among mammals but not more broadly were grouped with the less conserved miRNAs because canonical 6mer and 7mer sites to these miRNAs have no conservation signal above background, presumably because these miRNAs have not been present long enough for the number of preferentially conserved 6mer and 7mer sites to rise above the background (Friedman et al., 2009); we reasoned that the same would be true of non-canonical sites, to the extent that any are preferentially conserved. If the conservation signal observed in panel (A) were related to miRNA binding, we would have expected a difference between the scores for the sites of broadly and less conserved miRNAs. The lack of a significant difference supports the idea that chimera-supported non-canonical sites tend to be conserved for the same reason that functional sites to artificial siRNAs tend to be conserved.
 
 Another study examined the response of 32 mRNAs that lack canonical miR-155 sites yet crosslink to Argonaute in wild-type T cells but not T cells isolated from miR-155 knockout mice (Loeb et al., 2012). As previously observed, we found that the levels of these mRNAs tended to increase in T cells lacking miR-155 (Figure 1B). However, a closer look at the distribution of mRNA fold changes between wild-type and knockout cells revealed a pattern not normally observed for mRNAs with a functional site type. As illustrated for the mRNAs with canonical sites (including those supported by CLIP), when a miRNA is knocked out, the cumulative distribution of fold changes for mRNAs with functional site types diverges most from the no-site distribution at the top of the curve, which represents the most strongly derepressed mRNAs (Figure 1B). However, for the mRNAs harboring non-canonical miR-155 sites, the distribution of fold changes converged with the no-site distribution at the top of the curve (Figure 1B), raising doubt as to whether non-canonical binding of these mRNAs mediates repression. To investigate these mRNAs further, we examined their response to the miR-155 loss in helper T cell subtypes 1 and 2 (Th1 and Th2, respectively) and B cells, which are other lymphocytic cells in which significant derepression of miR-155 targets is observed in cells lacking miR-155 (Rodriguez et al., 2007; Eichhorn et al., 2014). In contrast to mRNAs with canonical sites, the mRNAs with non-canonical sites showed no evidence of derepression in the knockout cells of each of these cell types, which reinforced the conclusion that non-canonical binding of miR-155 does not lead to repression of these mRNAs (Figure 1C and Figure 1—figure supplement 2).
 
@@ -81,21 +81,21 @@ Collectively, the novel non-canonical sites recently identified in high-throughp
 
 All of our analyses of experimentally identified non-canonical sites examined the ability of the sites to act in mRNAs that had no seed-matched site to the same miRNA in their 3′ UTRs. Any non-canonical site found in a 3′ UTR that also had a seed-matched site to the same miRNA was not considered because any response could be attributed to the canonical site. At first glance, excluding these co-occurring sites might seem to allow for the possibility that the experimentally identified non-canonical sites could contribute to repression when in the same 3′ UTR as a canonical site, even though they are ineffective in 3′ UTRs without canonical sites. However, in mammals, canonical sites to the same miRNA typically act independently (Grimson et al., 2007; Nielsen et al., 2007), and we have no reason to think that non-canonical sites would behave differently. More importantly, although the non-canonical sites examined were in mRNAs that had no seed-matched 3′-UTR site to the same miRNA, most were in mRNAs that had seed-matched 3′-UTR sites to other miRNAs that were highly expressed in the cells. Therefore, even if the non-canonical sites could only function when coupled to a canonical site, we still would have observed a signal for their function in our analyses.
 
-## Confirmation that miRNAs bind to non-canonical sites despite their inefficacy
+### Confirmation that miRNAs bind to non-canonical sites despite their inefficacy
 
-The inefficacy of recently reported non-canonical sites was surprising when considering evidence that the dCLIP clusters without cognate seed matches are nonetheless enriched for imperfect pairing to the miRNA, which would not be expected if those clusters were merely non-specific background (
+The inefficacy of recently reported non-canonical sites was surprising when considering evidence that the dCLIP clusters without cognate seed matches are nonetheless enriched for imperfect pairing to the miRNA, which would not be expected if those clusters were merely non-specific background (Chi et al., 2012; Loeb et al., 2012). Indeed, our analysis of motifs within the dCLIP clusters for miR-124 and miR-155 confirmed that those without a canonical site to the miRNA were enriched for miRNA pairing (Figure 2A). Although one of the motifs identified within CLIP clusters that appeared after transfection of miR-124 into HeLa cells yet lacked a canonical miR-124 site did not match the miRNA (Figure 2—figure supplement 1C), the top motif, as identified by MEME (Bailey and Elkan, 1994), had striking complementarity to the miR-124 seed region (Figure 2A). This human miR-124 non-canonical motif matched the ‘nucleation-bulge’ motif originally found for miR-124 in the mouse brain (Chi et al., 2012). Although the top motif identified within the subset of miR-155 dCLIP clusters that lacked a canonical site to miR-155 was not identified with confidence, it had only a single mismatch to the miR-155 seed, which would not have been expected for a motif identified by chance.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig2-v1.jpg)
 
-**Figure 2.:** (A) Sequence logos corresponding to motifs enriched in dCLIP clusters that either appear following transfection of miR-124 into HeLa cells (Chi et al., 2009) (top) or disappear following knockout of miR-155 in T cells (Loeb et al., 2012) (bottom). Shown to the right of each logo is its E-value among clusters lacking a seed-matched or offset-6mer canonical site and the fraction of these clusters that matched the logo. Shown below each logo are the complementary regions of the cognate miRNA family, highlighting nucleotides 2–8 in capital letters. (B) Position of the top-ranked motif corresponding to non-canonical sites enriched in CLASH (Helwak et al., 2013) (left) or chimera (Grosswendt et al., 2014) (right) data for each human miRNA family supported by at least 50 interactions without a seed-matched or offset-6mer canonical site. For each family the most enriched logo was aligned to the reverse complement of the miRNA. In cases in which a logo mapped to multiple positions along the miRNA, the positions with the best and second best scores are indicated (red and blue, respectively). (C) Sequence logos of motifs enriched in chimera interactions that lack canonical sites. As in (A), but displaying sequence logos identified in the chimera data of panel (B) for a sample of nine human miRNAs. Logos identified for the other human miRNAs are also provided (Figure 2—figure supplement 1B). A nucleotide that differs between miRNA family members is indicated as a black ‘n’.DOI: http://dx.doi.org/10.7554/eLife.05005.009
+**Figure 2.:** (A) Sequence logos corresponding to motifs enriched in dCLIP clusters that either appear following transfection of miR-124 into HeLa cells (Chi et al., 2009) (top) or disappear following knockout of miR-155 in T cells (Loeb et al., 2012) (bottom). Shown to the right of each logo is its E-value among clusters lacking a seed-matched or offset-6mer canonical site and the fraction of these clusters that matched the logo. Shown below each logo are the complementary regions of the cognate miRNA family, highlighting nucleotides 2–8 in capital letters. (B) Position of the top-ranked motif corresponding to non-canonical sites enriched in CLASH (Helwak et al., 2013) (left) or chimera (Grosswendt et al., 2014) (right) data for each human miRNA family supported by at least 50 interactions without a seed-matched or offset-6mer canonical site. For each family the most enriched logo was aligned to the reverse complement of the miRNA. In cases in which a logo mapped to multiple positions along the miRNA, the positions with the best and second best scores are indicated (red and blue, respectively). (C) Sequence logos of motifs enriched in chimera interactions that lack canonical sites. As in (A), but displaying sequence logos identified in the chimera data of panel (B) for a sample of nine human miRNAs. Logos identified for the other human miRNAs are also provided (Figure 2—figure supplement 1B). A nucleotide that differs between miRNA family members is indicated as a black ‘n’.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Comparison of CLASH (left) and chimera (right) reads from human cells, showing the proportion possessing a canonical site (blue) and overlapping 3′ UTRs (red). In total, 18,514 CLASH and 10,567 chimera interactions were analyzed. (B) Sequence logos of motifs enriched in chimera interactions that lack canonical sites. This panel is as in Figure 2C but displays the remaining motifs identified from the chimera data analyzed in Figure 2B. In cases of alignment ambiguity, both alignments are shown below the logo. For some miRNA families, multiple motifs were significantly enriched (E ≤ 0.001) and are shown separately. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for miR-21, and miR-3168 was excluded from the analysis due to poor support for its authenticity as a miRNA. (C) Sequence logos of motifs that do not match the cognate miRNA but are nonetheless enriched in miR-124 dCLIP (Chi et al., 2009) and miR-522 IMPACT-seq (Tan et al., 2014) clusters that lack canonical sites to the miRNA. The miR-124 logo was nearly identical to a non-specific motif previously identified as enriched in CLIP data from the mouse brain (Chi et al., 2012). The miR-522 logo was found instead of the previously reported miRNA-matching logo (Tan et al., 2014).DOI: http://dx.doi.org/10.7554/eLife.05005.010
+**Figure 2—figure supplement 1.:** (A) Comparison of CLASH (left) and chimera (right) reads from human cells, showing the proportion possessing a canonical site (blue) and overlapping 3′ UTRs (red). In total, 18,514 CLASH and 10,567 chimera interactions were analyzed. (B) Sequence logos of motifs enriched in chimera interactions that lack canonical sites. This panel is as in Figure 2C but displays the remaining motifs identified from the chimera data analyzed in Figure 2B. In cases of alignment ambiguity, both alignments are shown below the logo. For some miRNA families, multiple motifs were significantly enriched (E ≤ 0.001) and are shown separately. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for miR-21, and miR-3168 was excluded from the analysis due to poor support for its authenticity as a miRNA. (C) Sequence logos of motifs that do not match the cognate miRNA but are nonetheless enriched in miR-124 dCLIP (Chi et al., 2009) and miR-522 IMPACT-seq (Tan et al., 2014) clusters that lack canonical sites to the miRNA. The miR-124 logo was nearly identical to a non-specific motif previously identified as enriched in CLIP data from the mouse brain (Chi et al., 2012). The miR-522 logo was found instead of the previously reported miRNA-matching logo (Tan et al., 2014).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Sequence logos of motifs enriched in M. musculus chimera interactions that lack canonical sites; otherwise as in Figure 2C. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for let-7 and miR-142-3p. (B) Sequence logos of motifs enriched in C. elegans chimera interactions that lack canonical sites; otherwise as in Figure 2C. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for miR-1.DOI: http://dx.doi.org/10.7554/eLife.05005.011
+**Figure 2—figure supplement 2.:** (A) Sequence logos of motifs enriched in M. musculus chimera interactions that lack canonical sites; otherwise as in Figure 2C. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for let-7 and miR-142-3p. (B) Sequence logos of motifs enriched in C. elegans chimera interactions that lack canonical sites; otherwise as in Figure 2C. Significantly enriched motifs (or a top-ranked motif matching the miRNA) were not found for miR-1.
 
 Previous analysis of CLASH-identified interactions shows that the top MEME-identified motifs usually pair to the miRNA, although for many miRNAs this pairing falls outside of the seed region (Helwak et al., 2013). Repeating this analysis, but focusing on only interactions without canonical sites, confirmed this result (Figure 2B). Applying this type of analysis to non-canonical interactions identified from miRNA–mRNA chimeras in standard AGO CLIP datasets confirmed that these interactions are also enriched for pairing to the miRNA (Grosswendt et al., 2014). As previously shown (Grosswendt et al., 2014), these interactions were more specific to the seed region than were the CLASH-identified interactions (Figure 2B). Comparison of all the chimera data with all the CLASH data showed that a higher fraction of the chimeras captured canonical interactions and that a higher fraction captured interactions within 3′ UTRs (Figure 2—figure supplement 1A). These results, implying that the chimera approach is more effective than CLASH at capturing functional sites that mediate repression, motivated a closer look at the chimera-identified interactions that lacked a canonical site, despite our finding that these interactions do not mediate repression. In the human and nematode datasets (and less so in the mouse dataset), these interactions were enriched for motifs that corresponded to non-canonical sites that paired to the miRNA seed region (Figure 2B–C, Figure 2—figure supplement 1B, and Figure 2—figure supplement 2). Inspection of these motifs revealed that the most enriched nucleotides typically preserved Watson–Crick pairing in a core 4–5 nts within the seed region, with tolerance to mismatches or G:U wobbles observed at varied positions, depending on the miRNA, potentially reflecting seed-specific structural or energetic features, or perhaps context-dependent biases in crosslinking or ligation.
 
@@ -105,19 +105,19 @@ Some motifs, particularly the more degenerate ones, were found in most of the in
 
 In sum, our analyses of the CLIP datasets confirmed that many of the CLIP clusters and CLASH/chimera interactions lacking a seed match nonetheless capture authentic miRNA-binding sites—otherwise the top enriched motifs would not pair so often to the cognate miRNA. Despite this ability to bind the miRNA in vivo and to function in the sense that they contribute to cellular TA (Denzler et al., 2014), we classify the CLIP-identified non-canonical sites as non-functional with respect to repression because they showed no sign of mediating repression and no signal for miRNA-dependent conservation (Figure 1 and Figure 1—figure supplements 1–5). Thus, the only known non-canonical site types that mediate repression are the 3′-supplementary, centered, and cleavage site types, which together comprise <1% of the effective sites that currently can be predicted (Friedman et al., 2009; Shin et al., 2010). Although we cannot exclude the possibility that additional types of functional non-canonical sites might exist but have not yet been characterized to the point that they can be used for miRNA target prediction (Lal et al., 2009), our analysis of the CLIP results justified a focus on the abundant site types that are predictive of targeting and are at least marginally functional, that is, the canonical seed-matched sites, including 6mer and offset-6mer sites.
 
-## Improving dataset quality for model development
+### Improving dataset quality for model development
 
 To identify features involved in mammalian miRNA targeting, we analyzed the results of microarray datasets reporting the mRNA changes after transfecting either a miRNA or siRNA (together referred to as small RNAs, abbreviated as sRNAs) into HeLa cells. From the published datasets, we used the set of 74 experiments that had previously been selected because each (1) had a clear signal for sRNA-based repression, (2) was acquired using the same Agilent array platform, and (3) reported on the effects of a unique seed sequence (Garcia et al., 2011).
 
-Despite the differences among the 74 transfected sRNAs, mRNA fold changes of some arrays were highly correlated with those of others, which indicated that sRNA-independent effects dominated (
+Despite the differences among the 74 transfected sRNAs, mRNA fold changes of some arrays were highly correlated with those of others, which indicated that sRNA-independent effects dominated (Figure 3A). When all 74 datasets were compared against each other, those from either the same group of experiments (Anderson et al., 2008) or the same transfection protocol (Jackson et al., 2006a, 2006b; Grimson et al., 2007) tended to cluster strongly together based on their common transcriptome-wide responses to different transfected sRNAs (Figure 3B), indicating the likely presence of batch effects (Leek et al., 2010) that could obscure detection of features associated with miRNA targeting.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig3-v1.jpg)
 
-**Figure 3.:** (A) Example of the correlated response of mRNAs after transfecting two unrelated sRNAs (sRNA 1 and 2, respectively). Results for mRNAs containing at least one canonical 7–8 nt 3′-UTR site for either sRNA 1, sRNA 2, or both sRNAs are highlighted in red, blue, and green, respectively. Values for mRNAs without such sites are in grey. All mRNAs were used to calculate the Spearman correlation (rs). (B) Correlated responses observed in a compendium of 74 transfection experiments from six studies (colored as indicted in the publications list). For each pair of experiments, the rs value was calculated as in panel (A), colored as indicated in the key, and used for hierarchical clustering. (C) Study-dependent relationships between the responses of mRNAs to the transfected sRNA and either 3′-UTR length or 3′-UTR AU content, focusing on mRNAs without a canonical 7–8 nt 3′-UTR site to the sRNA. Boxplots indicate the median rs (bar), 25th and 75th percentiles (box), and the minimum of either 1.5 times the interquartile range or the most extreme data point (whiskers), with the width of the box proportional to the number of datasets used from each study. The studies are colored as in panel (B), abbreviating the first author and year. (D) Reduced correlation between the responses of mRNAs to unrelated sRNAs after applying the PLSR technique. This panel is as in (A) but plots the normalized mRNA fold changes. (E) Reduced correlations in results of the compendium experiments after applying the PLSR technique. This panel is as in (B) but plots the correlations after normalizing the mRNA fold changes. (F) Reduced study-dependent relationships between mRNA responses and either 3′-UTR length or 3′-UTR AU content. This panel is as in (C) but plots the correlations after normalizing the mRNA fold changes. (G and H) Cumulative distributions of fold changes for mRNAs containing at least one canonical 7–8 nt 3′-UTR site or no site either before normalization (raw) or after normalization (normalized). Panel (G) plots the results from experiments shown in (A) and (D), and (H) plots results from all 74 datasets.DOI: http://dx.doi.org/10.7554/eLife.05005.012
+**Figure 3.:** (A) Example of the correlated response of mRNAs after transfecting two unrelated sRNAs (sRNA 1 and 2, respectively). Results for mRNAs containing at least one canonical 7–8 nt 3′-UTR site for either sRNA 1, sRNA 2, or both sRNAs are highlighted in red, blue, and green, respectively. Values for mRNAs without such sites are in grey. All mRNAs were used to calculate the Spearman correlation (rs). (B) Correlated responses observed in a compendium of 74 transfection experiments from six studies (colored as indicted in the publications list). For each pair of experiments, the rs value was calculated as in panel (A), colored as indicated in the key, and used for hierarchical clustering. (C) Study-dependent relationships between the responses of mRNAs to the transfected sRNA and either 3′-UTR length or 3′-UTR AU content, focusing on mRNAs without a canonical 7–8 nt 3′-UTR site to the sRNA. Boxplots indicate the median rs (bar), 25th and 75th percentiles (box), and the minimum of either 1.5 times the interquartile range or the most extreme data point (whiskers), with the width of the box proportional to the number of datasets used from each study. The studies are colored as in panel (B), abbreviating the first author and year. (D) Reduced correlation between the responses of mRNAs to unrelated sRNAs after applying the PLSR technique. This panel is as in (A) but plots the normalized mRNA fold changes. (E) Reduced correlations in results of the compendium experiments after applying the PLSR technique. This panel is as in (B) but plots the correlations after normalizing the mRNA fold changes. (F) Reduced study-dependent relationships between mRNA responses and either 3′-UTR length or 3′-UTR AU content. This panel is as in (C) but plots the correlations after normalizing the mRNA fold changes. (G and H) Cumulative distributions of fold changes for mRNAs containing at least one canonical 7–8 nt 3′-UTR site or no site either before normalization (raw) or after normalization (normalized). Panel (G) plots the results from experiments shown in (A) and (D), and (H) plots results from all 74 datasets.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Pie chart reflecting the relative proportions of reads for the indicated miRNA families observed when sequencing small RNAs from HeLa cells. Relative miRNA levels were quantified as described previously (Denzler et al., 2014). (B and C) Cumulative distributions of fold changes for mRNAs with at least one canonical 7–8 nt 3′-UTR site to the indicated miRNA family in the compendium of 74 sRNA transfection datasets, either before (B) or after (C) normalization. p values were computed using a one-sided Wilcoxon rank-sum test, comparing each of the site-containing distributions to the no-site distribution. This test was a more stringent alternative to the K–S test, which led to highly significant p values for very slight differences, due to the large number of mRNAs in each distribution. To account for multiple hypotheses, an appropriate Bonferroni-corrected significance threshold would be p < 0.005, which was not achieved for most comparisons in panel (C).DOI: http://dx.doi.org/10.7554/eLife.05005.013
+**Figure 3—figure supplement 1.:** (A) Pie chart reflecting the relative proportions of reads for the indicated miRNA families observed when sequencing small RNAs from HeLa cells. Relative miRNA levels were quantified as described previously (Denzler et al., 2014). (B and C) Cumulative distributions of fold changes for mRNAs with at least one canonical 7–8 nt 3′-UTR site to the indicated miRNA family in the compendium of 74 sRNA transfection datasets, either before (B) or after (C) normalization. p values were computed using a one-sided Wilcoxon rank-sum test, comparing each of the site-containing distributions to the no-site distribution. This test was a more stringent alternative to the K–S test, which led to highly significant p values for very slight differences, due to the large number of mRNAs in each distribution. To account for multiple hypotheses, an appropriate Bonferroni-corrected significance threshold would be p < 0.005, which was not achieved for most comparisons in panel (C).
 
 A parameter known to confound the accurate measurement of mRNA responses on microarrays is the relative AU content within 3′ UTRs (Elkon and Agami, 2008). Indeed, when considering mRNAs without a canonical site to the transfected sRNA, we found that 3′-UTR AU content often correlated with mRNA fold changes. Moreover, the extent and direction of the correlation was similar for different datasets from the same publication but differed when comparing to datasets from other publications (Figure 3C). A second parameter that helped explain the correlated sRNA-independent effects for related datasets was 3′-UTR length (Saito and Satrom, 2012), which exhibited patterns of correlation similar to those observed for 3′-UTR AU content (Figure 3C). Our observation that AU content and 3′-UTR length correlated so differently with global expression changes when comparing results from different publications helps explain why different 3′-UTR features previously seemed to have such variable predictive power in different experimental contexts (Hausser et al., 2009; Wen et al., 2011; Gumienny and Zavolan, 2015).
 
@@ -127,17 +127,285 @@ To correct for biases that were independent of the sequence of the introduced sR
 
 Previous studies of miRNA targeting have relied on 3′-UTR annotations from databases such as RefSeq, without accounting for abundant alternative 3′-UTR isoforms present in the tissue or cell line of interest (Tian et al., 2005). The presence of more than one abundant 3′-UTR isoform for a gene would confound interpretation of 3′-UTR-related features, such as 3′-UTR length, or distance from the closest 3′-UTR end (Nam et al., 2014). Moreover, the shorter 3′-UTR isoforms might not include some target sites, which would cause these sites to appear ineffective when in fact they are not present (Sandberg et al., 2008; Mayr and Bartel, 2009; Lianoglou et al., 2013; Nam et al., 2014). To avoid these complications, we examined 3′-UTR isoform quantifications previously generated for HeLa cells (Nam et al., 2014) using poly(A)-position profiling by sequencing (3P-seq) (Jan et al., 2011), and developed our model using the dominant mRNA from the subset of genes for which ≥90% of the 3P-seq tags corresponded to a single 3′-UTR isoform. To isolate the effects of single sites, we also used the subset of these mRNAs for which the 3′ UTR possessed a single seed match to the transfected sRNA (Supplementary file 1).
 
-## Selecting features and building a regression model for target prediction
+### Selecting features and building a regression model for target prediction
 
-To improve our model of mammalian target-site efficacy, we considered 26 features as potentially informative of efficacy. These included features of the sRNAs, features of the sites (including their contexts and positions within the mRNAs), and features of the mRNAs, many of which had been used or at least considered in previous efforts (Table 1).10.7554/eLife.05005.014Table 1.The 26 features considered in the models, highlighting the 14 robustly selected through stepwise regression (bold)DOI: http://dx.doi.org/10.7554/eLife.05005.014FeatureAbbreviationDescriptionFrequency chosen8mer7mer-m87mer-A16mermiRNA 3′-UTR target-site abundanceTA_3UTRNumber of sites in all annotated 3′ UTRs (Arvey et al., 2010; Garcia et al., 2011)100%100%100%100% ORF target-site abundanceTA_ORFNumber of sites in all annotated ORFs (Garcia et al., 2011)9.4%0.7%68.1%93.4% Predicted seed-pairing stabilitySPSPredicted thermodynamic stability of seed pairing (Garcia et al., 2011)100%100%100%100% sRNA position 1sRNA1Identity of nucleotide at position 1 of the sRNA68%100%99.7%97.7% sRNA position 8sRNA8Identity of nucleotide at position 8 of the sRNA0%0.8%100%100%Site Site position 1site1Identity of nucleotide at position 1 of the siteN/A57.1%N/A2% Site position 8site8Identity of nucleotide at position 8 of the site0.8%95.1%99.4%100% Site position 9site9Identity of nucleotide at position 9 of the site (Lewis et al., 2005; Nielsen et al., 2007)15.4%7.1%0.9%93.7% Site position 10site10Identity of nucleotide at position 10 of the site (Nielsen et al., 2007)0.1%100%8.5%26.3% Local AU contentlocal_AUAU content near the site (Grimson et al., 2007; Nielsen et al., 2007)100%100%100%100% 3′ supplementary pairing3P_scoreSupplementary pairing at the miRNA 3′ end (Grimson et al., 2007)42.5%100%100%100% Distance from stop codondist_stoplog10(Distance of site from stop codon)62.4%10.8%8.7%25.7% Predicted structural accessibilitySAlog10(Probability that a 14 nt segment centered on the match to sRNA positions 7 and 8 is unpaired)100%100%100%100% Minimum distancemin_distlog10(Minimum distance of site from stop codon or polyadenylation site) (Gaidatzis et al., 2007; Grimson et al., 2007; Majoros and Ohler, 2007)99.9%100%87.4%100% Probability of conserved targetingPCTProbability of site conservation, controlling for dinucleotide evolution and site context (Friedman et al., 2009)100%100%100%20.8%mRNA 5′-UTR lengthlen_5UTRlog10(Length of the 5′ UTR)98.2%8.2%4.6%17.2% ORF lengthlen_ORFlog10(Length of the ORF)100%100%100%100% 3′-UTR lengthlen_3UTRlog10(Length of the 3′ UTR) (Hausser et al., 2009)100%100%100%100% 5′-UTR AU contentAU_5UTRFraction of AU nucleotides in the 5′ UTR13%38.9%91.1%31.3% ORF AU contentAU_ORFFraction of AU nucleotides in the ORF1.2%72.4%28.4%35.8% 3′-UTR AU contentAU_3UTRFraction of AU nucleotides in the 3′ UTR (Robins and Press, 2005; Hausser et al., 2009)5.4%73.3%65.3%80.6% 3′-UTR offset-6mer sitesoff6mNumber of offset-6mer sites in the 3′ UTR (Friedman et al., 2009)65.9%89.6%99.8%100% ORF 8mer sitesORF8mNumber of 8mer sites in the ORF (Lewis et al., 2005; Reczko et al., 2012)99.5%99.1%100%100% ORF 7mer-m8 sitesORF7m8Number of 7mer-m8 sites in the ORF (Reczko et al., 2012)4.7%4.3%85.3%100% ORF 7mer-A1 sitesORF7A1Number of 7mer-A1 sites in the ORF (Reczko et al., 2012)68.4%34.2%97.8%98.4% ORF 6mer sitesORF6mNumber of 6mer sites in the ORF (Reczko et al., 2012)91%13.3%0.7%36.7%The feature description does not include the scaling performed (Table 3) to generate more comparable regression coefficients.
+To improve our model of mammalian target-site efficacy, we considered 26 features as potentially informative of efficacy. These included features of the sRNAs, features of the sites (including their contexts and positions within the mRNAs), and features of the mRNAs, many of which had been used or at least considered in previous efforts (Table 1).
+
+**Table 1.**
+ The 26 features considered in the models, highlighting the 14 robustly selected through stepwise regression (bold)
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Feature</th>
+      <th rowspan="2">Abbreviation</th>
+      <th rowspan="2">Description</th>
+      <th colspan="4">Frequency chosen</th>
+    </tr>
+    <tr>
+      <th>8mer</th>
+      <th>7mer-m8</th>
+      <th>7mer-A1</th>
+      <th>6mer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">miRNA</td>
+    </tr>
+    <tr>
+      <td>3′-UTR target-site abundance</td>
+      <td>TA_3UTR</td>
+      <td>Number of sites in all annotated 3′ UTRs (Arvey et al., 2010; Garcia et al., 2011)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>ORF target-site abundance</td>
+      <td>TA_ORF</td>
+      <td>Number of sites in all annotated ORFs (Garcia et al., 2011)</td>
+      <td>9.4%</td>
+      <td>0.7%</td>
+      <td>68.1%</td>
+      <td>93.4%</td>
+    </tr>
+    <tr>
+      <td>Predicted seed-pairing stability</td>
+      <td>SPS</td>
+      <td>Predicted thermodynamic stability of seed pairing (Garcia et al., 2011)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>sRNA position 1</td>
+      <td>sRNA1</td>
+      <td>Identity of nucleotide at position 1 of the sRNA</td>
+      <td>68%</td>
+      <td>100%</td>
+      <td>99.7%</td>
+      <td>97.7%</td>
+    </tr>
+    <tr>
+      <td>sRNA position 8</td>
+      <td>sRNA8</td>
+      <td>Identity of nucleotide at position 8 of the sRNA</td>
+      <td>0%</td>
+      <td>0.8%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td colspan="7">Site</td>
+    </tr>
+    <tr>
+      <td>Site position 1</td>
+      <td>site1</td>
+      <td>Identity of nucleotide at position 1 of the site</td>
+      <td>N/A</td>
+      <td>57.1%</td>
+      <td>N/A</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Site position 8</td>
+      <td>site8</td>
+      <td>Identity of nucleotide at position 8 of the site</td>
+      <td>0.8%</td>
+      <td>95.1%</td>
+      <td>99.4%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Site position 9</td>
+      <td>site9</td>
+      <td>Identity of nucleotide at position 9 of the site (Lewis et al., 2005; Nielsen et al., 2007)</td>
+      <td>15.4%</td>
+      <td>7.1%</td>
+      <td>0.9%</td>
+      <td>93.7%</td>
+    </tr>
+    <tr>
+      <td>Site position 10</td>
+      <td>site10</td>
+      <td>Identity of nucleotide at position 10 of the site (Nielsen et al., 2007)</td>
+      <td>0.1%</td>
+      <td>100%</td>
+      <td>8.5%</td>
+      <td>26.3%</td>
+    </tr>
+    <tr>
+      <td>Local AU content</td>
+      <td>local_AU</td>
+      <td>AU content near the site (Grimson et al., 2007; Nielsen et al., 2007)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>3′ supplementary pairing</td>
+      <td>3P_score</td>
+      <td>Supplementary pairing at the miRNA 3′ end (Grimson et al., 2007)</td>
+      <td>42.5%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Distance from stop codon</td>
+      <td>dist_stop</td>
+      <td>log10(Distance of site from stop codon)</td>
+      <td>62.4%</td>
+      <td>10.8%</td>
+      <td>8.7%</td>
+      <td>25.7%</td>
+    </tr>
+    <tr>
+      <td>Predicted structural accessibility</td>
+      <td>SA</td>
+      <td>log10(Probability that a 14 nt segment centered on the match to sRNA positions 7 and 8 is unpaired)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Minimum distance</td>
+      <td>min_dist</td>
+      <td>log10(Minimum distance of site from stop codon or polyadenylation site) (Gaidatzis et al., 2007; Grimson et al., 2007; Majoros and Ohler, 2007)</td>
+      <td>99.9%</td>
+      <td>100%</td>
+      <td>87.4%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Probability of conserved targeting</td>
+      <td>PCT</td>
+      <td>Probability of site conservation, controlling for dinucleotide evolution and site context (Friedman et al., 2009)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>20.8%</td>
+    </tr>
+    <tr>
+      <td colspan="7">mRNA</td>
+    </tr>
+    <tr>
+      <td>5′-UTR length</td>
+      <td>len_5UTR</td>
+      <td>log10(Length of the 5′ UTR)</td>
+      <td>98.2%</td>
+      <td>8.2%</td>
+      <td>4.6%</td>
+      <td>17.2%</td>
+    </tr>
+    <tr>
+      <td>ORF length</td>
+      <td>len_ORF</td>
+      <td>log10(Length of the ORF)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>3′-UTR length</td>
+      <td>len_3UTR</td>
+      <td>log10(Length of the 3′ UTR) (Hausser et al., 2009)</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>5′-UTR AU content</td>
+      <td>AU_5UTR</td>
+      <td>Fraction of AU nucleotides in the 5′ UTR</td>
+      <td>13%</td>
+      <td>38.9%</td>
+      <td>91.1%</td>
+      <td>31.3%</td>
+    </tr>
+    <tr>
+      <td>ORF AU content</td>
+      <td>AU_ORF</td>
+      <td>Fraction of AU nucleotides in the ORF</td>
+      <td>1.2%</td>
+      <td>72.4%</td>
+      <td>28.4%</td>
+      <td>35.8%</td>
+    </tr>
+    <tr>
+      <td>3′-UTR AU content</td>
+      <td>AU_3UTR</td>
+      <td>Fraction of AU nucleotides in the 3′ UTR (Robins and Press, 2005; Hausser et al., 2009)</td>
+      <td>5.4%</td>
+      <td>73.3%</td>
+      <td>65.3%</td>
+      <td>80.6%</td>
+    </tr>
+    <tr>
+      <td>3′-UTR offset-6mer sites</td>
+      <td>off6m</td>
+      <td>Number of offset-6mer sites in the 3′ UTR (Friedman et al., 2009)</td>
+      <td>65.9%</td>
+      <td>89.6%</td>
+      <td>99.8%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>ORF 8mer sites</td>
+      <td>ORF8m</td>
+      <td>Number of 8mer sites in the ORF (Lewis et al., 2005; Reczko et al., 2012)</td>
+      <td>99.5%</td>
+      <td>99.1%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>ORF 7mer-m8 sites</td>
+      <td>ORF7m8</td>
+      <td>Number of 7mer-m8 sites in the ORF (Reczko et al., 2012)</td>
+      <td>4.7%</td>
+      <td>4.3%</td>
+      <td>85.3%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>ORF 7mer-A1 sites</td>
+      <td>ORF7A1</td>
+      <td>Number of 7mer-A1 sites in the ORF (Reczko et al., 2012)</td>
+      <td>68.4%</td>
+      <td>34.2%</td>
+      <td>97.8%</td>
+      <td>98.4%</td>
+    </tr>
+    <tr>
+      <td>ORF 6mer sites</td>
+      <td>ORF6m</td>
+      <td>Number of 6mer sites in the ORF (Reczko et al., 2012)</td>
+      <td>91%</td>
+      <td>13.3%</td>
+      <td>0.7%</td>
+      <td>36.7%</td>
+    </tr>
+  </tbody>
+</table>
+
+_The feature description does not include the scaling performed (Table 3) to generate more comparable regression coefficients._
 
 One of the 26 features was site PCT (probability of conserved targeting), which estimates the probability of the site being preferentially conserved because it is targeted by the cognate miRNA (Friedman et al., 2009). Prior to use, our PCT scores were updated to take advantage of improvements in both mouse and human 3′-UTR annotations (Harrow et al., 2012; Flicek et al., 2014), the additional sequenced vertebrate genomes aligned to the mouse and human genomes (Karolchik et al., 2014), and our expanded set of miRNA families broadly conserved among vertebrate species, which increased from 87 to 111 families (with the 111 including 16 isomiR families, that is, cases in which a second or third miRNA was produced from a pri-miRNA hairpin, through either conserved expression of miRNAs from both arms of the hairpin or conserved 5′ heterogeneity). Using these updates increased sensitivity, with our estimate for the number of human 3′-UTR sites conserved above background increasing from ∼46,400 (Friedman et al., 2009) to ∼62,300. The PCT score on its own correlates with site efficacy, and when using the same set of 3′ UTRs this correlation increased only modestly for the new scores (data not shown), consistent with the notion that the evolutionary signal was already nearly saturated in the previous analysis of 23 species spanning the vertebrate tetrapods (Friedman et al., 2009). Nonetheless, we used our updated PCT score as a feature for sites of broadly conserved miRNAs within our training set.
 
-A second feature that we re-evaluated was the predicted structural accessibility of the site. As scored previously, the degree to which the site nucleotides were predicted to be free of pairing to flanking 3′-UTR regions was not informative after controlling for the contribution of local AU content (
+A second feature that we re-evaluated was the predicted structural accessibility of the site. As scored previously, the degree to which the site nucleotides were predicted to be free of pairing to flanking 3′-UTR regions was not informative after controlling for the contribution of local AU content (Grimson et al., 2007). However, analysis inspired by work on siRNA site accessibility (Tafer et al., 2008) suggested an improved scoring scheme for this feature. For this analysis we used RNAplfold (Bernhart et al., 2006) to predict the unpaired probabilities for variable-sized windows in the proximity of the site and then examined the relationship between these probabilities and the repression associated with sites in our compendium of normalized datasets, while controlling for local AU content and other features of the context+ model (Figure 4A). Based on these results, which resembled those reported previously (Tafer et al., 2008), we scored predicted structural accessibility (SA) as proportional to the log10 value of the unpaired probability for a 14-nt region centered on the match to miRNA nucleotides 7 and 8.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig4-v1.jpg)
 
-**Figure 4.:** (A) Optimizing the scoring of predicted structural accessibility. Predicted RNA structural accessibility scores were computed for variable-length windows within the region centered on each canonical 7–8 nt 3′-UTR site. The heatmap displays the partial correlations between these values and the repression associated with the corresponding sites, determined while controlling for local AU content and other features of the context+ model (Garcia et al., 2011). (B) Performance of the models generated using stepwise regression compared to that of either the context-only or context+ models. Shown are boxplots of r values for each of the models across all 1000 sampled test sets, for mRNAs possessing a single site of the indicated type. For each site type, all groups significantly differ (2P < 10−15, paired Wilcoxon sign-rank test). Boxplots are as in Figure 3C. (C) The contributions of site type and each of the 14 features of the context++ model. For each site type, the coefficients for the multiple linear regression are plotted for each feature. Because features are each scored on a similar scale, the relative contribution of each feature in discriminating between more or less effective sites is roughly proportional to the absolute value of its coefficient. Also plotted are the intercepts, which roughly indicate the discriminatory power of site type. Dashed bars indicate the 95% confidence intervals of each coefficient.DOI: http://dx.doi.org/10.7554/eLife.05005.01510.7554/eLife.05005.016Figure 4—source data 1.Using these coefficients and corresponding scaling factors (Table 3), context++ scores can be computed essentially as illustrated in Supplementary Figure 5 of Garcia et al. (2011).DOI: http://dx.doi.org/10.7554/eLife.05005.016
+**Figure 4.:** (A) Optimizing the scoring of predicted structural accessibility. Predicted RNA structural accessibility scores were computed for variable-length windows within the region centered on each canonical 7–8 nt 3′-UTR site. The heatmap displays the partial correlations between these values and the repression associated with the corresponding sites, determined while controlling for local AU content and other features of the context+ model (Garcia et al., 2011). (B) Performance of the models generated using stepwise regression compared to that of either the context-only or context+ models. Shown are boxplots of r2 values for each of the models across all 1000 sampled test sets, for mRNAs possessing a single site of the indicated type. For each site type, all groups significantly differ (P < 10−15, paired Wilcoxon sign-rank test). Boxplots are as in Figure 3C. (C) The contributions of site type and each of the 14 features of the context++ model. For each site type, the coefficients for the multiple linear regression are plotted for each feature. Because features are each scored on a similar scale, the relative contribution of each feature in discriminating between more or less effective sites is roughly proportional to the absolute value of its coefficient. Also plotted are the intercepts, which roughly indicate the discriminatory power of site type. Dashed bars indicate the 95% confidence intervals of each coefficient.
 
 Having assembled a set of candidate features, we used the stepAIC function from the ‘MASS’ R package (Venables and Ripley, 2002) to determine which features were most useful for modeling site efficacy. This function uses stepwise regression to build models with increasing numbers of features until it reaches the optimal Akaike Information Criterion (AIC) value. The AIC evaluates the tradeoff between the benefit of increasing the likelihood of the regression fit and the cost of increasing the complexity of the model by adding more variables. For each of the four seed-matched site types, models were built for 1000 samples of the dataset. Each sample included 70% of the mRNAs with single sites to the transfected sRNA from each experiment (randomly selected without replacement), reserving the remaining 30% as a test set. Compared to our context-only and context+ models (Grimson et al., 2007; Garcia et al., 2011), the new stepwise regression models were significantly better at predicting site efficacy when evaluated using their corresponding held-out test sets, as illustrated for the each of four site types (Figure 4B).
 
@@ -145,19 +413,19 @@ Reasoning that features most predictive would be robustly selected, we focused o
 
 Using the 14 robustly selected features, we trained multiple linear regression models on all of the data. The resulting models, one for each of the four site types, were collectively called the context++ model (Figure 4C and Figure 4—source data 1). For each feature, the sign of the coefficient indicated the nature of the relationship. For example, mRNAs with either longer ORFs or longer 3′ UTRs tended to be more resistant to repression (indicated by a positive coefficient), whereas mRNAs with either structurally accessible target sites or ORF 8mer sites tended to be more prone to repression (indicated by a negative coefficient). Based on the relative magnitudes of the regression coefficients, some newly incorporated features, such as 3′-UTR length, ORF length, and SA, contributed similarly to features previously incorporated in the context+ model, such as SPS, TA, and local AU (Figure 4C). New features with an intermediate level of influence included the number of ORF 8mer sites and site conservation as well as the presence of a 5′ G in the sRNA (Figure 4C), the latter perhaps a consequence of differential sRNA loading efficiency. The weakest features included the sRNA and target position 8 identities as well as the number of offset-6mer sites. The identity of sRNA nucleotide 8 exhibited a complex pattern that was site-type dependent. Relative to a position-8 U in the sRNA, a position-8 C further decreased efficacy of sites with a mismatch at this position (6mer or 7mer-A1 sites), whereas a position-8 A had the opposite effect (Figure 4C). Similarly, a position-8 C in the site also conferred decreased efficacy of 6mer and 7mer-A1 sites relative to a position-8 U in the site (Figure 4C). Allowing interaction terms when developing the model, including a term that captured the potential interplay between these positions, did not provide sufficient benefit to justify the more complex model.
 
-## Improvement over previous methods
+### Improvement over previous methods
 
 We compared the predictive performance of our context++ model to that of the most recent versions of 17 in silico tools for predicting miRNA targets, including AnTar (Wen et al., 2011), DIANA-microT-CDS (Reczko et al., 2012), ElMMo (Gaidatzis et al., 2007), MBSTAR (Bandyopadhyay et al., 2015), miRanda-MicroCosm (Griffiths-Jones et al., 2008), miRmap (Vejnar and Zdobnov, 2012), mirSVR (Betel et al., 2010), miRTarget2 (Wang and El Naqa, 2008), MIRZA-G (Gumienny and Zavolan, 2015), PACCMIT-CDS (Marin et al., 2013), PicTar2 implemented for predictions conserved through mammals, chicken, or fish (PicTarM, PicTarC, and PicTarF, respectively) (Anders et al., 2012), PITA (Kertesz et al., 2007), RNA22 (Miranda et al., 2006), SVMicrO (Liu et al., 2010), TargetRank (Nielsen et al., 2007), and TargetSpy (Sturm et al., 2010); as well as successive versions of TargetScan, which offer context scores (Grimson et al., 2007), PCT scores (Friedman et al., 2009), or context+ scores (Garcia et al., 2011) as options for ranking predictions (TargetScan5, TargetScan.PCT, or TargetScan6, respectively) for either all mRNAs with a canonical 7–8 nt 3′-UTR site (TargetScan.All) or those with only broadly conserved sites (TargetScan.Cons). To the best of our knowledge, algorithms excluded from the comparison either were not de novo prediction algorithms (relying on consensus techniques or experimental data), did not provide a pre-computed database of results, or lacked a numerical value (or ranking) of either target-prediction confidence or mRNA responsiveness. To test the performance of the included methods, we used the results of seven microarray datasets that each monitor mRNA changes after transfection of a conserved miRNA into HCT116 cells containing a hypomorphic mutant for Dicer (Linsley et al., 2007). These datasets differ from those used during development and training of our model with respect to both the cell type and the identities of the sRNAs. To prevent our model from gaining an advantage over methods that used standard 3′-UTR annotations, we used RefSeq-annotated 3′ UTRs (rather than 3P-seq–supported annotations) to generate the context++ test-set predictions. For genes with multiple annotated 3′ UTRs we chose the longest isoform because the microarray probes of the test set often matched only this isoform. For each 3′ UTR containing multiple sites to the cognate miRNA, the context++ scores of individual sites were summed to generate the total context++ score to be used to rank that predicted target.
 
-The number of potential miRNA–mRNA interactions considered by the different methods varied greatly (
+The number of potential miRNA–mRNA interactions considered by the different methods varied greatly (Figure 5A), which reflected the varied strategies and priorities of these prediction efforts. Out of a concern for prediction specificity, many efforts only consider interactions involving 7–8 nt seed-matched sites. Accordingly, we first tested how well each of the methods predicted the repression of mRNAs with at least one canonical 7–8 nt 3′-UTR site (Figure 5B). The context++ model performed substantially better than the most predictive published model, which was TargetScan6.All. Of algorithms derived from other groups, DIANA-microT-CDS, miRTarget2, miRanda-miRSVR, MIRZA-G (and its derivatives), and TargetRank were the most predictive, with performance within range of TargetScan5.All (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig5-v1.jpg)
 
-**Figure 5.:** (A) Average number of targets predicted by the indicated algorithm for each of the seven miRNAs in the test set (let-7c, miR-16, miR-103, miR-106b, miR-200b, miR-200a, and miR-215). The numbers of predictions with at least one canonical 7–8 nt 3′-UTR site to the transfected miRNA (dark blue) are distinguished from the remaining predictions (light blue). Names of algorithms are colored according to whether they consider only sequence or thermodynamic features of site pairing (grey), only site conservation (orange), pairing and contextual features of a site (red), or pairing, contextual features, and site conservation (purple). The most recently updated predictions were downloaded, with year that those predictions were released indicated in parentheses. (B and C) Extent to which the predictions explain the mRNA fold changes observed in the test set. For predictions tallied in panel (A), the explanatory power, as evaluated by the r value for the relationship between the scores of the predictions and the observed mRNA fold changes in the test set, is plotted for either mRNAs with 3′ UTRs containing at least one canonical 7–8 nt 3′-UTR site (2B) or other mRNAs (C). Algorithms designed to evaluate only targets with seed-matched 7–8 nt 3′-UTR sites are labeled ‘N/A’ in (C). (D) Repression of the top predictions of the context++ model and of our previous two models, focusing on an average of 16 top predicted targets per miRNA in the test set. The dotted lines indicate the median fold-change value for each distribution, otherwise as in Figure 1A. (E and F) Median mRNA fold changes observed in the test set for top-ranked predicted targets, considering either all predictions (E) or only those with 3′ UTRs lacking at least one canonical 7–8 nt site (F). For each algorithm listed in panel (A), all reported predictions for the seven miRNAs were ranked according to their scores, and the indicated sliding threshold of top predictions was implemented. For example, at the threshold of 4, the 28 predictions with the top scores were identified (an average of 4 predictions per miRNA, allowing miRNAs with more top scores to contribute more predictions), mRNA fold-change values from the cognate transfections were collected, and the median value was plotted. When the threshold exceeded the number of reported predictions, no value was plotted. Also plotted is the median mRNA fold change for all mRNAs with at least one cognate canonical 7–8 nt site in their 3′ UTR (dashed line; an average of 1366 mRNAs per miRNA), the median fold change for all mRNAs with at least one conserved cognate canonical 7–8 nt site in their 3′ UTR (dotted line; an average of 461 mRNAs per miRNA), and the 95% interval for the median fold change of randomly selected mRNAs, determined using 1000 resamplings (without replacement) at each cutoff (shading). Conserved sites were defined as in TargetScan6, with conservation cutoffs for each site type set at different branch-length scores (cutoffs of 0.8, 1.3, and 1.6 for 8mer, 7mer-m8, and 7mer-A1 sites, respectively).DOI: http://dx.doi.org/10.7554/eLife.05005.017
+**Figure 5.:** (A) Average number of targets predicted by the indicated algorithm for each of the seven miRNAs in the test set (let-7c, miR-16, miR-103, miR-106b, miR-200b, miR-200a, and miR-215). The numbers of predictions with at least one canonical 7–8 nt 3′-UTR site to the transfected miRNA (dark blue) are distinguished from the remaining predictions (light blue). Names of algorithms are colored according to whether they consider only sequence or thermodynamic features of site pairing (grey), only site conservation (orange), pairing and contextual features of a site (red), or pairing, contextual features, and site conservation (purple). The most recently updated predictions were downloaded, with year that those predictions were released indicated in parentheses. (B and C) Extent to which the predictions explain the mRNA fold changes observed in the test set. For predictions tallied in panel (A), the explanatory power, as evaluated by the r2 value for the relationship between the scores of the predictions and the observed mRNA fold changes in the test set, is plotted for either mRNAs with 3′ UTRs containing at least one canonical 7–8 nt 3′-UTR site (B) or other mRNAs (C). Algorithms designed to evaluate only targets with seed-matched 7–8 nt 3′-UTR sites are labeled ‘N/A’ in (C). (D) Repression of the top predictions of the context++ model and of our previous two models, focusing on an average of 16 top predicted targets per miRNA in the test set. The dotted lines indicate the median fold-change value for each distribution, otherwise as in Figure 1A. (E and F) Median mRNA fold changes observed in the test set for top-ranked predicted targets, considering either all predictions (E) or only those with 3′ UTRs lacking at least one canonical 7–8 nt site (F). For each algorithm listed in panel (A), all reported predictions for the seven miRNAs were ranked according to their scores, and the indicated sliding threshold of top predictions was implemented. For example, at the threshold of 4, the 28 predictions with the top scores were identified (an average of 4 predictions per miRNA, allowing miRNAs with more top scores to contribute more predictions), mRNA fold-change values from the cognate transfections were collected, and the median value was plotted. When the threshold exceeded the number of reported predictions, no value was plotted. Also plotted is the median mRNA fold change for all mRNAs with at least one cognate canonical 7–8 nt site in their 3′ UTR (dashed line; an average of 1366 mRNAs per miRNA), the median fold change for all mRNAs with at least one conserved cognate canonical 7–8 nt site in their 3′ UTR (dotted line; an average of 461 mRNAs per miRNA), and the 95% interval for the median fold change of randomly selected mRNAs, determined using 1000 resamplings (without replacement) at each cutoff (shading). Conserved sites were defined as in TargetScan6, with conservation cutoffs for each site type set at different branch-length scores (cutoffs of 0.8, 1.3, and 1.6 for 8mer, 7mer-m8, and 7mer-A1 sites, respectively).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) This panel is as in Figure 5D, but shows the results for all algorithms evaluated in Figure 5A. Algorithm names are listed in the order of the median fold change for their top predictions, with each name colored using the color used for its cumulative distribution. (B and C) These panels are as in Figure 5E–F, respectively, but compare mean fold changes instead of median fold changes.DOI: http://dx.doi.org/10.7554/eLife.05005.018
+**Figure 5—figure supplement 1.:** (A) This panel is as in Figure 5D, but shows the results for all algorithms evaluated in Figure 5A. Algorithm names are listed in the order of the median fold change for their top predictions, with each name colored using the color used for its cumulative distribution. (B and C) These panels are as in Figure 5E–F, respectively, but compare mean fold changes instead of median fold changes.
 
 Part of the reason that some algorithms performed more poorly is that they consider relatively few potential miRNA–target interactions (Figure 5A). For example, the drop in performance observed between TargetScan.All and TargetScan.Cons illustrates the effect of limiting analysis to the more highly conserved sites. Nonetheless, the performance of TargetScan.Cons relative to other methods that consider relatively few sites shows that a signal can be observed in this assay even when a very limited number of interactions are scored (Figure 5A,B), presumably because much of the functional targeting is through conserved interactions. Indeed, the performance of ElMMO and TargetScan.PCT illustrate what can be achieved by scoring just the extent of site conservation and no other parameter.
 
@@ -171,33 +439,31 @@ To evaluate the performance of top-ranked predictions more systematically, we ex
 
 After eliminating interactions that could involve canonical 7–8 nt 3′-UTR sites, the remaining top predictions were modestly repressed at best (Figure 5F and Figure 5—figure supplement 1C). The most repressed predicted targets without canonical 7–8 nt 3′-UTR sites were those of the context++ model, which scored predictions with canonical 6mer 3′-UTR sites. For algorithms designed to identify many non-canonical sites, the top predictions without 7–8 nt 3′-UTR sites were essentially unresponsive to the transfected miRNA, which indicated that if effective non-canonical sites for these seven miRNAs exist, they are not enriched among the top predictions of these algorithms.
 
-## Similar response of targets predicted from the model and the most informative CLIP experiments
+### Similar response of targets predicted from the model and the most informative CLIP experiments
 
-We used our context++ model to overhaul the TargetScan predictions (as described in the next section), and as a third way of testing this model, we compared the performance of these TargetScan7 predictions with that of in vivo CLIP experiments. When doing this comparison we took care to evaluate sets of predictions that each were the same size as the cognate set of CLIP-supported targets, whereas some previous analyses compare expansive sets of computational predictions (e.g., all mRNAs with a 6mer site) to relatively small sets of biochemically supported predictions (
+We used our context++ model to overhaul the TargetScan predictions (as described in the next section), and as a third way of testing this model, we compared the performance of these TargetScan7 predictions with that of in vivo CLIP experiments. When doing this comparison we took care to evaluate sets of predictions that each were the same size as the cognate set of CLIP-supported targets, whereas some previous analyses compare expansive sets of computational predictions (e.g., all mRNAs with a 6mer site) to relatively small sets of biochemically supported predictions (Chi et al., 2009; Lipchina et al., 2011; Loeb et al., 2012; Grosswendt et al., 2014; Tan et al., 2014). mRNAs with expression signals approaching the array background were not considered. This exclusion was particularly important when comparing to CLIP results; CLIP can only evaluate mRNAs expressed in the cells, which would impart a trivial relative advantage if the computational predictions included targets that appeared unresponsive because they were expressed below the array background. The non-canonical CLIP-supported targets were also not considered, as we had already shown that they do not respond to the miRNA (Figure 1 and Figure 1—figure supplements 1–4), and we did not want the inclusion of these easily recognized false positives to impart a disadvantage to CLIP. Regardless of the set of canonical CLIP-supported targets examined, we did not find a setting in which they responded significantly better than did the cohort of TargetScan7 predictions, and in some cases, the TargetScan7 predictions performed significantly better (Figure 6A–J). Similar results were observed when comparing the repression of our predictions to that of mRNAs identified biochemically without crosslinking, using either pulldown-seq or IMPACT-seq (Tan et al., 2014), again focusing on only mRNAs with canonical sites (Figure 6K,L). Thus, for identifying consequential miRNA–target interactions, the TargetScan7 model is not only more convenient than experimental determination of binding sites, it is also at least as effective. The analogous conclusion was reached from analyses that used the context++ model without using the improved annotation and quantification of 3′-UTR isoforms (data not shown).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig6-v1.jpg)
 
-**Figure 6.:** (A–E) Comparison of the top TargetScan7 predicted targets to mRNAs with canonical sites identified from dCLIP in either HeLa cells with and without transfected miR-124 (Chi et al., 2009) or lymphocytes with and without miR-155 (Loeb et al., 2012). Plotted are cumulative distributions of mRNA fold changes after transfection of miR-124 in HeLa cells (A), or after genetic ablation of miR-155 in either T cells (B), Th1 cells (C), Th2 cells (D), and B cells (E) (one-sided K–S test, P values). For genes with alternative last exons, the analysis considered the score of the most abundant alternative last exon, as assessed by 3P-seq tags (as is the default for TargetScan7 when ranking predictions). Each dCLIP-identified mRNA was required to have a 3′-UTR CLIP cluster with at least one canonical site to the cognate miRNA (including 6mers but not offset 6mers). Each intersection mRNA (red) was found in both the dCLIP set and top TargetScan7 set. Similarity between performance of the TargetScan7 and dCLIP sets (purple and green, respectively) and TargetScan7 and intersection sets (blue and red, respectively) was tested (two-sided K–S test, P values); the number of mRNAs analyzed in each category is in parentheses. TargetScan7 scores for mouse mRNAs were generated using human parameters for all features. (F–H) Comparison of top TargetScan7 predicted targets to mRNAs with canonical binding sites identified using photoactivatable-ribonucleoside-enhanced CLIP (PAR-CLIP) (Hafner et al., 2010; Lipchina et al., 2011). Plotted are cumulative distributions of mRNA fold changes after either transfecting miR-7 (F) or miR-124 (G) into HEK293 cells, or knocking down miR-302/367 in hESCs (H). Otherwise these panels are as in (A–E). (I) Comparison of top TargetScan7 predicted targets to mRNAs with canonical sites identified using CLASH (Helwak et al., 2013). Plotted are cumulative distributions of mRNA fold changes after knockdown of 25 miRNAs from 14 miRNA families in HEK293 cells. For each of these miRNA families, a cohort of top TargetScan7 predictions was chosen to match the number of mRNAs with CLASH-identified canonical sites, and the union of these TargetScan7 cohorts was analyzed. The total number of TargetScan7 predictions did not match the number of CLASH-identified targets due to slightly different overlap between mRNAs targeted by different miRNAs. Otherwise these panels are as in (A–E). (J) Comparison of top TargetScan7 predicted targets to mRNAs with chimera-identified canonical sites (Grosswendt et al., 2014). Otherwise this panel is as in (I). (K) Comparison of top TargetScan7 predicted targets to mRNAs with canonical binding sites within 3′ UTRs of mRNAs identified using pulldown-seq (Tan et al., 2014). Plotted are cumulative distributions of mRNA fold changes after transfecting miR-522 into triple-negative breast cancer (TNBC) cells. Otherwise this panel is as in (A–E). (L) Comparison of top TargetScan7 predicted targets to mRNAs with canonical sites identified using IMPACT-seq (Tan et al., 2014). Otherwise this panel is as in (K).DOI: http://dx.doi.org/10.7554/eLife.05005.019
+**Figure 6.:** (A–E) Comparison of the top TargetScan7 predicted targets to mRNAs with canonical sites identified from dCLIP in either HeLa cells with and without transfected miR-124 (Chi et al., 2009) or lymphocytes with and without miR-155 (Loeb et al., 2012). Plotted are cumulative distributions of mRNA fold changes after transfection of miR-124 in HeLa cells (A), or after genetic ablation of miR-155 in either T cells (B), Th1 cells (C), Th2 cells (D), and B cells (E) (one-sided K–S test, P values). For genes with alternative last exons, the analysis considered the score of the most abundant alternative last exon, as assessed by 3P-seq tags (as is the default for TargetScan7 when ranking predictions). Each dCLIP-identified mRNA was required to have a 3′-UTR CLIP cluster with at least one canonical site to the cognate miRNA (including 6mers but not offset 6mers). Each intersection mRNA (red) was found in both the dCLIP set and top TargetScan7 set. Similarity between performance of the TargetScan7 and dCLIP sets (purple and green, respectively) and TargetScan7 and intersection sets (blue and red, respectively) was tested (two-sided K–S test, P values); the number of mRNAs analyzed in each category is in parentheses. TargetScan7 scores for mouse mRNAs were generated using human parameters for all features. (F–H) Comparison of top TargetScan7 predicted targets to mRNAs with canonical binding sites identified using photoactivatable-ribonucleoside-enhanced CLIP (PAR-CLIP) (Hafner et al., 2010; Lipchina et al., 2011). Plotted are cumulative distributions of mRNA fold changes after either transfecting miR-7 (F) or miR-124 (G) into HEK293 cells, or knocking down miR-302/367 in hESCs (H). Otherwise these panels are as in (A–E). (I) Comparison of top TargetScan7 predicted targets to mRNAs with canonical sites identified using CLASH (Helwak et al., 2013). Plotted are cumulative distributions of mRNA fold changes after knockdown of 25 miRNAs from 14 miRNA families in HEK293 cells. For each of these miRNA families, a cohort of top TargetScan7 predictions was chosen to match the number of mRNAs with CLASH-identified canonical sites, and the union of these TargetScan7 cohorts was analyzed. The total number of TargetScan7 predictions did not match the number of CLASH-identified targets due to slightly different overlap between mRNAs targeted by different miRNAs. Otherwise these panels are as in (A–E). (J) Comparison of top TargetScan7 predicted targets to mRNAs with chimera-identified canonical sites (Grosswendt et al., 2014). Otherwise this panel is as in (I). (K) Comparison of top TargetScan7 predicted targets to mRNAs with canonical binding sites within 3′ UTRs of mRNAs identified using pulldown-seq (Tan et al., 2014). Plotted are cumulative distributions of mRNA fold changes after transfecting miR-522 into triple-negative breast cancer (TNBC) cells. Otherwise this panel is as in (A–E). (L) Comparison of top TargetScan7 predicted targets to mRNAs with canonical sites identified using IMPACT-seq (Tan et al., 2014). Otherwise this panel is as in (K).
 
 As mentioned earlier, mRNAs that increase rather than decrease in the presence of the miRNA can indicate the presence of false positives in a set of candidate targets. Examination of the mRNA fold-change distributions from the perspective of false positives revealed no advantage of the experimental approaches over our predictions. When compared to the less informative CLIP datasets, the TargetScan7 predictions included fewer mRNAs that increased, and when compared to the CLIP datasets that performed as well as the predictions, the TargetScan7 predictions included a comparable number of mRNAs that increased, implying that the TargetScan7 predictions had no more false-positive predictions than did the best experimental datasets.
 
 Because some sets of canonical biochemically supported targets performed as well as their cohort of top TargetScan7 predictions, we considered the utility of focusing on mRNAs identified by both approaches. In each comparison, the set of mRNAs that were both canonical biochemically supported targets and within the cohort of top TargetScan7 predictions tended to be more responsive. However, these intersecting subsets included much fewer mRNAs than the original sets, and when compared to an equivalent number of top TargetScan7 predictions, each intersecting set performed no better than did its cohort of top TargetScan7 predictions (Figure 6). Therefore, considering the CLIP results to restrict the top predictions to a higher-confidence set is useful but not more useful than simply implementing a more stringent computational cutoff. Likewise, taking the union of the CLIP-supported targets and the cohort of predictions, rather than the intersection, did not generate a set of targets that was more responsive than an equivalent number of top TargetScan7 predictions (data not shown).
 
-## The TargetScan database (v7.0)
+### The TargetScan database (v7.0)
 
 As already mentioned, we used the context++ model to rank miRNA target predictions to be presented in version 7 of the TargetScan database (targetscan.org), thereby making our results accessible to others working on miRNAs. For simplicity, we had developed the context++ model using mRNAs without abundant alternative 3′-UTR isoforms, and to make fair comparisons with the output of previous models, we had tested the context++ model using only the longest RefSeq-annotated isoform. Nevertheless, considering the usage of alternative 3′-UTR isoforms, which can influence both the presence and scoring of target sites, significantly improves the performance of miRNA targeting models (Nam et al., 2014). Thus, our overhaul of the TargetScan predictions incorporated both the context++ scores and current isoform information when ranking mRNAs with canonical 7–8 nt miRNA sites in their 3′ UTRs. The resulting improvements applied to the predictions centered on human, mouse, and zebrafish 3′ UTRs (TargetScanHuman, TargetScanMouse, and TargetScanFish, respectively); and by 3′-UTR homology, to the conserved and nonconserved predictions in chimp, rhesus, rat, cow, dog, opossum, chicken, and frog; as well as to the conserved predictions in 74 other sequenced vertebrate species, thereby providing a valuable resource for placing miRNAs into gene-regulatory networks.
 
 Because the main gene-annotation databases (e.g., RefSeq and Ensembl/Gencode) are still in the process of incorporating the information available on 3′-UTR isoforms, the first step in the TargetScan overhaul was to compile a set of reference 3′ UTRs that represented the longest 3′-UTR isoforms for representative ORFs of human, mouse, and zebrafish. These representative ORFs were chosen among the set of transcript annotations sharing the same stop codon, with alternative last exons generating multiple representative ORFs per gene. The human and mouse databases started with Gencode annotations (Harrow et al., 2012), for which 3′ UTRs were extended, when possible, using RefSeq annotations (Pruitt et al., 2012), recently identified long 3′-UTR isoforms (Miura et al., 2013), and 3P-seq clusters marking more distal cleavage and polyadenylation sites (Nam et al., 2014). Zebrafish reference 3′ UTRs were similarly derived in a recent 3P-seq study (Ulitsky et al., 2012).
 
-For each of these reference 3′-UTR isoforms, 3P-seq datasets were used to quantify the relative abundance of tandem isoforms, thereby generating the isoform profiles needed to score features that vary with 3′-UTR length (len_3UTR, min_dist, and off6m) and assign a weight to the context++ score of each site, which accounted for the fraction of 3′-UTR molecules containing the site (
+For each of these reference 3′-UTR isoforms, 3P-seq datasets were used to quantify the relative abundance of tandem isoforms, thereby generating the isoform profiles needed to score features that vary with 3′-UTR length (len_3UTR, min_dist, and off6m) and assign a weight to the context++ score of each site, which accounted for the fraction of 3′-UTR molecules containing the site (Nam et al., 2014). For each representative ORF, our new web interface depicts the 3′-UTR isoform profile and indicates how the isoforms differ from the longest Gencode annotation (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig7-v1.jpg)
 
-**Figure 7.:** The example shows a TargetScanHuman page for the 3′ UTR of the LRRC1 gene. At the top is the 3′-UTR profile, showing the relative expression of tandem 3′-UTR isoforms, as measured using 3P-seq (Nam et al., 2014). Shown on this profile is the end of the longest Gencode annotation (blue vertical line) and the total number of 3P-seq reads (339) used to generate the profile (labeled on the y-axis). Below the profile are predicted conserved sites for miRNAs broadly conserved among vertebrates (colored according to the key), with options to display conserved sites for mammalian conserved miRNAs, or poorly conserved sites for any set of miRNAs. Boxed are the predicted miR-124 sites, with the site selected by the user indicated with a darker box. The multiple sequence alignment shows the species in which an orthologous site can be detected (white highlighting) among representative vertebrate species, with the option to display site conservation among all 84 vertebrate species. Below the alignment is the predicted consequential pairing between the selected miRNA and its sites, showing also for each site its position, site type, context++ score, context++ score percentile, weighted context++ score, branch-length score, and PCT score.DOI: http://dx.doi.org/10.7554/eLife.05005.020
+**Figure 7.:** The example shows a TargetScanHuman page for the 3′ UTR of the LRRC1 gene. At the top is the 3′-UTR profile, showing the relative expression of tandem 3′-UTR isoforms, as measured using 3P-seq (Nam et al., 2014). Shown on this profile is the end of the longest Gencode annotation (blue vertical line) and the total number of 3P-seq reads (339) used to generate the profile (labeled on the y-axis). Below the profile are predicted conserved sites for miRNAs broadly conserved among vertebrates (colored according to the key), with options to display conserved sites for mammalian conserved miRNAs, or poorly conserved sites for any set of miRNAs. Boxed are the predicted miR-124 sites, with the site selected by the user indicated with a darker box. The multiple sequence alignment shows the species in which an orthologous site can be detected (white highlighting) among representative vertebrate species, with the option to display site conservation among all 84 vertebrate species. Below the alignment is the predicted consequential pairing between the selected miRNA and its sites, showing also for each site its position, site type, context++ score, context++ score percentile, weighted context++ score, branch-length score, and PCT score.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/05005/elife-05005-fig7-figsupp1-v1.jpg)
-
-**Figure 7—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05005.021
 
 3P-seq data were available for seven developmental stages or tissues of zebrafish, enabling isoform profiles to be generated and predictions to be tailored for each of these. For human and mouse, however, 3P-seq data were available for only a small fraction of tissues/cell types that might be most relevant for end users, and thus results from all 3P-seq datasets available for each species were combined to generate a meta 3′-UTR isoform profile for each representative ORF. Although this approach reduces accuracy of predictions involving differentially expressed tandem isoforms, it nonetheless outperforms the previous approach of not considering isoform abundance at all, presumably because isoform profiles for many genes are highly correlated in diverse cell types (Nam et al., 2014).
 
@@ -235,21 +501,127 @@ Our overhaul of the TargetScan website integrated the output of the context++ mo
 
 ## Materials and methods
 
-## Microarray, RNA-seq, and RPF dataset processing
+### Microarray, RNA-seq, and RPF dataset processing
 
-A list of microarray, RNA-seq, ribosome profiling, and proteomic datasets used for analyses, as well as the corresponding figures in which they were used, is provided (Table 2). We considered developing the model using RNA-seq data rather than microarray data, but microarray datasets were still much more plentiful and were equally suitable for measuring the effects of sRNAs. Unless pre-processed microarray data were provided by previous studies (as indicated in Table 2), raw data were processed using Bioconductor release 2.14 in the R programming language v3.1.1 (Gentleman et al., 2004; Development Core Team, 2014). Affymetrix data were first background-corrected with the ‘gcrma’ R package (Wu et al., 2004), whereas Illumina BeadArray data from the miR-302 knockdown and miR-522 transfection datasets (Lipchina et al., 2011; Tan et al., 2014) were processed and background-corrected using the ‘lumiR’ and ‘lumiExpresso’ functions in the ‘lumi’ R package (Du et al., 2008). A robust linear regression model was then used to fit to the probe intensities using the ‘lmFit’ function (parameter ‘method = ‘robust’’) in the ‘limma’ R package v3.6.9 (Smyth, 2004, 2005), computing differential expression information with the provided eBayes function. Probe IDs were then converted to RefSeq or Ensembl IDs (e.g., using the hgu133plus2ENSEMBL and IlluminaID2nuID/lumiHumanAllENSEMBL functions to convert Affymetrix and BeadArray probe IDs, respectively), and the fold change for each mRNA was computed as the median fold change for all probes corresponding to the mRNA. Finally, because about half of the genes in the genome were either not expressed in the cell type examined, or were expressed at a level that was so close to the background that they were prone to have noisy fold-change measurements, the following filters were applied:i. For microarray datasets examining the effect of either knocking down either miR-92 or 25 miRNA families in HEK293 cells (Hafner et al., 2010; Helwak et al., 2013), transfecting miR-7 or miR-124 into HEK293 cells (Hausser et al., 2009), knocking out miR-155 in Th1 or Th2 cells (Rodriguez et al., 2007), or transfecting each of the 7 miRNAs in HCT116 cells (Linsley et al., 2007), we computed the mean signal for each mRNA (averaging the signal with and without the miRNA), and retained mRNAs exceeding the median of this distribution.ii. For microarray datasets examining the effect of injecting miR-430 into MZDicer embryos (Giraldez et al., 2006) or knocking out miR-155 in T cells (Loeb et al., 2012), we required the mean signal intensity of an mRNA to exceed 3.0 and 2.5, respectively.iii. For Illumina BeadArray datasets examining the effect of either knocking down miR-302/367 (Lipchina et al., 2011) or transfecting miR-522 (Tan et al., 2014), we required the mean signal intensity to exceed 7.5 and 7.0, respectively.iv. For all 74 small-RNA transfections of HeLa cells, we required mRNA expression levels to exceed 10 reads per million (RPM), as quantified by RNA-seq in mock-transfected HeLa cells (Guo et al., 2010).v. For analysis of RNA-seq or RPF datasets examining the effect of either losing Dicer in zebrafish embryos (Bazzini et al., 2012), transfecting miR-124 into HEK293, HeLa, or Huh7 cells (Nam et al., 2014), or knocking out miR-155 in B cells (Eichhorn et al., 2014), we required mRNA expression levels to exceed 10 RPM, as quantified in the condition lacking the perturbed miRNA.vi. For analysis of proteomic results, we used the pre-computed data provided in the table of significantly detectable peptides (Selbach et al., 2008).10.7554/eLife.05005.022Table 2.Summary of datasets analyzed in this study, and corresponding figures using the datasetsDOI: http://dx.doi.org/10.7554/eLife.05005.022FigureGene expression omnibus (GEO) ID, ArrayExpress ID, or data sourceReferenceFigure 1A, Figure 1—figure supplement 4AGSM854425, GSM854430, GSM854431, GSM854436, GSM854437, GSM854442, GSM854443(Bazzini et al., 2012)Figure 1B, Figure 6BGSM1012118, GSM1012119, GSM1012120, GSM1012121, GSM1012122, GSM1012123(Loeb et al., 2012)Figure 1C, Figure 1—figure supplement 2A, Figure 6C,DE-TABM-232(Rodriguez et al., 2007)Figure 1D,FGSM1122217, GSM1122218, GSM1122219, GSM1122220, GSM1122221, GSM1122222, GSM1122223, GSM1122224, GSM1122225, GSM1122226(Helwak et al., 2013)Figure 1E, Figure 1—figure supplement 3A–D, Figure 6I,JGSM538818, GSM538819, GSM538820, GSM538821(Hafner et al., 2010)Figure 1GGSM156524, GSM156532, GSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, http://psilac.mdc-berlin.de/download/ (let7b_32h, miR-30_32h, miR-155_32h, miR-16_32h)(Lim et al., 2005; Grimson et al., 2007; Linsley et al., 2007; Selbach et al., 2008)Figure 1H, Figure 6K,LE-MTAB-2110(Tan et al., 2014)Figure 1I, Figure 1—figure supplement 2B, Figure 6EGSM1479572, GSM1479576, GSM1479580, GSM1479584(Eichhorn et al., 2014)Figure 1—figure supplement 1AGSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, GSM37601(Lim et al., 2005; Grimson et al., 2007)Figure 1—figure supplement 1B, Figure 3, Figure 3—figure supplement 1B,C, Figure 474 datasets compiled in Supplementary data 4 of Garcia et al. (2011), used as is or after normalization (Supplementary file 1); GSM119707, GSM119708, GSM119710, GSM119743, GSM119745, GSM119746, GSM119747, GSM119749, GSM119750, GSM119759, GSM119761, GSM119762, GSM119763, GSM133685, GSM133689, GSM133699, GSM133700, GSM134325, GSM134327, GSM134466, GSM134480, GSM134483, GSM134485, GSM134511, GSM134512, GSM134551, GSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, GSM37601; E-MEXP-1402 (1595297366, 1595297383, 1595297389, 1595297394, 1595297399, 1595297422, 1595297427, 1595297432, 1595297491, 1595297496, 1595297501, 1595297507, 1595297513, 1595297518, 1595297524, 1595297530, 1595297535, 1595297564, 1595297588, 1595297595, 1595297605, 1595297614, 1595297621, 1595297627, 1595297644, 1595297650, 1595297662); E-MEXP-668 (16012097016666, 16012097016667, 16012097016668, 16012097016669, 16012097017938, 16012097017939, 16012097017952, 16012097017953, 16012097018568, 251209725411)(Lim et al., 2005; Birmingham et al., 2006; Schwarz et al., 2006; Jackson et al., 2006a; Jackson et al., 2006b; Grimson et al., 2007; Anderson et al., 2008)Figure 1—figure supplement 1CGSM95614, GSM95615, GSM95616, GSM95617, GSM95618, GSM95619(Giraldez et al., 2006)Figure 1—figure supplement 1D,FGSM1269344, GSM1269345, GSM1269348, GSM1269349, GSM1269350, GSM1269351, GSM1269354, GSM1269355, GSM1269356, GSM1269357, GSM1269360, GSM1269361, GSM1269362, GSM1269363(Nam et al., 2014)Figure 1—figure supplement 3E, Figure 6Hhttp://icb.med.cornell.edu/faculty/betel/lab/betelab_v1/Data.html(Lipchina et al., 2011)Figure 1—figure supplement 4Bhttp://psilac.mdc-berlin.de/media/database/release-1.0/protein/pSILAC_all_protein_ratios_OE.txt (miR155)(Selbach et al., 2008)Figure 3—figure supplement 1AGSM416753(Mayr and Bartel, 2009)Figure 5, Figure 5—figure supplement 1GSM156522, GSM156580, GSM156557, GSM156548, GSM156533, GSM156532, GSM156524, processed and normalized (Supplementary file 2)(Linsley et al., 2007)Figure 6AGSM37601(Lim et al., 2005)Figure 6F,GGSM363763, GSM363766, GSM363769, GSM363772, GSM363775, GSM363778(Hausser et al., 2009)
+A list of microarray, RNA-seq, ribosome profiling, and proteomic datasets used for analyses, as well as the corresponding figures in which they were used, is provided (Table 2). We considered developing the model using RNA-seq data rather than microarray data, but microarray datasets were still much more plentiful and were equally suitable for measuring the effects of sRNAs. Unless pre-processed microarray data were provided by previous studies (as indicated in Table 2), raw data were processed using Bioconductor release 2.14 in the R programming language v3.1.1 (Gentleman et al., 2004; Development Core Team, 2014). Affymetrix data were first background-corrected with the ‘gcrma’ R package (Wu et al., 2004), whereas Illumina BeadArray data from the miR-302 knockdown and miR-522 transfection datasets (Lipchina et al., 2011; Tan et al., 2014) were processed and background-corrected using the ‘lumiR’ and ‘lumiExpresso’ functions in the ‘lumi’ R package (Du et al., 2008). A robust linear regression model was then used to fit to the probe intensities using the ‘lmFit’ function (parameter ‘method = ‘robust’’) in the ‘limma’ R package v3.6.9 (Smyth, 2004, 2005), computing differential expression information with the provided eBayes function. Probe IDs were then converted to RefSeq or Ensembl IDs (e.g., using the hgu133plus2ENSEMBL and IlluminaID2nuID/lumiHumanAllENSEMBL functions to convert Affymetrix and BeadArray probe IDs, respectively), and the fold change for each mRNA was computed as the median fold change for all probes corresponding to the mRNA. Finally, because about half of the genes in the genome were either not expressed in the cell type examined, or were expressed at a level that was so close to the background that they were prone to have noisy fold-change measurements, the following filters were applied:i. For microarray datasets examining the effect of either knocking down either miR-92 or 25 miRNA families in HEK293 cells (Hafner et al., 2010; Helwak et al., 2013), transfecting miR-7 or miR-124 into HEK293 cells (Hausser et al., 2009), knocking out miR-155 in Th1 or Th2 cells (Rodriguez et al., 2007), or transfecting each of the 7 miRNAs in HCT116 cells (Linsley et al., 2007), we computed the mean signal for each mRNA (averaging the signal with and without the miRNA), and retained mRNAs exceeding the median of this distribution.ii. For microarray datasets examining the effect of injecting miR-430 into MZDicer embryos (Giraldez et al., 2006) or knocking out miR-155 in T cells (Loeb et al., 2012), we required the mean signal intensity of an mRNA to exceed 3.0 and 2.5, respectively.iii. For Illumina BeadArray datasets examining the effect of either knocking down miR-302/367 (Lipchina et al., 2011) or transfecting miR-522 (Tan et al., 2014), we required the mean signal intensity to exceed 7.5 and 7.0, respectively.iv. For all 74 small-RNA transfections of HeLa cells, we required mRNA expression levels to exceed 10 reads per million (RPM), as quantified by RNA-seq in mock-transfected HeLa cells (Guo et al., 2010).v. For analysis of RNA-seq or RPF datasets examining the effect of either losing Dicer in zebrafish embryos (Bazzini et al., 2012), transfecting miR-124 into HEK293, HeLa, or Huh7 cells (Nam et al., 2014), or knocking out miR-155 in B cells (Eichhorn et al., 2014), we required mRNA expression levels to exceed 10 RPM, as quantified in the condition lacking the perturbed miRNA.vi. For analysis of proteomic results, we used the pre-computed data provided in the table of significantly detectable peptides (Selbach et al., 2008).
+
+**Table 2.**
+ Summary of datasets analyzed in this study, and corresponding figures using the datasets
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Gene expression omnibus (GEO) ID, ArrayExpress ID, or data source</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1A, Figure 1—figure supplement 4A</td>
+      <td>GSM854425, GSM854430, GSM854431, GSM854436, GSM854437, GSM854442, GSM854443</td>
+      <td>(Bazzini et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Figure 1B, Figure 6B</td>
+      <td>GSM1012118, GSM1012119, GSM1012120, GSM1012121, GSM1012122, GSM1012123</td>
+      <td>(Loeb et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Figure 1C, Figure 1—figure supplement 2A, Figure 6C,D</td>
+      <td>E-TABM-232</td>
+      <td>(Rodriguez et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>Figure 1D,F</td>
+      <td>GSM1122217, GSM1122218, GSM1122219, GSM1122220, GSM1122221, GSM1122222, GSM1122223, GSM1122224, GSM1122225, GSM1122226</td>
+      <td>(Helwak et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Figure 1E, Figure 1—figure supplement 3A–D, Figure 6I,J</td>
+      <td>GSM538818, GSM538819, GSM538820, GSM538821</td>
+      <td>(Hafner et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Figure 1G</td>
+      <td>GSM156524, GSM156532, GSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, http://psilac.mdc-berlin.de/download/ (let7b_32h, miR-30_32h, miR-155_32h, miR-16_32h)</td>
+      <td>(Lim et al., 2005; Grimson et al., 2007; Linsley et al., 2007; Selbach et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Figure 1H, Figure 6K,L</td>
+      <td>E-MTAB-2110</td>
+      <td>(Tan et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Figure 1I, Figure 1—figure supplement 2B, Figure 6E</td>
+      <td>GSM1479572, GSM1479576, GSM1479580, GSM1479584</td>
+      <td>(Eichhorn et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1A</td>
+      <td>GSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, GSM37601</td>
+      <td>(Lim et al., 2005; Grimson et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1B, Figure 3, Figure 3—figure supplement 1B,C, Figure 4</td>
+      <td>74 datasets compiled in Supplementary data 4 of Garcia et al. (2011), used as is or after normalization (Supplementary file 1); GSM119707, GSM119708, GSM119710, GSM119743, GSM119745, GSM119746, GSM119747, GSM119749, GSM119750, GSM119759, GSM119761, GSM119762, GSM119763, GSM133685, GSM133689, GSM133699, GSM133700, GSM134325, GSM134327, GSM134466, GSM134480, GSM134483, GSM134485, GSM134511, GSM134512, GSM134551, GSM210897, GSM210898, GSM210901, GSM210903, GSM210904, GSM210907, GSM210909, GSM210911, GSM210913, GSM37599, GSM37601; E-MEXP-1402 (1595297366, 1595297383, 1595297389, 1595297394, 1595297399, 1595297422, 1595297427, 1595297432, 1595297491, 1595297496, 1595297501, 1595297507, 1595297513, 1595297518, 1595297524, 1595297530, 1595297535, 1595297564, 1595297588, 1595297595, 1595297605, 1595297614, 1595297621, 1595297627, 1595297644, 1595297650, 1595297662); E-MEXP-668 (16012097016666, 16012097016667, 16012097016668, 16012097016669, 16012097017938, 16012097017939, 16012097017952, 16012097017953, 16012097018568, 251209725411)</td>
+      <td>(Lim et al., 2005; Birmingham et al., 2006; Schwarz et al., 2006; Jackson et al., 2006a; Jackson et al., 2006b; Grimson et al., 2007; Anderson et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1C</td>
+      <td>GSM95614, GSM95615, GSM95616, GSM95617, GSM95618, GSM95619</td>
+      <td>(Giraldez et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1D,F</td>
+      <td>GSM1269344, GSM1269345, GSM1269348, GSM1269349, GSM1269350, GSM1269351, GSM1269354, GSM1269355, GSM1269356, GSM1269357, GSM1269360, GSM1269361, GSM1269362, GSM1269363</td>
+      <td>(Nam et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3E, Figure 6H</td>
+      <td>http://icb.med.cornell.edu/faculty/betel/lab/betelab_v1/Data.html</td>
+      <td>(Lipchina et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 4B</td>
+      <td>http://psilac.mdc-berlin.de/media/database/release-1.0/protein/pSILAC_all_protein_ratios_OE.txt (miR155)</td>
+      <td>(Selbach et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1A</td>
+      <td>GSM416753</td>
+      <td>(Mayr and Bartel, 2009)</td>
+    </tr>
+    <tr>
+      <td>Figure 5, Figure 5—figure supplement 1</td>
+      <td>GSM156522, GSM156580, GSM156557, GSM156548, GSM156533, GSM156532, GSM156524, processed and normalized (Supplementary file 2)</td>
+      <td>(Linsley et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>GSM37601</td>
+      <td>(Lim et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Figure 6F,G</td>
+      <td>GSM363763, GSM363766, GSM363769, GSM363772, GSM363775, GSM363778</td>
+      <td>(Hausser et al., 2009)</td>
+    </tr>
+  </tbody>
+</table>
 
 These thresholds were chosen based upon visual inspection of plots evaluating the relationship between mean expression level and fold change (commonly known as ‘MA plots’ in the context of microarrays), attempting to balance the tradeoff between maximal sample size and reduced noise. The overall conclusions were robust to the choice of the threshold. After imposing the threshold, all fold-change values were centered by subtracting the median fold-change value of the ‘no-site’ mRNAs in each sRNA perturbation experiment, except in the case of Figure 5—figure supplement 1B,C, in which data were mean-centered.
 
-## Crosslinking and other interactome datasets
+### Crosslinking and other interactome datasets
 
 When available, target genes identified using high-throughput CLIP data were collected from the supplemental materials of the corresponding studies (Lipchina et al., 2011; Loeb et al., 2012; Helwak et al., 2013; Grosswendt et al., 2014). For the original PAR-CLIP study (Hafner et al., 2010), targets were inferred from an online resource of all endogenous HEK293 clusters (http://www.mirz.unibas.ch/restricted/clipdata/RESULTS/CLIP_microArray/Antago_mir_vs_ALL_AGO.txt) as well as clusters observed after transfection of either miR-7 (http://www.mirz.unibas.ch/restricted/clipdata/RESULTS/miR7_TRANSFECTION/miR7_TRANSFECTION.html) or miR-124 (http://www.mirz.unibas.ch/restricted/clipdata/RESULTS/miR124_TRANSFECTION/miR124_TRANSFECTION.html). For dCLIP-supported miR-124 sites identified in the original high-throughput CLIP study (Chi et al., 2009), we used clusters whose genomic coordinates were provided by SW Chi (Supplementary file 3), extracting the corresponding sequences using the ‘getfasta’ utility in BEDTools v2.20.1 (parameters ‘-s -name -tab ’) (Quinlan and Hall, 2010). When evaluating the function of non-canonical sites supported by CLIP or IMPACT-seq (Figure 1 and Figure 1—figure supplements 1–4), a cluster (or CLASH/chimera interaction) with a 6–8mer site (but not only an offset-6mer site, unless otherwise indicated in the figure legends) corresponding to the cognate miRNA was classified as harboring a canonical site. Otherwise, the cluster (or CLASH/chimera interaction) was classified as containing a non-canonical site, and the corresponding mRNA was carried forward for functional evaluation as a non-canonical CLIP-supported target if it also had no cognate 6–8mer sites (but allowing offset-6mer sites) in its 3′ UTR (using either RefSeq or Ensembl 3′-UTR annotations as appropriate for the gene IDs published by the CLIP study). When comparing the response of canonical CLIP-supported targets to that of TargetScan7 predictions (Figure 6), the canonical CLIP-supported sites were additionally required to fall within (and on the same DNA strand as) annotated 3′ UTRs, as evaluated by the intersectBED utility in BEDTools v2.20.1 (parameter ‘-s’) (Quinlan and Hall, 2010).
 
-## Motif discovery for non-canonical binding sites
+### Motif discovery for non-canonical binding sites
 
 To identify non-canonical modes of binding, all CLASH interactions assigned to a particular miRNA family (defined as all mature miRNA sequences sharing a common sequence in nucleotide positions 2–8) were collected. Interactions containing the cognate canonical site type (offset 6mer, 6mer, 7mer-m8, 7mer-A1, or 8mer) were removed. For all miRNA families with at least 50 unique CLASH interactions remaining, enriched motifs were evaluated using MEME version 4.9.0 (parameters ‘-p 100 -dna -mod zoops -nmotifs 10 -minw 4 -maxw 8 -maxsize 1,000,000,000’) (Bailey and Elkan, 1994). All motifs with an E-value < 10−3 are reported along with their E-values rounded to the nearest log-unit. Instances in which a top-ranked motif exceeded this E-value were also reported if the motif was an approximate complementary match to the miRNA. For each miRNA family, the top motif identified by MEME was aligned to a representative mature miRNA using FIMO (parameters ‘--norc--motif 1 --thresh 0.01’) (Grant et al., 2011), considering the reverse complement of the mature miRNA with the last nucleotide of this reverse complement changed to an A (to capture the enrichment of an adenosine across from the 5′ nucleotide of a miRNA, as occurs in 8mer and 7mer-A1 sites). Logos were also manually examined to determine if any mapped to the mature miRNA with a bulged nucleotide. The same procedure was performed for chimera interactions, for dCLIP clusters reported for miR-124 and miR-155, and for IMPACT-seq clusters reported for miR-522.
 
-## Microarray dataset normalization
+### Microarray dataset normalization
 
 For each of the 74 transfection experiments of the compendium (Table 2), data were first partitioned into the mRNA fold changes (log2) measured in the given experiment (the response variable) as well as a matrix of the corresponding mRNA fold changes for the remaining 73 datasets (the predictor variables). A PLSR model was then trained to predict the response using information from the predictor variables. When training the model, PLSR took into account the correlated structure of the predictor matrix, decomposing it into a low-dimensional representation that maximally explained the response variable.
 
@@ -257,35 +629,164 @@ Stating the procedure more formally, let Z be an n x m matrix consisting of log2
 
 An analogous normalization procedure was performed for each of the seven transfection experiments of the test set (Supplementary file 2).
 
-## RNA structure prediction
+### RNA structure prediction
 
 3′ UTRs were folded locally using RNAplfold (Bernhart et al., 2006), allowing the maximal span of a base pair to be 40 nucleotides, and averaging pair probabilities over an 80 nt window (parameters -L 40 -W 80), parameters found to be optimal when evaluating siRNA efficacy (Tafer et al., 2008). For each position 15 nt upstream and downstream of a target site, and for 1–15 nt windows beginning at each position, the partial correlation of the log10(unpaired probability) to the log2(mRNA fold change) associated with the site was plotted, controlling for known determinants of targeting used in the context+ model, which include min_dist, local_AU, 3P_score, SPS, and TA (Garcia et al., 2011). For the final predicted SA score used as a feature, we computed the log10 of the probability that a 14-nt segment centered on the match to sRNA positions 7 and 8 was unpaired.
 
-## Calculation of PCT scores
+### Calculation of PCT scores
 
 We updated human PCT scores using the following datasets: (i) 3′ UTRs derived from 19,800 human protein-coding genes annotated in Gencode version 19 (Harrow et al., 2012), and (ii) 3′-UTR multiple sequence alignments (MSAs) across 84 vertebrate species derived from the 100-way multiz alignments in the UCSC genome browser, which used the human genome release hg19 as a reference species (Kent et al., 2002; Karolchik et al., 2014). We used only 84 of the 100 species because, with the exception of coelacanth (a lobe-finned fish more related to the tetrapods), the fish species were excluded due to their poor quality of alignment within 3′ UTRs. Likewise, we updated the mouse scores using: (i) 3′ UTRs derived from 19,699 mouse protein-coding genes annotated in Ensembl 77 (Flicek et al., 2014), and (ii) 3′-UTR MSAs across 52 vertebrate species derived from the 60-way multiz alignments in the UCSC genome browser, which used the mouse genome release mm10 as a reference species (Kent et al., 2002; Karolchik et al., 2014). As before, we partitioned 3′ UTRs into ten conservation bins based upon the median branch-length score (BLS) of the reference-species nucleotides (Friedman et al., 2009). However, to estimate branch lengths of the phylogenetic trees for each bin, we concatenated alignments within each bin using the ‘msa_view’ utility in the PHAST package v1.1 (parameters ‘--unordered-ss--in-format SS--out-format SS--aggregate $species_list--seqs $species_subset’, where $species_list contains the entire species tree topology and $species_subset contains the topology of the subtree spanning the placental mammals) (Siepel and Haussler, 2004). We then fit trees for each bin using the ‘phyloFit’ utility in the PHAST package v1.1, utilizing the generalized time-reversible substitution model and a fixed-tree topology provided by UCSC (parameters ‘-i SS--subst-mod REV--tree $tree’, where $tree is the Newick format tree of the placental mammals) (Siepel and Haussler, 2004). PCT parameters and scores were then calculated as described, estimating the signal of conservation for each seed family relative to that of its corresponding 50 control k-mers, matched for k-mer length and rate of dinucleotide conservation at varying branch-length windows (Friedman et al., 2009). All phylogenetic trees and PCT parameters are available for download at the TargetScan website (targetscan.org).
 
-## Selection of mRNAs for regression modeling
+### Selection of mRNAs for regression modeling
 
 The mRNAs were selected to avoid those from genes with multiple highly expressed alternative 3′-UTR isoforms, which would have otherwise obscured the accurate measurement of features such as len_3UTR or min_dist, and also created situations in which the response was diminished because some isoforms lacked the target site. HeLa 3P-seq results (Nam et al., 2014) were used to identify genes in which a dominant 3′-UTR isoform comprised ≥90% of the transcripts (Supplementary file 1). For each of these genes, the mRNA with the dominant 3′-UTR isoform was carried forward, together with the ORF and 5′-UTR annotations previously chosen from RefSeq (Garcia et al., 2011). Sequences of these mRNA models are provided as Supplemental material at http://bartellab.wi.mit.edu/publication.html. To prevent the presence of multiple 3′-UTR sites to the transfected sRNA from confounding attribution of an mRNA change to an individual site, these mRNAs were further filtered within each dataset to consider only mRNAs that contained a single 3′-UTR site (either an 8mer, 7mer-m8, 7mer-A1, or 6mer) to the cognate sRNA.
 
-## Scaling the scores of each feature
+### Scaling the scores of each feature
 
-Features that exhibited skewed distributions, such as len_5UTR, len_ORF, and len_3UTR were log10 transformed (Table 1), which made their distributions approximately normal. These and other continuous features were then normalized to the (0, 1) interval as described (e.g., see Supplementary Figure 5 in Garcia et al., 2011), except a trimmed normalization was implemented to prevent outlier values from distorting the normalized distributions. For each value, the 5th percentile of the feature was subtracted from the value, and the resulting quantity was divided by the difference between the 95th and 5th percentiles of the feature. Percentile values are provided for the subset of continuous features that were scaled (Table 3). The trimmed normalization facilitated comparison of the contributions of different features to the model, with absolute values of the coefficients serving as a rough indication of their relative importance.10.7554/eLife.05005.023Table 3.Scaling parameters used to normalize data to the (0, 1) intervalDOI: http://dx.doi.org/10.7554/eLife.05005.023Feature8mer7mer-m87mer-A16mer5th %95th %5th %95th %5th %95th %5th %95th %3P_score1.0003.5001.0003.5001.0003.5001.0003.500SPS−11.130−5.520−11.130−5.490−8.410−3.330−8.570−3.330TA_3UTR3.1133.8653.0673.8873.1453.8873.1133.887Len_3UTR2.3923.6372.4093.6152.4133.6302.4053.620Len_ORF2.7883.7532.7733.7292.7733.7302.7753.731Min_dist1.4153.1131.4913.0961.4313.1171.4773.106Local_AU0.3080.8140.2770.7820.3420.8010.2950.772SA−4.356−0.661−5.218−0.725−4.230−0.588−5.082−0.666PCT0.0000.8160.0000.3640.0000.4490.0000.193Provided are the 5th and 95th percentile values for continuous features that were scaled, after the values of the feature were appropriately transformed as indicated (Table 1).
+Features that exhibited skewed distributions, such as len_5UTR, len_ORF, and len_3UTR were log10 transformed (Table 1), which made their distributions approximately normal. These and other continuous features were then normalized to the (0, 1) interval as described (e.g., see Supplementary Figure 5 in Garcia et al., 2011), except a trimmed normalization was implemented to prevent outlier values from distorting the normalized distributions. For each value, the 5th percentile of the feature was subtracted from the value, and the resulting quantity was divided by the difference between the 95th and 5th percentiles of the feature. Percentile values are provided for the subset of continuous features that were scaled (Table 3). The trimmed normalization facilitated comparison of the contributions of different features to the model, with absolute values of the coefficients serving as a rough indication of their relative importance.
 
-## Stepwise regression and multiple linear regression models
+**Table 3.**
+ Scaling parameters used to normalize data to the (0, 1) interval
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Feature</th>
+      <th colspan="2">8mer</th>
+      <th colspan="2">7mer-m8</th>
+      <th colspan="2">7mer-A1</th>
+      <th colspan="2">6mer</th>
+    </tr>
+    <tr>
+      <th>5th %</th>
+      <th>95th %</th>
+      <th>5th %</th>
+      <th>95th %</th>
+      <th>5th %</th>
+      <th>95th %</th>
+      <th>5th %</th>
+      <th>95th %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3P_score</td>
+      <td>1.000</td>
+      <td>3.500</td>
+      <td>1.000</td>
+      <td>3.500</td>
+      <td>1.000</td>
+      <td>3.500</td>
+      <td>1.000</td>
+      <td>3.500</td>
+    </tr>
+    <tr>
+      <td>SPS</td>
+      <td>−11.130</td>
+      <td>−5.520</td>
+      <td>−11.130</td>
+      <td>−5.490</td>
+      <td>−8.410</td>
+      <td>−3.330</td>
+      <td>−8.570</td>
+      <td>−3.330</td>
+    </tr>
+    <tr>
+      <td>TA_3UTR</td>
+      <td>3.113</td>
+      <td>3.865</td>
+      <td>3.067</td>
+      <td>3.887</td>
+      <td>3.145</td>
+      <td>3.887</td>
+      <td>3.113</td>
+      <td>3.887</td>
+    </tr>
+    <tr>
+      <td>Len_3UTR</td>
+      <td>2.392</td>
+      <td>3.637</td>
+      <td>2.409</td>
+      <td>3.615</td>
+      <td>2.413</td>
+      <td>3.630</td>
+      <td>2.405</td>
+      <td>3.620</td>
+    </tr>
+    <tr>
+      <td>Len_ORF</td>
+      <td>2.788</td>
+      <td>3.753</td>
+      <td>2.773</td>
+      <td>3.729</td>
+      <td>2.773</td>
+      <td>3.730</td>
+      <td>2.775</td>
+      <td>3.731</td>
+    </tr>
+    <tr>
+      <td>Min_dist</td>
+      <td>1.415</td>
+      <td>3.113</td>
+      <td>1.491</td>
+      <td>3.096</td>
+      <td>1.431</td>
+      <td>3.117</td>
+      <td>1.477</td>
+      <td>3.106</td>
+    </tr>
+    <tr>
+      <td>Local_AU</td>
+      <td>0.308</td>
+      <td>0.814</td>
+      <td>0.277</td>
+      <td>0.782</td>
+      <td>0.342</td>
+      <td>0.801</td>
+      <td>0.295</td>
+      <td>0.772</td>
+    </tr>
+    <tr>
+      <td>SA</td>
+      <td>−4.356</td>
+      <td>−0.661</td>
+      <td>−5.218</td>
+      <td>−0.725</td>
+      <td>−4.230</td>
+      <td>−0.588</td>
+      <td>−5.082</td>
+      <td>−0.666</td>
+    </tr>
+    <tr>
+      <td>PCT</td>
+      <td>0.000</td>
+      <td>0.816</td>
+      <td>0.000</td>
+      <td>0.364</td>
+      <td>0.000</td>
+      <td>0.449</td>
+      <td>0.000</td>
+      <td>0.193</td>
+    </tr>
+  </tbody>
+</table>
+
+_Provided are the 5th and 95th percentile values for continuous features that were scaled, after the values of the feature were appropriately transformed as indicated (Table 1)._
+
+### Stepwise regression and multiple linear regression models
 
 We generated 1000 bootstrap samples, each including 70% of the data from each transfection experiment of the compendium of 74 datasets (Supplementary file 1), with the remaining data reserved as a held-out test set. For each bootstrap sample, stepwise regression, as implemented in the stepAIC function from the ‘MASS’ R package (Venables and Ripley, 2002), was used to both select the most informative combination of features and train a model. Feature selection maximized the Akaike information criterion (AIC), defined as: −2 ln(L) + 2k, where L was the likelihood of the data given the linear regression model and k was the number of features or parameters selected. The 1000 resulting models were each evaluated based on their r2 to the corresponding test set. To illustrate the utility of adding features not included in our previous models, these r2 values were compared to those obtained when re-training the multiple linear regression coefficients on each bootstrap sample using only the features of either the context-only or the context+ model, and computing r2 values on the corresponding test sets. The stepwise regression was implemented independently for each of the site types, and a final set of features was chosen as those that were selected for at least 99% of the bootstrap samples of at least two site types. Using this group of features and the entire compendium of 74 datasets as a training set, we trained a multiple linear regression model for each site type (Figure 4—source data 1). As done previously for TargetScan6 predictions, scores for 8mer, 7mer-m8, 7mer-A1, and 6mer sites were bounded to be no greater than −0.03, −0.02, −0.01, and 0, respectively, thereby creating a piece-wise linear function for each site type.
 
-## Collection and processing of previous predictions
+### Collection and processing of previous predictions
 
 To compare predictions from different miRNA target prediction tools, we collected the following freely downloadable predictions: AnTar (predictions from either miRNA-transfection or CLIP-seq models) (Wen et al., 2011), DIANA-microT-CDS (September 2013) (Reczko et al., 2012), ElMMo v5 (January 2011) (Gaidatzis et al., 2007), MBSTAR (all predictions) (Bandyopadhyay et al., 2015), miRanda-MicroCosm v5 (Griffiths-Jones et al., 2008), miRmap v1.1 (September 2013) (Vejnar and Zdobnov, 2012), mirSVR (August 2010) (Betel et al., 2010), miRTarget2 (from miRDB v4.0, January 2012) (Wang, 2008; Wang and El Naqa, 2008), MIRZA-G (sets predicted either with or without conservation features and either with or without more stringent seed-match requirements, March 2015) (Gumienny and Zavolan, 2015), PACCMIT-CDS (sets predicted either with or without conservation features) (Marin et al., 2013), PicTar2 (from the doRiNA web resource; sets conserved to either fish, chicken, or mammals) (Krek et al., 2005; Anders et al., 2012), PITA Catalog v6 (3/15 flank for either ‘All’ or ‘Top’ predictions, August 2008) (Kertesz et al., 2007), RNA22 (May 2011) (Miranda et al., 2006), SVMicrO (February 2011) (Liu et al., 2010), TargetRank (all scores from web server) (Nielsen et al., 2007), TargetSpy (all predictions) (Sturm et al., 2010), TargetScan v5.2 (either conserved or all predictions, June 2011) (Grimson et al., 2007), and TargetScan v6.2 (either conserved predictions ranked by the context+ model or all predictions ranked by either the context+ model or PCT scores, June 2012) (Friedman et al., 2009; Garcia et al., 2011). For algorithms providing site-level predictions (i.e., ElMMo, MBSTAR, miRSVR, PITA, and RNA22), scores were summed within genes or transcripts (if available) to acquire an aggregate score. For algorithms providing multiple transcript-level predictions (i.e., miRanda-MicroCosm, PACCMIT-CDS, and TargetSpy), the transcript with the best score was selected as the representative transcript isoform. In all cases, predictions with gene symbol or Ensembl ID formats were translated into RefSeq format. When computing r2 to the test sets, mRNAs that were not predicted by the algorithm to be a target were assigned the worst score in the range of all scores generated by the algorithm.
 
-## 3′-UTR profiles for TargetScan7 predictions
+### 3′-UTR profiles for TargetScan7 predictions
 
 To build databases of human and mouse 3′-UTR profiles, we began with the ‘basic’ set of protein-coding gene models deposited in Gencode v19 (human hg19 assembly) and Gencode vM3 (mouse mm10 assembly), respectively (Harrow et al., 2012). For each unique stop codon in each set of gene models, we selected the transcript with the longest 3′ UTR as its representative transcript. If other datasets indicated that the 3′ UTRs of these representative transcripts have longer tandem isoforms, we extended them accordingly, using additional annotations provided by (i) the ‘comprehensive’ set of Gencode gene models (Harrow et al., 2012), (ii) all mRNAs in the RefSeq database (Pruitt et al., 2012), downloaded from the refGene database through the UCSC table browser (Kent et al., 2002), and (iii) 3′-UTR extensions supported by RNA-seq evidence (Miura et al., 2013), after transforming mm9 to mm10 coordinates using liftOver (Hinrichs et al., 2006). We then used 3P-seq clusters from human and mouse (Nam et al., 2014) (again after transforming coordinates with liftOver) to further extend 3′ UTRs when possible, searching within a 5400 nt region downstream of the stop codon (excluding the regions containing annotated introns) for a cleavage and polyadenylation site supported by at least one 3P-seq cluster, prohibiting the search to extend beyond the start position of any annotated downstream exon. The 5400 nt window was chosen because the 99th percentile of the lengths of previously annotated mouse and human 3′ UTRs was ∼5400 nt. Zebrafish 3′ UTRs for TargetScanFish were identical to those annotated previously (Ulitsky et al., 2012). For each representative transcript, 3P-seq clusters mapping within the extended 3′ UTR were used to quantify the relative levels of alternative tandem isoforms, thereby generating a 3′-UTR profile. For human and mouse transcripts, all 3P-seq datasets for cell lines/tissues of each species were combined, after normalizing for the sequencing depth (i.e., number of uniquely mapping tags) of each dataset, to generate meta profiles. To perform this normalization, the number of tags overlapping the 3′ UTR of each annotated transcript was first summed. A matrix of summed tag counts for each cell line/tissue and for each transcript was then compiled, removing transcripts with no tags in any cell type. This matrix was then upper-quartile normalized by calculating the 75th quantile of counts in each cell type, using the calcNormFactors function (parameter ‘method = ‘upperquartile’’) in the ‘edgeR’ R package (Robinson et al., 2010). These scaling factors were then applied to all tags, and the normalized tag counts corresponding to each 3P-seq cluster from different cell lines/tissues were summed. A pseudocount of 0.1 tag was assigned to the longest tandem 3′-UTR isoform, which accommodated cases in which the longest annotated 3′ UTR did not have tag support. In addition, 5 pseudocounts were assigned to the longest Gencode 3′-UTR isoform, which gave preference to this Gencode annotation if the UTR had poor 3P-seq coverage. The 3′-UTR profiles were then generated and used to compute the affected isoform ratio (AIR) and weighted context++ score for each predicted target site as depicted in Figures 2A, 3A, respectively, of Nam et al. (2014). For zebrafish transcripts, profiles were generated for each developmental stage with a 3P-seq dataset. All input and output annotation files as well as scripts are available for download at TargetScan (targetscan.org).
 
-## MicroRNA sets for TargetScan7
+### MicroRNA sets for TargetScan7
 
 When partitioning miRNA families according to their conservation level, we began with a high-confidence set of human miRNAs supported by small-RNA sequencing (T Tuschl, personal communication) that shared nucleotides 2–8 with a mouse miRNA supported by small-RNA sequencing (Chiang et al., 2010). We then extracted 100-way multiz alignments of each mature miRNA from the UCSC Genome Browser and counted the number of species for which nucleotides 2–8 of the miRNA did not change. As an initial pass, those conserved among ≥40 species were classified as mammalian conserved, and those conserved among >60 species were classified as more broadly conserved among vertebrate species. Due to poorer quality alignments for more distantly related species, this procedure misclassified several more broadly conserved miRNAs as mammalian conserved. Therefore, mammalian conserved miRNAs that aligned with >90% homology to a mature miRNA from chicken, frog, or zebrafish, as annotated in miRBase release 21 (Kozomara and Griffiths-Jones, 2014), were re-classified as more broadly conserved. In addition, miR-489 was included in the broadly conserved set of TargetScanHuman (but not TargetScanMouse) despite having a seed substitution in mouse.
 
@@ -293,7 +794,7 @@ Some mammalian pri-miRNAs give rise to two or three abundant miRNA isoforms that
 
 All mature miRNAs were downloaded from miRBase release 21 (Kozomara and Griffiths-Jones, 2014). Those that matched a conserved miRNA at nucleotides 2–8 were considered part of that miRNA family. All miRNAs and miRNA isoforms annotated in miRBase but not meeting our criteria for conservation in mammals or beyond were also grouped into families based on the identity of nucleotides 2–8 and were classified as poorly conserved miRNAs (which included many small RNAs misclassified as miRNAs). The miRNA seed families and associated conservation classifications are available for download at TargetScan (targetscan.org).
 
-## TargetScan7 predictions
+### TargetScan7 predictions
 
 TargetScan (v7.0) provides the option of ranking predicted targets of mammalian miRNAs according to either cumulative weighted context++ score (CWCS), which ranks based upon the predicted repression, or aggregate PCT score of the longest 3′-UTR isoform, which ranks based upon the confidence that targeting is evolutionarily conserved (Figure 7—figure supplement 1).
 

@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Howard Hughes Medical Institute, Department of Chemistry and Chemical Biology, Department of Physics, Center for Brain Science, Harvard University Cambridge United States
-2. https://ror.org/03vek6s52 Howard Hughes Medical Institute, Department of Molecular and Cellular Biology, Center for Brain Science, Harvard University Cambridge United States
+1. Howard Hughes Medical Institute, Department of Chemistry and Chemical Biology, Department of Physics, Center for Brain Science, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Howard Hughes Medical Institute, Department of Molecular and Cellular Biology, Center for Brain Science, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -36,6 +36,18 @@ In this work, we report an extension of multiplexed error-robust fluorescence in
 
 First, we used spinning disk confocal microscopy to achieve optical sectioning and eliminate the out-of-focus fluorescence signals, which significantly improved the signal-to-noise ratio (SNR) in the MERFISH images of thick-tissue sections (Figure 1—figure supplement 1). However, the spinning-disk confocal detection geometry also cuts a large amount of in-focus fluorescence signals, and hence a substantially longer exposure time or higher illumination light intensity is required to achieve a high SNR for imaging individual RNA molecules in the sample. This leads to a drastic reduction in imaging speed and/or a substantial photobleaching of out-of-focus fluorophores before they are imaged. We reasoned that deep learning, which has been used to improve the quality of fluorescence microscopy images in various applications (Laine et al., 2021; Ouyang et al., 2018; Weigert et al., 2018), could potentially improve the SNR of confocal MERFISH images acquired at high speed or with low illumination intensity. To test this approach, we performed MERFISH imaging to measure 242 genes (Supplementary file 1–3) in tissue sections of the mouse cerebral cortex, imaging the same fields of view (FOVs) with both a long (1 s) and a short (0.1 s) exposure time per frame to obtain high and low SNR image pairs, respectively. As expected, the low-SNR MERFISH images acquired with 0.1 s exposure time led to a substantially lower (4× lower) detection efficiency compared to the high-SNR measurement acquired at the 1 s exposure time (Figure 1a and b). To test whether deep learning can enhance the quality of the 0.1 s images, we trained a neural network based on a subset of the short- and long-exposure-time image pairs and subsequently used this model to improve the quality of the remaining images taken with the short-exposure time (see ‘Materials and methods’). This approach indeed improved the SNR of the 0.1 s images substantially (Figure 1c). As a result, the detection accuracy and efficiency of MERFISH images acquired with 0.1 s exposure time were increased and became nearly identical to that measured with 1 s exposure time (Figure 1d). This allowed us to acquire high-quality confocal MERFISH images at high speed under low illumination intensity.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig1-v1.jpg)
+
+**Figure 1.:** (a) A single-bit high-pass-filtered MERFISH confocal image of 242 genes in a brain tissue section taken with an exposure time of 0.1 s (left) and a magnified view of a single cell marked by the white box in the left image (right). (b) The correlation between the copy number of individual genes detected per field of view (FOV) using 0.1 s exposure time and those obtained using 1 s exposure time. The median ratio of the copy number and the Pearson correlation coefficient r are shown. The copy number per gene detected using 0.1 s exposure time is 24% of that detected using 1 s exposure time. (c) The same image as in (a) but after enhancement of signal-to-noise ratio (SNR) by a DL algorithm. (d) The same as (b) but after DL was used to enhance the SNR of the 0.1 s images. The copy number per gene detected with 0.1 s exposure time after DL-based enhancement is 89% of that detected using 1 s exposure time.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Images of nuclei (DAPI), total polyA mRNA, and two MERFISH bits were obtained using epifluorescence (Epi) and spinning-disk confocal microscopy respectively. Both epifluorescence and confocal images were taken with 1 s exposure time. The MERFISH bit-1 and bit-2 images were high-pass filtered to remove cellular background.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Number of RNA molecules detected per field of view (FOV) at a single z-plane at the tissue depths of 10 µm and 90 µm in the first bit of the 242-gene MERFISH measurements in a 100-µm-thick section of the mouse cortex. (b) Logarithmic distribution of integrated photon counts of individual RNA molecules at the tissue depths of 10 µm and 90 µm identified in (a). In each boxplot, the midline represents the median value, the box represents the interquartile range (IQR), the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. Molecule number (n, from left to right): 7565, 7914. (c) Number of RNA molecules detected per FOV at a single z-plane at tissue depths of 10 µm and 190 µm of in the first bit of the 156-gene MERFISH measurements in a 200-µm-thick section of the mouse hypothalamus. (d) Logarithmic distribution of integrated photon counts of individual RNA molecules at the tissue depths of 10 µm and 190 µm identified in (c). In each boxplot, the midline represents the median value, the box represents the IQR, the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. Molecule number (n, from left to right): 9611, 7238.
+
 In thick-tissue imaging, it is important to avoid aberration caused by refractive-index mismatch. We have previously used high numerical-aperture (NA = 1.4) oil-immersion objectives for thin-tissue MERFISH imaging. While these objectives have a high detection efficiency of fluorescence signals from thin samples close to the glass substrate, they present significant challenges when imaging thick samples. The refractive-index mismatch between the immersion oil and tissue samples leads to substantial aberration, which reduces the sensitivity and accuracy of RNA detection in the deeper regions of thick samples. To overcome this problem, we switched to water-immersion objectives, which have a better refractive-index match with the samples. Despite having a lower NA (NA = 1.15 or 1.2), these water objectives allowed for the detection of individual RNA molecules without substantial decay of detection sensitivity and efficiency across the entire depth of 100-µm- and 200-µm-thick-tissue sections (Figure 1—figure supplement 2).
 
 Finally, we often use gel-based tissue clearing for MERFISH imaging of tissue samples. Our gel-based MERFISH protocol developed using thin-tissue samples also need to be optimized for imaging thick-tissue samples. In MERFISH, we label cellular RNAs with a library of encoding oligonucleotide probes that contains barcode-determining readout sequences and then detect the barcodes bit-by-bit with dye-labeled readout probes complementary to the readout sequences (Chen et al., 2015). The encoding and readout probe labeling conditions previously developed for thin-tissue imaging may not be optimal for thick-tissue imaging. Moreover, additional challenges may arise in thick-tissue imaging. To optimize the MERFISH protocol for thick-tissue imaging, we imaged the 242 genes in 100-µm-thick mouse brain sections with 1 µm step size for each z-plane. Upon optimization of probe labeling conditions (Figure 2—figure supplement 1a–d), we observed bright and consistent signals from individual RNA molecules across the entire depth of 100-µm-thick-tissue samples in each bit (Figure 2—figure supplement 1e). However, unexpectedly, despite consistent detection of RNA molecules in individual bits, the copy number of RNA molecules identified for individual genes decreased substantially with the tissue depth and exhibited a poor correlation with bulk RNA-seq data (Figure 2—figure supplement 2a–c). We reasoned that this may be due to the displacement of RNA molecules between imaging rounds in the thick-tissue sample that made these molecules difficult to decode and identify from their multibit images. To test this, we imaged fiducial beads embedded in the polyacrylamide gel, which is often used for sample clearing in MERFISH imaging of tissue samples (Moffitt et al., 2016a). Indeed, we observed a significant displacement in the positions of beads in all three dimensions (x, y, and z) between imaging rounds, especially in the deeper part of the thick-tissue samples (Figure 2—figure supplement 2d).
@@ -46,9 +58,49 @@ To solve the first problem, we conducted tests using various piezo actuators and
 
 To validate our optimized thick-tissue MERFISH protocol, we first imaged the expression of the 242 genes in 100-µm-thick sections of the mouse cortex. In addition to MERFISH imaging of RNAs, we also imaged the nuclear DAPI stain and total polyadenylated mRNA signals for 3D cell segmentation (Figure 2a). Individual RNA molecules were clearly identified in the thick-tissue MERFISH images (Figure 2b and c, Figure 2—figure supplement 4a). The average RNA copy numbers for individual genes were highly correlated with the RNA abundance measured by bulk RNA sequencing (Figure 2d). The detected RNA number and the correlation with bulk RNA-seq did not show any decay across the entire tissue depth (Figure 2e and f). We then compared the RNA copy number of individual genes detected per unit area per z-plane with the results from 10-µm-thin-tissue MERFISH measurements performed previously using an epifluorescence setup (Zhang et al., 2021). The detection efficiency of confocal thick-tissue measurements per z-plane was ~20% higher than the epi thin-tissue measurements (Figure 2g), which may be due to the background reduction by confocal optical sectioning.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig2-v1.jpg)
+
+**Figure 2.:** (a) 3D images of DAPI and total polyA mRNA from a single field of view (FOV) in a 100-µm-thick mouse brain tissue slice (top), alongside a single z-plane at tissue depth of 50 µm marked by the yellow box in the top image (bottom). (b) Maximum-projection images of 10 consecutive 1 µm z-planes of individual MERFISH bits of the region marked in yellow box in the bottom panel of (a). (c) RNA molecules identified in the same region as in (b) with RNA molecules color coded by their genetic identities. (d) The RNA copy number for individual genes per unit area (1002 µm2) per z-plane detected in the 100 µm MERFISH measurements of mouse cortex versus the FPKM from bulk RNA-seq. The Pearson correlation coefficient r is shown. (e) The Pearson correlation between RNA copy number for individual genes per z-plane at different tissue depths detected by MERFISH and the FPKM values of individual genes from bulk RNA-seq. (f) Number of detected RNA molecules per FOV at different tissue depths. (g) The RNA copy number for individual genes per unit area (1002 µm2) per z-plane detected in the 100 µm MERFISH measurements of mouse brain sections in this work versus that detected by 10-µm-thick-tissue MERFISH measurements using an epifluorescence setup (Zhang et al., 2021). The Pearson correlation coefficient r is shown. (h) The RNA copy number of individual genes per cell detected in the 100-µm-thick-tissue section versus that in individual 10-µm-thick z-ranges of the same sample. The 100-µm-thick section was evenly divided into ten 10 µm z-ranges to determine the latter. Data in this figure were generated from a 100-μm-thick section of the cortical region collected from an adult mouse.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Example high-pass-filtered bit-1 images of a 242-gene MERFISH measurement in a 100-µm-thick section of mouse cortex stained with different concentrations of encoding probes. The concentration values refer to the concentration of each individual encoding probe. (b) Distribution of integrated photon counts of individual RNA molecules identified at different encoding probe concentrations. In each boxplot, the midline represents the median value, the box represents the interquartile range (IQR), the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. Molecule number (n, from left to right): 31606, 29190, 83644. The signals from individual RNA molecules increased with the encoding probe concentration and reached saturation at ~1.0 nM per probe. We thus used 1 nM encoding probe concentrations for staining thick-tissue samples. (c) A 100-µm-thick mouse brain slice was stained with the 242-gene MERFISH encoding probes, followed by sequential hybridization with readout probes corresponding to the first, second, third, and fourth bit of the barcodes, each bit using a different readout probe concentration. High-pass-filtered bit-1, bit-2, bit-3, and bit-4 MERFISH images (each with a different concentration of readout probes) are shown. (d) Distribution of integrated photon counts of individual RNA molecules identified at different readout probe concentrations. In each boxplot, the midline represents the median value, the box represents the IQR, the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. Molecule number (n, from left to right): 1939, 3815, 3869, 5248. The signal increased with readout probe concentration, but the background also increased when the probe concentration reached beyond 5 nM. We thus used 5 nM readout probe concentration for thick-tissue imaging. In addition to the probe concentrations, we also optimized readout probe incubation time. (e) The number of RNA molecules per field of view per z-plane and the normalized intensity of individual molecules at different tissue depths. The encoding probe concentration was 1 nM per encoding probe, the readout probe concentration was 5 nM, and the readout probe incubation time was 25 min for these measurements.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Total copy number of decoded RNAs detected per field of view (FOV) per z-plane at different tissue depths in a 242-gene MERFISH measurement of the 100-µm-thick section. (b) Pearson correlation coefficients of RNA copy number of individual genes per FOV per z-plane detected at different tissue depths by MERFISH with the FPKM values measured by bulk RNA-seq. (c) Correlation of RNA copy number of individual genes per FOV per z-plane detected in the entire 100-µm-thick section by MERFISH with the FPKM values obtained by bulk RNA-seq. The Pearson correlation coefficient r is shown. (d) Example images of gel-embedded beads acquired in two rounds of imaging. Buffer exchanges were performed between imaging rounds, mimicking the MERFISH protocol. Because the gel expanded to a different extent in different rounds, the positions of beads changed from round to round in x, y, and z directions. Circles mark beads identified in both imaging rounds. Because the gel size changed, the x and y positions of the beads changed, and the brightness of these beads also changed due to the shift in their z positions. Arrows highlight beads detected in one of the imaging rounds, but not the other, due to the gel-size change, which move these beads out of focus.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Quantification of gel expansion factor in various buffers used in the MERFISH protocol. The initial gel size was the same as the coverslip, and the expansion factor after buffer exchange was determined as the ratio between the gel size after buffer exchange and the coverslip size. (b) In each round of MERFISH imaging, the sample is incubated with the readout probes in a wash buffer (containing either 10% ethylene carbonate [EC] or 10% formamide) for a duration of 15 min. Subsequently, the sample was rinsed with the wash buffer (without readout probes) to remove any excessive readout probes, followed by a treatment with imaging buffer containing glucose-oxidase-based or protocatechuate 3,4-dioxygenase rPCO-based oxygen scavenger system to reduce photobleaching. After the imaging process, the sample is treated with tris(2-carboxyethyl) phosphine buffer to cleave off the fluorescent dye linked to the readout probe through a disulfide bond, and finally washed with a solution of 2× saline-sodium citrate (SSC). All buffers, including wash, imaging, and cleavage buffers, contained 2× SSC. Gel-expansion factor in these buffers used in the MERFISH protocol was quantified and shown here. Reagents marked by * were selected for final use in the 3D thick-tissue MERFISH experiment. The dashed line highlights the expansion factor in the 2× SSC buffer alone. (c) XZ projection images of fiducial beads embedded in a gel undergoing buffer exchange for the indicated time period. Wash buffer containing 15% EC in 2× SSC causes noticeable gel distortion, which was recovered after 15 min in 2× SSC buffer without EC.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Example images of decoded RNA molecules at different tissue depths. Each image shows decoded barcodes in a 10-µm-thick z-range, as indicated. Bottom panels show the zoom-in of the region marked by white boxes in the top panels. RNA molecules are color coded by their genetic identities. (b) DAPI (left) and polyA mRNA (middle) images of an example field of view, which were used for cell segmentation. Cell boundary segmentation determined using a deep learning-based segmentation algorithm (Cellpose 2.0) is shown in the right panel.
+
 We then performed 3D cell segmentation using DAPI and total polyadenylated mRNA signals (Figure 2—figure supplement 4b), which allowed us to determine the expression profiles of the 242 genes in each individual cell. When we compared the RNA copy number per cell detected in the 100-µm-thick samples with the results obtained from individual 10-µm-thick sections of the same sample (obtained by dividing the 100 µm z-range into 10 equal-thickness sections), we found that the former was twofold higher than the latter (Figure 2h). This is presumably because most of the cell bodies were completely captured within the 100-µm-thick tissues, whereas many cells were only partially captured in the 10-µm-thick-tissue sections. Although normalization of the RNA copy number by cell volume could partially mitigate this problem in thin-tissue imaging, detecting too few RNA molecules per cell could nonetheless introduce significant noise and imposing a cell volume threshold to reduce noise would in turn reduce the number of cells measured. Moreover, nonuniform intracellular distribution of RNAs could further reduce transcriptome profiling accuracy when only part of a cell is imaged. Thus, thick-tissue MERFISH imaging should allow more accurate gene-expression profiling of individual cells.
 
 Next, we used single-cell expression profiles derived from our 3D thick-tissue MERFISH measurement to identify transcriptionally distinct cell populations in the mouse cortex. We observed all previously known subclasses of excitatory neurons (layer 2/3 [L2/3] intratelencephalic-projection neurons [L2/3 IT], L4/5 IT, L5 IT, L6 IT, L6 Car3 neurons, L5 extratelencephalic projection neurons [L5 ET], L5/6 near projection neurons [L5/6 NP], L6 cortical-thalamic projection neurons [L6 CT], and L6b neurons), inhibitory neurons (marked by Lamp5, Sst, Vip, Pvalb, and Sncg, respectively), and non-neuronal cells (oligodendrocytes, oligodendrocyte progenitor cells, astrocytes, microglia, endothelial cells, pericytes, vascular leptomeningeal cells, smooth muscle cells) (Figure 3a), as well as transcriptionally distinct cell clusters within these subclasses (Figure 3—figure supplement 1). The 3D MERFISH images further showed the expected layered organization of transcriptionally distinct neuronal cell populations in the cortex (Figure 3b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig3-v1.jpg)
+
+**Figure 3.:** (a) UMAP visualization of subclasses of cells identified in a 100-μm-thick section of the mouse cortex. Cells are color coded by subclass identities. IT: intratelencephalic projection neurons; ET: extratelencephalic projection neurons; CT: cortical-thalamic projection neurons; NP: near projection neurons; OPC: oligodendrocyte progenitor cells; Oligo: oligodendrocytes; Micro: microglia; Astro: astrocytes; VLMC: vascular leptomeningeal cells; Endo: endothelial cells; Peri: pericytes; SMC: smooth muscle cells; PVM: perivascular macrophages. (b) 3D spatial maps of the identified subclasses of excitatory neurons (left), inhibitory neurons (middle), and non-neuronal cells (right) within the 100 μm mouse cortex section. (c) UMAP visualization of major cell types identified in a 200-μm-thick section of the mouse anterior hypothalamus. Cells are color coded by cell type identities. (d) 3D spatial maps of the excitatory neuronal (left), inhibitory neuronal (middle), and non-neuronal (right) cell clusters identified in the 200-μm-thick mouse hypothalamus section. Cells are color coded by cell cluster identities in the top panels and two example excitatory neuronal (left), inhibitory neuronal (middle), and non-neuronal (right) cell clusters are shown in the bottom panels. (e) Boxplots showing the distributions of the nearest-neighbor distances from cells in individual inhibitory neuronal subclasses to cells in the same subclass (‘to self’) or other subclasses (‘to other’) in the mouse cortex obtained from the thick-tissue 3D MERFISH data. Cell numbers (n, from left to right): 44, 274, 125, 1161, 136, 797, 26, 330. *FDR <0.01 was determined with the Wilcoxon rank-sum one-sided test and adjusted to FDR by the Benjamini and Hochberg procedure. Only inhibitory neuronal clusters with at least 20 ‘self-self’ interacting pairs were examined and plotted. In each boxplot, the midline represents the median value, the box represents the interquartile range (IQR), the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. (f) Distributions of the nearest-neighbor distances among all interneurons derived from the thick-tissue 3D MERFISH data of the mouse cortex. The distribution is fitted with a bimodal distribution (blue curve) with the two individual Gaussian peaks shown in red and green. (g, h) Same as (e, f) but for inhibitory neurons in the mouse anterior hypothalamus obtained from the thick-tissue 3D MERFISH data. Cell numbers in g (n, from left to right): 1404, 1222, 198, 567, 845, 1315, 866, 1263, 1149, 873, 455, 1517, 387, 1490, 409, 1321, 277, 1151, 773, 1871, 379, 830, 174, 1013, 598, 449, 811, 158, 194, 728, 103, 771, 119, 667, 217, 580, 98, 704, 1095, 1339, 186, 362, 82, 438, 41, 302. Data in this figure were generated from a 200-μm-thick section of the hypothalamic region collected from an adult mouse.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** UMAP visualization of excitatory (left) and inhibitory (right) neuronal clusters is shown with each cell colored by their cluster identities.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) The Pearson correlation coefficient of the RNA copy number for individual genes at different tissue depths versus those in the initial 1 µm range of the 200-µm-thick section of the mouse hypothalamus. (b) The median RNA copy numbers per cell at different tissue depths of the 200-µm-thick section. The first and last 10 µm were excluded from the analysis because some of the cells captured in these z-ranged were incompletely captured.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) UMAP visualization of excitatory and inhibitory neuronal clusters identified in the 200-µm-thick section, with each cell colored by their cluster identities. (b) 2D spatial maps of individual excitatory and inhibitory neuronal clusters. The hypothalamus nuclei in which each cluster is primarily localized, and one or two notable genes of each cluster are listed for individual clusters. For three example clusters, E20, I1, and I5, the hypothalamus nucleus containing the indicated cluster is marked by dashed lines.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/90029/elife-90029-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Two examples of tightly juxtaposed interneuron pairs in the mouse cortex, marked by the dashed box (left). Different colors indicate distinct interneuron subclasses. A zoomed-in view of the interacting interneurons is shown, visualized by polyT staining (middle) and DAPI staining (right). (b) Distribution of cell diameter size across various cell types identified in a 100-µm-thick section of the mouse cortex. In each boxplot, the midline represents the median value, the box represents the interquartile range (IQR), the lower whisker represents the smaller of the minimum data point or 1.5× IQR below the 25th percentile, and the upper whisker represents the greater of the maximum data point or 1.5× IQR above the 75th percentile. Cell number (n, from left to right): 2994, 17727, 8124. (c) One example of tightly juxtaposed interneuron pairs in the mouse hypothalamus, marked by the dashed box (left). Interneurons are marked in red and the other cell types are marked in gray. A zoomed-in view of the interacting interneurons is shown, visualized by polyT staining (middle) and DAPI staining (right).
 
 To test if our thick-tissue 3D MERFISH approach can image beyond 100 µm thickness, we next measured 156 genes (Supplementary files 4 and 5) in a 200-µm-thick section of the mouse anterior hypothalamus. The RNA copy numbers of individual genes measured per cell per z-plane at different tissue depths showed excellent correlation with each other with only a slight reduction of the RNA copy number across the entire tissue depth (Figure 3—figure supplement 2). From the MERFISH-derived single-cell expression profiles, we identified 21 excitatory neuronal clusters, 26 inhibitory neuronal clusters, and 7 non-neuronal cell subclasses in this region (Figure 3c and d, Figure 3—figure supplement 3a). Most of the transcriptionally distinct neuronal clusters showed distinct and localized spatial distributions, some of which were predominantly located in a single hypothalamic nucleus such as inhibitory cluster I1 in the bed nucleus of the stria terminalis, inhibitory cluster I5 in the suprachiasmatic nucleus, and excitatory cluster E20 in the nucleus of reuniens thalamic (Figure 3d, Figure 3—figure supplement 3b).
 
@@ -60,11 +112,210 @@ In summary, we developed a method that allowed high-quality 3D MERFISH imaging i
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 000664 (RRID:IMSR_JAX:000664)</td>
+      <td>Brain tissue collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MERlin</td>
+      <td>https://github.com/rx3fang/MERlin/releases/tag/v3.0.0-elife</td>
+      <td>https://doi.org/10.5281/zenodo.13356943</td>
+      <td>3D MERFISH decoding pipeline</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>storm-control</td>
+      <td>https://github.com/ZhuangLab/storm-control, copy archived at ZhuangLab, 2023</td>
+      <td>https://doi.org/10.5281/zenodo.3264857</td>
+      <td>MERFISH microscope control</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat V3</td>
+      <td>Stuart et al., 2019</td>
+      <td>https://doi.org/10.1016/j.cell.2019.05.031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BigStitcher</td>
+      <td>Hörl et al., 2019</td>
+      <td>https://doi.org/10.1038/s41592-019-0501-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CSBdeep</td>
+      <td>Weigert et al., 2018</td>
+      <td>https://doi.org/10.1038/s41592-018-0216-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellpose 2.0</td>
+      <td>Pachitariu and Stringer, 2022</td>
+      <td>https://doi.org/10.1038/s41592-022-01663-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris (2-carboxyethyl) phosphine Hydrochloride</td>
+      <td>Gold Bio</td>
+      <td>51805-45-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene carbonate</td>
+      <td>Sigma</td>
+      <td>E26258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>40% Acrylamide/Bis Solution, 19:1</td>
+      <td>Bio-Rad</td>
+      <td>1610144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,4-Dihydroxybenzoic acid</td>
+      <td>Sigma</td>
+      <td>P5630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-Hydroxy-2,5,7,8-tetramethylchroman-2-carboxylic acid (trolox)</td>
+      <td>Sigma</td>
+      <td>238813-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gel Slick Solution</td>
+      <td>Lonza</td>
+      <td>50640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran sulfate</td>
+      <td>Sigma</td>
+      <td>D8906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Low Melting Point Agarose</td>
+      <td>Thermo Fisher</td>
+      <td>16520050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>15714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>New England Biolabs</td>
+      <td>P8107S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Protocatechuate 3,4-dioxygenase (rPCO)</td>
+      <td>OYC Americas</td>
+      <td>46852904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNase Inhibitor, Murine</td>
+      <td>New England Biolabs</td>
+      <td>M0314L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast tRNA</td>
+      <td>Life Technologies</td>
+      <td>15401-011</td>
+      <td>Blocking agent used during RNA labeling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluoSpheres YG 0.1 um</td>
+      <td>Thermo Fisher</td>
+      <td>F8803</td>
+      <td>Used as fiduciary markers</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher</td>
+      <td>D1306</td>
+      <td>Used to label the cell nucleus</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MERFISH encoding probes for cortex</td>
+      <td>Zhang et al., 2021</td>
+      <td>https://doi.org/10.35077/g.21</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MERFISH encoding probes for hypothalamus</td>
+      <td>Moffitt et al., 2018; modified in this work</td>
+      <td></td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>polyA anchor probe</td>
+      <td>IDT</td>
+      <td></td>
+      <td>/5Acryd/TTGAGTGGATGGAGTGTAATT+TT +TT+TT+TT+TT+TT+TT+TT+TT+T</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dye-labeled readout probes</td>
+      <td>Bio-Synthesis</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult C57BL/6J male mice aged 7–9 weeks were used in this study. Mice were maintained on a 12 hr light/12 hr dark cycle (12:00 noon to 12:00 midnight dark period), at a temperature of 22 ± 1 °C, a humidity of 30–70%, with ad libitum access to food and water. Animal care and experiments were carried out in accordance with NIH guidelines and were approved by the Harvard University Institutional Animal Care and Use Committee with animal protocol number 10-16-3.
 
-## Tissue preparation for 3D thick-tissue MERFISH
+### Tissue preparation for 3D thick-tissue MERFISH
 
 Mice, aged 7–9 weeks, were deeply anesthetized using isoflurane. Subsequently, a transcardial perfusion was performed with phosphate-buffered saline (PBS), followed by a 4% paraformaldehyde (PFA) solution. The brain tissue was then carefully dissected and subjected to a post-fixation process in a 4% PFA solution, which was carried out overnight at 4°C. Following this, the brain tissue was thoroughly rinsed with PBS. Sections of 100 or 200 μm thickness were then prepared by embedding the brain tissue in 4% low melting point agarose (Thermo Fisher Scientific, 16520-050). The sections were obtained using a Vibratome (Leica). Finally, these sections were collected in 1× PBS and preserved in 70% ethanol. The sample was stored at a temperature of 4 °C, and the sections were left to rest overnight for permeabilization in 70% ethanol.
 
@@ -74,21 +325,21 @@ Next, the sample was embedded in a hydrogel to clear the tissue background and r
 
 The coverslip bearing the polymerized sample was then removed from the glass slide with a thin razor blade. The sample was then incubated in digestion buffer containing 2% (wt/vol) sodium dodecyl sulfate (Thermo Fisher), 0.5% (vol/vol) Triton X-100 (Thermo Fisher), and 1% (vol/vol) Proteinase K (New England Biolabs) in 2× SSC for 24 hr at 37°C. Following digestion, the sample was washed in 2× SSC buffer supplemented with 0.2% (vol/vol) Proteinase K at room temperature for 1 hr. We changed the buffer every 30 min to ensure sufficient washing.
 
-## MERFISH encoding and readout probes
+### MERFISH encoding and readout probes
 
 Two sets of genes were selected for MERFISH imaging in this study: a previously selected 242 genes for imaging the mouse primary motor cortex (Zhang et al., 2021) and a previously selected 156 genes for imaging the mouse hypothalamus (Moffitt et al., 2018). The MERFISH encoding probes targeting the 242 genes in the cortex (Supplementary file 1 and 2) were identical to the probes used in our previous study (Zhang et al., 2021). The encoding probes targeting the 156 genes in the hypothalamus (Supplementary file 4 and 5) were designed using similar criteria as described previously (Moffitt et al., 2018). MERFISH readout probes (Supplementary file 3), conjugated to either Cy5, Cy3B, or Alexa488 dye molecules through a disulfide linkage, were purchased from Bio-Synthesis, Inc.
 
-## 3D thick-tissue MERFISH platform
+### 3D thick-tissue MERFISH platform
 
 Two 3D thick-tissue MERFISH setups were constructed in this study. One (setup 1) was built around a Nikon Ti-U microscope body equipped with Nikon 40×1.15 NA water immersion objective (Nikon, MRD77410) or Olympus 60× NA = 1.2 water immersion objective (UPLSAPO60XW 60X) and a spinning disk confocal unit (Andor Dragonfly, ACC-CR-DFLY-202-40). Illumination was provided with solid-state lasers at 647 nm (MBP Communications, 2RU-VFL-P-1500-647-B1R), 561 nm (MBP Communications; 2RU-VFL-P-1000-560-B1R), 488 nm (Coherent, Genesis MX488-1000 STM), and 405 nm (Coherent, Obis 405-200C). The illumination intensities of the 647 nm, 561 nm, and 488 nm lasers were controlled by an acousto-optic tunable filter (Crystal Technologies, AODS 20160-8 and PCAOM Vis), while the 405 nm laser output power was controlled via direct modulation. The coaligned beams were coupled into the input fiber of a beam homogenizer (Andor, Borealis BCU-120), which provided uniform illumination for the spinning disk. Fluorescence emission was isolated with a penta-bandpass dichroic (Andor, CR-DFLY-DMPN-06I) and an emission filter (Andor, TR-DFLY-P45568-600) in the imaging path. Sample position was controlled by a motorized XY stage (Prior, Proscan H117E1N5/F), while z-scanning was controlled by a piezo objective nanopositioner (Queensgate, OP400 or Mad City Labs, F200S). Before z-scanning of the sample, initial focus was acquired via a custom-built autofocus system that monitored the position of a reflected IR laser (Thorlabs, LP980-SF15) from the coverslip surface with a CMOS camera (Thorlabs, DCC1545M). All laser and piezo control signals were generated using a DAQ card (National Instruments, PCIe-6353) and were synced to the fire signal of the sCMOS camera (Hamamatsu, Orca-Flash4.0).
 
 A similar imaging platform (setup 2) was built based on an Olympus IX71 microscope body equipped with an Olympus 60×UPlanSApo 1.3 NA silicone oil immersion objective (Nikon, MRD77410), spinning disk confocal unit (Andor, CSU W1), beam homogenizer (Andor, Borealis BCU 100), piezo objective nanopositioner (Mad City Labs, Nano-F200S), and XY stage (Marzhauser, Scan IM 112x74). The illumination was provided with solid-state lasers at 647 nm (MBP Communications, 2RU-VFL-P-2000-647-B1R), 561 nm (MPB Communications; 2RU-VFL-P-1000-560-B1R), 488 nm (MPB, 2RU-VFL-P-500-488-B1R), and 405 nm (Coherent, Cube 405), and was controlled via mechanical shutters (Uniblitz, LS6T2). We only used this setup with the silicone oil immersion objective for testing the deep learning approach to enhance the SNR of confocal images taken with a short exposure time and for optimizing buffer exchange conditions. For thick-tissue imaging, we exclusively used the water immersion objectives, as described in setup 1. The water immersion objectives have more similar refractive indices to that of the tissue samples and are thus better suited for thick-tissue imaging. Details regarding which imaging platform was used to acquire which specific dataset are listed in Supplementary file 6.
 
-## Fluidic system and sample chamber
+### Fluidic system and sample chamber
 
 MERFISH samples were imaged on 40 mm round cover glass (Bioptech) and mounted in a flow chamber (Bioptech, FCS2) using a 0.5 mm gasket (Bioptech, 1907-1422-500). The fluidic system contained a peristaltic pump (Gilson, Minipuls 3) and four 8-way valves (Hamilton, MVP 36798 with 8-5 Distribution Valve) assembled to provide up to 24 readout-probe-containing solutions, and four additional buffers (2× SSC buffer, wash buffer, cleavage buffer, and imaging buffer as described below). Image acquisition and fluidic control were fully automated using custom-built software, available at https://github.com/ZhuangLab/storm-control (copy archived at ZhuangLab, 2023).
 
-## 3D thick-tissue MERFISH imaging
+### 3D thick-tissue MERFISH imaging
 
 We first stained the sample with a hybridization mixture that contains readout probes conjugated with Alexa488 fluorophore that is complementary to the polyA-anchor probe to label the cell boundary. The readout hybridization mixture comprised the wash buffer containing 2× SSC, 10% v/v ethylene carbonate (EC, E26258, Sigma), and 0.1% v/v Triton X-100 and supplemented with the readout probes at a concentration of 25 nM per probe. The sample was incubated in readout hybridization mixture for 30 min at room temperature, and then washed with wash buffer supplemented with 1 μg/ml DAPI for 30 min to stain cell nuclei. The sample was then washed in 2× SSC for 15 min and loaded into the flow chamber. Imaging buffer containing 5 mM 3,4-dihydroxybenzoic acid (P5630, Sigma), 2 mM trolox (238813, Sigma), 50 μM trolox quinone, 1:500 recombinant protocatechuate 3,4-dioxygenase (rPCO; OYC Americas), 1:500 murine RNase inhibitor, and 5 mM NaOH (to adjust pH to 7.0) in 2× SSC was introduced into the chamber. We also tested glucose-oxidase-based imaging buffer consisting of 2× SSC, 50 mM Tris-HCl (pH 8), 10% w/v glucose, 2 mM Trolox (Sigma-Aldrich, 238813), 0.5 mg/mL glucose oxidase (Sigma-Aldrich, G2133), and 40 μg/mL catalase (Sigma-Aldrich, C30) during the thick-tissue protocol optimization, but did not choose this buffer for final imaging of brain tissue sections.
 
@@ -98,7 +349,7 @@ After the first round of imaging, the fluorescent dyes were removed by flowing 2
 
 To perform subsequent rounds of imaging, we flowed 3 mL of the appropriate readout probe in wash buffer and allowed them to hybridize for 25 min (15 min flow followed by a 10 min pause). Two readout probes were hybridized in each round, one labeled with Cy5 and the other with Cy3b, at a concentration of 5 nM per probe. The sample was then washed with 2 mL of wash buffer followed by 2 mL of imaging buffer twice for 15 min (5 min flow and 10 min pause). For every FOV in each round, we collected z-stacks at 1 μm step size in the 650 nm and 560 nm channels, as well as an image of the fiducial beads in 488 nm channel on the cover glass surface. We repeated the hybridization, wash, imaging, and cleavage for all rounds to complete the MERFISH imaging.
 
-## 3D MERFISH imaging analysis
+### 3D MERFISH imaging analysis
 
 MERFISH image analysis was performed using a customized version of MERlin (Fang et al., 2024), a Python-based MERFISH analysis pipeline similar to what we have previously described (Fang et al., 2022).
 
@@ -106,13 +357,13 @@ First, we minimized tiling artifacts at the ~10% overlap of neighboring FOVs by 
 
 After assigning barcodes to each pixel independently, we aggregated adjacent pixels that were assigned with the same barcodes into putative RNA molecules, and then filtered the list of putative RNA molecules to enrich for correctly identified transcripts for an overall barcode misidentification rate at 5%, as described previously (Xia et al., 2019). We further removed putative RNAs that contained only a single pixel as they likely arose from background of spurious barcodes generated by random fluorescent fluctuations and had a higher misidentification rate than those that contained two or more pixels. Finally, since we imaged samples at 1 µm z-intervals, it is possible to capture the same molecule in multiple z-intervals. To avoid counting duplicate molecules, we remove the redundant molecules present in adjacent z-intervals prior to assigning barcodes to individual cells.
 
-## 3D cell segmentation
+### 3D cell segmentation
 
 We performed cell segmentation on the co-staining of DAPI and total polyA mRNA using the deep learning-based cell segmentation algorithm, Cellpose 2.0 (Pachitariu and Stringer, 2022). We fine-tuned the segmentation model with the user-in-the-loop approach of the Cellpose 2.0 using randomly selected z-slices containing the DAPI and polyA mRNA channels with the ‘CP’ model as a starting point. After human-guided training, we applied the segmentation model to 3D z-stacks for each FOV to generate segmentation mask in 3D using Cellpose 2.0 using its 3D mode. We then extracted the cell boundaries for each cell and exported cell boundaries as polygons.
 
 Owing to an approximate 10% overlap between adjacent FOVs, it is possible that a single cell may be captured in two adjacent FOVs, resulting in duplicated cells. To address this issue, we used the following procedure to remove overlapping cells. Firstly, for each cell, we identified its 10 nearest-neighboring cells, and for each of these neighbors, we calculated their overlapping volume. Next, we determined the overlapping ratio between the two cells by dividing the overlapping volume by the minimum volume of the two neighboring cells. The overlapping ratio ranged from 0% for cells with no overlap with any other cells to 100% for cells completely overlapping with another cell. We considered two cells duplicates if their overlapping ratio was larger than 40% and, in this case, the cell of smaller volume was removed. This method allowed us to identify and remove duplicated cells that appeared in adjacent FOVs. We then assign the detected RNA molecules into the cell if the molecule position was within the boundaries of the cell to obtain the cell-by-gene matrix.
 
-## Unsupervised clustering analysis of 3D MERFISH data
+### Unsupervised clustering analysis of 3D MERFISH data
 
 After obtaining the cell-by-gene matrix, we performed preprocessing on the matrix using the following steps. Firstly, we removed cells that were potentially artifacts due to segmentation errors. Specifically, we excluded cells with a small volume (<100 μm2), or low RNA count number (<30), or those captured in fewer than 5 or more than 40 adjacent 1 μm z-sections. These criteria were selected to exclude cells with low quality or insufficient information. Next, we removed ~10% cells as putative doublets identified using doubletFinder (McGinnis et al., 2019).
 
@@ -120,11 +371,11 @@ After the above preprocessing steps, we then analyzed the single-cell data using
 
 From the first round of clustering, we identified excitatory neuronal, inhibitory neuronal, and non-neuronal cell types based on the expression of the canonical marker genes. To further refine our cell classification, we then repeated the procedure of dimensionality reduction and clustering, as described above, for the excitatory and inhibitory neurons separately. For the identification of neuronal clusters, we used the following parameters k = 15 and r = 5 for inhibitory neurons and k = 15 and r = 3 for excitatory neurons.
 
-## Tissue ROI
+### Tissue ROI
 
 For the mouse cortex 3D MERFISH data, we excluded the subcortical areas. Specifically, we used L6b cells, which form a thin layer that separates white matter from gray matter, as a landmark to guide the exclusion of subcortical areas in our data. In our analysis, we kept cells from L2/3 to L6b.
 
-## Nearest-neighbor distance analysis
+### Nearest-neighbor distance analysis
 
 We investigated whether there are differences in the nearest-neighbor distances between interneurons of the same subtype (to-self) and those between neurons of different subtypes (to-other). To perform this analysis, for each interneuron, we first identified its nearest-neighboring neurons in the 3D MERFISH images. We further classified these nearest-neighbor pairs into two groups: ‘to-self’ (same subtype) and ‘to-other’ (different subtypes) based on whether the neighboring pairs belong to the same subtypes of interneurons (‘to-self’) or an interneuron and a neuron of different type or subtype (excitatory or inhibitory) (‘to-other’). We then calculated their Euclidean distance in 3D. The distribution of nearest-neighbor distances for ‘to-self’ and ‘to-other’ pairs is plotted in Figure 3e and g for the cortex and hypothalamus.
 

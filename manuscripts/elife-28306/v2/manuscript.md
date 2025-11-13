@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.28306.001 R-loops are features of chromatin consisting of a strand of DNA hybridized to RNA, as well as the expelled complementary DNA strand. R-loops are enriched at promoters where they have recently been shown to have important roles in modifying gene expression. However, the location of promoter-associated R-loops and the genomic domains they perturb to modify gene expression remain unclear. To resolve this issue, we developed a bisulfite-based approach, bisDRIP-seq, to map R-loops across the genome at near-nucleotide resolution in MCF-7 cells. We found the location of promoter-associated R-loops is dependent on the presence of introns. In intron-containing genes, R-loops are bounded between the transcription start site and the first exon-intron junction. In intronless genes, the 3' boundary displays gene-specific heterogeneity. Moreover, intronless genes are often associated with promoter-associated R-loop formation. Together, these studies provide a high-resolution map of R-loops and identify gene structure as a critical determinant of R-loop formation.
+R-loops are features of chromatin consisting of a strand of DNA hybridized to RNA, as well as the expelled complementary DNA strand. R-loops are enriched at promoters where they have recently been shown to have important roles in modifying gene expression. However, the location of promoter-associated R-loops and the genomic domains they perturb to modify gene expression remain unclear. To resolve this issue, we developed a bisulfite-based approach, bisDRIP-seq, to map R-loops across the genome at near-nucleotide resolution in MCF-7 cells. We found the location of promoter-associated R-loops is dependent on the presence of introns. In intron-containing genes, R-loops are bounded between the transcription start site and the first exon-intron junction. In intronless genes, the 3' boundary displays gene-specific heterogeneity. Moreover, intronless genes are often associated with promoter-associated R-loop formation. Together, these studies provide a high-resolution map of R-loops and identify gene structure as a critical determinant of R-loop formation.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ To understand where R-loops are positioned in genomic promoter regions, we devel
 
 ## Results
 
-## bisDRIP-seq concept
+### bisDRIP-seq concept
 
 It is not yet possible to define the exact size and location of R-loop-forming regions on a genome-wide scale. In contrast, it is possible to determine the exact location of a specific R-loop-forming region in a specific gene using a previously developed bisulfite mapping approach (Yu et al., 2003). Essentially, this approach involved treating genomic DNA with bisulfite under non-denaturing conditions. Bisulfite specifically causes cytosine-to-uracil conversions in the single-stranded DNA portion of R-loops. On the other hand, cytosines in the RNA-DNA hybrid portion of the R-loop are protected from bisulfite conversion. Sequencing of both strands then revealed the location and strand in which cytosines were converted to uracils. The presence of an R-loop was identified by showing that the converted cytosines occurred primarily on one of the two strands of DNA (Yu et al., 2003). The location of bisulfite-induced conversions on a single strand of DNA was then used to define the boundaries of the R-loop at near-nucleotide resolution.
 
@@ -39,11 +39,27 @@ The use of bisulfite to map R-loops on a genome-wide scale poses several signifi
 
 To map R-loops at near-nucleotide resolution, we developed a genome-wide bisulfite-based approach called bisDRIP-seq (Figure 1A). This method incorporates steps to overcome each of the challenges listed above. In this approach, cells are lysed in the presence of bisulfite and SDS. By including bisulfite during lysis, genomic DNA structures have as little time as possible to change conformation prior to the bisulfite modification of cytosines in single-stranded DNA regions. To overcome the problem of needing high sequence coverage, the S9.6 antibody (Boguslawski et al., 1986) is used to enrich for R-loops. The S9.6 antibody has high affinity for RNA-DNA hybrids and lower affinity for other double-stranded RNA sequences (Phillips et al., 2013). Thus, after genomic DNA is sheared using restriction digestion, the S9.6 antibody enriches the bisulfite-modified R-loops for sequencing analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram illustrating the work-flow of the bisDRIP-seq protocol. For DNA molecules, one DNA strand is shown in blue, while the other strand is shown in orange. Red dots indicate the location of bisulfite-induced cytosine-to-uracil conversions. (B) A high number of cytosine conversions and high bisDRIP-seq scores are observed at a specific gene locus. bisDRIP-seq cytosine conversions and high bisDRIP-seq scores are specifically observed on one strand of the RPPH1 gene. In these plots, the template strand refers to the strand used for RPPH1 transcription, rather than the template strand used for PAPR2 transcription. In the top plot, cytosine-to-uracil conversions were mapped to the genomic region surrounding RPPH1. The number of conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). In the lower plot, the bisDRIP-seq scores were mapped to the genomic region surrounding RPPH1 (mean bisDRIP-seq score from n = 13 samples). The bisDRIP-seq score on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. As can be seen, the genomic region containing RPPH1 had both a high number of cytosine-to-uracil conversions and high bisDRIP-seq scores specifically on the non-template strand. By contrast, the PARP2 gene had minimal bisDRIP-seq conversions and low bisDRIP-seq scores. Source code for bisDRIP-seq score calculation can be found in Source code 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Consecutive bisulfite conversions are observed in the genomic region surrounding RPPH1's transcription start site. The bisDRIP-seq bisulfite treatment should create consecutive cytosine-to-uracil conversions in regions of single-stranded DNA. We expected to observe this in individual reads located in single-stranded regions. We also expected to observe a high aggregated number of conversions within regions of DNA that were frequently single-stranded. As shown in Figure 1B, the entire RPPH1 gene appeared to preferentially contain single-stranded DNA on its non-template strand. Here we observe part of this region at higher resolution and in individual reads. At the top of the panel, a gene model is displayed of the genomic region located within 25 bp of the transcription start site of RPPH1. Above this gene model is the exact sequence of DNA in this region. Under the gene model of RPPH1, is the sequence of one of the reads that overlapped with the transcription start site of RPPH1. Within the sequence of the read, cytosines that were not converted by bisulfite are represented by a blue ‘C’. By contrast, putative bisulfite-converted cytosines are represented by a blue ‘T’. In this particular read, eight consecutive cytosines were converted near the transcription start site, while three consecutive cytosines were not converted further upstream of the transcription start site. This suggests that the read represented a region of DNA that was partially single-stranded and partially double-stranded immediately after cell lysis. In the lower plot, the total number of conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). Consecutive cytosines on the non-template strand had high numbers of conversion in the region immediately upstream of the transcription start site and in the region downstream of the transcription start site. This suggests that the conversions were due to the presence of single-stranded DNA in this region. (B,C) bisDRIP-seq scores are more clustered than expected if read location were determined through stochastic processes. Stochastic processes were modeled using a Monte Carlo simulation. In this simulation, all of the reads from a given sample were mapped to a randomly-assigned 1 kb region. This 1 kb region had to be within the same chromosome as the original read and it had to overlap with one bisDRIP-seq read. This process was repeated for all reads within each sample. Next, mean bisDRIP-seq scores were calculated for each 1 kb region in the genome using either real bisDRIP-seq reads (black, solid, n = 13) or using reads assigned to regions at random (blue, dashed, n = 13). We then compared the density of regions (y-axis) with a given mean bisDRIP-seq score (x-axis) for all regions (C) (n = 2956134) or just the regions that had the top percentile of scores (D) (n = 29561). The Monte Carlo simulation generated a larger proportion of regions with moderate scores, while the bisDRIP-seq scores from aligned reads were concentrated in a smaller subset of regions (p<2.2×10−16, Wilcoxon signed-rank test). This is consistent with bisDRIP-seq showing greater specificity than expected by chance. Source code for calculating bisDRIP-seq region scores can be found in Source code 2 and source code for Monte Carlo simulation can be found in Source code 3. (D,E) bisDRIP-seq scores are more clustered than expected if the bisDRIP-seq scores of reads were determined through stochastic processes. A ‘shuffled scores’ control was generated by randomly assigning bisDRIP-seq scores to reads from the same chromosome in a given sample. This was repeated across all chromosomes and across all samples (n = 13). Next, bisDRIP-seq scores were calculated for each 1 kb region in the genome using either the bisDRIP-seq scores originally calculated for each reads (black, solid) or using the shuffled scores (blue, dashed). We then compared the density of regions (y-axis) with a given mean bisDRIP-seq score (x-axis, n = 13) for all regions (E) (n = 2956134) or just the regions that had the top percentile of scores (F) (n = 29561). The Monte Carlo simulation generated a larger proportion of regions with moderate scores, while the bisDRIP-seq scores generated from experiments were more concentrated in the regions with the highest scores (p<2.2×10−16, Wilcoxon signed-rank test). This suggests that the intensity of bisDRIP-seq score is informative and was not just due to stochastic processes. Source code for calculating bisDRIP-seq region scores can be found in Source code 2 and source code for shuffled scores Monte Carlo simulations can be found in Source code 4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) RNA-DNA hybrid formation is necessary for enrichment of bisDRIP-seq signal at sites of R-loop formation. RNA-DNA hybrids are integral components of R-loops. RNA-DNA hybrids are known to bind the S9.6 antibody and to be degraded by RNase H. R-loop signal should therefore be lost in the absence of S9.6 immunoprecipitation or if the sample is treated with RNase H. In each of these plots, the template strand refers to the strand used for RPPH1 transcription, rather than the template strand used for PAPR2 transcription. Also, in each plot the bisDRIP-seq score on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. In the top plot, bisDRIP-seq scores were mapped to the genomic region surrounding RPPH1 from ‘input’ samples (mean bisDRIP-seq score from n = 2 samples). These input samples received the entire bisDRIP-seq treatment except for the S9.6 immunoprecipitation enrichment steps. In the middle plot, bisDRIP-seq scores were mapped to the genomic region surrounding RPPH1 from a control-treated bisDRIP-seq experiment that was not treated with RNase H (n = 1 sample). In the bottom plot, bisDRIP-seq scores were mapped to the genomic region surrounding RPPH1 from an RNase H-treated bisDRIP-seq experiment (n = 1 sample). The bisDRIP-seq sample that was not treated with RNase H has high bisDRIP-seq score at the RPPH1 locus. On the other hand, there is a large decrease in bisDRIP-seq signal in the sample treated with RNase H. This suggests that bisDRIP-seq signal in the RPPH1 locus depends on the presence of an RNA-DNA hybrid.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–L) bisDRIP-seq scores of promoter regions were reproducible between control-treated samples. In order to examine the level of sample-to-sample variation in control-treated bisDRIP-seq samples, we compared the bisDRIP-seq scores of each promoter region in different control-treated samples. bisDRIP-seq scores were calculated for each promoter region derived from our reference GENCODE transcription start site list (n = 78218). Promoter regions were defined as the region within 1000 bp of a transcription start site. The bisDRIP-seq score for each promoter region was calculated using the sum of the bisDRIP-seq read scores aligned to either strand as described in methods. The log2 of the bisDRIP-seq score for each promoter region in control-treated sample 1 (x-axis) was plotted against the same value generated from each of the other twelve control-treated samples (y-axis). The bisDRIP-seq scores in promoter regions in control-treated sample one were correlated with the bisDRIP-seq scores in promoter regions in each of the other control-treated samples. This suggests that the control-treated bisDRIP-seq experiments were reproducible. Pearson correlation coefficients (r) are indicated in the top-left corner of each plot. (M) bisDRIP-seq scores of promoter regions were reproducible between triptolide-treated samples. In order to examine the level of sample-to-sample variation in triptolide-treated bisDRIP-seq samples, we compared the bisDRIP-seq scores of each promoter region in both of our triptolide-treated samples. bisDRIP-seq scores were calculated as described in (A–L) for control-treated samples. The log2 bisDRIP-seq score for each promoter region (n = 78218) in the triptolide-treated sample 1 (x-axis) was plotted against the same value generated from the triptolide-treated sample 2 (y-axis). The bisDRIP-seq scores in promoter regions were correlated between the two samples. This suggests that our triptolide-treated bisDRIP-seq experiments were reproducible. The Pearson correlation coefficient (r) for this plot is indicated in the top-left corner of the plot.
+
 Finally, to overcome the problem of stochastic cytosine conversions, a computational pipeline was developed to identify single-stranded regions using bisDRIP-seq data. This pipeline was developed to identify regions with high concentrations of cytosine-to-uracil conversions. This computational pipeline also identifies single-stranded regions that are likely to contain R-loops as opposed to other single-stranded DNA structures in the genome. Additionally, the pipeline was designed to reveal the specific strand orientation of R-loops.
 
 Thus, bisDRIP-seq provides an approach to map R-loops at near-nucleotide resolution on a genome-wide scale.
 
-## Near-Nucleotide resolution mapping of R-loops on a Genome-Wide scale
+### Near-Nucleotide resolution mapping of R-loops on a Genome-Wide scale
 
 We used bisDRIP-seq to map single-stranded DNA throughout the genome. Thirteen bisDRIP-seq experiments were performed on different samples of MCF-7 cells. After performing bisDRIP-seq on these samples, the DNA fragments were sequenced using a traditional post-bisulfite library preparation method (see Materials and methods).
 
@@ -65,13 +81,21 @@ First, we asked whether reads with high bisDRIP-seq scores are randomly distribu
 
 Second, we performed correlation tests between the bisDRIP-seq scores obtained in each of our samples. In all cases, there was significant correlation between bisDRIP-seq samples (p<10−16, Spearman's rank-correlation test, Figure 1—figure supplement 3).
 
-## bisDRIP-seq scores show transcription-dependent enrichment in promoter regions
+### bisDRIP-seq scores show transcription-dependent enrichment in promoter regions
 
 We next wanted to know if bisDRIP-seq scores are associated with promoter regions that contain R-loops. R-loops were previously mapped to promoter regions (Ginno et al., 2012), where they are thought to play important roles in gene expression (Chen et al., 2015). These R-loops, as mapped using DRIP-seq, were found to be transcription dependent and correlated with gene expression (Sanz et al., 2016). We therefore wanted to determine if bisDRIP-seq scores have a similar enrichment and transcription dependence in active promoter regions.
 
 In order to investigate promoter regions, we compiled a list of transcription start sites using the GENCODE database (Harrow et al., 2012) (see Materials and methods). We then defined promoter regions, for the purpose of our analyses, as the region one kilobase on either side of each of these transcription start sites.
 
 We next performed several simple analyses to ensure that the results from bisDRIP-seq experiments recapitulate the promoter-region enrichment observed in DRIP-seq studies. First, bisDRIP-seq scores, like DRIP-seq reads, were found to be enriched in promoter regions relative to downstream exon-containing regions (Figure 2A and Figure 2—figure supplement 1A). Next, we found that the number of DRIP-seq reads correlates with bisDRIP-seq scores in individual promoter regions (p<2.2×10−16, Spearman's rank-correlation test, Figure 2—figure supplement 1B). Thus, bisDRIP-seq scores, like DRIP-seq reads, are enriched in promoter regions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig2-v2.jpg)
+
+**Figure 2.:** (A) bisDRIP-seq scores in promoter regions tend to be higher than in matched exon-containing regions. R-loops were previously mapped to promoter regions (Ginno et al., 2012). To determine if bisDRIP-seq scores also map to promoter regions, we compared bisDRIP-seq scores in promoter regions with matched exonic regions. Promoter regions (blue) were defined as the region within a thousand base pairs of each transcription start site. For each promoter region, a matched region (orange) was selected downstream of the promoter region in the same gene centered on an exonic site chosen at random. The distribution of bisDRIP-seq scores (y-axis, mean bisDRIP-seq score from n = 13 samples) was plotted for promoter regions (blue, n = 60016) and matched regions (orange, n = 60016) using a violin plot. Within each violin plot, the fraction of genes with a given bisDRIP-seq score are represented by the width of the overlapping violin plot. Individual lines in the violin plot represent quartiles. bisDRIP-seq scores were significantly higher in promoter regions relative to matched exon-centered regions. ‘TSS’ refers to the transcription start site. The y-axis in the plot was log2 transformed. ***p<2.2×10−16, Wilcoxon signed-rank test. (B) R-loop formation correlates with promoter activity. Based on previous studies (Sanz et al., 2016), R-loops are expected to form in active promoter regions, rather than in inactive promoter regions. R-loops can be identified by bisDRIP-seq based on preferential labeling of the non-template strand. Therefore, we compared the bisDRIP-seq scores on the non-template strand to the scores on the template strand and determined whether this correlated with promoter activity. Promoter activity and bisDRIP-seq scores were assessed in the region between the transcription start site and + 1000 bp. bisDRIP-seq scores were assessed separately for the non-template (blue) and template (orange) strands. For each strand, a LOESS smoothed curve was plotted of the bisDRIP-seq scores (y-axis) at different levels of promoter activity (x-axis). This was repeated for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and samples treated with the transcription-inhibitor triptolide (dashed, mean bisDRIP-seq score from n = 2 samples). bisDRIP-seq scores on both strands are correlated with promoter activity. Notably, with increasing promoter activity, the non-template strand is preferentially labeled. This suggests that sense-strand R-loop form in these promoters. Promoter activity was assessed using a MCF-7 GRO-seq dataset from Hah et al., 2013. Both promoter activity and bisDRIP-seq scores were plotted on log2-transformed axes. Source data for figure included in Figure 2—source data 1. (C) Transcription-dependent R-loops form in active promoters. The presence of R-loops is suggested by bisDRIP-seq strand asymmetry as illustrated in Figure 2D. Here, strand asymmetry was calculated as the log2-fold ratio of the bisDRIP-seq score of the non-template strand relative to the bisDRIP-seq score of the template strand (y-axis). The distribution of strand asymmetry for promoter regions with high promoter activity (right, GRO-seq > 24 reads, n = 4895 promoter regions), as well as an equivalent number of inactive promoter regions (left, GRO-seq = 0 reads, n = 4895 promoter regions) was plotted using a violin plots. This was repeated for control-treated samples (green, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (pink, mean bisDRIP-seq score from n = 2 samples). Active promoter regions typically had higher non-template bisDRIP-seq scores than template-strand bisDRIP-seq scores in control-treated samples. This strand asymmetry was significantly reduced in triptolide-treated samples. These results suggest that there were transcription-dependent R-loops in active promoter regions. Promoter activity was assessed using a GRO-seq dataset from Hah et al., 2013. The width of violin plots represents the fraction of genes with the strand asymmetry plotted on the y-axis. The individual lines in violin plots represented quartiles. ***p<2.2×10−16, Wilcoxon signed-rank test. (D) Simple models of the structures that may explain the high bisDRIP-seq scores observed 3' of the transcription start site in Figure 2B. As illustrated, the sense-strand R-loops (top row) logically explain the strand ‘positive’ asymmetry observed in bisDRIP-seq scores. Additionally, the high bisDRIP-seq scores observed on both DNA strands of active promoters are likely explained by some combination of all three types of structure (all three rows). In these models, the vertical black hash marks between nucleic acid strands indicate that two strands are hybridized. Red circles refer to the location of bisulfite induced cytosine-to-uracil conversions. ‘asTSS’ refers to transcription start sites for antisense transcription. Source code for calculating bisDRIP-seq region scores can be found in Source code 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) DRIP-seq reads are enriched in promoter regions relative to matched exon-containing regions. R-loops were previously mapped to promoter regions (Ginno et al., 2012). To confirm that this result can be reproduced using our analysis pipeline, we compared DRIP-seq read counts in promoter regions with matched exonic regions. For each promoter region, a matched region (orange) was selected downstream of the promoter region in the same gene centered on an exonic site chosen at random. DRIP-seq read counts were calculated using DRIP-seq datasets generated by Sanz et al., 2016. DRIP-seq read counts (y-axis, log2 mean DRIP-seq reads from n = 2 samples) were plotted for promoter regions (blue, n = 60017) and matched regions (orange, n = 60017) using violin plots. Within each violin plot, the density of points at a given bisDRIP-seq score is represented by the width of the plot. Individual lines in the violin plot represent quartiles. DRIP-seq reads were significantly enriched in promoter regions relative to matched exon-centered regions. ‘TSS’ refers to the transcription start site. ***p<2.2×10−16, Wilcoxon signed-rank test. (B) bisDRIP-seq scores and DRIP-seq scores are correlated in promoter-regions. Since DRIP-seq is the conventional mapping technique to map R-loops at low resolution, we compared DRIP-seq and bisDRIP-seq results at the resolution provided by DRIP-seq. For each promoter region (n = 78218), the DRIP-seq read count (y-axis, log2 mean DRIP-seq reads from n = 2 samples) of the promoter region was plotted against the bisDRIP-seq score (x-axis, log2 mean bisDRIP-seq score from n = 13 samples) of the promoter region. A line of best fit (blue) was then plotted using the ggplot2 ‘lm’ function. The two datasets were significantly correlated (p<2.2×10−16, Spearman's test using asymptotic t approximation) with a Spearman's ρ of 0.49 and a Pearson correlation coefficient of 0.45. Thus, bisDRIP-seq and DRIP-seq provide reasonably similar results at 2 kb resolution despite the major differences between the two mapping approaches. (C) bisDRIP-seq scores are reduced in promoter-regions after transcription inhibition. R-loops were previously shown to be transcription dependent (Sanz et al., 2016). To confirm that the high bisDRIP-seq scores in promoter regions were also transcription-dependent, we repeated bisDRIP-seq in the presence of the transcription-inhibitor triptolide. The distribution of promoter region bisDRIP-seq scores (n = 78218) were plotted for control-treated samples (green, log2 mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (purple, log2 mean bisDRIP-seq score from n = 2 samples). The width of the overlapping violin plot represents the fraction of promoter regions that had a given bisDRIP-seq score. Individual lines in the violin plot represent quartiles. The bisDRIP-seq scores in promoter regions were higher in control-treated samples than triptolide-treated samples. This suggests that the enrichment of high bisDRIP-seq scores in promoter regions was at least partially transcription-dependent. ***p<2.2×10−16, Wilcoxon signed-rank test. (D) bisDRIP-seq scores are correlated with promoter activity. R-loops were previously shown to correlate with the level of gene expression (Sanz et al., 2016). We therefore asked if bisDRIP-seq scores are higher in promoter regions with high promoter activity. Promoter activity and bisDRIP-seq scores were assessed in the region between the transcription start site and + 1000 bp in all promoter regions (n = 78218). A LOESS smoothed curve was plotted of bisDRIP-seq scores (y-axis) at different levels of promoter activity (x-axis). This was repeated for control-treated samples (green, log2 mean bisDRIP-seq score from n = 13 samples) and samples treated with the transcription-inhibitor triptolide (pink, mean log2 bisDRIP-seq score from n = 2 samples). bisDRIP-seq scores tend to be higher in promoter regions with higher promoter activity. This difference between promoter regions with high and low activity was reduced in samples treated with triptolide. These results suggest that the bisDRIP-seq score of promoter-regions correlates with promoter activity. Promoter activity was calculated as the mean number of sense-strand GRO-seq reads measured in the region between the transcription start site and + 1000 bp by Hah et al., 2013. Both promoter activity and bisDRIP-seq scores were plotted on log2-transformed axes. p refers to the Spearman's correlation coefficient for each plot.
 
 We next asked if bisDRIP-seq enrichment in promoter regions depends on active transcription. To test if bisDRIP-seq enrichment requires transcription, bisDRIP-seq was repeated using MCF-7 cells treated with the transcription-inhibitor triptolide (Kupchan et al., 1972; Titov et al., 2011; Vispé et al., 2009). bisDRIP-seq enrichment was reduced in these samples (Figure 2—figure supplement 1C). This suggests that bisDRIP-seq enrichment in promoter regions depends on ongoing transcription.
 
@@ -81,7 +105,7 @@ Notably, the enrichment of bisDRIP-seq scores in active promoter regions was red
 
 Together, these results confirm that bisDRIP-seq scores, like DRIP-seq reads, are enriched in active promoter regions.
 
-## Transcription-dependent R-loops form downstream of transcription start sites
+### Transcription-dependent R-loops form downstream of transcription start sites
 
 We next wanted to determine if the bisDRIP-seq score enrichment in promoter regions is due to co-transcriptional R-loops. Conceivably, cytosine conversions could occur if single-stranded DNA is exposed as a result of other single-stranded DNA structures near transcription start sites, including unwound DNA due to supercoiling (Hsieh and Wang, 1975), G-quadruplexes (Sen and Gilbert, 1988), or genomic regions that contain paused polymerases (Core et al., 2008) that become more accessible to bisulfite after SDS treatment.
 
@@ -95,13 +119,33 @@ To determine if the observed bisDRIP-seq enrichment downstream of the transcript
 
 Notably, the higher bisDRIP-seq scores on the non-template strand than the template strand were largely eliminated in triptolide-treated samples (Figure 2B and C). This suggests that the sense-strand R-loops in the promoter region are transcription dependent.
 
-## The transcription start site is the 5' boundary of promoter-associated R-loops
+### The transcription start site is the 5' boundary of promoter-associated R-loops
 
 The exact starting position and ending positions of promoter-associated R-loops remains unclear. This is due to the low resolution of conventional R-loop mapping methods (Chen et al., 2015; Ginno et al., 2012). We wanted to take advantage of the high resolution of bisDRIP-seq to map the exact boundaries of R-loops in promoter regions.
 
 We first asked where R-loops are located in relation to transcription start sites. In many promoters, transcription initiates from multiple nearby transcription start sites (Carninci et al., 2006). This creates a practical limit to the precision that we can achieve in mapping the location of R-loops relative to transcription start sites.
 
 We first mapped R-loops relative to all transcription start sites using metaplots of bisDRIP-seq scores. First, bisDRIP-seq scores were calculated for each nucleotide position surrounding the transcription start site in all individual promoter regions. Promoter regions were defined using the GENCODE database described above. Then, the bisDRIP-seq score at a given nucleotide position relative to the transcription start site was summed across all promoter regions. These scores were then plotted separately for the non-template strand and the template strand (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig3-v2.jpg)
+
+**Figure 3.:** (A) Metaplot analysis of bisDRIP-seq scores reveals the location of promoter-associated R-loops. To determine the location of R-loops within promoter regions at read-length resolution, we used bisDRIP-seq score metaplot analysis. Metaplots were created by summing the bisDRIP-seq scores across all promoter regions (n = 78218) at each nucleotide position relative to the transcription start site. The score was calculated separately for the nucleotide position on the non-template strand (blue) and template strand (orange). Metaplots were then plotted for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). In control-treated samples, bisDRIP-seq scores increase near the transcription start site for both strands. However, bisDRIP-seq scores were greater on the non-template strand than on the template strand immediately 3' of the transcription start site. This suggests that R-loops formed immediately 3' of the transcription start site. ‘TSS’ indicates the location of the transcription start site. **p<0.005, Wilcoxon signed-rank test. (B) Model of the sense-strand R-loops forming 3' of the transcription start site in Figure 3A. The location where strand asymmetry is observed in the bisDRIP-seq metaplot suggests that R-loops form 3' of the transcription start site. Additionally, the triptolide sensitivity of the bisDRIP-seq score asymmetry suggests that R-loops contain newly transcribed RNA. In this model, the black lines between nucleic acid strands indicate that two strands are hybridized. (C) Background subtraction more clearly reveals the location of R-loops. Triptolide-resistant bisDRIP-seq scores do not appear to reflect the presence of R-loops in Figures 2B and 3A. As such, we repeated our metaplot analysis using triptolide-sensitive bisDRIP-seq scores. Metaplots of the template (orange) and non-template (blue) triptolide-sensitive scores (y-axis) in all promoter regions (n = 78218) were plotted relative to the transcription start site. The preferential labeling of the non-template strand immediately 3' of the transcription start site is more apparent in this plot. Triptolide-sensitive non-template bisDRIP-seq scores were generated by subtracting the triptolide-treated sample scores (mean bisDRIP-seq score from n = 2 samples) from the control-treated sample scores (mean bisDRIP-seq score from n = 13 samples). Triptolide-sensitive template bisDRIP-seq scores were generated in the same manner. (D) Metaplot of ‘R-loop signal’ reveals that R-loops form at the transcription start site. To better visualize the location of R-loops, we directly examined the difference in the bisDRIP-seq scores of the two strands by generating a metaplot of R-loop signal. R-loop signal was defined as the triptolide-sensitive template-strand bisDRIP-seq score subtracted from the triptolide-sensitive non-template bisDRIP-seq score. A metaplot of R-loop signal (y-axis) was plotted for all promoter regions (n = 78218) relative to the transcription start site. R-loop signal (blue) was highest in the region immediately 3' of the transcription start site and decreased 200–250 bp downstream of the transcription start site. R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. (E) Metaplot of bisDRIP-seq scores in active promoter regions. In Figure 2C,R-loops appeared to predominantly form in active promoter regions. Thus metaplot analysis was repeated using only active promoter regions. A metaplot of bisDRIP-seq scores was created for the non-template strand (blue) and template strand (orange) across only active promoter regions (n = 15644). bisDRIP-seq scores were plotted on separate lines for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). In control-treated samples, the location in the metaplot where the non-template bisDRIP-seq scores are higher than the template bisDRIP-seq scores is the same as in the metaplot for all promoters (Figure 3A). However, the difference between the strands is more pronounced in this metaplot of just active promoter regions. In this plot, active promoters refers to promoters with activity in the top twenty percentile as calculated using the GRO-seq dataset from Hah et al., 2013. (F) R-loops are only clearly observed in active promoter regions. A metaplot of R-loop signal was plotted for promoter regions in the top twenty percentile of promoter activity (green, n = 15644) and for promoter regions in the bottom eighty percentile of promoter activity (purple, n = 62574). There is no clear positive R-loop signal observed in promoter regions with lower promoter activity. By contrast, in active promoters the R-loop signal 3' of the transcription start site appears to be as high as the R-loop signal observed in all promoter regions (Figure 3D). R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. Source code for metaplots can be found in Source code 5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The strand asymmetry downstream of the transcription start site remains after ‘input’-sample background correction. The observation of R-loops by bisDRIP-seq should depend on RNA-DNA hybrid immunoprecipitation. We therefore asked whether that strand asymmetry is lost in metaplot analysis after performing background correction using bisDRIP-seq scores from input samples. Metaplots were generated separately for the non-template strand (blue) and template strand (orange) across active promoter regions (n = 15644). bisDRIP-seq scores were plotted for control-treated samples (dashed lines, n = 13 samples) and for control-treated samples after the subtraction of input bisDRIP-seq scores (solid lines, n = 13 control-treated samples and n = 2 input bisDRIP-seq samples). bisDRIP-seq scores decrease on both strands after input sample correction. However, there is no apparent decrease in the strand asymmetry of bisDRIP-seq score. This suggests that RNA-DNA hybrids enriched by S9.6 antibody are causing the strand asymmetry immediately downstream of the transcription start site. Input bisDRIP-seq samples were treated identically to bisDRIP-seq experiments, except that no S9.6 immunoprecipitation enrichment steps were performed. (B,C) Active promoter regions have high mean bisDRIP-seq scores relative to all promoter regions. To determine the location of R-loops within promoter regions at read-length resolution, we used bisDRIP-seq score metaplot analysis. In (B), metaplots were generated by plotting the mean bisDRIP-seq score of all promoter regions (mean of n = 78218 promoter regions) at each nucleotide position relative to the transcription start site. In (C), metaplots were generated by plotting the bisDRIP-seq score of active promoter regions (mean of n = 15644 promoter regions) at each nucleotide position relative to the transcription start site. For both panels, mean bisDRIP-seq scores were calculated separately for the nucleotide positions on the non-template strand (blue) and template strand (orange). Metaplots were then plotted for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). In both plots, the non-template bisDRIP-seq scores are higher on the non-template strand relative to the template strand immediately 3' of the transcription start site. However, the mean bisDRIP-seq score for each strand is higher among active promoters. Additionally, the difference between strand mean bisDRIP-seq scores is higher among active promoters. This suggests that R-loop tend to form preferentially in active promoter regions. In this plot, active promoters refers to promoters with activity in the top twenty percentile as calculated using the GRO-seq dataset from Hah et al., 2013.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–J) R-loop signal in promoter regions with different levels of promoter activity. In Figure 2C, bisDRIP-seq scores were typically greater on the non-template strand than the template strand in promoter regions with high promoter activity. We therefore wanted to know if metaplots of promoter regions varied based on promoter activity. Promoter regions were binned into ten nearly equal-sized bins based on promoter activity (n = 7821 or 7822). Metaplots with a higher promoter activity percentile have a higher promoter activity. Metaplots were generated of the R-loop signal (blue) in the promoter region of each bin: (A) ninety to a hundred percentile, (B) eighty to ninety percentile, (C) seventy to eighty percentile, (D) sixty to seventy percentile, (E) fifty to sixty percentile, (F) forty to fifty percentile, (G) thirty to forty percentile, (H) twenty to thirty percentile, (I) ten to twenty percentile, and (J) zero to ten percentile. Notably, a clear peak of positive R-loop signal downstream of the transcription start site was only observed in metaplots of promoter regions with promoter activity in the top twenty percentile (A and B). This indicates that R-loops predominantly form downstream of the transcription start site in this subset of promoter regions. Promoter activity was calculated as the mean number of sense-strand GRO-seq reads measured in the region between the transcription start site and + 1000 bp by Hah et al., 2013. R-loop signal was defined as the triptolide-sensitive template-strand bisDRIP-seq score subtracted from the triptolide-sensitive non-template bisDRIP-seq score. In each metaplot, R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. ‘TSS’ refers to the transcription start site.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A,B) The strand asymmetry in bisDRIP-seq scores 3' of transcription start sites is not observed after RNase H treatment. RNA-DNA hybrids are core components of R-loops. If the strand asymmetry observed in metaplots of promoter regions is due to R-loops, than it should be selectively sensitive to RNase H. We therefore generated metaplots of bisDRIP-seq scores from two samples treated identically except that (A) received a vehicle treatment, while (B) was treated with RNase H. Metaplots were created by summing the bisDRIP-seq scores across active promoter regions (n = 15644) at each nucleotide position relative to the transcription start site. bisDRIP-seq scores were calculated separately for the nucleotide position on the non-template strand (blue) and template strand (orange). In the vehicle-treated sample, non-template bisDRIP-seq scores are higher than template bisDRIP-seq scores immediately 3' of the transcription start site. This replicates the result from Figure 3E. On the other hand, there is a complete loss of bisDRIP-seq score strand asymmetry after RNase H treatment in (B). This confirms that the asymmetry observed in Figure 3E is caused by R-loops.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Antisense-strand R-loop formation correlates with antisense promoter activity. In Figure 3D, there was evidence of antisense-strand R-loops upstream of the transcription start site. Since sense-strand R-loops were observed in promoter regions with high sense-promoter activity, we asked if antisense-strand R-loops form in promoter regions with high antisense-promoter activity. Antisense-strand R-loops can be identified by bisDRIP-seq based on preferential labeling of the template strand for canonical transcription. Therefore, we compared the bisDRIP-seq scores on the non-template strand to the scores on the template strand and determined whether this correlated with antisense promoter activity. Here, template strand refers to the template for transcription of the canonical gene rather than the antisense transcript. Antisense promoter activity and bisDRIP-seq scores were assessed in the region between −1000 bp and the transcription start site. bisDRIP-seq scores were assessed separately for the non-template (blue) and template (orange) strands. For each strand, a LOESS smoothed curve was plotted of the bisDRIP-seq scores (y-axis) at different levels of antisense promoter activity (x-axis). This was repeated for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and samples treated with the transcription-inhibitor triptolide (dashed, mean bisDRIP-seq score from n = 2 samples). bisDRIP-seq scores on both strands are correlated with promoter activity. Notably, with increasing antisense promoter activity, the template strand is preferentially labeled. This suggests that antisense-strand R-loops form in these promoters. Antisense promoter activity was assessed using a MCF-7 GRO-seq dataset from Hah et al., 2013. Both antisense promoter activity and bisDRIP-seq scores were plotted on log2-transformed axes. ‘TSS’ refers to the transcription start site. (B) Transcription-dependent antisense-strand R-loops form in promoters with high antisense promoter activity. The presence of antisense-strand R-loops is suggested by negative bisDRIP-seq strand asymmetry as illustrated in Figure 3—figure supplement 4C. For this plot, strand asymmetry was calculated as the log2-fold ratio of the bisDRIP-seq score of the non-template strand relative to the bisDRIP-seq score of the template strand (y-axis). Here, template strand refers to the template for transcription of the canonical gene rather than the antisense transcript. The distribution of promoter regions' strand asymmetry was plotted in separate violin plots for promoter regions with high antisense promoter activity (right, GRO-seq > 24 reads, n = 3020 promoter regions), as well as an equivalent number of promoter regions with no antisense activity (left, GRO-seq = 0 reads, n = 3020 promoter regions). This was repeated for control-treated samples (green, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (pink, mean bisDRIP-seq score from n = 2 samples). Promoter regions with high antisense promoter activity typically had higher template bisDRIP-seq scores than non-template-strand bisDRIP-seq scores in control-treated samples. This negative strand asymmetry was significantly reduced in triptolide-treated samples. These results suggest that there were transcription-dependent antisense-strand R-loops in promoter regions with high antisense promoter activity. Antisense promoter activity and bisDRIP-seq scores were assessed in the region between −1000 bp and the transcription start site. Antisense-promoter activity was determined using a GRO-seq dataset from Hah et al., 2013. The width of violin plots represented the fraction of promoter regions with a given strand asymmetry. Individual lines within violin plots represented quartiles. ***p<2.2×10−16, Wilcoxon signed-rank test. (C) Simple model of the antisense-strand R-loops putatively observed in Figure 3A – Figure 2A and B. As illustrated, antisense-strand R-loops logically explain the strand ‘negative’ asymmetry observed in bisDRIP-seq scores. In particular, these antisense-strand R-loops contain single-stranded DNA on the template-strand, which should lead to preferential bisulfite labeling of this strand. In this model, template strand refers to the template for transcription of the canonical gene rather than the antisense transcript. The vertical black hash marks between nucleic acid strands indicate that two strands are hybridized. ‘asTSS’ refers to transcription start sites for antisense transcription. (D) Metaplot of R-loop signal in promoter regions with either high or low antisense-promoter activity. A metaplot of R-loop signal was plotted for promoter regions in the top ten percentile of antisense-promoter activity (blue, n = 7822) and for promoter regions in the bottom ten percentile of antisense-promoter activity (purple, n = 7822). Antisense-promoter activity was defined here as the number of GRO-seq antisense-strand reads measured by Hah et al., 2013 in the region between −250 bp and the transcription start site. There is no clear negative R-loop signal observed in promoter regions with low antisense-promoter activity. By contrast, promoter regions with high antisense-promoter activity have a peak of negative R-loop signal 5' of the transcription start site. This negative R-loop signal suggests that antisense-strand R-loops form in this region. R-loop signal was defined as the triptolide-sensitive template-strand bisDRIP-seq score subtracted from the triptolide-sensitive non-template bisDRIP-seq score. In this plot, template strand refers to the template for transcription of the canonical gene rather than the antisense transcript. R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples.
 
 The resulting metaplot suggests that a mix of R-loops and other single-stranded structures surround the transcription start site. The presence of single-stranded DNA at transcription start sites is suggested by the peak of bisDRIP-seq scores near the transcription start site (Figure 3B). The location of these single-stranded structures is consistent with previous maps of single-stranded DNA (Kouzine et al., 2013). However, the presence of R-loops is specifically suggested by asymmetric, preferential labeling of the non-template strand (Figure 3B). Indeed, the non-template strand bisDRIP-seq scores are significantly higher than the template strand bisDRIP-seq scores immediately 3’ of the transcription start site (p<0.005, Wilcoxon signed-rank test) (Figure 3A, Figure 3—figure supplement 1B). This suggests that the transcription start site is the 5’ boundary of promoter-associated R-loops.
 
@@ -115,11 +159,19 @@ Notably, the observed difference in strand bisDRIP-seq scores 3' of the transcri
 
 Taken together, these data indicate that the transcription start site demarcates the 5’ boundary of promoter-associated R-loops. Additionally, since only noise was observed from promoter regions with low promoter activity, these regions were removed from future analysis unless otherwise noted.
 
-## The first exon-intron junction acts as a 3' boundary to promoter-associated R-loops
+### The first exon-intron junction acts as a 3' boundary to promoter-associated R-loops
 
 We next wanted to know if there is a 3’ boundary to R-loops. Based on the metaplot analysis in Figure 3D,R-loop signal drops approximately 200–250 bp downstream of the transcription start site. This is further from the transcription start site than the typical first post-transcription start site nucleosome (Schones et al., 2008) and the location of promoter-proximal RNA polymerase II pausing (Core et al., 2008), suggesting that these features probably do not impede R-loop expansion. On the other hand, 200–250 bp is reasonably close to the median distance between the transcription start site and the first exon-intron junction, which is 181 bp in our dataset (see Materials and methods). Also, previous studies found that knockdown of the 5' splice site-binding factor SRSF1 induces the formation of R-loops (Li and Manley, 2005), which could be explained if splicing is involved in bounding R-loop expansion. These pieces of evidence suggested that the first exon-intron junction might act as the 3' boundary to R-loop expansion in promoter regions.
 
 We therefore asked where R-loops are located relative to the first exon-intron junction. We used the 5' end of the first intron as the reference point for a metaplot of bisDRIP-seq scores. Intronless genes were not considered in this analysis. In these metaplots, we observed that the bisDRIP-seq scores on the non-template strand are significantly higher than on the template strand immediately 5' of the first exon-intron junction (Figure 4A and Figure 4—figure supplement 1A). This strand asymmetry in bisDRIP-seq scores drops 3' of the exon-intron junction. This suggests that the 3’ end of R-loops are bounded by the first exon-intron junction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig4-v2.jpg)
+
+**Figure 4.:** (A) Strand asymmetry in bisDRIP-seq scores ends at the first exon-intron junction. To determine where R-loops are located relative to the first exon-intron junction, a metaplot of bisDRIP-seq scores was generated relative to the first exon-intron junction. bisDRIP-seq scores were calculated for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). These mean bisDRIP-seq scores were then summed at each position relative to the first exon-intron junction for all intron-containing gene promoter regions (n = 14538). These values were plotted separately for the template strand (orange) and for the non-template strand (blue). Immediately 5' of the exon-intron junction, the non-template bisDRIP-seq scores were greater than the template bisDRIP-seq scores in control-treated samples. This difference in bisDRIP-seq scores between the two strands was eliminated almost immediately 3' of the exon-intron junction. This suggests that the first exon-intron junction acted as a 3' boundary to promoter-associated R-loops. (B) R-loop-forming regions expand further from both the transcription start site and the exon-intron junction in promoter regions with larger first exons. To test if the first exon-intron junction was acting as a boundary to R-loops, we created metaplots of R-loop signal in bins of promoter regions with different first-exon sizes. Promoter regions were binned into five groups based on the size of their first exon (n = 2907 or 2908 per bin). On the left side of the panel, metaplots of R-loop signal (blue) centered on the transcription start site were plotted for each bin of promoter regions. A vertical, dashed line (red) indicates the 3’-most location where R-loop signal was at half of the maximum signal in the metaplot. The arrow pointing to the dashed line indicates the distance from the line to the transcription start site. In the middle of the panel are schematics indicating the range of first-exon sizes observed in the bin of promoter regions that is examined in the adjacent metaplots. As illustrated, the smallest first exons are examined in the bin displayed in the top row and each subsequent row examines a bin containing larger first exons. On the right side of the panel, metaplots of R-loop signal (blue) centered on the first exon-intron junction were plotted for each bin of promoter regions. A vertical, dashed line (red) indicates the 5'-most location where R-loop signal was at half of the maximum signal in the metaplot. The arrow pointing to the dashed line indicates the distance from the line to the transcription start site. In metaplots representing genes with longer first exons, R-loop signal extended further 3' from the transcription start site and further 5' of the first exon-intron junction. These results suggest that R-loops were typically bounded between the transcription start site and the first exon-intron junction. ‘TSS’ refers to the transcription start site. In each case, R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. (C) The 3' boundary of promoter-associated R-loops is within a few base pairs of the first exon-intron junction. To determine, at near-nucleotide resolution, the 3' R-loop boundary relative to the first exon-intron junction, we generated a metaplot of bisDRIP-seq-conversion asymmetry. To generate this metaplot, the total number of conversions was summed at each position relative to the first exon-intron junction for all intron-containing gene promoter regions (n = 14538). This was performed separately for each strand of the control-treated sample (mean of n = 13 samples) and then these values were background-corrected by subtracting the same values from the triptolide-treated samples (mean of n = 2 samples). Finally, the strand asymmetry of conversions was calculated as the log ratio of the number of conversions on the non-template strand relative to the template strand. This strand asymmetry of conversions (y-axis) was plotted for each position relative to the exon-intron junction (x-axis). In this metaplot, there is asymmetry in the strand orientation of conversions immediately 5' of the exon-intron junction, with more conversions on the non-template strand. However, within a few base pairs 3' of the exon-intron junction, conversions appear to be equally distributed on both the template and non-template strand. The consensus splice site confounds this analysis to some extent at the exact splice site. Nevertheless, this analysis suggests that the 3' R-loop boundary is located within base pairs of the first exon-intron junction. See Figure 4—source data 1 for source data regarding the set of exon-intron junctions studied in Figure 4A and B.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Only the first exon-intron junction acts as an R-loop boundary. To determine whether other splice junctions act as R-loop boundaries, we created metaplots of R-loop signal centered on the first three splice junctions. Metaplot were generated relative to the junction between the first exon and first intron (blue, n = 14538), the junction between the first intron and second exon (purple, n = 14538), and the junction between the second exon and second intron (green, n = 12100). While there is a positive R-loop signal peak immediately 5' of the first exon-intron junction, there was no similar peak observed for the other two splice junctions. In each metaplot, R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. (B) The strand asymmetry of bisulfite conversions 5' of the exon-intron junction is due to a reduction in the percentage of template-strand cytosines that are converted. In our model of R-loop formation, we expect R-loops to cause strand asymmetry because the RNA binds the template strand and prevents it from reacting with bisulfite. To determine if this explains the conversion asymmetry 5' of the exon-intron junction, we generated a metaplot of the percentage of template-strand cytosines that were converted by bisulfite. At each position relative to the first exon-intron junctions of active promoter regions (n = 14538), we plotted the percentage of cytosines that were converted relative to the number of reads aligned to that site (blue). As expected, there is a reduction in the percentage of converted cytosines 5' of the first exon-intron junction. This mirrors the decrease in template-strand bisDRIP-seq scores 5' of the transcription start site and likely explains that decrease in template-bisDRIP-seq scores. N = 13 bisDRIP-seq samples.
 
 We further tested the idea that the first exon-intron junction is the 3’ boundary of R-loops. To do this, we asked if the size of the R-loop-forming region in promoter regions increases with the length of the first exon. To test this question, metaplot analysis was repeated on groups of promoter regions with different sized first exons. First, promoter regions were binned into five groups based on the annotated size of the first exon. Then, metaplots were created of the R-loop signal centered around either the transcription start site or the first exon-intron junction (Figure 4B). Strikingly, in groups of promoter regions with longer first exons, the R-loop signals are also longer. This supports the idea that R-loops are bounded at both the transcription start site and the first exon-intron junction.
 
@@ -129,7 +181,7 @@ We next asked whether other exon-intron junctions also act as R-loop boundaries.
 
 Together, these results suggest that there is a boundary to R-loop formation located within base pairs of the first exon-intron junction.
 
-## bisDRIP-seq reveals evidence for antisense-strand R-loops
+### bisDRIP-seq reveals evidence for antisense-strand R-loops
 
 We noticed that there is negative R-loop signal upstream of the transcription start site (Figure 3D and F). This could be caused by ‘antisense-strand R-loops,’ i.e., with antisense RNA transcripts hybridized to the annotated non-template strand of DNA (See Figure 3—figure supplement 4C for this structure). Antisense-strand R-loops would result in more prominent bisulfite conversions on the annotated template strand. This type of labeling is opposite from the non-template strand labeling that is caused by the predominant type of R-loop that forms from sense transcription.
 
@@ -137,15 +189,198 @@ We considered that antisense transcription could lead to antisense-strand R-loop
 
 We next used the promoters that showed the highest level of antisense-transcription promoter activity to generate a metaplot of R-loop signal. In this metaplot, the negative R-loop signal was prominent upstream of the transcription start site (Figure 3—figure supplement 4D). Taken together, these data suggest that some promoter regions contain antisense-strand R-loops and that this is linked to antisense transcription in these promoter regions.
 
-## R-loops are observed in the promoter regions of intronless genes
+### R-loops are observed in the promoter regions of intronless genes
 
 We next wanted to identify the promoters that show the strongest association with transcription-dependent R-loops. Any unique features associated with these promoters may be directly related to the R-loops forming at these promoter regions. We searched for promoter regions with two major features: First, we searched for promoter regions that showed disproportionately high bisDRIP-seq score on the non-template strand compared to the template strand. Second, we searched for promoter regions where the majority of the bisDRIP-seq score on the non-template strand was lost upon triptolide treatment. In this analysis, we noticed a set of promoter regions that exhibited both of these features (Figure 5A). We therefore ranked genes based on the sum of these two features to identify the genes that show the strongest association with R-loop structures (Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig5-v2.jpg)
+
+**Figure 5.:** (A) Genes that are strongly associated with promoter-associated R-loops were identified using two criteria. First, transcription-dependent R-loop formation was identified based on the triptolide-sensitivity of the promoter region bisDRIP-seq score (x-axis). Second, R-loop formation was identified by the strand asymmetry of the promoter region bisDRIP-seq score (y-axis). Promoter regions for all genes except those encoding replication-dependent histones (n = 2064, blue) were plotted on these two axes alongside a linear regression model (blue line). Promoter regions for replication-dependent histones (n = 13, orange) were plotted alongside a separate linear regression model (orange line). In the resulting plot, there appears to be a group of genes with relatively high scores on both axes. This suggests that these genes are strongly associated with transcription-dependent R-loops formation. This set of genes included the replication-dependent histones genes and the indicated lncRNA genes MALAT1 and NEAT1. In this plot, all bisDRIP-seq score measurements were made in the region between the transcription start site and + 250 bp. Triptolide-sensitivity was calculated as the non-template bisDRIP-seq score in triptolide treated-samples (mean bisDRIP-seq score from n = 2 samples) subtracted from the non-template bisDRIP-seq score from control-treated samples (mean bisDRIP-seq score from n = 13 samples). Strand asymmetry was calculated as the log2 ratio of the non-template bisDRIP-seq score to the template bisDRIP-seq score in control-treated samples (mean bisDRIP-seq score from n = 13 samples). The shaded areas around both linear regression models represent 95% confidence intervals. (B) Promoter activity does not explain the association between histone genes and R-loop formation. R-loop formation was calculated for each promoter region by taking the sum of the x-axis and y-axis values from Figure 5A. R-loop formation was then plotted against promoter activity for each promoter region. Promoter regions for non-histone genes (n = 2064, blue) were plotted alongside a linear regression model (blue) for these genes. Promoter regions for replication-dependent histone genes (n = 13, orange) were plotted alongside a separate linear regression model (orange). Promoter activity was correlated with R-loop formation. Nonetheless, all of the examined replication-dependent histone genes have higher R-loop formation scores than most of the genes with similar promoter activity. Promoter activity (x-axis) was calculated between the transcription start site and +250 bp using the GRO-seq dataset from Hah et al., 2013. R-loop formation was calculated as the sum of bisDRIP-seq score strand asymmetry and triptolide-sensitivity. These values were derived from the mean bisDRIP-seq scores of n = 13 control-treated samples and mean bisDRIP-seq scores of n = 2 triptolide-treated samples. The shaded areas around both linear regression models represent 95% confidence intervals. (C) R-loops are prevalent in the promoter regions of replication-dependent histone genes. The location of R-loops in the promoter regions of replication-dependent histone genes was examined using metaplot analysis. A metaplot was generated of bisDRIP-seq scores relative to the transcription start sites of all replication-dependent histone genes (n = 69). bisDRIP-seq scores were plotted separately for the template (orange) and non-template (blue) strands. This was repeated for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). The bisDRIP-seq scores on the non-template strand were higher than the scores on the template strand throughout the promoter region 3' of the transcription start site. Additionally, almost no signal was observed in the triptolide-treated samples. These results suggest that R-loops are the predominant structure observed by bisDRIP-seq in the promoter regions of this class of genes. ‘TSS’ indicates the location of the transcription start site. (D,E) Gene-specific heterogeneity in the 3' R-loop boundaries of histone genes. To examine whether promoter-associated R-loops have 3' boundaries in intronless genes, R-loop signal was examined in select histone genes. The observed heterogeneity in 3' R-loop boundaries is represented by (E) HIST1H2BG and (F) HIST1H1E. At the top of each panel are the gene loci and the sense-strand RNA-seq reads that map to the loci containing either gene. In the middle of each panel is the R-loop signal (y-axis) plotted across the genomic loci containing each gene (blue line). In the lower plot, cytosine-to-uracil conversions were mapped to the genomic loci containing each gene. The number of conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). The sharp drop in R-loop signal near the start of the HIST1H2BG gene contrasts with the relatively stable R-loop signal observed in HIST1H1E. Transcription start sites are indicated by both ‘TSS’ and by dashed vertical lines. R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples. See Figure 5—source data 1 for source data for Figure 5A and B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) RNA polymerase II binding and RNA levels in the nucleus do not appear to explain the association between histone genes and R-loop formation. R-loop formation was calculated for each promoter region by taking the sum of bisDRIP-seq score strand asymmetry and the triptolide-sensitivity the non-template bisDRIP-seq scores. R-loop formation was then plotted against (A) nuclear RNA levels or (B) POLR2A (RNA polymerase II) chromatin immunoprecipitation (ChIP) signal for each promoter region. Promoter regions were plotted separately for non-histone genes (blue) and replication-dependent histone genes (orange). A linear regression for all genes was also plotted (blue). Both nuclear RNA levels and RNA polymerase II ChIP signal were weakly correlated with R-loop formation. Nevertheless, replication-dependent histone genes typically had higher R-loop formation scores than genes with similar promoter activity. This suggests that the nuclear RNA level of histones mRNAs in do not explain the high R-loop signal of these genes. It also suggests that the level of RNA polymerase II bound to histone genes does not explain the high R-loop signal observed at these genes. The bisDRIP-seq values in both plots were derived from the mean bisDRIP-seq scores of n = 13 control-treated samples and mean bisDRIP-seq scores of n = 2 triptolide-treated samples. In (A), we examined n = 1813 non-histone genes and n = 2 histone genes. In (B), we examined n = 2064 non-histone genes and n = 13 histone genes. TPKM refers to transcripts per kilobase million. The shaded areas around linear regression models represent 95% confidence intervals. (C) RNase H sensitivity of the bisDRIP-seq signal in histone genes. Metaplots were generated of histone gene non-template bisDRIP-seq score from three different bisDRIP-seq experiments. In the top plot, bisDRIP-seq scores were derived from ‘input’ samples (mean bisDRIP-seq score from n = 2 samples). These input samples received the entire bisDRIP-seq treatment except for the S9.6 immunoprecipitation enrichment steps. In the middle plot, bisDRIP-seq scores were derived from a bisDRIP-seq experiment that did not include an RNase H treatment (n = 1 sample). In the bottom plot, bisDRIP-seq scores were derived from an RNase H-treated bisDRIP-seq experiment (n = 1 sample). The bisDRIP-seq sample that was not treated with RNase H replicated the high non-template bisDRIP-seq scores observed in other bisDRIP-seq experiments at histone loci. On the other hand, almost no bisDRIP-seq signal was observed in either the input samples or in the bisDRIP-seq sample treated with RNase H. This suggests that the bisDRIP-seq signal observed at these gene loci is caused by R-loops. Transcription start sites are indicated by both ‘TSS’ and by dashed vertical lines. (D,E) bisDRIP-seq enrichment at (D) HIST1H2BG and (E) HIST1H1E is due to the presence of R-loops. In the middle and top plots, we compare the bisDRIP-seq from an RNase H treated sample (n = 1) and a bisDRIP-seq sample that was not treated with RNase H (n = 1), respectively. In both the middle and top plot, bisDRIP-seq scores from each experiment were mapped to the genomic region surrounding (D) HIST1H2BG and (E) HIST1H1E. At both loci, the bisDRIP-seq sample that was not treated with RNase H had similar bisDRIP-seq signal to our other bisDRIP-seq control experiments (Figure 5D and E). On the other hand, there is a clear reduction in bisDRIP-seq scores in the RNase H-treated sample. This decrease in signal after RNase H treatment suggests that RNA-DNA hybrids do form at these loci. In the bottom panel, the percentage of each nucleotide is plotted in 51 bp windows. There is no obvious relationship between nucleotide composition and bisDRIP-seq scores throughout these two genes.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** R-loop formation was examined individually in nine replication-dependent histone genes. These genes were identified in Figure 5A as being strongly associated with promoter-associated R-loop structure. Since replication-dependent histone genes lack exon-intron junctions, it was not clear where the 3' boundaries would be located in these genes. Metaplots of R-loop signal (blue) were plotted across each gene and the immediate adjacent genomic region. For each gene, a gene model is displayed above the metaplot. The transcription start site from our GENCODE reference list is indicated by a vertical dashed line. Metaplots were created for (A) HIST1H2BG, (B) HIST1H2BC, (C) HIST1H2BK, (D) HIST4H4, (E) HIST1H2BD, (F) HIST1H1D, (G) HIST1H1E, (H) HIST1H1C and (I) HIST1H1B. Some genes have sharp drops in R-loops signal in the first third of the gene body, while others appear to have positive R-loop signal throughout the gene body. This suggests that at least some intronless genes contain 3' R-loop boundaries despite the lack of intron-exon junctions in these genes. In each plot, the location of the transcription start site is demarcated by ‘TSS’ and a dashed vertical line. R-loop signal was defined as the triptolide-sensitive template-strand bisDRIP-seq score subtracted from the triptolide-sensitive non-template bisDRIP-seq score. R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** To ensure that our bioinformatic approach was not biased by the number of cytosines in individual reads, we repeated our analysis after performing ‘cytosine normalization.’ Cytosine normalization involved multiplying all reads by a variable specific for all reads with the same original number of cytosines. The variable was chosen to ensure that, for all x and y, the average score for reads with x original number of cytosines became equal to the average score for reads with y original number of cytosines. Using this approach, we repeated our analysis. (A) Figure 3E was reproduced using cytosine-normalized bisDRIP-seq scores. A metaplot of bisDRIP-seq scores was created for the non-template strand (blue) and template strand (orange) across only active promoter regions (n = 15644). bisDRIP-seq scores were plotted on separate lines for control-treated samples (solid, mean bisDRIP-seq score from n = 13 samples) and triptolide-treated samples (dashed, mean bisDRIP-seq score from n = 2 samples). As observed in Figure 3E, bisDRIP-seq scores were greater on the non-template strand than on the template strand immediately 3' of the transcription start site. In this plot, active promoters refers to promoters with promoter activity in the top twenty percentile as calculated using the GRO-seq dataset from Hah et al., 2013. ‘TSS’ refers to the transcription start site. (B) Figure 5A was reproduced using cytosine-normalized bisDRIP-seq scores. Genes with transcription-dependent promoter-associated R-loop formation were identified by two criteria. First, transcription-dependent R-loop formation was identified based on the triptolide-sensitivity of the promoter region bisDRIP-seq score (x-axis). Second, R-loop formation was identified by the strand asymmetry of the promoter region bisDRIP-seq score (y-axis). Promoter regions for all genes except those encoding replication-dependent histones (n = 2064, blue) were plotted on these two axes alongside a linear regression model (blue line). Promoter regions for replication-dependent histones (n = 13, orange) were plotted alongside a separate linear regression model (orange line). As observed in Figure 5A, there appears to be a group of genes with relatively high scores on both axes. This set of genes includes the replication-dependent histones genes and the indicated lncRNA genes MALAT1 and NEAT1. Thus, the conclusions of Figure 5A remain unchanged when using cytosine-normalized bisDRIP-seq scores. In this plot, all bisDRIP-seq score measurements were made in the region between the transcription start site and +250 bp. Triptolide-sensitivity was calculated as the non-template bisDRIP-seq score in triptolide treated-samples (mean bisDRIP-seq score from n = 2 samples) subtracted from the non-template bisDRIP-seq score from control-treated samples (mean bisDRIP-seq score from n = 13 samples). Strand asymmetry was calculated as the log2 ratio of the non-template bisDRIP-seq score to the template bisDRIP-seq score in control-treated samples (mean bisDRIP-seq score from n = 13 samples). The shaded areas around both linear regression models represent 95% confidence intervals. (C) Figure 4B was reproduced using cytosine-normalized bisDRIP-seq scores. To test if the first exon-intron junction was acting as a boundary to R-loops, we created metaplots of R-loop signal in bins of promoter regions with different first-exon sizes. Promoter regions were binned into five groups based on the size of their first exon (n = 2907 or 2908 per bin). On the left side of the panel, metaplots of R-loop signal (blue) centered on the transcription start site were plotted for each bin of promoter regions. In the middle of the panel are schematics indicating the range of first-exon sizes observed in the bin of promoter regions that is examined in the adjacent metaplots. As illustrated, the smallest first exons are examined in the bin displayed in the top row and each subsequent row examines a bin of promoter regions containing larger first exons. On the right side of the panel, metaplots of R-loop signal (blue) centered on the first exon-intron junction were plotted for each bin of promoter regions. In metaplots representing genes with longer first exons, R-loop signal extended further 3' from the transcription start site and further 5' of the first exon-intron junction. As observed in Figure 4B, these results suggest that R-loops were typically bounded between the transcription start site and the first exon-intron junction. Thus, the conclusions of Figure 4B remain unchanged when using cytosine-normalized bisDRIP-seq scores. R-loop signal was defined as the triptolide-sensitive template-strand bisDRIP-seq score subtracted from the triptolide-sensitive non-template bisDRIP-seq score. In each case, R-loop signal at each nucleotide position was derived using the mean bisDRIP-seq score from n = 13 control-treated samples and mean bisDRIP-seq score from n = 2 triptolide-treated samples.
+
+**Table 1.**
+ The 25 genes that were most strongly associated with transcription-dependent sense-strand R-loop structures in the region between the transcription start site and + 250 bp.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Histone</th>
+      <th>Single exon</th>
+      <th>Genetype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MALAT1</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>lncRNA</td>
+    </tr>
+    <tr>
+      <td>CTB-58E17.1</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>lncRNA</td>
+    </tr>
+    <tr>
+      <td>RHOB</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>NEAT1</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>lncRNA</td>
+    </tr>
+    <tr>
+      <td>HIST1H2BC</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>STX16</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>ARFIP2</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>HIST1H2BG</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>XBP1</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>TM7SF2</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>DNAJB1</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>HIST1H2BK</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>MIEN1</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>NFKBIA</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>RP11-166B2.1</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>SRSF3</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>LASP1</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>RPPH1</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>ribozyme</td>
+    </tr>
+    <tr>
+      <td>HIST4H4</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>RPL23</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>HIST1H2BD</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>GSS</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>HIST1H1E</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>SRSF7</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+    <tr>
+      <td>TPM3</td>
+      <td>no</td>
+      <td>no</td>
+      <td>protein coding</td>
+    </tr>
+  </tbody>
+</table>
 
 Two important classes of genes were identified in this analysis and both lack introns. First, six of the top 25 genes (24%) and nine of the top 50 genes (18%) are replication-dependent histone genes. The second class of genes encode intronless noncoding RNAs, including MALAT1, NEAT1, RPPH1, and CTB-58E17.1. We noticed that two other top hits, the protein-coding genes RHOB and JUNB, are also intronless genes.
 
 In general, intronless genes appear to be enriched among the promoters that show strong association with R-loop structures. In total, 44% of the top 25 genes in our list are intronless, compared to approximately 2% of long non-coding RNAs (lncRNAs) and 3% of protein-coding genes (Derrien et al., 2012; Louhichi et al., 2011). The presence of R-loops in the promoter regions of these intronless genes suggests that the first exon-intron junction does not promote R-loop formation.
 
-## Replication-dependent histone genes are strongly associated with R-loops
+### Replication-dependent histone genes are strongly associated with R-loops
 
 The presence of R-loops in the replication-dependent histone genes is potentially interesting given how these genes are regulated. As their name suggests, these histone genes are regulated in a cell-cycle dependent manner (Robbins and Borun, 1967). They also lack poly-A tails and are processed in special histone bodies in the nucleus (Dominski and Marzluff, 1999). Thus these genes are co-regulated using special processing pathways.
 
@@ -157,11 +392,31 @@ We next examined the prevalence of R-loops and other single-stranded DNA structu
 
 We next asked whether R-loops are bounded in replication-dependent histone genes. It was not clear if R-loops would be bounded in these genes since they lack introns and therefore they lack exon-intron junctions (Marzluff et al., 2008). Conceivably, the R-loops could extend to the entire length of the transcript. We therefore identified the boundaries of the R-loop signal in each of the nine histone genes that had the highest propensity to form R-loops (Figure 5A). As expected, the 5’ boundary of the R-loops appear to be near the transcription start site in all nine genes. In five of the nine histone genes, the entire R-loop appeared to be restricted to the initial portion of the gene (Figure 5D and Figure 5—figure supplement 2A–E). Sequence analysis of these boundaries does not reveal a clear sequence enrichment or motif (Figure 5—figure supplement 1D and E), making it currently unclear how this boundary is determined. In other cases, like HIST1H1E, R-loops seemed to cover nearly the entire gene (Figure 5E and Figure 5—figure supplement 2F–I). Together these results suggest that additional factors may establish 3’ R-loop boundaries in a subset of the replication-dependent histone genes.
 
-## Large R-loops form immediately downstream of the transcription start site in MALAT1 and NEAT1
+### Large R-loops form immediately downstream of the transcription start site in MALAT1 and NEAT1
 
 Another set of genes which preferentially exhibit R-loops in their promoter regions are MALAT1 and NEAT1. MALAT1 and NEAT1 are adjacent genes that encode abundant, intronless lncRNAs (Hutchinson et al., 2007). These lncRNAs remain in the nucleus where they are involved in the regulation of transcription (Hirose et al., 2014) and splicing (Tripathi et al., 2010), respectively. Both MALAT1 and NEAT1 are longer than 3 kb, which is longer than the replication-dependent histone genes studied above. We were therefore interested in whether there are boundaries to R-loop expansion in these much longer intronless genes.
 
 We first asked where R-loops are located in MALAT1 and NEAT1. The R-loop forming region in MALAT1 extends from the transcription start site to a position approximately 1700 bp downstream, with a sharp decrease in R-loop signal downstream of this position (Figure 6A). Similarly, the R-loop in NEAT1 extended approximately 1400 bp from the transcription start site (Figure 6B). Beyond this site, there was minimal detectable R-loop signal. As with the R-loops in the replication-dependent histone genes, these R-loops showed nearly complete loss of bisDRIP-seq signal on the non-template strand after triptolide treatment (Figure 6—figure supplement 1A and B). Moreover, the high bisDRIP-seq scores in this region are not observed after RNase H treatment (Figure 6—figure supplement 2A and B). This suggests that relatively long R-loops form in MALAT1 and NEAT1 and that these R-loops are bounded to the 5' end of each gene.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig6-v2.jpg)
+
+**Figure 6.:** (A) The promoter-associated R-loop forming region in MALAT1 is large, but bounded. MALAT1 had the strongest association with R-loops in Figure 5A and it is a longer intronless gene than the previously examined replication-dependent histone genes. To determine how far the R-loop-forming region in MALAT1 extends into the gene body, the bisDRIP-seq signal at the MALAT1 locus was examined. At the top of the panel is the gene model of MALAT1 and the sense-strand RNA-seq reads that mapped to this region from an ENCODE MCF-7 RNA-seq dataset (blue, plotted on a log axis). Under the gene model of MALAT1, bisDRIP-seq scores were mapped to the genomic region containing MALAT1 (mean bisDRIP-seq score from n = 13 samples). The bisDRIP-seq score on the template strand (orange) and non-template strand (blue) were plotted separately. In the lower plot, cytosine-to-uracil conversions were mapped to the genomic region surrounding the MALAT1 R-loop forming region. The number of conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). The MALAT1 R-loop region extended from the transcription start site to a site approximately 1750 base pairs downstream of the transcription start site. The transcription start site, indicated by ‘TSS’ and a dashed vertical line, was determined based on the MCF-7 ENCODE CAGE-seq dataset ENCFF207DXM and was located at ch11:65,499,042. (B) The promoter-associated R-loop forming region in NEAT1 appears to have reduced R-loop further into the NEAT1 gene body. R-loop formation in the NEAT1 locus was examined since NEAT1 is adjacent to MALAT1 and was also strongly associated with R-loop formation. At the top of the panel is a gene model of NEAT1 and the sense-strand RNA-seq reads that mapped to this region from an ENCODE MCF-7 RNA-seq dataset (blue, plotted on a log axis). Below the gene model of NEAT1, the bisDRIP-seq scores were mapped to the genomic region containing NEAT1 (mean bisDRIP-seq score from n = 13 samples). The bisDRIP-seq score on the template strand (orange) and non-template strand (blue) were plotted separately. In the lower plot, cytosine-to-uracil conversions were mapped to the genomic region surrounding the NEAT1 R-loop forming region. The number of conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). The NEAT1 R-loop forming region extended almost 1500 base pairs from the transcription start site. However, R-loop signal showed periodicity and appeared to decrease gradually from the transcription start site to its final 3' boundary. The gene model of NEAT1 represents the 23 kb NEAT1 isoform.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Evidence for MALAT1 and NEAT1 R-loop formation in conventional DRIP-seq R-loop mapping. Since MALAT1 and NEAT1 were found to have strong R-loop signals using bisDRIP-seq, we asked if there was evidence of R-loops in previously published DRIP-seq datasets. At the top of each panel, DRIP-seq read counts from the Sanz et al., 2016 NT2 GSM1720616 dataset (blue) were mapped to the (A) MALAT1 and (B) NEAT1 genomic loci. Below the DRIP-seq reads are gene models for the (A) NEAT1 and (B) MALAT1 genomic loci. Under the gene models, bisDRIP-seq scores from control-treated samples were mapped to the genomic region containing (A) MALAT1 and (B) NEAT1 (mean bisDRIP-seq score from n = 13 samples). The bisDRIP-seq score on the template strand (orange) and non-template strand (blue) were plotted separately. In the lower plot, bisDRIP-seq scores from triptolide-treated samples were mapped to the genomic region containing (A) MALAT1 and (B) NEAT1 (mean bisDRIP-seq score from n = 2 samples). The locations in MALAT1 and NEAT1 that contain positive bisDRIP-seq scores also appear to have peaks of DRIP-seq reads. The R-loop peaks observed in DRIP-seq data cover a larger genomic region than the peaks in bisDRIP-seq, which is consistent with bisDRIP-seq having higher resolution than DRIP-seq. Additionally, the high bisDRIP-seq scores observed in the promoters of these genes are lost upon transcription-inhibition by triptolide. ‘TSS’ refers to the transcription start sites, also demarcated by dashed vertical lines, which were determined based on MCF-7 ENCODE CAGE-seq dataset ENCFF207DXM as described in materials and methods.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A,B) bisDRIP-seq enrichment at (A) MALAT1 and (B) NEAT1 is lost after RNase H treatment and is not observed without RNA-DNA hybrid immunoprecipitation by S9.6 antibody. RNase H should selectively degrade the RNA component of R-loops. Thus, if bisDRIP-seq signal is caused by R-loops, RNase H treatment should reduce bisDRIP-seq signal. In the top panel, bisDRIP-seq scores from ‘input’ samples (mean of n = 2 samples) were mapped to each gene locus. bisDRIP-seq input samples were treated an identical manner to other bisDRIP-seq samples, except that no S9.6 antibody immunoprecipitation steps were performed. In the middle and lower plots, the bisDRIP-seq scores from two matched bisDRIP-seq experiments were mapped to each locus. The only difference between these experiments is that one sample was not treated with RNase H (middle plots, n = 1 sample), while the other sample was treated with RNase H (lower plots, n = 1 sample). At both loci, the sample that was not treated with RNase H replicated the bisDRIP-seq signal observed in standard bisDRIP-seq control experiments (Figure 6A and B). On the other hand, there is less bisDRIP-seq signal observed at each loci in both the input and RNase H-treated samples. These results suggest that RNA-DNA hybrids form in the MALAT1 and NEAT1 loci and that these RNA-DNA hybrids cause the high bisDRIP-seq scores observed at these loci. The location of the transcription start site is demarcated by ‘TSS’ and a dashed vertical line.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Most reads from the non-template strand of MALAT1's R-loop region were heavily converted. To further analyze the R-loop that forms in the MALAT1 locus, we examined the individual reads from this locus. Here, we plotted twenty-five reads randomly sampled from the reads larger than 75 bp that aligned to the non-template strand of MALAT1's R-loop region (transcription start site to +1600 bp). For each read (y-axis), the location of converted cytosines (black, solid circle) and the location of non-converted cytosines (purple, empty circle) is plotted relative to the start of the read (x-axis). Most reads were almost completely converted. The length of the stretches of converted cytosines in these reads is consistent with the reads coming from the single-stranded regions of R-loops. (B) Examples of single-stranded DNA boundary reads from within the R-loop forming region in MALAT1. Analysis of bisDRIP-seq reads can potentially reveal the precise transition between an R-loop region and double stranded DNA. This is illustrated by the observation of ‘single-stranded DNA boundary reads’ observed in MALAT1. Single-stranded DNA boundary reads are reads that contain a long stretch of converted cytosines on one end of the read and a long stretch of unconverted cytosines on the other end and therefore likely traverse the boundary of an R-loop. Here we illustrate four examples of boundary reads mapped to around + 65 bp from the transcription start site and another four reads that map to + 1425 from the transcription start site. In each case, the location of converted cytosines (solid, black circles) and unconverted cytosines (empty, purple circles) is plotted on the x-axis relative to the transcription start site of MALAT1. While boundary reads were observed in these regions, we also observed reads that were completely or nearly completely converted in the same regions. Together, these results suggest that the mapped R-loop region may reflect the amalgamation of different sized R-loops from different MALAT1 genes in the cell population. This heterogeneity may stem from variation in the size or location of R-loops in MALAT1. Alternatively, it may reflect the formation of hairpins or other double-stranded structures within the single-stranded regions of R-loops. The location of the transcription start site is demarcated by ‘TSS’ and a dashed vertical line.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/28306/elife-28306-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A–F) SRSF1 preferentially binds MALAT1 RNA near the location corresponding to the end of the MALAT1 R-loop. SRSF1 is a splicing factor that was previously shown to suppress R-loop formation (Li and Manley, 2005). SRSF1 eCLIP reads were mapped to the MALAT1 genome locus from the (A) HepG2 ENCFF327NVE ENCODE dataset and from the (B) K562 ENCFF137IAG ENCODE dataset. The cell type is indicated at the top left of each plot. Below the SRSF1 eCLIP reads is a gene model of the MALAT1 genomic locus. (C) The mean bisDRIP-seq scores for the non-template strand (blue) and template strand (orange) of control-treated samples (n = 13) were mapped to the same MALAT1 genomic locus. In (D–F), the region near the end of the MALAT1 R-loop is expanded. (D,E) SRSF1 eCLIP reads were mapped to this expanded region using the same HepG2 ENCFF327NVE ENCODE dataset and K562 ENCFF137IAG ENCODE dataset. In (F), we mapped the end of the R-loop at near-nucleotide resolution. Here the number of bisDRIP-seq conversions on the template strand and non-template strand were plotted below the x-axis (orange) or above the x-axis (blue), respectively. Shown are the total number of conversions observed in all bisDRIP-seq samples (n = 13). In these plots, it is clear that the location of the SRSF1 binding site is adjacent to the end of the MALAT1 R-loop. It is intriguing to speculate that SRSF1 might be involved in defining the 3' boundary of the R-loop in MALAT1.
 
 Although our mapping reveals the location of the R-loops in MALAT1 and NEAT1 at near-nucleotide resolution, analysis of previous DRIP-seq datasets (Sanz et al., 2016) reveal signals in the same overall regions (Figure 6—figure supplement 1A and B).
 
@@ -169,7 +424,7 @@ Interestingly, there appears to also be periodicity in the bisDRIP-seq scores on
 
 These valleys may indicate the existence of smaller R-loops in some MALAT1 or NEAT1 genes in some cells. This idea is supported by examining individual reads within the R-loop forming region in MALAT1. In most cases, we observed that cytosines were almost completely converted in individual reads (Figure 6—figure supplement 3A). However, we also observed a subset of reads with long stretches of cytosine conversions on one end and long stretches of unconverted cytosines on the other end (Figure 6—figure supplement 3B). The region where the conversions stop occurring in individual reads might reflect an internal border of a R-loop. It should be noted that we cannot exclude the possibility that this may reflect the location of a structured region in the single-stranded DNA that prevents bisulfite reactivity. Nevertheless, the presence of peaks and valleys within the R-loop-forming region of NEAT1 and MALAT1 raises the possibility of heterogeneity in the size and location of the individual R-loops within the larger R-loop forming region identified by bisDRIP-seq.
 
-## Comparison of bisDRIP-seq to existing R-loop mapping methods
+### Comparison of bisDRIP-seq to existing R-loop mapping methods
 
 Previous efforts to map R-loops have primarily relied on immunoprecipitation of RNA-DNA hybrids (Chédin, 2016). Traditionally, DNA fragments containing an R-loop are recovered and sequenced. The sequenced fragments contain both the DNA involved in the R-loop and regions of DNA that are not in the R-loop. Newer approaches, like DRIPc-seq (Chen et al., 2015; Sanz et al., 2016), can provide higher resolution by sequencing the RNA component of the R-loop. We therefore next wanted to determine if the specific R-loop boundaries detected by bisDRIP-seq could also be detected in the human DRIPc-seq datasets.
 
@@ -213,7 +468,94 @@ Although bisDRIP-seq was used here to study steady-state promoter-associated R-l
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>MCF-7 cells</td>
+      <td>ATCC</td>
+      <td>HTB-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>S9.6 antibody</td>
+      <td>Kerafast</td>
+      <td>ENH001</td>
+      <td>Used at a concentration of 20 mg/L</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Pico-Methyl Seq Library Prep Kit</td>
+      <td>Zymo Research</td>
+      <td>D5455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ammonium sulfite monohydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>358983–500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>45% ammonium bisulfite</td>
+      <td>Pfaltz and Bauer Inc</td>
+      <td>A29946250g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>sodium bisulfite</td>
+      <td>Sigma-Aldrich</td>
+      <td>243973–100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>triptolide</td>
+      <td>R and D Systems</td>
+      <td>3253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Bismark</td>
+      <td>Babraham Bioinformatics</td>
+      <td>version 0.14.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Flexbar</td>
+      <td>Dodt et al., 2012 PMID: 24832523</td>
+      <td>version 2.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 MCF-7 cells were used for all experiments. Cell lines were originally obtained from ATCC. Cell identification was performed by ATCC, which identifies cell lines using STR profiling, and cell identity was regularly checked by visual inspection of morphologies. Independently prepared vials of cell lines were tested for mycoplasma by Hoechst staining; these cell lines were tested after the conduction of the experiments described here.
 
@@ -221,7 +563,7 @@ MCF-7 cells (10 million per 15 cm tissue culture dish) were cultured for three d
 
 Each of the thirteen control-treated bisDRIP-seq experiments and each of the two triptolide-treated bisDRIP-seq experiments were performed using a separate dish of MCF-7 cells. Thus, each bisDRIP-seq replicate used a different sample of MCF-7 cells that had, at a minimum, been cultured on a separate dish for three days.
 
-## bisDRIP-seq protocol
+### bisDRIP-seq protocol
 
 In the bisDRIP-seq protocol, R-loops are treated with bisulfite during cell lysis under non-denaturing conditions. The basic concept underlying this approach is that bisulfite can interact with single-stranded DNA, but cannot interact with DNA in a double helix (Yu et al., 2003). This contrasts with 5-methylcytosine mapping, which is performed under denaturing conditions that cause all double-stranded DNA to be single stranded and susceptible to bisulfite treatment. It is therefore worth noting that bisDRIP-seq could be affected by 5-methylcytosine. If 5-methylcytosine is present in the single-stranded DNA of the R-loop, there will be minimal conversion at those sites. This should not substantially impact R-loop mapping, since 5-methylcytosines are found only in a CpG sequence context and most R-loops will have some cytosines that are not followed by guanine. Nevertheless, this issue could be considered during data analysis.
 
@@ -255,7 +597,7 @@ Next, we eluted the immunoprecipitated DNA. First, 0.5 µl of 100 U/µl RNase I 
 
 Next, DNA was extracted from the supernatant using phenol/chloroform. Prior to adding phenol/chloroform, 150 µl of water was added to each sample. Samples were then combined with 500 µl of phenol/chloroform. Samples were mixed thoroughly and then centrifuged at 18400 g for 5 min. 400 µl of the aqueous phase was transferred to a new microcentrifuge tube and then 400 µl of chloroform was added to this aqueous phase. These samples were mixed and then centrifuged at 18400 g for 2 min. The supernatant was transferred to a new microcentrifuge tube. Finally, the DNA in the sample was ethanol precipitated in the presence of 20 µg of glycogen for 48 hr.
 
-## Triptolide treatment of cells
+### Triptolide treatment of cells
 
 In order to treat cells with triptolide (R and D Systems, Minneapolis, Minnesota), 20 mM triptolide was prepared in dimethyl sulfoxide.
 
@@ -263,13 +605,13 @@ Triptolide was added to the media covering the MCF-7 cells at a concentration of
 
 Each of the two triptolide-treatment biological replicates was performed on a separate plate of cells.
 
-## Input bisDRIP-seq protocol
+### Input bisDRIP-seq protocol
 
 Two input bisDRIP-seq samples were prepared using the bisDRIP-seq protocol until the S9.6 antibody immunoprecipitation step. Instead of adding the digested DNA to S9.6 antibody, 15 µl of 3 N NaOH was added to 0.2 µg of digested DNA in 135 µl of water. The samples were then incubated for 20 min at 37°C. This step should complete the bisulfite reaction. We then neutralized the NaOH by adding 150 µl of 0.3 N HCl and 17.5 µl of 1 M Tris pH 8.0.
 
 Next, we repeated the elution treatment that was applied to the bisDRIP-seq samples. First, 0.5 µl of 100 U/µl RNase I was added to each sample. Samples were then incubated for 20 min at 50°C. RNAs still bound to DNA were degraded by adding 1 µl of 0.5 M MgCl2 and 3 µl of 5 U/µl RNase H (New England Biolabs, Ipswich, Massachusetts) to each sample. The samples were then incubated for 20 min at 37°C. Next, we added 2 µl of 20 µg/µl of Proteinase K to each sample. The samples were then incubated for 1 hr at 50°C. Finally, the DNA in the sample was extracted using phenol-chloroform. After this point, the bisDRIP-seq protocol was followed as described above.
 
-## RNase H bisDRIP-seq protocol
+### RNase H bisDRIP-seq protocol
 
 Both an RNase H-treated sample and matched control sample were prepared using a single plate of MCF-7 cells. These cells were treated as described in the initial steps of the bisDRIP-seq protocol described above. These initial steps included all steps until and including fragment ion of the DNA with restriction enzymes and confirmation of the digest with an agarose gel,
 
@@ -279,7 +621,7 @@ Next, we adjusted the immunoprecipitation wash steps to allow for further RNase 
 
 After these wash steps, the samples were treated with NaOH and eluted as described in the bisDRIP-seq protocol above.
 
-## Delayed bisDRIP-seq protocol
+### Delayed bisDRIP-seq protocol
 
 The delayed bisDRIP-seq sample was prepared largely following the bisDRIP-seq protocol, with a few modification.
 
@@ -291,7 +633,7 @@ At this point, we treated the nucleic acids with bisulfite. First, the nucleic a
 
 Next, the bisulfite was removed from the samples through dialysis. First, samples were added to 2.5 ml of buffer 3.1 lacking BSA (100 mM NaCl, 50 mM Tris-HCl pH 8.0, 10 mM MgCl2) in a 15 ml conical centrifuge tube. Samples were then added to an Amicon Ultra-4 Centrifugal Filter Unit with a 30,000 nominal molecular weight limit (EMD Millipore, Darmstadt, Germany). Next, the samples were centrifuged following the instructions of the centrifugal filter unit manufacturer. After centrifugation, fresh buffer 3.1 lacking BSA was added to the centrifugal filter unit and centrifugation was repeated. This dialysis process was repeated until the sample was nominally dialyzed at least 1000000 fold. At this point, the samples were resuspended in 850 µl of buffer 3.1 and the remaining steps of the bisDRIP-seq protocol were followed as described above.
 
-## DNA library preparation
+### DNA library preparation
 
 Prior to constructing DNA sequencing libraries, the eluted DNA was fragmented into approximately 300 bp fragments. DNA from bisDRIP-seq reactions was re-suspended in 150 µl of 1XTE buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA). Samples were then fragmented using an S2-series Covaris ultrasonicator (Woburn, Massachusetts). Sonication was performed at 4°C using the following conditions: intensity 5, 10% Duty Intensity Factor, 200 cycles per burst and 140 s total treatment time.
 
@@ -301,7 +643,7 @@ In preparation for sequencing, the quality of each DNA library was assessed usin
 
 DNA libraries were sequenced by the Weill Cornell Epigenomics Core using a HiSeq 2500 System (Illumina, San Diego, California). Either five or six samples were loaded per lane. DNA libraries were sequenced following the manufacturer's instructions for single-index 100 bp paired-end read clustering.
 
-## Initial data processing
+### Initial data processing
 
 Sequencing data was first processed using CASAVA 1.8.2 (Illumina, San Diego, California) to obtain the nucleotide sequence of reads in FASTQ format.
 
@@ -319,7 +661,7 @@ Having aligned reads to the genome, we next removed putative read duplicates. To
 
 Finally, we determined if cytosines within aligned reads had been converted by bisulfite. To determine whether individual cytosines had been converted to uracils, we used the Bismark bismark_methylation_extractor tool. In the case of paired-end alignments, we used the –no_overlap setting. With single-end alignments, we used the --ignore_3prime 10 setting. This setting removed the final ten nucleotides of each alignment. These nucleotides were removed from aligned reads because we observed bias in the fraction of cytosines converted in this region of reads.
 
-## Calculation of raw bisDRIP-seq read scores
+### Calculation of raw bisDRIP-seq read scores
 
 Next, we developed a method to score reads based on the likelihood that a given read was single-stranded in our samples. This measure was intended to filter out conversions that occur due to spontaneous breathing of DNA. Additionally, we wanted to ensure that single-stranded reads containing large numbers of cytosines were not given greater value than single-stranded reads containing small numbers of cytosines. This method was applied to on each sample separately.
 
@@ -333,9 +675,17 @@ Next, we calculated the probability of observing a specified number of converted
 
 Next, we calculated the number of reads expected to have a given original number of cytosines and a given number of converted cytosines. First, we calculated the total number of aligned reads with a given original number of cytosines. Next, we multiplied that number with the probability of observing the specified number of converted cytosines in a read with that original number of cytosines by chance.
 
-Next, a bisDRIP-seq score was calculated for each read. First, reads were binned together based on the original number of cytosines in the read and the number of converted cytosines in the read. Next, bins were grouped together if they had the same original number of cytosines. If a group of reads with a given original number of cytosines per read consisted of more than a thousand reads in total and the expected number of reads for each bin was above five, then we calculated the bisDRIP-seq for each bin as:ifO > E, bisDRIPseq score=1−EO E = expected number of readsifO ⩽ E, bisDRIPseq score=0 O = observed number of reads
+Next, a bisDRIP-seq score was calculated for each read. First, reads were binned together based on the original number of cytosines in the read and the number of converted cytosines in the read. Next, bins were grouped together if they had the same original number of cytosines. If a group of reads with a given original number of cytosines per read consisted of more than a thousand reads in total and the expected number of reads for each bin was above five, then we calculated the bisDRIP-seq for each bin as:
 
-This value was calculated first for reads with one original number of cytosines and then was calculated for reads with progressively higher numbers of original cytosines. If the expected number of reads for a bin was below five, then the bisDRIP-seq score was calculated for all reads with x number of converted cytosines using the equation:if∑c=xnEC>5:if∑c=xn⁡Oc>∑c=xn⁡Ec, bisDRIPseq scorex=1−∑c=xn⁡Ec∑c=xn⁡Ocif∑c=xn⁡Oc⩽∑c=xn⁡Ec, bisDRIPseq scorex=0if∑c=xn⁡Ec⩽5: bisDRIPseq scorex= bisDRIPseq scorex−1c=number of cytosine conversionsn=original number of cytosinesEc=expected number of reads with c cyosine conversionsOc=observed number of reads with c cyosine conversions
+$$
+ifO > E, bisDRIPseq score=1−\frac{E}{O} E = expected number of readsifO ⩽ E, bisDRIPseq score=0 O = observed number of reads
+$$
+
+This value was calculated first for reads with one original number of cytosines and then was calculated for reads with progressively higher numbers of original cytosines. If the expected number of reads for a bin was below five, then the bisDRIP-seq score was calculated for all reads with x number of converted cytosines using the equation:
+
+$$
+if\sumc=xnE_{C}>5:if\sumc=xn⁡O_{c}>\sumc=xn⁡E_{c}, bisDRIPseq score_{x}=1−\frac{\sum_{c=x}^{n}⁡E_{c}}{\sum_{c=x}^{n}⁡O_{c}}if\sumc=xn⁡O_{c}⩽\sumc=xn⁡E_{c}, bisDRIPseq score_{x}=0if\sumc=xn⁡E_{c}⩽5: bisDRIPseq score_{x}= bisDRIPseq score_{x−1}c=number of cytosine conversionsn=original number of cytosinesE_{c}=expected number of reads with c cyosine conversionsO_{c}=observed number of reads with c cyosine conversions
+$$
 
 In this equation, the original number of cytosines (n) is held constant.
 
@@ -343,9 +693,13 @@ If there were fewer than a thousand reads in a group, reads were scored differen
 
 Source code for calculation of bisDRIP-seq scores from read sequence is in Source code 1 and processingbisDRIPseqreads.py, which has been deposited in https://github.com/champben2002/bisDRIPseq/
 
-## Normalization of bisDRIP-seq read scores
+### Normalization of bisDRIP-seq read scores
 
-bisDRIP-seq scores were normalized to ensure that the sum of the bisDRIP-seq scores were the same across samples after normalization. This normalization procedure assumes that there are no global differences in the amount of single-stranded structure between samples. First, the sum of all read bisDRIP-seq scores was calculated for each sample. Next, the normalized bisDRIP-seq score for each read was calculated for each read in a given sample using the formula:normalized bisDRIPseq score for read Y=bisDRIPseq score for read Y×1000000∑⁡all read bisDRIPseq scores
+bisDRIP-seq scores were normalized to ensure that the sum of the bisDRIP-seq scores were the same across samples after normalization. This normalization procedure assumes that there are no global differences in the amount of single-stranded structure between samples. First, the sum of all read bisDRIP-seq scores was calculated for each sample. Next, the normalized bisDRIP-seq score for each read was calculated for each read in a given sample using the formula:
+
+$$
+normalized bisDRIPseq score for read Y=\frac{bisDRIPseq score for read Y\times1000000}{\sum⁡all read bisDRIPseq scores}
+$$
 
 This normalization procedure was repeated for each sample separately.
 
@@ -359,7 +713,7 @@ We repeated our analysis using these cytosine-content normalized scores (Figure 
 
 Source code for bisDRIP-seq normalization is included in processingbisDRIPseqreads.py, which has been deposited in Source code 1 and https://github.com/champben2002/bisDRIPseq/
 
-## Display of bisDRIP-seq scores and other data on a genome browser
+### Display of bisDRIP-seq scores and other data on a genome browser
 
 All genomic maps were generated using the Integrative Genomics Viewer version 2.3.59 (86) with the GRCh38 human genome (Robinson et al., 2011; Thorvaldsdóttir et al., 2013). The automatically loaded refseq gene models (O'Leary et al., 2016) were included in each map, with the following exceptions: For NEAT1, we used the gene model from GENCODE version 24 (Harrow et al., 2012) of the long isoform of NEAT1, ENST00000501122.2, since it appears more consistent with the RNA-seq data. For HIST1H2BK, we used the gene model from GENCODE version 24 (Harrow et al., 2012) of the intronless isoform of HIST1H2BK, ENST00000356950.1.
 
@@ -367,7 +721,7 @@ bisDRIP-seq scores were calculated for each nucleotide in the genome. The score 
 
 Local sequence composition was plotted for sites in the HIST1H1E and HIST1H2BG genes. At each site, the mean number of adenines, cytosines, guanines and thymines in the surrounding region were plotted. The surrounding region included the nucleotide at the site, the twenty-five nucleotides 5' of the site and twenty-five nucleotides 3' of the site on the template strand.
 
-## Calculation of bisDRIP-seq scores for genomic regions
+### Calculation of bisDRIP-seq scores for genomic regions
 
 bisDRIP-seq scores were calculated for genomic regions using the following procedure:
 
@@ -379,7 +733,7 @@ In some of our analysis, bisDRIP-seq scores were calculated for only one strand 
 
 Source code for calculating region scores is incorporated into regionbisDRIPseqscores.py, which has been deposited in Source code 2 and https://github.com/champben2002/bisDRIPseq/.
 
-## Monte Carlo simulations
+### Monte Carlo simulations
 
 Monte Carlo simulations were used to determine the expected distribution of bisDRIP-seq scores if they distributed randomly across the genome. Two simulations were performed.
 
@@ -391,7 +745,7 @@ Next, bisDRIP-seq scores were calculated for each 1 kb region using either real 
 
 Source code for Monte Carlo simulations are included in Monte_Carlo_random_assign_reads_to_regions.py and Monte_Carlo_for_shuffling_bisDRIPseq_scores.py, which have been deposited in Source code 3 and Source code 4 (respectively), as well as https://github.com/champben2002/bisDRIPseq/
 
-## Creating a reference set of transcription start sites
+### Creating a reference set of transcription start sites
 
 GENCODE's annotated list of transcription start sites (Harrow et al., 2012) was used to generate a ‘reference GENCODE transcription start site list.’ This set of transcription start sites was then used to define promoter regions in the genome and as reference points for metaplots.
 
@@ -403,7 +757,7 @@ After removing lower priority transcription start sites, we had a final referenc
 
 In later analysis, inactive promoter regions were removed. Unless noted otherwise, inactive promoter regions were defined as promoter regions with sense-strand promoter activity in the bottom eighty percentile between the transcription start site and + 1000 bp.
 
-## Calculating promoter activity
+### Calculating promoter activity
 
 In order to calculate the promoter activity of each promoter, we used publicly available GRO-seq data obtained from MCF-7 cells by Hah et al., 2013. In particular, data was combined from files GSM1067410, GSM1067411, GSM1067412, GSM1067413, GSM1067414 and GSM1067415. The MCF-7 cells used in these samples were treated in a similar manner to the MCF-7 cells used in our bisDRIP-seq protocols.
 
@@ -415,7 +769,7 @@ Next, reads partially in the specified region were partially added to the specif
 
 A similar procedure was followed to determine the antisense promoter activity and the promoter activity between the transcription start site and + 250 bp.
 
-## Creating a reference set of exon-intron junctions and calculating first-exon lengths
+### Creating a reference set of exon-intron junctions and calculating first-exon lengths
 
 Exon-intron junctions were extracted from the GENCODE comprehensive gene annotation release 25 (Harrow et al., 2012). Exon-intron and intron-exon junctions were separated based on whether they were the first exon-intron, first intron-exon or second exon-intron junction in a given annotated transcript. If two promoter regions shared the same exon-intron junction, then one was removed from the list.
 
@@ -427,7 +781,7 @@ This procedure provided a final reference set of exon-intron junctions. See Figu
 
 First-exon length was calculated for each first exon-intron junction in the final reference set of first exon-intron junctions. The first-exon length was calculated as the distance between the transcription start site and the first exon-intron junction. This list of first-exon lengths was used to calculate the median length of all first exons for active promoter regions.
 
-## Additional external sources of data
+### Additional external sources of data
 
 In order to compare some external dataset to our data, it was necessary to convert the coordinates of sites or regions to the GRCh38 genome from an earlier version of the reference human genome. In all cases, this was accomplished using the UCSC utility liftOver (Speir et al., 2016).
 
@@ -443,11 +797,11 @@ Nucleus RNA-seq levels of active genes in Figure 5—figure supplement 1A are th
 
 RNA Polymerase II levels were calculated using the ENCODE files ENCFF496YAE and ENCFF881YOO (ENCODE Project Consortium, 2012). These datasets comes from chromatin immunoprecipitations of POLR2A in MCF-7 cells. The number of reads between the transcription start site and + 250 bp of each gene was calculated using the same methodology described above for GRO-seq reads.
 
-## Promoter region enrichment tests
+### Promoter region enrichment tests
 
 For DRIP-seq and bisDRIP-seq promoter region enrichment tests, only promoter regions in genes larger than 2 kb were considered. For each promoter region, a matched region was selected from the same gene. This matched region was centered on an exonic site more than 2 kb from the transcription start site. Promoter enrichment was then tested using the non-parametric Wilcoxon signed-rank test described below.
 
-## Ranking promoter regions by how strongly they associate with transcription-dependent R-loops
+### Ranking promoter regions by how strongly they associate with transcription-dependent R-loops
 
 Promoter region ranking was only performed on active promoter regions. Promoter activity was defined here based on the number of sense-strand GRO-seq reads that aligned to the promoter region between the transcription start site and +250 bp. Active promoter regions were promoter regions in the top twenty percentile of promoter regions in terms of promoter activity. This filter was intended to filter out inactive promoter regions, which appeared to only contribute noise to our analysis.
 
@@ -457,7 +811,7 @@ The remaining promoter regions were scored based on the value:
 
 2 x (log2(control-treated non-template bisDRIP-seq score + 1) - log2(triptolide-treated non-template bisDRIP-seq score + 1)) - log2(control-treated template bisDRIP-seq score + 1))
 
-## Generating graphical plots
+### Generating graphical plots
 
 Loess smoothed plots were generated using the r fANCOVA package's loess.as algorithm with parameters ‘criterion = aicc’ and ‘family = gaussian’.
 
@@ -479,11 +833,11 @@ In all plots of R-loop signal, R-loop signal = (control-treated sample, non-temp
 
 In all plots where a log2 transformation was applied to a dataset, each value in the dataset was added to one prior to the log2 transformation.
 
-## Sampling MALAT1 reads from the MALAT1 R-loop forming region
+### Sampling MALAT1 reads from the MALAT1 R-loop forming region
 
 To sample the reads from the MALAT1 R-loop forming region, we selected all reads that: (1) aligned to the non-template strand of MALAT1, (2) start and end between the transcription start site and + 1600 bp, and (3) are larger than 75 bp long. Next, we randomly selected twenty-five reads. Reads were then plotted using ggplot2's geom_point function.
 
-## Statistical tests
+### Statistical tests
 
 Since we are not confident that our data follows a Gaussian distribution, we typically used non-parametric tests of significance. In particular, we applied the Wilcoxon signed-rank test whether various datasets were significantly different. Wilcoxon signed-rank tests were performed using the two-sided R wilcox.test() algorithm using default parameters with the exception of the ‘paired’ setting which was set to ‘FALSE’.
 
@@ -491,7 +845,7 @@ In the case of comparisons between metaplots, a conservative multiple-hypothesis
 
 The significance of correlations between datasets was examined using the Spearman's rank-correlation test with asymptotic t approximation. Spearman's rank-correlation tests were used since we are not confident that our data follows a Gaussian distribution and therefore wished to apply a non-parametric test of correlation. Spearman's rank-correlation tests were performed using the R cor.test(x, y, method = ‘spearman’) algorithm.
 
-## Data accession information
+### Data accession information
 
 For each sample, we deposited the sequence reads, the conversion frequency at each cytosine nucleotide and a bedGraph of bisDRIP-seq scores in GEO series GSE98886: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98886
 

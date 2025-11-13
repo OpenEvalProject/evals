@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Neuroscience, Yale School of Medicine New Haven United States
-2. https://ror.org/03v76x132 Department of Psychiatry and Neuroscience, Yale School of Medicine New Haven United States
+1. Department of Neuroscience, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Department of Psychiatry and Neuroscience, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -28,27 +28,264 @@ Here, we assessed the effects of therapeutic doses of ketamine (0.5–1 mg/kg) a
 
 Three rhesus monkeys were trained to play a token-based BMP game against a computerized opponent, in which their choice typically depended on the outcomes obtained from each choice in the past trials (Figure 1A, B). In the control sessions where saline was administered, animals tended to repeat the choice that yielded a token, while switching away from the choice that led to non-gain outcomes, with a stronger tendency to switch after loss than neutral outcome (i.e. zero token) (Equation 1; Figure 1C). The reinforcing and punishing effects of gain and non-gain outcomes also decayed exponentially over time, with the recent outcomes exerting a larger effect than remote ones. Ketamine selectively reduced the punishing effect of non-gain outcomes, with significantly larger change being induced after loss than neutral outcome (Figure 1C). In addition, the ketamine-induced modulation was larger for the effect of recent than remote outcomes (analysis of variance [ANOVA], three-way interaction among outcome, trial lag, and drug condition, F(8, 1964) = 4.05, F(8, 1649) = 4.46, and F(8, 509) = 3.62 for animal P, Y, and B, respectively. p < 0.001 in all animals for IM administration of 0.5 mg/kg; F(8, 1229) = 4.89, p < 0.001 in animal P; F(8, 389) = 1.89, p = 0.06 in Y; F(8, 1002) = 3.27, p = 0.001 in B for IN administration of 1 mg/kg). 0.25 mg/kg of IM-administered and 0.5 mg/kg of IN-administered ketamine produced qualitatively similar results (Figure 1—figure supplement 1). We focused our main analyses on the data collected with 0.5 mg/kg IM- and 1 mg/kg IN-administered ketamine, which produced comparable plasma concentration and behavioral effects (Figure 2). Plasma concentration and its time course over 60 min were also comparable to those measured after 0.5 mg/kg in human subjects (Zarate et al., 2012).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig1-v1.jpg)
+
+**Figure 1.:** (A) Temporal sequence of trial events. Gray cross indicates the target that the animal was required to fixate during each epoch. Each trial began with the animal’s gaze on the fixation target displayed on the center of a computer monitor for 0.5 s. Solid red disks around the fixation target indicated the tokens owned by the animal, namely asset, with empty disks serving as placeholders for the tokens to be acquired for exchange with juice reward. After two green disks were displayed for 0.5 s at the diametrically opposed positions along the horizontal meridian, the fixation target was extinguished signaling the animal to indicate its choice by shifting gaze to one of the two green disks. After 0.5 s of fixation, a feedback ring appeared around the chosen target with its color indicating the choice outcome, followed by the corresponding change in tokens. Once the animal collected six tokens, they were automatically exchanged with six drops of apple juice. After juice reward, the animal began the subsequent trial with two to four free tokens. Tokens and placeholders stayed on the screen throughout the trial and inter-trial interval. (B) Payoff matrix of BMP. (C) Coefficients from logistic regression models applied separately to the data from saline (sal) and ketamine (ket) sessions with intramuscular (IM, filled symbols) and intranasal (IN, empty symbols) administration. Standard errors are shown as horizontal bars above/below each coefficient. Lines are exponential functions best fit to the coefficients from saline (solid) and ketamine (dotted) sessions, and those from IM (thick) and IN (thin) sessions. Bars at the top of each panel indicate that the difference between saline and ketamine sessions is statistically significant with the horizontal position and color of each bar coding trial lag and outcome (same color scheme as that of saline sessions), respectively (independent sample t-test, p < 0.05; IM and IN sessions were combined). For IM sessions, N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B. For IN sessions, N=23 (Sal) and 13 (Ket) for monkey P; N=16 (Sal) and 10 (Ket) for monkey Y; N=19 (Sal) and 8 (Ket) for monkey B.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Regression coefficients reflecting the effects of gain, neutral (zero token), and loss outcomes obtained in the past trials are plotted. Solid and dotted lines represent data from saline and ketamine sessions, respectively. Solid (empty) symbols indicate that the corresponding coefficients are (not) significantly different from zero (one-sample t-test, p < 0.05). * indicates that the coefficients from ketamine and saline sessions are significantly different for corresponding trial lag of outcome (independent sample t-test, p < 0.05). Standard error is shown as horizontal bars above/below each coefficient. For IM sessions, N=50 (Sal) and 14 (Ket) for monkey P; N=36 (Sal) and 10 (Ket) for monkey Y. For IN sessions, N=34 (Sal) and 12 (Ket) for monkey P; N=28 (Sal) and 12 (Ket) for monkey B.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig2-v1.jpg)
 
-**Figure 2.:** Dotted lines indicate the data from individual sessions, and dotted lines for average across individual sessions. Blood sample was taken every 20 min after injection.Figure 2—source data 1.
+**Figure 2.:** Dotted lines indicate the data from individual sessions, and dotted lines for average across individual sessions. Blood sample was taken every 20 min after injection.
 
-Outcome-dependent choice behavior and its modulation by ketamine were also parametrically modeled by exponential function, in which the initial impact of each outcome at the time of delivery gradually decayed over subsequent trials (Equation 2; Figure 1C). Ketamine significantly reduced initial amplitude/impact of non-gain outcomes (b0k) consistently in all three animals, and with both IM (b0k = 0.45 (P), 0.63 (Y), 1.36 (B) for loss, t-test, p < 10-11 for all animals; b0k = 0.28 (P), 0.58 (Y), 0.61 (B) for neutral outcome, p < 10-5 for all animals) and IN administration (b0k = 0.29 (P), 0.56 (Y), 1.36 (B) for loss, p <  10-11 for all animals; b0k = 0.22 (P), 0.31 (Y), 0.83 (B) for neutral outcome, p < 0.001 for all animals). Ketamine did not significantly modulate the time constant of decay, and the modulation of initial impact was sufficient to explain the behavioral phenomena.
+Outcome-dependent choice behavior and its modulation by ketamine were also parametrically modeled by exponential function, in which the initial impact of each outcome at the time of delivery gradually decayed over subsequent trials (Equation 2; Figure 1C). Ketamine significantly reduced initial amplitude/impact of non-gain outcomes ($b_{0}^{k}$) consistently in all three animals, and with both IM ($b_{0}^{k}$ = 0.45 (P), 0.63 (Y), 1.36 (B) for loss, t-test, p < $10^{-11}$ for all animals; $b_{0}^{k}$ = 0.28 (P), 0.58 (Y), 0.61 (B) for neutral outcome, p < $10^{-5}$ for all animals) and IN administration ($b_{0}^{k}$ = 0.29 (P), 0.56 (Y), 1.36 (B) for loss, p <  $10^{-11}$ for all animals; $b_{0}^{k}$ = 0.22 (P), 0.31 (Y), 0.83 (B) for neutral outcome, p < 0.001 for all animals). Ketamine did not significantly modulate the time constant of decay, and the modulation of initial impact was sufficient to explain the behavioral phenomena.
 
 Dependence of choice on the cumulative effect of temporally discounted past outcomes is the signature of reinforcement learning (RL) (Lee et al., 2012). We used RL models to gain further insights into the possible mechanisms underlying ketamine-induced behavioral modulation (see Materials and methods). We first determined the variant/class of RL model that best explained the animals’ choice behavior under normal conditions (i.e. saline sessions) (Table 1). The differential forgetting (DF) model best fit the data in all three animals, in which the value functions of chosen and unchosen action decayed at different rates, with forgetting being slower for chosen than unchosen action (Figure 3 and Table 3).
 
+**Table 1.**
+ Reinforcement learning models for normal behavior during saline sessions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th></th>
+      <th>Value update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Q-learning (Q)</td>
+      <td rowspan="2"></td>
+      <td>Qt+1A=αF∙QtA+1-αF∙Rt , if A is chosen.</td>
+    </tr>
+    <tr>
+      <td>Rt = 1, 0, −1 for gain, neutral, and loss, respectively.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Q-learning with subjective outcome evaluation(QSE)</td>
+      <td rowspan="2"></td>
+      <td>Qt+1A=αF∙QtA+∆t , if A is chosen.</td>
+    </tr>
+    <tr>
+      <td>∆t = ∆G , ∆N , ∆L for gain, neutral, and loss (QSE).∆N = 0 (QSE-R)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Differential forgetting(DF)</td>
+      <td rowspan="2"></td>
+      <td>Qt+1A=αF-C∙QtA+∆t , if A is chosen.Qt+1A=αF-UC∙QtA , if A is not chosen.</td>
+    </tr>
+    <tr>
+      <td>∆t = ∆G , ∆N , ∆L for gain, neutral, and loss (DF).∆N = 0 (DF-R)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Non-differential forgetting (NDF)</td>
+      <td rowspan="2"></td>
+      <td>Qt+1A=αF∙QtA+∆t , if A is chosen.Qt+1A=αF∙QtA , if A is not chosen.</td>
+    </tr>
+    <tr>
+      <td>∆t = ∆G , ∆N , ∆L for gain, neutral, and loss (NDF).∆N = 0 (NDF-R)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DF with asset-gated outcome evaluation(DF-A)</td>
+      <td rowspan="2"></td>
+      <td>Qt+1A=αF-C∙QtA+λ∙assett∙Rt , if A is chosen.Qt+1A=αF-UC∙QtA , if A is not chosen.</td>
+    </tr>
+    <tr>
+      <td>Rt = 1, 0, −1 for gain, neutral, and loss, respectively.</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig3-v1.jpg)
 
-**Figure 3.:** Each row shows free (filled circles), unused (empty circles), and fixed (specific values) parameters of a variant of reinforcement learning (RL) model. For the details of RL models and parameters, see Table 1. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (√) mark. Q(standard): standard Q-learning model; Q-SE: Q-learning with subjective outcome evaluation; DF: differential forgetting model; DF-R: differential forgetting with neutral outcome being the reference point; NDF: non-differential forgetting model; NDF-R: non-differential forgetting model with neutral outcome being the reference point; NDF-A: non-differential forgetting model with asset-gated outcome evaluation.Figure 3—source data 1.
+**Figure 3.:** Each row shows free (filled circles), unused (empty circles), and fixed (specific values) parameters of a variant of reinforcement learning (RL) model. For the details of RL models and parameters, see Table 1. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (√) mark. Q(standard): standard Q-learning model; Q-SE: Q-learning with subjective outcome evaluation; DF: differential forgetting model; DF-R: differential forgetting with neutral outcome being the reference point; NDF: non-differential forgetting model; NDF-R: non-differential forgetting model with neutral outcome being the reference point; NDF-A: non-differential forgetting model with asset-gated outcome evaluation.
 
 Building on the best model explaining normal behavior – the DF model, we asked how ketamine (0.5 mg/kg, IM) modulated the parameters of this model by testing variants of DF models, in each of which a different subset of parameters of the model were allowed to vary/deviate freely from the baseline parameters estimated from saline sessions (Table 2).
+
+**Table 2.**
+ Reinforcement learning models for ketamine-induced modulation of choice behavior.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>K-model</th>
+      <th>Hypothesis</th>
+      <th>Model parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Value model</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Common modulation of LR/value for non-gain outcomes</td>
+      <td>∆t = ∆NS+k, ∆LS+k, for neutral and loss outcomes, respectively.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Differential modulation of LR/value for non-gain outcome</td>
+      <td>∆t = ∆NS+k1 , ∆LS+k2 , for neutral and loss outcomes, respectively.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Differential modulation of LR/value for gain vs. non-gain outcome</td>
+      <td>∆t = ∆GS+k1 , ∆NS+k2 , ∆LS+k2 , for gain, neutral, and loss outcomes.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Differential modulation of LR/value for all the outcomes</td>
+      <td>∆t = ∆GK , ∆NK , ∆LK , for gain, neutral, and loss outcomes, respectively.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Memory model</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Differential modulation of forgetting rate for chosen and unchosen actions</td>
+      <td>αF-CK , αF-UCK for chosen and unchosen action, respectively.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Perseveration model</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Modulation of perseveration tendency</td>
+      <td>XtK=1-ε∙QtR-QtL+ε∙ItCItC = 1 (−1), if right (left) target was chosen at trial t.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Modulation of LR/value and perseveration</td>
+      <td>Model 4 + model 6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Temporal credit assignment (TCA) model</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Increase mis-assignment</td>
+      <td>XtK=QtR-QtL+ω1∙It-2c∙∆t-1+ ω2∙It-3c∙∆t-1 + ω3∙It-4c∙∆t-1ItC = 1 (−1), if right (left) target was chosen at trial t.∆ts = ∆GS , ∆NS , ∆LS for gain, neutral, and loss t trial t.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Increase spread</td>
+      <td>XtK=QtR-QtL+ω1∙It-1c∙∆t-2+ ω2∙It-1c∙∆t-3 + ω3∙It-1c∙∆t-4ItC = 1 (−1), if right (left) target was chosen at trial t.∆ts = ∆GS , ∆NS , ∆LS for gain, neutral, and loss at trial t.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Increase statistical learning (SL)</td>
+      <td>XtK=QtR-QtL+ω1⋅I(|rFreqt|&gt;τ)⋅rFreqt⋅avgΔtrFreqt=FreqR,t-FreqL,t,FreqA,t=ρ*FreqA,t-1+IchosenI(|rFreqt|≥τ)=1(0),if|rFreqt|≥(&lt;)τavg∆t=φ*avg∆t-1+∆tS∆ts = ∆GS , ∆NS , ∆LS for gain, neutral, and loss at trial t.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Motivation model</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Modulation of asset-gated outcome evaluation</td>
+      <td>Qt+1A=αF-CS∙QtA+λ∙αLS∙assett∙∆tS , if A is chosen.Qt+1A=αF-UCS∙QtA , if A is not chosen.∆tS = ∆GS , ∆NS , ∆LS for gain, neutral, and loss at trial t.</td>
+    </tr>
+  </tbody>
+</table>
 
 In all three animals, the model incorporating valence-dependent change in outcome evaluation best fit the choice data from ketamine sessions with (K-model 7 in the parenthesis, P) or without (K-model 4, P and Y/B) additional change in the tendency of choice perseveration (Figure 4 and Table 3). Under ketamine, value update increased positively following all outcomes, thus increasing overall probability of repeating the same choice or namely, choice perseveration. However, the change was larger for non-gain outcomes, with the largest modulation after loss, consistent with the results from our model comparison that the model including only a perseveration component performed worse than the best model in all three animals (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig4-v1.jpg)
 
-**Figure 4.:** Each row shows fixed (gray-filled circles), free (colored circles), and unused (empty circles) parameters of a variant of differential forgetting (DF) model. For the details of each model, see Table 2. θ represents a set of parameters added to a particular variant of DF model, and the number inside colored circles indicate the number of added parameters (>1). For the details of each model, see Table 2. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (√) mark. DF(saline): differential forgetting model fit to the data from saline session; Common mod. non-gain: common modulation of non-gain outcome evaluation; Separate mod. neutral vs. loss: differential modulation of neutral and loss outcome evaluation; Separate mod. gain vs. non-gain: differential modulation of gain and non-gain outcome evaluation; Separate mod. all: outcome-dependent modulation of outcome evaluation; Separate mod. forgetting rate: differential modulation of forgetting rate for chosen and unchosen target; Inc perseveration: increased perseveration; Mod. value for all & inc perseveration: outcome-dependent modulation of outcome evaluation and increased perseveration; Inc misassign: increased backward credit misassignment; Inc spread: increased forward spread in credit assignment; Inc statistical learning: increased statistical learning of reward rate; Mod. asset gating: modulation of asset-gated outcome evaluation.Figure 4—source data 1.
+**Figure 4.:** Each row shows fixed (gray-filled circles), free (colored circles), and unused (empty circles) parameters of a variant of differential forgetting (DF) model. For the details of each model, see Table 2. θ represents a set of parameters added to a particular variant of DF model, and the number inside colored circles indicate the number of added parameters (>1). For the details of each model, see Table 2. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (√) mark. DF(saline): differential forgetting model fit to the data from saline session; Common mod. non-gain: common modulation of non-gain outcome evaluation; Separate mod. neutral vs. loss: differential modulation of neutral and loss outcome evaluation; Separate mod. gain vs. non-gain: differential modulation of gain and non-gain outcome evaluation; Separate mod. all: outcome-dependent modulation of outcome evaluation; Separate mod. forgetting rate: differential modulation of forgetting rate for chosen and unchosen target; Inc perseveration: increased perseveration; Mod. value for all & inc perseveration: outcome-dependent modulation of outcome evaluation and increased perseveration; Inc misassign: increased backward credit misassignment; Inc spread: increased forward spread in credit assignment; Inc statistical learning: increased statistical learning of reward rate; Mod. asset gating: modulation of asset-gated outcome evaluation.
+
+**Table 3.**
+ Maximum likelihood parameter estimates of the best models for saline and ketamine sessions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>αF-C</th>
+      <th>αF-UC</th>
+      <th>∆G</th>
+      <th>∆N</th>
+      <th>∆L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P</td>
+      <td>Saline</td>
+      <td>0.72</td>
+      <td>0.09</td>
+      <td>−0.57</td>
+      <td>−1.3</td>
+      <td>−2.31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ketamine</td>
+      <td></td>
+      <td></td>
+      <td>0.40 (0.49)</td>
+      <td>0.11 (0.18)</td>
+      <td>−0.18 (−0.15)</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Saline</td>
+      <td>0.65</td>
+      <td>0.20</td>
+      <td>−0.54</td>
+      <td>−1.91</td>
+      <td>−3.15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ketamine</td>
+      <td></td>
+      <td></td>
+      <td>0.31</td>
+      <td>−0.18</td>
+      <td>−0.95</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Saline</td>
+      <td>0.83</td>
+      <td>0.19</td>
+      <td>−1.07</td>
+      <td>−2.26</td>
+      <td>−4.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ketamine</td>
+      <td></td>
+      <td></td>
+      <td>0.18</td>
+      <td>−0.25</td>
+      <td>−1.01</td>
+    </tr>
+  </tbody>
+</table>
 
 When the effect of ketamine was simulated with the best models within each class of ketamine models, K-model 4 (differential modulation of outcome evaluation for all three outcomes) produced the most similar results to actual data (Figure 5, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig5-v1.jpg)
+
+**Figure 5.:** Simulated data were generated with the maximum likelihood parameters of best-fitting models for saline (differential forgetting model) and ketamine (K-model 4: differential modulation of value for all the outcomes) sessions. Simulated choice was analyzed with logistic regression model (Equation 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Format is same as in Figure 4. Each column represents simulated data with best-fitting parameters for individual monkey (P, Y, and B from left to right).
 
 Unlike monkeys Y and B, the best-fitting model for monkey P indicated that ketamine reduced overall tendency to switch choice in addition to outcome-dependent modulation of outcome evaluation. However, Bayesian information criterion (BIC) differed only slightly (dBIC = 3.99) between the best-fitting (K-model 7) and the second-best model (K-model 4) and the model predictions for choice behavior were very similar both qualitatively and quantitatively (Table 3 and Figure 5). We conclude that the behavioral effects of ketamine were consistent across all three monkeys. We did not find convincing evidence to support that ketamine significantly modulated cognitive (i.e. memory, temporal credit assignment [TCA] models) or motivational (i.e. motivation model) aspects of the animal’s behavior. However, ketamineinduced ocular nystagmus particularly when animals were holding fixation (i.e. pre-feedback fixation) on a peripheral target immediately after a choice was made.
 
@@ -56,17 +293,17 @@ Centripetal eye drift measured by eye velocity was significantly larger under ke
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig6-v1.jpg)
 
-**Figure 6.:** (A) Ocular position and velocity during fixation on the peripheral target in example trials during saline (left panel) and ketamine (right panel) sessions. (B) Time course of mean ocular velocity aligned at the time of saline or ketamine injection (monkey P, Y, and B from top to bottom). Shades indicate standard error. IM and IN indicates intramuscular and intranasal administration, respectively. For IM sessions, N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B. For IN sessions, N=23 (Sal) and 13 (Ket) for monkey P; N=16 (Sal) and 10 (Ket) for monkey Y; N=19 (Sal) and 8 (Ket) for monkey B.Figure 6—source data 1.Figure 6B.
+**Figure 6.:** (A) Ocular position and velocity during fixation on the peripheral target in example trials during saline (left panel) and ketamine (right panel) sessions. (B) Time course of mean ocular velocity aligned at the time of saline or ketamine injection (monkey P, Y, and B from top to bottom). Shades indicate standard error. IM and IN indicates intramuscular and intranasal administration, respectively. For IM sessions, N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B. For IN sessions, N=23 (Sal) and 13 (Ket) for monkey P; N=16 (Sal) and 10 (Ket) for monkey Y; N=19 (Sal) and 8 (Ket) for monkey B.
 
 Ketamine’s effects on both ocular nystagmus and negative evaluation of loss peaked and waned away within 1 hr after the injection (Figures 6 and 7). Despite the similar time course, further analysis suggested that these two effects were unlikely to be produced by a common mechanism/process. Nystagmus tended to cause fixation errors during the pre-feedback waiting period in a small number of trials. We found that as the animals owned more tokens and therefore were closer to earning juice reward, fixation errors became less frequent under ketamine (two-way interaction between drug condition and # of owned token in linear regression, t = −3.6, −3.3, and −9.5 for P, Y, and B, respectively, p < 0.001 for all three animals; Figure 8A), suggesting that animals could counter the undesirable effect of ketamine when they had stronger motivation to obtain juice reward. However, ketamine-induced modulation of loss evaluation (i.e. reduced probability of choice switch after loss) did not systematically change with animals’ motivation gated by the number of accrued tokens (two-way interaction between drug condition and # of owned tokens in linear regression, p > 0.25 for all three animals; Figure 8B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig7-v1.jpg)
 
-**Figure 7.:** Time course of attenuation in loss evaluation induced by 0.5 mg/kg of intramuscularly (A) and 1 mg/kg of intranasally (B) administered ketamine. Regression coefficient reflecting ketamine’s modulation of the effect of each outcome from the previous trial (trial lag 1) is plotted as a function of time relative to the injection. Solid (empty) symbols indicate that coefficients are (not) significantly different from zero (t-test, p < 0.05). Dotted lines represent standard error obtained from shuffled data (N=1000) between saline and ketamine sessions separately for each outcome. For IM sessions, N=52 (Sal) and 12 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=4 (Sal) and 7 (Ket) for monkey B.Figure 7—source data 1.
+**Figure 7.:** Time course of attenuation in loss evaluation induced by 0.5 mg/kg of intramuscularly (A) and 1 mg/kg of intranasally (B) administered ketamine. Regression coefficient reflecting ketamine’s modulation of the effect of each outcome from the previous trial (trial lag 1) is plotted as a function of time relative to the injection. Solid (empty) symbols indicate that coefficients are (not) significantly different from zero (t-test, p < 0.05). Dotted lines represent standard error obtained from shuffled data (N=1000) between saline and ketamine sessions separately for each outcome. For IM sessions, N=52 (Sal) and 12 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=4 (Sal) and 7 (Ket) for monkey B.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig8-v1.jpg)
 
-**Figure 8.:** (A) Difference in the rate of fixation break/trial between ketamine and saline sessions is plotted as a function of cumulative number of tokens (as a proxy for time with the satiation effect being controlled). Number of tokens owned by the animal at a given trial (asset) is color coded. Vertical dotted lines demarcate the latest data point that was included in the linear regression analysis. (B) Difference in the probability of choice switch after loss from the previous trial (trial lag 1) between ketamine and saline sessions is plotted as a function of asset at the time of decision. Due to limited number of loss trials, analysis was performed after dividing trials into four groups according to asset (0–1, 2, 3, 4). N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B.Figure 8—source data 1.
+**Figure 8.:** (A) Difference in the rate of fixation break/trial between ketamine and saline sessions is plotted as a function of cumulative number of tokens (as a proxy for time with the satiation effect being controlled). Number of tokens owned by the animal at a given trial (asset) is color coded. Vertical dotted lines demarcate the latest data point that was included in the linear regression analysis. (B) Difference in the probability of choice switch after loss from the previous trial (trial lag 1) between ketamine and saline sessions is plotted as a function of asset at the time of decision. Due to limited number of loss trials, analysis was performed after dividing trials into four groups according to asset (0–1, 2, 3, 4). N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B.
 
 ## Discussion
 
@@ -76,7 +313,7 @@ Negative bias in perception, memory, feedback, and emotional processing has been
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig9-v1.jpg)
 
-**Figure 9.:** Regression coefficients reflecting the effects of gain, neutral (zero token), and loss outcomes obtained in the past trials are plotted. Solid (dotted) lines represent data from saline sessions >1 day (1 day) after a ketamine session. Solid (empty) symbols indicate that the corresponding coefficients are (not) significantly different from zero (t-test, p < 0.05). Standard error is shown as horizontal bars above/below each coefficient. For IM sessions, N=37 (Sal) and 14 (Ket) for monkey P; N=35 (Sal) and 13 (Ket) for monkey Y; N=18 (Sal) and 6 (Ket) for monkey B. For IN sessions, N=37 (Sal) and 12 (Ket) for monkey P; N=25 (Sal) and 10 (Ket) for monkey Y.Figure 9—source data 1.
+**Figure 9.:** Regression coefficients reflecting the effects of gain, neutral (zero token), and loss outcomes obtained in the past trials are plotted. Solid (dotted) lines represent data from saline sessions >1 day (1 day) after a ketamine session. Solid (empty) symbols indicate that the corresponding coefficients are (not) significantly different from zero (t-test, p < 0.05). Standard error is shown as horizontal bars above/below each coefficient. For IM sessions, N=37 (Sal) and 14 (Ket) for monkey P; N=35 (Sal) and 13 (Ket) for monkey Y; N=18 (Sal) and 6 (Ket) for monkey B. For IN sessions, N=37 (Sal) and 12 (Ket) for monkey P; N=25 (Sal) and 10 (Ket) for monkey Y.
 
 Ketamine has been used as a pharmacological model of schizophrenia inducing cognitive deficits (Krystal et al., 1994; Blackman et al., 2013; Fleming et al., 2022). Ketamine was reported to impair cognitive functions such as working memory, context-dependent behavioral control, task-switching, rule learning, and reasoning (Taffe et al., 2002; Condy et al., 2005; Skoblenick and Everling, 2012; Krystal et al., 2000; Brunamonti et al., 2014). We tested multiple hypotheses regarding ketamine’s possible effects on the time constant of choice and outcome memory, accurate association between an outcome and its causative choice (i.e. TCA) and behavioral perseveration. Ketamine increased the overall probability of repeated choice. However, since this tendency was outcome dependent, with the effect being significantly larger for non-gain outcomes, and largest for loss, this effect cannot be entirely explained by increased perseveration alone. These results are consistent with a previous report that ketamine did not affect the process of learning, but only affected the integration of information for decision (Scholl et al., 2014). These results also suggest that the memory of affective events and their associations (i.e. TCA) might be more resistant to acute disruption by NMDA receptor blockade, than affectively neutral information or rules. This disruption-resistant affective memory might underlie the delayed onset of antidepressant’s therapeutic effect and treatment-resistant depression.
 
@@ -86,68 +323,110 @@ Finally, our results demonstrate the sensitivity and the potential of the non-hu
 
 ## Materials and methods
 
-## Animal preparation
+### Animal preparation
 
 Three male monkeys (Macaca mulatta, P, Y, and B; body weight, 12–16 kg) were used. The animal was seated in a primate chair with its head fixed, and eye position was monitored with a high-speed eye tracker (ET 49, Thomas Recording, Giessen, Germany). All procedures used in this study were approved by the Institutional Animal Care and Use Committee at Yale University (Protocol #: 11058), and conformed to the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Guide for the Care and Use of Laboratory Animals.
 
-## Behavioral task
+### Behavioral task
 
 Animals were trained to perform a token-based BMP task (Figure 1A). Details of the task have been previously published (Seo and Lee, 2009). Briefly, animals played a competitive BMP game against a computerized opponent and the outcome of each trial was determined jointly by the animal’s and the opponent’s choice according to the payoff matrix (Figure 1B). The payoff matrix was adjusted for each animal to produce comparable choice behavior across all three animals. When the animals matched the opponent’s choice, they gained one (monkey P) or two (monkey Y/B) tokens, whereas non-matching choices incurred either zero token (i.e. neutral outcome) or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher (lower) than that of zero token for the risky (safe) target. The locations of ‘safe’ and ‘risky’ targets were fixed during a block of 40 trials and then switched with a probability of 0.1 afterwards. The computer opponent simulated a rational player who exploits any predictable patterns in the animal’s choice and outcome history to minimize the animal’s payoff (Seo and Lee, 2009). To maximize payoff, the animals were required to dynamically change their choices to minimize serial correlations in the sequence of choice and outcome that could be exploited by the opponent.
 
-## Administration of ketamine
+### Administration of ketamine
 
 For IM administration, 0.25 or 0.5 mg/kg of ketamine (Ketaset, Zoetis Inc) was injected into the right or left calf muscle. Doses were selected based on the therapeutic doses of ketamine when it is used as antidepressant for human patients. For IN administration, 0.5 or 1 mg/kg of ketamine was delivered into the right or left nostril using an IN mucosal atomization device (MAD Nasal, Teleflex Medical). Ketamine was administered with a 6.4-day interval on average (2–7 days), and sterile saline (IM) or sterile water (IN) were administered in-between successive ketamine sessions.
 
-## Analysis of choice behavior
+### Analysis of choice behavior
 
-## Logistic regression model
+#### Logistic regression model
 
-The effect of past outcomes on an animal’s choice was analyzed using the following model:(1)logit[Pt(R)]=∑i=15biGG(t−i)+∑i=15biNN(t−i)+∑i=15biLL(t−i)+∑i=15biRR(t−i)
+The effect of past outcomes on an animal’s choice was analyzed using the following model:
 
-where PtR is the probability of animal’s choosing right target at the current trial t, G(t − i), N(t − i), L(t − i), and R(t − i) are regressors encoding gain, neutral, loss, and juice reward outcome that occurred after right (left) choice in the ith trial into the past as 1 (−1), and other outcomes as 0, respectively. biG,biN,biL,biR are regression coefficients, with positive (negative) coefficients indicating that the particular outcome at trial t − i tended to increase (decrease) the animal’s tendency to choose the same target at trial t, relative to chance level (Figure 1C). Separate regression models were fit to saline, IM and IN administered ketamine sessions for each animal.
+$$
+logit[P_{t}(R)]=\sumi=15b_{i}^{G}G(t−i)+\sumi=15b_{i}^{N}N(t−i)+\sumi=15b_{i}^{L}L(t−i)+\sumi=15b_{i}^{R}R(t−i)
+$$
 
-## Nonlinear regression – exponential model
+where $P_{t}R$ is the probability of animal’s choosing right target at the current trial t, G(t − i), N(t − i), L(t − i), and R(t − i) are regressors encoding gain, neutral, loss, and juice reward outcome that occurred after right (left) choice in the ith trial into the past as 1 (−1), and other outcomes as 0, respectively. $b_{i}^{G},b_{i}^{N},b_{i}^{L},b_{i}^{R}$ are regression coefficients, with positive (negative) coefficients indicating that the particular outcome at trial t − i tended to increase (decrease) the animal’s tendency to choose the same target at trial t, relative to chance level (Figure 1C). Separate regression models were fit to saline, IM and IN administered ketamine sessions for each animal.
 
-We modeled the temporal decay of the effect of past outcome over multiple trials and its modulation by ketamine with the following exponential function:(2)YiO=[b0s+b0k⋅Ik]⋅exp[−(i−1)/(b1s+b1k⋅Ik)](o=gain,neutral∨loss)
+### Nonlinear regression – exponential model
 
-where i is trial lag (ith trial into the past), Ik is an indicator variable encoding ketamine (saline) session as 1 (0). b0s and b1s are initial amplitude and decay time constant, respectively, for saline session, whereas b0k and b1k are modulation by ketamine. Exponential functions were fit to the data with nonlinear regression using fitnlm.m in MATLAB (MathWorks), separately for each outcome.
+We modeled the temporal decay of the effect of past outcome over multiple trials and its modulation by ketamine with the following exponential function:
 
-## RL models
+$$
+Y_{i}^{O}=[b_{0}^{s}+b_{0}^{k}⋅I_{k}]⋅exp[−(i−1)/(b_{1}^{s}+b_{1}^{k}⋅I_{k})](o=gain,neutral∨loss)
+$$
 
-We used RL models to investigate the potential cognitive/computational processes that might be modulated by ketamine. RL models have been extensively and successfully applied to explain reward-guided choice behavior (Lee et al., 2012). The general idea of RL is that the outcomes experienced from a particular action/state are integrated over time to form the reward expectation or the value of that action/state, and that an action among alternatives is chosen to maximize the expected outcome. One algorithm for the integration is to incrementally update the old expectation/value with a prediction error which can be formalized as follows for a single-state situation (Sutton and Barto, 1998):(3)Qt+1(A)=Qt(A)+αL⋅[Rt−Qt(A)](standardQ−learning)
+where i is trial lag (ith trial into the past), $I_{k}$ is an indicator variable encoding ketamine (saline) session as 1 (0). $b_{0}^{s}$ and $b_{1}^{s}$ are initial amplitude and decay time constant, respectively, for saline session, whereas $b_{0}^{k}$ and $b_{1}^{k}$ are modulation by ketamine. Exponential functions were fit to the data with nonlinear regression using fitnlm.m in MATLAB (MathWorks), separately for each outcome.
 
-where QtA is the value function for action A at trial t, αL is learning rate, and Rt-QtA is the discrepancy between actual outcome, Rt and the expectation/value, namely reward prediction error. This formula can be rearranged as follows Barraclough et al., 2004; Ito and Doya, 2009:(4)Qt+1(A)=(1−αL)⋅Qt(A)+αL⋅Rt=αF⋅Qt(A)+αL⋅Rt
+### RL models
 
-where αF and αL are separate parameters for the forgetting rate of the old value estimate and the learning rate of a new outcome, respectively. With 0<αF<1, the old value function decays exponentially over time, simulating forgetting. Action selection was modeled with a softmax function, (5)Pt(R)=1/(1+e−β⋅Xt),Xt=[Qt(R)−Qt(L)]
+We used RL models to investigate the potential cognitive/computational processes that might be modulated by ketamine. RL models have been extensively and successfully applied to explain reward-guided choice behavior (Lee et al., 2012). The general idea of RL is that the outcomes experienced from a particular action/state are integrated over time to form the reward expectation or the value of that action/state, and that an action among alternatives is chosen to maximize the expected outcome. One algorithm for the integration is to incrementally update the old expectation/value with a prediction error which can be formalized as follows for a single-state situation (Sutton and Barto, 1998):
 
-where probability of choosing right target, PtR was a logistic function of the estimated value of right relative to left choice. Inverse temperature, β regulated randomness of choice determining the influence of action values on decision.
+$$
+Q_{t+1}(A)=Q_{t}(A)+\alpha_{L}⋅[R_{t}−Q_{t}(A)](standardQ−learning)
+$$
+
+where $Q_{t}A$ is the value function for action A at trial t, $\alpha_{L}$ is learning rate, and $R_{t}-Q_{t}A$ is the discrepancy between actual outcome, $R_{t}$ and the expectation/value, namely reward prediction error. This formula can be rearranged as follows Barraclough et al., 2004; Ito and Doya, 2009:
+
+$$
+Q_{t+1}(A)=(1−\alpha_{L})⋅Q_{t}(A)+\alpha_{L}⋅R_{t}=\alpha_{F}⋅Q_{t}(A)+\alpha_{L}⋅R_{t}
+$$
+
+where $\alpha_{F}$ and $\alpha_{L}$ are separate parameters for the forgetting rate of the old value estimate and the learning rate of a new outcome, respectively. With $0<\alpha_{F}<1$, the old value function decays exponentially over time, simulating forgetting. Action selection was modeled with a softmax function,
+
+$$
+P_{t}(R)=1/(1+e^{−\beta⋅X_{t}}),X_{t}=[Q_{t}(R)−Q_{t}(L)]
+$$
+
+where probability of choosing right target, $P_{t}R$ was a logistic function of the estimated value of right relative to left choice. Inverse temperature, β regulated randomness of choice determining the influence of action values on decision.
 
 To investigate the effects of ketamine, we first tested multiple variants of the general model and determined the model that best explained normal behavior during saline sessions (Table 1; Figure 3). This is important, since we can expect to characterize the effect of ketamine accurately only in the context of a reliable behavioral model for how the animal’s behavior was influenced by the outcomes of their previous choices.
 
 Then, we examined how the parameters of this model were modulated by ketamine (Table 2; Figure 4).
 
-## Model selection for saline sessions
+### Model selection for saline sessions
 
-In the most restricted, standard Q-learning model, value was updated only for the chosen action by taking a weighted average of QtA and Rt with αF=1-αL . Rt , was fixed as −1, 0, and 1 for gain, neutral, and loss outcome, respectively. These arrangements confined action value Q within the range of −1−1.
+In the most restricted, standard Q-learning model, value was updated only for the chosen action by taking a weighted average of $Q_{t}A$ and $R_{t}$ with $\alpha_{F}=1-\alpha_{L}$ . $R_{t}$ , was fixed as −1, 0, and 1 for gain, neutral, and loss outcome, respectively. These arrangements confined action value Q within the range of −1−1.
 
-For three variants of RL models – Q-learning with subjective evaluation (QSE), DF, and non-differential forgetting (NDF) models, we relaxed the restrictions of the Q-learning model in two ways. First, Rt was set as a free parameter reflecting subjective outcome evaluation. When both αL and Rt are set as free parameters, the model becomes underdetermined. Therefore, in these models, the product of learning rate and outcome value, αL∙Rt was consolidated into a single parameter ∆t or the total amount of change due to a new outcome which could take different values for gain (∆G), neutral (∆N), and loss (∆L) outcome. We also tested the models in which ∆N was fixed as 0 simulating effectively neutral outcome. Second, action value Q for the unchosen action was allowed to decay, with DF rates for chosen (αF-C) and unchosen (αF-UC) actions in a DF model, and with a common forgetting rate, αF in an NDF model. Action values were updated only for the chosen action in a QSE model.
+For three variants of RL models – Q-learning with subjective evaluation (QSE), DF, and non-differential forgetting (NDF) models, we relaxed the restrictions of the Q-learning model in two ways. First, $R_{t}$ was set as a free parameter reflecting subjective outcome evaluation. When both $\alpha_{L}$ and $R_{t}$ are set as free parameters, the model becomes underdetermined. Therefore, in these models, the product of learning rate and outcome value, $\alpha_{L}∙R_{t}$ was consolidated into a single parameter $\Delta_{t}$ or the total amount of change due to a new outcome which could take different values for gain ($\Delta_{G}$), neutral ($\Delta_{N}$), and loss ($\Delta_{L}$) outcome. We also tested the models in which $\Delta_{N}$ was fixed as 0 simulating effectively neutral outcome. Second, action value Q for the unchosen action was allowed to decay, with DF rates for chosen ($\alpha_{F-C}$) and unchosen ($\alpha_{F-UC}$) actions in a DF model, and with a common forgetting rate, $\alpha_{F}$ in an NDF model. Action values were updated only for the chosen action in a QSE model.
 
 Finally, we tested an additional model in which outcome evaluation was gated by asset (non-DF with asset-gated outcome evaluation – NDF-A model) or the number of tokens owned by the animal at the time of decision, simulating temporal discounting of outcome value depending on its temporal distance to the primary reward that was always given only after six tokens were acquired.
 
-For all tested models other than Q-learning model, β was fixed to be 1, as a model was underdetermined when both β and ∆t could vary freely. Model parameters were fit to choice data to maximize the likelihood of data. BIC was used for model comparison and selection of the best model.
+For all tested models other than Q-learning model, β was fixed to be 1, as a model was underdetermined when both β and $\Delta_{t}$ could vary freely. Model parameters were fit to choice data to maximize the likelihood of data. BIC was used for model comparison and selection of the best model.
 
-## Model selection for ketamine sessions
+### Model selection for ketamine sessions
 
-To understand the effect of ketamine, we started with the best-fitting model of normal behavior during saline sessions – the DF model, and then asked how ketamine might modulate the parameters of this model. The null (baseline) model assumed that ketamine did not cause any parametric changes in the behavior, and the model prediction of trial-to-trial choice was generated with the maximum likelihood (ML) parameters, namely ‘baseline parameters’ estimated from saline sessions as follows:(6)Qt+1(A)=αF−CS⋅Qt(A)+Δt,ifAischosen,(7)Qt+1(A)=αF−CS⋅Qt(A)+Δt,ifAisnotchosen,Δt=ΔGS,ΔNS,ΔLS,forgain,neutral,andloss,respectively.(8)Pt(R)=1/(1+e−XtS),XtS=[Qt(R)−Qt(L)]
+To understand the effect of ketamine, we started with the best-fitting model of normal behavior during saline sessions – the DF model, and then asked how ketamine might modulate the parameters of this model. The null (baseline) model assumed that ketamine did not cause any parametric changes in the behavior, and the model prediction of trial-to-trial choice was generated with the maximum likelihood (ML) parameters, namely ‘baseline parameters’ estimated from saline sessions as follows:
 
-where αFCS , αFUCS , ∆GS , ∆NS , ∆LS (baseline parameter-estimates) were ML parameters of the DF model fit to the data from saline sessions.
+$$
+Q_{t+1}(A)=\alpha_{F−C}^{S}⋅Q_{t}(A)+Δ_{t},ifAischosen,
+$$
+
+
+
+$$
+Q_{t+1}(A)=\alpha_{F−C}^{S}⋅Q_{t}(A)+Δ_{t},ifAisnotchosen,
+$$
+
+
+
+$$
+Δ_{t}=Δ_{G}^{S},Δ_{N}^{S},Δ_{L}^{S},forgain,neutral,andloss,respectively.
+$$
+
+
+
+$$
+P_{t}(R)=1/(1+e^{−X_{t}^{S}}),X_{t}^{S}=[Q_{t}(R)−Q_{t}(L)]
+$$
+
+where $\alpha_{FC}^{S}$ , $\alpha_{FUC}^{S}$ , $\Delta_{G}^{S}$ , $\Delta_{N}^{S}$ , $\Delta_{L}^{S}$ (baseline parameter-estimates) were ML parameters of the DF model fit to the data from saline sessions.
 
 In each of the ketamine models, we set a subset of parameters of the DF model to freely vary from the baseline parameter-estimates. Value models (K-model 1–4, Table 2) hypothesized that ketamine changed outcome evaluation differentially for gain, neutral, and loss outcomes, whereas a memory model (K-model 5) tested whether ketamine affected the forgetting rate or the rate of value decay. Perseveration models hypothesized that ketamine affected the behavioral tendency to perseverate (K-model 6), possibly in tandem with a change in value update (K-model 7). TCA models tested whether ketamine changed the way a particular outcome properly updated the value of causative action, possibly leading to misassignment of the credit for an outcome to the choice that happened in the past (K-model 8), spread of the credit to future choice (K-model 9), or assignment of the credit for recent outcomes collectively to the frequently chosen target in the near past (K-model 10) (Walton et al., 2010; Jocham et al., 2016). Finally, a motivation model (K-model 11) hypothesized that ketamine changed the gain with which asset position modulated the value update for each outcome.
 
-## Analysis of ketamine-induced ocular nystagmus
+### Analysis of ketamine-induced ocular nystagmus
 
 Ocular nystagmus during fixation on a peripheral target consists of two components – slow centripetal drift (i.e. slow phase), and a subsequent corrective saccade to re-capture the target (i.e. fast phase) (Barnes, 1982). Eye position was sampled and recorded at 250 Hz. We used average velocity of eye movement during pre-feedback fixation on a chosen target to detect the slow phase of the nystagmus induced by ketamine. The sign of eye velocity was adjusted in the way that centripetal eye movement during fixation had negative velocity. Fast phase eye movement with velocity >20° (visual angle)/s was first removed from the pre-feedback fixation period, and then eye velocity was averaged during the remaining time points of the fixation period for each trial (for statistical analysis) or in 1-min non-overlapping bins for visualization of time course (Figure 6).
 
-## Analysis of plasma concentration of ketamine
+### Analysis of plasma concentration of ketamine
 
 To be able to effectively compare behavioral effects observed following IM and IN administration of ketamine, we measured plasma concentration of ketamine following IM and IN administrations in monkey B (one session for 0.5 mg/kg IM; two sessions for 0.5 mg/kg IN; two sessions for 1 mg/kg IN administration). Blood samples were collected at 10, 25, 40, 60, and 75 min following ketamine administration and analyzed with the high performance liquid chromatography (HPLC) protocol. 100 ng of the internal standard clonidine and 0.5 ml of thawed plasma were added to a 15-ml polypropylene tube and 15 ml of diethyl ether added. Following 5 min of vortex mixing, 4 ml of the upper ether layer was transferred to a new polypropylene tube and 250 µl of 0.01 M phosphoric acid added. After vortex mixing for 5 min, the lower aqueous layer was transferred to a 1.5-ml tube and evaporated under vacuum (~1 hr, SpeedVac evaporator, medium heat). The dry residue was dissolved in 150 μl of 0.01 sodium monobasic dihydrogen phosphate. 50 μl of the extract was injected and separated on a 3-μm Cyano Spherisorb HPLC column (4.6 × 100 mm) eluted with 80% 0.01 sodium acetate/20% acetonitrile (0.8 ml/min, 40°C). Norketamine, ketamine, and clonidine were detected by UV absorption (220 nm; Hitachi L-7400) with retention times of 6.1, 8.1, and 11.0 min, respectively; and with absolute detection limits of 0.2, 0.5, and 0.3 ng, respectively. Extracted standards were prepared using 0.5 ml aliquots of pooled human plasma. Plasma drug concentrations of samples were calculated knowing the peak height ratios of the extracted standards, the peak height ratios in samples and the amount of internal standard added (200 ng/ml). When injecting 50 μl of the extract, norketamine and ketamine were determined with concentration detection limits of 1 and 2 ng/ml, respectively.

@@ -31,7 +31,7 @@ In this study, while investigating the response of yeast cells to replication st
 
 ## Results
 
-## Rad53 is recruited to genomic loci other than replication origins in proliferating yeast cells
+### Rad53 is recruited to genomic loci other than replication origins in proliferating yeast cells
 
 Previous studies focusing on specific genomic features, mainly subsets of DNA replication origins, have detected Rad53 binding to replication origins and replication forks (Can et al., 2019; Dohrmann and Sclafani, 2006). However, given the evidence that Rad53 has functions beyond the control of DNA replication stress, it is possible that Rad53 also functions at additional genomic loci. We therefore investigated the genome-wide distribution of Rad53 by chromatin immunoprecipitation and deep sequencing (ChIP-seq) in proliferating yeast cells (Behrouzi et al., 2016). Since the sml1 null mutation (sml1Δ) allows cells to bypass the requirement for Rad53, or its upstream kinase Mec1, for growth, we also performed ChIP-seq in the sml1Δ mutant and the rad53 null (rad53Δ sml1Δ) as controls for antibody specificity (Figure 1).
 
@@ -43,21 +43,41 @@ Visual inspection of the ChIP-seq peaks from normalized coverage tracks suggeste
 
 Heatmap analysis was also performed on Rad53 ChIP-seq signal across 30-kb intervals centered on all origins annotated in the OriDB database (Siow et al., 2012). The average signal across the whole region was higher in WT, sml1Δ, and mec1Δ sml1Δ than in rad53Δ sml1Δ after normalization (Figure 1c). However, the signal was not concentrated at the origins. Since these ChIP-seq datasets are from asynchronous cells, this finding is consistent with the idea that recruitment of Rad53 to replication origins is cell cycle regulated rather than constant binding to origins.
 
-## Binding of Rad53 to upstream TSS changes with cell cycle stages
+### Binding of Rad53 to upstream TSS changes with cell cycle stages
 
 To gain insight into the dynamics of Rad53 recruitment to genomic loci such as promoters and replication origins, Rad53 ChIP-seq was analyzed in samples from synchronized cell cultures. Cells were arrested in G1 using α-factor and then released into media containing hydroxyurea (HU) to induce replication stress caused by limiting dNTPs. Three stages of synchronous cell cultures were collected and referred to as G1 (for cells arrested in G1), HU45 and HU90 (for cells released from G1 into HU for 45 and 90 min, respectively). These cell samples were then processed for ChIP-seq analysis. Heatmaps of the Rad53 signals at 2-kb intervals centered on all TSSs show a trend of increasing Rad53 binding as cells progress from G1-phase into HU45 or HU90 (Figure 2a), concomitant with increased levels of Rad53 protein in cells treated with HU (Figure 2—figure supplement 1). The increase in Rad53 parallels entry into S-phase, as measured by Orc6 phosphorylation (Figure 2—figure supplement 1a). Similar to the data from asynchronous cell samples, Rad53 signals were most concentrated upstream of TSSs (Figure 2a, left panel). The ChIP-seq signals using antibodies against γ-H2A, which like Rad53 is a target of the sensor kinase Mec1, were not enriched upstream of TSSs (Figure 2a, right panel). In fact, the signals for γ-H2A were lower immediately upstream of TSSs than the surrounding regions, consistent with promoters being histone-free regions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig2-v2.jpg)
+
+**Figure 2.:** Cells were synchronized in G1 phase and released into YPD containing 0.2M hydroxyurea (HU) for 45 and 90min (HU45 and HU90, respectively). (a) Heatmaps and average signals of Rad53 and γ-H2A ChIP-seq signals across 2-kb intervals centered on TSSs for WT cells at stages of G1, HU45, and HU90. (b) Distribution of aggregated peak numbers around TSS using merged Rad53 ChIP-seq peaks from all three stages (G1, HU45, and HU90). Pie charts showing the distribution of Rad53 ChIP-seq peaks in relation to gene features. (c) Rad53 ChIP-seq profiles near RNR1, PCL1, and TOS6 genes in proliferating WT, sml1Δ, rad53Δ sml1Δ, and mec1Δ sml1Δ cells, and WT cells at stages of G1, HU45, and HU90. (d) Lorenz curves for ChIP-seq read counts of Swi6 and Rad53 mapped to gene promoters showing inequality for promoter binding.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Immunoblots monitoring protein status for Rad53, Orc6, γ-H2A, and Sml1 during checkpoint activation from G1 to HU45 and HU90. (b) Comparison of Rad53 protein level in G1 extracts from WT, rad53K227A, mrc1Δ, and rad9Δ cells. Blots for Orc6, γ-H2A, and Sml1 are included for reference. (c) Comparison of Rad53 protein level in HU90 extracts from WT, rad53K227A, mrc1Δ, and rad9Δ cells. 14% sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) was used for the Rad53 titration blot to allow collapsing of all phosphorylated forms into a single band. Twofold dilutions of the samples are loaded.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Heatmaps across 2-kb intervals centered on transcription start sites (TSSs) using ChIP-seq data with antibodies against γ-H2A (a, b) or Rad53 (c–e). (a, c) The complete datasets, (b, d) the datasets following removal of the hyper-ChIPable regions, and (e) the signal data for genes only at the hyper-ChIPable regions observed by Teytelman et al. and Park et al. Note the pattern of Rad53 localization in (e) is both upstream and downstream of the TSSs, unlike that found for Rad53 ChIP-seq surrounding TSSs in (c) and (d). (f) KEGG enrichment analysis for the 296 genes associated with hyper-ChIPable regions shows mostly tRNA and snoRNA genes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** WT, rad53K227A, and mrc1Δ mutant cells at stages of G1, HU45, and HU90 were collected and processed for ChIP-seq analysis. (a–c) Heatmaps of ChIP-seq signal of Cdc45, γ-H2A, and Rad53, respectively, across 30-kb intervals centered on all active origins (see Definition of the origin types in Methods). Origins are ordered according to the associated replication timing data reported in previous study (Yabuki et al., 2002).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Coverage tracks of Rad53 ChIP-seq signals from WT, rad53K227A, and mrc1Δ mutant datasets at stages of G1, HU45, and HU90.
 
 Further analysis showed that >85% of the Rad53 ChIP-seq peaks overlap with gene promoters (defined as 500-bp upstream and 50-bp downstream of TSS) at all stages investigated. The distribution of aggregated peak numbers around TSSs showed highest count numbers immediately upstream of the TSS (Figure 2b). By visual inspection of normalized ChIP-seq coverage tracks, we noticed that signals at promoters of genes such as RNR1, PCL1, and TOS6 varied depending on the cell cycle stage (Figure 2c, bottom three tracks for WT at stages of G1, HU45, and HU90) while signals at neighboring gene promoters remained largely constant. Thus, the recruitment of Rad53 to a subset of gene promoters is regulated. Because RNR1, PCL1, and TOS6 are known targets of the cell cycle regulator SBF, a sequence-specific transcription factor composed of subunits Swi4 and Swi6, we compared Rad53 ChIP-seq data and a previous ChIP-seq dataset of Swi6 (Park et al., 2013). As indicators for the gene specificity of protein binding, the Gini indices were computed from Lorenz curves of ChIP-seq data for Swi6 and two of our Rad53 replicates (Figure 2d), being 0.763, 0.2918, and 0.2982, respectively. Rad53 has a coverage for many promoters while Swi6 shows substantially high coverage only for a limited number of promoters. Thus, it is likely Rad53 would effect a wider range of genes than the Swi6 regulatory network.
 
 Previous studies have found that under certain conditions, regions of the genome are promiscuously present in ChIP-seq studies independent of the antibody used (Park et al., 2013; Teytelman et al., 2013). These regions were termed hyper-ChIPable regions and were found enriched for sequences in and around gene bodies of highly expressed genes. We therefore examined whether these regions were promiscuously present under our conditions. Analysis of ChIP-seq data for Rad53 and γ-H2A with or without the hyper-ChIPable regions observed by Teytelman et al. and Park et al. did not alter the pattern of Rad53 binding to TSSs (Figure 2—figure supplement 2a–d). When we specifically examined the pattern of Rad53 ChIP-seq signals around TSSs of the 296 genes associated with those hyper-ChIPable sequences, we observed not only localization to TSSs, but also enrichment to the gene bodies as previously reported (Park et al., 2013; Teytelman et al., 2013). This pattern is distinct from the pattern of promoter localization (compare Figure 2—figure supplement 2d, e). Furthermore, KEGG analysis of the genes enriched in the studies by Teytelman et al. and Park et al. showed predominantly genes encoding snoRNAs and tRNAs, genes we did not find in the promoter binding for Rad53 (Figure 2—figure supplement 2f). Finally, we did not observe any enrichment at gene promoters when the RAD53 gene was deleted from the strain (Figure 1a, b) or when anti-γ-H2A antibodies were used (Figure 2a). Thus, we suggest that the Rad53 binding observed here is not the same as the promiscuous, non-specific enrichment of hyper-ChIPable regions reported previously. Moreover, Rad53 binding to a subset of promoters is transcription factor dependent (see below).
 
-## Rad53 is recruited to sites of DNA synthesis independent of checkpoint signaling
+### Rad53 is recruited to sites of DNA synthesis independent of checkpoint signaling
 
 Since previous studies reported localization of Rad53 to replication origins (Can et al., 2019; Dohrmann and Sclafani, 2006), we also performed heatmap analysis of ChIP-seq signal around replication origins for Rad53, γ-H2A, and Cdc45, a component of active helicase complex and hence the marker for active replication forks (Figure 2—figure supplement 3). The 30-kb window for the heatmap around origins was chosen based on our prior knowledge that the extent of DNA synthesis in WT cells under similar growth conditions at HU90 was about 10 kb (Sheu et al., 2014). In WT cells, the Rad53 signal was present at regions associated with early firing origins but not with late firing origins that are inactive due to inhibition by the HU-induced checkpoint. However, Rad53 signal was also present at late origins in the kinase-deficient rad53K227A and mrc1Δ mutants, both of which allow activation of late origins as a result of the checkpoint defect. Thus, Rad53 was recruited only to replication forks associated with activated origins and the pattern was similar to that of Cdc45. Surprisingly, Rad53 binding to replication forks did not require Mrc1 or its own kinase activity, suggesting checkpoint-independent recruitment of Rad53 to sites of DNA synthesis.
 
 Interestingly, γ-H2A was observed at genomic regions surrounding the very late origins in G1-phase in both WT and mutants (Figure 2—figure supplement 3b). It is possible that these γ-H2A signals reflect a low level of ssDNA gaps at these late-replicating regions that were tolerated and carried over from the previous cell cycle, similar to unrepaired post-replication gaps resulting from low level of UV irradiation found in S. pombe G2-phase (Callegari and Kelly, 2006).
 
-## Identification of genes with differential binding of Rad53 at promoters
+### Identification of genes with differential binding of Rad53 at promoters
 
 Rad53 promoter binding was temporally dynamic in a subset of genes, suggesting regulation by cell cycle progression or DNA replication stress. To identify genes with differential or dynamic binding of Rad53 at their promoters (DB genes), we applied residual analysis. The read count difference was investigated for the promoter regions (500-bp window upstream of TSSs) of all genes for Rad53 ChIP-seq. The comparison was done between stages G1 and HU45 of WT samples from two independent experiments (termed CP and TF, Figure 3a). Since each dataset had two biological replicates from stages G1 and HU45, we extracted the top 1000 genes that displayed dynamic binding from the aggregated read coverage and called these genes the top DB genes (Figure 3a). Among the 1000 top DB genes from each set of comparison, 435 genes were identified in both sets (435 top DB overlap).
 
@@ -67,9 +87,17 @@ Rad53 promoter binding was temporally dynamic in a subset of genes, suggesting r
 
 Overall, during the G1- to S-phase transition (HU45), there are more genes with increased Rad53 promoter binding than those with decreased binding: within the list of 435 genes, 337 show increased Rad53 binding at their promoters, while 98 show decreased binding (Figure 3b). These genes include those involved in cell cycle progression (e.g., genes encoding cyclins and regulators of DNA replication) and cell growth (e.g., cell wall maintenance and mating response). Figure 3c shows Rad53 dynamic binding, either up or down, at the promoters of representative genes as cells transitioned from G1 phase to HU45 and HU90 time points.
 
-## The relationship between Rad53 promoter binding and gene expression
+### The relationship between Rad53 promoter binding and gene expression
 
 To gain insight into the relationship between Rad53 promoter recruitment and gene expression, RNA-seq analysis was performed under the same growth conditions used for the ChIP-seq experiments. RNA-seq replicates of datasets from four yeast strains (WT, rad9Δ, rad53K227A, and mrc1Δ), each with three stages (G1, HU45, and HU90) were analyzed using rank data analysis (Figure 4a). In the hierarchical clustering, cell cycle stage contributes more to similarities in expression than the genotype. In particular, the expression profiles in G1 were very similar among all strains. In HU45, however, two subgroups clustered by genotype were evident: rad9Δ clustered with WT, consistent with Rad9 having no role in the DRC checkpoint branch, while rad53K227A and mrc1Δ clustered together, consistent with Rad53 and Mrc1 functioning together in the DRC response to HU stress.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig4-v2.jpg)
+
+**Figure 4.:** WT, rad9Δ, rad53K227A, and mrc1Δ cells were synchronized in G1-phase and released into YPD containing 0.2M hydroxyurea (HU). Cells at stages of G1, HU45, and HU90 were collected and processed for RNA-seq analysis. (a) Rank data analysis of RNA-seq samples. (b) Bar graph summarizing on the x-axis the number of genes that show statistically significant differential expression (DEGs). The types of pairwise comparison are indicated to the right. Blue bars, downregulated DEGs. Orange bars, upregulated DEGs. (c) Average Rad53 ChIP-seq signal across 2-kb intervals centered on at transcription start site (TSS) for statistically significant DEGs (red) and the insignificant (cyan). Left panel shows the result of DEGs from comparison of G1 and HU45 datasets of WT (DEGs: WT(G1 → HU45)) and right panel shows DEGs from comparison of G1 and HU90 datasets (DEGs: WT(G1 → HU90)).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Rad53 ChIP-seq signal in WT, rad53K227A, and mrc1Δ mutant cells at stages G1, HU45, and HU90 for DEGs from WT(G1 → HU45) (upper panel) and from WT(G1 → HU90) (lower panel; the ordering of datasets is the same as in upper panel). (b, c) Rad53 ChIP-seq signal in DEGs from rad53K227A(G1 → HU45) and mrc1∆(G1 → HU45), respectively. The ordering of datasets is the same as in (a). Genes in each heatmap group are arranged in descending order according to the differential expression level (i.e., log2 fold change (log2FC)). The graphs plotted on top of the heatmaps show the average ChIP-seq signals for significant (red) and for the insignificant (cyan) from comparisons indicated at the left of panels.
 
 Pairwise comparisons of G1 to HU45 samples showed that, in both WT and rad9Δ cells, ~2300 genes exhibited significant expression changes (differentially expressed genes, DEGs; Figure 4b). The number of DEGs increased to ~3000 when comparing G1 to HU90. Moreover, in both rad53K227A and mrc1Δ mutants, ~2500 DEGs were detected from G1 to HU45, which increased to >3400 in G1 to HU90. The response to cell cycle stage was largely equally distributed between up- and downregulation. Comparison of WT to rad53K227A in the HU45 and HU90 conditions found 517 and 2234 DEGs, respectively, while comparison of WT to mrc1Δ revealed 370 and 1166 DEGs in HU45 and HU90. A WT and rad9Δ comparison at all stages showed only five DEGs, including the deleted RAD9 gene and its marker cassette HIS3. Thus, Rad9 did not contribute much to gene expression changes under HU stress.
 
@@ -79,25 +107,33 @@ Based on ChIP-seq data, the average Rad53-binding upstream of TSSs was higher in
 
 **Figure 5.:** (a) Coexpression cluster matrix for significant DEGs in WT(G1 → HU45). Cluster (C): color codes for DEG clusters. Gene (G): level of differential expression in log2FC. (b) Heatmaps of Rad53 ChIP-seq signal across 2-kb intervals centered on transcription start site (TSS) parsed by the DEG clusters in (a). Genes within each cluster are arranged in descending order according to the differential expression level (i.e., log2FC). (c) Scatter plots of Rad53-binding changes at the promoter against expression changes for the 236 significant DEGs in the 435 top DB overlap group (leftmost panel) and subgroups in clusters 1, 2, 4, and 7. Spearman’s correlation r is indicated on top of each plot (****p < 0.0001; *p < 0.05). N, number of genes in the group analyzed. (d) Result of Fisher’s exact test for association between binding changes (DB) and expression changes (DE) for groups presented in (c). ****p < 0.0001; **p < 0.01; ns, not significant. Examples of genes in the cluster are shown below the plot.
 
-## Checkpoint mutants cause downregulation of gene expression near promiscuously active late origins
+### Checkpoint mutants cause downregulation of gene expression near promiscuously active late origins
 
 We further inspected the localization of Rad53 in a subset of DEG clusters from the HU45 (mrc1Δ vs. WT) comparison (Figure 6a) and the HU45 (rad53K227A vs. WT) comparison (Figure 6—figure supplement 1a). In these analyses, we noticed a characteristic pattern, in which downregulated genes tended to have a strong Rad53 signal not only upstream of the TSS, but a broad signal within gene bodies (Figure 6b and Figure 6—figure supplement 1b). This pattern was prominent in the mrc1Δ mutant in HU45 and further intensified in HU90. The gene body localization was also found more transiently in HU45 sample from rad53K227A cells. This signal pattern was not as prevalent in the WT HU45 and HU90 samples. Since Rad53 is also recruited to active origins and moves with the replication fork, we suspected that these gene body signals in the checkpoint mutants were caused by the promiscuous activation of near-by origins that are normally inactive in WT, creating conflicts between DNA replication and gene transcription. The transient nature of the Rad53 localization at gene bodies in this group of genes in the rad53K227A mutant is also consistent with the transient signal pattern at origins (Figure 2—figure supplement 3c). Thus, we investigated the relationship between these genes and their closest replication origins.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig6-v2.jpg)
+
+**Figure 6.:** DEGs from HU45 (mrc1Δ vs. WT) comparison were analyzed. (a) Coexpression cluster matrix for significant DEGs. Cluster (C): color codes for DEG clusters. Gene (G): level of differential expression in log2FC. (b) Heatmaps of Rad53 ChIP-seq signal across 2-kb intervals centered on transcription start site (TSS) parsed by the DEG clusters in (a). ChIP-seq signal in WT, rad53K227A, and mrc1Δ mutant cells at stages G1, HU45, and HU90 are shown. (c) Summary of gene–origin relation for DEGs coexpression clusters. Distance between each TSS and its nearest origin center is indicated in pink gradient as well as light purple (<2kb) and dark purple (<1kb). Relative TSS-origin orientation and origin type are indicated. (d) Stacked bar charts presenting number (top panels) and proportion (bottom panels) of down- and upregulated DEGs as categorized by (1) TSS to origin distance (left panels), (2) closest origin type within 5kb of TSS (middle panels; none: no origins within 5kb of TSS), and (3) origin–gene orientation (right panels; CD: co-directional; HO: head-on).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Coexpression cluster matrix for significant DEGs from HU45 (rad53K227A vs. WT) comparison. Cluster (C): color codes for DEG clusters. Gene (G): level of differential expression in log2FC. (b) Heatmaps of Rad53 ChIP-seq signal across 2-kb intervals centered on transcription start site (TSS) for DEG clusters in (a). ChIP-seq signal in WT, rad53K227A, and mrc1Δ mutant cells at stages G1, HU45, and HU90 are shown. (c) Summary of gene–origin relation for DEGs coexpression clusters from HU45 (rad53K227A vs. WT). Distance between each TSS and its nearest origin center is indicated in pink gradient as well as light purple (<2kb) and dark purple (<1kb). Relative TSS-origin orientation and origin type are indicated.
 
 The distance from the TSS of each gene to the nearest replication origins, the relative orientation of gene transcription to the origin (head-on [HO] or co-directional [CD]) and the origin type (early, late or inactive; see Definition of the origin types in Materials and methods) was determined and presented in the same order as in the heatmaps of DEG clusters shown in Figure 6b, c (Figure 6c). Overall, most of the downregulated genes in cluster 1 of this group were situated very close to active origins (<2 kb between origin center and TSS, light purple marks and <1 kb, dark purple marks). Interestingly, the pattern of marks for origin to TSS distance largely mirrored the patten of the Rad53 ChIP signal within the gene bodies (Figure 6b, c). This correlation pattern was not found in the WT ChIP heatmaps.
 
 To explore the functional relationship between replication origins and genes, we summarized the ratio of up- and downregulated DEGs from the HU45 (mrc1Δ vs. WT) comparison in terms of the category of their relation to the closest origins (Figure 6d). In the first category, we parsed this DEG group according to the range of distance between TSS and closest origins (Figure 6d, left panels). Within this DEG group, genes situated 5 kb or more away from the closest active origins were similarly distributed between up- and downregulation of gene expression. However, for those genes that are closer to an active origin (<5 kb), the bias toward downregulated genes increased. For those genes situated less than 1 kb away from active origins, more than 80% were downregulated. In the second category, we grouped the DEGs according to the type origin the TSS was closest to. The DEGs that are more than 5 kb away from any annotated origins were labeled ‘none’ in origin type (Figure 6d, middle panels) and similarly distributed between up- and downregulation as expected from the above analysis. However, more downregulated genes were found when the nearby origins were active (Figure 6d, origin type late or early). The bias was stronger for genes that were close to late origins, which become active in HU when Mrc1 was absent (86% and 71% downregulated when genes were close to late and early origins, respectively, Fisher’s exact test p = 0.012). Because late origins and intermediate early origins were more active in the mrc1Δ mutant, it is possible that nearby gene expression was negatively affected by active DNA synthesis. In the third category, we examined the effect of relative gene–origin orientation. We found that the bias toward the downregulation was stronger when the nearby origin (<5 kb away) was in a HO orientation than in a CD orientation toward the gene (86% and 67% downregulated for HO and CD sets, respectively, Fisher’s exact test p = 0.0019) (Figure 6d, right panels). Thus, untimely activation of DNA replication origins in the checkpoint mutants affects gene expression concomitant with Rad53 binding to gene bodies.
 
-## Rad53-binding changes coincide with the changes in gene expression for targets of cell cycle regulators SBF and MBF
+### Rad53-binding changes coincide with the changes in gene expression for targets of cell cycle regulators SBF and MBF
 
 Two clusters from the gene coexpression analysis of DEGs in the WT(G1 → HU45) comparison showed a significant correlation between Rad53 binding and gene expression (Figure 5c, d, clusters 1 and 7). These two clusters contain genes that encode targets of SBF and MBF, key transcription factor complexes comprised of a shared regulatory subunit, Swi6 and the DNA-binding subunits Swi4 and Mbp1, respectively (Breeden, 2003). Their target genes include multiple G1- and S-phase cyclin genes, such as PCL1, CLN1, CLN2, CLB5, and CLB6. Evidence suggests that SBF and MBF are directly regulated by Rad53 kinase and Rad53 may regulate expression of targets of Msn4, Swi6, Swi4, and Mbp1 through Dun1-independent mechanisms (Jaehnig et al., 2013; Bastos de Oliveira et al., 2012; Sidorova and Breeden, 2003; Travesa et al., 2012). Thus, we analyzed the annotated targets of these transcription factors compiled in the Saccharomyces Genome Database (SGD; https://www.yeastgenome.org). Among the 81 genes that are candidate targets for both Swi4 and Swi6, 36 genes were found in the 236 DB/DEGs (Figures 3b and 5c) with an increase of frequency from 1.18% to 15.25% (p < 1E−15). Scatter plot comparisons of Rad53-binding and gene expression changes of these 36 genes show a clear positive correlation (Figure 7a, SBF top panel). Comparing with data from the checkpoint mutant samples, we found that most of these SBF target genes showed a similar profile of differential expression, from G1 to HU, in the rad9Δ mutant to that in WT (Figure 7b). However, in the mrc1Δ and rad53K227A mutants, a subgroup of genes, for example RNR1, SRL1, and YMR279C, exhibited different levels of change from that in WT (Figure 7b). We also found significant enrichment for targets of MBF (targets for both Mbp1 and Swi6 in SGD annotation) and transcription factor Msn4 among the 236 DB/DEGs group, as well as positive correlations between Rad53 promoter-binding and gene expression changes in these transcription factor targets (Figure 7a). Noticeably, there are 19 genes in these TF target group being both targets of SBF and MBF, and 12 out of 22 Msn4 targets that are also SBF targets.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84320/elife-84320-fig7-v2.jpg)
 
-**Figure 7.:** (a) Top panels: scatter plots of binding changes (DB residual) and expression changes (log2FC) for targets of indicated transcription regulators that are in the 236 DB/differentially expressed genes (DEGs) group. Spearman’s correlation r is shown under each plot (****p < 0.0001; ***p < 0.001; **p < 0.01). N, number of genes in the group analyzed. Result of Fisher’s exact test for enrichment of each group of transcription regulator targets in the 236 DB/DEGs is also indicated below. (b) Profiles of differential expression in column graphs for each of the 36 SBF targets in the 236 DB/DEGs. Color-coded columns showing expression change (log2FC (G1 → HU45) and log2FC (G1 → HU90)) extracted from WT, rad53, K227Amrc1Δ, and rad9Δ datasets.
+**Figure 7.:** (a) Top panels: scatter plots of binding changes (DB residual) and expression changes (log2FC) for targets of indicated transcription regulators that are in the 236 DB/differentially expressed genes (DEGs) group. Spearman’s correlation r is shown under each plot (****p < 0.0001; ***p < 0.001; **p < 0.01). N, number of genes in the group analyzed. Result of Fisher’s exact test for enrichment of each group of transcription regulator targets in the 236 DB/DEGs is also indicated below. (b) Profiles of differential expression in column graphs for each of the 36 SBF targets in the 236 DB/DEGs. Color-coded columns showing expression change (log2FC (G1 → HU45) and log2FC (G1 → HU90)) extracted from WT, rad53K227A, mrc1Δ, and rad9Δ datasets.
 
 Many of the genes with decreased Rad53 binding at the promoters are mating response genes (Figure 3b, c, bottom panels). Therefore, the targets of Ste12, a key transcription factor activated by MAPK signaling to regulate genes involved in mating or pseudohyphal/invasive growth pathways were investigated. Of 183 potential targets of Ste12 annotated in SGD, 34 were in the 236 DB/DEGs group (Figures 5c and 7a). All the Ste12 targets that have decreased Rad53 binding were downregulated as cells entered S-phase. Moreover, 20 out of the 34 Ste12 targets in the top DB group showed increased Rad53 binding in HU and 11 of these 20 genes were also targets of SBF. Thus, regulation by SBF may be responsible for the correlation between increased Rad53 binding at the promoter and upregulation of these target genes.
 
-## SBF is a key factor for recruitment of Rad53 to the promoters of its target genes under replication stress condition
+### SBF is a key factor for recruitment of Rad53 to the promoters of its target genes under replication stress condition
 
 To determine the contribution of various transcription regulators in recruitment of Rad53 to gene promoters, we performed Rad53 ChIP-seq experiments for WT, ixr1Δ, swi4Δ, and swi6Δ mutants (experiment TF). The ixr1Δ mutant was also examined because a previous investigation found that Ixr1 binds to the RNR1 promoter upon genotoxic stress and mediates Dun1-independent RNR1 gene regulation that requires Rad53 (Tsaponina et al., 2011). In the scatter plot of the Rad53 signal upstream of TSSs in G1 versus HU45 from the WT dataset, SBF targets in the top DB (Figure 8a, orange/red diamonds) showed substantial deviation from the general trend (blue dots). In swi4Δ and swi6Δ mutants, the signal for all of these SBF targets collapsed toward the general trend (purple and light olive dots, swi6Δ and swi4Δ, respectively), suggesting that Rad53 signal changes at these genes depended on SBF. Analysis of Z-score distribution for Rad53 DB residual (G1 → HU45) also showed substantial deviation of SBF target genes from the rest of the genes in WT (Figure 8b), while in the swi4Δ and swi6Δ mutants, the deviation of the SBF targets was closer to other genes. Coverage tracks for Rad53 ChIP-seq signals showed that in the SBF mutants Rad53 binding was completely eliminated from the TOS6 (target of SBF 6) promoter while for PCL1 and YOX1, both targets of SBF, Rad53 binding did not increase in HU, in contrast to the pattern in WT (Figure 8c). Thus, SBF is important for the recruitment of Rad53 to the promoters of SBF target genes under replication stress. Interestingly, at the promoter of RNR3, the paralog of RNR1, Rad53 binding in the SBF mutants was low, even though RNR3 is known to be target of Rfx1 and not known as target of SBF or MBF. Thus, it is possible that, in addition to Rfx1, SBF also plays a role in regulation of RNR3 in response to replication stress.
 
@@ -121,54 +157,338 @@ Eukaryotic cells initiate DNA synthesis in a temporally controlled manner from m
 
 ## Materials and methods
 
-## Yeast strains and methods
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS2571</td>
+      <td>doi:10.1073/pnas.1404063111</td>
+      <td></td>
+      <td>MATa bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3110</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa rad53K227A::KanMX4 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3285</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa mrc1Δ::KanMX4 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3382</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa rad9Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3388</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa ixr1Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3401</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa swi4Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3406</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa swi6Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS2828</td>
+      <td>doi:10.1101/gr.195248.115</td>
+      <td></td>
+      <td>MATa URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3066</td>
+      <td>doi:10.1101/gr.195248.116</td>
+      <td></td>
+      <td>MATa sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3075</td>
+      <td>doi:10.1101/gr.195248.117</td>
+      <td></td>
+      <td>MATa mec1Δ::TRP1 sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YS3077</td>
+      <td>doi:10.1101/gr.195248.118</td>
+      <td></td>
+      <td>MATa rad53∆::KanMX sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rad53 antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab104232, RRID:AB_2687603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H2A (phospho S129) antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab15083, RRID:AB_301630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cdc45 antibody (polyclonal CS1485)</td>
+      <td>doi:10.1016/j.molcel.2006.07.033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Orc6 antibody (monoclonal SB49)</td>
+      <td>Other</td>
+      <td></td>
+      <td>Stillman lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti Sml1 | Suppressor of Mec1 lethality antibody</td>
+      <td>Agrisera</td>
+      <td>Cat# AS10 847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>α-Factor</td>
+      <td>Other</td>
+      <td></td>
+      <td>WHWLQLKPGQPMY</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq ChIP Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat# IP-202-1012, IP-202-1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq stranded mRNA library preparation kit</td>
+      <td>Illumina</td>
+      <td>Cat# 20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 28004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma</td>
+      <td>H8627-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>doi:10.1002/0471250953.bi1107s32</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bamCoverage</td>
+      <td>doi:10.1093/nar/gku365</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>doi:10.1093/bioinformatics/bts635</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td></td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPpeakAnno</td>
+      <td></td>
+      <td>RRID:SCR_012828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DescTools</td>
+      <td>Andri Signorell et mult. al. (2021)</td>
+      <td></td>
+      <td>DescTools: Tools for descriptive statistics. R package version 0.99.41,598 https://cran.r-project.org/package=DescTools</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and methods
 
 Yeast strains generated in this study were derived from W303-1a (MATa ade2-1 can1-100 his3-11,15 leu2-3,112 trp1-1 ura3-1) and are described in Table 1. All the yeast strains used for the whole-genome DNA replication profile analyses have a copy of the BrdU-Inc cassette inserted into the URA3 locus (Viggiani and Aparicio, 2006). For G1 arrest of bar1Δ strains, exponentially growing yeast cells (~107 cell/ml) in YPD were synchronized in G1 with 25 ng/ml of α-factor for 150 min at 30°C. For G1 arrest of BAR1 strains, exponentially growing cells were grown in normal YPD, then transferred into YPD (pH 3.9), grown to ~107 cell/ml, and then synchronized in G1 with three doses of α-factor at 2 µg/ml at 0-, 50-, and 100 min time point at 30°C. Cells were collected at 150 min for release. To release from G1 arrest, cells were collected by filtration and promptly washed twice on the filter using one culture volume of H2O and then resuspended into YPD medium containing 0.2 mg/ml pronase E (Sigma).
 
-## Protein sample preparation and immunoblot analysis
+**Table 1.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>YS2571</td>
+      <td>MATa bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>Sheu et al., 2014</td>
+    </tr>
+    <tr>
+      <td>YS3110</td>
+      <td>MATa rad53K227A::KanMX4 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS3285</td>
+      <td>MATa mrc1Δ::KanMX4 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS3382</td>
+      <td>MATa rad9Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS3388</td>
+      <td>MATa ixr1Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS3401</td>
+      <td>MATa swi4Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS3406</td>
+      <td>MATa swi6Δ::HIS3 bar1Δ::TRP1 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YS2828</td>
+      <td>MATa URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>Sheu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>YS3066</td>
+      <td>MATa sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>Sheu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>YS3075</td>
+      <td>MATa mec1Δ::TRP1 sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>Sheu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>YS3077</td>
+      <td>MATa rad53∆::KanMX sml1Δ::HIS3 URA3::BrdU-Inc ade2-1 can1-100 his3-11,–15 leu2-3,112 trp1-1 ura3-1</td>
+      <td>Sheu et al., 2016</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein sample preparation and immunoblot analysis
 
 TCA extraction of yeast proteins was as described previously (Sheu et al., 2014). For immunoblot analysis, protein samples were fractionated by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) and transferred to a nitrocellulose membrane. Immunoblot analyses for Orc6 (SB49), Rad53 (ab104232, Abcam), γ-H2A (ab15083, Abcam), and Sml1 (AS10 847, Agrisera) were performed as described (Sheu et al., 2016; Sheu et al., 2014).
 
-## Isolation and preparation of DNA for whole-genome replication profile analysis
+### Isolation and preparation of DNA for whole-genome replication profile analysis
 
 Modified protocol based on previously described (Sheu et al., 2016; Sheu et al., 2014). Briefly, yeast cells were synchronized in G1 with α-factor and released into medium containing 0.2 mg/ml pronase E, 0.5 mM 5-ethynyl-2′-deoxyuridine (EdU) with or without addition of 200 mM HU as indicated in the main text. At the indicated time point, cells were collected for preparation of genomic DNA. The genomic DNA were fragmented, biotinylated, and then purified. Libraries for Illumina sequencing were constructed using TruSeq ChIP Library Preparation Kit (Illumina). Libraries were pooled and submitted for 50-bp paired-end sequencing.
 
-## Sample preparation for ChIP-seq
+### Sample preparation for ChIP-seq
 
 Chromatin immunoprecipitation (ChIP) was performed as described (Behrouzi et al., 2016) with modification. About 109 synchronized yeast cells were fixed with 1% formaldehyde for 15min at room temperature (RT), then quenched with 130mM glycine for 5min at RT, harvested by centrifugation, washed twice with tris-buffered saline (50mM Tris–HCl pH 7.6, 150mM NaCl), and flash frozen. Cell pellets were resuspended in 600µl lysis buffer (50mM HEPES–KOH pH 7.5, 150mM NaCl, 1mM ethylenediaminetetraacetic acid, 1% Triton X-100, 0.1% Na-deoxycholate, 0.1% SDS, 1mM phenylmethylsulfonyl fluoride, protease inhibitor tablet (Roche)), and disrupted by bead beating using multi-tube vortex (Multi-Tube Vortexer, Baxter Scientific Products) for 12–15 cycles of 30s vortex at maximum intensity. Cell extracts were collected and sonicated using Bioruptor (UCD-200, Diagenode) for 38 cycles of pulse for 30s ‘ON’, 30s ‘OFF’ at amplitude setting High (H). The extract was centrifuged for 5min at 14,000rpm. The soluble chromatin was used for IP.
 
 Antibodies against Cdc45 (CS1485, this lab Sheu and Stillman, 2006), Rad53 (ab104232, Abcam), γ-H2A (ab15083, Abcam) was preincubated with 1:1 mixture of washed Dynabeads Protein A and G (1002D and 1004D, Invitrogen) for more than 30min at RT and washed twice with lysis buffer to remove unbound antibodies. For each immunoprecipitation, 80μl antibody-coupled Dynabeads was added to soluble chromatin. Samples were incubated overnight at 4°C with rotation, after which the beads were collected on magnetic stands, and washed three times with 1ml lysis buffer and once with 1ml Tris-EDTA (50 mM Tris.–HCl pH 8.0, 10 mM EDTA), and eluted with 250μl preheated buffer (50mM Tris–HCl pH 8.0, 10mM EDTA, 1% SDS) at 65°C for 15min. Immunoprecipitated samples were incubated overnight at 65°C to reverse crosslink, and treated with 50μg RNase A at 37°C for 1hr. Then 5μl proteinase K (Roche) in 20mg/ml stock was added and incubation was continued at 55°C for 1hr. Samples were purified using MinElute PCR purification kit (Qiagen). Libraries for Illumina sequencing were constructed using TruSeq ChIP Library Preparation Kit (IP-202-1012 and IP-202-1024, Illumina).
 
-## Sample preparation for RNA-seq
+### Sample preparation for RNA-seq
 
 About 2–3 × 108 flash-frozen yeast cells were resuspended in Trizol (cell pellet:Trizol = 1:10) and vortexed for 15 s and incubated at 25°C for 5 min. Subsequently, 200 μl chloroform was added per 1 ml of Trizol–cell suspension and samples were vortexed for 15 s, incubated at RT for 5 min and centrifuged to recover the aqueous layer. The RNA in the aqueous layer were further purified and concentrated using PureLink Column (12183018A, Invitrogen). The RNA was eluted in 50 µl and store at −20°C if not used immediately. Store at −80°C for long term. Paired-end RNA-seq libraries were prepared using TruSeq stranded mRNA library preparation kit (20020594, Illumina).
 
-## Generation of coverage tracks using the Galaxy platform
+### Generation of coverage tracks using the Galaxy platform
 
 For visualization of read coverage in the Integrated Genome Browser (Freese et al., 2016), the coverage tracks were generated using the Galaxy platform maintained by the Bioinformatics Shared Resource (BSR) of Cold Spring Harbor Lab. The paired-end reads from each library were trimmed to 31 bases and mapped to sacCer3 genome using Bowtie (Langmead, 2010). The coverage track of mapped reads was then generated using bamCoverage (Ramírez et al., 2014) with normalization to 1× genome.
 
-## Definition of the origin types
+### Definition of the origin types
 
 Based on the BamCoverage output for EdU signal in WT, rad53K227A, and mrc1Δ, we categorized 829 origins listed in the oriDB database (Siow et al., 2012). We define the early origins as the one whose signal at the first time point is larger than 2. The late origins are extracted from the rest of the origins if the average signal value at the later time point is larger than 2 in rad53K227A and mrc1Δ mutants. Among the 829 entries in oriDB, we defined 521 as active origins (with EdU signal in WT or checkpoint mutants rad53K227A and mrc1Δ), in which 256 was categorized as early origins (with EdU signal in WT) and 265 as late origins (with signal in checkpoint mutants but not in WT). The remaining 308 entries do not have significant signal under our condition and were deemed inactive origins.
 
-## Computational analysis of sequence data
+### Computational analysis of sequence data
 
 The sequenced reads were trimmed by cutadapt with an option of ‘nextseq-trim’, then aligned by STAR (Dobin et al., 2013) in a paired-end mode to the sacCer3 genome masked at repetitive regions. The gene structure is referred from SGD reference genome annotation R64.1.1 as of October 2018. For RNA-seq quantification analysis, the total counts of aligned reads were computed for each gene by applying ‘GeneCounts’ mode. For ChIP-seq quantification analysis, the reads were mapped using the same pipeline. We also confirmed the mapped reads found in ChIP-seq data do not span a long range (the median span is from 169.5 to 329, 90% paired-end reads are aligned within less than 6000-bp window), suggesting that STAR spliced alignment do not affect the alignment results. Additionally, peak calling was done by MACS2 in a narrow peak mode. Distribution of Rad53 ChIP-seq peaks was computed using ChIPpeakAnno.
 
 The Gini indexes were calculated from Lorenz curves using Rad53 ChIP-seq datasets and published ChIP-Seq data for Swi6 (SRX360900 <https://www.ncbi.nlm.nih.gov/sra/SRX360900%5baccn%5d>: GSM1241092: swi6 DMSO illumina; S. cerevisiae; ChIP-seq), using DescTools (Andri Signorell et mult. al. (2021). DescTools: Tools for descriptive statistics. R package version 0.99.41, https://cran.r-project.org/package=DescTools).
 
-## Gene expression analysis
+### Gene expression analysis
 
 DEGs and their p values were computed for each pair of the cases by nbinomWaldTest after size factor normalization using DESeq2 (Love et al., 2014). Using the list of DEGs, GO and KEGG enrichment analyses were performed via Pathview library. ClusterProfiler was applied to visualize fold changes of DEGs in each KEGG pathway. Coexpression analysis of significant DEGs was further performed based on coexpression network constructed in CoCoCoNet (Lee et al., 2020). CoCoCoNet has established the coexpression matrix of Spearman’s correlation ranking based on 2690 samples downloaded from SRA database. We carried out clustering for the correlation matrix downloaded from CoCoCoNet (yeast_metaAggnet) by dynamicTreeCut in R (or hierarchical clustering) to obtain at most 10 clusters. The enrichment analysis for the gene set of each cluster was performed in the same way with RNA-seq analysis.
 
-## ChIP-seq signal normalization
+### ChIP-seq signal normalization
 
 For ChIP-seq signal normalization, two different methods were applied to different types of analysis. For ChIP-seq residual analysis, we used simple normalization. In this process, each case sample was compared with the corresponding control sample of DNA input to compute log2 fold changes within each 25-bp window reciprocally scaled by multiplying the total read counts of another sample. Then, the average of fold changes was computed for each duplicate. For ChIP-seq heatmap analysis, we employed the origin-aware normalization to account for the higher background around origin region as a result of DNA replication. In the origin-aware normalization, the same computation used in simple normalization, or log2 fold change with scaling by the total read count, is independently applied for the region proximal to the origins and others. For the heatmap presented in this paper, the origin-proximal region is defined as the region within 5000-bp upstream and downstream.
 
-## Heatmap analyses at origins and TSS
+### Heatmap analyses at origins and TSS
 
 After the average fold change computation and normalization from ChIP-seq signals, the signal strength is visualized around the target regions such as TSSs and replication origins are extracted using normalizeToMatrix function in EnrichedHeatmap (window size is 25 bp and average mode is w0). We ordered heatmaps to examine a different signal enrichment pattern for the characteristics of each origin or gene. For the heatmap row of each origin is ordered by the assigned replication timing for ChIP-seq signals around replication origins. The replication time for the origins are annotated with the replication timing data published previously (Yabuki et al., 2002). From the estimated replication time for each 1000-bp window, we extracted the closest window from the center of each replication origin and assigned it as the representative replication timing if their distance is no more than 5000 bp. Early and late origins groups are categorized according to the definition of the origin types using the replication profile data from this study. The final set of the replication origins used in the heatmap analysis are obtained after filtering out the replication origins overlapped with any of 238 hyper-ChIPable regions defined in the previous study (Teytelman et al., 2013). In total, 167 early and 231 late origins pass this filter and are used in the heatmaps analysis in this study. For heatmaps of the ChIP-seq signals around TSS, we ordered genes based on RNA-seq fold changes for all DEGs or per coexpression cluster of DEGs based on gene coexpression network constructed in CoCoCoNet (Lee et al., 2020).
 
-## ChIP-seq residual analysis
+### ChIP-seq residual analysis
 
 To detect the time-dependent increase or decrease of Rad53-binding signals, we first focused on the 500-bp window upstream from each TSS (defined as promoter region) and computed the sum of the fold change signals estimated for each 25-bp window scaled by the window size as an activity of Rad53 binding for each gene. The overall activity scores are varied for each time point probably because of the different Rad53 protein level or other batch-specific reasons. To adjust such sample-specific differences for a fair comparison, a linear regression is applied for the activity scores of all genes between G1 and other time points HU45 and HU90 using lm function in R. Then we selected top genes showing the deviated signals from the overall tendency according to the absolute residual values between the actual and predicted values, excluding the genes with signal value lower than −0.075 after scaling the maximal signal to 1. Top 1000 genes with the highest absolute residual values were selected from two independent experiments. The 435 DB genes identified in both experiments (435 top DB overlap) were selected for further analysis.

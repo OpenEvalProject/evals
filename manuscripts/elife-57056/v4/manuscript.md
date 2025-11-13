@@ -35,9 +35,21 @@ To identify signals that regulate ATR/Chk1, we knocked down the components of ea
 
 ## Results
 
-## Wnt signaling is required for G2 arrest in Tr2 tracheoblasts
+### Wnt signaling is required for G2 arrest in Tr2 tracheoblasts
 
 The tracheal branches of the second thoracic metamere (Tr2) in the Drosophila larva are comprised of cells that also serve as the progenitors of the thoracic tracheal system of the adult animal. These tracheoblasts remain quiescent through most of larval life and rekindle a mitotic program prior to pupariation. Tracheoblasts in the Dorsal Trunk (DT) in Tr2 enter larval life in G1, transition from G1 to S to G2 in the first larval instar (L1) and remain arrested in G2 from second instar (L2) till 32–40 hr into third larval instar (L3) whereupon they re-enter mitosis (Figure 1A; Kizhedathu et al., 2018). These cells express high levels of Chk1 mRNA and phosphorylated Chk1 (pChk1) during the period in which they are paused in G2 and downregulate levels of Chk1 mRNA and pChk1 upon mitotic re-entry. Loss of Chk1 leads to precocious proliferation by 16–24 h L3,~24 hr earlier than expected (Figure 1B, Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig1-v4.jpg)
+
+**Figure 1.:** (A) Cartoon representing the cell cycle phasing of cells in wild type Tr2 DT at different larval stages based on FUCCI. (B-C) Impact of knockdown of Chk1 and components of the Wnt signaling pathway on cell numbers in Tr2 DT. (B) Graph shows cells numbers in wild type (btl-GAL4), Btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi), and Btl-Wnt pathway components RNAi (btl-GAL4/+; UAS-TCFRNAi/+, btl-GAL4/UAS-DshRNAi, btl-GAL4/UAS-Fz2RNAi) at L2 and 16–24 h L3. (C) Graph shows cell numbers in wild type (tub-GAL80ts/+; UAS-ArmRNAi/Tb) and Armadillo mutants (tub-GAL80ts/+; btl-GAL4/UAS-ArmRNAi) at 24–26 h L3. Larvae were grown at 18°C and transferred to 29°C at 0–2 hr into L3. (D-E) Impact of reduction in levels of Chk1 or in levels of different components of the Wnt signaling pathway on mitotic indices in Tr2 DT. (D) Graph shows frequency of pH3+ nuclei at 16–24 h L3 in wild type (btl-GAL4), Chk1 mutant (btl-GAL4/UAS-Chk1RNAi), and Wnt pathway mutants (btl-GAL4/+; UAS-TCFRNAi/+, btl-GAL4/UAS-DshRNAi, btl-GAL4/UAS-Fz2RNAi) (E) Graph shows the frequency of pH3+ nuclei in wild type (tub-GAL80ts/+; UAS-ArmRNAi/Tb) and Armadillo mutants (tub-GAL80ts/+; btl-GAL4/UAS-ArmRNAi) at 24–26 h L3. Larvae were grown as stated above. (F) Expression pattern of Wnt reporters Fz3-GFP (fz3-GFP) and Nkd- LacZ (nkd-lacZ) in Tr2 DT at different larval stages. Panels show immunostaining for GFP in Fz3-GFP (fz3-GFP) (top panel) and β-Gal in Nkd- LacZ (nkd-lacZ) (Bottom panel) and their respective secondary controls (G) Quantitative PCR analysis of Fz3 mRNA levels in micro-dissected Tr2 DT fragments at different stages. Graph shows fold change in mRNA levels with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation). DT = Dorsal Trunk, DB = Dorsal Branch, TC = Transverse Connective. Scale bar = 20 µm (mean ± standard deviation, n ≥ 7 tracheae) Student's paired t-test: *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Impact of reduction of components of various developmental signaling pathways on cell numbers in Tr2 DT. Table shows cells numbers in wild type (btl-GAL4), Btl-hopRNAi (btl-GAL4/UAS-hopRNAi), Btl-CiRNAi (btl-GAL4/UAS-CiRNAi), Btl-pi3kRNAi (btl-GAL4/UAS-pi3kRNAi), Btl-BtlDN (btl-GAL4/+, UAS-BtlDN/+), Btl-TkvRNAi (btl-GAL4/UAS-TkvRNAi), Btl-YkiRNAi (btl-GAL4/+; UAS-YkiRNAi/+), Btl-BskRNAi (btl-GAL4/+; UAS-BskRNAi/+), Btl-EcRRNAi (btl-GAL4/+; UAS-EcRRNAi/+) and Btl-EGFRRNAi (btl-GAL4/+; UAS-EGFRRNAi/+) at 16–24 h L3 (mean values ± standard deviation, n ≥ 7 tracheae).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Impact of knockdown of Chk1 and TCF on cell numbers in Tr2 DT. Graph shows cells numbers in wild type (btl-GAL4), Btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi), and Btl-TCFRNAi (btl-GAL4/+; UAS-TCFRNAi/+) at L2, 0–8 h L3, 16–24 h L3 and 32–40 h L3. (L2 and 16–24 h L3 data same as Figure 1B, mean values ± standard deviation, n ≥ 7 tracheae) Student's paired t-test: *p<0.05.
 
 To explore the possibility that developmental signals control the activation of the ATR/Chk1 axis in tracheoblasts, we knocked-down expression of essential transducers of the EGF, FGF, insulin/PI3K, Hedgehog, JAK/STAT, Ecdysone, JNK, Hippo, Wnt and Dpp signaling pathways in the trachea by RNA interference (under the control of trachea-specific Breathless (btl)-GAL4 driver) and determined if these perturbations led to precocious mitotic re-entry at 16–24 hr in L3 (Figure 1—figure supplement 1). Of the abovementioned signaling pathways, downregulation of components of the Wnt pathway resulted in precocious proliferation at 16–24 h L3 (Figure 1B, Figure 1—source data 1). These findings led us to examine more carefully the role of Wnt signaling in the activation of the ATR/Chk1 axis in tracheoblasts.
 
@@ -49,15 +61,15 @@ Apart from quantifying cell numbers at L2 and early L3, we assayed mitotic activ
 
 Next, we investigated the spatiotemporal pattern of Wnt signaling in Tr2 DT during larval stages. For this, we examined the expression of two reporters for Wnt signaling (Frizzled3 (Fz3)-GFP and Naked (Nkd)-lacZ) at L2, 0–8 h L3 and 32–40 h L3 (Sivasankaran et al., 2000; Xu et al., 2018; Tian et al., 2016). Immunostaining using anti-GFP and anti-β-gal antisera respectively revealed that levels of expression of fz3-GFP and nkd-lacZ were high at L2 and 0–8 h L3 and significantly lower at 32–40 hr into L3 (Figure 1F, n = 6 tracheae per condition per experiment, n = 2). We also measured the expression of Fz3 mRNA in Tr2 DT by quantitative real time PCR (qPCR). qPCR analysis showed that the expression of Fz3 mRNA is high in L2 and early L3 and significantly lower at 32–40 h L3 (Figure 1G, n = 3). These data show that canonical Wnt signaling is active in G2 arrested cells and is downregulated upon mitotic re-entry.
 
-## pChk1 levels are reduced in Wnt pathway mutants
+### pChk1 levels are reduced in Wnt pathway mutants
 
 Since perturbations in Wnt signaling led to precocious proliferation akin to the loss of Chk1, next we probed the role of Wnt pathway in Chk1 activation (phosphorylated Chk1, pChk1). pChk1 levels are high in tracheoblasts in L2 and early L3 and significantly lower at 32–40 h L3 (Kizhedathu et al., 2018). pChk1 immunostaining in Btl-TCFRNAi at L2 showed that the levels of pChk1 were dramatically reduced in comparison to wild type (Figure 2A, n = 6–8 tracheae per condition per experiment, n = 3). We inferred that the Wnt pathway is required Chk1 activation in the tracheoblasts.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig2-v4.jpg)
 
-**Figure 2.:** (A) Activated Chk1 (phospho-Chk1Ser345, pChk1) immunostaining (white) in Tr2 DT in Chk1 mutants and Wnt pathway mutants. pChk1 immunostaining in Tr2 DT in (i) wild type (btl-GAL4), (ii) Btl-Chk1 (iii) RNAi (btl-GAL4/UAS-Chk1RNAi)Btl-TCF at L2 and (iv) wild type treated with secondary antibody alone. Scale bar = 20 µm.RNAi (btl-GAL4/+; UAS-TCFRNAi/+)
+**Figure 2.:** (A) Activated Chk1 (phospho-Chk1Ser345, pChk1) immunostaining (white) in Tr2 DT in Chk1 mutants and Wnt pathway mutants. pChk1 immunostaining in Tr2 DT in (i) wild type (btl-GAL4), (ii) Btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi) (iii) Btl-TCFRNAi (btl-GAL4/+; UAS-TCFRNAi/+) at L2 and (iv) wild type treated with secondary antibody alone. Scale bar = 20 µm.
 
-## Wnt signaling upregulates Chk1 expression
+### Wnt signaling upregulates Chk1 expression
 
 Our earlier studies have shown that levels of pChk1 and Chk1 mRNA are correlated in Tr2 DT. In other words, both pChk1 and Chk1 mRNA levels are high in L2 and early L3 and diminish at 32–40 h L3. Studies in yeast (Ford et al., 1994), Drosophila (Bayer et al., 2018) and Xenopus (Kumagai et al., 1998) have shown that the overexpression of Chk1 is sufficient to induce G2 arrest. Thus, we hypothesized that Wnt signaling facilitates high levels of pChk1 via induction of high levels of Chk1 expression.
 
@@ -65,13 +77,25 @@ To investigate the relationship between Wnt signaling and Chk1 expression, we ut
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig3-v4.jpg)
 
-**Figure 3.:** (A) Quantitative PCR analysis of Chk1 mRNA levels in micro-dissected Tr2 DT fragments at different stages. Graph shows fold change in Chk1 mRNA in Tr2 DT fragments from wild type (btl-GAL4), Wnt pathway loss-of-function (btl-GAL4/+; UAS-TCF and Wnt pathway gain-of-function (RNAi/+)UAS-ArmS10/+; btl-GAL4/+) larvae. Fold change has been represented with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation). (B) Analysis of Chk1-lacZ expression in Tr2 DT in wild type and Wnt pathway mutants. β-Gal immunostaining in larvae expressing Chk1-lacZ at L2, 0–8 h L3 and 32–40 h L3 and in Btl-TCF at L2. (RNAi (btl-GAL4/Chk1 lacZ; UAS-TCFRNAi/+)C) Impact of overexpression of Chk1 and ATR in TCF mutants. Graph shows cell numbers in wild type (btl-GAL4, UAS-FUCCI/Cyo GFP; +/Tb), Btl-TCF), RNAi (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/+Btl-TCF (RNAi, Chk1btl-GAL4, UAS-FUCCI/+; UAS-TCF (RNAi/UAS-Chk1) and Btl-TCFRNAi, ATRbtl-GAL4, UAS-FUCCI/+; UAS-TCF at 16–24 h L3. (RNAi/UAS ATR)D) Impact of reduction of TCF and overexpression of Chk1 on levels of pChk1 in Tr2 DT. pChk1 immunostaining (white) in Btl-TCF (RNAi, UAS-Chk1btl-GAL4, UAS-FUCCI/+; UAS-TCF animals at L2 (This image has been acquired at a lower laser power and gain setting compared to RNAi/UAS-Chk1)Figure 2A to prevent saturation of white pixels). (E) Impact of reduction of TCF and overexpression of ATR on levels of pChk1 in Tr2 DT. pChk1 immunostaining (white) in Btl-TCF (RNAi, UAS-ATRbtl-GAL4, UAS-FUCCI/+; UAS-TCF animals at L2 (mean values ± standard deviation, n ≥ 7 tracheae) Scale bar = 20 µm. Student's paired t-test: *p<0.05.RNAi/UAS-ATR)Figure 3—source data 1.Figure 3C Numerical data for number of cells in Tr2 DT of wild type, Btl-TCF and RNAi, Btl-TCFRNAi, Chk1Btl-TCF expressing larvae at 16–24 h L3.RNAi, ATR
+**Figure 3.:** (A) Quantitative PCR analysis of Chk1 mRNA levels in micro-dissected Tr2 DT fragments at different stages. Graph shows fold change in Chk1 mRNA in Tr2 DT fragments from wild type (btl-GAL4), Wnt pathway loss-of-function (btl-GAL4/+; UAS-TCFRNAi/+) and Wnt pathway gain-of-function (UAS-ArmS10/+; btl-GAL4/+) larvae. Fold change has been represented with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation). (B) Analysis of Chk1-lacZ expression in Tr2 DT in wild type and Wnt pathway mutants. β-Gal immunostaining in larvae expressing Chk1-lacZ at L2, 0–8 h L3 and 32–40 h L3 and in Btl-TCFRNAi (btl-GAL4/Chk1 lacZ; UAS-TCFRNAi/+) at L2. (C) Impact of overexpression of Chk1 and ATR in TCF mutants. Graph shows cell numbers in wild type (btl-GAL4, UAS-FUCCI/Cyo GFP; +/Tb), Btl-TCFRNAi (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/+), Btl-TCFRNAi, Chk1 (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/UAS-Chk1) and Btl-TCFRNAi, ATR (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/UAS ATR) at 16–24 h L3. (D) Impact of reduction of TCF and overexpression of Chk1 on levels of pChk1 in Tr2 DT. pChk1 immunostaining (white) in Btl-TCFRNAi, UAS-Chk1 (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/UAS-Chk1) animals at L2 (This image has been acquired at a lower laser power and gain setting compared to Figure 2A to prevent saturation of white pixels). (E) Impact of reduction of TCF and overexpression of ATR on levels of pChk1 in Tr2 DT. pChk1 immunostaining (white) in Btl-TCFRNAi, UAS-ATR (btl-GAL4, UAS-FUCCI/+; UAS-TCFRNAi/UAS-ATR) animals at L2 (mean values ± standard deviation, n ≥ 7 tracheae) Scale bar = 20 µm. Student's paired t-test: *p<0.05.
 
 To substantiate our findings that Wnt signaling regulates G2 arrest via control of Chk1 expression, we overexpressed Chk1 or ATR in Btl-TCFRNAi animals and determined if this prevented precocious proliferation and restored levels of pChk1. Cell counts in Tr2 DT at 16–24 h L3 in Wild type, Btl-TCFRNAi, Btl-TCFRNAi, Chk1 (TCF knockdown with Chk1 overexpression) and Btl-TCFRNAi, ATR (TCF knockdown with ATR overexpression) expressing animals showed that Chk1 overexpression did indeed prevent premature mitotic re-entry (Figure 3C, Figure 3—source data 1). The overexpression of ATR did not (Figure 3C, Figure 3—source data 1). Immunostaining for pChk1 revealed that the levels were high and comparable to wild type in Btl-TCFRNAi, Chk1 animals. In contrast, the levels of pChk1 were not restored in Btl-TCFRNAi, ATR expressing animals and were comparable to Btl-Chk1RNAi animals at the same stage (Figure 3D–E, n = 6 tracheae per experiment, n = 2). We independently confirmed that the overexpression of ATR did result in increased levels of ATR mRNA expression by qPCR (data not shown). These data support the hypothesis that Wnt dependent regulation of Chk1 expression is necessary for G2 arrest in Tr2 DT.
 
-## Wg, Wnt5, Wnt6 and Wnt10 are required for Chk1 expression
+### Wg, Wnt5, Wnt6 and Wnt10 are required for Chk1 expression
 
 Having identified Wnt signaling as a regulator of Chk1 expression and G2 arrest, next we focused on our attention on the mechanism by which the pathway is activated in the tracheal system. Since Wnt signaling is high when the cells are arrested and diminished once cells start dividing, we surmised that the ligands that activate Wnt signaling might also be expressed in the tracheal system in the same temporal pattern. To investigate this possibility, we measured levels of various Wnt ligand mRNAs in microdissected Tr2 fragments using qPCR. The analysis revealed that mRNA levels of 4 Wnt ligands – Wg, Wnt5, Wnt6 and Wnt10 - are high in L2 and 0–8 h L3 and low at 32–40 h L3 (Figure 4A, ≥15 tracheal fragments per timepoint per experiment, n = 3 experiments). Wnt2, Wnt4 and WntD were undetectable in the tracheae at all stages (data not shown). The qPCR data showed that the timecourse of expression of some Wnt ligands in Tr2 DT paralleled the timecourse of Wnt signaling in this segment.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig4-v4.jpg)
+
+**Figure 4.:** (A) Quantitative PCR analysis for levels of Wg, Wnt5, Wnt6 and Wnt10 mRNA in micro-dissected Tr2 DT fragments at different stages. Graph shows fold change in Wg, Wnt5, Wnt6 and Wnt10 mRNA in Tr2 DT fragments from wild type (btl-GAL4) larvae at L2, 0–8 h L3 and 32–40 h L3. Fold change has been represented with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation). (B) smFISH for Wg, Wnt5, Wnt6 and Wnt10 mRNA in Tr2 DT at L2 and 32–40 h L3. Arrowheads point to the sites of mRNA accumulation. (Scale bar = 5 µm) (C) Impact of knockdown of components of the Wnt signaling pathway on cell numbers in Tr2 DT. Graph shows cells numbers in wild type (btl-GAL4, Same as Figure 1B) and Btl-Wnt pathway componentsRNAi (btl-GAL4/+; UAS-WgRNAi/+, btl-GAL4/+; UAS-Wnt5RNAi/+ btl-GAL4/+; UAS-Wnt6RNAi/+, btl-GAL4/+; UAS-Wnt10RNAi/+) at L2 and 16–24 h L3. (D) Impact of reduction in levels of different components of the Wnt signaling pathway on mitotic indices in Tr2 DT. Graph shows frequency of pH3+ nuclei at 16–24 h L3 in wild type (btl-GAL4, Same as Figure 1D) and Wnt pathway mutants (btl-GAL4/+; UAS-WgRNAi/+, btl-GAL4/+; UAS-Wnt5RNAi/+, btl-GAL4/+; UAS-Wnt6RNAi/+, btl-GAL4/+; UAS-Wnt10RNAi/+) (E) Impact of expression of mutant Wg, Wnt5 and Wnt6 on cell numbers in Tr2 DT. Graphs show cell numbers in wild type and Wg mutants (Wgts) at 24–26 h L3, (Larvae were grown at 18°C and transferred to 29°C at 0–2 hr into L3) Wnt5 mutant (Wnt5[400] FRT19A) and Wnt6 (Wnt6 KO) on cell numbers in Tr2 DT. (F) Activated Chk1 (phospho-Chk1Ser345, pChk1) immunostaining (white) in Tr2 DT in Wnt pathway mutants. pChk1 immunostaining in Tr2 DT in (i) Btl-WgRNAi(btl-GAL4/+; UAS-WgRNAi/+), (ii) Btl-Wnt5RNAi(btl-GAL4/+; UAS-Wnt5RNAi/+), (iii) Btl-Wnt6RNAi(btl-GAL4/+; UAS-Wnt6RNAi/+) and Btl-Wnt10RNAi(btl-GAL4/+; UAS-Wnt10RNAi/+) at L2. (G) Quantitative PCR analysis of Chk1 and Fz3 mRNA levels in micro-dissected Tr2 DT fragments at L2. Graphs show fold change in Chk1 and Fz3 mRNA in Wild type, Btl-TCFRNAi(btl-GAL4/+; UAS-TCFRNAi/+), Btl-WgRNAi (btl-GAL4/+; UAS-WgRNAi/+), Btl-Wnt5RNAi(btl-GAL4/+; UAS-Wnt5RNAi/+), Btl-Wnt6RNAi(btl-GAL4/+; UAS-Wnt6RNAi/+) and Btl-Wnt10RNAi(btl-GAL4/+; UAS-Wnt10RNAi/+) in Tr2 DT fragments. Fold change has been represented with respect to Wild type (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation).(mean values ± standard deviation, n ≥ 7 tracheae) Scale bar = 20 µm. Student's paired t-test: *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Impact of knockdown of Wnt10 on cell numbers in Tr2 DT. Graph shows cells numbers in wild type (btl-GAL4, Same as Figure 1B) and Btl-Wnt10RNAi(btl-GAL4/UAS-Wnt10RNAi) at L2 and 16–24 h L3 (mean values ± standard deviation, n ≥ 7 tracheae). (B) smFISH for Wnt5 mRNA in Wnt5 mutant (Wnt5[400] FRT19A) Tr2 DT at L2. (Scale bar = 5 µm). (C) smFISH for GAPDH mRNA in Wild type (btl-GAL4) Tr2 DT at 32–40 h L3. Arrowheads point to the sites of mRNA accumulation. (Scale bar = 5 µm). (D) Quantitative PCR analysis of Wg, Wnt5, Wnt6 and Wnt10 mRNA levels in micro-dissected Tr2 DT fragments at L2. Graph shows fold change in Wg, Wnt5, Wnt6 and Wnt10 mRNA in Wild type (btl-GAL4), Btl-WgRNAi (btl-GAL4/+; UAS-WgRNAi/+), Btl-Wnt5RNAi(btl-GAL4/+; UAS-Wnt5RNAi/+), Btl-Wnt6RNAi(btl-GAL4/+; UAS-Wnt6RNAi/+) and Btl-Wnt10RNAi(btl-GAL4/+; UAS-Wnt10RNAi/+) in Tr2 DT fragments. Fold change has been represented with respect to Wild type (n = 3 experiments, n ≥ 15 Tr2 DT fragments/condition/experiment, mean ± standard deviation).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Impact of reduction of Wnt2, Wnt4 and WntD on cell numbers in Tr2 DT. Table shows cells numbers in wild type (btl-GAL4), Btl-Wnt2RNAi (btl-GAL4/+; UAS-Wnt2RNAi/+), Btl-Wnt4RNAi (btl-GAL4/+; UAS-Wnt4RNAi/+) and Btl-WntDRNAi (btl-GAL4/+; UAS-WntDRNAi/+) at 16–24 h L3 (mean values ± standard deviation, n ≥ 7 tracheae).
 
 To corroborate the qPCR data and examine the spatial pattern of Wnt ligand expression, we performed single molecule FISH (smFISH) for Wg, Wnt5, Wnt6 and Wnt10. To confirm that the technique was working optimally in our hands, we first examined the distribution of GAPDH-specific probes. As expected, smFISH signals were detected in all tracheal cells at L2 and L3. We detected both prominent nuclear spots, representing putative sites for mRNA transcription, and faint spots in the cytoplasm (Figure 4—figure supplement 1, C). Next we examined the expression of the Wnt ligands. smFISH for Wg, Wnt5, Wnt6 and Wnt10 detected both nuclear spots and faint spots in the cytoplasm in virtually all the cells in Tr2 DT at L2 (Figure 4B) and 0–8 h L3 (data not shown). Neither the prominent nuclear spots (Figure 4B arrowheads) nor faint cytoplasmic signals were detectable at 32–40 h L3. To confirm that smFISH was indeed ligand-specific, we hybridized probes for Wnt5 to trachea from Wnt5[400] null mutants (Fradkin et al., 2004). We did not detect any specific signal in these tracheae at L2 (Figure 4—figure supplement 1, B). Together, the qPCR and smFISH data show that the timecourse of expression of Wg, Wnt5, Wnt6 and Wnt10 in tracheoblasts in Tr2 DT parallels the timecourse of Wnt signaling in this segment and implicates these ligands as the activators of the Wnt pathway.
 
@@ -81,7 +105,7 @@ Since Wg, Wnt5, Wnt6 and Wnt10 are high in L2 and early L3 and the loss of any o
 
 Next we probed whether perturbations in Wg, Wnt5, Wnt6 and Wnt10 expression affected levels of Chk1 (pChk1 and Chk1 mRNA). pChk1 immunostaining of Btl-WgRNAi, Btl-Wnt5RNAi, Btl-Wnt6RNAi and Btl-Wnt10RNAi showed that levels of pChk1 in each of these backgrounds was diminished, the extent of the reduction in staining was comparable to what was observed in Btl-Chk1RNAi expressing animals (Figure 4F, compare with Figure 2A (ii)). Quantification of Chk1 mRNA in Btl-TCFRNAi, Btl-WgRNAi, Btl-Wnt5RNAi, Btl-Wnt6RNAi and Btl-Wnt10RNAi showed that the loss of any one of the ligands led to diminished levels of Chk1 mRNA expression. The levels of mRNA in each of these mutant backgrounds was comparable to the levels detected in Btl-TCFRNAi (Figure 4G). Together, these data showed that all four ligands regulate Chk1 expression in Tr2 DT. In parallel with the analysis of Chk1 mRNA, we also examined the levels of Fz3 mRNA, a conventional target of Wnt signaling. There was no significant change in Fz3 mRNA levels in Btl-WgRNAi, Btl-Wnt5RNAi, Btl-Wnt6RNAi and Btl-Wnt10RNAi (Figure 4G). However, the levels of Fz3 were considerably reduced in Btl-TCFRNAi We infer that the expression of any one of the abovementioned Wnt ligands is sufficient to induce Fz3 expression in Tr2 DT but that all four are required to induce Chk1 expression.
 
-## Exit from G2 arrest is required for activation of mitogenic signaling
+### Exit from G2 arrest is required for activation of mitogenic signaling
 
 Our analysis shows that loss of Wnt signaling and Chk1 expression leads to precocious mitotic re-entry in early L3. The subsequent timecourse of cell proliferation in these mutants reveals that tracheoblasts that enter mitosis prematurely in L3 continue to divide post mitotic re-entry (Figure 1—figure supplement 2). The reason that Wnt/Chk1-deficient tracheoblasts continue to divide after exiting G2 arrest was unclear to us. A previous study has identified Dpp (the Drosophila homolog of TGF-β) as the signal required for proliferation of tracheoblasts post mitotic re-entry. Dpp signaling is initiated by the binding of the ligand (Dpp) to the receptor Serine/Threonine Kinase Thickveins (Tkv). This in turn leads to the phosphorylation of the transcriptional activator Mad. Phosphorylated Mad (pMad) translocates to the nucleus and regulates gene expression. Pertinently, an earlier study on tracheoblasts showed that Dpp signaling (pMad immunostaining) was undetectable in cells in G2 arrest and observed mid L3 onwards once the cells start dividing (Djabrayan and Casanova, 2016). In light of the proliferation in Chk1 and Wnt pathway mutants, we examined the levels of Dpp signaling in these mutant backgrounds prior to and post mitotic re-entry.
 
@@ -89,15 +113,15 @@ As reported previously, pMad immunostaining was undetectable in L2 and early L3 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig5-v4.jpg)
 
-**Figure 5.:** (A) phospho-Mad (pMad) immunostaining in wild type Tr2 DT at L2, 0–8 h L3, 16–24 h L3 and 32–40 h L3. (B) Impact of reduction of Chk1 or Wnt pathway components on pMad expression in Tr2 DT. pMad immunostaining in Tr2 DT from Btl-Chk1 and RNAi (btl-GAL4/UAS-Chk1RNAi)Btl-Wnt6 animals at 16–24 h L3. (RNAi (btl-GAL4/+; UAS-Wnt6RNAi/+)C) Impact of overexpression of activated form of Tkv (Btl-Tkv on pMad expression in Tr2 DT. pMad immunostaining in Tr2 DT from wild type and QD)Btl-Tkv animals at L2. Scale bar = 20 µm.QD (btl-GAL4/+; UAS- TkvQD /+)
+**Figure 5.:** (A) phospho-Mad (pMad) immunostaining in wild type Tr2 DT at L2, 0–8 h L3, 16–24 h L3 and 32–40 h L3. (B) Impact of reduction of Chk1 or Wnt pathway components on pMad expression in Tr2 DT. pMad immunostaining in Tr2 DT from Btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi) and Btl-Wnt6RNAi (btl-GAL4/+; UAS-Wnt6RNAi/+) animals at 16–24 h L3. (C) Impact of overexpression of activated form of Tkv (Btl-TkvQD) on pMad expression in Tr2 DT. pMad immunostaining in Tr2 DT from wild type and Btl-TkvQD (btl-GAL4/+; UAS- TkvQD /+) animals at L2. Scale bar = 20 µm.
 
-## Juxtaposition of positive and negative regulators is required for optimal growth of Tr2 DT
+### Juxtaposition of positive and negative regulators is required for optimal growth of Tr2 DT
 
 The mechanism for G2 arrest in tracheoblasts is integral to their growth and to the growth of the tracheae they comprise. We have previously reported that arrested tracheoblasts, and the tracheae they comprise, grow significantly during the period in which the cells are arrested in G2. Premature exit from arrest resulting from the knockdown of Chk1 retards growth and results in a reduction in the overall size of Tr2 DT (Figure 6A, Kizhedathu et al., 2018). In light of the role of Wnt signaling in the regulation of Chk1, we examined how Wnt mutants impact the growth of the tracheae. Quantification of percentage growth between L2 and 32–40 h L3 revealed that compared to a 268 ± 32% (n = 6 tracheae) growth in length and 247 ± 19% (n = 12 tracheae) growth in width in control animals (Kizhedathu et al., 2018), TCF mutants grew only by 178 ± 8% (n = 6 tracheae) in length and 176 ± 13% (n = 6 tracheae) in width. Thus, consistent with our earlier finding that Chk1 is required for optimal tracheal growth, Wnt signaling is also required for growth of the thoracic tracheae during larval stages.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57056/elife-57056-fig6-v4.jpg)
 
-**Figure 6.:** (A) Impact of reduction of Chk1 or different drivers of G2-M on the size of Tr2 DT at 32–40 h L3. Scatter plot shows length and width of Tr2 DT from Wild type, Btl-Chk1 and RNAi (btl-GAL4/UAS-Chk1RNAi), Btl-StgRNAi (btl-GAL4/+; UAS-StgRNAi/+), Btl-Cdc2RNAi(btl-GAL4/UAS-Cdc2RNAi)Btl-CyclinB at 32–40 h L3. Values shown in red are from data previously published in RNAi (btl-GAL4/+; UAS-CyclinBRNAi/+)Kizhedathu et al., 2018. (n ≥ 6 tracheae). (B) Model for the regulation of G2 arrest by Wnt signaling. Wnt signaling negatively regulates G2-M by transcriptionally upregulating Chk1. Arrest in G2 negatively regulates Dpp signaling, preventing precocious proliferation and allowing for hypertrophic growth of Tr2 DT.
+**Figure 6.:** (A) Impact of reduction of Chk1 or different drivers of G2-M on the size of Tr2 DT at 32–40 h L3. Scatter plot shows length and width of Tr2 DT from Wild type, Btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi), Btl-StgRNAi (btl-GAL4/+; UAS-StgRNAi/+), Btl-Cdc2RNAi(btl-GAL4/UAS-Cdc2RNAi) and Btl-CyclinBRNAi (btl-GAL4/+; UAS-CyclinBRNAi/+) at 32–40 h L3. Values shown in red are from data previously published in Kizhedathu et al., 2018. (n ≥ 6 tracheae). (B) Model for the regulation of G2 arrest by Wnt signaling. Wnt signaling negatively regulates G2-M by transcriptionally upregulating Chk1. Arrest in G2 negatively regulates Dpp signaling, preventing precocious proliferation and allowing for hypertrophic growth of Tr2 DT.
 
 An unusual aspect of G2 arrest in Tr2 DT is that the cells express both drivers of G2-M (Cdc2/Cdk1, CyclinB, Stg) and simultaneously activate negative regulators of G2-M (Chk1, [Kizhedathu et al., 2018], this study). The significance of Cdc2, CycB and Stg expression in arrested tracheoblasts has been unclear. We hypothesized that the expression of positive regulators of G2-M could be necessary for growth. To test this hypothesis, we knocked down Stg, Cdc2/Cdk1 and Cyclin B in the trachea and measured the length and width of Tr2 DT at 32–40 h L3. The loss of any one of these G2-M drivers led to a reduction in the size of Tr2 DT (Figure 6A). These data suggest that the juxtaposition of positive and negative regulators is required for the growth of the tracheoblasts and the tracheae they comprise (see model in Figure 6B).
 
@@ -115,26 +139,144 @@ The mechanism for G2 arrest in Tr2 tracheoblasts is intimately linked with growt
 
 ## Materials and methods
 
-## Fly strains and handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>btl-GAL4</td>
+      <td>Shiga et al., 1996</td>
+      <td>FLYB: FBtp0001208</td>
+      <td>This line was a gift from Dr.Shigeo Hayashi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Chk1RNAi</td>
+      <td>VDRC</td>
+      <td>110076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-TCFRNAi</td>
+      <td>VDRC</td>
+      <td>3014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Chk1</td>
+      <td>Kizhedathu et al., 2018 and This paper</td>
+      <td>FLYB: FBgn0261278</td>
+      <td>Developed using clone from DGRC: UFO05423</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Chk1 (Ser345)</td>
+      <td>CST</td>
+      <td>2348</td>
+      <td>Rabbit monoclonal antibody (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide signal amplification system</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>B40922</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and handling
 
 The following strains were obtained from repositories: TubGAL80ts; TM2/TM6b,Tb, UAS-FUCCI, UAS-Wnt2RNAi (29441), UAS-Wnt4RNAi (29442), UAS-Wnt5RNAi (28534), UAS-Wnt6RNAi (30493), UAS-WntDRNAi (28947), UAS-Wnt10RNAi (31989), UAS-CyclinBRNAi (34544), UAS-StgRNAi (29556), nkd-lacZ, Chk1-LacZ, fz3-GFP, UAS-ArmS10, UAS-TkvQD, Wnt6 KO, Wnt5400, Wgts (Bloomington Drosophila Stock Center), UAS-Chk1RNAi (110076), UAS-TCFRNAi (3014), UAS-Fz2RNAi (44391), UAS-WgRNAi (13352), UAS-Wnt10RNAi (100867), UAS-DshRNAi (101525), UAS-ArmRNAi (7767), UAS-Cdc2RNAi (106130) (Vienna Drosophila Resource Center), UAS-Chk1 (In-house fly facility). The following strains were received as gifts: btl-GAL4, UAS-ATR, UAS-Wnt10. Strains were raised on a diet of cornmeal-agar and maintained at 25°C except GAL80ts and Wgts strains that were maintained at 18°C. For experiments involving GAL80ts and Wgts strains, the animals were moved to 29°C at indicated stages for indicated time periods. All experiments were performed on animals raised at 25°C unless otherwise indicated.
 
-## Larval staging
+### Larval staging
 
 Larval staging was performed as previously described (Guha and Kornberg, 2005) based on the morphology of the anterior spiracles. L2 larvae were collected and examined to identify animals that had undergone the L2-L3 molt in 8 hr intervals (0–8 h L3). 0–8 h L3 cohorts collected in this method were staged for subsequent time points.
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Animals were dissected in PBS and fixed for 30 min with 4% (wt/vol) Paraformaldehyde in PBS. The following antisera were used for Immunohistochemical analysis: Chicken anti-GFP (Aves, 1:500), Rabbit anti-phospho Chk1 (CST, 1:200), Rabbit anti-phospho Smad (CST, 1:150) Rabbit anti-pH3 (Millipore, 1:500), and Alexa 488/568/647-conjugated Donkey anti-Chicken/Rabbit/Mouse secondary antibodies (Invitrogen, 1:200). Tyramide signal amplification was used as per manufacturer recommendations for p-Chk1 detection. The following reagents were used as part of this protocol: Tyramide amplification buffer and Tyramide reagent (Thermofisher), Vectastain A and B and Biotinylated donkey anti Rabbit IgG (1:200, Vector Labs). Tracheal preparations were flat-mounted in ProLong Diamond Antifade Mountant with DAPI (Molecular Probes) and imaged on Zeiss LSM-780 laser-scanning confocal microscopes. Images were processed using Image J. For quantification of cell number, fixed specimens were mounted in ProLong Diamond Antifade Mountant with DAPI and the number of nuclei were counted on an Olympus BX 53 microscope. The DT of the second thoracic metamere was identified morphologically based on the cuticular banding pattern at anterior and posterior junctions.
 
-## Single molecule FISH (smFISH)
+### Single molecule FISH (smFISH)
 
 Probe sets for Wg, Wnt5, Wnt6 and Wnt10 were designed using Stellaris RNA FISH Probe Designer (Biosearch Technologies, Inc, Petaluma, CA) available online at www.biosearchtech.com/stellarisdesigner. smFISH was performed as per manufacturers instructions. Briefly, the tissues were fixed for 45 min in 4% (wt/vol) paraformaldehyde at room temperature and permeabilized overnight in 70% ethanol. The hybridization was performed overnight at 37°C. The samples were then washed and imaged on a Zeiss LSM-780 laser-scanning confocal microscope. The probes for Wg and Wnt6 were validated by detecting the pattern of the stripe in WL3 wing disc. Wnt5 probes were validated by staining the trachea from a Wnt5 null mutant where we did not observe any signal.
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 RNA extraction and qPCR were performed as described in Kizhedathu et al., 2018. Primer sequences for Chk1, Fz3, Wg, Wnt5, Wnt6, Wnt10 and GAPDH (internal control) are provided below. Relative mRNA levels were quantified using the formula RE = 2- ∆∆Ct method.
 
 The following primer sets were used:
 
-GAPDH Forward5' CGTTCATGCCACCACCGCTA 3'GAPDH Reverse5' CACGTCCATCACGCCACAA 3'Chk1 Forward5' AACAACAGTAAAACGCGCTGG 3'Chk1 Reverse5' TGCATATCTTTCGGCAGCTC 3'Wg Forward5’ AAATCGTTGATCGAGGCTGC 3’Wg Reverse5’ GGTGCAGGACTCTATCGTTCC 3’Wnt5 Forward5’ AGGATAACGTGCAAGTGCCA 3’Wnt5 Reverse5’ ACTTCTCGCGCAGATAGTCG 3’Wnt6 Forward5’ AGTTTCAATTCCGCAACCGC 3’Wnt6 Reverse5’ TCGGGAATCGCGCATTAAGA 3’Wnt10 Forward5’ CACGAATGGCCCGAAAACTG 3’Wnt10 Reverse5’ CCCACGGTGCCCTGTATATC 3’Fz3 Forward5’ ATGAATGTCGTTCAAAGTGG 3’Fz3 Reverse5’ TATAGTAAATGGGGCTTGCG 3’
+<table>
+  <tbody>
+    <tr>
+      <td>GAPDH Forward</td>
+      <td>5' CGTTCATGCCACCACCGCTA 3'</td>
+    </tr>
+    <tr>
+      <td>GAPDH Reverse</td>
+      <td>5' CACGTCCATCACGCCACAA 3'</td>
+    </tr>
+    <tr>
+      <td>Chk1 Forward</td>
+      <td>5' AACAACAGTAAAACGCGCTGG 3'</td>
+    </tr>
+    <tr>
+      <td>Chk1 Reverse</td>
+      <td>5' TGCATATCTTTCGGCAGCTC 3'</td>
+    </tr>
+    <tr>
+      <td>Wg Forward</td>
+      <td>5’ AAATCGTTGATCGAGGCTGC 3’</td>
+    </tr>
+    <tr>
+      <td>Wg Reverse</td>
+      <td>5’ GGTGCAGGACTCTATCGTTCC 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt5 Forward</td>
+      <td>5’ AGGATAACGTGCAAGTGCCA 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt5 Reverse</td>
+      <td>5’ ACTTCTCGCGCAGATAGTCG 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt6 Forward</td>
+      <td>5’ AGTTTCAATTCCGCAACCGC 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt6 Reverse</td>
+      <td>5’ TCGGGAATCGCGCATTAAGA 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt10 Forward</td>
+      <td>5’ CACGAATGGCCCGAAAACTG 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt10 Reverse</td>
+      <td>5’ CCCACGGTGCCCTGTATATC 3’</td>
+    </tr>
+    <tr>
+      <td>Fz3 Forward</td>
+      <td>5’ ATGAATGTCGTTCAAAGTGG 3’</td>
+    </tr>
+    <tr>
+      <td>Fz3 Reverse</td>
+      <td>5’ TATAGTAAATGGGGCTTGCG 3’</td>
+    </tr>
+  </tbody>
+</table>

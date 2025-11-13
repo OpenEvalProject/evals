@@ -54,15 +54,35 @@ Using synthetic sourdough communities, we identified a dynamic network of specie
 
 ## Results
 
-## Diversity of sourdough starters
+### Diversity of sourdough starters
 
 We first identified the microbial communities of sourdough starters by 16S and ITS rRNA gene amplicon sequencing of samples that were shipped to us and frozen upon arrival. When considering both fermentation-relevant microbes (yeasts, LAB, and AAB) as well as other microbial taxa, each starter sample contained a median of seven bacterial and 35 fungal amplicon sequence variants (ASVs). LAB (order: Lactobacillales) and AAB (order: Rhodospirillales) together comprised over 97% of bacterial reads (per sample mean), with yeasts (order: Saccharomycetales) comprising over 70% of fungal reads (Figure 2—figure supplement 1, Figure 2—source data 1, 2). The other fungi and bacteria detected were common indoor and outdoor molds, plant pathogens, and plant endophytes as well as microbes associated with human skin, drinking water, and soil. Unless otherwise indicated, we did not include these environmental microbes in our further analyses because of their limited roles in sourdough fermentation.
 
 Sourdough communities exhibited consistent patterns of strong species dominance or co-occurrence (Figure 2A). Many communities were dominated by a single yeast and/or bacterial species with a median of three LAB/AAB and one yeast per starter (Figure 2A-Figure 2—figure supplement 2). For example, Saccharomyces cerevisiae accounted for >50% of fungal ITS reads in 77% of samples. The LAB L. sanfranciscensis was the dominant bacterium in most sourdoughs where it occurred and was negatively associated with the widespread L. plantarum and L. brevis (p<0.001; Figure 2A, Figure 2—figure supplement 1, Figure 2—source data 3). The LAB Lactobacillus plantarum and L. brevis were the most commonly observed pair of co-occurring taxa (in 177 of 500 starters, p<0.001; Figure 2A-Figure 2—figure supplement 3). Interactions predicted in the literature, including L. sanfranciscensis:Kazachstania humilis co-occurrence (Brandt et al., 2004; De Vuyst et al., 2016) and L. sanfranciscensis:S. cerevisiae co-exclusion (Gobbetti et al., 1994), were supported by in situ patterns of diversity (L. sanfranciscensis:K. humilis p<0.01, L. sanfranciscensis:S. cerevisiae p=0.01).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig2-v1.jpg)
+
+**Figure 2.:** (A) Starters (n = 500) hierarchically clustered by Bray-Curtis dissimilarities. The stacked bar chart on the left shows the proportion of total reads across all samples belonging to the orders Rhodospirillales (AAB), Lactobacillales (LAB), and Saccharomycetales (yeast) (see Figure 2—source data 1, 2 for a complete list of these taxa). On the right, each column represents an individual sourdough starter. See Figure 2—source data 3 for co-occurrence analysis results. Below the barchart, + indicates samples selected for functional analysis (Figure 4). Continental U.S. geographic regions were clustered at two scales: k = 4 (B) and k = 15 (C). Dots represent individual samples. Each geographic cluster is encircled. Colored dots represent clusters where indicator taxa were significantly (p<0.05) associated with geographic clusters according to indicator species analysis. In (D) and (E), indicator strengths (Figure 2—source data 6) illustrate individual ASVs that are significantly associated with (D) process parameters including starter maintenance techniques and (E) climatic parameters. Each individual dot or triangle represents an individual ASV of bacterium or fungus, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Also included in trees are LAB isolate strains (n = 4) used in pairwise competition experiments and reference strains of LAB and AAB from RDP. Shading indicates unique clades at ≥97% patristic similarity.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** For each starter (n = 500) the total number of ASVs for (A) bacteria including both LAB and AAB, (B) yeast, and (C) yeast, LAB, and AAB combined. For A-C, the dashed red line denotes the median richness. For each starter sample, (D) shows the number of LAB and AAB versus yeast detected. We did not detect a correlation between LAB/AAB and yeast richness across starters (Spearman’s rho = 0.04, p>0.05).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Isolates used in synthetic pairwise interaction experiments are in the inner circle, and relative abundance (within yeast and within bacteria) is indicated by the splined size of circles. The Bonferroni-corrected significance of these associations is indicated by the edge (line) thickness. The thickest lines represent associations where p values are < 0.001. Lines of medium thickness indicate p<0.01, and the thinnest lines represent p<0.05. The species are organized by kingdom, with yeast on the top part of the figure and bacteria on the bottom. Of the 16 significant interactions we detected, 14 were within-kingdom and two are cross-kingdom interactions. All associations were calculated with the R package Cooccur.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Pairwise comparisons of community dissimilarity (Bray-Curtis) and geographic distances with Mantel tests (Spearman rank correlations with 999 permutations). For each comparison, we compared both the whole dataset (n = 500) and the continental US only (n = 424). (A) Fungal versus bacterial community dissimilarity across all samples (rM = 0.04, p<0.05) and (B) across US (rM = 0.05, p<0.01). (C) Bacteria versus geographic distance with the whole dataset (rM 0.01, p>0.05) and (D) US only (rM = 0.01, p>0.05). (E) Fungi versus geographic distance with all data (rM = 0.23, p≤0.001) and (F) US only (rM 0.04, p≤0.001).
+
 One striking pattern across our dataset was the highly variable abundance of AAB across individual starters. These bacteria have been reported in sourdough (Minervini et al., 2014; Ripari et al., 2016), but are generally understudied as indicated by their almost complete absence in many key reviews of sourdough microbial diversity (De Vuyst et al., 2014; Gänzle and Ripari, 2016; Van Kerrebroeck et al., 2017). In our sample set, 147 starters contained AAB (>1% relative abundance) including Acetobacter, Gluconobacter, or Komagataeibacter species (Figure 2A, Figure 2—source data 2). AAB require specialized culture conditions (Kim et al., 2019) and cultivation biases in previous studies (De Vuyst et al., 2014; Gänzle and Ripari, 2016; Van Kerrebroeck et al., 2017) may explain their widespread omission from our understanding of sourdough biodiversity.
 
-## Geography, process parameters, and abiotic factors are poor predictors of sourdough starter microbiome composition
+### Geography, process parameters, and abiotic factors are poor predictors of sourdough starter microbiome composition
 
 We first examined whether sourdough starter community composition was correlated with geographic distance between starters using a distance-decay analysis. Across the continental U.S. where we had the highest sample density, taxonomic composition was not correlated with geographic distance (Mantel ρ = 0.0, p>0.05 for both LAB/AAB and yeasts). At the global-scale, yeast taxonomic composition was weakly predicted by geography (Mantel ρ = 0.07, p<0.01). The geographic signal was stronger when all fungal ASVs were included (Mantel ρ = 0.23, p≤0.001 globally), potentially due to differences in the non-yeast fungi (molds, plant pathogens) found within local ingredients and/or environments (Barberán et al., 2015).
 
@@ -74,21 +94,49 @@ Some fermentation-relevant taxa were enriched under particular conditions (Figur
 
 The history and origins of sourdough starters may also explain the distribution of some widespread microbial species. Sourdough bakers can either begin their starters de novo from flour and water or obtain an established starter from a business or individual. The LAB L. brevis was associated with de novo starters (IS = 0.206, p=0.04). There were 73 starters in our collection that were originally acquired by home bakers from a bakery or other commercial source and L. sanfranciscensis was abundant in these commercial starters (IS = 0.267, p=0.04). This suggests that L. sanfranciscensis thrives under commercial production conditions and has been widely distributed among bakers, where it persists in home fermentations.
 
-## Ecological distributions of sourdough microbes are structured by biotic interactions
+### Ecological distributions of sourdough microbes are structured by biotic interactions
 
 We next determined whether individual growth rate and/or biotic interactions among taxa could help to explain distributions of sourdough species (Friedman et al., 2017; Vega and Gore, 2018). Whereas previous studies have focused on single pairs of interacting sourdough microbes (De Vuyst and Neysens, 2005; Gobbetti et al., 1994; Sieuwerts et al., 2018), we chose eight isolates: four LAB and four yeasts, representing the most frequent yeasts and bacteria in sourdough that also displayed strong positive and/or negative patterns of co-occurrence (Figure 3A, Figure 2—source data 2, 3). We did not include AAB in these interaction experiments because they were not significantly associated with other microbial taxa in the amplicon dataset. To determine the growth ability of each species alone, we measured colony forming units at the end of six 48 hr transfers in a liquid, cereal-based fermentation medium (Figure 3A). To determine competitive ability, we serially passaged 1:1 mixtures of each pair of the eight microbial species through this medium for six 48 hr transfers and assessed the relative abundance of each isolate in each pair (Figure 3A–B-Figure 3—figure supplement 1). We determined whether each of the eight species could co-persist in pairwise competitions, where co-persistence was defined as both isolates being present at >1% relative abundance after the six transfers.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig3-v1.jpg)
+
+**Figure 3.:** (A) All possible species 1:1 pairs were grown in 200 µL liquid flour media (n = 5) and 10 µL was serially transferred every 48 hr. This conceptual schematic follows one pairing, K. humilis and L. sanfranciscensis, to illustrate the experimental approach. (B) Mean relative abundance of pairs at the end of transfer six. Pairs where both isolates persisted (>1% relative abundance) at the end of the experiment are outlined; error bars are ± SE. For all replicates at transfers one, three, and six, see Figure 3—figure supplement 1. (C) Correlation between growth of individual isolates alone (CFUs of each isolate after six transfers) and a simple persistence index (the number of competitions where the isolate persisted) found a positive and significant relationship (detection limit of mean one percent abundance across replicates; Spearman’s ρ = 0.81, p=0.02). (D) Frequency of each taxon in the amplicon sequencing dataset and the number of competitions where that isolate persisted was positively associated, but not significant (Spearman’s ρ = 0.39, p=0.34). (E) Significant (Bonferroni-corrected p<0.05) patterns of co-occurrence between taxa in our amplicon sequencing (top) were replicated 7 of 8 times in our experimental manipulation (bottom). All pairwise experimental outcomes from transfer six are represented in the bottom part of the figure; the eight pairs that have significant co-occurrence associations are highlighted and the experimental outcomes that matched the co-occurrence data have an asterisk. Refer to Figure 2—figure supplement 3- Figure 2—source data 3 for all amplicon co-occurrence data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Pairs were inoculated at approximately equal densities and transferred every 48 hr. Percent relative abundance of all experimental pairs after each transfer are shown in each column. All replicates are represented. Pairs where both species persist (1% relative abundance detection limit) are outlined in black. Outcomes that were predicted by co-occurrence analysis in the amplicon sequencing (see Figure 2—figure supplement 3) have an asterisk.
 
 Taxa that are able to reach high cell densities in the sourdough environment may be able to outcompete many other sourdough species. When comparing the growth of each isolate alone over six transfers to its ability to persist in pairwise competitions, we found a significant positive relationship (Spearman’s ρ = 0.81, p<0.05, Figure 3C). For example, the LAB L. brevis is able to reach high densities when grown alone in our synthetic sourdough environment and is also able to persist when paired with all seven competing LAB and yeast species. In contrast, the LAB L. sanfranciscensis has one of the lowest densities when grown alone and is only able to persist when grown with the yeast K. humilis. We did not detect a significant correlation between the ability to persist in pairwise competitions and frequency of each taxon across the amplicon sequencing dataset (Spearman’s ρ = 0.39, p>0.05, Figure 3D), or between growth alone and frequency in the amplicon sequencing dataset (Spearman’s ρ = 0.57, p>0.05).
 
 To test how well specific interactions among yeast and LAB detected in sourdoughs could be recapitulated in our in vitro system, we compared significant co-occurrence patterns inferred from amplicon sequence data (positive or negative associations), with synthetic co-persistence patterns from the competition experiments. Of the 16 significant associations detected in the amplicon dataset, most (14 out of 16) were within-kingdom interactions (yeast:yeast and bacteria:bacteria) and only two were cross-kingdom interactions: a negative pattern of co-occurrence between Saccharomyces cerevisiae and Lactobacillus sanfranciscensis, and a positive pattern of co-occurrence between Kazachstania servazzii and Pediococcus damnosus. In the competition experiment, yeasts and bacteria co-persisted with each other in half of all pairings (8 of 16), and within-kingdom (yeast:yeast or bacteria:bacteria) species pairs co-persisted in 3 of 12 pairings (Figure 3B and E). Most species pairs (20 of 28) did not show significant positive or negative associations in the amplicon dataset. For the eight significant co-occurrence interactions detected in the amplicon sequence dataset, seven out of eight were recapitulated in our synthetic communities (Figure 3E; p<0.05). The consistency in directionality between pairwise co-occurrence patterns observed between the 500 sourdough starters and in vitro suggests robust microbial interactions in sourdough despite differences in environmental conditions and fermentation practices.
 
-## Microbial composition influences dough rise and aroma profiles
+### Microbial composition influences dough rise and aroma profiles
 
 To determine how variation in starters’ community composition impacts their functional attributes, we selected a subset of 40 starters that spanned the spectrum of sourdough diversity (Figure 2A). We measured two baking-relevant functions: emissions of volatile organic compounds (VOCs), which can impact baked sourdough bread aromas (Pétel et al., 2017), and leavening (measured as rate of dough rise), which can impact bread structural properties (Arendt et al., 2007).
 
 Across all samples, 123 volatile compounds were detected by GC/MS including well-known sourdough compounds 3-methyl-1-butanol, ethyl alcohol, acetic acid, and ethyl acetate (median number of compounds detected per starter = 85; Figure 4—figure supplement 1). Sensory analysis yielded 14 dominant notes across the 40 starters, including yeasty, vinegar/acetic acid/acetic sour, green apple, fermented sour, and ethyl acetate/solventy (Figure 4—figure supplement 3, Figure 4—source data 2). The source of the starter inoculum explained most of the variation in VOC profile dissimilarities (PERMANOVA R2 = 91% and p≤0.001), differences in maximum dough height (adjusted R2 = 22%, ANOVA p<0.05), and dough rise rates (adjusted R2 = 42%, ANOVA p<0.001; Figure 4—figure supplements 1–2 and Video 1). This demonstrates wide variation in functional capacities across the 40 starters and low variation across experimental replicates within one starter. Starter community composition did not correlate with the dominant sensory note assigned by the sensory panel (PERMANOVA R2 = 37%, p=0.16). While total bacterial and yeast species richness was not significantly correlated with VOC richness (Spearman’s ρ = −0.09, p>0.05), starter microbial community composition was significantly correlated with VOC profiles (Bray-Curtis dissimilarity for community composition and VOC profiles; Mantel ρ = 0.19, p≤0.01).
 
+![Video 1.](https://cdn.elifesciences.org/articles/61644/elife-61644-video1.mp4.jpg)
+
+**Video 1.:** Video shows the first of three batches of sterilized flour and water (n = 40, three replicates of each) that were inoculated with sourdough starters. Dough rise was measured by tracking the tops of each dough using video tracking software over the course of 36 hrs. Changes from the starting position were fitted with logistic growth curves using the R package GrowthCurver. Videos for each tube were trimmed if they fell to more than 5% of their maximum rise value. Dough rise rates ranged from 0.1 to 1.5 mm/hr. For scale, tubes are 103 mm tall with their caps. Doughs were removed part way through for placement of volatile organic compound collection bars which were present during hours 12–36. Video also available at: https://youtu.be/iK4lyRw2acA.
+
 When we determined whether VOC variation was driven by particular sourdough species, only the Acetobacter malorum spp. group emerged as significant (ρ = 0.528, FDR-corrected p<0.05; Figure 4—source data 1). More generally, total % AAB explained was strongly correlated with variation in VOCs (Mantel ρ = 0.73, p<0.001; Figure 4) and sensory notes (Kruskal-Wallis p<0.05; Figure 4), with the differences most strongly tied to the vinegar note compared to green apple and fermented sour notes (Dunn test p=0.04 and 0.06 respectively; Figure 4—figure supplement 3). The total relative abundance of AAB was also negatively correlated with the rate of dough rise (ρ = −0.51, p<0.001; Figure 4), which may be explained by the production of compounds such as acetic acid and inhibition of yeast or LAB growth in sourdough starters. The combined functional datasets highlight that variation in AAB abundances is a key driver of functional diversity across our sourdough collection.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig4-v1.jpg)
+
+**Figure 4.:** Heatmap shows the relative abundances of VOCs (z-scores) across samples. Columns represent the 40 starter samples clustered with Bray-Curtis dissimilarities of VOC profiles, resulting in two main clusters. Rows show the top 48 VOCs clustered by correlation similarity. Numbered VOCs are unknown compounds. Top rows indicate the total percentage of AAB and the three measured functional outputs. Functional outputs were all predicted by % AAB including: (1) mean dough rise rate (ρ = −0.51, p<0.001), (2) the overall VOC composition represented by the first NMDS axis (see Figure 4—figure supplement 1; Mantel ρ = 0.73, p<0.001) and (3) the dominant sensory note (adj. R2 = 37%, p<0.01, see Figure 4—source data 2 for all sensory notes).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The relationships between volatile organic compound (VOC) profiles represented by a non-metric multidimensional scaling ordination (NMDS). Shading and hulls indicate VOC community profiles from the same initial microbial inoculum. Starter inoculum explained most of the variation in VOC profiles (PERMANOVA R2 = 0.91 and p≤0.001). (B) A heatmap of all volatile organic compound (VOC) community profiles (n = 118) and compounds detected (n = 123 at≥0.0001 mean abundance). Colors indicate z scores. Rows represent individual sample replicates, and columns represent VOCs. Both rows and columns are clustered hierarchically with Bray-Curtis dissimilarities.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Boxplots of starter inoculum (the 40 samples selected for functional analyses) by rate of dough rise (n = 107 samples included after quality filtering).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61644/elife-61644-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Only notes that were reported more than five times are included in the analysis. Percent acetic acid bacteria correlated with differences in sensory notes, with acetic acid/vinegar versus fermented sour and green apple showing the strongest differences (Dunn test p=0.04 and 0.06 respectively).
 
 ## Discussion
 
@@ -110,11 +158,203 @@ Sourdough starters exemplify a unique type of microbial community: a top-down en
 
 ## Materials and methods
 
-## Sample collection and processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Powersoil</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 47014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>515 f</td>
+      <td>Caporaso et al., 2011</td>
+      <td>PCR primer</td>
+      <td>Forward primer used for amplifying bacterial DNA for amplicon sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>806 r</td>
+      <td>Caporaso et al., 2011</td>
+      <td>PCR primer</td>
+      <td>Reverse primer used for amplifying bacterial DNA for amplicon sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ITS1f</td>
+      <td>Gardes and Bruns, 1993</td>
+      <td>PCR primer</td>
+      <td>Forward primer used for amplifying fungal DNA for amplicon sequencing and Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ITS2</td>
+      <td>White et al., 1990</td>
+      <td>PCR primer</td>
+      <td>Reverse primer used for amplifying fungal DNA for amplicon sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ITS4</td>
+      <td>White et al., 1990</td>
+      <td>PCR primer</td>
+      <td>Reverse primer used for amplifying fungal DNA for Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>27 f</td>
+      <td>Lane, 1991</td>
+      <td>PCR primer</td>
+      <td>Forward primer used for amplifying bacterial DNA for amplicon sequencing and Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1492 r</td>
+      <td>Turner et al., 1999</td>
+      <td>PCR primer</td>
+      <td>Reverse primer used for amplifying bacterial DNA for amplicon sequencing and Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dada2</td>
+      <td>Callahan et al., 2016</td>
+      <td></td>
+      <td>Software package for identifying amplicon sequence variants (ASVs)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>raxml-HPC</td>
+      <td>Stamatakis, 2014</td>
+      <td></td>
+      <td>Phylogenetic tree builder for taxonomic assignments of ASVs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaiju</td>
+      <td>Menzel et al., 2016</td>
+      <td></td>
+      <td>Metagenomic taxonomy assignment software using unassembled reads</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>Refseq</td>
+      <td>https://www.ncbi.nlm.nih.gov/refseq/</td>
+      <td>RRID:SCR_003496</td>
+      <td>Database used with Kaiju for bacterial species assignments of metagenomic reads</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team, 2019</td>
+      <td>RRID:SCR_001905</td>
+      <td>Used for statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab-based DLTdv-5</td>
+      <td>Hedrick, 2008</td>
+      <td></td>
+      <td>Used for video tracking of sourdough height for dough rise profiles</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Twister PDMS stir bar</td>
+      <td>Gerstel</td>
+      <td></td>
+      <td>Collection medium for volatile organic compounds in functional assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lactobacilli MRS agar</td>
+      <td>Criterion</td>
+      <td>C5930</td>
+      <td>Growth medium for the cultivation of lactic acid bacteria</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CHROMagar Candida</td>
+      <td>CHROMagar</td>
+      <td>CA222</td>
+      <td>Differential growth medium; creates differential pigmentation and growth phenotypes for distinguishing yeast</td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Lactobacillus sanfranciscensis 17B2</td>
+      <td>This paper</td>
+      <td>MW218985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Lactobacillus brevis 0092a</td>
+      <td>This paper</td>
+      <td>MW218986</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Lactobacillus paralimentarius 0316d</td>
+      <td>This paper</td>
+      <td>MW218987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Lactobacillus plantarum 232</td>
+      <td>This paper</td>
+      <td>MW218988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Saccharomyces cerevisiae 253</td>
+      <td>This paper</td>
+      <td>MW219042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Wickerhamomyces anomalus 163</td>
+      <td>This paper</td>
+      <td>MW219039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Kazachstania humilis 228</td>
+      <td>This paper</td>
+      <td>MW219040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Kazachstania servazzii 177</td>
+      <td>This paper</td>
+      <td>MW219041</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection and processing
 
 Sourdough starters were submitted by community scientists participating as part of the Sourdough Project (http://robdunnlab.com/projects/sourdough/). Community scientists were recruited through web sites, social media, and email campaigns worldwide January-March 2017. They were directed to an online Informed Consent form approved by the North Carolina State University’s Human Research Committee (IRB Approval Reference #10590). Each participant first answered an extensive online questionnaire consisting of 40 questions related to the source, history, maintenance, and use of their sourdough starter. Upon completion, participants were assigned a unique ID. Participants were instructed to triple-bag ~4 oz of their freshly fed sourdough starter in a new resealable plastic bag, label the bag with their participant ID, and then ship it to Tufts University. In order to preserve participant confidentiality, samples were reassigned a new Sample ID number upon arrival. Each starter sample was subdivided into two subsamples: (1) 1 mL was transferred to a 1.5 mL tube and stored at −80°C until samples could be processed for DNA sequencing, (2) glycerol stocks (15% glycerol) were made of each sample by combining equal parts sample and 30% glycerol and stored at −80°C for competition and VOC analyses. In total, we received, processed, and sequenced 560 sourdough starter samples with completed surveys from participants. After quality filtering and rarefying amplicon datasets (see below), 500 were retained.
 
-## Amplicon 16S and ITS rRNA gene and shotgun metagenomic sequencing
+### Amplicon 16S and ITS rRNA gene and shotgun metagenomic sequencing
 
 To characterize the bacterial and fungal communities of sourdough starters, we followed previously described molecular marker gene sequencing protocols (Ramirez et al., 2014; Oliverio et al., 2017). In brief, we extracted DNA from 2 mL sub-samples using a Qiagen PowerSoil DNA extraction kit, and then amplified extracted DNA with barcoded primers to enable multiplexed sequencing in duplicate, using the 515 f/806 r for bacteria and ITS1f/ITS2 for fungi. Amplicon concentrations were normalized and sequenced on the Illumina MiSeq platform at the University of Colorado Next Generation Sequencing Facility with 2 × 150 and 2 × 250 bp paired-end chemistry for bacterial and fungal sequencing, respectively. We sequenced multiple DNA extractions and PCR negative controls to check for contamination.
 
@@ -124,11 +364,11 @@ To obtain high-quality taxonomic species assignments for LAB and AAB and to faci
 
 We also characterized 40 sourdough starters used for functional analyses (dough rise, VOCs, and sensory notes) via shotgun metagenomic sequencing in order to confirm that the experimental communities revived from glycerol stocks were similar to the original samples. We prepared the samples for shotgun metagenomic sequencing as per Oliverio et al., 2020 and samples were sequenced on the Illumina NextSeq platform with 2 × 150 bp chemistry at the University of Colorado Next Generation Sequencing Facility. We filtered raw reads with Sickle (Joshi and Fass, 2011) with the specified parameters -q 50 and -I 20. On average, each sample consisted of ~3.7 million paired-end reads after quality filtering. We classified the taxonomy of metagenomic reads with Kaiju, using the RefSeq database (Menzel et al., 2016).
 
-## Culturing LAB and yeasts
+### Culturing LAB and yeasts
 
 Eight individual isolates of abundant yeasts and bacteria from amplicon data (four yeasts and four bacteria) were isolated from glycerol stocks which were plated onto Lactobacilli MRS agar (Criterion) or Yeast Potato Dextrose (YPD). The yeasts S. cerevisiae, W. anomalus, K. humilis, and K. servazii as well as the LAB L. sanfranciscensis, L. brevis, L. paramilentarius, and L. plantarum were chosen because of their abundance (within the top five bacteria and yeast in amplicon sequencing, respectively; mean relative abundance). The eight isolates were sourced from eight different starters in our collection. Identities were confirmed using Sanger sequencing of the ITS region for yeast using the primer ITS1f (Gardes and Bruns, 1993) and ITS4 (White et al., 1990) and 16s regions of bacteria using the primers 27f (Lane, 1991) and 1492r (Turner et al., 1999). Sanger sequences of the four bacterial isolates were included in the tree used for ASV classification and all clustered with their respective presumed identities’ reference taxa (Figure 2A-Figure 2—figure supplement 1).
 
-## Growth and pairwise competition assays of LAB and yeast isolates
+### Growth and pairwise competition assays of LAB and yeast isolates
 
 For growth and competition assays, a liquid cereal-based fermentation medium (CBFM) was made to approximate the dough environment similar to a previously described approach (Charalampopoulos et al., 2002). To make CBFM, 100% whole wheat and all-purpose flour were combined in equal proportion (1:1 by mass). The flour mixture was suspended in room temperature (24°C) deionized water (1:9 flour:water by mass) in 500 ml plastic conical centrifuge bottles by shaking for 1 min. This mixture was immediately centrifuged (Beckman GS-6 Series) at x3000 rpm for 30 min (24°C) and the pellet was discarded. The CBFM was then filtered to exclude microbial cells through Falcon disposable filter funnels (0.20 µm pore size).
 
@@ -138,17 +378,17 @@ For competition experiments, yeasts and bacteria were inoculated into wells of a
 
 All replicates were plated and relative abundance of the interacting species was determined after transfers one, three and six. Yeast:yeast pairs were plated on Chromagar Candida plates (CHROMagar) at a 10−4 dilution to differentiate species based on colony morphology, with the exception of pairs containing Wickerhamomyces anomalus, which were differentiated on YPD. Bacteria:bacteria pairs were plated at 10−5 dilutions on MRS where species could be differentiated based on colony morphology. Yeast:bacteria pairs were spot-plated (5 µL of each dilution) on selective media at full to 10−5 dilutions to quantify CFUs. Selective media were YPD plus chloramphenicol (50 mg/L) to select for yeast and MRS plus natamycin (21.6 mg/L) to select for bacteria. Individual isolates for our experiment were determined to have ‘persisted’ if they were above the detection limit of 1/100th of the total population at the end of the experiment (transfer six). Co-persistence was defined as both isolates being detectable at that threshold.
 
-## Sourdough experiments to measure functional outputs
+### Sourdough experiments to measure functional outputs
 
 To test how distinct sourdough community structures impacted functions, we revived frozen glycerol stocks of 40 starters in a standard flour medium (see medium preparation description below) using a common garden approach. These 40 starters spanned the diversity we encountered in sequencing (Figure 2A); we limited our functional analysis to 40 starters due to practical constraints in annotating VOC data. Rather than directly using frozen starters which were shipped to us from community scientists, we first grew up samples in a ‘pre-inoculum’ that was used to inoculate doughs for functional analysis. We did this to ensure that all cultures were at comparable growth stages prior to inoculation. The flour used was the same mixture used for CBFM (100% whole wheat and all-purpose flour combined in equal proportion 1:1 by mass), but it was prepared differently in order to approximate the moisture content of dough. Flour was autoclaved on a gravity cycle for 20 min to reduce microbial load. Glycerol-stocked communities (200 µL) were added to 1.8 mL sterile distilled water and 2 g autoclaved flour in three replicate communities for each starter pre-inoculum (n = 3 captured the variability we encountered in pilot experiments). Pre-inoculum was mixed with flour and sterile water using a sterile wooden dowel until no dry flour was visible. The mixture was briefly centrifuged in a 15 mL culture tube (to remove dough stuck to the side of the tube walls) and then incubated for 72 hr at room temperature. Inoculum was created by mixing sterile water (4 mL) and pre-inoculum (~4 g) and was vortexed to homogenize. Autoclaved flour (2 g), water (1600 µL), and inoculum (400 µL) were added to 15 mL falcon tubes and mixed using sterile wooden dowels and then briefly centrifuged to remove from the sides of tubes.
 
 To confirm that the microbial community that formed in these experimental sourdoughs (grown from the 40 starters selected for functional analyses) resembled the sourdough starters from which they originated, we compared microbial community composition between shotgun metagenomic data collected from experimental sourdoughs and the corresponding amplicon sequence data from the original sourdoughs. We calculated Bray-Curtis dissimilarities for the 40 samples from: (1) the initial amplicon data and (2) 16S taxonomic annotations from the shotgun metagenomic data from the experimental samples. We then compared the two dissimilarity matrices with a Mantel test (based on Spearman rank correlation and 999 permutations). We also correlated relative abundances of some of the most dominant taxa including L. sanfranciscensis, L. brevis, L. plantarum, P. damnosus, and also the total percent of AAB detected in each sample. Initial and experimental communities were similar in terms of their overall bacterial composition (Mantel ρ = 0.55, p≤0.001) and abundances of common taxa (L. sanfranciscensis ρ = 0.64, p≤0.001; L. brevis ρ = 0.50, p≤0.001; L. plantarum ρ = 0.70, p≤0.001; P. damnosus ρ = 0.47,≤0.001; and % total AAB ρ = 0.75, p≤0.001).
 
-## Measuring rates of dough rise
+### Measuring rates of dough rise
 
 Dough rise was recorded with a Canon EOS 70D DSLR camera set to image every two minutes for 36 hr. The camera was centered at the vertical and horizontal midpoint of each dough batch. Timelapse photos were compiled, cropped, and enhanced for contrast using Adobe AfterEffects. The top of every dough was tracked through each frame in the MatLab-based digitizing program DLTdv5 (Hedrick, 2008). The height of each culture tube (Th) was measured in pixels in Adobe Photoshop. Changes in dough height (∆X) were normalized to account for distance from the camera and differences in starting height using the following formula: ∆X = (X-Xº)/Th. Distances relative to tube length were converted to absolute distance (mm/hr) by multiplying values by the dimensions of culture tubes (103 mm). Before fitting curves, data was truncated to cut instances where dough fell by more than 5 percent of its maximum height. For each replicate, a logistic growth curve was fitted, and growth rate (r) was calculated with the R package Growthcurver (Sprouffske and Wagner, 2016), with a goodness of fit cutoff for r values of p≤0.01.
 
-## VOC collection and sensory panel
+### VOC collection and sensory panel
 
 Sourdough starter volatiles were collected using headspace sorptive extraction, which is an equilibrium-driven sample enrichment technique employing a polydimethylsiloxane coated magnetic stir bar (commercially known as Twister, Gerstel). Stir bars (10 mm long x 0.5 mm thick) were suspended in the headspace of each sample using a magnet on the outside of the sample tube cap to suspend the stir bar above the sample. Three replicates of each community were sampled for 24 hr (beginning 12 hr after inoculation). After collection, the stir bars were removed and spiked with 1 μL of 10 ppm ethylbenzene-d10, which was used as an internal standard (Restek). Relative peak areas (analyte/internal standard) served to measure relative concentrations of each compound in the sample. Sterile deionized water and autoclaved flour were analyzed to measure chemical interferences from background samples. Compounds in the starters measured at concentrations less than or equal to concentrations in the water/flour samples were eliminated from the data.
 
@@ -162,7 +402,7 @@ There were two sets of sensory descriptors that were used in our study: those th
 
 For our detailed functional analysis of the subset of 40 starter samples, sourdough starter aromas were assessed after 36 hr of incubation by a trained and certified descriptive sensory analysis panel from the Tufts University Sensory and Science Center. Samples were coded, randomized, and served blind to the panel one at a time. The panel used modified flavor profile analysis to measure the intensity and characteristics of the aroma in each sample (Hootman and Keane, 1992), resulting in primary (dominant) and secondary notes for each sample (Figure 4—source data 2).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed in the R environment (‘R Core Team, 2019,” 2012). To assess and visualize overall similarity in sample composition (Figure 2A), we hierarchically clustered samples based on pairwise distances in Bray-Curtis dissimilarities (method = ward.d2), as implemented in hclust. Bacteria including LAB and AAB were weighted equally to fungi (yeast only). To test whether geographic location explained any of the variation in observed microbial composition, we ran Mantel tests (method = Spearman with 999 permutations) comparing bacterial and fungal community dissimilarities (Bray-Curtis) to geographic distances (calculated with the Haversine distance from the R package geosphere). We evaluated this relationship for the whole dataset (n = 500) and using continental US samples only (n = 424). We also compared overall fungal to bacterial dissimilarities with Mantel tests for the global and US-only datasets (Figure 2—figure supplement 4).
 

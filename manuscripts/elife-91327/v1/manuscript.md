@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/047426m28 Department of Psychology, Program in Neuroscience, and the Beckman Institute for Advanced Science and Technology, University of Illinois Champaign United States
+1. Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. Department of Psychology, Program in Neuroscience, and the Beckman Institute for Advanced Science and Technology, University of Illinois Champaign United States ([ROR:047426m28](https://ror.org/047426m28))
 
 † Corresponding author
 
 ## Abstract
 
-Humans can read and comprehend text rapidly, implying that readers might process multiple words per fixation. However, the extent to which parafoveal words are previewed and integrated into the evolving sentence context remains disputed. We investigated parafoveal processing during natural reading by recording brain activity and eye movements using MEG and an eye tracker while participants silently read one-line sentences. The sentences contained an unpredictable target word that was either congruent or incongruent with the sentence context. To measure parafoveal processing, we flickered the target words at 60 Hz and measured the resulting brain responses (i.e. Rapid Invisible Frequency Tagging, RIFT ) during fixations on the pre-target words. Our results revealed a significantly weaker tagging response for target words that were incongruent with the previous context compared to congruent ones, even within 100ms of fixating the word immediately preceding the target. This reduction in the RIFT response was also found to be predictive of individual reading speed. We conclude that semantic information is not only extracted from the parafovea but can also be integrated with the previous context before the word is fixated. This early and extensive parafoveal processing supports the rapid word processing required for natural reading. Our study suggests that theoretical frameworks of natural reading should incorporate the concept of deep parafoveal processing.
+Humans can read and comprehend text rapidly, implying that readers might process multiple words per fixation. However, the extent to which parafoveal words are previewed and integrated into the evolving sentence context remains disputed. We investigated parafoveal processing during natural reading by recording brain activity and eye movements using MEG and an eye tracker while participants silently read one-line sentences. The sentences contained an unpredictable target word that was either congruent or incongruent with the sentence context. To measure parafoveal processing, we flickered the target words at 60 Hz and measured the resulting brain responses (i.e. Rapid Invisible Frequency Tagging, RIFT) during fixations on the pre-target words. Our results revealed a significantly weaker tagging response for target words that were incongruent with the previous context compared to congruent ones, even within 100ms of fixating the word immediately preceding the target. This reduction in the RIFT response was also found to be predictive of individual reading speed. We conclude that semantic information is not only extracted from the parafovea but can also be integrated with the previous context before the word is fixated. This early and extensive parafoveal processing supports the rapid word processing required for natural reading. Our study suggests that theoretical frameworks of natural reading should incorporate the concept of deep parafoveal processing.
 
 ## Introduction
 
@@ -34,6 +34,43 @@ Frequency tagging, also known as steady-state visually evoked potentials, involv
 
 In the current study, RIFT was utilised in a natural reading task to investigate parafoveal semantic integration. We recruited participants (n=34) to silently read one-line sentences while their eye movements and brain activity were recorded simultaneously by an eye-tracker and MEG. The target word in each sentence was always unpredictable (see Behavioural pre-tests in Methods) but was semantically congruent or incongruent with the preceding sentence context (for the characteristics of words, see Table 1). The target words were tagged by flickering an underlying patch, whose luminance kept changing in a 60 Hz sinusoid throughout the sentence presentation. The patch was perceived as grey, the same color as the background, making it invisible. To ensure that the flicker remained invisible across saccades, we applied a Gaussian transparent mask to smooth out sharp luminance changes around the edges (Figure 1A). Parafoveal processing of the target word was indexed by the RIFT responses recorded using MEG during fixations of pre-target words.
 
+**Table 1.**
+ Characteristics of pre-target, target, and post-target words.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pre-target</th>
+      <th>Target</th>
+      <th>Post-target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Word frequency</td>
+      <td>124.5 (310.9)</td>
+      <td>62.2 (77.0)</td>
+      <td>3619.8 (6725.2)</td>
+    </tr>
+    <tr>
+      <td>Word Length</td>
+      <td>5.5 (1.1)</td>
+      <td>5.3 (1.1)</td>
+      <td>5.4 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Position in the sentence</td>
+      <td>5.4 (3.0)</td>
+      <td>6.4 (1.3)</td>
+      <td>7.4 (1.3)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Word frequency is reported as the total CELEX frequency per million (Davis, 2005). Word length is the number of letters in a given word. Position in the sentence refers to the location in the sequence of words where a given word is presented. The number of words in each sentence is 11.6±1.7 (mean ± SD). All values shown here are mean with standard deviations in the parentheses. Note that the pre-target and post-target were identical for the congruent and incongruent conditions. The target word was counterbalanced over items such that it was congruent for one item and incongruent for another._
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/91327/elife-91327-fig1-v1.jpg)
 
 **Figure 1.:** (A) After the presentation of a cross-fixation at the screen centre for 1.2–1.6 s, a gaze-contingent box appeared near the left edge of the screen. Fixing the box for 0.2 s triggered the full sentence presentation. Participants (n=34) read 160 one-line sentences silently while brain activity and eye movements were recorded. Each sentence was embedded with one congruent or incongruent target word (see the dashed rectangle; not shown in the actual experiment). The target words could not be predicted based on the sentence context and word-level properties of congruent and incongruent targets were balanced by swapping them between two sentence frames. The target words were tagged by changing the luminance of the underlying patch (with a Gaussian mask) in a 60 Hz sinusoid throughout the sentence presentation (depicted as a bright blob, not shown in the actual experiment). Additionally, we included a small disk at the bottom right of the screen that displayed the tagging signal and was recorded by a photodiode throughout each trial. After reading, gazing at the bottom box for 0.2 s triggered the sentence offset. Twelve percent of the sentences were followed by a simple yes-or-no comprehension question. (B) The first fixation durations on the pre-target and target words when the target words were incongruent (in blue) or congruent (in orange) with the sentence context. Each dot indicates one participant (n=34). ***p<0.001; n.s., not statistically significant; ITI, inter-trial interval.
@@ -42,11 +79,11 @@ This paradigm allows us to address three questions. First, we aimed to measure w
 
 ## Results
 
-## No evidence for semantic parafoveal processing in the eye movement data
+### No evidence for semantic parafoveal processing in the eye movement data
 
 Like prior work measuring eye fixations during English reading (Inhoff, 1982; Inhoff and Rayner, 1980; Rayner et al., 2014; Rayner et al., 1986), we found no evidence for parafoveal semantic processing in the eye movement data (Figure 1B, left). A paired t-test comparing first fixation durations on the pre-target word showed no effect of contextual (in)congruity (t(33) = 0.84, p=0.407, d=0.14, two-sided). However, first fixation durations on the target word were significantly longer when they were incongruent (versus congruent) with the context (t(33) = 5.99, p=9.83 × 10–7, d=1.03, two-sided pairwise t-test; Figure 1B, right). In addition, we found that the contextual congruity of target words affected later eye movement measures (i.e. total gaze duration and the likelihood of refixation after the first pass reading), with additional processing evident when the target words were incongruent with the context compared with when they were congruent (Appendix 1—figure 1).
 
-## Parafoveal processing measured by RIFT
+### Parafoveal processing measured by RIFT
 
 First, we performed a selection procedure to identify MEG sensors that responded to RIFT. We measured neural responses to the flickering target words by calculating the coherence between the MEG sensors and the tagging signal measured by a photodiode. A MEG sensor was considered a good tagging response sensor if it showed significantly stronger 60 Hz coherence during the pre-target intervals (with flicker) compared to the baseline intervals before the sentence presentation (without flicker). Both pre-target and baseline intervals were 1 s epochs. We then applied a cluster-based permutation test and identified sensor clusters that showed a robust tagging response (pcluster <.01; Figure 2A). Tagging response sensors were found in 29 out of 34 participants, and all subsequent analyses were based on these tagging response sensors (7.9±4.5 sensors per participant, M ± SD). The sources of these responses were localised to the left visual association cortex (Brodmann area 18; Figure 2B) using Dynamic Imaging Coherent Sources (DICS) (Gross et al., 2001).
 
@@ -56,7 +93,7 @@ First, we performed a selection procedure to identify MEG sensors that responded
 
 Next, we characterised the temporal dynamics of attentional allocation to the flickering target word by calculating the 60 Hz coherence during fixations on several words surrounding the target word (Figure 2C). The resulting RIFT response curve revealed that significant attention was allocated to the target word as far as three words prior, spanning 15.3±2.7 letters (M ± SD), including the spaces between words. This range is consistent with previous estimations of the perceptual span of 12–15 letters during English reading (McConkie and Rayner, 1975; Rayner, 2009; Rayner, 1975; Underwood and McConkie, 1985), as reported in the eye movement literature. Moreover, as RIFT directly measures visual attention, the left-skewed RIFT response curve suggests that more visual attention is allocated towards the flickering target words before fixating on them, aligning with the left-to-right order of reading English. The normal size and left skewness of the perceptual span in our study suggest that RIFT did not influence attention distribution during natural reading. Notably, the strongest RIFT responses were observed during fixations on the pre-target word (i.e. word position N-1, Figure 2C), highlighting the suitability of RIFT for measuring neuronal activity associated with parafoveal processing during natural reading.
 
-## Neural evidence for semantic parafoveal integration
+### Neural evidence for semantic parafoveal integration
 
 Importantly, evidence for parafoveal semantic integration was found using RIFT (Figure 3). The pre-target coherence was weaker when the sentence contained a contextually incongruent word, compared to when it was congruent (Figure 3A). We conducted a pairwise t-test and found a significant effect on the averaged pre-target coherence at 60 Hz (t(28) = –2.561, p=0.016, d=0.476, two-sided pairwise; Figure 3B). To avoid any contamination of the parafoveal measure with activity from target fixation, pre-target coherence was averaged over the minimum pre-target fixation duration across both conditions for each participant (97.4±14.1 ms, M ± SD, denoted as a dashed rectangle). Next, we conducted a jackknife-based latency estimation and found that the congruency effect on the 60 Hz pre-target coherence had a significantly later onset when previewing an incongruent (116.0±1.9 ms, M ± SD) compared to a congruent target word (91.4±2.1 ms, M ± SD, denoted as a dashed rectangle; t(28) = –2.172, p=0.039, two-sided; Figure 3C). Therefore, both the magnitude and onset latency of the pre-target coherence were modulated by the contextual congruency of the target word, providing neural evidence that semantic information is integrated into the context during parafoveal processing, detectable within 100 ms after readers fixate on the pre-target word.
 
@@ -70,7 +107,7 @@ We conducted a similar analysis of the coherence measured when participants fixa
 
 **Figure 4.:** (A) The target coherence spectrum averaged over the RIFT response sensors at the group level (n=29) when the target words were incongruent with the sentence context (top panel), or congruent with the sentence context (middle panel); the bottom panel shows the difference between the two conditions. The horizontal line indicates the tagging frequency at 60 Hz. The two vertical lines indicate the first fixation onset of the target words and the averaged fixation offset. (B) We averaged the 60 Hz coherence within the minimum target fixation duration over participants (97.6±15.7 ms, M ± SD; denoted as a dashed rectangle). Each dot indicates one participant, and the horizontal lines inside of the violins indicate the mean values. The upright inserted figure shows the target coherence difference over participants with the error bar as SE. (C) A jackknife-based method was used to calculate the onset latency of the average coherence at the group level. The onset latency refers to the time when the coherence curve reaches its half maximum, denoted by the dotted lines. n.s., not statistically significant.
 
-## Parafoveal semantic integration is related to individual reading speed
+### Parafoveal semantic integration is related to individual reading speed
 
 The RIFT effects of congruency observed during the parafoveal preview of the targets showed that readers tend to allocate less attention to upcoming text when an upcoming word is semantically incongruent compared to when all words are congruent. If readers differ in the extent to which their attention is ‘repelled’ by incongruent words, then we might expect that the magnitude of the RIFT effect would be related to reading speed. Therefore, we conducted a correlation analysis to investigate this relationship (Figure 5). Individual reading speed was quantified as the number of words read per second from the congruent sentences in the study. We found a positive correlation between the pre-target coherence difference (incongruent - congruent) and individual reading speed (r(27)=0.503, p=0.006; Spearman’s correlation). This suggests that readers who show greater shifts in attentional allocation in response to semantic incongruity read more slowly on average.
 
@@ -96,11 +133,11 @@ In summary, our findings show that parafoveal processing is not limited to simpl
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We recruited 36 native English speakers (24 females, 22.5±2.8 years old, mean ± SD) with normal or corrected-to-normal vision. All participants are right-handed and without any history of neurological problems or a language disorder diagnosis. Two participants were excluded from the analysis due to poor eye tracking or falling asleep during the recordings, which left 34 participants (23 females). This sample size was determined based on our previous study with a similar experimental design (Pan et al., 2021). The study was approved by the University of Birmingham Ethics Committee (under the approved Programme ERN_18-0226AP27). The informed consent form was signed by all participants after the nature and possible consequences of the studies were explained. Participants received £15 per hour or course credits as compensation for their participation.
 
-## Stimuli
+### Stimuli
 
 In total participants read 277 sentences, of which 117 sentences were fillers from a published paper (White, 2008). The filler sentences were all plausible and were included to make sure the incongruent sentences were less than one-third of the sentence set. We constructed the remaining 160 sentences with 80 pairs of target words. In all sentences the context was low constraint; i.e., none of the target words could be predicted by the prior context (see Behavioural pre-tests below for details). The target word in each sentence was either incongruent or congruent with the sentence. To focus on semantic integration and avoid any confounds of word-level properties, we embedded each pair of target words in two different sentence frames. By swapping the target words within a pair of sentences, we created four sentences: two congruent ones and two incongruent ones. These were then counterbalanced over participants. In this way, we counterbalanced across lexical characteristics of the target words and characteristics of the sentence frames within each pair. Each participants read one version of the sentence set (A or B). For example, for the target pair brother/jacket, one participant read them in the congruent condition in the sentence set version A; while another participant read them in the incongruent condition in version B (see below, targets are in italic type for illustration, but in normal type in the real experiment).
 
@@ -114,11 +151,11 @@ Lily says this blue brother will be a big fashion trend this fall.
 
 For all sentences, the pre-target words were adjectives, and the target words were nouns (for detailed characteristics of the words please see Table 1). The word length of pre-target words was from 4 to 8 letters, and for target words was from 4 to 7 letters. The sentences were no longer than 15 words or 85 letters. The target words were embedded somewhere in the middle of each sentence and were never the first three or the last three words in a sentence. Please see Appendix for the full list of the sentence sets that were used in the current study.
 
-## Behavioural pre-tests
+### Behavioural pre-tests
 
 We recruited native English speakers for two behavioural pre-tests of the sentence sets. These participants did not participate in the MEG session.
 
-## Predictability of target words
+#### Predictability of target words
 
 We carried out a cloze test to estimate the predictability of the target words and the contextual constraint of the sentences. Participants read sentence fragments consisting of the experimental materials up to but not including the target words. Then participants were asked to write down the first word that came to mind that could continue the sentence (no need to complete the whole sentence). Example:
 
@@ -128,91 +165,165 @@ Lily says this blue ________________
 
 The predictability of a word was estimated as the percentage of participants who wrote down exactly this word in the cloze test. A target word with less than 10% predictability was deemed to be not predicted by the sentence context. In addition, sentences for which no word was predicted with 50% or greater probability were a low constraint. Twenty participants (aix males, 24.2±2.0 years old, mean ± SD) took part in the first round of the pre-test. Eight sentences were replaced with new sentences because the target words were too predictable and/or the sentence was too constraining. We then conducted a second round of the predictability test with 21 new participants (seven males, 25.0±6.0 years old). None of the target words in this final set were predictable (2.3%±4.8%, mean ± SD), and all the sentence contexts were low constraint (25.2%±11.8%).
 
-## Plausibility of sentences
+#### Plausibility of sentences
 
 Two groups of participants were instructed to rate how plausible (or acceptable) each sentence was in the sentence set version A or B separately. Plausibility was rated on a seven-point scale with plausibility increasing from point 1–7. Sentences in the experiment were designed to be either highly implausible (the incongruent condition) or highly plausible (the congruent condition). To occupy the full range of the scale, we constructed 70 filler sentences with middle plausibility (e.g. sentence 1 below). In this example, sentences 2 and 3 were the incongruent and congruent sentences from the experiment.
 
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Implausible</th>
+      <th colspan="3">Plausible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Kate said that she saw lots of stars twinkling in the sky at noon.</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2. Lily says this blue brother will be a big fashion trend this fall.</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3. Little Jimmy picked up a box and put some coins inside of it.</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>……</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
 For version A we recruited 27 participants (four males, 22.8±6.1 years old, mean ± SD): The plausibility rating for the incongruent sentences was 2.08±0.79 (mean ± SD); while for the congruent sentences was 6.18±0.56. For sentence set version B we recruited 22 participants (four males, 21.1±2.3 years old, one invalid dataset due to incomplete responses): The plausibility rating was 1.81±0.41 (mean ± SD) for the sentences in the incongruent condition and 6.15±0.47 for the sentences in the congruent condition. These results showed that in both versions of the sentences set, incongruent sentences were viewed as highly implausible and congruent sentences as highly plausible.
 
-## Experimental procedure
+### Experimental procedure
 
 Participants were seated 145 cm away from the projection screen in a dimly lit magnetically shielded room. The MEG gantry was set at 60 degrees upright and covered the participant’s whole head. We programmed in Psychophysics Toolbox –3 (Kleiner et al., 2007) to present the one-line sentences on a middle-grey screen (RGB [128 128 128]). All words were displayed in black (RGB [0 0 0]) with an equal-spaced Courier New font. The font size was 20 and the font type was bold so that each letter and space occupied 0.316 visual degrees. The visual angle of the whole sentence was no longer than 27 visual degrees in the horizontal direction. The sentence set was divided into five blocks, each of which took about 7 min. There was a break of at least 1 min between blocks and participants pressed a button to continue the experiment at any time afterwards. Participants were instructed to read each sentence silently at their own pace and to keep their heads and body as stable as possible during the MEG session. Eye movements were acquired during the whole session. In total, the experiment took no longer than 55 min. While the current study was conducted using MEG, these procedures might also work with EEG. If so, this would make our approach accessible to more laboratories as EEG is less expensive. However, there are currently no studies directly comparing the RIFT response in EEG versus MEG. Therefore, it would be of great interest to investigate if the current findings can be replicated using EEG.
 
 Within a trial, there was first a fixation cross presented at the centre of a middle-grey screen for 1.2–1.6 s. This was followed by a black square with a radius of 1 degree of visual angle. This square was placed at the vertical center, 2 degrees of visual angle away from the left edge of the screen. Participants had to gaze at this black ‘starting square’ for at least 0.2 s to trigger the onset of the sentence presentation. Afterward, the sentence would start from the location of the square (Figure 1A). The sentence was presented with an ‘ending square’ 5 degrees of visual angle below the screen centre. The ‘ending square’ was the same size as the ‘starting square’ but in grey colour (RGB [64 64 64]). A gaze at this ‘ending square’ for at least 0.1 s would end the presentation of the sentence. Then the trial ended with a blank middle-grey screen that lasted for 0.5 s. Randomly, 12% of the trials were followed by a statement about the content of the sentence that was just presented, and participants needed to answer ‘True or False’ by pressing a button. For example, the statement for sentence 2 was ‘Lily has a prediction about the fashion trend in this fall,’ and the correct answer was ‘True.’ The statement for sentence 3 was ‘Little Jimmy didn’t have a box,’ and the correct answer was ‘False.’ All participants read the sentences carefully as shown by the high accuracy of answering (96.3%±4.7%, mean ± SD).
 
-## RIFT
+### RIFT
 
-## Projection of the sentence stimuli
+#### Projection of the sentence stimuli
 
 We projected the sentences from the stimulus computer screen in the experimenter room to the projection screen inside of the MEG room using a PROPixx DLP LED projector (VPixx Technologies Inc, Canada). The refresh rate of the PROPixx projector was up to 1440 Hz, while the refresh rate of the stimulus screen was only 120 Hz (1920×1200 pixels resolution). We displayed the sentence repeatedly in four quadrants of the stimulus computer screen. In each quadrant, the words were coded in three colour channels as RGB. The projector then interpreted these 12 colour channels (three channels×four quadrants) as 12 individual greyscale frames, which were projected onto the projection screen in rapid succession. Therefore, the projection screen refreshed at 12 times the rate of the stimulus computer screen.
 
-## Flickering of the target word
+#### Flickering of the target word
 
-We added a square patch underneath the target word to frequency tag the target word. The side length of the square patch was the width of the target word plus the spaces on both sides (2–3° visual angle). We flickered the patch by changing its luminance from black to white at a 60 Hz sinusoid (Figure 1A). To reduce the visibility of the patch edges across saccades, we applied a Gaussian smoothed transparent mask on top of the square patch. The mask was created by a two-dimensional Gaussian function (Equation 1):mask=exp(−x22σ2−y22σ2)
+We added a square patch underneath the target word to frequency tag the target word. The side length of the square patch was the width of the target word plus the spaces on both sides (2–3° visual angle). We flickered the patch by changing its luminance from black to white at a 60 Hz sinusoid (Figure 1A). To reduce the visibility of the patch edges across saccades, we applied a Gaussian smoothed transparent mask on top of the square patch. The mask was created by a two-dimensional Gaussian function (Equation 1):
 
-where, x and y are the mesh grid coordinates for the flickering patch, and σ is the x and y spread of the mask with σ=0.02 degrees.
+$$
+mask=exp(−\frac{x^{2}}{2\sigma^{2}}−\frac{y^{2}}{2\sigma^{2}})
+$$
+
+where, $x$ and $y$ are the mesh grid coordinates for the flickering patch, and σ is the $x$ and $y$ spread of the mask with σ=0.02 degrees.
 
 On average, the patch was perceived as middle-grey, the same colour as the background screen, which made it invisible to participants. The target word was still black, the same colour as the other words on the screen. To record the tagging signal, we attached a custom-made photodiode (Aalto NeuroImaging Centre, Finland) to the disk at the bottom right corner of the screen. The luminance of the disk varied the same as that of the flickering patch underneath the target word. The photodiode was plugged into the MEG system as an external channel.
 
-## Data acquisition
+### Data acquisition
 
-## MEG
+#### MEG
 
 Brain data were acquired with a 306-sensor TRIUX Elekta Neuromag system, which consisted of 204 orthogonal planar gradiometers and 102 magnetometers (Elekta, Finland). After participants signed the consent form, we attached four head-position indicator coils (HPI coils) to their heads: two on the left and right mastoid bone, and two on the forehead with at least 3 cm distance in between. Afterward, we used a Polhemus Fastrack electromagnetic digitizer system (Polhemus Inc, USA) to digitize the locations for three bony fiducial points: the nasion, left, and right preauricular points. Then we digitised the four HPI coils. Furthermore, at least 200 extra points were acquired, which were distributed evenly and covered the whole scalp. These points were used later in the source analysis when spatially co-registering the MEG head model with individual structural MRI images. The sampling rate of the MEG system was 1000 Hz. Data were band-pass filtered prior to sampling from 0.1 to 330 Hz to reduce aliasing effects.
 
-## Eye movements
+#### Eye movements
 
 We used an EyeLink 1000 Plus eye-tracker (long-range mount, SR Research Ltd, Canada) to track eye movements throughout the whole MEG session. The eye tracker was placed on a wooden table in front of the projection screen. The centre of the eye tracker was at the middle line of the projection screen, and the top of the eye tracker reached the bottom edge of the screen. The distance between the eye-tracker camera and the centre of the participant’s eyes was 90 cm. We recorded the horizontal and vertical positions as well as the pupil size from the left eye, at a sampling rate of 1000 Hz. Each session began with a nine-point calibration and validation test. The test was accepted if the eye-tracking error was below 1 visual degree both horizontally and vertically. During the session, we performed a one-point drift-checking test every three trials and after the break between blocks. If the drift checking failed or the sentence presentation was unable to be triggered through gazing, a nine-point calibration and validation test was conducted again.
 
-## MRI
+#### MRI
 
 After MEG data acquisition, participants were asked to come to the laboratory another day to have an MRI image acquired. We acquired the T1-weighted structural MRI image using a 3-Tesla Siemens PRISMA scanner (TR = 2000 ms, TE = 2.01 ms, TI = 880 ms, flip angle = 8 degrees, FOV = 256×256×208 mm, 1 mm isotropic voxel). For 11 participants who dropped out of the MRI acquisition, the MNI template brain (Montreal, Quebec, Canada) was used instead in the source analysis later.
 
-## Eye movement data analysis
+### Eye movement data analysis
 
 We extracted the fixation onset events from the EyeLink output file. The EyeLink parsed fixation events based on the online detection of saccade onset using the following parameters: the motion threshold as 0.1 degrees, the velocity threshold as 30 degrees/s, and the acceleration threshold as 8000 degrees/sec2. These conservative settings were suggested by the EyeLink user manual for reading studies, as they can prevent false saccade reports and reduce the number of micro-saccades, and lengthen fixation durations.
 
 Only the fixation that first landed on a given word was selected. The first fixation durations were averaged within the incongruent and congruent conditions for pre-target and target words. Pairwise, two-sided t-test were conducted on the first fixation durations of pre-target and target words separately (conducted in R R Development Core Team, 2013). In addition to the early eye movement measure of the first fixation duration, we also conducted t-tests for two later eye movement measures. The likelihood of refixation was measured as the proportion of trials on which there was at least one saccade that regressed back to that word. The total gaze duration was the sum of all fixations on a given word, including those fixations during regression or re-reading.
 
-## MEG data analyses
+### MEG data analyses
 
 The data analyses were performed in MATLAB R2020a (Mathworks Inc, USA) by using the FieldTrip (Oostenveld et al., 2011) toolbox (version 20200220), following the FLUX MEG analysis pipeline (Ferrante et al., 2022), and custom-made scripts (see Code availability for the shared link).
 
-## Pre-processing
+#### Pre-processing
 
 We first band-pass filtered the MEG data from 0.5 to 100 Hz using phase-preserving two-pass Butterworth filters. Subsequently, detrending was applied individually to each channel of the continuous raw data to factor out the linear trend. Malfunctioning sensors were removed based on inspecting the data quality during online recording (0–2 sensors per participant). Afterward, the data were decomposed into independent components using an independent component analysis (ICA) (Ikeda and Toyama, 2000). The number of components was the same as the number of good MEG sensors in the dataset (306 or less). We only removed bad components that related to eye blinks, eye movements, and heartbeat by visually inspecting the components (3.4±0.7 components per participant, M ± SD, range from 2 to 5 components).
 
 MEG segments were extracted from –0.5–0.5 s intervals aligned with the first fixation onset of the pre-target and target words, respectively (see Eye movement data analysis, above, for information on how fixation onsets were defined). Segments with fixation durations shorter than 0.08 s or longer than 1 s were discarded. We also extracted 1 s long baseline segments, which were aligned with the cross-fixation onset before the sentence presentation. We manually inspected all segments to further identify and remove segments that were contaminated by muscle or movement artefacts.
 
-## Coherence calculation
+#### Coherence calculation
 
-We calculated the coherence between the MEG sensors and the photodiode (i.e. the tagging signal) to quantify the tagging responses. The amplitude of the photodiode channel was normalised across each segment. To estimate the coherence spectrum in the frequency domain over time, we filtered the segments using hamming tapered Butterworth bandpass filters (fourth order, phase preserving, two-pass). The frequency of interest was from 40 to 80 Hz in a step of 2 Hz. For each center frequency point, the spectral smoothing was ±5 Hz. For example, the filter frequency range for 60 Hz was from 55 to 65 Hz. We performed a Hilbert transform to obtain the analytic signals for each centre frequency point, which then were used to estimate the coherence (Equation 2):coh(t)=|1n∑j=1nmxj(t)myj(t)eiϕxyj(t)|2∑j=1nmxj(t)2myj(t)2
+We calculated the coherence between the MEG sensors and the photodiode (i.e. the tagging signal) to quantify the tagging responses. The amplitude of the photodiode channel was normalised across each segment. To estimate the coherence spectrum in the frequency domain over time, we filtered the segments using hamming tapered Butterworth bandpass filters (fourth order, phase preserving, two-pass). The frequency of interest was from 40 to 80 Hz in a step of 2 Hz. For each center frequency point, the spectral smoothing was ±5 Hz. For example, the filter frequency range for 60 Hz was from 55 to 65 Hz. We performed a Hilbert transform to obtain the analytic signals for each centre frequency point, which then were used to estimate the coherence (Equation 2):
 
-where n is the number of trials. For the time point t in the trial j, mxt and myt are the time-varying magnitude of the analytic signals from a MEG sensor (x) and the photodiode (y) respectively, ϕxy(t) is the phase difference as a function of time (for a detailed description, please see Cohen, 2014).
+$$
+coh(t)=\frac{|\frac{1}{n}\sumj=1nm_{x_{j}}(t)m_{y_{j}}(t)e^{iϕ_{xy_{j}}(t)}|^{2}}{\sumj=1nm_{x_{j}}(t)^{2}m_{y_{j}}(t)^{2}}
+$$
 
-## Selection for the RIFT response sensors
+where n is the number of trials. For the time point t in the trial j, $m_{x}t$ and $m_{y}t$ are the time-varying magnitude of the analytic signals from a MEG sensor (x) and the photodiode (y) respectively, $ϕ_{xy}(t)$ is the phase difference as a function of time (for a detailed description, please see Cohen, 2014).
 
-MEG sensors that showed significantly stronger coherence at 60 Hz during the pre-target segments than the baseline segments were selected as the RIFT response sensors. We used a non-parametric Monte-Carlo method (Maris et al., 2007) to estimate the statistical significance. The pre-target segments were constructed by pooling the target contextual congruity conditions together. Several previous RIFT studies from our lab observed robust tagging responses from the visual cortex for flicker above 50 Hz (Drijvers et al., 2021; Duecker et al., 2021; Zhigalov et al., 2019; Zhigalov and Jensen, 2020). Thus, this sensor selection procedure was confined to the MEG sensors in the visual cortex (52 planar sensors). Here, the pre-target segments and baseline segments were treated as two conditions. For each combination of the MEG sensor and photodiode channel, coherence at 60 Hz was estimated over trials for the pre-target and baseline conditions separately. Then, we calculated the z-statistic value for the coherence difference between pre-target and baseline using the following equation (for details please see Maris et al., 2007; Equation 3):Z=(tanh−1(|coh1|)−bias1)−(tanh−1(|coh2|)−bias2)bias1+bias2bias1=12n1−2,bias2=12n2−2
+#### Selection for the RIFT response sensors
 
-where coh1 and coh2 denote the coherence value for the pre-target and baseline segments, bias1, and bias2 is the term used to correct for the bias from trial numbers of the pre-target (n1) and baseline condition (n2). All trials from the pre-target and baseline conditions were used.
+MEG sensors that showed significantly stronger coherence at 60 Hz during the pre-target segments than the baseline segments were selected as the RIFT response sensors. We used a non-parametric Monte-Carlo method (Maris et al., 2007) to estimate the statistical significance. The pre-target segments were constructed by pooling the target contextual congruity conditions together. Several previous RIFT studies from our lab observed robust tagging responses from the visual cortex for flicker above 50 Hz (Drijvers et al., 2021; Duecker et al., 2021; Zhigalov et al., 2019; Zhigalov and Jensen, 2020). Thus, this sensor selection procedure was confined to the MEG sensors in the visual cortex (52 planar sensors). Here, the pre-target segments and baseline segments were treated as two conditions. For each combination of the MEG sensor and photodiode channel, coherence at 60 Hz was estimated over trials for the pre-target and baseline conditions separately. Then, we calculated the z-statistic value for the coherence difference between pre-target and baseline using the following equation (for details please see Maris et al., 2007; Equation 3):
+
+$$
+Z=\frac{(tanh^{−1}(|coh_{1}|)−bias_{1})−(tanh^{−1}(|coh_{2}|)−bias_{2})}{\sqrt{bias_{1}+bias_{2}}}
+$$
+
+
+
+$$
+bias_{1}=\frac{1}{2n_{1}−2},bias_{2}=\frac{1}{2n_{2}−2}
+$$
+
+where $coh_{1}$ and $coh_{2}$ denote the coherence value for the pre-target and baseline segments, $bias_{1}$, and $bias_{2}$ is the term used to correct for the bias from trial numbers of the pre-target ($n_{1}$) and baseline condition ($n_{2}$). All trials from the pre-target and baseline conditions were used.
 
 After obtaining the z statistic value for the empirical coherence difference, we ran a permutation procedure to estimate the statistical significance of this comparison. We randomly shuffled the trial labels between pre-target and baseline conditions 5000 times. During each permutation, coherence was computed for both conditions (with shuffled labels), then entered Equation 3 to obtain a z score for the coherence difference. After all randomizations were performed, the resulting z-values established the null distribution. Since a tagging response sensor was supposed to have stronger coherence during the pre-target segments compared with the baseline segments, the statistical test was right-sided. If the z-value of the empirical coherence difference was larger than 99% of z-values in the null distribution, this sensor was selected as the RIFT response sensor (right-sided, p=0.01). For each participant, the coherence values were averaged over all sensors with significant tagging response to obtain an averaged coherence for further analyses. Please note that the tagging response sensors may vary in number across participants (7.9±4.5 sensors per participant, M ± SD). Additionally, they may have a different but overlapping spatial layout, primarily over the visual cortex. For the topography of all tagging response sensors, please refer to Figure 2A.
 
-## Coherence response curve
+#### Coherence response curve
 
 We first extracted MEG segments for the words N-4, N-3, N-2, N+1, N+2, and N+3 following the same procedure described in the pre-processing when extracted MEG segments for the pre-target (N-1) and target words (N). All segments were 1 s long, aligned with the first fixation onset to the word. Then, we calculated the coherence at 60 Hz during these segments for participants who have RIFT response sensors (n=29). Next for each participant, the 60 Hz coherence was first averaged over the RIFT response sensors, then averaged within a time window of [0 0.2] s (the averaged fixation duration for words). We got an averaged of 60 Hz coherence for the word at each position. We also got the 60 Hz coherence for the baseline interval averaged over [0 0.2] s, aligned with the cross-fixation onset. Then a pairwise t-test was performed between the baseline coherence and the coherence at each word position.
 
-## Coherence comparison between conditions
+#### Coherence comparison between conditions
 
 The coherence comparison analyses were only conducted for the participants who had sensors with a reliable tagging response (n=29). To avoid any bias from trial numbers, an equal number of trials under the different contextual congruity conditions was entered into the coherence analysis per participant. We randomly discarded the redundant trials from the condition that had more trials for both the pre-target and target segments.
 
 To compare the pre-target coherence amplitude between conditions, the coherence values at 60 Hz were averaged across the minimum fixation duration of all pre-target words. The time window for averaging was defined for each participant so that the coherence signal from the target fixation was not involved. Similarly, we averaged the 60 Hz coherence for the target segments over the minimum target fixation duration. Then, a two-sided pairwise Student’s t-test was performed to estimate the statistical significance of the coherence difference as shown in Figure 3B and Figure 4B.
 
-To assess the coherence onset latency difference between conditions, we used a leave-one-out Jackknife-based method (Miller et al., 1998). We extracted the 60 Hz coherence during the 1 s long pre-target segments for each participant. Then, during each iteration of participants, we randomly chose and left out one participant. For the remaining participants, coherences were calculated for the incongruent and congruent target conditions. Then, the coherence was averaged over the remaining participants to estimate the onset latency for both conditions. Here, the onset latency was defined as the time point when the averaged coherence value reached its half-maximum (cohmin+(cohmax−cohmin)/2). We computed the onset latency difference by subtracting the onset latency for the incongruent target condition from the congruent condition. After all iterations, onset latency differences from all these subsamples were pooled together to estimate a standard error (SD) using the following equation (Equation 4):SD=n-1n∙∑i=1nD-i-J¯2
+To assess the coherence onset latency difference between conditions, we used a leave-one-out Jackknife-based method (Miller et al., 1998). We extracted the 60 Hz coherence during the 1 s long pre-target segments for each participant. Then, during each iteration of participants, we randomly chose and left out one participant. For the remaining participants, coherences were calculated for the incongruent and congruent target conditions. Then, the coherence was averaged over the remaining participants to estimate the onset latency for both conditions. Here, the onset latency was defined as the time point when the averaged coherence value reached its half-maximum ($coh_{min}+(coh_{max}−coh_{min})/2$). We computed the onset latency difference by subtracting the onset latency for the incongruent target condition from the congruent condition. After all iterations, onset latency differences from all these subsamples were pooled together to estimate a standard error (SD) using the following equation (Equation 4):
 
-where J¯ is the average onset latency difference over all the subsamples, D-i is the coherence difference obtained from the subsample when participant i was left out, n is the number of participants. We also computed the onset latency difference from the overall sample set (without leaving any participant out) and divided it by the SD to obtain its t-value. A standard t table (pairwise, two-tailed) provided the statistical significance for the coherence onset latency difference between the incongruent and congruent target conditions. This procedure was conducted for both the pre-target and target segments as shown in Figure 3C and Figure 4C.
+$$
+S_{D}=\sqrt{\frac{n-1}{n}∙\sum_{i=1}^{n}D_{-i}-J¯^{2}}
+$$
 
-## Source analysis for RIFT
+where $J¯$ is the average onset latency difference over all the subsamples, $D_{-i}$ is the coherence difference obtained from the subsample when participant $i$ was left out, $n$ is the number of participants. We also computed the onset latency difference from the overall sample set (without leaving any participant out) and divided it by the SD to obtain its t-value. A standard t table (pairwise, two-tailed) provided the statistical significance for the coherence onset latency difference between the incongruent and congruent target conditions. This procedure was conducted for both the pre-target and target segments as shown in Figure 3C and Figure 4C.
+
+#### Source analysis for RIFT
 
 We used a beamforming-based approach, DICS (Gross et al., 2001), to estimate the neural sources that generated the responses to RIFT. The DICS technique was applied to the pre-target segments (0–0.5 s aligned with fixation onset to the pre-target word) regardless of the target contextual congruity conditions, with a focus of 60 Hz in the frequency domain. In this source analysis, only participants with robust tagging responses were included (n=29).
 
@@ -222,4 +333,4 @@ Next, we constructed the individual source model by inverse-warping a 5 mm space
 
 Next, the Cross-Spectral Density (CSD) matrix was calculated at 60 Hz for both the pre-target and baseline segments. The CSD matrix was constructed for all possible combinations between the MEG sensors and the photodiode channel. No regularisation was performed to the CSD matrices (lambda = 0).
 
-Finally, a common spatial filter was computed based on the individual single-shell head model, source model, and CSD matrices. This spatial filter was applied to both the pre-target and baseline CSD matrices for calculating the 60 Hz coherence. This was done by normalizing the magnitude of the summed CSD between the MEG sensor and the photodiode channel by their respective power. After the grand average over participants, the relative change for pre-target coherence was estimated as the following formula, (cohpretarget−cohbaseline)/cohbaseline .
+Finally, a common spatial filter was computed based on the individual single-shell head model, source model, and CSD matrices. This spatial filter was applied to both the pre-target and baseline CSD matrices for calculating the 60 Hz coherence. This was done by normalizing the magnitude of the summed CSD between the MEG sensor and the photodiode channel by their respective power. After the grand average over participants, the relative change for pre-target coherence was estimated as the following formula, $(coh_{pretarget}−coh_{baseline})/coh_{baseline}$ .

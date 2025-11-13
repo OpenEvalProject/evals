@@ -13,15 +13,15 @@
 ### Affiliations
 
 1. The Danish Clinical Quality Program – National Clinical Registries (RKKP) Aarhus N Denmark
-2. https://ror.org/05n00ke18 University Research Clinic for Cancer Screening, Department of Public Health Programmes, Randers Regional Hospital Randers Denmark
-3. https://ror.org/01aj84f44 Department of Clinical Medicine, Aarhus University Aarhus Denmark
-4. https://ror.org/05bpbnx46 Department of Breast Examinations, Copenhagen University Hospital Copenhagen Denmark
+2. University Research Clinic for Cancer Screening, Department of Public Health Programmes, Randers Regional Hospital Randers Denmark ([ROR:05n00ke18](https://ror.org/05n00ke18))
+3. Department of Clinical Medicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+4. Department of Breast Examinations, Copenhagen University Hospital Copenhagen Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))
 
 † Corresponding author
 
 ## Abstract
 
-In most of the world, the mammography screening programmes were paused at the start of the pandemic, whilst mammography screening continued in Denmark. We examined the mammography screening participation during the COVID-19 pandemic in Denmark. The study population comprised all women aged 50–69 years old invited to participate in mammography screening from 2016 to 2021 in Denmark based on data from the Danish Quality Database for Mammography Screening in combination with population-based registries. Using a generalised linear model, we estimated prevalence ratios (PRs) and 95% confidence intervals (CIs) of mammography screening participation within 90, 180, and 365 d since invitation during the pandemic in comparison with the previous years adjusting for age, year and month of invitation. The study comprised 1,828,791 invitations among 847,766 women. Before the pandemic, 80.2% of invitations resulted in participation in mammography screening within 90 d, 82.7% within 180 d, and 83.1% within 365 d. At the start of the pandemic, the participation in screening within 90 d was reduced to 69.9% for those invited in pre-lockdown and to 76.5% for those invited in first lockdown. Extending the length of follow-up time to 365 d only a minor overall reduction was observed (PR = 0.94; 95% CI: 0.93–0.95 in pre-lockdown and PR = 0.97; 95% CI: 0.96–0.97 in first lockdown). A lower participation was, however, seen among immigrants and among women with a low income. The short-term participation in mammography screening was reduced at the start of the pandemic, whilst only a minor reduction in the overall participation was observed with longer follow-up time, indicating that women postponed screening. Some groups of women, nonetheless, had a lower participation, indicating that the social inequity in screening participation was exacerbated during the pandemic. The study was funded by the Danish Cancer Society Scientific Committee (grant number R321-A17417) and the Danish regions.
+Background:In most of the world, the mammography screening programmes were paused at the start of the pandemic, whilst mammography screening continued in Denmark. We examined the mammography screening participation during the COVID-19 pandemic in Denmark.Methods:The study population comprised all women aged 50–69 years old invited to participate in mammography screening from 2016 to 2021 in Denmark based on data from the Danish Quality Database for Mammography Screening in combination with population-based registries. Using a generalised linear model, we estimated prevalence ratios (PRs) and 95% confidence intervals (CIs) of mammography screening participation within 90, 180, and 365 d since invitation during the pandemic in comparison with the previous years adjusting for age, year and month of invitation.Results:The study comprised 1,828,791 invitations among 847,766 women. Before the pandemic, 80.2% of invitations resulted in participation in mammography screening within 90 d, 82.7% within 180 d, and 83.1% within 365 d. At the start of the pandemic, the participation in screening within 90 d was reduced to 69.9% for those invited in pre-lockdown and to 76.5% for those invited in first lockdown. Extending the length of follow-up time to 365 d only a minor overall reduction was observed (PR = 0.94; 95% CI: 0.93–0.95 in pre-lockdown and PR = 0.97; 95% CI: 0.96–0.97 in first lockdown). A lower participation was, however, seen among immigrants and among women with a low income.Conclusions:The short-term participation in mammography screening was reduced at the start of the pandemic, whilst only a minor reduction in the overall participation was observed with longer follow-up time, indicating that women postponed screening. Some groups of women, nonetheless, had a lower participation, indicating that the social inequity in screening participation was exacerbated during the pandemic.Funding:The study was funded by the Danish Cancer Society Scientific Committee (grant number R321-A17417) and the Danish regions.
 
 ## Introduction
 
@@ -37,21 +37,21 @@ We examined the participation in mammography screening in Denmark during the COV
 
 ## Methods
 
-## Setting
+### Setting
 
 The study is set in Denmark, which has a population of approximately 5.8 million inhabitants (Statistics Denmark, 2021). In Denmark, there is free access to healthcare for all inhabitants funded via taxes. Danish population-based administrative and health registries can be linked using the unique personal identifier, assigned to all residents at birth or immigration (Schmidt et al., 2014; Schmidt et al., 2019).
 
-## The mammography screening programme
+### The mammography screening programme
 
 In Denmark, all women aged 50-69 years old are invited to participate in mammography screening every 2 y (except women, who have opted out of the programme). The mammography screening programme is administered by the five Danish regions. Digital invitation letters with a fixed appointment and link to an information leaflet are sent to the women. In the capital region, previous non-participants who have not responded to neither invitation nor reminder letter in the previous screening round do not receive a fixed appointment but only an invitation letter when it is time for the next mammography screening. The women can reschedule their appointments by e-mail, through a website, or by telephone. At the mammography screening session, two standardised X-ray images of each breast are performed and these images are evaluated independently by two radiologists (Mikkelsen et al., 2016).
 
-## The COVID-19 pandemic in Denmark
+### The COVID-19 pandemic in Denmark
 
 Three main waves of the COVID-19 pandemic have occurred in Denmark, that is, in the spring of 2020, in the winter of 2020/2021, and again in the winter of 2021/2022 (Statens Serum Institut, 2021a).
 
 The pandemic response in Denmark comprised ‘lockdowns,’ COVID-19 testing, and COVID-19 vaccination. The first lockdown was imposed in Denmark on 11 March 2020, closing down schools and workplaces and restricting travel. This was done in an effort to minimise the spread of infection and reduce the potential burden on the healthcare system. Within the healthcare system, elective procedures were cancelled or postponed and resources were reallocated to take care of patients in need of hospitalisation because of COVID-19. The subsequent lockdowns occurred together with the new surges of infection. Widespread COVID-19 testing was implemented in Denmark from May 2020 providing PCR and antigen COVID-19 tests free of charge to the whole population (Pottegård et al., 2020). Vaccination against COVID-19 was implemented in Denmark in December 2020, and by March 2022, approximately 81% of the population had received two doses and more than 61% had received three doses of the vaccine (Statens Serum Institut, 2021b). In Denmark, individuals living in nursing homes were vaccinated first, followed by individuals ≥85 y, then healthcare personnel, thereafter individuals with underlying health conditions and their relatives, and finally, individuals were offered the COVID-19 vaccination by decreasing age (75–79 y, 65–74 y, 60–64 y, etc.) (Sundhedsstyrelsen, 2021).
 
-## Study population
+### Study population
 
 We included all invitations to women aged 50–69 y invited to participate in mammography screening from 1 January 2016 to 30 September 2021 as registered in the Danish Quality Database for Mammography Screening (Mikkelsen et al., 2016), which retrieves information on invitations to the national mammography screening programme directly from the regional administrative systems.
 
@@ -59,21 +59,21 @@ We excluded invitations to women with an unknown postal address (N = 753 in 406 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83541/elife-83541-fig1-v2.jpg)
 
-## Exposure of interest
+### Exposure of interest
 
 The COVID-19 pandemic in Denmark and the different phases of the pandemic are the exposure of interest. The different phases of the pandemic were defined in accordance with the governmental responses to the COVID-19 pandemic in Denmark as follows:
 
 Pre-lockdown and first lockdown were considered the start of the pandemic in this study.
 
-## Outcome of interest
+### Outcome of interest
 
 The main outcome of interest was participation in mammography screening defined as women who underwent a mammography screening within 90, 180, and 365 d, respectively, among women invited to participate in mammography screening in each of the defined periods.
 
-## Explanatory variables
+### Explanatory variables
 
 We examined the following variables independently: age, ethnicity, cohabitation status, educational level, disposable income, and healthcare usage. Age was defined as the date of invitation, as registered in the Danish Quality Database for Mammography Screening (Mikkelsen et al., 2016). From Statistics Denmark, 2021, we obtained information on ethnicity, cohabitation status, educational level, and disposable income. Ethnicity was categorised as Danish descent, Western immigrant, and non-Western immigrant and descendants of immigrants in accordance with Statistics Denmark, 2021. Cohabitation status was categorised as living alone, co-habiting/co-living, and married (i.e. married or registered partnership) in accordance with Statistics Denmark, 2021. Education level was defined in accordance with the International Standard Classification of Education (ISCED) of the United Nations Education, Scientific and Cultural Organization into short (ISCED levels 1-2), medium (ISCED levels 3–4), and long (ISCED levels 5–8) (Statistics Denmark, 2021). Income was defined as official disposable income depreciated to 2015 level and categorised into five quintiles. To indicate the level of healthcare use by each patient, we counted the total number of contacts to general practitioners, private practising medical specialists, physiotherapists, and chiropractors in the year for invitation as registered in the Danish National Health Service Register (Andersen et al., 2011), which contains information on visits to primary healthcare (e.g. general practitioners and medical specialists) in Denmark since 1990. We categorised healthcare usage as rare (0–3 visits per year), low (4–6 visits per year), average (7–11 visits per year), high (12–18 visits per year), and frequent (≥19 visits per year).
 
-## Statistical analyses
+### Statistical analyses
 
 Firstly, we examined the baseline characteristics of women invited to participate in mammography screening during the study period. Subsequently, we examined the proportion of women participating in mammography screening within 90, 180, and 365 d since invitation per month and during the different phases of the pandemic overall and stratifying by the explanatory variables.
 
@@ -81,17 +81,329 @@ Thereafter, we estimated prevalence ratios (PRs) and 95% confidence intervals (C
 
 All analyses were conducted using STATA version 17.0.
 
-## Ethical considerations
+### Ethical considerations
 
 The study is registered at the Central Denmark Region’s register of research projects (journal number 1-16-02-381-20). According to Danish law, register-based studies should not be reported to the National Committee on Health Research Ethics. Furthermore, patient consent is not required by Danish law for register-based studies.
 
 ## Results
 
-## Descriptive characteristics of the study population
+### Descriptive characteristics of the study population
 
 Altogether, 847,766 women receiving 1,828,791 invitations were included in the study. The majority were of Danish descent (91.7%), the median age was 58 years old (interdecentile interval [IQI] = 54–64), most were married (60.2%), and the majority had a short educational level (58.7%). The distribution of the descriptive characteristics was largely similar across the different phases of the pandemic (Table 1).
 
-## Participation during the COVID-19 pandemic
+**Table 1.**
+ Baseline characteristics of women invited to participate in mammography screening in Denmark from 2016 to 2021.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th>Pre-pandemic (1 January 2016 to 31 January 2020)</th>
+      <th>Pre-lockdown (1 February 2020 to 10 March 2020)</th>
+      <th>First lockdown (11 March 2020 to 15 April 2020)</th>
+      <th>First reopening (16 April 2020 to 15 December 2020)</th>
+      <th>Second lockdown (16 December 2020 to 27 February 2021)</th>
+      <th>Second reopening (28 February 2021 to 30 September 2021)</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <th>N (%)</th>
+      <th>N (%)</th>
+      <th>N (%)</th>
+      <th>N (%)</th>
+      <th>N (%)</th>
+      <th>N (%)</th>
+      <th>N (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>1,346,959 (73.7)</td>
+      <td>35,175 (1.9)</td>
+      <td>14,134 (0.8)</td>
+      <td>201,613 (11.0)</td>
+      <td>61,991 (3.4)</td>
+      <td>168,919 (9.2)</td>
+      <td>1,828,791 (100.0)</td>
+    </tr>
+    <tr>
+      <td colspan="8">Age at invitation (y)</td>
+    </tr>
+    <tr>
+      <td>50–54</td>
+      <td>421,813 (31.3)</td>
+      <td>10,660 (30.3)</td>
+      <td>3998 (28.3)</td>
+      <td>66,325 (32.9)</td>
+      <td>19,792 (31.9)</td>
+      <td>48,669 (28.8)</td>
+      <td>57,1257 (31.2)</td>
+    </tr>
+    <tr>
+      <td>55–59</td>
+      <td>326,444 (24.2)</td>
+      <td>9439 (26.8)</td>
+      <td>3516 (24.9)</td>
+      <td>49,481 (24.5)</td>
+      <td>14,914 (24.1)</td>
+      <td>44,000 (26.0)</td>
+      <td>447,794 (24.5)</td>
+    </tr>
+    <tr>
+      <td>60–64</td>
+      <td>305,389 (22.7)</td>
+      <td>7824 (22.2)</td>
+      <td>3362 (23.8)</td>
+      <td>44,793 (22.2)</td>
+      <td>13,897 (22.4)</td>
+      <td>38,487 (22.8)</td>
+      <td>413,752 (22.6)</td>
+    </tr>
+    <tr>
+      <td>65–69</td>
+      <td>293,313 (21.8)</td>
+      <td>7252 (20.6)</td>
+      <td>3258 (23.1)</td>
+      <td>41,014 (20.3)</td>
+      <td>13,388 (21.6)</td>
+      <td>37,763 (22.4)</td>
+      <td>395,988 (21.7)</td>
+    </tr>
+    <tr>
+      <td>Median age (IQI)</td>
+      <td>58 (54; 64)</td>
+      <td>58 (54; 64)</td>
+      <td>59 (54; 64)</td>
+      <td>58 (54; 64)</td>
+      <td>58 (54; 64)</td>
+      <td>58 (54; 64)</td>
+      <td>58 (54; 64)</td>
+    </tr>
+    <tr>
+      <td colspan="8">Ethnicity</td>
+    </tr>
+    <tr>
+      <td>Danish descent</td>
+      <td>1,237,422 (91.9)</td>
+      <td>32,030 (91.1)</td>
+      <td>12,811 (90.6)</td>
+      <td>182,860 (90.7)</td>
+      <td>49,328 (91.4)</td>
+      <td>136,255 (92.2)</td>
+      <td>1,650,706 (91.7)</td>
+    </tr>
+    <tr>
+      <td>Descendant of immigrant</td>
+      <td>2213 (0.2)</td>
+      <td>52 (0.1)</td>
+      <td>26 (0.2)</td>
+      <td>358 (0.2)</td>
+      <td>70 (0.1)</td>
+      <td>237 (0.2)</td>
+      <td>2956 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Western immigrant</td>
+      <td>35,894 (2.7)</td>
+      <td>1042 (3.0)</td>
+      <td>456 (3.2)</td>
+      <td>5823 (2.9)</td>
+      <td>1436 (2.7)</td>
+      <td>3659 (2.5)</td>
+      <td>48,310 (2.7)</td>
+    </tr>
+    <tr>
+      <td>Non-Western immigrant</td>
+      <td>71,293 (5.3)</td>
+      <td>2047 (5.8)</td>
+      <td>841 (6.0)</td>
+      <td>12,557 (6.2)</td>
+      <td>3124 (5.8)</td>
+      <td>7572 (5.1)</td>
+      <td>97,434 (5.4)</td>
+    </tr>
+    <tr>
+      <td colspan="8">Cohabitation status</td>
+    </tr>
+    <tr>
+      <td>Living alone</td>
+      <td>411,431 (30.6)</td>
+      <td>11,161 (31.7)</td>
+      <td>4504 (31.9)</td>
+      <td>61,551 (30.5)</td>
+      <td>2362 (30.4)</td>
+      <td>N/A</td>
+      <td>491,009 (30.6)</td>
+    </tr>
+    <tr>
+      <td>Cohabiting</td>
+      <td>122,870 (9.1)</td>
+      <td>3373 (9.6)</td>
+      <td>1301 (9.2)</td>
+      <td>19,823 (9.8)</td>
+      <td>720 (9.3)</td>
+      <td>N/A</td>
+      <td>148,087 (9.2)</td>
+    </tr>
+    <tr>
+      <td>Married</td>
+      <td>812,442 (60.3)</td>
+      <td>20,632 (58.7)</td>
+      <td>8327 (58.9)</td>
+      <td>120,209 (59.6)</td>
+      <td>4678 (60.3)</td>
+      <td>N/A</td>
+      <td>966,288 (60.2)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Educational level (ISCED)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 1–2</td>
+      <td>766,480 (57.8)</td>
+      <td>21,103 (60.8)</td>
+      <td>8453 (60.6)</td>
+      <td>121,233 (60.9)</td>
+      <td>37,204 (60.9)</td>
+      <td>103,826 (62.4)</td>
+      <td>1,058,299 (58.7)</td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 3–4</td>
+      <td>397,781 (30.0)</td>
+      <td>9642 (27.8)</td>
+      <td>3904 (28.0)</td>
+      <td>54,964 (27.6)</td>
+      <td>16,609 (27.2)</td>
+      <td>44,245 (26.6)</td>
+      <td>527,145 (29.2)</td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 5–8</td>
+      <td>162,943 (12.3)</td>
+      <td>3991 (11.5)</td>
+      <td>1588 (11.4)</td>
+      <td>22,755 (11.4)</td>
+      <td>7316 (12.0)</td>
+      <td>18,406 (11.1)</td>
+      <td>216,999 (12.0)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Disposable income</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lowest quintile</td>
+      <td>271,215 (20.1)</td>
+      <td>6306 (17.9)</td>
+      <td>2642 (18.7)</td>
+      <td>34,833 (17.3)</td>
+      <td>10,176 (16.4)</td>
+      <td>27,802 (16.5)</td>
+      <td>352,974 (19.3)</td>
+    </tr>
+    <tr>
+      <td>Second quintile</td>
+      <td>270,148 (20.1)</td>
+      <td>6849 (19.5)</td>
+      <td>2790 (19.7)</td>
+      <td>37,553 (18.7)</td>
+      <td>11,000 (17.8)</td>
+      <td>30,887 (18.3)</td>
+      <td>359,227 (19.7)</td>
+    </tr>
+    <tr>
+      <td>Third quintile</td>
+      <td>273,315 (20.3)</td>
+      <td>7088 (20.2)</td>
+      <td>2757 (19.5)</td>
+      <td>40,063 (19.9)</td>
+      <td>11,220 (18.1)</td>
+      <td>30,898 (18.3)</td>
+      <td>365,341 (20.0)</td>
+    </tr>
+    <tr>
+      <td>Fourth quintile</td>
+      <td>269,796 (20.0)</td>
+      <td>7126 (20.3)</td>
+      <td>2840 (20.1)</td>
+      <td>43,042 (21.4)</td>
+      <td>13,115 (21.2)</td>
+      <td>35,539 (21.1)</td>
+      <td>371,458 (20.3)</td>
+    </tr>
+    <tr>
+      <td>Highest quintile</td>
+      <td>262,055 (19.5)</td>
+      <td>7768 (22.1)</td>
+      <td>3102 (22.0)</td>
+      <td>45,789 (22.7)</td>
+      <td>16,440 (26.5)</td>
+      <td>43,540 (25.8)</td>
+      <td>378,694 (20.7)</td>
+    </tr>
+    <tr>
+      <td colspan="8">Healthcare usage</td>
+    </tr>
+    <tr>
+      <td>Rare</td>
+      <td>301,815 (22.4)</td>
+      <td>7894 (22.4)</td>
+      <td>3070 (21.7)</td>
+      <td>45,216 (22.4)</td>
+      <td>13,344 (21.5)</td>
+      <td>37,009 (21.9)</td>
+      <td>408,348 (22.3)</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>240,671 (17.9)</td>
+      <td>6145 (17.5)</td>
+      <td>2473 (17.5)</td>
+      <td>35,618 (17.7)</td>
+      <td>10,607 (17.1)</td>
+      <td>29,030 (17.2)</td>
+      <td>324,544 (17.7)</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>292,576 (21.7)</td>
+      <td>7667 (21.8)</td>
+      <td>3122 (22.1)</td>
+      <td>43,970 (21.8)</td>
+      <td>13,526 (21.8)</td>
+      <td>36,837 (21.8)</td>
+      <td>397,698 (21.7)</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>248,125 (18.4)</td>
+      <td>6607 (18.8)</td>
+      <td>2693 (19.1)</td>
+      <td>37,863 (18.8)</td>
+      <td>11,962 (19.3)</td>
+      <td>32,309 (19.1)</td>
+      <td>339,559 (18.6)</td>
+    </tr>
+    <tr>
+      <td>Frequent</td>
+      <td>263,772 (19.6)</td>
+      <td>6862 (19.5)</td>
+      <td>2776 (19.6)</td>
+      <td>38,946 (19.3)</td>
+      <td>12,552 (20.2)</td>
+      <td>33,734 (20.0)</td>
+      <td>358,642 (19.6)</td>
+    </tr>
+  </tbody>
+</table>
+
+_IQR = interquartile range; IQI = interdecentile interval (10, 50, 90); ISCED = International Standard Classification of Education_
+
+### Participation during the COVID-19 pandemic
 
 Before the pandemic, 80.2% of women participated in mammography screening within 90 d since invitation, 82.7% within 180 d, and 83.1% within 365 d (Figure 2 and Supplementary files 1–3).
 
@@ -101,9 +413,422 @@ At the start of the pandemic, a reduction of 3.7–10.6 percentage points in scr
 
 The participation in mammography screening within 365 d was also reduced by 1.6–3.5 percentage points (PR = 0.94; 95% CI: 0.93–0.95 among women invited during pre-lockdown and PR = 0.97; 95% CI: 0.96–0.97 among women invited during the first lockdown) corresponding to a participation rate of 79.6% during pre-lockdown and 81.5% during the first lockdown. Again, the overall participation resumed to pre-pandemic levels from first reopening and onwards (Table 2 and Supplementary file 3).
 
+**Table 2.**
+ Prevalence ratios (PR) and 95% confidence intervals (95% CI) of participation in mammography screening in Denmark within 365 d since invitation from 2016 to 2021*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Pre-pandemic (1 January 2016 to 31 January 2020)</th>
+      <th colspan="2">Pre-lockdown (1 February 2020 to 10 March 2020)</th>
+      <th colspan="2">First lockdown (11 March 2020 to 15 April 2020)</th>
+      <th colspan="2">First reopening (16 April 2020 to 15 December 2020)</th>
+      <th colspan="2">Second lockdown (16 December 2020 to 31 December 2020)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">N = 1,346,959</th>
+      <th colspan="2">N = 35,175</th>
+      <th colspan="2">N = 14,134</th>
+      <th colspan="2">N = 201,613</th>
+      <th colspan="2">N = 61,991</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>PR</th>
+      <th>[95% CI]</th>
+      <th>PR</th>
+      <th>[95% CI]</th>
+      <th>PR</th>
+      <th>[95% CI]</th>
+      <th>PR</th>
+      <th>[95% CI]</th>
+      <th>PR</th>
+      <th>[95% CI]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall</td>
+      <td>1,828,791</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.97]</td>
+      <td>0.99</td>
+      <td>[0.99; 0.99]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.01]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Age at invitation (y)</td>
+    </tr>
+    <tr>
+      <td>50–54</td>
+      <td>571,257</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.96</td>
+      <td>[0.95; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>0.97</td>
+      <td>[0.95; 0.99]</td>
+    </tr>
+    <tr>
+      <td>55–59</td>
+      <td>447,794</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.02</td>
+      <td>[1.00; 1.04]</td>
+    </tr>
+    <tr>
+      <td>60–64</td>
+      <td>413,752</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.95; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.02</td>
+      <td>[1.00; 1.04]</td>
+    </tr>
+    <tr>
+      <td>65–69</td>
+      <td>395,988</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.96</td>
+      <td>[0.95; 0.98]</td>
+      <td>0.98</td>
+      <td>[0.98; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.97; 1.01]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Ethnicity</td>
+    </tr>
+    <tr>
+      <td>Danish descent</td>
+      <td>165,070</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.94; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.01]</td>
+    </tr>
+    <tr>
+      <td>Descendant of immigrant</td>
+      <td>2956</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>1.00</td>
+      <td>[0.86; 1.16]</td>
+      <td>1.09</td>
+      <td>[0.89; 1.34]</td>
+      <td>0.91</td>
+      <td>[0.84; 0.98]</td>
+      <td>1.22</td>
+      <td>[1.10; 1.36]</td>
+    </tr>
+    <tr>
+      <td>Western immigrant</td>
+      <td>48,310</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.91</td>
+      <td>[0.87; 0.96]</td>
+      <td>0.96</td>
+      <td>[0.90; 1.03]</td>
+      <td>0.97</td>
+      <td>[0.95; 0.99]</td>
+      <td>0.97</td>
+      <td>[0.88; 1.06]</td>
+    </tr>
+    <tr>
+      <td>Non-Western immigrant</td>
+      <td>97,434</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.88</td>
+      <td>[0.85; 0.91]</td>
+      <td>0.95</td>
+      <td>[0.90; 1.00]</td>
+      <td>0.96</td>
+      <td>[0.95; 0.98]</td>
+      <td>0.95</td>
+      <td>[0.89; 1.02]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Cohabitation status</td>
+    </tr>
+    <tr>
+      <td>Living alone</td>
+      <td>491,009</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.92</td>
+      <td>[0.91; 0.93]</td>
+      <td>0.95</td>
+      <td>[0.94; 0.97]</td>
+      <td>0.98</td>
+      <td>[0.97; 0.98]</td>
+      <td>0.98</td>
+      <td>[0.95; 1.00]</td>
+    </tr>
+    <tr>
+      <td>Cohabiting</td>
+      <td>148,087</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.92</td>
+      <td>[0.91; 0.94]</td>
+      <td>0.96</td>
+      <td>[0.93; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.98; 1.00]</td>
+      <td>1.02</td>
+      <td>[0.98; 1.05]</td>
+    </tr>
+    <tr>
+      <td>Married</td>
+      <td>966,288</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.95</td>
+      <td>[0.95; 0.96]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.01]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Educational level (ISCED)</td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 1–2</td>
+      <td>105,829</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.96</td>
+      <td>[0.95; 0.97]</td>
+      <td>0.99</td>
+      <td>[0.99; 0.99]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.01]</td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 3–5</td>
+      <td>527,145</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.98; 1.02]</td>
+    </tr>
+    <tr>
+      <td>ISCED15 levels 6–8</td>
+      <td>216,999</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.92; 0.96]</td>
+      <td>0.98</td>
+      <td>[0.96; 1.01]</td>
+      <td>0.99</td>
+      <td>[0.98; 1.00]</td>
+      <td>1.01</td>
+      <td>[0.98; 1.04]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Disposable income</td>
+    </tr>
+    <tr>
+      <td>Lowest quintile</td>
+      <td>352,974</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.91</td>
+      <td>[0.89; 0.92]</td>
+      <td>0.94</td>
+      <td>[0.91; 0.96]</td>
+      <td>0.98</td>
+      <td>[0.97; 0.99]</td>
+      <td>0.95</td>
+      <td>[0.91; 0.98]</td>
+    </tr>
+    <tr>
+      <td>Second quintile</td>
+      <td>359,227</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.92</td>
+      <td>[0.90; 0.93]</td>
+      <td>0.95</td>
+      <td>[0.93; 0.97]</td>
+      <td>0.97</td>
+      <td>[0.96; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.96; 1.02]</td>
+    </tr>
+    <tr>
+      <td>Third quintile</td>
+      <td>365,341</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.95</td>
+      <td>[0.93; 0.96]</td>
+      <td>0.96</td>
+      <td>[0.95; 0.98]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.98; 1.02]</td>
+    </tr>
+    <tr>
+      <td>Fourth quintile</td>
+      <td>371,458</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.95</td>
+      <td>[0.94; 0.96]</td>
+      <td>0.99</td>
+      <td>[0.97; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.01</td>
+      <td>[0.99; 1.03]</td>
+    </tr>
+    <tr>
+      <td>Highest quintile</td>
+      <td>378,694</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.97</td>
+      <td>[0.96; 0.98]</td>
+      <td>0.99</td>
+      <td>[0.97; 1.00]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.02</td>
+      <td>[1.00; 1.03]</td>
+    </tr>
+    <tr>
+      <td colspan="12">Healthcare usage</td>
+    </tr>
+    <tr>
+      <td>Rare</td>
+      <td>408,348</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.93</td>
+      <td>[0.92; 0.95]</td>
+      <td>0.96</td>
+      <td>[0.94; 0.98]</td>
+      <td>0.98</td>
+      <td>[0.98; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.97; 1.02]</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>324,544</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.95</td>
+      <td>[0.94; 0.96]</td>
+      <td>0.97</td>
+      <td>[0.95; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.98; 1.00]</td>
+      <td>1.01</td>
+      <td>[0.99; 1.03]</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>397,698</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.97</td>
+      <td>[0.95; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.99; 1.00]</td>
+      <td>0.99</td>
+      <td>[0.96; 1.01]</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>339,559</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.95</td>
+      <td>[0.93; 0.96]</td>
+      <td>0.95</td>
+      <td>[0.94; 0.97]</td>
+      <td>1.00</td>
+      <td>[0.99; 1.00]</td>
+      <td>1.00</td>
+      <td>[0.98; 1.03]</td>
+    </tr>
+    <tr>
+      <td>Frequent</td>
+      <td>358,642</td>
+      <td>1.00</td>
+      <td>-</td>
+      <td>0.94</td>
+      <td>[0.93; 0.95]</td>
+      <td>0.98</td>
+      <td>[0.96; 0.99]</td>
+      <td>0.99</td>
+      <td>[0.98; 0.99]</td>
+      <td>1.00</td>
+      <td>[0.98; 1.03]</td>
+    </tr>
+  </tbody>
+</table>
+
+_ISCED = International Standard Classification of Education.*Adjusted for month, year and age at invitation._
+
 The results for participation within 180 d since invitation were similar to the results for participation within 365 d since invitation (Figure 2 and Supplementary files 2 and 5).
 
-## Participation during the COVID-19 pandemic according to socio-economic variables
+### Participation during the COVID-19 pandemic according to socio-economic variables
 
 Before the pandemic, the participation in mammography screening within 90 and 365 d was the lowest among the youngest women (77.6 and 80.9%), among immigrants (67.8 and 70.7% among Western and 66.8 and 69.9% among non-Western immigrants), among women living alone (72.1 and 75.2%), among women with the lowest income (73.8 and 76.1%), and among women who rarely use the primary healthcare system (75.4 and 78.2%) (Supplementary files 1-3).
 
@@ -115,11 +840,11 @@ The overall as well as the results stratifying by socio-economic variables were 
 
 ## Discussion
 
-## Main findings
+### Main findings
 
 In this nationwide population-based study comprising 1,828,791 invitations among 847,766 women, we found a reduction in participation in mammography within 90 d at the start of the pandemic; however, extending the length of follow-up time to 365 d, only a minor reduction was observed. From first reopening and onwards, the participation in mammography screening normalised. A lower participation was, nevertheless, seen among immigrants and among women with a low income.
 
-## Comparison with previous studies and explanation of findings
+### Comparison with previous studies and explanation of findings
 
 Throughout most of the world, the mammography screening programmes were paused at the start of the pandemic. The screening programmes were stopped mainly to decrease the risk of women being infected by COVID-19 while being screened, but also due to the shortage of health professionals, as they were involved in pandemic-related activities (e.g. radiologist addressed to emergency department to assure diagnosis of pneumonia). This led to marked reductions in screening mammographies performed at the start of the pandemic in many other countries worldwide (Ng and Hamilton, 2022; Cairns et al., 2022; Jidkova et al., 2022; Miller et al., 2021; Sprague et al., 2021). In Denmark, the mammography screening programme continued throughout the pandemic, and the situation in Denmark is therefore unique and few studies are comparable to our study.
 
@@ -127,11 +852,11 @@ We found a short-term reduction in participation in mammography screening at the
 
 The decreased participation at the start of the pandemic was most pronounced among immigrants and in particular among women with a low income. The participation dropped by 3.3% among women of Danish descent for those invited during pre-lockdown, whilst the participation dropped by 5.0% among Western and 5.7% among non-Western immigrants. Even larger differences were seen when stratifying by income level: among women with the lowest income, the participation dropped by 6.9% during pre-lockdown and by 4.6% during the first lockdown, whilst the participation among women with the highest income was almost unchanged. This indicates that the restrictions imposed in Denmark may have affected some groups of women disproportionally. A study from Spain Bosch et al., 2022 found that the participation in mammography screening decreased with age and with lower socio-economic level post-COVID-19; this has also been reported for the two other screening programmes in Denmark (Olesen et al., 2023a; Olesen et al., 2023b; this study). The evidence is scarce on participation according to ethnicity throughout the pandemic; however, the lower participation during the pandemic has also been demonstrated for bowel and cervical cancer screening in Denmark (Olesen et al., 2023a; Olesen et al., 2023b; this study). Immigrants may find it more difficult to navigate the healthcare system in Denmark, and possibly this has been exacerbated by the pandemic where the majority of the communication at press conferences and news media were conveyed in Danish, a language that may not be fully comprehensive to all immigrants. Moreover, the COVID-19 vaccination coverage was lower among immigrants (Gram et al., 2023), which could partly explain the lower screening participation. Women with a low income may not have access to private means of transport and may have been reluctant to use public transportation to reach a mammography screening clinic during the pandemic, which could explain the lower participation among this group of women. Women without private means of transport generally have a lower participation in mammography screening (Jensen et al., 2012; Jensen et al., 2014), and this may have worsened during the pandemic. The lower participation in screening continued throughout the study period among women with a low income, indicating that the pandemic had lasting negative effects on the participation in mammography screening in this group of women.
 
-## Strengths and limitations
+### Strengths and limitations
 
 An important strength of the study is the high quality of data covering the entire population of women invited to participate in the mammography screening programme in Denmark during the pandemic and the years before. Danish administrative and health registries have a high completeness (Thygesen et al., 2011), which is also the case for the Danish Quality Database for Mammography Screening (Mikkelsen et al., 2016). Limitations of the study should, however, be acknowledged. In this study, we calculated participation in mammography screening from the date of invitation to the date of participation; however, the length of time from invitation to the pre-booked appointment may vary depending on the capacity of the mammography screening clinics. A more accurate measure may have been time from first pre-booked appointment to participation; however, this information is unfortunately not available in the Danish Quality Database for Mammography Screening. We did not have data on underlying disease or vaccination status, which could affect one’s perception of risk and willingness to participate in screening. We did adjust for age, and since age is strongly associated with the level of comorbidity, the theoretical impact of comorbidity is reduced. Moreover, the severity of the pandemic and the pandemic response was different in different countries, with Denmark managing to keep the number of hospitalisations due to COVID-19 at a relatively low level (Statens Serum Institut, 2021a), and our observations may not be directly transferable to all countries.
 
-## Implications of the findings
+### Implications of the findings
 
 Our study indicates that women postponed screening at the start of the pandemic. The mammography screening remained open throughout the pandemic, and this is contrasting to the health communication conveyed at the national televised press conferences at the start of the pandemic in Denmark instructing people to stay at home and cancel appointments. Inconsistent health messages may thus have resulted in a reduced participation in screening. The pandemic was an unprecedented situation, and the health authorities had to navigate unknown terrain; however, in hindsight it is important to ensure that the health communication is aligned among all parties to ensure that women both feel safe and that it is indeed safe to participate in screening.
 
@@ -139,6 +864,6 @@ We identified groups of women who had a low participation in screening before th
 
 The effect of the short-term reduction in mammography screening participation on the detection of early-stage breast cancer is unknown. A study from Denmark by Skovlund et al., 2022 reported a 19% reduction in breast cancers diagnosed in the spring of 2020; however, this large reduction may partly be a result of a delayed registration of cancer diagnoses at the time of that study as cancer diagnoses have been shown to be incompletely registered for months (Larsen et al., 2014). Furthermore, more recent data from the Danish Breast Cancer Group show a modest reduction of 5% in the number of breast cancers in 2020 compared to 2019 (The Danish Clinical Quality Program – National Clinical Registries, 2022). Nonetheless, some women may have changed their health-seeking behaviour possibly not contacting their general practitioner at the start of the pandemic despite symptoms of breast cancer. Moreover, our study supports that delayed participation in mammography screening might to some degree contribute to a reduction in the number of breast cancers diagnosed in the spring of 2020. However, since by far most women merely postponed their participation and showed up later, the lower participation at the start of the pandemic most likely only has a minor effect on the overall mortality from breast cancer at a population level.
 
-## Conclusion
+### Conclusion
 
 We found that the short-term mammography screening participation was reduced at the start of the pandemic, whilst only a minor reduction in participation was observed with longer follow-up time. Some groups of women (immigrants and women with a low income) had a lower participation even with the longest follow-up time, indicating that the social inequity in mammography screening participation was slightly exacerbated during the pandemic.

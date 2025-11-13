@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Polyamine levels are intricately controlled by biosynthetic, catabolic enzymes and antizymes. The complexity suggests that minute alterations in levels lead to profound abnormalities. We described the therapeutic course for a rare syndrome diagnosed by whole exome sequencing caused by gain-of-function variants in the C-terminus of ornithine decarboxylase (ODC), characterized by neurological deficits and alopecia. N- acetylputrescine levels with other metabolites were measured using ultra-performance liquid chromatography paired with mass spectrometry and Z-scores established against a reference cohort of 866 children. From previous studies and metabolic profiles, eflornithine was identified as potentially beneficial with therapy initiated on FDA approval. Eflornithine normalized polyamine levels without disrupting other pathways. She demonstrated remarkable improvement in both neurological symptoms and cortical architecture. She gained fine motor skills with the capacity to feed herself and sit with support. This work highlights the strategy of repurposing drugs to treat a rare disease. No external funding was received for this work.
+Background:Polyamine levels are intricately controlled by biosynthetic, catabolic enzymes and antizymes. The complexity suggests that minute alterations in levels lead to profound abnormalities. We described the therapeutic course for a rare syndrome diagnosed by whole exome sequencing caused by gain-of-function variants in the C-terminus of ornithine decarboxylase (ODC), characterized by neurological deficits and alopecia.Methods:N-acetylputrescine levels with other metabolites were measured using ultra-performance liquid chromatography paired with mass spectrometry and Z-scores established against a reference cohort of 866 children.Results:From previous studies and metabolic profiles, eflornithine was identified as potentially beneficial with therapy initiated on FDA approval. Eflornithine normalized polyamine levels without disrupting other pathways. She demonstrated remarkable improvement in both neurological symptoms and cortical architecture. She gained fine motor skills with the capacity to feed herself and sit with support.Conclusions:This work highlights the strategy of repurposing drugs to treat a rare disease.Funding:No external funding was received for this work.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Ornithine decarboxylase (ODC) is a rate-limiting enzyme in the biosynthesis of p
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67097/elife-67097-fig2-v1.jpg)
 
-**Figure 2.:** ODC1/ODC clinical variant c.1342 A > T/ p.K448X and support for eflornithine treatment.Panel A shows the gene structure for ODC1 (ornithine decarboxylase 1) with active site amino acids labeled in blue and the last exon identified. In the last exon cluster, a mouse model variant and four different patient variants including our patient’s K448X variant are described (Panel B, red). The patient variant falls on the disordered C-terminus of ODC, where the two active sites are composed of amino acids from each of two ODC proteins forming a dimer (Panel C). The patient with K448X variant displays alterations of metabolic pathways (Panel D) including polyamines (triangle), urea (square), and others (circle). Metabolites measured are marked in cyan and those altered by K448X with red arrows based on direction of changes seen in the patient. Panel E shows changes in metabolite levels during treatment with eflornithine, with elevated levels of N-acetylputrescine and acisoga decreasing on therapy.
+**Figure 2.:** Panel A shows the gene structure for ODC1 (ornithine decarboxylase 1) with active site amino acids labeled in blue and the last exon identified. In the last exon cluster, a mouse model variant and four different patient variants including our patient’s K448X variant are described (Panel B, red). The patient variant falls on the disordered C-terminus of ODC, where the two active sites are composed of amino acids from each of two ODC proteins forming a dimer (Panel C). The patient with K448X variant displays alterations of metabolic pathways (Panel D) including polyamines (triangle), urea (square), and others (circle). Metabolites measured are marked in cyan and those altered by K448X with red arrows based on direction of changes seen in the patient. Panel E shows changes in metabolite levels during treatment with eflornithine, with elevated levels of N-acetylputrescine and acisoga decreasing on therapy.
 
 Remarkably, these patients all represent human phenotypes of a transgenic mouse described in 1996, overexpressing C-terminally deleted ODC in the dermal tissue, leading to higher ODC enzyme activity and increased putrescine biosynthesis (Soler et al., 1996). The phenotypic changes first described in a mouse model included hair loss that was reversible with ODC inhibitor α-difluoromethylornithine (DFMO; common name eflornithine) (Soler et al., 1996). Experiments with the patient’s cultured primary dermal fibroblasts showed eflornithine reduced ODC activity, resulting in putrescine levels comparable to controls without affecting cell morphology or inducing cell death (Schultz et al., 2019).
 
@@ -50,13 +50,65 @@ Based on previously published murine data with eflornithine for gain-of-functi
 
 ## Materials and methods
 
-## Study participants and consent
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ODC1</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 4953</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/4953</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Eflornithine (DFMO)</td>
+      <td>Sanofi Aventis</td>
+      <td>Supplied for study</td>
+      <td>https://pubchem.ncbi.nlm.nih.gov/compound/Eflornithine</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Blood EDTA tubes</td>
+      <td></td>
+      <td></td>
+      <td>Freshly isolated blood from patient</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>YASARA</td>
+      <td>YASARA</td>
+      <td>http://www.yasara.org/</td>
+      <td>Protein modelling</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Liquid chromatography paired massspectrometry</td>
+      <td>Metabolon, Morrisville, NC</td>
+      <td>https://www.metabolon.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study participants and consent
 
 Following FDA approval of our single-patient Investigational New Drug (IND) Application (144022) as a compassionate use treatment protocol, the study was further reviewed and approved by the Spectrum Health Institutional Review Board (IRB). IRB approval for sample collection with informed consent was received to conduct global metabolomics that included, among others, the polyamine metabolites spermidine and N-acetylputrescine.
 
 The patient first presented at Spectrum Health, Helen DeVos Children’s Hospital (Grand Rapids, MI) at 11 months of age (Figure 1A). We diagnosed the ODC C-terminal deletion at age 19 months through whole exome sequencing and characterized the metabolic dyshomeostasis by 32 months (ODC protein and polyamine abnormalities). Eflornithine oral solution was prepared by diluting the lyophilized powder with purified water to a final concentration of 100 mg/mL. At age 4 years and 8 months, we started eflornithine (Sanofi Aventis) treatment with 500 mg/m2/dose bid twice daily via a gastrostomy tube along with a low polyamine diet on November 14, 2019, for 3 months, increasing to 750 mg/m2/dose twice daily, and a final increase to 1000 mg/m2/dose twice daily after 3.5 months. Dosing was based on what had been demonstrated to be safe in pediatric patients in maintenance therapy for neuroblastoma treated with eflornithine (Saulnier Sholler et al., 2015).
 
-## Blood collection and processing
+### Blood collection and processing
 
 EDTA blood tubes collected from the patient were mixed by inversion 8–10 times, centrifuged at 1000×g for 10 min at 4°C to separate plasma (minimum of 0.25 mL, free of hemolysis from red blood cells) from cellular fraction, and both fractions were immediately placed at −80°C. The plasma specimens were coded and anonymized, kept frozen, and shipped in batch to Metabolon, Morrisville, NC, for metabolomics analysis. N-acetylputrescine, the only polyamine that meets CAP/CLIA standards in this analysis, served as the primary indicator of putrescine levels. N-acetylputrescine and additional metabolites meeting CAP/CLIA standards (Figure 2E) and supplemental metabolites were measured in the EDTA plasma samples using ultra-performance liquid chromatography paired with mass spectrometry and Z-scores were calculated for each metabolite against a reference cohort of 866 pediatric patients as described previously (Squitti et al., 2019).
 
@@ -66,15 +118,17 @@ Blood draws for polyamine levels were obtained at initiation of therapy, 1-week 
 
 The novel treatment of this ultra-rare (less than 10 known cases) genetic syndrome presented unique challenges for monitoring efficacy over time. Growth parameters and metabolite levels were monitored easily, whereas others such as cognitive and motor functioning proved challenging, making us dependent on her standardized neurological examination.
 
-## Eflornithine improves clinical findings
+### Eflornithine improves clinical findings
 
 The patient was born with a full head of silver-blond hair similar to a previously described murine phenotype (Soler et al., 1996), which fell out in early months and she remained hairless other than a few scattered, long hairs on the scalp. One month into treatment, hair growth was noted, with eyebrows appearing first (Figure 1B–C). Two months into treatment, scalp hair began to diffusely appear in the normal pattern of hair distribution increasing to resemble normal growth for age (Figure 1). She had a history of recurring follicular cyst formation and enlargement. Multiple lesions located on the posterior scalp and back that first were small maculopapular pustules slowly increased in size to approximately 6–7 cm in diameter (Figure 1B). These lysed spontaneously, but some would enlarge until painful, requiring surgical removal. Upon initiation of eflornithine, the formation of cysts ceased immediately (Figure 1B).
 
 Prior to therapy, she had delayed development which manifested with no standing, cruising, or sitting, and limited fine motor skills. Her BMI increased during eflornithine treatment from 25th percentile to 90th percentile primarily due to increase in weight. This quantitative change was not accompanied by any change in body habitus but rather an increase in muscle bulk. She gained muscle strength demonstrated by acquisition of her ability to hold up her head without support (Figure 1B). As the video file shows after 4 months of eflornithine therapy, she was able to sit unsupported and maintain posture with the physical therapist providing resistance, use a walker, and feed herself with a spoon with some assistance. Video 1 allows for optimal visualization of this rapid improvement of our patient with this gain-of-function mutation in the ODC1 gene. The drastic external change in hair growth, and visible improvement in coordination, attention, and interaction can be clearly seen.
 
+![Video 1.](https://cdn.elifesciences.org/articles/67097/elife-67097-video1.mp4.jpg)
+
 A neonatal brain MRI showed abnormal cerebral white matter and subependymal cysts (Figure 1D). Repeat MRI done at the end of the 9-month treatment trial with eflornithine demonstrated normalization of the cerebral white matter signal with decrease in volume with white matter loss and resolution of all previously noted cysts. Post-treatment magnetic resonance spectroscopy was also performed showing normalization of the N-acetylaspartate and choline signals relative to creatine Figure 1D.
 
-## Eflornithine normalizes metabolomic findings
+### Eflornithine normalizes metabolomic findings
 
 N-acetylputrescine, the only polyamine metabolite measurement that is CAP/CLIA-certified, was quantified in addition to others using a global metabolomics approach (Figure 2) before and after initiating therapy with eflornithine. Metabolite levels from a reference cohort of 866 pediatric patients were converted into Z-scores, a calculation of standard deviations from the mean of the reference populationthat our patient’s values are compared to. In the global analysis of 915 metabolites of the patient before treatment, a total of 16 had values above the 97.5th percentile and 38 below the 2.5th percentile, with a noted difference in polyamine connected metabolites (Source data 1) without any marked disruption of any other metabolic pathways on treatment. The initial elevation of both N-acetylputrescine as well as the polyamine metabolite N-(3-acetamidopropyl) pyrrolidin-2-one (acisoga), which were above the 97.5th percentile, decreased at initiation of therapy and remained reduced at all time points (Figure 2), indicating that eflornithine treatment had the expected effect. Ornithine and N-acetylarginine were below the 2.5th percentile at start of therapy and normalized to the larger pediatric values over the course of therapy. Urea cycle components citrulline and arginine, along with other metabolites, remained at 1 to −1 standard deviation throughout the study period (Figure 2).
 
@@ -90,6 +144,6 @@ Once therapy was initiated, some neurological improvement in the patient was not
 
 While COVID-19 restrictions interrupted neurological assessments over the treatment period, the improvements noted throughout the relatively short treatment period of 6 months are truly remarkable, especially given the neurological deterioration in the patient prior to eflornithine therapy. This could be especially consequential if we could initiate therapy in a neonate diagnosed early before neurological damage occurs. We are now aware of other patients identified that present with similar gain-of-function ODC variants and polyamine abnormalities such as elevated N-acetylputrescine (Rodan et al., 2018). The therapy outlined here should allow for replication of the findings with a promise for significant improvement in quality of life for these patients. For such patients we recommend continued monitoring of multiple metabolites including N-acetylputrescine and acisoga to ensure that eflornithine dosing and urea/polyamine metabolite levels stay within normal ranges. The advent of global metabolomics presents a unique opportunity not only to develop a complete understanding of the dyshomeostasis prior to therapy but also a way to appreciate the drug’s impact on interconnected metabolic cycles simultaneously and perhaps a means of identifying disruptions early and predicting adverse effects. This may lead to earlier initiation of therapy in future patients, thereby perhaps avoiding some of the neurological delay that has come to characterize the disease in our patient.
 
-## Conclusion
+### Conclusion
 
 In this study we have laid forth a promising example of going from first publication of a new syndrome to FDA-approved single-patient investigational repurposed drug treatment in 16 months, a methodology and speed rarely seen in the clinical science of rare diseases.

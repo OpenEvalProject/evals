@@ -40,41 +40,141 @@ In this work, we show that the SAPK pathway negatively controls CAR assembly in 
 
 ## Results
 
-## The SAPK pathway becomes activated and negatively regulates fission yeast growth in the presence of latrunculin A
+### The SAPK pathway becomes activated and negatively regulates fission yeast growth in the presence of latrunculin A
 
 LatA prevents F-actin cytoskeleton assembly in eukaryotic organisms (Morton et al., 2000). Treatment of growing cells of the fission yeast S. pombe with high concentrations of LatA (>10 µM) elicits disassembly of patches, cables, and the CAR (Pelham and Chang, 2001; Karagiannis et al., 2005), and is accompanied by strong activation of Sty1 (Mutavchiev et al., 2016), the core MAPK of the SAPK pathway (Figure 1A and C). S. pombe wild-type cells were unable to grow in YES plates supplemented with low concentrations of LatA (0.15–0.2 µM), which disassemble the cables and the CAR, but not the patches (Figure 1B; Karagiannis et al., 2005; Tournier et al., 2004; Asadi et al., 2016). Unexpectedly, mutant cells lacking Sty1 grew in these low LatA concentrations (Figure 1B). Null mutants in upstream elements of this signaling cascade shared this phenotype, which includes the response regulator Mcs4, the redundant MAPKKK´s Wak1 and Win1, and MAPKK Wis1 (Figure 1A, Figure 1—figure supplement 1; Pérez and Cansado, 2010). Conversely, cells expressing the constitutively active MAPKK allele wis1DD that increases basal Sty1 activity (Shiozaki and Russell, 1997), or mutants lacking the respective Sty1 tyrosine and serine/threonine phosphatases Pyp1 and Ptc1 (Figure 1A; Millar et al., 1995; Nguyen and Shiozaki, 1999), did not grow in LatA, and this phenotype was totally suppressed in both pyp1∆ sty1∆ and ptc1∆ sty1∆ double mutants (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-v2.jpg)
+
+**Figure 1.:** (A) The stress activated MAPK pathway (SAPK) in S. pombe. Please see text for a detailed description of its main components and functions. (B) Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (C) Left panel: S. pombe wild type cells expressing a genomic Sty1-HA6his fusion were grown in YES medium to mid-log phase, and remained untreated (0), or treated with a range of concentrations of LatA for 1 hr. Activated/total Sty1 were detected with anti-phospho-p38 and anti-HA antibodies, respectively. Total Atf1 levels were detected with anti-Atf1 antibody. Anti-Cdc2 was used as a loading control. Right panel: Relative units as mean ± SD (biological triplicates) for Sty1 phosphorylation (anti-phospho-p38 blot) were determined with respect to the internal control (anti-HA blot). **, p<0.005; *, p<0.05; ns, not significant, as calculated by unpaired Student's t test. (D) S. pombe wild-type cells expressing a genomic Sty1-HA6his fusion were grown in YES medium to mid-log phase, and remained untreated (0), or treated with a range of concentrations of LatA for the indicated times. Activated/total Sty1 were detected with anti-phospho-p38 and anti-HA antibodies, respectively. (E) S. pombe wild type, mcs4∆ and Mcs4(D512N) cells expressing a genomic Sty1-HA6his fusion were grown in YES medium to mid-log phase, and treated with 1 µM LatA for the indicated times. Activated/total Sty1 were detected with anti-phospho-p38 and anti-HA antibodies, respectively. A representative experiment is shown. (F) Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed. (G) S. pombe wild-type cells expressing a CRIB-3xGFP fusion were grown in YES medium to mid-log phase, and remained untreated (0) or treated with a range of concentrations of LatA for 30 and 60 min. Left panel: The percentage of cells at G1 and G2 that show dispersal of the CRIB-3xGFP fusion from the cell poles was estimated in each case by fluorescence microscopy, and is presented as mean ± SD (biological duplicates). nd: no dispersal from the cell poles is detected. Right panel: representative fluorescence micrographs of control and LatA-treated cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** S. pombe wild-type and Act1-LQ (LatA-insensitive mutant) cells expressing a genomic Sty1-HA6his fusion were grown in YES medium to mid-log phase, and remained untreated (0), or treated with the indicated concentrations of LatA for 1 hr. Activated/total Sty1 were detected with anti-phospho-p38 and anti-HA antibodies, respectively. Results from a representative experiment are shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Decimal dilutions of sty1Δ cells expressing either dually phosphorylated (wild type), threonine monophosphorylated (Sty1-T YF), tyrosine monophosphorylated (Sty1-TA Y), or unphosphorylated (Sty1-TA YF) Sty1 versions were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Decimal dilutions of sty1Δ cells expressing either nucleo-cytoplasmic (Sty1-GFP) and constitutive plasma-membrane bound (Sty1-GFP-CAAX) GFP-fused Sty1 versions were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Time of dispersal of the CRIB-3xGFP fusion from the cell poles after initial SPB separation was estimated in exponentially growing S. pombe cells (n > 40) expressing Pcp1-mCherry (SPB marker; reference for mitotic onset) and Rlc1-mCherry fusions by time-lapse microscopy (time interval: 2.5 min) in the presence or absence of 0.15 µM LatA. Data as presented as dot plots (biological triplicates) with mean ± SD. ns, not significant, as calculated by unpaired Student´s t test.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed.
 
 Treatment of wild-type S. pombe cells for 1 hr with a range of concentrations of LatA, including those that inhibit growth in rich medium (0.2 µM), activated Sty1 as measured by western blot analysis with an anti-phospho-p38 antibody (Figure 1C). The magnitude and dynamics of MAPK activation during LatA treatment were enhanced (~2 to 5X times) and accelerated, respectively, in a dose-dependent manner (Figure 1D). The maximal ratio of Sty1 phosphorylation in S. pombe is achieved in response to a saline osmotic stress, and results in a ~ 20X increase in activation units with respect to the basal levels (Prieto-Ruiz et al., 2020). Thus, the lower activation threshold reached after LatA treatment may represent a relatively small fraction of Sty1 being phosphorylated (~10% to 25%). Sty1 activation induced with LatA was absent in cells expressing a LatA-resistant actin mutant allele (Act1-LQ) (Figure 1—figure supplement 2; Karagiannis et al., 2005), confirming that MAPK activation is due to its specific deleterious effects on actin and/or actin-based networks. Cells expressing a mutant allele Mcs4(D512N) that does not activate the SAPK pathway upon stimulation with hydrogen peroxide (Shieh et al., 1997), displayed Sty1 activation during LatA treatment, while this response was absent in a mcs4∆ mutant (Figure 1E). Hence, like other environmental cues, the signal induced by LatA treatment is transduced to the SAPK MAPK module via Mcs4 response regulator, and is independent on the function of the two-component system that functions explicitly in response to hydrogen peroxide-mediated oxidative stress (Pérez and Cansado, 2010). sty1∆ cells expressing the dually phosphorylated (wild type) MAPK at tyrosine and threonine, but not the monophosphorylated versions, were growth-sensitive to LatA (Figure 1—figure supplement 3). Therefore, as for other biological roles (Vázquez et al., 2015), modulation of LatA growth by Sty1 requires a fully activated MAPK. Growth in plates with LatA of cells expressing a nuclear-excluded, constitutive plasma membrane-targeted version of Sty1 (Sty1-GFP-CAAX) was quite similar than in control cells (Sty1-GFP) (Figure 1—figure supplement 4), suggesting that Sty1-negative control of cell growth in the presence of LatA is mainly exerted in a transcription-independent fashion. Indeed, the transcription factor Atf1, which becomes phosphorylated by Sty1 during stress to induce the expression of the Core Environmental Stress Response genes (CESR) (Pérez and Cansado, 2010; Shiozaki and Russell, 1996; Wilkinson et al., 1996; Chen et al., 2003), became activated also in response to LatA, as shown by its mobility shift during western blot analysis (Figure 1C), but, opposite to sty1∆ cells, atf1∆ cells showed lower tolerance to LatA (Figure 1F).
 
 Although high concentrations of LatA (>10 µM) induce dispersal from the cell poles of the activated Rho GTPase Cdc42 in a SAPK-dependent fashion (Mutavchiev et al., 2016), low drug concentrations (0.2 µM) did not elicit such response, as determined by monitoring the subcellular localization of a GFP–tagged Cdc42/Rac interactive-binding peptide probe (CRIB-3xGFP) that specifically detects the activated state of the GTPase (Figure 1G; Tatebe et al., 2008). The time needed for dispersal of the CRIB-3xGFP fusion from the cell poles after initial SPB separation was nearly identical in wild-type cells during unperturbed growth and in 0.15 µM LatA-treated cultures (~11–12 min; Figure 1—figure supplement 5). Additionally, Sty1 deletion partially suppressed defective growth with LatA of mutant strains lacking Cdc42 GEFs Gef1 or Scd1 (Figure 1—figure supplement 6). Altogether, these evidences suggest that inhibition of fission yeast growth by Sty1 in the presence of low LatA concentrations is not funneled through changes in Cdc42 activity.
 
-## SAPK activity negatively regulates CAR integrity in response to latrunculin A
+### SAPK activity negatively regulates CAR integrity in response to latrunculin A
 
 The growth phenotypes of lack- and gain-of-function SAPK mutants in the presence of LatA might result from alterations in the organization and/or dynamics of the actin cytoskeleton. mRNA expression levels of the actin encoding gene (act1+) (Figure 2—figure supplement 1), and Act1 protein levels (Figure 2—figure supplement 2), were virtually identical in wild type, sty1∆, and wis1DD mutant cells, indicating that the SAPK pathway does not affect actin gene mRNA expression and protein synthesis.
 
 By employing confocal fluorescence microscopy of strains expressing the actin probe Pact1-LifeAct-GFP fusion (Huang et al., 2012), we found that the integrity of actin patches and cables was not significantly altered in sty1∆ and wis1DD mutants as compared to wild type cells during unperturbed exponential growth (Figure 2A). The number/density of actin patches per cell did not vary in exponentially growing cultures of the above strains treated with 0.15 µM LatA (Figure 2A). These results confirmed that LatA affects the rate of actin polymerization in a concentration-dependent manner (Rupes et al., 1999), and that higher concentrations of this drug (>10 μM) are required to achieve complete depolymerization of F-actin patches (Karagiannis et al., 2005; Tournier et al., 2004). However, patches partially depolarized in 0.15 µM LatA-treated wild type and wis1DD cells, as evidenced by an increase in the number of patches located in the central third of the longitudinal cell axis (Figure 2A and B). Contrariwise, they remained mostly polarized during the same LatA treatment in the sty1∆ mutant (Figure 2A and B). The time taken for complete depolymerization of F-actin patches with high concentrations of LatA (20 µM) was very similar in wild type and sty1∆ cells (Figure 2—figure supplement 3), suggesting that LatA-resistance in this mutant is not related to differences in drug entry induced by MAPK deletion. The number of cells with cables during unperturbed growth was maximal (~100%) and did not change significantly between wild-type, sty1∆, and wis1DD cells (Figure 2C). Consistent with previous reports (Tournier et al., 2004), the number of cells with visible actin cables was reduced in wild-type cells after treatment with 0.15 µM LatA (Figure 2A and C). Actin cables also disappeared quickly in wis1DD cells, but remained assembled in sty1∆ cells when subjected to the above conditions (Figure 2A and C). Moreover, the percentage of cells with remaining cables became reduced in wild-type cells in response to environmental stimuli that activate Sty1, like osmotic saline stress (0.6 M KCl), heat shock (40°C), or oxidative stress (1 mM H2O2) (Pérez and Cansado, 2010), but not in sty1∆ cells (Figure 2—figure supplement 4). These results suggest that Sty1 negatively regulates actin cable integrity in response to environmental stimuli and actin perturbations induced with LatA.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative maximum-projection images of S. pombe wild type, sty1∆ and wis1DD cells expressing the F-actin marker LifeAct-GFP growing in YES medium to mid-log phase, and remained untreated (0), or treated with 0.15 µM LatA for 30 min. Arrows indicate cells with depolarized actin patches, whereas asterisks show cells with persistent actin cables. (B) The number of actin patches at the medial region of interphasic G2 cells (n = 25) expressing the F-actin marker LifeAct-GFP was quantified in wild type, sty1∆ and wis1DD cultures described in (A) with or without 0.15 µM LatA treatment (30 min), and is represented as a dot plot with mean ± SD. *, p<0.05, as calculated by unpaired Student's t test. (C) The percentage of cells with actin cables (n > 100) was quantified in wild-type, sty1∆ and wis1DD cultures described in (A) during unperturbed growth (-) and after 0.15 µM LatA treatment for 30 min (+), and is represented as mean ± SD (biological triplicates). ****, p<0.0001; ns, not significant, as calculated by unpaired Student's t test. (D) Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. pombe wild-type and sty1∆ cells growing in YES medium to mid-log phase in the presence of 0.2 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 35) and is presented as mean ± SD (biological triplicates). ***, p<0.001, as calculated by unpaired Student's t test. (E) Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. pombe wild type and wis1DD cells growing in YES medium to mid-log phase in the presence of 0.15 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 34) and is presented as mean ± SD (biological triplicates). **, p<0.01, as calculated by unpaired Student's t test. (F) S. pombe wild type, sty1∆ and wis1DD cells expressing a Rlc1-GFP genomic fusion were grown in YES medium to mid-log phase, and remained untreated (0) or treated with 0.15 µM LatA for the indicated times. Left panel: the percentage of cells that show damaged CAR was estimated in each case by fluorescence microscopy (n > 200), and is presented as mean ± SD (biological triplicates). ****, p<0.0001; ns, not significant, as calculated by unpaired Student's t test. Right panel: representative images of cells from the above strains growing in YES medium either untreated or after treatment with 0.15 µM LatA for 40 min. (G) S. pombe Sty1-T97A (analogue sensitive) cells expressing a Rlc1-GFP genomic fusion were grown in YES medium to early log-phase, incubated with 10 µM 3BrBPP1 or with the solvent alone (methanol) for 8 hr, and then treated with 0.15 µM LatA during the indicated times. The percentage of cells that show damaged CAR was estimated in each case by fluorescence microscopy (n > 200), and is presented as mean ± SD (biological triplicates). ****, p<0.0001; ***, p<0.001; ns, not significant, as calculated by unpaired Student's t test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** mRNA levels of the act1+ gene were measured by qPCR from total RNA extracted from cell samples corresponding to S. pombe wild-type, sty1Δ, and wis1DD strains growing exponentially in YES medium. Results are shown as relative fold expression (mean ± SD) from three biological repeats. ns, not significant, as calculated by unpaired Student's t test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Total extracts from growing cultures of wild-type, sty1Δ, and wis1DD strains were resolved by SDS-PAGE, and total Act1 levels were detected by incubation with anti-actin antibody. Anti-Cdc2 was used as a loading control. Right panel: results are shown as relative fold expression (mean ± SD) from three biological repeats. ns, not significant, as calculated by unpaired Student´s t test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Representative time-lapse maximum-projection images showing depolymerization of actin patches in growing S. pombe wild-type and sty1Δ cells expressing the F-actin marker LifeAct-GFP in the presence of 20 µM LatA. The time for complete actin patches depolymerization was determined (n > 70 cells of each strain), and is presented as mean ± SD (biological triplicates). ns, not significant, as calculated by unpaired Student's t test.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Upper panel: the percentage of cells with remaining actin cables was estimated in each case by fluorescence microscopy (n > 100), and is presented as mean ± SD (biological triplicates). ****, p<0.0001; ns, not significant, as calculated by unpaired Student's t test. Lower panel: representative maximum-projection images of cells from the above cultures.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. pombe wild-type, sty1Δ, wis1DD, and for3Δ cells growing in unperturbed YES medium to mid-log phase. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the times for node condensation/ring maturation and ring constriction and disassembly were estimated for each strain (n > 10) and are presented as mean ± SD (biological duplicates). ****, p<0.001; ns, not significant, as calculated by unpaired Student's t test.
+
 The dynamics of CAR assembly and constriction was assessed by employing time-lapse live fluorescence microscopy in wild-type, sty1∆, and wis1DD cells (constitutive hyperactivated Sty1) cells co-expressing genomic C-terminal tagged GFP fusions of the myosin II regulatory light chain contractile ring component Rlc1 and Pcp1 (pericentrin SPB component as an internal control for mitotic progression). Despite the apparent differences in the cell length at division, the times for CAR assembly, maturation and constriction were not significantly altered in sty1∆ (elongated cells) and wis1DD mutants (shorter cells) during unperturbed growth with respect to wild-type cells (Figure 2—figure supplement 5). Treatment with 0.2 µM LatA that inhibits growth in solid rich medium (Figure 1B), impaired mature CAR assembly from cytokinetic nodes in >80% of wild-type cells growing in liquid medium, resulting in the formation of many disorganized filaments that remained over time, whereas rings formed and constricted correctly in >85% of sty1∆ cells (Figure 2D). In the presence of 0.15 µM LatA rings formed and constricted normally in >85% of wild type cells, whereas in >84% of wis1DD cells cytokinetic nodes failed to coalesce into a compact and functional ring (Figure 2E).
 
 Remarkably, in asynchronous liquid cultures ~ 40% of wild-type cells expressing Rlc1-GFP displayed defective rings after 20 min of treatment with 0.15 µM LatA, and this percentage raised to ~90% after 40 min of treatment (Figure 2F). Again, wis1DD displayed a more pronounced CAR damage than wild-type cells (55% at 20 min), while CAR integrity was maintained for more extended periods in LatA-treated sty1∆ cells (Figure 2F). Moreover, node coalescence for CAR assembly was favored in LatA-treated Rlc1-GFP cells expressing an analogue-sensitive version of the MAPK (Sty1-T97A) (Tournier et al., 2004) after 8 hr of incubation in the presence of the kinase specific inhibitor (10 µM 3BrBPP1 in methanol), with respect to those treated with solvent alone (Figure 2G). The higher percentages of cells with damaged CAR found during LatA treatment in asynchronous cultures as compared to the time-lapse experiments may be due to a combination of factors, including genotypic differences among strains, soaking up of small LatA concentrations by the chambers during time-lapse observations, and the different scoring method, since in asynchronous cultures cells with seemingly damaged CARs might still be able to assemble and constrict. In any case, the above results suggest that in S. pombe the SAPK pathway negatively regulates CAR assembly and maturation in response to cytoskeletal perturbations induced with LatA.
 
-## For3 function is essential for SAPK-dependent negative regulation of ring assembly in response to actin cytoskeleton damage
+### For3 function is essential for SAPK-dependent negative regulation of ring assembly in response to actin cytoskeleton damage
 
 For3, one of the three formins present in S. pombe, assembles actin filaments within long cables for cellular transport and has established roles in cell polarity (Feierbach and Chang, 2001; Martin and Chang, 2006; Martin et al., 2007; Scott et al., 2011). For3 also cooperates with the essential formin Cdc12 in cytokinesis during contractile ring assembly and disassembly (Coffman et al., 2013). The time spent for node condensation and ring maturation in for3∆ cells during unperturbed growth was very similar to that of wild-type cells. However, and confirming previous observations (Coffman et al., 2013), they displayed an explicit delay in ring constriction and disassembly (21 ± 0.6 min in wild-type cells vs 36 ± 1.6 min in for3∆ cells; Figure 2—figure supplement 5). These precedents, together with the observation that actin cables remained mostly assembled in sty1∆ cells in response to LatA or to other environmental stress (Figure 2C and Figure 2—figure supplement 4, respectively), suggested that negative regulation of CAR integrity by the SAPK pathway might involve For3 function.
 
 for3∆ cells showed a clear growth-sensitive phenotype in the presence of LatA as compared to wild type cells (Figure 3A). Moreover, For3 deletion completely suppressed the growth-resistant phenotype of sty1∆ cells in the presence of LatA (Figure 3A). Timelapse microscopy showed that CARs failed to properly assemble in >70% of for3∆ cells in the presence of 0.15 µM LatA, whereas they formed and constricted accurately in >80% of wild-type cells under the same conditions (Figure 3B). These results suggest that For3 localization at the CAR is essential to maintain ring integrity and support cell growth in response to LatA. CAR integrity during LatA treatment could not be assessed in a double sty1∆ for3∆ mutant expressing the Rlc1-GFP fusion since it shows a synthetic lethal phenotype. Similarly, sty1∆ for3∆ mutants expressing other GFP-fused CAR components, including Myo2-GFP or Cdc15-GFP were not viable. Hence, quantification of CAR integrity in the presence of LatA was determined in wild-type, sty1∆, for3∆, and sty1∆ for3∆ fixed cells by immunofluorescence microscopy after staining with AlexaFluor488-phalloidin. Both wild-type and for3∆ cells showed highly damaged rings when incubated for 40 min in the presence of 0.15 µM LatA, whereas ~45% of rings remained unaffected in sty1∆ cells (Figure 3C). However, simultaneous deletion of For3 in sty1∆ cells (sty1∆ for3∆ double mutant) elicited defects in CAR integrity similar to those of for3∆ cells (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig3-v2.jpg)
+
+**Figure 3.:** (A) Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (B) Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. pombe for3∆ cells growing in YES medium to mid-log phase in the presence of 0.15 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated both for wild-type and for3∆ cells (n> 55), and is presented as mean ± SD (biological triplicates). **, p<0.01, as calculated by unpaired Student´s t test. (C) Left panel: representative images of Alexa Fluor–phalloidin staining of S. pombe wild-type, sty1∆, for3∆, and sty1∆ for3∆ cells growing in YES medium to mid-log phase, and remained untreated, or treated with 0.15 µM LatA for 40 min. Right panel: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 200) and is presented as mean ± SD (biological triplicates). ****, p<0.0001; ns, not significant, as calculated by unpaired Student's t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Wild-type cells expressing a Cdc12-3HA genomic fusion were grown in YES medium to mid-log phase, and remained untreated or treated with the indicated concentrations of LatA for 1 hr. Total cell extracts were resolved by SDS-PAGE in the presence of 15 µM PhosTag (upper panel), or conventional SDS-PAGE (middle panel), and Cdc12 levels were detected by incubation with anti-HA HRP-conjugated antibody. Anti-Cdc2 (lower panel) was used as a loading control. Representative experiments are shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Wild-type, sty1Δ, and wis1DD strains expressing a Cdc12-3HA genomic fusion were grown in YES medium to mid-log phase, and remained untreated (0), or treated with 0.2 µM LatA for 2 hr. Total cell extracts were resolved by SDS-PAGE in the presence of 15 µM PhosTag (upper panel), or conventional SDS-PAGE (middle panel), and Cdc12 levels were detected by incubation with anti-HA HRP-conjugated antibody. Anti-Cdc2 (lower panel) was used as a loading control. Representative experiments are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** S. pombe Cdc12-3GFP, Cdc12-3GFP sty1∆, Cdc12(4A)−3GFP, and Cdc12(4A)−3GFP sty1∆ strains expressing a Rlc1-GFP genomic fusion were grown in YES medium to mid-log phase, and remained untreated or treated with 0.15 µM LatA for 30 min. Left panel: the percentage of cells that show damaged CAR was estimated in each case by fluorescence microscopy (n > 200), and is presented as mean ± SD (biological triplicates). *, p<0.05, as calculated by unpaired Student's t test. nd, no CAR damage detected. Right panel: representative maximum-projection images of cells from the above cultures.
+
 For3 cannot localize and bind to cortical tethers when present in a closed, autoinhibited state, which is mediated, similar to other diaphanous-like formins, by an intramolecular interaction between its functional DAD and DID domains (Martin et al., 2007). Cells expressing a constitutively open GFP-fused genomic version of For3 (For3(DAD)−2GFP) (Martin et al., 2007), showed more resistance to LatA than those expressing a wild-type formin (For3-3GFP) (Figure 4A). Hence, treatment of exponentially growing liquid cultures with 0.2 µM LatA induced a clear CAR assembly defect in ~75% of For3-3GFP cells, but not in those expressing For3(DAD)−2GFP (~12%) (Figure 4B). Additionally, For3(DAD)−2GFP expression significantly alleviated the CAR integrity defects of wis1DD cells in the presence of 0.15 µM LatA (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig4-v2.jpg)
 
-**Figure 4.:** (A) Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (B) Representative time-lapse maximum-projection images of Rlc1-mCherry dynamics at the equatorial region of S. pombe For3-3GFP and For3(DAD)−2GFP cells growing in YES medium to mid-log phase in the presence of 0.2 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 33) and is presented as mean ± SD (biological triplicates). ****, p<0.0001, as calculated by unpaired Student's t test. (C) Representative time-lapse maximum-projection images of Rlc1-mCherry dynamics at the equatorial region of S. pombe wis1DD For3-3GFP and wis1DD For3(DAD)−2GFP cells growing in YES medium to mid-log phase in the presence of 0.2 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 39) and is presented as mean ± SD (biological triplicates). **, p<0.01, as calculated by unpaired Student´s t test.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Decimal dilutions of strains of the indicated genotypes were spotted on YES and YES solid plates with a range of concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (B) Representative time-lapse maximum-projection images of Rlc1-mCherry dynamics at the equatorial region of S. pombe For3-3GFP and For3(DAD)−2GFP cells growing in YES medium to mid-log phase in the presence of 0.2 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 33) and is presented as mean ± SD (biological triplicates). ****, p<0.0001, as calculated by unpaired Student's t test. (C) Representative time-lapse maximum-projection images of Rlc1-mCherry dynamics at the equatorial region of S. pombe wis1DD For3-3GFP and wis1DD For3(DAD)−2GFP cells growing in YES medium to mid-log phase in the presence of 0.2 µM LatA. Mitotic progression was monitored using Pcp1-GFP-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 39) and is presented as mean ± SD (biological triplicates). **, p<0.01, as calculated by unpaired Student´s t test.
 
 The SAPK pathway might also negatively regulate the Cdc12 function, which is essential for assembly of actin filaments to the CAR (Pollard and Wu, 2010; Chang et al., 1997; Kovar et al., 2003), and is tightly regulated by Sid2, the terminal kinase in the SIN (Bohnert et al., 2013), and the mitotic kinase Cdk1 (Cdc2) (Willet et al., 2018). Phosphorylation of a genomic Cdc12-3HA fusion in wild-type cells (PhosTag) does slightly increase as the concentration of LatA increases, whereas total formin levels remained constant (Figure 3—figure supplement 1). However, Cdc12 protein and phosphorylation status did not change in LatA-treated sty1∆ or wis1DD mutants as compared to wild-type cells (Figure 3—figure supplement 2). Moreover, Sty1 deletion partially suppressed the LatA-sensitivity and CAR defects of a cdc12-4A strain in which Sid2 phospho-sites are mutated to alanines (Bohnert et al., 2013; Figure 3—figure supplement 3), and a Cdc12 mutant with Cdk1 sites changed to phosphomimetic aspartic acid residues (cdc12-6D) (Willet et al., 2018; Figure 3—figure supplements 3 and 4). These findings suggest that the negative effect of SAPK signaling in S. pombe CAR assembly mostly relies on For3 function.
 
-## Sty1 activity negatively regulates protein levels of For3 in response to stress
+### Sty1 activity negatively regulates protein levels of For3 in response to stress
 
 The finding that the adverse effects of Sty1 signaling on the CAR depend on For3 prompted us to explore further how this control may be exerted. In exponentially growing wild-type cells, a genomic For3-3GFP fusion migrates in SDS-PAGE as three bands (Figure 5A). Lambda phosphatase treatment of cell extracts with or without specific phosphatase inhibitor revealed that the two bands with lower mobilities are phosphorylated (Figure 5A). For3-3GFP levels and phosphorylation status did not change significantly during cell cycle as evidenced by comparative western blot analysis of cells arrested at G1 (cdc10-129), G2 (cdc25-22), and M (nda3-KM311) phases (Figure 5—figure supplement 1). Interestingly, as compared to wild-type cells, total For3-3GFP levels were significantly raised in sty1∆ cells (~1.7 times), and lower in wis1DD and pyp1∆ cells that have higher Sty1 basal activity (Figure 5B; Madrid et al., 2007). Moreover, in a strain expressing For3-3GFP and an analogue-sensitive version of the MAPK (Sty1-T97A) (Prieto-Ruiz et al., 2020), total For3-3GFP levels increased progressively after 2–3 hr in the presence of 10 µM 3BrBPP1 kinase-specific inhibitor, while its phosphorylation pattern remained unchanged (Figure 5C). This observation rules out the possibility that Sty1 deletion might lead to a long-term physiological adaptation that alters For3 status in the absence of stress. Higher For3-3GFP levels in the absence of Sty1 function resulted in an overall enhanced cellular localization of the formin including the CAR, as confirmed by comparative quantitative fluorescence microscopy of mixed wild type and sty1∆ cells expressing For3-3GFP, with wild-type cells expressing Hht1-mCherry for easy discrimination between both strains (Figure 5D). Increased localization of For3 is not a general feature associated to Sty1 deletion, since localization at the CAR of the cell integrity pathway MAPK Pmk1-GFP fusion (Madrid et al., 2006) decreased slightly in sty1Δ cells as compared to wild-type cells (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-v2.jpg)
+
+**Figure 5.:** (A) Extracts from S. pombe growing cells expressing a genomic For3-3GFP fusion were treated with lambda phosphatase in the presence/absence of specific phosphatase inhibitor. Total and phosphorylated For3 levels (arrows) were determined by immunobloting with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Results from a representative experiment are shown. (B) Total extracts from growing cultures of wild-type, sty1Δ, pyp1Δ, and wis1DD strains expressing a For3-3GFP genomic fusion were resolved by SDS-PAGE, and total For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of western blot experiments. Relative For3 levels are represented as mean ± SD (biological triplicates). *, p<0.05, as calculated by unpaired Student's t test with respect to the wild type. (C) Sty1-T97A (as) cells expressing a For3-3GFP genomic fusion were grown to mid-log phase and remained untreated (MetOH; solvent control), or treated with 10 µM 3BrBPP1 at the indicated times. Total extracts were resolved by SDS-PAGE, and For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of western blot experiments. Relative For3 levels are represented as mean ± SD (biological duplicates). **, p<0.005; ns, not significant, as calculated by unpaired Student's t test. (D) Upper panel: Representative maximum-projection image of mixed wild type (For3-3GFP, Hht1-RFP; representative cells are marked with asterisks) and sty1∆ (For3-3GFP; representative cells are marked with point arrows) cells growing to mid-log phase observed by fluorescence microscopy. Lower panels: intensity plots of For3-3GFP and Pmk1-GFP fusions (shown as arbitrary fluorescence units) were generated from line scans across the equatorial region of both wild-type and sty1∆ cells (n> 28) with early septum. Individual (dotted lines) and average scans (solid lines) are shown in each case. (E) mRNA levels of for3+ gene were measured by qPCR from total RNA extracted from cell samples corresponding to S. pombe wild type cells growing exponentially in YES medium that remained untreated (0), or treated with the indicated concentrations of LatA for 1 hr. Results are shown as relative fold expression (mean ± SD) from three biological repeats. ****, p<0.0001; **, p<0.005; ns, not significant, as calculated by unpaired Student's t test with respect to the wild type. (F) S. pombe wild-type, wis1DD and pyp1Δ cells expressing genomic Sty1-HA6his and For3-3GFP fusions were grown in YES medium to mid-log phase, and remained untreated (0), or treated with the indicated concentrations of LatA for 2 hr. Activated/total Sty1 were detected with anti-phospho-p38 and anti-HA antibodies, respectively. Total For3 levels were detected with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of Western blot experiments. Relative For3 levels are represented as mean ± SD (biological duplicates). ***, p<0.001; **, p<0.005; *, p<0.05, as calculated by unpaired Student's t test. (G) Exponentially growing cdc2-asM17 cells expressing a For3-3GFP fusion were treated with 1 µM 3-MB-PP1 for 3 hr to hold the cycle at G2, released from the arrest for 10 min after ATP-analogue washout, and treated with 0.2 µM LatA for the indicated times. Total For3 levels were detected with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of Western blot experiments. Relative For3 levels are represented as mean ± SD (biological duplicates). *, p<0.05, as calculated by unpaired Student's t test. (H) Wild type and Act1-LQ (LatA-insensitive mutant) cells expressing a For3-3GFP genomic fusion were grown to mid-log phase and remained untreated (0), or treated with 0.15 µM LatA for 2, 4, or 6 hr. Total extracts were resolved by SDS-PAGE, and For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Results from a representative experiment are shown. (I) Wild-type, sty1Δ, pyp1Δ, and wis1DD cells expressing a For3-3GFP genomic fusion were grown to mid-log phase and remained untreated (0), or treated with 0.15 µM LatA for 4 hr. Total extracts were resolved by SDS-PAGE, and For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Results from a representative experiment are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** cdc10-129 (G1-phase arrest), cdc25-22 (G2-phase arrest), and nda3-km311 (M-phase arrest) cells expressing a genomic For3-3GFP fusion were incubated at either 25°C (asynchronous cultures), 36.5°C for 3.5 hr (cdc10-129 and cdc25-22 backgrounds) and 25 or 18°C for 7 hr (nda3-km311 background). Total For3 levels were determined by immunobloting with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Relative For3 levels are represented as mean ± SD (biological duplicates). ns, not significant, as calculated by unpaired Student's t test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** mRNA levels of for3+ gene were measured by qPCR from total RNA extracted from cell samples corresponding to S. pombe wild type, sty1Δ, wis1DD and atf1Δ strains growing exponentially in YES medium. Results are shown as relative fold expression (mean ± SD) from three biological repeats. ***, p<0.001; ns, not significant, as calculated by unpaired Student's t test with respect to the wild type.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** S. pombe wild-type and sty1Δ cells expressing a genomic For3-3GFP fusion were grown in YES medium to mid-log phase, and incubated at 40°C, or treated with 0.6 M KCl or 1 mM H2O2 for the indicated times. Total For3 levels were detected with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Results from representative experiments are shown.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) In vivo ubiquitination of For3-3GFP wild-type cells expressing 6His-ubiquitin (-B1; 24 hr) during unperturbed growth. Input fraction and precipitated 6His-ubiquitin conjugates were analyzed by anti-GFP (upper panels) and anti-ubiquitin (lower panel) immunoblotting. Negative control: WT cells expressing untagged For3. (B) The same assay as above was performed with wild type and mts3-1 For3-3GFP cells expressing 6His-ubiquitin (-B1; 24 hr), and incubated at either 28 or 36°C for 4 hr before precipitation of 6His-ubiquitin conjugates. Representative experiments are shown.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** S. pombe wild-type and sty1Δ cells expressing a genomic For3-3GFP fusion were grown in YES medium to mid-log phase, and incubated with 100 µg/ml LatA for the indicated times. Total For3 levels were detected with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Relative For3 levels are represented as mean ± SD (biological duplicates) with respect to the zero time.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Bacterially purified GST-For31, GST-For32, and GST-For33 fragments fusions were incubated with ATP-γ-S and GST-wis1DD (constitutively active MAPKK) and GST-Sty1-(T97A) (analogue-sensitive MAP kinase), in the presence or absence of a specific kinase inhibitor (3-Br-PP1). Total Wis1, Sty1, and For3 levels in the reaction mixture were determined after incubation with anti-GST antibody, whereas putative For3 thiophosphorylation was assayed with anti-thioP-ester antibody. An identical assay was also performed in parallel employing as a positive control GST-fused transcription factor Atf1, a well-known phosphorylated substrate by Sty1. Representative experiments are shown.
 
 We also measured by qPCR analysis mRNA expression levels of for3+gene that, in contrast to protein levels, were reduced to approximately ~50% and~25% in sty1∆ cells and atf1∆ cells, respectively, and remained unchanged in wis1DD cells as compared to wild-type cells (Figure 5—figure supplement 2). Additionally, in wild-type cells for3+ mRNA expression increased gradually in response to a range of LatA concentrations (Figure 5E). Notably, these conditions, which induce a progressive rise in Sty1 phosphorylation, prompted a concomitant decrease in For3-3GFP protein levels instead (Figure 5F). We did not observe a significant decrease of For3-3GFP levels at early incubation times (0–60 min) in wild-type cells treated with low LatA concentrations (0.150–0.200 µM), even though a high percentage of cells (~80%) showed damaged CAR under these conditions (Figure 2G). Perhaps, this decline might be subtle and below the limit of detection of the western blot assay. Alternatively, specific pools of the formin may undergo subtle reductions at defined subcellular locations like the CAR. In agreement with this prediction, For3 levels decreased quickly (30 min) in synchronized cdc2-asM17 For3-3GFP cells treated with 0.200 µM LatA 10 min after release from the G2 arrest (Figure 5G), as they are entering mitosis (~20% binucleated cells) and undergoing CAR assembly. This observation suggests that reduction of For3 levels is an essential factor responsible for the CAR integrity defects in the presence of LatA.
 
@@ -86,23 +186,23 @@ The actin-binding proteins profilin (Cdc3) and tropomyosin (Cdc8) localize to th
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig6-v2.jpg)
 
-**Figure 6.:** (A) Decimal dilutions of strains of the indicated genotypes were spotted on YES solid plates, incubated at 25, 28, 30, 32, 34, and 37°C for 3 days, and photographed. (B) Growing cultures of the indicated strains expressing a For3-3GFP genomic fusion were incubated at 34°C for 4 hr. Total extracts obtained from the respective cell aliquots were resolved by SDS-PAGE, and total For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of western blot experiments. Relative For3 levels are represented as mean ± SD (biological duplicates). **, p<0.005; *, p<0.05, as calculated by unpaired Student's t test.  Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Decimal dilutions of strains of the indicated genotypes were spotted on YES solid plates, incubated at 25, 28, 30, 32, 34, and 37°C for 3 days, and photographed. (B) Growing cultures of the indicated strains expressing a For3-3GFP genomic fusion were incubated at 34°C for 4 hr. Total extracts obtained from the respective cell aliquots were resolved by SDS-PAGE, and total For3 levels were detected by incubation with anti-GFP antibody. Anti-Cdc2 was used as a loading control. Lower panel: quantification of western blot experiments. Relative For3 levels are represented as mean ± SD (biological duplicates). **, p<0.005; *, p<0.05, as calculated by unpaired Student's t test.
 
-## For3 is a dose-dependent regulator of CAR integrity in S. pombe
+### For3 is a dose-dependent regulator of CAR integrity in S. pombe
 
 If the SAPK pathway downregulates For3 levels to negative control CAR integrity, then inducing progressive ectopic expression of the formin should diminish CAR damage in the presence of LatA. To test this hypothesis, we employed the β-estradiol-regulated system based on the Z3EV synthetic transcription factor recently implemented for S. pombe (Ohira et al., 2017) and constructed a for3∆ strain in which the expression of a For3-HA C-terminal fusion is under control of the Z3EV promoter. As shown in Figure 7A, total levels of a genomic For3-HA fusion were similar to those present after incubation of for3∆ Z3EV:For3-HA cells for 3 hr in the presence of 10 nM β-estradiol, and increased approximately 3–4 fold after 6 hr of incubation. As compared to cells expressing wild type-like levels of the formin, enhanced For3 levels led to a significant reduction in CAR damage during treatment with 0.15 µM LatA, while strong CAR defects were observed 12 hr after β-estradiol removal again (Figure 7B). Therefore, For3 behaved as a dose-dependent regulator of CAR integrity in S. pombe.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig7-v2.jpg)
 
-**Figure 7.:** S. pombe.(A) For3-HA (wild type) and for3Δ Z3EVpr:For3-HA strains were grown to mid-log phase, and the later culture was treated with 10 nM β-estradiol for 0, 3 and 6 hr. Total extracts were resolved by SDS-PAGE, and For3 levels were detected by incubation with anti-HA-HRP antibody. Anti-Cdc2 was used as a loading control. Relative For3 levels are represented as mean ± SD (biological duplicates). **, p<0.005; ns, not significant, as calculated by unpaired Student's t test with respect to the wild type. (B) for3Δ Z3EVpr:For3-HA cells grown to mid-log phase were treated with 0.15 µM LatA for the indicated times after being incubated in absence (-) or presence of 10 nM β-estradiol for 3 and 6 hr, or 6 hr with β-estradiol plus 12 hr after hormone washout. Upper panel: the percentage of cells that show damaged CAR was estimated in each case by fluorescence microscopy (n > 200), and is presented as mean ± SD (biological triplicates). ****, p<0.0001, as calculated by unpaired Student's t test. Lower panel: representative images of cell samples after treatment with 0.15 µM LatA for 60 min are shown.  Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) For3-HA (wild type) and for3Δ Z3EVpr:For3-HA strains were grown to mid-log phase, and the later culture was treated with 10 nM β-estradiol for 0, 3 and 6 hr. Total extracts were resolved by SDS-PAGE, and For3 levels were detected by incubation with anti-HA-HRP antibody. Anti-Cdc2 was used as a loading control. Relative For3 levels are represented as mean ± SD (biological duplicates). **, p<0.005; ns, not significant, as calculated by unpaired Student's t test with respect to the wild type. (B) for3Δ Z3EVpr:For3-HA cells grown to mid-log phase were treated with 0.15 µM LatA for the indicated times after being incubated in absence (-) or presence of 10 nM β-estradiol for 3 and 6 hr, or 6 hr with β-estradiol plus 12 hr after hormone washout. Upper panel: the percentage of cells that show damaged CAR was estimated in each case by fluorescence microscopy (n > 200), and is presented as mean ± SD (biological triplicates). ****, p<0.0001, as calculated by unpaired Student's t test. Lower panel: representative images of cell samples after treatment with 0.15 µM LatA for 60 min are shown.
 
-## The SAPK pathway promotes CAR integrity in S. japonicus
+### The SAPK pathway promotes CAR integrity in S. japonicus
 
 The SAPK pathway functions, including cell cycle control, adaptation to stress conditions, and regulation of sexual differentiation, are evolutionarily conserved both in S. pombe and Schizosaccharomyces japonicus. However, unlike S. pombe, S. japonicus delays the assembly of a centrally positioned ring until chromosome segregation is complete (Gomez-Gil et al., 2019). Hence, we wondered if the SAPK-dependent negative control of CAR integrity present in S. pombe is also shared by S. japonicus. We found that S. japonicus LatA-sensitivity on solid medium was approximately one order of magnitude higher than in S. pombe (Figure 8A). By employing phospho-p38 antibodies (Gomez-Gil et al., 2019), we observed that, similar to S. pombe, S. japonicus Sty1 became increasingly activated after 1 hr of treatment with LatA in a dose-dependent manner (Figure 8B). However, in sharp contrast to S. pombe SAPK mutants, S. japonicus sty1∆ and atf1∆ cells were strongly hypersensitive to LatA (Figure 8A). Accordingly, time-lapse fluorescence microscopy of exponentially growing S. japonicus strains co-expressing Rlc1-GFP and Pcp1-mCherry fusions and treated with 0.005 µM LatA revealed that, in contrast to wild-type cells, most cytokinetic nodes in sty1∆ cells (~90%) were unable to coalesce and form a compact and functional CAR (Figure 8C). These results suggest that S. japonicus SAPK pathway may have a positive impact on CAR assembly and integrity during stress induced with LatA.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/57951/elife-57951-fig8-v2.jpg)
 
-**Figure 8.:** S. japonicus during actin stress induced with LatA.(A) Decimal dilutions of S. japonicus wild type, sty1Δ, and atf1Δ strains were spotted on YES and YES solid plates with the indicated concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (B) Upper panel: S. japonicus wild-type cells were grown in YES medium to mid-log phase, and remained untreated (0), or treated with the indicated concentrations of LatA for 1 hr. Activated Sty1 was detected with anti-phospho-p38 antibody. Anti-Cdc2 was used as a loading control. Lower panel: Relative units as mean ± SD (biological duplicates) for Sty1 phosphorylation (anti-phospho-p38 blot) were determined with respect to the loading control (anti-Cdc2 blot). **, p<0.005; *, p<0.05; ns, not significant, as calculated by unpaired Student's t test. (C) Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. japonicus wild-type and sty1Δ cells growing in YES medium to mid-log phase in the presence of 0.005 µM LatA. Mitotic progression was monitored using Pcp1-mCherry-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 47) and is presented as mean ± SD (biological triplicates). ***, p<0.001, as calculated by unpaired Student's t test.  Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Decimal dilutions of S. japonicus wild type, sty1Δ, and atf1Δ strains were spotted on YES and YES solid plates with the indicated concentrations of LatA, incubated at 30°C for 3 days, and photographed. A representative experiment is shown. (B) Upper panel: S. japonicus wild-type cells were grown in YES medium to mid-log phase, and remained untreated (0), or treated with the indicated concentrations of LatA for 1 hr. Activated Sty1 was detected with anti-phospho-p38 antibody. Anti-Cdc2 was used as a loading control. Lower panel: Relative units as mean ± SD (biological duplicates) for Sty1 phosphorylation (anti-phospho-p38 blot) were determined with respect to the loading control (anti-Cdc2 blot). **, p<0.005; *, p<0.05; ns, not significant, as calculated by unpaired Student's t test. (C) Representative time-lapse maximum-projection images of Rlc1-GFP dynamics at the equatorial region of S. japonicus wild-type and sty1Δ cells growing in YES medium to mid-log phase in the presence of 0.005 µM LatA. Mitotic progression was monitored using Pcp1-mCherry-marked SPBs. Time interval is 3 min. Right: the percentage of cells that show damaged/defective CAR was estimated for each strain (n> 47) and is presented as mean ± SD (biological triplicates). ***, p<0.001, as calculated by unpaired Student's t test.
 
 ## Discussion
 
@@ -122,51 +222,250 @@ Our preliminary data suggest that the activation of the SAPK pathway fosters CAR
 
 ## Materials and methods
 
-## Fission yeast strains, growth conditions and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-p38 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9211, RRID:AB_331641</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11 583 816 001, RRID:AB_514505</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11 814 460 001, RRID:AB_390913</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-HA antibody (rat monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 12 013 819 001, RRID:AB_390917</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cdk1/Cdc2 (PSTAIR)(rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 06–923; RRID:AB_310302</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta actin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab8224; RRID:AB_449644</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Atf1 (ATF1 2A9/8) (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab18123; RRID:AB_444264</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG- peroxidase (goat polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: A5278; RRID:AB_258232</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG- peroxidase (goat polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: A6667; RRID:AB_258307</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Thiophosphate ester (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab239919</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST HRP-conjugated (goat polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: RPN1236; RRID:AB_771429</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ubiquinin HRP-conjugated (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-8017; RRID:AB_628423</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Quiagen</td>
+      <td>Cat#: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iScript reverse transcription supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 1708841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ECL Western Blotting Reagents</td>
+      <td>GE-Healthcare</td>
+      <td>Cat#: RPN2106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-estradiol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: E2758</td>
+      <td>10–500 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosTag acrylamide</td>
+      <td>Wako Chemical</td>
+      <td>Cat#: 300–93523</td>
+      <td>15 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrB-PP1 AKT inhibitor</td>
+      <td>Abcam</td>
+      <td>Cat#: ab143756</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PP1 Analog III, 3-MB-PP1</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 529582</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin A</td>
+      <td>Wako Chemical</td>
+      <td>Cat#: 129–04361</td>
+      <td>0.05–3 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa fluor 488-conjugated phalloidin</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#: A12379</td>
+      <td>200 units/ml (~6.6 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Soybean lectin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: L2650</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>https://imagej.net/Fiji/Downloads</td>
+      <td>Quantification of western blots and microscopic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 6.0</td>
+      <td>Graphpad</td>
+      <td>https://www.graphpad.com/scientific-software/prism//</td>
+      <td>Statistical analysis and graphs representation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>μ-Slide eight well</td>
+      <td>Ibidi</td>
+      <td>Cat#: 80826</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fission yeast strains, growth conditions and reagents
 
 The S. pombe and S. japonicus strains used in this work are listed in Supplementary file 1. They were routinely grown with shaking at 28°C or 30°C in 0.6% yeast extract with 2% glucose, and supplemented with adenine, leucine, histidine, or uracil (100 mg/L, Sigma-Aldrich) (YES medium) (Moreno et al., 1991). Solid medium was made by adding 2% agar (Difco Bacto Agar). Minimal (EMM2) medium (Moreno et al., 1991) with or without 5 µg/ml thiamine was employed in ubiquitin pull-down experiments. Strains expressing different genomic fusions in single and multiple genetic backgrounds were constructed either by transformation, or after tetrad or random spore dissection and analysis of appropriate crosses in sporulation medium (SPA) (Petersen and Russell, 2016). Latrunculin A (Wako Chemical) was added from a filter-sterilized stock (5 mM in DMSO) at the indicated concentrations to YES log-phase liquid cultures (S. pombe: OD600 = 0.5; ~106 cells/ml; S. japonicus: OD600 = 0.5; ~2.25 105 cells/ml), or to solid medium after autoclaving. To investigate protein degradation rate, log-phase liquid cultures were incubated in the presence of 100 µg/ml of the translational inhibitor cycloheximide (Sigma Aldrich). In experiments with cells expressing an analogue-sensitive cdc2 kinase version (cdc2-asM17), log-phase liquid cultures were treated with 1 µM 3-MB-PP1 (Sigma Aldrich, 529582) dissolved in DMSO. In experiments with strains expressing an analogue-sensitive Sty1 kinase version (Sty1-T97A), log-phase liquid cultures were treated with 10 µM 3BrPP1 (Abcam, ab143756) prepared from a 25 mM stock dissolved in methanol.
 
-## Expression of For3 under the control of the β-estradiol-regulated promoter
+### Expression of For3 under the control of the β-estradiol-regulated promoter
 
 To obtain a plasmid expressing a For3-HA C-terminal fusion under the control of the β-estradiol-regulated promoter, the Z3EV promoter sequence first was amplified from plasmid pFS462 (Ohira et al., 2017) using oligonuclotides XhoI-Z3EVPR-F and SmaI-Z3EVPR-R (Supplementary file 2). The PCR product was digested with XhoI and SmaI and cloned into integrative plasmid pJK210 (Petersen and Russell, 2016). Next, for3+ ORF was amplified by PCR using genomic DNA from wild-type cells as template and the oligonucleotides For3-PJK210ZEV-F(SmaI) and For3-HA-PJK210ZEV-R(SacII), which incorporates a DNA sequence encoding a single HA epitope in the C-terminal end of the ORF (Supplementary file 2). The purified PCR product was digested with SmaI and SacII and cloned into pJK210-Z3EVpr to obtain plasmid pJK210-Z3EVpr:For3-HA, which was confirmed by DNA sequencing. Plasmid pJK210-Z3EVpr:For3-HA was then digested within the ura4+ ORF with StuI and transformed into strain E1723 (for3∆ ura4.294) (Supplementary file 1) to yield strain E1751 (for3∆ Z3EVpr:For3-HA:ura4+ ura4.294). Finally, strain E1751 was crossed with the strain E1687, which constitutively expresses the Z3EV transcription factor under the control of the strong adh1 promoter (Ohira et al., 2017), yielding the inducible strain E1764 (for3∆ adh1: Z3EV Z3EVpr:For3-HA). In experiments performed with this strain, cultures growing in either liquid or solid YES medium were treated with varying amounts of β-estradiol (Sigma Aldrich, E2758), prepared from a 5 mM stock dissolved in methanol.
 
-## cDNA synthesis and quantitative real-time polymerase chain reaction (qPCR)
+### cDNA synthesis and quantitative real-time polymerase chain reaction (qPCR)
 
 S. pombe wild-type and mutant strains were grown in YES medium to a final OD600 = 0.5; (~106 cells/ml). Total RNAs were purified using the RNeasy mini kit (Qiagen), treated with DNase (Invitrogen), and quantitated using Nanodrop 100 spectrophotometer (ThermoScientific). Total RNAs (1 μg) were reverse transcripted into cDNA with the iScript reverse transcription supermix (BioRad). Quantitative real time polymerase chain reactions (qPCR) were performed using the iTaq Universal SYBR Green Supermix and a CFX96 Real-Time PCR system (BioRad Laboratories, CA). Relative gene expression was quantified based on 2−ΔΔCT method and normalized using leu1+ mRNA expression in each sample. The list of gene-specific primers for qPCR is indicated in Supplementary file 2.
 
-## Detection of total and activated Sty1 levels
+### Detection of total and activated Sty1 levels
 
 We followed the method described in Mutavchiev et al., 2016 with slight modifications. Fission yeast cultures were grown in YES to a final OD600 = 0.5, and were supplemented with the desired final concentrations of Lat A or 1% DMSO (solvent control). Samples of 5 ml were collected at the indicated times and immediately centrifuged for 20 s at 3200 rpm/4°C. The cell pellets were resuspended in 1 ml ice-cold 10 mM NaPO4 0.5 mM EDTA pH 7.5 buffer, transferred to 1.5 ml tubes, centrifuged at 13,000 rpm/4°C, and stored at −80°C until further processing. Cell lysis was achieved in a FastPrep instrument after mixing the cell pellets with pre-chilled 0.5 mm glass beads to −20°C with ice-cold lysis buffer (20 mM Tris-HCl, pH 8.0, 2 mM EDTA, 100 mM NaCl, and 0.5% NP-40 and containing a protease inhibitor cocktail [Sigma Aldrich]). The cell lysates were finally clarified by centrifugation at 13,000 rpm at 4°C for 5 min. Dual phosphorylation of Sty1 was detected employing a rabbit polyclonal anti-phospho-p38 antibody (RRID:AB_331641; Cell Signaling). Total Sty1 was detected in S. pombe extracts with mouse monoclonal anti-HA antibody (RRID:AB_514505; 12CA5, Roche Molecular Biochemicals), whereas rabbit polyclonal anti-Cdk1/Cdc2 (PSTAIR) (RRID:AB_310302; Millipore) was used as loading control in S. japonicus extracts. Immunoreactive bands were revealed with anti-mouse (RRID:AB_258232) or anti-rabbit (RRID:AB_258307) HRP-conjugated secondary antibodies (Sigma Aldrich) and the ECL system (GE-Healthcare).
 
-## Detection of For3 levels
+### Detection of For3 levels
 
 Total protein extracts from exponentially growing S. pombe cultures (OD600 = 0.6) expressing a genomic For3-3GFP fusion were obtained with lysis buffer (20 mM Tris-HCl, pH 8.0, 2 mM EDTA, 100 mM NaCl, and 0.5% NP-40 and containing a protease inhibitor cocktail [Sigma-Aldrich]) as described above. Proteins were resolved in 6% SDS-PAGE gels and transferred to Hybond-ECL membranes. To detect For3 in synchronized cultures Cdc25-22 cells expressing For3-3GFP were grown in YES to mid log phase, shifted to 36.5°C for 3.5 hr, and then released to the permissive temperature (25°C). Samples were collected every 30 min and the corresponding protein extracts were obtained. Cell samples were also collected in parallel at each time-point, fixed with cold 70% ethanol, and monitored for cell cycle progression and septation after DAPI and calcofluor staining, respectively. Cdc10-129 (G1-phase arrest), and Nda3-km311 (M-phase arrest) mutants expressing For3-3GFP genomic fusion were incubated at either 36.5°C for 3.5 hr (cdc10-129 background) or 18°C for 7 hr (nda3-km311 background). The For3-3GFP fusion was detected an all experiments the employing a mouse monoclonal anti-GFP antibody (RRID:AB_390913; Roche). Detection of the For3-HA fusion under the control of the β-estradiol-regulated promoter (Z3EVpr) was achieved by incubation with a rat monoclonal HRP-conjugated anti-HA antibody (RRID:AB_390917; clone 3F10, Roche). Rabbit polyclonal anti-Cdk1/Cdc2 (PSTAIR) (RRID:AB_310302; Millipore) was used for loading control. Immunoreactive bands were revealed with anti-rabbit peroxidase-conjugated secondary antibody (RRID:AB_258307; Sigma Aldrich), and the ECL system (GE-Healthcare).
 
-## Lambda phosphatase treatment
+### Lambda phosphatase treatment
 
 In the For3 dephosphorylation assay 10 µg of protein were treated with 40 U of λ-protein phosphatase (New England Biolabs) in the presence/absence of specific phosphatase inhibitor (5 mM sodium orthovanadate) for 50 min at 30°C. Protein electrophoresis was performed on 6% SDS-PAGE gels and the For3-3GFP fusion was detected as indicated.
 
-## Ubiquitin pull-down experiments
+### Ubiquitin pull-down experiments
 
 Expression of nmt1 promoter-driven 6His-ubiquitin (pREP1-6His-Ubi) was performed by growing cells in liquid EMM2 -leu or -ura media without thiamine for 24 hr. Forty-five minutes prior to harvest, cells were treated with 5 mM N-ethylmaleimide (NEM; Sigma Aldrich) added directly to the growth medium. Then, exponentially growing cultures corresponding to an OD600 = 0.8–1 were harvested and the cells were washed once with ice-cold PBS 1x. Cell lysis was achieved in a FastPrep instrument after mixing the cell pellets with pre-chilled 0.5 mm glass beads with ice-cold buffer G (6 M guanidine hydrochloride, 0.1 M sodium phosphate, 50 mM Tris-HCl pH 8). The cell lysates were finally clarified by centrifugation at 13,000 rpm at 4°C for 10 min. His-Ubiquitin conjugates were purified by incubating with Ni++-nitrilotriacetic acid-agarose beads (Qiagen) for 2 hr at 4°C. The bound material was washed three times with a buffer containing 20 mM Tris-HCl, pH 8.0, 2 mM EDTA, 100 mM NaCl, 0.5% Nonidet P-40, and 15 mM imidazole, plus a protease inhibitor cocktail (Sigma Aldrich). The purified proteins were eluted with sample buffer, incubated at 100°C for 8 min, resolved through 6% SDS-PAGE gels, transferred to Hybond-ECL membranes, and analyzed by immunoblotting with a mouse monoclonal anti-GFP (RRID:AB_390913; Roche) and anti-ubiquitin HRP-conjugated (RRID:AB_628423; Santa Cruz Biotechnology) antibodies. The immunoreactive bands were revealed with anti-mouse peroxidase-conjugated secondary antibody (RRID:AB_258232; Sigma-Aldrich), and the ECL system (GE-Healthcare).
 
-## Detection of Cdc12, Atf1, and actin levels
+### Detection of Cdc12, Atf1, and actin levels
 
 Cells from yeast cultures were fixed and total protein extracts were prepared by precipitation with trichloroacetic acid (TCA) as previously described (Grallert and Hagan, 2017). Proteins were resolved in 6% (Cdc12) or 10% (Atf1; actin) SDS-PAGE gels and transferred to Hybond-ECL membranes. Where indicated, samples were resolved by SDS-PAGE in the presence of 15 μM PhosTag acrylamide (Wako Chemical) following the indications of the manufacturer. Cdc12-3HA fusions were detected employing a rat monoclonal HRP-conjugated anti-HA antibody (RRID:AB_390917; clone 3F10, Roche). Actin and Atf1 levels were detected, respectively, with mouse monoclonal anti-beta actin (RRID:AB_449644; ab8224) and anti-Atf1 (RRID:AB_444264; ab18123) antibodies from Abcam. Rabbit polyclonal anti-Cdk1/Cdc2 (PSTAIR) (RRID:AB_310302; Millipore) was used for loading control. Immunoreactive bands were revealed with anti-mouse (RRID:AB_258232) or anti-rabbit (RRID:AB_258307) HRP-conjugated secondary antibodies (Sigma Aldrich) and the ECL system (GE-Healthcare).
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 GST-Wis1DD (constitutively active MAPKK), GST-Sty1 (T97A) (analogue-sensitive MAPK), and GST-Atf1 fusions were expressed and purified from Escherichia coli with glutathione-Sepharose 4B beads (GE Healthcare, USA) as described (Mutavchiev et al., 2016). Bacterially expressed fusions GST-For31 (aminoacids 1–390), GST-For32 (aminoacids 391–920) and GST-For33 (aminoacids 921–1461) (Figure 5—figure supplement 2) were obtained by PCR employing genomic DNA from wild type cells as a template, and the respective oligonucleotide pairs GST-For31-F(SmaI) plus GST-For31-R(NcoI), GST-For32-F(SmaI) plus GST-For32-R(NcoI), and GST-For33-F(SmaI) plus GST-For33-R(NcoI) (Supplementary file 2). The corresponding PCR products were then digested with SmaI and NcoI and cloned into plasmid pGEX-KG. Once purified and after extensive washing, GST-Wis1DD, GST-Sty1 (T97A), plus GST-For31, GST-For32, GST-For33, or GST-Atf1 fused substrates were incubated in 20 mM Tris (pH 8), 10 mM MgCl2, and 20 μM ATPγS at 30°C for 45 min in the presence/absence of 20 μM kinase-specific inhibitor BrB-PP1 (Abcam). The kinase reaction was stopped by adding 20 mM EDTA, and the reaction mixture was alkylated after incubation at room temperature with 2.5 mM p-nitrobenzyl mesylate for 1 hr. Atf1 and/or For3 phosphorylation was detected with rabbit monoclonal anti-Thiophosphate ester antibody (ab239919; Abcam). GST fusions were detected with goat anti-GST HRP-conjugated antibody (RRID:AB_771429; GE Healthcare).
 
-## Quantification and reproducibility of western blot experiments
+### Quantification and reproducibility of western blot experiments
 
 Densitometric quantification of western blot signals as of 16-bit. jpg digital images of blots was performed using ImageJ (Schneider et al., 2012). The desired bands plus background were drawn as rectangles and a profile plot was obtained for each band (peaks). To minimize the background noise in the bands, each peak floating above the baseline of the corresponding peak was manually closed off using the straight-line tool. Finally, measurement of the closed peaks was performed with the wand tool. Relative Units for Sty1 activation in Figures 1C and 8B were estimated by determining the signal ratio of the anti-phospho-p38 blots with respect to the anti-HA blot (total Sty1 in S. pombe extracts) or anti-cdc2 (S. japonicus extracts) at each time point. Relative Units for total Act1 and For3 levels in Figure 5B, C, F, G and Figure 7B, Figure 2—figure supplement 2, Figure 5—figure supplement 2 and Figure 5—figure supplement 6 were estimated by determining the signal ratio of the correspondent anti-Act1, or anti-GFP (total For3) blots with respect to the anti-cdc2 blot (internal control) at each time point. Depending on the experiment, quantification data shown may correspond to representative experiments, or those performed as biological duplicates or triplicates. Mean relative units ± SD and/or representative results are shown. p-Values were analyzed by unpaired Student's t test. Graphs and statistical analyses were performed with Prism 6.0 (GraphPad Software).
 
-## Plate assays of stress sensitivity for growth
+### Plate assays of stress sensitivity for growth
 
 S. pombe and S. japonicus wild-type and mutant strains were grown in YES liquid medium to OD600 of 0.5 (S. pombe) or 0.3 (S. japonicus), and appropriate decimal dilutions were spotted per triplicate on YES solid plates or in the same medium supplemented with varying concentrations of LatA. Plates were incubated at either 28 or 30°C for 3 days and then photographed. All the assays were repeated at least three times with similar results. Representative experiments are shown in the corresponding Figures.
 
-## Microscopy analysis
+### Microscopy analysis
 
 For calcofluor staining, a solution of Calcofluor White (50 mg/ml final concentration) was directly added to early logarithmic phase cells. To perform actin staining with Alexa-Fluor phalloidin, mid-log cultures in YES (5 ml) were fixed for 40 min at 28°C with 1/10 vol of PEM (0.1 M Na PIPES pH 6.8, 1 mM EGTA, 1 mM MgCl2), and 1/5 vol of 16% EM-grade formaldehyde. Cells were then washed three times with 0.5 ml PEM, permeabilized for 30 s with PEM/1% Triton X-100, washed three additional times with PEM, and the cell pellets were resuspended in the remaining liquid. For staining, 8 µl of Alexa fluor 488-conjugated phalloidin (Thermo Fisher Scientific) dissolved in PEM (~6.6 µM) were added to 1 µl of the resuspended cell pellets, and incubated in the dark for 1 hr at room temperature in a rocking platform.
 

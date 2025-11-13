@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Multiple resistance and pH adaptation (Mrp) antiporters are multi-subunit Na + (or K + )/H + exchangers representing an ancestor of many essential redox-driven proton pumps, such as respiratory complex I. The mechanism of coupling between ion or electron transfer and proton translocation in this large protein family is unknown. Here, we present the structure of the Mrp complex from Anoxybacillus flavithermus solved by cryo-EM at 3.0 Å resolution. It is a dimer of seven-subunit protomers with 50 trans-membrane helices each. Surface charge distribution within each monomer is remarkably asymmetric, revealing probable proton and sodium translocation pathways. On the basis of the structure we propose a mechanism where the coupling between sodium and proton translocation is facilitated by a series of electrostatic interactions between a cation and key charged residues. This mechanism is likely to be applicable to the entire family of redox proton pumps, where electron transfer to substrates replaces cation movements.
+Multiple resistance and pH adaptation (Mrp) antiporters are multi-subunit Na+ (or K+)/H+ exchangers representing an ancestor of many essential redox-driven proton pumps, such as respiratory complex I. The mechanism of coupling between ion or electron transfer and proton translocation in this large protein family is unknown. Here, we present the structure of the Mrp complex from Anoxybacillus flavithermus solved by cryo-EM at 3.0 Å resolution. It is a dimer of seven-subunit protomers with 50 trans-membrane helices each. Surface charge distribution within each monomer is remarkably asymmetric, revealing probable proton and sodium translocation pathways. On the basis of the structure we propose a mechanism where the coupling between sodium and proton translocation is facilitated by a series of electrostatic interactions between a cation and key charged residues. This mechanism is likely to be applicable to the entire family of redox proton pumps, where electron transfer to substrates replaces cation movements.
 
 ## Introduction
 
@@ -27,19 +27,256 @@ The structure of the universal common ancestor of these enzymes, the Mrp complex
 
 ## Results
 
-## Structure determination
+### Structure determination
 
 The Mrp complex from Anoxybacillus flavithermus shows high sequence similarity to the well-characterised Mrp complexes from Bacillus sp (Figure 4—figure supplements 3–4). The His-tagged Mrp complex from A. flavithermus was recombinantly expressed in the antiporter-deficient E. coli strain KNabc (Goldberg et al., 1987). The complex showed high Na+ (and to a lesser degree K+)/H+ antiport activity and purified to high homogeneity, predominantly as a dimer (Figure 1—figure supplement 1b,f–j). It showed higher apparent stability than the Bacillus complex (Morino et al., 2014). The protein tended to aggregate heavily in ice holes of cryo-EM grids. Therefore, we used grids coated with a very thin layer of continuous carbon, which resulted in a uniform particle distribution (Figure 1—figure supplement 2). However, the particles showed a strong preferred orientation, with the hydrophilic protein surface attached to the carbon. To compensate for the associated loss of information, data collection was performed with grids tilted (Tan et al., 2017) at 35°, resulting in excellent quality maps (Figure 1—figure supplements 2–4). The initial dataset was collected with protein purified in n-Dodecyl β-D-maltoside (DDM) detergent. Particles appeared as dimers of only approximate C2 symmetry as the angle between monomers varied, resulting in several 3D classes differing by that angle. After symmetry expansion in C2 point group in Relion, resulting pseudo-monomer particles could be refined to 3.4 Å resolution (Figure 1—figure supplement 2). This allowed initial model building for most of the model, however, cryo-EM density at the edges of the monomer was fuzzy, with some TM helices (TMH) in the distal part of MrpA completely disordered. Therefore we purified the complex in a milder detergent Lauryl Maltose Neopentyl Glycol (LMNG) and collected a dataset again at 35° tilt. In this case dimers were overall ‘flatter’ than in DDM and possibly closer to their native shape in the flat lipid bilayer (Figure 1—figure supplement 3). Comparisons of cryo-EM maps of various dimers did not reveal any specific differences in the overall structure, apart from different apparent angles between the monomers. The best dimer class refined to 3.7 Å resolution (Figure 1b), while the best pseudo-monomer (after symmetry expansion) class refined to 3.0 Å with excellent density in all areas including previously disordered edges (Figure 1a). This allowed us to build and refine a high quality atomic model of the Mrp dimer (97% complete with only few terminal residues missing, Table 1, Supplementary file 1, Figure 1c).
 
-## Overall structure
+![Figure 1.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig1-v2.jpg)
+
+**Figure 1.:** (a) Cryo-EM density of a monomer, coloured by subunit as indicated. (b) Cryo-EM density of a dimer, with the model shown as a cartoon. (c) Model of the dimer, with each subunit coloured differently. Side view and view from the cytoplasm, where two N-terminal helices of subunit MrpE, forming most of the dimer interface, are circled. (d) Schematic view of the Mrp monomer, MBH complex and complex I. Homologs of Mrp subunits are coloured similarly as in c), with an additional MrpD-like subunit in complex I in orange.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Operon encoding seven subunits (MrpA-MrpG) of Anoxybacillus flavithermus WK1 mrp. Two modules based on the Mrp structure are indicated. (b) Mrp was purified by affinity- and size exclusion chromatography as a final step. The size exclusion elution profile is shown, with LMNG as detergent. The fraction in the middle of the dimer peak (which eluted at around 12.5 ml) was diluted for cryo-EM sample preparation. The elution peaks of the dimer and monomer are highlighted in blue and green, respectively. SDS-PAGE shows the presence of all Mrp subunits, identified by mass-spectrometry. (c) Size exclusion chromatography of Mrp in two different detergents - DDM and LMNG. The elution of the dimer is highlighted in blue. (d) Size exclusion chromatography of non-mutated (AF_Mrp) and mutated Mrp (MrpE L41W and MrpF D35L). The elution peaks of the dimer and monomer are highlighted in blue and green, respectively. (e) SDS-PAGE of the size exclusion chromatography fractions for the mutants MrpF D35L and MrpE L41W shows that all subunits co-elute in a single peak in each case. (f) Na+/H+ antiport activity of AF_Mrp in everted membrane vesicles (EMV) using NaCl to initiate Mrp activity at pH 7.5, pH 8.5 and pH 9.5. Non-transformed KNabc vesicles were used as a control at pH 8.5. The addition of succinate, NaCl and NH4Cl is indicated with arrows. The 100% percentage of acridine orange fluorescence dequenching is shown when 10 mM NH4Cl was added. (g) Na+/H+ antiport activity of AF_Mrp in EMV using KCl to initiate Mrp activity at pH 7.5 and pH 8.5. Non-transformed KNabc vesicles were used as a control at pH 8.5. (h) Na+/H+ antiport activity of AF_Mrp using NaCl to initiate Mrp activity is shown as the percentage of dequenching at pH 6.0, pH 7.5, pH 8.5 and pH 9.5. The results are averages from three independent preparations. The error bars show the standard deviations of the means. (i) Schematic of the Na+/H+ antiport activity using EMV. 1 – Addition of succinate to initiate respiration. 2- Oxidases create a ΔpH. 3 – Quenching of acridine orange. 4- Addition of NaCl to initiate Mrp activity. 5 – Dequenching of acridine orange, which is a measure of the Na+/H+ activity. 6 – Addition of NH4Cl to establish a baseline. (j) Experiments of complementation capacity of AF_Mrp and AF_Mrp mutants MrpF D35L, MrpG S72W, MrpE L41W for the growth of sodium sensitive E. coli KNabc cells. Non-transformed KNabc cells were used as a control. The results are averages from three independent experiments. The error bars show the standard deviations of the means.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative raw micrograph is shown with some of picked particles circled. After classification, the two best classes were either further classified to process the Mrp dimer, or symmetry expanded according to the C2 point group to process the Mrp monomer. Further 3D classifications and 3D auto-refinements resulted in three different dimer classes with distinct angles between the monomers of the dimer and indicated resolutions. 3D auto-refinement, 3D classification, post processing and polishing of the symmetry expanded particles resulted in a reconstructed monomer map with a final resolution of 3.41 Å.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative raw micrograph is shown with some of picked particles circled. After classification, the best class was either further classified to process the Mrp dimer, or 3D auto-refined and symmetry expanded according to the C2 point group to process the Mrp monomer. 3D classification to process Mrp dimer resulted in six classes with distinct angles between the monomers. 3D auto-refinement of the best class in C2 symmetry, resulted in a reconstructed dimer map with a resolution of 3.7 Å. The symmetry expanded particles were further classified to process the Mrp monomer, resulting in two good classes. 3D auto-refinement, post processing and polishing resulted in a reconstructed Mrp monomer map with a resolution of 2.98 Å.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Densities of transmembrane helices from MrpA-G. (b) Densities of β-sheets from MrpA, MrpD and MrpE. (c) Density of phosphatidylethanolamine.
+
+**Table 1.**
+ Cryo-EM data collection, refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection and processing</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="2">105000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="2">300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="2">85</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="2">0.6–2.3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="2">0.84</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td colspan="2">C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td colspan="2">889272</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td colspan="2">285688</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td colspan="2">2.98</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td colspan="2">0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td colspan="2">2.85–4.2</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td>Monomer</td>
+      <td>Dimer</td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>6CFW, 4HEA</td>
+      <td>6CFW, 4HEA</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>2.97</td>
+      <td>3.04</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å)</td>
+      <td>−42, local resolution-filtered</td>
+      <td>−42</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>15448</td>
+      <td>30250</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1873</td>
+      <td>3730</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>510</td>
+      <td>1020</td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>242</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>88.4</td>
+      <td>74.4</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>139.1</td>
+      <td>123.4</td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>89.8</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.0080</td>
+      <td>0.0078</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.32</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.47</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>3.58</td>
+      <td>2.17</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.13</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured (%)</td>
+      <td>95.44</td>
+      <td>95.45</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.56</td>
+      <td>4.55</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>3.73</td>
+      <td>3.61</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall structure
 
 Each monomer consists of seven subunits with a total MW of 213 kDa and comprising 50 TM helices. The largest two subunits, including the N-terminal part of MrpA (MrpAN, TMH1-16) and MrpD are arranged next to each other in a very similar way as the APLS of complex I (Efremov and Sazanov, 2011), with the small subunits BCEFG and the C-terminal part of MrpA (MrpAC, TMH17-21) homologous to MBH subunits ABCDFG (Yu et al., 2018), attached ‘on the right’ of MrpD as shown in Figure 1. MBH subunit H is homologous to MrpD and MBH has its redox module attached ‘on the left’ of MbhH/MrpD, in contrast to complex I with the redox module on the right (Figure 1d). Thus, Mrp has nearly all subunits, except MrpAN, in common with MBH. The fold of these Mrp subunits is extremely well preserved in MBH, including all the key residues, which are conserved and essential for activity (Figure 3a,c, Supplementary file 1). Similarly to MBH, subunits MrpC, AC, F and G each fold into a three-helix sheet-like structure, forming four contiguous layers, flanked on one side by a four-helix subunit MrpB (Figures 1c and 2d). MrpE caps the structure and is involved in dimerization.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig2-v2.jpg)
+
+**Figure 2.:** (a) Surface of the dimer is shown with residues coloured according to Eisenberg hydrophobicity scale from white (hydrophobic) to red (hydrophilic). Apparent extent of the lipid membrane is outlined. (b) Surface charge distribution of the dimer. Top is side view with cytosolic side up. Protein surface is shown coloured red for negative, white for neutral and blue for positive surface charges, with the scale (-5 to +5 kbT/e) shown below. Likely areas of interactions with protons and sodium and are indicated. (c) Internal cavities in the monomer, coloured according to charge. (d) Top, side view of the monomer with tunnels calculated in MOLE shown as red and orange surfaces. Amphipathic helix HL from subunit MrpA is indicated. Bottom, view from the cytoplasm illustrating the high degree of tilt of all helices in the putative Na+-translocating domain relative to helices in the H+-translocating domain (MrpAN/D). Amphipathic helix AH from subunit MrpE is indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Local resolution of the Mrp monomer in LMNG. (b) Local resolution of the Mrp dimer in LMNG. (c) Fourier shell correlation (FSC) curves for the Mrp monomer. (d) FSC curve of the Mrp dimer. (e) K+ ions densities in the map of monomer in DDM. (f) K+ ions and water molecules densities in the map of monomer in LMNG. (g) A potential membrane-thinning area of short TMH1-2 and amphipathic helix AH from MrpE. The surface of one monomer is shown with surface-exposed residues coloured according to Eisenberg hydrophobicity scale from white (hydrophobic) to red (hydrophilic). The second monomer is shown in cartoon only. (h) Cryo-EM map of a representative dimer from the 3D classification run, at about 7 Å resolution. Protein density is in magenta, while the detergent belt is in grey.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig3-v2.jpg)
 
 **Figure 3.:** (a) The Mrp monomer is shown in the centre in side view. Alignments to MBH are in the left column and to complex I in the right column. The top row shows view from the cytosol, with the conserved domains underlined. The arrow indicates ‘swinging out’ of the MrpE TMH1-2 in comparison to MBH. The second row shows the side view, with Mrp subunits coloured as in the centre and complex I/MBH in grey. In the bottom row only MBH and complex I are shown in the same orientation as above, with subunits homologous to Mrp coloured as in Mrp and the rest grey. Quinone-binding subunit in complex I (Nqo8/NuoH) is not present in Mrp and is highlighted in slate. Additional MrpD-like subunit in complex I (Nqo13/NuoM) is in orange. MBH has its redox module attached to the Mrp-like domain on the opposite side compared to complex I. MbhF is homologous to MrpB, MbhG to MrpC, MbhH to MrpD, MbhA to MrpE, MbhB to MrpF, MbhC to MrpG and MbhD together with MbhE to MrpAC. Nqo12/NuoL is homologous to MrpAN, Nqo13/NuoM and Nqo14/NuoN to MrpD, Nqo11/NuoK to MrpC and Nqo10/NuoJ to MrpAC. (b) Overlay of Mrp with the membrane domain of complex I. Key residues, important for H+ translocation and Na+ binding are shown in stick representation, with the residue number indicated in black for Mrp and the corresponding homologous residue of complex I indicated in red. Except for MrpAN and MrpD, suffixes indicate subunit (in E. coli nomenclature for complex I). (c) Overlay of Mrp with the homologous subunits of MBH. Key residues, important for H+ translocation and Na+ binding are shown in stick representation, with the residue number indicated in black for Mrp and the corresponding homologous residue of MBH shown in red. Except for MrpD, suffixes indicate subunit. The positions of two bound K+ ions in Mrp are indicated by purple spheres, with one of them being less visible behind H37c.
 
 The similarity to complex I extends to the entire MrpA, MrpD and MrpC subunits, with the fold and many key residues well conserved (Figure 3a,b, Supplementary file 1 and Figure 4—figure supplement 2b). MrpA braces the complex with the long amphipathic helix HL (Figure 2d) extending from TMH15 to 16, similar to the arrangement in complex I. Among the three copies of APLS in complex I, MrpA is more homologous to the complex I subunit Nqo12/NuoL/ND5 (T. thermophilus/E. coli/mitochondrial nomenclature), while MrpD is closer to complex I Nqo14/NuoN/ND2 (Figure 4—figure supplement 2b). Similarly to APLS in complex I (Efremov and Sazanov, 2011), MrpA and MrpD contain N-terminal (TMH4-8) and C-terminal (TMH9-13) proton translocation half-channels that are related to each other by pseudosymmetry. Both half-channels contain lysine residues sitting on symmetry-related discontinuous (interrupted by a ~6 residue loop) helices (LysTMH7 and LysTMH12). These residues are likely the key to proton translocation because they are absolutely conserved, essential for activity and sit in a strategic position in the centre of each half-channel cavity (Sazanov, 2015). Key LysTMH7 forms a pair with a conserved TMH5 glutamate (GluTMH5), which is thought to modulate the pKa of lysine (Efremov and Sazanov, 2011). A central key lysine sits on another broken (by a π-bulge) helix TMH8 and connects the half-channels (Figure 4a,b). As in complex I, these key residues are connected by additional polar residues and form a central hydrophilic axis running through the middle of the membrane across the entire complex (Figure 4a,b). The flexibility provided by the broken helices may have a role in the conformational coupling mechanism and/or could help with pKa modulations of key residues.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig4-v2.jpg)
+
+**Figure 4.:** (a, b) View from the cytoplasm (a) and side view (b) with key residues proposed to be involved in both pathways indicated. Waters predicted in Dowser software are shown as red spheres and the hydrogen bonds involving protonatable residues and waters are shown as black dashes. Approximate pathways for H+ and Na+ translocation are indicated by arrows. Coupling points between MrpAN and MrpD, and between MrpD and Na+-binding site are indicated by dashed ovals. (c) Details of Na+ pathway. The two experimentally identified bound K+ ions are shown as violet spheres. The key distance between one of the ions and GluTMH5d in the Na+/H+ coupling point is indicated. A large cavity between MrpAC and MrpF is indicated as NaC.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Top and side view of Mrp showing the identified lipid molecules (depicted in orange stick representation), some of which partly fill the Na+ cavity between MrpAC and MrpF. Na+ ions bound in the neighbouring double cavity are depicted as violet spheres. (b) Experimentally identified (present in cryo-EM density) water molecules, shown as red spheres. Residues forming putative proton and Na+ translocation channels are shown in stick representation. Na+ ions are depicted as violet spheres. H+/Na+ coupling point is indicated by the dashed oval. (c) Detailed view of the Na+-binding sites in the double cavity. Experimentally observed K+ ions with coordinating bonds are shown. Distances for important electrostatic interactions with E706a, E137d and K219d are also indicated. (d and e) The profiles of the putative Na+ tunnels calculated in MOLE 2.5. (d) The first tunnel, shown in red in Figure 2d, starts near H37c (on the left in profile), passes through a negatively charged area (due to E706a) and a large cavity before exiting into the cytoplasm. (e) The second tunnel, shown in orange in Figure 2d, starts near H40c (on the left in profile) in the cavity negatively charged due to E137d and passes between MrpD and MrpC before exiting into the periplasm. (f) Detailed view of the Na+ path. Side-chains of additional polar residues lining the path are shown as thin sticks. Internal cavities are shown in grey, with lipids partially filling Na+ cavity shown as sticks. Key charged residues along the path are shown as thick sticks and labelled. H131e and H42g build the Na+ entrance site, D35f, the negatively charged Na+ cavity and E706a build the connection to H37c and H40c at the coupling point. The Na+ pathway is completed by E796a and D792a, which build the Na+ exit site.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Mrp monomer structure coloured according to residue conservation scores calculated in Consurf, blue to red from high to low conservation. The highest conserved regions are the inner core of Mrp and the residues along the proposed Na+ pathway. (b) Overlay of Mrp subunits with homologous subunits from complex I. Mrp subunits are coloured while complex I subunits are in grey. MrpAN and MrpD are shown in top and side view, while MrpAC and MrpC only in side view. Key residues important for H+ translocation and Na+ binding in Mrp, as well as the corresponding homologous residues of complex I are depicted in stick representations.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Sequences from Anoxybacillus flavithermus WK1 (AF), Bacillus pseudofirmus OF4 (BP), Bacillus subtilis (BS) and Staphylococcus aureus (SA) are shown. Where applicable, subunits of T. thermophilus HB8 complex I (Nqo), Thermosynechococcus elongatus (strain BP-1) NDH complex (Ndh) and Pyrococcus furiosus COM1 MBH complex (Mbh) are also added. Transmembrane helices, beta strands and horizontal (amphipathic) helices are depicted as blue bars above the corresponding sequence. Residues which are involved in proton translocation are depicted with blue asterisks. Residues which form part of the proposed Na+ pathway are depicted with red asterisks.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/59407/elife-59407-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Sequences from Anoxybacillus flavithermus WK1 (AF), Bacillus pseudofirmus OF4 (BP), Bacillus subtilis (BS) and Staphylococcus aureus (SA) are shown. Where applicable, subunits of T. thermophilus HB8 complex I (Nqo), Thermosynechococcus elongatus (strain BP-1) NDH complex (Ndh) and Pyrococcus furiosus COM1 MBH complex (Mbh) are also added. Transmembrane helices, beta strands and horizontal (amphipathic) helices are depicted as blue bars above the corresponding sequence. Residues which are involved in proton translocation are depicted with blue asterisks. Residues which form part of the proposed Na+ pathway are depicted with red asterisks.
 
 As expected from sequence homology, the C-terminal MrpA TMH17-21 have the same fold as the complex I subunit Nqo10/NuoJ/ND6, although the three essential for activity carboxylate residues from MrpA, E706, D792 and E796 (Supplementary file 1, Figure 4—figure supplement 3), are not conserved in complex I (Figure 4—figure supplement 2b). Key E706 is replaced by Y59 in complex I, where this essential tyrosine sits on a π-bulge in TMH3 of Nqo10. This π-bulge can be wound up in mammalian complex I by a striking rotation of this helix, highly conserved in complex I and probably critical for its mechanism (Agip et al., 2018; Letts et al., 2019). The π-bulge in the corresponding helix is also present in the MBH complex (Yu et al., 2018). Interestingly, the bulge appears to be absent in the Mrp, so it may not be a universal feature or it is possible that it may appear in a different state of the complex, for example at high pH (current structure is solved at pH 6.0). Subunit MrpC fold is very similar to the complex I subunit Nqo11/NuoK/ND4L but instead of two histidines H37 and H40, conserved in Mrp, complex I has two essential glutamates (Figure 4—figure supplement 2b).
 
@@ -55,7 +292,7 @@ This strikingly bipartite pattern of charge distribution strongly suggests that 
 
 One of the prominent tunnels identified by MOLE (red in Figure 2d) originates near H37c, passes by the key E706a, through the Na+ cavity and then near the conserved D35f before exiting into the cytoplasm. It is negatively charged at the origin, as would be appropriate for Na+, but has some narrow passages of about 1 Å radius (Figure 4—figure supplement 1d), so the access must be regulated. Another tunnel (orange in Figure 2d) originates in the cavity near H40c, which is also lined by the key E137d (GluTMH5) and continues towards the periplasm at the interface between MrpD and MrpC subunits (Figure 4—figure supplement 1e). Since H37c and H40c cavities are linked, these two tunnels can form a channel for Na+ translocation across the membrane, with the passage through the narrow restrictions regulated as part of the coupling mechanism.
 
-## Proton translocation pathways
+### Proton translocation pathways
 
 A striking pattern of charge distribution and conservation of the fold and key residues between proton-pumping complex I and Mrp (Figure 4—figure supplement 2b) leaves no doubt that proton translocation channels are found in MrpAN and MrpD subunits, similarly to complex I and other related redox proton pumps. High local resolution (~2.9 Å) in the core of the structure allowed us to model many bound water molecules (Figure 2—figure supplement 1a,f). They are found mostly on the hydrophilic surfaces of the complex and along the entire central hydrophilic axis around key charged residues, confirming the previously suggested hydration of the central axis (Baradaran et al., 2013; Figure 4—figure supplement 1b). Since at 2.9 Å resolution we are still limited in the identification of water molecules, for the analysis of the complete proton translocation pathways we have modelled waters in Dowser (Zhang and Hermans, 1996; Figure 4b). Many experimental and Dowser-predicted waters coincided, but some were identified only by Dowser. The analysis of connections between Grotthus-competent residues (K, H, E, D, T, S and Y [Khaniya et al., 2020]) and waters (allowing for Grotthuss mechanism of proton transfer) revealed that the highly hydrated cluster near MrpA LysTMH12 (K432) and LysTMH8 (K279), containing also conserved H273, H369, and K377 (Figures 3b and 4b), is all interconnected and linked to the periplasm via the conserved E433. The link to the cytoplasm is most likely along H273, which sits on TMH8. The potential link is not continuous and must exist only temporarily during the catalytic cycle, allowing for protons to be ejected into the cytoplasm. Analyses of MrpAN and MrpD and comparisons with known complex I structures suggest that in APLS, links to the cytoplasm are achieved not along the centre of the N-terminal half-channel as discussed originally (Efremov and Sazanov, 2011), but mostly along TMH8, which has more polar residues in the area. TMH8 is suited to play a functional role due to its π-bulge which is conserved in all APLS. The key LysTMH8 interacts with the backbone oxygen of the π-bulge and is the only protonatable residue on TMH8 in MrpD and MrpD-like subunits of complex I (Nqo13/NuoM/ND4 and Nqo14/NuoN/ND2), while in MrpA H273 is added to the π-bulge and only this histidine is conserved in Nqo12/NuoL/ND5, presumably replacing LysTMH8.
 
@@ -63,7 +300,7 @@ The area between LysTMH12 (K392) and LysTMH8 (K250) in MrpD is also highly hydra
 
 In this scenario the key LysTMH7/GluTMH5 pairs participate in the re-distribution of protons along the central axis but do not seem to play a large role in proton pathways, as those are formed from residues around LysTMH12 and LysTMH8. What is the role of these pairs then? The residues in Lys/Glu pairs are close enough to each other for strong electrostatic interactions but not close enough to form salt bridges, as they are separated by 6–7 Å. Since they are invariant and essential we propose that their main role is to regulate and control proton pathways via electrostatic interactions. The entire complex appears to be finely tuned electrostatically (Figure 2b,c) and the pair is close enough to LysTMH8 (~10–15 Å) for changes in the LysTMH7 charge state to be able to change the pKa of LysTMH8. Additionally, MrpA GluTMH5 is only 7 Å away from MrpD LysTMH12 and so these two residues would influence each other’s pKa. Therefore, LysTMH7 and GluTMH5 from one APLS together with LysTMH12 from the neighbouring APLS probably represent coupling points in the mechanism, both in Mrp (circled in Figure 4a,b) and in complex I. Charge switches in these points would control proton access to the periplasm via LysTMH12 (either directly or indirectly via proton re-distribution) and to the cytoplasm via electrostatic interactions with LysTMH8. A similar role for Lys/Glu pairs was suggested previously on the basis of MD simulations (Di Luca et al., 2017). However, in the MD study the change in distance between lysine and glutamate was considered as a key ‘switch’, while we propose as a driving force a more robust, in our opinion, change in their protonation state.
 
-## Cation (Na+ or K+) translocation pathway
+### Cation (Na+ or K+) translocation pathway
 
 Our cryo-EM maps revealed strong cation density (stronger than waters) both in DDM and LMNG samples (Materials and methods, Figure 2—figure supplement 1e,f). The cations are coordinated by the conserved H37c and H40c within the two large hydrophilic cavities (which we will call double cavity) surrounding these residues (Figure 4—figure supplement 1c,f). Histidines can coordinate both Na+ and K+ (Zheng et al., 2008) and we assigned the cations as K+ ions since we had K+ in the buffer and the coordination pattern is consistent with K+ (Materials and methods). It can be expected that Na+ ions will bind in the same positions, with the coordination completed by the conserved S36c, S80c, N702a and several waters (Figure 4—figure supplement 1c). One of the bound ions can interact electrostatically with key E137d (GluTMH5) and another one with key E706a (Figure 4—figure supplement 1c), so they are in a really strategic position for coupling proton and cation translocation. Site-directed mutagenesis performed on Mrp complexes confirmed the essential role of the key APLS residues both for proton and cation translocation (Supplementary file 1). The essential role of MrpAC E706, D792 and E796 was confirmed in several species. Mutations in H719, coordinating the headgroup of the lipid bound in the Na+ cavity, in P721, sitting at the end of the helix containing E706, in key E137d, the nearby F136d, and in P114e specifically affected Km for Na+, indicating a role for these residues in the Na+ pathway. P114e sits on a loop in the ferredoxin-like domain of MrpE, which also contains H131e near H32g. These conserved histidines may bind Na+ in the part of MrpE/G near the AH helix. This area at the tip of the monomer, where the membrane is likely to be thinned, is as highly conserved as the core of APLS, attesting to its functional importance (Figure 4—figure supplement 2a). It is also the most negatively charged area on the cytoplasmic surface (Figure 2b) and is likely to represent the entry point for cations. Conserved D29f is one of the residues responsible for the negative charge here and its mutation to alanine completely abolished the activity (Morino et al., 2010).
 
@@ -95,51 +332,201 @@ In conclusion, the Mrp structure revealed basic operating principles of this anc
 
 ## Materials and methods
 
-## Expression and purification of Mrp
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Thermus thermophilus)</td>
+      <td>HB8, ATCC 27634, DSM 579</td>
+      <td>Uniprot</td>
+      <td>Nqo12: Q56227 Nqo13: Q56228 Nqo14: Q56229</td>
+      <td>Multiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Gene (Pyrococcus furiosus)</td>
+      <td>COM1, DSM 3638</td>
+      <td>pdb FASTA sequence</td>
+      <td>6CFW</td>
+      <td>Multiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus pseudofirmus)</td>
+      <td>Strain OF4</td>
+      <td>Uniprot</td>
+      <td>MrpA: Q9RGZ5 MrpB: Q9RGZ4 MrpC: Q9RGZ3 MrpD: Q9RGZ2 MrpE: Q9RGZ1 MrpF: Q9RGZ0 MrpG: Q9RGY9</td>
+      <td>Multiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>168</td>
+      <td>Uniprot</td>
+      <td>MrpA: Q9K2S2 MrpB: O05259 MrpC: O05260 MrpD: O05229 MrpE: Q7WY60 MrpF: O05228 MrpG: O05227</td>
+      <td>Multiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Gene (Staphylococcus aureus)</td>
+      <td>1280</td>
+      <td>Uniprot</td>
+      <td>MrpA: Q9ZNG6 MrpB: P60678 MrpC: P60682 MrpD: P60686 MrpE: P60690 MrpF: P60694 MrpG: P60698</td>
+      <td>Multiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Gene (Thermosynechococcus elongatus)</td>
+      <td>BP-1</td>
+      <td>Uniprot</td>
+      <td>NdhF1: Q8DKX9 NdhD1: Q8DKY0</td>
+      <td>Multiiple sequence alignments</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MrpF D35L</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Forward: CGCTTATTTTTTACTATATATGTTGAAAAAAAATGAAAC Reverse: GCAAGCGTAATGCCCATCGCTAAGAGCGCGATAATACGATCCG Forward: CGGATCGTATTATCGCGCTCTTAGCGATGGGCATTACGCTTGC Reverse: ATATAGTAAAAAATAAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MrpG S72W</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Forward: CGCTTATTTTTTACTATATATGTTGAAAAAAAATGAAAC Reverse: CACGATGCCAAGCAATAGACGCCAGTTGAAATGGTTATTTTCAATG Forward: CATTGAAAATAACCATTTCAACTGGCGTCTATTGCTTGGCATCGTG Reverse: ATATAGTAAAAAATAAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MrpE L41W</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Forward: CGCTTATTTTTTACTATATATGTTGAAAAAAAATGAAAC Reverse: GCGCGAATGGAAAAAGCGACGCCATATAAAAAGAATAAACAGCCCGATCATGTAC Forward: GTACATGATCGGGCTGTTTATTCTTTTTATATGGCGTCGCTTTTTCCATTCGCGC Reverse: ATATAGTAAAAAATAAGCG</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>KNabc</td>
+      <td>doi:10.1073/pnas.84.9.2615</td>
+      <td></td>
+      <td>Expression and assay strain</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Anoxybacillus flavithermus)</td>
+      <td>DSM 21510/WK1</td>
+      <td>Other</td>
+      <td>Uniprot MrpA: B7GL84 MrpB: B7GL83 MrpC: B7GL82 MrpD: B7GL98 MrpE: B7GL97 MrpF: B7GL96 MrpG: B7GIG3</td>
+      <td>Prof. Masahiro Ito (Graduate School of Life Sciences, Toyo University, Japan)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>doi:10.1016/j.jsb.2005.07.007</td>
+      <td></td>
+      <td>Data Acquisition Software for a variety of data from electron microscopes</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>doi:10.1016/j.jsb.2012.09.006</td>
+      <td></td>
+      <td>Cryo-EM processing software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>doi:10.1016/j.jsb.2015.08.008</td>
+      <td></td>
+      <td>Defocus estimation software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>doi:10.1016/j.jsb.2015.11.003</td>
+      <td></td>
+      <td>Per-particle CTF estimation software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>USCF Chimera</td>
+      <td>doi:10.1002/jcc.20084</td>
+      <td></td>
+      <td>Visualisation software of molecular structures and cryo-EM maps</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi:10.1107/S0907444904019158</td>
+      <td></td>
+      <td>Software for model building</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>doi:10.1107/S0907444909052925</td>
+      <td></td>
+      <td>Structure refinement software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td></td>
+      <td>Whole frame image motion correction software</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of Mrp
 
 Plasmid DNA, termed AF_Mrp, encoding Mrp from thermophilic Anoxybacillus flavithermus WK1 with a C-terminal His-tag on MrpG was kindly provided by Prof. Masahiro Ito (Graduate School of Life Sciences, Toyo University, Ouragun, Gunma 374–0193, Japan). AF_Mrp was expressed in 50 litres of LBK media (1% tryptone, 0.5% yeast extract, 83 mM KCl, pH 7.5) supplemented with 100 μg/mL ampicillin, 25 μg/mL kanamycin and antifoam using a fermenter. The bacterial culture was grown for 16–17 hr at 37°C, while keeping at constant pH of 7.3. The agitation was adjusted to keep the dissolved oxygen concentration between 2% - 10%. The next day, the cells were harvested by centrifugation (5000 x g for 30 min at 4°C) and the cell pellets were stored at −80°C.
 
-## Preparing membranes from E. coli KNabc
+### Preparing membranes from E. coli KNabc
 
 Frozen cell pellets were thawed in ice-cold water and resuspended in 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2 and 10% glycerol. The cells were homogenized twice at 30,000 psi, using a high-pressure cell disruption Constant System pressure cell TS 1.1. DNases I (0.3 mg/ml) and proteinase inhibitor cocktail (5 tablets of EDTA-free Complete Ultra inhibitor [Roche]) were added to the lysate. The lysate was clarified by centrifugation at 26,000 x g for 30 min at 4°C. Membranes were obtained by ultracentrifugation of the supernatant at 180,000 x g for 2 hr at 4°C. Pelleted membrane fractions were resuspended in 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2, 20% glycerol and stored at −80°C.
 
-## Membrane solubilisation
+### Membrane solubilisation
 
 Membranes (10 mg/ml) were thawed in ice-cold water and solubilized by incubation for 1 hr at 4°C in 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2, 10% glycerol to which 0.3 M KCl and 1% (w/v) Lauryl Maltose Neopentyl Glycol (LMNG) or n-Dodecyl β-D-maltoside (DDM) had been added. After ultracentrifugation at 180,000 x g for 15 min, the supernatant was diluted two-fold with 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2, 10% glycerol, 0.3 M KCl and imidazole was added up to a concentration of 20 mM.
 
-## Purification
+### Purification
 
 Solubilised membranes were loaded onto a 5 ml TALON (GE Healthcare) column, previously equilibrated with five column volumes (CV) of 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2, 10% glycerol, 0.3 M KCl, 20 mM imidazole and 0.05% LMNG or 0.05% DDM. The column was washed with 15 CV of equilibration buffer and the protein was eluted with 10 CV 20 mM HEPES-KOH pH 7.0, 5 mM MgCl2, 10% glycerol, 0.3 M KCl, 200 mM imidazole and 0.05% LMNG or 0.05% DDM. Fractions containing Mrp were pooled and applied onto a Superose 6 10/300 GL (GE Healthcare) previously equilibrated with 2 CV of 20 mM Bis-Tris pH 6.0, 5 mM MgCl2, 0.15 M KCl and 0.05% LMNG or 0.05% DDM, and eluted isocratically. The dimer eluted at around 12.5 ml and was diluted to 0.16 mg ml−1 for grid preparation. Purification of the Mrp complex was performed more than five times, each time from a different batch of cells, and all attempts of replication were successful.
 
-## Electron microscopy
+### Electron microscopy
 
 Copper grids (Quantifoil mesh 300, R 0.6/1) were covered with a 1.2 nm thin layer of continuous carbon. Grids were glow discharged in air at 30 mA for 5 s. 3 μL of protein sample were applied to the grids, blotted for 7 s at 4°C and 100% humidity and quickly plunged into liquid ethane using a FEI Vitrobot IV. Grids were stored in liquid nitrogen. Images were collected at 35° tilt using a 300 kV Titan Krios electron microscope equipped with a Gatan K3 camera and an energy filter set to a slit width of 20 eV at the Institute of Science and Technology Austria. Micrographs were collected with the FEI EPU package for the LMNG dataset or SerialEM for the DDM dataset, at a nominal magnification of 105,000 x, resulting in a calibrated physical pixel size of 0.84 Å per pixel. Defocus values varied from 0.6 μm to 2.3 μm. A total dose of 85 e-/Å2 was fractionated into 85 frames for the LMNG-dataset. A total dose of 90 e-/Å2 was fractionated into 88 frames for the DDM-dataset.
 
-## Image processing of the LMNG-dataset
+### Image processing of the LMNG-dataset
 
 760 and 3126 movies were collected in normal- and super-resolution respectively. Processing was done in Relion 3.0.7 (Scheres, 2012). Movie frames were motion-corrected, dose-weighted and super-resolution images were binned two-fold using MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) parameters were determined for aligned micrographs using CTFFIND4 (Rohou and Grigorieff, 2015). After a manual inspection of the Thon rings, bad micrographs showing ice rings were excluded from further analysis, yielding 755 good micrographs for normal resolution and 3096 for super resolution movies. Auto-picking with 3D references, which were the 3D auto-refined dimer map from the DDM dataset in C2 symmetry low-pass-filtered to 30 Å, resulted in 198565 particles for normal resolution and 693504 particles for super resolution micrographs. The coordinates of the particles were then used for a per-particle CTF estimation using Gctf (Zhang, 2016). Star files from normal and super-resolution micrographs were merged after Gctf estimation. At this stage and at all stages during the entire processing of both LMNG and DDM datasets, when particles were re-extracted after classification or refinement, the duplicates were removed using 100 Å minimum inter-particle distance. 2D classification was attempted but it did not improve the results. 3D classification of all picked particles, extracted in a 256 pixel box (down-sampled to 1.68 Å pixel) was carried out in C1 symmetry with a 3D auto-refined dimer map from the DDM dataset as initial reference, filtered to 30 Å. This resulted in four good classes with 606671 particles. The best class was selected yielding 264961 particles. Particles were re-extracted in a 512 pixel box (0.84 Å pixel). An initial 3D auto-refinement in C2, with local angular searches and a 3D auto-refined dimer map from the DDM dataset filtered to 30 Å as a reference resulted in a map with an overall resolution of 5.5 Å.
 
-## Monomer
+### Monomer
 
 The resolution of the dimer map was limited due to variable angle between the monomers, resulting in the loss of true C2 symmetry for the entire particle pool. The particles were therefore symmetry-expanded according to the C2 point group, meaning that the particle number was enlarged twice because each dimer particle produced two monomer particles. Particles were re-extracted with re-centring on a monomer in a 512 pixel box (0.84 Å pixel). Removal of duplicates during re-extraction resulted in the loss of a few particles, which were probably coming from two neighboring dimers, and so the final number of particles is slightly less than double. 3D classification of these monomers, with local angular searches and a monomer map (excised in Chimera from the auto-refined dimer map and filtered to 8 Å) as a reference resulted in two good classes, with combined 285688 particles. These particles were re-extracted in a 512 pixel box (0.84 Å pixel) for masked 3D auto-refinement in C1, with local searches and the same monomer map as during 3D classification as a reference, which resulted in a map with an overall resolution of 3.16 Å. After post processing and polishing, 3D auto-refinement was repeated with local angular searches and a monomer map as a reference, resulting in a map with an overall resolution of 3.05 Å. The final resolution after post processing was 2.98 Å.
 
-## Dimer
+### Dimer
 
 The processing of the dimer was done in the same way as the processing of the monomer up to the first 3D classification. After 3D classification the best class was selected, extracted in a 256 pixel box (down-sampled to 1.68 Å pixel) and another round of 3D classification was done in C1 symmetry with global searches and a dimer map (a 3D auto-refined dimer map from the DDM dataset filtered to 30 Å) as initial reference. 3D classification resulted in one best class with 59328 particles. Masked 3D auto-refinement of this class, re-extracted in a 512 pixel box (0.84 Å pixel) was conducted in C2 symmetry with a map of this class filtered to 8 Å as a reference, resulting in a map with an overall resolution of 3.7 Å. The final resolution after post processing was 3.74 Å. Other dimer classes could be refined to resolutions of about 4 Å and differed only by the angle between the monomers.
 
-## Image processing of the DDM-dataset
+### Image processing of the DDM-dataset
 
 1544 movies were collected in super-resolution mode. Processing was done in Relion 3.0.2. Movie frames were motion corrected, dose weighted and binned two-fold using MotionCor2. CTF parameters were determined for each micrograph from non-dose-weighted, aligned images using CTFFIND4. The data was manually examined and micrographs showing poor power spectra, large portions of carbon or extensive ice-contaminations were excluded, yielding 1255 good micrographs. Auto-picking with 3D references filtered to 30 Å resulted in 226371 particles. The 3D references came from a 3D auto-refined map that was generated in a previous low-resolution test data set. The coordinates of the particles were then used for a per-particle estimation using Gctf. Particles were extracted in a 256 pixel box (down-sampled to 1.68 Å pixel). 2D classification resulted in four good classes with 150138 particles. 3D classification was carried out in C1 symmetry using as initial reference a 30 Å low-pass-filtered map that was generated in C2 symmetry using initial model generation tool in Relion.
 
-## Monomer
+### Monomer
 
 After 3D classification two good classes were selected, resulting in 140351 particles. The particles were then symmetry-expanded according to the C2 point group, re-extracted with re-centring on a monomer in a 512 pixel box (0.84 Å pixel) and duplicates were removed, resulting in 272878 particles. 3D classification without a mask in C1 symmetry, a monomer map (excised in Chimera from the best 3D class dimer map and filtered to 8 Å) as a reference and local searches resulted in one good class with 83340 particles. Another masked 3D auto-refinement with particles re-extracted in a 512 pixel box (0.84 Å pixel), starting with local searches in C1 symmetry, followed by post-processing resulted in a map with a resolution of 3.7 Å. The map revealed that helices were left-handed (50:50 chance of that since the initial dimer model was generated de novo) and so this map and all further reference maps for monomers and dimers had their hand inverted for further processing. Particle-polishing and 3D auto-refinement improved the resolution to 3.41 Å.
 
-## Dimer
+### Dimer
 
 After first 3D classification, two good classes with 140351 particles were selected. Several rounds of 3D classification were performed with the reference model in the correct hand (initial model with inverted hand and filtered to 30 Å), which resulted in one good class with 89240 particles. Further 3D classification with global searches in C1 symmetry resulted in three classes with 10125, 21450 and 25395 particles per class. Masked 3D auto-refinement with particles extracted in a 512 pixel box (0.84 Å pixel), in C2 symmetry and local searches was performed with each class. After post-processing, this resulted in maps with resolutions of 7.5 Å, 8.0 Å and 4.3 Å.
 
-## Atomic model building
+### Atomic model building
 
 The initial model was generated using the cryo-EM structure of the MBH complex (Yu et al., 2018) and the crystal structure of complex I from Thermus thermophilus (Baradaran et al., 2013). Homology models were created for all subunits of Mrp with Phyre2 server (Kelley et al., 2015) using chain T from Thermus thermophilus complex I as a template for the N-terminal part of MrpA and MbhD together with MbhE for the C-terminal part of MrpA. MbhF, MbhG, MbhH, MbhA, MbhB, MbhC from MBH and were used as templates for MrpB, MrpC, MrpD, MrpE, MrpF and MrpG, respectively. The homology models were fit into our cryo-EM map using USCF Chimera (Pettersen et al., 2004). Morphing was used to adjust the model to fit the cryo-EM map using PHENIX software (Adams et al., 2010). The model was then manually corrected using Coot (Emsley and Cowtan, 2004) and refined against the cryo-EM map in real space using PHENIX with our protocol for cryo-EM structure refinement which allows electron radiation-damaged carboxyl side-chains to acquire high B-factors, so they don’t distort the backbone (Letts et al., 2019). Densities for several lipids could be detected. Based on the appearance of their density and the prevalence of phosphatidylethanolamine among E. coli lipids, phosphatidylethanolamine was modelled into these densities.
 
@@ -147,18 +534,18 @@ The initial model was built into the DDM-dataset monomer density and then extend
 
 For the final refinement of the dimer, two monomer densities at 3.0 Å resolution were combined in Chimera after their fit into the 3.7 Å resolution dimer density. Two monomer models were fit into this composite map and refined in one final round.
 
-## Introduction of site-directed mutations
+### Introduction of site-directed mutations
 
 Gibson assembly (Gibson et al., 2009) was used for the construction of plasmids with point mutations in AF_Mrp (MrpE L41W, MrpG S72W and MrpF D35L). The point mutations in MrpE and MrpG were chosen to disrupt the Mrp dimer. The point mutation in MrpF was chosen due to the putative involvement of this residue in Na+ translocation. Each mutated plasmid was generated by combining two big DNA fragments of similar size, which were produced by two independent PCRs using AF_Mrp as template by means of Gibson assembly. The Gibson assembly method requires that the DNA fragments have ~20 base pairs overlaps with the adjacent fragment. The overlaps were added to the ends of the fragments by means of long (~40 base pairs) primers, which also contained the point mutation. The sequence of the mutated plasmids was confirmed by sequencing.
 
-## Preparation of everted membrane vesicles
+### Preparation of everted membrane vesicles
 
 Everted membrane vesicles (EMV) were prepared as previously described (Ambudkar et al., 1984), with some changes. E. coli KNabc cells were transformed with the respective plasmid and grown in LBK medium containing the respective antibiotics for 16 hr at 37°C. The cells were harvested at 4000 x g and the pellet was washed two times with 10 mM Bis-Tris-Propane-Sulfate pH 7.5, 5 mM MgCl2, 140 mM choline chloride and 10% glycerol and resuspended in the same buffer. Constant System pressure cell was used to prepare EMV by passing the resuspended cells through the cell disruptor for a single time at 10,000 psi. The cell suspension was centrifuged at 36,000 x g for 15 min followed by a centrifugation at 180,000 x g for 1.5 hr. The same procedure was done for the control, which were non-transformed KNabc cells. The EMV were suspended at 20 mg/ml and stored at −80°C.
 
-## Antiport assay
+### Antiport assay
 
 Na+/H+ antiport activity assay was performed as previously described (Morino et al., 2008; Swartz et al., 2007). 66 µg of EMV were suspended in 2 ml 10 mM Bis-Tris-Propane-Sulfate, 140 mM choline chloride, 5 mM MgCl2, 1 µM acridine orange at pH 7.5, pH 8.5 or pH 9.5. Measurements were conducted with excitation and emission at 420 and 500 nm, respectively, using a Spectramax M2e Plate and Cuvette reader. Tris-succinate at pH 7.5, pH 8.5 or pH 9.5 was added to a final concentration of 2.5 mM to initiate respiration. After fluorescence quenching of acridine orange, a steady-state was reached and NaCl or KCl was added to a final concentration of 2.5 mM. The Na+ dependent fluorescence dequenching is indicative for the Na+/H+ antiport activity. NH4Cl was added to a concentration of 10 mM to bring the fluorescence back to baseline. Assays were conducted in triplicates with three independent membrane preparations.
 
-## Growth experiments
+### Growth experiments
 
 Growth experiments were conducted as previously described (Kosono et al., 2006). E. coli KNabc cells were transformed with the respective plasmid and incubated for 16 hr at 37°C in LBK medium containing 0–1200 mM NaCl. KNabc cells lack the three main sodium proton antiporters and can withstand a salt concentration of up to 200–300 mM. A functional Mrp antiporter complements the inability of KNabc cells to grow at higher salt concentrations.

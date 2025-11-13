@@ -60,7 +60,7 @@
 
 ## Abstract
 
-10.7554/eLife.15802.001 Ubiquitin is essential for eukaryotic life and varies in only 3 amino acid positions between yeast and humans. However, recent deep sequencing studies indicate that ubiquitin is highly tolerant to single mutations. We hypothesized that this tolerance would be reduced by chemically induced physiologic perturbations. To test this hypothesis, a class of first year UCSF graduate students employed deep mutational scanning to determine the fitness landscape of all possible single residue mutations in the presence of five different small molecule perturbations. These perturbations uncover 'shared sensitized positions' localized to areas around the hydrophobic patch and the C-terminus. In addition, we identified perturbation specific effects such as a sensitization of His68 in HU and a tolerance to mutation at Lys63 in DTT. Our data show how chemical stresses can reduce buffering effects in the ubiquitin proteasome system. Finally, this study demonstrates the potential of lab-based interdisciplinary graduate curriculum. DOI: http://dx.doi.org/10.7554/eLife.15802.001
+Ubiquitin is essential for eukaryotic life and varies in only 3 amino acid positions between yeast and humans. However, recent deep sequencing studies indicate that ubiquitin is highly tolerant to single mutations. We hypothesized that this tolerance would be reduced by chemically induced physiologic perturbations. To test this hypothesis, a class of first year UCSF graduate students employed deep mutational scanning to determine the fitness landscape of all possible single residue mutations in the presence of five different small molecule perturbations. These perturbations uncover 'shared sensitized positions' localized to areas around the hydrophobic patch and the C-terminus. In addition, we identified perturbation specific effects such as a sensitization of His68 in HU and a tolerance to mutation at Lys63 in DTT. Our data show how chemical stresses can reduce buffering effects in the ubiquitin proteasome system. Finally, this study demonstrates the potential of lab-based interdisciplinary graduate curriculum.
 
 ## Introduction
 
@@ -78,85 +78,85 @@ Our data collectively show that stress reduces a general buffering effect and un
 
 ## Results
 
-## Library construction
+### Library construction
 
-Previously, the fitness landscape of Ub in yeast was determined using eight competition experiments using the EMPIRIC strategy of deep sequencing short regions of all possible single amino acid substitutions during a growth competition experiment in rich media (
+Previously, the fitness landscape of Ub in yeast was determined using eight competition experiments using the EMPIRIC strategy of deep sequencing short regions of all possible single amino acid substitutions during a growth competition experiment in rich media (Roscoe et al., 2013). These experiments measured all point mutants contained in short 30 base pair (bp)/10 amino acid residue stretches of the Ub open reading frame (ORF), which necessitated 8 separate competition experiments. To increase the throughput and reduce the cost of the experiment, we designed a barcoding strategy (Fowler et al., 2014), that allowed us to determine allele fitness in a single experiment using EMPIRIC with barcodes (EMPRIC-BC). We synthesized eighteen bp random barcodes (N18 BCs), which were ligated upstream of the Illumina sequencing primer binding site. The specific association of each unique N18 BC with a given mutant Ub allele was then established through paired end sequencing of the Ub ORF and the N18 BC (Figure 1A) The resulting lookup table of BCs and alleles was then employed in our competition experiments to count alleles by directly sequencing the N18 BCs. In addition to simplifying the experiment, this strategy enabled us to count the alleles with a short, single end sequencing run, substantially reducing cost. The library is ~97.5% complete at the amino acid level. We observed a slight GC bias in the codon coverage (Figure 1B–C), which is likely due to the cloning method that initially generated the Ub mutants (Hietpas et al., 2012). Most substitutions are associated with many N18 BCs, with a median of fifteen unique barcodes representing a specific amino acid substitution (Figure 1D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig1-v2.jpg)
 
-**Figure 1.:** (A) Prior to the competition experiment, ubiquitin alleles were specifically associated with unique barcodes through a paired end sequencing. To monitor the frequency of different alleles during the competition experiments, we directly sequenced the barcodes in a short single end read. (B) The library contains most codon substitutions and almost all are associated with multiple barcodes. A slight GC bias is seen in the cloning. WT codons are shown in green and missing alleles are shown in grey. (C) The amino acid coverage of the library is almost complete. WT residues are shown in green and missing alleles are shown in grey. (D) Examining the number of barcodes per amino acid substitution shows that 2.5% of the library is missing and the median number of barcodes per substitution is 15.DOI: http://dx.doi.org/10.7554/eLife.15802.003
+**Figure 1.:** (A) Prior to the competition experiment, ubiquitin alleles were specifically associated with unique barcodes through a paired end sequencing. To monitor the frequency of different alleles during the competition experiments, we directly sequenced the barcodes in a short single end read. (B) The library contains most codon substitutions and almost all are associated with multiple barcodes. A slight GC bias is seen in the cloning. WT codons are shown in green and missing alleles are shown in grey. (C) The amino acid coverage of the library is almost complete. WT residues are shown in green and missing alleles are shown in grey. (D) Examining the number of barcodes per amino acid substitution shows that 2.5% of the library is missing and the median number of barcodes per substitution is 15.
 
-## Determining the Ub fitness landscape in DMSO
+### Determining the Ub fitness landscape in DMSO
 
-To determine the differential fitness landscape of Ub under different chemical stresses, we first conducted an EMPIRIC-BC experiment under 0.5% DMSO to serve as a control (
+To determine the differential fitness landscape of Ub under different chemical stresses, we first conducted an EMPIRIC-BC experiment under 0.5% DMSO to serve as a control (Figure 2). The resulting fitness landscape is quite similar to the previously published dataset, which was collected under no chemical stress (Roscoe et al., 2013) (Figure 3A). The lowest fitness scores occurred at premature stop codons and residues that are critical to build Lys48 poly-Ub linkages (Lys48, Ile44, Gly75, Gly76). As previously observed, much of the protein surface is tolerant to mutation. Based on the average value of the stop codon substitutions, we set a minimum fitness score of -0.5 (Figure 3B). Comparisons of biological replicates indicated that the data were reproducible and well fit by a Lorentzian function centered at 0, as expected for the ratio of two Gaussian distributions (Figure 3C,D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig2-v2.jpg)
 
-**Figure 2.:** The fitness of all ubiquitin mutants was measured in a single culture by shutting off the galactose-driven wild type copy. This allows a constitutively expressed mutant to be the sole source of ubiquitin for the cell. The library was grown for 48 hr in galactose to remove dominant negative alleles and then expression of the wild type copy repressed by the addition of glucose. Upon repression of the wild type copy, chemical perturbations were added and the yeast were grown for multiple generations. Fitness scores were calculated for each mutant based on the relative frequencies of mutant and wild type alleles over multiple generations. The ratio of (mutant counts):(wild type counts) was computed for each time point and a line fit to these ratios vs. generation time. The fitness score is the slope of the linear fit.DOI: http://dx.doi.org/10.7554/eLife.15802.004
+**Figure 2.:** The fitness of all ubiquitin mutants was measured in a single culture by shutting off the galactose-driven wild type copy. This allows a constitutively expressed mutant to be the sole source of ubiquitin for the cell. The library was grown for 48 hr in galactose to remove dominant negative alleles and then expression of the wild type copy repressed by the addition of glucose. Upon repression of the wild type copy, chemical perturbations were added and the yeast were grown for multiple generations. Fitness scores were calculated for each mutant based on the relative frequencies of mutant and wild type alleles over multiple generations. The ratio of (mutant counts):(wild type counts) was computed for each time point and a line fit to these ratios vs. generation time. The fitness score is the slope of the linear fit.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-v2.jpg)
 
-**Figure 3.:** (A) Heatmap showing the fitness of observed ubiquitin alleles. Scores presented are the average of three biological replicates. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. The average fitness score of each position and the averages of substitutions binned by amino acid characteristics are shown below. The single column on the far right shows the average of each amino acid substitution across all positions. (B) The distribution of fitness values is shown and colored based on fitness score. Grey bins reflect fitness scores that were reset to -0.5. (C) Biological replicates of the competition experiment in DMSO are well correlated (R2  = 0.79). Each point represents the fitness score of a mutant in two biological replicates. Points are colored based on the average standard deviation of the barcodes contributing to each fitness score. (D) The distribution of the residuals to the identity line between two DMSO replicates is symmetric and well modeled by a Lorentzian (X0  = 0, Γ = 0.0035, scaled by 1600).DOI: http://dx.doi.org/10.7554/eLife.15802.005
+**Figure 3.:** (A) Heatmap showing the fitness of observed ubiquitin alleles. Scores presented are the average of three biological replicates. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. The average fitness score of each position and the averages of substitutions binned by amino acid characteristics are shown below. The single column on the far right shows the average of each amino acid substitution across all positions. (B) The distribution of fitness values is shown and colored based on fitness score. Grey bins reflect fitness scores that were reset to -0.5. (C) Biological replicates of the competition experiment in DMSO are well correlated (R2  = 0.79). Each point represents the fitness score of a mutant in two biological replicates. Points are colored based on the average standard deviation of the barcodes contributing to each fitness score. (D) The distribution of the residuals to the identity line between two DMSO replicates is symmetric and well modeled by a Lorentzian (X0  = 0, Γ = 0.0035, scaled by 1600).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** We calculated the standard deviation of the distributions of barcode fitness scores that contribute to each amino acid mutant fitness score. Large errors of the stop codon substitutions are due to variation of fitness scores below the -0.5 floor.DOI: http://dx.doi.org/10.7554/eLife.15802.006
+**Figure 3—figure supplement 1.:** We calculated the standard deviation of the distributions of barcode fitness scores that contribute to each amino acid mutant fitness score. Large errors of the stop codon substitutions are due to variation of fitness scores below the -0.5 floor.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** A linear regression (R2 = 0.785) and Pearson’s correlation coefficient (CC = 0.886) were calculated between the fitness scores determined in DMSO and the previously published unperturbed dataset (Roscoe et al., 2013).DOI: http://dx.doi.org/10.7554/eLife.15802.007
+**Figure 3—figure supplement 2.:** A linear regression (R2 = 0.785) and Pearson’s correlation coefficient (CC = 0.886) were calculated between the fitness scores determined in DMSO and the previously published unperturbed dataset (Roscoe et al., 2013).
 
-## Chemical perturbations sensitize many positions in Ub
+### Chemical perturbations sensitize many positions in Ub
 
 Because our competition experiments require cells growing for multiple generations in log phase, we conducted our experiments at chemical concentrations that inhibit yeast growth by 25%. These chemical concentrations are not as high as used in previous transcriptional studies of yeast chemical stress responses (Gasch et al., 2000). For Caffeine (7.5 mM), and DTT (1 mM) we determined the IC25 for each drug by following growth via optical density (Figure 4—figure supplement 1). Since HU (25 mM) induced a lag phase followed by near wild type like growth, we determined the IC25 concentration by monitoring yeast growth from two to five hr post treatment. DMSO (0.5%) and MG132 (50 uM) did not inhibit growth.
 
-Next, we performed the EMPIRIC-BC experiment with each chemical perturbation (
+Next, we performed the EMPIRIC-BC experiment with each chemical perturbation (Figure 4B). In Caffeine, DTT, and HU (Figure 4A–D, Figure 4—figure supplements 1–3) many mutations are sensitized, and become less fit than in DMSO. Generally this increased sensitivity is localized around the C-terminus, which is essential for E1 activation, and the hydrophobic patch, which is the dominant interface for protein-protein interactions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-v2.jpg)
 
-**Figure 4.:** The difference in fitness between DMSO and a perturbation for each Ub allele: (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in red and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.DOI: http://dx.doi.org/10.7554/eLife.15802.008
+**Figure 4.:** The difference in fitness between DMSO and a perturbation for each Ub allele: (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in red and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Heatmaps showing the fitness of observed Ub alleles under: (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.DOI: http://dx.doi.org/10.7554/eLife.15802.009
+**Figure 4—figure supplement 1.:** Heatmaps showing the fitness of observed Ub alleles under: (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Heatmaps showing the error estimates for each observed Ub alleles under; (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. Growth rates were calculated by monitoring OD600 over 8 hr and normalized to the unperturbed SUB328 growth rate.DOI: http://dx.doi.org/10.7554/eLife.15802.010
+**Figure 4—figure supplement 2.:** Heatmaps showing the error estimates for each observed Ub alleles under; (A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. Growth rates were calculated by monitoring OD600 over 8 hr and normalized to the unperturbed SUB328 growth rate.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** We determined the concentration to inhibit SUB328 growth by 25% by monitoring optical density. Error bars represent standard deviation of multiple measurements.DOI: http://dx.doi.org/10.7554/eLife.15802.011
+**Figure 4—figure supplement 3.:** We determined the concentration to inhibit SUB328 growth by 25% by monitoring optical density. Error bars represent standard deviation of multiple measurements.
 
-To compare the responses to each perturbation, for each pairwise comparison we plotted the fitness scores for each mutant as a scatter plot and calculated the residual to the identity line. We compared the distribution of these residuals to the distribution of residuals calculated by the DMSO self comparison (
+To compare the responses to each perturbation, for each pairwise comparison we plotted the fitness scores for each mutant as a scatter plot and calculated the residual to the identity line. We compared the distribution of these residuals to the distribution of residuals calculated by the DMSO self comparison (Figure 5). Caffeine, DTT and HU generally sensitize the protein to mutation, which is evident in the enrichment of mutations with reduced fitness compared to the DMSO self distribution. These newly sensitized mutations are largely shared between these different chemical perturbations.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig5-v2.jpg)
 
-**Figure 5.:** The residuals between datasets shows are shown with the Lorentzian representing the biological replicates of DMSO in red. When compared to DMSO, three perturbations (Caffeine, DTT and HU) shift the distributions to the left, which highlights the increased sensitivity to mutation. In contrast, MG132 slightly shifts the distribution to the right, which highlights the alleviating interaction between MG132 and deleterious ubiquitin alleles. Comparisons between Caffeine, Hydroxyurea and DTT are symmetric but with longer tails than the control experiments. This result suggests a shared response comprised of many sensitized residues and a smaller number of perturbation-specific signals.DOI: http://dx.doi.org/10.7554/eLife.15802.012
+**Figure 5.:** The residuals between datasets shows are shown with the Lorentzian representing the biological replicates of DMSO in red. When compared to DMSO, three perturbations (Caffeine, DTT and HU) shift the distributions to the left, which highlights the increased sensitivity to mutation. In contrast, MG132 slightly shifts the distribution to the right, which highlights the alleviating interaction between MG132 and deleterious ubiquitin alleles. Comparisons between Caffeine, Hydroxyurea and DTT are symmetric but with longer tails than the control experiments. This result suggests a shared response comprised of many sensitized residues and a smaller number of perturbation-specific signals.
 
 In contrast to the sensitizing effects of DTT, Caffeine, and HU, the proteasome inhibitor MG132 increases mutational tolerance throughout the protein. This effect can be seen in the slight shift of the residuals distribution to the right when compared to the DMSO self distribution (Figure 5D). The effect is small at the MG132 concentration we assayed, which is likely due to the poor penetrance of MG132 in yeast cells containing a wild type allele of ERG6 (Lee and Goldberg, 1996). This alleviating interaction is likely because MG132 directly perturbs proteasome, reducing the impact of defects related to Lys48 linked poly-Ub chains and leaving functions related to other, non-degradative poly-Ub topologies unperturbed. Also, reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome. This increased pool of Ub could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions. The consequence of an increased pool of free Ub might therefore lead to the general alleviating interactions observed between Ub mutants and MG132 treatment.
 
 Additionally, the difference distributions are wider than the distribution between DMSO replicates. This result shows that the perturbations unmask previously buffered fitness defects that are phenotypically important for each perturbation. If the biological role of each residue were independent of perturbation then the distributions would be shifted without affecting the shape. Instead these data show that each perturbation uncovers unique roles of Ub residues in responding to a specific perturbation.
 
-## Rosetta ∆∆G modeling indicate that sensitive mutants mildly perturb stability
+### Rosetta ∆∆G modeling indicate that sensitive mutants mildly perturb stability
 
-One potential explanation of the buffer unmasked by the chemical perturbations is the stability of the Ub protein itself. Although Ub is highly stable (
+One potential explanation of the buffer unmasked by the chemical perturbations is the stability of the Ub protein itself. Although Ub is highly stable (Ibarra-Molero et al., 1999; Wintrode et al., 1994), mutations that destabilize it may lead to misfolding or perturb Ub/protein interactions important for UPS function. To assess the degree to which mutational destabilization of ubiquitin itself is predictive of a decrease in mean fitness for each perturbation, we used the macromolecular modeling software Rosetta to estimate changes in protein stability (Kellogg et al., 2011; Kortemme and Baker, 2002) for every mutation in our library. With the resulting predictions, we classified each ubiquitin mutation as either destabilizing (change in Rosetta Energy Units (REU) > = 1.0) or neutral/stabilizing (change in REU < 1.0). We observed a significant difference in experimental fitness between the two predicted classes for all conditions (Figure 6). This result holds independently of the absolute mean experimental fitness score of each perturbation, meaning that the difference in mean experimental fitness between predicted destabilizing and neutral mutations is not simply the result of lower mean destabilizing fitness scores. These results suggest that ubiquitin stability is more important for fitness in each of the perturbed conditions than in unperturbed yeast. Under stress, subtle changes in Ub stability could induce fitness defects that are otherwise buffered under control (DMSO) conditions. Furthermore, even small changes to ubiquitin stability could induce considerable changes to the Ub conformational ensemble that could destabilize Ub/protein complexes (Lange et al., 2008; Phillips et al., 2013). Adaptability within the UPS could buffer these defects in DMSO, but they can be revealed upon chemical stress.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig6-v2.jpg)
 
-**Figure 6.:** Fitness scores for each of the 5 sets of experimental conditions are shown along the y-axis as boxplots. Scores are grouped first by their respective experimental condition, and then by the change in stability of the ubiquitin monomer of the mutation estimated by Rosetta. Mutations that Rosetta predicts to be neutral or stabilizing (REU (Rosetta Energy Units) < 1.0) are shown in blue boxes; mutations predicted to be destabilizing (REU >= 1.0) are shown in green boxes. The mean of each fitness score distribution is shown as a white dot. The p-value of the two-sided T test between the fitness mean of mutations predicted to be stabilizing and those predicted to be neutral/stabilizing is shown at the bottom of the plot. Experimental conditions are arranged from left to right along the x-axis in order of decreasing p-value.DOI: http://dx.doi.org/10.7554/eLife.15802.013
+**Figure 6.:** Fitness scores for each of the 5 sets of experimental conditions are shown along the y-axis as boxplots. Scores are grouped first by their respective experimental condition, and then by the change in stability of the ubiquitin monomer of the mutation estimated by Rosetta. Mutations that Rosetta predicts to be neutral or stabilizing (REU (Rosetta Energy Units) < 1.0) are shown in blue boxes; mutations predicted to be destabilizing (REU >= 1.0) are shown in green boxes. The mean of each fitness score distribution is shown as a white dot. The p-value of the two-sided T test between the fitness mean of mutations predicted to be stabilizing and those predicted to be neutral/stabilizing is shown at the bottom of the plot. Experimental conditions are arranged from left to right along the x-axis in order of decreasing p-value.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig7-v2.jpg)
 
-**Figure 7.:** Cartoon model of Ub (PDB 1UBQ) with important residues colored as follows: Lys48 - orange, Lys63 - light blue, Lys11 - green, other Lys residues - yellow, hydrophobic patch (Leu8, Val40, Ile 44) - red, C-terminal diGly motif (Gly75 and 76) - purple, Arg42 - pink, His68 - olive.DOI: http://dx.doi.org/10.7554/eLife.15802.014
+**Figure 7.:** Cartoon model of Ub (PDB 1UBQ) with important residues colored as follows: Lys48 - orange, Lys63 - light blue, Lys11 - green, other Lys residues - yellow, hydrophobic patch (Leu8, Val40, Ile 44) - red, C-terminal diGly motif (Gly75 and 76) - purple, Arg42 - pink, His68 - olive.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig8-v2.jpg)
 
-**Figure 8.:** (A) Based on the average fitness score, positions were binned into tolerant (>=-0.075 - Blue), intermediate (<-0.075 to > -0.35 - Pink) and sensitive (<= -0.35 - Red). (i) DMSO (ii) Caffeine (iii) DTT (iv) Hydroxyurea show a shift from tolerant to intermediate and sensitive positions. (B) Positions binned by average fitness score mapped onto the ubiquitin structure. C-alpha atoms are shown in spheres and the residues are colored as in A. Met1 is colored grey. (C) New sensitive positions induced by the perturbation describe a shared response to perturbation with 8 of 13 positions shared between Caffeine, DTT and HU. (D) New intermediate positions highlight the similarity between HU and Caffeine, with DTT sensitizing a unique set of residues. (E) New tolerant positions are unique to each perturbation. (F) Average position fitness scores mapped onto ubiquitin. (i) DMSO (ii) Minimum average fitness score in all perturbations. C-alpha atoms are shown in spheres and the residues are colored according to average fitness. Met1 is colored grey. (G) Minimum average fitness scores – DMSO average fitness scores mapped onto ubiquitin. C-alpha atoms are shown in spheres and the residues are colored according to the difference in fitness. Met1 is colored grey. With this small set of perturbations most positions are sensitized.DOI: http://dx.doi.org/10.7554/eLife.15802.015
+**Figure 8.:** (A) Based on the average fitness score, positions were binned into tolerant (>=-0.075 - Blue), intermediate (<-0.075 to > -0.35 - Pink) and sensitive (<= -0.35 - Red). (i) DMSO (ii) Caffeine (iii) DTT (iv) Hydroxyurea show a shift from tolerant to intermediate and sensitive positions. (B) Positions binned by average fitness score mapped onto the ubiquitin structure. C-alpha atoms are shown in spheres and the residues are colored as in A. Met1 is colored grey. (C) New sensitive positions induced by the perturbation describe a shared response to perturbation with 8 of 13 positions shared between Caffeine, DTT and HU. (D) New intermediate positions highlight the similarity between HU and Caffeine, with DTT sensitizing a unique set of residues. (E) New tolerant positions are unique to each perturbation. (F) Average position fitness scores mapped onto ubiquitin. (i) DMSO (ii) Minimum average fitness score in all perturbations. C-alpha atoms are shown in spheres and the residues are colored according to average fitness. Met1 is colored grey. (G) Minimum average fitness scores – DMSO average fitness scores mapped onto ubiquitin. C-alpha atoms are shown in spheres and the residues are colored according to the difference in fitness. Met1 is colored grey. With this small set of perturbations most positions are sensitized.
 
-## Mutational sensitivity is primarily localized to three regions of Ub
+### Mutational sensitivity is primarily localized to three regions of Ub
 
-To assess the role of specific positions in Ub we averaged the fitness score of each amino acid mutation at a given position. We then binned each position into sensitive (≤-0.35), intermediate (-0.35 to -0.075) and tolerant (≥-0.075) and examined the distribution of average fitness in each condition (Figure 8A). These distributions again show that most positions in Ub are tolerant to mutation in DMSO, but many positions are sensitized upon chemical perturbation.
+To assess the role of specific positions in Ub we averaged the fitness score of each amino acid mutation at a given position. We then binned each position into sensitive ($\leq$-0.35), intermediate (-0.35 to -0.075) and tolerant ($\geq$-0.075) and examined the distribution of average fitness in each condition (Figure 8A). These distributions again show that most positions in Ub are tolerant to mutation in DMSO, but many positions are sensitized upon chemical perturbation.
 
 In DMSO only residues with well-established roles are sensitive: Arg42 (E1 activation), Ile44 (hydrophobic patch hotspot), Lys48 (essential Lys48 linked poly-Ub) and Gly75-Gly76 of the C-terminus (E1 activation) (Figure 7). The face opposite the hydrophobic patch is mostly tolerant and the protein core and residues adjacent to the sensitive residues are mostly intermediate (Figure 8B - i). When treated with Caffeine, DTT or HU, a shared set of residues become sensitive (Figure 8B ii– iv, Figure 8C). These residues are either: located adjacent to DMSO sensitive residues (e.g. Leu73, which is in the C-terminal tail); residues with important biological functions that of intermediate sensitivity in DMSO (e.g. Leu8, Val70, which are important hydrophobic patch residues); or core residues (e.g. Ile36, Leu71). These positions tolerated a small set of substitutions in DMSO but upon perturbation became only tolerant of mutations that share physical chemistry with the wild type residue.
 
@@ -168,17 +168,17 @@ We also uncovered newly tolerant positions, which are uniquely tolerant to each 
 
 In a final effort to resolve the dichotomy between the Ub fitness landscape and the evolutionary record, we visualized the average fitness of each position in DMSO and compared it to the minimum of the average fitness of each position for all perturbations (Figure 8F,G). The data in DMSO again shows that biologically relevant positions are sensitive, the face opposite the hydrophobic patch is extremely tolerant to mutation, and that core residues are intermediately tolerant. Perturbations dramatically increase mutational sensitivity at the C-terminus, around the hydrophobic patch and at some core positions. However, much of the tolerant face of the protein remains tolerant to mutation in all of the perturbations. By exploring a wider array of perturbations we should be able determine the environmental pressures that constrain these tolerant positions and explain the extreme conservation of Ub.
 
-## Specific elements of the shared response to perturbations
+### Specific elements of the shared response to perturbations
 
 To determine the elements of the shared response to HU, Caffeine and DTT, we defined 'shared sensitizing mutations' as those that were both sensitizing (delta fitness ≤ -0.2 for all perturbations) and consistent between perturbations (within 0.1 of the regression line) (Figure 9A and Figure 9—source data 1). Most of these mutations change from being mildly deleterious to being nearly null upon chemical stress. For example, in DMSO Ub tolerates mutation to small hydrophobics and other polar residues at Thr7. However, chemical stresses causes mutations of small hydrophobic or charged residues at this position to be deleterious. As Thr7 is adjacent to the hydrophobic patch residue Leu8, this sensitization is likely due to non-polar substitutions disrupting Ub adaptor protein binding and poly-Ub packing (Komander and Rape, 2012). Additionally, typically destabilizing substitutions such as Proline or Tryptophan generally become more deleterious under perturbation.
 
-## Specific residues connect different stresses to Ub protein-protein interactions
+### Specific residues connect different stresses to Ub protein-protein interactions
 
-We also investigated specific signals outside of the shared sensitizing response (
+We also investigated specific signals outside of the shared sensitizing response (Figure 9B). We identified perturbation specific mutations by comparing the change in fitness scores of each of the sensitizing perturbations (Figure 9—source data 2, 3). Because these mutants are not sensitized by all of the perturbations they likely alter binding to specific adaptors, conjugation machinery, or substrates. Most of these perturbation specific mutants are tolerated in Caffeine and HU, but sensitized by DTT treatment. However, the H68Y mutation differs as DTT and HU treatments sensitize this mutation whereas Caffeine treatment does not. His68 is an important position found at the interface between Ub and adaptor domains such as UIM and UBA domains. These domains are important for the trafficking of ubiquitinated proteins. His68 lies adjacent to the hydrophobic patch and binding to UIM domains is reduced when it is protonated (Fujiwara et al., 2004). In contrast, when His68 is mutated to Val in Ub, the binding to UIM domains is increased, likely mimicking the deprotonated state that forms a hydrophobic surface (Fujiwara et al., 2004).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig9-v2.jpg)
 
-**Figure 9.:** (A) DMSO fitness - Caffeine fitness vs. DMSO fitness - DTT fitness. The markers are colored based on DMSO fitness - Hydroxyurea fitness. (B) DMSO fitness - Caffeine fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - DTT fitness. (C) DMSO fitness - DTT fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - Caffeine fitness.DOI: http://dx.doi.org/10.7554/eLife.15802.01610.7554/eLife.15802.017Figure 9—source data 1.Mutants in the shared response were determined by fitting a line to the fitness scores. The distance from each point to that line was calculated. If the distance was less than 0.1 and the average Δ (DMSO - Perturbation) fitness was less than -0.2 the mutant was considered part of the shared response. E1 activity relative to WT Ub (Roscoe and Bolon, 2014) is listed and may explain the sensitization of some of the shared response mutants.DOI: http://dx.doi.org/10.7554/eLife.15802.01710.7554/eLife.15802.018Figure 9—source data 2.Perturbation specific mutations were determined by fitting a line to the delta (DMSO - perturbation) fitness scores. The distance from each point to that line was calculated. If the distance was greater than 0.35 the mutant was classified as perturbation specific. Mutants with high experimental errors were deemed outliers and removed from this list.DOI: http://dx.doi.org/10.7554/eLife.15802.01810.7554/eLife.15802.019Figure 9—source data 3.DOI: http://dx.doi.org/10.7554/eLife.15802.019
+**Figure 9.:** (A) DMSO fitness - Caffeine fitness vs. DMSO fitness - DTT fitness. The markers are colored based on DMSO fitness - Hydroxyurea fitness. (B) DMSO fitness - Caffeine fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - DTT fitness. (C) DMSO fitness - DTT fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - Caffeine fitness.
 
 Lys11 is similarly important for Ub biology and shows a specific sensitization to DTT. Lys11 linked poly-Ub chains are the second most abundant linkage in yeast. These chains likely signal for degradation by the proteasome, like Lys48 linked chains, and have been implicated in the response to ER stress (Xu et al., 2009). In DMSO all substitutions, except to negative and aromatic residues, are tolerated. However, substitutions to Leu, Ile, His and Asn are sensitized uniquely in DTT. These data suggest that Lys11 is mediating an interaction to DTT induced stress. Although previous studies have indicated a synthetic lethal interaction between Lys11Arg and DTT (Xu et al., 2009), in our experiments, at lower DTT concentrations, the relatively high fitness of Lys11Arg suggests that the structural role of the positively charged residues and not poly-Lys11 Ub linkages may dominate the physiological response.
 
@@ -206,39 +206,39 @@ These experiments also demonstrate the success of graduate-level project based c
 
 Additional material is available on our website (www.fraserlab.com/pubs_2014) and GitHub (https://github.com/fraser-lab/PUBS2014). Raw Sequencing reads are made available via SRA (SRR3194828)
 
-## Yeast library
+### Yeast library
 
 Yeast strain SUB328 (MATa lys2-801 leu2-3,2–112 ura3-52 his3-Δ200 trp1-1 ubi1-Δ1::TRP1 ubi2-Δ2::ura3 ubi3-Δub-2 ubi4-Δ2::LEU2 (pUB146) (pUB100)) (Finley et al., 1994) was used, which expresses ubiquitin from a galactose-inducible promoter in pUB146. pUB100 expresses the Ubi1 tail. A library of ubiquitin genes was saturated with point mutations (Roscoe et al., 2013). Barcodes were added by ligating N18 oligos flanked by EagI and AscI sites into each of the eight previously create Ub libraries. These libraries were bottlenecked by transformation into E. coli and then pooled to create the single N18BC-UbLib. This pooled library was transformed into E. coli to create the final N18BC-UbLib.
 
-## Barcode association PCR/library/sequencing
+### Barcode association PCR/library/sequencing
 
 To associate the N18BCs to a given Ub allele, we performed a paired end read on the Illumina MiSeq. Because Ub is a small gene, we were able to read the entire ORF with a 260 bp read and the associated N18BC with a 30 bp read. To prepare the library for sequencing, plasmid DNA was extracted from E. coli using the Omega Bio-Tek mini-prep kit. A ~700 bp product was amplified with primers containing the Illumina PE1 and PE2 primer sequences for 9 cycles to minimize PCR recombination. These products were separated on agarose gel, and excised products were purified by silica column. This library was prepared for sequencing on the Illumina MiSeq.
 
-## Drug concentration
+### Drug concentration
 
 The concentration to reduce the growth rate of SUB328 (WT Ub) by 25% was determined by monitoring the growth of cells by optical density measurements at 600nm over 8 hr. MG132 and DMSO did not affect SUB328 (WT Ub) growth rate at any tested concentration. Hydroxyurea treatment induces a lag-phase followed by WT like growth.
 
-## EMPIRIC-BC
+### EMPIRIC-BC
 
-## Transformation
+#### Transformation
 
 SUB328 strain was independently transformed three times with the barcoded Ub library. Two of these transformations (LibA, LibB) were transformed with the LiAc method described previously (Gietz and Woods, 2002). The third library (LibC) was transformed using the hybrid LiAc/electroporation protocol described previously (Benatuil et al., 2010). Libraries were grown in log phase for 48 hr @ 30*C in SRGal (synthetic, 1% raffinose, 1% galactose) + G418 and ampicillin and then flash frozen in LN2 at late log phase and stored at -80*C as 1 mL aliquots.
 
-## Library growth and sample collection
+#### Library growth and sample collection
 
 Frozen aliquots were thawed and grown in 50 mL SRGal +G418 in log-phase for 48 hr to remove dominant negative alleles. The library was transferred into SD (synthetic, 2% glucose) + G418 as described (Roscoe et al., 2013). The library was maintained in log-phase for 12 hr in SD + G418, at which time an initial sample was collected as described (Roscoe et al., 2013). The libraries were then maintained in log-phase growth by diluting cells into fresh SD +G418 every 12 hr, in the presence of the perturbation. The perturbation was refreshed with each dilution. Samples were taken every 2–3 SUB328 (WT Ub) generations.
 
-## PCR and miniprep
+#### PCR and miniprep
 
 Plasmid DNA was extracted from yeast and prepared for deep sequencing. Yeast pellets were thawed and lysed and plasmid DNA recovered as previously described (Roscoe et al., 2013). A 268 bp product was amplified from the plasmids by PCR, using only 9 cycles of amplification. This product contained the N18BC. PCR products were separated on agarose gel, and excised products were purified by silica column. A second round of PCR was performed to add unique indices (Illumina TruSeq) to barcode each sample.
 
-## Sequencing and data analysis
+#### Sequencing and data analysis
 
 Each PCR product was quantified by qBit and diluted to 4 nM. The samples were then pooled and the pooled libraries prepared for sequencing on the Illumina HiSeq. The N18BCs were sequenced with a single end HiSeq run with a custom primer (TGCAGCGGCCCTGAGTCCTGCC) that read directly into the N18BC. Samples were indexed using the HiSeq indexing read and the Illumina TruSeq indices.
 
-## Pipeline
+#### Pipeline
 
-## Module 0: Sub assembly
+##### Module 0: Sub assembly
 
 Script1:
 
@@ -274,7 +274,7 @@ Allele_Dictionary.pkl
 
 “AGCCCTA”: (5, GCU)}
 
-## Module 1: Extract BC counts from fastq with Hamming error correction
+##### Module 1: Extract BC counts from fastq with Hamming error correction
 
 Requires seqmatch.py to be present in the working directory. The below scripts use function imported from this file
 
@@ -328,7 +328,7 @@ TS2:{barcode:number-of-reads,... }
 
 TSN:{barcode:number-of-reads,... }
 
-## Module 2: Initial scoring - Barcodes, initial counts cutoff = 3
+##### Module 2: Initial scoring - Barcodes, initial counts cutoff = 3
 
 Script1:
 
@@ -358,7 +358,7 @@ Barcode_scores.pkl
 
 “AGCCCTA”: -0.1}
 
-## Module 3: Outlier detection and removal
+##### Module 3: Outlier detection and removal
 
 toss_outliers.py Barcode_scores.pkl codon 4 -o clean_BCs.pkl
 
@@ -386,7 +386,7 @@ Barcode_scores_outliers_removed.pkl
 
 “GCATTTC”: -0.67}
 
-## Module 4: Create matrix
+##### Module 4: Create matrix
 
 heatmap_BCs.py Barcode_scores_outliers_removed.pkl Allele_Dictionary.pkl -o Barcode_scores_outliers_removed_matrix.pkl
 
@@ -420,7 +420,7 @@ masked_array(data = [21X76 matrix containing fitness scores for each aa substitu
 
 -0.3959407495759722 --]]
 
-## Rosetta predictions of ubiquitin stability changes upon point mutations
+#### Rosetta predictions of ubiquitin stability changes upon point mutations
 
 We used Rosetta version number 55,534 for all simulations. The Rosetta software can be downloaded at www.rosettacommons.org.
 

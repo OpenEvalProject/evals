@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.18541.001 Biological systems are increasingly being studied by high throughput profiling of molecular data over time. Determining the set of time points to sample in studies that profile several different types of molecular data is still challenging. Here we present the Time Point Selection ( TPS ) method that solves this combinatorial problem in a principled and practical way. TPS utilizes expression data from a small set of genes sampled at a high rate. As we show by applying TPS to study mouse lung development, the points selected by TPS can be used to reconstruct an accurate representation for the expression values of the non selected points. Further, even though the selection is only based on gene expression, these points are also appropriate for representing a much larger set of protein, miRNA and DNA methylation changes over time. TPS can thus serve as a key design strategy for high throughput time series experiments. Supporting Website: www.sb.cs.cmu.edu/TPS DOI: http://dx.doi.org/10.7554/eLife.18541.001
+Biological systems are increasingly being studied by high throughput profiling of molecular data over time. Determining the set of time points to sample in studies that profile several different types of molecular data is still challenging. Here we present the Time Point Selection (TPS) method that solves this combinatorial problem in a principled and practical way. TPS utilizes expression data from a small set of genes sampled at a high rate. As we show by applying TPS to study mouse lung development, the points selected by TPS can be used to reconstruct an accurate representation for the expression values of the non selected points. Further, even though the selection is only based on gene expression, these points are also appropriate for representing a much larger set of protein, miRNA and DNA methylation changes over time. TPS can thus serve as a key design strategy for high throughput time series experiments. Supporting Website: www.sb.cs.cmu.edu/TPS
 
 ## Introduction
 
@@ -44,123 +44,168 @@ To test and evaluate the method we applied it to study lung development in mice.
 
 ## Results
 
-## The time points selection (TPS ) method
+### The time points selection (TPS ) method
 
-We developed
+We developed TPS to select a subset of k time points from an initial larger set of n points such that the selected subset provides an accurate, yet compact, representation of the temporal trajectory. Figure 1 presents an overview of the method. TPS utilizes splines to represent temporal profiles and implements a cross-validation strategy to evaluate potential sets of points. Following initialization which is based on the expression values, we employ a greedy search procedure that adds and removes points until a local minima is reached (Materials and methods). The resulting set is then used for the larger genomic and epigenetic experiments.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-v2.jpg)
 
-**Figure 1.:** Clockwise from top left. Given a dense sampling of a selected subset of genes (a) we select an initial set of points (b) using the initialization method described in the text. Next, we fit a spline to the selected points for each gene (c) and evaluate the error on all other points. We perform a greedy search process (d) which iteratively removes and adds points to improve the test data fit resulting in the final set of points (e). The reconstructed curves are fitted to all genes (f) and an overall error is computed and compared to the theoretical limit (noise) to determine the ability of the selected number of points to fit the data.DOI: http://dx.doi.org/10.7554/eLife.18541.002
+**Figure 1.:** Clockwise from top left. Given a dense sampling of a selected subset of genes (a) we select an initial set of points (b) using the initialization method described in the text. Next, we fit a spline to the selected points for each gene (c) and evaluate the error on all other points. We perform a greedy search process (d) which iteratively removes and adds points to improve the test data fit resulting in the final set of points (e). The reconstructed curves are fitted to all genes (f) and an overall error is computed and compared to the theoretical limit (noise) to determine the ability of the selected number of points to fit the data.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (Singh et al., 2005) which used an active learning method based on dynamic programming.DOI: http://dx.doi.org/10.7554/eLife.18541.003
+**Figure 1—figure supplement 1.:** (Singh et al., 2005) which used an active learning method based on dynamic programming.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** The points labeled metricA, metricB, and metricC all use the dynamic initialization approaches, while the max distance points use static initialization.DOI: http://dx.doi.org/10.7554/eLife.18541.004
+**Figure 1—figure supplement 2.:** The points labeled metricA, metricB, and metricC all use the dynamic initialization approaches, while the max distance points use static initialization.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.18541.005
-
 To test the usefulness of TPS , we used it to determine time points for a lung development study in mice. We first profiled the expression of 126 genes known or suspected to be involved in lung development using NanoString (See Appendix Methods for a list of the selected genes and the reason each was selected). We then used TPS analysis of these experiments to select a subset of time points for profiling the expression of a larger, unbiased, set of miRNAs. Finally, we have used TPS to design time series experiments to study DNA methylation patterns for a subset of the genes.
 
-## TPS identifies subset of important time points across multiple genes
+### TPS identifies subset of important time points across multiple genes
 
-We have tested the performance of
+We have tested the performance of TPS by using it to select subsets of points ranging from 3 to 25 and evaluating how well these can be used to determine the values of non-sampled points. To determine the accuracy of the reconstructed profiles using the selected points, we computed the average mean squared error for points that were not used by the method (Materials and methods). The results are presented in Figure 2. The figure includes a comparison of our method with two baseline methods: a random selection of the same number of points and uniform sampling of points within the range being studied, a method that is commonly used for time series expression profiling as discussed above. We have also compared the performance of the different strategies for initializing the set of points as discussed in Appendix Method (sorting by absolute differences or by equal partition) and between different methods for searching for the optimal subset (simulated annealing, weighting genes by cluster size, and adding/removing multiple time points per iteration, Appendix Methods). Finally, Figure 2 also presents the repeat noise values which is the theoretical limit for the performance of any profile reconstruction method.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-v2.jpg)
 
-**Figure 2.:** Error comparisons of TPS variants to uniform selection of points and noise. Absolute difference - Greedy iterative addition with absolute difference initialization (Algorithm 1, Appendix Methods). Simulated annealing - Iterating using simulated annealing with absolute difference initialization. Weighted error - Selection based on cluster rather than individual gene errors. See Appendix Methods for details.DOI: http://dx.doi.org/10.7554/eLife.18541.006
+**Figure 2.:** Error comparisons of TPS variants to uniform selection of points and noise. Absolute difference - Greedy iterative addition with absolute difference initialization (Algorithm 1, Appendix Methods). Simulated annealing - Iterating using simulated annealing with absolute difference initialization. Weighted error - Selection based on cluster rather than individual gene errors. See Appendix Methods for details.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.18541.007
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** The 75% random data was created by replacing 75% of the gene time series with random value time series selected from a Gaussian distribution with mean 0 and standard deviation equal to the noise of the original data.DOI: http://dx.doi.org/10.7554/eLife.18541.008
+**Figure 2—figure supplement 2.:** The 75% random data was created by replacing 75% of the gene time series with random value time series selected from a Gaussian distribution with mean 0 and standard deviation equal to the noise of the original data.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** a) Pdgfra, (b)Eln, (c) Lrat.DOI: http://dx.doi.org/10.7554/eLife.18541.009
-
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig2-figsupp4-v2.jpg)
-
-**Figure 2—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.18541.010
 
 As expected, we find significant performance improvement when using TPS when compared to randomly selected points. Importantly, we also see a significant and consistent improvement (for all sizes of selected time points) over uniform sampling highlighting the advantage of condition-specific sampling decisions. Sorting initial points by absolute values further improves the performance highlighting the importance of initialization when searching large combinatorial spaces. Simulated annealing, weighting, and multiple point selection improve performance as well. As the number of points used by TPS increases, it leads to results that are very close to the error represented by noise in the data (0.108) ( Figure 2—figure supplement 1).
 
+Figure 3 presents the reconstructed and measured expression values when using TPS to select 13 time points (less than a third of the points that were profiled). Note that even though each of these genes has distinct trajectory and inflection points, the selected set of time points enable TPS to fit all quite accurately without overfitting (See Figure 3—figure supplement 1 and Figure 3—figure supplement 2 for figures of several other genes and for figures reconstructed by using the best 8 time points as determined by TPS , respectively).
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-v2.jpg)
 
-**Figure 3.:** (a). Pdgfra. , (b). Eln. , (c). Inmt.DOI: http://dx.doi.org/10.7554/eLife.18541.011
+**Figure 3.:** (a). Pdgfra. , (b). Eln. , (c). Inmt.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** a) Esr2, (b) Nme3, (c) Polr2a.DOI: http://dx.doi.org/10.7554/eLife.18541.012
-
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** a) Pdgfra, (b) Eln, (c) Inmt.DOI: http://dx.doi.org/10.7554/eLife.18541.013
+### Identified time points using mRNA data are appropriate for miRNA profiling
 
-## Identified time points using mRNA data are appropriate for miRNA profiling
+To test the usefulness of our method for predicting the correct sampling rates for other genomic datasets, we next profiled mouse miRNAs for the same developmental process. miRNAs have been known to regulate lung development (Sessa and Hata, 2013) and several miRNAs are differentially expressed during this developmental process (Williams et al., 2007). Several of these are also coordinately activated with various TFs to control specific transitions during development (Schulz et al., 2013). Thus, any large scale effort to model lung development would require the profiling of miRNAs as well. Unlike the mRNA dataset, which utilized prior knowledge to profile less than 1% of all genes, the miRNA dataset contained a much larger number of miRNAs ($6^00$). Thus, the miRNA data represent an unbiased sample providing information on whether using one type of genomic data can be helpful for determining rates for other types. In our analysis, we normalized miRNA values by variance mean normalization (Bolstad et al., 2003).
 
-To test the usefulness of our method for predicting the correct sampling rates for other genomic datasets, we next profiled mouse miRNAs for the same developmental process. miRNAs have been known to regulate lung development (Sessa and Hata, 2013) and several miRNAs are differentially expressed during this developmental process (Williams et al., 2007). Several of these are also coordinately activated with various TFs to control specific transitions during development (Schulz et al., 2013). Thus, any large scale effort to model lung development would require the profiling of miRNAs as well. Unlike the mRNA dataset, which utilized prior knowledge to profile less than 1% of all genes, the miRNA dataset contained a much larger number of miRNAs (6^00). Thus, the miRNA data represent an unbiased sample providing information on whether using one type of genomic data can be helpful for determining rates for other types. In our analysis, we normalized miRNA values by variance mean normalization (Bolstad et al., 2003).
-
-To test
+To test TPS on this dataset, we used the mRNA expression data to select time points and then used the miRNA expression values for the selected time points to reconstruct the complete trajectories for each miRNA. The results are presented in Figure 4. As can be seen, when using the points selected based on the mRNA data we achieve a much lower error when compared to the error resulting from using the same number of uniform or random points (p<0.01 for random based on randomization analysis) highlighting the relationship between the two datasets and the ability to use one to determine points for the other. More generally, even though the noise in the miRNA data is higher than for the mRNA dataset, relative ordering of the performance of each of the methods is similar to the mRNA results in Figure 2. This serves as a strong indication that mRNAs can serve as a general proxy for selecting time points for other genomic datasets. Figure 4b presents the error achieved when using the miRNA data itself to select the set of points (evaluated on the miRNA data). As expected, the performance when using the miRNA data itself is better than when using the mRNA data. However, when taking into account the inherent noise in the data the differences are not large. For example, when using the 13 selected mRNA points, the average mean squared error is 0.4312 whereas when using the optimal points based on the miRNA data itself the error is 0.4042.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-v2.jpg)
 
-**Figure 4.:** (a) TPS reconstruction error when using the mRNA data to select time points for the miRNA experiments. Results of random and uniform selection as well as repeat noise error are also presented for comparison. TPS variants shown are the same two presented in Figure 2. (b) Error of splines with points selected by training TPS on the actual miRNA data itself, using the maximum absolute difference initialization.DOI: http://dx.doi.org/10.7554/eLife.18541.014
+**Figure 4.:** (a) TPS reconstruction error when using the mRNA data to select time points for the miRNA experiments. Results of random and uniform selection as well as repeat noise error are also presented for comparison. TPS variants shown are the same two presented in Figure 2. (b) Error of splines with points selected by training TPS on the actual miRNA data itself, using the maximum absolute difference initialization.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** a) mmu-miR-100, (b) mmu-miR-136,c) mmu-miR-152, (d) mmu-miR-219.DOI: http://dx.doi.org/10.7554/eLife.18541.015
-
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp2-v2.jpg)
-
-**Figure 4—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.18541.016
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** (a) Comparison of the reconstruction error when using the points selected by TPS, uniform selection of points, and when using the same number of random points from the overall set of sampled points. (b) Error comparisons of TPSto noise, and various search and initialization options discussed in Methods.DOI: http://dx.doi.org/10.7554/eLife.18541.017
+**Figure 4—figure supplement 3.:** (a) Comparison of the reconstruction error when using the points selected by TPS, uniform selection of points, and when using the same number of random points from the overall set of sampled points. (b) Error comparisons of TPSto noise, and various search and initialization options discussed in Methods.
 
 Figure 4—figure supplement 1 presents the reconstructed and measured expression values for a few miRNAs based on time points identified using the mRNA dataset. As with the mRNA data, the ability to accurately reconstruct different miRNA profiles highlights the importance of selecting a global set of points that can fit all genes and miRNAs in our study.
 
 We have also analyzed the performance of TPS when using the mRNA data to select sampling time points for profiling the levels of more than 1000 proteins. We observed results that are very similar to the results obtained for the miRNA time point selection. Specifically, the points selected by TPS lead to reconstruction errors that are lower than those observed for uniform sampling or for a random set of the same number of points further demonstrating the general applicability of our method. See Appendix Results for details.
 
-## Using TPS to select time points for DNA methylation analysis
+### Using TPS to select time points for DNA methylation analysis
 
-In addition to mRNA and miRNA expression data, epigenetic data have been increasingly studied in time series experiments (
+In addition to mRNA and miRNA expression data, epigenetic data have been increasingly studied in time series experiments (Talens et al., 2010; Schneider et al., 2010). To test the ability of the mRNA data to determine the appropriate points for DNA methylation analysis, we used targeted bisulfite sequencing to profile three CpG-enriched regions for 13 genes at 8 of the 42 time points used for the mRNA and miRNA studies (Materials and methods). We next applied TPS to the mRNA data of these 8 points to select the best subest of 4 points and compared the selected points to those that would have been selected using the methylation data itself. The 4 points identified using the mRNA data (0.5, 5, 15, 26) were exactly the same as the ones selected using the methylation data indicating again that mRNA data is a good proxy for the dynamics of the epigenetic data as well. Figure 5—figure supplement 1 presents the reconstructed splines over the identified points for several genomic methylation loci. Figure 5 presents the methylation and expression curves for 3 genes: Akt,1 Cdh11, and Tnc. These were the genes with the strongest negative correlation between their methylation and expression. As can be seen, in several cases we observed strong negative or positive correlations between the two datasets in the time points we used serving as another indication for the ability to use one dataset to select the sampling points for the other. See Figure 5—figure supplement 2 for correlation of all genes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-v2.jpg)
 
-**Figure 5.:** (a). Akt1. , (b). Cdh11. , (c). Tnc.DOI: http://dx.doi.org/10.7554/eLife.18541.018
+**Figure 5.:** (a). Akt1. , (b). Cdh11. , (c). Tnc.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.18541.019
-
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** The red circles are the Pearson correlation over all eight points and the blue triangles are the Pearson correlation for all subsets of 7 points.DOI: http://dx.doi.org/10.7554/eLife.18541.020
+**Figure 5—figure supplement 2.:** The red circles are the Pearson correlation over all eight points and the blue triangles are the Pearson correlation for all subsets of 7 points.
 
 ## Discussion
 
 Time series gene expression experiments are widely used in several studies. More recently, advances in sequencing and proteomics are enabling the profiling of several other types of genomic data over time. Here we focused on lung development in mice with the goal of identifying an optimal set of time points for profiling various genomic and proteomic data types for this process.
 
-An important question is: Whether a better selection of time points really leads to observations that are missed when using an inferior set of points (even if the number of points is the same)? To answer this question we looked at several prior studies that profiled mouse lung development over time using various high throughput assays. Table 1 presents 9 representative studies and lists the biological data that was profiled and the time points that were used. As can be seen, while certain time points seem to be widely used across studies (for example, 7d) others were profiled in only one or two of the studies (2d, 10d, three weeks). This raises several issues. First, it is very hard to compare or combine these datasets (for example, protein levels were not profiled on day 7(Cox et al., 2007) whereas all mRNA levels were). It also makes it hard to determine if differences between DE genes or miRNAs between these studies are the result of differences in the underlying conditions studied (for example, when testing for mutants or treatments) or simply the result of different sampling. Finally, each of these studies may have missed key genes, proteins or miRNAs because of the sampling used restricting the ability of downstream analysis to use the data to model causal and regulatory events in lung development.10.7554/eLife.18541.021Table 1.Summary of prior high throughput lung development studies.DOI: http://dx.doi.org/10.7554/eLife.18541.021ReferenceData typesSelected time points (Days)[Bonner et al., 2003] mRNA expression E9, E4, E17, 0, 7, 14, 28 [Melén et al., 2011] mRNA expression E16, E18, 0, 7, 14, 28 [Bhaskaran et al., 2009] microRNA expression E16, E19, E21, 0, 6, 14, 60 [Dong et al., 2011]  mRNA and microRNA expression E12, E14, E16, 0, 2, 10 [Cox et al., 2007]Protein expression levelsE12, E14, E18, 2, 14, 56[Schulz et al., 2013]  mRNA and miRNA expression 0, 4, 7, 14, 42 [Cormack et al., 2010]  mRNA expression 0, 7, 14, adult [Mager et al., 2007]  mRNA expression  E15, E17, E19, E21, 1, 14, 84 [Mariani et al., 2002]  mRNA expression E18, 1, 4, 7, 10, 14, 21, adult
+An important question is: Whether a better selection of time points really leads to observations that are missed when using an inferior set of points (even if the number of points is the same)? To answer this question we looked at several prior studies that profiled mouse lung development over time using various high throughput assays. Table 1 presents 9 representative studies and lists the biological data that was profiled and the time points that were used. As can be seen, while certain time points seem to be widely used across studies (for example, 7d) others were profiled in only one or two of the studies (2d, 10d, three weeks). This raises several issues. First, it is very hard to compare or combine these datasets (for example, protein levels were not profiled on day 7(Cox et al., 2007) whereas all mRNA levels were). It also makes it hard to determine if differences between DE genes or miRNAs between these studies are the result of differences in the underlying conditions studied (for example, when testing for mutants or treatments) or simply the result of different sampling. Finally, each of these studies may have missed key genes, proteins or miRNAs because of the sampling used restricting the ability of downstream analysis to use the data to model causal and regulatory events in lung development.
 
-To illustrate these problems we compared the resulting curves using three of the sampling rates from
+**Table 1.**
+ Summary of prior high throughput lung development studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Data types</th>
+      <th>Selected time points (Days)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Bonner et al., 2003]</td>
+      <td>mRNA expression</td>
+      <td>E9, E4, E17, 0, 7, 14, 28</td>
+    </tr>
+    <tr>
+      <td>[Melén et al., 2011]</td>
+      <td>mRNA expression</td>
+      <td>E16, E18, 0, 7, 14, 28</td>
+    </tr>
+    <tr>
+      <td>[Bhaskaran et al., 2009]</td>
+      <td>microRNA expression</td>
+      <td>E16, E19, E21, 0, 6, 14, 60</td>
+    </tr>
+    <tr>
+      <td>[Dong et al., 2011]</td>
+      <td>mRNA and microRNA expression</td>
+      <td>E12, E14, E16, 0, 2, 10</td>
+    </tr>
+    <tr>
+      <td>[Cox et al., 2007]</td>
+      <td>Protein expression levels</td>
+      <td>E12, E14, E18, 2, 14, 56</td>
+    </tr>
+    <tr>
+      <td>[Schulz et al., 2013]</td>
+      <td>mRNA and miRNA expression</td>
+      <td>0, 4, 7, 14, 42</td>
+    </tr>
+    <tr>
+      <td>[Cormack et al., 2010]</td>
+      <td>mRNA expression</td>
+      <td>0, 7, 14, adult</td>
+    </tr>
+    <tr>
+      <td>[Mager et al., 2007]</td>
+      <td>mRNA expression</td>
+      <td>E15, E17, E19, E21, 1, 14, 84</td>
+    </tr>
+    <tr>
+      <td>[Mariani et al., 2002]</td>
+      <td>mRNA expression</td>
+      <td>E18, 1, 4, 7, 10, 14, 21, adult</td>
+    </tr>
+  </tbody>
+</table>
+
+To illustrate these problems we compared the resulting curves using three of the sampling rates from Table 1 to the reconstructed curves obtained by using TPS to select the optimal 5 and 8 time points. For example, the points selected by Schulz et al. (2013) are 0, 4, 7, 14 and 28 (since 28 is last day in our analysis we used it instead of 42). In contrast, TPS selects 0.5, 6, 9.5, 19 and 28. As can be seen in Figure 6, important expression changes in key genes are missed by using the arbitrary points while the TPS points are able to correctly reconstruct these profiles even though the total number of points is the same (5). More globally, the error for the arbitrary set of selected points is much higher on average (Appendix 2—Table 4). Similar results are obtained for the other sampling rates used in the past (Figure 6, Appendix 2—Table 4) and when comparing TPS to iterative methods previously suggested for selecting the set of points to profile (Figure 1—figure supplement 1). This indicates that accurate selection of time points can have a large impact on the ability of the study to identify key genes and events. See also Appendix Results for a discussion about the importance of the differences between the TPS and prior work results for selected genes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig6-v2.jpg)
 
-**Figure 6.:** Dark green curves are the reconstructed profiles based on the points profiled by prior studies. Light green and red curves are based on the points selected by TPS . As can be seen, even when comparing results from using the same number of points, TPS can identify key events for some of the genes that are missed when using the phenotype based sampling rates. Subfigures a,b, and c are a piecewise linear ﬁt over points 0.5, 7.0, 14.0, 28.0 . Subfigures d,e, and f are a piecewise linear fit over points 0.5, 2.0, 14.0, 28.0. Subfigures g,h, and i are a piecewise linear fit over points 0.5, 4.0, 7.0, 14.0, 28.0.DOI: http://dx.doi.org/10.7554/eLife.18541.022
+**Figure 6.:** Dark green curves are the reconstructed profiles based on the points profiled by prior studies. Light green and red curves are based on the points selected by TPS . As can be seen, even when comparing results from using the same number of points, TPS can identify key events for some of the genes that are missed when using the phenotype based sampling rates. Subfigures a,b, and c are a piecewise linear ﬁt over points 0.5, 7.0, 14.0, 28.0 . Subfigures d,e, and f are a piecewise linear fit over points 0.5, 2.0, 14.0, 28.0. Subfigures g,h, and i are a piecewise linear fit over points 0.5, 4.0, 7.0, 14.0, 28.0.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/18541/elife-18541-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (a) Eln/P54320, (b) F13a1/Q8BH61, (c) Chil1/Q61362.DOI: http://dx.doi.org/10.7554/eLife.18541.023
+**Figure 6—figure supplement 1.:** (a) Eln/P54320, (b) F13a1/Q8BH61, (c) Chil1/Q61362.
 
 Our method relies on a very small subset of genes that are known to be involved in the process studied for the initial (highly sampled) set of experiments. While such set is known for several processes, there may be cases where very little is known about the biological process and so it may be hard to obtain such set. TPS can still be applied to determine sampling rates for such processes using a small random set of genes. To illustrate this we repeated the analysis presented in Results using only the measured values of 25% of genes in our original set and replacing the values for the other genes with random profiles. As we show in Figure 2—figure supplement 2, even when using such set, the time points selected by TPS greatly improve upon an arbitrary set of the same number of time points. Since in most time series experiments at least 25% of the genes are differentially expressed (and in several cases a much larger fraction, (Zhou et al., 2009; Shi et al., 2015) a random selection of genes is likely to exhibit similar results even for poorly understood processes.
 
@@ -174,40 +219,40 @@ TPS, including all initialization methods discussed, is implemented in Python an
 
 ## Materials and methods
 
-## mRNA and miRNA used in the study
+### mRNA and miRNA used in the study
 
 To select the list of 126 genes used in the NanoString profiling we searched the literature for genes that have been linked to the following processes: (a) Cell type specification genes (e.g. alveolar type I epithelial, alveolar type II epithelial, any epithelial, basal, endothelial, mesenchymal, pericyte, fibroblast, monocyte), (b) genes known to be up or down regulated during septation, (c) genes known to be altered in DNA methylation during development, (d) genes known to be involved in septation, (e) genes known to be regulated by miRNA involved in septation, and (f) genes known to be regulated by DNA methylation during fibrosis. Appendix 2—Table 1 contains a list of the selected genes and the process for which they were selected.
 
 For the miRNA set we used a commercially available, unbiased, array (the nCounter Mouse miRNA Expression Assay Kit, NanoString).
 
-## mRNA and miRNA profiling and analysis
+### mRNA and miRNA profiling and analysis
 
 A total of 240 samples were isolated by Laser Capture Microscopy (LCM) from murine lung at multiple time points (E16.5, P.05 to P14 every 12 hr, and P15 to P28 every 24 hr). The samples were used to prepare total RNA. RNA extraction was performed by miRNeasy MicroKit (Qiagen) following the manufacturer’s protocol. RNA concentration and integrity were measured by using NanoDrop ND-2000 and 2200 Tape Station. A custom NanoString probe set (Reporter Code set and Capture Probe set) for 126 genes was designed and the nCounter Gene Expression Assay was performed using 50 ng total RNA. The data files produced by the nCounter Digital Analyzer were exported as a Reporter Code Count (RCC) file and data normalization was performed using the nSolver, the analysis software provided by Nanostring.
 
-## DNA methylation analysis
+### DNA methylation analysis
 
-Mouse alveolar lung tissues attached to LCM caps were stored at −80°C until processing. DNA was extracted using the ZR Genomic DNA-Tissue MicroPrep kit (Zymo Research). Incubation with Digestion buffer and proteinase K was done overnight at 55°C in inverted tubes. 13 genes were chosen for targeted NextGen bisulfite sequencing (NGBS): Igfbp3, Wif1, Cdh11, Eln, Sox9, Tnc, Dnmt3a, Akt, Vegfa, Lox, Foxf2, Zfp536 and Src, based on published data (Cuna et al., 2015). Targeted NGBS was done on samples collected at: E16.5, E18.5, P0.5, P1.5, P2.5, P5, P10, P15, P19 and P26. Multiplex PCR was performed using 0.5 units of TaKaRa EpiTaq HS (Takara Bio, Kusatsu, Japan) in 2x master mix. FASTQ files were aligned using open source Bismark Bisulfite Read Mapper using Bowtie2. Methylation levels were calculated in Bismark. Sites where the difference in methylation was less than 5% over the entire time period, those where there was a difference of >20% at a single time point and those with less than 3 non zero values were removed from the analyses.
+Mouse alveolar lung tissues attached to LCM caps were stored at −80°C until processing. DNA was extracted using the ZR Genomic DNA-Tissue MicroPrep kit (Zymo Research). Incubation with Digestion buffer and proteinase K was done overnight at 55°C in inverted tubes. 13 genes were chosen for targeted NextGen bisulfite sequencing (NGBS): Igfbp3, Wif1, Cdh11, Eln, Sox9, Tnc, Dnmt3a, Akt, Vegfa, Lox, Foxf2, Zfp536 and Src, based on published data (Cuna et al., 2015). Targeted NGBS was done on samples collected at: E16.5, E18.5, P0.5, P1.5, P2.5, P5, P10, P15, P19 and P26. Multiplex PCR was performed using 0.5 units of TaKaRa EpiTaq HS (Takara Bio, Kusatsu, Japan) in 2x master mix. FASTQ files were aligned using open source Bismark Bisulfite Read Mapper using Bowtie2. Methylation levels were calculated in Bismark. Sites where the difference in methylation was less than 5% over the entire time period, those where there was a difference of >20% at a single time point and those with less than $3$ non zero values were removed from the analyses.
 
-## Problem statement
+### Problem statement
 
 Our goal is to identify a (small) subset of time points that can be used to accurately reconstruct the expression trajectory for all genes or other molecules being profiled. We assume that we can efficiently and cheaply obtain a dense sample for the expression of a very small subset of representative genes (here we use nanostring to profile less than 0.5% of all genes) and attempt to use this subset to determine optimal sampling points for the entire set of genes.
 
-Formally, let G be the set of genes we have profiled in our dense sample, T={t1,t2,…,tT} be the set of all sampled time points. We assume that for each time point we have R repeats for all genes. We denote by eg⁢tr be the expression value for gene g∈G at time t∈T in the r’th repeat for that time point. We define Dg={eg⁢tr,t∈T,r∈R as the complete data for gene g over all replicates and time points T.
+Formally, let $G$ be the set of genes we have profiled in our dense sample, $T={t_{1},t_{2},…,t_{T}}$ be the set of all sampled time points. We assume that for each time point we have $R$ repeats for all genes. We denote by $e_{g⁢t}^{r}$ be the expression value for gene $g\inG$ at time $t\inT$ in the $r$’th repeat for that time point. We define $D_{g}={e_{g⁢t}^{r},t\inT,r\inR$ as the complete data for gene $g$ over all replicates and time points $T$.
 
-To constrain the set of points we select, we assume that we have a predefined budget k for the maximum number of time points we can sample in the complete experiment (i.e. for profiling all genes, miRNAs, epigenetic marks etc. using high-throughput seq experiments). We are interested in selecting k time points from T which, when using only the data collected at these k points, minimizes the prediction error for the expression values of the unused points. To evaluate such a selection, we use the selected values to obtain a smoothing spline (De Boor, 1978; Bar-Joseph et al., 2003a; Wahba, 1990) function for each gene and compare the predicted values based on the spline to the measured value for the non-selected points to determine the error. In our problem, t1 and tT define the first and end points, so they are always selected. The rest of the points are selected to maximize the following objective 1:
+To constrain the set of points we select, we assume that we have a predefined budget $k$ for the maximum number of time points we can sample in the complete experiment (i.e. for profiling all genes, miRNAs, epigenetic marks etc. using high-throughput seq experiments). We are interested in selecting $k$ time points from $T$ which, when using only the data collected at these $k$ points, minimizes the prediction error for the expression values of the unused points. To evaluate such a selection, we use the selected values to obtain a smoothing spline (De Boor, 1978; Bar-Joseph et al., 2003a; Wahba, 1990) function for each gene and compare the predicted values based on the spline to the measured value for the non-selected points to determine the error. In our problem, $t_{1}$ and $t_{T}$ define the first and end points, so they are always selected. The rest of the points are selected to maximize the following objective 1:
 
-Problem statement: Given Dg for genes g∈G, the number of desired time points k, identify a subset of k-2 time points in T∖{t1,tT} which minimizes the prediction error for the expression values of all genes in the remaining time points.
+Problem statement: Given $D_{g}$ for genes $g\inG$, the number of desired time points $k$, identify a subset of $k-2$ time points in $T∖{t_{1},t_{T}}$ which minimizes the prediction error for the expression values of all genes in the remaining time points.
 
-## Spline assignments
+### Spline assignments
 
-Before discussing the actual procedure we use to select the set of time points, we discuss the method we use to assign splines based on a selected subset of points for each gene. There are two issues that need to be resolved when assigning such smoothing splines: (1) The number of knots (control points) and (2) their spacing. Past approaches for using splines to model time series gene expression data have usually used the same number of control points for all genes regardless of their trajectories (Subhani et al., 2010; Bar-Joseph et al., 2003b), and mostly employed uniform knot placements. However, since our method needs to be able to adapt to any size of k as defined above, we also attempt to select the number of knots and their spacing. We do this by using a regularization parameter for the fitted cubic smoothing spline where number of knots is increased until the smoothing condition is satisfied (Wahba, 1990). The regularization parameter is estimated by leave-one-out cross-validation (LOOCV).
+Before discussing the actual procedure we use to select the set of time points, we discuss the method we use to assign splines based on a selected subset of points for each gene. There are two issues that need to be resolved when assigning such smoothing splines: (1) The number of knots (control points) and (2) their spacing. Past approaches for using splines to model time series gene expression data have usually used the same number of control points for all genes regardless of their trajectories (Subhani et al., 2010; Bar-Joseph et al., 2003b), and mostly employed uniform knot placements. However, since our method needs to be able to adapt to any size of $k$ as defined above, we also attempt to select the number of knots and their spacing. We do this by using a regularization parameter for the fitted cubic smoothing spline where number of knots is increased until the smoothing condition is satisfied (Wahba, 1990). The regularization parameter is estimated by leave-one-out cross-validation (LOOCV).
 
-## TPS : Iterative process to select points
+### TPS : Iterative process to select points
 
 Because of the highly combinatorial nature of the time points, we rely on a greedy iterative process to select the optimal points as summarized in Figure 1 (See Appendix Methods for pseudocode).
 
 There are three key steps in this algorithm which we discuss in detail below.
 
-## Individual vs. cluster-based evaluation
+### Individual vs. cluster-based evaluation
 
-So far, we assumed that error of each gene has the same contribution to the overall error. However, this assumption ignores the fact that the expression profiles of genes are correlated with the expression of other genes. To take the correlation between gene profiles into account, we also performed cluster based evaluation of genes where we analyzed the error by weighting each gene in terms of inverse of the numbers of genes in the cluster it belongs. This scheme ensures that each cluster contributes equally to the resulting error rather than each gene. We find clusters by k-means algorithm over time series-data by treating each gene as a point in RT space as well as over a vector of randomly sampled T time points on fitted spline (Bishop, 2006). We use Bayesian Information Criterion (BIC) to determine the optimal number of clusters (Schwarz, 1978).
+So far, we assumed that error of each gene has the same contribution to the overall error. However, this assumption ignores the fact that the expression profiles of genes are correlated with the expression of other genes. To take the correlation between gene profiles into account, we also performed cluster based evaluation of genes where we analyzed the error by weighting each gene in terms of inverse of the numbers of genes in the cluster it belongs. This scheme ensures that each cluster contributes equally to the resulting error rather than each gene. We find clusters by k-means algorithm over time series-data by treating each gene as a point in $R^{T}$ space as well as over a vector of randomly sampled $T$ time points on fitted spline (Bishop, 2006). We use Bayesian Information Criterion (BIC) to determine the optimal number of clusters (Schwarz, 1978).

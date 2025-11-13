@@ -16,18 +16,18 @@
 
 ### Affiliations
 
-1. https://ror.org/000xsnr85 Instituto Biofisika, CSIC-UPV/EHU Leioa Spain
-2. https://ror.org/024mrxd33 School of Biomedical Sciences, Faculty of Biological Sciences, University of Leeds Leeds United Kingdom
+1. Instituto Biofisika, CSIC-UPV/EHU Leioa Spain ([ROR:000xsnr85](https://ror.org/000xsnr85))
+2. School of Biomedical Sciences, Faculty of Biological Sciences, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
 3. Atlas Molecular Pharma S.L Derio Spain
-4. https://ror.org/002h8g185 Department of Chemistry, University of Bath Bath United Kingdom
-5. https://ror.org/052gg0110 Department of Chemistry, University of Oxford Oxford United Kingdom
-6. https://ror.org/02x5c5y60 Protein Stability and Inherited Disease Laboratory, CIC bioGUNE Derio Spain
+4. Department of Chemistry, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))
+5. Department of Chemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+6. Protein Stability and Inherited Disease Laboratory, CIC bioGUNE Derio Spain ([ROR:02x5c5y60](https://ror.org/02x5c5y60))
 
 † Corresponding author
 
 ## Abstract
 
-Neuronal K V 7 channels, important regulators of cell excitability, are among the most sensitive proteins to reactive oxygen species. The S2S3 linker of the voltage sensor was reported as a site-mediating redox modulation of the channels. Recent structural insights reveal potential interactions between this linker and the Ca 2+ -binding loop of the third EF-hand of calmodulin (CaM), which embraces an antiparallel fork formed by the C-terminal helices A and B, constituting the calcium responsive domain (CRD). We found that precluding Ca 2+ binding to the EF3 hand, but not to EF1, EF2, or EF4 hands, abolishes oxidation-induced enhancement of K V 7.4 currents. Monitoring FRET (Fluorescence Resonance Energy Transfer) between helices A and B using purified CRDs tagged with fluorescent proteins, we observed that S2S3 peptides cause a reversal of the signal in the presence of Ca 2+ but have no effect in the absence of this cation or if the peptide is oxidized. The capacity of loading EF3 with Ca 2+ is essential for this reversal of the FRET signal, whereas the consequences of obliterating Ca 2+ binding to EF1, EF2, or EF4 are negligible. Furthermore, we show that EF3 is critical for translating Ca 2+ signals to reorient the AB fork. Our data are consistent with the proposal that oxidation of cysteine residues in the S2S3 loop relieves K V 7 channels from a constitutive inhibition imposed by interactions between the EF3 hand of CaM which is crucial for this signaling.
+Neuronal KV7 channels, important regulators of cell excitability, are among the most sensitive proteins to reactive oxygen species. The S2S3 linker of the voltage sensor was reported as a site-mediating redox modulation of the channels. Recent structural insights reveal potential interactions between this linker and the Ca2+-binding loop of the third EF-hand of calmodulin (CaM), which embraces an antiparallel fork formed by the C-terminal helices A and B, constituting the calcium responsive domain (CRD). We found that precluding Ca2+ binding to the EF3 hand, but not to EF1, EF2, or EF4 hands, abolishes oxidation-induced enhancement of KV7.4 currents. Monitoring FRET (Fluorescence Resonance Energy Transfer) between helices A and B using purified CRDs tagged with fluorescent proteins, we observed that S2S3 peptides cause a reversal of the signal in the presence of Ca2+ but have no effect in the absence of this cation or if the peptide is oxidized. The capacity of loading EF3 with Ca2+ is essential for this reversal of the FRET signal, whereas the consequences of obliterating Ca2+ binding to EF1, EF2, or EF4 are negligible. Furthermore, we show that EF3 is critical for translating Ca2+ signals to reorient the AB fork. Our data are consistent with the proposal that oxidation of cysteine residues in the S2S3 loop relieves KV7 channels from a constitutive inhibition imposed by interactions between the EF3 hand of CaM which is crucial for this signaling.
 
 ## Introduction
 
@@ -45,9 +45,21 @@ Here, we address the role of CaM on redox modulation of KV7 channels, finding a 
 
 ## Results
 
-## CaM plays a critical role in H2O2-mediated regulation of KV7.4 channels
+### CaM plays a critical role in H2O2-mediated regulation of KV7.4 channels
 
 We have previously shown that cysteine residues present in the unusual long linker between S2S3 transmembrane segments of KV7 channels are critical for H2O2-dependent potentiation (Gamper et al., 2006). Recent studies suggest structural and functional interactions between this loop and CaM (Chang et al., 2018; Kang et al., 2020; Sun and MacKinnon, 2017; Tobelaim et al., 2017; Zhuang and Yan, 2020). To test a possible role of CaM in redox modulation, we used the perforated patch clamp method to measure KV7.4 activity in response to H2O2. Human KCNQ4 cDNA was co-expressed in HEK293 cells with either CaM or CaM mutants that, by replacing the aspartate residue with alanine in the first position of the EF-hands, the Ca2+ binding ability of the N-lobe (CaM12), the C-lobe (CaM34), or both (CaM1234; Geiser et al., 1991; Keen et al., 1999) is disabled (Figure 1). Cells were held at –20 mV, and 600 ms voltage pulses to –60 mV were applied every 2 s; KV7.4 activity was monitored as the outward steady-state current amplitude at –60 mV (Figure 1C). Bath-application of 150 μM H2O2 induced a clear augmentation of steady-state currents in the presence of CaM or CaM12 (Figure 1A–C, Figure 1—figure supplement 1). In contrast, the response was attenuated or precluded in the presence of CaM1234 or CaM34 (Figure 1A–C). Because structural and functional studies suggested a critical role of EF3 (Chang et al., 2018; Kang et al., 2020; Sun and MacKinnon, 2017; Tobelaim et al., 2017; Zhuang and Yan, 2020), we tested the effect of CaM3 and CaM124. Whereas the H2O2 response in the presence of CaM124 (Figure 1A–C) was maintained, it was diminished with CaM3 (Figure 1D). Importantly, while the response to H2O2 was abolished in the presence of CaM3, another KV7 activator, retigabine, still produced strong activation of KV7.4 current under these conditions (Figure 1D). Retigabine activates KV7 channels by binding to a hydrophobic pocket between S4 and S5 domains, a site that does not overlap with CaM binding site (Wuttke et al., 2005). These results suggest that EF3 of CaM is necessary for augmentation of KV7 channels by H2O2 specifically.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig1-v2.jpg)
+
+**Figure 1.:** (A) Response of KV7.4 transfected HEK293 cells to 150 µM H2O2 (normalized steady-state current at –60 mV, I/I0) when transfected with wild-type CaM (CaMWT n=12), mutant CaMs lacking Ca2+ binding to one or more EF hands. The number in X-axis of panel B applies and pertains to the EF hand unable to bind Ca2+ (CaM12 n=7, CaM124 n=7, CaM3 n=7, CaM34 n=7, and CaM1234 n=13) or with no additional CaM transfected (No CaM, n=6). (B) Current density (pA/pF; –60 mV) of KV7.4 transfected cells prior to treatment with H2O2. (C) Representative currents at –60 mV in response to 150 µM H2O2 followed by 10 µM XE-991. Inset: representative current traces from each condition. (D) Comparative response of cells transfected with KV7.4 and CaM3 to 300 µM H2O2 and 10 µM retigabine (n=8). (E) Ca2+ dependence of H2O2 response in cells transfected with KV7.4 and CaMWT. Comparison of 300 µM H2O2 response in normal or low Ca2+ conditions induced by pre-incubation of cells in 10 µM BAPTA-AM for 30 min to chelate intracellular Ca2+. Control n=4, BAPTA-AM n=9. Data presented are mean ± SEM, statistical evaluation by independent measures ANOVA with Dunnett’s post hoc, **p<0.01, ***p<0.001, and ****p<0.0001 (A and B). A paired (D) or unpaired (E) two-tailed T test ***p<0.001 and ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Current voltage relationship of KV4 and CaM transfected cells prior to treatment with H2O2. IV calculated through measuring tail current normalized to the maximal current in each condition (I/Imax). (B) Change in voltage at which half maximal current is produced (ΔV1/2) compared to CaMWT. (C) Representative IV traces for each CaM condition. Data presented is mean ± SEM, statistical evaluation by independent measures ANOVA with Dunnett’s post hoc *p<0.05. CaMWT n=6, CaM12 n=9, CaM124 n=8, CaM3 n=9, CaM34 n=6, and CaM1234 n=6.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Response of KV7.4 or KV7.4 triple cysteine to alanine mutant (KV7.4CCC/AAA) to 150 µM H2O2 when co-transfected with CaMWT or CaM1234. (B) Representative current trains at –60 mV in response to 150 µM H2O2 followed by 10 µM XE-991. Inset: representative current traces from each condition. (C) Current voltage relationship of KV7.4 or KV7.4CCC/AAA and CaMWT or CaM1234 transfected cells prior to treatment with H2O2. IV calculated through measuring tail current normalized to the maximal current in each condition (I/Imax). (D) Representative IV traces for each condition. Data presented are mean ± SEM, statistical evaluation by independent measures ANOVA with Dunnett’s post hoc ****p<0.0001.
 
 EF-hand mutations used above mimic Ca2+-free (apo) state of the CaM, with CaM1234 being completely Ca2+-free, while other mutants are partially Ca2+-free. Since CaM1234 prevented the KV7.4 current augmentation by H2O2 (as did the other mutants containing EF3 mutation), we therefore tested if ‘sponging’ intracellular Ca2+ by pre-incubating the cells with BAPTA-AM also prevent the H2O2 effect on KV7.4. BAPTA-AM crosses the membrane and release the strong Ca2+ chelator BAPTA intracellularly, thereby lowering resting Ca2+ levels. The response to oxidation was indeed virtually abolished under these conditions.
 
@@ -55,43 +67,103 @@ As expected, the effect of H2O2 was absent after substituting the redox-sensitiv
 
 Overall, these experiments suggested that EF3 of CaM and cysteine residues in the S2S3 of KV7.4 are necessary for current activation by H2O2. We hypothesize that binding of Ca2+ to EF3 partially inhibits KV7.4; preventing binding or removing Ca2+ from this location disinhibits the channel. We further hypothesize that oxidative modification of S2S3 cysteine residues antagonizes the EF3/Ca2+ inhibition of KV7.4. Yet, the interpretation of this effect requires caution since CaM over-expression also affects the number of the channels at the plasma membrane (Etxeberria et al., 2008; Gomis-Perez et al., 2017). To get further insights, we analyzed the behavior of the isolated CRD, without constrains imposed by other channel domains, the membrane, or the complexity of potential intracellular signaling cascades evoked in vivo.
 
-## CaM remains attached to the AB fork
+### CaM remains attached to the AB fork
 
 To test the stability of CaM engagement in the CRD, a fluorescent tag was placed in CaM (CaM-YFP) and another in the KV7.2 AB fork (mTFP1-AB). Two complementary assays were performed. In the first one, the complex was established with both components carrying a fluorescent tag, yielding an initial significant FRET value. Then, the complex was incubated up to 3 hr with excess of CaM (10-fold), devoid of any tag. Here, exchange between anchored and free CaM should be accompanied by a reduction in FRET. In the second assay, the complex was established between a tagged AB fork and label-free CaM. Subsequently, the complex was incubated with fluorescently tagged CaM. Exchange of anchored and free CaM should be accompanied by an increase in FRET. No changes in FRET were observed after 3 hr, neither in the presence nor in the absence of free Ca2+ (n=4; Figure 2—figure supplement 1). Thus, under these in vitro conditions, CaM remained firmly attached to the AB fork. Incidentally, the magnitude of FRET changes between mTFP1-AB, tagged just before helix A, in complex with CaM-YFP, tagged at the C-lobe, are best described as the C-lobe remaining bound to helix A in the presence of Ca2+, as previously revealed by NMR (Nuclear Magnetic Resonance) analysis of the complex (Bernardo-Seisdedos et al., 2018).
 
-## Ca2+ binding to EF3 is critical for signaling
+### Ca2+ binding to EF3 is critical for signaling
 
 Wild-type or mutant CaMs were co-expressed with the KV7.2 CRD in bacteria, the 1:1 complex was purified, and Ca2+ signaling was examined by monitoring the transfer of energy between the two fluorophores attached to the N- and C-termini of the AB fork with a flexible linker (see inset in Figure 2). This flexibility favors that FRET efficiency would be mainly proportional to packing of hA and hB. FRET efficiency was reduced in a Ca2+ concentration-dependent manner as previously described (Bernardo-Seisdedos et al., 2018). Mutations into EF1 and EF2 (CaM12) did not significantly alter Ca2+-dependent signaling (n=6), whereas mutations at either EF-hands 3 or 4 (CaM3 or CaM4) reduced the magnitude of FRET changes (n=6). The extent of the effect was significantly decreased in the complex with CaM3, with a minor effect in the complex with CaM4 (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig2-v2.jpg)
+
+**Figure 2.:** Top: cartoon representation of CaM mutants. The EF-hands carrying a mutation that preclude Ca2+ binding are colored in red. Bottom: box-plot of the relative FRET index change produced by Ca2+ for the AB fork in complex with the indicated mutated CaM. Note that in the complex with CaM3 and CaM123, the changes prompted by 16 µM Ca2+ were almost obliterated, whereas in the complex with CaM124 the response was preserved. Each plot represents the average of six independent experiments. FRET index was defined as the ratio of the fluorescence peak between mcpVenus (yellow acceptor) and mTFP1 (blue donor). The index was normalized to the value obtained with WT CaM. Experiments were performed at 500 nM of hAB:CaM purified complex, in a 1:1 ratio. Inset: cartoon representing the FRET sensor in complex with CaM (mTFP1-hA-hB-Venus/CaM).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Top: cartoon representation of the assays. A blue fluorescent protein was attached to the AB fork. In one experiment (A), the tagged AB fork was complexed with CaM tagged with a yellow fluorescent protein. Subsequently, the complex was incubated with excess CaM, devoid of any tag (n=4). A reduction in FRET over time is expected if there was CaM exchange. In another experiment (B), the fork was complexed with CaM and mixed with excess CaM tagged with a yellow fluorescence protein (n=4). Increase in FRET is expected if CaM exchange takes place. Bottom: FRET values over time in the presence and absence of Ca2+.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each plot represents the average of at least six independent experiments.
+
 The role of EF3 was further examined combining Ca2+-binding canceling mutations in EF1, EF2, and EF4-hands. The AB/CaM124 complex, that is, with only EF3 able to bind Ca2+, presented a response to Ca2+ that was ~80% that of the AB in complex with WT CaM (n=6). In contrast, the response of the complex with CaM3 was reduced to ~30% (n=6). A similar strategy was followed to evaluate the role of the EF4 hand, testing complexes with CaM123 and CaM4. In the complex with CaM123, the response was almost abolished, whereas in the complex with CaM4, the response was about 90% of that of WT (n=6; Figure 2). Similar results were obtained with complexes between the CDRs of the remaining KV7 family members and mutant CaM (Figure 2—figure supplement 2). Thus, EF3 plays a significant role in transmitting Ca2+ signals to the AB fork, and EF4 plays a secondary function.
 
-## Peptides derived from the KV7 S2S3 loop interact with CaM
+### Peptides derived from the KV7 S2S3 loop interact with CaM
 
 A subset of cryo-EM KV7.1 channel particles has revealed a likely interaction between the S2S3 loop of the channel voltage sensor and the EF3 of CaM (Sun and MacKinnon, 2017; Sun and MacKinnon, 2020; Figure 3—figure supplement 1), which, in turn, is engaged to the AB fork. Similar arrangements were reported for the KV7.2 CRD (Bernardo-Seisdedos et al., 2018). These structural studies suggest that the privileged role of EF3 may derive from constrains imposed by the channel architecture. To address the significance of this interaction in the absence of other channel domains, changes in the fluorescent emission of dansylated CaM (D-CaM) produced by peptides derived from the KV7 S2S3 sequence were monitored (Alaimo et al., 2013; Supplementary file 1). Interaction of alpha helices within the groove of the CaM lobes results in an increase in fluorescent emission of D-CaM, whereas the binding of Ca2+ to the EF-hands causes, in addition to an increase in fluorescence, a leftward shift in the position of the peak in the emission spectrum (Alaimo et al., 2013).
 
 The response to S2S3 peptides rendered an analogous profile to that of Ca2+: a leftward shift on the emission peak and an increase in fluorescent emission (Figure 3). A similar response was observed when S2S3 peptides derived from the sequence of human KV7.1 thought KV7.5 were tested (n=3; Figure 3—figure supplement 2). The relative increase in emission intensity was twice as large in the absence of Ca2+ (Figure 3). This is in contrast to what has been observed for peptides or targets that are embraced within the CaM lobes, in which the relative increase is similar with and without Ca2+ (Alaimo et al., 2014; Bonache et al., 2014). Interestingly, the leftward shifts caused by Ca2+ and the peptide were additive (Figure 3). These results suggest that Ca2+ and the peptide can interact with CaM simultaneously and that Ca2+ mitigates the effect of the peptide on D-CaM.
 
-## NMR reveals interaction of the S2S3 peptide with the C-lobe of the AB/CaM complex
+![Figure 3.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig3-v2.jpg)
+
+**Figure 3.:** (A) Emission spectra of D-CaM (50 nM) in Ca2+-free conditions (cyan), and after subsequent sequential addition of the S2S3 peptide (16 µM, green), and Ca2+ (10 µM free concentration, red). The order of additions is indicated at the left of each trace. (B) Dose-dependent relative fluorescent emission increase as a function of S2S3 peptide concentration, in the absence (green) and the presence of Ca2+ (10 µM, red). For this purpose, the maximum fluorescence D-CaM emission was measured between 490 and 500 nm and normalized with respect to the reference value (D-CaM with no added Ca2+ [green] and D-CaM with 10 µM free Ca2+ [red]). A Hill equation was fitted to the data (continuous line) with EC50=0.88 ± 0.12 and 1.63±0.07 µM, in the absence and the presence of Ca2+, respectively. The KV7.1 S2S3 peptide sequence was Ac-RLWSAGCRSKYVGVWGRLRFARK-NH2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The PDB of each structure is indicated at the bottom of each panel. The 5VMS structure of KV7.1 suggests a potential interaction between the S2S3 loop and the EF3 hand, whereas this interaction is not apparent in cryo-EM images from other KV7 channels, or KV7.1 channels solved in the presence of PIP2 (PDB 6V01). The structure S2S3 of KV7.1 PDB 5VMS in green is superimposed in each figure. The main differences appear located at the distal region of the proximal helix of the S2S3 hairpin and the loop in the KV7.4 structure (PDB 7VNP), which was trapped in an open channel configuration thanks to the presence of PIP2, whereas it is remarkably similar in the structure of KV7.4 (PDB 5BY1) trapped in a close conformation. Inset: alignment of the S2S3 sequences.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The residues forming the loop are highlighted in red in each peptide sequence. Emission spectra of D-CaM (50 nM) in Ca2+-free conditions (cyan), and after subsequent sequential addition of the S2S3 peptide (16 µM, green), and Ca2+ (10 µM free concentration, red). The order of additions is indicated at the left of each trace in the panel at the top left. A Hill equation was fitted to the emission increase data (continuous line) with EC50=0.89 ± 0.04 and 1.37±0.23 µM, (n=3) in the absence and presence of Ca2+, respectively for KV7.2 S2S3, 1.04±0.12 (n=3) and 1.78±0.34 µM for KV7.3 (n=3), 0.56±0.06 and 0.89±0.07 µM for KV7.4 (n=3), and 0.88±0.12 and 1.63±0.07 µM for KV7.1 (n=3).
+
+### NMR reveals interaction of the S2S3 peptide with the C-lobe of the AB/CaM complex
 
 The NMR signals from labeled WT CaM complexed with non-labeled KV7.2 AB fork were compared in the presence and absence of the S2S3 peptide and with Ca2+ added (holo-CaM, four EF-hands Ca2+-loaded) or not added (int-CaM, N-lobe Ca2+-loaded). Chemical shift perturbations (CSPs) produced by the S2S3 peptide (13 equivalents) in the 1H-15N-HSQC map of int-CaM (holo-N-lobe and apo-C-lobe) and holo-CaM in complex with the KV7.2 CRD are shown in Figure 4A (see also Figure 4—figure supplement 1). In the presence of the S2S3 peptide, several resonances of CaM residues in the spectrum were shifted, most of them located in the C-lobe. The CSPs perturbations, color-coded in the structure of the human KV7.2 CRD in Figure 4—figure supplement 1, are consistent with the S2S3 loop interacting predominantly with the EF3 loop, both in absence and in the presence of Ca2+. EF3 displacements were observed for D94, N98, Y100, I102, and A104, whereas for EF4, changes in the environment of I131 and E139 are beyond the threshold level (Figure 4B). Thus, Ca2+ addition produces a significant perturbation map, which is in line with the differential relative increase in fluorescence caused by the peptide in the D-CaM assay (Figure 3B). Next, we performed atomistic molecular dynamics (MDs) simulations to investigate the interactions between the KV7.1 S2S3 peptide and int- or holo-CaM in complex with the KV7.2 CRD (Supplementary file 2). Consistent with the NMR interaction experiment, the contact map obtained from the simulations shows that the peptide interacts mainly with the EF3 loop and the linker connecting CaM lobes (Figure 4C–D and Figure 4—figure supplement 2). In contrast, there were no contacts in the region connecting EF3 and EF4, suggesting that the CSPs observed are better interpreted as an allosteric effect, rather than a direct contact with the peptide.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig4-v2.jpg)
+
+**Figure 4.:** (A) The chemical shift perturbation (CSP) analysis shows that the magnitude of local residue environmental alterations detected by NMR is larger in the C-lobe, both in the presence and in the absence of Ca2+. (B) Structural mapping of the main CSPs in the presence of Ca2+ over Ca2+-loaded KV7.2 CaM/CDR complex. The two resides with the larger displacements are represented as balls, whereas the remaining above three times the mean are represented as sticks. The structure of the S2S3 loop was derived from the Cryo-EM PDB 5VMS (Sun and MacKinnon, 2017) and placed according to structural alignment of the C-lobe of PDB 6FEH (Bernardo-Seisdedos et al., 2018). (C) Contact map derived from molecular dynamic (MD) simulations of the S2S3/CaM complex. Normalized CaM contacts with the S2S3 peptide residues (10 Å cut-off) for int- (green) and holo-systems (red; see Figure 5—figure supplement 1). Vertical calibration bar is in arbitrary units (a.u.). (D) S2S3 contact map with CaM residues (4 Å cut-off; see Figure 5—figure supplement 1). (E) Distance as a function of time between the mass centers of the EF3 loop (residues D93-G98) and (i) the S2S3 loop (residues R164-L173; left) or (ii) the linker connecting CaM lobes (residues R74-E84; right). Bars indicate SEM (n=6).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 15N-HSQC of KV7.2 CDR:CaM complex at 75 µM (blue) and with KV7.1-S2S3 peptide at 1 mM (red). Signal overlap demonstrates that the structure of the complex was not altered in the presence of the peptide. (B) Green spectra corresponds to the complex KV7.2 CDR:CaM with 1 mM Ca2+, and orange to KV7.2 CDR:CaM 1 mM Ca2+ and 1 mM KV7.1-S2S3 peptide.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) CaM sequence highlighting the most relevant residues for the contacts with S2S3 peptide with a cut-off at 10 Å (in gray) and at 4 Å (in green). The EF loops are underlined. (B) Normalized CaM contacts between CaM and S2S3 peptide residues with cut-off at 4 Å, (C) 6 Å, and (D) 8 Å, for int- (green) and holo-systems (red). (E) S2S3 peptide sequence highlighting in green the most relevant residues for the contact with CaM with a cut-off at 4 Å. (F) Normalized S2S3 peptide contacts between CaM and S2S3 peptide residues with cut-off at 6 Å, (G) 8 Å, and (H) 10 Å.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Circular Dichroism of the KV7.1 S2S3 peptide. The residues forming the loop are highlighted in green in the peptide sequence. CD (Circular Dichroism) spectra recorded at a fixed incubation time of the peptide (50 nM) in control (blue) and in presence of 1 m H2O2 (orange). Helicity (H) was 63.4%, S+T antiparallel β-sheet conformations was 16.2%, and U for disordered structures were estimated to be 21.1%. In the presence of 1 mM H2O2, H=63.6%, S+T = 15.3%, and U=21.8%. Spectrum is the average of 40 runs. (B). Percentage of the S2S3 helical character relative to the whole trajectory. Bars indicate SEM (n=6). Helical character of the initial S2S3 structure is shown in black. The peptide in solution (gray line) adopts a similar structure regardless of the presence or the absence of the CaM/KV7.2 complex. Both 310 and α-helices were combined to compute the degree of helicity. (C) Representative structures of the S2S3 peptide at initial (left) and final (right) times. Loop residues are shown in green.
 
 Regarding the S2S3 peptide, residues that form an intracellular loop located between W166 and G176 are the ones that interact predominantly with CaM (Figure 4D). During the course of the simulation, the C-terminal region adopted an α-helix conformation for ≥97.8% of the time (see Figure 4—figure supplement 3). The N-terminal that started as a 310 helix became unstructured after the initial equilibration. It is reasonable to expect such differential stability since the N- and C-helices were initially formed by 6 and 10 residues, respectively, and 310 helices are less stable than α-helices (Bolin et al., 1999).
 
 The interaction between S2S3 and EF3 was more stable when it was not loaded with Ca2+ (Figure 4F, left). In contrast, the main contacts of the holo-system were established primarily with the linker connecting CaM lobes (Figure 4F, right). To analyze the interaction between S2S3 and EF3, we measured the distance between the center of mass of EF3 and S2S3 loops or the linker connecting the CaM lobes. The results suggest that the interaction between the S2S3 and the empty EF3 loops is rather stable, whereas Ca2+ occupancy prompts the movement of the peptide away from EF3 toward the linker on the lobes (Figure 4E). Thus, Ca2+ occupancy has an important influence on the S2S3/CaM interaction. These observations could fully explain the reduced CaM/S2S3 affinity in the presence of Ca2+ (see Figure 3).
 
-## Reversal of Ca2+-EF3 signaling by S2S3 peptides
+### Reversal of Ca2+-EF3 signaling by S2S3 peptides
 
 Changes on FRET index in response to Ca2+ in the presence of S2S3 peptides were monitored as previously described (see Figure 2). Figure 5 shows that the Ca2+-dependent reduction in FRET index was mitigated as the concentration of peptide was increased. At high-peptide concentrations (≥10 µM), the FRET index increased, suggesting that the distance/orientation of AB helices was even more favorable than in the absence of Ca2+. A similar behavior was observed when the effect of the peptide for the other KV7 family members was examined (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig5-v2.jpg)
+
+**Figure 5.:** (A) FRET change after Ca2+ addition (10 µM) in the presence of the indicated concentrations of the S2S3 peptide: control (black), 0 µM S2S3, 5 µM S2S3 (red), and 10 µM S2S3 (green) (n=4). (B) Superposition of helices A and B solved in the absence of Ca2+ (gold, PDB 6FEH, KV7.2), in the presence of Ca2+ (green, PDB 6FEG, KV7.2), and interacting with the S2S3 loop in the presence of Ca2+ (blue, PDB 5VMS, KV7.1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relative FRET changes of KV7 calcium responsive domain (CRD) in complex with CaM. The concentration of peptide employed is indicated by the color of the symbol. Ca2+ dose-response in the presence of the indicated concentrations of the S2S3 peptide, normalized to the maximal response. FRET changes expanded from 100% reduction to 70% increase. Dotted lines mark no changes in FRET. The continuous lines are the result of the fit of a Hill equation, with EC50 values of 0.70±0.04 µM, 0.93±0.03 µM, 0.86±0.1, and 0.85±0.33 µM for KV7.1, KV7.3, KV7.4, and KV7.5, respectively, in the absence of S2S3. In the presence of 10 µM S2S3, the EC50 values were 1.06±0.2 µM, 1.17±0.6 µM, 0.94±0.6 µM, and 0.89±0.33 µM for KV7.1, KV7.3, KV7.4, and KV7.5, respectively. Each plot represents the average of four independent experiments. (B) Ca2+ dose-response in the presence of the indicated concentrations of S2S3 peptide, normalized to the maximal response. FRET changes expanded from 100% reduction to 70% increase. Dotted lines mark no changes in FRET. The CaM mutant forming part of each complex is indicated on top of the corresponding dose-response curve. The continuous lines are the result of the fit of a Hill equation, with EC50 values of 0.84±0.04 and 0.83±0.07 µM in the absence of S2S3 for WT and CaM124 (n=4), respectively. In the presence of 10 µM S2S3, the EC50 values were 0.62±0.91, 0.62±0.16, and 1.48±0.22 µM for WT, CaM124, and CaM3, respectively (n=4).
+
 S2S3 is not canceling the effect of Ca2+ by competing or displacing this cation from its binding site. Instead, the response to Ca2+ in the presence of S2S3, in terms of FRET index, was in the opposite direction than when the peptide was absent. The magnitude of signaling reversal was similar in WT and CaM124 complexes, whereas it was reduced in complexes with CaM3 (Figure 5). Thus, the direction/orientation of the movements in the AB fork when EF3 is loaded with Ca2+ is reversed upon interaction with S2S3.
 
-## Treatment with H2O2 reduces the effect of the S2S3 peptide
+### Treatment with H2O2 reduces the effect of the S2S3 peptide
 
 The S2S3 loop, which is highly conserved among KV7 channels, contains one (KV7.1) or three cysteine residues (KV7.2–KV7.5, Figure 3—figure supplement 1). The cysteine site mediates an increase in channel open probability in response to oxidizing conditions (Gamper et al., 2006). We tested the influence of oxidation by removing DTT (Dithiothreitol) from the buffer and including H2O2 to obtain a derivate that will be referred to as oxidized-S2S3. Contrary to the increase observed with S2S3, no changes in fluorescent emission of D-CaM were observed after addition of oxidized-S2S3 (Figure 6—figure supplement 1).
 
 Treatment with H2O2 or DTT did not affect the response of the KV7.4AB/CaM or KV7.2AB/CaM complexes to Ca2+ (Figure 6—figure supplement 2). The Ca2+ titration profile using KV7.4AB/CaM or KV7.2AB/CaM complexes in the presence of oxidized KV7.4 or KV7.2 peptides (10 µM) was similar to that obtained in the absence of S2S3, suggesting that oxidized S2S3 can no longer affect the AB-CaM interaction (Figure 6). Using the KV7.4 sensor and oxidized KV7.4-S2S3 peptide, the relative FRET change in presence of Ca2+ was 68.22±6.90, i.e., a change qualitatively similar to that obtained in the presence of Ca2+ alone (94.84±5.93), and very different from that obtained with the untreated peptide (–87.50±8.26). The oxidized S2S3 peptide was incubated with the reducing agent DTT aiming to reverse the effect of the treatment with H2O2. We observed a partial recovery: after treating the oxidized peptide with DTT, the relative FRET change was similar to that observed with the untreated peptide (–69.45±12.80; Figure 6, left panel). Similar results were obtained using the KV7.2 sensor and the KV7.2-peptide (Figure 6, right panel) or when using the KV7.1-peptide (Figure 6—figure supplements 1 and 2).
 
-## All KV7 CRDs display a similar response to Ca2+
+![Figure 6.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig6-v2.jpg)
+
+**Figure 6.:** Difference in FRET efficiency in the absence and the presence of Ca2+. Left, KV7.4-S2S3 peptide and KV7.4 CRD. Right, KV7.2-S2S3 peptide and KV7.2 CRD. Similar results were obtained with KV7.1-S2S3 peptide (Figure 6—figure supplement 2). Red, sensor alone. Green, in the presence of 10 µM peptide. Yellow, with 10 µM oxidized peptide. Orange, oxidized peptide treated with 1 mM DTT. Bars represent mean ± SEM FRET-efficiency. *p<0.05; ***p<0.001. Each plot represents the average of at least six independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Fluorescent emission dansylated calmodulin (D-CaM) enhancement caused by KV7.1 S2S3 and KV7.2 S2S3 peptides before and after oxidation. (B). Normalized FRET changes produced by 8 µM Ca2+, in the presence of 5 µM KV7.1 S2S3 and KV7.2 S2S3 peptides in mTFP-Q1hAB-Venus/CaM and mTFP-Q2hAB-Venus complexes, respectively, before and after oxidation. Bars represent the means ± SEM from at least six independent experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81961/elife-81961-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Percentage of FRET index changes prompted by oxidized and reduced S2S3 peptides. Difference in % FRET index in the absence and the presence of Ca2+ with sensors derived from the KV7.4 and KV7.2 CRD sequences. Red, sensor alone. Green, in the presence of 10 µM KV7.1-S2S3 peptide. Yellow, with 10 µM oxidized peptide. Orange, oxidized peptide treated with 1 mM DTT. Blue, KV7.x/CaM complex treated with 1 mM H2O2. Purple, KV7.x/CaM incubated with 1 mM DTT. Bars represent mean ± SEM FRET-efficiency. *p<0.05; ***p<0.001. Each plot represents the average of at least six independent experiments. Bottom: sequence of the KV7.1-peptide. The residues forming the loop are highlighted in red in the peptide sequence.
+
+### All KV7 CRDs display a similar response to Ca2+
 
 As mentioned above, the effect of S2S3 peptides having the sequence of each KV7 isoforms was tested in D-CaM assay, obtaining equivalent results for the set. The apparent affinity for every peptide was significantly lower in the presence of Ca2+ (Figure 3—figure supplement 2). A panel of KV7 biosensors in which the fork sequence was replaced by the equivalent segment from KV7.1, KV7.2, KV7.3, KV7.4, and KV7.5 human isoforms was created. FRET index was reduced for all biosensors in the presence of Ca2+, and the signal was significantly preserved in complexes formed with CaM124, whereas it was decreased in complexes with CaM3. The apparent affinity for Ca2+ was lower in the presence of the peptides, but the difference was not statistically significant (Figure 5—figure supplement 1). Thus, we conclude that EF3 plays a similar role across the KV7 family of CRDs.
 
@@ -121,11 +193,293 @@ Based on docking calculations, the functional existence of significant interacti
 
 ## Materials and methods
 
-## Cell culture and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KV7.1 S2S3</td>
+      <td>Proteogenix</td>
+      <td></td>
+      <td>RLWSAGCRSKYVGVWGRLRFARKP</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KV7.2 S2S3</td>
+      <td>Proteogenix</td>
+      <td></td>
+      <td>RIWAAGCCCRYRGWRGRLKFARKP</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KV7.3 S2S3</td>
+      <td>Proteogenix</td>
+      <td></td>
+      <td>RIWAAGCCCRYRKGWRLFKFARKP</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KV7.4 S2S3</td>
+      <td>Proteogenix</td>
+      <td></td>
+      <td>RVWSAGCCCRYRGWQGRFRFARKP</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KV7.5 S2S3</td>
+      <td>Proteogenix</td>
+      <td></td>
+      <td>RIWSAGCCCRYRGWQGRLRFARKP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.1 mtfp-hAB-Venus (residues I247-D456) in pPROEX HTc</td>
+      <td>This paper</td>
+      <td>NM_000218.2</td>
+      <td>Plasmid, Fluorescence sensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.2 mtfp-hAB-Venus (residues I310-D549), in pPROEX HTc vector</td>
+      <td>This paper</td>
+      <td>NM_172107.3</td>
+      <td>Plasmid, Fluorescence sensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.3 mtfp-hAB-Venus (residues I349-D556) in pPROEX HTc</td>
+      <td>This paper</td>
+      <td>NM_004519.3</td>
+      <td>Plasmid, Fluorescence sensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.4 mtfp-hAB-Venus (residues I315-D539) in pPROEX HTc</td>
+      <td>This paper</td>
+      <td>NC_060925.1</td>
+      <td>Plasmid, Fluorescence sensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.5 mtfp-hAB-Venus (residues I308-D527) in pPROEX HTc</td>
+      <td>This paper</td>
+      <td>NC_060930.1</td>
+      <td>Plasmid, Fluorescence sensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM in pOKD4</td>
+      <td>Recombinant Human CALM2 in pOKD4 vector, GenScript</td>
+      <td>Genbank, NP_001292553.1</td>
+      <td>Plasmid, Calmodulin, human CALM2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hKCNQ4-eYFPc</td>
+      <td>Gamper et al., 2006</td>
+      <td>AF105202</td>
+      <td>Plasmid,KCNQ4 bound to YFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hKCNQ4CCC/AAA -eYFPc</td>
+      <td>Mutant AF105202; Gamper et al., 2006</td>
+      <td></td>
+      <td>Plasmid, Mutant KCNQ4 bound to YFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM 3 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.2</td>
+      <td>Plasmid, human CALM2, D93A mutation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM124 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.3</td>
+      <td>Plasmid, mutant human CALM2, D20A/D56A/D129A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM123 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.4</td>
+      <td>Plasmid, mutant human CALM2, D20A/D56A/D93A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM12 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.5</td>
+      <td>Plasmid, mutant human CALM2, D20A/D56A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM34 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.6</td>
+      <td>Plasmid, mutant human CALM2, D93A/D129A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM1234 in pOKD4</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.7</td>
+      <td>Plasmid, mutant human CALM2, D20A/D56A/D93A/D129A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM WT in pCDNA3</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.8</td>
+      <td>Plasmid, Calmodulin, human CALM2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM3 in pCDNA3</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.9</td>
+      <td>Plasmid, human CALM2, D93A mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM34 in pCDNA3</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.10</td>
+      <td>Plasmid, human CALM2, D93A/D129A mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM12 in pCDNA3</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.11</td>
+      <td>Plasmid, human CALM2, D20A/D56A mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM124 in pCDNA3</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.12</td>
+      <td>Plasmid, human CALM2, D20A/D56A/D129A mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaM1234 in pCDNA3.1</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.13</td>
+      <td>Plasmid, human CALM2, D20A/D56A/D93A/D129A mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.4 in pCDNA3.1</td>
+      <td>GenScript</td>
+      <td>Genbank, NP_001292553.14</td>
+      <td>Plasmid, human KV7.4 channel</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KV7.4CCC/AAA in pCDNA3.1</td>
+      <td>Gamper et al., 2006</td>
+      <td>Genbank, NP_001292553.15</td>
+      <td>Plasmid, human KV7.4 channel, C156A, C157A, C158V</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Kidney (normal epithelial, embryo)</td>
+      <td>ATCC</td>
+      <td>HEK293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>5-(Dimethylamino)naphthalene-1-sulfonyl chloride, DNSCl</td>
+      <td>SIGMA-ALDRICH</td>
+      <td>CAS Number: 605-65-2</td>
+      <td>Dansyl chloride</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Pierce DTT (ditiotreitol)</td>
+      <td>Thermo Scientific</td>
+      <td>CAT# 20290</td>
+      <td>DTT</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Hydrogen peroxide solution</td>
+      <td>SIGMA-ALDRICH</td>
+      <td>CAS Number = 7722-84-1 / Pubchem ID = 57654227</td>
+      <td>H2O230% (w/w) in H2O, contains stabilizer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>X2254</td>
+      <td>SIGMA-ALDRICH</td>
+      <td></td>
+      <td>XE-991</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>ab145545</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>Retigabine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>E2311</td>
+      <td>Promega</td>
+      <td></td>
+      <td>Fugene</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>PyMOL</td>
+      <td colspan="2">The PyMOL Molecular Graphics System, Version 1.3 Schrödinger, LLC.</td>
+      <td>Use for molecular dynamics and figure preparation</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Patchmaster V2</td>
+      <td colspan="2">HEKA Instruments</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>VMD</td>
+      <td colspan="2">Humphrey et al., 1996</td>
+      <td>Use for molecular dynamics and figure preparation</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>NAMD</td>
+      <td colspan="2">Phillips et al., 2020</td>
+      <td>Use for molecular dynamics</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and transfection
 
 Human embryonic kidney line 293 (HEK293T) cells from ATCC authenticated via STR profiling by Eurofins Genomics (ISO 17025) and confirmed negative for mycoplasma via PCR (EZ-PCR Mycoplasma detection kit, Generon, 20-700-20) were cultured to 80% confluence before passaging and used for experimentation between P10 and P40. Cells were grown in Dulbecco’s modified Eagle’s medium (DMEM Gibco) containing penicillin (100 U/mL; Sigma), streptomycin (100 µg/mL; Sigma), and 10% fetal calf serum (Sigma). HEK293 cells were cultured in 24 well plates for 24 hr prior to transfection and transfected with 300 ng of each plasmid using FuGene transfection reagent (Promega), according to the manufacturer’s instructions. Plasmids: hKCNQ4-eYFPc (AF105202) or hKCNQ4CCC/AAA -eYFPc a triple cysteine to alanine mutation in the S2–S3 linker (C156A, C157A, and C158A; Gamper et al., 2006) were co-transfected with WT CaM or lobe mutants. For BAPTA-AM experiments, cells were incubated with 10 µM cell-permeable BAPTA-AM (B1205 ThermoFisher) for 30 min prior to recordings. Cells were also bathed in 10 µM BAPTA-AM for the duration of the recording.
 
-## Electrophysiology
+### Electrophysiology
 
 Amphotericin B perforated configuration of patch clamp technique was used to record KV7 current using a HEKA EPC10 amplifier and Patchmaster V2 (HEKA instruments). Voltage dependence of activation was investigated using a standard IV protocol consisting of a train of square voltage pulses (1000 ms) from –80 mV to +20 mV in 10 mV increments with a 600 ms deactivating pulse back to –80 mV; pulses were applied with 2 s interval. In this protocol, the tail current amplitude elicited by the deactivating step was measured to remove the impact of driving force on the recording. Pipettes were pulled using a horizontal puller (Sutter P-97) and fire polished to typically 2–4 MΩ resistance. Upon entering whole-cell configuration, cell capacitance was nulled, and series resistance was typically below 10 MΩ.
 
@@ -133,33 +487,33 @@ Intracellular solution contained: 0.4 mg/mL Amphotericin B, 160 mM KCl, 5 mM MgC
 
 Extracellular solution contained: 160 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 10 mM HEPES, 2 mM CaCl2, and 10 mM Glucose; pH adjusted to 7.4 with NaOH (all from Sigma).
 
-## Expression and purification of the CaM/mTFP-KV7.2-hAB-Venus complex and CaM-Venus
+### Expression and purification of the CaM/mTFP-KV7.2-hAB-Venus complex and CaM-Venus
 
 The KV7.2-hAB segment (residues 316–532), KV7.1-hAB (residues 250–412), KV7.3-hAB (residues 349–556), KV7.4-hAB (residues 316–571), and KV7.5-hAB (residues 309–524) in complex with CaM and CaM-Venus recombinant protein were purified as previously described (Bernardo-Seisdedos et al., 2018).
 
-## Mutant CaM
+### Mutant CaM
 
 CaM3, CaM4, CaM123, CaM124, and CaM1234 in pOKD4 vector were synthesized by GenScript Biotech Corporation (Netherlands). CaM3 has mutation in the EF3 (D95A), CaM4 in the EF4 (D131A), CaM123 has mutations in EF1, EF2, and EF3 (D22A, D58A, and D95A), CaM124 has three alanine substitutions in the first, second, and fourth EF hands (D22A, D58A, and D131A), while CaM 1234 has substituted all EF hands (D22A, D58A, D95A, and D131A).
 
-## Expression and purification of CaM
+### Expression and purification of CaM
 
 Recombinant CaM was produced in BL21 DE3 bacteria and purified as previously described (Yus-Najera et al., 2002).
 
-## Peptide design and solubilization
+### Peptide design and solubilization
 
 Proteogenix prepared and purified by reverse phase HPLC (High performance liquid chromatography) chromatography all peptides, with greater than 95% purity (Supplementary file 1) and stored at –20°C lyophilized. Peptides were solubilized first in DMSO to get 10 mM concentration. To obtain 100 µM KV7.2-S2/S3 solution, they were diluted in Fluorescence Buffer (Hepes 50  mM [pH 7.4], KCl 120  mM, NaCl 5  mM, MgCl2 2  mM, and EGTA 5  mM) with 1 mM DTT.
 
-## Reversible peptide oxidation by H2O2
+### Reversible peptide oxidation by H2O2
 
 A 30% solution of H2O2 was from Thermo Fisher Scientific. The DMSO-peptide stock at 10 mM was diluted in oxidizing buffer (120 mM KCl, Hepes 50 mM pH 7.4, 5 mM EGTA, 5 mM NaCl, and 1 mM H2O2 [0.003%]). The oxidized peptide was added to samples with 500 nM FRET-sensor, both KCNQ2 and KCNQ4, in the absence and in the presence of 1 mM CaCl2.
 
 To reverse the oxidation, DTT was added at 1 mM to the previously oxidized peptide stock and incubated at 4°C O/N. Samples were prepared exactly the same, and FRET was analyzed as previously described.
 
-## FRET experiments
+### FRET experiments
 
 All FRET experiments were carried using an AMINCON Bowman series 2 luminescence fluorimeter. The fluorescence emission spectra of the proteins at 500 nM were collected over 470–570 nM after excitation at 458 nm (2 nm bandwidth). The total protein in each condition was assessed by direct excitation of the yellow protein at 520 nm, collecting the emission at 520–570 nm. FRET index was established as the ratio of emission at 520–525 divided by emission at 485–490 nm upon excitation at 456–460 nm.
 
-## Fluorometric measurements using D-CaM
+### Fluorometric measurements using D-CaM
 
 Fluorescent D-CaM (5-[dimethylamino]naphtalene-1-sulfonyl-calmodulin) was prepared using recombinant CaM and dansyl chloride. Prior to the experiments, D-CaM and other proteins were dialyzed for 48 hr against 2 L of fluorescence buffer containing Hepes 50  mM (pH 7.4), KCl 120 mM, NaCl 5 mM, MgCl2 2 mM, and EGTA 5 mM, changing the buffer every 12 hr. Steady-state fluorescence measurements were obtained at 25°C on a SLM SPF-8100 (Olis, inc) fluorescence spectrophotometer in a final volume of 100 μL. The fluorescence was measured after exciting at 340 nm and recording emission from 450 to 600  nm. Slit widths were set at 2 nm for excitation and 2 nm for emission.
 
@@ -167,11 +521,15 @@ Titration experiments were performed by adding increasing concentrations S2/S3 p
 
 Fluorescence enhancement was plotted against the peptide concentration to generate the concentration-response curves. The parameters of the Hill equation were fitted to the data by curvilinear regression, enabling the apparent affinity (EC50 or concentration that gives half-maximal change in the intensity of the fluorescence emission) or the t50 (half-time or time that gives half-maximal change in the intensity of fluorescence emission). The data are shown as the average of three or more independent experiments.
 
-## NMR measurements
+### NMR measurements
 
-Uniformly 15N-labeled KV7.2hAB:CaM was prepared in M9 medium containing 1 g/L 15NH4Cl as source of nitrogen. Other steps involved in the expression and purification of 15N-labeled KV7-2hAB:CaM were the same as for mTFP-KV7.2hAB-Venus:CaM. The 2D-1H,15N-HSQC experiments were performed by dissolving 75 µM complex in a buffer consisting of 50 mM Tris-HCl, 100 mM KCl, 10% D2O, and 10 mM EGTA (apo-Complex) or, alternatively, 5 mM CaCl2 (holo-Complex). The pH values of the sample solutions were carefully adjusted to 7.4 with trace amount of 2 M KOH. All NMR experiments were carried out at 25°C on a Bruker Avance III 600 MHz NMRs spectrometer. The HSQC (Heteronuclear single quantum correlation) spectra were acquired with a spectral width of 30 ppm in the 15N dimension and 16 ppm in the 1H dimension. In CSP experiments, peptide-CaM complexes were prepared by adding 13 equivalents of the KV7.1-S2S3 lyophilized peptide directly to the Q2-hAB-CaM NMR sample. The CSP studies were performed by monitoring the changes in the 1H,15N HSQC spectra of 15N-labeled CaM. The CSP values were then evaluated as a weighted average chemical shift difference of 1H and 15N resonances, using the equation:.δ=(0.1∗δN)2+ δH2
+Uniformly 15N-labeled KV7.2hAB:CaM was prepared in M9 medium containing 1 g/L 15NH4Cl as source of nitrogen. Other steps involved in the expression and purification of 15N-labeled KV7-2hAB:CaM were the same as for mTFP-KV7.2hAB-Venus:CaM. The 2D-1H,15N-HSQC experiments were performed by dissolving 75 µM complex in a buffer consisting of 50 mM Tris-HCl, 100 mM KCl, 10% D2O, and 10 mM EGTA (apo-Complex) or, alternatively, 5 mM CaCl2 (holo-Complex). The pH values of the sample solutions were carefully adjusted to 7.4 with trace amount of 2 M KOH. All NMR experiments were carried out at 25°C on a Bruker Avance III 600 MHz NMRs spectrometer. The HSQC (Heteronuclear single quantum correlation) spectra were acquired with a spectral width of 30 ppm in the 15N dimension and 16 ppm in the 1H dimension. In CSP experiments, peptide-CaM complexes were prepared by adding 13 equivalents of the KV7.1-S2S3 lyophilized peptide directly to the Q2-hAB-CaM NMR sample. The CSP studies were performed by monitoring the changes in the 1H,15N HSQC spectra of 15N-labeled CaM. The CSP values were then evaluated as a weighted average chemical shift difference of 1H and 15N resonances, using the equation:
 
-## MDs simulations
+$$
+\delta=\sqrt{(0.1∗\delta_{N})2^{}+ \delta_{H^{2}}}
+$$
+
+### MDs simulations
 
 Two systems were set up: the intermediate- (Int-CaM, N-lobe loaded with Ca2+) and the holo-CaM/KV7.2 hAB complexes (both lobes loaded with Ca2+) in the presence of the KV7.1 S2S3 peptide (164-RLWSAGCRSKYVGVWGRLRFARKP-187; PDB ID: 5VMS; Sun and MacKinnon, 2017). CaM/hAB complexes were modeled starting from the NMR structures of the KV7.2hAB/CaM complex (PDB IDs: 6FEG and 6FEH, for int- and holo-complexes, respectively; Bernardo-Seisdedos et al., 2018). The initial location of the peptide was established after aligning the EF3 lobes of the KV7.1/CaM and KV7.2/CaM complexes. Hydrogen atoms were added to the complexes using the VMD software (Humphrey et al., 1996). Two or four Ca2+ atoms were added to the int- and holo-systems, located as in PDB 6FEG and 6FEH, respectively. The systems were then solvated resulting in a cubic box of dimensions described in Supplementary file 2. K+ and Cl+ ions were added using the Autoionize plugin of VMD to neutralize the system resulting in a final concentration of 150 mM KCl. The S2S3 peptide was also considered alone in solution to investigate its structural stability. Several replicas were run for some of the systems (Supplementary file 2).
 

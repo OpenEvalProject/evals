@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Department of Neuroscience, Karolinska Institute Stockholm Sweden
-2. https://ror.org/02jx3x895 Sainsbury Wellcome Centre for Neural Circuits and Behaviour, University College London London United Kingdom
-3. https://ror.org/042t93s57 Neuromodulation of Cortical and Subcortical Circuits Laboratory, Istituto Italiano di Tecnologia Genova Italy
-4. https://ror.org/012gwbh42 Cajal Institute, Spanish National Research Council (CSIC) Madrid Spain
-5. https://ror.org/00ca2c886 CIBERNED, Instituto de Salud Carlos III Madrid Spain
+1. Department of Neuroscience, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Sainsbury Wellcome Centre for Neural Circuits and Behaviour, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+3. Neuromodulation of Cortical and Subcortical Circuits Laboratory, Istituto Italiano di Tecnologia Genova Italy ([ROR:042t93s57](https://ror.org/042t93s57))
+4. Cajal Institute, Spanish National Research Council (CSIC) Madrid Spain ([ROR:012gwbh42](https://ror.org/012gwbh42))
+5. CIBERNED, Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 
@@ -35,9 +35,25 @@ Here, we used ex vivo whole-cell patch-clamp recordings and morphological recons
 
 ## Results
 
-## DRNDA and DRN5-HT neurons are electrophysiologically distinct cell types
+### DRNDA and DRN5-HT neurons are electrophysiologically distinct cell types
 
 To investigate the electrophysiological and morphological profiles of DRNDA neurons and to compare it to DRN5-HT neurons, we performed whole-cell patch-clamp recordings in coronal slices of adult WT and DAT-cre mice crossed with tdTomato reporter mice (Figure 1A). All neurons were filled with neurobiotin and Alexa488 while recording. Alexa488 allowed us to take snapshots of recorded neurons at different time points, thus facilitating the topographical registration of recorded neurons to the post hoc stained slices (Figure 1—figure supplement 1). Using this approach, we obtained complete sets of electrophysiological and morphological data from 75 neurons in the DRN. Cells were identified as DRN5-HT or DRNDA neurons based on tryptophan hydroxylase (TPH) or TH immunoreactivity, respectively (Figure 1A–D). In line with Fu et al., 2010, none of the recorded neurons was positive for both TPH and TH (n = 0/412). During the recordings, we used a series of depolarizing and hyperpolarizing current steps and ramps that allowed us to characterize active and passive membrane properties in detail (Figure 1E–G). Based on the electrophysiological data, we first tested possible differences between TH+ neurons recorded in WT mice and tdTomato-positive (tdTomato+) neurons recorded in DAT-tdTomato mice. We found no differences between these two groups (n = 13 TH+ vs. n = 30 tdTomato+ neurons, Figure 1—figure supplement 2) and neither within the subset of tdTomato+ neurons when comparing TH+ to TH-negative (TH−) neurons (n = 23 TH+ vs. n = 6 TH− neurons, Figure 1—figure supplement 2A–E). Since this small number of TH− neurons were positive for DAT and their electrophysiology indistinguishable from TH+ DRNDA neurons, the data were pooled. Please note that staining of recorded neurons, that is immunohistochemistry on slices strained by hour-long patch-clamp recordings, is more challenging as neurons can be lost after patching (no staining data) or the staining might be ambiguous. Out of 114 tdTomato+ neurons only one cell displayed a different electrophysiological profile than all other DRNDA neurons, suggesting a false-positive rate of 0.8%. That neuron was TH−, displayed profoundly distinct intrinsic properties, and was therefore excluded (Figure 1—figure supplement 2F, G). Taken together, the electrophysiological results support the use of the DAT-tdTomato mouse line when studying DRNDA neurons and data from both mouse lines were pooled. Recordings of DRNDA neurons revealed distinctive electrophysiological properties such as a slowly ramping membrane potential during constant current injections giving rise to delayed spiking and postinhibitory hypoexcitability (Figure 1E). Moreover, most DRNDA neurons displayed rebound oscillations and sag currents (Figure 1E, F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme of the location of the DRN (pink) in a coronal section (top) and at higher magnification together with two patch pipettes (center). Bottom: a representative slice stained post-recording for TPH, TH, and neurobiotin revealing serotonergic neurons (arrows). The ventricle is indicated with a dashed line. (B) Top: differential interference contrast (DIC) microscopy image (left) of neurons that were filled with Alexa488 (right) and neurobiotin. Center, bottom: staining of the same neurons revealing a TPH+ (DRN5-HT) neuron and a TPH− and TH− cell. (C) Top: DIC image of recorded neurons that were filled with Alexa488 and neurobiotin. Center, bottom: staining of the same neurons revealing tdTomato+ and TH+ (DRNDA) neurons. (D) Representative fluorescent (top), DIC (center) image, and overlay (bottom) of a tdTomato+ neuron in a DAT-tdTomato mouse. (E) Representative recordings depicting postinhibitory hypoexcitability, slowly ramping currents and rebound oscillations in DRNDA neurons. (F) Representative voltage responses to current injections in a DRN5-HT and DRNDA neuron. (G) Ramping current injections reveal AP amplitude accommodation. Gray circles indicate the onset and peak of APs. (H) Amplitude and duration of the AP and AHP in a DRN5-HT and DRNDA neuron. Gray circles indicate onset, peak, and end of the AP and AHP. (I) Quantification of electrophysiological properties distinguishing DRN5-HT from DRNDA neurons (AP drop rate: n = 32 DRN5-HT, n = 43 DRNDA, Capacitance: n = 32 DRN5-HT, n = 43 DRNDA, AP delay: n = 30 DRN5-HT, n = 43 DRNDA, AHP duration: n = 28 DRN5-HT, n = 32 DRNDA, N = 9; Wilcoxon Rank Sum Test). (J) PCA of five electrophysiological parameters (insert) and hierarchical cluster analysis based on PCA1 and PCA2 (Ward’s method, Euclidean distance). Intrinsic properties were sufficient to separate TPH+ cells (blue dash) from TH+ (red dash) cells. Bottom dashes indicate WT (black) and DAT-tdTomato (gray) mice. Data are shown as mean ± SEM, ***p < 0.001. Scale bars: A, 100 μm; B–D, 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Snapshots of recorded neurons filled with AlexaFluor488 facilitate post hoc mapping of electrophysiology, anatomical location, and immunohistochemistry. Please note that cell 8 is shown at higher magnification in Figure 1D. (B) Representative confocal pictures of post-recording immunostaining for TH and neurobiotin revealing six TH+ neurons (arrows) in a DAT-tdTomato mouse. (C) Post-recording immunostaining of a TH+ neuron in a wild-type mouse. (D) Histological verification of recording position. Representative schemes showing the location of DRN5-HT and DRNDA neurons recorded in Sham. Neurons are plotted in the nearest coronal section (−4.24, −4.60, or −4.84 from Bregma). Scale bars: A, B, 100 µm; C, 10 µm; D, 0.5 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Intrinsic properties of DRNDA recorded in WT or DAT-tdTomato (Tompos) mice (n = 13 DRNDA neurons from N = 5 WT mice vs. n = 29 DRNDA neurons from N = 3 tdTomato mice). Six of 29 tdTomato+ neurons were found to be TH− (closed circles) while all other neurons were TH+ (open circles). No statistically significant differences were found when comparing the electrophysiological properties of these three groups (ANOVA or Kruskal–Wallis test). (B) Post-recording immunohistochemistry showing the tdTomato-labeling, neurobiotin-filling, and absence of TH staining in a DRN neuron (indicated with a white arrow). (C) Whole-cell recording of the neuron shown in (B) and its responses to current injections. Hierarchical cluster analysis of the electrophysiological profile suggests that this neuron is a DRNDA neuron despite the absence of TH staining. (D) Post-recording immunohistochemistry showing a DRNDA neuron whose identity is confirmed by both TH staining and tdTomato-labeling (indicated with a white arrow). (E) Whole-cell recording of the neuron shown in (D) showing the classic electrophysiological profile of DRNDA neurons. (F) Post-recording immunohistochemistry showing the tdTomato-labeling, neurobiotin-filling, and absence of TH staining in a neuron false-positive for tdTomato (indicated with a white arrow). (G) Whole-cell recording of the neuron shown in (F) and its responses to different current injections. Please note the high input resistance, rebound spiking, biphasic afterhyperpolarization, and absence of spike amplitude accommodation. Scale bar: 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) PCA of 120 DRN neurons (N = 9) in Sham condition using 20 standard electrophysiological parameters. (B) Scree plot of the PCA. (C) Hierarchical cluster analysis (Ward’s method, Euclidean distance) based on the first three principal components. Colors indicate four main clusters. DRN5-HT neurons are indicated in blue, DRNDA neurons are indicated in red. Stars and corresponding identification numbers indicate DRN neurons of which example recordings are shown below. (D–F) Voltage responses to a series of current steps obtained from a variety of neurons in the DRN of Sham mice. (D) Four representative examples of the most frequently observed TH− and TPH− neurons recorded in the DRN. Please note the regular firing pattern, activation of sag currents (below −80 mV), and rebound depolarization/spiking. (E) Two examples of DRN neurons characterized by plateau potentials, bursting and spike frequency accommodation. (F) Examples of molecularly unidentified neurons that were assigned to the DRN5-HT (left) and DRNDA (right) cluster by the hierarchical cluster analysis.
 
 When comparing the electrophysiological properties of DRNDA to DRN5-HT neurons, we observed numerous differences between these two cell types, but here we focus on the five most significant ones. While DRN5-HT neurons spike with short delays in response to current steps and maintain a relatively constant action potential (AP) amplitude, DRNDA neurons display a longer delay to the first spike and the amplitude of subsequent APs drops (Figure 1F–I). Additionally, the APs of DRN5-HT neurons rise faster, while their afterhyperpolarization (AHP) is longer compared to DRNDA neurons (Figure 1H, I). Lastly, the capacitance of DRN5-HT neurons is significantly larger than in DRNDA neurons (Figure 1I).
 
@@ -47,47 +63,63 @@ In addition to DRNDA and DRN5-HT, the DRN contains an unknown number of cell typ
 
 Overall, our data show that DRNDA neurons constitute an electrophysiologically distinct class of neurons in the DRN expressing several hallmark properties, which are sufficient to identify them within the local DRN circuitry.
 
-## DRNDA and DRN5-HT neurons have different morphological properties
+### DRNDA and DRN5-HT neurons have different morphological properties
 
 Next, we characterized the morphological profile of DRN5-HT and DRNDA neurons. We focused on the analysis of somatic and dendritic properties since a complete reconstruction of the axonal arborization could not be retrieved from the slices. The analysis of the somatic properties showed that DRN5-HT neurons had larger cell bodies than DRNDA neurons (Figure 2A, B), as measured in their area, perimeter, length, and width (Figure 2B). Cell bodies also differed in shape, with DRNDA neurons having more circular somata than DRN5-HT neurons, as indicated by the circularity index (Figure 2B). Analyzing the dendritic properties, we found that DRN5-HT neurons had four to five primary dendrites, compared to only two to three in DRNDA neurons (Figure 2A, C). Moreover, dendrites of DRNDA neurons were frequently bipolar with the main primary dendrites starting from opposite extremes of the soma. Both populations had relatively few bifurcations (Figure 2C), but the DRN5-HT neurons had significantly more terminations (Figure 2C). The overall dendritic length did not differ between the DRN5-HT and DRNDA neurons: both populations had a mix of short and long dendrites (Figure 2C). These data suggest that DRN5-HT neurons have denser dendritic arborization than DRNDA neurons, mostly due to larger numbers of primary dendrites.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig2-v2.jpg)
 
-**Figure 2.:** DA and DRN5-HT have distinct morphological profiles.(A) Top: representative digital reconstruction of a DRN5-HT. Bottom: representative digital reconstruction of a DRNDA. (B) Morphological parameters describing the soma size and shape of DRN5-HT and DRNDA neurons (DRN5-HT: n = 20, N = 3; DRNDA: n = 27, N = 3; unpaired t-test or Mann–Whitney U test). (C) Morphological parameters describing the dendritic tree of DRN5-HT and DRNDA neurons (DRN5-HT: n = 8, N = 3; DRNDA: n = 7, N = 3; Mann–Whitney U test). Data are shown as mean ± SEM, ***p < 0.001. Scale bar: 10 μm.
+**Figure 2.:** (A) Top: representative digital reconstruction of a DRN5-HT. Bottom: representative digital reconstruction of a DRNDA. (B) Morphological parameters describing the soma size and shape of DRN5-HT and DRNDA neurons (DRN5-HT: n = 20, N = 3; DRNDA: n = 27, N = 3; unpaired t-test or Mann–Whitney U test). (C) Morphological parameters describing the dendritic tree of DRN5-HT and DRNDA neurons (DRN5-HT: n = 8, N = 3; DRNDA: n = 7, N = 3; Mann–Whitney U test). Data are shown as mean ± SEM, ***p < 0.001. Scale bar: 10 μm.
 
 Altogether, our results show that DRN5-HT and DRNDA neurons have distinct morphological properties. DRN5-HT neurons are mostly multipolar neurons, with a big and complex soma and multiple primary dendrites, while DRNDA neurons have smaller and more circular cell bodies with bipolar dendrites.
 
-## DA and NA depletion distinctly affect the membrane properties of DRN5-HT neurons
+### DA and NA depletion distinctly affect the membrane properties of DRN5-HT neurons
 
 To elucidate how DRN5-HT and DRNDA neurons might be affected in PD, we characterized these populations in a mouse model of PD based on bilateral injection of the neurotoxin 6-OHDA in the dorsal striatum. This approach leads to a partial lesion of catecholamine neurons, reproducing an early stage of parkinsonism in which particularly non-motor symptoms such as depression- and anxiety-like behavior are manifested (Bonito-Oliva et al., 2014a; Ztaou et al., 2018). In line with previous studies, we observed a 60–70% reduction of TH levels in the striatum (Figure 3—figure supplement 1, Bonito-Oliva et al., 2014b). Only mice meeting this criterion were included in the study. Measurement performed by enzyme-linked immunosorbent assay (ELISA) showed that the 6-OHDA injection did not alter the levels of 5-HT in the striatum (Figure 3—figure supplement 1D), and immunostaining showed that the striatal 6-OHDA injection did not cause degeneration of DRN5-HT or DRNDA neurons (Figure 3—figure supplement 2).
 
 Striatal injection of 6-OHDA has also been found to produce a partial loss of NA neurons in the LC (Bonito-Oliva et al., 2014b) and ELISA analysis showed that this approach induces approximately 60% loss of NA in the striatum (Figure 3—figure supplement 1E). In the present study, we determined the specific impact of NA dysfunction on the physiology of DRN5-HT and DRNDA neurons by pre-treating a group of mice with desipramine (DMI), a selective inhibitor of NA reuptake, before injecting 6-OHDA (DMI + 6-OHDA mice), which partially prevents striatal NA loss (Figure 3—figure supplement 1E). We then assessed the intrinsic properties of DRN5-HT and DRNDA neurons in Sham-lesion (Sham), 6-OHDA- and DMI + 6-OHDA-treated mice (Figure 3A). Whole-cell recordings obtained from DRN5-HT neurons in control mice revealed that 37% of DRN5-HT neurons were spontaneously active in slices and the proportion of intrinsically active neurons was similar in mice injected with 6-OHDA (Sham: n = 11/30 DRN5-HT neurons, 6-OHDA: n = 6/17 DRN5-HT neurons, Figure 3B). However, DRN5-HT neurons recorded in DMI + 6-OHDA mice showed an increased excitability: in this condition, 72% of DRN5-HT neurons were spontaneously active and DRN5-HT neurons displayed lower rheobase currents than control mice (Figure 3B, C). Because of the protective effect exerted in these mice by DMI, these findings suggest that the noradrenergic system contributes to the increased firing of DRN5-HT neurons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overview of workflow for analyzing the electrophysiological and morphological properties of DRN neurons in Sham- and 6-OHDA-lesioned mice. (B) Top: pie charts showing the number of spontaneously active (dark) and silent (pale) DRN5-HT neurons in three conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI + 6-OHDA (right). Bottom: representative recordings of spontaneously active DRN5-HT neurons (I = 0 pA). (C) Quantification of the rheobase (left, Sham: n = 30, 6-OHDA: n = 17, DMI + 6-OHDA: n = 25), the firing frequency of spontaneously active cells (center, Sham: n = 11, 6-OHDA: n = 6, DMI + 6-OHDA: n = 18), and the resting membrane potential of silent DRN5-HT neurons (right, Sham: n = 19, 6-OHDA: n = 11, DMI + 6-OHDA: n = 7). (D) Representative APs of DRN5-HT at low (left) and high (right) temporal resolution. Gray circles indicate onset, offset, and peak of the APs as well as the end of the AHP. (E) Quantification of the amplitude (left) and duration (right) of the APs of DRN5-HT neurons (Sham: n = 29, 6-OHDA: n = 16, DMI + 6-OHDA: n = 21). (F) Same as in (D) for the AHP. (G) Representative responses of DRN5-HT neurons to current steps (I = +75 pA). (H) Quantification of firing frequency/injected current. (I) Quantification of the delay to the first AP when injected with current eliciting 1 Hz firing (Sham: n = 29, 6-OHDA: n = 16, DMI + 6-OHDA: n = 21). (J) Quantification of the membrane time constant tau of DRN5-HT neurons (Sham: n = 32, 6-OHDA: n = 16, DMI + 6-OHDA: n = 21). Sham: N = 6–7; 6-OHDA: N = 7; DMI + 6-OHDA: N = 4; unpaired t-test or Mann–Whitney U test. Data are shown as mean ± SEM, *p < 0.05, **p < 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The reduction of striatal NA levels was partially prevented by the pre-treatment with DMI. (A) Representative confocal images in Sham (left) and 6-OHDA (right) showing the localization of TH loss in the dorsal striatum. (B) Representative confocal images in Sham (left) and 6-OHDA (right) showing the TH immunoreactivity in the SNc of Sham and 6-OHDA-injected mice. (C) Top: bar chart showing the TH levels in Sham, 6-OHDA, and DMI + 6-OHDA measured by western blot in the striatum (N = 6–9 per group: ANOVA). Data are normalized to Sham group (N = 6–9 per group; one-way ANOVA). Bottom: representative blots of TH and Actin immunoreactivity in Sham (left), 6-OHDA (center), and DMI + 6-OHDA (right). (D) Bar chart showing the 5-HT levels in Sham and 6-OHDA measured by ELISA in the striatum (N = 5–6 per group). (E) Bar chart showing the NA levels in Sham, 6-OHDA, and DMI + 6-OHDA measured by ELISA in the striatum (N = 9–10 per group; one-way ANOVA). Data are presented as mean ± SEM. ***p < 0.001, **p < 0.01. Scale bars: A, 1 mm; B, 100 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative confocal pictures of DRN5-HT and DRNDA in Sham and 6-OHDA mice at different antero-posteriorities. (B) Bar chart showing the density of TPH+ neurons in the DRN in Sham and 6-OHDA groups. (C) Bar chart showing the density of TH+ neurons in the DRN in Sham and 6-OHDA groups. N = 4 per group. Data are shown as mean ± SEM. Scale bar: 100 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Scheme showing unilateral injection of vehicle/6-OHDA in LC. (B) Representative confocal images of the lesion induced by the unilateral injection of 6-OHDA in the LC (left: uninjected side, contralateral to the 6-OHDA injection; right: 6-OHDA-injected side). (C) Bar chart showing the density of TH+ neurons in the LC in the uninjected and 6-OHDA-injected sides. Data are shown as mean ± SEM (N = 3 per group, unpaired t-test). (D) Top: pie charts showing the number of spontaneously active (dark) and silent (pale) DRN5-HT neurons in mice injected with vehicle (Sham-LC, left) and mice injected with 6-OHDA in LC (6-OHDA-LC, right). Bottom: representative recordings of spontaneously active DRN5-HT neurons (I = 0 pA). (E) Quantification of the rheobase (Sham-LC: n = 14, 6-OHDA-LC: n = 16), the firing frequency of spontaneously active cells (Sham-LC: n = 6, 6-OHDA-LC: n = 7), the resting membrane potential of silent DRN5-HT neurons (Sham-LC: n = 8, 6-OHDA-LC: n = 9), the time constant tau and the capacitance (Sham-LC: n = 14, 6-OHDA-LC: n = 15). (F) Representative responses of DRN5-HT neurons to hyper- (left) and depolarizing (right) current steps. (G) Quantification of the input resistance (Sham-LC: n = 14, 6-OHDA-LC: n = 16) and AP properties of DRN5-HT neurons (AP and AHP amplitude and duration: Sham-LC: n = 13, 6-OHDA-LC: n = 15). (H) Representative confocal pictures of soma from DRN5-HT neurons in Sham-LC (top) and 6-OHDA-LC mice (bottom). (I) Morphological descriptors of the soma size and shape in DRN5-HT neurons (Sham-LC: n = 15, N = 5, 6-OHDA-LC: n = 17, N = 5). (J) Morphological descriptors of the dendritic tree in DRN5-HT neurons. (Sham-LC: n = 11, N = 4; 6-OHDA-LC: n = 12, N = 4; Mann–Whitney U test). (K) Same as in (D) for DRNDA neurons. (L) Quantification of the rheobase (Sham-LC: n = 25, 6-OHDA-LC: n = 25), the firing frequency of spontaneously active cells (Sham-LC: n = 14, 6-OHDA-LC: n = 10), the resting membrane potential of silent DRNDA neurons (Sham-LC: n = 11, 6-OHDA-LC: n = 15), the time constant tau and the capacitance (Sham-LC: n = 25, 6-OHDA-LC: n = 25). (M) Representative responses of DRNDA neurons recorded in Sham-LC (left) and 6-OHDA-LC (right) to current steps. The step hyperpolarizing the neurons to −100 mV is highlighted. (N) Quantification of the sag amplitude (Sham-LC: n = 23, 6-OHDA-LC: n = 23) and AP properties of DRNDA neurons (AP and AHP amplitude and duration: Sham-LC: n = 15, 6-OHDA-LC: n = 18). (O) Representative confocal pictures of soma from DRNDA neurons in Sham-LC (top) and 6-OHDA-LC mice (bottom). (P) Morphological descriptors of the soma size and shape in DRNDA neurons (Sham-LC: n = 23, N = 5, 6-OHDA-LC: n = 23, N = 5). (Q) Morphological descriptors of the dendritic tree in DRNDA neurons (Sham-LC: n = 10, N = 3; 6-OHDA-LC: n = 10, N = 4; Mann–Whitney U test). All electrophysiological data were acquired in N = 5 Sham-LC and N = 5 6-OHDA-LC mice and statistics are based on unpaired t-test or Mann–Whitney U test. Data are shown as mean ± SEM, *p < 0.05,***p < 0.001. Scale bars: B, 50 μm, H–O, 10 μm.
+
 While the rheobase of DRN5-HT neurons was not affected in 6-OHDA mice, we observed that their firing properties were profoundly altered: DRN5-HT neurons recorded in 6-OHDA mice displayed smaller APs than Sham mice and shorter AHPs than both Sham and 6-OHDA-injected mice pre-treated with DMI (Figure 3D–F). In contrast, the APs and AHPs of Sham and 6-OHDA-injected mice pre-treated with DMI did not differ. Moreover, DRN5-HT neurons of 6-OHDA-injected mice fired at higher frequencies than 6-OHDA-injected mice pre-treated with DMI (Figure 3G–I). Finally, the membrane time constant of DRN5-HT neurons was shorter in 6-OHDA-injected mice than in Sham mice (Figure 3J). Interestingly, we found no differences in the firing properties of DRN5-HT neurons recorded in Sham and in 6-OHDA-injected mice pre-treated with DMI, suggesting that the noradrenergic lesion critically contributes to the changes in 6-OHDA mice. Taken together, these results indicate that DRN5-HT neurons are affected in the 6-OHDA mouse model of PD. Specifically, lesions of the DA system increase the excitability of DRN5-HT neurons whereas the combined lesion of the noradrenergic and DA systems changes the firing properties of DRN5-HT neurons.
 
-## Striatal DA depletion induces hypotrophy of DRN5-HT neurons
+### Striatal DA depletion induces hypotrophy of DRN5-HT neurons
 
 Morphological analysis revealed a reduced soma size of the DRN5-HT neurons in 6-OHDA mice, which was manifested as decreased area, perimeter, and major axes in comparison to control mice (Figure 4A–C). Moreover, the increase in the circularity of the 6-OHDA group indicated that the shape of the soma of DRN5-HT neurons was also altered by the lesion (Figure 4C). These modifications were not observed in DMI + 6-OHDA mice, suggesting that preserving the NA system protected the DRN5-HT neurons (Figure 4A–C). Finally, the injection of 6-OHDA without DMI pre-treatment also resulted in a trend toward reduced number of primary dendrites and terminations of DRN5-HT neurons (Figure 4D). The number of bifurcations and the dendritic length were not affected by the lesion (Figure 4D). Globally, these results suggest that the lesion produced by 6-OHDA induces a hypotrophic phenotype in DRN5-HT neurons characterized by a shrinkage of the soma and that this alteration is NA dependent.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig4-v2.jpg)
 
-**Figure 4.:** 5-HT, which is prevented by pre-treatment with DMI.(A) Representative digital reconstructions of a DRN5-HT neuron in three different conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (right). (B) Representative confocal pictures of soma from DRN5-HT neurons in Sham (top), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (bottom). (C) Morphological descriptors of the soma size and shape in DRN5-HT neurons (Sham: n = 20, N = 4; 6-OHDA: n = 19, N = 4; DMI + 6-OHDA: n = 17, N = 3; one-way ANOVA). (D) Morphological descriptors of the dendritic tree in DRN5-HT neurons (Sham: n = 8, N = 3, 6-OHDA: n = 6, N = 3: DMI + 6-OHDA: n = 6, N = 2). Data are shown as mean ± SEM, ***p < 0.001, **p < 0.01, *p < 0.05. Scale bar: 10 µm.
+**Figure 4.:** (A) Representative digital reconstructions of a DRN5-HT neuron in three different conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (right). (B) Representative confocal pictures of soma from DRN5-HT neurons in Sham (top), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (bottom). (C) Morphological descriptors of the soma size and shape in DRN5-HT neurons (Sham: n = 20, N = 4; 6-OHDA: n = 19, N = 4; DMI + 6-OHDA: n = 17, N = 3; one-way ANOVA). (D) Morphological descriptors of the dendritic tree in DRN5-HT neurons (Sham: n = 8, N = 3, 6-OHDA: n = 6, N = 3: DMI + 6-OHDA: n = 6, N = 2). Data are shown as mean ± SEM, ***p < 0.001, **p < 0.01, *p < 0.05. Scale bar: 10 µm.
 
-## Striatal DA depletion affects the firing of DRNDA neurons independent of NA loss
+### Striatal DA depletion affects the firing of DRNDA neurons independent of NA loss
 
 Finally, we assessed whether the striatal 6-OHDA lesion affects the physiology of DRNDA neurons. Whole-cell patch-clamp recordings revealed that 58% of DRNDA neurons are spontaneously active in slices of Sham-lesion mice (Figure 5A). In contrast, the proportion of intrinsically active neurons increased to 77% and 78% of DRNDA neurons in 6-OHDA-injected mice with and without pre-treatment with DMI, respectively.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig5-v2.jpg)
 
-**Figure 5.:** DA neurons whereas concomitant loss of NA does not affect their APs.(A) Top: pie charts showing the proportion of spontaneously active (dark) and silent (pale) DRNDA neurons in three conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated DMI (right). Bottom: representative recordings of spontaneously active DRNDA (I = 0 pA). (B) Quantification of the rheobase (left, Sham: n = 43, 6-OHDA: n = 31, DMI + 6-OHDA: n = 40), the firing frequency of spontaneously active (center, Sham: n = 25, 6-OHDA: n = 23, DMI + 6-OHDA: n = 31), and the resting membrane potential of silent DRNDA neurons (right, Sham: n = 18, 6-OHDA: n = 7, DMI + 6-OHDA: n = 9). (C) Representative APs of DRNDA at low (left) and high (right) temporal resolution. Gray circles indicate onset, offset, and peak of APs and the end of the afterhyperpolarization (AHP). (D) Quantification of the amplitude (left) and duration (right) of the APs of DRNDA neurons (Sham: n = 34, 6-OHDA: n = 23, DMI + 6-OHDA: n = 35). (E) Same as in (D) for the AHP. (F) Representative responses of DRNDA neurons to current steps (I = 75 pA). Gray circles indicate the delay to the first AP. Quantification of firing frequency/injected current (G, Sham: n = 31, 6-OHDA: n = 23, DMI + 6-OHDA: n = 27), the delay to the first AP when injected with current eliciting 2 Hz firing (H, Sham: n = 34, 6-OHDA: n = 23, DMI + 6-OHDA: n = 35), and the membrane time constant (I, Sham: n = 43, 6-OHDA: n = 29, DMI + 6-OHDA: n = 40) of DRNDA neurons recorded (Sham: N = 8; 6-OHDA: N = 6; DMI + 6-OHDA: N = 6; unpaired t-test or Mann–Whitney U test). Data are shown as mean ± SEM, *p < 0.05.
+**Figure 5.:** (A) Top: pie charts showing the proportion of spontaneously active (dark) and silent (pale) DRNDA neurons in three conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated DMI (right). Bottom: representative recordings of spontaneously active DRNDA (I = 0 pA). (B) Quantification of the rheobase (left, Sham: n = 43, 6-OHDA: n = 31, DMI + 6-OHDA: n = 40), the firing frequency of spontaneously active (center, Sham: n = 25, 6-OHDA: n = 23, DMI + 6-OHDA: n = 31), and the resting membrane potential of silent DRNDA neurons (right, Sham: n = 18, 6-OHDA: n = 7, DMI + 6-OHDA: n = 9). (C) Representative APs of DRNDA at low (left) and high (right) temporal resolution. Gray circles indicate onset, offset, and peak of APs and the end of the afterhyperpolarization (AHP). (D) Quantification of the amplitude (left) and duration (right) of the APs of DRNDA neurons (Sham: n = 34, 6-OHDA: n = 23, DMI + 6-OHDA: n = 35). (E) Same as in (D) for the AHP. (F) Representative responses of DRNDA neurons to current steps (I = 75 pA). Gray circles indicate the delay to the first AP. Quantification of firing frequency/injected current (G, Sham: n = 31, 6-OHDA: n = 23, DMI + 6-OHDA: n = 27), the delay to the first AP when injected with current eliciting 2 Hz firing (H, Sham: n = 34, 6-OHDA: n = 23, DMI + 6-OHDA: n = 35), and the membrane time constant (I, Sham: n = 43, 6-OHDA: n = 29, DMI + 6-OHDA: n = 40) of DRNDA neurons recorded (Sham: N = 8; 6-OHDA: N = 6; DMI + 6-OHDA: N = 6; unpaired t-test or Mann–Whitney U test). Data are shown as mean ± SEM, *p < 0.05.
 
 In stark contrast to DRN5-HT neurons, the rheobase, the APs and their AHPs, the current-frequency slope and the time constant of DRNDA neurons were not affected in any 6-OHDA mice (Figure 5B–I). In fact, we did not observe any change in the firing properties of DRNDA neurons that was dependent on the protection of the NA system with DMI (Figure 5). DRNDA neurons recorded in 6-OHDA-injected mice pre-treated with DMI did however display a reduction in spike latency compared to Sham-lesioned mice (Figure 5G). Together, these results suggest that the electrophysiological properties of DRNDA neurons are affected in the 6-OHDA mouse model of PD and that these changes are primarily due to the lesion of the nigrostriatal DA pathway. In contrast, the morphological analysis of DRNDA neurons revealed that the striatal 6-OHDA injection did not significantly affect somatic and dendritic morphology (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90278/elife-90278-fig6-v2.jpg)
 
-**Figure 6.:** DA.(A) Representative digital reconstructions of a DRNDA neuron in three different conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (right). (B) Representative confocal pictures of soma from DRNDA neurons in Sham (top), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (bottom). (C) Morphological descriptors of the soma size and shape in DRNDA neurons (Sham: n = 27, N = 7; 6-OHDA: n = 16, N = 4; DMI + 6-OHDA: n = 31, N = 5). (D) Morphological descriptors of the dendritic tree in DRNDA neurons (Sham: n = 7, N = 3; 6-OHDA: n = 11, N = 4; DMI + 6-OHDA: n = 7, N = 3). Data are shown as mean ± SEM. Scale bar: 10 µm.
+**Figure 6.:** (A) Representative digital reconstructions of a DRNDA neuron in three different conditions: Sham (left), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (right). (B) Representative confocal pictures of soma from DRNDA neurons in Sham (top), 6-OHDA-injected mice (center), and 6-OHDA-injected mice pre-treated with DMI (bottom). (C) Morphological descriptors of the soma size and shape in DRNDA neurons (Sham: n = 27, N = 7; 6-OHDA: n = 16, N = 4; DMI + 6-OHDA: n = 31, N = 5). (D) Morphological descriptors of the dendritic tree in DRNDA neurons (Sham: n = 7, N = 3; 6-OHDA: n = 11, N = 4; DMI + 6-OHDA: n = 7, N = 3). Data are shown as mean ± SEM. Scale bar: 10 µm.
 
-## Unilateral lesion of LC NA cells induces minor changes in DRN subpopulations
+### Unilateral lesion of LC NA cells induces minor changes in DRN subpopulations
 
 Our results so far suggest that concomitant lesioning of the DA and NA system (6-OHDA model) has a severe impact on DRN5-HT neurons which cannot be evoked when the NA system is partially protected (DMI + 6-OHDA model). Therefore, we next assessed if selective lesioning of the NA system itself is sufficient to evoke changes in electrical and morphological properties observed in DRN5-HT neurons recorded in 6-OHDA. To that end, we performed unilateral injections of 6-OHDA/saline in the LC (Figure 3—figure supplement 3A), which lead to approximately 50% loss of TH+ neurons in the LC (Figure 3—figure supplement 3B, C). We chose to restrict the injection of 6-OHDA to one hemisphere because little is known about this type of lesion while the fundamental role of the NA system in various neural processes is well established (Poe et al., 2020; Szot et al., 2012). We found that selective lesioning of the LC (6-OHDA-LC) did not alter the baseline activity levels, firing frequencies, and resting membrane potentials of DRN5-HT and DRNDA neurons (Figure 3—figure supplement 3D, E, K, L). However, DRN5-HT neurons recorded in 6-OHDA-LC had a lower input resistance at hyperpolarized membrane potentials, a shorter AHP, and a larger capacitance than DRN5-HT neurons recorded in control mice (Sham-LC, Figure 3—figure supplement 3E–G). Moreover, DRNDA neurons recorded in 6-OHDA-LC showed a reduction in their sag amplitudes (Figure 3—figure supplement 3M, N). The other electrophysiological parameters were not significantly affected. Morphological analysis revealed that the selective lesion of the noradrenergic system did not alter the size and shape of cell bodies in either DRN subpopulation (Figure 3—figure supplement 3H1, O, P), however, the dendritic branching of both subpopulations was altered, as shown by the increased length of primary dendrites in DRN5-HTneurons (Figure 3—figure supplement 3J) and the increased number of primary dendrites in DRNDA neurons (Figure 3—figure supplement 3Q).
 
@@ -111,48 +143,275 @@ In conclusion, our study provides a quantitative description and classification 
 
 ## Methods
 
-## Experimental model details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse, C57BL/6J)</td>
+      <td>DAT-cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock #006660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse, C57BL/6J)</td>
+      <td>tdTomato</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock #007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tyrosine Hydroxylase (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore: AB152;RRID:AB_390204</td>
+      <td>1:1000 IF; 1:2000 WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tryptophane Hydroxylase (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T0678;RRID:AB_261587</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Beta-Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: A5316;RRID:AB_476743</td>
+      <td>1:30,000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Noradrenaline Research ELISA kit</td>
+      <td>LDN</td>
+      <td>BA E-5200R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Serotonine Research ELISA kit</td>
+      <td>LDN</td>
+      <td>BA E-5900R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desipramine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>D3900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-Hydroxydopamine hydrocloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>H4381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Fisher Scientific</td>
+      <td>10638403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>G7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaHCO3</td>
+      <td>Fisher Scientific</td>
+      <td>10118190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>P3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma-Aldrich</td>
+      <td>71504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>C5080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>M2670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Merck</td>
+      <td>106404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K-gluconate</td>
+      <td>Sigma-Aldrich</td>
+      <td>G4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mg-ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Sigma-Aldrich</td>
+      <td>G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Na2-phosphocreatine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobiotin</td>
+      <td>Vector Laboratories, Bionordika</td>
+      <td>SP-1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlexaFluor488 Hydrazide</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>A10436</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6.37</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Graphpad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Java</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>neuTube</td>
+      <td>Howard Hughes Medical Institute;Feng et al., 2015</td>
+      <td>RRID:SCR_024867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cy5-conjugated streptavidin</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch: 016-170-084;RRID:AB2337245</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NEUROBIOTIN Tracer</td>
+      <td>Vector Laboratories</td>
+      <td>Vector Laboratories: SP-1120; RRID:AB2313575</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model details
 
 All animal procedures were performed in accordance with the national guidelines and approved by the local ethics committee of Stockholm, Stockholms Norra djurförsöksetiska nämnd, under ethical permits to G. F. (N12148/17, 14673–22) and G. S. (N2020/2022). All mice (N = 43) were group-housed under a 12 hr light/dark schedule and given ad libitum access to food and water. Wild-type mice (‘C57BL/6J’, #000664, the Jackson Laboratory) and DAT-cre (Stock #006660 the Jackson Laboratory) mice crossed with homozygous tdTomato reporter mice (‘Ai9’, stock #007909, the Jackson Laboratory) were used.
 
-## 6-OHDA model
+### 6-OHDA model
 
 Three-month-old, male and female C57BL/6J or DAT-tdTomato were deeply anesthetized with isoflurane and mounted on a stereotaxic frame (Stoelting Europe, Dublin, Ireland). To achieve a partial striatal lesion, each mouse received a bilateral injection of 1.25 μl of 6-hydroxydopamine hydrochloride (6-OHDA, Sigma-Aldrich, 4 μg/μl) or vehicle (0.9% NaCl + ascorbic acid 0.02%) in the dorsolateral striatum, according to the following coordinates: anteroposterior +0.6 mm, mediolateral ±2.2, dorsoventral −3.2 from Bregma, as previously described (Bonito-Oliva et al., 2014a; Masini et al., 2021). One group of mice (referred to as DMI + 6-OHDA) was pre-treated with one injection of desipramine hydrochloride (DMI, Sigma-Aldrich, 25 mg/kg i.p.) 30 min before the 6-OHDA infusion in order to protect the noradrenergic system (Bonito-Oliva et al., 2014b).
 
 For the LC lesion, mice received a unilateral injection of 1 μl of 6-OHDA (Sigma-Aldrich, 4 μg/μl) or vehicle (0.9% NaCl + ascorbic acid 0.02%) according to the following coordinates: anteroposterior −5.4 mm, mediolateral −0.9, dorsoventral −3.8 from Bregma.
 
-## Slice preparation and electrophysiology
+### Slice preparation and electrophysiology
 
 Three weeks after the 6-OHDA/vehicle injection, mice were deeply anaesthetized with isoflurane and decapitated. The brain was quickly removed and immersed in ice-cold cutting solution containing 205 mM sucrose, 10 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 1.25 mM NaH2PO4, 0.5 mM CaCl2, and 7.5 mM MgCl2. In all experiments, the brain was divided into two parts: the striatum was dissected from the anterior section for western blot and the posterior part was used to prepare coronal brain slices (250 µm) with a Leica VT 1000 S vibratome. Slices were incubated for 30–60 min at 34°C in a submerged chamber filled with artificial cerebrospinal fluid (ACSF) saturated with 95% oxygen and 5% carbon dioxide. ACSF was composed of 125 mM NaCl, 25 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 2 mM CaCl2, 1.25 mM NaH2PO4, and 1 mM MgCl2. Subsequently, slices were kept for at least 60 min at room temperature before recording.
 
 Whole-cell patch-clamp recordings were obtained in oxygenated ACSF at 35°C. Neurons were visualized using infrared differential interference contrast microscopy (Zeiss FS Axioskop, Oberkochen, Germany). DAT-tdTomato-positive cells were identified by switching to epifluorescence using a mercury lamp (X-cite, 120Q, Lumen Dynamics). Up to three cells were patched simultaneously. Borosilicate glass pipettes (Hilgenberg) of 6–8 MOhm resistance were pulled with a Flaming/Brown micropipette puller P-1000 (Sutter Instruments). The intracellular solution contained 130 mM K-gluconate, 5 mM KCl, 10 mM HEPES buffer, 4 mM Mg-ATP, 0.3 mM GTP, 10 mM Na2-phosphocreatine (pH 7.25, osmolarity 285 mOsm), 0.2% neurobiotin (Vector Laboratories, CA), and Alexa488 (75 µM) was added to the intracellular solution (Invitrogen). Recordings were made in current-clamp mode and the intrinsic properties of the neurons were determined by a series of hyperpolarizing and depolarizing current steps and ramps, enabling the extraction of sub- and suprathreshold properties. Recordings were amplified using MultiClamp 700B amplifiers (Molecular Devices, CA, USA), filtered at 2 kHz, digitized at 10–20 kHz using ITC-18 (HEKA Elektronik, Instrutech, NY, USA), and acquired using custom-made routines running on IgorPro (Wavemetrics, OR, USA). Throughout all recordings pipette capacitance and access resistance were compensated for and data were discarded when access resistance increased beyond 30 MOhm. Liquid junction potential was not corrected for.
 
-## Quantification of electrophysiological parameters
+### Quantification of electrophysiological parameters
 
 Immediately after obtaining a whole-cell patch in DRN neurons, we first obtained a 10-s voltage recording of the neural activity without injecting any current. This recording was used to calculate the average resting membrane potential in silent neurons and the firing frequency of spontaneously active neurons. Subsequently, neurons were held at −60 mV while an extensive series of de- and hyperpolarizing current steps was applied. The amplitude of all current steps was scaled according to a test pulse that was set to evoke one to two APs. The resulting voltage recordings were used to extract and calculate the following parameters: The rheobase was defined as the minimum current required to evoke AP firing. AP parameters were extracted from recordings where DRN5-HT neurons fired at 1 ± 0.3 Hz and DRNDA neurons at 2 ± 0.3 Hz (i.e., close to their average spontaneous firing frequency) and values from individual APs were averaged. AP onset was extracted by quantifying where the rising slope of the AP (its first derivative) reached 5 V/s and the end of the AP was defined as the time where the AP had repolarized to the same membrane voltage as found at the onset. The AP duration was calculated as the time between the onset and the offset. The amplitude of the AP was defined as the voltage difference between the onset and its peak. The amplitude of the AHP was defined as the voltage difference between the end of the AP and the subsequent local minimum. The end of the AHP was found by using a sliding window of 50 ms to assess when the slope of the decaying AHP had first decreased to 0.005 V/s or less. The AP drop rate was measured by injecting a current ramp into the neurons that evoked multiple APs. The amplitude of these APs was extracted as described above. The amplitude was plotted vs. the injected current and a linear fit was applied whose slope constitutes the AP drop rate. The delay to the first spike constitutes the time between the onset of the current injection and the onset of the first AP in recordings. The input resistance was based on the slope of a linear fit across all current–voltage steps that resulted in a steady-state voltage between −90 and −50 mV (R = U/I). The steady-state voltage was based on the average voltage found during a time window starting 0.5 s after the beginning of a 1-s long current step and lasting until the end of the current step. The amplitude of sag currents was defined as the average voltage difference between the steady-state voltage and the peak voltage evoked by current steps that hyperpolarized the neurons to −90 ± 5 mV. The peak voltage constituted the minimum voltage observed during the first 0.5 s of the step. The time constant tau was extracted following injection of a 5-ms long hyperpolarizing current step. We applied an exponential fit to the resulting voltage recording that started 1 ms after the negative voltage peak had been reached and ended when the membrane potential had returned to the average baseline voltage preceding the step. Tau corresponds to K2 given the exponential fit is defined as y = K0 + K1*exp(−K2*x). Based on tau and the steady-state input resistance, we calculated the capacitance C according to C = tau/resistance. The IF slope was extracted from the linear fit applied to a current–frequency plot.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Following the recordings, slices were fixated overnight at 4°C in a 4% paraformaldehyde (PFA) solution. Slices were then washed with PBS 1×. For the immunofluorescence, slices were treated with PBS 1× + Triton 0.3% and then incubated with a blocking solution of normal serum 10% and bovine serum albumin 1% for 1 hr at room temperature. Afterward, slices were incubated overnight at 4°C with the following primary antibodies: rabbit anti-TH (Millipore, 1:1000), mouse anti-TPH (Sigma-Aldrich, 1:600), and streptavidin (Jackson Immunoresearch, 1:500). The following day, primary antibodies were washed out and slices were incubated with the appropriate fluorochrome-conjugated secondary antibodies.
 
 For the immunostainings in the striatum, SNc, LC, and cell counting in DRN, mice were deeply anesthetized and transcardially perfused with PFA 4%. The brains were extracted and post-fixed in PFA 4% for 24 hr. 40 µm coronal slices were prepared with a vibratome (Leica VT1000 S) and processed as described above.
 
-## Confocal microscopy analysis
+### Confocal microscopy analysis
 
 The slices were imaged using Confocal (ZEISS LSM 800) at ×10 and ×40 and z-stacks were retrieved. For cell identification, colocalization between neurobiotin and TH or TPH was evaluated.
 
-## Morphological analysis
+### Morphological analysis
 
 For morphological analysis of dendrites, the confocal z-stacks were used in a semi-manual reconstruction using neuTube (Feng et al., 2015) and custom code, as previously described (Hjorth et al., 2020). Soma morphology was analyzed by tracing manually the cell body profile, excluding dendritic trunks, in order to measure area (µm²), perimeter, major and minor axis length (µm), and circularity values. Circularity, calculated as the ratio between the squared perimeter and the area (i.e., perimeter²/4π area), can be a value between 0 and 1 (1 for circular shapes and values <1 for more complex shapes). The morphological analysis was performed on the neurobiotin stacks.
 
-## Western blot
+### Western blot
 
 The striata were sonicated in 1% sodium dodecyl sulfate and boiled for 10 min. Equal amounts of protein (25 μg) for each sample were loaded onto 10% polyacrylamide gels and separated by electrophoresis and transferred overnight to nitrocellulose membranes (Thermo Fisher, Stockholm, Sweden). The membranes were immunoblotted with primary antibodies against actin (1:30,000, Sigma-Aldrich, Stockholm, Sweden) and TH (1:2000, Millipore, Darmstadt, Germany). Detection was based on fluorescent secondary antibody binding (IR Dye 800CW and 680RD, Li-Cor, Lincoln, NE, USA) and quantified using a Li-Cor Odyssey infrared fluorescent detection system (Li-Cor, Lincoln, NE, USA). The TH protein levels were normalized for the corresponding actin detected in the sample and then expressed as a percentage of the control (Sham lesion).
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 NA and 5-HT levels in the striatum were determined by ELISA. Three weeks after the 6-OHDA injection, mice were killed by decapitation and the striatum was dissected out freehand on an ice-cold surface and weighted. The tissue was sonicated in a buffer with HCl 0.01 M, Ethylenediaminetetraacetic acid (EDTA) 1 mM, and sodium metabisulfite 4 mM (25 µl/mg of tissue). The brain homogenates were centrifuged at 4°C, 13,000 rpm for 20 min and the supernatants were collected. The samples were assessed in analytic duplicate using Noradrenaline and Serotonin Research ELISA kits (LDN, Germany), according to the manufacturer’s instructions. The absorbance at 450 nm was measured using a microplate reader. Tissue concentrations of NA and 5-HT were determined using a standard curve.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 9.2.0. Data were first tested for normality by Kolmogorov–Smirnov test. Two groups analysis was performed by unpaired t-test for normally distributed data and the Mann–Whitney U test for non-normally distributed data. Three groups analysis was performed by one-way analysis of variance (ANOVA) for normally distributed data or Kruskal–Wallis test for non-normally distributed data. Data are reported as average ± standard error (SEM) of the mean. N indicates the number of mice, while n indicates the number of cells. Significance was set at p < 0.05.

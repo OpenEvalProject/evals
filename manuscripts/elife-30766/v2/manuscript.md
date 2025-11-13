@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.30766.001 Insulin resistance results from an intricate interaction between genetic make-up and environment, and thus may be orchestrated by epigenetic mechanisms like DNA methylation. Here, we demonstrate that DNA methyltransferase 3a (Dnmt3a) is both necessary and sufficient to mediate insulin resistance in cultured mouse and human adipocytes. Furthermore, adipose-specific Dnmt3a knock-out mice are protected from diet-induced insulin resistance and glucose intolerance without accompanying changes in adiposity. Unbiased gene profiling studies revealed Fgf21 as a key negatively regulated Dnmt3a target gene in adipocytes with concordant changes in DNA methylation at the Fgf21 promoter region. Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue. Taken together, our data demonstrate that adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.
+Insulin resistance results from an intricate interaction between genetic make-up and environment, and thus may be orchestrated by epigenetic mechanisms like DNA methylation. Here, we demonstrate that DNA methyltransferase 3a (Dnmt3a) is both necessary and sufficient to mediate insulin resistance in cultured mouse and human adipocytes. Furthermore, adipose-specific Dnmt3a knock-out mice are protected from diet-induced insulin resistance and glucose intolerance without accompanying changes in adiposity. Unbiased gene profiling studies revealed Fgf21 as a key negatively regulated Dnmt3a target gene in adipocytes with concordant changes in DNA methylation at the Fgf21 promoter region. Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue. Taken together, our data demonstrate that adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.
 
 ## Introduction
 
@@ -43,41 +43,101 @@ Here, we identify Dnmt3a as a key epigenetic determinant of obesity-associated I
 
 ## Results
 
-## Adipose expression of Dnmts inversely correlates with insulin sensitivity
+### Adipose expression of Dnmts inversely correlates with insulin sensitivity
 
 To identify a potential role for Dnmts in the pathogenesis of insulin resistance, we compared their expression levels in insulin-sensitive metabolic tissues (i.e. liver, muscle, and adipose depots) in various metabolic settings. In a diet-induced obesity (DIO) mouse model, Dnmt1 and Dnmt3a mRNA expression was elevated in adipose tissue, especially in epididymal and mesenteric WAT (Figure 1A, Figure 1—figure supplement 1A). Dnmt3a expression was significantly induced by HFD in skeletal muscle, but to a lesser degree than in adipose tissue. No effect of HFD was observed in liver (Figure 1—figure supplement 1B–C). In genetically obese ob/ob mice, mRNA expression of all three functional Dnmts was elevated in adipose tissue (Figure 1B). Importantly, expression of these genes was significantly reduced after treatment with the insulin sensitizer rosiglitazone (Rosi) (Figure 1B). Increased adipose expression of Dnmt3a was confirmed by immunoblotting in DIO mice (Figure 1C,D). Relative expression of Dnmt3a was higher in eWAT compared to skeletal muscle and liver compared in normal chow-fed mice (Figure 1—figure supplement 1D–E). Dnmt2 and Dnmt3l mRNA displayed minimal expression in adipose tissue (not shown). Together, this led us to hypothesize that Dnmts may have a direct functional role in the pathogenesis of adipose IR.
 
-## Knock-down of Dnmt3a confers protection from drug-mediated IR
+![Figure 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig1-v2.jpg)
+
+**Figure 1.:** (A) Dnmt mRNA expression in adipose from chow- and high fat-fed (HFD) C57Bl/6 mice (A); n = 6 mice, p<0.05, Student’s t-test, mean ±s.e.m.) and (B) in adipose tissue from ob/+and ob/ob mice in the presence and absence of ​rosiglitazone treatment (right; n = 7 for ob/+, n = 8 for ob/+plus Rosi, n = 7 for ob/ob with and without Rosi, p<0.05, Student’s t-test, mean ±s.e.m.). (C) Western blot showing Dnmt3a protein levels in adipose tissue from chow vs. HFD mice. (D) Quantification of western blot in (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Dnmt mRNA expression in inguinal WAT (iWAT, n = 6), BAT (n = 6), and mesenteric WAT (mesWAT, n = 5) from chow- and high fat-fed C57Bl/6 mice (p<0.05, Student’s t-test, mean ±s.e.m.). (B, C) Dnmt mRNA expression in liver and skeletal muscle from chow- and high fat-fed C57Bl/6 mice (liver: n = 6, 5, skeletal muscle: n = 6, six mice, p<0.05, Student’s t-test, mean ±s.e.m.). (D) Dnmt3a protein expression in eWAT, liver, and skeletal muscle in chow-fed C57Bl/6 mice (E) Quantification of western blot in D (n = 3, p<0.05, Student’s t-test, mean ±s.e.m.) (F) Dnmt3a protein expression of various adipose depots in chow-fed C57Bl/6 mice. (G) Quantification of western blot in (F) (n = 3, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+### Knock-down of Dnmt3a confers protection from drug-mediated IR
 
 Given the inverse correlation of adipose Dnmt expression with insulin sensitivity, we sought to test the cell autonomous role of Dnmts in the development of IR. To that end, individual Dnmts were knocked-down in mature 3T3-L1 adipocytes using two distinct short hairpin RNAs (shRNAs) (Figure 2—figure supplement 1A–F). To promote IR, cells were treated with dexamethasone (Dex) and TNF-α (TNF) (Houstis et al., 2006; Kang et al., 2015) for an additional four days. Knock-down of individual Dnmts did not have a major impact on the basal level of insulin sensitivity when assessed by insulin-stimulated glucose uptake (Figure 2—figure supplement 2A–E). However, knock-down of Dnmt3a, but not Dnmt1 or Dnmt3b, protected adipocytes from Dex- and TNF-mediated IR as assessed by insulin-stimulated glucose uptake and signal transduction (Figure 2A,B, Figure 2—figure supplement 2A–E). Given the elevated expression of adipose Dnmts in obesity, we were prompted to test whether overexpression of Dnmts per se is sufficient to drive IR in adipocytes. Individual Dnmts were expressed in mature 3T3-L1 adipocytes by lentiviral delivery. Interestingly, overexpression of Dnmt3a and 3b, but not Dnmt1, potently inhibited insulin-stimulated glucose uptake (Figure 2C). Additionally, we tested whether the causal role of Dnmt3a in the development of insulin resistance is conserved in human adipocytes. Overexpression of Dnmt3a powerfully inhibited insulin-stimulated glucose uptake in in vitro differentiated adipocytes from human adipose derived stem cells (Figure 2D). Together, our gain- and loss-of-function studies in vitro show that Dnmt3a is both necessary and sufficient to mediate IR in adipocytes in a cell autonomous manner.
 
-## DNA methyltransferase activity is critical for Dnmt3a to mediate IR
+![Figure 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-v2.jpg)
+
+**Figure 2.:** (A) Two independent hairpins against ​Dnmt3a (versus scrambled control shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction. Cells were then treated with ​Dex and ​TNF for 4 days and assessed for insulin-stimulated ​glucose uptake (3H-2-DG assay, n = 6, p<0.05). Shown is the % of insulin-stimulated glucose uptake rescued by Dnmt3a knockdown (n = 6, p<0.05). (B) Cells in (A) with #2 shDnmt3a hairpin and control cells were withdrawn from serum for 6 hr, stimulated with 20 nM insulin for 5 min and subjected to immunoblotting with antibodies against total and phospho-AKT and –IRS-1 with and without insulin. (C) Basal and insulin-stimulated glucose uptake in mature 3T3-L1 and (D) in in vitro-differentiated primary human adipocytes transduced with lentivirus expressing Dnmts or the empty plasmid vector, pCDH (n = 6, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) Two independent hairpins against ​Dnmt1, 3a, and 3b (versus scrambled shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction. Shown is mRNA (n = 3, p<0.05, Student’s t-test, mean ±s.e.m.). (D–F) The Flag-tagged version of expression vectors for Dnmt1, 3a, and 3b were co-transfected with hairpins against them in 293 T cells. After 2 days of transfection, Flag western was performed.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–E) Two independent hairpins against ​Dnmt1, Dnmt3a, and Dnmt3b (versus scrambled shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction, and cells were then treated with ​Dex and ​TNF for 4 days and assessed for insulin-stimulated ​glucose uptake (3H-2-DG assay, n = 6, p<0.05). Basal and insulin-stimulated glucose uptake shown in (A, C and E). (B and D) show the % of insulin-stimulated glucose uptake rescued by Dnmt1, 3a, and 3b knockdown (n = 6, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+### DNA methyltransferase activity is critical for Dnmt3a to mediate IR
 
 Studies have shown that Dnmt3a can act as a gene repressor using both catalytic-dependent and independent mechanisms (Bachman et al., 2001; Fuks et al., 2001). Thus, we sought to determine whether DNA methyltransferase activity is required to mediate IR. We initially pursued a pharmacological approach, using two synthetic Dnmt inhibitors, 5-azacytidine (5-Aza) (Stresemann and Lyko, 2008), a nucleoside analogue serving as a pseudo-substrate for Dnmts, and RG-108 (Brueckner et al., 2005), a non-nucleoside-based drug. Remarkably, both Dnmt inhibitors blocked Dex- and TNF-mediated IR (Figure 3A,B, Figure 3—figure supplement 1A,B). In addition to these synthetic inhibitors, the naturally occurring Dnmt inhibitors (Rajavelu et al., 2011) epigallocatechin gallate (ECCG) and theaflavin-3,3′-digallate (TF-3) also showed insulin-sensitizing activity in the setting of Dex- and TNF-mediated IR (Figure 3—figure supplement 1C–F). These data suggest that DNA methyltransferase activity is necessary for Dnmt3 to cause IR. To further probe this hypothesis, we overexpressed a catalytically inactive allele of Dnmt3a (C706S) (Hsieh, 1999). Unlike the wild-type allele, Dnmt3a C706S was unable to suppress insulin-stimulated glucose uptake (Figure 3C). Together, the pharmacological and genetic evidence indicates that DNA methyltransferase activity is essential for Dnmt3a to mediate IR.
 
-## Adipose-specific Dnmt3a deficiency confers protection from diet-induced insulin resistance and glucose intolerance
+![Figure 3.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig3-v2.jpg)
+
+**Figure 3.:** Insulin-stimulated glucose uptake assay was conducted using 3T3-L1 adipocytes treated with Dnmt inhibitors (A, 5-Aza; B, RG-108) and Dex or TNF for 4 days. Shown is the % of insulin-stimulated glucose uptake rescued by Dnmt inhibitors (n = 6, p<0.05). (C) Basal and insulin-stimulated glucose uptake in mature 3T3-L1 adipocytes transduced with wild-type Dnmt3a vs. a catalytically inactive allele (C706S) (n = 6, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F). Insulin-stimulated glucose uptake assay was conducted on 3T3-L1 adipocytes co-treated with Dex or TNF and the Dnmt inhibitors (A) RG-108, (B) 5-Azacytidine (5-Aza), (C, D) theaflavin-3,3’-digallate (TF3), and (E, F) epigallocatechin gallate (ECCG) for 4 days. Basal and insulin-stimulated glucose uptake shown in (A, B, D, and F). (C and E) show the % of insulin-stimulated glucose uptake rescued by Dnmt inhibitors (n = 6, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+### Adipose-specific Dnmt3a deficiency confers protection from diet-induced insulin resistance and glucose intolerance
 
 We next sought to determine whether loss of Dnmt3a in adipocytes could confer protection from diet-induced adipose tissue and systemic IR in vivo. To address this, we generated adipose-specific Dnmt3a knock-out mice (Dnmt3aAdiKO) by crossing Dnmt3a floxed mice (Dnmt3af/f) (Nguyen et al., 2007) to adiponectin-Cre mice (Eguchi et al., 2011) (Figure 4—figure supplement 1A,B). On chow diet, male WT and Dnmt3aAdiKO animals did not show any obvious change in their body weight, insulin sensitivity, glucose tolerance, or insulin levels (Figure 4—figure supplement 2A–D). On HFD (45% fat), Dnmt3aAdiKO mice still showed no significant differences in body weight or composition relative to littermate controls (Figure 4A,B). Moreover, the effect of long-term fasting (16 hr) on body weight or body composition did not differ between genotypes (Figure 4C), suggesting that gross energy homeostasis is not altered in the knock-out animals. Despite no obvious change in energy balance, high fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance (Figure 4D,E) and insulin sensitivity (Figure 4F,G) with reduced serum insulin in the fed state (Figure 4H). Consistent with their metabolic improvement, male Dnmt3aAdiKO mice display increased insulin signal transduction in adipose tissue, as demonstrated by increased insulin-stimulated phosphorylation of IRS and AKT (Figure 4I,J). Similarly, female Dnmt3aAdiKO mice display improved insulin sensitivity and glucose tolerance on HFD without a change in body weight (Figure 4—figure supplement 3A–C). We next assessed whether insulin sensitization could be due to either enhanced browning or reduced inflammation of WAT. With regard to the former, we found no consistent change in the expression of major thermogenic genes such as Ucp1 and Ppargc1a in either iWAT and BAT (Figure 4—figure supplement 4A,B). Additionally, gene expression analysis showed a nonsignificant trend toward reduced expression of proinflammatory genes such as Tnfa and Ccl2 (which encodes MCP-1) in the eWAT of Dnmt3aAdiKO mice (Figure 4—figure supplement 5A). We also saw no obvious change in the density of crown-like structures between WT and KO tissues (Figure 4—figure supplement 5B). Together, these results demonstrate that adipose-specific deletion of Dnmt3a confers protection from diet-induced IR in a manner that is independent of adiposity, inflammation, or browning of white adipose tissue.
 
-## Unbiased gene profiling studies reveal that Fgf21 is a key metabolic target gene of Dnmt3a in adipocytes
+![Figure 4.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-v2.jpg)
+
+**Figure 4.:** (A) Body weight of Dnmt3aAdiKO and control mice on HFD (n = 7, 9, p<0.05, Student’s t-test, mean ±s.e.m.). (B) Body composition after 10 weeks of HFD (n = 7, 9). (C) Effect of long-term fasting (16 hr) on body weight or body composition by EchoMRI. Shown is % loss after fasting (n = 14, 14, p<0.05, Student’s t-test, mean ±s.e.m.). (D) Glucose tolerance test after 9 weeks on HFD (n = 7, 9, p<0.05, Student’s t-test, mean ±s.e.m.). (E) The area under curve (AUC) in (D). (F) Insulin tolerance test after 11 weeks on HFD (n = 7, 9, p<0.05, Student’s t-test, mean ±s.e.m.). (G) AUC in (F). (H) Fed and fasted insulin levels measured by ELISA (n = 7, 9 p<0.05, Student’s t-test, mean ±s.e.m.) (I) Immunoblot of total and phospho-AKT and IRS-1 in eWAT after IP insulin. (J) Quantification of western blot in (I).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Adipose tissue deletion of Dnmt3a was confirmed in 8 wk-old Dnmt3aAdiKO (KO) mice by qPCR (n = 3, p<0.05, Student’s t-test, mean ±s.e.m.) (A) and western blot (B).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Body weight of Dnmt3aAdiKO mice on chow. Glucose (B) and insulin tolerance test (C) on 11 and 12 wk old KO and WT mice on chow. (D) Insulin levels of fed and fasted chow-fed KO and WT mice as measured by ELISA. (n = 8, 8, Student’s t-test, mean ±s.e.m.).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Body weight was measured at 8-wk-old mice prior to HFD regimen and at 22-wk-old mice on HFD. Glucose (B) and insulin tolerance test (C) on 19 and 20 wk old KO and WT mice on HFD. (n = 6, 6, Student’s t-test, mean ±s.e.m.).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The expression of major thermogenic genes was measured by qPCR in iWAT (A) and BAT (B) from WT and KO mice on HFD (iWAT: n = 6,6; BAT n = 5,5 Student’s t-test, mean ±s.e.m.).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** The expression of major proinflammatory genes was measured by qPCR in iWAT (A) and BAT (B) from WT and KO mice on HFD (iWAT: n = 6, 6; BAT n = 5,5 Student’s t-test, mean ±s.e.m.). (C) Representative microscopic image of adipose depots from WT and KO mice on HFD after staining with hematoxylin and eosin (H&E).
+
+### Unbiased gene profiling studies reveal that Fgf21 is a key metabolic target gene of Dnmt3a in adipocytes
 
 Dnmt3a affects developmental processes by regulating non-overlapping sets of cell type-specific target genes (Challen et al., 2011; Nguyen et al., 2007; Nishikawa et al., 2015). To gain mechanistic insight into Dnmt3a-mediated IR at the molecular level, we performed RNA-seq in 3T3-L1 adipocytes, in both gain- and loss-of-function contexts. We have successfully used this approach to enhance our ability to identify bona fide targets (Kang et al., 2012). We found that 97 genes were repressed after shRNA-mediated Dnmt3a knock-down, while only eight genes were up-regulated in the presence of excess Dnmt3a; the single gene showing concordant regulation was Dnmt3a itself (Figure 5A). Conversely, 290 genes were induced by Dnmt3a knock-down, and 36 genes showed diminished expression after Dnmt3a overexpression; seven genes were concordantly regulated by both manipulations (Figure 5B and C and Supplementary file 1). These data are consistent with the expectation that Dnmt3a works primarily as a repressor of gene expression. Among the concordantly-regulated negative target genes of Dnmt3a, we were immediately struck by the presence of Fgf21. FGF21 is known to facilitate glucose uptake in adipocytes (Ge et al., 2011; Lee et al., 2014; Minard et al., 2016), and is a positive target gene of PPARγ (Muise et al., 2008). Furthermore, mice lacking FGF21 do not support Rosi-mediated insulin sensitization in vivo (Dutchak et al., 2012). We confirmed by Q-PCR that Fgf21 expression is indeed reduced in cultured adipocytes overexpressing Dnmt3a, is increased in cells expressing shDnmt3a, and most importantly, is up-regulated in the adipose tissue of Dnmt3aAdiKO mice (Figure 5D). Unlike adipose tissue levels, serum levels of Fgf21 were reduced in HFD-fed Dnmt3aAdiKO mice compared to controls (Figure 5—figure supplement 5–). To determine whether restoration of FGF21 levels could ameliorate Dnmt3a-mediated IR, we treated 3T3-L1 adipocytes that overexpress Dnmt3a with recombinant FGF21, which restored insulin sensitivity in a dose-dependent manner (Figure 5E).
 
-## Dnmt3a-mediated changes in Fgf21 gene expression involve changes in DNA methylation
+![Figure 5.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig5-v2.jpg)
+
+**Figure 5.:** Venn diagram showing the number of positive (A) and negative (B) Dnmt3a target genes through comparative analysis of RNA-seq profiles from Dnmt3a knockdown and overexpressing adipocytes. (C) Heat map showing differentially regulated genes by Dnmt3a overexpression and knock-down. Group 1: Genes that are down-regulated by Dnmt3a overexpression; Group 2: Genes that are down-regulated by Dnmt3a overexpression and up-regulated by Dnmt3a knock-down; Group 3: Genes that are up-regulated by Dnmt3a knock-down. (D) Fgf21 mRNA expression in Dnmt3a overexpressor (left) and knock-down (middle) L1 adipocytes and in fractionated adipocytes (right) from Dnmt3aAdiKO and Dnmt3af/f mice on HFD (n = 5). (E) Mature 3T3-L1 adipocytes expressing GFP or Dnmt3a treated with indicated amount of recombinant Fgf21 for 48 hr (or vehicle), and tested for insulin sensitivity by 3H-2-DG assay. Shown is basal and insulin-stimulated glucose uptake. (n = 6 mice, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Serum Fgf21 levels measured by ELISA in WT and KO mice on 12-wk-old chow (n = 6) or after 14 weeks of HFD (n = 7, p<0.05, Student’s t-test, mean ±s.e.m.).
+
+### Dnmt3a-mediated changes in Fgf21 gene expression involve changes in DNA methylation
 
 In general, the level of DNA methylation at gene promoters is inversely correlated with mRNA expression (Jones, 2012). Given the functional significance of FGF21 in Dnmt3a-mediated IR, we further examined whether Dnmt3a directly alters methylation of the 5 kb upstream promoter regions of the Fgf21 gene (Figure 6A). Using methylated DNA precipitation PCR (MeDIP-qPCR), we detected genomic DNA hypermethylation at Fgf21 promoter regions in Dnmt3a overexpressor 3T3-L1 cells compared to controls (Figure 6B). Conversely, DNA hypomethylation of these same regions was seen in Dnmt3a knock-down cells (Figure 6B). In addition to the in vitro models, we conducted MeDIP-qPCR analysis using genomic DNA from fractionated adipocytes of Dnmt3aAdiKO and control animals, finding reduced DNA methylation at the Fgf21 promoter in KO cells (Figure 6C). Consistent with DNA methylation pattern at the Fgf21 promoter region, co-transfection of Dnmt3a potently inhibited promoter activity of Fgf21 (Figure 6D). Together, these data suggest that Dnmt3a-mediated suppression of Fgf21 involves changes in DNA methylation profile at key promoter regions.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig6-v2.jpg)
 
-**Figure 6.:** Fgf21 gene promoter.(A) Schematic showing the tested regions for MeDIP-qPCR at the Fgf21 locus. Target regions were chosen using MethFinder (http://www.urogene.org/methprimer) on regions proximal (5 kb) and distal (50 kb) to the Fgf21 transcription start site. (B) MeDIP-qPCR was performed using genomic DNA extracted from 3T3-L1 adipocytes transduced with GFP vs. Dnmt3a or shScr vs. shDnmt3a. Shown is relative fold enrichment of 5mC of Dnmt3a overexpressor and KD cells over control cells. (C) MeDIP-qPCR was performed using genomic DNA from Dnmt3a KO and Flox mice on HFD. Shown is relative fold enrichment of 5mC of KO over WT samples. (D) Fgf21-promoter reporter (1497/+5) assay performed by co-transfection of the indicated amounts of Dnmt3a expression vector. (n = 3 mice, p<0.05, Student’s t-test, mean ±s.e.m.).10.7554/eLife.30766.033Figure 6—source data 1.
+**Figure 6.:** (A) Schematic showing the tested regions for MeDIP-qPCR at the Fgf21 locus. Target regions were chosen using MethFinder (http://www.urogene.org/methprimer) on regions proximal (5 kb) and distal (50 kb) to the Fgf21 transcription start site. (B) MeDIP-qPCR was performed using genomic DNA extracted from 3T3-L1 adipocytes transduced with GFP vs. Dnmt3a or shScr vs. shDnmt3a. Shown is relative fold enrichment of 5mC of Dnmt3a overexpressor and KD cells over control cells. (C) MeDIP-qPCR was performed using genomic DNA from Dnmt3a KO and Flox mice on HFD. Shown is relative fold enrichment of 5mC of KO over WT samples. (D) Fgf21-promoter reporter (1497/+5) assay performed by co-transfection of the indicated amounts of Dnmt3a expression vector. (n = 3 mice, p<0.05, Student’s t-test, mean ±s.e.m.).
 
-## DNA methylation of FGF21 is increased in human adipose tissue of subjects with type 2 diabetes
+### DNA methylation of FGF21 is increased in human adipose tissue of subjects with type 2 diabetes
 
 To translate some of our findings to humans, we investigated DNA methylation and gene expression of FGF21 in human adipose tissue collected from diabetic vs. non-diabetic human subjects. In line with our mouse data, we found hypermethylation of four CpG sites annotated to FGF21 in adipose tissue of subjects with type 2 diabetes compared with non-diabetic controls (Figure 7A and Supplementary file 2). Further, we found a negative correlation between DNA methylation and mRNA expression of FGF21 in human adipose tissue (Figure 7B–E). Together, these data support a role for increased DNA methylation of FGF21 in the regulation of adipose FGF21 expression in association with metabolic disease.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig7-v2.jpg)
 
-**Figure 7.:** FGF21 DNA methylation in adipose tissue from subjects with T2D compared with controls.(A) Four CpG sites annotated to FGF21 with significant difference in adipose tissue DNA methylation between subjects with type 2 diabetes and controls. (p<0.01, paired Wilcoxon statistics, mean ±s.d.). (B–D) Correlations between DNA methylation and mRNA expression for CpG sites significantly associated with T2D in human adipose tissue. (r = Pearson correlation coefficient.).
+**Figure 7.:** (A) Four CpG sites annotated to FGF21 with significant difference in adipose tissue DNA methylation between subjects with type 2 diabetes and controls. (p<0.01, paired Wilcoxon statistics, mean ±s.d.). (B–D) Correlations between DNA methylation and mRNA expression for CpG sites significantly associated with T2D in human adipose tissue. (r = Pearson correlation coefficient.).
 
 ## Discussion
 
@@ -101,23 +161,23 @@ In summary, we have identified a novel role for Dnmt3a as an epigenetic mediator
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 3T3-L1 preadipocytes were obtained from ATCC and maintained and differentiated as described (Kang et al., 2012). These cells were authenticated by the ability to differentiate and confirmed to be mycoplasma negative. To generate lentivirus particles, lentiviral constructs were co-transfected with pM2DG- and psPAX-expressing plasmids into 293T cells. After 48 hr, virus-containing supernatant was collected, filtered through 0.45 μm filters, and added to mature 3T3-L1 adipocytes for 24 hr along with 8 μg/ml Polybrene. Transduction efficiency was determined by comparison with cells transduced in parallel with a GFP-expressing lentivirus. For the ex vivo system, subcutaneous adipose tissue from wild-type C57Bl/6 mice was fractionated with digestion buffer (10 mg/ml collagenase D, 2.4 units of dispase II, 10 mM ​CaCl2 in PBS). Cells from the stromal-vascular fraction (SVF) were plated in culture and differentiated as described previously (Qureshi et al., 2014). ​To differentiate hASCs, Rosi (5 µM) was added in addition to IBMX (0.5 mM), insulin (5 µg/ml), and dexamethasone (1 µM), from day 0–2.
 
-## 3H-2-DG assay
+### 3H-2-DG assay
 
 Mature 3T3-L1 adipocytes were incubated in serum-free DMEM for 4–6 hr. Cells were then washed three times with KRH buffer (12 mM HEPES, pH 7.4, 121 mM NaCl, 5 mM KCl, 0.33 mM CaCl2, and 1.2 mM MgSO4) and incubated for 20 min in KRH buffer in the absence or presence of 50 nM insulin. Cells were treated with 2-deoxy-d-[2,6-3H]-glucose (0.33 μCi/ml) for another 10 min. Glucose uptake was stopped quickly by three rapid washes with KRH buffer containing 200 mM glucose and 10 μM cytochalasin B on ice. Cells were solubilized in 0.1% SDS for 30 min, and radioactivity was measured by liquid scintillation counting.
 
-## Reagents
+### Reagents
 
 2-Deoxy-d-[2,6-3H]-glucose was purchased from PerkinElmer NEN radiochemicals. Insulin, dexamethasone, isobutylmethylxanthine (IBMX), cytochalasin B, glucose, 2-deoxyglucose, 5-Aza, ECCG, and TF-3 were purchased from Sigma-Aldrich. Recombinant TNF-α and Fgf21 were purchased from Millipore. RG-108 was purchased from Stemgent.
 
-## Antibodies
+### Antibodies
 
 Antibodies were purchased from Cell Signaling (Dnmt3a, 3598S; Akt, 9272; pAkt [S473], 3787; IRS-1, 2382), and from Thermo Fisher (β-actin, MA5-14739, pIRS1[pY612], 44–816G).
 
-## Animals
+### Animals
 
 For ​rosiglitazone studies, female mice ob/ob and ob/+were treated starting at 8 weeks of age with ​rosiglitazone by gavage (10 mg/kg body weight) in 0.5% carboxymethylcellulose versus 0.5% carboxymethylcellulose vehicle control daily for 6 weeks. For chow and high-fat feeding studies, male C57Bl/6J mice were put on diet beginning at 8 weeks of age and continued for three months (n = 8 per dietary condition). Samples were collected from the perigonadal fat pad.
 
@@ -125,22 +185,22 @@ For histology, adipose tissues were fixed with neutral-buffered formalin and emb
 
 For in vivo insulin signaling assay, after overnight fast, insulin (10 U/kg, 5 min) or saline IP were given to WT and KO mice on HFD. After 10 min various tissues were harvested and stored at –80°C until use. Tissue samples were homogenized in cell signaling lysis buffer containing protease inhibitors (Roche) and phosphatase inhibitors (Sigma-Aldrich) and subjected to western blotting. All animal work was approved by the BIDMC IACUC and/or the UC Berkeley ACUC.
 
-## RNA extraction and quantitative PCR
+### RNA extraction and quantitative PCR
 
 Total RNA was extracted from cells or tissues using TRIzol reagent according to the manufacturer’s instructions. cDNA was reverse-transcribed from 1 μg of RNA using the RETROscript first strand synthesis kit (Ambion). Quantitative PCR (qPCR) was performed with SYBR Green qPCR Master Mix (Applied Biosystems) using a 7900HT Fast Real-Time PCR System (Applied Biosystems) and CFX96 Touch (Bio Rad). Primer sequences are listed in Supplementary file 3. The relative amount of mRNA normalized to ​cyclophilin B was calculated using the delta–delta method (Livak and Schmittgen, 2001).
 
-## Plasmids
+### Plasmids
 
 Hairpins against Dnmt1, Dnmt3a, and Dnmt3b were purchased from Sigma. Lentiviral overexpression vectors for Dnmt1, 3a, and 3b were subcloned into pCDH using various multicloning sites (XbaI/NotI for ​Dnmt1, EcoRI/NotI for Dnmt1, Dnmt3a, Dnmt3a-CM) and NotI sites and hairpins targeting ​Dnmts were subcloned at AgeI/EcoRI or purchased from Open Biosystems. Hairpin sequences are shown in Supplementary file 3. Fgf21-luc (1497/+5) was generously provided by Dr. Steven Kliewer (UT Southwestern).
 
-## MeDIP-qPCR
+### MeDIP-qPCR
 
 Genomic DNA was sheared by sonication to an average of 200–800 bp size. Two microgram of denatured DNA was incubated with 2 μg of anti-5-methylcytidine antibody (Epigentek) in IP buffer (10 mM Na-Phosphate pH 7.0, 0.14 M NaCl, 0.05% Triton X-100) for 2 hr at 4°C. Antibody-bound DNA was collected with 20 μl of Dynabeads anti-mouse IgG (Invitrogen Dynal, Oslo, Norway) for 1 hr at 4°C on a rotating wheel and successively washed five times with washing buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 150 mM NaCl), and twice with TE (10 mM Tris·Cl, 1 mM EDTA pH 8.0). DNA was recovered in digestion buffer 125 μl buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS, 35 μg proteinase K) and incubated for 3 hr at 65°C. Recovered DNA was used for qPCR analysis. Primers for MeDIP-qPCR studies are listed in Supplementary file 3. All data are normalized to input.
 
-## RNA-seq studies
+### RNA-seq studies
 
 mRNA was purified from 100 ng of total RNA using the Ribo-Zero Magnetic Gold Kit (catalog MRZG126, Illumina). Libraries were prepared using the TruSeq RNA Library Preparation Kit v2 (catalog RS-122–2001, Illumina) according to the manufacturer’s protocol starting with the EPF step. Sequencing was performed on the Illumina HiSeq2500. RNA-Seq data are aligned using TopHat2 (Kim et al., 2013). Reads are assigned to transcripts using featureCounts and an mm9 genome modified to minimize overlapping transcripts (Liao et al., 2014). Differential expression analysis of the data is performed using EdgeR (Robinson et al., 2010).
 
-## DNA methylation and mRNA expression in human adipose tissue
+### DNA methylation and mRNA expression in human adipose tissue
 
 DNA methylation was analyzed in adipose tissue from 28 subjects with type 2 diabetes and 28 controls as well as in adipose tissue of 14 monozygotic twin pairs (n = 28) using Infinium HumanMethylation450 BeadChips (Illumina) according to our previous study where we also present the characteristics of these subjects (Nilsson et al., 2014). Their characteristics are presented in Supplementary file 4. mRNA was analyzed in adipose tissue from the 12 monozygotic twin pairs (n = 24) using GeneChip Human Gene 1.0 ST arrays (Affymetrix, Santa Clara, CA) according to the manufacturer’s recommendations. In the present study, we studied mRNA expression and DNA methylation of CpG sites annotated to FGF21. DNA and RNA were extracted from human adipose tissue as presented (Nilsson et al., 2014).

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Specific protein-lipid interactions are critical for viral assembly. We present a molecular dynamics simulation study on the binding mechanism of the membrane targeting domain of HIV-1 Gag protein. The matrix (MA) domain drives Gag onto the plasma membrane through electrostatic interactions at its highly-basic-region (HBR), located near the myristoylated (Myr) N-terminus of the protein. Our study suggests Myr insertion is involved in the sorting of membrane lipids around the protein-binding site to prepare it for viral assembly. Our realistic membrane models confirm interactions with PIP 2 and PS lipids are highly favored around the HBR and are strong enough to keep the protein bound even without Myr insertion. We characterized Myr insertion events from microsecond trajectories and examined the membrane response upon initial membrane targeting by MA. Insertion events only occur with one of the membrane models, showing a combination of surface charge and internal membrane structure modulate this process.
+Specific protein-lipid interactions are critical for viral assembly. We present a molecular dynamics simulation study on the binding mechanism of the membrane targeting domain of HIV-1 Gag protein. The matrix (MA) domain drives Gag onto the plasma membrane through electrostatic interactions at its highly-basic-region (HBR), located near the myristoylated (Myr) N-terminus of the protein. Our study suggests Myr insertion is involved in the sorting of membrane lipids around the protein-binding site to prepare it for viral assembly. Our realistic membrane models confirm interactions with PIP2 and PS lipids are highly favored around the HBR and are strong enough to keep the protein bound even without Myr insertion. We characterized Myr insertion events from microsecond trajectories and examined the membrane response upon initial membrane targeting by MA. Insertion events only occur with one of the membrane models, showing a combination of surface charge and internal membrane structure modulate this process.
 
 ## Introduction
 
@@ -37,9 +37,90 @@ In the following paragraphs, we discuss the MA-bound conformations observed in o
 
 To differentiate among the systems in this study, the following subscripts to the membrane models have been selected as notation: ‘200’ for the 200 ns trajectories (e.g. raft200, see also Table 1); ‘pre’ for the trajectories starting from a pre-inserted Myr configuration (e.g. raftpre, see also Table S1 in Supplementary file 1); ‘myr’ for the system starting with a partially inserted Myr (innermyr); ‘mono’ and ‘trimer’ for the systems simulating separated MA units vs. a formed trimer, respectively; the suffixes ‘1’ and ‘2’ to denote replicates; and the suffix ‘L’ to denote larger membranes with three MA units on the surface.
 
-## MA-bound conformations
+**Table 1.**
+ Simulation components for the membrane models used in this study.Chemical structures of each lipid species are shown in Figure 2—figure supplement 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Lipid species</th>
+      <th>Lipid mol fract.</th>
+      <th>Charge density (e-/nm2)</th>
+      <th>Unsat. degree</th>
+      <th># Waters (small)</th>
+      <th>Ions</th>
+      <th># Waters (large)</th>
+      <th>Ions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control APL* 66.9 +/- 0.84</td>
+      <td>DOPC DOPS PIP2‡</td>
+      <td>0.80 0.15 0.05</td>
+      <td>−0.25</td>
+      <td>0.98</td>
+      <td>23442 78.1 H-num†</td>
+      <td>211 K 112 Cl</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Inner APL 47.8 +/- 0.40</td>
+      <td>Chol DOPC DOPS POPE BSM PIP2</td>
+      <td>0.30 0.17 0.17 0.25 0.08 0.02</td>
+      <td>−0.26</td>
+      <td>0.52</td>
+      <td>16009 (53.4) H-num</td>
+      <td>154 K 81 Cl</td>
+      <td>103544 (86.3) H-num</td>
+      <td>295 K</td>
+    </tr>
+    <tr>
+      <td>Raft APL 47.1 +/- 0.40</td>
+      <td>Chol DOPC DOPS BSM PIP2</td>
+      <td>0.28 0.30 0.06 0.30 0.06</td>
+      <td>−0.32</td>
+      <td>0.54</td>
+      <td>15744 (52.6) H-num</td>
+      <td>170 K 83 Cl</td>
+      <td>100034 (83.4) H-num</td>
+      <td>351 K</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Area per lipid (Å2/lipid).†ydration number (# waters/lipid).‡SAPI25 in CHARMM36m topology (18:0 - 20:4)._
+
+### MA-bound conformations
 
 Two bound conformations, mouth-down (blocked) and mouth-to-the-side (open), occur within the first 100 ns of the short equilibration runs that started with MA at least 1 nm away from the membrane (see Figure 2). The protein was positioned with its mouth pointing downwards and Myr sequestered in the hydrophobic cavity of the protein; Table 1 summarizes the details of the systems presented in this study. The protein was free to move in the solvent and the final bound conformation occurs indistinctly to the top or bottom leaflets of our symmetric models. The initial conformation of the protein did not influence the final bound state. Video 1 shows an example where MA bound in the open conformation, the HBR loop interacts with the membrane and stablishes a permanent bound state from which Myr can exit the protein’s hydrophobic cavity. Table S1 in Supplementary file 1 lists the time of first contact with the bilayer as well as that of Myr exposure for the systems bound in the open conformation. Initial contact times with the raft model are approximately half than with the control or the inner models, and both bound conformations occur in the replica runs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-v2.jpg)
+
+**Figure 2.:** (A) In the open state with the control200 model, and (B) the blocked state with the raft200 model. Top: snapshots of the bound conformations, PIP2 lipids are shown in purple and DOPS in green. Center: PIP2 lipid density at the end of the 200-ns trajectories. Bottom: distance between protein sections and the phosphate region of the lipids in the binding leaflet for each conformation. Time series of the distance between H1 and Lid of MA, that is the mouth of the protein for the (C) control200 and raft200 systems with an open-bound and a blocked-bound MA, respectively. (D) H1-Lid distance for the innermyr model trajectory. Moving average for these plots is shown in bold lines every 5 ns for the 200-ns trajectories, and every 50 ns for the microsecond trajectory in bold lines; the faded curves are the original dataset. The chemical structures of each lipid species in the membrane models is shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The lipid tail saturation nomenclature is given for the sn2 – sn1 tails below each name, and the full names for each species: DOPC: 1,2-dioleoyl-sn-glycero-3-phosphocholine. DOPS: 1,2-dioleoyl-sn-glycero-3-phospho-L-serine. POPE: 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine. BSM: N-octadecanoyl-D-erythro-sphingosylphosphorylcholine, a.k.a.(porcine) brain sphingomyelin. PIP2: 1,2-dioctanoyl-sn-glycero-3-phospho-(1’-myo-inositol-4’,5’-biphosphate).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) control200, (B) inner200, and (C) raft200. Densities computed over last 50 ns of trajectory.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp4-v2.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp5-v2.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig2-figsupp6-v2.jpg)
+
+![Video 1.](https://cdn.elifesciences.org/articles/58621/elife-58621-video1.mp4.jpg)
+
+**Video 1.:** The protein binds within the first 50 ns of simulation trajectory; electrostatic interactions with charged lipid headgroups are strong enough to keep the protein bound to the membrane surface, and Myr is free to survey the membrane surface.
 
 DOPC: 1,2-dioleoyl-sn-glycero-3-phosphocholine. DOPS: 1,2-dioleoyl-sn-glycero-3-phospho-L-serine. POPE: 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine. BSM: N-octadecanoyl-D-erythro-sphingosylphosphorylcholine, a.k.a.(porcine) brain sphingomyelin. PIP2: 1,2-dioctanoyl-sn-glycero-3-phospho-(1’-myo-inositol-4’,5’-biphosphate).
 
@@ -47,15 +128,70 @@ In Figure 2, we illustrate the open and blocked bound conformations with the co
 
 In both conformations, the electrostatic interactions are predominantly between LYS and ARG residues and DOPS or PIP2 lipids in the bilayer, in agreement with experimental observations. The central panels in Figure 2 show the lipid density of PIP2 at the end of the short simulations. Interactions with anionic lipids occur mainly with the HBR in the open conformation (Figure 2A control model), and with H5 in the blocked conformation (Figure 2B, raft model). Figure 2—figure supplement 2 shows the lipid density of DOPS at the end of the corresponding trajectories. Both PIP2 and DOPS lipids co-localize to the protein-binding site in the open conformation, but initially only PIP2 lipids interact with a protein bound in the blocked conformation. As discussed later, DOPS lipids interactions with the protein bound in the blocked conformation are slightly enhanced when Myr is inserted (see Figure 2—figure supplements 2, 3 and 4). Finally, our micro-second trajectories show the protein is able to sample both bound conformations when Myr is (pre)inserted, partially modulated by contacts between the HBR and PIP2 lipids (see Figure 2—figure supplements 5 and 6).
 
-## Myristate insertion
+### Myristate insertion
 
 Our simulations are the first to show unbiased reproducible Myr insertion events. Table 2 lists the systems in which this process is observed, and Table S2 in Supplementary file 1 lists the simulation length, protein-bound conformation, and initial Myr location for these systems. Myr insertionoccurred in two of the four trajectories with an MA monomer on the surface of a bilayer, and for multiple MA units in the simulation with a formed trimer. Systems with multiple MA units were run for shorter simulation times and insertion events occurred only in the system with an MA trimer within half of its simulated trajectory. None of the systems with three separate MA monomers exhibited Myr insertions.
 
+**Table 2.**
+ Summary of insertion events for the systems that exhibit Myr insertion.The angle reported in the last column is that between the Myr tail and the bilayer normal, taken as the positive z-axis. The standard error is reported along with the angles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Sim time (μs)</th>
+      <th>Bound conf.</th>
+      <th>Bound leaflet</th>
+      <th>insertion (ns)</th>
+      <th>Myr angle (o)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inner</td>
+      <td>5</td>
+      <td>Open</td>
+      <td>Bottom</td>
+      <td>1380 ± 2</td>
+      <td>25.4 ± 2.3</td>
+    </tr>
+    <tr>
+      <td>Inner-1</td>
+      <td>1.6</td>
+      <td>Open</td>
+      <td>Bottom</td>
+      <td>78 ± 1</td>
+      <td>8.2 ± 1.4</td>
+    </tr>
+    <tr>
+      <td>Inner-Ltrimer</td>
+      <td>1</td>
+      <td>Open</td>
+      <td>Top</td>
+      <td>MA1: 350 ± 4 MA2: 780 ± 2 MA3: none</td>
+      <td>MA1: 37.8 ± 5.4 MA2: 18.1 ± 3.2 MA3: N/A</td>
+    </tr>
+  </tbody>
+</table>
+
 From our analysis, we propose an unrolling mechanism for Myr insertion into the binding leaflet. In all cases, insertion occurs only from the open bound conformation, that is when the H1 and HBR interact with the bilayer and H5 is extended towards the solvent. Myr insertion never takes places from a blocked bound conformation, in which the lipid tail can roll on itself and up and down the hydrophobic cavity of the protein, but cannot dive into the binding leaflet – that is insert C14 first into the leaflet. Importantly, insertion events were only observed into the membrane model with lipid composition characteristic to the inner leaflet of the PM, where viral assembly occurs in the biological system. Video 2 shows a portion of the trajectory in which Myr is outside the hydrophobic cavity of the protein, interacts with the solvent and lipid headgroups, and then inserts into the bilayer. Myr insertion is never observed with the raft models, not even from the open bound conformations of MA monomers on the surface of large membrane patches, or from a formed MA trimer.
+
+![Video 2.](https://cdn.elifesciences.org/articles/58621/elife-58621-video2.mp4.jpg)
+
+**Video 2.:** Exposure of Myr, the lipid tail of MA, occurs within the first 200 ns of trajectory. The tail can survey the membrane surface and even extend towards the water before permanently inserting into the bilayer.
 
 Figure 3A shows a series of snapshots showcasing the insertion of Myr into the inner membrane model, a process that occurs between 70 and 180 ns when a single MA protein is present. The first carbon in the tail, C2, interacts closely with the lipid headgroups upon exposure from its hydrophobic cavity; the tail can lay flat on the membrane surface while it searches for a large-enough lipid packing defect suitable for insertion. During insertion, the last carbon in the tail, C14, can extend vertically towards the water and pass by C2 as the tail rolls into the binding leaflet. Upon insertion, Myr remains extended and aligned to the other lipid tails in the bilayer core, and C14 is located at the center of the bilayer. The mechanism is similar when a formed MA trimer is bound to the bilayer, but in this case, Myr can also rest flat between the protein and the membrane, and roll into the leaflet from this position. Again, Myr insertion never occurs in a diving fashion (C14 first). Insertion is permanent on the timescale of our simulations; however, the Myr tail can survey the local lipid environment, insert partially and exit again before permanently entering the bilayer. Such is the case of one of the MA monomers from the inner-Ltrimer simulation (see myr1 in Figure 3F). This suggests a close relationship and feedback between protein-lipid and lipid-lipid interactions. Myr ‘sensing’ could be a mechanism of lipid recruitment in preparation for viral assembly.
 
-Figure 3B shows the root-mean-squared-fluctuations (RMSF) of the protein before, during and after Myr insertion for the inner-MA system. Note that residues 2–7, 19–29, 44–46, 52, 69–71, and 90–95 fluctuate the most, as is expected for coiled regions. However, residues 8–18 that correspond to H1, fluctuate more before and during Myr insertion, and stabilize afterwards. As Myr inserts, H1 gets closer to the bilayer and lays flat on the membrane surface; as observed in the time series inset on Figure 3C that shows the self-distance of both H1 and HBR computed as the z-component of the distance between the first and last alpha-carbons of each region (refer to Table S3 in Supplementary file 1 for this metric). Upon insertion, Myr aligns to the lipid tails and remains in this position until the end of the simulation. Figure 3D shows the probability distribution of the cosine of the angle between Myr and the bilayer normal; in all cases, the lipid tail remains aligned to the z-axis inside the bilayer (cos⁡(θ)=1), but C14 can retract to the mid-region of the leaflet occasionally.
+![Figure 3.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig3-v2.jpg)
+
+**Figure 3.:** (A) Trajectory snapshots from the inner trajectory, see also Video 2. (A) Myristate insertion mechanism (from the inner trajectory), see also Video 2. (B) RMSF of MA before, during, and after Myr insertion, at least 50 ns of the respective sections in the inner trajectory were used for this analysis. (C) Self-distance of H1 and HBR during Myr insertion (refer to Table S3 in Supplementary file 1 for the definition of self-distance). (D) Probability distribution of the angle between Myr and the bilayer normal for the MA units that exhibit Myr insertion (see also Figure 3—figure supplement 1). (E) Snapshot of the side view of inner-Ltrimer at the end of the simulation, PIP2 lipids are shown in purple, DOPS lipids in green. (F) Time series of Myr insertion in the first and second MA units in the inner-Ltrimer simulation, the distance was computed between the last carbon in the lipid tail (C14) and the bilayer center. All the time series show the blocked moving averaged in solid color and the raw data faded.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The innermyr system is also included as reference for a lipid tail that returned to the protein hydrophobic cavity and is essentially parallel to the membrane surface (black curve).
+
+Figure 3B shows the root-mean-squared-fluctuations (RMSF) of the protein before, during and after Myr insertion for the inner-MA system. Note that residues 2–7, 19–29, 44–46, 52, 69–71, and 90–95 fluctuate the most, as is expected for coiled regions. However, residues 8–18 that correspond to H1, fluctuate more before and during Myr insertion, and stabilize afterwards. As Myr inserts, H1 gets closer to the bilayer and lays flat on the membrane surface; as observed in the time series inset on Figure 3C that shows the self-distance of both H1 and HBR computed as the z-component of the distance between the first and last alpha-carbons of each region (refer to Table S3 in Supplementary file 1 for this metric). Upon insertion, Myr aligns to the lipid tails and remains in this position until the end of the simulation. Figure 3D shows the probability distribution of the cosine of the angle between Myr and the bilayer normal; in all cases, the lipid tail remains aligned to the z-axis inside the bilayer ($cos⁡(\theta)$=1), but C14 can retract to the mid-region of the leaflet occasionally.
 
 To further examine the effects of Myr on the binding leaflet, we simulated an MA monomer on the surface of the small inner and raft membrane models starting from a pre-inserted Myr configuration. We ran three replicas of this configuration with the control model to assess the effect of cholesterol, that is the mechanical and structural properties of the membrane, on Myr retention and insertion. Figure 3—figure supplement 1 shows the probability distribution of the cosine of the angle between Myr and the z-axis for these systems. Note that in a membrane environment rich in cholesterol and sphingomyelin lipids like the raft model, the angle distribution is much narrower than in the more fluid control model. This shows membrane structure and mechanical properties, modulated by its lipid content, can restrain the motion and dynamics of Myr. Contrary to our expectations, a partially inserted Myr in the inner model returned to the hydrophobic cavity of the protein; showing there is a much more complicated feedback loop between local lipid content and Myr insertion events. This observation leads us to suggest Myr may act as a lipid sensing probe during viral assembly and contribute to the recruitment of lipids and other proteins to the viral assembly site.
 
@@ -63,13 +199,25 @@ A closer look at the carbon atoms in the Myr tail during insertion shows C2, the
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig4-v2.jpg)
 
-**Figure 4.:** Top: Time series of insertion for the first and last carbons in the Myr tail, C2 and C14; the distance was computed between the center of mass of the respective carbon and the bilayer center as estimated from the average distance between the phosphate regions of the lipids in each leaflet. The faded regions show the raw data of this metric, and the bolded regions show the corresponding blocked moving average. Center: Probability density of the same distances as estimated from the normalized histograms of each time series. Bottom: Heat maps of the probabilities of the C2 and C14 atoms of Myr as estimated from the histogrammed data. The systems shown are: (A) inner, (B) inner, and (myrC) inner-L (MAtrimer2 unit).Figure 4—source code 1.Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (center) probability density of the same carbons with respect to their position in the z-axis, (bottom) heatmap of these probabilities.Figure 4—source code 2.Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (center) probability density of the same carbons with respect to their position in the z-axis, (bottom) heatmap of these probabilities.Figure 4—source code 3.Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (center) probability density of the same carbons with respect to their position in the z-axis, (bottom) heatmap of these probabilities.Figure 4—source data 1.(Top) Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (Center) probability density of the same carbons with respect to their position in the z-axis, (Bottom) heatmap of these probabilities.Figure 4—source data 2.(Top) Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (Center) probability density of the same carbons with respect to their position in the z-axis, (Bottom) heatmap of these probabilities.Figure 4—source data 3.(Top) Timeseries for the distance between C2 and C14 carbons of Myr and the center of the bilayer, (Center) probability density of the same carbons with respect to their position in the z-axis, (Bottom) heatmap of these probabilities.
+**Figure 4.:** Top: Time series of insertion for the first and last carbons in the Myr tail, C2 and C14; the distance was computed between the center of mass of the respective carbon and the bilayer center as estimated from the average distance between the phosphate regions of the lipids in each leaflet. The faded regions show the raw data of this metric, and the bolded regions show the corresponding blocked moving average. Center: Probability density of the same distances as estimated from the normalized histograms of each time series. Bottom: Heat maps of the probabilities of the C2 and C14 atoms of Myr as estimated from the histogrammed data. The systems shown are: (A) inner, (B) innermyr, and (C) inner-Ltrimer (MA2 unit).
 
 The last carbon of Myr, C14, is located very close to the bilayer center upon insertion; since this is a shorter carbon tail compared to the 16 to 18 carbons of the majority of the bilayer lipids, it is understandable C14 remains on average around 0.6 nm away from the bilayer center. Interestingly, when Myr returns to the hydrophobic cavity, it lays nearly horizontally as in Figure 4B, aligned to the membrane surface inside the protein with C2 and C14 at the same height above the bilayer center. This is also observed in the probability distribution of the cosine of the angle between Myr and the z-axis for this system, included in Figure 3—figure supplement 1 for comparison with the data for the raft and control simulations that started with a pre-inserted tail.
 
-## Membrane response
+### Membrane response
 
 MA binding results in co-localization of charged lipids to the protein binding site, even when only a single unit is present (refer to Figure 2 and Figure 2—figure supplement 2). PIP2 recruitment is not required for Myr insertion, but in some instances the number of contacts with MA increase upon Myr insertion, like with the inner trajectories shown in Figure 5, and the raft system in Figure 2—figure supplement 3. In other cases, the number of contacts between MA and PIP2 remains the same or increases even without insertion of the lipid tail, as in the trajectories with the raft model where the protein is bound in the blocked conformation (see Figure 2—figure supplement 4). Note that MA can still move on the membrane surface after its initial binding and prior to Myr insertion, but is constricted to a given local lipid environment afterwards, as shown in the simulations starting with a pre-inserted Myr. For these latter cases, a maximum of 57% or 44% of PIP2 present colocalizes to the protein binding site in the control and raft models, respectively, whereas 75–100% of PIP2 lipids bind to the protein in the inner model trajectories.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig5-v2.jpg)
+
+**Figure 5.:** PIP2 and DOPS contacts within 10 $Å$ of the protein for: (A) inner (insertion around 1380 ns), (B) innermyr, (C) inner-Ltrimer (with permanent Myr insertion after 400 ns), and (D) raft-Ltrimer (with no insertion).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data was computed over the last 200 ns of simulation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Data collected over the last 200 ns of simulation.
 
 In addition to PIP2, DOPS lipids also interact with MA; these are present in higher concentration in the control and inner models, but at the same concentration as PIP2 in the raft model. When Myr is pre-inserted, the interaction of PS lipids with the protein increases from 12 to up to 30% of its content in the raft model, but fluctuates greatly between 9–35% in the control model, potentially due to the more fluid nature of this model without cholesterol. From the trajectories with the inner model, PS-protein interactions are not affected by Myr insertion, and a maximum of 23% of PS present in the membrane interacts with the protein throughout the simulation. Notably, a maximum of 38% of PS interacts with the protein for the simulation with the inner model that started with a partially inserted Myr, which decreases to 19% after Myr returns to the protein’s hydrophobic cavity. Again, these specific interactions show there is a tight loop between Myr insertion events and local lipid composition.
 
@@ -79,11 +227,11 @@ As a final metric to characterize membrane response, we computed the deuterium o
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig6-v2.jpg)
 
-**Figure 6.:** CD) between the protein-membrane and membrane-only systems per leaflet for the inner (‘mono’) and inner-L (‘trimer’) systems after Myr insertion.trimerA positive value indicates the presence of the protein with inserted Myr increases the order in the bilayer, whereas a negative value corresponds to a decrease in order with respect to the membrane-only system.
+**Figure 6.:** A positive value indicates the presence of the protein with inserted Myr increases the order in the bilayer, whereas a negative value corresponds to a decrease in order with respect to the membrane-only system.
 
 The long tails of PIP2 and sphingomyelin lipids, with 20 and 22 carbons respectively, experience an increase in order when Myr inserts into the bilayers. However, the trend is different when an MA trimer is present instead of a monomer. This is particularly noticeable for the sphingomyelin values, which show an increase in order in the middle section of the lipid tail in the binding leaflet when a trimer is present instead of a monomer. Given the ability of Myr to survey the lipid environment prior to stable insertion, this increase in order in the middle of the binding leaflet could potentially be a way to recruit additional MA units to the binding site. On the other hand, the sphingomyelin lipids in the opposite leaflet show an even larger effect of disorder in the tail region, near the bilayer center. Although out of the scope of this study, these results indicate there may be a modulated response to protein binding and Myr insertion between the PM leaflets, which has also been suggested by other groups (Sengupta et al., 2019; Dick and Vogt, 2014; Dumas and Haanappel, 2017).
 
-## Further analysis and discussion
+### Further analysis and discussion
 
 We examined the effect of membrane composition on the binding mechanism and insertion of the lipidated tail of MA, the membrane targeting domain of HIV-1 Gag polyprotein. Using MD, we simulated MA monomers as well as formed trimer near the surface of different membrane models. These models were selected based on experimental studies that also examined the interplay between protein binding and aggregation on membranes in the context of viral assembly (Yandrapalli et al., 2016). Our models mimic the sterol content, surface charge, and key lipid species in the PM. Although we used a symmetric bilayer in this study, our models provide important insight on the protein-membrane interactions needed during the early stages of viral assembly. The key contributions from our work include specific protein-lipid interactions at the binding site, a molecular-level mechanism for Myr insertion, characterization of protein conformational changes that enable Myr insertion, and the local changes in the membrane as a result of binding and insertion.
 
@@ -103,6 +251,14 @@ As expected, no lipid aggregates are observed in the control model because it la
 
 As a final assessment, we characterized Myr insertion events using a reduction technique to quantify the slowest motions of the process. We performed time-independent component analysis (tICA) on the distances between each carbon of the Myr tail and the alpha-carbons of the structured regions of the protein as labeled on Figure 1: H1-5 and the HBR, no other coiled region was considered. Figure 7 shows two cases with the inner membrane model; panel A is for the trajectory exhibiting Myr insertion (inner system) and panel B for the trajectory starting with a partially inserted Myr that resulted in its sequestration back into the protein’s hydrophobic cavity (innermyr system). Notice the first independent component (tIC) identified in the analysis seems to be rather related to protein motions for Myr exposure or sequestration, such as the opening and closing of the mouth of the protein, that is the H1-Lid distance (refer to Figure 2D). The second tIC captures Myr insertion, or lack thereof, depending on the trend of the time series. Figure 7A shows a concave shape for the second tIC that decreases around the time of Myr insertion; whereas panel B shows a convex shape for the second tIC that increases as Myr is sequestered back into the protein around 2 μs, same time in which the H1-Lid region opens to make way for the lipid tail (see Figure 2.C and D).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig7-v2.jpg)
+
+**Figure 7.:** Top panels show the projection of each trajectory onto the slowest independent components identified, and the bottom panels a heat map of histograms of the projected trajectory onto the respective tIC (logarithmic scale). Similar plots are shown in Figure 7—figure supplement 1 for the controlpre, raft, and raftpre systems.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58621/elife-58621-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Top panels show the projection of each trajectory onto the slowest independent components identified, and the bottom panels are heat-maps in logarithmic scale estimated from histograms of the projected trajectory onto the two slowest tICs.
+
 The bottom panels in Figure 7 are 2D histograms of the trajectory projections onto the slowest tICs in logarithmic scale for clarity. These show a V-shape characterizes Myr insertion, while an inverted V characterizes the motion of Myr away from the bilayer center, either to the protein cavity or remaining around the lipid-headgroup region. The same characteristic shapes are observed for the corresponding plots of the controlpre, Raft, and Raftpre systems in Figure 7—figure supplement 1. In these cases, the systems with pre-inserted Myr (Figure 7—figure supplement 1A & C) show a first tIC that increases in time, and a second tIC with a concave shape. Again, systems with an inserted Myr have a 2D histogram with V-shape behavior, while the system with no insertion shows an inverted V. Simply looking at the first tIC across the inner, raft, and control models, it is apparent the intra-protein and protein-membrane interactions are different depending on the membrane model in use. This observation further proves the need for realistic models to study protein and lipid interactions at or on membranes.
 
 The coefficients to each eigenvector, known as the load of each tIC, show the relative importance of each CnMyr - Cαprot distance for the process under study, Myr insertion in this case. These distances were deemed relevant because the respective normalized loads (coefficients) were higher than ±0.5. Looking only at the two slowest tICs, depicted in Figure 7, our analysis revealed the key distances during Myr insertion are between the first carbons in the tail (C2 and C3) and the HBR, followed by the distance between the same carbons and H5 or H1 for the 1st and 2nd tIC, respectively. Additional contributions to these tICs came from the distance between carbons C3, C6, and C13 with H5, and between carbon C14 and the HBR as well as H1. These observations provide further insight on key protein regions that contribute to the tail’s insertion (the HBR, H1 and H5), and corroborate the preferred mechanism of Myr insertion by an unrolling of its tail.
@@ -115,13 +271,13 @@ Fully hydrated bilayers (35+ water molecules per lipid) and an MA protein were b
 
 The protein, with an exposed Myr, was equilibrated separately for 150 ns to allow the sequestration of Myr in the internal hydrophobic cavity of the protein. Equilibrated coordinates of each bilayer and the protein were merged with the protein at least 1.0 nm above the bilayer using GROMACS. The protein-membrane systems started with a sequestered Myr MA and were simulated for 200 ns on GROMACS. Coordinates from equilibrated systems with the inner and raft models were extended to microsecond-trajectories on Anton2 to characterize Myr exposure and insertion events. Additionally, these bilayers were simulated starting from an inserted Myr configuration to examine its long-term effect on membrane dynamics. The control model was also simulated on Anton2 starting from an inserted Myr configuration to compare the effects of the lipid tail on membrane properties when cholesterol is not present.
 
-The equilibrated membranes were later replicated to form larger membrane patches to simulate three MA monomers or a formed MA trimer near the membrane surface. The smaller membrane patches contained 150 lipids per leaflet, while the larger patches have 600 lipids per leaflet with a surface of 282.24 nm2 (16.8 x 16.8 nm). The MA trimer (PDBID:1HIW) corresponding to the structure published by Hill et al., 1996 was equilibrated in water separately and then introduced near the membrane surface. During the trimer-only equilibration, two Myr tails in individual units were sequestered into the hydrophobic cavity and one remained outside. This equilibrated structure was positioned 1 nm away from the inner and raft large bilayers and simulated for 1 μs. Lastly, three separate monomers with exposed Myr were positioned near the bilayer and within 2.5 nm of each other to examine their interaction with other protein units as well as with the bilayer without any bias. Overall, we simulated 13 systems for a total of 42.8 µs, including the short 200 ns trajectories of an MA monomer on the small membrane patches.
+The equilibrated membranes were later replicated to form larger membrane patches to simulate three MA monomers or a formed MA trimer near the membrane surface. The smaller membrane patches contained 150 lipids per leaflet, while the larger patches have 600 lipids per leaflet with a surface of 282.24 nm2 (16.8 x 16.8 nm). The MA trimer (PDBID:1HIW) corresponding to the structure published by Hill et al., 1996 was equilibrated in water separately and then introduced near the membrane surface. During the trimer-only equilibration, two Myr tails in individual units were sequestered into the hydrophobic cavity and one remained outside. This equilibrated structure was positioned 1 nm away from the inner and raft large bilayers and simulated for 1 $\mus$. Lastly, three separate monomers with exposed Myr were positioned near the bilayer and within 2.5 nm of each other to examine their interaction with other protein units as well as with the bilayer without any bias. Overall, we simulated 13 systems for a total of 42.8 µs, including the short 200 ns trajectories of an MA monomer on the small membrane patches.
 
 Simulations were carried using isobaric and isothermal dynamics (constant NPT ensemble) with a simulation timestep of 2 fs and periodic boundary conditions. The temperature was kept constant at 310.15 K using the Nose-Hoover thermostat (Hoover, 1985; Nosé, 1984) with a coupling time constant of 1.0 ps in GROMACS. Similarly, the pressure was set at 1 bar and controlled using the Parrinello-Rahman barostat semi-isotropically with a compressibility of 4.5 × 10−5 and a coupling time constant of 5.0 ps (Nosé and Klein, 1983; Parrinello and Rahman, 1981). Van der Waals interactions were computed using a switching function between 1.0 and 1.2 nm, and long-range electrostatics evaluated using Particle Mesh Ewald (Darden et al., 1993). Hydrogen bonds in GROMACS were constrained using the LINCS algorithm (Hess et al., 1997). Simulation parameters for the Anton2 machine are set by its ark guesser files (scripts designed to optimize the parameters for the integration algorithms to enhance numerical integration during the simulation); as such, the cut-off values to compute interactions between neighboring atoms are selected automatically during system preparation. Long-range electrostatics were computed using the Gaussian Split Ewald algorithm (Shan et al., 2005), and hydrogen bonds constrained using the SHAKE algorithm (Ryckaert et al., 1977). Finally, the Nose-Hoover thermostat and MTK barostat control the temperature and pressure respectively during NPT dynamics using optimized parameters set by the Multigrator integrator on Anton2 (Lippert et al., 2013).
 
 Analysis of the trajectories was performed using GROMACS, MDAnalysis (Gowers et al., 2016; Michaud-Agrawal et al., 2011), MDTraj (McGibbon et al., 2015), and PyEmma (Scherer et al., 2015) packages. Visual Molecular Dynamics (VMD) software package (Humphrey et al., 1996) was used to visualize the systems and generate all the snapshots. Description of the analysis included in the next sections is summarized on Table S3 in Supplementary file 1. All reported values are blocked averages with their respective standard error for each given quantity over at least 100 ns of equilibrated trajectory unless stated otherwise. In general, distances were computed between the center-of-mass of the corresponding atom(s); angles were computed defining vectors between the center-of-mass of the corresponding initial and final residues; the bilayer center was estimated as the center-of-mass between the phosphorus atoms in each leaflet leaflets. Time series plots show the raw data faded in the background and the moving average, computed every 30 data points, as bolded lines for clarity. Lastly, we carried time-lagged independent component analysis (tICA) (Pérez-Hernández and Noé, 2016; Pérez-Hernández et al., 2013; Sultan and Pande, 2017) as a reduction technique to quantify the protein changes during Myr insertion. We selected the two slowest independent components (tICs) computed as the linear combination of the distance between alpha carbons in the protein and the carbon atoms of the Myr tail. As an estimate of the relative contributions of the tICs to the Myr conformation or state, that is sequestered, exposed, inserted, we computed the natural log of the probability densities of the projected trajectories onto the corresponding tIC.
 
-## Conclusions
+### Conclusions
 
 We examined specific interactions between the MA domain of HIV-1 Gag polyprotein and lipid bilayers using all-atom molecular dynamics simulations. Our conclusions provide insight on the effect of bilayer nature on MA-binding events as well as a mechanism for Myr insertion. MA binding is largely stabilized by electrostatic interactions between the HBR and charged lipid headgroups, specially PIP2 lipids. Binding is permanent and takes places early in the simulation with no need of Myr insertion as an ‘anchor.’ From the two bound conformation observed in our systems, only the open conformation is feasible if the rest of the Gag polyprotein were present; it is only from this conformation that Myr insertion takes place.
 

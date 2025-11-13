@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00xkeyj56 School of Anthropology and Conservation, University of Kent Canterbury United Kingdom
+1. School of Anthropology and Conservation, University of Kent Canterbury United Kingdom ([ROR:00xkeyj56](https://ror.org/00xkeyj56))
 
 † Corresponding author
 

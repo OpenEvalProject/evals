@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0156rhd17 Department of Pediatrics, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-2. https://ror.org/0156rhd17 Basic Medical Research Center, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-3. https://ror.org/0156rhd17 Department of General Surgery, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-4. https://ror.org/004qehs09 Department of Genaral Surgery, the Quzhou Affiliated Hospital of Wenzhou Medical University, Quzhou People’s Hospital Quzhou China
-5. https://ror.org/0156rhd17 Key Laboratory of Children Genitourinary Diseases of Wenzhou, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-6. https://ror.org/0156rhd17 Key Laboratory of Structural Malformations in Children of Zhejiang Province, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
+1. Department of Pediatrics, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:0156rhd17](https://ror.org/0156rhd17))
+2. Basic Medical Research Center, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:0156rhd17](https://ror.org/0156rhd17))
+3. Department of General Surgery, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:0156rhd17](https://ror.org/0156rhd17))
+4. Department of Genaral Surgery, the Quzhou Affiliated Hospital of Wenzhou Medical University, Quzhou People’s Hospital Quzhou China ([ROR:004qehs09](https://ror.org/004qehs09))
+5. Key Laboratory of Children Genitourinary Diseases of Wenzhou, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:0156rhd17](https://ror.org/0156rhd17))
+6. Key Laboratory of Structural Malformations in Children of Zhejiang Province, the Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:0156rhd17](https://ror.org/0156rhd17))
 
 † Corresponding author
 
@@ -39,69 +39,93 @@ So far, no reports have been published to ascertain whether EUG confers a protec
 
 ## Results
 
-## EUG can relieve the symptoms associated with T1DM and reduce the blood glucose level in T1DM mice
+### EUG can relieve the symptoms associated with T1DM and reduce the blood glucose level in T1DM mice
 
 The experimental design timeline for in vivo experiments was depicted in Figure 1A. To assess the effects of EUG on T1DM mice, we recorded the fasting body weight (Figure 1B), fasting blood glucose levels (Figure 1C), water intake in 24 hr (Figure 1D), food intake in 24 hr (Figure 1E), and area of urine-soaked pads in T1DM mice (Figure 1—figure supplement 1A). These results showed that EUG effectively alleviated the multiple symptoms associated with T1DM, including polydipsia, hyperphagia, polyuria, and weight loss, while 20 mg/kg EUG exhibited the better improvement. At the termination of the experiment, the mice in each group showed distinct growth states (Figure 1—figure supplement 1B). The results demonstrated that the mice in T1DM group were smaller than the mice in Control group, and EUG treatment could improve this phenomenon. Given that T1DM can elevate the levels of urinary glucose and urine ketone, we conducted biochemical analysis for urine ketone and urine glucose (Figure 1—figure supplement 1C) in each group of mice. The results (Figure 1F and G) showed that administration of EUG exhibited a mitigating effect on the elevation of urine ketone and urinary glucose levels induced by T1DM.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig1-v1.jpg)
+
+**Figure 1.:** (A) The schematic diagram depicts the progress of animal experiments in each group of mice. Different colors indicate different treatments for mice. (B) The fasting weight levels of mice were measured weekly in each group (n=30 mice). (C) The fasting blood glucose levels of mice were measured weekly in each group (n=30 mice). (D) The water intake/cage in each group of mice (n=6 cages, 5 mice/cage). (E) The food intake/cage in each group of mice (n=6 cages, 5 mice/cage). (F) Urine ketones in each group were detected by enzyme-linked immunosorbent assay (ELISA) (n=30 mice). (G) The urine glucose levels of mice were measured by biochemical test in each group of mice (n=30 mice). (H) The curve graph of oral glucose tolerance test (OGTT) from 0 min to 120 min at week 1, week 2, week 3, week 5, and week 10 (n=30 mice). (I) The quantitative results of OGTT at week 1, week 2, week 3, week 5, and week 10 (n=30 mice). Mean ± SEM. All experiments were repeated at least three times independently. Compare with the Control group *p<0.05, compare with the Control group **p<0.01 compare with the Control group ***p<0.001, compare with the T1DM group #p<0.05, compare with the T1DM group ##p<0.01, compare with the T1DM group ##p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The changes of urine wetting area of bedding material of mice in each group at different time points were recorded. (B) External appearance and body transformation in each group of mice (n=5 independently repeated experiments). Scale bar 2 cm. (C) The qualitative determination of urine glucose in each group of mice (n=5 independently repeated experiments). The shade of orange represents the concentration of glucose in the urine. (D) The periodic acid-Schiff (PAS) staining images of glomerulus paraffin sections in each group of mice. Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA. Scale bars 50 µm, 20 µm.
+
 It is widely acknowledged that oral glucose tolerance test (OGTT) can be used to detect T1DM and predict prognosis (Helminen et al., 2015). In this study, mice in each group were performed OGTT at week 1 (prior to T1DM induction), week 2 (2 days after T1DM induction), week 3 (1 week after T1DM induction), week 5 (3 weeks after T1DM induction), and week 10 (at the end of the experiment). The findings demonstrated that treatment with EUG resulted in a reduction in blood glucose levels and improvement in islet function in T1DM mice (Figure 1H and I). The chronic and progressive nature of diabetes necessitates vigilance, as prolonged hyperglycemia can exert deleterious effects on vital organs such as the heart, kidneys, and liver (Papadopoulou-Marketou et al., 2018; Wang et al., 2022a; Khoury et al., 2018). Therefore, periodic acid-schiff (PAS) staining was performed on the kidneys (Figure 1—figure supplement 1D). The results showed that T1DM indeed induced glycogen accumulation within the glomerulus, while EUG intervention showed reduction in such glycogen accumulation, thereby enhancing the prognosis of T1DM. In brief, the administration of EUG could relieve the symptoms and reduce the blood glucose level in T1DM mice.
 
-## EUG can improve the damage degree of islets in T1DM mice
+### EUG can improve the damage degree of islets in T1DM mice
 
 Insulin is produced by the β cells of pancreatic islets. Western blot (Figure 2A) and RT-qPCR were evaluated and used to assess insulin expression levels in each group of mice. The quantitative results from both western blot (Figure 2B) and RT-qPCR (Figure 2C) showed that there was a decrease in Ins1 expression levels in T1DM mice, whereas EUG intervention increased the expression of insulin. In addition, the serum insulin levels of mice in each group were quantified using enzyme-linked immunosorbent assay (ELISA) at different time points. The results showed a reduction in serum insulin levels after T1DM modeling, which were subsequently recovered by EUG intervention. Notably, the administration of 20 mg/kg EUG exhibited the better improvement effect (Figure 2D). The islets’ structural integrity in each group of mice was performed through hematoxylin and eosin (H&E) staining. The results revealed that, in comparison to the Control group, the islet structure of T1DM mice exhibited severe damage with indistinct boundaries and evident vacuolization in the islet cells. EUG intervention demonstrated a potential for ameliorating the extent of islet damage (Figure 2E). Furthermore, insulin immunohistochemical staining was performed to further evaluate the expression of insulin in each group of mice (Figure 2F). The quantitative results showed a enhancement in insulin expression among T1DM mice following EUG treatment, and 20 mg/kg EUG displayed a better improvement (Figure 2G). These findings indicated that intervention with EUG could effectively ameliorate islet damage in T1DM mice.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig2-v1.jpg)
 
-**Figure 2.:** (A) The detection of insulin expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Ins1 in different groups (n=5 independently repeated experiments). (D) Enzyme-linked immunosorbent assay (ELISA) analysis of serum fasting insulin levels at different time points (n=5 independently repeated experiments). (E) The representative hematoxylin and eosin (H&E) staining images of pancreatic paraffin sections in each group of mice. Scale bars 50 µm, 20 µm. (F) The representative immumohistochemical staining of insulin in pancreas islet in each group of mice. Scale bars 50 µm, 20 µm. (G) The quantitative analysis of immumohistochemical staining (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.
+**Figure 2.:** (A) The detection of insulin expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Ins1 in different groups (n=5 independently repeated experiments). (D) Enzyme-linked immunosorbent assay (ELISA) analysis of serum fasting insulin levels at different time points (n=5 independently repeated experiments). (E) The representative hematoxylin and eosin (H&E) staining images of pancreatic paraffin sections in each group of mice. Scale bars 50 µm, 20 µm. (F) The representative immumohistochemical staining of insulin in pancreas islet in each group of mice. Scale bars 50 µm, 20 µm. (G) The quantitative analysis of immumohistochemical staining (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
-## EUG intervention alleviates T1DM by improving oxidative stress pathways
+### EUG intervention alleviates T1DM by improving oxidative stress pathways
 
 To investigate the potential molecular mechanisms underlying the regulation in T1DM, we performed RNA-seq analysis on pancreatic tissues obtained from the Control group, T1DM group, and EUG intervention group. The RNA-seq data revealed that among differentially expressed genes (DEGs), 28 genes were up-regulated, and 17 genes were down-regulated in the EUG group compared to the T1DM group (Figure 3—figure supplement 1A). Furthermore, a heat map was generated to visualize the relative abundance of these DEGs affected by T1DM (Figure 3—figure supplement 1B). The findings were consistent with previous results, which showed the intervention of EUG could enhance the functionality of islet β cells, augment insulin secretion, and mitigate hyperglycemia in T1DM mice. Gene set enrichment analysis (GSEA) based on BP (biological process) gene revealed that compared to the T1DM group, the EUG intervention group exhibited significant enrichment in pathways, including ‘response to glucose’, ‘response to carbohydrate’, ‘cellular glucose homeostasis’, and ‘positive regulation of insulin secretion’ with NES>0 (Figure 3—figure supplement 1C–F). These findings confirmed our previous experimental results and suggested a beneficial effect of EUG intervention on T1DM. To explore the therapeutic mechanism of EUG further, GSEA based on MF (molecular function) gene set was performed. The results demonstrated that compared to the T1DM group, the EUG group showed significant enrichment and negative regulation in pathways related to ‘hydrogen peroxide-mediated programmed cell death’ and ‘cell response to hydrogen peroxide’ with NES<0 (Figure 3—figure supplement 1G and H). Therefore, we concluded that EUG may alleviate T1DM by improving oxidative stress pathway.
 
-## EUG protects pancreatic β cells in T1DM mice by activating the NRF2 signaling pathway
+### EUG protects pancreatic β cells in T1DM mice by activating the NRF2 signaling pathway
 
 Oxidative stress as a prominent pathogenic mechanism in T1DM is widely recognized (Piganelli et al., 2020). In addition, the EUG compound has been reported to possess potent anti-oxidant properties and effectively activate the nuclear factor E2-related factor 2 (NRF2) (Ma et al., 2021). Western blot was used to detect the expression levels of total NRF2 protein (T-NRF2) and nuclear NRF2 protein (N-NRF2) in each group of mice (Figure 3A). The findings showed that, in comparison to the Control group, intervention with EUG could activate NRF2, exerting anti-oxidative effects (Figure 3B). The result of RT-qPCR was consistent with those of western blot (Figure 3C). Furthermore, western blot was conducted to evaluate the expression of key proteins involved in the NRF2 signaling pathway in each group of mice, including Kelch-like ECH-associated protein 1 (KEAP1), heme oxygenase-1 (HMOX1), and NAD(P)H quinone dehydrogenase 1(NQO1) (Figure 3D). The results showed that the intervention of EUG led to an up-regulation in protein expression levels of HMOX1 and NQO1, while a down-regulation in KEAP1 expression was observed due to the activation of the NRF2 signaling pathway (Figure 3E). The results of Keap1, Nqo1, and Hmox1 gene expression were consistent with aforementioned protein expression (Figure 3F). Finally, biochemical assays were conducted to measure the activities of serum oxidative stress-related markers such as malondialdehyde (MDA), superoxide dismutase (SOD), catalase (CAT), and glutathione peroxidase (GSH-Px) in each group of mice. The oxidative stress-related index (MDA) was found to be elevated in the T1DM group, while the expression of anti-oxidant stress-related indexes (SOD, CAT, and GSH-Px) were increased in the EUG intervention group (Figure 3G). These data suggested that EUG has the potential to alleviate oxidative stress-induced damage to pancreatic β cells in TIDM mice through activating the NRF2 signaling pathway.
 
-## EUG can reduce the apoptosis of pancreatic β cells in T1DM mice
+![Figure 3.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig3-v1.jpg)
+
+**Figure 3.:** (A) The detection of T-NRF2, N-NRF2 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Nrf2 in different groups (n=5 independently repeated experiments). (D) The detection of KEAP1, HMOX1, and NQO1 expression in different groups using western blot. (E) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (F) The gene levels of Keap1, Nqo1, and Hmox1 in different groups (n=5 independently repeated experiments). (G) The levels of serum biochemical indexes (malondialdehyde [MDA], superoxide dismutase [SOD], catalase [CAT], and glutathione peroxidase [GSH-Px]) in each group of mice (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The volcanic map shows the distribution of differential factors. (B) Differential expression cluster heat map, with red indicating up-regulated gene expression and blue indicating down-regulated gene expression. (C–H) Gene set enrichment analysis (GSEA) enrichment curve of C: ‘response to glucose’ pathway; D: response to carbohydrate pathway; E: ‘cellular glucose homeostasis’ pathway; F: ‘positive regulation of insulin secretion’ pathway; G: ‘hydrogen peroxide-mediated programmed cell death’ pathway; H: ‘cellular response to hydrogen peroxide’ pathway. The curve represents the cumulative enrichment score (ES), the vertical axis represents the enrichment score, each bar code on the horizontal axis represents a gene, and the color change represents the contribution of that gene to the enrichment score.
+
+### EUG can reduce the apoptosis of pancreatic β cells in T1DM mice
 
 DNA is essential for cell survival, and γH2AX serves as a dependable biomarker for detecting DNA damage (Kinner et al., 2008). Western blot was performed to assess the expression of γH2AX in each group of mice (Figure 4A). The result showed that the pancreatic β cells of T1DM mice exhibited DNA damage, and intervention with EUG was found to reduce the extent of DNA damages (Figure 4B). γH2AX immunohistochemical staining was also performed to assess γH2AX expression in each group of mice (Figure 4C). The quantitative finding was consistent with the western blot (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig4-v1.jpg)
 
-**Figure 4.:** (A) The detection of γH2AX expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The representative immumohistochemical staining of γH2AX in pancreas islet in each group of mice. Black arrows were employed to highlight the presence of brown-stained islet β cells. Scale bars 100 µm, 25 µm. (D) The quantitative analysis of immumohistochemical staining (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4.
+**Figure 4.:** (A) The detection of γH2AX expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The representative immumohistochemical staining of γH2AX in pancreas islet in each group of mice. Black arrows were employed to highlight the presence of brown-stained islet β cells. Scale bars 100 µm, 25 µm. (D) The quantitative analysis of immumohistochemical staining (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
 It is well known that DNA damage in cells is closely associated with apoptosis. The potential anti-apoptotic effects of EUG on mouse pancreatic β cells were investigated by conducting a western blot to assess the expression levels of BCL2, BAX, and Cleaved Caspase-3 in the pancreatic β cells of mice in each experimental group (Figure 5A). The results demonstrated that there was a increase in the number of apoptotic pancreatic β cells in T1DM mice compared to Control group. Moreover, EUG intervention effectively suppressed the apoptosis of pancreatic β cells in T1DM mice as well as 20 mg/kg EUG had the better effects (Figure 5B). Furthermore, the expression levels of Bcl2 and Bax genes in pancreatic β cells of mice in each group were detected by RT-qPCR. The results obtained from western blot were consistent with these findings (Figure 5C). Finally, TUNEL staining was further performed to evaluate the apoptosis of pancreatic β cells in each group of mice (Figure 5D). The quantitative result showed an elevated count of apoptotic pancreatic β cells in T1DM mice, which could be mitigated by EUG intervention (Figure 5E). These findings suggested that EUG exhibited a potential to attenuate apoptosis of pancreatic β cells in T1DM mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig5-v1.jpg)
 
-**Figure 5.:** (A) The detection of BCL2, BAX, Cleaved Caspase-3 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Bax, Bcl2, and Bcl2/Bax in different groups (n=5 independently repeated experiments). (D) The immumohistochemical staining of TUNEL in pancreas islet in each group of mice. Scale bars 50 µm, 20 µm. (E) The quantification results of TUNEL staining in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 5—source data 1.Figure 5.Figure 5—source data 2.Figure 5.
+**Figure 5.:** (A) The detection of BCL2, BAX, Cleaved Caspase-3 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Bax, Bcl2, and Bcl2/Bax in different groups (n=5 independently repeated experiments). (D) The immumohistochemical staining of TUNEL in pancreas islet in each group of mice. Scale bars 50 µm, 20 µm. (E) The quantification results of TUNEL staining in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
-## EUG can alleviate the impairment of STZ-induced MIN6 cells
+### EUG can alleviate the impairment of STZ-induced MIN6 cells
 
 To further explore the potential effects of EUG on T1DM, we established STZ-induced MIN6 cell model in vitro. The cytotoxicity of STZ on MIN6 cells was evaluated using the CCK-8 assay. The result showed a dose-dependent decrease in the viability of MIN6 cells after 24 hr of treatment with various concentrations of STZ (0–8 mM), and the optimal concentration for STZ treatment was 1 mM (Figure 6—figure supplement 1A). In addition, the cytotoxicity of EUG on MIN6 cells was also assessed using the CCK-8 assay. The result showed that the cell viability was not significantly affected by EUG concentration within the range of 0–600 μM (Figure 6—figure supplement 1B). After being treated with various concentrations of EUG (0–400 μM) for 2 hr, MIN6 cells were subjected to 1 mM STZ treatment. The result showed that pre-treatment with EUG could enhance the viability of MIN6 cells, and reached the optimum after 50 μM EUG treatment (Figure 6—figure supplement 1C). Optical microscopy observation revealed that compared to Control group, the number of cells in STZ group was significantly reduced and cell morphology was worse. The administration of EUG treatment could ameliorate the above phenomena, whereas the intervention of NRF2 inhibitor ML385 (10 μM) could aggravate the cell damage (Figure 6—figure supplement 1D).
 
 The experimental design timeline for in vitro experiments was illustrated in Figure 6A. Given the potential impact of pancreatic β cell damage on insulin secretion, we conducted an assessment of insulin protein and gene expression levels in different groups. The expression levels of insulin protein and gene in each group were assessed using western blot (Figure 6B) and RT-qPCR. The results (Figure 6C and D) showed that insulin levels in the STZ-induced group were lower than those in the Control group. However, after EUG treatment, STZ-induced insulin levels in MIN6 cells were elevated, which could be reversed by the intervention of the NRF2 inhibitor ML385. Furthermore, the cell culture supernatant of each group was further collected for detecting insulin levels using ELISA, and the obtained result was consistent with the aforementioned findings (Figure 6E). These findings suggested that EUG has the potential to enhance the insulin secretion of STZ-induced MIN6 cells.
 
-## EUG reduces STZ-induced MIN6 cell damage through activating the NRF2 signaling pathway
+![Figure 6.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig6-v1.jpg)
+
+**Figure 6.:** (A) The schematic diagram depicts the different interventions in cell experiments in MIN6 cells. (B) The detection of insulin expression in different groups using western blot. (C) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (D) The gene levels of Ins1 in different groups (n=5 independently repeated experiments). (E) Enzyme-linked immunosorbent assay (ELISA) analysis of serum insulin levels of MIN6 cell in different groups (n=5 independently repeated experiments). (F) The detection of T-NRF2, N-NRF2 expression in different groups using western blot. (G) The representative immunofluorescence staining images of NRF2 (green) in each group of MIN6 cells. Nuclei were stained with DAPI (blue). Scale bar 10 μm. (H) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (I) The gene levels of Nrf2 in different groups (n=5 independently repeated experiments). (J) The quantification of immunofluorescence staining in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The cell viability of MIN6 treated with different dose streptozotocin (STZ) for 24 hr using CCK-8 assay (n=5 independently repeated experiments). (B) The safe dose ranges of eugenol (EUG) to maintain cell viability were determined by CCK-8 assay (n=5 independently repeated experiments). (C) The dose-dependent effect of EUG on MIN6 cell viability after STZ-induced (n=5 independently repeated experiments). (D) The imaging results of MIN6 cells under an inverted microscope in bright field with different treatments. Scale bars 100 µm. Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
+
+### EUG reduces STZ-induced MIN6 cell damage through activating the NRF2 signaling pathway
 
 In order to further investigate the potential mechanism of EUG on T1DM, ML385, the typical NRF2 antagonist, was employed to assess the expression of proteins related to the NRF2 pathway through western blot (Figures 6F and 7A). The quantitative results showed that the protein levels of T-NRF2/β-actin and N-NRF2/lamin B in MIN6 cells treated with EUG were higher than those in the Control group (Figure 6H). Furthermore, treatment with EUG also resulted in an elevation of HMOX1 and NQO1 protein levels, while simultaneously reducing the level of KEAP1 (Figure 7B). However, the administration of ML385 could effectively reverse the effects of EUG on STZ-induced MIN6 cells. The quantitative results demonstrated that the ratio of T-NRF2/β-actin and N-NRF2/lamin B decreased after ML385 treatment. Moreover, RT-qPCR (Figures 6I and 7C) and immunofluorescence staining (Figures 6G and 7D) were conducted to evaluate the expressions of HMOX1 and NRF2 in MIN6 cells under different treatments, with the trends of results were consistent with those of obtained from western blot and RT-qPCR (Figures 6J and 7F).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig7-v1.jpg)
 
-**Figure 7.:** (A) The detection of KEAP1, HMOX1, and NQO1 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Keap1, Nqo1, and Hmox1 in different groups (n=5 independently repeated experiments). (D) The representative immunofluorescence staining images of HMOX1 (green) in each group of MIN6 cells. Nuclei were stained with DAPI (blue). Scale bar 10 μm. (E) The generation of mitochondrial ROS in each group was detected by MitoSOX (red) and DAPI (blue) staining. Scale bar 100 μm. (F) The quantification of immunofluorescence staining in different groups (n=5 independently repeated experiments). (G) The quantitative analysis of immunofluorescence staining in different groups (n=5 independently repeated experiments). (H) The cell ROS in each group was analyzed using flow cytometry after DCFH-DA staining. (I) The quantitative analysis of flow cytometry after DCFH-DA staining (n=3 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 7—source data 1.Figure 7.Figure 7—source data 2.Figure 7.
+**Figure 7.:** (A) The detection of KEAP1, HMOX1, and NQO1 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Keap1, Nqo1, and Hmox1 in different groups (n=5 independently repeated experiments). (D) The representative immunofluorescence staining images of HMOX1 (green) in each group of MIN6 cells. Nuclei were stained with DAPI (blue). Scale bar 10 μm. (E) The generation of mitochondrial ROS in each group was detected by MitoSOX (red) and DAPI (blue) staining. Scale bar 100 μm. (F) The quantification of immunofluorescence staining in different groups (n=5 independently repeated experiments). (G) The quantitative analysis of immunofluorescence staining in different groups (n=5 independently repeated experiments). (H) The cell ROS in each group was analyzed using flow cytometry after DCFH-DA staining. (I) The quantitative analysis of flow cytometry after DCFH-DA staining (n=3 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
 In order to demonstrate the ability of EUG to alleviate the STZ-induced MIN6 cells in vitro by activating the NRF2 signaling pathway, we utilized the NRF2 inhibitor ML385 to assess oxidative stress among different groups. MitoSOX staining (Figure 7E) showed that EUG reduced mitochondrial ROS levels in STZ-induced MIN6 cells, whereas ML385 was found to weaken this effect (Figure 7G). In addition, the flow cytometry was used to detect the cell ROS levels in different groups (Figure 7H). The quantitative result showed that STZ could increase the level of cell ROS, but EUG intervention could reduce the cell ROS level in STZ-induced MIN6 cells. Similarly, ML385 could reverse EUG effect on STZ-induced MIN6 (Figure 7I). These data suggested that EUG has the potential to ameliorate oxidative stress-induced damage in MIN6 cells caused by activating the NRF2 signaling pathway.
 
-## EUG inhibited STZ-induced apoptosis of islet β cell MIN6
+### EUG inhibited STZ-induced apoptosis of islet β cell MIN6
 
 To further explore the potential of EUG in attenuating STZ-induced damage to MIN6 cells in vitro through activating of the NRF2 signaling pathway, we used NRF2 inhibitor ML385 to evaluate the apoptosis levels in MIN6 cells under different treatments. Western blot result of γH2AX (Figure 8A) revealed that STZ treatment induced an increase in DNA damage in MIN6 cells, while intervention with EUG effectively reduced the extent of DNA damage in MIN6 cells, and ML385 intervention could reversed this phenomenon. The co-administration of EUG and ML385 exhibited a comparatively attenuated effect (Figure 8B). The result of γH2AX cell immunofluorescence staining (Figure 8C) was in accordance with the findings observed through western blot (Figure 8D). Occurrence of oxidative stress can induce cellular apoptosis (Liu et al., 2021). The expressions of apoptosis-related proteins, including BCL2, BAX, and Cleaved Caspase-3, were examined using western blot (Figure 9A). The results demonstrated a induction of apoptosis in STZ-induced MIN6 cells, while EUG intervention played an anti-apoptotic role and ML385 could reverse this phenomenon (Figure 9B). The RT-qPCR results of Bcl2 and Bax were consistent with above findings (Figure 9C). Additionally, TUNEL staining (Figure 9D) and flow cytometry of apoptosis (Figure 9F) were performed, and the trends of results were also consistent with the aforementioned results (Figure 9E and G).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig8-v1.jpg)
 
-**Figure 8.:** (A) The detection of γH2AX expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The representative immunofluorescence staining images of γH2AX (red) in each group of MIN6 cells. Nuclei were stained with DAPI (blue). Scale bar 50 μm. (D) The quantitative analysis of γH2AX positive cells in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 8—source data 1.Figure 8.Figure 8—source data 2.Figure 8.
+**Figure 8.:** (A) The detection of γH2AX expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The representative immunofluorescence staining images of γH2AX (red) in each group of MIN6 cells. Nuclei were stained with DAPI (blue). Scale bar 50 μm. (D) The quantitative analysis of γH2AX positive cells in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/96600/elife-96600-fig9-v1.jpg)
 
-**Figure 9.:** (A) The detection of BCL2, BAX, Cleaved Caspase-3 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Bcl2, Bax, and Bcl2/Bax in different groups (n=5 independently repeated experiments). (D) The detection of MIN6 cells apoptosis in each group using TUNEL staining. The cells with red fluorescence represent apoptosis. Scale bar 100 μm. (E) The quantitative analysis of TUNEL positive cells in different groups (n=5 independently repeated experiments). (F) The apoptosis in each group was analyzed using flow cytometry after Annexin V FITC and PI co-staining. (G) The quantitative analysis of flow cytometry after Annexin V FITC and PI co-staining in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.Figure 9—source data 1.Figure 9.Figure 9—source data 2.Figure 9.
+**Figure 9.:** (A) The detection of BCL2, BAX, Cleaved Caspase-3 expression in different groups using western blot. (B) The quantification of western blot gel bands in different groups (n=3 independently repeated experiments). (C) The gene levels of Bcl2, Bax, and Bcl2/Bax in different groups (n=5 independently repeated experiments). (D) The detection of MIN6 cells apoptosis in each group using TUNEL staining. The cells with red fluorescence represent apoptosis. Scale bar 100 μm. (E) The quantitative analysis of TUNEL positive cells in different groups (n=5 independently repeated experiments). (F) The apoptosis in each group was analyzed using flow cytometry after Annexin V FITC and PI co-staining. (G) The quantitative analysis of flow cytometry after Annexin V FITC and PI co-staining in different groups (n=5 independently repeated experiments). Mean ± SEM. *p<0.05, **p<0.01, ***p<0.001 indicate significant differences, and ns>0.05 means no significance difference. One-way ANOVA.
 
 Based on the above findings, we hypothesized that EUG possesses the capability to ameliorate functional impairment of islet β cells in T1DM by reducing oxidative stress and apoptosis through activating the NRF2 signaling pathway. The potential mechanism of EUG in T1DM was illustrated in Figure 10.
 
@@ -125,11 +149,357 @@ In conclusion, our studies have demonstrated that EUG treatment could alleviate 
 
 ## Materials and methods
 
-## Animal
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus, mouse)</td>
+      <td>Min6</td>
+      <td>GuangZhou Jennio Biotech Co., Ltd</td>
+      <td>Cat# JNO-M0060RRID:CVCL_0431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Insulin (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab181547, RRID:AB_2716761</td>
+      <td>IF/IHC (1:200),WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-Histone H2A.X (Ser139) (Rabbit polyclonal)</td>
+      <td>Abmart</td>
+      <td>Cat# T56572, RRID:AB_2936396</td>
+      <td>IF/IHC (1:100),WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAX (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7480, RRID:AB_626729</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cleaved Caspase-3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9664, RRID:AB_2070042</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NRF2 (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 16396-1-AP; RRID:AB_2782956</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KEAP1 (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 60027-1-Ig, RRID:AB_2132623</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HO-1/HMOX1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 10701-1-AP, RRID:AB_2118685</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NQO1 (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 67240-1-Ig, RRID:AB_2882519</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 20536-1-AP, RRID:AB_10700003</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lamin B1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 12987-1-AP, RRID:AB_2136290</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Bcl-2 (Mouse monoclonal)</td>
+      <td>Affinity Biosciences</td>
+      <td>Cat# BF9103, RRID:AB_2837570</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit polyclonal)</td>
+      <td>Affinity Biosciences</td>
+      <td>Cat# AF7021, RRID:AB_2839421</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ins1_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAACCCACCCAGGCTTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ins1_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AACGCCAAGGTCTGAAGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bax_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACACTGGACTTCCTCCGTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bax_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAGGAGGCCTTCCCAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcl2_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGAACTGGGGGAGGATTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcl2_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGAGACAGCCAGGAGAAATCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nrf2_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGCCATGACTGATTTAAGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nrf2_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGCTGCTTGTTTTCGGTATTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HMOX1_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCCTTGTACCATATCTACACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HMOX1_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGACGCTTTACATAGTGCTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Keap1_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACTGGGTCAAATACGACTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Keap1_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAATATCTGCACCAGGTAGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NQO1_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGACATCATTCAACTACGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NQO1_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGATGACTCGGAAGGATACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTACCTCATGAAGATCCTGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACAGCTTCTCTTTGATGTCAC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse insulin (INS) ELISAKit</td>
+      <td>ShangHai Boyun Biotech Co., Ltd</td>
+      <td>Cat# BP-E20353</td>
+      <td>Mouse insulin (INS)ELISAKit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse ketonuria levels ELISAKit</td>
+      <td>MEIMIAN</td>
+      <td>Cat# MM-0967M1</td>
+      <td>Mouse ketonuria levelsELISAKit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Urine Glucose Assay Kit</td>
+      <td>Nanjing JianchengBioengineering Institute</td>
+      <td>Cat# C041-1-1</td>
+      <td>Urine Glucose Assay Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nuclear protein extraction kit</td>
+      <td>Beyotime Biotechnology</td>
+      <td>Cat# P0027</td>
+      <td>Nuclear protein extraction kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell DeathDetection Kit, POD</td>
+      <td>Roche Life Science</td>
+      <td>Cat# 11684817910</td>
+      <td>In Situ Cell DeathDetection Kit, POD</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit,Fluorescein</td>
+      <td>Roche Life Science</td>
+      <td>Cat# 11684795910</td>
+      <td>In Situ Cell Death Detection Kit,Fluorescein</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FITC Annexin V Apoptosis Detection Kit I</td>
+      <td>Becton Dickinson</td>
+      <td>Cat# 556547</td>
+      <td>Annexin V FITC/PI apoptosis detection kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptozotocin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S0130-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Eugenol</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-N0337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase V solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C9263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat# 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Gibco</td>
+      <td>Cat# A3160801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEM NON-ESSENTIAL AMINO ACIDS SOLUTION</td>
+      <td>Gibco</td>
+      <td>Cat# 11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ML385</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-100523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoSOX Red mitochondrial superoxide indicator</td>
+      <td>Yeasen</td>
+      <td>Cat# 50102ES02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ,https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software,https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo Software,https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal
 
 The male C57BL/6 mice (n=150) weighing 18–20 g and aged 5–6 weeks were procured from Zhejiang Weitong Lihua Laboratory Animal Technology Co., LTD. The mice were housed in a temperature-controlled pathogen-free facility (SPF) environment with a light/dark cycle for 12 hr, maintained at a temperature of 23°C ± 2°C, relative humidity between 45% and 55%, and provided ad libitum access to food and water. All experimental operations were approved by the Ethics Committee of Laboratory Animals of Wenzhou Medical University, and were strictly adhered to the Guide for the Care and Use of Laboratory Animals (wydw2022-0208).
 
-## Animal experiment
+### Animal experiment
 
 After 1 week of adaptive feeding, T1DM mouse model was established in C57BL/6 mice using STZ (Sigma-Aldrich, CA, USA). Briefly, each morning after 5 hr fasting period in each group of mice, STZ was dissolved in a 0.1 M sodium citrate buffer (Solarbio, China, Beijing), and then intraperitoneally injected into mice at a dose of 50 mg/kg for 5 consecutive days (Furman, 2021). The STZ solution was prepared under dark conditions and utilized promptly due to its inherent instability and photosensitivity. The mice were administered a 10% glucose solution instead of water during T1DM modeling to prevent mortality resulting from transient hypoglycemia. Fasting blood glucose levels were measured 3 days after modeling, and mice with fasting glucose levels more than 250 mg/dL were included in the study.
 
@@ -137,80 +507,80 @@ The intervention treatment of T1DM mice is conducted through two methods: oral a
 
 In terms of dosage setting for EUG (purity >98%, MedChemExpress, NJ, USA), previous studies have demonstrated that oral gavage of EUG (20 mg/kg/day) is effective in improving hyperglycemic symptoms in mice for 15 weeks (Jeong et al., 2014). Additionally, studies have shown that oral gavage of EUG (5, 10 mg/kg/day) can cure visceral leishmaniasis in mice (Charan Raja et al., 2021). Based on these reports, the T1DM mice in our study were divided into five groups: Control (n=30), T1DM (n=30), T1DM+EUG (5 mg/kg/day) (n=30), T1DM+EUG (10 mg/kg/day) (n=30), and T1DM+EUG (20 mg/kg/day) (n=30). Each group received daily oral gavage for 8 weeks, while the Control group received an equivalent volume of normal saline. Fasting blood glucose levels and fasting weight were measured and recorded on a weekly basis. Finally, serum samples were collected through orbital blood collection technique, while pancreatic tissue was isolated for subsequent experiments.
 
-## Fasting blood glucose, OGTT
+### Fasting blood glucose, OGTT
 
 The OGTT is widely regarded as the criterion for diagnosing T1DM, which is crucial methods for assessing pancreatic islet function (Helminen et al., 2015). Following a 14 hr fasting period, the fasting blood glucose levels were measured in each group mice, and tail vein blood samples were collected and analyzed using a glucometer. OGTT was performed by administering a 20% glucose solution intragastrically after the fasting period, and blood glucose levels were measured at 0 min, 30 min, 60 min, 90 min, and 120 min following the initial gavage administration.
 
-## Food, water, urine volume, and urine glucose measurements
+### Food, water, urine volume, and urine glucose measurements
 
 The changes in food and water intake for each group were recorded throughout the experiment by regulating the daily initial food intake (100 g) and water quantity (250 mL). After successful modeling of T1DM mice, the experimental animals were grouped based on the section Animal experiment as follows: Control, T1DM, T1DM+EUG (5 mg/kg/day), T1DM+EUG (10 mg/kg/day), and T1DM+EUG (20 mg/kg/day). To ensure consistency among groups, each group consisted of five mice and had equal amounts of diet (100 g), drinking water (250 mL), and environmental conditions for feeding. The urine volume of each cage was quantified by measuring the area of the bedding material saturated with urine. The urine samples from each group of mice were collected for the detection of urine glucose levels using the Urine Glucose Assay Kit (Jiancheng, Nanjing, Jiangsu, China).
 
-## Islet isolation
+### Islet isolation
 
 The method described by Xu et al., 2010, was employed for the isolation of islets. First, the common bile duct was ligated, and a retrograde injection of collagenase V solution (0.8 mg/mL; Sigma-Aldrich, CA, USA) was performed through the common bile duct until the pancreas was completely filled and foliated. The pancreas was then digested in 5 mL of collagenase V solution at a concentration of the same for 15 min at 37°C until the majority of pancreatic tissues were digested into chylous and silt. To stop the process of digestion, 10 mL of 4°C Hank’s solution was added and then centrifuged after gentle shaking. The centrifugation was immediately stopped upon reaching a speed of 2000 rpm. The supernatant was discarded and the sediment was washed twice using Hank’s balanced salt solution. Islet tissues were placed in 5 mL of 4°C Ficoll density gradient medium (1.119). After mixing, a sequence of slow drips consisting of 2 mL 4°C Ficoll density gradient medium (1.077) and 2 mL Hank’s solution was performed before centrifugation at a speed of 2000 rpm for a duration of 5 min. The sediment was washed again with Hank’s solution, and subsequently was picked under a dissecting microscope (Leica, Germany). The isolated islets were promptly utilized for subsequent experimental procedures.
 
-## Insulin and ketonuria ELISA
+### Insulin and ketonuria ELISA
 
 After collecting the culture supernatant of MIN6 cells and mouse serum from each group, insulin levels in the samples were evaluated using a commercially available ELISA assay kit (Boyun, Shanghai, China) in accordance with the manufacturer’s protocol. The urine samples from each group were collected for the quantification of ketonuria levels using a commercially available ELISA kit (Boyun, Shanghai, China).
 
-## PAS staining
+### PAS staining
 
 After dewaxing the paraffin sections, a PAS staining kit (Servicebio, Wuhan, China) was utilized to detect glomerular glycogen accumulation. These tissue sections were immersed in a 0.5% periodate solution for 15 min, and subsequently stained with Schiff reagent for 30 min in darkness. Finally, the nuclei of these tissue sections were stained using hematoxylin reagent. The images of paraffin sections were captured using an optical microscope (Nikon, Japan).
 
-## H&E staining
+### H&E staining
 
 The fresh pancreatic tissues from mice in each group were carefully separated and promptly fixed with 4% paraformaldehyde (PFA; Solarbio, Beijing, China). After dehydration for 24 hr, they were embedded in paraffin and sliced into 5 μm. Subsequently, the paraffin sections of pancreas were stained with H&E staining kit (Servicebio, Wuhan, China), and the pathological changes of pancreatic islets were observed under an optical microscope.
 
-## Immunohistochemistry staining
+### Immunohistochemistry staining
 
 After dewaxing, the peroxidase blockade agent (Zsbio, Beijing, China) was applied to the tissue surface at room temperature (RT) for 20 min. Following a 15 min wash with PBS, sections were subjected to antigen repair by boiling in a pressure cooker containing 10 mM citrate acid buffer for 2 min (pH 6.0, Solarbio, Beijing, China). Subsequently, antigen blocking was performed using 10% goat serum (Beyotime, Shanghai, China), and then the slides were incubated with primary antibodies (listed in Supplementary file 1) overnight at 4°C. On the second day, these sections were incubated with goat anti-rabbit secondary antibody (1:2000, Affinity Biosciences) at 37°C for 2 hr, and then stained with a solution of 3,3'-diaminobenzidine (DAB) (Zsbio, Beijing, China) and hematoxylin. The images of pancreatic paraffin sections were captured using an optical microscope.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Total RNAs were isolated using the TRIzol Reagent (Invitrogen Life Technologies), after which the concentration, quality, and integrity were determined using a NanoDrop spectrophotometer (Thermo Fisher Scientific, MA, USA). Products were purified (AMPure XP system) and quantified using the Agilent high-sensitivity DNA assay on a Bioanalyzer 2100 system (Agilent). The sequencing library was then sequenced on NovaSeq 6000 platform (Illumina) by Shanghai Personal Biotechnology Co. Ltd.
 
 The DESeq package was used to analyze the differences in gene expression profiles, and the gseGO function in the clusterProfiler package was used to conduct GSEA according to the Gene Ontology (GO) database. The analysis was performed in the R language environment (version 4.2.0). The gene expression data of the T1DM group and EUG intervention group were thoroughly pre-processed before analysis, including standardization, missing value processing, and other necessary quality control steps. The pre-processed data were used to assess the enrichment of gene sets associated with GO in different biological states. The GO database used covers three main domains: BP, MF, and cell components. The significance level was set as p<0.05 and NES score >1.4. The significance was corrected by multiple tests, and the p-value was adjusted by false discovery rate method. The gseGO function was used to evaluate the enrichment of a gene set in a given gene expression data, including calculating the enrichment score (ES) and standardized enrichment score (NES) of the gene set.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 The mouse pancreatic β cell line MIN6 was obtained from the American Type Culture Collection (ATCC, Manassas, VA, USA), and was cultured in Dulbecco’s Modified Eagle Medium (DMEM; Gibco, United States) supplemented with 1% penicillin/streptomycin (Gibco, CA, USA), 10% fetal bovine serum (Gibco, CA, USA), and 1% MEM NON-ESSENTIAL AMINO ACIDS SOLUTION (100×; NEAA, Gibco, USA) at a temperature of 37°C in a CO2 incubator with a concentration of 5%. The cells were passaged every 3 days.
 
 The in vitro cell model of T1DM was induced by STZ. MIN6 cells were treated with various concentrations of STZ (0.5 mM, 1 mM, 2 mM, 4 mM, and 8 mM) for a duration of 24 hr to determine the optimal working concentration. Subsequently, STZ-induced MIN6 cells were exposed to different concentrations of EUG (50 μM, 100 μM, 200 μM, 400 μM, and 600 μM) for a duration of 2 hr to identify the optimal working concentration. Based on the optimal working concentrations of STZ and EUG respectively, we set different groups, including Control, STZ, STZ+EUG, STZ+ML385 (10 μM, MedChemExpress, NJ, USA), STZ+ML385+EUG. Pre-treatment with either EUG or ML385 occurred 2 hr prior to stimulation with STZ, simultaneous administration of ML385 and EUG mixture took place at the same time. Finally, the cells or cell supernatants from each respective group were collected for subsequent experiments.
 
-## Cell viability assay
+### Cell viability assay
 
 The cell viability of MIN6 cells was assessed using the cell counting kit-8 (CCK-8, Yeasen, Shanghai, China) under different treatment conditions. MIN6 cells were seeded into 96-well plates at a density of 5×103/well. Once the cells reached 80–90% confluence, they were subjected to treatment with different concentrations of drugs. The different doses of EUG were added into the 96-well plates 2 hr prior to STZ treatment. Subsequent to drug administration, each well was supplemented with 100 µL DMEM containing 10 µL CCK-8 solution. After incubation at 37°C for 30 min, the absorbance at 450 nm in each well was quantified using a microplate reader (Thermo Fisher Scientific, MA, USA).
 
-## Western blot
+### Western blot
 
 The total proteins from mouse islets or MIN6 cells were obtained using RIPA lysis buffer (Solarbio, Beijing, China) supplemented with a phosphatase inhibitor (Solarbio, Beijing, China) and a serine protease inhibitor (Solarbio, Beijing, China). Nuclear protein extraction was performed using the nuclear protein extraction kit (Beyotime, Shanghai, China), following the manufacturer’s instructions. Protein concentration was determined using the BCA protein assay kit (Beyotime, Shanghai, China). The samples containing 20–80 µg of proteins were separated on 7.5% or 12.5% sodium dodecyl sulfate-polyacrylamide gels, and subsequently transferred onto the polyvinylidene fluoride membranes (Thermo Fisher Scientific, MA USA). These membranes were then incubated with 8% skim milk (Beyotime, Shanghai, China) at RT for 3 hr. After being washed with Tris-buffered saline containing Tween-20 (TBST), these membranes were incubated overnight at 4°C with the primary antibodies listed in Supplementary file 1. The membranes were then incubated with goat anti-mouse or goat anti-rabbit IgG HRP secondary antibodies (Affinity, Melbourne, Australia) diluted at a ratio of 1:5000 and kept at RT for 3 hr. Finally, the protein bands were detected using the ECL chromogenic kit (EpiZyme, Shanghai, China), and visualized using the ChemiDic XRS imaging system (Bio-Rad, CA USA). The intensity of protein bands was analyzed using ImageJ software (National Institutes of Health, MD, USA), which was normalized to β-actin or lamin B band.
 
-## Real-time quantitative polymerase chain reaction
+### Real-time quantitative polymerase chain reaction
 
 Total RNAs were extracted from mouse islets or MIN6 cells using TRIzol reagent (Invitrogen, CA, USA). After measuring of RNA concentration by reading the OD value at 260 nm, cDNAs were synthesized from the RNAs using cDNA Synthesis SuperMix (TaKaRa, Kusatsu, Japan). RT-qPCR was then performed using SYBR Green SuperMix (TOYOBO, Osaka, Japan). Subsequently, cycle threshold (Ct) values were collected and normalized to β-actin levels. The mRNA levels were calculated using the 2(-ΔΔCt) method. The primer sequences are provided in Supplementary file 2.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 MIN6 cells in different groups were fixed with 4% PFA for 20 min. Then, they were incubated with 0.3% Triton X-100 (Sigma-Aldrich, CA, USA) for 1 hr, followed by incubation with 10% goat serum. After rinsing with PBS three times, the cells were incubated overnight at 4°C with the primary antibody (listed in Supplementary file 1). Then, they were incubated with FITC-conjugated goat anti-rabbit IgG secondary antibody (1:100; EarthOx, LA, USA) for 2 hr at RT. Finally, the nuclei were stained using DAPI-containing anti-fluorescence quencher and observed under a fluorescence microscope (Nikon, Tokyo, Japan).
 
-## TUNEL staining
+### TUNEL staining
 
 In vivo experiments, pancreatic paraffin sections were initially dewaxed in a 60°C oven, and then were incubated with protease K solution at 37°C for 30 min. Following PBS rinsing, the sections were stained with TUNEL mixture (Roche, Basel, Switzerland) at 37°C for 1 hr in darkness. Then, DAB staining and hematoxylin staining were performed. Finally, the images of these sections were captured under an optical microscope.
 
 In vitro experiments, the apoptosis of MIN6 cells in each group was assessed using the TUNEL apoptosis detection kit (Roche, Basel, Switzerland). Briefly, the cells were incubated with TUNEL reagent for 1 hr at 37°C in dark environment, and subsequently washed with PBS before being stained with DAPI. Lastly, they were observed under a fluorescence microscope.
 
-## Annexin V and PI assay
+### Annexin V and PI assay
 
 The Annexin V FITC/PI apoptosis detection kit (Becton Dickinson, NJ, USA) was utilized for the assessment of apoptosis of MIN6 cells in different groups. Following collection and double washing with 4°C PBS, the cells were re-suspended in Binding Buffer. Subsequently, these cells were stained at RT with a mixture of 5 µL FITC Annexin V and 5 µL PI for a duration of 15 min in darkness. Finally, the quantification of cell apoptosis ratio was detected using the Flow Cytometer (Beckman, CA, USA).
 
-## Mitochondrial ROS detection
+### Mitochondrial ROS detection
 
 Mitochondrial ROS levels were evaluated using the MitoSOX Red mitochondrial superoxide indicator (Yeasen, Shanghai, China). The reagent was diluted with dimethyl sulfoxide (DMSO, Solarbio, Beijing, China). Subsequently, the MIN6 cells in each experimental group were incubated with MitoSOX reagent for 30 min at 37°C in dark environment. Finally, the nucleus was stained with an anti-fluorescence quencher containing DAPI, and images were captured under a fluorescence microscope.
 
-## ROS detection
+### ROS detection
 
 Intracellular levels of ROS were measured using the ROS assay kit (S0033S, Beyotime, Shanghai, China) on the basis of the manufacturer’s instructions. In brief, MIN6 cells in each group were digested with trypsin which has no EDTA. Cells together with cell supernatants were incubated with diluted DCFH-DA solution at 37°C for 30 min in the dark. Finally labeled cells were detected by Flow Cytometer (Beckman Coulter, Breya, CA, USA).
 
-## Statistical analysis
+### Statistical analysis
 
 In this study, all data were expressed as mean ± SEM and analyzed by GraphPad Prism 9.0 (GraphPad Software Inc, CA, USA). All experiments were repeated at least three times independently. Statistical significance was analyzed by Student’s t-test or one-way ANOVA followed by Turkey’s multiple comparisons. The criterion for statistical significance was set at a p-value of less than 0.05.

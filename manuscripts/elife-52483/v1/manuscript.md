@@ -36,29 +36,53 @@ First MYC’s effect on global RNA production was monitored in a tightly regulat
 
 ## Results
 
-## MYC rapidly increases total cellular RNA
+### MYC rapidly increases total cellular RNA
 
 Whether MYC immediately and directly leads to a global increase in RNA levels has been a matter of some controversy. Any attempt to assess the effect of MYC on RNA levels across all genes individually would be highly dependent on the particular spike-in methods and computational algorithms used to quantify the results. It would also depend on the kinetics of whatever system is employed to acutely activate or inactivate MYC and on the basal level of MYC in cells studied. Because total RNA is 97% rRNA, the global increase in RNA is primarily due to increased rRNA synthesis. Since total RNA and total poly-A RNA generally move in parallel, total RNA synthesis is often a reasonable proxy for mRNA synthesis. Surprisingly, Tesi et al., 2019 saw no increase in global RNA transcription until 24 hr post-activation, using an in situ assay, and concluded that MYC increased total RNA (and hence rRNA) indirectly. Yet ribosomal proteins and rRNA have long been recognized as direct MYC targets from flies (Grewal et al., 2005) to humans (Gomez-Roman et al., 2003; Grandori et al., 2005). We found an early increase in total RNA using HO15.19 MYC-ER cells (O'Connell et al., 2003). These MYC-knockout rat cells stably express tamoxifen-activated MYC-ER. Cells were serum starved for five days and then treated with 200 nM of tamoxifen. Previous work demonstrated an immediate increase in rRNA transcription following tamoxifen-treatment of these cells (Schlosser et al., 2003). From an already large baseline, total RNA increased to near statistical significance at 6 hr and became so, after 10 and 14 hr (Figure 1—figure supplement 1). Such an experimentally detectable increase in total RNA must largely include increased rRNA, snoRNAs, 5S rRNA, and the host of mRNAs that are required for ribosome biogenesis.
 
-## A synthetic, minimal system to study MYC amplifier activity
+### A synthetic, minimal system to study MYC amplifier activity
 
 To interrogate MYC function while avoiding confounding genomic influences, MYC-expression and reporter plasmids were co-transfected into U2OS osteosarcoma cells (Figure 1A). (U2OS cells have been employed extensively for studies of MYC target genes [Lorenzin et al., 2016; Walz et al., 2014]). The expressed MYC was a fully functional MYC-EGFP fusion gene (Nie et al., 2012) driven by the CMV early promoter and enhancer. This fusion protein, when expressed homozygously at the Myc locus in mice, dimerizes with Max and supports normal development and physiology (Nie et al., 2012). Immunoblot of transfected cells confirmed that the output of MYC protein was linearly related to the transfected amount of the MYC-encoding plasmid (Figure 1B). (Note that under the immunodetection conditions shown here, endogenous MYC was not seen, and that transfected MYC was not detected with less than 10 ng of transfected MYC cDNA plasmid.) The co-transfected reporter plasmids expressed firefly luciferase (luc) or renilla luciferase (ren) from a Glucocorticoid Response-Element (GRE)-driven minimal herpesvirus (HSV) thymidine kinase (tk) or thromboxane synthase (ts) promoter, respectively (Figure 1A and Figure 1—figure supplement 2). tsRen was included as a control in all transient transfection experiments. (The ts promoter supports such low levels of expression that it would be expected to be barely amplified by MYC [Nie et al., 2012]. Because U2OS cells contain almost no glucocorticoid receptor (GR) (Blackford et al., 2012; Lee and Simons, 2011; Rogatsky et al., 1997) a small amount of GR was supplied by transfection. GRE-activity in these cells has been well-characterized and is completely dependent on the addition of exogenous glucocorticoids (Blackford et al., 2012; Chow et al., 2011; Dougherty et al., 2012; Lee and Simons, 2011; Rogatsky et al., 1997; Tao et al., 2008). Besides the minimal HSV tk promoter, another variant of the tkLuc reporters also included an E-box as well as a GRE (see below).
 
-## Non-linear transfer function for MYC amplification
+![Figure 1.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cells were transfected with plasmids (top to bottom) expressing MYC-EGFP driven by the CMV-enhancer promoter, firefly luciferase (luc) driven by a glucocorticoid response element (GRE) from a Herpes thymidine kinase (TK) minimal promoter, and renilla luciferase (ren) driven by the basal thromboxane synthase promoter. (B) MYC-EGFP protein expression parallels the transfected amount of MYC-EGFP plasmid. Note that the linear fit of immunoreactive MYC vs. transfected plasmid indicates that negligible MYC is expressed below 13 ng of plasmid. The endogenous MYC is calculated to equal ≈2.5 ng of MYC plasmid. Therefore, zero total MYC is calculated (Chow and Simons, 2018) to be ≈10 ng of plasmid (=13–2.5). Top: Immunoblot of cells transfected with different amounts of MYC-EGFP plasmid. (C and D). Total Renilla or Luciferase activity with EtOH or high Dex concentrations (50 or 100 nM) in U2OS cells transiently transfected with 2 ng of GR plasmid, 100 ng GREtkLUC reporter, and the indicated amounts of MYC plasmid, without (C) or with (D) 50 µM F4 were determined as described in Materials and methods, averaged, and plotted ± SEM (n = 2 or 4). R2 values for polynomial curve fits were all ≥0.96. Note that GR-induction using endogenous MYC is sensitive to F4 (red brackets on Y-axes of C and D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Comparison of RNA/cell in HO15.19-MYC-ER cells in the presence or absence of 4-OH tamoxifen (200 nM). The cells were grown in 0.1% of serum starvation for 5 days and then stimulated or not with 4-OH-tamoxifen. Error bars show the standard deviation. Comparing + vs. – tamoxifen, p-values for the progressive time points are 0.062, 0.029 and 0.022, respectively. Mean and SD are indicated for triplicates. Experiment performed twice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Disposition of perfect and 5/6-E-boxes within the reporter plasmids used in these studies. Perfect E-boxes are in boxes. Red-boxes enclose perfect E-boxes engineered into reporter promoters. Blue-boxes enclose the perfect E-boxes that occur within the LTR of the lentivirus vectors. Blue text indicates all sequences that match CACGTG at 5/6 bases. In 50% G-C, a 5/6 match is expected to occur randomly once every 228 bases. (B) G-C content of the reporter plasmids, sliding 50 bp window. Gal4UASs or GREs are just upstream of reporters as indicated.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Effect of MYC is greater when genes are more actively expressed. Augmentation by MYC (10 or 80 ng) of maximal LUC induction from transfected GREtkLUC by the indicated amounts of transfected GR with EtOH or Dex (60 or 20 nM) in U2OS cells (Ave ± range, n = 2). (B) MYC augmentation of transactivation by progesterone receptor B (PR-B). In both B and C, the maximal LUC or Renilla induction by 1.5 ng PR-B and 1 nM R5020 from transfected GREtkLUC or Renilla-TS respectively in U2OS cells is augmented by the indicated amounts of transfected (B) MYC and (C) MbIII and MbI+III.The data are normalized to the value for 10 ng of each MYC plasmid, averaged and plotted ±range (n = 2).
+
+### Non-linear transfer function for MYC amplification
 
 According to the amplifier hypothesis, MYC-driven output of active genes intensifies as intrinsic unamplified promoter strength increases and, at promoters bearing E-boxes, the output may be further boosted. Accordingly, the weak outputs of tkLuc, GREtkLuc and tsRen were only marginally and comparably augmented by co-transfected MYC in the absence of dexamethasone (DEX) (Figure 1C). Upon treatment with DEX and MYC, GREtkLuc increased ~15 fold, whereas the other reporters remained unresponsive. Therefore, upon activation by GR and DEX, GREtkLuc became more MYC-responsive just as predicted by the amplifier theory (Figure 1C). Consistent with this theory, the amount of additional transactivation delivered by added MYC was larger when more GR was used to cause greater activation of the GREtkLuc reporter (Figure 1—figure supplement 3A). As the level of transfected MYC-EGFP was progressively increased, the reporter response increased non-linearly as if MYC activation enhanced the efficiency of further MYC activation (Figure 1C).
 
 At high concentrations, MYC also weakly amplified the output of GREtkLuc when activated by co-transfected progesterone receptor (PR-B) along with the progestin R5020 (Figure 1—figure supplement 3B). The reduced gain of the amplifier in this case was consistent with weaker activation by PR relative to GR and is explained by the non-linear transfer function (input-output curve according to MYC dose) that has been suggested to be a defining characteristic of MYC amplification (Lorenzin et al., 2016; Nie et al., 2012; Wolf et al., 2015).
 
-## MYC amplification requires MYC-MAX dimerization
+### MYC amplification requires MYC-MAX dimerization
 
 Most studies of MYC’s action have indicated that it must dimerize with MAX to exert its influence on gene expression. MYC does not bind to DNA alone. To test if transcription amplification was dependent upon MYC-MAX dimerization, MYC—amplified GR/DEX-driven GREtkLuc expression was challenged with 10058-F4 (F4) (Figure 1D). This well-characterized inhibitor of MYC-MAX dimerization (Wang et al., 2007) not only dramatically impaired amplification, but unexpectedly almost abolished the DEX-dependent activation of GREtkLuc by GR in U2OS cells that express only endogenous MYC (Figure 1C vs. D, red bracket). This result indicates that the activation of the GREtk-promoter by Dex in U2OS cells is dependent on MYC-Max dimers, whether endogenous or transfected.
 
-## E-boxes augment, but do not define MYC action at reporter promoters
+### E-boxes augment, but do not define MYC action at reporter promoters
 
 Does the transcriptional response of MYC target genes demand MYC binding at E-boxes, or is the response graded upwards according to the real, but modest E-box binding selectivity of MYC-MAX? Comparison of the expression and binding of MYC at genomic promoters with or without E-boxes has indicated that E-boxes augment, but are not required for MYC-responsiveness (Nie et al., 2012). The affinity of MYC-MAX for the best binding of all possible eight-mer base sequences exceed those of the worst by less than 100-fold (modest for sequence specific recognition) (Guo et al., 2014). So, one perfect E-box has the same DNA binding avidity as 100 bp of non-E-box DNA, and the insertion of a perfect E-box into 200 bp of E-box-less promoter DNA would then be expected to increase the region’s net avidity for MYC by ≈1.5 fold (Figure 2—figure supplement 1). If activity parallels binding, then E-box reporter output should exceed non-E box reporter output by this same degree. To test this prediction, an E-box was inserted into GREtkLuc yielding GRE-E-box-tkLuc (Figure 2A). In the absence of Dex, the low output of GRE-E-box-tkLuc was only marginally more responsive to exogenous MYC (Figure 2B) than GREtkLuc. Addition of Dex licensed 1.5x greater MYC amplification of GRE-E-box-tkLuc than of GREtkLuc by exogenous MYC, exactly as predicted (Figure 2B vs. C). This single E-box was insufficient to drive switch-like, on-off high-level reporter expression. Notably, though GRE-E-box-tkLuc initially supported lower reporter expression than did GREtkLuc, higher MYC levels empowered greater E-box-driven output. At low levels of intracellular MYC, MAX-MAX dimers prevail and may bind to E-boxes more specifically, but less avidly than the more sparse MYC-MAX (Conacci-Sorrell et al., 2014; Guo et al., 2014). MAX-MAX dimers possess intrinsic repressor activity (Conacci-Sorrell et al., 2014), and MAX heterodimerizes with other repressive bHLH-ZIP proteins (Conacci-Sorrell et al., 2014). As MYC-MAX dimerization swells, amplification through E-boxes prevails.
 
-## Participation of conserved MYC box (MB) motifs in transcription amplification
+![Figure 2.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig2-v1.jpg)
+
+**Figure 2.:** (A) Dex-inducible reporter plasmids without or with E-boxes (top and middle, respectively) were co-transfected with a basal and uninducible Renilla-expressing reporter (bottom). (B) Without Dex induction, MYC marginally influences reporter expression with or without E-boxes. (C). With Dex, E-boxes depressed and then augmented reporter expression at low and high levels of MYC, respectively. Graphs are averages of 4 paired experiments ± S.E.M. in U2OS cells transiently transfected with 2 ng of GR plasmid, 100 ng GREtkLUC reporter without or with an E-box. All data were normalized to the value for 10 ng MYC with Dex on GREtkLUC reporter before averaging (R2 values for polynomial curve fits are ≥0.98).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** If the net action of MYC at a gene reflects its overall avidity for the given promoter, then an E-box will augment MYC activity by ~1.5 x, as shown in Figure 2.
+
+### Participation of conserved MYC box (MB) motifs in transcription amplification
 
 The evolutionarily conserved sequence motifs MBI-IV had been presumed, and in many instances shown, to mediate MYC biological activity and contribute to oncogenesis. To ascertain whether and which MBs contribute to amplifier activity, amino acid substitution mutations were engineered into conserved segments of the MBs within MYC-EGFP (Figure 3A) and assessed for function by co-transfection with a reporter - GREtkLuc and GR as well as with TS-Ren. Although mutation of no individual MB abrogated amplification compared with wild-type MYC (Figure 3B–F), substitutions within MBII considerably attenuated amplifier gain (Figure 3D).
 
@@ -72,7 +96,7 @@ Mutant MYC protein levels were checked by immunoblot to rule out simple protein 
 
 While MBI mutations have been implicated in the stabilization of MYC protein, ubiquitylation and turnover of MYC have been associated with increased transactivation . To visualize the relationship between MYC transactivation and protein levels for wild-type and mutant MYC proteins, reporter activity versus MYC proteins levels (as assessed by immunoblot) were plotted (Figure 3J). A striking inverse relationship was apparent between activity and MYC levels with the highly active MBIII and MBIV mutants sustaining the least amount of MYC, whereas minimally active double and triple MB-mutants displayed the highest levels of MYC protein. This inverse relationship between abundance and activity is consistent with a previous suggestion that transactivation by MYC and its turnover are coupled (Farrell et al., 2013; Farrell and Sears, 2014; Kim et al., 2003; Molinari et al., 1999; Salghetti et al., 2000).
 
-## MYC-Box mutations change both non-E and E-box promoter-output at the RNA level
+### MYC-Box mutations change both non-E and E-box promoter-output at the RNA level
 
 Though MYC augmented GR-activation of reporters with and without E-boxes, formally the possibility remained that E-box-dependent and independent, upregulated expression might occur via different mechanisms. For example, global increases in cellular macromolecular synthetic pathways, such as translation, might provide an indirect component to amplification distinct from specific transcriptional upregulation. The mutations in MBII and MBIII were compared with wtMYC for transcriptional activation/amplification of reporters with and without E-boxes (GRE-Ebox-tkLuc and GREtkLuc). With high levels (80 ng) of transfected MYC-EGFP plasmids, the reporter activity profiles were similarly shaped with and without E-boxes, though inclusion of an E-box boosted expression by ~1.5 fold (Figure 4A). Just as in Figure 3, MBII decreased expression whereas MBIII increased expression (Figure 4A). wtMYC and mutant-MBIII were transfected along with GREtkLuc and reporter expression, normalized to co-transfected tsRen, was compared at the level of luciferase activity (Figure 4B) and RNA (luciferase-RTqPCR, Figure 4C). The transfected MYC increased reporter RNA levels. The background RNA seen with the empty vector likely represents random transcription extending throughout the plasmid backbone. This is a long recognized problem for quantifying plasmid-encoded mRNAs recovered from transfected cells. (Boshart et al., 1992; Groskreutz and Schenborn, 1997). Thus, MYC mutations do not discriminate activation of expression genes with or without E-boxes.
 
@@ -80,7 +104,7 @@ Though MYC augmented GR-activation of reporters with and without E-boxes, formal
 
 **Figure 4.:** (A and B) Cells were transfected as noted with 80 ng of empty vector, MYC, MBII or MBIII expressing vectors, 100 ng of non-E-box or E-box reporter and 2 ng of GR plasmids . Luciferase and renilla luciferase were assayed. (C). Transfected cells as in B were harvested and RNA extracted for RT-qPCR using Luna Universal One-Step RT-qPCR Kit (New England Biolabs). Experiments were performed in biological triplicate. Standard deviations are indicated. *,** and *** indicate p≤0.05, 0.01, 0.001, respectively, one-tailed t-test. Experiments performed in triplicate (A and B, n = 3; C, n = 1).
 
-## MYC amplifies the output of synthetic transcription activators
+### MYC amplifies the output of synthetic transcription activators
 
 Although MYC stimulation of GR-activated transcription seemed exactly as predicted by the general amplifier hypothesis, it might alternatively reflect specific transcription factor synergy between MYC and GR (or PR), perhaps as part of a selective physiological response. To discriminate whether MYC-augmented reporter expression represented specific synergy with GR versus general amplification of transcription, assays were run to test if reporters controlled by synthetic activators could be driven by MYC to levels beyond those achievable by such chimeric activators alone. These experiments used the well-characterized chimeric GAL4/VP16 in which the DNA binding domain (DBD) of the yeast activator GAL4 is fused with an activating segment of the Herpes simplex ICP4 gene (Figure 5A; Sadowski et al., 1988). The GAL4 DBD self-dimerizes to bind the 17 bp GAL4 Upstream Activating Sequence (UAS). Importantly the human genome harbors no orthologous sequences for either the Gal4 DBD or the VP16 activating segment. Therefore, U2OS cells are unable to drive Gal4 UAS-reporters unless supplied with exogenous GAL4/VP16. As is typical, five tandem Gal4UASs were inserted upstream of a TATA-box (5xGAL4UAS-TATALuc) to maximize activation by GAL4/VP16. Alone, Gal4UAS-GAL4/VP16-driven luciferase expression saturated at a low dose (2 ng/well) and then declined slowly (Figure 5B). Unactivated renilla activity declined slightly faster. Both responses are likely due to squelching (Gill and Ptashne, 1988), which is when the transcriptional activity of a factor A binding with a target gene is inhibited by another transcription factor B—even when B does not bind to the target. This can occur in multiple scenarios. For example, if factor A interacts independently with both cofactors B and C but is active only within a complex of A+B+C, then excess A will form AB and AC but little ABC, in which case transcriptional activity with the target gene will first increase and then decrease as more A is added. Co-transfected MYC progressively amplified GAL4/VP16-driven reporter activity (Figure 5C), just as it had for GR. The output of Gal4/VP16 and MYC together exceeded those of either transactivator alone, indicating non-redundant mechanisms. These results support the notion that MYC is indeed a general amplifier of activated transcription.
 
@@ -90,7 +114,7 @@ Although MYC stimulation of GR-activated transcription seemed exactly as predict
 
 MYC amplification of GAL4/VP16 activation was tested for the involvement of MYC boxes. Similar to GR and PR, mutation of MBIII dramatically raised the gain on amplification of GAL4/VP16 at high levels of MYC (Figure 5D). This result suggests that MBIII helps to limit positive feedback of MYC on VP16-driven expression. Likewise, co-mutation of MBI and MBIII reduced the excessive gain of the MBIII mutation back to wild-type levels (Figure 5E), inviting consideration of MBI as a regulator of mutant MBIII activity.
 
-## MYC amplifies expression from chromosomally integrated minimal promoters
+### MYC amplifies expression from chromosomally integrated minimal promoters
 
 The experiments above suggest that MYC amplifies transcription on transfected DNA templates. Does the MYC-amplifier also operate on chromosomally embedded, properly replicating minimal promoters? To address this question, U2OS cells were infected with a panel of integrating lentiviruses that delivered E1b-minimal promoters driving the expression of mCherry red fluorescent protein (CFP). These chromosomally integrated reporters carried a single GAL4UAS upstream of the CFP transcription start site, and alternative reporter variants either including a single E-box (GAL4UAS/E) or not (GAL4UAS) (Figure 6A). Host cells also harbored a lentivirus that expressed from a tetracycline inducible promoter the same MYC-EGFP fusion protein used for the above transfection experiments (Figure 6A). Thus, in the absence of induction, reporters were exposed only to endogenous U2OS MYC, whereas upon induction with doxycycline, the reporter promoters were bathed with increased levels of MYC. Utilization of a single GAL4UAS assured that reporter expression was confined within bounds typical of endogenous genes. When included, GAL4/VP16 was co-transfected with a plasmid expressing monomeric palmitoyl-mTurquoise to visually mark transfected cells.
 
@@ -102,7 +126,7 @@ Alone, endogenous levels of U2OS MYC sustained only low basal mCherry expression
 
 Including an E-box along with GAL4/UAS proved insufficient to increase reporter levels when driven only by basal levels of endogenous MYC, with or without GAL4/VP16 (upper panels of Figure 6C). Upon MYC induction with Dox, E-box-bearing reporter output intensified and achieved its highest levels when GAL4/VP16 was co-transfected (lower right panel of Figure 6C). These data anticipate that MYC binds at both E-box-less and E-box-bearing promoters (Guo et al., 2014; Nie et al., 2012), but a bit more efficiently at the latter in accord with the amplifier hypothesis. As with transient transfection, MYC-amplification to mid-level expression was resilient to mutation of individual MYC boxes. Attenuating wild-type MYC activity required MB mutation in combination (Figure 6D). Note that the lentivirus-MYC-EGFPs were expressed at levels above endogenous MYC but below those attainable with transient transfection (Figure 1B vs. Figure 6E, and not shown; note that expression of MYC-EGFP and mutants thereof was equivalent when assessed with anti-MYC or with anti-GFP). These amounts of MYC-EGFP were below those associated with the sharp upward inflection of reporter activity driven by transfected MBIII- or MBIV-mutants (Figure 1B and Figure 3I). (Also note that all lentivirus MYC and its mutants repressed the levels of endogenous MYC.)
 
-## Wild-type MYC-EGFP binding at reporter promoters, parallels transcription amplification
+### Wild-type MYC-EGFP binding at reporter promoters, parallels transcription amplification
 
 The gain on MYC-amplified transcription increases as pre-amplified reporter expression goes up (see also Figure 1—figure supplement 3A). To test whether this augmented amplification is accompanied by enhanced MYC binding, ChIP was performed on the cells carrying chromosomally integrated lentivirus reporters driven by synthetic promoters, GAL4UAS and GAL4UAS/E. Cells were co-transfected with plasmids directing the expression of Gal4-VP16 and palmitoyl-mTurquoise, and then treated or not with doxycycline to induce MYC-EGFP. Transfected versus untransfected cells were sorted by flow cytometry gating upon mTurquoise. MYC-EGFP binding at promoters of sorted populations was monitored by ChIP using anti-GFP. Without Gal4/VP16, and without doxycycline treatment, uninduced MYC-EGFP binding at the integrated E-box-less promoter did not rise above the background (Figure 7A, lanes 1 vs. 2). Inclusion of an E-box licensed low levels of MYC-EGFP binding (Figure 7A, lanes 5 vs. 6). Also, without GAL4/VP16, induction with Dox modestly augmented MYC-EGFP recruitment to the reporter-promoter both in the absence and presence of an E-box (Figure 7A, lanes 3 vs. 4, 7 vs. 8).
 
@@ -112,15 +136,23 @@ The gain on MYC-amplified transcription increases as pre-amplified reporter expr
 
 Expressing GAL4/VP16 without MYC-EGFP induction permitted low levels of basal MYC-EGFP to bind at both non-E box and E-box promoters (Figure 7A lanes 9 vs. 10, 13 vs. 14). Inducing MYC-EGFP while expressing Gal4/VP16 dramatically enhanced the amount of MYC-EGFP bound at promoters (Figure 7A, lanes 11 vs. 12, 15 vs. 16) especially the E-box-bearing reporter (Figure 7A, lanes 15 vs. 16).
 
-## MYC-Box mutations uncouple DNA binding from transcription activation
+### MYC-Box mutations uncouple DNA binding from transcription activation
 
 As noted above (Figure 3J), MYC-levels seemed to be inversely related to the apparent amplifier-gain. To see if mutant-MB MYC-EGFP binding at an endogenous promoter paralleled promoter output, expression and MYC-binding at the native EZH2 promoter were monitored. EZH2 binds and is induced by MYC (Neri et al., 2012; Nie et al., 2012). MYC-EGFP and mutant MB-MYC-EGFPs were induced with doxycycline and EZH2 expression was measured with RT-qPCR. As expected, EZH2 expression was increased by wild-type MYC and mutant-MBIII compared with integrated empty vector, whereas expression was not increased by mutants -MBI, -MBII or -MBIV (Figure 7B). (Again, it should be noted that the levels of lentivirus-expressed mutant-MBIII and -MBIV did not reach the high transient expression levels that seemed to drive over-amplification in Figure 3 and 5). ChIP-PCR confirmed increased binding of wild-type MYC-EGFP at lentivirus mCherry promoter and the EZH2 promoter following induction with doxycycline (Figure 7C); MYC-binding was not increased at the silent BEX gene (Figure 7C). Mutant-MBII MYC bound to EZH2 the same or better than wild-type despite being impaired for transcriptional activity (Figure 7D); augmented binding with diminished activity upon MBII mutation has been reported previously (Farrell et al., 2013). Surprisingly, notwithstanding its clear ability to increase promoter output, binding by mutant-MBIII MYC-EGFP not only did not increase but may have been diminished upon induction (Figure 7D), thus inviting consideration that it is productively removed from target genes as part of the transcription-cycle. These data suggest that in vivo, the kinetics of MYC binding, action and degradation at promoters are complex.
 
-## Defining MYC kinetics in transcription
+### Defining MYC kinetics in transcription
 
 The biochemical mechanism of MYC amplification of GR transactivation can be probed using a validated kinetic model of transcription (Blackford et al., 2014; Blackford et al., 2012; Chow et al., 2015a; Chow et al., 2011; Chow et al., 2015b; Chow and Simons, 2018; Dougherty et al., 2012; Luo et al., 2013; Ong et al., 2010; Pradhan et al., 2016; Zhang et al., 2013; Zhu et al., 2014) in the GREtkLUC system under the influence of the MYC inhibitor F4 and the well-studied transcriptional cofactor sSMRT, which has been categorized as a competitive decelerator (Blackford et al., 2012; Dougherty et al., 2012; Zhang et al., 2013). The model, which is described in more detail in the Supplementary Material, considers transcription as a sequence of complex-forming reactions and delivers predictions about the biochemical kinetic mechanisms of transcription factors in the language of enzyme kinetics. It predicts the site(s) of action of factors with respect to each other and relative to a special rate limiting reaction termed the ‘concentration limiting step’ (CLS). The hallmark of steroid-induced transcription, irrespective of the presence of MYC, is that the dose-response curve of the steroid agonist has a Hill coefficient of one as in a Michaelis-Menten reaction. This is unexpected for a sequence of reactions and requires that: 1) factors participating in reactions before the CLS are limited with respect to their binding affinity and thus downstream complexes must have lower concentrations or lifetimes with respect to upstream complexes; 2) the CLS is the last of the reactions with limited factor; and 3) factors for steps after the CLS are more abundant than the limiting factor at the CLS. Finally, all reactions after the CLS can lead directly to the gene product. The dose response is fully characterized by the saturated maximal activity, Amax, and the steroid concentration of half-maximal activity, EC50; explicit formulas for how these quantities change with respect to concentrations of the factors can be derived and compared to experiments (Blackford et al., 2014; Blackford et al., 2012; Chow et al., 2015a; Chow et al., 2011; Chow et al., 2015b; Chow and Simons, 2018; Dougherty et al., 2012; Luo et al., 2013; Ong et al., 2010; Pradhan et al., 2016; Zhang et al., 2013; Zhu et al., 2014).
 
 With increasing MYC, Amax (and Amax/EC50) increase supra-linearly with varying concentrations of competing F4 (Figure 8A and B) or sSMRT (Figure 8D and E) whereas 1/EC50 remains relatively invariant (Figure 8C and F). Also, Amax/EC50 is nonzero for zero MYC protein. As shown in the Appendix 1, which is based on mathematical derivations in references (Blackford et al., 2014; Blackford et al., 2012; Chow et al., 2015a; Chow et al., 2011; Chow et al., 2015b; Chow and Simons, 2018; Dougherty et al., 2012; Luo et al., 2013; Ong et al., 2010; Pradhan et al., 2016; Zhang et al., 2013; Zhu et al., 2014), there are at least two possible conclusions for the kinetic action of MYC. The first is that MYC is an accelerator acting after the CLS at two (or more) locations and MYC has relatively low binding affinity. The second is that MYC is an accelerator or a facilitator of a second accelerator acting at the CLS. In previous experiments, the CLS reaction has consistently been the binding of activated receptor-steroid complex to transfected GREtkLuc reporter, which is logical as the reporter is the most limited essential accelerator for transcription. Thus, MYC could act as an accelerator after the binding of GR to GRE or be an accelerator/facilitator of GRE through another actor (Figure 8G). The corepressor F4 reduces Amax and Amax/EC50, even in the absence of MYC. A plot of EC50/Amax vs. F4 is best fit by a quadratic plot (Figure 8—figure supplement 1). This indicates that F4 is acting at two sites, either as a competitive inhibitor of an accelerator (i.e. competitive decelerator) before or at the CLS or as an inhibitor of an activator of GRE. The second option is consistent with F4’s action as a known inhibitor of MYC and MYCN (Müller et al., 2014). Thus, the second option predicts that MYCN is also an activator of GRE. sSMRT also acts as a competitive decelerator but the data were insufficiently precise to make a firm prediction of the location of action.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig8-v1.jpg)
+
+**Figure 8.:** (A – C) Competition of MYC vs 10058-F4. Double reciprocal plots (averaged) showing Amax (A), Amax/EC50 (B), and 1/EC50 (C) of MYC with varying inhibitor 10058-F4 from competition assays (as described in Materials and methods) in U2OS cells with MYC and co-transfected F4, GR, and GREtkLUC. Data from each experiment (n = 4) were normalized to the value for the lowest amounts of MYC and 10058-F4 and the averages (± SEM) were plotted. (D–F) Competition of MYC vs sSMRT. Double reciprocal (averaged) plots of Amax (D), Amax/EC50 (E), and 1/EC50 (F) with varying sSMRT were made for the competition assays, as in A-C, of MYC and decelerator sSMRT along with co-transfected GR and GREtkLUC. Data from each experiment (n = 5) were normalized to the value for the lowest amount of MYC and sSMRT and the averages (± SEM) were plotted. It should be noted that these plots require that the amounts transfected plasmid shown on the X-axis must correspond to the total amount of protein (endogenous plus exogenous) or added chemical. As shown in Figures 1B, 10 ng of MYC cDNA corresponds to zero total MYC protein. Therefore, the X-axis origin corresponds to 0 MYC protein, which equals 10 ng MYC cDNA. The data of the competition experiments of MYC vs 10058-F4 of Fig. 8A-C were expressed as EC50/Amax, averaged, and plotted as averaged ± SEM (n = 4). The R2 for the curve fits are all > 0.99. (G) Cartoon of sites and modes of action of MYC and 10058-F4 (F4). Starting with the Dex-bound GR (GRS), the induction of LUC protein (P) proceeds through numerous, undefined steps (arrows and ". . .”) both before and after the CLS. After the CLS, each step can either proceed to protein or involve another regulatory cofactor before ending in the production of protein. The top panel depicts F4 acting as a competitive decelerator at two steps before or at the CLS while MYC acts as an accelerator at two steps after the CLS. The bottom panel is for MYC acting at two sites as an activator of GRE as it enters the CLS with F4 inhibiting MYC at two sites.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52483/elife-52483-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The data of the competition experiments of MYC vs 10058-F4 of Figure 8A–C were expressed as EC50/Amax, averaged, and plotted as averag ± SEM (n = 4). The R2 for the curve fits are all >0.99.
 
 The results of the MYC-Box mutations that do not alter binding yet change amplification by MYC support the second mode of action, which is that MYC is a facilitator of an accelerator. This action is also largely independent of MYC’s binding affinity to its promoter. This interpretation predicts that MYC’s acts to facilitate the binding of other transcription factors.
 
@@ -144,21 +176,325 @@ The conclusion that an inhibitor of MYC action (i.e., 10058-F4) acts as a compet
 
 ## Materials and methods
 
-## Chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>c-Myc</td>
+      <td>GeneBank</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>DH5a</td>
+      <td>NEB</td>
+      <td>Catalog #C2987I</td>
+      <td>High efficiency competent cells</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>XL-10-Gold</td>
+      <td>Agilent</td>
+      <td>Catalog #200314</td>
+      <td>Ultracompetent Cells</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (include species here)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U-2 OS</td>
+      <td>ATCC</td>
+      <td>ATCC HTB-96</td>
+      <td>Lack glucorticoid response</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Lentivirus-expressed MYC, mCherry-reporter double-stable cell lines in U-2OS</td>
+      <td>This paper</td>
+      <td>bone osteosarcoma</td>
+      <td>Cells maintained in D.Levens lab</td>
+    </tr>
+    <tr>
+      <td>cell line (Rattus norvegicus (Rat))</td>
+      <td>Myc-ER HO15.19</td>
+      <td>RRID:CVCL_0311 O'Connell et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>Palmitoyl-turquoise2</td>
+      <td>gift from Dorus Gadella;</td>
+      <td>Addgene plasmid # 36209</td>
+      <td>http://n2t.net/addgene Goedhart et al., 2012</td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>Pd4EGFP-c-Myc and Myc mutants</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>PTripZ-EGFP-cMyc and mutant</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>PLVX-PKG-GAL4USA-(Ebox)-E1bTATA-mcherry-hygro (Plasmid)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (include species here)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-cMyc (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #ab-32072</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Catalog #ab-32146</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GAPDH</td>
+      <td>Abcam</td>
+      <td>Catalog #ab-9485</td>
+      <td>1:2500</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Pd4EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>PTripZ-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLVX-mCherry-N1</td>
+      <td>Takara</td>
+      <td>Catalog #632562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PKG-F</td>
+      <td>This Paper</td>
+      <td>CR primer</td>
+      <td>GTGAGCGGCCGCGACTCTGAGTAATTCTACCGGGTAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PKG-R</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>GTGAGCGGCCGCGACTCTGAGTAATTCTACCGGGTAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Hygro1-F</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>GCCCAAGCTTACCATGAAAAAGCCTGAACTCACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Hygro1-R</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>TGTTGGAGCCGAAATCCGCGTGCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Hygro2-F</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>GGATTTCGGCTCCAACAATGTCCTGACGGACAATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Hygro2-R</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>GGATTTCGGCTCCAACAATGTCCTGACGGACAATG</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Direct-zol RNA miniprep kit</td>
+      <td>Zymo Research</td>
+      <td>Catalog #R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Luna Cell Ready One-Step RT-qPCR Kit</td>
+      <td>NEB</td>
+      <td>Catalog #E3031, #E3005, #E3006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lipofectamine 2000,3000 transfection kit</td>
+      <td>Thermo-Fish (Invitrogen)</td>
+      <td>Catalog #L2000, L3000-008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lenti-X Accelerator kit</td>
+      <td>Takara</td>
+      <td>Catalog #631257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lenti-X Packaging Single Shot kit</td>
+      <td>Takara</td>
+      <td>Catalog #631275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>the ChIP-IT High Sensitivity kit</td>
+      <td>Active Motif</td>
+      <td>Catalog #53040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Dexamethasone (Dex)</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Promegestone</td>
+      <td>PerkinElmer Life Sciences</td>
+      <td>R5020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>10058-F</td>
+      <td>Sigma</td>
+      <td>Catalog #F3680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>4-OH tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #94873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>All the restriction enzymes and DNA polymerase</td>
+      <td>NEB</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>KaleidaGraph</td>
+      <td>Synergy Software, Reading, PA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>NIS-Element</td>
+      <td>Nikon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>LightCycler 480 Probes master</td>
+      <td>Roche-applied Science</td>
+      <td>ref number 04707494001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals
 
 Dexamethasone (Dex) was obtained from Sigma (St. Louis, MO) and promegestone (R5020) was from PerkinElmer Life Sciences (Boston, MA). Restriction enzymes and DNA polymerase were purchased from New England Biolabs (Beverly, MA). MYC inhibitor, F4 (5-[(4-ethylphenyl)methylene]−2-thioxo-4-thiazolidinone; 10058-F4)), was from Sigma, St. Louis, MO (Cat. No. F3680). 4-OH tamoxifen was from Sigma-Aldrich, catalog No.94873.
 
-## Plasmids
+### Plasmids
 
 Renilla-TS reporter, GREtkLUC, and rat GR (pSG5/GR) have been previously described (Wang et al., 2004). The FR-LUC reporter, in this paper referred to as 5xGAL4UAS-TATALuc, is from Stratagene (La Jolla, CA). E-box GRE tkLUC was constructed by amplifying the fragment in GREtkLUC with forward primer 5’-GCACcatatgCGGTGTGAAATACCGC and reverse primer 5’-ACCgtcgacCACGTGCTGCAGGCATGCAAGCTTG using Nde I and Sal I respectively to insert the E-box CACGTG. The resulting E-box GREtkLUC was sequenced and confirmed by using sequencing primer 5'-TTCGAGGCCACACGCGTCAC-3. MYC mutants were generated from p-c-Myc-pd4-EGFP-N1 (Nie et al., 2012) by replacing the amino acids IWKKE (aa49-53) in MBI, DCMW (aa132-135) in MB II, EIDVV (aa261-265) in MB III, and QHNY (aa306-309) in MB IV with the same number of alanines, respectively. All double-, triple- MB box mutants were constructed by mutating the single-, double-, triple- mutants, in different combinations. The MYC box mutated plasmids were generated by replacing the wild type MYC sequences with G-blocks (IDT) containing MB mutants using Gibson Assembly Cloning Kit (NEB, E5510). The sequences of G-blocks are shown in Supplementary file 1.
 
 An HIV-1 based, Lentiviral expression vector PLVX-mcherry-N1 was used to generate integrating reporter constructs. To temper reporter expression, the ClaI-XhoI restriction fragment of human cytomegalovirus immediate early promoter Pcmv IE was replaced by a minimal promoter containing a Lex binding site, Gal4 binding site(G), and an E1b TATA box with or without an E-box. The sequences of the fragments are listed below. Each pair of fragments were annealed at 96°C for 5 min with 1x NEB buffer #2 and slowly cooled to the room temperature before further subcloning into the vector yielding two reporter constructs yielding PLVX-Gal4UAS-E1bTATA mCherry and PLVX-Gal4UAS-E-box-E1bTATAmCherry.
 
-## Cell lines
+### Cell lines
 
 In order to make double stable cell lines, the puromycin-resistance genes PLVX-Gal4UAS-E1bTATA mCherry and PLVX-Gal4UAS-E-box-E1bTATAmCherry were replaced by the Hygromycin resistance gene using thermostable assembly. The reporter genes were digested with XbaI and TthIIIi restriction enzymes, gel purified fragment then assembled with PCR products of PGK promoter (554 bp), Hygro I (622 bp), and Hygro2 (459 bp). The resulting constructs were used to make double stable cell lines. The primers used for PCR are in below.
 
-## Cell culture, transfection and lentivirus infection
+### Cell culture, transfection and lentivirus infection
 
 U2OS human osteosarcoma cells were from ATTC, #HTB-96. These cells were maintained without further verification or mycoplasma testing, but retained proper growth characteristics, morphology, and properties. Key for these studies, they lacked an intrinsic glucorticoid response. Monolayer cultures of U2OS cells were grown in high glucose (4.5 g/L) DMEM containing 10% FBS in a 37°C incubator supplied with 5% oxygen-air atmosphere. Cells are transfected for 18 hr using Lipofectamine (Life Technologies, Inc, Gaithersburg, MD). For each well of a 24-well plate, 100 ng of reporter (FRLUC, GRE-E-box-tkLUC or GREtkLUC) and 10 ng Renilla plus various combinations of other expression vectors (e.g., GR, cMyc, cMyc/EGFP) were used. Equal molar amounts of the respective empty expression vectors were included to keep the molar amount of each vector constant, with the total transfected DNA brought to 300 ng/well with pBluescript II SK (Stratagene).
 
@@ -168,30 +504,30 @@ For lentivirus reporter experiments U2OS cells were grown in DMSO containing 10%
 
 The lentivirus-expressing MYC (wild type or mutated) and mCherry-reporter double-stable cell lines were plated in glass bottom cultureware plates (MatTek P06G-1.5–14F) the day before transfection with 60–80% confluency. Transfection of 10–20 ng of Gal4-VP16, 35 ng of Palmitoyl-turquoise2 (gift from Dorus Gadella; Addgene plasmid # 36209; http://n2t.net/addgene:36209 ; RRID:Addgene_36209) (Goedhart et al., 2012) and pBluescript (SK) plasmid DNA for a total of 1 µg DNA, was carried out with the Lipofectamine 3000 transfection kit (Invitrogen catalog number L3000-008) according to the manufacturer’s instructions) and subjected to image analysis and/or cell sorting.
 
-## Measurement of RNA expression
+### Measurement of RNA expression
 
 For MYC-ER cell total RNA, rat Myc-ER cell line HO15.19 grown as previously (O'Connell et al., 2003) described in six well plates with DMEM and 10% of calf serum (CS). At about 70–80% of confluency, cells were starved with 0.1% of CS for about 5 days and then treated or not with 200 nm of 4-OH tamoxifen (Sigma-Aldrich, catalog No.94873) for 6, 10 and 13 hr respectively. Cells were then lysed and RNA extracted in 1x PBS, 2 mM EDTA, using the Direct-zol RNA miniprep kit (Zymo Research, Catalog No. R2051). RNA was measure using Nanodrop. For measurement of human EZH2 RNA in pTripZ-EGFP, or pTripZ-lentivirus vector directed wild-type MYC-EGFP and mutant-MBI, II, III or IV-MYC-EGFP U2OS stable cell lines, RNA was prepared using Luna Cell Ready One-Step RT-qPCR Kit (NEB # E3031) following the manufacturer’s instructions. ~ 0.2×104 cells/well of each were seeded on a 96 well plate and grown at 37°C, 5% CO2 overnight. Cells were then treated or not with 0.5 mg/ml of doxycycline. After 8 hr., cell cultures were removed, rinsed with cold 1x PBS and aspirated. 25 μl Luna Cell Ready Lysis Buffer (2X), 5 μl of RNase-free DNase I (10x), 2 μl of Luna Cell ready RNA Protection Reagent (25x), 2 μl of Luna Cell Ready Protease (25x) and 6 μl of Nuclease-free water for total volume of 40 μl / well were added and incubated at 37°C for 10 min. The cell lysis reactions were terminated by adding 5 μl of Luna Cell Ready Stop Solution to each well and mixed well then incubated at 25°C for 5 min. 1.5 μl of the above cell lysis mix were used to program q-PCR reactions using Luna Universal One-Step RT-qPCR kit (NEB # E 3006). For a 20 μl reaction mixture, 10 μl of Luna Universal probe One Step Reaction Mix, 1 μl of Luna WarmStart RT Enzyme Mix, 0.8 μl each of the 10 mM primer, 0.4 μl of 10 mM probe, 1.5 μl of cell lysate and Nuclease-free Water were added. Triplicate reactions for each sample were performed. The PCR programs were set as 1 cycle of reverse transcription at 55°C for 10 min; 1 cycle of initial denaturation at 95°C for I min; 40 cycles of denaturation at 95°C for 10 s followed by extension at 60°C for 30 s for each cycle. The primers used for human EZH2 expression were: 5’-ATG GCA CCT GCA GAA GGA-3’; 5’-TTG GGA AGC CGT CCT CTT-3’. The probe used for the qPCR is Universal probe library # 79. For measurement of Luc and Ren RNA using qPCR, transfections were performed as above in 24-well plates and RNA was prepared with Luna cell ready one-step RT-qPCR kit (NEB # E3030). The cell lysis was as described for EZH2 expression for MYC -EGFP and mutant MB MYC-EGFP except 120 ml of cell lysis mix was used and all other reagent were proportionally increased. Real time qPCR reactions were performed with Luna one-step RT-qPCR kit (NEB # E3005) according to the manufacturer’s instructions. Primers were Firefly luc F 5’- GTG TTG GGC GCG TTA TTT AT-3’, Firefly luc R 5’- CAT CGA CTG AAA TCC CTG GT-3’; renilla F 5’- GTG GTG GGC CAG ATG TAA AC −3’, renilla R 5’- ACC AGA TTT GCC TGA TTT GC-3’. The SYBR scan mode was used on the real-time instrument. The instrument setting for reverse transcription is 55°C for 10 min. The initial denaturation step is at 95°C for 1 min followed by 40 cycles of denaturation at 95°C for 10 s. then 60°C for 30 s extension for each cycle. The melt curve was set for 60°C.
 
-## Luciferase assay
+### Luciferase assay
 
 U2OS cells were treated for 20–24 hr with/without steroid (100 nM in ethanol unless otherwise stated) in the culture media (final ethanol concentration was 0.1%) before being harvested in 1 × Passive Lysis Buffer (150 µl/well in 24-well plate; Promega). Added 10058-F4 to a final concentration of 50 µM (from 100 mM in DMSO) was used as an inhibitor in some MYC amplification experiments. Cell lysates (50 µl per well) in a 96-well plate were used for luciferase activity assays using the Dual-Luciferase Assay System (Promega). Bioluminescence was read by a GloMax 96 Microplate Luminometer (Promega). The fold induction by steroid is defined as (the activity with steroid)/(the basal level activity seen in the absence of steroid). Each sample was run in triplicate and each experiment was performed at least two times. The luciferase induction curve with steroid was then analyzed using KaleidaGraph (Synergy Software, Reading, PA) for the best fit by Michaelis–Menten kinetics (R2 usually ≥0.95). All errors are ± S.E.M.
 
-## Cell sorting
+### Cell sorting
 
 The cell growth and reactions conditions were the same as used for microscopic analysis. After 18 hr, the cells having GFP, Turquoise, and mCherry fluorescent proteins were washed twice with PBS and were strained using 50-micron pore size filters. Cell suspensions were analyzed and sorted using FACSAria-IIu cell sorter (BD Biosciences, USA) equipped with 355 nm, 407 nm, 488 nm, 532 nm, and 640 nm LASER lines using DIVA eight software (BD Biosciences, USA). Briefly, after excluding cellular debris, using a forward light scatter (FSC)/side scatter plot (SSC), doublet cells were removed on the basis of signal width of FSC and SSC parameters. These debris free single cells were further gated to identify fluorescence signals of GFP, Turquoise, and mCherry proteins. GFP fluorescence was excited by 488 nm LASER and emission was read using 515/20 nm bandpass filter sets on PMT (B515). Turquoise protein’s fluorescence was excited by 407 nm LASER and emission was read using 450/50 nm bandpass filter sets on PMT (V450), whereas mCherry protein’s fluorescence was excited by 532 nM LASER and emission was read using 610/20 nm bandpass filter sets on PMT (G610). GFP-positive, but turquoise-negative (and hence GAL4/VP16-negative) vs. GFP-positive-turquoise-positive (and hence GAL4/VP16-positive) cells were sorted and stored at −80°C for ChIP-PCR analysis.
 
-## Immunoblot
+### Immunoblot
 
 For transiently expressed MYC-EGFP, different amounts of MYC-EGFP plasmids were transfected into U2OS cells in 6-well plates for 48 hr using Lipofectamine (Life Technologies, Inc, Gaithersburg, MD). Cell lysates were collected and supernatants were obtained by centrifugation at 13,500 g for 20 min (4°C). Equal amounts of lysates protein were resolved into 3–8% Bis-acetate gels (Invitrogen) at 150 v and transferred onto nitrocellulose membranes (Bio-Rad) at 20 v at room temperature for 1 hr using a semi-dry apparatus (Bio-Rad). MYC or MYC-EGFP protein were detected using anti-MYC antibody from Epitomics (Rabbit mAb Cat.# 1472–1) and a secondary goat-anti rabbit IgG–HRP (Santa Cruz Biotechnology, Dallas, TX) antibody was used to amplify the signal. Western blots were visualized by ECL detection reagents as described by the manufacturer (Amersham Biosciences). The relative protein expression levels were compared by using a densitometer (Bio-Rad). For immunoblot of cellular and stably expressed MYC-EGFP, lentivirus expressed MYC-EGFP and MB-mutant MYC-EGFP, the U2OS cell lines with integrated lentivirus vectors expressing pTripZ-EGFP-, MYC-EGFP, or MYC-EGFPs with mutant MBI, MBII, MbIII or MbIV were grown in DMEM standard medium with 10% Tet-system approved FBS (Takara bio, Catalog No. 631106). After splitting into 6-well plates (~3×105/well), cells were grown for another 22 hr with or without 0.6 mg/ml doxycycline for 8 hr. Cells were lysed with 200 ml of RIPA buffer with protease inhibitors at 4°C for 20 min. The cell-lysates were centrifuged at 4°C for 20 min and the supernatants were collected. Cell lysate containing 40 mg protein were used for western Blot analysis. Both anti-GFP (Abcam Catalog No. ab-32146) and anti-cMyc (Abcam Catalog No. ab-32072) were used for detection. Anti-GAPDH antibody (Abcam, ab9485) was used as a loading control.
 
-## Time-lapse microscopy
+### Time-lapse microscopy
 
 Images were acquired on a Nikon TiE inverted fluorescence microscope equipped with an automatic focus correction system, a SOLA LED light source (Lumencor), and a Neo sCMOS camera (ANDOR Technology Ltd). The Nikon TiE fluorescent microscope was adapted for long-term time-lapse microscopy through the addition of an environmental chamber that maintains a constant environment of 37°C, 5% CO2, and 40% humidity. Images were acquired with a 20x plan apo objective (NA 0.75) every 30 min over a 24 hr period. The mCherry filter set contained filters of 550/28 nm for the excitation light, 585 nm for the dichroic beam splitter, and 605/52 nm for the emission light (Chroma). The GFP filter set contained filters of 485/25 nm for the excitation light, 495 nm for the dichroic beam splitter, and 525/36 nm for the emission light (Chroma). The Turquoise filter set contained filters of 434/21 nm for the excitation light, 450 nm for the dichroic beam splitter, and 480/40 nm for the emission light (Chroma). Images were analyzed using NIS-Elements software (Nikon) and MATLAB software (Mathworks), which is available upon request.
 
-## Chip-pcr
+### Chip-pcr
 
 The binding of MYC to the reporter and endogenous promoter regions was performed with the ChIP-IT High Sensitivity kit (Active Motif, Catalog number:53040) following the manufacturer’s instructions with minor changes. Frozen cells were resuspended and fixed in the growth medium containing 1/10 vol of fixation buffer at room temperature for 15 min. with gently shaking and then 1/20 medium volume of stop solution was added. The chilled cells were lysed with 30 strokes through a 25½ G needle and then centrifuge at 1250 g for 3 min. Chromatin sonication was performed with Qsonica sonicator Q700 systems using microprobes. Sonication was performed at 30% amplitude, pulse 30 s on and 30 s off for a total ‘’on’’ time of 10–20 min, depending on the cell number. Chromatin immunoprecipitation was performed with anti-GFP antibody (Abcam) or pre-Immune normal rabbit IgG (Santa Cruz Biotechnology, catalog number: sc-2017) as control. Quantitative PCR was performed with LightCycler480 probe system and the LightCycler 480 Probes master (Roche-applied Science, ref number: 04707494001). The primers for BEX and EZH2 are the same as previously described (Nie et al., 2012). The primers forPLVX-LGET-mCherry were: PLVX-LGET -F: 5’AAATTCAAAATTTTCGGGTTTATTAC-3’, -R: 5’CGGGGCTAGCGGAGTACTGT-3’. The Universal library probes used for the PCR reaction were PLVX-LGET-mcherry: #56; human EZH2; #82; human BEX: # 52. To compare WT MYC-EGFP and Myc -Box mutant MYC-EGFP binding to promoters, the procedures are the same as previously described (Nie et al., 2012) and above with some modifications. The wt and MBI, II, III, and IV mutated -MYC pTripZ EGFP stable U2OS cells each were grown in the 2 150 mm plates. At about 80–90% confluency, cells were treated with or without 0.5 mg/ml of doxycycline for 8 hr. The cells cross-linked with formaldehyde, sonicated and subjected to chromatin immunoprecipitation as before. The PCR-reaction conditions are antibody, primers and the reagents are the same as above.
 
-## Two-factor competition assays
+### Two-factor competition assays
 
 Detailed descriptions of the two-factor competition assay for steroid-induced gene transcription, and the resulting predictions of the mechanism and site of action of the factors being assayed, can be found elsewhere (Blackford et al., 2014; Blackford et al., 2012; Chow and Simons, 2018; Dougherty et al., 2012; Ong et al., 2010; Pradhan et al., 2016; Zhu et al., 2014) . Briefly, the experiments consist of measuring the gene induction dose-response curve as a function of Dex for various combinations of two added factors. From each factor combination the maximal activity Amax and the Dex dose of half-maximum EC50, are estimated from the dose-response curve. The basic protocol for gene induction (Zhu et al., 2014) was followed, where each assay consists of 16 combinations (4 concentrations of both factor 1 and factor 2), each with four concentrations of Dex, all in triplicate, for a total of 192 wells. Triplicate samples of cells were seeded into 24-well plates at 20,000 cells per well and transiently transfected the following day with luciferase reporter (GREtkLUC) and DNA plasmids for rat GR plus the factors being examined by using 0.7 µl Lipofectamine (Invitrogen) or Fugene 6 (Roche) per well according to the manufacturer's instructions. The total transfected DNA was adjusted to 300 ng/well of a 24-well plate with pBluescript II SK+ (Stratagene; La Jolla, CA). The molar amount of plasmids expressing different protein constructs was kept constant with added empty plasmid or plasmid expressing human serum albumin (Wang et al., 2004). Renilla-TS (10 ng/well of a 24-well plate) was included as an internal control. After transfection (32 hr), cells were treated with medium containing the appropriate chemicals and/or hormone dilutions. The cells were lysed 20 hr later and assayed for reporter gene activity using dual luciferase assay reagents according to the manufacturer's instructions (Promega, Madison, WI). Luciferase activity was measured by GloMax 96 Microplate Luminometer (Promega). The data were expressed as a percentage of the maximal luciferase response with Dex above background before being plotted ± standard error of the mean, unless otherwise noted. All plots of the data assume a linear increase in factor plotted on the x-axis. When Western blots revealed a non-linear relationship between the optical density of scanned protein band and the amount of transfected plasmid at constant levels either of total cellular protein, or of β-actin, the linear equivalent of expressed plasmid must be determined (Dougherty et al., 2012). In contrast to previous analyses, but consistent with the presentation of data in the rest of this paper, the values of Amax are not corrected for Renilla expression because Renilla expression is itself affected by MYC. An unbiased estimate of the intersection point of a set of linear regression fits to graphs such as Amax/EC50 vs. factor, is determined from what is called an ‘a vs. b plot’.

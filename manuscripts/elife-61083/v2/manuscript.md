@@ -37,25 +37,37 @@ In this study, we examined several processing-resistant Ci variants and found th
 
 ## Results
 
-## Functional transgenes and CRISPR ci alleles
+### Functional transgenes and CRISPR ci alleles
 
 We developed strategies to study Ci expressed at physiological levels from ‘genomic ci’ transgenes (gCi) and CRISPR-engineered ci alleles (crCi). The former strategy used a 16 kb genomic region of ci that included upstream and downstream regulatory regions (Figure 1A) previously used within a second chromosome P-element insertion to rescue ci null animals (Méthot and Basler, 1999), inserted into an att site on the third chromosome (Garcia-Garcia et al., 2017). A gCi-WT transgene was readily able to rescue homozygous ci null (ci94) animals to adulthood, with normal morphology, and behaved almost like a normal ci allele but with marginally lower ci expression and activity in wing discs (Figure 1C,G). We created gCi variants using this strategy.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig1-v2.jpg)
 
-**Figure 1.:** (A) The ‘genomic Ci’ transgene (gCi) was derived from a 16 kb genomic region of ci cloned into an att-Pacman vector and inserted at att ZH-86FB located at 86F on the third chromosome. It includes a 6.7 kb upstream promoter region, exons1-6 (blue boxes), introns (blue line), and 0.7 kb of the 3’UTR. (A’–A”) CRISPR ci (crCi) alleles were generated in two rounds. (A’) The first round inserted a mini-white gene (pink box) into the first intron of endogenous ci using two guide RNAs (orange) in the first intron and altered PAM sites on the donor template (green star). (A”) The second round replaced intron 1 and exons 2–6 (blue lines and boxes) including the mini-white gene; the donor template had mutated PAM sites (purple stars) corresponding to the gRNA4 site, approximately 30 bp outside the mutated PAM site for gRNA1, and in the 3’UTR 5 kb away from gRNA 2, labeled gRNA 3. (B–E) Third instar wing discs showing ptc-lacZ reporter gene expression, visualized by Beta-galactosidase antibody staining (red), with the posterior edge of AP border expression marked by yellow arrowheads, and (B’–E’) full-length Ci-155, visualized by 2A1 antibody staining (gray-scale). Anterior is left and ventral is up. (B) Two copies and (D) one copy of crCi-WT, or (C) one copy of gCi-WT supported normal patterns of elevated ptc-lacZ and Ci-155 at the AP border but (D, E, I’) sporadic ectopic posterior ptc-lacZ expression (white arrows) was seen whenever a single ci allele was present, even (94E) in discs with no synthetic ci transgene or allele (Dp[y has wild-type +]ci). (F–I) Induction of En (green) at the AP border was detected by using the posterior boundary (yellow dashed line) of ptc-lacZ (red) to distinguish anterior (left) from posterior compartment cells, which express En independent of Hh signaling. En induction was normal in the presence of (F) two copies of cr-Ci-WT, (H) one copy of crCi-WT or (I) one wild-type ci allele and (G) was slightly reduced in the presence of one copy of gCi-WT. Scale bars are (B–E) 100 μm and (F–I) 40 μm.
+**Figure 1.:** (A) The ‘genomic Ci’ transgene (gCi) was derived from a 16 kb genomic region of ci cloned into an att-Pacman vector and inserted at att ZH-86FB located at 86F on the third chromosome. It includes a 6.7 kb upstream promoter region, exons1-6 (blue boxes), introns (blue line), and 0.7 kb of the 3’UTR. (A’–A”) CRISPR ci (crCi) alleles were generated in two rounds. (A’) The first round inserted a mini-white gene (pink box) into the first intron of endogenous ci using two guide RNAs (orange) in the first intron and altered PAM sites on the donor template (green star). (A”) The second round replaced intron 1 and exons 2–6 (blue lines and boxes) including the mini-white gene; the donor template had mutated PAM sites (purple stars) corresponding to the gRNA4 site, approximately 30 bp outside the mutated PAM site for gRNA1, and in the 3’UTR 5 kb away from gRNA 2, labeled gRNA 3. (B–E) Third instar wing discs showing ptc-lacZ reporter gene expression, visualized by Beta-galactosidase antibody staining (red), with the posterior edge of AP border expression marked by yellow arrowheads, and (B’–E’) full-length Ci-155, visualized by 2A1 antibody staining (gray-scale). Anterior is left and ventral is up. (B) Two copies and (D) one copy of crCi-WT, or (C) one copy of gCi-WT supported normal patterns of elevated ptc-lacZ and Ci-155 at the AP border but (D, E, I’) sporadic ectopic posterior ptc-lacZ expression (white arrows) was seen whenever a single ci94 allele was present, even (E) in discs with no synthetic ci transgene or allele (Dp[y+] has wild-type ci). (F–I) Induction of En (green) at the AP border was detected by using the posterior boundary (yellow dashed line) of ptc-lacZ (red) to distinguish anterior (left) from posterior compartment cells, which express En independent of Hh signaling. En induction was normal in the presence of (F) two copies of cr-Ci-WT, (H) one copy of crCi-WT or (I) one wild-type ci allele and (G) was slightly reduced in the presence of one copy of gCi-WT. Scale bars are (B–E) 100 μm and (F–I) 40 μm.
 
 We also created mutant ci alleles by using CRISPR in two rounds: in the first round, we put a mini-white marker gene in the first intron of ci (Figure 1A’); in the second round, we selected against the mini-white gene and introduced our mutation of interest, replacing the DNA between the first intron and the 3’UTR by homologous recombination (Figure 1A”). A single copy of crCi-WT in combination with ci94 resulted in efficient development of normal adults and larval wing discs with normal patterns of En, ptc-lacZ and Ci-155 expression in the anterior compartment (Figure 1D,H).
 
 During these studies, we also became aware of an artifact, whereby low levels of ptc-lacZ product were detected sporadically in posterior cells of wing discs when there was a single ci94allele; this occurred in flies with a normal ci allele (on the Dp(y+) ‘balancer’) (Figure 1E) or with the crCi-WT allele (Figure 1D). The artifact was also seen with gCi-WT when ci94 was heterozygous (data not shown) but not when ci94 was homozygous (Figure 1C) or when crCi-WT was homozygous (Figure 1B). We sequenced the relevant region of the ci94 allele and confirmed that it was the same deletion originally reported (Méthot and Basler, 1999; Slusarski et al., 1995) and in FlyBase. We also induced homozygous ci94 clones (by FRT-mediated recombination to remove a second chromosome genomic ci transgene) and confirmed that ci94 encoded no detectable Ci-155 protein (data not shown). Thus, despite the observed sporadic expression of ptc-lacZ in posterior cells in some genetic backgrounds, we are confident that the activity of Ci variants can be assayed in anterior wing disc cells in a null background under physiological conditions using either crCi alleles or gCi transgenes.
 
-## Processing-resistant Ci variants have elevated Ci-155 levels in anterior cells
+### Processing-resistant Ci variants have elevated Ci-155 levels in anterior cells
 
 PKA phosphorylates Ci-155 at amino acids S838, S856, and S892 to create recognition sites for both GSK3 and CK1, which further phosphorylate Ci-155 at a consecutive series of primed phosphorylation sites (Smelkinson and Kalderon, 2006; Smelkinson et al., 2007). The phosphorylation series creates a binding site for Slimb that includes the core peptide pSpTYYGpS849MQpS, spanning residues 844–852. Ci-S849A lacks the last CK1 target site initially primed by PKA phosphorylation of S838 and Ci-P(1-3)A has alterations to all three PKA sites (S838A, S856A, and S892A). Ci fragments with those alterations showed complete loss of Slimb binding in vitro after phosphorylation by PKA, CK1 and GSK3, while UAS-Ci transgene products with those changes showed no processing in wing discs, judged by a sensitive assay of repressor function in posterior compartment wing disc cells (Smelkinson and Kalderon, 2006; Smelkinson et al., 2007). The activity of these proteins has not previously been measured under physiological conditions. We therefore used ci alleles with those alterations to determine how loss of processing affects Ci protein levels and activity at normal physiological levels.
 
 The wing discs of animals with crCi-S849A or crCi-P(1-3)A in combination with ci94 had expanded anterior regions (Figure 2A–D), as expected because Ci-75 repressor, normally produced from Ci-155 processing, is required to silence dpp expression in anterior cells and ectopic anterior Dpp induces anterior growth (Méthot and Basler, 1999). We also found that these wing discs had strongly elevated Ci-155 levels throughout the anterior, indicating that full-length Ci-155 was not being processed in the absence of the Hh signal, as expected (Figure 2A–D; Figure 2—figure supplement 1A–D,G,H).
 
-## Processing-resistant Ci variants reveal the pattern of Hh-stimulated Ci-155 reduction at the AP border
+![Figure 2.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig2-v2.jpg)
+
+**Figure 2.:** (A–J) ptc-lacZ (red) and (A’–J’) Ci-155 (gray-scale) in wing discs with one copy of the indicated crCi alleles (with ci94) at (A–F) low (20x objective) and (G–J) high (63x objective) magnification, with AP boundary (dotted yellow line at posterior ptc-lacZ boundary). Scale bars are (A–F) 100 μm and (G–J) 40 μm. (G”–J”) Intensity profiles for ptc-lacZ (red) and Ci-155 (black) from anterior (left) to posterior. Vertical lines indicate ptc-lacZ peak (green), initial rise (orange) and 50% increase to peak (brown). Profiles are from two wing discs for crCi-Δ1270–1370 and three discs for all other samples, aligned and measured as described in Materials and methods. Note that the green line corresponding to maximal ptc-lacZ effectively represents the AP compartment boundary. The profile of ptc-lacZ posterior to that location does not decline precipitously but the decline is not informative (it likely results in part because the columnar cells are not uniformly shaped, so that the measured z-sections include portions of anterior and posterior cells). Territory posterior to the ptc-lacZ peak has yellow shading in (G”–J”) and (K, L) to indicate that it does not contain useful information. The profiles of ptc-lacZ and Ci-155 that report responses to Hh are in the territory anterior to the ptc-lacZ peak. (K) Normalized Ci-155 profiles for indicated crCi alleles derived from G’-J’ but with a smoothing function that calculates average intensity for five successive locations centered on each x-axis location. Arrows indicated locations of ptc-lacZ initial rise, 50% increase and peak for crCi-WT discs. (L) ptc-lacZ (red) and Ci-155 (black) smoothened profiles for crCi-WT, with red guide lines for locations of initial rise, 50% increase and peak ptc-lacZ. The difference between the average Ci-155 intensity for Ci-P(1-3)A and Ci-S849A at each point along the x-axis was subtracted from the maximum Ci-155 intensity for those genotypes (observed in cells anterior to the AP border) to calculate values for Hh-stimulated Ci-155 reduction. These values were added to the Ci-WT Ci-155 profile at each location to produce the blue curve, representing Ci-155 levels in the absence of Hh-stimulated reduction. Blue guide lines show the locations where inferred Ci-155 processing is first inhibited, 50% inhibited, and fully inhibited. See also Figure 2—figure supplement 1 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) ptc-lacZ (red) and Ci-155 (black) intensity profiles for wing discs expressing one copy of the designated ci transgene or alleles from Figure 2A–F. Profiles are from three wing discs for all samples, aligned and measured as described in Materials and methods. (G–K) ptc-lacZ (red) and (G’–K’) Ci-155 (gray-scale) in wing discs with one copy of the indicated crCi alleles (with ci94) and (J, K) homozygous loss of Su(fu) at high (63x objective) magnification, with AP boundary (dashed yellow line at posterior ptc-lacZ boundary). Scale bars are (G–K) 40 μm. (L, M) Intensity profiles for (L) Ci-155 and (M) ptc-lacZ for crCi-WT and crCi-S3-5 in the presence (black and red, respectively) or absence (gray and green, respectively) of Su(fu). Arrows in (L) indicate the locations of ptc-lacZ initial rise (orange), 50% increase (brown) and peak (green) for crCi-WT discs. Note that the green arrow corresponding to maximal ptc-lacZ effectively represents the AP compartment boundary. Thus, the profiles of ptc-lacZ and Ci-155 that report responses to Hh are in the territory anterior to the ptc-lacZ peak; territory posterior to the ptc-lacZ peak has yellow shading to indicate that it does not contain useful information. (N, O) Anterior En (green) induction, revealed by ptc-lacZ (red) marking of the AP boundary (yellow line) extended further anterior for (N) crCi-WT than (O) crCi-S3-5. Scale bars 40 μm. (P) ptc-lacZ intensity profiles (from Figure 2G”–J”) for crCi-P(1-3)A (green), crCi-S849A (red) and crCi-WT (black) were overlapping, while ptc-lacZ induction was much lower for crCi-Δ1270–1370 (gray).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Wing discs with gCi-S849A and no other source of functional Ci (B) induced ectopic anterior dpp-lacZ (gray-scale) in addition to the AP border stripe but (A) ectopic dpp-lacZ expression is suppressed by a wild-type ci allele (on the Dp[y+] chromosome). (C, D) Wing discs with one copy of (C) gCi-WT or (D) gCi-S849A have similar expression of ptc-lacZ (red) confined to the AP border (at a lower level than in wing discs without ciCe) and normal morphology in the presence of a ci allele that produces constitutive Ci repressor (ciCe). 2A1 antibody staining (gray-scale) is high throughout the anterior in both cases because the ciCe product includes the 2A1 epitope and does not undergo regulated processing. (E) Wing discs with anterior clones (GFP, green, yellow arrows) that have lost a second chromosome gCi transgene, leaving one copy of the crCi allele as a source of Ci. ptc-lacZ was not detected in clones expressing Ci∆1270–1370 (arrows), in contrast to the AP border (arrowheads). (F) Anterior En was much reduced for Ci∆1270–1370 in wing discs expressing one copy of the crCi allele as the only source of Ci. Scale bars (A–D) 100 μm and (E, F) 40 μm.
+
+### Processing-resistant Ci variants reveal the pattern of Hh-stimulated Ci-155 reduction at the AP border
 
 Although normal wing discs have a clear stripe of elevated Ci-155 at the AP border relative to anterior cells (Figure 2A), Ci-155 levels actually decline over the posterior half of the AP border (Figure 2G) in a manner that depends on strong activation of the Hh pathway (Ohlmeyer and Kalderon, 1998; Strigini and Cohen, 1997). Although Ci-155 protein levels were strongly elevated compared to normal for Ci-S849A and Ci-P(1-3)A in anterior cells, there was a sharp decline toward the posterior of AP border territory (Figure 2H,I; Figure 2—figure supplement 1A–D,G,H). This profile represents the gradient of Hh-stimulated Ci-155 loss that has generally been attributed to full degradation. It has not previously been seen in isolation because it is normally super-imposed on an unknown profile due to inhibition of Ci processing for wild-type Ci (Figure 2K). Moreover, if the observed pattern of Ci-155 reduction is the same for wild-type Ci (see later), we can subtract this profile from the observed Ci-155 profile of wild-type Ci to deduce a profile of wild-type Ci-155 processing (Figure 2L). The result shows that the inhibition of Ci-155 processing is graded, with a spatial profile broadly similar to that of ptc-lacZ activation, but with a slightly higher sensitivity to low levels of Hh (Figure 2L). Thus, comparison of the Ci-155 profiles of wild-type and processing-resistant variants provided the best evidence to date of the spatial patterns of graded inhibition by Hh of Ci-155 processing (Figure 2L) and of graded, Hh-promoted Ci-155 loss at the AP border (Figure 2H,I,K).
 
@@ -63,19 +75,19 @@ We also created a ci allele, Ci∆1270–1370, resembling a C-terminal deletion 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig3-v2.jpg)
 
-**Figure 3.:** A–C) Wing discs with one copy of indicated crCi alleles.ptc-lacZ (red) indicates the AP compartment boundary (yellow line) to reveal induction of the high-level Hh target gene En (green) in anterior cells at the AP border. (D–F) Wing discs with anterior clones (GFP, green, yellow arrows) that have lost a second chromosome gCi transgene, leaving one copy of the indicated crCi alleles as a source of Ci. (D’–F’) Little (E’) or no (D’, F’) ptc-lacZ induction was observed in the clones (arrows) relative to the AP border (arrowheads). Scale bars are (A–F) 40 μm. (G–L) Wings from adult flies with the indicated ci transgenes and alleles (ci encodes a constitutive repressor). The spacing between veins 3 and 4 is (CeJ–L) normal for two copies of WT or S849A ci alleles and (G–I) similarly reduced for one copy of WT or S849A alleles. At least five high-quality mounted wings were examined for each genotype. Scale bars are (G–I) 500 μm.
+**Figure 3.:** ptc-lacZ (red) indicates the AP compartment boundary (yellow line) to reveal induction of the high-level Hh target gene En (green) in anterior cells at the AP border. (D–F) Wing discs with anterior clones (GFP, green, yellow arrows) that have lost a second chromosome gCi transgene, leaving one copy of the indicated crCi alleles as a source of Ci. (D’–F’) Little (E’) or no (D’, F’) ptc-lacZ induction was observed in the clones (arrows) relative to the AP border (arrowheads). Scale bars are (A–F) 40 μm. (G–L) Wings from adult flies with the indicated ci transgenes and alleles (ciCe encodes a constitutive repressor). The spacing between veins 3 and 4 is (J–L) normal for two copies of WT or S849A ci alleles and (G–I) similarly reduced for one copy of WT or S849A alleles. At least five high-quality mounted wings were examined for each genotype. Scale bars are (G–I) 500 μm.
 
-## Hh-promoted Ci-155 reduction is not eliminated by altering major Rdx/Hib-binding sites
+### Hh-promoted Ci-155 reduction is not eliminated by altering major Rdx/Hib-binding sites
 
 To study Hh-promoted Ci-155 reduction further we created an allele encoding a Ci variant with compromised Rdx/Hib binding. Rdx/Hib binds to Ci-155 through multiple sites; altering three principal binding regions (designated S3,4,5 in the cited study) through clustered point mutations rendered the altered Ci-155 (‘Ci-S3-5’) largely insensitive to Rdx/Hib in a tissue culture assay (Zhang et al., 2009). We found that animals expressing one copy of crCi-S3-5 (in combination with ci94) developed efficiently into adults with normally patterned wings (data not shown). In larval wing discs, the peak of ptc-lacZ expression was slightly elevated at the AP border compared to normal but the domain of induction of En (a high-level Hh target) was not expanded (Figure 2F; Figure 2—figure supplement 1F,I,M–O). The Ci-155 profile included low anterior levels, suggesting normal processing, and declined in the posterior regions of the AP border much like wild-type Ci-155, showing that Hh-stimulated Ci-155 reduction remained robust (Figure 2F; Figure 2—figure supplement 1I,L). The properties of Ci-S3-5 suggest that direct action of Rdx/Hib on Ci-155 does not account for a significant fraction of the reduction of Ci-155 stimulated by the highest levels of Hh signaling. Previous studies have not specifically tested only the direct effects of Rdx/Hib on Ci-155 in wing discs; some studies found that elimination or reduction of Rdx/Hib activity increased Ci-155 levels (Kent et al., 2006; Zhang et al., 2006), while others found no change in Ci-155 levels in the posterior half of the AP border region (Seong et al., 2010; Seong and Ishii, 2013).
 
-## Su(fu) is involved in Hh-promoted Ci-155 reduction at the AP border
+### Su(fu) is involved in Hh-promoted Ci-155 reduction at the AP border
 
 Suppressor of fused (Su(fu)) may participate in the Hh-stimulated reduction of Ci-155 at the AP border, potentially in more than one way. It has been found that Rdx/Hib indirectly reduces Su(fu) protein levels at the AP border (Liu et al., 2014) and it has been suggested that Su(fu) competes with Rdx/Hib for Ci-155 binding (Zhang et al., 2006). It has also been shown that loss of Su(fu) leads to greatly reduced Ci-155 levels, presumed to be due to enhanced degradation of Su(fu)-free Ci-155, throughout the wing disc (Ohlmeyer and Kalderon, 1998) and it has been conjectured that Hh may activate Ci-155 in part through Su(fu) dissociation from Ci-155, as suggested by studies of Gli activation (Humke et al., 2010; Lee et al., 2016; Tukachinsky et al., 2010).
 
 We examined Ci-155 AP border profiles for wild-type Ci and Ci-S3-5 in the absence of Su(fu). The two profiles were extremely similar; Ci-155 levels appeared to peak at, or very close to the AP compartment boundary, suggesting little or no Hh-stimulated loss (Figure 2—figure supplement 1J–L). The results are consistent with the hypothesis that Su(fu) is a key factor in the regulation of Hh-stimulated Ci-155 reduction at the AP border. This role of Su(fu) was apparent even in the absence of normal Rdx/Hib binding to Ci-155, suggesting that Su(fu) is not acting principally by competing with Rdx/Hib for Ci-155 binding.
 
-## Processing-resistant Ci variants have normal activity at the AP border
+### Processing-resistant Ci variants have normal activity at the AP border
 
 Remarkably, the pattern of En and ptc-lacZ induction at the AP border was normal for Ci-S849A and Ci-P(1-3)A (Figure 3A–C; Figure 2—figure supplement 1P), showing that Ci-155 processing is not essential for dose-dependent induction of these Hh target genes. The unchanged profile of pathway activity suggests that the profile of pathway-induced Ci-155 reduction is also likely to be the same for wild-type Ci and processing-resistant Ci variants, supporting the validity of using the latter profile to deduce the processing pattern of wild-type Ci-155 (Figure 2L).
 
@@ -83,7 +95,7 @@ Ci-S849A and Ci-P(1-3A) wing discs expressed dpp ectopically in anterior cells, 
 
 Normal wing morphology depends on long-range patterning elicited by the central stripe of Hh-induced Dpp and on creation of a central inter-vein region between veins 3 and 4 by stronger Hh signaling, sufficient to induce the transcription factor Collier, also known as Knot (Mohler et al., 2000; Vervoort, 2000; Vervoort et al., 1999). The adult wing phenotypes of animals with one copy of gCi-WT or gCi-S849A in a ci94/ciCe background were similar to each other, with a consistent moderate pinching between veins 3 and 4 (Figure 3G,H), although some animals with gCi-S849A also showed a greater narrowing of the inter-vein region (Figure 3I). We then tested the activity of a gCi transgene together with a crCi allele in trans to ciCe. We found that wing morphology was absolutely normal for flies with both gCi and crCi encoded wild-type Ci or when both encoded processing-resistant Ci-S849A (Figure 3J–L). Hence, we conclude that Hh can fulfill its normal morphogenetic function, culminating in a normally patterned wing in the complete absence of regulated Ci-155 processing.
 
-## Dependence of Ci-155 activity induced by Fused kinase on inhibition of Ci-155 processing
+### Dependence of Ci-155 activity induced by Fused kinase on inhibition of Ci-155 processing
 
 Fu can be activated synthetically in the absence of Hh stimulation by overexpression of Fu variants with either a membrane-targeting tag (GAP-Fu) or acidic residue replacements of phosphorylation sites key to normal activation (Fu-EE) (Claret et al., 2007; Zhou and Kalderon, 2011). Activated Fu can partially activate Smo (Claret et al., 2007; Sanial et al., 2017) but direct downstream, Smo-independent actions can be measured by assaying responses in smo mutant anterior clones expressing Fu-EE or GAP-Fu. Previously, such experiments showed that activated Fu alone was sufficient to elicit strong Hh target gene induction, suggesting that Ci-155 activation can be effective even without the normal inhibition of processing that occurs at the AP border (Zhou and Kalderon, 2011). Fu kinase activity is not required for Hh to block Ci-155 processing at the AP border (Alves et al., 1998; Ohlmeyer and Kalderon, 1998; Zadorozny et al., 2015). Nevertheless, synthetically activated Fu was observed to increase Ci-155 levels in anterior clones and further tests suggested this likely resulted from partial inhibition of Ci-155 processing mediated by Cos2 phosphorylation (Zhou and Kalderon, 2011).
 
@@ -91,13 +103,13 @@ To clarify the dependence of Ci-155 activation by Fu on Ci-155 processing inhibi
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig4-v2.jpg)
 
-**Figure 4.:** (A–I) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci) with clones (GFP, green, arrows) that express 94UAS-GAP-Fu and (A–E) lack smo activity or (F–I) are heterozygous for smo (arrowheads indicate AP border), showing (A’–I’) ptc-lacZ (red) and (A”–I”) Ci-155 (gray-scale). (A”–I”) Ci-155 levels were much reduced in clones whenever pathway activity was strongly induced (A”, B”, D”, F”, G”). Scale bars are 40 μm. (J, K) Average intensity of ptc-lacZ in clones (red), Ci-155 in clones (green) or neighboring anterior territory (blue), as a fraction of AP border levels for (J) smo GAP-Fu clones and (K) GAP-Fu clones. Mean and SEM shown. Significant differences between values for a given genotype compared to those for crCi-WT, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#). Additionally, in (J) ptc-lacZ was significantly increased for gCi-S849A versus gCi-WT (p<0.0001), as was the anterior level of Ci-155 (p<0.0001).  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A–I) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci94) with clones (GFP, green, arrows) that express UAS-GAP-Fu and (A–E) lack smo activity or (F–I) are heterozygous for smo (arrowheads indicate AP border), showing (A’–I’) ptc-lacZ (red) and (A”–I”) Ci-155 (gray-scale). (A”–I”) Ci-155 levels were much reduced in clones whenever pathway activity was strongly induced (A”, B”, D”, F”, G”). Scale bars are 40 μm. (J, K) Average intensity of ptc-lacZ in clones (red), Ci-155 in clones (green) or neighboring anterior territory (blue), as a fraction of AP border levels for (J) smo GAP-Fu clones and (K) GAP-Fu clones. Mean and SEM shown. Significant differences between values for a given genotype compared to those for crCi-WT, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#). Additionally, in (J) ptc-lacZ was significantly increased for gCi-S849A versus gCi-WT (p<0.0001), as was the anterior level of Ci-155 (p<0.0001).
 
 The Ci-155 levels detected within smo GAP-Fu clones were much lower than in surrounding territory in wing discs expressing processing-resistant Ci variants (Figure 4A,B,D,J). The reduction in Ci-155 was similar in magnitude to that observed in posterior regions of the AP border and presumably reflects Ci-155 reduction due to high Hh pathway activity. By contrast, wild-type Ci-155 levels were elevated in smo GAP-Fu clones relative to neighboring cells. Since ptc-lacZ in these clones was significantly lower than at the AP border (Figure 4C,J) there is likely little or no reduction in Ci-155 due to high pathway activity. The fact that Ci-155 clone levels were lower than maximal AP border Ci-155 levels for wild-type Ci (Figure 4C) therefore indicates that GAP-Fu does not inhibit processing to the same degree as Hh inhibits processing at the AP border. Thus, although the absolute steady-state levels of Ci-155 for Ci-WT and Ci-S849A in smo GAP-Fu clones were quite similar (Figure 4J), Ci-155 accumulation was limited by largely different mechanisms; significant continued processing for Ci-WT and pathway-stimulated loss for Ci-S849A.
 
 In summary, activation of Ci-155 by Fu to produce high levels of Hh target gene expression also requires provision of high levels of primary Ci-155 translation product that is protected from processing. The elevated Ci-155 supply produced by processing-resistant Ci variants is, however, not directly evident from measurement of steady-state Ci-155 levels because of subsequent, robust Ci-155 loss in response to high pathway activity. Even though steady-state Ci-155 levels are similar for Ci-WT and Ci-S849A, the proportion of Ci-155 molecules that are active is presumably higher for Ci-S849A in GAP-Fu clones.
 
-## PKA and Cos2 silence Ci-155 activity
+### PKA and Cos2 silence Ci-155 activity
 
 It was previously appreciated that Cos2, PKA and Slimb are all necessary for Ci-155 processing but that induction of Hh target genes was higher in anterior cos2 and pka mutant clones than in slimb mutant clones (Jiang and Struhl, 1998; Smelkinson et al., 2007; Wang et al., 1999). Loss of PKA also increased ptc-lacZ induction in slimb mutant clones (Smelkinson et al., 2007). These observations suggested that PKA and Cos2 inhibit Ci-155 activity in addition to promoting Ci-155 processing, with the potential reservations that the slimb alleles used in some tests may not have fully blocked Ci-155 processing or that Slimb may have additional relevant actions that reduce Ci-155 activity. The effect of PKA loss on the activity of processing-resistant UAS-Ci transgenes has also been investigated previously but the transgenes were expressed at non-physiological levels and such transgenes do not support normal Hh responses at the AP border (Smelkinson et al., 2007; Garcia-Garcia et al., 2017).
 
@@ -105,7 +117,7 @@ To test the effects of PKA and Cos2 on the activity of processing-resistant Ci-1
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig5-v2.jpg)
 
-**Figure 5.:** (A–K) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci) with clones (GFP, green, arrows) that lack (94A–G) pka activity or (H–K) cos2 activity (arrowheads indicate AP border), showing (A’–K’) ptc-lacZ (red) and (A”, C”–K”) Ci-155 (gray-scale). (B”) En (gray-scale) was weakly induced in pka clones from discs expressing Ci-P(1-3)A. Ci-155 levels were (A”, F”, H”) increased relative to neighboring anterior territory for Ci-WT but were (C”–E”, G”, I”–K”) either unchanged or slightly reduced, presumably from full proteolysis, for processing-resistant Ci variants. Scale bars are 40 μm. (L) Average intensity of ptc-lacZ in pka clones (red) or neighboring anterior territory (pink), and in cos2 clones (dark blue) or neighboring anterior territory (light blue), as a fraction of AP border levels. Mean and SEM shown. Significant differences between ptc-lacZ values in pka or cos2 mutant clones and neighboring anterior pka/+ or cos2/+ cells for a given genotype, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#).  Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A–K) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci94) with clones (GFP, green, arrows) that lack (A–G) pka activity or (H–K) cos2 activity (arrowheads indicate AP border), showing (A’–K’) ptc-lacZ (red) and (A”, C”–K”) Ci-155 (gray-scale). (B”) En (gray-scale) was weakly induced in pka clones from discs expressing Ci-P(1-3)A. Ci-155 levels were (A”, F”, H”) increased relative to neighboring anterior territory for Ci-WT but were (C”–E”, G”, I”–K”) either unchanged or slightly reduced, presumably from full proteolysis, for processing-resistant Ci variants. Scale bars are 40 μm. (L) Average intensity of ptc-lacZ in pka clones (red) or neighboring anterior territory (pink), and in cos2 clones (dark blue) or neighboring anterior territory (light blue), as a fraction of AP border levels. Mean and SEM shown. Significant differences between ptc-lacZ values in pka or cos2 mutant clones and neighboring anterior pka/+ or cos2/+ cells for a given genotype, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#).
 
 Induction of ptc-lacZ was substantially lower for pka mutant clones expressing wild-type Ci from a gCi transgene rather than from a cr-Ci allele (Figure 5F,L), showing that Ci-155 activity elicited by loss of PKA depends on Ci-155 levels. This dependence was previously shown by comparing wild-type animals and ci heterozygotes, and it was further shown that Hh target gene induction depended on the relative stoichiometry of Ci-155 and Su(fu), suggesting the hypothesis that only Su(fu)-free Ci-155 is active in pka mutant clones (Ohlmeyer and Kalderon, 1998). In all cases (pka or cos2 mutant clones, Ci-WT or Ci-P(1-3A), gCi-WT or crCi-WT), the levels of Ci-155 in clones matched or exceeded the highest levels at the AP border, suggesting little or no loss of Ci-155 due to high pathway activity. Indeed, activity in pka and cos2 clones may depend on Ci-155 levels exceeding the inhibitory capacity of Su(fu). No such requirement is expected in GAP-Fu clones because Fu can relieve inhibition by Su(fu). Thus, in contrast to the situation with GAP-Fu clones, the contribution to activity of a robust supply of Ci-155 that is not processed is reflected in elevated steady-state Ci-155 levels. In summary, the results for Ci-P(1-3A) clearly indicate that PKA and Cos2 inhibit the activity of Ci-155 that is not processed in the absence of Hh stimulation. The magnitude of inhibition is substantial.
 
@@ -113,7 +125,7 @@ Surprisingly, ptc-lacZ induction by Ci-S849A was not clearly higher in pka or co
 
 Ci∆1270–1370, which is also not subject to processing, did not induce ptc-lacZ in wild-type anterior cells (Figure 2E,J; Figure 2—figure supplement 2E) or in pka/+ or cos2/+ cells and was not strongly activated by loss of PKA or Cos2, producing ptc-lacZ expression significantly lower than Ci-WT (Figure 5E,K,L). Ci∆1270–1370 also has lower activity than Ci-WT at the AP border of wild-type discs (Figure 2E,J), but it is strongly activated by GAP-Fu (Figure 4B,I–K). Based on these observations and the hypothesis that PKA and Cos2 primarily inhibit Su(fu)-free Ci-155, we speculate that Ci∆1270–1370 may be inhibited more strongly than wild-type Ci by Su(fu), so that release from PKA and Cos2 inhibition is without effect and full relief from Su(fu) inhibition is achieved only by artificially strong GAP-Fu activation and not by normal Fu activation at the AP border.
 
-## Cos2 likely silences Ci activity by binding to the CORD region
+### Cos2 likely silences Ci activity by binding to the CORD region
 
 To investigate how Cos2 silences Ci-155 activity, we further examined the interactions between these proteins. Cos2 can bind to Ci-155 through three regions defined by in vitro binding assays: the CDN region (residues 346–440), the zinc fingers (residues 506–620) and the CORD domain (residues 934–1065) (Wang and Jiang, 2004; Zhou and Kalderon, 2010). Measurement of processing through Ci-155 levels and generation of repressor activity from UAS-Ci transgenes in wing discs previously showed that processing was absent only when the zinc finger and CORD domains were both removed (Zhou and Kalderon, 2010). To test whether Cos2-binding domains might be responsible for inhibiting Ci-155 activity we generated ci alleles lacking CDN, CORD or both regions. There are no known alterations to the zinc-finger region that affect Cos2 binding without compromising DNA binding and hence transcriptional activity of Ci-155.
 
@@ -121,13 +133,21 @@ We induced pka and cos2 clones in wing discs expressing only Ci∆CORD, Ci∆CDN
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig6-v2.jpg)
 
-**Figure 6.:** (A–J) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci) with clones (GFP, green, arrows) that lack (94A–F) pka activity or (G–J) cos2 activity (arrowheads indicate AP border), showing (A’–J’) ptc-lacZ (red) and (A”–F”) Ci-155 (gray-scale). (A”–F”) Ci-155 levels were increased relative to neighboring anterior territory for all Ci proteins, but the increase was relatively small for (B”) Ci-ΔCORD, suggesting that processing outside the clones may be inefficient. By contrast, a large change was observed for Ci-ΔCDNΔCORD, suggesting very efficient processing. Scale bars are 40 μm. (K) Average intensity of ptc-lacZ in pka clones (red) and in cos2 clones (blue), as a fraction of AP border levels. Mean and SEM shown. Significant differences between values for a given genotype compared to those for crCi-WT, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#). Additionally, ptc-lacZ was significantly increased for gCi-ΔCORD versus gCi-WT in pka mutant clones (p<0.0001).  Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A–J) Wing discs from animals with one copy of the designated ci transgenes and alleles (together with ci94) with clones (GFP, green, arrows) that lack (A–F) pka activity or (G–J) cos2 activity (arrowheads indicate AP border), showing (A’–J’) ptc-lacZ (red) and (A”–F”) Ci-155 (gray-scale). (A”–F”) Ci-155 levels were increased relative to neighboring anterior territory for all Ci proteins, but the increase was relatively small for (B”) Ci-ΔCORD, suggesting that processing outside the clones may be inefficient. By contrast, a large change was observed for Ci-ΔCDNΔCORD, suggesting very efficient processing. Scale bars are 40 μm. (K) Average intensity of ptc-lacZ in pka clones (red) and in cos2 clones (blue), as a fraction of AP border levels. Mean and SEM shown. Significant differences between values for a given genotype compared to those for crCi-WT, calculated by paired t-tests, are indicated for p<0.001 (*) and p<0.05 (#). Additionally, ptc-lacZ was significantly increased for gCi-ΔCORD versus gCi-WT in pka mutant clones (p<0.0001).
 
 In wing discs with no additional alterations, Ci∆CORD, Ci∆CDN, and Ci∆CORD∆CDN all supported a near-normal Ci-155 profile, indicating substantially normal regulation of Ci-155 processing, and strong ptc-lacZ expression confined to the AP border (Figure 7A–D). There was a slight enhancement of anterior Ci-155 levels for Ci∆CORD, which was also evident in a pka heterozygous background (Figure 6B) and in a Su(fu) mutant background (Figure 7—figure supplement 1A,C). That may indicate a mild processing deficit. However, there was a very strong contrast between low anterior and high AP border Ci-155 levels of Ci∆CORD∆CDN (Figure 6D; Figure 7D), supporting previous evidence that Ci-155 lacking both these Cos2-binding domains is processed very efficiently, perhaps even more efficiently than wild-type Ci, and that Hh blocks processing efficiently (Zhou and Kalderon, 2010). The experiments reported here, using Ci variants expressed at physiological levels, revealed a dependence on the Cos2-binding CORD domain for inhibiting Ci-155 activity that is not observed for Ci-155 processing or regulation of processing by Hh.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig7-v2.jpg)
+
+**Figure 7.:** (A–J) Wing discs from animals with one copy of the designated ci alleles (together with ci94), have (A–D) no ectopic anterior ptc-lacZ (red) unless (E) both the CORD domain is removed and processing blocked (by the S849A alteration). (A’–E’) Ci-155 (gray-scale) in the same wing discs. (F–J) Anterior En (green) induction, revealed by marking the AP compartment boundary (yellow lines) with the posterior extent of ptc-lacZ (red), was reduced for Ci variants (G, J) lacking the CORD domain, (J) especially together with the S849A alteration. (K) Wing disc with anterior clones (GFP, green, yellow arrows) that have lost a second chromosome gCi transgene, leaving one copy of crCi-S849AΔCORD as the only source of Ci, showing (K’) ptc-lacZ induction in the clones (arrows) to levels similar to the AP border (arrowheads); (K”) Ci-155 (gray-scale) is uniformly high because of blocked processing. Scale bars are (A–J) 40 μm. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61083/elife-61083-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–H) Wing discs expressing one copy of crCi-WT or crCi-ΔCORD as the only source of Ci, showing (A, C, E, F) Ci-155 (gray-scale), (B, D, G, H, A’–H’) ptc-lacZ (red) or (B, D, G, H, B”, D”, G”, H”) En (green) and AP compartment boundary (yellow line). Reduced En induction by Ci-ΔCORD was (B, D) not restored to normal by loss of Su(fu). (E–H) Loss of Fu kinase activity in fumH63 wing discs produced (E, F) similarly strong, broad Ci-155 at the AP border and (E’, F’) drastic reduction of ptc-lacZ for Ci-WT and Ci-ΔCORD, while (G, H) additional loss of Su(fu) restored ptc-lacZ without anterior En in both cases. (I–L) induction of ptc-lacZ (red) in smo mutant clones (green, arrows) expressing GAP-Fu was similar for Ci-WT and Ci-ΔCORD encoded by either (I, J) gCi transgenes or (K, L) crCi alleles and was much lower than at the AP border (arrowheads) in all cases, as presented graphically in (N). (M, M’) Much higher ptc-lacZ (red), matching AP border levels (arrowheads) were observed in GAP-Fu clones (green, arrows) expressing processing-resistant Ci-S849AΔCORD, accompanied by (M”) significant Ci-155 (gray-scale) proteolysis. (N) Average intensity of ptc-lacZ in clones as a fraction of AP border levels. Significant differences between values for a given genotype compared to those for crCi-WT, calculated by paired t-tests, are indicated for p<0.001 (*). There was no significant difference (p<0.05) for gCi-ΔCORD versus gCi-WT. Scale bars are (A, C, E, F) 100 μm and (D, G, H, I–M) 40 μm.
+
 The absence of ectopic anterior ptc-lacZ in wing discs expressing Ci∆CORD (Figure 7B,D) suggests that loss of Cos2-CORD association only leads to Ci-155 activity when Ci-155 processing is also inhibited. To test this hypothesis further, we created an allele expressing a processing-resistant Ci variant (S849A) that also lacked the CORD domain. We found that, unlike Ci∆CORD, Ci-S849A∆CORD in combination with ci94 resulted in wing discs with expanded anterior compartments and ectopic ptc-lacZ throughout the anterior (Figure 7B,E). Ectopic ptc-lacZ was much stronger than observed for Ci-S849A and was also evident cell autonomously in clones lacking a wild-type Ci transgene within wing discs expressing Ci-S849A∆CORD (Figure 7K). These results confirm that the CORD domain, which is only known to interact with Cos2, reduces Ci-155 activity when Ci-155 is not processed. Moreover, the observations that induction of ptc-lacZ in response to loss of PKA, Cos2 or the CORD domain depends on the dose of ci and protecting Ci-155 from processing are consistent with the idea that only Su(fu)-free Ci-155 is subject to inhibition by PKA and by Cos2 binding to the CORD domain.
 
-## Additional CORD domain contributions
+### Additional CORD domain contributions
 
 If the CORD domain serves only to permit Ci-155 inhibition by binding to Cos2, it might be expected that Ci∆CORD either has the same activity at the AP border as wild-type Ci, or perhaps greater activity if Hh does not normally fully oppose Cos2-CORD interactions at the AP border. In fact, Ci∆CORD (and Ci∆CDN∆CORD) supported normal levels of ptc-lacZ but reduced En induction (Figure 7A,B,D,F,G,I). Loss of Su(fu) did not restore robust En expression (Figure 7—figure supplement 1B,D) and induction of ptc-lacZ was much reduced by loss of Fu kinase, just as for Ci-WT (Figure 7—figure supplement 1E,F). Wing discs lacking both Fu kinase and Su(fu) had strong ptc-lacZ but no En induction at the AP border for both Ci∆CORD and Ci-WT (Figure 7—figure supplement 1G,H), consistent with an earlier report that Ci-155 activation by Fu operates substantially, but not entirely by antagonizing inhibition by Su(fu) (Zhou and Kalderon, 2011). We also found that Ci∆CORD responded to activated GAP-Fu similarly to Ci-WT (Figure 7—figure supplement 1I–L,N). From these results, we speculate that the CORD domain may facilitate a facet of activation of Ci-155 by Fu that does not involve countering Su(fu) inhibition. For example, Fu activated by Hh at the AP border may not engage efficiently with Ci-155 complexes in the absence of the CORD domain, leading to a deficit in En induction, but excess GAP-Fu may largely compensate for that deficiency to produce similar activation of Ci-WT and Ci∆CORD.
 
@@ -141,7 +161,7 @@ Hh signaling in Drosophila and in mammals involves two key changes: inhibition o
 
 **Figure 8.:** At the AP border, Hh (emanating from posterior, mustard yellow, territory) inhibits Ci-155 processing stimulated by Cos2, PKA, CK1, and GSK3, and activates Fu protein kinase activity to activate Ci-155, overcoming inhibition by Su(fu) and other factors. Hh also promotes a reduction of Ci-155 levels, most likely by promoting full Ci-155 proteolysis through induction of Rdx/Hib or reducing Su(fu) association. Here we used processing-resistant Ci variants to show that PKA and Cos2 (through binding the CORD domain on Ci-155) limit Ci-155 activity in anterior cells (left) and (right) to deduce the spatial profiles of Hh-stimulated Ci-155 reduction (‘proteolysis’, upward arrows) and inhibition of Ci-155 processing (downward arrows, blue triangle) at the AP border that underlie steady-state Ci-155 levels (brown). Graded target gene (En, Ptc, Dpp) activation is normally elicited by a combination of activated Ci-155 and Ci-75 repressor but was still observed when there was no regulation of Ci-155 processing, indicating that Ci-155 activation must be graded. Although graded Hh signaling was observed when Ci-155 processing is not regulated, Ci-75 repressor must be present in anterior cells to prevent ectopic dpp expression and inhibition of processing was shown to be important for activated Fu to induce high levels of ptc expression. Thus, Hh normally elicits graded inhibition of Ci-155 processing and graded activation of full-length Ci-155 but the activation gradient can suffice provided there is some repressor in anterior cells and Ci-155 is substantially spared from processing at the AP border.
 
-## Evidence that regulation of Ci-155 processing is not essential for Hh morphogen action
+### Evidence that regulation of Ci-155 processing is not essential for Hh morphogen action
 
 Processing of Ci-155 is initiated by phosphorylation of three PKA sites (‘P1-3’) and involves the creation of a Slimb-SCF complex binding site that includes phosphorylated S849. It has previously been shown that alteration of the PKA sites (P1-3A) or S849 (S849A) abrogates Slimb binding in vitro, Ci-75 production detected by Western blot of embryo extracts expressing HA-tagged transgenes and all Ci-75 repressor activity, assayed by hh-lacZ repression in smo mutant clones expressing ci transgenes in the posterior compartment of wing discs (Méthot and Basler, 2000; Price and Kalderon, 1999; Price and Kalderon, 2002; Smelkinson and Kalderon, 2006; Smelkinson et al., 2007). Moreover, we found here that Ci-P(1-3)A and Ci-S849A expressed at physiological levels produced high levels of Ci-155 throughout the anterior with no elevation at the AP border, and that dpp-lacZ was ectopically expressed in anterior cells, as expected if no Ci repressor is present (Méthot and Basler, 1999). Thus, the absence of processing for Ci-P(1-3)A and Ci-S849A has been firmly established.
 
@@ -151,7 +171,7 @@ Animals lacking both Fu kinase and Su(fu) also develop normal wings, although la
 
 The profile of Hh inhibition of Ci-155 processing had not previously been observed or deduced because wild-type Ci-155 is also subject to Hh-stimulated degradation and potentially other changes that also affect Ci-155 levels. Here, we have derived a clear profile of Hh-stimulated processes that lead to reduced Ci-155 by examining Ci variants that are not subject to processing. The Hh-stimulated decline in Ci-155 levels begins at a location where ptc-lacZ induction is roughly half-maximal and is roughly linear, resulting in a reduction of over twofold by the compartment boundary (Figure 2H”, I”, K; Figure 8). Although the mechanisms contributing to Hh-stimulated reduction in Ci-155 are not fully understood (see below), they appear always to be in proportion to pathway activity. Since both Ci-P(1-3A) and Ci-S849A have the same pathway activity profiles as Ci-WT, measured by ptc-lacZ and En, we assume that the Ci-155 reduction profile observed directly for the processing-resistant variants is very similar for wild-type Ci. We therefore added the observed value of Ci-155 loss at each AP location to the observed Ci-155 profile of wild-type Ci to deduce the normal Ci-155 profile due to processing alone (Figure 2L; Figure 8). The inhibition of Ci-155 processing extended from a location slightly anterior to the edge of ptc-lacZ induction to the AP border in a clearly graded manner that, in isolation, would alter Ci-155 levels more than two-fold. Thus, we have derived the first clear visualization of graded inhibition of Ci-155 processing and of graded, pathway-stimulated, Ci-155 loss.
 
-## Hh-stimulated Ci-155 reduction
+### Hh-stimulated Ci-155 reduction
 
 Both the mechanism and the purpose of Hh-stimulated Ci-155 reduction at the AP border remain uncertain. It was initially suggested that Hh-stimulated Ci-155 reduction was due to the transcriptional induction of Rdx/Hib, which bound activated Ci-155 directly to promote its degradation and limit the magnitude of Hh target gene induction by the highest levels of Hh (Kent et al., 2006; Zhang et al., 2009; Zhang et al., 2006). However, other studies found that Ci-155 levels remained low in high Hh signaling territory even when Rdx/Hib activity was eliminated and that Rdx/Hib might influence Ci-155 indirectly via modulation of Su(fu) protein levels (Liu et al., 2014; Seong et al., 2010; Seong and Ishii, 2013).
 
@@ -161,11 +181,11 @@ The complete absence of Su(fu) greatly reduces Ci-155 levels but not ci RNA leve
 
 Although the Rdx/Hib and Su(fu)-dependent proteolytic mechanisms outlined above are prominent candidates for mediating Hh-stimulated reduction of Ci-155 at the AP border, it is possible that transcriptional, RNA processing, or translational mechanisms are also involved. Initial studies of ci RNA and a lacZ enhancer trap of the ci locus (ci-lacZ) suggested that third instar larvae have spatially uniform anterior ci transcription and RNA (Eaton and Kornberg, 1990; Ohlmeyer and Kalderon, 1998). ci-lacZ was, however, seen to be markedly lower in AP border regions 30 hr after pupariation, possibly resulting from transcriptional repression of ci by En, which is itself induced in anterior cells only in late third instar larvae (Blair, 1992). Other studies have shown that the pattern of ci RNA splicing and overall RNA levels can be selectively altered by reduced activity of the exon-junction complex or the splicing factor, Srp54, suggesting the potential to regulate ci RNA processing (Garcia-Garcia et al., 2017).
 
-## Ci-155 activation by Fu
+### Ci-155 activation by Fu
 
 We found that artificially activated Fu (GAP-Fu) can activate processing-resistant Ci in anterior, Hh-free territory as effectively as normal Fu activity at the AP border. Wild-type Ci activated by GAP-Fu induced roughly two-fold lower levels of ptc-lacZ, and barely induced ptc-lacZ at all if it was produced at slightly lower levels by a gCi transgene rather than a ci allele. These results are consistent with the simple idea that more activated Ci-155 molecules collectively induce transcription more strongly. However, the steady-state level of Ci-155 in cells with synthetically activated Fu was not significantly higher for processing-resistant variants than for wild-type Ci, presumably because of robust Ci-155 degradation in response to high pathway activity. An analogous circumstance is apparent in posterior regions of the AP border: Ci-155 processing is largely inhibited, Fu kinase and Ci-155 are strongly activated but Ci-155 levels are similar to those in anterior cells because of robust Hh-stimulated Ci-155 reduction. The GAP-Fu experiment reports that high pathway activity causes a high rate of Ci-155 loss and that high pathway activity can only be maintained if there is an adequate, constant supply of fresh Ci-155 protected from processing. This imposed requirement might be the major purpose of Hh-promoted Ci-155 reduction at the AP border, rather than modulating the profile of the Hh signaling gradient. Under this arrangement, cells will continue to express high-level Hh target genes only when constantly stimulated. The arrangement also allows for the possibility of modulating pathway activity through both the degree of Fu activation and the rate of supply of Ci-155 that is protected from processing.
 
-## Ci-155 activity regulation by PKA and Cos2
+### Ci-155 activity regulation by PKA and Cos2
 
 We used the processing-deficient variant Ci-P(1-3A) to show that genetic removal of PKA or Cos2 substantially increased Ci-155 activity in the absence of Hh, providing evidence that both PKA and Cos2 inhibit Ci-155 activation in addition to their well-established roles of promoting Ci-155 processing (Figure 8). Earlier tests concerning the role of PKA generally reached the same conclusion but were subject to a number of caveats (Smelkinson et al., 2007; Wang et al., 1999). The findings reported here supersede those conclusions because physiological expression of Ci-155 variants was assayed in normal locations. They also showed that the magnitude of inhibition by Cos2 and PKA was substantial and allowed some exploration of the mechanisms involved.
 
@@ -179,25 +199,294 @@ In summary, at the AP border of wing discs, Hh inhibits Ci-155 processing, activ
 
 ## Materials and methods
 
-## Genomic ci cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ci</td>
+      <td>Flybase ID: FBgn0004859</td>
+      <td>CG2125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Cos2</td>
+      <td>Flybase ID: FBgn0000352</td>
+      <td>CG1708</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>PKA</td>
+      <td>Flybase ID: FBgn0000273</td>
+      <td>CG4379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Fused</td>
+      <td>Flybase ID: FBgn0001079</td>
+      <td>CG6551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Suppressor of Fused</td>
+      <td>Flybase ID: FBgn0005355</td>
+      <td>CG6054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>hs-flp</td>
+      <td>PMID:7867064</td>
+      <td>FBti0002738</td>
+      <td>hsp70-driven Flp recombinase on X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ci94</td>
+      <td>PMID:7705626 PMID:10102270</td>
+      <td>FBal0045443</td>
+      <td>5 kb deletion removing promoter and first exon</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ciCe</td>
+      <td>PMID:10102270</td>
+      <td>ciCe2 FBal0001657</td>
+      <td>8 bp deletion that is expected to result in a truncation of the protein at amino acid residue 975</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Dp[y+]</td>
+      <td>PMID:10102270</td>
+      <td>Dp(1;4)1021[y+] svspa-pol FBab0003151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Su(fu)LP</td>
+      <td>PMID:1468628</td>
+      <td>FBal0016296</td>
+      <td>Amorphic 1.5 kb deletion extending into neighboring kar gene</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>pka-C1H2</td>
+      <td>PMID:8391504</td>
+      <td>FBal0033960</td>
+      <td>G203D alteration to key kinase domain residue</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>smo2</td>
+      <td>PMID:15592457</td>
+      <td>FBal0015765</td>
+      <td>Behaves as a null</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>FRT 42D P[Smo+]</td>
+      <td>PMID:10102270</td>
+      <td>P[Smo+, hsp70-GFP] FBtp0012072</td>
+      <td>Fully rescues loss of smo function</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>FRT 42D cos22</td>
+      <td>PMID:11090136</td>
+      <td>FBal0001772</td>
+      <td>To generate loss-of-function cos2 clones</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>fumH63</td>
+      <td>PMID:8846897</td>
+      <td>FBal0120493</td>
+      <td>G203D loss of kinase activity</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>tub-GAL80 FRT 40A</td>
+      <td>BDSC BL-5192</td>
+      <td></td>
+      <td>For MARCM clones on 2L</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>FRT 42D P[Ci+] tub-GAL80</td>
+      <td>PMID:10102270</td>
+      <td></td>
+      <td>P[Ci+] 16 kb segment rescues ci null in stock for 2R MARCM clones</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>C765 &gt; Gal4</td>
+      <td>Flybase ID: FBti0002765</td>
+      <td></td>
+      <td>Spatially uniform wing disc GAL4 driver</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GAP-Fu</td>
+      <td>PMID:17658259</td>
+      <td>FBal0284373</td>
+      <td>Fu coding sequence with Myristoylation sequence from hGAP43 at N-terminus and CFP at C-terminus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ptc-lacZ</td>
+      <td>PMID:8898207</td>
+      <td>P[ptcA-lacZ] FBal0047864</td>
+      <td>10.8 kb ptc promoter driving lacZ</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ci-155 (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>AB_2109711</td>
+      <td>(1:3)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta-galactosidase (rabbit polyclonal)</td>
+      <td>MP Biomedicals</td>
+      <td>AB_2334934</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Engrailed (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>AB_528224</td>
+      <td>(1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488, 546, 594, 647</td>
+      <td>Thermofisher Scientific</td>
+      <td>Anti-rabbit, Anti-mouse Anti-Rat</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD4</td>
+      <td>Mann Lab</td>
+      <td>Addgene: 83954</td>
+      <td>Gibson cloning of gRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Bluescript genomic Cubitus interruptus</td>
+      <td>Basler Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>att-Pacman Expression Vector</td>
+      <td>DGRC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Goat Serum</td>
+      <td>Jackson Immunoresearch laboratories</td>
+      <td>RRID:AB_2336990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aqua Polymount</td>
+      <td>PolySciences</td>
+      <td>CN: 18606–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly</td>
+      <td>New England Biolabs</td>
+      <td>CN: E5510S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PfuUltraII Fusion HS DNA polymerase</td>
+      <td>Agilent Technologies</td>
+      <td>CN: 600670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zero Blunt Topo cloning vector</td>
+      <td>Invitrogen</td>
+      <td>CN: K270020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Transformax EPI 300 Electrocompetent E. coli</td>
+      <td>Epicentre Now lucigen</td>
+      <td>CN: EC300110</td>
+      <td>Electro-competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot TOP10 Chemically Competent E. coli</td>
+      <td>Thermofisher Scientific</td>
+      <td>CN: C4040-10</td>
+      <td>Chemically Competent cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH Bethesda Maryland</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>A Plasmid Editor (APE)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genomic ci cloning
 
 Genomic transgenes were created by cloning the entire 16 kb genomic ci region from a Bluescript-SK (BSK) vector (provided by Dr. K. Basler; Méthot and Basler, 1999) into an att-Pacman Expression vector (DGRC). To facilitate mutagenesis, the 16 kb fragment was first separated into two parts. The region including the promoter, first exon and part of the first intron (‘Ci fragment 2’) was cloned as a BamHI-NheI fragment into BSK cut with BamHI and XbaI to create BSK-CiF2. The complementary NheI-KpnI fragment containing all other exons and the 3’ UTR (‘Ci Fragment 1’) was cloned into BSK cut with SpeI and KpnI to create BSK-CiF1. BSK-CiF2 was cut with NotI and Bsp1201 to clone the whole CiF2 fragment into the P[acman]-CmR vector cut with NotI, so that RsrII and PmeI vector sites were downstream of ci first intron sequences in RP-CiF2. CiF1 was amplified from BSK-CiF1 by long-range PCR using PfuUltraII Fusion HS DNA polymerase (Agilent Technologies), adding RsrII and PmeI at either end and cloning the product into a Zero Blunt Topo cloning vector (Invitrogen). The RsrII-PmeI fragment was then cloned into RP-CiF2 cut with the same enzyme to create the final Pacman vector containing the entire 16 kb genomic ci DNA. The 28 kb gCi attPacman transgene was then inserted at the att ZH-86Fb landing site at cytological location 86F8 (Rainbow Transgenic Services).
 
-## Cloning for generating CRISPR alleles
+### Cloning for generating CRISPR alleles
 
-## First round of CRISPR
+#### First round of CRISPR
 
 A 5kb mini-white gene from the attPacman construct was cloned into the first intron of ‘Ci Fragment 1’ with the enzyme AaII. The PAM sites associated with guide RNA 1 (TGG->TGA) and guide RNA 2(TGG->TTG) were mutated on ‘Ci-Fragment 1’ in the Ci first intron. guide RNA 1 TCACCCAAAAATCTCGTATT and guide RNA 2 ATATATATACAAGAGTTCCT were cloned in pU6 chiRNA vectors separately. The donor template, guide RNA 1, and guide RNA two were then co-injected into fly embryos (wlig4; attp40 [nos-Cas9]/Cyo). Flies and guide RNA vectors were obtained from the Mann Lab and injections were carried out using Rainbow Transgenic Services. The injected flies were crossed to yw hs-flp; Sp/Cyo; TM2/TM6B; Dp[y+]/Dp[y+] flies (Dp[y+] is used throughout as an abbreviation for Dp(1;4)1021[y+]svspa-pol) and progeny screened for male flies that were white+. The transformants were balanced and further genotyped to confirm correct placement of the mini-white gene (reverse coding orientation compared to ci) in the intron. The ci-[w+] flies (4th chromosome) were used to create a stock, wlig4; attp40 [nos-Cas9]/Cyo; ci-[w+]/ci-[w+].
 
-## Second round of CRISPR
+#### Second round of CRISPR
 
 ‘Ci Fragment 1’ was repurposed as donor construct by adding 500 bp extra on the 3’UTR region to create a 1.1 Kb homology region outside of guide RNA 3 and 2 kb homology region outside of guide RNA 4. PAM sites were altered on the donor construct for guide RNA 3 (GGG->CCG) and guide RNA 4 (CGG->CAG). guide RNA 3 (GGGCTTACGCCGGTATTAG) and guide RNA 4 (GCTTTGGGTGTAGGAGCGTC) were cloned into a dual U6 (1+three promoter) expression construct pCFD4 provided by the Mann lab using Gibson assembly (New England Biolabs). The donor construct and the guide RNA construct were injected into wlig4; attp40 [nos-Cas9]/Cyo; ci-[w+]/ci-[w+] embryos. Surviving adults were crossed to yw hs-flp; Sp/Cyo; TM2/TM6B; Dp[y+]/Dp[y+] flies. Male crCi/Dp[y+] ‘transformants’ were identified by white eyes, amplified into suitable stocks and genotyped for sequences encoding Flag and HA tags upstream and downstream of ci coding sequence, respectively. Balanced ci alleles were further genotyped to confirm the mutation of interest.
 
-## Donor template cloning
+### Donor template cloning
 
 For crCi-WT, ∆CORD, P(1-3)A, S849A, S849A∆CORD, ∆1270–1370, ∆CDN, ∆CDN∆CORD plasmid design was developed using APE software. Overlapping primer PCR reactions were used to add, mutate, and delete regions on Ci with PfuUltraII Fusion HS DNA polymerase (Agilent Technologies). PCR products were introduced into the Zero Blunt Topo cloning vector (Invitrogen). The alterations in Ci were then re-introduced from the Zero Blunt Topo cloning Vector into the BSK-F1 Donor construct using compatible enzymes or Gibson Assembly (New England Biolabs). The final constructs were fully sequenced (Genewiz).
 
-## Drosophila stocks
+### Drosophila stocks
 
 Drosophila stocks were maintained on standard cornmeal/molasses/agar medium at room temperature.
 
@@ -221,11 +510,11 @@ Females of the genotype (‘2R’) yw hs-flp UAS-GFP; smo2 FRT42D P[Smo+] tub-Ga
 
 Females of the genotype yw hs-flp fumH63; FRT42D P[y+] P[Fu+]/Cyo; (Su(fu)LP) C765-GAL4 ptc-lacZ/TM6B, Tb; ci94/Dp[y+] were crossed to males of the genotype yw hs-flp; Sp/Cyo; (Su(fu)LP/TM6B); crCi-X/Dp[y+], selecting male third instar larval progeny lacking y+ and Tb to obtain wing discs lacking Fu kinase activity (with or without functional Su(fu)) and a single constructed crCi allele as the only source of Ci.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Wing disc clones were generated by heat-shocking late first or early second instar larvae for 1 hr at 37°C and dissections took place 3.5 to 4 days later in wandering third instar larvae. Wing discs were dissected from late third instar larvae in PBS and fixed in 4% paraformaldehyde (in PBS) for 30 min, rinsed 3X with PBS, blocked with 10% normal goat serum (Jackson ImmunoResearch Laboratories, Inc) in PBS-T (0.1% Triton) for 1 hr, and stained with the following primary antibodies: rabbit anti–β-galactosidase (1:10,000; MP Biomedicals), mouse 4D9 anti-Engrailed (1:5 Developmental Studies Hybridoma Bank), Rat 2A1 anti-Ci (1:3 Developmental Studies Hybridoma Bank), overnight at 4°. Inverted Larvae were then washed three times in PBST for 10 min each and incubated with Alexa Fluor 488, 546, 594, or 647 secondary antibodies (1:1000; Molecular Probes) for 1 hr at room temperature. Larvae were washed twice in PBST for 20 min each, once in PBS for 10 min and mounted in Aqua/Poly mount (Polysciences).
 
-## Quantitation from fluorescent images
+### Quantitation from fluorescent images
 
 Fluorescence images were captured using 20x, 63x, or 40x (discs with far anterior clones) objectives using 1.4 NA oil immersion lenses on a confocal microscope (LSM 700 and LSM800; Carl Zeiss). The range indicator was used to set the appropriate laser intensity per experiment for each fluorophore such that the signal was in the linear range.
 
@@ -233,10 +522,10 @@ Intensity Profiles: To measure intensity profiles along the AP axis, an elongate
 
 Clone Measurements: The average fluorescent intensity of ptc-lacZ or Ci-155 over specific regions was measured using Image J. Multiple clones or clone regions (for large clones), anterior regions (most commonly three per disc), AP border sections (three per disc), posterior regions (three per disc), were analyzed for each disc. To make sure the best region was acquired for measurements in clones, the region was selected using the GFP marker in the central part of the clone and confirmed to not be on a fold or shadowed region. For the AP border, regions were measured avoiding the DV boundary and abnormal folds. For Figures 4 and 6, ptc-lacZ clone intensity was calculated relative to AP border levels after subtracting anterior cell intensity values from each because ptc-lacZ is sometimes expressed artifactually in posterior cells: (clone-averaged anterior)/(averaged AP border-averaged anterior). In Figure 5 ptc-lacZ intensity in clones and anterior cells outside clones was in each case divided by AP border intensity without any subtractions. Ci-155 clone intensity and intensity in anterior cells outside clones (Figure 4) were calculated relative to AP border levels after subtracting posterior cell intensity values from each: (clone-averaged posterior)/(averaged AP border-averaged posterior) and (anterior-averaged posterior)/(averaged AP border-averaged posterior). For Figure 5, ptc-lacZ intensity measurements in clones and anterior regions were divided by the AP-Border.
 
-## Adult wings
+### Adult wings
 
 Adult wings were pulled off anaesthetized flies and placed in 70% ethanol for 5 min, transferred to 100% ethanol, and then mounted in Aqua/Poly Mount (Polysciences). They were imaged with Transmitted Light on a Nikon Diaphot 300 microscope using a 10x objective.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 All images shown are representative of at least five examples. No statistical method was used to predetermine sample size but we used prior experience to establish sufficient sample sizes. No samples were excluded from analysis, provided staining was of high quality. The experiments were not randomized; samples presented as groups in the results were often all part of the same experiment and were always treated in exactly analogous ways without regard to the identity of the sample. Investigators were not blinded during outcome assessment, but had no pre-conception of what the outcomes might be. For comparisons between the measured levels of ptc-lacZ product or Ci-155 a t-test was used to determine significance between pairs of genotypes (generally Ci variant versus wild-type Ci), and the errors for individual values determined from multiple samples was reported as the standard error of the mean.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.29224.001 The spatial organization of RNA within cells is a crucial factor influencing a wide range of biological functions throughout all kingdoms of life. However, a general understanding of RNA localization has been hindered by a lack of simple, high-throughput methods for mapping the transcriptomes of subcellular compartments. Here, we develop such a method, termed APEX-RIP, which combines peroxidase-catalyzed, spatially restricted in situ protein biotinylation with RNA-protein chemical crosslinking. We demonstrate that, using a single protocol, APEX-RIP can isolate RNAs from a variety of subcellular compartments, including the mitochondrial matrix, nucleus, cytosol, and endoplasmic reticulum (ER), with specificity and sensitivity that rival or exceed those of conventional approaches. We further identify candidate RNAs localized to mitochondria-ER junctions and nuclear lamina, two compartments that are recalcitrant to classical biochemical purification. Since APEX-RIP is simple, versatile, and does not require special instrumentation, we envision its broad application in a variety of biological contexts.
+The spatial organization of RNA within cells is a crucial factor influencing a wide range of biological functions throughout all kingdoms of life. However, a general understanding of RNA localization has been hindered by a lack of simple, high-throughput methods for mapping the transcriptomes of subcellular compartments. Here, we develop such a method, termed APEX-RIP, which combines peroxidase-catalyzed, spatially restricted in situ protein biotinylation with RNA-protein chemical crosslinking. We demonstrate that, using a single protocol, APEX-RIP can isolate RNAs from a variety of subcellular compartments, including the mitochondrial matrix, nucleus, cytosol, and endoplasmic reticulum (ER), with specificity and sensitivity that rival or exceed those of conventional approaches. We further identify candidate RNAs localized to mitochondria-ER junctions and nuclear lamina, two compartments that are recalcitrant to classical biochemical purification. Since APEX-RIP is simple, versatile, and does not require special instrumentation, we envision its broad application in a variety of biological contexts.
 
 ## Introduction
 
@@ -36,9 +36,21 @@ Here we introduce such a technology—termed APEX-RIP—that enables unbiased di
 
 ## Results
 
-## Development of APEX-RIP and its application to mitochondria
+### Development of APEX-RIP and its application to mitochondria
 
 APEX is an engineered peroxidase that can be targeted by genetic fusion to various subcellular regions of interest (Rhee et al., 2013) (Figure 1A). Upon addition of its substrates—biotin-phenol (BP) and hydrogen peroxide (H2O2)—to live cells, APEX catalyzes the formation of biotin-phenoxyl radicals that then diffuse outward and covalently biotinylate nearby endogenous proteins. More distal proteins are not significantly labeled because the biotin-phenoxyl radical has a half-life of less than one millisecond (Wishart and Madhava Rao, 2010). Previous work has shown that APEX-catalyzed proximity biotinylation, coupled to streptavidin enrichment and mass spectrometry, can generate proteomic maps of the mitochondrial matrix, intermembrane space, outer membrane, and nucleoid, each with <5 nm spatial specificity (Rhee et al., 2013; Hung et al., 2014, 2017; Han et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the APEX-RIP workflow. Live cells expressing APEX2 (grey ‘pacmen’) targeted to the compartment of interest (here, the mitochondrial matrix) are incubated with the APEX substrate biotin-phenol (BP; red B: biotin). A one-minute pulse of H2O2 initiates biotinylation of proximal endogenous proteins (Rhee et al., 2013), which are subsequently crosslinked to nearby RNAs by 0.1% formaldehyde. Following cell lysis, biotinylated species are enriched by streptavidin pulldown, and coeluting RNAs are analyzed by qRT-PCR or RNA-Seq. IMM: inner mitochondrial membrane. (B) Imaging APEX2 biotinylation in situ. HEK 293T cells expressing V5-tagged mito-APEX2 were biotinylated using the APEX-RIP workflow, fixed, and stained as indicated. The bottom row is a negative control in which H2O2 treatment was omitted. Scale bars, 10 µm. TOM20 is a mitochondrial outer membrane protein; neutravidin staining detects biotinylation. (C) In situ biotinylation of the mitochondrial matrix proteome requires mito-APEX2, BP, and H2O2. Streptavidin blot analysis of whole cell lysates prepared following the protocol described in (A), or after omitting components of the APEX reaction. Arrowheads denote endogenous biotinylated proteins (Chapman-Smith and Cronan, 1999). Anti-V5 blot (bottom) detects expression of mito-APEX2. (D–E) mito-APEX-RIP efficiently recovers the mitochondrial transcriptome. (D) Gene-level RNA-Seq analysis of mito-APEX-RIP; data are the average values of three experimental replicates. Fold change is defined as (FPKMpost-enrichment/FPKMpre-enrichment); dashed lines indicate significance thresholds for fold enrichment (determined by ROC analysis, see Materials and methods) and p-values calculated by CuffDiff2 (Trapnell et al., 2013). Mitochondrial genomes encode 13 mRNAs, two rRNAs and 22 tRNAs (red). Note that three mitochondrial tRNA genes, MT-TH, MT-TL2, and MT-TG, were also enriched. See Supplementary file 1A. (E) Nucleotide-level RNA-Seq analysis of mito-APEX-RIP, mapped to the human mitochondrial genome (innermost circle). Outermost circle: reads from the full APEX-RIP protocol; middle circle: reads from the negative control. Note the enrichment of several mitochondrially-encoded tRNAs and the D-loop leader transcript. Ribosomal RNAs were removed during library preparation (see Materials and methods). See also: Figure 1—figure supplements 1,2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top: Alternative labeling and crosslinking protocols. In protocol I., cells are crosslinked with formaldehyde (FA) and quenched with Glycine (Gly) prior to the introduction of biotin-phenol (BP) and the initiation of APEX-catalyzed biotinylation with H2O2. In Protocol II., live cells are incubated in BP, and in situ biotinylation is initiated prior to FA crosslinking. In both cases, cell lysis, streptavidin enrichment and RNA purification proceed as described (see Materials and methods). Bottom: qRT-PCR analysis comparing Protocols I and II. Negative control experiments replace mito-APEX with mito-GFP, or omit BP and H2O2. All constructs were APEX1 derivatives, transiently expressed in HEK 293T cells. Data are the means of three replicates ± one standard deviation. (B) RNA-Seq analysis of RNAs enriched by protocol I. Although all 13 mitochondrially-encoded mRNAs (green) were enriched, these were accompanied by substantial contaminating RNAs, including XIST and MAN2C1. Data from one experimental replicate are shown. (C) qRT-PCR analysis comparing Protocols I. and II., including off-target controls designed using the results from RNA-Seq in (B). Note the superior enrichment obtained using Protocol II. Cells in this experiment stably-expressed mito-APEX2. This protocol and cell line were used to collect all data in Figure 1. Data are the means of four replicates ± one standard deviation. Significance testing: Student’s two-tailed t-test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Pairwise correlations between global RNA abundances (FPKM) in biological replicates (A) prior to enrichment, and (B) following mito-APEX2-RIP.
 
 Because most cellular RNAs exist in close proximity to proteins, we reasoned that APEX-tagged subcellular proteomes could also provide access to the nearby subcellular transcriptomes by crosslinking labeled proteins and RNA together in situ (Figure 1A). As our first target organelle for this approach, we selected the mitochondrion because its RNA content—derived from both the mitochondrial genome and from imported, nuclear-encoded RNAs—has been extensively characterized by a wide array of complementary methods (Mercer et al., 2011; Alán et al., 2010; Piechota et al., 2006; Ro et al., 2013), hence providing a ‘gold-standard’ to which we can compare our results. The mitochondrial matrix was also the first mammalian compartment mapped by APEX proteomics methodology (Rhee et al., 2013). As an RNA-protein chemical crosslinker, we opted for mild formaldehyde treatment, which covalently captures most protein-protein and protein-nucleic acid interactions, and can be achieved with minimal disruption of native interactions in live cells. It is for these reasons that formaldehyde is used in several RIP technologies aimed at identifying the RNA partners of specific proteins of interest, including our own ‘fRIP-Seq’ protocol (Chris and Svejstrup, 2006, Hendrickson et al., 2016).
 
@@ -48,11 +60,27 @@ Deep-sequencing of mito-APEX-RIP libraries confirmed that mitochondrial mRNAs we
 
 Using the optimized APEX-first/crosslinking-second protocol, we then mapped the mitochondrial transcriptome of mito-APEX2-expressing HEK 293T cells by RNA-Seq (Figure 1D, Supplementary file 1B). Gene-level analysis comparing fold enrichment and statistical significance of all human genes (Materials and methods) revealed that all 13 mRNAs and both rRNAs encoded by the mitochondrial genome were highly enriched (greater than 11-fold; Figure 1D and Figure 1—figure supplement 2, Supplementary file 1A). Surprisingly, we even observed the enrichment of several mitochondrial-encoded tRNAs, although our library preparation workflow generally excluded such smaller RNA species (Figure 1D). Read density plots mapped to the mitochondrial genome demonstrated that most of our captured RNAs correspond to fully-processed transcripts, including mRNAs, interstitial tRNAs, and the D-loop leader sequence from which mitochondrial transcription initiates (Figure 1E). Intriguingly, mito-mRNA read densities appeared to correlate with previous measures of mRNA half-life (Nagao et al., 2008). For example, mRNAs encoding MTCO1-3 have longer half-lives, and more reads from APEX-RIP, than mRNAs encoding MTND1-2. We therefore conclude that APEX-RIP is a specific and sensitive approach for mapping the transcriptome within a membrane-bound organelle.
 
-## APEX-RIP mapping of nuclear-cytoplasmic RNA distribution
+### APEX-RIP mapping of nuclear-cytoplasmic RNA distribution
 
 Having established that APEX-RIP in the mitochondrion, we next turned our attention to a more challenging compartment: the mammalian nucleus. The nucleus is more complex and has a less well-defined transcriptome than the mitochondrial matrix, but previous Fractionation-Seq datasets from HEK 293T (Sultan et al., 2014) again provide a reference list to which we can compare our results.
 
 We generated HEK 293T cells that stably express APEX2 in the nucleus (APEX-NLS) or in the cytosol (APEX-NES, where NES is a Nuclear Export Signal) (Supplementary file 5A). The specificity of in situ biotinylation by these constructs within each compartment was confirmed by imaging (Figure 2A, Supplementary file 5B). Whole cell lysates prepared from each cell line also produced distinct ‘fingerprints’ of biotinylated proteins, as assayed by streptavidin blotting (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fluorescence imaging of nuclear and cytosol-targeted APEX2 fusion constructs. HEK 293T cells expressing the indicated constructs (‘NLS,’ nuclear localization signal; ‘NES,’ nuclear export signal) were labeled with biotin-phenol, crosslinked and stained as indicated. Scale bars, 10 µm. DAPI is nuclear stain. (B) APEX-RIP recovers known nuclear and cytosolic standard RNAs, defined here as long noncoding RNAs (nuclear markers, blue) and RNAs proximal to the Endoplasmic Reticulum (cytoplasmic markers,red—defined by (Jan et al., 2014), with measured p-values≤0.05—see Materials and methods). Top: APEX2–NLS-RIP enriches nuclear standards. Middle: APEX2–NES-RIP enriches cytoplasmic standards. Bottom: Combined analysis of the APEX2–NLS and APEX2–NES RIP experiments distinguish the two classes. Fold changes are defined as (FPKMpost-enrichment/FPKMpre-enrichment); combined fold change as [FPKMNLS–post-enrichment /FPKMNES–post-enrichment]. Dotted line indicates the significance threshold for nuclear localization. (C) Global analysis of nuclear and cytoplasmic RNA localization by combined APEX2-NLS and APEX2-NES RIP. Vertical dashed lines indicate the cutoffs for nuclear and cytosolic RNAs. Horizontal dash line indicates p-value=0.05. Top histogram illustrates the distribution of RNAs with p-value=5×10−5, which are boxed in gray in the scatter plot. The average of data from three biological replicates are shown. See Supplementary file 2A-B. (D) APEX-RIP reveals classes of RNAs with canonical and noncanonical nuclear-cytoplasmic distributions. Left: the same data as in (C), separately parsed into mRNAs (top) and lncRNAs (bottom). Right: read density plots of example RNAs from each class that exhibit stereotypical and atypical localization. EEF1A1 and C1orf63 are mRNAs; XIST and SNHG5 are lncRNAs. For each gene, a common y-scale is used for all read tracks. SnoRNAs encoded in the SNHG5 gene body are indicated as gray rectangles. (E) Venn diagrams comparing APEX-RIP and fractionation-based RNA datasets (Sultan et al., 2014). (F) Nuclear APEX-RIP is more sensitive than is biochemical fractionation. Left: Specificity of the APEX-RIP and nuclear RNA datasets (Sultan et al., 2014). Off-target RNAs were defined as actively translated ER-proximal mRNAs (Jan et al., 2014). Right: Recall of nuclear standard RNAs, defined as a set of 827 lncRNAs annotated by GENCODE hg19 with average pre-enrichment FPKM ≥ 1.0. See also: Figure 2—figure supplements 1–2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** HEK 293 T cells stably expressing the indicated constructs (right) were labeled and crosslinked via Protocol II (Figure 1—figure supplement 1A). Cell lysates were analyzed by SDS-PAGE, blotting with streptavidin-HRP, anti-V5 and anti-FLAG. L: ladder; U: untransfected HEK 293T cells. Anti-V5 and anti-FLAG blots (bottom left) measure fusion construct expression.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Pairwise correlations between global RNA abundances (FPKM) in biological replicates of the APEX2–NLS-RIP experiment, (A) prior to, and (B), following enrichment, and similarly, of the APEX2–NES-RIP experiment, (C) prior to, and (D) following enrichment.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A–B) Determination of cutoffs for APEX-RIP data by ROC analysis (see Materials and methods). (C) APEX protein localization isn’t perturbed during the APEX-RIP labeling and crosslinking protocol. APEX2-NLS HEK293T cells expressing a whole-cell GFP marker were processed using the optimized APEX-RIP protocol (bar diagram). Cells were fixed prior to, and following the mild formaldehyde crosslinking step (arrowheads), and imaged by immunofluorescence. Left: Representative images for cells fixed at each time point. Right: average nuclear-vs-cytosolic biotinylation signal ratio measured at both time points; each dot represents an individual cell (n = 30). p-value: student’s paired t-test. (D-—﻿E) APEX-RIP recapitulates the results of nuclear-cytosolic fractionation-sequencing. (D) Global analysis of nuclear and cytoplasmic RNA localization [FPKMnuclear/FPKMcytosolic] by biochemical fractionation-sequencing of HEK293 cells (Sultan et al., 2014). Horizontal dash line indicates p-value = 0.05. Top histogram illustrates the distribution of RNAs with p-value = 5×10−5, which are boxed in gray in the scatter plot. Average data from two biological replicates are shown. (E) Distribution of RNAs based on enrichment of nuclear over cytosolic fractionation, similar to the bottom panel of Figure 2B (see Materials and methods). (F–G) Determination of cutoffs for fractionation data (Sultan et al., 2014) by ROC analysis (see Materials and methods).
 
 We performed APEX-RIP on both APEX-NLS and APEX-NES cells, using the biotinylation-first/crosslinking-second protocol established above, with an additional one-minute radical-quenching step in between the APEX and crosslinking steps (Figure 2—figure supplement 2; see Materials and methods). Encouragingly, ‘gold standard’ nuclear and cytosolic RNAs were enriched from the corresponding cell lines as predicted: long non-coding RNAs, which are predominantly nuclear, were enriched in APEX-NLS-RIP and de-enriched in APEX-NES-RIP (Figure 2B, top), while endoplasmic reticulum-proximal mRNAs (Jan et al., 2014) exhibited the converse profile (Figure 2B middle). As a further test, we directly compared the enrichments from APEX2-NLS and APEX2-NES to one another, confirming that they had effectively parsed known nuclear- and cytosol-localized RNAs into the expected compartments (Figure 2B bottom and C). We used Receiver Operating Characteristic (ROC) analysis to obtain final transcript lists of 5740 nuclear RNAs and 5367 cytosolic RNAs, with observed contamination frequencies (i.e. the ratio of enriched off-target RNAs to total enriched RNAs) of <1.6% and <1.5%, respectively (Supplementary file 2A-C, Figure 2—figure supplement 3A–B, see Materials and methods).
 
@@ -62,13 +90,25 @@ Our APEX-RIP nuclear and cytosolic RNA lists provide an opportunity for a head-t
 
 To compare the coverage, or sensitivity, of each method (sometimes termed recall), we examined the enrichment in each dataset of lncRNAs, which are thought to be predominantly nuclear (Derrien et al., 2012). We assembled a list of 827 annotated lncRNAs (GENCODE v19) with average pre-enrichment FPKM greater than 1.0 (Supplementary file 2G). Of these lncRNAs, 53.6% are enriched in our APEX-RIP-derived nuclear dataset, while nuclear Fractionation-Seq from the same cell line enriched only 42.2% (Figure 2F, right). We conclude that APEX-RIP rivals or outperforms Fractionation-Seq in terms of both specificity and coverage, for analysis of endogenous RNA subcellular localization.
 
-## Enrichment of RNAs proximal to the ER membrane
+### Enrichment of RNAs proximal to the ER membrane
 
 Having established that APEX-RIP can enrich RNAs in membrane-enclosed cellular compartments, we next sought to address whether the technique could successfully capture the transcriptomes of ‘open’ subcellular regions. Previous proteomic work has shown that APEX tagging exhibits sufficient spatial specificity for such open compartments, since this technology has produced highly specific proteomic maps of, for example, the mammalian neuronal synaptic cleft (Loh et al., 2016), outer mitochondrial membrane (Hung et al., 2017), mitochondrial nucleoid (Han et al., 2017), and G-protein coupled receptor interaction networks (Lobingier et al., 2017; Paek et al., 2017). We were unsure, however, if the additional formaldehyde crosslinking step would preserve or blur the estimated <5 nanometer spatial resolution of APEX labeling.
 
 As a test case for the generality of APEX-RIP at such open compartments, we selected the Endoplasmic Reticulum (ER). The ER is an appealing target for several reasons. First, it is host to a known set of characteristic RNAs that we can use as positive controls—the so-called ‘secretome’—which comprises mRNAs encoding secreted, glycosylated, and/or transmembrane proteins that are translated on the rough ER. Second, the ER provides the opportunity to compare the efficacy of APEX-RIP to alternative approaches, since RNAs in this subcellular locale have been previously characterized both by Fractionation-Seq, and by a newer methodology termed proximity-dependent ribosome profiling (Jan et al., 2014; Williams et al., 2014). This latter technique maps active protein translation at the ER membrane by combining ribosome profiling (Ingolia et al., 2009) with proximity-restricted sequence-specific biotinylation, using an ER-targeted biotin ligase and ribosomes that are tagged with the peptide substrate (AviTag) of that ligase. Although the library preparation protocols used in each of these studies varied significantly from our own (see Materials and methods), by focusing our analyses on the fold enrichment of transcripts between matched input and ER-bound samples—and not on absolute transcript abundances—we hoped to control for these differences.
 
 Since it was initially unclear which face of the ER membrane (cytosolic or luminal) would be most amenable to the APEX-RIP method, we generated fusion constructs that localized the peroxidase catalytic center to each (Figure 3A–B, Supplementary file 5A). ERM-APEX2 targets APEX2 to the ER cytosolic surface via a 27-amino acid fragment derived from the native ER membrane (ERM) protein cytochrome P450 C1. HRP-KDEL targets horseradish peroxidase (HRP) to the ER lumen via an N-terminal ER-targeting signal and a C-terminal KDEL ER-retention motif (Martell et al., 2012). We have shown that HRP catalyzes the same proximity-dependent biotinylation chemistry as APEX2 (Loh et al., 2016), but has higher specific activity than APEX2 in the ER lumen (Lam et al., 2015). We generated HEK 293T cells stably expressing ERM-APEX2 and HRP-KDEL, and confirmed by microscopy and streptavidin blotting that each produced the expected labeling patterns (Figure 3C and D, Figure 2—figure supplement 1; Supplementary file 5B. see also Hung et al., 2017), Figure 1D). Next, we compared the efficacy of each construct for target RNA isolation, using the biotinylation-first/crosslinking-second APEX-RIP protocol, and analyzing our results via qRT-PCR analysis of established secretome and non-secretome mRNAs (Jan et al., 2014). Parallel experiments with APEX2-NES cells served as negative controls (Figure 3E, Supplementary file 5C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig3-v1.jpg)
+
+**Figure 3.:** (A—B) Schematics summarizing alternating ER-targeting strategies. (A) HRP, targeted to the ER lumen with a KDEL sequence, biotinylates proteins within the ER. Red B: biotin. Red X’s: chemical crosslinks induced by 0.1% formaldehyde treatment. Note that RNAs enriched by this approach may reside at the cytosolic face of the ER, or at the nuclear lamina, as shown. (B) APEX2, targeted to the ER membrane (ERM) by fusing it to the transmembrane segment of rabbit P450 C1, biotinylates proteins proximal to the cytosolic face of the ER. (C) Imaging of biotinylation from HRP-KDEL and ERM-APEX2 catalyzed reactions. HEK293T cells stably expressing HRP-KDEL or ERM-APEX2 were labeled with BP, fixed and imaged as in Figure 1B. Scale bars, 10 μm. Anti-RCN2 was used to mark ER lumen. (D) Streptavidin blot detection of resident ER proteins biotinylated by HRP-KDEL, as in Figure 1C. Arrowheads denote endogenously biotinylated proteins (Chapman-Smith and Cronan, 1999). (E) qRT-PCR analysis, comparing the specificities of the labeling schemes shown in (A–B). Target and off-target genes were selected using previously-reported RNA abundances at the ER membrane (Jan et al., 2014). Cytosolic APEX2 (APEX2–NES, as in Figure 2) serves as a negative control. Data are the mean of four replicates ± one standard deviation. Significance testing: Student’s two-tailed t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Addition of a radical quenching step between APEX2 labeling and formaldehyde crosslinking improves APEX-RIP specificity. Top: schematic of the revised labeling–crosslinking workflow. The radical quenchers used were Trolox and ascorbic acid; these were included in the 0.1% FA and Gly steps regardless of whether the discrete radical quenching step is included. Bottom: qRT-PCR analysis of the ER-APEX-RIP experiment with and without this additional quenching step, as in (Figure 1—figure supplement 1C). Data are the mean of four replicates,±one standard deviation. Significance testing: Student’s two-tailed t-test. (B–C) Correlation of RNA abundance (in FPKM) for each replicate. (B) and (C) are pre- and post-enrichment replicates, respectively. Given the low correlation between post-enrichment replicate three and other replicates, only data from replicates 1 and 2 were included in further analysis. (D) Histograms showing the distribution of RNA enrichment values–log2 fold change (defined as FPKMpost-enrichment/FPKMpre-enrichment), for all RNAs with p-values ≤ 0.05. Green denotes mRNAs encoding known secretory proteins and red denotes mRNAs encoding non-secretory proteins. Significance cutoffs were determined using ROC analysis (see below). Known secretory and non-secretory standard mRNAs were cataloged as described (see Materials and methods). (E–F) Determination of significance thresholds ratio cutoffs by ROC analysis (see Materials and methods).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29224/elife-29224-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Gene ontology (GO) analysis of mRNAs that were enriched in ER datasets, but which lack secretory annotation. The number of RNA species in each class is indicated to the right of the corresponding bar.Left: non-secretory mRNAs enriched by biochemical fractionation (99 mRNAs, 9% of total enriched mRNAs) (Reid and Nicchitta, 2012) predominantly exhibit nuclear and mitochondrial annotation. Right: non-secretory mRNAs enriched by HRP-KDEL RIP (87 mRNAs, 3.5% of total APEX-RIP-enriched mRNAs) have predominantly cytosolic annotation, with a minority exhibiting nuclear annotation. All terms shown have p<0.05, as assessed using DAVID (Huang et al., 2009). (B) APEX-RIP recovers low-abundance targets with greater efficiency than do alternative approaches. Left: RNAs enriched by ER-APEX-RIP exhibit a broader range in starting abundances than do RNAs recovered by ER biochemical fractionation or ER-proximity restricted ribosome profiling. Right: Table summarizing the lower bound (i.e. the lowest starting FPKM) for 95% of the RNA species enriched by each method.
 
 Intriguingly, while APEX-RIP from HRP-KDEL cells efficiently enriched target secretome mRNAs relative to non-target controls (average fold enrichment = 19.5, two-tailed t-test p-value = 0.00009), parallel experiments in ERM-APEX2 cells exhibited only modest, qualitative enrichment of target species (average fold enrichment = 1.49, two-tailed t-test p-value = 0.0515). Indeed, results from ERM-APEX2 cells were nearly indistinguishable from those acquired from APEX2-NES control cells (Student’s two-tailed t-test comparing the two constructs p-value = 0.830, Figure 3E, right). This is surprising since proteomic experiments in HEK 293T cells expressing the identical ERM-APEX2 construct yielded highly specific enrichment of ER-localized proteins (Hung et al., 2017).
 
@@ -84,7 +124,7 @@ We next compared the KDEL-APEX-RIP ER-associated RNA dataset to analogous result
 
 In summary, APEX-RIP is a powerful method for mapping endogenous RNAs proximal to the ER membrane, with a sensitivity and precision that equals or surpasses alternate technologies. We anticipate that this approach may be extensible to other membrane-abutting subcellular regions as well.
 
-## Hypotheses from ER and nuclear APEX-RIP datasets
+### Hypotheses from ER and nuclear APEX-RIP datasets
 
 We wondered if the RNA subcellular localization datasets produced by APEX-RIP could be mined for new biological hypotheses. To explore this possibility, we sought to computationally identify potential candidate RNAs that are localized at the interfaces between cellular compartments, since such transcripts are difficult to isolate by conventional approaches. We focused on two such interfaces: the ER-mitochondrial junction and the nuclear lamina.
 
@@ -112,21 +152,745 @@ We anticipate that the initial subcellular transcriptomic map presented in this 
 
 ## Materials and methods
 
-## Plasmids and cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL3216; RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>mito-APEX2 (HEK293T)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mito-BamHI-V5-APEX2 CMV promoter Mito is a 24-amino acidmitochondrial targeting sequence (MTS) derived from COX4. V5: GKPIPNPLLGLDST</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>APEX2-NLS (HEK293T)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NotI-V5-APEX2-EcoRI-3xNLS-NheI CMV promoter NLS: DPKKKRKV</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>APEX2-NES (HEK293T)</td>
+      <td>PMID: 28441135</td>
+      <td></td>
+      <td>BstBI-FLAG-APEX2-NES-NheI CMV promoter NES: LQLPPLERLTLD</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>ERM-APEX2 (HEK293T)</td>
+      <td>PMID: 28441135</td>
+      <td></td>
+      <td>BstBI-ERM-APEX2-V5-NheI CMV promoter ERM is ER membrane targeting sequence derived from N-terminal 27 amino acids of rabbit P450 C1 (MDPVVVLGLCLSCLLLLSLWKQSYGGG)</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>HRP-KDEL (HEK293T)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NotI-IgK-HRP-V5-KDEL-IRES-puromycin-XbaI CMV promoter IgK is N-terminal signaling sequence that brings protein to ER (METDTLLLWVLLLWVPGSTGD). KDEL is ER-retaining sequence</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti V5</td>
+      <td>Life Technologies</td>
+      <td>R960-25; RRID: AB_2556564</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti FLAG</td>
+      <td>Agilent</td>
+      <td>200472</td>
+      <td>Dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti TOM20</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-11415; RRID: AB_2207533</td>
+      <td>Dilution 1:400</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti RCN2</td>
+      <td>Proteintech</td>
+      <td>10193–2-AP; RRID: AB_2180018</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti Mouse-AlexaFlour488</td>
+      <td>Life Technologies</td>
+      <td>A-11029; RRID: AB_2534088</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti Mouse-AlexaFlour568</td>
+      <td>Life Technologies</td>
+      <td>A-11031; RRID: AB_144696</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Streptavidin-HRP</td>
+      <td>ThermoFisher</td>
+      <td>S-911</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Mito-APEX (plasmid)</td>
+      <td>PMID: 23371551</td>
+      <td>pCDNA vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mito-APEX2 (plasmid)</td>
+      <td>this paper</td>
+      <td>pLX304 vector</td>
+      <td>mito-BamHI-V5-APEX2 CMV promoter Mito is a 24-amino acidmitochondrial targeting sequence (MTS) derived from COX4. V5: GKPIPNPLLGLDST</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>APEX2-NLS (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NotI-V5-APEX2-EcoRI-3xNLS-NheI CMV promoter NLS: DPKKKRKV</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>HRP-KDEL (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NotI-IgK-HRP-V5-KDEL-IRES-puromycin-XbaI CMV promoter IgK is N-terminal signaling sequence that brings protein to ER (METDTLLLWVLLLWVPGSTGD). KDEL is ER-retaining sequence</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Ribo-Zero Gold rRNA removal kit (Illumina)</td>
+      <td>Illiumina</td>
+      <td>MRZG12324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Truseq RNA sample preparation kit V2</td>
+      <td>Illiumina</td>
+      <td>RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CACCTCTAGCCTAGCCGTTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGATCAGGGCGTAGTTTGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CTTAAACTCCAGCACCACGAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGCTTGTTTCAGGTGCGAGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND3 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGCGTCCCTTTCTCCATAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND3 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGGCTCATGGTAGGGGTAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND4 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACAACACAATGGGGCTCACT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND4 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGGTAATGATGTCGGGGTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND4L forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCGCTCACACCTCATATCCTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND4L reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGCGGCAAAGACTAGTATGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND5 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCCATTGTCGCATCCACCTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND5 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGTTGTTTGGGTTGTGGCTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND6 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGTTGAGGTCTTGGTGAGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ND6 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCAATCCTACCTCCATCGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-CYTB forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCTTGCACGAAACGGGATCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-CYTB reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGAGGGCGTCTTTGATTGTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCCTTATTCGAGCCGAGCTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACAAATGCATGGGCTGTGAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AACCAAACCACTTTCACCGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGATGGGCATGAAACTGTGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX3 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CTAATGACCTCCGGCCTAGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-COX3 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGCCTAGTATGAGGAGCGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ATP6 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCGCTTCATTCATTGCCCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ATP6 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGTGGTGATTAGTCGGTTGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ATP8 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACTACCACCTACCTCCCTCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-ATP8 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGCAATGAATGAAGCGAACAGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-RNR1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CATCCCCGTTCCAGTGAGTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-RNR1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGGCTAGGCTAAGCGTTTTGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-RNR2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CAGCCGCTATTAAAGGTTCGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MT-RNR2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AAGGCGCTTTGTGAAGTAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>GAPDH forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCGACAGTCAGCCGCATCTTCTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>GAPDH reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCCAATACGACCAAATCCGTTGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>XIST forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCCTACTAGCTCCTCGGACA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>XIST reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACACATGCAGCGTGGTATCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>EMC10 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCATTGAGCGCCTGGAGAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>EMC10 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCATTGAGCGCCTGGAGAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PCSK1N forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GAGACACCCGACGTGGAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PCSK1N reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AATCCGTCCCAGCAAGTACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SSR2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTTTGGGATGCCAACGATGAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SSR2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CTCCACGGCGTATCTGTTCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TMX1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACGGACGAGAACTGGAGAGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TMX1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATTTTGACAAGCAGGGCACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SFT2D2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCATCTTCCTCATGGGACCAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SFT2D2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCAGAACACAGGGTAAGTGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>EPT1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGGCTTTCTGCTGGTCGTAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>EPT1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AATCCAAACCCAGTCAGGCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>DRAP1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACATCCCACCTGAAGCAGTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>DRAP1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GATGCCACCAGGTCCTTCAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>FAU forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCCTAAGGTGGCCAAACAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>FAU reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGGGCACAACGTTGACAAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SUB1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGTCACTTCCGGTTCTCTGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>SUB1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGATTTAGGCATCGCTTCGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>LSM6 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGGACGACCAGTTGTGGTAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>LSM6 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCAGGACCCCTCGATAATCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>COPS2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGAGGACTACGACCTGGAAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>COPS2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCGCTTTTGGGTCATCTTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>CGGBP1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCTCGTCCACTTTCCCTAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>CGGBP1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCATGCCTTTACGTAGGATCGAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BCA53 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCTTGCCTGCTCCACAGTTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BCA53 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CAAACACCAAGGAGGGGTCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>CEP128 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TACAGTAATGGACAGGCGGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>CEP128 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCCGGAGTTGGTCGATTGAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MAD1L1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGAGTCTGCCATCGTCCAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MAD1L1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCACTCTCCACCTGCTTCTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RAD51B forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTTGGACGAAGCCCTGCAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RAD51B reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CACAACCTGGTGGACCTGTA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RBPMS forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACAGTCGCTCAGAAGCAGAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RBPMS reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGAAGCGGATGCCATTCAAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TCF7 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCAACAGCCCACATCCCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TCF7 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGAGGCCTGTGAACTTGCTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>HOOK2 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTTGCTGAAAAGGAAGCTGGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>HOOK2 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCAACTCCAGATCTGCCTCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MAN2C1 forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATGAGGCCCACAAGTTCCTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>MAN2C1 reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCTCATAGGTGGCCTGGGAA</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Biotin-phenol (BP)</td>
+      <td>PMID: 23371551</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Tophat v2.1.1</td>
+      <td>DOI: 10.1186/gb-2013-14-4-r36</td>
+      <td>RRID:SCR_013035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>CuffDiff2</td>
+      <td></td>
+      <td>RRID:SCR_001647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Slidebook 6.0</td>
+      <td></td>
+      <td>RRID:SCR_014300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>DAVID bioinformatics analysis</td>
+      <td></td>
+      <td>RRID:SCR_003033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and cloning
 
 The pCDNA3 mito-APEX plasmid was published previously (Rhee et al., 2013). The Mito-APEX2 construct was cloned from this plasmid using a two-step protocol. First, the A134P mutation (Lam et al., 2015) was introduced into the APEX gene itself, using QuikChange mutagenesis (Agilent Technologies, Santa Clara, CA), and thereafter the APEX2 gene was moved to the lentiviral vector pLX304, via Gateway cloning (ThermoFisher Scientific, Waltham, MA), to generate the plasmid pLX304 mito-APEX2. Other APEX-fusion constructs (pLX304 APEX2-NLS, pLX304 APEX2-NES, and pLX304 ERM-APEX2) were cloned by Gibson assembly (New England Biolabs, Ipswich, MA), using PCR to add targeting sequences and Gibson Assembly homology arms to the APEX2 gene, and joining the resulting insert into the pLX304 vector digested by BstBI and NheI. To clone HRP-KDEL, the HRP-KDEL-IRES-Puromycin cassette from HRP C (Martell et al., 2016), was PCR-amplified and cloned into pCDNA3 using NotI and XbaI sites. Targeting sequences and restriction sites for all constructs are listed in (Supplementary file 5A).
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 Human embryonic kidney (HEK) 293 T cells (RRID: CVCL_0063) were obtained, authenticated by STR profiling from ATCC, and cultured in growth media consisting of 1:1 DMEM:MEM (Cellgro, ThermoFisher Scientific, Manassas, VA), supplemented with 10% Fetal Bovine Serum (FBS), 50 units/mL penicillin, and 50 μg/mL streptomycin, at 37°C and under 5% CO2. Cells were discarded at 25 passages. Cell lines were not tested for Mycoplasma contamination. For fluorescence microscopy imaging experiments (Figures 1B, 2A and 3C, and Figure 2—figure supplement 3C), cells were grown on 7 × 7 mm glass coverslips in 48-well plates. To improve cell adherence, coverslips were pretreated with 50 μg/mL fibronectin (Millipore, Burlington, MA) for 20 min at 37°C and washed once with Dulbecco’s phosphate-buffered saline (DPBS), pH 7.4. Cells used for generating lentivirus were grown on T25 plates, in MEM supplemented as above, at 37 °C under 5% CO2.
 
-## Preparation of cell lines stably expressing APEX-fusion constructs
+### Preparation of cell lines stably expressing APEX-fusion constructs
 
 To prepare lentivirus, one ~ 70% confluent T25 plate of HEK 293T cells, grown as above, was co-transfected with 2.5 μg of APEX2 fusion plasmid, along with 0.25 μg and 2.25 μg, respectively, of the lentivirus packaging plasmids VSV-G, and dR8.91 (Pagliarini et al., 2008). Transfection mixes used 10 μL Lipofectamine 2000 (ThermoFisher Scientific) and were brought to a final volume of 2 mL with unsupplemented MEM. The cells were transfected for 3 hr, after which media was replaced with 2 ml of fresh growth media with FBS. After 48 hr, the lentiviral supernatant was collected by aspiration and filtered through a 0.45 μm syringe-mounted filter. This filtered supernatant was immediately used to infect cells. HEK293T cells, grown in 6-well plates as described above, were infected at ~50% confluency, grown for 2 days, followed by selection in growth medium supplemented with 8 μg/mL blasticidin for 7 days, before further analysis.
 
 For the cells stably expressing HRP-KDEL, HEK293T cells at ~60% confluency, grown in 6-well plates as described above, were transfected with the mixture of 150 μg of plasmid and 10 μL Lipofectamine 2000 in unsupplemented MEM for 3 hr, after which media was replaced with 2 ml of fresh growth media with FBS. After 48 hr, the cells were trypsinized and replated in T25 flask in growth medium supplemented with 1 μg/mL puromycin for 7 days, before further analysis.
 
-## Immunofluorescence staining and microscopy
+### Immunofluorescence staining and microscopy
 
 For immunofluorescence experiments (Figures 1B, 2A and 3C, and Figure 2—figure supplement 3C), stable APEX- or HRP-expressing cells were BP-labeled and crosslinked, as described below, and subsequently fixed with 4% (v/v) paraformaldehyde in PBS at room temperature for 10 min. Cells were then washed with PBS three times and permeabilized with cold methanol at –20°C for 5 min. Cells were washed again three times with room-temperature PBS and then incubated with primary antibodies in PBS–supplemented with 1% (w/v) Bovine Serum Albumin (BSA)–for 1 hr at room temperature. After washing three times with PBS, cells were incubated with secondary antibodies and neutravidin-AlexaFluor647 (1:1000 dilution) in BSA-supplemented PBS for 30 min. Cells were then washed three times with PBS and imaged by confocal fluorescence microscopy, or in PBS at 4°C in light-tight containers prior to imaging. Primary and secondary antibodies used were listed in Supplementary file 5B.
 
@@ -134,43 +898,59 @@ Fluorescence confocal microscopy was performed with a Zeiss AxioObserver microsc
 
 Unless otherwise noted, imaging data are representative of three independent experiments with ≥5 fields of view each.
 
-## Immunofluorescence measuring biotinylated protein diffusion
+### Immunofluorescence measuring biotinylated protein diffusion
 
 HEK 293 T cells stably expressing APEX2-NLS were seeded onto fibronectin-coated coverslips and grown in 48-well plates, in 200 μL of 1:1 MEM:DMEM, supplemented with 15% (v/v) FBS, per well. At ~60% confluency, cells were transfected with a GFP expression plasmid (pCMV-EGFP, addgene plasmid 3525) using polyethyleneimine (PEI). Briefly, 150 ng plasmid was diluted into a 1:1 MEM:DMEM solution and incubated with 1 uL of PEI in a final reaction volume of 20 μL, for 15 min at room temperature, and added dropwise to cells. After 16 hr, cells were labeled and crosslinked according to BP–quench–then–crosslinking protocol (see below). At the indicated time points (Figure 2—figure supplement 3C), cell growth media was aspirated, and cells were fixed with 4% (v/v) formaldehyde in PBS supplemented, with 5 mM Trolox, 10 mM Ascorbate, 10 mM sodium azide, for 10 min at room temperature. Cells were washed twice with PBS, permeablized with methanol at −20°C for 5 min, and immunostained as described above. To stain the nucleus and biotinylated species, 0.1 ug/mL DAPI (4’, 6-Diamidino-2-Phenylindole) and neutravidin-AlexaFluor647 (1:1000 dilution) were supplemented during the secondary antibody incubation. All primary and secondary antibodies used are listed in Supplementary file 5B. The data in Figure 2—figure supplement 3C are representative of the experiments with ≥15 fields of view each.
 
 The nuclear and cytosolic biotinylation ratio (Figure 2—figure supplement 3C) was quantified using Slidebook 6.0. Nuclear biotinylation was quantified as the signal within the DAPI-stained area; cytosolic biotinylation was quantified as the signal within the GFP-labeled area, excluding that within DAPI-stained area.
 
-## Western and streptavidin blotting
+### Western and streptavidin blotting
 
 For blotting experiments (Figures 1C and 3D and Figure 2—figure supplement 1), stable APEX- or HRP-expressing cells were grown in 6-well plates, as described above. After APEX labeling (see below), the cells were harvested by scraping, pelleted by centrifugation at 3,000 × g for 10 min, and stored at –80°C prior to use. Thawed pellets were lysed by gentle pipetting in RIPA lysis buffer (50 mM Tris, 150 mM NaCl, 0.1% SDS, 0.5% sodium deoxycholate, 1% Triton X-100, 5 mM EDTA), supplemented with 1 × protease cocktail (Sigma Aldrich, St Louis, MO), 1 mM PMSF (phenylmethylsulfonyl fluoride), for 5 min at 4°C. Lysates were then clarified by centrifugation at 15,000 × g for 10 min at 4°C before separation on homemade 8% SDS-PAGE gels. Gels were transferred to nitrocellulose membranes, stained by Ponceau S (0.1% (w/v) Ponceau S, 5% (v/v) acetic acid, in water) for 10 min at room temperature, and imaged. The blots were then blocked with blocking buffer (3% (w/v) BSA, 0.1% (v/v) Tween-20 in Tris-buffered saline) for 1 hr at room temperature, and incubated with primary antibodies in blocking buffer for 1 hr more. The dilutions of the antibodies are as followed: Mouse anti-V5 antibody (ThermoFisher Scientific RRID: AB_2556564) 1:1000 dilution and Mouse anti-FLAG antibody (ThermoFisher Scientific) 1:800 dilution. Blots were rinsed four times for 5 min with wash buffer (0.1% Tween-20 in Tris-buffered saline), and then immersed in blocking buffer supplemented with Goat anti-Mouse IgG H + L HRP Conjugate (1:3000 dilution, Bio-Rad Laboratories, Hercules, CA), for 1 hr at room temperature. Blots were rinsed four times for 5 min with wash buffer, and developed with the Clarity reagent (Bio-Rad Laboratories) and imaged on an Alpha Innotech gel imaging system. Processing of streptavidin blots was similar. Following Ponceau imaging, blots were blocked in blocking buffer for 30 min at room temperature, immersed in blocking buffer supplemented with streptavidin-HRP (1:3000 dilution, ThermoFisher Scientific, RRID:AB_2619743) at room temperature for 15 min, rinsed with blocking buffer five times for 5 min each, developed and imaged using the Clarity reagent and an Alpha Innotech gel imaging system.
 
 The data in these experiments (Figures 1C and 3D and Figure 2—figure supplement 1) were also reproduced for quality control prior to quantitative PCR and sequencing.
 
-## Quantitative RT–PCR
+### Quantitative RT–PCR
 
-For quantitative RT–PCR (qRT–PCR, Figure 1—figure supplement 1A,C, Figure 3E, and Figure 3—figure supplement 1A) RNA samples (isolated as described below) were reverse transcribed using the SuperScript III Reverse Transcriptase kit (ThermoFisher Scientific), priming with random hexamers (ThermoFisher Scientific) according to the manufacturer’s protocol. Samples were diluted with water, mixed with gene specific primers (Supplementary file 5C), and Rox-normalized FastStart Universal SYBR Green Master Mix (Roche Applied Sciences, Penzberg, Germany), and aliquotted into 384-well plates. qRT–PCR was performed on an Applied Biosystems 7900HT Fast real time PCR instrument, in quadruplicate. All threshold cycles (Ct, calculated per well) and efficiencies (ε, calculated per primer pair), were calculated from ‘clipped’ data, using Real time qPCR Miner (Zhao and Fernald, 2005). Primer pairs with average efficiencies below 90%—measured by qPCR Miner in at least three biological replicates, four technical replicates each—were omitted from further use. Raw Ct values were corrected to account for the differences in sample volume, and percent yields were calculated via the ΔCt method:yield=100×(1+ε)∆Ct
+For quantitative RT–PCR (qRT–PCR, Figure 1—figure supplement 1A,C, Figure 3E, and Figure 3—figure supplement 1A) RNA samples (isolated as described below) were reverse transcribed using the SuperScript III Reverse Transcriptase kit (ThermoFisher Scientific), priming with random hexamers (ThermoFisher Scientific) according to the manufacturer’s protocol. Samples were diluted with water, mixed with gene specific primers (Supplementary file 5C), and Rox-normalized FastStart Universal SYBR Green Master Mix (Roche Applied Sciences, Penzberg, Germany), and aliquotted into 384-well plates. qRT–PCR was performed on an Applied Biosystems 7900HT Fast real time PCR instrument, in quadruplicate. All threshold cycles (Ct, calculated per well) and efficiencies (ε, calculated per primer pair), were calculated from ‘clipped’ data, using Real time qPCR Miner (Zhao and Fernald, 2005). Primer pairs with average efficiencies below 90%—measured by qPCR Miner in at least three biological replicates, four technical replicates each—were omitted from further use. Raw Ct values were corrected to account for the differences in sample volume, and percent yields were calculated via the ΔCt method:
 
-…where in, ΔCt=Ctinput corr−CtRIP corr
+$$
+yield=100\times(1+\epsilon)^{\DeltaC_{t}}
+$$
 
-Experimental uncertainties were calculated as described previously (Shechner et al., 2015). Given D = A–B, uncertainly was calculated using the formula:σD= (σA)2+(σB)2
+…where in, $ΔC_{t}=C_{t_{input}} corr−C_{t_{RIP}} corr$
 
-…wherein σA and σB are the measurement errors of A and B, respectively. For P, the product or quotient of values A and B, uncertainty was calculated using the formula:σP=P×σAA2+σBB2
+Experimental uncertainties were calculated as described previously (Shechner et al., 2015). Given D = A–B, uncertainly was calculated using the formula:
 
-The uncertainties of other functions, f(x), were calculated using the first derivative approximation:σf(x)= σx×f'(x)
+$$
+\sigma_{D}=\sqrt{(\sigma_{A})^{2}+(\sigma_{B})^{2}}
+$$
+
+…wherein σA and σB are the measurement errors of A and B, respectively. For P, the product or quotient of values A and B, uncertainty was calculated using the formula:
+
+$$
+\sigma_{P}=P\times\sqrt{\frac{\sigma_{A}}{A}^{2}+\frac{\sigma_{B}}{B}^{2}}
+$$
+
+The uncertainties of other functions, f(x), were calculated using the first derivative approximation:
+
+$$
+\sigma_{f(x)}=\sigma_{x}\timesf'(x)
+$$
 
 Sample sizes were determined in accordance with standard practices used in similar experiments in the literature; no sample-size estimates were performed to ensure adequate power to detect a prespecified effect size. Experiments were neither randomized nor blinded to experimental conditions. Each samples contained four technical replicates and no samples were excluded from analysis. Significance testing: Student’s two-tailed t-test.
 
-## APEX-RIP, Part I: optimized in situ biotinylation and crosslinking
+### APEX-RIP, Part I: optimized in situ biotinylation and crosslinking
 
 Stable-expression HEK 293T cells were grown to 90% confluency in 6-well plates, as described above. Cells were incubated in fresh growth media supplemented with 500 μM Biotin Phenol (BP) (Rhee et al., 2013); also available from Iris Biotech GmbH, Marktredwitz, Germany) for 30 min at 37°C, after which cells were moved to room temperature and H2O2 was added to a final concentration of 1 mM. After 1 min, media was aspirated, and the APEX labeling reaction was quenched by addition of 2 mL azide-free quenching solution (10 mM ascorbate and 5 mM Trolox, in PBS), and further incubation at room temperature for 1 min. Thereafter, the liquid phase was aspirated, and cells were crosslinked by addition of 5 mL crosslink-quench solution (0.1% (v/v) formaldehyde, 10 mM sodium ascorbate, and 5 mM Trolox, in PBS). After 1 min, media were aspirated, and cells were again incubated in 5 mL fresh crosslink-quench solution, for 9 min at room temperature, with gentle agitation. The crosslinking reaction was terminated by addition of glycine (1.2 M stock, in PBS) to a final concentration of 125 mM, and gentle agitation for 5 min at room temperature. Cells were washed twice with 2 mL room-temperature PBS, harvested by scraping, pelleted by centrifugation, and either processed immediately or flash frozen in liquid nitrogen and stored at –80°C before further analysis.
 
-## APEX-RIP, Part II: Cell lysis, streptavidin bead enrichment of biotinylated material and RNA isolation
+### APEX-RIP, Part II: Cell lysis, streptavidin bead enrichment of biotinylated material and RNA isolation
 
 Unless otherwise noted, all buffers used during RNA isolation were supplemented to 0.1 U/ μL RNaseOUT (ThermoFisher Scientific), 1 × EDTA free proteinase inhibitor cocktail (ThermoFisher Scientific) and 0.5 mM DTT, final. Labeled, crosslinked cell pellets were thawed on ice (when necessary), and lysed by incubation in 1 mL ice-cold RIPA buffer, supplemented with 10 mM ascorbate and 5 mM Trolox, for 5 min at 4°C with end-over-end agitation. Samples were then sheared as described previously (Hendrickson et al., 2016) using a Branson Digital Sonifier 250 (Emerson Industrial Automation, St. Louis, MO) at 10% amplitude for three 30 s intervals (0.7 s on +1.3 s off), with 30 s resting steps between intervals. Samples were held in ice-cold metal thermal blocks throughout sonication. Lysates were then clarified by centrifugation at 15,000 × g for 5 min at 4°C, moved to fresh tubes and each diluted with 1 mL Native lysis buffer (NLB: 25 mM Tris pH 7.4, 150 mM KCl, 0.5% NP-40, 5 mM EDTA), supplemented with ascorbate and trolox. For each sample, 20% was removed as ‘input;’ to the remainder was added 50 μL of streptavidin-coated magnetic bead slurry (ThermoFisher Scientific ) that had been equilibrated by two washes in 1:1 RIPA:NLB. Samples were incubated for 2 hr at 4°C with end-over-end agitation. Beads were subsequently washed with the following series of buffers (1 mL each, 5 min per wash, 4°C, with gentle end-over-end agitation): (1) RIPA buffer, supplemented with trolox and ascorbate, (2) RIPA buffer without radical quenchers, (3) high salt buffer (1 M KCl, 50 mM Tris, pH 8.0, 5 mM EDTA), (4) urea buffer (2 M Urea, 50 mM Tris, pH 8.0, 5 mM EDTA), (5) RIPA Buffer, (6) 1:1 RIPA: NLB, (7) NLB, and (8) TE (10 mM Tris, pH 7.4, 1 mM EDTA).
 
 Enriched RNAs were released from the beads by proteolysis in 100 μL of Elution Buffer (2% N-lauryl sarcoside, 10 mM EDTA, 5 mM DTT, in 1X PBS, supplemented with 200 μg proteinase K (ThermoFisher Scientific) and 4 U RNaseOUT) at 42°C for 1 hr, followed by 55°C for 1 hr, as previously described (Hendrickson et al., 2016). Eluted samples were cleaned up using Agencourt RNAClean XP magnetic beads (Beckman Coulter, Pasadena, CA), following the manufacturer’s 1.5 mL tube format protocol, and eluted into 85 μL H2O. Thereafter, contaminating DNA was removed by digestion with 5 U RQ1 RNase-free DNase I (Promega, Fitchburg, WI) in 100 μL of the manufacturer’s supplied buffer (1X final concentration) at 37°C for 30 min. Purified RNAs were again cleaned up using Agencourt RNAClean XP magnetic beads, as above, and eluted into 30 μL H2O. The concentration and integrity of all samples was measured using an Agilent 2100 Bioanalyzer, following the ‘RNA Nano’ or ‘RNA Pico’ protocols, where appropriate. Samples were not heat-cooled prior to loading Bioanalyzer chips.
 
-## Alternate APEX-RIP biotinylation and crosslinking protocols
+### Alternate APEX-RIP biotinylation and crosslinking protocols
 
 For Mito-APEX2 experiments (Figure 1), we followed a BP–then–crosslinking protocol that omitted the discrete radical quenching step (Figure 1—figure supplement 1A, bottom). Briefly, cells were grown and APEX-labeled as described above. Following the 1 min incubation in H2O2, cells were immediately treated with 5 mL crosslink-quench solution for one minute at room temperature, to simultaneously quench the APEX2 BP labeling reaction and initiate formaldehyde crosslinking. The liquid phase was aspirated, and cells were incubated in 5 mL of fresh crosslink-quench for two additional 1 min incubation steps, followed by a third, 8 min incubation at room temperature with gentle agitation.
 
@@ -178,7 +958,7 @@ Thereafter, crosslinking was terminated by the addition of glycine, and cells we
 
 For the crosslinking–then–BP biotinylation protocol (Figure 1—figure supplement 1A, top), cells were washed once with 5 mL PBS, and crosslinked in 5 mL 0.1% (v/v) formaldehyde in PBS for 10 min at room temperature, with gentle agitation. The crosslinking reaction was quenched by addition of glycine (1.2 M, in PBS) to final concentration 125 mM, and gentle agitation for 5 min at room temperature. Crosslinked cells were then washed three times with PBS and incubated with 500 μM biotin-phenol (BP) in PBS at room temperature, for 30 min. Thereafter, H2O2 was added to a final concentration 1 mM, for 1 min. The liquid phase was then removed by aspiration, and cells were washed twice with 2 mL quenching solution (5 mM Trolox, 10 mM Sodium Ascorbate, 10 mM sodium azide, in PBS). Crosslinked, labeled cells were harvested by scraping, and processed as described above.
 
-## APEX-RIP, Part III: Library preparation, sequencing, and quantification
+### APEX-RIP, Part III: Library preparation, sequencing, and quantification
 
 Purified RNA samples were depleted of ribosomal RNA using the Ribo-Zero Gold rRNA removal kit (Illumina, San Diego, CA), generally in accordance with the manufacturer’s protocol. Briefly, RNA concentration and integrity were quantified on an Agilent 2100 Bioanalyzer, using ‘RNA Pico’ and, where appropriate, ‘RNA Nano’ kits. Samples were not concentrated prior to rRNA depletion, which can accommodate a maximum input volume of 17 μL. Therefore, samples with total input masses of ≤ 20 ng or 20–100 ng were mixed with 1 μL or 2 μL of Ribo-Zero rRNA Removal Solution, respectively, in 1x RiboZero Reaction Buffer, at a final volume of 20 μL. Reaction mixes were incubated at 68°C for 10 min, followed by 25°C for 5 min more, and thereafter added to 32.5 μL magnetic beads (90 μL bead slurry; washed with water and equilibrated in Magnetic Bead Resuspension Buffer, supplemented with RiboGuard RNase Inhibitor) by extensive pipetting. Binding reactions were incubated at room temperature for 5 min, gently vortexed for 5 s, and incubated for 5 min at 50°C, in a thermocycler. The supernatant, containing rRNA-depleted RNA, was diluted in water to 50 μL final volume, cleaned up with 50 μL Agencourt RNAClean XP beads and eluted with 19.5 μL of Elute, Prime, Fragment mix from the TruSeq RNA sample preparation kit, v2 (Illumina). Thereafter, libraries were prepared using the TruSeq RNA sample preparation kit, according to the manufacturer’s instructions, starting from ‘Incubate RFP’ step. Each library was given a unique index during synthesis. Library concentration was measured, and quality confirmed, on an Agilent 2100 Bioanalyzer, using ‘DNA High Sensitivity’ kits.
 
@@ -194,19 +974,23 @@ For the HEK 293T nuclear-cytoplasmic transcriptome datasets (Sultan et al., 2014
 
 Datasets for both ER Fractionation-Sequencing (Reid and Nicchitta, 2012) and proximity-restricted ribosome profiling (Jan et al., 2014) experiments were acquired by isolating ribosome-protected small RNA fragments, using methods that markedly differed from our own. In each case, fractionated and/or biotinylated polysomes were isolated and treated with RNAse. Monosome-protected RNA fragments were purified by gel electrophoresis, ligated to sequencing adaptors and reverse transcribed. Thereafter, Frac-Seq libraries were PCR amplified and subjected to SOLiD sequencing; Ribosome profiling libraries were circularized before library amplification and subjected to single-end Illumina sequencing. We did not re-analyze data from these experiments: transcript quantifications were used as reported.
 
-## Quantification of RNA abundances and folds enrichment; Assembly of true positive and false positive lists
+### Quantification of RNA abundances and folds enrichment; Assembly of true positive and false positive lists
 
 Deep sequencing reads were mapped to human genome assembly hg19 using TopHat v2.1.1 (Kim et al., 2013), RRID:SCR_013035), with the flags, ‘--no-coverage-search’ and ‘--GTF gencode.v19.annotation.gtf’. Gene expression was quantified against the Gencode v19 reference transcriptome (gencode.v19.annotation.gtf, genecodegenes.org) with Cufflinks v2.2.1. (Trapnell et al., 2013), RRID:SCR_014597), assessing the statistical significance of differential expression via CuffDiff2 (RRID:SCR_001647), with the flags, ‘--dispersion-method per-condition’ and ‘--seed 42’.
 
 No explicit filtering was imposed to mask the quantification of any RNA species: although nuclear-encoded tRNA, 5.8S, 18S, and 28S rRNA genes are absent from the Gencode reference transcriptome, and are hence opaque to our analysis, all other transcripts were quantified in an unbiased manner. Each RIP experiment was quantified independently. All Seq data will be made available through GEO under accession GSE106493.
 
-Fold enrichments were calculated as follows:log2 fold change= log2[AverageFPKMPost streptavidin enrichmentAverage FPKMPre streptavidin enrichment]
+Fold enrichments were calculated as follows:
+
+$$
+log_{2}foldchange=log_{2}[\frac{AverageFPKM_{Poststreptavidinenrichment}}{AverageFPKM_{Prestreptavidinenrichment}}]
+$$
 
 Significantly enriched genes in APEX-RIP, nuclear–cytosolic fractionation (Sultan et al., 2014), and ER-fractionation (Reid and Nicchitta, 2012) datasets were called as follows. RNAs with p-values greater than 0.05 (measured in CuffDiff, as described above) were removed from analysis. For ER-fractionation dataset (Reid and Nicchitta, 2012), RNAs with RPKM lower than 10 were filtered out. The remaining RNAs were then used to determine the enrichment threshold cutoffs, using Receiver Operating Characteristic (ROC) analysis (Fawcett, 2006), employing sets of true-positive and false-positive genes identified as described below. At each fold enrichment value, the true positive rate (TPR—the fraction of true positive genes identified as being enriched) and the false positive rate (FPR—the fraction of false positive genes identified as being enriched) were calculated. The fold enrichment value that maximizes the difference of these values (TPR–FPR) was chosen as the fold enrichment cutoff. In mitochondrial and ER-associated APEX-RIP experiments, ROC analysis was based on log2 fold enrichment values comparing pre- and post-enrichment RNA abundances; in the nuclear-cytoplasmic experiment, it was based on calculated log2 fold enrichment values comparing post-enrichment APEX2-NLS and APEX2-NES abundances.
 
 The true and false positive gene sets needed for ROC analysis were defined as follows:
 
-## Coverage and specificity analysis of nuclear, cytosolic, and ER-proximal RNAs
+### Coverage and specificity analysis of nuclear, cytosolic, and ER-proximal RNAs
 
 To estimate the coverage (recall) and specificity of APEX-RIP at each subcellular compartment, we assembled lists of established target and off-target genes tailored for that compartment.
 
@@ -216,12 +1000,12 @@ For coverage analysis of the ER-proximal datasets (Figure 4D), our reference gen
 
 For analysis of contaminants in ER datasets (Figure 3—figure supplement 2A), the mRNAs that lacked predicted secretory annotation (assessed by Phobius, TMHMM, and SignalP, and by an absence of the GOCC terms ‘Endoplasmic reticulum,’ ‘Golgi,’ ‘membrane,’ and ‘extracellular’) were submitted to DAVID Bioinformatics analysis (Huang et al., 2009), RRID:SCR_003033). Only Gene Ontology terms that were enriched with p-values less than 0.05 —relative to the human background—are shown.
 
-## Identification of candidate lamina-localized RNAs
+### Identification of candidate lamina-localized RNAs
 
 To obtain an initial list of potential laminar RNAs, we identified transcripts that were significantly enriched both within the nucleus and near the ER membrane (Figure 5C). We manually curated our lists of APEX-RIP nuclear-localized and ER-associated RNAs (derived from ROC- and p-value analysis—see above—without further modification; Supplementary files 2A and 3A), to identify transcripts that were significantly enriched in both. This resulted in a set of 441 overlapping RNAs (Supplementary file 4B), which we classified into transcript types according to standard GENCODE nomenclature. Statistically significant enrichment of overlapping RNAs in each class was calculated by hypergeometric test.
 
 Of the initial 441 candidate RNAs, 337 correspond to mRNAs encoding secretory proteins, annotated as described above. However, since expression was measured at the gene level, and did not quantify individual RNA isoforms (see above) the apparent abundance of each gene stems from its mature and all immature (e.g. partially spliced) transcripts. Hence, the 337 secretory mRNAs in our overlapping set might be regarded as potential false positives, corresponding to cases where we have measured mature mRNAs near the ER surface, and partially processed precursor species in the nucleus, and not discrete species that reside at the interface of the nucleus and ER (i.e., the lamina). For this reason, we encourage omitting these genes in subsequent analysis of potential laminar RNAs (Figure 5D).
 
-## Significance
+### Significance
 
 RNA subcellular localization is a critical factor that influences a wide array of biological processes, ranging from Drosophila embryogenesis to mammalian neuronal signaling. However, while this spatial layer of transcriptome regulation has been characterized in a handful of contexts, a broader understanding of its overall extent, the factors governing its establishment, and its impact on biological function, remain inchoate. The limitations hindering this understanding have been largely technical, since conventional methods—such as fluorescence in situ hybridization (FISH) and Fractionation-Sequencing (‘Frac-Seq’)—depend upon specialized reagents and protocols that can limit throughput and general applicability. To address this fundamental need, we have developed a new strategy—APEX-RIP—which uses a simple toolkit and workflow to map the transcriptomes of discrete subcellular compartments at high depth and spatiotemporal resolution. APEX-RIP uses the engineered ascorbate peroxidase APEX to biotinylate proteins within a target subcellular compartment in live cells; these affinity-tagged proteins are then chemically crosslinked in situ to nearby RNAs. When applied to a variety of membrane-enclosed and membrane-adjacent compartments, the APEX-RIP strategy exhibited target specificity and coverage rivaling or exceeding those attained by conventional fractionation-sequencing-based approaches, at a depth far exceeding those attainable by imaging-based methods. Furthermore, APEX-RIP can be applied to compartments that are recalcitrant to conventional biochemical purification. Given the superior precision, flexibility, and ease of this approach, we anticipate that APEX-RIP will provide a powerful tool for dissecting RNA subcellular localization in a broad range of biological contexts.

@@ -27,39 +27,83 @@ By combining an in vitro assay for the precise confinement of cells with quantit
 
 ## Results
 
-## ADF and cofilin-1 are required for LBBM
+### ADF and cofilin-1 are required for LBBM
 
 Using our previously described approach for cell confinement, which involves placing cells under a slab of PDMS held at a defined height (~3 µm) above cover glass, cancer cells will switch to LBBM (Figure 1A and Video 1; Logue et al., 2018). Moreover, within leader blebs, we find a rapid flow of cortical actin, which together with non-specific friction, provides the motive force for cell movement (Figure 1B and Video 2; Bergert et al., 2015). As indicated by an enrichment in EGFP tagged regulatory light chain (EGFP-RLC), we observe a concentration of myosin at the leader bleb neck that separates the leader bleb from the cell body (Figure 1C and Video 2; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015). In concert with myosin, we wondered if the cortical actin flow in leader blebs requires the action of specific actin disassembly factors.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ventral Z-section of a melanoma A375-M2 cell, which has been confined down to 3 µm, with mEmerald-LifeAct. (B) Kymograph from (A; dashed line), showing cortical actin flow. (C) Ventral Z-section of a melanoma A375-M2 cells, which has been confined down to 3 µm, with EGFP tagged regulatory light chain (EGFP-RLC). (D) Western blot confirming CFL1, actin depolymerizing factor (ADF), and ADF + CFL1 RNAi in melanoma A375-M2 cells. (E) Individual cell migration tracks (plot of origin) for non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells, as well as CFL1 + ADF RNAi cells rescued by transfection with EGFP-cofilin-1 plasmid. In each, cells were tracked over a period of 5 hr. Relative y (µm) and relative × (µm) are shown in each. (F) Percentage of highly motile cells from (E). Cells that traveled a distance equivalent to at least one cell length over the course of the 5 hr time-lapse were classified as highly motile. (G) Average speed (µm/min) from cells in (E; mean ± SEM). Statistical significance was determined by one-way ANOVA and a Dunnett’s post hoc test. (H) Instantaneous top speed (µm/min) for highly motile cells in (E; mean ± SEM). (I) Cofilin-1 levels (fold change; fluorescence intensity) of adhered RNAi cells by immunofluorescence confirming rescue by transfection with EGFP-cofilin-1 or not rescued with EGFP. Statistical significance was determined by an unpaired one-sample t-test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantitative evaluation of cofilin-1 (left) and actin depolymerizing factor (ADF) (right) RNAi as measured by Western blotting of total cell lysates. (B) Quantitative evaluation of cofilin-1 and ADF mRNA levels by qRT-PCR in A375-M2 cells (mean ± SEM). (C) Direction autocorrelation plots of confined highly motile cells after RNAi. (D) Transmigration of melanoma A375-M2 cells through 8 (above) or 12 µm (below) pores after non-targeting, CFL1, ADF, and CFL1 + ADF RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
+![Video 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/67856/elife-67856-video2.mp4.jpg)
+
 In addition to being frequently up-regulated in cancer, the ADF/cofilin family of actin severing factors are known to be essential for actin turnover in mesenchymal cells (Bravo-Cordero et al., 2013; Bracalente et al., 2018). Therefore, we set out to determine if ADF and/or cofilin-1 are important for LBBM. In melanoma A375 cells, a widely used cell line for the study of amoeboid migration, both ADF and cofilin-1 are expressed, with cofilin-1 mRNA levels being threefold higher (Figure 1—figure supplement 1B). Using A375 cells, we depleted cells of ADF and cofilin-1 alone and together by RNAi (Figure 1D and Figure 1—figure supplement 1A). By manually tracking the movement of cells over time, we found that cells depleted of cofilin-1 were significantly less motile (Figure 1E–H and Figure 1—figure supplement 1C). Additionally, the adhesive transmigration of cells through small pores was hindered after depleting cofilin-1 (Figure 1—figure supplement 1D). Depleting cells of ADF led to a slight reduction in the number of highly motile cells (Figure 1E–H and Figure 1—figure supplement 1C). Strikingly, depleting cells of both ADF and cofilin-1 appeared to have an additive effect on reducing LBBM, whereas the adhesive transmigration of cells through small pores did not display this additive behavior and was not affected by ADF depletion (Figure 1E–H and Figure 1—figure supplement 1D). These results suggest that these proteins play non-overlapping roles during LBBM (Figure 1E–H). In agreement with this concept, transfection of EGFP-cofilin-1 into cells depleted of both proteins was insufficient to restore LBBM (Figure 1E–I).
 
-## Together, ADF and cofilin-1 are required to retract blebs
+### Together, ADF and cofilin-1 are required to retract blebs
 
 Subsequently, we wanted to know what is responsible for the decrease in LBBM upon depleting ADF and/or cofilin-1. Initially, we analyzed the area of the largest bleb (i.e., leader bleb), relative to the cell body, in cells depleted of ADF and/or cofilin-1. This analysis revealed that depleting cells of cofilin-1 reduced the area of the largest bleb by ~15% of control while depleting cells of both ADF and cofilin-1 reduced the area of the largest bleb by ~40% of control (non-targeting; Figure 2A–B and Videos 3–5). The area of all blebs was similarly reduced (Figure 2C). Strikingly, in cells depleted of both ADF and cofilin-1, ~30% of cells displayed blebs with elongated necks (Figure 2A,D and Video 6). Detailed analyses of these cells revealed that ~60% display blebs that never retract into the cell body (Figure 2E). Moreover, we found this effect to not be specific to melanoma A375 cells, as depleting lung adenocarcinoma A549 cells of both ADF and cofilin-1 similarly resulted in the elongation of bleb necks (Figure 2F–G). In melanoma A375 cells, depleting both ADF and cofilin-1 had an additive effect on reducing the rate of bleb retraction, which points to these proteins having non-overlapping functions specifically at bleb necks (Figure 2H). In support of this role, we determined the location of EGFP-cofilin-1 in confined cells. Our initial efforts were unsuccessful because of a high degree of soluble (i.e., unbound to F-actin) protein, but in cells depleted of endogenous ADF and cofilin-1 we could detect an enrichment of EGFP-cofilin-1 at leader bleb necks (Figure 2I; arrow).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig2-v2.jpg)
 
-**Figure 2.:** (A) Montage of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi with EGFP alone (volume marker) in melanoma A375-M2 cells. (B–C) Quantitation of area for leader (A) and all blebs (B) after non-targeting, CFL1, ADF, and ADF + CFL1 RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (D) Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks. (E) Percent of ADF + CFL1 RNAi cells from (D) with elongated bleb necks that retract vs. un-retracted. (F–G) Lung adenocarcinoma A549 cells after non-targeting and CFL1 + ADF RNAi stained with a far-red fluorescent membrane dye (F). Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks (G). (H) Bleb retraction rates for non-targeting (45 blebs; 26 cells), CFL1 (40 blebs; 20 cells), ADF (48 blebs; 30 cells), and CFL1 + ADF RNAi (38 blebs; 23 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (I) EGFP-cofilin-1 localization in an A375-M2 cell confined down to 3 µm. Arrow points to an enrichment of cofilin-1 at the leader bleb neck. (I’) Regional analysis of EGFP-cofilin-1 average fluorescence intensity in ROIs sampled from bleb neck to tip (mean ± SEM). Representative regions taken within white box and dashed lines in (I). All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.  Figure 2—source data 1.Spreadsheet of leader bleb and bleb (i.e., all blebs) area measurements. Each measurement is a percent of the total cell area. Data for CFL1, actin depolymerizing factor (ADF), and CFL1 + ADF RNAi are provided. These data are graphed in Figure 2B–C.
+**Figure 2.:** (A) Montage of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi with EGFP alone (volume marker) in melanoma A375-M2 cells. (B–C) Quantitation of area for leader (A) and all blebs (B) after non-targeting, CFL1, ADF, and ADF + CFL1 RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (D) Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks. (E) Percent of ADF + CFL1 RNAi cells from (D) with elongated bleb necks that retract vs. un-retracted. (F–G) Lung adenocarcinoma A549 cells after non-targeting and CFL1 + ADF RNAi stained with a far-red fluorescent membrane dye (F). Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks (G). (H) Bleb retraction rates for non-targeting (45 blebs; 26 cells), CFL1 (40 blebs; 20 cells), ADF (48 blebs; 30 cells), and CFL1 + ADF RNAi (38 blebs; 23 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (I) EGFP-cofilin-1 localization in an A375-M2 cell confined down to 3 µm. Arrow points to an enrichment of cofilin-1 at the leader bleb neck. (I’) Regional analysis of EGFP-cofilin-1 average fluorescence intensity in ROIs sampled from bleb neck to tip (mean ± SEM). Representative regions taken within white box and dashed lines in (I). All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
 
-## ADF and cofilin-1 rapidly disassemble cortical actin
+![Video 3.](https://cdn.elifesciences.org/articles/67856/elife-67856-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/67856/elife-67856-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/67856/elife-67856-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/67856/elife-67856-video6.mp4.jpg)
+
+### ADF and cofilin-1 rapidly disassemble cortical actin
 
 Thus far, our results suggest that ADF and cofilin-1 are important for the rapid turnover of cortical actin at bleb necks. In agreement with this concept, a large concentration of F-actin is found at the necks of blebs in cells depleted of ADF and cofilin-1 (Figure 3A). In order to more directly test the role of ADF and cofilin-1 in regulating cortical actin, we turned to freshly trypsinized (spherical) cells. Previous work by us and others has shown that the properties of the cortical actin network in spherical cells correlate with LBBM (Logue et al., 2015; Liu et al., 2015; Bergert et al., 2012). In spherical cells, actin is predominantly cortical and endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery (Figure 3B). By combining the specificity of phalloidin for F-actin with flow cytometry, we then determined how the level of cortical actin is affected by ADF and/or cofilin-1 depletion. In cells depleted of cofilin-1, F-actin levels were increased by ~10%, whereas depletion of ADF did not lead to a significant change in the level of F-actin (Figure 3C). Interestingly, depleting ADF with cofilin-1 had the largest effect, increasing F-actin levels by ~30% (Figure 3C). Serine 3 of cofilin-1 is phosphorylated by LIMK, inhibiting its severing activity (Yang et al., 1998). In cells depleted of endogenous ADF and cofilin-1, transfection of EGFP-cofilin-1 reduced the level of F-actin to levels similar to control (non-target; Figure 3D). Similarly, F-actin was restored to near control levels by transfection of EGFP-cofilin-1 (S3A; constitutively active), whereas transfection of EGFP-cofilin-1 (S3E; constitutively inactive) led to an increased level of F-actin (Figure 3D). Additionally, in comparison to EGFP alone, increasing levels of EGFP-cofilin-1 correlated with reductions in F-actin (Figure 3E). Thus, cortical actin levels are regulated by ADF and cofilin-1 severing.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig3-v2.jpg)
+
+**Figure 3.:** (A) mEmerald-LifeAct and far-red fluorescent membrane dye in cells after non-targeting and CFL1 + ADF RNAi. (B) Cells freshly plated on poly-L-lysine coated cover glass stained for endogenous cofilin-1 and filamentous-actin (F-actin) (phalloidin). (C) F-actin levels (normalized to non-target; mean ± SEM) after CFL1, ADF, and CFL1 + ADF RNAi in trypsinized (spherical) cells, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (D) F-actin levels (normalized to non-target; mean ± SEM) after CFL1 + ADF RNAi, as well as after CFL1 + ADF RNAi with EGFP-cofilin-1 WT, S3A, or S3E, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (E) F-actin level (normalized to EGFP alone; mean ± SEM) as a function of increasing EGFP-cofilin-1 in cells depleted of endogenous cofilin-1 and ADF by RNAi, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (F) Top, barbed end assay workflow. Bottom, representative image of a freshly plated (spherical) cell subjected to the barbed end assay. (G) As shown in (F; bottom), the level of cortical barbed ends was measured in cells after non-targeting (71 cells), CFL1 (53 cells), ADF (47 cells), and CFL1 + ADF RNAi (83 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (H) As shown in (F; bottom), the level of cortical barbed ends was measured in cells with non-targeting and EGFP (42 cells), as well as after CFL1 + ADF RNAi with EGFP (32 cells) or EGFP-cofilin-1 (27 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cortical barbed end levels in melanoma A375-M2 cells after vehicle (DMSO; 53 cells) or cytochalasin B (2 µM; 24 cells) treatment. Statistical significance was determined using an unpaired Student’s t-test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
 Many studies have shown that cofilin-1 severing can result in distinct outcomes. In lamellipodia, cofilin-1 severing promotes actin polymerization at new barbed ends, whereas in the lamella, actin is de-polymerized at new pointed ends (Bravo-Cordero et al., 2013). The prevalence of each outcome has been proposed to depend on the concentration of capping proteins (Wioland et al., 2017). Therefore, we determined the relative level of barbed ends within the cortical actin network of freshly trypsinized (spherical) cells. The treatment of cells with cytochalasin B (which blocks G-actin from binding the barbed end) confirmed the specificity of the approach (Figure 3—figure supplement 1A). In cells depleted of cofilin-1, we observed a more than ~50% increase the level of cortical barbed ends, whereas depleting ADF marginally increased the level of cortical barbed ends (Figure 3G). Depleting cells of both proteins appeared to have an additive effect, increasing the level of cortical barbed ends by ~100% (Figure 3G). However, in cells depleted of ADF and cofilin-1, transfection of EGFP-cofilin-1 was sufficient to restore cortical barbed ends to a level similar to control (Figure 3H). Collectively, these results suggest that ADF and cofilin-1 regulate cortical actin levels by promoting the de-polymerization of actin at newly formed pointed ends.
 
-## Rapid cortical actin flow requires ADF and cofilin-1 severing at leader bleb necks
+### Rapid cortical actin flow requires ADF and cofilin-1 severing at leader bleb necks
 
 Lasting changes in the F/G-actin ratio, such as occurs during RNAi of ADF and/or cofilin-1, can have a range of effects on cellular physiology. Therefore, using a previously described SuperNova-cofilin-1 construct, we performed chromophore assisted light inactivation (CALI) for establishing the direct effects of cofilin-1 depletion (Vitriol et al., 2013; Takemoto et al., 2013). In cells depleted of ADF and cofilin-1, SuperNova-cofilin-1 is predominantly observed at leader bleb necks (Figure 4A). After 1 min of intense red light irradiation, we found that ~50% of SuperNova-cofilin-1 is destroyed, as indicated by a reduction in red fluorescence (Figure 4A). Using LifeAct-mEmerald for monitoring actin dynamics, we observed an accumulation of actin and the elongation of leader bleb necks within minutes of inactivating cofilin-1 (Figure 4B and Video 7). Moreover, after inactivating SuperNova-cofilin-1, cortical actin flow rates in leader blebs were reduced by ~50%, whereas irradiation of SuperNova alone did not change actin flow rates (Figure 4C–D and Figure 4—figure supplement 1A). Thus, as demonstrated by CALI, cofilin-1 directly regulates the cortical actin in leader blebs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left, SuperNova-cofilin-1 localization in cells depleted of endogenous cofilin-1 and ADF by RNAi before and after 1 min of red light irradiation. Right, quantitative analysis of CALI, as determined by the fold change in SuperNova emission. (B) Montage of mEmerald-LifeAct before and after cofilin-1 inactivation in a cell depleted of endogenous cofilin-1 and ADF by RNAi. (C) Kymographs of cortical actin (mEmerald-LifeAct) flow from the leader bleb tip before and after cofilin-1 inactivation. (D) Quantitative evaluation of cortical actin flow rates before and after cofilin-1 inactivation. Statistical significance was determined by a paired Student’s t-test. (E) Left, representative image of a freshly plated (spherical) cells with mEos3.2-LifeAct. Right, montage of mEos3.2-LifeAct within the shown ROI before and after photoactivation. (F) Average decay curve for mEos3.2-LifeAct at bleb necks (normalized to the initial fluorescence level; F/F0). The curve was fit using a non-linear single phase decay function. (G) t1/2 for mEos3.2-LifeAct after photoactivation at bleb necks for non-targeting, CFL1, ADF, and CFL1 + ADF RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cortical actin (mEmerald-LifeAct) flow rates before and after the inactivation (i.e., red light irradiation) of SuperNova alone. (B) Left, sample ROI from a paraformaldehyde (PFA) treated melanoma A375-M2 cell with mEos3.2-LifeAct. Right, average mEos3.2-LifeAct decay (three cells; mean ± SEM) after photoactivation. All data are representative of at least three independent experiments.
+
+![Video 7.](https://cdn.elifesciences.org/articles/67856/elife-67856-video7.mp4.jpg)
+
+**Video 7.:** The cell was depleted of endogenous actin depolymerizing factor (ADF) and cofilin-1 by RNAi.
+
 We then determined rates of actin turnover at leader bleb necks. For this, we used a version of LifeAct tagged with the photoactivable (green/red) fluorescent protein, mEos, for performing fluorescence loss after photoactivation assays. Using a 405 nm laser, a pool of mEos-LifeAct was photoactivated at leader bleb necks. Subsequently, fluorescence decay at leader bleb necks was measured and used for determining rates of actin turnover (Figure 4E). However, as our measurements will be a composite of the actin turnover rate and the binding kinetics of LifeAct, these data should be strictly viewed as apparent rates of actin turnover. To demonstrate proof of concept, curves were fit with a single phase decay, yielding an R-squared value of 0.8348 (Figure 4F). In contrast, a rapid decline in red fluorescence was not observed in paraformaldehyde treated cells (Figure 4—figure supplement 1B). In control (non-target) cells, we found the actin at leader bleb necks to be rapidly turned over (t1/2; Figure 4G). While the rate of actin turnover in cells depleted of cofilin-1 or ADF alone was similar to control (non-target), depleting both ADF and cofilin-1 led to a significant decrease in the actin turnover rate (t1/2; Figure 4G). These data suggest that ADF and cofilin-1, together, are critical for the rapid turnover of cortical actin at leader bleb necks.
 
-## Cofilin-1 supports both actin turnover and myosin contractility at leader bleb necks
+### Cofilin-1 supports both actin turnover and myosin contractility at leader bleb necks
 
 Because the cortical actin flow in leader blebs is driven by myosin, we wondered if ADF and/or cofilin-1 are important for cortical contractility. To address this possibility, we determined the compressibility of cells using a previously described gel sandwich approach (Liu et al., 2015). Briefly, freshly trypsinized (spherical) cells are placed between two polyacrylamide gels of known stiffness (1 kPa). Subsequently, the ratio of the cell height (h) to the diameter (d) is used to determine compressibility (Figure 5A). After depleting cofilin-1, we found cells to be significantly more compressible, whereas depleting ADF had no effect (Figure 5A). Moreover, in cofilin-1 depleted cells, the depletion of ADF did not have any additional effect on cell compressibility (Figure 5A). Reconstituting ADF and cofilin-1 RNAi cells with RFP-cofilin-1 rescued cell compressibility to levels similar to control, whereas RFP-ADF was unable to rescue compressibility (Figure 5B–C). Therefore, cofilin-1 may be particularly important for contractility. In support of this idea, cofilin-1 has been shown to modulate contractility through a variety of mechanisms, which involve changes in both actin turnover and network architecture (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016). As determined by immunofluorescence imaging of phosphorylated regulatory light chain (pRLC), we could confirm that signaling to myosin was not significantly affected by depleting ADF and/or cofilin-1 (Figure 5D–E). In confined cells, depleting ADF and cofilin-1 leads to the elongation of leader bleb necks, which are decorated with myosin (EGFP-RLC; Figure 5F). We then used CALI to determine if the accumulation of myosin at leader blebs necks is directly caused by the removal of these proteins. Indeed, within minutes of SuperNova-cofilin-1 inactivation, we observed myosin accumulating at leader bleb necks (EGFP-RLC; Figure 5G and Video 8). Additionally, the flow of myosin toward leader bleb necks was significantly impeded after cofilin-1 inactivation, as determined by tracking individual myosin minifilaments (Figure 5H). While ADF may be particularly important for actin turnover, these results point to cofilin-1 as having important roles in both actin turnover and myosin contractility at leader bleb necks.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig5-v2.jpg)
 
-**Figure 5.:** (A) A previously described gel sandwich assay was used to measure the stiffness (h/d) of spherical cells after non-targeting (91 cells), CFL1 (30 cells), actin depolymerizing factor (ADF) (25 cells), and CFL1 + ADF RNAi (42 cells). (B) Cell stiffness (h/d) of spherical cells with non-targeting (181 cells) or siCFL1 + siADF RNAi rescued with RFP-cofilin-1 (41 cells) or RFP-ADF (74 cells). (A–B) Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (C) Cofilin-1 (left) and ADF (right) levels (fluorescence intensity; fold change) of adhered RNAi cells by immunofluorescence confirming rescue by transfection with RFP-cofilin-1 (left) or RFP-ADF (right). Statistical significance was determined by an unpaired one-sample t-test. (D) Immunofluorescence imaging of endogenous phosphorylated regulatory light chain (pRLC) (S18), total RLC, and filamentous-actin (F-actin) (phalloidin) in freshly plated (spherical) cells after non-targeting, CFL1, and CFL1 + ADF RNAi. (E) Ratio of cortical pRLC (S18) to total RLC fluorescence intensity after non-targeting (114 cells), CFL1 (107 cells), ADF (124 cells), and CFL1 + ADF RNAi (91 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (F) Localization of EGFP tagged regulatory light chain (EGFP-RLC) in a cell confined down to 3 µm after CFL1 + ADF RNAi. (G) EGFP-RLC dynamics in a cell depleted of cofilin-1 and ADF before and after chromophore assisted light inactivation (CALI) of SuperNova-cofilin-1. Arrow points to myosin accumulating at an elongating leader bleb neck after cofilin-1 inactivation. (H) Myosin minifilament flow rate before and after cofilin-1 inactivation. Statistical significance was determined using a paired Student’s t-test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.  Figure 5—source data 1.Spreadsheet of stiffness (h/d) measurements for CFL1, actin depolymerizing factor (ADF), CFL1 + ADF RNAi, as well as CFL1 + ADF RNAi cells rescued by transfection with RFP-cofilin-1 or RFP-ADF plasmid are provided. These data are graphed in Figure 5A–B.
+**Figure 5.:** (A) A previously described gel sandwich assay was used to measure the stiffness (h/d) of spherical cells after non-targeting (91 cells), CFL1 (30 cells), actin depolymerizing factor (ADF) (25 cells), and CFL1 + ADF RNAi (42 cells). (B) Cell stiffness (h/d) of spherical cells with non-targeting (181 cells) or siCFL1 + siADF RNAi rescued with RFP-cofilin-1 (41 cells) or RFP-ADF (74 cells). (A–B) Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (C) Cofilin-1 (left) and ADF (right) levels (fluorescence intensity; fold change) of adhered RNAi cells by immunofluorescence confirming rescue by transfection with RFP-cofilin-1 (left) or RFP-ADF (right). Statistical significance was determined by an unpaired one-sample t-test. (D) Immunofluorescence imaging of endogenous phosphorylated regulatory light chain (pRLC) (S18), total RLC, and filamentous-actin (F-actin) (phalloidin) in freshly plated (spherical) cells after non-targeting, CFL1, and CFL1 + ADF RNAi. (E) Ratio of cortical pRLC (S18) to total RLC fluorescence intensity after non-targeting (114 cells), CFL1 (107 cells), ADF (124 cells), and CFL1 + ADF RNAi (91 cells). Statistical significance was determined by one-way ANOVA and a Dunnet’s post hoc test. (F) Localization of EGFP tagged regulatory light chain (EGFP-RLC) in a cell confined down to 3 µm after CFL1 + ADF RNAi. (G) EGFP-RLC dynamics in a cell depleted of cofilin-1 and ADF before and after chromophore assisted light inactivation (CALI) of SuperNova-cofilin-1. Arrow points to myosin accumulating at an elongating leader bleb neck after cofilin-1 inactivation. (H) Myosin minifilament flow rate before and after cofilin-1 inactivation. Statistical significance was determined using a paired Student’s t-test. All data are representative of at least three independent experiments. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
+
+![Video 8.](https://cdn.elifesciences.org/articles/67856/elife-67856-video8.mp4.jpg)
+
+**Video 8.:** The cell was depleted of endogenous actin depolymerizing factor (ADF) and cofilin-1 by RNAi.
 
 ## Discussion
 
@@ -83,86 +127,257 @@ This work also reveals an unanticipated role for ADF. In melanoma cells, ADF app
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A375-M2</td>
+      <td>ATCC</td>
+      <td>CRL-3223</td>
+      <td>Metastatic melanoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td>Lung adenocarcinoma</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYLGARD 184</td>
+      <td>Dow Corning</td>
+      <td>Cat no. 24236–10</td>
+      <td>PDMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EGFP-cofilin-1 WT, S3A, and S3E</td>
+      <td>Addgene (a gift from Dr James Bamburg)</td>
+      <td>Plasmid no. 50859, 50854, and 50855</td>
+      <td>Plasmid constructs to transfect</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>RFP-cofilin-1</td>
+      <td>Dr James Bamburg (Colorado State University)</td>
+      <td>n/a</td>
+      <td>Plasmid construct to transfect</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>RFP-ADF</td>
+      <td>Dr James Bamburg (Colorado State University)</td>
+      <td>n/a</td>
+      <td>Plasmid construct to transfect</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>SuperNova-cofilin-1</td>
+      <td>Dr Kazuyo Sakai (Osaka University, Osaka, Japan)</td>
+      <td>n/a</td>
+      <td>Plasmid construct to transfect and destroy cofilin-1 by CALI</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Saccharomyces cerevisiae)</td>
+      <td>mEos3.2-LifeAct</td>
+      <td>Addgene (a gift from Michael Davidson)</td>
+      <td>Plasmid no. 54696</td>
+      <td>Plasmid construct to transfect and monitor F-actin dynamics</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>Non-targeting siRNA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. 4390844</td>
+      <td>Control siRNA to transfect</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>Cofilin-1 siRNA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. 4392420; s2936</td>
+      <td>Cofilin-1 siRNA to transfect</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>ADF siRNA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. 4392422; s21737</td>
+      <td>ADF siRNA to transfect</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cofilin-1 (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. MA5-17275</td>
+      <td>WB (1:1000), IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ADF (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. MA5-25485</td>
+      <td>WB (1:1000), IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>Cofilin-1 forward qPCR primer</td>
+      <td>Thermo Fisher</td>
+      <td>n/a</td>
+      <td>GCAACCTATGAGACCAAGGAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>ADF forward qPCR primer</td>
+      <td>Thermo Fisher</td>
+      <td>n/a</td>
+      <td>GCACCAGAACTAGCACCTCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Homo sapiens)</td>
+      <td>GAPDH forward qPCR primer</td>
+      <td>Thermo Fisher</td>
+      <td>n/a</td>
+      <td>GTCTCCTCTGACTTCAACAGCG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA protein</td>
+      <td>Alexa Fluor 568-conjugated G-actin from rabbit muscle</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no. A12374</td>
+      <td>Fluorescent G-actin to label actin barbed ends</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>n/a</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>Microscopy</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>n/a</td>
+      <td>Statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>BioRender</td>
+      <td>Toronto, ON</td>
+      <td>n/a</td>
+      <td>Illustration</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DeltaVision Elite</td>
+      <td>GE</td>
+      <td>n/a</td>
+      <td>Commercial deconvolution microscopy system</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM880 with fast Airy Scan</td>
+      <td>Zeiss</td>
+      <td>n/a</td>
+      <td>Commercial point scanning confocal microscopy system</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 A375-M2 (CRL-3223) and A549 (CCL-185) were obtained from the American Type Culture Collection (ATCC; Manassas, VA). Cells were cultured in high-glucose DMEM supplemented with 10% FBS (cat no. 12106C; Sigma Aldrich, St. Louis, MO), GlutaMAX (Thermo Fisher, Carlsbad, CA), antibiotic-antimycotic (Thermo Fisher), and 20 mM HEPES at pH 7.4 for up to 30 passages. Cells were tested, and negative, for mycoplasma using MycoAlert PLUS Mycoplasma Detection Kit (Lonza, Walkersville, MD).
 
-## Confinement
+### Confinement
 
 This protocol has been described in detail elsewhere (Logue et al., 2018). Briefly, PDMS (cat no. 24236–10; Dow Corning 184 SYLGARD) was purchased from Krayden (Westminster, CO); 2 mL was cured overnight at 37°C in each well of a six-well glass bottom plate (cat no. P06-1.5H-N; Cellvis, Mountain View, CA). Using a biopsy punch (cat no. 504535; World Precision Instruments, Sarasota, FL), an 8 mm hole was cut and 3 mL of serum-free media containing 1% BSA was added to each well and incubated overnight at 37°C. After removing the serum-free media containing 1% BSA, 300 µL of complete media containing trypsinized cells (250,000 to 1 million) and 2 µL of 3.11 µm beads (cat no. PS05002; Bangs Laboratories, Fishers, IN) were then pipetted into the round opening. The vacuum created by briefly lifting one side of the hole with a 1 mL pipette tip was used to move cells and beads underneath the PDMS. Finally, 3 mL of complete media was added to each well and cells were recovered for ~60 min before imaging.
 
-## Plasmids
+### Plasmids
 
 SuperNova-cofilin-1 was a gift from Dr Kazuyo Sakai (Osaka University, Osaka, Japan). EGFP-cofilin-1 WT (no. 50859; a gift from Dr James Bamburg), S3A (no. 50854; a gift from Dr. James Bamburg), S3E (no. 50855; a gift from Dr James Bamburg), and mEos3.2-LifeAct (no. 54696; a gift from Michael Davidson) were obtained from Addgene (Watertown, MA). RFP-cofilin-1 and RFP-ADF were a gift from Dr James Bamburg (Colorado State University); 1 µg of plasmid was used to transfect 400,000 cells in each well of a six-well plate using Lipofectamine 2000 (5 µL; Thermo Fisher) in OptiMEM (400 µL; Thermo Fisher). After 20 min at room temperature, plasmid in Lipofectamine 2000/OptiMEM was then incubated with cells in complete media (2 mL) overnight.
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 Latrunculin-A (cat no. 3973) and cytochalasin B (cat no. 5474) were purchased from Tocris Bioscience (Bristol, UK). DMSO (Sigma Aldrich) was used to make 5 and 2 mM stock solutions of Latrunculin-A and cytochalasin B, respectively. To disassemble actin, cells resuspended in flow buffer were treated with 5 µM Latrunculin-A for 10 min at room temperature before flow cytometry. For barbed end assays, cytochalasin B was pre-diluted in complete media before it was incubated with cells for 1 hr at 37°C.
 
-## Locked nucleic acids
+### Locked nucleic acids
 
 Non-targeting (cat no. 4390844), cofilin-1 (cat no. 4392420; s2936), and ADF (cat no. 4392422; s21737) locked nucleic acids (LNAs) were purchased from Thermo Fisher. All LNA transfections were performed using RNAiMAX (5 µL; Thermo Fisher) and OptiMEM (400 µL; Thermo Fisher); 100,000 cells were trypsinized and seeded in six-well plates in complete media. After cells adhered (~1 hr), LNAs in RNAiMAX/OptiMEM were added to cells in complete media (2 mL) at a final concentration of 50 nM. Cells were incubated with LNAs for 2 days.
 
-## Western blotting
+### Western blotting
 
 Whole-cell lysates were prepared by scraping cells into ice-cold RIPA buffer (50 mM HEPES pH 7.4, 150 mM NaCl, 5 mM EDTA, 0.1% SDS, 0.5% deoxycholate, and 1% Triton X-100) containing protease and phosphatase inhibitors (Roche, Switzerland). Before loading onto 4–12% NuPAGE Bis-Tris gradient gels (Thermo Fisher), DNA was sheared by sonication and samples were boiled for 10 min in loading buffer. Following SDS-PAGE, proteins in gels were transferred to nitrocellulose membranes and subsequently immobilized by air drying overnight. After blocking in Tris-buffered saline containing 0.1% Tween 20 and 1% BSA, primary antibodies against cofilin-1 (cat no. MA5-17275; Thermo Fisher) and ADF (cat no. MA5-25485; Thermo Fisher and cat no. D8818; Sigma Aldrich) were incubated with membranes overnight at 4°C. Bands were then resolved with IRDye conjugated secondary antibodies on an Odyssey scanner from LI-COR Biosciences, Lincoln, NE. GAPDH (cat no. 97166; Cell Signaling Technology, Danvers, MA) was used to confirm equal loading.
 
-## qRT-PCR
+### qRT-PCR
 
 Total RNA was isolated from cells using the PureLink RNA Mini Kit (Thermo Fisher) and was used for reverse transcription using a high-capacity cDNA Reverse Transcription Kit (Applied Biosystems, Foster City, CA). cDNA was used for qRT-PCR using PowerUp SYBR Green Master Mix (Thermo Fisher) and primers, human CFL1: GCAACCTATGAGACCAAGGAGAG (forward sequence), human ADF: GCACCAGAACTAGCACCTCTGA (forward sequence), and human GAPDH: GTCTCCTCTGACTTCAACAGCG (forward sequence), on a CFX96 real-time PCR detection system (Bio-Rad). Relative mRNA levels were calculated by the ΔCt method.
 
-## Transmigration
+### Transmigration
 
 Transmigration assays were performed using polycarbonate filters with 8 or 12 µm pores (Corning; Corning, NY). Prior to the assays, cells were serum-starved for 24 hr and polycarbonate filters were fibronectin (10 µg/mL; Millipore, Burlington, MA) coated for 1 hr followed by air drying; 100,000 cells in serum-free media were seeded in the top chamber while the bottom chamber contained media with 20% FBS to attract cells. After 24 hr, cells from the bottom of the filter were trypsinized and counted using an automated cell counter (TC20; Bio-Rad, Hercules, CA). Transmigration was then calculated as the ratio of cells on the bottom of the filter vs. the total.
 
-## Flow cytometry
+### Flow cytometry
 
 Roughly 1 × 106 trypsinized cells in flow buffer (HBS with 1% BSA) were fixed using 4% paraformaldehyde (cat no. 15710; Electron Microscopy Sciences, Hatfield, PA) for 20 min at room temperature. After washing, cell pellets were resuspended in flow buffer and incubated with 0.1% Triton X-100, Alexa Fluor 647-conjugated phalloidin (cat no. A22287; Thermo Fisher), and DAPI (Sigma Aldrich) for 30 min at room temperature. Data were acquired on a FACSCalibur (BD Biosciences, Franklin Lakes, NJ) flow cytometer. Flow cytometric analysis was performed using FlowJo (Ashland, OR) software.
 
-## Barbed end assay
+### Barbed end assay
 
 The protocol for the barbed end assay was used with minor modifications (Vitriol et al., 2007; Symons and Mitchison, 1991). Prior to barbed end assays, cells were trypsinized and plated on poly-L-lysine coated six-well glass bottom plates (Cellvis). To allow for a minimal level of cell attachment, cells were incubated for 10 min in a tissue culture incubator. Cells were then gently permeabilized for 1 min with saponin buffer (138 mM KCl, 4 mM MgCl2, 3 mM EGTA, 0.1% saponin, 1 mM ATP, 3 µM phalloidin, and 1% BSA) followed by one wash with saponin-free buffer. Permeabilized cells were then incubated with Alexa Fluor 568-conjugated G-actin from rabbit muscle (cat no. A12374; Thermo Fisher) for 3 min in a tissue culture incubator and washed with saponin-free buffer. Treated cells were then fixed with 4% paraformaldehyde in HEPES-buffered saline (HBS), washed with HBS alone, and immediately imaged.
 
-## Immunofluorescence
+### Immunofluorescence
 
 After washing with HBS, cells in six-well glass bottom plates (Cellvis) were fixed with 4% paraformaldehyde (Electron Microscopy Sciences) in HBS for 20 min at room temperature. Blocking, permeabilization, antibody incubation, and washing were done in HBS with 1% BSA, 1% fish gelatin, 0.1% Triton X-100, and 5 mM EDTA. A 1:250 dilution of ADF (cat no. MA5-25485; Thermo Fisher), cofilin-1 (cat no. MA5-17275; Thermo Fisher), pRLC (cat no. PA5-17727 or MA5-15163; Thermo Fisher), or RLC (cat no. PA5-17624; Thermo Fisher) antibody was incubated with cells overnight at 4°C. After extensive washing, a 1:400 dilution of Alexa Fluor 488-conjugated anti-rabbit secondary antibody (cat no. A-21206; Thermo Fisher) was then incubated with cells for 2 hr at room temperature. Cells were then incubated with a 1:250 dilution of Alexa Fluor 568-conjugated phalloidin (cat no. A12380; Thermo Fisher) and a 1:1000 dilution of DAPI (cat no. D1306; Thermo Fisher). Cells were again extensively washed and then imaged in HBS. Fluorescence intensity of cofilin-1 or ADF was measured in adhered cells with either EGFP-cofilin-1, RFP-cofilin-1, RFP-ADF, or an empty vector fluorescent protein. A minimum of 26 cells over three independent experiments were averaged and normalized to the control in each experimental n-value.
 
-## Cell stiffness assay
+### Cell stiffness assay
 
 The protocol for the gel sandwich assay was used with minor modifications (Liu et al., 2015). Six-well glass bottom plates (Cellvis) and 18 mm coverslips were activated using 3-aminopropyltrimethoxysilane (Sigma Aldrich) for 5 min and then for 30 min with 0.5% glutaraldehyde (Electron Microscopy Sciences) in PBS; 1 kPa polyacrylamide gels were made using 2 µL of blue fluorescent beads (200 nm; Thermo Fisher), 18.8 µL of 40% acrylamide solution (cat no. 161–0140; Bio-Rad), and 12.5 µL of bis-acrylamide (cat no. 161–0142; Bio-Rad) in 250 µL of PBS. Finally, 2.5 µL of ammonium persulfate (10% in water) and 0.5 µL of tetramethylethylenediamine was added before spreading 9 µL drops onto treated glass under coverslips. After polymerizing for 40 min, the coverslip was lifted in PBS, extensively rinsed and incubated overnight in PBS. Before each experiment, the gel attached to the coverslip was placed on a 14 mm diameter, 2 cm high PDMS column for applying a slight pressure to the coverslip with its own weight. Then, both gels were incubated for 30 min in media before plates were seeded. After the bottom gels in plates was placed on the microscope stage, the PDMS column with the top gel was placed on top of the cells seeded on the bottom gels, confining cells between the two gels. After 1 hr of adaptation, the height of cells was determined with beads by measuring the distance between gels, whereas the cell diameter was measured using a far-red PM dye (cat no. C10046; Thermo Fisher). Stiffness was defined as the height (h) divided by the diameter (d).
 
-## Microscopy
+### Microscopy
 
 Live high-resolution imaging was performed using a General Electric (Boston, MA) DeltaVision Elite imaging system mounted on an Olympus (Japan) IX71 stand with a computerized stage, environment chamber (heat, CO2, and humidifier), ultrafast solid-state illumination with excitation/emission filter sets for DAPI, CFP, GFP, YFP, and Cy5, critical illumination, Olympus PlanApo N 60X/1.42 NA DIC (oil) objective, Photometrics (Tucson, AZ) CoolSNAP HQ2 camera, proprietary constrained iterative deconvolution, and vibration isolation table.
 
-## Chromophore assisted light inactivation
+### Chromophore assisted light inactivation
 
 Live confined cells co-transfected with SuperNova-cofilin-1 and either mEmerald-LifeAct or EGFP-RLC were imaged every 12 s for 5 min before CALI. Cells were then subjected to 1 min of high intensity red light irradiation (DeltaVision Elite). Images were subsequently acquired every 12 s for 1 hr post-irradiation.
 
-## Actomyosin flow rates
+### Actomyosin flow rates
 
 Actin and myosin minifilament flow rates were calculated from images taken every 12 s of mEmerald-LifeAct and EGFP-RLC, respectively. Kymographs of each were generated in Fiji (https://imagej.net/Fiji) and spanned the length of leader blebs.
 
-## Fluorescence loss after photobleaching
+### Fluorescence loss after photobleaching
 
 Cells transiently transfected with the photoactivatable construct, mEos3.2-LifeAct, were imaged using a Zeiss (Germany) laser scanning confocal microscope (LSM880) with fast Airy Scan. Regions at bleb necks were photo-converted using the 405 nm laser at 20% power (three iterations). Regions were sampled every 15 ms for 10 and 150 cycles before and after photo-conversion, respectively. Fluorescence measurements were acquired using ZEN software (Zeiss) and decay was calculated as F/F0. Non-linear one-phase decay curves were fit to data using Prism (GraphPad, San Diego, CA).
 
-## Cell migration
+### Cell migration
 
 To perform cell speed, plot of origin, and direction autocorrelation analyses, we used an Excel (Microsoft, Redmond, WA) plugin, DiPer, developed by Gorelik and colleagues and the Fiji plugin, MTrackJ, developed by Erik Meijering for manual tracking (Gorelik and Gautreau, 2014; Meijering et al., 2012). For minimizing positional error, cells were tracked every other frame. Brightfield imaging was used to confirm that beads were not obstructing the path of a cell. Cells that traveled a distance equivalent to at least one cell length over the course of the 5 hr time-lapse were classified as highly motile.
 
-## Bleb morphology and dynamics
+### Bleb morphology and dynamics
 
 For leader bleb and total bleb areas, freshly confined cells were traced from high-resolution images with the free-hand circle tool in Fiji (https://imagej.net/Fiji). From every other frame, the percentage of cell area for leader blebs and percentage of cell area for total blebs were calculated in Excel (Microsoft). Frame-by-frame measurements were then used to generate an average for each cell. Bleb retraction rates were determined by dividing the bleb length by the amount of time taken to completely retract the bleb into the cell body. For each cell, retraction rates were calculated from two to three blebs.
 
-## Cofilin-1 enrichment
+### Cofilin-1 enrichment
 
 For regional analyses of EGFP-cofilin-1 distribution, 10 ROIs each representing 10% of the length of the leader bleb were drawn using Fiji (https://imagej.net/Fiji). Mean gray values of each ROI were normalized to the first ROI taken at the bleb neck.
 
-## Statistics
+### Statistics
 
 All box plots are Tukey in which ‘+’ and line denote the mean and median, respectively. Sample sizes were determined empirically and based on saturation. As noted in each figure legend, statistical significance was determined by either a two-tailed Student’s t-test or multiple-comparison test post hoc. Normality was determined by a D’Agostino and Pearson test in Prism (GraphPad). *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001.
 
-## Illustration
+### Illustration
 
 The model for ADF and cofilin-1 function was drawn in BioRender (Toronto, ON).

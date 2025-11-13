@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02j15s898 Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology and Emory University Atlanta United States
+1. Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology and Emory University Atlanta United States ([ROR:02j15s898](https://ror.org/02j15s898))
 
 † Corresponding author
 

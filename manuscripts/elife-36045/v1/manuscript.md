@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.36045.001 Morphogenesis involves interactions of asymmetric cell populations to form complex multicellular patterns and structures comprised of distinct cell types. However, current methods to model morphogenic events lack control over cell-type co-emergence and offer little capability to selectively perturb specific cell subpopulations. Our in vitro system interrogates cell-cell interactions and multicellular organization within human induced pluripotent stem cell (hiPSC) colonies. We examined effects of induced mosaic knockdown of molecular regulators of cortical tension (ROCK1) and cell-cell adhesion (CDH1) with CRISPR interference. Mosaic knockdown of ROCK1 or CDH1 resulted in differential patterning within hiPSC colonies due to cellular self-organization, while retaining an epithelial pluripotent phenotype. Knockdown induction stimulates a transient wave of differential gene expression within the mixed populations that stabilized in coordination with observed self-organization. Mosaic patterning enables genetic interrogation of emergent multicellular properties, which can facilitate better understanding of the molecular pathways that regulate symmetry-breaking during morphogenesis.
+Morphogenesis involves interactions of asymmetric cell populations to form complex multicellular patterns and structures comprised of distinct cell types. However, current methods to model morphogenic events lack control over cell-type co-emergence and offer little capability to selectively perturb specific cell subpopulations. Our in vitro system interrogates cell-cell interactions and multicellular organization within human induced pluripotent stem cell (hiPSC) colonies. We examined effects of induced mosaic knockdown of molecular regulators of cortical tension (ROCK1) and cell-cell adhesion (CDH1) with CRISPR interference. Mosaic knockdown of ROCK1 or CDH1 resulted in differential patterning within hiPSC colonies due to cellular self-organization, while retaining an epithelial pluripotent phenotype. Knockdown induction stimulates a transient wave of differential gene expression within the mixed populations that stabilized in coordination with observed self-organization. Mosaic patterning enables genetic interrogation of emergent multicellular properties, which can facilitate better understanding of the molecular pathways that regulate symmetry-breaking during morphogenesis.
 
 ## Introduction
 
@@ -39,11 +39,31 @@ Morphogenic asymmetries arise from reorganization of cells due to local changes 
 
 Rho-associated coiled-coil containing protein kinase (ROCK1) and E-cadherin (CDH1) are interesting orthogonal gene targets to interrogate hPSC population organization by altering the intrinsic mechanics of distinct cell populations. ROCK1 regulates actin-myosin dynamics (Figure 1A), which contribute to a cell’s cortical tension (Salbreux et al., 2012). In addition, ROCK inhibition is often used in hPSC culture and has been implicated in pluripotency maintenance (McBeath et al., 2004; Ohgushi et al., 2015). Similarly, CDH1, a classic type I cadherin adhesion molecule, is widely associated with pluripotency and early morphogenesis (Heasman et al., 1994; Przybyla et al., 2016; Ringwald et al., 1987), and its down-regulation parallels the induction of patterning events via differential adhesion (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of ROCK1 and CDH1 within a cell. CDH1 is a trans-membrane adhesion molecule that locates to the borders of cells and ROCK1 is a cytoplasmic kinase that acts upon non-muscle myosin II. (B) Schematic of the CRISPRi system. Doxycycline addition to the hiPSC culture media leads to the expression of mCherry and dCas9-KRAB to induce knockdown of target gene. (C) qPCR and western blot quantification of knockdown timing; knockdown of both mRNA and protein were achieved by day three of DOX treatment when compared to untreated hiPSCs (p<0.05, n = 3, data represent mean ± SD). (D) Brightfield imaging of knockdown hiPSCs indicated morphological differences in colony shape (white arrows) and cell extensions (black arrows) at colony borders. (E) Live reporter fluorescence for dCas9-KRAB expression (red) and immunostaining for CDH1 (gray) demonstrated loss of CDH1 in induced CDH1 CRISPRi hiPSCs, but maintenance of CDH1 contacts in the off-target control and ROCK1 KD hiPSCs. (F) Atomic force microscopy (AFM) of knockdown populations exhibited a twofold increase in Young’s elastic modulus of ROCK1 knockdown cells compared to control and CDH1 knockdown cells (p<0.05, n = 36, 65, 72 force points for Control, ROCK1 KD, and CDH1 KD, respectively, area under curve = 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot reflecting KD time course of ROCK1 and CDH1 over 6 days. (B) Western blot of ROCK1 and CDH1 protein levels in KD cells. (C) Densitometry quantification of CDH1 and ROCK1 protein levels in both the ROCK KD cells and the CDH1 KD cells. CDH1 was only significantly different in cells where CDH1 was KD. ROCK1 protein levels exhibited a significant decrease in both CDH1 and ROCK1 (p<0.01).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Morphology of ROCK1 KD cells compared to WT cells treated with small molecule inhibitor of ROCK1, Y-27632. The ROCK1 KD and the Y-27632 treated cells displayed cell protrusions (white arrowheads) at the borders of colonies when compared to uninhibited WT cells.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Immunostaining of zona occludens 1 (ZO-1) in pure populations of hiPSCs after 6 days of induced KD of ROCK1 or CDH1. (B) Population distribution of contact angles before and after DOX treatment measured at ZO-1 junctions. The contact angles of KD cells did not differ significantly compared to the off-target CRISPRi guide control. Dotted lines delineate quartiles. (p<0.05; n = 15 colonies, 50 angles per colony).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Vector map of constitutive GFP cloned into WT hiPSCs to create the WT-GFP line. (B) Karyotypes of all cell lines used in experiments displayed no chromosomal defects. Passage numbers are indicated by p#.
+
 In this study, we explored whether mechanical manipulation of human induced pluripotent stem cells (hiPSCs) sub-populations results in controllable cell driven self-organization into repeatable patterns. We employed an inducible CRISPR interference (CRISPRi) system in hiPSCs to silence key proteins that regulate cell adhesion and cortical tension. We genetically induced controlled symmetry-breaking events within hiPSC populations by creating mixed populations of hiPSCs with and without the CRISPRi system and then induced mosaic knockdown (KD). Mosaic KD was employed to interrogate how the creation of physical asymmetries in an otherwise homogeneous population leads to multicellular organization and pattern formation. We show that induction of mosaic KD of ROCK1 or CDH1 results in a ‘bottom-up’ cell-driven pattern formation of hiPSC colonies while preserving pluripotency.
 
 ## Results
 
-## CRISPRi KD in human iPSCs modulates epithelial morphology
+### CRISPRi KD in human iPSCs modulates epithelial morphology
 
 To establish an inducible CRISPRi KD of ROCK1 or CDH1, we used a doxycycline (DOX)-inducible CRISPRi hiPSC line (CRISPRi-Gen1C) (Mandegar et al., 2016) (Figure 1B). Guide RNA (gRNA) sequences designed to target the transcription start site of ROCK1 or CDH1 (Supplementary file 1 - Table 1) were introduced into CRISPR-Gen1C hiPSCs and KD was induced by the addition of DOX (2 μM) into cell culture media. After 3 days of KD induction, ROCK1 mRNA levels were <30% of hiPSCs without DOX treatment, and CDH1 mRNA levels in CDH1 KD hiPSCs were <10% compared to untreated controls (Figure 1C). Protein KD followed a similar trend where KD populations compared to untreated controls resulted in <20% ROCK1 protein and <10% of CDH1 protein by day three of DOX treatment, and reduced protein levels were maintained through day six of CRISPRi induction (Figure 1C, Figure 1—figure supplement 1).
 
@@ -51,9 +71,21 @@ Both the ROCK1 KD cells and the CDH1 KD cells retained epithelial hiPSC morpholo
 
 To further confirm the physical effects of knocking down CDH1 or ROCK1 selectively in hiPSCs, we performed immunofluorescent (IF) staining of CDH1 expression. After 5 days of DOX treatment, CDH1 KD hiPSCs exhibited a complete loss of CDH1 expression, as expected, whereas the ROCK1 KD hiPSCs and the control hiPSCs (with off-target CRISPRi guide) maintained robust expression of CDH1 along the plasma membrane (Figure 1E). To interrogate cell cortical tension, the contact angles between cells were measured based on IF of zona occluden-1 (ZO1), a protein associated with tight junctions (Figure 1—figure supplement 3A). Contact angles were not statistically different in either the ROCK1 KD or CDH1 KD cells compared to the control, but all populations displayed a subtle reduction in mean contact angle with DOX addition that was not significantly different between any of the groups (Figure 1—figure supplement 3B). However, when direct measurements of hiPSC elasticity were taken using atomic force microscopy after 6 days of KD, ROCK1 KD cells displayed a twofold higher cortical stiffness than the control and CDH1 KD populations, whereas the latter groups did not differ from one another (Figure 1F). Therefore, CRISPRi silencing of targeted genes associated with cellular mechanical properties resulted in distinct physical differences between the otherwise similar cell populations.
 
-## Mosaic CRISPRi silencing results in multicellular organization
+### Mosaic CRISPRi silencing results in multicellular organization
 
 To examine whether mosaic KD of a single molecule impacted hiPSC organization, ROCK1- or CDH1-CRISPRi populations were pretreated with DOX for 5 days and mixed with isogenic wildtype hiPSCs that constitutively expressed GFP (WT-GFP) at a 1:3 ratio. Forced aggregation of ROCK1 KD: WT-GFP hiPSCs or CDH1 KD: WT-GFP hiPSCs and subsequent re-plating were used to create individual colonies of randomly mixed ROCK1 KD hiPSCs or CDH1 KD hiPSCs with the WT-GFP cells (Figure 2A). After 5 days in mixed culture, ROCK1 KD cells sorted radially from the WT-GFP cells, clustering primarily at the edges of the colonies (Figure 2B,C). However, separation of the ROCK1 KD cells did not result in distinct smooth borders between the WT-GFP and ROCK1 KD hiPSC populations. In contrast, CDH1 KD cells robustly separated from the GFP-WT population, forming sharp boundaries between populations irrespective of their spatial location within the colony (Figure 2B,C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of experimental timeline. WT-GFP and ROCK1- or CDH1- CRISPRi hiPSCs were pretreated with doxycycline for 6 days before aggregation in pyramidal microwells and re-plating as mixed colonies. (B) Live cell imaging of pattern emergence over time from mixing colonies. Control populations remain mixed, ROCK1 KD hiPSCs cluster radially at borders of colonies, and CDH1 KD populations sort themselves from WT-GFP hiPSCs regardless of location within colony. (C) Confocal microscopy of patterned colonies of hiPSCs with KD induction prior to mixing. (D) Quantification of the radial distribution of KD cells in pre-induced mixed colonies. The ratio of inner cell area to outer cell area normalized to total cell area is displayed (n = 25,* and # indicate significance, p<0.05). (E) Schematic of experimental timeline for WT-GFP and ROCK1- or CDH1-CRISPRi hiPSCs treated with doxycycline upon re-plating as mixed colonies. (F) Live cell imaging of pattern emergence in post-mixing induction colonies, where CRISPRi KD is induced after cell population mixing. (G) Confocal microscopy of patterned hiPSC colonies with KD induction upon mixing populations, where ROCK KD cells stack vertically with WT-GFP hiPSCs. (H) Quantification of the radial distribution of KD cells in post-induced mixed colonies. The ratio of inner cell area to outer cell area normalized to total cell area is displayed (n = 20).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Live imaging on mixed colonies of CRISPRi KD hiPSCs with WT hiPSCs, where a picture was taken every 30 min for 12 hr, 4 days after the start of KD and mixing of two populations (no color = no guide, red = KD population). The displayed images were taken at the start of day four. The ratio of CRISPRi KD cells was varied at 25%, 50%, and 75% of the overall population.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Percent of CRISPRi KD cells after 5 days in mixed culture measured by flow cytometry. (n = 10,000 events, three biological reps; * indicated significance between pre and post mixed and # indicates significance from other KDs; p<0.05) (B) EdU incorporation overtime in pure populations as KD is induced by DOX treatment (n = 10,000 events).
 
 To determine whether pattern emergence was impacted by the relative proportion of mosaic KD within a colony, KD cells were mixed with control CRISPRi hiPSCs lacking any gRNA or fluorescent protein at varying cell ratios of 1:1, 1:3, and 3:1. Clustering of ROCK1 KD cells was less apparent as the proportion of ROCK1 KD cells within a colony increased. In fact, increasing ROCK1 KD hiPSCs to 75% of the colony resulted in the entire colony morphology displaying characteristics of a pure ROCK1 KD colony (Figure 2—figure supplement 1). On the other hand, the CDH1 CRISPRi cells separated from the colorless CRISPRi population, irrespective of cell ratio, indicating that the spatial organization occurred regardless of relative population size within a hiPSC colony. The ability of both the ROCK1 and CDH1 CRISPRi KD populations to physically partition from otherwise identical CRISPRi-engineered hiPSCs that lacked a gRNA confirms that the production of dCas9-KRAB is not responsible for the previously observed pattern formation when CRISPRi KD hiPSCs were mixed with the WT-GFP cells, but rather that the segregation is a direct result of KD of the target gene (Figure 2—figure supplement 1).
 
@@ -61,15 +93,39 @@ Based on the sorting behaviors of ROCK1 KD: WT-GFP and CDH1 KD: WT-GFP colonies 
 
 In addition to the changes in organization within colonies, significant changes were observed in the final cell ratios starting from an original seeding density of 3:1 WT to CRISPRi cells. The proportion of CRISPRi cells increased within the mixed colonies over time (Figure 2—figure supplement 2A). To determine if the accelerated growth was in response to mixing with a WT population, EdU incorporation was analyzed in pure CRISPRi and WT populations. Over 5 days of mixed culture, the WT-GFP cells displayed approximately 50% reduced DNA synthesis compared to the CRISPRi lines independent of DOX treatment (Figure 2—figure supplement 2B), however cell replication rate did not account for pattern formation as the CRISPRi control mixed colonies did not display evidence of any patterns.
 
-## Mosaic hiPSC colonies retain a pluripotent phenotype
+### Mosaic hiPSC colonies retain a pluripotent phenotype
 
 Colony morphology and expression of epithelial markers, such as epithelial cell adhesion molecule (EpCAM), were examined to determine if the cells that lost CDH1 expression segregated from their WT-GFP neighbors due to delamination, or loss of the epithelial phenotype characteristic of hiPSCs. ROCK1 KD: WT-GFP and CDH1 KD: WT-GFP colonies maintained an epithelial morphology throughout 6 days of CRISPRi silencing (Figure 3A) with no observed migration by CRISPRi-modulated cells away from the colonies. Both ROCK1 KD and CDH1 KD hiPSCs within mixed colonies expressed EpCAM at cell-cell boundaries after 6 days of CRISPRi induction despite changes in cortical tension or intercellular adhesion due to loss of ROCK1 or CDH1, respectively (Figure 3A). Furthermore, ROCK1/CDH1 KD hiPSCs displayed cell junction-localized β-catenin in pure colonies after 6 days of CRISPRi induction, suggesting maintenance of adherens junctions and epithelial colonies (Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunostaining of EpCAM for mixed colonies displayed relatively uniform expression regardless of KD. (B) Immunostaining for E-cadherin (CDH1) and OCT3/4 in patterned hiPSC colonies demonstrating nuclear localized OCT3/4 throughout the mixed populations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Immunostaining of β-catenin pure hiPSC colonies on day six of KD. β-catenin remains localized to the cell junctions in hiPSCs before and after DOX treatment to induce KD of ROCK1 and CDH1, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunostaining of OCT3/4 and SOX2 in mixed colonies on day six of KD, where borders between cell populations are denoted by dotted lines. (B) Gene expression of OCT3/4 and SOX2 in ROCK1 KD and CDH1 KD hiPSCs quantified by mRNA fold change (n = 3). (C) Gene expression of markers of the primitive streak (Brachyury) and neural crest (SOX9) in pure populations of ROCK1 KD or CDH1 KD hiPSCs quantified by mRNA fold change (n = 3, * indicates significance; p<0.05).
+
 Since the decrease of CDH1 is commonly associated with loss of pluripotency in PSCs, the expression and localization of the common pluripotency transcription factors, OCT3/4 and SOX2, were examined. Both proteins maintained strong nuclear expression in pure ROCK1 KD or CDH1 KD colonies after 6 days of KD induction (Figure 3—figure supplement 2A). Moreover, despite the physical segregation of cells induced by KD in mixed populations, no pattern could be observed based on pluripotency marker expression (Figure 3B). Furthermore, the abundance of OCT3/4 and SOX2 transcripts was unchanged in pure colonies of CDH1 KD cells and not significantly different, though variable, in pure colonies of ROCK1 KD hiPSCs (Figure 3—figure supplement 2B). However because the transcription factors SOX2 and OCT4 are retained by cells for a period of time during the process of differentiation, genes associated with the primitive streak (Brachyury [BRA]) and the neural crest (SOX9) were interrogated in either ROCK1 or CDH1 KD cells over 6 days (Figure 3—figure supplement 2C). Both BRA and SOX9 were significantly increased on day three of KD in ROCK1 KD cells, however at day six the gene expression returned to levels comparable to day zero before ROCK1 KD. Although the CDH1 KD cells did not display any significant trends, the standard deviation of gene expression varied as much as three times greater than that of the ROCK1 KD cells. The high variation between biological replicates potentially indicates that silencing of CDH1 induces a large variability in the gene regulation of BRA and SOX9 and could indicate that the cells experience a transient fluctuation in the pluripotency state. However, these results indicate that the loss of ROCK1 or CDH1 is not sufficient to disrupt the pluripotent gene regulatory network and induce an immediate exit from the pluripotent state.
 
-## Mosaic hiPSC patterns display transient gene expression changes in coordination with emergence of patterns
+### Mosaic hiPSC patterns display transient gene expression changes in coordination with emergence of patterns
 
 Since pluripotency markers were maintained irrespective of mosaic patterning, gene expression changes in pluripotency markers (SOX2, NANOG), mesendoderm markers (SOX17, BRA) and ectoderm markers (PAX6, SOX9) were examined during the course of mosaic patterning at days 1, 3 and 6 after KD induction (Figure 4A). To take into account potential gene expression changes that result from mixing hiPSC lines, un-induced mixed populations and un-induced pure populations were analyzed as controls. BRA did not change significantly with induction of ROCK1 KD or CDH1 KD in a mixed population, however SOX9 increased on day six of KD in both ROCK1 KD and CDH1 KD cells (Figure 4C,D). Interestingly, similar to pure populations, there was a large variance in gene expression between biological replicates, often displaying more than a onefold change difference in gene expression between biological replicates in mixed colonies.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of experimental timeline; WT-GFP and ROCK1- or CDH1-CRISPRi hiPSCs were mixed and re-plated prior to KD induction. Different cell populations were isolated by FACS for mRNA extraction on days 1, 3, and 6 after KD induction. (n = 3 per condition). (B) Representative scatter plot of a FACS-sorted population of mCherry +cells (indicating KD induction) with >98% purity. (C,D) Plots of specific mRNA expression changes at days 1, 3, and 6 in KD cell populations that have been mixed with WT. (* and # indicate significance, p<0.05). (E,F) Heat maps display fold change expression of genes found to display significant changes in ROCK1 or CDH1 KD cells mixed with WT-GFP hiPSCs when compared to time-matched, off-target control hiPSCs. Grey color indicates non-significance. Significance (p<0.05, n = 3) was determined using a one-way analysis of variance (ANOVA) followed by post-hoc pairwise comparisons by Tukey’s tests to determine the effect of mixing populations, the effect of solely KD, and the effect of KD within a mixed population.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heat map showing gene expression changes due to mixing two populations together without induction of CRISPRi in sub population where grey indicates non-significance. (B) Example panel of FACS-sorted population of GFP+ (i.e. WT) cells with >99% purity. (C) Heat map of significant gene expression fold changes in WT-GFP cells mixed for 6 days with OTG control, ROCK1 KD, or CDH1 KD hiPSCs when compared to time-matched, pure WT-GFP populations. Grey color indicates non-significance. Significance (p<0.05, n = 3) was determined using an ANOVA taking into account the independent effects of mixing populations, KD alone, and KD within a mixed population.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36045/elife-36045-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic of a 6 day ectoderm directed differentiation using dual SMAD inhibition or a complementary mesendoderm directed differentiation using CHIR treatment. (B) Quantification of PAX6 protein presence by immunofluorescence in WT and KD cells of mixed colonies after dual SMAD inhibition treatment. (n = 4 biological replicates with 25 images per biological replicate; * indicates significance; p<0.05) (C) Quantification of EOMES protein presence by immunofluorescence in WT and KD cells of mixed colonies after CHIR treatment. (D) Representative images of mixed colony differentiations with either dual SMAD inhibition or CHIR treatment stained for PAX6 and EOMES, respectively.
 
 To assess whether gene expression changes were unique to the induction of symmetry breaking events in mixed populations or simply a result of gene KD, a curated set of genes involved in pluripotent stem cell signaling, early lineage fate transitions, and regulation of physical cell properties (Supplementary file 1 - Table 2) was examined in both pure KD populations and mixed KD populations. An ANOVA analysis was used to examine gene expression changes that could be attributed to mixing two different cell types (mixed populations without KD), to KD of ROCK1 or CDH1 in a pure population, and to mosaic KD or KD in the presence of a WT neighbor (Figure 4E,F). Overall, few changes in gene expression resulted from mixing un-induced CRISPRi populations with WT-GFP (Figure 4—figure supplement 1A), and therefore all subsequent data were normalized to pure un-induced populations and then to mixed un-induced populations to minimize false positives that resulted from mixing of cell lines without induction of KD.
 
@@ -77,7 +133,7 @@ In ROCK1 KD cells mixed with WT, the gene expression changes on day one that cou
 
 In addition to examining the KD cells, we examined the gene expression profiles of the neighboring WT cells that constituted the majority of cells in each colony. On day six of KD induction, the WT-GFP cells that were mixed with CDH1 KD hiPSCs had gene expression patterns that resembled the WT-GFP cells mixed with the control CRISPRi populations, whereas the WT-GFP cells mixed with ROCK1 KD hiPSCs exhibited a different expression profile. Interestingly, the WT-GFP cells mixed with ROCK1 CRISPRi hiPSCs demonstrated changes in genes associated with cell sorting and movement, such as ephrins and integrins, and up-regulation in myosin proteins (MYH9, MYH10) (Figure 4—figure supplement 1B,C). Overall, the changes in the WT-GFP hiPSC gene expression suggests that targeted manipulation of gene expression in an emerging sub-population can exert non-cell–﻿autonomous effects on the opposing population and may be influenced by the respective multicellular organization of the two populations.
 
-## Mixed populations direct germ lineage emergence
+### Mixed populations direct germ lineage emergence
 
 Controllable induction of two distinct populations of hPSC offers the potential for co-emergence of multiple differentiated cell populations in a predictable manner. To examine how mosaic patterning of hPSC could direct co-emergence of differentiated progeny, two independent differentiation protocols were performed to direct the hiPSCs to either an ectodermal or mesendodermal fate (Figure 4—figure supplement 2A). The proportion of PAX6 +cells, indicating neuro-ectoderm lineage, or eomesodermin (EOMES) +cells, indicating a mesendoderm lineage, in the WT and CRISPRi mixed populations were examined. Although the ROCK1 KD population did not display a significant difference in PAX6 +or EOMES +cells relative to the WT cells (Figure 4—figure supplement 2B-D), the CDH1 KD population yielded fewer PAX6 +cells with the ectoderm directed differentiation and increased EOMES +cells in the mesendoderm-directed differentiation (Figure 4—figure supplement 2B-D). Overall, these studies demonstrate the potent ability to direct multicellular organization of hPSCs prior to the acquisition of differentiated cell fate.
 
@@ -103,7 +159,304 @@ Overall, this study capitalized on the ability of CRISPRi to temporally perturb 
 
 ## Materials and methods
 
-## Human iPSC line generation and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapien, male)</td>
+      <td>WT-GFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>hiPSC line containing constitutative GFP in AAVS1 locus</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapien, male)</td>
+      <td>CRISPRi no guide</td>
+      <td>Mandegar et al., 2016; DOI 10.1016/j.stem.2016.01.022</td>
+      <td></td>
+      <td>hiPSC line containing DOX inducible dCas9KRAB</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapien, male)</td>
+      <td>CRISPRi control</td>
+      <td>Mandegar et al., 2016; DOI 10.1016/j.stem.2016.01.022</td>
+      <td></td>
+      <td>hiPSC line containing DOX inducible dCas9KRAB and gRNA to KCNH2</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapien, male)</td>
+      <td>CRISPRi ROCK1</td>
+      <td>Mandegar et al., 2016; DOI 10.1016/j.stem.2016.01.022</td>
+      <td></td>
+      <td>hiPSC line containing DOX inducible dCas9KRAB and gRNA to ROCK1</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapien, male)</td>
+      <td>CRISPRi CDH1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>hiPSC line containing DOX inducible dCas9KRAB and gRNA to CDH1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-ROCK1</td>
+      <td>AbCAM</td>
+      <td>ab58305</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-CDH1</td>
+      <td>AbCAM</td>
+      <td>ab1416</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-GAPDH</td>
+      <td>Invitrogen</td>
+      <td>PA1-9046</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-OCT3/4</td>
+      <td>SantaCruz</td>
+      <td>sc8629</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-SOX2</td>
+      <td>AbCAM</td>
+      <td>ab7935</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Zo1</td>
+      <td>LifeTechnologies</td>
+      <td>lifetech 339100</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti -NANOG</td>
+      <td>AbCAM</td>
+      <td>ab21624</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Bcatenin</td>
+      <td>BD Biosciences</td>
+      <td>BD610154</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mous anti-EpCAM</td>
+      <td>Millipore</td>
+      <td>MAB4444</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488- or 647- secondaries</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoescht stain</td>
+      <td>LifeTechnologies</td>
+      <td></td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA-CKB (plasmid)</td>
+      <td>Mandegar et al., 2016; DOI 10.1016/j.stem.2016.01.022</td>
+      <td></td>
+      <td>vector containing gRNA and selection markers (blasticidin resistance, mKate fluorescence)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python, scikit image</td>
+      <td>scikit-image contributors et al., 2014: DOI 10.7717/peerj.453</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mTeSR1 medium</td>
+      <td>STEMCELL Technologies</td>
+      <td>STEMCELL Technologies: 85850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning Life Sciences</td>
+      <td>Corning Life Sciences: 356231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Accutase</td>
+      <td>STEMCELL Technologies</td>
+      <td>STEMCELL Technologies: 7920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: R21001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich: D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632 ROCK inhibitor</td>
+      <td>Selleckchem</td>
+      <td>Selleckchem: S1049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich: P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB 435142</td>
+      <td>Stemgent</td>
+      <td>Stemgent: 04-0010-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LDN 193189</td>
+      <td>Selleckchem</td>
+      <td>Selleckchem: S2618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR 99021</td>
+      <td>Selleckchem</td>
+      <td>Selleckchem: CT99021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol LS Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: 10296028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>gRNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>Lonza: LT07218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: 23250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>QIAGEN: 74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis kit</td>
+      <td>BIORAD</td>
+      <td>BIORAD: 1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: 4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa 647 Imaging Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep Plus kit</td>
+      <td>ZYMO Research</td>
+      <td>ZYMO: R2061</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human iPSC line generation and culture
 
 All work with hiPSC lines was approved by the University of California, San Francisco Human Gamete, Embryo and Stem Cell Research (GESCR) Committee. Human iPSC lines were derived from the WTC 11 line (Coriell Cat. # GM25256) where the species of origin was confirmed by a LINE assay. After genetic manipulation, all cell lines were karyotyped by Cell Line Genetics and were deemed karyotypically normal before proceeding with experiments (Figure 1—figure supplement 4B). All cell lines tested negative for mycoplasma using a MycoAlert Mycoplasma Detection Kit (Lonza).
 
@@ -113,56 +466,56 @@ The generation of the ROCK1 CRISPRi line was previously created and described by
 
 To generate the WT-GFP line, 2 million WTC clone11 hiPSCs were nucleofected as previously described with the knock-in plasmid containing a CAG promoter-driven EGFP and AAVS1 TALEN pair vectors (Figure 1—figure supplement 4A). After cell recovery, puromycin (0.5 μg/ml) was added to the media for a selection period of 7 days. Individual stable EGFP-expressing colonies were picked using an EVOS FL microscope (Life Technologies) and transferred to individual wells of a 24-well plate in mTeSR media with Y-27632 (10 μM) and subsequently expanded into larger vessels.
 
-## Generation of mixed colonies
+### Generation of mixed colonies
 
 Cell aggregates of ~100 cells were created using 400 × 400 μm PDMS microwell inserts in 24-well plates (~975 microwell per well) similar to previously published protocols (Hookway et al., 2016; Ungrin et al., 2008). Dissociated hiPSC cultures were resuspended in mTeSRTM-1 supplemented with Y-27632(10 μM), mixed at proper ratios and concentration (100 cells/well), added to microwells, and centrifuged (200 rcf). After 18 hr of formation, 100 cell aggregates were transferred in mTeSRTM-1 to Matrigel-coated 96-well plates (~15 aggregates/cm2) and allowed to spread into 2D colonies.
 
-## Western blot
+### Western blot
 
 Human iPSCs were washed with cold PBS, incubated for 10 min on ice in RIPA Buffer (Sigma-Aldrich), and supernatant collected. Three replicates were used for each condition. The supernatant protein content was determined using a Pierce BCA Protein Assay kit (Thermofisher Scientific) colorimetric reaction and quantified on a SpectraMax i3 Multi-Mode Platform (Molecular Devices). Subsequently, 20 μg of protein from each sample was resolved by SDS-PAGE, and transferred to a nitrocellulose membrane (Invitrogen). The membranes were incubated overnight at 4°C with primary antibodies: anti-ROCK1 (AbCAM 1:200), anti-CDH1 (AbCAM 1:200), anti-GAPDH, (Invitrogen 1:10,000), followed by incubation (30 min at room temperature) with infrared secondary antibodies: IRDye 800CW and IRDye 680CW (LI-COR 1:13,000), and imaged on the Odyssey Fc Imaging System (LI-COR Biosciences). Protein levels were quantified using Image Studio Lite (LI-COR Biosciences).
 
-## RNA isolation and qPCR
+### RNA isolation and qPCR
 
 Total RNA isolation was performed using an RNeasy Mini Kit (QIAGEN) according to manufacturer’s instructions and quantified with a Nanodrop 2000c Spectrometer (ThermoFisher Scientific). cDNA was synthesized by using an iScript cDNA Synthesis kit (BIORAD) and the reaction was run on a SimpliAmp thermal cycler (Life Technologies). To quantify individual genes, qPCR reactions were run on a StepOnePlus Real-Time PCR system (Applied Biosciences) and detected using Fast SYBR Green Master Mix (ThermoFisher Scientific). Relative gene expression was determined by normalizing to the housekeeping gene 18S rRNA, using the comparative threshold (CT) method. Gene expression was displayed as fold change of each sample (ROCK1 CRISPRi or CDH1 CRISPRi) versus the off-target guide control (KCNH2 CRISPRi). The primers were designed using the NCBI Primer-BLAST website and are listed in Supplementary file 1 -Table 2. Statistical analysis was conducted using a two-tailed unpaired t-test between any two groups (p<0.05, n = 3).
 
-## Atomic force microscopy
+### Atomic force microscopy
 
 All AFM indentations were performed using an MFP3D-BIO inverted optical atomic force microscope (Asylum Research) mounted on a Nikon TE2000-U inverted fluorescent microscope. Silicon nitride cantilevers were used with spring constants ranging from 0.04 to 0.06 N/m and borosilicate glass spherical tips 5 µm in diameter (Novascan Tech). Each cantilever was calibrated using the thermal oscillation method prior to each experiment. Samples were indented at 1 µm/s loading rate, with a maximum force of 4 nN. Force maps were typically obtained as a 6 × 6 raster series of indentations utilizing the FMAP function of the IGOR PRO build supplied by Asylum Research, for a total of 36 data points per area of interest measured every five microns. Two 5 micron by five micron areas of interest were sampled for each sample. The Hertz model was used to determine the elastic modulus of the sample at each point probed. Samples were assumed to be incompressible and a Poisson’s ratio of 0.5 was used in the calculation of the Young’s elastic modulus.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 Human iPSC colonies were imaged in 96-well plates (ibidi) on an inverted AxioObserver Z1 (Ziess) with an ORCA-Flash4.0 digital CMOS camera (Hamamatsu). Using ZenPro software, colony locations were mapped and a single colony was imaged daily for 6 days. To obtain time-lapse movies, a single colony was imaged over the course of 12 hr at a rate of one picture taken every 30 min.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Human iPSC colonies were fixed for 30 min in 4% paraformaldehyde (VWR) and washed 3X with PBS. Fixed colonies were permeabilized with 0.3% Trition X-100 (Sigma Aldrich) throughout blocking and antibody incubation steps. Samples were incubated in primary antibodies over night at 4°C, subsequently washed with PBS and incubated in secondary antibodies for an hour at room temperature. Primary antibodies used were: anti-OCT4 (SantaCruz 1:400), anti-SOX2 (AbCAM 1:400), anti-Zo1 (LifeTechnologies 1:400), NANOG (AbCAM 1:300), anti-β-catenin (BD Biosciences 1:200), anti-EpCAM (Millipore 1:200). All secondary antibodies were used at 1:1000 and purchased from Life Technologies.
 
-## EdU incorporation
+### EdU incorporation
 
 Pure populations of WT, CRISPRi KCNH2 (control), CRISPRi ROCK1, and CRISPRi CDH1 were treated with DOX (2 μM) for 5 consecutive days. Cultures were pulsed with EdU by supplementing Click-It EdU (10 μM) to the media for 6 hr. Cultures were then washed 3X with PBS and fixed with 4% paraformaldehyde (VWR) for 15 min and subsequently washed with PBS. Samples were permeabilized with 0.5% Triton-X 100 (Sigma Aldrich) in PBS for 20 min. Samples were then incubated with Click-It EdU detection kit as per the manufacturer’s instructions (ThermoFisher Scientific). Samples were analyzed via flow cytometry on a BD LSR-FLOW Cytometer and analysis was performed with a minimum of 10,000 events.
 
-## Flow cytometry
+### Flow cytometry
 
 Mixed hiPSC populations and pure population controls were dissociated from tissue culture plates with Accutase (STEMCELL Technologies) and washed with PBS. Cells were fixed for 15 min with 4% paraformaldehyde (VWR) and washed 3X for 3 min with PBS. Samples were incubated in Hoescht stain (1:10,000) for 30 min and run on a LSR-II analyzer (BD Biosciences) to detect the ratio of WT-GFP(+) to CRISPRi mCherry(+) populations, as well as % of EdU +cells. Analysis was conducted with a minimum of 10,000 events per sample.
 
-## FACS
+### FACS
 
 Mixed hiPSC populations and pure population controls were dissociated from tissue culture plates and washed 3X with PBS. A LIVE/DEAD stain (ThermoFisher Scientific) was used per manufacture instructions. Prior to sorting, cells were suspended in PBS supplemented with Y-27632(10 μM) and kept on ice. A BD FACSAria II cell sorter (BD Biosciences) was used to isolate pure populations of WT-GFP and CRISPRi hiPSCs by first identifying the live cells via the LIVE/DEAD(350) stain and subsequently sorting the mCherry(+) GFP(-) populations from the mCherry(-)GFP(+) populations directly into TRIzol LS Reagent (ThermoFisher Scientifc). Samples were then stored at −80°C until subsequent mRNA extraction.
 
-## Fluidigm 96.96 array
+### Fluidigm 96.96 array
 
 Sorted hiPSCs stored in TRIzol LS were thawed on ice and mRNA was extracted using a Direct-zol RNA MiniPrep Plus kit (ZYMO Research) following the manufacturer’s instructions. RNA was converted to cDNA using the iScript cDNA synthesis kit (Bio-Rad). Forward and reverse primers for genes were designed using NCBI’s Primer-BLAST (Supplementary file 1 - Table 3). Primers were pooled to 500 nM to enable specific-target amplification and cDNA was amplified with PreAmp Master Mix (Fluidigm) and pooled primers for 15 cycles. Pre-amplified samples mixed with 2X SsoFast EvaGreen Supermix with low ROX(Bio-Rad) and 20X DNA Binding Dye Sample Loading Reagent (Fluidigm), and 10 μM primer sets were mixed with 2X Assay Loading Reagent (Fluidigm). 5 μl of diluted cDNA and primers and were loaded onto the IFC chip per manufacturer’s instructions and loaded into the chip using the IFC Controller HX (Fluidigm). qPCR was run for 40 cycles in the IFC chip using the BioMark HD in the BioMark HD Data Collection Software. Resulting data was analyzed in the Real-Time PCR Analysis Software. All instruments and software involved with the IFC chip were manufactured by Fluidigm. Gene expression levels were calculated with respect to time-matched pure populations of WT hiPSCs, and hierarchically clustered and plotted using Genesis software (Institute for Genomics and Bioinformatics, Graz University of Technology).
 
-## Human iPSC differentiation
+### Human iPSC differentiation
 
 For the dual SMAD and CHIR germ lineage differentiations, 100 cell mixed colonies were generated as previously described, cultured in mTeSRTM-1 medium (STEMCELL Technologies), and allowed to form patterns for 5 days in pluripotency maintenance conditions. After 5 days, the media was supplemented with either SB 435142 (10μM; Stemgent) and LDN 193189 (0.2μM; Sigma-Aldrich) or CHIR 99021 (12μM; Selleckchem). CHIR was pulsed for 24 hr periods on the first and fourth day of the mesendoderm directed differentiation. Dual SMAD inhibition was kept constant for 6 days by supplementing SB 435142 and LDN 193189 into MTeSR media to direct germ lineage to an ectodermal fate. After 6 days of differentiation, colonies were washed 3X with PBS and fixed for staining with 4% paraformaldehyde (VWR) as previously described.
 
-## Computational image analysis
+### Computational image analysis
 
 For the radial position computational analysis, fluorescent images were split into single RGB channel images using the Python module scikit-image (scikit-image contributors et al., 2014) where the red channel denoted CRISPRi cells, the green channel denoted WT cells, and the blue channel denoted DAPI staining of the entire colony. A mask of each channel was created by thresholding, removing small objects, and removing small holes. The radius (r) of each colony was calculated using the DAPI mask and the ratio of inner red cell area vs. outer red cell area was calculated by taking the logical AND of the red channel mask and the DAPI mask above ¾ r vs the logical AND of the red channel mask and the DAPI mask below ¼ r and normalizing to the total red mask area. To ensure accuracy, the inner vs. outer red ratio was averaged with the inverse of the inner vs. outer green ratio (calculated in the same manner using the green channel mask).
 
 For the differentiation analysis, fluorescent images were split into single RGB channels where the red channel denoted CRISPRi cells (mCherry+), the green channel denoted WT cells (GFP+), and the blue channel denoted either PAX6 or EOMES positive cells. The pixel area of cell types was determined by thresholding the WT, CRISPRi, or EOMES/PAX6 +images before ‘removing small objects’ and ‘removing small holes’ to create a mask of the area covered by each individual cell type. The EOMES or PAX6 +population was calculated by taking the logical AND of either the WT and EOMES/PAX6 +mask or the CRISPRi and the EOMES/PAX6 +masks and then normalizing to the total area of the WT or CRISPRi mask, respectively. The ratio of EOMES/PAX6 +cells in CRISPRi cell compared to WT was calculated by dividing the normalized EOMES/PAX6 +area of the CRISPRi mask by the normalized EOMES/PAX6 +area of the WT mask.
 
-## Statistics
+### Statistics
 
 To ensure unbiased sampling of colonies in all cell mixing experiments, 10 colonies were randomly chosen on day zero before pattern formation and imaged daily thereafter. Each experiment was performed with at least three biological replicates. Unpaired T-tests were used to compare two groups. One-way analysis of variance (ANOVA) was used to compare three or more groups, followed by post-hoc pairwise comparisons by Tukey’s tests. In gene expression analysis, three replicates were used for each condition, and all gene expression was normalized to control mixed populations (off-target guide without knockdown) to control for any gene expression changes due to mixing or the process of FACS sorting. In all comparisons, significance was specified as p≤0.05.

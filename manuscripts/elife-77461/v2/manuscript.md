@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Paediatrics, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 MRC–Weatherall Institute of Molecular Medicine, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom
-4. https://ror.org/04r1cxt79 KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research-Coast Kilifi Kenya
-5. https://ror.org/052gg0110 Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-6. https://ror.org/01znkr924 Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University Bangkok Thailand
-7. https://ror.org/03z77qz90 Institute of Computer Science, University of Tartu Tartu Estonia
-8. https://ror.org/05cy4wa09 Wellcome Sanger Institute Cambridge United Kingdom
-9. https://ror.org/052gg0110 The Jenner Institute, University of Oxford Oxford United Kingdom
-10. https://ror.org/041kmwe10 Division of Medicine, Imperial College London United Kingdom
-11. https://ror.org/00a0jsq62 Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine London United Kingdom
-12. https://ror.org/041kmwe10 Institute for Global Health Innovation, Department of Surgery and Cancer, Imperial College London United Kingdom
+1. Department of Paediatrics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. MRC–Weatherall Institute of Molecular Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research-Coast Kilifi Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))
+5. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+6. Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University Bangkok Thailand ([ROR:01znkr924](https://ror.org/01znkr924))
+7. Institute of Computer Science, University of Tartu Tartu Estonia ([ROR:03z77qz90](https://ror.org/03z77qz90))
+8. Wellcome Sanger Institute Cambridge United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+9. The Jenner Institute, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+10. Division of Medicine, Imperial College London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+11. Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+12. Institute for Global Health Innovation, Department of Surgery and Cancer, Imperial College London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -54,49 +54,794 @@ In the current study, we extend this work to show that invasive bacterial infect
 
 ## Results
 
-## Severe malaria probability and risk of bacteraemia
+### Severe malaria probability and risk of bacteraemia
 
-Children admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as a severe febrile illness in the presence of Plasmodium falciparum parasitaemia (n=2200), between 11 June 1995 and 12 June 2008 were included in the study. While this definition is sensitive it is not specific, meaning that our study will have included some children with sepsis accompanied by incidental parasitaemia (Watson et al., 2021a). We therefore used two probabilistic models, which included either platelet counts and plasma PfHRP2 concentrations (Model 1, n=1400) or white blood cell and platelet counts (Model 2, n=2200), to determine the likelihood of ‘true’ severe malaria among these children. The estimated probabilities of ‘true’ severe malaria using each model were well correlated (r=0.64). Of 1400 children with a clinical diagnosis of severe malaria with measured plasma PfHRP2 concentrations, 425 (30.4%, Figure 1A and B) had a low probability (P(SM|Data)<0.5) of having ‘true’ severe malaria (941 of 2220 children using WBC and platelet count data, Figure 1—figure supplement 1A and B). That is, while they presented with febrile illness and concomitant malaria parasitaemia, it is unlikely that their illnesses were directly attributable to malaria.
+Children admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as a severe febrile illness in the presence of Plasmodium falciparum parasitaemia (n=2200), between 11 June 1995 and 12 June 2008 were included in the study. While this definition is sensitive it is not specific, meaning that our study will have included some children with sepsis accompanied by incidental parasitaemia (Watson et al., 2021a). We therefore used two probabilistic models, which included either platelet counts and plasma PfHRP2 concentrations (Model 1, n=1400) or white blood cell and platelet counts (Model 2, n=2200), to determine the likelihood of ‘true’ severe malaria among these children. The estimated probabilities of ‘true’ severe malaria using each model were well correlated ($r=0.64$). Of 1400 children with a clinical diagnosis of severe malaria with measured plasma PfHRP2 concentrations, 425 (30.4%, Figure 1A and B) had a low probability (P(SM|Data)<0.5) of having ‘true’ severe malaria (941 of 2220 children using WBC and platelet count data, Figure 1—figure supplement 1A and B). That is, while they presented with febrile illness and concomitant malaria parasitaemia, it is unlikely that their illnesses were directly attributable to malaria.
 
-In keeping with the hypothesis that a significant proportion of these critically unwell children represented culture-negative invasive bacterial disease (Figure 1), in-patient mortality was higher among children with a low than a high probability of ‘true’ severe malaria (Table 1; ORmodel1=1.57, 95% CI 1.11-2.21, p=0.01, 95% CI 1.60−2.72, p=4.91×10−8). This was also reflected in the rates of concurrent bacteraemia (Table 1; ORmodel1=2.92, 95% CI 1.66-5.13, p=1.07×10−4, 95% CI 1.27-3.17, p=0.003). Similarly, the constituents of Model 1 were each associated with blood culture positivity, both higher platelet counts (OR = 2.36, 95% CI 1.19–4.70, p=0.014) and lower PfHRP2 levels (OR=0.52,95% CI 0.39–0.70, p=9.62×10−6) both being associated with the risk of coincident bacteraemia (Figure 1C and D). Conversely, white blood counts in isolation were not associated with risk of concurrent bacteraemia (Figure 1—figure supplement 1). Plasma PfHRP2 is the single best biomarker for severe malaria (Hendriksen et al., 2012). In light of this, and given the greater enrichment for concurrent bacteraemia among children with a low probability of ‘true’ severe malaria as calculated by Model 1 than Model 2, we used Model 1 probabilities in downstream analyses where available (n=1400) and used Model 2 probabilities for all other cases (n=800).
+![Figure 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig1-v2.jpg)
 
-## GWAS of invasive bacterial disease in Kenyan children
+**Figure 1.:** (A) Distribution of PfHRP2 concentrations and platelet count among Kenyan children (n=1400) with a clinical diagnosis of severe malaria. Points are coloured according to the probability of ‘true’ severe malaria given the data. (B) Distribution of ‘true’ severe malaria probabilities estimated from platelet count and plasma PfHRP2 concentrations. (C) Platelets counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. (D) PfHRP2 concentrations in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. Box and whisker plots; boxes depict the upper and lower quartiles of the data, and whiskers depict the range of the data excluding outliers (outliers are defined as data-points > 1.5 × the inter-quartile range from the upper or lower quartiles). Comparisons of platelet count and plasma PfHRP2 concentrations in children with and without bacteraemia were performed with logistic regression.
 
-Children with a clinical diagnosis of severe malaria but a low probability of having ‘true’ severe malaria are thus enriched for invasive bacterial disease. Using genome-wide genotyping data from cases of culture-confirmed bacteraemia and healthy controls, we estimated SNP heritability of bacteraemia in this population to be 19% (95% CI 3–35%, p=0.0084). Despite this, our GWAS of bacteraemia failed to identify genetic correlates of bacteraemia risk beyond the sickle cell locus (Rautanen et al., 2016). Motivated by these observations, we performed a GWAS of invasive bacterial infection in Kenyan children in which we included both children with culture-confirmed bacteraemia and children with a clinical diagnosis of severe malaria. Children admitted to Kilifi County Hospital between 1 August 1998 and 30 October 2010 with community-acquired bacteraemia were recruited to the study as well as children from the severe malaria study described above. Control children were recruited from the same population between 1 August 2006 and 30 December 2010 as described in detail previously (Scott et al., 2011).
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig1-figsupp1-v2.jpg)
 
-Following quality control measures (see Materials and methods), we included 1445 cases of culture-confirmed bacteraemia, 1143 cases of severe malaria, and 2812 control children in our current analysis (Table 2, Figure 2). To account for the varying proportion of invasive bacterial disease among severe malaria cases, we applied weights to our regression analysis to reflect the greater likelihood of invasive bacterial disease among children with a low probability of ‘true’ severe malaria (sample weight, w=1−P(SM|Data)). Where PfHRP2 concentrations were available (n=909) we used PfHRP2 and platelet count to determine P(SM|Data) while we used white cell and platelet counts (n=234) in cases where they were not available. Cases with culture-proven bacteraemia and control samples were assigned a sample weight of w=1. Inclusion of the six major principal components (PCs) of genotyping data and genotyping platform as covariates in the model adequately controlled for confounding variation (λ=1.0208, Figure 3—figure supplement 1). In that analysis we found evidence supporting an association between risk of invasive bacterial disease in Kenyan children and seven SNPs at a single locus on chromosome 2 (peak SNP: rs183868412:T, OR = 2.13, 95% CI 1.65–2.74, p=4.64×10-9) (Figure 3, Table 3). Fine mapping of this association identified a credible set of seven SNPs with a 95% probability of containing the causal variant (Table 3), spanning a 212 kb region: chr2:32,402,640–32,614,746.
+**Figure 1—figure supplement 1.:** (A) Distribution of white blood cell and platelet count among Kenyan children (n=2200) with a clinical diagnosis of severe malaria. Points are coloured according to the probability of ‘true’ severe malaria given the data. (B) Distribution of ‘true’ severe malaria probabilities estimated from platelet count and white blood cell count. (C) Platelets counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. (D) White blood cell counts in children with a clinical diagnosis of severe malaria with and without concomitant bacteraemia. Box and whisker plots; boxes depict the upper and lower quartiles of the data, and whiskers depict the range of the data excluding outliers (outliers are defined as data-points > 1.5 × the inter-quartile range from the upper or lower quartiles). Comparisons of platelet and white cell count in children with and without bacteraemia were performed with logistic regression.
+
+In keeping with the hypothesis that a significant proportion of these critically unwell children represented culture-negative invasive bacterial disease (Figure 1), in-patient mortality was higher among children with a low than a high probability of ‘true’ severe malaria (Table 1; $OR_{model1}=1.57$, 95% CI $1.11-2.21$, $p=0.01$, 95% CI $1.60−2.72$, $p=4.91\times10^{−8}$). This was also reflected in the rates of concurrent bacteraemia (Table 1; $OR_{model1}=2.92$, 95% CI $1.66-5.13$, $p=1.07\times10^{−4}$, 95% CI $1.27-3.17$, $p=0.003$). Similarly, the constituents of Model 1 were each associated with blood culture positivity, both higher platelet counts (OR = 2.36, 95% CI 1.19–4.70, $p=0.014$) and lower PfHRP2 levels ($OR=0.52,95% CI 0.39–0.70$, $p=9.62\times10^{−6}$) both being associated with the risk of coincident bacteraemia (Figure 1C and D). Conversely, white blood counts in isolation were not associated with risk of concurrent bacteraemia (Figure 1—figure supplement 1). Plasma PfHRP2 is the single best biomarker for severe malaria (Hendriksen et al., 2012). In light of this, and given the greater enrichment for concurrent bacteraemia among children with a low probability of ‘true’ severe malaria as calculated by Model 1 than Model 2, we used Model 1 probabilities in downstream analyses where available (n=1400) and used Model 2 probabilities for all other cases (n=800).
+
+**Table 1.**
+ Demographics and clinical characteristics of Kenyan children with severe malaria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Numbers</th>
+      <th>Sex (female)</th>
+      <th>Age (months)</th>
+      <th>Bacteraemia</th>
+      <th>Mortality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">PfHRP2/Plt</td>
+      <td>Total (n=1400)</td>
+      <td>695 (49.6%)</td>
+      <td>29 (17–44)</td>
+      <td>51 (3.6%)</td>
+      <td>155 (11.1%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&gt;0.5 (n=975)</td>
+      <td>497 (51.0%)</td>
+      <td>29 (18–45)</td>
+      <td>23 (2.4%)</td>
+      <td>94 (7.4%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&lt;0.5 (n=425)</td>
+      <td>198 (46.6%)</td>
+      <td>28 (16–43)</td>
+      <td>28 (6.6%)</td>
+      <td>61 (14.4%)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">WBC/Plt</td>
+      <td>Total (n=2220)</td>
+      <td>1,074 (48.4%)</td>
+      <td>28 (15–43)</td>
+      <td>78 (3.5%)</td>
+      <td>256 (11.6%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&gt;0.5 (n=1279)</td>
+      <td>623 (48.7%)</td>
+      <td>29 (17–44)</td>
+      <td>32 (2.5%)</td>
+      <td>106 (8.4%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&lt;0.5 (n=941)</td>
+      <td>451 (47.9%)</td>
+      <td>25 (13–40)</td>
+      <td>46 (4.9%)</td>
+      <td>150 (15.9%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mortality reflects in-patient deaths. Figures are absolute numbers with percentages or interquartile ranges in parentheses. P(SM|Data) reflects the probability of ‘true’ severe malaria estimated from each model (PfHRP2/Platelet count, White blood cell count/Platelet count)._
+
+### GWAS of invasive bacterial disease in Kenyan children
+
+Children with a clinical diagnosis of severe malaria but a low probability of having ‘true’ severe malaria are thus enriched for invasive bacterial disease. Using genome-wide genotyping data from cases of culture-confirmed bacteraemia and healthy controls, we estimated SNP heritability of bacteraemia in this population to be 19% (95% CI 3–35%, $p=0.0084$). Despite this, our GWAS of bacteraemia failed to identify genetic correlates of bacteraemia risk beyond the sickle cell locus (Rautanen et al., 2016). Motivated by these observations, we performed a GWAS of invasive bacterial infection in Kenyan children in which we included both children with culture-confirmed bacteraemia and children with a clinical diagnosis of severe malaria. Children admitted to Kilifi County Hospital between 1 August 1998 and 30 October 2010 with community-acquired bacteraemia were recruited to the study as well as children from the severe malaria study described above. Control children were recruited from the same population between 1 August 2006 and 30 December 2010 as described in detail previously (Scott et al., 2011).
+
+Following quality control measures (see Materials and methods), we included 1445 cases of culture-confirmed bacteraemia, 1143 cases of severe malaria, and 2812 control children in our current analysis (Table 2, Figure 2). To account for the varying proportion of invasive bacterial disease among severe malaria cases, we applied weights to our regression analysis to reflect the greater likelihood of invasive bacterial disease among children with a low probability of ‘true’ severe malaria (sample weight, $w=1−P(SM|Data)$). Where PfHRP2 concentrations were available (n=909) we used PfHRP2 and platelet count to determine $P(SM|Data)$ while we used white cell and platelet counts (n=234) in cases where they were not available. Cases with culture-proven bacteraemia and control samples were assigned a sample weight of $w=1$. Inclusion of the six major principal components (PCs) of genotyping data and genotyping platform as covariates in the model adequately controlled for confounding variation ($\lambda=1.0208$, Figure 3—figure supplement 1). In that analysis we found evidence supporting an association between risk of invasive bacterial disease in Kenyan children and seven SNPs at a single locus on chromosome 2 (peak SNP: rs183868412:T, OR = 2.13, 95% CI 1.65–2.74, $p=4.64\times10^{-9}$) (Figure 3, Table 3). Fine mapping of this association identified a credible set of seven SNPs with a 95% probability of containing the causal variant (Table 3), spanning a 212 kb region: chr2:32,402,640–32,614,746.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig2-v2.jpg)
 
 **Figure 2.:** Recruitment of severe malaria cases (n=1143), discovery analysis bacteraemia cases (n=1445), and replication analysis bacteraemia cases (n=434) between 1998 and 2010. The time period during which control samples (n=2812) were recruited is also highlighted (black bar). Sample numbers represent children with genome-wide genotype data, who passed quality control filters and were included in this study.
 
-To address the possibility that the observed association at this locus is driven by confounding secondary to population structure, we used ABERRANT (Bellenguez et al., 2012) to define a set of outlier samples on the first two PCs of genotyping data (n=22, Figure 3—figure supplement 2). These individuals are all genotyped on the Illumina Omni 2.5M array and are both cases and controls (15 and 7, respectively). While they are predominantly individuals with less common self-reported ethnicities in our study population (19 of 22 are not Giriama, Chonyi, or Kauma), they are not representative of a single self-reported ethnicity (the most common single ethnicity in this group is Digo, n=7). Excluding these samples from the association analysis at rs183868412:T did not significantly alter the association with invasive bacterial infection (p=2.38×10-8, OR = 2.05, 95% CI 1.59–2.64). We further estimated the effect of rs183868412:T on invasive bacterial disease risk in four subpopulations defined by self-reported ethnicity (Giriama, n=2,501; Chonyi, n=1,560; Kauma, n=472; Other, n=384). Within each subpopulation, we tested for association between genotype and case status in a weighted logistic regression model, including platform as a categorial covariate (Table 4). The minor allele frequency (MAF) at rs183868412 ranged from 0.016 (Giriama) to 0.037 (Kauma), with no evidence of differentiation between subpopulations (FS⁢T=0.001). We observed consistent effect sizes in both of the major study subpopulations; Giriama (OR =1.97, 95% CI 1.30–3.01, p=0.0015) and Chonyi (OR = 2.18, 95% CI 1.34–3.54, p=0.0017) samples (Table 4), which together make up 83% of the study samples. Genotype at rs183868412 was also associated with invasive bacterial disease among the less common self-reported ethnicities grouped together (OR = 2.46, 95% CI 1.01–5.96, p=0.047). Genotype was not associated with invasive bacterial disease risk in the Kauma subpopulation, however the sample size in the stratum is very limited (154 cases, 318 controls) and may simply reflect insufficient power to detect an association.
+![Figure 3.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-v2.jpg)
 
-To assess whether our analysis could be affected by our choice of model to define severe malaria case weights, we restricted our analysis to samples with data available to calculate estimates for P⁢(S⁢M|D⁢a⁢t⁢a) using both Model 1 and Model 2 (n=909 severe malaria cases). We recalculated effect estimates for the rs183868412 association with invasive bacterial disease using each model alone. The association with invasive bacterial disease at rs183868412:T is robust to the choice of the model for case weights, with effect estimates derived using Model 1 alone (OR = 2.13, 95% CI 1.65–2.75, p=6.92×10-9) and Model 2 alone (OR = 2.05, 95% CI 1.59–2.65, p=2.63×10-8) being entirely consistent with those seen in the main analysis (Figure 3—figure supplement 3). Moreover, restricting our analysis to cases of culture-confirmed bacteraemia, the effect estimate for bacteraemia risk observed in the discovery analysis (1445 cases, 2812 controls; OR = 2.12, 95% CI 1.60–2.82, p=1.97×10-7) is consistent with that seen in the main model.
+**Figure 3.:** Evidence for association with invasive bacterial disease at genotyped and imputed autosomal SNPs and indels (n=14,010,600) in Kenyan children (bacteraemia cases =1445, severe malaria cases =1143, controls = 2812). Association statistics represent additive association. The red, dashed line denotes $p=5\times10^{-8}$.
 
-We sought to replicate evidence of association in our discovery analysis through use of an independent case-control collection of Kenyan children with bacteraemia (n=434) and healthy controls (n=1258) conducted in the same population. The peak trait-associated variants in the discovery analysis were well imputed in the replication data (rs183868412 imputation info score =0.84). In that analysis, we found evidence supporting the association at chromosome 2 with invasive bacterial disease (Figure 4, Table 5: rs183868412:T, OR = 2.85, 95% CI 1.54–5.28, p=8.90×10-4). In a fixed effects meta-analysis, rs183868412:T was strongly associated with risk of invasive bacterial disease in Kenyan children: OR = 2.22, 95% CI 1.76–2.80, p=2.35×10-11. That association was driven by children with culture-confirmed bacteraemia and critically unwell children with malaria parasites, but a low probability of ‘true’ severe malaria. In a stratified analysis (Figure 4, Table 5), rs183868412 was associated with culture-confirmed bacteraemia (OR = 2.12, 95% CI 1.60–2.82, p=1.94×10-7) and critical illness with parasitaemia and with a low probability of ‘true’ severe malaria (P(SM|Data)<0.5: OR = 2.37, 95% CI 1.27–4.43, p=6.82×10-3), but was not associated with risk of critical illness with a high probability of ‘true’ severe malaria (P(SM|Data)>0.5: p=0.823).
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp1-v2.jpg)
 
-## rs183868412 is associated with risk of invasive bacterial disease secondary to diverse pathogens and is independent of malaria
+**Figure 3—figure supplement 1.:** (A) Principal components of genome-wide genotyping data in discovery samples. Individuals are colour-coded according to genotyping platform; Affymetrix SNP 6.0 in purple, Illumina Omni 2.5M in orange. (B) Principal components of genome-wide genotyping data in discovery samples. Individuals are colour-coded according to self-reported ethnicity; Chonyi in red, Giriama in blue, Kauma in green, and other in grey. (C) Quantile-quantile plot of invasive bacterial infection in Kenyan children. QQ plot of weighted logistic regression genome-wide association study (GWAS) of invasive bacterial disease in Kenyan children (2588 cases, 2812 controls).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Outlier samples identified by ABERRANT (n=22) are highlighted (orange).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Comparison of effect sizes (odds ratios and 95% confidence intervals) of the rs183868412:T association with invasive bacterial infection in the combined analysis (bacteraemia cases = 1445, severe malaria cases = 1143, controls = 2812), and restricted to cases with weights calculated with PfHRP2 plasma concentration and platelet count (Model 1; bacteraemia cases = 1445, severe malaria cases = 909, controls = 2812) or white cell count and platelet count (Model 2; bacteraemia cases = 1445, severe malaria cases = 909, controls = 2812). Effect estimates were calculated with weighted logistic regression.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Pairwise genotyping concordance between samples genotyped on both Affymetrix SNP 6.0 and Illumina Omni 2.5M platforms.
+
+**Table 2.**
+ Demographics and clinical characteristics of genome-wide association study (GWAS) study samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">Severe malaria subtypes</th>
+      <th colspan="2">Concurrent infection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Numbers</td>
+      <td>Sex (female)</td>
+      <td>Age (months)</td>
+      <td>SMA</td>
+      <td>CM</td>
+      <td>Malaria</td>
+      <td>Bacteraemia</td>
+      <td>Mortality</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia (overall)</td>
+      <td>1445</td>
+      <td>614 (43%)</td>
+      <td>14 (5–34)</td>
+      <td></td>
+      <td></td>
+      <td>94 (12%)</td>
+      <td></td>
+      <td>358 (26%)</td>
+    </tr>
+    <tr>
+      <td>Acinetobacter</td>
+      <td>118</td>
+      <td>45 (38%)</td>
+      <td>13 (3–28)</td>
+      <td></td>
+      <td></td>
+      <td>11 (13%)</td>
+      <td></td>
+      <td>12 (10%)</td>
+    </tr>
+    <tr>
+      <td>β-Haemolytic streptococci</td>
+      <td>130</td>
+      <td>60 (46%)</td>
+      <td>5 (1–20)</td>
+      <td></td>
+      <td></td>
+      <td>6 (8%)</td>
+      <td></td>
+      <td>37 (30%)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli</td>
+      <td>141</td>
+      <td>58 (41%)</td>
+      <td>11 (6–25)</td>
+      <td></td>
+      <td></td>
+      <td>12 (15%)</td>
+      <td></td>
+      <td>45 (34%)</td>
+    </tr>
+    <tr>
+      <td>Hib</td>
+      <td>113</td>
+      <td>53 (47%)</td>
+      <td>12 (5–25)</td>
+      <td></td>
+      <td></td>
+      <td>3 (8%)</td>
+      <td></td>
+      <td>29 (26%)</td>
+    </tr>
+    <tr>
+      <td>NTS</td>
+      <td>159</td>
+      <td>75 (47%)</td>
+      <td>15 (9–26)</td>
+      <td></td>
+      <td></td>
+      <td>15 (25%)</td>
+      <td></td>
+      <td>31 (20%)</td>
+    </tr>
+    <tr>
+      <td>Streptococcus pneumoniae</td>
+      <td>390</td>
+      <td>151 (39%)</td>
+      <td>23 (9–61)</td>
+      <td></td>
+      <td></td>
+      <td>20 (9%)</td>
+      <td></td>
+      <td>86 (23%)</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus aureus</td>
+      <td>152</td>
+      <td>64 (42.1%)</td>
+      <td>26 (9–88)</td>
+      <td></td>
+      <td></td>
+      <td>15 (15%)</td>
+      <td></td>
+      <td>22 (15%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>242</td>
+      <td>110 (46%)</td>
+      <td>10 (1–28)</td>
+      <td></td>
+      <td></td>
+      <td>10 (8%)</td>
+      <td></td>
+      <td>96 (41%)</td>
+    </tr>
+    <tr>
+      <td>Malaria (overall)</td>
+      <td>1143</td>
+      <td>559 (49%)</td>
+      <td>27 (16–41)</td>
+      <td>298 (26%)</td>
+      <td>697 (61%)</td>
+      <td></td>
+      <td>40 (4%)</td>
+      <td>140 (12%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&lt;0.5</td>
+      <td>375</td>
+      <td>176 (47%)</td>
+      <td>28 (17–42)</td>
+      <td>62 (17%)</td>
+      <td>262 (70%)</td>
+      <td></td>
+      <td>23 (6%)</td>
+      <td>62 (17%)</td>
+    </tr>
+    <tr>
+      <td>P(SM|Data)&gt;0.5</td>
+      <td>768</td>
+      <td>383 (50%)</td>
+      <td>26 (15–40)</td>
+      <td>236 (31%)</td>
+      <td>435 (57%)</td>
+      <td></td>
+      <td>17 (2%)</td>
+      <td>17 (2%)</td>
+    </tr>
+    <tr>
+      <td>Controls (SNP 6.0)</td>
+      <td>1895</td>
+      <td>955 (50%)</td>
+      <td rowspan="2">*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Controls (Omni 2.5M)</td>
+      <td>917</td>
+      <td>451 (49.2%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_P(SM|Data) reflects the probability of ‘true’ severe malaria estimated from PfHRP2 concentration and platelet count or white blood cell count and platelet count. Blood cultures were taken from all children severe malaria at admission. *Control children were recruited between 3 and 12 months of age and have been subject to longitudinal follow-up. SMA, severe malarial anaemia; CM, cerebral malaria._
+
+**Table 3.**
+ 95% credible SNP set of invasive bacterial disease association.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SNP</th>
+      <th>Effect allele</th>
+      <th>Chr</th>
+      <th>BP</th>
+      <th>MAF</th>
+      <th>Info score</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs183868412</td>
+      <td>T</td>
+      <td>2</td>
+      <td>32,478,169</td>
+      <td>0.021</td>
+      <td>0.956</td>
+      <td>2.13 (1.65–2.74)</td>
+      <td>4.64×10-9</td>
+    </tr>
+    <tr>
+      <td>rs139827594</td>
+      <td>G</td>
+      <td>2</td>
+      <td>32,402,640</td>
+      <td>0.020</td>
+      <td>0.966</td>
+      <td>2.12 (1.65–2.73)</td>
+      <td>4.96×10-9</td>
+    </tr>
+    <tr>
+      <td>rs144257579</td>
+      <td>G</td>
+      <td>2</td>
+      <td>32,507,619</td>
+      <td>0.021</td>
+      <td>0.954</td>
+      <td>2.11 (1.64–2.72)</td>
+      <td>6.82×10-9</td>
+    </tr>
+    <tr>
+      <td>rs145056232</td>
+      <td>C</td>
+      <td>2</td>
+      <td>32,503,024</td>
+      <td>0.021</td>
+      <td>0.955</td>
+      <td>2.11 (1.64–2.72)</td>
+      <td>6.86×10-9</td>
+    </tr>
+    <tr>
+      <td>rs145315025</td>
+      <td>G</td>
+      <td>2</td>
+      <td>32,502,654</td>
+      <td>0.021</td>
+      <td>0.955</td>
+      <td>2.11 (1.64–2.72)</td>
+      <td>6.87×10-9</td>
+    </tr>
+    <tr>
+      <td>rs143909151</td>
+      <td>T</td>
+      <td>2</td>
+      <td>32,531,452</td>
+      <td>0.021</td>
+      <td>0.962</td>
+      <td>2.11 (1.64–2.71)</td>
+      <td>8.01×10-9</td>
+    </tr>
+    <tr>
+      <td>rs150430979</td>
+      <td>T</td>
+      <td>2</td>
+      <td>32,614,746</td>
+      <td>0.021</td>
+      <td>0.955</td>
+      <td>2.11 (1.64–2.72)</td>
+      <td>8.18×10-9</td>
+    </tr>
+  </tbody>
+</table>
+
+_MAF, minor allele frequency. CI, confidence interval. Genomic coordinates are GRCh38._
+
+To address the possibility that the observed association at this locus is driven by confounding secondary to population structure, we used ABERRANT (Bellenguez et al., 2012) to define a set of outlier samples on the first two PCs of genotyping data (n=22, Figure 3—figure supplement 2). These individuals are all genotyped on the Illumina Omni 2.5M array and are both cases and controls (15 and 7, respectively). While they are predominantly individuals with less common self-reported ethnicities in our study population (19 of 22 are not Giriama, Chonyi, or Kauma), they are not representative of a single self-reported ethnicity (the most common single ethnicity in this group is Digo, n=7). Excluding these samples from the association analysis at rs183868412:T did not significantly alter the association with invasive bacterial infection ($p=2.38\times10^{-8}$, OR = 2.05, 95% CI 1.59–2.64). We further estimated the effect of rs183868412:T on invasive bacterial disease risk in four subpopulations defined by self-reported ethnicity (Giriama, $n=2,501$; Chonyi, $n=1,560$; Kauma, $n=472$; Other, $n=384$). Within each subpopulation, we tested for association between genotype and case status in a weighted logistic regression model, including platform as a categorial covariate (Table 4). The minor allele frequency (MAF) at rs183868412 ranged from 0.016 (Giriama) to 0.037 (Kauma), with no evidence of differentiation between subpopulations ($F_{S⁢T}=0.001$). We observed consistent effect sizes in both of the major study subpopulations; Giriama (OR =1.97, 95% CI 1.30–3.01, $p=0.0015$) and Chonyi (OR = 2.18, 95% CI 1.34–3.54, $p=0.0017$) samples (Table 4), which together make up 83% of the study samples. Genotype at rs183868412 was also associated with invasive bacterial disease among the less common self-reported ethnicities grouped together (OR = 2.46, 95% CI 1.01–5.96, $p=0.047$). Genotype was not associated with invasive bacterial disease risk in the Kauma subpopulation, however the sample size in the stratum is very limited (154 cases, 318 controls) and may simply reflect insufficient power to detect an association.
+
+**Table 4.**
+ Effect of rs183868412 genotype on risk of invasive bacterial disease stratifies by self-reported ethnicity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Discovery population</th>
+      <th></th>
+      <th></th>
+      <th>Numbers</th>
+      <th>Genotypes</th>
+      <th>MAF</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Giriama</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>1232</td>
+      <td>0/56/1176</td>
+      <td>0.023</td>
+      <td rowspan="5">1.97 (1.30–3.01)</td>
+      <td rowspan="5">p=0.0015</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia</td>
+      <td>558</td>
+      <td>0/38/520</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5</td>
+      <td>199</td>
+      <td>0/12/187</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5</td>
+      <td>475</td>
+      <td>0/6/469</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>1269</td>
+      <td>0/41/1228</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Chonyi</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>503</td>
+      <td>0/38/465</td>
+      <td>0.038</td>
+      <td rowspan="5">2.18 (1.34–3.54)</td>
+      <td rowspan="5">p=0.0017</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia</td>
+      <td>238</td>
+      <td>0/27/211</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5</td>
+      <td>105</td>
+      <td>0/4/101</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5</td>
+      <td>160</td>
+      <td>0/7/153</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>1057</td>
+      <td>0/43/1014</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Kauma</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>154</td>
+      <td>0/8/146</td>
+      <td>0.026</td>
+      <td rowspan="5">1.20 (0.50–2.85)</td>
+      <td rowspan="5">p=0.686</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia</td>
+      <td>70</td>
+      <td>0/6/64</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5</td>
+      <td>25</td>
+      <td>0/1/24</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5</td>
+      <td>59</td>
+      <td>0/1/58</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>318</td>
+      <td>0/20/298</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Other</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>219</td>
+      <td>1/16/202</td>
+      <td>0.041</td>
+      <td rowspan="5">2.46 (1.01–5.96)</td>
+      <td rowspan="5">p=0.047</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia</td>
+      <td>101</td>
+      <td>1/8/92</td>
+      <td>0.050</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5</td>
+      <td>38</td>
+      <td>0/5/33</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5</td>
+      <td>80</td>
+      <td>0/3/77</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>165</td>
+      <td>0/7/158</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Total</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>2588</td>
+      <td>3/164/2421</td>
+      <td>0.033</td>
+      <td rowspan="5">2.13 (1.65–2.74)</td>
+      <td rowspan="5">p=4.64×10-9</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia</td>
+      <td>1445</td>
+      <td>3/125/1317</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5</td>
+      <td>375</td>
+      <td>0/20/355</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5</td>
+      <td>768</td>
+      <td>0/19/749</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>2812</td>
+      <td>0/111/2701</td>
+      <td>0.020</td>
+    </tr>
+  </tbody>
+</table>
+
+_Self-reported ethnicity data is missing in 482 samples (480 of which are cases). Effect estimates derived with weighted logistic regression. p(SM|Data) represent the probability of ‘true’ severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). OR, odds ratio. MAF, minor allele frequency. CI, confidence interval._
+
+To assess whether our analysis could be affected by our choice of model to define severe malaria case weights, we restricted our analysis to samples with data available to calculate estimates for $P⁢(S⁢M|D⁢a⁢t⁢a)$ using both Model 1 and Model 2 (n=909 severe malaria cases). We recalculated effect estimates for the rs183868412 association with invasive bacterial disease using each model alone. The association with invasive bacterial disease at rs183868412:T is robust to the choice of the model for case weights, with effect estimates derived using Model 1 alone (OR = 2.13, 95% CI 1.65–2.75, $p=6.92\times10^{-9}$) and Model 2 alone (OR = 2.05, 95% CI 1.59–2.65, $p=2.63\times10^{-8}$) being entirely consistent with those seen in the main analysis (Figure 3—figure supplement 3). Moreover, restricting our analysis to cases of culture-confirmed bacteraemia, the effect estimate for bacteraemia risk observed in the discovery analysis (1445 cases, 2812 controls; OR = 2.12, 95% CI 1.60–2.82, $p=1.97\times10^{-7}$) is consistent with that seen in the main model.
+
+We sought to replicate evidence of association in our discovery analysis through use of an independent case-control collection of Kenyan children with bacteraemia (n=434) and healthy controls (n=1258) conducted in the same population. The peak trait-associated variants in the discovery analysis were well imputed in the replication data (rs183868412 imputation info score $=0.84$). In that analysis, we found evidence supporting the association at chromosome 2 with invasive bacterial disease (Figure 4, Table 5: rs183868412:T, OR = 2.85, 95% CI 1.54–5.28, $p=8.90\times10^{-4}$). In a fixed effects meta-analysis, rs183868412:T was strongly associated with risk of invasive bacterial disease in Kenyan children: OR = 2.22, 95% CI 1.76–2.80, $p=2.35\times10^{-11}$. That association was driven by children with culture-confirmed bacteraemia and critically unwell children with malaria parasites, but a low probability of ‘true’ severe malaria. In a stratified analysis (Figure 4, Table 5), rs183868412 was associated with culture-confirmed bacteraemia (OR = 2.12, 95% CI 1.60–2.82, $p=1.94\times10^{-7}$) and critical illness with parasitaemia and with a low probability of ‘true’ severe malaria (P(SM|Data)<0.5: OR = 2.37, 95% CI 1.27–4.43, $p=6.82\times10^{-3}$), but was not associated with risk of critical illness with a high probability of ‘true’ severe malaria (P(SM|Data)>0.5: $p=0.823$).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig4-v2.jpg)
+
+**Figure 4.:** (A) Regional association plot of invasive bacterial disease association at the BIRC6 locus in the discovery and replication analyses. SNPs are coloured according to linkage disequilibrium to rs183868412. Genomic coordinates are GRCh38. (B) Distribution of ‘true’ severe malaria probabilities among malaria cases estimated from plasma PfHRP2 concentration and platelet count (n=909) and white blood cell count and platelet count (n=234). (C) Odds ratios and 95% confidence intervals of rs183868412 association with disease stratified by malaria cases with high (p>0.5, red) and low (p<0.5, orange) probabilities of ‘true’ severe malaria and culture-proven invasive bacterial disease (blue). P(SM|Data) represents the probability of ‘true’ severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). Effect estimates were calculated with multinomial logisitic regression (SM - P.high, SM - P.low, Bacteraemia - disc) and logistic regression (Bacteraemia - rep).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Individuals are colour-coded according to self-reported ethnicity; Chonyi in red, Giriama in blue, Kauma in green, and other in grey.
+
+**Table 5.**
+ Effect of rs183868412 genotype on risk of invasive bacterial disease in Kenyan children.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Numbers</th>
+      <th>Genotypes</th>
+      <th>MAF</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Discovery</td>
+      <td rowspan="4">Cases</td>
+      <td>Overall</td>
+      <td>2588</td>
+      <td>3/164/2421</td>
+      <td>0.033</td>
+      <td>2.13 (1.65–2.74)</td>
+      <td>p=4.64×10-9</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia*</td>
+      <td>1445</td>
+      <td>3/125/1317</td>
+      <td>0.045</td>
+      <td>2.12 (1.60–2.82)</td>
+      <td>p=1.94×10-7</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&lt;0.5*</td>
+      <td>375</td>
+      <td>0/20/355</td>
+      <td>0.027</td>
+      <td>2.37 (1.27–4.43)</td>
+      <td>p=6.82×10-3</td>
+    </tr>
+    <tr>
+      <td>SM − P(SM|Data)&gt;0.5*</td>
+      <td>768</td>
+      <td>0/19/749</td>
+      <td>0.012</td>
+      <td>1.07 (0.57–2.01)</td>
+      <td>p=0.823</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>2812</td>
+      <td>0/111/2701</td>
+      <td>0.020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Replication</td>
+      <td>Cases</td>
+      <td></td>
+      <td>434</td>
+      <td>0/24/410</td>
+      <td>0.028</td>
+      <td>2.85 (1.54–5.28)</td>
+      <td>p=8.90×10-4</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>1258</td>
+      <td>0/28/1230</td>
+      <td>0.011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Meta-analysis</td>
+      <td>Cases</td>
+      <td></td>
+      <td>3022</td>
+      <td>3/188/2831</td>
+      <td>0.032</td>
+      <td>2.23 (1.76–2.80)</td>
+      <td>p=2.35×10-11</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td></td>
+      <td>4070</td>
+      <td>0/139/3931</td>
+      <td>0.017</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Estimates derived from multinomial logistic regression model. P(SM|Data) represent the probability of ‘true’ severe malaria estimated from plasma PfHRP2 concentration and platelet count (n=909) or white blood cell count and platelet count (n=234). SM, severe malaria. MAF, minor allele frequency. CI, confidence interval._
+
+### rs183868412 is associated with risk of invasive bacterial disease secondary to diverse pathogens and is independent of malaria
 
 Previous data describing the genetic risk of invasive bacterial disease in this population have identified pathogen-specific effects. To better-understand the range of pathogens to which genetic variation at BIRC6 modifies risk, we estimated the effect of rs183868412 on the risk of bacteraemia caused by the seven most common causative pathogens within this population (Figure 5A). In that analysis, the data best-supported a model in which genotype increases risk of bacteraemia caused by a broad range of pathogens, including bacteraemia secondary to pneumococcus, nontyphoidal Salmonellae, Escherichia coli, β-haemolytic streptococci, Staphylococcus aureus, and other less common pathogens grouped as a single stratum (log10 Bayes factor = 4.72). Genotype at rs183868412 similarly modified risk of bacteraemia in the neonatal period and in older children (log10 Bayes factor = 2.70, Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig5-v2.jpg)
 
-**Figure 5.:** BIRC6 confers broad susceptibility to invasive bacterial disease.Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by pathogen (A), neonatal and non-neonatal sepsis (B), and bacteraemia with and without malaria parasitaemia (C). Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by year (D), compared to age-standardised, annual malaria parasite prevalence in Kilifi, Kenya, as estimated from parasite prevalence among trauma admissions (E).We calculated effect estimates using multinomial logistic regression. We compared models of association across strata using a Bayesian approach (see Materials and methods). Strata associated with rs183868412 genotype in the most likely model in each analysis are highlighted in blue.
+**Figure 5.:** Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by pathogen (A), neonatal and non-neonatal sepsis (B), and bacteraemia with and without malaria parasitaemia (C). Odds ratios and 95% confidence intervals of rs183868412 association with invasive bacterial disease stratified by year (D), compared to age-standardised, annual malaria parasite prevalence in Kilifi, Kenya, as estimated from parasite prevalence among trauma admissions (E).We calculated effect estimates using multinomial logistic regression. We compared models of association across strata using a Bayesian approach (see Materials and methods). Strata associated with rs183868412 genotype in the most likely model in each analysis are highlighted in blue.
 
 Malaria infection results in increased risk of invasive bacterial disease secondary to a broad range of pathogens (Scott et al., 2011), and genetic determinants of malaria risk (e.g. sickle cell trait) modify risk of bacterial infection in malaria-endemic settings (Scott et al., 2011). The observation that, among children with a clinical diagnosis of severe malaria, risk of disease is only modified by rs183868412 in children with a low probability that their disease represents ‘true’ severe malaria (Figure 5) suggests that the effect of genetic variation at BIRC6 on invasive bacterial disease risk operates independently of malaria. In keeping with this, the data best-supports an effect of rs183868412 genotype on bacteraemia risk in children both with and without concomitant parasitaemia (log10 Bayes factor = 2.73, Figure 5C). In addition, unlike sickle cell trait (Scott et al., 2011), the increased risk of invasive bacterial infection conferred by rs183868412:T carriage in the study setting is stable across a period of declining malaria prevalence (Bayes factor = 8.7, Figure 5D).
 
-## Evidence of selection pressure and pleiotropy at rs183868412
+### Evidence of selection pressure and pleiotropy at rs183868412
 
-Common genetic variation associated with a twofold increased risk of invasive bacterial infection in children, in particular across a broad range of pathogens, will be subject to considerable negative selection pressure. The derived allele rs183868412:T, associated with increased risk of invasive bacterial disease in Kenyan children, is absent in non-African populations (https://gnomad.broadinstitute.org). Within Africa, rs183868412:T is present in all nine African populations included in the MalariaGEN consortium project (Band, 2019; Table 6), MAFs ranging from 0.011 in The Gambia to 0.034 in Malawi. There is no evidence for within-Africa differentiation at rs183868412 (p=0.601) providing no support for a selective sweep at the locus. We further evaluated evidence for recent directional selection pressure, examining integrated haplotype scores (iHS) (Voight et al., 2006) in seven African populations included in the 1000 Genomes Project. In those data, there is no evidence to support recent selection at the locus (minimum rank p=0.07, maximum iHS = 1.3). Finally, to understand whether variation at this locus may be maintained in populations through beneficial effects on other traits, we examined evidence for pleiotropy at rs183868412 in a meta-analysis of GWAS data (Gurdasani et al., 2019) of 33 cardio-metabolic traits from Uganda, Ghana, Nigeria, South Africa, and Kenya (sample size ranging from 2671 to 14,126 individuals). In keeping with the MalariaGEN consortium project data, MAFs at rs183868412 range from 0.015 to 0.028. In these data there is no evidence for pleiotropy at the locus, with no evidence for an effect of rs183868412 on any of the 33 traits tested (minimum meta-analysis p=0.078). The explanation for the persistence of this polymorphism, therefore, remains an open question.
+Common genetic variation associated with a twofold increased risk of invasive bacterial infection in children, in particular across a broad range of pathogens, will be subject to considerable negative selection pressure. The derived allele rs183868412:T, associated with increased risk of invasive bacterial disease in Kenyan children, is absent in non-African populations (https://gnomad.broadinstitute.org). Within Africa, rs183868412:T is present in all nine African populations included in the MalariaGEN consortium project (Band, 2019; Table 6), MAFs ranging from 0.011 in The Gambia to 0.034 in Malawi. There is no evidence for within-Africa differentiation at rs183868412 ($p=0.601$) providing no support for a selective sweep at the locus. We further evaluated evidence for recent directional selection pressure, examining integrated haplotype scores (iHS) (Voight et al., 2006) in seven African populations included in the 1000 Genomes Project. In those data, there is no evidence to support recent selection at the locus (minimum rank $p=0.07$, maximum iHS = 1.3). Finally, to understand whether variation at this locus may be maintained in populations through beneficial effects on other traits, we examined evidence for pleiotropy at rs183868412 in a meta-analysis of GWAS data (Gurdasani et al., 2019) of 33 cardio-metabolic traits from Uganda, Ghana, Nigeria, South Africa, and Kenya (sample size ranging from 2671 to 14,126 individuals). In keeping with the MalariaGEN consortium project data, MAFs at rs183868412 range from 0.015 to 0.028. In these data there is no evidence for pleiotropy at the locus, with no evidence for an effect of rs183868412 on any of the 33 traits tested (minimum meta-analysis $p=0.078$). The explanation for the persistence of this polymorphism, therefore, remains an open question.
 
-## rs183868412 is associated with alternative splicing of BIRC6 in stimulated monocytes
+**Table 6.**
+ rs183868412 frequencies in Africa.
 
-Trait-associated genetic variation identified by GWAS is highly enriched for regulatory variation. The African specificity of the trait-associated variation identified here makes annotation with publicly available regulatory mapping data challenging. To investigate the regulatory function of rs183868412 in immune cells in African populations, we used eQTL Catalogue (https://www.ebi.ac.uk/eqtl) mapping data (Kerimov et al., 2021) from 100 African ancestry individuals in primary monocytes with and without innate stimulation (Quach et al., 2016); influenza A virus, LPS, Pam3CSK4 (synthetic lipoprotein and TLR1/2 agonist) and R848 (a TLR7/8 agonist). In this dataset, rs183868412 is well imputed (r2=0.998), with an MAF of 0.05 (10 heterozygous individuals). We found no evidence for a regulatory effect of rs183868412 at the gene level in monocytes regardless of stimulation. We did, however, observe an effect of rs183868412 genotype on expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943–32,453,954, p=1.18×10-5), with evidence for colocalisation of this eQTL with our GWAS signal (posterior probability of colocalisation, PP4 = 0.951, Figure 6). This effect was only observed following stimulation with Pam3CSK4 (Figure 6), with the bacteraemia risk allele, rs183868412:T, being associated with reduced expression of this sequence. That 12 bp sequence is associated with an alternative splicing event that results in extension of a BIRC6 exon. The 23rd exon (ENSE00001189810, chr2:32,453,808–32,453,942) of the canonical BIRC6 transcript, ENST00000421745.6, is 135 bp long and terminates immediately before the 12 bp sequence associated with rs183868412:T genotype. The 22nd exon (ENSE00003835010, chr2:32,453,808–32,453,942) of an alternative BIRC6 transcript, ENST00000648282.1, is 147 bp long, having the same start site but including the 12 bp sequence at its 3’ end. Thus, increased risk of invasive bacterial disease may be associated with decreased expression of an alternative BIRC6 transcript in TLR1/2-stimulated monocytes.
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Number</th>
+      <th>MAF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gambia</td>
+      <td>2605</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Mali</td>
+      <td>183</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Burkina Faso</td>
+      <td>596</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Ghana</td>
+      <td>320</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>22</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Cameroon</td>
+      <td>685</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>1317</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td>Tanzania</td>
+      <td>402</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td>Kenya</td>
+      <td>1681</td>
+      <td>0.017</td>
+    </tr>
+  </tbody>
+</table>
+
+_Numbers reflect healthy control samples. MAF, minor allele frequency._
+
+### rs183868412 is associated with alternative splicing of BIRC6 in stimulated monocytes
+
+Trait-associated genetic variation identified by GWAS is highly enriched for regulatory variation. The African specificity of the trait-associated variation identified here makes annotation with publicly available regulatory mapping data challenging. To investigate the regulatory function of rs183868412 in immune cells in African populations, we used eQTL Catalogue (https://www.ebi.ac.uk/eqtl) mapping data (Kerimov et al., 2021) from 100 African ancestry individuals in primary monocytes with and without innate stimulation (Quach et al., 2016); influenza A virus, LPS, Pam3CSK4 (synthetic lipoprotein and TLR1/2 agonist) and R848 (a TLR7/8 agonist). In this dataset, rs183868412 is well imputed ($r^{2}=0.998$), with an MAF of 0.05 (10 heterozygous individuals). We found no evidence for a regulatory effect of rs183868412 at the gene level in monocytes regardless of stimulation. We did, however, observe an effect of rs183868412 genotype on expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943–32,453,954, $p=1.18\times10^{-5}$), with evidence for colocalisation of this eQTL with our GWAS signal (posterior probability of colocalisation, PP4 = 0.951, Figure 6). This effect was only observed following stimulation with Pam3CSK4 (Figure 6), with the bacteraemia risk allele, rs183868412:T, being associated with reduced expression of this sequence. That 12 bp sequence is associated with an alternative splicing event that results in extension of a BIRC6 exon. The 23rd exon (ENSE00001189810, chr2:32,453,808–32,453,942) of the canonical BIRC6 transcript, ENST00000421745.6, is 135 bp long and terminates immediately before the 12 bp sequence associated with rs183868412:T genotype. The 22nd exon (ENSE00003835010, chr2:32,453,808–32,453,942) of an alternative BIRC6 transcript, ENST00000648282.1, is 147 bp long, having the same start site but including the 12 bp sequence at its 3’ end. Thus, increased risk of invasive bacterial disease may be associated with decreased expression of an alternative BIRC6 transcript in TLR1/2-stimulated monocytes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77461/elife-77461-fig6-v2.jpg)
 
-**Figure 6.:** (A) Betas and 95% confidence intervals of rs183868412 association with expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943–32,453,954) in monocytes. Monocytes are naive or stimulated with LPS (lipopolysaccharide), IAV (influenza A virus), Pam3CSK4, and R848. (B) Colocalisation of the BIRC6 exon eQTL in Pam3CSK4-stimulated monocytes colocalises with the risk locus for invasive bacterial disease (). SNPs are coloured according to linkage disequilibrium to rs183868412. Effect estimates are calculated by linear regression.PP4=0.951
+**Figure 6.:** (A) Betas and 95% confidence intervals of rs183868412 association with expression of a 12 bp BIRC6 exonic sequence (chr2:32,453,943–32,453,954) in monocytes. Monocytes are naive or stimulated with LPS (lipopolysaccharide), IAV (influenza A virus), Pam3CSK4, and R848. (B) Colocalisation of the BIRC6 exon eQTL in Pam3CSK4-stimulated monocytes colocalises with the risk locus for invasive bacterial disease ($PP4=0.951$). SNPs are coloured according to linkage disequilibrium to rs183868412. Effect estimates are calculated by linear regression.
 
 ## Discussion
 
@@ -116,39 +861,39 @@ Taken together, our data identify a role for BIRC6 in the pathogenesis of invasi
 
 ## Materials and methods
 
-## Study samples
+### Study samples
 
 Recruitment of the severe malaria cases, bacteraemia cases, and healthy controls have been described in detail elsewhere (Ndila et al., 2018; Rautanen et al., 2016). In brief, children under 14 years admitted to the high dependency ward of Kilifi County Hospital with a clinical diagnosis of severe malaria, defined as P. falciparum parasites on blood film and at least one of reduced Blantyre Coma Score, severe anaemia (Hb < 50 g/L), evidence of respiratory distress, hypoglycaemia, or hyperparasitaemia were eligible for recruitment as cases of severe malaria. During the study period, all children admitted to hospital, with the exception of elective surgical admissions and minor trauma, had a blood sample taken for bacterial culture (BACTEC 9050 instrument, Becton Dickinson, Franklin Lakes, NJ). Children under 14 years in whom a pathogenic organism was identified in blood were eligible for study inclusion (Bacillus species, coryneform bacteria, coagulase-negative staphylococci, Staphylococcus saprophyticus, and Viridans group streptococci were considered contaminants). Control children were recruited between 3 and 12 months of age from consecutive live births from the population which Kilifi County Hospital serves. Control children have been subject to longitudinal follow-up. Following explanation of the study, written informed consent was obtained from the parent or guardian of each child included in the study. Ethical approval was obtained from the Kenya Medical Research Institute (KEMRI) National Scientific Steering and Research Committees (approval numbers: SCC1192 and SCC967) and the Oxford Tropical Research Ethics Committee (OxTREC, approval numbers: 020–06 and 014–01).
 
-## Models to define the probability of ‘true’ severe malaria
+### Models to define the probability of ‘true’ severe malaria
 
 Among cases of severe malaria recruited to the study, we used probabilistic models to assign a probability of that child’s clinical presentation being mediated by parasite sequestration, that is ‘true’ severe malaria, as described previously (Watson et al., 2021a; Watson et al., 2021b). Where available (n=1400), we used platelet counts and PfHRP2 concentrations to derive the probabilistic model. In cases where PfHRP2 concentration was not measured (n=800), we used white blood cell counts and platelet counts as input data to the model.
 
 For both models (Model 1: PfHRP2/platelet counts; Model 2: platelet counts/white blood cell counts), the probabilities of ‘true’ severe malaria were derived by fitting parametric latent class models. These assumed that each patient had a binary latent state (true severe malaria versus not severe malaria). For Model 1, we assumed that in each latent state the data were distributed as a single bivariate normal distribution. For Model 2, the data did not fit well to a two-component bivariate normal (white blood cell counts have much weaker diagnostic value) so we assumed that the data had bivariate Student’s t-distribution for the severe malaria state, and a flexible mixture of bivariates for the not severe malaria state.
 
-## Genotyping and imputation
+### Genotyping and imputation
 
-For the discovery analysis, we utilised genotypes generated as part of GWASs of severe malaria (Band, 2019) and bacteraemia (Rautanen et al., 2016) previously reported in this population. Bacteraemia cases and controls were genotyped using the Affymetrix SNP 6.0 array and the severe malaria samples using the Illumina Omni 2.5M platform. SNP and sample quality control for both datasets are highly analogous, and have been described previously (Band, 2019; Rautanen et al., 2016). In brief, MalariaGEN SNP QC excluded poorly genotyped SNPs using the following metrics; SNP missingness >2.5%, MAF <1%, Hardy-Weinberg equilibrium (HWE) p<1×10−20, plate effect p<1×10−3, and a recall test quantifying changes in genotype following a re-clustering process p<1×10−6. For Affymetrix-genotyped samples, SNP QC excluded poorly performing SNPs using the following metrics: SNP missingness > 2%, MAF < 1%, genotype probability (info) < 0.975, plate effect p<1×10−6, and HWE p<1×10−20. Sample QC on both platforms excluded sample outliers with respect to channel intensity, missingness, heterozygosity, population outliers, and duplicated samples (relatedness coefficient >0.75). In addition, for Affymetrix-genotyped samples, samples were excluded in cases of discordant sex as recorded in the clinical record and imputed from mean intensities from X and Y chromosome markers.
+For the discovery analysis, we utilised genotypes generated as part of GWASs of severe malaria (Band, 2019) and bacteraemia (Rautanen et al., 2016) previously reported in this population. Bacteraemia cases and controls were genotyped using the Affymetrix SNP 6.0 array and the severe malaria samples using the Illumina Omni 2.5M platform. SNP and sample quality control for both datasets are highly analogous, and have been described previously (Band, 2019; Rautanen et al., 2016). In brief, MalariaGEN SNP QC excluded poorly genotyped SNPs using the following metrics; SNP missingness >2.5%, MAF <1%, Hardy-Weinberg equilibrium (HWE) $p<1\times10^{−20}$, plate effect $p<1\times10^{−3}$, and a recall test quantifying changes in genotype following a re-clustering process $p<1\times10^{−6}$. For Affymetrix-genotyped samples, SNP QC excluded poorly performing SNPs using the following metrics: SNP missingness > 2%, MAF < 1%, genotype probability (info) < 0.975, plate effect $p<1\times10^{−6}$, and HWE $p<1\times10^{−20}$. Sample QC on both platforms excluded sample outliers with respect to channel intensity, missingness, heterozygosity, population outliers, and duplicated samples (relatedness coefficient >0.75). In addition, for Affymetrix-genotyped samples, samples were excluded in cases of discordant sex as recorded in the clinical record and imputed from mean intensities from X and Y chromosome markers.
 
-To facilitate combining datasets, we applied an additional set of cross-platform QC procedures. We defined a shared subset of SNPs genotyped and passing SNP QC on both platforms (n=167,108), observing high levels of genotype concordance (median concordance 0.993, Figure 3—figure supplement 4) among the subset of samples genotyped on both platforms (n=1365). We used this shared SNP set to compute relatedness estimates and PCs in PLINK v1.90 (Chang et al., 2015). The major six PCs of shared genotypes differentiate self-reported ethnicity (Figure 3—figure supplement 1) and are non-differential with respect to genotyping platform (Figure 3—figure supplement 1). To harmonise QC across both platforms, we excluded MalariaGEN samples with discordant clinical and genetic sex (n=136). We further excluded one of duplicate or related sample pairs (relatedness coefficient >0.2) across platforms, retaining case samples where possible and excluding equal numbers of control samples genotyped on each platform (n=1973). Following QC, genotypes were phased using SHAPEIT2 (Delaneau et al., 2011), and untyped genotypes imputed genome-wide using IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel. Following imputation, we excluded SNPs with imputation info scores < 0.5, MAF < 1% and HWE p<1×10−5, applying each threshold for each platform and overall. Following SNP and sample QC, 14,010,600 autosomal SNPs and indels from 5400 samples (1445 bacteraemia cases, 1143 severe malaria cases, and 2812 control samples: 917 Illumina genotyped and 1895 Affymetrix genotyped) were taken forward as a combined discovery dataset for association analysis. Following QC and association analysis, we identified a further set of population outliers using ABERRANT (Bellenguez et al., 2012) for downstream sensitivity analysis.
+To facilitate combining datasets, we applied an additional set of cross-platform QC procedures. We defined a shared subset of SNPs genotyped and passing SNP QC on both platforms (n=167,108), observing high levels of genotype concordance (median concordance 0.993, Figure 3—figure supplement 4) among the subset of samples genotyped on both platforms (n=1365). We used this shared SNP set to compute relatedness estimates and PCs in PLINK v1.90 (Chang et al., 2015). The major six PCs of shared genotypes differentiate self-reported ethnicity (Figure 3—figure supplement 1) and are non-differential with respect to genotyping platform (Figure 3—figure supplement 1). To harmonise QC across both platforms, we excluded MalariaGEN samples with discordant clinical and genetic sex (n=136). We further excluded one of duplicate or related sample pairs (relatedness coefficient >0.2) across platforms, retaining case samples where possible and excluding equal numbers of control samples genotyped on each platform (n=1973). Following QC, genotypes were phased using SHAPEIT2 (Delaneau et al., 2011), and untyped genotypes imputed genome-wide using IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel. Following imputation, we excluded SNPs with imputation info scores < 0.5, MAF < 1% and HWE $p<1\times10^{−5}$, applying each threshold for each platform and overall. Following SNP and sample QC, 14,010,600 autosomal SNPs and indels from 5400 samples (1445 bacteraemia cases, 1143 severe malaria cases, and 2812 control samples: 917 Illumina genotyped and 1895 Affymetrix genotyped) were taken forward as a combined discovery dataset for association analysis. Following QC and association analysis, we identified a further set of population outliers using ABERRANT (Bellenguez et al., 2012) for downstream sensitivity analysis.
 
-## Estimation of SNP heritability
+### Estimation of SNP heritability
 
 To estimate SNP heritability of bacteraemia in this population, we used genome-wide genotyping data from culture-confirmed bacteraemia cases and healthy controls genotyped with the Affymetrix SNP 6.0 array. For this analysis we used directly typed markers passing quality control as described above (n = 783,094). In addition to the sample quality control applied above, we additionally excluded one individual from each sample pair with relatedness coefficient >0.05, leaving a final sample size of 2559 (1042 cases, 1517 controls). We estimated SNP heritability using GCTA-GREML (Yang et al., 2011). For transformation of the heritability estimate to the liability scale, we assumed a population prevalence for bacteraemia of 2% in this setting.
 
-## Association analysis and fine mapping
+### Association analysis and fine mapping
 
-In the discovery analysis, we tested for association between genotype at each variant passing QC and invasive bacterial disease by logistic regression in an additive linear model. We used weighted logistic regression to reflect the probability of each case sample being a ‘true’ case of invasive bacterial infection. Cases of culture-confirmed bacteraemia were assigned a weight of 1, whereas cases of severe malaria were assigned weights of 1 − P(SM|Data), re-weighting the contribution of a case to the log-likelihood according to its probability of representing invasive bacterial infection. Control samples were assigned a weight of 1. Our regression thus assumes that the lower the probability of ‘true’ severe malaria, the greater the probability that a case represents culture-negative invasive bacterial disease. To control for confounding variation, we included the six major PCs of genotyping data and genotyping platform as covariates in the model. Weighted logistic regression was implemented using the glm function in R. As described previously (Watson et al., 2021a), standard errors were transformed to reflect the reduced effective sample size resulting from inclusion of sample weights in the model. We considered p<5×10−8 to be significant.
+In the discovery analysis, we tested for association between genotype at each variant passing QC and invasive bacterial disease by logistic regression in an additive linear model. We used weighted logistic regression to reflect the probability of each case sample being a ‘true’ case of invasive bacterial infection. Cases of culture-confirmed bacteraemia were assigned a weight of 1, whereas cases of severe malaria were assigned weights of 1 − P(SM|Data), re-weighting the contribution of a case to the log-likelihood according to its probability of representing invasive bacterial infection. Control samples were assigned a weight of 1. Our regression thus assumes that the lower the probability of ‘true’ severe malaria, the greater the probability that a case represents culture-negative invasive bacterial disease. To control for confounding variation, we included the six major PCs of genotyping data and genotyping platform as covariates in the model. Weighted logistic regression was implemented using the glm function in R. As described previously (Watson et al., 2021a), standard errors were transformed to reflect the reduced effective sample size resulting from inclusion of sample weights in the model. We considered $p<5\times10^{−8}$ to be significant.
 
-We used a Bayesian approach to identify a set of SNPs with 95% probability of containing the causal variant at the trait-associated locus. Approximate Bayes factors (Wakefield, 2009) were calculated for each SNP in the region (a 200 kb surrounding rs183868412) with a prior distribution of N(0,0.22). All SNPs were considered equally likely to be the causal variant a priori. A set of SNPs with 95% probability of containing the causal SNP was defined as the smallest number of SNPs for which the summed posterior probabilities exceed 0.95.
+We used a Bayesian approach to identify a set of SNPs with 95% probability of containing the causal variant at the trait-associated locus. Approximate Bayes factors (Wakefield, 2009) were calculated for each SNP in the region (a 200 kb surrounding rs183868412) with a prior distribution of $N(0,0.2^{2})$. All SNPs were considered equally likely to be the causal variant a priori. A set of SNPs with 95% probability of containing the causal SNP was defined as the smallest number of SNPs for which the summed posterior probabilities exceed 0.95.
 
-## Replication samples and analysis
+### Replication samples and analysis
 
-To replicate our findings from the discovery analysis, we used a second sample set, recruited from the same population as the discovery samples. Replication case samples were cases of bacteraemia only, and did not include cases of severe malaria without culture-confirmed bacterial infection. Case samples were recruited between 1 August 1998 and 30 October 2010. As for the discovery case samples, children under 14 years with a bacterial pathogen isolated from blood on admission to hospital were eligible for recruitment to the study. As above, control samples were recruited as part of a birth cohort from the same population, with children recruited between the ages of 3 and 12 months. Genotyping and QC procedures for these samples have been described previously. In brief, study samples were genotyped using the Immunochip Consortium (Cortes and Brown, 2011) array (Illumina). Sample QC was performed as for the discovery samples (above), with duplicate control samples (samples common to MalariaGEN and Immunochip controls, n=78) being removed from the replication set. As above, relatedness estimates and PCs were computed in PLINK v1.90 (Chang et al., 2015; Figure 4—figure supplement 1). SNP QC excluded the following variants: SNP missingness > 1%, MAF < 1%, and HWE p<1×10−10. Following QC, 143,000 genotyped variants in 434 cases and 1258 control samples were taken forward for imputation. As above, imputation was performed with SHAPEIT2 (Delaneau et al., 2011) and IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel.
+To replicate our findings from the discovery analysis, we used a second sample set, recruited from the same population as the discovery samples. Replication case samples were cases of bacteraemia only, and did not include cases of severe malaria without culture-confirmed bacterial infection. Case samples were recruited between 1 August 1998 and 30 October 2010. As for the discovery case samples, children under 14 years with a bacterial pathogen isolated from blood on admission to hospital were eligible for recruitment to the study. As above, control samples were recruited as part of a birth cohort from the same population, with children recruited between the ages of 3 and 12 months. Genotyping and QC procedures for these samples have been described previously. In brief, study samples were genotyped using the Immunochip Consortium (Cortes and Brown, 2011) array (Illumina). Sample QC was performed as for the discovery samples (above), with duplicate control samples (samples common to MalariaGEN and Immunochip controls, n=78) being removed from the replication set. As above, relatedness estimates and PCs were computed in PLINK v1.90 (Chang et al., 2015; Figure 4—figure supplement 1). SNP QC excluded the following variants: SNP missingness > 1%, MAF < 1%, and HWE $p<1\times10^{−10}$. Following QC, 143,000 genotyped variants in 434 cases and 1258 control samples were taken forward for imputation. As above, imputation was performed with SHAPEIT2 (Delaneau et al., 2011) and IMPUTE2 (v2.3.2) (Howie et al., 2011; Howie et al., 2009) with 1000 Genomes Phase III as a reference panel.
 
-Following imputation, we further excluded poorly imputed (imputation info score < 0.5) and rare (MAF < 1%) variants and variants with HWE p<1×10−10. At variants associated with invasive bacterial disease (p<5×10−8) in the discovery analysis, we tested for association with bacteraemia case-control status using logistic regression in an additive model in SNPTEST v2.5.6 (Marchini et al., 2007). To exclude confounding variation, we included the major six PCs of genotyping data in the model. We considered evidence of association with bacteraemia in the replication samples with p<0.05 with the same direction of effect as in the discovery analysis to be significant.
+Following imputation, we further excluded poorly imputed (imputation info score < 0.5) and rare (MAF < 1%) variants and variants with HWE $p<1\times10^{−10}$. At variants associated with invasive bacterial disease ($p<5\times10^{−8}$) in the discovery analysis, we tested for association with bacteraemia case-control status using logistic regression in an additive model in SNPTEST v2.5.6 (Marchini et al., 2007). To exclude confounding variation, we included the major six PCs of genotyping data in the model. We considered evidence of association with bacteraemia in the replication samples with $p<0.05$ with the same direction of effect as in the discovery analysis to be significant.
 
-## Bayesian comparison of models of association
+### Bayesian comparison of models of association
 
 At the locus of interest, we used multinomial logistic regression, implemented in SNPTEST v2.5.6 (Marchini et al., 2007) to estimate the additive effect of genotype on risk of bacteraemia stratified by pathogen, bacteraemia in the neonatal and non-neonatal periods, bacteraemia with and without P. falciparum parasitaemia, and bacteraemia presenting at different time periods across a period of declining malaria transmission intensity. For these analyses we used only samples with culture-confirmed bacteraemia. In each case we used control status as the baseline stratum, and included the six major PCs of genotyping data to control for confounding variation as above.
 
@@ -160,7 +905,7 @@ We then compared models of association using a Bayesian approach (Rautanen et al
 
 Additional models consider each possible combination of a fixed effect size for associated strata and no association at other strata. For each model, we calculated approximate Bayes factors (Wakefield, 2009) and posterior probabilities, assuming each model to be equally likely a priori. Statistical analysis was performed in R.
 
-## eQTL mapping and colocalisation analysis
+### eQTL mapping and colocalisation analysis
 
 We used the eQTL Catalogue (Kerimov et al., 2021) mapping pipeline (https://github.com/eQTL-Catalogue/, Kerimov, 2022) to map eQTL in naive and stimulated monocytes (Quach et al., 2016). These data include bulk RNA-seq and genome-wide genotyping data from naive and stimulated primary monocytes isolated from individuals of European (n=100) and African (n=100) ancestry (Quach et al., 2016). Given the African-specific nature of variation at rs183868412, we performed eQTL mapping in this dataset restricting our analysis to samples of African ancestry. The eQTL Catalogue mapping pipeline has been described previously (Kerimov et al., 2021). In brief, sample genotypes (Illumina HumanOmni5-Quad genotyped) were pre-phased with Eagle v.2.4.1 (Loh et al., 2016) and genotypes imputed with Minimac4 v.1.0.2 (Das et al., 2016) using 1000 Genomes Phase III as a reference panel. Gene expression, exon expression, transcript usage, and transcriptional event usage were quantified from RNA-seq data using HISAT2 v.2.1.0 (Kim et al., 2019), DEXSeq v.1.18.4 (Anders et al., 2012), and Salmon v.0.13.1 (Patro et al., 2017). Nominal mapping in cis was performed for each phenotype for variants within a 1 Mb window of the start of each gene using FastQTL (Ongen et al., 2016), including six PCs of genotyping and phenotype data as covariates in the model.
 

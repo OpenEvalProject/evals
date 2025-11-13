@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Bacterial cell division is driven by the polymerization of the GTPase FtsZ into a contractile structure, the so-called Z-ring. This essential process involves proteins that modulate FtsZ dynamics and hence the overall Z-ring architecture. Actinobacteria like Streptomyces and Mycobacterium lack known key FtsZ-regulators. Here we report the identification of SepH, a conserved actinobacterial protein that directly regulates FtsZ dynamics. We show that SepH is crucially involved in cell division in Streptomyces venezuelae and that it binds FtsZ via a conserved helix-turn-helix motif, stimulating the assembly of FtsZ protofilaments. Comparative in vitro studies using the SepH homolog from Mycobacterium smegmatis further reveal that SepH can also bundle FtsZ protofilaments, indicating an additional Z-ring stabilizing function in vivo . We propose that SepH plays a crucial role at the onset of cytokinesis in actinobacteria by promoting the assembly of FtsZ filaments into division-competent Z-rings that can go on to mediate septum synthesis.
+Bacterial cell division is driven by the polymerization of the GTPase FtsZ into a contractile structure, the so-called Z-ring. This essential process involves proteins that modulate FtsZ dynamics and hence the overall Z-ring architecture. Actinobacteria like Streptomyces and Mycobacterium lack known key FtsZ-regulators. Here we report the identification of SepH, a conserved actinobacterial protein that directly regulates FtsZ dynamics. We show that SepH is crucially involved in cell division in Streptomyces venezuelae and that it binds FtsZ via a conserved helix-turn-helix motif, stimulating the assembly of FtsZ protofilaments. Comparative in vitro studies using the SepH homolog from Mycobacterium smegmatis further reveal that SepH can also bundle FtsZ protofilaments, indicating an additional Z-ring stabilizing function in vivo. We propose that SepH plays a crucial role at the onset of cytokinesis in actinobacteria by promoting the assembly of FtsZ filaments into division-competent Z-rings that can go on to mediate septum synthesis.
 
 ## Introduction
 
@@ -31,11 +31,27 @@ While the rate of treadmilling is set by the FtsZ GTPase activity, the overall a
 
 Streptomyces are Gram-positive soil bacteria that have a fascinating multicellular life cycle involving filamentous growth and sporulation (Bush et al., 2015). Unlike most unicellular organisms that assemble one Z-ring and divide by binary division, Streptomyces have two functionally distinct modes of cell division: vegetative cross-wall formation and sporulation septation (Figure 1A). Cross-walls divide the growing mycelium occasionally into long multigenomic compartments that remain physically connected. In contrast, during reproductive growth, dozens of sporulation septa are simultaneously deposited in a ladder-like pattern between the segregating chromosomes along the length of sporogenic hyphae. Sporulation septa eventually constrict, leading to cell–cell separation and the release of unigenomic spores. Both these forms of cell division require FtsZ, but unlike in most other bacteria the ftsZ gene can be deleted in Streptomyces, leading to viable hyphae that lack both cross-walls and sporulation septa (McCormick et al., 1994; Santos-Beneit et al., 2017). The Streptomyces divisome is comprised of several conserved core divisome components including FtsQ, DivIC, FtsL and the cell wall synthesis proteins FtsI and FtsW (McCormick, 2009; Cantlay et al., 2021). In addition, the Streptomyces cell division machinery includes the membrane anchor SepF, two additional SepF-like proteins of unknown function (SepF2 and SepF3), the two dynamin-like proteins DynA and DynB, which ensure the stability of Z-rings during sporulation, and the actinomycete-specific protein SsgB, which has been proposed to recruit FtsZ to future sporulation septation sites (Schlimpert et al., 2017; Willemse et al., 2011). However, factors that affect the dynamics of Z-ring formation and regulate its architecture have not yet been identified in actinobacteria and the mechanisms that control cell division in Streptomyces and related actinobacteria are poorly understood.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustrating the multicellular life style of Streptomyces including the two FtsZ-dependent modes of cell division that occur in vegetative and sporogenic hyphae: cross-wall formation and sporulation septation. (B) Schematic of the predicted SepH domain organization including the N-terminal DUF3071 domain containing a helix-turn-helix (HTH) motif and the unstructured C-terminal domain. Numbers indicate corresponding amino acid positions. (C) Cryo-scanning electron micrographs of sporogenic hyphae from wild-type (WT) S. venezuelae, the ΔsepH mutant (SV56), and the complemented mutant strain ΔsepH/sepH+ (MB747). Scale bars: 2 μm. (D) Subcellular co-localization of fluorescently labeled FtsZ (FtsZ-mCherry) and SepH (SepH-YPet) in vegetative and sporulating hyphae. Fluorescent gene fusions were expressed in the WT background (MB751). White arrow heads point at co-localization at cross-walls in vegetative hyphae and the asterisk denotes a sporogenic hypha undergoing sporulation septation. Scale bar: 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** ChIP-seq traces showing the enrichment of the FLAG-tagged developmental regulators WhiA and WhiB at binding sites upstream of sepH (vnz_27360) or their absence in the untagged wild-type (WT) control sample. Source data: Bush et al., 2013.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A minimum of 347 spores were quantified for each biological replicate (n = 3) and strain. The dashed red lines indicate the median, and black dotted lines the 25/75th percentiles. Statistical comparisons were made using a one-way ANOVA test followed by a Dunnett’s multiple comparison test comparing the means to the WT mean. ****p<0.0001; ns, not significant.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Localization pattern of constitutively produced SepH-YPet in the WT (MB858) and in an ΔftsZ mutant strain (MB859). Scale bar: 5 μm. (B) Virtual automated Western blot showing the accumulation of SepH-YPet produced from the constitutive ermE* promoter in MB858, MB859, and an untagged WT control carrying the empty vector (e.v., SS4). YPet fusions were detected with an anti-GFP antibody (1:200). Shown are representative results of duplicate experiments.
+
 Here, we report the identification and characterization of SepH, a conserved actinobacterial-specific cell division protein that directly binds FtsZ and regulates the dynamics of Z-ring formation in filamentous Streptomyces and in rod-shaped Mycobacterium species. We find that SepH co-localizes with FtsZ in Streptomyces and is required for regular cross-wall formation and sporulation septation. Biochemical characterization of SepH from Streptomyces venezuelae and Mycobacterium smegmatis revealed that SepH interacts with FtsZ via a highly conserved helix-turn-helix motif and stimulates the formation of FtsZ protofilaments in vitro. In addition, SepH from M. smegmatis promotes the lateral interaction of FtsZ filaments. Our data suggest that SepH fulfills a crucial function during the initial stages of cell division by increasing the local concentration of FtsZ, thereby stimulating the assembly of division-competent Z-rings.
 
 ## Results
 
-## SepH is required for regular sporulation in Streptomyces venezuelae
+### SepH is required for regular sporulation in Streptomyces venezuelae
 
 In Streptomyces, the initiation of sporulation-specific cell division is controlled by two key transcriptional regulators, WhiA and WhiB. Recent work by Bush et al. determined the regulon of WhiA and WhiB, which co-control the expression of ~240 transcriptional units (Bush et al., 2016; Bush et al., 2013). To identify novel regulators of Z-ring formation in actinomycetes, we chose to focus on uncharacterized gene products which are conserved across streptomycete genomes and are direct targets of WhiAB (Figure 1—figure supplement 1). This analysis turned our attention to vnz_27360 (here named sepH for ‘septation protein H’), a gene of previously unknown biological function that is conserved across the Streptomyces genus. Bioinformatic analysis revealed that SepH consists of an N-terminal domain of unknown function (DUF3071) and an unstructured, less conserved C-terminal half (Figure 1B). In addition, the DUF3071 domain contains a predicted helix-turn-helix (HTH) motif, suggesting that SepH could function as a DNA-binding protein.
 
@@ -45,27 +61,95 @@ Next, we set out to determine the subcellular localization of SepH and generated
 
 Furthermore, we asked whether the specific localization pattern of SepH is dependent on FtsZ and the assembly of a functional divisome. To address this question, we took advantage of an ΔftsZ null mutant (Santos-Beneit et al., 2017) and inserted a sepH-ypet fusion in trans. Fluorescence microscopy of the ΔftsZ strain constitutively producing SepH-YPet revealed that in the absence of FtsZ, SepH-YPet was largely stable and mostly dispersed in the cytoplasm (Figure 1—figure supplement 3A and B), indicating that SepH recruitment to future division sites depends upon the assembly of Z-rings.
 
-## SepH is important for cell division during vegetative growth and sporulation
+### SepH is important for cell division during vegetative growth and sporulation
 
 To determine the role of SepH in Streptomyces cell division, we introduced a ftsZ-ypet gene fusion into the ΔsepH mutant strain and WT S. venezuelae and followed the formation of Z-rings during sporulation using time-lapse fluorescence microscopy. In sporulating WT hyphae, Z-rings are assembled in a characteristic, ‘ladder-like’ pattern in the tip cell compartment of sporogenic hyphae (Schlimpert et al., 2016; Schwedock et al., 1997). These so-called ‘Z-ladders’ lead to the synthesis of sporulation septa and the formation of chains of exospores of equal size (Figure 2A and Video 1). Interestingly, in the ΔsepH mutant Z-ladders were less uniform and frequently displayed an irregular spacing between individual FtsZ-YPet-rings. As observed in cryo-SEM images, spores produced under these conditions were aberrant in size and shape, indicating that regular septation was impaired (Figure 2B and Video 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig2-v1.jpg)
+
+**Figure 2.:** (A and B) Still images from Videos 1 and 2 showing the localization of FtsZ-YPet in sporulating (A) wild-type (WT; SS12) and (B) ΔsepH mutant hyphae (MB750). Arrow heads in (B) point at aberrant spores or gaps in FtsZ-YPet-ladders (filled arrow head) or indicate lysed hyphae (open arrow heads in DIC image). Note that DIC images correspond to a later time point than fluorescence micrographs to show the terminal sporulation phenotype. Scale bars: 10 µm. (C) and (D) Kymograph analysis of FtsZ-YPet dynamics during sporulation-specific cell division in WT (C) and ΔsepH hyphae (D), ectopically expressing an additional copy of ftsZ-ypet from the native promoter (SS12 and MB750). The DIC image below shows the terminal sporulation phenotype. Yellow and blue boxes indicate magnified regions of the kymograph. Scale bar: 2 µm. Additional examples of kymographs can be found in Figure 2—figure supplement 1. (E) Fluorescence intensity traces of FtsZ-YPet (Z-rings) over time derived from sporulating WT (SS12) and ΔsepH mutant hyphae (MB750). Shown are the mean fluorescence intensity traces (mean ± SEM) collected from Z-rings of five sporulating hyphae for each strain. (F) Width of Z-rings in sporulating hyphae of WT (SS12) and sepH-deficient hyphae (MB750). The same data set as in (E) was used and the mean width for reach replicate (colored dots, n = 5) ±95% CI was plotted. (G) HADA labeling of peptidoglycan to visualize cross-walls in WT, ΔsepH (SV56), and ΔsepH/sepH+ (MB747) hyphae. Spores of each strain were germinated and grown in the presence of 0.25 mM HADA for 5 hr in a microfluidic device before imaging. Scale bar: 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scale bar: 2 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** FtsZ levels were determined by automated Western blot analysis using an anti-FtsZ polyclonal antibody (1:200). Lysates were analyzed in triplicate for each strain and FtsZ levels were quantified at the indicated time-points.
+
+![Video 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-video1.mp4.jpg)
+
+**Video 1.:** Scale bar: 10 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-video2.mp4.jpg)
+
+**Video 2.:** Scale bar: 10 μm.
 
 Kymograph analyses of FtsZ-YPet fluorescence in sporulating WT hyphae confirmed the expected regular spacing and dynamics of Z-rings, including Z-ring assembly and constriction, which is accompanied by an increase in fluorescence followed by disassembly and loss of defined FtsZ-YPet fluorescence (Figure 2C and E and Figure 2—figure supplement 1A). In contrast, establishment of equally spaced Z-rings frequently failed in sepH-deficient hyphae leading to the formation of larger, spore-like compartments (Figure 2D and Figure 2—figure supplement 1B). Notably, closer inspection of the gaps within Z-ladders in ΔsepH mutant hyphae revealed that no discrete FtsZ-YPet signal was visible at these positions, indicating that the formation of individual Z-rings was disturbed very early in the assembly process. However, we found that the dynamics of Z-ring assembly, constriction and disassembly of the remaining Z-rings in sepH-deficient hyphae were very similar to the WT (Figure 2E). We also note that FtsZ protein levels were comparable in sporulating WT and ΔsepH cultures (Figure 2—figure supplement 2), indicating that the absence of SepH does not affect FtsZ protein stability. Moreover, calculation of the average Z-ring width in the two strains did not reveal any marked differences (Figure 2F), suggesting that the overall dynamics and architecture of Z-rings are WT-like in ΔsepH mutant hyphae and that additional mechanisms might be in place that can partially compensate for the lack of SepH activity.
 
 While analyzing the spatiotemporal localization of FtsZ-YPet in ΔsepH hyphae, we noticed occasional lysis of large hyphal segments and the formation of unusual branched sporogenic hyphae (Figure 2B). Given that FtsZ and SepH also co-localize at cross-walls (Figure 1D), we reasoned that the absence of SepH might also affect cell division during vegetative growth. To examine the importance of SepH for cross-wall formation, we used the fluorescent D-ala-D-ala analogue HADA to label peptidoglycan and to visualize cross-walls (Kuru et al., 2015). Inspection of still images of WT S. venezuelae and the complemented ΔsepH mutant strain (ΔsepH/sepH+) grown in the presence of HADA showed comparable frequency and distribution of cross-walls within vegetative hyphae. However, we found that sepH-deficient hyphae displayed visibly fewer cross-walls compared to the WT (Figure 2G). The dramatically reduced number of cross-walls in the sepH mutant could explain the lysis and branching phenotype we observed in our ΔsepH time-lapse microscopy experiments. In WT Streptomyces, cross-walls compartmentalize growing hyphae and are often associated with hyphal branch points leading to the physical separation of different hyphal segments. Thus, fewer cross-walls in the ΔsepH mutant result in much longer hyphal compartments that are potentially more susceptible to large-scale lytic events. In addition, at the onset of sporulation septation, FtsZ ladders assemble within these unsegmented and branching hyphal compartments which can subsequently result in the formation of the enlarged triangular shaped-like spores at hyphal branch points (Figure 2B). Collectively, these results demonstrate a crucial role for SepH in cell division during vegetative growth and sporulation.
 
-## The N-terminal DUF3071 domain is crucial for SepH function
+### The N-terminal DUF3071 domain is crucial for SepH function
 
 To identify the protein regions required for the recruitment and function of SepH, we generated fluorescent protein fusions to the N-terminal DUF3071 domain (SepH-NTD, residues 1–186) and the unstructured C-terminal domain (SepH-CTD, residues 187–344) (Figure 3A). The corresponding mutant alleles were integrated in trans at the ΦBT1 phage attachment site in the ΔsepH mutant and expressed from the native promoter. The resulting strains were then analyzed by fluorescence microscopy and cryo-SEM to determine the subcellular localization of the fusion proteins and their ability to compensate for the loss of WT SepH activity. Using automated Western blotting, we verified that all proteins were synthesized and stable under the conditions used (Figure 3—figure supplement 1). Control experiments with full-length SepH-YPet demonstrated that this fusion was fully functional and restored WT-like localization and sporulation (compare Figure 3B and F and Figure 3—figure supplement 2). Expression of the SepH C-terminal domain (SepH-CTD) gave a diffuse localization pattern and failed to complement any aspect of the ΔsepH phenotype, resulting in irregular sporulation and cell lysis (Figure 3C and G). Interestingly, production of just the N-terminal DUF3071 domain (SepH-NTD) was sufficient to partially restore normal sporulation (Figure 3H). However, the distinct septal accumulation characteristic of full-length SepH-YPet and WT-like sporulation could only be clearly observed for the truncated gene fusion when it was expressed from a constitutive promoter (ermE*p) in the ΔsepH mutant (Figure 3E and I). By contrast, constitutive expression of sepH-CTD-ypet did not improve sporulation in the ΔsepH mutant (Figure 3—figure supplement 3). Taken together, these results imply that the conserved N-terminal region of SepH encoding the DUF3071 domain is vital for SepH function, but WT activity also requires the C-terminal domain.
 
-## SepH does not bind to the nucleoid
+![Figure 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic showing the SepH domain architecture and constructed truncations. Numbers indicate the relevant amino acid positions. (B–E) Fluorescence micrographs showing the localization of the full-length and truncated SepH-YPet variants in the ΔsepH mutant expressed from the native promoter (B–D, strains MB918, MB827, MB828) or from the constitutive PermE* promotor (E, strain MB852). Scale bar: 5 µm. (F–I) Cryo-SEM images of the same strains presented in (B–E) showing the ability of (F) full-length SepH-YPet or (G–I) truncated versions of SepH fused to YPet to complement the sporulation defect of the ΔsepH mutant when produced from the native promoter (F–H, strains MB918, MB827, MB828) or a constitutive promoter (I, strain MB852). Note, expression of sepH-CTD (G) does not rescue the ΔsepH mutant. Scale bars: 5 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Strains (MB918, MB827, MB828, SV56) were grown to mid-exponential phase and SepH-YPet fusions were detected using an anti-GFP antibody (1:200). Red arrow heads indicate expected size for each construct. Asterisks denote non-specific signals that are also present in the negative control (ΔsepH) or likely degradation products. Shown are representative results of duplicate experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Cryo-SEM image showing sporulating hyphae of ΔsepH carrying an empty plasmid (MB749). Scale bar: 5 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Cryo-SEM image showing sporulating hyphae of ΔsepH producing SepH-CTD fused to YPet from the constitutive ermE* promoter (MB851, sepH-CTD-ypet++). Scale bar: 5 μm.
+
+### SepH does not bind to the nucleoid
 
 The DUF3071 domain of SepH includes a HTH motif, characteristic of DNA binding proteins (Aravind et al., 2005). This raised the question as to whether SepH could interact with the nucleoid. Notably, to-date, no functional homologs of the well-described nucleoid occlusion systems present in other bacteria have been identified in Streptomyces. To investigate a potential role of SepH in chromosome segregation, we first generated a dual-labeled strain which produced SepH-YPet and a mCherry-labeled version of the bacterial nucleoid-associated protein HupA (Salerno et al., 2009). Both fluorescent protein gene fusions were integrated at the ΦBT1 phage attachment site of WT S. venezuelae and expression was driven from their native promoters. Fluorescence microscopy of the resulting S. venezuelae strain showed that SepH-YPet and HupA-mCherry did not co-localize. Instead, SepH-YPet accumulated at sites where HupA-mCherry was largely absent, indicating that SepH does not associate with the nucleoid (Figure 4A). Furthermore, we visualized the nucleoid in WT and ΔsepH spore chains stained with the fluorescent DNA dye 7-AAD but did not observe anucleate spores in the ΔsepH mutant (Figure 4B), suggesting that chromosome segregation is not impaired in sepH-deficient hyphae.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig4-v1.jpg)
+
+**Figure 4.:** (A) Fluorescence micrographs showing the accumulation of SepH-YPet and the concomitant distribution of chromosomal DNA visualized using the nucleoid-associated protein HupA fused to mCherry (MB807). Boxes I and II indicate an enlarged hyphal segment shown in the left panels. Scale bars: 2 µm. (B) Fluorescence images of wild-type (WT) and ΔsepH (SV56) spore chains incubated with the fluorescent dyes 7-AAD and WGA Alexa Fluor 488 to visualize DNA and cell wall material, respectively. Scale bar: 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative genome-wide distribution of putative SepH binding sites identified by ChIP-seq analysis using an anti-SepH polyclonal antibody during sporulation in wild-type versus ΔsepH (SV56) cells. Arrows point to the three most enriched putative binding sites of SepH upstream of vnz_07520, vnz_30075, and vnz_35870, which were further analyzed in (B) and (C). (B) DNase I footprinting analysis of SepH bound to radiolabeled probes derived from the sequence upstream of vnz_07520, vnz_30075, and vnz_35870. 5’-end-labeled probes were incubated with increasing concentrations of SepH and subjected to DNase I treatment. The footprints are flanked by Maxam and Gilbert sequence ladders (GA). No binding of SepH to the probes could be detected. (C) EMSA analysis to test for non-specific binding of SepH to the promoter region of vnz_35870, a sequence internal to vnz_08520 (ftsZ) and a low-GC sequence from the kanmycin resistance gene (kanr). No binding activity of SepH to any of the tested DNA probes could be detected. Numbers in brackets indicate GC-content of the DNA probe.
+
 To independently verify our localization studies, we first performed chromatin immunoprecipitation coupled with deep-sequencing (ChIP-seq) using sporulating WT S. venezuelae. In parallel, we conducted ChIP-seq experiments with the ΔsepH mutant strain as a negative control to eliminate false-positive signals arising from non-specific binding of the α-SepH antibody. Analysis of the ChIP-seq results did not reveal any significant enrichment of SepH on the chromosome (Figure 4—figure supplement 1A) compared to the ΔsepH negative control. Furthermore, DNase I footprinting experiments using purified SepH together with radiolabeled probes derived from three of the most enriched chromosomal regions (Figure 4—figure supplement 1B) did not reveal protection of the selected DNA fragments, collectively suggesting that SepH does not bind to specific DNA-sequences. Finally, we performed electrophoretic mobility shift assays (EMSAs) to test SepH for non-specific DNA-binding activity in vitro (Figure 4—figure supplement 1C). For this, we tested binding of SepH to the promoter region of vnz_35870 (the most enriched region in ChIP-seq), the sequence internal to vnz_08520 (not enriched in ChIP-seq) and the low GC-sequence of the kanamycin resistance gene from a standard E. coli expression vector. Under the conditions used, we did not observe binding of SepH to any of these DNA fragments. Collectively, our results strongly suggest that the HTH motif in the conserved N-terminal region of SepH is not involved in DNA binding and that SepH does not play a direct role in chromosome segregation.
 
-## The SepH HTH motif is essential for the interaction with FtsZ
+### The SepH HTH motif is essential for the interaction with FtsZ
 
 While most HTH motifs mediate DNA binding, exceptions to this rule exist and HTH motifs have also been shown to facilitate protein–protein interaction (van den Ent et al., 2010). Thus, we hypothesized that the HTH motif within the NTD of SepH could directly affect the function of a protein binding partner, such as FtsZ or other components of the Streptomyces cell division machinery. To investigate this possibility, we performed yeast-two hybrid (Y2H) assays. As previously described, we observed that FtsZ can self-interact and associate with SepF (Schlimpert et al., 2017). Furthermore, our Y2H experiments suggested that SepH can oligomerize and, most significantly, SepH binds FtsZ (Figure 5A). In addition, we tested interactions between SepH and several other Streptomyces divisome components including SepF, SepF2, SepF3, DynA, and DynB but only detected a putative interaction with SepF in one orientation (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-v1.jpg)
+
+**Figure 5.:** (A) Yeast two-hybrid analysis. The indicated proteins were fused to the GAL4 activation domain (AD) and the GAL4 DNA-binding domain (BD). The viability of the yeast strains expressing the respective fusion proteins was confirmed by spotting the individual strains on minimal medium containing leucine and tryptophan (left panel). Interaction between the protein fusion allows growth on minimal medium lacking leucine, tryptophan, histidine, and alanine (right panel). The full set of tested interactions can be found in Figure 5—figure supplement 1. Each interaction was tested in triplicate. (B) Yeast two-hybrid assay showing the interaction between FtsZ and different SepH variants, including full-length SepH (SepH), the N-terminal domain of SepH (SepH-NTD), the C-terminal SepH domain (SepH-CTD), and the mutated SepH HTH domain (SepH-G79P). Experiments were performed as described above. (C) Coomassie-stained SDS gel with purified S. venezuelae FtsZ, SepH, SepH-NTD (residues 1–186), SepH-CTD (residues 187–344), and SepH-G79P. (D) Mean GTP hydrolysis rate of 3.5 µM FtsZ alone or in the presence of increasing concentrations of SepH. SepH did not show GTPase activity (red graph). Error bars represent SEM (n ≥ 3). (E) Mean GTP hydrolysis rate of FtsZ (3.5 µM) in the presence of wild-type SepH and SepH variants at a molar ratio of 1:1. Error bars represent min/max values (n ≥ 3). (F) Co-sedimentation of SepH with polymerized FtsZ in vitro. 3.5 µM FtsZ was incubated for 15 min in the presence or absence of 2 mM GTP, and 0.6 µM SepH or SepH-G79P as indicated. Polymerized FtsZ was collected by high-speed ultracentrifugation. The presence of proteins in the supernatant (S) and pellet (P) was analyzed by SDS-PAGE and Coomassie staining. Representative images of two independent experiments are shown. The percentage of total FtsZ or SepH/SepHG79P in the pellet fraction is indicated below. Note that due to number of samples, protein fractions were loaded on separate protein gels which resulted in slightly different staining intensity.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Growth and putative interaction between the different fusion proteins was verified by spotting the individual strains onto minimal media lacking either leucine and tryptophan (growth) or leucine, tryptophan, histidine, and alanine (interaction). The white dashed box indicates the subset of interactions shown in Figure 5A. Each interaction was tested in triplicate and a representative overview of the results is shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Scale bar: 10 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) CD spectroscopy analysis of wild-type SepH (black) and SepH-G79P (red). Both proteins show a similar spectral pattern indicating that they are not significantly different in their secondary structure. (B) Size exclusion chromatograms of purified SepH (gray), SepH-G79P (red), SepH-NTD (yellow), and SepH-CTD (blue). Predicted multimerization states of the purified proteins based on the migration of MW standards is indicated (4×, tetramer; 2×, dimer). Shown are representative results of duplicate experiments. (C) Mean GTP hydrolysis rate of increasing concentrations of FtsZ over time. Error bars represent SEM (n ≥ 3).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) and (B). Top, virtual Western blot image showing a dilution series of purified FtsZ (left) and SepH (right) used to generate a standard curve and endogenous FtsZ and SepH amounts in wild-type cell lysates. Proteins were detected using a polyclonal antibody against FtsZ and SepH. Asterisk denotes an unspecific cross-reaction by the α-SepH antibody. Arrow head points at SepH detected in the cell lysate. Below, the bands for the FtsZ and SepH standards were quantified and fit by a linear function (black circles). The amount of FtsZ and SepH (red circles) was calculated from the calibration. Quantification of SepH and FtsZ in cell lysates was performed in biological triplicate experiments, and automated WES analysis was performed in technical replicates. (C) Calculation of the molar ratio of SepH and FtsZ in S. venezuelae hyphae shows that SepH abundance is approximately sixfold lower compared to FtsZ. Circles present the ratio calculated for each replicate, and the line is the mean.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** 3.5 µM FtsZ was incubated with 1 mM GMPCCP and in the presence or absence of 0.6 µM SepH as indicated. Reactions were incubated for 15 min followed by high-speed ultracentrifugation. The presence of proteins in the supernatant (S) and pellet (P) was analyzed by SDS-PAGE and Coomassie staining. A representative image of two independent experiments is shown. The percentage of total FtsZ or SepH in the pellet fraction is indicated below.
 
 To identify the SepH domain involved in binding FtsZ, we performed additional experiments using the SepH-NTD and the SepH-CTD variants (Figure 5B). We found that the SepH-NTD could bind FtsZ in the Y2H assays but the SepH-CTD could not. We hypothesized that the HTH fold in the N-terminal domain of SepH could be involved in binding FtsZ. Thus, we repeated the Y2H assay with a SepH variant in which we had substituted a highly conserved glycine residue in the HTH motif with a proline residue (SepH-G79P) (Mercy et al., 2019). While SepH-G79P was still able to interact with WT SepH (Figure 5B), this mutant version failed to bind FtsZ. This indicated that the SepH HTH motif is indeed required for the interaction with FtsZ, but not for self-interaction. We also introduced the sepH-G79P allele into the ΔsepH mutant and found that SepH-G79P was unable to restore WT-like sporulation (Figure 5—figure supplement 2).
 
@@ -77,11 +161,27 @@ To further substantiate our finding that SepH directly binds FtsZ, we performed 
 
 Next, we asked whether the hydrolysis of GTP is required for the interaction of SepH with FtsZ. To address this question, we repeated the co-sedimentation assays with FtsZ and SepH using the slow-hydrolysable GTP analogue GMPCCP. Under these conditions, the amount of FtsZ in the pellet fraction nearly doubled (88%) and this was independent of SepH, which co-sedimented almost completely with FtsZ (98%) (Figure 5—figure supplement 5). Taken together, our two-hybrid and in vitro experiments demonstrate that SepH directly interacts with FtsZ via the HTH motif in the conserved N-terminal DUF3071 domain and that this interaction is independent of the GTPase activity of FtsZ.
 
-## SepH stimulates the formation of dynamic FtsZ filaments in vitro
+### SepH stimulates the formation of dynamic FtsZ filaments in vitro
 
 The enrichment of SepH and FtsZ in the pellet fraction following high-speed centrifugation suggested that SepH either promotes the formation of macromolecular FtsZ bundles or stimulates the assembly of a high number of individual FtsZ protofilaments. To distinguish between these two possibilities, we first repeated the co-sedimentation assays with GTP at a lower centrifugation speed, which would only allow the pelleting of FtsZ bundles but not FtsZ protofilaments. A similar approach was recently employed to examine the assembly state of FtsZ filaments in complex with the FtsZ-stabilizing protein GpsB (Eswara et al., 2018). Using this differential centrifugation method, we detected no meaningful accumulation of SepH (12%) and FtsZ (3%) in the pellet fraction (Figure 6—figure supplement 1), indicating the absence of large FtsZ assemblies in the presence of SepH.
 
 To further investigate the assembly state of FtsZ and to visualize the effect of SepH on FtsZ filament morphology, we used negative staining and transmission electron microscopy (TEM). Our control experiments confirmed that purified FtsZ and SepH did not form any visible complexes when imaged on their own (Figure 6A and B). Upon addition of 2 mM GTP to the polymerization buffer (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2), FtsZ (3.5 μM) formed long, gently curved fibers that sparsely covered the EM grid (Figure 6C). In the presence of GTP and 0.6 μM SepH, FtsZ filaments became readily visible and were similar in morphology but varied more in length compared to FtsZ filaments assembled without SepH (Figure 6D). We also tested if the addition of a higher concentration of SepH would affect FtsZ filament morphology. At an equimolar ratio of SepH and FtsZ (1:1), FtsZ filaments were highly abundant on EM grids and discernible as largely straight filaments of various lengths (Figure 6—figure supplement 2A). Occasionally, we did observe some thin filament bundles which were likely a result of the artificial stabilization of FtsZ protofilaments due to the excess of SepH rather than active stabilization of lateral interactions between FtsZ filaments. In addition, we examined FtsZ polymers in the presence of the different SepH variants. As expected, incubation of FtsZ with GTP and SepH-CTD or SepH-G79P did not alter FtsZ filament morphology (Figure 6—figure supplement 2B-C). However, FtsZ filaments appeared to be more abundant and longer in the presence of SepH-NTD (Figure 6—figure supplement 2D). Likewise, stable FtsZ filaments formed in the presence of slow-hydrolysable GTP analogue GMPCCP either with or without SepH were similar in appearance and did not assemble into large polymer aggregates (Figure 6—figure supplement 2E and F). We therefore conclude that SepH does not actively contribute to the bundling of FtsZ protofilaments in vitro.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Visualization of purified FtsZ and/or SepH using negative staining transmission electron microscopy (TEM). No structures were detected for 3.5 μM FtsZ in the absence of GTP (A), or 0.6 μM SepH in the presence of GTP (B). Filaments were observed for FtsZ (3.5 μM) when 2 mM GTP was added (C), and increased FtsZ polymerization was observed when SepH (0.6 μM) was added to the reaction (D). Scale bar: 100 nm. (E) Light scatter traces showing the reversible assembly of 3.5 μM FtsZ filaments in the presence of 50 μM GTP and increasing amounts of SepH. Red line denotes DLS trace generated with a molar ratio of FtsZ to SepH at 6:1. (F) Light scatter traces showing the polymerization of 3.5 μM FtsZ with 2 mM GTP in the presence (red line) or absence of 0.6 μM SepH (black line). SepH alone did not generate light scattering when incubated with 2 mM GTP (dashed line). Light scatter graphs display representative traces of at least three independent experiments. (G) Critical concentration (Cc) of FtsZ from S. venezuelae in the presence and absence of 0.6 μM SepH. Cc was determined by extrapolating the linear regression line of the FtsZ GTPase rate backwards to where it intercepts the X-axis. GTPase hydrolysis rates are the result of two independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Polymerized FtsZ (3.5 µM) was sedimented in the presence or absence of 0.6 µM SepH and 2 mM GTP following a 15 min incubation period. The presence of proteins in the supernatant (S) and pellet (P) was analyzed by SDS-PAGE and Coomassie staining. A representative image of two independent experiments is shown. The percentage of total FtsZ or SepH in the pellet fraction is indicated below.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) FtsZ (3.5 μM) filaments formed in the presence of 2 mM GTP and with either an equimolar ratio (1:1) of wild-type SepH (A) or at a 6:1 molar ratio with the different SepH variants SepH-G79P (B), SepH-CTD (C), or SepH-NTD (D). (E and F) FtsZ (3.5 μM) filament morphology with and without 0.6 μM SepH when assembled with the slow-hydrolysable GTP analogue GMPCCP (2 mM). Polymerization reactions were incubated for 15 min and FtsZ filaments were visualized by protein negative stain TEM. Scale bars: 200 nm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Light scattering traces of 3.5 μM FtsZ assembly kinetics resulting from incubation with (A) SepH (0.6 μM) and 2 mM GDP, (B) with 2 mM GTP and 0.6. μM of the different SepH variants, or (C) in the presence of the slow-hydrolysable GTP analogue GMPCCP (2 mM) with or without 0.6 μM SepH. Light scatter curves display representative traces of three independent experiments.
 
 To directly follow the assembly kinetics of purified FtsZ into filaments, we used dynamic light scattering (DLS). In the presence of 50 μM GTP, FtsZ monomers assembled into protofilaments, which resulted in a sharp increase in the light scattering signal. The reaction reached a brief steady-state level before GTP became limiting and the intrinsic FtsZ GTPase activity triggered depolymerization and the complete disassembly of FtsZ filaments. Importantly, incubation of 3.5 μM FtsZ with 50 μM GTP and increasing amounts of SepH led to a significantly higher amplitude in light scattering compared to FtsZ with just GTP (Figure 6E). The initial burst in light scattering was followed by a rapid decrease in the light scatter signal and the complete depolymerization of FtsZ filaments. Control experiments using GDP or SepH with GTP did not generate a light scattering signal, confirming the absence of any polymers or molecular assemblies (Figure 6—figure supplement 3A).
 
@@ -89,15 +189,39 @@ We repeated the DLS experiments using a higher GTP concentration (2 mM) and a ra
 
 The DLS curves of FtsZ filament assembly with and without SepH showed a similar initial rate of polymerization but reached a higher light scatter amplitude when SepH was present (Figure 6F). We reasoned that SepH has a positive effect on FtsZ polymerization and that the associated increase in FtsZ GTPase activity is a direct consequence of a higher amount of FtsZ protofilament ends that can undergo treadmilling. To support this idea, we determined the critical concentration of FtsZ and found that the addition of SepH, at a molar ratio of 6 FtsZ to 1 SepH, lowers the critical concentration of FtsZ from 1.43 to 1.11 μM (Figure 6G). Together, these findings demonstrate that SepH directly regulates the behavior of FtsZ by promoting the reversible assembly of FtsZ protofilaments.
 
-## SepH is conserved in morphologically diverse actinobacteria
+### SepH is conserved in morphologically diverse actinobacteria
 
 Previous work by Gao et al., 2006 identified a group of 24 so-called signature proteins that are highly conserved actinobacterial proteins and inculde SepH. To get a better understanding of the phylogenetic distribution and conservation of SepH, we specifically searched for SepH homologs in an expanded set of 3962 representative genomes, including those of 673 actinobacterial species. In total, we identified 626 SepH homologs, which, in agreement with Gao et al., are exclusively found in actinobacteria (Figure 7A; Gao et al., 2006). Furthermore, SepH homologs cluster into distinct groups, suggesting a greater sequence divergence at the family level. Interestingly, in contrast to SepH homologs detected in, for example, the Corynebacteriales or Micrococcales, SepH homologs identified in all analyzed streptomycetes genomes (n = 60) display a very high sequence identity (>80%), which is reflected by the small number of individual leaves within the Streptomycetales branch. Notably, members of the actinobacteria display remarkably diverse cellular morphologies, ranging from cocci and rods to multicellular filaments (Barka et al., 2016). Thus, it is conceivable that SepH homologs have further evolved to support cell division in the different actinobacterial species.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-v1.jpg)
+
+**Figure 7.:** (A) Phylogenetic tree showing the distribution of SepH within different actinobacterial orders. Major orders with more than two representative leaves are shown in different colors. Numbers denote bootstrap values. The scale bar represents the average substitutions per site. (B) Representative fluorescence and DIC images showing the subcellular localization (I) and wild-type (WT)-like sporulation (II) of the S. venezuelae ΔsepH mutant producing SepHMs-mCherry (SS380). For comparison spore chains of the WT and the ΔsepH mutant (SV56) are shown and the mean ± SD spore length for each strain is denoted below. 350 spores per biological replicate (n = 3) and strain were measured. Scale bars: 5 μm. (C) Yeast two-hybrid analysis to test the interaction between SepHMs and FtsZMs from M. smegmatis. Viability of the yeast strains carrying the respective fusion proteins was confirmed by spotting the individual strains on minimal medium lacking leucine and tryptophan (left panel). An interaction between the protein fusions allows growth on minimal medium lacking leucine, tryptophan, histidine, and alanine (right panel). Shown is a representative image. Experiments were performed in triplicate. (D) Assembly dynamics of FtsZMs from M. smegmatis using dynamic light scattering. Light scatter traces for 6 µM FtsZ (black) and 6 µM FtsZMs in the presence of 3 µM SepHMs (red) are shown. 2 mM GTP was added to induce FtsZ polymerization. Light scatter graphs display representative traces of at least three independent experiments. (E) FtsZMs filament morphology visualized by negative stain TEM of 6 µM FtsZMs alone, with 2 mM GTP and with 3 µM SepHMs. SepHMs (3 μM) does not form visible structures when incubated with GTP. Scale bars: 200 nm. (F) High = and low-speed co-sedimentation assay of polymerized FtsZMs (6 μM) with and without SepHMs (3 μM) in the presence of 2 mM GTP. Presence of FtsZMs and SepHMs in the supernatant (S) or pellet (P) was analyzed by SDS-PAGE and Coomassie staining. The average percentage of total FtsZMs or SepHMs in the pellet fraction based on results from two independent experiments is indicated below. Note that due to the number of samples, protein fractions were run on several protein gels which resulted in different staining intensity.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Logo generated from an alignment of 360 representative actinobacterial SepH sequences. Amino acids are colored according to their chemical properties. The SepH N-terminal region contains a highly conserved helix-turn-helix (HTH) motif. The red arrow head denotes the glycine residue that was substituted in the S. venezuelae SepH-G79P variant. The C-terminal domain contains two additional conserved sequence motifs of unknown function (dashed boxes).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Coomassie-stained SDS gel with SepH-6xHis (SepHMs) and untagged FtsZ (FtsZMs) from M. smegmatis.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Based on the migration of MW standards, purified SepHMs is predicted to form a tetramer (4×). Experiment was performed in duplicate.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** Mean GTP hydrolysis rates of 6 µM FtsZMs, 3 µM SepHMs, and 6 µM FtsZMs in the presence of 3 µM SepHMs (1:0.5) or 6 μM SepHMs (1:1). Error bars represent SEM (n = 3).
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** Filaments were visualized by negative stain TEM. Scale bar: 200 nm.
 
 Despite this apparent divergence of SepH homologs throughout the actinobacteria, a refined alignment of 360 representative SepH sequences clearly showed a strong conservation in the N-terminal DUF3071 domain, including the HTH motif (Figure 7—figure supplement 1). Interestingly, we identified two additional highly conserved sequence motifs at the far C-terminal end of SepH homologs. These two motifs include a four-amino acid lysine and arginine-rich patch, which is particularly enriched in SepH sequences from Corynebacteria, and an additional string of 10 amino acids which is present in all analyzed SepH homologs (Figure 7—figure supplement 1). It is conceivable that these residues are involved in a yet unidentified aspect of SepH function.
 
 To investigate if SepH homologs share a similar biological function, we expressed codon-optimized sepH from the non-pathogenic, rod-shaped model organism Mycobacterium smegmatis mc2 155 (sepHMs, MSMEG_5685) in the S. venezuelae ΔsepH mutant. Both SepH homologs share an overall sequence identity of 34%. The heterologous sepHMs was fused to mcherry, placed under the control of the native sepHSv promoter and integrated at the S. venezuelae ΦBT1 phage attachment site. SepHMs-mCherry was able to fully support WT-like sporulation in the ΔsepH mutant (Figure 7B). Moreover, SepHMs-mCherry also displayed the characteristic septal localization in growing and sporulating hyphae similar to SepH from S. venezuelae (Figures 1D and 7B). In addition, we could detect a direct interaction between SepHMs and FtsZMs using yeast two-hybrid analyses, supporting the idea that SepH plays a universal role in actinobacterial cell division (Figure 7C).
 
-## SepH from M. smegmatis stimulates FtsZ polymerization and bundling
+### SepH from M. smegmatis stimulates FtsZ polymerization and bundling
 
 To test if SepHMs can also affect the behavior of FtsZMs in vitro, we purified recombinant SepHMs-6xHis (SepHMs) and untagged FtsZMs (Figure 7—figure supplement 2). We first examined SepHMs by size exclusion chromatography and, like SepH from S. venezuelae, it eluted as a single peak that corresponds to the predicted size of a tetramer (148 kDa) (Figure 7—figure supplement 3). We also measured the effect of SepHMs on the GTPase activity of FtsZMs but did not observe a significant effect on the GTP turnover rate when SepHMs was added to the reaction (Figure 7—figure supplement 4). Next, we followed the assembly of FtsZMs into filaments using DLS. As described previously, mycobacterial FtsZ displayed a low polymerization rate (White et al., 2000). However, FtsZMs filament assembly was dramatically stimulated upon addition of SepHMs at a molar ratio of 1:0.5 (Figure 7D), as indicated by a sharp and rapid increase in the light scattering signal. Electron microscopy of negatively stained FtsZMs (6 μM) confirmed that the incubation with GTP led to the assembly of long and thin protofilaments (Figure 7E). Interestingly, and in contrast to SepH from S. venezuelae, the addition of 3 μM SepHMs resulted in the formation of FtsZMs bundles, which were even more prominent when FtsZMs and SepHMs were combined at equimolar concentrations (Figure 7—figure supplement 5). Notably, in the background of these bundles, shorter FtsZ filaments were visible, suggesting that SepHMs initially enhanced FtsZMs protofilament formation which subsequently led to the assembly of long and stable FtsZMs filaments that could further associate into multifilament bundles. This observation was also supported by differential co-sedimentation epxeriments. Incubation of FtsZMs with GTP and SepHMS followed by either high- or low-speed centrifugation resulted in an enrichment of both proteins in the pellet fraction (Figure 7F), indicating that SepHMsled to the formation of macromolecular FtsZ assemblies that can be pelleted at lower centrifugation rates. This clearly suggests that SepHMs not only stimulates the rapid polymerization of FtsZMs but also has the propensity to promote lateral interactions of FtsZMs filaments.
 
@@ -109,7 +233,7 @@ Here we report the identification of SepH as one of the missing actinomycete-spe
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63387/elife-63387-fig8-v1.jpg)
 
-**Figure 8.:** Streptomyces and Mycobacterium.SepH (green) directly binds FtsZ (yellow) and stimulates the robust assembly of FtsZ protofilaments. Filament-associated SepH from M. smegmatis can further mediate lateral interactions between FtsZ filaments while SepH from S. venezuelae is likely to only transiently stabilize FtsZ protofilaments. The GTP hydrolysis rate of FtsZ is likely not directly affected by SepH but will eventually lead to the disassembly of FtsZ filaments. Importantly, SepH functions by increasing the local concentration of FtsZ which promotes the condensation of filaments into a Z-ring and aids FtsZ treadmilling during the early stages of cell division. This process is linked to septal peptidoglycan synthesis and the formation of division septa.
+**Figure 8.:** SepH (green) directly binds FtsZ (yellow) and stimulates the robust assembly of FtsZ protofilaments. Filament-associated SepH from M. smegmatis can further mediate lateral interactions between FtsZ filaments while SepH from S. venezuelae is likely to only transiently stabilize FtsZ protofilaments. The GTP hydrolysis rate of FtsZ is likely not directly affected by SepH but will eventually lead to the disassembly of FtsZ filaments. Importantly, SepH functions by increasing the local concentration of FtsZ which promotes the condensation of filaments into a Z-ring and aids FtsZ treadmilling during the early stages of cell division. This process is linked to septal peptidoglycan synthesis and the formation of division septa.
 
 Our model is supported by several lines of evidence. First, we report that SepH plays a crucial role during the early stages of Z-ring formation. Kymograph analysis of fluorescently tagged FtsZ revealed that individual Z-rings fail to assemble in sporulating S. venezuelae hyphae lacking SepH (Figure 2C). Notably, this contrasts with earlier results from a Streptomyces ΔdynAB mutant in which already assembled Z-rings become destabilized and disassemble, leading to failed septation or partially constricted hyphae (Schlimpert et al., 2017). Thus, SepH is clearly important for the establishment of Z-rings. We further found that apart from the irregular spacing, Z-rings assembled in the absence of SepH displayed similar dynamics and architecture to Z-rings in sporulating WT hyphae (Figure 2E and F). One possible explanation could be that FtsZ molecules that fail to establish a Z-ring are free to diffuse and to interact with neighboring Z-rings, thereby allowing the WT-like assembly of the remaining Z-rings and compensating for the lack of SepH. In addition, Streptomyces undergo a second, distinct mode of division during vegetative growth which leads to the synthesis of cross-walls. Our live-cell imaging studies revealed that SepH is required not only for sporulation-specific cell division but also for vegetative cross-wall formation (Figure 2G). The formation of cross-walls is poorly understood and although the synthesis of cross-walls depends on FtsZ, other core cell division proteins such as DivIC, FtsI, FtsL, and FtsW are not absolutely required (McCormick, 2009; Cantlay et al., 2021). We found that deleting sepH significantly reduced the number of cross-walls in vegetative hyphae. The importance of SepH for FtsZ-mediated cell division during vegetative growth was further supported by the observation that sepH-deficient hyphae were prone to extensive cell lysis due to reduced hyphal compartmentalization. This is in line with work by Santos-Beneit et al. demonstrating that cross-walls protect the mycelium from large scale cell rupture caused by mechanical or enzymatical stress (Santos-Beneit et al., 2017). Thus, despite the different morphological outcomes of the two types of cell division that occur during the Streptomyces life cycle, both require SepH for efficient and regular Z-ring formation.
 
@@ -123,7 +247,304 @@ In summary, we propose that SepH functions to promote FtsZ polymerization and in
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Streptomyces venezuelae)</td>
+      <td>sepH</td>
+      <td>StrepDB</td>
+      <td>vnz_27360</td>
+      <td>http://strepdb.streptomyces.org.uk/</td>
+    </tr>
+    <tr>
+      <td>Gene (S. venezuelae)</td>
+      <td>ftsZ</td>
+      <td>StrepDB</td>
+      <td>vnz_08520</td>
+      <td>http://strepdb.streptomyces.org.uk/</td>
+    </tr>
+    <tr>
+      <td>Gene (Mycobacterium smegmatis mc2 155)</td>
+      <td>sepHMs</td>
+      <td>Mycobrowser</td>
+      <td>msmeg_5685</td>
+      <td>https://mycobrowser.epfl.ch/</td>
+    </tr>
+    <tr>
+      <td>Gene (M. smegmatis mc2 155)</td>
+      <td>ftsZMs</td>
+      <td>Mycobrowser</td>
+      <td>msmeg_4222</td>
+      <td>https://mycobrowser.epfl.ch/</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. venezuelae)</td>
+      <td>WT</td>
+      <td>NZ_CP018074.1</td>
+      <td>NRRL B-65442</td>
+      <td>Wild type</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. venezuelae)</td>
+      <td>ΔsepH::apr</td>
+      <td>This paper</td>
+      <td>SV56</td>
+      <td>Chromosomal sepH locus was replaced by apr-oriT cassette amplified with primers mb118/mb119 and then transduced into WT using ΦSV1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SepH (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>Cambridge Research Biochemicals</td>
+      <td>Automated Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FtsZ (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>Cambridge Research Biochemicals</td>
+      <td>Automated Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>SAB4301138-100UL</td>
+      <td>Automated Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTB146 (plasmid)</td>
+      <td>doi:10.1038/emboj.2008.264</td>
+      <td></td>
+      <td>Plasmid for heterologous protein production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-21b (plasmid)</td>
+      <td>Novagen</td>
+      <td>69741</td>
+      <td>Plasmid for heterologous protein production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SepH (pFRL39, plasmid)</td>
+      <td>This paper</td>
+      <td>sepH in pTB146</td>
+      <td>Purification of SepH</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FtsZ, (pSS287, plasmid)</td>
+      <td>This paper</td>
+      <td>ftsZ in pTB146</td>
+      <td>Purification of FtsZ</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FtsZMs(pSS560, plasmid)</td>
+      <td>This paper</td>
+      <td>ftsZMs in pTB146</td>
+      <td>Purification of FtsZMs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SepHMs(pSS561, plasmid)</td>
+      <td>This paper</td>
+      <td>sepHMs in pET21b</td>
+      <td>Purification of SepHMs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mb118</td>
+      <td>This paper</td>
+      <td>Redirect PCR primer</td>
+      <td>CACGTGACGTCGGCAGGCACCACCCGGGAGGTCCCCATGATTCCGGGGATCCGTCGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mb119</td>
+      <td>This paper</td>
+      <td>Redirect PCR primer</td>
+      <td>AGCCGCGGAACCGGCGGACCGCCACGGCTCCTGCCGTCATGTAGGCTGGAGCTGCTTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>12–230 KDa Wes separation module</td>
+      <td>Bio-Techne</td>
+      <td>SM-W004</td>
+      <td>Plate and capillaries for Automated Western blot</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>WES anti-rabbit detection module</td>
+      <td>Bio-Techne</td>
+      <td>DM-001</td>
+      <td>Secondary antibody, luminol and reagents for Automated Western blot</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Frozen-EZ Yeast Transformation II Kit</td>
+      <td>Cambridge Bioscience</td>
+      <td>T2001</td>
+      <td>Yeast two-hybrid analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pi ColorLock Kit</td>
+      <td>Expedeon</td>
+      <td>303–0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellASIC ONIX B04A-03 Microfluidic Bacteria Plate</td>
+      <td>Millipore</td>
+      <td>B04A-03-5PK</td>
+      <td>Time-lapse microscopy</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Jena Bioscience</td>
+      <td>NU-1012</td>
+      <td>GTPase assay, DLS, TEM, Co- sedimentation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDP</td>
+      <td>Sigma Aldrich</td>
+      <td>G7127-10MG</td>
+      <td>DLS, TEM, Co- sedimentation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GMPCPP (GpCpp)</td>
+      <td>Jena Bioscience</td>
+      <td>NU-405S</td>
+      <td>DLS, TEM, Co- sedimentation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WGA (Wheat Germ Agglutinin), Alexa Fluor 488 Conjugate</td>
+      <td>Molecular Probes</td>
+      <td>W11261</td>
+      <td>Cell wall staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-AAD (7-Aminoactinomycin D)</td>
+      <td>Molecular Probes</td>
+      <td>A1310</td>
+      <td>DNA staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HADA (3-[[(7-Hydroxy-2-oxo-2H-1-benzopyran-3-yl) carbonyl]amino]-D-alanine hydrochloride)</td>
+      <td>Other</td>
+      <td></td>
+      <td>Cell wall staining; Gift from M. Thanbichler: synthesized after doi:10.1038/nprot.2014.197</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Open-source software package</td>
+      <td></td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZenBlue 2012</td>
+      <td>Zeiss</td>
+      <td>Version 1.120</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Compass for SW</td>
+      <td>Bio-Techne</td>
+      <td>Version 4.0</td>
+      <td>WES</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Version 9.0</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLUSTALX</td>
+      <td>http://www.clustal.org/clustal2/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>https://mafft.cbrc.jp/alignment/software/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE</td>
+      <td>https://www.ebi.ac.uk/Tools/msa/muscle/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CD-HIT</td>
+      <td>http://weizhongli-lab.org/cd-hit/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TRIM-AL</td>
+      <td>http://trimal.cgenomics.org/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHYML</td>
+      <td>http://www.atgc-montpellier.fr/phyml/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTOL</td>
+      <td>https://itol.embl.de/</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WebLogo3</td>
+      <td>http://weblogo.threeplusone.com/</td>
+      <td></td>
+      <td>Sequence logo</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 Bacterial strains are listed in Supplementary file 1 (Table 1). E. coli strains were grown in LB or on LB agar at 37°C supplemented with the following antibiotics when necessary: 100 µg mL−1 carbenicillin, 50 µg mL−1 kanamycin, 25 µg mL−1 hygromycin, 50 µg mL−1 apramycin, or 25 µg mL−1 chloramphenicol.
 
@@ -131,11 +552,11 @@ Streptomyces venezuelae was grown in maltose-yeast extract-malt extract medium (
 
 Plasmids and oligonucleotides used to generate or to verify strains and plasmids are listed in Supplementary file 1, Tables 2 and 3, respectively.
 
-## Construction and complementation of a sepH mutant in S. venezuelae
+### Construction and complementation of a sepH mutant in S. venezuelae
 
 Using ‘Redirect’ PCR targeting (Gust et al., 2004; Gust et al., 2003), the sepH mutant was generated in which the central (1029 bp) coding region was replaced with a single apramycin resistance cassette. A cosmid library that covers >98% of the S. venezuelae genome (M.J. Bibb and M.J. Buttner, unpublished) is fully documented at http://strepdb.streptomyces.org.uk/. Cosmid Sv-3-B02 was introduced into E. coli BW25113 containing pIJ790 and the sepH gene (vnz_27360) was replaced with the apr-oriT cassette amplified from pIJ773 using the primer pair mb118 and mb119. The resulting disrupted cosmid was confirmed by PCR analysis using the flanking primers mb144 and mb145 and introduced into S. venezuelae by conjugation via E. coli ET12567/pUZ8002 (Paget et al., 1999). Double cross-over strains (AprR, KanS) were confirmed by PCR using primer mb144 and mb145. To avoid any unwanted genetic changes following PCR-targeting and homologous recombination, the ΔsepH::apr locus was transduced back into WT S. venezuelae using the transducing phage SV1 (Stuttard, 1982) as described by Tschowri et al., 2014. A representative transductant (AprR) was designated SV56. For complementation, pMB557 was introduced into the sepH mutant by conjugation.
 
-## Light microscopy and kymograph analysis
+### Light microscopy and kymograph analysis
 
 For imaging protein localization in S. venezuelae, cells were grown in MYM medium for 14–18 hr and a 2 µL sample of the culture was spotted onto a 1% agarose pad. Streptomyces hyphae were visualized using a Zeiss Axio Observer Z.1 inverted epifluorescence microscope fitted with a Zeiss Colibri 7 LED light source and a Zeiss Alpha Plan-Apo 100×/1.46 Oil DIC M27 objective. Still images and time-lapse images series were collected using Zen Blue (Zeiss) and analyzed using Fiji (Schindelin et al., 2012).
 
@@ -147,86 +568,86 @@ To visualize fluorescence intensities of Z-rings over time, time-lapse series we
 
 To determine the width of Z-rings, an average fluorescence intensity projection for each of the time-series was first generated in Fiji. The corresponding fluorescence intensity trace along a segmented line (five pt) manually drawn along the hyphal midline was then extracted, and the obtained data was further processed in R. For each strain, five independent time-lapse series were analyzed. Peaks (which correspond to potential Z-rings) were identified using a custom R script and further filtered to remove false-positive peaks with a fluorescence intensity below 100. Z-ring width was calculated by measuring the full width at half maximum of the Z-ring peak in the fluorescence intensity profiles. Z-rings widths were further analyzed and plotted using Graphpad Prism.
 
-## Spore length measurements
+### Spore length measurements
 
 Lawns of the respective S. venezuelae strains were generated by spreading a single colony onto MYM agar. The plates were incubated for 3–4 days at 30°C until sporulation was completed. Spores were washed off the agar using 20% glycerol and a sterile cotton pad through which spores were harvested using a sterile syringe. A small aliquot of the spore suspension was mounted on a microscope slide on top of a thin agarose pad (1% agarose dissolved in water) and imaged by phase-contrast microscopy using a Zeiss Axio Observer Z.1 inverted microscope and a Zeiss Alpha Plan-Apo 100×/1.46 Oil DIC M27 objective. Spore lengths were determined using the software Fiji (Schindelin et al., 2012) except for spore length measurements in Figure 7B in which case the MicrobeJ plug-in for Fiji was used (Ducret et al., 2016).
 
-## Staining of DNA and peptidoglycan
+### Staining of DNA and peptidoglycan
 
 S. venezuelae WT and SV56 cells were grown in confluent patches on MYM agar for 1–2 days. Glass coverslips were gently pressed onto the cell material and removed. Coverslips were fixed with 100% methanol for 1 min. Sterile H2O was used to wash the coverslips. Spore chains attached to the coverslips were incubated with the DNA-stain 7-AAD (7-aminoactinomycin D, 10 μg mL−1) and with Wheat Germ Agglutinin (WGA), Alexa Fluor 488 Conjugate (50 μg mL−1) to visualize cell wall material. The samples were incubated for 30 min in the dark, after which the dyes were removed with sterile H2O. The coverslips were then mounted onto agarose pads and visualized by fluorescence microscopy.
 
 For HADA (7-hydroxycoumarin 3-carboxylic acid-amino-D-alanine) labeling (Kuru et al., 2015), spores were loaded into BA04 microfluidic plates (CellASIC ONIX). Trapped spores were continuously supplied with MYM containing 0.25 mM HADA at 2 psi and 30°C. Following spore germination, hyphae were allowed to grow by perfusing MYM-HADA at 2 psi for 4–5 hr. Prior to image acquisition MYM-HADA was replaced with MYM and hyphae were visualized using fluorescence microscopy as described above. Images were collected using Zen Blue (Zeiss) and analyzed using Fiji (Schindelin et al., 2012).
 
-## Cryo-scanning electron microscopy
+### Cryo-scanning electron microscopy
 
 S. venezuelae colonies were mounted on the surface of an aluminum stub with Tissue Tek OCT (optimal cutting temperature compound) (Agar Scientific Ltd, Essex, UK), plunged into liquid nitrogen slush at approximately −210°C to cryo-preserve the material, and transferred to the cryo-stage of an Alto 2500 cryotransfer system (Gatan, Oxford, England) attached to either a FEI NanoSEM 450 field emission gun scanning electron microscope (FEI Ltd, Eindhoven, The Netherlands) or a Zeiss Supra 55 field emission gun scanning electron microscope (Zeiss UK Ltd, Cambridge). The surface frost was sublimated at −95°C for 3½ min before the sample was sputter coated with platinum for 2 min at 10 mA at below −110°C. Finally, the sample was moved onto the cryo-stage in the main chamber of the microscope, held at approximately −130°C, and viewed at 3 kV.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 FtsZ filament morphology was visualized by negative staining and TEM. For FtsZ from S. venezuelae, 3.5 µM FtsZ and/or 0.6 µM SepH was prepared in buffer P (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2). All the solutions were previously filtered using 0.1 µm centrifugal filter units (Millipore). Reactions were pre-warmed at 30°C for 10 min, started by adding 2 mM GTP, and incubated at 30°C for an additional 15 min. 1 or 3.5 μL of each reaction was placed on a carbon-filmed, 400 mesh copper grid (EM Resolutions, Sheffield, UK) which had been glow discharged for 20 s at 10 mA in an Ace 200 (Leica Microsystems (UK) Ltd, Milton Keynes, UK). After 60 s, excess sample was wicked away using Whatman No. 1 filter paper and grids were negatively stained using 2% (w/v) uranyl acetate in water. Grids were imaged using a Talos F200C transmission electron microscope (ThermoFisher Scientific, Eindhoven, The Netherlands) operated at 200 kV, equipped with a 4 k OneView CMOS detector (Gatan UK, Abingdon, Oxfordshire, UK).
 
 For M. smegmatis proteins, 6 µM FtsZMs was prepared in modified buffer P (50 mM HEPES pH 6.8, 100 mM KCl, 5 mM MgCl2) in the absence or presence of SepHMs at 3 µM or 6 µM. Reactions were pre-warmed to 37°C for 10 min, and then started by adding 2 mM GTP and incubated for further 20 min. Samples were stained and imaged as described above.
 
-## Automated Western blot analysis
+### Automated Western blot analysis
 
 For analysis of protein levels, we used the automated capillary-based immunoassay platform WES (ProteinSimple, San Jose, CA). To prepare proteins samples, 2 mL aliquots of liquid MYM cultures were sampled at the desired time points. Mycelium was pelleted by centrifugation and washed with PBS. Pellets were snap-frozen in liquid nitrogen and stored at −80°C until use. Mycelial pellets were thawed on ice and resuspended in 0.4 mL ice-cold lysis buffer (20 mM Tris pH 8.0, 5 mM EDTA, 1× EDTA-free protease inhibitors [Roche]) and sonicated (5 × 15 s on/15 s off at 5-micron amplitude). Cell lysates were then cleared by centrifugation at 16,000× g for 20 min at 4°C. Total protein concentration was determined using Bradford reagent (Biorad) and 1 µg of total protein was then loaded in technical triplicate into a microplate (ProteinSimple). For the detection of SepH, FtsZ or YPet-fusion proteins anti-SepH antibody (1:200), anti-FtsZ antibody (1:200) or anti-GFP antibody (1:200) was used. Data analysis and the generation of virtual Western blots were done using the Compass Software (Protein Simple, Version XZ).
 
-## Quantification of the cellular molar ratio of FtsZ to SepH
+### Quantification of the cellular molar ratio of FtsZ to SepH
 
 Serial dilutions of purified SepH (1 × 10−3 to 7.8 × 10−6 mg mL−1) and FtsZ (5 × 10−4 to 3.9 × 10−6 mg mL−1) were made using 1× polymerization buffer (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2) and loaded in technical replicates onto the WES automated blotting system, according to the manufacturer’s instructions (ProteinSimple, San Jose, CA). Lysates from sporulating cultures of WT S. venezuelae were processed as described above. One microgram of total protein of biological triplicates was loaded into a microplate (ProteinSimple) and FtsZ and SepH were detected with anti-FtsZ anti-SepH antibodies (diluted to 1:200). From the output of the WES, standards for recombinant FtsZ and SepH were quantified and fit with a linear function to create a calibration curve. Using these calibration curves, the signals generated by FtsZ and SepH from the cell lysates were used to calculate the FtsZ:SepH molar ratio.
 
-## Yeast two-hybrid analysis
+### Yeast two-hybrid analysis
 
 The yeast two-hybrid assays were performed in strain Saccharomyces cerevisiae Y2HGold (Takara Bio USA). Combination of the two plasmids encoding the desired fusion proteins were transformed into Y2HGold cells using Frozen-EZ Yeast Transformation II Kit (Zymo Research). Selection for growth was carried out on selective drop-out plates lacking leucine and tryptophan (SD-Leu-Trp) and single colonies were inoculated into liquid SD-Leu -Trp medium and grown overnight at 30°C. Saturated cultures were diluted 1:4 in water and 5 µL of each dilution was then spotted on SD-Leu-Trp and SD-Leu -Trp -Ade -His (additionally lacking adenine and histidine) in order to test for growth and interaction, respectively. Plates were incubated for 4–5 days at 30°C and scanned. Each interaction was tested in biological triplicate experiments.
 
-## Protein expression and purification
+### Protein expression and purification
 
 To purify untagged SepH, SepH variants and FtsZ from S. venezuelae and FtsZMS from M. smegmatis, E. coli Rossetta (DE3) was transformed with derivatives of the plasmid pTB146 to produce His6-SUMO-tagged protein fusions. Cells were grown at 37°C in LB medium containing 50 µg mL−1 carbenicillin, 25 µg mL−1 chloramphenicol, and 1% glucose overnight and then diluted 1/100 in fresh LB medium containing carbenicillin and chloramphenicol. To induce protein production, 0.5 mM IPTG was added to the culture once cells reached an OD600 of 0.5. Cultures were incubated shaking at 30°C for 4 hr and then harvested by centrifugation. Cell pellets were resuspended in Tris-FtsZ buffer (50 mM Tris-HCl pH 8.0, 50 mM KCl, and 10% glycerol) and lysed by sonication for 10 cycles at 15-micron amplitude, 15 s ON, and 30 s OFF. Lysates were centrifuged at 26,000× g for 30 min at 4°C to remove cell debris. His6-SUMO-FtsZ, His6-SUMO-SepH, or His6-SUMO-FtsZMs were purified using an HisTrap column in ÄKTA pure (GE Healthcare) and eluted using an increasing concentration of imidazole. Fractions containing protein were pooled and dialyzed overnight at 4°C against Tris-FtsZ buffer containing 1 mM DTT and His6-Upl1 protease at a molar ration of 100:1. The cleaved His6-SUMO tag and His6-Upl1 protease were then removed by incubation with Ni-NTA affinity agarose beads. The flow-through containing untagged FtsZ, SepH, or FtsZMs was then concentrated and subjected to size exclusion chromatography on a HiLoad 16/600 Superdex 200 pg column (GE Healthcare) in Tris-FtsZ buffer. Peak protein fractions were pooled and dialyzed overnight against HEPES-FtsZ buffer (50 mM HEPES pH 7.2, 50 mM KCl, and 10% glycerol) and subsequently stored at −80°C until further use.
 
 To purify M. smegmatis SepHMs-His6 (SepHMs), E. coli Rossetta (DE3) carrying the plasmid pSS561 was induced for protein overexpression and cell lysis was carried out as described above. SepHMs-His6 was purified from lysates using an HisTrap column in ÄKTA pure (GE Healthcare) and eluted using an increasing concentration of imidazole. Fractions containing the protein were pooled and dialyzed overnight against HEPES-FtsZ buffer (50 mM HEPES pH 7.2, 50 mM KCl, and 10% glycerol) and stored at −80°C until use.
 
-## Antibody production
+### Antibody production
 
 To produce antibodies against FtsZ and SepH from Streptomyces, untagged FtsZ and SepH-His6 were overexpressed and purified as described above, and a total amount of 2 mg of purified protein was sent to Cambridge Research Biochemicals (UK) to be used to raise antibodies in rabbits.
 
-## Analytical gel filtration chromatography
+### Analytical gel filtration chromatography
 
 Purified SepH, SepH-NTD, SepH-CTD, or SepHG79P was prepared at 30 µM in buffer P (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2). A 500 µL sample was subjected to size exclusion chromatography on a Superose 12 10/300 GL column (GE Healthcare) in buffer P using an ÄKTA pure (GE Healthcare) at 0.25 mL min−1 constant flow. Gel filtration standards (Bio-Rad) included thyroglobulin (MW 670,000), γ-globuline (MW 158,000), ovalbumin (MW 44,000), myoglobin (MW 17,000), and vitamin B12 (MW 1,350). Standards were separated using the same conditions described above, and the retention volume of each of the proteins was plotted against Log MW. The standard curve was used to calculate the molecular weight of SepH using the retention volume previously obtained. The same procedure described above was carried out for SepHMs but using a modified buffer P (50 mM HEPES pH 6.8, 100 mM KCl, 5 mM MgCl2).
 
-## GTPase activity assay
+### GTPase activity assay
 
 FtsZ GTPase activity was monitored using the PiColorLock Gold kit (Expedeon), a malachite-green-based assay. SepH and FtsZ were diluted to the desired concentration in buffer P (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2). The protein solution was incubated for 10 min at 30°C and the reaction was started by adding 50 µM GTP. Samples were taken at 0, 2.5, 5, 7.5, and 10 min. Reactions were stopped by adding an equal volume of 0.6 M perchloric acid. Absorbance at 620 nm was measured and plotted using Microsoft Excel. GTPase activity was determined from the linear range of the curves (Wasserstrom et al., 2013). GTPase activity assays for M. smegmatis FtsZMs and SepHMs were performed as described above but using a modified buffer P (50 mM HEPES pH 6.8, 100 mM KCl, 5 mM MgCl2) and incubating the protein solutions at 37°C. Samples were taken at 0, 5, 10, 15, and 20 min and data was analyzed as described above.
 
 To determine the critical concentration, the GTPase activity was determined for several FtsZ concentrations (4.5, 3.5, 2.5, and 2 µM) in the absence or presence of 0.6 µM SepH. To accommodate for the number of samples and higher FtsZ concentrations, reactions volumes were reduced to accommodate measurements using 96-well plates and samples were taken every 1.5 min instead of 2.5 min as described above. Each reaction was performed in duplicate. A linear regression was calculated for the GTPase rate with and without SepH to determine the value of the X-intercept (the critical concentration).
 
-## Dynamic light scattering
+### Dynamic light scattering
 
 FtsZ assembly was monitored using a Wyatt Dynapro Titan Dynamic Light Scattering (DLS) instrument. All components of the reaction buffer were filtered using 0.1 µm centrifugal filter units (Millipore). S. venezuelae FtsZ (3.5 µM) was prepared in buffer P (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2) and SepH was added at the desired concentrations when required. 15 µL of the resulting protein solution was transferred to a quartz cuvette and equilibrated to 30°C for 5 min in the DLS instrument and the laser intensity adjusted until readings reached ~20,000 counts. Baseline readings were taken for 5 min, GTP (50 µM or 2 mM) was added, and light scatter readings were recorded for up to 25 min. The same protocol was followed in the case of GDP or GMPCCP. Data were visualized using Dynamics software (v6), transferred to an Excel file, and plotted using GraphPad Prism. M. smegmatis FtsZMs (6 µM) was prepared in modified buffer P (50 mM HEPES pH 6.8, 100 mM KCl, 5 mM MgCl2) in the presence or absence of SepHMs (3 µM). All DLS measurements with M. smegmatis proteins were performed at 37°C, baseline readings were first monitored for 5 min, followed by the addition of 2 mM GTP and the recording of the scatter profile for up to 35 min. Data was analyzed as described above.
 
-## CD spectroscopy
+### CD spectroscopy
 
 SepH or SepHG79P (3.5 µM) were dialyzed overnight against phosphate buffer pH 7.2 to dilute the sodium ions in preparation for CD analysis. Spectra were recorded in 1 nm steps on a Chirascan Plus spectrophotometer (Applied Photophysics) at 20°C in a 0.5 mm quartz cuvette (Hellma). Measurements were collected in triplicate, averaged, and background subtracted with matched buffer using the Chirascan software package. Data were exported to an Excel file and plotted using GraphPad Prism.
 
-## Sedimentation assay
+### Sedimentation assay
 
 FtsZ (3.5 µM) and/or SepH (0.6 µM) were prepared in buffer P (50 mM HEPES pH 7.2, 50 mM KCl, 5 mM MgCl2). Reactions were incubated at 30°C for 10 min and polymerization was started by adding GTP (2 mM) or GMPCCP (1 mM). Samples were incubated for an additional 15 min at 30°C and then pelleted by ultracentrifugation at 350,000× g for 15 min (high-speed), or at 25,000× g for 30 min (low-speed). Supernatant and pellet fractions were mixed with equivalent volumes of SDS sample buffer. Proteins were visualized by SDS-PAGE and Coomassie staining and protein bands were quantified using Fiji (Schindelin et al., 2012).
 
 For M. smegmatis proteins, FtsZMs (6 µM) and/or SepHMs (3 µM) were prepared in modified buffer P (50 mM HEPES pH 6.8, 100 mM KCl, 5 mM MgCl2). Reactions were incubated at 37°C for 10 min, started by adding 2 mM GTP final concentration, incubated for an additional 20 min followed by ultracentrifugation and SDS-PAGE analysis as described above.
 
-## Chromatin immunoprecipitation and deep-sequencing
+### Chromatin immunoprecipitation and deep-sequencing
 
 WT S. venezuelae and the ΔsepH mutant (SV56) were grown in four 30 mL volumes of MYM medium for 18 hr (sporulation). Cross-linking and immunoprecipitation were conducted as described by Bush et al., 2019 using the anti-SepH polyclonal antibody. Library construction and sequencing were performed by Genewiz (NJ, USA), using Illumina Hiseq (2 × 150 bp configuration, trimmed to 100 bp).
 
 Reads in the fastq files received from the sequencing contractor were aligned to the S. venezuelae genome (GenBank accession number CP018074) using the bowtie2 (2) software (version 2.2.9), which resulted in one SAM (.sam) file for each pair of fastq files (paired-end sequencing). For each SAM file, the depth command of samtools (version 1.8) was used to arrive at the depth of sequencing at each nucleotide position of the S. venezuelae chromosome (https://www.sanger.ac.uk/science/tools/samtools-bcftools-htslib). From the sequencing depths at each nucleotide position determined in 2, a local enrichment was calculated in a moving window of 30 nucleotides moving in steps of 15 nucleotides as (the mean depth at each nucleotide position in the 30-nt window) divided by (the mean depth at each nucleotide position in a 3000-nucleotide window cantered around the 30-nucleotide window). This results in an enrichment ratio value for every 15 nucleotides along the genome. The enrichment ratios thus calculated were stored in files in the bedgraph format and were used for viewing in IGB. After ensuring good correlation between the replicates (Spearman correlation coefficient >0.95) the mean of the replicates was calculated and used in further calculations. Enrichment in the control was subtracted from the enrichment in the WT files. Significance of enrichment was calculated assuming normal distribution of the control-subtracted enrichment values. The SepH ChIP-seq data has been deposited at the MIAME-compliant ArrayExpress database (https://www.ebi.ac.uk/arrayexpress/) under accession number E-MTAB-9064.
 
-## DNase I footprinting
+### DNase I footprinting
 
 DNase I footprinting experiments were carried out essentially as previously described (Bush et al., 2013) and according to the manufacturer’s instructions (Sure Track footprinting kit, Amersham Pharmacia Biotech). DNA fragments from the promoter regions of vnz35870, vnz30075, and vnz07520 were amplified by PCR from the PL1_M15, PL1_G3 and PL1_E16 cosmids, using the primer pairs mb1136/mb1129, mb1138/mb1139, and mb1140/mb1133, respectively. Oligonucleotides were first end-labeled with T4 polynucleotide kinase (Amersham Pharmacia Biotech) and [γ-32P]-ATP as described by the manufacturer. Binding reactions were carried out at room temperature for 30 min in 1× Polymerization Buffer (50 mM HEPES/KOH pH 7.2, 50 mM KCl, 5 mM MgCl2) in a total volume of 40 µL, and in the presence of approximately 50,000–75,000 cpm of the DNA probe. Following incubation, 10 μL containing 3 units of DNase I (Promega) and 1 μL of CaCl2 was added, mixed, and incubated for 1 min. The reaction was stopped by addition of 140 μL stop solution [192 mM NaAc, 32 mM EDTA, 0.14% SDS, 70 μg yeast-tRNA (Invitrogen)]. Samples were then phenol–chloroform extracted prior to ethanol (96%) precipitation. The pellet was vacuum-dried and resuspended in 5 μL of formamide loading dye (95% formamide, 20 mM EDTA pH 8.0, 0.1% bromophenol blue, 0.1% xylene cyanol FF). 2.5 μL of each sample was loaded on a 6% sequencing gel, next to a G+A ladder, prepared according to the Sure Track footprinting kit (Amersham Pharmacia Biotech). The gel was then vacuum-dried before imaging using image plates, visualized using the FUJIFILM FLA-7000.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 DNA sequences were amplified by PCR using the primer pairs mb1136/mb1129, mb1124/mb1125, and mb1126/mb1127 and the templates PL1_M15, SV-4-G01, and pCOLADuet-1 respectively. This generated probes to test for potential binding of SepH to the promoter region of vnz35870, a sequence internal to vnz08520 (ftsZ) and a low-GC sequence from the vector kanR-gene (aphII). Binding reactions were carried out at room temperature for 30 min in 1× polymerization buffer (50 mM HEPES/KOH pH 7.2, 50 mM KCl, 5 mM MgCl2) in a total volume of 20 µL, and in the presence of 50 ng of the DNA probe. Following the incubation step, samples were run on pre-cast Mini-PROTEAN TBE gels (Bio-Rad 456–5014) in 0.5× TBE for 60–90 min alongside 100 bp ladder (NEB). Gels were stained for 30 min in ethidium bromide solution before imaging under UV-light.
 
-## Phylogenetics analysis
+### Phylogenetics analysis
 
 The SepH sequence from Streptomyces venezuelae (vnz_27360) was used to BLAST against 3962 representative bacterial species (Altschul et al., 1997; Altschul et al., 1990; Camacho et al., 2009). After reciprocal BLAST analysis and quality filtering, 626 actinobacterial SepH homologs were identified. The 626 sequences were clustered to remove redundancies using CD-HIT at 90% similarity and then clustered again at 75% similarity to reduce the likelihood of misclustering (Li and Godzik, 2006). These representative homologs (360 sequences) were used to create three separate sequence alignments using CLUSTALX (Larkin et al., 2007), MUSCLE (Edgar, 2004a; Edgar, 2004b), and MAFFT, using the l-ins-I option (Katoh and Standley, 2014). TrimAl was used to compare the alignments for consistency, at which point the most consistent (CLUSTAL) was used and gaps that were present in 80% or more of sequences were trimmed out (Capella-Gutiérrez et al., 2009). This alignment was used to generate a tree in PHYML (Guindon et al., 2010) using the model, LG +G, as selected by SMS (Lefort et al., 2017). The tree was visualized using iTOL, the Interactive Tree of Life (Letunic and Bork, 2019). Additionally, the alignment was used to generate a logo using WebLogo3 (Crooks et al., 2004).

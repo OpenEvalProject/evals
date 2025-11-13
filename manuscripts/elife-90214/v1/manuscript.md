@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 UK Dementia Research Institute at Imperial College London London United Kingdom
-2. https://ror.org/041kmwe10 Department of Brain Sciences, Imperial College London London United Kingdom
+1. UK Dementia Research Institute at Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Department of Brain Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -37,9 +37,374 @@ Our questions of Mathys et al., 2019 focus around their data processing and thei
 
 With regards to data quality, it is worth noting that over 99% of nuclei had less than 200 genes expressed (Table 1). While this QC step was not unique to our reprocessing, the authors made the same exclusion in their analysis (Mathys et al., 2019), it highlights the relatively low quality of the data which may be attributable to the early stage of snRNA-seq technology of the time. For example, Brase et al.’s recent study of snRNA-seq of autosomal-dominant AD (Brase et al., 2023) used a more stringent cut-off for the minimum number of expressed genes and still kept 27% (122 times more) of the assayed cells after all QC steps. Moreover, the authors discussed the high percentages of mitochondrial reads in their data. The differences in approaches to filtering based on the proportion mitochondrial reads accounts for the notable discrepancy in the number of nuclei after QC between our approach and the authors’. Our approach used a 10% cut-off for the proportion of mitochondrial reads in a nuclei, as set out in Amezquita et al.’s best-practice guidelines (Amezquita et al., 2020), which is less stringent than Seurat’s guidelines (5%) (Hao et al., 2021) or that from Heumos et al., 2023 (8% from a median absolute deviations [MAD]-based cut-off selection). Conversely, the authors filtered out high mitochondrial read nuclei based on clusters from their t-SNE projection of the data (Mathys et al., 2019). Even at our lenient cut-off, over 16,000 nuclei that were removed in our QC pipeline were kept by the authors’ Figure 2, explaining the discrepancy in the number of nuclei after QC. Based on Figure 2, it is clear that the authors’ approach was ineffective at removing nuclei with high proportions of mitochondrial reads which is indicative of cell death (Heumos et al., 2023; Ilicic et al., 2016) – both excitatory and inhibitory nuclei with higher than 75% reads from the mitochondria were kept in the final processed dataset by the authors. We have made the data from our alternative processing approach publicly available (through Synapse: https://doi.org/10.7303/syn51758062.1) so that researchers can utilise this resource free of low-quality nuclei.
 
+**Table 1.**
+ Overview of the aggregated number of cells across samples removed at each step of the quality control (QC) as part of scFlow.Note that cells can fail QC for more than one check, so only the total failed and total passed rows will sum to 100%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>QC steps</th>
+      <th>Total cells</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-QC</td>
+      <td>35,389,440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total failed</td>
+      <td>35,337,874</td>
+      <td>99.85</td>
+    </tr>
+    <tr>
+      <td>Minimum library size (n &lt; 200)</td>
+      <td>35,307,281</td>
+      <td>99.77</td>
+    </tr>
+    <tr>
+      <td>Maximum library size</td>
+      <td>4742</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Minimum expressed genes (n &lt; 200)</td>
+      <td>35,312,434</td>
+      <td>99.78</td>
+    </tr>
+    <tr>
+      <td>Maximum library size/expressed genes (MAD&gt; 4)</td>
+      <td>2149</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Proportion of mitochondrial genes (≥ 0.1)</td>
+      <td>1,097,738</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <td>Multiplets (pK = 0.0054)</td>
+      <td>581</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Total passed</td>
+      <td>51,566</td>
+      <td>0.15</td>
+    </tr>
+  </tbody>
+</table>
+
+_MAD, median absolute deviation._
+
 Our second question of Mathys et al., 2019 is their DE approach. The authors conducted a DE analysis between the controls and the patients with AD pathology, concentrating on six neuronal and glial cell types; excitatory neurons, inhibitory neurons, astrocytes, microglia, oligodendrocytes, and oligodendrocyte precursor cells, derived from the Allen Brain Atlas (Tasic et al., 2018). They performed downstream analysis on their identified differentially expressed genes (DEGs) and investigated some of the most compelling genes in more detail. Therefore, all findings put forward by their paper were based upon the validity of their DE approach. However, for this approach, the authors conducted a two-part, cell- and patient-level analysis. The cell-level analysis took each cell as an independent replicate, and the results of which were compared for consistency in directionality and rank of their DEGs against their patient-level analysis, a Poisson mixed model. The authors identified 1031 DEGs using this combinatorial approach – DEGs requiring a false discovery rate (FDR) < 0.01 in the cell-level and an FDR < 0.05 in the patient-level analysis. It is important to note that this cell-level DE approach, also known as pseudoreplication, overestimates the confidence in DEGs due to the statistical dependence between cells from the same patient not being considered (Murphy and Skene, 2022; Squair et al., 2021; Zimmerman et al., 2021; Lazic, 2010). When we inspect all DEGs identified at an FDR of 0.05 from the authors’ cell-level analysis, this number increases to 14,274. Pseudobulk DE analysis has recently been proven to give optimal performance compared to both mixed models and pseudoreplication approaches (Murphy and Skene, 2022; Squair et al., 2021; Crowell et al., 2020; Soneson and Robinson, 2018). It aggregates counts to individuals, thus accounting for the dependence between an individual’s cells.
 
 Here, to compare the effect of the different DE approaches in isolation, we apply a pseudobulk DE approach (Chen et al., 2016) to the authors’ original processed data. We found 26 unique DEGs when considering the six cell types used by the authors (Table 2). This was 549 times fewer DEGs than that reported originally at an FDR of 0.05. When we compare these DEGs, we can see that the absolute log2 fold change (LFC) of our DEGs is 15 times larger than the authors’; median LFC of 2.34 and 0.16, despite the authors’ DEGs having an FDR score 8000 times smaller; median FDR of 2.89 × 10–7and 0.002 (Figure 1a and b). Although we examined a high correlation in the genes’ fold change values across our pseudobulk analysis and the authors’ pseudoreplication analysis (Pearson R of 0.87 for an adjusted p-value of 0.05, Table 3), the p-values and resulting DEGs vary considerably. The correspondence in fold change values is expected given the approaches are applied to the same dataset, whereas the probabilities, which pertain to the likelihood that a gene’s expressional changes is related to the case/control differences in AD, importantly do not align. We can show that this stark contrast is just an artefact of the authors taking cells as independent replicates and thus artificially inflating confidence by considering the Pearson correlation between the number of DEGs found and the cell counts (Figure 1c–e). There is a near perfect, positive correlation between DEG and cell counts for the authors’ pseudoreplication analysis (Figure 1c) and for the 1031 genes from the authors’ combinatorial approach (Figure 1d) which is not present in our pseudobulk reanalysis (Figure 1e).
+
+**Table 2.**
+ The differentially expressed genes from our reanalysis using the same processed data the authors used and pseudobulk differential expression approach.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell</th>
+      <th>logFC</th>
+      <th>logCPM</th>
+      <th>LR</th>
+      <th>p-Value</th>
+      <th>adj_pval</th>
+      <th>HGNC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mic</td>
+      <td>2.70178913</td>
+      <td>6.99794619</td>
+      <td>26.1418415</td>
+      <td>3.17E-07</td>
+      <td>0.00061349</td>
+      <td>ACRBP</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>1.48930071</td>
+      <td>8.06240877</td>
+      <td>28.6361217</td>
+      <td>8.73E-08</td>
+      <td>0.00019303</td>
+      <td>APOC1</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>1.09327669</td>
+      <td>8.64199769</td>
+      <td>21.5323014</td>
+      <td>3.48E-06</td>
+      <td>0.00336416</td>
+      <td>CD81</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.4157681</td>
+      <td>7.93884875</td>
+      <td>23.9955467</td>
+      <td>9.66E-07</td>
+      <td>0.00135806</td>
+      <td>CD83</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>3.3782727</td>
+      <td>6.86183548</td>
+      <td>32.0804401</td>
+      <td>1.48E-08</td>
+      <td>4.58E-05</td>
+      <td>CLEC1B</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.84072452</td>
+      <td>6.74370542</td>
+      <td>21.7745509</td>
+      <td>3.07E-06</td>
+      <td>0.00316269</td>
+      <td>EGF</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.55769658</td>
+      <td>6.78345087</td>
+      <td>18.0468872</td>
+      <td>2.16E-05</td>
+      <td>0.01699007</td>
+      <td>ELOVL7</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.2056098</td>
+      <td>8.33197499</td>
+      <td>22.6644045</td>
+      <td>1.93E-06</td>
+      <td>0.00229576</td>
+      <td>IFI44L</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.6616069</td>
+      <td>7.15366639</td>
+      <td>16.4801274</td>
+      <td>4.92E-05</td>
+      <td>0.03306938</td>
+      <td>IFI6</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.9809425</td>
+      <td>7.00396289</td>
+      <td>17.9180823</td>
+      <td>2.31E-05</td>
+      <td>0.01699007</td>
+      <td>IFIT3</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.76502672</td>
+      <td>6.72978805</td>
+      <td>20.6543637</td>
+      <td>5.50E-06</td>
+      <td>0.00472825</td>
+      <td>ITGA2B</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>1.90963403</td>
+      <td>7.01552233</td>
+      <td>16.3200189</td>
+      <td>5.35E-05</td>
+      <td>0.03448474</td>
+      <td>MAP1A</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.8194508</td>
+      <td>8.26208887</td>
+      <td>45.2221008</td>
+      <td>1.76E-11</td>
+      <td>1.36E-07</td>
+      <td>NAMPT</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.0945044</td>
+      <td>7.11048456</td>
+      <td>20.8068524</td>
+      <td>5.08E-06</td>
+      <td>0.00462318</td>
+      <td>NEXN</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–2.3789762</td>
+      <td>6.93896985</td>
+      <td>22.3912441</td>
+      <td>2.22E-06</td>
+      <td>0.00245752</td>
+      <td>NR4A2</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–2.8553462</td>
+      <td>6.73713862</td>
+      <td>22.8029868</td>
+      <td>1.79E-06</td>
+      <td>0.00229576</td>
+      <td>NR4A3</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>3.32873829</td>
+      <td>6.84942721</td>
+      <td>30.955327</td>
+      <td>2.64E-08</td>
+      <td>6.81E-05</td>
+      <td>PF4</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>3.4213986</td>
+      <td>6.87326383</td>
+      <td>33.2621657</td>
+      <td>8.05E-09</td>
+      <td>3.11E-05</td>
+      <td>PKHD1L1</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>3.64525677</td>
+      <td>6.93422174</td>
+      <td>38.661272</td>
+      <td>5.04E-10</td>
+      <td>2.60E-06</td>
+      <td>PPBP</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.30482679</td>
+      <td>8.10570443</td>
+      <td>60.7932697</td>
+      <td>6.34E-15</td>
+      <td>9.81E-11</td>
+      <td>PTPRG</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.0382468</td>
+      <td>8.11450266</td>
+      <td>15.5968273</td>
+      <td>7.84E-05</td>
+      <td>0.04850839</td>
+      <td>RORA</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.54636649</td>
+      <td>6.69202981</td>
+      <td>17.2532606</td>
+      <td>3.27E-05</td>
+      <td>0.02300507</td>
+      <td>SDPR</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–0.9629617</td>
+      <td>8.8434334</td>
+      <td>17.9319131</td>
+      <td>2.29E-05</td>
+      <td>0.01699007</td>
+      <td>SYTL3</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>–1.4215374</td>
+      <td>7.99629806</td>
+      <td>25.4736272</td>
+      <td>4.48E-07</td>
+      <td>0.00077092</td>
+      <td>TMEM2</td>
+    </tr>
+    <tr>
+      <td>Mic</td>
+      <td>2.98901596</td>
+      <td>6.77276641</td>
+      <td>24.2100819</td>
+      <td>8.64E-07</td>
+      <td>0.00133637</td>
+      <td>TUBB1</td>
+    </tr>
+    <tr>
+      <td>Opc</td>
+      <td>–2.8274718</td>
+      <td>5.03371292</td>
+      <td>22.1334581</td>
+      <td>2.54E-06</td>
+      <td>0.04176231</td>
+      <td>EGR1</td>
+    </tr>
+  </tbody>
+</table>
+
+_CPM - Counts per Million, LR - fold change ratio, HGNC - HUGO Gene Nomenclature Committee._
+
+**Table 3.**
+ Pearson correlation between our pseudobulk differential expression analysis and the authors’ pseudoreplication analysis on all genes found to be significant at different adjusted p-value cut-offs from the authors’ pseudoreplication analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pseudoreplication adjusted p-value cut-off</th>
+      <th>Number of genes compared</th>
+      <th>Pearson correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.01</td>
+      <td>20,152</td>
+      <td>0.8646269</td>
+    </tr>
+    <tr>
+      <td>0.05</td>
+      <td>23,903</td>
+      <td>0.8708275</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>26,382</td>
+      <td>0.8721126</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>32,117</td>
+      <td>0.8764692</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>42,022</td>
+      <td>0.8751554</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>84,467</td>
+      <td>0.826248</td>
+    </tr>
+  </tbody>
+</table>
 
 A further point which questions the authors’ DE approach is that they identified the vast majority of DEGs in the more abundant, neuronal cell types (Mathys et al., 2019). However, an increase in the number of cells is not the same as an increase in sample size since these cells are not independent from one another – they come from the same sample. Therefore, an increase in the number of cells should not necessarily result in an increase in the number of DEGs, whereas an increase in the number of samples would. This point is the major issue with pseudoreplication approaches which overestimate confidence when performing DE due to the statistical dependence between cells from the same patient not being considered (Squair et al., 2021; Lazic, 2010). In our opinion, it makes more sense to identify the majority of large effect size DEGs in microglia which recent work has established is the primary cell type by which the genetic risk for AD acts (Skene and Grant, 2016; McQuade and Blurton-Jones, 2019). This is what we found with our pseudobulk DE approach – 96% of all DEGs were in microglia (Table 2), whereas only 3% of the authors’ DEGs were in microglia.
 
@@ -47,26 +412,207 @@ Although it has been proven that pseudoreplication approaches result in false po
 
 Up to this point, to compare the effect of the DE approaches in isolation, we analysed the same processed data from the authors as opposed to our reprocessed data. We also performed pseudobulk DE on our reprocessed data and found 16 unique DEGs (Table 4). It is worth noting that the fold change correlation between our two DE analyses (reprocessed data vs authors’ processed data) on the identified DEGs is only moderate (Pearson R of 0.57) and is lower than that of the correlation between pseudoreplication and pseudobulk on the same dataset (Table 3). This highlights the effect that the low quality high mitochondrial read cells have on DE analysis.
 
+**Table 4.**
+ The differentially expressed genes from our reanalysis using the reprocessed data and pseudobulk differential expression approach.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell</th>
+      <th>logFC</th>
+      <th>logCPM</th>
+      <th>LR</th>
+      <th>p-Value</th>
+      <th>adj_pval</th>
+      <th>ensembl_id</th>
+      <th>HGNC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OPC</td>
+      <td>–4.1544663</td>
+      <td>4.92100803</td>
+      <td>21.6911445</td>
+      <td>3.20E-06</td>
+      <td>0.04985906</td>
+      <td>ENSG00000166573</td>
+      <td>GALR1</td>
+    </tr>
+    <tr>
+      <td>Astro</td>
+      <td>–4.5845276</td>
+      <td>4.7965143</td>
+      <td>22.2367847</td>
+      <td>2.41E-06</td>
+      <td>0.037634</td>
+      <td>ENSG00000137959</td>
+      <td>IFI44L</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–3.7616619</td>
+      <td>7.32875316</td>
+      <td>26.8149688</td>
+      <td>2.24E-07</td>
+      <td>0.00077905</td>
+      <td>ENSG00000077238</td>
+      <td>IL4R</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–2.0681446</td>
+      <td>7.88736441</td>
+      <td>17.5929095</td>
+      <td>2.74E-05</td>
+      <td>0.0346187</td>
+      <td>ENSG00000105835</td>
+      <td>NAMPT</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–1.6757556</td>
+      <td>7.58472506</td>
+      <td>19.1736829</td>
+      <td>1.19E-05</td>
+      <td>0.02076348</td>
+      <td>ENSG00000118257</td>
+      <td>NRP2</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–3.1556403</td>
+      <td>6.85232653</td>
+      <td>19.2064627</td>
+      <td>1.17E-05</td>
+      <td>0.02076348</td>
+      <td>ENSG00000135363</td>
+      <td>LMO2</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–3.4339265</td>
+      <td>6.9290472</td>
+      <td>19.5975589</td>
+      <td>9.56E-06</td>
+      <td>0.02076348</td>
+      <td>ENSG00000138135</td>
+      <td>CH25H</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–2.8183109</td>
+      <td>6.77500676</td>
+      <td>16.907959</td>
+      <td>3.92E-05</td>
+      <td>0.04550806</td>
+      <td>ENSG00000142408</td>
+      <td>CACNG8</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>2.90076647</td>
+      <td>8.34560617</td>
+      <td>45.5144266</td>
+      <td>1.52E-11</td>
+      <td>2.11E-07</td>
+      <td>ENSG00000144724</td>
+      <td>PTPRG</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>3.25867589</td>
+      <td>6.91671013</td>
+      <td>16.5519147</td>
+      <td>4.73E-05</td>
+      <td>0.0490155</td>
+      <td>ENSG00000163106</td>
+      <td>HPGDS</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–2.0290905</td>
+      <td>7.12321166</td>
+      <td>16.4746746</td>
+      <td>4.93E-05</td>
+      <td>0.0490155</td>
+      <td>ENSG00000171612</td>
+      <td>SLC25A33</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–3.4657301</td>
+      <td>6.93307221</td>
+      <td>19.7883301</td>
+      <td>8.65E-06</td>
+      <td>0.02076348</td>
+      <td>ENSG00000172243</td>
+      <td>CLEC7A</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–4.172807</td>
+      <td>7.16813583</td>
+      <td>34.3515807</td>
+      <td>4.60E-09</td>
+      <td>3.20E-05</td>
+      <td>ENSG00000174600</td>
+      <td>CMKLR1</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>–3.1984588</td>
+      <td>6.87310555</td>
+      <td>18.5335889</td>
+      <td>1.67E-05</td>
+      <td>0.0232342</td>
+      <td>ENSG00000227531</td>
+      <td>RP11-202G18.1</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>3.40562887</td>
+      <td>6.9381703</td>
+      <td>18.5526502</td>
+      <td>1.65E-05</td>
+      <td>0.0232342</td>
+      <td>ENSG00000228058</td>
+      <td>RP11-552D4.1</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>4.46073301</td>
+      <td>7.66559163</td>
+      <td>29.7716679</td>
+      <td>4.86E-08</td>
+      <td>0.00022549</td>
+      <td>ENSG00000253496</td>
+      <td>RP11-13N12.1</td>
+    </tr>
+  </tbody>
+</table>
+
 In conclusion, the authors’ analysis has been highly influential in the field with numerous studies undertaken based on their results, something we show has uncertain foundations. However, we would like to highlight that the use of pseudoreplication in neuroscience research is not isolated to the authors’ work; others have used this approach (Fernandes et al., 2020; Lui et al., 2021; Wakhloo et al., 2020), and their results should be similarly scrutinised. Here, we provide our processed count matrix with metadata and also the DEGs identified using an independently validated, DE approach so that other researchers can use this rich dataset free from spurious nuclei or DEGs. While the number of DEGs found here is significantly lower, much greater confidence can be had that these are AD-relevant genes. The low number of DEGs found may also cause concern given the sample size and cost of collection and sequencing of such datasets. However, the increasing number of snRNA-seq studies being conducted for AD creates the opportunity to conduct differential meta-analyses to increase power. Further work is required in the field to develop methods to conduct such analysis, integrating studies and accounting for their heterogeneity, similar to that which has been done for bulk RNA-seq (Rau et al., 2014). Some such approaches have already been made in COVID-19 research which could be leveraged for neurodegenerative disease (Garg et al., 2021).
 
 ## Materials and methods
 
-## Processing of sc/snRNA-seq dataset
+### Processing of sc/snRNA-seq dataset
 
 The data reprocessing was conducted with scFlow (Khozoie et al., 2021), the steps of which are discussed in the following two sections.
 
-## Quality control of snRNAseq data
+#### Quality control of snRNAseq data
 
 The raw snRNA-seq data (10.7303/syn18485175) and the ROSMAP metadata (10.7303/syn3157322) were downloaded from https://www.synapse.org/ upon acquiring appropriate approval. Downstream primary analyses of gene–cell matrices were performed using our scFlow pipeline (Khozoie et al., 2021). To determine ambient RNA profile and distinguish true nuclei from empty droplets, emptyDrops was used with a lower parameter of <100 counts, an alpha cut-off of ≤0.001, and with 10,000 Monte Carlo iterations (Lun et al., 2019). This approach has been recommended as best practice in the literature (Amezquita et al., 2020). Nuclei were then filtered for ≥200 total counts and ≥200 total expressed genes, which was defined as a minimum of 2 counts in at least three cells. We excluded any nuclei with total counts or total expressed genes with more than 4 MAD defined by an adaptive thresholding method. Nuclei were excluded if the proportion of counts mapping to mitochondrial genes was more than 10%, as set out in best-practice guidelines (Amezquita et al., 2020). Doublets were identified using the DoubletFinder algorithm, with a doublets-per-thousand-cells increment of eight cells (recommended by 10X Genomics), and a pK value of 0.005 (McGinnis et al., 2019). DoubletFinder was shown to be the best overall performing method in a recent benchmark (Xi and Li, 2021). The aggregated number of cells and proportions dropped at each step is given in Table 1 while a comparison of the proportion of cells in each cell type after reprocessing compared to the authors’ processed data is given in Figure 2. All files from the scFlow run, including QC statistics, are available in the GitHub repository in the scFlow_files folder (copy archived at Murphy, 2023). This includes sample-level genes and cells’ QC numbers.
 
-## Integration and clustering
+#### Integration and clustering
 
 The linked inference of genomic experimental relationships (LIGER) package was used to calculate integrative factors across samples (Welch et al., 2019). LIGER was recently found to be one of the top performing methods for batch-effect correction (Tran et al., 2020). LIGER parameters used included k: 30; lambda: 5.0; thresh: 0.0001; max_iters: 100; knn_k: 20; min_cells: 2; quantiles: 50; nstart: 10; resolution: 1; num_genes: 3000; and centre: false. Two-dimensional embeddings of the LIGER integrated factors were calculated using the Uniform Manifold Approximation and Projection (UMAP) algorithm with the following parameters: pca_dims: 50; n_neighbours: 35; init: spectral; metric: euclidean; n_epochs: 200; learning_rate: 1; min_dist: 0.4; spread: 0.85; set_op_mix_ratio: 1; local connectivity: 1; repulsion_strength: 1; negative_sample_rate: 5; and fast_sgd: false (McInnes et al., 2020). The Leiden community detection algorithm was used to detect clusters of cells from the 2D UMAP (LIGER) embeddings; a resolution parameter of 0.001 and a k value of 50 were used (Traag et al., 2019). This approach has been noted as best practice by a recent review (Heumos et al., 2023). Automated cell typing of the detected clusters was performed as previously described using the Expression Weighted Celltype Enrichment algorithm in scFlow against a previously generated cell-type data reference from the Allen Human Brain Atlas (Hodge et al., 2019; Skene and Grant, 2016). The top five marker genes for each automatically annotated cell type were determined using Monocle 3 and validated against canonical cell-type markers (Trapnell et al., 2014).
 
-## DE analysis
+### DE analysis
 
 All DE analyses were conducted using pseudobulk DE approach with sum aggregation and edgeR LRT (Chen et al., 2016). Pseudobulk aggregates nuclei within a biological replicate (an individual) for each cell type, reducing the dropout issue in single-cell data and avoiding the false inflation of confidence from non-independent samples of pseudoreplication approaches (Squair et al., 2021; Murphy and Skene, 2022). The DE analysis pipeline is available at GitHub repository (copy archived at Murphy, 2023). This is a general use pipeline which can be run for any single-nucleus or single-cell transcriptomic dataset. Note that we report DEGs across AD and controls using the same processed data the authors used (Table 2) and using our reprocessed data (Table 4).
 
-## Code availability
+### Code availability
 
 The DE analysis pipeline is available at GitHub repository (copy archived at Murphy, 2023). This is a general use pipeline which can be run for any single-nucleus or single-cell transcriptomic dataset. The config file containing all the parameters used and QC overview file for the scFlow run is also available in this repository.

@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03wmf1y16 Program in Structural Biology and Biochemistry, University of Colorado Anschutz Medical Campus Aurora United States
-2. https://ror.org/03xswyc88 Department of Pathology and Laboratory Medicine, Weill Cornell Medicine New York United States
-3. https://ror.org/03xswyc88 Weill Cornell/Rockefeller/Sloan-Kettering Tri-Institutional MD-PhD Program New York United States
-4. https://ror.org/0190ak572 Department of Biology, New York University New York United States
-5. https://ror.org/03wmf1y16 Department of Pharmacology, University of Colorado School of Medicine Aurora United States
+1. Program in Structural Biology and Biochemistry, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+2. Department of Pathology and Laboratory Medicine, Weill Cornell Medicine New York United States ([ROR:03xswyc88](https://ror.org/03xswyc88))
+3. Weill Cornell/Rockefeller/Sloan-Kettering Tri-Institutional MD-PhD Program New York United States ([ROR:03xswyc88](https://ror.org/03xswyc88))
+4. Department of Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+5. Department of Pharmacology, University of Colorado School of Medicine Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
@@ -36,13 +36,138 @@ Here, we characterized the KER region of yCAF-1 using biophysical, structural, a
 
 ## Results
 
-## The KER is a major DBD in CAF-1 that cooperates with the WHD in vivo
+### The KER is a major DBD in CAF-1 that cooperates with the WHD in vivo
 
 The previously observed DNA-length preference of yCAF-1 (Sauer et al., 2017) cannot be explained by the DNA-binding properties of the WHD (Zhang et al., 2016; Mattiroli et al., 2017; Sauer et al., 2017). To determine whether the KER promotes this DNA-length preference, we first expressed and purified recombinant tri-subunit yCAF-1, and the isolated domains KER (Cac1 residues 136–225, yKER), and WHD (Cac1 residues 457–606, yWHD) (Figure 1a and Figure 1—figure supplements 1 and 2a–c). Using electrophoretic mobility shift assays (EMSAs) we measured the binding affinity for each protein to DNA fragments of different lengths (Figure 1b–i and Figure 1—figure supplement 3a, b). To determine the DNA-binding affinities, the EMSA images were quantitated and the resulting binding curves fitted with Equation 1 (see Methods) (Figure 1j, k and Figure 1—figure supplement 3c), which gave values for the dissociation constant (KD) and cooperativity (Hill coefficient, h) (Figure 1l). yCAF-1 and the isolated domains bound to DNA with the appearance of a ladder of bands, especially for the yKER that has the largest number of bands, which are related to the length of the DNA fragment (20, 30, 40, and 80 bp). These results indicate that multiple proteins bind to a single DNA fragment (Figure 1f–i) and the Hill coefficients suggest a cooperative mode of DNA binding (Figure 1l). For DNA of the same length (Figure 1l), the yKER had KD values between 18 and 50 nM, whereas the yWHD bound three to six times more weakly. yCAF-1 had KD values between those observed for the yKER and the yWHD, except for weaker binding to the 30-bp DNA fragment (KD of 330 nM) (Figure 1l). This analysis shows that yCAF-1 has a higher affinity for DNA fragments in the range of 50–80 bp, which are DNA lengths considered to be sufficient for tetrasome formation (Donham et al., 2011). In contrast, increasing DNA length only slightly decreased KD values for the yKER or yWHD (Figure 1l).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig1-v1.jpg)
+
+**Figure 1.:** (a) Cartoon representing the molecular architecture of the yCAF-1 complex highlighting the protein subunits and functional domains. Domains include the K/E/R-rich (DNA-binding domain), PCNA interacting peptides (PIP boxes), Cac3-binding site (small), E/D-rich regions (histone binding), Cac2-binding site (middle), and a DNA-binding winged helix domain (WHD). (b–i) Representative images of electrophoretic mobility shift assay (EMSA) experiments for yCAF-1 or yKER, with 2 or 3 nM of Cy5-DNA; the range of protein concentrations are: 5–250 and 9–84 nM, respectively. (j, k) Quantitative analyses of all EMSAs of yCAF-1 or yKER with Cy5-labeled DNA. Data from at least three independent experiments were plotted as the mean and standard deviation (error bars). The binding curves were fitted using Equation 1. (l) Table summarizing the dissociation constant (KD) and Hill coefficient (h) values obtained from EMSAs of the indicated proteins and DNA. Values were obtained from fitting plots using Equation 1. (m) Representative image of an EMSA experiment for yCAF-1 ∆KER with 3 nM of Cy5-80 bp DNA; the range of protein concentrations is 49–440 nM. (n) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Camptothecin (CPT) at the specified concentrations. (o) Bar graph indicating the percentage of cells exhibiting elevated Green Fluorescent Protein (GFP) levels from yeast cultures of the indicated strains sorted by flow cytometry. Error bars indicate the standard deviation of the calculated values from three measurements. Statistical significance was calculated by Student’s t-test where ***p < 0.001 relative to Cac1 Wild-type (WT) cells. See also Figure 1—source data 1 and Figure 1—source data 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 4–20% gradient sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) stained with Coomassie Blue of the indicated protein domains purified from bacteria (b, c) or yCAF-1 complexes purified from insect cells (a). (d) Western blot of yeast cell lysates harboring the indicated Cac1 mutations along with a FLAG tag motif incorporated at the C-terminus of Cac1. An anti-FLAG antibody was used to detect expression of the FLAG-tagged Cac1 proteins from cell lysates. An anti-GAPDH antibody was used to determine the levels of GAPDH protein from the cell lysates as a loading control. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a, b) Representative images of electrophoretic mobility shift assays (EMSAs) with 2 nM of the indicated Cy5-labeled DNA and yWHD over a range of protein concentrations of 12–760 nM. (c) Quantitative analyses of EMSAs of yWHD with Cy5-labeled DNA. Data from at least three independent experiments were plotted as the mean and standard deviation (error bars). The binding curves were fitted using Equation 1. (d, e) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown under in the presence of Camptothecin (CPT), or Zeocin at the specified concentrations. (f) Representative flow cytometry histograms of cultures of the indicated yeast strains sorted with the Alexa Fluor 488-4 channel that detects Green Fluorescent Protein (GFP) signal. (g) Representative alkaline agarose gels showing end-labeled Okazaki fragments purified from cells of the indicated genotype after repression of DNA ligase 1 for 2.5 hr. See also Figure 1—figure supplement 3—source data 1.
 
 To determine the importance of the KER to the DNA-binding function of yCAF-1, yCAF-1 lacking only the KER, Cac1 residues 136–225 (yCAF1 ∆KER), was produced (Figure 1—figure supplement 1 and Figure 1—figure supplement 2a) and tested using EMSA. Deletion of the KER region impaired DNA binding of yCAF-1 and also resulted in the failure of the complexes to migrate into the gel, possibly due to aggregation (Figure 1m). As the yCAF-1 ∆KER mutant still has the WHD, this residual DNA-binding function might be due to the WHD or other unknown DNA-binding regions within CAF-1. Together, these data show that the KER binds more tightly to DNA than the WHD and the presence of the KER in the context of yCAF-1 is needed for high DNA-binding affinity.
 
 As the KER confers the majority of DNA-binding affinity to yCAF-1 in vitro, we investigated the impact of deleting the KER on CAF-1 function in chromatin assembly after DNA replication and repair (Smith and Stillman, 1991; Ye et al., 2003; Smith and Stillman, 1989; Gaillard et al., 1996; Mello et al., 2002; Tyler et al., 1999). Yeast cells harboring defective CAF-1, including loss of the Cac1 subunit, or loss of its WHD, PIP box, or histone-binding regions (Figure 1a), have been shown to be more sensitive to DNA damaging agents and have impaired establishment of chromatin landscapes (Li et al., 2008; Zhang et al., 2016). We examined cell growth and survival of budding yeast mutants in a spot assay in the presence of the DNA topoisomerase I inhibitor Camptothecin (CPT) (Eng et al., 1988) and Zeocin. While CPT stabilizes covalently bound DNA topoisomerase I complexes on chromatin resulting in replication fork collisions and DNA double-strand breaks (DSBs) (Pommier, 2006), Zeocin intercalates into DNA to induce DSBs independent of the replication process (Chankova et al., 2007). yCAF-1 mutants were generated by site-directed mutagenesis of the gene that encodes the Cac1 subunit (CAC1) via CRISPR–Cas9 at the endogenous genomic locus in yeast strains deleted for the RTT106 gene (rtt106∆) that encodes for a histone chaperone with overlapping roles of CAF-1 in yeast (Huang et al., 2005; Li et al., 2008; Figure 1—figure supplement 1 and Figure 1—figure supplement 2d). Deletion of Cac1 residues 136–225 that encode for the KER region (∆KER) resulted in a mild sensitivity to CPT and Zeocin (Figure 1n and Figure 1—figure supplement 3d). Inhibition of the DNA-binding function of the WHD through point mutations in Cac1 residues K564E/K568E (mWHD) in yeast (Zhang et al., 2016) showed higher sensitivity to CPT and Zeocin than the deletion of the KER. Strikingly, the double mutant ∆KER+mWHD showed higher CPT and Zeocin sensitivity than either mutant alone, and to a similar extent observed when the Cac1 subunit is absent (cac1∆) (Figure 1n, Table 1, and Figure 1—figure supplement 3d). These results are consistent with roles for both the KER and WHD in CAF-1 function because at least one DBD appears to be sufficient to maintain some CAF-1 function in vivo and overcome repercussions of DSBs, both dependent and independent of DNA replication.
+
+**Table 1.**
+ Relative sensitivity to Camptothecin (CPT) and Zeocin of yeast cells harboring chromatin assembly factor 1 (CAF-1) mutations in a rtt106∆ background.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CPT sensitivity</th>
+      <th>Zeocin sensitivity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cac1 WT</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>cac1∆</td>
+      <td>+++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>∆KER</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>mWHD</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>mPIP</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>mWHD+mPIP</td>
+      <td>+++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>∆KER+mWHD</td>
+      <td>+++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>∆KER+mPIP</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>∆middle-A</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>∆middle-A+mWHD</td>
+      <td>+++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>2xKER</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>2xKER+mWHD</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>∆145–149</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>∆145–149+mWHD</td>
+      <td>++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>∆225–226</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>∆225–226+mWHD</td>
+      <td>+++++</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>∆225–226+mPIP</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>KER::hKER</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>KER::hKER+mWHD</td>
+      <td>++++</td>
+      <td>+++++</td>
+    </tr>
+  </tbody>
+</table>
 
 We also investigated a potential coordinated role between the KER and the PIP box for the recruitment of CAF-1 to the replisome. Inhibition of the PIP box downstream of the KER (Figure 1a) by substitution of Cac1 residues F233A/F234A (mPIP) (Zhang et al., 2016) did not result in an increase in sensitivity to CPT and Zeocin when in combination with ∆KER (∆KER+mPIP) (Figure 1n, Table 1, Figure 1—figure supplement 1, and Figure 1—figure supplement 3e). This is in contrast to mWHD+mPIP cells (Table 1 and Figure 1—figure supplement 3e) where WHD and the PIP box cooperate in their recruitment function (Zhang et al., 2016). These results suggest a role of the KER independent of recruitment of CAF-1 to the replisome via the PIP box.
 
@@ -50,61 +175,105 @@ CAF-1 function can influence cellular gene expression profiles, presumably by th
 
 Functionality of this reporter assay was confirmed by deletion of SIR2 (sir2∆), a subunit of the silent information regulator (SIR) complex required for the establishment of silencing of the HMR locus (Rine and Herskowitz, 1987). Almost 100% of sir2∆ cells exhibited GFP fluorescence (Figure 1o). Consistent with the CPT and Zeocin sensitivity assays, we found that ∆KER, mWHD, and mPIP cells had low expression of GFP. As previously reported, a high percentage of cac1∆rtt106∆ cells have increased GFP expression and mPIP+mWHD cells have a comparable level of GFP expression, suggesting a near-total loss of CAF-1 function (Zhang et al., 2016). No increase in GFP expression is seen in response to combined ∆KER+mPIP cells when compared to mPIP alone (Figure 1o). In contrast, ∆KER+mWHD cells had GFP expression, similar to cac1∆rtt106∆ cells, suggesting a near-complete loss of CAF-1 function. Finally, to assess the impact of deleting the KER more directly on nucleosome assembly in vivo, we examined histone deposition onto Okazaki fragments during DNA replication as we have shown previously that the length of Okazaki fragment lengths is determined by histone deposition into nucleosomes and is disrupted upon deletion of CAC1 (Smith and Whitehouse, 2012). We compared CAF-1 mutants in the WT yeast background and in yeast lacking Rtt106. We found that the Okazaki fragment length distributions of the ∆KER mutant were indistinguishable from that of WT while that of cac1∆ was disrupted (Figure 1—figure supplements 1 and 3g). That we did not detect effects on Okazaki fragment lengths for the yCAF-1 mutants lacking the intact KER is consistent with the results of the viability and silencing assays for KER mutants, which also retained the WHD. Strikingly, the Okazaki fragments from rtt106∆ cac1∆ yeast were highly disrupted (Figure 1—figure supplements 1 and 3g) further highlighting the redundancy between Rtt106 and Cac1 for assembling histones onto newly replicated DNA. Together, these results suggest that yCAF-1 requires the coordinated action of the KER and WHD to prevent DNA damage sensitivity and maintain silencing of chromatin in vivo. Since both the KER and the WHD bind to DNA, they might have overlapping yet complementary functions in targeting or aligning CAF-1 correctly to the DNA during nucleosome assembly.
 
-## The KER is a first-in-class SAH DBD
+### The KER is a first-in-class SAH DBD
 
 To gain insight into how the KER region binds to DNA and facilitates CAF-1 function in vivo, we determined the structure of the yKER at 2.81 Å resolution. Crystals grown of a maltose-binding protein (MBP)–KER fusion construct (Figure 2a, Figure 2—figure supplement 1a, b, and Supplementary file 4) contained four copies of the MBP-yKER per asymmetric unit. The yKER extended from the MBP as an almost entirely solvent exposed continuous alpha-helix (Figure 2—figure supplement 1b). The longest yKER helix modeled (PDB 8DEI; molecule A) is 128 Å long with 23 helical turns, encompassing Cac1 amino acids 136–221 (Figure 2a). Superposition of the four KER copies gives root mean square deviation (RMSD) values between 0.66 and 2.2 Å, as the helices have a marked curvature in the region of aa 165–190 and larger deviations at the termini (Figure 2—figure supplement 1c). In the structure, we saw no evidence of interactions between yKER helices or formation of any tertiary structure, consistent with the definition of an SAH domain (Wolny et al., 2017). Inspection of the sequence of the yKER reveals a pattern of opposite-charged residues, lysine/arginine and glutamic acid, that are three or four residues apart (Figure 2b), capable of forming an ion pair network. Such a network confers stability to the helix so that SAH domains can be completely solvent exposed in solution (Batchelor et al., 2019; Sivaramakrishnan et al., 2008; Wolny et al., 2017; Swanson and Sivaramakrishnan, 2014); such as in the well-characterized Myosin 7a SAH (Barnes et al., 2019). The circular dichroism (CD) spectrum of the KER showed characteristics of only alpha helical secondary structure, including the positive absorption band at 195 nm and two negative bands at 208 and 222 nm (Figure 2c), validating in solution the structure of the KER observed in the crystal. Interestingly, binding to DNA increased the alpha helical content of the yKER (Figure 2c) without changes in the CD signal from the DNA (Figure 2—figure supplement 2a), suggesting that no major DNA structural changes occur.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig2-v1.jpg)
+
+**Figure 2.:** (a) Ribbon representation of the X-ray crystal structure of yCAF-1 KER region. Cac1 residues 136–222 are shown with side chains of residues Lys, Arg, and His colored in blue and Glu in red. (b) Schematic diagram of the indicated SAH sequences with positively charged residues Arg, Lys, and His, colored in blue; and negatively charged residue Glu and Asp colored in red. The brackets along the sequence represent predicted interhelical i, i+4 or i, i+3 ion pairs. (c) Overlap of circular dichroism spectra of yKER alone and in the presence of 40 bp DNA. DNA signal was subtracted from the yKER + 40 bp DNA sample to observe only changes in the protein component. (d) Thermal denaturation monitored by circular dichroism at 222 nm (m°222) of yKER alone and in the presence of 40 bp DNA. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Diagram showing electron density for a region of the yKER. The 2Fo-Fc composite omit map was contoured at 1 sigma. (b) Crystal packing diagram showing the arrangement of the four molecules in the asymmetric unit. (c) Diagram showing the superposition of the yKER domains from molecules A to D, colored green, cyan, magenta, and yellow, respectively. (d) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) stained with Coomassie Blue showing chemical crosslinking of the yKER domain. The indicated lanes include the untreated yKER, yKER incubated with the vehicle (DMSO), and yKER crosslinked with disuccinimidyl suberate (DSS). The diffuse band indicates intra-polypeptide crosslinking. (e) Representative image of a heterogenous subunit electrophoretic mobility shift assay (EMSA) experiment with 40 bp DNA, the yKER and MBP-yKER. The proteins and DNA were mixed at a concentration of 900 nM in all reactions. The observed signal corresponds to Cy5-40 bp DNA that was spiked in all reactions to facilitate visualization. The interpreted composition of the protein–DNA complexes observed is indicated. See also Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Graph of circular dichroism spectra of 40 bp DNA alone and in the presence of yKER. The yKER spectrum was subtracted from the 40 bp + yKER sample to observe only changes in the DNA component. (b) Representative image of a SYBR green-stained electrophoretic mobility shift assay (EMSA) experiment for Myosin 7a single alpha-helix (SAH) with a 10-bp DNA ladder. 500 nM of total DNA ladder was incubated with a range of 64 nM to 1 µM concentrations of protein. (c) Helical net diagram of yKER. In this representation, the SAH structure has been split along a helical track and unwound so it can be displayed in 2D. Amino acids colored in red are negatively charged, blue are positively charged, green is glutamine, and white are other polar or hydrophobic. Lines connecting colored residues represent predicted ion pair interactions based on strength: solid lines, strong; black dashed lines, medium; yellow dashed lines, weak. (d) Crystal structure of the Myosin 7a SAH along with its helical net representation as in (c). (e) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Zeocin at the specified concentrations. See also Figure 2—figure supplement 2—source data 1.
+
 Fundamental to the definition of SAH domains is that they exhibit non-cooperative denaturation transitions due to a lack of tertiary structure (Wolny et al., 2017; Wolny et al., 2014; Süveges et al., 2009). This behavior is also observed in the thermal denaturation monitored by CD at 222 nm of the yKER (Figure 2d). Furthermore, chemical crosslinking with disuccinimidyl suberate (DSS) showed no evidence of KER multimers (Figure 2—figure supplement 1d), supporting the conclusion that the yKER does not form a tertiary structure. In contrast, in the presence of 40 bp DNA, the thermal denaturation of the yKER showed an increase of 10°C in the melting temperature and a two-state cooperative unfolding transition (Figure 2d), which demonstrates the ability of the yKER to form a stably folded protein–DNA complex. The monomeric state of the yKER also suggests that the additional yKER–DNA complexes observed in the EMSAs (Figure 1f–i) are due to the addition of yKER monomers to the same molecule of DNA. This was substantiated through use of a heterogenous subunit EMSA (Hope and Struhl, 1987; Gangelhoff et al., 2009) with the yKER, MBP-yKER, and a combination of the two proteins. The mixed-protein subunit:DNA complexes (Figure 2—figure supplement 1e) can only be explained if the KER forms no obligate oligomers on the DNA. Rather, multiple monomers of yKER are recruited to the same molecule of DNA, creating the multiplicity of bands in the EMSA. Finally, DNA binding has not been reported for other SAH domains even though they have a similar amino acid composition (Figure 2b and Figure 2—figure supplement 2c, d). Examination of a purified Myosin 7a SAH (Barnes et al., 2019; Figure 1—figure supplement 2b and Figure 2—figure supplement 2b) using EMSA detected no DNA binding, indicating that the DNA-binding properties of the yKER are not a general feature of SAH domains.
 
-## The yKER requires both the alpha helical structure and positively charged residues for DNA binding and yCAF-1 function in vivo
+### The yKER requires both the alpha helical structure and positively charged residues for DNA binding and yCAF-1 function in vivo
 
 As the yKER is a novel DNA-binding SAH, it was important to define which sequence features are responsible for the DNA-binding functionality. We noticed that the yKER SAH is particularly enriched in positively charged residues, unlike the Myosin 7a SAH (Figure 2—figure supplement 2c, d). These residues are biased toward one face of the yKER helix and confer a net positive charge along most of the length of the yKER, which is concentrated toward the N-terminal and middle regions (Figure 3a). To map the DNA-binding region, we designed and purified five truncated versions of the yKER (Figure 3a and Figure 1—figure supplement 2b). These proteins exhibited different alpha helical content, which was markedly greater for the constructs containing C-terminal regions (Figure 3b). However, only the middle-A protein (residues 155–204) exhibited strong DNA binding similar to the intact KER (Figure 3a, c–g), whereas the N-half and middle-B constructs, which partially overlap with middle-A, did not bind well to DNA (Figure 3e, g). Although regions of the yKER outside of the middle-A region likely contribute to KER function, the middle-A region is required for DNA binding due to both the positively charged residues and alpha helical structure. Notably, deletion of the middle-A residues from yCAF-1 (yCAF1 ∆middle-A) abrogates binding of yCAF-1 to DNA (Figure 3h and Figure 3—figure supplement 1), confirming the importance of this region. Interestingly, we also observed that yCAF1 ∆middle-A binds to DNA worse than the deletion of the KER (yCAF1 ∆KER) (Figure 3h), suggesting that residual SAH structure might not support the correct organization or architecture of yCAF-1 in a manner that hinders the activity of the WHD. In the context of CAF-1, a substitution of the KER for the Myosin 7a SAH (KER::Myo7a) in yCAF-1, also abolished DNA binding (Figure 3h). In vivo, ∆middle-A yeast behave like the ∆KER cells, exhibiting similar sensitivity to CPT and Zeocin, and even higher GFP expression levels in the silencing assay when in combination with mWHD (Figure 3i, j, Table 1, and Figure 2—figure supplement 2e). Taken together, we conclude that a specific region within the KER domain (middle-A) simultaneously forms an alpha-helix and engages with DNA to drive DNA binding and the biological functions of yCAF-1.
 
-## The KER confers the selectivity of CAF-1 for tetrasome-length DNA
+![Figure 3.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig3-v1.jpg)
+
+**Figure 3.:** (a) Surface representation of two views of the yCAF-1 KER structure with basic residues colored in blue, acidic in red, and polar or hydrophobic in gray. The dashed lines at the top illustrate the yKER truncations under investigation. The bar graph represents the net charge calculated for a sliding window of seven amino acids along the yKER sequence. The resulting net charge was assigned to the fourth residue in the window. (b) Overlay of circular dichroism spectra of the yKER constructs indicated in (a). (c–g) Representative images of electrophoretic mobility shift assay (EMSA) experiments and binding curves for the yKER constructs indicated in (a) Cy5-40 bp DNA (either 2 or 2.5 nM) binding was observed over a range of protein concentrations of 9–84 nM for the yKER, 12–760 nM for the middle-A, 0.37–1 µM for N-half, C-half, and middle-B. KD and h values were calculated from binding curves fitted with Equation 1 and were plotted as the mean of at least three independent experiments. (h) Representative image of an EMSA showing the binding of a fixed concentration (250 nM) of yCAF-1, yCAF-1 ∆KER, yCAF-1 ∆middle-A, and yCAF-1 KER::Myo7aSAH proteins binding to a set of different length of Cy5-labeled DNA fragments at 1 nM each. (i) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Camptothecin (CPT) at the specified concentrations. (j) Bar graph indicating the percentage of cells exhibiting elevated Green Fluorescent Protein (GFP) levels from yeast cultures of the indicated strains sorted by flow cytometry. Error bars indicate the standard deviation of the calculated values from three measurements. Statistical significance was calculated by Student’s t-test where **p < 0.01 and ***p < 0.001 are relative to Cac1 WT cells. See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative image of an electrophoretic mobility shift assay (EMSA) showing the binding of a fixed concentration (760 nM) of yCAF-1, yCAF-1 ∆KER, yCAF-1 ∆middle-A, and yCAF-1 KER::Myo7aSAH proteins binding to a set of different length of Cy5-labeled DNA fragments at 1 nM each. See also Figure 3—source data 1.
+
+### The KER confers the selectivity of CAF-1 for tetrasome-length DNA
 
 Consistent with previous results (Sauer et al., 2017), and in Figure 1, yCAF-1 was found to have the highest binding affinity for DNA fragments that are at least 40 bp in length, which suggests a DNA-length selective property of CAF-1 that is driven by the KER. To test this hypothesis, we developed a novel EMSA approach, which uses equimolar concentrations of Cy5-labeled DNA fragments spanning 10–50 bp in length (Cy5-DNA ladder) to detect the DNA-length preferences of CAF-1 under competition conditions between different lengths of DNA (Figure 4a–e). The free DNA signal for each fragment in the Cy5-DNA ladder was quantitated and plotted as a function of protein concentration. Subjecting yCAF-1 to this assay resulted in a DNA-length selective binding behavior, as shown by the preferential depletion of the 50 and 40 bp DNA fragments from the free DNA at lower concentrations of yCAF-1 compared to the 20 and 30 bp fragments (Figure 4a), while 10 bp remained unchanged. In order to visualize these differences in competition, we plotted the apparent KD (KDapp) as a means to compare different proteins and different DNA lengths in the assay (Figure 4f). We observed a threshold effect whereby CAF-1 binds to DNA of 40 bp in length length or longer with a similar KDapp, but there were mutants that had increased binding affinity for 50 bp compared to 40 bp. This can be seen by plotting the rate of the apparent dissociation constant change from 40 to 50 bp, which allows for these thresholds to be easily distinguished (Figure 4f, g). Similarly, the yKER bound to the Cy5-DNA ladder in a DNA-length-dependent manner. However, the yKER substantially depleted 30 and 20 bp fragments from the free DNA at lower concentrations (Figure 4b), revealing a very slight threshold effect compared to yCAF1. In contrast, the yWHD exhibited virtually no DNA-length selective binding, except that like the KER, the shortest 10 bp DNA was bound poorly (Figure 4c). yCAF-1 with the WHD deleted (Cac1 amino acids 520–606) (yCAF1 ∆WHD) did not bind well to the 10–30 bp fragments, but did have a slight preference for the 50 bp over the 40 bp DNA (compare Figure 4a, d). Relevant to this observation, previous studies revealed that in a truncated form of CAF-1, the WHD interacts with the ED region (Figure 1a) and that H3/H4 dimer binding to the ED was needed to displace the WHD and free it to bind to DNA (Mattiroli et al., 2017). This ‘autoinhibited state’ of the WHD can also be released through substitution of Cac1 residues 397–431 in the ED region by a glycine/serine/leucine linker (ED::GSL), which decreases the affinity of the WHD for the ED and allows the WHD to bind DNA in a histone-free manner (Mattiroli et al., 2017). Therefore, we recapitulated the ED::GSL substitution in the context of full-length yCAF-1 (yCAF1 ED::GSL) (Figure 4e) and subjected it to the Cy5-DNA ladder assay. We found that yCAF1 ED::GSL showed a slight preference for the 50 bp DNA compared to the 40 bp (Figure 4e–g), suggesting that the uninhibited WHD contributes further to the length of DNA recognized by CAF-1. Together, these results demonstrate that the KER, but not the WHD, equips yCAF-1 with a DNA-length selectivity function that favors binding to DNA fragments that are at least 40 bp in length. Also, the presence of the WHD permits yCAF1 binding to 20 and 30 bp DNA, suggesting it has either a direct or indirect contribution to DNA binding of yCAF-1; and that there is a further contribution to the length threshold in the state where the WHD is released from the ED.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig4-v1.jpg)
 
-**Figure 4.:** (a–e) Representative images of electrophoretic mobility shift assays (EMSAs) showing DNA binding of yCAF-1, yKER, yWHD, yCAF-1 ∆WHD, or yCAF-1 ED::GSL where each Cy5-labeled DNA fragment is at 1 nM concentration and the range of protein concentration was 37–760 nM for all constructs. Below each gel image, the graph shows the quantitation of free (unbound) DNA signal for each Cy5-labeled DNA as a function of protein concentration. The data are plotted as the mean and standard deviation from at least three measurements. (f) Plots representing the apparent KD (KDapp) of the individual DNA fragments from the Cy5-DNA ladder for the indicated yCAF-1 constructs. (g) Plot of the rate (slope) of change of the apparent dissociation constant from 40 to 50 bp. One-way ANOVA analyses show significant differences for the ED:GSL and KER:hKER mutants (**p < 0.01 and ***p < 0.001). (h) Plot representing the protein concentration required to achieve 50% depletion of the individual DNA fragments from the Cy5-DNA ladder for the indicated chromatin assembly factor 1 (CAF-1) domains. See also Figure 4—source data 1.Figure 4—source data 1.Electrophoretic mobility shift assay (EMSA) images and data analyses.
+**Figure 4.:** (a–e) Representative images of electrophoretic mobility shift assays (EMSAs) showing DNA binding of yCAF-1, yKER, yWHD, yCAF-1 ∆WHD, or yCAF-1 ED::GSL where each Cy5-labeled DNA fragment is at 1 nM concentration and the range of protein concentration was 37–760 nM for all constructs. Below each gel image, the graph shows the quantitation of free (unbound) DNA signal for each Cy5-labeled DNA as a function of protein concentration. The data are plotted as the mean and standard deviation from at least three measurements. (f) Plots representing the apparent KD (KDapp) of the individual DNA fragments from the Cy5-DNA ladder for the indicated yCAF-1 constructs. (g) Plot of the rate (slope) of change of the apparent dissociation constant from 40 to 50 bp. One-way ANOVA analyses show significant differences for the ED:GSL and KER:hKER mutants (**p < 0.01 and ***p < 0.001). (h) Plot representing the protein concentration required to achieve 50% depletion of the individual DNA fragments from the Cy5-DNA ladder for the indicated chromatin assembly factor 1 (CAF-1) domains. See also Figure 4—source data 1.
 
-## The length of the KER alters CAF-1 DNA-length recognition and modulates yCAF-1 functions in vivo
+### The length of the KER alters CAF-1 DNA-length recognition and modulates yCAF-1 functions in vivo
 
 The difference in DNA-length selectivity between the KER in isolation compared to yCAF-1 (Figure 1l and Figure 4a, b) suggests that the context of the KER within the CAF-1 complex directs preferential binding to the longer DNA fragments. To investigate this, we made perturbations to the length of the KER in yCAF1 and evaluated the effects on DNA binding and function in vivo.
 
 We expressed and purified a yCAF-1 mutant that contains two KER domains in tandem (yCAF1 2xKER) by introducing an additional yKER (amino acids 136–225) in the Cac1 subunit immediately after the endogenous 225 residue (Figure 1—figure supplement 2a). Examination of yCAF1 2xKER in our Cy5-DNA ladder experiment showed that unexpectedly the additional KER did not alter the DNA-length threshold of 40 bp (Figure 4f, g and Figure 5a). A similar result was observed with a yCAF-1 mutant that contains an additional KER N-terminal half of the KER (Cac1 residues 136–172) added after the endogenous 225 residue of Cac1 (yCAF1 +N-half) (Figure 4f and Figure 5—figure supplement 1a). In vivo, yCAF1 2xKER (2xKER) exhibited mild sensitivity to CPT (Figure 5b) and Zeocin (Figure 5—figure supplement 1b) to a similar extent as seen for ∆KER cells. Surprisingly, 2xKER in combination with inhibition of the WHD (2xKER+mWHD) did not have an additive effect unlike ∆KER in both CPT and Zeocin conditions (Figure 5b and Figure 5—figure supplement 1b). Likewise, the 2xKER mutant caused no significant loss of silencing in yeast and it did not increase this effect when in combination with mWHD (Figure 5c). Together, addition of a KER sequence did not result in substantial differences in the DNA-length selectivity of yCAF-1, and did not impact the ability to overcome DNA damage and maintain gene silencing in vivo.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig5-v1.jpg)
+
+**Figure 5.:** (a) Cartoon representing the yCAF-1 2xKER construct along with a representative image of an electrophoretic mobility shift assay (EMSA) showing binding to a set of Cy5-labeled DNA fragments (1 nM each) with a range of protein concentrations from 37 to 630 nM. Below the EMSA image, the free (unbound) DNA signal for each Cy5-labeled DNA is plotted as a function of the protein concentration. The error bars are the standard deviation from at least three measurements. (b) Yeast spot assays with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Camptothecin (CPT) at the specified concentrations. (c) Bar graph indicating the percentage of cells exhibiting elevated Green Fluorescent Protein (GFP) levels from yeast cultures of the indicated strains sorted by flow cytometry. Error bars indicate the standard deviation of the calculated values from three measurements. Statistical significance was calculated by Student’s t-test where *p < 0.05, **p < 0.01, and ***p < 0.001 relative to Cac1 WT cells. (d, e) Yeast spot assays as in (b) where cartoons on the left represent the shift of alpha helical turns for the indicated KER deletions in yCAF-1. See also Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative image of and electrophoretic mobility shift assay (EMSA) experiment of yCAF-1 +N-half, where each Cy5-labeled DNA fragment was at 1 nM concentration and the range of protein concentration was 37–760 nM. The graph shows the quantitation of free (unbound) DNA signal for each Cy5-labeled DNA as a function of protein concentration. (b, c) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Zeocin or Camptothecin (CPT) at the specified concentrations. See also Figure 5—figure supplement 1—source data 1.
+
 We then explored whether truncations of the KER helix have an effect in CAF-1 function in vivo. We made a short deletion within the basic region of the KER (∆145–149) (Figure 3a), which removes five amino acid residues, shortens the helix by 1.4 turns and changes the phase of the helix. The deletion is not in the main DNA-binding region of the KER (Figure 3) and is not expected to alter the DNA-binding function of the KER. Interestingly, ∆145–149 cells behave like ∆KER cells, exhibiting similar sensitivity to CPT and Zeocin, as well as high GFP expression levels in our silencing assay when in combination with mWHD (Figure 5c, d, Table 1, and Figure 5—figure supplement 1b). Strikingly, identical results were found when only the deletion of the last two C terminal residues 225–226 (∆225–226) of the KER region in the Cac1 subunit were made (Figure 5e, c, Table 1, and Figure 5—figure supplement 1b, c). We conclude that a very specific length and/or orientation of the yKER helix within CAF-1 is critical to overcome DNA damage and maintain gene silencing in vivo.
 
-## The longer human KER alters DNA-length-dependent binding and does not substitute for the yKER in yCAF-1 in vivo
+### The longer human KER alters DNA-length-dependent binding and does not substitute for the yKER in yCAF-1 in vivo
 
 Our results from altering the length of the KER of CAF-1 in yeast revealed that CAF-1 function is highly sensitive to the length or phase of the helix, where the deletion of only two residues was sufficient to impair yCAF-1 function similar to a complete deletion of the KER (Figure 5). The length of the KER regions in other species differ. In the human homolog CHAF1A, the KER has a similar distribution of basic residues, but it is at least 20 residues longer than the yKER (Figure 6a). To address the hypothesis that the longer hKER might have different DNA-binding properties than the yKER, we expressed and purified the hKER (CHAF1A residues 331–441) and using CD found that it has high alpha helical content, and exhibits non-cooperative unfolding as expected for an SAH (Figure 1—figure supplement 2b and Figure 6—figure supplement 1a–c). Subjecting the hKER to our Cy5-DNA ladder assay resulted in identical DNA-length selectivity behavior to the yKER (Figure 6b compared to 4b). However, substitution of the yKER for the hKER in yCAF-1(yCAF1 KER::hKER) (Figure 1—figure supplement 2a) slightly altered the DNA-length selectivity function of yCAF-1, as seen by the slight difference between the depletion of the 50 bp DNA fragments relative to the shorter DNA in our Cy5-DNA ladder assay (Figure 6c compared to Figure 4a). This difference is largely due to the decreased competitiveness of the 30 and 40 bp DNA compared to the 50 bp DNA (Figure 4f, g). This is only observed in the context of yCAF-1 but not in the isolated KERs (Figure 4h) and suggests that the longer hKER can alter the DNA-length preference of yCAF-1. Surprisingly, substitution of the KER for the hKER in yeast had a similar effect as the deletion of the KER, with similar sensitivity to CPT and Zeocin, as well as impaired chromatin silencing when in combination with mWHD (Figure 6d, e and Figure 6—figure supplement 1d). These results indicate that the hKER cannot substitute the yeast KER in vivo. Collectively, these results confirm the expected conservation of the overall SAH and DNA-binding characteristics of the KER from different species. Furthermore, and in agreement with our results in Figure 5, the length of the KER alters the DNA-length selectivity and plays a critical role in CAF-1 biological functions.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig6-v1.jpg)
+
+**Figure 6.:** (a) Sequence of the KER region from human (CHAF1A, top) and yeast (Cac1, bottom) homologs with positively charged residues Arg and Lys colored in blue, and negatively charged residue Glu and Asp colored in red. (b, c) Images of representative electrophoretic mobility shift assays (EMSAs) of human KER (hKER) and yCAF-1 KER::hKER were each Cy5-labeled DNA fragment is at 1 nM concentration and the range of protein concentration was 37–760 nM for both constructs. The graphs below show the quantitation of free (unbound) DNA signal for each Cy5-labeled DNA as a function of protein concentration. The data are plotted as the mean and standard deviation (error bars) from at least three measurements. (d) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Camptothecin (CPT) at the specified concentrations. (e) Bar graph indicating the percentage of cells exhibiting elevated Green Fluorescent Protein (GFP) levels from yeast cultures of the indicated strains sorted by flow cytometry. Error bars indicate the standard deviation of the calculated values from three measurements. Statistical significance was calculated by Student’s t-test where **p < 0.01 and ***p < 0.001 relative to Cac1 WT cells. See also Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Helical net diagram of the predicted single alpha-helix (SAH) of the hKER (CHAF1A residues 331–441). In this representation, the SAH structure has been split along a helical track and unwound so it can be displayed in 2D, with coloration as in Figure 2—figure supplement 2c. Lines connecting colored residues represent predicted ion pair interactions based on strength: solid lines, strong; black dashed lines, medium; yellow dashed lines, weak. (b) Circular dichroism spectra of the hKER. (c) Thermal denaturation monitored by circular dichroism at 222 nm (m°222) of the hKER. (d) Yeast spot assay with fivefold serial dilutions of cultures of the indicated strains; grown in the presence of Zeocin at the specified concentrations. See also Figure 6—figure supplement 1—source data 1.
 
 ## Discussion
 
 The results presented here reveal the structure, activities, and function of the KER domain in CAF-1. The KER is a long SAH motif, with a distinct and unique pattern of basic residues. It binds DNA in a non-sequence-specific manner with a binding affinity in the nM range, establishing it as a first-in-class DBD, namely the ‘SAH-DBD’. Moreover, we found that in the context of yCAF-1, the KER is largely responsible for observed DNA-length preference of CAF-1 for tetrasome-length DNA (Sauer et al., 2017) and CAF-1 function in vivo.
 
-## The KER SAH is a novel DNA-binding motif
+### The KER SAH is a novel DNA-binding motif
 
 A defining feature of the SAH motif is the sequence pattern, which produces stabilizing electrostatic interaction networks along the alpha-helix. The KER SAH is the longest SAH described to date (Cac1 aa 136–226; 90 aa) with the same general pattern of alternating basic and acidic amino acid residues as classic SAHs (Figure 2; Sivaramakrishnan et al., 2008; Batchelor et al., 2019; Dudola et al., 2017; Gáspári et al., 2012). However, the KER also has a stripe of basic residues along most of the helix, so far only noticeable in the KER SAH of CAF-1. Also unlike the canonical SAH motif, such as in Myosin 7a, the KER SAH binds to DNA. The appearance of multiple KER–DNA complexes in EMSA supports the role of the KER as a non-sequence-specific DBD (Churchill et al., 1999; Churchill et al., 1995), consistent with the role of CAF-1 in depositing H3/H4 dimers throughout the genome. The KER of CAF-1 is the first SAH-DBD of its type within the larger group IV of ‘other alpha-helix DNA-binding domains’ (Luscombe et al., 2000).Thus, the discovery that the KER is a DNA-binding SAH expands the repertoire of DBDs.
 
 The molecular mechanism of KER-DNA recognition requires both key positively charged residues and alpha helical conformation in the Cac1 middle-A section (Figure 3). Although CAF-1 prefers to bind to tetrasome-length DNA (Luger et al., 1997; Donham et al., 2011), the KER SAH is capable of binding to DNA independently and cooperatively in a final ratio related to the DNA length with an estimated site size as short as 20 bp, which is typical of many DBDs. Many alpha helical DNA-binding motifs, including leucine zippers and helix–loop–helix motifs, bind across the DNA within the major groove (Luscombe et al., 2000; Wolberger, 2021; Churchill and Travers, 1991). Alternatively, the positively charged face of the KER could align with the DNA, similar to the long helices that lie parallel to the DNA exist in chromatin remodelers, such as the HSA and post-HSA domains in the actin-related proteins (Arp4 and Arp8) of INO80 (Knoll et al., 2018; Baker et al., 2021). However, these helices simultaneously interact extensively with other polypeptides in addition to the DNA (Knoll et al., 2018; Baker et al., 2021). In the context of the intact CAF-1 complex, there are fewer CAF-1–DNA complexes observed, which suggests that KER–DNA binding is constrained by other interactions within the complex. Whether the KER binds along the length of the DNA or engages only short stretches of the DNA in a similar manner to the other helical motifs is not clear. Our results are consistent with aspects of both of these models (Figure 7—figure supplement 1a, b), as the middle region of the KER confers the ability to bind to DNA, and the positively charged amino acids along one face of the SAH-DBD would be suitable for electrostatic steering as well as recognition of long segments of DNA.
 
-## Function of the KER SAH-DBD in CAF-1 and implications for nucleosome assembly
+### Function of the KER SAH-DBD in CAF-1 and implications for nucleosome assembly
 
 The KER confers the preference of CAF-1 for tetrasome-length DNA (Figures 1 and 4), in spite of the SAH-DBD recognition of shorter DNA lengths (Figure 4). Surprisingly, nearly all perturbations to the KER that we tested in yeast had reduced resistance to DNA damage and loss of gene silencing in combination with the mWHD (Figures 1, 5, 6 and Table 1), even a deletion of two residues, which rotated the helix approximately 200° relative to the DNA or other regions of CAF-1. Although doubling or extending the length of the yKER in yCAF-1 did not change the selectivity for 40 bp DNA, the 2xKER strain overall survived CPT and Zeocin induced DNA damage and maintained gene silencing in the absence of a functional WHD. This suggests that the second KER SAH functionally substitutes for the WHD in vivo. We also increased the DNA-length preference of yCAF-1 to 50 bp by either derepressing the DNA-binding function of the WHD, via the ED:GSL mutation or substituting the yKER with the hKER (Figures 4 and 6). Both of these mutations provide additional potential DNA-binding interactions, but the hKER substitution also had a similar loss of function to the deletion of the KER in vivo. Thus, the context of the KER, including molecular interactions, presence of a viable WHD and structural requirements imposed by the architecture of the CAF-1 complex, is critical for DNA-length sensing and CAF-1 function in vivo.
 
 How might a DNA-length-sensing function of the KER in CAF-1 be relevant during DNA synthesis? One possibility is that extrusion of DNA through PCNA exposes CAF-1 to increasing lengths of naked DNA. The ability of CAF-1 to preferentially bind to a tetrasome length of DNA (Figure 7a) could ensure sufficient DNA is available so that as histone binding releases the WHD, there will be sufficient space along the DNA for the subsequent assembly of tetrasomes, while simultaneously protecting newly replicated DNA from spurious binding of other factors (Ramachandran and Henikoff, 2016). Loss of the KER can be compensated by the WHD (Figures 1 and 7b), but deletion of both the KER and WHD renders yeast with a reduced ability to survive DNA damage or maintain gene silencing (Figure 7c). Moreover, the yKER is shorter than the KER in humans and many other eukaryotes, and correspondingly preferentially recognizes shorter DNA (Figure 6) than the hKER in the context of yCAF-1, which raises the possibility that the KER serves a spacer function to ensure that tetramers are assembled at specific spacings (Figure 7d). Classic SAHs (Dudola et al., 2017; Gáspári et al., 2012) predominantly use the long rigid helix to bridge two functional domains either as a linker, spacer, or flexible spring (Wolny et al., 2014; Wolny et al., 2017; Kwon et al., 2020; Bandera et al., 2021). Therefore, we propose that the KER SAH acts as a DNA-binding physical spacer element and bridge that links with structural precision multiple functional domains within CAF-1 to configure the architecture of CAF-1 for efficient tetrasome assembly after DNA synthesis.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig7-v1.jpg)
+
+**Figure 7.:** (a) The KER safeguards DNA for tetrasome assembly. Because the KER has strong binding affinity toward DNA and is readily competent for binding, recruitment of CAF-1 to DNA through the KER can be an initial transient state prior to assembly of tetrasomes during DNA replication (left panel). Furthermore, the DNA-length selectivity function of the KER equips CAF-1 to bind to free DNA regions that are tetrasome-length (≥40 bp). While CAF-1 is bound to DNA through the KER, CAF-1 can receive newly synthesized H3/H4 dimers from the histone chaperone Anti-silencing Function 1 (Asf1) which in turn facilitates DNA binding of the winged helix domain (WHD; middle panel). The KER and WHD bind cooperatively to DNA which facilitate the recruitment of two copies of the CAF-1–H3/H4 complex to the same DNA vicinity (middle panel). A transient DNA–(CAF-1–H3/H4)2 complex provides the conditions to favor the formation of the H3/H4 tetramer (middle panel, green arrows) following its the deposition on DNA and presumably ejecting CAF-1 from the DNA (right panel). (b) Deletion of the KER from yCAF-1 (yCAF-1 ∆KER) impairs binding to DNA in vitro, presumably because the WHD binds more weakly to DNA and is in an autoinhibited state. But in vivo yCAF-1 ∆KER is still competent for tetrasome assembly with minimal sensitivity to DNA damage and defects on heterochromatin formation. (c) In contrast, deletion of the KER (∆KER) in combination with inhibition of the DNA-binding function of the WHD (mWHD) dramatically impairs DNA repair and heterochromatin formation functions of yCAF-1 in vivo. Because in ∆KER+mWHD cells yCAF-1 has no detectable functional DNA-binding domain, tetrasome formation cannot occur efficiently. (d) The length of the KER domain in CAF-1 varies across species and it can alter the DNA length recognized by CAF-1 in vitro, which could alter tetrasome assembly during DNA replication.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83538/elife-83538-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) The KER is aligned along the length of the DNA. (b) The KER binds in the major groove of DNA in the ‘middle-A’ region similar to basic-leucine zipper proteins. The KER is shown in green and the DNA in gray.
+
 ## Materials and methods
 
-## Expression and purification of Cac1 subunits and CAF-1 proteins from insect cells
+### Expression and purification of Cac1 subunits and CAF-1 proteins from insect cells
 
 For expression in insect cells, baculoviruses harboring yCAF-1 subunits and mutants were made using the Gateway technology subcloning system (Thermo Fisher Scientific). The pDONR/Zeo plasmid containing the sequence encoding Cac1 subunit (Cac1, pDONR/Zeo; Supplementary file 1) was used for mutagenesis experiments. Briefly, the Cac1, pDONR/Zeo plasmid was linearized via polymerase chain reaction (PCR) with the Q5 DNA polymerase (NEB) and a pair of primers for each Cac1 mutant that anneal to the sequences flanking the section to be modified (Supplementary file 2). The primers also had complementary sequences with overhangs: to each other for deletion of Cac1 regions, or to a double-stranded DNA fragment either synthetically manufactured (Integrated DNA Technologies) or PCR amplified from cDNA for the exogenous incorporation of other genes or duplication of Cac1 sequences (Supplementary file 2). Circularization of the modified Cac1, pDONR/Zeo (Supplementary file 1) plasmid with the desired mutation was done via In-Fusion technology (Takara). Each pDONR/Zeo Cac1 mutant plasmid was verified by Sanger sequencing. Cac1 mutants from the pDONR/Zeo plasmids were then subcloned into the pDEST8 vector via Gateway technology (Thermo Fisher Scientific) followed by Sanger sequencing verification (Supplementary file 1). Finally, to generate baculovirus stocks of each Cac1 mutant, we used the Bac-to-Bac system (Thermo Fisher Scientific), where the generated pDEST8 plasmids were transformed into DH10Bac Escherichia coli cells (Thermo Fisher Scientific) to generated bacmids competent for baculovirus production in Sf9 cells (Thermo Fisher Scientific) via transfection. Media containing secreted baculovirus from cultured Sf9 cells was stored at 4°C and used for subsequent protein production.
 
 Full-length yCAF-1 and complex mutants were expressed for 72 hr in High Five cells (Thermo Fisher Scientific) infected with a baculovirus stock of Cac1 with a C-terminal Strep II epitope, Cac2 with a C-terminal His6 or Strep II epitope, and Cac3 with a C-terminal 3xFLAG epitope. Purification of the CAF-1 complexes was carried out as before (Liu et al., 2012) where cell pellets were homogenized in 20 mM HEPES(N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid) pH 7.4, 350 mM NaCl, 1 mM DTT(1,4-dithiothreitol), 10 µg/mL DNase I, 1 mM Na3VO4, 10 mM NaF, 1 mM PMSF(phenylmethylsulfonyl fluoride), and a cocktail of protease inhibitors (Tablet EDTA-free, Sigma). Homogenate was clarified by centrifugation at 10,000 × g for 45 min at 4°C, followed by affinity chromatography with a StrepTrap HP column (Cytiva) and washed extensively with 20 mM HEPES pH 7.4, 350 mM NaCl, and 0.5 mM TCEP(tris(2-carboxyethyl)phosphine). Protein was eluted with the wash buffer containing 2.5 mM d-Desthiobiotin (MilliporeSigma). Purified yCAF-1 complexes (Figure 1—figure supplement 1a) were concentrated with 100,000 MWCO centrifugal concentrators (Sartorius), aliquoted in small volumes, flash frozen in liquid nitrogen, and stored at −80°C.
 
-## Expression and purification of CAF-1 domains and Myosin 7a SAH from E. coli
+### Expression and purification of CAF-1 domains and Myosin 7a SAH from E. coli
 
 Plasmids for bacterial expression were generated using the Gateway technology subcloning system (Thermo Fisher Scientific). The initial double-stranded DNA insert containing the cDNA that encodes for the protein of interest was obtained either synthetically manufactured (Integrated DNA Technologies) or by PCR amplification from cDNA of a plasmid containing the full-length protein (Supplementary file 2). To obtain the double-stranded DNA insert for human KER, E. coli codon optimized CHAF1A cDNA was first cloned into a pGEX-6P-1 vector via In Fusion (Takara) (Supplementary file 3). For Gateway cloning, the double-stranded DNA inserts were subcloned into the pDONR/Zeo and pDEST566 vectors followed by Sanger sequencing verification of each plasmid (Supplementary file 1).
 
@@ -112,7 +281,7 @@ Yeast Cac1 KER constructs (full-length and truncations), human CHAF1A KER, and M
 
 The Cac1 WHD construct was expressed and purified as before (Liu et al., 2016) using the Cac1 WHD, pGEX-6P-1 plasmid (Supplementary file 1).
 
-## Preparation of DNA templates
+### Preparation of DNA templates
 
 DNA fragments of varying lengths were designed around the dyad of the 147 bp 601 DNA sequence (Lowary and Widom, 1998; Luger et al., 1997). Synthetic oligonucleotides for production of dsDNA (Integrated DNA Technologies) had only one strand containing a Cy5 fluorophore at the 5′ end (Supplementary file 2).
 
@@ -120,9 +289,13 @@ Each oligonucleotide was resuspended in 10 mM Tris–HCl and 1 mM EDTA at pH 8.0
 
 The 10–100 bp DNA step ladder was purchased from Promega (Cat. G447A).
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
-Increasing concentrations of protein that ranged from 9 nM to 10 µM were incubated with 1 or 3 nM of Cy5-labeled DNA in 20 mM HEPES pH 7.4, 150 mM NaCl, and 0.5 mM TCEP for 1 hr on ice. The protein–DNA species were separated by electrophoresis in 0.2× TBE 4%, 5%, 6%, or 10% 59:1 acrylamide:bis-acrylamide native gels for 60 min at 70 V on ice. Fluorescence from the Cy5 fluorophore was detected by imaging the native gels on a c600 (Azure Biosystem) or a Sapphire Biomolecular (Azure Biosystems) imager. To determine dissociation constants between the protein and DNA substrates, the intensity of each DNA band was determined using the AzureSpot software (Azure Biosystems), followed by background subtraction and calculation of the DNA fraction bound. Finally, protein concentrations ([Protein]) and DNA fraction bound values were plotted and the binding curves fitted with Equation 1 using the Prism software (GraphPad):(1)Fraction bound=Bmax×[Protein]hKDh+[Protein]h
+Increasing concentrations of protein that ranged from 9 nM to 10 µM were incubated with 1 or 3 nM of Cy5-labeled DNA in 20 mM HEPES pH 7.4, 150 mM NaCl, and 0.5 mM TCEP for 1 hr on ice. The protein–DNA species were separated by electrophoresis in 0.2× TBE 4%, 5%, 6%, or 10% 59:1 acrylamide:bis-acrylamide native gels for 60 min at 70 V on ice. Fluorescence from the Cy5 fluorophore was detected by imaging the native gels on a c600 (Azure Biosystem) or a Sapphire Biomolecular (Azure Biosystems) imager. To determine dissociation constants between the protein and DNA substrates, the intensity of each DNA band was determined using the AzureSpot software (Azure Biosystems), followed by background subtraction and calculation of the DNA fraction bound. Finally, protein concentrations ([Protein]) and DNA fraction bound values were plotted and the binding curves fitted with Equation 1 using the Prism software (GraphPad):
+
+$$
+Fraction bound=\frac{B_{max}\times[Protein]^{h}}{K_{D}^{h}+[Protein]^{h}}
+$$
 
 where h corresponds to the Hill coefficient, KD is the dissociation constant, and Bmax represents maximum binding. All EMSA experiments were done at least three times and the reported KD values and Hill coefficients correspond to the average of the multiple measurements. Error bars represent the standard deviation.
 
@@ -130,40 +303,48 @@ EMSA experiments using the commercial 10 bp DNA step ladder substrate contained 
 
 In the Cy5-DNA ladder assay, the signal of the free DNA of a particular fragment from subsequent protein titration was normalized to the signal of the free DNA in the absence of protein (normalized free DNA). To obtain the KDapp, we generated and fitted binding curves using corresponding fraction bound (Equation 1).
 
-## Structure determination and analyses
+### Structure determination and analyses
 
 The His6-MBP-yKER (Cac1 residues 136–225) protein was expressed and purified as described above and protein was concentrated to 25 mg/mL in 20 mM HEPES pH 7.5 and incubated with 200 mM NDSB-256. Protein crystals grew in 0.1 M phosphate/citrate pH 4.2 and 30% PEG 300 using the hanging drop vapor diffusion method at 15°C. Data were collected using a Rigaku Micromax 007 high flux microfocus X-ray generator equipped with a VariMax high flux optic, an AFC11 4-axis goniometer, a Pilatus 200K 2D area detector, and an Oxford cryo-system. Data were initially processed using the HKL-3000R software (HKL Research Inc) and phased by molecular replacement using the structure of MBP (PDB ID: 1PEB) as the search model (Telmer and Shilton, 2003). The structure was solved at a resolution of 2.81 Å. The model was built using COOT (Emsley and Cowtan, 2004) and refinement was conducted using PHENIX (Afonine et al., 2012), to achieve acceptable geometry and stereochemistry. Group TLS refinement was used in the refinement as there were large regions of chain, with much higher than average B-factors. Several sections of chain D are poorly defined due to this disorder. The quality of the structure (PDB ID: 8DEI) was analyzed (Supplementary file 4) and the RMSD values were calculated using PyMol and COOT. Figures were made using PyMol and Photoshop (Adobe).
 
-## CD spectroscopy
+### CD spectroscopy
 
-Proteins were prepared for CD at a concentration of 0.1 mg/mL in 10 mM Na-Phosphate Buffer at pH 7.4 and 50 mM NaCl. KER samples containing DNA were mixed at 1:1 molar concentration of protein and 40 bp 601 DNA. All samples were analyzed in a cuvette with a path length of 1 mm on a Jasco J-815 CD Spectrophotometer equipped with a Lauda Brinkman ecoline RE 106 temperature controller. CD was measured in millidegrees from 185 to 350 nm wavelengths with a bandpass of 1 nm and a step size of 1.0 nm. Six scans of each sample were averaged per experiment with at least three independent replicates. Equation 2 is used to calculate mean residue ellipticity (MRE) (Woody and Fasman, 1996):(2)MRE=m0×MWn−110×L×C
+Proteins were prepared for CD at a concentration of 0.1 mg/mL in 10 mM Na-Phosphate Buffer at pH 7.4 and 50 mM NaCl. KER samples containing DNA were mixed at 1:1 molar concentration of protein and 40 bp 601 DNA. All samples were analyzed in a cuvette with a path length of 1 mm on a Jasco J-815 CD Spectrophotometer equipped with a Lauda Brinkman ecoline RE 106 temperature controller. CD was measured in millidegrees from 185 to 350 nm wavelengths with a bandpass of 1 nm and a step size of 1.0 nm. Six scans of each sample were averaged per experiment with at least three independent replicates. Equation 2 is used to calculate mean residue ellipticity (MRE) (Woody and Fasman, 1996):
+
+$$
+MRE=\frac{m^{0}\times\frac{MW}{n−1}}{10\timesL\timesC}
+$$
 
 where m0 is the observed ellipticity in millidegrees, MW is the molecular weight of the protein in g/mol, n is the number of residues of the protein, L is the path length of cell, and C is the concentration of the protein in g/L.
 
-To calculate the fractional helicity of a protein sample, we used the 222 nm wavelength method (Wei et al., 2014; Equation 3):(3)Fractional helicity=θ222exp−θ222uθ222h−θ222u
+To calculate the fractional helicity of a protein sample, we used the 222 nm wavelength method (Wei et al., 2014; Equation 3):
 
-where θ222exp is the experimentally observed MRE at 222 nm of the protein sample, and θ222u and θ222h are the MRE at 222 nm of a protein with 0% and 100% helical content which are estimated to be −3000 and −39,000 degxcmxdmol−1, respectively.
+$$
+Fractional helicity=\frac{\theta_{222}^{exp}−\theta_{222}^{u}}{\theta_{222}^{h}−\theta_{222}^{u}}
+$$
 
-## Chemical crosslinking
+where $\theta_{222}^{exp}$ is the experimentally observed MRE at 222 nm of the protein sample, and $\theta_{222}^{u}$ and $\theta_{222}^{h}$ are the MRE at 222 nm of a protein with 0% and 100% helical content which are estimated to be −3000 and −39,000 degxcmxdmol−1, respectively.
+
+### Chemical crosslinking
 
 DSS crosslinker (Thermo Pierce) was prepared at 2 mM by dissolution in DMSO. 10 µM yKER (Cac1 residues 136–225 with additional C-terminal Tyrosine) was allowed to incubate with 200 µM DSS or DMSO for 30 min at room temperature in 10 mM Phosphate Buffer at pH 7.5, 150 mM NaCl, and 0.5 mM TCEP. The crosslinking reaction was quenched by addition of 50 mM Tris pH 7.4 and incubated for an additional 15 min. The reactions were resolved in a 4–15% Tris–HCl sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE; Bio-Rad) and stained with Coomassie Blue.
 
-## Yeast strains and primers
+### Yeast strains and primers
 
 The yeast strains used in this study and their genotypes are fully described in Supplementary file 3. Strains used in DNA damage sensitivity assays and western blotting were isogenic to W303-1a (Thomas and Rothstein, 1989), while strains used to assay silencing at the HMR locus were isogenic to BY4741 (Brachmann et al., 1998). Mutations in the CAC1 gene were made using CRISPR–Cas9 (Ryan et al., 2016) to mutate the endogenous CAC1 (RLF2) locus. Sequences of gRNA and HDR template DNA used to generate each mutant are listed in Supplementary file 2. Where indicated, strains were deleted for RTT106 or CAC1 using pFA6a-HIS3MX6 (Longtine et al., 1998) and pFA6a-KANMX6 (Bähler et al., 1998), respectively. Strains for the Okazaki fragment assay were generated by crossing KER domain mutants (RAY165, 264, 221, 245, 233) with the strain YDS12 containing repressible DNA Ligase 1 (cdc9::tetO7-CDC9 cmv-LacI-NAT) (Yeung and Smith, 2020). After sporulation, haploids were screened using auxotrophic markers, and for presence of KER domain mutations by PCR.
 
-## DNA damage sensitivity assay
+### DNA damage sensitivity assay
 
 Cells were grown in YPD media until reaching mid-log phase (OD 0.8–1.0). They were collected by centrifugation, resuspended in sterile water, and fivefold serially diluted before spotting onto YPD agar plates containing the indicated concentrations of the DNA-damaging drugs Zeocin (Invitrogen R25001) or CPT (Cayman Chemical 11694). Plates were grown for 3 days at 30°C before imaging.
 
-## Measurement of loss of silencing at the HMR locus
+### Measurement of loss of silencing at the HMR locus
 
 To observe loss of silencing at the HMR locus, cells isogenic to BY4741 were transformed with the plasmid pHMR::PURA3-GFP/URA3 after EcoRI/XhoI digestion (Laney and Hochstrasser, 2003). In WT cells, this GFP reporter is silenced, while mutants with loss of silencing express GFP at varying levels that was detected by flow cytometry (Huang et al., 2005). 0.5 mL of mid-log phase (OD 0.8–1.0) cells growing in synthetic complete (SC) media containing 2% dextrose were collected by centrifugation, washed twice with ice-cold phosphate buffered saline (PBS), and resuspended in 1 mL of PBS before analysis on a flow cytometer (BD Biosciences BD LSR II). Cells deleted for SIR2 (sir2∆) have a severe silencing defect and were used as a positive control. As indicated in Figure 1—figure supplement 2f, a gate containing <1% of WT cells and >97% of sir2∆ cells was drawn and used to identify the percent of cells with loss of silencing. As previously observed, the percentage of WT cells with loss of silencing varied from ~0.3% to 2.5% across experiments. Data are presented as the average ± standard deviation of at least three experiments performed on independent yeast colonies.
 
-## Okazaki fragment length assay
+### Okazaki fragment length assay
 
 Okazaki fragment labeling reactions were carried out as previously described (Smith and Whitehouse, 2012). Briefly, strains carrying doxycycline-repressible CDC9 were treated with doxycycline for 2.5 hr. Following preparation of genomic DNA, 3′ ends were labeled by extension with Klenow exo- (NEB) and [alpha]32P-dCTP, separated in 1.3% alkaline agarose gels, and transferred to a Hybond-N membrane for visualization.
 
-## Western blot for Cac1-FLAG
+### Western blot for Cac1-FLAG
 
 1 OD of cells with an endogenous C-terminal FLAG tag on CAC1 were grown in YPD to mid-log phase, collected, flash frozen in liquid nitrogen, resuspended in 100 μL of modified Laemmli buffer (Horvath and Riezman, 1994), and boiled for 5 min. Proteins were separated on a 10% SDS–PAGE gel and western blotting was performed using anti-FLAG M2 (Sigma F3165) and anti-GAPDH (Sigma A9521).

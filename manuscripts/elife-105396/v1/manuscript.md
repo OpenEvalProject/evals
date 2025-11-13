@@ -11,17 +11,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Department of Physiology, The University of Texas Southwestern Medical Center Dallas United States
-2. https://ror.org/05byvp690 Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States
-3. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase United States
-4. https://ror.org/046rm7j60 Department of Medicine (Cardiology), UCLA Los Angeles United States
-5. https://ror.org/046rm7j60 Department of Anesthesiology and Perioperative Medicine, Division of Molecular Medicine, David Geffen School of Medicine, University of California Los Angeles Los Angeles United States
+1. Department of Physiology, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+2. Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+3. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))
+4. Department of Medicine (Cardiology), UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Department of Anesthesiology and Perioperative Medicine, Division of Molecular Medicine, David Geffen School of Medicine, University of California Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
 ## Abstract
 
-Na + /Ca 2+ exchangers (NCXs) transport Ca 2+ across the plasma membrane in exchange for Na + and play a vital role in maintaining cellular Ca 2+ homeostasis. Our previous structural study of human cardiac NCX1 (HsNCX1) reveals the overall architecture of the eukaryotic exchanger and the formation of the inactivation assembly by the intracellular regulatory domain that underlies the cytosolic Na + -dependent inactivation and Ca 2+ activation of NCX1. Here, we present the cryo-EM structures of HsNCX1 in complex with a physiological activator phosphatidylinositol 4,5-bisphosphate (PIP 2 ), or pharmacological inhibitor SEA0400, that enhances the inactivation of the exchanger. We demonstrate that PIP 2 binding stimulates NCX1 activity by inducing a conformational change at the interface between the transmembrane (TM) and cytosolic domains that destabilizes the inactivation assembly. In contrast, SEA0400 binding in the TM domain of NCX1 stabilizes the exchanger in an inward-facing conformation that facilitates the formation of the inactivation assembly, thereby promoting the Na + -dependent inactivation of NCX1. Thus, this study reveals the structural basis of PIP 2 activation and SEA0400 inhibition of NCX1 and provides some mechanistic understandings of cellular regulation and pharmacology of NCX family proteins.
+Na+/Ca2+ exchangers (NCXs) transport Ca2+ across the plasma membrane in exchange for Na+ and play a vital role in maintaining cellular Ca2+ homeostasis. Our previous structural study of human cardiac NCX1 (HsNCX1) reveals the overall architecture of the eukaryotic exchanger and the formation of the inactivation assembly by the intracellular regulatory domain that underlies the cytosolic Na+-dependent inactivation and Ca2+ activation of NCX1. Here, we present the cryo-EM structures of HsNCX1 in complex with a physiological activator phosphatidylinositol 4,5-bisphosphate (PIP2), or pharmacological inhibitor SEA0400, that enhances the inactivation of the exchanger. We demonstrate that PIP2 binding stimulates NCX1 activity by inducing a conformational change at the interface between the transmembrane (TM) and cytosolic domains that destabilizes the inactivation assembly. In contrast, SEA0400 binding in the TM domain of NCX1 stabilizes the exchanger in an inward-facing conformation that facilitates the formation of the inactivation assembly, thereby promoting the Na+-dependent inactivation of NCX1. Thus, this study reveals the structural basis of PIP2 activation and SEA0400 inhibition of NCX1 and provides some mechanistic understandings of cellular regulation and pharmacology of NCX family proteins.
 
 ## Introduction
 
@@ -35,21 +35,151 @@ We previously determined the human cardiac NCX1 structure in an inward-facing in
 
 ## Results
 
-## PIP2 activation of NCX1
+### PIP2 activation of NCX1
 
 PIP2 has been shown to modulate NCX1 activity by reducing the Na+-dependent inactivation of the exchanger (Hilgemann et al., 1992a; He et al., 2000; Hilgemann and Ball, 1996; Yaradanakul et al., 2007). To characterize the effect of PIP2 on HsNCX1, we expressed the exchanger in Xenopus laevis oocytes and recorded the outward exchanger currents using the giant patch technique in the inside-out configuration with or without applying porcine brain PIP2 (Figure 1 and Methods). The recording was performed with 12 µM free cytosolic [Ca2+]i (bath), and the outward NCX1 current was elicited by the rapid replacement of 100 mM Cs+ with 100 mM Na+ in the bath solution. In the patches without applying PIP2, the outward exchanger currents quickly decay and reach a steady state due to Na+-dependent inactivation (Figure 1A). Introducing 10 µM PIP2 at the steady state progressively increases the current that plateaus at about twofold of the peak current measured before PIP2 addition (Figure 1A). After PIP2 washout, the outward current remains at the pre-removal level without obvious inactivation, indicating high-affinity PIP2 binding and its positive modulation of NCX1 by both potentiating the peak current and reducing the Na+-dependent inactivation. Intriguingly, the commonly used shorter chain PIP2 substitute (PIP2 diC8) does not have the equivalent activation effect on NCX1, and the exchanger remains susceptible to Na+-dependent inactivation when recorded in the presence of 10 µM PIP2 diC8 (Figure 1B). However, PIP2 diC8 still binds and stimulates both the peak and steady currents of the exchanger. This stimulation effect is abolished after PIP2 diC8 washout, indicating a lower affinity of short-chain PIP2 than that of the long-chain native PIP2.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig1-v1.jpg)
 
-**Figure 1.:** 2) enhances HsNCX1 activity.(A) Representative outward currents recorded from oocytes expressing the human NCX1 before and after application of long-chain brain PIP2. Currents were activated by replacing cytosolic Cs+ with Na+. Application of 10 µM brain PIP2 enhanced HsNCX1 current and abolished the Na+-dependent inactivation irreversibly. Perfusion time of PIP2 is indicated above traces, while lines below traces indicate solution exchange. Arrows mark the peak and steady currents used to measure the fold of increase upon PIP2 application. The fold of current increase was calculated by comparing the peak or steady-state current before and after PIP2 application (fold of increase in peak current = 2.2 ± 0.2, n=14; steady-state current = 8.9 ± 1.7, n=10; data points are mean ± s.e.m.). (B) Representative outward currents recorded before and after application of short-chain PIP2 diC8 (10 µM). PIP2 diC8 was perfused from the cytosolic side before HsNCX1 activation (in the presence of Cs+ for 30 s) and during transport (in the presence of Na+). Both peak and steady-state currents of HsNCX1 are enhanced by PIP2 diC8, and the effect is reversible (fold of current increase in peak current = 1.6 ± 0.1, n=8; steady-state current = 2.6 ± 0.4, n=6; data points are mean ± s.e.m.). The Na+-dependent inactivation remains in the presence of PIP2 diC8. (C) Representative outward currents recorded with the application of brain PIP2 and PIP2 diC8. The NCX1 current was first potentiated by applying 10 µM brain PIP2 at the steady state. The PIP2 effect was not reversible over the 5 min washout with a solution containing 100 mM Na+ and 12 µM Ca2+. The same patch was then perfused with the same solution in the presence of 10 µM PIP2 diC8. Application of the short-chain PIP2 diC8 facilitates the decrease of brain PIP2-potentiated current, suggesting that both lipids compete for the same binding site.Figure 1—source data 1.2 application.
+**Figure 1.:** (A) Representative outward currents recorded from oocytes expressing the human NCX1 before and after application of long-chain brain PIP2. Currents were activated by replacing cytosolic Cs+ with Na+. Application of 10 µM brain PIP2 enhanced HsNCX1 current and abolished the Na+-dependent inactivation irreversibly. Perfusion time of PIP2 is indicated above traces, while lines below traces indicate solution exchange. Arrows mark the peak and steady currents used to measure the fold of increase upon PIP2 application. The fold of current increase was calculated by comparing the peak or steady-state current before and after PIP2 application (fold of increase in peak current = 2.2 ± 0.2, n=14; steady-state current = 8.9 ± 1.7, n=10; data points are mean ± s.e.m.). (B) Representative outward currents recorded before and after application of short-chain PIP2 diC8 (10 µM). PIP2 diC8 was perfused from the cytosolic side before HsNCX1 activation (in the presence of Cs+ for 30 s) and during transport (in the presence of Na+). Both peak and steady-state currents of HsNCX1 are enhanced by PIP2 diC8, and the effect is reversible (fold of current increase in peak current = 1.6 ± 0.1, n=8; steady-state current = 2.6 ± 0.4, n=6; data points are mean ± s.e.m.). The Na+-dependent inactivation remains in the presence of PIP2 diC8. (C) Representative outward currents recorded with the application of brain PIP2 and PIP2 diC8. The NCX1 current was first potentiated by applying 10 µM brain PIP2 at the steady state. The PIP2 effect was not reversible over the 5 min washout with a solution containing 100 mM Na+ and 12 µM Ca2+. The same patch was then perfused with the same solution in the presence of 10 µM PIP2 diC8. Application of the short-chain PIP2 diC8 facilitates the decrease of brain PIP2-potentiated current, suggesting that both lipids compete for the same binding site.
 
 To verify that the short-chain PIP2 diC8 and the long-chain brain PIP2 share the same binding site, we performed a competition assay. As shown in Figure 1C, introducing high-affinity brain PIP2 at the steady state yields a long-lasting potentiation of NCX1 current that is irreversible even after a 5 min washout. Applying PIP2 diC8 can steadily decrease the brain PIP2-potentiated NCX1 current, suggesting that both lipids compete for the same binding site.
 
-## Structural insight into PIP2 binding in NCX1
+### Structural insight into PIP2 binding in NCX1
 
 To reveal the structural mechanism of PIP2 activation, we tried to obtain the EM structure of HsNCX1 in the presence of the long-chain porcine brain PIP2. However, the exchanger becomes highly dynamic, yielding a low-resolution EM map with an overall shape similar to a cytosolic Ca2+-activated NCX1 whose β-hub-mediated inactivation assembly is destabilized and cytosolic domain (CBD1 and CBD2) is detached from the TM domain (Xue et al., 2023: Figure 2—figure supplement 1). We suspect the long-chain PIP2 exerts the same activation effect on NCX1 as high cytosolic Ca2+ by destabilizing the inactivation assembly. As NCX1 retains its Na+-dependent inactivation property in the presence of the short-chain PIP2, we reasoned that the PIP2 diC8-bound NCX1 likely remains in an inward-facing inactivated state in high Na+ low Ca2+ condition, and its structure would still reveal how PIP2 binds in NCX1. We therefore determined the EM structure of NCX1 in complex with PIP2 diC8 at 3.5 Å (Figure 2, Figure 2—figure supplement 2, Table 1, and Methods), which indeed adopts an inward-facing conformation with intact inactivation assembly. Due to the relative dynamic movement between the TM and cytosolic domains, we also performed local refinement to improve the map quality for each domain (Figure 2—figure supplement 2). The density of the IP3 head group from the bound PIP2 diC8 is well defined in the local-refined EM map focused on the TM domain (Figure 2A, Figure 2—figure supplement 2B). This density is not present in the apo NCX1 structure (Figure 2—figure supplement 3). The acyl chains, however, are flexible and could not be resolved in the structure (Figure 2—figure supplement 2). The lipid is attached to the cytosolic sides of TMs 4 and 5 with its head group positioned at the C-terminal end of TM5 (Figure 2A). Four positively charged residues, including K164 and R167 from the N-terminus of TM4 and R220 and K225 from the C-terminus of TM5, are positioned in the vicinity of the PIP2 head group and likely participate in the electrostatic interactions with the head group (Figure 2A).
 
-## PIP2 diC8-induced conformational changes in NCX1
+![Figure 2.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig2-v1.jpg)
+
+**Figure 2.:** (A) Structure of the transmembrane (TM) and β-hub regions of PIP2 diC8-bound NCX1 with a zoomed-in view of the lipid-binding site. The density of PIP2 diC8 is shown as a gray mesh contoured at 5.5σ. (B) Structural comparison between apo (gray) and PIP2 diC8-bound (color) NCX1. Upon PIP2 diC8 binding, there is a rigid-body downward swing movement (marked by an arrow) at CBDs caused by the partial detachment of the CBD2 domain from XIP. The conformational change at the TM domain is subtle and mainly occurs at the C-terminus of TM5 as illustrated in (C) and (D). (C) Zoomed-in view of the structural comparison (boxed area in (B)). The two major conformational changes occur in the boxed regions. (D) Zoomed-in views of the two conformational changes between apo (left in gray) and PIP2 diC8-bound (right in color) state. Top: conformational change 1 at the C-terminus of TM5. Bottom: conformational change 2 at the interface between XIP and CBD2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The structural model of Ca2+-activated HsNCX1 from a previous study (PDB 8SGT) was directly fitted into the low-resolution EM map (~11.5 Å). The Fab fragment from a monoclonal antibody against NCX1 was used as a fiducial marker to facilitate the single-particle alignment.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cryo-EM data processing of HsNCX1 in complex with short-chain PIP2 diC8. The Fab fragment from a monoclonal antibody against NCX1 was used as a fiducial marker to facilitate the single-particle alignment. (B) Zoomed-in view of the density map of the bound PIP2 diC8 contoured at the threshold level of 0.35 using ChimeraX. (C) The Fourier shell correlation (FSC) curves for cross-validation between the maps and the models.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The local-refined maps focused on the transmembrane (TM) domain are used in the comparison. The density map of the bound PIP2 is contoured at a threshold level of 0.35 using ChimeraX.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) A docking model for native brain PIP2 binding in NCX1 showing the insertion of its long acyl chain into the SEA0400-binding pocket. (B) A docking model for short-chain PIP2 diC8 binding in NCX1 showing that the SEA0400-binding pocket is not accessible to shorter acyl chain. (C) The density (red mesh, contoured at 6σ) of an acyl chain likely from a native lipid is observed in the SEA0400-binding pocket of the apo NCX1 structure (EMD-40457, local-refined map at the transmembrane [TM] domain).
+
+**Table 1.**
+ Cryo-EM data collection and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample preparation conditions</th>
+      <th>25 mM HEPES pH 7.4,200 mM NaCl0.9 mM SEA0400</th>
+      <th>25 mM HEPES pH 7.4,200 mM NaCl,0.47 mM PI(4,5)P2diC8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>SEA0400-bound state(EMD-40456,PDB 8SGI)</td>
+      <td>PI(4,5)P2diC8-bound state(EMD-60921,PDB 9IV8)</td>
+    </tr>
+    <tr>
+      <td>Data collection and processing</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105k</td>
+      <td>105k</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–0.9 to –2.2</td>
+      <td>–0.9 to –2.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.83</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>1,249,151</td>
+      <td>2,233,044</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>368,227</td>
+      <td>117,748</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)FSC threshold</td>
+      <td>2.930.143</td>
+      <td>3.470.143</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>8SGJ</td>
+      <td>8SGJ</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)FSC threshold</td>
+      <td>3.360.5</td>
+      <td>3.810.5</td>
+    </tr>
+    <tr>
+      <td>Model compositionNon-hydrogen atomsProtein residuesLigands</td>
+      <td>76679823: Na6: Ca1: H2O1: SEA0400</td>
+      <td>59477505: Ca1: PI(4,5)P2diC8</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)ProteinLigands</td>
+      <td>66.2158.55</td>
+      <td>50.47106.20</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviationsBond lengths (Å)Bond angles (°)</td>
+      <td>0.0050.696</td>
+      <td>0.0040.679</td>
+    </tr>
+    <tr>
+      <td>ValidationMolProbity scoreClashscorePoor rotamers (%)</td>
+      <td>1.365.240</td>
+      <td>1.285.220</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plotFavored (%)Allowed (%)Disallowed (%)</td>
+      <td>97.622.380</td>
+      <td>98.241.760</td>
+    </tr>
+  </tbody>
+</table>
+
+### PIP2 diC8-induced conformational changes in NCX1
 
 Two major conformational changes occur in NCX1 upon PIP2 diC8 binding (Figure 2B–D). The first change occurs at the C-terminus of TM5, which ends at R220 and is connected to the two-stranded XIP β-sheet (β3 and β4) via a six-residue loop in the apo structure. When PIP2 binds, the TM5 helix extends by one helical turn. This loop-to-helix transition significantly changes the locations of these connecting loop residues and their side-chain orientations to accommodate PIP2, enabling K225 to reorient and interact with the IP3 head group (Figure 2D, top panel). The second conformational change is the partial detachment of the CBD2 domain from XIP upon PIP2 binding, resulting in a downward swing of cytosolic CBD domains (CBD1 and CBD2) as a rigid body (Figure 2B and C). This CBD2 detachment is a result of the first PIP2-induced conformational change at TM5 that disrupts part of the interactions between CBD2 and XIP as follows: In the apo-inactivated state, Y226 and R247, the two termini residues of the two-stranded XIP β-sheet, form H-bonds with several CBD2 residues, including E554 side chain and backbone carbonyls of I518 and I520 (Figure 2D, bottom panel). The loop-to-helix transition of TM5 upon PIP2 binding leads to a dramatic rotation of Y226 that allows it to move closer to and directly interact with R247, resulting in the loss of H-bonding interactions between XIP and CBD2 (Figure 2D, bottom panel). In addition, the rotation of Y226 also causes a direct collision with CBD2 if it remains closely attached to XIP. Thus, the PIP2-induced TM5 movement, particularly the reorientation of Y226, abolishes some local interactions between CBD2 and XIP and also pushes CBD2 away from XIP, causing the partial detachment of CBD2. However, the short-chain PIP2 only partially destabilizes rather than completely disassembles the inactivation assembly, as the CH2 helix of CBD2 still engages in extensive interactions with the C-shaped β-hub.
 
@@ -57,13 +187,23 @@ To test if the PIP2-interacting residues play a critical role in the native long
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig3-v1.jpg)
 
-**Figure 3.:** 2) binding.(A) Representative NCX1 currents of PIP2 site mutants before and after perfusion of 10 µM brain PIP2 to the cytosolic side of the patch. (B, C) Summary graphs demonstrating the effects of PIP2 on the enhancement of peak (B) and steady-state currents (C). Potentiation (fold of increase) was measured by comparing the current magnitude before and after PIP2 application. Mutants R167A, R220A, and K225A showed some decreased response to PIP2, whereas the R220A/K225A mutant shows a more profound decrease in PIP2 response. Compared to WT, the PIP2 potentiation of R220A/K225A at the steady state is decreased by ~70–90% (fold of increase WT = 8.9 ± 1.6, n=10 vs R220A/K225A=1.9 ± 0.1, n=6). PIP2 has no potentiation effect on the quadruple K164A/R167A/R220A/K225A mutant. Data points are mean ± s.e.m. (*p<0.1). (D) The extent of Na+-dependent inactivation was measured as the ratio between steady-state and peak currents (fractional activity), and values for WT and the indicated mutants are shown. Mutants R220A and R220A/K225A displayed significantly higher fractional activity values when compared to WT, indicating that the Na+-dependent inactivation was less pronounced in these mutant exchangers. K164A/R167A/R220A/K225A shows no Na+-dependent inactivation.Figure 3—source data 1.
+**Figure 3.:** (A) Representative NCX1 currents of PIP2 site mutants before and after perfusion of 10 µM brain PIP2 to the cytosolic side of the patch. (B, C) Summary graphs demonstrating the effects of PIP2 on the enhancement of peak (B) and steady-state currents (C). Potentiation (fold of increase) was measured by comparing the current magnitude before and after PIP2 application. Mutants R167A, R220A, and K225A showed some decreased response to PIP2, whereas the R220A/K225A mutant shows a more profound decrease in PIP2 response. Compared to WT, the PIP2 potentiation of R220A/K225A at the steady state is decreased by ~70–90% (fold of increase WT = 8.9 ± 1.6, n=10 vs R220A/K225A=1.9 ± 0.1, n=6). PIP2 has no potentiation effect on the quadruple K164A/R167A/R220A/K225A mutant. Data points are mean ± s.e.m. (*p<0.1). (D) The extent of Na+-dependent inactivation was measured as the ratio between steady-state and peak currents (fractional activity), and values for WT and the indicated mutants are shown. Mutants R220A and R220A/K225A displayed significantly higher fractional activity values when compared to WT, indicating that the Na+-dependent inactivation was less pronounced in these mutant exchangers. K164A/R167A/R220A/K225A shows no Na+-dependent inactivation.
 
-## Structure of NCX1 in complex with SEA0400 inhibitor
+### Structure of NCX1 in complex with SEA0400 inhibitor
 
 SEA0400 is known to potently inhibit cardiac NCX1 by facilitating the inactivation of the exchanger (Lee et al., 2004; Bouchard et al., 2004; Iwamoto et al., 2004). To reveal the structural mechanism of its inhibition, we determined the structure of HsNCX1 in complex with SEA0400 at 2.9 Å (Figure 4, Figure 4—figure supplement 1, Table 1, and Methods). The SEA0400-bound NCX1 structure adopts an inward-facing, inactivated state identical to the apo NCX1 structure obtained at high Na+, nominal Ca2+-free condition (Xue et al., 2023: Figure 4A, Figure 4—figure supplement 2). SEA0400 binds at the TM domain in a pocket enclosed by the internal halves of TMs 8 (8a segment), 2 (2ab segments), 4, and 5 (Figure 4B). The pocket has a lateral fenestration in the middle of the membrane (Figure 4B), which provides a portal for the SEA0400 entrance. The pocket is sealed off at the cytosolic side by E244 from the XIP β-sheet. As demonstrated in our previous study (Xue et al., 2023), XIP and the linker β-hairpin (β1 and β2) between TMs 1 and 2ab form a β-hub that stabilizes the exchanger in an inactivated state. This β-hub has to be disassembled in an activated NCX1, and XIP is expected to be detached from the TM domain, which would lead to the opening of the SEA400-binding pocket to the cytosol and provide a cytosolic portal for the release of the inhibitor, as further discussed below. Figure 4C summarizes the interactions between SEA0400 and NCX1 and demonstrates that SEA0400 fits perfectly in the pocket, making extensive contact with surrounding residues. Mutations of some key interacting residues, such as F213 and G833, have been shown to compromise the inhibitor binding (Iwamoto et al., 2004). The same SEA0400 binding was also demonstrated in the recent study of human NCX1.3, and mutations at some pocket-forming residues mitigate the SEA0400 inhibition of the exchanger (Dong et al., 2024).
 
-## Inhibition mechanism of SEA0400
+![Figure 4.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig4-v1.jpg)
+
+**Figure 4.:** (A) Overall structure of human NCX1 in complex with SEA0400 obtained in high Na+ and low Ca2+ conditions. Yellow spheres represent the bound Ca2+ in CBD1 and XIP. (B) Cartoon representation of the transmembrane (TM) domain and β-hub of the complex with surface-rendered view of the fenestration in the middle of the membrane. The β-hub is assembled by β-hairpin (β1 and β2) and XIP (β3 and β4). (C) Zoomed-in view of the SEA0400-binding site, and the schematic diagram detailing the interactions between NCX1 residues and SEA0400.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cryo-EM data processing scheme of HsNCX1 in complex with SEA0400 inhibitor. The Fab fragment from a monoclonal antibody against NCX1 was used as a fiducial marker to facilitate the single-particle alignment. (B) Zoomed-in view of the density map of the bound SEA0400 inhibitor contoured at the threshold level of 0.52 using ChimeraX. (C) The Fourier shell correlation (FSC) curves for cross-validation between the maps and the models.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105396/elife-105396-fig4-figsupp2-v1.jpg)
+
+### Inhibition mechanism of SEA0400
 
 The TM domain of NCX1 shares a similar overall architecture to the archaea exchanger NCX_Mj (Liao et al., 2012). The structural comparison between the TM domains of the inward-facing NCX1 and the outward-facing NCX_Mj reveals the conformational changes that occur during ion exchange, providing structural insight into the SEA0400 inhibition mechanism (Figure 5A). The inward-outward transition mainly involves the sliding motion of TMs 1 and 6 and the bending movement of TMs 2ab and 7ab (Xue et al., 2023; Liao et al., 2012; Liao et al., 2016; Marinelli and Faraldo-Gomez, 2023). As TM2ab directly interacts with SEA0400 in the inward-facing state, its bending movement toward the outward conformation would cause a direct collision with the inhibitor (Figure 5A). Thus, the binding of SEA0400 stabilizes the exchanger in the inward-facing state and blocks the conformational change from the inward to the outward state. The Na+-dependent NCX1 inactivation occurs when the exchanger is in a Na+-loaded, inward-facing state with low cytosolic [Ca2+] (Hilgemann et al., 1992c; Matsuoka and Hilgemann, 1994; Hilgemann, 2020). As demonstrated in our previous study, only in this state can the β-hub form and readily interact with the cytosolic CBD domains, generating the inactivation assembly that locks TMs 1 and 6 and prevents the TM module from transporting ions (Xue et al., 2023). Thus, SEA0400 promotes NCX1 inactivation by stabilizing NCX1 in the inward-facing conformation, which facilitates the formation of the inactivation assembly. The formation of the inactivation assembly also reciprocally stabilizes SEA0400 binding as the XIP of the assembly interacts with the TM domain and seals off the inhibitor binding pocket from the cytosolic side (Figure 5B). Under conditions in which the inactivation assembly cannot form in NCX1, such as chymotrypsin treatment or forward exchange mode (Na+ influx/Ca2+ efflux), the removal or detachment of XIP from the TM domain would generate a cytosolic open portal for SEA0400 release and effectively reduce its binding affinity (Figure 5C; Lee et al., 2004; Bouchard et al., 2004). Indeed, cysteine scanning mutagenesis studies have shown that the pocket-forming G833 residue is accessible to intracellular sulfhydryl reagents in the chymotrypsin-treated inward-facing NCX1, confirming the cytosolic exposure of the SEA400-binding pocket upon XIP removal (John et al., 2013). This cytosolic opening of the SEA0400 pocket explains the low efficacy of SEA0400 inhibition in NCX1 when the Na+-dependent inactivation is absent.
 
@@ -81,27 +221,254 @@ While we expect the long-chain PIP2 to bind in the same location as PIP2 diC8, i
 
 ## Methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>NCX1 (sodium/calcium exchanger 1)</td>
+      <td>Uniprot</td>
+      <td>P32418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18258012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH10Bac</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11496015; RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Expi293 GnTI- Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A39240; RRID:CVCL_B0J7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pEZT-BM-NCX1-Cstrep</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEZT-BM</td>
+      <td>Morales-Perez et al., 2016</td>
+      <td>RRID:Addgene_74099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NCX1_F_primer</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gtacttaatacgactcactataggctagcgccaccatgtacaacatgcggcgattaagtc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NCX1_R_primer</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gatggctccatgagccaccAgcggccgcgaagccttttatgtggcagtaggc</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 303410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl Maltose Neopentyl Glycol</td>
+      <td>Anatrace</td>
+      <td>Cat# NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Acros Organics</td>
+      <td>Cat# 11024-24-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B4501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td>RRID:SCR_016500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Scheres, 2012</td>
+      <td>RRID:SCR_016274</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>Punjani et al., 2017</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://www.cgl.ucsf.edu/chimera</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>Schrödinger</td>
+      <td>RRID:SCR_000305</td>
+      <td>https://pymol.org/2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>Chen et al., 2010</td>
+      <td>RRID:SCR_014226</td>
+      <td>http://molprobity.biochem.duke.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 10/300 GL</td>
+      <td>Cytiva</td>
+      <td>Cat# 28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-Tactin resin</td>
+      <td>IBA</td>
+      <td>Cat# 2-5010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra-15 Centrifugal Filter Units</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# UFC9100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil R 1.2/1.3 grid Au300</td>
+      <td>Quantifoil</td>
+      <td>Cat# Q37572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cellfectin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10362100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sf-900 II SFM medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10902088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FreeStyle 293 Expression Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12338018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Antibiotic Antimycotic Solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5955</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 The expression and purification of the HsNCX1 (cardiac isoform NCX1.1, indicated as HsNCX1 or NCX1 throughout the manuscript) were carried out as described previously (Xue et al., 2023). Truncated HsNCX1 (Δ341–365aa) containing a C-terminal Strep-tag was cloned into a pEZT-BM vector, and baculoviruses were produced in Sf9 cells (Morales-Perez et al., 2016). For protein expression, cultured Expi293F GnTI- cells were infected with the baculoviruses at a ratio of 1:20 (virus: GnTI-, vol/vol) for 10 hr. 10 mM sodium butyrate was then introduced to boost protein expression level, and cells were cultured in suspension at 30°C for another 60 hr and harvested by centrifugation at 4000×g for 15 min. All purification procedures were carried out at 4°C. The cell pellet was resuspended in lysis buffer (25 mM HEPES pH 7.4, 300 mM NaCl, 2 μg/ml DNase I, 0.5 μg/ml pepstatin, 2 μg/ml leupeptin, 1 μg/ml aprotinin, and 0.1 mM PMSF) and homogenized by sonication. NCX1 was extracted with 2% (wt/vol) N-dodecyl-β-D-maltopyranoside (DDM, Anatrace) supplemented with 0.2% (wt/vol) cholesteryl hemisuccinate (CHS, Sigma-Aldrich) by gentle agitation for 2 hr, and supernatant collected by centrifugation at 40,000×g for 30 min was incubated with Strep-Tactin affinity resin (IBA) for 1 hr. The resin was then collected on a disposable gravity column (Bio-Rad) and washed with 30 column volumes of buffer A (25 mM HEPES pH 7.4, 200 mM NaCl, 0.06% digitonin). NCX1 was eluted in buffer A supplemented with 50 mM biotin and further purified by size-exclusion chromatography on a Superdex 200 10/300 GL column (GE Healthcare). For the generation of NCX1-Fab 2E4 complex, NCX1 was incubated with purified Fab in a molar ratio of 1:1.2 (NCX1: Fab 2E4) for 2 hr and further purified by size-exclusion chromatography in buffer A. The peak fractions were collected and concentrated to ~5–6 mg/ml for cryo-EM analysis. To prepare the protein samples in complex with various compounds, 0.9 mM SEA0400, 0.47 mM PI(4,5)P2 diC8, or 0.42 mM brain PI(4,5)P2 were added to the protein samples 2 hr before grid preparation.
 
 Expi293F GnTI- cells were purchased from and authenticated by Thermo Fisher Scientific. The cell lines were tested negative for mycoplasma contamination.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 HsNCX1-Fab 2E4 samples (~5–6 mg/ml) in various conditions were applied to a glow-discharged Quantifoil R1.2/1.3 300-mesh gold holey carbon grid (Quantifoil, Micro Tools GmbH, Germany), blotted for 4.0 s under 100% humidity at 4°C and plunged into liquid ethane using a Mark IV Vitrobot (FEI). For the SEA0400-bound NCX1-Fab 2E4, raw movies were acquired on a Titan Krios microscope (FEI) operated at 300 kV with a K3 camera (Gatan) at 0.83 Å per pixel and a nominal defocus range of –0.9 to –2.2 μm. Each movie was recorded for about 5 s in 60 subframes with a total dose of 60 e-/Å2. For other samples, raw movies were acquired on a Titan Krios microscope operated at 300 kV with a Falcon 4i (Thermo Fisher Scientific) at 0.738 Å per pixel and a nominal defocus range of –0.8 to –1.8 μm. Each movie was recorded for 4 s with a total dose of 60 e-/Å2.
 
-## Image processing
+### Image processing
 
 Cryo-EM data were processed following the general scheme described below with some modifications to different datasets (Figure 2—figure supplements 1 and 2, Figure 4—figure supplement 1). First, movie frames were motion-corrected and dose-weighted using MotionCor2 (Zheng et al., 2017). The CTF parameters of the micrographs were estimated using the GCTF program (Zhang, 2016). After CTF estimation, micrographs were manually inspected to remove images with bad defocus values and ice contamination. Particles were picked using program Gautomatch (Kai Zhang, https://sbgrid.org/software/titles/gctf) or crYOLO (Wagner et al., 2019) and extracted with a binning factor of 3 in RELION (Zivanov et al., 2018; Scheres, 2012). Extracted particles were subjected to 2D classification, ab initio modeling, and 3D classification. The particles from the best-resolving 3D class were then re-extracted with the original pixel size and subjected to heterogeneous 3D refinement, nonuniform refinement, CTF refinement, and local refinement in cryoSPARC (Punjani et al., 2017). The quality of the EM density maps for the TM and cytosolic domains was further improved through focused refinement, allowing for accurate model building for a major part of the protein. For the dataset of NCX1 in complex with brain PI(4,5)P2, the maps of apo inactive NCX1 (PDB 8SGJ) and Ca²+-bound active NCX1 (PDB 8SGT) are used as references for heterogeneous refinement. Due to the highly dynamic nature of the protein samples, the particles sorted into the active state produce a map with very low resolution. All resolution was reported according to the gold-standard Fourier shell correlation (FSC) using the 0.143 criterion (Henderson et al., 2012). Local resolution was estimated using cryoSPARC.
 
-## Model building, refinement, and validation
+### Model building, refinement, and validation
 
 The EM maps of HsNCX1 in the SEA0400-bound and PI(4,5)P2 diC8-bound states show high-quality density, and model building is facilitated by previous apo NCX1 structure (PDB 8SGJ) (Xue et al., 2023). Models were manually adjusted in Coot (Emsley et al., 2010) and refined against maps using the phenix.real_space_refine with secondary structure restraints applied (Adams et al., 2010). The final NCX1 structural model contains residues 17–248, 370–467, 482–644, 652–698, 707–718, and 738–935. The EM map of HsNCX1 in complex with brain PI(4,5)P2 is relatively poor. The Ca2+-bound activated NCX1 structure (PDB 8SGT) is directly docked into the EM map without adjustment.
 
 The statistics of the geometries of the models were generated using MolProbity (Chen et al., 2010). All the figures were prepared in PyMol (Schrödinger, LLC), Chimera (Pettersen et al., 2004), and ChimeraX (Goddard et al., 2018).
 
-## Electrophysiological experiments
+### Electrophysiological experiments
 
 The wild-type HsNCX1 and its mutants were cloned into a pGEMHE vector and expressed in oocytes for electrophysiological recordings. RNA was synthesized using mMessage mMachine (Ambion) and injected into X. laevis oocytes as described in John et al., 2018. Oocytes were isolated from at least three different frogs and kept at 18°C for 4–7 days. Outward HsNCX1 currents were recorded using the giant patch technique in the inside-out configuration. Each data point shown in this study represents a recording obtained from a single oocyte. The external solution (pipette solution) contained the following (mM): 100 CsOH (cesium hydroxide), 10 HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 20 TEAOH (tetraethyl-ammonium hydroxide), 0.2 niflumic acid, 0.2 ouabain, 8 Ca(OH)2 (calcium hydroxide), pH = 7 (using MES, (2-(N-morpholino) ethanesulfonic acid)); bath solution (mM): 100 CsOH or 100 NaOH (sodium hydroxide), 20 TEAOH, 10 HEPES, 10 EGTA (ethylene glycol-bis(β-aminoethyl ether)-N,N,N’,N’-tetra acetic acid) or HEDTA (N-(2-Hydroxyethyl) ethylenediamine-N,N’,N’-triacetic acid) and different Ca(OH)2 concentrations to obtain the desired final free Ca2+ concentrations, pH = 7 (using MES). Free Ca2+ concentrations were calculated according to the WEBMAXc program and confirmed with a Ca2+ electrode.
 

@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Department of Ophthalmology, Northwestern University Evanston United States
-2. https://ror.org/000e0be47 Department of Neuroscience, Feinberg School of Medicine, Northwestern University Evanston United States
-3. https://ror.org/000e0be47 Department of Neurobiology, Weinberg College of Arts and Sciences, Northwestern University Evanston United States
+1. Department of Ophthalmology, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Neuroscience, Feinberg School of Medicine, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Department of Neurobiology, Weinberg College of Arts and Sciences, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 

@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.31977.001 Human genetic studies have emphasised the dominant contribution of pancreatic islet dysfunction to development of Type 2 Diabetes (T2D). However, limited annotation of the islet epigenome has constrained efforts to define the molecular mechanisms mediating the, largely regulatory, signals revealed by Genome-Wide Association Studies (GWAS). We characterised patterns of chromatin accessibility (ATAC-seq, n = 17) and DNA methylation (whole-genome bisulphite sequencing, n = 10) in human islets, generating high-resolution chromatin state maps through integration with established ChIP-seq marks. We found enrichment of GWAS signals for T2D and fasting glucose was concentrated in subsets of islet enhancers characterised by open chromatin and hypomethylation, with the former annotation predominant. At several loci (including CDC123, ADCY5, KLHDC5 ) the combination of fine-mapping genetic data and chromatin state enrichment maps, supplemented by allelic imbalance in chromatin accessibility pinpointed likely causal variants. The combination of increasingly-precise genetic and islet epigenomic information accelerates definition of causal mechanisms implicated in T2D pathogenesis.
+Human genetic studies have emphasised the dominant contribution of pancreatic islet dysfunction to development of Type 2 Diabetes (T2D). However, limited annotation of the islet epigenome has constrained efforts to define the molecular mechanisms mediating the, largely regulatory, signals revealed by Genome-Wide Association Studies (GWAS). We characterised patterns of chromatin accessibility (ATAC-seq, n = 17) and DNA methylation (whole-genome bisulphite sequencing, n = 10) in human islets, generating high-resolution chromatin state maps through integration with established ChIP-seq marks. We found enrichment of GWAS signals for T2D and fasting glucose was concentrated in subsets of islet enhancers characterised by open chromatin and hypomethylation, with the former annotation predominant. At several loci (including CDC123, ADCY5, KLHDC5) the combination of fine-mapping genetic data and chromatin state enrichment maps, supplemented by allelic imbalance in chromatin accessibility pinpointed likely causal variants. The combination of increasingly-precise genetic and islet epigenomic information accelerates definition of causal mechanisms implicated in T2D pathogenesis.
 
 ## Introduction
 
@@ -47,11 +47,23 @@ In this study, we set out to expand upon previous studies of the islet regulome 
 
 ## Results
 
-## Characterising the DNA methylation landscape of human pancreatic islets
+### Characterising the DNA methylation landscape of human pancreatic islets
 
 To characterise the human islet methylome and characterise the role of DNA methylation with respect to T2D genetic risk, we performed WGBS (mean coverage 13X) in human pancreatic islet DNA samples isolated from 10 non-diabetic cadaveric donors of European descent. Methylation levels across the genome were highly correlated across individual donors (mean CpG methylation Spearman’s rho across 10 individual WGBS donors = 0.71, Figure 1—figure supplement 1A): we pooled the WGBS results to generate a single high-pass (mean coverage 85X) set of pooled human pancreatic islet methylation data covering 23.3 million CpG sites (minimum pooled coverage 10X).
 
 Most previous studies of the relationship between GWAS data and tissue-specific methylation patterns (including those interrogating the relationship between islet methylation and T2D predisposition [Dayeh et al., 2014; Olsson et al., 2014]) had used data generated on the Illumina 450 k methylation array (Hannon et al., 2016; Mitchell et al., 2016; Kato et al., 2015; Ventham et al., 2016). For comparative purposes, we generated 450 k array methylation data from 32 islet samples ascertained from non-diabetic donors of European descent (five overlapping with those from whom WGBS data were generated). As with the WGBS data, methylation levels were highly correlated across individuals (mean CpG methylation Spearman’s rho across 32 individual 450 k donor = 0.98, Figure 1—figure supplement 1B). After pooling 450 k array data across samples, methylation profiles generated from the 450 k array and WGBS were highly correlated at the small subset of total CpG sites for which they overlap: this was observed across pooled samples (pooled WGBS vs. 450 k Spearman’s rho = 0.89, Figure 1A) and across the five donors analysed by both methods (mean Spearman’s rho = 0.80, not shown).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig1-v2.jpg)
+
+**Figure 1.:** (A) Smooth Scatter plot shows Spearman’s rho correlation between the 450 k array (y-axis) and WGBS (x-axis) at overlapping sites. Darker colour indicates higher density of sites. (B) Comparison of the 450 k array (orange) and WGBS (yellow) methylation levels (x-axis) of all CpGs genome-wide assayed by either method (y-axis shows density). The P-value shown is derived using a Kolmogorov-Smirnov (KS) test. (C) For each chromatin state from Parker et al. (2013) the methylation levels of all CpG sites independent of overlap (diamond indicates the median) are shown as violin plots (left y-axis) and the CpG probe percentage per state for the 450 k array (orange) and WGBS (yellow) are shown as bar-plot (right y-axis). The 450 k probes represent the percentage of the total number of CpG sites which is determined by the number of WGBS CpG sites detected (WGBS = 100%). (D) Distribution of GWAS Posterior Probabilities (Type 2 Diabetes and Fasting Glucose) captured by CpG sites on the 450 k array (orange), 850 k array (green) and WGBS (yellow/black line). (E) Locuszoom plot showing CpG density and credible set SNPs. SNPs are shown with P-values (dots, y-axis left), recombination rate (line, y-axis right) and chromosome positions (x-axis) while CpG and gene annotations are shown below. These annotations include CpGs identified from WGBS (yellow stripes), 450 k CpG probes (orange stripes), 850 k CpG probes (green stripes) and gene overlap (DGKB label). The highlighted region in blue captures the 99% credible set region plus additional 1000 bp on either side. At the very bottom the position on chromosome seven is shown in Megabases (Mb).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A-B) Spearman’s rho correlation of DNA methylation across 10 individual (A) WGBS and (B) 10 selected (out of 32) 450 k samples on the x-axis and y-axis. (C) Islet chromatin state definitions based on ChIP-seq data reproduced from Parker et al. (2013). TSS: Transcription Start Site (D) The differences in the 450 k and WGBS methylation level distribution measured as D statistic, which represents the difference in the cumulative distributions and is derived from the Kolmogorov-Smirnov test, are shown for each chromatin state separately.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A-B) PC analysis of 450 k DNA methylation data of 32 human islet samples coloured according to the location of origin and processing (A) before correction for Sample-location and (B) after correction for Sample-location using the ComBat function included in the sva package. The shape indicates sex. Sample location EDM_OX: samples obtained from the Alberta Diabetes Institute in Edmonton (Canada) and processed at the University of Oxford. OX_OX: samples obtained from Oxford DRWF Human Islet Isolation Facility and processed at the University of Oxford. OX_UCL: samples obtained from Oxford DRWF Human Islet Isolation Facility and processed at University College London.
 
 WGBS and 450 k array data differed substantially in terms of genome-wide coverage. The 450 k array was designed to interrogate with high precision and coverage ~480 k CpG sites (approximately 2% of all sites in the genome), selected primarily because they are located near gene promoters and CpG-island regions. The focus of the 450 k array on these regions, which tend to be less variable in terms of methylation, explains the high 450 k array correlation levels between donors. In addition, this selective design results in marked differences in the distributions of genome-wide methylation values between WGBS and the 450 k array. Whilst the WGBS data revealed the expected pattern of widespread high methylation levels with hypomethylation (<50%) restricted to 11.2% (2.6M/23.3M CpG sites) of the genome, the array disproportionately interrogated those hypomethylated sites (218 k [46%] of all 450 k CpG probes) (Kolmogorov–Smirnov (KS) test for difference, D = 0.40, p<2.2×10−16) (Figure 1B). These differences in methylation distribution were also evident within specific islet regulatory elements from previously defined standard chromatin state maps (Parker et al., 2013) (Figure 1C, Figure 1—figure supplement 1C–D). We found significant (FDR < 0.05) differences between the methylation levels of CpG sites accessed on the array, and those interrogated by WGBS, across most islet chromatin states: the largest differences were observed for weak promoters (median WGBS = 0.71 vs. median 450k = 0.11, KS test D = 0.51, p<2.2×10−16,) and weak enhancers (WGBS = 0.87 vs. 450 k median = 0.76, D = 0.39, p<2.2×10−16, Figure 1—figure supplement 1D).
 
@@ -63,25 +75,188 @@ To estimate the respective proportions of these T2D-associated variants captured
 
 These data indicate that available methylation arrays provide poor genome-wide coverage of methylation status and are notably deficient in capturing methylation status around the distal regulatory enhancer regions most relevant to T2D predisposition. For this reason, we focused subsequent analyses on the WGBS data.
 
-## Integration islet methylation and other epigenomic annotations
+### Integration islet methylation and other epigenomic annotations
 
 Studies in a variety of other tissues have shown that hypomethylation is a strong indicator of regulatory function (Stadler et al., 2011). More specifically, continuous stretches of CpG-poor Low-Methylated Regions (LMRs, with methylation ranging from 10–50% and containing fewer than 30 CpG sites) denote potential distal regulatory elements such as enhancers, while stretches of CpG-rich UnMethylated Regions (UMRs, containing more than 30 CpG sites) are more likely to represent proximal regulatory elements including promoters (Burger et al., 2013). We detected 37.1 k LMRs, 13.6 k UMRs (Figure 2A) and 10.7 k Partially Methylated Domains (PMDs) (Materials and methods and Figure 2—figure supplement 1A–B). PMDs represent large regions of unordered methylation states associated with DNA sequence features (Gaidatzis et al., 2014). As anticipated, we found significant enrichment of LMRs with weak and strong enhancer states as defined by islet chromatin state maps derived from existing ChIP-seq data (Parker et al., 2013) (69.2% of islet LMRs overlapped islet strong and weak enhancer states, log2FE = 2.2–2.9, Bonferroni p<0.05, Figure 2B, Figure 1—figure supplement 1C). Similarly, UMRs were enriched for islet active promoter chromatin states (90.8% of UMRs overlapped islet active promoters, log2FE = 3.9, Bonferroni p < 0.05, Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig2-v2.jpg)
+
+**Figure 2.:** (A) Methylation levels in percent (y-axis) and log2 CpG density (x-axis) of UMR and LMR regulatory regions with the dashed line indicating the CpG-number (30 CpGs) that distinguishes LMRs and UMRs. (B) Log2 Fold Enrichment (log2FE) of LMRs (green shape), UMRs (blue shape) in various islet annotations is shown. These annotations include islet chromatin states, islet relevant TFBS (FOXA2, MAFB, NKX2.2, NKX6.1, PDX1), islet eQTLs, WGBS derived T2D-associated islet disease DMRs (dDMRs) and ATAC-seq open chromatin peaks. The dDMRs were derived from 6 T2D and eight non-diabetic individuals by Volkov et al. (2017) and dDMRs (orange shape) were also tested for enrichment in the aforementioned islet regulatory annotations. For all annotations, the empirically determined Bonferroni adjusted P-value is ≤0.00032 unless otherwise indicated by the shape: a dot corresponds to an Bonferroni adjusted p-value<0.00032 while the three triangles indicates Bonferroni adjusted p-values>0.00032: UMR enrichment adjusted P-value for weak enhancers = 1; dDMR enrichment adjusted P-value for MAFB = 0.006 and dDMR enrichment adjusted P-value for islet eQTLs = 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) Density distribution of the alpha value (A) before and (B) after removing PMDs (green curve in (A)) on chromosome 22. Alpha values represent a summary statistic derived from DNA methylation of windows of 100 CpGs and represents an indication of the polarisation status of methylation values in the genome which is expected to contain either highly methylated or unmethylated regions. Distributions with alpha <1 indicate methylation levels that are bimodal with either 0 or one methylation. Alpha = 1 corresponds to a uniform distribution of methylation; and distributions with alpha >1 tend to have primarily intermediate methylation levels. The red and green curve in (A) represent the non-PMD (red) and PMD regions (green) in the genome. (C) Number of peaks (x-axis) and mapped and filtered reads (y-axis) per ATAC-seq islet preparation. The dashed line indicates the mean read number. (D) Log2 Fold Enrichment (log2FE, x-axis) and associated -log10 Bonferroni adjusted P-values (y-axis) of LMRs (circle), UMRs (triangle) in various islet annotations (colours) is shown. These annotations include islet chromatin states, islet relevant TFBS (FOXA2, MAFB, NKX2.2, NKX6.1, PDX1), islet eQTLs, WGBS derived T2D-associated islet disease DMRs (dDMRs) and ATAC-seq open chromatin peaks. dDMRs (square) were also tested for enrichment in the aforementioned islet regulatory annotations. The results cluster near -log10 P-value of 3.5 since most Bonferroni adjusted P-values were more extreme than 0.00032.
 
 To further characterise these hypomethylation domains, we overlapped information from analyses of islet cis-expression QTLs (eQTLs) (van de Bunt et al., 2015) and islet ChIP-seq transcription factor binding sites (TFBS) (Pasquali et al., 2014). We observed marked enrichment for eQTLs (LMR log2FE = 1.1, UMR log2FE = 2.7, Bonferroni p<0.05) and TFBS (LMR log2FE = 4.1–4.6; UMR log2FE = 2.4–3.9, Bonferroni p<0.05, Figure 2B). These observations confirm that islet LMRs and UMRs correspond to important tissue-specific regulatory regions, overlapping cis-regulatory annotations known to be enriched for T2D GWAS signals (Pasquali et al., 2014; Gaulton et al., 2015).
 
 We also considered the relationship between LMR and UMR regions defined in our non-diabetic islet WGBS, and a complementary set of methylation-based annotations previously derived from WGBS of islets from 6 T2D and 8 control individuals (Volkov et al., 2017). In that study, comparisons between diabetic and non-diabetic islets had been used to define a set of 25,820 ‘disease differentially methylated regions’ (dDMRs, minimum absolute methylation difference 5% and p<0.02). We found only limited overlap between these dDMRs and the UMRs and LMRs from our data: of the 25,820 dDMRs, 2.2% overlapped LMRs and 2.4% UMRs. This overlap was slightly greater than expected by chance (Bonferroni p<0.05, LMR log2FE = 1.0 and promoter-like UMRs log2FE = 1.1, Figure 2B) but more modest than seen for the other regulatory annotations. Similarly, we also observed that dDMRs showed more modest (log2FE = 0.4–1.0), but still significant (Bonferroni p<0.05) levels of enrichment with respect to all other islet regulatory annotations (Figure 2B). The modest enrichment of dDMRs indicates that only a fraction of these regions correspond to islet genomic regulatory sites. Given that T2D risk variants preferentially map in islet regulatory sites, the corollary is that most dDMRs are unlikely to directly contribute to the mediation of genetic T2D risk.
 
-## Refining islet enhancer function using methylation and open chromatin data
+### Refining islet enhancer function using methylation and open chromatin data
 
 To further characterise the regulatory potential of hypomethylated regions, including LMRs and UMRs, we combined the islet WGBS methylation data with chromatin accessibility data generated from ATAC-seq assays of 17 human islet samples (from non-diabetic donors of European descent; mean read count after filtering = 130M, Figure 2—figure supplement 1C). We identified a total of 141 k open chromatin regions based on read depth, peak width and signal-to-noise ratio (see Materials and methods). These regions of islet open chromatin showed substantial overlap (78%) with equivalent regions described in a recent study of two human islets (Varshney et al., 2017) (log2FE = 2.8 compared to random sites, not shown). In addition, our islet ATAC-Seq sites demonstrated substantial overlap with LMRs: 53% of LMRs overlapped 16% of all ATAC-seq peaks (LMR log2FE = 3.8 compared to randomised sites, Figure 2B). Almost all UMRs (98%) were contained within regions overlapping (13% of) ATAC-seq peaks (UMR log2FE = 3.4 compared to randomised sites, Figure 2B).
 
 To fully leverage information across multiple overlapping islet epigenome assays, we generated augmented chromatin state maps, using chromHMM (Ernst and Kellis, 2012). These maps combined the WGBS methylation and ATAC-Seq open chromatin data with previously generated ChIP-seq marks (Figure 3A, Figure 3—figure supplement 1A). For these analyses, we initially used a single definition for hypomethylated regions (methylation <60%) that captured both UMRs and LMRs (see Materials and methods).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig3-v2.jpg)
+
+**Figure 3.:** (A) 15 chromatin states (y-axis) were derived from ChIP histone marks, DNA methylation and ATAC-seq open chromatin annotations (x-axis) using chromHMM. For each state the relevant marks characterising the state are shown. The colour is based on the chromHMM emission parameters and a darker colour indicates a higher frequency of a mark at a given state. Weak enhancers (marked by H3K4me1 alone, red) and strong enhancers (marked by H3K27ac and H3K4me1, green) were subdivided by the chromHMM analysis according to methylation and ATAC-seq status (highlighted in red and green box). The black bar at the x-axis highlights the most important marks for characterising enhancer subtypes. (B-C) FGWAS Log2 Fold Enrichment including 95% CI (log2FE, x-axis) of all chromatin states (y-axis) in T2D GWAS regions is shown which demonstrate differential enrichment amongst enhancer subclasses in single-feature enrichment analysis. In addition, log2FE of Coding Sequence (CDS) and Conserved Sequence (CONS) annotations are shown to include the effect of protein-coding and conserved regions. Significantly enriched annotations are shown in black while non-siginificant annotations are shown in grey. (C) T2D FGWAS maximum likelihood model determined through cross-validation. Log2FE and 95% CI (x-axis) of annotations included in the maximum likelihood model (y-axis) also demonstrate differential enrichment amongst enhancer subclasses. *Analysis for Genic Enhancers (state 10) did not converge and hence, only a point log2FE estimate is provided. (D) Single feature log2FE including 95% CI (x-axis) results are shown highlighting the differences in T2D GWAS enrichment of various annotations. These include ATAC-seq open chromatin peaks (red), WGBS methylation regions (including enhancer-like LMRs, promoter-like UMRs and Partially Methylated Domains, blue), ChIP-seq chromatin states (orange) and CDS and CONS (green) annotations. (E) Chi-square distribution (curved black line) with the indicated results of a maximum likelihood ratio test based on the maximum likelihood difference between a model including LMRs or ATAC-seq peaks compared to the ChIP-only model. The dashed red line indicates significance (p-value<0.05). For all FGWAS enrichment plots the axis has been truncated at −6 to facilitate visualisation and accurate values are provided in the supplementary tables.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Different combinations of epigenomic data (top) were combined to generate different sets of refined chromatin states (middle, 11 ChIP-only and 15 ChIP + Meth, ChIP + ATAC and ChIP + ATAC+Meth states, see figure Figure 3—figure supplement 1B and Figure 3A-B for actual states) using chromHMM. These sets of chromatin states were then tested for enrichment in T2D-related GWAS traits using FGWAS to compare enrichment across states (bottom). (B) ChromHMM (I) 11 ChIP-only and 15 state (II) ChIP + ATAC state and (III) ChIP + Meth models. (C) Single feature log2FE (x-axis) for different enhancer states (grey panels) defined from different combinations of epigenetic marks (y-axis) including ChIP+ ATAC+ Meth, ChIP+ ATAC, ChIP + Meth and ChIP-only. Enhancers are defined as follows: Strong enhancers are marked by both H3K4me1 and H3K27ac, weak Enhancers are defined by H3K4me1 only, gene enhancers are marked by H3K4me1 and H3K36me3, other enhancers are marked by H3K4me1, H3K4me3 and H3K27ac and are often referred to as TSS upstream regions (only included in the FGWAS T2D model for ChIP-only and ChIP + Meth chromatin states). (D) Since chromatin states defined from a different set of epigenomic marks (ChIP-only, ChIP + Meth, ChIP + ATAC and ChIP + ATAC+ Meth), as described in Figure 3—figure supplement 1A-B, are not equivalent and the enrichment can not be easily compared across models, a nested model approach was applied. That is, ChIP-only chromatin states were generated and after evaluating the individual enrichment of each annotation (see Figure 3D), FGWAS maximum likelihood models were defined using ChIP-only, hypomethylated and/or ATAC-seq peak regulatory regions. The combination of all these annotations represented a nested linear model and the changes in maximum likelihood by adding/removing hypomethylated regulatory and ATAC-seq states could be statistically evaluated using a Loglikelihood Ratio Test (LRT) as shown in Figure 3E. (E) Maximum likelihood FGWAS nested model combining ChIP-only, ATAC-peaks and LMR states (y-axis) showing log2FE enrichment (x-axis) which was used for the LRT in Figure 3E. For all FGWAS enrichment plots the axis has been truncated at −6 to facilitate visualisation and accurate values are provided in the supplementary tables.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) FGWAS Log2 Fold Enrichment including 95% CI (log2FE, x-axis) of all chromatin states (y-axis) in FG GWAS regions. In addition, log2FE of CDS and CONS annotations are shown to also include the effect of protein-coding and conserved regions. Significantly enriched annotations are shown in black. (B) FG FGWAS maximum likelihood model determined through cross-validation. log2FE and 95% CI (x-axis) of annotations included in the maximum likelihood model (y-axis) are shown. (C) Single feature log2FE (x-axis) for different enhancer states (grey panels) defined from different combinations of epigenetic marks (y-axis) including ChIP + ATAC + Meth, ChIP + ATAC, ChIP + Meth and ChIP-only. Enhancers are defined as follows: Strong enhancers are marked by both H3K4me1 and H3K27ac, weak Enhancers are defined by H3K4me1 only, gene enhancers are marked by H3K4me1 and H3K36me3, other enhancers are marked by H3K4me1, H3K4me3 and H3K27ac and are often referred to as TSS upstream regions (only included in the FGWAS T2D model for ChIP-only and ChIP + Meth chromatin states). (D) Single feature log2FE including 95% CI (x-axis) results of various annotations derived from ChiP-seq (ChIP-only), ATAC-seq, WGBS methylation status and CDS and CONS are shown. (E) Maximum likelihood FGWAS nested model combining ChIP-only, ATAC-peaks and LMR states (y-axis) showing log2FE enrichment (x-axis) which was used for the LRT in Figure 3—figure supplement 2F. (F) Chi-square distribution (black curved line) with the indicated results of a maximum likelihood ratio test based on the maximum likelihood difference between a model including LMRs or ATAC-seq peaks compared to the ChIP-only model. The dashed line indicates significance (p-value<0.05). For all FGWAS enrichment plots the axis has been truncated at −6 to facilitate visualisation and accurate values are provided in the supplementary tables.
 
 This augmented and larger set of 15 islet chromatin states retained the broad classification of regulatory elements that included promoters (positive for H3K4me3), transcribed and genic regions (H3K36me3), strong enhancers (H3K4me1; H3K27ac), weak enhancers (H3K4me1), insulators (CTCF) and repressed elements (H3K27me) (Figure 3A). The addition of islet methylation and open chromatin data expanded existing chromatin state definitions to provide new subclasses, particularly amongst enhancer elements. Here, we observed two subclasses of strong enhancers and three of weak enhancers (Figure 3A). We denote the strong enhancer subtypes as ‘open’ (n = 32 k genome-wide), characterised by open chromatin and hypomethylation, and ‘closed’ (n = 110 k) with closed chromatin and hypermethylation (Figure 3A). The three weak enhancer states we denote as ‘open’ (n = 38k: open chromatin, hypomethylation), ‘lowly-methylated’ (n = 78 k; closed chromatin, hypomethylation) and ‘closed’ (n = 206k: closed chromatin, hypermethylation). No equivalent class of ‘lowly-methylated’ strong enhancers was observed in the 15-state model. When comparing these chromatin states to those identified using only ChIP-seq marks ([Parker et al., 2013], Figure 1—figure supplement 1C), the two strong enhancer subclasses we identified subdivided the ‘strong enhancer 1’ state as described by Parker (defined by H3K27ac and H3K4me1). Additional comparison to ‘stretch’ enhancer clusters (Parker et al., 2013), showed that there was considerable overlap between the ‘open’ strong and weak enhancer states we identify here and previously-described ‘stretch’ enhancer states (16.1 k out of 23 k stretch enhancer overlapped 32 k out of 70.1 k ‘open’ enhancers). Even so, most (55%) ‘open’ enhancer states, and in particular ‘open weak enhancers’ (70%), were not captured within ‘stretch’ enhancer intervals, and we regard these as distinct islet enhancer subclasses.
 
 To understand the relationship of these various state definitions to genetic variants influencing T2D risk, we applied the hierarchical modelling approach FGWAS (Pickrell, 2014) to the same sets of large-scale GWAS data for T2D (from DIAGRAM [Scott et al., 2017]) and FG (ENGAGE [Horikoshi et al., 2015]) described in section 2.1. FGWAS allowed us to combine GWAS and genomic data to determine the genome-wide enrichment within islet regulatory features for variants associated with T2D risk. These enrichment priors were then used to generate credible variant sets that are informed by both GWAS and genomic data, as described in section 2.4.
 
 In single-feature analyses, we found significant enrichment (lower limit of Confidence Interval (CI) >0) limited to four enhancer states (open weak enhancers, both types of strong enhancer and H3K36me3 marked genic enhancers) (Figure 3B, Table 1). To take into account protein-coding variant and conserved sequence effects, we also included CoDing exon Sequence (CDS) (Carlson and Maintainer, 2015) and CONServed sequence (CONS) (Lindblad-Toh et al., 2011) as additional annotations which were previously found to be strongly enriched for T2D GWAS signal (Finucane et al., 2015). We observed significant enrichment for CDS and CONS sequence in the single state results (Figure 3B, Table 1). FGWAS multi-feature analyses for T2D, incorporating all annotations positive in single-element analyses, retained both subclasses of strong enhancer, the subclass of open weak enhancers, genic enhancers and CDS in the joint model (Figure 3C and Materials and methods). Conserved sequence annotations were not retained in the joint model.
+
+**Table 1.**
+ Single FGWAS annotation enrichment in T2D and FG GWAS data.For each chromatin state annotation the total number of sites and the single state FGWAS log2 Fold Enrichment (log2FE) in T2D and FG is shown. In addition, log2FE enrichment is also shown for CDS and CONS annotation. 95% Confidence Intervals (CI) for log2FE are shown in brackets and significantly enriched states are highlighted in bold (lower CI limit >0). Parker enhancer states refer to enhancer states defined by Parker et al., 2013.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromatin States</th>
+      <th>Total number of states</th>
+      <th>T2D log2FE (CI)</th>
+      <th>FG log2FE (CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Active Promoter</td>
+      <td>20 k</td>
+      <td>1.6 (-0.8 to 2.7)</td>
+      <td>2.7 (0 to 4.1)</td>
+    </tr>
+    <tr>
+      <td>2. Weak Promoter</td>
+      <td>33 k</td>
+      <td>1.7 (-4.8 to 2.9)</td>
+      <td>2.7 (-0.1 to 4.2)</td>
+    </tr>
+    <tr>
+      <td>3.Transcriptional Elongation</td>
+      <td>71 k</td>
+      <td>-0.4 (-20 to 1.1)</td>
+      <td>-26.1 (-46.1 to 1.0)</td>
+    </tr>
+    <tr>
+      <td>4. Low Methylation</td>
+      <td>73 k</td>
+      <td>-1.5 (-3.1 to -0.6)</td>
+      <td>-1.7 (-4.2 to -0.3)</td>
+    </tr>
+    <tr>
+      <td>5. Closed Weak Enhancer</td>
+      <td>206 k</td>
+      <td>1.2 (-0.1 to 2)</td>
+      <td>1.7 (0 to 2.9)</td>
+    </tr>
+    <tr>
+      <td>6. Lowly-methylated Weak Enhancer</td>
+      <td>78 k</td>
+      <td>-0.5 (-20 to 1.6)</td>
+      <td>-26.7 (-46.7 to 1.6)</td>
+    </tr>
+    <tr>
+      <td>7. Open Weak Enhancer</td>
+      <td>38 k</td>
+      <td>3.4 (2.5 to 4.2)</td>
+      <td>3.1 (-0.6 to 4.6)</td>
+    </tr>
+    <tr>
+      <td>8. Closed Strong Enhancer</td>
+      <td>110 k</td>
+      <td>2.7 (1.8 to 3.4)</td>
+      <td>3.3 (2 to 4.4)</td>
+    </tr>
+    <tr>
+      <td>9. Open Strong Enhancer</td>
+      <td>32 k</td>
+      <td>3.8 (3.1 to 4.5)</td>
+      <td>4.3 (2.8 to 5.5)</td>
+    </tr>
+    <tr>
+      <td>10. Genic Enhancer</td>
+      <td>39 k</td>
+      <td>2.5 (1.3 to 3.4)</td>
+      <td>2.9 (0.8 to 4.3)</td>
+    </tr>
+    <tr>
+      <td>11. Accessible chromatin</td>
+      <td>14 k</td>
+      <td>-25.2 (-45.2 to 2.5)</td>
+      <td>-28.4 (-48.4 to 3.7)</td>
+    </tr>
+    <tr>
+      <td>12. Insulator</td>
+      <td>31 k</td>
+      <td>0.9 (-20 to 2.6)</td>
+      <td>-0.6 (-20 to 3.6)</td>
+    </tr>
+    <tr>
+      <td>13. Heterochromatin</td>
+      <td>216 k</td>
+      <td>2.3 (-20 to 3.9)</td>
+      <td>1.8 (-1.5 to 4.0)</td>
+    </tr>
+    <tr>
+      <td>14. Polycomb Repressed</td>
+      <td>71 k</td>
+      <td>-25.5 (-45.5 to 0.9)</td>
+      <td>-33.2 (-53.2 to 1.5)</td>
+    </tr>
+    <tr>
+      <td>15. Quiescent State</td>
+      <td>1.7 k</td>
+      <td>-1.0 (-2.2 to -0.1)</td>
+      <td>-28.6 (-48.6 to -0.6)</td>
+    </tr>
+    <tr>
+      <td>CDS</td>
+      <td>NA</td>
+      <td>2.6 (1.2 to 3.5)</td>
+      <td>2.7 (-0.2 to 4.3)</td>
+    </tr>
+    <tr>
+      <td>CONS</td>
+      <td>NA</td>
+      <td>2.1 (1.1 to 2.9)</td>
+      <td>1.9 (0.2 to 3.2)</td>
+    </tr>
+    <tr>
+      <td>Parker Weak Enhancer</td>
+      <td>119 k</td>
+      <td>0.9 (-2.5 to 2.0)</td>
+      <td>-2.0 (-20.0 to 2.4)</td>
+    </tr>
+    <tr>
+      <td>Parker Strong Enhancer (all)</td>
+      <td>123 k</td>
+      <td>2.7 (2.0 to 3.3)</td>
+      <td>3.1 (2.0 to 4.4)</td>
+    </tr>
+    <tr>
+      <td>Parker Strong Enhancer (open)</td>
+      <td>64 k</td>
+      <td>3.1 (2.4 to 3.7)</td>
+      <td>3.6 (2.3 to 4.8)</td>
+    </tr>
+    <tr>
+      <td>Parker Strong Enhancer (closed)</td>
+      <td>59 k</td>
+      <td>1.9 (0.8 to 2.7)</td>
+      <td>2.3 (0.5 to 3.5)</td>
+    </tr>
+  </tbody>
+</table>
 
 We observed markedly different levels of enrichment for T2D association between and within open and closed enhancer states (Figure 3B–3C, Table 1). Using these augmented chromatin state maps, we demonstrated clear enrichment for T2D association for the subset of ‘open’ weak enhancers (12% of all weak enhancer sites) with no evidence of enrichment in the remaining subclasses (‘closed’ and ‘lowly-methylated’) (Figure 3B and Table 1). This concentration of enrichment amongst a relatively small subset of the weak enhancers was consistent with the lack of enrichment across all weak enhancers defined solely on the basis of H3K4me1 signal ([Parker et al., 2013], single state log2FE = 0.9, CI = −2.5 to 2.0, Table 1, Figure 1—figure supplement 1C). We also saw differences in enrichment signal between open and closed strong enhancers, with the most marked enrichment amongst open strong enhancers (22% of the total, Figure 3B–C, Table 1). This effect was particularly obvious in the joint-analysis (open strong enhancer joint log2FE = 4.1, CI = 3.3 to 4.8 vs. closed strong enhancer joint log2FE = 2.4, CI = 0.5 to 3.3, Figure 3C).
 
@@ -95,7 +270,7 @@ FGWAS analysis for FG corroborated the observations from T2D analysis. Despite r
 
 Overall, these analyses demonstrate that the addition of open chromatin and DNA methylation data to ChIP-seq marks enhances the resolution of regulatory annotation for human islets. In particular, it defines subsets of weak and strong enhancers that differ markedly with respect to the impact of genetic variation on T2D risk. Although DNA accessibility and hypomethylation status are strongly correlated and provide broadly similar enrichments, the effects of the former predominate. In line with the dominance of open chromatin status for T2D GWAS enrichment, we observed that T2D risk in relation to methylation status is primarily invested in hypomethylated LMRs (i.e. enhancers) rather than UMRs, dDMRs or PMDs.
 
-## Augmented chromatin maps and open chromatin allelic imbalance refine likely causal variants at ADCY5, CDC123, and KLHDC5
+### Augmented chromatin maps and open chromatin allelic imbalance refine likely causal variants at ADCY5, CDC123, and KLHDC5
 
 We next deployed the insights from the global FGWAS enrichment analyses to define the molecular mechanisms at individual T2D susceptibility loci, refining T2D causal variant localisation using the combination of genetic data (from fine-mapping) and the genome-wide patterns of epigenomic enrichment.
 
@@ -103,11 +278,74 @@ Specifically, we applied FGWAS to the T2D DIAGRAM GWAS data (Scott et al., 2017)
 
 Consistent with the increased T2D GWAS enrichment of states including open chromatin and DNA methylation information, we found that analyses using enrichments from the augmented chromatin state model (combining ChIP-seq, ATAC-seq and WGBS data) were associated with smaller 99% credible sets (median of 17 SNPs) than those derived from FGWAS enrichment derived from ChIP-seq data alone (median 23). In parallel, the PPA for the best variant per locus increased (median 0.39 vs 0.31). Individual T2D GWAS locus results are shown in Figure 4A–B. We also expanded the FGWAS PPA analysis to investigate open chromatin and DNA methylation effects on fine-mapping and found that the reduction in 99% credible set size and increase in maximum variant PPA was driven predominantly by open chromatin (Figure 4—figure supplement 1, Figure 4—source data 1). This demonstrates that the inclusion of open chromatin maps helps to improve prioritisation of causal variants at many T2D GWAS loci.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig4-v2.jpg)
+
+**Figure 4.:** (A) Per locus the difference in the number of 99% credible set variants between ChIP +ATAC + Meth and ChIP-only model is shown (positive values indicate a reduction in the number of 99% credible set variants in the ChIP+ATAC+Meth model). (B) Per locus the difference in the maximum single variant PPA between the ChIP +ATAC + Meth and ChIP-only model is shown (positive values indicate an increase in the maximum single variant PPA in the ChIP +ATAC + Meth model). (C) T2D GWAS loci were classified into insulin secretion (ISR), insulin resistance (IR) or unclassified loci based on genetic association with physiological traits derived from Dimas et al. (2014) and Wood et al. (2017). In addition, loci with known role in islet genomic regulation or function are highlighted in bold. These include loci with islet eQTLs (ZMIZ1, CDC123) and mQTLs (WFS1, KCNJ11). (D) Identification of T2D GWAS loci and variants enriched for enhancer chromatin states using FGWAS PPA. Per locus the highest PPA variant is shown (y-axis) and the number of variants with PPA >0.01 (x-axis). Loci with high PPA variants (min PPA >0.1, dashed horizontal line) that overlap one of the enhancer states (green) are highlighted and the high PPA variants (PPA >0.1) were tested for allelic imbalance in open chromatin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Violin plot showing the distribution of 99% credible set variant size (y-axis, log10 scale) of different annotation types used (x-axis, ChIP-only, ChIP + Meth, ChIP + ATAC, ChIP +ATAC + Meth, ATAC-only and LMR-only model). (B) Violin plot showing the distribution in the maximum single variant PPA (y-axis) of different annotation types used (x-axis, ChIP-only, ChIP + Meth, ChIP + ATAC, ChIP +ATAC + Meth, ATAC-only and LMR-only model). Dots indicate mean value. (C) Median 99% credible set variant size (x-axis) and median top variant PPA (y-axis) information for ChIP-only, ChIP + Meth, ChIP + ATAC, ChIP + ATAC + Meth, ATAC-only and LMR-only models.
+
 A subset of T2D GWAS signals are known to influence T2D risk through a primary effect on insulin secretion, whilst others act primarily through insulin resistance. We used previous categorisations of T2D GWAS loci based on the patterns of association with quantitative measurements of metabolic function and anthropometry (Wood et al., 2017; Dimas et al., 2014), to define a set of 15/48 loci most clearly associated with deficient insulin secretion (and therefore most likely to involve islet dysfunction). At 11 of these 15 loci, we found that islet ‘open strong enhancer’ states, and to a lesser extent ‘open weak enhancer’ and ‘closed strong enhancer’, captured more than 60% of the PPA (median 92%, Figure 4C). Variants in these islet enhancer subclasses also captured at least 95% of the PPA at 4 T2D GWAS loci that could not be classified according to physiological association data but which have been previously implicated in human islet genome or functional regulation based on islet eQTL (van de Bunt et al., 2015) or mQTL (Olsson et al., 2014) data (Figure 4C, genes highlighted in bold). In contrast, at 3/6 of the insulin resistance and all but five unclassified loci, the PPA was mostly (>50%) attributable to other non-islet enhancer states (across all insulin resistance and unclassified loci, DNA not overlapping islet enhancers and defined as ‘Other’ capture a median PPA of 64%). Thus, islet regulatory annotations are particularly useful for fine-mapping T2D GWAS loci that affect insulin secretion and beta-cell function.
 
 To obtain additional evidence to support the localisation of causal variants, we tested for allelic imbalance in ATAC-seq open chromatin data. We selected 54 variants within 33 T2D-associated GWAS segments for testing of allelic imbalance on the basis of (a) a reweighted variant PPA >= 10% and (b) overlap with an enriched regulatory state within the FGWAS T2D joint-model (Figure 4D, Figure 4—source data 2). Of these, 20 variants (at 16 loci) had sufficient numbers of heterozygous samples (>2) and ATAC-seq read depth (depth >9 and at least five reads for each allele). After correcting for mapping bias using WASP, we observed the strongest evidence for allelic imbalance (FDR < 0.05) at 3 out of the 20 variants (rs11257655 near CDC123 and CAMK1D, rs10842991 near KLHDC5 and rs11708067 at ADCY5) (Table 2). All three overlapped refined islet open strong or open weak enhancer regions characterised by open chromatin and hypomethylation.
 
+**Table 2.**
+ T2D-associated variants with allelic imbalance in open chromatin.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variant</th>
+      <th>Locus</th>
+      <th>DIAGRAM P-value</th>
+      <th>Fgwas  T2D PPA</th>
+      <th>Allelic imbalance Allele Ratio (Allele #)</th>
+      <th>Allelic imbalance WASP P-value</th>
+      <th>Direction of effect (T2D)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs11708067</td>
+      <td>ADCY5</td>
+      <td>8.8E-13</td>
+      <td>0.92</td>
+      <td>0.29 (38 A VS 94 G alleles)</td>
+      <td>1.2E-06</td>
+      <td>risk allele A closed</td>
+    </tr>
+    <tr>
+      <td>rs11257655</td>
+      <td>CDC123</td>
+      <td>4.0E-08</td>
+      <td>0.95</td>
+      <td>0.39 (278 C VS 435 T alleles)</td>
+      <td>4.5E-09</td>
+      <td>risk allele T open</td>
+    </tr>
+    <tr>
+      <td>rs10842991</td>
+      <td>KLHDC5</td>
+      <td>7.3E-07</td>
+      <td>0.13</td>
+      <td>0.64 (75 C VS 43 T alleles)</td>
+      <td>4.1E-03</td>
+      <td>risk C allele open</td>
+    </tr>
+  </tbody>
+</table>
+
 Variant rs11257655 accounts for 95% of the reweighted PPA (compared to a PPA of 20% from genetic data alone) at the CDC123/CAMK1D locus, overlaps an ‘open strong enhancer’ region (Figure 5A) and the risk allele correlates with increased chromatin accessibility. The same variant is in high LD (r2 = 0.82) with the lead variant for a cis-eQTL for CAMK1D in islets (van de Bunt et al., 2015). In experimental assays (Fogarty et al., 2014), the T2D-risk allele has been shown to be associated with increased CAMK1D gene expression and enhanced binding of the FOXA1 and FOXA2 transcription factors. These data all point to rs11257655 as the causal variant at this locus.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig5-v2.jpg)
+
+**Figure 5.:** For each locus (A) CDC123, (B) KLHDC5 and C) ADCY5 the following information is shown: Variant level information (depending on the region GWAS lead SNP red, credible set black, eQTL blue and high LD SNPs with r2 >0.8 black), WGBS methylation data (black, middle), four human islet ATAC-seq tracks (green, middle), islet chromatin states (from this study as well as Parker et al., 2013) and Pasquali et al., 2014) and Encode chromatin states from 9 cell types (bottom). For ADCY5 3 ATAC-seq Endoß tracks (top green) and the Capture C results in the Endoß cell line are shown as well (middle blue). Abbreviation for cell types: B-lymphoblastoid cells (GM12878), embryonic stem cells (H1 ES), erythrocytic leukaemia cells (K562), hepatocellular carcinoma cells (HepG2), umbilical vein endothelial cells (HUVEC), mammary epithelial cells (HMEC), skeletal muscle myoblasts (HSMM),normal epidermal keratinocytes (NHEK) and normal lung fibroblasts (NHLF).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31977/elife-31977-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Predicted PAX6 Transcription factor binding motif likely affected by allelic imbalance of the variant rs10842991 (highlighted in purple). (B) The ADCY5 rs11708067 risk A allele was associated with increased methylation levels (y-axis, while genotypes are shown on the x-axis). (C) Chromatin Capture (Capture C) in the human beta-cell line EndoßH1 showed interactions between the ADCY5 promoter (peak) and the flanking regions of the promoter. The x-axis shows the position on the chromosome in Mb while the y-axis indicates mapped reads per fragment. (D) Chromatin Capture (Capture C) in the human beta-cell line EndoßH1 focussed at the genomic region (~47 kb) near the variant rs11708067 (highlighted) and variants in high LD (r2 >0.8) with it (variants are depicted as black dots). Fragments containing rs11708067 (red) or other high LD variants (dark grey) are highlighted. The x-axis shows the position on the chromosome in bp while the y-axis indicates normalised mapped reads per fragment. The two fragments with P-values have a significant (FDR < 0.05) number of normalised read counts over background: The fragment with the P-value on the left (in red) contains rs11708067 while the fragment with the P-value on the right harbours rs2877716, rs6798189, rs56371916.
 
 At KLHDC5, no clear causal variant emerged based on genetic fine-mapping data alone as the credible set contained 23 variants in high mutual LD (r2 >0.8, top variant PPA <5%, Figure 5B). Of these, variants rs10771372 (genetic fine-mapping PPA = 5%), rs10842992 (genetic fine mapping PPA = 5%) and rs10842991 (genetic fine-mapping PPA = 3%) overlapped ‘open strong enhancer’ regions (Figure 5B), such that their reweighted PPAs rose to 21% (rs10771372), 21% (rs10842992) and 13% (rs10842991), respectively. We observed allelic imbalance only at rs10842991 with the T2D-risk C allele showing greater chromatin accessibility (binomial p=4.1×10−3, Table 2). This variant further overlapped a predicted TFBS motif for PAX6 as determined by the software tool FIMO (Grant et al., 2011): the T2D-risk allele was predicted to enhance PAX6 transcription factor binding consistent with the allelic effects on increasing chromatin accessibility (Figure 5—figure supplement 1A). This strong enhancer region is almost exclusively found in islets, with strong enhancer H3K27ac states overlapping rs10842991 in only two non-islet (heart and smooth muscle) Epigenome Roadmap tissues (out of 99 tissues with 18-state chromatin state information, Figure 5B)(Kundaje et al., 2015). Islet eQTL data (Varshney et al., 2017) also links rs10842991 and close proxy SNPs (including rs7960190) to islet transcription with the risk allele increasing KLHDC5 expression. These data prioritise rs10842991 as the likely causal variant at the KLHDC5 T2D GWAS locus, and indicate a likely molecular mechanism involving modified PAX6 transcription factor binding and an impact on KLHDC5 expression and islet function.
 
@@ -137,35 +375,35 @@ In addition, while the present study characterises islet epigenome status and va
 
 ## Materials and methods
 
-## Human pancreatic islet samples
+### Human pancreatic islet samples
 
-## WGBS and 450 k array human pancreatic islet sample collection
+#### WGBS and 450 k array human pancreatic islet sample collection
 
 Human islets were retrieved from deceased Caucasian non-diabetic donors from the Oxford DRWF Human Islet Isolation Facility (n = 34) and at the Alberta Diabetes Institute in Edmonton in Canada (n = 10). For the analysis only samples with a purity >70% were used as determined by dithizone labeling. The Human Research Ethics Board at the University of Alberta (Pro00001754), the University of Oxford's Oxford Tropical Research Ethics Committee (OxTREC Reference: 2–15), or the Oxfordshire Regional Ethics Committee B (REC reference: 09/H0605/2) approved the studies. All organ donors provided informed consent for use of pancreatic tissue in research.
 
 For all WGBS (n = 10) and a subset of 450 k array samples (n = 18) human pancreatic islet DNA was extracted from 100,000 to 150,000 islet cells using Trizol-(Ambion from Thermo Fisher Scientific, Waltham, MA was used for islets processed in Oxford, UK while Trizol from Sigma Aldrich, St. Louis, MO was used for islets processed in Edmonton, Canada) as described previously (van de Bunt et al., 2015). For the remaining 23 samples islet DNA was extracted using the ReliaPrep gDNA Tissue Miniprep system (Promega, Madison, WI). Extracted DNA was stored at −80°C before further use.
 
-## ATAC-seq human pancreatic islet sample collection
+#### ATAC-seq human pancreatic islet sample collection
 
 Human pancreatic islets preparations (n = 18) were retrieved from 17 deceased non-diabetic donors of European descent from the Oxford DRWF Human Islet Isolation Facility and stored for 1–3 days in CMRL or UW media. The latter were reactivated in CMRL for 1 hr before processing them further. Approximately 50,000 islet cells per sample were hand-picked and immediately processed for ATAC-seq as described previously (Buenrostro et al., 2013), however, an additional round of purification was performed using Agencourt AMPure XP magnetic beads (Beckman Coulter, Brea, CA).
 
-## WGBS data generation
+### WGBS data generation
 
-## Bisulphite conversion
+#### Bisulphite conversion
 
 400 ng of DNA per human islet samples (n = 10) were sent as part of a collaborative effort to the Blizard Institute, Queen Mary University, London, UK and bisulphite- converted using the Ovation Ultralow Methyl-Seq DR Multiplex System 1–8 (Nugen, Manchester, UK) and purified using Agencourt AMPure beads (Beckman Coulter) as described previously (Lowe et al., 2013).
 
-## Library generation and processing of reads
+#### Library generation and processing of reads
 
 The libraries were sequenced by members of the High-Throughput Genomics group at the Wellcome Centre for Human Genetics, University of Oxford, Oxford, UK. Samples were sequenced as multiplex libraries across 3 HiSeq2000 lanes with 100 bp paired-end read length (including a PhIX spike-in of 5%) to obtain high-coverage read data. The obtained reads were trimmed using a customized python3 script (10 bp at the start and 15 bp at the end) and aligned to hg19 using the software Bismark (settings: L,0,–0.6, version 0.12.5, RRID:SCR_005604)(Krueger and Andrews, 2011). Specifically, paired-end alignment of trimmed reads was performed and unmapped reads from read one were realigned using Bismark and merged with the paired-end alignment using samtools (Li et al., 2009) (version 0.1.19, RRID:SCR_002105) in order to increase mapping efficiency. Coverage for the merged paired-end and realigned HiSeq read alignments was estimated for the human mappable genome (NCBI hg19 2.8 billion base pairs excluding gaps and unmappable and blacklisted regions according to UCSC and Encode [ENCODE Project Consortium, 2012]) using bedtools (version v2.21.0) (Quinlan, 2014).
 
-## WGBS DNA methylation quantification and prediction of hypomethylated regulatory regions
+#### WGBS DNA methylation quantification and prediction of hypomethylated regulatory regions
 
 CpG methylation levels were determined for each sample by calculating the ratio of unmodified C (methylated) and bisulphite converted T (unmethylated) alleles using BiFAST (first described here [Lowe et al., 2013]). High-pass pooled WGBS data was generated by adding methylated and unmethylated read counts across individual low-pass samples to then estimate the average beta methylation levels.
 
 Regulatory regions were identified using the R package methylseek (RRID:SCR_006513) (Burger et al., 2013). After removing PMDs, which represent highly heterogenous methylation states determined by DNA sequence features (Gaidatzis et al., 2014), LMRs (<30 CpGs) and UMRs (>30 CpGs) were predicted in hypomethylated regions (<50%) at an FDR of 0.05. The methylation level and FDR parameter was inferred from the data as suggested by the methylseek workflow (Burger et al., 2013).
 
-## 450 k DNA methylation array data generation
+### 450 k DNA methylation array data generation
 
 In total, 41 samples were processed for the Illumina Infinium HumanMethylation450 BeadChip (Illumina, San Diego, CA). Of these 18 samples were bisulphite-converted and processed as part of a collaboration at the UCL Cancer Institute, University College London, London, UK while the remaining 23 samples were processed in OCDEM, University of Oxford, Oxford, UK. The DNA was bisulphite converted using the EZ DNA MethylationTM Kit ( Zymogen Research Corp, Irvine, CA) and hybridised to the Illumina 450 k array and scanned with iScan (Illumina) according to the manufacturer’s protocol.
 
@@ -173,25 +411,25 @@ The resulting data was analysed using the Package minfi (RRID:SCR_012830) (Aryee
 
 Following separate quantile normalisation of signal intensities derived from methylated and unmethylated Type I probes and Type II probes, methylation levels (ß) were estimated, based on the intensities of the methylated (M) and unmethylated (U) signal in the following way: β = M/(M + U + 100). To correct for batch effects the ComBat function implemented in the sva (Johnson et al., 2007; Leek et al., 2007) package was used (Figure 1—figure supplement 2).
 
-## ATAC-seq data generation
+### ATAC-seq data generation
 
-## Sequencing of ATAC-seq reads
+#### Sequencing of ATAC-seq reads
 
 ATAC-seq libraries were sequenced at the High-Throughput Genomics group which is part of the Wellcome Centre for Human Genetics, University of Oxford, Oxford, UK. Samples were sequenced as 4-6plex libraries across 1–3 Hiseq2500 lanes with 50 bp paired-end read length.
 
-## Processing of ATAC-seq reads
+#### Processing of ATAC-seq reads
 
 Raw FASTQ reads were processed with an in-house pipeline (first described in (Hay et al., 2016) and on the website http://userweb.molbiol.ox.ac.uk/public/telenius/PipeSite.html). Specifically, library and sequencing quality was checked with FASTQC (RRID:SCR_014583) (http://www.bioinformatics.babraham.ac.uk/projects/fastqc) and reads were mapped to the human genome (hg19) via bowtie (Langmead et al., 2009) (version 1.1.0, RRID:SCR_005476) with default settings but -m 2, and maxins 2000 which allows mapping of reads with a maximum number of 2 alignments and a maximum insert size of 2000 bp. For reads that could not be aligned the first time, adapters were removed with Trim Galore at the three prime end (RRID:SCR_011847, settings -length 10, -qualFilter 20, http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) to enhance the chance of mapping. The resulting trimmed reads were then mapped again with bowtie. Any remaining unmapped and trimmed reads were processed with FLASH (Magoč and Salzberg, 2011) (version 1.2.8, RRID:SCR_005531, settings -m 9 -x 0.125) which combines overlapping read pairs and reconstructs read pairs without overlap. These are then realigned a third time using bowtie. PCR duplicates are then removed from the mapped bam files using samtools rmdup function (Li et al., 2009). Additionally, all reads overlapping any of the ‘unmappable’ UCSC Duke blacklisted hg19 regions (ENCODE Project Consortium, 2012) are also removed from the final bam file.
 
 Open chromatin peaks were called through the aforementioned in-house pipeline by applying sample-specific read depth and width parameters, which were chosen based on the signal to noise ratio of a given sample.
 
-## ChIP-seq data and identification of chromatin states
+### ChIP-seq data and identification of chromatin states
 
-## Processing of available ChIP-seq data
+#### Processing of available ChIP-seq data
 
 Human islet ChIP-seq histone mark and TFBS data were obtained from various sources: H3K4me1, CTCF and H3K27ac (Pasquali et al., 2014), H3K36me3 and H3K4me3 (Morán et al., 2012) and H3K27me3 (Kundaje et al., 2015). Available raw fastq files were aligned to hg19 using bowtie1 (version 1.1.1) with modified default settings (-m 1 which removes reads with more than one valid alignment and -n 1 which defines the maximum number of mismatches in seed) and PCR duplicates were removed from the aligned bam files with Picard tools (RRID:SCR_006525, v1.119, http://broadinstitute.github.io/picard/). The resulting reads were converted into bed format using the bedtools bamToBed function (Quinlan, 2014) (RRID:SCR_006646, version v2.21.0) and extended by 200 bp towards the 3’ end to account for fragment size.
 
-## Identification of chromatin states using chromHMM
+#### Identification of chromatin states using chromHMM
 
 Binarised 200 bp density maps from the bed files of the 6 ChIP-seq marks were created using a Poisson distribution implemented in the BinaryBed function of the ChromHMM software as described in (Ernst and Kellis, 2012; Ernst et al., 2011). From these epigenomic density maps, 11 ChIP-only chromatin states were derived using a multivariate Hidden Markov Model implemented in the Learnmodel function (standard settings, h19 genome) of the software ChromHMM (Ernst and Kellis, 2012).
 
@@ -199,7 +437,7 @@ To generate additional sets of chromatin states based on ChIP-seq, ATAC-seq and 
 
 These binarised 200 bp ChIP-seq, ATAC-seq and DNA methylation maps were combined and used to generate 3 sets of chromatin states derived from ChIP and DNA methylation data (ChIP +Meth), ChIP and ATAC-seq data (ChIP +ATAC) or ChIP, ATAC-seq and DNA methylation data (ChIP +ATAC + Meth) using the Learnmodel ChromHMM function (Figure 3A and Figure 3—figure supplement 1A–B). As suggested by (Ernst et al., 2011), after evaluating models with up to 20 chromatin states, a 15 state model was chosen based on the resolution provided by identified states
 
-## ADCY5 capture C analysis and ATAC-seq in EndoC-ßH1
+### ADCY5 capture C analysis and ATAC-seq in EndoC-ßH1
 
 Next-generation Capture-C was performed in order to map physical chromatin interactions with the ADCY5 promoter in EndoC-ßH1 (RRID:CVCL_L909) cell lines (n = 3) (see protocol in Materials and methods in [Davies et al., 2016]).
 
@@ -209,13 +447,13 @@ In addition, ATAC-seq was performed in 50,000 cells of EndoC-ßH1 cell lines (n�
 
 Endo-βH1 cells were obtained from Endocells and have been previously authenticated (Ravassard et al., 2011). In addition, the cell line was tested and found negative for mycoplasma contamination.
 
-## Overlaying generated epigenomic datasets generated here with other genomic regulatory regions
+### Overlaying generated epigenomic datasets generated here with other genomic regulatory regions
 
 CpG sites and/or hypomethylated regulatory regions identified from the WGBS and/or 450 k array data were overlapped with existing islet chromatin state maps (Parker et al., 2013), islet transcription factor binding sites (FOXA2, MAFB, NKX2.2, NKX6.1, PDX1), T2D-associated islet dDMRs (Dayeh et al., 2014) and eQTLs (van de Bunt et al., 2015). Similarly, ATAC-seq open chromatin peaks generated here were overlapped with publicly available ATAC-seq peaks (Varshney et al., 2017).
 
 In addition, we also obtained the 850 k array manifest file to determine overlap of 850 k array CpG sites with GWAS credible set regions (https://support.illumina.com/downloads/infinium-methylationepic-v1-0-product-files.html).
 
-## Genetic datasets used in this study
+### Genetic datasets used in this study
 
 Credible sets from the DIAGRAM (Scott et al., 2017)(involving 26.7 k cases and 132.5 k controls of predominantly European origin, imputed to the 1000G March 2012 reference panel) and ENGAGE (Horikoshi et al., 2015)(including 46.7 k individuals, imputed to the 1000G March 2012 reference panel) consortium were used to compare the ability of the 450 k, 850 k and WGBS methylation array to interrogate T2D and FG GWAS regions.
 
@@ -223,33 +461,33 @@ The DIAGRAM and ENGAGE GWAS SNP summary level data was used for the FGWAS analys
 
 Furthermore, data from (Wood et al., 2017) and (Dimas et al., 2014) were used to categories T2D GWAS loci into physiological groups of insulin secretion, insulin resistance or unclassified loci.
 
-## Statistical and computational analysis
+### Statistical and computational analysis
 
-## Enrichment analysis of identified regulatory annotations in other genomic annotations
+#### Enrichment analysis of identified regulatory annotations in other genomic annotations
 
 Enrichment of hypomethylated regulatory regions (LMRs and UMRs, result section 2.2.) and ATAC-seq open chromatin peaks (result section 2.3) in the aforementioned genomic annotations (method section 4.6) was determined through 100,000 random permutations. P-values and fold enrichment was determined by comparing the true overlap results to the permuted overlap results. The resulting P-values were multiple testing corrected using Bonferroni correction (an adjusted p-value<0.05 was considered significant).
 
-## FGWAS enrichment analysis
+#### FGWAS enrichment analysis
 
 FGWAS (Pickrell, 2014) (version 0.3.6) applied a hierarchical model that determined shared properties of loci affecting a trait. The FGWAS model used SNP-based GWAS summary level data and divided the genome into windows (setting ‘k’=5000 which represents the number of SNPs per window), which are larger than the expected LD patterns in the population. The model assumed that each window either contained a single SNP that affected the trait or that there was no SNP in the window that influenced the trait. The model estimated the prior probability of a window to contain an association and the conditional prior probability that a SNP within the window was the causal variant. These prior probabilities were variable, dependent on regional annotations and estimated based on enrichment patterns of annotations across the genome using a Bayes approach.
 
-## FGWAS single state analysis
+##### FGWAS single state analysis
 
 FGWAS was used with standard settings to determine enrichment of individual islet chromatin states, LMRs, UMRs, PMDS and ATAC-seq open chromatin peaks, CDS and CONS sequence in DIAGRAM (setting ‘cc’ was applied for use with T2D-case-control GWAS data) and ENGAGE GWAS SNP summary level data.
 
 For each individual annotation, the model provided maximum likelihood enrichment parameters and annotations were considered as significantly enriched if the parameter estimate and 95% CI was above zero.
 
-## FGWAS joint model analysis
+##### FGWAS joint model analysis
 
 To determine the maximum likelihood model the following approach suggested by (Pickrell, 2014) was used for each set of chromatin states (ChIP-only, ChIP +ATAC, ChIP +Meth and ChIP +ATAC + Meth), separately. In addition, CDS and CONS sequenced were used as well for each set of chromatin states in the joint analysis. Firstly, a model was fitted for each annotation individually to identify all annotations that were significantly enriched with the trait. Secondly, the annotation with the highest increase (and enrichment) in the maximum log-likelihood was added to the model and the analysis was repeated with the additional annotation. Thirdly, annotations were added as long as they increase the maximum log-likelihood of the newly tested model. Fourthly, a 10-fold cross-validation approach was used after determining a penalty parameter based on the maximum likelihood of a penalised log-likelihood function to avoid overfitting. Fifthly, each annotation was dropped from the model and the maximum cross-validation likelihood was evaluated. If a reduced model has a higher cross-validation maximum likelihood, additional annotations are dropped until the model cannot be further improved. This model was described as the best fitted model and used for the remaining analysis. The maximum likelihood enrichment parameters and 95% CI for each annotation of the best model were reported (independent of significance).
 
-## Comparing FGWAS enrichment parameter across chromatin states
+##### Comparing FGWAS enrichment parameter across chromatin states
 
 Initially, similar enhancer chromatin states derived from the four different ChromHMM analyses (ChIP-only, ChIP + ATAC, ChIP + Meth, ChIP + ATAC + Meth) were compared. Similarity was determined based on shared histone chromatin marks according to the chromHMM emission parameters. Further comparisons between the ChIP-only and ChIP + ATAC + Meth model were performed based on the reweighted FGWAS maximum variant PPA and the number of reweighted 99% credible set variants per T2D locus (for details regarding FGWAS PPA see next section).
 
 However, considering that the chromatin states were derived from distinct sets of annotations across different analyses of ChromHMM, a direct comparison was not fully possible. Hence, a nested model approach was used to further dissect the contribution of open chromatin and DNA methylation to the enrichment. Specifically, an FGWAS analysis was performed that combined the ChIP-only chromHMM states with raw LMRs (representing DNA methylation) and ATAC-seq peaks (representing open chromatin). After determining the best maximum-likelihood cross-validation model (combining ChIP-only, ATAC-seq and LMR states) a nested model and log-likelihood ratio test were used to determine the contribution of each annotation to the model (Figure 3—figure supplement 1D).
 
-## Reweighting of variant PPA and testing of allelic imbalance
+#### Reweighting of variant PPA and testing of allelic imbalance
 
 The enrichment priors derived from the FGWAS maximum likelihood model were used as a basis for evaluating both the significance and functional impact of associated variants in GWAS regions; allowing variants that map into annotations that show global enrichment to be afforded extra weight.
 
@@ -261,22 +499,22 @@ To avoid read-mapping and reference allele bias the software WASP (van de Geijn 
 
 Allelic imbalance was determined using a binomial test as implemented in R.
 
-## Identification of TFBS at SNPs that display allelic imbalance
+#### Identification of TFBS at SNPs that display allelic imbalance
 
 The tool ‘Fimo’(Grant et al., 2011) implemented in the ‘meme’ software package (RRID:SCR_001783) was applied to identify TF motifs that significantly (FDR < 0.05) matched the sequence overlapping a SNP variant showing allelic imbalance (20 bp up and downstream).
 
-## Overlap of regulatory regions
+#### Overlap of regulatory regions
 
 Overlap between genomic regulatory regions was performed using bedtools intersectBed function (Quinlan, 2014) (version 2.21.0). Summary statistics across 200 bp windows were determined using bedtools mapBed function. Random permutations of regulatory regions were performed by applying the bedtools shuffleBed function.
 
-## Statistical analysis
+#### Statistical analysis
 
 All statistical analysis (unless otherwise stated) was performed using R (version 3.0.2) including Spearman’s correlation analysis to compare the 450 k and WGBS array, the KS-test to compare 450 k and WGBS DNA methylation distributions, the binomial test to evaluate allelic imbalance and principal component analysis to identify batch effects in the 450 k data. Significance is defined as p<0.05 unless otherwise stated.
 
-## Visualisation and figure generation
+#### Visualisation and figure generation
 
 All figures unless otherwise stated were generated using R (version 3.0.2) and/or ggplot2(Wickham, 2009). Figure 1E was generated using locuszoom (Pruim et al., 2010). Chromatin state CHiP-seq enrichment maps (Figure 3A, Figure 3—figure supplement 1A–B) were generated using chromHMM (Ernst and Kellis, 2012). The genome-browser views (Figure 5) were generated using the UCSC genome browser tool (Kent et al., 2002).
 
-## Sequencing data
+### Sequencing data
 
 ATAC-seq and WGBS sequencing data has been deposited at the EBI hosted European Genome-phenome Archive (EGA, https://ega-archive.org/) and is accessible via the EGA accession numbers: EGAS00001002592, EGAD00001003946 and EGAD00001003947.

@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Cell cycle progression and lipid metabolism are well-coordinated processes required for proper cell proliferation. In liver diseases that arise from dysregulated lipid metabolism, proliferation is diminished. To study the outcome of CDK1 loss and blocked hepatocyte proliferation on lipid metabolism and the consequent impact on whole-body physiology, we performed lipidomics, metabolomics, and RNA-seq analyses on a mouse model. We observed reduced triacylglycerides in liver of young mice, caused by oxidative stress that activated FOXO1 to promote expression of Pnpla2 /ATGL. Additionally, we discovered that hepatocytes displayed malfunctioning β-oxidation, reflected by increased acylcarnitines (ACs) and reduced β-hydroxybutyrate. This led to elevated plasma free fatty acids (FFAs), which were transported to the adipose tissue for storage and triggered greater insulin secretion. Upon aging, chronic hyperinsulinemia resulted in insulin resistance and hepatic steatosis through activation of LXR. Here, we demonstrate that loss of hepatocyte proliferation is not only an outcome but also possibly a causative factor for liver pathology.
+Cell cycle progression and lipid metabolism are well-coordinated processes required for proper cell proliferation. In liver diseases that arise from dysregulated lipid metabolism, proliferation is diminished. To study the outcome of CDK1 loss and blocked hepatocyte proliferation on lipid metabolism and the consequent impact on whole-body physiology, we performed lipidomics, metabolomics, and RNA-seq analyses on a mouse model. We observed reduced triacylglycerides in liver of young mice, caused by oxidative stress that activated FOXO1 to promote expression of Pnpla2/ATGL. Additionally, we discovered that hepatocytes displayed malfunctioning β-oxidation, reflected by increased acylcarnitines (ACs) and reduced β-hydroxybutyrate. This led to elevated plasma free fatty acids (FFAs), which were transported to the adipose tissue for storage and triggered greater insulin secretion. Upon aging, chronic hyperinsulinemia resulted in insulin resistance and hepatic steatosis through activation of LXR. Here, we demonstrate that loss of hepatocyte proliferation is not only an outcome but also possibly a causative factor for liver pathology.
 
 ## Introduction
 
@@ -44,43 +44,67 @@ Here, we use the same mouse model of impaired hepatocyte proliferation, aiming t
 
 ## Results
 
-## Oxidative stress mediates lipolysis in the liver
+### Oxidative stress mediates lipolysis in the liver
 
 Since hepatocyte proliferation is known to contribute to the maintenance and regeneration of the liver and we had previously shown that loss of hepatic CDK1 leads to changes in lipid metabolism upon induction of liver regeneration (Miettinen et al., 2014), we performed comprehensive lipidomic analyses using mass spectrometry on liver from 8-week-old Alb-Cre, which we henceforth denote as control (Ctrl), and Cdk1 cKO mice. After QC filtering, we reliably measured 237 lipid species (TGs, PLs, and ACs). PLs, which comprised the majority of the measured species (196 of the 237 species), were generally unchanged (Supplementary file 1). The most apparent change in lipid profile from the lipidomics data was that Cdk1 cKO liver contained less TGs than control liver (Figure 1A, Supplementary file 1), which we separately confirmed with biochemical TG assays (Figure 1B; p=0.0022). This was despite both control and Cdk1 cKO mice eating the same amount of food (Figure 1C; p=0.6825), implying that this change was not due to a difference in food intake. We then checked for TG levels in hepatocytes isolated from 8-week-old mice and noted that Cdk1 cKO hepatocyte TG levels were significantly decreased as well (Figure 1D; p=0.0012), illustrating that the reduction in whole liver TG levels were, in part, due to the decrease of TGs in hepatocytes. Plasma TG (Figure 1E; p=0.0043) and plasma low-density lipoproteins (LDL)/very-low-density lipoproteins (VLDL) were also reduced (Figure 1F; p=0.0043) with a corresponding increase in high-density lipoproteins (Figure 1G; p=0.0022) in Cdk1 cKO liver compared to control. As VLDLs are the main mode of hepatic TG secretion into the blood stream (Choi and Ginsberg, 2011), this suggested that the reduction in hepatic TGs was not due to an increase in secretion of TGs, but likely a change in TG synthesis or TG breakdown in the liver. To address this, we screened a panel of lipogenic and lipolytic genes for changes in gene expression, and interestingly, a specific increase of the lipolytic gene Pnpla2 became evident (Figure 1H; p=0.0022). Pnpla2 encodes the ATGL protein, which is the main rate-limiting enzyme responsible for breaking down TGs (Zimmermann et al., 2004), and accordingly, the protein levels of ATGL were increased in Cdk1 cKO liver (Figure 1I–J; p<0.0001). Over-expression of ATGL is sufficient to induce lipolysis in the liver (Reid et al., 2008), indicating that the reduced levels of hepatic TGs in Cdk1 cKO liver might be due to increased lipolysis mediated by higher levels of Pnpla2/ATGL.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig1-v2.jpg)
+
+**Figure 1.:** (A) Heat map of triacylglyceride (TG) species in whole liver of control (Ctrl) and Cdk1 cKO mice as measured by mass spectrometry (lipidomics). Data is available in Supplementary file 1. TG species are also ordered as in Supplementary file 1. (B) Hepatic TG levels as quantified by biochemical assays (n = 6 per genotype). (C) Food intake of control and Cdk1 cKO mice tracked over 2 weeks (6- to 8-week-old) and represented as average daily intake. (D) TG from isolated primary hepatocytes (n = 3 per genotype), (E) plasma TG, (F) plasma LDL/VLDL-cholesterol and (G) plasma HDL-cholesterol levels as quantified by biochemical assays (n = 6 per genotype for plasma biochemical assays). (H) qPCR for lipogenic and lipolytic genes in whole liver (n = 6 per genotype). (I) Immunoblot of liver lysates for ATGL, with HSP90 as loading control. (J) Quantification of ATGL protein levels from immunoblot. Error bars represent S.D. (K) Immunoblot of liver lysates for carbonylated proteins, probed for Dinitrophenol (DNP) hydrazone ﻿after DNP derivation, with HSP90 as loading control. (L) qPCR for Foxo1 and Foxq1 in whole liver (n = 5 per genotype). (M) Immunoblot of liver lysates for FOXO1, with HSP90 as loading control. (N) Quantification of FOXO1 protein levels from immunoblot. Error bars represent S.D. (O) Enrichment of FOXO1 localization at promoters of Pdk4 and Pnpla2 in isolated primary hepatocytes upon ChIP-qPCR after normalization to input (n = 3 per genotype). Error bars represent S.E.M. unless otherwise indicated. All experiments were performed on tissue samples or cells from 8-week-old mice. All source data are available in Supplementary file 10 unless specifically indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) qPCR for oxidative stress-associated genes in whole liver (at least n = 5 per genotype). (B) Immunoblot of liver lysates for carbonylated proteins, probed for DNP after DNP derivation. HSP90 serves as loading control. (C) qPCR for oxidative stress-associated genes and (D) Foxo1, Pnpla2, and Lipe in liver of control (Ctrl) or Cdk1 cKO mice fed with normal water or water containing NAC (n = 5 per genotype). (E) Hepatic TG and (F) plasma FFA levels of Ctrl or Cdk1 cKO mice fed with normal water or water containing NAC measured by biochemical assay (n = 5 per condition). (G) qPCR for Pnpla2 in liver of Ctrl mice or Cdk1 cKO mice injected with empty vector or pLKO-shPnpla2 (n = 5 per condition). (H) Hepatic TG levels of Ctrl mice or Cdk1 cKO mice injected with empty vector or pLKO-shPnpla2 (n = 5 per condition). (I) Correlation plot with relative Pnpla2 mRNA expression as x-axis and hepatic TG levels as y-axis. Dotted lines represent 95% confidence intervals. Pearson’s correlation coefficient (r) and goodness-of-fit coefficient (R2) values are indicated in the plot. Error bars for all graphs represent S.E.M.
 
 The specific increase of Pnpla2 but not any other lipolytic genes implies that the upregulation of Pnpla2 was not a result of a general increase in the lipolytic machinery. Interestingly, Pnpla2 can be induced by the transcription factor FOXO1 (Chakrabarti and Kandror, 2009; Zhang et al., 2016), which is activated by mitochondria-dependent oxidative stress (Lettieri Barbato et al., 2014). Since Cdk1 cKO hepatocytes display impaired mitochondrial functions (Caldez et al., 2018), we hypothesized that the induction of Pnpla2 might be due to oxidative stress-dependent activation of FOXO1. Indeed, Cdk1 cKO liver exhibited greater levels of oxidative stress, as seen by the induction of antioxidant enzymes Gpx1, Gpx2, Gpx3, and G6pdx (Figure 1—figure supplement 1A) and the increase in protein carbonylation, which is a good marker of oxidative stress (Dalle-Donne et al., 2003; Figure 1K). Correspondingly, there was an increase of Foxo1 at both the mRNA (Figure 1L; p=0.0079) and protein level (Figure 1M–N; p=0.0065), leading to enhanced localization of FOXO1 by chromatin immunoprecipitation (ChIP) at the promoters of Pnpla2 and Pdk4, a well-established target of FOXO1 (Kwon et al., 2004) (Figure 1O; p=0.0419 for Pnpla2 promoter and p=0.0275 for Pdk4 promoter). Because FOXO1 transcriptional activity can be repressed by interaction with FOXQ1 (Cui et al., 2016), we determined Foxq1 expression and discovered that there was no significant difference in the mRNA levels of Foxq1 (Figure 1L; p=0.5476). When we fed Cdk1 cKO mice with the antioxidant N-acetylcysteine (NAC) to reduce systemic oxidative stress, we observed a reversal in the amount of protein carbonylation (Figure 1—figure supplement 1B) and the mRNA expression of antioxidant enzymes (Figure 1—figure supplement 1C), Foxo1, and Pnpla2 (Figure 1—figure supplement 1D). Furthermore, hepatic TG levels of NAC-fed Cdk1 cKO mice recovered to control levels (Figure 1—figure supplement 1E). This data supports the hypothesis that the reduction in hepatic TG levels in Cdk1 cKO liver was in part due to oxidative stress and this was transmitted by the FOXO1-Pnpla2/ATGL axis.
 
 To more conclusively show that the decrease in liver TGs is mediated by ATGL, we attempted to knockdown Pnpla2 in the liver of Cdk1 cKO mice. We performed hydrodynamic tail vein injections (Yokoo et al., 2016) of a plasmid expressing short hairpin RNA (shRNA) targeting murine Pnpla2 (pLKO-shPnpla2) to deliver the plasmid to the liver (see Materials and methods). We verified using qPCR that there was an increase of Pnpla2 in the liver of Cdk1 cKO mice (Figure 1—figure supplement 1G), confirming our earlier findings (Figure 1H, Figure 1—figure supplement 1D). Cdk1 cKO mice that were injected with pLKO-shPnpla2 displayed a reduction of Pnpla2 expression in the liver, indicating successful knockdown of Pnpla2. We then analysed the hepatic TGs in these mice, and found that in Cdk1 cKO mice with Pnpla2 knockdown, hepatic TG levels were rescued to levels comparable with control (Figure 1—figure supplement 1H). In addition, correlation analysis between relative Pnpla2 mRNA expression and hepatic TG levels (Figure 1—figure supplement 1I) proposed a negative linear relationship with a Pearson’s correlation coefficient of −0.84 (p-value<0.0001), supporting the well-established TG lipase activity of ATGL (Zimmermann et al., 2004; Reid et al., 2008) and indicating that the increase of Pnpla2 in the liver of Cdk1 cKO mice is likely causative for the observed reduction of TGs.
 
-## Defective FAO in hepatocytes
+### Defective FAO in hepatocytes
 
 Another prominent observation from our extensive lipidomics data of the Cdk1 cKO liver is that all the detected AC species were significantly increased (Figure 2A, Supplementary file 1). This is mirrored by our lipidomic data on hepatocytes isolated from 8-week-old control and Cdk1 cKO mice (Supplementary file 2), which, in all, reliably measured 240 lipid species. Although not statistically significant for most of the species due to the small sample size (n = 3) and large variability, a trend of increase in AC levels in isolated hepatocytes was observed (Figure 2B). AC is the form by which long-chain fatty acids are transported across the mitochondrial membrane into mitochondria for degradation via β-oxidation (Houten et al., 2016). The accumulation of ACs in Cdk1 cKO liver resembles that seen in patients and mouse models with defective mitochondrial FAO (Houten et al., 2016; Lee et al., 2016), implying FAO might be deficient in Cdk1 cKO hepatocytes. This was further supported by a decrease in β-hydroxybutyrate (Figure 2C; p=0.0002), a metabolic product of β-oxidation (Grabacka et al., 2016). When we performed FAO assays on primary hepatocytes from control and Cdk1 cKO mice, we were able to confirm that Cdk1 cKO hepatocytes display reduced basal and maximal capacity for performing FAO (Figure 2D–E; p<0.0001 for basal FAO capacity and p=0.0018 for maximal FAO capacity).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig2-v2.jpg)
 
-**Figure 2.:** Cdk1 cKO hepatocytes have reduced capacity for fatty acid oxidation (FAO).Relative acylcarnitine levels in liver (A; n = 5 per genotype) and primary hepatocytes (B; n = 3 per genotype) of control (Ctrl) and Cdk1 cKO mice as measured by mass spectrometry. Data is available in Supplementary file 1 and Supplementary file 2, respectively. (C) Hepatic β-hydroxybutyrate levels measured using biochemical assays (n = 8 per genotype). Error bars represent S.E.M. (D) FAO assays on isolated primary hepatocytes that were untreated, treated with FCCP to maximize oxidative capacity or treated with Etomoxir to block FAO. (E) Quantification of basal and maximal FAO capacity of isolated hepatocytes based on oxygen consumption signal of untreated and FCCP-treated hepatocytes, respectively, from the FAO assays. Statistical significance was calculated using unpaired two-tailed t-test with Welch’s correction. (F) qPCR for expression of FAO genes in whole liver (at least n = 4 per genotype). Error bars represent S.E.M. (G) Immunoblot of liver lysate, probed for HADHA and ACADVL with HSP90 as loading control. (H) Quantification of HADHA and ACADVL protein levels from immunoblot. (I) SIRT3 was immunoprecipitated from lysates of Ctrl or Cdk1 cKO liver and probed for phosphorylated Ser/Thr (pSer/Thr). IgG was used as negative control. (J) Immunoblot of liver lysate, probed for SIRT3 with HSP90 as loading control. (K) CPT2 was immunoprecipitated from lysates of Ctrl or Cdk1 cKO liver and probed for pan-acetylated residues (pan-Ac). IgG was used as negative control. Error bars represent S.D. unless otherwise indicated. All experiments were performed on tissue samples or cells from 8-week-old mice. All source data are available in Supplementary file 10 unless specifically indicated.
+**Figure 2.:** Relative acylcarnitine levels in liver (A; n = 5 per genotype) and primary hepatocytes (B; n = 3 per genotype) of control (Ctrl) and Cdk1 cKO mice as measured by mass spectrometry. Data is available in Supplementary file 1 and Supplementary file 2, respectively. (C) Hepatic β-hydroxybutyrate levels measured using biochemical assays (n = 8 per genotype). Error bars represent S.E.M. (D) FAO assays on isolated primary hepatocytes that were untreated, treated with FCCP to maximize oxidative capacity or treated with Etomoxir to block FAO. (E) Quantification of basal and maximal FAO capacity of isolated hepatocytes based on oxygen consumption signal of untreated and FCCP-treated hepatocytes, respectively, from the FAO assays. Statistical significance was calculated using unpaired two-tailed t-test with Welch’s correction. (F) qPCR for expression of FAO genes in whole liver (at least n = 4 per genotype). Error bars represent S.E.M. (G) Immunoblot of liver lysate, probed for HADHA and ACADVL with HSP90 as loading control. (H) Quantification of HADHA and ACADVL protein levels from immunoblot. (I) SIRT3 was immunoprecipitated from lysates of Ctrl or Cdk1 cKO liver and probed for phosphorylated Ser/Thr (pSer/Thr). IgG was used as negative control. (J) Immunoblot of liver lysate, probed for SIRT3 with HSP90 as loading control. (K) CPT2 was immunoprecipitated from lysates of Ctrl or Cdk1 cKO liver and probed for pan-acetylated residues (pan-Ac). IgG was used as negative control. Error bars represent S.D. unless otherwise indicated. All experiments were performed on tissue samples or cells from 8-week-old mice. All source data are available in Supplementary file 10 unless specifically indicated.
 
 To explore the cause for this, we measured transcript levels of genes involved in mitochondrial β-oxidation. Unexpectedly, none of the genes tested showed any difference between control and Cdk1 cKO hepatocytes, including Ppara (Figure 2F; p=0.1905), the master regulator of FAO (Grabacka et al., 2016). Interestingly though, immunoblotting for HADHA and ACADVL, two key enzymes in the FAO pathway, revealed a decrease in protein levels of both enzymes (Figure 2G–H; p=0.0286 for both HADHA and ACADVL) despite unchanged transcript levels (Figure 2F; p=0.5476 for Acadvl and p=0.8414 for Hadha). This might be potentially explained by CDK1 modulation of mitochondrial import via phosphorylation of the outer membrane protein TOM6 (Harbauer et al., 2014). In the absence of CDK1, reduced mitochondrial import of FAO enzymes could result in cytoplasmic accumulation that triggers ubiquitin-dependent degradation of these enzymes (Habelhah et al., 2004; Bragoszewski et al., 2013). A more recent finding showed that CDK1 can also enhance fatty acid import into the mitochondria by phosphorylating SIRT3 and augmenting SIRT3-mediated CPT2 dimerization into the functional fatty acid import complex to promote FAO (Liu et al., 2020). We checked whether this mechanism was relevant in our system. Immunoprecipitation of SIRT3 followed by immunoblotting for phosphorylated Ser/Thr affirmed that SIRT3 was hypophosphorylated in Cdk1 cKO liver (Figure 2I) with no impact on total SIRT3 protein levels (Figure 2J). In addition, we detected increased acetylated residues upon immunoprecipitation of CPT2 and probing for pan-acetylation (Figure 2K). Taken together, we discovered that Cdk1 cKO hepatocytes display decreased FAO, possibly due to reduced mitochondrial import of FAO enzymes as well as fatty acids that are the substrates of these enzymes.
 
-## Liver FFAs are released into the blood stream and affect peripheral tissues
+### Liver FFAs are released into the blood stream and affect peripheral tissues
 
 With a continuous increase of non-esterified FFAs due to persistent lipolysis (Figure 1) and a block in fatty acid degradation (Figure 2) in the liver, we investigated whether there was an increase in secretion of FFAs into the blood stream. Mass spectrometry analysis of plasma samples showed an increase in many detected FFA species in the plasma of Cdk1 cKO mice (Figure 3A, Supplementary file 3). Notably, treatment of Cdk1 cKO mice with NAC, which reversed the hepatic TG phenotype (Figure 1—figure supplement 1E), did not revert plasma FFA back to control levels (Figure 1—figure supplement 1F), although levels were insignificantly yet visibly lower. This would suggest that the increase in plasma FFAs is in part dependent on the lipolysis of TGs mediated by ATGL, and in part also dependent on impaired FAO in Cdk1 cKO hepatocytes. As plasma FFA can be taken up and stored as TGs in white adipose tissue (WAT), we investigated whether the increase in plasma FFA resulted in an increase in storage of FFA in the adipose tissue. MRI revealed an overall increase in fat mass in Cdk1 cKO mice (Figure 3B; p=0.0079), with a higher subcutaneous white adipose tissue (scWAT) weight to body weight ratio and epididymal white adipose tissue (epWAT) weight to body weight ratio (Figure 3C; p<0.0001 for both scWAT and epWAT to body weight ratio). This might, in part, explain the more pronounced increase in body weight of Cdk1 cKO mice (Figure 3D–E) despite the similar food intake between both groups of mice (Figure 1C). Histological staining of the scWAT and epWAT (Figure 3F) indicated that adipocytes were significantly increased in size, from 494 (±49)μm2 in control scWAT to 692 (±63)μm2 in Cdk1 cKO scWAT and 589 (±86)μm2 in control epWAT to 1066 (±153)μm2 in Cdk1 cKO epWAT (Figure 3G; p=0.0079 for both scWAT and epWAT). Biochemical assays further confirmed that Cdk1 cKO WAT contained higher levels of TGs (Figure 3H; p=0.0079 for both scWAT and epWAT). When we then probed Cdk1 cKO WAT for the expression of genes involved with fatty acid synthesis, we found that Acaca, Fasn, and Scd1 were decreased (Figure 3I–J), implying that the increase in TGs was not due to increases in WAT fatty acid synthesis. Instead, this repression of de novo lipogenesis parallels what is seen in mice fed with high fat diet, whereby there is elevated supply of dietary fat to the WAT via the blood stream (Shillabeer et al., 1990; Tovar et al., 2011). These results thus suggest that the increase of plasma FFA led to elevated storage of FFA as TGs in WAT of Cdk1 cKO mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig3-v2.jpg)
 
-**Figure 3.:** Cdk1 cKO mice.(A) Relative plasma FFA levels in control (Ctrl) and Cdk1 cKO mice as measured by mass spectrometry (n = 5 per genotype). Data is available in Supplementary file 3. (B) Ratio of total fat mass, as measured by magnetic resonance imaging, to body weight (n = 5 for each genotype). (C) Ratio of subcutaneous WAT (scWAT) or epididymal WAT (epWAT) weight to body weight (n = 10 per genotype). (D) Body weight change between start and end of 2-week food intake tracking period. (E) Ratio of body weight change to food intake. (F) Representative H and E image of scWAT and epWAT from control and Cdk1 cKO mice. Scale bar represents 100 μm in all panels. (G) Quantification of size of adipocytes from H and E images (at least 500 adipocytes per mouse were measured, n = 5 per genotype). (H) Adipose triacylglyceride levels from scWAT and epWAT measured using biochemical assays (n = 5 per genotype). qPCR for lipogenic genes in scWAT (I) and epWAT (J) of control and Cdk1 cKO mice (at least n = 4 per genotype). Error bars for all graphs represent S.E.M. All experiments were performed on tissue samples from 8-week-old mice. All source data are available in Supplementary file 10 unless specifically indicated.
+**Figure 3.:** (A) Relative plasma FFA levels in control (Ctrl) and Cdk1 cKO mice as measured by mass spectrometry (n = 5 per genotype). Data is available in Supplementary file 3. (B) Ratio of total fat mass, as measured by magnetic resonance imaging, to body weight (n = 5 for each genotype). (C) Ratio of subcutaneous WAT (scWAT) or epididymal WAT (epWAT) weight to body weight (n = 10 per genotype). (D) Body weight change between start and end of 2-week food intake tracking period. (E) Ratio of body weight change to food intake. (F) Representative H and E image of scWAT and epWAT from control and Cdk1 cKO mice. Scale bar represents 100 μm in all panels. (G) Quantification of size of adipocytes from H and E images (at least 500 adipocytes per mouse were measured, n = 5 per genotype). (H) Adipose triacylglyceride levels from scWAT and epWAT measured using biochemical assays (n = 5 per genotype). qPCR for lipogenic genes in scWAT (I) and epWAT (J) of control and Cdk1 cKO mice (at least n = 4 per genotype). Error bars for all graphs represent S.E.M. All experiments were performed on tissue samples from 8-week-old mice. All source data are available in Supplementary file 10 unless specifically indicated.
 
 Higher levels of plasma FFA can affect peripheral tissue besides WAT. For example, the expression of FAO enzymes in the skeletal muscle are boosted in the presence of elevated plasma FFA levels (Garcia-Roves et al., 2007). In accordance with this, we observed increased expression of various FAO-associated genes in the skeletal muscle of Cdk1 cKO mice compared to control mice (Figure 4A). Of particular interest is the fact that plasma FFAs are also known to promote insulin secretion by pancreatic β-cells even in the fasting state (Itoh et al., 2003; Cen et al., 2016). Interestingly, we detected increased plasma insulin in Cdk1 cKO mice (Figure 4B; p=0.0499), a state known as hyperinsulinemia, despite there being no difference in the transcript level of Ins2 between Cdk1 cKO and control pancreas (Figure 4C; p=0.8413). Furthermore, Cdk1 cKO mice displayed reduced blood glucose levels (Figure 4D; p<0.0001) and greater hepatic glycogen content (Figure 4E; p=0.0079), both of which are phenotypes associated with enhanced insulin signaling. This was confirmed by immunoblotting (Figure 4F), where we observed enhanced phosphorylation of INSRB (Figure 4G; p=0.0312) and AKT (Figure 4H; p=0.0042) in Cdk1 cKO liver. When we performed glucose tolerance tests (Figure 4I), Cdk1 cKO mice were more glucose tolerant and responded better to exogenous glucose, as seen from a lower area under the curve (Figure 4J; p<0.0001), which is likely a result of the increased insulin levels (Figure 4B). Taken together, our data suggests that the elevated plasma FFA promotes insulin secretion and maintains a hyperinsulinemic condition in Cdk1 cKO mice.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig4-v2.jpg)
 
-**Figure 4.:** Cdk1 cKO mice.(A) qPCR for fatty acid oxidation genes in skeletal muscle (quadriceps) from control (Ctrl) and Cdk1 cKO mice (n = 5 per genotype). (B) Plasma insulin level examined with ELISA (n = 8 per genotype). (C) qPCR for Ins2 in pancreas of Ctrl and Cdk1 cKO mice (n = 5 per genotype). (D) Fed state blood glucose measurements using glucose meter (at least n = 8 per genotype). (E) Hepatic glycogen content measured with biochemical assays (n = 5 per genotype). (F) Immunoblot of liver lysate probed for INSRB, phosphorylated INSRB at Y1151/1152 (pY1151/1152-INSRB), AKT, and phosphorylated AKT at T308 (pT308-AKT). HSP90 serves as loading control. (G) Quantification of pY1151/1152-INSRB levels normalized to total INSRB protein and (H) pT308-AKT levels normalized to total AKT protein from immunoblot. Error bars for immunoblot quantifications represent S.D. Blood glucose measurements (I) and area under curve analysis (J) from intraperitoneal glucose tolerance test (at least n = 10 per genotype). Error bars for all graphs represent S.E.M. unless otherwise indicated. All experiments were performed on tissue samples from 8-week-old mice. All source data are available in Supplementary file 10.
+**Figure 4.:** (A) qPCR for fatty acid oxidation genes in skeletal muscle (quadriceps) from control (Ctrl) and Cdk1 cKO mice (n = 5 per genotype). (B) Plasma insulin level examined with ELISA (n = 8 per genotype). (C) qPCR for Ins2 in pancreas of Ctrl and Cdk1 cKO mice (n = 5 per genotype). (D) Fed state blood glucose measurements using glucose meter (at least n = 8 per genotype). (E) Hepatic glycogen content measured with biochemical assays (n = 5 per genotype). (F) Immunoblot of liver lysate probed for INSRB, phosphorylated INSRB at Y1151/1152 (pY1151/1152-INSRB), AKT, and phosphorylated AKT at T308 (pT308-AKT). HSP90 serves as loading control. (G) Quantification of pY1151/1152-INSRB levels normalized to total INSRB protein and (H) pT308-AKT levels normalized to total AKT protein from immunoblot. Error bars for immunoblot quantifications represent S.D. Blood glucose measurements (I) and area under curve analysis (J) from intraperitoneal glucose tolerance test (at least n = 10 per genotype). Error bars for all graphs represent S.E.M. unless otherwise indicated. All experiments were performed on tissue samples from 8-week-old mice. All source data are available in Supplementary file 10.
 
-## Aged mice exhibit insulin resistance and liver disease
+### Aged mice exhibit insulin resistance and liver disease
 
 Chronic hyperinsulinemia can lead to insulin resistance in patients (Morita et al., 2017), hence we wondered whether plasma insulin remained high in Cdk1 cKO mice over time. We analyzed plasma insulin levels of 6- and 12-month-old mice and found that plasma insulin was increased from an average of 0.6 ng/mL in control mice to 1.4 ng/mL in Cdk1 cKO mice at 6 months old and from an average of 1 ng/mL in control mice to 2 ng/mL in Cdk1 cKO mice at 12 months old (Figure 5A; p=0.0079 for both 6 and 12 months). This paralleled the consistently higher levels of plasma FFAs in Cdk1 cKO mice compared to age-matched control mice at 6 and 12 months (Figure 5B; p=0.0079 for both 6 and 12 months). When we checked for insulin signaling in the aged liver by immunoblotting (Figure 5C), we noticed the levels of total INSRB protein was reduced (Figure 5D; p=0.0220), which might be due to chronic exposure to hyperinsulinemia (Ronnett et al., 1982; Palsgaard et al., 2009) that can, in part, lead to insulin resistance. We also detected hypophosphorylated INSRB, even after normalizing to total INSRB levels (Figure 5E; p=0.0289), and hypophosphorylated AKT (Figure 5F; p=0.0191), suggesting that insulin signaling was impaired in the liver despite higher plasma insulin levels. A similar observation was made from immunoblots of epWAT collected from aged Cdk1 cKO mice (Figure 5—figure supplement 1A), whereby we noted decreased INSRB protein (Figure 5—figure supplement 1B; p=0.0253) and hypophosphorylated INSRB (Figure 5—figure supplement 1C; p<0.0001) and AKT (Figure 5—figure supplement 1D; p=0.0034), hinting at defective insulin signaling in adipose tissues as well. This was supported by the change in expression of a number of adipokines in the epWAT. In particular, adiponectin (Adipoq) expression was diminished and resistin (Retn) expression was increased (Figure 5—figure supplement 1E), both of which are associated with insulin resistance (Kadowaki, 2006; Jiang et al., 2016), especially since adiponectin represses the expression of gluconeogenic genes in hepatocytes and promotes membrane localization of GLUT4 in myocytes to increase the uptake of glucose (Combs et al., 2001; Yamauchi et al., 2002). We also observed an increase in expression of Fgf21 and Gdf15 (Figure 5—figure supplement 1E), which reflects the state of metabolic stress that the mice are in Manoli et al., 2018; Patel et al., 2019. Aged Cdk1 cKO mice displayed increased blood glucose levels (Figure 5G; p<0.0001) and reduced hepatic glycogen content (Figure 5H; p=0.0079), indicating that 12-month-old Cdk1 cKO mice had developed insulin resistance. When we performed glucose and insulin tolerance tests in 12-month-old mice, Cdk1 cKO mice were more glucose intolerant (Figure 5I–J; p=0.0057) and less insulin sensitive (Figure 5K–L; p=0.0079) than control mice. Taken together, aged Cdk1 cKO mice develop insulin resistance, possibly due to chronic hyperinsulinemia.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig5-v2.jpg)
+
+**Figure 5.:** (A) Plasma insulin levels measured at 6 and 12 months old by ELISA (n = 5 per genotype per age). Error bars represent S.E.M. (B) Plasma FFA levels measured at 6 and 12 months old by biochemical assays (n = 5 per genotype per age). Error bars represent S.E.M. (C) Immunoblot of liver lysates from 12-month-old mice, probed for INSRB, phosphorylated INSRB at Y1151/1152 (pY1151/1152-INSRB), AKT, and phosphorylated AKT at T308 (pT308-AKT), with HSP90 as loading control. Quantification of total INSRB protein levels (D), pY1151/1152-INSRB levels normalized to total INSRB protein (E), and pT308-AKT normalized to total AKT protein (F) from immunoblot. (G) Fed state blood glucose measurements (at least n = 8 per genotype) and (H) hepatic glycogen content of 12-month-old mice (n = 5 per genotype). Error bars represent S.E.M. (I) Blood glucose measurements and (J) area under curve analysis from intraperitoneal glucose tolerance test (ipGTT) of 6- and 12-month-old mice (at least n = 5 per genotype). (K) Blood glucose measurements and (L) area above curve analysis from intraperitoneal insulin tolerance test (ipITT) of 6- and 12-month-old mice (n = 5 per genotype). Error bars represent S.D. unless otherwise stated. All source data are available in Supplementary file 10.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblot of epWAT lysates from 12-month-old mice, probed for INSRB, phosphorylated INSRB at Y1151/1152 (pY1151/1152-INSRB), AKT, and phosphorylated AKT at T308 (pT308-AKT), with HSP90 as loading control. Quantification of total INSRB protein levels (B), pY1151/1152-INSRB levels normalized to total INSRB protein (C), and pT308-AKT normalized to total AKT protein (D) from immunoblot. (E) qPCR for adipokines in adipose tissue of 12-month-old Ctrl and Cdk1 cKO mice (n = 5 per genotype).
+
 Hepatic steatosis is present in up to 50% of patients with type 2 diabetes (Roden, 2006). Thus, we investigated whether steatosis had developed in the liver of aged Cdk1 cKO mice. Histopathological analysis of hematoxylin and eosin (H and E)-stained liver sections from 12-month-old mice by a certified pathologist revealed the presence of macrovesicular fatty changes in aged Cdk1 cKO mice, with control mice scoring 0, indicating the lack of any observable fatty changes, while Cdk1 cKO mice were more variable with an average score of 1.8, but with some scoring as high as 4 (Supplementary file 4). This was confirmed by Oil Red O staining that illustrated the presence of lipid droplets in most aged Cdk1 cKO mice but not in any of the aged control mice (Figure 6A). Additionally, TG assays (Figure 6B; p=0.0079) confirmed higher levels of hepatic TG in Cdk1 cKO liver relative to control. There was also greater expression of Acaca, Fasn, Mogat1, and Cidec (Figure 6C), which are genes associated with lipogenesis and lipid accumulation, as well as increased protein level of the lipogenic transcription factor SREBP1c (Figure 6D–E; p<0.0001). Even at 12 months old, lipidomics analysis (390 species detected) indicated that there were elevated levels of nearly all the 180 TG species detected (Figure 6F, Supplementary file 5), which could be correlated to the presence of insulin resistance (Figure 5). Hence, we present convincing data that aged Cdk1 cKO mice develop hepatic steatosis, possibly through the upregulation of the lipogenic pathway but the mechanisms for this need to be further investigated (see below).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative H&E, Oil Red O, and Sirius Red staining of 12-month-old control (Ctrl) and Cdk1 cKO liver sections. Scale bar represents 100 μm in all panels. (B) Hepatic triacylglycerides (TGs) measured by biochemical assays (n = 5 per genotype). (C) qPCR of genes associated with lipogenesis and lipid accumulation in whole liver (n = 5 per genotype). (D) Immunoblot of liver lysates from 12-month-old mice, probed for SREBP1c. HSP90 image is reused from Figure 5C as samples were ran on the same blot. (E) Quantification of SREBP1c protein level from immunoblot. Error bars represent S.D. (F) Heat map of TG species in whole liver of 12-month-old Ctrl and Cdk1 cKO mice as measured by mass spectrometry (lipidomics). Data is available in Supplementary file 5. (G) Quantification of percentage of Sirius-Red-positive area (five images per mouse, n = 5 per genotype). (H) Heat map of diacylglyceride species in whole liver of Ctrl and Cdk1 cKO mice as measured by mass spectrometry (metabolomics). Relative levels of acylcarnitines (I), retinol metabolism metabolites (J), glutathione redox status (K), and purine catabolism metabolites (L) from metabolomics data. Metabolomics data was previously published (Narayanaswamy et al., 2020). Error bars represent S.E.M. unless otherwise stated. All source data (besides metabolomics data) are available in Supplementary file 10.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Metabolites that were increased in the metabolomics analysis of aged Cdk1 cKO mice are highlighted in red. Enzymes with known associations to liver metabolic disease are included. ADA: Adenosine deaminase. XDH: Xanthine dehydrogenase.
 
 About 20% of patients with NAFLD progress to NASH, characterized by the development of fibrosis (Farrell and Larter, 2006). Therefore, we also probed whether aged Cdk1 cKO mice develop liver fibrosis. Sirius Red staining indicated that aged Cdk1 cKO mice exhibited more fibrotic areas compared to control (Figure 6G; p=0.0043), with some mice developing parenchymal and bridging fibrosis (Figure 6A). In our histopathology analysis, aged control mice scored 0, whereas aged Cdk1 cKO mice had an average score of 1.4, with some scoring up to 3 (Supplementary file 4). Coupled to the presence of hepatocyte ballooning in Cdk1 cKO liver (Figure 6A), another histological feature of NASH (Lackner, 2011), our histological data supports the progression to a NASH-like state in aged Cdk1 cKO liver.
 
@@ -88,13 +112,13 @@ We recently published a detailed metabolomics analysis of aged control and Cdk1 
 
 Interestingly, metabolites from the purine metabolism pathway, namely inosine, guanosine, xanthosine, and urate, were elevated (Figure 6L, Figure 6—figure supplement 1). This is particularly intriguing because adenosine deaminase (ADA), the enzyme that catalyzes the conversion of adenosine to inosine, is known to be more active in type 2 diabetic patients (Kurtul et al., 2004) and is associated with liver fibrosis in NAFLD (Jiang et al., 2018). Increases in ADA activity can lead to an increased flux through the purine metabolic pathway, eventually leading to increased production of urate by xanthine dehydrogenase (XDH) as the final step in the pathway (Mandal and Mount, 2015). In fact, the presence of elevated serum urate level is a biomarker and risk factor for fatty liver disease (Jensen et al., 2018), and greater XDH activity has been suggested as a causative factor for the development of insulin resistance and NAFLD through increasing oxidative stress via production of hydrogen peroxide (Kelley et al., 2010; Xu et al., 2015). Therefore, our independent metabolomics analyses confirm some of the main points of our study.
 
-## Transcriptomics of aged mice suggest progression of the disease-like phenotype
+### Transcriptomics of aged mice suggest progression of the disease-like phenotype
 
 To better understand changes happening in aged Cdk1 cKO liver, we performed transcriptomic analysis on 12-month-old control and Cdk1 cKO liver by RNA-seq, using equivalent parts of the liver. Principal component analysis of the transcriptomic data indicated that control and Cdk1 cKO samples clustered separately along the PC1 axis, with the PC1 axis accounting for 68.7% of the variability among the samples, and that the transcriptomes of aged control samples were more similar to each other while those of Cdk1 cKO liver were more heterogeneous (Figure 7A). We identified a total of 12,143 genes, including 310 genes that were upregulated and 72 that were downregulated in Cdk1 cKO liver relative to control (Figure 7B, Supplementary file 6). Some of the top upregulated were predicted genes with relatively unknown functions, such as Gm14295, Gm11007, and Gm2007, although we also found genes such as Gsta1, an oxidative stress response gene that is one of the most differentially expressed between normal liver and steatotic liver (Hennig et al., 2014), and retinol metabolism genes including Cyp2b9, Cyp2b13, and Rdh9, which is part of a predictive signature for fibrosis in a mouse model for NASH (van Koppen et al., 2018). Among the top downregulated genes, we identified Foxq1, an established repressor of FOXO1 (Cui et al., 2016), confirming the presence of insulin resistance in which FOXO1 is hyperactive. Interestingly, Foxq1 was expressed at normal levels in the 8-week-old Cdk1 cKO mice (see Figure 1L), indicating that with age, there is an adaptive process regulating FOXQ1/FOXO1 activity. When we compared the RNA-seq data to a 20-gene signature associated with severe NAFLD/NASH relative to mild NAFLD (Moylan et al., 2014), the gene signature appeared to be expressed substantially higher in aged Cdk1 cKO liver than in aged control liver (Figure 7C). We further validated selected targets within the gene signature via qPCR and confirmed that these genes were upregulated in aged Cdk1 cKO liver (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig7-v2.jpg)
 
-**Figure 7.:** Cdk1 cKO mice.(A) Principal component analysis of RNA-seq data from 12-month-old mice. (B) Volcano plot of RNA-seq data. Significantly differentially expressed genes (q-value <0.1) are represented by red dots, while non-significant genes by black dots. (C) Heat map of expression data from RNA-seq of genes from a severe NAFLD 20-gene signature. RNA-seq data is available in Supplementary file 6. (D) qPCR validation of selected genes from the 20-gene signature (n = 5 per genotype). (E) KEGG pathway analysis of differentially expressed genes (red for upregulated genes, green for downregulated genes) from RNA-seq data. Number of genes over the total number of genes associated with each KEGG term is indicated at the end of the respective bars. (F) ChIP enrichment analysis (ChEA) of differentially expressed genes from RNA-seq data. KEGG and ChEA data are available in Supplementary file 7. (G) Enrichment of LXRα localization at promoters of Srebf1 and Scd1 upon ChIP-qPCR after normalization to input. Error bars for all graphs represent S.E.M. Source data for qPCR and ChIP-qPCR are available in Supplementary file 10.
+**Figure 7.:** (A) Principal component analysis of RNA-seq data from 12-month-old mice. (B) Volcano plot of RNA-seq data. Significantly differentially expressed genes (q-value <0.1) are represented by red dots, while non-significant genes by black dots. (C) Heat map of expression data from RNA-seq of genes from a severe NAFLD 20-gene signature. RNA-seq data is available in Supplementary file 6. (D) qPCR validation of selected genes from the 20-gene signature (n = 5 per genotype). (E) KEGG pathway analysis of differentially expressed genes (red for upregulated genes, green for downregulated genes) from RNA-seq data. Number of genes over the total number of genes associated with each KEGG term is indicated at the end of the respective bars. (F) ChIP enrichment analysis (ChEA) of differentially expressed genes from RNA-seq data. KEGG and ChEA data are available in Supplementary file 7. (G) Enrichment of LXRα localization at promoters of Srebf1 and Scd1 upon ChIP-qPCR after normalization to input. Error bars for all graphs represent S.E.M. Source data for qPCR and ChIP-qPCR are available in Supplementary file 10.
 
 KEGG pathway analysis (Figure 7E, Supplementary file 7) indicated a number of pathways are enriched among upregulated (red) and downregulated (green) genes from the RNA-seq. The most significantly enriched pathway, ‘retinol metabolism’, as well as enrichment of ‘TGF-beta signaling pathway’, provide support for the presence of fibrosis in Cdk1 cKO liver (Lee and Jeong, 2012; Meng et al., 2016) and confirmed our metabolomics data (Figure 6J). Multiple KEGG terms associated with cancer, such as ‘chemical carcinogenesis’, ‘cell cycle’ and ‘hepatocellular carcinoma’ were also enriched for upregulated genes (Figure 7E). On the other hand, KEGG pathway analysis of downregulated genes only highlighted the term ‘steroid hormone biosynthesis’ (Figure 7E). Nevertheless, a closer inspection of genes classified under this term revealed Hsd3b5 and Cyp2c70 for which downregulation is associated with development of NAFLD in mouse models (Hou et al., 2019). ChIP enrichment analysis (ChEA) was also performed on the transcriptomic data to identify transcription factors whose downstream targets are enriched among differentially expressed genes (Figure 7F, Supplementary file 7). LXR, a glucose-responsive lipogenic nuclear receptor (Mitro et al., 2007), was the most significant transcription factor identified. LXR binds to DNA as a heterodimer with RXR (Willy et al., 1995), which also appears as an enriched transcription factor, indicating that the LXR-RXR heterodimer may be more active in the aged Cdk1 cKO liver. Indeed, ChIP-qPCR for LXRα identified increased binding of LXRα at promoters of Srebf1 and Scd1 (Figure 7G; p=0.0093 for Srebf1 promoter and p=0.0213 for Scd1 promoter), both of which are lipogenic genes and are direct targets of LXR (Repa, 2000; Chu et al., 2006), suggesting that LXR might be directly responsible for the increase in SREBP1c levels (Figure 6D–E) and therefore lead indirectly to hepatic steatosis. Notably, OCT4, a transcription factor commonly associated with pluripotency in stem cells (Chambers and Tomlinson, 2009), was also selected by ChEA (Figure 7F). This concurs with the enrichment of the KEGG term ‘signaling pathways regulating pluripotency of stem cells’ (Figure 7H) and suggests potential OCT4-driven oncogenic de-differentiation of hepatocytes (Yin et al., 2015; Sun et al., 2017).
 
@@ -124,7 +148,7 @@ CDK1 is primarily known as a driver of cell division, although it also has lesse
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig8-v2.jpg)
 
-**Figure 8.:** Cdk1 cKO mice.Upon knockout of Cdk1 or senescence, whereby CDK1 activity is inhibited by CDK1 inhibitors, there is a block of FAO, leading to an accumulation of FFA in young Cdk1 cKO mice. This is further exacerbated by mitochondrial oxidative stress that promotes FOXO1-dependent ATGL upregulation and increased lipolysis. The accumulated FFA then enter the bloodstream and is stored as TGs in adipocytes in the WAT. Elevated FFA levels in the bloodstream can also induce greater insulin secretion by pancreatic β-cells (hyperinsulinemia), leading to reduced blood glucose. However, over time, chronic hyperinsulinemia results in the development of insulin resistance in aged Cdk1 cKO mice, which prevents the blood glucose lowering effect of insulin, causing hyperglycemia. Hyperglycemia, in turn, activates LXR activity and drives lipogenesis, eventually culminating in the manifestation of hepatic steatosis and a NAFLD-like phenotype.
+**Figure 8.:** Upon knockout of Cdk1 or senescence, whereby CDK1 activity is inhibited by CDK1 inhibitors, there is a block of FAO, leading to an accumulation of FFA in young Cdk1 cKO mice. This is further exacerbated by mitochondrial oxidative stress that promotes FOXO1-dependent ATGL upregulation and increased lipolysis. The accumulated FFA then enter the bloodstream and is stored as TGs in adipocytes in the WAT. Elevated FFA levels in the bloodstream can also induce greater insulin secretion by pancreatic β-cells (hyperinsulinemia), leading to reduced blood glucose. However, over time, chronic hyperinsulinemia results in the development of insulin resistance in aged Cdk1 cKO mice, which prevents the blood glucose lowering effect of insulin, causing hyperglycemia. Hyperglycemia, in turn, activates LXR activity and drives lipogenesis, eventually culminating in the manifestation of hepatic steatosis and a NAFLD-like phenotype.
 
 Meta-analyses of transcriptomics data from NAFLD patient livers have not identified CDK1 transcripts as being differentially expressed (Ryaboshapkina and Hammar, 2017; Huang et al., 2018), although aged Cdk1 cKO mice develop steatotic livers. Still, hepatocytes from NAFLD patients display impaired proliferation, and with increasing evidence that senescence is rampant in the NAFLD liver (Papatheodoridi et al., 2020), it is not implausible to imagine that CDK1 is hypoactive in such conditions. Notably, Ogrodnik et al., 2017 demonstrated that senescent hepatocytes contribute to development of hepatic steatosis as a result of defective mitochondrial FAO, and removal of these senescent hepatocytes ameliorates the phenotype. We provide a potential mechanistic pathway by which senescence can lead to steatosis, through inhibition of CDK1 activity, eventually leading to FFA-induced chronic hyperinsulinemia and the consequent insulin resistance. More recently, Omori et al., 2020 uncovered that senescence is also increased in the hepatic non-parenchymal cell population. Furthermore, they confirmed that elimination of senescent cells rescues the NASH phenotype. Hence, it will be interesting to explore whether the deletion of CDK1 in the non-parenchymal cells also induces liver steatosis.
 
@@ -132,33 +156,393 @@ One foreseeable limitation of our model is that senescence is observed in the li
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/63835/elife-63835-fig9-v2.jpg)
 
-**Figure 9.:** Cdk1 cKO mice.(A) Representative image of senescence-associated β-galactosidase (SA β-gal) staining of liver sections from 8-week-old control (Ctrl) and Cdk1 cKO mice. Scale bar represents 50 µm. (B) qPCR for Cdkn1a [p21cip1/waf1], Cdkn1b [p27Kip1], and Cdkn2a [p16inka4a] in liver from 8-week-old Ctrl and Cdk1 cKO mice (n = 3 per genotype). Data is available in Supplementary file 10.
+**Figure 9.:** (A) Representative image of senescence-associated β-galactosidase (SA β-gal) staining of liver sections from 8-week-old control (Ctrl) and Cdk1 cKO mice. Scale bar represents 50 µm. (B) qPCR for Cdkn1a [p21cip1/waf1], Cdkn1b [p27Kip1], and Cdkn2a [p16inka4a] in liver from 8-week-old Ctrl and Cdk1 cKO mice (n = 3 per genotype). Data is available in Supplementary file 10.
 
 In this study, using our mouse model in which hepatocytes lack CDK1, the Cdk1 cKO mouse, we show that the liver, in the absence of any external stimuli, develops metabolic disease upon aging, which also affects other tissues. With these findings, our study proposes that the loss of CDK1 activity in hepatocytes, in addition to being an outcome of liver disease, can be a contributor to hepatic pathology and supports the concept that senotherapeutic drugs targeting senescent cells (Ritschka et al., 2020) are potentially viable therapeutic options for treating liver metabolic diseases.
 
 ## Materials and methods
 
-## Genetic mouse models, animal experiments, and blood glucose test
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Cdk1</td>
+      <td>NCBI Gene</td>
+      <td>ID:12534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Cpt2</td>
+      <td>NCBI Gene</td>
+      <td>ID:12896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Foxo1</td>
+      <td>NCBI Gene</td>
+      <td>ID:56458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Pnpla2</td>
+      <td>NCBI Gene</td>
+      <td>ID:66853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Stbl3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:C7373-03</td>
+      <td>For cloning and maintaining lentiviral vectors</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Alb-Cre</td>
+      <td>DOI: 10.1002/(sici)1526-968x(200002)26:2 &lt; 149::aid-gene16 &gt; 3.0.co;2 v</td>
+      <td>RRID:MGI:6258240</td>
+      <td>Control to the Cdk1 cKO mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Cdk1 cKO</td>
+      <td>DOI: 10.1073/pnas.1115201109</td>
+      <td>RRID:MGI:5318109</td>
+      <td>Hepatocyte-specific knockout of Cdk1 gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pLKO.1</td>
+      <td>Addgene</td>
+      <td>Cat#:#8453; RRID:Addgene_10878</td>
+      <td>Empty vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pLKO-shPnpla2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression of shRNA against Pnpla2 (sequence: GGAGAGAACGTCATCATAT)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus, male)</td>
+      <td>Liver, subcutaneous WAT and epididymal WAT from Cdk1 cKO mice</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from 2-, -6, or 12-month-old Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus, male)</td>
+      <td>Plasma from Cdk1 cKO mice</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from 2, 6, or 12 month old Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACADVL (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-376239; RRID:AB_10989696</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKT (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#:#9272; RRID:AB_329827</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pT308-AKT (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#:#9275; RRID:AB_329829</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATGL (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-365278; RRID:AB_10859044</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CPT2 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#:26555–1-AP; RRID:AB_2880551</td>
+      <td>IP (2 µL per 500 µg protein), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FOXO1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#:#2880; RRID:AB_2106495</td>
+      <td>ChIP (2 µL per 10 µg chromatin), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HADHA (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-374497; RRID:AB_10987868</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP90 (Mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat#:610418; RRID:AB_397798</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-INSRB (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-711; RRID:AB_631835</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pY1151/1152-INSRB (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-81500; RRID:AB_1125642</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LXRα (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#:ab41902; RRID:AB_776094</td>
+      <td>ChIP (2 µL per 10 µg chromatin)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pan-acetylation (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#:66289–1-Ig; RRID:AB_2881672</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Ser/Thr (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#:ab117253; RRID:AB_10903259</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SIRT3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#:#5490; RRID:AB_10828246</td>
+      <td>IP (2 µL per 500 µg protein), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SREBP1c (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#:ab28481; RRID:AB_778069</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Actrapid, fast-acting insulin</td>
+      <td>Novo Nordisk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rDNase</td>
+      <td>Macherey-Nagel</td>
+      <td>Cat#:740963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#:ab65336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDL and LDL/VLDL Cholesterol Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#:ab65390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Free Fatty Acid Assay Kit</td>
+      <td>Cell Biolabs</td>
+      <td>Cat#:STA-618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>β-Hydroxybutyrate (Ketone Body) Colorimetric Assay Kit</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat#:700190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultra Sensitive Mouse Insulin ELISA Kit</td>
+      <td>Crystal Chem</td>
+      <td>Cat#:90080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glycogen Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#:ab83369</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fatty Acid Oxidation Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#:ab217602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Extracellular Oxygen Consumption Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#:ab197243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima First Strand cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:K1641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima SYBR Green qPCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:K0221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink RNA Mini Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:12183025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Oxidized Protein Western Blot Detection Kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab178020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetylcysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:A7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR-mapper</td>
+      <td>DOI: 10.1093/bioinformatics/bts635</td>
+      <td></td>
+      <td>For RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>DOI:10.1186/1471-2105-12-323</td>
+      <td>RRID:SCR_013027</td>
+      <td>For RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClustVis</td>
+      <td>DOI:10.1093/nar/gkv468</td>
+      <td>RRID:SCR_017133</td>
+      <td>For RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>DOI:10.1093/nar/gkw377</td>
+      <td>RRID:SCR_001575</td>
+      <td>For RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboKit</td>
+      <td>DOI:10.1039/d0mo00030b</td>
+      <td></td>
+      <td>For untargeted metabolomics analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Accu-Chek Performa Nano</td>
+      <td>Accu-Chek</td>
+      <td></td>
+      <td>Blood glucose meter</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Accu-Chek test strips</td>
+      <td>Accu-Chek</td>
+      <td>Code 222</td>
+      <td>Test strips for blood glucose meter</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic mouse models, animal experiments, and blood glucose test
 
 Cdk1 cKO mice have been previously described (Diril et al., 2012; Caldez et al., 2018). Briefly, Cdk1 cKO were established by crossing Cdk1fl/fl mice with Albumin-Cre mice (Postic and Magnuson, 2000; #003574, The Jackson Laboratory) for deletion of the Cdk1 gene specifically in hepatocytes. The Cdk1fl/fl Albumin-Cre mice will be designated as ‘Cdk1 cKO’ throughout this study. Hence, Cdk1+/+ Alb-Cre mice were used as controls (Ctrl) to account for expression of the Cre recombinase in the hepatocytes. Mice were maintained on standard chow ad libitum under 12 hr light/dark cycle. Only male mice were used for experiments to avoid hormonal confounding. For food intake measurement, 5-week-old mice were individually housed and given 1 week to acclimatize, after which the amount of food eaten was measured for 2 weeks (6- to 8-week-old) as described previously (Bachmanov et al., 2002). For N-acetylcysteine (NAC; A7250, Sigma-Aldrich) treatment, 6-week-old mice were fed with water containing 2 mg/mL NAC ad libitum for 2 weeks. As controls, mice were fed with normal water as usual. For Pnpla2 knockdown in the liver, 40 µg of pLKO-shPnpla2 or empty vector were injected into 7-week-old mice by hydrodynamic tail vein injection (Yokoo et al., 2016). In brief, plasmids were diluted in Ringer’s lactate solution at a volume corresponding to 10% body weight of mice and injected into the lateral tail vein within 10 s. Tissues were collected at the indicated ages. Blood was collected by cardiac puncture, transferred to a lithium heparin-coated Microvette 500 LH (20.1345.100, Sarstedt) and subsequently centrifuged at 14,000 rpm for 10 min at 4°C to collect plasma. Whole body fat mass was measured on live mice using EchoMRI Body Composition Analyzer (EchoMRI). Glucose tolerance tests (GTT) were performed by fasting mice for 16 hr followed by intraperitoneal injection of D-glucose at 1 g/kg body weight. Blood glucose was measured before injection and at 15, 30, 60, 90, and 120 min post-injection. For insulin tolerance tests (ITT), mice were fasted for 6 hr followed by intraperitoneal injection of insulin (Actrapid, Novo Nordisk) at 1 U/kg body weight and blood glucose was measured as above. Blood glucose measurements were performed on blood from tail snips using the Accu-Chek Performa Nano glucose meter (Roche) and Accu-Chek Performa test strips Code 222. Area under curve (AUC; for GTT) or area above curve (for ITT) was taken as the area above or below baseline (blood glucose level at 0 min), respectively, and calculated using GraphPad Prism version 6. All animal experiments were performed in accordance to protocols (#171268) approved by the A*STAR Institutional Animal Care and Use Committee (IACUC) based on the National Advisory Committee for Laboratory Animal Research (NACLAR) Guidelines.
 
-## Biochemical assays
+### Biochemical assays
 
 Hepatic and plasma TGs were measured using the Triglyceride Assay Kit (ab65336, Abcam), plasma cholesterols using the HDL and LDL/VLDL Cholesterol Assay Kit (ab65390, Abcam), plasma FFAs using FFA Assay Kit (STA-618, Cell Biolabs), hepatic β-hydroxybutyrate using β-hydroxybutyrate (Ketone Body) Colorimetric Assay Kit (700190, Cayman Chemicals), plasma insulin using the Ultra-Sensitive Mouse Insulin ELISA Kit (90080, Crystal Chem), and hepatic glycogen using the Glycogen Assay Kit (ab83369, Abcam) according to the manufacturer’s protocols. Signals were read using a TECAN Safire microplate reader at default parameters.
 
-## Molecular cloning
+### Molecular cloning
 
 shRNA targeting murine Pnpla2 with the sequence 5′-GGAGAGAACGTCATCATAT-3′ (Miyoshi et al., 2007) were designed and inserted into the pLKO.1 vector as previously published (Moffat et al., 2006) to generate the pLKO-shPnpla2 plasmid for knocking down Pnpla2. Plasmids were maintained and amplified in Stbl3 Escherichia coli cells (Thermo Fisher Scientific) and purified using EndoFree Plasmid Maxi Kit (Qiagen) before being used for hydrodynamic tail vein injection.
 
-## β-oxidation assays
+### β-oxidation assays
 
 Hepatocytes were isolated and cultured as described previously (Caldez et al., 2018). β-oxidation capabilities of isolated hepatocytes were then measured using the FFA Assay Kit (ab217602, Abcam) in combination with the Extracellular Oxygen Consumption Assay Kit (ab197243, Abcam) following manufacturer’s protocol. Signals were read using a TECAN Safire microplate reader with parameters as indicated in the assay protocol.
 
-## Lipid extraction from liver tissue and plasma samples
+### Lipid extraction from liver tissue and plasma samples
 
 Frozen liver tissues were lyophilized until constant dry weight in a vacuum concentrator. PBS (phosphate buffered saline) was added to the dried samples (30 µL per mg dry weight) and homogenized with homogenization beads using an Omni beadruptor homogenizer (speed: 3.50 m/s; cycle: six times; duration: 45 s, dwell time: 15 s, repeat four times). Homogenates were transferred to clean polypropylene tubes for lipid extraction. For lipid extraction, 20 μL of tissue homogenates were resuspended in 360 μL of chilled chloroform/methanol (1:2 v/v) containing internal standards. The samples were then placed on a rotary shaker (30 min, 4°C, 700 rpm). 120 μL of chilled chloroform and 100 μL of chilled milliQ water were then added, the samples vortexed again for 15 s, and centrifuged at 10,000 rpm for 7 min to separate the phases. The lower organic phases were collected and the remaining aqueous phases were re-extracted with 500 μL of chilled chloroform as above. The lower organic phases were combined with the first organic extracts. Lipid extracts were then dried in a vacuum concentrator, resuspended in chloroform/methanol (1:1 v/v) and kept at −80°C until LC-MS/MS analysis. Lipid extraction from 10 μL of plasma was performed as described above using half the volume of indicated reagents.
 
-## Liquid chromatography with tandem mass spectrometry (LC-MS/MS) analysis of TGs, PLs, and ACs
+### Liquid chromatography with tandem mass spectrometry (LC-MS/MS) analysis of TGs, PLs, and ACs
 
 Chromatography separation of TGs was achieved by RPLC on an Agilent Eclipse Plus C18 (100 × 2.1 mm, 1.8 μm), using an Agilent 1290 Infinity II LC system. The column temperature was 40°C, the autosampler was kept at 8°C, and 1 μL of sample was injected. Solvent A was acetonitrile/water (4:6 v/v), solvent B was acetonitrile/isopropanol (1:9 v/v), both solvent A and solvent B contained 10 mM ammonium formate. Gradient elution started at 20% solvent B, increased linearly to 60% in 2 min, then increased linearly to 100% solvent B in 10 min, held at 100% solvent B for 2 min, then brought back to 20% solvent B and held for 1.8 min (total run-time 15.8 min). The flow rate was 400 μL/min. The column effluent was introduced into an Agilent 6490 Triple Quadrupole MS system equipped with an electrospray ion source. MS parameters were as follows: Gas Temperature, 200°C; Gas Flow, 15 L/min; Nebulizer, 25 psi; Sheath Gas Heater, 250°C, Sheath Gas Flow, 12 L/min; Capillary, 3.5kV. TGs were measured in positive ionization, using both dynamic multiple reaction monitoring (dMRM) and single ion monitoring (SIM) (see Supplementary file 8 for MRM lists). Data analysis was performed using Agilent MassHunter Quantitative Analysis (QQQ) software. The data were inspected manually to ensure peak integration by the software was appropriate. AUC of the integrated ion chromatogram peaks for each MRM transition were extracted to Microsoft Excel and normalized to the AUC of the d5-TG 48:0 internal standard.
 
@@ -166,38 +550,38 @@ Chromatography separation of PL and AC was achieved by hydrophilic interaction l
 
 For quality control, prior to lipid extraction, samples were randomized (using Excel random number generator) and quality control (QC) samples were prepared by pooling aliquots from each sample indicated by randomization. QC samples were used to monitor reproducibility of extraction, linearity and stability of instrument response. Blank extracts were also prepared by adding the extraction mixture to empty tubes, and used to monitor carry-over and contamination issues. Briefly, MRM transitions were kept for analysis only if they satisfied the following criteria: RSD <25% over all QC samples, linearity curve R2 >0.9, and signal in the blank less than 10% of average signal in the QC sample. Heat maps were generated using Heatmapper (Babicki et al., 2016).
 
-## Non-esterified FFA extraction and LC-MRM analysis
+### Non-esterified FFA extraction and LC-MRM analysis
 
 FFAs were analyzed as described (Christinat et al., 2016). Briefly, 50 µL of plasma was mixed with 450 µL of isopropanol containing 5 nmol internal standard palmitic acid-d4 (Sigma Aldrich) in 2 mL polypropylene tubes, vortexed for 5 s, and placed in a rotary shaker (30 min, 4°C, 700 rpm). The samples were then centrifuged (10 min, 15,000 rpm, 4°C) and 200 µL of supernatant was transferred to a new 2 mL tube. The solvent was evaporated in a vacuum centrifuge, and the samples were reconstituted in 100 µL of acetonitrile/water (1:1 v/v), transferred to an autosampler vial, and stored at −80°C. On the day of analysis, samples were thawed at room temperature for 30 min, vortexed for 5 s, sonicated for 1 min, and centrifuged for 5 min prior to LC/MS analysis.
 
 Chromatographic separation of FFA was achieved by reverse phase liquid chromatography (RPLC) on a Waters Acquity CSH C18 150 × 2.1 mm column, in a Thermo Vanquish UHPLC system. The column temperature was 55°C, the autosampler was kept at 10°C, and 1 μL of sample was injected. Solvent A was acetonitrile/water (3:2 v/v), solvent B was acetonitrile/isopropanol (1:1 v/v), both solvent A and solvent B contained 10 mM ammonium acetate. Gradient elution started at 10% solvent B, which was held for 2 min, then increased linearly to 46% solvent B over 12 min, then to 100% solvent B over 3.5 min. The column was then flushed for 3 min with 100% solvent B and re-equilibrated under starting conditions for 3.5 min. The flow rate was 450 μL/min. The column effluent was introduced into a QExactive Plus quadrupole-orbitrap mass spectrometer via a HESI II ion source operating under the following conditions: spray voltage, 3 kV; capillary temperature, 350°C; sheath gas, 35 arbitrary units; aux gas, 10 arbitrary units; probe heater, 300°C; S-lens RF level, 50. Automatic gain control was set to 3E6 ions to enter the mass analyzer with a maximum ion time of 200 ms. Negative full scan profile spectra were acquired from 110 to 380 m/z at a resolution setting of 140,000 (FWHM at m/z 200). Data analysis was performed with Xcalibur Qual Browser, using the areas of extracted ion count chromatograms of deprotonated NEFAs with a mass tolerance of 5 ppm. Quantification was based on a one-point calibration with the internal standard palmitic acid d4.
 
-## RNA isolation and quantitative real-time PCR (qPCR)
+### RNA isolation and quantitative real-time PCR (qPCR)
 
 RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific) as per provided instructions, with an initial step of homogenizing the tissues in TRIzol reagent within a bead-containing Lysing Matrix D tube (MP Biomedicals) using the Precellys 24 homogeniser (Bertin Technologies). Complementary DNA (cDNA) was prepared from 2 μg of RNA with the Maxima First Strand cDNA Synthesis Kit (K1641, Thermo Fisher Scientific). qPCR was ran using the Maxima SYBR Green qPCR Master Mix (K0221, Thermo Fisher Scientific) with 10 ng of cDNA per reaction. Analysis was done with the 2-ΔΔCt method (Livak and Schmittgen, 2001) using Eef2 as loading control. Primers used are provided in Supplementary file 9.
 
-## RNA sequencing (RNA-seq), data processing, and analysis
+### RNA sequencing (RNA-seq), data processing, and analysis
 
 For RNA extraction, tissue was homogenized and lysed with TRIzol as described above. Upon phase separation, the aqueous phase was transferred to spin columns from the PureLink RNA Mini Kit (12183025, Thermo Fisher Scientific) and washed as instructed by the kit manual. DNase treatment (740963, Macherey-Nagel) was done on-column before eluting with nuclease-free water. Subsequent RNA fragmentation, library generation and sequencing were as described previously (Caldez et al., 2018). For data analysis, sequence read alignment was done with STAR-mapper (Dobin et al., 2013) and fragments per kilobase million (FPKM) quantification with RSEM (Li and Dewey, 2011). FastQC was used to perform pre-alignment sequence read quality control, and upon inspection of the FPKM data, we decided not to do data normalization given the equal distribution of FPKM values across samples. A small fudge factor of 0.5 was added to all FPKM values to avoid artefacts associated with statistical analysis of extremely low abundance genes. Principal component analysis was performed using ClustVis (Metsalu and Vilo, 2015). Differential expression analysis was performed by two sample T-tests and multiple testing corrected by calculating q-value (Storey, 2002). Genes with q-value of <0.05 and fold change of >1.5 or <0.66 were considered significantly differentially expressed. KEGG pathway and ChEA of these genes were then done using Enrichr (Kuleshov et al., 2016). Raw sequencing data is available at NCBI GEO under accession number GSE159498 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159498).
 
-## Untargeted metabolomics of whole liver
+### Untargeted metabolomics of whole liver
 
 The semi-quantitative metabolomics data for 870 unique compounds has been published in Narayanaswamy et al., 2020. We reprocessed the raw data with the latest version of MetaboKit software for improved accuracy in peak integration (August 2020). Metabolites with reliable quantification in at least three samples were used for analysis.
 
-## Immunoprecipitation and immunoblotting
+### Immunoprecipitation and immunoblotting
 
 Proteins were extracted from tissues in RIPA buffer (50 mM Tris-HCl pH8.0, 50 mM NaCl, 1 mM EDTA, 1% NP-40, 0.1% sodium deoxycholate, supplemented with protease inhibitor) by homogenising in a pestle homogenizer, sonicated at high power for three cycles of 30 s ON/OFF on Bioruptor sonicator (Diagenode), and centrifuged at maximum speed for 10 min to remove cell debris. Proteins were then quantified using BCA Protein Assay (Thermo Fisher Scientific). Lysates were separated on polyacrylamide gels and transferred to PVDF membranes using the Bio-Rad Mini-Protean system. Probing and development of membrane were done as previously described (Caldez et al., 2018). Antibodies used for immunoblotting are provided in the Key Resources Table. Quantification of blots was performed with Fiji software (Schindelin et al., 2012). For detecting carbonylated proteins, 2,4-dinitrophenylhydrazine (DNP) derivation and the subsequent immunoblotting was performed using the Oxidized Protein Western Blot Detection Kit (ab178020, Abcam) following manufacturer’s instructions.
 
 For immunoprecipitation, 500 μg of pre-cleared protein lysate was incubated with 2 μL of anti-SIRT3 (#5490, Cell Signaling) or anti-CPT2 (26555–1-AP, Proteintech) antibody overnight in IP buffer (50 mM Tris-HCl pH8.0, 150 mM NaCl, 0.15% NP-40, 10% glycerol) in the cold. Antibodies were captured with Protein A agarose beads (15918–014, Thermo Fisher Scientific) on rotation for 1 hr the following day, and washed with IP buffer thrice for 5 min each. Beads were then incubated with SDS loading dye for 5 min at 95°C with shaking before being loaded on a polyacrylamide gel for immunoblotting as described above.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Isolated hepatocytes were fixed in 1% formalin in suspension for 10 min at room temperature and then quenched in 125 mM glycine. Cells were pelleted and washed twice with cold PBS, and subsequent steps of sonication and immunoprecipitation were performed as described (Shang et al., 2002). Two µL of anti-FOXO1 (#2880, Cell Signaling) or anti-LXRα antibody (ab41902, Abcam) was used per ChIP sample. Primers used for ChIP-qPCR are listed in Supplementary file 9.
 
-## Histology
+### Histology
 
 H&E staining and Oil Red O staining were performed as described (Niska-Blakie et al., 2020), and senescence-associated β-galactosidase staining as previously published (Diril et al., 2012). For Sirius Red staining, slides containing paraffin-embedded tissue were deparaffinized and rehydrated at room temperature. Slides were then incubated in Picro-Sirius Red solution (ab246832, Abcam) for 4 hr, washed in running water and dehydrated before being mounted with Eukitt Quick-hardening mounting medium (03989, Sigma-Aldrich). Images were taken using the Olympus BX-61 upright microscope with 20X air or 40X oil lens. Histopathological analysis of liver H and E and Sirius Red-stained sections was performed and scored by a qualified pathologist (C.B.O.) using a scale of 0–5 [0 – no abnormalities detected; 1 - minimal (<1%); 2 – mild (1–25%); 3 – moderate (26–50%); 4 – marked (51–75%); 5 – severe (76–100%)] as described previously (Shackelford et al., 2002). Quantification of Sirius-Red-positive areas was done using Fiji (Schindelin et al., 2012). Measurement of adipocyte size was done with Adobe Photoshop CC 2018 using the Quick Selection tool to outline individual adipocytes followed by the Record Measurement function after the scale had been set.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Mann-Whitney non-parametric test, or unpaired two-tailed T-test with Welch’s correction for experiments involving isolated hepatocytes, immunoblot quantification and ChIP-qPCR, on GraphPad Prism version 6, and were considered significant when p-value<0.05. Statistical significance was indicated as: p-value<0.05 (*); p-value<0.01 (**); p-value<0.001 (***). Correlation analysis to derive Pearson’s correlation coefficient (r) and goodness-of-fit coefficient (R2) values was also performed using GraphPad Prism version 6.

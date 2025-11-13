@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01jmxt844 Department of Psychology, University of Otago Dunedin New Zealand
+1. Department of Psychology, University of Otago Dunedin New Zealand ([ROR:01jmxt844](https://ror.org/01jmxt844))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Our study set out to test the utility of Brain Age as a biomarker for capturing 
 
 ## Results
 
-## Relationship between chronological age and fluid cognition
+### Relationship between chronological age and fluid cognition
 
 Figure 1a shows the negative relationship between chronological age and fluid cognition (r(502) = –0.57, p<0.001, R2=0.32). Older individuals tended to have a lower fluid cognition score.
 
@@ -39,9 +39,15 @@ Figure 1a shows the negative relationship between chronological age and fluid co
 
 **Figure 1.:** (a) and predictive performance of prediction models using Brain MRI from different sets of MRI features to predict chronological age (b) and fluid cognition (c). Each dot in (b) and (c) represents predictive performance at each of the five outer-fold test sets. The numbers to the right of the predictive performance plots indicate the mean of predictive performance across the five outer-fold test sets. Note we only provided the scatter plots between observed and predicted values in the outer-fold test sets from the best prediction models for each target (age in years and fluid cognition in points) in this figure. See Figure 2—figure supplement 1 and Figure 2—figure supplement 2 for the scatter plots from other prediction models.
 
-## Predictive performance of prediction models for Brain Age and Brain Cognition
+### Predictive performance of prediction models for Brain Age and Brain Cognition
 
 Figure 1b and c show the predictive performance of different sets of brain MRI features in predicting chronological age and fluid cognition, respectively. For age prediction, the top-four models that performed similarly were ‘stacked’ models that included multiple sets of brain MRI features: ‘Stacked: All excluding Task Contrast’, ‘Non Task’, ‘All excluding Task FC’ and ‘All’ (R2 >0.76, r>0.83, MAE <65 months). For fluid cognition prediction, the top-performing model was ‘Stacked: All’ (R2=0.393, r=0.627, MAE = 7.7 points). The best set of features across age and fluid cognition prediction was cortical thickness. Across sets of MRI features, the age-prediction models tended to provide higher R2 and r than the fluid cognition-prediction models. Figure 2 shows the feature importance of prediction models based on each of the 18 sets of features. Figure 3 shows the feature importance of the eight stacked prediction models. Figure 4 shows the stability of feature importance across different outer-fold test sets.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig2-v1.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig2-figsupp2-v1.jpg)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig3-v1.jpg)
 
@@ -49,7 +55,7 @@ Figure 1b and c show the predictive performance of different sets of brain MRI f
 
 **Figure 4.:** Each dot represents rank stability (reflected by Spearman’s ρ) in the feature importance between two prediction models of the same features, used in two different outer-fold test sets. Given that there were five outer-fold test sets, there were 10 Spearman’s ρs for each prediction model. The numbers to the right of the plots indicate the mean of Spearman’s ρ for each prediction model.
 
-## Simple regression: using each Brain Age index to explain fluid cognition
+### Simple regression: using each Brain Age index to explain fluid cognition
 
 Figure 5a shows variation in fluid cognition explained by Brain Age Indices when having each Brain Age index as the sole regressor in simple regression models. Brain Age and Corrected Brain Age created from higher-performing age-prediction models explained a higher amount of variation in fluid cognition. However, Brain Age Gap created from the lower-performing age-prediction models explained a higher amount of variation in fluid cognition. For instance, the top performing age-prediction model, ‘Stacked: All excluding Task Contrast’, generated Brain Age and Corrected Brain Age that explained the highest amount of variation in fluid cognition, but, at the same time, produced Brain Age Gap that explained the least amount of variation in fluid cognition.
 
@@ -59,15 +65,39 @@ Figure 5a shows variation in fluid cognition explained by Brain Age Indices when
 
 On the contrary, an amount of variation in fluid cognition explained by Corrected Brain Age Gap was relatively small (maximum at R2=0.041) across age-prediction models and did not relate to the predictive performance of the age-prediction models. Figure 5b shows variation in fluid cognition explained by Brain Cognition, as compared to Brain Age indices. Brain Cognition appeared to explain a higher amount of variation in fluid cognition than any Brain Age indices, especially for top-performing age/cognition-prediction models (e.g. Stacked: All).
 
-## Multiple regression: Using chronological age and each Brain Age index to explain fluid cognition
+### Multiple regression: Using chronological age and each Brain Age index to explain fluid cognition
 
 Figure 6 shows the commonality analysis of multiple regression models, having both chronological age and each Brain Age index as the regressors for fluid cognition. We found R2 for these models at M=0.326 (SD = 0.005). The unique effects of Brain Age indices were all relatively small (maximum at ΔR2Brain Age index = 0.0161, with statistically significant at p-value <0.05 in 10 out of 26 models) across the four Brain Age indices and across different age-prediction models.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig6-v1.jpg)
+
+**Figure 6.:** The numbers to the left of the figure represent the unique effects of chronological age in %, the numbers in the middle of the figure represent the common effects between chronological age and Brain Age index in %, and the numbers to the right of the figure represent the unique effects of Brain Age Index in %. * represents the statistical significance of the unique effects of Brain Age Index at p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Note we used Ridge regressions for models with both chronological age and each Brain Age index as the regressors and simple regressions for models with a single regressor (apart from the intercept). The numbers to the left of the figures represent the unique effects of chronological age in %, the numbers in the middle of the figures represent the common effects between chronological age and Brain Age index in %, and the numbers to the right of the figures represent the unique effects of Brain Age Index in %. * represents the statistical significance of the unique effects of Brain Age Index at p<0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Note we used Ridge regressions for models with at least two regressors (apart from the intercept) and simple regressions for models with a single regressor (apart from the intercept). The numbers to the left of the figures represent the unique effects of Brain Age Index in %, and the numbers to the right of the figures represent the unique effects of Brain Cognition in %. * represents the statistical significance of the unique effects of Brain Cognition at p<0.05.
+
 However, it is clear that different Brain Age indices led to different levels of the unique effects of chronological age and the common effects between chronological age and Brain Age indices. For the top-performing age-prediction models (e.g. Stacked: All excluding Task Contrast), the unique effects of chronological age were low for Brain Age and Corrected Brain Age, but high for Brain Age Gap. On the contrary, the lower-performing age-prediction models provided high common effects for Brain Age and Corrected Brain Age, but low for Brain Age Gap. Nonetheless, for Corrected Brain Age Gap, the unique effects of chronological age were much higher than the common effects across all age-prediction models.
 
-## Multiple regression: Using chronological age, each Brain Age index and Brain Cognition to explain fluid cognition
+### Multiple regression: Using chronological age, each Brain Age index and Brain Cognition to explain fluid cognition
 
 Figure 7 shows the commonality analysis of multiple regression models, having chronological age, each Brain Age index and Brain Cognition as the regressors for fluid cognition. We found R2 for these models at M=0.385 (SD = 0.042). As before, the unique effects of Brain Age indices were all relatively small across the four Brain Age indices and across different prediction models. On the contrary, the unique effects of Brain Cognition appeared much larger (maximum at ΔR2cognition = 0.1183, statistically significant p-value at 0.05 in 24 out of 26 models).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig7-v1.jpg)
+
+**Figure 7.:** The numbers to the left of the figures represent the unique effects of Brain Age Index in %, and the numbers to the right of the figures represent the unique effects of Brain Cognition in %. * represents the statistical significance of the unique effects of Brain Cognition at p<0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The numbers to the left of the figures represent the unique effects of chronological age in %, the numbers in the middle of the figures represent the common effects between chronological age and Brain Age index in %, and the numbers to the right of the figures represent the unique effects of Brain Age Index in %. * represents the statistical significance of the unique effects of Brain Age Index at p<0.05.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/87297/elife-87297-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The numbers to the left of the figures represent the unique effects of Brain Age Index in %, and the numbers to the right of the figures represent the unique effects of Brain Cognition in %. * represents the statistical significance of the unique effects of Brain Cognition at p<0.05.
 
 For top-performing age/cognition-prediction models (e.g. Stacked All), the largest proportion of fluid cognition was attributed to (a) the common effects among the three for Brain Age and Corrected Brain Age and (b) the common effects between chronological age and Brain Cognition for Brain Age Gap and Corrected Brain Age Gap.
 
@@ -105,15 +135,15 @@ Altogether, we examined the utility of Brain Age as a biomarker for fluid cognit
 
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 We used the Human Connectome Project in Aging (HCP-A) (Bookheimer et al., 2019) Release 2.0 (24-February-2021). HCP-A’s ‘typical-aging’ participants (36–100 years old) may have prevalent health conditions (e.g. hypertension and different forms of vascular risks) but did not have identified pathological causes of cognitive decline (e.g. stroke and clinical dementia). In this Release, HCP-A provided data from 725 participants. HCP-A offered quality control flags, and here, we removed participants with the flag ‘A’ anatomical anomalies or ‘B’ segmentation and surface (n=117). Following further removal of participants with missing values in any of MRI modalities (n=15) or cognitive measurements (n=111), we ultimately included 504 individuals (293 females, M=57.83 [SD = 14.25] years old) in our analyses. Note there were four individuals who were over 90 years old. HCP-A coded the age of these 90+individuals as 100 years old to reduce the leakage of their personal health information (see https://groups.google.com/a/humanconnectome.org/g/hcp-users/c/esZTVCRuxwE/m/xx4PLYMlCQAJ). For ethical procedures including informed consent and the demographics of the participants, please see Bookheimer et al., 2019.
 
-## Sets of brain MRI features
+### Sets of brain MRI features
 
 HCP-A provides details of parameters for brain MRI elsewhere (Bookheimer et al., 2019; Harms et al., 2018). Here, we used MRI data that were pre-processed by the HCP-A with recommended methods, including the MSMALL alignment (Glasser et al., 2016; Robinson et al., 2018) and ICA-FIX (Glasser et al., 2016) for functional MRI. We used multiple brain MRI modalities, covering task functional MRI (task fMRI), resting-state functional MRI (rsfMRI) and structural MRI (sMRI), and organised them into 19 sets of features.
 
-## Sets of features 1-10: Task fMRI contrast (Task Contrast)
+### Sets of features 1-10: Task fMRI contrast (Task Contrast)
 
 Task contrasts reflect fMRI activation relevant to events in each task. Bookheimer et al., 2019 provided detailed information about the fMRI in HCP-A. Here, we focused on the pre-processed task fMRI Connectivity Informatics Technology Initiative (CIFTI) files with a suffix, ‘_PA_Atlas_MSMAll_hp0_clean.dtseries.nii’. These CIFTI files encompassed both the cortical mesh surface and subcortical volume (Glasser et al., 2013). Collected using the posterior-to-anterior (PA) phase, these files were aligned using MSMALL (Glasser et al., 2016; Robinson et al., 2018), linear detrended (see https://groups.google.com/a/humanconnectome.org/g/hcp-users/c/ZLJc092h980/m/GiihzQAUAwAJ) and cleaned from potential artifacts using ICA-FIX (Glasser et al., 2016).
 
@@ -127,23 +157,23 @@ Second, the CARIT task (Somerville et al., 2018) was adapted from the classic Go
 
 Third, the VISMOTOR task (Ances et al., 2009) was designed to test simple activation of the motor and visual cortices. Participants saw a checkerboard with a red square either on the left or right. They needed to press a corresponding key to indicate the location of the red square. We computed just one contrast for the VISMOTOR task: [Vismotor], which indicates the presence of the checkerboard vs. baseline.
 
-## Sets of features 11-13: Task fMRI functional connectivity (Task FC)
+### Sets of features 11-13: Task fMRI functional connectivity (Task FC)
 
 Task FC reflects functional connectivity (FC) among the brain regions during each task, which is considered an important source of individual differences (Elliott et al., 2019; Fair et al., 2007; Gratton et al., 2018). We used the same CIFTI file ‘_PA_Atlas_MSMAll_hp0_clean.dtseries.nii.’ as the task contrasts. Unlike Task Contrasts, here we treated the double-gamma, convolved task events as regressors of no interest and focused on the residuals of the regression from each task (Fair et al., 2007). We computed these regressors on FSL, and regressed them in nilearn (Abraham et al., 2014). Following previous work on task FC (Elliott et al., 2019), we applied a highpass at.008 Hz. For parcellation, we used the same atlases as Task Contrast (Fischl et al., 2002; Glasser et al., 2016). We computed Pearson’s correlations of each pair of 379 regions, resulting in a table of 71,631 non-overlapping FC indices for each task. We then applied r-to-z transformation and principal component analysis (PCA) of 75 components (Rasero et al., 2021; Sripada et al., 2019; Sripada et al., 2020). Note to avoid data leakage, we conducted the PCA on each training set and applied its definition to the corresponding test set. Accordingly, there were three sets of 75 features for Task FC, one for each task.
 
-## Set of Features 14: Resting-state functional MRI functional connectivity (Rest FC)
+### Set of Features 14: Resting-state functional MRI functional connectivity (Rest FC)
 
 Similar to Task FC, Rest FC reflects functional connectivity (FC) among the brain regions, except that Rest FC occurred during the resting (as opposed to task-performing) period. HCP-A collected Rest FC from four 6.42 min (488 frames) runs across 2 days, leading to 26 min long data (Harms et al., 2018). On each day, the study scanned two runs of Rest FC, starting with anterior-to-posterior (AP) and then with posterior-to-anterior (PA) phase encoding polarity. We used the ‘rfMRI_REST_Atlas_MSMAll_hp0_clean.dscalar.nii’ file that was pre-processed and concatenated across the four runs. We applied the same computations (i.e. highpass filter, parcellation, Pearson’s correlations, r-to-z transformation and PCA) with the Task FC.
 
-## Sets of features 15-18: Structural MRI (sMRI)
+### Sets of features 15-18: Structural MRI (sMRI)
 
 sMRI reflects individual differences in brain anatomy. The HCP-A used an established pre-processing pipeline for sMRI (Glasser et al., 2013). We focused on four sets of features: cortical thickness, cortical surface area, subcortical volume. and total brain volume. For cortical thickness and cortical surface area, we used Destrieux’s atlas (Destrieux et al., 2010; Fischl, 2012) from FreeSurfer’s ‘aparc.stats’ file, resulting in 148 regions for each set of features. For subcortical volume, we used the aseg atlas (Fischl et al., 2002) from FreeSurfer’s ‘aseg.stats’ file, resulting in 19 regions. For total brain volume, we had five FreeSurfer-based features: ‘FS_IntraCranial_Vol’ or estimated intra-cranial volume, ‘FS_TotCort_GM_Vol’ or total cortical grey matter volume, ‘FS_Tot_WM_Vol’ or total cortical white matter volume, ‘FS_SubCort_GM_Vol’ or total subcortical grey matter volume and ‘FS_BrainSegVol_eTIV_Ratio’ or ratio of brain segmentation volume to estimated total intracranial volume.
 
-## Fluid cognition
+### Fluid cognition
 
 We measured fluid cognition via the NIH Toolbox (Weintraub et al., 2014), using the ‘fluidcogcomp_unadj’ variable. Fluid cognition summarises scores from five tests assessed outside of the MRI: Dimensional Change Card Sort, Flanker Inhibitory Control and Attention, Picture Sequence Memory, List Sorting Working Memory and Pattern Comparison Processing Speed.
 
-## Prediction models for Brain Age and Brain Cognition
+### Prediction models for Brain Age and Brain Cognition
 
 To compute Brain Age and Brain Cognition, we ran two separate prediction models. These prediction models either had chronological age or fluid cognition as the target and standardised brain MRI as the features (Denissen et al., 2022). We used nested cross-validation (CV) to build these prediction models (see Figure 8). We first split the data into five outer folds, leaving each outer fold with around 100 participants. This number of participants in each fold is to ensure the stability of the test performance across folds. In each outer-fold CV loop, one of the outer folds was treated as an outer-fold test set, and the rest was treated as an outer-fold training set. Ultimately, looping through the nested CV resulted in (a) prediction models from each of the 18 sets of features as well as (b) prediction models that drew information across different combinations of the 18 separate sets, known as ‘stacked models’. We specified eight stacked models: ‘All’ (i.e. including all 18 sets of features), ‘All excluding Task FC’, ‘All excluding Task Contrast’, ‘Non-Task’ (i.e. including only Rest FC and sMRI), ‘Resting and Task FC’, ‘Task Contrast and FC’, ‘Task Contrast’ and ‘Task FC’. Accordingly, there were 26 prediction models in total for both Brain Age and Brain Cognition.
 
@@ -161,65 +191,117 @@ We controlled for the potential influences of biological sex on the brain featur
 
 For the machine learning algorithm, we used Elastic Net (Zou and Hastie, 2005). Elastic Net is a general form of penalised regressions (including Lasso and Ridge regression), allowing us to simultaneously draw information across different brain indices to predict one target variable. Penalised regressions are commonly used for building age-prediction models (Jirsaraie et al., 2023a). Previously we showed that the performance of Elastic Net in predicting cognitive abilities is on par, if not better than, many non-linear and more-complicated algorithms (Pat et al., 2023; Tetereva et al., 2022). Moreover, Elastic Net coefficients are readily explainable, allowing us the ability to explain how our age-prediction and cognition-prediction models made the prediction from each brain feature (Molnar, 2019; Pat et al., 2023) (see below).
 
-Elastic Net simultaneously minimises the weighted sum of the features’ coefficients. The degree of penalty to the sum of the feature’s coefficients is determined by a shrinkage hyperparameter ‘α’: the greater the α, the more the coefficients shrink, and the more regularised the model becomes. Elastic Net also includes another hyperparameter, ℓ ratio’, which determines the degree to which the sum of either the squared (known as ‘Ridge’; ℓ ratio = 0) or absolute (known as ‘Lasso’; ℓ ratio = 1) coefficients is penalised (Zou and Hastie, 2005). The objective function of Elastic Net as implemented by sklearn (Pedregosa et al., 2011) is defined as:(1)argminβ(||y−X||222×nsamples+α×ℓ1_ratio×||β||1+0.5×α×(1−ℓ1_ratio)×||wβ||22),
+Elastic Net simultaneously minimises the weighted sum of the features’ coefficients. The degree of penalty to the sum of the feature’s coefficients is determined by a shrinkage hyperparameter ‘α’: the greater the α, the more the coefficients shrink, and the more regularised the model becomes. Elastic Net also includes another hyperparameter, $ℓ$ ratio’, which determines the degree to which the sum of either the squared (known as ‘Ridge’; $ℓ$ ratio = 0) or absolute (known as ‘Lasso’; $ℓ$ ratio = 1) coefficients is penalised (Zou and Hastie, 2005). The objective function of Elastic Net as implemented by sklearn (Pedregosa et al., 2011) is defined as:
 
-where X is the features, y is the target, and β is the coefficient. In our grid search, we tuned two Elastic Net hyperparameters: α using 70 numbers in log space, ranging from.1 and 100, and ℓ -ratio using 25 numbers in linear space, ranging from 0 and 1.
+$$
+argmin_{\beta}(\frac{||y−X||_{2}^{2}}{2\timesn_{samples}}+\alpha\timesℓ_{1}_ratio\times||\beta||_{1}+0.5\times\alpha\times(1−ℓ_{1}_ratio)\times||w\beta||_{2}^{2}),
+$$
+
+where X is the features, y is the target, and β is the coefficient. In our grid search, we tuned two Elastic Net hyperparameters: α using 70 numbers in log space, ranging from.1 and 100, and $ℓ$ -ratio using 25 numbers in linear space, ranging from 0 and 1.
 
 To understand how Elastic Net made a prediction based on different brain features, we examined the coefficients of the tuned model. Elastic Net coefficients can be considered as feature importance, such that more positive Elastic Net coefficients lead to more positive predicted values and, similarly, more negative Elastic Net coefficients lead to more negative predicted values (Molnar, 2019; Pat et al., 2023). While the magnitude of Elastic Net coefficients is regularised (thus making it difficult for us to interpret the magnitude itself directly), we could still indicate that a brain feature with a higher magnitude weights relatively stronger in making a prediction. Another benefit of Elastic Net as a penalised regression is that the coefficients are less susceptible to collinearity among features as they have already been regularised (Dormann et al., 2013; Pat et al., 2022).
 
-Given that we used fivefold nested cross validation, different outer folds may have different degrees of ‘α’ and ‘l1 ratio’, making the final coefficients from different folds to be different. For instance, for certain sets of features, penalisation may not play a big part (i.e., higher or lower ‘α’ leads to similar predictive performance), resulting in different ‘α’ for different folds. To remedy this in the visualisation of Elastic Net feature importance, we refitted the Elastic Net model to the full dataset without splitting them into five folds and visualised the coefficients on brain images using Brainspace (Vos de Wael et al., 2020) and Nilern (Abraham et al., 2014) packages. Note, unlike other sets of features, Task FC and Rest FC were modelled after data reduction via PCA. Thus, for Task FC and Rest FC, we, first, multiplied the absolute PCA scores (extracted from the ‘components_’ attribute of ‘sklearn.decomposition.PCA’) with Elastic Net coefficients and, then, summed the multiplied values across the 75 components, leaving 71,631 ROI-pair indices.
+Given that we used fivefold nested cross validation, different outer folds may have different degrees of ‘α’ and $‘l_{1}$ ratio’, making the final coefficients from different folds to be different. For instance, for certain sets of features, penalisation may not play a big part (i.e., higher or lower ‘α’ leads to similar predictive performance), resulting in different ‘α’ for different folds. To remedy this in the visualisation of Elastic Net feature importance, we refitted the Elastic Net model to the full dataset without splitting them into five folds and visualised the coefficients on brain images using Brainspace (Vos de Wael et al., 2020) and Nilern (Abraham et al., 2014) packages. Note, unlike other sets of features, Task FC and Rest FC were modelled after data reduction via PCA. Thus, for Task FC and Rest FC, we, first, multiplied the absolute PCA scores (extracted from the ‘components_’ attribute of ‘sklearn.decomposition.PCA’) with Elastic Net coefficients and, then, summed the multiplied values across the 75 components, leaving 71,631 ROI-pair indices.
 
 To demonstrate the stability of feature importance across outer folds, we examined the rank stability of feature importance using Spearman’s ρ. Specifically, we correlated the feature importance between two prediction models of the same features, used in two different outer-fold test sets. Given that there were five outer-fold test sets, we computed 10 Spearman’s ρ for each prediction model of the same features.
 
-## Brain Age calculations: Brain Age, Brain Age Gap, Corrected Brain Age, and Corrected Brain Age Gap
+### Brain Age calculations: Brain Age, Brain Age Gap, Corrected Brain Age, and Corrected Brain Age Gap
 
-In addition to Brain Age, which is the predicted value from the models predicting chronological age in the outer-fold test sets, we calculated three other indices to reflect the estimation of brain aging. First, Brain Age Gap reflects the difference between the age predicted by brain MRI and the actual, chronological age. Here, we simply subtracted the chronological age from Brain Age:(2)BrainAgeGapi=BrainAgei−chronologicalagei,
+In addition to Brain Age, which is the predicted value from the models predicting chronological age in the outer-fold test sets, we calculated three other indices to reflect the estimation of brain aging. First, Brain Age Gap reflects the difference between the age predicted by brain MRI and the actual, chronological age. Here, we simply subtracted the chronological age from Brain Age:
+
+$$
+BrainAgeGap_{i}=BrainAge_{i}−chronologicalage_{i},
+$$
 
 where i is the individual. Next, to reduce the dependency on chronological age (Butler et al., 2021; de Lange and Cole, 2020; Le et al., 2018), we applied a method described in de Lange and Cole, 2020, which was implemented elsewhere (Cole et al., 2020; Cumplido-Mayoral et al., 2023; Denissen et al., 2022):
 
-In each outer-fold training set:(3)BrainAgei=β0+β1chronologicalagei+εi,
+In each outer-fold training set:
 
-Then in the corresponding outer-fold test set:(4)CorrectedBrainAgei=(BrainAgei−β0)/β1,
+$$
+BrainAge_{i}=\beta_{0}+\beta_{1}chronologicalage_{i}+\epsilon_{i},
+$$
+
+Then in the corresponding outer-fold test set:
+
+$$
+CorrectedBrainAge_{i}=(BrainAge_{i}−\beta_{0})/\beta_{1},
+$$
 
 That is, we first fit a regression line predicting the Brain Age from a chronological age in each outer-fold training set. We then used the slope (β1) and intercept (β0) of this regression line to adjust Brain Age in the corresponding outer-fold test set, resulting in Corrected Brain Age. Note de Lange and Cole, 2020 called this Corrected Brain Age, ‘Corrected Predicted Age’, while Butler et al., 2021 called it ‘Revised Predicted Age’.
 
-Lastly, we computed Corrected Brain Age Gap by subtracting the chronological age from the Corrected Brain Age (Butler et al., 2021; Cole et al., 2020; de Lange and Cole, 2020; Denissen et al., 2022):(5)CorrectedBrainAgeGap=CorrectedBrainAge−chronologicalage,
+Lastly, we computed Corrected Brain Age Gap by subtracting the chronological age from the Corrected Brain Age (Butler et al., 2021; Cole et al., 2020; de Lange and Cole, 2020; Denissen et al., 2022):
+
+$$
+CorrectedBrainAgeGap=CorrectedBrainAge−chronologicalage,
+$$
 
 Note Cole, 2020 called Corrected Brain Age Gap, ‘brain-predicted age difference (brain-PAD)’, while Butler et al., 2021 called this index, ‘Revised Brain Age Gap’.
 
-## The utility of Brain Age indices to capture fluid cognition
+### The utility of Brain Age indices to capture fluid cognition
 
 We first combined Brain Age, Brain Cognition, chronological age and fluid cognition across outer-fold test sets into one table. We then conducted three sets of regression analyses to demonstrate the utility of different Brain Age indices, calculated from 26 different prediction models based on different sets of brain MRI features, to capture fluid cognition.
 
-## Simple regression: using each Brain Age index to explain fluid cognition
+#### Simple regression: using each Brain Age index to explain fluid cognition
 
-Here using simple regression, we simply had each Brain Age index as the sole regressor for fluid cognition:(6)FluidCognitioni=β0+β1BrainAgeIndexi,j+εi,
+Here using simple regression, we simply had each Brain Age index as the sole regressor for fluid cognition:
+
+$$
+FluidCognition_{i}=\beta_{0}+\beta_{1}BrainAgeIndex_{i,j}+\epsilon_{i},
+$$
 
 where j is the index for the four Brain Age indices. Because different Brain Age indices differ in the adjustments applied, this simple regression could reveal the extent to which each adjustment influences variation in fluid cognition explained. Additionally, Brain Age calculated from 26 different prediction models would have different levels of predictive performance in predicting chronological age. Accordingly, this simple regression could also reveal if Brain Age from a better-performing age-prediction model was able to capture more variation in fluid cognition.
 
-In addition to Brain Age indices, we also used simple regression to test how well Brain Cognition as a sole regressor explains fluid cognition:(7)FluidCognitioni=β0+β1BrainCognitioni,j
+In addition to Brain Age indices, we also used simple regression to test how well Brain Cognition as a sole regressor explains fluid cognition:
+
+$$
+FluidCognition_{i}=\beta_{0}+\beta_{1}BrainCognition_{i,j}
+$$
 
 This allows us to compare the utility of Brain Age Indices vs. Brain Cognition as a sole regressor for predicting fluid cognition.
 
-## Multiple regression: using chronological age and each Brain Age index to explain fluid cognition
+#### Multiple regression: using chronological age and each Brain Age index to explain fluid cognition
 
-Here, using multiple regression, we had both chronological age and each Brain Age index as the regressors for fluid cognition:(8)FluidCognitioni=β0+β1ChonologicalAgei+β2BrainAgeIndexi,j+εi
+Here, using multiple regression, we had both chronological age and each Brain Age index as the regressors for fluid cognition:
 
-Having chronological age in the same regression model as a Brain Age index allowed us to control for the effects of chronological age on the Brain Age index, thereby, revealing the unique effects of the Brain Age index (Butler et al., 2021; Le et al., 2018). To formally determine the unique effects of a Brain Age index on fluid cognition along with the effects it shared with chronological age (i.e. common effects), we applied the commonality analysis (Nimon et al., 2008). For the unique effects, we computed ΔR2. ΔR2 is the increase in R2 when having an additional regressor in the regression model:(9)UniqueEffectchronologicalage=ΔRchronologicalage2=Rchronologicalage, BrainAgeIndex2−RBrainAgeindex2UniqueEffectBrainAgeindex=ΔRBrainAgeindex2=Rchronologicalage, BrainAgeIndex2−Rchronologicalage2,
+$$
+FluidCognition_{i}=\beta_{0}+\beta_{1}ChonologicalAge_{i}+\beta_{2}BrainAgeIndex_{i,j}+\epsilon_{i}
+$$
 
-We determined the statistical significance of ΔR2 by: , (10)FChange=(N−k2−1)ΔR2kchange(1−R22)
+Having chronological age in the same regression model as a Brain Age index allowed us to control for the effects of chronological age on the Brain Age index, thereby, revealing the unique effects of the Brain Age index (Butler et al., 2021; Le et al., 2018). To formally determine the unique effects of a Brain Age index on fluid cognition along with the effects it shared with chronological age (i.e. common effects), we applied the commonality analysis (Nimon et al., 2008). For the unique effects, we computed ΔR2. ΔR2 is the increase in R2 when having an additional regressor in the regression model:
+
+$$
+UniqueEffect_{chronologicalage}=ΔR_{chronologicalage}^{2}=R_{chronologicalage, BrainAgeIndex}^{2}−R_{BrainAgeindex}^{2}UniqueEffect_{BrainAgeindex}=ΔR_{BrainAgeindex}^{2}=R_{chronologicalage, BrainAgeIndex}^{2}−R_{chronologicalage}^{2},
+$$
+
+We determined the statistical significance of ΔR2 by:
+
+$$
+F_{Change}=\frac{(N−k_{2}−1)ΔR^{2}}{k_{change}(1−R_{2}^{2})}
+$$
 
 where FChange is the F-ratio (with the degree of freedom of kChange and N – k2 –1), N is the number of observations, 2 is the model with more regressors, k is the number of regressors, kChange is the difference between the number of regressors.
 
-As for the common effects between chronological age and each Brain Age index, we used the below calculation:(11)CommonEffectchronologicalage, BrainAgeindex=Rchronologicalage, BrainAgeindex2−ΔRchronologicalage2−ΔRBrainAgeindex2,
+As for the common effects between chronological age and each Brain Age index, we used the below calculation:
+
+$$
+CommonEffect_{chronologicalage, BrainAgeindex}=R_{chronologicalage, BrainAgeindex}^{2}−ΔR_{chronologicalage}^{2}−ΔR_{BrainAgeindex}^{2},
+$$
 
 These common effects indicate the extent to which variation in fluid cognition explained by each Brain Age index was shared with chronological age. Note the common effects can be negative, especially with a high multicollinearity (Ray‐Mukherjee et al., 2014). To deal with this, we treated negative common effects as zero (Frederick, 1999) and then scaled variation explained by other effects to be proportional to the total effects of the full regression model.
 
-## Multiple regression: using chronological age, each Brain Age index and Brain Cognition to explain fluid cognition
+#### Multiple regression: using chronological age, each Brain Age index and Brain Cognition to explain fluid cognition
 
-Similar to the above multiple regression model, we had chronological age, each Brain Age index and Brain Cognition as the regressors for fluid cognition:(12)FluidCognitioni=β0+β1ChronologicalAgei+β2BrainAge Indexi,j+β3Braincognitioni+εi,
+Similar to the above multiple regression model, we had chronological age, each Brain Age index and Brain Cognition as the regressors for fluid cognition:
 
-Applying the commonality analysis here allowed us, first, to investigate the addictive, unique effects of Brain Cognition, over and above chronological age and Brain Age indices. More importantly, the commonality analysis also enabled us to test the common, shared effects that Brain Cognition had with chronological age and Brain Age indices in explaining fluid cognition. We calculated the commonality analysis as follows Nimon et al., 2017 (Table 2):(13)UniqueEffectchronologicalage=ΔRchronologicalage2=Rchronologicalage,BrainAgeindex,BrainCognition2−RBrainAgeindex,BrainCognition2UniqueEffectBrainageindex=ΔRBrainAgeindex2=Rchronologicalage,BrainAgeindex,BrainCognition2−Rchronologicalage,BrainCognition2UniqueEffectBraincognition=ΔRBraincognition2=Rchronologicalage,BrainAgeindex,BrainCognition2−RchronologicalAgeindex,BrainAgeIndex2CommonEffectchronologicalage,BrainAgeindex=Rchronologicalage,BrainCognition2+RBrainAgeindex,BrainCognition2−RBrainCognition2−Rchronologicalage,BrainAgeindex,BrainCognition2CommonEffectchronologicalage,Braincognition=Rchronologicalage,BrainAge Index2+RBrainAgeindex,BrainCognition2−RBrainCognition2−Rchronologicalage,BrainAgeindex,BrainCognition2CommonEffectBrainAgeindex, Braincognition=Rchronologicalage,BrainAge Index2+Rchronologicalage,Braincognition2−Rchronologicalage2−Rchronologicalage,BrainAgeindex,BrainCognition2CommonEffectchronologicalage,BrainAgeIndex=Rchronologicalage2+RBrainAgeindex2−RBraincognition2−Rchronologicalage,BrainAgeindex2−Rchronologicalage,Braincognition2−RBrainAgeIndex,Brain cognition2−Rchronologicalage, Brain Ageindex,BrainCognition2
+$$
+FluidCognition_{i}=\beta_{0}+\beta_{1}ChronologicalAge_{i}+\beta_{2}BrainAge Index_{i,j}+\beta_{3}Braincognition_{i}+\epsilon_{i},
+$$
+
+Applying the commonality analysis here allowed us, first, to investigate the addictive, unique effects of Brain Cognition, over and above chronological age and Brain Age indices. More importantly, the commonality analysis also enabled us to test the common, shared effects that Brain Cognition had with chronological age and Brain Age indices in explaining fluid cognition. We calculated the commonality analysis as follows Nimon et al., 2017 (Table 2):
+
+$$
+UniqueEffect_{chronologicalage}=ΔR_{chronologicalage}^{2}=R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}−R_{BrainAgeindex,BrainCognition}^{2}UniqueEffect_{Brainageindex}=ΔR_{BrainAgeindex}^{2}=R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}−R_{chronologicalage,BrainCognition}^{2}UniqueEffect_{Braincognition}=ΔR_{Braincognition}^{2}=R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}−R_{chronologicalAgeindex,BrainAgeIndex}^{2}CommonEffect_{chronologicalage,BrainAgeindex}=R_{chronologicalage,BrainCognition}^{2}+R_{BrainAgeindex,BrainCognition}^{2}−R_{BrainCognition}^{2}−R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}CommonEffect_{chronologicalage,Braincognition}=R_{chronologicalage,BrainAge Index}^{2}+R_{BrainAgeindex,BrainCognition}^{2}−R_{BrainCognition}^{2}−R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}CommonEffect_{BrainAgeindex, Braincognition}=R_{chronologicalage,BrainAge Index}^{2}+R_{chronologicalage,Braincognition}^{2}−R_{chronologicalage}^{2}−R_{chronologicalage,BrainAgeindex,BrainCognition}^{2}CommonEffect_{chronologicalage,BrainAgeIndex}=R_{chronologicalage}^{2}+R_{BrainAgeindex}^{2}−R_{Braincognition}^{2}−R_{chronologicalage,BrainAgeindex}^{2}−R_{chronologicalage,Braincognition}^{2}−R_{BrainAgeIndex,Brain cognition}^{2}−R_{chronologicalage, Brain Ageindex,BrainCognition}^{2}
+$$
 
 Note to ensure that the commonality analysis results were robust against multicollinearity (Ray‐Mukherjee et al., 2014), we also repeated the same commonality analyses done here on Ridge regression, as opposed to multiple regression. Ridge regression is a method designed to deal with multicollinearity (Dormann et al., 2013). See Figure 6—figure supplement 1 for the Ridge regression with chronological age and each Brain Age index as regressors and Figure 6—figure supplement 2 for the Ridge regression with chronological age, each Brain Age and Brain Cognition index as regressors. Briefly, the results from commonality analyses applied to Ridge regressions are closely matched with our results done using multiple regression.
 

@@ -19,18 +19,18 @@
 
 ### Affiliations
 
-1. https://ror.org/047sbcx71 Institute of Molecular Biology, Academia Sinica Taipei Taiwan
-2. https://ror.org/02bn97g32 Molecular and Cell Biology, Taiwan International Graduate Program, Academia Sinica and Graduate Institute of Life Science, National Defense Medical Center Taipei Taiwan
-3. https://ror.org/00944ve71 Department of Life Sciences, National Central University Taoyuan Taiwan
-4. https://ror.org/02r6fpx29 National Institute of Cancer Research, National Health Research Institutes Tainan Taiwan
-5. https://ror.org/044gv5910 Institute of Statistical Science, Academia Sinica Taipei Taiwan
-6. https://ror.org/007h4qe29 Department of Hematology-Oncology, Tri-Service General Hospital Taipei Taiwan
+1. Institute of Molecular Biology, Academia Sinica Taipei Taiwan ([ROR:047sbcx71](https://ror.org/047sbcx71))
+2. Molecular and Cell Biology, Taiwan International Graduate Program, Academia Sinica and Graduate Institute of Life Science, National Defense Medical Center Taipei Taiwan ([ROR:02bn97g32](https://ror.org/02bn97g32))
+3. Department of Life Sciences, National Central University Taoyuan Taiwan ([ROR:00944ve71](https://ror.org/00944ve71))
+4. National Institute of Cancer Research, National Health Research Institutes Tainan Taiwan ([ROR:02r6fpx29](https://ror.org/02r6fpx29))
+5. Institute of Statistical Science, Academia Sinica Taipei Taiwan ([ROR:044gv5910](https://ror.org/044gv5910))
+6. Department of Hematology-Oncology, Tri-Service General Hospital Taipei Taiwan ([ROR:007h4qe29](https://ror.org/007h4qe29))
 
 † Corresponding author
 
 ## Abstract
 
-Natural killer (NK) cells can control metastasis through cytotoxicity and IFN-γ production independently of T cells in experimental metastasis mouse models. The inverse correlation between NK activity and metastasis incidence supports a critical role for NK cells in human metastatic surveillance. However, autologous NK cell therapy has shown limited benefit in treating patients with metastatic solid tumors. Using a spontaneous metastasis mouse model of MHC-I + breast cancer, we found that transfer of IL-15/IL-12-conditioned syngeneic NK cells after primary tumor resection promoted long-term survival of mice with low metastatic burden and induced a tumor-specific protective T cell response that is essential for the therapeutic effect. Furthermore, NK cell transfer augments activation of conventional dendritic cells (cDCs), Foxp3 - CD4 + T cells and stem cell-like CD8 + T cells in metastatic lungs, to which IFN-γ of the transferred NK cells contributes significantly. These results imply direct interactions between transferred NK cells and endogenous cDCs to enhance T cell activation. We conducted an investigator-initiated clinical trial of autologous NK cell therapy in six patients with advanced cancer and observed that the NK cell therapy was safe and showed signs of effectiveness. These findings indicate that autologous NK cell therapy is effective in treating established low burden metastases of MHC-I + tumor cells by activating the cDC-T cell axis at metastatic sites.
+Natural killer (NK) cells can control metastasis through cytotoxicity and IFN-γ production independently of T cells in experimental metastasis mouse models. The inverse correlation between NK activity and metastasis incidence supports a critical role for NK cells in human metastatic surveillance. However, autologous NK cell therapy has shown limited benefit in treating patients with metastatic solid tumors. Using a spontaneous metastasis mouse model of MHC-I+ breast cancer, we found that transfer of IL-15/IL-12-conditioned syngeneic NK cells after primary tumor resection promoted long-term survival of mice with low metastatic burden and induced a tumor-specific protective T cell response that is essential for the therapeutic effect. Furthermore, NK cell transfer augments activation of conventional dendritic cells (cDCs), Foxp3-CD4+ T cells and stem cell-like CD8+ T cells in metastatic lungs, to which IFN-γ of the transferred NK cells contributes significantly. These results imply direct interactions between transferred NK cells and endogenous cDCs to enhance T cell activation. We conducted an investigator-initiated clinical trial of autologous NK cell therapy in six patients with advanced cancer and observed that the NK cell therapy was safe and showed signs of effectiveness. These findings indicate that autologous NK cell therapy is effective in treating established low burden metastases of MHC-I+ tumor cells by activating the cDC-T cell axis at metastatic sites.
 
 ## Introduction
 
@@ -42,25 +42,35 @@ Despite the clear anti-tumor function of endogenous NK cells, adoptive transfer 
 
 ## Results
 
-## Characterization of ex vivo-expanded murine NK cells
+### Characterization of ex vivo-expanded murine NK cells
 
 To generate NK cells with anti-tumor activity ex vivo, we cultured murine bone marrow (BM) cells with IL-15 and IL-12, since IL-15 is an NK cell growth and survival factor and both cytokines enhance IFN-γ production and the cytotoxicity of NK cells (Kennedy et al., 2000; Lodolce et al., 1998; Marcenaro et al., 2005). On average, 86% of the resulting cells were identified as TCRαβ-TCRγδ-CD19-NK1.1+ that express NKG2D, EOMES and T-bet (Figure 1A), representing characteristics of NK cells (Gordon et al., 2012; Raulet, 2003). Approximately 90% of the expanded NK cells were CD27+ with no-to-low levels of CD11b expression (Figure 1A). The proportion of NK cells expressing MHC-I-interacting NKRs, including activating Ly49D/H and inhibitory Ly49A/G2/I and NKG2A, was stable among independent cultures (Figure 1B). In terms of activation status, on average, 87% of the expanded NK cells expressed either intermediate or high levels of the activating receptor DNAM-1 and 82% of them displayed an activated B220+CD11c+ phenotype (Figure 1C). Consistently, they expressed the anti-tumor effectors IFN-γ, granzyme B, and TRAIL (Figure 1D). Co-culturing the NK cells with either EO771 breast adenocarcinoma cells that express MHC-I molecules and Rae-1 or B16F10 melanoma cells that express none of those molecules in vitro (Figure 1—figure supplement 1) resulted in dose-dependent tumor cell death (Figure 1E) and up-regulation of IFN-γ production by the NK cells (Figure 1F). Thus, the NK cells conditioned by means of IL-15 and IL-12 possess anti-tumor activities in vitro.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig1-v1.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig1-figsupp1-v1.jpg)
 
 BM cells were cultured with IL-15 and IL-12 as described in Methods. (A) Analysis of NK cells (CD19-TCRαβ-TCRγδ-NK1.1+) among live expanded cells. Plots are representative of 20 independent cultures. (B)-(D) Expression of MHC-I-interacting activating and inhibitory NKRs, activation markers and anti-tumor effectors by the expanded NK cells. Representative flow histograms are presented for each molecule, and the compiled data from independent expansion cultures is indicated by the dot plots. (E) In vitro cytotoxicity of the expanded NK cells. CFSE-labeled EO771 or B16F10 cells (T, target) were co-cultured with expanded NK cells (E, effector) at the indicated E:T ratios. Tumor cell viability was analyzed by PI staining using FACS. One representative of three independent experiments is shown. Data represent mean ± SEM of triplicate wells. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p<0.05, **p<0.01, ***p<0.001 relative to tumor only. (F) Tumor cells stimulated IFN-γ production by the expanded NK cells. Sorted NK cells were cultured alone (NK cells) or together with indicated tumor cells at a ratio of 1:1. Levels of intracellular IFN-γ of NK cells were determined by staining with anti-IFN-γ or isotype control antibody, and analyzed by FACS. Representative histograms from one of two independent experiments and the relative difference in mean fluorescence intensity (ΔMFI) of the two experiments are shown. ΔMFI was calculated by subtracting the MFI value of isotype control staining from that of anti-IFN-γ antibody staining. Relative ΔMFI was calculated by dividing the ΔMFI of NK cells +tumor cells with the ΔMFI of NK cells.
 
 Representative flow plots of MHC-I molecules and Rae-1 expression by EO771 and B16F10 cells from three independent experiments are shown.
 
-## EO771 tumor-resected mice represent a model for established metastases to test NK cell therapy
+### EO771 tumor-resected mice represent a model for established metastases to test NK cell therapy
 
 Cancer recurrence occurs in a significant proportion of patients after primary tumor resection due to dissemination of tumor cells before and/or during surgery. To mimic that scenario, we established a syngeneic orthotopic breast cancer model using the MHC-I+ EO771 cell line that harbors numerous mutations (Yang et al., 2017b). At 21 days post-inoculation and consistent with the spontaneous lung metastatic property of the EO771 line (Ewens et al., 2005), we observed that ~85% of mice with a primary tumor weighing ≥95 mg had metastatic foci on the lung surface. The number and area of metastatic foci was positively correlated with tumor weight on day 21 (Figure 2A). Resection of the primary tumor and its sentinel lymph node (LN) on day 21 resulted in a long-term survival rate of 18%, with mortality of all remaining mice (Figure 2B). All dead mice exhibited metastases in the lung, of which 71% displayed tumor reappearance at the surgical site (data not shown). Therefore, this tumor resection model represents a model of established metastases caused by tumor cell dissemination before and arising from surgery. To apply adoptive NK cell therapy to this model, we examined if the transferred NK cells reach the lungs of tumor-resected mice. The expanded NK cells express the chemokine receptors CXCR3, CCR5, and CXCR6 (Figure 2C), and the lung of tumor-resected mice express mRNA of the corresponding ligands CXCL9/10/11, CCL3/4/5, and CXCL16 (Figure 2D). Using eGFP+ NK cells, we observed that numbers of transferred cells in the lung peaked at 4 hr and then continuously declined, remaining detectable for at least 2 days (Figure 2E). A similar pattern of transferred NK cells was observed in the spleen, albeit with lower cell counts (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig2-v1.jpg)
 
-**Figure 2.:** (A) Positive correlation between primary tumor weight and lung metastasis. Pearson correlations between day 21 tumor weights and the number and total area of metastatic foci on the lung surface are shown. Each dot represents a mouse. (B) Survival of mice who received day 21 tumor resection, sham surgery, or no treatment. Mouse survival was analyzed by means of the Kaplan-Meier estimator and a Log-Rank test: ****p<0.0001. (C) Expanded NK cells express the chemokine receptors CXCR3, CCR5, and CXCR6. Representative flow plots of 10 independent cultures are shown. (D) Expression of CXCR3, CCR5, and CXCR6 ligands in the lung. Specific gene expression was determined by quantitative real-time PCR using lung RNA of day 21 tumor-resected mice collected on day 24 post tumor inoculation and normalized to the expression of cyclophilin a. Each symbol represents a mouse and means ± SEM are shown. (E) Expanded eGFP+ NK cells were transferred into day 21 EO771-resected mice on day 24, and quantified in the single cell suspensions of spleen and lung at the indicated times using FACS. Numbers of eGFP+ NK cells detected in each organ are shown. Each dot represents a mouse (means ± SEM).Figure 2—source data 1.
+**Figure 2.:** (A) Positive correlation between primary tumor weight and lung metastasis. Pearson correlations between day 21 tumor weights and the number and total area of metastatic foci on the lung surface are shown. Each dot represents a mouse. (B) Survival of mice who received day 21 tumor resection, sham surgery, or no treatment. Mouse survival was analyzed by means of the Kaplan-Meier estimator and a Log-Rank test: ****p<0.0001. (C) Expanded NK cells express the chemokine receptors CXCR3, CCR5, and CXCR6. Representative flow plots of 10 independent cultures are shown. (D) Expression of CXCR3, CCR5, and CXCR6 ligands in the lung. Specific gene expression was determined by quantitative real-time PCR using lung RNA of day 21 tumor-resected mice collected on day 24 post tumor inoculation and normalized to the expression of cyclophilin a. Each symbol represents a mouse and means ± SEM are shown. (E) Expanded eGFP+ NK cells were transferred into day 21 EO771-resected mice on day 24, and quantified in the single cell suspensions of spleen and lung at the indicated times using FACS. Numbers of eGFP+ NK cells detected in each organ are shown. Each dot represents a mouse (means ± SEM).
 
-## Syngeneic NK cell therapy is effective in treating mice with low metastatic burden in a CD8+-T-cell-dependent manner
+### Syngeneic NK cell therapy is effective in treating mice with low metastatic burden in a CD8+-T-cell-dependent manner
 
 We evaluated the effect of syngeneic NK cell therapy on tumor-resected mice (Figure 3A Schema), and found a negative correlation between survival time and day 21 tumor weight in the NK-cell-treated group but not in the control group (Figure 3A). Consequently, we divided the mice into two groups according to their day 21 tumor weight. NK-cell-treated mice displayed significantly enhanced overall survival (OS) and an improved long-term survival rate from 33% to 68% compared to control mice in the 95–400 mg tumor group, whereas the same therapy did not improve OS of the >400 mg tumor group (Figure 3B). These results, together with the result presented in Figure 2A, indicate that the NK cell therapy promotes long-term survival of tumor-resected mice carrying low metastatic burden. We further examined if the surviving mice after NK cell treatment had acquired tumor-specific protection by re-challenging them with either EO771 or B16F10 tumor cells (Figure 3C Schema). We found that 83% of these mice were protected from EO771 re-challenge and survived beyond 180 days, whereas all mice re-challenged with B16F10 died (Figure 3C). Age-matched naïve mice inoculated for the first time with either EO771 or B16F10 as a control all died (Figure 3C). Thus, surviving mice of post-resection NK cell therapy displayed tumor-specific protective immunity.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig3-v1.jpg)
+
+**Figure 3.:** (A) Day 21 tumor weight is inversely correlated with survival duration of NK-cell-treated tumor-resected mice. After tumor and sentinel LN resection on day 21, mice received either sorted NK cells (NK cell) or PBS (Control) at the indicated time-points. The correlation between day 21 tumor weight and survival time of mice was evaluated by Pearson correlation. Each dot represents a mouse. The results have been compiled from five to eight independent experiments. The Control group is the same dataset as presented for the Resection group in Figure 2B. (B) NK cell therapy promotes long-term survival of mice who had light tumors on day 21. The mice described in (A) were separated into 95–400 mg and >400 mg day 21 tumor weight groups for survival analysis by means of the Kaplan-Meier estimator and a Log-Rank test: *p<0.05. (C) NK cell therapy induces tumor-specific protection. Surviving mice after NK cell therapy were re-challenged with EO771 (●, compiled from four independent experiments) or B16F10 cells (▲, compiled from two independent experiments) at 11–13 weeks post therapy, and then monitored for survival. Age-matched naïve mice were inoculated with EO771 (○, compiled from four independent experiments) or B16F10 cells (△, compiled from three independent experiments) as controls. Mouse survival, using 2000 mm3 tumor volume as a cut-off, was analyzed by means of the Kaplan-Meier estimator and a Log-Rank test: ****p<0.001. (D) Depletion of CD4+ or/and CD8+ cells alter the effects of NK cell therapy. Mice were treated with indicated antibodies at day 19 post tumor inoculation, and then received resection followed by NK cell therapy. Mice were grouped according to indicated primary tumor weight for survival analysis by means of the Kaplan-Meier estimator and a Log-Rank test: ns, not significant; *p<0.05; ***p<0.001; ****p<0.0001. The data are compiled from two to three experiments. (E) T cells isolated from surviving mice post NK cell therapy and tumor re-challenge confer anti-tumor activity. Post NK cell therapy and re-challenge survivors were collected from three independent experiments. T cells and non-T cells isolated from each survivor were transferred separately into naïve recipient mice in a 1-donor-to-1-recipient manner, whereas other naïve mice that received no cells served as a control (compiled from two independent experiments). T cells and non-T cells were also isolated from age-matched naïve donors and transferred separately into naïve recipient mice, whereas other naïve mice that received no cells served as a control (compiled from two independent experiments). The recipient mice were then inoculated with EO771 cells one day after cell transfer. Mouse survival, using 2000 mm3 tumor volume as a cut-off, was analyzed by means of the Kaplan-Meier estimator and a Log-rank test: ns, not significant; **p<0.01; ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig3-figsupp1-v1.jpg)
 
 Since the tumor re-challenge experiment was performed at 11–13 weeks following NK cell treatment (Figure 3C), the observed long-lasting protection is likely mediated by memory T cells. Accordingly, we examined the role of T cells in NK cell therapy by depleting T cell subsets with anti-CD4 or/and anti-CD8 antibodies two days before primary tumor resection (Figure 3D Schema and Figure 3—figure supplement 1). In the 95–600 mg tumor group, depletion of CD8+ cells alone or both CD4+ and CD8+ cells diminished the effect of NK cell therapy, whereas depletion of CD4+ cells alone did not affect OS (Figure 3D). This result indicates that CD8+ T cells are essential for the effect of NK cell therapy. In contrast, the >600 mg tumor group displayed a limited NK cell treatment effect as expected, but did exhibit an improvement in OS upon depleting CD4+ cells alone (Figure 3D). As the proportion of lung Foxp3+CD4+ T cells in CD45+ cells positively correlated with day 21 tumor weight (data not shown), depletion of Foxp3+CD4+ T cells by anti-CD4 antibody likely has a stronger effect in augmenting the immune response for the >600 mg tumor than the 95–600 mg tumor group. Moreover, both tumor groups showed diminished OS upon depletion of both CD4+ and CD8+ cells than was the case for depletion of CD8+ cells alone, indicating a CD8+ T cell-independent anti-tumor effect of CD4+ T cells (Figure 3D).
 
@@ -68,33 +78,177 @@ Next, we examined whether the T cells in surviving mice after NK cell therapy an
 
 Mice were treated with CD4- or/and CD8α-specific antibodies at day 19 post tumor inoculation, and then underwent tumor resection at day 21, followed by NK cell therapy during days 24–31. Levels of circulating CD4+TCRβ+ cells in the blood were reduced by 96–100% during the period of NK cell transfer, and by 70% and 54%, respectively, at 1- and 2 weeks post NK cell transfer. The level of blood-circulating CD8+TCRβ+ cells was reduced by 99–100% during the period of NK cell transfer, and by 97% and 93%, respectively, at 1- and 2 weeks post NK cell transfer. Each time point compiles data from 3 to 10 mice from three independent experiments and is shown as mean ± SEM.
 
-## Syngeneic NK cell transfer promotes cDC and T cell activation in metastatic lungs
+### Syngeneic NK cell transfer promotes cDC and T cell activation in metastatic lungs
 
 Conventional DCs directly trigger an antigen-specific T cell response by providing ligands to antigen, costimulatory and cytokine receptors expressed on T cells (Cabeza-Cabrerizo, Cabeza-Cabrerizo et al., 2021). A previous in vivo study reported that A20 lymphoma expressing abnormally low levels of MHC I molecules (MHC-I) induces IL-12 production by splenic DCs (CD11c+CD19-F4/80-) and CD8+ T cell response (Mocikat et al., 2003). Therefore, we hypothesized that our NK cell therapy would modulate cDCs in metastatic lungs in favor of a T cell response. As our IL-15/IL-12-conditioned NK cells express high levels of mRNA encoding IFN-γ and IL-10 (data not shown), cytokines known to modulate cDC function, we examined whether one transfer of wild type (WT), Il10-/- or Ifng-/- NK cells affected cDCs and T cells in the metastatic lungs. Immune cells were analyzed ~18 hr after NK-cell transfer, by which time the level of transferred NK cells in the lung declined by >60% relative to that determined at 4 hr (Figure 2E). We found that lung cDC1s and cDC2s consist of cells expressing either high or low level of MHC-II (MHC-IIhi or MHC-IIlo), and the MHC-IIhi cDCs are composed of CCR7+Lamp3+ and CCR7-Lamp3- subsets (Figure 4A). The CCR7+Lamp3+MHC-IIhi subset expresses the highest level of APC function molecules, including MHC-I, MHC-II, CCR7, CD86, CD40, and PD-L1 (Figure 4A), resembling the recently identified mregDC (Cheng et al., 2021; de Saint-Vis et al., 1998; Maier et al., 2020). The CCR7-Lamp3-MHC-IIhi subset expresses an intermediate level of MHC-II, CD86 and CD40 among the three subsets, and similar levels of MHC-I, CCR7 and PD-L1 to that of the MHC-IIlo subset (Figure 4A). NK-cell transfer did not alter the proportion of total cDC1s or cDC2s in CD45+ cells in the lung tissue (data not show). However, among cDC1s, transfer of WT NK cells significantly increased the proportion of the two MHC-IIhi subsets, the levels of CD86 and CD40 expressed by all three subsets, and the levels of PD-L1, MHC-I and MHC-II expressed by CCR7-Lamp3-MHC-IIhi and MHC-IIlo subsets (Figure 4B). IFN-γ, but not IL-10, of the transferred NK cells significantly contributes to these effects, except for the PD-L1 level in MHC-IIlo subset (Figure 4B). Transfer of WT NK cells exerted many effects on cDC2s similar to those described above for cDC1s, albeit with several differences (Figure 4B). The differences include augmenting MHC-II level in the CCR7+Lamp3+MHC-IIhi subset, reducing MHC-II level in the MHC-IIlo subset, and having no effect on CD40 level in the CCR7+Lamp3+MHC-IIhi subset (Figure 4B). IFN-γ of transferred NK cells significantly contributed to these effects of WT NK cell transfer on cDC2s, except for the increase of the CCR7+Lamp3+MHC-IIhi subset, CD40 and MHC-II levels in the CCR7-Lamp3-MHC-IIhi subset, and CD86 and MHC-II levels in the MHC-IIlo subset (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig4-v1.jpg)
 
-**Figure 4.:** Figure 4—source data 1.
-
 The experimental design is the same as depicted in the Figure 3A schema except that NK cells (WT, Il10-/- or Ifng-/-) were transferred once on day 24 and lung immune cells were analyzed on day 25. (A) Gating strategies and characterization of cDC subsets in lung tissue. The dot plots show the gating of CCR7+LAMP3+MHC-IIhi, CCR7-LAMP3-MHC-IIhi and MHC-IIlo subsets of cDC1s and cDC2s. The histograms show the comparison of indicated molecules expressed by the three subsets of cDC1s and cDC2s. Negative controls are either fluorescence-minus-one (FMO) or single stain of another molecule. Data shown are from a representative PBS-treated mouse. (B) NK-cell transfer affects the activation of lung cDCs. The proportion of the three cDC subsets in cDC1s and cDC2s are shown. The expression of the indicated APC function molecules was analyzed as relative MFI, based on normalization against the mean MFI of the PBS group in each independent experiment. Data are compiled from two independent experiments and presented as mean ± SEM. Each symbol represents one mouse. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p≤0.05, **p≤0.01, ***p≤0.001.
 
 Next, we examined T cells in the lung tissue. Transfer of WT NK cells increased the proportion of Foxp3-CD4+ and CD8+ T cells without altering that of Foxp3+CD4+ T cells (Figure 5A, Figure 5—figure supplement 1A). The proportion of activated Foxp3-CD4+ T cells, including effector (CD62L-CD44+), PD-1+ and Ki67+ subsets, also increased (Figure 5B, Figure 5—figure supplement 1A). These effects were not observed for mice that received Ifng-/- NK cells (Figure 5B). CD8+ T cells in a tumor microenvironment (TME) are known to display a complex composition comprising subsets of different activation/differentiation statuses. We categorized lung tissue CD8+ T cells according to PD-1 and Lag3 expression (Figure 5—figure supplement 1A), because PD-1 expression is induced by TCR stimulation (Sharpe and Pauken, 2018) and Lag3 is only expressed by exhausted or progenitor-exhausted (PEX) CD8+ T cells (Calagua et al., 2021; Yang et al., 2017a). We reasoned that PD-1-Lag3- CD8+ T cells (Figure 5—figure supplement 1A) are either naïve or at a very early stage of activation, and found that transfer of Il10-/-, but not WT, NK cells increased the proportion of CD62L+CD44+ and CD62L-CD44+ subsets, while the proportion of CD62L-CD44+ and Ki67+ subsets were lower in mice that received Ifng-/- NK cells compared to those in mice that received WT NK cells (Figure 5C). These results indicate that IL-10 of transferred NK cells inhibits activation of naive CD8+ T cells, whereas IFN-γ of transferred NK cells promotes their effector differentiation and proliferation. We further examined stem cell-like (SCL) CD8+ T cells that are Tim3- in PD-1loLag3- CD8+ cells (Figure 5—figure supplement 1A; Castiglioni et al., 2023), and detected an increase of total and Ki67+ SCL CD8+ T cells in mice that received WT or Il10-/-, but not Ifng-/-, NK cells (Figure 5D). Transfer of Il10-/- NK cells resulted in a higher level of SCL CD8+ T cells than when WT NK cells were transferred (Figure 5D). In contrast, NK cell transfer did not alter the proportion of exhausted or PEX CD8+ T cells (Figure 5D, Figure 5—figure supplement 1A). The expression of PD-1, Lag3, Tim3, CD44, CD62L, Ly108 and GrzB by SCL, exhausted, and PEX CD8+ T cells in our analysis is consistent with the known characteristics of these cell populations (Figure 5—figure supplement 1B; Andreatta et al., 2021; Castiglioni et al., 2023; Martinez-Usatorre et al., 2020). Thus, overall, transfer of the IL-15/IL-12-conditioned syngeneic NK cells augmented the activation of cDC1s and cDC2s, as well as the levels and activation of Foxp3-CD4+ T cells, naïve CD8+ T cells and SCL CD8+ T cells in metastatic lungs. Moreover, IFN-γ of the transferred NK cells significantly contributes to these effects.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig5-v1.jpg)
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative flow plots show the gating of CD4+ and CD8+ T cell subsets. (B) Histograms show the expression of indicated molecules that mark the four CD8+ T cell subsets from a representative NK-cell-treated mouse. The negative controls are either FMO or single stain of a different molecule.
 
 The experimental design is the same as Figure 4. The proportion of T cell subsets in CD45+ cells in lung tissue were analyzed (Figure 5—figure supplement 1). (A) Foxp3+CD4+, Foxp3-CD4+ and CD8+ T cells. (B) Foxp3-CD4+ T cell subsets. (C) PD1-Lag3-CD8+ subsets. (D) Total and KI67+ SCL, exhausted, and PEX CD8+ T cells. Data are compiled from two independent experiments and are presented as mean ± SEM. Each symbol represents one mouse. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p≤0.05, **p≤0.01, ***p≤0.001.
 
 It is known that CCR7 mediates migration of cDC from tumor to its draining LN (dLN; Riol-Blanco et al., 2005), in which the migratory cDCs prime tumor-specific naive T cells (Mempel et al., 2004). As transfer of WT NK cells increased the levels of CCR7+LAPM3+MHC-IIhi cDC1s and cDC2 in metastatic lungs (Figure 4), we hypothesized that NK cell transfer augments migration of lung cDCs to mLN and activation of T cells. We analyzed migratory and resident cDCs in mLN (Figure 6—figure supplement 1), and found that >90% of migratory cDC1s and >65% of migratory cDC2s express CCR7 and LAMP3 (Figure 6A), a phenotype similar to lung CCR7+LAMP3+MHC-IIhi cDC1 and cDC2. On the other hand, the great majority of resident cDC1s and cDC2s in mLN are CCR7-LAMP3- (Figure 6A). Transfer of WT NK cells increased the proportion of migratory cDC1 in cDCs and the level of CD86 expression by both migratory cDC1s and cDC2s, which required IFN-γ of the transferred NK cells (Figure 6B). We also examined T cells in mLN and found that NK cell transfer affected neither the proportion nor the activation marked by CD44+ or KI67+ of Foxp3-CD4+ and CD8+ T cells (data not show). Collectively, NK cell transfer increased the level of migratory cDC1 and CD86 expression by migratory cDC1s and cDC2s, but did not affect T cell activation in mLN.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig6-v1.jpg)
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig6-figsupp1-v1.jpg)
+
 The experimental design is the same as Figure 4. (A) The expression of CCR7 and LAMP3 by migratory and resident cDC1s and cDC2s. (B) NK cell transfer affected migratory cDC subsets. The proportion of migratory cDC1s and cDC2s in cDC are shown. The expression of the indicated APC function molecules was analyzed as relative MFI, based on normalization against the mean MFI of the PBS group in each independent experiment. Data are compiled from two independent experiments and presented as mean ± SEM. Each symbol represents one mouse. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p≤0.05, **p≤0.01, ***p≤0.001.
 
 Representative flow plots show the gating of migratory and resident cDCs in mLN.
 
-## Clinical trial of autologous NK cell therapy on advanced cancer patients
+### Clinical trial of autologous NK cell therapy on advanced cancer patients
 
 To assess NK cell therapy in human, we expanded human NK cells from TCRβ-CD19- PBMCs. The expanded NK cells are identifiable as CD3-CD19-CD14-CD56+EOMES+, with ~90% of the cells expressing HLA-DR (Figure 7A). Co-culture of the expanded HLA-DR+ NK cells with K562, THP-1 or U937 tumor cells resulted in dose-dependent tumor cell death (Figure 7B) and increased IFN-γ production by the NK cells (Figure 7C). We then conducted an investigator-initiated clinical trial of autologous NK cell therapy in six pre-treated advanced cancer patients enrolled between May 2016 and October 2019. Baseline characteristics of these patients are presented in Table 1. The patients had an ECOG performance status of 0, a predicted survival of >3 months, and a relatively small target lesion size (6.4–22.7 mm), suggesting relatively low tumor burden. The patients in cohort 1 and cohort 2 received six bi-weekly infusions of 20×106 or 30×106 autologous HLA-DR+ NK cells, respectively. The infused cells were total cells expanded from TCRβ-CD19- PBMCs, of which median 92.4% (83.2–94.9%) were HLA-DR+ NK cells (Figure 8A, Figure 8—figure supplement 1). The composition of the infused cells differed slightly among patients, but was stable for each patient over the six infusions (Figure 8A). We examined the expression of NKRs, CD16 and CXCR3 on the HLA-DR+ NK cells and determined that it was stable for each patient over six batches of cell preparations, apart from some variation in NKp44 for patient 5 and CXCR3 for patient 4 (Figure 8B, Figure 8—figure supplement 2). Moreover, the HLA-DR+ NK cells expressed the anti-tumor effectors perforin and IFN-γ (Figure 8C, Figure 8—figure supplement 3). All patients completed the course of six infusions. The therapy proved safe and was well-tolerated by all patients, as no treatment-related adverse effect was observed throughout the entire infusion period up to 24 hr after the final infusion. We assessed the preliminary impact of this therapeutic approach based on clinical responses and OS, and present the results with a median follow-up of 60.0 months (2.73–60.0). The response and survival timings were counted from the first infusion of NK cells (Figure 8D). We adopted RECIST 1.1 to evaluate responses, except that the baseline target lesions for patients 3, 4, and 5 (Table 1) were 18%, 36% and 31% smaller than measurable lesions according to RECIST 1.1. All patients were in a stable disease (SD) state at month 1 (i.e. 1 week after the second infusion), and completed six infusions by month 2.3. Patients 1, 3 and 6 only received NK cell therapy, whereas patients 2, 4, and 5 received additional treatment(s) as indicated. Patient 1 exhibited progressive disease (PD) at month 2.7 and left the trial. Patient 2 displayed SD for 8.2 months, during which a partial response (PR) was detected at month 4.4. She then received maintenance metronomic Endoxan starting from month 8.4, and displayed SD or PR for a further 50 months. Patient 3 displayed SD for 52.7 months. Patient 4 exhibited an SD state for 13 months, received Tarceva during months 14.9–18.6, suffered PD at month 18.6 that prompted receipt of other treatments, and ultimately left the trial at month 31.5. Patient 5 presented SD for 9.9 months, and received metronomic Endoxan during months 7.7–13.5, 28.9–33.0, and 43.6–46.1. She underwent ultrasound imaging during months 17.6–54.2 and the results support a continuing SD state. Patient 6 retained an SD state for 36.3 months, and subsequent ultrasound imaging in month 44.5 supports a continuing SD state. In summary, among the four patients with metastatic solid tumors, patients 1 and 4 exhibited PD at month 2.7 and 18.6, respectively, leaving the trial at months 2.7 and 31.5, respectively. In contrast, patients 3 and 6, who only received NK cell therapy, exhibited a SD state and both survived for 60 months. The two follicular lymphoma patients (patients 2 and 5) who started maintenance Endoxan therapy ~6 months after undergoing the NK-cell therapy have exhibited a SD state and both survived for 60 months. These preliminary results suggest some level of effectiveness for the autologous NK cell therapy, supporting the efficacy of our pre-clinical mouse model.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig7-v1.jpg)
 
-**Figure 7.:** (A) Analysis of expanded human NK cells. Live cells among total cells obtained from human PBMC culture (as described in Methods) were analyzed for the expression of indicated molecules by FACS. Representative plots of 33 healthy donors are shown. (B) Expanded human NK cells kill tumor cells in vitro. Sorted HLA-DR+ NK cells from two healthy donors were co-cultured with CFSE-labeled tumor cells at the indicated E:T ratio. Percentage of dead tumor cells represents the mean ± SEM of PI+ cells among CFSE+ tumor cells from triplicate wells. (C) Expanded human NK cells up-regulate IFN-γ production in response to tumor cells in vitro. Sorted HLA-DR+ NK cells from two healthy donors were co-cultured with tumor cells at a 1:1 ratio for 5 hr. Levels of IFN-γ in NK cells were examined by intracellular staining and are calculated as the ∆MFI ± SEM between specific antibody-stained and isotype control antibody-stained samples. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p<0.05, **p<0.01, ***p<0.001 relative to NK cells only.Figure 7—source data 1.
+**Figure 7.:** (A) Analysis of expanded human NK cells. Live cells among total cells obtained from human PBMC culture (as described in Methods) were analyzed for the expression of indicated molecules by FACS. Representative plots of 33 healthy donors are shown. (B) Expanded human NK cells kill tumor cells in vitro. Sorted HLA-DR+ NK cells from two healthy donors were co-cultured with CFSE-labeled tumor cells at the indicated E:T ratio. Percentage of dead tumor cells represents the mean ± SEM of PI+ cells among CFSE+ tumor cells from triplicate wells. (C) Expanded human NK cells up-regulate IFN-γ production in response to tumor cells in vitro. Sorted HLA-DR+ NK cells from two healthy donors were co-cultured with tumor cells at a 1:1 ratio for 5 hr. Levels of IFN-γ in NK cells were examined by intracellular staining and are calculated as the ∆MFI ± SEM between specific antibody-stained and isotype control antibody-stained samples. Statistical significance was determined by unpaired two-tailed Student’s t-test: *p<0.05, **p<0.01, ***p<0.001 relative to NK cells only.
+
+**Table 1.**
+ Baseline characteristics of the patients enrolled in the phase I trial.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th colspan="3">Cohort 1</th>
+      <th colspan="3">Cohort 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>63</td>
+      <td>42</td>
+      <td>59</td>
+      <td>66</td>
+      <td>54</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Male</td>
+      <td>Female</td>
+      <td>Female</td>
+      <td>Female</td>
+      <td>Female</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Primary cancer</td>
+      <td>Colon</td>
+      <td>Follicular lymphoma</td>
+      <td>Lung</td>
+      <td>Lung</td>
+      <td>Follicular lymphoma</td>
+      <td>Bladder</td>
+    </tr>
+    <tr>
+      <td>Metastasis</td>
+      <td>Adrenal LungPelvis</td>
+      <td></td>
+      <td>Lung</td>
+      <td>Brain</td>
+      <td></td>
+      <td>Bone</td>
+    </tr>
+    <tr>
+      <td>Previous therapies for cancer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Surgery</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Radiotherapy</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Lines of chemo- or targeted therapy</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Keytruda*</td>
+    </tr>
+    <tr>
+      <td>ECOG performance status</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Target lesion (mm)</td>
+      <td>Pelvic LN (16.3)</td>
+      <td>Left inguinal LN (18.4)</td>
+      <td>Mediastinal LN (12.3)</td>
+      <td>Lung left upper lobe (6.4)</td>
+      <td>Left axillary LN (10.4)</td>
+      <td>Pelvic LN (22.7)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Ended 7 months before NK cell therapy._
+
+![Figure 8.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig8-v1.jpg)
+
+**Figure 8.:** (A) Composition of the infused cells for each patient over six batches of cell preparation. Expression of (B) NKRs, CD16 and CXCR3 and (C) perforin and IFN-γ by the expanded HLA-DR+ NK cells over six batches of cell preparation. Each dot represents a batch of cell preparation. (D) Clinical responses and survival of the six patients. The blue and yellow blocks represent the durations of NK cell treatment and subsequent follow-up, respectively. The response of patients (SD, PD, or PR) was evaluated by CT imaging according to RECIST 1.1. Sono symbol marks follow-up using ultrasound imaging. Colored dotted lines indicate the timeframes for additional medications.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig8-figsupp1-v1.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig8-figsupp2-v1.jpg)
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/99010/elife-99010-fig8-figsupp3-v1.jpg)
 
 Flow plots representative of the six batches of cell preparation for each patient are shown.
 
@@ -114,50 +268,50 @@ In summary, our results indicate that syngeneic IL-15/IL-12-conditioned NK cell 
 
 ## Materials and methods
 
-## Mice and cell lines
+### Mice and cell lines
 
 Female C57BL/6JNarl mice (National Laboratory Animal Center of Taiwan, Taipei, Taiwan), eGFP transgenic C57BL/6JNarl mice (a gift from Chin-Yen Tsai at Academia Sinica (AS)), Ifng-/- mice (strain # 002287, The Jackson Laboratory, Bar Harbor, ME, USA) and Il10-/- mice (Strain # 002251, The Jackson Laboratory) were housed in a specific pathogen-free animal facility at the Institute of Molecular Biology. Mice aged 8–12 weeks old were used for experiments, unless stated otherwise. All animal protocols were approved by the IACUC of AS (Protocol number 11-09-221). EO771 (CH3 Biosystems), K562 (a gift from Che-Kun James Shen at AS), THP-1 and U937 (gifts from Li-Chung Hsu at National Taiwan University) cells were cultured in RPMI-1640 (Gibco, Grand Island, NY, USA) containing 10% FBS (Hyclone, Marlborough, MA, USA), 20 mM HEPES (Sigma-Aldrich, St. Louis, MO, USA), 100 U/ml penicillin and 100 μg/ml streptomycin (Gibco). B16F10 melanoma (a gift from Steve Roffler at AS) was cultured in DMEM (Gibco) containing 10% FBS and 100 U/ml penicillin and 100 μg/ml streptomycin.
 
-## Flow cytometry
+### Flow cytometry
 
 To stain cell surface molecules, cells were incubated with fluorophore-conjugated antibodies for 15 min at 4 °C and washed twice with staining buffer (PBS containing 2% FBS, 5 mM EDTA and 0.01% NaN3). For staining of intracellular molecules, cells were fixed for 30 min at 4 °C after surface staining with 4% paraformaldehyde, or with a Foxp3/Transcription Factor Fixation/Permeabilization Concentrate and Diluent kit (Thermo Fisher Scientific, Waltham, MA, USA) to stain transcription factors. The fixed cells were then washed with staining buffer, permeabilized with 0.1% saponin, and stained with antibody for 30 min at 4 °C. Cells were analyzed by LSRII, FACSymphony A3 or FACSCalibur (BD Biosciences, Franklin Lakes, NJ, USA) and the data were analyzed using FlowJo (BD Biosciences). The antibodies used are detailed in the supplementary materials.
 
-## Ex vivo expansion of murine and human NK cells
+### Ex vivo expansion of murine and human NK cells
 
 Murine BM cells were depleted of RBCs by means of ammonium-chloride-potassium (ACK) buffer (150 mM NH4Cl, 10 mM NaHCO3, 1 mM EDTA) and then cultured in RPMI-1640 containing 10% FBS (Corning, Corning, NY, USA), 20 mM HEPES (Sigma-Aldrich), 200 U/ml penicillin, 200 μg/ml streptomycin (Gibco), 50 μg/ml gentamycin (Sigma-Aldrich), 0.2 mg/ml L-glutamine (Sigma-Aldrich), and 50 μM 2-mercaptoethanol (Merck, Rahway, NJ, USA) in a 5% CO2 incubator at 37 °C for 7 days with 30 ng/ml IL-15 (BioLegend, San Diego, CA, USA) and 10 ng/ml IL-12 (Peprotech, Cranbury, NJ, USA). The expanded murine NK cells (CD19-TCRβ-NK1.1+CD11c+B220+) were sorted using SORP (BD Biosciences). We used BM cells instead of splenocytes for NK cell culture because removal of T cells from BM cells before culturing is not necessary. Human NK cells were expanded from peripheral blood mononuclear cells (PBMCs) after depleting TCRβ+ and CD19+ cells with anti-TCRβ (WT31, BD Biosciences) and anti-CD19 (4G7, BD Biosciences) antibodies, and anti-mouse IgG1 microbeads (Miltenyi Biotec, Bergisch Gladbach, Germany) using an LD column with a QuadroMACS Separator (Miltenyi Biotec) under good tissue practice (GTP) conditions. The resulting TCRβ-CD19- PBMCs were cultured in RPMI-1640 containing autologous plasma, 20 mM HEPES (Sigma-Aldrich), 2 mM L-glutamine (Cellgro, Lincoln, NE, USA), and 50 µg/ml gentamycin (Winston Medical Supply Co. Ltd.) in a 5% CO2 incubator at 37 °C for 7 days with 25 ng/ml IL-15 (CellGenix, Freiburg, Germany) and 10 ng/ml IL-12 (BioLegend; Lee and Liao, 2015).
 
-## In vitro anti-tumor activity of expanded NK cells
+### In vitro anti-tumor activity of expanded NK cells
 
 Tumor cells were labeled using a Vybrant CFDA SE (CFSE) cell tracer kit (Invitrogen, Waltham, MA, USA). For cytotoxicity assay, sorted NK cells were co-cultured with 105 labeled tumor cells at the indicated ratio and then incubated for 5 hr in a 5% CO2 incubator at 37 °C. The cells were then stained with propidium iodide (PI) and the CFSE+ tumor cells were analyzed for PI- cells using a LSRII system. For IFN-γ production, sorted NK cells were co-cultured with CFSE-labeled tumor cells at a 1-to-1 ratio, with 10 μg/ml brefeldin A being present for the last 4 hr of the co-culture. Cells were then stained intracellularly with anti-IFN-γ or isotype control antibody to detect IFN-γ production by CFSE- NK cells using a LSRII system.
 
-## Trafficking of ex vivo-expanded murine NK cells
+### Trafficking of ex vivo-expanded murine NK cells
 
 NK cells expanded from the BM cells of eGFP transgenic mice were sorted and intravenously transferred into C57BL/6JNarl mice (6 million cells/mouse) 3 days after resection of a day-21 tumor. Single-cell suspensions were prepared from the lung and spleen at the indicated hours after NK cell transfer and analyzed for eGFP+ donor cells using a LSRII system.
 
-## Gene expression
+### Gene expression
 
 Lung RNA was extracted using Trizol (Invitrogen) and reverse-transcribed into cDNA using a Reverse Transcription Kit (SMOBIO, Paramount, California, USA). Relative gene expression was determined using a QuantStudio 12 K Flex Real-Time PCR system (Thermo Fisher Scientific) with SYBR Green and relative standard curves normalized against expression of cyclophilin a (Cypa). The sequences of primers used are detailed in the supplementary materials.
 
-## EO771 resection and metastasis model and NK cell treatment
+### EO771 resection and metastasis model and NK cell treatment
 
 Each mouse was inoculated with 0.3 million EO771 cells into the right fourth mammary fat pad on day 0. Twenty-one days later, mice were anesthetized and the resulting tumor and sentinel LN (right inguinal LN) were resected. Sham control mice received the same surgical procedure without removing any tissue. Mice harboring a day-21 tumor weight of <95 mg were excluded since resection alone promoted long-term survival of mice with such tumors. Mice were grouped to have a similar mean and standard deviation of day-21 tumor weight. Each mouse then received 0.3 million expanded NK cells or PBS (Control) via the tail vein three times on days 24, 28, and 31, or once on day 24 as indicated. The resulting metastatic foci on lung surfaces were visualized by staining the dissected lung with India ink under a dissecting microscope. The area of metastatic foci was determined using ImageJ (NIH). For T cell depletion, mice were administered intraperitoneally with 200 μg of anti-CD4 (GK1.5, BioXcell, Lebanon, NH, USA), anti-CD8α (2.43, BioXcell), or both antibodies 19 days after EO771 inoculation, whereas control mice each received 400 μg of isotype control antibody (Rat IgG2b, κ; BioXcell). The mice underwent tumor resection 2 days later, before receiving NK cells as described in the previous section.
 
-## Isolation of murine T cells and non-T cells
+### Isolation of murine T cells and non-T cells
 
 Single cell suspensions were prepared from the BM, spleen, and LNs of NK cell-treated and tumor-rechallenged long-term survivors and from the same tissues of age-matched naïve mice. After lysis of RBCs with ACK buffer, T cells and non-T cells were isolated using Pan T cell isolation Kit II (Miltenyi Biotec) via an autoMACS Pro Separator (Miltenyi Biotec) according to the manufacturer’s instructions. The T cell preparations comprised 88–93% of CD3+ cells, and the non-T cell preparations comprised 90–96% of CD3- cells.
 
-## Preparation of lung cell suspension
+### Preparation of lung cell suspension
 
 Each mouse received an intravenous injection of 3 μg of FITC-anti-CD45 antibody three minutes before euthanasia to label blood CD45+ cells. Lungs were harvested, minced and washed with PBS to remove excess anti-CD45 antibody. The tissue pieces were digested with 0.2 μg/ml of collagenase IV in HBSS (Sigma H1641) containing 2% FBS and 10 mM HEPES for 30 min at 37 °C with shaking at 200 rpm. RBCs in the lung cell suspension were lysed using ACK lysis buffer.
 
-## Clinical trial design
+### Clinical trial design
 
 We conducted an investigator-driven, open-label, 3+3 design trial to investigate the safety of the autologous NK cell therapy on metastatic/refractory stage IV cancer patients at a single center (ClinicalTrials.gov Identifier: NCT02661685). All six patients were ineligible for or refused further systemic chemotherapy or immunotherapy, and had an Eastern Cooperative Oncology Group (ECOG) performance status of 0, a target lesion, and adequate organ function at the time of enrollment. The three patients in cohort 1 received six bi-weekly intravenous infusions of 20×106 expanded autologous HLA-DR+ NK cells, whereas the three patients in cohort 2 were administered with 30×106 of the same cells. All patients underwent a computerized tomography (CT) scan between the second and the third NK cell infusions, and then five further CT scans at 8 week intervals starting one week after the sixth infusion. Thereafter, CT or sonography scans were performed as indicated. Safety was evaluated by assessing dose-limiting toxicity (DLT), defined as any treatment-related toxicity of grade 3 or above of general or immune disorders according to the National Cancer Institute-Common Terminology Criteria for Adverse Events (NCI-CTCAE) v4.03. Fever, chills, flu-like symptoms, or infusion-related reactions of grade 3 or above were considered DLT only if they remained at grade 3 or above for more than 3 days despite appropriate medication. Clinical responses to the therapy were evaluated by CT scans according to Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST 1.1). Patient survival was followed every 8 weeks for the first year and every 12 weeks from the second to the fifth year.
 
-## Trial oversight
+### Trial oversight
 
 The protocols for our clinical trial and follow-up were approved by the Institutional Review Boards (IRBs) at Tri-Service General Hospital and at AS, and were conducted according to the principles of the Declaration of Helsinki. Written informed consent was obtained from all patients.
 
-## Statistical analysis
+### Statistical analysis
 
 Results are presented as mean ± SEM. Statistical significance of in vitro cytotoxicity was examined by unpaired two-tailed Student’s t-test. Correlation was determined by Pearson correlation coefficient. The Kaplan-Meier estimator was employed for survival analysis, and statistical significance was determined by a Log-Rank test. Tumor volume was calculated using the formula: length x width2 x0.52. Mice with a tumor volume exceeding 2000 mm3 were considered moribund. All statistical analyses were performed using GraphPad Prism 7 (GraphPad). ns, not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.

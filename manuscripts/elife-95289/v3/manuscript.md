@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/03pvr2g57 Würzburg Institute of Systems Immunology, Julius‐Maximilians‐Universität Würzburg Würzburg Germany
-3. https://ror.org/00jmfr291 Department of Biologic and Materials & Prosthodontics, University of Michigan School of Dentistry Ann Arbor United States
-4. https://ror.org/035xkbk20 Aix Marseille Univ, INSERM, MMG, UMR1251, Turing Center for Living Systems Marseille France
-5. https://ror.org/026zzn846 School of Mathematical Sciences, Queen Mary University of London London United Kingdom
+1. Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Würzburg Institute of Systems Immunology, Julius‐Maximilians‐Universität Würzburg Würzburg Germany ([ROR:03pvr2g57](https://ror.org/03pvr2g57))
+3. Department of Biologic and Materials & Prosthodontics, University of Michigan School of Dentistry Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Aix Marseille Univ, INSERM, MMG, UMR1251, Turing Center for Living Systems Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+5. School of Mathematical Sciences, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
 
 † Corresponding author
 
@@ -40,23 +40,47 @@ In this study, we analyze the 3D architecture of confetti-labeled clones in the 
 
 ## Results
 
-## 3D imaging of cell clones in the embryonic growth plate reveals stacking patterns that do not support column formation
+### 3D imaging of cell clones in the embryonic growth plate reveals stacking patterns that do not support column formation
 
 To date, a comprehensive 3D analysis of column formation in the mouse embryonic growth plate has not been performed. To address this gap, we conducted multicolor clonal lineage tracing on proximal tibia and distal femur growth plates of Col2a1-CreER:R26R-Confetti embryos. Labeled cellular clones were subjected to 3D morphometric analysis using our previously reported 3D MAPs pipeline (Rubin et al., 2021; Figure 1—figure supplement 1). Recombination was induced at E14.5 and 4 days later, chondrocyte clones were observed in all growth plate zones (Figure 1A–C). In 2D optical sections from both femur and tibia, cells within the clones appeared neatly stacked, forming a column-like structure parallel to the P-D bone axis (Figure 1B and C). However, 3D examination revealed no columnar organization and cells that were rarely stacked neatly (Figure 1D and E, Figure 1—figure supplement 2, and Figure 1—videos 1–11).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig1-v3.jpg)
+
+**Figure 1.:** Chondrocyte clones in the proximal tibia and distal femur growth plates of Col2a1-CreERT2:R26R-Confetti heterozygous mice were pulsed by tamoxifen administration at E14.5 and imaged at E18.5. (A–C) An image of chondrocyte clones in the knee was captured with a combination of multiphoton and confocal imaging using a Leica TCS SP8 confocal laser-scanning/MP microscope. Sparse labeling is observed throughout the growth plate. Scale bar: 250 µm. Magnified optical section of distal femur (B) and proximal tibia (C) highlight clones in the proliferative, prehypertrophic and hypertrophic zones, which appear to form columns. Scale bars: 50 µm. (D, E) 3D rendering of representative clones along the D-V and M-L axes from the distal femur (D) and proximal tibia (E) growth plates. Clone surface is in magenta and nuclear surface in blue. Skeletonized illustrations on the right highlight the complexity of clonal morphologies. Nuclear centroids are depicted as randomly colored circles; lines connect between nearest neighbor nuclei. (F) Illustration of various elevation angles between the centroids of two cells. An elevation angle of 0° indicates that the two cells are in the same equatorial plane (XY), whereas an elevation angle of 90° indicates that the cells are directly above the equatorial plane in the same XZ plane (perpendicular to the XY plane). The Z axis represents the P-D bone axis. The equatorial plane XY is perpendicular to the Z axis. The red line is the projection of the cell. (G) Representative images of nuclei at different elevation angles in two orthogonal viewing angles. Solid black lines represent the shortest distance between nuclear centroids. Elevation angle is the angle between the dashed black line and solid black line. (H, I) Stacked histograms show quantification of elevation angles between doublet cells in distal femur (n = 1044) and proximal tibia clones (n = 805). (H) Proportion of complete rotations (i.e., elevation angles of 60–90°, in blue) vs incomplete rotations (under 60°, in red). (I) Distribution of elevation angles (°) is color-coded as indicated. Black line marks the 60° cutoff. Three biologically independent samples were examined in nine independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme highlighting the different stages of the modified 3D MAPs pipeline. (B) For semi-automatic segmentation of clones and nuclei, the raw 3D image is masked in Microscopy Image Browser (MIB) to remove clones and nuclei not belonging to the growth plate. Then, the masked nucleus image undergoes automatic segmentation in XPIWIT to produce a randomly color-coded 3D image, where each color represents a single nucleus. The masked clone image undergoes semi-automatic segmentation in Imaris and Fiji, where each clone is colored according to its Confetti fluorophore (yellow, YFP; red, RFP; cyan, CFP). Scale bars: 100 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Images from raw data of eight embryonic clones from three orthogonal viewing angles, XY, XZ, and YZ. In each image the Y axis represents the P-D bone axis. The expectation of a column is to see a longitudinal stack of cells which appears oriented along the XY, and YZ axis (P-D axis), while the XZ axis should show one or two cells, as it represents a transverse cross section through a presumptive column. Each clone shows that in one viewing angle the clone appears column-like, while other viewing angles shows they expand along the Z axis, suggesting they are cluster-like. Scale bars: 25 µm.
+
 To characterize the stacking behavior of embryonic growth plate cells, we performed quantitative analysis of local cell stacking in distinct clones. For that, we measured the elevation angle between all neighboring pairs of cells (doublets) within a given clone, similar to what was done previously (Carolyn, 2023) (see details in ‘Materials and methods’ and Figure 1F). In a spherical coordinate system, the elevation angle between two perfectly stacked cells at origin 0 would be 90° (Figure 1F), indicating a complete rotation of the division plane during cell division. Visualization of cell doublets representative of various elevation angles employing two orthogonal viewing directions revealed that in 3D, typically stacked column cells are expected to exhibit elevation angles in the range of 60–90° (Figure 1G). Notably, however, quantification of elevation angles revealed that less than 20% of doublets within a clone were typically stacked (distal femur, 17.6%; proximal tibia, 19.4%; Figure 1H and I). These results show that clone cells in the embryonic growth plate do not display the typical stacking behavior associated with a columnar arrangement, as most cells undergo incomplete division plane rotation.
 
-## Columns are rare in the embryonic growth plate
+### Columns are rare in the embryonic growth plate
 
 Our finding that embryonic clones did not exhibit typical cell stacking characteristic of columns raised the question of their contribution to bone elongation. Atypically stacked cells, with elevation angles less than 60°, could still support longitudinal growth if the clones have elongated morphologies along the P-D axis of the growth plate. Thus, to characterize clone morphology, we extracted the long, medium, and short axes and measured the ratios between them (Figure 2A; see ‘Materials and methods’). Ratios close to 1 across all axes would indicate a spherical shape, whereas ratios approaching 0 would reveal a flattened ellipsoidal shape. Results showed that the long axis of the clones was consistently at least twice the length of the short axis. Moreover, in half of the clones the long axes measured at least five times the length of the short axes (distal femur, 58%; proximal tibia, 47%), indicating ellipsoid morphologies (Figure 2C). Further examination showed that in roughly half of the clones, the long axis was at least twice the length of the medium axis (distal femur, 58.4%; proximal tibia, 54.3%; Figure 2B) and the medium axis was at least twice the length of the short axis (distal femur, 58.5%; proximal tibia, 50.4%; Figure 2D). Altogether, these results indicate that embryonic clones are either lentil-shaped oblate ellipsoids or rugby ball-like prolate ellipsoids and, thus, may contribute to bone elongation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig2-v3.jpg)
+
+**Figure 2.:** Clone morphology was extracted by calculating the three orthogonal axes of each clone using principal component analysis (PCA). PC1 (pink arrow). represents the long axis of the clone, PC2 (dashed black arrow) the medium axis, and PC3 (solid black arrow) the short axis. (A) A schematic drawing of the same clone from two orthogonal viewing angles with principal components labeled. (B–D) Histograms of clone PC ratios in E18.5 distal femur (DF) and proximal tibia (PT) growth plates reveal that clonal morphology is either oblate or prolate ellipsoid. In half of the clones, the long axis was at least twice the size of the medium axis (PC2/PC1: DF mean ± SD, 0.464 ± 0.197; PT, 0.469 ± 0.201; B), the long axis was at least five times the size of the short axis (PC3/PC1: DF, 0.201 ± 0.109; PT, 0.226 ± 0.119; C), and the medium axis was at least twice the size of the short axis (PC3/PC2: DF, 0.456 ± 0.189; PT, 0.504 ± 0.182; D). Dashed lines show the mean between samples. (E) Scheme illustrating the threshold between uniclones considered as columns (i.e., angle between long axis of the clone and P-D axis of the bone is 60–90°) or clusters (i.e., angle is below 60°). (F, G) Orientation maps along the P-D and M-L axes and quantification of mean ratio of columns (in blue) vs clusters (in red) per sample for clones in the DF (n = 1044; F) and PT (n = 805; G) growth plates. Each line in the map represents the orientation of the long axis of an individual clone, whereas the length of the line is proportional to that of the clonal long axis (PC1). RZ refers to the middle of the resting zone; HZ refers to the end of the hypertrophic zone. (H) Scheme illustrating the threshold between multiclones considered as columns or clusters. (I, J) Orientation maps and quantification of mean ratio of multiclonal columns vs clusters per sample for the DF (n = 816; I) and PT (n = 619; J) growth plates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Orientation maps of uniclones from E18.5 distal femur (DF) and proximal tibia (PT) growth plates from two orthogonal viewing angles. Each line in the map represents the orientation of the long axis of an individual clone, whereas line length is proportional to that of the clone long axis (PC1). Clones whose long axis is parallel to the P-D bone axis are in dark blue, whereas and represents orthogonal clones are in magenta. Elevation angles (°) are color-coded as indicated. (B) Graph showing distribution of elevation angles between the long axis of uniclones and P-D bone axis. (C) Orientation maps along the P-D and D-V axes of uniclonal columns (in blue) and clusters (in red) in the DF and PT growth plates. Each line represents the long axis of an individual uniclone, with its length proportional to that of the clonal long axis (PC1). RZ refers to the middles of the resting zone. HZ refers to the end of the hypertrophic zone. (D) Quantification of the percentage of uniclonal columns vs clusters per sample in the DF (n = 1,044 clones) and PT (n = 805 clones) growth plates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Orientation maps of multiclones in E18.5 distal femur (DF) and proximal tibia (PT) growth plates from two orthogonal viewing angles. Each line represents the long axis of an individual clone, with its length proportional to that of the clone long axis (PC1). Multiclones whose long axis is parallel to the P-D bone axis are in dark blue, whereas orthogonal multiclones are in magenta. Elevation angles (°) are color-coded as indicated. (B) Distribution of elevation angles between multiclone long axis and P-D bone axis. (C) Orientation maps along the P-D and D-V axes of multiclonal columns and clusters in the DF and PT growth plates. Each line represents the long axis of an individual multiclone, with its length proportional to that of the clone long axis (PC1). Multiclonal columns (i.e., angle between clonal long axis and P-D bone axis is 60–90°) are in blue, whereas multiclonal clusters (i.e. angle below 60°) are in red. RZ refers to the middles of the resting zone. HZ refers to the end of the hypertrophic zone. (D) Quantification of the percentage of multiclonal columns vs clusters per sample in DF (n = 816 clones) and PT (n = 619 clones) growth plates.
+
 Next, we sought to determine whether the elongated embryonic clones are aligned with the P-D bone axis. Previous studies suggested that in a 2D Cartesian coordinate system, single columns orient their long axis within 12° of the P-D bone axis, whereas multicolumns, that is, those composed of multiple cell stacks, orient within 20° (Li et al., 2017). In a 3D spherical coordinate system, these values correspond to elevation angles of 78° and 70°, respectively. We therefore set a more permissive threshold of 60° elevation to determine whether or not a clone qualifies as a column (Figure 2E). Measurements of the angle between the long axis of the clone and the P-D bone axis (see ‘Materials and methods’) revealed that nearly all clones in the proximal tibia (mean, 95.4%) and the distal femur (mean, 97.3%) oriented perpendicular to the P-D axis (Figure 2F and G, Figure 2—figure supplement 1B–D). On average, only 4.6% of clones in the proximal tibia and 2.7% in the distal femur displayed a column-like orientation. (Figure 2F and G, Figure 2—figure supplement 1C). Together, these results show that while embryonic clones have elongated morphologies, they do not support longitudinal growth.
 
-## Multiclonal columns are rare in the growth plate
+### Multiclonal columns are rare in the growth plate
 
 Previous studies have shown that embryonic columns may be formed by merging of multiple clones (Li et al., 2017; Newton et al., 2019). This opens the possibility that in the embryo columns are multiclonal. To examine this possibility, we allowed neighboring clones to join (see ‘Materials and methods’) and then performed orientation analysis, measuring the angle between the long axis of the multiclone with the P-D bone axis as before (Figure 2H). As depicted in Figure 2 and Figure 2—figure supplement 2, nearly all multiclones in the proximal tibia (mean, 94.6%) and distal femur (mean, 96.8%) were oriented perpendicular to the P-D axis (Figure 2I and J, Figure 2—figure supplement 2A–D). On average, only 5.37% of multiclones in the proximal tibia and 3.12% in the distal femur were aligned parallel to the P-D bone axis, thereby satisfying the global orientation criterion for a column (Figure 2I and J). Together, these results show that embryonically multiclonal columns are rare.
 
-## 3D imaging of postnatal growth plate clones reveals diverse complex morphologies
+### 3D imaging of postnatal growth plate clones reveals diverse complex morphologies
 
 Having found that embryonic clones do not meet the criteria for columns, we proceeded to analyze the 3D clonal structure in postnatal growth plates. For that, we used the same pipeline (Rubin et al., 2021) to analyze proximal tibia and distal femur growth plates from clonally labeled Col2a1-CreER:R26R-Confetti mice (Figure 1—figure supplement 1A) at P40, 10 days after Cre induction. 2D optical sections showed small clones in the RZ directly beneath the secondary ossification center, alongside longitudinal clones that spanned most of the growth plate height (Figure 3A–C). However, 3D rendering of confetti clones coupled with maps, generated by using multiple viewing angles, highlighted the diversity and complexity of these clones (Figure 3D and E). Whereas the small clones expanded along the D-V and M-L axes (Figure 3D), the longitudinal axis of most large clones visually aligned with the P-D bone axis. Surprisingly, however, nearly all the large clones, which contained 15–100 cells, had a complex morphology that was apparent from a particular viewing angle. Additionally, each large clone displayed motifs along its length, where cells appeared to stack typically before branching off into a horizontal expansion.
 
@@ -64,25 +88,57 @@ Having found that embryonic clones do not meet the criteria for columns, we proc
 
 **Figure 3.:** 3D morphology of chondrocyte clones was analyzed in the proximal tibia (PT) and distal femur (DF) growth plates of Col2a1-CreERT2:R26R-Confetti mice. Cells were pulsed by tamoxifen administration at P30 and traced until P40. (A) An image of chondrocyte clones in a P40 mouse knee was captured with a combination of multiphoton and confocal imaging using a Leica TCS SP8 confocal laser-scanning/MP microscope. Sparse labeling is observed throughout the growth plate. Scale bar: 1 mm. (B, C) Magnified optical sections of DF and PT clones reveal complex clones that appear to form columns. Scale bars: 50 µm. (D, E) 3D rendering of representative clones along the D-V and M-L axes of the DF and PT growth plates. Clone surface is in magenta and nuclear surfaces in blue. Skeletonized illustrations on the right highlight the complexity of each clone. Nuclear centroids are depicted as a randomly colored circle; lines represent connections with nearest neighbor nuclei. (F, G) Stacked histograms show quantification of elevation angles between cell doublets in clones. (F) Ratio between good rotations (El, 60–90° in blue) and incomplete rotations (El, 0–60°, in red). (G) Distribution of elevation angles (°), color-coded as indicated. Black line marks the 60° cutoff. DF, 1866 clones; PT, 1666 clones. RZ, resting zone; HZ, hypertrophic zone; El, elevation angle.
 
-## Postnatal clones lack stereotypical cell stacking
+### Postnatal clones lack stereotypical cell stacking
 
 Next, to determine whether postnatal clones form columns, we examined the two criteria for columns, namely local cell stacking and global orientation parallel to the P-D axis. To determine the degree of local cell stacking in the postnatal clones, we analyzed the elevation angle between all pairs of cells within a clone (Figure 3F and G). Results showed that less than 30% of doublets were typically stacked with elevation angles greater than 60° (distal femur, 25%; proximal tibia, 23.2%; Figure 3F). In addition, more than half of the doublets oriented orthogonally to the P-D axis (Figure 3G). These results are surprising given the observed elongated morphologies of clones. Moreover, perfect rotations, characterized by elevation angles between 80–90°, were rare (5.8% in the DF and 5.6% in the PT; Figure 3G).
 
-## Complex longitudinal clones function as columns in the postnatal growth plate
+### Complex longitudinal clones function as columns in the postnatal growth plate
 
 Next, we studied the global orientation of postnatal clones by measuring the angle between the long clone axis and the P-D bone axis (Figure 4, Figure 4—figure supplement 1A and B). Results revealed the presence of clones with two different morphologies, that is, columns that aligned to the P-D bone axis (PT: 30.5% and DF: 43.9%) and clusters, which oriented orthogonally (PT: 69.4% and DF: 56.1%) (Figure 4C and G, Figure 4—figure supplement 1C). To assess the possible functions of clusters and columns, we analyzed clone size. We found that zone. Three biologically independent samples were examined in nine independent experiments.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig4-v3.jpg)
+
+**Figure 4.:** Orientation maps of clones in P40 growth plates. (A, B) Clone orientation along the P-D and D-V axes of distal femur (DF) growth plates (n = 737 columns, 1129 clusters). Asterisks indicate the same locations in the growth plate. Each line represents the long axis of an individual clone, with its length proportional to that of the clone long axis. Columns are shown in blue and clusters in red. (C) Quantification of mean ratio of columns vs clusters in the DF growth plates. (D) Frequency of clone size per column (blue) vs cluster (red). (E, F) Clone orientation in the proximal tibia (PT) growth plates (n = 512 columns, 1154 clusters). (G, H) Mean ratio of columns vs clusters and frequency of clone size in PT growth plates. RZ, resting zone; HZ, hypertrophic zone. Three biologically independent samples were examined in nine independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Orientation maps along the P-D and D-V axes of single clones from distal femur (DF) (n = 1866) and proximal tibia (PT) (n = 1666) growth plates at P40. Each line represents the long axis of an individual clone, with its length proportional to that of the clone long axis. Clones that are parallel to the P-D axis are in dark blue, whereas orthogonal clones are in magenta. Elevation angles (°) are color-coded as indicated. (B) Distribution of elevation angles between the clone long axis and P-D bone axis. (C) Quantification of the percentage of columns vs clusters per sample in DF and PT growth plates.
+
 Columns varied in size, ranging from 2 to over 100 cells, many of which traversing the entire length of the growth plate (Figure 4D and H). By contrast, most clusters were composed of 2–10 cells and were located directly beneath the secondary ossification center in the RZ and at the very end of the HZ (Figure 4A, B, E and F, Figure 4—figure supplement 1A). While large columns likely contribute to longitudinal bone growth, the function of small clusters is unclear.
 
-## A column can tolerate 60% incomplete rotations
+### A column can tolerate 60% incomplete rotations
 
 The main mechanism driving column formation is the rotation of the division plane between sister cells during oriented cell division (Li et al., 2017; Romereim et al., 2014; Yuan et al., 2023). Our findings of two distinct morphologies of postnatal clones and non-stereotypic stacking patterns in embryonic growth plate clones raised the question of the rotational threshold that is required to maintain a columnar structure. To determine the rotation between pairs of cells, we assumed that the final orientation is dictated by the division plane rotation (Li et al., 2017; Romereim et al., 2014; Yuan et al., 2023). Thus, a 90° division plane rotation would result in an elevation angle of 90°, whereas 0° would indicate no rotation (see ‘Materials and methods’). As before, we classified elevation angles exceeding 60° as complete rotations, signifying a typically stacked cell doublet oriented along the P-D axis in at least two orthogonal viewing angles (Figure 1G). Analysis of hundreds of columns (distal femur, n = 737; proximal tibia, n = 512) revealed that rotations are complete nearly 40% of the divisions (distal femur, 39.5%; proximal tibia, 36.4%) (Figure 5A and C). Perfect rotations (80–90°) occurred in less than 10% of the cases (distal femur, 9.6%; proximal tibia, 8.2%) (Figure 5B and D). By contrast, clusters exhibited only 15.5% complete rotations in the distal femur and 17.3% in the proximal tibia, with perfect rotations observed in 1.9 and 3% of divisions, respectively.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) Stacked histograms show the proportion of doublet cells exhibiting complete rotations (i.e., elevation angle [El] of 60–90°, in blue) vs incomplete rotations (El under 60°, in red; A) and distribution of elevation angles in columns vs clusters (B) in P40 distal femur (DF) growth plates (n = 737 columns, 1129 clusters). (C, D) Same analysis in proximal tibia (PT) growth plates (n = 512 columns, 1154 clusters). Elevation angles (°) are color-coded as indicated. but also that bone expansion decreases at a faster rate than bone elongation, resulting in a decrease in the expansion vs elongation (E:E) ratio from embryonic to postnatal stages (Figure 6B and C, Figure 6—figure supplement 1B). Moreover, E:E growth ratio could be associated with the presence of clusters and columns in the growth plates. For example, in the embryonic growth plate, where columns are rare and clusters abundant, the E:E growth ratio was 0.18 in the DF and 0.16 in the PT. By P40, when columns become abundant and clusters are restricted to periphery, E:E ratio dropped to 0 in the DF and 0.04 in the PT. These trends were observed in all the growth plates analyzed. Notably, in some growth plates, such as the proximal fibula and distal tibia, E:E ratios decreased non-monotonically (Figure 6C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Quantification of elevation angles in cell doublets from P40 distal femur (DF) growth plates (n = 737 columns, 1129 clusters). (A, B) Stacked histogram shows the proportion of doublet cells exhibiting good rotations (i.e., elevation angle of 60–90°, in blue) vs incomplete rotations (El under 60°, in red) in columns (A) and clusters (B) as a function of column or cluster size. (C) Distribution of elevation angles between doublet cells as a function of clone size. (D–F) Analysis of cell doublets in P40 proximal tibia (PT) growth plates (n = 512 columns, 1154 clusters). Elevation angles (°) are color-coded as indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Histogram showing the distribution of elevation angles between doublet pairs of cells vs nuclei within a clone is nearly identical. Cells in red. Nuclei in blue. n = 1278 clones. (B) Pearson correlation analysis between cells and nuclei for elevation angle analysis. A Pearson coefficient of 0.79 suggests the nuclei can be used as a proxy for the cells. n = 1278 clones. El: elevation angle.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A, B) Histogram showing the proportion of elevation angles from 0 to 90° of nuclei per column and per cluster as a function of number of nuclei neighbors. (C, D) Histogram showing the proportion of elevation angles from 60 to 90° of nuclei per column and per cluster as a function of number of nuclei neighbors. While examination of the influence of increasing nuclei neighbors on the proportion of elevation angles between 60 and 90° did not show any statistical significance in columns, we found clusters to show statistical significance (p-value<0.05, two-sample t-test) when comparing the mean of lower number of neighbors (Lecuit and Lenne, 2007; Irvine and Wieschaus, 1994; Bailles et al., 2022; Collinet and Lecuit, 2021; Sutherland et al., 2020) with larger numbers of nuclei neighbors (Sutherland et al., 2020; Rubin et al., 2021; Breur et al., 1991; Wilsman et al., 2008; Wilsman et al., 1996) for both the distal femur (DF) and proximal tibia (PT). DF, Meancolumn = 14.5% Meancluster = 28.4%; PT, Meancolumn = 19.5% Meancluster = 29.7%. (E, F) Histogram showing the distribution of mean elevation angle as a function of number of nuclei neighbors. Nuclei within columns in blue. Nuclei within clusters in red. DF column nuclei (n = 4872), DF cluster nuclei (n = 19,121), PT column nuclei (n = 6856), and PT cluster nuclei (n = 18,967). Dashed lines indicate the percentage of the population which falls under nuclei neighbor cutoffs of ≤ 5, ≤10, and ≤20 neighbors, respectively. El: elevation angle.
+
 Lastly, we analyzed the elevation angle as a function of column or cluster size to explore the potential relationship between the two (Figure 5—figure supplement 1). Although we did not observe a relationship between cluster size and incomplete rotations, we found that the proportion of the latter increases with column size. Altogether, these results suggest that column formation is resilient, capable of tolerating 60% incomplete rotations. As incomplete rotations accumulate in a clone with every cell division and, subsequently, cross this tolerance threshold, the structure will expand orthogonal to the P-D axis and form a cluster.
 
-## The ratio between growth plate expansion and elongation decreases as the bone grows
+### The ratio between growth plate expansion and elongation decreases as the bone grows
 
 Our finding that the majority of embryonic clones formed clusters perpendicular to the P-D axis and that columns appeared only in the postnatal growth plate suggests that a multifunctional design (Fröhlich et al., 2019) may allow pre- and postnatal bones to grow differently. Specifically, we hypothesized that while columns support bone elongation, clusters may support bone expansion. This implies that embryonic bones should expand at a higher rate than postnatal bones. To investigate this, we measured the expansion and elongation rates of growth plates from the distal femur, distal and proximal fibula, proximal humerus, distal radius, proximal and distal tibia, and distal ulna at E17.5-E18.5, P14-P16, and P32-P40 (Figure 6). The elongation and expansion rates were calculated using registered bones from a previously published database of micro-CT images (Stern et al., 2015). Briefly, the elongation rate was calculated as the distance from the median Z-coordinate of the chondro-osseous junction (COJ), representing the end of the growth plate, to the longitudinal origin of the bone, as defined in Stern et al., 2015. The expansion rate was calculated as the change in equivalent radius between time points (see ‘Materials and methods’; Figure 6—figure supplement 1). As shown in Figure 6A, isosurface renderings of embryonic and postnatal long bones highlight the diversity in length and morphology of the different bones and their COJs. In agreement with our hypothesis, we found not only that bones from each stage cluster together.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig6-v3.jpg)
+
+**Figure 6.:** (A) Isosurface renderings of embryonic and postnatal long bones with their chondro-osseous junction (COJ) highlighted in red. Distal femur, distal and proximal fibula, proximal humerus, distal radius, proximal and distal tibia, and distal ulna were analyzed. (B) The elongation rate was plotted against the equivalent radius increase rate in micrometers per day for three time windows; E17.5-E18.5 (green), P14-P16 (cyan), and P32-P40 (magenta). Growth plates from each time window clustered together. As bones develop, circumferential expansion is minuscule in comparison to elongation. (C) The expansion vs elongation (E:E) ratio, which was plotted for all growth plates and time windows, decreases as bones develop. Interestingly, in the proximal fibula and distal tibia, the decrease was non-monotonic.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95289/elife-95289-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Workflow describing how growth plate expansion was calculated using equivalent radius calculations of chondro-osseous junctions. (B) Raw data showing bone and elongation and bone expansion from the growth plates of different long bones from E17.5–P40. P; proximal, D; distal.
 
 ## Discussion
 
@@ -106,17 +162,97 @@ Here, we discovered that the core mechanism underlying chondrocyte column format
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Col2-CreERT</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:006774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>R26R-Confetti</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:017492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col2CreER-F</td>
+      <td>Jackson Laboratories</td>
+      <td>PCR primers (stock # 006774)</td>
+      <td>CAC TGC GGG CTC TAC TTC AT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col2CreER-R</td>
+      <td>Jackson Laboratories</td>
+      <td>PCR primers(stock # 006774)</td>
+      <td>ACC AGC AGC ACT TTT GGA AG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Confetti-mutant Forward</td>
+      <td>Jackson Laboratories</td>
+      <td>PCR primers(stock # 017492)</td>
+      <td>GAA TTA ATT CCG GTA TAA CTT CG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Confetti-WT Forward</td>
+      <td>Jackson Laboratories</td>
+      <td>PCR primers(stock # 017492)</td>
+      <td>AAA GTC GCT CTG AGT TGT TAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Confetti-common</td>
+      <td>Jackson Laboratories</td>
+      <td>PCR primers(stock # 017492)</td>
+      <td>CCA GAT GAC TAC CTA TCC TC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>T-5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Draq5</td>
+      <td>Thermo Scientific</td>
+      <td>62252</td>
+      <td>1:2000 for embryonic samples and 1:1500 for postnatal samples</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 For genetic labeling of chondrocyte clones in embryonic and postnatal growth plates, Col2a1-CreER:R26R-Confetti heterozygous mice were generated by crossing mice homozygous for Col2-CreERT (Jackson Laboratories, FVB-Tg (Col2a1-cre/ERT)KA3Smac/J; Nakamura et al., 2006) with R26R-Confetti homozygotes (Jackson Laboratories, B6.129P2-Gt(ROSA)26Sortm1(CAG-Brainbow2.1)Cle/J; Snippert et al., 2010). Mice were dissected in cold phosphate-buffered saline (PBS), fixed for 3 hr at 4°C in 4% paraformaldehyde (PFA), washed in PBS, and stored at 4°C in 0.5  M EDTA (pH 8.0, Avantor Performance Materials) with 0.01% sodium azide (Sigma) for 2 days. Limb samples were then dehydrated in 30% sucrose/PBS overnight at 4°C, embedded in OCT, and stored at –80°C the following day. In all timed pregnancies, the plug date was defined as E0.5. For harvesting of embryos, timed-pregnant female mice were sacrificed by CO2 exposure. Embryos were sacrificed by decapitation with surgical scissors, and postnatal mice were sacrificed by CO2 exposure. Tail genomic DNA was used for genotyping by PCR (Key Resources Table). All animal experiments were pre-approved by and conducted according to the guidelines of the Institutional Animal Care and Use Committee (IACUC) of the Weizmann Institute (IACUC 01750221-1 and IACUC 05700723-2). All animals used in this study had access to food and water ad libitum and were maintained under controlled humidity and temperature (45–65%, 22  ±  2°C, respectively). For each experiment, three mice were collected from at least two independent litters. Mouse embryos were used regardless of their sex, whereas postnatal experiments were performed only on females to control for potential sex-related phenotypes.
 
 For clonal genetic tracing, tamoxifen was administered by oral gavage (Fine Science Tools) at a dose of 3 mg to P30 Col2a1-CreER:R26R-Confetti+/-mice or 2 mg to time-mated R26R-Confetti females at E14.5. Tamoxifen (Sigma-Aldrich, T-5648) was dissolved in corn oil (Sigma-Aldrich, C-8267) at a final concentration of 15 mg/ml. Neighboring cells that expressed the same fluorescent protein were considered clonal.
 
-## Sample preparation
+### Sample preparation
 
 200-μm-thick sagittal cryosections of the embryonic or postnatal right hindlimbs from Col2a1-CreER:R26R-Confetti+/-mice were collected into a 12-well plate filled with 1 ml PBS. To remove OCT, samples were washed twice with PBS at room temperature (RT) with gentle rocking. Then, nuclei were stained with Draq5 (Thermo Scientific 62252) diluted in PBST (PBS + 0.1% Triton X-100) for 2 hr at RT at a dilution of 1:2000 for embryonic samples and 1:1500 for postnatal samples. Three sections from the central region of the proximal tibia and distal femur growth plates were selected for further processing, together covering 600 µm along the medial-lateral bone axis. Sections were then placed in Rims (Rubin et al., 2021) with a refractive index of 1.45 (74% Histodenz/PB) overnight at RT, and then mounted the following day with Rims between a glass slide and coverslip. Because Confetti fluorophores fade quickly, sections were imaged within 1 week of preparation. A 200-µm-thick section contains 5–6 cells in thickness in the PZ and 2–3 cells in the HZ.
 
-## Image acquisition
+### Image acquisition
 
 The proximal tibia and distal femur growth plates were imaged by a combination of multiphoton and confocal imaging using an upright Leica TCS SP8 confocal laser-scanning/MP microscope (Leica Microsystems, Mannheim, Germany), equipped with external non-descanned detectors (NDD) HyD and HyD SP GaAsP detectors for confocal imaging (Leica Microsystems CMS GmbH, Germany). Channels were collected in sequential mode. The CFP signal from the Confetti was excited by 900 nm laser line of a tunable femtosecond laser 680–1080 Coherent vision II (Coherent GmbH, USA). Emission signal was collected using an external NDD HyD detector through a long pass filter of 440 nm. The GFP and YFP Confetti signal was excited by an Argon laser and collected with HyD SP GaAsP internal detectors (Ex 488 nm Em 498–510 nm and Ex 514 nm Em 521–560 nm). The RFP Confetti signal was excited by a DPSS 561 nm laser with emission collection at 582–631 nm and the Draq5 signal was excited by a HeNe 633 laser, with emission collection at 669–800 nm. As reported previously (Newton et al., 2019), we rarely observed GFP clones in the growth plate.
 
@@ -124,27 +260,27 @@ Growth plates were imaged as a z-stack using a galvo scanner through a HC PL APO
 
 Embryonic samples were imaged with a single field of view (FOV), which covered the middle of the RZ through the beginning of the COJ. Postnatal samples were imaged with multiple overlapping FOVs (10% overlap), which covered the entire growth plate from the bottom of the secondary ossification center through the beginning of the COJ. Postnatal images were stitched in ImarisStitcher 9.9.0 (Bitplane).
 
-## Growth plate segmentation
+### Growth plate segmentation
 
 To generate a mask of the growth plate, Microscopy Image Browser (version 2.81) (Belevich et al., 2016) was used to manually segment the region between the secondary ossification center and the COJ in postnatal images and the entire growth plate region until the COJ in embryonic images. Additionally, a mask of the HZ was created by identifying the cells with the stereotypic chromatin staining unique to this zone.
 
-## Nuclei segmentation
+### Nuclei segmentation
 
 Images of fluorescently stained nuclei were automatically segmented as described previously (Rubin et al., 2021; Bartschat et al., 2016). For embryonic images, a Gaussian blur filter (radius 2) and background subtraction (rolling ball radius 25) was applied in Fiji (Schindelin et al., 2012) prior to segmentation. We used standard deviations of σ = 12 for RZ, PZ, and PHZ nuclei and of σ = 25 for HZ nuclei for embryonic images and σ = 5 for RZ, PZ, and PHZ nuclei and of σ = 8 for HZ nuclei for postnatal images. Subsequently, local intensity maxima were extracted from the LoG-filtered image and reported as potential nuclear centers. For each potential seed point, we computed the mean intensity in a 4 × 4 × 4 voxel-wide cube for embryonic samples and 2 × 2 × 2 voxel-wide cube for postnatal samples surrounding the centroid. All image analyses were performed on a Windows Server 2012 R2 64-bit workstation with 2 Intel(R) Xeon(R)CPU E5-2687W v4 processors, 512 GB RAM, 24 cores and 48 logical processors.
 
-## Clone segmentation
+### Clone segmentation
 
 To generate a mask of each clone, .lif files were converted to.ims files using the Imaris file converter (version 9.8.0). Imaris surfaces tool was used to create surfaces and extract the three clone masks (yfp, rfp, and cfp) from the image; Gfp clones were not present in the images. Surfaces were created with a grain size of 1.00 µm using the absolute intensity feature, with thresholds varying depending on the image. Surfaces with volumes greater than 150 µm3 were kept for further analysis. Next, the clone masks were overlapped with the raw signal in Fiji to inspect the quality of the segmentation. Quality was high in images where clones did not touch each other. In images with high labeling efficiency, where clones touched each other, some clone segmentations needed to be manually corrected in MIB.
 
-## Nucleus and clone feature extraction
+### Nucleus and clone feature extraction
 
 Following image segmentation and masking, separate segmented images were created for each clone mask in Fiji (S1 data) by assigning pixels outside of the clone mask and growth plate mask a value of 0. Next, segmented clone and nuclear images were relabeled using Morpholib plugin (Legland et al., 2016) and converted to 16- or 32-bit float depending on the number of objects in each image (S2 data). Images were reoriented in Fiji (Schindelin et al., 2012) so that the proximal-distal bone axis aligned to the Y-axis of the image coordinate. Nucleus and clone features were extracted as described previously (Rubin et al., 2021) in MATLAB (version R2017b) with a volume range of 100–1200 µm for nuclei and 150–500 × 107 µm for clones.
 
-## Morphometric analysis
+### Morphometric analysis
 
 Clone morphometrics, such as PC coefficients and PC orientations, were calculated as described previously (Rubin et al., 2021). Cluster, column, or clone size was defined as the number of nuclei per cluster, column, or clone. These morphometric features were displayed as a histogram, a 3D morphology map, or both.
 
-## Correlation analysis between cells and nuclei
+### Correlation analysis between cells and nuclei
 
 To evaluate whether nuclear centroids can be used as a proxy for cell centroids, we performed correlation analysis on our previously published dataset of a wild-type tibia sample (Rubin et al., 2021). This dataset included segmentation data on both nuclei and cells from the entire growth plate, but not clone information. We matched between cells and nuclei in the dataset by calculating pairwise distances between centroids of cells and nuclei. Pairs were considered matched if the centroid distance was less than 20 μm and the ‘closest cell to a nucleus’ was a mutual neighbor to the ‘closest nucleus to a cell’, resulting in 45,166 paired cells and nuclei.
 
@@ -152,13 +288,13 @@ To simulate random clones in the tibia sample, we generated clones of various si
 
 A total of 1278 random clones were generated in the paired data. Within these clones, we calculated the elevation angle for cell doublets and nuclear doublets separately and visualized the variation between them in a histogram (Figure 5—figure supplement 2A). The results indicated a striking similarity in histogram distribution. Additionally, we computed the Pearson correlation between the mean elevation angle in a clone based on either cell or nuclear centroids, resulting in a correlation value of 0.79 (Figure 5—figure supplement 2B). These results suggest that elevation angle calculation performed on nuclei can serve as a reliable proxy for cell-based measurements.
 
-## Doublet quantification
+### Doublet quantification
 
 For doublet quantification in clones, the process starts by measuring distances between the centroids of all possible pairs of nuclei to identify the nearest neighbor pairs. These distances are sorted from low to high, establishing them as edges in the graph. For instance, in a clone with five nodes, there are 10 potential edges. The single-connected component method is applied to understand the graph’s topology and the distribution of nuclei within the clone. In a linear or columnar topology, a connected component should have a maximum of four edges (e.g., 1–2, 2–3, 3–4, 4–5). In a spherical-like topology, a connected component can have all 10 edges. The analysis begins with the smallest edge in the list. It is checked if this edge forms a single connected component. If not, the next smallest edge is added in the list, and this process continues. When a single connected component is achieved, the addition of edges stops. The final list of edges obtained in this manner defines the clone’s topology, with each edge termed as a doublet. These edges, present in the final list, are utilized as total number of doublets for the subsequent elevation angle analysis.
 
 To evaluate the potential noise introduced into the measurement by measuring all nuclei pairs, the proportion of elevation angles as a function of number of nuclei neighbors per columns and clusters was calculated as well as the population statistics (Figure 5—figure supplement 3). We observed consistent patterns for both columns and clusters at any chosen number of nuclei neighbors. The range of the proportion of elevation angles between 60 and 90° for 1–5 neighbors in columns was 13.2–15.5% for the distal femur and 16.3–21% for the proximal tibia. For clusters, the range was 27.8–35.5% for the distal femur and 29.1–36.5% for the proximal tibia. The mean elevation angle distribution (60–90°) from 1 to 10 neighbors is 14.5% (columns) and 28.4% (clusters) in the distal femur and 19.5% (columns) and 29.7% (clusters) in the proximal tibia (Figure 5—figure supplement 3A–D). The proportion of elevation angles up to 10 nuclei neighbors within columns and clusters represents up to 99.1% (distal femur: 99.1%; proximal tibia: 98.8%) of all nuclei doublet pairs in columns and up to 71.6% (distal femur: 71.6%; proximal tibia: 62%) in clusters (Figure 5—figure supplement 3E and F). While examination of the influence of increasing neighbors on the proportion of elevation angles between 60 and 90° did not show any statistical significance in columns, we found clusters to show statistical significance (p-value<0.05, two-sample t-test) when comparing the mean of lower number of neighbors (Lecuit and Lenne, 2007; Irvine and Wieschaus, 1994; Bailles et al., 2022; Collinet and Lecuit, 2021; Sutherland et al., 2020) with larger numbers of nuclei neighbors (Sutherland et al., 2020; Rubin et al., 2021; Breur et al., 1991; Wilsman et al., 2008; Wilsman et al., 1996) for both the distal femur and proximal tibia (Figure 5—figure supplement 3C and D). This suggests that measuring elevation angle of nuclei doublets in clusters has slight noise present due to the spatial organization of nuclei in the clone, while the variation in columns is insignificant.
 
-## Calculation of elevation angle and the angle between clone and PD axis
+### Calculation of elevation angle and the angle between clone and PD axis
 
 To determine the elevation angle between nuclei in a doublet, we first transformed the Cartesian coordinates of doublet to a spherical coordinate system, in which the Z-axis represents the P-D bone axis. Then, we shifted the mean position of a doublet to the origin zero and used the MATLAB function cart2sph to obtain the elevation angle (phi) and the radius (r). The elevation angle was measured as the angle between the projected line of a nucleus on the XY plane to the line connecting two nuclear centroids (Figure 1F). The XY plane is perpendicular to the Z-axis. If one nucleus in the doublet has an elevation angle of phi, the angle of the other nucleus is -phi. The elevation angle values are in the range of [-pi/2, pi/2]. The radius in the spherical coordinate system is equivalent to half of the distance between two nuclei in a Cartesian coordinate system. The elevation angle between two nuclei lying on top of one another is 90°, whereas the angle between two nuclei that are positioned next to each other in the XY plane is 0. Because the elevation angles of nuclei in a doublet mirror each other, we only used the absolute value.
 
@@ -166,28 +302,28 @@ To determine the distribution of elevation angles, we divided them into seven ca
 
 The angle between clone and PD axis (theta) was calculated using the MATLAB function ‘theta = atan2(norm(cross(u,v)),dot(u,v))’, where u and v are two vector representing PD axis and clone orientation. If the function value exceeded 90°, the reported value was (180°-theta). Finally, to use the same notation as for the elevation angle analysis, the PD-PC angle is reported as (90°-theta). Thus, if the longest axis of the clone (PC1) is parallel to PD axis, then the reported value is 90°, and if it is perpendicular, then the reported value is 0°.
 
-## Multiclone formation analysis through clone merging
+### Multiclone formation analysis through clone merging
 
 In our analysis of embryonic data, clones were merged based on the criterion that the distance between any nucleus within one clone to any neighboring clone was less than 15 μm. After the merging process, the total number of nuclei in a merged clone equaled the sum of nuclei in the original individual clones. All properties of merged clones were computed in the same manner as for individual clones.
 
-## Quantification of growth plate elongation and expansion rates
+### Quantification of growth plate elongation and expansion rates
 
-## Micro-CT image dataset
+#### Micro-CT image dataset
 
 We used a previously published micro-CT database (Stern et al., 2015) to analyze eight different growth plates at three developmental stages (E17.5-E18.5, P14-P16, and P32-P40). The bones of C57/Bl6 mice were scanned using a high-resolution eXplore Locus SP micro-CT scanner for embryonic stages and a TomoScope 30S Duo scanner for postnatal stages, ensuring isotropic resolutions of 7.139 µm3 and 36 µm3, respectively. We removed low-quality images yielding four to eight bones per embryonic growth plate and two to four per postnatal growth plate.
 
-## Data preparation
+#### Data preparation
 
 We ensured anatomical correspondence across time points using a bone image registration algorithm (Stern et al., 2015).The Autocontext image segmentation module from Ilastik (Berg et al., 2019) facilitated the segmentation of mineralized bone, and manual removal of secondary ossification at postnatal stages was conducted using Fiji (Schindelin et al., 2012).
 
-## Extraction of COJ
+#### Extraction of COJ
 
 Post-registration bones were aligned such that their proximal-distal axis was vertical. We generated images where the value of each bone voxel was its Z-coordinate, enabling identification of the COJ through a maximum projection that highlighted the highest Z-values. Manual thresholding and corrections isolated the COJ, with an additional mirroring step for distal growth plates. Raw data is available in Figure 6—source data 1.
 
-## Calculation of growth and equivalent radius
+#### Calculation of growth and equivalent radius
 
-To quantify elongation, we extracted the median Z-coordinate of the COJ voxels and calculated the distance to the longitudinal origin of the bone, defined as the thinnest point of the cartilaginous template from previous research (Stern et al., 2015).We then calibrated voxel units to physical units for accuracy. For the equivalent radius, we applied principal component analysis (PCA) to the COJ voxel coordinates to align the surface with the XY plane, calculating the area of the projected voxels on this plane. The equivalent radius was derived from the area using r=A/π, where  is the radius and  is the area, with values calibrated to physical units. Raw data is available in Figure 6—source data 1.
+To quantify elongation, we extracted the median Z-coordinate of the COJ voxels and calculated the distance to the longitudinal origin of the bone, defined as the thinnest point of the cartilaginous template from previous research (Stern et al., 2015).We then calibrated voxel units to physical units for accuracy. For the equivalent radius, we applied principal component analysis (PCA) to the COJ voxel coordinates to align the surface with the XY plane, calculating the area of the projected voxels on this plane. The equivalent radius was derived from the area using $r=\sqrt{A/\pi}$, where  is the radius and  is the area, with values calibrated to physical units. Raw data is available in Figure 6—source data 1.
 
-## Code availability
+### Code availability
 
 The codes utilized in the current study are available on Github at the following link: https://github.com/ankitbioinfo/clonal_analysis_in_growth_plates_elife; (copy archived at Agrawal, 2024).

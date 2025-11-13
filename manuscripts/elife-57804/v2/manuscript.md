@@ -47,11 +47,11 @@ We presented human participants with two tactile stimuli during a bimanual movem
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Participants adopted a start posture with their hands resting on a table and their arms stretched out in an uncrossed or crossed posture (see Figure 1A,B for an illustration of experimental conditions and trial timing). A tone then instructed a movement of the two hands about 30 cm toward their body, bringing the arms into either an uncrossed or crossed arm end posture (see Figure 1A). Shortly before, during, or shortly after the movement, participants received two tactile stimuli, one on each hand, with a stimulus onset asynchrony (SOA) of 110 ms. At this SOA, participants often misreport which of the two stimuli occurred first, both when the arms are still (Heed and Azañón, 2014; Shore et al., 2002; Yamamoto and Kitazawa, 2001) and during movement (Heed et al., 2015b; Hermosillo et al., 2011). After the bimanual movement, participants reported on which of the two hands the first stimulus had occurred by reaching with this hand to the perceived external location of the stimulus (see Figure 1B). The response, thus, contained two components: the hand to which the first stimulus was assigned, and explicit spatial localization of this stimulus.
 
-## Hand assignment
+### Hand assignment
 
 In a first step, we verified that hand assignment in the TOJ task was modulated by hand crossing and timing of stimuli relative to the movement (Heed et al., 2015b; Hermosillo et al., 2011). We measured TOJ performance as the percentage of correct reports of which hand had been stimulated first in the TOJ task, as indicated by the hand that participants used for their localization response (see Figure 2). Stimuli could occur during all times (see Methods for details), so we binned the binary (correct/incorrect) TOJ response data into four movement phases – stimulation before movement onset, during first and second half of movement, and after movement offset – to assess the modulation of TOJ performance by stimulus time relative to the bimanual movement.
 
@@ -63,7 +63,7 @@ In accordance with previous findings, TOJ performance declined in the crossed co
 
 In sum, TOJ performance in our first experiment reflected known modulations of hand posture and movement timing. Participants made, on average, more than 15% TOJ errors even with uncrossed hands. This high error rate is due to the use of the short SOA of 110 ms (Heed et al., 2015b; Heed and Azañón, 2014; Shore et al., 2002; Yamamoto and Kitazawa, 2001), and is an intended outcome of the experimental paradigm, allowing, as a next step, comparison of spatial localization responses for incorrect TOJ trials across all postures.
 
-## Explicit tactile localization in space is unaffected by hand posture
+### Explicit tactile localization in space is unaffected by hand posture
 
 Having verified that TOJ hand assignment showed the well-known effects of posture, we next turned to tactile stimulus localization. Localization errors are computed as the spatial difference (calculated as the signed difference in the direction along the path of the reporting hand, see Methods for details) of the perceived stimulus location and the hand’s true position at stimulus presentation. From previous studies involving single stimuli and unimanual movements, it is known that participants make systematic localization errors when they retrospectively point to the spatial location of a tactile stimulus that was presented while the target limb was moving. More specifically, localization is systematically biased in the direction of the movement during the initial part of a movement, and in the opposite direction during the final part of the movement (Dassonville, 1995; Maij et al., 2013; Maij et al., 2017; Watanabe et al., 2009), resulting in systematic localization error curves with positive values indicating errors in movement direction and negative values indicating errors in the opposite direction. For short tactile stimuli, as those used here, the respective biases extend to presentation times before and after the movement (Watanabe et al., 2009; Maij et al., 2013; Maij et al., 2017). This pattern of movement-related directional biases was evident also in the present data (see Figure 3AB for an example of a single participant). Critically, bias was comparable across all four posture conditions (see Figure 3C).
 
@@ -73,7 +73,7 @@ Having verified that TOJ hand assignment showed the well-known effects of postur
 
 To validate that localization behavior in our task was not biased by the specifics of the TOJ task, participants performed a simpler 1-stimulus control task in separate blocks of the experiment. While making bimanual movements with uncrossed and crossed start and end postures, they received a single tactile stimulus and pointed to it, as in the 2-stimulus task (see Methods for details). Participants virtually always indicated correctly which hand had received the stimulus (average percentage correct, 99.5%). Critically, localization error curves were indistinguishable from the task with two stimuli (see Figure 3D), indicating that tactile localization was affected neither by task difficulty nor by other aspects particular to the TOJ task.
 
-## Explicit tactile localization is directed toward the assigned hand
+### Explicit tactile localization is directed toward the assigned hand
 
 We have so far assessed localization performance in trials in which participants had made a correct TOJ hand assignment (referred to as correct TOJ trials from hereon). We now turn to localization errors in incorrect TOJ trials. These errors allow differentiating between the three hypotheses about how participants determine stimulus localization in tactile decision paradigms (see Figure 1D–F).
 
@@ -83,7 +83,7 @@ We first turn to the space-to limb reconstruction hypothesis. It posits that ta
 
 **Figure 4.:** Average reach trajectories (solid lines with finger position at movement onset indicated as circles, and at movement offet as squares) and localization responses (i.e., finger positions in the horizontal plane at the end of the reach-to-point movement indicating the location where the participant perceived the first stimulus) for the different movement conditions. Data are from the same participant as in Figure 3AB. Ellipses represent 95% of the variability of localization responses and show large overlap for correct and incorrect TOJ trials. The space-to-limb reconstruction hypothesis would predict that, during error trials, participants point with the incorrectly assigned hand to the location of the correct stimulus; thus, if this hypothesis were correct, orange ellipses should overlay with light gray ellipses, and dark gray ellipses should overlay with yellow ellipses.
 
-## Localization aims at the assigned hand’s position at the time of the first tactile stimulus
+### Localization aims at the assigned hand’s position at the time of the first tactile stimulus
 
 Given that participants localized the stimulus along the assigned hand’s trajectory, two possibilities remain as to which stimulus location was associated with erroneous responses (see Figure 1). The stimulus switch hypothesis posits that the two stimuli were localized correctly, and one is chosen for the response. In incorrect TOJ trials, participants would confuse the two stimuli and report the second stimulus by pointing at its location with the respective, incorrect hand. In this case, participants should point to where the hand was positioned at the time point of the second, erroneously chosen stimulus (referred to as time 2 from hereon). In contrast, the time reconstruction hypothesis assumes that participants always use the correct, first time point (time 1 from hereon), and determine the position of the assigned response limb at this time point. This hypothesis predicts that, in incorrect TOJ trials, participants point to where the incorrectly assigned hand was positioned at the correct time, that is, time 1. Note, that no tactile stimulus occurred at this external-spatial location, because it combines the time of the first, correct stimulus with the movement trajectory of the second, incorrect stimulus’s hand.
 
@@ -109,17 +109,37 @@ We ran the same analyses for the time shifts required to align localization erro
 
 While neither the non-significant difference to time 1 in the LMM analysis, nor the Bayesian parameter estimate including 0 statistically imply equality of the error curves in correct and incorrect TOJ trials, these statistical results are consistent with the two conditions being equal, and they suggest that, if a difference exists, it is small. Furthermore, the time shift of −105 ms for time 2 closely matches the stimulus SOA of 110 ms, further suggesting that, in error trials, participants did not aim for hand location at the second, but rather at the first time point. Corroborating this conclusion, the Bayesian 95% interval [−138; −76 ms] of the intercept estimate includes −110 ms, and comparison of Bayesian models for time 2 with and without intercept favored the model including the intercept (difference in ELPD from first to second model, −1.4, s.e. 1.8, stacking weights: 0.017, 0.983).
 
-## Experiment 2
+### Experiment 2
 
 The results of Experiment 1 suggest that when asked to localize the external location of the first of two tactile stimuli applied in succession to different hands, participants chose which hand received the relevant stimulus and then inferred the position of the chosen limb at the time point of the first stimulus. Consequently, when participants chose the incorrect limb, stimulus location was determined as the location at which the incorrect hand was at the correct (first) time point. While these results support the time reconstruction hypothesis, Experiment 1 tested only a single SOA of 110 ms between the two tactile stimuli. If our conclusions drawn from Experiment 1 are correct, then localization of stimuli assigned to the incorrect hand should always depend on the first stimulus’s time, independent of SOA.
 
 Experiment 2 tested this conjecture. Again, participants judged which hand had received the first of two tactile stimuli during a bimanual movement and then located the stimulus perceived to have occurred first. We presented tactile stimuli with four different SOAs: 60, 85, 110, and 135 ms. As explained in Experiment 1, the shift between the time 1 and time 2 curves of correct TOJ trials reflects the SOA of the two tactile stimuli. Accordingly, the two template curves are further apart the larger the SOA (compare light vs. dark blue lines in panels A-D of Figure 7). As the estimated localization error curves in Experiment 1 were similar for all combinations of the hands’ start and end posture, Experiment 2 involved only reaches from an uncrossed to an uncrossed posture and from a crossed to a crossed posture. This strategy minimized obstruction of motion tracker markers and homogenized movement time across conditions (see in Supplementary file 1). Experiment 2 was conducted in a different lab than Experiment 1 and used different equipment, re-written experimental code, different experimenters, and new analysis scripts (see Material and methods for details). Moreover, given the uncertainty indicated by the ELPD standard errors in the Bayesian model comparisons of Experiment 1, we increased our sample size and acquired a higher number of trials to further scrutinize the reliability of our results.
 
-## Hand assignment
+![Figure 7.](https://cdn.elifesciences.org/articles/57804/elife-57804-fig7-v2.jpg)
+
+**Figure 7.:** Curves of incorrect TOJ trials (red) show a similar pattern as the localization curves of the correct TOJ trials at time 1 (dark blue), but not as the localization curves of the correct TOJ trials at time 2 (light blue). This pattern was highly similar across all participants and also when calculated separately for each posture condition (see Supplementary Information). Traces reflect the mean, shaded areas around the traces reflect s.e.m. The shaded regions in the background represent the average movement time.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57804/elife-57804-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Proportion of correct hand assignment across movement conditions (uncrossed-uncrossed, crossed-crossed) and SOA (60, 85, 110, 135 ms) in Experiment 2. Error bars denote 2 s.e. from the mean; asymmetry is due to nonlinear conversion from the GLMM’s logit scale to percentage correct. Large symbols are group means, small symbols are individual participants’ performance. TOJ performance in Experiment 2 was modulated by hand posture and SOA. A GLMM with factors posture (uncrossed-uncrossed, crossed-crossed) and SOA (60, 85, 110, 135 ms) revealed significant main effects of posture (χ2(8,9)=586.94, p<0.001) and SOA (χ2(6,9)=218.00, p<0.001), and a significant interaction (χ2(6,9)=66.63, p<0.001). Post hoc analysis of the interaction (Bonferroni corrected, see in Supplementary file 1) showed that TOJ performance was better when the arms were in an uncrossed compared to a crossed posture at all SOAs. Furthermore, performance increased with SOA duration for the uncrossed posture but was relatively similar across all SOAs for the crossed posture.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57804/elife-57804-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Localization error curves of the uncrossed-uncrossed posture condition, averaged across participants, for each of the four SOAs in Experiment 2. Curves of incorrect TOJ trials (red) show a similar pattern as the localization curves of the correct TOJ trials at time 1 (dark blue), but not as the localization curves of the correct TOJ trials at time 2 (light blue). Traces reflect the mean, shaded areas around the traces reflect s.e.m. The shaded regions in the background represent the average movement time.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/57804/elife-57804-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Localization error curves of the crossed-crossed posture condition, averaged across participants, for each of the four SOAs in Experiment 2. Curves of incorrect TOJ trials (red) show a similar pattern as the localization curves of the correct TOJ trials at time 1 (dark blue), but not as the localization curves of the correct TOJ trials at time 2 (light blue). Traces reflect the mean, shaded areas around the traces reflect s.e.m. The shaded regions in the background represent the average movement time.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/57804/elife-57804-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Localization error curves of a representative participant (#07), averaged across posture, for each of the four SOAs in Experiment 2. Curves of incorrect TOJ trials (red) show a similar pattern as the localization curves of the correct TOJ trials at time 1 (dark blue), but not as the localization curves of the correct TOJ trials at time 2 (light blue).
+
+### Hand assignment
 
 In accordance with Experiment 1 and previous findings (Heed et al., 2015b; Hermosillo et al., 2011), TOJ performance in Experiment 2 was modulated by hand posture and SOA. At all SOAs, participants made large amounts of errors, ensuring that a sufficient number of trials were available to analyze incorrect TOJ trials. Detailed results are reported in the Supplementary Information (Figure 7—figure supplement 1; in Supplementary file 1).
 
-## Explicit stimulus localization in space
+### Explicit stimulus localization in space
 
 Complementing the findings from Experiment 1 and further corroborating the time reconstruction hypothesis, localization errors of the incorrect TOJ trials largely overlapped with the localization errors of correct TOJ trials at time 1 for each of the four SOAs (see Figure 7) and for each participant and posture condition (see Figure 7—figure supplement 2–4).
 
@@ -159,51 +179,51 @@ To summarize, we observed the typical dependence of tactile TOJ responses on lim
 
 Data for the presented analyses as well as code to run analyses and create figures are provided at the Open Science Framework website, https://osf.io/ybxn5/.
 
-## Participants
+### Participants
 
 Experiment 1 was performed at the Faculty of Psychology and Human Movement Science of the University of Hamburg. Twelve right-handed participants (aged 19–31 years, 7 female) gave informed consent to take part in the experiment. The study was part of a research program approved by the ethics committee of the German Psychological Society (DGPs). Experiment 2 was preregistered at the Open Science Framework website (https://osf.io/qyzgb). A sample size of 20 participants was defined a priori. We collected data from 20 individuals from Bielefeld University. We excluded data of 1 participant from analyses as s/he did not follow the instructions and most of the time localized the tactile stimulus at the start or end position, but not along the movement trajectory. Furthermore, we excluded data of another participant as s/he only completed 384 trials in total. As any form of data acquisition was stopped in our lab beginning of March 2020 due to the spread of the corona virus, we did not collect data from replacement participants. Our sample thus consisted of 18 participants (aged 18–25 years, 15 female). The experiment was approved by the ethics committee at Bielefeld University (Ethical Application Ref: 2017–114).
 
 Participants provided written informed consent and were compensated with €7/hr or received course credit. All participants had normal or corrected-to-normal vision and did not have any known perceptual, motor, or neurological disorders. Participants took part only if, in a screening experiment, they exhibited a TOJ crossing effect at the SOA used in the main experiment. We used this screening procedure because individual response patterns in tactile experiments involving hand crossing are quite variable (Badde et al., 2016; Cadieux et al., 2010; Yamamoto and Kitazawa, 2001); however, crossing effects are highly reliable across the entire population, so that our screening procedure does not preclude generalization.
 
-## General setup
+### General setup
 
 Participants were blindfolded. They sat on a chair at a table. A tactile stimulator (Oticon BC 461-0/12, Oticon Ltd., London, UK) was attached to the phalanx media of each index finger. Stimulation consisted of 200 Hz vibration for 10 ms. To mask any noise of the vibrators, participants wore earplugs and heard white noise through speakers (Experiment 1) or wore sound-attenuating headphones (Superlux HD669, Superlux Enterprise Development, Shanghai, China; Experiment 2).
 
-## Experiment 1
+### Experiment 1
 
-## Apparatus, task and procedure
+#### Apparatus, task and procedure
 
 The position of each index finger in space was recorded with an Optotrak active, infrared marker motion tracking system (Northern Digital Inc, Waterloo, Ontario, Canada) at a sampling rate of 1000 Hz. One marker was positioned on the nail of each index finger, directly next to the tactile stimulator. A data acquisition unit (Odau; Northern Digital Inc, Waterloo, Ontario, Canada; sampling rate 1000 Hz) synchronized marker position and timing of the tactile stimuli. The experiment was controlled with Matlab (Mathworks, Natick, MA, USA), using the Psychophysics Toolbox (Brainard, 1997) and the Optotrak Toolbox (http://www.ecogsci.cs.uni-tuebingen.de/OptotrakToolbox/).
 
-## 2 Stimulus task
+#### 2 Stimulus task
 
 Participants moved both hands from a position of about 40 cm away from their body toward their body to a position about 10 cm away from their body. Hand start and end posture were uncrossed and crossed, varied in blocks of 50 trials in pseudo-randomized order (see Figure 1A). In each trial, a tone instructed the movement start. At a random time (presented between 50 and 800 ms after the tone, drawn from a square distribution) before, during, or after the movement, two tactile stimuli were applied, one to each hand, at an SOA of 110 ms; the left-right order of stimuli was pseudo-random. Upon movement completion, participants moved the index finger that they had perceived to have been stimulated first to the location of the first stimulus on the table. The hand remained in this location until a tone, presented 2.5 s after the initial movement cue instructed them to lift the index finger; this finger lift was used to identify the response hand during trajectory analysis. Subsequently, participants repositioned the hands to their start locations. We acquired 300 trials of each posture combination. To compensate for obstruction of motion tracking markers, we acquired more trials for 2 participants in the uncrossed to crossed posture and vice versa movement conditions. The experiment took approximately 4 hours, split in two-hour sessions held on different days. Practice trials were included on each day before the experiment started until the participant had understood, and felt confident with, the task. In total we acquired 14.776 trials.
 
-## 1 Stimulus Task
+#### 1 Stimulus Task
 
 The procedure was identical to the 2 Stimulus task except that participants only received one stimulus at either hand and then indicated the perceived location with the respective index finger. Participants performed 300 trials in each posture combination split in blocks of 50 trials. In 99,5% of the trials participants used the correct arm when localizing the stimulus.
 
-## Analysis
+### Analysis
 
-## Data preprocessing
+#### Data preprocessing
 
 Start and end of the movement were determined based on a velocity threshold of 5 cm/s. We interpolated missing motion tracking data, for instance due to obstruction when the hands passed each other or due to rotation of the hands, using splines, with the restriction that movement onset and offset could be determined. Trials were discarded when (1) missing marker data could not be adequately interpolated (1 Stimulus Task: 13%; 2 Stimulus Task: 11.9%); (2) no stimulus localization response, indicated by finger lifting, could be detected (1 Stimulus Task: 2.8%; 2 Stimulus Task: 5.4%); (3) and when participants did not perform smooth, continuous, and synchronous movements with movement duration less than 200 ms or more 1000 ms (1 Stimulus Task: 3.7%; 2 Stimulus Task: 0.2%). In total, 19% (1 Stimulus Task) and 17.5% (2 Stimulus Task) of trials were removed.
 
-## Analysis of Temporal Order Judgments (TOJ)
+#### Analysis of Temporal Order Judgments (TOJ)
 
 We considered the TOJ to be correct when the hand used for the localization response had indeed been stimulated first.
 
-## Localization error
+#### Localization error
 
 We calculated the localization error, that is, the difference between the true location of the index finger at the time of stimulation and the reported location, that is, index finger pointing location just before finger lifting. Errors are reported relative to the direction of the movement as a straight line between start and end position of the hand, with positive values indicating errors in movement direction toward the end position of the hand. The localization error varies systematically with the stimulus time relative to movement onset (Dassonville, 1995; Maij et al., 2013; Maij et al., 2017; Maij et al., 2011b; Watanabe et al., 2009). The localization errors were converted to an estimated localization curve by averaging errors using a moving Gaussian window of 75 ms across a time window of −200 to 600 ms (step size 1 ms) with respect to movement onset. For each participant and posture condition, we calculated localization curves for correct TOJ trials relative to the onset of the first stimulus, for correct TOJ trials relative to the onset of the second stimulus, and for incorrect TOJ trials relative to the onset of the first stimulus.
 
-## Comparison of localization errors in correct and incorrect TOJ trials
+#### Comparison of localization errors in correct and incorrect TOJ trials
 
 To determine whether participants localized the stimulus relative to hand position at the first or the second stimulus timepoint, we calculated – separately for each participant and posture condition – the temporal shift that would produce the smallest deviations around a single, common localization curve of the compared conditions (1) between the incorrect TOJ localization curve and the correct TOJ localization curve relative to the first stimulus time point and (2) between the incorrect TOJ localization curve and the correct TOJ localization curve relative to the second stimulus time point. Specifically, we shifted the data points of the incorrect TOJ localization curves in time from –300 to 300 ms in steps of 1 ms and calculated the squared localization error differences with an localization curve calculated from data points of the two compared conditions using a common moving Gaussian average for each time shift. We refer to the time value that minimized the summed squared error differences with this overall construction curve as time shift (Maij et al., 2009; Maij et al., 2017).
 
 We assessed the time shift for both stimulus times and, accordingly, obtained two shift values per participant and posture condition. In some instances, we were unable to construct a time shift due to a low number of incorrect TOJ trials for that specific condition (18 cases out of 4 postures x 2 stimulus times x 12 participants = 96); these data points were treated as missing data in the linear mixed model analysis.
 
-## Statistical analysis
+#### Statistical analysis
 
 We assessed statistical significance of the reported results using (Generalized) Linear Mixed Models ([G]LMM) (Bolker et al., 2009) as implemented in R version 3.6.1 (R Development Core Team, 2014) using packages lme4, version 1.1–21 (Bates et al., 2015), and afex version 0.26–0 (Singmann, 2015). We estimated intercept parameters of Bayesian mixed factorial models equivalent to LMM using packages brms, version 2.12.0 (Bürkner, 2017; Bürkner, 2018), and loo, version 2.2.0 (Vehtari et al., 2017a; Vehtari et al., 2017b).
 
@@ -211,28 +231,28 @@ GLMM are adequate for analysis of binary variables such as correct vs. incorrect
 
 The brms R package uses STAN as backend. We ran LMM to estimate the 95% interval of the intercepts in the different time shift models. We compared Bayesian models using the loo_compare() and stacking_weights() functions of the loo R package. The former function uses leave-one-out cross-validation to compare models by assessing the models’ predictive density when each data point is omitted from fitting, whereas the latter determines the proportion with which each model's predicitve distribution should be included in an overall prediction to best account for the empirical data (Vehtari et al., 2017b).
 
-## Experiment 2
+### Experiment 2
 
-## Apparatus, task and procedure
+#### Apparatus, task and procedure
 
 Kinematic data of the fingers were recorded using an optical motion capture system (Visualeyez II VZ4000v, Phoenix Technologies Inc, Vancouver, BC, Canada) at 250 Hz sampling frequency with markers placed on the nail of the two index fingers. The experiment was controlled with Matlab (The MathWorks Version R2015a; Natick, MA, USA) using the Psychophysics Toolbox (Brainard, 1997). Stimulus presentation was controlled via custom-made hardware and triggered through a digital acquisition card (PCI-6509, National Instruments, Austin, USA).
 
 The procedure was largely similar to Experiment 1, except that (1) participants made only reaches from an uncrossed to an uncrossed posture or from a crossed to a crossed posture and (2) tactile stimuli were separated by SOAs of 60, 85, 110, or 135 ms. Posture was varied in blocks of 64 trials in a pseudo-randomized order. Within each block, SOA and which hand was stimulated first were pseudo-randomized. Participants performed 28 blocks (14 of each posture combination) for a total of 1792 trials. To compensate for marker obstruction and failure to reliably detect finger lifting, two participants performed 10 additional blocks (5 of each posture combination). As we stopped any form of data acquisition in our lab for an indefinite time period in the beginning of March 2020, 2 participants performed only 19 and 23 blocks, respectively. The experiment took about 5–6 hr to complete, split in two-hour sessions held on different days. Practice trials were included prior to each experimental session.
 
-## Analysis
+### Analysis
 
-## Data preprocessing
+#### Data preprocessing
 
 We used custom-written Matlab scripts for processing of kinematic data. We first interpolated missing data points and resampled the data to 1000 Hz using splines, and low-pass filtered the data using a second-order butterworth filter with a cut-off frequency of 6 Hz. We determined movement onset/offset of each hand as the time of the sample in which the resultant velocity of the respective finger marker exceeded/dropped below 5 cm/s. We excluded trials when missing marker data could not be adequately interpolated (8%), when no stimulus localization response, indicated by finger lifting, could be detected (4.2%), and when participants did not perform smooth, continuous, and synchronous movements (6.8%). In total we removed 18.2% of the trials.
 
-## Analysis of TOJ and localization error
+#### Analysis of TOJ and localization error
 
 TOJ and localization errors were determined as in Experiment 1. Because localization error curves were similar regardless of start and end posture in Experiment 1, we collapsed across postures in Experiment 2 to calculate the localization error curves; we calculated individual curves for each participant and SOA (60, 85, 110, and 135 ms). Localization error curves calculated separately for Experiment 2’s two posture conditions yielded qualitatively similar results (see Supplementary Information).
 
-## Comparison of localization errors in correct and incorrect TOJ trials
+#### Comparison of localization errors in correct and incorrect TOJ trials
 
 Time shift values were calculated as in Experiment 1 (separately for each participant and SOA) using a shifting window of −300 to 300 ms (step size 1 ms).
 
-## Statistical analysis
+#### Statistical analysis
 
 We assessed TOJ performance using a generalized mixed model (GLMM) with factors Posture (uncrossed-uncrossed, crossed-crossed), and SOA (60, 85, 110, 135 ms). The analysis approach for the dependence of time shifts on SOAs followed a similar logic as Experiment 1. We first assessed the significance of main effects and interaction of the experimental design with afex. We then assessed whether time shifts were 0 relative to time 1 and time 2. To this end, we compared models with a random participant factor but no fixed factors and intercept [shift ~0 + (1) | participant], with a common intercept for all SOAs [shift ~1 + (1) | participant], and with individual intercepts per SOA [shift ~SOA + (1) | participant] separately for shift values relative to time 1 and time 2, respectively.

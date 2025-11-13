@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/05x2bcf33 Department of Psychology, Carnegie Mellon University Pittsburgh United States
-2. https://ror.org/05x2bcf33 Neuroscience Institute, Carnegie Mellon University Pittsburg United States
-3. https://ror.org/03rmrcq20 School of Kinesiology, University of British Columbia Vancouver Canada
-4. https://ror.org/03v76x132 Department of Psychology, Yale University New Haven United States
-5. https://ror.org/00hx57361 Department of Psychology, Princeton University Princeton United States
-6. https://ror.org/00za53h95 Department of Neurology, Johns Hopkins University Baltimore United States
-7. https://ror.org/01an7q238 Department of Psychology, University of California Berkeley Berkeley United States
-8. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California Berkeley Berkeley United States
-9. https://ror.org/00za53h95 Department of Neuroscience, Johns Hopkins University Baltimore United States
-10. https://ror.org/01arysc35 Santa Fe Institute Santa Fe United States
+1. Department of Psychology, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+2. Neuroscience Institute, Carnegie Mellon University Pittsburg United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+3. School of Kinesiology, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+4. Department of Psychology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+5. Department of Psychology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+6. Department of Neurology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+7. Department of Psychology, University of California Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+8. Helen Wills Neuroscience Institute, University of California Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+9. Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+10. Santa Fe Institute Santa Fe United States ([ROR:01arysc35](https://ror.org/01arysc35))
 
 † Corresponding author
 
@@ -47,7 +47,7 @@ How do we draw the boundaries between implicit learning and explicit strategy? I
 
 Various forms of feedback and sensorimotor experiences, such as motor error, reward, and movement repetition, have traditionally been thought to induce implicit learning (Doya, 2000; Izawa and Shadmehr, 2011; Pascual-Leone et al., 1993; Shadmehr et al., 2010). Moreover, these forms of implicit learning are believed to depend on separable neural pathways: error-based motor learning engages cerebellar–cortical interactions (Marr, 1969), reinforcement-based learning engages basal ganglia–cortical interactions (Schultz et al., 1997), and use-dependent learning (i.e., learning driven by simple movement repetition) modulates neural tuning curves in primary sensorimotor areas (Classen et al., 1998; also see Areshenkoff et al., 2023; Nick et al., 2024; Standage et al., 2023). In this section, we discuss studies that have challenged the view that sensorimotor learning is solely implicit, demonstrating that performance on a broad range of simple motor learning tasks can be largely driven by the deployment of an explicit strategy.
 
-## Error-based motor learning
+### Error-based motor learning
 
 The process of correcting motor errors via sensory feedback has proven to be a useful test bed for characterizing the contribution of both explicit and implicit learning processes (Anguera et al., 2010; Benson et al., 2011; Bromberg et al., 2019; Coltman et al., 2021; de Brouwer et al., 2018; Haith et al., 2015; Huberdeau et al., 2015; Kim et al., 2021; Taylor et al., 2014). Traditionally, error-based learning has been characterized by gradual implicit changes in movement kinematics, such as the heading angle of the hand in response to perturbed sensory feedback during goal-directed reaching tasks (e.g., Figure 2A; a rotation of visual feedback; Held and Hein, 1958; Helmholz, 1909). These implicit changes in reach kinematics remain robust even when the perturbed sensory feedback is removed, and, in fact, persist when participants are instructed to reach directly toward the visual target, forgoing the use of any strategy. In essence, this form of implicit learning induces a kind of visuomotor illusion, where one thinks that they are moving in one direction (e.g., reaching straight ahead) but are actually moving in an adapted manner (e.g., reaching 20º clockwise of their intended movement direction). This type of mismatch, dubbed an ‘aftereffect’, is a canonical signature of implicit learning.
 
@@ -59,7 +59,7 @@ However, two key pieces of evidence highlight the fact that explicit strategies 
 
 Beyond visuomotor rotation learning, explicit strategies have also been shown to operate in other error-based adaptation tasks, such as saccade adaptation (Huang et al., 2017), force-field adaptation (Schween et al., 2020), target-jump adaptation (Leow et al., 2024; Sadaphal et al., 2022), prism adaptation (Leukel et al., 2015; Prablanc et al., 2020; Redding and Wallace, 2002), and locomotor adaptation (Ellmers et al., 2020; Malone and Bastian, 2010; Roemmich et al., 2016). The ubiquity of strategy use across such diverse paradigms speaks to its central importance in sensorimotor control.
 
-## Mirror-reversal learning
+### Mirror-reversal learning
 
 The task used in the classic patient H.M. study is now recognized as one of the most compelling cases for strategy use (Ewert, 1930; Sekiyama et al., 2000; Stratton, 1897; Sugita, 1996; Telgen et al., 2014). Recent efforts have been made to quantify the relative contribution of implicit and explicit components to mirror-reversal learning (Figure 2C; Hadjiosif et al., 2020; Lillicrap et al., 2013; Wilterson and Taylor, 2021; Yang et al., 2021). Based on verbal reports about the intended aiming position, over 90% of learning can be attributed to explicit strategies (Figure 2D). Additionally, the substantial time required for movement planning (Wilterson and Taylor, 2021), as well as learning impairments observed under dual-task conditions (Eversheim and Bock, 2001), all indicate that mirror reversal learning relies heavily on strategy use.
 
@@ -105,9 +105,48 @@ Learning complex motor skills is a uniquely challenging endeavor. This process r
 
 How humans achieve these impressive feats of complex motor skill acquisition remains poorly understood. This gap in knowledge partly stems from a long-standing neglect of the role of cognition in motor learning because such processes are generally hard to formalize and often exhibit high variability. Conversely, cognitive science frequently overlooks the role of motor control in decision-making; for example, many decisions are constrained by the sensorimotor outcomes associated with making a choice (Chen et al., 2017; McDougle et al., 2016a; Rmus and Zou, 2022). To make progress toward a comprehensive theory of motor learning, one that can explain the intricate cognitive–motor interactions that facilitate successful motor skill acquisition, we propose a ‘3R’ framework that integrates three fundamental concepts shared between the motor learning and cognitive science communities: reasoning, refinement, and retrieval. This new framework establishes a way to understand how new sensorimotor control policies – mappings between a learner’s state and context to an action – are acquired through reasoning, optimized through refinement, and automatized through retrieval.
 
-## Reasoning
+### Reasoning
 
 This involves understanding (often arbitrary) action–outcome relationships and using this knowledge to construct an effective control policy (Collins and Koechlin, 2012; Donoso et al., 2014; Heald et al., 2021; Lillicrap et al., 2013; Schone et al., 2023; Todorov and Jordan, 2002; Yang et al., 2021). To illustrate this concept, consider learning to ride a bicycle: one of the initial steps for the novice is to understand the relationship between the forces generated by the arms on the handlebars and the consequent movements of the bicycle (Table 1). Once the novice identifies the correct action–outcome relationship, she can leverage this physical intuition to derive a crude control policy (Allen et al., 2020; Battaglia et al., 2013; Fischer and Mahon, 2021).
+
+**Table 1.**
+ Reasoning, refinement, and retrieval in different motor skill learning contexts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Learning to bike</th>
+      <th>Learning to play tennis</th>
+      <th>Learning to play piano</th>
+      <th>Learning to walk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reasoning</td>
+      <td>Understanding the mapping between arm movements and direction of the bike</td>
+      <td>Understanding how different arm and wrist movements affect the trajectory of the ball</td>
+      <td>Understanding the relationship between musical notes and the required finger movements</td>
+      <td>Developing an intuition for how to distribute weight to achieve balance</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td>Fine-tuning the amplitude of movement for smooth and efficient cycling.</td>
+      <td>Fine-tuning the angle of the stroke and racquet grip to accurately hit the ball</td>
+      <td>Fine-tuning the force and timing to enhance emotional expression</td>
+      <td>Fine-tuning the muscular coordination to maintain balance while walking</td>
+    </tr>
+    <tr>
+      <td>Retrieval</td>
+      <td>Performing a flawless ‘Wheelie Drop’ when encountering stairs.</td>
+      <td>Executing a complex spin serve when finding the opponent in a favorable receiving position</td>
+      <td>Improvising new musical pieces by combining learned melodies</td>
+      <td>Rapid recovery from stumbles</td>
+    </tr>
+  </tbody>
+</table>
 
 Motor learning researchers can draw valuable insights from cognitive science, a field that has had considerable success in formalizing computational models of reasoning. One flavor of reasoning is ‘Inference over Hypotheses’ (Griffiths et al., 2010; Piantadosi et al., 2016; Rule et al., 2020; Xia and Collins, 2021), which entails two main components: a hypothesis space and means to evaluate the elements of that space. For motor skills, the former might consist of domain-specific action primitives such as ‘push the right arm forward’ or ‘pull the left arm backward’ and relational primitives such as ‘or’, ‘and’, ‘before’, and ‘after’. By combining these primitives, more complex hypotheses can be created; for example, ‘pushing the right arm forward and pulling the left arm backward will move the bike leftward’. The merits of the hypotheses can be evaluated via inference, where learners use sensory feedback to strengthen or weaken their beliefs about each hypothesis.
 
@@ -115,7 +154,7 @@ Reasoning as inference has several advantages over previous ‘lower level’ mo
 
 Reasoning can vary in the level of reportability and intentionality. Most often, reasoning is highly reportable and intentional (i.e., explicit and strategic). A learner might employ inferential reasoning to understand which set of primitives best explains the action–outcome relationship (e.g., “How should I best coordinate my arms to make a leftward turn on my bicycle?”) and/or abductive reasoning to identify the most plausible cause (e.g., “Did moving my right arm forward and left arm backward cause the bike to turn left?”). Reasoning may also be ineffable and unintentional, relying on computationally simpler and hypothesis-free approaches (Collins, 2018; Collins et al., 2017; Collins and Frank, 2012; Smith et al., 2023). For example, a learner may unconsciously adopt a simple win-stay/lose-shift heuristic, where successful actions are repeated, and unsuccessful actions are avoided. (It is debatable whether the use of heuristics constitutes reasoning or refinement.) Future studies are needed to precisely quantify how reasoning contributes to motor skill acquisition and explore whether and how reasoning processes help break down a complex skill into more learnable subcomponents.
 
-## Refinement
+### Refinement
 
 This entails adjusting movement parameters to better achieve a motor goal. Here the term ‘motor goal’ is used to highlight the distinction between abstract goals related to decision-making (“I need caffeine.”) and those related to movement (“I am going to grasp the handle of the coffee mug.”) (Molinaro and Collins, 2023a; Wong et al., 2015). This refinement process is crucial as it enables learners to fine-tune their control policy to achieve movement goals with increased accuracy, precision, and efficiency. Building on the previous example, once our novice cyclist understands how manipulation of the handlebars controls the bike’s heading angle, she needs to refine this skill, learning the optimal timing and amplitude of the motor commands needed for different types of turns. Similarly, in visuomotor adaptation tasks, this refinement process is evident when motor behavior, initially abrupt and erratic, transitions to a more gradual and precise tuning of the angular shift required to nullify residual errors (Taylor and Ivry, 2011; Taylor et al., 2014).
 
@@ -123,7 +162,7 @@ Refinement can be viewed as a process of utility maximization (Wolpert and Landy
 
 While the control policy associated with an explicit strategy could be re-parameterized, this may be achieved by another round of reasoning. Refinement, therefore, primarily refers to the iterative, implicit adjustment to a control policy. Indeed, the process of implicit sensorimotor recalibration described in the section ‘The contribution of strategy use in simple sonsorimotor learning tasks’ could be considered a form of refinement since it typically leads to improved performance, with accuracy being the primary utility that is maximized (but see Mazzoni and Krakauer, 2006; Morehead et al., 2017).
 
-## Retrieval
+### Retrieval
 
 This entails recalling a control policy that has proven efficient in achieving a motor goal. Once a cyclist has refined the control policy for maintaining a steady bike ride, this policy becomes stored as a long-term motor memory and, with appropriate contextual cues, can be readily retrieved (Heald et al., 2021; Xia and Collins, 2021). For example, after many hours of practice, our bike rider when encountering a set of stairs might execute a flawless ‘Wheelie Drop’, lifting the front wheel off the ground to bounce down on just the rear wheel. Similarly, in visuomotor adaptation tasks, the retrieval process becomes evident as motor behavior transitions from reportable and intentional to ineffable and automatic (Haith et al., 2015; Huberdeau et al., 2019; McDougle and Taylor, 2019). With repetition, the retrieval of a control policy will no longer entail preparation costs (Huberdeau et al., 2019).
 

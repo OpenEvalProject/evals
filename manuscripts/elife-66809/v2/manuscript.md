@@ -39,45 +39,101 @@ To overcome this barrier, we developed a new knockin mouse line wherein the AMPA
 
 ## Results
 
-## SEP-GluA1 knockin mouse line labels excitatory synapses
+### SEP-GluA1 knockin mouse line labels excitatory synapses
 
 Using homologous recombination, we generated a mouse knockin line (C57BL/6J background) that inserts SEP into the N-terminus of GRIA1, the gene that encodes the GluA1 AMPAR subunit. Homozygous knockin mice are viable, breed well, and appear to be physiologically and behaviorally normal (see below). This approach fluorescently labels all GluA1-containing AMPARs in the mice (Figure 1a–c), enabling robust visualization of excitatory synapses throughout the entire brain (Figure 1—figure supplement 1). We did observe a decrease in GluA1 mRNA and protein expression in our homozygote knockin line compared to wild type (WT; Figure 1d–f), most likely due to decreased stability of the resulting mRNA. Using biochemical fractionation to isolate synapses from mouse hippocampal tissue, we observed reduced expression of GluA1 in the postsynaptic density (PSD, 56.6% of WT mice) and in total membrane protein levels (P2, 44.4% of WT mice; Figure 1e and f). In contrast, we observed a trend of increased levels of GluA2 (P2, 107.9% of WT mice; PSD, 115.8% of WT mice) and GluA3 (P2, 113.4% of WT mice; PSD, 125.6% of WT mice) subunits in knockin mice, although these changes were not significant (Figure 1e and f). These results suggest that there might be a small compensatory increase of GluA2/GluA3 in the knockin line as a result of decreased GluA1 expression. Western blots of total lysates from either whole-brain or individual regions (hippocampus, cortex, and cerebellum) revealed that GluA1 expression levels were consistent across brain regions in knockin mice (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig1-v2.jpg)
+
+**Figure 1.:** (a) SEP tag (green) was targeted to extracellular N-terminus of GluA1 AMPARs (blue), enabling visualization of only the functional complement of AMPARs on the cell surface. SEP-GluA1 linkers depicted in magenta. (b) Schematic of genetic locus of SEP tag on exon 1, within the Gria1 gene encoding GluA1. Two linkers flank the SEP insert. (c) Live, confocal image of acute slice of SEP-GluA1. Note the bright fluorescent signal throughout hippocampus and neocortex, indicating widespread expression of SEP-labeled GluA1-containing AMPARs. Age- and coronal region-matched wild-type (WT) tissue was imaged with the same laser power and presented with identical contrast as SEP-GluA1. (d) Representative northern blot of mRNA expression of WT and SEP-GluA1 KI mice. SEP-GluA1 is noticeably larger than WT GluA1 due to the inclusion of the SEP tag. (e, f) Representative western blot and quantification of AMPA receptor subunit expression in hippocampus after normalization to PSD95 in the P2 and postsynaptic density (PSD) fractions of WT and SEP-GluA1 mice. GluA1 expression is reduced relative to WT (n = 7; ****p<0.0001, Student’s t-test). Full, uncropped blots of all bands can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Images are endogenous SEP-GluA1 signal (left side, PFA-fixed sections imaged on Keyence slide scanner at 10×) and in situ hybridization of Gria1 mRNA expression (right side, from Allen Brain Atlas). Homozygous SEP-GluA1 brains (100-μm-thick sections) at indicated anterior/posterior positions relative to bregma. SEP-GluA1 expression pattern is similar to GluA1 mRNA expression in wild-type (WT) mice throughout the brain.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Whole-brain total homogenate (5 μg) from wild-type (WT), heterozygous SEP-GluA1 (Het) or homozygous SEP-GluA1 (KI) mice was blotted for GluA1. Samples run on the same gel, with image cropped to put lanes next to each other. (b) S1 fractions (5 μg), as a proxy for total homogenate, from hippocampus (Hipp), cortex (Ctx), and cerebellum (Cereb) were blotted for GluA1. In both (a) and (b), the higher band indicates SEP-GluA1 and shows reduced total levels of GluA1 in KI animals irrespective of brain region.
 
 To validate the physiological function of our knockin line, we made whole-cell voltage-clamp recordings from CA1 pyramidal neurons in acute hippocampal slices of WT and homozygous SEP-GluA1 littermates. We observed no deficits in synaptic physiology or receptor trafficking in SEP-GluA1 mice (Figure 2). Our electrophysiological data in particular support that synapses with fluorescently labeled AMPARs function identically to WT synapses, with no discernible differences in the amplitude, frequency, or kinetics of miniature excitatory postsynaptic currents (mini EPSCs; Figure 2a–c) or rectification of the EPSCs (Figure 2d and e). We also observed that SEP-tagged GluA1 receptors were properly trafficked to the postsynaptic site and colocalized normally with other postsynaptic proteins, such as PSD-95 (Figure 2f–h). There was a highly significant correlation between SEP-GluA1 signal and immunofluorescence intensity of both PSD-95 and c-terminal GluA1 antibodies, indicating that all GluA1 receptors express SEP in our knockin mouse line (Figure 2g–i). Small differences in the appearance of dendritic shaft staining between SEP-GluA1 staining and c-terminal GluA1 staining might reflect a degree of nonspecific binding of the c-terminal GluA1 antibody or differences in epitope accessibility that result in higher apparent dendritic signal with c-terminal GluA1 staining (Figure 2f). However, the clear overlap of SEP-GluA1 and c-terminal GluA1 at synaptic puncta (Figure 2g and i) suggests proper trafficking and expression of SEP-GluA1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig2-v2.jpg)
 
-**Figure 2.:** (a–e) Whole-cell voltage-clamp recordings from CA1 neurons in acute hippocampal slices of aged-matched wild-type (WT) and homozygous SEP-GluA1 KI littermates. (a, b) Representative traces of miniature excitatory postsynaptic currents (EPSCs) from WT (black) and SEP-GluA1 knockinKI (green) mice. (c) Quantification of amplitude, frequency, and kinetics of miniature EPSCs. No differences were observed in any electrophysiological parameters between WT and KI mice. N = 16 and 18 cells from WT and KI, respectively. Unpaired t-tests were used for all comparisons. Mean ± SEM. mEPSC amplitude: WT 9.43 ± 0.20, N = 16; KI 10.26 ± 0.51, N = 18; p>0.05. Frequency: WT 0.33 ± 0.02; KI 0.33 ± 0.03122; p>0.05. Rise time: WT 2.46 ± 0.040; KI 2.49 ± 0.07; p>0.05. Tau decay: WT 8.49 ± 0.18; KI 8.83 ± 0.36; p>0.05. (d, e) No differences in rectification were observed between WT and KI mice. Rectification index is the negative slope of the IV curve (between –10 and –60 mV) divided by the positive slope (between +10 and + 50 mV). Mean ± SEM. WT: 1.32 ± 0.048, N = 12; KI: 1.33 ± 0.042, N = 16; p>0.05. (f–h) Confocal images of cultured SEP-GluA1 (green) neurons, with an mCherry cell-fill (red) and stained with antibodies for c-terminal-GluA1 (magenta) and PSD-95 (gray). Overlap of SEP-GluA1 with c-terminal-GluA1 (g) and SEP-GluA1 with PSD-95 (h) is rendered in white. (i) Quantifying overlap between endogenous SEP-GluA1 signal and immunofluorescence. A significant correlation is observed between the fluorescent intensity of endogenous SEP and the immunofluorescent signal of both GluA1 (R = 0.781, p<0.001, Pearson correlation, n = 332 spines) and PSD-95 (R = 0.623, p<0.001, Pearson correlation, n = 332 spines). Lines represent linear regression (thick black) with 95% confidence interval (thin gray).Figure 2—source data 1.Figure 2 plots.
+**Figure 2.:** (a–e) Whole-cell voltage-clamp recordings from CA1 neurons in acute hippocampal slices of aged-matched wild-type (WT) and homozygous SEP-GluA1 KI littermates. (a, b) Representative traces of miniature excitatory postsynaptic currents (EPSCs) from WT (black) and SEP-GluA1 knockinKI (green) mice. (c) Quantification of amplitude, frequency, and kinetics of miniature EPSCs. No differences were observed in any electrophysiological parameters between WT and KI mice. N = 16 and 18 cells from WT and KI, respectively. Unpaired t-tests were used for all comparisons. Mean ± SEM. mEPSC amplitude: WT 9.43 ± 0.20, N = 16; KI 10.26 ± 0.51, N = 18; p>0.05. Frequency: WT 0.33 ± 0.02; KI 0.33 ± 0.03122; p>0.05. Rise time: WT 2.46 ± 0.040; KI 2.49 ± 0.07; p>0.05. Tau decay: WT 8.49 ± 0.18; KI 8.83 ± 0.36; p>0.05. (d, e) No differences in rectification were observed between WT and KI mice. Rectification index is the negative slope of the IV curve (between –10 and –60 mV) divided by the positive slope (between +10 and + 50 mV). Mean ± SEM. WT: 1.32 ± 0.048, N = 12; KI: 1.33 ± 0.042, N = 16; p>0.05. (f–h) Confocal images of cultured SEP-GluA1 (green) neurons, with an mCherry cell-fill (red) and stained with antibodies for c-terminal-GluA1 (magenta) and PSD-95 (gray). Overlap of SEP-GluA1 with c-terminal-GluA1 (g) and SEP-GluA1 with PSD-95 (h) is rendered in white. (i) Quantifying overlap between endogenous SEP-GluA1 signal and immunofluorescence. A significant correlation is observed between the fluorescent intensity of endogenous SEP and the immunofluorescent signal of both GluA1 (R = 0.781, p<0.001, Pearson correlation, n = 332 spines) and PSD-95 (R = 0.623, p<0.001, Pearson correlation, n = 332 spines). Lines represent linear regression (thick black) with 95% confidence interval (thin gray).
 
-## Intact synaptic plasticity and normal behavior in SEP-GluA1 knockin mice
+### Intact synaptic plasticity and normal behavior in SEP-GluA1 knockin mice
 
 Homeostatic and Hebbian plasticity are the two major forms of synaptic plasticity that function cooperatively to keep neural circuits stable and plastic, respectively (Bliss and Lomo, 1973; O’Brien et al., 1998; Turrigiano et al., 1998). This novel knockin line represents a powerful tool to study both of these mechanisms as they are each known to be expressed via dynamic regulation of synaptic AMPARs. To evaluate if homeostatic plasticity is intact in our knockin line, we made primary cultures of cortical neurons from homozygous SEP-GluA1 mice and WT littermates and treated them with either tetrodotoxin (TTX) or bicuculline for 2 days to induce up- or downscaling, respectively (Figure 3a and b). As expected, WT neurons exhibited a significant reduction of surface AMPARs following bicuculline treatment and showed an elevation of surface GluA1 and GluA2 after TTX treatment. SEP-GluA1 knockin neurons displayed a similar bidirectional change of surface AMPARs following bicuculline and TTX treatments, indicating comparable homeostatic plasticity in SEP-GluA1 and WT mice. To assess Hebbian plasticity, we compared the expression of LTP in WT and homozygous SEP-GluA1 littermates (Figure 3c–e) as GluA1 knockout mice show deficits in LTP (Zamanillo et al., 1999). We performed whole-cell voltage-clamp recordings of synaptically evoked EPSCs in CA1 pyramidal cells in acute hippocampal slices of 3–4-week-old mice. After a baseline period of at least 5 min, a pairing stimulus consisting of 2 Hz synaptic stimulation and somatic depolarization to 0 mV was delivered, after which we resumed monitoring the amplitude of evoked EPSCs (Figure 3d). This pairing protocol induced a long-lasting increase in EPSC amplitude in both WT and knockin neurons (n = 8 cells from each genotype), consistent with induction of LTP. We observed no differences in either induction or expression of LTP between WT and SEP-GluA1 littermates (Figure 3e). Overall, these data strongly support that our knockin labeling strategy does not impair synaptic transmission and plasticity.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig3-v2.jpg)
 
-**Figure 3.:** (a) Representative western blot of surface GluA1, GluA2, and GluA3 in wild-type (WT) and KI mouse neurons under baseline conditions (Con), following homeostatic downscaling in bicuculline (Bic), and following homeostatic upscaling in tetrodotoxin (TTX). (b) Bar plot of all homeostatic plasticity experiments (n = 7–8; *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA). (c) Induction of long-term potentiation (LTP) in WT and SEP-GluA1 KI mice. Fluorescent image depicting experimental setup. CA1 pyramidal neurons were patched and filled with Alexa-594. A stimulating electrode in stratum radiatum was used to evoke excitatory postsynaptic currents (EPSCs). After recording baseline EPSCs for at least 5 min, a pairing protocol consisting of 200 pulses was delivered at 2 Hz. (d) Average EPSC amplitude normalized to baseline for WT (black) and KI (green) littermates over course of LTP induction. Inset: example traces of EPSCs from baseline (black) and 30–40 min following LTP induction (WT gray and KI green). (e) Average change in EPSC amplitude normalized to the baseline period for WT and SEP-GluA1 KI littermates. A significant potentiation of EPSC amplitude was observed in both WT and KI mice, which was not different between genotypes, indicating normal induction and expression of LTP in SEP-GluA1 KI mice. Unpaired t-tests, p>0.05, mean ± SEM; WT: 1.66 ± 0.17, n = 8; KI: 1.59 ± 0.34, n = 8. Full, uncropped blots of all bands can be found in Figure 1—source data 1.Figure 3—source data 1.Figure 3a.Blots were stained for surface expression of GluA1 (top), GluA2 (middle), and GluA3 (bottom). Lanes corresponding to control (Con), bicuculline (Bic), and tetrodotoxin (TTX) conditions are indicated, for both wild-type (WT) and SEP-GluA1 mice. Size ladder is indicated in magenta. Each blot contains two biological replicates. Black boxes indicate cropped regions of representative blots in Figure 3a.Figure 3—source data 2.Figure 3a.Figure 3—source data 3.Figure 3a.Figure 3—source data 4.Figure 3a.Figure 3—source data 5.Figure 3 plots.
+**Figure 3.:** (a) Representative western blot of surface GluA1, GluA2, and GluA3 in wild-type (WT) and KI mouse neurons under baseline conditions (Con), following homeostatic downscaling in bicuculline (Bic), and following homeostatic upscaling in tetrodotoxin (TTX). (b) Bar plot of all homeostatic plasticity experiments (n = 7–8; *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA). (c) Induction of long-term potentiation (LTP) in WT and SEP-GluA1 KI mice. Fluorescent image depicting experimental setup. CA1 pyramidal neurons were patched and filled with Alexa-594. A stimulating electrode in stratum radiatum was used to evoke excitatory postsynaptic currents (EPSCs). After recording baseline EPSCs for at least 5 min, a pairing protocol consisting of 200 pulses was delivered at 2 Hz. (d) Average EPSC amplitude normalized to baseline for WT (black) and KI (green) littermates over course of LTP induction. Inset: example traces of EPSCs from baseline (black) and 30–40 min following LTP induction (WT gray and KI green). (e) Average change in EPSC amplitude normalized to the baseline period for WT and SEP-GluA1 KI littermates. A significant potentiation of EPSC amplitude was observed in both WT and KI mice, which was not different between genotypes, indicating normal induction and expression of LTP in SEP-GluA1 KI mice. Unpaired t-tests, p>0.05, mean ± SEM; WT: 1.66 ± 0.17, n = 8; KI: 1.59 ± 0.34, n = 8. Full, uncropped blots of all bands can be found in Figure 1—source data 1.
 
 To further validate our SEP-GluA1 knockin line, we conducted a battery of behavioral experiments as GluA1 knockout mice show deficits in several behaviors, including locomotor activity, anxiety, and spatial memory (Bannerman et al., 2004; Boerner et al., 2017; Bygrave et al., 2019; Sanderson et al., 2007). We assessed these behaviors in cohorts of SEP-GluA1 and WT littermates that were age-matched (both 6–10 weeks) and contained similar numbers of both sexes (SEP-GluA1: nine females and seven males; WT: nine females and nine males). We assessed locomotor activity by placing animals in an open arena and measuring the number of beam breaks during a 30 min session. We observed no differences in the time course or total number of beam breaks between WT and SEP-GluA1 mice (Figure 4a and b). Anxiety was assessed using an elevated plus maze, consisting of two closed arms and two open arms, suspended above the ground. We observed no differences in time spent in the open arms between WT and SEP-GluA1 mice (Figure 4c and d). Spatial short-term memory was assessed using a Y-maze, consisting of three arms and surrounded by distal spatial cues. During the initial exposure phase, one arm was blocked with a clear plexiglass barrier. After exploring the two unblocked arms of the maze, mice were returned to their home cage for 1 min, and then re-exposed to the maze for the test phase, wherein the barrier was removed. WT and SEP-GluA1 mice displayed a similar preference for the novel arm (Figure 4e and f). Overall, these data strongly support that our knockin labeling strategy does not impair behavior as SEP-GluA1 mice display comparable locomotion, anxiety, and short-term memory to WT animals.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig4-v2.jpg)
 
-**Figure 4.:** (a, b) SEP-GluA1 mice display normal locomotion. Age-matched, WT (n = 18) and homozygous SEP-GluA1 KI (n = 16) littermates were placed in an open chamber and locomotion was assessed by counting the total number of beam breaks in a 30 min session. No differences were detected between wild-type (WT) and KI mice (repeated measures ANOVA; F1,30 = 1.561, p=0.221), between sexes (F1,30 = 1.346, p=0.255), or in a sex * genotype-dependent manner (F1,30 = 0.3, p=0.588). (c, d) SEP-GluA1 mice display normal anxiety. WT (n = 18) and KI (n = 16) littermates were placed in an elevated plus maze and anxiety was assessed by measuring the time spent in the open arm. For representative WT and KI animals, time spent in a particular location is indicated in pseudo color, with warm colors indicating higher occupancy. No differences were detected between WT and KI mice (ANOVA; F1,30 = 1.545, p=0.224), between sexes (F1,30 = 0.160, p=0.692), or in a sex * genotype-dependent manner (F1,30 = 4.139, p=0.051). (e, f) SEP-GluA1 mice display normal short-term spatial memory. Spatial novelty preference was assessed in WT (n = 18) and KI (n = 16) littermates using a Y-maze. WT and KI mice showed a preference for exploration of the novel arm. For representative WT and KI animals, time spent in a particular location is indicated in pseudo color, with warm colors indicating higher occupancy. There was no difference in the time preference ratio (time in novel arm/(time in novel arm + time in familiar arm)) between genotypes (ANOVA; F1,30 = 0.004, p=0.951), between sexes (F1,30 = 1.277, p=0.267), or in a sex * genotype-dependent manner (F1,30 = 2.434, p=0.129). Dotted line indicates chance-level performance.Figure 4—source data 1.Figure 4 plots.
+**Figure 4.:** (a, b) SEP-GluA1 mice display normal locomotion. Age-matched, WT (n = 18) and homozygous SEP-GluA1 KI (n = 16) littermates were placed in an open chamber and locomotion was assessed by counting the total number of beam breaks in a 30 min session. No differences were detected between wild-type (WT) and KI mice (repeated measures ANOVA; F1,30 = 1.561, p=0.221), between sexes (F1,30 = 1.346, p=0.255), or in a sex * genotype-dependent manner (F1,30 = 0.3, p=0.588). (c, d) SEP-GluA1 mice display normal anxiety. WT (n = 18) and KI (n = 16) littermates were placed in an elevated plus maze and anxiety was assessed by measuring the time spent in the open arm. For representative WT and KI animals, time spent in a particular location is indicated in pseudo color, with warm colors indicating higher occupancy. No differences were detected between WT and KI mice (ANOVA; F1,30 = 1.545, p=0.224), between sexes (F1,30 = 0.160, p=0.692), or in a sex * genotype-dependent manner (F1,30 = 4.139, p=0.051). (e, f) SEP-GluA1 mice display normal short-term spatial memory. Spatial novelty preference was assessed in WT (n = 18) and KI (n = 16) littermates using a Y-maze. WT and KI mice showed a preference for exploration of the novel arm. For representative WT and KI animals, time spent in a particular location is indicated in pseudo color, with warm colors indicating higher occupancy. There was no difference in the time preference ratio (time in novel arm/(time in novel arm + time in familiar arm)) between genotypes (ANOVA; F1,30 = 0.004, p=0.951), between sexes (F1,30 = 1.277, p=0.267), or in a sex * genotype-dependent manner (F1,30 = 2.434, p=0.129). Dotted line indicates chance-level performance.
 
-## SEP-GluA1 reports synaptic plasticity in vitro
+### SEP-GluA1 reports synaptic plasticity in vitro
 
 To examine the function of individual SEP-GluA1 synapses, we used whole-cell voltage-clamp recordings from primary cultures of homozygous SEP-GluA1 pyramidal neurons to measure evoked responses with 2p glutamate uncaging. To visualize dendritic spines, neurons were filled with a red fluorescent dye via the patch pipette. Glutamate uncaging was targeted to the tip of spine heads (Figure 5a) and the resulting uncaging-evoked excitatory postsynaptic current (uEPSC) was recorded (Figure 5b). We found a significant correlation between SEP-GluA1 fluorescence intensity and uEPSC amplitude (Figure 5c), indicating that SEP fluorescent intensity can be used as a proxy for synaptic strength.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig5-v2.jpg)
+
+**Figure 5.:** (a) Two-photon (2p) image of a cultured SEP-GluA1 neuron filled with Alexa-594 via somatic patch pipette, imaged at 910 nm, with locations of glutamate uncaging indicated as blue dots and manually identified dendritic spines circled in yellow. (b) Representative uncaging-evoked excitatory postsynaptic current (uEPSC) following 1 ms pulse of 730 nm light at 20 mW (blue dot) in 2.5 mM MNI-glutamate. (c) Significant linear correlation between SEP-GluA1 intensity and uEPSC amplitude. SEP-GluA1 intensity was defined as the sum of green fluorescence intensity within manual synaptic annotations from five adjacent 0.5-μm-spaced Z-planes. n = 155 spines from 22 cells (*p<0.05, Pearson’s chi-squared test). (d–f) Tracking synaptic plasticity with SEP-GluA1 in vitro. (d) Plots of SEP-GluA1 intensity and uEPSC amplitude 5 min before and 30 min after delivery of a long-term potentiation (LTP) induction stimulus consisting of high-frequency pairing of glutamate uncaging (30 pulses at 0.5 Hz, 1 ms pulse of 730 nm laser) and postsynaptic depolarization (0 mV for 0.5 s, beginning concurrently with uncaging pulse). Red, spines that received LTP stimulus (n = 10); black, spines that did not receive LTP stimulus (n = 42). *p<0.01 using one-way ANOVA. (e) Longitudinal images of two control spines and one spine that received LTP stimulus. (f) Representative uEPSCs during the baseline period (–5 min) and 30 min after LTP induction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Ratios of SEP-GluA1 intensity and uncaging-evoked excitatory postsynaptic current (uEPSC) amplitude at 30 min vs. –5 min, for both potentiated (closed symbols, n = 10) and unpotentiated spines (open symbols, n = 42). Potentiation stimulus was 30 1 ms pulses of 730 nm light at 0.5 Hz, paired with postsynaptic depolarization to 0 mV for 0.5 s, beginning concurrently with uncaging pulse. The ratio of SEP-GluA1 intensity (green circles) did not change in control unpotentiated spines, but was significantly increased in potentiated spines (p<0.05, one-sample t-test compared to a baseline of 1.0). The ratio of uEPSC amplitude (black triangles) did not change in control unpotentiated spines, but was significantly increased in potentiated spines (p<0.01, one-sample t-test compared to a baseline of 1.0). (b) Significant linear correlation between SEP-GluA1 intensity and uEPSC amplitude in both potentiated (closed blue triangles) and unpotentiated (open black circles) spines (*p<0.05, Pearson’s chi-squared test). Note that potentiated spines display greater SEP-GluA1 intensity and uEPSC amplitude compared to unpotentiated spines.
+
 We further used the SEP-GluA1 knockin line to track changes in synaptic strength following induction of synaptic plasticity in vitro in primary cultures of hippocampal neurons. Using 2p imaging, glutamate uncaging, and whole-cell patch-clamp recordings from pyramidal neurons, we tracked SEP intensity and functional synaptic strength of spines that received high-frequency glutamate uncaging paired with postsynaptic depolarization versus spines that did not receive this pairing. We found that this pairing stimulus significantly increased uEPSC amplitude and SEP fluorescence in stimulated spines (n = 10; p<0.01 relative to baseline, one-way ANOVA), consistent with induction of LTP, whereas spines that received only postsynaptic depolarization unpaired with glutamate uncaging did not display similar changes (n = 42 spines; Figure 5d–f). The strong correlation between SEP-GluA1 intensity and uEPSC amplitude is observed in both potentiated and unpotentiated spines, suggesting that the concentration of synaptic GluA1-containing AMPARs reflects functional synapse strength at baseline and following plasticity (Figure 5—figure supplement 1). These data highlight the power of the SEP-GluA1 knockin line as a tool to monitor widespread synaptic strength and plasticity via fluorescence imaging.
 
-## SEP-GluA1 expression is regulated by a dynamic process in vivo
+### SEP-GluA1 expression is regulated by a dynamic process in vivo
 
 To confirm that SEP-GluA1 fluorescence reports AMPAR dynamics in vivo, we used in vivo 2p fluorescence recovery after photobleaching (FRAP) to measure SEP-GluA1 turnover rate. To visualize dendritic spines, AAV-CaMKII-Cre viral injections were performed in L2/3 of somatosensory cortex in SEP-GluA1 knockin × Ai9 (a tdTomato reporter line) double homozygous mice. The same area of cortex was imaged at baseline and following photobleaching (Figure 6a). Spines targeted for photobleaching resulted in ~50% reduction of fluorescence in SEP-GluA1 and ~13% decrease in fluorescence in tdTomato (Figure 6—figure supplement 1). FRAP results confirmed that SEP-GluA1 signal in our knockin line represents slowly mobile molecules, supporting that SEP-AMPARs are normally targeted to the plasma membrane, in contrast to the tdTomato signal, which is freely diffusible and thus recovers more quickly (Figure 6—figure supplement 1). We also found that the SEP-GluA1 signal recovered in two phases after photobleaching (Figure 6b). In the initial exponential phase (up to 30 min), SEP-GluA1 reaches a plateau at 50% fluorescence recovery. This result suggests that about half of the GluA1-containing AMPARs at the spines are part of the mobile fraction and, therefore, readily available to be exchanged with AMPAR pools outside the spine. This mobile fraction has been previously characterized by several in vitro and in vivo studies, although with different timescales. The timeline for mobile spine AMPAR exchange in cultured neurons has ranged from 5 min to periods longer than 15 min depending on the experimental conditions (Ashby et al., 2006; Fang et al., 2021; Frischknecht et al., 2009; Lee et al., 2017; Martin et al., 2009; Sharma et al., 2006). However, in the intact brain, the mobile AMPARs are exchanged after 30 min (Chen et al., 2021), in agreement with our observations. These results confirm that SEP-GluA1 is regulated by a cellular process that controls the dynamic exchange of molecules at the synapses, as would be expected for endogenous synaptic proteins.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig6-v2.jpg)
+
+**Figure 6.:** (a) Representative in vivo two-photon (2p) images throughout fluorescence recovery after photobleaching (FRAP) in a SEP-GluA1 mouse. A sparse subset of neurons was filled with tdTomato to visualize dendrites and spines. Yellow arrows denote spines that were bleached (at t = 0 min; bleaching area depicted in parentheses) and spines that were not bleached are indicated by white arrows. Scale bar 10 µm. (b) Fluorescence recovery of SEP-GluA1 signal after photobleaching in spines of L2/3 excitatory neurons in mouse somatosensory cortex. Symbols represent mean and error bars represent SEM. Time points between 0 and 30 min were fitted to a one-phase decay exponential curve (solid line), with plateau = 0.526 ± 0.057, rate constant of recovery (k) = 0.09 ± 0.027 (value ± SEM) and tau = 11.15 min. Shaded area represents 95% confidence interval of the fit. n = 66 spines from three mice. (c) Heatmap of SEP-GluA1 signal from individual bleached and unbleached spines normalized to their respective baseline at different time points throughout FRAP. Rows represent individual spines sorted by signal intensity immediately after photobleaching (t = 0 min). Bleached spines: n = 66 spines from three mice. Unbleached spines: n = 132 spines from three mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Relative fluorescence levels (normalized to their respective baseline) of tdTomato cell fill and SEP-GluA1 in spines of L2/3 excitatory neurons in mouse somatosensory cortex at indicated time points during fluorescence recovery after photobleaching (FRAP). Symbols represent mean and error bars represent SEM. n = 66 spines from three mice.
+
 The second phase at later time points represents a full recovery of SEP-GluA1 signal, indicating a complete turnover of synaptic GluA1-containing AMPARs in vivo within hours after photobleaching. This second AMPAR fraction is characterized by slower dynamics, probably due to protein interactions and molecular crowding within the PSD that limit AMPAR mobility (Bats et al., 2007; Li et al., 2016). The timescale presented in this study is supported by previous observations that establish a similar time course between synaptic AMPAR remodeling and AMPAR metabolic half-life (~18 hr for GluA1 subunit) in neuronal cultures (Mammen et al., 1997; O’Brien et al., 1998). In addition, these results demonstrate that we can track the same individual bleached and unbleached synapses longitudinally over several imaging sessions across consecutive days (Figure 6a and c). This is the first time that endogenous AMPAR recycling has been studied in vivo for up to 24 hr, providing valuable insights into basal AMPAR turnover dynamics in the intact brain and supporting that these tools can be used to longitudinally track synapse strength. Overall, these results confirm that SEP-GluA1-containing synapses are mobile and present similar dynamics as other in vitro and in vivo systems, supporting that our knockin labeling strategy does not perturb normal synaptic dynamics or function.
 
-## Developing computational tools to detect and track labeled synapses in vivo
+### Developing computational tools to detect and track labeled synapses in vivo
 
 To observe AMPAR dynamics in living mice on a large scale, we implanted cranial windows over somatosensory cortex in homozygous SEP-GluA1 mice and used 2p microscopy to visualize endogenously labeled synapses (Figure 7a–f and Videos 1–3). The observed bright green punctate fluorescence reflects synaptic enrichment of GluA1, likely corresponding to the functional complement of GluA1-containing AMPARs at the PSD (Figure 7b and c). Given the richness and scale afforded by this knockin line (Videos 1–3), which endogenously labels all GluA1-containing synapses throughout the brain, manual annotation of labeled synapses was not feasible. Thus, to automatically detect and segment extremely large numbers of SEP-labeled synapses, we developed an unsupervised machine learning algorithm based on 3D Wiener filtering, employing pre-whitened matched templates based on the mean appearance of manually annotated synapses relative to background noise. This approach enabled flexibility to tune segmentations based on accuracy criteria, such as tradeoffs between sensitivity and specificity, as well as prior information about synapse size and shape.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig7-v2.jpg)
+
+**Figure 7.:** (a) Schematic of in vivo 2p imaging. (b) Large-scale automatic detection and segmentation of SEP-GluA1-containing synapses in L1 barrel cortex. Automatically detected synapses are rendered in arbitrary colors. Dark areas likely correspond to either vasculature or cell bodies. (c) Single in vivo imaging plane showing SEP-GluA1 synapses (green) and a single layer 2/3 pyramidal cell filled with tdTomato (magenta). White arrow denotes a spine devoid of SEP-GluA1 signal. (d) SEP-GluA1 is enriched in dendritic spines. 78% of automatically detected dendritic spines (visualized using a sparse tdTomato cell fill) contained a SEP-GluA1 synapse, defined as edge-to-edge separation of red spines and green puncta <0.25 μm. This overlap occurred at a substantially higher rate than chance as the distance between spines (magenta channel) and their nearest SEP neighbor (green channel) significantly increased when the magenta channel was rotated either 90, 180, or 270° relative to green (n = 504 spines; *p<0.001; Mann–Whitney U test, relative to unrotated). (e) GluA1-containing synapses were uniformly detected throughout L1 barrel cortex, up to a depth of 100 μm below the pial surface. (f) Left: single in vivo imaging plane displaying raw, unprocessed SEP-GluA1 signal, taken 47 μm deep in layer 1 (L1) of barrel cortex. Putative GluA1-containing synapses are identified as bright puncta. Manual synaptic annotations are overlaid as blue ovals. Right: same cortical plane, but with automatically identified and segmented synapses rendered in arbitrary colors. Manual annotations are overlaid, recolored either green or magenta, corresponding to true positives (defined as >50% of total 3D voxels shared between manual and automatic annotations) or false negative (defined as manual annotations that did not overlap with an automatic detection), respectively; false positives (defined as automatically detected synapses that did not overlap with a manual annotation) are indicated by an X. Scale bar is 1 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** For all plots, rates of agreement (positive annotation in both channels being compared) are shown in white and errors (positive annotation in one channel and negative in the other) are shown in magenta or green. Left: IHC ground truth is comparison of overlap of automatically detected SEP-GluA1 and Homer puncta in vitro. Middle: human vs. automatic is comparison of overlap of automatically detected SEP-GluA1 and manually annotated SEP-GluA1 from the same volume of tissue imaged in vivo. Right: human vs. human is comparison of overlap between two different expert human annotators from the same volume of tissue imaged in vivo. For all comparisons, a threshold of >50% shared voxels defined overlap.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Workflow to establish ground truth of synapse detection. (b) Representative, raw image of in vitro two-photon (2p) signal of layer I SEP-GluA1 (green) barrel cortex stained with a Homer antibody (magenta); voxels displaying overlap of SEP-GluA1 and Homer are rendered in white. (c) Schematic of masking to remove low-intensity regions. Regions lacking detectable SEP fluorescence were excluded by thresholding, removing areas with a z score of less than –1 in a blurred image (see Materials and methods). (d) Zoomed-in image of raw in vitro 2p signal, with overlaid automatic detections/segmentations of SEP-GluA1 (green circles) and Homer (magenta circles). (e) Quantification of ground truth for synapse detection. True positive rate reflects rate of overlap between SEP-GluA1 and Homer, false-positive rate reflects rate of SEP-GluA1 detection without overlapping Homer, and false-negative rate reflects rate of Homer detection without overlapping SEP-GluA1. A threshold of >50% total voxel overlap defined overlap.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (a–c) Reconstructed PSF from averaged 2p images of 1 μm TetraSpeck microspheres imaged at 910 nm in the GFP channel (scale bar: 1 μm). PSF fluorescence intensity profiles were visualized across the intensity center of the z- (a), y- (b), and x-axes (c). (d, e) Linear profile of normalized intensity distribution shown in (a–c). The full width at half maximum (FWHM) of these profiles gives a direct estimate of the radial (d) and axial (e) PSF.
+
+![Video 1.](https://cdn.elifesciences.org/articles/66809/elife-66809-video1.mp4.jpg)
+
+**Video 1.:** The imaging volume displayed is 98 × 98 × 130 μm section of layer I barrel cortex, with SEP-GluA1 synapses in green and a sparse cell fill in magenta. Overlap between green/magenta voxels is rendered in white. The video begins at the pial surface, moving ventrally towards layer II/III, with depth indicated in the lower right. Note the high density of green puncta, each corresponding to a single GluA1-containing synapse. Punctate synaptic labels are observed uniformly up to a depth of ~100 μm, below which the signal begins to degrade, likely due to light scattering. In this SEP-GluA1 × Ai9 mouse, a random subset of layer II/III pyramidal cells was filled using a dilute (1:20k) AAV-CaMK2-Cre virus. Voxel size is 0.096 × 0.096 × 1 μm. Resolution is 1024 × 1024 pixels in XY and a 1 μm step size. Images were median filtered with a radius of 1 and contrast enhanced. Scale bar is 10 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/66809/elife-66809-video2.mp4.jpg)
+
+**Video 2.:** The imaging volume displayed is a 30 × 30 × 15 μm section of layer I barrel cortex. Note the enrichment of SEP-GluA1 puncta (green) in dendritic spines (magenta) and the paucity of SEP signal in the dendritic shaft. There are many green puncta outside of the filled cell, likely corresponding to GluA1-containing synapses in spines of unlabeled cells. 3D volume was rendered using Imaris. Dynamic scale bar in lower left.
+
+![Video 3.](https://cdn.elifesciences.org/articles/66809/elife-66809-video3.mp4.jpg)
+
+**Video 3.:** 35 × 50 × 15 μm imaging volume. Note the extreme density of green puncta, each corresponding to a single GluA1-containing synapse. Rendered using Imaris. Dynamic scale bar in lower left.
 
 To validate our computer vision-based automatic synapse detection platform, two expert synaptic anatomists manually annotated thousands of individual SEP-GluA1 synapses from in vivo volumes of somatosensory cortex (Figure 7f). We found relatively low inter-rater reliability (72.3% agreement, defined as >50% shared voxels; Figure 7—figure supplement 1). Thus, rather than attempting to design an algorithm that reproduces highly variable human intuition, we chose to carefully define what an observed synapse looks like through a system of rules. Our segmentation algorithm is unique in that we interpret its output as the physical definition of a synapse. Our algorithm uses the following rules to define a synapse and its boundaries: (1) a candidate synapse is defined as a local maximum in an image blurred using a Gaussian kernel with standard deviation of 5 pixels in the XY plane and 1 pixel out of plane; (2) candidate synapses are not less than 3 pixels away from each other, as determined by a furthest first traversal; (3) synapses are ellipses in the XY plane, with eccentricity between 1.0 and –2.5; (4) synapses have an area between 20 and 150 pixels in the XY plane, corresponding to a circle of area 0.125–1.25 μm2 (though ovals were also considered); these constraints were based on mean synapse size from electron microscopy datasets (Santuy et al., 2020); (5) a synapse shape is chosen to be the size and orientation and eccentricity that maximizes signal-to-noise ratio (SNR) (template matching); (6) SNR should be larger than the 90th percentile of 300 randomly chosen locations; (7) averaging two neighboring slices should increase SNR; and (8) averaging six neighboring slices should decrease SNR.
 
@@ -93,9 +149,9 @@ To accurately estimate our synaptic detection resolution boundaries, we measured
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/66809/elife-66809-fig8-v2.jpg)
 
-**Figure 8.:** (a) Schematic of whisker stimulation and in vivo imaging of barrel cortex. The control unstimulated (D3) and stimulated barrel (C2) were imaged twice at baseline. The C2 whisker was mechanically stimulated with 10 Hz vibration for 1 hr, after which imaging of both barrels resumed. (b) Distribution of normalized SEP-GluA1 intensity in barrel cortex over time in one representative homozygous SEP-GluA1 mouse. Left: distribution of SEP-GluA1 intensity was stable over time in the control, unstimulated D3 barrel. Right: significant rightward shift in SEP-GluA1 intensity in the C2 barrel following whisker stimulation (for 1 hr, between the 1 and 2 hr time points), indicating net synaptic potentiation. **p<0.01, Mann–Whitney U test relative to within-mouse baseline period (pooled 0 and 1 hr time points). (c) Whisker stimulation induces barrel-selective synaptic potentiation. Plot of mean SEP-GluA1 fluorescent intensity from all automatically detected SEP puncta over time in the control (black, D3) and stimulated (red, C2) barrel. n = 4 mice, **p<0.01, two-way ANOVA, comparing each imaging session to the two pooled baseline sessions (0 and 1 hr). Error bars represent standard deviation. (d) Whisker stimulation induces barrel-selective synapse enlargement. Plot of mean area of all automatically detected SEP puncta over time in the control (black, D3) and stimulated (red, C2) barrel. Synapse area was defined as the maximum area in a single 2D imaging plane for each automatically segmented SEP-GluA1 puncta. *p<0.05, two-way ANOVA, comparing each imaging session to the two pooled baseline sessions (0 and 1 hr). (e) Number of detected synapses was stable over time. Total synapse count from each individual mouse (thin gray) and mean (n = 4, thick black) are presented.Figure 8—source data 1.Figure 8 plots.
+**Figure 8.:** (a) Schematic of whisker stimulation and in vivo imaging of barrel cortex. The control unstimulated (D3) and stimulated barrel (C2) were imaged twice at baseline. The C2 whisker was mechanically stimulated with 10 Hz vibration for 1 hr, after which imaging of both barrels resumed. (b) Distribution of normalized SEP-GluA1 intensity in barrel cortex over time in one representative homozygous SEP-GluA1 mouse. Left: distribution of SEP-GluA1 intensity was stable over time in the control, unstimulated D3 barrel. Right: significant rightward shift in SEP-GluA1 intensity in the C2 barrel following whisker stimulation (for 1 hr, between the 1 and 2 hr time points), indicating net synaptic potentiation. **p<0.01, Mann–Whitney U test relative to within-mouse baseline period (pooled 0 and 1 hr time points). (c) Whisker stimulation induces barrel-selective synaptic potentiation. Plot of mean SEP-GluA1 fluorescent intensity from all automatically detected SEP puncta over time in the control (black, D3) and stimulated (red, C2) barrel. n = 4 mice, **p<0.01, two-way ANOVA, comparing each imaging session to the two pooled baseline sessions (0 and 1 hr). Error bars represent standard deviation. (d) Whisker stimulation induces barrel-selective synapse enlargement. Plot of mean area of all automatically detected SEP puncta over time in the control (black, D3) and stimulated (red, C2) barrel. Synapse area was defined as the maximum area in a single 2D imaging plane for each automatically segmented SEP-GluA1 puncta. *p<0.05, two-way ANOVA, comparing each imaging session to the two pooled baseline sessions (0 and 1 hr). (e) Number of detected synapses was stable over time. Total synapse count from each individual mouse (thin gray) and mean (n = 4, thick black) are presented.
 
-## SEP-GluA1 reports synaptic plasticity underlying sensory stimulation
+### SEP-GluA1 reports synaptic plasticity underlying sensory stimulation
 
 To demonstrate the utility of the SEP-GluA1 knockin line and our automated synapse detection algorithm, we investigated synaptic dynamics in barrel cortex during whisker stimulation. Mouse somatosensory cortex displays an exquisite somatotopic map, wherein each individual whisker is represented by a discrete cortical area. These so-called barrels provide an ideal tableau to investigate activity-dependent plasticity underlying encoding of sensory stimulation. Previous work has shown that whisker stimulation can induce NMDA receptor-dependent LTP in layer 2/3 cells (Gambino et al., 2014; Holtmaat and Caroni, 2016; Zhang et al., 2015). To investigate how this sensory stimulation may be stored within vast synaptic networks, we surgically implanted cranial windows over barrel cortex in adult SEP-GluA1 mice (2–4 months old). Using optical-intrinsic imaging during passive whisker stimulation, we identified barrels corresponding to the C2 and D3 whiskers (Figure 8a). We imaged SEP-GluA1 fluorescence at high resolution within 100 μm cubed volumes of layer I somatosensory cortex. By registering volumes to vasculature and other fiducial markers, we were able to longitudinally image the same cortical volumes in each barrel for 3–5 hr. To confine our analysis to precisely the same neural volumes throughout sensory stimulation, we further employed post hoc rigid-body transformations to longitudinally align neural volumes.
 
@@ -121,27 +177,205 @@ In conclusion, we aim to fundamentally advance our understanding of the synaptic
 
 ## Materials and methods
 
-## Neuronal culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA1C-terminal(rabbit polyclonal)</td>
+      <td>Oku and Huganir, 2013</td>
+      <td>JH4294</td>
+      <td>(1: 2000)Made in houseShared upon request</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab13970RRID:AB_300798</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Psd-95(mouse monoclonal)</td>
+      <td>NeuroMab</td>
+      <td>Clone K28/43Cat # 75-028RRID:AB_2292909</td>
+      <td>IF (1:500)WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Homer 1(rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>160-003</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA2N-terminal(mouse monoclonal)</td>
+      <td>This paper</td>
+      <td>032.19.9</td>
+      <td>(1:2000)Made in houseShared upon request</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA3N-terminal(rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>JH4300</td>
+      <td>(1:1000)Made in houseShared upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>SEP-GluA1 primary cultured neurons</td>
+      <td>This paper</td>
+      <td>SEP-GluA1</td>
+      <td>Made in houseWill deposit to Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>SEP-GluA1 knockin mice</td>
+      <td>This paper</td>
+      <td>SEP-GluA1</td>
+      <td>Made in houseWill deposit to Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J) mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax # 007909RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV-CaMKII-Cre virus</td>
+      <td>Addgene/Penn Vector</td>
+      <td>#105558-AAV1</td>
+      <td>(1:10,000–1:50,000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji image processing software</td>
+      <td>Fiji</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>GraphPad Prism 9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANYmaze animal tracking software</td>
+      <td>Stoelting</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex 10.7</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10.7</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mini Analysis Program v 6</td>
+      <td>Synaptosoft Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6.3</td>
+      <td>WaveMetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>In vivo synapse detector</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/twardlab/synapse_labeling (copy archived at swh:1:rev:5a274f9cb8afbad23bea698f02e43418e136ca8d), Graves et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 9.6.0</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab2020b</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage</td>
+      <td>Vidrio Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StackGPS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/ingiehong/StackGPS, (copy archived at swh:1:rev:60b7378461a650d86c20e4a4f7cfb2c5aff3f20a), Hong, 2021</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Neuronal culture
 
 Mouse embryonic (E18) cortical/hippocampal neurons were plated on poly-L-lysine-coated tissue culture dishes/glass coverslips at a density of 65,000 cells/cm2/37,500 cells/cm2 in NM5 medium (neurobasal media [Invitrogen] supplemented with 2% B-27, 2 mM GlutaMAX, 50 U/mL PenStrep, and 5% horse serum [Invitrogen]) and grown in NM0 medium (neurobasal media [Invitrogen] supplemented with 2% B-27, 2 mM GlutaMAX [50 U/mL, PenStrep]). Cultured cortical neurons/hippocampal neurons were fed twice/once per week. To induce synaptic scaling, cortical neurons were treated with bicuculline (20 μM) or TTX (1 μM) at DIV 11–13 for 48 hr. Hippocampal neurons were used at DIV 19–22 for glutamate uncaging.
 
-## Surface biotinylation
+### Surface biotinylation
 
 Neurons were rinsed with ice-cold PBSCM (1× PBS, 1 mM MgCl2, 0.1 mM CaCl2, pH 8.0) once and then incubated with Sulfo-NHS-SS-biotin (0.5 mg/mL, Thermo Scientific) for 30 min at 4°C. Residual unreacted biotinylation reagent was washed out with PBSCM and quenched by 20 mM glycine twice for 5 min. Neurons were lysed in lysis buffer (PBS containing 50 mM NaF, 5 mM sodium pyrophosphate, 1% NP-40, 1% sodium deoxycholate, 0.02% SDS, and protease inhibitor cocktail [Roche]). 20 μg lysates were incubated overnight with NeutraAvidin agarose beads (Thermo Scientific) and then were washed with lysis buffer four times. Biotinylated proteins were eluted using 2× SDS loading buffer. Surface proteins were then subjected to SDS-PAGE and analyzed by western blot.
 
-## PSD fractionation
+### PSD fractionation
 
 Mouse hippocampus tissues were homogenized in buffer (320 mM sucrose, 5 mM sodium pyrophosphate, 1 mM EDTA, 10 mM HEPES pH 7.4, 200 nM okadaic acid, protease inhibitor cocktail [Roche]) using a 26-gauge needle. Homogenate was centrifuged at 800× g for 10 min at 4°C to yield P1 (nuclear) and S1 (post-nuclear). S1 was centrifuged at 20,000× g for 20 min to yield P2 (membrane) and S2 (cytosol). P2 was then resuspended in water adjusted to 4 mM HEPES pH 7.4 followed by 30 min agitation at 4°C. Suspended P2 was centrifuged at 25,000× g for 20 min at 4°C. The resulted pellet was resuspended in 50 mM HEPES pH 7.4, mixed with an equal volume of 1% Triton X-100, and agitated at 4°C for 10 min. The PSD fraction was generated by centrifugation at 32,000 × g for 20 min at 4°C.
 
-## Cell-culture immunohistochemistry and confocal imaging
+### Cell-culture immunohistochemistry and confocal imaging
 
 Cultured hippocampal neurons were fixed for 20 min in PBS containing 4% paraformaldehyde (PFA)/4% sucrose and rinsed with PBS. Neurons were blocked, permeabilized, and incubated with primary antibodies in GDB buffer (15 mM phosphate buffer [pH 7.4] containing 0.1% gelatin, 0.3% Triton X-100, and 0.25 M NaCl) at 4°C overnight. Coverslips were washed with PBS before the neurons were incubated with secondary antibodies in GDB buffer for 1 hr at room temperature. After washing with PBS and water, coverslips were mounted onto glass slides using Permafluor (Fisher Scientific). Images were obtained using an LSM880 laser scanning confocal microscope (Zeiss). The following antibodies were used: anti-GluA1 C-terminal pAb (JH4294, made in-house), anti-PSD95 mAb (NeuroMab), anti-GFP pAb (ab13970, Abcam), Alexa Fluor 488 goat anti-chicken (Thermo Fisher Scientific), Alexa Fluor 405 goat anti-mouse (Thermo Fisher Scientific), and Alexa Fluor 647 goat anti-rabbit (Thermo Fisher).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell voltage-clamp recordings were performed in CA1 pyramidal neurons of acute hippocampal slices from 3- to 4-week-old paired littermates of mice by an experimenter blind to genotype. Slices were prepared in ice-cold oxygenated dissection buffer containing the following (in mM): 210 sucrose, 7 glucose, 26.2 NaHCO3, 2.5 KCl, 1 NaH2PO4, 7MgSO4. For all recordings, slices were perfused in ACSF (119 mM NaCl, 26.2 mM NaHCO3 and 11 mM glucose, 2.5 mM KCl, 1 mM NaH2PO4, 2.5 mM CaCl2, 1.3 mM MgSO4, 50–100 μM Picrotoxin) at room temperature. Neurons were patched by glass pipettes (3–5 MΩ), which were filled with internal solution (115 mM Cs-MeSO3, 0.4 mM EGTA, 5 mM TEA-Cl, 2.8 mM NaCl, 20 mM HEPES, 3 mM Mg-ATP, 0.5 mM Na2-GTP, 10 mM Na phosphocreatine, 5 mM QX-314). mEPSC recordings were performed in the ACSF in presence of 1 μM TTX, and cells were held at –70 mV. Data from 5 to 10 min after break-in were used for mEPSC analysis. For rectification and LTP experiments, EPSCs were elicited at 0.1 Hz by electrical stimulation (0.1 ms, 8–20 μA) via a stimulating electrode positioned in stratum radiatum. During rectification measurements, 100 nM spermine was added into the internal solution and cells were held at –60–60 mV before liquid junction modification. Each data point at each potential was averaged by 5–10 EPSCs. LTP was induced by a train of 200 pulses at 2 Hz paired with 0 mV depolarization. Data are presented as EPSC amplitude averaged at 1 min intervals and normalized to baseline. Signals were measured with MultiClamp 700B amplifier and digitized at 10 kHz by using a Digidata 1440A. Data acquisition was performed with pClamp 10.5 software. Access resistance (Ra) was monitored throughout the recording. Cells in which the Ra >20 MΩ or Ra varied by more than 20% were discarded.
 
-## Mouse behavior
+### Mouse behavior
 
 Behavioral testing was performed in homozygous SEP-GluA1 mice (nine females and seven males) and WT (nine females and nine males) littermate controls, aged 6–10 weeks. Animals were housed in a holding room on a reverse light cycle, and testing was conducted during the dark (i.e., active) phase. All behavioral experiments were approved by the Johns Hopkins Johns Hopkins Animal Care and Use Committee.
 
@@ -149,29 +383,29 @@ Locomotor activity was assessed by placing animals in an illuminated open arena 
 
 Spatial short-term memory was assessed by testing spatial novelty preference using a Y-maze. The Y-maze was made of clear plexiglass (each arm 38 cm long; San Diego Instruments Inc) and surrounded by distal spatial cues. A mixture of clean and dirty sawdust (ratio 2:1) was added to the bottom of the maze to promote exploration of the maze. The dirty sawdust was collected from other cages mice of the same sex as the animals being tested. Immediately before testing, animals were placed, individually, into a clean cage for 5 min. The test was split into exposure and test phases. During the exposure phase, one of the Y-maze arms was blocked (counterbalanced for genotype) and animals were allowed to explore two arms of the maze for 5 min. After this exposure phase, animals were gently removed from the maze and returned to the temporary holding cage for 1 min during which the sawdust was redistributed and all arms of the maze were made available. For the test phase, mice were re-exposed to the maze and allowed to explore all arms for 2 min. Testing was conducted by an experimenter blind to genotype of the mice being tested. Statistical comparisons were made using SPSS (IBM). Sex and genotype were used as between-subject variables.
 
-## 2p glutamate-uncaging
+### 2p glutamate-uncaging
 
 Cultured mouse cortical neurons (10:1 mixture of WT and homozygous SEP-GluA1) were plated at E18 and imaged on DIV 16–18. Neurons were perfused in a modified HEPES-based ACSF solution, consisting of (in mM): 140 NaCl, 5 KCl, 10 glucose, 10 HEPES, 2 CaCl2, 1 MgCl2, 1 TTX, and 2.5 mM MNI-caged-L-glutamate (Tocris), pH = 7.30 and 310–316 mOsm. Recordings were made at room temperature in recirculated ACSF (3 mL/min). Recording pipettes were fabricated (Flaming/Brown Micropipette Puller, Sutter Instruments) from borosilicate capillary glass (Sutter, 4–6 MΩ open-tip resistance) and filled with (in mM): 115 CsMeSO4, 2.8 NaCl, 5 TEACl, 0.4 EGTA, 20 HEPES, 3 MgATP, 0.5 NaGTP, 10 Na phosphocreatine, and 2.5 QX-314, pH = 7.32 and 306 mOsm, and containing a 1% Alexa-594 dye (Tocris). Whole-cell voltage-clamp recordings were made using a MultiClamp 700B amplifier and Digidata 1440A digitizer (Axon Instruments).
 
 Neurons were imaged with a 20×/1.0 NA water-immersion objective (Zeiss) and a custom-built 2p microscope (MOM system, Sutter Instruments) controlled by ScanImage (Vidrio Technologies, Ashburn, VA). Dendritic morphology was visualized using an Alexa dye, delivered by the patch pipette. SEP-GluA1 and red cell fill were excited at 910 nm using a tunable Ti:sapphire laser (Coherent, Santa Clara, CA). Images were acquired at 1024 × 1024 resolution and slices within z-stacks spaced every 0.5 μm. A second 2p laser (Spectra Physics, Santa Clara, CA) was used to uncage glutamate (1 ms pulse) onto visually identified spines at a wavelength of 730 nm and a power of 20 mW at the objective back aperture. Uncaging position was controlled using custom software developed in our lab (ScanStim), which provided means to correct for chromatic aberration between the imaging and uncaging beam. The offset between the imaging and uncaging 2p lasers was directly measured and corrected on a monthly basis. To measure the glutamate uEPSC, we used pClamp (Axon Instruments) to synchronize triggering of the uncaging laser with voltage-clamp recordings. To minimize the effect of electrotonic filtering caused by variable numbers of branch points between the site of dendritic uncaging and the somatic recording pipette, we uncaged exclusively onto spines of secondary dendrites, located 95–160 μm from the cell body. We uncaged on 4–8 spines/dendritic segment and 1–3 dendritic segments/neuron. To quantify the SEP-GluA1 and cell-fill signals, we manually drew regions of interest (ROIs) around visually identified spines, summed the fluorescent intensity of five adjacent z-sections (each separated by 0.5 μm), and subtracted size-matched neighboring background ROIs. Representative images shown in figures were median filtered and contrast enhanced. The uncaging-LTP-induction stimulus consisted of 30 pairings of glutamate uncaging (1 ms pulse of 730 nm laser at 0.5 Hz) and postsynaptic depolarization (0 mV for 0.5 s, beginning concurrently with uncaging pulse). Spines were imaged every 5 min, and synaptic strength was probed by measuring the uEPSC amplitude of each identified spine every 1 min.
 
-## Cranial window surgery and viral injection
+### Cranial window surgery and viral injection
 
 Mice were anesthetized (2% isoflurane) and implanted with a 3 × 3 mm cranial window (Potomac Photonics) over the barrel cortex region of somatosensory cortex at 2–3 months of age. Windows were sealed and custom-made metal head bars attached using dental cement (Metabond; Edgewood, NY). In a subset of experiments, an AAV-CaMKII-cre virus (Addgene/Penn Vector) was injected into barrel cortex (1:10k–1:50k dilution, 100–150 nL, 0.25–0.3 mm deep) of double homozygous SEP-GluA1 × Ai9 reporter mice to sparsely label L2/3 pyramidal neurons with a tdTomato cell fill. 10 mg/kg of extended-release buprenorphine (ZooPharm) was administered before surgery and mice were observed for 3 days following surgery. Mice were allowed to recover from surgery for at least 2 weeks before commencing in vivo imaging. All surgical procedures were approved by the Johns Hopkins Johns Hopkins Animal Care and Use Committee.
 
-## Optical-intrinsic and in vivo 2p imaging
+### Optical-intrinsic and in vivo 2p imaging
 
 Optical-intrinsic imaging was used to map select barrels within somatosensory cortex as previously described (Zhang et al., 2015). Briefly, we mechanically stimulated the individual C2 and D3 whiskers using a custom-built piezo driver at 10 Hz and used optical-intrinsic imaging to identify the corresponding barrel fields. Mice were anesthetized and maintained on 0.5% isoflurane supplemented by xylazine (13 mg/kg). Optical images of barrel cortex were acquired at 30 Hz using a CCD camera (Grasshopper GS3-U3-23S6M-C under red LED light [630 nm] with a 2.5×/0.075 numerical aperture (NA) objective [Zeiss]). Images were collected, averaged (across 30 trials), Gaussian filtered (σ = 10 μm), and baseline subtracted. Widefield images of both barrels were acquired and vasculature was used to align subsequent 2p imaging of the same regions.
 
 In vivo 2p images were acquired from lightly anesthetized mice (13 mg/kg xylazine and 0.5% isoflurane) using a custom-built, 2p laser scanning microscope controlled by ScanImage (Vidrio Technologies) and a 20×/1.0 NA water-immersion objective lens (Zeiss). SEP-GluA1 (green) and tdTomato cell fill (red) were both excited at 910 nm with a Ti:sapphire laser (Spectra-Physics, 20 mW power at objective back aperture). Green and red fluorescence signals were acquired simultaneously and separated by a set of dichroic mirrors and filters (ET525/50m for green channel, ET605/70m for red channel, Chroma). Image stacks were acquired at 1024 × 1024 pixels with a pixel size of 0.096 μm in XY, with a z-step of 1 μm. Representative images shown in figures were median filtered (1-pixel radius) and contrast enhanced.
 
-## Fluorescence recovery after photobleaching in vivo
+### Fluorescence recovery after photobleaching in vivo
 
 To longitudinally image the same populations of SEP-labeled synapses throughout FRAP, imaging volumes (1024 × 1024 pixels in XY, 15 μm in z with 1 μm steps) were manually aligned before each time point using the sparse tdTomato cell fill as a guide. Photobleaching of spines was achieved with repetitive xy scanning of specific ROIs (~22 × 22 pixels) defined at the center plane of the image stack using ROI Group Editor in ScanImage. Bleached subregions were excited at 910 nm with high-intensity illumination (20–30%) with a Ti:sapphire laser (Coherent, 15–100 mW of power delivered to the objective back aperture) at a dwell time of ~3 μs/pixel and seven iterations. For each experiment, ~5–10 spines were bleached at a time.
 
 Frame alignment and averaging within each plane in the Z-stacks were performed using a rigid registration custom script, and images at different time points were aligned using StackGPS Hong, 2021, (https://github.com/ingiehong/StackGPS) in MATLAB. Fluorescence intensity values were measured in ImageJ. Circular ROIs were defined around bleached and unbleached control spines, and signal intensity was measured as the average of three planes centered on each spine. Values were background subtracted. Baseline fluorescence was normalized to 1, and the signal intensity of the bleached spines was normalized to the averaged signal intensity of the unbleached spines on the same image. FRAP was calculated as the fluorescence increase between time 0, immediately after photobleaching, and the indicated time points. Only spines that maintained stable levels of tdTomato signal in all imaging sessions after recovering from photobleaching (intensity signal above maximum photobleaching induced in that spine at time 0) were included in the analysis. Graphing and curve fitting were performed in Prism 6 (GraphPad software). Symbols represent mean, and error bars represent standard error of the mean (SEM). Curve fitting of fluorescence recovery from 0 to 30 min was performed using nonlinear regression to fit an exponential one-phase decay curve defined by Y = (Y0-Plateau) * exp(-k*x) + Plateau, where Plateau is the maximum fluorescence, Y0 is starting fluorescence, k is the rate constant of recovery (minutes-1), and x is time (min). Outlier removal was performed using the ROUT method with false detection rate Q = 1%. Solid line in curve fitting represents best fit curve, and shaded area represents the 95% confidence interval of the best fit.
 
-## Automatic synapse detection and segmentation
+### Automatic synapse detection and segmentation
 
 We defined synapses as regions with bright centers and dark surrounds, based on the following method. Images were blurred with a Gaussian kernel of standard deviation 5 × 5 × 1 pixels, and all local maxima were considered to be candidates for synapses. Candidates less than 3 pixels from each other were removed using a farthest first traversal (Hochbaum and Shmoys, 1985; Rosenkrantz et al., 1977). A family of templates (Brunelli, 2009) were defined using square regions with a radius of 32 pixels. The foreground was described by ellipses containing between 20 and 150 pixels, 4 roundnesses (ratio of larger to smaller semimajor axes lengths) from 1 to 2.5, and 12 angles from 0 to 2 pi. A background region of width 3 pixels was identified surrounding the ellipse. For each candidate synapse, an SNR was calculated to determine the most likely template: mean pixel intensity of foreground, minus mean of background, divided by the standard deviation of the region. The template that maximized SNR was associated to this candidate. Regions lacking detectable SEP fluorescence, such as blood vessels and cell bodies, were excluded by thresholding, removing areas with a z score of less than –1 in a blurred image. Based on visual examination, these regions were most likely interneuron cell bodies or blood vessels.
 
@@ -181,6 +415,6 @@ Detection code was written in Python using numpy and is made available in the fo
 
 We defined agreement between two annotated sets of synapses, A and B, as follows. For each synapse in set A, we identified any overlapping synapses in B. If more than one overlapped, we chose one that overlapped by the largest amount. If there were no overlapping synapse, or the overlapping synapse in B overlapped by less than 50% the size of the synapse in A, this was considered a disagreement. Otherwise, voxel overlap of more than 50% was considered agreement. The accuracy between A and B was defined as the fraction of synapses that agreed. The accuracy between B and A was defined by reversing the roles of A and B above. This definition is not symmetric, and the two agreements are generally close but not equal. In each relevant figure, we report the average A-B and B-A agreement.
 
-## Ground-truth synapse detection using immunohistochemistry
+### Ground-truth synapse detection using immunohistochemistry
 
 To label, visualize, and detect an independent synapse channel to which to compare SEP-GluA1, we perfused 10-week-old homozygous SEP-GluA1 mice with 4% PFA, made 100-μm-thick slices of barrel cortex, and stained for the PSD protein Homer using a polyclonal antibody (Synaptic Systems) and an Alexa-555 secondary antibody. Stained tissue was imaged with the same 2p microscope and light path as used for in vivo imaging, using identical settings for excitation wavelength (910 nm), laser power, PMT gain, scan speed, and all other acquisition settings. Green (SEP-GluA1) and red (Homer) channels were separately analyzed using our in vivo automatic synapse detection algorithm. Ground truth for synapse detection was defined as the rate of overlap between SEP-GluA1 and Homer puncta, false positive was defined as the rate of SEP-GluA1 detection without overlapping Homer, and false negative was defined as the rate of Homer detection without overlapping SEP-GluA1. A threshold of >50% shared voxels was used to assess overlap for all comparisons.

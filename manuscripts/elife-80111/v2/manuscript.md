@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Division of Human Biology, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/00cvxb145 Molecular Medicine and Mechanisms of Disease Graduate Program, University of Washington Seattle United States
-3. https://ror.org/05dq2gs74 Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States
+1. Division of Human Biology, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Molecular Medicine and Mechanisms of Disease Graduate Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
 4. Vanderbilt Institute for Infection, Immunology and Inflammation Nashville United States
 
 † Corresponding author
@@ -31,7 +31,7 @@ Here, we performed structure–function analysis to determine how the bactofilin
 
 ## Results
 
-## CcmA is composed of a bactofilin domain and two short terminal regions
+### CcmA is composed of a bactofilin domain and two short terminal regions
 
 To facilitate structure–function analysis of CcmA’s biochemical and cell biologic functions, we aligned the amino acid sequence of CcmA with BacA, a well-studied bactofilin from Caulobacter crescentus involved in stalk morphogenesis, using SWISS-MODEL (Waterhouse et al., 2018). This alignment revealed that CcmA is composed of a bactofilin domain (DUF 583) surrounded by two short terminal regions (Figure 1A). The N-terminal region is composed of amino acids 1–17, the bactofilin domain is composed of amino acids 18–118, and the C-terminal region is composed of amino acids 119–136. It has been proposed that bactofilins contain a short membrane binding motif within their N-terminal regions, which spans amino acids 3–12 in CcmA (Deng et al., 2019). However, whether the proposed membrane binding motif was functional in CcmA was unknown.
 
@@ -41,15 +41,27 @@ To facilitate structure–function analysis of CcmA’s biochemical and cell bio
 
 After identifying the boundaries between the bactofilin domain and the terminal regions of CcmA, we used RoseTTAFold (Baek et al., 2021), a protein structure prediction service that uses deep learning-based modeling methods, to predict the structure of CcmA. RoseTTAFold generated five models of CcmA. In all five, the bactofilin domain forms a three-sided, right-handed β-helix with a left-handed twist (Figure 1B), the N-terminal region is unstructured, and part of the C-terminal region forms a short ɑ-helix and caps the end of the bactofilin domain (Figure 1C). In four of the five models, the first several amino acids of the N-terminal region interact with the bactofilin domain, suggesting that the N-terminal region could potentially block a surface of the bactofilin domain.
 
-## The N-terminal region and bactofilin domain are together necessary and sufficient to pattern the helical shape of H. pylori cells
+### The N-terminal region and bactofilin domain are together necessary and sufficient to pattern the helical shape of H. pylori cells
 
 After identifying that CcmA was composed of an N-terminal region that may contain a membrane binding motif, a bactofilin domain, and a C-terminal region, we wanted to identify how each region of CcmA contributed to patterning the helical shape of H. pylori cells. The bactofilin literature suggested that the terminal regions on either end of the bactofilin domain may be involved in binding to membranes, modulating protein–protein interactions, or modulating polymerization (Deng et al., 2019; Kühn et al., 2010; Vasa et al., 2015), and we hypothesized deleting the terminal regions of ccmA would alter cell shape. Thus, we generated H. pylori strains that have truncated versions of ccmA at the native ccmA locus. We generated five strains, one strain missing the N-terminal region (∆NT, missing amino acids 2–17), another strain missing the proposed membrane binding motif within the N-terminus (∆MM, missing amino acids 3–12), a third strain lacking the five amino acids at the end of the N-terminus (∆13–17, lacking amino acids 13–17), a fourth strain missing the C-terminal region (∆CT, missing amino acids 119–136), and lastly, a strain expressing only the bactofilin domain that lacks both the N-terminal region and C-terminal region (BD, expressing amino acids 18–118) (Figure 2A). The open-reading frames (ORFs) of the end of csd1 and the beginning of ccmA overlap by 82 nucleotides (Sycuro et al., 2010), thus to avoid impacting the function of Csd1 by removing several amino acids from the C-terminus when truncating the N-terminus of CcmA, we expressed a second copy of csd1 at rdxA, a locus commonly used for complementation (Smeets et al., 2000). In previous work, we confirmed that both ccmA and csd1 can be individually deleted and complemented back without impacting the expression of the other (Sycuro et al., 2010; Yang et al., 2019).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of CcmA and truncation mutants. The N-terminal region (NT, green), bactofilin domain (BD, cyan), and C-terminal region (CT, pink) are indicated, as well as the putative membrane binding motif (MM). (B) Western blot to detect CcmA in whole-cell lysates of H. pylori strains expressing truncated versions of CcmA probed with ɑ-CcmA polyclonal antibody, and ɑ-Cag3 polyclonal antibody as a loading control. (C) Phase-contrast images of H. pylori strains expressing truncated versions of CcmA diagramed in panel (A), scale bars = 1 µm. (D) Histogram displaying the side curvature of H. pylori strains expressing truncated versions of CcmA (WT n = 476 cells, ∆ccmA n = 397 cells, ∆N n = 275 cells, ∆MM n = 391 cells, ∆13–17 n = 361 cells, ∆CT n = 263 cells, BD n = 315 cells). Data are representative of two independent biological replicates. Strains used: SSH51A, SSH53A, SSH55A, SSH54A, SSH67A, SSH56B, and SSH57A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** 0.1 µg of purified protein was loaded into each lane. Top row: Ponceau S staining of purified 6-his-CcmA. Bottom row: Western blot probed with polyclonal ɑ-CcmA antibody, both images are of the same membrane.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Coomassie-stained gel of induced, whole-cell lysates of E. coli. (B) Coomassie-stained gel of the first elution after purification of 6-his CcmA with cobalt affinity resin.
 
 All strains expressed the truncated versions of CcmA measured by Western blotting with an ɑ-CcmA polyclonal antibody; however, in strains lacking the C-terminus (∆CT and BD), we saw much lower signal on the blot (Figure 2B). In follow-up experiments, we determined that the ɑ-CcmA polyclonal antibody fails to recognize versions of CcmA lacking the C-terminus (Figure 2—figure supplement 1). We ran a Western blot probed with our polyclonal ɑ-CcmA antibody on purified 6-His WT CcmA and CcmA truncation mutants (Figure 2—figure supplement 2). Although equal concentrations of each purified protein were loaded, the polyclonal ɑ-CcmA antibody poorly recognized versions of CcmA lacking the C-terminal region (∆CT and BD), suggesting that the ∆CT and BD proteins are likely expressed in H. pylori cells at similar levels to other versions of CcmA but are not robustly recognized by the ɑ-CcmA polyclonal antibody.
 
 Next, after confirming that all truncated versions of CcmA were expressed, we assessed the shapes of the cells and found that strains lacking the N-terminal region (∆NT and BD) were indistinguishable from ∆ccmA cells (Figure 2C and D), while cells lacking the C-terminal region of ccmA resembled WT cells. Cells that lacked either the putative membrane binding motif (∆MM) or the last five amino acids of the N-terminal region (∆13–17) were helical but had slightly different side curvature values than the WT population, suggesting that the N-terminal region of CcmA may have multiple functional regions within it.
 
-## Circular dichroism spectroscopy reveals that CcmA truncation mutants maintain β-strand secondary structure
+### Circular dichroism spectroscopy reveals that CcmA truncation mutants maintain β-strand secondary structure
 
 Considering the result that H. pylori strains lacking the N-terminal region of CcmA, cells resembled ∆ccmA mutants, we were curious whether loss of the terminal regions of CcmA might destabilize the protein and/or influence formation of the predicted β-strands (Figure 1). Circular dichroism (CD) spectroscopy can be used to identify the secondary structure and folding of proteins. Different structural elements have characteristic CD spectra, and proteins that consist of β-strands have negative peaks at 216 nm (Greenfield, 2006). We recombinantly expressed and purified 6-his CcmA (Figure 2—figure supplement 2) and collected CD spectra from 200 to 260 nm at fixed temperatures to identify the secondary structure and measure its thermal stability.
 
@@ -59,7 +71,7 @@ CD spectra of WT CcmA and the truncation mutants ∆NT, ∆CT, and BD at 20°C a
 
 **Figure 3.:** (A) Circular dichroism spectra of WT and truncated versions of CcmA at room temperature (20°C), WT (black), ∆NT (green), ∆CT (pink), and BD (cyan). (B) Circular dichroism spectra of WT CcmA at room temperature (20°C, black), melted (95°C, dotted line), and two point mutants (I55A, red, and L110S, burgundy).
 
-## The bactofilin domain alone is capable of polymerization: the terminal regions of CcmA modulate lateral interactions between CcmA filaments
+### The bactofilin domain alone is capable of polymerization: the terminal regions of CcmA modulate lateral interactions between CcmA filaments
 
 Given that terminal region truncation mutant proteins appeared stable and displayed CD spectra indicative of a beta helical structure, we wondered whether their cell shape phenotypes correlated with altered polymerization properties. We assessed polymerization by negative stain and transmission electron microscopy (TEM) of purified truncated versions of CcmA and compared those to full-length protein. As previously reported (Holtrup et al., 2019; Taylor et al., 2020), WT CcmA polymerizes into small filaments that measure on average 3.04 nm (SD = 0.79, n = 18) in width. The filaments wrap together to form bundles of approximately 21.34 nm (SD = 4.82, n = 24) wide, and form lattice structures (Figure 4A and G). ∆NT formed filaments and bundles that were more homogenous, straighter, and thinner than WT and appear to only contain 2–4 filaments each. ∆NT failed to form lattice structures (Figure 4B). ∆MM resembled WT CcmA, forming filaments and bundles of approximately the same width as WT and formed lattices (Figure 4C and G). ∆13–17 resembled ∆NT (Figure 4D and G), suggesting that amino acids 13–17 are responsible for filament bundling properties of ∆NT. ∆CT formed bundles that were wider than WT CcmA but failed to form lattices (Figure 4E and G). Lastly, BD formed straight bundles that were narrower than those found in WT samples and failed to form lattices (Figure 4F and G). These data suggest that the bactofilin domain is sufficient for polymerization of CcmA while the N- and C-terminal regions of CcmA regulate interpolymer interactions that impact the width of bundles by modulating the number of filaments that form a bundle, and the ability of CcmA to form lattices. Taken together with our experiments from Figure 2, where we expressed the truncated versions of CcmA in H. pylori, these data suggest that the ability of CcmA to polymerize is not sufficient to pattern the helical shape of H. pylori cells and in vitro lattice formation does not correlate with helical cell shape.
 
@@ -67,29 +79,49 @@ Given that terminal region truncation mutant proteins appeared stable and displa
 
 **Figure 4.:** (A–F) Transmission electron microscopy (TEM) of negative stained, purified CcmA, scale bars = 500 nm. White boxes indicate region of micrograph that is enlarged in panel to the right of original. White arrows indicate bundles of CcmA, black arrows indicate lattice structures, and red arrow indicates two bundles wrapping around each other. Data are representative of two independent biological replicates. (G) Box and whiskers plot displaying width of purified CcmA bundles and filaments. Median, min, max, 25th percentile, and 75th percentile are displayed. One-way ANOVA, Dunnett’s multiple-comparison test. ns p>0.5, ***p≤0.001, ****p≤0.0001. WT n = 24, ∆NT n = 29, ∆MM n = 25, ∆13–17 n = 31, ∆CT n = 24, BD n = 32.
 
-## CcmA’s bactofilin domain mediates interactions with Csd5 and Csd7, and the N-terminal region of CcmA inhibits interactions with Csd7
+### CcmA’s bactofilin domain mediates interactions with Csd5 and Csd7, and the N-terminal region of CcmA inhibits interactions with Csd7
 
 Given that the truncated versions of CcmA were folded properly and were capable of polymerization in vitro, we hypothesized that the loss of helical cell shape phenotypes we observed when we deleted the N-terminal region of CcmA in Figure 2 could be caused by disrupting interactions between CcmA and other cell-shape-determining proteins. CcmA was previously shown to interact with two Csd proteins, Csd5 and Csd7, by co-immunoprecipitation experiments. Csd5-CcmA interactions were readily detected by co-immunoprecipitation followed by mass spectrometry and Western blotting. However, Csd7-CcmA interactions could only be detected when a cross-linking reagent was included in co-immunoprecipitation experiments and mass spectrometry was used to detect CcmA, suggesting that Csd7-CcmA interactions are weak or potentially transient (Blair et al., 2018; Yang et al., 2019). Interactions between Csd5 and Csd7 were never detected by co-immunoprecipitation experiments followed by mass spectrometry in a WT or ∆ccmA background (Blair, 2018; Blair et al., 2018; Yang et al., 2019). To probe how each region of CcmA contributes to interactions with Csd5 and Csd7, we performed co-immunoprecipitation experiments followed by Western blotting on strains expressing truncated versions of CcmA. Strains were generated that expressed truncated versions of ccmA at the native ccmA locus, csd1 at the rdxA locus as described earlier, and either csd5-2X-FLAG or csd7-3X-FLAG at their native loci. We immunoprecipitated either Csd5-FLAG or Csd7-FLAG with ɑ-FLAG agarose beads, then performed Western blotting and probed with the ɑ-CcmA polyclonal antibody to identify whether the truncated versions of CcmA could still co-purify. When we immunoprecipitated Csd5-FLAG, all mutant versions of CcmA were detected by Western blotting of the IP fractions, except for the ∆CT mutant (Figure 5A), though it is likely that this mutant can still interact with Csd5-FLAG. Earlier we identified that the C-terminal region of CcmA is required for robust detection by our ɑ-CcmA polyclonal antibody (Figure 2—figure supplement 1), and here, the BD mutant interacts with Csd5. Additionally, we tagged WT CcmA, ∆CT, and BD with a HaloTag in H. pylori at the native ccmA locus and performed a co-immunoprecipitation experiment to detect interactions with Csd5-FLAG (Figure 5—figure supplement 1). We found that both ∆CT-HaloTag and BD-HaloTag were expressed at comparable levels as CcmA-HaloTag and could be pulled down by Csd5-FLAG. These three pieces of evidence lead us to conclude that the ∆CT mutant can interact with Csd5, suggesting that only the bactofilin domain is required for interactions between CcmA and Csd5-FLAG.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Co-immunoprecipitation (co-IP) experiments to probe Csd5-2x-FLAG-CcmA interactions (A) and Csd7-3x-FLAG-CcmA interactions (B) in H. pylori cells are shown. Top row: Ponceau S staining of input fractions. Second row: Western blot probed with ɑ-CcmA polyclonal antibody of input fractions. Third row: Western blot probed with ɑ-FLAG monoclonal antibody of IP fractions. Bottom row: Western blot probed with ɑ-CcmA polyclonal antibody of IP fractions. (C) Co-IP experiments to probe Csd7-3x-FLAG interactions with CcmA and Csd5 in H. pylori strains with and without CcmA. Top row: Ponceau S staining of input fractions. Second row: Western blot probed with ɑ-SH3 polyclonal antibody of input fractions to detect the SH3 domain of Csd5. Third row: Western blot probed with ɑ-CcmA polyclonal antibody of input fractions. Fourth row: Western blot probed with ɑ-FLAG monoclonal antibody of IP fractions to detect Csd7-3x-FLAG. Fifth row: Western blot probed with ɑ-SH3 polyclonal antibody to detect the SH3 domain of Csd5 in IP fractions. Bottom row: Western blot probed with ɑ-CcmA polyclonal antibody of IP fractions. Data shown are representative of data from three independent biological replicates. Strains used: KHB157, LSH100, SSH59A, SSH58A, SSH68A, SSH60A, SSH65A, DCY71, DCY77, SSH79A, SSH78A, SSH82, SSH80A, and SSH81B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ɑ-FLAG immunoprecipitation of strains expressing Csd5-FLAG and WT CcmA-HaloTag, CcmA ∆CT-HaloTag, or CcmA BD only –HaloTag. Top row: Ponceau S staining of input fractions. Second row: Western blot of inputs probed with ɑ-HaloTag monoclonal antibody to detect CcmA-HaloTag, both top and second row are images of the same membrane. Third row: Western blot of IP fractions probed with ɑ-FLAG monoclonal antibody to detect Csd5-FLAG. Bottom row: Western blot of IP fractions probed with ɑ-HaloTag monoclonal antibody to detect CcmA-HaloTag. Strains used: SSH87A, SSH89A, and SSH97A.
 
 When we immunoprecipitated Csd7-FLAG, we found that, as previously reported (Yang et al., 2019), WT CcmA was not able to be detected in the IP fractions by Western blotting above background levels. However, versions of CcmA lacking the N-terminal region were robustly co-purified by Csd7 (Figure 5B), suggesting that the N-terminal region inhibits WT CcmA from being co-immunoprecipitated by Csd7-FLAG.
 
 To identify whether deletion of the N-terminus of CcmA caused CcmA, Csd7, and Csd5 to interact, we repeated Csd7-FLAG co-immunoprecipitation experiments in strains expressing WT CcmA, a strain lacking CcmA, and strains expressing CcmA ∆NT or CcmA BD, and probed for interactions with Csd5 by using a polyclonal antibody that recognizes the SH3 domain of Csd5 (Blair et al., 2018). We found that in all the conditions we tested Csd5 never co-purified with Csd7 (Figure 5C). Together, these data suggest that the bactofilin domain of CcmA mediates interaction with Csd5 and Csd7, the N-terminal region of CcmA inhibits interaction with Csd7, and CcmA forms separate complexes with Csd5 and Csd7. Our data also show that versions of CcmA lacking the C-terminal region are expressed at comparable levels to WT CcmA, although they are not recognized as robustly by the ɑ-CcmA polyclonal antibody.
 
-## Increased CcmA-Csd7 interactions preclude Csd1-Csd7 interactions, resulting in decreased Csd1 steady-state protein levels
+### Increased CcmA-Csd7 interactions preclude Csd1-Csd7 interactions, resulting in decreased Csd1 steady-state protein levels
 
 After discovering that the N-terminal region of CcmA could inhibit interactions with Csd7 and that ∆NT CcmA was readily co-purified by Csd7, we reasoned that ∆NT CcmA could be binding to Csd7 and reducing its capacity to stabilize Csd1, causing decreased levels of Csd1 protein. This hypothesis was bolstered by the finding that ∆csd7, ∆csd1, and ∆NT cells all share the same curved rod shape phenotype (Figure 4; Yang et al., 2019). To test this hypothesis, we assayed Csd1 expression by Western blotting and probing with an ɑ-Csd1 polyclonal antibody in whole-cell lysates of the H. pylori strain lacking the N-terminal region of ccmA. As discussed previously, this strain expresses two copies of csd1; there is an extra copy of csd1 at rdxA that was added to account for potentially impacting Csd1’s function when truncating ccmA (the ORFs of the end of csd1 and the beginning of ccmA overlap by 82 nucleotides). As predicted, we found that in the strain lacking the N-terminal region (∆NT) Csd1 levels are lower than in a strain expressing WT CcmA (Figure 6A and B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig6-v2.jpg)
 
-**Figure 6.:** (A) Western blot of whole-cell extracts probed with ɑ-Csd1 polyclonal antibody showing levels of Csd1; ɑ-Cag3 polyclonal antibody was used as a loading control. Strains with ‘csd1c’ indicate an extra copy of csd1 was added at the rdxA locus. Data shown are representative of data from three independent biological replicates. (B) Quantification of Csd1 levels in the ccmA ∆NT csd1 strain relative to the WT ccsd1. Relative signal was calculated by dividing Csd1 signal by Cag3 signal for each replicate, then the data was normalized by dividing it by the value from the WT ccsd1 strain from the same experiment. Data are pooled from three independent biological replicates. Unpaired ct-test, **p≤0.001. (C) Co-immunoprecipitation (co-IP) experiments to probe Csd1 levels in relation to Csd7-3x-FLAG-CcmA interactions in H. pylori cells are shown. Top row: Western blot of input fractions probed with ɑ-Cag3 polyclonal antibody as loading control. Second row: Western blot of input fractions probed with ɑ-Csd1 polyclonal antibody. Third row: Western blot of input fractions probed with ɑ-CcmA polyclonal antibody. Fourth row: Western blot probed with ɑ-FLAG monoclonal antibody of IP fractions to detect Csd7-FLAG. Fifth row: Western blot probed with ɑ-Csd1 polyclonal antibody of IP fractions. Bottom row: Western blot probed with ɑ-CcmA polyclonal antibody of IP fractions. Data shown are representative of data from two independent biological replicates. Strains used: LSH100, LSH113, LSH121, DCY26, SSH51A, SSH53A, SSH55A, DCY71, SSH79A, and SSH81B.Figure 6—source data 1.H. pylori strains expressing truncated versions of CcmA.In addition, raw, unedited Western blots probed with ɑ-CcmA and ɑ-FLAG, ɑ-Cag3 and ɑ-Csd1 antibodies to detect CcmA, Csd1, and Csd7-FLAG in co-immunoprecipitation experiments.
+**Figure 6.:** (A) Western blot of whole-cell extracts probed with ɑ-Csd1 polyclonal antibody showing levels of Csd1; ɑ-Cag3 polyclonal antibody was used as a loading control. Strains with ‘csd1c’ indicate an extra copy of csd1 was added at the rdxA locus. Data shown are representative of data from three independent biological replicates. (B) Quantification of Csd1 levels in the ccmA ∆NT csd1c strain relative to the WT csd1c. Relative signal was calculated by dividing Csd1 signal by Cag3 signal for each replicate, then the data was normalized by dividing it by the value from the WT csd1c strain from the same experiment. Data are pooled from three independent biological replicates. Unpaired t-test, **p≤0.001. (C) Co-immunoprecipitation (co-IP) experiments to probe Csd1 levels in relation to Csd7-3x-FLAG-CcmA interactions in H. pylori cells are shown. Top row: Western blot of input fractions probed with ɑ-Cag3 polyclonal antibody as loading control. Second row: Western blot of input fractions probed with ɑ-Csd1 polyclonal antibody. Third row: Western blot of input fractions probed with ɑ-CcmA polyclonal antibody. Fourth row: Western blot probed with ɑ-FLAG monoclonal antibody of IP fractions to detect Csd7-FLAG. Fifth row: Western blot probed with ɑ-Csd1 polyclonal antibody of IP fractions. Bottom row: Western blot probed with ɑ-CcmA polyclonal antibody of IP fractions. Data shown are representative of data from two independent biological replicates. Strains used: LSH100, LSH113, LSH121, DCY26, SSH51A, SSH53A, SSH55A, DCY71, SSH79A, and SSH81B.
 
 After identifying that Csd1 levels were depleted when the N-terminal region of CcmA was missing, we sought to identify whether Csd7-Csd1 interactions were diminished when Csd7-CcmA interactions increased. We performed Western blotting and probed for Csd1 levels in the samples we collected during our Csd7-FLAG co-immunoprecipitation experiments (Figure 5B). We found that in H. pylori strains lacking the N-terminal region of CcmA, Csd7-Csd1 interactions are decreased in comparison to when WT CcmA is expressed (Figure 6C), suggesting that when the N-terminal region of CcmA is deleted CcmA-Csd7 interactions increase and inhibit Csd7 from stabilizing Csd1, causing decreased Csd1 levels. Our data suggests that Csd1 stability is indirectly regulated by CcmA via Csd7.
 
-## CcmA requires binding partners for proper localization to the major helical axis
+### CcmA requires binding partners for proper localization to the major helical axis
 
 It has been hypothesized that bactofilins are able to interact with the cell envelope directly and sense specific curvature values (Deng et al., 2019; Kühn et al., 2010; Vasa et al., 2015). To determine whether binding partners are required to direct CcmA to the cell envelope or whether it can localize to the cell envelope on its own, we first created an H. pylori strain that we could use to visualize CcmA by 3D structured illumination microscopy (SIM). We engineered a strain with ccmA-HaloTag at the native ccmA locus and a second copy of WT ccmA at rdxA. We found that cells that expressed CcmA-HaloTag as the sole copy of CcmA were still helical but had slightly lower-side curvature than WT cells; adding a second copy of ccmA at rdxA generated cells with side curvature more similar to WT cells (Figure 7—figure supplement 1A and B). Next, to identify whether CcmA is capable of localizing to the cell envelope at its preferred curvature alone or whether localization is mediated by a binding partner, we deleted csd5 and csd7 individually and together in our ccmA-HaloTag strain. As an additional control, we deleted csd6 in the ccmA-HaloTag strain. Csd6 is a PG carboxypeptidase that does not appear to interact with CcmA, Csd5, or Csd7 (Blair et al., 2018; Sycuro et al., 2013; Yang et al., 2019). Similar to ∆csd5 mutants, ∆csd6 mutants show a straight rod shape phenotype. We fixed and permeabilized cells, then labeled CcmA-HaloTag with a fluorescent ligand (JF-549) that binds to HaloTag and counterstained with fluorescent wheat germ agglutinin (WGA), which binds to PG, to label the cell envelope. We collected images of hundreds of cells from each population using 3D SIM and used software previously described to generate 3D reconstructions of individual cells from the WGA channel and calculate the Gaussian curvature at each point on the cell surface. Then we performed analysis to identify how much CcmA-HaloTag signal was at the cell envelope versus in the center of cells, and curvature enrichment analysis to investigate whether CcmA-HaloTag is enriched or depleted at specific Gaussian curvature values (Bratton et al., 2019; Taylor et al., 2020).
 
 In WT cells, we found that CcmA-HaloTag signal is present as foci and small arcs that colocalize with the cell envelope (white signal) and there were some foci in the center of the cell (Figure 7A, top row). The CcmA-HaloTag signal closely resembled what we saw when we visualized CcmA-FLAG by immunofluorescence in previous work (Taylor et al., 2020). In cells lacking csd6, we found that CcmA-HaloTag signal is present at the cell envelope and there are some foci in the center of cells (Figure 7A, second row). In cells lacking csd7, cells are slightly curved and CcmA-HaloTag signal colocalizes with the cell envelope; however, there are also some foci in the center of the cell (Figure 7A, third row). In cells lacking csd5, there appears to be more CcmA-HaloTag signal in the center of cells than associated with the cell envelope (Figure 7A, fourth row). In cells lacking both csd5 and csd7, we found that the cell shape resembles a ∆csd7 mutant; however, there appears to be more CcmA-HaloTag signal in the center of the cells than in the ∆csd7 mutant, similar to the ∆csd5 mutant (Figure 7A, bottom row).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig7-v2.jpg)
+
+**Figure 7.:** (A) Maximum intensity projections (MIPs) and frames from Z-stacks of H. pylori cells labeled with wheat germ agglutinin (WGA) to label the cell wall (magenta) and JF549 ligand to label CcmA-HaloTag (green), pixels are white where the two signals colocalize. Green arrows indicate cytoplasmic CcmA-HaloTag. White arrows indicate CcmA-HaloTag signal that colocalizes with the cell envelope. Scale bars = 1 µm. (B) Representative plots displaying the relative concentration of CcmA-HaloTag and WGA signal from one WT and one ∆csd5 cell at the cell surface (offset from surface = 0) and at computationally generated cell surfaces that are inside (offset from surface < 0) and outside (offset from surface > 0) of the cell surface. (C) Representative H. pylori cells from each population with Gaussian curvature values mapped on the cell surface. (D, E) Top: histogram of Gaussian curvature of cell surfaces of each population. Bottom: surface Gaussian curvature enrichment of relative concentration of CcmA signal in each population where 1 = uniform concentration of CcmA, shaded regions indicate SEM. In panels (C–F), WT n = 292, ∆csd6 n = 264 cells, ∆csd7 n = 355, ∆csd5 n = 326, ∆csd5/7 n = 523. Strains used: SSH39B, SSH49A, SSH50A, JS09, SSH70A, and LSH117.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Scatterplot of outlines of H. pylori cells derived from phase-contrast images. (B) Histogram displaying side curvature of each population. WT (LSH100) n = 116 cells, ccmA::ccmA-Halotag (SSH38A) n = 133 cells, ccmA::ccmA-HaloTag, rdxA::ccmA (SSH39B) n = 190 cells. (C, D) Plots displaying the relative concentration of CcmA-HaloTag and WGA signal at the cell surface (offset from surface = 0 nm) and at computationally generated cell surfaces that are inside (offset from surface < 0 nm) and outside (offset from surface > 0 nm) of the cell surface. Crosses indicate SEM. Populations of WT (C) and ∆csd5 (D) cells from three independent experiments were pooled.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80111/elife-80111-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Scatterplot of outlines of H. pylori cells derived from phase-contrast images. (B) Histogram displaying side curvature of each population. ccmA ∆NT ∆csd5 (SSH109A) n = 246 cells, ccmA ∆NT (SSH55A) n = 250 cells, ∆csd5 (LSH123) n = 215 cells. (C) Western blot of whole-cell extracts probed with ɑ-Csd1 polyclonal antibody showing levels of Csd1; ɑ-Cag3 polyclonal antibody was used as a loading control. Strains used: LSH100, LSH113, LSH123, SSH55A, and SSH109A.
 
 To quantify how much CcmA-HaloTag signal was associated with the cell envelope as compared to the amount of CcmA-HaloTag found in the center of the cells, we developed a method to measure the amount of CcmA-HaloTag signal that colocalized with the cell surface as we computationally generated sequential cell surface shells with smaller or larger diameters (Figure 7B, Figure 7—figure supplement 1C and D). We used the fluorescent WGA channel that labels the PG cell wall to generate the cell surface. As we computationally shrink the cell surface (offset from surface decreases), we observe the relative concentration of WGA and CcmA-HaloTag signal with respect to the position of the cell surface. In both a WT and ∆csd5 cell, the WGA signal peaks at offset from surface = 0 nm where the PG cell wall is located within the periplasm. In WT cells, CcmA-HaloTag signal peaks near –50 nm from the PG cell wall and declines further to the inside of the cell. Based on cryo-electron tomography data, an approximate distance of 50 nm from the PG cell wall to the cytoplasm in H. pylori is expected (Asmar et al., 2017; Chang et al., 2018; Kühn et al., 2010; Lu et al., 2022; Qin et al., 2017). In contrast, in a ∆csd5 cell, the CcmA-HaloTag signal peaks near –100 nm from the cell surface and continues to be high even as the surface of interest approaches center of the cell (approximately –300 nm), indicating that more CcmA-HaloTag signal is found near the center of the cell in ∆csd5 cells than in WT cells. When we performed the same analysis on the entire populations of cells (292 WT and 326 ∆csd5), we found that while the overall trends were the same as when we analyzed individual cells, there was a lot of variability in the WT cell population. The variability of the WT population arises because many WT cells have both a population of CcmA-HaloTag at the cell envelope (peak at –50 nm) and in the center of the cell that causes a broader left tail in the population-level data (Figure 7—figure supplement 1C and D). In contrast, the Δcsd5 population-level signal peak is broader and shifted towards the center of the cell (–80 nm). Thus, Csd5 is required for CcmA to localize to the cell envelope.
 
@@ -123,15 +155,682 @@ Bactofilins are commonly found as part of complexes in other bacteria and help s
 
 ## Materials and methods
 
-## Bacterial strain construction and growth
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal ɑ-FLAG M2 antibody produced in mouse</td>
+      <td>Sigma</td>
+      <td>Cat# F1804; RRID:AB_262044</td>
+      <td>Used at 1:5000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit ɑ-CcmA</td>
+      <td>Blair et al., 2018</td>
+      <td></td>
+      <td>Used at 1:10,000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit ɑ-SH3</td>
+      <td>Blair et al., 2018</td>
+      <td></td>
+      <td>Used at 1:5000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse ɑ-HaloTag</td>
+      <td>Promega</td>
+      <td>Cat# G9211; RRID:AB_2688011</td>
+      <td>Used at 1:10,000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit ɑ-Csd1</td>
+      <td>Yang et al., 2019</td>
+      <td></td>
+      <td>Used at 1:10,000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit ɑ-Cag3</td>
+      <td>Pinto-Santini and Salama, 2009</td>
+      <td></td>
+      <td>Used at 1:20,000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ɑ-FLAG M2 Affinity Gel</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Janelia Fluor HaloTag ligand 549 (JF-549)</td>
+      <td>Promega</td>
+      <td>Cat# GA1110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wheat germ agglutinin, Alexa Fluor 488 Conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat# W11261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Diamond Antifade Mountant</td>
+      <td>Invitrogen</td>
+      <td>Cat# P36961</td>
+      <td>Mountant used for fluorescent microscopy</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD cloning kit</td>
+      <td>Takara</td>
+      <td>Cat# 638920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zero Blunt TOPO PCR Cloning Kit, with One Shot Top10 Chemically Competent E. coli cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# K280020</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strain construction and growth
 
 Strains used in this work, as well as primers and plasmids used in strain construction, are available in Tables 1–4. H. pylori was grown in Brucella Broth (BD) supplemented with 10% heat-inactivated fetal bovine serum (Cytiva HyClone) without antimicrobials or on horse blood (HB) agar plates with microbials as described (Sycuro et al., 2010). For resistance marker selection, HB agar plates were supplemented with 15 µg/ml chloramphenicol, 25 µg/ml kanamycin, or 60 mg/ml sucrose. H. pylori strains were grown at 37°C under micro-aerobic conditions in a tri-gas incubator (10% CO2, 10% O2, and 80% N2). For plasmid selection and maintenance in Escherichia coli, cultures were grown in Lysogeny broth (LB) or on LB-agar at 37°C supplemented with 100 µg/ml ampicillin or 25 µg/ml kanamycin.
+
+**Table 1.**
+ H. pylori strains used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Relevant genotype or description</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DCY26</td>
+      <td>csd7::catsacB</td>
+      <td>Yang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>DCY28</td>
+      <td>csd7::cat</td>
+      <td>Yang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>DCY71</td>
+      <td>csd7-3X-FLAG</td>
+      <td>Yang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>DCY77</td>
+      <td>csd7-3x-FLAG, ccmA::cat</td>
+      <td>Yang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>JS02</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA, csd5::cat2kan</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>JS09</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA, csd5::cat2kan, csd7::cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>JTH1</td>
+      <td>csd5-2X-FLAG cat</td>
+      <td>Blair et al., 2018</td>
+    </tr>
+    <tr>
+      <td>JTH3</td>
+      <td>ccmA-2X-FLAG cat2kan</td>
+      <td>Blair et al., 2018</td>
+    </tr>
+    <tr>
+      <td>KBH157</td>
+      <td>csd5-2X-FLAG, murF-3X-VSV-G::cat</td>
+      <td>Blair et al., 2018</td>
+    </tr>
+    <tr>
+      <td>LSH100</td>
+      <td>Wild-type H. pylori, NSH57 with fliM repaired</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH108</td>
+      <td>rdxA::kansacB</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH113</td>
+      <td>csd1::cat</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH117</td>
+      <td>ccmA::catsacB</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH121</td>
+      <td>csd1::cat, rdxA::csd1</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH123</td>
+      <td>csd5::cat</td>
+      <td>Sycuro et al., 2012</td>
+    </tr>
+    <tr>
+      <td>LSH148</td>
+      <td>ccmA::catsacB, rdxA::ccmA</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>SSH31C</td>
+      <td>ccmA::ccmA-12 aa linker-HaloTag</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH33</td>
+      <td>ccmA::ccmA-40 aa linker-mNeonGreen</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH38A</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH39B</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH41A</td>
+      <td>ccmA::catsacB, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH49A</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA, csd5::cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH50A</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA, csd7::catsacB</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH51A</td>
+      <td>rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH53A</td>
+      <td>ccmA::catsacB, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH54A</td>
+      <td>ccmA::ccmA ∆MM, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH55A</td>
+      <td>ccmA::ccmA ∆NT, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH56B</td>
+      <td>ccmA::ccmA ∆CT, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH57A</td>
+      <td>ccmA::ccmA BD, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH58A</td>
+      <td>ccmA::ccmA ∆MM, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH59A</td>
+      <td>ccmA::ccmA ∆NT, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH60A</td>
+      <td>ccmA::ccmA ∆CT, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH65A</td>
+      <td>ccmA::ccmA BD, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH67A</td>
+      <td>ccmA::ccmA ∆13–17, rdxA::csd1</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH68A</td>
+      <td>ccmA::ccmA ∆13–17, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH70A</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, rdxA::ccmA, csd6::cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH78B</td>
+      <td>ccmA::ccmA ∆MM, rdxA::csd1, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH79A</td>
+      <td>ccmA::ccmA ∆NT, rdxA::csd1, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH80A</td>
+      <td>ccmA::ccmA ∆CT, rdxA::csd1, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH81B</td>
+      <td>ccmA::ccmA BD, rdxA::csd1, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH82</td>
+      <td>ccmA::ccmA ∆13–17, rdxA::csd1, csd7::csd7-3X-FLAG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH87A</td>
+      <td>ccmA::ccmA-40 aa linker-HaloTag, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH89A</td>
+      <td>ccmA::ccmA ∆CT-40 aa linker-HaloTag, rdxA::csd1,csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH97A</td>
+      <td>ccmA::ccmA BD-40 aa linker-HaloTag, rdxA::csd1, csd5::csd5-2X-FLAG-cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>SSH109A</td>
+      <td>ccmA::ccmA ∆NT, rdxA::csd1, csd5::cat</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>TSH17</td>
+      <td>csd6::cat</td>
+      <td>Sycuro et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ E. coli strains used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Relevant genotype or description</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BL21 (DE3)</td>
+      <td>Protein expression E. coli strain</td>
+      <td>New England Biolabs</td>
+    </tr>
+    <tr>
+      <td>Stellar</td>
+      <td>Cloning strain of E. coli</td>
+      <td>Takara</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Plasmids used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Genotype or description</th>
+      <th>Marker</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pET15b</td>
+      <td>Modified pET15 vector (6-His expression vector)</td>
+      <td>Ampicillin</td>
+      <td>Barry Stoddard Lab, Fred Hutchinson Cancer Center</td>
+    </tr>
+    <tr>
+      <td>pKB62A</td>
+      <td>6-His ccmA in pET15b</td>
+      <td>Ampicillin</td>
+      <td>Taylor et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pLC292</td>
+      <td>pRdxA</td>
+      <td>Ampicillin</td>
+      <td>Terry et al., 2005</td>
+    </tr>
+    <tr>
+      <td>pLKS31</td>
+      <td>csd1 in pLC292</td>
+      <td>Ampicillin</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>pSS15A</td>
+      <td>6-His ccmA ∆MM in pET15b</td>
+      <td>Ampicillin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS16A</td>
+      <td>6-His ccmA ∆CT in pET15b</td>
+      <td>Ampicillin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS17A</td>
+      <td>6-His ccmA BD in pET15b</td>
+      <td>Ampicillin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS18B</td>
+      <td>6-His ccmA ∆13–17 in pET15b</td>
+      <td>Ampicillin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS19A</td>
+      <td>6-His ccmA ∆NT in pET15b</td>
+      <td>Ampicillin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pCR Blunt II-TOPO vector</td>
+      <td>TOPO cloning vector</td>
+      <td>Kanamycin</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>pKB69H</td>
+      <td>6-His ccmA I55A in pET15b</td>
+      <td>Ampicillin</td>
+      <td>Taylor et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pKB72D</td>
+      <td>6-His ccmA L110S in pET15b</td>
+      <td>Ampicillin</td>
+      <td>Taylor et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pFC30K</td>
+      <td>His6HaloTag T7 Flexi Vector</td>
+      <td>Kanamycin</td>
+      <td>Promega</td>
+    </tr>
+    <tr>
+      <td>pSS6-4</td>
+      <td>ccmA-12 aa linker-HaloTag in pCR Blunt II-TOPO</td>
+      <td>Kanamycin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS8E</td>
+      <td>ccmA-40 aa linker-mNeonGreen in pCR Blunt II-TOPO</td>
+      <td>Kanamycin</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pSS10-1</td>
+      <td>ccmA-40 aa linker-HaloTag in pCR Blunt II-TOPO</td>
+      <td>Kanamycin</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Primers used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Sequence 5′ to 3′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Construction of H. pylori strains</td>
+    </tr>
+    <tr>
+      <td colspan="2">Csd1 F</td>
+      <td>GAGTCGTTACATTAATGTGCATATCT</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA SDM dn R</td>
+      <td>GCTCATTTGAGTGGTGGGAT</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 2–17 F</td>
+      <td>CAATAAAGAAAGGAGCATCAGATGGCGACTATCATCGCTC</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 2–17 R</td>
+      <td>GAGCGATGATAGTCGCCATCTGATGCTCCTTTCTTTATTG</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 3–12 F</td>
+      <td>AATAAAGAAAGGAGCATCAGATGGCAGCAAAAACAGG</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 3–12 R</td>
+      <td>CCTGTTTTTGCTGCCATCTGATGCTCCTTTCTTTATT</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 119–136 F</td>
+      <td>GGGAAACTCGCCCTAAGAATTAGGGAATGATCCAATCTAG</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 119–136 R</td>
+      <td>CTAGATTGGATCATTCCCTAATTCTTAGGGCGAGTTTCCC</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 13–17 2 F</td>
+      <td>ATAACAATAATAAATCGGCTAATGCGACTATCATCGCTCA</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove aa 13–17 2 R</td>
+      <td>TGAGCGATGATAGTCGCATTAGCCGATTTATTATTGTTAT</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_40aa_linker_upstream_R</td>
+      <td>ACCTTGTCCGCTACCCTCAAGTTTATTTTCAATTTTCTTTTC</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_mNeonGreen_dnstrm_F</td>
+      <td>GATGGATGAATTATATAAATAATAGGGAATGATCCAATCTAGTCT</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_12_aa_link_Halo_R</td>
+      <td>AGTACCGATTTCACTACCACCACCACTACCACCACCACTACCACCACCTTTATTTTCAAT</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_Halo_dnstrm_R</td>
+      <td>AGACTAGATTGGATCATTCCCTAACCGGAAATCTCCAGA</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_12_aa_link_Halo_F</td>
+      <td>ATTGAAAATAAAGGTGGTGGTAGTGGTGGTGGTAGTGGTGGTGGTAGTGAAATCGGTACT</td>
+    </tr>
+    <tr>
+      <td colspan="2">40 aa linker halotag R</td>
+      <td>TGGAAAGCCAGTACCGATTTCGCCTTGACCTGGGCCAGATCC</td>
+    </tr>
+    <tr>
+      <td colspan="2">40 aa linker halotag F</td>
+      <td>GGATCTGGCCCAGGTCAAGGCGAAATCGGTACTGGCTTTCCA</td>
+    </tr>
+    <tr>
+      <td colspan="2">C1_828</td>
+      <td>GATATAGATTGAAAAGTGGAT</td>
+    </tr>
+    <tr>
+      <td colspan="2">C1_829</td>
+      <td>TTATCAGTGCGACAAACTGGG</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Cloning for protein purification</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_pET15b_BamHI</td>
+      <td>GTTAGCAGCCGGATCCCTATTTATTTTCAATTTTCTTTTCTTGCTCATTGA</td>
+    </tr>
+    <tr>
+      <td colspan="2">pET15b_ccmA_delta_aa2to17_NdeI</td>
+      <td>CGCGCGGCAGCCATATGATGGCGACTATCATCGCTCAAG</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_pET15b_BamHI</td>
+      <td>GTTAGCAGCCGGATCCCTATTTATTTTCAATTTTCTTTTCTTGCTCATTGA</td>
+    </tr>
+    <tr>
+      <td colspan="2">pET15b_ccmA_delta_aa3to12_NdeI</td>
+      <td>CGCGCGGCAGCCATATGATGGCAGCAAAAACAGGACCAG</td>
+    </tr>
+    <tr>
+      <td colspan="2">CcmA_pET15b_NdeI</td>
+      <td>CGCGCGGCAGCCATATGATGGCAATCTTTGATAACAATAATAAATCGGCT</td>
+    </tr>
+    <tr>
+      <td colspan="2">pET15b_ccmA_delta_aa119to136_BamHI</td>
+      <td>GTTAGCAGCCGGATCCCTAATTCTTAGGGCGAGTTTCC</td>
+    </tr>
+    <tr>
+      <td colspan="2">pET15b_ccmA_delta_aa13to17_NdeI</td>
+      <td>CGCGCGGCAGCCATATGATGGCAATCTTTGATAACAATAATAAATCGGCT</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Sequencing primers</td>
+    </tr>
+    <tr>
+      <td>Target</td>
+      <td>Primer name</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rdxA</td>
+      <td>1318</td>
+      <td>GAAGCGGTTACAATCATCACGCCC</td>
+    </tr>
+    <tr>
+      <td>rdxA</td>
+      <td>1319</td>
+      <td>GCTTGAAAACACCCCTAAAAGAGCG</td>
+    </tr>
+    <tr>
+      <td>ccmA</td>
+      <td>1432</td>
+      <td>GATTACCATTTGCATGTAGATGGCG</td>
+    </tr>
+    <tr>
+      <td>ccmA</td>
+      <td>1433</td>
+      <td>CTAGAGATCTTACCATCAAGGCGC</td>
+    </tr>
+    <tr>
+      <td>csd5</td>
+      <td>Csd5-c-term-seq</td>
+      <td>AAGCGTGAAGGTTTTAGAAATCCA</td>
+    </tr>
+    <tr>
+      <td>csd5</td>
+      <td>1194_R</td>
+      <td>CCACAAGCTCATCATCTTCCAAAA</td>
+    </tr>
+    <tr>
+      <td>pET15b</td>
+      <td>T7 F</td>
+      <td>CGAAATTAATACGACTCACTATAGG</td>
+    </tr>
+    <tr>
+      <td>pET15b</td>
+      <td>T7 R</td>
+      <td>CCTCAAGACCCGTTTAGAGGCC</td>
+    </tr>
+  </tbody>
+</table>
 
 All genetic manipulations of H. pylori were performed on the chromosome via natural transformation and allelic exchange by homologous recombination of either purified PCR products or plasmids. We used chloramphenicol (cat) and kanamycin (aphA3) resistance cassettes as markers in some strains (Trieu-Cuot et al., 1985; Wang and Taylor, 1990). In others, we used selectable and counter-selectable cassettes catsacB (chloramphenicol resistance and sucrose susceptibility) and kansacB (kanamycin resistance and sucrose susceptibility) for constructing marker-less strains (Copass et al., 1997).
 
 All genomic DNA preparations from H. pylori were performed with the Wizard Genomic DNA Purification Kit (Promega). All plasmids were purified with the QIAprep Spin MiniPrep Kit (QIAGEN).
 
-## Construction of H. pylori strains expressing truncated versions of ccmA
+### Construction of H. pylori strains expressing truncated versions of ccmA
 
 To construct strains expressing truncated versions of CcmA, we first generated a parent strain expressing an extra copy of csd1 at rdxA, a locus commonly used for complementation (Smeets et al., 2000). First, we transformed LSH108 (rxdA::kansacB) with plasmid pLKS31 (csd1 in pRdxA) to replace kansacB at rdxA with csd1, then selected for colonies that grew on HB agar plates (Humbert and Salama, 2008) containing sucrose but could not grow on HB plates containing kanamycin to generate strain SSH51A. Then, we replaced the ccmA gene with a catsacB cassette so that marker-less truncated versions of ccmA could be engineered by allelic exchange. To do this, we transformed strain SSH51A with genomic DNA from LSH117 (ccmA::catsacB) and selected for colonies that grew on HB plates containing chloramphenicol to generate strain SSH53A. We transformed strain SSH53A with purified PCR products generated by PCR SOEing (Horton, 1995) that had truncated versions of ccmA flanked by 800 nucleotides of homology upstream of the ccmA and 500 nucleotides of homology downstream of the ccmA, and selected for colonies that grew on HB plates containing sucrose, but not on HB plates containing chloramphenicol. After confirming that strains grew on selective plates, strains were confirmed by PCR and Sanger sequencing to sequence the rdxA and ccmA loci.
 
@@ -141,13 +840,13 @@ To generate the BD strain (SSH57A, only amino acids 18–188), we amplified geno
 
 To generate strain SSH109A, a strain lacking csd5 and the N-terminus of ccmA, strain SSH55A (ccmA::ccmA ∆NT, rdxA::csd1) was transformed with genomic DNA from LSH123 (csd5::cat). Colonies that grew on HB plates containing chloramphenicol were selected.
 
-## Construction of H. pylori strains expressing FLAG-tagged versions of Csd5 or Csd7
+### Construction of H. pylori strains expressing FLAG-tagged versions of Csd5 or Csd7
 
 To construct strains expressing Csd5-2X FLAG, strains with truncated versions of ccmA (SSH54A, SSH55A, SSH56B, SSH57A, SSH67A) were transformed with genomic DNA from JTH1 (contains a cat cassette downstream of csd5-2X FLAG at the native csd5 locus). Colonies that grew on HB plates containing chloramphenicol were selected and confirmed by PCR. These are strains SSH58A, SSH59A, SSH60A, SSH65A, and SSH68A.
 
 To construct strains expressing Csd7-3X FLAG, DCY71 (Csd7-3X-FLAG) was transformed with genomic DNA from LSH117 to replace ccmA with catsacB and clones that grew on HB plates supplemented with chloramphenicol were selected to generate strain SSH41A. Then, SSH41A was transformed with genomic DNA from strains SSH54A, SSH55A, SSH56B, SSH57A, or SSH67A to replace catsacB with truncated versions of ccmA, clones that grew on HB plates supplemented with sucrose but not chloramphenicol were selected. Next, strains were transformed with genomic DNA from LSH108 to place kansacB at the rdxA locus, clones that grew on HB plates supplemented with kanamycin were selected. Finally, clones were transformed with genomic DNA from SSH51A to replace kansacB with csd1 at rdxA, clones that grew on HB plates supplemented with sucrose but not on HB plates supplemented with kanamycin were selected and confirmed by PCR and Sanger sequencing of the rdxA and ccmA loci. Confirmed strains are SSH78B, SSH79A, SSH80A, SSH81B, and SSH82.
 
-## Construction of H. pylori strains expressing CcmA-HaloTag
+### Construction of H. pylori strains expressing CcmA-HaloTag
 
 We used a flexible 40 amino-acid-long linker to link a HaloTag to the C-terminus of CcmA. To do this, we first constructed a strain where the C-terminus of ccmA was fused to mNeonGreen with the 40 amino-acid-long linker between the two, then modified it to replace mNeonGreen with HaloTag. We used a gBlock (IDT) that contained the linker followed by a codon-optimized version of mNeonGreen and used PCR SOEing (Horton, 1995) to generate a construct that had ccmA-linker-mNeonGreen flanked with 800 nucleotides of homology upstream of the ccmA and 500 nucleotides of homology downstream of the ccmA. We amplified the upstream portion of the construct from LSH100 (WT) genomic DNA with primers ‘Csd1 F’ and ‘CcmA-40aa_linker_upstream_R’ and the downstream portion with primers ’CcmA-mNeonGreen_dnstrm_R’ and ‘CcmA SDM dn R.’ After cleaning up the PCR products with QIAquick PCR Purification Kit (QIAGEN), we performed PCR SOEing (Horton, 1995) to stitch together the two PCR products and the gBlock, the product was gel extracted using QIAquick Gel Extraction Kit (QIAGEN), then TOPO cloned using the Zero Blunt TOPO PCR Cloning Kit (Invitrogen). The plasmid was then used as a template to transform LSH117 for allelic exchange to replace the catsacB cassette at the ccmA locus with the construct. Clones that grew on HB plates containing sucrose but not chloramphenicol were selected and confirmed by PCR and Sanger sequencing to generate strain SSH33.
 
@@ -159,7 +858,7 @@ To generate strains lacking csd5, csd7, and csd6, SSH39B was transformed with ge
 
 To generate JS09, a strain lacking csd5 and csd7, we converted the cat cassette to a kanamycin resistance cassette in SSH49A (ccmA-40 aa linker-HaloTag, csd5::cat, rdxA::ccmA) by transforming it with a PCR product containing a kanamycin resistance cassette flanked by homology to a cat cassette. The cassette was amplified by PCR using primers ‘C1_828’ and ‘C2_829’ from JTH3, then the product was purified with the QIAquick PCR Purification Kit. After transforming SSH49A with the purified PCR product, we selected colonies that grew on HB plates supplemented with kanamycin but not chloramphenicol to generate strain JS02. Next, JS02 was transformed with genomic DNA from DCY28 (csd7::cat) and colonies that grew on HB plates supplemented with chloramphenicol and kanamycin were selected.
 
-## Construction of vectors for recombinant expression of 6-his CcmA
+### Construction of vectors for recombinant expression of 6-his CcmA
 
 Truncated versions of CcmA were cloned into pET15b, a cloning vector used for expressing N-terminal 6-his tagged proteins, with the In-Fusion cloning kit (Takara). First, pET15b was linearized with restriction enzymes BamHI-HF (NEB) and NdeI (NEB), then gel extracted and purified using QIAquick Gel Extraction Kit (QIAGEN). Next, PCR products containing truncated versions of CcmA flanked by 15 nucleotides of homology to the plasmid backbone were amplified and the products were purified with the QIAquick PCR Purification Kit (QIAGEN).
 
@@ -167,50 +866,50 @@ The ∆NT product was amplified from SSH55A genomic DNA with primers ‘CcmA-pET
 
 After cloning following the manufacturer’s instructions, colonies were verified by restriction digest and Sanger sequencing. Confirmed plasmids were transformed into BL21 DE3 (NEB) for recombinant expression of 6-his-CcmA.
 
-## Protein structure prediction
+### Protein structure prediction
 
 SWISS-MODEL was used to identify the boundaries between the bactofilin domain and the terminal regions of CcmA. The primary amino acid sequence of CcmA from the H. pylori G27 genome (GenBank: CP001173.1) was submitted to SWISS-MODEL (https://swissmodel.expasy.org/; Waterhouse et al., 2018) where the structure of BacA from C. crescentus (Vasa et al., 2015) was used to model CcmA. RoseTTAFold was used to predict the structure of CcmA; the same primary amino acid sequence of CcmA was submitted to the Robetta protein prediction service (https://robetta.bakerlab.org/; Baek et al., 2021). Models generated in RoseTTAFold were visualized using PyMOL (The PyMOL Molecular Graphics System, version 2.4.2 Schrödinger, LLC).
 
-## Western blotting
+### Western blotting
 
 Whole-cell extracts of H. pylori were prepared by harvesting 1.0 optical density at 600 nm (OD600) of log phase liquid culture (0.3–0.7 OD600) by centrifugation for 2 min. Then, bacteria were resuspended to a concentration of 10 OD600 per ml with 2× protein sample buffer (0.1 M Tris–HCl, 4% SDS, 0.2% bromophenol blue, 20% glycerol) with or without 5% β-mercaptoethanol (BME). Samples were loaded onto Mini-PROTEAN TGX 4–15% polyacrylamide gels (Bio-Rad) and transferred onto polyvinylidene difluoride (PVDF) membranes using the Trans-Blot TurboTransfer System (Bio-Rad) system. Membranes were either stained with 0.1% Ponceau S solution in 5% acetic acid (Sigma) first or immediately blocked for 2 hr at room temperature in 5% non-fat milk in Tris-buffered saline containing 0.05% Tween-20 (TBS-T), then incubated either overnight at 4°C or at room temperature for 1 hr with primary antibodies, 1:10,000 for ɑ-CcmA (Blair et al., 2018), 1:5000 for ɑ-FLAG (M2, Sigma), 1:10,000 for ɑ-Csd1 (Yang et al., 2019), 1:20,000 for ɑ-cag3 (Pinto-Santini and Salama, 2009), 1:5000 for ɑ-SH3 (Blair et al., 2018), or 1:10,000 for ɑ-HaloTag (Promega). Then, it was washed five times with TBS-T over a 30 min period, incubated with secondary antibodies for 1 hr at room temperature at 1:20,000 with appropriate horseradish peroxidase-conjugated ɑ-immunoglobulin antibodies (ɑ-rabbit for CcmA, Csd1, SH3, or Cag3; ɑ-mouse for FLAG and HaloTag, Santa Cruz Biotechnology), and then washed five times with TBS-T over a 30 min period. Proteins were detected using a chemiluminescent substrate according to the manufacturer’s instructions (Pierce ECL substrate for standard Western blotting or Immobilon Western HRP substrate [Millipore] for Western blotting following co-immunoprecipitation experiments) and imaged directly with the Bio-Rad gel documentation system. Some membranes were stripped and re-probed with different antibodies, in that case membranes were first rehydrated in TBS-T then incubated in low pH stripping buffer for 20 min while shaking at room temperature (200 mM glycine, 3.5 mM SDS, 1% Tween-20, pH 2.2). After stripping, membranes were washed three times with TBS-T for 5 min each before proceeding to the blocking step.
 
-## Western blot densitometry
+### Western blot densitometry
 
 Western blot densitometry was performed using Image Lab software version 6.0.1 (Bio-Rad). The lanes on each Western blot were defined, then the adjusted total lane volume was calculated by the software. To calculate relative Csd1 levels, the signal detected by the ɑ-Csd1 antibody for each sample was divided by the signal detected by the ɑ-Cag3 antibody from the same sample on the same membrane. After calculating relative Csd1 levels, they were normalized by dividing the signal by the relative Csd1 level from the SSH51A strain (rdxA::csd1).
 
-## Phase-contrast microscopy and quantitative morphology analysis
+### Phase-contrast microscopy and quantitative morphology analysis
 
 Phase-contrast microscopy and image analysis was performed as previously described (Sycuro et al., 2010). Briefly, cells were grown in liquid culture to mid-log phase (0.3–0.7 OD600), centrifuged, and resuspended in 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS) and mounted on glass slides. Cells were imaged with a Nikon TE 200 microscope equipped with a ×100 oil immersion lens objective and Photometrics CoolSNAP HQ charge-coupled-device camera. Images were thresholded with Fiji (Schindelin et al., 2012) and CellTool software (Pincus and Theriot, 2007) was used to measure both side curvature and central axis length.
 
-## Protein purification
+### Protein purification
 
 Purification of 6-His CcmA was performed exactly as described previously (Taylor et al., 2020). E. coli strains used to recombinantly express CcmA were pKB62A in BL21 DE3, pSS15A in BL21 DE3, pSS16A in BL21 DE3, pSS17A in BL21 DE3, pSS18B in BL21 DE3, pSS19A in BL21 DE3, pKB69H in BL21 DE3, and pKB72D in BL21 DE3.
 
-## Circular dichroism
+### Circular dichroism
 
 After purification of 6-his CcmA, samples were dialyzed against 10 mM CAPS pH 11 at a volume of 1:10,000 for 24 hr, then the buffer was changed, and dialysis continued for another 24 hr. After dialysis was complete, samples were normalized to 0.5 mg/ml. CD spectra were collected from 180 to 260 nm while holding the temperature constant with a Jasco J-815 Circular Dichroism Spectropolarimeter.
 
-## Negative stain and TEM
+### Negative stain and TEM
 
 After purification of 6-his CcmA, samples were dialyzed against 25 mM Tris pH 8 for 24 hr. Samples were then normalized to 1 mg/ml and placed on carbon-coated grids after glow-discharging. Samples were fixed in ½ X Karnovsky’s fixative and washed with 0.1 M cacodylate buffer and water, then stained with Nano-W (Nanoprobes) for 60 s, wicked, then stained for another 60 s. Images were acquired on a kV Thermo Fisher Talos 120C LaB6 microscope equipped with a Ceta Camera using Leginon software (Suloway et al., 2005). The width of bundles and filaments was measured using Fiji (Schindelin et al., 2012).
 
-## Co-immunoprecipitation experiments
+### Co-immunoprecipitation experiments
 
 Co-immunoprecipitation experiments were performed as previously described in Blair et al., 2018 and Yang et al., 2019 with slight modifications. H. pylori expressing FLAG tags fused to either Csd5 or Csd7 were grown to mid-log phase in liquid culture and 15 OD600 were harvested by centrifugation at 10,000 RPM for 10 min at 4°C. Cells pellets were resuspended in 1.8 ml of cold lysis buffer (20 mM Tris pH 8, 150 mM NaCl, 2% glycerol, 1% Triton X-100, and EDTA-free protease inhibitor [Pierce]). The cells were sonicated at 10% power for 10 s intervals with a microtip (Sonic Dismembrator Model 500, Branson) until visibly cleared, then centrifuged at 20,000 RCF for 30 min at 4°C. The soluble fraction was then incubated with 40 µl beads (ɑ-FLAG M2 agarose beads [Sigma]) or ɑ-VSV-G agarose beads (Sigma) equilibrated in wash buffer (20 mM Tris pH 8, 150 mM NaCl, 2% glycerol, 0.1% Triton X-100) for 90 min at 4°C. The beads were then washed four times in 10 ml cold wash buffer, and samples were centrifuged at 2000 RPM for 2 min between washes. Beads were then boiled in 45 µl 2× sample buffer without BME for 10 min and subjected to Western blotting.
 
-## Labeling with fluorescent WGA and HaloTag ligands
+### Labeling with fluorescent WGA and HaloTag ligands
 
 H. pylori expressing CcmA-HaloTag were grown to mid-log phase and fixed with 4% PFA for 45 min at room temperature. After fixing, bacteria were permeabilized for 1 hr at room temperature with PBS + 0.05% Triton X-100. Bacteria were then resuspended in PBS and centrifuged onto #1.5 coverslips. Next, coverslips were incubated on a droplet of PBS containing 30 µg/ml af488-conjugated WGA (Invitrogen) and 4 µM JF-549 (Promega) for 30 min at room temperature. Coverslips were washed four times (10 min each) by placing on fresh droplets of PBS + 0.1% Tween-20, then mounted on glass slides with ProLong Diamond Antifade Mountant (Invitrogen).
 
-## 3D structured illumination microscopy
+### 3D structured illumination microscopy
 
 3D SIM was performed on a DeltaVision OMX SR equipped with PCO scientific CMOS cameras, 488 nm and 568 nm lasers, and an Olympus ×60/1.42 U PLAN APO oil objective with oil matched for the sample refractive index. The DeltaVision OMX SR has a resolution of approximately 100 nm in the X and Y directions and 300 nm in Z. 512 × 512 pixel Z-stack images were acquired with 125 nm spacing and 3 µm total thickness. Figures were generated by changing channel colors, adjusting brightness and contrast in Fiji, and brightness and contrast settings were maintained across the entire image (Schindelin et al., 2012). Figures were assembled in Adobe Illustrator.
 
-## 3D reconstructions and curvature enrichment analysis
+### 3D reconstructions and curvature enrichment analysis
 
 3D reconstructions were generated, and curvature CcmA enrichment analysis was performed exactly as described in Taylor et al., 2020 using existing software (Bratton et al., 2019; Bratton et al., 2018). Briefly, 3D SIM Z-stack images were used to generate a 3D triangular meshwork surface with roughly 30 nm precision from the WGA channel. After generating the 3D triangular meshwork, the Gaussian curvature was calculated at every location on the surface of the cell, and we performed curvature enrichment analysis to identify which GC values CcmA signal was associated with where uniform signal = 1. Because the absolute amount of CcmA signal can differ between cells and because the illumination throughout the field is nonuniform, we set the average CcmA signal on each cell as 1. Then we measured each cell’s curvature-dependent CcmA signal intensity relative to 1, normalized by the amount of the curvature present on that individual cell surface.
 
-## Analysis of intensity of CcmA-HaloTag signal at cell surface and within cells
+### Analysis of intensity of CcmA-HaloTag signal at cell surface and within cells
 
 A custom MATLAB script was used to compute the relative intensity of CcmA-HaloTag signal at the cell surface and at surfaces generated by shrinking the surface of interest toward the centerline of the cell (negative offsets) or increasing the surface away from the centerline (positive offsets). For each of these shells, or surface offsets, we calculated the average WGA signal and the average CcmA-HaloTag signal. To account for errors in spatial alignment between the two color channels, before calculating the intensity at each shell, we performed a rigid body alignment procedure to maximize the intensity of the signal contained within the nominal reconstructed surface (0 nm offset). Consistent with the fact that we utilized the WGA channel for shape reconstructions, this alignment algorithm returned offsets of less than one pixel (one pixel = 80 nm) for the WGA channel. The CcmA-HaloTag channel showed more variability in the offsets, sometimes requiring an offset of almost 200 nm along the focal direction, consistent with small, wavelength-dependent variations in focal position. After calculating the average intensity at each subshell, or resized surface, we normalized the highest concentration to 1 before averaging across all the cells in our sample.

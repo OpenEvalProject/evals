@@ -22,20 +22,20 @@
 
 ### Affiliations
 
-1. https://ror.org/04c4dkn09 Department of Digestive Disease, The First Affiliated Hospital of University of Science and Technology of China, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China
-2. https://ror.org/04c4dkn09 Institute of Immunology, the Chinese Academy of Sciences Key Laboratory of Innate Immunity and Chronic Disease, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China
+1. Department of Digestive Disease, The First Affiliated Hospital of University of Science and Technology of China, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))
+2. Institute of Immunology, the Chinese Academy of Sciences Key Laboratory of Innate Immunity and Chronic Disease, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))
 3. Shanghai Institute of Immunology, Department of Microbiology and Immunology, Shanghai Jiao Tong University School of Medicine (SJTU-SM) Shanghai China
-4. https://ror.org/01yc7t268 Department of Molecular Microbiology, Washington University School of Medicine in St. Louis St. Louis United States
-5. https://ror.org/03v76x132 Department of Immunobiology, Yale University School of Medicine New Haven United States
-6. https://ror.org/03v76x132 Howard Hughes Medical Institute, Yale University School of Medicine New Haven United States
-7. https://ror.org/04c4dkn09 School of Data Science, University of Science and Technology of China Hefei China
+4. Department of Molecular Microbiology, Washington University School of Medicine in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+5. Department of Immunobiology, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Howard Hughes Medical Institute, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+7. School of Data Science, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))
 8. Institute of Health and Medicine, Hefei Comprehensive National Science Center, Hefei, China Hefei China
 
 † Corresponding author
 
 ## Abstract
 
-N6-methyladenosine (m6A) is an abundant mRNA modification and affects many biological processes. However, how m6A levels are regulated during physiological or pathological processes such as virus infections, and the in vivo function of m6A in the intestinal immune defense against virus infections are largely unknown. Here, we uncover a novel antiviral function of m6A modification during rotavirus (RV) infection in small bowel intestinal epithelial cells (IECs). We found that rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6a eraser ALKBH5. Mice lacking the m6A writer enzymes METTL3 in IECs ( Mettl3 ΔIEC) were resistant to RV infection and showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs). Using RNA-sequencing and m6A RNA immuno-precipitation (RIP)-sequencing, we identified IRF7, a master regulator of IFN responses, as one of the primary m6A targets during virus infection. In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression. Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3 ΔIEC mice. Moreover, the global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth, which likely has broad implications for the development of intestinal immune system against enteric viruses early in life. Collectively, we demonstrated a novel host m6A-IRF7-IFN antiviral signaling cascade that restricts rotavirus infection in vivo.
+N6-methyladenosine (m6A) is an abundant mRNA modification and affects many biological processes. However, how m6A levels are regulated during physiological or pathological processes such as virus infections, and the in vivo function of m6A in the intestinal immune defense against virus infections are largely unknown. Here, we uncover a novel antiviral function of m6A modification during rotavirus (RV) infection in small bowel intestinal epithelial cells (IECs). We found that rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6a eraser ALKBH5. Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3ΔIEC) were resistant to RV infection and showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs). Using RNA-sequencing and m6A RNA immuno-precipitation (RIP)-sequencing, we identified IRF7, a master regulator of IFN responses, as one of the primary m6A targets during virus infection. In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression. Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3ΔIEC mice. Moreover, the global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth, which likely has broad implications for the development of intestinal immune system against enteric viruses early in life. Collectively, we demonstrated a novel host m6A-IRF7-IFN antiviral signaling cascade that restricts rotavirus infection in vivo.
 
 ## Introduction
 
@@ -47,33 +47,95 @@ Rotavirus (RV), a member of the family Reoviridae, is a nonenveloped icosahedral
 
 ## Results
 
-## The regulation and function of mRNA m6A modifications during RV infection
+### The regulation and function of mRNA m6A modifications during RV infection
 
 RV infections primarily take place in children under the age of five in humans and in neonatal mice younger than 2 weeks old (Crawford et al., 2017; Du et al., 2017). Intriguingly, total RNA m6A modifications in the mouse ileal tissues, revealed by a m6A dot blot and mass spectrum (MS) analysis, significantly declined from 2 weeks to 3 weeks post birth (Figure 1a, b and c), which caused by increased Alkbh5 expression (Figure 1d, Figure 1—figure supplement 1a and Figure 1—figure supplement 1b) and development of microbiota might be involved (Figure 1—figure supplement 2). Indeed, overexpression of Alkbh5 in mouse IEC cell line caused decreased m6A level (Figure 1—figure supplement 1c), supporting the role of Alkbh5 in regulating global m6A levels in intestine. These data indicating a potential link between the resistance to RV infection and the decline of m6A modification during early life development.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-v2.jpg)
+
+**Figure 1.:** (a) m6A dot blot analysis of total RNA in ileum tissues from mice with different ages. Methylene blue (MB) staining was the loading control. (b) Quantitative analysis of (a) (mean ± SEM), statistical significance was determined by Student’s t-test (**p < 0.005, ***p < 0.001, NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals. (c) mass spectrum (MS) analysis of m6A level in ileum tissue from mice with different ages. (mean ± SEM), Statistical significance was determined by Student’s t-test (*p < 0.05, NS., not significant). (d) qPCR analysis of indicated genes in ileum tissues from mice with different ages (mean ± SEM). Statistical significance was determined by Student’s t-tests between groups (*p < 0.05, ***p < 0.001, NS., not significant). (e) WT and Mettl3ΔIEC mice were infected by rotavirus EW strain at 8 days post birth. m6A dot blot analysis of total RNA in ileum IEC at 2 dpi. Methylene blue (MB) staining was the loading control. (f) Quantitative analysis of (e) (mean ± SEM). Statistical significance was determined by Student’s t-test (*p < 0.05, ***p < 0.001, NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals. (g–h) Mettl3ΔIEC mice and littermate controls were infected by rotavirus EW strain at 8 days post birth. qPCR analysis of RV viral loads in ileum tissue (g) or fecal samples (h) from Mettl3ΔIEC mice and littermate controls at 4 days post infection (dpi) (littermate WT n = 4, Mettl3ΔIEC n = 4, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05). (i) qPCR analysis of indicated genes in Rhesus rotavirus (RRV)-infected HT-29 cells transduced with Mettl3 sgRNA or control sgRNA, at indicated hours post infection (hpi) (mean ± SEM), statistical significance was determined by Student’s t-test (*p < 0.05, ***p < 0.001, NS., not significant). Experiments in (a, d-f, and i) are repeated twice, (g and h) are repeated four times.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Immunoblotting with antibodies target ALKBH5 and TUBULIN in ileum tissues from mice with different ages. (b) Quantitative analysis of (a) (mean ± SEM), Statistical significance was determined by Student’s t-test (*p < 0.05, NS., not significant). (c) Immunoblotting with antibodies target ALKBH5 and TUBULIN in MODE-K cells transfected with pSIN-EV or pSIN-mAlkbh5-3xFlag for 24 hr. m6A dot blot analysis of total RNA in indicated samples. Methylene blue (MB) staining was the loading control. Experiments in (a and b) are repeated twice, (c) are repeated three times.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) m6A dot blot analysis of total RNA in ileum tissues from germ free mice with different ages. Methylene blue (MB) staining was the loading control. (b) Quantitative analysis of (a) (mean ± SEM), statistical significance was determined by Student’s t-test (NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) WT and Mettl3ΔIEC mice were infected by rotavirus EW strain at 8 days post birth. MS analysis of m6A level in ileum tissue from mice at two dpi (mean ± SEM). Statistical significance was determined by Student’s t-test (**p < 0.005).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp4-v2.jpg)
+
 Besides, the global m6A RNA modification levels increased in the ileum tissue of suckling mice post RV murine strain EW infection (Figure 1e and f and Figure 1—figure supplement 3). As a control, the m6A modification can barely detected in IECs deficiency with m6A writer METTL3 (Mettl3fl/flVil1Cre, Mettl3ΔIEC) (Figure 1e and f). Thus, we hypothesize that RV may induce an enriched cellular m6A modification environment and a weakened innate immune response to facilitate virus replication. To investigate the in vivo role of m6A in the anti-RV immunity, we infected Mettl3ΔIEC mice and wild-type (WT) littermates with RV EW strain. The viral RNA load in Mettl3ΔIEC mice ileum tissue was significantly lower than that in the WT mice (Figure 1g and Figure 1—figure supplement 4). Fecal virus shedding was also significantly lower in Mettl3ΔIEC mice (Figure 1h). Genetic knockdown of METTL3 in HT-29 cells, a human colonic epithelial cell line, by CRISPR-mediated gene silencing, also led to reduced RV replication (Figure 1i), further highlighting the resistance phenotype to RV infection by METTL3 deficiency.
 
-## METTL3 deficiency in IECs results in decreased m6A deposition on Irf7, and increased interferon responses
+### METTL3 deficiency in IECs results in decreased m6A deposition on Irf7, and increased interferon responses
 
 To dissect the underlying mechanism, we performed RNA-sequencing using the IECs from METTL3-deficient mice and littermate controls at steady state. Most of the differentially expressed genes in METTL3-deficient IECs vs WT IECs were enriched in the pathways of ‘defense response to virus’, ‘response to interferon-beta’, and ‘positive regulation of innate immune response’ by gene ontology analysis (Figure 2a). Heatmap also showed that a panel of interferon stimulate genes (ISGs) are upregulated in METTL3-deficient IECs compared to WT IECs (Figure 2b). To map potential m6A modification sites on mRNAs of these differential expressed genes in IECs, we conducted m6A RIP-sequencing based on a previously reported protocol (Li et al., 2017). Metagene plots showed the m6A peak is enriched near the stop codon and 3’-UTR region, which is consistent with previously studies (Xuan et al., 2018; Dominissini et al., 2012; Figure 2—figure supplement 1b). We found that m6A modified one of the master regulators of IFNs, Irf7 (Figure 2c), which played a key role in the network of these differential expressed genes in METTL3-deficient IECs compared to WT IECs, analyzed by STRING (Figure 2d). Of note, Irf7 was the only IRFs that highly expressed in METTL3-deficient IECs, and Irf7 was the prominently highest expressed Irf in IECs (Figure 2e), indicating Irf7 might be one of the key genes that are modulated by m6A modifications. We also validated our results by m6A RIP-qPCR to examine m6A modification sites in Irf7 mRNA based on our RIP-sequencing data in METTL3 knock-down MODE-K cells and predicted results from the database (http://rna.sysy.edu.cn) (Figure 2—figure supplement 1a, Figure 2—figure supplement 1c and Figure 2—figure supplement 1d). It should be noted that our m6A-RIP-seq were performed at steady state. We did not identified previous reported Ifns (Rubio et al., 2018; Winkler et al., 2019), possibly due to the low expression level of Ifns in IECs at steady state.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-v2.jpg)
+
+**Figure 2.:** (a) Gene ontology (GO) analysis of differentially expressed genes in IECs from Mettl3ΔIEC mice vs IECs from littermate WT mice. (b) Heat map of a subset of upregulated ISGs in IECs from Mettl3ΔIEC mice vs IECs from littermate WT mice, as revealed by RNA-seq (normalized data). (c) m6A-RIP-seq analysis of Irf7 and Gapdh mRNA in the ileum of WT mice. (d) Gene regulation network of a subset of up-regulated genes including IRF7. (e) Heat map of Interferon regulatory factors (Irfs) in IECs from Mettl3ΔIEC mice vs IECs from littermate WT mice, as revealed by RNA-seq (RPKM). (f) Mettl3ΔIEC mice and littermate controls were infected by EW at 8 days post birth. qPCR analysis of the Irf7 expression in ileum and jejunum from Mettl3ΔIEC mice and littermate control at 2 dpi (littermate WT n = 4, Mettl3ΔIEC mice n = 3, mean ± SEM). Statistical significance was determined by Student’s t-test (*p < 0.05, **p < 0.005). (g) q-PCR analysis of Irf7 mRNA in METTL3 knockdown HT-29 cells or control cells in indicated time points post actinomycin D treatment (n = 3, mean ± SEM). Statistical significance was determined by Student’s t-test (*p < 0.05, ***p < 0.001, NS., not significant). (h) Relative luciferase activity of sgEV and sgMettl3 HEK293T cells transfected with pmirGLO-Irf7-3’UTR (Irf7-WT) or pmirGLO-Irf7-3’UTR containing mutated m6A modification sites (Irf7-MUT). The firefly luciferase activity was normalized to Renilla luciferase activity (n = 3, mean ± SEM). Statistical significance was determined by Student’s t-tests between groups (*p < 0.05, NS., not significant). (i) Mettl3ΔIEC mice and littermate control and were infected by EW at 8 days post birth. qPCR analysis of selected IFNs and ISGs in ileum tissue at two dpi (littermate WT, n = 4, Mettl3ΔIEC mice, n = 3, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, **p < 0.005). Experiments in (f, h and i) are repeated three times, (g) are repeated twice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Putative m6A sites of mouse or human Irf7/IRF7 on the genomes. (b) Metagene plots of m6A-modified sites. (c) m6A-RIP-qPCR confirms Irf7 as an m6A-modified gene in IECs. RNA of sgEV and sgMettl3 MODE-K cells was incubated with an anti-m6A antibody (Sigma Aldrich, ABE572-I). The eluted RNA and input were processed as described in ‘RT-qPCR’ section, the data were normalized to the input samples (n = 3, mean ± SEM, Statistical significance was determined by Student’s t-test (*p < 0.05, **p < 0.005, NS., not significant)). Tlr3 and Rps14 were measured with m6A sites specific qPCR primers as positive control and negative control, Irf7 was measured with predicted m6A sites specific qPCR primer. (d) Knock down efficiency of METTL3 in MODE-K cells. (e) Knock down efficiency of METTL3 in 293t cells used for luciferase assay. (f) Western blot analysis of sgEV and sgMettl3 MODE-K cells transfected with 2 µg/ml poly I:C at indicated hours, at least three replicate experiments were performed. Experiments in (c–f) are repeated twice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) qPCR analysis of IFN/ISGs in Rhesus rotavirus-infected METTL3 WT and KD HT-29 cells at indicated hours post infection (hpi) (mean ± SEM), statistical significance was determined by Student’s t-test (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). (b) Knock down efficiency of METTL3 in HT-29 cells. Experiments in (a and b) are repeated three times.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) qPCR analysis of viral RNAs, IFNs, and ISGs in Rhesus rotavirus-infected METTL3 WT and KO MA104 cells at 24 hours post infection (hpi) (WT control n = 4, METTL3 ko n = 3, mean ± SEM), statistical significance was determined by Student’s t-test (**p < 0.005, ***p < 0.001, NS., not significant). (b) Knock out efficiency of METTL3 in MA104 cells. Experiments in (a and b) are repeated three times.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) WT and Irf7-/- MEF cell were transduced with lentivirus expressing pLVX-EV-puro, pLVX-Irf7-WT-puro or pLVX-Irf7-Mut-puro containing mutated m6A modification sites. qPCR analysis of genes in different cells at indicated hours post infection (hpi) (mean ± SEM). Statistical significance was determined by Student’s t-tests between groups (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). (b) Western blot analysis of IRF7 expression level in different MEF cells. Experiments in (a and b) are repeated three times.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) qPCR analysis of indicated genes in the ileum (mean ± SEM). Statistical significance was determined by Student’s t-tests between ages (*p < 0.05, **p < 0.005, NS., not significant). Experiments in (a) are repeated twice.
 
 IRF7 is a known master regulator of Type I interferon and Type III interferon-dependent immune responses in respond to virus infection (Barro and Patton, 2007; Honda et al., 2005; Ciancanelli et al., 2016). We reasoned that loss of m6A modification on Irf7 mRNA is responsible for the increased IFN response and subsequent resistance to RV infection. Thus, we first validated the regulation of Irf7 mRNA levels by m6A in mice and in cells. We found an increase of Irf7 mRNA in ileum tissue of Mettl3ΔIEC mice compared to that in WT littermate control mice (Figure 2f). Consistently, the expression of IRF7 mRNA was also higher in METTL3 knockdown HT-29 and METTL3 knockout rhesus monkey MA104 cells, suggesting that the regulation of IRF7/Irf7 expression by m6A is likely conserved across species (Figure 2—figure supplement 2, Figure 2—figure supplement 3). Furthermore, genetic knockdown of METTL3 in human or mice IEC cell lines also led to increased IRF7/Irf7 expression and IFN/Ifn responses (Figure 2—figure supplement 1f, Figure 2—figure supplement 2). As m6A is known to regulate the mRNA decay, we next sought to determine whether the stability of IRF7 mRNA is regulated by m6A. We used actinomycin D to block the de novo RNA synthesis in HT-29 cells to assess the RNA degradation by METTL3 knockdown. The IRF7 mRNA degraded significantly slower in METTL3-knockdown HT-29 cells than the control cell line (Figure 2g, Figure 2—figure supplement 2b).
 
 To directly evaluate the role of m6A in modulating the stability of Irf7 mRNA, luciferase reporter assays were conducted. In comparison with wild-type Irf7-3’UTR (Irf7-WT) constructs, the ectopically expressed constructs harboring m6A mutant Irf7-3’UTR (Irf7-MUT) showed significantly increased luciferase activity (Figure 2h, Figure 2—figure supplement 1e). Further, mutation of m6A modification sites can directly increase the expression of Irf7 and enhance the antiviral function of Irf7 in MEF cells (Figure 2—figure supplement 4a and Figure 2—figure supplement 4b). These results suggest that the upregulation of Irf7 mRNA level in Mettl3ΔIEC mice is caused by the loss of m6A modification mediated mRNA decay. To evaluate the potential influence of m6A on Irf7 transcriptional targets, we also measured the expressions of IFNs and ISGs in rotavirus infected ileum tissue from Mettl3ΔIEC mice and littermate WT mice. We found the transcriptional targets of Irf7, were all upregulated in Mettl3ΔIEC mice (Figure 2i). Furthermore, we found that the mRNAs of Irf7 and its transcriptional targets ISGs increased in the ileum of the mice from 1 to 4 weeks, with a dramatic upregulation from 2 to 3 weeks (Figure 2—figure supplement 5), which was concomitant with the decrease of global m6A modifications (Figure 1a and b and Figure 1—figure supplement 1a). These results demonstrated that METTL3 deficiency in IECs results in decreased m6A deposition on Irf7, and increased interferon response.
 
-## IRF7 deficiency attenuated the increased interferon response and resistance to RV infection in Mettl3ΔIEC mice
+### IRF7 deficiency attenuated the increased interferon response and resistance to RV infection in Mettl3ΔIEC mice
 
 To determine whether Irf7 plays a key role in the resistance phenotype to RV infection in METTL3-deficient mice in IECs, we crossed Irf7−/− mice to Mettl3ΔIEC mice. Following RV oral gavage, the expression of IFNs and ISGs in ileum from Irf7−/−Mettl3ΔIEC mice were significantly lower than those from Mettl3ΔIEC mice at 2dpi (Figure 3a–c), and unlike the increased expression of IFNs and ISGs in Mettl3ΔIEC mice vs littermate WT controls, by deficiency of IRF7, the expression of IFNs and ISGs in ileum from Irf7−/−Mettl3ΔIEC mice were not significantly different from those from Irf7−/− mice (Figure 3a–c), suggesting that Irf7 mediates the increased expression of IFNs and ISGs in Mettl3ΔIEC mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig3-v2.jpg)
 
-**Figure 3.:** Mettl3ΔIEC mice.(a–c) WT control mice, Mettl3ΔIEC mice, Irf7-/- mice and Mettl3ΔIEC Irf7-/- mice are all littermates. They were infected by RV EW at 8 days post birth. qPCR analysis of selected IFNs (a), ISGs (b), or Irf7 (c) expression in ileum from indicated groups of mice at two dpi (littermate WT n = 7, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 6, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, **p < 0.005, ***p < 0.001, ****p < 0.0001, NS., not significant). (d) qPCR analysis of fecal rotaviral shedding in indicated groups of mice at four dpi (littermate WT n = 5, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 4, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, **p < 0.005, NS., not significant). (e–f) qPCR analysis of RV proteins expression (e) or Mettl3 and Irf7 (f) in ileum from indicated groups of mice at four dpi (littermate WT n = 7, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 6, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes and (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). Experiments in (a–f) are repeated twice.
+**Figure 3.:** (a–c) WT control mice, Mettl3ΔIEC mice, Irf7-/- mice and Mettl3ΔIEC Irf7-/- mice are all littermates. They were infected by RV EW at 8 days post birth. qPCR analysis of selected IFNs (a), ISGs (b), or Irf7 (c) expression in ileum from indicated groups of mice at two dpi (littermate WT n = 7, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 6, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, **p < 0.005, ***p < 0.001, ****p < 0.0001, NS., not significant). (d) qPCR analysis of fecal rotaviral shedding in indicated groups of mice at four dpi (littermate WT n = 5, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 4, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, **p < 0.005, NS., not significant). (e–f) qPCR analysis of RV proteins expression (e) or Mettl3 and Irf7 (f) in ileum from indicated groups of mice at four dpi (littermate WT n = 7, Mettl3ΔIEC n = 5, Irf7-/- n = 3, Mettl3ΔIEC Irf7-/- n = 6, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes and (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). Experiments in (a–f) are repeated twice.
 
 Moreover, the Irf7−/−Mettl3ΔIEC mice showed significantly higher viral loads in ileum tissue and higher fecal shedding of RV Mettl3ΔIEC (Figure 3d–f). Similarly, unlike the much lower fecal viral shedding in Mettl3ΔIEC mice vs littermate WT controls, by deficiency of IRF7, the fecal viral shedding in Irf7−/−Mettl3ΔIEC mice were not significantly different from those in Irf7−/− mice (Figure 3d), suggesting that Irf7 mediates the resistant phenotype of rotavirus infection measured by fecal viral shedding in Mettl3ΔIEC mice. Notably, the viral proteins expression difference in ileum from Irf7−/−Mettl3ΔIEC mice vs that from Irf7−/− mice (9.7-fold lower for NSP2 and 9.3-fold lower for VP7), was much lower than the viral proteins expression difference in ileum from Mettl3ΔIEC mice vs that from littermate mice (267.1-fold lower for NSP2 and 283.4-fold lower for VP7) (Figure 3e), suggesting that besides the contribution of Irf7 to the resistant phenotype of rotavirus infection in IECs from Mettl3ΔIEC mice, other pathways (e.g. m6A modifications in RV RNA) may also play roles. Therefore, IRF7 is an important mediator of the increased IFNs and ISGs expression in Mettl3ΔIEC mice and genetic deletion of IRF7 restored the resistant phenotype of Mettl3ΔIEC mice to RV infection.
 
-## Rotavirus suppresses ALKBH5 expression through NSP1 to evade immune defense
+### Rotavirus suppresses ALKBH5 expression through NSP1 to evade immune defense
 
 We next sought to determine how RV regulates the m6A modifications in IECs. We first measured whether RV infection regulates the m6A-related writer and eraser proteins in the intestine. The protein levels of the methyltransferases METTL3 and METTL14 and demethylase FTO were not affected by RV infection in ileum tissue (Figure 4a and b). In contrast, the protein level of demethylase ALKBH5 was significantly down-regulated by RV infection in the ileum (Figure 4a and b). To determine whether ALKBH5 play a role in anti-RV infection since it’s suppressed during RV infection, we generated the IEC-specific deletion of ALKBH5 in mice (Alkbh5fl/fl Vil1Cre, Alkbh5ΔIEC). The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-v2.jpg)
+
+**Figure 4.:** (a) WT mice were infected by RV EW at 8 days post birth. Immunoblotting with antibodies target ALKBH5, FTO, METTL14 and METTL3 in ileum tissue from mice infected with RV EW at two dpi or treated with PBS. (b) Quantitative analysis of (a) (mean ± SEM), Statistical significance was determined by Student’s t-test (*p < 0.05). (c–e) Alkbh5ΔIEC mice and littermate controls were infected by RV EW at 8 days post birth. qPCR analysis of indicated genes expression in ileum (c), viral shedding in feces (d), and viral proteins expression in ileum (e), from Alkbh5ΔIEC mice or littermate controls at 4 days post infection (littermate WT n = 6, Alkbh5ΔIEC n = 5, mean ± SEM). Statistical significance was determined by Student’s t-tests between genotypes (*p < 0.05, NS., not significant). (f) Immunoblotting with antibodies target ALKBH5, NSP1, VP6 and GAPDH in HEK293 cells infected by SA11-4F and SA11-NSP1null (MOI = 1) for 24 hr. (g) Graphical abstract illustrating the functions and molecular mechanisms of m6A modifications on Irf7 in anti-RV infection. Experiments in (a–e) are repeated three time, (f) are repeated twice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Relative expression level of ALKBH5/Alkbh5 and FTO/Fto in human intestinal enteroid, mice IEC and mice IEC cell MODE-K. (b) m6A dot blot analysis of total RNA in different MODE-K cells. Methylene blue (MB) staining was the loading control. Experiments in ( b) are repeated twice.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) MODE-K cells were transduced with Lentivirus (expressing pLVX-EV-puro or pLVX-mAlkbh5-puro). qPCR analysis of virus genes and IFNs/ISGs in Rhesus rotavirus-infected EV and mAlkbh5 over-expressing cells at indicated hours post infection (hpi) (mean ± SEM), statistical significance was determined by Student’s t-test (*p < 0.05, **p < 0.005, NS., not significant). (b) Expression level of ALKBH5 in EV and mAlkbh5 over-expressed MODE-K cells at indicated hours post infection. Experiments in (a and b) are repeated twice.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Total RNA was extracted from IECs from 1-week-old WT mice infected by RV for 2 days. Fragmented RNA was incubated with an anti-m6A antibody (Sigma Aldrich ABE572) and IgG IP Grade Rabbit polyclonal antibody (abcam, lot: 934197). The eluted RNA and input were processed as described in ‘RT-qPCR’ section, the data were normalized to the input samples (n = 2, mean ± SEM), Rps14 was chosen as a negative control.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) IECs from 6-week-old Mettl3ΔIEC mice as well as the WT littermate controls were isolated. Double-stranded RNA (dsRNA) was labeled by immunostaining with a mouse monoclonal antibody J2 (Scisons), cells nuclei were visualized with 4,6-diamidino-2-phenylindole (DAPI, Invitrogen). All fluorescence images were analyzed via confocal imaging using Zeiss LSM880. Experiments in (a) are repeated twice.
 
 We next asked whether there is redundancy between m6A eraser ALKBH5 and FTO. We first checked the expression of Alkbh5/ALKBH5 and Fto/FTO in our RNA-seq data in mouse IECs, and also a previous reported RNA-seq data in human intestinal enteroid (Saxena et al., 2017). We found the Alkbh5/ALKBH5 expression is much higher than Fto/FTO in intestine (Figure 4—figure supplement 1a). We did qPCR analysis in mouse epithelial cell line MODE-K and showed the similar results (Figure 4—figure supplement 1a). Furthermore, we knock down METTL3, ALKBH5 and FTO in MODE-K cell. Through dot blot assay, we found ALKBH5 but not FTO is the dominant m6A eraser in IECs (Figure 4—figure supplement 1). Furthermore, overexpressing of recombinant ALKBH5 increased the IFN/ISGs response and inhibit RRV infection in mouse IEC MODE-K cells (Figure 4—figure supplement 2), suggesting re-expression of ALKBH5 might overcome the immune evasion of RV.
 
@@ -93,37 +155,37 @@ In conclusion, our work shed light into a novel role of m6A modifications in RV 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 METTL3 conditional knockout mice were generated by inserting two loxp sites into the intron after the first exon and the intron before the last exon of Mettl3 using CRISPR/cas9-based genome-editing system as previously described (Li et al., 2017). ALKBH5 conditional knockout mice were generated by inserting two loxp sites into the introns flanking the first exon of Alkbh5 using CRISPR/cas9-based genome-editing system as previously described (Zhou, 2021). Genotyping of Mettl3fl/fl mice, Alkbh5fl/fl mice, Vil1Cre mice (The Jackson Laboratory, Stock No: 021504), and Irf7-/- mice (RIKEN BRC, RBRC01420) were confirmed by PCR using primers as list below:
 
-## Mettl3fl/fl mice
+#### Mettl3fl/fl mice
 
-## Vil1Cre mice
+#### Vil1Cre mice
 
-## Irf7-/- mice
+#### Irf7-/- mice
 
-## Alkbh5fl/fl mice
+#### Alkbh5fl/fl mice
 
 The sex-, age-, and background-matched littermates of the knockout or conditional knockout mice were used as the controls in the present study. All mice were on the C57BL/6 background. Mice were maintained in SPF conditions under a strict 12 hr light cycle (lights on at 08:00 and off at 20:00). All animal studies were performed according to approved protocols by the Ethics Committee at the University of Science and Technology of China (USTCACUC202101016).
 
-## Cell culture
+### Cell culture
 
 The MA104 cell line was obtained from the Cell Resource Center, Peking Union Medical College (which is the headquarter of National Infrastructure of Cell Line Resource). HEK293T (ATCC CRL-3216), HT-29 (ATCC HTB-38D) were obtained from the American Type Culture Collection (ATCC). MODE-K cell were obtained from Shanghai HonSun Biological Technology Co., Ltd.
 
 The identity of these cell lines were authenticated with STR profiling (FBI, CODIS). All these cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) (Hyclone) supplemented with 10% fetal bovine serum (FBS) (Clark); All cells were cultured at 37 °C in 5% CO2. All cells were tested for eliminating the possibility of mycoplasma contamination.
 
-## Poly(I:C) transfection
+### Poly(I:C) transfection
 
 Poly(I:C) (OKA, A55994) was transfected at a concentration of 2 μg/ml using Lipofectamine 3,000 (Invitrogen) according to the manufacturer’s protocol. Cells were analyzed at indicated hours.
 
-## Plasmids and SgRNAs
+### Plasmids and SgRNAs
 
 All gene silencing was done using a CRISPR–cas9 system, with lentiCRISPR v2 plasmid (Addgene no. 52961). The following sgRNAs were cloned downstream of the U6 promoter:
 
 Lentiviruses were generated by co-transfection of lentiCRISPR v2 constructs and packaging plasmids (psPAX2, Addgene no. 12,260 and pMD2.G, Addgene no. 12259), using PEI DNA transfection reagent (Shanghai maokang biotechnology), into HEK293T cells, according to the manufacturer’s instructions. At 48 hr post transfection, supernatants were collected and filtered through a 0.22 μm polyvinylidene fluoride filter (Millex). To induce gene silencing, cells were transduced with lentivirus expressing sgRNA and were puromycin selected (2 μg/ml) for 4–5 days. The depletion of target proteins was confirmed by immunoblot analysis.
 
-## Virus infections
+### Virus infections
 
 Rhesus and simian RV strains, including RRV (Rhesus), SA11-4F (simian), SA11-NSP1null (simian) were propagated in MA104 cells as previously described (Ding et al., 2016). Viruses were activated by trypsin (5 μg/ml) at 37 °C for 30 min prior to infection. Cells were washed with PBS three times and incubated with RV at different MOIs at 37 °C for 1 hr. After removal of RV inoculum, cells were washed with PBS, cultured in serum-free medium (SFM) and harvested for qPCR and western blot analysis at indicated time points.
 
@@ -131,58 +193,58 @@ EW stock virus was prepared by infecting 5-day-old C57BL/6 J mice, and harvestin
 
 For all rotavirus infection except indicated elsewhere, 8-day-old wild-type mice, or genetically deficient mice were orally inoculated by gavage with RV EW virus as previously described (Ding et al., 2018). Mice were sacrificed, stool and small intestinal tissue were collected at indicated time points post infection. Viral loads in intestinal tissues and feces were detected by RT–qPCR.
 
-## Quantitative analysis of m6A level
+### Quantitative analysis of m6A level
 
 The m6A analysis by LC-MS/MS was performed by Metware Biotechnology Co., Ltd (Wuhan, China). In brief, 1 µg purified RNA was digested into single nucleosides with 1 U nuclease P1 (Takara) and 1 U rSAP (Takara) and incubated at 37 °C. The digested RNA was injected into a LC-MS/MS which includes the ultra-performance liquid chromatography with a C18 column. The positive ion multiple reaction-monitoring (MRM) mode was adopted to detect m6A abundance. m6A levels were calculated from the standard curve which was generated from pure nucleoside standards.
 
-## RT-qPCR
+### RT-qPCR
 
 For cells and tissues, total RNA was extracted with TRNzol Universal reagent (Tiangen) in accordance with the manufacturer’s instructions. Real-time PCR was performed using SYBR Premix Ex Taq II (Tli RNaseH Plus) (Takara) and complementary DNA was synthesized with a PrimeScript RT reagent Kit with gDNA Eraser (Takara). The target genes were normalized to the housekeeping gene (Gapdh, HPRT) shown as 2−ΔCt. The used primers are as follows:
 
-## Primers detect mouse genes
+#### Primers detect mouse genes
 
-## Primers detect human genes
+#### Primers detect human genes
 
-## Primers detect rhesus genes
+#### Primers detect rhesus genes
 
-## Primers detect virus genes
+#### Primers detect virus genes
 
-## m6A Dot blot assay
+### m6A Dot blot assay
 
 Total RNA was isolated from mice ileum using TRNzol Universal Reagent (Tiangen, Lot#U8825) according to the manufacturer’s instructions. RNA samples were quantified using UV spectrophotometry and denatured at 95 °C for 3 min. The m6A-dot-blot was performed according to a published work (Shen et al., 2016). In brief, the primary rabbit anti-m6A antibody (1:5000, Synaptic System, #202003) or the primary rabbit anti-m6A antibody (1:1000, Sigma-Aldrich, ABE572-I-100UG) was applied to the Amersham Hybond-N+ membrane (GE Healthcare, USA) containing RNA samples. Dot blots were visualized by the imaging system after incubation with secondary antibody HRP-conjugated Goat anti-rabbit IgG (Beyotime, A0208).
 
-## Western blot
+### Western blot
 
 Briefly, cells and tissue were lysed with RIPA buffer (Beyotime Biotechnology) supplemented with PMSF (Beyotime Biotechnology) and protease inhibitor cocktail (Roche). METTL3 (abcam, ab195352, 1:2000), METTL14 (sigma, HPA038002, 1:2000), ALKBH5 (sigma, HPA007196, 1:2000), FTO (abcam, ab92821), NSP1 and VP6 (gift from Harry B. Greenberg lab), GAPDH (proteintech), TUBULIN (proteintech), beta-ACTIN (proteintech), Phospho-IRF-7 (Ser437/438) (D6M2I) (CST), Phospho-TBK1/NAK (Ser172) (D52C2) (CST), TBK1/NAK (D1B4) (CST), and IRF-7 (D8V1J) (CST) antibodies were used in accordance with the manufacturer’s instructions. After incubation with the primary antibody overnight, the blotted PVDF membranes (Immobilon, IPVH00010) were incubated with goat anti-rabbit IgG-HRP (Beyotime, A0208) or goat anti-mouse IgG-HRP (Beyotime, A0216) and exposed with BIO-RAD ChemiDocTM Imaging System for a proper exposure period.
 
-## RNA degradation assay
+### RNA degradation assay
 
 The stability of targeted mRNA was assessed as previously described (Li et al., 2017). In brief, METTL3 knock down HT-29 and control cell were plated on 24-well plate. Actinomycin-D (MCE, HY17559) was added to a final concentration of 5 μM, and cells were harvested by indicated time points after actinomycin-D treatment. The RNA samples are processed and qPCR was used to measure the mRNA transcripts, all data were normalized to that of t = 0 time point.
 
-## Dual-luciferase assay
+### Dual-luciferase assay
 
 pmirGLO (Firefly luciferase, hRluc) vector of the Dual-luciferase Reporter assay system (Promega, E1910) was used to determine the function of m6A modification within the 3’UTR of Irf7 transcripts. The potential m6A modification sites (3446 A, 3475 A, 3491 A, 3590 A, and 3620 A of mice Irf7(NC_000073)) were predicted on SRAMP website. The mutants harbor the A to G mutations at these sites. The assay was performed according to the manufacture’s instruction of Promega Dual-Luciferase Reporter Assay System(E1910): Briefly, 300 ng of pmirGLO vector containing Irf7-3’UTR or m6A-mutant Irf7-3’UTR were transfected into HEK293T cells in triplicate wells. The relative luciferase activity was accessed 36 hr post-transfection.
 
-## Isolation of IECs in the Intestine
+### Isolation of IECs in the Intestine
 
 Small intestines were excised and flushed thoroughly three times with PBS. They were turned inside out and cut into ~1 cm sections then transferred into RPMI with 2 mM EDTA, and shaken for 15 min at 37 °C. Supernatants were collected through a 100-mm cell strainer to get single-cell suspensions. Cells were collected as the IEC fraction which contains both epithelial cells (~90%) and lymphocytes (IEL, ~ 10%). Single-cell suspension was used for further analysis.
 
-## RNA-Seq
+### RNA-Seq
 
 IECs from Mettl3ΔIEC mice as well as the wild-type littermate control mice were isolated as described in previous section. Total RNAs were extracted with TRNzol universal RNA Reagen kits. Berrygenomics (Beijing, China) processed the total RNA and constructed the mRNA libraries, and subject them to standard illumine sequencing on Novaseq 6,000 system, and obtained >40 million Pair-end 150 reads for each sample. Raw RNA-sequencing reads were aligned to the mouse genome (mm10, GRCm38) with STAR (v2.5.3a). Gene expression levels and differential analysis was performed with edgeR(v3.29.2). Genes were considered significantly differentially expressed if showing ≥1.5 fold change and FDR < 0.05. Gene set analysis was performed and enriched pathways were obtained through online bioinformatics tools (metascape) and GSEA (v4.0.3). Pathway plot were gene-rated with R package ‘ggplot2’ (Li et al., 2017).
 
-## m6A RNA-IP-qPCR and m6A RNA-IP-Seq
+### m6A RNA-IP-qPCR and m6A RNA-IP-Seq
 
 m6A RNA-IP-Seq was carried out according to a previously published protocol (Li et al., 2017). In brief, total cellular RNA extracted from WT C57 mice IEC was fragmented by ZnCl2 followed by ethanol precipitation. Fragmented RNA was incubated with an anti-m6A antibody (Sigma Aldrich ABE572-I) or IgG IP Grade Rabbit polyclonal antibody (abcam, lot: 934197). The eluted RNA and input were subjected to high-throughput sequencing using standard protocols (Illumina, San Diego, CA, USA) or processed as described in ‘RT-qPCR’ section, except that the data were normalized to the input samples. The m6A RIP-Seq data were analyzed as described previously (Li et al., 2017).
 
 m6A sites on RV-EW RNA were predicted on http: //www.cuilab.cn/sramp website, and m6A-RIP-qPCR primer were designed on NCBI primer blast according to the predicted m6A sites.
 
-## m6A-RIP-qPCR primer
+#### m6A-RIP-qPCR primer
 
-## J2 immunofluorescent staining
+### J2 immunofluorescent staining
 
 IECs from Mettl3ΔIEC mice as well as from the wild-type littermate control mice were isolated as described in previous section. Isolated IEC were centrifuged onto glass slides and fixed with 4% Paraformaldehyde for 30 min at room temperature. Subsequently, permeabilized and blocked with PBS containing 0.1% Triton-X-100% and 5% bovine serum albumin for 1 hr at room temperature. Double-stranded RNA (dsRNA) was labeled by a mouse monoclonal antibody J2 (Scisons) for 2 hr at room temperature, followed by incubation with anti-mouse IgG Alexa Fluor 594-conjugated antibody (Invitrogen) for 1 hr, and cells nuclei were visualized with 4,6-diamidino-2-phenylindole (DAPI, Invitrogen). All fluorescence images were analyzed via confocal imaging using Zeiss LSM880.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with the GraphPad Prism 8.0 (GraphPad, Inc, USA). Experiments were independently repeated for indicated times listed in the figure legend. Representative data was exhibited as the means ± SEM. Quantitative data was compared using Student’s t test. In addition, correlational analysis of gene expression was conducted with linear regression. p-values for every result were labeled on figures, and p < 0.05 was reckoned as statistically significant (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, NS., not significant).

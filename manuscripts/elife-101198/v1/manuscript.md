@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/05qbk4x57 Key Laboratory of Systems Health Science of Zhejiang Province, School of Life Science, Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences Hangzhou China
-2. https://ror.org/01bffta28 Zhejiang Institute of Freshwater Fisheries, Ministry of Agriculture and Rural Affairs Key Laboratory of Healthy Freshwater Aquaculture, Key Laboratory of Fish Health and Nutrition of Zhejiang Province, Key Laboratory of Fishery Environment and Aquatic Product Quality and Safety of Huzhou City Huzhou China
-3. https://ror.org/00a2xv884 Department of Veterinary Medicine, Zhejiang University College of Animal Sciences Hangzhou China
-4. https://ror.org/01ngb3r97 Ningbo Academy of Agricultural Sciences Ningbo China
-5. https://ror.org/00a2xv884 Institute of Animal Nutrition and Feed Sciences, Zhejiang University College of Animal Sciences Hangzhou China
-6. https://ror.org/00a2xv884 Hainan Institute of Zhejiang University Sanya China
+1. Key Laboratory of Systems Health Science of Zhejiang Province, School of Life Science, Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences Hangzhou China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+2. Zhejiang Institute of Freshwater Fisheries, Ministry of Agriculture and Rural Affairs Key Laboratory of Healthy Freshwater Aquaculture, Key Laboratory of Fish Health and Nutrition of Zhejiang Province, Key Laboratory of Fishery Environment and Aquatic Product Quality and Safety of Huzhou City Huzhou China ([ROR:01bffta28](https://ror.org/01bffta28))
+3. Department of Veterinary Medicine, Zhejiang University College of Animal Sciences Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+4. Ningbo Academy of Agricultural Sciences Ningbo China ([ROR:01ngb3r97](https://ror.org/01ngb3r97))
+5. Institute of Animal Nutrition and Feed Sciences, Zhejiang University College of Animal Sciences Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+6. Hainan Institute of Zhejiang University Sanya China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 
 † Corresponding author
 
 ## Abstract
 
-Salmonella is one of the most common foodborne pathogens, resulting in inflammatory gastroenteritis and frequently accompanied by dysbiosis. Gut commensals, such as Lactobacillus species, have been proven to exhibit broad antibacterial activities and protect hosts against pathogenic infections. Here, Lacticaseibacillus rhamnosus strain P118, screened from 290 isolates recovered from fermented yogurts and healthy piglet intestines using traditional and Caenorhabditis elegans -infection screening strategies, exerts great probiotic properties. Notably, P118 and its supernatant exhibited great antibacterial activities and attenuated C. elegans susceptibility to Salmonella infection. We found that P118 protected mice against Salmonella lethal infections by enhancing colonization resistance, reducing pathogen invasion, alleviating intestinal pro-inflammatory response, and improving microbial dysbiosis and fecal metabolite changes. Microbiota and fecal metabolome analyses suggested P118 administration significantly decreased the relative abundances of potentially harmful microbes (e.g., Salmonella , Anaeroplasma , Klebsiella ) and increased the fecal levels of tryptophan and its derivatives (indole, indole-3-acrylic acid, 5-hydroxytryptophan, 5-methoxyindoleacetate). Deterministic processes determined the gut microbial community assembly of P118-pretreated mice. Integrated omics further demonstrated that P118 probiotic activities in enhancing host tolerance to Salmonella infection were mediated by microbe-derived tryptophan/indole metabolites (e.g., indole-3-acrylic acid, indole, tryptophan, 5-methoxyindoleacetic acid, and 5-hydroxytryptophan). Collective results demonstrate that L. rhamnosus P118 could enhance host tolerance to Salmonella infections via various pathways, including direct antibacterial actions, inhibiting Salmonella colonization and invasion, attenuating pro-inflammatory responses of intestinal macrophages, and modulating gut microbiota mediated by microbe-derived indole metabolites.
+Salmonella is one of the most common foodborne pathogens, resulting in inflammatory gastroenteritis and frequently accompanied by dysbiosis. Gut commensals, such as Lactobacillus species, have been proven to exhibit broad antibacterial activities and protect hosts against pathogenic infections. Here, Lacticaseibacillus rhamnosus strain P118, screened from 290 isolates recovered from fermented yogurts and healthy piglet intestines using traditional and Caenorhabditis elegans-infection screening strategies, exerts great probiotic properties. Notably, P118 and its supernatant exhibited great antibacterial activities and attenuated C. elegans susceptibility to Salmonella infection. We found that P118 protected mice against Salmonella lethal infections by enhancing colonization resistance, reducing pathogen invasion, alleviating intestinal pro-inflammatory response, and improving microbial dysbiosis and fecal metabolite changes. Microbiota and fecal metabolome analyses suggested P118 administration significantly decreased the relative abundances of potentially harmful microbes (e.g., Salmonella, Anaeroplasma, Klebsiella) and increased the fecal levels of tryptophan and its derivatives (indole, indole-3-acrylic acid, 5-hydroxytryptophan, 5-methoxyindoleacetate). Deterministic processes determined the gut microbial community assembly of P118-pretreated mice. Integrated omics further demonstrated that P118 probiotic activities in enhancing host tolerance to Salmonella infection were mediated by microbe-derived tryptophan/indole metabolites (e.g., indole-3-acrylic acid, indole, tryptophan, 5-methoxyindoleacetic acid, and 5-hydroxytryptophan). Collective results demonstrate that L. rhamnosus P118 could enhance host tolerance to Salmonella infections via various pathways, including direct antibacterial actions, inhibiting Salmonella colonization and invasion, attenuating pro-inflammatory responses of intestinal macrophages, and modulating gut microbiota mediated by microbe-derived indole metabolites.
 
 ## Introduction
 
@@ -38,35 +38,178 @@ Intestinal macrophages play vital roles in maintaining gut homeostasis, regulati
 
 ## Results
 
-## Two screening approaches to convergent probiotic candidates
+### Two screening approaches to convergent probiotic candidates
 
 After being identified by Matrix-Assisted Laser Desorption Ionization-Time of Flight Mass Spectrometry (MALDI-TOF MS), a total of 290 bacterial isolates were isolated and identified from 33 fermented yogurt samples and 6 healthy piglet rectal content samples. Those isolates consist of 63 Streptococcus isolates, 158 Lactobacillus/Lacticaseibacillus/Limosilactobacillus isolates, and 69 Enterococcus isolates (Figure 1A, Table 1). Two screening strategies were employed in the present study to further investigate the potential probiotic properties of the isolates: the traditional/classic approach and the C. elegans infection approach. In the traditional/classic approach, 27 isolates were screened out by milk-clotting activity assay (Figure 1A, Supplementary file 1), among which two isolates (P118 and P199) exhibited the highest tolerance to bile salt (0.3–2.0%) (Figure 1B) and biofilm formation capabilities (Figure 1C). Compared with the P199 strain, P118 strain exhibited the highest susceptibility to multiple antimicrobials (Figure 1—figure supplement 1). C. elegans has been widely used as an invaluable model for understanding the conserved mechanisms of host–microbe interactions due to the similarities of gut morphology and physiological function with human and animal (Kumar et al., 2020). In the C. elegans infection approach, 8 out of 290 isolates significantly increased the survivals and prolonged the life span of S. Typhimurium-infected C. elegans (p<0.05), and three isolates (P118, P119, P120)-treated worms were more resistant to S. Typhimurium infection than the other isolates (p<0.05) (Figure 1D, Supplementary file 2). Integrating the results of both screening approaches, L. rhamnosus P118 strain exhibits versatile capabilities as a probiotic candidate (Figure 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig1-v1.jpg)
+
+**Figure 1.:** (A) Screening flowchart of P118 in vitro and candidate probiotic isolates identified by MALDI-TOF MS. (B) Bile salt tolerance ability of the isolates. (C) Biofilm-forming ability of isolates. (D) Screening using C. elegans infection model. (E) Interacted screening strategy. (F) Antibacterial ability of P118 under aerobic or anaerobic culture conditions. (G) Broad-spectrum pH tolerance of P118 supernatants (pH = 3.4) that adjusted to pH <3.4 by 1 M HCl or pH >3.4 by 1 M NaOH. (H) Antibacterial effects of P118 supernatant under 20 mg/mL catalase (CAT), 100 μg/mL proteinases (trypsin, proteinase K, pepsin), and different temperatures (37, 50, 70, 90, 100, 120°C) boiled for 30 min treatments. (I) Antibacterial effects of components of P118 (boiled at 120℃ for 30 min or was lysed by ultrasonication at 240 W for 2 h). (J) Active ingredients of P118 protect C. elegans against S. Typhimurium infection. (K) Taxonomic classification of P118 draft genome queried against the NCBI non-redundant prokaryotic genomes database with p-values representing confidence of phylogenetic assignment, and the nearest subspecies phylogenetic neighbor of P118 draft genome was determined by percentage shared genomic content graphed as ANI versus AAI. (L) Prediction of secondary metabolites and bacteriocin protein-encoding gene clusters of P118 using antiSMASH and BAGEL4 databases. (F–J) S. Typhimurium SL1344 was selected as an indicator pathogen. Significant differences *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Drug resistance candidate probiotic isolates (P118 and P199). (B, C) Broad-spectrum antibacterial activities of P118 fermented supernatants and cultures.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Circular genome map of L. rhamnosus P118. (B) Phylogenetic trees of L. rhamnosus P118 and nearest phylogenetic neighbors constructed by average amino acid identity (AAI). Color gradients indicate the percentage of conserved average nucleotide identity (ANI) between each isolate and respective nearest subspecies phylogenetic neighbors.
+
+**Table 1.**
+ A list of probiotic isolates recovered from examined samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Name</th>
+      <th>Number of isolates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Yogurt</td>
+      <td>Streptococcus salivarius ssp. thermophilus</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Lacticaseibacillus paracasei</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus acidophilus</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus zeae</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Lacticaseibacillus rhamnosus</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Lacticaseibacillus casei</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus delbrueckii</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Piglet intestine</td>
+      <td>Limosilactobacillus mucosae</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus johnsonii</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Limosilactobacillus reuteri</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Limosilactobacillus vaginalis</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus crispatus</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus salivarius</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Lactobacillus amylovorus</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Enterococcus faecium</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Enterococcus faecalis</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>290</td>
+    </tr>
+  </tbody>
+</table>
+
 To illustrate the probiotic properties of L. rhamnosus P118, antibacterial activity evaluation in vitro was further conducted, and the results showed that the fermented supernatants of P118 significantly inhibited the growth of multiple pathogens (e.g., Salmonella, Yersinia, Staphylococcus aureus, Escherichia coli, Citrobacter rodentium, Pseudomonas aeruginosa, Riemerella anatipestifer) (Figure 1—figure supplement 1). Interestingly, the inhibitory effect of P118 against S. Typhimurium was in dose- and oxygen-dependent manners, and results showed that high-dose and anaerobic cultures exhibited more antibacterial effects than low-dose and aerobic cultures, respectively (p<0.05) (Figure 1F). Active factors derived from P118 to exert antibacterial effects were explored. The results showed that the antibacterial activities of the fermented supernatant (pH=3.4) were sensitive to alkalinity (pH>5.0), trypsin, proteinase-K, pepsin, and high temperature (>70℃), but were resistant to catalase treatment (Figure 1G and H). The fermented cultures and supernatants of P118 not only significantly inhibited the growth of S. Typhimurium in vitro (Figure 1I), but also protected worms against S. Typhimurium infection (Figure 1G, Supplementary file 3). Although they exhibited no antibacterial activities in vitro (Figure 1I), the protective activities of heat-treated P118 and P118 lysates against S. Typhimurium pathogenesis were observed in C. elegans but weaker than that of the fermented cultures and supernatants (Figure 1G).
 
-## P118 genomics analysis suggests genetic determinants for antibacterial actions
+### P118 genomics analysis suggests genetic determinants for antibacterial actions
 
 Subsequently, whole-genome sequencing of P118 was performed to explore the potential antibacterial factors based on genomic evidence. The results showed that species-level identity for P118 isolate with 2.99 Mb genome size was confirmed at p<0.0001 (Figure 1—figure supplement 2, Figure 1K, Supplementary file 4), and P118 draft genome was most closely related to L. rhamnosus subspecies (NCTC13710 and BIO5326) (Figure 1K, Supplementary file 5, Figure 1—figure supplement 2). Genomic analysis using antiSMASH and BAGEL4 databases revealed the presence of putative bacteriocin synthesis genes in P118 isolate (Figure 1L). Putative bacteriocins predicated in P118 isolate showed high homology with known class II bacteriocins (IIa carnobacteriocin B2 produced by C. maltaromaticum, IIb enterocin X produced by Enterococcus faecium KU-B5, IId/b lactococcin A/G, and some novel bacteriocin-encoded hypothetical proteins). Collective data demonstrates that L. rhamnosus P118 exhibits outstanding probiotic traits.
 
-## P118 protects lethal S. Typhimurium infections in a murine model
+### P118 protects lethal S. Typhimurium infections in a murine model
 
 The protective activity of L. rhamnosus P118 against enteric pathogens was further examined in the Salmonella-infected murine model (Figure 2A). Administration of P118 significantly protected mice against Salmonella-induced deaths and body weight losses (Figure 2B and C), accompanied by the alleviated splenomegaly, hepatomegaly, shortened gastrointestinal tract, and clinical and pathological score (Figure 2D–F, Figure 2—figure supplement 1). Meanwhile, P118 significantly limited Salmonella colonization in the intestinal tissues (duodenum and colon) and invasion into the peripheral organs (liver and spleen) of mice, thereby markedly reducing Salmonella fecal shedding (Figure 2G). Additionally, Salmonella infection-induced ileal mucosal damage was alleviated by P118 administration, as illustrated by the increased ileal villus height (Figure 2H, Figure 2—figure supplement 1), ratio of villus height/crypt depth (Figure 2H, Figure 2—figure supplement 1), ileal microvilli height and density (Figure 2H, Figure 2—figure supplement 1), the upregulated Tjp1 mRNA expression (Figure 2—figure supplement 2), and the downregulated Il1b mRNA expression (Figure 2—figure supplement 2), accompanied by the reduced Il1b level in serum (Figure 2—figure supplement 2). Intervention with P118 significantly increased the numbers of Ki67-positive cells (proliferating cells), Muc2-positive cells (goblet cells), and decreased the numbers of F4/80-positive cells (macrophages) and F4/80+ Nos2+ cells (pro-inflammatory macrophages) in the ileum (Figure 2H) and also attenuated the pathological damages of peripheral organs (liver and spleen) caused by Salmonella infection (Figure 2—figure supplement 1A and B).
 
-## P118 improves Salmonella infection by modulating gut microbiota
+![Figure 2.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental design. (B) Survival curve of mice infected with S. Typhimurium. (C) Body weight. (D) Spleen index. (E) Representative images of spleen and intestine. (F) Liver index. (G) S. Typhimurium burden in tissues and shedding in feces. (H) Representative images of H&E staining, TEM, and immunostaining (DAPI, Ki67, lysozyme, Muc2, F4/80, Nos2) in the ileum. Different lowercase letters indicate a significant difference (p<0.05). Significant differences *p<0.05, **p<0.01. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of H&E staining tissues (liver, spleen). Scale bar with 100 μm. (B) Clinical symptom score. Histopathological quantification of H&E staining (C, D) and TEM (E, F) images observed in the ileum. Different lowercase letters indicate a significant difference (p<0.05). C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Different lowercase letters indicate a significant difference (p<0.05). C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+### P118 improves Salmonella infection by modulating gut microbiota
 
 Gut microbes play crucial roles in host physiological activities and colonization resistance against enteric pathogens (Jacobson et al., 2018), and dysbiosis is supposedly associated with Salmonella infection. Significant bacterial community structures among four groups were observed (Figure 3A, Supplementary file 8), and most of the bacterial operational taxonomic units (OTUs) were classified as group-specific OTUs (Figure 3B). Compared to the uninfected group, Salmonella infection significantly depleted 167 OTUs and enriched 60 OTUs (Figure 3C), whereas compared to the Salmonella-infected group, pretreatment with P118 significantly depleted 16 OTUs and enriched 52 OTUs (Figure 3D). Specifically, Salmonella infection significantly increased the relative abundances of potentially harmful microbes (e.g., Salmonella, Escherichia-Shigella, Klebsiella, Morganella, Akkermansia) and significantly reduced the relative abundances of SCFA-producing and potentially beneficial microbes (e.g., Alloprevotella, Lactococcus, Faecalibacterium, Limosilactobacillus, Parasutterella, Odoribacter, Dubosiella, Candidatus arthromitus) (Figure 3E, Figure 3—figure supplement 1B). Pretreatment with P118 significantly reduced the relative abundances of pathogenic microbes (e.g., Salmonella, Anaeroplasma, Klebsiella, Morganella) and significantly increased the relative abundances of potentially beneficial or commensal microbes (e.g., Candidatus_Saccharimonas, Turicibacter, Enterorhabdus) (Figure 3F, Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig3-v1.jpg)
+
+**Figure 3.:** (A) Principal coordinates analysis (PCoA) based on Bray-Curtis distance. (B) UpSetR plot based on bacterial absolute operational taxonomic unit (OTU) abundances. (C, D) The fold changes of bacterial absolute OTU abundances between two groups. (E, F) Comparison of intestinal microbes by STAMP. The prefix ‘g_’ represents the annotated level of the genus. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) C vs. P, (B) C vs. S, (C) S vs. P+S. The prefixes ‘g_’ and ‘s_’ represent the annotated levels of genus and species. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ecological processes of gut microbes. The inner circle indicates the percentage of deterministic and stochastic assembly processes. The outer circle indicates the contribution of detailed ecological processes. (B) The fit of neutral community model (NCM) of community assembly for gut microbes. The best fit to NCM and 95% CIs around the best fit to NCM are indicated by solid and dashed blue lines, respectively. Light blue and dark red dots indicate operational taxonomic units (OTUs) that occur more (above prediction) or less (below prediction) frequently than predicted by NCM, respectively, while black dots indicate the OTUs that occur within neutral prediction (neutral distribution). Donut charts show the distinct fitting proportions of OTUs predicted by NCM. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
 Based on the changes in bacterial community structures, the internal driving forces of gut microbial communities were investigated using ecological models. Both null model and neutral community model analyses revealed that the stochastic processes belonging to homogenizing dispersal exerted important roles in Salmonella-infected mice gut microbiome assembly, whereas the deterministic processes (homogeneous selection and variable selection) exerted more influences on P118-pretreated mice gut microbiome assembly than Salmonella-infected mice (Figure 3—figure supplement 2A and B).
 
-## Microbe-derived tryptophan metabolites are associated with the protection
+### Microbe-derived tryptophan metabolites are associated with the protection
 
 Significant differences in fecal metabolite structures among the three groups separated into distinct clusters were also observed (Figure 4A, Supplementary file 9). Compared with the uninfected group, Salmonella infection significantly upregulated 256 fecal metabolites (log2(fold change)>1, p<0.05) and downregulated 402 fecal metabolites (log2(fold change)<1, p<0.05) (Figure 4B), and pretreatment with P118 significantly enriched 100 metabolites (log2(fold change)>1, p<0.05) and depleted 81 metabolites (log2(fold change)<1, p<0.05) (Figure 4C). Among the significant differential metabolites, 91 metabolites (VIP >1) downregulated in Salmonella-infected mice were upregulated explicitly in P118-pretreated mice (Figure 4—figure supplement 1A and C, Supplementary file 10), and 43 metabolites (VIP>1) upregulated in Salmonella-infected mice were downregulated explicitly in P118-pretreated mice (Figure 4—figure supplement 1B and C, Supplementary file 10). KEGG pathway analysis revealed that fecal metabolites were mainly enriched in tryptophan metabolism, fatty acid biosynthesis, biosynthesis of amino acids, and neuroactive ligand–receptor interaction pathways in P118-pretreated mice (Figure 4D). Interestingly, pretreatment with P118 significantly increased the fecal levels of tryptophan and tryptophan derivatives (indole, indole-3-acrylic acid [IAA], 5-hydroxytryptophan, 5-methoxyindoleacetate) (Figure 4E). Pearson correlation analysis showed that S. Typhimurium burdens (in the duodenum, colon, liver, spleen, feces) and organ (spleen, liver) indices were negatively correlated with the levels of fecal tryptophan and tryptophan derivatives (indole, IAA, 5-hydroxytryptophan, protocatechuic acid, trans-cinnamaldehyde, 5-methoxyindole-3-carbaldehyde) and positively correlated with the levels of (serotonin, tryptophanol, 3-(2-hydroxyethyl) indole, tryptamine) (Figure 4F). Conversely, the body weight was positively correlated with the levels of fecal tryptophan and tryptophan derivatives (Figure 4F). Bio-Sankey network analysis further showed that 26 genera were identified as potential bacteria that might participate in the metabolic reaction R02340 (tryptophan synthase, indoleglycerol phosphate, and indole), of which five bacteria (Bifidobacterium, Lacticaseibacillus, Enterococcus, Staphylococcus, and Pseudomonas, dark red if p<0.05) were positively associated with indole in the metabolic reaction R02340 (Figure 4G). These results indicate that microbe-derived tryptophan metabolites are associated with P118-mediated protection against Salmonella infection.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig4-v1.jpg)
+
+**Figure 4.:** (A) Principal coordinates analysis (PCoA) based on Bray–Curtis distance of fecal metabolites. (B, C) UpSetR plot based on fecal metabolites. (D) Metabolomics pathway enrichment in ‘P+S vs. S’. (E) Comparison of fecal microbial tryptophan metabolism-enriched pathway among groups. (F) Pearson correlation analysis among S. Typhimurium burden, organ indices, body weight, and fecal metabolites in mice. (G) Bio-Sankey network analysis between intestinal microbes and fecal metabolites. (H) Pathway schematic of abbreviated mammalian and microbial tryptophan metabolism. Different lowercase letters indicate a significant difference (p<0.05). Significant differences *p<0.05; **p<0.01; ***p<0.001. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Venn diagram based on differential fecal metabolites (A) downregulated in ‘S vs. C’ and upregulated in ‘P+S vs. S’, (B) upregulated in ‘S vs. C’ and downregulated in ‘P+S vs. S’. (C) Significant differential fecal metabolites in ‘S vs. C’ and ‘P+S vs. S’. C: PBS group; P: P118 administered group; S: S. Typhimurium-infected group; P+S: P118 protective group.
+
 Based on the findings above that Lacticaseibacillus species were involved in tryptophan biosynthesis and metabolism, L. rhamnosus P118 genome was reanalyzed to determine whether P118 encodes enzymes necessary to exert this function. The genomic data further showed that P118 encoded various genes (e.g., fldH, AraT, AspB-4, AmiE, trpA, trpB, BCAT, IGPS, MT, ALD) essential to biosynthesize and metabolize tryptophan into tryptophan derivatives (Figure 4H, Supplementary file 11). The metabolomic results of P118 cultures also validated the genomic data that P118 could secrete a diverse profile of tryptophan-derived metabolites (e.g., IAA, indole, indole-3-lactic acid, DL-tryptophan, kynurenine, N-acetyl-d-tryptophan, 5-methoxyindoleacetic acid, 5-hydroxytryptophan) (Supplementary file 12). Taken together, these data suggest that P118-derived tryptophan metabolites might contribute to the protection against Salmonella infection.
 
-## Indole-3-acrylic acid protects against Salmonella infection by inhibiting macrophage pro-inflammatory responses
+### Indole-3-acrylic acid protects against Salmonella infection by inhibiting macrophage pro-inflammatory responses
 
 Based on the above results, exogenous IAA was employed to further explore its roles against Salmonella infection. The antibacterial assay results showed that IAA (>4.4 mM) significantly inhibited Salmonella growth (Figure 5—figure supplement 1). Exogenous IAA administration significantly reduced mice susceptibility to Salmonella infection, as evidenced by the increased body weight (Figure 5B), the alleviated splenomegaly and hepatomegaly (Figure 5D and F), and the increased colon length (Figure 5C). Meanwhile, IAA administration significantly inhibited Salmonella colonization in the intestinal tissues (cecum and colon) and invasion into the peripheral organs (liver and spleen) of mice, thereby markedly reducing Salmonella fecal shedding (Figure 5E). Additionally, Salmonella infection-induced ileal mucosa damage was alleviated by exogenous IAA, as illustrated by the increased ileal villus height (Figure 5G and I), and the increased numbers of Muc2-positive goblet cells in the ileum (Figure 5H and I). Exogenous IAA intervention significantly reduced Salmonella infection-induced intestinal pro-inflammatory responses, as evidenced by the decreased numbers of F4/80-positive macrophages (Figure 5I), the downregulated mRNA (Il1b, Il6, Il18, Tnfa, Nos2) expression (Figure 5H), and the reduced protein (Nos2, Il1b, Il6, Tnfa, markers of pro-inflammatory macrophages) expression (Figure 5I).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design. (B) Body weight change. (C) Colon length. (D) Spleen and liver indexes. (E) S. Typhimurium burden in tissues and shedding in feces. (F) Representative images of spleen and liver. (G) Villus height of ileum. (H) Muc2-positive cells and mRNA expression levels in ileum. (I) Representative images of H&E staining and immunostaining in the ileum. Different lowercase letters indicate a significant difference (p<0.05). C: PBS group; S: S. Typhimurium-infected group; IAA + S: indole-3-acrylic acid protective group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** GM: 100 μg/mL gentamicin.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Indole-3-acrylic acid enhances bactericidal activity of macrophages. (B-F) The mRNA expression expression level of macrophages. (G) Nitric oxide secretion level of macrophages. Different lowercase letters (a, b, c, d) indicate a significant difference (p<0.05). C: PBS group; IAA: indole-3-acrylic acid group; S: S. Typhimurium-infected group; CH-223191: AHR inhibitor-treated group.
 
 The in vitro experiments further showed that, although they failed to increase the uptake of Salmonella (Figure 5—figure supplement 2A, 0 h), IAA treatment significantly reduced intracellular Salmonella survival in RAW 264.7 macrophage cells (Figure 5—figure supplement 2A, 6 h 12 h), which could be reversed by pretreatment with AHR inhibitor CH-223191 (Figure 5—figure supplement 2, 6 h, 12 h), indicating that IAA enhances the intracellular bactericidal capacity of RAW 264.7 cells. Furthermore, IAA treatment significantly inhibited Salmonella infection-induced pro-inflammatory responses, as evidenced by inhibiting mRNA (Il1b, Il6, Il18, Tnfa, Nos2) expression and nitric oxide secretion of Salmonella-infected RAW 264.7 macrophage cells, which was blocked by the presence of AHR inhibitor CH-223191 (Figure 5—figure supplement 2B-G).
 
@@ -74,7 +217,7 @@ Macrophages play important roles in initiating immune responses, maintaining gut
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig6-v1.jpg)
 
-**Figure 6.:** L. rhamnosus P118 and indole-3-acrylic acid against S. Typhimurium infection.(A) Experimental design. (B) Body weight change. (C) Spleen and liver indexes. (D) Representative images of spleen and liver. (E) Colon length. (F) S. Typhimurium burden in tissues and shedding in feces. (G) Villus height of ileum. (H) Muc2-positive cells and mRNA expression levels in ileum. (I) Representative images of H&E staining and immunostaining in the ileum. Different lowercase letters indicate a significant difference (p<0.05). (B–E) Significant differences **p<0.01 indicates ‘S vs. C’. CLP: macrophage depletion reagent clodronate liposomes. C: PBS group; S: S. Typhimurium-infected group; IAA + S: indole-3-acrylic acid protective group; P+S: P118 protective group.
+**Figure 6.:** (A) Experimental design. (B) Body weight change. (C) Spleen and liver indexes. (D) Representative images of spleen and liver. (E) Colon length. (F) S. Typhimurium burden in tissues and shedding in feces. (G) Villus height of ileum. (H) Muc2-positive cells and mRNA expression levels in ileum. (I) Representative images of H&E staining and immunostaining in the ileum. Different lowercase letters indicate a significant difference (p<0.05). (B–E) Significant differences **p<0.01 indicates ‘S vs. C’. CLP: macrophage depletion reagent clodronate liposomes. C: PBS group; S: S. Typhimurium-infected group; IAA + S: indole-3-acrylic acid protective group; P+S: P118 protective group.
 
 ## Discussion
 
@@ -88,21 +231,21 @@ Accumulating evidence revealed that gut microbes-derived metabolites (e.g., shor
 
 Macrophages are important in initiating immune responses, maintaining intestinal immune homeostasis, phagocytic clearance of pathogens, tissue repair, and host defense (Na et al., 2019; Neurath, 2024). It is reported that macrophages with strong plasticity could be polarized into pro-inflammatory (M1) phenotype or proresolving (M2) phenotype (Na et al., 2019). M1 macrophage activation is crucial and necessary for pathogen clearance (Na et al., 2019). However, exaggerated immune responses triggered by M1 macrophages are detrimental to the host by inducing tissue damage and cell deaths (Wang et al., 2020). The current study showed that both L. rhamnosus P118 and IAA significantly attenuated S. Typhimurium infection-induced pro-inflammatory responses, indicating that pro-inflammatory macrophages might be key targets for L. rhamnosus P118 exerting probiotic effect. This hypothesis was confirmed by macrophage depletion experiments that the protective effects of L. rhamnosus P118 and IAA against Salmonella infection were abrogated after intestinal macrophage depletion. Taken together, these results indicate that L. rhamnosus P118/microbe-derived indole metabolites enhance host tolerance to Salmonella infection by reducing intestinal pro-inflammatory responses, which also provides a potential alternative strategy for using probiotics and their derived metabolites to treat intestinal inflammatory disorders such as inflammatory bowel disease (Lavelle and Sokol, 2020; Neurath, 2024).
 
-## Conclusion
+### Conclusion
 
 In summary, two distinctive approaches were used to screen the probiotic candidate, and the P118 strain was underscored for beneficial effects on a murine infection model. Further, bacterial genomic sequencing, gut microbiota, and metabolomic analysis pinpointed the microbe-derived tryptophan/indole could be the importance of P118 probiotic properties. Nevertheless, the newly found P118 could enhance host tolerance to Salmonella infections via various pathways, including direct antibacterial actions, inhibiting Salmonella colonization and invasion, attenuating pro-inflammatory responses of intestinal macrophages, and modulating gut microbiota mediated by microbe-derived indole metabolites (Figure 7). Further investigations are needed to assess whether the mechanisms observed in P118 are strain-specific or broadly applicable to other L. rhamnosus strains, or LAB species in general.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101198/elife-101198-fig7-v1.jpg)
 
-**Figure 7.:** L. rhamnosus P118 strain with great probiotic properties was screened from 290 purified isolates through two distinctive screen approaches, and P118 strain was underscored for protective effects on a murine infection model.Further, multi-omics analysis pinpointed the microbe-derived tryptophan/indole could be the importance of P118 probiotic properties. Nevertheless, the newly found P118 enhances host tolerance to Salmonella infections via various pathways, including direct antibacterial actions, inhibiting Salmonella colonization and invasion, attenuating pro-inflammatory responses of intestinal macrophages, and modulating gut microbiota mediated by microbe-derived indole metabolites.
+**Figure 7.:** Further, multi-omics analysis pinpointed the microbe-derived tryptophan/indole could be the importance of P118 probiotic properties. Nevertheless, the newly found P118 enhances host tolerance to Salmonella infections via various pathways, including direct antibacterial actions, inhibiting Salmonella colonization and invasion, attenuating pro-inflammatory responses of intestinal macrophages, and modulating gut microbiota mediated by microbe-derived indole metabolites.
 
 ## Materials and methods
 
-## Bacterial isolation and culture
+### Bacterial isolation and culture
 
 Lactic acid bacteria (LAB) and Enterococcus strains were isolated from 39 samples: 33 fermented yogurt samples (collected from families in multiple cities of China, including Lanzhou, Urumqi, Guangzhou, Shenzhen, Shanghai, Hohhot, Nanjing, Yangling, Dali, Zhengzhou, Shangqiu, Harbin, Kunming, Puer) and 6 healthy piglet rectal content samples without pathogen infection and diarrhea in pig farm of Zhejiang province (Table 1). Ten isolates were randomly selected from each sample. De Man-Rogosa-Sharpe (MRS) with 2.0% CaCO3 and brain heart infusion (BHI) broths (Huankai Microbial, Guangzhou, China) were used for bacteria isolation and cultivation. MALDI-TOF MS (Bruker Daltonik GmbH, Bremen, Germany) method was employed to identify bacterial species with a confidence level ≥90% (He et al., 2022). L. rhamnosus P118 (P118) and Salmonella enterica serovar Typhimurium SL1344 (STm) were cultured in MRS and Luria Broth (LB) medium at 37°C overnight under aerobic conditions, separately. The final concentration of bacterial isolates was constantly checked by the spreading plate method (Wang et al., 2023). After being centrifugated at 4000×g for 15 min at 4°C, the fermented supernatant of L. rhamnosus P118 was collected by centrifugation at 4000×g for 15 min at 4°C, and then filtered through a 0.22 μm membrane (Merck Millipore, Burlington, MA, USA) kept at 4°C for further use.
 
-## Probiotic property evaluation of candidate isolates
+### Probiotic property evaluation of candidate isolates
 
 For milk-clotting activity analysis of probiotics (Zhang et al., 2023), overnight fermented lactic acid bacteria isolates under logarithmic growth were added to test tubes containing skim milk (10% skim milk with 10 mM CaCl2) at 1:20 ratio (v/v) and then incubated at 37°C. The coagulating time, final pH value, and acidity of milk were measured during the curdling process.
 
@@ -114,27 +257,27 @@ For antimicrobial susceptibility test, 12 antimicrobial agents (penicillins, ery
 
 The agar diffusion method (Wang et al., 2023) was used to evaluate the antimicrobial activity against multiple pathogens in vitro. Briefly, bacterial culture medium (LB, BHI) containing 0.25% (v/v) different zoonotic pathogens under logarithmic growth was poured into 10 cm plates (Corning, NY, USA), separately. Then, 200 μL of the fermented sterile supernatant collected from the overnight cultured L. rhamnosus P118 was added into 8 mm agar wells created by Oxford cup. The bacteriostatic effect was evaluated by the growth inhibition zone around the 8 mm agar wells after overnight incubation at 37°C.
 
-## Caenorhabditis elegans infection
+### Caenorhabditis elegans infection
 
 C. elegans infection model was performed as previously described (Rangan et al., 2016). C. elegans N2 (Bristol) were routinely raised on Nematode Growth Media (NGM) feeding with E. coli OP50, and L4-stage worms were prepared according to the description in WormBook (Girard et al., 2007). 200 μL of the isolated isolates (adjusted to 5×108 CFU/mL using M9 medium) and L. rhamnosus P118-related substances (e.g., mixed cultures, fermented sterile supernatants, P118 lysate, dead P118) were poured onto NGM in 24-well plates, separately, and dried at 22°C for 4 h. L4-stage worms were then transferred to the lawns of the poured NGM plates (30 worms/plate) with three plates per group for 24 h. Then, the treated worms were washed and transferred to lawns of STm (1×108 CFU/lawn) on NGM plates for infection. Worm survival was monitored at 24 h intervals for 16 days.
 
-## Whole-genome sequencing and data analysis
+### Whole-genome sequencing and data analysis
 
 Whole-genome sequencing, quality control, assembly, and annotation of L. rhamnosus P118 were conducted according to our previous study (Zhou et al., 2023) using PacBio Sequel platform and Illumina NovaSeq PE150 at Novogene (Novogene Co, Ltd., Beijing, China), and the P118 draft genome is available in the Sequence Read Archive under accession number PRJNA848987. L. rhamnosus P118 assembly was queried against the NCBI non-redundant prokaryotic genomes database using the Microbial Genomes Atlas (MIGA) webserver (database update to 10/10/2023) (Rodriguez-R et al., 2018). Taxonomic classification was inferred by the maximum average amino acid identity (AAI) against all genomes in the database, with p-values estimated from the distribution of all the reference genomes in NCBI’s RefSeq at each taxonomic level as a readout of classification probability. Average nucleotide identity (ANI) and AAI tables of maximally the top 50 reference hits in the database were extracted and graphed as x-y scatter plots to determine the nearest phylogenetic neighbors. To generate phylogenic trees of isolates and MIGA-identified nearest phylogenetic neighbors, the interfered proteome from PROKKA isolate annotations, or as publicly available in NCBI for applicable reference genomes, was uploaded to the ANI/AAI-Matrix calculator (Rodriguez-R and Konstantinidis, 2016). The resulting phylogenetic tree based on AAI was visualized using the interactive tree of life (iTOL) (Letunic and Bork, 2021).
 
 L. rhamnosus P118 tryptophan-associated enzymes were identified as previously described (including TNA, TMO, TrpD, ArAT, ALD, IPDC, FldH, and AmiE) (Montgomery et al., 2022). Briefly, enzyme commission numbers, where available, or alternatively enzyme names, were queried in PATRIC, PATRIC Global Family (PGF) cross-genus identifiers were extracted and compiled for query within the L. rhamnosus P118 genome. Protein sequences of L. rhamnosus P118 identified enzymes were analyzed using InterProScan for additional functional prediction, and sequence homology to the previously experimentally validated enzymes within other bacterial species was determined using Blastp at 30% cross-genus identity and 90% identity within each species.
 
-## S. Typhimurium murine infection model
+### S. Typhimurium murine infection model
 
 Animal assays, specifically 80 six-week-old female C57BL/6 mice (Slac Animal Inc, Shanghai, China), were conducted in the Laboratory Animal Center of Zhejiang University under light-controlled (12 h light/dark cycle), temperature-controlled (22 ± 2°C), and humidity-controlled (55 ± 5°C) conditions. Forty mice were randomly selected for survival evaluation under S. Typhimurium infection, and the rest were used for sample collection on day 3 post-infection (Figure 2A). The mice were randomly divided into four groups (n=10/group): control group (C), L. rhamnosus P118 group (P), S. Typhimurium-infected group (S), and L. rhamnosus P118 protective group (P+S). Mice in the C and S groups were drinking sterile water every day, respectively. Mice in the P and P+ST groups were orally administered L. rhamnosus P118 (1×108 CFU/mouse) daily for 7 days. Then, mice were orally ingested with S. Typhimurium SL1344 (1×108 CFU/mouse) or sterile PBS. All mice were allowed free access to water and food, and weighed every day. Mice were euthanized on day 3 post-infection. Spleen and liver were weighed for organ index calculation according to the formula: organ index = organ weight (g)/body weight (g) * 1000.
 
 To evaluate the protective effect of IAA, 18 mice were randomly divided into three groups (n=6/group): control group (C), S. Typhimurium-infected group (S), and IAA protective group (IAA + S). Mice in the C and S groups were drinking sterile water every day, respectively. IAA (Sigma, I3807) was dissolved in 1  M NaOH in PBS and adjusted pH to 7.4 with 1 M HCl. Mice in the IAA + ST groups were orally administered with 75 mg/kg IAA daily for 7 days. Then, mice were orally ingested with S. Typhimurium SL1344 or sterile PBS. At 3 days post-infection, mice were euthanized for sample collection.
 
-## In vivo macrophage depletion
+### In vivo macrophage depletion
 
 To evaluate the involved roles of macrophages, macrophage depletion assay was conducted through intraperitoneal injection with 250 μL/mouse clodronate liposomes (CLP, From Vrije Universiteit Amsterdam) twice (2 days prior and 1 day after Salmonella infection, separately) according to the manufacturer’s instructions. Thirty-three mice were randomly divided into six groups (n=3–6/group): control group (C), S. Typhimurium-infected group (S), control group with macrophage depletion (CLP + C), S. Typhimurium-infected group with macrophage depletion (CLP + S), IAA protective group with macrophage depletion (CLP + IAA + S), and P118 protective group with macrophage depletion (CLP + P + S). At 3 days post-infection, mice were euthanized for sample collection.
 
-## Macrophage cell culture
+### Macrophage cell culture
 
 Murine macrophage cell line RAW 264.7 purchased from ATCC was cultured in DMEM/F12 medium (Gibco, Carlsbad, CA) supplemented with 10% FBS (Gibco) and 1% (v/v) antibiotic solution (100 μg/mL streptomycin + 100 U/mL penicillin, Sigma-Aldrich, St. Louis, MO) at 37°C in a 5% humidified CO2 incubator. If not mentioned, the antibiotic solution (100 μg/mL streptomycin and 100 U/mL penicillin) was not added into DMEM/F12 medium in the further experiment.
 
@@ -142,11 +285,11 @@ For S. Typhimurium killing assay, RAW 264.7 cells seeded into 12-well plates (2�
 
 For the immune response assay, RAW 264.7 cells seeded into 12-well plates (2×106 cells/well) were pretreated with CH-223191 (AHR inhibitor, 10 μM) for 6 h, subsequently treating cells with 100 μM IAA for another 6 h. After 6 h, RAW 264.7 cells were infected with S. Typhimurium (MOI = 10) for 2 h. After washing three times with sterile PBS, the infected RAW 264.7 cells were collected using RNAiso Plus (TaKaRa, Dalian, China) for total RNA extraction and quantitative real-time PCR (qPCR). The primer sets are listed in Supplementary file 6.
 
-## S. Typhimurium burden
+### S. Typhimurium burden
 
 S. Typhimurium loads in tissues (duodenum, cecum, colon, liver, and spleen) and shedding in feces were determined as previously described (Xu et al., 2018). Briefly, tissues and fecal samples were collected under sterile conditions and homogenized in sterile PBS containing 0.1% Triton X-100. Serial 10-fold dilutions of tissue homogenates were spread onto SS agar plates in triplicate and then incubated at 37°C overnight to quantify the bacterial colony-forming unit (CFU).
 
-## Histopathology, immunofluorescent analysis, transmission electron microscope (TEM) observation, and clinical symptom score
+### Histopathology, immunofluorescent analysis, transmission electron microscope (TEM) observation, and clinical symptom score
 
 Tissues (ileum, liver, and spleen) fixed in 4% paraformaldehyde were embedded in paraffin, sliced, dehydrated, and then sectioned for hematoxylin and eosin (H&E) staining. The tissue slices were imaged and analyzed by using Olympus Microscope (Tokyo, Japan). For the immunofluorescent assay, the paraffin-embedded ileum samples were incubated with primary antibodies against Ki67 (GB121141, Servicebio, China), lysozyme (GB11345, Servicebio), Muc2 (GB11344, Servicebio), F4/80 (GB113373, Servicebio), Nos2 (GB11119, Servicebio), Il1b (GB11113, Servicebio), Il6 (GB11117, Servicebio), Tnfa (GB11188, Servicebio) overnight at 4°C and then further incubated with secondary antibodies (Alexa Fluor 488-conjugated goat anti-rabbit/mouse IgG) or HRP-conjugated goat anti-rabbit secondary antibody (GB23303, Servicebio) for 60 min at room temperature. Finally, ileum slices were digitalized by Pannoramic MIDI (3DHISTECH, Hungary).
 
@@ -154,13 +297,13 @@ TEM observations of ileum tissues were prepared according to our previous study 
 
 The clinical symptom scores were evaluated and graded by two blinded assessors according to previous reports with modified (Burkholder et al., 2012), and the scoring criteria are listed in Supplementary file 7.
 
-## ELISA assay and qPCR
+### ELISA assay and qPCR
 
 The serum contents of interleukin (IL)-1β and IL-18 were determined by ELISA kits (Solarbio, Beijing, China) according to the manufacturer’s instructions.
 
 Total RNA extracted from intestinal tissues and RAW 264.7 cells by RNAiso Plus kit (TaKaRa) was reverse-transcripted using PrimeScript II 1st Strand cDNA Synthesis Kit (TaKaRa) according to the manufacturer’s instructions. The qPCR was then performed on the StepOne real-time PCR system (Applied Biosystems) using SYBR PremixEx TaqII (TaKaRa). The primer sets are listed in Supplementary file 6. Fold changes were calculated after normalizing to the housekeeping gene Gapdh using the 2-ΔΔCt method (Livak and Schmittgen, 2001).
 
-## Microbiota analysis
+### Microbiota analysis
 
 The TIANamp Stool DNA Kit (Tiangen, Beijing, China) was employed to extract fecal bacterial genomic DNA, and fecal bacterial communities were investigated using 16S rDNA sequencing by targeting the V3-V4 hypervariable region. The 16S rDNA sequencing was then performed on an Illumina NovaSeq platform (Illumina Inc, San Diego, CA, USA). The quality filter of the paired-end raw sequences and a cluster of the filtered sequences into the OTU at 97% similarity was performed by QIIME software (version 1.9.1). Microbial OTU representative sequences were assigned to a taxonomic lineage by the RDP classifier based on the SILVA database (version 132 release).
 
@@ -168,10 +311,10 @@ To investigate the dissimilarities in bacterial communities and fecal metabolome
 
 The Sloan neutral model was employed to estimate the importance of neutral processes in the assembly of bacterial communities using the ‘MicEco’ package (Sloan et al., 2006). A null-model-based statistical framework was conducted to evaluate the relative importance of determinism and stochasticity in bacterial community assembly (Stegen et al., 2013; Xu et al., 2022). Two assembly processes were defined as deterministic processes (|βNTI|>2) and stochastic processes (|βNTI|≤2) based on the absolute values of beta Nearest Taxon Index (βNTI) (Jiao et al., 2020). Additionally, five ecological assembly processes were then interpreted as homogeneous selection (βNTI<-2), homogenizing dispersal (|βNTI|≤2 and RCbray <−0.95), undominated (|βNTI|≤2 and |RCbray|<0.95), dispersal limitation (|βNTI|≤2 and RCbray >0.95) and variable (heterogeneous) selection (βNTI >2) based on the threshold of the absolute values of βNTI and Bray–Curtis-based Raup–Crick (RCbray) (Jiao et al., 2020; Xu et al., 2022).
 
-## Metabolomics analysis
+### Metabolomics analysis
 
 Untargeted metabolomics was investigated to analyze the fecal metabolomes of mice. The method for extracting metabolites from feces was conducted according to our previous study described (Wang et al., 2021b). After extracting metabolites from feces, UHPLC-MS/MS analyses of samples were performed by Vanquish UHPLC systems (Thermo Fisher, Germany) coupled with Orbitrap Q Exactive HF-X mass spectrometers (Thermo Fisher) in Novogene Co., Ltd. (Beijing, China). Compound Discoverer 3.1 (CD3.1, Thermo Fisher) was employed to conduct peak alignment and quantify metabolites generated by UHPLC-MS/MS. After normalizing to total spectral intensity and predicting molecular formula, the peaks were queried against mzCloud, mzVault, and MassList databases to extract the quantitative results. Annotation of fecal metabolite signatures was queried against the KEGG database, HMDB database, and LIPIDMaps database. Significant differences in fecal metabolites were analyzed using univariate analysis (t-test) and partial least-squares discriminant analysis (PLS-DA), in which fecal metabolites with variable importance in the projection (VIP) >1 and p< 0.05 were considered differential metabolites. Pearson correlation analysis between S. Typhimurium burden (in tissues and feces) and fecal metabolites was analyzed and visualized using the ‘linkET’ package (Huang, 2021). MetOrigin platform was employed to analyze the sources of microbial metabolites and their metabolic functions in fecal metabolomes (Yu et al., 2022).
 
-## Statistical analysis
+### Statistical analysis
 
 The significance of the results was analyzed by one-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test using SPSS v24 (SPSS Inc, Chicago, IL, USA), and statistical graphs were visualized using GraphPad Prism v8.0 (GraphPad Software, CA) and package ‘ggplot2’ of R software (v4.3.1). * p<0.05, **p<0.01, ***p<0.001.

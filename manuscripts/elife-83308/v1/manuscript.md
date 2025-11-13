@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/049tv2d57 Key Laboratory of Molecular Design for Plant Cell Factory of Guangdong Higher Education Institutes, Department of Biology, School of Life Sciences, Southern University of Science and Technology Shenzhen China
+1. Key Laboratory of Molecular Design for Plant Cell Factory of Guangdong Higher Education Institutes, Department of Biology, School of Life Sciences, Southern University of Science and Technology Shenzhen China ([ROR:049tv2d57](https://ror.org/049tv2d57))
 
 † Corresponding author
 

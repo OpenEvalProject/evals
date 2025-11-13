@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04dese585 Department of Biochemistry, Indian Institute of Science Bangalore Bangalore India
-2. https://ror.org/009nfym65 Department of Experimental Medicine and Biotechnology, Post Graduate Institute of Medical Education and Research Chandigarh India
+1. Department of Biochemistry, Indian Institute of Science Bangalore Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
+2. Department of Experimental Medicine and Biotechnology, Post Graduate Institute of Medical Education and Research Chandigarh India ([ROR:009nfym65](https://ror.org/009nfym65))
 
 † Corresponding author
 
 ## Abstract
 
-Having its genome makes the mitochondrion a unique and semiautonomous organelle within cells. Mammalian mitochondrial DNA (mtDNA) is a double-stranded closed circular molecule of about 16 kb coding for 37 genes. Mutations, including deletions in the mitochondrial genome, can culminate in different human diseases. Mapping the deletion junctions suggests that the breakpoints are generally seen at hotspots. ‘9 bp deletion’ (8271–8281), seen in the intergenic region of cytochrome c oxidase II/tRNA Lys , is the most common mitochondrial deletion. While it is associated with several diseases like myopathy, dystonia, and hepatocellular carcinoma, it has also been used as an evolutionary marker. However, the mechanism responsible for its fragility is unclear. In the current study, we show that Endonuclease G, a mitochondrial nuclease responsible for nonspecific cleavage of nuclear DNA during apoptosis, can induce breaks at sequences associated with ‘9 bp deletion’ when it is present on a plasmid or in the mitochondrial genome. Through a series of in vitro and intracellular studies, we show that Endonuclease G binds to G-quadruplex structures formed at the hotspot and induces DNA breaks. Therefore, we uncover a new role for Endonuclease G in generating mtDNA deletions, which depends on the formation of G4 DNA within the mitochondrial genome. In summary, we identify a novel property of Endonuclease G, besides its role in apoptosis and the recently described ‘elimination of paternal mitochondria during fertilisation.
+Having its genome makes the mitochondrion a unique and semiautonomous organelle within cells. Mammalian mitochondrial DNA (mtDNA) is a double-stranded closed circular molecule of about 16 kb coding for 37 genes. Mutations, including deletions in the mitochondrial genome, can culminate in different human diseases. Mapping the deletion junctions suggests that the breakpoints are generally seen at hotspots. ‘9 bp deletion’ (8271–8281), seen in the intergenic region of cytochrome c oxidase II/tRNALys, is the most common mitochondrial deletion. While it is associated with several diseases like myopathy, dystonia, and hepatocellular carcinoma, it has also been used as an evolutionary marker. However, the mechanism responsible for its fragility is unclear. In the current study, we show that Endonuclease G, a mitochondrial nuclease responsible for nonspecific cleavage of nuclear DNA during apoptosis, can induce breaks at sequences associated with ‘9 bp deletion’ when it is present on a plasmid or in the mitochondrial genome. Through a series of in vitro and intracellular studies, we show that Endonuclease G binds to G-quadruplex structures formed at the hotspot and induces DNA breaks. Therefore, we uncover a new role for Endonuclease G in generating mtDNA deletions, which depends on the formation of G4 DNA within the mitochondrial genome. In summary, we identify a novel property of Endonuclease G, besides its role in apoptosis and the recently described ‘elimination of paternal mitochondria during fertilisation.
 
 ## Introduction
 
@@ -39,55 +39,135 @@ Here, we investigate the mechanism of fragility associated with the most common 
 
 Previously, different non-B DNA motifs, including G4 DNA motifs have been reported in the mitochondrial genome (Dahal et al., 2022; Damas et al., 2012; Dong et al., 2014). It was also suggested that alternate forms of DNA may play a role in the generation of deletions in mitochondria (Dahal et al., 2022; Damas et al., 2012; Dong et al., 2014). In silico studies along with biochemical analyses revealed that 5 classical G4 DNA motifs are present in the mitochondrial genome, which could fold into G4 DNA (Cer et al., 2013; Dahal et al., 2022; Figure 1—figure supplement 1A). Since ‘9 bp deletion’ (8271–8281) is the most frequent mitochondrial deletion and occurs next to one of the 5 G4 motifs with the coordinate position 8252–8295 (designated as mitochondrial Region I) (Figure 1A and B; Dahal et al., 2022), we have investigated the putative role of G4 DNA structure in DNA breakage and formation of the mtDNA deletions. Notably, the chosen G-quadruplex motif is also present in two other large-scale deletions associated with mitochondria.
 
-## G-quadruplex motifs from Region I of mitochondrial DNA, when present on shorter DNA, can fold into a G-quadruplex structure
+![Figure 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig1-v3.jpg)
+
+**Figure 1.:** (A) Sequence of the mitochondrial Region I with direct repeats and inverted repeats. Blue-shaded arrows represent the direct repeats, and yellow arrows represent the inverted repeats. The sequence in blue is G rich sequence predicted to form a G-quadruplex structure. The sequence after 9 bp deletion is also shown. (B) The oligomeric sequence of the G-rich strand (indicated by ‘G1’) and the complementary C-rich strand (indicated by ‘C1’). These oligomers are derived from the predicted mitochondrial G-quadruplex forming Region I. The stretches of guanines are marked in blue. (C) The G and C-rich strands were incubated in the presence of 100 mM KCl and resolved on 15% native polyacrylamide gels in the absence (-KCl) or presence (+KCl) of KCl (100 mM) in the gel and running buffer. The substrate, intramolecular (Intra G), and intermolecular (Inter G) quadruplex structures are indicated. (D) CD spectra for G1 in the presence (red) or absence of 100 mM KCl (black). CD spectra for G1 (green) and C1 (black) in the presence of 100 mM KCl. In each case where KCl was added, the respective oligomer resuspended in Tris-EDTA buffer was incubated for 1 h at 37 °C and spectra were recorded using JASCO J-810 spectropolarimeter (scan range of 220–300 nm). (E) DMS protection assay for the Region I of mitochondria. The oligomer was allowed to fold into G4 DNA and then treated with DMS, followed by cleavage with piperidine. The products were resolved on a 15% denaturing PAGE. Substrate indicates the gel-purified DNA from the reaction incubated with or without KCl. All the positions of guanines are indicated. (F) A representative 2D model for intramolecular G-quadruplex structure formed at mitochondrial Region I based on the reactivity of guanine to DMS and CD studies for determining the orientation of DNA fold. Refer also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Related to Figure 1. (A) Schematic representation of mitochondrial genome showing positions of five G-quadruplex DNA motifs. (B) List of oligomers used for studying effect of mutation of G stretches on G-quadruplex formation. Guanine stretches are indicated in blue, while sequences in red are mutations introduced to G stretches. (C) Gel shift assay in the absence (left panel) and presence (right panel) of KCl showing the impact of mutation of G stretches on intramolecular G4 DNA formation.
+
+### G-quadruplex motifs from Region I of mitochondrial DNA, when present on shorter DNA, can fold into a G-quadruplex structure
 
 To investigate whether mitochondrial Region I can indeed form G-quadruplex structures, oligomeric DNA containing the G-rich region referred to as ‘G1’ and complementary C strand (C1) were synthesised (Figure 1B). Radiolabelled oligomeric DNA was then subjected to electrophoretic mobility gel shift assay in the absence or presence of KCl. Faster mobility of the G-rich strand compared to its complementary C-rich strand suggested the formation of both intra and intermolecular G4 DNA structure in a KCl-dependent manner (Figure 1C). Importantly, the formation of intramolecular G4 DNA was abrogated when G-stretches were mutated (Figure 1—figure supplement 1B, C). Further, circular dichroism (CD) studies revealed that the spectra exhibited the characteristic of a parallel G-quadruplex DNA with absorption maxima of 260–270 nm and absorption minima of 240 nm as opposed to the C-rich strand, which showed the maxima similar to that of a typical single-stranded DNA (Figure 1D).
 
 DMS protection assay was performed to understand the precise base pairing of guanine nucleotides involved in the G4 plates compared to the ones within connecting loops that facilitate DNA strand folding and, thus, G-quadruplex formation (Nambiar et al., 2011; Nambiar et al., 2013). DMS methylates the N7 position of the guanine base, making it susceptible to subsequent piperidine cleavage. Since the N7 position of G residues forming the G4 plate is engaged upon Hoogsteen base pairing, these residues are protected from DMS treatment and piperidine cleavage. When the G-quadruplex sequences from mitochondrial Region I (G1) were subjected to DMS protection assay, following structure formation, we observed that most G residues in this region showed a significant reduction in cleavage, suggesting protection of these nucleotides from DMS. Based on the observed protection of guanine from DMS, we conclude that these guanines are indeed involved in Hoogsteen bonding (Figure 1E, lane 2). The results suggest that the guanine residues from the G stretches of the mitochondrial Region I motif participate in G-quadruplex formation. Based on CD studies and gel shift assays, a parallel, intramolecular G-quadruplex structure was modelled (Figure 1F). Thus, our study reinforces that the Region I of mitochondrial DNA can fold into an intramolecular G-quadruplex (Figure 1E and F).
 
-## The G4 motif present in Region I of mtDNA can fold into a G-quadruplex structure when present on a plasmid DNA
+### The G4 motif present in Region I of mtDNA can fold into a G-quadruplex structure when present on a plasmid DNA
 
 In the context of double-stranded DNA, G-quadruplexes can form only when the Hoogsteen base pairing between the guanine residues is stronger than the Watson and Crick H-bonding required for duplex B-DNA formation. Therefore, the G-quadruplex forming ability of the mitochondrial Region I was tested after cloning into a plasmid, pDI1. Interestingly, an inverted repeat sequence (coordinate positions 8295–8363), which could fold into a cruciform DNA, was also present adjacent to the G4 motif. Thus, that was also part of pDI1 (Figure 2—figure supplement 1). Further, to delineate the role of G4 DNA in the plasmid context, a mutant plasmid with a scrambled sequence corresponding to the G4 motif but with intact inverted repeats (pDI2) was also constructed (Figure 2A, Figure 2—figure supplement 1). Previous studies have shown that the formation of G4 DNA can lead to a pause during replication (Kumari et al., 2015; Nambiar et al., 2013; Voineagu et al., 2008; Wells, 2009). To assess whether the G4 DNA formed at Region I of the mitochondrial genome can act as a replication pause, a primer extension assay was performed using pDI1 (Kumari et al., 2015; Figure 2B and C). A sequencing ladder was also generated for mapping the location of the polymerase pause sites on the plasmid (Figure 2C). Results revealed multiple polymerase pause sites, and the intensity of the pauses increased with increasing concentrations of KCl (25, 50 and 100 mM; Figure 2C). Interestingly, there was significantly fewer sites and less pausing observed in the absence of KCl, indicating the absence of the formation of intramolecular G-quadruplex species in these cases (Figure 2C, lane 2). Considering that the formation of cruciform DNA occurs irrespective of the presence of KCl, these results also suggest that the observed pause was due to the formation of G4 DNA, but not cruciform DNA. Besides, the observed polymerase pauses mapped to the G-quadruplex motif (Figure 2C, lanes 7–9). Abrogation of G4 DNA structure by mutation of G4 DNA motif (pDI2) resulted in the disappearance of the observed pause site, further confirming the above results (Figure 2D, lanes 3, 4 and lane 6, 7). It was also observed that the appearance of strong polymerase pause sites were dependent on K+ (Figure 2E, lanes 4–5; F), but not on other monovalent cations such as Li+ (with no or little G-quadruplex stabilising properties) or Na+ (with limited stabilising properties) (Figure 2E, lanes 6–9; F) suggesting that the non-B DNA responsible for polymerase arrest was G4 DNA.
 
-## Mitochondrial Region I can exist as a G-quadruplex structure within the mitochondrial genome and, when present on a plasmid DNA
+![Figure 2.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic showing cloning of the mitochondrial Region I and its mutant to generate plasmids pDI1 and pDI2, respectively. The duplex region containing the G stretches is depicted in blue, while the mutated nucleotides are marked in red. (B) Schematic showing the primer extension across plasmid DNA containing mitochondrial Region I. Positions of primer, VKK11 is indicated. The radiolabeled primer (indicated with an asterisk) binds to one of the strands of the plasmid DNA upon heat denaturation and extends till it encounters a non-B DNA, as it blocks the progression of the polymerase. The products (dotted lines) are then resolved on a denaturing PAGE. (C) The plasmid, pDI1, containing the mitochondrial Region I, was used for primer extension studies using radiolabeled primers for the G-rich (VKK11) in a KCl (25, 50, 100 mM) dependent manner. A sequencing ladder was prepared using VKK11 by the chain termination method of sequencing. Pause sites are shown with dotted rectangles in turquoise. The sequence corresponding to the pause site is boxed, and sequence complementary to G-quadruplex forming motifs are indicated in pink. Sequencing ladder was used as marker. (D) Plasmids, pDI1 and its mutant pDI2, containing mutation in G4 motif, were used for primer extension studies using radiolabelled primer (VKK11). Pause sites are shown with dotted rectangles (turquoise). (E) Evaluation of the effect of different cations (Na+, K+, Li+) on non-B DNA formation at mitochondrial Region I when present on a plasmid (pDI1) by using primer VKK11 in a primer extension assay. The pause sites are indicated in dotted rectangle (turquoise). In panels C-F, ‘M’ denotes the 50 nt ladder. (F) Bar diagram showing the effect of ions in primer extension assay. The values are expressed in PSLU (photo-stimulated luminescence units) representing the extent of pause. Refer also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Related to Figure 2. The duplex region containing the G stretches are depicted in blue, while the mutated nucleotides are marked in red. A 68 nucleotide sequence is also shown with inverted repeats marked in orange.
+
+### Mitochondrial Region I can exist as a G-quadruplex structure within the mitochondrial genome and, when present on a plasmid DNA
 
 Formation of G4 DNA on a plasmid or mitochondrial genome could result in single-strandedness at complementary and adjacent regions corresponding to the G4 motif. Sodium bisulphite modification assay was performed on pDI1 to check the single-strandedness in the complementary C strand of Region I. Sodium bisulphite deaminates cytosine resulting in uracil, when present on single-stranded DNA (Figure 3—figure supplement 1A). This change can be read as a C→T conversion after PCR and sequencing (Figure 3—figure supplement 1A, B). Of the 40 clones sequenced, 38 molecules showed C to T conversion to varying extents in either top or bottom strands (Figure 3A; Figure 3—figure supplement 1C). Interestingly, the cytosines complementary to the G-quadruplex motif exhibited single-stranded nature (Figure 3A), suggesting the formation of a G-quadruplex structure in the complementary G-rich strand. Importantly, ~15% of molecules showed continuous conversion at the region corresponding to the G4 motif. These results suggest that Region I of mitochondrial DNA can fold into a non-B DNA even when cloned into a plasmid, consistent with the result obtained following primer extension.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig3-v3.jpg)
+
+**Figure 3.:** (A) Bisulphite modification assay on plasmid (pDI1) containing mitochondrial Region I. Vertical bar represents the number of times the respective cytosine in the top and bottom strands of mitochondrial Region I is converted to thymine after deamination when treated with sodium bisulphite, followed by PCR. (B, C) Bisulphite sequencing on the mitochondrial genome for determining the formation of G4 DNA at Region I. Each vertical bar represents the conversion of a cytosine to uracil in the top strand or bottom strand. A total of 59 clones were sequenced from both the top and bottom strands (B). Single strandedness was observed in a DNA fragment of 198 nt containing Region I of the mitochondrial genome following bisulphite modification assay (C). Each row represents cytosines present in a DNA molecule. Each dark circle represents the conversion of cytosine to thymine on the top strand after deamination upon treatment with sodium bisulphite, followed by PCR and DNA sequencing. Of the 59 clones sequenced, the most reactive 25 molecules are shown (C). In all the panels, sequences corresponding to the G-quadruplex forming motif are indicated in a dotted rectangular box (mustard yellow). Refer also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Related to Figure 3. (A, B) Treatment with sodium bisulfite can result in deamination of cytosine, leading to uracil when present on a single-stranded DNA (A). This C to U conversion can lead to C to T change following PCR and sequencing (B). (C) Table showing the summary of clone sequenced from mitochondrial region containing plasmid and mitochondrial genome for bisulfite sequencing for both top and bottom strand.
+
 Further, to investigate the existence of G4 DNA structures in the mitochondrial genome, a sodium bisulphite modification assay was performed after extracting the mitochondrial DNA from human cells (Nalm6) under non-denaturing conditions. Results showed that out of 59 DNA molecules analysed following cloning and sequencing, 52 showed C→T conversions to varying extents (Figure 3B and C; Figure 3—figure supplement 1C). Cumulative analysis of converted cytosines on a fragment of 281 bp revealed single-strandedness at Region I corresponding to the complementary region of G4 motifs. When the mitochondrial genome was analysed, regions adjacent to the G4 motif also showed certain levels of single-strandedness (Figure 3B). However, the C→T conversion rate was significantly lower when upstream and downstream sequences were analysed for conversion. Further, among the 50 clones from the top strand, 14 (28%) had continuous conversions of 11 or more cytosines when a stretch of 20 cytosines modifications was considered on a single DNA molecule level (Figure 3C; Figure 3—figure supplement 1C). This suggests that the formation of G4 DNA at Region I may not occur in all DNA molecules of the mitochondrial genome at a given time. However, based on these results in conjunction with biochemical assays, it is evident that the G-quadruplex motif at Region I can indeed fold into a G-quadruplex structure in mitochondria.
 
-## BG4, a G-quadruplex binding antibody, binds to G-quadruplex structures in the mitochondrial genome
+### BG4, a G-quadruplex binding antibody, binds to G-quadruplex structures in the mitochondrial genome
 
 The previous studies established that BG4 antibody can bind to G-quadruplexes formed in DNA and RNA (Chambers et al., 2015; Das et al., 2016; Javadekar et al., 2020). To study whether BG4 indeed binds to the mitochondrial genome inside cells, immunofluorescence in HeLa and HEK 293T cells was performed after testing the specificity of the antibody (Javadekar et al., 2020). Mito-tracker Deep Red or Mito-tracker Green FM was used for staining mitochondria, while the nucleus was stained with DAPI. BG4 was stained with Alexa fluor-tagged secondary antibodies. Merging of green and red foci resulting in yellow foci was observed in the case of both HeLa and HEK 293T cells, which revealed localisation of BG4 to mitochondria (Figure 4A, Figure 4—figure supplement 1A). The colocalisation was further analysed using the JaCoP plugin in ImageJ software. In both cases, an image with Coste’s mask is presented, showing the extent of localisation in the form of a white dot after merging red and green foci (Figure 4A–C). Colocalisation analyses show Mander’s coefficient value between 0.25–0.4, irrespective of the stain used as MitoTracker, in the case of HeLa and 293T cells indicating that G-quadruplex structures can be detected in the mitochondrial genome in cellular context (Figure 4B and C). To further confirm that the colocalisation was indeed between the MitoTracker and BG4 antibody, immunofluorescence was performed in Rho(0) cells (human osteosarcoma cells with depleted mtDNA) (Dong et al., 2017; Tan et al., 2015). Results suggested that although BG4 foci were observed in the cytoplasm of Rho(0) cells, they do not seem to colocalize with mitochondria (Figure 4D and E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig4-v3.jpg)
+
+**Figure 4.:** (A) Representative images of HeLa and HEK293T cells showing colocalisation of BG4, the G4 binding antibody to mitochondria following immunofluorescence assay. The nucleus is stained with DAPI (blue colour), mitochondria with MitoTracker DR (red) and BG4 with Alexa-Fluor 488 (green). A merged image is shown with a merge of red and green, as depicted by Coste’s mask (colocalisation is represented as a white dot). (B, C) Quantitation showing colocalisation of BG4 with MitoTracker indicated as dot plots. The colocalisation was quantified using Mander’s colocalisation coefficient (ImageJ software) analysing a minimum of 100 cells as red over green (B) and green over red (C). (D) Representative image of Rho(0) cells showing localization of BG4 to mitochondria following immunofluorescence as investigated in panel (A). (E) Quantitation showing comparison of colocalization of BG4 between HeLa cells and Rho(0) cells shown as dot plots. The colocalization was quantified using Mander’s colocalization coefficient analyzing a minimum of 50 cells as red over green. Refer also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Related to Figure 4. (A) Immunofluorescence study showing colocalization of BG4 (antibody that binds to G4 DNA) and mitochondrial genome. Nucleus from HeLa cells is stained with DAPI (blue color). Mitochondria are stained with MitoTracker green FM and G4 DNA with BG4 (Alexa-Fluor 568), a merged image is shown. A merge of red and green is depicted by Coste’s mask (colocalization is represented as a white dot). The experiments were done independently in HeLa and HEK 293T cells and the quantitation of colocalization of BG4 with MitoTracker is shown in Figure 2. (B) Increasing concentrations (0.2, 0.5, 1, and 2 µg) of purified BG4 was incubated with G-rich (G1) and C-rich (C1) oligomers and products were resolved on 5% native polyacrylamide gel. In each case a lane without protein (lane 1 and 6) served as control. The substrate and the bound complex are marked.
 
 To examine whether BG4 can indeed bind to mitochondrial G-quadruplexes, in vitro binding of purified BG4 to oligomers harbouring the G-quadruplex region was performed (Figure 4—figure supplement 1B). Results indicated that the bound complex was seen when G-rich oligomer (G1) was incubated with BG4, while such binding was absent when incubated with C-rich oligomer (C1) (Figure 4—figure supplement 1B).
 
 To investigate whether BG4 can bind to G-quadruplex DNA present in the mitochondrial genome, the mito IP-qPCR strategy was employed (Figure 5A, Figure 5—figure supplement 1). Briefly, following crosslinking, mitochondria were isolated, and the region binding to BG4 was immunoprecipitated. Five regions corresponding to G4 motifs and ten random regions without G4 motifs were selected for analysis by using appropriate PCR primers (Figure 5—figure supplement 1). Results showed that all five G-quadruplex forming regions amplified between 10–18 cycles when qPCR was performed (Figure 5B). In contrast, 9 of 10 random regions did not show any amplification following the BG4 pull-down (Figure 5B). Sequence analysis showed that the control region (CR7) amplified after the BG4 pull-down had high GC content. Besides, when CR7 was analysed for potential non-B DNA formation, we noted the presence of two-plate G4 DNA motif. CR7 may likely fold into a 2-plate G4 DNA, which could explain its binding with BG4 (Figure 5B). However, further studies are required to confirm this hypothesis. Samples with input DNA served as a positive control, and as expected, all the regions were amplified. Samples where no antibody was added, did not result in amplification when G4-specific or random region primers were used, revealing the specificity of BG4 towards G4 DNA (Figure 5B). Similar results were also obtained when BG4 pull-down samples were evaluated using semiquantitative PCR (Figure 5C). However, none of the regions amplified when samples from secondary control were used, including CR7 (Figure 5C). Sequence analysis showed that the control region amplified following BG4 pull down had high GC content and predicted for two plates G4 structure, which requires further analysis (Figure 5B and C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig5-v3.jpg)
+
+**Figure 5.:** (A) Schematic showing the experimental strategy used for mito-IP using anti-BG4. Briefly, cells were crosslinked and then mitochondria were isolated and sonicated to obtain the small fragments of mitochondrial DNA. Purified BG4 antibody was used along with protein A/G agarose beads to pull down the BG4 bound regions. (B) BG4 bound mtDNA was purified after reverse crosslinking and used for real-time PCR using primers derived from different regions of the mitochondrial genome, which include 5 G-quadruplex forming regions and 10 random regions. Input DNA served as template control. No antibody control was also used. Bars in blue (first 5) are for G-quadruplex forming regions, while green (last 10) are for random regions. Y-axis depicts threshold Ct value obtained following real time PCR for each primer. Error bar represents mean ± SEM. (C) Agarose gel profile showing the amplification of Input DNA (left panel) and BG4 pull down DNA (right panel). ‘M’ denotes 100 bp ladder. Refer also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Related to Figure 5. Schematic showing the position of primers used for mito IP studies. GR1-GR5 represents primers that can amplify G-quadruplex forming motifs and CR1-CR10 represents the random control regions.
+
 Thus, our results suggest that Region I and other G4 motifs in the human mitochondrial genome could fold into G-quadruplex DNA. However, based on bisulphite DNA sequencing from Region I, the structure may not be formed in all DNA molecules, and the frequency may be <25%.
 
-## Mitochondrial extract induces cleavage at or near the G-quadruplex structure at Region I
+### Mitochondrial extract induces cleavage at or near the G-quadruplex structure at Region I
 
 To elucidate the mechanism responsible for cleavage at mitochondrial Region I, the involvement of mitochondrial nucleases was considered. To test this, the mitochondrial extract was isolated from the rat tissues (testes and spleen) and used for cleavage assay. The extract was confirmed to be mitochondrial in nature and was tested for cross-contamination by western blotting using the anti-cytochrome C (mitochondrial marker), anti-PCNA (nuclear or cytosolic marker), and anti-Actin (loading control) (Figure 6A). Plasmid harbouring mitochondrial Region I (pDI1) was treated with the mitochondrial extract (0.25, 0.5, 1, and 2 μg) and resolved on an agarose gel following deproteinisation. Interestingly, a concentration-dependent decrease in supercoiled form and increase in the nicked form of plasmid DNA was observed when treated with mitochondrial extracts (Figure 6B, lanes 1–5). Further, there was also a concentration-dependent increase in the linear form of the plasmid DNA, indicating presence of two different nicks at proximity leading to a DSB (Figure 6B, lanes 1–5, C). Although there is a possibility that more than one nick could be present in the pDNA, since the 6 bp mutation in the G4 motif (Figure 6—figure supplement 1A) resulted in abrogation of the conversion of supercoiled to nick DNA, we assume that there will be only a single nick present per strand of the plasmid DNA. To test whether the cleavage observed was due to the presence of G4 DNA, the plasmid bearing mutation in the G4 motif, but bearing intact adjacent inverted repeats (pDI2), was treated with mitochondrial extract and analysed. Interestingly, there was a significant reduction in cleavage when two stretches of G’s were mutated (Figure 6B, lanes 6–10, 6 C; Figure 6—figure supplement 1A), indicating the cleavage was indeed due to the presence of G4 DNA.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig6-v3.jpg)
+
+**Figure 6.:** (A) Purification and characterization of mitochondrial extracts. Mitochondrial extract was prepared from rat testis and spleen, and its purity was evaluated using specific markers by western blotting. Purity of CE (cytosolic extract) and ME (mitochondrial extract) were determined using antibodies against PCNA (nuclear and cytoplasmic marker), cytochrome C (mitochondrial marker) and Actin (loading control). (B) In vitro nicking assay on a plasmid containing wild type (WT pDNA) mitochondrial Region I (pDI1) and mutant (Mt pDNA) of Region I (pDI2). Both wild type and mutant plasmids were incubated with mitochondrial extract from rat testes (ME) and resolved on a 0.8% agarose gel. Lanes 1 and 6 served as the control without any extract in the reaction, whereas lanes 2–5 and lanes 7–10 are with increasing concentration (0.25, 0.5, 1, and 2 µg) of mitochondrial extract for pDI1 and pDI2, respectively. ‘OC’ is open circular, ‘LIN’ is linear, and ‘SC’ is supercoiled. (C) Quantification showing the efficiency of mitochondrial extracts (Mt extracts) mediated cleavage when a plasmid containing mutant and wild type G4 motif derived from Region I was compared. The values in Y-axis are expressed in PSLU (photo-stimulated luminescence units) representing the extent of pause. (D) Primer extension assay on plasmid containing mitochondrial Region I (pDI1) to determine the position and location of cleavage. pDI1 was incubated with either mitochondrial extract prepared from testes or spleen in an increasing concentration (0.25, 0.5, 1, and 2 μg), reaction products were purified and used for primer extension assay. Pause sites are indicated, which correspond to G4 DNA motif. Sequencing ladder was used as marker. Complementary sequence corresponding to G-quadruplex forming motif is indicated in blue. ‘M’ is 50 nt ladder. (E) Primer extension assay on pDI1 and pDI2 (G4 mutant) following incubation with mitochondrial extract prepared from rat testis (1 μg). ‘M’ is 50 nt ladder. ‘+’ indicates addition of 1 μg mitochondrial extract shown in triplicates. (F) Quantification showing the cleavage efficiency of mitochondrial extracts (testes) when a plasmid containing mutant and wild type G4 motif derived from Region I was incubated. Cleavage intensity is shown in Y-axis. Error bar represents ± SEM. Refer also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Related to Figure 6. (A) Table showing the positions of different mutations at G4 DNA motif on plasmid bearing Region I. (B) Cleavage assay using different mutations at G4 DNA motif on plasmid bearing Region I.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Related to Figure 6. The presence of five G-stretches (shown in blue) and three GNG stretches (shown in green) allows this region to fold into four different conformations of G-quadruplex structure.
+
 For deciphering whether the position of cleavage observed was indeed at Region I, primer extension assay was carried out on pDI1 and its mutant (pDI2 and pDR4; Figure 6—figure supplement 1A) following cleavage by mitochondrial extracts isolated from testes and spleen. Results revealed two specific nicking sites when incubated with mitochondrial extracts from both testes and spleen. These were mapped to the position corresponding to the G-quadruplex forming region when the DNA sequencing ladder was used as a marker (Figure 6D). Interestingly, mutation of the G4 motif resulted in a significant reduction of cleavage activity, as one of the two cleavage sites disappeared when 2 G stretches were mutated (pDI2) from the G4 motif (Figure 6E and F; Figure 6—figure supplement 1). However, the upper cleavage site remains unchanged with the mutation. This may be due to G4 structure formation in alternate conformations, as Region I can fold into multiple forms (Figure 6—figure supplement 2; Dahal et al., 2022). Interestingly, generation of mutation in third stretch of guanines in addition to the above-described mutation (pDR4) resulted in remarkable reduction in the cleavage activity and led to disappearance of both the bands (Figure 6—figure supplement 1). These results confirm the involvement of G4 DNA in the observed cleavage at Region I.
 
-## Endonuclease G mediates structure-selective cleavage at mitochondrial Region I
+### Endonuclease G mediates structure-selective cleavage at mitochondrial Region I
 
 Among different mitochondrial endonucleases, Endonuclease G was shown to bind preferentially to the guanine-rich strands by a previous study (Ruiz-Carrillo and Renaud, 1987). Since we have observed the formation of G-quadruplex DNA structures with multiple conformations (Figure 6—figure supplement 2; Dahal et al., 2022) at Region I of the mitochondrial genome, we considered the possibility of Endonuclease G as the protein responsible for the observed cleavage. In a different study, specific cleavage at kinked DNA by Endonuclease G has also been reported (Ohsato et al., 2002). Based on these observations, we wondered whether Endonuclease G could cleave G4 DNA present at Region I on pDI1. For this, Endonuclease G and its catalytic dead mutant (ΔH151A) were overexpressed in bacteria, purified, and identity was confirmed by western blotting (Figure 7—figure supplement 1A–C). Purified Endonuclease G was subjected to a plasmid nicking assay and analysed on an agarose gel. Results showed that while the wild-type plasmid (pDI1) showed a conformation change from supercoiled to open circular, mutant plasmid (pDI2) retained its supercoiled form (Figure 7A and B). Besides, the linear form of the plasmid DNA was also observed when a higher concentration (60, 90, 120 ng) of Endonuclease G was used for the cleavage in the case of pDI1 (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig7-v3.jpg)
+
+**Figure 7.:** (A) In vitro nicking assay using purified Endonuclease G on wild type and mutant plasmids containing mitochondrial Region I (pDI1 and pDI2). Both wild type and mutant plasmids were treated with increasing concentration of purified Endonuclease G and resolved on a 0.8% agarose gel. Lanes 1 and 6 served as the control without any protein in the reaction whereas lanes 2–5 and lanes 7–10 are with increasing concentration (30, 60, 90, 120 ng) of purified Endonuclease G. (B) Quantification showing the efficiency of Endonuclease-G-mediated cleavage when a plasmid containing mutant and wild type G4 motif derived from Region I was compared. (C) Cleavage assay was performed on a plasmid containing mitochondrial Region I, pDI1 following incubation with purified Endonuclease G. Primer extension assay was carried out using [γ-32P] radiolabeled VKK11 primer and resolved on 8% denaturing polyacrylamide gel. Lanes 2 and 3 represent 30 and 60 ng of Endonuclease G incubated samples. Lane 1 is without protein, lane 4 is with mitochondrial extract (ME). and lanes 5–8 are A, C, G, T represents the sequencing ladder. ‘M’ is 50 bp ladder. Marked regions represent the specific cleavage products. (D) Cleavage assay was performed on a plasmid containing mitochondrial Region I, pDI1 following incubation either with purified Endonuclease G or mutant Endonuclease G (ΔH151A). Primer extension assay was carried out using γ-32P radiolabeled VKK11 primer and resolved on 8% denaturing polyacrylamide gel. Lane 2 is primer alone, Lanes 3 and 6 are without protein, lanes 4 and 5 are with 30 and 60 ng of Endonuclease G, lanes 7 and 8 are with 30 and 60 ng of mutant Endonuclease G incubated samples. ‘M’ is 50 bp ladder. (E) Quantification showing the efficiency of wild type and mutant Endonuclease G (ΔH151A) mediated cleavage when a plasmid containing wild type G4 motif derived from Region I was compared. (F) Western blotting showing immunodepletion of Endonuclease G from rat testicular mitochondrial extracts. Protein A/G beads were incubated with anti-Endonuclease G and then with the extracts. Actin served as a loading control. (G) Immunodepletion of another endonuclease present in mitochondria, MGME1 from rat testicular mitochondrial extracts as described in panel F. (H) Endonuclease G or MGME1-depleted extract was incubated with pDI1 and used for the primer extension using VKK11 primer. Extract without the addition of antibody served as bead control (lane 4). Lane 3 is no protein control, lanes 5 and 6 corresponds to increasing concentrations of MGME1 depleted extracts, while in lanes 7 and 8, increasing concentrations of Endonuclease G depleted extracts were added. ‘M’ is 50 nt ladder. Cleavage positions are indicated by arrow and boxed (red). (I) Bar diagram depicting quantitation showing the impact of immunoprecipitation of Endonuclease G based on multiple experiments. (J) Reconstitution assay was performed by the addition of purified Endonuclease G following its immunodepletion. Lane 2 represents the primer alone; Lane 3 represents the beads control; lane 4 represents the Endonuclease G depleted extract while lanes 5 and 6 represent the addition of purified Endonuclease G to the depleted extracts (performed in duplicate reaction). (K) Bar diagram representing the cleavage intensity after reconstitution assay as shown in panel J. In panels, C, D, H and J, ‘M’ represents 50 nt ladder. In panels E, I and K, quantitation is based on three biological repeats and data is shown with error bar calculated as mean ± SEM (ns not significant, *p<0.05, **p<0.005, ***p<0.0001). Refer also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Related to Figure 7. (A, B) Overexpression and purification of Endonuclease G protein (wild type and mutant). The purity and identity of the protein was confirmed using SDS-PAGE for wild type (A) and mutant (B). (C) The identity and purity of the protein was confirmed using the western blotting for both wild type and mutant. Fractions 5 and 6 (wild type) and 4 and 5 (ΔH151A) were used for the western blot in both the cases. (D). SDS gel profile showing the overexpression and purification of CtIP. Western blotting (bottom panel) was performed for confirmation of the protein. (E) Activity assay showing resection of the substrate (ssDNA) upon addition of increasing concentrations (30, 60 and 90 ng) of purified CtIP (lanes 2–4). (F) SDS gel profile showing the overexpression and purification of FEN1. Western blotting confirming the identity of the protein is also shown. (G) Activity assay showing the cleavage of the substrate with flap DNA upon the addition of increasing concentrations (50, 100, and 500 ng) of purified FEN1 (lanes 2–5). (H) Silver-stained gel profile showing the overexpression and purification of RAGs from mammalian cells. Western blotting confirming the presence of RAG1 and RAG2. (I) Activity assay showing the cleavage of the RSS substrate upon addition of different fractions of purified RAGs (lanes 2–8). (J) Cleavage assay for different nucleases was performed on a plasmid containing mitochondrial Region I, pDI1. Following incubation with different purified nucleases CtIP, FEN1, and RAGs, primer extension assay was carried out using γ-32P radiolabeled VKK11 primer and resolved on 8% denaturing polyacrylamide gel along with sequencing ladder. Lane 1 is primer alone, lanes 2, 5, 8 are without protein, lane 11 is with mitochondrial extract and lanes 12–15 (A, C, G, T) represents the sequencing ladder. Lanes 3,4 represents (CtIP); lanes 6,7 (FEN1); lanes 9, 10 (RAGs) incubated samples. In each case, 30 and 60 ng of protein was used. ‘M’ is 50 bp ladder.
 
 Interestingly, primer extension studies revealed that Endonuclease G cleaved mitochondrial DNA at multiple sites corresponding to a region of G-quadruplex DNA formation at Region I when it was present on pDI1 (Figure 7C, lanes 1–3, 5–8). Importantly, the primary two cleavage positions were comparable to the one observed when the mitochondrial extract was used for the study (Figure 7C, lane 2–4). However, unlike mitochondrial extract, incubation with purified Endonuclease G resulted in cleavage at multiple positions across the G4 motif. It may be that multiple molecules of purified Endonuclease G may bind to different forms of G4 DNA resulting in cleavage at different positions. In the case of mitochondrial extract, additional proteins may bind to G4 DNA, thus preventing cleavage at multiple sites. More importantly, when a protein with a mutation at the nuclease domain of Endonuclease G (ΔH151A) was used, the cleavage activity was abrogated (Figure 7D and E; Figure 7—figure supplement 1B, C). Further, when endonucleases such as CtIP, FEN1 and RAGs were used for cleavage assay, results showed that, unlike Endonuclease G, none of the purified endonucleases exhibited any significant cleavage (Figure 7—figure supplement 1J), although the presence of CtIP (Tadi et al., 2016) and FEN1 (Kalifa et al., 2009; Klungland and Lindahl, 1997; Tadi et al., 2016) has been shown previously in mitochondria. In all cases, the identity and activity of the endonucleases used were confirmed before use (Figure 7—figure supplement 1D–I).
 
 Immunodepletion of Endonuclease G from mitochondrial extracts prepared from rat testes showed a significant reduction in cleavage efficiency at the mitochondrial G-quadruplex Region I, compared to beads alone control (Figure 7F–I). However, immunodepletion of MGME1, another important nuclease known to be present in mitochondria, did not result in any significant difference in the cleavage efficacy (Figure 7G–I; Phillips et al., 2017; Yang et al., 2018). Importantly, the activity was restored when purified Endonuclease G was added back following its immunodepletion from the extract, confirming the role of Endonuclease G in the cleavage (Figure 7J and K).
 
-## Endonuclease G is expressed in mitochondria and colocalises with mitochondrial matrix protein TFAM within the cells
+### Endonuclease G is expressed in mitochondria and colocalises with mitochondrial matrix protein TFAM within the cells
 
 Considering that Endonuclease G is one of the essential mitochondrial nucleases (McDermott-Roe et al., 2011; Misic et al., 2016; Wiehe et al., 2018; Zhou et al., 2016), the presence of Endonuclease G was examined in mitochondria, using mitochondrial specific marker, ‘MitoTracker Deep Red or MitoTracker green FM’ and using immunofluorescence with Endonuclease G antibody in three cell lines of different origin (Figure 8A; Figure 8—figure supplement 1). Merge of MitoTracker with tagged Endonuclease G revealed localization of Endonuclease G in mitochondria in HeLa (human cervical cancer), HEK 293T (human embryonic kidney epithelial) and MEF (mouse embryonic fibroblast) cell lines (Figure 8A and B; Figure 8—figure supplement 1). Further, to check if Endonuclease G is present in the mitochondrial matrix, colocalisation analysis was performed along with TFAM, a transcription factor known to be present in the mitochondrial matrix by conducting immunofluorescence studies in HeLa cells (Figure 8C). Results revealed low but distinct levels of colocalisation of Endonuclease G and TFAM, indicating the presence of Endonuclease G in the mitochondrial matrix (Figure 8C and D). Western blotting further confirmed this after fractionation of the mitochondria (see below).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig8-v3.jpg)
+
+**Figure 8.:** (A) Localization of Endonuclease G in mitochondria in different cell lines. Representative images of localization of Endonuclease G to mitochondria in HeLa, MEF and HEK293T cells. FITC-conjugated secondary antibodies were used for detecting Endonuclease G proteins. MtDR is Mitotracker Red, a mitochondrial marker. DAPI is used as nuclear stain. (B) Colocalization analyses of Endonuclease G and Mitotracker signals using JaCoP in ImageJ software based on immunofluorescence studies performed in multiple cell lines (see Figure 8—figure supplement 1). Minimum of 50 cells were used for analysis of colocalization of red and green signals and plotted as the colocalization value of green overlapping red. Y-axis depicts the Mander’s colocalization coefficient value calculated for green over red and plotted in the form of dot plot. The significance was calculated using GraphPad Prism 5.0 with respect to secondary control and shown as mean ± SEM (ns not significant, *p<0.05, **p<0.005, ***p<0.0001). (C) Representative images of colocalization of Endonuclease G to mitochondrial matrix (TFAM) in HeLa cells. Conjugated secondary antibodies were used for detecting Endonuclease G (Alexa Fluor 488) and mitochondrial matrix protein, TFAM (Alexa Fluor 568). DAPI is used as nuclear stain. (D) Colocalization analyses of Endonuclease G and TFAM signals using JaCoP in ImageJ software. Minimum of 50 cells were used for analysis of colocalization of red and green signals and plotted. Y-axis depicts the Mander’s colocalization coefficient value calculated for green over red and plotted in the form of dot plot. Control represents the panel where only one of the primary antibodies was used. (E) Knockdown of Endonuclease G from HeLa cell using PEI mediated transfection. shRNA against Endonuclease G cloned plasmid was used for transfection. Cells were harvested after 48 h and mitochondrial extracts were prepared. Western blotting was performed to confirm the knockdown of Endonuclease G from the HeLa cells. Actin served as a loading control. (F) The knockdown extract was incubated with the plasmid and used for the primer extension using VKK11 primer (‘I’ and ‘II’ are two biological repeats). Extract prepared from the sample transfected with scrambled plasmid served as a control (SCR control). Lanes 3, 4, 7, and 8 serve as scrambled controls while lanes 5, 6, 9, and 10 are for knockdown extracts. I and II represent two independent batches of experiments. ‘M’ is a 50 nt ladder. (G) Bar diagram representing the cleavage intensity of the extracts prepared after transfection with scrambled plasmid and shEndo G plasmid. In panels F and G, a minimum of three biological repeats were performed and the data is shown with the error bar calculated as SEM (ns: not significant, *p<0.05, **p<0.005, ***p<0.0001). Refer also Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** Related to Figure 8.Representative image showing colocalization of Endonuclease G using MitoTracker Green FM (Mt Green) in HeLa cells. Alexa-568 conjugated secondary antibody was used for the detection of Endonuclease G. DAPI is used to stain the nucleus.
+
 Further, shRNA-mediated knockdown of Endonuclease G was performed in HeLa cells. Knockdown efficiency was assessed by western blotting using Actin as the loading control (Figure 8E). HeLa cells transfected with scrambled plasmid served as transfection control. Cleavage assay using mitochondrial extracts following knockdown of Endonuclease G revealed a significant reduction in cleavage efficiency at Region I, as that of scrambled control, suggesting its role in mitochondria in the context of cells (Figure 8F and G).
 
-## Endonuclease G binds to the G-quadruplex forming regions of mitochondria inside cells
+### Endonuclease G binds to the G-quadruplex forming regions of mitochondria inside cells
 
 To investigate if Endonuclease G binds to G-quadruplex forming regions of mitochondria, G-quadruplex specific antibody, BG4 was used for colocalisation studies along with anti-Endonuclease G (Figure 9A and B; Figure 9—figure supplement 1A). Yellow foci in the merged image suggested colocalisation of BG4 to Endonuclease G. Approximately 100 cells were analysed for colocalisation of anti-BG4 and anti-Endonuclease G using the Mander’s colocalisation coefficient, for red over green, was ~0.32, while green over red was ~0.21 indicating the binding of Endonuclease G to G-quadruplex DNA structure (Figure 9B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig9-v3.jpg)
+
+**Figure 9.:** (A) Representative image showing colocalization of Endonuclease G with BG4 in HeLa cells. Alexa Fluor 568 and Alexa Fluor 488 conjugated secondary antibodies were used for detection of Endonuclease G and BG4 proteins, respectively. DAPI was used as nuclear stain. (B) The quantitation showing colocalization of Endonuclease G and BG4. The colocalization was quantified using Mander’s colocalization coefficient (ImageJ software) by analyzing a minimum of 100 cells and presented as a dot plot. Red plot represents the overlapping of Endonuclease G over BG4 while green plot represents the overlapping of BG4 over Endonuclease G. (C) Schematic showing the pull-down assay used for evaluation of binding of Endonuclease G present in the rat testicular mitochondrial extracts to the mitochondrial genome. Bound regions were pulled out using anti-Endonuclease G and protein A/G beads. Regions of interest were detected by either semi-quantitative PCR or real-time PCR using appropriate primers. (D) Agarose gel profile showing the amplification through semi-quantitative PCR of Input DNA (upper panel) and Endonuclease G pull down DNA (lower panel). Primers specific to 5 G-quadruplex forming regions (GR1-GR5) and 10 random regions (CR1-CR10) were also used for the amplification. (E) Real-time PCR of 5 G-quadruplex forming regions (blue) and 10 random regions (green) following pull-down assay. Input DNA served as template control. Antibody control served as a negative control. Error bar represents three independent biological repeats. (F) Evaluation of binding of Endonuclease G to different regions of the mitochondrial genome within cells by mito IP. Cells were crosslinked and then mitochondria were isolated. Endonuclease G bound DNA was obtained and was amplified for different regions of mitochondria, as explained in panel E. Graph is plotted for the Ct values obtained following real-time PCR as described above. The error bar represents three independent biological repeats. Refer also Figure 9—figure supplement 1, Figure 2.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** Related to Figure 9. (A) Representative immunofluorescence images showing the colocalization of Endonuclease G and BG4. The ‘Merged’ image shown in left is a colocalization of DAPI, Endonuclease G and BG4 foci, while ‘Merged’ in right shows colocalization of Endonuclease and BG4 foci. (B) Schematic showing the binding of purified Endonuclease G to the mitochondrial genome and the pull-down of a bound region using Endonuclease G antibody and protein A/G beads. These regions were then used for semi-quantitative and real-time PCR using appropriate primers. (C) Schematic showing the position of primers used for mito-IP studies. The upper panel shows the primer positions for G-quadruplex forming regions and lower panels for control regions. (D) 5 G-quadruplex forming regions and 10 random regions were used for amplification using mito-IP DNA as template (lower panel). Upper panel shows the amplification for input DNA. (E) Bar graph was plotted for the threshold cycle against different primers following real-time PCR. Input DNA served as template control. ‘Antibody’ control in which no antibody was added served as negative control. Blue bars represent G-quadruplex regions, while green bars represent the control regions. Error bar represents three independent biological repeats.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig9-figsupp2-v3.jpg)
+
+**Figure 9—figure supplement 2.:** Related to Figure 9. (A) SDS profile and western blotting of the pulldown sample when mitochondrial DNA was incubated with mitochondrial extracts. As described in the methodology, mitochondrial extract was allowed to bind to mitochondrial DNA and Endonuclease G bound DNA was pulled down using Endonuclease G antibody. After the pull down, the extract was loaded into a SDS PAGE with Endonuclease G (lane 3) or IgG antibody (lane 2). For reference, mitochondrial extract was also loaded (lane 4). M is the protein marker. For other details refer main Figure 9. (B) P1 nuclease foot-printing to investigate the binding of Endonuclease G to G-quadruplex forming Region I. Radiolabelled oligomers were incubated with Endonuclease G protein and subjected to P1 nuclease and electrophoresed on 18% denaturing PAGE. In each case, lanes 1, 5, 9, 13, 17, 21 are substrate alone, lanes 2, 6, 10, 14, 18, 22 are Endonuclease G alone. Lanes 3, 7, 11, 15, 19, 23 are P1 nuclease alone treated samples and lanes 4, 8, 12, 16, 20, 24 are Endonuclease G plus P1 nuclease treated samples. C1 is C-strand, G1 is G strand, M1, M2 and M3 are mutants while random sequence (RN) is the oligomer with equal G-C content as G1 in a random manner. 50 ng of purified Endonuclease G and 0.03 U of P1 nuclease was used for the assay.
 
 An antibody binding assay was performed to examine the binding of Endonuclease G to mitochondrial G quadruplex regions. Purified Endonuclease G was allowed to bind to mitochondrial DNA isolated from Nalm6 cells (Figure 9—figure supplement 1B) and cross-linked. Sonicated mitochondrial DNA was incubated with anti-Endonuclease G and Protein A/G beads. The resulting bound DNA was reverse crosslinked, purified and used for both real-time and semiquantitative PCR (Figure 9—figure supplement 1C, D). The threshold values presented as a bar diagram suggested that Endonuclease G can bind to all G quadruplex regions (GR1- GR5), including the one present at mitochondrial Region I, while the control regions (CR1-CR10) (not known to form canonical G quadruplex) did not bind to Endonuclease G (Figure 9—figure supplement 1C–E). These results reveal the specific binding of Endonuclease G to mitochondrial G quadruplex regions.
 
@@ -99,7 +179,7 @@ Although Endonuclease G was thought to be localised within the mitochondrial int
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/69916/elife-69916-fig10-v3.jpg)
 
-**Figure 10.:** (A) Western blot showing the presence of Endonuclease G, Cytochrome C and TFAM in either total or supernatant (Sup) and pellet fraction with or without menadione treatment (25 µM) following sub-fractionation of mitochondrial compartments. Lanes 1–3 are for control samples and Lanes 4–6 are menadione treated samples. (B) Bar graph showing the quantitation of presence of Endonuclease G, Cytochrome C and TFAM in either total mitochondria or supernatant (Sup) and pellet fraction with or without menadione treatment (25 µM). Quantitation is based on three biological repeats and the data is shown with the error bar calculated as SEM. The values in Y-axis are expressed in PSLU (photo-stimulated luminescence units) representing the expression.Figure 10—source data 1.
+**Figure 10.:** (A) Western blot showing the presence of Endonuclease G, Cytochrome C and TFAM in either total or supernatant (Sup) and pellet fraction with or without menadione treatment (25 µM) following sub-fractionation of mitochondrial compartments. Lanes 1–3 are for control samples and Lanes 4–6 are menadione treated samples. (B) Bar graph showing the quantitation of presence of Endonuclease G, Cytochrome C and TFAM in either total mitochondria or supernatant (Sup) and pellet fraction with or without menadione treatment (25 µM). Quantitation is based on three biological repeats and the data is shown with the error bar calculated as SEM. The values in Y-axis are expressed in PSLU (photo-stimulated luminescence units) representing the expression.
 
 Based on the present and previous studies (García-Lepe and Bermúdez-Cruz, 2019; Tadi et al., 2016; Wisnovsky et al., 2018), we propose that under stress conditions, Endonuclease G may be released to the matrix from the inner membrane space where it binds to mitochondrial DNA. This could help the induce DNA breaks by Endonuclease G at Region I of the mitochondrial genome. DNA modifying enzymes such as CtIP, MRN, and Exonuclease G may help in generating 3’ overhangs, following which ligation of broken ends by an unknown mechanism leads to the ‘9 bp deletion’ at the Region I of the mitochondrial genome (Figure 11).
 
@@ -133,134 +213,380 @@ Hence, our study suggests a novel mechanism that explains fragility in mitochond
 
 ## Materials and methods
 
-## Enzymes, chemicals, and reagents
+### Enzymes, chemicals, and reagents
 
 Chemicals and reagents used in the present study were purchased from Millipore-Sigma (USA), SRL (India), Himedia (India), and Amresco (USA). Restriction enzymes and other DNA-modifying enzymes were obtained from New England Biolabs (USA). Culture media was from Sera Laboratory International Limited (UK), Lonza (UK). Fetal bovine serum and PenStrep were from Gibco BRL (USA). Radioisotope-labelled nucleotides were from BRIT (India). Antibodies were purchased from Abcam (UK), Santa Cruz Biotechnology (USA), BD (USA), Cell Signaling Technology (USA) and Calbiochem (USA). Oligomeric DNA was purchased from Juniper Life Sciences (India) and Medauxin (India).
 
-## Oligomeric DNA
+### Oligomeric DNA
 
 The oligomers used in this study are listed in Table 1. Oligomeric DNA was purified on 12–15% denaturing PAGE when needed (Nambiar and Raghavan, 2012; Raghavan et al., 2005b; Tadi et al., 2016). The details of oligomers used for different experiments are provided in appropriate sections. A more simplified nomenclature is used for certain oligomers while explaining the results of respective experiments.
 
-## Cell lines
+**Table 1.**
+ Oligomers used in the study.Refer also Figure 1, Figure 2, Figure 3, Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligomer Name</th>
+      <th>Sequence</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VKK11</td>
+      <td>5’- GCTGTGTCGACTACTACGGTCAATGCTCTG –3’</td>
+      <td>GR1</td>
+    </tr>
+    <tr>
+      <td>VKK12</td>
+      <td>5’- CTGAGGTCGACTGGGTGATGAGGAATAGTG - 3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK46</td>
+      <td>5’- TAATCAACACCCTCCTAGCC –3’</td>
+      <td>GR2</td>
+    </tr>
+    <tr>
+      <td>VKK14</td>
+      <td>5’- GATAGTGTCGACGGCTCATGGTAGGGGTAA –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD10</td>
+      <td>5'- TTCGCTGACGCCATAAAACT –3'</td>
+      <td>GR3</td>
+    </tr>
+    <tr>
+      <td>SD11</td>
+      <td>5'- ATCAGGGCGTAGTTTGA –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD12</td>
+      <td>5'- GCTCACAAGAACTGCTAA –3'</td>
+      <td>GR4</td>
+    </tr>
+    <tr>
+      <td>SD13</td>
+      <td>5'- TGGATGCGACAATGGAT –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD14</td>
+      <td>5'- TCTTGCACGAAACGGGAT –3'</td>
+      <td>GR5</td>
+    </tr>
+    <tr>
+      <td>SD15</td>
+      <td>5'- TAGGATGAGGATGGATAGT –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK15</td>
+      <td>5’- CTACTCCTGCTCGCATCTGC –3’</td>
+      <td>CR2</td>
+    </tr>
+    <tr>
+      <td>RBK16</td>
+      <td>5’- GAAGGTGGTGTTGAGGTTGC –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK17</td>
+      <td>5’- GCATTGTTCGTTACATGGTCC –3’</td>
+      <td>CR3</td>
+    </tr>
+    <tr>
+      <td>RBK18</td>
+      <td>5’- GTGGAAGCGGATGAGTAAGAAG –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK19</td>
+      <td>5’- CTCACCACTACAATCTTCCTAG –3’</td>
+      <td>CR4</td>
+    </tr>
+    <tr>
+      <td>RBK20</td>
+      <td>5’- CAAAGATGGTAGAGTAGATGACG –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK21</td>
+      <td>5’- CTAACCATCTTCTCCTTACACCTAG –3’</td>
+      <td>CR5</td>
+    </tr>
+    <tr>
+      <td>RBK22</td>
+      <td>5’- GTTTGCTAATACAATGCCAGTCAGG –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK23</td>
+      <td>5’- CGAAGGTGGATTTAGCAGTAAACTG –3’</td>
+      <td>CR6</td>
+    </tr>
+    <tr>
+      <td>RBK24</td>
+      <td>5’- CGGTACTATATCTATTGCGCCAGG –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBK41</td>
+      <td>5’- GTATCATCAACTGATGAGCAAG –3’</td>
+      <td>CR1</td>
+    </tr>
+    <tr>
+      <td>SD2</td>
+      <td>5’- TCAGCAAACCCTGATGAA –3’</td>
+      <td>CR7</td>
+    </tr>
+    <tr>
+      <td>SD3</td>
+      <td>5'- CACTCTACTCTCAGTTTACT –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD4</td>
+      <td>5'- ACATCGAATACGCCGCA –3'</td>
+      <td>CR8</td>
+    </tr>
+    <tr>
+      <td>SD5</td>
+      <td>5'- AGTTGGTCGTAGCGGAATCG –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD6</td>
+      <td>5'- TAGGGTTTATCGTGTGAG –3'</td>
+      <td>CR9</td>
+    </tr>
+    <tr>
+      <td>SD7</td>
+      <td>5'- AGTGTGGCGAGTCAGCT –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD8</td>
+      <td>5'- TACTCACTCTCACTGCCCAA –3'</td>
+      <td>CR10</td>
+    </tr>
+    <tr>
+      <td>SD9</td>
+      <td>5'- TGTTTGTCGTAGGCAGAT-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VKK21</td>
+      <td>5'- GGATCCATGCGGGCGCTGCGG –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VKK22</td>
+      <td>5'- GCGGCCGCTCACTTACTGCCCG –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DI12</td>
+      <td>5'- GCAAACCACAGTTTCATGCCCATC –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DI13</td>
+      <td>5'- GCCTATAATCACTGCGCCCGCTC –3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VKK1</td>
+      <td>5’- CCCGTATTTACCCTATAGCACCCCCTCTACCCCC –3’</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>VKK2</td>
+      <td>5’- GGGGGTAGAGGGGGTGCTATAGGGTAAATACGGG –3’</td>
+      <td>G1</td>
+    </tr>
+    <tr>
+      <td>VKK5</td>
+      <td>5’- GTCAGTAGAGGGGGTGCTATAGGGTAAATACGGG –3’</td>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>VKK6</td>
+      <td>5’- GTCAGTAGAGAATGTGCTATAGGGTAAATACGGG –3’</td>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>VKK7</td>
+      <td>5’- GTCAGTAGAGGGGGTGCTATATCATAAATACGGG –3’</td>
+      <td>M3</td>
+    </tr>
+    <tr>
+      <td>SD 54</td>
+      <td>5'- GGCCAGGGCCCCGCGGTCGAAGCCACTGCC-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SD 57</td>
+      <td>5'- TCACCTGGCCGCCGCCGCCAACCAC-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DK27</td>
+      <td>5’-TGGGCTCTAGAGGACATAGAGTAAGTGCT-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DK28</td>
+      <td>5’-AGCACTTACTCTATGTCCTCTAGAGCCCA-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KD14</td>
+      <td>5’-CAAGCTCGAAATTAACCCTCAC-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KD13</td>
+      <td>5’-CCCAGTCACGACGTTGTAAAAC-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DI8</td>
+      <td>5’-CTTACAGTGGGCTCTAGAGGGGGTAGATAATATGCTATAGGGTAAATACTCACTAAAAATCTTTGAA-ATAGGG –3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DI9</td>
+      <td>5’-CTAAAAATCTTTGAAATAGGGTGAGTATTTACCCTATAGCATATTATCTACCCCCTCTAGAGCCCA-CTGTAAG –3’</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HeLa (human cervical cancer), HCT116 (human colon cancer), MEF (mouse embryonic fibroblast) and HEK 293T (human embryonic kidney epithelial cell line) were purchased from National Centre for Cell Science, Pune, India. Nalm6 and Reh cells were from Dr M. R. Lieber (USA), and Rho(0) cells were from J. Neuzil (Australia). The identity of all these cell lines was confirmed by performing STR profiling (DNA labs India, Hyderabad, India). All the cell lines were found to be free of mycoplasma contamination. The Mycoplasma test was conducted in the laboratory using the MYCOseq kit (Thermo Fisher Scientific, Waltham, Massachusetts) and further validated by DNA labs India, Hyderabad, India. Cells were cultured in RPMI1640 or MEM medium supplemented with 10–15% fetal bovine serum (FBS), 100 μg/ml Penicillin, and 100 μg/ml streptomycin and incubated at 37 °C in a humidified atmosphere containing 5% CO2 as described before (Ghosh et al., 2022; Kumari et al., 2021). Rho(0) cells of B16 cells origin were cultured in DMEM medium supplemented with 15% fetal bovine serum (FBS), 100 μg/ml Penicillin, 100 μg/ml streptomycin, 50 mg/ml Uridine and 1 mM Sodium pyruvate and incubated as described above (Dong et al., 2017; Tan et al., 2015).
 
-## Animals
+### Animals
 
 Male Wistar rats (Rattus norvegicus) 4–6 weeks old were purchased from the Central animal facility, Indian Institute of Science (IISc), Bangalore, India, and maintained as per the guidelines of the animal ethical committee in accordance with Indian National Law on animal care and use (CAF/Ethics/526/2016).
 
-## shRNA
+### shRNA
 
 shRNA used in the study (TRCN0000039643) was purchased from the Resource Center at Division of Biological Science, IISc, Bangalore (funded by DBT: BT/PR4982/AGR/36/718/2012) Indian Institute of Science, Bangalore (India).
 
-## Plasmid constructs
+### Plasmid constructs
 
-## Plasmid construction for mitochondrial G-quadruplex assays
+#### Plasmid construction for mitochondrial G-quadruplex assays
 
 Mitochondrial DNA isolated from Nalm6 cells was amplified using primers specific for Region I (VKK11 and VKK12). The PCR products were purified, blunted and ligated into the EcoRV site of pBlueScript SK(+) to obtain the wild-type plasmid for mitochondrial Region I (pDI1). Mutant plasmids for mitochondrial Region I were generated by PCR-mediated site-directed mutagenesis using pDI1 as a template described before (Raghavan et al., 2005c) using the primers VKK11, DI8, VKK12 and DI9 followed by cloning into pBlueScript SK(+). The resulting plasmid, pDI2, had a mutation in two G stretches of Region I. A second mutant plasmid, pDR4 with mutations in three G stretches, was generated by site-directed mutagenesis using pDI2 as a template using the primers DK27, KD13, KD14, and DK28 followed by cloning into pBlueScript SK(+).
 
-## Construction of Endonuclease G containing vector for purification of the protein
+### Construction of Endonuclease G containing vector for purification of the protein
 
 The endonuclease G coding sequence was amplified using primers VKK21 and VKK22, which were designed with BamHI and NotI restriction sites, respectively, at flanking regions. PCR product was gel purified and cloned into the EcoRV site of pBS SK +cloning vector. For the generation of pRBK2, the coding DNA sequence was digested from the cloning vector using BamHI and NotI enzymes and cloned into the same site (BamHI and NotI) of pET28a+. Mutant plasmid for Endonuclease G was generated by PCR mediated site-directed mutagenesis as described before (Raghavan et al., 2005c) using the primers VKK21, SD54, VKK22 and SD57 followed by cloning into BamHI and NotI site of pRBK2. The resulting plasmid, pDR1, had a mutation in the nuclease domain of Endonuclease G (Histidine to Alanine at position 141).
 
-## Plasmid isolation and purification
+### Plasmid isolation and purification
 
 For each plasmid, after transformation, Escherichia coli was cultured in 500 ml of Luria broth (HiMedia, USA) for 18 h at 37 °C. Isolation of plasmid DNA was performed by the standard alkaline lysis method. It was then purified and precipitated, as described previously (Sambrook et al., 1989). The pellet was dissolved in TE (pH 8.0).
 
-## Isolation of mitochondrial DNA
+### Isolation of mitochondrial DNA
 
 Mitochondria were isolated from Nalm6 cells as described before (Dahal et al., 2018; Tadi et al., 2016). Cells were first homogenized in the buffer [70 mM sucrose, 200 mM mannitol, 1 mM EDTA, and 10 mM HEPES (pH 7.4), 0.5% BSA per g tissue] in a Dounce-type homogenizer (20–30 strokes). Homogenate was centrifuged (3000 rpm, 10 min at 4 °C) to remove nuclei and cellular debris from the supernatant that contains the cytosol and mitochondria. The supernatant fraction was centrifuged at 12,000 rpm (30 min at 4 °C) to pellet the mitochondria. The mitochondrial pellet was washed in suspension buffer [10 mM of Tris–HCl (pH 6.7), 0.15 mM of MgCl2, 0.25 mM of sucrose, 1 mM PMSF and 1 mM DTT] twice, and the mitochondrial pellet was incubated in the buffer containing 75 mM NaCl, 50 mM EDTA (pH 8.0), 1% SDS and 0.5 mg/ml Proteinase K to remove denatured proteins. The resulting lysate was deproteinised by phenol-chloroform extraction. The mitochondrial DNA was precipitated with 3 M Sodium acetate (pH 5.2) and chilled with 100% ethanol. The purity of the mitochondrial DNA preparation was evaluated by PCR amplification with nuclear and mitochondrial DNA-specific primers.
 
-## Preparation of mitochondrial extracts
+### Preparation of mitochondrial extracts
 
 Mitochondrial protein extracts were prepared following the isolation of mitochondria based on differential centrifugation as described (Dahal et al., 2018; Tadi et al., 2016). Testes and spleen from 4- to 6-week-old male Wistar rats were minced on ice and lysed in mitochondrial lysis buffer [50 mM of Tris–HCl (pH 7.5), 100 mM of NaCl, 10 mM of MgCl2, 0.2% Triton X-100, 2 mM of EGTA, 2 mM of EDTA, 1 mM of DTT and 10% glycerol] by mixing (30 min at 4 °C) along with protease inhibitors PMSF (1 mM), aprotinin (1 μg/ml), pepstatin (1 μg/ml) and leupeptin (1 μg/ml). The mitochondrial extract was centrifuged at 12,000 rpm (5 min), and the supernatant (mitochondrial fraction) was aliquoted, snap-frozen and stored at −80 °C till use.
 
 Mitochondrial protein extracts were also prepared from rat tissues as per the manufacturer’s instructions using a mitochondrial extraction kit (Imgenex, USA). The purity of the mitochondrial extracts prepared was checked by immunoblotting using the nuclear and mitochondrial specific markers.
 
-## Fractionation of mitochondria
+### Fractionation of mitochondria
 
 A total of 4×107 HeLa cells were treated with 25 µM Menadione and incubated for 2 hr at 37 °C. The mitochondrial pellet was first sonicated after incubation in hypotonic buffer 10 mM HEPES-KOH pH7.6, 100 mM NaCl, 10 mM Magnesium acetate and 1 mM phenylmethyl sulfonyl fluoride (PMSF) for 15 min. The same buffer containing 500 mM NaCl was added and incubated for another 15 min and then sonicated for 10 min at 37% duty per cycle. The samples were then separated into membrane and soluble fractions by ultracentrifugation at 100,000 g (TLA 110 rotor) for 30 min at 4 °C in OptimaTM TLX table-top ultracentrifuge (Beckman-Coulter) (Sinha et al., 2010; Suzuki et al., 2002). The supernatant fraction was transferred to a new tube. To the pellet, 1 X PBS was added, and both fractions were used for western blotting analysis as described before (Chiruvella et al., 2012).
 
-## 5’ end labelling of oligomeric substrates
+### 5’ end labelling of oligomeric substrates
 
 The 5’ end labelling of oligomeric substrates was done using γ[32P]-ATP in the presence of 1 U of T4 Polynucleotide kinase in a buffer containing 20 mM Tris-acetate [pH 7.9], 10 mM magnesium acetate, 50 mM potassium acetate and 1 mM DTT at 37 °C for 1 h. The radiolabelled oligomers were purified on a Sephadex G25 column and stored at –20 °C until further use (Kumar et al., 2010; Sharma et al., 2011; Tadi et al., 2016).
 
-## Gel mobility shift assays
+### Gel mobility shift assays
 
 Gel mobility shift assays were performed using 5’ radiolabelled oligomeric DNA substrates (4 nM) predicted to form G-quadruplex structures, its complementary oligos and the mutants by incubating in a buffer containing 10 mM Tris-HCl (pH 8.0), 1 mM EDTA, with or without 100 mM KCl at 37 °C and resolved on 15% native polyacrylamide gels (Dahal et al., 2022; Nambiar et al., 2011; Nambiar et al., 2013). In conditions where the effect of KCl was studied, 100 mM KCl was added while preparing gels and the running buffer (1 X TBE). Electrophoresis was carried out at 150 V at RT. The dried gels were exposed, and signals were detected by phosphorImager FLA9000 (Fuji, Japan).
 
 For BG4 binding assay, 5’ radiolabelled oligomeric DNA substrates (4 nM) predicted to form G-quadruplex structures and its complementary oligomer was incubated in a buffer containing 10 mM Tris-HCl (pH 8.0), 1 mM EDTA, with 100 mM KCl at 37 °C for 1 h (Das et al., 2016; Javadekar et al., 2020). It was then incubated along with increasing concentrations of purified BG4 protein (100, 200, 400, and 800 ng) in a buffer containing 250 mM Tris (pH 8.0), 1 mM EDTA, 0.5% Triton X-100, 500 μg/ml BSA and 20 mM DTT for 1 hr at 4 °C. The complex was then resolved on 5% native polyacrylamide gels in the presence of 100 mM KCl in gel and the running buffer (1 X TBE). Electrophoresis was carried out at 100 V at 4 °C. The dried gel was exposed to a PI cassette, and the radioactive signals were detected by phosphorImager FLA9000 (Fuji, Japan).
 
-## Circular dichroism (CD)
+### Circular dichroism (CD)
 
 Circular dichroism studies for analysis of mitochondrial G-quadruplex formation were performed with oligonucleotide substrates (2 µM) corresponding to G-rich sequences and complementary C-rich sequences in a buffer containing 10 mM Tris-HCl (pH 8.0) and 1 mM EDTA. The experiments were set up either in the presence or absence of 100 mM KCl. The spectra were recorded between wavelengths 200 and 300 nm (5 cycles, scan speed of 50 nm/s, RT) using JASCO J-810 spectropolarimeter (Nambiar and Raghavan, 2012; Raghavan et al., 2005a) and analysed using SpectraManager (JASCO J-810 spectropolarimeter).
 
-## DMS protection assay
+### DMS protection assay
 
 The radiolabelled oligomer VKK19 was incubated with Dimethyl Sulphate (1:250 dilution) in buffer containing 10 mM Tris-HCl (pH 8.0) and 1 mM EDTA either in the presence or absence of 100 mM KCl, at RT for 15 min (Kumari et al., 2019; Nambiar et al., 2013). An equal volume of 10% piperidine was added, and the reactions were incubated at 90 °C for 30 min. The reaction mixtures were diluted 2-fold with double distilled water and vacuum dried in a Speed Vac concentrator. The resulting pellet was again washed with water and vacuum dried. This procedure was repeated thrice. The pellet was finally resuspended in 10 μl TE buffer (10 mM Tris-HCl, (pH 8.0) and 1 mM EDTA), mixed with formamide containing dye, and resolved on a 15% denaturing PAGE.
 
-## Polymerase stop assays
+### Polymerase stop assays
 
 Plasmid substrates pDI1, pDI2 (mitochondrial Region I), Vent Exo(-) polymerase was used for primer extension assays (Kumari et al., 2015; Nambiar et al., 2013) in a buffer containing 20 mM Tris-HCl (pH 8.8), 10 mM (NH4)2SO4,10 mM KCl, 2 mM MgSO4, 0.1% Triton X-100 with additional supplementation with 75 mM KCl, LiCl or NaCl where required. After the addition of 200 μM dNTPs, 0.2 U of Vent Exo(-) and 5’ radiolabelled primers (VKK11, VKK12, DI12), the reaction was carried out in a one-step PCR-mediated primer extension assay for mitochondrial Region I (95 °C for 10 min, 55–65°C for 3 min as specified below for each primer and 75 °C for 20 min, as a single cycle) or multi-cycle PCR extension (Denaturation at 95 °C for 5 min, followed by 95 °C for 45 s, 55 °C for 45 s and 72 °C for 45 s for 15 cycles and a final extension at 72 °C for 5 min). The reaction products were loaded on 8% denaturing PAGE, and the products were visualised as described above.
 
-## Endonuclease cleavage assay
+### Endonuclease cleavage assay
 
 Wild-type plasmid (pDI1) or mutant plasmid (pDI2) or mitochondrial DNA was incubated with mitochondrial extract or purified Endonucleases (CtIP, FEN1, RAG, Endonuclease G [wildtype or mutant]) in a buffer containing 25 mM MOPS (pH 7.0), 30 mM KCl, 30 mM potassium glutamate and 5 mM MgCl2 at 37 °C for 1 hr. In the control reaction, only DNA and buffer were added. Following termination of the reaction, purified samples were loaded on 0.8% agarose gel or subjected to primer extension assay using a radiolabeled primer (VKK11 or VKK12) and resolved on 8% denaturing PAGE.
 
-## Preparation of sequencing ladders
+### Preparation of sequencing ladders
 
 Sequencing ladders for the primers VKK11 and VKK12 were prepared using the cycle sequencing method with a dNTP:ddNTP ratio of 1:20, 1:40, 1:30 and 1:10 for C, T, A and G ladders, respectively. The dNTP:ddNTP mix were separately provided in reaction mixtures containing 10 nM plasmid template, 0.5 μM 5’ radiolabelled primers, 20 mM Tris-HCl (pH 8.8), 10 mM (NH4)2SO4, 10 mM KCl, 2 mM MgSO4, 0.1% Triton X-100 and 1 U of Vent Exo (-) polymerase. The PCR was carried out using the following conditions: Step 1 at 95 °C for 30 s, 60 °C for 30 s and 72 °C for 1 min (25 cycles), followed by Step 2 at 95 °C for 30 s and 72 °C for 2 min (10 cycles).
 
-## Sodium bisulphite modification assay
+### Sodium bisulphite modification assay
 
 pDI1, plasmid containing mitochondrial Region I or mitochondrial DNA isolated from Nalm6 cells, were treated with sodium bisulfite as described earlier (Raghavan et al., 2004; Raghavan et al., 2006). Briefly, approximately 2 μg of mitochondrial DNA was treated with 12.5 μl of 20 mM hydroquinone and 458 μl of 2.5 M sodium bisulfite (pH 5.2) at 37 °C for 16 hr. The bisulphite-treated DNA was purified using Wizard DNA Clean-Up Kit (Promega, Madison, WI) and desulfonated by treating with 0.3 M NaOH (15 min at 37 °C). The DNA was ethanol-precipitated and resuspended in a 20 μl TE buffer. The mitochondrial Region I was PCR amplified, resolved on 1% agarose gels, purified, and TA cloned. Clones were sequenced to analyse for conversions. The experiment was repeated three independent times, and the cumulative data is presented.
 
-## Overexpression and purification of endonucleases
+### Overexpression and purification of endonucleases
 
-## Endonuclease G and its mutant
+#### Endonuclease G and its mutant
 
 For protein expression, E. coli Rosetta cells were transformed with pRBK2 or pDR1, grown until OD reaches 1.0 and then induced with 1 mM IPTG at 16 °C for 16 hr. Cells were harvested, and the extract was prepared using extraction buffer (20 mM Tris-HCl (pH 8.0), 0.5 M KCl, 20 mM imidazole (pH 7.0), 20 mM Mercaptoethanol, 10% glycerol, 0.2% Tween 20, 1 mM PMSF) by sonication followed by loading on to Ni-IDA column (Macherey-Nagel, Germany). Endonuclease G or the mutant was eluted in gradient imidazole concentration (100–500 mM) and pure fractions were pooled, and the identity of the protein was confirmed by immunoblotting and used for the assays.
 
-## RAGs
+### RAGs
 
 MBP cRAGs (RAG1, amino acids 384–1040; RAG2, amino acids 1–383) were purified using a method as described previously (Naik et al., 2010; Raghavan et al., 2005b). Briefly, 293T cells were transfected with 10 μg of plasmid by the calcium phosphate method. After 48 hr of transfection, cells were harvested, and proteins were purified using an amylose resin column (New England Biolabs). Fractions were eluted and checked by silver staining. The activity was and studied by nicking assay on standard recombination signal sequence substrate (AKN1/2; Nishana and Raghavan, 2012).
 
-## FEN1
+### FEN1
 
 FEN1 was purified using the expression plasmid pET-FEN1 CH described previously (Greene et al., 1999). Briefly, culture was grown until OD reached ~0.5, induced with 0.5 mM IPTG at 37 °C for 3 hr. Cells were harvested, lysed, and the lysate was loaded onto the Ni-NTA column. FEN1 was eluted in increasing imidazole concentrations (100–500 mM), and pure fractions were pooled, and the identity of the protein was confirmed by immunoblotting and used for the assays.
 
-## CtIP
+### CtIP
 
 CtIP was purified using the expression plasmid pET14b-CtIP as described previously (Yu and Baer, 2000). Briefly, culture was grown till OD reached 0.6, induced with 0.5 mM IPTG at 37 °C for 4 hr. Cells were harvested, lysed, and the lysate was loaded on to Ni-NTA column. FEN1 was eluted in increasing imidazole concentrations (100–800 mM), pure fractions were pooled, and the protein’s identity, was confirmed by immunoblotting and used for the assays.
 
-## Overexpression and purification of BG4
+### Overexpression and purification of BG4
 
 The plasmid expressing BG4 protein, pSANG10-3F-BG4, was a gift from Shankar Balasubramanian (Addgene plasmid # 55756). The plasmid was transformed into E. coli, BL21 (DE3), and the culture was expanded by incubating at 30 °C till the O.D. reached up to 0.6 (Biffi et al., 2013; Das et al., 2016; Javadekar et al., 2020). The cells were then induced with 1 mM IPTG for 16 hr at 16 °C, harvested, and resuspended in lysis buffer (20 mM Tris-HCl [pH 8.0], 50 mM NaCl, 5% glycerol, 1% Triton X-100 and 1 mM PMSF). The cells were lysed by sonication, centrifuged, and the supernatant was then loaded onto a Ni-NTA chromatography column (Novagen, USA). BG4 was eluted using increasing concentrations of Imidazole (100–400 mM). BG4 enriched fractions were dialysed against dialysis buffer (PBS containing 0.05% Triton X-100, 1 mM Mercaptoethanol, 5% glycerol and 0.1 mM PMSF) overnight at 4 °C. The identity of the protein was confirmed by immunoblotting using an anti-FLAG antibody (Calbiochem, USA) (Kumari et al., 2019). Activity assay for each batch of BG4 was checked by performing a binding assay as described previously (Javadekar et al., 2020).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 For immunoblotting analysis, approximately 20–30 μg protein was resolved on 8–10% SDS-PAGE (Chiruvella et al., 2008; Kumar et al., 2010; Thomas et al., 2016). Following electrophoresis, proteins were transferred to the PVDF membrane (Millipore, USA), blocked using 5% non-fat milk or BSA in PBS with 0.1% Tween-20. Proteins were detected with appropriate primary antibodies against Cytochrome-C (ab90529), PCNA (SC56), Tubulin (SC5286), CtIP (SC22838), FEN1 (SC13051), RAG1 (SC5599), Endonuclease G (#4969), TFAM (ab176558) and appropriate secondary antibodies as per standard protocol. The blots were developed using a chemiluminescent substrate (Immobilon western, Millipore, USA) and scanned by a gel documentation system (LAS 3000, FUJI, Japan).
 
-## Immunoprecipitation (IP)
+### Immunoprecipitation (IP)
 
 IP experiments were performed with modifications (Chiruvella et al., 2012; Sharma et al., 2015; Totaro et al., 2011; Yeretssian et al., 2011). Protein A agarose beads (Sigma) were activated by immersing in water and incubated in IP buffer (300 mM NaCl, 20 mM Tris-HCl (pH 8.0), 0.1% NP40, 2 mM EDTA, 2 mM EGTA, and 10% glycerol) for 30 min on ice following which the beads were conjugated with the appropriate antibody at 4 °C for overnight to generate antibody-bead conjugate. The antibody-bead conjugates were then separated by centrifugation and incubated with rat tissue mitochondrial extracts at 4 °C overnight. Then the conjugate bound to the target proteins was separated and washed. Immunoblot analysis confirmed the protein depletion in the resulting supernatant and quantified using Multi Gauge (V3.0). This immunodepleted extract was used for cleavage assay.
 
-## Knockdown of Endonuclease G within cells
+### Knockdown of Endonuclease G within cells
 
 HeLa cells (10X105) were seeded in a culture petridish. 10 μg of Endonuclease G shRNA plasmid was transfected using linear/branched PEI (Polyethylenimine) polymer (Sigma, 1 mg/ml) (Kumari et al., 2021; Longo et al., 2013; Raymond et al., 2011; Srivastava et al., 2012). Post transfection (48 hr), cells were harvested, and mitochondrial extracts were prepared by differential centrifugation as described above. The knockdown was confirmed using western blotting. Cleavage assay on pDI1 following primer extension was performed using the knockdown extracts. The scrambled plasmid was also used for transfection, which acted as a control for the experiment.
 
-## Binding of Endonuclease G to mitochondrial DNA
+### Binding of Endonuclease G to mitochondrial DNA
 
 5 µg of mitochondrial DNA was incubated with either 5 µg purified Endonuclease G or 50 µg of mitochondrial extract in a 100 µl reaction in PBS. DNA-protein interaction was crosslinked by using 0.1% formaldehyde at 37 °C for 10 min, following quenching the reaction with glycine (125 mM) for 5 min. The complex was sonicated (VC 750, Ultrasonic processor) for 10 min with the pulse of 10 sec on/ 10 sec off and incubated at –80 °C for 8 h. 75 ng of Endonuclease G antibody (CST: 4969) was added and incubated at 4 °C (end to end rotation). A total of 15 µl protein A/G beads (Santa cruz, sc-2003) were added to the chromatin-antibody complex and incubated for 2 h. The supernatant was removed entirely, and beads were washed and eluted with high salt immune complex wash buffer (50 mM HEPES (pH 7.9), 500 mM NaCl, 1 mM EDTA, 0.1% SDS, 1% Triton X-100, 0.1% deoxycholate) and incubated at 55 °C for 2 h. DNA protein interactions were reverse crosslinked by incubating the samples overnight at 65 °C. DNA was purified with phenol: chloroform extraction followed by ethanol precipitation (Carey et al., 2009). Endonuclease G pulled-down mitochondrial DNA and was subjected to semiquantitative and real-time PCR of different mitochondrial regions (five G-quadruplex forming regions and ten random control regions). Three independent reactions were performed, and the bar diagram represented threshold values.
 
-## Mitochondrial IP (mito IP)
+### Mitochondrial IP (mito IP)
 
 4X107 Nalm6 cells were crosslinked with 1% formaldehyde at 37 oC for 15 min and quenched with 100 µl/ml of 1.375 M glycine. Mitochondria were then isolated from the cells as described above and lysed using buffer (5 mM PIPES, 85 mM KCl, 0.5% NP40). Lysed samples were then sonicated (Diagenode Bioruptor, Belgium) with 30 s on/ 45 s off pulse for 30 cycles. Sonicated samples were stored at −80 °C for at least 8 hr (Carey et al., 2009). For immunoprecipitation, the samples were centrifuged at high speed for 15 min, and the supernatant was divided for input, secondary control and experimental. Relevant antibodies (Endonuclease G or BG4) were added to the sample and allowed to bind for 8–10 hr. Protein A/G-agarose beads (Sigma, USA) were added to the models and incubated for 2 hr. Samples were washed and eluted using high salt wash buffer (50 mM HEPES (pH 7.9), 500 mM NaCl, 1 mM EDTA, 0.1% SDS, 1% Triton X-100, 0.1% deoxycholate) in repeated cycles of centrifugation and then reverse cross-linked by incubating overnight at 65 °C. Finally, DNA was purified following phenol: chloroform extraction and precipitation. The purified DNA was used for real time PCR amplification of different mitochondrial regions that either support formation of G-quadruplex structure or do not support any secondary structure formation.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence studies were performed as described before (Dahal et al., 2018; Kumari et al., 2019; Ray et al., 2020; Tadi et al., 2016). Approximately 50,000 cells (HeLa, HEK293T, Rho(0), or MEF) were grown in the media for 24 hr, as described before. Cells were grown in chamber slides in MEM medium supplemented with 10% FBS and 1% penicillin-streptomycin (Sigma) for 24 hr. The cells were stained with either 100 ng/ml of MitoTracker Red 580 (Invitrogen) or 100 ng/ml MitoTracker Green FM (Invitrogen) at 37 °C in a CO2 incubator for 30 min (Tadi et al., 2016). Cells were washed twice with 1 X PBS, fixed in 2% paraformaldehyde (20 min) and permeabilised with 0.1% Triton X-100 (5 min) at room temperature. BSA (0.1%) was used for blocking (30 min), and subsequently the cells were incubated with the appropriate primary antibody at room temperature (4 hr). Appropriate FITC or Alexa Fluor conjugated secondary antibodies were used to detect the signal. After washing, the cells were stained with DAPI, mounted with DABCO (Sigma) and imaged under a confocal laser scanning microscope (Zeiss LSM 880 with ×63 magnifications or Olympus FLUOVIEW FV3000 with ×100 magnifications). The images were processed using either Zen Lite or FV31S-SW software.
 
-## Statistical analysis
+### Statistical analysis
 
 Every experiment was repeated multiple times with at least three biological repeats and presented. Based on the data obtained from repeats, Student’s t-test (two-tailed) was performed, and the error bars were calculated for the bar diagrams representing were the fold change value using GraphPad Prism ver 5.0. Error bars are shown depicting mean ± SEM (ns: not significant, *p<0.05, **p<0.005, ***p<0.0001). Colocalisation analysis in immunofluorescence assay was done using JaCoP in ImageJ software. The values were plotted in GraphPad Prism 5.0, and the significance was calculated using the same. The values were obtained for at least 50–100 cells per sample.

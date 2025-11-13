@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.31250.001 The translation pre-initiation complex (PIC) scans the mRNA for an AUG codon in favorable context, and AUG recognition stabilizes a closed PIC conformation. The unstructured N-terminal tail (NTT) of yeast eIF1A deploys five basic residues to contact tRNA i , mRNA, or 18S rRNA exclusively in the closed state. Interestingly, EIF1AX mutations altering the human eIF1A NTT are associated with uveal melanoma (UM). We found that substituting all five basic residues, and seven UM-associated substitutions, in yeast eIF1A suppresses initiation at near-cognate UUG codons and AUGs in poor context. Ribosome profiling of NTT substitution R13P reveals heightened discrimination against unfavorable AUG context genome-wide. Both R13P and K16D substitutions destabilize the closed complex at UUG codons in reconstituted PICs. Thus, electrostatic interactions involving the eIF1A NTT stabilize the closed conformation and promote utilization of suboptimal start codons. We predict UM-associated mutations alter human gene expression by increasing discrimination against poor initiation sites.
+The translation pre-initiation complex (PIC) scans the mRNA for an AUG codon in favorable context, and AUG recognition stabilizes a closed PIC conformation. The unstructured N-terminal tail (NTT) of yeast eIF1A deploys five basic residues to contact tRNAi, mRNA, or 18S rRNA exclusively in the closed state. Interestingly, EIF1AX mutations altering the human eIF1A NTT are associated with uveal melanoma (UM). We found that substituting all five basic residues, and seven UM-associated substitutions, in yeast eIF1A suppresses initiation at near-cognate UUG codons and AUGs in poor context. Ribosome profiling of NTT substitution R13P reveals heightened discrimination against unfavorable AUG context genome-wide. Both R13P and K16D substitutions destabilize the closed complex at UUG codons in reconstituted PICs. Thus, electrostatic interactions involving the eIF1A NTT stabilize the closed conformation and promote utilization of suboptimal start codons. We predict UM-associated mutations alter human gene expression by increasing discrimination against poor initiation sites.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Accurate identification of the translation initiation codon in mRNA by ribosomes
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig1-v2.jpg)
 
-**Figure 1.:** IN state of the closed conformation of the 48S PIC.(A) Model describing known conformational rearrangements of the PIC during scanning and start codon recognition. (i) eIF1 and the scanning enhancers (blue balls) in the C-terminal tail (CTT) of eIF1A stabilize an open conformation of the 40S subunit to which TC rapidly binds. (ii) The 43S PIC in the open conformation scans the mRNA for the start codon with Met-tRNAiMet bound in the POUT state. eIF2 can hydrolyze GTP to GDP•Pi, but release of Pi is blocked by eIF1. The N-terminal tail (NTT) of eIF1A interacts with the eIF5-CTD. (iii) On AUG recognition, Met-tRNAiMet moves from the POUT to PIN state, clashing with eIF1 and the CTT of eIF1A, provoking displacement of the eIF1A CTT from the P site, dissociation of eIF1 from the 40S subunit, and Pi release from eIF2. The NTT of eIF2β interacts with the eIF5-CTD, and the eIF1A-NTT, harboring scanning inhibitor (SI) elements, interacts with the codon:anticodon helix. (Above) Arrows summarize that eIF1 and the eIF1A SE elements promote POUT and impede transition to PIN state, whereas the eIF1A SI element in the NTT stabilizes the PIN state. (Adapted from (Hinnebusch, 2014)). Results presented below show that this function of the eIF1A-NTT is impaired by uveal melanoma (UM)-associated substitutions and others that disrupt direct contacts with the mRNA or codon:anticodon helix shown in (B). (B) Magnified portion of the py48S PIC structure (PDB 3J81) showing contacts made by the eIF1A-NTT (shades of blue and cyan) in the closed/PIN conformation. Side-chains of NTT residues substituted in UM (red) or directly contacting 18S rRNA (yellow), tRNAi (green) or mRNA (purple) are shown as sticks. (C) Sequence of human eIF1A NTT residues 1–15 showing the substitutions (red) or deletions (dash) found in the indicated UM tumors. Substitutions in yeast eIF1A corresponding to those found in UM tumors are listed on the last line. The five basic residues of the yeast NTT making direct contacts in the PIC and substituted here in addition to the UM-associated substitutions are shown in cyan.
+**Figure 1.:** (A) Model describing known conformational rearrangements of the PIC during scanning and start codon recognition. (i) eIF1 and the scanning enhancers (blue balls) in the C-terminal tail (CTT) of eIF1A stabilize an open conformation of the 40S subunit to which TC rapidly binds. (ii) The 43S PIC in the open conformation scans the mRNA for the start codon with Met-tRNAiMet bound in the POUT state. eIF2 can hydrolyze GTP to GDP•Pi, but release of Pi is blocked by eIF1. The N-terminal tail (NTT) of eIF1A interacts with the eIF5-CTD. (iii) On AUG recognition, Met-tRNAiMet moves from the POUT to PIN state, clashing with eIF1 and the CTT of eIF1A, provoking displacement of the eIF1A CTT from the P site, dissociation of eIF1 from the 40S subunit, and Pi release from eIF2. The NTT of eIF2β interacts with the eIF5-CTD, and the eIF1A-NTT, harboring scanning inhibitor (SI) elements, interacts with the codon:anticodon helix. (Above) Arrows summarize that eIF1 and the eIF1A SE elements promote POUT and impede transition to PIN state, whereas the eIF1A SI element in the NTT stabilizes the PIN state. (Adapted from (Hinnebusch, 2014)). Results presented below show that this function of the eIF1A-NTT is impaired by uveal melanoma (UM)-associated substitutions and others that disrupt direct contacts with the mRNA or codon:anticodon helix shown in (B). (B) Magnified portion of the py48S PIC structure (PDB 3J81) showing contacts made by the eIF1A-NTT (shades of blue and cyan) in the closed/PIN conformation. Side-chains of NTT residues substituted in UM (red) or directly contacting 18S rRNA (yellow), tRNAi (green) or mRNA (purple) are shown as sticks. (C) Sequence of human eIF1A NTT residues 1–15 showing the substitutions (red) or deletions (dash) found in the indicated UM tumors. Substitutions in yeast eIF1A corresponding to those found in UM tumors are listed on the last line. The five basic residues of the yeast NTT making direct contacts in the PIC and substituted here in addition to the UM-associated substitutions are shown in cyan.
 
 eIF1A also has a dual role in scanning and start codon recognition. Scanning enhancer (SE) elements in the eIF1A C-terminal tail (CTT) promote TC binding in the open POUT conformation and impede rearrangement to the closed PIN state, such that substitutions that impair the SE elements both impair TC recruitment and increase initiation at near-cognate start codons (Saini et al., 2010). Biochemical mapping experiments suggest that, like eIF1, the eIF1A CTT clashes with Met-tRNAi in the PIN state (Yu et al., 2009), and is displaced from the P site on start codon recognition (Zhang et al., 2015) to enable a functional interaction of the eIF1A CTT with the NTD of eIF5, the GTPase activating protein for eIF2, that facilitates Pi release from eIF2-GDP·Pi (Nanda et al., 2013). Scanning inhibitor elements SI1 and SI2 in the unstructured eIF1A N-terminal tail (NTT) and helical domain, respectively, antagonize SE function and stabilize the closed/PIN conformation on start codon recognition (Figure 1A). Accordingly, substitutions that impair SI elements destabilize the closed complex and accelerate TC loading to the open complex in vitro, and promote continued scanning at UUG codons in hypoaccurate mutant cells (Fekete et al., 2007) (Saini et al., 2010). SI1 mutations also increase the probability that the scanning PIC will bypass an upstream AUG codon (leaky scanning) (Fekete et al., 2007; Luna et al., 2013); and one such mutation, substituting NTT residues 17–21, decreases recognition of the suboptimal AUG codon of SUI1 mRNA to reduce eIF1 expression (Martin-Marcos et al., 2011).
 
@@ -45,15 +45,23 @@ Somatic mutations in the human gene EIF1AX encoding eIF1A are frequently associa
 
 ## Results
 
-## UM-associated substitutions in the yeast eIF1A NTT increase discrimination against near-cognate UUG codons in vivo
+### UM-associated substitutions in the yeast eIF1A NTT increase discrimination against near-cognate UUG codons in vivo
 
 To explore functional consequences of substitutions in human eIF1A associated with uveal melanoma (Martin et al., 2013), we introduced substitutions into the yeast eIF1A NTT corresponding to 7 of the 13 substitutions associated with the disease: K3D, K4D, T6R, T6D, ΔG8, R13P, and G15D (Figure 1C). Asn4 and Gly6 of human eIF1A correspond to Lys4 and Thr6 in yeast, thus the yeast K4D and T6R/T6D substitutions mimic the human N4D and G6R/G6D UM-associated substitutions, respectively. The deletion of Gly8 (ΔG8) in yeast produces the same protein as the UM-associated substitution ΔG9, leaving a single Gly residue in place of the Gly8/Gly9 pair (Figure 1C). Mutations were generated in a TIF11 allele (encoding yeast eIF1A) under the native promoter and the mutant alleles on single-copy plasmids were used to replace WT TIF11+ by plasmid-shuffling in a his4-301 yeast strain in order to examine their effects on initiation at near-cognate UUG codons. his4-301 lacks an AUG start codon and confers histidine auxotropy, which can be suppressed by mutations in initiation factors with the Sui- phenotype (Suppressor of initiation codon mutation) that increase initiation at the third, in-frame UUG codon to restore expression of histidine biosynthetic enzyme His4 (Donahue, 2000). None of the TIF11 mutations allows detectable growth on medium containing only 1% of the usual histidine supplement (Figure 2—figure supplement 1A, -His medium), indicating the absence of Sui- phenotypes; and none confers a slow-growth phenotype (Slg-) on complete medium (Figure 2—figure supplement 1A, +His). We next tested the mutant alleles for the ability to suppress the elevated UUG initiation on his4-301 mRNA and the attendant His+ phenotype conferred by dominant Sui- mutations SUI5 and SUI3-2 encoding, respectively, the G31R variant of eIF5 and S264Y variant of eIF2β (Huang et al., 1997). Remarkably, the dominant His+ phenotypes conferred by plasmid-borne SUI5 or SUI3-2 are diminished by all of the NTT mutations (Figure 2A and Figure 2—figure supplement 1B, -His); and the Slg- phenotype conferred by SUI5 in +His medium at 37°C is also suppressed by the K3E, K4D, ΔG8, R13P, and G15D mutations (Figure 2A, +His, 37°C). These results suggest that the UM-associated substitutions, as a group, mitigate the effects of SUI5 and SUI3-2 in elevating UUG initiation, increasing discrimination against near-cognate start codons.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ten-fold serial dilutions of tif11Δ his4-301 strain H3582 containing the indicated TIF11 (eIF1A) alleles on single copy (sc) plasmids and either episomal SUI5 (p4281/YCpTIF5-G31R-W) or empty vector (/v) were analyzed for Slg- and His+/Sui- phenotypes on SC lacking leucine (Leu) and tryptophan (Trp) supplemented with 0.3 mM His and incubated at 28°C or 37°C for 2 days (+His), or on SC-Leu-Trp plus 0.003 mM His (-His) and grown at 28°C for 4 days. (B) Derivatives of strain H3582 containing the indicated TIF11 alleles and episomal SUI3-2 (p4280/YCpSUI3-S264Y-W) or empty vector (/v) and also harboring HIS4-lacZ reporters with AUG or UUG start codons (plasmids p367 and p391, respectively) were cultured in synthetic dextrose minimal medium (SD) supplemented with His at 28°C to A600 of ~1.0, and β-galactosidase activities (in units of nanomoles of ο-nitrophenyl-β-D-galactopyranoside cleaved per min per mg) were measured in whole cell extracts (WCEs). The ratio of expression of the UUG to AUG reporter was calculated from at least four different measurements, and the mean and S.E.M.s were plotted. (C) Derivatives of H3582 containing the indicated TIF11 alleles were cultured in SD supplemented with His, Trp and uracil (Ura) at 28°C to A600 of ~1.0, and WCEs were subjected to Western analysis using antibodies against eIF1A/Tif11, eIF1/Sui1 or eIF2Bε/Gcd6 (analyzed as loading control). Two different amounts of each extract differing by 2-fold were loaded in successive lanes. (D) Same strains as in (C) harboring the sc plasmids with SUI1-lacZ fusions containing the native suboptimal (-3CGU-1, pPMB24), poor (-3UUU-1, pPMB28) or optimum (-3AAA-1, pPMB25) AUG contexts were cultured in SD +His + Trp at 28°C to A600 of ~1.0, and assayed for β-galactosidase activities as in (B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ten-fold serial dilutions of tif11Δ his4-301 strain H3582 containing the indicated TIF11 (eIF1A) alleles on single copy (sc) plasmids were grown at 28°C or 37°C for 1.5 days on synthetic complete (SC) medium lacking leucine (Leu) supplemented with 0.3 mM histidine (+His) and at 28°C for 7 days on SC-Leu plus 0.003 mM His (-His). Strain pPMY32 harboring the Sui- variant eIF1-K60E is shown for comparison. (B) Transformants of H3582 with the indicated plasmid-borne TIF11 alleles also containing episomal SUI3-2 (p4280/YCpSUI3-S264Y-W) or empty vector (/v) were analyzed for Slg- and His+/Sui- phenotypes by spotting 10-fold serial dilutions on SC lacking Leu and tryptophan (Trp) supplemented with 0.3 mM His and incubated at 28°C or 37°C for 2 days (+His), or on SC-Leu -Trp plus 0.003 mM His (-His) grown at 28°C for or 7 days. (C) Transformants of the strains from (A) harboring the GCN4-lacZ fusion on plasmid p180 were cultured and analyzed as in Figure 2B.
 
 The effect of SUI3-2 in reducing the fidelity of start codon selection can be quantified by measuring the expression of matched HIS4-lacZ reporters containing a UUG or AUG triplet as start codon. As expected (Huang et al., 1997), SUI3-2 increases the ratio of expression of the UUG to AUG reporter from the low WT value of ~3% up to ~12% (Figure 2B). With the exception of T6D, all of the UM mutations significantly reduced the HIS4-lacZ UUG:AUG initiation ratio, with R13P eliminating ~75% of the increase in the UUG/AUG initiation ratio conferred by SUI3-2 in TIF11+ cells (Figure 2B). The results indicate that eIF1A UM substitutions restore to varying extents discrimination against near-cognate UUG codons in Sui- mutants, thus conferring Ssu- phenotypes.
 
 Many Sui- mutations, including SUI3-2, derepress GCN4 mRNA translation in nutrient-replete cells (the Gcd- phenotype) (Saini et al., 2010). This phenotype generally results from a reduced rate of TC recruitment that allows 40S subunits that have translated upstream open reading frame 1 (uORF1) and resumed scanning to subsequently bypass uORFs 2–4 and reinitiate at the GCN4 AUG codon in the absence of a starvation-induced inhibition of TC assembly (Hinnebusch, 2005). Interestingly, the Gcd- phenotype of SUI3-2, manifested as an ~3 fold derepression of a GCN4-lacZ reporter, is also significantly diminished by R13P (Figure 2—figure supplement 1C), the eIF1A NTT mutation shown above to be the strongest suppressor of the Sui- phenotype of SUI3-2 (Figure 2B). Co-suppression of the Gcd- and Sui- phenotypes of SUI3-2 has been demonstrated for other Ssu- mutations in eIF1A (Saini et al., 2010; Dong et al., 2014; Martin-Marcos et al., 2014) and attributed to destabilization of the closed/PIN conformation and attendant shift to the open scanning-conducive conformation to which TC binds rapidly (Passmore et al., 2007). Thus, co-suppression of the Gcd- and Sui-/hypoaccuracy phenotypes of SUI3-2 observed only for the R13P mutation suggests that it exceeds the other UM-associated mutations in destabilizing the closed/PIN conformation of the PIC.
 
-## UM-associated eIF1A substitutions increase discrimination against AUG codons in poor context
+### UM-associated eIF1A substitutions increase discrimination against AUG codons in poor context
 
 In addition to reducing initiation at near-cognate UUG codons in Sui- mutants, Ssu- substitutions in eIF1 and eIF1A are known to increase discrimination against the AUG start codon of the SUI1 gene encoding eIF1, which exhibits a non-preferred Kozak context. The unfavorable context of the SUI1 start codon underlies negative autoregulation of eIF1 synthesis, which hinders overexpression of eIF1 as excess eIF1 impedes initiation at its own start codon (Martin-Marcos et al., 2011). Consistent with this, the eIF1A UM mutations reduce the steady-state level of eIF1, with the strongest reduction for R13P, lesser reductions for K3E, K4D, ΔG8, and G15D, and the smallest effects for T6R and T6D (Figure 2C, eIF1 blot and eIF1/Gcd6 ratios). This hierarchy exactly parallels that observed for suppression of the UUG:AUG initiation ratio in SUI3-2 cells for these eIF1A mutants (Figure 2B).
 
@@ -61,13 +69,37 @@ Results in Figure 2C also reveal that K4D, ΔG8, T6R and T6D reduce expression o
 
 In accordance with their effects on eIF1 expression, the R13P, K3E, K4D, ΔG8, and G15D mutations significantly reduce expression of the WT SUI1-lacZ fusion containing the native, poor context of the eIF1 AUG codon, -3CGU-1 (Figure 2D, Native context). These eIF1A mutations also reduce expression of a second reporter in which the native AUG context is replaced with the even less favorable context of -3UUU-1 (Martin-Marcos et al., 2011), with R13P again conferring the largest reduction (Figure 2D, poor context). Importantly, none of the mutations significantly affects expression of a third reporter containing the optimum context of -3AAA-1 (Martin-Marcos et al., 2011) (Figure 2D). Thus, a subset of the UM mutations, and particularly R13P and G15D, selectively reduce recognition of the eIF1 AUG codon when it resides in its native poor context, or in another poor context, in addition to increasing discrimination against near-cognate UUG start codons.
 
-## NTT basic residues contacting mRNA or tRNAi in the py48S complex have a role in recognition of poor initiation sites in vivo
+### NTT basic residues contacting mRNA or tRNAi in the py48S complex have a role in recognition of poor initiation sites in vivo
 
 Among the UM mutations, R13P consistently conferred the greatest reduction in recognition of both UUG codons and AUGs in poor context (Figure 2 and Figure 2—figure supplement 1). In the structure of py48S, Arg13 contacts the +5 nucleotide in mRNA, and with Lys7, Lys10, and Lys16, is one of four basic residues in the eIF1A NTT contacting the mRNA or tRNAi anticodon (Figure 1B). A fifth basic residue, Arg14 contacts A1427/G1428 of 18S rRNA located in the mRNA binding cleft (Hussain et al., 2014). In addition, UM mutation ΔG8 affects the tandem Gly8-Gly9 pair that mediates a turn in the NTT required for proper positioning of the four basic residues. Accordingly, we hypothesized that the hyperaccuracy phenotypes of the UM-associated substitutions R13P and ΔG8 reflect loss of a direct contact with the mRNA (R13P) or perturbation of one or more contacts of the four basic residues with mRNA/tRNAi (ΔG8), which destabilizes the PIN state of the 48S PIC. Moreover, insertion of an acidic side-chain between basic residues Arg14 and Lys16 by UM substitution G15D (Figure 1B), which could introduce electrostatic repulsion with the backbone of mRNA or rRNA, could likewise destabilize the 48S PIC. Because UUG start codons form a less stable codon:anticodon helix with a U:U mismatch compared to the perfect duplex formed at AUG codons, UM substitutions that destabilize PIN should be especially deleterious to initiation at UUG codons, as we observed (Figure 2). To test this hypothesis, we introduced Ala and Asp substitutions at all five of the NTT basic residues that contact mRNA, tRNAi or rRNA in the py48S PIC (Hussain et al., 2014), expecting to find stronger hyperaccuracy phenotypes for Asp versus Ala substitutions owing to electrostatic repulsion with the nucleic acids in the case of Asp replacements. We also examined a double deletion of Gly8-Gly9 that we reasoned might have a stronger phenotype than the UM mutation ΔG8.
 
 We observed modest Slg- phenotypes for the R13D and R14D substitutions, but no His+ phenotypes indicative of Sui- defects for any of the targeted NTT mutations (Figure 3—figure supplement 1A). Remarkably, both Ala and Asp substitutions of Lys10, Arg13, Arg14, and Lys16, and the Asp substitution of Lys7, all diminished the His+/Sui- phenotype of SUI3-2 (Figure 3A) and decreased the HIS4-lacZ UUG:AUG initiation ratio in SUI3-2 cells, with the greatest reductions seen for R13D, R14D, and K16D. In agreement with our hypothesis, the Asp versus Ala substitutions generally conferred greater suppression of the UUG:AUG ratio, but especially so at Lys10 and Lys16 (Figure 3B). Using a second set of UUG and AUG reporters, expressing renilla or firefly luciferase from different transcripts under the control of the ADH1 (RLUC) or GPD (FLUC) promoter, we confirmed that the K16D and R13P substitutions reduced the elevated UUG:AUG initiation ratio conferred by SUI3-2 (Figure 3—figure supplement 1B). All of the mutations, except for K7A, also diminished the Gcd- phenotype of SUI3-2, reducing the derepression of GCN4-lacZ expression, again with generally greater reductions for Asp versus Ala replacements (Figure 3C). The degree of suppression of the elevated UUG:AUG ratio and GCN4-lacZ expression in SUI3-2 cells was correlated, with R13D, R14D, and K16D being the strongest suppressors of both phenotypes (cf. Figure 3B and C). As noted above, this co-suppression of impaired TC loading (Gcd-) and increased UUG recognition (Sui-) phenotypes suggest that these eIF1A NTT substitutions specifically destabilize the closed/PIN state with attendant shift to the open/POUT scanning conformation of the PIC (Saini et al., 2010).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig3-v2.jpg)
+
+**Figure 3.:** (A) Derivatives of strain H3582 containing the indicated TIF11 alleles and episomal SUI3-2 (p4280/YCpSUI3-S264Y-W) or empty vector (/v) were analyzed for Slg- and His+/Sui- phenotypes by spotting 10-fold serial dilutions on SC-Leu-Trp plus 0.3 mM His and incubated at 28°C or 37°C for 2 days (+His), or on SC-Leu-Trp plus 0.003 mM His (-His) and grown at 28°C for 7 days, as in Figure 2—figure supplement 1B. (B–C) Transformants of the strains from (A) harboring HIS4-lacZ reporters with AUG or UUG start codons (B) or the GCN4-lacZ reporter (C) were cultured and assayed for β-galactosidase activities as in Figure 2B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) H3582 derivatives harboring the indicated TIF11 alleles in sc plasmids were grown at 28°C and 37°C for 2 days on +His, and at 28°C for 7 days on –His as in Figure 2—figure supplement 1A. Strain pPMY32 harboring the Sui- variant eIF1-K60E is shown for comparison. (B) Derivatives of strain H3582 containing the indicated TIF11 alleles and episomal SUI3-2 and also harboring pairs of dual luciferase reporters LUCRenilla(AUG)/LUCfirefly(UUG) or LUCRenilla(AUG)/LUCfirefly(AUG) on sc URA3 plasmids pRaugFFuug and pRaugFFaug, respectively, were cultured as in Figure 2B (except at 30°C) and the luminescence was measured in WCEs. The LUCfirefly (UUG):LUCRenilla (AUG) ratio of luminescence, in relative light units, was normalized to the LUCfirefly (AUG):LUCRenilla (AUG) ratio to calculate the FLUC(UUG)/RLUC(AUG) from six independent transformants, and the mean and S.E.M.s were plotted.
+
 In addition to suppressing UUG initiation, all of the targeted substitutions of the five basic residues, and the deletion of Gly8-Gly9, also increase discrimination against the non-preferred context of the eIF1 AUG codon, reducing expression of eIF1 (Figure 4A) and of the SUI1-lacZ fusions with native or poor context, without altering expression of SUI1-lacZ with optimal AUG context (Figure 4B). Again, the Asp versus Ala substitutions of the basic NTT residues generally confer stronger phenotypes (Figure 4A–B), consistent with stronger disruptions of NTT contacts with mRNA, tRNAi or rRNA on introduction of negatively charged side-chains.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blot analysis of eIF1 expression in derivatives of H3582 with the indicated TIF11 alleles, as in Figure 2C. (B) Transformants of strains in (A) with SUI1-lacZ fusions containing the native suboptimal, poor or optimum AUG contexts were assayed for β-galactosidase activities as in Figure 2D. (C) H3582 derivatives, harboring WT, R13P or R14A TIF11 alleles and el.uORF1 GCN4-lacZ reporters containing the depicted optimum (pC3502, row1), weak (pC4466, row2) or poor (pC3503, row3) context of uAUG-1, or uORF-less GCN4-lacZ reporter with a mutated uAUG-1 (pC3505, row4), were assayed for β-galactosidase activities as in Figure 2D. Mean expression values with S.E.M.s were determined from four transformants (columns 1, 2 and 3). The percentages of scanning ribosomes that translate el.uORF1 (columns 7, 8 and 9) or leaky-scan uAUG-1 and translate GCN4-lacZ instead (columns 4, 5 and 6) were calculated from results in columns 1, 2 and 3 by comparing the amount of expression observed for each uORF-containing reporter to the uORF-less construct. Statistically significant differences between mutant and WT are marked with asterisks (*p<0.05; **p<0.005; ***p<0.0005).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western analysis of derivatives of H3582 harboring the indicated TIF11 alleles on high copy (hc) was conducted as in Figure 2C. (B) Same strains as in (A) containing the indicated SUI1-lacZ fusions were assayed for β-galactosidase activities as in Figure 2D.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) H3582 derivatives harboring the indicated TIF11 alleles in hc plasmids were grown at 28°C and 37°C for 2 days on +His and at 28°C for 7 days on –His as in Figure 2—figure supplement 1A. (B) Same strains as in (A) also harboring episomal SUI3-2 (p4280/YCpSUI3-S264Y-W) or empty vector were analyzed for Slg- and His+/Sui- phenotypes as in Figure 2—figure supplement 1B. (C) Same strains as in (B) also harboring HIS4-lacZ reporters with AUG or UUG start codons were cultured and assayed for β-galactosidase activities as in Figure 2B. (D) Transformants of the strains from (B) harboring the GCN4-lacZ fusion on plasmid p180 were cultured and analyzed as in Figure 2B.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) H3582 derivatives harboring the indicated TIF11 alleles and el.uORF1 GCN4-lacZ reporters were analyzed as in Figure 4C.
 
 Several of the eIF1A variants were expressed at lower than WT levels, including K7A, K7D, K10D, and ΔG8ΔG9 (Figure 4A), as noted above for UM substitutions K4D, T6D, T6R, and ΔG8 (Figure 2C). To determine whether the reduced eIF1A expression contributed to their mutant phenotypes, we expressed the subset of variants with the strongest phenotypes from high-copy (hc) plasmids and re-examined their effects on initiation fidelity. The mutant proteins K4D, ΔG8, ΔG8ΔG9 and K10D were expressed from hc plasmids at levels exceeding that of WT eIF1A expressed from a single-copy plasmid (scWT); however, they all still conferred reduced levels of eIF1 expression compared to cells containing normal (scWT) or overexpressed levels of WT eIF1A (hcWT) (Figure 4—figure supplement 1A). The overexpressed variants also conferred reduced expression of the SUI1-lacZ fusions with native or poor context (Figure 4—figure supplement 1B); and they co-suppressed the Sui-/His+ phenotype, elevated UUG:AUG ratio and derepressed GCN4-lacZ expression conferred by SUI3-2 (Figure 4—figure supplement 2). We conclude that the reduced expression of eIF1A NTT variants has little impact on their ability to increase discrimination against poor initiation sites in vivo.
 
@@ -75,11 +107,19 @@ To obtain additional support for the conclusion that eIF1A NTT substitutions inc
 
 The UM-associated NTT mutation R13P increases leaky scanning of uAUG-1, as indicated by increased GCN4-lacZ expression for all three reporters containing el.-uORF1 but not for the uORF-less reporter (Figure 4C, cf cols. 1–2, rows 1–4). Calculating the percentages of ribosomes that recognize uAUG-1 revealed that R13P (i) conferred the greatest reduction in recognition of uAUG-1 when the latter resides in poor context, from ~66% to ~27%, (ii) produced a moderate reduction for the weak-context reporter, from ~89% to ~77%, and (iii) evoked only a slight reduction when uAUG-1 is in optimal context, from >99% to ~98% (Figure 4C, cf. cols. 7–8, rows 1–3). Similar results were obtained for the targeted mutation R14A (Figure 4C, cf. cols 7 and 9, rows 1–3); and for the targeted K16A and K16D mutations, with the Asp versus Ala replacement conferring the greater reduction in uAUG-1 recognition (Figure 4—figure supplement 3A, cf. cols. 7–9); and also for the hcΔG8ΔG9 and hcK10D mutations (Figure 4—figure supplement 3B, cols. 7–9). Thus, both targeted and UM-associated NTT mutations decrease recognition of AUG start codons by scanning PICs preferentially when they reside in poor versus optimum context.
 
-## eIF1A NTT substitutions R13P and K16D destabilize the closed, PIN conformation of the 48S PIC in vitro
+### eIF1A NTT substitutions R13P and K16D destabilize the closed, PIN conformation of the 48S PIC in vitro
 
 The multiple defects in start codon recognition conferred by the eIF1A NTT mutations suggest that they destabilize the PIN state of the 48S PIC at both UUG and AUG start codons. We tested this hypothesis by analyzing the effects of the R13P and K16D substitutions on the rate of TC dissociation from PICs reconstituted in vitro. Partial 43S·mRNA complexes (lacking eIF3 and eIF5; henceforth p48S PICs) were formed by incubating WT TC (assembled with [35S]-Met-tRNAi and non-hydrolyzable GTP analog GDPNP) with saturating amounts of eIF1, WT or mutant eIF1A, an uncapped unstructured model mRNA containing either AUG or UUG start codon [mRNA(AUG) or mRNA(UUG)], and 40S subunits. p48S PICs containing [35S]-Met-tRNAi were incubated for increasing time periods in the presence of an excess of unlabeled TC (chase) and then resolved via native gel electrophoresis to separate 40S-bound and unbound fractions of TC. From previous work, it was determined that TC bound in the POUT state is too unstable to remain associated with the PIC during the native gel electrophoresis used to separate PIC-bound from unbound TC in this assay. It was also deduced that a large proportion of WT complexes formed with mRNA(AUG) achieve a highly stable state from which no TC dissociation occurs during the time-course. A smaller fraction of complexes formed with mRNA (UUG) achieves this highly stable state, and the remainder dissociates with a measurable off-rate (Kolitz et al., 2009; Dong et al., 2014; Martin-Marcos et al., 2014).
 
 In agreement with previous findings, little TC dissociation occurred from the WT PICs formed with mRNA(AUG) over the time course of the experiment (Figure 5A), whereas appreciable dissociation was observed from WT PICS assembled with mRNA(UUG) (koff = 0.18 ± 0.02 h−1 (Figure 5A). Both eIF1A substitutions R13P and K16D increased the extent and rate of TC dissociation from PICs assembled on mRNA(UUG), while having little effect on the mRNA(AUG) complexes (Figure 5A). The extent of dissociation reflects the proportion of PICs in PIN versus the hyperstable conformation, and the rate of dissociation reflects the stability of the PIN conformation (Kolitz et al., 2009; Dong et al., 2014). Thus, our results indicate that the eIF1A substitutions R13P and K16D decrease the fraction of the PICs in the hyper-stable conformation and also destabilize the PIN conformation specifically at near-cognate UUG codons. These findings help to account for the decreased utilization of UUG codons (Ssu- phenotype) conferred by these mutations in vivo.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig5-v2.jpg)
+
+**Figure 5.:** (A) Effects of R13P and K16D on TC dissociation kinetics from reconstituted partial 43S•mRNA(AUG) or mRNA(UUG) complexes formed with TC containing [35S]-Met-tRNAiMet and WT eIF1A, eIF1A-R13P or eIF1A-K16D, as indicated. Representative curves are shown for each measurement. Tabulated rate constants (koff) and reaction end-points with S.E.M.s are averages of between 4–10 replicate experiments (number in parenthesis); asterisks indicate significant differences between mutant and WT as judged by a two-tailed, unpaired Student’s t-test (*p<0.05; **p<0.01). (B–D) Effects of R13P and K16D on the dissociation kinetics of fluorescein-labeled eIF1A from reconstituted partial 43S•mRNA complexes, monitored by following changes in fluorescence anisotropy over time after addition of a large excess of unlabeled WT eIF1A. The data for WT eIF1A were fit with a double exponential decay equation, where the fast phase (rate constant k1) corresponds to dissociation of eIF1A from the ‘open’ conformation of the PIC and the second phase (rate constant k2) corresponds to dissociation from the ‘closed’ state (Maag et al., 2006). The ratio of amplitudes of the second phase (α2, closed state) to the first phase (α1, open state) is defined as Kamp. Data for both R13P/K16D were fit to a single exponential equation with rate constant k1. Rb is the anisotropy of PIC-bound eIF1A. (B–C) Representative eIF1A dissociation kinetics from PICs assembled with WT (circles), R13P (squares, panel B), or K16D (triangles, panel C) with mRNA(AUG) (filled symbols) or mRNA(UUG) (open symbols). (D) Summary of kinetic parameters from experiments in (B–C). Different preparations of labeled WT eIF1A were employed for the experiments examining R13P and K16D, as indicated. All experiments were performed at least two times and errors are average deviations.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Effect of R13P on the dissociation kinetics of fluorescein-labeled eIF1A from partial 43S•mRNA complexes reconstituted with eIF2 containing the eIF2β-S264Y subunit (encoded by SUI3-2), conducted as in Figure 5B–D.
 
 We also examined the effects of the eIF1A R13P and K16D substitutions on PIC conformation by measuring their effects on the stability of eIF1A binding to the complex. PICs assembled with C-terminally fluorescently-labeled eIF1A were challenged with excess unlabeled eIF1A and the dissociation of labeled eIF1A was monitored over time by following the change in fluorescence anisotropy. The rate of dissociation is generally slow and not physiologically relevant, but reflects the ratio of open to closed PIC conformations and the overall stability of each state (Maag et al., 2006; Fekete et al., 2007). The dissociation kinetics are usually biphasic, with the fast and slow phases representing dissociation from the open and closed states, respectively; and the magnitude of each rate constant (k1 and k2, respectively) reflects the summation of multiple contacts of eIF1A with the PIC. The ratio of amplitudes of the slow phase to the fast phase (Kamp = α2/α1) provides an apparent equilibrium constant between the two states, with Kampvalues > 1 indicating a more prevalent closed state. The anisotropy of the labeled eIF1A in the PIC (Rb) indicates rotational freedom of the eIF1A CTT, with a higher value indicating greater constraint, which characterizes the closed state.
 
@@ -87,9 +127,29 @@ As expected, WT eIF1A dissociates more slowly from PICs reconstituted with mRNA(
 
 Finally, we examined the effects of R13P on eIF1A dissociation kinetics using eIF2 containing the eIF2ß-S264Y variant encoded by SUI3-2. In PICs containing mRNA(UUG) and WT eIF1A, eIF2ß-S264Y decreased k2 and increased Kamp compared to fully WT PICs, indicating greater occupancy and stability of the closed complex at UUG (Figure 5—figure supplement 1, cf. rows 2–3)—which is consistent with the increased UUG initiation (Sui- phenotype) conferred by SUI3-2 in vivo. Remarkably, both effects of eIF2ß-S264Y on eIF1A dissociation were reversed on replacing WT eIF1A with the R13P variant, and the Rb value was also reduced (Figure 5—figure supplement 1, cf. rows 3–4). These findings help to account for the decreased initiation at UUG codons (Ssu- phenotype) conferred by the eIF1A R13P substitution in SUI3-2 cells (Figure 2B). The destabilization of AUG complexes produced by R13P and K16D in the presence of WT eIF2 (Figure 5B–D) also helps to explain the increased leaky scanning of AUG codons in poor context evoked by these eIF1A substitutions in otherwise WT cells (Figures 2C–D and 4A–C, and Figure 4—figure supplement 3A–B).
 
-## eIF1A-R13P increases discrimination against start codons with non-preferred Kozak context genome-wide
+### eIF1A-R13P increases discrimination against start codons with non-preferred Kozak context genome-wide
 
 To examine effects of the UM-associated R13P substitution in the yeast translatome, we conducted ribosomal footprint profiling of the R13P mutant and isogenic WT strain. This technique entails deep-sequencing of mRNA fragments protected from RNase digestion by translating 80S ribosomes arrested in vitro with cycloheximide (Ribo-seq) in parallel with total mRNA sequencing (RNA-seq) (Ingolia et al., 2012). The translational efficiency (TE) of each mRNA is calculated for each strain as the ratio of sequencing reads for ribosome-protected fragments (RPFs) to total mRNA fragments and normalized to the median ratio among all mRNAs, which is assigned a value of unity. Thus, it should be understood that all TE values are expressed relative to the median TE in that strain. Both ribosome footprinting and RNA-seq results were highly reproducible between the two biological replicates for each strain (Pearson’s R > 0.99) (Figure 6—figure supplement 1A–D). In accordance with the reduced expression of eIF1 conferred by R13P (Figure 2C, eIF1), both RPF and mRNA reads across the SUI1 coding sequences (CDS) were diminished in R13P cells (Figure 6A). Consistent with these results, we showed previously that the reduced translation of SUI1 mRNA in eIF1 Ssu- mutants evoked by diminished recognition of its poor-context AUG codon is accompanied by reduced SUI1 mRNA abundance (Martin-Marcos et al., 2011). Examples of three other genes with poor context exhibiting reduced translation in R13P cells are shown in Figure 6—figure supplement 2A–C, which in one case (SKI2) also is accompanied by reduced mRNA levels.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig6-v2.jpg)
+
+**Figure 6.:** (A) Ribosome-protected fragments (RPFs) and mRNA reads on the SUI1 gene in WT and R13P cells in units of rpkm (reads per 1000 million mapped reads), showing schematically the position of the CDS (pink) and the −3 to −1 and +4 context nucleotides of the AUG codon (in brick). ΔRPF and ΔmRNA give the ratios of RPFs and total mRNA fragments, respectively, in R13P versus WT cells for SUI1. The Integrated Genomics Viewer (Broad Institute) was employed to display ribosome/mRNA reads. (B) Notched box-plot of the ratios of log2TE values in R13P vs. WT cells (ΔTER13P) for groups of genes (number, n, indicated) with perfect or poor AUG context (as defined in figure), preferred (A/G) or non-preferred (C/U) bases at −3, and all 4280 genes with >10 RPF reads and >32 mRNA reads (average of 4 samples, two replicates of WT and two replicates of tif11-R13P) in the main CDS, and 5’UTR length >5 nt. (C) left: Heat-map of TE changes in R13P versus WT cells for 4280 genes. Black boxes at the top and bottom of the map demarcate the groups of 100 genes designated as TE_down and TE_up, respectively. right: Box-plots of log2TE values in R13P versus WT cells for the ‘TE_down’ and ‘TE_up’ groups of genes. (D) Logos of AUG context sequences for the 4280 genes in (B), and the ‘TE_up’ and ‘TE_down’ groups of genes defined in (C). (E) Box-plots of AUG context scores calculated for positions −6 to −1 and +4- + 6 for the ‘TE_up’ and ‘TE_down’ groups of genes. (F) Box-plot analysis of ΔTER13P values for the same 4280 genes analyzed in (B–E) for deciles of equal size binned according to the AUG context scores calculated as in (E).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Scatterplots of total mRNA reads (A–B) and ribosome protected fragments (RPFs) (C–D) from WT and tif11-R13P strains for genes with >128 total mRNA reads or >40 RPF reads in the four samples combined (two strains and their two replicates). Pearson correlation coefficients (R) were calculated for plotted genes.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) RPFs and mRNA reads for genes resembling SUI1 in containing poor context for their AUG codons and decreased RPFs in R13P versus WT cells, presented as in Figure 6A. (D) Same analysis as conducted in Figure 6B except using RPFs versus TE values. (E) Similar analysis as in Figure 6E except conducted with groups of genes showing significant changes in RPFs in R13P versus WT cells using DESEQ2 instead of DESEQ. (at FDR < 0.1 as judged by DESEQ2 analysis).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–C) RPFs and mRNA reads on genes containing preferred context for their AUG codons and behaving oppositely of SUI1 in showing increased RPFs in R13P versus WT cells. (D–E) RPFs and mRNA reads on genes resembling CPA1 in containing an uORF with an AUG in poor context and displaying a decreased ratio of RPFs in the uORF vs. CDS (RRO) in R13P vs. WT cells (ΔRRO values of 0.10 or 0.16).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Heat-map comparison of Z-scores calculated from TE values in WT and R13P mutant cells, PARS scores for selected intervals, and 5’UTR lengths for 2355 genes taken from the group of 4280 described in Figure 6 for which PARS data are also available (Kertesz et al., 2010). See main text for definition of PARS categories. (B) Boxplot comparison of TE changes conferred by R13P for 79 genes with 5’UTR lengths ≤ 17 nt in at least three out of four genome-wide measurements of 5’UTR lengths (Nagalakshmi et al., 2008; Lawless et al., 2009; Xu et al., 2009; Pelechano et al., 2013). (C–D) Boxplot comparison of TE changes conferred by R13P for two groups of 249 genes with the highest or lowest Start30 PARS scores (C) or Plus15 PARS scores (D).
 
 To determine whether R13P evokes widespread discrimination against AUG codons in poor context, we calculated the changes in TE in mutant versus WT cells as the ratio of TER13P to TEWT (abbreviated ∆TER13P) for groups of genes with different Kozak context. Interestingly, R13P conferred a moderate, but significant reduction in TE (log2∆TER13P<0) for a group of 123 genes that contain non-preferred bases at every position surrounding the AUG codon, that is (C/U/G)-3(C/U/G)-2(C/U/G)-1(aug)(C/A)+4, (Shabalina et al., 2004) (Zur and Tuller, 2013) that were selected from a set of 4280 genes with adequate read-depth and annotated 5’UTR lengths of ≥5 nt (Figure 6B, ‘Poor’ context vs ‘All’). The same was true for a larger group of 743 genes containing the least preferred bases C/U at the critical −3 position regardless of the sequence at other positions (Figure 6B, ‘−3 C/U’ vs ‘All’). By contrast, for 200 genes with the preferred bases at all positions, ie. A-3A-2A-1(AUG)(G/U)+4, designated ‘Perfect’ context, or for 3537 genes with A/G at −3, we observed a modest increase in ∆TER13P values, compared to all genes (Figure 6B, ‘Perfect’, ‘−3A/G’ vs. ‘All’). Knowing that changes in SUI1 mRNA translation are associated with changes in mRNA abundance in the same direction, we repeated the analysis in Figure 6B considering changes in RPFs rather than TE in the mutant cells, and obtained essentially identical results (Figure 6—figure supplement 2D). These findings indicate that R13P increases discrimination against AUG start codons with non-preferred Kozak context at many genes in the manner observed for the SUI1 AUG (Figure 2C–D), while conferring an increase in TE for mRNAs with preferred context. Examples of genes exhibiting a relative increase in translation in R13P cells are presented in Figure 6—figure supplement 3 (panels A-C).
 
@@ -105,7 +165,7 @@ We showed above that the R13P mutation decreases translation of the elongated ve
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31250/elife-31250-fig7-v2.jpg)
 
-**Figure 7.:** (A) RPFs and mRNA reads on the CPA1 gene and its uORF with AUG in poor context, displaying a decreased ratio of RPFs in the uORF vs. CDS (RRO) in R13P vs. WT cells (ΔRRO = 0.58). The pink arrow missing a portion of the arrowhead designates the beginning of the CPA1 main CDS. (B) Notched box-plot of the ratios of log2TE values in R13P vs. WT cells (ΔTE) for a group of 96 genes containing an AUG-initiated uORF and exhibiting >32 RPFs in the main CDS and >2 RPFs in the uORF and a 5’UTR for the uORF of >2 nt in length; and of the subsets of 24 genes from this group with preferred A/G at −3, or the 72 genes with non-preferred C/U at −3, relative to the uORF AUG codon. (R13PC) Logos of upstream AUG context sequences for the 96 genes in (B), and the subsets of 30 genes with the greatest increase (RRO_up) or decrease (RRO_down) in uORF relative to CDS RPFs (RRO values) in R13P versus WT cells. (D) Box-plots of upstream AUG context scores calculated for positions −3 to −1 and +4 for the same genes analyzed in (C). (E) RPFs and mRNA reads on the beginning of the ALA1 main CDS (pink) and N-terminal extension (NTE, cyan schematic), displaying a decreased ratio of NTE/CDS RPFs in R13P vs. WT cells (ΔNTE/CDS = 0.67). Note that the ΔNTE/CDS ratio reflects the ratio of initiation at the upstream AUG to the combined initiation events at upstream AUG and main CDS AUG.
+**Figure 7.:** (A) RPFs and mRNA reads on the CPA1 gene and its uORF with AUG in poor context, displaying a decreased ratio of RPFs in the uORF vs. CDS (RRO) in R13P vs. WT cells (ΔRRO = 0.58). The pink arrow missing a portion of the arrowhead designates the beginning of the CPA1 main CDS. (B) Notched box-plot of the ratios of log2TE values in R13P vs. WT cells (ΔTER13P) for a group of 96 genes containing an AUG-initiated uORF and exhibiting >32 RPFs in the main CDS and >2 RPFs in the uORF and a 5’UTR for the uORF of >2 nt in length; and of the subsets of 24 genes from this group with preferred A/G at −3, or the 72 genes with non-preferred C/U at −3, relative to the uORF AUG codon. (C) Logos of upstream AUG context sequences for the 96 genes in (B), and the subsets of 30 genes with the greatest increase (RRO_up) or decrease (RRO_down) in uORF relative to CDS RPFs (RRO values) in R13P versus WT cells. (D) Box-plots of upstream AUG context scores calculated for positions −3 to −1 and +4 for the same genes analyzed in (C). (E) RPFs and mRNA reads on the beginning of the ALA1 main CDS (pink) and N-terminal extension (NTE, cyan schematic), displaying a decreased ratio of NTE/CDS RPFs in R13P vs. WT cells (ΔNTE/CDS = 0.67). Note that the ΔNTE/CDS ratio reflects the ratio of initiation at the upstream AUG to the combined initiation events at upstream AUG and main CDS AUG.
 
 Using bioinformatics, we identified 96 uORFs with AUG start codons that showed evidence of translation in one or more ribosome profiling datasets from WT or various mutant strains, which were obtained in our own laboratory or published by others (see Methods), and which displayed sufficient ribosome occupancies in both the WT and R13P strains analyzed here for quantitative analysis. Interestingly, the 72 genes containing uORFs in this group that harbor non-preferred C or U bases at the −3 position mimicked CPA1 and ICY1 in showing decreased RRO values in R13P versus WT cells, compared to the 24 genes with uORFs containing the preferred bases A or G at −3 (Figure 7B). Determination of AUG context logos revealed that the base frequencies for the entire group of 96 uORFs differ markedly from that of AUG codons for main CDSs, exhibiting a preference for U/C versus A/G at −3 and little or no preference at the other positions surrounding the uORF ATG (cf. ‘All’ in Figure 7C vs ‘All’ in Figure 6D), which presumably reflects a need for leaky-scanning of the uORFs. Interestingly, the preference for non-optimal U/C at −3 is even greater, and A is the least prevalent base at −3 for the group of 30 uORFs showing the greatest reductions in RRO in R13P cells (Figure 7C, RRO_down), which is consistent with increased discrimination against uORF AUGs in poor context in the mutant. By contrast, the preference for non-optimal U/C at −3 is eliminated for the 30 uORFs that exhibit the greatest increases in RRO in R13P cells (RRO_up), indicating higher frequencies of the preferred A/G bases at this position for this group of uORFs, which is consistent with decreased discrimination in the mutant against uORF AUGs containing relatively stronger sequence contexts (Figure 7C, RRO_up).
 
@@ -127,33 +187,615 @@ Considering that the sequence of the yeast and human eIF1A-NTT are quite similar
 
 ## Materials and methods
 
-## Plasmid constructions
+### Plasmid constructions
 
 Plasmids employed in this work are listed in Table 1. TIF11 mutations in plasmids p5633, p5635, p5637, p5638, p5640, p5642 and p5644 were introduced in plasmid p3990 using GeneArtSite-Directed Mutagenesis System (Invitrogen, ThermoFisher) and the appropriate set of complementary mutagenic oligonucleotide primers listed in Table S1, Supplementary file 1, following the manufacturer’s instructions except for the use of Phusion High fidelity Polymerase (New England BioLabs) for the first step of amplification. Plasmids pDH468, pDH469, pDH481, pDH471, pDH470, pDH473, pDH472, pDH475, pDH474, pDH478, and pDH476 were derived from p3390 by site-directed mutagenesis using the QuickChange XL kit (Agilent Technologies) and the appropriate primers in Table S1. Plasmids pPMB167 to pPMB170 were created by inserting a ~1.2 kb EcoRI-SalI fragment containing tif11-K4D, tif11-ΔG8, tif11-ΔG8ΔG9 and tif11-K10D alleles from p5635, p5640, pDH481 and pDH470, respectively, into the corresponding sites of YCplac181. Plasmids p6013 (tif11-R13P) and p6015 (tif11-K16D) for expression of eIF1A variants for biochemical analyses were made by PCR amplification of the appropriate DNA fragments from plasmids p5642 and pDH476, respectively and insertion of the resulting fragments into the NdeI-XmaI sites of pTYB2. All plasmids were sequenced to verify the presence of the intended mutations.
 
-## Yeast strain constructions
+**Table 1.**
+ Plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Description</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>YCplac111</td>
+      <td>sc LEU2 cloning vector</td>
+      <td>(Gietz and Sugino, 1988)</td>
+    </tr>
+    <tr>
+      <td>YEplac181</td>
+      <td>hc LEU2 cloning vector</td>
+      <td>(Gietz and Sugino, 1988)</td>
+    </tr>
+    <tr>
+      <td>YCplac22</td>
+      <td>sc TRP1 cloning vector</td>
+      <td>(Gietz and Sugino, 1988)</td>
+    </tr>
+    <tr>
+      <td>p3390/pDSO9</td>
+      <td>sc LEU2 TIF11 in YCplac111</td>
+      <td>(Choi et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>p5633</td>
+      <td>sc LEU2 tif11-K3E in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5635</td>
+      <td>sc LEU2 tif11-K4D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5638</td>
+      <td>sc LEU2 tif11-T6D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5637</td>
+      <td>sc LEU2 tif11-T6R in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5640</td>
+      <td>sc LEU2 tif11-ΔG8 in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5642</td>
+      <td>sc LEU2 tif11-R13P in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p5644</td>
+      <td>sc LEU2 tif11-G15D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH469</td>
+      <td>sc LEU2 tif11-K7A in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH468</td>
+      <td>sc LEU2 tif11- K7D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH481</td>
+      <td>sc LEU2 tif11-ΔG8ΔG9 in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH471</td>
+      <td>sc LEU2 tif11-K10A in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH470</td>
+      <td>sc LEU2 tif11-K10D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH473</td>
+      <td>sc LEU2 tif11-R13A in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH472</td>
+      <td>sc LEU2 tif11-R13D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH475</td>
+      <td>sc LEU2 tif11-R14A in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH474</td>
+      <td>sc LEU2 tif11-R14D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH478</td>
+      <td>sc LEU2 tif11-K16A in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDH476</td>
+      <td>sc LEU2 tif11-K16D in YCplac111</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3400/pDSO23</td>
+      <td>hc LEU2 TIF11 in YEplac181</td>
+      <td>(Choi et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>pPMB167</td>
+      <td>hc LEU2 tif11-K4D in YEplac181</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pPMB168</td>
+      <td>hc LEU2 tif11-ΔG8 in YEplac181</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pPMB169</td>
+      <td>hc LEU2 tif11-ΔG8ΔG9 in YEplac181</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pPMB170</td>
+      <td>hc LEU2 tif11- K10D in YEplac181</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p4281/YCpTIF5-G31R-W</td>
+      <td>sc TRP1 TIF5-G31R in YCplac22</td>
+      <td>(Valásek et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>p4280/YCpSUI3-S264Y-W</td>
+      <td>sc TRP1 SUI3-S264Y in YCplac22</td>
+      <td>(Valásek et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>p367</td>
+      <td>sc URA3 HIS4(ATG)-lacZ</td>
+      <td>(Donahue and Cigan, 1988)</td>
+    </tr>
+    <tr>
+      <td>p391</td>
+      <td>sc URA3 HIS4(TTG)-lacZ</td>
+      <td>(Donahue and Cigan, 1988)</td>
+    </tr>
+    <tr>
+      <td>p180</td>
+      <td>sc URA3 GCN4-lacZ</td>
+      <td>(Hinnebusch, 1985)</td>
+    </tr>
+    <tr>
+      <td>pPMB24</td>
+      <td>sc URA3 SUI1-lacZ</td>
+      <td>(Martin-Marcos et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pPMB25</td>
+      <td>sc URA3 SUI1-opt-lacZ</td>
+      <td>(Martin-Marcos et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pPMB28</td>
+      <td>sc URA3 SUI1UUU-lacZ</td>
+      <td>(Martin-Marcos et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pC3502</td>
+      <td>sc URA3 -3AAA−1 el.uORF1 GCN4-lacZ in YCp50</td>
+      <td>(Visweswaraiah et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pC4466</td>
+      <td>sc URA3 -3UAA−1 el.uORF1 GCN4-lacZ in YCp50</td>
+      <td>(Visweswaraiah et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pC3503</td>
+      <td>sc URA3 -3UUU−1 el.uORF1 GCN4-lacZ in YCp50</td>
+      <td>(Visweswaraiah et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pC3505</td>
+      <td>sc URA3 el.uORF1-less GCN4-lacZ in YCp50</td>
+      <td>(Visweswaraiah et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pTYB2-TIF11</td>
+      <td>TIF11 in pTYB2</td>
+      <td>(Acker et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>p6013</td>
+      <td>tif11-R13P in pTYB2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p6015</td>
+      <td>tif11-K16D in pTYB2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pRaugFFuug</td>
+      <td>Dual luciferase reporter LUCren(aug)-LUCfirefly (uug) in URA3 vector</td>
+      <td>(Kolitz et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>pRaugFFuug</td>
+      <td>Dual luciferase reporter LUCren(aug)-LUCfirefly (uug) in URA3 vector</td>
+      <td>(Kolitz et al., 2009)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strain constructions
 
 Yeast strains employed in this work are listed in Table 2. Derivatives of strain H3582 [MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3392 (sc URA3 TIF11)] were constructed by transforming H3582 to Leu+ with single copy (sc) or high copy (hc) LEU2 plasmids harboring the appropriate TIF11 alleles on synthetic complete medium (SC) lacking leucine (SC-Leu), and the resident TIF11+URA3 plasmid (p3392) was evicted by selecting for growth on 5-FOA medium. Derivatives of strain H3582 containing plasmid-borne SUI5 (p4281/YCpTIF5-G31R-W), SUI3-2 (p4280/YCpSUI3-S264Y-W) or empty vector were generated by transformation and selection on SC lacking leucine and tryptophan (SC-Leu-Trp). Strains FZY010/FZY011 and PMY337/PMY338 used for ribosome profiling are independent transformants of strains PMY290 and PMY318 with TRP1 vector YCplac22, respectively.
 
-## Biochemical assays using yeast cell extracts
+**Table 2.**
+ Yeast strains used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H3582</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3392 (sc URA3 TIF11)</td>
+      <td>(Fekete et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>PMY318</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3390 (sc LEU2 TIF11)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY284</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5633 (sc LEU2 tif11-K3E)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY285</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5635 (sc LEU2 tif11-K4D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY286</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5638 (sc LEU2 tif11-T6D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY287</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5637 (sc LEU2 tif11-T6R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY289</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5640 (sc LEU2 tif11-ΔG8)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY290</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5642 (sc LEU2 tif11-R13P)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY291</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5644 (sc LEU2 tif11-G15D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY320</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH469 (sc LEU2 tif11-K7A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY321</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH468 (sc LEU2 tif11-K7D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY322</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH481 (sc LEU2 tif11-ΔG8ΔG9)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY323</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH471 (sc LEU2 tif11-K10A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY324</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH470 (sc LEU2 tif11-K10D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY325</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH473 (sc LEU2 tif11-R13A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY326</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH472 (sc LEU2 tif11-R13D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY327</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH475 (sc LEU2 tif11-R14A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY329</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH474 (sc LEU2 tif11-R14D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY330</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH478 (sc LEU2 tif11-K16A)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY332</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH476 (sc LEU2 tif11-K16D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY354</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3400 (hc LEU2 TIF11)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY355</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB167 (hc LEU2 tif11-K4D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY357</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB168 (hc LEU2 tif11-ΔG8)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY358</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB169 (hc LEU2 tif11-ΔG8ΔG9)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY359</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB170 (hc LEU2 tif11- K10D)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY32</td>
+      <td>MATa ura3-52 leu2-3 leu2-112 trp1Δ−63 his4-301(ACG) sui1Δ::hisG pPMB02 (sc LEU2 sui1-K60E)</td>
+      <td>(Martin-Marcos et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>PMY293</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3390 (sc LEU2 TIF11) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY295</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5633 (sc LEU2 tif11-K3E) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY296</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5635 (sc LEU2 tif11-K4D) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY297</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5638 (sc LEU2 tif11-T6D) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY298</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5637 (sc LEU2 tif11-T6R) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY300</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5640 (sc LEU2 tif11-ΔG8) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY301</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5642 (sc LEU2 tif11-R13P) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY302</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5644 (sc LEU2 tif11-G15D) p4281 (sc TRP1 TIF5-G31R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY335</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3390 (sc LEU2 TIF11) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY310</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5633 (sc LEU2 tif11-K3E) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY311</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5635 (sc LEU2 tif11-K4D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY312</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5638 (sc LEU2 tif11-T6D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY313</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5637 (sc LEU2 tif11-T6R) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY315</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5640 (sc LEU2 tif11-ΔG8) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY316</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5642 (sc LEU2 tif11-R13P) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY317</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5644 (sc LEU2 tif11-G15D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY339</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH469 (sc LEU2 tif11-K7A) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY340</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH468 (sc LEU2 tif11-K7D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY341</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH481 (sc LEU2 tif11-ΔG8ΔG9) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY342</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH471 (sc LEU2 tif11-K10A) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY343</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH470 (sc LEU2 tif11-K10D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY344</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH473 (sc LEU2 tif11-R13A) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY345</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH472 (sc LEU2 tif11-R13D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY346</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH475 (sc LEU2 tif11-R14A) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY348</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH474 (sc LEU2 tif11-R14D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY349</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH478 (sc LEU2 tif11-K16A) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY351</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pDH476 (sc LEU2 tif11-K16D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY337</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3390 (sc LEU2 TIF11) YCplac22 (sc TRP1)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY338</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3390 (sc LEU2 TIF11) YCplac22 (sc TRP1)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY360</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3400 (hc LEU2 TIF11) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY362</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB167 (hc LEU2 tif11-K4D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY364</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB168 (hc LEU2 tif11-ΔG8) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY365</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB169 (hc LEU2 tif11-ΔG8ΔG9) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY366</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ pPMB170 (hc LEU2 tif11- K10D) p4280 (sc TRP1 SUI3-S264Y)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>PMY361</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p3400 (hc LEU2 TIF11) YCplac22 (sc TRP1)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>GP3511</td>
+      <td>MATα ura3-52 leu2-3 leu2-112 ino1 sui2∆ gcn2∆ pep4::LEU2 &lt; HIS4 lacZ,ura3−52 &gt; pAV1089 (SUI2,SUI3,GCD11-HIS,URA3)</td>
+      <td>(Pavitt et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>H4560</td>
+      <td>MATα ura3-52 leu2-3 leu2-112 ino1 sui2Δ gcn2Δ pep4::leu2::natMX sui3Δ::kanMX &lt; HIS4 lacZ,ura3−52 &gt; p5321 (SUI2,SUI3-2,GCD11-HIS,LEU2)</td>
+      <td>(Martin-Marcos et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>YAS2488</td>
+      <td>MATa leu2-3,−112 his4-53a trp1 ura3-52 cup1::LEU2/PGK1 pG/MFA2 pG</td>
+      <td>(Algire et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>FZY010</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5642 (sc LEU2 tif11-R13P) YCplac22 (sc TRP1)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>FZY011</td>
+      <td>MATa ura3-52 trp1Δ63 leu2-3, leu2-112 his4-301(ACG) tif11Δ p5642 (sc LEU2 tif11-R13P) YCplac22 (sc TRP1)</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Biochemical assays using yeast cell extracts
 
 Assays of β-galactosidase activity in whole cell extracts (WCEs) were performed as described previously (Moehle and Hinnebusch, 1991). At least four biological replicates (independent transformants) were employed for all β-galactosidase activity measurements. Unpaired t-tests were performed to compare wild type and mutant mean values and the change was considered significant if the two-tailed P value was < 0.05. Luminescence expressed from dual luciferase reporter plasmids pRaugFFuug and pRaugFFaug was measured as described previously (Kolitz et al., 2009). For Western analysis, WCEs from three biological replicates (independent transformants) were prepared by trichloroacetic acid extraction as previously described (Reid and Schatz, 1982) and immunoblot analysis was conducted as previously described (Nanda et al., 2009) using antibodies against eIF1A/Tif11 (Olsen et al., 2003), eIF1/Sui1 (Valásek et al., 2004) and eIF2Bε/Gcd6 (Bushman et al., 1993). Two technical replicates were performed using the same extracts and two different amounts of each extract differing by 2-fold were loaded in successive lanes. Enhanced chemiluminiscence (Amersham) was used to visualize immune complexes, and signal intensities were quantified by densitometry using NIH ImageJ software.
 
-## Biochemical analysis in the reconstituted yeast system
+### Biochemical analysis in the reconstituted yeast system
 
 WT eIF1 and eIF1A and eIF1A variants R13P and K16D were expressed in BL21(DE3) Codon Plus cells (Agilent Technologies) and purified using the IMPACT system (New England Biolabs) as described previously (Acker et al., 2007). His6-tagged WT eIF2, or the variant containing eIF2β-S264Y, were overexpressed in yeast strains GP3511 and H4560, respectively, and purified as described (Acker et al., 2007). 40S subunits were purified as described previously from strain YAS2488 (Acker et al., 2007). Model mRNAs with sequences 5′-GGAA[UC]7UAUG[CU]10C-3′ and 5′-GGAA[UC]7UUUG[CU]10C-3′ were purchased from Thermo Scientific. Yeast tRNAiMet was synthesized from a hammerhead fusion template using T7 RNA polymerase, charged with [35S]-methionine, and used to prepare radiolabeled eIF2·GDPNP·[35S]-Met-tRNAi ternary complexes ([35S]-TC), all as previously described (Acker et al., 2007). Yeast Met-tRNAiMet was purchased from tRNA Probes, LLC and used to prepare unlabeled TC in the same way. For eIF1A dissociation kinetics, the WT and mutant eIF1A proteins were labeled at their C-termini with Cys-Lys-ε-fluorescein dipeptide, using the Expressed Protein Ligation system as previously described (Maag and Lorsch, 2003).
 
-## TC and eIF1A dissociation kinetics
+#### TC and eIF1A dissociation kinetics
 
 TC dissociation rate constants (koff) were measured by monitoring the amount of [35S]-TC that remains bound to 40S·eIF1·eIF1A·mRNA (43S·mRNA) complexes over time, in the presence of excess unlabeled TC (chase), using a native gel shift assay to separate 40S-bound from unbound [35S]-TC. 43S·mRNA complexes were preassembled for 2 hr at 26°C in reactions containing 40S subunits (20 nM), eIF1 (1 µM), eIF1A (WT or mutant variants, 1 µM), mRNA (10 µM), and [35S]-TC (0.25 µM eIF2/0.1 mM GDPNP/1 nM [35S]-Met-tRNAi) in 60 µl of reaction buffer (30 mM Hepes-KOH (pH 7.4), 100 mM potassium acetate (pH 7.4), 3 mM magnesium acetate, and 2 mM dithiothreitol). To initiate each dissociation reaction, a 6 µl-aliquot of the preassembled 43S·mRNA complexes was mixed with 3 µl of 3-fold concentrated unlabeled TC chase (comprised of 2 µM eIF2/0.3 mM GDPNP/0.9 µM Met-tRNAi), to achieve in the final dissociation reaction a 300-fold excess of unlabeled TC (~300 nM) over labeled TC (~1 nM), based on the two different amounts of Met-tRNAi employed, and incubated for the prescribed period of time. A converging time course was employed so that all dissociation reactions are terminated simultaneously by the addition of native-gel dye and loaded directly on a running native gel. The fraction of [35S]-Met-tRNAi remaining in 43S complexes at each time point was determined by quantifying the 40S-bound and unbound signals using a PhosphorImaging, normalized to the ratio observed at the earliest time-point, and the data were fit with a single exponential equation (Kolitz et al., 2009).
 
 The kinetics of eIF1A dissociation were determined exactly as described earlier (Saini et al., 2014).
 
-## Ribosome footprint profiling and RNA-Seq
+### Ribosome footprint profiling and RNA-Seq
 
 Ribosome profiling was conducted essentially as described previously (Sen et al., 2016) as detailed below, on isogenic strains FZY010 and FZY011 (tif11-R13P), and PMY337 and PMY338 (WT TIF11), providing two biological replicates of each genotype, cultured in SC-Leu-Trp, except that cells were not treated with cycloheximide before harvesting, and cycloheximide was added to the lysis buffer at 5x the standard concentration. In addition, RNAse-trimmed ribosomes were purified by velocity sedimentation through sucrose gradients prior to extraction of mRNA; and Illumina Ribo-Zero Gold rRNA Removal Kit (Yeast) was employed on linker-ligated mRNA in lieu of poly(A) selection. Genes with less than 128 total mRNA reads, or less than 40 total RPF reads, in the four samples combined (two replicates of both WT and mutant strains) were excluded from the calculation of TE values.
 
-## Generation, processing, and analysis of sequence libraries of ribosome protected footprints or total mRNA fragments
+#### Generation, processing, and analysis of sequence libraries of ribosome protected footprints or total mRNA fragments
 
 tif11-R13P (FZY010, FZY011) and WT (PMY337, PMY338) yeast strains growing exponentially in SC medium at 30°C were harvested by vacuum filtration at room temperature, without prior treatment with cycloheximide, and quick-frozen in liquid nitrogen. Cells were lysed in a freezer mill with lysis buffer (20 mM Tris [pH 8.0], 140 mM KCl, 1.5 mM MgCl2, 1% Triton, 500 µg/mL cycloheximide). For ribosome footprint library preparation, 30 A260 units of extract were treated with 450U of RNAse I (Ambion, #AM2295) for 1 hr at 25°C on a Thermomixer at 700 rpm, and 80S ribosomes were purified by sedimentation through a sucrose density gradient as described (Guydosh and Green, 2014). Ribosome-protected mRNA fragments (footprints) were purified using a miRNeasy Mini kit (Qiagen) per the vendor's instructions. Following size selection and dephosphorylation, a Universal miRNA cloning linker (New England Biolabs, #S1315S) was ligated to the 3’ ends of footprints, followed by reverse transcription, circular ligation, rRNA subtraction, PCR amplification of the cDNA library, and DNA sequencing with an Illumina HiSeq system. For RNA-seq library preparation, total RNA was purified using miRNeasy Mini kit (Qiagen) from aliquots of the same extracts used for footprint library preparation, 5 µg total RNA was randomly fragmented at 70°C for 8 min in fragmentation reagent (Ambion #AM8740). Fragment size selection, library generation and sequencing were carried out as above, except Ribo-Zero Gold rRNA Removal Kit (Yeast) was employed to remove rRNAs after linker-ligation. Linker sequences were trimmed from Illumina reads and the trimmed fasta sequences were aligned to the S. cerevisiae ribosomal database using Bowtie (Langmead et al., 2009). The non-rRNA reads (unaligned reads) were then mapped to the S. cerevisiae genome using TopHat (Trapnell et al., 2009). Wiggle track normalization for viewing RPF or RNA reads in the IGV browser was conducted as follows. Wiggle files were produced from the alignment file, one each for genes on the Watson or Crick strand. The total reads on both strands were summed and a normalization factor q was calculated as 1000,000,000/(total reads on W + C strands). Wiggle files were then regenerated by multiplying all reads by the factor q, yielding the number of reads per 1000 million total reads (rpkm). uORFs with evidence of translation in WT and R13P cells were identified as follows. First, we employed the yassour-uorf program of (Brar et al., 2012) that identifies all potential uORFs within annotated 5’UTRs initiating with either AUG or a near-cognate codon and then quantifies the footprints in the +1 and −1 codons of all putative uORFs. A uORF was judged to be translated if the +1 to −1 footprint ratio exceeded four and the total footprint counts at +1 and −1 exceeded 15, and also if the reads in the zero frame are at least 50% of the reads in all three frames (ie. -c15-r4-z0.5 in the relevant line of code). This analysis was conducted on multiple published and unpublished datasets summarized in Table S2, Supplementary File 1. After excluding uORFs shorter than three codons, we identified 564 AUG-initiated uORFs and 5497 near-cognate uORFs with evidence of translation in one or more experiments. In the second step, we validated ~51% and ~44% of the AUG uORFs and near-cognate uORFs, respectively, by employing a distinct uORF identification tool, RibORF (Ji et al., 2015), which is based on the criteria of 3-nt periodicity and uniformity of read distribution across uORF codons. Applying a moderately stringent probability of prediction of >0.5, RibORF confimed that 291 AUG uORFs and 2429 near-cognate uORFs show evidence of translation in the datasets from which they were first identified by the yassour-uorf program. A bed file was generated containing the sequence coordinates of every uORF and combined with a bed file containing the coordinates of the 5’UTR, main CDS, and 3’UTR of each gene, and used to obtain footprint (FP) counts for 5’UTRs, uORFs, and main CDS in each strain examined, excluding the first and last nucleotide triplets of 5’UTRs, the first and last codons of uORFs, and the first 20 codons of CDS. mRNA read counts were determined for all codons of the main CDS. DESEQ (Anders and Huber, 2010) was employed for differential expression analysis of changes in TE, RPFs, or RRO values, and to impose cutoffs for minimum read numbers (as indicated in figure legends) and remove outliers.
 

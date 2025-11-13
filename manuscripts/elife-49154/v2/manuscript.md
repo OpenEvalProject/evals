@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.49154.001 Humans employ different strategies when making decisions. Previous research has reported reduced reliance on model-based strategies with aging, but it remains unclear whether this is due to cognitive or motivational factors. Moreover, it is not clear how aging affects the metacontrol of decision making, that is the dynamic adaptation of decision-making strategies to varying situational demands. In this cross-sectional study, we tested younger and older adults in a sequential decision-making task that dissociates model-free and model-based strategies. In contrast to previous research, model-based strategies led to higher payoffs. Moreover, we manipulated the costs and benefits of model-based strategies by varying reward magnitude and the stability of the task structure. Compared to younger adults, older adults showed reduced model-based decision making and less adaptation of decision-making strategies. Our findings suggest that aging affects the metacontrol of decision-making strategies and that reduced model-based strategies in older adults are due to limited cognitive abilities.
+Humans employ different strategies when making decisions. Previous research has reported reduced reliance on model-based strategies with aging, but it remains unclear whether this is due to cognitive or motivational factors. Moreover, it is not clear how aging affects the metacontrol of decision making, that is the dynamic adaptation of decision-making strategies to varying situational demands. In this cross-sectional study, we tested younger and older adults in a sequential decision-making task that dissociates model-free and model-based strategies. In contrast to previous research, model-based strategies led to higher payoffs. Moreover, we manipulated the costs and benefits of model-based strategies by varying reward magnitude and the stability of the task structure. Compared to younger adults, older adults showed reduced model-based decision making and less adaptation of decision-making strategies. Our findings suggest that aging affects the metacontrol of decision-making strategies and that reduced model-based strategies in older adults are due to limited cognitive abilities.
 
 ## Introduction
 
@@ -53,45 +53,53 @@ This task is able to dissociate model-free from model-based decision making. To 
 
 To vary the cost and benefits associated with model-based decision making in the two age groups, we introduced two factorial manipulations to this task: a stakes manipulation and a transition stability manipulation. First, similar to previous studies (Kool et al., 2017b; Patzelt et al., 2019), every trial started with a randomly picked cue that indicated whether it was a low-stakes or a high-stakes trial (Figure 1B). In low-stakes trials, participants obtained one point for every piece of space treasure that they received and in high-stakes trials, participants obtained five points for every piece of space treasure. Second, we manipulated the stability of the task transition structure (i.e., the mapping of spaceships to planets) in blocks of 80 trials (Figure 1C): Throughout stable-transitions blocks, all spaceships maintained the same destination planet. In variable-transitions blocks, every 6 to 14 trials, the pair of spaceships in one of the first-stage states swapped their destination planets. These reversals of the transition structure required participants repeatedly to update their internal model of the task and thus increased the demands on model-based decision making. At the beginning of each trial block, we informed participants about the transition stability condition for the upcoming trials.
 
-We compared the overall baseline-corrected reward obtained between age groups (Figure 2A). An effect-coded hierarchical regression analysis revealed an age-difference in reward (β¯age group = 0.25, 95% credible interval (CI) = [0.17, 0.33]), indicating that younger adults performed on average better than older adults.
+We compared the overall baseline-corrected reward obtained between age groups (Figure 2A). An effect-coded hierarchical regression analysis revealed an age-difference in reward ($\beta¯_{agegroup}$ = 0.25, 95% credible interval (CI) = [0.17, 0.33]), indicating that younger adults performed on average better than older adults.
 
-## Reinforcement-learning modeling
+![Figure 2.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig2-v2.jpg)
+
+**Figure 2.:** (A) Reward per trial (baseline-corrected). Gray dots indicate values for individual participants and bars indicate group means with error bars representing standard error of the mean. (B) Degree of model-based control. Model-based weights are depicted for the complete sample of younger and older adults as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Model-based weights are depicted for the complete sample of younger and older adults as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.
+
+### Reinforcement-learning modeling
 
 We used a hybrid reinforcement-learning model to assess the individual reliance on model-free versus model-based decision making. In this reinforcement-learning model, a model-free learner learns independent reward expectations for each of the four spaceships in the first-stage states as well as for each of the second-stage planets and updates these reward expectations based on reward prediction errors. In contrast, a model-based learner learns a transition structure that represents to which planet the choice of a spaceship will lead. By means of this knowledge about the task structure, model-based decision making can use the reward expectations associated with the two planets when selecting a spaceship.
 
 In order to capture individual differences in the reliance on these two strategies, the hybrid reinforcement-learning model includes a model-based weight that determines their relative contribution. Model-based weights close to 0 reflect model-free decision making and model-based weights close to one reflect model-based decision making. Intermediate values of the model-based weight indicate that behavior reflects a combination of both decision-making strategies. When fitting the model, the model-based weight was estimated as a free parameter. In order to test for differences in decision-making strategies between task conditions, we estimated for every participant four model-based weights: one for each combination of stakes condition and transition stability condition (see Materials and methods section for details).
 
-We compared model-based weights (Figure 2B) with an effect-coded hierarchical regression analysis. This analysis revealed evidence for a main effect of age group (β¯age group = 0.11, 95% CI = [0.05, 0.16]), indicating that older adults employed reduced model-based control compared to younger adults. This effect replicates previous findings (Eppinger et al., 2013). We found evidence for a main effect of stakes condition (β¯stakes = 0.05, 95% CI = [0.01, 0.08]), indicating increased model-based control in high-stakes trials. The analysis also revealed a main effect of transition stability condition (β¯transition = 0.04, 95% CI = [0.01, 0.07]), indicating that model-based control was lower during variable-transitions blocks compared to stable-transitions blocks. Finally, we obtained evidence for an interaction effect of age group and stakes condition (β¯age group × stakes = 0.12, 95% CI = [0.06, 0.18]) as well as and interaction effect of age group and transition stability condition (β¯age group × transition = 0.09, 95% CI = [0.03, 0.15]), which indicates that the effects of both stakes and transition stability condition were reduced in older adults.
+We compared model-based weights (Figure 2B) with an effect-coded hierarchical regression analysis. This analysis revealed evidence for a main effect of age group ($\beta¯_{agegroup}$ = 0.11, 95% CI = [0.05, 0.16]), indicating that older adults employed reduced model-based control compared to younger adults. This effect replicates previous findings (Eppinger et al., 2013). We found evidence for a main effect of stakes condition ($\beta¯_{stakes}$ = 0.05, 95% CI = [0.01, 0.08]), indicating increased model-based control in high-stakes trials. The analysis also revealed a main effect of transition stability condition ($\beta¯_{transition}$ = 0.04, 95% CI = [0.01, 0.07]), indicating that model-based control was lower during variable-transitions blocks compared to stable-transitions blocks. Finally, we obtained evidence for an interaction effect of age group and stakes condition ($\beta¯_{agegroup\timesstakes}$ = 0.12, 95% CI = [0.06, 0.18]) as well as and interaction effect of age group and transition stability condition ($\beta¯_{agegroup\timestransition}$ = 0.09, 95% CI = [0.03, 0.15]), which indicates that the effects of both stakes and transition stability condition were reduced in older adults.
 
-In the findings reported above, we only allowed the model-based weight to vary between experimental conditions. Thus, any potential changes in processes other than the reliance on different decision-making strategies would be forced on this parameter. To account for this potential confound we also fitted an exhaustive version of the reinforcement-learning model that varied all model parameters between experimental conditions (cf. Table S1 in Supplementary file 1). When analyzing differences in the model-based weights in this exhaustive model, we found a main effect of age group (β¯age group = 0.12, 95% credible interval (CI) = [0.07, 0.17]) and a main effect of stakes condition (β¯stakes = 0.04, 95% CI = [0.01, 0.07]), replicating the results from the standard model. Furthermore, consistent with the results from the standard model, there was an interaction effect of age group and stakes condition (β¯age group × stakes = 0.07, 95% CI = [0.01, 0.14]) as well as and interaction effect of age group and transition stability condition (β¯age group × transition = 0.12, 95% CI = [0.06, 0.19]). Thus, this analysis shows that the observed differences in model-based weights cannot be completely accounted for by decision processes other than model-based control.
+In the findings reported above, we only allowed the model-based weight to vary between experimental conditions. Thus, any potential changes in processes other than the reliance on different decision-making strategies would be forced on this parameter. To account for this potential confound we also fitted an exhaustive version of the reinforcement-learning model that varied all model parameters between experimental conditions (cf. Table S1 in Supplementary file 1). When analyzing differences in the model-based weights in this exhaustive model, we found a main effect of age group ($\beta¯_{agegroup}$ = 0.12, 95% credible interval (CI) = [0.07, 0.17]) and a main effect of stakes condition ($\beta¯_{stakes}$ = 0.04, 95% CI = [0.01, 0.07]), replicating the results from the standard model. Furthermore, consistent with the results from the standard model, there was an interaction effect of age group and stakes condition ($\beta¯_{agegroup\timesstakes}$ = 0.07, 95% CI = [0.01, 0.14]) as well as and interaction effect of age group and transition stability condition ($\beta¯_{agegroup\timestransition}$ = 0.12, 95% CI = [0.06, 0.19]). Thus, this analysis shows that the observed differences in model-based weights cannot be completely accounted for by decision processes other than model-based control.
 
-Additionally, we found reduced parameter estimates for the transition learning rate in older adults (β¯age group = 0.22, 95% CI = [0.14, 0.31]). The transition learning rate indicates how quickly observations about changes in the task transition structure are incorporated into the mental representation of the task (but see Materials and methods section for an alternative interpretation). The lower transition learning rates suggest that older adults have less accurate representations of the task transition structure than younger adults. Further parameters of the standard version of the reinforcement-learning model are reported in Table S2 in Supplementary file 1.
+Additionally, we found reduced parameter estimates for the transition learning rate in older adults ($\beta¯_{agegroup}$ = 0.22, 95% CI = [0.14, 0.31]). The transition learning rate indicates how quickly observations about changes in the task transition structure are incorporated into the mental representation of the task (but see Materials and methods section for an alternative interpretation). The lower transition learning rates suggest that older adults have less accurate representations of the task transition structure than younger adults. Further parameters of the standard version of the reinforcement-learning model are reported in Table S2 in Supplementary file 1.
 
 To sum up, these findings show reduced reliance on model-based decision making in older adults even in a task where model-based decision making leads to better outcomes. Beyond this, older adults also showed reduced metacontrol of decision-making strategies, that is less dynamic adaptation of decision-making strategies when their associated costs and benefits change.
 
-## Performance-matched sample
+### Performance-matched sample
 
-To investigate whether the reduced adaptation of model-based decision making was due to differences in task performance between age groups, we analyzed the metacontrol of decision-making strategies in a performance-matched subsample of participants. The matching was achieved by selecting the participants of both age groups that were the closest in terms of their mean baseline-corrected reward. This procedure yielded a subsample of 26 younger adults and 26 older adults (see Figure 3A for the distribution of reward in this subsample). In this performance-matched subsample, a hierarchical regression analysis of model-based weights (Figure 3B) showed evidence for a main effect of stakes condition (β¯stakes = 0.07, 95% CI = [0.01, 0.12]) and for an interaction effect of age group and stakes condition (β¯age group × stakes = 0.17, 95% CI = [0.07, 0.28]). This indicates a reduced effect of stakes condition in older adults. There was no conclusive evidence for any other main effect or interaction effect.
+To investigate whether the reduced adaptation of model-based decision making was due to differences in task performance between age groups, we analyzed the metacontrol of decision-making strategies in a performance-matched subsample of participants. The matching was achieved by selecting the participants of both age groups that were the closest in terms of their mean baseline-corrected reward. This procedure yielded a subsample of 26 younger adults and 26 older adults (see Figure 3A for the distribution of reward in this subsample). In this performance-matched subsample, a hierarchical regression analysis of model-based weights (Figure 3B) showed evidence for a main effect of stakes condition ($\beta¯_{stakes}$ = 0.07, 95% CI = [0.01, 0.12]) and for an interaction effect of age group and stakes condition ($\beta¯_{agegroup\timesstakes}$ = 0.17, 95% CI = [0.07, 0.28]). This indicates a reduced effect of stakes condition in older adults. There was no conclusive evidence for any other main effect or interaction effect.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig3-v2.jpg)
 
 **Figure 3.:** (A) Reward per trial (baseline-corrected) for participants in the performance-matched sample. Gray dots indicate values for individual participants and bars indicate group means. (B) Degree of model-based control for younger and older adults in the performance-matched sample as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.
 
-This matching procedure comes with the downsides of reduced statistical power and potentially biased samples. To control for these potential confounds, we analyzed model-based weights in the total sample with a hierarchical regression analysis while including mean baseline-corrected reward (task performance) and all its interaction terms with stakes condition and transition stability condition as covariates. Consistent with the results in the performance-matched subsample, we observed a main effect of stakes condition (β¯stakes = 0.13, 95% CI = [0.07, 0.19]) and an interaction effect of age group and stakes condition (β¯age group × stakes = 0.18, 95% CI = [0.11, 0.25]), which reflects the reduced effect of stakes condition in older adults.
+This matching procedure comes with the downsides of reduced statistical power and potentially biased samples. To control for these potential confounds, we analyzed model-based weights in the total sample with a hierarchical regression analysis while including mean baseline-corrected reward (task performance) and all its interaction terms with stakes condition and transition stability condition as covariates. Consistent with the results in the performance-matched subsample, we observed a main effect of stakes condition ($\beta¯_{stakes}$ = 0.13, 95% CI = [0.07, 0.19]) and an interaction effect of age group and stakes condition ($\beta¯_{agegroup\timesstakes}$ = 0.18, 95% CI = [0.11, 0.25]), which reflects the reduced effect of stakes condition in older adults.
 
 Together, these analyses replicate the finding of reduced metacontrol in older compared to younger adults while controlling for differences in overall task performance between age groups.
 
-## Age differences in transition revaluations
+### Age differences in transition revaluations
 
-To further examine how the changes in the task transition structure affected choice behavior in the two age groups, we compared trials in which participants observed a change in the task transition structure for the first time (revaluation trials) with all other trials from variable-transitions blocks (non-revaluation trials). In line with previous results of studies using similar sequential decision-making tasks, we expected slowed reactions immediately after surprising transitions (Deserno et al., 2015; Decker et al., 2016; Shahar et al., 2019), that is for second-stage responses in revaluation trials. A dummy-coded hierarchical regression analysis of log-transformed reaction times at the second stage of the task (Figure 4A) revealed a positive slope for older adults (β¯old = 0.32, 95% CI = [0.26, 0.39]), reflecting slowed reaction times for older adults compared to younger adults in non-revaluation trials, and a positive slope for revaluation trials (β¯revaluation = 0.15, 95% CI = [0.11, 0.18]), reflecting that younger adults slowed reaction times in revaluation trials compared to non-revaluation trials. Moreover, we found evidence for an interaction effect of revaluation trial and age group (β¯old × revaluation = -0.09, 95% CI = [-0.14, -0.05]). This interaction indicates that younger adults showed a greater slowing of reaction times on revaluation trials compared to non-revaluation trials than older adults and suggests that younger adults were more sensitive to surprising changes of the task structure than older adults.
+To further examine how the changes in the task transition structure affected choice behavior in the two age groups, we compared trials in which participants observed a change in the task transition structure for the first time (revaluation trials) with all other trials from variable-transitions blocks (non-revaluation trials). In line with previous results of studies using similar sequential decision-making tasks, we expected slowed reactions immediately after surprising transitions (Deserno et al., 2015; Decker et al., 2016; Shahar et al., 2019), that is for second-stage responses in revaluation trials. A dummy-coded hierarchical regression analysis of log-transformed reaction times at the second stage of the task (Figure 4A) revealed a positive slope for older adults ($\beta¯_{old}$ = 0.32, 95% CI = [0.26, 0.39]), reflecting slowed reaction times for older adults compared to younger adults in non-revaluation trials, and a positive slope for revaluation trials ($\beta¯_{revaluation}$ = 0.15, 95% CI = [0.11, 0.18]), reflecting that younger adults slowed reaction times in revaluation trials compared to non-revaluation trials. Moreover, we found evidence for an interaction effect of revaluation trial and age group ($\beta¯_{old\timesrevaluation}$ = -0.09, 95% CI = [-0.14, -0.05]). This interaction indicates that younger adults showed a greater slowing of reaction times on revaluation trials compared to non-revaluation trials than older adults and suggests that younger adults were more sensitive to surprising changes of the task structure than older adults.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig4-v2.jpg)
 
 **Figure 4.:** (A) Reaction times at the second stage during variable-transitions blocks for trials in which a change of the task transition structure was observed for the first time (revaluation trials) and all other trials (non-revaluation trials). Gray dots indicate mean values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals. (B) Relationship between model-based control and reaction time slowing in revaluation trials. Solid line represents prediction from the hierarchical regression model and dashed lines indicate 95% confidence region.
 
-To control whether slowed reaction times in revaluation trials could be explained by reduced response vigor due to lower reward expectations (Deserno et al., 2015), we derived trial-wise estimates for second-stage reward expectations from the reinforcement-learning model and included them as a predictor for log-transformed reaction times in the regression analysis. We still found a positive slope for revaluation trials (β¯revaluation = 0.15, 95% CI = [0.11, 0.18]) which was reduced for older adults (β¯old × revaluation = -0.09, 95% CI = [-0.14, -0.05]). The effect of reward expectations was comparably small (β¯expecation = -0.01, 95% CI = [-0.02, -0.00]) and there was no evidence that it was affected by age (β¯old × expecation = 0.01, 95% CI = [-0.01, -0.02]). Thus, slowed reaction times in revaluation trials cannot be explained by lower reward expectations in these trials.
+To control whether slowed reaction times in revaluation trials could be explained by reduced response vigor due to lower reward expectations (Deserno et al., 2015), we derived trial-wise estimates for second-stage reward expectations from the reinforcement-learning model and included them as a predictor for log-transformed reaction times in the regression analysis. We still found a positive slope for revaluation trials ($\beta¯_{revaluation}$ = 0.15, 95% CI = [0.11, 0.18]) which was reduced for older adults ($\beta¯_{old\timesrevaluation}$ = -0.09, 95% CI = [-0.14, -0.05]). The effect of reward expectations was comparably small ($\beta¯_{expecation}$ = -0.01, 95% CI = [-0.02, -0.00]) and there was no evidence that it was affected by age ($\beta¯_{old\timesexpecation}$ = 0.01, 95% CI = [-0.01, -0.02]). Thus, slowed reaction times in revaluation trials cannot be explained by lower reward expectations in these trials.
 
-The degree of model-based control modulated the slowing of reaction times in revaluation trials (Figure 4B). A hierarchical regression analysis of log-transformed reaction times showed an interaction of (low-stakes, variable-transitions) model-based weights and revaluation trials (β¯model-based × revaluation = 0.17, 95% CI = [0.04, 0.30]). This interaction indicates that participants relied more on model-based decision making the more their reactions were slowed in revaluation trials. When running the hierarchical regression analysis separately for both age groups, this interaction was replicated for older adults (β¯model-based × revaluation = 0.17, 95% CI = [0.01, 0.33]) and with slightly weaker evidence for younger adults (β¯model-based × revaluation = 0.14, 95% CI = [-0.05, 0.33], with 93% of the posterior mass above zero). For younger adults, this interaction is consistent with previous findings (Deserno et al., 2015; Shahar et al., 2019; Decker et al., 2016). When performing the same analysis with model-based weights from high-stakes trials in variable-transitions blocks, we found similar interactions of model-based weights and revaluation trials although with weaker evidence for this interaction when analyzing both age groups separately (complete sample: β¯model-based × revaluation = 0.20, 95% CI = [0.07, 0.34]); older adults: β¯model-based × revaluation = 0.16, 95% CI = [-0.02, 0.33]), with 96% of the posterior probability mass above zero; younger adults: β¯model-based × revaluation = 0.11, 95% CI = [-0.10, 0.33], with 83% of the posterior probability mass above zero).
+The degree of model-based control modulated the slowing of reaction times in revaluation trials (Figure 4B). A hierarchical regression analysis of log-transformed reaction times showed an interaction of (low-stakes, variable-transitions) model-based weights and revaluation trials ($\beta¯_{model-based\timesrevaluation}$ = 0.17, 95% CI = [0.04, 0.30]). This interaction indicates that participants relied more on model-based decision making the more their reactions were slowed in revaluation trials. When running the hierarchical regression analysis separately for both age groups, this interaction was replicated for older adults ($\beta¯_{model-based\timesrevaluation}$ = 0.17, 95% CI = [0.01, 0.33]) and with slightly weaker evidence for younger adults ($\beta¯_{model-based\timesrevaluation}$ = 0.14, 95% CI = [-0.05, 0.33], with 93% of the posterior mass above zero). For younger adults, this interaction is consistent with previous findings (Deserno et al., 2015; Shahar et al., 2019; Decker et al., 2016). When performing the same analysis with model-based weights from high-stakes trials in variable-transitions blocks, we found similar interactions of model-based weights and revaluation trials although with weaker evidence for this interaction when analyzing both age groups separately (complete sample: $\beta¯_{model-based\timesrevaluation}$ = 0.20, 95% CI = [0.07, 0.34]); older adults: $\beta¯_{model-based\timesrevaluation}$ = 0.16, 95% CI = [-0.02, 0.33]), with 96% of the posterior probability mass above zero; younger adults: $\beta¯_{model-based\timesrevaluation}$ = 0.11, 95% CI = [-0.10, 0.33], with 83% of the posterior probability mass above zero).
 
 This association between model-based decision making and reaction slowing suggests that individual differences in the reliance on model-based decision making might be related to differences in the accuracy of the task structure representation.
 
@@ -105,7 +113,7 @@ Previous studies did not investigate how aging affects metacontrol, that is the
 
 When interpreting our findings, it is important to consider the cross-sectional design of our study. Future research should use longitudinal study designs to better isolate aging-related effects from other cohort-related factors.
 
-## Model-based control and task structure representations in older adults
+### Model-based control and task structure representations in older adults
 
 The reduction of model-based control in older adults may reflect aging-related difficulties in representing the structure of the task. This notion is supported by two further findings: First, older adults showed reduced transition learning rates compared to younger adults. In the reinforcement learning model, the transition learning rate indicates how quickly the mental representation of the task is updated when a change in the task transition structure is observed (e.g., when choosing the blue spaceship now leads to the purple plant while previously it led to the red planet). Since in our task, a new transition reliably signaled a prolonged change in the task transition structure, an optimal decision-maker should immediately update the mental representation of the task accordingly. Lower transition learning rates in older adults indicate that they incorporated information about changes in the task transition structure more slowly (see Materials and methods section for an alternative interpretation), which suggests a more blurred representation of the task structure in older adults.
 
@@ -115,7 +123,7 @@ There are other explanations for slowed reaction times in response to surprising
 
 What are the potential neurobiological foundations of reduced model-based control in older adults? It has been suggested that aging-related alterations in neuromodulation reduce the signal-to-noise ratio in neural information processing and thus reduce representational distinctiveness (Li et al., 2001; Li and Rieckmann, 2014). This would make it more difficult to maintain and use a representation of the task structure which would impair model-based decision making. Furthermore, prefrontal and hippocampal brain regions are important for the representation of task structures (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019). Older adults show structural decline of these brain regions (Raz et al., 2005; Resnick et al., 2003), which might limit their ability to use a task model for model-based decision making. Indeed, underrecruitment of prefrontal brain regions in older adults is linked to impaired learning of task contingencies (Eppinger et al., 2015). Moreover, the importance of prefrontal brain regions for the representation of task structure is also in line with findings that transient inhibition of prefrontal areas leads to a reduction in model-based control and in the learning of sequential relations during value-based decision making (Smittenaar et al., 2013; Wittkuhn et al., 2018). Future research should attempt to link aging-related neurobiological changes more directly to differences in model-based decision making.
 
-## Reduced metacontrol in older adults
+### Reduced metacontrol in older adults
 
 In addition to overall reductions in model-based control, we also found that older adults showed reduced adaptation of decision-making strategies to varying reward magnitudes and structure learning or working memory demands. One interpretation of these results could be in terms of aging-related decline in dopaminergic neuromodulation (Bäckman et al., 2006) which has been suggested to be involved in the regulation of effortful cognitive processes (Cools, 2016; Westbrook and Braver, 2016). Alternatively, reduced metacontrol might be related to aging-related tissue loss in brain regions such as dorsal anterior cingulate cortex (Resnick et al., 2003) that have been implicated in the modulation of cognitive effort (Shenhav et al., 2013; Silvetti et al., 2018).
 
@@ -135,15 +143,70 @@ To conclude, the present study investigated how aging affects model-based decisi
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We tested 63 younger adults and 83 older adults for this study. We excluded data from 22 participants from data analysis: Data from one younger adult and one older adult were excluded because they were unable to respond on more than 50% of the trials in the decision-making task. Data from two older adults were excluded because they did not complete the decision-making task. Data from one older adult were excluded because of consistent perseverative choice behavior on the first stage of the task. Data from 17 older adults were excluded because of sub-threshold performance in a dementia screening test (Montreal Cognitive Assessment with a threshold of 26 points; Nasreddine et al., 2005). Thus, the effective sample included 62 younger adults (39 female, age range: 18–30 years, mean age: 22.7 years) and 62 older adults (32 female, age range: 57–80 years, mean age: 70.2 years). The size of the effective sample was geared to a previous aging study with a similar decision-making task (Eppinger et al., 2013).
 
 We assessed participants on different cognitive and motivational variables. Working memory was assessed with the digit span test (forward and backward) (Wechsler, 1997), verbal intelligence was assessed with the Spot-A-Word test (Lindenberger et al., 1993), processing speed was assessed with the Identical Pictures test (Lindenberger et al., 1993) and need for cognition was assessed with the German Need for Cognition short-scale (Bless et al., 1994). Consistent with previous findings in larger population-based samples (Li et al., 2004), we found reduced fluid abilities (working memory, processing speed) but increased crystallized abilities (verbal intelligence) in older adults. Furthermore, we found no differences between age groups in the self-reported tendency to engage in and enjoy effortful cognitive activities (Need for Cognition). See Table 1 for details on the psychometric assessment.
 
+**Table 1.**
+ Psychometric assessment of complete sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>N assessed (younger/older adults)</th>
+      <th>Mean (SD) younger adults</th>
+      <th>Mean (SD) older adults</th>
+      <th>Bayes Factor*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Working memory</td>
+      <td>62/61</td>
+      <td>18.42 (3.80)</td>
+      <td>15.95 (4.22)</td>
+      <td>31.88</td>
+    </tr>
+    <tr>
+      <td>Verbal intelligence</td>
+      <td>60/60</td>
+      <td>69.07% (11.82)</td>
+      <td>81.94% (5.71)</td>
+      <td>&gt;100</td>
+    </tr>
+    <tr>
+      <td>Processing speed (reaction times)</td>
+      <td>61/60</td>
+      <td>2032.17 s (315.87)</td>
+      <td>3319.93 s (516.42)</td>
+      <td>&gt;100</td>
+    </tr>
+    <tr>
+      <td>Processing speed (accuracy)</td>
+      <td>61/60</td>
+      <td>94.10% (6.02)</td>
+      <td>94.84% (5.48)</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Need for cognition</td>
+      <td>61/59</td>
+      <td>82.18 (13.25)</td>
+      <td>81.44 (13.24)</td>
+      <td>0.20</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Bayes Factors quantify the evidence in favor of one hypothesis (here: non-equal means) as opposed to a competing hypothesis (here: equal means). Commonly, Bayes Factors between 3 and 10 are considered as representing moderate evidence for the hypothesis and Bayes Factor above 10 as representing strong evidence for the hypothesis. Conversely, Bayes Factors between 1/3 and 1/10 represent moderate evidence for the competing hypothesis and Bayes Factors below 1/10 represent strong evidence for the competing hypothesis (Lee and Wagenmakers, 2013). We calculated Bayes Factors with the BayesFactors package (Morey et al., 2015)._
+
 All participants were compensated with a baseline payment of 5 € per hour and an additional performance-related payment between 6.83 € and 9.41 € (10 cents for every 60 points obtained in the decision-making task). All participants gave informed written consent. The ethics committee of Technische Universität Dresden approved the study.
 
-## Sequential decision-making task
+### Sequential decision-making task
 
 Every trial started with one of two different first-stage states that were identified by a pair of spaceships (see Figure 1). Spaceships were displayed side by side on the screen and each spaceship appeared on the left or the right side equally often. Throughout the experiment, pairings of spaceships remained constant. After selecting one spaceship, the participant transitioned to one of two second-stage states that were represented by two different planets (a red planet and a purple planet) and a corresponding alien. Both second-stage states were associated with a scalar reward (‘space treasure’) that the participant received after selecting the alien. Similar to previous studies, the reward magnitude available in each second-stage state drifted over the course of the experiment (Gaussian random walks with mean μ = 0, standard deviation σ = 2 and reflecting boundaries at 0 and 9; reward values were rounded to integers).
 
@@ -159,35 +222,101 @@ The experiment was implemented in Matlab and run on a standard PC. Participants 
 
 Prior to the experiment, participants were instructed extensively about the reward distribution, the transition structure and the stakes manipulation. To ensure that participants understood the task structure, we asked participants to pick the correct spaceship leading to a given planet up to a performance criterion of 10 correct consecutive choices of the two planets. Furthermore, participants had to report the correct number of earned points (combination of reward magnitude and stakes cue) on 10 consecutive correct answers in a row. During this instruction procedure, they also completed 20 practice trials with stable transitions and 20 practice trials with variable transitions.
 
-## Computational model
+### Computational model
 
 We used an established hybrid reinforcement-learning model (Daw et al., 2011; Gläscher et al., 2010; Kool et al., 2017b) to describe participants’ behavior in the decision-making task. In the task, every trial t started in one of two first-stage states (s1,t) where one of two possible actions (a1,t) could be selected. Depending on the action, the participant deterministically transitioned to a second-stage state (s2,t) where only one action (a2,t) was available and a reward (rt) obtained. The model consisted of a model-free and a model-based learner that both learned an expectation of long-term future reward Q(s,a) for each combination of state and action.
 
-Model-free learner. We assumed that the model-free learner assigned an intermediate reward expectation of 4.5 (as the arithmetic mean of the minimum and the maximum possible reward) to all actions in all states at the beginning of the experiment. The model-free learner then used the SARSA(λ) temporal difference learning algorithm (Rummery and Niranjan, 1994) to update reward expectations based on the discrepancy between the expected and experienced reward. In our task, this meant that at every stage, a reward prediction error δ was computed according toδ1,t=QMFs2,t,a2,t-QMFs1,t,a1,tδ2,t=rt-QMFs2,t,a2,t
+Model-free learner. We assumed that the model-free learner assigned an intermediate reward expectation of 4.5 (as the arithmetic mean of the minimum and the maximum possible reward) to all actions in all states at the beginning of the experiment. The model-free learner then used the SARSA(λ) temporal difference learning algorithm (Rummery and Niranjan, 1994) to update reward expectations based on the discrepancy between the expected and experienced reward. In our task, this meant that at every stage, a reward prediction error δ was computed according to
 
-This reward prediction error was then used to update reward expectations at the first and second stage:QMFs1,t,a1,t← QMFs1,t,a1,t+αδ1,t+αλδ2,t QMFs2,t,a2,t← QMFs2,t,a2,t+αδ2,t
+$$
+\delta_{1,t}=Q_{MF}s_{2,t},a_{2,t}-Q_{MF}s_{1,t},a_{1,t}
+$$
+
+
+
+$$
+\delta_{2,t}=r_{t}-Q_{MF}s_{2,t},a_{2,t}
+$$
+
+This reward prediction error was then used to update reward expectations at the first and second stage:
+
+$$
+Q_{MF}s_{1,t},a_{1,t}←Q_{MF}s_{1,t},a_{1,t}+\alpha\delta_{1,t}+\alpha\lambda\delta_{2,t}
+$$
+
+
+
+$$
+Q_{MF}s_{2,t},a_{2,t}←Q_{MF}s_{2,t},a_{2,t}+\alpha\delta_{2,t}
+$$
 
 Here, α is the reward learning rate (ranging between 0 and 1) that determined how strongly new information was incorporated into the reward expectations. λ is the eligibility trace decay (ranging between 0 and 1) that determined to what extent a reward prediction error affected the update of reward expectations for past actions (here, how the reward prediction error at the second stage affected the update of the reward expectations at the first stage).
 
-Model-based learner. The model-based learner predicted reward by learning a transition probability T(s2|s1,a1) that represented the probability of transitioning to the second-stage state s2 after selecting action a1 in the first-stage state s1. The reward expectations at the second-stage were then weighted by the transition probabilities:QMBs1,t,a1,t= ∑s2Ts2s1,t,a1,tQMB(s2,a2)
+Model-based learner. The model-based learner predicted reward by learning a transition probability T(s2|s1,a1) that represented the probability of transitioning to the second-stage state s2 after selecting action a1 in the first-stage state s1. The reward expectations at the second-stage were then weighted by the transition probabilities:
 
-Model-based reward expectations at the second stage are identical to second-stage model-free reward expectations because they are both an estimate of the immediate reward. Therefore, we setQMBs2,t,a2,t= QMFs2,t,a2,t
+$$
+Q_{MB}s_{1,t},a_{1,t}=\sums_{2}Ts_{2}s_{1,t},a_{1,t}Q_{MB}(s_{2},a_{2})
+$$
 
-Given that all participants practiced the task with variable transitions, we assumed that participants started without knowledge of the correct initial transition structure, such that T(s2|s1,a1)=0.5 for all values of s1, a1, and s2. After transitioning to a second-stage state, a state prediction error δSPE was computed asδtSPE=1-T(s2,t|s1,t,a1,t)
+Model-based reward expectations at the second stage are identical to second-stage model-free reward expectations because they are both an estimate of the immediate reward. Therefore, we set
 
-This state prediction error was used to update the transition probability for the experienced transition. Moreover, the transition probability to the alternative second-stage state (¬s2,t) had to be reduced to ensure that the sum of the both transition probabilities still equaled 1:Ts2,ts1,t,a1,t← Ts2,ts1,t,a1,t+ηδtSPET¬s2,ts1,t,a1,t← T¬s2,ts1,t,a1,t(1-η)
+$$
+Q_{MB}s_{2,t},a_{2,t}=Q_{MF}s_{2,t},a_{2,t}
+$$
+
+Given that all participants practiced the task with variable transitions, we assumed that participants started without knowledge of the correct initial transition structure, such that T(s2|s1,a1)=0.5 for all values of s1, a1, and s2. After transitioning to a second-stage state, a state prediction error δSPE was computed as
+
+$$
+\delta_{t}^{SPE}=1-T(s_{2,t}|s_{1,t},a_{1,t})
+$$
+
+This state prediction error was used to update the transition probability for the experienced transition. Moreover, the transition probability to the alternative second-stage state (¬s2,t) had to be reduced to ensure that the sum of the both transition probabilities still equaled 1:
+
+$$
+Ts_{2,t}s_{1,t},a_{1,t}←Ts_{2,t}s_{1,t},a_{1,t}+η\delta_{t}^{SPE}
+$$
+
+
+
+$$
+T¬s_{2,t}s_{1,t},a_{1,t}←T¬s_{2,t}s_{1,t},a_{1,t}(1-η)
+$$
 
 Here, η is the transition learning rate (ranging between 0 and 1) that defined how quickly transition probabilities were updated. In stable-transitions blocks, we set η = 1 which is consistent with previous implementations for this task where no changes in the transition structure occurred; thus η was a free parameter only in variable-transitions blocks.
 
-Due to the anti-correlated transition structure of the task (the two actions in a first-stage state led always to different second-stage states), it was possible to make an inference where the alternative action in the first-stage state ¬a1,t would have led to. We therefore implemented a counterfactual update of the transition probabilities, similar to the update based on the experienced transition described above:δtCF-SPE=1-Ts2,ts1,t,¬a1,tT¬s2,ts1,t,¬a1,t← T¬s2,ts1,t,¬a1,t+ηCFδtCF-SPETs2,ts1,t,¬a1,t← Ts2,ts1,t,¬a1,t(1-ηCF)
+Due to the anti-correlated transition structure of the task (the two actions in a first-stage state led always to different second-stage states), it was possible to make an inference where the alternative action in the first-stage state ¬a1,t would have led to. We therefore implemented a counterfactual update of the transition probabilities, similar to the update based on the experienced transition described above:
+
+$$
+\delta_{t}^{CF-SPE}=1-Ts_{2,t}s_{1,t},¬a_{1,t}
+$$
+
+
+
+$$
+T¬s_{2,t}s_{1,t},¬a_{1,t}←T¬s_{2,t}s_{1,t},¬a_{1,t}+η_{CF}\delta_{t}^{CF-SPE}
+$$
+
+
+
+$$
+Ts_{2,t}s_{1,t},¬a_{1,t}←Ts_{2,t}s_{1,t},¬a_{1,t}(1-η_{CF})
+$$
 
 Here, ηCF is the transition learning rate for counterfactual transitions. We set ηCF = η because model comparisons indicated higher goodness of fit for a model with a single transition learning rate based on the Akaike information criterion in both age groups (see Table S4 in Supplementary file 1).
 
 While this model assumes incremental learning of changes in the task transition structure, it is also conceivable that an agent maintains representations of the four possible task transition structures in working memory and activates them according to the observed transitions. With the current task design, we cannot dissociate between these two mechanisms. In both cases, higher transition learning rates reflect better abilities to use an accurate representation of the task transition structure because any inaccuracies in the use of a task model would be forced upon this model parameter.
 
-Choice rule. Model-free and model-based reward expectations in the first stage were integrated using a model-based weight ω (ranging from 0 to 1):Qnets1,a1=1-ωQMFs1,a1+ωQMB(s1,a1)
+Choice rule. Model-free and model-based reward expectations in the first stage were integrated using a model-based weight ω (ranging from 0 to 1):
 
-We used a softmax function to map reward expectations to choice probabilities:Pa1,t=a1s1,t= exp⁡(βQnets1,t,a1+π⋅repa1+ρ⋅respa1)∑a1'exp⁡(β[Qnets1,t,a1'+π⋅rep(a1')+ρ⋅resp(a1')])
+$$
+Q_{net}s_{1},a_{1}=1-\omegaQ_{MF}s_{1},a_{1}+\omegaQ_{MB}(s_{1},a_{1})
+$$
+
+We used a softmax function to map reward expectations to choice probabilities:
+
+$$
+Pa_{1,t}=a_{1}s_{1,t}=\frac{exp⁡(\betaQ_{net}s_{1,t},a_{1}+\pi⋅repa_{1}+ρ⋅respa_{1})}{\sum_{a_{1}'}exp⁡(\beta[Q_{net}s_{1,t},a_{1}'+\pi⋅rep(a_{1}')+ρ⋅resp(a_{1}')])}
+$$
 
 Here, β is the inverse softmax temperature (left-bounded to 0) that controlled how strongly choice probabilities were guided by reward expectations. The variable rep(a1) was defined as one if a1 was the action that was chosen in the previous trial, and 0 otherwise. The choice stickiness parameter π (unbounded) captured choice perseveration (π >0) or choice switching (π <0). The variable resp(a1) was defined as one if the action a1 could be selected with the same response key as the response key that was used in the previous trial, and 0 otherwise. The response stickiness parameter ρ captured perseveration (ρ >0) or switching (ρ <0) of the response key at the first stage.
 
@@ -197,15 +326,15 @@ To detect differences in decision-making strategies between task conditions, a d
 
 In the exhaustive version of the model, we varied all parameters between all four task conditions (apart from η which was only varied between low-stakes trials and high-stakes trials in the variable-transitions blocks, see above), leading to overall 26 free parameters.
 
-## Hierarchical regression analysis
+### Hierarchical regression analysis
 
 Hierarchical Bayesian regression analyses were conducted in R Studio using the brms package (Bürkner, 2017). This package interfaces with the probabilistic programming language Stan and draws samples from the posterior distribution over model parameters by means of a Markov Chain Monte Carlo procedure and a NUTS sampling algorithm. For each model, we ran four independent chains with 2000 iterations each, of which the first 1000 were discarded as warm-up, leaving 4000 posterior samples in total. If effective sample size was below 400 for reported parameters, we increased the number of iterations accordingly. We assessed the convergence of all chains via the Gelman-Rubin statistic (R-hat <1.1) for all parameters.
 
 All regression models included a random-by-participant intercept and, where multiple data points for each participant and condition were available (i.e., in the analysis of reaction times), we additionally included a random-by-participant slope for all within-subject factors and their interaction terms. When there was an equal number of data points per condition, we used effect coding for categorical variables (younger adults = 0.5, older adults = −0.5, low-stakes = −0.5, high-stakes = 0.5, stable-transitions = 0.5, variable-transitions = −0.5) which allows interpreting regression coefficients as main and interaction effects. In the analysis of revaluation trials, categorical variables were dummy-coded (younger adults = 0, older adults = 1, non-revaluation trial = 0, revaluation trial = 1) due to the unequal number of revaluation trials and non-revaluation trials. Moreover, in the analysis of revaluation trials, we only considered trials from variable-transitions blocks and excluded trials with reaction times below 200 ms when analyzing differences in reaction times. Weakly informative default priors were used.
 
-Each reported regression coefficient is described by the mean of its marginal posterior distribution β- and the 95% credible interval that is computed as the [.025,. 975] percentile interval and can be interpreted as including the parameter of interest with 95% probability. A full report on all group-level coefficients can be found in the Tables S5-S21 in Supplementary file 1.
+Each reported regression coefficient is described by the mean of its marginal posterior distribution $\beta-$ and the 95% credible interval that is computed as the [.025,. 975] percentile interval and can be interpreted as including the parameter of interest with 95% probability. A full report on all group-level coefficients can be found in the Tables S5-S21 in Supplementary file 1.
 
-## Performance-matching procedure
+### Performance-matching procedure
 
 We matched participants between age groups based on their mean baseline-corrected reward (i.e., the difference between obtained reward and the mean reward available at the two planets, before multiplication in high-stakes trials) by assigning to each participant a candidate partner from the respective other age group such that the absolute difference in mean baseline-corrected rewards between both participants was minimized. Pairs of participants who were mutually assigned as each other’s candidate partner were included into the performance-matched sample.
 

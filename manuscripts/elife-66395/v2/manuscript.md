@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Although advance has been made in understanding the pathogenesis of mature T-cell neoplasms, the initiation and progression of angioimmunoblastic T-cell lymphoma (AITL) and peripheral T-cell lymphoma, not otherwise specified (PTCL-NOS), remain poorly understood. A subset of AITL/PTCL-NOS patients develop concomitant hematologic neoplasms (CHN), and a biomarker to predict this risk is lacking. We generated and analyzed the mutation profiles through 537-gene targeted sequencing of the primary tumors and matched bone marrow/peripheral blood samples in 25 patients with AITL and two with PTCL-NOS. Clonal hematopoiesis (CH)-associated genomic alterations, found in 70.4% of the AITL/PTCL-NOS patients, were shared among CH and T-cell lymphoma, as well as concomitant myeloid neoplasms or diffuse large B-cell lymphoma (DLBCL) that developed before or after AITL. Aberrant AID/APOBEC activity-associated and tobacco smoking-associated mutational signatures were respectively enriched in the early CH-associated mutations and late non-CH-associated mutations during AITL/PTCL-NOS development. Moreover, analysis showed that the presence of CH harboring ≥2 pathogenic TET2 variants with ≥15% of allele burden conferred higher risk for CHN (p=0.0006, hazard ratio = 14.01, positive predictive value = 88.9%, negative predictive value = 92.1%). We provided genetic evidence that AITL/PTCL-NOS, CH, and CHN can frequently arise from common mutated hematopoietic precursor clones. Our data also suggests smoking exposure as a potential risk factor for AITL/PTCL-NOS progression. These findings provide insights into the cell origin and etiology of AITL and PTCL-NOS and provide a novel stratification biomarker for CHN risk in AITL patients. R01 grant (CA194547) from the National Cancer Institute to WT.
+Background:Although advance has been made in understanding the pathogenesis of mature T-cell neoplasms, the initiation and progression of angioimmunoblastic T-cell lymphoma (AITL) and peripheral T-cell lymphoma, not otherwise specified (PTCL-NOS), remain poorly understood. A subset of AITL/PTCL-NOS patients develop concomitant hematologic neoplasms (CHN), and a biomarker to predict this risk is lacking.Methods:We generated and analyzed the mutation profiles through 537-gene targeted sequencing of the primary tumors and matched bone marrow/peripheral blood samples in 25 patients with AITL and two with PTCL-NOS.Results:Clonal hematopoiesis (CH)-associated genomic alterations, found in 70.4% of the AITL/PTCL-NOS patients, were shared among CH and T-cell lymphoma, as well as concomitant myeloid neoplasms or diffuse large B-cell lymphoma (DLBCL) that developed before or after AITL. Aberrant AID/APOBEC activity-associated and tobacco smoking-associated mutational signatures were respectively enriched in the early CH-associated mutations and late non-CH-associated mutations during AITL/PTCL-NOS development. Moreover, analysis showed that the presence of CH harboring ≥2 pathogenic TET2 variants with ≥15% of allele burden conferred higher risk for CHN (p=0.0006, hazard ratio = 14.01, positive predictive value = 88.9%, negative predictive value = 92.1%).Conclusions:We provided genetic evidence that AITL/PTCL-NOS, CH, and CHN can frequently arise from common mutated hematopoietic precursor clones. Our data also suggests smoking exposure as a potential risk factor for AITL/PTCL-NOS progression. These findings provide insights into the cell origin and etiology of AITL and PTCL-NOS and provide a novel stratification biomarker for CHN risk in AITL patients.Funding:R01 grant (CA194547) from the National Cancer Institute to WT.
 
 ## Introduction
 
@@ -26,7 +26,101 @@ Genetically, AITL is characterized by a number of genomic mutations in TET2, RHO
 
 ## Materials and methods
 
-## Patients and study samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HyperPlus Kit</td>
+      <td>Roche</td>
+      <td>Catalog # 07962363001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Twist Hybridization and Wash Kit</td>
+      <td>Twist Bioscience</td>
+      <td>Catalog #101025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lymphoma pilot (16X), lot 3020</td>
+      <td>Twist Bioscience</td>
+      <td>Catalog #3020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiSeq 3000/4000 SBS Kit</td>
+      <td>Illumina</td>
+      <td>Catalog # FC-410-1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiSeq 3000/4000 PE Cluster Kit</td>
+      <td>Illumina</td>
+      <td>Catalog #PE-410-1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiSeq 4000 System</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_016386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NextGENe</td>
+      <td>SoftGenetics, LLC</td>
+      <td>RRID:SCR_011859 Catalog # NG001 version 2.4.2.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MutSignature</td>
+      <td>Fantini, 2021, https://github.com/dami82/mutSignatures</td>
+      <td>Version 2.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maftools</td>
+      <td>Mayakonda, 2021, https://github.com/PoisonAlien/maftools</td>
+      <td>Version 2.4.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R base package</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_002394version 4.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798version 5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients and study samples
 
 All tissue samples (27 lymph node [LN] tissue specimens, 27 BM aspirate/PB samples) were collected from 25 AITL or 2 PTCL NOS patients who were diagnosed or confirmed from June 2010 to December 2019 following World Health Organization classification criteria by attending hematopathologists at NYP/Weill Cornell Medical Center, and clinical Information was obtained from electronic clinical records. Of these 27 study cases, 4 were initially diagnosed with PTCL with THF phenotype (Supplementary file 1) and were included in the AITL group based on their similar clinical and molecular features as recently proposed by WHO (Swerdlow et al., 2017). The two PTCL-NOS cases do not show significant expression of TFH-associated markers based on immunohistology. The clinical-pathological features of these two cases are as follows: patient #2: mesenterial lymphadenopathy found on CT scan during work-up for renal transplant, no morphological features of AITL, predominantly small cells. The T-cells were positive for CD2, CD3, CD5, CD7, CD4, negative for CD8, CD10, BCL6, and PD-1, diagnosed as PTCL-NOS. Patient #18: abdominal and cervical lymphadenopathy, large pleomorphic cells. The T-cells were positive for CD2, CD3, CD5, CD8, TIA-1, granzyme B, TCR alpha-beta, negative for CD7, CD4, CD10, CD56, CD57. diagnosed as PTCL-NOS, with cytotoxic phenotype.
 
@@ -36,23 +130,23 @@ This study was conducted in accordance with the Declaration of Helsinki regulati
 
 Genomic DNA was extracted from LN tissue and BM or PBMC cell pellets following the manufacturer’s instructions (QIAamp DNA Mini Kit, Qiagen, Germantown). DNA samples and sequencing libraries used in targeting sequencing as described below were quantitated by Tape Station (Agilent Technologies, Santa Clara) and Qubit (Thermo Fisher Scientific, Singapore).
 
-## T-cell targeted sequencing
+### T-cell targeted sequencing
 
 A 537-gene targeted sequencing panel (Supplementary file 2), based on hybridization capture method for sequencing library construction and selection, was designed to investigate the genomic profile of the primary tumors and the BM/PB tissues (Fiore et al., 2020b). The genomic regions covered by sequencing include coding exons and splice sites of these genes (target region: ~3.2 Mb) that were reported being recurrently mutated (>2) in mature T-cell neoplasms, as well as genomic regions corresponding to recurrent translocations. Using an input of genomic DNA of at least 100 ng isolated from frozen tissues or FFPE samples, the NGS libraries were constructed using the KAPA Hyperplus Kit (Roche, Basel, Switzerland), and hybrid selection was performed with the probes from the customized Twist Library Prep Kit (Twist Biosciences, San Francisco, CA), according to the manufacturer’s protocols. Multiplexed libraries were sequenced using 150 bp paired end HiSeq 4000 sequencers (Illumina, San Diego, CA).
 
 NextGENe software (SoftGenetics, State College, PA) was used to perform bioinformatic analysis (SNV and INDEL variant calls) with standard settings recommended by the manufacturer. Specifically, the pipeline settings are as follows: read quality reject or trimming (Q score <20, ≥3 bases with Q score ≤ 10), Allowable Mismatched Bases (0), Allowable Ambiguous Alignments (50), Seed (40 bases), Move Step (15 bases), Allowable Alignments (100), Matching Base Percentage ≥ 97.0, Detect Large Indels (TRUE), Sequence Range Checked (FALSE), Hide Unmatched Ends (TRUE), Except for Homozygous (FALSE), Mutation Filter Use Original (TRUE), Variation Mutation Percentage ≤ 5.00, Variation SNP Allele ≤ 5 Counts, Variation Total Coverage ≤ 50, Indels Mutation Percentage ≤ 5.00, Indels SNP Allele ≤ 5 Counts, Indels Total Coverage ≤ 50, HomoIndels Mutation Percentage ≤ 5.00, HomoIndels SNP Allele ≤ 5 Counts, HomoIndels Total Coverage ≤ 50, Perform in-read phasing (TRUE), Max gap between two variants 1 (0–3), Phaseable reads percentage ≥ 50.00, Max Phase alleles count (2), Load Assembled Result Files (FALSE), Load Sage Data (FALSE), Load Paired Reads (TRUE), Min Pair End Gap (0), Max Pair End Gap (200), Save Matched Reads (FALSE), Highlight Anchor Sequence (FALSE), Ambiguous Gain/Loss (FALSE), and Detect Structure Variations (FALSE). Additionally, cutoff values of the post-alignment filter parameters for the VAF, population frequencies, strand balance ratio relative to counts measuring for strand bias, and function prediction were set at 5%, 0.01%, 1:5, and >2, respectively. Human_v37p10_dbsnp135 (hg19) was used as human reference genome for alignment.
 
-## Myeloid NGS panel
+### Myeloid NGS panel
 
 Targeted enrichment of 45 genes recurrently mutated in myeloid malignancies (Supplementary file 2) was performed using the Thunderstorm system with a customized primer panel (Cheng et al., 2017). The primers target coding exons of the genes, leading to a total of 726 amplicons. Libraries were prepared by microdroplet-based PCR target enrichment method from DNA, followed by sequencing using the Illumina MiSeq yielding 260 bp paired end reads. Sequencing data were analyzed and reported with a customized analytical pipeline. This NGS panel testing was performed in a clinical lab CLIA-certified and accredited by the College of American Pathologists.
 
-## Data analysis
+### Data analysis
 
 Most of the data analysis were conducted with GraphPad/Prism 5 software and various R packages, including base packages, ggplot2, ComplexHeatmap, Maftools, and MutSignatures. The survival comparison was analyzed using Kaplan–Meier curves (log-rank test, significance defined as p<0.05). z-test was conducted with an online calculator (https://www.socscistatistics.com/tests/ztest/default2.aspx).
 
 ## Results
 
-## Mutation profiling of AITL/PTCL-NOS and matched BM/PB supports a potential origin of AITL/PTCL-NOS from mutated hematopoietic precursors associated with CH
+### Mutation profiling of AITL/PTCL-NOS and matched BM/PB supports a potential origin of AITL/PTCL-NOS from mutated hematopoietic precursors associated with CH
 
 For mutation profiling, we sequenced 27 pairs of AITL or PTCL-NOS samples using a 537-gene targeted NGS panel that covered recurrently mutated genes associated with T-cell lymphomas (Fiore et al., 2020b). Of the genomic regions targeted by the panel, 90% had a coverage depth of >1000. Those sequenced samples included 27 diagnostic LN specimens from patients with AITL (n = 25) or PTCL-NOS (n = 2) and their corresponding BM (n = 21) or PB samples (n = 6) from our archived specimens (hereafter denoted as AITL/PTCL-NOS). The overall genomic and pathological findings showed that of the 27 BM/PB samples, 10 had no detectable involvement by AITL or PTCL-NOS (37%), while 17 were involved by the neoplastic T-cells (63%) of variable abundance (Supplementary file 1). One BM sample showed concomitant diagnostic involvement by an MPN (patient #20) (Supplementary file 1).
 
@@ -60,17 +154,61 @@ The genomic alterations found in the matched BM/PB can be due to (1) BM/PB invol
 
 We identified in the matched BM/PB specimens 44 variants from 14 genes, excluding the variants attributed to the BM/PB involvement by AITL/PTCL-NOS as described above (Figure 1B). These alterations included 17 missense (38.64%) and 12 nonsense (27.27%) SNVs, 6 frameshift (13.64%) deletions, 7 frameshift (15.91%), and 1 in-frame insertions (Figure 1, Figure 1—figure supplement 3, Supplementary file 4). Among these 44 somatic mutations, 37 mutations, identified in 19 of the 27 (70.4%) cases, were shared with those found in the primary lymphoma, and 7 were BM/PB specific (Figure 1, Supplementary file 3). The recurrent shared mutations were primarily restricted to TET2 (74% of the cases) and DNMT3A (37% of the cases), consistent with the top CH-associated genes previously reported (1C) (Genovese et al., 2014). All but three (patient #5, #20, #24) of the cases with CH-associated mutations in the BM/PB did not have a dx of an overt myeloid neoplasm. These CH-associated mutations presumably were acquired very early in the common ancestral hematopoietic precursor cells from which both the myeloid and T-cell lineages are derived. Consequently, we defined these shared CH-associated variants as early mutations as seen below. In eight patients (patient #7, #9, #11, #12, #17, #21, #23, #26) (29.6%), no CH-associated mutations were detected in the BM or PB.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig1-v2.jpg)
+
+**Figure 1.:** (A) Presence of clonal hematopoiesis (CH) in patients with AITL and PTCL-NOS. Dot plots showing the detected variants and their variant allele frequencies (VAFs) in the AITL and PTCL-NOS (lymph node [LN]) and their matched BM/PB in representative AITL and PTCL-NOS cases with CH. The black circles indicate variants specific to the lymphomas, and the variants shared between the primary lymphomas and CH are highlighted in red. The variants attributed to lymphoma only are boxed. Additional detailed descriptions of these illustrative cases are provided in Appendix 1. (B) Venn diagram showing the distribution of the shared, lymphoma or BM/PB-specific variants identified in the diagnostic LN and paired BM/PB samples. The shared variants are defined as variants identified in both the primary lymphoma and the BM/PB, the latter as CH-related variants. The variants predicted to be due only to lymphoma involvement in BM/PB have been excluded (see also Figure 1—figure supplement 1A for the distribution of all variants). (C) Summary of the CH-associated mutations in the BM/PB and LN, and the mutations postulated to accumulate at a later stage of lymphoma development (late mutations). The CH-associated mutations are shared between the primary lymphomas and the BM/PB and can be considered as early lesions in AITL/PTCL. The heatmaps show the top recurrent mutations in both categories. Stacked bar plots show the type of variants and the mutation frequency (relative to our cohort) for each of the major mutated genes in the LN and BM/PB samples. Pt: patient; T: tumor. (D) Comparison of the distribution of disruptive and missense mutations in the CH-associated and late mutations. Statistical significance was determined by (D) z test measuring proportion difference. *p<0.05; **p<0.01; ***p<0.001; ****p,0.0001; NS, not significant. P-Value<0.05 is considered statistically significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Venn diagram illustrates the distribution of the shared, and the lymph node (LN) or BM/PB-specific mutations. Note that the variants detected in the BM/PB due to lymphoma involvement are included in this diagram, in contrast to Figure 1B presented in the main text. (B) The type of variants and mutation frequencies (relative to the total number of cases) for the top six mutated genes identified in AITL/peripheral T-cell lymphoma, not otherwise specified (PTCL-NOS) and matched BM/PB are shown. Different colors represent variant classifications as indicated. (C) Dot plot comparing variant allele frequencies (VAFs) of the clonal hematopoiesis (CH)-associated variants and those related to lymphoma involvement in the BM/PB specimens. Mean ± SEM of the VAFs is shown for each subgroup. (D) The proportion of the cases with or without BM or PB involvement by the neoplastic T-cells (IVS), or with/without CH, respectively, is summarized. Statistical significance in (C) was determined by t test. p-Value<0.05 is considered statistically significant.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Red color highlights the clonal hematopoiesis (CH)-associated variants shared between the lymph node (LN) and BM/PB compartments. The black circles indicate variants specific to the lymphomas, the pink circles represent mutations specific to BM/PB. The cases that were not presented in Figures 1 and 3 are shown in this figure supplement. In patient #7, three mutations specific to BM were found in PLCG1, ACSL3, and CTTNBP2. These may represent novel CH-associated mutations. In patient #8, DNMT3A p.W330*, likely representing a minor CH clone, was also found specifically in the BM. In patient #24, an additional ASXL1 frameshift mutation was identified in the BM, which showed hypercellularity with increased granulopoiesis. In this patient, we appeared to capture the acquisition of a subclonal JAK2 V617F mutation during tumor progression, which was identified by the myeloid panel in the purified granulocytes from the PB but not detected in the BM 1 year before.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The overall mutation profile in the BM/PB is shown. (B) The CH-related mutation profile identified in the BM/PB is shown after excluding the variants due to angioimmunoblastic T-cell lymphoma (AITL) involvement. Top bars on each plot indicate the numbers of the variants detected per sample. The percentage showing gene mutation frequency in the patient cohort is shown at the right. Sample IDs are indicated at the bottom of each plot. Variant classifications are indicated with different colors.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Mutation plot showing the overall mutation profile in the lymph node (LN) tissues involved by AITL/PTCL-NOS. (B) Mutation plot showing the AITL/PTCL-NOS-specific mutations identified in lymphoma samples after excluding the clonal hematopoiesis (CH)-associated variants. Top bars on each plot indicate the numbers of variants detected per sample. The percentage at right shows the gene mutation frequency in the cohort of the patients. Sample IDs are indicated at the bottom of each plot. Variant classifications are indicated with different colors.
+
 In the 27 diagnostic LN samples, we identified a total of 102 non-synonymous somatic mutations in 37 genes with a median of ~3 variants per sample, including 62 missense (60.78%) and 20 nonsense (19.61%) single-nucleotide variants (SNVs), 1 in-frame (0.98%) and 9 frameshift (8.8%) deletions, and 1 in-frame and 7 frameshift (6.9%) insertions (Figure 1B, Supplementary file 4, Figure 1—figure supplement 4). Of these 102 mutations, 37 were associated and shared with CH (Figure 1B and C). In more than half of the T lymphoma cases, not only could we detect early CH-associated mutations, we also identified 65 mutations that are likely acquired during the later stage of AITL/PTCL-NOS development (referred as late mutations hereinafter) (Figure 1B and C, Figure 1—figure supplements 2 and 4). The recurrent late mutations were limited to several oncogenes and tumor suppressor genes, including the well-known driver genes like RHOA (67% of the cases), TET2 (48%), IDH2 (33%), PLCG1(10%), TP53(10%), VAV1 (10%), and are characterized both by the absence of DNMT3A mutations (Figure 1C) and by the enrichment of missense mutations, which were increased from 36.1% in the CH-associated mutations to 75.2% in the late mutations (proportion test, p-value<0.0001; Figure 1D). The mutations in IDH2, PLCG1, and TP53 were found exclusively as late mutations and not CH-associated mutations (Figure 1C).
 
 Figure 1A shows four representative AITL cases and two PTCL-NOS cases with their matched BM/PB, where red dots indicate the CH-associated variants present in both the primary lymphoma and BM/PB, and black dots represent the variants associated with AITL/PTCL-NOS (also highlighted with rectangles). A detailed description of these illustrative cases is provided in Appendix 1. There are a couple of notable findings: first, more than one CH clone can be present in the BM, and their clonal representations in the BM may not reflect those in the lymphoma, as seen in the DNMT3A-mutated clones in patient #4. These results suggest that the same DNMT3A mutation can have differential effect depending on the cell lineage affected. Second, findings in patient #29 raise the possibility that besides the neoplastic T-cells, reactive lymphocytes in these two cases might also harbor the CH-associated mutations.
 
 Our results support a tumor model in which AITL/PTCL-NOS emerges from mutated and expanded HP clones that are associated with CH in the BM as well as serving as the lymphoma precursors. The latter often acquires additional missense mutations during the course of development to frank lymphomas.
 
-## Late mutations in AITL/PTCL-NOS are enriched for C>A transversion substitutions possibly associated with smoking
+### Late mutations in AITL/PTCL-NOS are enriched for C>A transversion substitutions possibly associated with smoking
 
 We investigated whether there might be an etiological difference between the CH-related mutations and the late mutations by analyzing mutational signatures.
 
 For the CH-associated mutations, overall transition (Ti) and transverse (Tv) substitution rates are comparable (Ti vs. Tv, median, 50% vs. 50%, mean, 54.76% vs. 45.24%, p-value>0.05; Figure 2A). At the base substitution level, C>T is found most frequently (44%), followed by C>G (20%; Figure 2A). We extracted two major de novo mutational signatures (CH_Sign.01 and 02, Figure 2—figure supplement 1A) from the CH-related mutations by MutSignatures (Fantini et al., 2020). CH_Sign.01 is characterized by the enriched C>T substitutions at the trinucleotide motif TpCpA (mutated base presented as bold), and CH_Sign.02 is enriched with C>T at CpCpA/GpCpG plus the increased C to G substitutions at TpCpG. A cosine correlation similarity (CCS) was used to evaluate closeness between the CH de novo and COSMIC (SBS30, version 2) signatures. CCS, measured as 1 - cosine distance, ranges from 0 to 1. 0 denotes completely different mutational signatures and 1 signifies identical signatures. As shown in Figure 2—figure supplement 1B, CH_Sign.01 demonstrates the best match with COSMIC Signature 2 (CCS = 0.65), which is associated with activity of the AID/APOBEC family of cytidine deaminases (Alexandrov et al., 2013). The characterized trinucleotide change in CHSign.01, TpCpA to TpTpA, is also the hallmark of COSMIC Signature 2. Analysis of the CH mutations as the consequence of each mutational signature per sample showed that the activity of CH_Sign.01 dominated in 75% (15/20) of the AITL/PTCL-NOS samples (Figure 2—figure supplement 1C), indicating a potential major role of the AID/APOBEC family of cytidine deaminases in the generation of CH-associated mutations in AITL. Another CH signature Sign.02, active in 55% (11/20) of the samples, is closest to COSMIC Signature 15 (CCS ≈ 0.50), reportedly attributed to defective DNA mismatch repair.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-v2.jpg)
+
+**Figure 2.:** Transition and transverse (Titv) plot showing overall distribution of the six types of substitutions in the clonal hematopoiesis (CH) (A) and late (B) missense mutations acquired during AITL/PTCL development, as well as fraction of these substitutions in each sample. The median is indicated by a horizontal line. Bar plot on the left showing single-nucleotide variant (SNV) classes and fraction of each substitution class among all missense mutations. (C) Side-by-side comparison of transition and transversion base substitutions acquired between the early CH-associated and late mutations. (D) Bar plot comparing the incidence rate of lung cancer between two age-matched/-adjusted populations indicated. Statistical significance was determined by (C, D) z test. *p<0.05; **p<0.01; ***p<0.001; ****p<0.00001; NS, not significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Profile of two de novo mutational signatures extracted from CH-associated AITL mutations. (B) Heatmap showing similarity of two identified de novo mutation signatures with COSMIC Signature by analysis of cosine distance among these mutation patterns. Numbers on the bottom of the heatmap represent the number of COSMIC Signatures (SBS30, v2). (C) Estimated exposures of each AITL sample to the identified mutational patterns (Sign.01 and Sign.02).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Profiles of two de novo mutational signatures extracted from AITL late mutations. (B) Heatmap showing similarity of two identified de novo mutation signatures with COSMIC Signature by analysis of cosine similarity. (C) Estimated activities of the identified mutational signatures (LM_Sign01 and LM_Sign02) per sample according to estimated number of individual signature-associated mutations. LM: late mutations; Pt: patient.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Profiles of two de novo mutational signatures extracted from published single-nucleotide variant (SNV) mutations from TFH-PTCL tumors (n = 44). (B) Heatmap showing cosine similarity of two identified de novo mutation signatures with 30 COSMIC Signatures. (C) Estimated exposures of each AITL sample to the identified mutational patterns (Kyoto_Sign01 and Kyoto_Sign02).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Heatmap showing cosine similarity of the de novo mutation patterns identified in the indicated mutation data set. LM: AITL late mutations.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Heatmap showing cosine similarity of the de novo mutation patterns with the COSMIC Signatures.
 
 In the late mutations (LM), Ti and Tv are also not significantly different (Ti vs. Tv, median, 38.53% vs. 61.43%, mean, 49.31% vs. 50.68%, p-value>0.05). At the base substitution level, however, besides C>T (35%), C>A emerges as one of the predominant mutant forms (36.7%; Figure 2B). On a case basis, C>A substitutions are enriched in late mutations compared to CH mutations (mean, 38.8% vs. 5.95%; median, 33.3% vs. 0%; t test, p-value=0.0024), and the fraction of the cases with C>A substitution in the late mutations is 4–5 times that with C>A in the CH-associated mutations (67% vs. 16%; Figure 2C). Signature analysis identified two de novo mutation signatures (LM_Sign.01 and LM_Sign.02, Figure 2—figure supplement 2A). LM_Sign.01 is enriched with the TpCpC to TpApC mutation, which is one of the main trinucleotide motifs with the C>A base substitutions identified in COSMIC Signature 4 attributed to the smoking-induced mutational process (Alexandrov et al., 2013). Consistent with this, analysis of cosine similarity revealed that the de novo signature LM_Sign.01 had the closest match with COSMIC Signature 4 (CCS ≈ 0.5), followed by Signature 24 (CCS = 0.4, associated with aflatoxin), highly active in 75% of the tumor samples as evidenced by 50% or more of the mutations in each sample (1–8 variants, mean mutation number = 1.74) as the result of the LM_Sign.01 signature activity (Figure 2—figure supplement 2B and C). Like COSMIC Signature 4, LM_Sign.01 exhibited transcriptional strand bias for the C>A substitutions where the mutation of C on the forward strand (C>A, n = 17) exceeded the mutation of G on the reverse strand (G>T, n = 5) by 2.4-folds. Therefore, these findings suggest a potential causative link between smoking or secondhand smoking (SHS) and AITL development by acquisition of additional driver mutations in the pathogenesis of AITL.
 
@@ -82,7 +220,7 @@ Identification of the potential cigarette smoke-associated mutation signature in
 
 Medical records showed that 7 (26.9%) of the AITL/PTCL-NOS patients in our cohort were smokers (one passive smoking), 19 (73.1%) non-smokers, and 2 no records. Patient #27, one of the three patients with synchronous lung cancers, was documented with smoking history of one pack per day before onset of PTCL-NOS, and the other two lung cancer patients were non-smokers. No significant difference was detected in the C>A or overall Signature 4 mutation burden per sample between evaluable smokers and non-smokers (average number of the C>A mutations: 1 vs. 0.92, p=0.61). However, the top mutational signature extracted from the non-smokers still matched to the smoking-associated COSMIC Signature 4 (Figure 2—figure supplement 5). Although no clear association was demonstrated between smoking and development of AITL/PTCL-NOS, the overall findings suggest undocumented modest SHS as a potential source of the smoking-associated COSMIC Signature 4 seen in the late mutations of AITL/PTCL-NOS. It was estimated that 83.9% of non-smokers in the US population were exposed to SHS to various extents as evidenced by detectable metabolite of nicotine in sera in the early 1990s (Centers for Disease Control and Prevention (CDC), 2008). More details are presented in the Discussion section.
 
-## AITL with hematologic neoplasms of other lineages arises from common mutated hematopoietic precursors
+### AITL with hematologic neoplasms of other lineages arises from common mutated hematopoietic precursors
 
 Four patients with AITL presented with additional hematologic neoplasms of other lineages. We present here the clonal evolution patterns of these tumors based on the results of the mutation profiling for three patients (Figure 3). One of these cases provides genetic evidence for the progression of CH to overt myeloid malignancy through acquisition of additional mutations (patient #5, Figure 3A). Patient #20 illustrates that the AITL does not necessarily have to be the initially diagnosed malignancy in patients with both AITL and a second malignancy. The third case was an unusual case in which the patient (#14) had CH, AITL, as well as DLBCL, the latter was associated with acquisition of an EZH2 hotspot mutation. Detailed descriptions of these illustrative cases are provided in Appendix 1.
 
@@ -92,7 +230,7 @@ Four patients with AITL presented with additional hematologic neoplasms of other
 
 Together, our data further provide evidence that AITL can be associated with the development of a hematopoietic neoplasm of different lineages, that is, myeloid or B-lymphoid, either preceding or subsequent to the diagnosis of AITL. In all cases, truncal mutations common to all lineages are seen, with late mutations seen in specific tumors (e.g., SRSF2 in myeloid, EZH2 in DLBCL).
 
-## Impact of destructive TET2 mutations on development of multiple hematologic malignancies
+### Impact of destructive TET2 mutations on development of multiple hematologic malignancies
 
 One of the features shared among the four cases with concomitant hematologic neoplasms is that they all had multiple (>1) pathogenic mutations in TET2. This observation prompted us to investigate the relationship between TET2 mutation status and occurrence of multiple hematologic malignancies, specifically through assessing effects of TET2 mutation status on probability of concomitant hematologic neoplasm-free survival in AITL patients. For Kaplan–Meier analysis shown below, the CHN-free survival time is defined as duration from AITL diagnosis to date of death without CHN or date of last follow-up without CHN (Supplementary file 1). The event in the Kaplan–Meier analysis is occurrence of CHN (if yes, 1, no, 0) before they die or the last follow-up (right-censored). To increase the power of the statistical analysis, the patients included in our study were combined with an outside cohort of AITL patients whose relevant genomic and survival/CHN data were recently published (Lewis et al., 2020), leading to the total number of 47 cases for CHN-free survival analysis.
 
@@ -102,7 +240,7 @@ We further stratified the patients into the high TET2 mutation burden and no or 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66395/elife-66395-fig4-v2.jpg)
 
-**Figure 4.:** TET2 mutation status in the bone marrow/peripheral blood (BM/PB) samples is a predictive biomarker for concomitant hematologic neoplasms in angioimmunoblastic T-cell lymphoma (AITL) patients.Kaplan–Meier analysis of concomitant hematologic neoplasm-free survival in AITL or AITL-related patients based on TET2 mutation status in the BM/PB. Concomitant hematologic neoplasm-free survival of AITL patients can be stratified based on absent/low or high TET2 mutation burden subgroups. p-Value was calculated by log-rank test, and p-value<0.05 is considered statistically significant. In one case, the second hematologic malignancy (PV) preceded the development of AITL.
+**Figure 4.:** Kaplan–Meier analysis of concomitant hematologic neoplasm-free survival in AITL or AITL-related patients based on TET2 mutation status in the BM/PB. Concomitant hematologic neoplasm-free survival of AITL patients can be stratified based on absent/low or high TET2 mutation burden subgroups. p-Value was calculated by log-rank test, and p-value<0.05 is considered statistically significant. In one case, the second hematologic malignancy (PV) preceded the development of AITL.
 
 ## Discussion
 

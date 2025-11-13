@@ -30,6 +30,49 @@ Here we investigated how neuronal dynamics change during dexmedetomidine-induced
 
 We used two macaque monkeys and performed multiple recording sessions with dexmedetomidine and an α2-adrenergic antagonist atipamezole, in addition to other control recording sessions, with a minimum recording interval of 2 days (Table 1). Dexmedetomidine was infused through a surgically implanted vascular port. In the sessions to examine the effect of the α2-adrenergic antagonist, atipamezole was administered while dexmedetomidine was still being infused. We recorded local field potentials (LFPs) and single unit activity using surgically implanted microelectrode arrays during dexmedetomidine-induced anesthesia and recovery. We defined LOC and two recovery endpoints, ROC and return of preanesthetic performance level (ROPAP), based on the probability of task engagement and task performance (Patel et al., 2020; Figure 1B,C). Task engagement indicates the probability of any response initiation by the animal, including correct responses and failed attempts, and task performance represents the probability of correct responses only (Wong et al., 2011; Wong et al., 2014; Figure 1C).
 
+**Table 1.**
+ Number of recording experiments in each animal.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Recording site</th>
+      <th colspan="5">Number of recording sessions</th>
+    </tr>
+    <tr>
+      <th>Dexmedetomidine</th>
+      <th>Dexmedetomidine and antagonist</th>
+      <th>Arousability testing</th>
+      <th>No task control</th>
+      <th>Blind-folding control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monkey 1</td>
+      <td>S1, S2, PMv</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Monkey 2</td>
+      <td>S1, PMv</td>
+      <td>9</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The recording sessions were performed with a minimum interval of 2 days in each animal._
+
 ## Results
 
 We successfully determined LOC, ROC and ROPAP in all the recording sessions in both animals. Interestingly, the task response behaviors appeared fluctuating, and a performing period and a non-performing period were often rapidly alternating over the course of recovery, especially during early recovery following ROC, as shown in Figure 1A and Figure 2A.
@@ -38,9 +81,82 @@ We successfully determined LOC, ROC and ROPAP in all the recording sessions in b
 
 **Figure 2.:** (A) Behavioral response. Probability of the task engagement (purple) and task performance (orange). (B) Local field potentials (LFP) time-domain spectrograms in S1. (C) LFP time-domain spectrograms in S2. (D) LFP time-domain spectrograms in PMv. (E) Average baseline firing rates in S1 (red) and PMv (blue). Firing rates were normalized to pre-anesthetic values using Z-scores. No significant differences between pre-anesthetic average and any following time point were found (ANOVA and post hoc Bonferroni multiple comparison tests). (F–H) Averaged frequency domain power spectra in S1 (n = 9 channels, F), S2 (n = 11 channels, G) and PMv (n = 10 channels, H). Traces are the averaged Welch’s power across channels with 95% confidence intervals shaded, during wakefulness (for one minute before anesthesia start, black), anesthesia (for one minute at the end of anesthetic infusion, blue), ROC (for one minute after ROC, red) and ROPAP (for one minute after ROPAP, cyan). Bottom lines represent those frequencies with significantly different values of average power density between awake and any other given condition as found by repeated measures ANOVA (ε-corrected p-value<0.05) and post hoc Bonferroni multiple comparison test (p-value<0.0083). (I) Behavioral response, spectrogram in S1 and PMv, the slow-delta (0.5–4 Hz) and alpha power (8–12 Hz) change during LOC. Power was normalized to pre-anesthetic values using Z-scores. (J) Behavioral response, spectrogram in S1 and PMv, the slow-delta (0.5–4 Hz) and alpha power (8–12 Hz) change during LOC with arousability testing. A series of non-aversive stimuli (ear-pulling, a loud white noise at 100 dB SPL for 5 s, and hand claps 3 times at 10 cm from face, shown with red arrows) were applied at 3, 5, and 10 min after initially detected LOC. LOC is shown with a black arrow and dotted lines, ROC with a purple arrow and dotted lines, and ROPAP with an orange arrow and dotted lines (A–E). Dexmedetomidine was infused at 18 μg/kg/h for the first 10 min and then 4 μg/kg/h for 50 min (gray lines in A–E).
 
-## Distinctive neural changes at α2-adrenergic agonist-induced LOC, ROC and ROPAP
+### Distinctive neural changes at α2-adrenergic agonist-induced LOC, ROC and ROPAP
 
 We first compared LFP spectrograms from the primary and secondary somatosensory cortex (S1, S2) and ventral premotor area (PMv) during the transition from wakefulness to LOC and then through recovery. During wakefulness beta oscillations were present in both cortical regions (18–25 Hz in S1 and S2, 26–34 Hz in PMv, Figure 2B,C,D; Brovelli et al., 2004; Haegens et al., 2011). LOC was identified at a brief increase of the alpha power following disruption of the beta oscillations (Figure 2B,C,D, Table 2). Then the slow-delta oscillations appeared and remained dominant throughout anesthesia until ROC. ROC was associated with an abrupt diminishing of the slow-delta oscillations and an appearance of alpha oscillations (Figure 2B,C,D, Table 2). ROPAP was observed at return of the beta oscillations. The peak frequencies of the beta oscillations, however, appeared to remain significantly lower than that during wakefulness (Figure 2F,G,H). During an early recovery period following ROC, the slow-delta oscillations returned repeatedly when the animal was not engaged in the task and appeared to be coupled with the alpha oscillations. Both slow-delta and alpha oscillations disappeared when the beta activity returned, suggesting that two or more states were alternating until full functional recovery. We also found that dexmedetomidine did not significantly change the average firing rate in the S1 units nor in the PMv units (Figure 2E).
+
+**Table 2.**
+ Characteristic oscillatory changes during dexmedetomidine-induced altered behavioral states.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Behavioral state</th>
+      <th>Slow-Delta</th>
+      <th>Alpha</th>
+      <th>Beta</th>
+      <th>Spindle activity</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wakefulness</td>
+      <td>minimal</td>
+      <td>absent</td>
+      <td>high</td>
+      <td>absent</td>
+      <td rowspan="5">Figure 2B,C,E,F Figure 4B</td>
+    </tr>
+    <tr>
+      <td>LOC</td>
+      <td>high with delay</td>
+      <td>transiently high</td>
+      <td>minimal</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>Unresponsiveness</td>
+      <td>high</td>
+      <td>low</td>
+      <td>absent</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>ROC</td>
+      <td>minimal*</td>
+      <td>high</td>
+      <td>absent</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>ROPAP</td>
+      <td>minimal</td>
+      <td>minimal</td>
+      <td>high</td>
+      <td>minimal</td>
+    </tr>
+    <tr>
+      <td>Arousal by external stimuli after LOC during dexmedetomidine infusion</td>
+      <td>minimal</td>
+      <td>transiently high</td>
+      <td>absent</td>
+      <td>NA</td>
+      <td>Figure 2H</td>
+    </tr>
+    <tr>
+      <td>Reversal by α2-adrenergic antagonist during dexmedetomidine infusion</td>
+      <td>minimal</td>
+      <td>absent</td>
+      <td>high</td>
+      <td>absent</td>
+      <td>Figure 5B,C,E,F,G</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The characteristic changes of the frequency band power and spindle activity are summarized for each behavioral endpoint. *The slow-delta power was diminished at ROC, but frequently reappeared through early recovery until ROPAP._
 
 We then tested arousability during the period following LOC using a short series of non-aversive stimuli in separate sessions. Contrary to a regular session without stimuli (Figure 2I), we observed a brief return of task attempts following the stimuli at 3 min and 5 min after initially detected LOC (Figure 2J, Table 2). The slow-delta oscillations were disrupted, and a brief reappearance of alpha oscillations was observed in the spectrogram when the animal's task attempts returned upon the stimuli, suggesting that the slow-delta oscillations per se do not assure non-arousable state. Arousability was not observed by the same stimuli at 10 min after the initial LOC and there was no change in the oscillatory dynamics (Figure 2J).
 
@@ -52,7 +168,7 @@ We next investigated how dexmedetomidine affects communication across S1, S2 and
 
 There was no comparable neurophysiological change at the loss of response or at the return of response in alert behaving animals without anesthetic (Ishizawa et al., 2016), suggesting that behavioral changes due to satiety or motivation are unlikely to be associated with the neurophysiological changes observed during dexmedetomidine-induced LOC or ROC.
 
-## Spindle activity was highest during an early recovery period
+### Spindle activity was highest during an early recovery period
 
 We also investigated spindle oscillations during dexmedetomidine anesthesia and recovery. Spindle density was analyzed in the alpha and low beta frequencies between 9 and 17 Hz over the course of behavioral changes with dexmedetomidine (Kam et al., 2019; Figure 4A,B). We found that spindle activity emerged prior to LOC and the spindle density initially peaked at LOC (Figure 4B, Table 2). Spindle activity was present through dexmedetomidine-induced unconsciousness, and then further increased upon the end of anesthetic infusion and through ROC. Spindle activity was higher when the animal was performing the task prior to ROPAP, as compared to the performing period after ROPAP where the spindles were nearly completely diminished. Moreover, the spindle activity appeared to increase at the behavioral transitions between a task responding period and a non-responding period. The power of alpha frequencies seemed to be correlating with the spindle activity during anesthesia and recovery (Figure 4C). Spindle characteristics, including density, duration and peak frequency, were largely similar between under anesthesia and during a non-performing period after ROPAP (Figure 4D,E,F). However, in S1 the spindle density was statistically significantly higher during the non-performing period after ROPAP than under anesthesia, and in S2 the density was lower during the non-performing period after ROPAP than under anesthesia (Figure 4D). Spindle duration was significantly longer during the non-performing period after ROPAP than under anesthesia (Figure 4E).
 
@@ -60,7 +176,7 @@ We also investigated spindle oscillations during dexmedetomidine anesthesia and 
 
 **Figure 4.:** (A) Behavioral response. Probability of the task engagement (purple) and task performance (orange). (B) Spindle density (counts/min) in 9–17 Hz in S1 (red trace), S2 (magenta trace) and PMv (blue trace). (C) Normalized power of alpha frequency (8–12 Hz) in S1 (red trace), S2 (magenta trace) and PMv (blue trace). (D–F). Spindle characteristics in S1 (top plots), S2 (middle plots) and PMv (bottom plots) of density (D), duration (E), and peak frequency (F). Box plots represent the median with 25th and 75th percentiles and single points are all values beyond. Asterisks indicate statistically significant difference (two-sided unpaired t-test, p<0.01). Comparisons were made between the 10 min periods: awake (for the last 10 min of wakefulness before anesthesia start, black bar); anesthesia (for 10 min during anesthetic infusion, red bar); non-performing after ROPAP (for 10 min of the non-performing period, blue bar); and performing after ROPAP (for the last 10 min of the performing period, pink bar) shown in A. LOC is shown with a black arrow and dotted lines, ROC with a purple arrow and dotted lines, and ROPAP with an orange arrow and dotted lines (A–C). Dexmedetomidine was infused at 18 μg/kg/h for the first 10 min and then 4 μg/kg/h for 50 min (gray solid lines in A–C).
 
-## α2-adrenergic antagonist immediately restored awake dynamics and top task performance without intermediate stages
+### α2-adrenergic antagonist immediately restored awake dynamics and top task performance without intermediate stages
 
 α2-adrenergic antagonist atipamezole induced an instant return of the top task performance while dexmedetomidine was still being infused (Figure 5A). Concurrently, oscillatory dynamics demonstrated discontinuous return of the robust beta oscillations at the frequencies that were shown during wakefulness (Figure 5B,C,F,G, Table 2). These beta oscillations were inter-regionally coherent (Figure 5D,H). In fact, the line coherogram indicated that the beta oscillations were significantly more coherent inter-regionally after α2-antagonist administration than during wakefulness (Figure 5H). The spindle activity was abruptly diminished upon the antagonist administration without showing its increase prior to ROC as observed during recovery without antagonist (Figure 5E).
 
@@ -72,7 +188,7 @@ To further quantify complex spectral dynamics during recovery from dexmedetomidi
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57670/elife-57670-fig6-v1.jpg)
 
-**Figure 6.:** (A1-D1) Density plots in 3D during anesthesia and recovery without antagonist in S1 (A) and PMv (1C) and with antagonist in S1 (1B) and PMv (1D). The density heat-map was calculated with a kernel density estimator from the scatter data created using the first principal component from the three spectral ratios described in the methods. (1A2-D2) Density plots in 2D during anesthesia and recovery without antagonist in S1 (A) and PMv (2C) and with antagonist in S1 (2B) and PMv (2D). (2A) Speed plots during anesthesia and recovery without antagonist in S1 (3-D3A) and PMv (3C) and with antagonist in S1 (3B) and PMv (3D). The speed was calculated as the Euclidean distance between consecutive points and is represented as heat-map. (3A) Task performance during anesthesia and recovery without antagonist in S1 (4-D4A) and PMv (4C) and with antagonist in S1 (4B) and PMv (4D). The plots are color-coded according to the task performance probability. The data were analyzed for the period between LOC and the end of recording session. Each dot corresponds to a 1 s window for all plots. Dexmedetomidine was infused at 18 μg/kg/h for the first 10 min and then 4 μg/kg/h for 50 min in all sessions. α2-adrenergic antagonist atipamezole 100 µg/kg was intravenously injected at 30 min of dexmedetomidine infusion.4
+**Figure 6.:** (A1-D1) Density plots in 3D during anesthesia and recovery without antagonist in S1 (A1) and PMv (C1) and with antagonist in S1 (B1) and PMv (D1). The density heat-map was calculated with a kernel density estimator from the scatter data created using the first principal component from the three spectral ratios described in the methods. (A2-D2) Density plots in 2D during anesthesia and recovery without antagonist in S1 (A2) and PMv (C2) and with antagonist in S1 (B2) and PMv (D2). (A3-D3) Speed plots during anesthesia and recovery without antagonist in S1 (A3) and PMv (C3) and with antagonist in S1 (B3) and PMv (D3). The speed was calculated as the Euclidean distance between consecutive points and is represented as heat-map. (A4-D4) Task performance during anesthesia and recovery without antagonist in S1 (A4) and PMv (C4) and with antagonist in S1 (B4) and PMv (D4). The plots are color-coded according to the task performance probability. The data were analyzed for the period between LOC and the end of recording session. Each dot corresponds to a 1 s window for all plots. Dexmedetomidine was infused at 18 μg/kg/h for the first 10 min and then 4 μg/kg/h for 50 min in all sessions. α2-adrenergic antagonist atipamezole 100 µg/kg was intravenously injected at 30 min of dexmedetomidine infusion.
 
 ## Discussion
 

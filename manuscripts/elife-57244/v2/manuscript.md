@@ -36,9 +36,17 @@ Two independent samples (n = 24, n = 25) completed a Comprehensive Control T
 
 The analyses that follow proceed in two parts. First, areas within the FPCN are functionally mapped and related to behavior by contrasting activation and performance across different task conditions. Areas within the PFC have been previously described (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017), and are re-depicted here to note parallels among the PFC and PPC. A prior study (Choi et al., 2018) suggested a mirrored organization of the PFC and PPC with respect to cognitive control which the analyses here seek to replicate and extend by relating activations directly to behavioral performance. These analyses are aimed to provide a functional foundation for network-based analyses to follow. Second, interactions among areas in the FPCN are examined to address the focus of the current study of how integrative dynamics within the FPCN support cognitive control. These dynamics are then related to individual differences in trait-level cognitive ability and amenability to neuromodulation to establish their importance more broadly.
 
-## Mirrored control gradients in the PFC and PPC
+### Mirrored control gradients in the PFC and PPC
 
 Figure 2A depicts the voxel-wise, whole-brain activations for each cognitive control contrast. In the lateral PFC, activations progressed in a caudal to rostral fashion as a function of abstraction of cognitive control from sensory-motor control, to contextual control, to temporal control (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017). In the PPC, activations progressed in a rostral to caudo-lateral fashion as a function of abstraction of cognitive control (Choi et al., 2018). That is, in both the lateral PFC and PPC, increasingly abstract control was associated with activations increasingly distant from sensory-motor cortices of the pre/post-central gyri.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig2-v2.jpg)
+
+**Figure 2.:** (A) Activations for temporal control (red), contextual control (green), and sensory-motor control (blue). Activations are depicted separately for each sample, as well as the samples combined. (B) Activations overlaid to demonstrate the gradient of cognitive control. Spheres indicate the location of regions-of-interest based upon activation peaks. (C) Overlap between activation contrasts (red – temporal control; green – contextual control; blue – sensory-motor control) and the 17-network parcellation described by Yeo et al. FPl – lateral frontal pole; MFG – middle frontal gyrus; VLPFC – ventrolateral prefrontal cortex; cMFG – caudal middle frontal gyrus; IFJ – inferior frontal junction; SFS – superior frontal sulcus; aIPS – anterior intra-parietal sulcus; IPL – inferior parietal lobule; mIPS – mid intra-parietal sulcus; SPL – superior parietal lobule; DMN – default-mode network; DAN – dorsal attention network; SAL – salience network; FPN – frontoparietal network.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig2-figsupp2-v2.jpg)
 
 Different cognitive control demands produced overlapping activations eliciting gradients along the lateral surface (Figure 2B). Although the extent of overlap depends upon preprocessing (e.g. smoothing, volumetric vs surface processing), similar gradients of activation were observed with reduced volumetric smoothing (Figure 2—figure supplement 1), as well as with minimal, surface-based smoothing (Figure 2—figure supplement 2). The mirrored gradients observed in the lateral PFC and PPC are suggestive of a mirrored functional organization extending outwardly from sensory-motor areas consistent with macroscale gradients of cortical function (Mesulam, 1998; Margulies et al., 2016; Huntenburg et al., 2018).
 
@@ -46,29 +54,180 @@ Previous work has suggested that the FPCN can be fractionated into sub-networks 
 
 To better characterize the functions of the areas within these sub-networks, spherical regions-of-interest (ROIs) were centered on activation peaks of the contrasts (Figure 2B; Table 1). Activations across the eight conditions of the factorial design are depicted in Figure 3A providing a graphical profile of the activation patterns in each area. PFC-PPC areas closer to sensory-motor cortex (blue, green) tended to be sensitive to multiple demands activating for both sensory-motor and contextual control. These areas also had a tendency to activate preferentially to one stimulus domain or the other. By contrast, areas distal from sensory-motor cortices (red) tended to be more specialized toward temporal control and did not show a preference for stimulus domain.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig3-v2.jpg)
+
+**Figure 3.:** Activations across the eight conditions of the task design are depicted as radar plots (SB – spatial baseline; VB – verbal baseline; SS – spatial switching; VS – verbal switching; SP – spatial planning; VP – verbal planning; SD – spatial dual; VD – verbal dual). The top panel depicts idealized profiles for areas sensitive solely to temporal control (red), contextual control (green), sensory-motor control (blue), verbal stimulus domain (purple), and spatial stimulus domain (orange). Inset: results of multi-dimensional scaling of the activation profiles across regions. Colored by abstraction refers to coloring as a function of position along the control gradient (blue – sensory-motor proximal; green – intermediary; red – sensory-motor distal). Colored by stim domain refers to coloring as a function of sensitivity to stimulus domains (orange – spatial; purple – verbal; gray – neither).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Details are identical to Figure 3.
+
+**Table 1.**
+ Coordinates of regions-of-interest reported in MNI space.FPl – lateral frontal pole; MFG – middle frontal gyrus; VLPFC – ventrolateral prefrontal cortex; cMFG – caudal middle frontal gyrus; IFJ – inferior frontal junction; SFS – superior frontal sulcus; IPL – inferior parietal lobule; mIPS – mid intra-parietal sulcus; aIPS – anterior intra-parietal sulcus; SPL – superior parietal lobule.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Sample 1</th>
+      <th colspan="3">Sample 2</th>
+    </tr>
+    <tr>
+      <th>Area</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FPl</td>
+      <td>−44</td>
+      <td>48</td>
+      <td>4</td>
+      <td>−36</td>
+      <td>52</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MFG</td>
+      <td>−38</td>
+      <td>28</td>
+      <td>44</td>
+      <td>−36</td>
+      <td>34</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>VLPFC</td>
+      <td>−52</td>
+      <td>20</td>
+      <td>28</td>
+      <td>−42</td>
+      <td>30</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>cMFG</td>
+      <td>−34</td>
+      <td>10</td>
+      <td>60</td>
+      <td>−30</td>
+      <td>6</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>IFJ</td>
+      <td>−38</td>
+      <td>6</td>
+      <td>26</td>
+      <td>−42</td>
+      <td>10</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>SFS</td>
+      <td>−22</td>
+      <td>0</td>
+      <td>54</td>
+      <td>−20</td>
+      <td>0</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>IPL</td>
+      <td>−54</td>
+      <td>−50</td>
+      <td>44</td>
+      <td>−56</td>
+      <td>−52</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>mIPS</td>
+      <td>−28</td>
+      <td>−60</td>
+      <td>42</td>
+      <td>−26</td>
+      <td>−56</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>aIPS</td>
+      <td>−34</td>
+      <td>−40</td>
+      <td>46</td>
+      <td>−30</td>
+      <td>−42</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>SPL</td>
+      <td>−14</td>
+      <td>−52</td>
+      <td>64</td>
+      <td>−12</td>
+      <td>−60</td>
+      <td>58</td>
+    </tr>
+  </tbody>
+</table>
+
 To provide a more compact, data-driven description of these profiles, the PFC-PPC ROI data ((participants*conditions) x areas) were subjected to multi-dimensional scaling (MDS). Two dimensions accounted for 89% of the variance of the data (Figure 3B). The first dimension recapitulated the abstraction gradient, placing PFC-PPC areas proximal to sensory-motor cortices on one end of the dimension (e.g. superior frontal sulcus - SFS; anterior intra-parietal sulcus - aIPS), and areas distal to sensory-motor cortices on the other (e.g. middle frontal gyrus - MFG; inferior parietal lobule - IPL). Hence, across the different conditions of the task, this dimension collapsed abstraction of cognitive control into a single axis. The second dimension reflected sensitivity to stimulus domain with areas preferentially engaged by spatial processing at one end and areas preferentially engaged by verbal processing at the other. These patterns were also present with reduced smoothing (Figure 3—figure supplement 1). These data are consistent with the idea that the cortex is organized along two principle gradients reflecting abstraction and modality (Mesulam, 1998; Margulies et al., 2016; Huntenburg et al., 2018). Collectively, these dimensions provided a data-driven way to operationalize the factors of the task design.
 
-## Control gradient is related to present-future behavior
+### Control gradient is related to present-future behavior
 
 Next, areas were characterized as a function of their relationship to behavior in the task. Activations were assessed during the sub-task phases that manipulated cognitive control demands (Figure 1). Cognitive control behaviors were expressed as trial-wise reaction times both during the sub-task phases, as well as during return trials that immediately followed the sub-task phase. For example, temporal control requires sustaining an internal representation (i.e. a reference stimulus) during the sub-task phase to be utilized on the return trial (i.e. does the stimulus on the return trial follow the reference stimulus in the sequence?). Therefore, activations during temporal control that sustain the internal representation would be expected to relate to behavior on the return trial (i.e. return trial reaction times), but not necessarily the sub-task trials (i.e. sub-task trial reaction times). Hence, activations can be separately correlated with behavior measured at the same time as the activations (sub-task trials: present behavior) or the behavior for which the activations are preparing (return trials: future behavior; see Materials and methods).
 
 In the PFC, increasing rostral areas were increasingly associated with future behavior and decreasingly associated with present behavior (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017). This pattern was mirrored in the PPC (Figure 4A) such that sensory-motor proximal areas (aIPS, SPL) were positively associated with present, but not future behavior, while sensory-motor distal areas (IPL) were positively associated with future, but not present behavior. Areas in-between (mIPS) were associated with both present and future behavior. These patterns were confirmed with voxel-wise analyses (Figure 4B). These data are consistent with an integrative role of contextual control areas positioned between internal, future-oriented temporal control areas and external, present-oriented sensory-motor control areas.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig4-v2.jpg)
+
+**Figure 4.:** (A) Top: Repeated measures correlations between activation and present behavior (i.e. behavior during sub-task trials; see Figure 1). Areas related to sensory-motor control (blue) and contextual control (green) showed positive associations, while areas related to temporal control (red) showed no or negative associations. Bottom: Repeated measures correlations between activation and future behavior (i.e. behavior during return trials; see Figure 1). Areas related to temporal control (red) and contextual control (green) tended to show positive associations, while areas related to sensory-motor control (blue) tended to show no associations. ** indicates Bonferroni-corrected p<0.05. * indicates uncorrected p<0.05. (B) Voxel-wise partial correlations between activation and present behavior (blue), future behavior (red), and both (green). Results are visualized at p<0.001 with 124 voxel cluster extent. (C) Linear mixed effects modeling of the activation-present behavior slope (top) and activation-future behavior slope (bottom) using the first dimension of multi-dimensional scaling (MDS) depicted in Figure 3. * indicates p<0.05; ** indicates p<0.005.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Details are identical to Figure 4.
+
 To better quantify these relationships, the abstraction dimension uncovered by MDS was used to account for areal relationships with behavior. Separate linear mixed effects models were fit for the activation-present behavior and activation-future behavior relationships across areas. Consistent with the impressions above, the more abstract the PFC-PPC area, the less it related to current behavior (sample 1: t(238) = −9.18, p=2.19e-17; sample 2: t(248) = −8.73, p=3.81e-16) and more it related to future behavior (sample 1: t(238) = 2.72, p=0.007; sample 2: t(248) = 4.39, p=0.00002). These patterns were also present with reduced smoothing (Figure 4—figure supplement 1). Moreover, the abstraction-behavior relationships were observed when each stimulus domain was treated separately consistent with domain-generality of these patterns (verbal abstraction-current sample 1: t(238) = −6.61, p=2.52e-10; sample 2: t(248) = −8.11, p=2.38e-14; spatial abstraction-current sample 1: t(238) = −10.21, p=1.55e-20; sample 2: t(248) = −7.87, p=1.07e-13; verbal abstraction-future sample 1: t(238) = 3.05, p=0.003; sample 2: t(248) = 3.77, p=0.0002; spatial abstraction-future sample 1: t(238) = 2.29, p=0.01; sample 2: t(248) = 4.23, p=3.32e-5). Hence, these analyses indicate that progressively abstract areas in both the PFC and PPC are increasingly future-oriented.
 
-## Establishing source-target relationships
+### Establishing source-target relationships
 
 Next, interactions among PFC-PPC areas were examined. Control is embodied by source-target relationships such that controllers affect processing in controlled targets. Effective connectivity, which estimates directed influences, offers the most straightforward means to assess such source-target relationships. There are both static (stationary) and dynamic (non-stationary) interactions among the PFC and PPC (Cole et al., 2013; Cole et al., 2014; Krienen et al., 2014; Gratton et al., 2016). To examine static interactions and their directed nature, a biophysically plausible generative model of how neuronal interactions produce cross spectra in the fMRI signal was employed (Friston et al., 2014; Razi et al., 2015; Razi et al., 2017).
 
 The method was validated in two ways. First, the method was applied to the task data of both samples and estimates of directed interactions were compared across the samples. These estimates had excellent correspondence across the samples (r = 0.96; Figure 5, top). Second, estimates of directed interactions were used to examine the putative pre-eminent role of the PFC in cognitive control (Miller and Cohen, 2001). Cognitive control is exemplified by source-target relationships such that drivers of control asymmetrically influence targets. To characterize such asymmetries on the lobular level, the magnitude of effective connectivity (i.e. deviations from zero) were separately combined for each of the 2 × 2 combinations of source-target lobe (i.e. PFC->PFC, PFC->PPC, PPC->PFC, PPC->PPC). In both samples, the magnitude of effective connectivity arising from the PFC was significantly stronger than that arising from the PPC (sample 1: F(1,23) = 7.1, p=0.0138; sample 2: F(1,24) = 6.26, p=0.0195; Figure 5, bottom). Such data are consistent with the idea that the PFC is the primary driver of PFC-PPC dynamics. Collectively, these data indicate that the method produces replicable and theoretically sensible estimates.
 
-## An intermediary integration zone of control
+![Figure 5.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig5-v2.jpg)
+
+**Figure 5.:** Bars are color coded by source>target lobe pairs. Top: estimates for each connection. Inset: correlation among sample averaged parameter estimates. Bottom: estimates averaged over source>target lobe pairs. Influences arising from the PFC were significantly stronger in magnitude than those arising from the PPC. * indicates p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Details are identical to Figure 5.
+
+### An intermediary integration zone of control
 
 To examine integration of control signals, source-target relationships were assessed at the network level. Areas were assigned into networks based upon their position along the control gradient (i.e. as colored-coded in the analyses above; sensory-motor control network (blue): SFS, IFJ, SPL, aIPS; contextual control network (green): cMFG, VLPFC, mIPS; temporal control network (red): MFG, FPl, IPL). In both samples, a significant source x target network interaction was observed in effective connectivity (sample 1: F(4,46) = 25.1, p=4.56e-14; sample 2: F(4,48) = 17.81, p=5.74e-11; Figure 6). In all cases, within-network directed interactions were significant and numerically the most positive connections for each network. This is to be expected given that areas within a cortical network are assumed to excite one another, and also provides validation of the network assignment. For both nodes in the abstract, temporal control network and the concrete, sensory-motor control network, between-network directed interactions tended to be negative. Such patterns suggest that these networks dampen activity in other networks, thereby segregating processing. By contrast, between-network directed interactions arising from contextual control nodes were significantly positive (Figure 6 – top panel). Control analyses revealed that these dynamics were not driven by task-related signals since regressing out task-related activity demonstrated the same pattern of results (Figure 6—figure supplement 1). Such patterns suggest that the contextual control network elevates activity in other networks, thereby promoting integrative processing.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig6-v2.jpg)
+
+**Figure 6.:** Top: Effective connectivity was averaged as a function of source>target network. Bars are colored as a function of the source network: TC – temporal control (red); CC – contextual control (green); SC – sensory-motor control (blue). ** denotes Bonferroni-corrected p<0.05. * denotes p<0.05 uncorrected. Middle: Effective connectivity organized by abstraction (first dimension of multi-dimensional scaling depicted in Figure 3). Circles denote positive interactions and inverted triangles denote negative interactions. Markers are scaled by the magnitude of effective connectivity. Markers are colored by the network assignments. Bottom: Data re-depicted to highlight the quadratic effect of source abstraction. Linear effects of target abstraction, source abstraction, and target x source abstraction have been regressed out to isolate the quadratic effect of source abstraction demonstrating that mean (positive) effective connectivity peaks at areas in the middle of the abstraction gradient.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparison of effective connectivity parameters with and without regressing out task signals. Bias (e.g. task-induced increases) would be apparent as a shift off of the diagonal (red line). No bias was observed. (B) Source x target network interactions after regressing out task signals. The same interaction was observed after regressing out task signals as was observed in the main text indicating that the interactions were not driven by task signals.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Details are identical to Figure 6.
+
 Figure 6 (middle panel) depicts these patterns in a more continuous form that does not depend upon assigning nodes to networks. Source-target relationships are depicted as a function of the abstraction dimension uncovered by MDS and described by the magnitude (marker size) and sign (marker shape: circle – positive, inverted triangle – negative) of effective connectivity. At the ends of the axis, positive effective connectivity is predominant when sources and targets are at a similar abstraction level (e.g. bottom left and top right), while negative effective connectivity is predominant when sources and targets are at different abstraction levels (e.g. top left and bottom right). By contrast, positive effective connectivity is observed throughout when sources are at the middle of the axis (i.e. columns of circles toward the middle of the horizontal axis). To better quantify these effects, linear mixed effects models were fit using the abstraction dimension uncovered by MDS. The model sought to explain effective connectivity as a function of abstraction of the source area, abstraction of the target area, and the interaction among source and target abstraction. Additionally, quadratic forms of each of these effects were included to capture U shaped and inverted-U shaped relationships. In both samples, a significant source x target abstraction interaction was observed (sample 1: t(1097) = 5.08, p=4.43e-07; sample 2: t(1143) = 4.94, p=9.03e-07) reflecting that network interactions depend upon whether sources and targets are drawn from similar/different levels of abstraction. Critically, there was also a quadratic effect of source abstraction (sample 1: t(1097) = −4.51, p=7.05e-06; sample 2: t(1143) = −4.52, p=6.99e-06), which was driven by areas at mid-levels of abstraction having consistently positive outwards influences, while areas at high and low levels of abstraction demonstrated both positive and negative outward influences which yielded lower net influences when averaged (Figure 6 – bottom panel). No other effects were significant across samples. The same pattern of results was observed with reduced smoothing (Figure 6—figure supplement 2). Collectively, these patterns are consistent with the segregation/integration patterns described above and show that these patterns do not strictly depend on network assignment.
 
-## Dynamic integration by contextual control
+### Dynamic integration by contextual control
 
 The static directed interactions described above indicate the potential for integration/segregation of the PFC-PPC during cognitive control. Actualization of this potential would require the activation of particular networks and corresponding activity flow (Cole et al., 2016). That is, activation of intermediary, contextual control nodes should produce more integrated network interactions. To examine such actualization, psychophysiological interaction (PPI) analysis (Cole et al., 2013; Friston et al., 1997) was performed to estimate changes in effective connectivity as a function of different cognitive control demands.
 
@@ -76,9 +235,39 @@ Validation of the method by comparing estimates across samples (Figure 7—figur
 
 For each cognitive control demand, source-target relationships among PFC-PPC areas were estimated. In this case, the interactions reflect the changes in effective connectivity induced by the cognitive control demands. In contrast to the stationary dynamics, within-network PPI’s were generally weak across demands (Figure 7A,B). This indicates that within-network interactions are weakly modulated by task demands, which has been previously been observed in functional connectivity (Cole et al., 2014; Krienen et al., 2014; Gratton et al., 2016). Stronger modulations were observed between networks which was especially prominent during contextual control. To quantify these effects, within- and between-network interactions were separately averaged for each PPI contrast. These were then submitted to a 2 × 3 ANOVA with factors of network connectivity (within, between) and contrast (temporal, contextual, stimulus domain; Figure 7B). This analysis revealed a main effect of network connectivity (sample 1: F(1,23) = 15.01, p=0.0008; sample 2: F(1,24) = 10.34, p=0.0037), driven by stronger between- than within-network connectivity. There was no main effect of contrast (both samples p>0.15). However, there was a network connectivity x contrast interaction (sample 1: F(2,46) = 11.84, p=0.0001; sample 2: F(2,48) = 9.86, p=0.0003). This interaction was driven by stronger between-network connectivity for the contextual control contrast relative to the other contrasts. These results demonstrate that contextual control is associated with integration across PFC-PPC networks (Figure 7C), a pattern that was also observed with reduced smoothing (Figure 7—figure supplement 3).
 
-## Static and dynamic integration relates to higher level cognitive ability
+![Figure 7.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig7-v2.jpg)
+
+**Figure 7.:** (A) Psychophysiological interactions (PPIs) for temporal control, contextual control, and stimulus domain contrasts. Solid lines indicate positive modulations of effective connectivity while dashed lines indicate negative modulations of effective connectivity. Arrows are colored by the network of the source node. Thickness of the arrows indicates the strength of modulations. Modulations are visualized at p<0.05 uncorrected. (B) Averaged within- and between-network modulations for the temporal control (red), contextual control (green), and stimulus domain (blue) contrasts. (C) Integration indices computed by contrasting between- minus within-network modulations for temporal control (TC), contextual control (CC), and stimulus domain (SD) contrasts.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** TC – temporal control; CC – contextual control; SC – sensory-motor control; SD – stimulus domain.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Stimulus domain is jointly determined by verbal > spatial and spatial > verbal.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Details are identical to Figure 7.
+
+### Static and dynamic integration relates to higher level cognitive ability
 
 The analyses above indicate that a PFC-PPC network involved in contextual control statically integrates processing among PFC-PPC networks, and that PFC-PPC networks are also more dynamically integrated when contextual control is required. Next, the relationship between individual differences in these network interactions (Figure 8A,B) and higher-level cognitive ability was examined. Each participant completed several tasks measuring short-term memory, working memory, and fluid intelligence. These measures were combined using principle components analysis (PCA) to form a composite measure of higher-level cognitive ability (Figure 8C). Measures of static and dynamic integration were then used to predict higher-level cognitive ability using two-fold cross-validated ridge regression. The static integration measure was intended to capture individual differences in the degree to which contextual control areas integrate PFC-PPC processing in a stationary manner. In other words, this measure captured the general integration of the FPCN without regard to specific demands. By contrast, the dynamic integration measure was intended to capture individual differences in the degree to which the FPCN became more integrated when contextual control was required. That is, this measure reflects integration 'on demand'. The data were separated by sample with one sample used to estimate regression weights, and the estimated regression weights used to predict higher-level cognitive ability in the other sample.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig8-v2.jpg)
+
+**Figure 8.:** (A) Static integration was computed by contrasting between minus within-network effective connectivity of the contextual control network while controlling for (regressing out) the same contrast of the temporal control network and sensory-motor control network and individual differences in head motion. (B) Dynamic integration was based upon the integration index of the contextual control PPI’s while controlling for (regressing out) the integration indices of the temporal control and stimulus domain PPI’s and individual differences in head motion. (C) Higher level cognitive ability was computed as the first principle component of a battery of cognitive tests measuring capacity. (D) Cross-validated ridge regression was used to predict cognitive capacity based upon static and dynamic integration. The scatterplot depicts correlations between the predicted cognitive ability and actual cognitive ability. (E) Correlations among static integration, dynamic integration, and cognitive ability.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Cognitive control and stimulus domain related activations were used as features to predict cognitive ability in a similar manner to the use of integration measures to predict cognitive ability. Principle components analysis was used to create factors associated with temporal control (temporal control contrast activations in FPl, MFG, and IPL), contextual control (contextual control contrast activations in VLPFC, cMFG, and midIPS), sensory-motor control (sensory-motor control contrast activations in IFJ, SFS, antIPS, and SPL), and stimulus domain (stimulus domain contrast activations in IFJ, SFS, antIPS, and SPL). Note that all contrasts are orthogonal to one another. Cross-validated ridge regression was used to predict cognitive ability based upon the activation measures.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Details are identical to Figure 8D–E.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig8-figsupp3-v2.jpg)
 
 A significant prediction effect was observed (r = 0.32, p=0.029; Figure 8D) indicating that individual differences in integration dynamics are related to higher level cognitive ability. While static integration was associated with lower cognitive ability, dynamic integration was associated with higher cognitive ability (Figure 8E). These data indicate the importance of control network integration for higher level cognition.
 
@@ -86,11 +275,31 @@ It could be the case that network integration measures are superior to, redundan
 
 The same analyses were repeated with reduced smoothing. Although dynamic integration was again positively associated with cognitive ability, with reduced smoothing, no relationship was observed among cognitive ability and static integration. As a result, integration measures could not be used to predict cognitive ability (r = 0.03; p=0.44; Figure 8—figure supplement 2). On the other hand, activation based measures remained significantly predictive (r = 0.31, p=0.04; Figure 8—figure supplement 3) and significantly improved prediction when added to models containing integration measures alone (r = 0.32, p=0.03; nested model comparison using ordinary regression: F(4,42) 3.05, p=0.04). I return to the implications of the non-replication with reduced smoothing in the Discussion.
 
-## Static and dynamic integration relates to transcranial magnetic stimulation susceptibility
+### Static and dynamic integration relates to transcranial magnetic stimulation susceptibility
 
 The fMRI data for sample two was used to localize targets for transcranial magnetic stimulation (TMS). TMS was performed on nodes in each sub-network: FPl – temporal control; VLPFC – contextual control; SFS – sensory-motor control, as well as a control site (S1). As previously reported (Nee and D'Esposito, 2017), we anticipated behavioral effects on temporal control following FPl stimulation, stimulus domain processing following SFS stimulation, and a contextual control x stimulus domain processing interaction following VLPFC stimulation. These expectations were observed (Nee and D'Esposito, 2017). However, individuals varied in their susceptibility to these effects. To examine whether such susceptibilities were related to the organization of cognitive control networks, the static and dynamic integration measures described above were used to predict TMS effects.
 
 A PCA on the TMS effects was performed to derive a general susceptibility of cognitive control to PFC TMS (Figure 9A). Static and dynamic integration measures were used to predict the cognitive control TMS effect using leave-1-out cross-validated ridge regression. This analysis revealed that TMS effects on cognitive control could be predicted by static and dynamic integration (r = 0.56, p=0.01; Figure 9B). In particular, those individuals with stronger static integration tended to show increased TMS-induced cognitive control impairments, while those individuals with stronger dynamic integration tended to show decreased TMS-induced cognitive control impairments. These results were replicated with reduced smoothing (Figure 9—figure supplement 1). Such data indicate that integration of control networks is related to susceptibility to neuromodulation. Follow-up analyses suggested that only domain-general, but not domain-specific susceptibilities to TMS could be predicted (see Supplemental results).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig9-v2.jpg)
+
+**Figure 9.:** (A) Previously reportedNee and D'Esposito, 2017 cognitive control impairments induced by continuous theta-burst TMS were combined using principle components analysis to derive a general susceptibility to PFC TMS. (B) Correlations between cognitive control TMS effects and static and dynamic integration. Leave-one-out cross-validated ridge regression was used to predict TMS effects using static and dynamic integration. Scatterplot depicts the correlation between predicted and actual TMS impairments.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Details are identical to Figure 9B.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Details are the same as Figure 9 except that cognitive ability has been regressed out of static and dynamic integration measures. Top: standard (8 mm smoothing). Bottom: reduced (4 mm smoothing).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** Cognitive control and stimulus domain related activations were used as features to predict TMS effects in a similar manner to the use of integration measures to predict TMS effects. Principle components analysis was used to create factors associated with temporal control (temporal control contrast activations in FPl, MFG, and IPL), contextual control (contextual control contrast activations in VLPFC, cMFG, and midIPS), sensory-motor control (sensory-motor control contrast activations in IFJ, SFS, antIPS, and SPL), and stimulus domain (stimulus domain contrast activations in IFJ, SFS, antIPS, and SPL). Note that all contrasts are orthogonal to one another. Cross-validated ridge regression was used to predict TMS effects based upon the activation measures. Note in both cases, predicted and actual TMS effects were negatively correlated indicating that activation measures are not useful for predicting TMS effects. Left: standard (8 mm smoothing). Right: reduced (4 mm smoothing).
+
+![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/57244/elife-57244-fig9-figsupp4-v2.jpg)
+
+**Figure 9—figure supplement 4.:** Details are the same as Figure 9 except that cognitive ability and activations have been regressed out of static and dynamic integration measures. Top: standard (8 mm smoothing). Bottom: reduced (4 mm smoothing).
 
 Next, additional relationships among TMS susceptibility, cognitive ability, and activation were examined. TMS susceptibility and cognitive ability showed a non-significant negative relationship (r = −0.33, p=0.13). To examine whether integration measures predicted TMS susceptibility over-and-above cognitive ability, cognitive ability was regressed out of measures of static and dynamic integration. The resultant measures could be used to predict TMS susceptibility (r = 0.46, p=0.02; Figure 9—figure supplement 2). These data suggest independence between prediction of cognitive ability and TMS susceptibility. Next, activation-based measures were used to predict TMS susceptibility similar to the procedures detailed above. Unlike cognitive ability, activation-based measures could not predict TMS susceptibility (correlations among predicted and observed TMS effects all <0; Figure 9—figure supplement 3). Moreover, after regressing out both cognitive ability and activation measures from static and dynamic integration, integration measures continued to predict TMS susceptibility (r = 0.47, p=0.02; Figure 9—figure supplement 4). These effects were all replicated with reduced smoothing (Figure 9—figure supplements 2–4). Hence, these data suggest that network integration is useful for predicting susceptibility to neuromodulation over-and-above cognitive ability and control-related activations.
 
@@ -100,11 +309,11 @@ The FPCN is thought to support cognitive control through integrating diverse net
 
 Analyses on effective connectivity (directed interactions) examined network dynamics supporting cognitive control. These analyses revealed the existence of an integrative set of control areas whose dynamics relate to higher level cognitive ability and amenability to neuromodulation. These integrative areas were situated in an intermediary zone of the mirrored PFC-PPC gradient. Networks on either end of this control gradient acted in a segregative manner, exciting within-network nodes, while suppressing between-network nodes. Such dynamics may support selective processing of one time horizon (present/future) or medium (external/internal) at the exclusion of another. By contrast, the integration of both external/present-oriented and internal/future-oriented control networks may support hierarchical control wherein appropriate behaviors are jointly contingent on external and internal representations. The broader importance of such integrative processing was underscored by the relationship of individual differences in integrative dynamics and higher-level cognitive ability on the one hand, and amenability to neuromodulation on the other. Hence, the dynamics may be useful to specify optimal cognitive function, and predict responsivity to interventions.
 
-## Beyond the PFC: toward a network view of cognitive control
+### Beyond the PFC: toward a network view of cognitive control
 
 A substantial body of work has focused on the functional organization of the lateral PFC and interactions therein that support cognitive control. Despite long-standing recognition that cognitive control is supported by areas distributed across the frontal and parietal lobes (Vincent et al., 2008; Yeo et al., 2011; Duncan, 2010; Cole et al., 2013; Cole and Schneider, 2007; Power and Petersen, 2013; Fedorenko et al., 2013; Warren et al., 2014; Duncan et al., 2020), much work, particularly in the domain of hierarchical cognitive control, has centered narrowly on how processing varies along the rostral-caudal axis of the PFC (Badre and Nee, 2018; Badre and D'Esposito, 2009; Koechlin et al., 2003; Nee and D'Esposito, 2016; Nee and D'Esposito, 2017; Badre and D'Esposito, 2007; Badre, 2008). Although a number of insights have been gained by focusing on the PFC, such a narrow focus ignores the broader networks in which the PFC participates. Choi et al., 2018 recently demonstrated that the same rostral-caudal organization for control observed in the PFC is reflected in the PPC consistent with the idea that the PFC and PPC are comprised of ordered networks for control. The data here replicate those findings while also linking PFC-PPC activations with behavior along distinct timescales. Hence, it appears to the case that many functions that have been attributed to the PFC are also present in the PPC. This necessitates expanding the study of cognitive control beyond the PFC to network and brain-wide levels.
 
-## Macroscale gradients and cognitive control
+### Macroscale gradients and cognitive control
 
 There has been a recent surge of interest in macroscale gradients across the cortex (Margulies et al., 2016; Huntenburg et al., 2018; Wang, 2020). This interest stems from the thought that gradients provide a scaffold for functional processing thereby offering a window into how large-scale networks support cognition. Following Mesulam, 1998, Margulies et al., 2016 proposed the existence of two macroscale axes upon which gradients are built with the first reflecting connectivity distance from primary cortices and the second reflecting modality. Huntenburg et al., 2018 further proposed that the first gradient matches a temporal gradient reflecting the fundamental timescale over which a cortical area operates (Hasson et al., 2015; Chaudhuri et al., 2015; Murray et al., 2014), and the abstractness of the mental representations processed by the cortical area. These ideas are similar to those proposed by Fuster, 2001 who hypothesized that mirrored frontal and posterior abstraction gradients support the temporal organization of controlled behaviors. However, within these frameworks, it is unclear exactly whether or how control should be distinguished from processing. That is, if the cortex can be organized along a principle axis of abstraction, does control emerge at the far end of that axis, all throughout, or in-between?
 
@@ -116,7 +325,7 @@ However, alignment between task activation contrasts and previous co-activation 
 
 One question that remains open is the spatial resolution of macroscale cortical gradients. The gradients depicted here appear somewhat continuous (Figure 2). However, the appearance of such continuity could be the result of any number of processing steps including spatial interpolations, smoothing, and averaging. For example, discrete individual variability can appear smooth and continuous after group averaging (Braga and Buckner, 2017; Gordon et al., 2017). When examined in an individual, connectivity profiles have been demonstrated to abruptly shift along spatial axes (Wig et al., 2014) suggesting that the cortex is best considered to be composed of discrete areas. Moreover, a recent study examining the scale of gradients in the PFC of non-human primates also concluded that such gradients vary in an areal rather than smooth fashion (Tan et al., 2020). Such data are consistent with the longstanding idea that discrete cortical areas perform discrete functions (Brodmann, 1909; Amunts and Zilles, 2015). Because of the processing and spatial resolution of the data here, the present dataset is unable to speak to finer gradations that may exist below the areal level, and is not inconsistent with the idea that the resolution of macroscale gradients is the areal level.
 
-## Integration and cognitive control
+### Integration and cognitive control
 
 Previous work has indicated the presence of an integrative core of regions important for multiple tasks (Duncan and Owen, 2000; Duncan, 2010; Duncan, 2013; Cole et al., 2013; Cocchi et al., 2014; Cole et al., 2012; Shine et al., 2019a; Dosenbach et al., 2008; Dubois et al., 2018). For example, Shine et al., 2019a recently performed a spatiotemporal principle components analysis across multiple tasks of the Human Connectome Project. The first principle component of this analysis rose and fell in cadence with task demands across multiple domains with greater rising associated with greater fluid intelligence. Similarly, Cole et al., 2012 found that the global brain connectivity of a region in mid-lateral PFC predicted individual differences in fluid intelligence. Cocchi et al., 2014 found that a similar region showed enhanced dynamic coupling with a diverse set of brain areas as the complexity of reasoning demands increased. Collectively, these data indicate the need for integration across tasks and demands for higher level cognition. Our data situate the areas associated with such integration in an intermediary zone of the FPCN.
 
@@ -130,7 +339,7 @@ Although I have suggested an integrative role of areas positioned in the middle 
 
 The FPCN is not the only network important for integration and cognitive control. Extensive work has indicated the importance of the cingulo-opercular network (Cocchi et al., 2013; Dosenbach et al., 2008; Cohen et al., 2014; Marek et al., 2015) . Moreover, a cognitive control organization that parallels the PFC has recently been observed in the cerebellum (D’Mello et al., 2020). In the cerebellum, as in here, intermediary areas involved in contextual control showed an integrative role, mediating relationships among control areas at either end of the external/internal, present/future axis. Detailing interactions among the FPCN and these other networks would provide valuable insights into the brain-wise basis of cognitive control.
 
-## Limitations
+### Limitations
 
 Several limitations should be considered to properly contextualize the findings reported here. First, positive effective connectivity has been posited as an excitatory influence while negative effective connectivity has been posited as an inhibitory influence. However, such interpretations should be taken with caution. Although spDCM models the translation of synaptic activity to the blood-oxygenation level dependent (BOLD) signal, it does not attempt to model more specific cellular and molecular processes. Moreover, estimates of effective connectivity depend upon the areas modeled. That is, an estimated direct influence among areas A and B could potentially be mediated by an un-modeled area C. In particular, it could well be the case that negative influences among areas in the FPCN are mediated by interactions with other structures such as the thalamus and basal ganglia (Frank and Badre, 2012; Frank et al., 2001; Badre and Frank, 2012). Hence, these observations should be taken as a starting point from which more complex and biologically plausible networks can be expanded.
 
@@ -142,7 +351,7 @@ Fourth, the analyses presented here have focused exclusively on the left hemisph
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty-four participants (13 female; age 18–28, mean 19.9 years) formed sample 1, previously described (Nee and D'Esposito, 2016). Twenty-five participants (16 female; age 18–27; mean 20.6 years) formed sample 2, previously described (Nee and D'Esposito, 2017). Collectively, the total sample size was forty-nine.
 
@@ -150,9 +359,9 @@ All participants were screened to be right-handed, native English speakers or fl
 
 The targeted number of participants was based upon previous work with related paradigms. The empirical replicability of univariate activations from these data has been previously established (Nee, 2019) indicating that power is sufficient for the estimation of cognitive control networks at the group level at the collected sample sizes. To ensure replicability of more complex analyses, bi-variate, and effective connectivity analyses in the present study are reported separately for each sample when possible, providing indications of replicability and power sufficiency.
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
-## Comprehensive control task
+#### Comprehensive control task
 
 The Comprehensive Control Task was adapted from prior work (Koechlin et al., 1999; Charron and Koechlin, 2010), and designed to manipulate multiple forms of cognitive control within a single, well-controlled paradigm. These different forms of control can be classed by different levels of abstraction with concrete processing acting on external stimuli in the present moment, and abstract processing supporting the maintenance of internal representations to guide future behavior. At the lowest level, sensory-motor control selects relevant stimulus features and associated actions. At the mid-level, contextual control selects the rules that guide the appropriate stimulus-response associations. Finally, at the highest level, temporal control supports temporally-extended representations that prepare for future control demands.
 
@@ -176,37 +385,37 @@ Each stimulus was presented for 500 ms followed by a variable inter-trial interv
 
 Within a week prior to scanning, participants performed a practice session to learn the task. During the practice session, participants received extensive written instruction and clarification from an experimenter. Given the numerous rules and complexities of the task, instruction was broken up such that participants first learned the verbal sequence, then the spatial sequence, and then the sub-tasks. Participants continued to repeat instruction and practice under experimental supervision until they were comfortable with the rules. Thereafter, participants completed three runs of the task on their own. During each scanning session, participants completed one additional practice run in the scanner prior to fMRI data collection.
 
-## Cognitive battery
+### Cognitive battery
 
 To obtain trait-level measures of cognitive ability, participants performed computerized versions of letter span, spatial span, operation span, and symmetry span. Operation span and symmetry span provide measures of working memory capacity (Turner and Engle, 1989). Letter span and spatial span provide simple measures of short-term memory capacity. Participants also performed a paper version of Raven’s Advanced Progressive Matrices (http://www.perasonassessments.com), wherein Set I was used as practice, and Set II was used to measure fluid intelligence. As previously reported (Nee and D'Esposito, 2016), performance across these measures were correlated. Therefore, the measures were combined using principle components analysis with the first principle component providing an index of general higher-level cognitive ability.
 
-## Image acquisition
+### Image acquisition
 
 As previously reported (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017), brain imaging data were acquired at the Henry H. Wheeler, Jr. Brain Imaging Center at the University of California, Berkeley using a Siemens TIM/Trio 3T MRI equipped with a 32-channel head coil. Stimuli were projected to a coil-attached mirror using an MRI-compatible Avotec projector (Avotec, Inc; https://avotecinccom). Experimental tasks were created using E-Prime software version 2.0 (Psychology Software Tools, Inc; https://pstnet.com/). Eye position was monitored using an Avotec system (RE-5700) and Viewpoint software (http://www.arringtonresearch.com/). Response data were collected on an MR-compatible button box (Current Designs, Inc; https://curdes.com).
 
 T2* weighted fMRI was performed using gradient echo planar imaging (EPI) with 3.4375 mm2 in-plane resolution and 35 descending slices of 3.75 mm thickness. TR = 2000 ms, echo time = 25 ms, flip angle = 70, field of view = 220 mm2. The first three images of each run were automatically discarded to allow for image stabilization. Field maps were collected to correct for magnetic distortion. High-resolution T1-weighted MPRAGE images were collected for anatomical localization and spatial normalization (240 × 256 × 160 matrix of 1 mm3 isotropic voxels; TR = 2300 ms; echo time = 2.98 ms; flip angle = 9). Each session included a 6 min eyes open resting state run in addition to six task runs. In sample 1, the resting-state run was collected prior to the task in the first session, and after the task in the second session. In sample 2, the resting-state run was collected prior to the task.
 
-## Behavioral data preprocessing
+### Behavioral data preprocessing
 
 Behavioral data was preprocessed using custom MATLAB code (MathWorks; https://www.mathworks.com). Data were sorted by phase (first baseline, sub-task, second baseline). Transitions between phases were considered separately. Of primary importance in this report are the sub-task trials (i.e. all trials in the sub-task phase excluding the first trial of the phase) and what are referred to as ‘return’ trials which mark the transition from the sub-task phase to the second baseline phase. For example, in Planning blocks, the sub-task trials themselves require minimal processing since all stimuli during this phase require a ‘no’ keypress. On the return trial, participants perform sequence back with reference to the stimulus feature that preceded the sub-task phase. Thus, the sub-task trials reflect a combination of cognitive control in the moment and preparing for the future, while the return trials reflect actualization of sub-task preparation. Sub-task and return trials were separately sorted for each cell of the 2 × 2 × 2 design. Reaction times were computed on trials with a correct response only. Reaction times less than 200 ms were discarded as anticipatory and reaction times greater than 2000 ms were discarded as inattentive. Furthermore, reaction times greater than 2.5 standard deviations of the mean of a given condition were removed as outliers. These procedures resulted in the removal of 0.76% of the trials in sample 1, and 0.65% of the trials in sample 2.
 
-## Image preprocessing
+### Image preprocessing
 
 Unless otherwise specified, preprocessing was performed using SPM8 (http://www.fil.ion.ucl.ac.uk/spm/). Raw data was converted from DICOM into nifti format. Origins for all images were manually set to the anterior commissure. AFNI’s 3dDespike function (http://afni.nimh.nih.gov/afni) was applied to the functional data to remove outlier time-points. Correction for differences in slice-timing and spatial realignment were performed next. Images were then corrected for magnetic distortion using the FieldMap toolbox implemented in SPM8 Andersson et al., 2001. Functional data were co-registered to the T1-weighted image. Segmented normalization was performed on the T1-weighted image. Spatial normalization parameters were subsequently applied to the functional task data. This step also resampled the functional images to 2 mm3 isotropic. Task data were subsequently smoothed using an 8 mm3 full-width/half-maximum isotropic Gaussian kernel. To ensure that smoothing did not artifactually influence the results, all analyses were also repeated with 4 mm3 smoothing. Prior to spatial normalization, resting data underwent additional preprocessing using custom-written MATLAB scripts. Resting data were high-pass filtered at 0.009 Hz using SPM8’s spm_filter function. Next, nuisance signals from white matter and cerebrospinal fluid were extracted and regressed out of the data along with linear, squared, differential, and squared differential motion parameters (motion parameters were estimated during spatial realignment described above). The residualized data were low-pass filtered at 0.08 Hz using a second-order Butterworth filter. The filtered, artifact-corrected resting data were then spatially normalized and smoothed as described above.
 
 The bulk of the report focuses on data that were preprocessed in the manner described above. However, large volumetric smoothing kernels can blur and obscure activation gradients. To ensure that the observed activation gradients were not artifactually caused by these processing choices, the data were re-processed using Freesurfer version 6.0 (https://surfer.nmr.mgh.harvard.edu/). The T1-weighted image was registered to the fsaverage surface using recon-all. Despiked, slice-timing corrected, realigned, unwarped functional data described above (i.e. before spatial normalization) were sampled onto the fsaverage surface using preproc-sess (note, motion correction was omitted using the –nomc flag since motion correction was previously performed). Four mm smoothing was performed on the surface and then the functional data was returned to the volume using surfsmooth-sess. In this case, returning the data to the volume enabled the same model estimation procedures to be performed on both the volume smoothed and surface smoothed data, providing a well-matched comparison.
 
-## Univariate image analysis
+### Univariate image analysis
 
 Univariate modeling of task activation has been previously described (Nee and D'Esposito, 2016) and was implemented using SPM8. Of main interest are the sub-task phases which were separately modeled for each cell of the 2 × 2 × 2 design as epochs starting after the first sub-task trial through the end of the final sub-task trial. The first and second baseline trials were also modeled as epochs, separately for each phase and stimulus domain, also starting from the second trial of the epoch through the last. Transient regressors were included to model the first trial of each block, separately for each stimulus domain, the first trial of each sub-task, separately for each cell of the 2 × 2 × 2 design, and the first trial of the second baseline (also known as the ‘return’ trial), separately for each cell of the 2 × 2 × 2 design. Additional transient regressors were included to model left and right keypresses, as well as error trials. All regressors were convolved with the canonical hemodynamic response function implemented in SPM. Each run was modeled separately containing a separate intercept term, high-pass filter at 128 s, AR(1) modeling to account for temporal autocorrelation, and scaling such that run-wide global signal averaged 100. For participants demonstrating greater than 3 mm/degrees of motion over the course of the session or a single framewise movement greater than 0.5 mm/degrees, 24 motion regressors were included reflecting linear, squared, differential, and squared differential to remove motion-related artifacts (Lund et al., 2005; Satterthwaite et al., 2013).
 
 At the first level, contrasts were created to isolate the sub-task phase of each cell of the 2 × 2 × 2 design by averaging parameter estimates across runs. These first level parameter estimates were then carried forward to a second level 2 × 2 × 2 ANOVA. Second-level contrasts were calculated as t-tests within the ANOVA framework. Five orthogonal contrasts of interest were considered: Temporal Control (Dual + Planning > Switching + Baseline), Contextual Control (Dual + Switching > Planning + Baseline), Sensory-Motor Control (Dual + Baseline > Planning + Switching), Verbal Stimulus Domain (Verbal > Spatial), and Spatial Stimulus Domain (Spatial > Verbal). Note that the contrasts with the ‘Control’ modifier collapsed across Stimulus Domain (e.g. Dual is a combination of Verbal Dual and Spatial Dual), while contrasts with the Stimulus Domain modifier collapsed across the Control conditions (e.g. Verbal is a combination of Verbal Dual, Verbal Planning, Verbal Switching, and Verbal Baseline). In keeping with previous reports on these datasets (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017), whole-brain voxel-wise activation maps were thresholded at p<0.001 at the voxel level with 124 voxel extent providing correction for family-wise error (FWE) at p<0.05 according to AlphaSim.
 
-## Network overlap
+### Network overlap
 
 For each activation contrast, the overlap with the Yeo et al., 2011. 17-network parcellation was examined. For each of the 17 networks, the percentage of significant voxels for a given activation contrast that overlapped with the network was tabulated.
 
-## Regions-of-interest
+### Regions-of-interest
 
 The five contrasts of interest produced wide swaths of activation throughout the PFC and PPC. To examine the activations in a more granular manner, regions-of-interest (ROIs) were created as 6 mm3 spheres centered on peak activation coordinates. PFC ROIs have been previously described (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017). Given that the contrasts produced partially overlapping activations, distinct peaks were defined as local maxima that were distanced at least 1.5 cm from another peak. The location of PFC peaks was determined by sample one and peaks similar in location revealed by the same contrast were identified in sample 2. This ordering was due to the temporal ordering of data collection and analysis (i.e. sample one was collected and analyzed first and sample two was analyzed in an effort to replicate findings in sample one as detailed previously [Nee and D'Esposito, 2016; Nee and D'Esposito, 2017]). This resulted in six PFC ROIs detailed in Table 1: lateral frontal pole (FPl), middle frontal gyrus (MFG), ventrolateral prefrontal cortex (VLPFC), caudal middle frontal gyrus (cMFG), inferior frontal junction (IFJ), and superior frontal sulcus (SFS).
 
@@ -214,13 +423,13 @@ ROIs in the PPC were defined separately for sample 1 and sample 2, again using t
 
 In both the PFC and PPC, some peaks could be identified by two or three contrasts (i.e. local maximum within 1.5 cm from one another were observed across multiple contrasts). The contrast chosen to define a given peak was done with consideration of the contrast that most unambiguously identified the peak in individual subjects. This choice was made since the effective connectivity analyses detailed below were tailored to each individual’s activation peaks, providing individual-specific parcellation. The end result of this analysis choice was that the least expansive contrast (where expansive refers to the number of activated voxels of a contrast) tended to be chosen to define an ROI for a given peak.
 
-## Functional profiling and multi-dimensional scaling
+### Functional profiling and multi-dimensional scaling
 
 Since ROIs could respond to multiple demands, we sought to quantify each ROI’s activation profile. Because the ROIs were formed from peaks of a particular contrast in a particular sample, simply plotting the activation profile of the ROIs defined above constitutes circularity that biases the profile toward the ROI-defining contrast (Kriegeskorte et al., 2009). To provide unbiased estimates, the ROIs from sample one were used to functionally profile sample two, and vice versa. Hence, data used to define ROIs and test ROIs were independent. Within these unbiased ROIs, statistics for the five contrasts-of-interest were calculated using repeated-measures 2 × 2 × 2 ANOVAs. For each sample, statistical significance was Bonferroni corrected for the number of ROIs.
 
 To further characterize each ROI, the ROI data were submitted to multi-dimensional scaling. The data for each individual and each ROI were z-scored across the eight conditions-of-interest. Then, for each ROI, the individual-level data were stacked, resulting in a two-dimensional matrix wherein one-dimension was composed of individuals x conditions, and the other dimension was composed of ROIs. Dissimilarity among ROIs was computed using 1 – r, where r is the Pearson’s correlation. This dissimilarity matrix was submitted to MATLAB’s cmdscale function. Each ROI was then plotted as a point in the space defined by the first two dimensions wherein the first two dimensions captured 89.2% of the variance in the data (71.0% for the first, 18.3% for the second, 0.04% for the third). As explained in the Results, the first dimension appeared to map well onto an abstraction axis, and the second dimension appeared to map well onto a stimulus domain axis.
 
-## Brain-behavior relationships
+### Brain-behavior relationships
 
 To better understand how activation in each ROI relates to cognitive control, relationships between behavioral performance in the Comprehensive Control Task and activation were calculated similar to previous reports (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017). Three differences between the analyses reported here and those reported previously is that here, (1) each ROI is considered separately (pairs of ROIs were combined previously), (2) ROI data were extracted to ensure independence as explained above (i.e. sample one defined ROIs for sample two, and vice versa), and (3) repeated measures correlations were computed using the rmcorr package in R (previously correlations were computed by regressing out subject-specific terms). Mean RT for the eight conditions of interest were calculated for each individual separately for the sub-task trials and return trials, as described above. The eight element vector was then z-scored separately for each phase. The sub-task trial RTs were regarded as ‘Present Behavior’ since the RTs reflect behavior at the time that the fMRI signal was estimated (i.e. activations of interest were drawn from the sub-task phase). The return trial RTs were regarded as ‘Future Behavior’ since the RTs reflect the time directly after the fMRI signal was estimated. Future Behavior reflects the behavior that is being prepared for during the sub-task phase, which might not be reflected in the sub-task trial RT per se (e.g. Planning blocks have fast Present RTs, but slow Future RTs). For each ROI, a repeated measures correlation was used to assess the relationship between activation and Present Behavior (controlling for Future Behavior), and activation and Future Behavior (controlling for Present Behavior). These procedures were performed separately for each sample. Statistical significance was assessed after Bonferroni correction for number of ROIs. Correlations that did not survive multiple comparisons correction, but were present at uncorrected levels are also noted.
 
@@ -228,11 +437,11 @@ Linear mixed effects models were fit in order to quantify how ROIs differ in ter
 
 ROI analyses offer an incomplete picture of brain-behavior relationships. To better visualize whole-brain patterns, voxel-wise partial correlations were performed. The data were stacked across individuals. For each voxel, the partial correlation between activation and Present Behavior, controlling for Future Behavior and individual, as well as the partial correlation between activation and Future Behavior, controlling for Present Behavior and individual were calculated. The resultant maps were thresholded at p<0.001 at the voxel-level, and clusters of 124 voxels or more were retained for visualization.
 
-## Resting-state functional connectivity
+### Resting-state functional connectivity
 
 Of main interest in this report is effective connectivity which estimates directed relationships among areas. To constrain these analyses, seed-based functional connectivity was performed on the resting-state data in order to identify ROI’s that may be connected to one another (and prune connections that are likely to not be present). For each ROI, voxel-wise correlations were computed between the ROI time-series and each voxel time-series. This was done separately for each resting-state run in sample 1 (note, only sample 1 was used here to maintain compatibility with the connectivity matrix defined previously [Nee and D'Esposito, 2016]). For a given seed ROI, the correlation values of each voxel were ranked after excluding voxels within 1.5 cm of the seed ROI. A correlation value r at cost c was computed wherein r reflects the correlation value of voxel at the cth percentile. Here, c was set to 18 as detailed previously (Nee and D'Esposito, 2016). Then, four counts were made: whether ROI 1 was connected to ROI 2 when ROI 1 was the seed in run 1, whether ROI 1 was connected to ROI 2 when ROI 2 was the seed in run 1, whether ROI 1 was connected to ROI 2 when ROI 2 was the seed in run 2, and whether ROI 1 was connected to ROI 2 when ROI 2 was the seed in run 2. A pair of ROIs were considered ‘connected’ if the average correlation value in the target ROI exceeded r. If at least 3 of the 4 counts were tallied, the connection between the areas was considered a candidate for future consideration. The resultant candidate connectivity matrix was utilized for effective connectivity analyses. The intent of this procedure was to be somewhat liberal, and allows the effective connectivity modeling to further prune connections. Hence, this procedure should be considered a scaffold for analyses to follow rather than an attempt to determine the true connectivity structure of the data.
 
-## Spectral dynamic causal modeling
+### Spectral dynamic causal modeling
 
 Time-invariant effective connectivity was estimated using spectral dynamic causal modeling (spDCM) implemented in SPM12 and DCM12.5. spDCM inverts a biophysically plausible generative model of the fMRI cross-spectral density (Friston et al., 2014; Razi et al., 2015; Razi et al., 2017). The model estimates the effective connectivity among hidden neural states and includes a hemodynamic forward model that accounts for how synaptic activity translates into regional hemodynamics and observed connectivity in the fMRI signal. spDCM estimated the effective connectivity among the six PFC and four PPC areas that are the focus of this report. Previously, ‘classic’ deterministic dynamic causal modeling (DCM) (Friston et al., 2003) was performed on the six PFC areas (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017). ‘Classic’ DCM differs in numerous algorithmic and practical ways from spDCM (see Friston et al., 2014). Most notably, while ‘classic’ DCM inverts a generative model of the time-series of each modeled area, spDCM inverts a generative model of the cross-spectral density. The latter renders spDCM much more computationally tractable. This computational tractability comes at the cost of limiting modeling to time-invariant aspects of effective connectivity, which differs from ‘classic’ DCM that models both time-invariant and time-varying aspects of effective connectivity. However, ‘classic’ DCM becomes computationally impractical as the number of modeled areas grows. Therefore, spDCM is the more appropriate approach given the number of areas considered here. To complement spDCM, psycho-physiogical interaction (PPI) analyses were employed (described below) to capture time-varying aspects of effective connectivity. Hence, relative to previous work (Nee and D'Esposito, 2016; Nee and D'Esposito, 2017), the present study employed different methods that are computationally better-suited to answering questions at the network-level. An added benefit of its computational tractability is that the present approach can also scale up to answering questions about the interactions of the FPCN and other networks, which will facilitate future work.
 
@@ -246,9 +455,13 @@ The following defaults were changed: the order of the AR model was set to 4 (thi
 
 spDCM was performed separately for each sample. This enabled the examination of the replicability of effective connectivity estimates and derivations thereof.
 
-## Psychophysiological interaction analysis
+### Psychophysiological interaction analysis
 
-To examine dynamic (time-varying) effective connectivity, psychophysiological interaction (PPI) analysis was performed. Here, a variant of the method detailed in Cole et al., 2013 was employed. Time-series’ from the same VOIs that were submitted to spDCM were modeled (in this case, the VOIs without the task regressed out since the task regressors are regressed out as part of PPI). For each connection in the probable connectivity matrix, the data were modeled as:Ytarget=BconnYsource+BuniX+Bdep(bin(X)∗C.∗Ysource)
+To examine dynamic (time-varying) effective connectivity, psychophysiological interaction (PPI) analysis was performed. Here, a variant of the method detailed in Cole et al., 2013 was employed. Time-series’ from the same VOIs that were submitted to spDCM were modeled (in this case, the VOIs without the task regressed out since the task regressors are regressed out as part of PPI). For each connection in the probable connectivity matrix, the data were modeled as:
+
+$$
+Y_{target}=B_{conn}Y_{source}+B_{uni}X+B_{dep}(bin(X)^{∗}C.^{∗}Y_{source})
+$$
 
 Here, Ytarget is the time-series of the target VOI, Ysource is the time-series of the source VOI, X is the univariate design matrix, bin(X) is a binarized version of the univariate design matrix wherein time-points that are above 0 are set to one and other time-points are set to 0, and C is the contrast matrix. This results in estimations of several contributions to the signal in the target VOI: Bconn which represents the time-invariant functional connectivity among the target and source, Buni which represents the univariate time-invariant task signals, and of main interest, Bdep which is the context-dependent changes in effective connectivity from the source to the target. This formulation is identical to Cole et al., 2013 except that contrasts are included within the model itself rather than being computed after parameter estimation. This change was performed because it reduces multi-collinearity, which is particularly problematic for PPI among highly correlated nodes. Preliminary analyses revealed that the more connected two regions were, the more negatively biased Bdep became using the method of Cole et al., 2013. This bias was eliminated by utilizing contrasts within the model.
 
@@ -256,7 +469,7 @@ Context-dependent connectivity (i.e. the PPI) is dictated by the contrasts defin
 
 PPI analyses were performed separately for each sample. This enabled the examination of the replicability of the effective connectivity estimates and derivations thereof. PPI’s of Sensory-motor Control and Contextual Control x Stimulus Domain were unreliable across samples (Figure 7—figure supplement 1). Therefore, analyses were restricted to PPI’s of Temporal Control, Contextual Control, and Stimulus Domain.
 
-## Predicting higher level cognitive ability
+### Predicting higher level cognitive ability
 
 spDCM and PPI provided measures of static and dynamic effective connectivity, respectively. In particular, spDCM analyses revealed a role of contextual control-related areas in integrating cognitive control networks, and PPI analyses revealed greater integration across cognitive control networks during contextual control conditions. To examine the relevance of these measures to higher level cognition, static and dynamic effective connectivity were used to predict individual-differences in general higher-level cognitive ability.
 
@@ -264,7 +477,7 @@ General higher-level cognitive ability was assessed using the first principle co
 
 Ridge regression was performed to predict general higher-level cognitive ability from static and dynamic integration. This was done in a two-fold manner, wherein each fold divided the dataset into training and test sets as a function of the samples (i.e. sample 1 and sample 2). For example, sample one was used to estimate weights using ridge regression, and then those weights were used to predict general higher-level cognitive ability in sample 2. Ridge regression was performed with at an arbitrarily chosen penalty parameter = 1, although significant prediction was achieved at penalties as high as 100 (which was the highest tested). The correlation between the observed and predicted general higher-level cognitive abilities was used to assess prediction performance. The observed correlation was compared to a permutation distribution formed by randomly permuting the rows of the prediction matrix 1000 times.
 
-## Predicting transcranial magnetic stimulation susceptibility
+### Predicting transcranial magnetic stimulation susceptibility
 
 As previously reported (Nee and D'Esposito, 2017), sample two was used to test the causal role of frontal areas to different forms of cognitive control. Each participant in sample two underwent an additional four sessions of the Comprehensive Control Task following continuous theta-burst stimulation (cTBS) to each of FPl, VLPFC, SFS, and S1 (control site). cTBS is patterned form of transcranial magnetic stimulation (TMS) thought to inhibit cortical tissue (Huang et al., 2005). Each TMS target was a node in a distinct PFC-PPC network and was predicted to produce distinct impairments in cognitive control. To examine whether static and dynamic integration of cognitive control networks is related to TMS susceptibility, the three observed TMS effects of interest were combined: the effect of FPl TMS on temporal control on error-rate, the effect of VLPFC TMS on the contextual control x stimulus-domain interaction on reaction time, and the effect of SFS TMS on stimulus-domain on error-rate (see Nee and D'Esposito, 2017 for additional details). For each effect, the frontal TMS effect was isolated by regressing out the corresponding effect following S1 TMS. Then, all TMS effects were combined using the first principle component.
 

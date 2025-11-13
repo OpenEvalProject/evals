@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.08411.001 Plants rely on transcriptional dynamics to respond to multiple climatic fluctuations and contexts in nature. We analyzed the genome-wide gene expression patterns of rice ( Oryza sativa ) growing in rainfed and irrigated fields during two distinct tropical seasons and determined simple linear models that relate transcriptomic variation to climatic fluctuations. These models combine multiple environmental parameters to account for patterns of expression in the field of co-expressed gene clusters. We examined the similarities of our environmental models between tropical and temperate field conditions, using previously published data. We found that field type and macroclimate had broad impacts on transcriptional responses to environmental fluctuations, especially for genes involved in photosynthesis and development. Nevertheless, variation in solar radiation and temperature at the timescale of hours had reproducible effects across environmental contexts. These results provide a basis for broad-based predictive modeling of plant gene expression in the field. DOI: http://dx.doi.org/10.7554/eLife.08411.001
+Plants rely on transcriptional dynamics to respond to multiple climatic fluctuations and contexts in nature. We analyzed the genome-wide gene expression patterns of rice (Oryza sativa) growing in rainfed and irrigated fields during two distinct tropical seasons and determined simple linear models that relate transcriptomic variation to climatic fluctuations. These models combine multiple environmental parameters to account for patterns of expression in the field of co-expressed gene clusters. We examined the similarities of our environmental models between tropical and temperate field conditions, using previously published data. We found that field type and macroclimate had broad impacts on transcriptional responses to environmental fluctuations, especially for genes involved in photosynthesis and development. Nevertheless, variation in solar radiation and temperature at the timescale of hours had reproducible effects across environmental contexts. These results provide a basis for broad-based predictive modeling of plant gene expression in the field.
 
 ## Introduction
 
@@ -42,71 +42,223 @@ The study we report here is the first to focus on identifying the concurrent eff
 
 ## Results
 
-## Isolating environmental effects on gene expression in the field
+### Isolating environmental effects on gene expression in the field
 
-Our experiment was designed to specifically assess the effect on rice global gene expression of climatic fluctuations, different types of field environments and the genetic background. We conducted two phases of field cultivation - one during the dry season (January–February) and one during the wet season (July–August) at the experimental rice station of the International Rice Research Institute (IRRI), Los Baños, Laguna, in the island of Luzon in the Philippines in 2013 (
+Our experiment was designed to specifically assess the effect on rice global gene expression of climatic fluctuations, different types of field environments and the genetic background. We conducted two phases of field cultivation - one during the dry season (January–February) and one during the wet season (July–August) at the experimental rice station of the International Rice Research Institute (IRRI), Los Baños, Laguna, in the island of Luzon in the Philippines in 2013 (Figure 1A). The plants were cultivated in two adjacent fields typical of two different systems of rice cultivation. One field was cultivated following irrigated lowland practices: it was flooded with shallow water under constant irrigation and seedlings were transplanted to the field after being raised for 3 weeks in seedbeds (referred to as irrigated field). The second field was managed according to upland cultivation practices: it was rainfed, not irrigated and had been directly seeded (referred to as rainfed field). Each field was divided into two subfields constituting the biological replicates. We grew three different landraces of rice: (i) Azucena, an upland adapted landrace; (ii) Pandan Wangi, traditionally used for lowland cultivation only in the dry season; and (iii) Palawan, another upland adapted landrace that is used only during wet season cultivation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig1-v2.jpg)
 
-**Figure 1.:** ( A) Experimental design: fifteen sampling timepoints for each of the 16 season/field/replicate/genotype series amounts to 240 samples, representative of 30 different sets of climatic conditions, represented here by the 30 red lines on the graphs for temperature and precipitation (accumulated mm per 5 min) along the sampling period of each growing season. (B) Processing raw RNA sequencing data into main transcriptomic variation for different subsets of our data. (C) Modeling potential differences between fields and seasons for climatic/developmental response within a cluster mean. An example for cluster 15 of the two-season analysis, where the model selected is common to both fields in the wet season but field specific in the dry season. Az, Azucena landrace; Pa, Palawan landrace; PW, Pandan Wangi landrace.DOI: http://dx.doi.org/10.7554/eLife.08411.003
+**Figure 1.:** (A) Experimental design: fifteen sampling timepoints for each of the 16 season/field/replicate/genotype series amounts to 240 samples, representative of 30 different sets of climatic conditions, represented here by the 30 red lines on the graphs for temperature and precipitation (accumulated mm per 5 min) along the sampling period of each growing season. (B) Processing raw RNA sequencing data into main transcriptomic variation for different subsets of our data. (C) Modeling potential differences between fields and seasons for climatic/developmental response within a cluster mean. An example for cluster 15 of the two-season analysis, where the model selected is common to both fields in the wet season but field specific in the dry season. Az, Azucena landrace; Pa, Palawan landrace; PW, Pandan Wangi landrace.
 
 To avoid the major shift in gene expression patterns induced by the transition to the flowering stage (Sato et al., 2011), which would confound our detection of environmental effects, we sampled rice leaf tissue during 1 month of vegetative growth (15 sampling timepoints, 2 days apart). Sampling was carried out 4 hr after sunrise to minimize circadian-driven transcriptional variation. Each sample included six young leaves, each from a different plant, to minimize variation in individual plant microenvironment.
 
 We measured global gene expression using RNA sequencing (Figure 1B). We excluded from our analysis genes for which we detected sequencing reads for less than 20 samples out of the 60 samples in each genotype per season subset of the data. The expression data for the 22,144 remaining genes was log-transformed and the biological replicates were averaged.
 
-## Modeling the effect of climatic factors on transcriptomic variation in different field environments
+### Modeling the effect of climatic factors on transcriptomic variation in different field environments
 
 Our goal is to relate gene expression variation over time to variation in climatic conditions and plant developmental stage, and assess how these relationships are affected by season, field type and genetic background. We focused on trends in gene expression variation common to a high number of genes: after removing 1251 genes with a low coefficient of variation and 2962 genes with a low mean expression, we grouped the remaining genes into co-expressed gene clusters (Figure 1B). The number of clusters chosen was the highest that satisfied the constraint that no more than 5% of all the genes in the analysis belonged to “non-representative” small clusters, defined as containing less than 1% of all the genes in the analysis. We used the mean expression profile of all genes in each cluster as a representation of the variation in expression within that cluster.
 
-We used a model selection approach to explain gene expression patterns by environmental and developmental variation. This approach relies on selecting a linear combination of environmental/developmental (ED) input parameters that both minimizes model mean squared error (MSE), quantifying the difference between the model and the expression data, and limits model complexity (i.e., avoiding over-fitting). A preliminary analysis showed that allowing for more than three parameters per equation over-fit the model more often than improving it, so we limited the number of parameters per linear equation to three. A typical ED equation had the following form: cluster mean = αED1 + βED2 + γED3, where ED1, ED2 and ED3 are ED parameters, and α, β and γ are linear regression coefficients. The ED parameters used in these models were measurements of current conditions at the time of sampling, recent changes in temperature, humidity, wind speed and solar radiation, temperature fluctuations, and short-term and long-term averages for all climatic conditions (Table 1). We included parameters for non-linear effect of short-term solar radiation on gene expression, because this type of effect has been observed on photosynthesis rate (Li et al., 2009). There were two parameters for field soil moisture, at 30 and 15 cm below ground (measured with tensiometers in the rainfed field and estimated to be constant at soil saturation value in the irrigated field), and a binary parameter for the field (irrigated or rainfed). A parameter was designed to represent developmental stage, using fixed values for the transplanting stage, end of tillering production and the heading time. Our set of ED parameters included those that correlated with each other, so we averaged nearly similar parameters (r > 0.98) and added to our model selection approach the constraint that two parameters with a Pearson correlation coefficient over 0.85 could not be selected in the same equation.10.7554/eLife.08411.004Table 1.Climatic parameters for the environmental/developmental models and their abbreviations. Parameters calculated from the weather data are mostly ordinary averages (linear: L) for a large range of time windows before sampling but also include exponentially transformed averages (non-linear: NL) modeling stronger effects at either low (NL-) or high (NL+) values. For the most dynamic climatic parameters, we calculated differences (D) between the measurement at the sampling timepoint and the measurement short amounts of time before sampling. To estimate fluctuations, we calculated averages of the residual term (R) from the seasonal decomposition of daily variation into cyclic and trend components. The abbreviation for each climatic factor and parameter type and time-window is given in parentheses.DOI: http://dx.doi.org/10.7554/eLife.08411.004Average/change for the lastTemperature(tp)Relative humidity(hu)Solar radiation(so)Wind speed(wd)Atmospheric pressure(ps)Rainfall(ra)Sampling time15 min (15 min)LLL NL− NL+LLLShort-term averages1 hr (1 hr)LLL NL− NL+LLL4 hr (4 hr)LLL NL− NL+LLL24 hr (24 hr)LLLLLLLong-term averages3 d (3 d)LLLLLL6 d (6 d)LLLLLL10 d (10 d)LLLLLL15 d (15 d)LLLLLLRecent change20 min (δ20 min)DDDD1 hr (δ1 hr)DDDD2 hr (δ2 hr)DDDDFluctuations1 hr (ε1 hr)R4 hr (ε4 hr)R24 hr (ε24 hr)R
+We used a model selection approach to explain gene expression patterns by environmental and developmental variation. This approach relies on selecting a linear combination of environmental/developmental (ED) input parameters that both minimizes model mean squared error (MSE), quantifying the difference between the model and the expression data, and limits model complexity (i.e., avoiding over-fitting). A preliminary analysis showed that allowing for more than three parameters per equation over-fit the model more often than improving it, so we limited the number of parameters per linear equation to three. A typical ED equation had the following form: cluster mean = αED1 + βED2 + γED3, where ED1, ED2 and ED3 are ED parameters, and α, β and γ are linear regression coefficients. The ED parameters used in these models were measurements of current conditions at the time of sampling, recent changes in temperature, humidity, wind speed and solar radiation, temperature fluctuations, and short-term and long-term averages for all climatic conditions (Table 1). We included parameters for non-linear effect of short-term solar radiation on gene expression, because this type of effect has been observed on photosynthesis rate (Li et al., 2009). There were two parameters for field soil moisture, at 30 and 15 cm below ground (measured with tensiometers in the rainfed field and estimated to be constant at soil saturation value in the irrigated field), and a binary parameter for the field (irrigated or rainfed). A parameter was designed to represent developmental stage, using fixed values for the transplanting stage, end of tillering production and the heading time. Our set of ED parameters included those that correlated with each other, so we averaged nearly similar parameters (r > 0.98) and added to our model selection approach the constraint that two parameters with a Pearson correlation coefficient over 0.85 could not be selected in the same equation.
+
+**Table 1.**
+ Climatic parameters for the environmental/developmental models and their abbreviations. Parameters calculated from the weather data are mostly ordinary averages (linear: L) for a large range of time windows before sampling but also include exponentially transformed averages (non-linear: NL) modeling stronger effects at either low (NL-) or high (NL+) values. For the most dynamic climatic parameters, we calculated differences (D) between the measurement at the sampling timepoint and the measurement short amounts of time before sampling. To estimate fluctuations, we calculated averages of the residual term (R) from the seasonal decomposition of daily variation into cyclic and trend components. The abbreviation for each climatic factor and parameter type and time-window is given in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Average/change for the last</th>
+      <th>Temperature(tp)</th>
+      <th>Relative humidity(hu)</th>
+      <th>Solar radiation(so)</th>
+      <th>Wind speed(wd)</th>
+      <th>Atmospheric pressure(ps)</th>
+      <th>Rainfall(ra)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sampling time</td>
+      <td>15 min (15 min)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L NL− NL+</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Short-term averages</td>
+      <td>1 hr (1 hr)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L NL− NL+</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>4 hr (4 hr)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L NL− NL+</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>24 hr (24 hr)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Long-term averages</td>
+      <td>3 d (3 d)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>6 d (6 d)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>10 d (10 d)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>15 d (15 d)</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Recent change</td>
+      <td>20 min (δ20 min)</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 hr (δ1 hr)</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2 hr (δ2 hr)</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Fluctuations</td>
+      <td>1 hr (ε1 hr)</td>
+      <td>R</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4 hr (ε4 hr)</td>
+      <td>R</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>24 hr (ε24 hr)</td>
+      <td>R</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We designed our approach to take potential differences in climatic response between fields, genotypes and seasons into account. To assess whether disparities in transcriptional patterns could be explained using distinct ED equations, we considered different ED models for each cluster. The simplest model is a single equation for the whole cluster mean. A more complex model would combine two different equations, for example, in the case of a field-specific model: cluster mean = αiED1 + βiED2 + γiED3 in the irrigated field and cluster mean = αrED4 + βrED5 + γrED6 in the rainfed field.
 
 If we were to take into account all possible differences between fields, genotypes and seasons, we would get models with as many as eight equations, which would be difficult to interpret. We therefore limited the maximum number of equations to four by applying the method to one season at a time, testing different equations between fields and genotypes; or considering only one genotype and examining the possibility of different equations between fields and seasons (this latter case is represented in Figure 1C). We chose between the models comprising one to four equations using the Bayesian Information Criterion (BIC), a statistical tool to limit over-fitting that includes a complexity penalty, calculated on the global model for all subsets.
 
-## Modeled environmental responses are shared by both genotypes in the dry season: a reason to average genotypes
+### Modeled environmental responses are shared by both genotypes in the dry season: a reason to average genotypes
 
 We first used our model selection approach on the dry season data alone, as this was the season with the greatest phenotypic differences between the rainfed and irrigated fields. We wanted to determine the extent of genotype and field differences in gene expression variation during that season and how well the ED models can explain these differences. For a given cluster, we quantified the differences in variation of gene expression between the two genotypes by calculating the correlation between the two genotype-specific subsets of the cluster mean. The same method was used to evaluate differences in expression patterns between fields.
 
-Only 19 out of the 56 clusters (4663 genes) had a correlation coefficient between genotypes below 0.8 (
+Only 19 out of the 56 clusters (4663 genes) had a correlation coefficient between genotypes below 0.8 (Figure 2A). Clusters with a low genotype correlation had a high model MSE, which showed that the ED models did not adequately explain these genotype differences. We found much more extensive differences in gene expression patterns between field environments (Figure 2B), with 48 clusters (15,103 genes) that had a correlation coefficient below 0.8. While all clusters with high correlation between field environments (r > 0.8) had ED models that fitted the cluster mean well (model MSE < 0.12), low MSE models were also selected for several clusters with strong dissimilarities between field environments. In some cases, ED models could thus explain strong field differences. We did not investigate the genotype effect further and instead used the genotypes as biological replicates that were averaged for the analysis of both seasons, incorporating all the expression data concatenated into 60 data points (Figure 1A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig2-v2.jpg)
 
-**Figure 2.:** ( A) Model MSE vs. correlation (Pearson coefficient) between the genotypes for the 56 dry season cluster means. (B) Model MSE vs. correlation between the fields for the 56 dry season cluster means. MSE, mean squared errorDOI: http://dx.doi.org/10.7554/eLife.08411.005
+**Figure 2.:** (A) Model MSE vs. correlation (Pearson coefficient) between the genotypes for the 56 dry season cluster means. (B) Model MSE vs. correlation between the fields for the 56 dry season cluster means. MSE, mean squared error
 
-## Simple models can explain differences in transcriptomic patterns between fields across two seasons
+### Simple models can explain differences in transcriptomic patterns between fields across two seasons
 
-In this two-season analysis, in addition to identifying which ED parameters the expression of each gene cluster can be related to, we are assessing whether the field environment and the season affect the identified transcriptional response. As an example, the simple season-specific ED model selected for cluster 9 is presented in
+In this two-season analysis, in addition to identifying which ED parameters the expression of each gene cluster can be related to, we are assessing whether the field environment and the season affect the identified transcriptional response. As an example, the simple season-specific ED model selected for cluster 9 is presented in Figure 3A (Supplementary file 1A–C). The model consists of a single linear equation for both fields and both seasons. It combines a negative term for soil moisture at 15 cm depth, a positive term for 1-hr average of solar radiation (exponentially transformed) and a positive term for the change in temperature during the last 2 hr. In this model, the soil moisture input parameter (Figure 3B, Supplementary file 1B) allows for modeling gene expression differences between field environments while keeping a common model for both field environments, in particular the higher expression in the rainfed field environment in the dry season. The selection of a common model for the dry and wet seasons shows that the gene expression response to climatic factors of this cluster was largely independent of the season.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig3-v2.jpg)
 
-**Figure 3.:** (A) Gene expression for the cluster mean (grey) and spread (calculated as 10% and 90% quantile of all genes in the cluster for each data point; grey area), and cluster model (red). (B) Scaled climatic parameters in the model equation for each season. sm 15: soil moisture at 15 cm; so 1h NL-: one hour average of solar radiation transformed to increase the effect of low values; tp δ2h: change in temperature from 2 hr ago. (C) Gene expression pattern (scaled) of six genes in cluster 9 with a potential function in environmental response.DOI: http://dx.doi.org/10.7554/eLife.08411.006
+**Figure 3.:** (A) Gene expression for the cluster mean (grey) and spread (calculated as 10% and 90% quantile of all genes in the cluster for each data point; grey area), and cluster model (red). (B) Scaled climatic parameters in the model equation for each season. sm 15: soil moisture at 15 cm; so 1h NL-: one hour average of solar radiation transformed to increase the effect of low values; tp δ2h: change in temperature from 2 hr ago. (C) Gene expression pattern (scaled) of six genes in cluster 9 with a potential function in environmental response.
 
-We used genotype correlation within a cluster as a measure of replicability of ED effects: the higher the genotype correlation, the more gene expression response was driven by factors common to both genotypes (i.e., climatic and developmental factors). While the median genotype correlation of all genes in the analysis was 0.55, the median of all gene cluster means was 0.90, showing that averaging expression profiles over many genes remarkably reduces sources of non-replicability. We focused on 27 gene expression clusters with a genotype correlation greater than 0.9 (
+We used genotype correlation within a cluster as a measure of replicability of ED effects: the higher the genotype correlation, the more gene expression response was driven by factors common to both genotypes (i.e., climatic and developmental factors). While the median genotype correlation of all genes in the analysis was 0.55, the median of all gene cluster means was 0.90, showing that averaging expression profiles over many genes remarkably reduces sources of non-replicability. We focused on 27 gene expression clusters with a genotype correlation greater than 0.9 (Figure 4, Supplementary file 1C). They encompass 11,371 (63%) of the 17,931 genes in the analysis, as they include most of the largest gene clusters. These clusters are also the ones with the best ED models (i.e., with a small error and low complexity, such as the one depicted in Figure 3, Supplementary file 1C). For these clusters, we observed extensive field effect on the climatic/developmental response, with only 6 out the 27 clusters (2308 genes) showing high correlation (r > 0.8) between fields in both seasons. As expected from the much lower precipitation levels during the dry season, which accentuated the difference in water availability between fields (Figure 1A), the dry season climatic conditions generated wider between-field differences in gene expression compared with the wet season (Figure 4, Supplementary file 1C). The season effect was slightly less prevalent, as 11 out the 27 clusters (4967 genes) were modeled with the same equation for both seasons (Supplementary file 1C), indicative of season-independent responses.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig4-v2.jpg)
 
-**Figure 4.:** Each dot represents a cluster with the size of the dot proportional to the number of genes in the cluster. The 27-gene clusters with igh genotype correlation (r > 0.9, Pearson coefficient) are represented with a filled circle and divided into four groups depending on whether their correlation between fields in each season is below or above 0.8 (dashed lines), referred to as high or low correlation. Group 1 clusters have a high correlation between fields in both seasons; group 2 clusters have a high correlation in the wet season but not in the dry season; group 3 clusters have a high field correlation in the dry season but not in the wet season; group 4 clusters have a low field correlation in both seasons.DOI: http://dx.doi.org/10.7554/eLife.08411.007
+**Figure 4.:** Each dot represents a cluster with the size of the dot proportional to the number of genes in the cluster. The 27-gene clusters with igh genotype correlation (r > 0.9, Pearson coefficient) are represented with a filled circle and divided into four groups depending on whether their correlation between fields in each season is below or above 0.8 (dashed lines), referred to as high or low correlation. Group 1 clusters have a high correlation between fields in both seasons; group 2 clusters have a high correlation in the wet season but not in the dry season; group 3 clusters have a high field correlation in the dry season but not in the wet season; group 4 clusters have a low field correlation in both seasons.
 
-## Field environment strongly impacts the transcriptional regulation of photosynthesis and development
+### Field environment strongly impacts the transcriptional regulation of photosynthesis and development
 
 We analyzed gene clusters according to their field response to understand how distinct modes of cultivation affect gene expression under the same climate. The expression of a gene cluster can be affected by the field environment in two ways: (i) distinct responses to climatic/developmental factors and/or (ii) a shift in expression level, representing different ways in which the effect of the field environment can be integrated with the climatic response and developmental program. Enrichment in specific functions or pathways within the different types of gene clusters can be indicative of the role of certain processes in the adaptation to distinct field environments.
 
 We divided the 27-gene clusters into four groups based on whether they showed different expression responses to climatic/developmental factors in each of the two fields (correlation between the expression patterns of the two fields below 0.8) in one or two seasons (Figure 4). We also calculated the difference in mean expression between the fields for each season. To investigate the molecular processes that were most affected by climatic variation and field environments, we conducted a gene ontology (GO) term enrichment analysis for each cluster (Supplementary file 1E).
 
-Correlations between ED parameters make it difficult to ascertain the causal factor of gene expression change from the parameter selected in a model. This is why, for the interpretation of ED models, we grouped those of the parameters that showed high correlations to each other (
+Correlations between ED parameters make it difficult to ascertain the causal factor of gene expression change from the parameter selected in a model. This is why, for the interpretation of ED models, we grouped those of the parameters that showed high correlations to each other (Figure 5A). The parameters (sometimes included in a group of highly correlated parameters) selected for the 27-gene clusters most representative of ED responses are shown in Figure 5B.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig5-v2.jpg)
 
-**Figure 5.:** ( A) Justification for the grouping of model parameters: heat-map of the correlation between the ED parameters selected at least once in the models. For some parameters that have strong negative correlations with other parameters, we used negative values to better see groups of correlated parameters independently of the sign of the correlation. (B) The selection of a parameter into a model is represented by a colored box, orange for a positive term and purple for a negative term. Field correlation is the correlation between irrigated and rainfed field profiles for each season. Field difference is the average expression level in the rainfed field minus the average expression level in the irrigated field. ED, environmental/developmentalDOI: http://dx.doi.org/10.7554/eLife.08411.008
+**Figure 5.:** (A) Justification for the grouping of model parameters: heat-map of the correlation between the ED parameters selected at least once in the models. For some parameters that have strong negative correlations with other parameters, we used negative values to better see groups of correlated parameters independently of the sign of the correlation. (B) The selection of a parameter into a model is represented by a colored box, orange for a positive term and purple for a negative term. Field correlation is the correlation between irrigated and rainfed field profiles for each season. Field difference is the average expression level in the rainfed field minus the average expression level in the irrigated field. ED, environmental/developmental
 
-## Similar patterns across field environments were driven by short-term climatic fluctuations
+#### Similar patterns across field environments were driven by short-term climatic fluctuations
 
 The field environment had the least effect on the climatic/developmental expression response of the six clusters in group 1 (Figure 4). Nevertheless, some of these clusters showed shifts in expression between the fields in the dry season (Figure 5B, Supplementary file 1C). They were mostly influenced by short-term climatic conditions and, to a lesser extent, developmental factors (Figure 5B, Supplementary file 1C), suggesting that short-term temperature/solar radiation had a strong effect on gene expression variation over time that could be independent of the field environment even under limited water availability.
 
 Gene clusters 9 and 18 are both modeled with positive terms for short-term temperature/solar radiation across both fields and both seasons but are differently affected by the field environment. While cluster 18 displays a higher expression in the irrigated field than the rainfed field in the dry season, cluster 9 shows an increase in the mean expression level in the rainfed field compared with the irrigated field in both seasons, but more distinct in the dry season. This field effect is modeled for cluster 9 by the inclusion of a negative term for soil moisture, indicative of an additive effect of water availability on gene expression over the short-term effect of temperature/solar radiation (Figure 3A and B). Cluster 9 is highly enriched for genes related to response to heat (p<10–18, hypergeometric test), response to high light intensity (p<10–9) and, more generally, response to abiotic stimulus (p<10–6), which is consistent with an induction by drought, solar radiation and/or temperature increase. The four gene clusters from group 1 with models that have negative terms for short-term temperature/solar radiation are enriched for signaling/regulatory categories of genes – cluster 8 for response to hormone stimulus, cluster 21 for cell communication and signaling, cluster 24 for protein kinase activity and hormone-related signaling pathway and cluster 30 for regulation of transcription, DNA-dependent. This shows that short-term temperature/solar radiation effects on the expression of groups of co-expressed abiotic stress response and signaling/regulatory genes can be impervious to the field environment.
 
-## Drought-affected climatic and developmental response of abiotic response, photosynthesis and developmental genes
+#### Drought-affected climatic and developmental response of abiotic response, photosynthesis and developmental genes
 
 The 12-gene clusters in group 2 have in common strong differences in gene expression pattern between the rainfed and irrigated fields that are specific to the dry season. These differences are probably due in great part to the drought period experienced during that season. For these clusters, the field environment during the dry season affected both climatic/developmental responses and mean gene expression level (Figure 5B, Supplementary file 1C). Gene clusters in which expression was higher in the rainfed field (clusters 2, 4, 10, 12 and 31) showed an overall increase of expression over time in that field environment (Supplementary file 1A), consistent with an induction of expression following the decrease in soil moisture. The opposite observation was true for gene clusters showing lower expression levels in the dry season rainfed field (clusters 1, 5, 11, 14, 15, 17 and 44).
 
@@ -114,45 +266,45 @@ This steady increase/decrease in gene expression in the dry season rainfed field
 
 Among the gene clusters with a lower level of expression in the rainfed field, clusters 1 and 5 are strongly enriched for genes associated with photosynthesis. Both clusters are also enriched in genes related to lipid biosynthetic process and for cluster 1, secondary metabolic and carbohydrate catabolic processes. This result is consistent with the deleterious effect of abiotic stress on photosynthesis (Chaves et al., 2009) and shows the consequences of that effect on the expression of genes involved in the metabolic processes dependent on photosynthetic products. In contrast, cluster 12 had a higher level of expression in the rainfed field environment in the dry season. Like cluster 9 in group 1, it is modeled with positive terms for short-term temperature/solar radiation across both fields and both seasons and is enriched for several categories of abiotic stimulus response genes. Cluster 12 differs from cluster 9 in that the difference in gene expression between fields during the dry season is more acute, with a higher difference in mean expression and a lower field correlation. This shows that there were two distinct main behaviors of abiotic stress response genes in our experiment, both responding to short-term temperature/solar radiation and drought but to different extents. Clusters 4 and 31 also have an expression pattern consistent with induction by drought. They are both enriched for genes in categories related to development and phenology, like cell cycle for both, anatomical structure development and photomorphogenesis for cluster 4 and photoperiodism for cluster 31.
 
-## Field environment affected the expression of clusters enriched for developmental and photosynthesis genes in both seasons
+#### Field environment affected the expression of clusters enriched for developmental and photosynthesis genes in both seasons
 
 Gene clusters in groups 3 and 4 show differences between the field environments during the wet as well as the dry season, which suggests that their expression is affected by aspects of the field environment not related to water availability. Gene clusters in group 3 had different mean expression level in the two fields in the dry season and a low correlation between the two field environments in the wet season (Figure 5B, Supplementary file 1C). Group 4 clusters also had strong field differences; they had low correlation in gene expression and differences in mean level of expression between fields in both seasons. Some gene clusters in groups 3 and 4 show strong functional enrichment. Cluster 6 is enriched for regulation of shoot development and developmental process, while cluster 13 is enriched for photosynthesis genes. We found that several clusters in groups 3 and 4 were modeled with terms for long-term wind speed, in both fields and seasons in the case of cluster 32. Interestingly, this cluster is enriched for genes related to thigmotropism, the directional response to mechanical stimuli.
 
-## The transcriptional regulation of characterized environmental response genes integrates multiple abiotic stimuli
+### The transcriptional regulation of characterized environmental response genes integrates multiple abiotic stimuli
 
 The functional characterization of genes involved in the response to abiotic stresses is mostly conducted with single environmental perturbations under controlled conditions. Few genes have been functionally characterized for a role in the response to combined environmental stresses. We have found multiple clusters with patterns of expression showing additive effects of several environmental signals. Because changes in the expression of a gene in reaction to perturbations in an environmental factor are usually interpreted as this gene having a function in the physiological response to that factor, our results suggest the genes in these clusters are involved in the response to simultaneous environmental changes. We assessed this further by looking at whether genes shown to have a role in the response to a specific abiotic stimulus also responded transcriptionally to other environmental signals. We compiled lists of genes that had already been demonstrated to have a role in the response to light, water availability or temperature in rice as well as rice homologs of such genes in other species (mainly the model system A. thaliana). We looked at whether the expression patterns of these genes were consistent with their putative function. We focused our attention on the candidate genes that showed a replicable environmental response in our data (genotype correlation above 0.8) and belonged to one of the 22 gene clusters whose main ED model terms are environmental parameters (Supplementary file 1C), which we refer to as genes with a strong environmental regulation.
 
-## Light response genes
+#### Light response genes
 
-From several published reviews, we identified 273 genes involved in light response (
+From several published reviews, we identified 273 genes involved in light response (Galvão and Fankhauser, 2015), in particular phytochrome signaling (Wang and Wang, 2015), phototropin signaling (Sullivan et al., 2009), retrograde signaling (Häusler et al., 2014; Vogel et al., 2014), UV signaling (Singh et al., 2014), brassinosteroid biosynthesis and signaling (Zhang et al., 2014) and the regulation of photosynthesis in response to light (Kaiser et al., 2015; Pfannschmidt and Yang, 2012; Rochaix et al., 2012). Out of the 45 genes with a strong environmental regulation (Figure 6A, Supplementary file 1F), 31 were in nine clusters modeled with positive terms for short-term temperature/solar radiation while 14 were in seven clusters modeled with negative terms for short-term temperature/solar radiation. Most of these genes were also affected by the field environment, especially in the dry season. However, one gene from cluster 15 was highly variable over time (it belonged to the 95th percentile for variance among the 17,931 genes in the 53 clusters) but not between fields. It is an ortholog of A. thaliana ELIP1 and 2 genes, which are possibly involved in pigment accumulation in response to stress (Casazza et al., 2005; Rossini et al., 2006).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig6-v2.jpg)
 
-**Figure 6.:** High variance is represented with lighter shades of gray. The genes represented have a genotype correlation above 0.8. Gene names starting with “Os” are rice gene names, others are the names of A. thaliana orthologous or homologous genes or gene families. Field difference is average expression level in the rainfed field minus average expression level in the irrigated field. Variance is the mean of the expression variance of each gene across the four season/field environment subsets. (A) Genes potentially involved in response to light. (B) Genes potentially involved in response to drought. (C) Genes potentially involved in response to temperature.DOI: http://dx.doi.org/10.7554/eLife.08411.009
+**Figure 6.:** High variance is represented with lighter shades of gray. The genes represented have a genotype correlation above 0.8. Gene names starting with “Os” are rice gene names, others are the names of A. thaliana orthologous or homologous genes or gene families. Field difference is average expression level in the rainfed field minus average expression level in the irrigated field. Variance is the mean of the expression variance of each gene across the four season/field environment subsets. (A) Genes potentially involved in response to light. (B) Genes potentially involved in response to drought. (C) Genes potentially involved in response to temperature.
 
 A group of co-expressed genes included a zeta-carotene desaturase and a phytoene desaturase, both carotenoid biosynthesis enzymes (Fang et al., 2008), two FtsH proteases and an ortholog of the chloroplast sensor kinase (CSK) all of which have a potential role in photoprotection. OsCHS, OsC4H and orthologs of A. thaliana UVR2 and PDX1.3, four genes that could be involved in UV acclimation (Singh et al., 2014), were also co-expressed with the photoprotection genes. These results show that transcriptional regulation is an important component of light response, especially for photoprotection and UV acclimation, and integrates responses to other abiotic stimuli linked to the field environment.
 
-## Drought response genes
+#### Drought response genes
 
 We compiled a list of 79 genes potentially involved in drought response in rice, including genes that were used to engineer drought-tolerant plants (Todaka et al., 2015). Because abscisic acid (ABA) is an essential component of drought response, we also included 46 genes associated with ABA biosynthesis, catabolism, transport and signaling (Figure 6B, Supplementary file 1F). Out of the 25 genes from this list with a strong environmental regulation, 10 belonged to clusters in group 2 (Figure 5B) with a low field correlation only in the dry season, indicating a drought effect on expression and one gene belonged to a cluster in group 4, and showed more difference in mean expression between fields during the dry season. Fourteen genes belonged to clusters in group 1 with correlated patterns of expression over the two fields, but half of these genes showed a distinct difference in mean expression between irrigated and rainfed field in the dry season. This included genes encoding the protein phosphatases OsPP2C06 and OsPP2C30 and the transcriptional regulator OsbZip23 in cluster 9, the expression profiles of which are represented in Figure 3C. All 25 genes belonged to clusters modeled with parameters for short-term temperature/solar radiation averages or changes. In the case of gene clusters 2, 5, 4 and 11, however, no temperature/solar radiation parameter was selected for the model of the rainfed field in the dry season, suggesting that these short-term climatic responses were overridden by a drought response. Seven of the candidate genes displayed weak transcriptional response to the drought period in the dry season, and belonged to clusters modeled with a positive term for short-term temperature/solar radiation. These genes could be responding to abiotic stresses other than drought (e.g. heat, high light) in our conditions.
 
 Our analysis thus indicates that genes involved in drought response may also respond to short-term temperature/solar radiation conditions. For the genes we examined, a transcriptional response to variations in water availability was not always detected, but when it existed, it could be in addition to the short-term climatic response or dominate under drought conditions.
 
-## Temperature response genes
+#### Temperature response genes
 
 We compiled a list of 151 genes with a potential role in temperature response (Penfield, 2008; Wigge, 2013) plus 80 known heat shock factors and heat shock proteins. Twenty-eight of the 34 genes with a strong environmental regulation belonged to seven gene clusters modeled with positive terms for short-term temperature/solar radiation. Several heat shock (HS) genes in clusters 9 and 12 had a greater variation over time and between fields than any selected drought-related gene (Figures 6B and 6C, Supplementary file 1F) while the expression of several HS genes in cluster 18 was not affected by the field environment. Our results show that, in the conditions of our experiment, genes involved in temperature response were mostly induced by short-term heat or light and suggest the frequent transcriptional integration of this response with changes in expression linked to water availability.
 
-## Transferability of climatic effects to an independent dataset of rice gene expression in the field
+### Transferability of climatic effects to an independent dataset of rice gene expression in the field
 
 Here we examine the correspondence of gene expression and climatic variation between our Philippine experiment and a previously published rice field transcriptomic study conducted in different (temperate) climatic conditions (Nagano et al., 2012). From the latter experiment conducted in Japan, we selected 52 daytime timepoints that spanned nearly 7 weeks of vegetative growth in irrigated fields for the Japonica cultivar Nipponbare. We centered (subtracted the mean) the data by time of day to eliminate circadian clock effects. We used the same climatic measurements as those found in our experiment, which were recorded every minute. We refer to this data as the partial Nagano dataset (PND). To determine to what extent our results would hold true under a different climate, we performed a new analysis of our data that excluded measurements from the rainfed field (using the irrigated field half of the two seasons analysis dataset), as the experiment in Japan was exclusively conducted in an irrigated field (Figure 1B). We used these results to test whether ED parameters selected in the models for our data could also explain expression variance of the same clusters of genes in the PND.
 
 The models selected for the 60 gene cluster means calculated from our data (Supplementary file 1G) could be represented by a single equation for the irrigated field in both seasons (season-independent) or of distinct equations for the irrigated field in each season (season-specific). We reasoned that climatic response patterns that were not consistent between the two seasons of our experiment (season-specific models) were unlikely to be reproduced in the PND. Consequently, we only tested the transferability of models for those of our clusters with a season-independent model, when the model explained more than half of the variance of the cluster mean. For each of these 36 clusters, we calculated the mean expression profile in the PND of the genes in the cluster. We determined whether one or several parameters in the model of the cluster mean over our irrigated field data could model the cluster mean over the PND with the same coefficient signs, by comparing all possible models with combinations of these parameters with the BIC.
 
-Non-null models were selected for 24 of the 36 PND cluster means (
+Non-null models were selected for 24 of the 36 PND cluster means (Figure 7). They explained between 13 and 86% of the expression variance over the 52 data points of the PND. The parameters that could explain expression variation in our experiment and the PND were predominantly developmental stage and parameters for short-term solar radiation and temperature, especially in the models that explained a large part of the expression variance. Only one long-term climatic parameter was conserved in several PND cluster mean models: the 15-day average of wind speed, which was selected in four models, including one that explained 52% of the expression variance. These results show that a large part of climatic effects on gene expression vary with the type of climate; in particular, long-term effects.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08411/elife-08411-fig7-v2.jpg)
 
-**Figure 7.:** Models were selected for 60 clusters using our expression data in the irrigated field during the wet and dry seasons. The parameters from these models that could be transferred to explain the mean expression of the cluster mean in the PND are shown with a green box, the ones that were not transferred are indicated with a black box. The variance of the PND cluster mean explained by the partially transferred model is represented with decreasing shades of blue. PND, partial Nagano dataset. DOI: http://dx.doi.org/10.7554/eLife.08411.010
+**Figure 7.:** Models were selected for 60 clusters using our expression data in the irrigated field during the wet and dry seasons. The parameters from these models that could be transferred to explain the mean expression of the cluster mean in the PND are shown with a green box, the ones that were not transferred are indicated with a black box. The variance of the PND cluster mean explained by the partially transferred model is represented with decreasing shades of blue. PND, partial Nagano dataset.
 
 As we found that several clusters enriched for genes involved in photosynthesis and development were among the most sensitive to the field context, we investigated whether this was also true for the seasonal and climatic context. We performed a GO term enrichment analysis on the clusters from the irrigated field analysis (Supplementary file 1I). We identified two clusters highly enriched for genes related to photosynthesis (p<10–27 and 10–26, respectively), which were both modeled with season-dependent models. This result indicates that the transcriptional response of groups of co-expressed genes involved in photosynthesis is affected by the seasonal context. Two clusters (13 and 25) were enriched for genes associated with the developmental process and cell cycle. Cluster 13 was modeled with a season-dependent model while cluster 25 could be modeled with the same equation for both seasons of our experiment but no parameter of this equation could be transferred to model expression in the PND. This shows that the transcriptional regulation of some genes involved in development is not only sensitive to the field context but also to the season and climate type context.
 
@@ -160,7 +312,7 @@ To compare our method with the method from Nagano et al. (2012) with respect to 
 
 ## Discussion
 
-## Natural conditions provide a systematic view of transcriptional integration of multiple environmental signals
+### Natural conditions provide a systematic view of transcriptional integration of multiple environmental signals
 
 We used a model selection approach to identify relationships between major variations in global gene expression and environmental conditions/developmental stage. Focusing our analysis on groups of genes showing consistent variation across two different genotypes in each of the two seasons, we determined that most of these representative expression patterns could be explained through the combined effects of several environmental parameters, related to distinct climatic/soil-related factors and/or on different time-scales.
 
@@ -170,7 +322,7 @@ Genes that have been previously characterized for their role in a specific type 
 
 Another possible explanation is the difference in time-scale of our field study compared with most laboratory-based experiments. The effect of an abiotic stress is often analyzed within hours of the stress treatment; in our field experiment, we examined climatic variables that changed constantly and gradually over a month. The time-scale of the study is especially critical in the case of drought stress, because in natural conditions, it usually occurs over the course of days or weeks. More generally, covering longer time frames than laboratory studies allowed us to observe environmental effects interact with plant developmental processes in an integrated way (Allahverdiyeva et al., 2015), as well as examine the effects of long-term seasonal climatic effects. Our results thus show that measuring gene expression under natural conditions and for long periods of time can help better assess the effect of multiple abiotic stimuli on gene expression.
 
-## Field and climatic contexts had extensive effects on the environmental response of gene expression
+### Field and climatic contexts had extensive effects on the environmental response of gene expression
 
 In this study, we assessed the impact of different seasons, field environments and types of climate on weather-driven patterns of gene expression. Most of the seasonal differences were limited to the rainfed field and were related to the prolonged period, with very little precipitation occurring during the dry season. When analyzing only the irrigated field data, we found that 44 out 60 clusters (representing 72% of the genes in all clusters) were modeled with a common equation for both seasons (Supplementary file 1G). A fair level of reproducibility was also observed between different years of irrigated field culture for rice (Nagano et al., 2012).
 
@@ -182,7 +334,7 @@ When investigating the reproducibility of transcriptional responses, we found th
 
 In contrast, we found that the effect of longer-term variation (10-, 15-day averages) in temperature and solar radiation were much less reproducible across seasons, fields and climates than short-term effects. One explanation is that, as these responses may be integrated over long periods of time, there is greater opportunity for them to be modulated by broad climatic and developmental factors. The only long-term environmental factor that could be transferred to model gene expression under the Japanese climate for several clusters was the 15-day average of wind speed. In our two-season analysis, it was selected to model across both seasons and fields cluster 32, which is enriched for thigmotropism genes. While there have already been studies aiming at identifying genes responsive to mechanical cues (Lee et al., 2005), they were limited to hour-scale laboratory experiments. Our results show that, in nature, the effect of wind on gene expression might be more prevalent on a week-scale, which is consistent with the long-term accommodation to repetitive wind loads observed in poplar (Martin et al., 2010). Further study of the genes in cluster 32 should contribute to the understanding of gene regulation in response to wind necessary to unravel the cellular processes involved in the time integration of mechanosensing (Moulia et al., 2011).
 
-## Dynamic environmental stimuli are continuously integrated for the transcriptional regulation of development and photosynthesis
+### Dynamic environmental stimuli are continuously integrated for the transcriptional regulation of development and photosynthesis
 
 The analysis for GO annotation enrichment of the 27 clusters with the most reproducible expression patterns revealed functionally related groups of genes that are co-expressed in response to environmental and developmental signals. These results point to the biological processes most critical for plant physiological response to dynamic environments. The GO terms for biological processes with the most significant enrichment were nucleic acid metabolic process (and its parent term nucleobase-containing compound metabolic process) and photosynthesis.
 
@@ -192,13 +344,13 @@ Clusters 1, 5 and 13 were greatly enriched for photosynthesis related genes (p<1
 
 Focusing on our irrigated field data and the data from an independent field experiment (Nagano et al., 2012), we found that the expression patterns of groups of co-expressed genes involved in photosynthesis were affected by the seasonal context (independently of drought) and the environmental response of groups of genes associated with development was dependent on the climatic context. This suggests that the transcriptional regulation of both photosynthesis and development relies on complex mechanisms, resulting in the integration of numerous layers of environmental cues, short-term climatic fluctuations as well as steadier aspects of the plant surroundings.
 
-## Conclusion
+### Conclusion
 
 Understanding the dynamics of gene expression is a major challenge in biology. This is particularly difficult in the context of complex environments found in nature, as it requires unraveling the concurrent effects of multiple, fluctuating environmental signals on transcriptional patterns. Nevertheless, the ability to establish the environmental response of whole transcriptomes can have wide applications, including controlling engineered gene circuits (Uhlendorf et al., 2012) and predicting gene patterns in untested conditions (Bonneau et al., 2007; Danziger et al., 2014; Nagano et al., 2012). Our results suggest that while field environments can result in complex responses, one can nevertheless identify co-expressed gene clusters the mean expression of which can be accurately modeled with climatic, field, seasonal and developmental factors. Further work can integrate such models with other approaches, including gene network inference (Bonneau et al., 2007), genotype-by-environment interactions (Marais et al., 2013) and phenotypic modeling (Aikawa et al., 2010; Satake et al., 2013), to provide a more comprehensive picture of plant responses in natural environments. This, in turn, can be used in the design of improved crops (Hammer et al., 2006; Mochida et al., 2015) and the prediction of the ecological effects of climate change (Stafford et al., 2013).
 
 ## Materials and methods
 
-## Plant growth, sampling and measurement
+### Plant growth, sampling and measurement
 
 We used rice landraces for which seeds were available at the IRRI in Los Baños, Philippines, and that we knew are traditionally used for either lowland or upland cultivation. Azucena and Palawan are Filipino upland landraces while Pandan Wangi is a lowland Indonesian landrace. Azucena and Padan Wangi were grown in the dry season, while in the wet season we grew Azucena and Palawan.
 
@@ -212,11 +364,11 @@ Averages of temperature, relative humidity, wind speed, solar radiation, precipi
 
 Plant height and tiller number were measured every 6 days for the same plants all along each season until the end of sampling (four plants per replicate in the dry season, twelve plants per replicate in the wet season).
 
-## RNA sequencing
+### RNA sequencing
 
 Frozen leaf tissue was ground manually with a mortar and pestle cooled in liquid nitrogen. Total RNA was extracted from about 200–400 µl of ground tissue using the RNeasy Plant Mini Kit (Qiagen, Venlo, The Netherlands), following the manufacturer’s protocol and eluting the RNA in 40 µl of water. RNA was treated with Baseline-ZERO DNase (Epicentre, Madison, Wisconsin) according to the manufacturer’s instructions then cleaned up with the Qiagen RNeasy Mini Kit and eluted in 32 µl of water. We assessed RNA quality using nanodrop and electrophoresis on an agarose gel. Total RNA, 4 µg, were depleted of ribosomal RNA using Epicentre Ribo-Zero Magnetic Kit for plant leaf tissue. We purified the depleted RNA with the Agencourt RNAClean XP kit (Beckman Coulter, Brea, CA). We constructed RNA libraries using the Epicentre ScriptSeq v2 RNA-Seq Library Preparation Kit, purifying the complementary DNA and libraries with the Agencourt AMPure XP System. We added barcode index using the Epicentre ScriptSeq Index PCR Primers. We quantified the libraries by Qubit (Life Technologies, Norwalk, Connecticut), with the DNA HS kit. Libraries quality and average fragment size was determined using the 2100 Bioanalyzer (Agilent, Santa Clara, CA) with high sensitivity DNA reagents and DNA chip. We quantified the libraries on the LightCycler 480 (Roche, Nutley, NJ) using the KAPA (Wilmongton, MA) Library Quantification Kit. Libraries were sequenced using HiSeq 2000 (Illumina, San Diego, CA) 51 bp paired-end sequencing, with either 6 or 8 libraries per lane. Each sample provided a mean of 58 million sequencing reads.
 
-## Expression data analysis
+### Expression data analysis
 
 The reads were aligned to the O. sativa Nipponbare – release 7 of the MSU Rice Genome Annotation Project reference genome (Kawahara et al., 2013) – 373,245,519 base pairs of non-overlapping rice genome sequence from the 12 rice chromosomes. Also included are the sequences for chloroplast (134,525 bp), mitochondrion (490,520 bp), Syngenta pseudomolecule (592,136 bp), and the unanchored BAC pseudomolecule (633,585 bp). The annotation contains 56,143 genes (loci), of which 6457 had additional alternative splicing isoforms resulting in a total of 66,495 transcripts.
 
@@ -226,19 +378,23 @@ We conducted a multi dimensional scaling of the normalized expression data where
 
 We considered each subset of the data that consisted of one genotype and one season and excluded from the normalized expression dataset genes for which we detected no read for more than 40 samples in any of these subsets, which reduced the dataset to 22,144 expressed genes. We transformed the obtained value with the following function: log2(x + 1), as to keep positive values of expression and averaged the biological replicates. We calculated the coefficient of variation of the log-transformed expression over the 240 data points for each expressed gene. We identified 1251 genes with a coefficient of variation below 0.01, which were considered as having a stable expression in our experiment and were removed from the analysis. A preliminary cluster analysis showed that genes with a very low expression level had a weak correlation with the center of their clusters, thus 2962 genes with a mean lower than 1 were not included in the clustering step. To remove the absolute differences in expression level between genotypes and seasons, which we did not intend to model, each genotype/season subset was centered.
 
-## Clustering and gene ontology enrichment analysis
+### Clustering and gene ontology enrichment analysis
 
 For each of the analyses, the expression data for each gene was scaled over the whole profile. Our clustering method was the Partitioning Around Medoids algorithm from the “cluster” package version 1.15.2 (Maechler et al., 2015) in R (R development Core Team, 2011) using 1 − r, with r the Pearson correlation coefficient, as the distance between expression profiles. To choose the number of clusters (k) we first used several clustering indices but they gave inconsistent results and usually indicated a k lower than 20. To avoid running the risk of under-clustering, which would have resulted in averaging genes responding to very different ED factors and therefore losing transcriptional signal, we chose to constrain k only on the fact that most clusters should represent a major trend in transcriptional variation. We therefore chose k as the highest number of clusters for which no more than 5% of all the genes in the analysis belonged to “non-representative” small clusters, defined as containing less than 1% of all the genes in the analysis. The gene co-expression clusters were ordered according to the number of genes they contained so that cluster 1 was the biggest cluster.
 
 Two sets of gene annotations were obtained from Gene Ontology (http://geneontology.org/page/about) from the November 2014 release. For the first one, the annotation database was queried via MSU locus identifiers; for the second one, the database was queried via Uniprot Ids, obtained via a mapping from MSU Id to OMA Id, and then OMA Id to Uniprot Id (mapping files available in the current release of OMA). A third set of annotations was obtained directly from OMA (http://omabrowser.org/oma/about/). All three annotation sets were then combined non-redundantly in order to produce the final annotation file for rice genes. The enrichment analysis was conducted using the GOstats package in R (Falcon and Gentleman, 2007).
 
-## Model selection
+### Model selection
 
 To represent each cluster, we calculated the average scaled expression of all the genes in the cluster. This “cluster mean” was used as the output data in our modeling approach. Climatic, field and developmental parameters constituted the input data. We calculated averages of temperature, relative humidity, wind speed, solar radiation, precipitation and pressure for 15 min 1, 4, and 24 hr; and 3, 6, 10 and 15 days before sampling. Short-term changes in temperature, humidity, wind speed and solar radiation were determined by calculating the difference between the value of each measurement at the sampling time and 20 min (δ20 min), 1 hr (δ1 hr) and 2 hr (δ2 hr) earlier, using 5, 10, and 30 min averages, respectively. We evaluated temperature fluctuations by decomposing daily variation in temperature with the seasonal decomposition by loess (stl) function in R and calculating 1 hr (ε1 hr), 4 hr (ε4 hr) and 24 hr (ε24 hr) before sampling averages of the remainder of the decomposition. The value used for the soil moisture parameters was a mean of measurements from four tensiometers, two in each replicate of the rainfed field. Exponentially transformed values of solar radiation used the following equations:
 
-NL + (x) = exp((x-400)/200)
+$$
+NL+ (x) = exp((x-400)/200)
+$$
 
+$$
 NL-(x) = exp((400-x)/200)
+$$
 
 We designed a parameter that would give an estimate of the developmental stage, rather than age, of the plant to be able to compare appropriately the plants in the rainfed and irrigated fields as they followed different developmental itineraries relative to their age in days. This parameter used three stages as fixed points: transplanting stage (given a value of 0), corresponding to the actual transplanting event for the irrigated field and determined for the rainfed plants as the stage where they were the same height as just transplanted irrigated plants, end of tillering production (40) and heading stage (100). Intermediary time-points were calculated linearly between these fixed points. Input parameters were centered per genotype and season and scaled over the whole dataset to match the expression data.
 
@@ -246,7 +402,7 @@ When input parameters were more highly correlated than the highest genotype corr
 
 The same method was used on each cluster of a given set to select a model. It is described here for the analysis of one genotype in two seasons Source code 1; the analysis of two genotypes in one season is identical and the analysis of the irrigated field with averaged genotype follows the same principle.
 
-## Analysis of the data from Nagano et al. (2012)
+### Analysis of the data from Nagano et al. (2012)
 
 We used microarray data from two studies (Nagano et al., 2012; Sato et al., 2011) available on the GEO website (accession numbers: GSE36040 and GSE21494), that was already normalized and log-transformed. We used only data from sampling points collected at 8:00, 10:00, 12:00, 14:00 and 16:00 as these times were far enough from sunrise (around 4:30) and sunset (around 19:00). We only used data from samples collected before flowering, from 15 to 62 days after transplanting. Sunrise time varied little enough during that period (from 4:23 to 4:34) that it could be estimated that a series of samples collected at the same time of day would have negligible variation in circadian clock. There were eight samples collected at 8:00, 12 samples at 10:00, eight samples for single replicates and 24 samples for triplicates of eight sampling points at 12:00, eight samples at 14:00 and eight samples at 16:00. We excluded from the analysis genes with an expression value below −7 in more than 17 samples, keeping 19,837 genes, 16,659 of which overlap with the ones in our analysis. We averaged the biological triplicates, resulting in a total of 52 data points. For every gene, we centered individually each of the separate profiles corresponding to a given time of day, thus eliminating potential circadian clock driven differences between these times of sampling. This data constituted the PND.
 

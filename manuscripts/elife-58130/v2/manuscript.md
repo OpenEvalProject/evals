@@ -15,7 +15,7 @@
 
 ## Abstract
 
-SWI/SNF-family chromatin remodeling complexes, such as S. cerevisiae RSC, slide and eject nucleosomes to regulate transcription. Within nucleosomes, stiff DNA sequences confer spontaneous partial unwrapping, prompting whether and how SWI/SNF-family remodelers are specialized to remodel partially-unwrapped nucleosomes. RSC1 and RSC2 are orthologs of mammalian PBRM1 (polybromo) which define two separate RSC sub-complexes. Remarkably, in vitro the Rsc1-containing complex remodels partially-unwrapped nucleosomes much better than does the Rsc2-containing complex. Moreover, a rsc1 Δ mutation, but not rsc2 Δ, is lethal with histone mutations that confer partial unwrapping. Rsc1/2 isoforms both cooperate with the DNA-binding proteins Rsc3/30 and the HMG protein, Hmo1, to remodel partially-unwrapped nucleosomes, but show differential reliance on these factors. Notably, genetic impairment of these factors strongly reduces the expression of genes with wide nucleosome-deficient regions (e.g., ribosomal protein genes), known to harbor partially-unwrapped nucleosomes. Taken together, Rsc1/2 isoforms are specialized through composition and interactions to manage and remodel partially-unwrapped nucleosomes.
+SWI/SNF-family chromatin remodeling complexes, such as S. cerevisiae RSC, slide and eject nucleosomes to regulate transcription. Within nucleosomes, stiff DNA sequences confer spontaneous partial unwrapping, prompting whether and how SWI/SNF-family remodelers are specialized to remodel partially-unwrapped nucleosomes. RSC1 and RSC2 are orthologs of mammalian PBRM1 (polybromo) which define two separate RSC sub-complexes. Remarkably, in vitro the Rsc1-containing complex remodels partially-unwrapped nucleosomes much better than does the Rsc2-containing complex. Moreover, a rsc1Δ mutation, but not rsc2Δ, is lethal with histone mutations that confer partial unwrapping. Rsc1/2 isoforms both cooperate with the DNA-binding proteins Rsc3/30 and the HMG protein, Hmo1, to remodel partially-unwrapped nucleosomes, but show differential reliance on these factors. Notably, genetic impairment of these factors strongly reduces the expression of genes with wide nucleosome-deficient regions (e.g., ribosomal protein genes), known to harbor partially-unwrapped nucleosomes. Taken together, Rsc1/2 isoforms are specialized through composition and interactions to manage and remodel partially-unwrapped nucleosomes.
 
 ## Introduction
 
@@ -29,51 +29,681 @@ Prior work has revealed the presence of partially-unwrapped ‘fragile’ nucleo
 
 ## Results
 
-## The Rsc3/30 heterodimer preferentially associates with the RSC1 complex via the CT2 domain
+### The Rsc3/30 heterodimer preferentially associates with the RSC1 complex via the CT2 domain
 
 Rsc1 and Rsc2 are highly similar proteins (45% identical, 62% similar), with high homology present in the bromodomains, BAH domain, and the CT1 region – whereas the CT2 region, which is required for Rsc1 or Rsc2 assembly into RSC, is considerably more divergent (Cairns et al., 1999). We began by exploring whether these Rsc1- or Rsc2-containing subtypes differ in composition, beyond Rsc1/2 themselves. To determine, we purified RSC sub-complexes using a TAP tag (Puig et al., 2001) on either Rsc1 or Rsc2, which revealed Rsc3/30 at apparent stoichiometric levels in the Rsc1-containing complex, but substoichiometric levels in the Rsc2-containing complex (Figure 1A and B; Chambers et al., 2012). Furthermore, when purifications were conducted under increasing salt conditions, Rsc3/30 association with Rsc1-TAP was maintained, but was lost with Rsc2-TAP (Figure 1—figure supplement 1) confirming higher avidity of Rsc3/30 for the Rsc1 sub-type.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig1-v2.jpg)
+
+**Figure 1.:** (A) Purified RSC1-TAP and RSC2-TAP complexes (2 µg) analyzed on 7.5% SDS-PAGE gel stained with Coomassie dye. (B) RSC1 and RSC2 complex compositions, with decreased opacity displaying the reduced association of the Rsc3/30 module in the RSC2 complex. (C) Domain structure and swaps of Rsc1 and Rsc2. (D) CT2 domain swaps complement for viability. TRP1-marked plasmids bearing RSC1 (p609), RSC2 (p604), RSC1 w/2CT2 (p3097), RSC2 w/1CT2 (p3098), or vector (pRS314) were transformed into rsc1∆ rsc2∆ [RSC1.URA3] (YBC800), and spotted as 10x serial dilutions to SC-TRP or to SC-TRP+5FOA to force the loss of the RSC1.URA3 plasmid. ’ w/’ indicates ‘with’. One of four biological replicates shown. (E) The Rsc3/30 module associates more strongly with the CT2 region of Rsc1. Immunoprecipitations of Rsc1, Rsc2 w/1CT2, Rsc2, Rsc1 w/2CT2 from whole cell extracts. Blots were probed with anti-Sth1, then stripped and reprobed for anti-Rsc3 and anti-Rsc4. One of three technical replicates shown. Figure 1—figure supplement 1. The Rsc3/30 module associates with the RSC1 complex at high stringency. Figure 1—figure supplement 2. Additional swaps and truncations define the region of Rsc3/30 association.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Yeast cell lysates containing RSC-TAP complexes were bound to IgG resin, the beads rinsed with lysis buffer before washing with buffer of the indicated salt concentration and duration. RSC complexes were analyzed on 6% acrylamide SDS-PAGE gels stained with silver. The Rsc3 and Rsc30 proteins run closely on denaturing gels and the doublet will often appear as a single band, marked by the asterisk (*). The marker lanes (M) are each from the adjacent gel, but were moved for depiction. Stringency testing conducted once.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Alignment of C-terminus of Rsc1 and Rsc2, showing conservation and position of swaps (red asterisks). (B) Co-IPs of Rsc3 and Rsc30 with additional Rsc1 and Rsc2 CT swaps. Whole cell extracts prepared from rsc1∆ rsc2∆ covered by TRP1-marked plasmid containing RSC1, RSC2, or CT swap were immunoprecipitated using anti-Myc (for CT2 of Rsc1), or anti-HA (for CT2 of Rsc2) bound to Dynabeads. Western blots were probed with antibodies against Sth1, Rsc3, Rsc30, and Rsc4. One of three biological replicates shown. (C) Co-IPs of RSC members with Rsc1 or Rsc2 containing deletions within the CT2 region. Whole cell extracts prepared from rsc1∆ rsc2∆ covered by TRP1-marked plasmid containing deletions were immunoprecipitated using anti-Myc (for CT2 of Rsc1), or anti-HA (for CT2 of Rsc2) bound Dynabeads. Western blots were probed with antibodies against Sth1, Rsc3, Rsc30, Rsc2, Rsc4, and Myc. One of three technical replicates shown. (D) Summary of Rsc1 and Rsc2 Co-IPs from deletions and swaps.
+
 To identify whether a particular region within Rsc1 mediates this preferential association with Rsc3/30, we performed domain swaps between Rsc1 and Rsc2 (Figure 1C) and checked for complementation and Rsc3 association. To assess this, a rsc1Δ rsc2Δ strain containing RSC1 on a URA3-marked plasmid was transformed with TRP1-marked plasmids containing Rsc1/2 domain swap derivatives, and complementation was demonstrated by their ability to lose the URA3-marked RSC1 plasmid with 5FOA (Figure 1D). Here, co-immunoprecipitation revealed strong Rsc3 association with Rsc1, and with Rsc2 derivatives only if they contained the CT2 region of Rsc1 (Figure 1E). Conversely, strong Rsc3 association with Rsc1 was lost when Rsc1 contained the CT2 region of Rsc2. Similar approaches involving internal Rsc1/2 deletions and additional swap positions provided further refinement, narrowing the region on Rsc1 responsible for strong Rsc3/30 association to residues 617–777 (Figure 1—figure supplement 2A–D). Several structures of RSC-nucleosome complexes have recently been published (Wagner et al., 2020; Ye et al., 2019; Patel et al., 2019). However, as Rsc1, Rsc2, Rsc3, and Rsc30 are within the flexible regions, these structures contain only partial models (or lack density/models). While the Rsc1-Rsc3/30 interaction has not been resolved structurally, crosslinks were observed between Rsc2 CT2 and Rsc3/30 heterodimer (Wagner et al., 2020), an interaction we find to be much stronger in Rsc1.
 
-## The RSC1 complex slides 5S nucleosomes better than the RSC2 complex
+### The RSC1 complex slides 5S nucleosomes better than the RSC2 complex
 
 Having defined and isolated the four main RSC subtypes (RSC1 or RSC2, +/- Rsc3/30; Figure 2A), we then tested for differences in ATPase activity, and remodeling efficiency, by examining nucleosomes of typical wrapping/affinity, such as those formed with the sea urchin 5S DNA nucleosome positioning sequence (NPS) and recombinant yeast histones. First, all four RSC complexes displayed similar DNA-dependent ATPase activities in typical Vmax determinations with plasmid DNA (Figure 2B). The activity of one complex, RSC1-3/30, plateaued earlier than the other RSC complexes, but otherwise the two complexes behaved similarly. However, major differences were observed with 5S nucleosomes – RSC1 complex displayed much greater sliding activity than RSC2 (Figure 2C and Figure 2—figure supplement 1 for quantification). As shown previously for RSC, all sliding activities with RSC1 and RSC2 complexes are ATP dependent (Cairns et al., 1996 and Figure 2—figure supplement 2A). RSC1 and RSC2 complexes both bound 5S nucleosomes comparably in the absence of ATP (Figure 2—figure supplement 2B) indicating that their differences in activities occur after the initial engagement of the 5S nucleosome. Finally, the Rsc3/30 module did not affect their ATPase activities (Figure 2B) nor their binding to 5S nucleosomes (Figure 2—figure supplement 2B); however, in both the RSC1 and RSC2 complexes, Rsc3/30 inclusion moderately inhibited remodeling (Figure 2C). Taken together, RSC1 complex displays markedly higher sliding activity on 5S nucleosomes compared to RSC2 complex.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig2-v2.jpg)
+
+**Figure 2.:** (A) Alternative RSC1 and RSC2 complexes, with the Rsc3/30 module maintained or removed during purification. Purified RSC complexes (600 ng) were analyzed on a 6% polyacrylamide SDS-PAGE gel stained with silver. The RSC1 and RSC2 complexes are from the same gel, but were moved adjacent for the depiction. (B) ATPase time course of RSC1 and RSC2 with and without the Rsc3/30 module. Values are the mean +/- standard deviation from two separate RSC preps for each RSC complex assayed in triplicate. (C) Comparative sliding of 174 bp sea urchin 5S yeast mononucleosomes (20 nM) by RSC1 and RSC2 complexes (30 nM). The nucleosomal Start (green), Slid (blue), and free DNA (grey) bands were quantified and reported as a percent of the total signal.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mean and standard deviation for four replicates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) RSC1 and RSC2 complexes slide mononucleosomes in an ATP-dependent manner. Mononucleosomes (20 nM) were incubated in the presence (+) or absence (-) of 1 mM ATP with 30 nM of either the RSC1-3/30 (1-3/30) or the RSC2-3/30 (2-3/30) complex for 90 min at 30°C. Experiment conducted once. (B) RSC1 and RSC2 complexes bind similarly to mononucleosomes with 174 bp sea urchin 5S DNA and wild-type yeast octamers. Nucleosomes (20 nM) were incubated with 0, 30, or 60 nM RSC for 20 min at 30°C, run on a 3.8% native polyacrylamide gel, and stained with ethidium bromide. Two technical replicates shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Nucleosome sliding by RSC1-3/30 (30 nM) of 174 bp sea urchin 5S yeast mononucleosomes (20 nM) fluorescently labeled with Oregon Green (OG) on H2A (Q114C). The native gel was scanned for OG to detect the presence of H2A, followed by staining and scanning for ethidium bromide to detect DNA. (B) The ratio of H2A/H2B dimer to DNA was calculated for each of the Start and Slid bands and normalized to the starting nucleosomal band at the ‘0’ time point. The average and standard deviation of sliding on two separate nucleosome preps were examined. The fluorescently labeled H2A*OG yeast octamers were a gift from L. McCullough and T. Formosa.
+
 We note that the RSC-remodeled 5S nucleosomal product migrates more slowly on native gels than the starting nucleosome in our sliding assay. This could result from an altered position of the octamer along the DNA, from the partial unwrapping of DNA from the octamer, or possibly from the creation of a hexasome during the remodeling reaction (which would create a more ‘open’ and unwrapped structure). To determine whether the slower-migrating RSC remodeled product was the result of H2A/H2B dimer loss from the nucleosome, we assembled 174 bp 5S nucleosomes using yeast octamers that were fluorescently labeled with Oregon Green (OG) on H2A (Q114C) and conducted sliding assays with RSC1-3/30 (Figure 2—figure supplement 3A). The ratio of H2A to DNA was calculated for both the ‘start’ and ‘slid’ bands at each time point, normalized to the starting nucleosomal band (Figure 2—figure supplement 3B). Here, the ‘slid’ band maintained a dimer to DNA ratio similar to the starting nucleosome, rather than that predicted for a hexasome or tetrasome, supporting the identity of the slower-migrating band being an intact nucleosome. We will, therefore, refer to this band on the native gel as the ‘slid’ nucleosome position.
 
-## rsc1Δ mutation is lethal in combination with histone mutations that confer partial unwrapping
+### rsc1Δ mutation is lethal in combination with histone mutations that confer partial unwrapping
 
 In principle, a variety of factors might underlie better relative remodeling by RSC1 complexes on 5S nucleosomes. To provide insight into Rsc1/2 differences and to help guide further in vitro approaches, we conducted unbiased genetic screens to identify histone mutations that are selectively lethal with rsc1Δ or rsc2Δ mutations. Here, we utilized an alanine scanning approach in which each of the histone residues is separately mutated to alanine. To implement, we created rsc1Δ or rsc2Δ deletions (separately) within a ‘histone shuffle’ strain (rsc1Δ or rsc2Δ, h3-h4Δ [H3-H4.URA3]) and combined those with a library encoding all viable histone H3-H4 alanine substitutions on TRP1-marked plasmids (Nakanishi et al., 2008). We then assessed viability following forced loss of the wild-type H3-H4 plasmid on 5FOA-containing medium. Histone mutations that are lethal with both rsc1Δ and rsc2Δ, or lethal uniquely with rsc2Δ, were found distributed throughout the nucleosome. In striking contrast, those mutations that were lethal specifically with rsc1Δ mapped exclusively within the H3 αN helix region – the position where DNA enters/exits the nucleosome (Table 1, Figure 3A–B). Furthermore, the specific H3 αN helix mutations obtained in our screen overlap strongly with those reported to increase partial unwrapping using FRET formats (Ferreira et al., 2007), whereas alanine substitutions that did not show a phenotype (P43A, E50A, K56A) had little effect on FRET/unwrapping (Table 2). Given the results from the H3-H4 screen, we then performed a screen combining rsc1Δ or rsc2Δ with H2A-H2B mutations (Nakanishi et al., 2008). In keeping with the results above, we find rsc1Δ-specific synthetic lethality primarily with mutations in the H2A C-terminus which interact with the H3 αN helix, as well as with specific histone-DNA contacts (H2A R78 and H2A R30; Figure 3—figure supplement 1). Taken together, our genetic results, which encompass the entire nucleosome, strongly suggest that synthetic lethality in rsc1∆ strains is due to decreased ability of RSC2 complexes to remodel partially-unwrapped nucleosomes relative to RSC1 complexes.
 
-## Increased Rsc3/30 association with RSC suppresses phenotypes associated with histone αN helix mutant combinations
+**Table 1.**
+ Summary of Histone H3-H4 screen with rsc1∆ and rsc2∆.Library of TRP1-marked plasmids containing H3-H4 residues mutated to alanine were transformed into h3-h4Δ [H3-H4.URA3] (YBC1939), rsc1Δ h3-h4Δ [H3-H4.URA3] (YBC2090) or rsc2Δ h3-h4Δ [H3-H4.URA3] (YBC3040), and spotted to SC-TRP, or SC-TRP + 5FOA to force the loss of the WT histone plasmid and test for synthetic lethality. Histone mutations that were lethal on their own in WT RSC are shaded grey, lethal in combination with rsc1Δ are in bold and highlighted yellow, lethal with rsc2Δ are italicized and highlighted in blue, and residues that were lethal with both rsc1Δ and rsc2Δ are highlighted in green.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>H3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>R2A</td>
+      <td>T11A</td>
+      <td>L20A</td>
+      <td>T32A</td>
+      <td>R40A</td>
+      <td>R49A</td>
+      <td>S57A</td>
+      <td>L65A</td>
+      <td>E73A</td>
+      <td>L82A</td>
+      <td>L92A</td>
+      <td>V101A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>T3A</td>
+      <td>G12A</td>
+      <td>S22A</td>
+      <td>G33A</td>
+      <td>Y41A</td>
+      <td>E50A</td>
+      <td>T58A</td>
+      <td>P66A</td>
+      <td>I74A</td>
+      <td>R83A</td>
+      <td>Q93A</td>
+      <td>S102A</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>K4A</td>
+      <td>G13A</td>
+      <td>K23A</td>
+      <td>G34A</td>
+      <td>K42A</td>
+      <td>I51A</td>
+      <td>E59A</td>
+      <td>F67A</td>
+      <td>Q76A</td>
+      <td>F84A</td>
+      <td>E94A</td>
+      <td>L103A</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Q5A</td>
+      <td>K14A</td>
+      <td>R26A</td>
+      <td>V35A</td>
+      <td>P43A</td>
+      <td>R52A</td>
+      <td>L60A</td>
+      <td>Q68A</td>
+      <td>D77A</td>
+      <td>Q85A</td>
+      <td>S95A</td>
+      <td>F104A</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>T6A</td>
+      <td>P16A</td>
+      <td>K27A</td>
+      <td>K36A</td>
+      <td>G44A</td>
+      <td>R53A</td>
+      <td>L61A</td>
+      <td>R69A</td>
+      <td>F78A</td>
+      <td>S86A</td>
+      <td>V96A</td>
+      <td>E105A</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>R8A</td>
+      <td>R17A</td>
+      <td>S28A</td>
+      <td>K37A</td>
+      <td>T45A</td>
+      <td>F54A</td>
+      <td>I62A</td>
+      <td>L70A</td>
+      <td>K79A</td>
+      <td>S87A</td>
+      <td>E97A</td>
+      <td>D106A</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>K9A</td>
+      <td>K18A</td>
+      <td>P30A</td>
+      <td>P38A</td>
+      <td>V46A</td>
+      <td>Q55A</td>
+      <td>R63A</td>
+      <td>V71A</td>
+      <td>T80A</td>
+      <td>I89A</td>
+      <td>Y99A</td>
+      <td>T107A</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>S10A</td>
+      <td>Q19A</td>
+      <td>S31A</td>
+      <td>H39A</td>
+      <td>L48A</td>
+      <td>K56A</td>
+      <td>K64A</td>
+      <td>R72A</td>
+      <td>D81A</td>
+      <td>G90A</td>
+      <td>L100A</td>
+      <td>N108A</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>L109A</td>
+      <td>Q120A</td>
+      <td>R129A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>I112A</td>
+      <td>K121A</td>
+      <td>L130A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>H113A</td>
+      <td>K122A</td>
+      <td>R131A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>K115A</td>
+      <td>D123A</td>
+      <td>G132A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>R116A</td>
+      <td>I124A</td>
+      <td>E133A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>V117A</td>
+      <td>K125A</td>
+      <td>R134A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>T118A</td>
+      <td>L126A</td>
+      <td>S135A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>I119A</td>
+      <td>R128A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>S1A</td>
+      <td>G9A</td>
+      <td>H18A</td>
+      <td>I26A</td>
+      <td>R35A</td>
+      <td>K44A</td>
+      <td>E52A</td>
+      <td>F61A</td>
+      <td>S69A</td>
+      <td>R78A</td>
+      <td>V86A</td>
+      <td>R95A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>G2A</td>
+      <td>L10A</td>
+      <td>R19A</td>
+      <td>Q27A</td>
+      <td>R36A</td>
+      <td>R45A</td>
+      <td>E53A</td>
+      <td>L62A</td>
+      <td>V70A</td>
+      <td>K79A</td>
+      <td>V87A</td>
+      <td>T96A</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>R3A</td>
+      <td>G11A</td>
+      <td>K20A</td>
+      <td>G28A</td>
+      <td>L37A</td>
+      <td>I46A</td>
+      <td>V54A</td>
+      <td>E63A</td>
+      <td>T71A</td>
+      <td>T80A</td>
+      <td>Y88A</td>
+      <td>L97A</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>G4A</td>
+      <td>K12A</td>
+      <td>I21A</td>
+      <td>I29A</td>
+      <td>R39A</td>
+      <td>S47A</td>
+      <td>R55A</td>
+      <td>S64A</td>
+      <td>Y72A</td>
+      <td>V81A</td>
+      <td>L90A</td>
+      <td>Y98A</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>K5A</td>
+      <td>G13A</td>
+      <td>L22A</td>
+      <td>T30A</td>
+      <td>R40A</td>
+      <td>G48A</td>
+      <td>V57A</td>
+      <td>V65A</td>
+      <td>T73A</td>
+      <td>T82A</td>
+      <td>K91A</td>
+      <td>G99A</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>G6A</td>
+      <td>G14A</td>
+      <td>R23A</td>
+      <td>K31A</td>
+      <td>G41A</td>
+      <td>L49A</td>
+      <td>L58A</td>
+      <td>I66A</td>
+      <td>E74A</td>
+      <td>S83A</td>
+      <td>R92A</td>
+      <td>F100A</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>G7A</td>
+      <td>K16A</td>
+      <td>D24A</td>
+      <td>P32A</td>
+      <td>G42A</td>
+      <td>I50A</td>
+      <td>K59A</td>
+      <td>R67A</td>
+      <td>H75A</td>
+      <td>L84A</td>
+      <td>Q93A</td>
+      <td>G101A</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>K8A</td>
+      <td>R17A</td>
+      <td>N25A</td>
+      <td>I34A</td>
+      <td>V43A</td>
+      <td>Y51A</td>
+      <td>S60A</td>
+      <td>D68A</td>
+      <td>K77A</td>
+      <td>D85A</td>
+      <td>G94A</td>
+      <td>G102A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Lethal w/rsc1∆</td>
+      <td></td>
+      <td colspan="2">Lethal w/rsc2∆</td>
+      <td></td>
+      <td colspan="3">Lethal w/rsc1∆ and rsc2∆</td>
+      <td></td>
+      <td colspan="2">Lethal w/WT</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-v2.jpg)
+
+**Figure 3.:** (A) Histone H3 αN helix mutations that are lethal with rsc1∆. TRP1-marked plasmids containing WT H4, and H3 mutations within the αN helix were transformed into h3-h4∆ [H3-H4.URA3] (YBC1939), rsc1∆ h3-h4∆ [H3-H4.URA3] (YBC2090) or rsc2∆ h3-h4∆ [H3-H4.URA3] (YBC3040), and spotted to SC-TRP or SC-TRP+5FOA to force the loss of the WT histone plasmid. Mutations that were lethal on their own without mutated RSC are shaded in grey. Mutations that were lethal in rsc1∆ but not rsc2∆ are shaded in purple and underlined. Transformants were grown at 30°C for 2 days. Shown is one of two biological replicates. (B) Location of the synthetic lethal rsc1∆ H3 αN helix mutations are depicted in purple on the nucleosome, PDB code 1ID3. (C) The RSC1 CT2 region complements the synthetic lethal rsc1∆ H3 αN helix mutations. rsc1∆ rsc2∆ h3-h4∆ [RSC1.URA3] with [H3.WT, R40A, or G44A-H4.WT. LYS2] (YBC3466, YBC3444, YBC3433) transformed with TRP1-marked plasmids bearing RSC1 (p609), RSC2 (p604), RSC1 w/2CT2 (p3097), RSC2 w/1CT2 (p3098), or vector (pRS314) and spotted as 10x serial dilution to SC-TRP-LYS, or SC-TRP-LYS+5FOA. Shown is one of four biological replicates. (D) High-copy RSC3 or RSC30 will partially suppress the Tsˉ phenotype of rsc1∆ H3V46A. Strain rsc1∆ h3-h4∆ [H3.V46A-H4.WT.TRP] (YBC3586) transformed with URA3-marked high copy (2μ) plasmids containing RSC1 (p705), RSC3 (p1310), RSC30 (p916), HMO1 (p3390), or vector (pRS426), and spotted as 10x serial dilutions at 30°C or 37°C. Shown is one of two biological replicates. (E) Comparative sliding and ejection of 174 bp sea urchin 5S NPS H3 R40A yeast mononucleosomes (20 nM) by RSC1 and RSC2 complexes (30 nM). The nucleosomal Start (green), Slid (blue), and free DNA (grey) bands were quantified and reported as a percent of the total signal.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mutations that are specifically lethal in combination with rsc1∆ are colored purple, mutations that are specifically lethal with rsc2∆ are colored orange. PDB code 1ID3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The RSC1 CT2 region complements the synthetic lethal rsc1∆ H3 αN helix mutations. Strain rsc1∆ rsc2∆ h3-h4∆ [RSC1.URA3] [H3. R40A, or G44A-H4.WT. LYS2] (YBC3444, YBC3433) transformed with TRP1-marked plasmids bearing RSC1 (p609), RSC2 (p604), C-Terminal swaps at positions noted (p3098, p3165, p3167, p3097, p3166, p3164) or vector (pRS314) and spotted as 10x serial dilution to SC-TRP-LYS, or SC-TRP-LYS+5FOA. One of four biological replicates shown. (B) Synthetic lethality of rsc1∆ H3 K56Q is complemented by the RSC1 CT2 region. Strain rsc1∆ rsc2∆ h3-h4∆ [RSC1.URA3] [H3.K56Q-H4.WT. LYS2] (YBC3432) transformed with TRP1-marked plasmids bearing RSC1 (p609), RSC2 (p604), RSC1 w/2CT2 (p3097), RSC2 w/1CT2 (p3098), or vector (pRS314) and spotted as 10x serial dilution to SC-TRP-LYS, or SC-TRP-LYS+5FOA. One of four biological replicates shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Mean and standard deviation for three replicates.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Nucleosomes (20 nM) were incubated with 0, 30, or 60 nM RSC for 20 min at 30°C, run on a 3.8% native polyacrylamide gel, and stained with ethidium bromide. Two technical replicates shown.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Nucleosome mapping by ExoIII and S1 treatment followed by paired-end next-generation sequencing. Experiment conducted once. Partially wrapped nucleosome fragments (≤120 bp) are depicted in blue. More fully wrapped nucleosome fragments (≥128 bp) are in black.
+
+**Table 2.**
+ *DNA end to end FRET measurements on mononucleosomes containing H3 αN helix mutations from Ferreira et al., 2007 with the phenotype when combined with RSC, rsc1∆, or rsc2∆.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>* FRET %</th>
+      <th>Phenotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>100 ± 6</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>R40A</td>
+      <td>71 ± 7</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>Y41A</td>
+      <td>72 ± 7</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>K42A</td>
+      <td>54 ± 3</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>P43A</td>
+      <td>91 ± 3</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>G44A</td>
+      <td>68 ± 9</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>T45A</td>
+      <td>52 ± 5</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>V46A</td>
+      <td>89 ± 5</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>L48A</td>
+      <td>86 ± 4</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>R49A</td>
+      <td>67 ± 3</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>E50A</td>
+      <td>98 ± 6</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>I51A</td>
+      <td>81 ± 13</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>R52A</td>
+      <td>78 ± 3</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+    <tr>
+      <td>R53A</td>
+      <td>80 ± 4</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>F54A</td>
+      <td>96 ± 3</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>Q55A</td>
+      <td>69 ± 11</td>
+      <td>Lethal w/WT</td>
+    </tr>
+    <tr>
+      <td>K56A</td>
+      <td>95 ± 4</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>S57A</td>
+      <td>102 ± 5</td>
+      <td>No phenotype</td>
+    </tr>
+    <tr>
+      <td>K56Q</td>
+      <td>82 ± 2</td>
+      <td>Lethal w/rsc1∆</td>
+    </tr>
+  </tbody>
+</table>
+
+### Increased Rsc3/30 association with RSC suppresses phenotypes associated with histone αN helix mutant combinations
 
 We then explored whether the genetic differences observed with histone αN helix mutations in combination with rsc1Δ or rsc2Δ involve differential interaction of Rsc1/2 with Rsc3/30. First, we tested whether the CT2 domain of Rsc1, which interacts better with Rsc3/30 than its counterpart in Rsc2, could confer growth when placed within a Rsc2 derivative. Here, growth was clearly restored to rsc1Δ H3 G44A and rsc1Δ H3 R40A combinations with a plasmid encoding Rsc1 or Rsc2 bearing the Rsc1 CT2, but not with Rsc2 or Rsc1 bearing the Rsc2 CT2 (Figure 3C). Additional domain swap experiments localize this complementation to the Rsc3/30 association region in Rsc1 (aa 617–777) (Figure 3—figure supplement 2A). As a complementary approach, we tested for RSC3 or RSC30 high-copy plasmid suppression. While high-copy RSC3 or RSC30 could not rescue rsc1Δ αN helix histone combined lethality (data not shown), suppression of the strong temperature sensitivity (Ts-) phenotype of rsc1Δ H3 V46A was observed (Figure 3D). Taken together, improving the association/functionality of Rsc3/30 suppresses phenotypes associated with αN helix histone mutations – further linking Rsc1/2 and Rsc3/30 to partial nucleosome unwrapping.
 
-## Rsc1/2 differences are largely independent of bromodomain-histone interactions
+### Rsc1/2 differences are largely independent of bromodomain-histone interactions
 
 We then tested the alternative hypothesis that the bromodomains of Rsc1/2 might interact differently with the main acetylated histone residue withinthe αN helix, H3 K56. However, the H3 K56A mutation was not lethal in combination with either rsc1Δ or rsc2Δ (Figure 3A). We then further tested H3 K56Q, which mimics the acetylated form. The K56Q mutation confers synthetic lethality when combined with rsc1Δ, but not with rsc2Δ (Figure 3—figure supplement 2B). Furthermore, domain swaps involving the highly homologous bromodomains and BAH domains between Rsc1 and Rsc2 did not confer phenotypic differences, nor did these swaps alter the synthetic lethality of rsc1Δ with histone αN helix mutations (Figure 3—figure supplement 2A). Notably, H3 K56A has little effect on DNA unwrapping, whereas K56Q promotes unwrapping (Ferreira et al., 2007; Masumoto et al., 2005) – and is lethal with rsc1Δ, further supporting an unwrapping function as being responsible for the phenotype. Thus, the lethality with rsc1Δ does not appear linked to bromodomains or histone acetylation, in agreement with findings that H3K56 acetylation does not enhance RSC binding (Neumann et al., 2009).
 
-## RSC2 complexes are deficient in remodeling partially-unwrapped nucleosomes
+### RSC2 complexes are deficient in remodeling partially-unwrapped nucleosomes
 
 Our genetic results prompted the examination of sliding by the RSC1 and RSC2 complexes on 5S nucleosomes bearing a mutation (e.g., H3 R40A) predicted to confer partial unwrapping. Although sliding of nucleosomes bearing H3 R40A by either form of RSC is reduced relative to wild-type (WT) 5S nucleosomes, RSC1 complexes were markedly more active than RSC2 complexes (Figure 3E and Figure 3—figure supplement 3 for quantification), reinforcing the difference between RSC1 and RSC2. Additionally, both RSC1 and RSC2 complexes bind H3 αN helix mutant 5S nucleosomes similarly (Figure 3—figure supplement 4), demonstrating that initial nucleosome binding is not inhibited by this octamer mutation, suggesting downstream remodeling activity as the affected step. To confirm and better define the extent of partial unwrapping observed on our 174 bp 5S nucleosome with yeast octamers, we conducted ExoIII-S1 nuclease mapping (which removes DNA that is either outside of, or not well wrapped in a nucleosome; Flaus, 2011), and combined this with a high-throughput paired-end sequencing approach to define the endpoints and proportion of the nuclease-protected species. We found WT 174 bp 5S yeast nucleosomes display a fully-wrapped side (position 158), and a side of partial unwrapping, in agreement with asymmetric 5S nucleosome unwrapping previously shown (Winogradoff and Aksimentiev, 2019; Chen et al., 2014). Here, WT nucleosomes displayed a much higher proportion of largely-wrapped species (≥135 bp) than did H3 R40A nucleosomes (Figure 3—figure supplement 5). Since RSC2 is more deficient than RSC1 in repositioning H3 R40A nucleosomes, the mapping supports the hypothesis that RSC1 complexes manage partially-unwrapped nucleosomes better than RSC2 complexes. We note that H3 R40A 5S nucleosomes are likely to have a distinct conformation that is not distinguished in our nuclease protection assay, since remodeling by both RSC1 and (more so) by RSC2 complexes is inhibited by the H3 αN helix mutation (compare Figure 3E with Figure 2C). These mutant octamers may enforce a greater degree of openness or distance between the 5S DNA ends, as demonstrated previously (Ferreira et al., 2007), and thereby inhibit RSC activity (perhaps the transition of binding to DNA translocation, see Discussion) – a nucleosome perturbation better managed by RSC1 complexes.
 
-## RSC cooperates with Hmo1 to remodel partially-unwrapped nucleosomes
+### RSC cooperates with Hmo1 to remodel partially-unwrapped nucleosomes
 
 Hmo1 is an HMGB family protein that stabilizes fragile/partially-unwrapped nucleosomes, particularly at rRNA and ribosomal protein gene promoters (Hall et al., 2006; Panday and Grove, 2017). Unlike other HMGB proteins which have an acidic CTD that promotes bending and nucleosome destabilization, Hmo1 is unique in containing a basic lysine rich C-terminal extension, and has been shown to stabilize chromatin and perform the functions of a linker histone (Panday and Grove, 2016). Hmo1 is proposed to bind near the nucleosome dyad and use its basic extension to bind linker DNA and prevent bending (Panday and Grove, 2017), which may also improve wrapping and thus cooperate with RSC1 or RSC2 to promote remodeling. We first tested for rsc/hmo1 genetic interactions by combining rsc1Δ or rsc2Δ with hmo1Δ. Notably, we observe synthetic phenotypes in rsc1Δ hmo1Δ mutants, but not rsc2Δ hmo1Δ mutants (Figure 4A), suggesting a greater reliance of Rsc2 on Hmo1 for functional cooperativity. Furthermore, as we saw with the H3 αN helix mutations, this synthetic sickness was partially complemented by the presence of the Rsc1 CT2, and partially suppressed by high-copy RSC3 or RSC30, providing further support that these proteins work together in a modular manner (Figure 4B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-v2.jpg)
+
+**Figure 4.:** (A) An hmo1 null mutation is synthetically sick with rsc1Δ, but not rsc2Δ. WT (YBC604), rsc1Δ (YBC774), rsc2Δ (YBC82), hmo1Δ (YBC3509), rsc1∆ (YBC774), rsc2Δ (YBC82), rsc1Δ hmo1Δ (YBC3514), rsc2∆ hmo1∆ (YBC3515) spotted as 10x serial dilutions to YPD 30°C, YPD 38°C, and SC+20 µg/ml mycophenolic acid (MPA). One of two or more biological replicates shown. (B) The rsc1Δ hmo1Δ synthetic sickness is suppressed by high copy RSC3, RSC30, or RSC1 CT2. Strain rsc1∆ hmo1∆ (YBC3514) transformed with TRP1-marked RSC1 (p609), RSC2 (p604), RSC1 w/2CT2 (p3097), RSC2 w/1CT2 (p3098), 2µ.RSC3 (p929), 2µ.RSC30 (p911), or vector (pRS314) spotted as 10x serial dilutions to SC-TRP 30°C or SC-TRP 35°C. One of four biological replicates shown. (C) Co-IP of Rsc1 and Rsc2 with Hmo1. Sonicated chromatin extracts from RSC1.9XMYC HMO1.V5 (YBC3558) and RSC2.9XMYC HMO1.V5 (YBC3559) were immunoprecipitated using anti-Myc or anti-V5. Western blots were probed with anti-Myc or anti-V5 antibodies. One of three biological replicates shown. (D) Comparative sliding by RSC1 and RSC2 complexes (10 nM) of 174 bp sea urchin 5S yeast mononucleosomes (20 nM) pre-incubated with increasing concentrations of Hmo1 protein. Reactions were conducted at 30°C for 20 min. The Start (green) and Slid (blue) bands were quantified and reported as percent of the total signal. The free DNA band was negligible and not quantified. (E) Comparative sliding and ejection of Widom 601 yeast mononucleosomes (20 nM) by RSC1 and RSC2 complexes (10 nM). The nucleosomal Start (green), Slid (blue), and free DNA (grey) bands were quantified and reported as a percent of the total signal.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** RSC1.9XMYC HMO1.V5 (YBC3558) and RSC2.9XMYC HMO1.V5 (YBC3559) were immunoprecipitated using anti-Myc bound dynabeads. 100% of Co-IP and 5% of input were loaded on the gel. Western blots were probed with anti-V5 antibody. One of three biological replicates shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Mean and standard deviation for three replicates.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) 174 bp 5S yeast mononucleosomes (20 nM) were pre-incubated with increasing concentrations of Hmo1. RSC concentrations and reaction times are as indicated. All reactions were conducted at 30°C. The Start (green) and Slid (blue) bands were quantified and reported as percent of the total signal. The free DNA band was negligible and not quantified. (B) Quantification of Hmo1 stimulation of RSC sliding 174 bp 5S wild-type yeast mononucleosomes. Mean and standard deviation for two replicates.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Mean and standard deviation for three replicates.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Comparative sliding of RSC1 and RSC2 complexes (10 nM) on H3 R40A 205 bp Widom 601 yeast mononucleosomes (20 nM). The nucleosomal Start (green), Slid (blue), and free DNA (grey) bands were quantified and reported as a percent of the total signal. (B) Mapping the positions of the wild-type and H3 R40A 205 bp Widom 601 yeast mononucleosomes by ExoIII and S1 treatment as in Figure 3—figure supplement 3. Partially unwrapped nucleosome fragments (≤120 bp) are depicted in blue. More fully wrapped nucleosome fragments (≥128 bp) are in black. Averages from two technical replicates.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Mean and standard deviation for two replicates.
+
 To test RSC-Hmo1 associations in vivo, we performed co-immunoprecipitations between Rsc1 and Rsc2 with Hmo1. Hmo1 was endogenously tagged at its C-terminus with a V5 epitope in Myc-tagged Rsc1 and Rsc2 strains. Here, crosslinked chromatin extracts were prepared from log phase cells and sonicated, or treated with micrococcal nuclease, resulting primarily in mononucleosomes. Immunoprecipitation with anti-Myc or anti-V5 antibody followed by immunoblot analysis revealed that both Rsc1 and Rsc2 co-immunoprecipitate with Hmo1, which represents either a direct interaction between Hmo1 and RSC or colocalization on the same nucleosome(s) (Figure 4C, Figure 4—figure supplement 1). Taken together, Hmo1 shows physical interaction on chromatin with Rsc1 and Rsc2, but strong functional/genetic interaction primarily with Rsc2 (RSC2 complexes are reliant on Hmo1, in a rsc1Δ strain).
 
-## Hmo1 strongly stimulates the sliding activity of Rsc2, and moderately stimulates Rsc1
+### Hmo1 strongly stimulates the sliding activity of Rsc2, and moderately stimulates Rsc1
 
 Hmo1 stimulates the sliding activity of RSC and SWI/SNF complex in vitro on 601 nucleosomes (Hepp et al., 2014), but it is not known whether stimulation applies equally to RSC1 and RSC2 complexes, or has a differential effect on their action upon partially-unwrapped nucleosomes. One explanation for why rsc1Δ hmo1Δ mutants grow more poorly than rsc2Δ hmo1Δ mutants is that RSC1 is able to remodel those locations in the absence of Hmo1, but RSC2 is not. As Hmo1 enhances RSC remodeling activity (Hepp et al., 2014), we preincubated the 5S nucleosomal template with increasing amounts of purified Hmo1 and tested for stimulation of RSC1/2 sliding activity. Interestingly, Hmo1 moderately stimulates RSC1 activity, whereas Hmo1 greatly stimulates RSC2 activity (Figure 4D and Figure 4—figure supplement 2 for quantification), a property that is even more evident in conditions of limiting remodeler or at early time points (Figure 4—figure supplement 3). Moreover, both RSC1 and RSC2 slide the 5S nucleosome at lower remodeler concentrations in the presence of Hmo1 (30 nM RSC without Hmo1 compare with 10 nM RSC with Hmo1), further supporting a role for Hmo1 in stimulating RSC remodeling activity.
 
-## Well-wrapped nucleosomes are remodeled comparably by both RSC1 and RSC2 complexes
+### Well-wrapped nucleosomes are remodeled comparably by both RSC1 and RSC2 complexes
 
 Beyond Hmo1 addition, we explored the ability of RSC1 and RSC2 complexes to remodel nucleosomes bearing a very strong positioning sequence: the optimized 601 sequence. Here, RSC1 and RSC2 complexes both displayed robust sliding activity with 601 nucleosomes, with RSC1 activity slightly higher (Figure 4E and Figure 4—figure supplement 4 for quantification). We note a correlation here and in prior work (Clapier et al., 2016) between ejection and the use of strong positioning sequences – their initial stability from favored ‘phasing’ may convert to high instability and disfavored ‘phasing’ after 5 bp of DNA translocation – which may underlie the progressive ejection observed with 601 nucleosomes.
 
 We then explored whether an extremely strong positioning sequence (601) might remain wrapped in the presence of an αN helix mutation and rescue RSC2 remodeling. Indeed, we found robust remodeling of 601 H3 R40A nucleosomes by RSC2 (Figure 4—figure supplement 5A and Figure 4—figure supplement 6 for quantification), and (by nuclease susceptibility) found that these nucleosomes remain largely wrapped (Figure 4—figure supplement 5B). Our data support the model that while the H3 R40A mutation can result in an open and more loosely wrapped nucleosome conformation, this can be overcome by a strong DNA positioning sequence. In addition, the data indicate that the αN helix H3 R40A mutation itself does not impair remodeling by RSC2 unless that mutation confers partial unwrapping due to the underlying DNA sequence. Lastly, our mapping data confirm that 5S nucleosomes produced with yeast octamers are less well-wrapped than 601 nucleosomes, and have DNA ends that are more susceptible to nuclease digestion.
 
-## Rsc1 and Rsc2 both occupy wide NDRs, with Rsc1 specifically occupying tDNAs
+### Rsc1 and Rsc2 both occupy wide NDRs, with Rsc1 specifically occupying tDNAs
 
 RSC has been examined by chromatin co-immunoprecipitation (ChIP) in several formats (Damelin et al., 2002; Yen et al., 2012; Vinayachandran et al., 2018; Brahma and Henikoff, 2019), though only one study has examined Rsc1/2 differences. This early ChIP approach with microarrays examined Rsc1 and Rsc2 differences, and revealed similar promoter targets for RSC1 and RSC2 complexes (Ng et al., 2002). However, possible issues of sensitivity with earlier data combined with the ability to perform more advanced approaches and analyses prompted ChIP-seq experiments to reveal possible differences. Recent examination of Sth1/RSC occupancy by the ‘cut and run’ MNase approach (which would have superimposed and not distinguished between Rsc1 and Rsc2 occupancy) revealed general enrichment for RSC complexes at many +1 and −1 nucleosomes, as well as high enrichment of RSC within the NDR of genes with very wide NDRs (e.g., ribosomal protein genes). Notably, these wide NDR regions/promoters have been shown to contain RSC bound to partially-unwrapped nucleosomes, rather than the complete lack of nucleosomes (Brahma and Henikoff, 2019). Therefore, we will hereafter refer to them as ‘partially-unwrapped regions’ when appropriate, and use the term ‘NDR’ to generally refer to the nucleosome-deficient regions between the −1 and +one nucleosome.
 
@@ -81,9 +711,25 @@ To further examine the genome-wide location of RSC1 and RSC2 complexes and their
 
 First, we observed high occupancy of RSC (Rsc1, Rsc2 and Rsc3; Figure 5A) at promoters with wide NDRs, with Rsc1 appearing more enriched than Rsc2. As promoters with partially-unwrapped nucleosomes often contain the HMGB protein, Hmo1, we also compared the occupancy of Hmo1 using the ChIP-seq data (Knight et al., 2014) reprocessed using our parameters. Notably, Hmo1 occupancy positively correlates with regions displaying the widest NDRs and bearing the highest Rsc1 and Rsc2 occupancy, with an apparent higher correlation with Rsc1 (Figure 5A–D). The loci with the highest Hmo1 occupancy displayed a mean region size of 336 bp, and a remarkable two-thirds of those genes were ribosomal protein genes (RPGs). Ribosomal protein gene promoters contain GC-rich sequences within their ‘NDR’ region, and in keeping, we observe Rsc3 enrichment, consistent with Rsc3/30 involvement in targeting or retention.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heat maps showing enrichment of nucleosomes, Rsc1, Rsc2, Rsc3, and Hmo1 at promoters, sorted by NDR length. (B) Violin plot of Rsc1, Rsc2, and Hmo1 occupancy at promoters at three categories of NDR length. (C) Plot of Rsc1, Rsc2, and Hmo1 occupancy compared to NDR length. (D) Plot of Rsc1 and Rsc2 enrichment by Hmo1 occupancy. (E) Heat maps showing enrichment of nucleosomes, Rsc1, Rsc2, Rsc3, and Hmo1 at all tDNAs (tRNA encoding genes). (F) Violin plot of Rsc1, Rsc2, and Hmo1 mean log2 fold enrichment at tDNAs. (G) Number of genes affected by rsc and hmo1 deletions. For each mutation the number of genes up or downregulated two fold or more compared to WT, rsc1Δ (↑129↓45), rsc2Δ (↑160↓129), hmo1Δ (↑44↓132), rsc1∆ hmo1∆ (↑838↓1028), rsc2∆ hmo1∆ (↑1336↓1131). (H) Gene Expression changes. Violin plots of RNA expression for each mutation at all pol II genes (6145 genes) and at ribosomal protein genes (132 genes) as compared to WT expression. ChIP-seq and RNA-seq data shown represents averages of two and three biological replicates, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The effect of rsc deletions on genes involved in the environmental stress response (ESR). Violin plot showing expression changes (average of three biological replicates) in rsc mutants for genes that are up-regulated (255 genes) or down regulated (587 genes) in the ESR (Gasch et al., 2000). (B) Genome Snapshots. Shown for select genes are low- (GSM1891202) and high- (GSM1891207) MNase digested fragment coverage from Kubik et al., 2015, Rsc1 and Rsc2 ChIP Seq log2 fold enrichments, Hmo1 ChIP Seq log2 fold enrichment (GSM1509041) from Knight et al., 2014, RNASeq coverage (unstranded) from an average of three biological replicates of RNAseq for WT(YBC604), rsc1∆ (YBC774), rsc2∆ (YBC82), hmo1∆ (YBC3509), rsc1∆ hmo1∆ (YBC3514), rsc2∆ hmo1∆ (YBC3515).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Number of genes affected by rsc deletions. For each mutation, the number of genes up or downregulated two fold or more compared to WT. rsc1∆ (↑129↓45), rsc2∆ (↑160↓129), rsc30∆ (↑66↓168), rsc1∆rsc30∆ (↑162↓204), rsc2∆rsc30∆ (↑601↓589). (B) Gene Expression changes. Violin plots showing log2 fold change of RNA in mutants at all pol II genes (6145 genes) and at ribosomal protein genes (132 genes) compared to WT expression. Change in expression reflects an average of three biological replicates, Figure 5—source data 3. (C) Rsc mutation redundancy relationship. (D) Genome snapshots. Shown for select genes are low- (GSM1891202) and high- (GSM1891207) MNase-digested fragment coverage from Kubik et al., 2015, Rsc1 and Rsc2 ChIP seq log2 fold enrichments, Hmo1 ChIP Seq log2 fold enrichments (GSM1509041) from Knight et al., 2014, and RNASeq coverage (unstranded) from an average of three replicates of RNAseq for WT (YBC604), rsc1∆ (YBC774), rsc2∆ (YBC82), rsc30∆ (YBC695), rsc1∆ rsc30∆ (YBC839), and rsc2∆ rsc30∆ (YBC910).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/58130/elife-58130-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Phylogenetic tree adapted from OhÉigeartaigh et al., 2011 with the appearance of RSC1/RSC2, and RSC3/RSC30. WGD refers to whole genome duplication. Duplication of RSC2 and RSC3 resulted in RSC1 and RSC30 in S. cerevisiae. While the duplicated genes in other organisms may still more closely resemble RSC2 or RSC3, RSC1 and RSC30 have been used to indicate the duplicated copy. (B) Scores from NCBI Fungal Blast for RSC1/RSC2 and RSC3/RSC30 orthologs.
+
 The most striking difference between Rsc1 and Rsc2 occupancy was observed at tDNAs. tDNAs encode tRNAs, and are approximately the size of a single nucleosome - though they are among the most nucleosome-depleted loci in the yeast genome, due at least in part to the action of RSC (Parnell et al., 2008) and their high fractional occupancy by RNA polymerase III transcription factors (Kumar and Bhargava, 2013). Here, Rsc1 complexes are markedly more enriched than Rsc2 complexes, and Hmo1 is notably absent (Figure 5E,F). Notably, many tDNAs are flanked by highly AT-rich sequences (Giuliodori et al., 2003), which could (in principle) confer partial unwrapping during the uncommon times (e.g., after replication) when tDNAs are transiently unoccupied by Pol III; here, RSC1 complexes might conduct nucleosome sliding to reveal tDNA sequences to the Pol III machinery. Indeed, the high fractional occupancy of Pol III complexes likely underlies the lack of Hmo1 at tDNAs, as Pol III factors would likely compete with Hmo1 for DNA binding and can remove nucleosomes during transcription. Taken together, Rsc1 and Rsc2 both highly occupy Pol II promoters known to contain partially-unwrapped nucleosomes and Hmo1, whereas Rsc1 preferentially occupies tDNAs.
 
-## RSC and HMO1 cooperate to regulate gene expression
+### RSC and HMO1 cooperate to regulate gene expression
 
 To address the transcriptional effects of each of these proteins, we performed RNAseq on logarithmically growing WT, rsc1Δ, rsc2Δ, hmo1Δ, rsc1Δ hmo1Δ, and rsc2Δ hmo1Δ cells cultured in SC media. We observe modest differences in transcriptional profiles between WT, rsc1Δ, and rsc2Δ (Figure 5G–H), which we interpret to be reflective of the known redundancy between Rsc1 and Rsc2 for most functions.
 
@@ -119,15 +765,312 @@ In favorable growth conditions, approximately 50% of the transcriptional effort 
 
 ## Materials and methods
 
-## Strains, Media, Yeast growth, and Assay Replication
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene Saccharomyces cerevisiae</td>
+      <td>Yeast Genome</td>
+      <td>UCSC</td>
+      <td>SacCer3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21-CodonPlus (DE3)RIL</td>
+      <td>Agilent</td>
+      <td>Cat# 230245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sth1 (Rabbit polyclonal)</td>
+      <td>Cairns et al., 1996</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rsc3 (Rabbit polyclonal)</td>
+      <td>Angus-Hill et al., 2001</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rsc30 (Rabbit polyclonal)</td>
+      <td>Angus-Hill et al., 2001</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rsc2 (Rabbit polyclonal)</td>
+      <td>Kasten et al., 2004</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rsc4 (Rabbit polyclonal)</td>
+      <td>Kasten et al., 2004</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Cairns et al., 1999</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab56 RRID:AB_304876</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (mouse monoclonal)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# R960-25 RRID:AB_2556564</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>8XHIS.HMO1</td>
+      <td>This paper, Figure 4</td>
+      <td></td>
+      <td>purified from E. coli BL21-CodonPlus(DE3)-RIL cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Histone H2A, Oregon green, yeast octamers</td>
+      <td>Xin et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Histone H3 R40A</td>
+      <td>This paper, Figure 3</td>
+      <td></td>
+      <td>purified from E. coli BL21-CodonPlus(DE3)-RIL cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AcTEV protease</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 12575015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Micrococcal Nuclease</td>
+      <td>USB</td>
+      <td>Cat# 70196Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Exonuclease III</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>S1 nuclease</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 18001–016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Klenow fragment</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0212L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext ChIP-Seq MasterMix Set</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E6240L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNEasy</td>
+      <td>Qiagen</td>
+      <td>Cat# 74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboPure RNA purification kit, Yeast</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# AM1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded Total RNA Library Prep Kit with Ribo Zero Gold</td>
+      <td>Illumina</td>
+      <td>Cat# RS-122–2301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BioRad protein assay reagent</td>
+      <td>BioRad</td>
+      <td>Cat# 500–0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Minelute PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Cat#28006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoroorotic Acid (5FOA)</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat# F59500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mycophenolic Acid (MPA)</td>
+      <td>Calbiochem</td>
+      <td>Cat# 475913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Bioconductor</td>
+      <td>RRID:SCR_015687</td>
+      <td>Version 1.21</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>RRID:SCR_015899</td>
+      <td>Version 2.5.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Development Core Team, 2018</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pHeatmap</td>
+      <td>Kolde, 2019</td>
+      <td>RRID:SCR_016418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Novoalign</td>
+      <td>Novocraft</td>
+      <td>RRID:SCR_014818</td>
+      <td>Version 3.8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UMI Scripts</td>
+      <td>Huntsman Cancer Institute</td>
+      <td>See Materials and methods for github link</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioToolBox packages</td>
+      <td>TJ Parnell, Huntsman Cancer Institute</td>
+      <td>See Materials and methods for github link</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant TL</td>
+      <td>GE Healthcare</td>
+      <td>RRID:SCR_018374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IgG Sepharose Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>Cat# GE 17-0969-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Calmodulin Affinity Resin</td>
+      <td>Agilent</td>
+      <td>Cat# 214303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nickel-NTA Agarose Beads</td>
+      <td>Qiagen</td>
+      <td>Cat# 30230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Slide-A-Lyzer mini dialysis units</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 69560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Pan Mouse IgG</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#11041</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, Media, Yeast growth, and Assay Replication
 
 Resources used in this study are provided in the Key Resources Table. Rich media (YPD), synthetic complete (SC), and sporulation media were prepared using standard methods. Standard procedures were used for transformations, sporulation, tetrad analysis and spotting. A null mutation of Hmo1 was obtained from Invitrogen and crossed into rsc1 and rsc2 deletion strains. Rsc1 was C-terminally TAP-tagged as described by Rigaut et al., 1999, and Hmo1 C-terminally tagged with V5 as described in Funakoshi and Hochstrasser, 2009. Full genotypes of yeast strains are available in Supplementary file 1. A technical replicate is defined as a test of the same sample multiple times, whereas a biological replicate is defined as the same test run on multiple biological samples of independent origin. The number and type of replicates for each experiment is indicated in the figure legend.
 
-## Plasmid construction
+### Plasmid construction
 
 DNA encoding Rsc1 w/Rsc2 CT2 was created by PCR amplification of RSC2 CT2 from position K617 through the end of the gene, using primers containing 40 bp homology to RSC1 or vector sequence. PCR product was co-transformed with linearized p609 (314.RSC1) into YBC800 (rsc1∆ rsc2∆ [316.RSC1]) and homologous recombination inserted the DNA encoding CT2 into RSC1 beginning at position K617. Rsc2 w/1CT2 at position K656 was created by amplifying RSC1 CT2 on p609 (314.RSC1) and co-transforming into linearized p604 (314.RSC2) into YBC803 (rsc1∆ rsc2∆ [316.RSC2]) and repaired by homologous recombination. Plasmid was isolated from TRP positive colonies, sequenced, and retransformed to check for complementation. Additional swaps were constructed similarly. Internal deletions in Rsc1 and Rsc2 were created by digesting with restriction enzymes with blunt or compatible ends, removing the small fragment and ligating ends back together. Plasmid markers were swapped as needed as described in Cross, 1997. A full list of plasmids used in this study is provided in Supplementary file 2.
 
-## RSC1 and RSC2 TAP purification
+### RSC1 and RSC2 TAP purification
 
 RSC complexes were purified from S. cerevisiae strains BCY211 (RSC2-TAP) and BCY516 (RSC1-TAP) harboring an integrated version of the C-terminally Tandem Affinity Purification (TAP)-tagged on the construct of the indicated gene. Purifications were performed essentially as described (Rigaut et al., 1999; Szerlong et al., 2008) with the following modifications. After harvesting, cells were washed with 0.5x PBS + 10% glycerol, pelleted, and frozen in liquid nitrogen as pea-size pieces. Frozen cells were pulverized in a SPEX SamplePrep 6850 Freezer/Mill at a rate of 10, for 10 cycles of 3 min ‘on’ and 2 min ‘off’, with the resulting powder stored at −80°C until purification.
 
@@ -139,41 +1082,41 @@ RSC2+3/30 complex was purified as above with the following modifications. Approx
 
 RSC2-3/30 complex was purified essentially as the RSC2+3/30 complex with the following modifications. After binding the Calmodulin Affinity Resin, the resin was washed with 200 KOAc Calmodulin Wash Buffer, followed by four 20 min washes with 500 mM NaCl Calmodulin Wash Buffer, and a final rinse with 150 NaCl Calmodulin Wash Buffer to equilibrate the resin. The RSC2-3/30 complex was eluted from the Calmodulin Affinity Resin, residual nucleic acid removed on DEAE Sepharose, concentrated and quantified as above for the RSC2+3/30 complex.
 
-## Hmo1 purification
+### Hmo1 purification
 
 Recombinant Hmo1 was purified from bacteria as an N-terminal fusion to 8xHIS (plasmid from T. Formosa). Briefly, E. coli BL21-CodonPlus(DE3)RIL transformed with pET.8xHIS.Hmo1 was induced with IPTG at 30°C for 3 hr to express the fusion protein. Cells were harvested, resuspended in HIS Lysis Buffer (20 mM Tris [pH 8], 500 mM NaCl, 10 mM imidazole, 10% glycerol, 0.1% Igepal, 1.5 mM BME, protease inhibitors), and lysed by sonication. The lysate was cleared and bound to pre-equilibrated Ni-NTA agarose beads (Qiagen) for 1.5 hr. The bound resin was washed sequentially with HIS tag Lysis Buffer, Ni Wash Buffer A (same as HIS Lysis Buffer but with 30 mM imidazole), and Ni Wash Buffer B (same as HIS Lysis Buffer but with 50 mM imidazole). The protein was eluted with Ni Elution Buffer (20 mM Tris [pH 8], 500 mM NaCl, 250 mM imidazole, 10% glycerol, 0.005% Igepal, 1.5 mM BME, protease inhibitors) and sized on a Superdex 200 gel filtration column (GE). Hmo1 ran as a soluble aggregate (approximately 440 kD) larger than predicted from its molecular weight (27.5 kD). The Hmo1 protein was dialyzed into 150 mM Sizing Buffer (20 mM Tris [pH 8], 150 mM NaCl, 10% glycerol, 1.5 mM BME, protease inhibitors) and concentrated before storing at −80°C in aliquots.
 
-## RSC1 and RSC2 Rsc3/30 Stringency Testing
+### RSC1 and RSC2 Rsc3/30 Stringency Testing
 
 Stringency testing on Rsc3/30 association with RSC1 and RSC2 was conducted on IgG Sepharose. Cells were grown and pulverized as for RSC purification. Sixty grams of RSC1-TAP cells and 20 g of RSC2-TAP cells were solubilized in Lysis Buffer and the lysate was cleared as above. One milliliter of IgG resin was incubated with the cleared lysate for 2 hr. The beads were washed with Lysis Buffer, and then with IgG Wash Buffer, before being split into 10 separate Eppendorf tubes for testing. The beads were gently pelleted, rinsed three times with the specific IgG Wash Buffer containing 150, 250, or 500 mM NaCl, as indicated. The specific IgG Wash Buffer was added for 1 hr or 16 hr (overnight), as indicated. All beads were washed three times with IgG Elution Buffer, resuspended in IgG Elution Buffer, and RSC was released from the beads with AcTEV enzyme as above and 1/10th of the eluate was analyzed by silver stain on a 6% SDS polyacrylamide gel.
 
-## Co-Immunoprecipitations
+### Co-Immunoprecipitations
 
 Whole cell extracts were prepared and co-immunoprecipitations for RSC were performed as described, (Cairns et al., 1999) with the following modification. Anti-Myc or anti-HA antibodies (0.6 µg) were bound to a 25 µl slurry of pan-mouse magnetic Dynabeads (Thermo Fisher) and incubated with 1000 µg of extract. Blots were probed with anti-Sth1 (Saha et al., 2002), anti-Rsc3, anti-Rsc30 (Angus-Hill et al., 2001), anti-Rsc2 and anti-Rsc4 (Kasten et al., 2004).
 
 Extracts for Rsc1 and Rsc2 chromatin co-IPs with Hmo1 were prepared from cells grown to OD600 = 0.8, Cultures were crosslinked in 1% formaldehyde final for 30 min at RT, quenched with 0.2M glycine, and lysed by bead-beating (mini-beadbeater, Biospec) in LB140 buffer. Samples were sonicated in a Bioruptor Pico (Diagenode) to release chromatin or MNase treated with 100U of micrococcal nuclease for 15 min at 37°C. Immunoprecipitations were performed with 1000 µg of extract and a 25 µl slurry of pan-mouse Dynabeads bound to anti-Myc (Abcam) or anti-V5 (Thermo-Fisher) antibodies.
 
-## Nucleosome assembly
+### Nucleosome assembly
 
 Yeast octamers were produced using purified S. cerevisiae histones expressed in E. coli BL21-CodonPlus(DE3)RIL. Either wild-type histone H3 or the H3 R40A mutant was assembled into yeast octamers by salt-dialysis, essentially as described previously (Dyer et al., 2004). Mononucleosomes were assembled from a linear salt gradient dialysis (2 M to 50 mM KCl) using Slide-A-Lyser Mini Dialysis units with a 7000 molecular weight cutoff (Thermo Scientific) essentially as described (Clapier et al., 2016) using one of several DNA positioning sequences. The 205 bp Widom 601 positioning sequence (Lowary and Widom, 1998) were produced from pUC12 × 601 digested with AvaI and purified using preparative electrophoresis (PrepCell, Bio-Rad). The 174 bp sea urchin 5S positioning sequence was prepared by PCR amplification using a plasmid containing a copy of the sea urchin 5S sequence as a template. The PCR product was precipitated before purifying on a PrepCell. The exact 601 and 5S positioning sequences used are given in Supplementary file 2. Assembled mononucleosomes were separated from free DNA by gradient sedimentation on a 10–30% sucrose gradient as previously described (Wittmeyer et al., 2004). Yeast octamers bearing H2A fluorescently labeled with Oregon Green on Q114C were a gift from L. McCullough and T. Formosa (Xin et al., 2009). These labeled yeast octamers were assembled into nucleosomes with the 174 bp 5S NPS and purified as described above.
 
-## ATPase assays
+### ATPase assays
 
 Measurement of ATP hydrolysis was as described previously (Saha et al., 2002; Wittmeyer et al., 2004) using a color (malachite green) absorbance assay that quantitatively measures released free phosphate. Time courses were performed on two separate purifications of each type of RSC complex. Reactions were performed in triplicate. Activities were measured at Vmax using double-stranded Bluescript plasmid as the substrate.
 
-## Nucleosome sliding assay
+### Nucleosome sliding assay
 
 Nucleosome sliding assays were performed as described (Clapier et al., 2016) with the following modifications. Reactions were conducted in 10 mM Tris [pH 7.4], 50 mM KCl, 3 mM MgCl2, 0.1 mg/ml BSA, 1 mM ATP with 20 nM mononucleosomes at 30°C and 400 rpm shaking in a Thermomixer (Eppendorf). The amount of remodeler varied. Sliding reactions on 205 bp 601 nucleosomes used 10 nM RSC. Sliding reactions on 174 bp 5S nucleosomes used 30 nM RSC unless otherwise indicated. Aliquots were removed at each time point and reactions were stopped by adding 10 mM EDTA + 200 ng competitor DNA (Bluescript plasmid). Samples were loaded with 10% glycerol on a 4.5% (37.5:1) native polyacrylamide gel and run in 0.4x TBE for 45 min at 110 V constant. Gels were stained with ethidium bromide solution and scanned on a Typhoon Trio (Amersham, GE).
 
-## Nucleosome gel shift assays
+### Nucleosome gel shift assays
 
 Nucleosome gel shift assays were conducted similarly to the nucleosome sliding assay described above with the following modifications. Reactions were conducted in the absence of ATP and at 30°C for 20 min with 20 nM mononucleosomes. The RSC remodelers were added at 30 and 60 nM. The reactions were loaded on to 3.8% (37.5:1) native polyacrylamide gels and run in 0.4x TBE for 55 min at 110 V constant without addition of any stop solution or competitor. Gels were stained with ethidium bromide solution and scanned on a Typhoon Trio.
 
-## Histone mutant screen
+### Histone mutant screen
 
 Null mutations in rsc1 and rsc2 were crossed into the H3/H4 shuffle strain WZY42 (Zhang et al., 1998). Strains YBC1939 (WZY42), YBC2090 and YBC3040 and YBC3221 and YBC3547 were transformed in 96 well plate format with a TRP-marked histone H3-H4 or H2A-H2B mutant plasmid library respectively, obtained from and screened as described previously (Nakanishi et al., 2008). Transformants were spotted to SC-TRP plates, replica plated again to SC-TRP plates after 2 days, followed by replica plating to SC-TRP and SC-TRP + 5FOA. Synthetic lethality with mutations in the H3 αN helix were confirmed by a second round of individual transformations and shuffles.
 
-## Recombinant nucleosome mapping
+### Recombinant nucleosome mapping
 
 The position and wrapping of the recombinant nucleosomes were determined by sequencing the protected DNA fragment after treating assembled nucleosomes with Exonuclease III and S1 nuclease. Approximately 400–800 fmol of nucleosomes purified from sucrose gradients was digested with a 5–25U titration of ExoIII enzyme (New England Biolabs) for 1, 2, or 3 min at 37°C in ExoIII Buffer (10 mM Tris [pH 8], 50 mM NaCl, 3 mM MgCl2). Reactions were moved to ice, S1 Buffer and NaCl were added (30 mM NaOAc [pH 4.6], 1 mM ZnOAc, 5% glycerol, and 300 mM NaCl final concentration), and treated with 50U S1 for 30 min at room temperature. Tris [pH 8.8] and EDTA were added to final concentrations of 88 mM and 14 mM, respectively, and heated to 70°C for 10 min. SDS was added to 1%, vortexed, and iced. The protected DNA fragments were cleaned up on a Qiagen MinElute PCR purification column and eluted in 30 μl EB. The level of digestion was determined for each sample on a 4.5% (37.5:1) native polyacrylamide 0.4x TBE gel as described above.
 
@@ -181,7 +1124,7 @@ Libraries were made from the above protected fragments using the NEBNext ChIP-Se
 
 The embedded UMI code was first extracted from the Fastq files using the script embedded_UMI_extractor from the package UMIScripts (https://github.com/HuntsmanCancerInstitute/UMIScripts; Parnell, 2019a). Output Fastq sequences were then aligned to an index comprised of the recombinant sea urchin 5S or 601 sequence using Novocraft Novoalign (version 3.8.2), giving the adapter sequences for trimming. After alignment, PCR-duplicate reads were identified and marked based on the UMI information with the UMISripts application bam_umi_dedup. The 5’ start positions for each alignment, discarding duplicates, were recorded as a bigWig file with 1 bp resolution using the application bam2wig from the BioToolBox package (https://github.com/tjparnell/biotoolbox; Parnell, 2020a). Separate bigWig files were generated for each length of alignments (92–169 bp). To normalize for sequencing read depth, alignment counts were scaled to an equivalent of 100K reads (calculated from the total sum of alignments without regard to alignment length). Count matrices for each length at each position on the reference sequence and for each sample were then collected using the BioToolBox application get_datasets from the bigWig files. Count matrices were analyzed with Microsoft Excel employing a 5% cutoff of the normalized fragment count.
 
-## ChIP seq and analysis
+### ChIP seq and analysis
 
 Yeast cultures from yHN1 (YBC1544-RSC1.9XMYC) and yHN2 (YBC1545; RSC2.9XMYC) (Ng et al., 2002) were grown in SC-TRP at 30°C with two biological replicates. Cultures were harvested at OD600 = 0.8, and crosslinked with 1% formaldehyde final for 30 min at room temperature. Cultures were quenched with 0.2M glycine for 5 min. Chromatin extracts were prepared by bead-beating, and chromatin was liberated with micrococcal nuclease. Immunoprecipitation was performed using anti-cMyc 9E11 (Abcam). DNA was isolated for input and IP samples and assembled into a library using Illumina protocols and sequenced as single end reads on an Illumina sequencer.
 
@@ -191,7 +1134,7 @@ NDRs were determined by first determining all nucleosome positions in the genome
 
 Data were collected with applications from the BioToolBox package (https://github.com/tjparnell/biotoolbox; Parnell, 2020a). Mean occupancy of RSC and Hmo1 were collected over the NDRs using the application get_datasets, while spatial data surrounding NDRs and tDNAs were collected with get_relative_data. Heat maps were generated in R (R Development Core Team, 2018) with pHeatmap (Kolde, 2019). Dot plots and violin plots were generated with GraphPad Prism.
 
-## RNA seq and analysis
+### RNA seq and analysis
 
 Yeast cultures for RNASeq were grown in SD media supplemented for auxotrophic amino acids at 30°C in three biological replicates. RNA from logarithmically growing cells was purified using Ambion Ribo-pure yeast kit. Samples were additionally DNAse-treated and cleaned up with Qiagen RNeasy kit. Illumina Ribo Zero yeast kit was used for library preparation, and sequencing performed on an Illumina sequencer.
 

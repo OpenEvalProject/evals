@@ -21,11 +21,9 @@ The reviewers are right in pointing that we need to make sure that the results t
 
 The results of bootstrap test was almost identical to the results on residual using ANOVA: The significant changes in ∆Force was observed from 1st to 2nd (p < 0.05), from 2nd to 3rd (p < 0.0001) and from 3rd to 4th block (p < 0.0001) for the T-T group. However, these changes were not observed for S-T and T-S groups except for the changes from 1st to 2nd block for S-T group. Furthermore, the changes were significantly greater for the T-T group than those for S-T and T-S groups (except from 1st to 2nd block between T-T and S-T groups). We believe that this additional analysis helps strengthen the results obtained with the residuals.
 
-In the revised text, we have added results from this new analysis, as well the analytical procedure to the Methods section.10.7554/eLife.15378.014Author response image 1.Curves fitted for individual data (cyan and magenta) and the averaged curves (blue and red) when two exponential curves (a) and a single exponential curve (b) were used.The residual values were different (c, d), but the presence of modulation was not influenced.DOI: http://dx.doi.org/10.7554/eLife.15378.014
+In the revised text, we have added results from this new analysis, as well the analytical procedure to the Methods section.10.7554/eLife.15378.014Author response image 1.Curves fitted for individual data (cyan and magenta) and the averaged curves (blue and red) when two exponential curves (a) and a single exponential curve (b) were used.The residual values were different (c, d), but the presence of modulation was not influenced.
 
 The residual values were different (c, d), but the presence of modulation was not influenced.
-
-DOI: http://dx.doi.org/10.7554/eLife.15378.014
 
 [Editors' note: further revisions were requested prior to acceptance, as described below.]
 

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.41676.001 The use of misidentified and contaminated cell lines continues to be a problem in biomedical research. Research Resource Identifiers (RRIDs) should reduce the prevalence of misidentified and contaminated cell lines in the literature by alerting researchers to cell lines that are on the list of problematic cell lines, which is maintained by the International Cell Line Authentication Committee (ICLAC) and the Cellosaurus database. To test this assertion, we text-mined the methods sections of about two million papers in PubMed Central, identifying 305,161 unique cell-line names in 150,459 articles. We estimate that 8.6% of these cell lines were on the list of problematic cell lines, whereas only 3.3% of the cell lines in the 634 papers that included RRIDs were on the problematic list. This suggests that the use of RRIDs is associated with a lower reported use of problematic cell lines.
+The use of misidentified and contaminated cell lines continues to be a problem in biomedical research. Research Resource Identifiers (RRIDs) should reduce the prevalence of misidentified and contaminated cell lines in the literature by alerting researchers to cell lines that are on the list of problematic cell lines, which is maintained by the International Cell Line Authentication Committee (ICLAC) and the Cellosaurus database. To test this assertion, we text-mined the methods sections of about two million papers in PubMed Central, identifying 305,161 unique cell-line names in 150,459 articles. We estimate that 8.6% of these cell lines were on the list of problematic cell lines, whereas only 3.3% of the cell lines in the 634 papers that included RRIDs were on the problematic list. This suggests that the use of RRIDs is associated with a lower reported use of problematic cell lines.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ RRIDs for cell lines were first incorporated into the RRID portal in 2016, and 
 
 In this study, we used text mining to identify papers that included RRIDs and papers that listed cell lines, and then compared the prevalence of misidentified cell lines in these two samples. It should be stressed that the use of cell lines on the problematic list does not automatically mean that a given cell line is being employed improperly. For example, the problematic list includes cases where a cell line is ‘partially contaminated’, which does not affect cells purchased from, say, a stock center. The list also includes cell lines that have been labeled with the wrong type of cancer, but these may still be safely used if the researchers know the true identity of the line. We must, therefore, exercise caution when interpreting these results. More information about the problematic list please is given in the discussion section and Supplementary file 2.
 
-## Text mining corpus
+### Text mining corpus
 
 To derive a dataset of reported cell lines from the general literature, we used text mining of the PubMed Central open access subset. This task requires the use of natural language processing, as cell-line names are not unique strings. For example, looking for a set of characters, such as ‘H2’, may reveal papers where H2 denotes a cell line, gene, protein, antibody or a figure. We used the SciScore tool, a ‘Named Entity Recognition-based algorithm’ specialized for scientific resources, which can in principle recognize the H2 cell line and can ignore its mentions referring to something other than a cell line.
 
@@ -52,7 +52,7 @@ This algorithm was then deployed on the ~2 million articles in the open access s
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/41676/elife-41676-fig1-v1.jpg)
 
-**Figure 1.:** The number of cell lines used in PubMed Central articles available for text mining is shown as a function of year. The names of cell lines were matched using two criteria, strict and loose. The strict criterion constitutes an exact match where the name used by the researchers and detected by SciScore is on the list of ICLAC register of misidentified cell lines. The loose criterion was calculated by adding a wild-card character (*) to the end of all names found by SciScore, and matching the names and synonyms on the ICLAC list. The graph is divided into two sections: before and after 2012. 2012 was chosen as the year to break the graph because the publication of the authentication standard and the formation of ICLAC occurred that year (Masters, 2012).10.7554/eLife.41676.003Figure 1—source data 1.Figure 1.
+**Figure 1.:** The number of cell lines used in PubMed Central articles available for text mining is shown as a function of year. The names of cell lines were matched using two criteria, strict and loose. The strict criterion constitutes an exact match where the name used by the researchers and detected by SciScore is on the list of ICLAC register of misidentified cell lines. The loose criterion was calculated by adding a wild-card character (*) to the end of all names found by SciScore, and matching the names and synonyms on the ICLAC list. The graph is divided into two sections: before and after 2012. 2012 was chosen as the year to break the graph because the publication of the authentication standard and the formation of ICLAC occurred that year (Masters, 2012).
 
 As cell-line names are not standardized in most papers, we used three different approaches to estimate the percentage of problematic cell lines in the general literature. First, to obtain a lower boundary, we determined whether the cell line name, as stated by the researcher, matched exactly a name or synonym of a problematic cell line in Cellosaurus, as this is the most stringent criterion (Supplementary file 2).
 
@@ -68,7 +68,7 @@ To assess the number of studies that used problematic cell lines, we asked what 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/41676/elife-41676-fig2-v1.jpg)
 
-**Figure 2.:** Journals are sorted from left to right by the number of cell lines detected by SciScore (only the top 25 journals are shown for presentation purposes; data for all journals is given in Figure 2—source data 1). Each bar represents the percent of cell lines (red) or papers (orange) that are on the problematic cell-line list. Cell line presence on the misidentified list is scored by the edit distance metric, which skips all special characters such as spaces and dashes and assumes that any string that contains the same letters and numbers is an edit distance of 0 (e.g., EF 1 = EF-1). Journals that published papers under a license not allowing text mining are not represented here.10.7554/eLife.41676.005Figure 2—source data 1.
+**Figure 2.:** Journals are sorted from left to right by the number of cell lines detected by SciScore (only the top 25 journals are shown for presentation purposes; data for all journals is given in Figure 2—source data 1). Each bar represents the percent of cell lines (red) or papers (orange) that are on the problematic cell-line list. Cell line presence on the misidentified list is scored by the edit distance metric, which skips all special characters such as spaces and dashes and assumes that any string that contains the same letters and numbers is an edit distance of 0 (e.g., EF 1 = EF-1). Journals that published papers under a license not allowing text mining are not represented here.
 
 The smallest number of cell lines on the problematic list is found in virology and botany related journals, while the largest is in cancer journals. This general observation is consistent with the identity of the problematic list, which has a high proportion of human cancer cell lines. Because of this composition and the aggressive growth of cancer cell lines taking over other cell lines, we expect that cell lines used in cancer journals would be over-represented, while cell lines from model organism would be underrepresented.
 
@@ -80,9 +80,9 @@ To look at the false positive rate for SciScore, we examined more closely the 17
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/41676/elife-41676-fig3-v1.jpg)
 
-**Figure 3.:** A manual review of 1,003 papers from the journal Scientific Reports showed a 95% agreement between the curator and the SciScore algorithm. Both the curator and SciScore detected a cell line in 138 articles, and no cell line in 822. Of 1,003 papers, 50 represent a disagreement (false positives and false negatives).10.7554/eLife.41676.007Figure 3—source data 1.Figure 3.
+**Figure 3.:** A manual review of 1,003 papers from the journal Scientific Reports showed a 95% agreement between the curator and the SciScore algorithm. Both the curator and SciScore detected a cell line in 138 articles, and no cell line in 822. Of 1,003 papers, 50 represent a disagreement (false positives and false negatives).
 
-## Cell lines identified by RRID
+### Cell lines identified by RRID
 
 Researchers that publish using the RRID syntax must look up the RRID in a central database (Figure 4). This database carries a set of warning messages including the ICLAC warning, echoing the language from Cellosaurus.
 
@@ -100,11 +100,11 @@ The number of cell lines identified by RRIDs that matched the list of problemati
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/41676/elife-41676-fig6-v1.jpg)
 
-**Figure 6.:** The "auto.detect.cell" lines data come from the edit distance metric, same as Figure 2; n=305,161; the RRID cell lines are based on 1,502 cell lines. The "auto.detect" papers percentage is based on n=150,459 unique papers, where the problematic cell-line list is detected based on the edit distance metric. The RRID papers percentage is based on n=634 papers.10.7554/eLife.41676.011Figure 6—source data 1.
+**Figure 6.:** The "auto.detect.cell" lines data come from the edit distance metric, same as Figure 2; n=305,161; the RRID cell lines are based on 1,502 cell lines. The "auto.detect" papers percentage is based on n=150,459 unique papers, where the problematic cell-line list is detected based on the edit distance metric. The RRID papers percentage is based on n=634 papers.
 
 The edit distance, total strict, and the 2016-2018 strict numbers, all are greater than 3.3% at the p<0.01 significance level. This percentage is also lower than that calculated for any of the individual journals in the top 100 journals (Figure 6—source data 1) except 4, including Frontiers in Plant Science (5 cell lines on the problematic list of 399 detected cell lines), Breast Cancer Research: BCR (8 of 423), Nature Structural and Molecular Biology (14 of 253), Cell Reports (12 of 386), and Nature Chemical Biology (17 of 523). These journals may have higher editorial oversight or may predominantly use cell lines that are not listed on the problematic list. This may be especially true for Frontiers in Plant Sciences and Nature Chemical Biology because Cellosaurus and the ICLAC list is skewed toward human cancer cell lines, since the original problem addressed by ICLAC centers on human cancer cell lines.
 
-## Considerations in comparing RRID and open access subsets of literature
+### Considerations in comparing RRID and open access subsets of literature
 
 PubMed Central currently contains roughly four million papers, and about two million of those are available under a ‘text mining is allowed’ license. Papers that contain RRIDs are under many different licenses, and only some are available for text mining, so we need to be careful in our comparisons of the RRID literature and the text-minable literature, because these are partially overlapping, but different subsets of the total literature.
 
@@ -148,7 +148,7 @@ It is important to review the evidence on which these findings are based and mak
 
 ## Methods
 
-## Text mining for cell line mentions in the open access subset of PubMed Central
+### Text mining for cell line mentions in the open access subset of PubMed Central
 
 To extract mentions of cell lines in papers, we utilized SciScore, under development by SciCrunch Inc (RRID:SCR_016251). SciScore is a text analysis tool suite that uses Named Entity Recognition to extract words or named entities from text documents. Here, we focused on words indicating cell lines. A word like HeLa is relatively unambiguous, however this is not the case for many other cell-line names. Therefore, the SciScore algorithm works only partially by recognizing these names, and mainly identifies them based on the sentence context of the word. SciScore is thus capable of finding new cell-line names that it was never specifically trained to recognize. This approach has been described previously (Ozyurt et al., 2016).
 
@@ -160,7 +160,7 @@ To determine SciScore performance in finding cell-line papers, we tested SciScor
 
 Briefly, after searching PubMed for all papers published in Scientific Reports, we downloaded a CSV file from PubMed containing the basic metadata for all these papers. Review and non-research papers lacking an abstract were removed, resulting in a total of 65,085 articles for analysis. Of these, every 65th paper, by date of publication, was selected for curatorial review, leaving 1,004 papers to be reviewed for cell line presence. Each of the these was then manually reviewed by a curator to determine if cell lines had been used and if so, which ones. One record was an erratum and was removed from this final list, leaving 1,003 papers to examine.
 
-## The problematic cell-line list
+### The problematic cell-line list
 
 We extracted a list of problematic cell lines from Cellosaurus database Version 25 (March 2018), and copied the 810 cell line identifiers, 1,811 names and synonyms into a document (Supplementary file 2). The composition of this list is described in the Cellosaurus Frequently Asked Questions section and contains cell lines from the ICLAC Register of Misidentified Cell Lines (both approved cell lines and those submitted for ICLAC review) and additional problematic cell lines reported by other sources. For the purposes of our primary analysis, we did not distinguish between different categories of cell line problems. However, we considered the differences in a subsample of the RRID papers, where it was important to determine whether the researchers knowingly used a misidentified cell line and if so, if they knew the identity of it.
 
@@ -168,13 +168,13 @@ To determine if cell-line names were highlighted in Cellosaurus as misidentified
 
 The third method used was the edit distance method to solve the string-to-string correction problem (Wagner and Fischer, 1974). The minimum edit distance is the minimum number of character deletion, addition and substitution operations necessary to make two strings equal. We have used weighted edit distance where the deletion or addition of certain special characters had 0 weight, other deletion and additions had a weight of 1. Substitutions had a weight of 2 (a deletion and addition). The match was considered valid if the edit distance was less than 1.
 
-## Corpus of papers containing RRIDs
+### Corpus of papers containing RRIDs
 
 We searched for all papers that contain RRIDs by monitoring Google Scholar, ScienceDirect (Elsevier), Wiley and PubMed Central every week for four years for mentions of the string RRID. Each paper that contained the term "RRID" was opened by a curator and listed in our database. For the past two years, each paper was examined by our semi-automated tool, SciBot (Gillespie and Udell, 2018; RRID:SCR_016250; copy archived at https://github.com/elifesciences-publications/scibot) for RRID mentions. SciBot is an annotation-based curation workflow that works with the Hypothesis annotation tool (Hypothes.is; RRID:SCR_000430). The curation workflow comprises the following steps:
 
 RRID Dataset: The RRID dataset as of March 2018 included over 2,000 cell line annotations. RRIDs that were supplied by the curator ("Missing") were excluded from this data set, leaving 1,554 cell lines where the researcher had added the RRID. Of the 1,554 cell-line RRIDs, 1,502 cell lines were found in papers associated with a PMID. The data set as of 4/01/2018 contains 686 unique papers; 634 of these were associated with a PMID. Papers without a PMID were not considered in the paper-level analysis, as we could not guarantee that they were unique.
 
-## Statistics
+### Statistics
 
 To determine if the RRID literature and the general literature represent distinct populations, we used the population proportion z-score statistic to deal with the difference between the total number of cell lines reported in papers and the cell lines reported via RRID (Social Science Statistics online calculator, RRID:SCR_016762). We made the one-tailed assumption as we assumed that researchers would only decrease their use of problematic cell lines and no longer publish data generated using problematic cell lines.
 

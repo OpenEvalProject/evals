@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Amyotrophic lateral sclerosis (ALS) is a devastating neurodegenerative disease affecting motor neurons (MNs) during late adulthood. Here, with the aim of identifying early changes underpinning ALS neurodegeneration, we analyzed the GABAergic/glycinergic inputs to E17.5 fetal MNs from SOD1 G93A (SOD) mice in parallel with chloride homeostasis. Our results show that IPSCs are less frequent in SOD animals in accordance with a reduction of synaptic VIAAT-positive terminals. SOD MNs exhibited an E GABAAR 10 mV more depolarized than in WT MNs associated with a KCC2 reduction. Interestingly, SOD GABAergic/glycinergic IPSCs and evoked GABA A R-currents exhibited a slower decay correlated to elevated [Cl - ] i . Computer simulations revealed that a slower relaxation of synaptic inhibitory events acts as compensatory mechanism to strengthen GABA/glycine inhibition when E GABAAR is more depolarized. How such mechanisms evolve during pathophysiological processes remain to be determined, but our data indicate that at least SOD1 familial ALS may be considered as a neurodevelopmental disease.
+Amyotrophic lateral sclerosis (ALS) is a devastating neurodegenerative disease affecting motor neurons (MNs) during late adulthood. Here, with the aim of identifying early changes underpinning ALS neurodegeneration, we analyzed the GABAergic/glycinergic inputs to E17.5 fetal MNs from SOD1G93A (SOD) mice in parallel with chloride homeostasis. Our results show that IPSCs are less frequent in SOD animals in accordance with a reduction of synaptic VIAAT-positive terminals. SOD MNs exhibited an EGABAAR 10 mV more depolarized than in WT MNs associated with a KCC2 reduction. Interestingly, SOD GABAergic/glycinergic IPSCs and evoked GABAAR-currents exhibited a slower decay correlated to elevated [Cl-]i. Computer simulations revealed that a slower relaxation of synaptic inhibitory events acts as compensatory mechanism to strengthen GABA/glycine inhibition when EGABAAR is more depolarized. How such mechanisms evolve during pathophysiological processes remain to be determined, but our data indicate that at least SOD1 familial ALS may be considered as a neurodevelopmental disease.
 
 ## Introduction
 
@@ -37,17 +37,63 @@ Here, using gramicidin intracellular recordings of SOD and wild type (WT) lumbar
 
 ## Results
 
-## Fetal MNs exhibit a perturbed chloride homeostasis but normal locomotor-like activity
+### Fetal MNs exhibit a perturbed chloride homeostasis but normal locomotor-like activity
 
 Initially, gramicidin perforated patch-clamp recordings from L4-L5 MNs were used to obtain Rin and Cm values for individual MNs. SOD MN values for Rin and Cm were 148.2 ± 13.5 MΩ, n = 21 and 105.6 ± 5.9 pF, n = 21, N = 16, respectively, and were significantly different (p<0.05, Mann Whitney test) from WT MNs values (104.9 ± 10.8 MΩ, n = 16 and 143.7 ± 14.2 pF, n = 16, N = 10) (Table 1). These values corresponded to the previously reported differences between WT and SOD MNs (Martin et al., 2013).
 
+**Table 1.**
+ Passive membrane properties of E17.5 MNs and GABAAR conductances.Data are from perforated patch-clamp recordings and are shown as mean ± SEM. Statistical significance was calculated by a non-parametric Mann Whitney test. ns, p>0.05; *p<0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Rin (MΩ)</th>
+      <th>Cm (pF)</th>
+      <th>gGABAAR (pS)</th>
+      <th>gGABAAR/Cm (MΩ/pS)</th>
+      <th>N</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>104.9 ± 10.8</td>
+      <td>143.7 ± 14.2</td>
+      <td>3.90 ± 0.97</td>
+      <td>0.029 ± 0.007</td>
+      <td>16</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>SOD</td>
+      <td>148.2 ± 13.5*</td>
+      <td>105.6 ± 5.9*</td>
+      <td>1.91 ± 0.24ns</td>
+      <td>0.019 ± 0.003ns</td>
+      <td>21</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
 Puff application of the GABAAR agonist isoguvacine allowed us to measure the reversal potential of GABAAR (EGABAAR) in individual SOD and WT MNs (Figure 1A), while our pooled data indicated that mean EGABAAR was significantly different in SOD MNs (−50.5 ± 2.4 mV, n = 25, N = 18) and WT MNs (−62.0 ± 2.0 mV, n = 24, N = 17) (p<0.001, Mann Whitney test) (Figure 1B1). From these EGABAAR values, and because Cl- ions are mainly involved in GABAAR currents in fetal MNs (Bormann et al., 1987; Gao and Ziskind-Conhaim, 1995), we calculated the intracellular chloride concentration [Cl-]i as being 19.5 ± 1.5 mM and 12.2 ± 0.9 mM in SOD and WT MNs, respectively (p<0.001, Mann Whitney test) (Figure 1B2). Interestingly, [Cl-]i values reported in E17.5 WT MNs are in agreement with those previously reported, i.e., 12 mM (Delpy et al., 2008). The resting membrane potential (Em) was not significantly different between SOD and WT MNs (−73.1 ± 0.5 mV in SOD and −74.1 ± 1.0 mV in WT MNs (p>0.05, Mann Whitney test MNs) (Figure 1B3), in contrast to the mean driving force (DF = Em - EGABAAR), which was 22.6 ± 2.3 mV and 12.1 ± 2.2 mV in SOD and WT MNs, respectively (p<0.001, Mann Whitney test) (Figure 1B4).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig1-v4.jpg)
+
+**Figure 1.:** (A) Representative traces of isoguvacine (Iso) responses illustrating the reversal of the evoked GABAAR-related current (EGABAAR) in WT and SOD MNs. Holding voltage −70 mV, −60 mV, −50 mV and −40 mV. I/V relationships, plotted below the traces, revealed that EGABAAR was −61.4 mV and −48.5 mV in the representative WT and SOD MNs, respectively. (B1) Mean EGABAAR was significantly lower in E17.5 WT (n = 25) compared to SOD (n = 24) MNs from the same litter. (B2) Accordingly, the mean [Cl-]i, calculated from individual EGABAAR values, indicated that SOD MNs had a higher [Cl-]i than WT. (B3) Mean resting membrane potential (Em) did not differ in WT and SOD MNs. (B4) Mean driving force (DF) for chloride ions was doubled in SOD MNs compared to WT MNs. Values illustrated were from the same set of MNs. ****p<0.0001, ***p<0.001, ns non-significant, Mann Whitney test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) FoxP1 transcription factor expressed in the LMC (green staining of nuclei). (B) A recorded MN filled with neurobiotin (red staining). (C) Merged image showing the LMC location of the recorded MN. MMC: medial motor cortex. Midline is indicated by a dashed line on the left of each panel.
 
 The dissipation of an elevated intracellular Cl- concentration is mediated by the activation of the neuronal K+/Cl− co-transporter type 2 (KCC2) (Payne et al., 1996; Rivera et al., 1999). This protein, which extrudes Cl-, is expressed at early stages in the embryonic SC (Delpy et al., 2008). The [Cl-]i is also related to the Na+-K+−2Cl- co-transporter NKCC1, which intrudes chloride ions (Russell, 2000; Delpy et al., 2008). Therefore, in order to identify the cellular mechanisms underlying the higher [Cl-]i in SOD MNs, we firstly assessed the amount of KCC2 and NKCC1 in lumbar SCs using WB. Our data showed that KCC2 was reduced by ~19% in SOD lumbar SCs compared to WT (p<0.05, Mann Whitney test) (Figure 2A1) whereas NKCC1 was unchanged (Figure 2A2). When analyzed in the MN area (Hb9-eGFP), the KCC2 staining appeared as significantly reduced in SOD SCs (181.5 ± 16.2 arbitrary unit (AU), n = 43, N = 4) compared to WT (395.0 ± 20.3 AU, n = 42, N = 4) (p<0.001, Mann Whitney test) (Figure 2B1–B2 and B5). At the level of the MN membrane, the KCC2 density was also significantly reduced in SOD SCs (5.8 ± 0.6 AU, n = 81, N = 4) compared to WT SCs (8.5 ± 0.6 AU, n = 116, N = 4) (p<0.01, Mann Whitney test) (Figure 2B3–B4 and B6). Functionally, we found that the KCC2 efficacy, assessed using indirect measurements, was reduced in SOD MNs: EGABAAR reached a maximum of −43.8 ± 0.8 mV (n = 19, N = 16) in SOD MNs and −46.5 ± 0.7 mV (n = 24, N = 17) in WT (p<0.05, Mann Whitney test) after 30 s isoguvacine pressure ejection (Figure 2C) and returned to control values: −49.3 ± 1.2 mV (n = 19) in SOD MNs and −54.8 ± 1.0 mV (n = 24) in WT (p<0.001, Mann Whitney test) after a 4 min isoguvacine washout (Figure 2C). This difference was absent when the specific KCC2 blocker VU0240551 was applied (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig2-v4.jpg)
 
-**Figure 2.:** (A1) Analysis of the KCC2 protein in SOD and WT SCs. The stain-free staining of total proteins loaded (lower left panel) was used as the normalization control to quantify the ~140 kDa KCC2 band (upper left panel). Right panel: quantification of KCC2 WB. (A2) Analysis of the NKCC1 protein in SOD and WT SCs. The ~150 kDa NKCC1 band (upper left panel) was analyzed. Quantification of NKCC1 WB. Three loads (20 μg of protein) from SOD and WT lumbar spinal cord extracts were used, each load including five individual SCs from four different litters. (B1–B4) Representative immunohistochemical KCC2 (red) staining in WT (B1–B3) and SOD (B2–B4) lumbar 0.2 µm thickness optical sections (L3-L5 level) containing Hb9-eGFP MNs (green). Images correspond to x60 confocal acquisitions. White arrows point the KCC2 labeling surrounding spinal MNs. (B5–B6) Quantification of the global KCC2 staining (B5) in the MN area and membrane KCC2 staining (B6) in E17.5 SOD and WT SCs. (C1) Illustration of the protocol applied to assess the KCC2 efficacy as explained in the Materials and method section. (C2–C3) Evolution of E values with time during the isoguvacine (iso) application in control aCSF (ClC2) and in the presence of the highly specific KCC2 blocker VU0240551 (10 µM) (C3). ***p<0.001, **p<0.01, *p<0.05, ns non-significant, Mann Whitney test.
+**Figure 2.:** (A1) Analysis of the KCC2 protein in SOD and WT SCs. The stain-free staining of total proteins loaded (lower left panel) was used as the normalization control to quantify the ~140 kDa KCC2 band (upper left panel). Right panel: quantification of KCC2 WB. (A2) Analysis of the NKCC1 protein in SOD and WT SCs. The ~150 kDa NKCC1 band (upper left panel) was analyzed. Quantification of NKCC1 WB. Three loads (20 μg of protein) from SOD and WT lumbar spinal cord extracts were used, each load including five individual SCs from four different litters. (B1–B4) Representative immunohistochemical KCC2 (red) staining in WT (B1–B3) and SOD (B2–B4) lumbar 0.2 µm thickness optical sections (L3-L5 level) containing Hb9-eGFP MNs (green). Images correspond to x60 confocal acquisitions. White arrows point the KCC2 labeling surrounding spinal MNs. (B5–B6) Quantification of the global KCC2 staining (B5) in the MN area and membrane KCC2 staining (B6) in E17.5 SOD and WT SCs. (C1) Illustration of the protocol applied to assess the KCC2 efficacy as explained in the Materials and method section. (C2–C3) Evolution of ECl values with time during the isoguvacine (iso) application in control aCSF (C2) and in the presence of the highly specific KCC2 blocker VU0240551 (10 µM) (C3). ***p<0.001, **p<0.01, *p<0.05, ns non-significant, Mann Whitney test.
 
 In order to assess whether the alteration of chloride homeostasis in SOD MNs could affect the left-right alternation in locomotor-like activity expressed by E17.5 mouse spinal lumbar networks due to half-centers organization and commissural inhibition (Branchereau et al., 2000), we recorded this activity in L3-L5 ventral roots after exogenous application of 5-HT/NMDA/DA. As illustrated in Figure 3A1, this cocktail evoked stable bilateral segmental alternation between left and right ventral roots in WT SC preparations. Chemically-activated locomotor-like activity was also expressed in the ventral roots of SOD SCs (Figure 3A2), although analysis (Rayleigh's test) revealed a slower rhythm period in SOD SCs (2.01 ± 0.03 s, n = 8, N = 5) compared to WT controls where bursts recurred with a period of 1.88 ± 0.03 s (n = 9, N = 7) (p<0.01, Mann Whitney test) (Figure 3B). However, the rhythm phase relationship between left and right sides was close to anti-phase in both genotypes (0.49 ± 0.003 and 0.52 ± 0.004 in SOD and WT SCs, respectively) (see polar plots in Figure 3A1–A2). Therefore, surprisingly, alteration of chloride homeostasis in SOD MNs has limited consequences on the locomotor-like activity and therefore little physiological consequences. Could compensatory mechanisms in the SOD spinal synaptic network explain this result?
 
@@ -59,7 +105,7 @@ In order to gain information about the synaptic inputs from the premotor inhibit
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig4-v4.jpg)
 
-**Figure 4.:** tau.decay(A1) Sample miniature IPSC (mIPSC) recordings obtained from representative SOD and WT MNs (holding membrane potential −70 mV). (A2) Cumulative frequency of inter-event interval (IEI) and mean values of mIPSCS revealed a small but significant reduction in frequency in SOD MNs (n = 19) compared with WT (n = 15) MNs. (A3) mIPSC peak amplitude was slightly smaller in SOD than in WT MNs (same layout as in A2). (A4) Mean tau was unchanged but mean risetau was significantly increased in SOD mIPSCs compared with WT mIPSCs. Inset traces (mean of 30 events) from representative experiments. (decayA5) Blocking the GlyR or GABAAR (black horizontal bars) reveals a tonic current. The distribution of pure GABAAR-mediated mIPSCs in WT (n = 5) and SOD (n = 3) MNs and pure GlyR-mediated mIPSCs in WT (n = 3) and SOD (n = 5) MNs is shown between the two traces. (A6) Tau of pure GlyR-mediated mIPSCs is significantly increased in SOD MNs (n = 3) compared to WT MNs (n = 5). Traces are mean of 53 events (WT) and 57 events (SOD) from representative experiments. (decayA7) Relaxation of pure GABAAR-mediated mIPSCs is significantly longer in SOD MNs (n = 3) compared to WT MNs (n = 5). Traces are mean of 35 events (WT) and 35 events (SOD) from representative experiments. (A8) Mixed GlyR-GABAAR-mediated events from representative experiments. (B1) Samples of spontaneous IPSC (sIPSC) recordings from representative SOD and WT MNs. (B2) Cumulative frequency of IEI and mean values of sIPSCS revealed a slight frequency reduction in SOD MNs (n = 17) compared to WT MNs (n = 14). (B3) sIPSC peak amplitudes were similar in SOD and WT MNs. (B4) Mean tau was not significantly different in WT sIPSCs, but SOD sIPSCs exhibited a higher risetau. Inset traces (mean of 30 events) from representative experiments. (decayC1–C2) SOD eIPSCs (n = 6) displayed a higher tau than WT eIPSCs (n = 10). (decayD1–D2) Puff-evoked SOD GABAAR currents (n = 21) exhibited a higher tau than WT GABAdecayAR currents (n = 16). Left traces in C1) and D1) are from representative SOD and WT eIPSCs and puff-evoked GABAAR currents. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns non-significant, Mann Whitney test.
+**Figure 4.:** (A1) Sample miniature IPSC (mIPSC) recordings obtained from representative SOD and WT MNs (holding membrane potential −70 mV). (A2) Cumulative frequency of inter-event interval (IEI) and mean values of mIPSCS revealed a small but significant reduction in frequency in SOD MNs (n = 19) compared with WT (n = 15) MNs. (A3) mIPSC peak amplitude was slightly smaller in SOD than in WT MNs (same layout as in A2). (A4) Mean taurise was unchanged but mean taudecay was significantly increased in SOD mIPSCs compared with WT mIPSCs. Inset traces (mean of 30 events) from representative experiments. (A5) Blocking the GlyR or GABAAR (black horizontal bars) reveals a tonic current. The distribution of pure GABAAR-mediated mIPSCs in WT (n = 5) and SOD (n = 3) MNs and pure GlyR-mediated mIPSCs in WT (n = 3) and SOD (n = 5) MNs is shown between the two traces. (A6) Taudecay of pure GlyR-mediated mIPSCs is significantly increased in SOD MNs (n = 3) compared to WT MNs (n = 5). Traces are mean of 53 events (WT) and 57 events (SOD) from representative experiments. (A7) Relaxation of pure GABAAR-mediated mIPSCs is significantly longer in SOD MNs (n = 3) compared to WT MNs (n = 5). Traces are mean of 35 events (WT) and 35 events (SOD) from representative experiments. (A8) Mixed GlyR-GABAAR-mediated events from representative experiments. (B1) Samples of spontaneous IPSC (sIPSC) recordings from representative SOD and WT MNs. (B2) Cumulative frequency of IEI and mean values of sIPSCS revealed a slight frequency reduction in SOD MNs (n = 17) compared to WT MNs (n = 14). (B3) sIPSC peak amplitudes were similar in SOD and WT MNs. (B4) Mean taurise was not significantly different in WT sIPSCs, but SOD sIPSCs exhibited a higher taudecay. Inset traces (mean of 30 events) from representative experiments. (C1–C2) SOD eIPSCs (n = 6) displayed a higher taudecay than WT eIPSCs (n = 10). (D1–D2) Puff-evoked SOD GABAAR currents (n = 21) exhibited a higher taudecay than WT GABAAR currents (n = 16). Left traces in C1) and D1) are from representative SOD and WT eIPSCs and puff-evoked GABAAR currents. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns non-significant, Mann Whitney test.
 
 The pharmacological dissection revealed that mIPSCs were ~50% pure glycine,~40% pure GABA, the remaining events ~ 10% being mixed (see Figure 4A6–A8). No difference was found between SOD MNs (48.43 ± 8.26% glycine, n = 5, N = 5; 39.65 ± 16.77% GABA, n = 3, N = 3) and WT MNs (51.46 ± 9.41% glycine, n = 3, N = 3; 41.79 ± 7.97% GABA, n = 5, N = 5) (p>0.05, Mann Whitney test). Interestingly, E17.5 SOD MNs, recorded at a holding potential of −70 mV with ECl set at ~0 mV displayed pure glycine and GABA mIPSCs with a longer relaxation than E17.5 WT animals from the same littermate. Taudecay of pure glycine mIPSCs was 13.35 ± 3.14 ms (n = 3, N = 3) in SOD MNs and 6.53 ± 0.44 ms in WT MNs (n = 5, N = 5) (p<0.05, Mann Whitney test) (Figure 4A6) whereas taurise were similar in both genotypes (1.24 ± 0.12 ms for SOD and 1.18 ± 0.07 ms for WT, p>0.05, Mann Whitney test). Taudecay of pure GABA mIPSCs was also larger in SOD MNs (24.69 ± 1.18 ms, n = 5, N = 5) compared to WT MNs (19.51 ± 0.56 ms, n = 3, N = 3) (p<0.05, Mann Whitney test) (Figure 4A7) whereas taurise were similar in both genotypes (3.02 ± 0.24 ms for SOD and 2.12 ± 0.52 ms for WT, p>0.05, Mann Whitney test).
 
@@ -73,39 +119,51 @@ The transport of GABA/glycine (GABA/Gly) into synaptic vesicles is mediated by V
 
 Our electrophysiological data indicated a clear alteration in the frequency and shape of miniature and spontaneous synaptic currents in SOD MNs, with IPSCs being less frequent in SOD animals. This reduced basal network activity was therefore consistent with the anatomical labeling of GABAergic/glycinergic synaptic terminals. Prenatal SOD MNs also exhibited a more depolarized EGABAAR than WT MNs, which would in turn impinge on the efficacy of GABA/Gly inhibition (Branchereau et al., 2016). In SOD MNs EGABAAR was 10 mV more depolarized, which could preclude efficient inhibition. Surprisingly on the other hand, well-coordinated locomotor-like activity was still elicited in SOD SCs (Figure 3A), indicating the presence of putative compensatory mechanisms. In this respect, the slower decay times of both IPSCs and puff-evoked GABAAR currents recorded in SOD MNs could be one of such mechanisms. Therefore, in order to test this idea further, we conducted a series of computer simulations of SOD-like and WT-like E17.5 spinal MNs in which the effect of taudecay on the strength of GABA/Gly inhibition was assessed.
 
-## A slower decay time of GABA/Gly synaptic currents to strengthen inhibition in SOD MNs
+### A slower decay time of GABA/Gly synaptic currents to strengthen inhibition in SOD MNs
 
 The impact of synaptic current shape on MN activity was assessed using numerical simulations of WT-like and SOD-like MNs with a NEURON simulation environment (Carnevale and Hines, 2006). The topology and morphometry of canonical WT and SOD E17 MNs were issued from Martin et al. (2013). The two MN types differed only in the length of their terminal dendrites, being shorter in SOD-like MNs (i.e. 60% of WT-like MNs) (Figure 6—figure supplement 1A-B). As a result, the SOD-like MNs are more excitable (Martin et al., 2013). A continuous depolarizing current was injected into the somata of both the WT-like (250 pA) and SOD-like MNs (200 pA) (Figure 6—figure supplement 1C) to produce a spiking discharge of ~12.5 Hz (Figure 6A1, B1). This spike frequency in E17.5 MNs was reached during bursts of activity occurring during fictive locomotion (Figure 6—figure supplement 2A, B). During this MN discharge, a train of GABA/Gly synaptic events was delivered to the MN soma. Various frequencies of GABA/Gly synaptic events were tested to assess the frequency (cut-off frequency) needed to totally block the ongoing MN discharge. When EGABAAR was set to −50 mV (the value measured in biological SOD MNs), increasing the GABA/Gly taudecay from 20 ms to 25 ms drastically increased its inhibitory effect on the MN discharge (Figure 6): whereas a 71 Hz GABA/Gly synaptic event train with a taudecay of 20 ms slowed down the WT model MNs’ discharge from 12 Hz to 8–10 Hz, the same train totally blocked spike activity with a GABA/Gly taudecay of 25 ms (Figure 6A1–A2) and almost blocked it in a SOD MN (Figure 6B1–B2). We then repeated these simulations for a set of synaptic frequencies ranging from 0 Hz to 100 Hz for the two taudecay values (20 and 25 ms), with an EGABAAR set at −50 or −60 mV for the WT (Figure 6A3–A4) and SOD MNs (Figure 6B3–B4). The value of EGABAAR was determinant for the inhibitory effect of GABA/Gly events because in the WT-like MN, as in the SOD-like MN, the efficacy of the inhibitory train was much stronger when EGABAAR was set to −60 mV rather than −50 mV. Indeed, with EGABAAR = −60 mV, a 15 Hz GABA/Gly event train totally blocked the discharge in both MN types (Figure 6A4–B4), with little or no difference occurring between the two (taudecay of 20 and 25 ms) event/firing rate curves. By contrast, the corresponding curves differed significantly when EGABAAR was set to −50 mV (Figure 6, compare A3 with B3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig6-v4.jpg)
+
+**Figure 6.:** (A) Simulations made with a WT-like MN whose soma was continuously injected with depolarizing current (250 pA) to induce spiking discharge at a rate of ~12.5 Hz. After the spiking discharge was stabilized (t = 2 s), a train of GABA/Gly synaptic events was delivered to the soma at a frequency of 71 Hz, with either a taudecay of 20 ms (A1) or 25 ms (A2) and EGABAAR set at −50 mV. Using these two values of GABA/Gly taudecay (20 ms: dark blue circles; 25 ms: light blue squares), various frequencies of GABA/Gly synaptic train (from 0 to 100 Hz) were tested with either EGABAAR = -50 mV (A3) or EGABAAR = −60 mV (A4). The horizontal dashed line represents the stabilized spiking frequency before application of the GABA/Gly synaptic train. Inhibitory effects (below dashed line) are in red, excitatory effects (above this line) are in green. (B1–B5) Simulations made with a SOD-like MN, in which the soma was continuously depolarized (200 pA injection) to induce spiking discharge at ~12.5 Hz (same layout as in A). Note that in the SOD-like MN with EGABAAR = −50 mV, excitatory effects are observed when the GABA/Gly synaptic frequency is below 50 Hz (B3). This effect is not observed when EGABAAR = −60 mV (B4) or is almost absent in the WT-like MN with EGABAAR = −50 mV.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) The two simulated MNs differ only in the length of their terminal dendrites, being shorter in the SOD-like MN. (C) Schematic drawing of the simulated cell body, dendrites and axon along with the location of GABA/Gly synaptic input. AIS: axon initial segment.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig6-figsupp2-v4.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Activity recorded simultaneously in a lumbar ventral root (L5) and a spinal MN (L5 level). (B) Quantification of the ventral root activity during a locomotor-related burst, including number of events (spikes), mean spike frequency (FMean) and mean instantaneous frequency (FiMean). (C) Analysis of the instantaneous frequency of excitatory (Glu, blue) and inhibitory (GABA/Gly, pink) synaptic events recorded in voltage-clamp mode (holding membrane potential −45 mV) from an E17.5 lumbar MN during a locomotor-like sequence. Note that GABA/Gly synaptic events may recur at a frequency of >100 Hz during locomotor bursts. (D) Detection of a barrage of inhibitory (upward projecting) synaptic events (upper panel, corresponding to position one in C) and mixed inhibitory (upward) and excitatory (downward) synaptic events (lower panel, position two in C).
 
 Significantly, the morphology of the MNs also played a role in the inhibitory effect of the 71 Hz GABA/Gly train on their activity with a taudecay set to 20 ms: the inhibition was stronger in the WT-like MN (discharge reduction from 12.5 Hz to 7.33 Hz, Figure 6A3) than in the SOD-like MN (reduction from 12.5 Hz to only 9.83 Hz, Figure 6B3). The effect of morphology was also evident in the difference (frequency shift) between the two curves (taudecay of 20 and 25 ms) being more pronounced in the SOD- (17 Hz) than in the WT-like MN (14 Hz). A final influence of MN morphology was observed for a GABA/Gly synaptic frequency below 50 Hz: in the SOD-like MN with EGABAAR = -50 mV, the GABA/Gly synaptic trains produced excitatory effects (Figure 6B3), although these effects were much smaller (if at all) in the WT-like MN (Figure 6A3). This excitatory action of GABA/Gly synapses was not observed when EGABAAR = −60 mV (Figure 6A4–B4).
 
 We chose a firing frequency of 12.5 Hz for the model MNs since this corresponded to the mean value measured during locomotor-like activity in E17 WT embryos (Figure 6—figure supplement 2A-B). Together our results from computer simulations thus indicate that an increase of taudecay from 20 to 25 ms may constitute a partial compensatory mechanism contributing to reinforcing the inhibitory strength of GABA/Gly synaptic events that are dramatically reduced in SOD-type MNs mainly because of their more depolarized EGABAAR (−50 mV instead of −60 mV).
 
-## Effect of slower decay time of GABA/Gly synaptic currents on locomotor rhythm
+### Effect of slower decay time of GABA/Gly synaptic currents on locomotor rhythm
 
 In a final step, we wished to assess the functional consequence of increasing taudecay during ongoing locomotor activity. To this end, a simplified computer simulation of two half-centers driving antagonistic MNs was employed (Figure 7A). Pacemaker activity was obtained using a simplified model (see Appendix 1) based on previous physiological observations on the fundamental role played by INaP and IKCa in pacemaker activity (Tazerart et al., 2008). Interestingly, increasing taudecay slowed-down the locomotor rhythm when EGABAAR was set to −60 mV (WT MN value) and gGABA/Gly was set to 0.04 µS (Figure 7A1, A2). This slow-down of the locomotor rhythm was also observed when gGABA/Gly was increased to 0.2 µS with EGABAAR = −60 mV (Figure 7B1). When EGABAAR was set to −50 mV with a gGABA/Gly of 0.2 µS, increasing taudecay still slowed down the locomotor rhythm, but the effect was much smaller (Figure 7B2). This result was in agreement with our findings that the pharmacologically-evoked locomotor rhythm in SOD SCs was slower than in WT SCs (Figure 3B). Again, although this slight change in the locomotor rhythm observed in SOD SCs has likely no physiological consequences, it reveals one side effect of increasing taudecay of GABA/Gly synaptic events.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig7-v4.jpg)
 
-**Figure 7.:** tau on locomotor activity.decay(A) Effect of tau on the locomotor rhythm when EdecayGABAAR (E) is set to −60 mV (ClA1-A2, B1) and −50 mV (B2).
+**Figure 7.:** (A) Effect of taudecay on the locomotor rhythm when EGABAAR (ECl) is set to −60 mV (A1-A2, B1) and −50 mV (B2).
 
 ## Discussion
 
 In the present study we show that fetal E17.5 SOD1G93A MNs express an impairment of chloride homeostasis that leads to a more depolarized reversal potential for GABAAR (EGABAAR), indicating that a very early inhibitory dysfunction may initiate the pathogenesis in ALS MNs as hypothesized by others (van Zundert et al., 2012; Clark et al., 2015). This could lead to a less efficient inhibitory input to MNs (Branchereau et al., 2016), which in turn would be expected to affect locomotor coordination. However, this was not observed here, likely due to a compensatory prolongation of inhibitory synaptic events revealed in our study. Moreover, we found that the passive properties of E17.5 MNs (Rin and Cm) complied with previous observations (Martin et al., 2013), in that Rin increased and Cm decreased in SOD MNs (Table 1), in accordance with a morphometric alteration (shorter dendritic length without changes at the soma level). Decreased capacitance and membrane conductance were therefore not related to smaller size of E17.5 SOD mouse MNs. These findings therefore support the conclusion that fetal E17.5 SOD MNs are also hyperexcitable. The following will consider possible compensatory mechanisms that counteract the reduction in effective inhibitory input and the hyperexcitability of SOD MNs.
 
-## The frequency and amplitude of inhibitory synaptic inputs are only weakly affected in fetal SOD MNs
+### The frequency and amplitude of inhibitory synaptic inputs are only weakly affected in fetal SOD MNs
 
 In our study we show that frequency of inhibitory synaptic inputs is reduced in SOD MNs. This conclusion was supported by both physiological and anatomical observations. Firstly, SOD MNs displayed less frequent mIPSCs (~6%) (Figure 4A2), which correlates with the finding that VIAAT/synaptophysin co-localization was diminished (~23%) in these mice (Figure 5B3). Second, the amplitudes of the mIPSCs were slightly smaller in SOD1 MNs than in WT, especially for large events (Figure 4A3) and sIPSC events also exhibited this tendency (Figure 4B3). These main features of SOD IPSCs compared to WT are summarized in the schematic representation of Figure 8A1–A2.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/51402/elife-51402-fig8-v4.jpg)
 
-**Figure 8.:** (A) Schematic drawing summarizing the altered inhibitory inputs (~25% reduction, see Figure 3B3) to fetal SOD MNs. [Cl-]i is higher in SOD MNs (A1) than in WT MNs (A2) because of a KCC2 down-regulation, leading to an increased GABA/Gly-induced depolarizing effect (see insets). (B) Consequence of increasing tau on the GABA/gly inhibitory effect in SOD-like MNs. Due to an accumulation in the intracellular compartment, EdecayGABAAR exerts a strong depolarizing effect. A burst of spikes generated by MNs is hardly blocked by a barrage of GABA/gly events (see blue traces) when tau is set to 20 ms. Increasing decaytau to 25 ms allows a better summation of the shunting component of the depolarizing GABA/gly post-synaptic event leading to a better clamp of Edecaym towards EGABAAR and to the blockade of MN discharge (see green traces). (C) Impact of a larger tau in SOD MNs on the frequency of the locomotor rhythm.decay
+**Figure 8.:** (A) Schematic drawing summarizing the altered inhibitory inputs (~25% reduction, see Figure 3B3) to fetal SOD MNs. [Cl-]i is higher in SOD MNs (A1) than in WT MNs (A2) because of a KCC2 down-regulation, leading to an increased GABA/Gly-induced depolarizing effect (see insets). (B) Consequence of increasing taudecay on the GABA/gly inhibitory effect in SOD-like MNs. Due to an accumulation in the intracellular compartment, EGABAAR exerts a strong depolarizing effect. A burst of spikes generated by MNs is hardly blocked by a barrage of GABA/gly events (see blue traces) when taudecay is set to 20 ms. Increasing taudecay to 25 ms allows a better summation of the shunting component of the depolarizing GABA/gly post-synaptic event leading to a better clamp of Em towards EGABAAR and to the blockade of MN discharge (see green traces). (C) Impact of a larger taudecay in SOD MNs on the frequency of the locomotor rhythm.
 
 The reduced degree of synaptic input to mouse prenatal SOD MNs assessed by VIAAT/synaptophysin staining is reminiscent of anatomical data from adult human ALS patients in which a reduction of synaptophysin was also identified (Ikemoto et al., 2002). It cannot be explained by a reduced SOD MN size (i.e., smaller cells can host fewer synapses) because we have shown in a previous article that soma perimeters and soma surface of WT MNs and SOD MNs are comparable (Martin et al., 2013). Even though the reduced degree of synaptic input might reflect a developmental delay in the maturation of SOD SCs compared to WT, data from the literature seems to indicate that this reduction persists with time. In fact, MNs cultured from other ALS patients were shown to progressively lose their synaptic activity (Devlin et al., 2015), as was also shown in pre-symptomatic (P60-P120) adult SOD mice (Zang et al., 2005).
 
 The mixed GABA/Glycine IPSCs recorded in our study are likely to reflect a major contribution of GlyR because of the fast taudecay (Gao et al., 2001; Muller et al., 2006). Therefore, IPSCs, which were slightly reduced in amplitude in our recordings in SOD MNs, represent glycinergic events whereas GABAergic IPSCs amplitude remained unaffected. This hypothesis is supported by the fact that the ratio gGABAAR/Cm measured in our perforated patch-clamp recordings did not differ between SOD and WT MNs (Table 1). Interestingly, a reduction in amplitude of glycinergic synaptic events but not GABAergic events was described in SOD1G93A lumbar MNs maintained in culture (Chang and Martin, 2011). Less frequent and smaller amplitude IPSCs convey a reduced inhibitory drive onto prenatal SOD1 MNs. Measurements of IPSC amplitudes derived from CsCl medium-based whole-cell recordings in which EGABAAR approached 0 mV. Therefore, WT and SOD MNs shared the same artificial driving force for chloride and so the observed reduction of IPSC amplitude in SOD MNs was likely to be related to a change in post-synaptic GlyR as described in cultured SOD1G93A MNs (Chang and Martin, 2011).
 
-## A prolongation of inhibitory synaptic events in SOD MNs as a compensatory mechanism
+### A prolongation of inhibitory synaptic events in SOD MNs as a compensatory mechanism
 
 Our data revealed a noticeable increase of taudecay in both SOD1 mIPSCs and sIPSCs. We found a mean taudecay of around 20–25 ms, which is in the same range as that previously described for mIPSCs during perinatal stages in rat lumbar MNs (Gao et al., 1998). Because a part of our study did not differentiate unequivocally between GABAAR-mediated versus GlyR-mediated mIPSCs, we pharmacologically dissected GABAAR-mediated versus GlyR-mediated mIPSCs. This confirmed that the mean taudecay is between taudecay of pure GABAAR-mediated mIPSCs and pure GlyR-mediated mIPSCs and that both types of mIPSCs exhibit a longer relaxation. Interestingly, GlyRs switch from immature homomeric α2 GlyRs with slow decay kinetics of glycinergic mIPSCs to heteromeric GlyRs that include α1, α3 and β subunits with fast kinetics (Legendre, 2001; Raltschev et al., 2016). E17.5 SOD1 MNs may therefore exhibit a delayed development with a preponderance of homomeric α2 GlyRs. However, this is unlikely to be the case, since most electrical properties measured from birth to postnatal day 12 in SOD1G93A MNs instead show an accelerated rate of maturation (Quinlan et al., 2011). During perinatal development of rat spinal MNs, GlyR-mediated mIPSCs become dominating over GABAAR-mediated mIPSCs (Gao et al., 2001). We also found a majority of pure GlyR-mediated mIPSCs and found the same ratio of pure GABAAR-mediated mIPSCs and pure GlyR-mediated mIPSCs in SOD and WT MNs, indicating similar prenatal developmental stage for both genotypes.
 
@@ -123,29 +181,284 @@ Our second series of computer simulations demonstrate that increasing taudecay s
 
 ## Materials and methods
 
-## Ethical considerations and mouse model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>B6SJL-Tg(SOD1*G93A)1Gur/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KCC2 rabbit polyclonal</td>
+      <td>Millipore</td>
+      <td>Cat#07–432 RRID:AB_11213615</td>
+      <td>1:1000 (WB) 1:400 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NKCC1 mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>T4</td>
+      <td>1:400 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VIAAT rabbit polyclonal</td>
+      <td>Provided by B. Gasnier, Paris Descartes University</td>
+      <td>VIAAT</td>
+      <td>1:1000 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-synaptophysin mouse monoclonal</td>
+      <td>Millipore Sigma</td>
+      <td>Clone SVP38 RRID:AB_2315393</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FoxP1 rabbit polyclonal</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#AB2277 RRID:AB_10631732</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit secondary antibody Alexa Fluor 546</td>
+      <td>Invitrogen</td>
+      <td>Cat#A-11035</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse secondary antibody Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat#A-21235 RRID:AB_2535804</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG-heavy and light chain cross-adsorbed Antibody HRP Conjugated</td>
+      <td>Euromedex</td>
+      <td>Cat#A120-201P</td>
+      <td>1:20000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Immun-Star GAM-HRP Conjugate</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1705047</td>
+      <td>1:20000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Qproteome Mammalian Protein Prep Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#37901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase Inhibitor Cocktail 2</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#P5726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DC protein assay</td>
+      <td>Bio-Rad</td>
+      <td>Cat#5000113 Cat#5000114 Cat#5000115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Mini-PROTEAN TGX Stain-Free Gels</td>
+      <td>Bio-Rad</td>
+      <td>Cat#4568034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10x Tris/Glycine/SDS</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1610732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Precision Plus Protein All Blue Standards</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1610373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Trans-Blot Turbo Transfer Pack, nitrocellulose</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1704158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clarity Western ECL, Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (citrate free)</td>
+      <td>Latoxan Laboratory, France</td>
+      <td>Cat#L8503</td>
+      <td>0.2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#K3375</td>
+      <td>4 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tubocurarine hydrochloride pentahydrate</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#2379</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydro-β-erythroidine hydrobromide</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#2349/10</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine Hemisulfate salt</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#S7001</td>
+      <td>3 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(2R)-amino-5-phosphonovaleric acid (DL-AP5)</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#0105/10</td>
+      <td>40 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-cyano-7-nitroquinoxaline-2,3-dione (CNQX)</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#0190/10</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR 95531 hydrobromide (GABAzine)</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#1262/10</td>
+      <td>3 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bumetanide</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#B3023</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VU0240551</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#3888/10</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoguvacine hydrochloride</td>
+      <td>Bio-techne, France</td>
+      <td>Cat#0235/100</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine hydrochloride</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#H8502</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Serotonin hydrochloride (5-HT)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#H9523</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Methyl-D-aspartic acid (NMDA)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#M3262</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gramicidin from Bacillus aneurinolyticus (Bacillus brevis)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#G5002</td>
+      <td>10–20 μgml−1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON 7.3</td>
+      <td>NEURON</td>
+      <td>RRID:SCR_005393</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical considerations and mouse model
 
 All procedures were carried out in accordance with the local ethics committee of the University of Bordeaux and European Committee Council directives. All efforts were made to minimize animal suffering and reduce the number of animals used. B6SJLTgN(SOD1-G93A)/1Gur/J mice expressing the human G93A Cu/Zn superoxide dismutase (SOD1) mutation (Gly93→ Ala substitution) were obtained from the Jackson Laboratory (https://www.jax.org/strain/002726). Heterozygous B6SJL-TgN(SOD1-G93A)/1 Gur/J (named SOD in this report) were maintained by crossing heterozygous transgene-positive male mice with B6SJL F1 hybrid females (Janvier labs, France). Gestation in SOD lasted for ~18.5 days, embryonic day 0.5 (E0.5) being defined as the day after the mating night. Experiments were performed on E17.5 fetuses, that is collected one day before their birth.
 
-## Dissection and isolation of the embryonic spinal cord (SC)
+### Dissection and isolation of the embryonic spinal cord (SC)
 
 Pregnant mice were sacrificed by cervical dislocation. A laparotomy was performed and the fetuses were removed after cutting the uterine muscle. Fetuses were removed from their individual embryonic sacs and transferred into cooled artificial cerebrospinal fluid (aCSF) oxygenated with a 95% O2 and 5% CO2 mixture. The composition of the latter was in mM: 114.5 NaCl, 3 KCl, 2 CaCl2-2H2O, 1 MgCl2-6H2O, 25 NaHCO3, 1 NaH2PO4-H2O, 25 D-Glucose, pH 7.4 and osmolarity 307 mosmol/kg H2O. Only fetuses that displayed active movements were chosen for experiments. The fetuses selected were then decapitated and the SC preparation was dissected out. Their tails were preserved for subsequent genotyping. An incision was performed on the ventral side of the lumbar cord (between the midline and ventral roots) at the level of lumbar 4–5 (L4-L5) ventral roots, which innervate the extensor muscles, in order to remove the meninges. This exposes the MNs and makes them accessible for the patch-clamp electrode (generally 1–2 MNs recorded in each SC). The SC preparation was placed in a recording chamber and continuously superfused (~1.5 mL·min−1) with oxygenated aCSF. All experiments were carried out at constant temperature (30°C). Experiments were performed blindly without knowing the genotype of the animals. Fetuses were genotyped at the Genotyping Platform at the Magendie Neurocentre (Bordeaux). The genotyping was performed by standard PCR from mice tail samples using established primers and a protocol as stated by the Jackson Laboratory.
 
-## Protein extraction and western blotting (WB)
+### Protein extraction and western blotting (WB)
 
 WB analysis was performed on whole E17.5 lumbar spinal cords. For protein extraction, 15 WT and 15 SOD mice, from four different litters, were used. Each of the 15 lumbar spinal cords were divided into three groups of five lumbar SCs, crushed (micro-potter, PP750ACD), and homogenized with mammalian lysis buffer (Qproteome MammalianProtein Prep Kit, Qiagen) with a phosphatase inhibitor cocktail (Millipore Sigma). Homogenate was incubated (5 min at 4°C), centrifuged (10 min at 4°C to 14,000 RCF) to recover the supernatant from debris and stored 48 hr at −80°C. Total protein concentration in the supernatant solution was determined by the DC protein assay (Bio-Rad) using an iMark microplate reader (Bio-Rad). Briefly, colorimetric technique was used to measure color change proportional to total protein concentration. Based on a determined concentration of total protein, volume of a supernatant solution that contains a desired amount of total protein could be calculated. Then, samples were deposited at −80°C for future use. WB was performed by denaturing the sample at 100°C for 5 min and loading 20 μg of protein of each sample (3 wells of WT and 3 wells of SOD samples) in Mini-PROTEAN TGX Stain-Free Gels (Bio-Rad) with migration buffer (2.5 mM Tris, 19.2 mM Glycine, 0.01% SDS prepared from 10X Tris/Glycine/SDS (Bio-Rad). Molecular weight markers (Precision Plus Protein All Blue Standards, Bio-Rad) were used in each individual gel. Electrophoresis of the samples and MW markers was powered by electrophoresis power supply EPS 600 (Pharmacia Biothe, Sweden) device at 250V. In order to be able to visualize the total proteins (stain free), the gel was activated in ChemiDoc MP imaging system (Bio-Rad). The transfer from gel to mini format 0.2 μm nitrocellulose membrane pack (Bio-Rad) was made using Trans-Blot Turbo Transfer System (Bio-Rad). Once the transfer was confirmed with ChemiDoc MP imaging system, membrane was blocked with 5% milk in tris-buffered saline (Millipore Sigma) containing 2% Tween-20 (Millipore Sigma) (TBST) buffer for 1 hr on agitator (Heidolph, UNIMAX 1010, Germany), and then incubated with primary antibody at 4°C overnight. The primary antibodies used were rabbit polyclonal anti-KCC2 (1:1000, reference Millipore 07–432, Millipore Sigma) or mouse monoclonal anti-NKCC1(1:400, reference T4 from Developmental Studies Hybridoma Bank, The University of Iowa, USA). The next day, membrane was washed 3–5 times using TBST and incubated with goat anti-rabbit or anti-mouse Horseradish Peroxidase (HRP) conjugated secondary antibody diluted to 1:20000 (Euromedex or Bio-Rad) for 1.5 hr at room temperature. After 3–5 rinses in TBST, total proteins on the membrane were visualized using a ChemiDoc MP imaging system (Bio-Rad). Membrane was then incubated 5 min in Clarity western ECL substrate (Bio-Rad) and the KCC2 or NKCC1 protein was visualized using the using the ChemiDoc. Four rounds of WB were run from the same deposited WT and SOD spinal cord samples. The ~140 kDa KCC2 band and ~150 kDa NKCC1 were analyzed.
 
 The stain-free staining of total proteins loaded was used as the normalization control to quantify the KCC2 or NKCC1 band. Quantification was performed using Image Lab (Bio-Rad). Data presented are normalized to mean values from WT samples.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed on frontal sections from lumbar SCs prepared as follows. The mice used were offspring of female Hb9-eGFP mice cross bred with SOD male mice. These mice express GFP in the dendrites and the soma of spinal MNs. The lumbar SC samples of SOD and WT embryos at E17.5 were fixed in 4% paraformaldehyde (PFA) for 2 hr at room temperature. They were rinsed three times with 0.1 M Phosphate Buffer Saline (PBS) and then cryoprotected in 15% sucrose for 24 hr, followed by 30% sucrose for another 24 hr. After placing them in Tissue-Tek (O.C.T. Compound, Sakura Finetek) and freezing, the samples were sliced using a Leica 3050 s Cryostat. Sections (20 µm thickness) were affixed on gelatinized slides and preserved at −25°C until their use. Each slide was rinsed three times with 0.1 M PBS, blocked with a medium containing 2% bovine serum albumin (BSA), then incubated for 48 hr with primary antibodies prepared in PBST (1% triton, BSA 0.2%). We processed the sections with an anti-synaptophysin antibody (1:500, mouse monoclonal, Clone SVP38, Millipore Sigma) coupled either with a rabbit polyclonal antibody directed against the vesicular inhibitory amino acid transporter (1:1000, VIAAT, antibody Provided by B. Gasnier, Paris Descartes University). VIAAT reflects the synaptic release of the GABA and glycine neurotransmitters (Dumoulin et al., 1999). The rabbit polyclonal anti-FoxP1 antibody (1:500, AB2277, Millipore) was also used to assess the LMC identity of recorded MNs (Figure 1—figure supplement 1) (Dasen et al., 2008). For KCC2 staining, we used the rabbit polyclonal anti-KCC2 antibody (1:400, reference Millipore 07–432, Millipore Sigma). After three rinses, slides were incubated for 2 hr at room temperature with a goat anti-rabbit secondary antibody Alexa Fluor 546 (A-11035) and/or goat anti-mouse secondary antibody Alexa Fluor 647 (A-21235) (1:500, Invitrogen, France) and then rinsed with 0.1 M PBS. After rinsing, slides mounted with an anti-fade reagent (Fluoromount, Electron Microscopy Sciences) and stored at 4°C in obscurity until confocal observation.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Samples were visualized either in the laboratory with a BX51 Olympus Fluoview 500 confocal microscope or in the Bordeaux Imaging Center (BIC) with a SP5 Leica. Serial optical sections (thickness 0.2 μm) were obtained using a x60 oil-immersion objective. Lasers were selected according to the wavelength required for visualization. The different transporters and proteins were visualized as spot aggregates. Spots were detected using the spot detector plugin in Icy version 1.8.1.0, a quantitative image analysis program (Institut Pasteur - CNRS UMR 3691). Spots were then quantified and the co-localization of synaptophysin with VIAAT was assessed in the marginal zone edging the MN soma location. The percentage of co-localization was calculated according to the surface of the synaptophysin positive area. The global and membrane KCC2 staining density was assessed using Image J. For the KCC2 membrane staining a specific macro, allowing to delineate the periphery of MNs and quantify the KCC2 staining density, was developed by Sébastien Marais from the BIC. Briefly, the contour of Hb9-eGFP MNs was manually outlined in order to build an area (five pixels on each side of the outline), in which KCC2 punctiform profiles were automatically detected. Density of KCC2 puncta was then calculated as the number of puncta relative to the outline area. Values are expressed as arbitrary unit (AU).
 
-## Electrophysiological procedures and data analysis
+### Electrophysiological procedures and data analysis
 
 Patch-clamp electrodes were constructed from thin-walled single filamented borosilicate glass (1.5 mm outer diameter, Harvard Apparatus, Les Ulis, France) using a two-stage vertical microelectrode puller (PP-830, Narishige, Tokyo, Japan). Patch electrode resistances ranged from 3 to 5 MΩ. All recordings were made with an Axon Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, CA, USA). Data were low-pass filtered (2 kHz) and acquired at 20 kHz on a computer via an analog-to-digital converter (Digidata 1322A, Molecular Devices) and a data acquisition software (Clampex 10.3, Molecular Devices).
 
@@ -163,15 +476,15 @@ In order to elicit evoked IPSCs (eIPSCs) from MNs, a concentric bipolar wire sti
 
 For extracellular recordings of locomotor-like activity, left and right lumbar ventral roots (at the level of L3 to L5) were recorded. Raw signals were collected with a high-gain AC amplifier (ISO-DAM8A-4 Bio-amplifier System, World Precision Instruments Ltd, Stevenage, UK). Filtered (cutoff frequency: 0.3–3 kHz) raw signals were integrated off-line and analyzed using Spike 2 software. Locomotor-like activity was elicited by applying a cocktail of 5-HT 10 µM, NMDA 10 µM and DA (100 µM) (5-HT/NMDA/DA). This cocktail has been previously established (Han et al., 2007; Milan et al., 2014) to evoke stable locomotor-like activity. Two 50 s representative episodes of strongly alternating locomotor-like activity (assessed by the Rayleigh's test) were analyzed in each WT and SOD experiment.
 
-## Pharmacology
+### Pharmacology
 
 In gramicidin perforated experiments and in experiments performed for assessing the KCC2 efficacy, GABAAR responses were isolated by using a cocktail of drugs containing 0.2 μM tetrodotoxin (TTX, Latoxan Laboratory, France), 4 mM kynurenic acid (Millipore Sigma), 10 μM (+)-tubocurarine (Millipore Sigma), 5 μM Dihydro-β-erythroidine hydrobromide (DHβE, Bio-techne, France), and 3 μm strychnine (Millipore Sigma) that respectively blocked voltage-dependent Na+ action potentials, and glutamate, cholinergic, and glycinergic input to MNs. In CsCl experiments, IPSCs were isolated pharmacologically using DL-AP5 40 μM ((2R)-amino-5-phosphonovaleric acid, Bio-techne, France) and CNQX 20 μM (6-cyano-7-nitroquinoxaline-2,3-dione, Bio-techne, France). mIPSCs were isolated in the presence of 0.2 μM TTX (Latoxan, France). GABA and glycine mIPSCs were isolated by adding 3 μM strychnine or 3 μM GABAzine (SR 95531 hydrobromide, Bio-techne, France), respectively. These blockers were added to the cocktail containing 0.2 µM TTX, 4 mM kynurenic acid, 10 μM (+)-tubocurarine and 5 μM DHβE. In experiments assessing the KCC2 efficacy, 10 µM bumetanide (Millipore Sigma) was applied to block NKCC1 and 10 µM VU0240551 (Bio-techne, France) (10 µM) to block KCC2. Serotonin (5-HT, 10 µM), dopamine (DA, 100 µM) and N-Methyl-D-aspartic acid (NMDA, 10 µM) were from Millipore Sigma.
 
-## Membrane properties and data analysis
+### Membrane properties and data analysis
 
 Data analysis was performed using Clampfit 10.6 (Axon Instruments), MiniAnalysis 6.0. or Spike 2. For synaptic event analysis, 100–200 s recording samples were selected from each MN. All selected synaptic events were concatenated for SOD versus WT MNs. After analysis, the information obtained included mean values for event amplitude (pA), taurise (ms), taudecay (ms) as well as inter-event interval (IEI) (ms). The MN capacitance (Cm), membrane input resistance (Rin) and access resistance (Ra) were recorded immediately after establishing whole-cell patch-clamp. The membrane voltage was held at −70 mV as this corresponds to the resting membrane potential of mice MNs at E17.5 (Delpy et al., 2008). As a result, all events appeared as downward events.
 
-## Computer simulations
+### Computer simulations
 
 GABA/glycine synaptic events in E17.5 MNs were simulated using a multi-compartment neuron model that was elaborated with the NEURON 7.3 program (Hines and Carnevale, 1997). Two simulated neurons were constructed: an E17.5 WT-like MN and an E17.5 SOD-like MN (Figure 6—figure supplement 1). These canonical MNs, designed from the average topology of real E17.5 MNs, were built on models used in a previous study (Martin et al., 2013). Both MNs were virtually identical, with similar channels and morphologies, except for the terminal dendritic segments of the SOD-like MN that were 40% less in extent than the WT terminal segments (Martin et al., 2013). In each section (dendrites and axon), the number of segments was an odd number calculated according to the d-lambda rule (Hines and Carnevale, 2001; Carnevale and Hines, 2006). The following conductances were used: a passive leakage current (Ileak), a transient K channel (IA), a voltage-dependent calcium-activated potassium channel (IC) also called IK(Ca) (McLarnon et al., 1995; Gao and Ziskind-Conhaim, 1998) and a high-threshold calcium current (IL) (Walton and Fulton, 1986). Ileak was simulated in each MN section (Ileak = (Eleak-E) • Gleak, with Eleak = −73 mV and Gleak = 1/Rm). Rm, the specific membrane resistance was set to 21200 Ω.cm2, in order to obtain an input resistance of 120 MΩ in the WT MN. IA was present in the axon initial segment (AIS), with GIA = 0.0033 S.cm−2; IC was present in soma, with GIC = 0.0025 S.cm−2. IL was present in the soma, with GIL = 8.10- 5 S.cm−2. Each of the axon segments (n = 750) was equipped with Na and K Hodgkin Huxley (HH) channels (GNa = 0.012 S.cm−2 and GK = 0.0036 S.cm−2, respectively) used to generate spikes. The density of Na and K channels in the initial segment (GNa = 0.5 S.cm−2 and GK = 0.15 S.cm−2) were adjusted in order to obtain a spike threshold of −48 mV for the WT MN (for more details see Appendix 1).
 
@@ -179,6 +492,6 @@ In addition, calcium dynamics (Blaustein, 1988) were added in the soma to reprod
 
 Inhibitory and excitatory synaptic inputs were inserted on the somatic MN compartment using two exponentials equations (one for rising phase and the other for decay phase). Depolarizing GABAergic/glycinergic post-synaptic current kinetics was set with taurise = 0.3 ms and taudecay = 15/20 ms (for WT/SOD, respectively). Excitatory synaptic current kinetics was set with taurise = 0.1 ms and taudecay = 10 ms. Equations concerning channel properties and GABAAR synaptic activation are summarized in the Appendix 1.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 7 software was used to analyze all the data. The results are presented as means ± the standard error of the mean (SEM) unless otherwise specified. n is the number of MNs used in the analysis and N the number of fetuses. Significance was determined as p<0.05 (*), p<0.01 (**), p<0.001 (***) or p<0.001 (***). The difference between the cumulative frequencies was analyzed using the Kolmogorov-Smirnov (K-S) test. The statistical differences between two data sets were assessed with the Mann Whitney test for non-parametric data.

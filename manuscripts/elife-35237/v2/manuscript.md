@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.35237.001 Comparing the brains of related species faces the challenges of establishing homologies whilst accommodating evolutionary specializations. Here we propose a general framework for understanding similarities and differences between the brains of primates. The approach uses white matter blueprints of the whole cortex based on a set of white matter tracts that can be anatomically matched across species. The blueprints provide a common reference space that allows us to navigate between brains of different species, identify homologous cortical areas, or to transform whole cortical maps from one species to the other. Specializations are cast within this framework as deviations between the species’ blueprints. We illustrate how this approach can be used to compare human and macaque brains.
+Comparing the brains of related species faces the challenges of establishing homologies whilst accommodating evolutionary specializations. Here we propose a general framework for understanding similarities and differences between the brains of primates. The approach uses white matter blueprints of the whole cortex based on a set of white matter tracts that can be anatomically matched across species. The blueprints provide a common reference space that allows us to navigate between brains of different species, identify homologous cortical areas, or to transform whole cortical maps from one species to the other. Specializations are cast within this framework as deviations between the species’ blueprints. We illustrate how this approach can be used to compare human and macaque brains.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Our results show how connectivity blueprints can be used for comparative anatomy
 
 ## Results
 
-## Comparing connectivity blueprints can identify homologous areas across brains
+### Comparing connectivity blueprints can identify homologous areas across brains
 
 We first investigated whether the connectivity blueprints could be used to identify known homologs between the two species. Although the early visual areas are present in both humans and macaques, their location and the amount of cortical territory they occupy differs in the two species (Orban et al., 2004). A particularly challenging case is presented by areas sensitive to visual motion. The MT +complex is located in the ventrolateral part of the posterior temporal cortex in the human brain (hMT+; Malikovic et al., 2016), but is located more dorsally in the ventral bank of the posterior superior temporal sulcus in the macaque monkey (Paxinos et al., 2000) (Figure 2, left panel). hMT + can be identified as a region of high myelin in the posterior temporal cortex that can be visualized using the ratio of T1- and T2-weighted MRI scans (Glasser and Van Essen, 2011; Large et al., 2016). The peak of hMT + is reached by tracts associated with the visual system such as the occipital radiations and the ventral occipital fascicle, but also by longitudinal tracts such as the inferior longitudinal fascicle (Yeterian and Pandya, 2010). We created a map of the macaque cortex indicating how different each vertex's connectivity profile was to that of a vertex in hMT+. This map showed the lowest divergence, that is highest similarity, in the ventral bank of the macaque STS, as predicted from the macaque cytoarchitectonic atlas. Thus, comparison of connectivity blueprints can identify homologous areas across brains, even when their relative location has changed.
 
@@ -53,7 +53,7 @@ We first investigated whether the connectivity blueprints could be used to ident
 
 We next tested whether we could predict the location of the human pre-supplementary motor area (pre-SMA), based on macaque area F6. It has been well-established that these two regions share similar functions across the two species (Nachev et al., 2008) and can be matched based on their connectivity profiles (Sallet et al., 2013; Mars et al., 2016). Previous studies, however, matched the regions based on the profile of functional connectivity with known homologous brain regions in frontal and parietal cortex, rather than using white matter tracts that can potentially be identified in all higher primates. We defined macaque area F6 based on the atlas of Markov et al. (2011). Its connectivity fingerprint shows that it receives widespread connections, including from the superior longitudinal fascicle, the cingulum bundle, and the frontal aslant (cf. Thiebaut de Schotten et al., 2012). We determined the Kullback-Leibler (KL) divergence between the connectivity fingerprint of F6 and that of each vertex of the human cortex. This map identified an area of the human medial prefrontal cortex, anterior to the supplementary motor area proper (Figure 2, right panel) and consistent with previous localizations of this area in the human (Nachev et al., 2008; Mars et al., 2016), as most similar to macaque area F6. This result demonstrates that matching connectivity blueprints across species can also be used to predict the location of areas outside early visual cortex.
 
-## Connectivity blueprints can predict organization of the cortical surface across brains
+### Connectivity blueprints can predict organization of the cortical surface across brains
 
 As well as calculating divergence maps for a single vertex or a single area, the approach can be generalized to transform features of organization across the entire cortex between species. One such map that is easily obtainable from neuroimaging is a T1/T2-weighted map, which has been suggested to partly reflect the presence of cortical myelin (Glasser et al., 2014). T1/T2-weighted maps show a number of distinctive features across the human cortical hemisphere that are qualitatively similar to myelination maps, such as high values in primary sensory areas, low values in prefrontal and parietal association cortex, and intermediate values in frontal oculomotor areas. Using the connectivity blueprint as a reference space, we can transform a whole brain map from one species onto the other based on fingerprint similarities (see Materials and methods). We used this approach to predict the T1/T2-weighted map of the macaque cortex based on the same map in humans (Figure 3). The predicted map showed striking similarities to the actual macaque myelin map (Glasser et al., 2014), replicating the high myelin in the primary visual, auditory, and sensorimotor cortex and the low myelin in the prefrontal cortex.
 
@@ -63,7 +63,7 @@ As well as calculating divergence maps for a single vertex or a single area, the
 
 There are also areas in which the predicted macaque T1/T2-weighted map differs from the actual map. For instance, the predicted map showed an intermediate level of myelin in the macaque inferior parietal cortex, whereas in reality this is an area with low myelin content. Thus, there are parts of the cortex whose organization we could not predict well based on the connectivity blueprint. While this could be due to limitations in the methods, it is noticeable that the poorer predictions are mostly located in the association cortex. These are areas whose organization might be unique to one of the two brains studied. We therefore sought to quantify dissimilarity in connectivity profiles between humans and macaques across the entire cortex.
 
-## Connectivity blueprints identify unique aspects of brain organization
+### Connectivity blueprints identify unique aspects of brain organization
 
 We investigated which parts of both the human and macaque brains are unique by creating a map of the distance of each vertex to its closest match in the other species. The greater the distance, the more likely this vertex has a connectivity profile that is not represented in the other species; in other words, the more likely this area has changed in its connectional organization since the last common ancestor of human and macaque. The resulting connectional dissimilarity map showed a large region of human inferior parietal and posterior temporal cortex, precuneus, and to a lesser extent parts of the frontal cortex that could not be predicted from any part of the macaque brain (Figure 4, top panel). Importantly, the between-species predictability did not correlate with any particular aspect of the connectivity fingerprint, such as a map of the entropy of tract distribution (i.e., whether a region is reached strongly by few tracts or equally strongly by multiple tracts) (Figure 4). Similarly, the connectional dissimilarity map overlapped with, but was different to a map of cortical expansion (Van Essen and Dierker, 2007), indicating that reorganization and expansion reflect separate aspects of brain reorganization (Figure 4).
 
@@ -79,7 +79,7 @@ The largest area in the human brain that showed a high connectional dissimilari
 
 Other human areas that have a connectivity fingerprint that was poorly predicted based on the macaque include the medial parietal cortex 7 m and areas in the lateral frontal cortex, including parts of dorsal prefrontal cortex. The medial parietal cortex is reached by the first branch of the superior longitudinal fascicle and this innervation seems stronger in the human brain. Based on shape analysis of structural imaging data of the human and chimpanzee, Bruner and colleagues have suggested that this area is preferentially expanded in the human brain (Bruner et al., 2017). The current results suggest that this expansion is accompanied by a change in connectivity. In the frontal cortex, the forceps minor of the corpus callosum seems stronger in the human than in the macaque, suggesting increased interhemispheric connectivity within the prefrontal cortex in this species.
 
-## Translation of cortical atlases based on the connectivity blueprint
+### Translation of cortical atlases based on the connectivity blueprint
 
 Another application of the blueprint approach to comparative anatomy is to use it to translate between brain atlases. Comparative atlases of different species' brains are rare in neuroscience, with most atlases focusing on a single species without explicit comparisons to others. The blueprint approach, however, can be used to translate between such different atlases. As an example we take the atlases of the human and vervet monkey cortex produced by Brodmann (Brodmann, 1905; Brodmann, 1908) which were converted to the human and macaque monkey surface in the Caret software (Van Essen et al., 2012). Brodmann labeled cytoarchitectonic areas in both species, but the labeling was not meant to indicate homologies (Brodmann, 1909; Petrides et al., 2012). We calculated the divergence between Brodmann areas in the two species and illustrated their similarities by projecting them to the same 2D space using spectral reordering (Higham et al., 2007) (Figure 6). At the gross level, this showed that regions within similar cortical systems group together in the 2D representation across the species. For instance, macaque primary visual areas 17 and 18 showed the smallest distance to human visual areas 17 and 18 and greatest to areas 24 and 25 belonging to the cingulate cortex and early sensorimotor areas 3 and 4 that do not receive any direct visual projections. Similarly, areas 23, 24, and 25, all reached by the cingulum bundle, tended to cluster together.
 
@@ -105,38 +105,48 @@ In summary, a connectivity blueprint approach to comparative anatomy can allow u
 
 ## Materials and methods
 
-## Macaque data
+### Macaque data
 
 Four post-mortem macaque diffusion MRI datasets were used. Data from one male macaque (Macaca fascicularis) from a previous study (de Crespigny et al., 2005) were obtained and preprocessed as described in Jbabdi et al. (2013). Relevant imaging parameters were: 4.7T Oxford magnet equipped with BGA12 gradients; 3D segmented spin-echo EPI (430 um isotropic resolution, eight shots, TE = 33 ms, TR 350 ms, 120 isotropically distributed diffusion directions, b-value = 8000 s/mm2.
 
 Three additional macaque (Macaca mulatta) datasets (two male) were acquired locally on a 7T magnet with an Agilent DirectDrive console (Agilent Technologies, Santa Clara, CA, USA) using a 2D diffusion-weighted spin-echo protocol with single line readout (DW-SEMS, TE/TR: 25 ms/10 s; matrix size: 128 × 128; resolution: 0.6 x 0.6 mm; number of slices: 128; slice thickness: 0.6 mm). In these three monkeys, nine non-diffusion-weighted (b = 0 s/mm2) and 131 diffusion-weighted (b = 4000 s/mm2) volumes were acquired with diffusion directions distributed over the whole sphere. The brains were soaked in PBS before scanning and placed in fomblin during the scan. The b = 0 images were averaged and spatial signal inhomogeneities were restored. Diffusion-weighted images were processed using FMRIB's Diffusion Toolbox, first to fit diffusion tensors and estimate the mean diffusivity and fractional anisotropy, followed by voxel-wise model fitting of diffusion orientations using BedpostX, using a crossing fiber model limited to three fiber directions (Behrens et al., 2007).
 
-## Human data
+### Human data
 
 Human in-vivo data was obtained from the minimally pre-processed data provided by the Human Connectome Project (www.humanconnectome.org) (Van Essen et al., 2013). All acquisition parameters and processing pipelines are described in detail in Uğurbil et al. (2013), Sotiropoulos et al. (2013), and Glasser et al. (2013). The diffusion MRI data consisted of three shells (b-values = 1000, 2000, and 3000 s/mm2) with 270 diffusion directions equally spread amongst the shells, and six b = 0 s/mm2 acquisitions within each shell, with a spatial resolution of 1.25 mm isotropic voxels. Ten subjects were chosen randomly from the Q900 data release. Data were pre-processed with the HCP pipeline, which involves susceptibility-induced distortion correction (Andersson et al., 2003) and eddy-current distortion and motion correction (Andersson and Sotiropoulos, 2016). A crossing fibre model adapted to multi-shell data (Jbabdi et al., 2012) was fitted to the data prior to tractography.
 
-## Surfaces
+### Surfaces
 
 Models of the cortical surface were used for both humans and monkeys, including the pial surface and the white-gray matter interface. For humans, individual surface models were used, as provided through the HCP pipeline (Glasser et al., 2013), based on a Freesurfer surface reconstruction (Dale et al., 1999). For the macaque, we used surface reconstructions of one macaque with high quality structural MRI and nonlinearly (FSL’s FNIRT) warped the other three macaque brains to enable using the same surface models in all four macaques. Macaque surfaces were then transformed to F99 standard space (Van Essen, 2002) to facilitate the combination of tractography results. All the surfaces (macaque and human) were downsampled from ~32 to ~10 k vertices prior to tractography analyses.
 
-## Extracting the anatomical blueprint
+### Extracting the anatomical blueprint
 
 Probabilistic diffusion tractography (Behrens et al., 2007) as implemented in FSL's probtrackx2 was used to extract the anatomical blueprints of macaques and humans. We extended an automated tractography tool (autoPtx, De Groot et al., 2013) to include a set of 39 major white matter bundles (18 on each hemisphere, and three cross-hemispheric pathways). Each bundle was reconstructed using a set of seed/inclusion/exclusion masks drawn in standard space (MNI152 for humans and F99 for macaques [Van Essen, 2002]). Tractography protocols for building the blueprints, code, and results are available for download from Gitlab at https://git.fmrib.ox.ac.uk/rmars/comparing-connectivity-blueprints.git (Jbabdi et al., 2018); copy archived at https://github.com/elifesciences-publications/rmars-comparing-connectivity-blueprints ).
 
-## Creating connectivity blueprints
+### Creating connectivity blueprints
 
 As shown in Figure 1, a connectivity blueprint consists of a (cortex) x (tracts) matrix where the tracts dimension is shared across both species. We build this matrix in two steps. First, we create a (cortex) x (whole brain) matrix by seeding probabilistic streamlines in standard space from every cortical vertex and recording the number of samples reaching each brain voxel (at 1 mm/2 mm resolution for F99 macaque/MNI152 human). This is done using the ‘matrix2’ mode in probtrackx2. Second, we multiplied the resulting matrix with a (brain) x (tracts) matrix, thus creating a (cortex) x (tracts) matrix. Rows of this matrix can be interpreted (once normalized to sum to one) as the probability distribution of streamlines from a given vertex to connect to each of the 39 tracts.
 
-## Comparing connectivity blueprints
+### Comparing connectivity blueprints
 
 We here introduce some mathematical notation: let M and H be the connectivity blueprint matrices for macaques and humans. For example, Mik quantifies the probability that vertex i in the macaque cortex connects to tract k. We normalize the rows of M and H to sum to 1, thus turning the rows into a discrete probability distribution.
 
-To compare the fingerprint of vertex i in macaque to vertex j in humans, we use the symmetric Kullback-Leibler (KL) divergence (Kullback and Leibler, 1951) as a dissimilarity measure:Dij=∑kMiklog2⁡MikHjk+∑kHjklog2⁡HjkMik
+To compare the fingerprint of vertex i in macaque to vertex j in humans, we use the symmetric Kullback-Leibler (KL) divergence (Kullback and Leibler, 1951) as a dissimilarity measure:
+
+$$
+D_{ij}=\sumkM_{ik}log_{2}⁡\frac{M_{ik}}{H_{jk}}+\sumkH_{jk}log_{2}⁡\frac{H_{jk}}{M_{ik}}
+$$
 
 Similarly, the same distance measure can be used to compare two vertices within species.
 
-## Mapping between species
+### Mapping between species
 
 The similarity matrix calculated above can be used to transform a map from one species to the other using distance weighted interpolation (as done to map the myelin map from human to macaque in the Results section).
 
-Given a map on the human cortex hi where i indexes vertices, we obtain a transformed macaque map m as follows:mj=∑Djiγhi∑Djiγwhere we used γ=−4.
+Given a map on the human cortex hi where i indexes vertices, we obtain a transformed macaque map m as follows:
+
+$$
+m_{j}=\frac{\sumD_{ji}^{\gamma}h_{i}}{\sumD_{ji}^{\gamma}}
+$$
+
+where we used $\gamma=−4.$

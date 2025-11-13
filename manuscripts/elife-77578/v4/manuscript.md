@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States
-2. https://ror.org/04zrf7b53 Division of Neurobiology and Zoology, Department of Biology, University of Kaiserslautern Kaiserslautern Germany
-3. https://ror.org/04zrf7b53 Physiology of Neuronal Networks Group, Department of Biology, University of Kaiserslautern Kaiserslautern Germany
-4. https://ror.org/00za53h95 Solomon Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States
+1. Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Division of Neurobiology and Zoology, Department of Biology, University of Kaiserslautern Kaiserslautern Germany ([ROR:04zrf7b53](https://ror.org/04zrf7b53))
+3. Physiology of Neuronal Networks Group, Department of Biology, University of Kaiserslautern Kaiserslautern Germany ([ROR:04zrf7b53](https://ror.org/04zrf7b53))
+4. Solomon Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -40,33 +40,213 @@ Here, we generate a realistic computational model of a core KC>MBON module that 
 
 ## Results
 
-## Electrophysiological characterization of MBON-α3
+### Electrophysiological characterization of MBON-α3
 
-MBON-α3 is particularly suitable for computational modeling due to the availability of its complete dendritic reconstruction through electron microscopy (Takemura et al., 2017). In addition, we can access MBON-α3 genetically by using a specific Gal4 line (MB082C-Gal4) to label MBON-α3 by the expression of membrane-bound GFP (10xUAS-IVS-mCD8::GFP; Figure 1A). In immunohistochemical co-labelings with the active zone marker Bruchpilot (Brp), we were able to visualize the dendritic input sites, the axonal projections and the cell soma of MBON-α3 (Figure 1A, arrow). We used this labeling to perform fluorescence-guided electrophysiological whole-cell patch-clamp recordings of this neuron ex vivo (Figure 1C and D). We carried out standard patch-clamp protocols in five cells of independent preparations and recorded all essential physiological parameters (Table 1). It is of note that we cannot discriminate between the two different MBON-α3 cells that are marked by the split Gal4 line and that are almost identical with regard to their dendritic tree position and synaptic input number (Takemura et al., 2017). First, we performed a continuous current-clamp protocol over 60⁢s at a sampling rate of 50⁢k⁢H⁢z which allowed us to determine the average resting membrane potential as -56.7±2.0⁢m⁢V. This value for the resting membrane potential is in line with prior measurements of MBONs in vivo and of other central neurons in Drosophila (Hige et al., 2015a; Wilson et al., 2004; Gu and O’Dowd, 2006; Groschner et al., 2022). In these recordings, we observed spontaneous firing activity of MBON-α3 with an average frequency of 12.1⁢H⁢z. Next, we performed a current-clamp de- and hyper-polarization protocol where we recorded 400⁢m⁢s trials at a sampling rate of 50⁢k⁢H⁢z. Each trial started with 0⁢p⁢A for 10⁢m⁢s, followed by a current injection of -26⁢p⁢A to 32⁢p⁢A, with 2⁢p⁢A increments for 400⁢m⁢s. These protocols allowed us to evoke action potentials and to determine the resulting changes in membrane potential. An example displaying selected traces of a representative recording is shown in Figure 1F. Two additional examples are illustrated in Figure 1—figure supplement 1. From this data, we determined the average membrane time constant as τm=16.06±2.3⁢m⁢s. We then performed a voltage-clamp step protocol without compensating for the series resistance. In this experiment, we recorded at 20⁢k⁢H⁢z while applying a 5⁢m⁢V voltage step for 100⁢m⁢s. This allowed us to calculate the average membrane resistance as Rm=926±55⁢M⁢Ω, a rather high membrane resistance when compared to similarly sized neurons (Gouwens and Wilson, 2009). MBON-α3 is thus highly excitable, with small input currents being sufficient to significantly alter its membrane potential.
+MBON-α3 is particularly suitable for computational modeling due to the availability of its complete dendritic reconstruction through electron microscopy (Takemura et al., 2017). In addition, we can access MBON-α3 genetically by using a specific Gal4 line (MB082C-Gal4) to label MBON-α3 by the expression of membrane-bound GFP (10xUAS-IVS-mCD8::GFP; Figure 1A). In immunohistochemical co-labelings with the active zone marker Bruchpilot (Brp), we were able to visualize the dendritic input sites, the axonal projections and the cell soma of MBON-α3 (Figure 1A, arrow). We used this labeling to perform fluorescence-guided electrophysiological whole-cell patch-clamp recordings of this neuron ex vivo (Figure 1C and D). We carried out standard patch-clamp protocols in five cells of independent preparations and recorded all essential physiological parameters (Table 1). It is of note that we cannot discriminate between the two different MBON-α3 cells that are marked by the split Gal4 line and that are almost identical with regard to their dendritic tree position and synaptic input number (Takemura et al., 2017). First, we performed a continuous current-clamp protocol over $60⁢s$ at a sampling rate of $50⁢k⁢H⁢z$ which allowed us to determine the average resting membrane potential as $-56.7\pm2.0⁢m⁢V$. This value for the resting membrane potential is in line with prior measurements of MBONs in vivo and of other central neurons in Drosophila (Hige et al., 2015a; Wilson et al., 2004; Gu and O’Dowd, 2006; Groschner et al., 2022). In these recordings, we observed spontaneous firing activity of MBON-α3 with an average frequency of $12.1⁢H⁢z$. Next, we performed a current-clamp de- and hyper-polarization protocol where we recorded $400⁢m⁢s$ trials at a sampling rate of $50⁢k⁢H⁢z$. Each trial started with $0⁢p⁢A$ for $10⁢m⁢s$, followed by a current injection of $-26⁢p⁢A$ to $32⁢p⁢A$, with $2⁢p⁢A$ increments for $400⁢m⁢s$. These protocols allowed us to evoke action potentials and to determine the resulting changes in membrane potential. An example displaying selected traces of a representative recording is shown in Figure 1F. Two additional examples are illustrated in Figure 1—figure supplement 1. From this data, we determined the average membrane time constant as $\tau_{m}=16.06\pm2.3⁢m⁢s$. We then performed a voltage-clamp step protocol without compensating for the series resistance. In this experiment, we recorded at $20⁢k⁢H⁢z$ while applying a $5⁢m⁢V$ voltage step for $100⁢m⁢s$. This allowed us to calculate the average membrane resistance as $R_{m}=926\pm55⁢M⁢Ω$, a rather high membrane resistance when compared to similarly sized neurons (Gouwens and Wilson, 2009). MBON-α3 is thus highly excitable, with small input currents being sufficient to significantly alter its membrane potential.
 
-The amplitude of action potentials was rather small (4.3±0.029⁢m⁢V) but similar to previously reported values for different MBONs (Hige et al., 2015a). The small amplitudes are likely a result of the unipolar morphology of the neuron with a long neurite connecting the dendritic input region to the soma (see below). As a result, signal propagation may partially bypass the soma (Figure 1A, B and F; Gouwens and Wilson, 2009). We calculated the neuron’s membrane capacitance (Cm=τm/R⁢m) as Cm=16.76±1.90⁢p⁢F, which classifies MBON-α3 as a mid-sized neuron.
+![Figure 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-v4.jpg)
 
-To enable the calibration of the in silico model, we then recorded 35 trials per cell in a current-clamp injection protocol with injections of 10⁢p⁢A current pulses for 200⁢m⁢s at a sampling rate of 20⁢k⁢H⁢z. We averaged 105 traces from three selected example cells to a standard curve, describing the membrane kinetics of MBON-α3 in response to current injections (Figure 1G). To further characterize MBON-α3, we analyzed the resulting data from the current-clamp de- and hyper-polarization protocols in the three example cells (Figure 1F and Figure 1—figure supplement 1). We recorded the absolute deflection, the action potential firing frequency, and the amplitude of action potentials for all individual cells. In all three cells, we observed that the absolute deflection of the membrane potential was proportional to the increasing current injections (Figure 1H). The action potential firing frequency increased gradually with increasing membrane potential deflections (Figure 1I), with no significant change in action potential amplitudes (Figure 1J). The same effect was observed with an increasing current injection (Figure 1—figure supplement 1). This is consistent with the general idea that action potentials are "all or nothing" events, and that MBON-α3 is a spike-frequency adapting neuron constistent with prior observations of other MBONs (Hige et al., 2015a). We repeated these recordings with a cytosolic EGFP as an independent and non-membrane associated marker and observed consistent results (Figure 1—figure supplement 2 and Table 1—source data 1). We next used these data to generate an in silico model based on realistic passive membrane properties.
+**Figure 1.:** (A) Immunohistochemical analysis of the MBON-α3 (green, marked by GFP expression) reveals the unique morphology of the MBON with its dendritic tree at the tip of the α-lobe and the cell soma (arrowhead) at a ventro-medial position below the antennal lobes. The brain architecture is revealed by a co-staining with the synaptic active zone marker Bruchpilot (Brp, magenta). (B) Artificial superimposition of a partial rendering of MBON-α3 (green) and of $\alpha⁢\beta⁢\gamma$-KCs (magenta) to illustrate KC>MBON connectivity. A simplified schematic $\alpha⁢\beta$-KC projection is illustrated in white. (C) Transmitted light image of an MBON-α3 cell body attached to a patch pipette. (D) Visualisation of the GFP-expression of MBON-α3 that was used to identify the cell via fluorescence microscopy. The patch pipette tip is attached to the soma (right side). The scale bar in C applies to C and D. (E) Recording of spontaneous activity of an MBON-α3 neuron in current clamp without current injection. (F) Recording of evoked neuronal activity of an MBON-α3 neuron with step-wise increasing injection of $400⁢m⁢s$ current pulses. Pulses start at $-26⁢p⁢A$ (bottom) with increasing $2⁢p⁢A$ steps and end at $+32⁢p⁢A$ (top). (G) Mean trace of the induced membrane polarization resulting from a $200⁢m⁢s$ long current injection of $-10⁢p⁢A$. 105 trials from three different cells (35 each) were averaged. Gray shading indicates the SD. (H) Relative change of membrane potential after current injection. Vm is equal to the maximum depolarization of the membrane. (I) Correlation between the frequency of action potential firing and changes in membrane potential. (J) Relative change of spike amplitude after current injections. Spike amplitude represents the peak of the largest action potential minus baseline. Also see Figure 1—figure supplement 1 and Figure 1—figure supplement 2.
 
-## Constructing an in silico model of MBON-α3
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** Second (A) and third (B) example cells for the evoked neuronal activity of MBON-α3 through a step-wise increasing injection of $400⁢m⁢s$ current pulses. Pulses start at $-26⁢p⁢A$ (bottom) with increasing $2⁢p⁢A$ steps and end at $+32⁢p⁢A$ (top). (C) Correlation between frequency of action potential firing and injected current. The frequency describes action potentials per second. (D) Relative change of spike amplitude after current injections. Spike amplitude corresponds to the peak of the highest action potential minus baseline. (E) Change of membrane potential relative to the resting membrane potential after current injection. ΔVm is equal to the maximum depolarisation minus the resting membrane potential.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (A) MBON-α3 was identified for patch-clamp recordings using either mCD8::GFP (data in B-D) or cytoplasmic EGFP (data in E-H). (B–H) Raw traces of the induced membrane polarization resulting from a $200⁢m⁢s$ long current injection of $-10⁢p⁢A$. (I) Comparison of the mean traces of the three cells recorded using mCD8::GFP (B-D, red) and the four cells recorded using EGFP (E-H, blue). Blue and red shadings indicate the SD. (J) Exemplary illustration of the procedure to determine the membrane time constant tau. All parameters used to calculate $\tau_{m}$ are highlighted. The first vertical dashed line is defined as the time ($t_{1}$) when the current injection starts. The second line ($t_{2}$) is when the voltage has decayed to $(V⁢m⁢(t_{1})+(Δ⁢V⁢m/e))$, where $Δ⁢V⁢m$ is the difference between $V⁢(t_{1})$ and the asymptotic voltage, and $e$ is the base of the natural logarithm. Thus, at $t_{2}$, the deflection is at 1/e of the maximum deflection. (K) Comparison of $200⁢m⁢s$ and $400⁢m⁢s$ current injections of $-10⁢p⁢A$ from an example cell (cell 1’). No significant difference for $\tau_{m}$ could be detected between the two stimulation protocols.
+
+**Table 1.**
+ Summary of passive membrane properties of MBON-α3, calculated from electrophysiological measurements from five neurons.Table 1—source data 1.Summary of the passive membrane properties of MBON-α3, calculated from electrophysiological measurements from four neurons marked by cytoplasmic EGFP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>V⁢m⁢[m⁢V]</th>
+      <th>τm⁢[m⁢s]</th>
+      <th>Cm⁢[p⁢F]</th>
+      <th>Cs⁢p⁢e⁢c⁢[μ⁢F/c⁢m2]</th>
+      <th>Cp⁢a⁢s⁢s⁢[S/c⁢m2]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell 1</td>
+      <td>–59.2</td>
+      <td>13.54</td>
+      <td>12.35</td>
+      <td>0.200</td>
+      <td>1.87×10−5</td>
+    </tr>
+    <tr>
+      <td>Cell 2</td>
+      <td>–52.3</td>
+      <td>14.46</td>
+      <td>20.79</td>
+      <td>0.337</td>
+      <td>2.12×10−5</td>
+    </tr>
+    <tr>
+      <td>Cell 3</td>
+      <td>–56.2</td>
+      <td>24.58</td>
+      <td>21.60</td>
+      <td>0.350</td>
+      <td>1.48×10−5</td>
+    </tr>
+    <tr>
+      <td>Cell 4</td>
+      <td>–52.8</td>
+      <td>15.50</td>
+      <td>15.83</td>
+      <td>0.257</td>
+      <td>1.66×10−5</td>
+    </tr>
+    <tr>
+      <td>Cell 5</td>
+      <td>–63.1</td>
+      <td>12.20</td>
+      <td>13.21</td>
+      <td>0.214</td>
+      <td>1.76×10−5</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>–56.7</td>
+      <td>16.06</td>
+      <td>16.76</td>
+      <td>0.272</td>
+      <td>1.78×10−5</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>4.5</td>
+      <td>4.92</td>
+      <td>4.26</td>
+      <td>0.069</td>
+      <td>0.24×10−5</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>2.0</td>
+      <td>2.20</td>
+      <td>1.90</td>
+      <td>0.031</td>
+      <td>0.11×10−5</td>
+    </tr>
+  </tbody>
+</table>
+
+The amplitude of action potentials was rather small ($4.3\pm0.029⁢m⁢V$) but similar to previously reported values for different MBONs (Hige et al., 2015a). The small amplitudes are likely a result of the unipolar morphology of the neuron with a long neurite connecting the dendritic input region to the soma (see below). As a result, signal propagation may partially bypass the soma (Figure 1A, B and F; Gouwens and Wilson, 2009). We calculated the neuron’s membrane capacitance ($C_{m}=\tau_{m}/R⁢m$) as $C_{m}=16.76\pm1.90⁢p⁢F$, which classifies MBON-α3 as a mid-sized neuron.
+
+To enable the calibration of the in silico model, we then recorded 35 trials per cell in a current-clamp injection protocol with injections of $10⁢p⁢A$ current pulses for $200⁢m⁢s$ at a sampling rate of $20⁢k⁢H⁢z$. We averaged 105 traces from three selected example cells to a standard curve, describing the membrane kinetics of MBON-α3 in response to current injections (Figure 1G). To further characterize MBON-α3, we analyzed the resulting data from the current-clamp de- and hyper-polarization protocols in the three example cells (Figure 1F and Figure 1—figure supplement 1). We recorded the absolute deflection, the action potential firing frequency, and the amplitude of action potentials for all individual cells. In all three cells, we observed that the absolute deflection of the membrane potential was proportional to the increasing current injections (Figure 1H). The action potential firing frequency increased gradually with increasing membrane potential deflections (Figure 1I), with no significant change in action potential amplitudes (Figure 1J). The same effect was observed with an increasing current injection (Figure 1—figure supplement 1). This is consistent with the general idea that action potentials are "all or nothing" events, and that MBON-α3 is a spike-frequency adapting neuron constistent with prior observations of other MBONs (Hige et al., 2015a). We repeated these recordings with a cytosolic EGFP as an independent and non-membrane associated marker and observed consistent results (Figure 1—figure supplement 2 and Table 1—source data 1). We next used these data to generate an in silico model based on realistic passive membrane properties.
+
+### Constructing an in silico model of MBON-α3
 
 For our in silico model of MBON-α3, we used the recently published electron-microscopy-based connectome of the Drosophila mushroom body (Takemura et al., 2017). This dataset includes the precise morphological parameters of the entire dendritic tree including the precise location data for all 12,770 synaptic connections from the 948 innervating KCs. It is important to note that this dataset represents a single fly and the EM-based reconstruction was not able to faithfully assign all synaptic connections (potentially missing 10% of synapses; Takemura et al., 2017). The comparison with the hemibrain data set (Scheffer et al., 2020) that provides a second independent reconstruction of the MBON from a different fly showed very few differences in KC to MBON-α3 connectivity. Thus, despite potential shortcomings, this dataset represents the most accurate template to reconstruct the dendritic tree and connectivity of the MBON. To build a complete morphological reconstruction of MBON-α3, we included the axonal reconstructions from the hemibrain dataset (Scheffer et al., 2020) and determined the length of the connection between the soma and the dendritic region via confocal light microscopy. We incorporated these data together with all other values into the NEURON simulation environment (Hines and Carnevale, 1997; Figure 2A and C and Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-v4.jpg)
+
+**Figure 2.:** (A) Electron microscopy based reconstruction of MBON-α3. Data was obtained from NeuPrint (Takemura et al., 2017) and visualized with NEURON (Hines and Carnevale, 1997). Data set MBON14 (ID 54977) was used for the dendritic architecture (A–C) and MBON14(a3)R (ID 300972942) was used to model the axon (light gray) and synaptic terminal (dark gray, A, C). The proximal neurite (bright green) was defined as the proximal axonal region next to the dendritic tree. This is the presumed site of action potential generation. Connectivity to the soma (blue) is included for illustration of the overall morphology and is not drawn to scale. (B) A magnified side view of the dendritic tree of MBON-α3. Within the dendritic tree a total of 4336 individual membrane sections were defined (light gray area). The 3121 membrane sections that contain one or more of the 12,770 synaptic input sites from the 948 innervating KCs are highlighted in magenta. (C) Simplified in silico model of MBON-α3 highlighting the size of the individual neuronal segments. We simulated recordings at the proximal neurite (specified as the potential site of action potential generation based on morphological parameters; this area is still included in the dendritic tree reconstruction of Takemura et al., 2017) or at the soma. Values for the different sections are provided in Figure 2—figure supplement 1, Figure 2—source data 1. (D) Normalized trace of a simulated membrane polarization after injection of a $200⁢m⁢s$ long square-pulse current of $-10⁢p⁢A$ at the soma. (E) Normalized and averaged experimental traces (blue) with standard deviation (light blue) of our measured depolarization. (F) Comparison of a normalized induced depolarization from the model (red) and from the experimental approach (black). The model was fitted within the NEURON environment to the measured normalized mean traces with a mean squared error between model and measured data of $0.048⁢m⁢V^{2}$. Also see Figure 2—figure supplement 1, Figure 2—figure supplement 2 and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** The pink and brown sections represent the presynaptic release sites of MBON-α3. Color-coded electron-microscopy based reconstruction (A) and in silico model (B). The reconstruction of the hemibrain did not include the complete axonal area (yellow) and the soma. (B) illustrates the appended sections and the corresponding diameter and lengths. The soma diameter (black) and axon length (yellow) were estimated from confocal microscopy images and literature. Values of individual segments are presented Figure 2—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-figsupp2-v4.jpg)
+
+**Figure 2—figure supplement 2.:** We hypothesize that this behavior is a reflection of the cell’s morphology, shown in panel A of that Figure, as well as in Figure 2—figure supplement 1. In the experiment, as well as in the simulation, current is injected into the soma and recorded there. The soma is a relatively small compartment, with small membrane area. It is connected via a long, thin neurite with the rest of the cell which has a substantially larger membrane area. Current injection charges the somatic capacitance very quickly, leading to a rapid change in the somatic voltage at each current step, while the rest of the cell reacts on a much larger time scale. This is visible by the small ‘kink’ right after each change in the injected constant current, Figure 2D. (A) Highly simplified schematic circuit of the cell. The soma is represented by the RC circuit consisting of a $1⁢G⁢Ω$ resistor and a $1.5⁢p⁢F$ capacitor. The time constant of this circuit is very short $1.5⁢m⁢s$. The neurite connecting it to the rest of the cell (axon and dendrites) is represented by a $100⁢M⁢Ω$ resistor. The rest of the cell is represented by the second RC circuit ($1⁢G⁢Ω$ resistor and $15⁢p⁢F$ capacitor) with a time constant exceeding that of the soma by a factor of ten. (B) Simulated current step protocol in the simplified circuit, with negative current injected for $≈5⁢m⁢s$ and then removed (red bar). The somatic voltage (green trace) shows the fast change at start and end of the current injection, followed by a slower near-exponential trace. This Link to the circuit simulator allows the reader to simulate the circuit shown in (A). Closing the switch, by clicking on its symbol, starts the $-10⁢p⁢A$ current injection and shows the soma voltage, that is the voltage over the $1.5⁢p⁢F$ capacitor. Opening the switch (by clicking on the symbol again) results in the circuit returning to its equilibrium state. The voltage trace (green) displays the two characteristic times of the coupled circuit. To ensure long-term access to the circuit simulation, we captured a web archive snapshot of the web app. (C) The two time scales are visible in the electrophysiologically recorded raw (not averaged) voltage, in fact more clearly than in the averaged data in Figure 2D, E and F. Shown here are two representative voltage traces recorded from cell 1 in Figure 1—figure supplement 2B.
+
 Based on the published vector data (Takemura et al., 2017) we subdivided the dendritic tree into 4336 linear sections, of which 3121 are postsynaptic to one or more of the 12,770 synaptic contacts from 948 KCs (Figure 2B). We used linear cable theory (Niebur, 2008) to generate the in silico model of MBON-α3. Linear cable theory is the baseline model for neurites and the most rational approach in the absence of detailed information about potential nonlinear currents.
 
-In previous simulations of Drosophila neurons, the kinetics of membrane polarisation as a response to current injections were adjusted to in vivo measurements through a fitting procedure (Gouwens and Wilson, 2009). We first defined the boundaries of the passive membrane parameters within NEURON’s PRAXIS (principle axis) optimization algorithm and incorporated the experimentally defined passive membrane properties (Table 1). We then determined the biophysical parameters of the in silico neuron by current step injections of -10⁢p⁢A for 200⁢m⁢s at the soma and by recording the neuronal voltage traces. This enabled us to fit the membrane parameters of our model neuron to the experimental data of the three example cells (Figure 2E). The biophysical parameters that resulted from the fitting procedure are provided in Table 2.
+In previous simulations of Drosophila neurons, the kinetics of membrane polarisation as a response to current injections were adjusted to in vivo measurements through a fitting procedure (Gouwens and Wilson, 2009). We first defined the boundaries of the passive membrane parameters within NEURON’s PRAXIS (principle axis) optimization algorithm and incorporated the experimentally defined passive membrane properties (Table 1). We then determined the biophysical parameters of the in silico neuron by current step injections of $-10⁢p⁢A$ for $200⁢m⁢s$ at the soma and by recording the neuronal voltage traces. This enabled us to fit the membrane parameters of our model neuron to the experimental data of the three example cells (Figure 2E). The biophysical parameters that resulted from the fitting procedure are provided in Table 2.
 
-We obtained membrane kinetics that closely resemble ex vivo current injections of -10⁢p⁢A, with a mean squared error between model and measured data of 0.0481⁢m⁢V2. For comparison, we normalized both the modelled current injection (Figure 2D) and the average of the traces from the ex vivo recordings (Figure 2E) and overlayed the resulting traces in Figure 2F.
+**Table 2.**
+ Electrophysiological values applied for the in silico model of MBON-α3-A.Parameter values were obtained from literature or were based on the fitting to our electrophysiological data. The first column shows the parameters, with the names used in the NEURON environment in parentheses. The maximal conductance was determined to achieve the target MBON depolarization from monosynaptic KC innervation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Electrophysiological Properties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable</td>
+      <td>Description</td>
+      <td>Fitted</td>
+      <td>Literature</td>
+    </tr>
+    <tr>
+      <td>Ra (Ra)</td>
+      <td>Cytoplasm resistivity [Ω×c⁢m]</td>
+      <td>85.41</td>
+      <td>30–400 (Borst and Haag, 1996; Gouwens and Wilson, 2009)</td>
+    </tr>
+    <tr>
+      <td>Cm (cm)</td>
+      <td>Specific membrane capacitance [μ⁢F/c⁢m2]</td>
+      <td>0.6961</td>
+      <td>0.6–2.6 (Borst and Haag, 1996)</td>
+    </tr>
+    <tr>
+      <td>gp⁢a⁢s (pas.g)</td>
+      <td>Passive membrane conductance [S/c⁢m2]</td>
+      <td>9.399×10-6</td>
+      <td>3.8×10-5-1.2×10-4 (Cassenaer and Laurent, 2007)</td>
+    </tr>
+    <tr>
+      <td>ep⁢a⁢s (pas.e)</td>
+      <td>Leak reversal potential [m⁢V]</td>
+      <td>–55.64</td>
+      <td>–60 (Berger and Crook, 2015)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Synaptic Parameters</td>
+    </tr>
+    <tr>
+      <td>τs (tau)</td>
+      <td>Time to max. conductance [m⁢s]</td>
+      <td>N.A.</td>
+      <td>0.44 (Su and O’Dowd, 2003)</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>Synaptic current reversal potential [m⁢V]</td>
+      <td>N.A.</td>
+      <td>8.9 (Su and O’Dowd, 2003)</td>
+    </tr>
+    <tr>
+      <td>Gm⁢a⁢x (gmax)</td>
+      <td>Maximal conductance [μ⁢m⁢h⁢o ]</td>
+      <td>N.A.</td>
+      <td>1.5627×10-5 (Hige et al., 2015b)</td>
+    </tr>
+  </tbody>
+</table>
+
+We obtained membrane kinetics that closely resemble ex vivo current injections of $-10⁢p⁢A$, with a mean squared error between model and measured data of $0.0481⁢m⁢V^{2}$. For comparison, we normalized both the modelled current injection (Figure 2D) and the average of the traces from the ex vivo recordings (Figure 2E) and overlayed the resulting traces in Figure 2F.
 
 Note that the faster voltage change at the onset and offset of the current injection seen in the simulation is caused by the small size of the soma which results in a much faster ‘local’ somatic time constant than that of the whole cell (Figure 2—figure supplement 2). This is also visible in the average of the recorded traces (Figure 2F), but more obvious in individual (not trial-averaged) recorded traces (Figure 2—figure supplement 2C). Overall, these results indicate that we were able to generate a realistic in silico model of MBON-α3.
 
-## Effect of KC>MBON synaptic inputs
+### Effect of KC>MBON synaptic inputs
 
-As KCs are cholinergic (Barnstedt et al., 2016) we utilized previously determined parameters of cholinergic synapses to simulate synaptic input to MBON-α3. We used a reversal potential of 8.9⁢m⁢V and a synaptic time constant τs=0.44⁢m⁢s as target values (Su and O’Dowd, 2003). Individual synaptic contacts were simulated as alpha functions (gm⁢a⁢x⁢(t-ti)×exp⁡(-(t-ti-τs)/τs)) where ti is the time of the incoming spike and gm⁢a⁢x=1.56×10-11⁢S, chosen to obtain response levels in agreement with the target values. The average number of synaptic contacts from a KC to this MBON is 13.47 (Takemura et al., 2017), Figure 4B. To determine the computational constraints of MBON-α3, we first stimulated each of the 3,121 dendritic sections that receive KC synaptic innervation using the described alpha-function conductance change. We then "recorded" (from our simulation) the resulting voltage excursions at the dendritic input site (Figure 3A, red), at the proximal neurite (putative action potential initiation site, green) and at the cell soma (blue). The comparative analysis of the responses at these three locations revealed two notable features: (1) voltage excursions directly within the dendrite are faster and substantially larger than in the proximal neurite and soma, and (2), the resulting voltages in the latter two compartments are much less variable than in the dendrite and distributed within a very small voltage range (Figure 3D and E). These results indicate that the morphological architecture and biophysical parameters of MBON-α3 promote a ‘compactification’, or ‘democratization’, of synaptic inputs, with all inputs resulting in similar voltage excursions at the proximal neurite and soma, regardless of the strength of the initial dendritic voltage or the position on the dendritic tree.
+As KCs are cholinergic (Barnstedt et al., 2016) we utilized previously determined parameters of cholinergic synapses to simulate synaptic input to MBON-α3. We used a reversal potential of $8.9⁢m⁢V$ and a synaptic time constant $\tau_{s}=0.44⁢m⁢s$ as target values (Su and O’Dowd, 2003). Individual synaptic contacts were simulated as alpha functions ($g_{m⁢a⁢x}⁢(t-t_{i})\timesexp⁡(-(t-t_{i}-\tau_{s})/\tau_{s})$) where $t_{i}$ is the time of the incoming spike and $g_{m⁢a⁢x}=1.56\times10^{-11}⁢S$, chosen to obtain response levels in agreement with the target values. The average number of synaptic contacts from a KC to this MBON is 13.47 (Takemura et al., 2017), Figure 4B. To determine the computational constraints of MBON-α3, we first stimulated each of the 3,121 dendritic sections that receive KC synaptic innervation using the described alpha-function conductance change. We then "recorded" (from our simulation) the resulting voltage excursions at the dendritic input site (Figure 3A, red), at the proximal neurite (putative action potential initiation site, green) and at the cell soma (blue). The comparative analysis of the responses at these three locations revealed two notable features: (1) voltage excursions directly within the dendrite are faster and substantially larger than in the proximal neurite and soma, and (2), the resulting voltages in the latter two compartments are much less variable than in the dendrite and distributed within a very small voltage range (Figure 3D and E). These results indicate that the morphological architecture and biophysical parameters of MBON-α3 promote a ‘compactification’, or ‘democratization’, of synaptic inputs, with all inputs resulting in similar voltage excursions at the proximal neurite and soma, regardless of the strength of the initial dendritic voltage or the position on the dendritic tree.
 
-To a first approximation, compactification can be understood from a simple analytical estimate of the space constant of this neuron. It is obtained by assuming a non-branching cylinder with the mean diameter of the dendritic segments, 0.29⁢μ⁢m, as obtained from the morphological data from Takemura et al., 2017. Taking the values for the resistivity of the cytoplasm (Ra=85⁢Ω⁢c⁢m) and the transmembrane conductance (gp⁢a⁢s=9.4×10-6⁢S/c⁢m2) from Table 2, the characteristic length over which excitations decay can then be computed by linear cable theory (Niebur, 2008) as λ≈1,300⁢μ⁢m. This is about twice the maximal path length between any two segments of the cell, see Figure 2C. Using the average diameter of all neuronal compartments, both in the dendritic tree and in the other components of the neuron as listed in Figure 2—figure supplement 1, increases λ by about 10% because the non-dendritic segments have larger diameters. In either case, synaptic input even at distal locations on the dendritic tree can influence somatic voltage deflections nearly as strongly as more proximal synapses, see Figure 3E.
+![Figure 3.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig3-v4.jpg)
 
-To understand additional influences of cell morphology for the input computation, we analyzed the relation between synaptic position and local dendritic volume and the resulting voltages in the dendrite, proximal neurite, and soma. Representing the distance between dendritic inputs and soma (Figure 3G) by a color code, we find that, as in many tree-like structures, there is a systematic tendency that more distal segments (more distant from the soma) have a smaller volume and diameter, Figure 3H. The same figure also shows that the simulated voltage excursions are many times larger in distal, small segments than in proximal, large segments, over a range from ≈0.03⁢m⁢V to ≈1⁢m⁢V. This is expected: placing an electrical charge (integrated synaptic current) on a small capacitor (low-volume segment with small surface area) results in a larger voltage excursion than placing the same charge on a large capacitor (large segment). It is highly remarkable, however, that the morphology of the MBON-α3 dendritic tree seems finely tuned, with the goal of maximizing the equality of the functional weight of all synapses. Specifically, the decrease of the voltage excursion in the soma caused by the injection of a current is nearly perfectly (within less than 0.5⁢μ⁢V) compensated by the increase of the local dendritic voltage due to the smaller volume of distal segments, see Figure 3I. The approximately 30-fold difference of local dendritic voltages (≈0.03⁢m⁢V to ≈1⁢m⁢V) is nearly exactly compensated, such that activation of each synapse has exactly the same effect at the soma, within less than one μ⁢V.
+**Figure 3.:** (A) Simulated stimulation of individual synaptic input sites. Voltage deflections of synaptic currents were analyzed locally at the dendritic segment (red, next to electrode tip), the proximal neurite (green) and the soma (blue). The soma is depicted as a square that reflects its size in the NEURON environment. Color code also applies to B-F. (B) Resulting mean voltages (lines) and standard deviations (shading) from synaptic activations in 3121 individual stimulus locations (dendrite), and at the proximal neurite and soma. (C–E) Violin plots of the simulated maximal amplitudes at the dendritic section (C), the proximal neurite (D) and the soma (E) in response to synaptic activations. Dotted lines represents the quartiles and dashed lines the mean. Proportions of the violin body represent the distribution of individual data points. Note the difference in scale and compactification of the amplitudes in the proximal neurite and soma. (F) Distribution of the percentage of voltage attenuation recorded at the soma. (G) Distribution of distance between all individual dendritic sections and the soma. This color code is applied in H and I. (H) The elicited local dendritic depolarization is plotted as a function of the local dendritic section volume. (I) The soma amplitude is plotted as a function of the amplitude at individual dendritic segments. Note different scales between abscissa and ordinate; the blue line represents identity. Also see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Distance to the proximal neurite for each stimulated dendritic segment with the color code for the following graphs. (B) Scatter plot of the elicited amplitude relative to the resting membrane potential in each stimulated dendritic section as function of its surface area. (C) Scatter plot of the voltage in the proximal neurite as a function of the voltage in the dendrite, both relative to their baseline values. The blue line represents the line of identity. (D) Correlation of the measured distance to the proximal neurite with the percent of voltage attenuation in the proximal neurite for each synaptic section. (E) Distribution of the percentage of voltage attenuation in the PN per synapse. Vertical dotted line represents the mean attenuation in percent. (F) Correlation of the measured distance to the soma with the percent of voltage attenuation in the soma for each synaptic section. (G) Correlation of the attenuation in percent at the soma (blue) or at the proximal neurite (green) relative to the dendritic voltage.
+
+To a first approximation, compactification can be understood from a simple analytical estimate of the space constant of this neuron. It is obtained by assuming a non-branching cylinder with the mean diameter of the dendritic segments, $0.29⁢\mu⁢m$, as obtained from the morphological data from Takemura et al., 2017. Taking the values for the resistivity of the cytoplasm ($R_{a}=85⁢Ω⁢c⁢m$) and the transmembrane conductance ($g_{p⁢a⁢s}=9.4\times10^{-6}⁢S/c⁢m^{2}$) from Table 2, the characteristic length over which excitations decay can then be computed by linear cable theory (Niebur, 2008) as $\lambda≈1,300⁢\mu⁢m$. This is about twice the maximal path length between any two segments of the cell, see Figure 2C. Using the average diameter of all neuronal compartments, both in the dendritic tree and in the other components of the neuron as listed in Figure 2—figure supplement 1, increases $\lambda$ by about 10% because the non-dendritic segments have larger diameters. In either case, synaptic input even at distal locations on the dendritic tree can influence somatic voltage deflections nearly as strongly as more proximal synapses, see Figure 3E.
+
+To understand additional influences of cell morphology for the input computation, we analyzed the relation between synaptic position and local dendritic volume and the resulting voltages in the dendrite, proximal neurite, and soma. Representing the distance between dendritic inputs and soma (Figure 3G) by a color code, we find that, as in many tree-like structures, there is a systematic tendency that more distal segments (more distant from the soma) have a smaller volume and diameter, Figure 3H. The same figure also shows that the simulated voltage excursions are many times larger in distal, small segments than in proximal, large segments, over a range from $≈0.03⁢m⁢V$ to $≈1⁢m⁢V$. This is expected: placing an electrical charge (integrated synaptic current) on a small capacitor (low-volume segment with small surface area) results in a larger voltage excursion than placing the same charge on a large capacitor (large segment). It is highly remarkable, however, that the morphology of the MBON-α3 dendritic tree seems finely tuned, with the goal of maximizing the equality of the functional weight of all synapses. Specifically, the decrease of the voltage excursion in the soma caused by the injection of a current is nearly perfectly (within less than $0.5⁢\mu⁢V$) compensated by the increase of the local dendritic voltage due to the smaller volume of distal segments, see Figure 3I. The approximately 30-fold difference of local dendritic voltages ($≈0.03⁢m⁢V$ to $≈1⁢m⁢V$) is nearly exactly compensated, such that activation of each synapse has exactly the same effect at the soma, within less than one $\mu⁢V$.
 
 We next analyzed the impact of individual KCs on MBON-α3. We simulated the activation of all synapses of each individual KC that innervates MBON-α3, using the synaptic parameters described above, and we recorded the simulated voltage excursions in the soma, Figure 4A. The number of synapses varied between KCs, ranging from 1 to 27 (plus one outlier with 38 synaptic contacts), with a mean of 13.47 synapses per KC (Figure 4B).
 
@@ -74,21 +254,106 @@ We next analyzed the impact of individual KCs on MBON-α3. We simulated the acti
 
 **Figure 4.:** (A) Simulated activation of all synapses from all 948 individual KCs innervating MBON-α3. A representative example of a KC (KC12) with 13 input synapses to MBON-α3 is shown. (B) Histogram of the distribution of the number of synapses per KC. (C) Membrane potential traces from simulated activation of all 948 KCs. (D) Distribution of the elicited amplitudes evoked by the individual activations of all KCs. (E) Correlation between the somatic amplitude and the number of activated synapses in the trials. (F) Blue: Distribution of the somatic voltage change evoked by the activation of all KCs with exactly 12, 13, or 14 input synapses. Each dot represents one simulated KC. Bars represent mean and SD. Red: Same, but for activation of 13 random synapses per simulation in 1000 independent trials.
 
-In these simulations, we observed a wide range of voltage excursions (note the outlier in Figure 4B, C, D and E). The neuron is firmly in a small-signal operation mode, as we observed a highly linear relation between the voltage excursion and the number of synapses per KC, Figure 4E. Activating a single KC leads to a voltage excursion at the soma with a mean of 0.37⁢m⁢V, Figure 4D. To further analyze this linear relationship between synapse number and somatic voltage excursion, we analyzed all KCs with exactly 12, 13, or 14 synaptic inputs to MBON-α3. This analysis revealed a highly stereotypical depolarization at the soma for all these KCs, despite wide variations in the position of the individual synaptic contacts (Figure 4E and F). Activation of 13 randomly selected synapses in 1000 independent trials resulted in similar voltage excursions as observed for the KCs with 13 synaptic connections. Interestingly, in these simulations the responses showed less variability compared to the activation of individual KCs with synapses at anatomically observed locations (Figure 4F). Together, these results provide further support for the electrotonical compactness of MBON-α3.
+In these simulations, we observed a wide range of voltage excursions (note the outlier in Figure 4B, C, D and E). The neuron is firmly in a small-signal operation mode, as we observed a highly linear relation between the voltage excursion and the number of synapses per KC, Figure 4E. Activating a single KC leads to a voltage excursion at the soma with a mean of $0.37⁢m⁢V$, Figure 4D. To further analyze this linear relationship between synapse number and somatic voltage excursion, we analyzed all KCs with exactly 12, 13, or 14 synaptic inputs to MBON-α3. This analysis revealed a highly stereotypical depolarization at the soma for all these KCs, despite wide variations in the position of the individual synaptic contacts (Figure 4E and F). Activation of 13 randomly selected synapses in 1000 independent trials resulted in similar voltage excursions as observed for the KCs with 13 synaptic connections. Interestingly, in these simulations the responses showed less variability compared to the activation of individual KCs with synapses at anatomically observed locations (Figure 4F). Together, these results provide further support for the electrotonical compactness of MBON-α3.
 
-## Physiological and tuned activation of MBON-α3
+### Physiological and tuned activation of MBON-α3
 
 A given odor activates only a small fraction of KCs reliably, reported as about 5% in some studies (Honegger et al., 2011; Siegenthaler et al., 2019) and 6% in others (Turner et al., 2008; Campbell et al., 2013). This one-percentage point difference may well be caused by differences in the experimental preparations. However, in absolute terms a change from 5% to 6% in the same system represents a 20% increase. To understand the physiological effect of differences in the number of activated KCs of this size, we first established a baseline condition by simulating voltage excursions in the soma resulting from the simultaneous activation of sets of 50 KCs (corresponding to 5%), randomly selected from the 948 KCs innervating MBON-α3 and addressed increases in KC number afterwards.
 
-In 1000 independent activation trials (Figure 5A), we observed highly stereotypical activation patterns, with a mean somatic depolarization of 15.24⁢m⁢V and only small variations in the time course (Figure 5B and C (blue)). These results are consistent with an activation of 50 KCs being sufficient to induce changes in the firing frequency of MBON-α3 (Figure 1H, I). The fact that all simulations resulted in a significant depolarization consistent with action potential generation or alterations of the firing frequency together with the small range of variation within this dataset, provides support for the current model that odor encoding in KCs is, at least to a large extent, random (stochastic; Caron et al., 2013; Zheng et al., 2022; Li et al., 2020; Eichler et al., 2017).
+In 1000 independent activation trials (Figure 5A), we observed highly stereotypical activation patterns, with a mean somatic depolarization of $15.24⁢m⁢V$ and only small variations in the time course (Figure 5B and C (blue)). These results are consistent with an activation of 50 KCs being sufficient to induce changes in the firing frequency of MBON-α3 (Figure 1H, I). The fact that all simulations resulted in a significant depolarization consistent with action potential generation or alterations of the firing frequency together with the small range of variation within this dataset, provides support for the current model that odor encoding in KCs is, at least to a large extent, random (stochastic; Caron et al., 2013; Zheng et al., 2022; Li et al., 2020; Eichler et al., 2017).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig5-v4.jpg)
 
 **Figure 5.:** (A) Schematic of the simulated recording paradigm. We modeled the activation of ≈5% of random combinations of identified KCs, that is we activated the anatomically correct synapse locations of 50 randomly selected KCs to mimic activation by an odor. The panel shows the distribution of activated synapses for one of these trials. We then varied the number of activated KCs by ±25% around its mean of 50, that is 38, 50, and 63 KCs, and we varied synaptic strength ±25% around its original value, that is 75%, 100%, and 125%. (B) Mean somatic depolarizations after activating 1000 different sets of either 38 (light blue), 50 (blue), or 63 (dark blue) KCs, all at standard synaptic strength (100%). Shades represent the standard deviations. (C) Mean somatic depolarizations after activating 1000 different sets of 50 KCs at either 75% (red), 100% (blue), or 125% (purple) synaptic strength. Shades represent the standard deviations. (D, E) Violin plots of the relative amplitudes evoked by the different KC sets from (B, C). (F–G) Violin plots for the comparison of the amplitudes between the different plasticity paradigms. (F) 63 KCs at 100% vs 50 KCs at 125% synaptic strength. (G) 38 KCs at 100% vs 50 KCs at 75% synaptic strength. Plots in D-G use the color code from (B) and (C). (H) 63 KCs at 75% (dark red) vs. 50 KCs at 100% (blue) and 38 KCs at 125% (light purple) synaptic strength. See Figure 3 for symbols in violin plots. (I) Relation between somatic depolarization and the number and strength of activated synapses. Illustrated are all tested conditions for synaptic plasticity and KC recruitment. Stimulation paradigms are color coded as shown. (J) Relation between the slope of the condition-specific linear regressions from (I) and the synaptic strength of the activated KC sets. (K) Relation between the slope of the condition-specific linear regressions from (I) and the number of recruited KCs. (L) Slopes of the condition-specific linear regressions from (I). Color codes of (J–L) as in (I). Statistical significance was tested in multiple comparisons with a parametric one-way ANOVA test (D, E and H) resulting in p=<0.0001 for all conditions, or in an unpaired parametric t-test (F and G) resulting in p=<0.0001 for all conditions. Numerical results are summarized in Table 3.
 
-Based on in vivo data, two different modes of plasticity may act at the level of the KC-MBON module to alter MBON output to conditioned odors. In vivo imaging of short-term memory formation demonstrated alterations of KC input strength (Owald and Waddell, 2015; Hige et al., 2015a; Perisse et al., 2016; Plaçais et al., 2013; Pai et al., 2013; Séjourné et al., 2011; Jacob and Waddell, 2020) while recent observations of long-term memory demonstrated a specific change (increase) in the number of KCs representing the conditioned odor (Delestro et al., 2020; Shyu et al., 2019; Baltruschat et al., 2021). To directly address the relative impact of these two modulations on MBON depolarization, we repeated the same simulation but now modified input strength by either altering activated KC numbers or by modulating the synaptic gain. To enable a direct comparison, we modulated each factor by 25%. First, we increased the number of activated KCs per set by 25%, from 50 to 63. This lead to a mean somatic depolarization of 18⁢m⁢V, a significant increase by 19% (Figure 5B and D; dark blue). Decreasing the number of activated KCs by 25%, from 50 to 38, lead to a mean somatic depolarization of 12⁢m⁢V, a significant decrease by 20% (Figure 5B and D; light blue). Next, we either increased or decreased synaptic strength within sets by 25%. Increase lead to a mean somatic depolarization of 18⁢m⁢V, a significant increase by 19% (Figure 5C and E; purple) while decrease lead to a mean somatic depolarization of 12⁢m⁢V, a significant decrease by 21% (Figure 5C and E; red). Averaged over all conditions, a change of input of 25% lead to a change of 20±1% in membrane depolarization.
+Based on in vivo data, two different modes of plasticity may act at the level of the KC-MBON module to alter MBON output to conditioned odors. In vivo imaging of short-term memory formation demonstrated alterations of KC input strength (Owald and Waddell, 2015; Hige et al., 2015a; Perisse et al., 2016; Plaçais et al., 2013; Pai et al., 2013; Séjourné et al., 2011; Jacob and Waddell, 2020) while recent observations of long-term memory demonstrated a specific change (increase) in the number of KCs representing the conditioned odor (Delestro et al., 2020; Shyu et al., 2019; Baltruschat et al., 2021). To directly address the relative impact of these two modulations on MBON depolarization, we repeated the same simulation but now modified input strength by either altering activated KC numbers or by modulating the synaptic gain. To enable a direct comparison, we modulated each factor by 25%. First, we increased the number of activated KCs per set by 25%, from 50 to 63. This lead to a mean somatic depolarization of $18⁢m⁢V$, a significant increase by 19% (Figure 5B and D; dark blue). Decreasing the number of activated KCs by 25%, from 50 to 38, lead to a mean somatic depolarization of $12⁢m⁢V$, a significant decrease by 20% (Figure 5B and D; light blue). Next, we either increased or decreased synaptic strength within sets by 25%. Increase lead to a mean somatic depolarization of $18⁢m⁢V$, a significant increase by 19% (Figure 5C and E; purple) while decrease lead to a mean somatic depolarization of $12⁢m⁢V$, a significant decrease by 21% (Figure 5C and E; red). Averaged over all conditions, a change of input of 25% lead to a change of 20±1% in membrane depolarization.
 
 Even though the integrated synaptic conductance was changed by the same amount by our manipulation of either synaptic strength or number of activated KCs, we observed small but significant differences in the resultant mean somatic amplitudes (Figure 5F and G). Finally, we combined both manipulations by compensating an increase in KC number with a corresponding decrease in synaptic strength and vice versa. Both manipulations resulted, on average, in a significant decrease of MBON membrane depolarization (Figure 5). An overview of the performed simulations and numerical results is provided in Table 3.
+
+**Table 3.**
+ Summary of data from the plasticity simulations of Figure 5.Simulations vary the number of active KCs and/or the strength of the KC-MBON synapses by scaling the maximal conductance parameter of the synaptic alpha-conductance function. Results include the mean number of activated synaptic sites as well as the mean amplitude of the somatic voltage depolarization across the 1000 trial repetitions of each simulation. Ranges are reported as parentheticals. The slope of the linear regression describing the relation between the number of active synapses and somatic voltage amplitude is reported (Figure 5I–L).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Simulation parameters</th>
+      <th colspan="3">Results</th>
+    </tr>
+    <tr>
+      <th># KCs</th>
+      <th>Synaptic strength</th>
+      <th>Mean # Activated synapses</th>
+      <th>Mean somatic depolarization amplitude [m⁢V]</th>
+      <th>Slope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>63</td>
+      <td>125%</td>
+      <td>847.88 (747 - 939)</td>
+      <td>21.55 (19.66–23.21)</td>
+      <td>0.0184</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>125%</td>
+      <td>672.55 (573 - 778)</td>
+      <td>18.14 (15.99–20.29)</td>
+      <td>0.0209</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>125%</td>
+      <td>511.77 (425 - 615)</td>
+      <td>14.60 (12.48–16.96)</td>
+      <td>0.0235</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>100%</td>
+      <td>847.08 (725 - 977)</td>
+      <td>18.26 (16.15–20.34)</td>
+      <td>0.0166</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>100%</td>
+      <td>673.76 (574 - 805)</td>
+      <td>15.24 (13.34–17.58)</td>
+      <td>0.0185</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>100%</td>
+      <td>512.48 (429 - 599)</td>
+      <td>12.14 (10.43–13.85)</td>
+      <td>0.0203</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>75%</td>
+      <td>849.05 (749 - 965)</td>
+      <td>14.56 (13.11–16.17)</td>
+      <td>0.0141</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>75%</td>
+      <td>672.86 (570 - 767)</td>
+      <td>11.98 (10.37–13.41)</td>
+      <td>0.0153</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>75%</td>
+      <td>511.97 (420 - 606)</td>
+      <td>9.44 (7.91–10.96)</td>
+      <td>0.0164</td>
+    </tr>
+  </tbody>
+</table>
 
 Our simulations revealed a nearly linear relationship between the activated number of synapses and the measured amplitude in the soma regardless of synaptic strength (Figure 5I). Interestingly, we observed some differences in the slope of the responses between the different tuning modalities (Figure 5J, K and L), indicating that these modulations are not completely equivalent.
 
@@ -110,54 +375,97 @@ Our simulation data thus shows that the KC>MBON architecture represents a biophy
 
 ## Materials and methods
 
-## Fly stocks
+### Fly stocks
 
 Flies were reared at 25°C and 65% humidity on standard fly food. The following stocks were used in this study: 10XUAS-IVS-mCD8::GFP (Pfeiffer et al., 2010) (BDSC 32186), MB082C-Gal4 (Aso et al., 2014b) (BDSC 68286), 2xUAS-EGFP (BDSC 23867) (all from the Bloomington Drosophila Stock Center, Indiana).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Male flies expressing GFP in MBON-α3 were fixed for 3.5 hr at 4°C in 4% PFA containing PBST (0.2% Triton-X100). Flies were then washed for at least 3x30min at RT in PBST before dissection. Dissected brains were then labelled with primary antibodies rabbit anti-GFP (A6455, Life technologies, Carlsbad, USA 1:2000) and mouse anti-Brp (nc82, Developmental Studies Hybridoma Bank, Iowa, USA, 1:200) for two nights at 4°C. After incubation, brains were washed at least 6x30 min in PBST. Secondary antibodies (Alexa488 (goatαrabbit) and Alexa568 (goatαmouse) coupled antibodies, Life technologies, Carlsbad, USA, 1:1000) were applied for two nights at 4°C. After a repeated washing period, brains were submerged in Vectashield (Vector Laboratories, Burlingame, USA), mounted onto microscope slides, and stored at 4°C.
 
 Images were acquired using a LSM 710 confocal scanning microscope with a 25 x Plan-NEOFLUAR, NA 0.8 Korr DIC, oil objective (Carl Zeiss GmbH, Jena, Germany) and a Leica STELLARIS 8 confocal microscope with a 20 x HC PL APO NA 0.75 multi-immersion objective (Leica Microsystems, Wetzlar, Germany). Raw images were projected with Fiji (Schindelin et al., 2012) and cropped in Photoshop (Adobe, San José, USA). Uniform adjustments of brightness and contrast were performed.
 
-## Electrophysiology
+### Electrophysiology
 
-All patch clamp recordings were performed at room temperature similar to prior descriptions (Hige et al., 2015a; Hige et al., 2015b). Flies were flipped 1d after hatching to obtain 2- to 3-day-old flies. Due to the ventral location of the MBON-α3 somata within the brain, we performed the recordings ex vivo. For preparation, flies expressing GFP in MBON-α3 were briefly anesthetized on ice before removing the entire brain out of the head capsule. The preparation was performed in oxygenated (95% and 5%) high glucose (260⁢m⁢M) extracellular saline. Analogous to a prior study, the brains were incubated for 30⁢s in 0.5⁢m⁢g/m⁢l protease (from Streptomyces griseus, CAS# 90036-06-0, Sigma-Aldrich, St. Louis, USA) containing extracellular saline (Wilson et al., 2004). The brain was then transferred to standard extracellular saline (Wilson et al., 2004; in m⁢M: 103 N⁢a⁢C⁢l, 3 K⁢C⁢l, 5 TES, 10 trehalose, 10 glucose, 7 sucrose, 26 N⁢a⁢H⁢C⁢O3, 1 N⁢a⁢H2⁢P⁢O4, 1.5 C⁢a⁢C⁢l2, 4 M⁢g⁢C⁢l2, pH 7.3, 280-290⁢m⁢O⁢s⁢m⁢o⁢l/k⁢g adjusted with sucrose). For physiological recordings, the brain was transferred to a glass bottom chamber with continuously perfused (2⁢m⁢l/m⁢i⁢n) oxygenated standard extracellular saline and held in place by a custom made platinum frame.
+All patch clamp recordings were performed at room temperature similar to prior descriptions (Hige et al., 2015a; Hige et al., 2015b). Flies were flipped 1d after hatching to obtain 2- to 3-day-old flies. Due to the ventral location of the MBON-α3 somata within the brain, we performed the recordings ex vivo. For preparation, flies expressing GFP in MBON-α3 were briefly anesthetized on ice before removing the entire brain out of the head capsule. The preparation was performed in oxygenated (95% and 5%) high glucose ($260⁢m⁢M$) extracellular saline. Analogous to a prior study, the brains were incubated for $30⁢s$ in $0.5⁢m⁢g/m⁢l$ protease (from Streptomyces griseus, CAS# 90036-06-0, Sigma-Aldrich, St. Louis, USA) containing extracellular saline (Wilson et al., 2004). The brain was then transferred to standard extracellular saline (Wilson et al., 2004; in $m⁢M$: 103 $N⁢a⁢C⁢l$, 3 $K⁢C⁢l$, 5 TES, 10 trehalose, 10 glucose, 7 sucrose, 26 $N⁢a⁢H⁢C⁢O_{3}$, 1 $N⁢a⁢H_{2}⁢P⁢O_{4}$, 1.5 $C⁢a⁢C⁢l_{2}$, 4 $M⁢g⁢C⁢l_{2}$, pH 7.3, $280-290⁢m⁢O⁢s⁢m⁢o⁢l$/$k⁢g$ adjusted with sucrose). For physiological recordings, the brain was transferred to a glass bottom chamber with continuously perfused ($2⁢m⁢l$/$m⁢i⁢n$) oxygenated standard extracellular saline and held in place by a custom made platinum frame.
 
-We used glass capillaries (GB150 (F-)–10 P, Science Products, Hofheim, Germany) and a horizontal puller (Flaming Brown Micropipette Puller P-1000, Sutter instruments, Novato, USA) to obtain pipettes with a resistance of 7-10⁢M⁢Ω. The puller was equipped with a 2.5 mm box filament and patch pipettes were pulled with a program consisting of 2 lines (Line 1/Line 2: Heat 472/463 with a ramp value of 468, Pull 0/41, Velocity 52/70, Delay 1/10, Pressure 350). For recordings, patch pipettes were filled with internal solution (Mauss et al., 2014) (in m⁢M: 140 K-aspartate, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP, 1 EGTA, 1 K⁢C⁢l, pH 7.29 adjusted with K⁢O⁢H, 265⁢m⁢O⁢s⁢m⁢o⁢l/k⁢g). Whole-cell recordings were made using the EPC10 amplifier (HEKA, Reutlingen, Germany) and the PatchMaster software (HEKA, Reutlingen, Germany). Signals were low-pass filtered at 3⁢k⁢H⁢z, and digitized at 10⁢k⁢H⁢z via a digital-to-analog converter. The liquid junction potential of 13⁢m⁢V was corrected online. Patch pipettes were guided under visual control with an upright microscope (BX51WI; Olympus, Tokio, Japan) equipped with a 60x water immersion objective (LUMPlanFl/IR; Olympus, Tokio, Japan) and a CCD camera (Orca 05 G, Hamamatsu, Japan). GFP signal of target cells was visualized through fluorescence excitation (100 W fluorescence lamp, Carl Zeiss GmbH, Jena, Germany), and a dual-band emission filter set (512/630 HC Dualband Filter GFP/DsRed, AHF Analysentechnik, Germany). We used GFP expression in soma and neurite to identify MBON-α3 neurons. During recordings, the fluorescence excitation was shut off to minimize phototoxic effects. The complete setup was mounted on an air-damped table while being shielded by a Faraday cage. Series resistance was maintained below 90⁢M⁢Ω and compensated for up to 35% through the amplifier’s compensation circuitry. In current-clamp mode, cells were held at a baseline of -60⁢m⁢V to measure the relevant parameters for the model. Signals were recorded with a sample rate of 20⁢k⁢H⁢z or 50⁢k⁢H⁢z and low-pass filtered at 5⁢k⁢H⁢z.
+We used glass capillaries (GB150 (F-)–10 P, Science Products, Hofheim, Germany) and a horizontal puller (Flaming Brown Micropipette Puller P-1000, Sutter instruments, Novato, USA) to obtain pipettes with a resistance of $7-10⁢M⁢Ω$. The puller was equipped with a 2.5 mm box filament and patch pipettes were pulled with a program consisting of 2 lines (Line 1/Line 2: Heat 472/463 with a ramp value of 468, Pull 0/41, Velocity 52/70, Delay 1/10, Pressure 350). For recordings, patch pipettes were filled with internal solution (Mauss et al., 2014) (in $m⁢M$: 140 K-aspartate, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP, 1 EGTA, 1 $K⁢C⁢l$, pH 7.29 adjusted with $K⁢O⁢H$, $265⁢m⁢O⁢s⁢m⁢o⁢l/k⁢g$). Whole-cell recordings were made using the EPC10 amplifier (HEKA, Reutlingen, Germany) and the PatchMaster software (HEKA, Reutlingen, Germany). Signals were low-pass filtered at $3⁢k⁢H⁢z$, and digitized at $10⁢k⁢H⁢z$ via a digital-to-analog converter. The liquid junction potential of $13⁢m⁢V$ was corrected online. Patch pipettes were guided under visual control with an upright microscope (BX51WI; Olympus, Tokio, Japan) equipped with a 60x water immersion objective (LUMPlanFl/IR; Olympus, Tokio, Japan) and a CCD camera (Orca 05 G, Hamamatsu, Japan). GFP signal of target cells was visualized through fluorescence excitation (100 W fluorescence lamp, Carl Zeiss GmbH, Jena, Germany), and a dual-band emission filter set (512/630 HC Dualband Filter GFP/DsRed, AHF Analysentechnik, Germany). We used GFP expression in soma and neurite to identify MBON-α3 neurons. During recordings, the fluorescence excitation was shut off to minimize phototoxic effects. The complete setup was mounted on an air-damped table while being shielded by a Faraday cage. Series resistance was maintained below $90⁢M⁢Ω$ and compensated for up to 35% through the amplifier’s compensation circuitry. In current-clamp mode, cells were held at a baseline of $-60⁢m⁢V$ to measure the relevant parameters for the model. Signals were recorded with a sample rate of $20⁢k⁢H⁢z$ or $50⁢k⁢H⁢z$ and low-pass filtered at $5⁢k⁢H⁢z$.
 
 To determine passive electrical membrane properties and qualitative patch characteristics, a series of protocols were performed:
 
-## Protocol 1
+#### Protocol 1
 
-In voltage-clamp mode, a voltage-step (100⁢m⁢s, 5⁢m⁢V) is applied without compensating the series resistance. The corresponding current trace was then used to determine Rs⁢e⁢r⁢i⁢e⁢s and Ri⁢n⁢p⁢u⁢t using Ohms law and Rm was determined as (Rs⁢e⁢r⁢i⁢e⁢s-Ri⁢n⁢p⁢u⁢t) (Numberger and Draguhn, 1996) in Igor Pro (WaveMetrics, Portland, USA).
+In voltage-clamp mode, a voltage-step ($100⁢m⁢s$, $5⁢m⁢V$) is applied without compensating the series resistance. The corresponding current trace was then used to determine $R_{s⁢e⁢r⁢i⁢e⁢s}$ and $R_{i⁢n⁢p⁢u⁢t}$ using Ohms law and $R_{m}$ was determined as ($R_{s⁢e⁢r⁢i⁢e⁢s}-R_{i⁢n⁢p⁢u⁢t}$) (Numberger and Draguhn, 1996) in Igor Pro (WaveMetrics, Portland, USA).
 
-## Protocol 2
+#### Protocol 2
 
-In current-clamp mode, a step-protocol was performed and recorded at 50⁢k⁢H⁢z. Each sweep starts with 0⁢p⁢A for 10⁢m⁢s, which is followed by a current injection (-26⁢p⁢A to 32⁢p⁢A, with 2⁢p⁢A increments) and a step duration of 400⁢m⁢s. The resulting changes in membrane potential and induced action potentials were then analyzed and plotted with Matlab (MathWorks, Natick, USA). The maximum depolarization was calculated as a mean of the last 70 sample points of the stimulation sweep in each trace. The resting membrane potential was calculated as the mean of the first 500 sample points before the stimulation in each trace. The absolute action potential was measured as the maximum of each trace. The relative action potential amplitude resulted from subtracting the baseline from the absolute value. The baseline resulted from the mean of a 400 sample points window, starting 700 sample points upstream of the maxima in each trace. The resulting trace of the -10⁢p⁢A injection was used to calculate the membrane time constant τm of each cell.
+In current-clamp mode, a step-protocol was performed and recorded at $50⁢k⁢H⁢z$. Each sweep starts with $0⁢p⁢A$ for $10⁢m⁢s$, which is followed by a current injection ($-26⁢p⁢A$ to $32⁢p⁢A$, with $2⁢p⁢A$ increments) and a step duration of $400⁢m⁢s$. The resulting changes in membrane potential and induced action potentials were then analyzed and plotted with Matlab (MathWorks, Natick, USA). The maximum depolarization was calculated as a mean of the last 70 sample points of the stimulation sweep in each trace. The resting membrane potential was calculated as the mean of the first 500 sample points before the stimulation in each trace. The absolute action potential was measured as the maximum of each trace. The relative action potential amplitude resulted from subtracting the baseline from the absolute value. The baseline resulted from the mean of a 400 sample points window, starting 700 sample points upstream of the maxima in each trace. The resulting trace of the $-10⁢p⁢A$ injection was used to calculate the membrane time constant $\tau_{m}$ of each cell.
 
-## Protocol 3
+#### Protocol 3
 
-In current-clamp mode, no current was injected throughout a 60⁢s recording at 50⁢k⁢H⁢z. The resting membrane potential was determined as the mean of the baseline in the recording with Igor Pro and spontaneous activity was plotted with Matlab.
+In current-clamp mode, no current was injected throughout a $60⁢s$ recording at $50⁢k⁢H⁢z$. The resting membrane potential was determined as the mean of the baseline in the recording with Igor Pro and spontaneous activity was plotted with Matlab.
 
-## Protocol 4
+#### Protocol 4
 
-In current-clamp mode, a short current pulse (-10⁢p⁢A, 200⁢m⁢s) was injected and recorded at 20⁢k⁢H⁢z. We performed 35 iterations per cell. The resulting data of three example cells was used for fitting the membrane kinetics of the model as described previously (Gouwens and Wilson, 2009). Averaging, normalisation ((Vm-Vm⁢0)/Vm⁢0) and plotting was performed with Matlab. This data was used to perform the model fitting. The baseline (Vm⁢0) resulted from the average of the sample points before stimulation.
+In current-clamp mode, a short current pulse ($-10⁢p⁢A$, $200⁢m⁢s$) was injected and recorded at $20⁢k⁢H⁢z$. We performed 35 iterations per cell. The resulting data of three example cells was used for fitting the membrane kinetics of the model as described previously (Gouwens and Wilson, 2009). Averaging, normalisation (($V_{m}$-$V_{m⁢0}$)/$V_{m⁢0}$) and plotting was performed with Matlab. This data was used to perform the model fitting. The baseline ($V_{m⁢0}$) resulted from the average of the sample points before stimulation.
 
-Cells displaying a resting membrane potential higher than -45⁢m⁢V and/or where the series resistance was too high (> 90⁢M⁢Ω) were excluded from the analysis. Only cells that were firing action potentials were included in the analysis. A list of the five included cells using mCD-GFP as a marker and of the four cells using cytoplasmic GFP as a marker and the corresponding calculated values are provided in Table 1 and Table 1—source data 1.
+Cells displaying a resting membrane potential higher than $-45⁢m⁢V$ and/or where the series resistance was too high (> $90⁢M⁢Ω$) were excluded from the analysis. Only cells that were firing action potentials were included in the analysis. A list of the five included cells using mCD-GFP as a marker and of the four cells using cytoplasmic GFP as a marker and the corresponding calculated values are provided in Table 1 and Table 1—source data 1.
 
-## Computational model
+### Computational model
 
-Morphology data for the Drosophila MBON-α3-A was originally characterized using scanning electron microscopy (Takemura et al., 2017) and for the present study obtained from the ‘mushroombody’ dataset hosted in the database neuPrint (https://neuprint-examples.janelia.org/; cell ID 54977). These data describe the structure of its dendritic arborization  (Figure 2B, and Figure 2—figure supplement 1), with coordinates specified at 8 nm pixel resolution and converted to μ⁢m for model implementation. The reconstruction is limited to the portion of the neuron in the mushroom body, not including its soma and axon. The geometry of the axon was determined from the corresponding MBON14(α3)R (Figure 2A), obtained from neuPrint’s ‘hemibrain:v1.1’ dataset (https://neuprint.janelia.org/; cell ID 300972942). The axon and synaptic terminal of this neuron were approximated as five separate sections, distinguished by the major branch points identified in the electron microscopic reconstruction (Figure 2—figure supplement 1). Each section was characterized by its total length and average diameter and divided into segments to maintain the average section length of that region in the original reconstruction. They were then appended to the MBON-α3-A proximal neurite as individual linear segments (Figure 2—figure supplement 1). The dimensions of the soma were characterized by confocal microscopy of MBON-α3-A (Figure 1A). Synaptic locations of the KC innervation of MBON-α3-A were also obtained from neuPrint’s ‘mushroombody’ dataset. MBON-α3-A is innervated by 948 distinct KCs, forming a total of 12,770 synapses with an average of 13.47 synapses per KC. This data set potentially misses up to 10% of synaptic connections and includes errors associated with electron microscopy reconstructions (Takemura et al., 2017).
+Morphology data for the Drosophila MBON-α3-A was originally characterized using scanning electron microscopy (Takemura et al., 2017) and for the present study obtained from the ‘mushroombody’ dataset hosted in the database neuPrint (https://neuprint-examples.janelia.org/; cell ID 54977). These data describe the structure of its dendritic arborization  (Figure 2B, and Figure 2—figure supplement 1), with coordinates specified at 8 nm pixel resolution and converted to $\mu⁢m$ for model implementation. The reconstruction is limited to the portion of the neuron in the mushroom body, not including its soma and axon. The geometry of the axon was determined from the corresponding MBON14(α3)R (Figure 2A), obtained from neuPrint’s ‘hemibrain:v1.1’ dataset (https://neuprint.janelia.org/; cell ID 300972942). The axon and synaptic terminal of this neuron were approximated as five separate sections, distinguished by the major branch points identified in the electron microscopic reconstruction (Figure 2—figure supplement 1). Each section was characterized by its total length and average diameter and divided into segments to maintain the average section length of that region in the original reconstruction. They were then appended to the MBON-α3-A proximal neurite as individual linear segments (Figure 2—figure supplement 1). The dimensions of the soma were characterized by confocal microscopy of MBON-α3-A (Figure 1A). Synaptic locations of the KC innervation of MBON-α3-A were also obtained from neuPrint’s ‘mushroombody’ dataset. MBON-α3-A is innervated by 948 distinct KCs, forming a total of 12,770 synapses with an average of 13.47 synapses per KC. This data set potentially misses up to 10% of synaptic connections and includes errors associated with electron microscopy reconstructions (Takemura et al., 2017).
 
-Electrophysiological properties of the model neuron (Table 2) were determined by fitting the model response to the recorded data, an approach consistent with prior work modeling Drosophila central neurons (Gouwens and Wilson, 2009). Somatic voltage excursions in response to 200⁢m⁢s current injections of -10⁢p⁢A were recorded ex vivo (Figure 1G) and compared with the simulated membrane potential (Figure 2D). This current injection was replicated in silico and the membrane potential change at the soma was fit to our recorded data by varying the cell’s cytoplasm resistivity, specific membrane capacitance, and passive membrane conductance. The fitting was performed using NEURON’s principle axis optimization algorithm, where parameters were tuned until the computed voltage excursion at the soma matched our electrophysiological recordings. The model optimization searched parameter space to minimize an error function defined as the squared differences between the averaged experimental responses to current pulses (Figure 1G) and the computed model responses (Figure 2D–F). The fitting was then verified by normalizing both the model and experimental voltage excursions. The model was first allowed to equilibrate for 30⁢m⁢s simulated time, after which the 200⁢m⁢s current pulse was initiated. The region of data used for the fitting ranged from 32.025⁢m⁢s to 228.03⁢m⁢s, excluding approximately the first and last 2⁢m⁢s of current injection. The domain of the parameter space was restricted to physiologically plausible values: 0.5⁢μ⁢F/c⁢m2 to 1.5⁢μ⁢F/c⁢m2 for specific membrane capacitance, 1⁢E-7⁢S/c⁢m2 to 1⁢E-4⁢S/c⁢m2 for passive membrane conductance, and 30⁢Ω⁢c⁢m to 400⁢Ω⁢c⁢m for cytoplasm resistivity (Table 2). The final values for each parameter are well within these margins. Resting membrane potential and the leak current reversal potential were set at -55.64⁢m⁢V based on the initial conditions of the recorded data to which the model was fit.
+Electrophysiological properties of the model neuron (Table 2) were determined by fitting the model response to the recorded data, an approach consistent with prior work modeling Drosophila central neurons (Gouwens and Wilson, 2009). Somatic voltage excursions in response to $200⁢m⁢s$ current injections of $-10⁢p⁢A$ were recorded ex vivo (Figure 1G) and compared with the simulated membrane potential (Figure 2D). This current injection was replicated in silico and the membrane potential change at the soma was fit to our recorded data by varying the cell’s cytoplasm resistivity, specific membrane capacitance, and passive membrane conductance. The fitting was performed using NEURON’s principle axis optimization algorithm, where parameters were tuned until the computed voltage excursion at the soma matched our electrophysiological recordings. The model optimization searched parameter space to minimize an error function defined as the squared differences between the averaged experimental responses to current pulses (Figure 1G) and the computed model responses (Figure 2D–F). The fitting was then verified by normalizing both the model and experimental voltage excursions. The model was first allowed to equilibrate for $30⁢m⁢s$ simulated time, after which the $200⁢m⁢s$ current pulse was initiated. The region of data used for the fitting ranged from $32.025⁢m⁢s$ to $228.03⁢m⁢s$, excluding approximately the first and last $2⁢m⁢s$ of current injection. The domain of the parameter space was restricted to physiologically plausible values: $0.5⁢\mu⁢F/c⁢m^{2}$ to $1.5⁢\mu⁢F/c⁢m^{2}$ for specific membrane capacitance, $1⁢E-7⁢S/c⁢m^{2}$ to $1⁢E-4⁢S/c⁢m^{2}$ for passive membrane conductance, and $30⁢Ω⁢c⁢m$ to $400⁢Ω⁢c⁢m$ for cytoplasm resistivity (Table 2). The final values for each parameter are well within these margins. Resting membrane potential and the leak current reversal potential were set at $-55.64⁢m⁢V$ based on the initial conditions of the recorded data to which the model was fit.
 
-Cholinergic KC to MBON synapses were modeled as localized conductance changes described by alpha functions (Table 2). KC innervation of MBON-α3-A was determined to be cholinergic (Barnstedt et al., 2016). Currents recorded in Drosophila KCs were demonstrated to have a reversal potential of 8.9⁢m⁢V and a rise time to a maximal conductance of 0.44⁢m⁢s (Su and O’Dowd, 2003). The maximal conductance for the synapses was set at 1.5627*10-5⁢μ⁢S, the value determined to achieve the target MBON depolarization from monosynaptic KC innervation (Hige et al., 2015b).
+Cholinergic KC to MBON synapses were modeled as localized conductance changes described by alpha functions (Table 2). KC innervation of MBON-α3-A was determined to be cholinergic (Barnstedt et al., 2016). Currents recorded in Drosophila KCs were demonstrated to have a reversal potential of $8.9⁢m⁢V$ and a rise time to a maximal conductance of $0.44⁢m⁢s$ (Su and O’Dowd, 2003). The maximal conductance for the synapses was set at $1.5627*10^{-5}⁢\mu⁢S$, the value determined to achieve the target MBON depolarization from monosynaptic KC innervation (Hige et al., 2015b).
 
-All simulations were performed using the NEURON 7.7.2 simulation environment (Hines and Carnevale, 1997) running through a Python 3.8.5 interface in Ubuntu 20.04.1. The morphology data divided the MBON-α3-A dendritic tree into 4336 sections. We added 6 additional sections describing the axon, synaptic terminals, and soma to a total of 4342 sections with an average of 1.24⁢μ⁢m in length and 0.29⁢μ⁢m in diameter (Table 4). Passive leak channels were inserted along the membrane of the dendrite sections as well as throughout the axon and soma. Each dendritic section was automatically assigned an index number by NEURON and modeled as a piece of cylindrical cable, with connectivity specified by the neuron’s morphology. The coordinate location of each KC synapse was mapped to the nearest section of the MBON dendrite, and the conductance-based synapse model was implemented in the center of that section. Simulations were performed in which each synapse-containing section was individually activated, followed by additional simulations activating groups of synapses corresponding to single or multiple active KCs. A list of all performed simulations related to Figure 5 is provided in Table 3. Membrane potential data was analyzed and plotted with MATLAB R2020b (MathWorks, Natick, USA) and Prism 9 (GraphPad, San Diego, USA).
+All simulations were performed using the NEURON 7.7.2 simulation environment (Hines and Carnevale, 1997) running through a Python 3.8.5 interface in Ubuntu 20.04.1. The morphology data divided the MBON-α3-A dendritic tree into 4336 sections. We added 6 additional sections describing the axon, synaptic terminals, and soma to a total of 4342 sections with an average of $1.24⁢\mu⁢m$ in length and $0.29⁢\mu⁢m$ in diameter (Table 4). Passive leak channels were inserted along the membrane of the dendrite sections as well as throughout the axon and soma. Each dendritic section was automatically assigned an index number by NEURON and modeled as a piece of cylindrical cable, with connectivity specified by the neuron’s morphology. The coordinate location of each KC synapse was mapped to the nearest section of the MBON dendrite, and the conductance-based synapse model was implemented in the center of that section. Simulations were performed in which each synapse-containing section was individually activated, followed by additional simulations activating groups of synapses corresponding to single or multiple active KCs. A list of all performed simulations related to Figure 5 is provided in Table 3. Membrane potential data was analyzed and plotted with MATLAB R2020b (MathWorks, Natick, USA) and Prism 9 (GraphPad, San Diego, USA).
+
+**Table 4.**
+ Morphological parameters of the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of sections</td>
+      <td>4342</td>
+    </tr>
+    <tr>
+      <td>Average section length</td>
+      <td>1.24⁢μ⁢m</td>
+    </tr>
+    <tr>
+      <td>Total length</td>
+      <td>5377.39⁢μ⁢m</td>
+    </tr>
+    <tr>
+      <td>Average diameter</td>
+      <td>0.29⁢μ⁢m</td>
+    </tr>
+    <tr>
+      <td>Average segment surface area</td>
+      <td>1.26⁢μ⁢m2</td>
+    </tr>
+    <tr>
+      <td>Total surface area</td>
+      <td>6168.32⁢μ⁢m2</td>
+    </tr>
+    <tr>
+      <td>Soma diameter</td>
+      <td>6.45⁢μ⁢m</td>
+    </tr>
+  </tbody>
+</table>
 
 All code and data files necessary to replicate the simulations are available at: https://doi.org/10.7281/T1/HRK27V.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis and visualization of data was performed in Prism 9 (GraphPad, San Diego, USA) and Matlab (MathWorks, Natick, USA). Before a statistical comparison was performed, individual groups were tested in Prism for normality and lognormality with an Anderson-Darling test. Statistical significance was tested with an unpaired parametric t-test or in case of multiple comparisons, with an ordinary corrected parametric one-way ANOVA test. Further information is provided in figure legends.

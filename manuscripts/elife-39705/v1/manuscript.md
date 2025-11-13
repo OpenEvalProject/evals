@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.39705.001 Functional conservation is known to constrain protein evolution. Nevertheless, the long-term divergence patterns of proteins maintaining the same molecular function and the possible limits of this divergence have not been explored in detail. We investigate these fundamental questions by characterizing the divergence between ancient protein orthologs with conserved molecular function. Our results demonstrate that the decline of sequence and structural similarities between such orthologs significantly slows down after ~1–2 billion years of independent evolution. As a result, the sequence and structural similarities between ancient orthologs have not substantially decreased for the past billion years. The effective divergence limit (>25% sequence identity) is not primarily due to protein sites universally conserved in all linages. Instead, less than four amino acid types are accepted, on average, per site across orthologous protein sequences. Our analysis also reveals different divergence patterns for protein sites with experimentally determined small and large fitness effects of mutations. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Functional conservation is known to constrain protein evolution. Nevertheless, the long-term divergence patterns of proteins maintaining the same molecular function and the possible limits of this divergence have not been explored in detail. We investigate these fundamental questions by characterizing the divergence between ancient protein orthologs with conserved molecular function. Our results demonstrate that the decline of sequence and structural similarities between such orthologs significantly slows down after ~1–2 billion years of independent evolution. As a result, the sequence and structural similarities between ancient orthologs have not substantially decreased for the past billion years. The effective divergence limit (>25% sequence identity) is not primarily due to protein sites universally conserved in all linages. Instead, less than four amino acid types are accepted, on average, per site across orthologous protein sequences. Our analysis also reveals different divergence patterns for protein sites with experimentally determined small and large fitness effects of mutations.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -36,19 +36,69 @@ To study the evolution of proteins with the same molecular function, we initiall
 
 To investigate whether the conservation of enzymatic function limits the divergence between orthologous sequences, we first calculated global pairwise sequence identities between orthologs as a function of their divergence times (Figure 1, Figure 1—figure supplement 1). The pairwise divergence times reported in the literature (Hedges et al., 2006) between the considered 22 species (Supplementary file 1) were used as a proxy for the divergence times between corresponding orthologous proteins. For each enzymatic activity, we constructed phylogenetic trees based on the orthologous protein sequences and compared them to the corresponding species’ trees. Protein sequences with clear differences to the species'phylogenetic tree topologies, suggesting cases of horizontal gene transfer, were excluded from the analysis (see Materials and methods).
 
-We next considered two simple models of long-term protein evolution, one without a long-term limit of sequence divergence and the other with an explicit divergence limit. The first model corresponds to sequence divergence with equal and independent amino acid substitution rates across all proteins sites (Dickerson, 1971; Zuckerkandl and Pauling, 1965); see Equation 1, where y represents global sequence identity, t represents divergence time, and R0 represents the average substitution rate (Dickerson, 1971). In this model, back substitutions are not allowed, and sequence divergence slows down with time simply due to multiple substitutions at the same protein sites and progressively fewer non-mutated sites. The second model corresponds to sequence divergence where, in addition to sites with equal and independent substitution rates, there is a minimal fraction of identical sites at long divergence times; the fraction of identical sites is represented by Y0 in Equation 2.(1)y=100*e-R0*t(2)y=Y0+100-Y0*e-R0*t
+![Figure 1.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-v1.jpg)
+
+**Figure 1.:** The global pairwise sequence identities between pairs of orthologous enzymes are shown as a function of divergence times between the corresponding species. Three models of amino acid substitution were used to fit the divergence data. Model 1 (black lines) assumes independent and equal substitution rates across all protein sites. Model 2 (red lines) assumes, in addition to independent and equal substitution rates, that a given fraction of protein sites remains identical at large divergence distances. Model 3 (blue lines) assumes a gamma distribution of amino acid substitution rates across sites. Best fits of the models are shown for four representative EC numbers: (a) 1.5.1.3, (b) 2.7.4.3, (c) 4.2.1.2, (d) 6.3.4.2. The horizontal dashed black lines represent the average sequence identity for the global alignment of unrelated protein sequences. The data and corresponding model fits for the other EC numbers considered in the analysis are given in Figure 1—figure supplement 1 and Supplementary file 2a.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The global pairwise sequence identities between pairs of orthologous enzymes as a function of divergence times between the corresponding species. The colored lines indicate fits to the data using the three models of amino acid substitutions (Equations 1-3). The horizontal dashed black lines show the average sequence identity for the global alignment of unrelated protein sequences. Dot colors indicate the corresponding psi-blast E-value of the pairwise alignments for a database size of 3.8 × 105 sequences. Parameter fits of the divergence models are presented in Supplementary file 2a.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The distribution, across 64 EC numbers, of the projected global sequence identity after 7 billion years of sequence divergence according to the Model 3 (Equation 3). The vertical dashed red line represents the median value of the distribution (33%).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Sequence identity as a function of divergence time for orthologous enzymes annotated with the same EC number and experimentally validated molecular functions. The color lines indicate fits to the data for the three models of amino acid substitution (Equations 1-3). Results are shown for 12 different EC numbers. For all EC numbers, the Model 2 (red) gives a better fit to the data compared to the Model 1 (black, F-test p-value<0.05). Also, for all EC numbers the minimum sequence identity at long divergence times (Y0, from Equation 2) is higher than the average sequence identity between unrelated protein pairs (~13.5%, dashed black lines) (Wald-test p-value<0.05).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The distribution of sequence divergence rates between orthologous enzymes when their sequence identity reaches 30%. Divergence rates were defined as the decrease in percent sequence identity per billion years. Divergence rates were calculated based on the Model 3 fits and Equation 4. The dashed red line represents the mean value of the distribution across enzymes (1.6% per billion years).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** The global pairwise sequence identities between pairs of orthologous proteins that are not part of the EC nomenclature are shown as a function of divergence times between the corresponding species. The colored lines indicate fits to the data using the three models of amino acid substitution (Equations 1-3). The dashed black lines represent the average sequence identity for the global sequence alignment of unrelated protein sequences. Model parameter fits are presented in Supplementary file 2c.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Global sequence identity as a function of divergence time for orthologous proteins with substantially different divergence rates between eukaryotic orthologs (red) and pairs of orthologs involving at least one prokaryotic sequence (black). Eukaryotic proteins are mostly annotated as mitochondrial ribosomal proteins and translation initiation factors. The dashed black lines represent the average sequence identity for the global sequence alignment of unrelated protein sequences.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Effect of different estimates of species’ divergence times on the predicted long-term sequence identity between orthologous enzymes with the same molecular function. The data on the left shows the fraction of enzymes for which the Model 2 Y0 parameter is higher than 25% sequence identity; each dot corresponds to a different assignment of lineage divergence times (based on either minimum or maximum literature estimates; see Materials and methods). The data on the right shows the fraction of orthologous enzymes for which the predicted sequence identity after 7.8 billion years of divergence is higher than 25% identity. The box plots show the minimum and maximum values and 25% and 75% percentiles based on 1000 divergence time assignments.
+
+We next considered two simple models of long-term protein evolution, one without a long-term limit of sequence divergence and the other with an explicit divergence limit. The first model corresponds to sequence divergence with equal and independent amino acid substitution rates across all proteins sites (Dickerson, 1971; Zuckerkandl and Pauling, 1965); see Equation 1, where y represents global sequence identity, t represents divergence time, and R0 represents the average substitution rate (Dickerson, 1971). In this model, back substitutions are not allowed, and sequence divergence slows down with time simply due to multiple substitutions at the same protein sites and progressively fewer non-mutated sites. The second model corresponds to sequence divergence where, in addition to sites with equal and independent substitution rates, there is a minimal fraction of identical sites at long divergence times; the fraction of identical sites is represented by Y0 in Equation 2.
+
+$$
+y=100*e^{-R_{0}*t}
+$$
+
+
+
+$$
+y=Y_{0}+100-Y_{0}*e^{-R_{0}*t}
+$$
 
 We applied the two models to fit the sequence divergence for each of the considered enzymatic functions. The best model fits for four representative metabolic activities are shown in Figure 1 (black for the first model and red for the second); the fits for the remaining metabolic activities are shown in Figure 1—figure supplement 1. In 62 of the 64 cases, the second model fits the divergence data significantly better than the first model (F-test p-value<0.05, Supplementary file 2a). Moreover, in 95% of the cases (61/64) the maximum likelihood value of the parameter Y0 is significantly higher (Wald test p-value<0.05) than the average sequence identity between random protein sequences based on their optimal global alignment (~13.5%, shown in Figure 1 and Figure 1—figure supplement 1 by dashed black lines). The distribution of the fitted parameter Y0 suggests a long-term sequence identity >25% (with average ~40%) between considered orthologs (Figure 2a); this demonstrates that conservation of a specific enzymatic function significantly limits long-term protein sequence divergence. Notably, model two is mathematically equivalent (see Materials and methods) to a divergence model with equal substitution rates across sites, a limited number of amino acid types accepted per site, and allowed back substitutions (Tajima and Nei, 1984; Gilson et al., 2017; Yang, 2006). In this model, the parameter Y0 represents the inverse of the effective number of acceptable amino acid types per site during protein evolution. Our results thus suggest that, on average, only 2 to 4 amino acids are acceptable per site for proteins that strictly conserve their molecular function (Figure 2a, top blue X axis); we note that this low average number does not contradict the fact that more than four amino acid types could be observed at a given protein site at low frequencies (Breen et al., 2012).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig2-v1.jpg)
 
-**Figure 2.:** (a) The distribution of Y parameter values across 64 EC numbers for fits based on Model 2 (0Equation 2). The Y parameter represents the minimum percentage of protein sites that remain identical at long divergence times. The parameter 0Y (considered as a fraction) can also be interpreted as the inverse of the average number of amino acid types accepted per protein site during long-term protein evolution (top blue X axis). (0b) Similar to panel a, but for 29 ancient protein families annotated with non-enzymatic functions. In panels a and b, the vertical red dashed lines represent the median values of the distributions (39% and 30%, respectively).
+**Figure 2.:** (a) The distribution of Y0 parameter values across 64 EC numbers for fits based on Model 2 (Equation 2). The Y0 parameter represents the minimum percentage of protein sites that remain identical at long divergence times. The parameter Y0 (considered as a fraction) can also be interpreted as the inverse of the average number of amino acid types accepted per protein site during long-term protein evolution (top blue X axis). (b) Similar to panel a, but for 29 ancient protein families annotated with non-enzymatic functions. In panels a and b, the vertical red dashed lines represent the median values of the distributions (39% and 30%, respectively).
 
-The two aforementioned models simplify the process of sequence divergence by considering the same substitution rates across protein sites. A more realistic and commonly used model of protein evolution assumes a gamma distribution (Yang et al., 2000) of substitution rates across protein sites; see Equation 3; (Ota and Nei, 1994), where α represents the shape parameter of the gamma distribution. The best fits of such a variable-rate model (blue in Figure 1 and Figure 1—figure supplement 1) showed that the rates of protein sequence divergence between orthologous enzymes have decreased by more than 10 times during ~4 billion years of evolution (see Materials and methods and Supplementary file 2b). Although the third model does not explicitly consider a long-term divergence limit, the obtained model fits also show that the vast majority of orthologous enzymes with the same function will remain above 25% sequence identity on the timescales when Earth environments will be hospitable to life (1–3 billion years from the present O'Malley-James et al., 2014) (Figure 1—figure supplement 2).(3)y=100*R0*tα+1-α
+The two aforementioned models simplify the process of sequence divergence by considering the same substitution rates across protein sites. A more realistic and commonly used model of protein evolution assumes a gamma distribution (Yang et al., 2000) of substitution rates across protein sites; see Equation 3; (Ota and Nei, 1994), where α represents the shape parameter of the gamma distribution. The best fits of such a variable-rate model (blue in Figure 1 and Figure 1—figure supplement 1) showed that the rates of protein sequence divergence between orthologous enzymes have decreased by more than 10 times during ~4 billion years of evolution (see Materials and methods and Supplementary file 2b). Although the third model does not explicitly consider a long-term divergence limit, the obtained model fits also show that the vast majority of orthologous enzymes with the same function will remain above 25% sequence identity on the timescales when Earth environments will be hospitable to life (1–3 billion years from the present O'Malley-James et al., 2014) (Figure 1—figure supplement 2).
+
+$$
+y=100*\frac{R_{0}*t}{\alpha}+1^{-\alpha}
+$$
 
 The observed divergence limit is not an artifact due to difficulty detecting remote protein homologs, as it occurs at relatively high sequence identities (Figure 1 and Figure 1—figure supplement 1), for which corresponding orthologs can be easily identified by computational sequence comparison methods. Furthermore, the results remained similar when we restricted the analysis to orthologous enzyme pairs with experimentally validated molecular functions (Figure 1—figure supplement 3), based on publications referenced in the BRENDA database (Chang et al., 2015). The results also remain robust towards the variance in the estimates of divergence times between considered species (see Materials and methods). We note that the divergence limit between orthologs with the same molecular function does not imply that the rates of molecular substitutions decrease in evolution. It is also not simply due to the curvilinear relationship between time and sequence identity caused by multiple mutations at the same sites; specifically, the observed decrease in divergence rates is substantially higher (by >10 fold) than the one expected in model one simply due to multiple substitutions at the same protein sites. Instead, the effective limit is reached when, due to a small number of amino acids types accepted per protein site and back substitutions, additional amino acid replacements do not lead to a substantial further increase in protein sequence and structural divergence (Meyer et al., 1986).
 
-Interestingly, following the previously introduced metaphor of the expanding protein universe (Povolotskaya and Kondrashov, 2010; Dokholyan et al., 2002), we can use the third model (Equation 3) to express the divergence rate between orthologs as a function of protein distance (D = 1 – y, where y is the fractional sequence identity ranging from 0 to 1), see Equation 4. This equation, similarly to Hubble’s law of universe expansion (Hubble, 1929), describes how the divergence rate depends on the distance between protein orthologs. In contrast to the real universe, the expansion rate of the protein universe significantly decreases with divergence time and with distance between protein orthologs. For example, the divergence rate between protein orthologs drops, on average, to only ~2% sequene identity decrease per billion years when their mutual sequence identity reaches 30% (corresponding to protein distance of 70%; Figure 1—figure supplement 4).(4)∂D∂t= R0*(1-D)(α+1)α
+Interestingly, following the previously introduced metaphor of the expanding protein universe (Povolotskaya and Kondrashov, 2010; Dokholyan et al., 2002), we can use the third model (Equation 3) to express the divergence rate between orthologs as a function of protein distance (D = 1 – y, where y is the fractional sequence identity ranging from 0 to 1), see Equation 4. This equation, similarly to Hubble’s law of universe expansion (Hubble, 1929), describes how the divergence rate depends on the distance between protein orthologs. In contrast to the real universe, the expansion rate of the protein universe significantly decreases with divergence time and with distance between protein orthologs. For example, the divergence rate between protein orthologs drops, on average, to only ~2% sequene identity decrease per billion years when their mutual sequence identity reaches 30% (corresponding to protein distance of 70%; Figure 1—figure supplement 4).
+
+$$
+\frac{\partialD}{\partialt}=R_{0}*(1-D)^{\frac{(\alpha+1)}{\alpha}}
+$$
 
 The analyses described above focused on the divergence of enzymes with the same molecular function. In order to investigate whether the observed divergence patterns are not specific to enzymes, we repeated the analysis using non-enzymatic ancient orthologs (Figure 1—figure supplement 5, Supplementary file 2c). The set of analyzed 29 protein families included ribosomal proteins, heat shock proteins, membrane transporters, and electron transfer flavoproteins (Supplementary file 2d). Based on the same set of 22 species used in the analysis of enzyme families, we found that model two fitted the data significantly better than model one, and that the parameter Y0 was >25% for the majority (23/29) of the non-enzymatic protein families (Figure 2b, Supplementary file 2c). Interestingly, we also identified 19 additional orthologous groups showing two clearly different divergence patterns (Figure 1—figure supplement 6), with pairs of eukaryotic orthologs diverging substantially faster and farther than prokaryotic orthologs in the same protein family. The orthologous groups with this behavior included mitochondrial ribosomal proteins and initiation factors of mitochondrial translation (Supplementary file 2e). It has been previously postulated that mitochondrial ribosomal proteins diverged significantly faster in eukaryotes, compared to the divergence between their bacterial orthologs, due to compensatory protein substitutions following the accumulation of slightly deleterious substitutions in the mitochondrial ribosomal RNA (Barreto and Burton, 2013).
 
@@ -56,9 +106,29 @@ Having established, in the first half of the manuscript that conservation of mol
 
 To investigate whether the same protein sites are usually conserved between orthologs in different phylogenetic lineages, we aligned the sequences of ancient enzyme orthologs with the same molecular function (see Materials and methods). We then calculated how often each protein site is occupied by identical amino acids across pairs of orthologs from phylogenetically independent linages (Figure 3—figure supplement 1). Orthologous protein pairs from independent lineages were obtained using species' pairs that do not share any edges in the corresponding phylogenetic tree (Arnold and Stadler, 2010) (Figure 3a); for example, in Figure 3a the pair D-H is independent of the pair A-B but not of the pair E-F. We performed the above analysis using 30 enzymatic activities for which at least 20 independent pairs of orthologs could be identified based on annotations in the KEGG database (Kanehisa et al., 2016) (see Materials and methods). The results demonstrated that only a relatively small fraction of protein sites (10–20%) are universally conserved, that is, they are identical in a majority (>90%) of independent lineages (Figure 3b). Therefore, the observed long-term divergence limit is not primarily due to sets of universally conserved protein sites; instead, different sites contribute to the limit in independent phylogenetic lineages. By comparing the fractions of universally conserved sites to the average sequence identity between distant orthologs (~40%, Figure 2a) we found that these sites account, on average, for only ~35% of the observed sequence identity at long divergence distances. The analysis also revealed that different protein families show different probability distributions of identical sites (Figure 3—figure supplement 1). This is likely a consequence of diverse structural and functional requirements across protein families, leading to protein-family specific constraints on protein sites.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig3-v1.jpg)
+
+**Figure 3.:** To identify the fractions of protein sites that are universally conserved ― defined as sites that are identical in at least 90% of orthologs ― we considered phylogenetically independent lineages. (a) Illustration of pairs of species (e.g. A–B and D–H) representing phylogenetically independent lineages. In the figure, A-B and D-H are pairs of species that diverged within a certain time window (illustrated by the blue shaded region); these species pairs do not share more recent edges in the phylogenetic tree. (b) The distribution of the fraction of universally conserved sites across 30 enzymatic families. The analysis was performed using 30 enzymatic families for which at least 20 independent pairs of orthologs with the same molecular function could be identified based on annotations in the KEGG database (Kanehisa et al., 2016) (see Materials and methods); pairs of orthologs that diverged >2 billion years ago were selected for this analysis. Error bars represent the S.E.M. based on three replicates using different sets of orthologous pairs. The dashed red line represents the median of the distribution (~13%).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The panels show the distribution of protein sites according to their probability of being identical in phylogenetically independent lineages; the distributions are shown for 30 different enzyme activities (EC numbers). The probabilities were calculated as the proportion of phylogenetyically independent pairs of orthologs, with divergence times > 2 billion years (Figure 2a), in which a protein site is occupied by identical amino acids. Error bars represent the S.E.M across three replicates with different assignments of independent orthologous pairs.
+
 We next investigated the long-term divergence patterns at protein sites with different fitness effects of amino acid substitutions. To that end, we experimentally measured the fitness effects of all possible single amino acid substitutions in a representative enzyme, the Escherichia coli dihydrofolate reductase (FolA, EC 1.5.1.3). We selected FolA for the experiments due to its small size (159 amino acids) and essential role in the E. coli metabolism (Benkovic et al., 1988); also, the long-term protein sequence identity between FolA orthologs (~32%, see Figure 1a) is similar to other analyzed enzymes (Figure 2a). Following a recently described strategy (Kelsic et al., 2016), we used the Multiplex Automated Genome Engineering (MAGE) approach (Wang et al., 2009) to introduce every possible amino acid substitution at each FolA site in E. coli. To evaluate the relative fitness effects of protein substitutions we measured the growth rate of strains containing each protein variant compared to the ‘wild type’ (WT) strain into which substitutions were introduced. Relative growth rates were measured in parallel by performing growth competition experiments between the pooled mutants. Amplicon sequencing of the folA gene was then used to measure the relative changes of mutant and WT abundances as a function of time (see Materials and methods, Supplementary file 3).
 
 Using the MAGE growth measurements in E. coli, we investigated the patterns of long-term sequence divergence at protein sites with different fitness effects of amino acid substitutions. Specifically, we sorted FolA protein sites into several groups according to their experimentally measured average fitness effects (Figure 4—figure supplement 1), and explored sequence divergence for sites within each fitness group (Figure 4a, different colors). We evaluated sequence identity between FolA orthologs across divergence times using all pairwise comparisons between ~300 orthologous sequences from the COG database (Galperin et al., 2015). Although, as expected, sites with stronger fitness effects diverged more slowly, our analysis revealed interesting differences in temporal divergence patterns for sites with small and large fitness effects. For sites in the least deleterious fitness group (Figure 4a, blue) we observed, similar to the global sequence identity, a substantial decrease (~10 fold, see Equation 5 in Materials and methods) in mutual divergence rates after ~1.5 billion years of evolution. Notably, even for FolA sites with mild fitness effects, sequence identity remains above 25% at long divergence distances. In contrast to sites with mild fitness effects, sites with the most deleterious mutations (Figure 4a, black) displayed a much slower, but approximately constant average divergence rate throughout evolutionary history. This pattern suggests that, in contrast to divergence at sites with small fitness effects, the divergence at sites with large effects is not yet close to saturation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig4-v1.jpg)
+
+**Figure 4.:** (a) The divergence of sequence identity for FolA protein sites with different average fitness effects of mutations (measured in E. coli) is shown using different colors. The average sequence identities were calculated using bacterial FolA orthologs available in the COG database (Galperin et al., 2015); divergence times were estimated using bacterial 16S rRNA sequences (see Materials and methods). Error bars represent the S.D. of sequence identity in each bin. (b) Similar to panel (a), but for the sequence divergence at protein sites of the E. coli translation initiation factor InfA. (c) The probability that protein sites in FolA orthologs (upper panel) and InfA orthologs (lower panel) are occupied by identical amino acids as a function of the average mutant fitness (measured in E. coli) at the corresponding protein sites. The probability represents the fraction of phylogenetically independent pairs of orthologs in which sites are identical at long divergence times (2 ± 0.25 billion years for FolA, and 2.5 ± 0.25 billion years for InfA). Error bars represent the S.E.M. across sites.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The panels show the distribution of average growth defects due to amino acid substitutions across FolA (a) and InfA (b) protein sites. The average growth (fitness) effects at each site was calculated as the mean values of experimentally measured growth phenotypes due to all possible amino acid substitutions at the site.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The similarity between the average fitness effects of substitutions across FolA sites was calculated using two non-overlapping sets of substitutions (see Materials and methods). Each dot in the figure represents one FolA site. The relative growth decrease in the X axis was calculated based on the relative growth rates of mutants carrying 32 randomly selected codons; the relative growth decrease in the Y axis was calculated based on the relative growth rates of mutants carrying the remaining 32 codons. The line X = Y is shown in red. Pearson’s r = 0.95, p-value<1e-20.
 
 To assess the generality of the FolA results we used another dataset (Kelsic et al., 2016), obtained using MAGE, of fitness values for all possible amino acids substitutions in the E. coli translation initiation factor InfA (Figure 4b). Consistent with the relatively higher level of sequence conservation of InfA, we observed lower average mutant growth rates and lower rates of sequence divergence in each fitness group. Nevertheless, the long-term divergence patterns were qualitatively similar between the two proteins. For sites in the least deleterious InfA fitness group (Figure 4b, blue), we observed a substantial decrease in the divergence rate after ~2 billon years of evolution. In contrast, sites with strongest fitness effects (Figure 4b, pink) displayed a slower but approximately constant divergence rate.
 
@@ -68,7 +138,7 @@ The sequence constraints revealed by our analysis likely arise due to the conse
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig5-v1.jpg)
 
-**Figure 5.:** (a) The pairwise C-alpha root mean square deviation (RMSD) as a function of the divergence time between pairs of orthologs annotated with the same EC number. RMSD values were calculated based on structural protein alignments using the TM-align algorithm (Zhang and Skolnick, 2005). Gray dots represent pairs of considered orthologs, boxes indicate the median and 25–75 RMSD percentiles for the corresponding divergence times, the vertical lines indicate the 5–95 percentiles, and the red line shows the moving average of the data. (b) Long-term divergence of sequence identity of protein sites located at different distances to enzymes’ active site residues. In this analysis we considered the same species and enzymatic activities used to explore the global sequence divergence (Figure 1 and Figure 1—figure supplement 1); the average sequence identities within each distance shell (shown using different colors) were calculated across all pairs of orthologs annotated with the same EC number (see Materials and methods). Error bars represent the S.E.M. across ortholog pairs.10.7554/eLife.39705.021Figure 5—source data 1.
+**Figure 5.:** (a) The pairwise C-alpha root mean square deviation (RMSD) as a function of the divergence time between pairs of orthologs annotated with the same EC number. RMSD values were calculated based on structural protein alignments using the TM-align algorithm (Zhang and Skolnick, 2005). Gray dots represent pairs of considered orthologs, boxes indicate the median and 25–75 RMSD percentiles for the corresponding divergence times, the vertical lines indicate the 5–95 percentiles, and the red line shows the moving average of the data. (b) Long-term divergence of sequence identity of protein sites located at different distances to enzymes’ active site residues. In this analysis we considered the same species and enzymatic activities used to explore the global sequence divergence (Figure 1 and Figure 1—figure supplement 1); the average sequence identities within each distance shell (shown using different colors) were calculated across all pairs of orthologs annotated with the same EC number (see Materials and methods). Error bars represent the S.E.M. across ortholog pairs.
 
 Only a small fraction of all enzyme residues forms an active site and directly participates in catalysis. Therefore, we investigated next how the sequence divergence depends on the spatial proximity of protein positions to active site residues. It was previously demonstrated that evolutionary rates of amino acid substitutions correlate with protein sites’ spatial distance to catalytic residues (Jack et al., 2016). Notably, differences in short-term evolutionary rates do not imply the existence of a divergence limit, nor do they inform how site-specific divergence patterns correlate with sites' structural locations. Thus, the main goal of our analysis was to investigate the temporal patterns of the long-term divergence, and the effective divergence limit for sites at various distances to the active site. We considered catalytic site annotations available from the Protein Data Bank (Berman et al., 2000), UniProt-KB (UniProt Consortium, 2015) and the Catalytic Site Atlas (Porter, 2004) and quantified the average sequence divergence for sites at various distances from catalytic residues (see Materials and methods, Figure 5b). We based this analysis on the same set of enzymatic activities used to study global sequence divergence (Figure 1 and Figure 1—figure supplement 1). Although, as expected, residues close to the active site were the most highly conserved (Jack et al., 2016; Halabi et al., 2009), even distant sites displayed a substantial divergence limit (~40%) at long evolutionary distances. This result suggests that the spatial constraints required for specific molecular function usually propagate throughout the entire protein structure and significantly limit the long-term divergence even at sites distant from catalytic residues.
 
@@ -76,7 +146,7 @@ Finally, we investigated how various degrees of functional conservation affect t
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/39705/elife-39705-fig6-v1.jpg)
 
-**Figure 6.:** (a) Sequence identities between orthologous pairs of enzymes that diverged over two billion years ago. The long-term sequence divergence between pairs of orthologs sharing the same EC number (gray, n = 272) is compared to the divergence between pairs only sharing the first three digits of their EC numbers (red, n = 265), that is, enzymes conserving only a general class of substrates or cofactors. The results are based on enzyme COGs for the 22 species used to analyze global sequence divergence (Supplementary file 1). Blue points show sequence identities between pairs of proteins with the same structural fold (Dawson et al., 2017) but unrelated enzyme activities, that is, activities sharing no digits in the EC classification (n = 298, see Materials and methods). The right blue Y axis represents the average number of amino acid types accepted per protein site during long-term protein evolution. (b) Similar to panel a, but showing the corresponding C-alpha structural divergence (RMSD) between protein pairs. (c) Long-term sequence identities between orthologous enzyme pairs at the same levels of structural similarity. Results are shown for pairs of enzymes sharing their full EC classification (gray dots), or only sharing the first three digits of their EC classification (red dots). In all panels: *(p<0.05), **(p<1e-4), ***(p<1e-10) for the Mann-Whitney test.10.7554/eLife.39705.023Figure 6—source data 1.
+**Figure 6.:** (a) Sequence identities between orthologous pairs of enzymes that diverged over two billion years ago. The long-term sequence divergence between pairs of orthologs sharing the same EC number (gray, n = 272) is compared to the divergence between pairs only sharing the first three digits of their EC numbers (red, n = 265), that is, enzymes conserving only a general class of substrates or cofactors. The results are based on enzyme COGs for the 22 species used to analyze global sequence divergence (Supplementary file 1). Blue points show sequence identities between pairs of proteins with the same structural fold (Dawson et al., 2017) but unrelated enzyme activities, that is, activities sharing no digits in the EC classification (n = 298, see Materials and methods). The right blue Y axis represents the average number of amino acid types accepted per protein site during long-term protein evolution. (b) Similar to panel a, but showing the corresponding C-alpha structural divergence (RMSD) between protein pairs. (c) Long-term sequence identities between orthologous enzyme pairs at the same levels of structural similarity. Results are shown for pairs of enzymes sharing their full EC classification (gray dots), or only sharing the first three digits of their EC classification (red dots). In all panels: *(p<0.05), **(p<1e-4), ***(p<1e-10) for the Mann-Whitney test.
 
 We also investigated the sequence constraints at the same level of protein structural divergence for proteins with different degrees of functional conservation. To that end, we calculated the sequence identity between orthologs, sharing either their full or partial EC numbers, at different bins of long-term structural similarity (Figure 6c). Interestingly, we observed that even at the same level of C-alpha RMSD divergence, orthologs sharing full EC numbers usually have higher levels of sequence identity compared to orthologous pairs with the same level of structural divergence but sharing only three EC digits. This result indicates that conservation of molecular function constrains sequence divergence even beyond the requirement to maintain a specific spatial structure.
 
@@ -94,7 +164,115 @@ Our experimental and computational analyses also delineate two distinct stages o
 
 ## Materials and methods
 
-## Considered enzyme activities and corresponding protein orthologs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli EcNR2)</td>
+      <td>MG1655, bla, bio-, λ-Red+, mutS-::cmR</td>
+      <td>PMID: 19633652</td>
+      <td>Addgene #26931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>90 bp DNA oligos with phosphorothioated bases</td>
+      <td>This paper</td>
+      <td>See Supplementary file 4</td>
+      <td>100 nmole DNA Plate oligo, Integrated DNA Technologies</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Miseq Reagent Kit V2</td>
+      <td>Illumina</td>
+      <td>MS-102–2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>sybr green</td>
+      <td>ThermoFisher</td>
+      <td>S7567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit HS DNA kit</td>
+      <td>ThermoFisher</td>
+      <td>Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Hot Start High- Fidelity Mastermix</td>
+      <td>NEB</td>
+      <td>M0494S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA clean and concentration kit 5</td>
+      <td>Zymo Research</td>
+      <td>D4013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>illustra bacteria genomicPrep Mini Spin kit</td>
+      <td>GE life sciences</td>
+      <td>28904259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent DNA 1000 kit</td>
+      <td>Agilent Genomics</td>
+      <td>5067–1504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeqPrep v1.1</td>
+      <td>John St. John</td>
+      <td>https://github.com/jstjohn/SeqPrep</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perl scripts to count mutant reads</td>
+      <td>This paper</td>
+      <td>https://github.com/platyias/count-MAGE-seq (copy archived at https://github.com/elifesciences-publications/count-MAGE-seq).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Turbidostat for growth competition assay</td>
+      <td>PMID: 23429717</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Considered enzyme activities and corresponding protein orthologs
 
 We selected for analysis the sequences annotated in UniProt (UniProt Consortium, 2015) with EC numbers associated with the following metabolic pathways (defined in the KEGG database) (Kanehisa et al., 2016): Glycolysis and gluconeogenesis, pentose phosphate pathway, TCA cycle, purine metabolism, pyrimidine metabolism. Using the protein sequences from 22 diverse organisms (Supplementary file 1) we constructed clusters of orthologous groups (COGs) using the EdgeSearch algorithm (Kristensen et al., 2010). Following previous studies, we considered any two proteins from different species in the same COG as orthologs (Tatusov et al., 1997). COGs were obtained using the COGsoft software (Kristensen et al., 2010), starting from an all-against-all psi-blast (Altschul et al., 1997) search, setting the database size at 108, and using a maximum considered E-value of 0.1. To obtain the largest number of likely orthologs we did not apply a filter on low complexity or composition-based statistics. Only proteins sharing the same EC number and assigned to the same COG were compared, and only COGs with sequences in 10 or more of the 22 species were used.
 
@@ -102,7 +280,7 @@ In order to exclude proteins clearly showing evidence of Horizontal Gene Transfe
 
 The same procedure was used to select non-enzymatic COGs for analyses (Figure 1—figure supplement 5). However, in this case we only considered COGs for which none of the proteins were annotated in UniProt with metabolic EC numbers. Naturally, UniProt functional annotations for non-enzymes vary in terms of their source and format. Therefore, it is difficult to ascertain the degree of functional specificity and conservation between non-enzymatic orthologs. To address this, we manually checked that the molecular functions associated with proteins in the same COG were related, although we could not ascertain perfect conservation of molecular function.
 
-## Models of long-term protein sequence evolution
+### Models of long-term protein sequence evolution
 
 Global sequence identities for pairs of proteins annotated with the same molecular function in the same COG were calculated using pairwise alignments with ClustalW2 (Larkin et al., 2007). Sequence identity was computed as the number of identical sites at aligned positions, divided by the total number of aligned sites, excluding gaps. Divergence times between organisms were obtained from the TimeTree database (Hedges et al., 2006) (November, 2015) and used as a proxy for protein divergence times; in the analysis we used the mean divergence times across studies listed in the database. Divergence times between bacteria and archaea were set to 4 billion years based on current estimates for the occurrence time of their Last Common Ancestor (Sheridan et al., 2003; Battistuzzi et al., 2004) and existing evidence of an early origin of life on Earth (Bell et al., 2015). It is likely that ancient eukaryotic genes originated through episodic endosymbiotic gene transfer events and vertical inheritance from bacterial and archaeal genomes (Ku et al., 2015; Thiergart et al., 2012). Because of the discrete nature of such transfer events, the vast majority of individual prokaryotic-eukaryotic orthologous pairs are likely to have diverged from each other long before the origin of eukaryotes (1.8 billion years ago [Parfrey et al., 2011]); specifically, because most ancient prokaryotic species would not have transferred genes to eukaryotes. Thus, based on the median divergence time between the considered prokaryotes (~4 billion years, Supplementary file 1), divergence times between eukaryotes and prokaryotes were set in our analyses at 4 billion years. The results presented in the paper remain insensitive to the exact value of this divergence estimate (within the 3–4 billion year interval). Based on the recently proposed affiliation of eukaryotes and members from the Lokiarchaeota (Spang et al., 2015), divergence times between S. solfataricus and eukaryotes were set at 2.7 billion years, that is, the estimated age of the TACK superphylum (Guy and Ettema, 2011; Betts et al., 2018).
 
@@ -112,38 +290,62 @@ To investigate the effect of the uncertainty of divergence times’ estimates, w
 
 To assess the effect of computational functional annotations on the observed divergence results, we repeated the analysis using only sequences with experimentally validated molecular functions (Figure 1—figure supplement 3). To keep only sequences with validated molecular functions, we manually reviewed published references for enzyme annotations in the BRENDA database (Chang et al., 2015), and discarded any functional assignments that were based exclusively on computational or high-throughput studies. After filtering for the experimentally validated annotations, we only considered EC numbers corresponding to pairs of orthologs with at least four different divergence times distributed across 4 billion years.
 
-## Calculation of the divergence rate
+### Calculation of the divergence rate
 
-Based on Model 3, we determined the divergence rate, that is, the rate of the decrease in sequence identity per time, at a given divergence time t by solving for the derivative of Equation 3 with respect to time:(5)dydt=d100*R0*tα+1-αdt= -100*R0R0*tα+1-α-1where y represents global sequence identity, t represents divergence time, R0 represents the average substitution rate, and α represents the shape parameter of the gamma distribution.
+Based on Model 3, we determined the divergence rate, that is, the rate of the decrease in sequence identity per time, at a given divergence time t by solving for the derivative of Equation 3 with respect to time:
 
-## Equivalency between model two and a poisson divergence model with allowed back substitutions
+$$
+\frac{dy}{dt}=\frac{d100*\frac{R_{0}*t}{\alpha}+1^{-\alpha}}{dt}=-100*R_{0}\frac{R_{0}*t}{\alpha}+1^{-\alpha-1}
+$$
 
-In the Jukes-Cantor model of nucleotide divergence (Tajima and Nei, 1984; Jukes and Cantor, 1969), the expected number of substitutions per site (δ) between two sequences after a divergence time t from a common ancestor is given by:(6)δ=-a-1aln1-aa-11-ywhere y is the proportion of identical sites and a is the number of allowed nucleotide types (usually 4). The same model can be applied to the divergence of protein sequences (Yang et al., 2000; Ota and Nei, 1994), by setting a to the number of allowed amino acid types per protein site. Furthermore, δ = 2λt, where λ represents the substitution rate per site per unit time, which is assumed to be equal across all sites. Substituting δ, and solving the above equation for y yields:(7)y= 1a+1-1aexp-2λaa-1twhich is mathematically equivalent to model 2 Equation 2, with R0=2λaa-1, and Y0 =1a. Thus, Y0 can also be interpreted as the inverse of the average number of amino acids accepted per protein site during protein evolution.
+where y represents global sequence identity, t represents divergence time, R0 represents the average substitution rate, and α represents the shape parameter of the gamma distribution.
 
-## FolA competition experiment in E. coli
+### Equivalency between model two and a poisson divergence model with allowed back substitutions
+
+In the Jukes-Cantor model of nucleotide divergence (Tajima and Nei, 1984; Jukes and Cantor, 1969), the expected number of substitutions per site (δ) between two sequences after a divergence time t from a common ancestor is given by:
+
+$$
+\delta=-\frac{a-1}{a}ln1-\frac{a}{a-1}1-y
+$$
+
+where y is the proportion of identical sites and a is the number of allowed nucleotide types (usually 4). The same model can be applied to the divergence of protein sequences (Yang et al., 2000; Ota and Nei, 1994), by setting a to the number of allowed amino acid types per protein site. Furthermore, δ = 2λt, where λ represents the substitution rate per site per unit time, which is assumed to be equal across all sites. Substituting δ, and solving the above equation for y yields:
+
+$$
+y=\frac{1}{a}+1-\frac{1}{a}exp-\frac{2\lambdaa}{a-1}t
+$$
+
+which is mathematically equivalent to model 2 Equation 2, with R0=$\frac{2\lambdaa}{a-1}$, and Y0 =$\frac{1}{a}$. Thus, Y0 can also be interpreted as the inverse of the average number of amino acids accepted per protein site during protein evolution.
+
+### FolA competition experiment in E. coli
 
 To perform competition experiments we used the EcNR2 strain derived from E. coli K12 MG1655. Mutagenesis was performed using Multiplex Automated Genomic Engineering (MAGE), as previously described (Wang et al., 2009). 90 bp DNA oligomers were designed around each folA codon using the MG1655 wild type sequence as reference (Supplementary file 4). For each codon, all possible nucleotide variants were synthesized. To avoid simultaneous mutations of multiple codons, cells were transformed targeting ten consecutive codons at a time. After four rounds of electroporation, cells were recovered and pooled together at approximately the same concentration based on cell counts. Two competition growth experiments were carried out, one for each half of the protein. For the competition experiments, cells were grown in LB media in a turbidostat while maintaining constant volume and cell density. Samples were taken every 2 hr for a period of 16 hr, spun down, washed in PBS, spun down again and stored at −20°C until all samples were collected. For each competition, the corresponding FolA region was amplified through PCR while assigning a specific DNA barcode for each time point. PCR products were then pooled and paired-end sequenced using the MiSeq Reagent Kit two from Illumina. Sequence reads were deposited to the SRA database with accession number: SRP152339.
 
-To determine, at each time point, the abundance of each mutant relative to wild type, we joined paired-end reads using SeqPrep (v 1.1) and aligned the joined reads to the folA gene sequence using Bowtie2 (Langmead and Salzberg, 2012). We then counted the number of reads per mutant using a custom script (Plata, 2018). Reads with more than a single mutated codon were discarded. Counts were median-normalized to control for noise due to mutagenesis performed in batches of 10 codons. At each time point we calculated the ratio Rt of mutant to wild type (WT) reads. In exponential growth, the growth rate difference between a given mutant and WT was calculated based on the slope of ln⁡Rτ as a function of time:ln⁡Rt=mi-mwt*t+ln⁡(R0)where mi and mwt represent the mutant and WT growth rates, respectively. Growth rate differences were calculated only for mutants with at least five time points with 20 or more reads. Relative growth rates were calculated by dividing the slopes in the equation above by the number of e-fold increases given the average dilution rate of the turbidostat (1.37/h).
+To determine, at each time point, the abundance of each mutant relative to wild type, we joined paired-end reads using SeqPrep (v 1.1) and aligned the joined reads to the folA gene sequence using Bowtie2 (Langmead and Salzberg, 2012). We then counted the number of reads per mutant using a custom script (Plata, 2018). Reads with more than a single mutated codon were discarded. Counts were median-normalized to control for noise due to mutagenesis performed in batches of 10 codons. At each time point we calculated the ratio Rt of mutant to wild type (WT) reads. In exponential growth, the growth rate difference between a given mutant and WT was calculated based on the slope of $ln⁡R_{\tau}$ as a function of time:
+
+$$
+ln⁡R_{t}=m_{i}-m_{wt}*t+ln⁡(R_{0})
+$$
+
+where mi and mwt represent the mutant and WT growth rates, respectively. Growth rate differences were calculated only for mutants with at least five time points with 20 or more reads. Relative growth rates were calculated by dividing the slopes in the equation above by the number of e-fold increases given the average dilution rate of the turbidostat (1.37/h).
 
 To calculate a single value characterizing the effect of all possible mutations at a protein site, we first averaged the relative growth rates of mutants resulting in the same amino acid change. We then calculated the average fitness effect of mutations at each protein site by averaging across 20 possible amino acids substitutions (Supplementary file 3).
 
 To estimate the sensitivity of our results to sequencing errors, we calculated the average fitness effect of substitutions at each FolA site using the relative growth rates of mutant strains carrying only 32 mutated codons selected at random out of 64 possible codons. We observed a high correlation (Pearson’s r: 0.95, p-value<1e-20, Figure 4—figure supplement 2) between the average growth rate effects at each site calculated using two non-overlapping subsets of 32 codons. As expected, nonsense mutations and substitutions in the folA start codon had substantially stronger average effects on growth rates compared to other substitutions (26% versus 4% slower growth than WT, respectively. Mann Whitney U, p-value<10−20). Also, the relative growth rates due to synonymous codon substitutions were usually very mild (0.2% higher growth compared to WT); 97% of synonymous substitutions had growth effects of less than 3%.
 
-## Contribution of different sites to the divergence limit
+### Contribution of different sites to the divergence limit
 
 In order to identify phylogenetically independent pairs of species, we aligned the 16S rRNA gene sequences of bacterial species having orthologs annotated with the target 30 EC numbers (Figure 3—figure supplement 1). 16S rRNA sequences were obtained from the GreenGenes database (DeSantis et al., 2006) (October, 2016). We then built maximum likelihood phylogenetic trees based on the 16S alignments using RAxML (Stamatakis, 2014). Next, we used the Maximum Pairing Problem approach byArnold and Stadler (2010) to find the largest number of edge-disjoint pairs of species with 16S rRNA genetic distances corresponding to >2 billion years of divergence. Divergence times were estimated from the 16S genetic distances based on the linear regression of literature reported divergence times (Hedges et al., 2006) (Supplementary file 1). The F84 model of nucleotide substitution implemented in the phylip package (Felsenstein, 2005) was used to compute the genetic distances. Using the 16S alignment data, we calculated the probability that a protein site was identical across independent lineages. The probability was calculated as the fraction of orthologous pairs from phylogenetically independent species pairs with identical amino acids at the site. The amino acid identities at a given site were obtained based on the multiple sequence alignment of all orthologs associated with each EC number, obtained using ClustalW2 (Larkin et al., 2007). A similar procedure was applied to analyze FolA and InfA orthologs from the COG database (Figure 3c).
 
 To investigate the divergence of sites with different fitness effects, we used sequences of FolA and InfA bacterial orthologs from the COG database (Galperin et al., 2015). The FolA orthologs annotated with the same EC number in UniProt (n = 311) and the InfA orthologs annotated with the same KEGG Orthology (KO) number in KEGG (n = 514) were used to build multiple sequence alignments with ClustalW2 (Larkin et al., 2007). Divergence times were estimated from the 16S genetic distances as described above. Within each divergence bin (Figure 4a,b), sequence identities of sites with different average fitness effects (represented by different colors in Figure 4a,b) were averaged across all pairs of orthologs at a given divergence time.
 
-## Analysis of global protein structural evolution
+### Analysis of global protein structural evolution
 
 To study the divergence of protein structures as a function of time, we obtained PDB codes for all proteins associated with EC numbers in the BRENDA database (Chang et al., 2015). We then selected for the analysis species with experimentally solved enzyme structures for at least 10 different EC numbers. Psi-blast searches with a conservative E-value cutoff of 10−6 were used to identify orthologs (defined as bi-directional best hits) in the selected species. The 3D structures of orthologous pairs, annotated with the same EC number, were aligned using the TM-align program (Zhang and Skolnick, 2005) to obtain the C-alpha RMSD values. Pairs of proteins were not considered if more than 70% of the residues of the shortest protein could not be structurally aligned. We also removed from the analysis pairs of structures with flexibility between domains, as they could result in large RMSD values despite significant structural similarity. To identify such proteins we used the FATCAT (Ye and Godzik, 2003) software to perform flexible structural alignments of all structure pairs. We then filtered the structural pairs that were split into two or more domains by the FATCAT alignments.
 
-## Analysis of the enzyme active sites
+### Analysis of the enzyme active sites
 
 To analyze divergence as a function of active site distance we used protein sequences associated with the 64 EC numbers and 22 species considered in Figure 1 and Figure 1—figure supplement 1. To that end, PDB (Berman et al., 2000) was searched for homologous sequences annotated with the same enzymatic activities and with known 3D structures. Annotations of active site residues for the corresponding structures were obtained from the Catalytic Site Atlas (Porter, 2004), PDB and UniProt-KB (UniProt Consortium, 2015). For each PDB structure with available active site information, protein sites were then stratified into different layers according to the distance between their alpha carbons and the centroid of the active site residues. Each pair of orthologs was then aligned using ClustalW2 (Larkin et al., 2007) with a homolog in PDB annotated with the same activity and with defined distance layers around the active site; the PDB sequence with the highest sequence identity to either member of the pair was used for the alignment. Sequence identities for different layers were calculated based on the structural positions in the corresponding PDB reference sequences.
 
-## Comparison of pairs of enzymes with the same structural folds
+### Comparison of pairs of enzymes with the same structural folds
 
 We used structural classifications of protein domains from the CATH database (v4.2.0) (Dawson et al., 2017). For structural comparisons, we only considered PDB structures with a single classified domain per chain. Protein pairs classified in CATH in the same homologous structural superfamily were considered as having the same fold. To obtain pairs of proteins in the same fold but with different functions, we only considered PDB structures annotated with different EC numbers in BRENDA. For this analysis we randomly selected 300 pairs of structures with the same fold that do not share any digits of their EC classification.

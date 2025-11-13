@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/013sk6x84 Howard Hughes Medical Institute, Janelia Research Campus Ashburn United States
+1. RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Howard Hughes Medical Institute, Janelia Research Campus Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
 
 † Corresponding author
 
@@ -34,11 +34,270 @@ We show that 2DTM can locate and distinguish nuclear intermediates of 60S matura
 
 ## Results
 
-## 2DTM identifies 60S in biologically relevant locations and orientations in FIB-milled lamellae
+### 2DTM identifies 60S in biologically relevant locations and orientations in FIB-milled lamellae
 
 2DTM has been used to detect mammalian ribosomes in thin extensions of adherent cells (Rickgauer et al., 2020), and bacterial ribosomes in Mycoplasma pneumoniae cells (Lucas et al., 2021), both of which are sufficiently thin to permit imaging by transmission EM (TEM). Since most eukaryotic cells are too thick to image by TEM, FIB-milling is used to generate thin, electron-transparent lamellae of cryogenically frozen cells (Marko et al., 2007; Rigort et al., 2012; Villa et al., 2013).
 
 To evaluate the utility of 2DTM to locate molecules in FIB-milled lamellae, we collected 28 2D cryo-EM images of the nuclear periphery of 7 lamellae generated from actively growing Sacchromyces cerevisiae cells (Figure 1, Figure 1—figure supplement 1A-B)(Table 1). We identified 4363 large ribosomal subunits by 2DTM using a template generated from a model representing the mature 60S (PDB: 6Q8Y) (Tesina et al., 2019; Figure 1A–C). The peaks corresponding to significant detections were clearly distinguishable from background (Figure 1D and E, Figure 1—figure supplement 1C), enabling precise localization of mature 60S in the cell.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cryo-EM like density generated using the atomic coordinates of PDB: 6Q8Y that correspond with the mature 60S. (B) TEM image of the nuclear periphery from a FIB-milled yeast lamella. Yellow arrows indicate low-resolution features in the cytoplasm that may indicate the presence of ribosomes. Blue arrows indicate regions of similar size and contrast in the nucleoplasm. NE: nuclear envelope; NPC: nuclear pore complex. (C) Cryo-EM micrograph of yeast nuclear periphery from FIB-milled lamella with the results from a 2DTM search using the mature 60S template. Significant targets are indicated by mapping the template in the best matching locations and orientations (shown in yellow). The red box indicates the regions highlighted in (E) and (F). Scale bar = 50 nm. (D) 3D surface representation showing the pixel-wise 2DTM SNRs in the 50x50 pixel region of the normalized maximum intensity projection (MIP) indicated by the yellow box in (E). Each square represents 10x10 pixels. Colors represent the SNR value of each pixel as indicated by the scale bar below. (E) Normalized MIP showing the results of 2DTM using the template in (A) in the region of (C) indicated in red. (F) 3D slab indicating the locations and orientations of mature 60S-detected targets in the indicated region of (C). The red polypeptide indicates the location of the polypeptide exit tunnel on each 60S. (G) Bar chart indicating the number of mature 60S-detected targets identified in the indicated subcellular compartments in 28 images of the nuclear periphery. (H) Plot showing the density of mature 60S in the regions of the images corresponding to the nucleus (blue) or cytoplasm (red). Each dot represents a different image. The solid bar indicates the median. (I) 10 Å filtered 3D reconstruction calculated from 3991 60S subunits at the locations and orientations detected in 28 images, showing clear density for the 40S small subunit. The molecular model of the 60S used to generate the template in (A) is shown in yellow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) FIB-image of two yeast cells frozen on a cryo-EM grid. (B) FIB image of the lamella after milling the cells shown in (A). (C) Survival histogram showing the number of search locations with 2DTM SNR values above a given threshold from a 2DTM search using the mature 60S template in Figure 1A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cryo-EM image from Figure 1B indicating the image subregions from the normalized MIP that were used to calculate the histograms in B-E. (B) Histogram showing the distribution of pixel-wise 2DTM SNRs in the normalized MIP resulting from 2DTM using the template in Figure 1A, corresponding to the cytoplasmic (red) or nuclear (blue) subregions of the image in (A). Only values below the threshold allowing a single false positive per image (2DTM SNR = 7.85) are shown. (C) As in (B), showing the indicated subset of the histogram. (D) As in (B) showing the 2DTM SNRs in the cytoplasmic (red) and vacuole (dark blue). (E) As in (D), showing the indicated subset of the histogram.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) FSC from two half-maps using a 175 Å mask obtained for the 3D reconstruction shown in Figure 1I calculated using the mature 60S-detected targets identified by 2DTM. (B) Reconstruction from 3991 in situ mature 60S-detected targets from yeast lamellae. Colors show the estimated local resolution. The 10Å-filtered reconstruction in Figure 1I is shown in transparent grey. (C) As in (B), showing the comparison with the mature 60S template, filtered to 10 Å. The cut-away shows clear density for the 40S, which is outside of the template and a tRNA with an estimated local resolution of 4–7 Å.
+
+**Table 1.**
+ Estimated thickness and calculated defocus per image.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lamella #</th>
+      <th>Image file</th>
+      <th>Est thickness (nm)</th>
+      <th>Defocus 1 (Å)</th>
+      <th>Defocus 2 (Å)</th>
+      <th>Angle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>24_Mar11_13.30.44_1_0.mrc</td>
+      <td>179</td>
+      <td>5577</td>
+      <td>5434</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>25_Mar11_13.32.53_3_0.mrc</td>
+      <td>170</td>
+      <td>5943</td>
+      <td>5636</td>
+      <td>53.07</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>50_Mar11_15.04.14_36_0.mrc</td>
+      <td>132</td>
+      <td>3626</td>
+      <td>3298</td>
+      <td>23.33</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>51_Mar11_15.07.03_38_0.mrc</td>
+      <td>109</td>
+      <td>3944</td>
+      <td>3863</td>
+      <td>16.91</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>52_Mar11_15.10.54_40_0.mrc</td>
+      <td>117</td>
+      <td>6491</td>
+      <td>6192</td>
+      <td>10.89</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>53_Mar11_15.21.33_42_0.mrc</td>
+      <td>205</td>
+      <td>4906</td>
+      <td>4610</td>
+      <td>5.32</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>54_Mar11_15.24.09_44_0.mrc</td>
+      <td>205</td>
+      <td>7701</td>
+      <td>6828</td>
+      <td>–76.32</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>55_Mar11_15.26.04_46_0.mrc</td>
+      <td>212</td>
+      <td>5141</td>
+      <td>4794</td>
+      <td>23.45</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>56_Mar11_15.33.15_48_0.mrc</td>
+      <td>170</td>
+      <td>7240</td>
+      <td>7093</td>
+      <td>82.03</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>57_Mar11_15.36.27_50_0.mrc</td>
+      <td>178</td>
+      <td>5969</td>
+      <td>5807</td>
+      <td>–7.87</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>58_Mar11_15.38.03_52_0.mrc</td>
+      <td>186</td>
+      <td>6445</td>
+      <td>6182</td>
+      <td>–75.84</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>115_Mar12_10.39.05_93_0.mrc</td>
+      <td>136</td>
+      <td>3436</td>
+      <td>3230</td>
+      <td>–22.72</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>118_Mar12_10.46.25_99_0.mrc</td>
+      <td>141</td>
+      <td>3291</td>
+      <td>3200</td>
+      <td>39.71</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>131_Mar12_11.32.55_127_0.mrc</td>
+      <td>114</td>
+      <td>4532</td>
+      <td>4377</td>
+      <td>15.85</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>133_Mar12_11.37.56_131_0.mrc</td>
+      <td>130</td>
+      <td>3252</td>
+      <td>2979</td>
+      <td>7.24</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>135_Mar12_11.42.53_135_0.mrc</td>
+      <td>93</td>
+      <td>3041</td>
+      <td>2977</td>
+      <td>–76.83</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>138_Mar12_11.50.12_141_0.mrc</td>
+      <td>106</td>
+      <td>3497</td>
+      <td>3404</td>
+      <td>79.97</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>141_Mar12_11.57.31_147_0.mrc</td>
+      <td>161</td>
+      <td>6153</td>
+      <td>5600</td>
+      <td>–33.24</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>143_Mar12_12.02.15_151_0.mrc</td>
+      <td>152</td>
+      <td>4552</td>
+      <td>4457</td>
+      <td>–36.2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>146_Mar12_12.19.02_157_0.mrc</td>
+      <td>98</td>
+      <td>3902</td>
+      <td>3868</td>
+      <td>61.58</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>147_Mar12_12.21.27_159_0.mrc</td>
+      <td>103</td>
+      <td>4305</td>
+      <td>4066</td>
+      <td>16.81</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>148_Mar12_12.23.52_161_0.mrc</td>
+      <td>73</td>
+      <td>3728</td>
+      <td>3604</td>
+      <td>–36.33</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>149_Mar12_12.26.15_163_0.mrc</td>
+      <td>78</td>
+      <td>3696</td>
+      <td>3573</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>150_Mar12_12.28.45_165_0.mrc</td>
+      <td>98</td>
+      <td>3723</td>
+      <td>3607</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>151_Mar12_12.31.16_167_0.mrc</td>
+      <td>114</td>
+      <td>3771</td>
+      <td>3648</td>
+      <td>54.64</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>168_Mar12_13.11.12_199_0.mrc</td>
+      <td>147</td>
+      <td>3157</td>
+      <td>3040</td>
+      <td>–57.66</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>171_Mar12_13.18.43_205_0.mrc</td>
+      <td>90</td>
+      <td>2309</td>
+      <td>2102</td>
+      <td>31.47</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>6 A_Mar11_14.59.49_34_0.mrc</td>
+      <td>126</td>
+      <td>5210</td>
+      <td>4391</td>
+      <td>2.1</td>
+    </tr>
+  </tbody>
+</table>
 
 To assess the specificity of 60S detection, we identified regions of the images corresponding to the cytoplasm, nucleus and vacuole by visual inspection. Consistent with the expected high specificity of 2DTM, we did not observe any significant mature 60S-detected targets in regions of the image corresponding to the vacuole (Figure 1C and G). In contrast, 229 mature 60S-detected targets localized to the nucleus, representing ~5% of all mature 60S identified targets in these images, well above the expected one false positive per image (Figure 1C–G). We found that the normalized maximum intensity projections (MIPs) have a distribution of values similar in shape and location of their maxima in different regions of the image, corresponding to the nucleus, cytoplasm, and vacuole. This indicates that the probability of a false positives is also similar in these different compartments (Figure 1—figure supplement 2A-E). The slight differences in the MIP distributions between the compartments likely result from differences in their composition. We conclude that false detections are not more likely in visibly darker or denser regions of the image.
 
@@ -48,15 +307,23 @@ Beyond the subcellular distribution of mature 60S-detected targets, we also conf
 
 To confirm that the targets identified with the mature 60S template reflect ribosomes, we generated a 3D reconstruction using the locations and orientations of 3991 significant mature 60S-detected targets using standard single particle approaches as described previously (Lucas et al., 2021). In addition to the 60S, the 10 Å-filtered reconstruction shows density reminiscent of the 40S small ribosomal subunit (Figure 1I). This is consistent with many of the mature 60S detected targets representing a population of 80S ribosomes. Local resolution estimation shows that the resolution of the 40S is lower relative to the 60S (Figure 1—figure supplement 3B). This follows the expected positional heterogeneity of the 40S relative to the 60S when capturing ribosomes in a range of translation states (Freitas et al., 2021; Korostelev, 2022) and prior results using 50S Mycoplasma pneumoniae targets (Lucas et al., 2021). We conclude that 2DTM-identified locations and orientations in 2D cryo-EM images of FIB-milled lamellae reflect biologically relevant locations and orientations of ribosomes in the cell.
 
-## Relative 2DTM SNRs enable single particle classification in situ
+### Relative 2DTM SNRs enable single particle classification in situ
 
 The nuclear envelope (NE) creates a physical barrier that separates premature 60S in the nucleus from mature 60S in the cytoplasm and is easily distinguishable in many 2D images by its characteristic double membrane and by the more granular appearance of the cytoplasm vs the nucleus (e.g. Figure 1B). Our observation of a substantial population of mature 60S-detected targets in the nucleus, but not in the vacuole (Figure 1C and G), suggests that the nuclear 60S may result from cross-detection of nuclear precursors, which share part of their structure with mature 60S and therefore also produce significant correlations (Figure 2A). As a first step to differentiate between related 60S intermediates, we located precursor 60S by 2DTM searches using a template generated from a late nuclear intermediate (LN 60S, PDB: 6N8J) (Zhou et al., 2019; Figure 2A and B), and annotated each target by its subcellular localization. The LN 60S was chosen because it represents the most mature nuclear intermediate for which there is a structure, and which retains ribosome biogenesis factors (RBFs) that are removed during nuclear and early cytoplasmic processing (Figure 2A). Thus, we expect that (1) the similarities between the mature 60S and LN 60S structures will result in cross-detection of the respective other complex and (2) the cytoplasmic population will more closely resemble the mature 60S and nuclear population will more closely resemble the LN 60S resulting in a higher mature 60S / LN 60S 2DTM SNR ratio in the cytoplasm than the nucleus. In the 28 images of the nucleus and nuclear periphery we located 1651 significant LN 60S-detected targets of which 1382 (~84%) of the LN 60S-detected targets were cytoplasmic and 268 (16%) were nuclear, a three-fold greater proportion than the mature 60S-detected targets (Figure 2—figure supplement 1A). We identified more cytoplasmic than nuclear targets in 2DTM searches with both mature and LN 60S templates because (1) the cytoplasm represented a larger area of our images and (2) the concentration of 60S is expected to be higher in the cytoplasm relative to the nucleus. Only one of the significant LN 60S-detected targets localized to the vacuole, which is below the expected false positive rate and further indicates the specificity of 2DTM.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram showing the compositional changes that accompany the maturation from the late nuclear (LN) 60S (PDB: 6N8J), shown in blue, to the mature 60S (PDB: 6Q8Y), shown in yellow, in the cytoplasm. (B) Cryo-EM micrograph of yeast nuclear periphery from FIB-milled lamella with the results from a 2DTM search using the LN 60S template. Significant targets are indicated by mapping a projection of the template in the best matching locations and orientations (shown in blue). Scale bar = 50 nm. (C) As in (B), showing the results from a 2DTM search of the indicated image using the mature 60S as a template (yellow). (D) 3D surface representation showing the results of a 2DTM search with the LN 60S template in the 50x50 pixel region of the image in (B) highlighted in red. Each square represents 10x10 pixels. Colors represent the SNR value of each pixel as indicated by the scale bar below. (E) As in (D) showing the results of a 2DTM search with the mature 60S template in the corresponding region of the image in (C) highlighted in red. (F) As in (D) showing the results of a 2DTM search with the LN 60S template in the region of (B) highlighted in blue. (G) As in (D) showing the results of a 2DTM search with the mature 60S template in the corresponding region of the image in (C) highlighted in blue. (H) Diagram indicating the number of mature 60S (yellow) and LN 60S (blue)-detected targets identified in 2DTM searches of 28 images of the nuclear periphery. The overlap of the Venn diagram indicates the number of targets identified in both searches. (I) Bar chart indicating the number of targets detected by the mature 60S (yellow), the LN 60S (blue), and by both (black) in regions of the images corresponding to the nucleus or cytoplasm. (J) Plot showing the log2 2DTM SNR ratios for LN and mature 60S-detected targets grouped by subcellular compartment. Each dot indicates a 60S detected in both searches. ****: p<0.0001. (K) Image showing the identified targets color-coded by the best-matching template (blue: LN 60S, yellow: mature 60S) as determined by the higher 2DTM SNR at each overlapping location. Scale bar = 50 nm. (L) Pie chart indicating the proportion of all nuclear (left) and cytoplasmic (right) 60S targets that more closely resemble the mature 60S (yellow) or LN 60S (blue) template, respectively, as determined by the highest 2DTM SNR at each identified location and orientation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Venn diagrams showing the number of mature (yellow) and LN 60S (blue) detected targets in the indicated subcellular compartments. The overlap indicates targets detected in searches with both templates. (B) Violin plot showing the kernelled distribution of 2DTM SNRs of mature 60S-detected targets (left) and LN 60S-detected targets (right) in the indicated subcellular compartments. ****: p<0.0001, ns: not significant, p>0.05. (C) Histogram showing the relative frequency of log2 (mature 60S / LN 60S SNR) values grouped by subcellular localization. Gaussian fits are indicated by a solid line. (D) Boxplot showing the mature 60S / LN 60S 2DTM SNR ratios of the nuclear (blue) and cytoplasmic (red) populations from each of the 28 images analyzed, indicating that the nuclear and cytoplasmic populations are distinct, even within single images. The number of significant LN and mature 60S-detected targets (N) is shown below for each image. The black brackets indicate images from the same lamella.
 
 As expected from the similarity between the mature and LN 60S templates, the locations of many of the targets identified in the two searches overlap (Figure 2B and C). We aligned the two sets of coordinates using the program align_coordinates (Lucas et al., 2021). Approximately one third of the mature 60S-detected targets overlapped with LN 60S-detected targets while 92% of the LN 60S-detected targets overlapped with mature 60S-detected targets (Figure 2H). Combining the results of both searches, 30% of the nuclear targets were LN 60S-detected only, compared to only 0.5% of the cytoplasmic targets (Figure 2I, Figure 2—figure supplement 1A).
 
 Consistent with their expected localizations, the median log2(mature 60S / LN 60S 2DTM SNR) values of targets identified with both templates were significantly higher for the cytoplasmic population than the nuclear population (P<0.0001, K-S. test) (Figure 2D–G and J). We classified each target as LN or mature 60S according to the highest 2DTM SNR (Figure 2K). Of the population detected with both mature and LN 60S templates, 94% of the 1361 cytoplasmic targets have a closer match (higher SNR) with the mature 60S and 88% of the 171 nuclear targets have a closer match with the LN 60S (Figure 2J). Combining all 60S-detected targets, the nuclear 60S targets are now more clearly distinguished from the cytoplasmic population with 98% of the cytoplasmic targets annotated as mature 60S, and 60% of the nuclear targets annotated as pre-60S (Figure 2K and L). The ~40% of nuclear targets that more closely resemble the mature 60S likely reflect nuclear intermediates different from the LN 60S (see below) and thus do not perfectly match either template. We conclude that comparing 2DTM SNRs can effectively differentiate populations of related particles in situ.
 
-## Defining a confidence metric for single particle classification in situ
+### Defining a confidence metric for single particle classification in situ
 
 To gain an understanding of cell biology at molecular resolution it is necessary to be able to confidently assign particle identity to individual targets. We show above that the nuclear and cytoplasmic 60S populations were significantly different with respect to their relative similarity to the LN and mature 60S (Figure 2). We also show that classifying targets by their highest 2DTM SNR effectively separates the nuclear from the cytoplasmic population (Figure 2). However, a single threshold does not fully capture the differences between the nuclear and cytoplasmic populations and for an individual particle the confidence of classification is unclear.
 
@@ -68,15 +335,31 @@ P(targets in class 2) = P(Cytoplasm) = 0.89.
 
 We used a maximum-likelihood approach to model the log2(mature / LN 60S 2DTM SNR) values as a mixture of two Gaussians (Figure 3A, R2=0.993). The fit suggests a major population with a mean of 0.336, indicating that it more closely reflected the mature 60S, and a smaller population with a mean of –0.026, that slightly more closely reflected the LN 60S (Figure 3A). The means of the two fitted populations match the means of the cytoplasmic (0.335) and nuclear (–0.026) populations when considered independently (Figure 3B), indicating that our approach effectively separates the nuclear from the cytoplasmic populations. In this case, initializing the prior using the nuclear and cytoplasmic probabilities improved the fit and the agreement with the nuclear and cytoplasmic populations relative to no prior which gave means of –0.038 (class 1) and 0.239 (class 2) (Figure 3A vs Figure 3—figure supplement 1A,B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig3-v2.jpg)
+
+**Figure 3.:** (A) Histogram showing the distribution of the log2(mature 60S / LN 60S 2DTM SNR) values for each LN and mature 60S-detected target fit with two Gaussians indicating populations 1 (blue dashed line) and 2 (red dashed line). The black line indicates the sum of the two Gaussians, R2=0.993. (B) Histogram showing the log2(mature 60S / LN 60S 2DTM SNR) values for each nuclear (blue) or cytoplasmic (red) LN and mature 60S-detected target. The two subcellular populations are plotted independently. Solid lines indicate Gaussian fits. (C) Line graph showing the probability that a given target belongs to the LN 60S population (blue) line, or mature 60S population (red), as a function of log2 2DTM SNR ratio. (D) Line graph showing the fraction of nuclear (blue) and cytoplasmic (red) targets classified as LN 60S, at the indicated confidence intervals determined using Equation 6. (E) Heat map showing the probability of each LN and mature 60S-detected target belonging to either the LN or mature 60S populations. Each row indicates a detected target, and the rows are sorted by their subcellular distribution. The targets assigned to the mature 60S population are indicated in yellow and the targets assigned to the LN 60S population are indicated in blue.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Histogram showing the distribution of log2(mature 60S / LN 60S 2DTM SNR) values for the 1531 LN and mature 60S-detected targets as shown in Figure 3A. The two Gaussians show the result of the maximum likelihood fit when assuming no prior information. (B) Line graph showing the probability that a given target belongs to the LN 60S population (blue) line, or mature 60S population (red), as a function of log2(mature 60S / LN 60S 2DTM SNR) values calculated using the fits in (A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scatterplot showing the 2DTM SNRs for nuclear (blue) and cytoplasmic (red) targets detected in searches with the LN and mature 60S templates. (B) Scatterplot showing P(LN 60S) for nuclear (blue) or cytoplasmic (red) LN 60S-detected target as a function of the 2DTM SNR. Dotted line indicates the 2DTM threshold.
+
 Using the Gaussian distribution model (see Materials and methods), we calculate the probability that a LN and mature 60S-detected target with a given log2(mature / LN 60S SNR) value derives from class 1 or class 2 via Bayes rule (Figure 3B–C). This analysis could easily be extended to cases where more than two templates are used in the search (see Materials and methods). A confidence threshold of 95% assigns ~18% of the nuclear targets and only ~0.2% of the cytoplasmic targets to class 1 (Figure 3C). Defining a threshold at 50% classifies ~61% of the nuclear targets as class 1 (nuclear) and 96% of the cytoplasmic targets as class 2 (cytoplasmic) (Figure 3C), consistent with the values determined using a threshold log2 value of 0 (Figure 2). The relative probability of each detected 60S belonging to either class can be readily visualized (Figure 3D). This shows that the 2DTM SNR ratio can effectively delineate populations of particles in cells based on their relative similarity to similar templates with a specified confidence for each particle assignment.
 
-## Relative similarity to alternate templates reveals population identity
+### Relative similarity to alternate templates reveals population identity
 
 We show above that different 60S populations in the cell can be separated by comparing their relative similarity to alternate templates (Figure 2). We also show that these populations can be identified from a mixed population by fitting Gaussians, allowing for the assignment of states with a given probability (Figure 3). We sought to investigate factors affecting the assignment of states.
 
-Overfitting the template to background features (noise) could bias the classification of states. The bias in the observed 2DTM SNRs will depend on the degrees of freedom of aligning a template to a detected target. Assuming an error of not more than ±1 pixel in the x,y plane and ±one angular step in the three search angles, we have up to 243 possible ways to align a template to a detected target, allowing the template to partially align itself to noise. This leads to an average apparent noise SNR (SNRn) of 2ln243=3.31 (Grigorieff, 2000). In this rough calculation, we ignore the defocus as an additional degree of freedom because the signal for neighboring defocus search steps is highly correlated. Since the apparent signal from the aligned noise adds coherently with the true signal of the detected target, the observed SNRo=SNRs+SNRn , with SNRs the SNR generated by the signal. For the SNR threshold of 7.85 used in our study, this means that SNRs might only be 4.54, about 40% lower, a substantial difference. For higher observed SNRs, the percentage noise bias will be smaller. When several similar templates are used, as in the present study, the average noise bias in the observed 2DTM SNRs will approximately be the same, substantially reducing its effect on the SNR ratios and classification results. For two templates, the SNR ratio is given by(1)SNRo,1/SNRo,2=(SNRs,1+SNRn,1)/(SNRs,2+SNRn,2)
+Overfitting the template to background features (noise) could bias the classification of states. The bias in the observed 2DTM SNRs will depend on the degrees of freedom of aligning a template to a detected target. Assuming an error of not more than ±1 pixel in the x,y plane and ±one angular step in the three search angles, we have up to 243 possible ways to align a template to a detected target, allowing the template to partially align itself to noise. This leads to an average apparent noise SNR ($SNR_{n}$) of $\sqrt{2ln243}=3.31$ (Grigorieff, 2000). In this rough calculation, we ignore the defocus as an additional degree of freedom because the signal for neighboring defocus search steps is highly correlated. Since the apparent signal from the aligned noise adds coherently with the true signal of the detected target, the observed $SNR_{o}=SNR_{s}+SNR_{n}$ , with $SNR_{s}$ the SNR generated by the signal. For the SNR threshold of 7.85 used in our study, this means that $SNR_{s}$ might only be 4.54, about 40% lower, a substantial difference. For higher observed SNRs, the percentage noise bias will be smaller. When several similar templates are used, as in the present study, the average noise bias in the observed 2DTM SNRs will approximately be the same, substantially reducing its effect on the SNR ratios and classification results. For two templates, the SNR ratio is given by
 
-which will be approximately invariant with SNRn for SNRs≫SNRn , that is, independent of the background level in the image. For SNR values closer to the detection limit, this ratio will exhibit a larger variance and biased towards 1 (log2 values will be biased towards 0), making it more difficult to unambiguously assign target identity.
+$$
+SNR_{o,1}/SNR_{o,2}=(SNR_{s,1}+SNR_{n,1})/(SNR_{s,2}+SNR_{n,2})
+$$
+
+which will be approximately invariant with $SNR_{n}$ for $SNR_{s}≫SNR_{n}$ , that is, independent of the background level in the image. For SNR values closer to the detection limit, this ratio will exhibit a larger variance and biased towards 1 (log2 values will be biased towards 0), making it more difficult to unambiguously assign target identity.
 
 Accordingly, we note above that the log2(mature / LN 60S 2DTM SNR) values of the cytoplasmic 60S population could be fit by a single Gaussian and clearly differentiated from the nuclear 60S population (Figure 3). This is striking because the 60S detections were combined from multiple images with differing SNRs. Moreover, the mean log2(2DTM SNR ratio) of the top 20% of targets was only ~10% different from the bottom 20% of targets based on their LN 60S 2DTM SNR (Figure 4A–B), consistent with the ratio of SNRs not depending strongly on the SNR values.
 
@@ -88,19 +371,39 @@ To test this further we generated simulated images of LN and mature 60S in ice a
 
 Our simulation suggests that, above a certain 2DTM SNR the mean log2 values can be predicted solely based on the templates, and a deviation from this ratio indicates that the detected targets have a significant mismatch with either template. In contrast to the cytoplasmic population, the nuclear population deviates from the predicted log2(mature / LN 60S 2DTM SNR) (Figure 4D). This indicates that targets in this population deviate significantly from both the mature 60S and the LN 60S templates. This provides further evidence that the nuclear population likely contains a more complex mix of maturation states (see below).
 
-## Ribosome biogenesis factors differentiate nuclear from cytoplasmic 60S
+### Ribosome biogenesis factors differentiate nuclear from cytoplasmic 60S
 
 The nuclear and cytoplasmic 60S populations differ with respect to their relative similarity to the LN and mature 60S templates (Figure 2). Classification based on their log2 2DTM SNR ratios (Figure 3) and comparison with predicted ratios for the mature and LN 60S templates (Figure 4) identified the vast majority of the cytoplasmic targets as mature 60S. However, the mean log2 values of the nuclear 60S population were close to 0, indicating that the nuclear 60S population is distinct from both the LN and mature 60S templates. To investigate this further, we assessed the features of the two templates that distinguish the nuclear from the cytoplasmic populations.
 
 Most of the mass difference between the LN and mature 60S templates results from proteins in the LN 60S that are absent in the mature 60S (Figure 5A–C). Notable exceptions are the proteins on the P-stalk which are present only on the mature 60S (Figure 5A–C, Figure 3A). Additionally, several rRNA helices on the intersubunit interface are in different conformations, specifically the L1 stalk, helix 38 and helix 89, which undergo conformational changes during maturation (Figure 5C). To identify which of these features distinguish nuclear from cytoplasmic 60S, we investigated the relative dependence of the 2DTM SNRs on the rRNA and proteins of the LN 60S template. We generated truncated LN 60S templates containing either rRNA or protein only and calculated the change in the 2DTM SNR for each template at each target relative to the full-length template (Figure 5D). The rRNA contributed 1.5 and 1.8-fold more to the 2DTM SNR of the nuclear and cytoplasmic targets, respectively, despite comprising only 1.25-fold more of the template mass (1004 and 800 kDa, respectively), than the proteins (Figure 5D). Indeed, 60% of the cytoplasmic targets and 34% of the nuclear targets were no longer significant when searching with the proteins alone. Comparing the nuclear and cytoplasmic populations shows that the 2DTM SNR of the LN 60S-detected cytoplasmic targets is less affected by the removal of the LN 60S proteins and more strongly affected by the removal of the rRNA from the template density (Figure 5D). This shows that the LN 60S proteins contribute positively to the SNR of the nuclear targets and negatively to the cytoplasmic targets and therefore differentiate the nuclear from the cytoplasmic 60S population.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig5-v2.jpg)
+
+**Figure 5.:** (A) The LN 60S (blue) and mature 60S (yellow) 2DTM templates aligned in UCSF Chimera. (B) LN 60S with difference map calculated using UCSF Chimera showing the density in the LN 60S template that is not present in the mature 60S template (red, transparent). (C) As in (B), showing the mature 60S with density that is not in common with the LN 60S template (red, transparent). (D) Boxplots showing the change in 2DTM SNR when only RNA (left) or protein (right) components of the LN 60S template are included, relative to the full-length template for each significant target. The targets are grouped by their subcellular localization. (E) Upper: LN 60S template with all ribosome biogenesis factors (RBFs) indicated in red. Lower: Boxplot showing the change in the 2DTM SNR of the nuclear (blue) and cytoplasmic (red) targets when all RBFs are removed, relative to the full-length LN 60S template in untreated cells, and when Crm1-mediated nuclear export is inhibited by treating Crm1 (T539C) cells with Leptomycin B (LepB). Box width indicates the interquartile range, the central line indicates the median and the whiskers indicate the range of 95% of the targets. (F) As in (E), for RBF Nog1. (G) As in (E), for RBF Nog2. ****: p<0.0001, ns: not significant (p>0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) TEM images of the nuclear periphery and vacuole in Crm1 (T539C) cells treated with Leptomycin B, overlaid with LN 60S-detected targets in blue.Scale bar: 50 nm. (B) Bar chart showing the number of LN and mature 60S-detected targets in the indicated subcellular compartments. (C) Violin plot showing the kernelled distribution of 2DTM SNRs for LN 60S-detected targets in the indicated subcellular compartment. ****: p<0.0001. (D) As in (C), showing mature 60S-detected targets. ns: not significant, p>0.05. (E) Violin plot showing the kernelled distribution of 2DTM SNR ratios of targets identified as both LN and mature 60S-detected targets in the indicated subcellular compartment. ****: p<0.0001.
+
 Since the LN 60S represents a late intermediate of 60S maturation in which the rRNA is almost fully folded, RBF proteins on the LN 60S account for most of the difference with the mature 60S by mass (Figure 5A–D). To confirm that the SNR difference of nuclear LN 60S-detected targets and cytoplasmic mature 60S-detected targets is primarily due to the RBF proteins, we removed the RBFs from the LN 60S template and recalculated the SNR for each target. The removal increased the 2DTM SNR of the cytoplasmic targets, while decreasing the 2DTM SNR of the nuclear targets (Figure 5E), making the SNR values more similar. This is consistent with the nuclear population having these RBFs and the cytoplasmic population lacking the RBFs. We conclude that the differentiation of detected targets using the observed 2DTM SNRs reflects biologically relevant differences between them.
 
-## Nog2 lacking intermediates accumulate after inhibition of nuclear export
+### Nog2 lacking intermediates accumulate after inhibition of nuclear export
 
 The two largest RBFs on the LN 60S are Nog1 and Nog2, together accounting for ~50% of the RBF mass (Figure 5F and G). During 60S maturation, Nog2 removal is required to permit binding of the nuclear export adaptor Nmd3 and Crm1-dependent export, and therefore Nog2 removal precedes nuclear export (Ho et al., 2000; Matsuo et al., 2014). In contrast, Nog1 is removed only upon export to the cytoplasm (Pertschy et al., 2007). In cells with active nuclear export, we find that removal of either Nog1 or Nog2 differentiates the nuclear from the cytoplasmic populations (Figure 5F and G, untreated cells). As a further test of differentiating different targets by 2DTM, we inhibited Crm1 mediated export by treating Leptomycin B (LepB) sensitive Crm1 (T539C) cells (Neville and Rosbash, 1999) with LepB and located 60S targets with LN 60S and mature 60S templates in eight images of FIB-milled lamellae. To assess the relative occupancy of Nog1 and Nog2 after Crm1 inhibition, we measured the change in 2DTM SNR after removal of all RBFs, and Nog1 or Nog2 alone. Consistent with LepB inhibiting export of pre-60S from the nucleus, we detected a higher density of pre-60S in the nucleus than in cells with active Crm1 (Figure 5—figure supplement 1A, Figure 6F). When nuclear export is inhibited, all RBFs (Figure 5E) and Nog1 alone (Figure 5F) still differentiate the nuclear from the cytoplasmic populations. In contrast, the occupancy of Nog2 is no longer significantly different between the nuclear and cytoplasmic populations (Figure 5G). This is consistent with a model in which, when Crm1-mediated export is active, nuclear intermediates are rapidly exported after removal of Nog2, depleting the Nog2-lacking population from the nucleus. In the presence of a Crm1-inhibitor, the late, export competent nuclear intermediate lacking Nog2 can no longer be exported and therefore accumulates. Since Nog1 is only removed after export, inhibition of export did not change the occupancy of Nog1 on the maturing 60S. This demonstrates that comparing 2DTM SNRs is sufficiently sensitive to assess the changes in the occupancy of individual proteins on 60S complexes in situ.
 
-## Classification of nuclear pre-60S intermediates
+![Figure 6.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig6-v2.jpg)
+
+**Figure 6.:** (A) Venn diagram showing the number of significant targets detected in 2DTM searches with the indicated templates. Overlap indicates targets identified in two or more searches. (B) Venn diagrams showing the number of significant targets detected in 2DTM searches with the indicated templates in the nucleus (left) and cytoplasm (right). (C) Scatterplot showing the log2(EN 60S / LN 60S 2DTM SNR) values relative to the log2(mature 60S / LN 60S 2DTM SNR) values for each EN, LN and mature 60S-detected target. Ellipses indicate the fits of three Gaussians and each concentric ellipse indicates one standard deviation from the mean. Each target is colored according to its most likely class membership. (D) Heat map showing the probability of each of the targets examined in (C) belonging to one of the populations, EN, LN or mature 60S. Targets are grouped by their subcellular localization, followed by their classification as EN 60S (purple), LN 60S (light blue), or mature 60S (yellow). (E) Cryo-EM micrograph of the yeast nuclear periphery from a FIB-milled lamella shown in in Figure 1, displaying the results of 2DTM searches, colored by their classification as mature 60S (yellow), LN 60S (blue) or EN 60S (purple) based on their relative 2DTM SNRs. (F) Boxplot showing the nuclear density of EN 60S (purple), LN 60S (light blue), and mature 60S (yellow) detected targets before classification in the indicated cells. (G) Bar chart showing the proportion of the LN 60S-detected targets in the indicated cells that are classified as LN 60S (blue), mature 60S (yellow), or EN 60S (purple).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) TEM image of the nuclear periphery shown in Figure 1, overlaid with EN 60S detected targets in purple. (B) Violin plots showing the kernelled distribution of 2DTM SNRs for EN 60S-detected targets in the indicated subcellular compartment. ****: p<0.0001. (C) Histogram showing the distribution of log2(EN 60S / LN 60S SNR) values of EN and LN 60S-detected targets in untreated cells. Targets are grouped by their subcellular distribution. (D) As in (C), showing the distribution of log2(mature 60S / EN 60S SNR) values of mature 60S and EN 60S detected targets. (E) Bar chart showing the proportion of cytoplasmic 60S-detected targets in the indicated cells that are classified as LN 60S (blue), mature 60S (yellow), or EN 60S (purple).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/79272/elife-79272-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) TEM image of the nuclear periphery. Scale bar indicates 50 nm. (B) The image in (A) is shown overlaid with EN 60S-detected targets in purple, (C) LN 60S-detected targets in blue or (D) mature 60S-detected targets in yellow. (E) As in (B) showing the results of 2DTM searches, colored by their classification as mature 60S (yellow), LN 60S (blue) or EN 60S (purple) based on their relative 2DTM SNRs.
+
+### Classification of nuclear pre-60S intermediates
 
 Ribosome biogenesis is a highly efficient molecular assembly line, and multiple intermediate states co-exist in the cell (Warner, 1999). Therefore, the nuclear population of pre-60S is unlikely to represent a single intermediate population. Accordingly, the distribution of the mature 60S / LN 60S SNR ratios of nuclear mature and LN 60S-detected targets fits a single Gaussian more poorly than the cytoplasmic targets (Figure 2J), and the mean log2 value is close to 0, suggesting that additional nuclear populations, distinct from either template, were identified with both 60S templates. To test this prediction and investigate the nuclear pre-60S population further, we generated a third template corresponding to an earlier nuclear intermediate (EN 60S). EN 60S (PDB: 3JCT) retains internally transcribed spacer RNA 2 (ITS2) and associated proteins and has 5S rRNP in a premature state rotated 180° relative to the LN and mature 60S (Figure 6A; Wu et al., 2016). We identified 679 significant EN 60S-detected targets of which 545 (~80%) were also identified with the LN 60S template, and 489 (72%) were also identified with the mature 60S. All of the 489 EN 60S-detected targets identified with the mature 60S were also identified with the LN 60S (Figure 6A). 289 (43%) of the EN 60S-detected targets localized to regions of the images corresponding to the nucleus, similar to the 268 nuclear LN 60S-detected targets, while only 390 were cytoplasmic, >3 fold fewer than located with the LN 60S template, consistent with the EN 60S representing a less mature nuclear intermediate (Figure 6B). The number and localization of targets identified with 2DTM is consistent with their sequence in the maturation pathway, progressing from EN 60S to LN 60S in the nucleus to mature 60S in the cytoplasm.
 
@@ -114,7 +417,7 @@ The NE provides a convenient visual control for the classification of targets as
 
 The immense potential for cryo-EM to reveal the molecular detail of biological processes in cells is currently largely unrealized. One of the major bottlenecks is the lack of reliable, quantitative methods to locate and characterize molecules in cells. Here, we describe the application of 2DTM to in situ particle classification. By considering the relative 2DTM SNRs of alternate templates at a single location and orientation, we separate 60S precursors in the nucleus from mature 60S in the cytoplasm. We also show that a maximum likelihood approach effectively classifies a mixed population of nuclear pre-60S into at least two maturation states with a specified confidence for each particle. We show that 2DTM can be used to probe the composition of complexes in situ by modifying 2DTM templates. In this study we extend the utility of 2DTM beyond a binary indicator of detection to provide a quantitative assessment of particle identity.
 
-## 2DTM enables specific molecule localization in the dense interior of cells
+### 2DTM enables specific molecule localization in the dense interior of cells
 
 Cryo-FIB milled eukaryotic cells are sufficiently well preserved to allow imaging with cryo-ET (Mahamid et al., 2016) and subtomogram averaging to yield 3D reconstructions at resolutions of >~12 Å, e.g. (Schaffer et al., 2019). However, before the present work it was unclear if the milling preserves the high-resolution signal in these samples sufficiently well to allow for particle detection with 2DTM. Our results clearly show that FIB-milling is compatible with molecule localization by 2DTM. This expands the application of 2DTM to previously inaccessible cell types and further demonstrates the utility of 2DTM for in situ structural biology.
 
@@ -122,7 +425,7 @@ In many images, 60S subunits detected by 2DTM also generate low-resolution contr
 
 The ability to distinguish particles in crowded molecular environments is a major advantage of 2DTM relative to cryo-ET, which currently suffers from strong attenuation of high-resolution signal (large B-factors) in the raw tomogram (Schur et al., 2016). 2DTM may enable localization of molecules in other dense environments such as liquid-liquid phase separated granules, which remains challenging for cryo-ET despite success in some cases (Erdmann et al., 2021). Our results confirm that 2DTM is an effective method to localize molecules in dense regions of the cell even when the molecules cannot be distinguished by eye.
 
-## 2DTM enables single particle classification in situ
+### 2DTM enables single particle classification in situ
 
 In previous work we and others have demonstrated that, when comparing populations of molecules, the average 2DTM SNRs reflect the relative similarity of different templates to the target populations (Lucas et al., 2021; Rickgauer et al., 2020). In this study, we extend this observation to show that the relative 2DTM SNRs of aligned templates at a specific location and orientation can be used to calculate the relative probabilities of a target belonging to a specific particle population.
 
@@ -130,11 +433,11 @@ Of the nuclear targets identified with the mature 60S, ~50% were also detected w
 
 In this study, we effectively classify at least three populations of 60S maturation states from a population of <500 molecules (Figure 6). This means that given sufficient abundance of the target, it will be possible to distinguish populations based on data from a single image (Figure 2—figure supplement 1D). This contrasts with more traditional (reference-free) methods used to classify subtomograms and single particles, which require hundreds to thousands of particles to generate the class averages needed for particle assignment. 2DTM allows single molecule classification from fewer images, and therefore enables more information to be extracted from images collected from cells and purified samples (single-particle cryo-EM).
 
-## Confidence metric for single particle classification in situ
+### Confidence metric for single particle classification in situ
 
 Calculating the confidence in class assignment of individual particles will aid interpretation of the results of 2DTM in situ. One major difference between in situ cryo-EM and single-particle cryo-EM is the type of biological information that is obtained. In single-particle cryo-EM, the goal is to generate high-resolution maps and establish the arrangement of atoms within a complex in different functional states, and to use this information to discern its molecular mechanism. In this case, B-factors and other metrics can be used to indicate uncertainty about an atomic coordinate, which aids interpretation of the model built into the map. In the cell, each individual instance of a complex may be in a different context relative to other similar molecules. For example, particles might be in different subcellular compartments such as the nucleus or cytoplasm or, as a more extreme example, a single particle within a nuclear pore exists in a very different context than particles in the nucleoplasm. For structural cell biology applications, therefore, it is useful to define a metric to establish the confidence of single particle classification. In this study, we show that a maximum likelihood approach using Gaussian fits to log2 2DTM SNR ratios of alternate templates at a specific subcellular location and orientation can be used to calculate the relative probability of a single particle deriving from one of a given number of classes. This provides a quantitative metric to establish confidence in the assignment of single particles that will aid in the biological interpretation of cellular cryo-EM maps.
 
-## 2DTM templates as computational molecular probes
+### 2DTM templates as computational molecular probes
 
 A major challenge in biological cryo-EM is the retrieval of detailed structural information of inherently flexible and heterogeneous macromolecules from noisy images collected at low dose to limit radiation damage. In single particle cryo-EM, this problem is addressed by averaging images of thousands of purified molecules to identify different structural states at high resolution. By averaging images of many identical copies of a particle, novel structures can be discovered, and this is a clear strength of this approach. However, since most complexes have a low abundance in the cell, the utility of this approach for in situ structural biology is limited to all but the most abundant complexes.
 
@@ -144,11 +447,11 @@ Provided the templates have similar molecular mass and shape and are aligned wit
 
 Our finding that, unlike the 2DTM SNR, the mean log2 of SNR ratios of a population is not strongly dependent on image SNR, allowed us to determine whether a given model matches the data. This approach could vastly streamline validation of models from in vitro or in silico experiments using relatively few images. Hypothetically, if models covering the full conformational and compositional space could be generated, the likelihood of a particular structure could be calculated for individual molecules.
 
-## Overfitting and classification
+### Overfitting and classification
 
 Assuming additive Gaussian noise, we estimated that overfitting contributes substantially to the variance in the observed 2DTM SNRs from an individual search. The effect of overfitting is proportionally greater for lower 2DTM SNRs and less for higher 2DTM SNRs, making higher 2DTM SNRs more reliable. However, while overfitting can also affect the classification of targets using their log2(SNR ratios), the effect is substantially less. Overfitting will introduce some bias in the log2 values that may affect classification. Misclassification may occur when the signal SNRs are similar. At high 2DTM SNRs, the proportional difference in the log2 values will be small and are unlikely to affect the classification. At low SNRs close to the threshold overfitting will have a greater effect, making classification of this population more challenging. However, collectively these factors will be captured by modelling the populations with Gaussians. Using a Gaussian model to derive the probability of class membership, rather than using a single threshold, we account for the bias in the log2 values.
 
-## Addressing additional potential sources of error
+### Addressing additional potential sources of error
 
 In our study, we used the physical separation of nuclear and cytoplasmic 60S populations to develop and test in situ classification of targets by 2DTM. We found that there are several requirements to permit classification of related molecules by 2DTM. First, the molecular models must be aligned relative to one another resulting in a correlation peak at the same pixel in the image. Comparing SNR values resulting from global searches with different templates may be lowered by imperfect, off-grid rotational matches, potentially affecting 2DTM SNR ratios and hence, target classification. Differences in model quality may also affect the 2DTM SNR ratios, masking other differences of interest. In this study, the mature 60S template was generated using the atomic coordinates of the large subunit of the ribosome built into a map with an overall resolution of 3.1 Å (PDB: 6Q8Y) (Tesina et al., 2019). The large subunit of the ribosome is structurally less variable than the small subunit and local resolution estimates suggest that parts of the LSU map extend to ~2.5 Å (Tesina et al., 2019). The maps used to build the EN 60S and LN 60S subunits were reconstructed at 3.08 Å and at 3.5 Å resolution, respectively. The accuracy of the atomic coordinates of a model will depend on the resolution of the underlying density map. Moreover, the greater number of mature ribosome structures, relative to maturation intermediate structures, may provide more confidence in the atomic coordinates of the mature 60S. The putative higher accuracy of the mature 60S model, relative to the LN 60S model, may partially explain the closer agreement of predicted and observed SNR ratios of the cytoplasmic population, compared to the nuclear population. We expect that more accurate coordinates will result in higher 2DTM SNR values, which may affect target classification.
 
@@ -156,7 +459,7 @@ False positive detections could skew the classification results by introducing f
 
 The classification of structurally similar targets could be further improved by identifying and controlling the factors that affect the distribution of observed 2DTM SNR ratios for a given set of templates. Ideally, the mean ratio of SNR values for a set of templates and given target depends only on the structural differences between the templates, while the distribution of observed ratios is solely a function of the noise and background in the images and target orientation. However, factors that contribute to loss of signal such as sample thickness, radiation or FIB-milling damage, beam-induced motion, charging and movie frame alignment errors due to sample deformation all result in loss of high-resolution signal, making the 2DTM SNR ratios less sensitive to structural differences in the templates, biasing their log2 values towards 0 and increasing the variation due to increased relative noise resulting in different degrees of overfitting. The cell is a highly heterogeneous environment, and systematic local differences in noise, such as between subcellular compartments may also affect classification. In this case, context-specific biological controls are needed to validate the assignment of states. Further research is required to account for these factors and reduce the variance in 2DTM SNR ratios, thereby enabling classification of targets with smaller structural differences.
 
-## Additional intermediate populations
+### Additional intermediate populations
 
 In the present study, we only considered three alternate 60S templates. We note that the Gaussian fits to the 2DTM SNRs of mature 60S and LN 60S-detected nuclear targets is imperfect, potentially indicating additional pre-60S populations (Figure 2—figure supplement 1C). Further examination of the observed 2DTM SNR ratios revealed the presence of at least one additional pre-60S population (Figure 6). The observed shift towards the more mature LN 60S intermediate when nuclear export was inhibited is evidence for detection of a biologically relevant pre-60S population (Figure 6G). We also observed a small population of cytoplasmic 60S targets with higher SNR values against the LN 60S template than against the mature 60S (Figure 6D). 60S maturation intermediates exit the nucleus in an immature form and complete maturation in the cytoplasm. Whether the cytoplasmic 60S with higher SNR values against the LN 60S template represent cytoplasmic intermediates or reflect the limits of our classification strategy requires further investigation. Future work using additional templates representing other intermediates of 60S maturation will reveal further details about the spatiotemporal organization of pre-60S intermediates in cells.
 
@@ -164,54 +467,130 @@ In this study, we identified an EN 60S population of nuclear 60S with the 5S rRN
 
 ## Materials and methods
 
-## Yeast cell culture and plunge freezing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Sacchromyces cerevisiae)</td>
+      <td>BY4741</td>
+      <td>ATCC</td>
+      <td>S288C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Sacchromyces cerevisiae)</td>
+      <td>Crm1 (T539C)</td>
+      <td>Neville and Rosbash, 1999</td>
+      <td>MNY8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>Grant et al., 2018; Lucas et al., 2021</td>
+      <td></td>
+      <td>https://cistem.org/development</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast cell culture and plunge freezing
 
 Saccharomyces cerevisiae strains BY4741 (ATCC), or Crm1 (T539C) (MNY8 Neville and Rosbash, 1999 a gift from Michael Rosbash, Brandeis) colonies were inoculated in 20 mL of YPD, diluted 1/5 and grown overnight at 30 °C to an OD600 of ~0.5–1. The cells were then diluted to 10,000 cells/mL and 3 µL applied to a 2/1 or 2/2 Quantifoil 200 mesh Cu grid, allowed to rest for 15 s, back-side blotted for 8 s at 27 °C, 95% humidity followed by plunge freezing in liquid ethane at –184 °C using a Leica EM GP2 plunger. Frozen grids were stored in liquid nitrogen until FIB-milled. When indicated Crm1 (T539C) cells were additionally incubated at 30 °C with shaking in the presence of 200 nM Leptomycin B (Cell Signaling Technologies) for 30 min before applying to grids and plunge freezing.
 
-## FIB milling
+### FIB milling
 
 Grids were transferred to an Aquilos cryo-FIB SEM, sputter coated with metallic Pt for 15 s then coated with organo-Pt for 10 s and milled in a series of sequential milling steps using a 30kV Ga +beam using the following protocol: rough milling 1: 0.1 nA rough milling 2: 50 pA lamella polishing: 10 or 30 pA at a stage tilt of 15° (milling angle of 8°).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Lamellae were imaged using a Titan Krios 300 keV cryo-TEM (Thermo Fisher) equipped with a K3 direct detector (Gatan) and an energy filter (Gatan), slit width 20 eV at a magnification of 81000 x, corresponding to a sample pixel size of 1.06 Å, and a 100 μm objective aperture. A defocus of –0.5 μm was targeted using an adjacent sacrificial area and the autofocus function in SerialEM (Mastronarde, 2005). Movies were collected at an exposure rate of 1 e-/Å2/frame to a total dose of 30 e-/Å2.
 
-## Image processing
+### Image processing
 
 Images were processed using cisTEM (Grant et al., 2018) as described previously (Lucas et al., 2021), and using sample tilt determination implemented in a modified version of CTFFIND4 (Lucas et al., 2021; Rohou and Grigorieff, 2015) to estimate sample defocus and to account for the ~8° tilt of the lamella introduced during FIB-milling. Images of 3D densities and 2DTM results were prepared in ChimeraX (Pettersen et al., 2021).
 
-## 2DTM
+### 2DTM
 
 The molecular models noted in the text were aligned to one another to have the same origin using their 28S rRNA using the MatchMaker function in UCSF Chimera (Meng et al., 2006; Pettersen et al., 2004) and 2DTM templates were generated by simulating 3D densities (Himes and Grigorieff, 2021). 2DTM was performed using the program match_template in the cisTEM GUI (Lucas et al., 2021) using the default parameters. Significant targets were defined as those exceeding a threshold of 7.85, which allows a single false positive per image, assuming no correlation between the rotational or defocus searches. Prior comparisons with 3DTM results suggest that this threshold is conservative and that the true false positive rate is likely lower (Lucas et al., 2021). The coordinates were refined using the program refine_template (Lucas et al., 2021) in rotational steps of 0.1° and a defocus range of 200 Å with a 10 Å step.
 
-## 3D reconstruction using mature 60S 2DTM coordinates
+### 3D reconstruction using mature 60S 2DTM coordinates
 
 We used the program prepare_stack_matchtemplate (Lucas et al., 2021) to generate a particle stack using the locations and orientations of the significant mature 60S-detected targets after refinement as described above. We then used cisTEM to generate a 3D reconstruction from 3991 mature 60S targets detected in 28 images of the nuclear periphery, only including targets with a 2DTM SNR of >8. The reconstruction had a nominal resolution of 3.5 Å using an Fourier Shell Correlation (FSC) threshold of 0.143 and a mask radius of 175 Å (Figure 1—figure supplement 3A; Rosenthal and Henderson, 2003) that is expected to overestimate the resolution due to overfitting (Grigorieff, 2000; Lucas et al., 2021). To best capture the density in the 40S, we low-pass filtered the reconstruction to 10 Å, representing an FSC of 0.9. Local resolution calculations were performed using local_resolution in Phenix (Liebschner et al., 2019), default parameters and extending to 3.5 Å.
 
-## Calculating 2DTM SNR values and ratios of SNR values
+### Calculating 2DTM SNR values and ratios of SNR values
 
 Targets identified in two or more searches with aligned templates were identified using the program align_coordinates (Lucas et al., 2021). The 2DTM SNRs of targets identified in two or more searches were compared by taking the log2 of the SNR ratio. The log2 was used in place of the direct ratio because the shape of the distribution is independent of the order of comparison, except for a mirror around 0, while the distribution of the direct ratios shows more complicated behavior. Histograms of both the log2 values and direct ratios of the cytoplasmic 60S population have approximately Gaussian distributions with fits characterized by the coefficient of determination R2=0.993 and R2=0.991 respectively. To calculate the change in the 2DTM SNR with modified templates, the program refine_template (Lucas et al., 2021) was used to calculate 2DTM SNRs for additional templates using the locations and orientations from a previous exhaustive search with an initial template, without performing a rotational search by specifying the rotational step as 360°. To obtain consistent ratios of 2DTM SNRs, the 2DTM SNR values for both the initial template and the additional templates were calculated.
 
-## Calculating histograms from different subcellular regions
+### Calculating histograms from different subcellular regions
 
 Subregions of the image in Figure 1B, corresponding to the nucleus, cytoplasm and vacuole were identified as indicated in Figure 1—figure supplement 2. Care was taken to avoid the edges of the image and regions of the image corresponding to membranes. The corresponding regions of the normalized MIP resulting from a 2DTM search using the mature 60S template were extracted using the clip resize function in IMOD (Kremer et al., 1996), defining a box of 1000x1000 pixels. Image histograms were calculated from the flattened array of pixel values extracted using the python suite mrcfile (Burnley et al., 2017) using only the 2DTM SNR values below the calculated threshold.
 
-## Calculating relative probabilities
+### Calculating relative probabilities
 
-Histograms were generated (bin 0.05) of the calculated log2 2DTM SNR ratios and Gaussians were fitted using GaussianMixture in sklearn (Pedregosa et al., 2011). Based on the shape of the histogram, we model the log2 2DTM SNR ratios as a mixture of K-component multivariate Gaussian distributions, when K templates are used in the search. We fit Gaussians to the log2 SNR ratios of any two selected templates. Each target i is then associated with K-1 such SNR ratios xi . For example, for K=4, we can define the following:(2)Xi=[log2(SNRi,k=1/SNRi,k=2)log2(SNRi,k=1/SNRi,k=3)log2(SNRi,k=1/SNRi,k=4)]
+Histograms were generated (bin 0.05) of the calculated log2 2DTM SNR ratios and Gaussians were fitted using GaussianMixture in sklearn (Pedregosa et al., 2011). Based on the shape of the histogram, we model the log2 2DTM SNR ratios as a mixture of $K$-component multivariate Gaussian distributions, when $K$ templates are used in the search. We fit Gaussians to the log2 SNR ratios of any two selected templates. Each target $i$ is then associated with $K-1$ such SNR ratios $x_{i}$ . For example, for $K=4$, we can define the following:
 
-For particles belonging to the same population (class), the log2 SNR ratio can be described by the multivariate Gaussian probability density function (PDF):(3)P(Xi|Θk,Zi=k)∼N(Mk,Σk)=1(2π)d2|Σk|12exp((Xi−Mk)TΣk−1(Xi−Mk)2)(4)P(zi=k)=πk
+$$
+X_{i}=[log_{2}(SNR_{i,k=1}/SNR_{i,k=2})log_{2}(SNR_{i,k=1}/SNR_{i,k=3})log_{2}(SNR_{i,k=1}/SNR_{i,k=4})]
+$$
 
-where Xi is a vector of K-1 log2 SNR ratios, zi indicates the identity of the target (k=1,2,…,K), and Θk=Μk,Σk,πk is the set of parameters of the Gaussian PDF N and the prior probability that a detected target belonging to class k. The total joint likelihood for N detected targets is then(5)L(Θ;X)=P(X|Θ)=Πi=1NP(Xi|Θ)=Πi=1NΣj=1KπjN(Mj,Σj)
+For particles belonging to the same population (class), the log2 SNR ratio can be described by the multivariate Gaussian probability density function (PDF):
 
-with Θ=Θ1,Θ2…ΘK and X=X1,X2…XN .
+$$
+P(X_{i}|Θ_{k},Z_{i}=k)∼N(M_{k},Σ_{k})=\frac{1}{(2\pi)^{\frac{d}{2}}|Σ_{k}|^{\frac{1}{2}}}exp(\frac{(X_{i}−M_{k})^{T}Σ_{k}^{−1}(X_{i}−M_{k})}{2})
+$$
 
-We use an expectation-maximization (EM) algorithm to iteratively calculate the maximum likelihood estimates of the model parameters where the E-step calculates the posterior probability via Bayes rule,(6)P(zi=k|Xi,Θ)=πkN(Mk,Σk)Σj=1KπjN(Mj,Σj)
 
-and the M-step updates the model parameters for each class,(7)πk=Σi=1NP(zi=k|Xi,Θ)N(8)Mk=Σi=1NXi⋅P(zi=k|Xi,Θ)Σi=1NP(zi=k|Xi,Θ)(9)Σk=Σi=1NP(zi=k|Xi,Θ)(Xi−Mk)(Xi−Mk)TΣi=1NP(zi=k|Xi,Θ)
 
-Prior probabilities (π) can be set by subjective assessment based on the experiment, or set to 1/K where all classes have equal probability. For example, to determine the relative probability that an LN 60S-detected nuclear target belongs to the LN 60S or EN 60S class, we assume that their relative frequencies are the same and therefore the prior probability of the two intermediates in the nucleus is equal: P(LN 60S)=(EN 60S)=0.5.
+$$
+P(z_{i}=k)=\pi_{k}
+$$
 
-## Simulations
+where $X_{i}$ is a vector of $K-1$ log2 SNR ratios, $z_{i}$ indicates the identity of the target ($k=1,2,…,K$), and $Θ_{k}=Μ_{k},Σ_{k},\pi_{k}$ is the set of parameters of the Gaussian PDF $N$ and the prior probability that a detected target belonging to class $k$. The total joint likelihood for $N$ detected targets is then
+
+$$
+L(Θ;X)=P(X|Θ)=Π_{i=1}^{N}P(X_{i}|Θ)=Π_{i=1}^{N}Σ_{j=1}^{K}\pi_{j}N(M_{j},Σ_{j})
+$$
+
+with $Θ=Θ_{1},Θ_{2}…Θ_{K}$ and $X=X_{1},X_{2}…X_{N}$ .
+
+We use an expectation-maximization (EM) algorithm to iteratively calculate the maximum likelihood estimates of the model parameters where the E-step calculates the posterior probability via Bayes rule,
+
+$$
+P(z_{i}=k|X_{i},Θ)=\frac{\pi_{k}N(M_{k},Σ_{k})}{Σ_{j=1}^{K}\pi_{j}N(M_{j},Σ_{j})}
+$$
+
+and the M-step updates the model parameters for each class,
+
+$$
+\pi_{k}=\frac{Σ_{i=1}^{N}P(z_{i}=k|X_{i},Θ)}{N}
+$$
+
+
+
+$$
+M_{k}=\frac{Σ_{i=1}^{N}X_{i}⋅P(z_{i}=k|X_{i},Θ)}{Σ_{i=1}^{N}P(z_{i}=k|X_{i},Θ)}
+$$
+
+
+
+$$
+Σ_{k}=\frac{Σ_{i=1}^{N}P(z_{i}=k|X_{i},Θ)(X_{i}−M_{k})(X_{i}−M_{k})^{T}}{Σ_{i=1}^{N}P(z_{i}=k|X_{i},Θ)}
+$$
+
+Prior probabilities ($\pi$) can be set by subjective assessment based on the experiment, or set to $1/K$ where all classes have equal probability. For example, to determine the relative probability that an LN 60S-detected nuclear target belongs to the LN 60S or EN 60S class, we assume that their relative frequencies are the same and therefore the prior probability of the two intermediates in the nucleus is equal: $P(LN 60S)=(EN 60S)=0.5$.
+
+### Simulations
 
 We used the cisTEM program simulate (Himes and Grigorieff, 2021) to simulate images of 200 randomly oriented LN or mature 60S using a pixel size of 1.06 Å, an ice thickness of 100 nm amd an exposure rate of 1 e-/Å2 to a total dose of 30 e-/Å2, matching the experimental data. 2DTM was performed as described above.

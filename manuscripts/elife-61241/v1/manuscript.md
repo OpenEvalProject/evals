@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Adverse early-life exposures have a lasting negative impact on health. Neonatal hyperoxia that is a risk factor for bronchopulmonary dysplasia confers susceptibility to influenza A virus (IAV) infection later in life. Given our previous findings that the circadian clock protects against IAV, we asked if the long-term impact of neonatal hyperoxia vis-à-vis IAV infection includes circadian disruption. Here, we show that neonatal hyperoxia abolishes the clock-mediated time of day protection from IAV in mice, independent of viral burden through host tolerance pathways. We discovered that the lung intrinsic clock (and not the central or immune clocks) mediated this dysregulation. Loss of circadian protein, Bmal1 , in alveolar type 2 (AT2) cells recapitulates the increased mortality, loss of temporal gating, and other key features of hyperoxia-exposed animals. Our data suggest a novel role for the circadian clock in AT2 cells in mediating long-term effects of early-life exposures to the lungs.
+Adverse early-life exposures have a lasting negative impact on health. Neonatal hyperoxia that is a risk factor for bronchopulmonary dysplasia confers susceptibility to influenza A virus (IAV) infection later in life. Given our previous findings that the circadian clock protects against IAV, we asked if the long-term impact of neonatal hyperoxia vis-à-vis IAV infection includes circadian disruption. Here, we show that neonatal hyperoxia abolishes the clock-mediated time of day protection from IAV in mice, independent of viral burden through host tolerance pathways. We discovered that the lung intrinsic clock (and not the central or immune clocks) mediated this dysregulation. Loss of circadian protein, Bmal1, in alveolar type 2 (AT2) cells recapitulates the increased mortality, loss of temporal gating, and other key features of hyperoxia-exposed animals. Our data suggest a novel role for the circadian clock in AT2 cells in mediating long-term effects of early-life exposures to the lungs.
 
 ## Introduction
 
@@ -40,43 +40,71 @@ The early neonatal period represents a critical window for the development and c
 
 ## Results
 
-## Neonatal hyperoxia abrogates the circadian protection from influenza infection in recovered adults
+### Neonatal hyperoxia abrogates the circadian protection from influenza infection in recovered adults
 
 We previously showed that mice infected at ZT11 (ZT11 refers to ‘Zeitgeber Time’ 11 or dusk which marks the beginning of the active phase in mice since they are nocturnal) had threefold higher mortality than mice infected at ZT23 (dawn or at the beginning of their rest phase) (Sengupta et al., 2019). Upon global disruption of the clock (Bmal1fl/fl:CAGGcreERt2/+), in adult animals, the time of day difference was lost such that the mortality was high irrespective of the time of day of infection (Sengupta et al., 2019). Here we hypothesized that neonatal hyperoxia would disrupt circadian rhythms to result in a loss of temporal difference in outcomes in recovered adult mice infected with IAV at ZT11(dusk) or ZT23 (dawn). Mice exposed to either hyperoxia or room air as neonates were recovered to adulthood and infected with IAV (H1N1 mouse-adapted strain PR8) at either ZT23 or ZT11 (Figure 1a). Mice are born at the saccular stage of lung development that corresponds to 24–28 weeks gestation for humans (Warburton et al., 2010) and thus neonatal hyperoxia provides an excellent model to study BPD (Hilgendorff et al., 2014). The room air controls maintained the time of day difference in mortality; the group infected at ZT11 had a mortality 2.6 times higher than the mice infected at ZT23 (survival 72% in ZT23 vs. 33% in ZT11, p<0.01). By contrast, the mice that had been exposed to hyperoxia as neonates lost this time of day difference: both groups had mortality comparable to the ZT11 (in RA) group (survival in hyperoxia groups: ZT23 at 37% and ZT11 at 25%; Figure 1b and c). However, when adult mice exposed to hyperoxia were infected with IAV at either ZT23 or ZT11 (Figure 1—figure supplement 1), they maintained the same difference in outcomes as seen in room air controls in Figure 2b and c. Thus, exposure to hyperoxia as adults did not appear to impair the circadian control over mortality and morbidity from IAV seen with exposure to neonatal hyperoxia. Considered together, this suggests that early life (p0–p5) accords a unique window of influencing circadian regulation and as such exposure to hyperoxia during this period disrupts circadian regulation of the lung injury response to IAV infection.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental model for neonatal hyperoxia followed by IAV infection: C57Bl6 pups aged <12 hr were exposed to either hyperoxia (>95% O2) or room air (21% O2) from PN0–5. Thereafter, the pups were recovered in room air to adulthood (8–12 weeks). As adults, the mice were place in reverse 12 hr light–dark cycles for 2 weeks before being infected with the influenza A virus (PR8). Experimental design: Adult mice were placed in 12 hr light–dark reverse cycles and infected with 25–40 PFU of PR8 at either ZT23 (dawn or just before the onset of rest phase) or at ZT11 (dusk or just before the onset of activity, since mice are nocturnal animals). (B) Survival (n = 17–18 per group, **p=0.0027 log-rank test test from three independent experiments) and (C) Percentage of body weight lost (n = 10–15 per group, *p<0.001 ANOVA for repeated measures) following IAV infection (25–40 PFU PR8) at either ZT23 (dawn) or at ZT11(dusk). (D) Survival of mice exposed to hyperoxia as adults and infected with IAV after 3–4 weeks of recovery (n = 8–16 per group, *p=0.0417 log-rank test from two independent experiments). (E) Percentage of body weight lost (n = 17–18 per group, *p=0.0091 for time of infection by REML mixed effects model for repeated measures) following IAV infection (25–40 PFU PR8) at either ZT23 (dawn or just before the onset of rest phase) or at ZT11 (dusk or just before the onset of activity, since mice are nocturnal animals).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Thereafter, the animals were allowed to recover in room air and acclimatized to revere light–dark cycles for 3–4 weeks. Mice were infected with 25–40 PFU of PR8 at either ZT23 (dawn or just before the onset of rest phase) or at ZT11 (dusk or just before the onset of activity, since mice are nocturnal animals).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** After the 5 day neonatal hyperoxia exposure, body weight of both the hyperoxia-exposed mice and their room air littermates were measured at 4 weeks and at 8 weeks as a measure of overall well-being (n = 9–15 per group for females and n = 16–17 per group for males).
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig2-v1.jpg)
 
-**Figure 2.:** Mice pups <12 hr old were exposed to either hyperoxia or room air for 5 days and then recovered in RA into adulthood. As adults, effect on the central (locomotor activity) and peripheral (gene expression from lung and spleen, flow cytometry of lung resident immune cells, and bioluminescence of period two gene) clocks was measured. (A) Central effects were assessed by actigraphy measurements of rest and activity in constant darkness. Period, amplitude, activity counts, and phase of this locomotor activity in adult mice exposed to neonatal hyperoxia or room air (n = 6–15 per group). (B) Representative actigraph images taken from adult mice exposed to either neonatal hyperoxia or room air. This graph depicts the rest–activity behavior from a representative mouse where consecutive days are plotted on the y-axis, and time (in hours) is shown on the x-axis. The black bars represent the number of turns of the running wheel/movement sensed by the infrared motion sensors and indicates a time when the mouse of active. (C) Period length across days to acclimatize from constant darkness (DD) to 12 hr LD conditions adult mice exposed to neonatal hyperoxia or room air (n = 5–6 per group).  Figure 2—source data 1.Figure 2.
+**Figure 2.:** Mice pups <12 hr old were exposed to either hyperoxia or room air for 5 days and then recovered in RA into adulthood. As adults, effect on the central (locomotor activity) and peripheral (gene expression from lung and spleen, flow cytometry of lung resident immune cells, and bioluminescence of period two gene) clocks was measured. (A) Central effects were assessed by actigraphy measurements of rest and activity in constant darkness. Period, amplitude, activity counts, and phase of this locomotor activity in adult mice exposed to neonatal hyperoxia or room air (n = 6–15 per group). (B) Representative actigraph images taken from adult mice exposed to either neonatal hyperoxia or room air. This graph depicts the rest–activity behavior from a representative mouse where consecutive days are plotted on the y-axis, and time (in hours) is shown on the x-axis. The black bars represent the number of turns of the running wheel/movement sensed by the infrared motion sensors and indicates a time when the mouse of active. (C) Period length across days to acclimatize from constant darkness (DD) to 12 hr LD conditions adult mice exposed to neonatal hyperoxia or room air (n = 5–6 per group).
 
-## Neonatal hyperoxia has only subtle effects on the central clock in adulthood
+### Neonatal hyperoxia has only subtle effects on the central clock in adulthood
 
 To determine the effect of neonatal hyperoxia on central circadian rhythms in adulthood, we evaluated the locomotor activity patterns of adult mice (8–12 weeks old of both genders) exposed to 5 days of neonatal hyperoxia (≥95% O2 starting <12 hr of age to 5 days post-natal). A similar duration of hyperoxia is known to cause alveolar oversimplification, as seen in BPD (Yee et al., 2011). Immediately after exposure, the pups exposed to hyperoxia weigh less (Figure 1—figure supplement 2). However, these pups are indistinguishable from the room air controls in weight or overall activity by 8–12 weeks of age (Figure 1—figure supplement 2). To exclude differences in exercise tolerance, we measured locomotor activity using both infrared sensors and running wheels and found that the two methods yielded similar results. Interestingly, while phase, period length, amplitude, and total activity patterns were comparable between the two groups, the hyperoxia group displayed significantly more variation in their period lengths (Figure 2a).
 
 Infection with IAV disrupts circadian locomotor rhythms under in a mouse model of COPD (Sundar et al., 2015), raising the possibility that further stress may unmask a central phenotype. To address the hypothesis that neonatal hyperoxia caused instability of circadian regulation, we examined the ability of the animals to re-entrain to 12 hr light-dark cycles after several weeks in constant darkness. Entrainment refers to the re-synchronization of the internal or endogenous circadian rhythms to external cues (Golombek and Rosenstein, 2010), such as the change in lighting schedule here, and is a way to assess the function of the central clock (Tahara and Shibata, 2018). Normoxia and hyperoxia groups did not entrain differently to this small change (Figure 2b and c). Thus, considered together, these data are consistent with the hypothesis that effects of neonatal hyperoxia on IAV infection are not mediated via lasting changes in the central clock.
 
-## Effect of neonatal hyperoxia on resident immune cells in the lung
+### Effect of neonatal hyperoxia on resident immune cells in the lung
 
 We next addressed the possibility that loss of circadian gating of IAV responses in mice exposed to neonatal hyperoxia was secondary to circadian dysregulation of the immune response. We harvested lungs from adult animals exposed to either room air or hyperoxia as neonates and separated different populations of immune cells by flow cytometry at either the beginning of the rest phase (ZT23) or the beginning of the active phase (ZT11). While the total CD45+ population did not differ at these time points in the normoxia group, mice at ZT23 had higher numbers of CD45+ cells than at ZT11 in the hyperoxia group (Figure 3a). The percentage of natural killer (NK) was significantly lower in the hyperoxia-exposed mice at both time points. And the phase of the monocytes seems to reverse upon exposure to hyperoxia. Interestingly, in our previous work, more NK cells and lesser inflammatory monocytes were present in the group infected at ZT23 relative to the ZT11 group and thus associated with better outcomes (Sengupta et al., 2019). Since these changes in the immune population were noted at baseline, we delved further into the circadian control of immune response to IAV as a mechanism to explain the lack of circadian protection in adults exposed to hyperoxia as neonates.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig3-v1.jpg)
+
+**Figure 3.:** (A) Flow cytometric enumeration of the CD45+ cells from lungs of adult mice exposed to neonatal hyperoxia or room air (n = 5–7/group from three independent experiments). (B) Viral burden measure by hemagglutination inhibition assay (n = 5–7/group) by two-way ANOVA, p<0.001 for time post-infection, p=0.8855 for treatment group and interaction. (C) Left: Representative micrographs of H and E stained lung sections 8 days after IAV (40 PFU) treatment of adults exposed to neonatal hyperoxia or room air (photomicrograph bar = 100 µm). Right: Severity of lung injury quantified using an objective histopathological scoring system by a researcher blinded to study group (n = 4–8 mice/group; data as median, IQR; Wilcoxon rank sum test; **p<0.01; pooled data from two independent experiments). (D) Bronchoalveolar lavage (BAL) from animals infected at either ZT11 or ZT23 on day 1 and 5 p.i. (n = 5–6/group, p=0.0001 for time at infection, p<0.0001 time after infection, and p=0.0023 for interaction by two-way ANOVA).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig3-figsupp1-v1.jpg)
 
 Immune mechanisms underlying the circadian dysregulation of IAV-induced lung injury in adults exposed to neonatal hyperoxia: We showed previously that circadian control of IAV-induced lung injury and outcomes is not mediated by viral burden, but rather by the control of inflammation, with the group infected at ZT11 revealing evidence of exaggerated inflammation (Sengupta et al., 2019). Coupled with our findings above of impaired immune cell regulation in hyperoxia-treated animals, we hypothesized that the loss of time-of-day protection in these animals would be manifest as an exaggerated inflammatory response irrespective of the time of infection.
 
 Consistent with our previous work, we found that the viral burden was comparable between the groups infected at ZT11 or ZT23; this held true in both neonatal hyperoxia- and room-air-exposed groups (Figure 3b and Figure 3—figure supplement 1). Next, we quantified lung injury on histological analyses using a previously validated scoring system (Sengupta et al., 2019). The scores were based on peri-bronchial inflammation, peri-vascular inflammation, alveolar inflammatory exudates, and epithelial necrosis/sloughing. (Scoring system detailed in Figure 3—source data 2.) On histological analyses, animals infected in the hyperoxia group scored worse for lung injury and the time of day difference in severity was absent (Figure 3c). To address the hypothesis that an exaggerated inflammatory response abrogated circadian variability in the innate immune response of animals exposed to neonatal hyperoxia, we performed bronchoalveolar lavage on days 1 and 5 following infection with IAV. Concordant with our previous work, among control animals exposed to room air as neonates, the room air group showed a higher total BAL count at ZT11 than at ZT23 by day 5 p.i. (Figure 3d) among control animals exposed to room air as neonates. Contrary to our hypothesis, this was not influenced by neonatal exposure to hyperoxia, since even among the hyperoxia-exposed pups, the total BAL count was higher in the ZT11 than in the ZT23 group. Thus, impaired circadian regulation of the response to IAV does not appear to arise directly from deficits in the circadian regulation of innate immunity.
 
-## Effect of neonatal hyperoxia on the pulmonary circadian system
+### Effect of neonatal hyperoxia on the pulmonary circadian system
 
 We next investigated the effect of hyperoxia on the intrinsic clock in the lung by whole lung gene expression assays as well as with the use of a circadian reporter. On visual inspection, subtle differences in the phase of the oscillation of core clock genes Bmal1, Per2, and Nr1d2 were noted as a consequence of neonatal hyperoxia, but none of these changes were statistically significant (Figure 4a). However, since bulk gene expression may conceal functionally relevant changes in cell-specific circadian oscillation, we next used Per2luc mice, exposed them to hyperoxia as neonates and then recorded their bioluminescence ex vivo at 10–11 weeks of age. The hyperoxia-exposed animals showed rhythmic expression of the Period2 gene with comparable periodicity and phase to the animals exposed to room air. However, the amplitude of these oscillations was significantly dampened in the hyperoxia group (Figure 4b). These data are consistent with the hypothesis that the perturbation induced by IAV infection unmasks a dysregulation of circadian function intrinsic to the lung in animals exposed to neonatal hyperoxia.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig4-v1.jpg)
 
-**Figure 4.:** (A) Gene expression of clock genes from whole lungs harvested at 6 hr intervals determined by qPCR (n = 4–6 per time point from three different experiments). (B) Representative bioluminescence tracings, period, amplitude, and phase from lung explants from adult Per2luc mice exposed to neonatal hyperoxia or room air (n = 4 from two independent experiments).  Figure 4—source data 1.Figure 4.  Figure 4—source data 2.Figure 4.
+**Figure 4.:** (A) Gene expression of clock genes from whole lungs harvested at 6 hr intervals determined by qPCR (n = 4–6 per time point from three different experiments). (B) Representative bioluminescence tracings, period, amplitude, and phase from lung explants from adult Per2luc mice exposed to neonatal hyperoxia or room air (n = 4 from two independent experiments).
 
-## Disrupting the circadian clock in AT2 cells in adulthood recapitulates the loss of time of day protection seen in adults exposed to neonatal hyperoxia
+### Disrupting the circadian clock in AT2 cells in adulthood recapitulates the loss of time of day protection seen in adults exposed to neonatal hyperoxia
 
 Neonatal hyperoxia disrupts the development of the respiratory epithelium, at least in part due to the depletion of AT2 cells after recovery (Yee et al., 2014). During hyperoxia, the AT2 cell number expands as a source of AT1 cells; upon return to room air for recovery, there is a progressive depletion of AT2 cells, with approximately 70% surviving at 8 weeks of age (Yee et al., 2014; Yee et al., 2016). Thus, given the role of the type two airway epithelial cells in hyperoxic injury and repair, we asked if clock disruption in AT2 cells would be sufficient to re-capitulate the effects of neonatal hyperoxia in terms of loss of circadian gating in response to IAV. An effect localized to AT2 cells would also be consistent with the relatively intact circadian gene expression in hyperoxia-treated mice, given that AT2 contribute only a small percentage of the cells in the total lung (Figure 4a).
 
 To test the relevance of the clock in AT2 cells, we generated mice in which the core clock gene, Bmal1 was deleted in these cells (SftpcCreERt2/+::Bmal1fl/fl). In the tamoxifen-treated SftpcCreERt2/+::Bmal1fl/fl mice, Bmal1 expression was selectively absent in AT2 cells but not elsewhere such as the airway epithelium (Figure 5—figure supplement 1). While the cre− mice infected in the morning had better survival than cre− mice infected in the evening (Figure 5a; 72% survival in CT23 group versus 20% survival is CT11 group; p<0.01 by Mental–Cox test), this time of day difference was lost in mice lacking Bmal1 in their AT2 cells (Figure 5a; 25% survival in CT23 group versus 38% in the CT11 group of SftpcCreERt2/+::Bmal1fl/fl). CT11 and CT23 refer to the time corresponding to ZT11 and ZT23, respectively, in constant darkness. In models of Bmal1 deletion, we and others have used constant darkness conditions to avoid any differential effects of light on relevant peripheral clocks (Gibbs et al., 2014; Sengupta et al., 2019; Yang et al., 2016). A pattern similar to the mortality was also noted in the weight loss trajectory from SftpcCreERt2/+::Bmal1fl/fl and cre−littermates (Figure 5b). Thus, post-natal deletion of Bmal1 specifically in AT2 epithelial cells thus recapitulated the impact of neonatal hyperoxia on IAV-induced mortality and morbidity.
 
-## Bmal1 deletion in AT2 cells reiterates the phenotype of circadian dysregulation seen in adult animals exposed to hyperoxia as neonates
+![Figure 5.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig5-v1.jpg)
+
+**Figure 5.:** Experimental design: SftpcCreERt2/+::Bmal1fl/fl mice (mice lacking Bmal1 in AT2 cells of the lung epithelium) and their creneg littermates were treated with tamoxifen at 6–8 weeks of age and acclimatized to reverse cycles of 12 hr LD for 2 weeks. Thereafter, they were maintained in constant darkness for 2–4 days prior to administering IAV (PR8) at CT23 and CT11 and acclimatized to reverse cycles of 12 hr LD for 2 weeks. Thereafter, they were maintained in constant darkness for 2–3 days prior to administering IAV (PR8) at CT23 and CT11. CT23 and CT11 refer to the time corresponding to ZT23 and ZT11, respectively, when animals are maintained under constant darkness conditions. (A) Survival curves (n = 16–18 in SftpcCreERt2/+::Bmal1fl/fl groups and n = 20–21 in creneg, *p=0.0014 Mantel–Cox test; pooled data from four independent experiments). (B) Percentage of body weight lost (n = 16–18 in SftpcCreERt2/+::Bmal1fl/fl groups and n = 18–20 in creneg group from three independent experiments *p<0.01 ANOVA for repeated measures). (C) Viral burden measure by hemagglutination inhibition assay (n = 5–13/group) by two-way ANOVA, p<0.0001 for time post-infection, p=0.9981 for treatment group and interaction. (D) Left: Representative micrographs of H and E stained lung sections 8 days after IAV (40 PFU) treatment of SftpcCreERt2/+::Bmal1fl/fl mice and their cre− littermates (photomicrograph bar = 100 µm). Right: Severity of lung injury quantified using an objective histopathological scoring system by a researcher blinded to study group (n = 4–8 mice/group; data as median, IQR; Wilcoxon rank sum test; **p=0.0014, CT23 vs. CT11 for Cre+ refers to SftpcCreERt2/+::Bmal1fl/fl mice vs. Cre− which refers to SftpcCreERt2neg::Bmal1fl/fl; pooled data from three independent experiments).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (n = 5–8/group).
+
+### Bmal1 deletion in AT2 cells reiterates the phenotype of circadian dysregulation seen in adult animals exposed to hyperoxia as neonates
 
 As loss of circadian protection may be caused by different mechanisms, we sought to determine whether this loss in the SftpcCreERt2/+::Bmal1fl/fl animals was associated with similar underlying mechanisms as those one seen in hyperoxia-exposed animals. Specifically, we determined whether the loss of circadian protection was mediated through anti-viral or host tolerance pathways.
 
@@ -84,7 +112,7 @@ We found that the viral loads at days 1 and 5 and day 8 were comparable across
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61241/elife-61241-fig6-v1.jpg)
 
-**Figure 6.:** (A) Whole lung gene expression measured by qPCR on day 5 post-infection in adults exposed to neonatal hyperoxia or room air (left panel) and Sftpc mice (mice lacking CreERt2/+::Bmal1fl/flBmal1 in AT2 cells of the lung epithelium referred to in the figures as SPC-cre+) and their cre littermates referred to as SPC-cre− (right panel). (−B) Bronchoalveolar lavage (BAL) from animals infected at either CT11 or CT23 on day 5 p.i. (n = 4–6/group, p=0.0063 for time of day by two-way ANOVA).  Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Whole lung gene expression measured by qPCR on day 5 post-infection in adults exposed to neonatal hyperoxia or room air (left panel) and SftpcCreERt2/+::Bmal1fl/fl mice (mice lacking Bmal1 in AT2 cells of the lung epithelium referred to in the figures as SPC-cre+) and their cre− littermates referred to as SPC-cre− (right panel). (B) Bronchoalveolar lavage (BAL) from animals infected at either CT11 or CT23 on day 5 p.i. (n = 4–6/group, p=0.0063 for time of day by two-way ANOVA).
 
 ## Discussion
 
@@ -104,50 +132,165 @@ In conclusion, children born prematurely and suffering from even mild BPD have p
 
 ## Materials and methods
 
-## Animal models, hyperoxia exposure, and influenza infection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Bmal1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab230822</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pro-SPC (Rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>ab3786</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nk1.1 (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>108716</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6C (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>128024</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>103114</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11c (Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>117324</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b (Mouse monoclonal)</td>
+      <td>EBiosciences</td>
+      <td>11-0112-41, 47-0112-82</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3 (Rat monoclonal)</td>
+      <td>EBiosciences</td>
+      <td>11-0032-82</td>
+      <td>Flow cytometry (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6G (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>127606, 127608,</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Siglec F (Rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>552126</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Software Algorithm</td>
+      <td>Clocklab</td>
+      <td>Actimetrics</td>
+      <td></td>
+      <td>Rest-activity analyses</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td></td>
+      <td>D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemicals strain, strain background (include species and sex here)</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>C57BL/6J</td>
+      <td>Jax</td>
+      <td>Stock No: 000664 | B6</td>
+      <td>Both genders and age at infection &gt; 8 weeks</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models, hyperoxia exposure, and influenza infection
 
 For neonatal hyperoxia, newborn C57BL/6J mice (<12 hr old) were exposed to either 21% oxygen (room air) or ≥95% oxygen (O2) between post-natal days 0 and 5. Mice are born in the saccular phase of lung development and thus exposure to hyperoxia shortly after birth simulates the effects of hyperoxia on preterm lungs. This model of BPD is well established. Similar models have resulted in mild alveolar oversimplification and airway hyper-reactivity at 8 weeks of life (Yee et al., 2011). To minimize oxygen toxicity, nursing dams were switched out every 24 hr. Following exposure, the hyperoxia-exposed pups were recovered in room air with/alongside their littermates under 12 hr LD conditions until 8–10 weeks of age. For adult hyperoxia exposure, 8 week old C57BL/6J (RRID:IMSR_JAX:000664) mice were exposed to or ≥95% oxygen for 48 hr. Thereafter, the mice were recovered in room air for a period of 3–4 weeks and acclimatized to reverse light cycling to split up the group into two for further influenza infection.
 
 For influenza infections, mice were acclimatized to reverse cycles in specially designed circadian chambers for 2 weeks. Thereafter, they were infected at ZT23 or Z11 with 30 PFU of IAV (PR8) i.n. under light isoflurane anesthesia. This method has been used and validated in our previous work and is used by many circadian labs to remove confounding from infecting animals at different times of the conventional day (Sengupta et al., 2019).
 
-## Mouse strains and tamoxifen administration
+### Mouse strains and tamoxifen administration
 
 A mouse line with AT2 cell-specific knockout of Bmal1 was generated by crossing SftpcCre-ERT2/+, a tamoxifen-inducible Cre, with Bmal1fl/fl mice. The SftpcCreERT2/+ mice (on mixed Balbc/C567 background) were a kind gift from E.E. Morrissey (University of Pennsylvania; originally made in Dr. H. Chapman’s group [Chapman et al., 2011] and has been used widely in the field to target AT2 cells). The animals were back crossed for four to five generations onto a C57 background. Tamoxifen (Sigma–Aldrich) was dissolved/reconstituted in corn oil and ethanol to create a 100 mg/mL stock solution. Bmal1 deletion was induced by administration of tamoxifen (5 mg dissolved in corn oil/ethanol) via oral gavage for five consecutive days. Following tamoxifen treatment, mice were acclimatized to reverse light–dark cycles for 2 weeks, then placed in constant darkness 2 days before being infected with PR8 (25–35 PFU). Weights were monitored before, during, and post-tamoxifen administration, and no significant weight loss was noted. They were acclimatized to reverse light–dark cycles for 2 weeks and exposed/placed in constant darkness 24–48 days before being infected with PR8 at (CT/ZT23 and 11).
 
-## Flow cytometry
+### Flow cytometry
 
 Lungs were harvested after perfusion with 10 mL of phosphate-buffered saline (PBS) through the right ventricle. The lungs were digested using DNAse II (Roche) and Liberase (Roche) at 37°C for 30 min. Dissociated lung tissue was passed through a 70 µm cell strainer, followed by centrifugation and red blood cell (RBC) lysis. Cells were washed and re-suspended in PBS with 2% fetal bovine serum. (Details of the antibodies in Figure 3–Source data 1.) 2–3 × 106 cells were blocked with 1 µg of anti-CD16/32 (Fc Block) antibody and were stained with indicated antibodies on ice for 20 min. No fixatives were used. Flow cytometric data was acquired using FACS Canto flow cytometer and analyzed using FlowJo software (Tree Star, Inc). All cells were pre-gated on size as singlet live cells. All subsequent gating was on CD45+ in lung only. Neutrophils were identified as live, CD45+, and Ly6G+ cells. Ly6Chi monocytes were identified as live, CD45+Ly6G−Ly6ChiCD11b+ cells. NK cells were identified as CD45+Ly6G−LysC-NK1.1+CD3+ cells.
 
-## Histology and staining
+### Histology and staining
 
 Lungs from the mice were inflated and fixed with 10% neutral buffered formalin (Sigma–Aldrich), embedded in paraffin, and sectioned. Lung sections were stained with hematoxylin–eosin. Stained slides were digitally scanned at 40× magnification using Aperio CS-O slide scanner (Leica Biosystems, Chicago, IL). Representative images were taken from the scanned slides using Aperio ImageScope v 12.4. Soring was performed blindly using previously validated scoring method (Sengupta et al., 2019). Briefly, the eight lung fields selected at random at 20× magnification were scored based on a scale of 0–3 for the following (1) peri-bronchial infiltrates, (2) per-vascular infiltrates, (3) alveolar exudates, and (4) epithelial damage of medium-sized airways. For immunofluorescence staining, paraffin sections of SftpcCreERt2/+::Bmal1fl/fl+ and SftpcCreERt2neg::Bmal1fl/fl were obtained. Slides were stained with anti-BMAL1 antibody (Abcam, ab230822, 1:1000, RRID:AB_2889035) followed by secondary antibody staining with alexa 488 Straptavdin (A21370, Life Technologies, Eugene, OR, 1:200). Slides were then incubated with anti Pro Surfactant protein (EMD Millipore ab3786, RRID:AB_91588, 1:2000) followed by alexa 594 anti-rabbit (Invitrogen A21207). Slides were then rinsed, counterstained with DAPI, and rinsed again before cover slipping with Prolong Gold (P36930, Life Technologies, Eugene, OR). At least five randomly selected regions were imaged for three samples/genotype on Leica DM 4000 B at 20× and 63×.
 
-## Quantitative PCR
+### Quantitative PCR
 
 RNA was isolated/extracted from the inferior lobe of the mouse lung using TRIzol (Life Technologies). RNA was further purified using the RNeasy Mini Elute Clean Up Kit (Qiagen). The quantity and quality of RNA were assessed using the NanoDrop ND- 1000 spectrophotometer (NanoDrop Technologies Inc) and cDNA prepared with TaqMan. SYBR Green gene-expression assays were used to measure mRNA levels for genes of interest. Eukaryotic 18S rRNA (Life Technologies) and 28S (Sigma) were used as an internal control for TaqMan and SYBR Green assays, respectively. The samples were run on a Viia7 real-time PCR thermal cycler (Roche), and the relative ratio of the expression of each gene was calculated using the 2ΔΔCt method. Gene expression values for each of Bmal1, Cry1, Per2, Nr1d1, and Nr1d2 were fit by least squares to cosinor curves with a fixed period of 24 hr. Gene expression data was plotted in MATLAB (MATLAB R2020a; The MathWorks Inc) using the curve-fitting function that generates a best-fit line for the given data. A cosinor linear model was fit to the data for each gene (Cornelissen, 2014). An F-test comparing the full model allowing for differences in amplitude, phase, and mesor between the hyperoxia and room air conditions to the restricted model allowing only differences in mesor between conditions yielded no significant results at the p=0.05 level.
 
 Primers: All primers were procured from Thermofisher life sciences. Catalog numbers are provided in source data file.
 
-## Viral titration
+### Viral titration
 
 As described before (Sengupta et al., 2019), we harvested lungs at different time points following infection, as indicated in the specific experiment. Following homogenization in PBS–gelatin (0.1%), these lungs were frozen for preservation. The presence of influenza virus was evaluated using MCDK (RRID:CVCL_0422) cells with 1:10 dilutions of the lung homogenates at 37°C. After 1 hr of infections, 175 µL of media containing 2 µg/mL trypsin was added and the cells were further incubated for 72 hr at 37°C. A total of 50 µL of medium was then removed from the plate and tested by hemagglutination of chicken RBCs for the presence of virus particles. The hemagglutination of RBCs indicated the presence of the virus.
 
-## Rest–activity measurements
+### Rest–activity measurements
 
 Mice were singly housed in circadian light control boxes (Actimetrics) to measure their locomotor or rest–activity rhythms using either running wheels or Infrared Motion Sensors (Actimetrics). After the mice were acclimatized to circadian chambers, their activity was measured in 12 hr LD conditions for 2 weeks, constant dark (DD) conditions for 2–4 weeks, and again in 12 hr LD conditions. Period, amplitude, phase, and total activity counts were calculated. In the second shift from constant darkness to 12 hr LD conditions, the rate of entrainment to the new lighting system was also analyzed. We used the period length averaged over days 1–4, 3–7, 4–8, 7–11, and 8–12 was determined for each group. Data was analyzed using Clocklab software.
 
-## Ex vivo bioluminescence recording from lung explants
+### Ex vivo bioluminescence recording from lung explants
 
 Lungs from Per2luc mice were harvested following perfusion to flush out blood cells. Thereafter, peripheral sections were obtained, and explants were placed in media containing luciferin. Bioluminescence recording was initiated, and data was recorded for 5–6 days. Data was analyzed using Clocklab software.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample size analyses was performed using PS Sample size calculator. For survival experiments, sample size of 15 was calculated for median survival times (5 in ZT11 and 28 in ZT23, although the experiments were often plotted for 14 days) and an alpha of 0.05 with 90% power, matching 1:1 for control to case. Data was platted and analyzed using Graphpad Prism Software. Graphs represent data as means ± SEM or median ± IQR as applicable. Based on the distribution of data, either parametric (Student’s t-test or two-way ANOVA based on number or type of comparison groups) or non-parametric (Mann–Whitney or Kruskal–Wallis test) was used. Mortality data was analyzed using Mantel–Cox test. Tukey corrections were used for multiple comparisons.
 
-## Statement on rigor and reproducibility
+### Statement on rigor and reproducibility
 
 All studies were performed using animals from either Jackson Labs and animals from in-house breeding. The background strain of each genetically modified animal has been specified, and controls were cre− littermates on that same background. Reported findings are summarized results from 3 to 6 independent experiments.
 
-## Approval
+### Approval
 
 All studies involving IAV infection were carried out in biosafety level 2 (BSL2 and ABSL2) conditions and approved facility. Animals were provided with food and water ad libitum. All procedures and studies were performed by experienced personnel with appropriate supervision from veterinary support staff. All animal studies were approved by the University of Pennsylvania animal care and use Committee (protocol ID # 805645) and met the stipulations of the Guidelines for the Care and Use of Laboratory Animals.

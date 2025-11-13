@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.44324.001 Cognitive flexibility likely depends on modulation of the dynamics underlying how biological neural networks process information. While dynamics can be reshaped by gradually modifying connectivity, less is known about mechanisms operating on faster timescales. A compelling entrypoint to this problem is the observation that exploratory behaviors can rapidly cause selective hippocampal sequences to ‘replay’ during rest. Using a spiking network model, we asked whether simplified replay could arise from three biological components: fixed recurrent connectivity; stochastic ‘gating’ inputs; and rapid gating input scaling via long-term potentiation of intrinsic excitability (LTP-IE). Indeed, these enabled both forward and reverse replay of recent sensorimotor-evoked sequences, despite unchanged recurrent weights. LTP-IE ‘tags’ specific neurons with increased spiking probability under gating input, and ordering is reconstructed from recurrent connectivity. We further show how LTP-IE can implement temporary stimulus-response mappings. This elucidates a novel combination of mechanisms that might play a role in rapid cognitive flexibility.
+Cognitive flexibility likely depends on modulation of the dynamics underlying how biological neural networks process information. While dynamics can be reshaped by gradually modifying connectivity, less is known about mechanisms operating on faster timescales. A compelling entrypoint to this problem is the observation that exploratory behaviors can rapidly cause selective hippocampal sequences to ‘replay’ during rest. Using a spiking network model, we asked whether simplified replay could arise from three biological components: fixed recurrent connectivity; stochastic ‘gating’ inputs; and rapid gating input scaling via long-term potentiation of intrinsic excitability (LTP-IE). Indeed, these enabled both forward and reverse replay of recent sensorimotor-evoked sequences, despite unchanged recurrent weights. LTP-IE ‘tags’ specific neurons with increased spiking probability under gating input, and ordering is reconstructed from recurrent connectivity. We further show how LTP-IE can implement temporary stimulus-response mappings. This elucidates a novel combination of mechanisms that might play a role in rapid cognitive flexibility.
 
 ## Introduction
 
@@ -41,21 +41,37 @@ Finally, we include a population of inhibitory cells (INH) one-tenth the size of
 
 Note that our model accords two meanings of ‘excitability’ to the LTP-IE acronym. As coined by Hyun et al. (2013) and Hyun et al. (2015), LTP-IE’s ‘excitability’ originally refers to the augmented EPSPs of G inputs (MEC inputs, in Hyun et al., 2013; Hyun et al., 2015) arriving to distal dendrites. Here, however, ‘excitability’ also refers to the increased membrane potential of LTP-IE-tagged cells (in the presence of G inputs), which makes them more likely to spike in response to recurrent inputs.
 
-## LTP-IE increases membrane voltages and spike rates under random gating inputs
+### LTP-IE increases membrane voltages and spike rates under random gating inputs
 
 We first simulate the expected effects of LTP-IE on neuronal membrane voltages and spike rates. To model LTP-IE, when a cell spikes sufficiently fast (~10–20 Hz) over 1 s, we scale that cell’s G inputs by a factor σ(r) that depends on the rate r at which it fired during that 1 s. For such cells, future G inputs will thus yield augmented EPSPs (Figure 1A,B). Consequently, cells that have recently emitted several spikes in quick succession end up with high LTP-IE levels, which causes them to sit at higher average voltages given a steady random stream of G inputs (Figure 1C–E); additionally, cells with higher LTP-IE exhibit increased variability in their membrane voltages (Figure 1D,E). (Note: we chose to model the LTP-IE activation function [Figure 1B] as a sigmoid based on the saturation-like relationship between PC spike count and the membrane conductance change measured in Hyun et al. (2015) [Figure 3H], but evidence also exists for an optimal firing rate between 10 and 20 Hz [Hyun et al., 2013]; modeling LTP-IE activation with such an optimum should not affect our results, however, as our goal was simply to apply LTP-IE to PCs firing at physiological rates.)
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44324/elife-44324-fig1-v2.jpg)
+
+**Figure 1.:** (A) Demonstration using leaky integrate-and-fire (LIF) neuron model of fast activity-driven LTP-IE, which doubles membrane voltage responses to gate inputs as described in Hyun et al. (2013); Hyun et al. (2015). A spike in an upstream gate neuron (G) first elicits a small EPSP in the pyramidal cell (PC); a 1 s spike train (dots) at approximately 20 Hz is evoked by strong stimulation of sensory inputs S; when G spikes again, the EPSP has doubled in size. ‘RCR’ refers to recurrent inputs from other PCs (not used in this figure). Dashed lines show leak and spike-threshold voltages. (B) Shifted logistic function for LTP-IE strength (effective weight scaling factor) σ vs. PC firing rate over 1 s. (C) Example membrane voltages of PCs with different σ receiving stochastic but statistically identical gating input spikes. (D) Distribution of PC membrane voltage for σ values shown in C. (E) Mean (thick) and standard deviation (shading) of Vm as a function of σ for three gate firing rates. Black: rG = 75 Hz; dark red: rG = 125 Hz; red: rG = 175 Hz. (F) Example differential sensitivities of PC spike responses to injected current input (blue) for two different σ. Dashed lines show leak and spike threshold potential; dots indicate spikes (which only occur for the σ = 2 case [cyan]). (G) Difference between current-evoked spike probability and spontaneous spike probability as a function of σ for four initial gate input weights. Color code, in order of increasing lightness: wPG,G = 0.4,. 8, 1.2, 1.6 (see Materials and methods for units).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44324/elife-44324-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Probability of current-evoked spiking for different wPC,G and σ. (B) Spontaneous spiking probability for different different wPC,G and σ. (C) Example voltage traces for neurons with two different σ given large wPC,G. Same format as Figure 1F.
+
 Due to their increased membrane voltage, cells with high LTP-IE also exhibit higher spiking probability, both spontaneously (Figure 1—figure supplement 1) and in response to depolarizing input currents (Figure 1F,G), although even with high LTP-IE, current-evoked spiking is not assured since substantial variability remains (Figure 1F,G). Nonetheless, LTP-IE can increase a model neuron’s probability of transforming an input current into an output spike from near zero to approximately 0.5, when the PC→G synaptic weight wPC,G takes a moderate value (Figure 1G). (For overly weak wPC,G, LTP-IE does not facilitate spiking since the membrane voltage remains subthreshold; for overly strong wPC,G, spontaneous spike rates are already high, and increased spiking leads to more frequent voltage resetting [Figure 1G, Figure 1—figure supplement 1] so total spike rate does not substantially increase.) Thus, given moderate wPC,G, when a cell undergoes LTP-IE its chance of spiking in response to future inputs (i.e. its excitability) increases, although variability remains. Since LTP-IE-triggering spike rates are only around 10–20 Hz, this suggests LTP-IE may play an active role in modulating firing properties of recently active cells in physiological conditions.
 
-## Spike sequences propagate along LTP-IE-defined paths through a network
+### Spike sequences propagate along LTP-IE-defined paths through a network
 
 We next asked how LTP-IE as described in Figure 1 would shape activity when introduced into a recurrently connected model network of 3000 excitatory spiking pyramidal cells (PCs). Intuitively, since LTP-IE increases spiking probability within recently active neurons, we expect recently active neurons to be preferentially recruited during sequence propagation through the network. Inspired by hippocampal place cells (O'Keefe, 1979; Moser et al., 2008), we allowed excitatory PCs in our network to be tuned to specific positions (‘place fields’) within the environment (Figure 2A–C). We furthermore assumed stronger connectivity between PCs with nearby place fields (Figure 2D and Materials and methods), such that propagation would be more likely to reflect movement along continuous ‘virtual’ trajectories through the environment, and in particular trajectories containing LTP-IE-tagged cells. Finally, the excitatory PC network was connected to a population of 300 inhibitory (INH) cells, which served to control the number of simultaneously active PCs. PC→INH and INH→PC connection probability was 0.5.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44324/elife-44324-fig2-v2.jpg)
+
+**Figure 2.:** (A) Network architecture used in simulations. The dashed oval around input S indicates that we did not explicitly simulate its interaction with the pyramidal cell (PC) network, but rather only the LTP-IE profile one would expect following the termination of S input. (B) Squared exponential position tuning for an example neuron (20 Hz max. firing rate, 0.15 m length scale). (C) Resultant LTP-IE as a function of distance between a cell’s maximum tuning and the closest point on the trajectory through the environment (red), computed as a sigmoidal function (Figure 1B) of position-dependent firing rate (black). (D) Recurrent excitatory weights between PCs as squared exponential function of distance between the two cells’ peak tuning positions. (E) LTP-IE profile induced in PCs by an example Z-shaped trajectory (inset) in a network of 3000 PC and 300 inhibitory (INH) cells. PCs are positioned according to peak tuning and colored by the LTP-IE level (σ) expected to result from the trajectory. The numbers indicate the position tunings of the PC identifiers in G. (Note: individual cells cannot be seen here due to their high density). (F) Cells activated during the different spontaneous replay events shaded in blue in G-I, colored by the order of the first spikes each cell emitted during the event. Black cells did not activate during replay. Left and middle: replay in two different directions; right: partial replay. G. Partial raster showing spike times for cells with position tunings marked in E. H. Full raster plot for PC and INH population over a 3 s trial. I. Cell-averaged spike rates for PC and INH populations throughout trial.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44324/elife-44324-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-E) As in Figure 2E–H, but for the trajectory shown in A (inset). (F) Trajectories decoded from the replay events indicated above each panel (dark blue indicates start and yellow indicates end).
 
 To investigate network activity shaped by recent sensorimotor sequences, we considered the following scenario, in analogy with typical experimental setups used to measure neuronal replay in hippocampus (Foster and Wilson, 2006; Davidson et al., 2009; Carr et al., 2011): a rodent has just run along a short trajectory through its environment and now rests for several seconds in an awake, quiescent state. How does the neural activity evoked during the trajectory shape the spontaneous activity in the awake, quiescent state? Since our goal was to understand sequential reactivation during this awake, quiescent period, we only used the trajectory geometry to predict the LTP-IE levels one would expect following the trajectory’s termination (i.e. the termination of S inputs). To do so, we computed each neuron’s maximum expected spike rate during the trajectory as a function of the distance from its place field to the nearest point on the trajectory (Figure 2C). We then passed the result through a soft-thresholding LTP-IE activation function (Figure 1B) to compute the final expected LTP-IE level σ (Figure 2C) for each PC. This allowed us to model the expected LTP-IE profile over the network of neurons as a function of the recent trajectory (Figure 2E). As per our design, the LTP-IE profile stores which locations were covered by the original trajectory but bears no explicit information about its speed or direction.
 
 Can replay-like sequences that recapitulate the original trajectory structure emerge from the LTP-IE profile stored in the network? When we let our network run in the presence of random G inputs independent to each PC, replay-like events lasting on the order of 100–200 ms spontaneously arose in the network (Figure 2F–I). Spontaneous replay events propagated in both directions (Figure 2F, left and middle), recapitulating the forward and reverse replay observed experimentally (Foster and Wilson, 2006; Davidson et al., 2009; Carr et al., 2011). Due to the PC refractory period of ~8 ms in our model (see Materials and methods), activity propagated in one direction without reversing. Partial replay also occurred, in which replay began in the middle of the trajectory and propagated in one direction to the end (Figure 2F, right). When an alternative trajectory was used to induce the LTP-IE profile, triggered replay recapitulated that trajectory instead (Figure 2—figure supplement 1A–E), indicating that replay of a specific trajectory was not due a priori to the recurrent connectivity; indeed, this should be avoided by the spatial uniformity of the recurrence. The virtual trajectory encoded by the replay event could be decoded by computing the median place field of the PCs spiking across short time windows during the event (Figure 2—figure supplement 1F). We additionally note that the replay sequence was able to turn corners, suggesting robustness to nonlinear trajectories. Finally, plotting population firing rates (Figure 2I) reveals a potential connection between the replay events in our model and ‘sharp-wave ripples’, rapid oscillatory field potentials experimentally observed to co-occur with hippocampal sequence replay (Carr et al., 2011). Thus, despite sizable variability in membrane voltages arising from the random gating inputs G (Figure 1C,D,F), LTP-IE was able to induce spontaneously arising activity sequences into the network that recapitulated recent sensorimotor experiences.
 
-## Dependence of LTP-IE-based sequence propagation on network parameters
+### Dependence of LTP-IE-based sequence propagation on network parameters
 
 What conditions must hold for LTP-IE to induce successful sequences in the network? To address this we explored how the frequency of spontaneous replay events changed as we varied different network parameters. To ensure that we only analyzed replay events reflecting recent sensorimotor experiences, we only included events in which average PC activity was sufficiently elevated and in which PC spikes were confined primarily to LTP-IE-tagged PCs.
 
@@ -73,7 +89,7 @@ Since realistic locomotor trajectories often intersect with one another, we also
 
 These results show that experience-dependent LTP-IE at biological levels can rapidly and selectively modulate sequence propagation through a network of realistic spiking neurons across a range of parameter regimes.
 
-## LTP-IE-based sequences can encode temporary stimulus-response mappings
+### LTP-IE-based sequences can encode temporary stimulus-response mappings
 
 A popular hypothesis in cognitive neuroscience is the multiplexing and interaction of mnemonic and spatial representations, contributing, for example, to the formation of ‘memory maps’. Indeed, hippocampus’ experimentally observed roles in both memory and spatial navigation lends compelling evidence to this notion (Schiller et al., 2015). The potential neural mechanisms underlying this phenomena, however, remain poorly understood. To demonstrate how LTP-IE could shape temporary memory storage and computation more generally, beyond simply replaying recent locomotor trajectories, we considered the simple task of requiring a network to represent one of two possible stimulus-response mappings, and then asked how LTP-IE could induce these mappings in the network (Figure 4A). We assume such an induction could be evoked by appropriately transformed sensorimotor or cognitive inputs from upstream areas, but we did not model this explicitly, as our goal was to demonstrate the final storage and recall of the mapping. Note that in the following analysis we have used a larger rG (200 Hz) and decreased wPC,G (0.5) and σmax (1.84), to reduce spontaneous activity while still allowing propagation of sequences triggered by a brief current injection.
 
@@ -83,7 +99,7 @@ A popular hypothesis in cognitive neuroscience is the multiplexing and interacti
 
 LTP-IE was able to induce multiple stimulus-response mappings in the network, each in multiple ways. To demonstrate this we first assumed that specific regions in the network corresponded to different stimuli or responses. In other words, we imagined that stimulus regions S1 and S2 might receive inputs containing sensory information from the environment, whereas the response regions M1 and M2 might send outputs controlling different motor commands (Figure 4B). To record activity in S1, S2, M1, or M2 we included a unique readout unit for each region representing the region’s average activity (Figure 4B). We then introduced non-intersecting LTP-IE paths into the network connecting each stimulus region to its associated motor output region, and recorded the ability of an input current trigger into each stimulus region to subsequently activate the correct motor output (Figure 4C–F). We first verified our idea with the mapping (S1→M1, S2→M2) in which each stimulus was connected via a one-dimensional LTP-IE profile to its appropriate motor output (Figure 4C, left). Indeed, triggering each stimulus region with a depolarizing current input led to subsequent activation of its corresponding motor output after a short delay (Figure 4C, middle and right). We next explored the mapping (S1→M2, S2→M1), which in our setup required at least one LTP-IE path to take a roundabout course through the network (Figure 4D, left). As before, triggering each stimulus region led to activation of its corresponding motor output, with the longer LTP-IE path reflected in a longer stimulus-response delay (Figure 4D, middle and right). Notably, the same stimulus-response mapping could be implemented via LTP-IE in several different ways (Figure 4D–F), with the different LTP-IE paths reflected in the different stimulus-response delays. This contrasts with alternative models of temporarily binding together distinct components of a neural network, which typically suppose a unique structure of the mapping/binding representation (Raffone and Wolters, 2001; Botvinick and Watanabe, 2007; Swan and Wyble, 2014). Thus, LTP-IE combined with recurrent connectivity might serve as a biophysically plausible and highly flexible substrate for inducing temporary stimulus-response mappings in a recurrent spiking network. This may be a potential key property enabling rapid and flexible induction of temporary information-processing patterns in brain networks underlying cognitive flexibility.
 
-## Encoding complex sequences and non-spatial mappings with LTP-IE
+### Encoding complex sequences and non-spatial mappings with LTP-IE
 
 What are the algorithmic limitations of LTP-IE-based sequence induction? For instance, while we have discussed the storage and reactivation of sequences corresponding to simple (non-intersecting) trajectories through space, it is natural to ask whether more arbitrary sequences and mappings can be stored by LTP-IE. To this end we developed a reduced network model capturing the core property of LTP-IE-based reshaping of network dynamics. This allowed us to separate the generic algorithmic properties of LTP-IE- and excitability-based computation from those tied to its specific biophysical implementation.
 
@@ -113,7 +129,7 @@ Finally, while our biophysical model used a 2-D spatial network and hippocampal 
 
 History-dependent excitability changes might also occur not just at the rapid timescales that have motivated our work but over slower timescales as well (Zhang and Linden, 2003; Titley et al., 2017). For example, it was recently found that small neuronal ensembles could be ‘imprinted’ into a mouse cortical network and subsequently reactivated in vivo via repeated optogenetic stimulation (Carrillo-Reid et al., 2016). While this result was suggested to provide evidence of Hebbian (homosynaptic) plasticity, our work suggests that the same result could arise via increasing neural excitabilities instead. Untangling these mechanisms and understanding how they interact presents an exciting avenue for further investigation. Overall, our work demonstrates how excitability changes alone might quickly and selectively reshape network dynamics, implicating their potential role in storing memories and encoding stimulus-response mappings, and more generally in organizing flexible computations over rapid timescales.
 
-## Comparison to existing models
+### Comparison to existing models
 
 While we do not aim to provide a complete account of hippocampal replay, but rather to demonstrate how specific biophysical mechanisms can rapidly generate selective network sequences, we believe it is still worthwhile to compare our model to existing models for rapidly storing and recalling sequences in neural systems, both in terms of biological plausibility and computational robustness. One family of models for encoding and decoding sequences in hippocampus supposes that sequential information is stored in the timing of spikes relative to theta (4–8 Hz) and gamma (~40 Hz) oscillatory cycles in the hippocampus (Lisman and Idiart, 1995; Lisman, 1999). Briefly, gamma cycles are ‘nested’ within theta cycles, and a sequence of stimuli is stored by stimulus-specific neurons spiking at unique gamma cycles within the encompassing theta cycle. While these models provide a persuasive computational account of how oscillations might be used to store temporary information, it is not clear how the sensory input would be appropriately transformed so as to be ‘entered’ into the oscillation cycle at the correct time, how stable these mechanisms are in the face of noise, nor how multiple sequences might be stored simultaneously; in particular, sequence information could be lost if the oscillation were disrupted, and one would require an independent nested oscillation for a second sequence. In our LTP-IE-based spiking-network model, however, memories are directly entered into the network by physiological spiking patterns (Figure 1), are stored in effective synaptic weight changes likely driven by ion channel inactivation (as opposed to persistent spiking activity) and might therefore be more robust to noise, and multiple sequences can theoretically be stored in the same network in a manner similar to how we have stored multiple stimulus-response mappings in Figure 4.
 
@@ -123,7 +139,7 @@ In real brain networks, excitability changes likely interact with recurrent syna
 
 Finally, selectively biasing cell recruitment without changing recurrence generalizes beyond increasing spike responses through LTP-IE. An alternative mechanism is to simply send stronger baseline inputs to a subset of neurons, corresponding in our model to increasing the gate input rate rG for certain cells but not others, yet without applying LTP-IE. Such differential baseline inputs can act as context signals, and if interacting multiplicatively with sensory signals can control the gain of the latter without affecting their tuning; by modulating the gain of different neurons in such a way, one can then selectively and transiently encode context-dependent sensorimotor mappings without modifying synaptic weights (Salinas, 2004b; Salinas, 2004a), similar to how one might do so with LTP-IE. Given the functional similarity of selective LTP-IE or differential gain-modulating inputs, one would expect them to support similarly flexible sequential dynamics and signal routing, depending on the pre-existing but fixed recurrence structure. Indeed, neurons in entorhinal cortex, which inspired the gating signals G in our network, have been shown to support history-dependent, graded persistent activity (Egorov et al., 2002), suggesting the recurrent CA3 network could be subject to differential baseline inputs maintained over short-term memory timescales. Such a mechanism could act in concert with LTP-IE and could potentially act as an additional rapid and controllable gating signal governing effective excitabilities of neurons in the recurrent network.
 
-## Model limitations
+### Model limitations
 
 One question we did not explicitly address is whether and how a decay timescale of LTP-IE would affect sequence storage and replay. Indeed, with no forgetting or selective LTP-IE activation, one would expect all neurons in our model to undergo LTP-IE after the animal had fully explored the environment, thus preventing sequential reactivation along specific trajectories through the network. While this problem would be partially solved by considering additional input dimensions as described above (i.e. so that even if the x-y space were fully explored, only a fraction of the x-y-θ space would have been explored), one might also imagine additional neuromodulatory inputs serving to control the strength of LTP-IE during exploration. Indeed, while (Hyun et al., 2013; Hyun et al., 2015) did not observe a return of activation-triggered LTP-IE to baseline during the course of their slice experiments, in vivo LTP-IE in CA3 might be modulated by additional upstream inputs. For example, the neurotransmitter acetylcholine is known to interact with the voltage-gated potassium channel Kv1.2 (Hattan et al., 2002), the ion channel hypothesized to underlie LTP-IE (Hyun et al., 2015), and hippocampus receives state-dependent cholinergic inputs from medial septum (Yoder and Pang, 2005; Mamad et al., 2015). Furthermore, memory-related excitability changes in dentate gyrus have been shown to decay after two hours (Pignatelli et al., 2019), suggesting similar decay mechanisms may exist in CA3. Thus, sufficient machinery for erasing or selectively modulating the overall effects of LTP-IE, for example as a function of arousal or motivation state, may converge in the brain region that has served as the inspiration for our model. Clinically, one would also expect regulation of the spatiotemporal extent of excitability changes to be crucial in preventing pathological dynamics, such as incomplete signal transmission that might lead to short-term memory deficits (Vallar and Shallice, 2007), or hyperexcitability without sufficient compensatory inhibition leading to seizure-like events, as exhibited in the ‘blowup’ regime of our spiking network model (Figure 3).
 
@@ -133,11 +149,11 @@ What factors missing from our model might set the duration of replay events in m
 
 Finally, an intriguing line of research suggests spatiotemporal propagation of activity in certain neural networks may follow a power-law distribution (Beggs and Plenz, 2003; Beggs and Plenz, 2004; Plenz and Thiagarajan, 2007; Fiete et al., 2010; Scarpetta and de Candia, 2013). Activity patterns distributed as such would imply scale invariance (scale-freeness) of activity structures and suggest the network state sits at a phase transition between dynamical regimes that may be optimal for processing inputs that vary over a large range (Shew et al., 2009). Since activity levels and durations in our network were capped by inhibition and refractoriness, and by the limited environment size, we would not expect our network to exhibit scale-free activity patterns; however, exploring what network mechanisms and connectivity statistics could yield power-law distributed sequences through LTP-IE and examining how these might be involved in sequence-based stimulus processing would be an exciting line of future inquiry.
 
-## Experimental predictions
+### Experimental predictions
 
 Despite its parsimony, our model of LTP-IE-based network sequences makes specific predictions that could be tested in hippocampal replay experiments. First, pharmacological blocking of LTP-IE during exploration should prevent the encoding of new trajectory information into CA3, consequently preventing subsequent replay. This could be achieved by in vivo application of nimodipine or PP2, which block intracellular calcium increase, protein tyrosine kinase activation, and Kv1.2 channel endocytosis, all potential mechanisms of LTP-IE, and which have been shown to block LTP-IE in vitro (Hyun et al., 2015). Second, inactivating medial entorhinal layer II (MEC II), which projects to CA3 and which we associate with gating inputs G in our analogy with hippocampal circuitry, should inhibit CA3 sequential replay events. Indeed, inactivation of MEC III inputs has been shown to inhibit forms of replay in CA1 (Yamamoto and Tonegawa, 2017); we propose that a parallel effect would be seen in MEC II inputs to CA3. Finally, the core prediction of our sequence induction model is that the neurons do not have to be initially activated in the order (or the reverse order) in which they will later reactivate. As the only information explicitly added to the network at the time of encoding is the set of neurons activated, speed or ordering information must be reconstructed from existing connectivity. While identifying the position tunings of individual neurons in vivo and subsequently artificially activating them out of order currently presents a substantial technical challenge, one could potentially achieve a similar effect using a virtual reality environment with place-specific sensory cues, and in which specific places along a virtual trajectory were presented out of order. Our model predicts that as long as the animal had sufficient knowledge of which sensory cues corresponded to which environment locations, replay would occur in an order corresponding to a path through the environment, rather than the order in which the virtual places were presented.
 
-## Computational significance
+### Computational significance
 
 Besides revealing a potential core mechanism for sequence induction, our model lends two key insights into the structure and control of replay in biological neural networks. First, it suggests a link between isotropy in pre-existing spatial representations in the network (i.e. the spatially organized connectivity) and the experimental observation that replay sometimes occurs in the forward, and sometimes in the reverse order relative to the neurons’ initial activation during the trajectory (Foster and Wilson, 2006; Davidson et al., 2009; Carr et al., 2011). In particular, since no directionality information is stored by LTP-IE (which only tags which neurons were recently active), replay should occur with equal chance in forward or reverse. (Note however, that as observed in Davidson et al., 2009, replay events may have an increased probability of originating at cells tuned to the animal’s current location, as a result of place-tuned inputs to the network during awake quiescence.) One would therefore not expect to observe reverse replay for neural sequences that do not have a natural spatial embedding, for example spoken sentences in humans. Second, the upstream gating signal in our model might serve as a substrate for the short-term state-dependence of replay, for example with arousal or motivation controlling when the gating signal is present or absent. This could ensure that replay occurs only at appropriate times (e.g. quiescent rest) without interfering with other computations being performed by the network, such as pattern separation in external sensory inputs (Leutgeb et al., 2007; Bakker et al., 2008).
 
@@ -147,111 +163,365 @@ Finally, one can draw an equivalence between the modulation of cellular properti
 
 ## Materials and methods
 
-## Membrane and synaptic dynamics for spiking network simulation
+### Membrane and synaptic dynamics for spiking network simulation
 
-We modeled single neurons as leaky integrate-and-fire neurons with conductance-based synapses according to the equationτmdVidt=−(Vi−EL)−gEi(t)(Vi−EE)−gIi(t)(Vi−EI)+Iexti(t)where Vi is the membrane voltage of neuron i; τm is the membrane time constant (50 ms for pyramidal cells [PCs], 5 ms for inhibitory cells [INHs]); Eleak is the leak/resting potential (−68 mV for PCs, −60 mV for INHs); giE and giI are the time-varying conductances of excitatory and inhibitory synaptic inputs, respectively; EE = 0 mV and EI = −80 mV are the excitatory and inhibitory synaptic reversal potentials, respectively; and Iiext is any externally injected current to cell i (in units of the expected deflection in membrane voltage). If Vi exceeded a threshold vth = −36 mV (or vth = −50 mV for INHs) at any time step, a spike was emitted and Vi was reset to Eleak for a refractory period τrr8 ms (or τr =  2 ms for INHs). The outsize PC refractory period ensured that the sequential events in our simulations propagated only in one direction and is consistent with refractory periods measured in hippocampal region CA3 during some experiments (Raastad, 2003).
+We modeled single neurons as leaky integrate-and-fire neurons with conductance-based synapses according to the equation
 
-Synaptic dynamics were conductance-based and were modeled as exponentially filtered trains of weighted delta functions representing input spikes arriving from different upstream neurons. Specifically, for an individual neuron igEi(t)=∑j∑kwijh(t)∗δ(t−tkj)and similarly for giI; here j indexes neurons and k indexes spikes, such that wij is the synaptic weight from neuron j onto neuron i and tkj is the k-th spike of the j-th neuron; and h(t) was a one-sided exponential with time constant τEE2 ms. In our simulations we assumed all synapses were excitatory and did not explicitly model effects of inhibition. Synaptic weight values are unitless and specify the postsynaptic conductance change in response to a presynaptic spike, relative to the leak conductance.
+$$
+\tau_{m}\frac{dV^{i}}{dt}=−(V^{i}−E_{L})−g_{E}^{i}(t)(V^{i}−E_{E})−g_{I}^{i}(t)(V^{i}−E_{I})+I_{ext}^{i}(t)
+$$
 
-## Pyramidal cell tuning parameters
+where Vi is the membrane voltage of neuron i; τm is the membrane time constant (50 ms for pyramidal cells [PCs], 5 ms for inhibitory cells [INHs]); Eleak is the leak/resting potential (−68 mV for PCs, −60 mV for INHs); giE and giI are the time-varying conductances of excitatory and inhibitory synaptic inputs, respectively; EE = 0 mV and EI = −80 mV are the excitatory and inhibitory synaptic reversal potentials, respectively; and Iiext is any externally injected current to cell i (in units of the expected deflection in membrane voltage). If Vi exceeded a threshold vth = −36 mV (or vth = −50 mV for INHs) at any time step, a spike was emitted and Vi was reset to Eleak for a refractory period τrr8 ms (or τr =  2 ms for INHs). The outsize PC refractory period ensured that the sequential events in our simulations propagated only in one direction and is consistent with refractory periods measured in hippocampal region CA3 during some experiments (Raastad, 2003).
 
-In network simulations, we assigned each PC a position (xi, yi) corresponding to the peak of its tuning curve, that is the (x, y) position eliciting maximal firing. Positions were assigned to approximately tile a grid spanning −1 to 1 m in both dimensions (Figures 2 and 3) or −2 to 2 m (Figure 4), using 3000 or 12000 PCs, respectively. We used the following position-dependent firing-rate equation to calculate the maximal firing rate we expected to be evoked by the trajectory through the simulated environment (the firing rate evoked by the closest point on the trajectory to the neuron’s place field center):ri(x,y)=rmaxexp[−((x−xi)2+(y−yi)2)/(2λPL2)]where rmax = 20 Hz is the maximum firing rate (i.e. when the trajectory passes directly through the neuron’s peak tuning position) and λPLPL0.15 m is the length constant determining how close a neuron’s peak tuning must be to the trajectory to significantly activate. All neurons had the same rmax and λPL.
+Synaptic dynamics were conductance-based and were modeled as exponentially filtered trains of weighted delta functions representing input spikes arriving from different upstream neurons. Specifically, for an individual neuron i
 
-## Spiking network architecture
+$$
+g_{E}^{i}(t)=\sumj\sumkw_{ij}h(t)∗\delta(t−t_{k}^{j})
+$$
+
+and similarly for giI; here j indexes neurons and k indexes spikes, such that wij is the synaptic weight from neuron j onto neuron i and tkj is the k-th spike of the j-th neuron; and h(t) was a one-sided exponential with time constant τEE2 ms. In our simulations we assumed all synapses were excitatory and did not explicitly model effects of inhibition. Synaptic weight values are unitless and specify the postsynaptic conductance change in response to a presynaptic spike, relative to the leak conductance.
+
+### Pyramidal cell tuning parameters
+
+In network simulations, we assigned each PC a position (xi, yi) corresponding to the peak of its tuning curve, that is the (x, y) position eliciting maximal firing. Positions were assigned to approximately tile a grid spanning −1 to 1 m in both dimensions (Figures 2 and 3) or −2 to 2 m (Figure 4), using 3000 or 12000 PCs, respectively. We used the following position-dependent firing-rate equation to calculate the maximal firing rate we expected to be evoked by the trajectory through the simulated environment (the firing rate evoked by the closest point on the trajectory to the neuron’s place field center):
+
+$$
+r^{i}(x,y)=r_{max}exp[−((x−x^{i})^{2}+(y−y^{i})^{2})/(2\lambda_{PL}^{2})]
+$$
+
+where rmax = 20 Hz is the maximum firing rate (i.e. when the trajectory passes directly through the neuron’s peak tuning position) and λPLPL0.15 m is the length constant determining how close a neuron’s peak tuning must be to the trajectory to significantly activate. All neurons had the same rmax and λPL.
+
+### Spiking network architecture
 
 We included an excitatory (PC [pyramidal cell]) and inhibitory (INH) population in our spiking network, as well as random spiking inputs from a gating signal G impinging on the PC population. We included excitatory recurrent connections among PCs, connections from PCs to INHs and from INHs to PCs, and only PCs received G inputs. Values for synaptic weights are unitless and specify the postsynaptic conductance change caused by a single presynaptic spike, relative to the leak conductance.
 
-## Recurrent excitatory connectivity
+#### Recurrent excitatory connectivity
 
-Recurrent excitatory synaptic weights were assigned such that neurons with similar position tuning had stronger connectivity, with the connectivity between two neurons i and j with peak tunings separated by dij given bywij=wPC,PCexp[−dij2/(2(λPC,PC)2)].
+Recurrent excitatory synaptic weights were assigned such that neurons with similar position tuning had stronger connectivity, with the connectivity between two neurons i and j with peak tunings separated by dij given by
+
+$$
+w_{ij}=w^{PC,PC}exp[−d_{ij}^{2}/(2(\lambda^{PC,PC})^{2})].
+$$
 
 This was motivated by past modeling studies (Káli and Dayan, 2000; Solstad et al., 2014) and by analyses of correlated hippocampal activity in the absence of sensory input (Giusti et al., 2015). Note that in our network architecture, all recurrent connections between position-tuned cells are reciprocal, due to the symmetry of the distance function dij. All wij below a minimum value wminPC,PC = 0.1 were set to 0.
 
-## Inhibitory connectivity
+#### Inhibitory connectivity
 
 We included an INH population 1/10 the size of the PC population (300 for Figures 2–3 and 100 for Figure 4). Each PC projected to each INH with probability 0.5 and weight wINH,PC = 0.03. For Figures 2–3, each INH projected to each PC with probability 0.5 and weight wPC,INH = 0.02 (except where wPC,INH was varied in the parameter sweeps in Figure 3). For Figure 4 we decreased wPC,INH to 0.002 to account for the larger inhibitory pool.
 
-## Gating input connectivity
+#### Gating input connectivity
 
 Synaptic weights wiG on gating inputs G were initially uniform across all position-tuned neurons, and each neuron received an independent instantiation of an upstream G spike train, generated from a Poisson-distributed point process with constant rate rG. While effective wiG varied as a function of each neuron’s trajectory-dependent LTP-IE, rG was identical across all neurons regardless of tuning or LTP-IE status.
 
-## Long-term potentiation of intrinsic excitability (LTP-IE) of gating inputs
+### Long-term potentiation of intrinsic excitability (LTP-IE) of gating inputs
 
-Although LTP-IE is thought to result from changes in dendritic conductances (Hyun et al., 2015), we modeled it as an effective synaptic weight change (since conductance changes can be absorbed into connection weights according to the equations underlying conductance-based synaptic dynamics), such that initial weights wiG were scaled by a factor σi as a function of neuron i’s position along the initial trajectory. For computational efficiency we did not model network activity during the initial trajectory, but instead directly calculated the σi expected to result from the maximum firing rate rimax = max(ri(x, y) | (x, y) ϵ trajectory). From rimax we computed σi according to the following equation (Figure 1B):σi=1+σmax−11+exp[−βσ(rmaxi−rσ)]with rσ=10 Hz and βσσ1. Thus, neurons with position-tuning peaks close to the original trajectory had a σi near σmax whereas neurons far away from the trajectory had σi near unity.
+Although LTP-IE is thought to result from changes in dendritic conductances (Hyun et al., 2015), we modeled it as an effective synaptic weight change (since conductance changes can be absorbed into connection weights according to the equations underlying conductance-based synaptic dynamics), such that initial weights wiG were scaled by a factor σi as a function of neuron i’s position along the initial trajectory. For computational efficiency we did not model network activity during the initial trajectory, but instead directly calculated the σi expected to result from the maximum firing rate rimax = max(ri(x, y) | (x, y) ϵ trajectory). From rimax we computed σi according to the following equation (Figure 1B):
 
-## Sequence replay
+$$
+\sigma_{i}=1+\frac{\sigma_{max}−1}{1+exp[−\beta_{\sigma}(r_{max}^{i}−r_{\sigma})]}
+$$
+
+with rσ=10 Hz and βσσ1. Thus, neurons with position-tuning peaks close to the original trajectory had a σi near σmax whereas neurons far away from the trajectory had σi near unity.
+
+### Sequence replay
 
 We fully simulated the replay epoch only, during which all neurons in the recurrent network received independent stochastic gating input G at constant rate rG. Replay events arose spontaneously, but in Figure 4 we triggered sequence propagation with a short current pulse to neurons in one of the sensory regions; trigger parameters were unimportant as long as they elicited significant spiking activity in the neurons at the start of the sequence. In Figure 2—figure supplement 1F, replayed positions were decoded during by taking the median peak-tuning of neurons that spiked within 5 ms windows spanning the replay event (decoding was only performed in a window if there were at least five spikes in that window).
 
-## Replay event detection and speed measurements
+### Replay event detection and speed measurements
 
 To detect spontaneous replay events automatically, we first smoothed the cell-averaged PC firing rate with a Gaussian filter with a 2 ms standard deviation. Next, all timepoints where this smoothed firing rate exceeded 0.5 Hz were marked. Continuous events above 0.5 Hz lasting longer than 30 ms were then labeled as replay events, with two replay events joined into one if the duration of the gap between them was less than 10 ms.
 
 We measured replay speed for an event by first computing the linear position of each PC’s place field center along the Z-shaped trajectory shown in Figure 2E. We then plotted these linear positions of all PCs that spiked during the middle 80% of the replay epoch vs the times the spikes occurred (we removed the first and last 10% to avoid edge effects). Finally, we calculated speed by computing the slope of the best-fit linear regression (minimal least squared error) to the linear-position-vs-spike-time plot.
 
-## Spiking network simulations
+### Spiking network simulations
 
-## Single-neuron LTP-IE simulation (Figure 1)
+#### Single-neuron LTP-IE simulation (Figure 1)
 
 LTP-IE-level-dependent voltage distributions (Figure 1D,E) were computed using 15 s simulations. In measuring Figure 1F–G, current pulses were 10 ms in duration, and spiking probability was measured within this window. Current-evoked spike probabilities (Figure 1G) were computed using 125 s simulations, with pulses presented every 250 ms.
 
-## Replay in networks of neurons (Figures 2–3)
+#### Replay in networks of neurons (Figures 2–3)
 
 In replay simulations we used 3000 neurons, with place fields distributed on an approximate lattice over a 2 m x 2 m environment. Gating inputs were provided continually, as our simulation represented the awake, quiescent state during which replay is thought to occur. Gating inputs were random homogeneous Poisson point processes, independent to each neuron, with rate rG that was the same across all neurons.
 
-## Replay dynamics parameter sweep (Figure 3)
+#### Replay dynamics parameter sweep (Figure 3)
 
 For each parameter set we ran ten 10 s simulations starting with different random number generator seeds. We calculated spontaneous event frequency by counting the number of spontaneous replay events arising during each simulation, dividing by the 10 s simulation duration, and averaging over the 10 trials.
 
 To explore the dependence of spontaneous replay event frequency on our network parameters, we first varied the magnitude factor wPC,PC of the recurrent excitatory weight profile and the inhibitory-to-PC connectivity strength wPC,INH (Figure 3A), while holding all other parameters fixed. We next varied wPC,PC and λPC,PC, the recurrent excitatory connectivity length scale, respectively, while holding all other parameters fixed (Figure 3B). Finally, we varied σmax, the maximum LTP-IE level, and rG, the gate-input rate, while holding all other parameters fixed (Figure 3C). Fixed parameter values are given in the table below.
 
-## Virtual replay speed measurements and parameter sweep
+#### Virtual replay speed measurements and parameter sweep
 
 To explore the dependence of virtual replay speed on network parameters we varied wPC,PC and λPC,PC while measuring replay speed in the following way. For all parameter sets in Figure 3A that did not exhibit ‘blowup’ behavior (i.e. all parameter sets where replay events were roughly confined to the LTP-IE profile), we ran up to twenty 600 ms trial simulations in which we injected a short current pulse to the initial end of the trajectory to trigger replay. Simulations ended if 20 trials were reached or 10 successfully triggered replay events were observed. To calculate the virtual replay in a given event we first truncated the initial and final 10% of the event to avoid edge effects. We then collected all neurons that spiked during the event and fit a line using least-squares regression to the linear positions of preferred (x, y) of each neuron along the trajectory vs the times those neurons emitted spikes, and the slope of this line was taken to be the virtual replay speed. We only included replay events lasting between 50 and 400 ms for the speed computation, and events exhibiting a replay speed of more than 10 m/s (events falling outside this range tended not to correspond to unidirectional propagation of the spike sequence along the LTP-IE-defined trajectory). To make the plot shown in Figure 3G we computed the average virtual replay speeds for all parameter sets exhibiting at least five successful replay events.
 
-## Power spectral density analysis
+#### Power spectral density analysis
 
 Power spectral densities shown in Figure 3H were computed by running a single simulation for each of two different parameter sets, collecting all replay events, measuring the power spectrum of each event, and averaging over events.
 
-## LTP-IE-based stimulus-response mappings (Figure 4)
+#### LTP-IE-based stimulus-response mappings (Figure 4)
 
 For this simulation, in order to construct sufficiently non-interfering LTP-IE-defined paths, we constructed a model network of 12000 neurons with neural place fields ranging from −2 to +2 m in both the x- and y- dimensions and let two clusters of radius of 0.25 m, centered at (−1, 1) and (−1,–1), represent two stimuli S1 and S2, respectively, and two additional clusters, centered at (1, 1) and (1, -1), encode motor outputs M1 and M2, respectively. Readout units summed activity in any of the four clusters at every timestep. Sequence reactivation was triggered by depolarizing current injections into cells contained in the S1 or S2 clusters.
 
-## All parameters for spiking network simulations
+#### All parameters for spiking network simulations
 
 We used the following values for all simulation parameters unless otherwise noted (e.g. when values were varied in parameter sweeps [Figure 3]):
 
-SymbolDefinitionValueSymbolDefinitionValueτmPCPC membrane time constant50 msNPCNumber of PCs in recurrent network3000 (Figures 2–3) 12000 (Figure 4)EPCleakPC leak potential−68 mVNINHNumber of INHs in recurrent network300 (Figures 2–3) 1200 (Figure 4)vPCthPC spike threshold−36 mVwPC,GGating input weight without LTP-IE0.8216 (Figures 2–3) 0.5 (Figure 4)τPCrPC refractory period8 mswPC,PCExcitatory recurrent weight scale factor2.6τmINHINH membrane time constant5 mswminPC,PCMin nonzero recurrent weight.1EPCleakINH leak potential−60 mVwPC,INHINH→PC connection weight0.02 (Figures 2–3) 0.002 (Figure 4)vPCthINH spike threshold−50 mVwINH,PCPC→INH connection weight.03τPCrINH refractory period2 mspPC,INHINH→PC connection probability0.5EEExcitatory synaptic reversal potential0 mVpINH,PCPC→INH connection probability0.5τEExcitatory synaptic time constant2 msrGGating input firing rate125 Hz (Figures 2–3) 200 Hz (Figure 4)EIInhibitory synaptic reversal potential−80 mVλPC,PCExcitatory recurrent connectivity length scale.053 mτIInhibitory synaptic time constant2 msσmaxMax LTP-IE value2 (Figures 2–3) 1.84 (Figure 4)rmaxMax position-driven firing rate20 HzrσThreshold firing rate for LTP-IE10 HzλPLPosition-tuning length constant0.15 mβσScale factor for LTP-IE onset1ΔTSimulation time step0.5 ms
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τmPC</td>
+      <td>PC membrane time constant</td>
+      <td>50 ms</td>
+      <td>NPC</td>
+      <td>Number of PCs in recurrent network</td>
+      <td>3000 (Figures 2–3) 12000 (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>EPCleak</td>
+      <td>PC leak potential</td>
+      <td>−68 mV</td>
+      <td>NINH</td>
+      <td>Number of INHs in recurrent network</td>
+      <td>300 (Figures 2–3) 1200 (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>vPCth</td>
+      <td>PC spike threshold</td>
+      <td>−36 mV</td>
+      <td>wPC,G</td>
+      <td>Gating input weight without LTP-IE</td>
+      <td>0.8216 (Figures 2–3) 0.5 (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>τPCr</td>
+      <td>PC refractory period</td>
+      <td>8 ms</td>
+      <td>wPC,PC</td>
+      <td>Excitatory recurrent weight scale factor</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>τmINH</td>
+      <td>INH membrane time constant</td>
+      <td>5 ms</td>
+      <td>wminPC,PC</td>
+      <td>Min nonzero recurrent weight</td>
+      <td>.1</td>
+    </tr>
+    <tr>
+      <td>EPCleak</td>
+      <td>INH leak potential</td>
+      <td>−60 mV</td>
+      <td>wPC,INH</td>
+      <td>INH→PC connection weight</td>
+      <td>0.02 (Figures 2–3) 0.002 (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>vPCth</td>
+      <td>INH spike threshold</td>
+      <td>−50 mV</td>
+      <td>wINH,PC</td>
+      <td>PC→INH connection weight</td>
+      <td>.03</td>
+    </tr>
+    <tr>
+      <td>τPCr</td>
+      <td>INH refractory period</td>
+      <td>2 ms</td>
+      <td>pPC,INH</td>
+      <td>INH→PC connection probability</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>EE</td>
+      <td>Excitatory synaptic reversal potential</td>
+      <td>0 mV</td>
+      <td>pINH,PC</td>
+      <td>PC→INH connection probability</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>τE</td>
+      <td>Excitatory synaptic time constant</td>
+      <td>2 ms</td>
+      <td>rG</td>
+      <td>Gating input firing rate</td>
+      <td>125 Hz (Figures 2–3) 200 Hz (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>EI</td>
+      <td>Inhibitory synaptic reversal potential</td>
+      <td>−80 mV</td>
+      <td>λPC,PC</td>
+      <td>Excitatory recurrent connectivity length scale</td>
+      <td>.053 m</td>
+    </tr>
+    <tr>
+      <td>τI</td>
+      <td>Inhibitory synaptic time constant</td>
+      <td>2 ms</td>
+      <td>σmax</td>
+      <td>Max LTP-IE value</td>
+      <td>2 (Figures 2–3) 1.84 (Figure 4)</td>
+    </tr>
+    <tr>
+      <td>rmax</td>
+      <td>Max position-driven firing rate</td>
+      <td>20 Hz</td>
+      <td>rσ</td>
+      <td>Threshold firing rate for LTP-IE</td>
+      <td>10 Hz</td>
+    </tr>
+    <tr>
+      <td>λPL</td>
+      <td>Position-tuning length constant</td>
+      <td>0.15 m</td>
+      <td>βσ</td>
+      <td>Scale factor for LTP-IE onset</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ΔT</td>
+      <td>Simulation time step</td>
+      <td>0.5 ms</td>
+    </tr>
+  </tbody>
+</table>
 
-## Reduced model dynamics
+### Reduced model dynamics
 
 We used a reduced network model and a reduced model of LTP-IE to explore the algorithmic potential of LTP-IE separately from its specific biophysical properties.
 
-The reduced network model operates in discrete timesteps, with each neuron’s ‘voltage’ vi at time t given by the sum of all of its inputs:vi(t)=∑jwijsj(t−1)+iext(t)+igσiwhere wij is the synaptic connection weight from neuron j onto neuron i, sj(t - 1) is one if neuron j spiked at t - 1 and 0 otherwise, iext(t) is the external input current to neuron i at time t, ig is a constant ‘gating’ current, and σi is neuron i’s LTP-IE level (ranging from 1 to 2, depending on the neuron). If a neuron’s voltage at time t exceeded a threshold voltage vth, we let that neuron spike, with the following caveat: a maximum of nmax neurons were allowed to spike at any individual timestep, and if more than nmax neurons’ voltages exceeded vth, we let only the nmax neurons with the highest voltages spike. Neurons that spiked subsequently entered a refractory period that prevented them from spiking for τr subsequent timesteps. LTP-IE values σi were static throughout each simulation and pre-assigned according to rules that depended on the specific simulation in question.
+The reduced network model operates in discrete timesteps, with each neuron’s ‘voltage’ vi at time t given by the sum of all of its inputs:
 
-## Reduced model simulation of intersecting trajectory replay
+$$
+v^{i}(t)=\sumjw_{ij}s_{j}(t−1)+i_{ext}(t)+i_{g}\sigma^{i}
+$$
 
-## Connectivity
+where wij is the synaptic connection weight from neuron j onto neuron i, sj(t - 1) is one if neuron j spiked at t - 1 and 0 otherwise, iext(t) is the external input current to neuron i at time t, ig is a constant ‘gating’ current, and σi is neuron i’s LTP-IE level (ranging from 1 to 2, depending on the neuron). If a neuron’s voltage at time t exceeded a threshold voltage vth, we let that neuron spike, with the following caveat: a maximum of nmax neurons were allowed to spike at any individual timestep, and if more than nmax neurons’ voltages exceeded vth, we let only the nmax neurons with the highest voltages spike. Neurons that spiked subsequently entered a refractory period that prevented them from spiking for τr subsequent timesteps. LTP-IE values σi were static throughout each simulation and pre-assigned according to rules that depended on the specific simulation in question.
 
-We first specified tuning parameters for each neuron with regard to position and orientation in the environment. Each neuron was assigned a position preference in (x, y) space, tiling a (2 m x 2 m) environment; as well as a preferred θ, randomly selected from one of 8 possible angles tiling 2π radians: 0, π/4, -π/4, ..., such that each window of 8 neurons in a set of windows tiling a row of neurons contained all eight angles. (E.g. the first through eighth neurons with a given preferred y would each have a distinct preferred θ, similarly for the ninth through 16th neurons, and so on.) Neurons were subsequently connected according to their preferred tuning, with the (symmetric) connection weight w between two neurons separated by Δx, Δy, and Δθ in their preferred tuning space given byw(Δx,Δy,Δθ)=exp(−Δx2+Δy22λxy2)exp(−Δθ22λθ2)with λxy and λθ specifying connectivity length constants. (Note Δθ is the absolute distance between two angles calculated on the unit circle.)
+### Reduced model simulation of intersecting trajectory replay
 
-## LTP-IE profile
+#### Connectivity
 
-To assign LTP-IE levels to neurons such that accurate replay would be achieved, we first generated the trajectory through the environment shown in Figure 5A, inset. Neurons with preferred tuning close to the trajectory in (x, y, θ)-space were assigned high LTP-IE levels (σ ~2), and neurons far away from the trajectory were assigned low LTP-IE levels (σ ~1), according to the following equation:σ(x,y,θ)=1+11+exp[−β(z−z0)]z(x,y,θ)=exp[−.5(Δx2σx2+Δy2σy2+Δθ2σθ2)]where Δx, Δy, and Δθ in this case were the distance between a neuron’s preferred x, y, and θ, respectively, and the point on the trajectory that yielded the highest z. σx, σy, and σθ were length constants determining how similar a neurons tuning peak had to be to an (x, y, θ) point on the trajectory to induce LTP-IE.
+We first specified tuning parameters for each neuron with regard to position and orientation in the environment. Each neuron was assigned a position preference in (x, y) space, tiling a (2 m x 2 m) environment; as well as a preferred θ, randomly selected from one of 8 possible angles tiling 2π radians: 0, π/4, -π/4, ..., such that each window of 8 neurons in a set of windows tiling a row of neurons contained all eight angles. (E.g. the first through eighth neurons with a given preferred y would each have a distinct preferred θ, similarly for the ninth through 16th neurons, and so on.) Neurons were subsequently connected according to their preferred tuning, with the (symmetric) connection weight w between two neurons separated by Δx, Δy, and Δθ in their preferred tuning space given by
 
-## Trigger
+$$
+w(Δx,Δy,Δ\theta)=exp(−\frac{Δx^{2}+Δy^{2}}{2\lambda_{xy}^{2}})exp(−\frac{Δ\theta^{2}}{2\lambda_{\theta}^{2}})
+$$
+
+with λxy and λθ specifying connectivity length constants. (Note Δθ is the absolute distance between two angles calculated on the unit circle.)
+
+#### LTP-IE profile
+
+To assign LTP-IE levels to neurons such that accurate replay would be achieved, we first generated the trajectory through the environment shown in Figure 5A, inset. Neurons with preferred tuning close to the trajectory in (x, y, θ)-space were assigned high LTP-IE levels (σ ~2), and neurons far away from the trajectory were assigned low LTP-IE levels (σ ~1), according to the following equation:
+
+$$
+\sigma(x,y,\theta)=1+\frac{1}{1+exp[−\beta(z−z_{0})]}
+$$
+
+
+
+$$
+z(x,y,\theta)=exp[−.5(\frac{Δx^{2}}{\sigma_{x}^{2}}+\frac{Δy^{2}}{\sigma_{y}^{2}}+\frac{Δ\theta^{2}}{\sigma_{\theta}^{2}})]
+$$
+
+where Δx, Δy, and Δθ in this case were the distance between a neuron’s preferred x, y, and θ, respectively, and the point on the trajectory that yielded the highest z. σx, σy, and σθ were length constants determining how similar a neurons tuning peak had to be to an (x, y, θ) point on the trajectory to induce LTP-IE.
+
+#### Trigger
 
 In the reduced model we explicitly triggered replay by injecting an external current pulse with a squared exponential profile focused at either the initial (−1 m, 0.25 m) or final end (−0.25 m, 1 m) to evoke forward or reverse replay, respectively. Exact trigger parameters were unimportant as long as they evoked spiking in approximately the correct location.
 
-## Parameters
+#### Parameters
 
 We used the following parameter values for the reduced model simulation of intersecting trajectory replay:
 
-SymbolDefinitionValueSymbolDefinitionValueNTotal number of neurons4096 (64 × 64)nmaxMax number of active neurons at a timestep10NXNumber of neurons in each row of environment64λxyConnectivity length scale0.25 mNYNumber of neurons in each column of environment64λθConnectivity orientation-length scaleπ/7 radiansNθNumber of equally spaced orientations8σX, σYLTP-IE length scales0.2 mvthSpike threshold11σθLTP-IE orientation-length scaleπ/16 radiansiGGate input5βLTP-IE sigmoid steepness20τrRefractory periodsix timestepsTNumber of timesteps in simulation50 timesteps
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Total number of neurons</td>
+      <td>4096 (64 × 64)</td>
+      <td>nmax</td>
+      <td>Max number of active neurons at a timestep</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>NX</td>
+      <td>Number of neurons in each row of environment</td>
+      <td>64</td>
+      <td>λxy</td>
+      <td>Connectivity length scale</td>
+      <td>0.25 m</td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>Number of neurons in each column of environment</td>
+      <td>64</td>
+      <td>λθ</td>
+      <td>Connectivity orientation-length scale</td>
+      <td>π/7 radians</td>
+    </tr>
+    <tr>
+      <td>Nθ</td>
+      <td>Number of equally spaced orientations</td>
+      <td>8</td>
+      <td>σX, σY</td>
+      <td>LTP-IE length scales</td>
+      <td>0.2 m</td>
+    </tr>
+    <tr>
+      <td>vth</td>
+      <td>Spike threshold</td>
+      <td>11</td>
+      <td>σθ</td>
+      <td>LTP-IE orientation-length scale</td>
+      <td>π/16 radians</td>
+    </tr>
+    <tr>
+      <td>iG</td>
+      <td>Gate input</td>
+      <td>5</td>
+      <td>β</td>
+      <td>LTP-IE sigmoid steepness</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>τr</td>
+      <td>Refractory period</td>
+      <td>six timesteps</td>
+      <td>T</td>
+      <td>Number of timesteps in simulation</td>
+      <td>50 timesteps</td>
+    </tr>
+  </tbody>
+</table>
 
-## Reduced model simulation of non-spatial mapping
+### Reduced model simulation of non-spatial mapping
 
-## Connectivity
+#### Connectivity
 
 We included five groups of neurons in this simulation: S1, S2, M1, M2, and B. S1 and S2 represented sensory ensembles, each composed of NS neurons; and M1 and M2 represented motor ensembles, each composed of NM neurons. B represented a ‘switchboard’ ensembles of neurons, akin to Swan and Wyble’s ‘binding pool’ (Swan and Wyble, 2014), comprising NB neurons. Each motor ensemble, with connection weight wMM.
 
@@ -261,18 +531,95 @@ NMB randomly selected switchboard neurons sent connections to M1, and another po
 
 There were no recurrent connections within either sensory ensemble or within the switchboard ensemble. These connections were omitted since our goal was to demonstrate a proof-of-concept nonspatial-mapping computation through LTP-IE. Exploring the effects of sensory and switchboard recurrence in a more biophysically accurate model may yield fruitful insights into LTP-IE-based computations, however.
 
-## LTP-IE profile
+#### LTP-IE profile
 
 To encode the mapping (S1→M1, S2→M2) we assigned an LTP-IE value of σ = 2 to all switchboard neurons that either (1) received connections from S1 and sent connections to M1 or (2) received connections from S2 and sent connections to M2. All other neurons were assigned an LTP-IE value of σ = 1. To encode the mapping (S1→M2, S2→M1) we assigned an LTP-IE value of σ = 2 to all switchboard neurons that either (1) received connections from S1 and sent connections to M2 or (2) received connections from S2 and sent connections to M1. All other neurons were assigned an LTP-IE value of σ = 1.
 
-## Trigger
+#### Trigger
 
 We triggered recall of an association encoded in the switchboard LTP-IE profile by injecting an external current pulse at timestep two into all the neurons in either S1 or all the neurons in S2.
 
-## Parameters
+#### Parameters
 
-SymbolDefinitionValueSymbolDefinitionValueNTotal number of neurons2400NBSNumber of switchboard neurons receiving sensory projections200NSNumber of neurons in each sensory ensemble100NMBNumber of switchboard neurons projecting to one motor ensemble200NMNumber of neurons in each motor ensemble100nBSNumber of sensory neurons projecting to each switchboard neuron receiving sensory input10NBNumber of neurons in switchboard ensemble2000nMBNumber of motor neurons receiving projections from each switchboard neuron projecting to motor ensembles25vthSpike threshold10wMMRecurrent connection strength within each motor ensemble0.35iGGate input3wBSConnection strength from sensory ensemble to switchboard neurons0.88τrRefractory periodfive timestepswMBConnection strength from switchboard to motor ensemble neurons2.33nmaxMax number of neurons active at a timestep50TNumber of timesteps in simulationfive timesteps
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Total number of neurons</td>
+      <td>2400</td>
+      <td>NBS</td>
+      <td>Number of switchboard neurons receiving sensory projections</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>NS</td>
+      <td>Number of neurons in each sensory ensemble</td>
+      <td>100</td>
+      <td>NMB</td>
+      <td>Number of switchboard neurons projecting to one motor ensemble</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>NM</td>
+      <td>Number of neurons in each motor ensemble</td>
+      <td>100</td>
+      <td>nBS</td>
+      <td>Number of sensory neurons projecting to each switchboard neuron receiving sensory input</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>Number of neurons in switchboard ensemble</td>
+      <td>2000</td>
+      <td>nMB</td>
+      <td>Number of motor neurons receiving projections from each switchboard neuron projecting to motor ensembles</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>vth</td>
+      <td>Spike threshold</td>
+      <td>10</td>
+      <td>wMM</td>
+      <td>Recurrent connection strength within each motor ensemble</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>iG</td>
+      <td>Gate input</td>
+      <td>3</td>
+      <td>wBS</td>
+      <td>Connection strength from sensory ensemble to switchboard neurons</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>τr</td>
+      <td>Refractory period</td>
+      <td>five timesteps</td>
+      <td>wMB</td>
+      <td>Connection strength from switchboard to motor ensemble neurons</td>
+      <td>2.33</td>
+    </tr>
+    <tr>
+      <td>nmax</td>
+      <td>Max number of neurons active at a timestep</td>
+      <td>50</td>
+      <td>T</td>
+      <td>Number of timesteps in simulation</td>
+      <td>five timesteps</td>
+    </tr>
+  </tbody>
+</table>
 
-## Code
+### Code
 
 All code for this work was written in Python three and is available at https://github.com/rkp8000/seq_speak. (Pang, 2019; copy archived at https://github.com/elifesciences-publications/seq_speak).

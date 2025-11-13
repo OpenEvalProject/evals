@@ -17,13 +17,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02dxx6824 Department of Molecular and Cellular Biology, The Scripps Research Institute La Jolla United States
-2. https://ror.org/02dxx6824 Department of Integrative Structural and Computation Biology, The Scripps Research Institute La Jolla United States
-3. https://ror.org/03yjb2x39 Department of Biochemistry and Molecular Biology, Cummings School of Medicine, University of Calgary Calgary Canada
-4. https://ror.org/03yjb2x39 Hotchkiss Brain Institute, Department of Clinical Neurosciences, Cumming School of Medicine, University of Calgary Calgary Canada
-5. https://ror.org/00gmyvv50 Alberta Child Health Research Institute, Department of Medical Genetics, Cumming School of Medicine, University of Calgary Calgary Canada
-6. https://ror.org/02dxx6824 Department of Chemistry, The Scripps Research Institute La Jolla United States
-7. https://ror.org/03yjb2x39 Departments of Medical Genetics and Biochemistry & Molecular Biology, Cumming School of Medicine, Hotchkiss Brain Institute, Snyder Institute for Chronic Diseases, Alberta Children's Hospital Research Institute, University of Calgary Calgary Canada
+1. Department of Molecular and Cellular Biology, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+2. Department of Integrative Structural and Computation Biology, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+3. Department of Biochemistry and Molecular Biology, Cummings School of Medicine, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+4. Hotchkiss Brain Institute, Department of Clinical Neurosciences, Cumming School of Medicine, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+5. Alberta Child Health Research Institute, Department of Medical Genetics, Cumming School of Medicine, University of Calgary Calgary Canada ([ROR:00gmyvv50](https://ror.org/00gmyvv50))
+6. Department of Chemistry, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+7. Departments of Medical Genetics and Biochemistry & Molecular Biology, Cumming School of Medicine, Hotchkiss Brain Institute, Snyder Institute for Chronic Diseases, Alberta Children's Hospital Research Institute, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 
@@ -45,25 +45,57 @@ The ability of ISR activation to promote mitochondrial elongation suggests that 
 
 ## Results
 
-## The nucleoside mimetic compounds 0357 and 3610 preferentially activate the ISR downstream of HRI
+### The nucleoside mimetic compounds 0357 and 3610 preferentially activate the ISR downstream of HRI
 
 The small-molecule halofuginone activates the ISR kinase GCN2 and induces ISR-dependent mitochondrial elongation (Perea et al., 2023a; Keller et al., 2012) However, few other compounds are available that selectively activate other ISR kinases through mechanisms that allow for ISR-dependent mitochondrial remodeling (Perea et al., 2023a). For example, BtdCPU activates the ISR kinase HRI through a mechanism involving mitochondrial uncoupling, precluding its use for probing ISR-dependent protection of mitochondria (Perea et al., 2023a). To address this limitation and define the potential for pharmacologic activation of other ISR kinases to promote adaptive mitochondrial elongation, we established and implemented a screening platform to identify compounds that activated ISR signaling downstream of alternative ISR kinases (Figure 1A). In this screen, we used the ATF4-FLuc translational reporter of the ISR (Figure 1—figure supplement 1A; Yang et al., 2023a) We confirmed that ISR-activating stressors including the ER stressor thapsigargin (Tg) and the ATP synthase inhibitor oligomycin A (OA) robustly activated this reporter (Figure 1—figure supplement 1B). We then used this reporter to screen the ~3k nucleoside mimetic analog compound library (10 µM) and monitored ATF4-FLuc activity 8 hr after treatment. Our primary screen identified 34 hit compounds that activated the ATF4-FLuc reporter with a robust Z-score of greater than 3 fold. We then removed highly reactive compounds and pan-assay interference compounds (PAINS), which reduced the number of hits to 9 (Figure 1B). These compounds were re-purchased and then tested in dose response for ATF4-FLuc activation (Figure 1—figure supplement 1C). This identified compounds 0357 and 3610 as the compounds that most efficaciously activated the ATF4-FLuc reporter, albeit with low potency (EC50 > 10 µM). We confirmed that co-treatment with the highly selective ISR inhibitor ISRIB (Sidrauski et al., 2013; Zyryanova et al., 2018) blocked ATF4-FLuc activation induced by these compounds, confirming this activation can be attributed to the ISR (Figure 1C and D). Further, we used qPCR to show that treatment with 0357 or 3610 increased expression of the ISR target genes ASNS and CHAC1 in HEK293 and MEF cells (Figure 1—figure supplement 1D and E; Kreß et al., 2023; Grandjean et al., 2019). Importantly, these compounds did not activate luciferase reporters of other stress-responsive signaling pathway such as the unfolded protein response (UPR; XBP1-RLuc) (Grandjean et al., 2020; Plate et al., 2016), the heat shock response (HSR; HSE-FLuc) (Calamini et al., 2011), or the oxidative stress response (OSR; ARE-FLuc) (Ibrahim et al., 2020; Figure 1E and F). Further, treatment with these compounds did not induce expression of the UPR target gene BiP, the HSR target gene HSPA1A, or the OSR target gene NQO1 in HEK293 cells (Figure 1—figure supplement 1F). Finally, treatment with 0357 or 3610 did not significantly reduce viability of HEK293 cells (Figure 1—figure supplement 1G). These results indicate compounds 0357 and 3610 preferentially activate the ISR compared to other stress-responsive signaling pathways.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig1-v1.jpg)
+
+**Figure 1.:** (A) Screening pipeline used to identify selective ISR kinase-activating compounds that promote protective mitochondrial elongation. (B) Structures of the top 9 ISR-activating compounds identified in our nucleoside mimetic screen. (C, D) ATF4-FLuc activity in HEK293 cells stably expressing ATF4-FLuc (Yang et al., 2023a) treated for 8 hr with the indicated concentration of 0357 (C) or 3610 (D) in the absence or presence of ISRIB (200 nM). (E, F) Activation of the ATF4-FLuc ISR translational reporter (green), the XBP1-RLuc UPR reporter (red), the HSE-FLuc HSR reporter (blue), or the ARE-FLuc OSR reporter (purple) stably expressed in HEK293 cells treated with the indicated concentration of 0357 (E) or 3610 (F) for 16 hr. (G, H) ATF4-mAPPLE fluorescence in HEK293 cells stably expressing ATF4-mAPPLE and CRISPRi depleted of the indicated ISR kinase (Guo et al., 2020) treated for 8 hr with 0357 (G, 20 µM) or 3610 (H, 20 µM). **p<0.01, ***p<0.005 for one-way ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The ATF4-FLuc and ATF4-mAPPLE reporters containing the 5’UTR of ATF4 (Guo et al., 2020; Yang et al., 2023a). (B) ATF4-Fluc activity, measured by luminescence, in HEK293 cells stably expressing ATF4-FLuc treated for 8 hr with vehicle, thapsigargin (Tg, 0.5 µM), or oligomycin A (OA, 50 ng/mL). (C) ATF4-FLuc activity, normalized to vehicle, in HEK293 cells stably expressing ATF4-FLuc treated for 8 hr with the indicated dose of the indicated compound. The signals observed in veh or Tg (0.5 µM) cells are shown by the dashed lines. Error bars show SEM for n = 9 replicates. (D) Expression, measured by qPCR, of the ISR target genes ASNS and CHAC1 in HEK293 cells treated for 8 hr with vehicle, Tg (0.5 µM), 0357 (25 µM), or 3610 (25 µM). (E) Expression, measured by qPCR, of the ISR target genes Asns and Chac1 in MEF cells treated for 8 hr with vehicle, Tg (0.5 µM), 0357 (20 µM), or 3610 (20 µM). (F) Expression, measured by qPCR, of the UPR target gene BiP, the HSR target gene HSPA1A, and the OSR target gene NQO1 in HEK293 cells treated for 8 hr with vehicle, Tg (0.5 µM), 0357 (25 µM), or 3610 (25 µM). (G) Viability, measured by Cell Titer Glo, of HEK293 cells treated for 24 hr with the indicated concentration of 0357 or 3610. Error bars show SEM for n = 3 replicates. *p<0.05, **p<0.01, ***p<0.005 for one-way ANOVA.
+
 Next, we sought to identify the specific ISR kinase responsible for ISR activation induced by these two nucleoside mimetics. We monitored the compound-dependent activation of an ATF4-mAPPLE fluorescent reporter stably expressed in HEK293 cells CRISPRi-depleted of each individual ISR kinase (Figure 1—figure supplement 1A; Guo et al., 2020; Perea et al., 2023a). We previously used this assay to confirm that halofuginone activates the ISR downstream of GCN2 and BtdCPU activates the ISR downstream of HRI (Perea et al., 2023a). Treatment with either 0357 or 3610 activates the ATF4-mAPPLE reporter in control cells (Figure 1G and H). CRISPRi-depletion of HRI, but no other ISR kinase, blocked ATF4-FLuc activation induced by these two compounds. This finding indicates that these compounds activate the ISR downstream of HRI. Collectively, these results identify 0357 and 3610 as nucleoside mimetic compounds that preferentially activate the ISR through a mechanism involving the ISR kinase HRI.
 
-## Pharmacologic HRI activators promote mitochondrial elongation
+### Pharmacologic HRI activators promote mitochondrial elongation
 
 Halofuginone-dependent activation of GCN2 promotes adaptive mitochondrial elongation (Perea et al., 2023a). However, it is currently unclear if pharmacologic activation of other ISR kinases can similarly induce mitochondrial elongation. Here, we tested the ability of our HRI-activating compounds 0357 and 3610 to induce mitochondrial elongation downstream of the ISR. Previously, ISR-dependent mitochondrial elongation was quantified by manually classifying cells as containing fragmented, tubular, or elongated networks (Lebeau et al., 2018; Perea et al., 2023b). However, since 0357 and 3610 activate ISR signaling to lower levels than that observed for other compounds (e.g., halofuginone), we posited that these compounds may induce more modest mitochondrial elongation that may be difficult to quantify using this manual approach. To address this, we implemented an automated image analysis pipeline using Imaris software to quantify mitochondrial elongation in MEF cells stably expressing mitochondrial-targeted GFP (mtGFP) treated with our compounds (Figure 2—figure supplement 1A); (Wang et al., 2012). We collected Z-stack confocal images of mtGFP-expressing MEF cells (MEFmtGFP) and processed images using a deconvolution filter in FIJI to reduce the background and enhance the fluorescent signal. We used the ‘Surfaces’ module on Imaris to generate three-dimensional (3D) segmentation models of mitochondria visible in the deconvolved Z-stacks. Using the surfaces module, we quantified parameters defining mitochondrial shape, including bounding box length, sphericity, and ellipsoid principal axis length (Figure 2—figure supplement 1A). Treatment with conditions that induce mitochondrial elongation, such as the ER stressor thapsigargin (Tg) and the GCN2 activator halofuginone (HF), increased bounding box and ellipsoid principal axis length, while reducing sphericity (Figure 2A–D, Figure 2—figure supplement 1B–D) – all changes consistent with increases in mitochondrial length. In contrast, treatment with conditions that promote mitochondrial fragmentation, such as the mitochondrial uncouplers BtdCPU and CCCP (both compounds that activate HRI) (Fessler et al., 2020; Perea et al., 2023a), reduced bounding box length and ellipsoid principal axis length, while increasing sphericity (Figure 2A–D, Figure 2—figure supplement 1B–D) – all changes consistent with increased mitochondrial fragmentation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of MEF cells stably expressing mtGFP (MEFmtGFP) (Wang et al., 2012) treated for 6 hr with vehicle (veh), halofuginone (HF, 100 nM), BtdCPU (10 µM), 0357 (10 µM), or 3610 (10 µM). The inset shows a 3-fold magnification of the region indicated by the yellow box. Scale bars, 10 µm (top) and 3.33 µm (bottom). (B–D) Quantification of bounding box axis, ellipsoid principal axis, and sphericity from the entire dataset of representative images shown in (A). The number of individual measurements for each condition is shown above. (E) Representative images of MEFmtGFP cells treated for 6 hr with vehicle (veh), thapsigargin (Tg; 0.5 µM) halofuginone (HF, 100 nM), 0357 (10 µM), or 3610 (10 µM) in the presence or absence of ISRIB (200 nM). The inset shows 3-fold magnification of the image centered on the asterisks. Scale bars, 10 µm. (F–H) Quantification of bounding box axis, ellipsoid principal axis, and sphericity from the entire dataset of representative images shown in (E). The number of 3D segmentations used for the individual measurements for each condition is shown above. *p<0.05, ****p<0.001 for Kruskal–Wallis ANOVA. Black asterisks indicate comparison to vehicle-treated cells. Red asterisks show comparisons for ISRIB co-treatment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Image processing and analysis workflow to quantify several parameters that define mitochondrial shape. (B) Representative images of MEFmtGFP cells treated for 6 hr with vehicle (veh), thapsigargin (Tg, 500 nM), or CCCP (10 µM). The inset shows a 3-fold magnification of the region indicated by the yellow box. Scale bars, 10 µm (top) and 3.33 µm (bottom) (C–E) Quantification of bounding box axis, ellipsoid principal axis, and sphericity from the entire dataset of representative images shown in (B). The number of 3D segmentations used for the individual measurements for each condition is shown above. ****p<0.001 for Kruskal–Wallis ANOVA. Black asterisks show comparison with vehicle-treated cells.
+
 We next applied this approach to define the impact of our pharmacologic HRI activators on mitochondrial morphology. Treatment with either 0357 or 3610 for 6 hr increased both the bounding box and ellipsoid principal axis length, while decreasing mitochondrial sphericity (Figure 2A–D). This result indicates that both these compounds induced mitochondrial elongation. Co-treatment with the selective ISR inhibitor ISRIB blocked these changes in mitochondria shape, indicating that these compounds induce mitochondrial elongation through an ISR-dependent mechanism (Figure 2E–H). ISRIB co-treatment also blocked mitochondrial elongation induced by the ER stressor thapsigargin (Tg) and the GCN2 activator halofuginone (HF), as predicted (Lebeau et al., 2018; Perea et al., 2023a). These results indicate that, like halofuginone, pharmacologic HRI activators also induce adaptive, ISR-dependent mitochondrial elongation. Further, these results suggest that the pharmacologic activation of different ISR kinases can induce protective elongation of mitochondria in the absence of cellular stress.
 
-## Pharmacologic ISR activation suppresses ionomycin-induced mitochondrial fragmentation
+### Pharmacologic ISR activation suppresses ionomycin-induced mitochondrial fragmentation
 
 The ability for our pharmacologic GCN2 or HRI activators to induce adaptive mitochondrial elongation suggests that enhancing signaling through these kinases may suppress mitochondrial fragmentation induced by pathologic insults such as calcium dysregulation (Calvo-Rodriguez and Bacskai, 2020; Calvo-Rodriguez et al., 2020; Garbincius and Elrod, 2022; Matuz-Mares et al., 2022). Treatment with the calcium ionophore ionomycin induces rapid, DRP1-dependent mitochondrial fragmentation in cell culture models (Ji et al., 2015; Ji et al., 2017). We pretreated MEFmtGFP cells for 6 hr with the GCN2 activator halofuginone or our two HRI-activating compounds (0357 and 3610) and subsequently challenged these cells with ionomycin. We then monitored mitochondrial morphology over a 15 min timecourse. As expected, ionomycin rapidly increased the accumulation of fragmented mitochondria in these cells, evidenced by reductions in both bounding box and ellipsoid principal axis length and increases of organelle sphericity (Figure 3—figure supplement 1A–D). Pretreatment with the ER stressor thapsigargin, which promotes stress-induced mitochondrial elongation downstream of the PERK ISR kinase, reduced the accumulation of fragmented mitochondria in ionomycin-treated cells (Figure 3A–D), as previously reported (Perea et al., 2023b). Intriguingly, treatment with halofuginone, 0357, or 3610 also reduced the accumulation of fragmented mitochondria in ionomycin-treated cells. Instead, mitochondria in cells pretreated with these ISR kinase activators and challenged with ionomycin demonstrated mitochondrial lengths and sphericity similar to that observed in vehicle-treated MEFmtGFP cells (Figure 3A–D). These results indicate that pharmacologic activation of different ISR kinases can suppress the accumulation of fragmented mitochondria following ionomycin-induced calcium dysregulation.
 
-## Pharmacologic activation of ISR kinases restores basal mitochondrial morphology in patient fibroblasts expressing disease-associated MFN2D414V
+![Figure 3.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images of MEFmtGFP cells pretreated for 6 hr with vehicle (veh), thapsigargin (Tg, 500 nM), halofuginone (HF, 100 nM), 0357 (10 µM), or 3610 (10 µM) and then challenged with ionomycin (1 µM) for the indicated time. The inset shows 3-fold magnification of the image centered on the asterisk. Scale bars, 10 µm. (B–D) Quantification of bounding box axis length, ellipsoid principal axis length, and sphericity from the entire dataset of representative images shown in (A). The black dashed line shows the mean value of vehicle-treated cells prior to ionomycin treatment. The dashed red line shows the mean value of vehicle-treated cells following 15 min treatment with ionomycin. The number of 3D segmentations used for the individual measurements for each condition is shown above. *p<0.05, **p<0.01, ***p<0.005, ****p<0.001 for Kruskal–Wallis ANOVA. Black asterisks show comparison with vehicle-treated cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Quantifications of bounding box axis, ellipsoid principal axis, and sphericity of MEFmtGFP cells pretreated for 6 hr with vehicle and then challenged with ionomycin (1 µM) for the indicated time. Representative images are shown in Figure 3A. The number of 3D segmentations used for the individual measurements for each condition are shown above. ****p<0.001 for Kruskal–Wallis ANOVA. Black asterisks show comparison with vehicle-treated cells at time 0.
+
+### Pharmacologic activation of ISR kinases restores basal mitochondrial morphology in patient fibroblasts expressing disease-associated MFN2D414V
 
 Over 150 pathogenic variants in the pro-fusion GTPase MFN2 are causatively associated with the autosomal-dominant peripheral neuropathy CMT Type 2A (Cartoni and Martinou, 2009; Zaman and Shutt, 2022; Alberti et al., 2024). While these pathogenic variants can impact diverse aspects of mitochondrial biology (Zaman and Shutt, 2022), many, including D414V, lead to increases in mitochondrial fragmentation (Sharma et al., 2021b; Cartoni and Martinou, 2009; Zaman and Shutt, 2022; Alberti et al., 2024). This can be attributed to reduced activity of MFN2-dependent fusion associated with these variants and a subsequent relative increase of DRP1-dependent mitochondrial fission. We predicted that pharmacologic activation of ISR kinases could rescue mitochondrial network morphology in patient fibroblasts expressing the disease-associated MFN2 variant D414V (MFN2D414V). To test this, we treated wild-type human fibroblasts and patient fibroblasts expressing MFN2D414V with halofuginone or our two HRI-activating compounds 0357 and 3610 and monitored mitochondrial network morphology by staining with MitoTracker. As reported previously, MFN2D414V-expressing fibroblasts showed shorter, more fragmented mitochondrial networks compared to control fibroblasts, reflected by reductions in both bounding box and ellipsoid principle axis lengths and increased sphericity (Figure 4A and E, Figure 4—figure supplement 1A–C; Sharma et al., 2021b). Treatment with halofuginone, 0357, or 3610 increased mitochondrial length in control fibroblasts (Figure 4A–D). These changes were inhibited by co-treatment with ISRIB, confirming these effects can be attributed to ISR activation. Intriguingly, all three compounds also increased mitochondrial length and reduced sphericity in MFN2D414V-expressing patient fibroblasts to levels similar to those observed in control fibroblasts, with halofuginone showing the largest effect (Figure 4E–H). Again, this increase in mitochondrial elongation was reversed by co-treatment with ISRIB. These results show that pharmacologic activation of different ISR kinases can rescue basal mitochondrial morphology in patient fibroblasts expressing the disease-associated MFN2D414V variant that causes dysregulation in various neurological functions, including ataxia, optic atrophy, and sensorineural hearing loss.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative images of control human fibroblasts expressing MFN2WT treated for 6 hr with vehicle (veh), halofuginone (HF, 100 nM), 3610 (10 µM), 0357 (10 µM), and/or ISRIB (200 nM). The inset shows 3-fold magnification of the image centered on the asterisks. Scale bars, 15 µm (top) and 5 µM (bottom). (B–D) Quantification of bounding box axis (B), ellipsoid principal axis (C), and sphericity (D) from the entire dataset of images described in panel (A). The number of individual measurements for each condition is shown above. (E) Representative images of patient fibroblasts expressing MFN2D414V treated for 6 hr with veh, HF (100 nM), 3610 (10 µM), 0357 (10 µM), and/or ISRIB (200 nM). The inset shows 3-fold magnification of the image centered on the asterisks. Scale bars, 15 µm (top) and 5 µM (bottom). (F–H) Quantification of bounding box axis (F), ellipsoid principal axis (G), and sphericity (H) from the entire dataset of images described in panel (E). The number of 3D segmentations used for the individual measurements for each condition is shown above. *p<0.05, ***p<0.005, ****p<0.001 for Kruskal–Wallis ANOVA. Black asterisks show comparison with vehicle-treated cells. Red asterisks show comparisons for ISRIB co-treatment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100541/elife-100541-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Bounding box length (A), ellipsoid principal axis length (B), and sphericity (C) in control human fibroblasts expressing MFN2WT or patient fibroblasts expressing MFN2D414V. Representative images are shown in Figure 4A and E. ****p<0.001 for Mann–Whitney t-test.
 
 ## Discussion
 
@@ -79,42 +111,237 @@ Several different compounds have previously been reported to activate specific I
 
 ## Materials and methods
 
-## Mammalian cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 cells expressing XBP1-RLuc</td>
+      <td>Wiseman Lab(TSRI)</td>
+      <td></td>
+      <td>Grandjean et al., 2020; Plate et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 cells expressing ATF4-FLuc</td>
+      <td>Martin Kampmann’s lab (UCSF)</td>
+      <td></td>
+      <td>Yang et al., 2023a</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 cells expressing ATF4-mAPPLE and CRISPRi-depleted of PERK, GCN2, HRI, or PKR</td>
+      <td>Martin Kampmann’s lab (UCSF)</td>
+      <td></td>
+      <td>Guo et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>MEF cells stably expressing mitochondrial-targeted GFP (MEFmtGFP)</td>
+      <td>Peter Schultz’s lab (TSRI)</td>
+      <td></td>
+      <td>Wang et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Primary fibroblasts from patients expressing WT or D414V MFN2</td>
+      <td>University of Calgary</td>
+      <td></td>
+      <td>Sharma et al., 2021a; Martens et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Promega Bright-Glo substrate</td>
+      <td>Promega</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA MiniPrepKit</td>
+      <td>Zymo Research</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Power SYBR Green PCR Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin (Tg)</td>
+      <td>Fisher Scientific</td>
+      <td>50-464-294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ISRIB</td>
+      <td>Sigma</td>
+      <td>SML0843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CCCP</td>
+      <td>Sigma</td>
+      <td>C2759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BtdCPU</td>
+      <td>Fisher</td>
+      <td>32-489-210MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halofuginone (HF)</td>
+      <td>Sigma</td>
+      <td>50-576-3001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin A</td>
+      <td>Selleck</td>
+      <td>S1478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green</td>
+      <td>Life Technologies</td>
+      <td>M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 10.0</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td>3-D Surface Rendering Module</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell culture
 
 HEK293 cells (purchased from ATCC), HEK293 cells stably expressing XBP1-RLuc (Grandjean et al., 2020; Plate et al., 2016), HEK293 cells stably expressing HSE-FLuc, HEK293 cells stably expressing ATF4-FLuc (Yang et al., 2023a), HEK293 cells stably expressing ATF4-mAPPLE (a kind gift from Martin Kampmann’s lab) (Yang et al., 2023a) and CRISPRi-depleted of individual ISR kinases (HRI, PKR, PERK, GCN2; a kind gift from Martin Kampmann’s lab at UCSF) (Guo et al., 2020), and MEFmtGFP (a kind gift from Peter Schultz) (Wang et al., 2012) were all cultured at 37°C and 5% CO2 in DMEM (Corning-Cellgro) supplemented with 10% fetal bovine serum (FBS, Gibco), 2 mM l-glutamine (Gibco), 100 U/mL penicillin, and 100 mg/mL streptomycin (Gibco).
 
 Primary fibroblast cells were isolated from partial thickness skin biopsy, as previously described (Sharma et al., 2021b; Martens et al., 2020), from a patient who provided written informed consent for research studies using human tissues (University of Calgary Conjoint Research Ethics Board REB17-0850). Cells were cultured in Medium Essential Media (11095080, Gibco), supplemented with 10% FBS (12483020, Gibco). Cells were maintained at 37°C and 5% CO2. Clinical information regarding this participant was previously reported and included ataxia, optic atrophy, and sensorineural hearing loss (Sharma et al., 2021b). Exome sequencing in this participant identified a homozygous c.1241A>T variant in MFN2 (predicted to cause p.(Asp414Val)) and no other pathogenic variants.
 
-## Compounds and reagents
+### Compounds and reagents
 
 The compounds used in this study were purchased from the following sources: thapsigargin (Tg; Cat# 50-464-294 Fisher Scientific), ISRIB (Cat# SML0843, Sigma), CCCP (Cat# C2759, Sigma), BtdCPU (Cat# 32-489-210MG, Fisher), halofuginone (Cat#50-576-3001, Sigma), and oligomycin A (S1478, Selleck). The nucleoside mimetic library was purchased from Chem Div. Hit compounds were repurchased from Chem Div.
 
-## Measurements of ISR activation in ATF4-reporter cell lines
+### Measurements of ISR activation in ATF4-reporter cell lines
 
 HEK293 cells stably expressing the ATF4-FLuc, HSE-Fluc, or the ARE-Fluc reporter were seeded at a density of 15,000 cells per well in 384-well white plates with clear bottoms (Greiner). The following day, cells were treated with the indicated compound in triplicate at the indicated concentration for 8 hr. After treatment, an equal volume of Promega Bright-Glo substrate (Promega) was added to the wells and allowed to incubate at room temperature for 10 min. Luminescence was then measured using an Infinite F200 PRO plate reader (Tecan) with an integration time of 1000 ms. This assay was used to both screen the nucleoside mimetic library in triplicate and monitor the activity of hit compounds. HEK293 cells expressing the XBP1-RLuc reporter were tested using an analogous approach to that described above, monitoring RLuc activity using Renilla-Glo reagent (Promega), as previously described (Grandjean et al., 2020).
 
 HEK293 cells stably expressing the ATF4-mApple reporter and CRISPRi-depleted of specific ISR kinases were seeded at a density of 300,000 cells per well in six-well TC-treated flat-bottom plates (Genesee Scientific). The cells were treated the next day for 16 hr with the compound at the indicated concentration. Cells were then washed twice with phosphate-buffered saline (PBS) and dissociated using TrypLE Express (Thermo Fisher). The cells were then resuspended in PBS and 5% FBS to neutralize the enzymatic reaction. Flow cytometry was performed on a Bio-Rad ZE5 Cell Analyzer monitoring mAPPLE fluorescence (568/592 nm) using the 561 nm green-yellow laser in combination with the 577/15 filter. Analysis was performed using FlowJo Software (BD Biosciences).
 
-## Quantitative PCR
+### Quantitative PCR
 
 The relative mRNA expression of target genes was measured using quantitative RT-PCR. Cells were treated as indicated and then washed with PBS (Gibco). RNA was extracted using Quick-RNA MiniPrepKit (Zymo Research) according to the manufacturer’s protocol. RNA (500 ng) was then converted to cDNA using the High-Capacity Reverse Transcription Kit (Applied Biosystems). qPCR reactions were prepared using Power SYBR Green PCR Master Mix (Applied Biosystems), and primers (below) were obtained from Integrated DNA Technologies. Amplification reactions were run in an ABI 7900HT Fast Real Time PCR machine with an initial melting period of 95°C for 5 min and then 45 cycles of 10 s at 95°C, 30 s at 60°C.
 
-## qPCR primers
+### qPCR primers
 
-## Fluorescence microscopy
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M. musculus Chac1</td>
+      <td>TGACCCTCCTTGAAGACCGTGA</td>
+      <td>AGTGTCATAGCCACCAAGCACG</td>
+    </tr>
+    <tr>
+      <td>M. musculus Rplp2</td>
+      <td>TGTCATCGCTCAGGGTGTTG</td>
+      <td>AAGCCAAATCCCATGTCGTC</td>
+    </tr>
+    <tr>
+      <td>M. musculus Asns</td>
+      <td>CCAAGTTCAGTATCCTCTCC</td>
+      <td>TAATTTGCCACCTTTCTAGC</td>
+    </tr>
+    <tr>
+      <td>H. sapiens RPLP0</td>
+      <td>CCACGCTGCTGAACATGC</td>
+      <td>TCGAACACCTGCTGGATGAC</td>
+    </tr>
+    <tr>
+      <td>H. sapiens ASNS</td>
+      <td>ATCACTGTCGGGATGTACCC</td>
+      <td>TGATAAAAGGCAGCCAATCC</td>
+    </tr>
+    <tr>
+      <td>H. sapiens CHAC1</td>
+      <td>GTGGTGACGCTCCTTGAAGA</td>
+      <td>TTCAGGGCCTTGCTTACCTG</td>
+    </tr>
+    <tr>
+      <td>H. sapiens HSPA1A</td>
+      <td>GCTGATGATGGGGTTAACA</td>
+      <td>GGAGGCGGAGTACA</td>
+    </tr>
+    <tr>
+      <td>H. sapiens NQO1</td>
+      <td>GCCTCCTTCATGGCATAGTT</td>
+      <td>GGACTGCACCAGAGCCAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fluorescence microscopy
 
 MEFmtGFP were seeded at a density of 15,000 cells/well in eight-chamber slides (Ibidi) coated with poly-d-lysine (Sigma) (Wang et al., 2012). The next day cells were treated with the indicated dose of compound for the indicated time. After treatment, cells were imaged on a Zeiss LSM 880 Confocal Laser Scanning Microscope equipped with a full incubation chamber for regulating temperature and CO2 during live-cell imaging.
 
 Patient fibroblasts were seeded at 70,000 cells per dish in 35 mm dishes with 20 mm glass bottoms (D35-20-1.5-N, Cellvis) for live-cell imaging. After 24 hr, the compound treatments were administered at the dosage and for the time points indicated in the figure legends. The mitochondrial network in patient fibroblasts was visualized using 100 nM MitoTracker Green (M7514, Life Technologies) (Kumar et al., 2001) for 45 min, following washing three times with culture media, according to the manufacturer’s instructions. The Z-stack images were acquired of patient fibroblasts using an Olympus Spinning Disc Confocal System (Olympus SD OSR) equipped with the Olympus UPlanApo 60XTIRF/1.50 Oil Objective using the CellSense Dimensions software. Acquired Z-stacks were analyzed using AI Machine Learning Segmentation (Imaris), as detailed below.
 
-## Quantification of mitochondrial morphology
+### Quantification of mitochondrial morphology
 
 The Z-stack confocal images were processed in FIJI to reduce the background noise and enhance the fluorescent signal. The processed images are then introduced into the developed quantification pipeline in Imaris imaging software. In this approach, mitochondria are segmented in 3D using the ‘Surfaces’ module with a machine-learning algorithm that has been iteratively trained to detect foreground and background pixels in each Z-stack, filling blank holes within segments to generate 3D surfaces. The generated surfaces are filtered to include those above a minimum threshold of 250 voxels. While direct length measurements cannot be obtained through the Imaris surface module, indirect measurements of mitochondrial length are inferred from three separate calculations, including (1) object-oriented bounding box axis, (2) ellipsoid axis length, and (3) object sphericity (see Figure 2—figure supplement 1A). The object-oriented bounding box axis is calculated by measuring the length of the longest or principal bounding-box length of the smallest object-oriented rectangular box that encloses each 3D segmentation. The ellipsoid axis length is calculated by measuring the length of the longest or principal axis of each 3D segmentation. Sphericity is calculated by dividing the longest axis of each 3D segmentation by the length of the perpendicular axis.
 
-## Statistical methods
+### Statistical methods
 
 Data are presented as mean ± SEM or as violin plots showing the mean and quartiles for the indicated number of measurements. Outliers were removed from datasets describing bounding box length and principal axis length, as appropriate, using the ROUT outlier test in PRISM 10 (GraphPad, San Diego, CA). Normality of datasets from our imaging studies was tested in PRISM 10 (GraphPad) using D’Agostino & Pearson, Anderson–Darling, Shapiro–Wilk, and Kolmogorov–Smirnov tests. Statistics were calculated in PRISM 10 (GraphPad) and analyzed by one‐way ANOVA with Tukey’s multiple correction test, Kruskal–Wallis or Mann–Whitney tests for data exhibiting a non-normal distribution, as indicated in the accompanying figure legends. Indications of nonsignificant interactions were generally omitted for clarity.
 
-## Materials availability statement
+### Materials availability statement
 
 All materials detailed in this article can be provided by the authors upon reasonable request or purchased from the indicated supplier.

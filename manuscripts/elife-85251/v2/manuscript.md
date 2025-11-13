@@ -16,13 +16,13 @@
 
 ### Affiliations
 
-1. https://ror.org/05cz92x43 Jan and Dan Duncan Neurological Research Institute, Texas Children’s Hospital Houston United States
-2. https://ror.org/02pttbw34 Medical Scientist Training Program, Baylor College of Medicine Houston United States
-3. https://ror.org/02pttbw34 Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States
-4. https://ror.org/02pttbw34 Department of Neuroscience, Baylor College of Medicine Houston United States
-5. https://ror.org/02pttbw34 Department of Neurology, Baylor College of Medicine Houston United States
-6. https://ror.org/02pttbw34 Department of Pediatrics, Baylor College of Medicine Houston United States
-7. https://ror.org/02pttbw34 Center for Alzheimer’s and Neurodegenerative Diseases, Baylor College of Medicine Houston United States
+1. Jan and Dan Duncan Neurological Research Institute, Texas Children’s Hospital Houston United States ([ROR:05cz92x43](https://ror.org/05cz92x43))
+2. Medical Scientist Training Program, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+3. Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+4. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+5. Department of Neurology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+6. Department of Pediatrics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+7. Center for Alzheimer’s and Neurodegenerative Diseases, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
@@ -38,41 +38,149 @@ One important limitation to gene expression studies from human postmortem tissue
 
 ## Results
 
-## Single-cell transcriptome profiles of the tau transgenic Drosophila brain
+### Single-cell transcriptome profiles of the tau transgenic Drosophila brain
 
 Pan-neuronal expression of either wildtype or mutant forms of the human microtubule-associated protein tau (MAPT) gene in Drosophila recapitulates key features of AD and other tauopathies, including misfolded and hyperphosphorylated tau, age-dependent synaptic and neuron loss, and reduced survival (Wittmann et al., 2001). We performed scRNAseq of adult fly brains in tauR406W transgenic Drosophila (elav>tauR406W) and controls (elav-GAL4), including animals aged 1, 10, or 20 days (Figure 1—figure supplement 1A and B). The GAL4-UAS expression system is used to express human tau in neurons throughout the central nervous system (CNS) (Brand and Perrimon, 1993). The R406W variant in MAPT causes frontotemporal dementia with parkinsonism-17, an autosomal-dominant, neurodegenerative disorder with tau pathology (i.e., tauopathy). In flies, wild type and mutant forms of tau share conserved neurotoxic mechanisms and cause similar neurodegenerative phenotypes, but tauR406W induces a more robust transcriptional response and accelerated course (Wittmann et al., 2001; Bardai et al., 2018; Mangleburg et al., 2020). Following stringent quality control, transcriptome data from 48,111 single cells were available for our initial analyses, including from 6 total conditions (2 genotypes × 3 ages) (Figure 1—figure supplement 1C and E). In the integrated dataset, we identified 96 distinct cell clusters grouped by transcriptional signatures, and annotated cell-type identities to 59 clusters using available Drosophila brain scRNAseq reference data and established cell markers (Figure 1A, Figure 1—figure supplement 2, Figure 1—source data 1). As expected, most cells in the fly brain were neurons (CadN expression, n = 42,587), whereas glia were comparatively sparse (repo expression, n = 5524). Our dataset comprises a diverse range of cell types. Among all cell clusters, 49% were cholinergic neurons (VAChT), 20% were glutamatergic neurons (VGlut), 11% were GABAergic neurons (Gad1), and 7% were glia (repo, Gs2) (Figure 1B, Figure 1—figure supplement 3). We also identified several major glial subtypes in the fly brain (Kremer et al., 2017), including astrocyte-like, cortex, chiasm, subperineurial, perineurial, and ensheathing glia, along with a group of circulating macrophages (hemocytes). Overall, our findings are consistent with results from prior scRNAseq studies of whole adult Drosophila brains (Davie et al., 2018).
 
-## Tau drives changes in cell proportions in the brain
+![Figure 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig1-v2.jpg)
+
+**Figure 1.:** (A) Uniform manifold approximation and projection (UMAP) plot displays unsupervised clustering of 48,111 cells, including from control (elav-GAL4/+) and elav>tauR406W transgenic animals (elav-GAL4/+; UAS-tauR406W/+) at 1, 10, and 20 days. Expression of neuron- and glia-specific marker genes, CadN and repo, respectively, is also shown. Cell cluster annotations identify heterogeneous optic lobe neuron types, including from the lamina (L1-5, T1, C2/3, Lawf, Lai), medulla (Tm/TmY, Mi, Dm, Pm, T2/3), and lobula (T4/T5, LC). Other identified neuron types include photoreceptors (ninaC, eya), dopaminergic neurons (DAT, Vmat, ple), and central brain mushroom body Kenyon cells (ey, Imp, sNFP, trio). (B) Violin plot showing cell-type marker expression across annotated cell clusters. Selected markers include Elav (neurons), repo/Gs2 (glia), Gad1 (GABA), VGlut (glutamate), VAChT (acetylcholine), and DAT/Vmat/ple (dopamine). See also Figure 1—figure supplements 1–3 and Figure 1—source data 1–4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic showing longitudinal study design for this study. Control (elav-GAL4/+) and elav>tauR406W transgenic animals (elav-GAL4/+; UAS-tauR406W/+) animals were aged to three timepoints: 1, 10, and 20 days. (B) For each library, 16–18 brains were dissected from the cuticle and pooled for dissociation into a single-cell suspension. Cells were partitioned into single-cell droplets using the 10x Genomics Chromium platform for library preparation, and completed libraries were sequenced using the Illumina NovaSeq 6000. Figures were generated using BioRender. (C) Plot shows the number of cells captured in each library for elav-GAL4 controls (elav) and elav>tauR406W (tau) at each timepoint: day 1 (d1), day 10 (d10), or day 20 (d20). (D) Violin plots display scRNAseq library quality control metrics, including the number of unique genes captured (nFeature_RNA), log(number of UMIs) (log_ncount), and % mitochondrial reads (percent.mt). Cell filtering cutoffs are denoted by red dashed lines. (E) Unsupervised clustering of cells after filtering by DoubletFinder, showing cells classified as doublets or multiplets (left) and singlets (right). A total of 48,111 cells classified as singlets were used for downstream analyses.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic shows the cell identity annotation pipeline utilized for this study. We leveraged both published scRNA-seq atlases from Davie et al., 2018 and Özel et al., 2021 as well as other well-established cell-type markers. Our strategy included (i) correlation-based approach (scmap) using the two brain atlases as reference, (ii) a two-layer neural network classifier from Özel et al., 2021 to identify optic lobe neurons, and (iii) differential expression of cell-specific marker genes. (B) Expression of cell-specific markers across annotated cell identities. Normalized expression for each gene is scaled (Z-transformed) across all cell clusters and represented in a blue-red color scale. Percent of cells in each cluster that have detectable (non-zero) gene expression is represented by dot size. (C) Correlation analysis (cosine similarity) of shared, non-dropout, genes from individual annotated cells in our dataset to cluster-level means of the corresponding cell identity in Özel et al., 2021. Violin plot representing distribution of cosine similarity scores of annotated cells in our dataset to their (available) corresponding reference cluster in Özel et al., 2021. The median similarity coefficient for cell-to-reference pairings ranged from 0.87 to 0.76. (D) Identical correlation analysis as described in (C), applied with reference clusters from Davie et al., 2018. The median similarity coefficient for cell-to-reference pairings ranged from 0.9 to 0.72.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Violin plot of general cell-type markers for all cell clusters, as described in Figure 1B.
+
+### Tau drives changes in cell proportions in the brain
 
 Leveraging our scRNAseq data and pooling longitudinal samples to permit robust comparisons, we first assessed how tau affects the relative abundance of cell-type subpopulations in the adult brain. We found 16 neuronal and 6 glial clusters with statistically significant changes in cell abundance when comparing tau and controls (Figure 2A and B, Figure 2—source data 1). Cholinergic mushroom body Kenyon cell neurons in the central complex, which are important in learning and memory, were sharply reduced, likely consistent with developmental toxicity of tau, as noted in prior studies of Drosophila tauopathy models (Mershin et al., 2004; Kosmidis et al., 2010). In fact, seven excitatory neuronal clusters, including several cholinergic and glutamatergic cell types, demonstrated significant declines, whereas inhibitory neuronal subpopulations (e.g., Pm and Mi4 GABAergic cells in the visual system) appeared resilient. Conversely, cluster 12 cells appeared more abundant in tau flies; this non-annotated cell type was enriched for neuroendocrine expression markers, Ms and Hug, as well as a regulator of synaptic plasticity, Arc1 (Figure 1—source data 2). Interestingly, several glial cell types also appeared increased in the brains of tau animals. Ensheathing glia, which showed the largest potential increase, are localized to neuropil in the fly brain and mediate phagocytosis following neuronal injury (Doherty et al., 2009; Freeman, 2015). In order to confirm these observations, which were based on pooled data across timepoints, we generated additional scRNAseq profiles from 10-day-old elav>tauR406W and control flies in triplicate samples (69,128 cells; Figure 2—figure supplement 1). Overall, 13 out of the 22 significant cell abundance changes were also observed in this replication dataset, including the sharp reduction of excitatory neurons (e.g., Kenyon cells), and the increase in multiple glial clusters (e.g., ensheathing glia) (Figure 2—figure supplement 1B, Figure 2—source data 1). Non-replicated changes in cell-type abundance may be driven by data from earlier (1 day) or later (20 day) timepoints (Figure 2B). Although our experimental design limits cross-sectional analyses at 1 and 20 days, the observed changes in cell abundance were suggestive of a combination of both developmental tau toxicity and progressive, age-dependent neurodegeneration (e.g., neuronal clusters 1, 9, and 12, and astrocyte-like glia). Selected cell-type proportion changes were also recapitulated based on computational deconvolution of available bulk-tissue RNAseq from tauR406W and control flies at 1, 10, and 20 days by using an independent, published scRNAseq reference dataset (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig2-v2.jpg)
+
+**Figure 2.:** (A) Log2-fold change (log2FC) of normalized cell counts between elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) and control (elav-GAL4/+) animals. Timepoints are pooled for each cluster. Cell clusters with statistically significant changes (false discovery rate [FDR] < 0.05) are highlighted in black. Many of these cell abundance changes were replicated in an independent dataset generated from 10-day-old animals (Figure 2—figure supplement 1). Since cell-type abundance estimates are relative between clusters, we also performed an adjusted analysis in which glia were assumed to be unchanged (Figure 2—figure supplement 3A). (B) Plots highlight cluster cell counts with significant differences based on pooled timepoint comparisons between elav>tauR406W (red) and control (black) animals, including results for samples collected at 1 day (triangle), 10 days (cross-hatch square), or 20 days (filled square). See Figure 2—figure supplement 2 for complementary analysis based on deconvolution of bulk brain RNA-sequencing. (C) Whole-mount immunofluorescence of adult brains from 10-day-old flies. Glia are stained using the Anti-Repo antibody (red) in control (elav-GAL4/+) and elav>tauR406W transgenic flies. Full Z-stack projection is shown. Scale bar = 100 microns. See also Figure 2—figure supplement 3B for additional immunostains for nuclei and actin. (D) Quantification of glia (Repo-positive puncta), brain volume, and glial density is shown. Statistical analysis employed Welch’s T-test with n=9 animals per group and significance threshold p < 0.05. Error bars denote the 95% confidence interval. See also Figure 2—figure supplements 1–3 and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) UMAP plot showing the 69,128 cells comprising the scRNAseq replication dataset from 10-day-old control (elav-GAL4/+) and elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) flies. Cell cluster names are consistent with that used in the discovery dataset (Figure 1). (B) Plots shows tau-triggered cell abundance changes, based on log2-fold change of normalized cell counts in the replication dataset. 19 clusters have statistically significant cell abundance changes (false discovery rate [FDR] < 0.05; black bars). Of note, in the replication dataset, hemocytes were present in only very low numbers, and therefore were not included in cell abundance analyses.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Cell proportions (y-axis) are shown for selected cell types of interest, based on analysis of bulk-tissue RNAseq from control (black, n = 2) (elav-GAL4/+) and elav>tauR406W (red, n = 3) (elav-GAL4/+; UAS-tauR406W/+) flies (Mangleburg et al., 2020). A line is drawn through the median of each condition. There is an elevation in the estimated proportions of astrocyte-like, ensheathing, and perineurial glia, recapitulating observations in the scRNAseq cell abundance analysis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) In order to adjust for proportional changes, the log2 fold-change value for seven cell clusters (Ensheathing glia, Perineurial glia, Astrocyte-like glia, Cortex glia, Chiasm glia, Subperineurial glia, and Hemocytes) was iteratively subtracted from the cell abundance estimates for all other clusters, establishing a confidence interval. Following adjustment, 14 decreasing and 1 increasing cell types are highlighted. All other cell-type clusters have fold-change estimates overlapping zero. (B) Whole-mount immunofluorescence of adult brains from 10-day-old flies, including control (elav-GAL4/+) and elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) flies. Composite of 10 confocal sections is shown, from co-staining for glia (Anti-Repo, red) along with nuclei (DAPI, blue) and actin (phalloidin, green). Scale bar = 100 microns. (C) Quantification of fluorescent intensity in (B) across genotypes. Statistical analysis of mean pixel intensity employed either unpaired, two-tailed t-tests (DAPI, Repo) or the Mann-Whitney t-test (Phalloidin), with n=9 animals per group and significance threshold p < 0.05. Error bars denote the 95% confidence interval.
 
 Similar to our Drosophila tauopathy model, snRNAseq from postmortem human brain tissue has consistently suggested AD-associated increases in glial cell abundance, including astrocytes, oligodendrocytes, microglia, and endothelial cells (Lau et al., 2020; Zhou et al., 2020). However, one major limitation of both scRNAseq and snRNAseq analysis is that cell-type abundance estimates are relative across the dataset. Therefore, a decline in neuronal subpopulations could lead to inflated abundance estimates of other, stable cell types. Indeed, whereas widespread neuronal loss is highly characteristic of AD (Davies and Maloney, 1976; Braak and Braak, 1991; Leng et al., 2021), systematic histopathological studies in postmortem brain tissue do not support an absolute increase in microglia or astrocyte numbers, but rather a proportional increase in reactive glia in diseased tissues (Serrano-Pozo et al., 2013; Davies et al., 2017; Paasila et al., 2019). We therefore computed confidence intervals for cell abundance changes under an alternative model in which glia were assumed to be unchanging (Figure 2—figure supplement 3A). In this more conservative, adjusted analysis, only the neuroendocrine group (cluster 12) was increased and 15 excitatory neuronal subtypes were decreased.
 
 In order to resolve the remaining ambiguity in potential glial cell changes, we performed immunofluorescence on whole-mount Drosophila brains (Figure 2C). Although the overall intensity of glial nuclear staining (anti-Repo) was increased in elav>tauR406W flies, quantification revealed no significant increase in absolute glial numbers. Instead, we found nominally increased glial density in tau animals after considering their reduced total brain volumes (Figure 2D). The increased intensity of antibody staining in tau brains may arise from enhanced antibody penetration since similar changes are also seen for other markers (Figure 2—figure supplement 3B and C). Moreover, increased repo gene expression was not observed in either scRNAseq or in our previously published bulk-tissue RNAseq (Mangleburg et al., 2020). Overall, our results suggest that the apparent increase in glial cell abundance from scRNAseq is likely a consequence of proportional changes in single-cell suspensions due to neuronal loss: in our replication dataset from 10-day-old flies, the proportion of neurons were reduced from 90% to 83% in control versus elav>tauR406W flies. While it is difficult to exclude more modest or selective regional changes, we conclude that similar to human postmortem tissue findings (Serrano-Pozo et al., 2013), absolute glial numbers are largely stable following tau expression in the Drosophila brain.
 
-## Tau and aging exert cell-specific effects on brain gene expression
+### Tau and aging exert cell-specific effects on brain gene expression
 
 To our knowledge, the specific contributions of tau and aging on gene expression across heterogeneous cell types in the adult brain have not been systematically examined. In order to define the impact of aging on brain gene expression, we first quantified cell-specific transcriptional signatures in control flies (elav-GAL4) by performing differential expression analyses between the three timepoints from matched cell clusters (Figure 3A, Figure 3—source data 1). Overall, we define 5998 unique, aging-induced differentially expressed genes. Based on Gene Ontology term enrichment, ribosome/protein translation and energy metabolism pathways were broadly dysregulated during aging, involving the majority of cell types (Figure 3—source data 2). We next used linear regression to examine tau-induced differential gene expression within each cell type, including adjustment for age as a covariate. Overall, a total of 5280 unique genes were differentially expressed in at least one or more cell types (Figure 3B, Figure 3—figure supplement 1A), and these results overlap significantly with our prior bulk RNA-seq in elav>tauR406W flies (Figure 3—figure supplement 2). Importantly, 93% of tau-induced differentially expressed genes (n = 4917 out of 5280) were also triggered by aging in control flies (among n = 5998 genes). However, tau and aging appeared to have markedly distinct impacts when considering the distribution of gene perturbations across heterogeneous cell types (Figure 3C). Whereas aging broadly perturbed gene expression, tau-triggered changes were sharply polarized to excitatory neurons and glia. Further, the overlap between tau and aging varied across clusters (range = 0–75%) and tau-specific signatures predominated in selected cell types. For example, cholinergic Kenyon cells from the α'/β' mushroom body lobes were among the most vulnerable cell types (Figure 2A) and also had the greatest number of tau-induced gene perturbations (Figure 3B), which were approximately equally divided between up- and downregulated changes (Figure 3—figure supplement 1A, Figure 3—source data 1). In fact, among 2289 tau-induced differentially expressed genes within α'/β' Kenyon cells, 2139 (93%) were unique to tau and not similarly triggered in the corresponding cell type in aging control animals. We confirmed that the number of differentially expressed genes and affected cell types does not correspond to the spatial pattern of MAPT transgene pan-neuronal expression in the brain (Figure 3—figure supplement 4); however, it is difficult to exclude the possibility that some vulnerable cell types with high MAPT expression might be inadvertently censored from our analyses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-v2.jpg)
+
+**Figure 3.:** (A) Aging has widespread transcriptional effects on most brain cell types. Number of aging-induced differentially expressed genes (false discovery rate [FDR] < 0.05) within each cell cluster is shown, based on comparisons of day 1 vs. day 10 and day 10 vs. day 20 in control animals only (elav-GAL4/+). For each cell cluster, the number of gene expression changes unique to aging (white) or overlapping with tau-induced changes (gray) is highlighted. Labels for cell clusters with significant tau-induced cell abundance changes are shown in bold. (B) In contrast with aging, tau induces a more focal transcriptional response, with greater selectivity for excitatory neurons and glia. Number of tau-induced, differentially-expressed genes (FDR < 0.05) within each cell cluster is shown, based on regression models including age as a covariate and considering both control and elav>tauR406W animals (elav-GAL4/+; UAS-tauR406W/+) at 1, 10, and 20 days. For each cell cluster, the number of gene expression changes unique to tau (black) or overlapping with aging-induced changes (gray) is highlighted. Labels for cell clusters with significant tau-induced cell abundance changes are shown in bold. Tau-induced gene expression changes from single-cell profiles significantly overlap with prior analyses conducted using bulk brain RNA-sequencing (Figure 3—figure supplement 2). (C) Uniform manifold approximation and projection (UMAP) plots show the number of aging- (red) versus tau- (green) triggered differentially expressed genes within each cell cluster. Color intensity represents the number of differentially expressed genes. See also Figure 3—figure supplements 1–5 and Figure 3—source data 1–5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The number of tau-induced, differentially expressed genes are shown following adjustment for aging, but highlighting up- (red) versus down- (blue) regulated genes. Data presented is otherwise same as that shown in Figure 3B, based on comparisons of control (elav-GAL4/+) and elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+). (B) Heatmap shows significant KEGG terms from functional enrichment analysis of tau-induced differentially expressed genes, including pathways that are active in cell-type specific vs. more global patterns. Nonsignificant test results are shown in gray, whereas positive results (hypergeometric test, false discovery rate [FDR] < 0.05) are shaded based on significance level [-log10(FDR)]. Only cell clusters with at least one significant KEGG term enrichment are displayed. (C) UMAP displaying the number of age-adjusted tau-induced differentially expressed genes with rescaled color values for better visualization of dynamic range.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Venn diagram illustrates the number of tau-induced differentially expressed genes in bulk (blue) vs. single-cell (red) RNAseq. These complementary analyses consider identical genotypes and timepoints, including control (elav-GAL4/+) and elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) transgenic flies profiled at 1, 10, and 20 days. Both regression analyses similarly adjust for age. (B) Plot shows the number of tau-induced differentially expressed genes per cell cluster from scRNAseq data (red), and the number of overlapping, differentially expressed genes from bulk tissue RNAseq (black). Overall, genes that are uniquely differentially expressed in the scRNAseq data (n = 2614 genes) are restricted to fewer cell clusters, whereas shared gene expression changes (n = 2666 genes) are expressed more broadly that are observed in both platforms (shared differentially expressed genes, 2666 genes). Further, genes that are uniquely differentially expressed in bulk RNAseq data, where sequencing reads are not diluted across individual cells, tend to be expressed at lower levels when compared to those that are shared.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Volcano plots (gene expression log2 fold change vs. -log10(FDR)) of select cell-type clusters with the most tau-induced differentially expressed genes, including (A) α'/β' Kenyon cells, (B) α/β Kenyon cells, (C) γ Kenyon cells, (D) Lai, (E) Dm3a/b, (F) astrocyte-like glia, (G) perineurial glia (clusters 19 and 44), and (H) ensheathing glia. Genes with the top -log10(FDR) or log2 fold change are labeled.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Uniform manifold approximation and projection (UMAP) plot showing widespread MAPT transgene expression across in elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) animals. The pan-neuronal elav-GAL4 driver induces widespread expression of tau. All gene expression data are displayed as normalized gene counts (‘Materials and methods’). (B) Plot showing insignificant Pearson correlation between the absolute value of cell abundance changes reported in Figure 2B and the mean MAPT expression level per cluster (R = −0.14, p=0.2). (C) Plot showing overall poor Pearson correlation (R = −0.0079, p=0.95) between number of tau-induced gene expression changes (y-axis) and the mean MAPT expression level per cell cluster (x-axis). (D) Neuronal vs. glial mean MAPT expression per cell cluster. Quantitation based on n=8 glia and n=82 neurons. Error bars denote 95% confidence intervals.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** A cross-sectional visualization of differential gene expression changes for (A) astrocyte-like glia and (B) ensheathing glia demonstrating progressive, age-dependent gene expression changes. Top genes ranked by -log10(FDR) or log2 fold change are labeled, and several notable age-dependent changes are highlighted in orange. Comprehensive cross-sectional differential expression results are provided in Figure 3—source data 5.
 
 Using functional enrichment analysis, we identify tau transcriptional signatures implicating altered inflammation, oxidative phosphorylation, and ribosomal gene expression (Figure 3—figure supplement 1B, Figure 3—source data 2). These pathways were prominently disrupted in excitatory neurons of the fly visual system, along with other central brain cholinergic and glutamatergic cell clusters. The pattern of transcriptional perturbation is also consistent with the established susceptibility of the mushroom body and optic lobes to tau-mediated neurodegeneration (Wittmann et al., 2001; Kosmidis et al., 2010). In other cases, we noted functional enrichments with greater specificity for selected cell clusters, such as altered signatures for mTOR signaling in glutamatergic cluster 21 and Foxo signaling in a subset of neuron types, including lamina intrinsic amacrine (Lai) cells and a cluster receptive to columnar motion (T4/T5). In addition, genes involved in mRNA splicing regulation were perturbed in another group of visual processing cells (T2a) as well as cholinergic cluster 7. Among non-neuronal cells, ensheathing glia, cortex glia, astrocyte-like glia, and hemocytes had the greatest number of tau-driven differential expression changes (Figure 3—figure supplement 1C), highlighting signatures related to fatty acid metabolism and synaptic regulation (Figure 3—source data 2).
 
 To examine the robustness of our findings, we compared our results on tau-induced, cell-type-specific gene expression changes with the independent dataset from 10-day-old flies. Based on hypergeometric overlap tests of differentially expressed gene sets, expression profiles in two-thirds (61 out of 90) of cell-type clusters from our longitudinal analysis were replicated at 10 days, including several vulnerable excitatory neuron and glial cell clusters (Figure 3—source data 4). In secondary analyses, we also analyzed differential expression cross-sectionally, permitting examination of age-dependent changes in specific genes or pathways (Figure 3—figure supplement 5, Figure 3—source data 5). Overall, when aggregated across all clusters, there was a 90% overlap between the total unique, tau-triggered differentially expressed genes at 10 days between the discovery and replication dataset.
 
-## Tau triggers changes in neuronal innate immune signaling
+### Tau triggers changes in neuronal innate immune signaling
 
 Whereas most tau-induced genes strongly overlapped with aging, a minority overall were tau-specific (363 out of 5280 gene perturbations). Interestingly, this gene set was significantly enriched for mediators of the innate immune response, particularly NFκB signaling pathway components (Figure 3—source data 2). From Drosophila bulk brain RNA-seq data, we previously identified seven gene coexpression modules perturbed by tauR406W expression using weighted correlation network analysis (WGCNA) (Mangleburg et al., 2020). Among these, a 236-gene module was strongly enriched for innate immune response genes downstream of NFκB. In our bulk brain RNA-seq data, this module was also activated by wildtype tau, but the mutant form, tauR406W, caused a more robust, accelerated response (Figure 4—figure supplement 1). In order to better understand the cell type-specific expression patterns, we next examined the innate immune coexpression module in our scRNAseq data. This immune signature was broadly detected in the adult fly brain, including both glia and many neuron types (Figure 4A, Figure 4—figure supplement 2A). Moreover, expression of the immune module was strongly dysregulated by tau, with 50 out of 90 clusters showing significant changes (Figure 4B, Figure 4—source data 1). Tau activated the immune signature in the majority of affected cell types (86%, 43 out of 50 clusters). In particular, tau-triggered increases were noted in multiple excitatory neuron clusters (e.g., Dm3 glutamatergic cells in the visual system) as well as non-neuronal cells, including glia (e.g., ensheathing and cortex glia) and hemocytes. Conversely, in a selected subset of seven clusters, tau attenuated expression of the innate immune module (Figure 4B), including excitatory neurons in the lamina and several Kenyon cell types that were among the most vulnerable to tau-triggered neuronal loss, based on cell abundance estimates (Figure 2A). Other tau-perturbed coexpression modules revealed distinct cell-type-specific patterns (Figure 4—figure supplement 3). For example, a module enriched for synaptic regulators was markedly reduced in glia in response to tau, whereas expression was increased in multiple glutamatergic neuron subtypes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-v2.jpg)
+
+**Figure 4.:** (A) Innate immune genes are expressed broadly in the adult fly brain, including both neurons and glia. Plot shows mean overall normalized expression by cell cluster among n = 236 genes belonging to a tau-induced coexpression module that is significantly enriched for innate immune response pathways (Mangleburg et al., 2020). In this plot, gene expression was averaged across both elav>tauR406W and control cells; similar results are seen when stratifying by either age or genotype (Figure 4—figure supplement 2A). See also Figure 4—figure supplement 2D for experimental confirmation of NFκB/Rel protein expression in neurons and glia. (B) Tau activates or suppresses innate immune response genes in a cell-type-specific manner. Plot shows log2 fold-change mean expression per cell cluster for the same 236-gene immune response coexpression module, based on comparisons between elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) and control (elav-GAL4/+) flies. See also Figure 4—figure supplement 2B and C for plots of curated NFκB signaling pathway genes and Figure 4—figure supplement 3 for similar analyses of other coexpression modules. (C) Log2 fold-change in Relish (Rel) regulon gene expression per cluster is shown, based on comparisons between tauR406W and control flies. All results were significant (false discovery rate [FDR] < 0.05) based on regression models including age as a covariate. (D) Plot shows overall mean expression of the Rel-regulon (x-axis) versus tau-induced cell abundance change (y-axis). Among clusters with significant, tau-induced cell loss (denoted in blue, FDR < 0.05; see also Figure 2A), cell abundance change was inversely correlated with Rel regulon expression (Pearson correlation: R = –0.9, p=0.0021). Many other cell types without significant cell abundance changes are also shown in gray. Both control and tau cells are pooled for this analysis. See also Figure 4—figure supplements 1–8 and Figure 4—source data 1–4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Previously published bulk-tissue RNAseq data from Mangleburg et al., 2020 showing age-dependent increases in innate immune module expression in both tauWT and tauR406W transgenic Drosophila. Module mean expression is plotted for each sample (n = 3 per condition).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Plots showing mean expression of the immune response gene coexpression module (n = 236 genes), based on analyses of scRNAseq data stratified by genotype (control vs. elav>tauR406W) or age (1, 10, or 20 days). Innate immune signaling appears to be broadly expressed across brain cell types for all conditions. (B) Plot shows mean overall normalized expression by cell cluster among n = 62 curated NFκB signaling pathway genes (see ‘Materials and methods’ for full list). In this plot, gene expression was averaged across both elav>tauR406W and control cells. Results are similar to that seen for the immune response coexpression model (Figure 4A). (C) Plot shows log2 fold-change mean expression per cell cluster for the same 62-gene NFκB signaling mediators, based on comparisons between elav>tauR406W and control flies. Results are similar to that seen for the immune response coexpression model (Figure 4B). (D) Experimental confirmation of Relish expression in adult Drosophila brains. Whole mount immunofluorescence of adult brains from Rel-GFP flies, in which the endogenous Relish protein harbors an amino-terminal GFP tag in homozygosity in an otherwise wildtype genetic background (y, w; PBac{GFP.FPTB-Rel}VK00037). Rel-GFP (Anti-GFP, green) were stained for neuronal nuclei (anti-Elav, red), glia (anti-Repo, blue). The asterisks and arrows denote Rel expression/localization to neuronal and glial nuclei, respectively. Quantification of % overlap between Elav or Repo with GFP is also shown. See also Figure 4—figure supplement 6 for experiments demonstrating specificity of the Rel-GFP line.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Uniform manifold approximation and projection (UMAP) plots show gene expression changes for several published, tau-triggered gene coexpression modules. Color scale shows mean gene expression changes per cell cluster (log2FC), based on scRNAseq data from elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) and control (elav-GAL4/+) flies. Modules are functionally enriched for genes involved in (A) respiration, (B) cell motility, (C) cell junctions, (D) chromatin organization, (E) RNA biosynthesis, and (F) synaptic signaling, as previously described (Mangleburg et al., 2020).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Uniform manifold approximation and projection (UMAP) plots show relationships among 48,111 cells based on 183 regulons (cell-level regulon activity scores). (B) Cell-specific expression of brain cell marker genes. Whereas Pros and Imp expression appears widespread, scro show more restricted expression to optic lobe neurons, and repo expression is limited to glia.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Select-cell clusters where the Rel regulon is differentially expressed in at least one time point while also demonstrating age-progressive change. Y-axis denotes log2 fold change of the Rel regulon between tau and control at each time point. Significant log2 fold changes (p<0.05) are colored in gray.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Whole-mount immunofluorescence of adult brains from Rel-GFP flies, in which the endogenous Relish protein harbors an amino-terminal GFP tag in homozygosity in an otherwise wildtype genetic background (y, w; PBac{GFP.FPTB-Rel}VK00037). Brains were co-stained for Rel-GFP (Anti-GFP, green) and (anti-Rel, red) to establish specificity. Neuronal nuclei (anti-Elav, grayscale) are also highlighted as a counterstain.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** (A) Schematic showing analytic strategy to identify regulon expression networks that predict tau-triggered cell loss. We implemented elastic net regression to examine the relation between regulon expression (predictor variable) and cell abundance changes (response variable) for clusters showing significant tau-induced cell abundance changes. Threefold cross-validation was repeated 100 times for hyperparameter tuning (alpha-lambda). (B) Plot showing the regression coefficients for prioritized regulons (out of 183 total) that predict cell abundance changes in elav>tauR406W flies. The Rel regulon was the third ranked predictor for the severity of neuronal loss. (C) We replotted Figure 4D, showing the relation between Rel regulon expression, but restricted to control animals, and tau-induced cell abundance changes. Among clusters with significant, tau-induced cell loss (denoted in blue, false discovery rate [FDR] < 0.05), cell abundance change remained inversely correlated with Rel regulon expression (Pearson correlation: R = –0.87, p=0.005).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) flies show age-dependent neurodegeneration compared with controls (elav-GAL4/+), based on hematoxylin and eosin stained sections from 10-day-old animals. Knockdown of Rel using RNA-interference (RNAi) (elav-GAL4/+; UAS-Rel.RNAi-1/+; UAS-tauR406W/+ or elav-GAL4/+; UAS-tauR406W/UAS-Rel.RNAi-2) (RNAi-1: v49414; RNAi-2: HMS00070). Scale bar = 50 um. Arrows point to representative vacuoles. (B) For each genotype, the mean number of vacuoles per section was quantified (n = 8–15 per group). Each dot indicates the mean number of vacuoles across 10–11 sections from a single brain. Vacuoles equal or greater than 5 um in diameter within the central complex were quantified in each section. Error bars represent 95% confidence intervals. No significant statistical difference between elav>tauR406W and elav>tauR406W + RNAi was observed using Welch’s t-test.
+
 To confirm and extend our analysis of tau- and cell-type-specific gene expression perturbations, we derived a complementary set of 183 transcription factor coexpression networks (regulons) based on our scRNAseq data. Specifically, regulons define coexpressed gene sets in which members are also predicted targets of a specific transcription factor (Van de Sande et al., 2020). Overall, clustering cells based on regulon enrichment recapitulates similar, expected relationships between annotated cell types (Figure 4—figure supplement 4, Figure 4—source data 2), and differential regulon analysis also revealed consistent tau-induced, cell-type-specific transcriptional perturbations (Figure 4—source data 3). In particular, we examined the 442-gene regulon comprised of targets of the NFκB transcription factor ortholog in Drosophila, Relish (Rel), which is activated downstream of the Drosophila Imd (Immune deficiency) pathway, similar to the tumor necrosis factor receptor pathway in mammals (Myllymäki et al., 2014). The expression pattern of the Rel regulon and its differential expression in tau versus control flies were consistent with our findings for the immune coexpression module derived from bulk RNAseq, which includes both Imd, Rel, and multiple antimicrobial peptides that are activated by Rel (Figure 4C). We also obtained consistent results based on a manually-curated, 62-gene set including well-established NFκB signaling pathway members (Figure 4—figure supplement 2B and C). Based on our cross-sectional analyses, the pattern of tau-triggered activation of the Rel regulon in selected clusters (e.g., L1-5 lamina neurons and astrocyte-like glia) was age-dependent (Figure 4—figure supplement 5). We also experimentally confirmed Rel expression in both neurons and glia in the adult fly brain using an available strain in which the endogenous protein harbors an amino-terminal GFP tag (Figure 4—figure supplement 2D).
 
-## Expression signatures for neuronal vulnerability in tauopathy
+### Expression signatures for neuronal vulnerability in tauopathy
 
 In order to more directly model the relationship of transcriptional regulation and cellular vulnerability in tauopathy, we integrated regulon expression levels with cell abundance estimates from scRNAseq (Figure 4—figure supplement 7A). We hypothesized that innate immune signatures may be predictors of neuronal subtype vulnerability in tauopathy. We implemented regularized multiple regression in which cell-type-specific regulon mean expression served as the predictor variable and tau-triggered cell abundance changes from scRNAseq provided the response variable. The analysis was restricted to cell clusters that show significant declines in elav>tauR406W flies. Out of 183 total regulons, Rel/NFκB activity was prioritized among the top predictors of vulnerability to tau-induced cell loss (Figure 4D, Figure 4—figure supplement 7B). The Rel regulon remained a robust predictor in an expanded analysis including multiple technical variables as well as expression levels for an additional 2793 curated functional pathways (Figure 4—source data 4). Importantly, for this analysis, regulon expression was averaged across both elav>tauR406W and control cells, rather than considering differential expression, and the vulnerable clusters include cell types in which Rel and its targets (Rel regulon) are either activated (e.g., Dm3) or suppressed (e.g., Gamma lobe of the Kenyon cells) in response to tau (Figure 4C). Interestingly, the inverse relationship with cell abundance is recapitulated when restricting consideration of Rel regulon activity in control animals, suggesting that basal NFκB signaling—in the absence of tau—may be a predictive marker for neurodegeneration (Figure 4—figure supplement 7C). Specifically, among those cells vulnerable to tau-triggered cell abundance changes, Rel regulon expression is associated with the severity of decline. Besides Rel, the top 3 predictors of vulnerability for tau-induced cell loss include the CrebB and CHES-1 regulons (see Figure 4—figure supplement 7B for full list). Interestingly, CrebB—the cAMP response element-binding protein—and its target genes were previously shown to be dysregulated in the Drosophila tauopathy model (Mahoney et al., 2020), consistent with our finding of CrebB regulon downregulation across many cell types (Figure 4—source data 3). In mammals, the conserved CrebB ortholog, CREB, is linked to synaptic plasticity and long-term memory storage, and has also been proposed to interact with the NFκB pathway (Kaltschmidt et al., 2006).
 
 In order to directly test whether Rel/NFκB may modify tau-mediated neurodegeneration in a cell-autonomous manner, we used RNA-interference (RNAi) for neuron-specific knockdown of Rel and performed histology to detect structural brain degeneration. In these experiments, elav-GAL4 is used to drive pan-neuronal expression of both UAS-tauR406W and the UAS-Relish.RNAi transgenes. However, we did not detect any significant difference in the vacuolar degeneration caused by tau following Rel knockdown (Figure 4—figure supplement 8). Additional experiments will likely be required definitively resolve the cell-type-specific causal mechanisms (see ‘Discussion’); however, our results identify NFκB targets and innate immune signaling as potential markers and/or mediators of vulnerability to tau-mediated neurodegeneration.
 
-## Cross-species overlap of cell-type-specific transcriptional signatures
+### Cross-species overlap of cell-type-specific transcriptional signatures
 
 To establish translational relevance, we next examined the conservation of cell-type-specific transcriptional signatures between Drosophila and human brain (Figure 5A, Figure 5—figure supplement 1A). Using Pearson correlation and considering 5630 conserved genes (1:1 fly/human mapping), we assessed pairwise correspondences between gene expression profiles for all clusters from either our Drosophila scRNAseq data (tauR406W + control) and published snRNAseq from human dorsolateral prefrontal cortex (AD cases and control) (Mathys et al., 2019). Overall, inferred neuronal and glial cellular identities correlated well across species. Cross-species correlations in cell-type-specific signatures were further replicated in an independent AD case/control snRNAseq dataset from the human entorhinal cortex (Grubman et al., 2019; Figure 5—figure supplement 1B). Similar results were also obtained in a complementary analysis leveraging a published Drosophila scRNAseq dataset (wildtype flies only) and excluding human brains with AD pathology (controls only) (Figure 5—figure supplement 2). The resulting correlation map can enable integrative, cross-species analyses. For example, a human microglial subcluster (Mic1) notable for association with high tau neuropathological burden was correlated with the ensheathing glia cluster from Drosophila, indicating shared characteristic transcriptional signatures (Figure 5A). Moreover, these two cell types showed significantly overlapping gene expression changes in association with AD pathology (human brain) or following pan-neuronal expression of tauR406W (Drosophila) (hypergeometric test, p=4.83 × 10–5) (Figure 5—source data 1). This result suggests that tau pathology may indeed be an important driver of Mic1 transcriptional changes in disease.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmap shows Pearson correlation of gene expression (5630 conserved, orthologous genes) between annotated cell clusters from Drosophila (rows) and human postmortem brain (column). Human brain single-nucleus RNA-sequencing (snRNAseq) was obtained from Mathys et al., 2019, including published cell-type associations with amyloid plaque burden and neurofibrillary tangle Braak staging (braaksc) (top). Annotated human cell types include endothelial cells (End), microglia (Mic), oligodendrocytes (Oli), pericytes (Per), astrocytes (Ast), oligodendrocyte precursor cells (Opc), excitatory neurons (Ex), and inhibitory neurons (In). (B) Innate immune mediators are expressed broadly in the human brain, including in neurons and glia. Plot shows mean expression by cell cluster for 85 human orthologs of NFκB signaling pathway members, based on reprocessing and analysis of the Mathys et al. snRNAseq data. (C) Alzheimer’s disease (AD) is associated with cell-type-specific perturbation in NFκB signaling genes. Plot shows log2 fold-change mean expression per cell cluster for the same 85 NFκB signaling genes, based on comparisons of brains with AD pathology versus controls. See also Figure 5—figure supplements 1–3 and Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap shows Pearson correlation of gene expression (5630 conserved, orthologous genes in total) between cell clusters from Drosophila (rows) and human postmortem brain (columns; Mathys et al., 2019). Compared with Figure 5A, this plot includes the non-annotated Drosophila cell clusters. (B) Similar heatmap was constructed based on 4145 conserved orthologs from Drosophila and an independent human Alzheimer’s disease (AD) case–control snRNAseq dataset (Grubman et al., 2019). Annotated human cell types include oligodendrocytes (oligo), endothelial cells (endo), microglia (mg), astrocytes (astro), oligodendrocyte precursor cells (OPC), and neurons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Heatmap shows Pearson correlation of gene expression between annotated wildtype Drosophila cell clusters from Davie et al., 2018 (rows) and cell clusters from control postmortem brain tissue (columns; Mathys et al., 2019).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/85251/elife-85251-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Rel regulon differential expression is computed from scRNAseq pseudobulk counts of MAPTP301L mice (n = 3) and non-transgenic controls (n = 2) published in Lee et al., 2021. Conserved genes from the fly Rel regulon (DIOPT > 4) were averaged per cell cluster (554 mouse genes mapped to at least one fly ortholog). Log2 fold change (X-axis) is computed between P301L and non-transgenic control. Clusters with a likelihood ratio test p-value<0.1 are labeled in grey (microglia p=0.058, excitatory neuron p=0.047). BMEC = brain microvascular endothelial cell, VSMC = vascular smooth muscle cell, OPC = oligodendrocyte precursor cell, Reelin = Reelin-positive neurons.
 
 As introduced above, mediators of innate immunity are also highly conserved across species. Similar to elav>tauR406W flies, we confirmed consistent NFκB pathway expression in excitatory neurons and microglia in transgenic mice harboring a MAPTP301S transgene (Lee et al., 2021; Figure 5—figure supplement 3). Next, leveraging the Mathys et al. human snRNAseq data, we confirmed that NFκB signaling pathway genes are expressed across most cell types in human postmortem brain tissue, including both neurons and glia (Figure 5B). In the context of AD pathology, NFκB pathway gene expression appeared strongly downregulated in most neurons from the dorsolateral prefrontal cortex, which are highly susceptible to degeneration, whereas expression was increased among oligodendrocytes, microglia, and astrocytes (Figure 5C). Interestingly, a subset of excitatory and inhibitory neuronal subclusters (Ex8 and In4, respectively) showed an AD-associated increase in expression. Thus, human brains with AD pathology are also characterized by widespread changes in NFκB innate immune signaling, including either activation or attenuation in many distinct neuronal and non-neuronal subtypes.
 
@@ -90,39 +198,315 @@ The elav>tauR406W flies selected for this study share conserved downstream mecha
 
 ## Materials and methods
 
-## Human subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>GeneTex</td>
+      <td>Cat#GTX113617; RRID:AB_1950371</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 647 goat polyclonal anti-rabbit IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#111-605-003</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CyTM3 AffiniPure goat polyclonal anti-mouse (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#115-165-003</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey polyclonal anti-mouse IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#715-545-150</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3TM3 AffiniPure goat polyclonal anti-rat IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#112-165-003</td>
+      <td>IF(I:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-repo</td>
+      <td>DSHB</td>
+      <td>Cat#8D12</td>
+      <td>IF(1:500) – glial countingIF(1:50) – Rel costain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Elav</td>
+      <td>DSHB</td>
+      <td>Cat#7E8A10; RRID:AB_528218</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Rel</td>
+      <td>DSHB</td>
+      <td>Cat#21F3;RRID:AB_1553772</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, reagent</td>
+      <td>Conjugated A488-Phalloidin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A12379</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D4818;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase I</td>
+      <td>Invitrogen</td>
+      <td>Cat#17100-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NucBlue and Propidium iodide</td>
+      <td>Invitrogen</td>
+      <td>Cat#R37610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield antifade mounting medium</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#H-1000-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell Gene Expression 3’ v3.1</td>
+      <td>10x Genomics</td>
+      <td>Cat#PN-1000268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>elavC155-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118; UAS-TauR406W</td>
+      <td>Lab: Dr. Mel B. Feany, PMID:11408621</td>
+      <td>N/A</td>
+      <td>Wittmann et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rel-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:81268</td>
+      <td>y1 w*; PBac{GFP.FPTB-Rel}VK00037</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Rel.RNAi-2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:33661</td>
+      <td>y1; P{TRiP.HMS00070}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Rel.RNAi-1</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC:49414</td>
+      <td>P{GD1199}v49414</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris Microscopy Image Analysis Software 9.9.1</td>
+      <td>https://imaris.oxinst.com/</td>
+      <td></td>
+      <td>Oxford Instruments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9.4.1</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+      <td>GraphPad</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td>NIH</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger 4.0.0</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>
+      <td></td>
+      <td>10x Genomics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3</td>
+      <td>https://doi.org/10.1016/j.cell.2019.05.031</td>
+      <td></td>
+      <td>Stuart et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoubletFinder 2.0.3</td>
+      <td>https://github.com/chris-mcginnis-ucsf/DoubletFinder</td>
+      <td></td>
+      <td>McGinnis et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scmap 1.9.3</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/scmap.html</td>
+      <td></td>
+      <td>Kiselev et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Optic lobe neural network classifier</td>
+      <td>https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-020-2879-3/MediaObjects/41586_2020_2879_MOESM7_ESM.zip</td>
+      <td></td>
+      <td>Özel et al., 2021, Supplementary Data Appendix 1, Python/R code</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pySCENIC 0.12.0</td>
+      <td>https://github.com/aertslab/pySCENIC</td>
+      <td></td>
+      <td>Van de Sande et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 1.34.0</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td></td>
+      <td>Love et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MuSiC 0.1.1</td>
+      <td>https://github.com/xuranw/MuSiC</td>
+      <td></td>
+      <td>Wang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAST 1.20.0</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/MAST.html</td>
+      <td></td>
+      <td>Finak et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WEBGESTALTR 0.4.4</td>
+      <td>https://github.com/bzhanglab/WebGestaltR</td>
+      <td></td>
+      <td>Wang et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Glmnet 4.1-4</td>
+      <td>https://cran.r-project.org/web/packages/glmnet/index.html</td>
+      <td></td>
+      <td>Friedman et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Caret 6.0-92</td>
+      <td>https://cran.r-project.org/web/packages/caret/index.html</td>
+      <td></td>
+      <td>Kuhn, 2008</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DRSC Integrated Ortholog Prediction Tool (DIOPT)</td>
+      <td>https://www.flyrnai.org/diopt</td>
+      <td></td>
+      <td>Hu et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gProfiler2 0.2.1</td>
+      <td>https://cran.r-project.org/web/packages/gprofiler2/index.html</td>
+      <td></td>
+      <td>Raudvere et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SCTransform 0.3.3</td>
+      <td>https://github.com/satijalab/sctransform</td>
+      <td></td>
+      <td>Stuart et al., 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human subjects
 
 No new data from human subjects were generated for this study. Previously published, available snRNAseq data from human postmortem brain were obtained from Mathys et al., 2019 and Grubman et al., 2019 in order to evaluate cross-species correspondences in cell-type-specific expression signatures. The Mathys data is comprised of snRNAseq from the dorsolateral prefrontal cortex (DLPFC) from 48 brain autopsies with varying AD neuropathology (amyloid plaque and tau neurofibrillary tangle burden), including 24 with no significant pathology (controls) and 24 cases with mild to severe AD pathology. Subjects were balanced for sex (12 males and 12 females), and age (median age at death = 87 for both groups). The Grubman data is comprised of snRNAseq from the entorhinal cortex of 12 brain autopsies, including 6 AD pathological cases and 6 controls without significant AD pathology. Subjects in the Grubman data were also age-matched, with a median age of 83 and 80 for the AD case and control groups, respectively.
 
-## Drosophila stocks and husbandry
+### Drosophila stocks and husbandry
 
 For scRNAseq libraries generated in this study, w1118; UAS-tauR406W flies (0N4R isoform, 383 amino acids), described in Wittmann et al., 2001; Mangleburg et al., 2020 were crossed with the pan-neuronal driver elavC155-Gal4, producing the experimental genotypes: elav-Gal4/+;UAS-tauR406W/+ or elav-Gal4/Y; UAS-tauR406W/+. In order to minimize genetic background as a potential confounder, UAS-tauR406W strains used in this study were backcrossed with w1118 for five generations as previously described (Guo et al., 2018). Controls were generated by outcrossing elav-Gal4 with w1118 animals, producing elav-Gal4/+ or elav-Gal4/Y. Adult progeny from experimental crosses were subsequently aged to 1, 10, or 20 d for dissection and library generation. Flies were raised on standard molasses-based media at 25°C in ambient lighting. We also utilized a Rel-GFP strain (y, w; PBac{GFP.FPTB-Rel}VK00037), which is an endogenous protein trap allele, encoding a fusion protein with GFP at the Rel amino-terminus. For the histology experiments, elav-Gal4/Y;UAS-tauR406W/+ animals were crossed with UAS-Rel.RNAi-1 (VDRC: v49414), UAS-Rel.RNAi-2 (TRiP: HMS00070), or w1118. Resulting female progeny with both the UAS-tauR406W transgene and RNAi (or controls) were aged to 10 d and prepared for histology.
 
-## Drosophila brain histology
+### Drosophila brain histology
 
 Drosophila heads were fixed in 8% glutaraldehyde (Electron Microscopy Sciences) at 4°C for 10 d, followed by paraffin embedding and microtome sectioning as previously described in Chouhan et al., 2016. Serial 5-µm-thick coronal sections were prepared for the whole head, mounted onto microscopy slides, and stained with hematoxylin and eosin. Bright-field microscopy images were acquired using the Leica DM 6000B system. For quantification, the number of vacuoles greater than 5 um in diameter in an ~50 um stack comprising of the ellipsoid body, fan-shaped body, and posterior commissure. The mean number of vacuoles per section was computed per animal. Statistical testing between conditions was performed using Welch’s t-test.
 
-## Drosophila brain dissociation
+### Drosophila brain dissociation
 
 For scRNAseq profiling of elav >tauR406W and control flies, 16–18 dissected and intact Drosophila brains were combined and dissociated for each experimental condition (six total samples: 2 genotypes × 3 timepoints). An equal number of male and female animals were combined for each condition. For the replication dataset, triplicate samples (biological replicates) for the identical elav>tauR406W and control genotypes were prepared at day 10 (six total samples). Adult fly brains were dissected out of the cuticle using sharp forceps in 1X PBS and dissociated following published protocols (Davie et al., 2018). Dissected brains in solution were first centrifuged at 800 × g for 3 min, resuspended, and dissociated by incubating with 50 uL of dispase (3 mg/mL, Sigma) and 75 uL of collagenase I (100 mg/mL, Invitrogen) for 2 hr at 25°C while shaking at 500 RPM. Cell suspensions were mixed by gentle pipetting 3–4 times every 5 min in the first hour, and every 10 min in the second hour. Resulting cell suspensions were pelleted by centrifugation at 400 × g for 5 min at 4°C, washed in 1000 uL ice-cold PBS, pelleted, and resuspended in 400 uL ice-cold PBS with 0.04% bovine serum albumin. Cell suspensions were passed through a 10 um pluriStrainer cell strainer (pluriSelect) to ensure that undissociated tissue were removed and a single-cell suspension was obtained. Cell concentration and viability were assessed using a hemocytometer under a fluorescent microscope after staining with NucBlue and Propidium iodide (Invitrogen). Fresh, intact single-cell suspensions were immediately used for single-cell library preparation.
 
-## Single-cell library preparation and sequencing
+### Single-cell library preparation and sequencing
 
 Single-cell libraries were prepared per the manufacturer’s protocol for the Chromium Single Cell Gene Expression 3’ v3.1 kit (10x Genomics) by the BCM Single Cell Genomics Core. 16,000 cells were added to each channel with a target recovery rate of 10,000 cells per library. Cells, reverse transcription (RT) reagents, gel beads containing barcoded oligonucleotides, and oil were loaded on a Chromium controller (10x Genomics) to generate single-cell Gel Bead-In-Emulsions (GEMs) where full-length cDNA was synthesized and barcoded for each individual cell. GEMs were subsequently broken and cDNAs from each single cell were pooled. Following clean up using Dynabeads MyOne Silane Beads (Invitrogen), cDNA was amplified by PCR. The amplified product was fragmented to optimal size before end-repair, A-tailing, and adaptor ligation. Final library was generated by amplification. Completed libraries were sequenced using the Baylor Genomic and RNA Profiling Core on the Illumina NovaSeq 6000 platform with a minimum depth of 300,000,000 reads per sample (on average 463 M reads per sample). A total of 12 high-quality libraries were generated (six libraries for the discovery and replication datasets, respectively). Illumina BCL files were demultiplexed into FASTQ files by calling the Cell Ranger 4.0.0 mkfastq function. FASTQ files were aligned to the Drosophila reference genome (BDGP6.22.98) and quantified using the Cell Ranger 4.0.0 count pipeline. The human microtubule-associated protein tau (MAPT) mRNA coding sequence (CDS) (isoform 3, NCBI Reference Sequence NM_016834.5:151–1302) along with a short SV40 3’UTR sequence was appended to the Drosophila reference genome for assessing MAPT transgene expression levels. Given the 10× recovery rate estimations, the cell calling algorithm in Cell Ranger was applied by setting the --expect-cells parameter in count to 10,000 for each library, thus filtering out partitions that likely did not contain single cells. Cell ranger alignment metrics for each library are available in Figure 1—source data 3. Filtered count matrices were loaded into Seurat v3 in R for additional quality control and downstream analyses. Cells were removed from the data object if the number of unique genes per cell were less than 200 or greater than 3000, or if the proportion of mitochondrial reads per cell was greater than 20%. Filtered count matrices from Cell Ranger are available to download with the Drosophila scRNAseq data on the Synapse AMP-AD Knowledge Portal.
 
-## Normalization, integration, and clustering
+### Normalization, integration, and clustering
 
 Gene expression was first normalized independently per library using a regularized negative binomial regression approach as implemented by SCTransform (Stuart et al., 2019). 5000 highly variable features (HVG) were used for normalization while accounting for percent mitochondrial reads. Variable features were defined and ranked by computing the variance of standardized gene counts after loess-based adjustment of mean–variance relationships (Stuart et al., 2019). Residuals of the fitted regression models were used as normalized gene expression values for HVGs. All libraries normalized via SCTransform were integrated using the canonical correlation analysis (CCA) pipeline in Seurat v3 to correct for batch effects and facilitate identification of similar cell identities across conditions. Highly ranked HVGs shared across all libraries were used as integration features. Integration anchors across libraries (correspondences of the selected features between cells) were computed over the first 30 CCA dimensions in the combined dataset and then used to inform the subsequent integration and grouping of cells. After integration, Seurat v3 was used for principal component analysis (PCA) and cell clustering. 100 principal components (PCs) of the integrated dataset were used for graph-based clustering and Louvain algorithm optimization as implemented in FindNeighbors and FindClusters. The final resolution in FindClusters was set to resolution = 2, yielding 96 cell clusters in our dataset. We selected this resolution to replicate the clustering pattern of a similarly processed Drosophila whole-brain scRNA-seq dataset (Davie et al., 2018). 100 PCs were used to embed cells in 2D space via uniform manifold approximation and projection (UMAP). Normalization of gene counts used in differential expression analysis, cell cluster marker gene computation, cell identity annotation, and other applications directly comparing gene expression levels between cell clusters were computed separately on the non-integrated gene expression data using the NormalizeData function in Seurat v3. In brief, for each gene in each cell, unique molecular identifiers (UMI) were divided by the sum UMIs in that cell, multiplied by a scalar (10,000), and log transformed. However, cell cluster membership (clusters 0–95) was defined using the integrated dataset as described above. The six additional libraries that comprise the day 10 replication dataset were clustered, integrated, and analyzed separately using the identical pipeline.
 
-## Doublet detection
+### Doublet detection
 
 DoubletFinder was applied per library to predict and remove heterotypic doublets, leaving a total of 48,111 high-quality single cells in the discovery dataset. For each library, artificial doublets were generated from the existing data. PCA was performed after merging the real and artificial data and a distance matrix was generated with the first 40 PCs to compute the proportion of artificial K-nearest-neighbors (pANN) for each cell. PC neighborhood size (pK) for computing pANN was estimated for each library as previously described (McGinnis et al., 2019). The number of suspected doublets per library was estimated and cells were ranked by pANN for removal. Total doublet proportion for each library was computed based on a custom linear equation of the input-to-multiplet estimation provided by the 10x Chromium documentation: Y = 5.272x10-4 + 7.589x10-6 (x), x being the number of recovered intact cells after the initial filtering criteria described above. The linear equation was generated based on recovery estimations in the manufacturer’s protocol. Adjustment of the estimated doublet proportion for undetectable homotypic doublets was applied in DoubletFinder by using the Seurat clustering classifications at resolution = 2 as described above.
 
-## SCENIC regulons
+### SCENIC regulons
 
 Gene regulatory networks (regulons) were computed using the Python implementation of SCENIC (pySCENIC). Raw gene abundances (UMIs) for 48,111 high-quality cells were exported as a loom object via loompy, and pySCENIC was implemented as described in Van de Sande et al., 2020. Putative gene targets for the published list of 815 Drosophila transcription factors (TFs) (see Key Resources Table) were inferred by tree-based regression (GRNBoost2) where expression of each gene was regressed on TFs, producing a list of adjacencies connecting TFs to their target genes (non-mutually exclusive). In the cisTarget step, modules were retained for further analysis if the regulatory motif of its parent TF was enriched among most gene members. Within retained modules, genes lacking enrichment of the appropriate motif were pruned. TF-motif annotations and pre-computed motif-gene rankings were obtained from https://resources.aertslab.org/cistarget/, Drosophila v8; motif search space encompassed up to 5 kb upstream of transcription start sites and intronic regions. This pipeline identified 183 regulons, encompassing 7134 out of 14,907 genes in the transcriptome dataset (Figure 4—source data 2), and cell-level activity for each regulon was computed by a ranking and recovery approach using pySCENIC AUCell. Within each cell, genes were ranked by expression level in a descending order, then the cumulative number of genes recovered belonging to a regulon at each rank was recorded. An area under the curve (AUC) was calculated after applying a default cutoff at the 95th percentile of gene ranks and is used to infer regulon activity. High AUC scores indicate greater representation of a given regulon among the top 5% of highly expressed genes in a cell. AUC scores for the 183 regulons across 48,111 cells were used for unsupervised clustering by UMAP for visualization of cell relationships based on gene regulatory networks (Figure 4—figure supplement 4A).
 
-## Annotation of cell identity/abundance
+### Annotation of cell identity/abundance
 
 We searched for cell identities of the 96 defined clusters by consolidating a series of four analytic approaches (Figure 1—figure supplement 2A). Two published datasets were used as references for our annotation procedure, including 56,902 cells from adult wildtype Drosophila (w1118 and DGRP-551) brains profiled at days 0, 1, 3, 6, 9, 15, 30, and 50 (Davie et al., 2018), as well as 109,743 cells from adult Canton-S Drosophila optic lobes at day 3 (Özel et al., 2021). Cell clusters in these references were previously annotated using available literature-based cell markers or statistical inference with published bulk RNA-sequencing of reporter-targeted cell types. The Davie et al. dataset contained 87 cell clusters (Seurat FindClusters res = 2.0) with 41 assigned cell identities. The Özel et al., 2021 dataset was clustered at a higher resolution (Seurat FindClusters res = 10), containing 200 cell clusters and 87 assigned cell identities. First, Scmap-cluster was used to compute gene expression correlation between each cell in our dataset to all defined clusters in the Davie and Özel datasets. 500 genes with higher-than-expected dropouts were selected as correlation features as described in Kiselev et al., 2018. The cosine similarity, Spearman and Pearson correlations of these features were subsequently computed between each cell in our dataset and all reference cluster centroids. For a cell to be mapped to a reference cluster, two out of three similarity scores must be concordant, and at least one must be greater than 0.7. Second, we intersected the top 20 cluster markers for each cell cluster (ranked by log2 fold change) in our dataset with the top 20 markers in each reference cluster. Cluster markers (cluster-enriched genes) for our 96 cell clusters were computed by differential expression analysis of the non-integrated, normalized gene abundances, comparing each cell cluster against all remaining cells. Markers were defined as positively differentially expressed genes (log2 fold-change greater than 0.1, Benjamini–Hochberg [BH]-corrected p-value 0.05) when comparing cells in given cluster versus all remaining cells in the dataset. Cell clusters were ‘mapped’ to a reference cluster in the Davie dataset (whole brain reference) if at least 13/20 top markers were shared. Likewise, a cluster was mapped in the Özel dataset (optic lobe reference) if at least 7/20 top markers were shared. These cutoffs were empirically determined by maximizing the number of best matches. Cell cluster markers for our dataset are listed in Figure 1—source data 2. Third, a trained neural network classifier for adult neurons as described in Özel et al., 2021 was implemented in Python to label optic lobe neurons in our dataset. Log-normalized expression of 533 genes (out of the 587 genes in the Özel adult training set) across all cells were used as the input for the classifier. Finally, we checked for positive expression of well-established cell markers in each cluster (Figure 1—source data 4, Figure 1—figure supplement 2B, and Figure 1—figure supplement 3), using published cell marker datasets (Davie et al., 2018; Konstantinides et al., 2018; Kremer et al., 2017). Most cell cluster annotations were evaluated and consolidated based on best agreement across two or more approaches within or across the Davie and Özel references. Less certain annotations were visually inspected in UMAP space to check for proximity with adjacent clusters and manually evaluated for cell marker expression. Cell-level confidence for scmap assignment (similarity score) or neural network classifications (confidence score) were also manually evaluated. Results from the Özel reference was prioritized for optic lobe neurons, especially for cell clusters that may be heterogeneous in the Davie reference (Dm8/Tm5c, TmY14, Tm9, Tm5ab, Mt1). Pm neurons, chiasm glia, and subperineurial glia did not reach consensus across two or more approaches and were thus deemed less confident annotations. Several other optic lobe cell types were well mapped in a single approach to the Özel et al., 2021 dataset (TmY8, TmY3, Tm5c, Tm5ab, Tm20, Dm2, Dm8, Mi9, LC12, and LC17), where robust metrics were observed from the optic lobe neural network predictor or with scmap. Confirming our cell identity correspondences with the published scRNAseq datasets, we found high correlation among normalized gene expression when comparing individual cells in our dataset with the cluster-level means of the transcriptome in reference clusters as computed by cosine similarity (Figure 1—figure supplements 1 and 2C and D). The cosine similarity score between each annotated cell in our dataset and its cluster-level counterpart in the Davie or Özel references were computed based on shared non-dropout (count >0) genes, that is, the transcriptome of each cell in our data was correlated to the cluster-level mean of corresponding genes in a reference cluster. Lower similarity scores may reflect gene expression changes induced by tau pathology, less confident annotation (in this study or in the references used), clustering resolution differences, or high variance in the reference cluster.
 
@@ -130,11 +514,11 @@ To annotate the replication scRNAseq data (69,128 cells), labels from the comple
 
 After annotation, cell counts for each assigned cluster (90 clusters) were first quantified per library (six libraries, ages: days 1, 10, and 20; genotypes: control, tau), and treated as count data. To adjust for extreme proportional differences in cell composition across libraries and differences in the total number of cells captured per library, cell counts were normalized using negative binomial generalized linear models (NB-GLM) as implemented in DESeq2 (Love et al., 2014). In brief, raw cell counts were modeled using NB-GLM with a fitted mean and a cluster-specific dispersion factor. Dispersion factors were computed based on mean count values using an empirical Bayes approach as described in Love et al., 2014. The fitted mean is composed of a library-specific size factor and a parameter proportional to the true counts in each cluster per library. To compute size factors per library, raw counts were organized in a matrix such that rows represent clusters and columns represent samples (libraries). Raw counts were first divided by the row-wise geometric means and then divided by the per-column median of resulting quotients (size factor) to obtain normalized cell count values per cluster. These normalized cell counts were used to generate the plots in Figure 2B. The three age groups for each genotype (days 1, 10, 20) were combined to produce an n = 3 comparison of cell counts between tau and control animals.
 
-## Deconvolution of fly RNA-sequencing data
+### Deconvolution of fly RNA-sequencing data
 
 Deconvolving bulk-tissue RNA-sequencing data into estimated proportions of cell populations was performed by implementing Multi-subject Single-cell Deconvolution (Wang et al., 2019) using default parameters. MuSiC leverages cell-specific expression data from annotated scRNA-seq datasets and weighted non-negative least-squares regression to characterize cell compositions of bulk tissue gene expression data. This approach accounted for gene expression variability across samples and cells, thus upweighting the most consistently expressed genes across samples or cells for deconvolution. Whole-head RNA-sequencing counts of experimental conditions identical to those in this study were taken from Mangleburg et al., 2020 and used as input for deconvolution. Specifically, cell counts for n = 2 control and n = 3 tauR406W samples at days 1, 10, and 20 were deconvolved (15 samples total, each sample is a homogenate of 100 heads). 56,902 cells from a published Drosophila whole-brain scRNAseq dataset was used as an orthogonal reference for deconvolution, providing cell-specific transcriptional profiles from wildtype control animals (w1118 and DGRP-551) (Davie et al., 2018). Individual scRNA libraries were treated as subjects in the MuSiC pipeline for evaluating gene expression variability in marker gene weighting. Both annotated and unannotated cell clusters in the reference scRNAseq dataset were included in the deconvolution pipeline. Select cell clusters with non-zero estimated proportions across two or more timepoints are plotted in Figure 2—figure supplement 2.
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 10-day-old female controls (elav-GAL4/+) or elav>tauR406W (elav-GAL4/+; UAS-tauR406W/+) were used for glial quantification immunofluorescence experiments. The animals were anesthetized with CO2 and brains were dissected with forceps and fixed in 4% paraformaldehyde (PFA) overnight at 4°C. After fixation, PFA was aspirated and replaced with PBS with 2% Triton-X (PBST) and incubated at 4°C overnight for tissue penetration. Residual air trapped in brain tissues were removed by placing samples under a vacuum for 1 hr at room temperature. The brains were then incubated in blocking solution (5% normal goat serum in PBST) at room temperature, rocking for 1 hr. Primary antibodies were diluted in 0.3% PBST and samples were incubated in primary at 4°C, rocking for at least 24 hr. The primary antibody solution was aspirated, and the samples were washed with PBST (two quick washes followed by three 15 min washes). Samples were incubated in secondary antibodies at room temperature, rocking for 2 hr. The secondary antibody solution was then aspirated and the samples were washed with PBST (two quick washes followed by three 15 min washes). DAPI stain, when applicable, was added in the secondary antibody step. Whole brains were then mounted in Vectashield antifade mounting medium (Vector Laboratories, H-1000-10) and stored in the dark at 4°C until imaged. Samples were imaged on a Leica Microsystems SP8X confocal microscope. Z-stacks covered the entirety of whole-mount brains. We used the following antibodies and dilutions: mouse anti-Repo (8D12, 1:500 for glial quantification experiment, 1:50 for Rel experiment, DSHB), rat anti-Elav (7E8A10, 1:100, DSHB); rabbit anti-GFP (1:500; GeneTex), mouse anti-Rel (21F3, 1:500, DSHB), conjugated A488-Phalloidin (1:500; Thermo Fisher), Cy3 AffiniPure goat anti-mouse (H+L) (1:500; Jackson ImmunoResearch Laboratories), Alexa 647-conjugated goat anti-Rabbit IgG (1:500; Jackson ImmunoResearch), Alexa Fluor 488 donkey anti-mouse IgG (H+L) (1:500; Jackson ImmunoResearch), and Cy3 AffiniPure goat anti-rat IgG (H+L) (1:500; Jackson ImmunoResearch).
 
@@ -142,21 +526,21 @@ Quantification of glia from confocal immunofluorescence digital microscopy was p
 
 Mean pixel intensity for DAPI, phalloidin, or repo signal was calculated for n = 9 brains per genotype using ImageJ/Fiji (units: corrected total cell fluorescence [CTCF]). In GraphPad Prism, the mean pixel intensity for each channel (DAPI, phalloidin, or repo) was compared between control vs. tau-expressing animals using parametric, unpaired, two-tailed t-tests. All experimental groups passed the Shapiro–Wilk test for normality except for phalloidin intensity in tau-expressing animals, so this comparison (mean phalloidin intensity in control vs. tau-expressing animals) was done with a nonparametric (Mann–Whitney) t-test. The BIOP JACoP plugin on ImageJ/Fiji was used to calculate colocalization between relish-GFP signal and elav or repo signal. Area of overlap between signals (in pixels) was calculated for each slice (n = 85 slices total) using a stack histogram as the threshold. The area of overlap was then divided by the total elav or repo area to find the percentage of elav or repo area that was also positive for relish-GFP signal.
 
-## Bulk-tissue RNA-sequencing data
+### Bulk-tissue RNA-sequencing data
 
 Bulk-RNA sequencing data and WGCNA co-expression modules of the experimental conditions described in this study were obtained from Mangleburg et al., 2020. WGCNA module expression activity in scRNAseq was computed by taking the mean of module member genes within each cell. Cluster-level expression activity of WGCNA modules was then estimated by averaging the cell-level activity across all cells in a given cluster and was subsequently used to compute the log2 fold change of tau versus control expression activity.
 
-## Drosophila NFκB signaling mediators
+### Drosophila NFκB signaling mediators
 
 A list of Drosophila NFκB signaling pathway members was generated based on manual curation from published studies (Valanne et al., 2011; Myllymäki et al., 2014; Kounatidis et al., 2017; Li et al., 2020) and included the following genes: PGRP-LE, imd, Tak1, key, Rel, eff, PGRP-LC, bsk, akirin, Jra, sick, Tab2, IKKbeta, Uev1A, ben, Dredd, Fadd, PGRP-LA, Diap2, Diap1, egr, Traf6, trbd, pirk, casp, PGRP-LB, PGRP-LF, dnr1, scny, RYBP, PGRP-SC1a, PGRP-SC1b, PGRP-SC2, CYLD, POSH, spirit, spheroide, spz, PGRP-SA, PGRP-SD, pll, Myd88, dl, Gprk2, Deaf1, Tl, psh, grass, modSP, Dif, mop, tub, cact, nec, Pli, 18w, Toll-4, Tehao, Toll-6, Toll-7, Tollo, and Toll-9.
 
-## Analysis of differential cellular abundance
+### Analysis of differential cellular abundance
 
 Statistical testing of the log2 fold change (log2FC) of tau versus control normalized cell abundance was performed using negative binomial-generalized linear models (NB-GLM) as implemented in DESeq2. Age was treated as a covariate, and a Wald test was performed on the coefficient of the genotype variable using the following model: log2(cell count) ~ age + genotype. Using DESeq2, log2FC was computed for each cluster (elav>tauR406W vs. control) based on maximum-likelihood estimation after fitting the GLM. Raw log2FC values were transformed using an adaptive shrinkage estimator from the ‘ashr’ R package as implemented in DESeq2 to account for clusters with high dispersion or low counts. These transformed log2FC values were then used for cell abundance analysis and interpretation. A BH-adjusted p-value<0.05 was used to establish significance of Wald test statistic. In order to generate the plots for Figure 2B, normalized cell counts were obtained using the counts function in DESeq2. Results were visualized using box and whisker plots, including the following values: median, minimum/maximum, and lower/upper quartiles.
 
 In order to better understand how relative changes might influence cell abundance estimates, we inferred confidence intervals for cell cluster log2FC values (Figure 2—figure supplement 3A). Based on experimental ground truth (Serrano-Pozo et al., 2013), the log2FC value for seven cell clusters (Ensheathing glia, Perineurial glia, Astrocyte-like glia, Cortex glia, Chiasm glia, Subperineurial glia, and Hemocytes) was centered to zero. Specifically, the value of each glial cluster was iteratively subtracted from the log2FC values for all other clusters, establishing a minimum and maximum log2FC value for all cell clusters. We predict that the true cell abundance falls within this computed range, after accounting for potential proportional influences. A range that includes zero thus suggests there may be no true change between tau and control.
 
-## Analysis of differential gene expression
+### Analysis of differential gene expression
 
 Differential gene expression analyses were performed using Model-based Analysis of Single-cell Transcriptomics (MAST) for each cell cluster (Finak et al., 2015). In brief, generalized linear hurdle models were used to compute differential expression, where logistic regression was used to account for stochastic dropouts, and a Gaussian linear model was fitted to predict gene expression levels. Differential expression was determined by a likelihood ratio test. We required that differentially expressed genes meet a significance threshold of BH-adjusted p-value<0.05; absolute log2 fold-change > 0.1; and detectable (non-zero) expression in at least 10% of cells in the cluster. Cellular detection rate (CDR, fraction of genes reliably detected in each cell) was included as a covariate in all regression models, as in published protocols (Finak et al., 2015). CDR acts as a proxy for estimating the effect of dropout events, amplification efficiency, cell volume, and other extrinsic factors while performing expression-related regression analyses. Analyses of tau-induced differential expression (age-adjusted) also included age as a regression model covariate. Separately, aging-induced changes within each cell cluster were computed from control data (elav-GAL4/+), comparing differential gene expression between days 1 and 10, and days 10 and 20. In order to evaluate robustness and replicability, cross-sectional, tau-induced differentially expressed genes were also computed in day 10 animals (tau vs. control) in the replication data and results were compared between the discovery and replication datasets. Similarly, cross-sectional tau-induced differential expression was also computed for each timepoint in the discovery dataset. For differential expression of the human cell subclusters reported in Mathys et al., 2019, normalized counts between individuals with AD pathology (n = 24) and low/no pathology (n = 24) were compared using MAST for each cell subcluster as described above.
 
@@ -164,12 +548,12 @@ To assess cell-type-specific differences in regulon gene expression levels (Figu
 
 Overrepresentation analysis (ORA) of differentially expressed gene sets were completed using the R implementation of WEBGESTALT (Wang et al., 2013). The following databases were used: Gene Ontology (GO) biological processes, GO molecular functions, GO cellular component, KEGG, and Panther. Enrichment significance was defined by hypergeometric test, followed by p-value adjustment using the BH-procedure; significance was set at p<0.05. ORA of the tau unique gene set (n = 363 genes) was performed using gProfiler (Raudvere et al., 2019). The Gene Ontology (GO), Human phenotype ontology (HP), KEGG, miRTarBase (MIRNA), Transfac (TF), and WikiPathways (WP) databases were used for querying genes. The organism parameter was set to ‘dmelanogaster’ and the ‘fdr’ correction method was used to apply the BH multiple testing correction. A false discovery rate (FDR) < 0.05 was the threshold for significance.
 
-## Multiple regression with elastic net
+### Multiple regression with elastic net
 
 To identify features driving cell vulnerability in our scRNAseq dataset, we pooled information across cell clusters by performing elastic net regression. For all clusters showing significant elav>tauR406W vs. control cell abundance changes, log2FC values were regressed on the cell-type-specific mean expression for 183 regulons. Given our goal to identify the factors that influence cell-type-specific vulnerability, we focused on eight cell clusters with significant cell loss (FDR < 0.05). In a secondary analysis, we repeated elastic net regression and considered a larger number of potential predictor variables including (i) the 183 regulons (as above); (ii) 2793 unique GO, KEGG, and Panther pathways found to be significantly enriched among elav>tauR406W differentially expressed genes; (iii) 7 WGCNA modules altered in elav>tauR406W (Mangleburg et al., 2020); and (iv) curated NFκB signaling pathways. In addition, we also considered a large number of (v) cell cluster technical parameters as potential predictors, including normalized cell counts, mean tau transgene expression, sum of UMIs, mean percent mitochondrial reads, and number of tau-induced differentially expressed genes (age-adjusted). For this analysis, all computed variables (e.g., GO pathways, WGCNA modules, regulons, NFκB genes) were first averaged within each cell, then averaged across all cells in order to determine a mean value for each cell cluster. Cluster-level means for all gene sets were computed using pooled cell data from both elav>tauR406W and controls and all ages. For gene sets derived from ORA analyses, we restricted consideration to those differentially expressed genes driving enrichment. We generated a matrix consisting of rows for each cell cluster and columns with values/means for each potential predictor variable.
 
 We used the caret and glmnet packages in R to organize the data and perform elastic net regularized regression. Alpha (ridge vs. lasso characteristic) and lambda (shrinkage parameter) values were tuned in a 1000 × 1000 grid using repeated threefold cross-validation in caret, and the average root mean squared errors (RMSE) from testing the partitions were used to assess model performance. Threefold cross-validation was repeated 100 times for all alpha-lambda pairs using a different data fold split for each iteration in order to account for variability in model performance from random sample partitioning. The mean of all prediction errors was used to assess the final performance of each alpha-lambda pair, and we selected the model with the lowest RMSE. Lastly, we generated a ranklist of predictor variables for tau-induced cell abundance changes based on the magnitude of coefficients from the selected model (Figure 4—figure supplement 7B, Figure 4—source data 4).
 
-## Cross-species analysis with human and mouse RNAseq datasets
+### Cross-species analysis with human and mouse RNAseq datasets
 
 Previously published human snRNAseq data (Mathys et al., 2019; Grubman et al., 2019) were reprocessed and filtered using the identical pipeline as describe above for Drosophila data. Raw gene counts were normalized using the NormalizeData function in Seurat v3. The resulting 70,634 filtered cells from the Mathys data were re-clustered using our pipeline above for visual representation in Figure 5; however, the cell cluster annotations from the original publication were preserved. 13,214 filtered cells from the Grubman data were similarly promoted for analysis. Drosophila orthologs of genes detected in human datasets were determined using the DRSC Integrated Ortholog Prediction Tool (DIOPT) (Hu et al., 2011), requiring a minimum DIOPT score threshold of 5 or greater. If more than one fly ortholog was identified, we selected the ortholog with either (i) the highest DIOPT score, (ii) the highest weighted DIOPT score, or (iii) the highest ranked option (best score when mapped both forward and reverse). Thus, 5630 or 4145 human-fly gene ortholog pairs, respectively, were considered for cross-species analyses of the Mathys and Grubman datasets. We scaled normalized expression of each gene with mean = 0 and variance = 1. Cluster-level gene expression was computed by averaging scaled expression values from all cells. Subsequently, we performed Pearson correlation analysis for all cluster pairs to quantify transcriptional similarities between fly and human cell, examining pairwise correlation coefficients for all gene-orthologs across all clusters. For visualization, we generated heatmaps representing Pearson correlation coefficients by seriation with hierarchical clustering. Association statistics for human neuropathological traits (heatmap at top of Figure 5A) were repurposed directly from the published supplementary from Mathys et al., 2019. For quantification of overlap between human microglia and fly ensheathing glia, we examined conserved differentially expressed genes using the hypergeometric overlap test. To demonstrate control-only correlations, scRNAseq from the filtered Davie et al. dataset (subsetted for annotated cell types) were compared to snRNAseq profiles of 24 control individuals in the Mathys et al. data. To compute Rel regulon differential expression in a tauopathy mouse model, we used normalized scRNAseq pseudobulk counts from MAPT P301L mice (n = 3) and non-transgenic controls (n = 2) as published in Lee et al., 2021. Conserved mice genes (DIOPT > 4) in the fly Rel regulon were averaged per cell cluster (554 mice genes mapped to at least one fly ortholog) and a likelihood ratio test was used to evaluate the contribution of genotype to differential expression in each cluster.

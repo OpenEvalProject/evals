@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/002h8g185 Department of Psychology, University of Bath Bath United Kingdom
+1. Department of Psychology, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))
 
 † Corresponding author
 

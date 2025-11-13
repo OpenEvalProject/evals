@@ -33,35 +33,83 @@ Here, we report that not only RSPO3 but also its fusion partner PTPRK encodes a 
 
 ## Results
 
-## PTPRK is a negative regulator of Wnt/β-catenin signaling
+### PTPRK is a negative regulator of Wnt/β-catenin signaling
 
 To uncover novel regulators of Wnt/β-catenin signaling, a genome-wide small interfering RNA (siRNA) screen using Wnt reporter assay as a readout was previously performed (Cruciat et al., 2010) and PTPRK was discovered as a potential candidate. In the H1703 human lung adenocarcinoma cell line, knockdown of PTPRK enhanced Wnt3a induced signaling in Topflash reporter assays (Figure 1A and Figure 1—figure supplement 1A) as well as expression of the endogenous Wnt target gene AXIN2 (Figure 1B and Figure 1—figure supplement 1B). siPTPRK also increased cytosolic β-catenin levels and nuclear accumulation of β-catenin upon Wnt3a treatment (Figure 1C–D). PTPRK was reported to promote membrane association of β-catenin (Novellino et al., 2008), but we found no change in β-catenin in the membrane fraction in siPTPRK treated cells (Figure 1—figure supplement 1C). Furthermore, in epistasis experiments, siPTPRK increased Topflash reporter activity only when the Wnt reporter was activated by Wnt3a but not following transfection of Wnt1/Fzd8/LRP6, Dvl1 (Dishevelled 1), or constitutively active β-catenin (S37A) (Figure 1E). PTPRK affected Wnt signaling only upon knockdown, but not overexpression (Figure 1—figure supplement 1D). Moreover, unlike other negative Wnt regulators such as Naked, APC, or GSK3, which act universally, Wnt inhibition by PTPRK was not observed in e.g. HEK293T cells (Figure 1—figure supplement 1E), and hence PTPRK seems to act cell-type specifically. In addition, when we tested other RPTPs expressed in H1703 cells (based on available RNAseq databases), siPTPRK showed the strongest effect on inducing AXIN2 expression, besides siPTPRF (Figure 1—figure supplement 1F). Taken together, these results indicate that PTPRK acts at the receptor level to inhibit Wnt/β-catenin signaling in H1703 cells.
 
-## Ptprk is expressed in the Spemann organizer and is required to inhibit Wnt signaling
+![Figure 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig1-v2.jpg)
+
+**Figure 1.:** (A) Topflash reporter assay in H1703 cells upon siCo, siPTPRK pool, or single siPTPRKs (siPTPRK #2, #5) transfection, with or without overnight Wnt3a treatment. Further experiments were done with siPTPRK #2. (B) qRT-PCR analysis of AXIN2 in H1703 cells treated with Wnt3a overnight upon siCo, siPTPRK transfection. (C) Western blot analysis of cytosolic β-catenin in H1703 cells upon siCo or siPTPRK transfection. Cells were treated with Wnt3a for 2 h before harvest and permeabilized with 0.05% Saponin. Ratio, relative levels of β-catenin normalized to ERK1/2. (D) Immunofluorescence microscopy showing nuclear and cytosolic β-catenin in H1703 cells. Cells were transfected with the indicated siRNAs and treated with Wnt3a for 2 h. siβ-catenin and siZNRF3/siRNF43 were used as negative and positive control, respectively. (E) Topflash reporter assay in H1703 cells upon PTPRK or β-catenin knockdown. Topflash activity was stimulated by overnight treatment of Wnt3a, or transfection of Wnt1/Fzd8/LRP6, Dvl1, or hβ-catenin S37A. Data in all graphs are displayed as means ± SD, and show one representative of multiple independent experiments with three biological replicates. RLU, relative light units. *p<0.05 **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) qRT-PCR analysis showing the knockdown efficiencies of siRNAs targeting PTPRK in H1703 cells (related to Figure 1A). (B) qRT-PCR analysis of PTPRK in H1703 cells upon siCo or siPTPRK transfection (related to Figure 1B). (C) Subcellular fractionation of H1703 cells upon siCo or siPTPRK transfection. Cells were treated with Wnt3a for 24 hr before harvest and fractionated into cytosol and membrane as indicated. Tubulin and Transferrin receptor (TfR) serve as the markers for cytosolic and membrane fractions, respectively. (D) Topflash reporter assay in H1703 cells transfected with V5-PTPRK or V5-PTPRK-DA. Cells were treated with control or Wnt3a for 24 hr before harvest and measured for Topflash activity (Mean ± SD). (E) Topflash reporter assay in HEK293T cells upon siRNA treatment. Cells were treated with control or dilutions of Wnt3a for 24 hr before harvest and measured for Topflash activity. (Mean ± SD, n = 3; n.s., not significant, student t-test). (F) qRT-PCR analysis of AXIN2 in H1703 cells treated with Wnt3a overnight upon indicated siRNA transfection.
+
+### Ptprk is expressed in the Spemann organizer and is required to inhibit Wnt signaling
 
 We next studied the role of PTPRK in vivo in the African clawed frog Xenopus tropicalis, since the role of early Wnt signaling in the Spemann organizer of amphibian embryos is well-established (Niehrs, 2004). Analysis of Xenopus ptprk by qRT-PCR showed that it was expressed maternally and continued to be expressed at similar levels during gastrulation, increasing with organogenesis (Figure 2—figure supplement 1A). By whole-mount in situ hybridization, ptprk was expressed in the animal hemisphere of blastula embryos (Figure 2—figure supplement 1B). In early gastrulae, ptprk was prominently expressed in the Spemann organizer (Figure 2A). While clearly enriched on the dorsal side, ptprk expression was not exclusive to the organizer but was also weakly detected in ventral cells. Interrogating a database derived from RNAseq of Xenopus genes with ranked organizer-specific expression (Ding et al., 2017) confirmed differential expression of ptprk on the dorsal side, but with lower enrichment than some other ‘organizer genes’ (Figure 2D). In neurulae and tailbud embryos, ptprk was most prominently expressed in the notochord (Figure 2B–C), an organizer derivative, which plays a critical role in neural patterning (Hemmati-Brivanlou et al., 1990; Yamada et al., 1991; Roelink et al., 1994; Barnett et al., 1998; Wilson and Maden, 2005). Low expression was detected in the neural plate, as well as branchial arches and dorsal lateral plate (Figure 2B). We conclude that Xenopus ptprk is prominently expressed in the Spemann organizer and notochord.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) In situ hybridization of ptprk in Xenopus tropicalis at (A) gastrula (hemisected, dorsal to the right), (B) neurula, tailbud, and tadpole stages, and in (C) transverse dissected tailbud embryo. ba, branchial arches; fb, forebrain; hb, hindbrain; mb, midbrain; no, notochord; nt, neural tube; ov, otic vesicle; SO, Spemann organizer. (D) Data mining using data from Ding et al. (2017), showing gene expression correlation with a dorsal/organizer marker chordin. Xenopus dkk1, frzb, and angptl4 are known organizer-expressed genes, gapdh is shown as housekeeping gene, and bambi is a ventrally expressed gene. (E) Representative phenotypes of tailbud stage Xenopus tropicalis embryos injected animally at 2- to 8 cell stage and as indicated. For quantification, see Figure 2—figure supplement 1D–E. (F–I) Topflash reporter assays performed with neurulae (stage 18). Embryos were injected animally at 2- to 8 cell stage (F, H–I) or one cell stage (G) with reporter plasmids and the indicated mRNAs and Mos. Domain structures of WT PTPRK and mutants are shown on top. Normalized Topflash activity of Co-injected embryos only with reporter plasmids was set to 1. Data in all graphs are displayed as means ± SD, and show one representative of multiple independent experiments with three biological replicates. RLU, relative light units. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) qRT-PCR analysis displaying the relative expression levels of ptprk in Xenopus tropicalis embryos at indicated stages. Expression of ptprk was normalized to odc, and the level of ptprk at stage one was set to 1. Data show one representative result from three independent experiments. (B) Spatial expression patterns of ptprk in Xenopus embryos at 2 cell stage (animal view) and stage 7 (animal view). (C) Knockdown efficiency of ptprk Mo. qRT-PCR analysis was performed with uninjected tailbud stage Xenopus embryos, and embryos injected with Co or ptprk Mo. (D–E) Quantification of phenotypes shown in Figure 2E. The number of embryos is indicated on the top. (F) Scheme of validation of CRISPR/Cas9-mediated genome modification by restriction enzyme digestion. Xenopus ptprk sgRNA targeted sequence contains a StuI site. A pair of primers was designed to amplify a DNA fragment of 1009 bp. After StuI digestion, wild-type (WT) but not edited DNA, yields DNA fragments of 340 bp and 669 bp. (G) Agarose electrophoresis of StuI digested PCR products described in (F). n.c, negative control, PCR product of DNA from an uninjected tailbud embryo without DNA polymerase in PCR reaction. (H) Topflash reporter assay in H1703 cells transfected with indicated siRNA and siRNA resistant V5-PTPRK or V5-PTPRK-DA. Cells were treated with control or Wnt3a for 24 hr before measurement. (Mean ± SD, n = 3; **p<0.01, student t-test).
+
 We depleted Ptprk by Morpholino antisense oligo (Mo) injection, targeting the splice site between exon 1 and intron 1 of Xenopus tropicalis ptprk, and efficiently reduced ptprk mRNA (Figure 2—figure supplement 1C). Microinjection of ptprk Mo in Xenopus (‘morphants’) led to reduced head structures and shortened body axis, which was rescued by coinjection of untargeted human PTPRK mRNA (Figure 2E and Figure 2—figure supplement 1D), demonstrating Mo specificity. To further confirm specificity of these defects, we carried out CRISPR/Cas9 mediated ptprk gene editing. A single guide RNA (sgRNA) was designed to target a sequence within ptprk exon one and the genome modification was confirmed by StuI enzyme digestion (Figure 2—figure supplement 1F–G). The ptprk genome-edited embryos (‘crispants’) showed the same phenotype as ptprk morphants. Anterior and tail formation defects are characteristically observed following overactivation of zygotic Wnt signaling (Christian and Moon, 1993) and expectedly Wnt8 DNA overexpression phenocopied the ptprk morphant and crispant phenotype (Figure 2E and Figure 2—figure supplement 1D–E). Concordantly, depletion of Ptprk upregulated Wnt-induced Topflash activity in Xenopus embryos, both in morphants (Figure 2F) and crispants (Figure 2G). Increased Wnt activity in ptprk morphants was restored by human wild-type PTPRK RNA but not by an intracellular domain deletion mutant (PTPRK-ΔC) or phosphatase-dead mutants (PTPRK-CS, PTPRK-DA) (Figure 2F,H–I), indicating that the tyrosine phosphatase activity is essential for Wnt inhibition. The importance of PTPRK phosphatase activity in Wnt regulation was also confirmed in H1703 cells (Figure 2—figure supplement 1H). We conclude that ptprk depletion upregulates Wnt signaling and phenocopies Wnt overactivation during early Xenopus tropicalis development, supporting that Ptprk is a negative regulator of Wnt signaling not only in H1703 cancer cells but also in vivo.
 
-## Ptprk promotes Spemann organizer function
+### Ptprk promotes Spemann organizer function
 
 Inhibition of zygotic Wnt signaling is required for normal organizer gene expression (Hoppler et al., 1996; Kirsch et al., 2017; Ding et al., 2018). Consistently, microinjection of ptprk Mo downregulated expression of Spemann organizer effector genes, including chordin (chd), goosecoid (gsc) and Xnot2 (Figure 3A and Figure 3—figure supplement 1A–C). Zygotic Wnt signaling inhibits anterior neural gene expression, which is counteracted by Wnt antagonists. To corroborate the role of Ptprk in Wnt-mediated anterior neural patterning, we analyzed expression of the forebrain markers, bf1 and otx2. Unilateral injection of ptprk Mo with lineage tracer downregulated bf1 and otx2 expression on the injected side, as did Wnt8 DNA overexpression (Figure 3B and Figure 3—figure supplement 1D–E). Neural induction was not impaired as expression of the pan-neuronal marker sox3 was unaffected (Figure 3B and Figure 3—figure supplement 1F). We carried out rescue experiments in Xenopus noggin-neuralized animal cap explants (Lamb et al., 1993). BMP4 inhibition by noggin mRNA injection expectedly induced neural markers, and ptprk Mo reduced the expression of bf1 and otx2, but not sox3 (Figure 3C–E and Figure 3—figure supplement 1G). Importantly, knockdown of lrp6 or β-catenin using established Mos (Heasman et al., 2000; Hassler et al., 2007) rescued the effects of ptprk Mo on bf1 or otx2 expression in a dose-dependent manner (Figure 3C–D). These results confirm that the reduction of forebrain markers in ptprk morphants resulted from increased Wnt activity. We conclude that Ptprk promotes Spemann organizer function by negatively modulating Wnt/β-catenin signaling at the Lrp6 receptor level in vivo.
 
-## PTPRK regulates surface levels of Wnt receptors through ZNRF3
+![Figure 3.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig3-v2.jpg)
+
+**Figure 3.:** (A) Whole mount in situ hybridization of chordin, gsc, and Xnot2 in gastrula embryos (stage 10.5). Embryos were injected at 2- to 8 cell stage animally with Co or ptprk Mo. For quantification, see Figure 3—figure supplement 1A–C. (B) Whole mount in situ hybridization of forebrain marker bf1 and otx2, and pan-neural marker sox3 in neurula embryos (stage 18). Embryos were injected at 4- to 8 cell stage unilaterally in animal blastomeres as indicated (β-galactosidase lineage tracer in red; arrows mark injected side). For quantification, see Figure 3—figure supplement 1D–F. (C–E) qRT-PCR analysis showing the expression of (C) bf1, (D) otx2 and (E) sox3 in Xenopus tropicalis animal cap explants. Embryos were injected animally at 2- to 8 cell stage as indicated. Xenopus noggin mRNA was injected to induce to neural fate in animal cap explants. Animal caps were excised at stage 9 and harvested at stage 18. The expression of each gene was normalized to odc. PPL and Co Mo injected embryos were set to 1. Data show one representative experiment of at least three independent experiments with similar results.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) Quantification of the expression of the indicated genes by whole mount in situ hybridization in Figure 3A–B. Top, number of embryos. (G) qRT-PCR analysis showing the knockdown efficiency of ptprk Mo in animal cap experiments in Figure 3C–E. Xenopus ptprk expression was normalized to odc. Expression in PPL and Co Mo injected embryos was set to 1. Data show one representative experiment of three independent experiments.
+
+### PTPRK regulates surface levels of Wnt receptors through ZNRF3
 
 The in vitro and in vivo data clearly indicated that PTPRK regulates Wnt signaling at the receptor level. Moreover, PTPRK depletion increased not only LRP6 phosphorylation/activation, but also total LRP6 levels in H1703 cells and Xenopus embryos (Figure 4A–C and Figure 4—figure supplement 1A,C), without affecting LRP6 mRNA levels (Figure 4—figure supplement 1B,D). This suggests that PTPRK directly or indirectly reduces LRP6 protein levels. The transmembrane E3 ligases ZNRF3 and its homolog RNF43 are key negative regulators of Wnt receptor levels at the plasma membrane (Hao et al., 2012; Koo et al., 2012). Hence, we explored if PTPRK may act through ZNRF3/RNF43.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blots analysis of membrane fractions from H1703 cells upon siRNA transfection. Cells were treated with Wnt3a for the indicated time and were analyzed. Ratio, phospho-LRP6 (pLRP6) levels normalized to control (transferrin receptor, TfR). Representative results from three independent experiments with similar outcome are shown. (B) Western blots analysis of membrane fractions from H1703 cells upon siRNA transfection. Transferrin receptor (TfR) served as loading control. Representative results from three independent experiments with similar outcome are shown. (C) Western blot analysis of LRP6 and phospho-LRP6 (pLRP6) in neurula (stage 18) embryos injected with LRP6 RNA, eGFP RNA and indicated Mo. eGFP served as an injection control. Data show one representative result from three independent experiments. (D) Flow cytometric analysis of cell surface Frizzled receptors (pan-FZD antibody) in H1703 cells upon siRNA knockdown of PTPRK or ZNRF3/RNF43. Only live cells were counted and dead cells were gated out by propidium iodide (PI) staining. Dashed line, unstained H1703 cells. RFU, relative fluorescence units. (E) Flow cytometric analysis of cell surface LRP6 in H1703 cells upon siRNA depletion of PTPRK, ZNRF3/RNF43 or combination of both. Only live cells were counted and dead cells were gated out by propidium iodide (PI) staining. Dashed line, unstained H1703 cells. RFU, relative fluorescence units. (F) Topflash reporter assay in H1703 cells upon transfection of indicated siRNAs. Cells were treated with Wnt3a with or without 20 μM BIO for 24 hr before measurement. (Mean ± SD, n = 3; ***p<0.001, n.s., not significant, student t-test). RLU, relative light.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of relative LRP6 protein levels normalized to TfR in Figure 4B. (B) qRT-PCR analysis of LRP6 mRNA levels in H1703 cells transfected with indicated siRNAs. mRNA expression was normalized to GAPDH, and the level of LRP6 in siCo was set to 1. (C) Quantification of the protein levels of LRP6 (left) and phospho-LRP6 (pLRP6, right) shown in Figure 4C. Levels of LRP6 or phospho-LRP6 were normalized to eGFP and protein levels in Co Mo injected embryos were set to 1. (D) qRT-PCR analysis of ptprk and lrp6 mRNA levels in Co Mo or ptprk Mo injected neurula embryos (stage 18) in Figure 4C. The expression level in Co Mo injected embryos was set to 1. (E) qRT-PCR analysis showing the knockdown efficiencies of the indicated siRNAs in H1703 cells (related to Figure 4F). Statistics was performed with three independent experiments (Mean ± SD, *p<0.05, **p<0.01, ***p<0.001).
 
 PTPRK depletion upregulated LRP6 levels similarly to knockdown of ZNRF3 and RNF43 in H1703 cells (Figure 4B and Figure 4—figure supplement 1A) as well as in Xenopus embryos (Figure 4C and Figure 4—figure supplement 1C). ZNRF3/RNF43 degrade not only LRP6 but also FZD receptors (Hao et al., 2012; Koo et al., 2012). We therefore monitored FZD levels at the plasma membrane by flow cytometry using a pan-FZD antibody (OMP-18R5) (Gurney et al., 2012; Hao et al., 2012). Consistently, not only siZNRF3/RNF43 but also siPTPRK increased FZD cell surface levels (Figure 4D). Examining their epistasis, siPTPRK and siZNRF3/RNF43 treatments both elevated LRP6 cell surface levels, but LRP6 levels were not further enhanced by their combined knockdown (Figure 4E). Likewise, depletion of PTPRK or ZNRF3/RNF43 elevated Topflash activity, while the combined knockdown did not further increase it (Figure 4F and Figure 4—figure supplement 1E).
 
 Since a role for ZNRF3 has not been reported in Xenopus, we characterized its expression in Xenopus tropicalis. Maternal znrf3 mRNA was detected in the animal hemisphere; in gastrulae it was prominently expressed in the organizer (Figure 5A), consistent with RNAseq analysis (Figure 2D). ZNRF3 is a Wnt target gene (Hao et al., 2012) and likewise in Xenopus embryos it shows a pattern that follows high Wnt activity (Figure 5A) (Borday et al., 2018), including the posterior of early neurulae, and in tailbud embryos the midbrain, the dorsal neural tube and branchial arches.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig5-v2.jpg)
+
+**Figure 5.:** (A) Spatial expression of znrf3 in Xenopus tropicalis embryos at blastula (animal view), gastrula (hemisected dorsal to the right), neurula, tailbud and tadpole stages. ba, branchial arches; bp, blastopore; hb, hindbrain; mb, midbrain; nt, neural tube; ov, ovic vesicle; SO Spemann organizer. (B) Representative phenotypes of tailbud stage Xenopus tropicalis embryos injected animally at 2- to 8 cell stage as indicated. (C) Quantification of phenotypes shown in (B). The number of embryos per condition is indicated on the top. (D) Whole mount in situ hybridization of gsc and chordin in gastrula embryos (stage 10.5). Embryos were injected at 2- to 8 cell stage animally with Co or ptprk Mo with or without ZNRF3 RNA. For quantification, see Figure 5—figure supplement 1C. (E) Topflash reporter assay performed with neurulae (stage 18). Embryos were injected animally at 2- to 8 cell stage as indicated. Suboptimal dosages of ptprk or znrf3 Mos were used in this experiment. Normalized Topflash activity of Co Mo injected embryos was set to 1. (F) Topflash reporter assay performed with neurulae (stage 18). Embryos were injected animally at 2- to 8 cell stage as indicated. Normalized Topflash activity of Co Mo injected embryos was set to 1. Data in all graphs are displayed as means ± SD, and show one representative of multiple independent experiments with three biological replicates. RLU, relative light units. **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Knockdown efficiency of znrf3 Mo1 by qRT-PCR analysis. (B) Topflash reporter assay performed with neurula (stage 18) embryos. Embryos were injected animally at 2- to 8 cell stage as indicated. Normalized Topflash activity of Co Mo injected embryos was set to 1. (C) Quantification of the expression of the indicated genes by whole mount in situ hybridization in Figure 5D. Top, number of embryos.
+
 We knocked down znrf3 in Xenopus with two independent antisense Mos. One targets the splice site between exon 1 and intron 1 of Xenopus tropicalis znrf3, robustly reducing znrf3 mRNA levels (Mo1, Figure 5—figure supplement 1A); the other targets the 5’-UTR (Mo2). Depletion of Znrf3 elicited axial defects that phenocopied ptprk morphants/crispants (Figure 5B–C). Xenopus znrf3 morphants were rescued by coinjection of human untargeted ZNRF3 mRNA (Figure 5B–C). Expectedly, znrf3 Mo robustly induced Topflash activity in Xenopus embryos (Figure 5—figure supplement 1B). Both ptprk and znrf3 show Spemann organizer expression and downregulate Wnt signaling. Accordingly, to examine whether Ptprk regulates Spemann organizer genes through Znrf3, we coinjected ptprk Mo with or without human ZNRF3 mRNA. ZNRF3 overexpression rescued both gsc and chordin expression, which were decreased by ptprk Mo (Figure 5D and Figure 5—figure supplement 1C). To test for their functional cooperation, we co-injected ptprk and znrf3 antisense Mos at sub-threshold doses, which individually hardly produced an effect. However, when combined, ptprk and znrf3 Mos synergistically enhanced Topflash activity (Figure 5E). In addition, overexpression of human ZNRF3 rescued Topflash induction by ptprk Mo (Figure 5F).
 
 Taken together, the results support that PTPRK is an upstream positive regulator of ZNRF3 and thereby reduces cell surface Wnt receptors, which is essential for proper Spemann organizer function and Xenopus axial patterning.
 
-## PTPRK promotes ZNRF3 mediated LRP6 and FZD degradation
+### PTPRK promotes ZNRF3 mediated LRP6 and FZD degradation
 
 We explored by co-immunoprecipitation (CoIP) if PTPRK and ZNRF3 physically interact. We used ZNRF3-ΔRING as it is more stable at the plasma membrane compared to wild-type ZNRF3. In CoIP experiments, full-length and phosphatase dead (DA) PTPRK bound to ZNRF3-ΔRING, whereas PTPRK-ΔC did not (Figure 6A). Moreover, PTPRK but not PTPRK-ΔC colocalized with ZNRF3-ΔRING in punctae at the plasma membrane (Figure 6—figure supplement 1A). These results indicate that PTPRK binds to ZNRF3 via its intracellular domain.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig6-v2.jpg)
+
+**Figure 6.:** (A) Co-immunoprecipitation experiments in HEK293T cells transfected with the indicated constructs and analyzed 48 hr after transfection. Data show a representative result from three independent experiments with similar outcomes. Asterisk, IgG light chain. (B) Tyrosine phosphorylation of ZNRF3 in TetOn ZNRF3-HA H1703 cells upon siRNA transfection with or without bafilomycin treatment overnight. Cells were treated with Dox for 48 hr before harvest. As a control, cells were treated with Na-pervanadate (PV, phosphatase inhibitor) for 30 min before harvest. Lysates were pulled down with anti-HA antibody or control IgG and subjected to Western blot analysis. Ratio, tyrosine phosphorylation of ZNRF3 normalized to total ZNRF3. (C) PTPRK-ZNRF3 interaction is vanadate-sensitive. Immobilized, immunoisolated V5-PTPRK from TetOn V5-PTPRK cells was incubated with total cell lysate from ZNRF3-HA expressing, Na-pervanadate treated cells. Bound ZNRF3-HA was eluted with 20 mM vanadate as indicated and eluate and beads were separated before Western blot analysis. (D) Cell surface biotinylation assay performed in TetOn ZNRF3-HA H1703 cells upon siRNA treatment. Cells were treated with Dox for 48 hr before harvest. After labeling surface proteins with Sulfo-NHS-LC-LC-Biotin, lysates were pulled down with streptavidin beads and subjected to Western blot analysis. Transferrin receptor (TfR), loading control for avidin pull down; ERK, total cell lysate (TCL) control. A representative result from three independent experiments with similar outcomes is shown. (E) Colocalization by immunofluorescence microscopy (IF) of ZNRF3 (Green) with LAMP1 (Red) in TetOn ZNRF3-HA H1703 cells upon siRNA treatment. Top, graph shows quantification of ZNRF3 colocalizing with LAMP1 (Mean ± SD, *p<0.05, student t-test). Bottom, representative IF images. Note that plasma membrane localized ZNRF3 cannot be seen due to low microscope laser power used for optimal vesicular co-localization in. Colocalization data are pooled from two independent experiments. (F) Western blot analysis of Dox treated TetOn ZNRF3-HA H1703 cells upon siRNA treatment. Ratio, LRP6 normalized to ERK. A representative result from three independent experiments with similar outcomes is shown. (G) Internalization and degradation assay of LRP6 in TetOn ZNRF3-HA H1703 cells treated as indicated. After labeling of surface proteins with Sulfo-NHS-SS-Biotin, endocytosis was induced by shifting cells to 37°C for the indicated times. At each indicated time point, cells were treated with MesNa to remove biotinylated surface proteins and then harvested. Cells were lysed, and biotinylated proteins were pulled down with streptavidin beads and analyzed with indicated antibodies. Lane 1: non-biotin treated control, Lane 3: MesNa treated after biotin labeling without inducing endocytosis (monitoring MesNa efficiency). The graph below shows avidin pulled down LRP6 levels normalized to total LRP6 levels (remaining internalized LRP6 at 30 min upon siCo was set to 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunofluorescence microscopy showing colocalization of Myc-ZNRF3-ΔRING (green) with V5-PTPRK or V5-PTPRK-ΔC (red). Arrowheads indicate colocalization of PTPRK but not PTPRK-ΔC with ZNRF3 at the plasma membrane. (B) Tyrosine phosphorylation of ZNRF3 in TetOn ZNRF3-HA H1703 cells upon siRNA transfection and bafilomycin treatment overnight. (C) Cell surface biotinylation assay performed in H1703 cells transfected with Myc-ZNRF3-ΔR upon PTPRK knockdown. After labeling surface protein with NHS-LC-LC-Biotin, lyates were pulled down with streptavidin beads and subjected to Western blot analysis. Transferrin receptor (TfR), loading control for avidin pull down; ERK, total cell lysate (TCL) control. A representative result from three independent experiments with similar outcomes is shown. (D) Immunofluorescence microscopy (IF) showing the localization of ZNRF3-HA (green) upon PTPRK knockdown. Left, representative IF images. Arrowheads indicate plasma membrane ZNRF3. Right, quantification of membrane ZNRF3 positive cells (mean ± SD, **p<0.01, student t-test). The number of cells per condition is indicated at the bottom (n). (E) Ubiquitin Western blot of in vitro autoubiquitination assay for ZNRF3-HA upon PTPRK knockdown (left panel) or Na-pervanadate treatment (right panel) in TetOn ZNRF3-HA cells. After 48 hr of Dox treatment and 72 hr of PTPRK knockdown, immunoisolated ZNRF3 was incubated as indicated. Where indicated, cells were treated with 100 μM Na-pervanadate (PV) for 30 min before harvest. A representative result of two independent experiments with similar outcomes is shown. (F) Colocalization by immunofluorescence microscopy (IF) of ZNRF3 (Green) with Rab11 (recycling endosome marker, red) in Dox treated TetOn ZNRF3-HA H1703 cells upon siRNA treatment. Top, graph shows quantification of ZNRF3 colocalizing with LAMP1 (Mean ± SD, *p<0.05, student t-test). Bottom, representative IF images. Colocalization data are pooled from two independent experiments. (G) Western blot analysis of H1703 cells transfected as indicated. The graph shows quantification of V5-FZD5 normalized to ERK from three independent experiments (Mean ± SE, student t-test). The level of V5-FZD5 without ZNRF3-HA transfection was set to 100%.
 
 We generated a H1703 cell line harboring doxycycline (Dox) inducible ZNRF3-HA (TetOn ZNRF3-HA) to overcome both, poor transfection efficiency in this cell line and general lack of ZNRF3 antibodies. Employing this cell line, we tested if ZNRF3 is tyrosine phosphorylated and may be a substrate of PTPRK. By CoIP and Western blot detection with a phospho-Tyr-specific antibody, we observed very little phosphorylated ZNRF3 (Figure 6B, lane 2). However, inhibiting endocytic traffic and lysosomal degradation with bafilomycin induced ZNRF3 phosphorylation, and treatment with the pan-PTP inhibitor Na-pervanadate (PV) massively increased ZNRF3 phosphorylation (Figure 6B, lanes 4, 6). These results suggest that i) ZNRF3 is tyrosine-phosphorylated but becomes rapidly dephosphorylated by PTPs, ii) that its phosphorylation status is related to vesicular traffic and lysosomal degradation. Interestingly, siPTPRK enhanced tyrosine phosphorylation of ZNRF3 both in control as well as in bafilomycin-treated cells (Figure 6B, lane 3, 5), suggesting that ZNRF3 is a substrate of PTPRK. Concordantly, when phosphorylated ZNRF3 was bound to immobilized PTPRK, ZNRF3 could be eluted by vanadate (Figure 6C), which mimics the conformation of the phosphate group at the transition state for phosphoryl transfer (Lindquist et al., 1973), hence indicating an enzyme-substrate interaction. Moreover, siRNA knockdown of other PTPRs also increased ZNRF3 phosphorylation, notably siPTPRF (Figure 6—figure supplement 1B), which also induced Wnt signaling (AXIN2 expression; Figure 1—figure supplement 1F).
 
@@ -71,9 +119,21 @@ We hypothesized that increased surface ZNRF3 upon PTPRK depletion is due to redu
 
 ZNRF3 and RNF43 deplete Wnt receptors from the cell surface and target them towards lysosomal degradation (Koo et al., 2012; Tsukiyama et al., 2015). Consistently, in TetOn ZNRF3-HA cells, Dox treatment dose-dependently increased ZNRF3 and decreased LRP6 levels (Figure 6F). siPTPRK treatment reversed the effect on LRP6 and further increased ZNRF3 levels. Similarly, transfected ZNRF3 reduced FZD5 dose-dependently, while this effect of ZNRF3 was abolished upon siPTPRK treatment (Figure 6—figure supplement 1G). To confirm this result, we monitored the kinetics of LRP6 internalization and degradation using cleavable biotin. In siCo cells, internalized LRP6 was detected after 30 min (Figure 6G, compare lanes 2 and 4) and decreased after 90 min, likely due to lysosomal degradation (compare lanes 4 and 5). In contrast, siPTPRK prevented degradation of internalized LRP6 (compare lanes 6 and 7). Taken together, these results support a model in which vesicular trafficking of ZNRF3 and its ability to degrade Wnt receptors is regulated by tyrosine phosphorylation: Phosphorylation maintains plasma membrane residence while dephosphorylation by PTPRK promotes lysosomal targeting and degradation (Figure 7—figure supplement 2).
 
-## PTPRK dephosphorylates a 4Y endocytic signal on ZNRF3
+### PTPRK dephosphorylates a 4Y endocytic signal on ZNRF3
 
 Tyrosine-containing motifs are known to play a critical role in regulating endocytosis of transmembrane proteins. Specifically, unphosphorylated YXXXφ, φXXY, as well as YXXφ (φ = bulky hydrophobic amino acid) sites can serve as internalization motifs (Zhang and Allison, 1997; Roush et al., 1998; Bonifacino and Traub, 2003; Royle et al., 2005). By multisequence alignment and inspection of the intracellular domain of ZNRF3, we identified a matching cluster of four adjacent tyrosine residues, or ‘4Y’ motif (Y465, Y469, Y472 and Y473), which is highly conserved among vertebrates (Figure 7A). Each of these four tyrosine residues conforms to the aforementioned internalization motifs, suggesting that 4Y represents a cluster of four consecutive internalization signals.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig7-v2.jpg)
+
+**Figure 7.:** (A) Multiple sequence alignment of ZNRF3 among different species. Y: Tyrosine, X: any amino acids, and Φ: hydrophobic bulky amino acids. (B) Subcellular localization by immunofluorescence microscopy (IF) of ZNRF3-HA or ZNRF3(Δ4Y)-HA in H1703 cells with bafilomycin treatment overnight. Left, representative IF images. Arrowheads indicate membrane ZNRF3. Right, graph shows quantification of membrane ZNRF3 positive cells (Mean ± SD, **p<0.01, student t-test). The number of cells per condition is indicated at the bottom (n). IF data are pooled from two independent experiments. (C) Tyrosine phosphorylation of ZNRF3-HA or ZNRF3(Δ4Y)-HA in H1703 cells upon siRNA transfection with bafilomycin treatment overnight. As a control, cells were treated with Na-pervanadate (PV, phosphatase inhibitor) for 30 min before harvest. Lysates were pulled down with anti-HA antibody or control IgG and subjected to Western blot analysis. (D) Western blot analysis of H1703 cells transfected as indicated. The graph below shows quantification of V5-FZD5 normalized to ERK. The level of V5-FZD5 without ZNRF3-HA transfection was set to 100%. A representative result from two independent experiments with similar outcomes is shown. (E) Topflash reporter assay in H1703 cells upon transfection of different amount of ZNRF3-HA or ZNRF3(Δ4Y)-HA plasmids. All samples were Wnt3a treated for 24 hr before measurement. (Mean ± SD, n = 3; *p<0.05, ***p<0.001, student t-test). Topflash activity without ZNRF3 transfection was set to 100%. A representative result from three independent experiments with similar outcomes is shown.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Tyrosine phosphorylation of the indicated Wt and mutant ZNRF3 constructs in H1703 cells upon siRNA transfection and bafilomycin treatment overnight. As control, cells were treated with Na-pervanadate (PV, phosphatase inhibitor) for 30 min before harvest. Lysates were pulled down with anti-HA antibody or control IgG and subjected to Western blot analysis. (B) Topflash reporter assay in H1703 cells upon transfection of different amount of the indicated Wt and mutant ZNRF3 plasmids. All samples were Wnt3a treated for 24 hr before measurement. (Mean ± SD, n = 3; **p<0.005, ***p<0.001, student t-test). Topflash activity without ZNRF3 transfection was set to 100%. A representative result from three independent experiments with similar outcomes is shown.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/51248/elife-51248-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Left, ZNRF3 E3 ubiquitin ligase reaching the plasma membrane continuously co-internalizes Wnt receptors, targets them for lysosomal degradation and reduces Wnt signaling. An unphosphorylated 4-tyrosine (‘4Y’) motif serves as ZNRF3 internalization signal. The phosphatase PTPRK dephosphorylates the 4Y motif and promotes ZNRF3 lysosomal targeting along with Wnt receptors to reduce Wnt signaling. Right, in the absence of PTPRK an unknown tyrosine kinase(s) phosphorylates the 4Y motif, impairs ZNRF3/Wnt receptor internalization, and increases Wnt signaling. Created with https://biorender.com/.
 
 To test whether the 4Y motif regulates ZNRF3 endocytosis, we designed a deletion construct ZNRF3(Δ4Y) (deletion of 9 amino acids encompassing the four tyrosines) and monitored its subcellular localization. Indeed, ZNRF3(Δ4Y) displayed enhanced membrane staining compared to wild-type (Wt) ZNRF3 (Figure 7B). Moreover, PTPRK knockdown induced tyrosine phosphorylation of Wt ZNRF3 but not that of ZNRF3(Δ4Y) (Figure 7C; compare lanes 3 and 5). This result was confirmed with a mutant ZNRF3(4YF), wherein all four tyrosine residues are substituted by phenylalanine (Figure 7—figure supplement 1A; compare lanes 3 and 7). Note though, that Na-pervanadate (PV) treatment induced massive tyrosine phosphorylation of ZNRF3 regardless of its mutation status, indicating additional PTPRK-independent phosphosites. We hypothesized that reduced endocytosis of ZNRF3(Δ4Y) would impair its ability to internalize Wnt receptors and render it hypoactive. Concordantly, ZNRF3(Δ4Y) downregulated FZD5 less efficiently than Wt ZNRF3 (Figure 7D). Moreover, ZNRF3(Δ4Y) and ZNRF3(4YF) were less efficient in inhibiting Topflash reporter assays compared to Wt ZNRF3 (Figure 7E; Figure 7—figure supplement 1B).
 
@@ -97,29 +157,529 @@ Our results suggest that tyrosine kinases phosphorylating ZNRF3 at its 4Y endocy
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo spiens)</td>
+      <td>PTPRK</td>
+      <td>RZPD</td>
+      <td>DKFZ p686c2268Q2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo spiens)</td>
+      <td>ZNRF3</td>
+      <td>Feng Cong PMID: 22575959</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo spiens)</td>
+      <td>FZD5</td>
+      <td>NCBI</td>
+      <td>NM_003468.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Xenopus tropicalis)</td>
+      <td>Xenopus tropicalis</td>
+      <td>Nasco</td>
+      <td>LM00822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Xenopus tropicalis)</td>
+      <td>Xenopus tropicalis</td>
+      <td>National Xenopus Resource (NXR)</td>
+      <td>NXR_1018 RRID:SCR_013731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Xenopus tropicalis)</td>
+      <td>Xenopus tropicalis</td>
+      <td>European Xenopus Resource Centre (EXRC)</td>
+      <td>RRID:SCR_007164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>H1703</td>
+      <td>ATCC</td>
+      <td>CRL-5889 RRID:CVCL_1490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>H1703 TetOn ZNRF3-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>generated from H1703</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo-sapiens)</td>
+      <td>H1703 TetOn V5-PTPRK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>generated from H1703</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-transferrin receptor (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat# 13113 RRID:AB_2715594</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LRP6 (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat# 2560 RRID:AB_2139329</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LRP6 (Mouse monoclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat#: MAP1505 RRID:AB_10889810</td>
+      <td>FACS (2.5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho LRP6 (Sp1490) (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat#: 2568 RRID:AB_2139327</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rab11 (Mouse monoclonal)</td>
+      <td>BD bioscience</td>
+      <td>Cat#: 610656 RRID:AB_397983</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-catenin (Mouse monoclonal)</td>
+      <td>BD bioscience</td>
+      <td>Cat#: 610154 RRID:AB_397555</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phosphotyrosine(4G10) (Mouse monoclonal)</td>
+      <td>BD bioscience</td>
+      <td>Cat#: 610000 RRID:AB_397423</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Erk1/2 (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: M8159 RRID:AB_477245</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Mouse monoclonal)</td>
+      <td>Thermo scientific</td>
+      <td>Cat#: R960-25 RRID:AB_2556564</td>
+      <td>WB (1:5000) IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rat polyclonal)</td>
+      <td>Roche</td>
+      <td>Cat#: 1867423 RRID:AB_390918</td>
+      <td>WB (1:1000) IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: 9E10 RRID:AB_2266850</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 06–549 RRID:AB_310165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pan FZD (humanized)</td>
+      <td>Austin Gurney (former Oncomed pharmaceuticals)</td>
+      <td>OMP-18R5</td>
+      <td>FACS (2.5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11122 RRID:AB_221569</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ubiquitin (Rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>Cat#: Z0458 RRID:AB_2315524</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LAMP1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab24170 RRID:AB_775978</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti mouse HRP</td>
+      <td>Dianova</td>
+      <td>115-035-174 RRID:AB_2338512</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti rabbit HRP</td>
+      <td>Dianova</td>
+      <td>111-035-144 RRID:AB_2307391</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti rat HRP</td>
+      <td>Dianova</td>
+      <td>112-035-175 RRID:AB_2338140</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti mouse Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11029 RRID:AB_138404</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey-anti rabbit Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A31573 RRID:AB_2536183</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti rat Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11006 RRID:AB_141373</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey-anti mouse Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A31571 RRID:AB_162542</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat-anti human Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11013 RRID:AB_141360</td>
+      <td>FACS (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ (plasmid)</td>
+      <td>Ralph AW Rupp PMID: 7926732</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-V5PTPRK (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-V5PTPRK D1057A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-V5PTPRK C1089S (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-V5PTPRK ΔC (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO-ZNRF3HA (plasmid)</td>
+      <td>Feng Cong PMID: 22575959</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Myc-ZNRF3ΔRING (plasmid)</td>
+      <td>Feng Cong PMID: 22575959</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO-ZNRF3(Δ4Y) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO-ZNRF3(4YF) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO-ZNRF3-Flag (plasmid)</td>
+      <td>Feng Cong PMID: 25891077</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-V5-Frizzled5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Expression constructs’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3-mWnt1-Myc</td>
+      <td>from Xi He</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5-mFz8</td>
+      <td>from J Nathans</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-hLRP6</td>
+      <td>from Xi He</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-hDvl1</td>
+      <td>RZPD</td>
+      <td>IRALp962D1142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hβ-catenin S37A</td>
+      <td>from M Boutros</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Catalase</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: C1345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA</td>
+      <td>Macherey-Nagel</td>
+      <td>Cat. #: 740955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West pico ECL</td>
+      <td>Thermo Scientific</td>
+      <td>Cat. #: 34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin</td>
+      <td>Calbiochem</td>
+      <td>Cat. #: 196000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BIO</td>
+      <td>Cayman chemical company</td>
+      <td>Cat. #: 16329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mesna</td>
+      <td>Cayman chemical company</td>
+      <td>Cat. #: 21238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LightCycler 480 software</td>
+      <td>Roche</td>
+      <td>4994884001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fluoroskan Ascent FL software</td>
+      <td>Thermo scientific</td>
+      <td>11540775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS 3000 Reader ver 2.2</td>
+      <td>Fuji film</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multi-gauge ver 3.2</td>
+      <td>Fuji film</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software ver 10.5.3</td>
+      <td>BD</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen black</td>
+      <td>Carl Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad</td>
+      <td>Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (image J)</td>
+      <td>Open source PMID: 22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst</td>
+      <td>Sigma Aldrich</td>
+      <td>B-2883</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein A magnetic bead</td>
+      <td>Thermo Scientific</td>
+      <td>88846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strepavidin agarose</td>
+      <td>Thermo Scientific</td>
+      <td>20359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sulfo-NHS-LC-LC-Biotin</td>
+      <td>Thermo Scientific</td>
+      <td>21338</td>
+      <td>0.25 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sulfo-NHS-SS-Biotin</td>
+      <td>Thermo Scientific</td>
+      <td>21331</td>
+      <td>0.5 mg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 H1703 cells (ATCC) were maintained in RPMI with 10% FBS, supplemented with 2 mM L-glutamine, 1 mM sodium pyruvate and penicillin/streptomycin. HEK293T cells (ATCC) were maintained in DMEM with 10% FBS, supplemented with 2 ml L-glutamine and 1 mM penicillin/streptomycin. Cell identity was authenticated by ATCC by STR profiling. Regular mycoplasma test showed both cell lines were mycoplasma negative.
 
-## Expression constructs
+### Expression constructs
 
 V5 tagged PTPRK (1–1446), PTPRKΔC (1-776) and FZD5 (1–585) were generated by inserting human PTPRK or FZD5 into a pCS-based vector containing the V5 epitope after the signal peptide of mouse Krm2. Site directed mutagenesis for V5-PTPRK-CS (C1089S; Catalytic Cys in phosphate binding site changed to Ser) and V5-PTPRK-DA (D1057A; Asp in WPD loop changed to Ala) was done by two-step PCR and mutations were validated by sequencing. hZNRF3-HA, Myc-ZNRF3-ΔRING and Myc-ZNRF3-ΔC were kindly provided by F. Cong (Hao et al., 2012). ZNRF3(Δ4Y)-HA (deletion of 465–474) or ZNRF3(4YF)-HA (phenylalanine substitution of Y465, Y469, Y472 and Y473) were done by amplification of whole plasmids with 5’-phosphorylated primers followed by DpnI digestion and self-ligation.
 
-## Real time quantitative PCR
+### Real time quantitative PCR
 
 H1703 cells in 12-well plates were lysed with RNA lysis buffer containing 1% β-mercaptoethanol. RNA isolation was performed with Nucleospin RNA isolation kit following the manufacturer’s instruction (Macherey-Nagel, Düren, Germany). Reverse transcription and PCR amplification were performed as described before (Berger et al., 2017). Primers and siRNA information are listed in Supplementary file 1.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 For Topflash assay in H1703 cell line, 3.25 × 103 cells per well were plated in 96-well plates. Where indicated, cells were transfected with 25 nM siRNAs using Dharmafect (Dharmacon, Lafayette, CO). After 24 hr, cells were transfected with plasmids including 5 ng of pTK-Renilla, 25 ng of SuperTop, 2 ng of mWnt1, 2.4 ng of hLRP6, 0.24 ng of Mesd, 0.8 ng of mFzd8, 12 ng of hDvl1, 0.08 ng of human β-catenin S37A using Lipofectamine 3000 (Invitrogen, Carlsbad, CA). pCS2+ vector was used to adjust total DNA amount to 100 ng per well. For Topflash assay in HEK293T cell line, 104 cells per well were plated in 96-well plates and 1 ng of pTK-Renilla, 5 ng of SuperTop, were transfected. After 48 hr of DNA transfection, luciferase activities were measured with Dual-luciferase kit (Promega, Madison, WI). When necessary, Wnt3a conditioned medium was treated 24 hr before measuring the luciferase activities.
 
-## Western blot and immunoprecipitation
+### Western blot and immunoprecipitation
 
 For isolation of total cell lysates, cells were harvested in cold PBS and lysed with Triton lysis buffer (20 mM Tris-Cl, pH 7.5, 1% Triton X-100, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1 mM β-glycerophosphate, 2.5 mM sodium pyrophosphate, 1 mM Na-orthovanadate) supplemented with complete protease inhibitor cocktail (Roche, Basel, Switzerland). For membrane-enriched fractions, cells were lysed with Saponin lysis buffer (20 mM Tris-Cl, pH 7.5, 0.05% Saponin, 1 mM MgCl2, 1 mM Na-orthovanadate) supplemented with complete protease inhibitor cocktail (Roche, Basel, Switzerland). After centrifugation, the supernatant (cytosolic fraction) was discarded and the pellets were lysed with Triton lysis buffer. Lysates were cleared by centrifugation, and Bradford assay was performed to measure the protein concentration. For Western blot, 30 μg of lysates were mixed with NuPage LDS sample buffer containing 50 mM DTT and heated at 70°C for 10 min.
 
 For co-immunoprecipitation or pull-down assay, 300 ~ 800 μg of total cell lysates were precleared with 10 μl of A/G plus agarose (Santacruz Biotechnologies, Santacruz, CA) on a rotator at 4°C for 1 hr. Precleared lysates were incubated with 10 μl of anti-V5 agarose (Sigma Aldrich, St. Louis, MO) or with 20 μl of A/G plus agarose with anti-HA (1867423; Roche, Basel, Switzerland) on a rotator at 4°C overnight. Immunoprecipitated proteins were washed with triton lysis buffer for four times and mixed with NuPage LDS sample buffer containing 50 mM DTT, followed by heated at 70°C for 10 min. Samples were subjected to SDS-PAGE, transferred to nitrocellulose membrane, and blocked with 5% BSA in TBST (10 mM Tris-Cl, pH 8.0, 150 mM NaCl, 0.05% Tween-20). Primary antibodies in blocking buffer were applied overnight at 4°C, and incubation of secondary antibodies was carried out at RT for 1 hr. Western blot images were taken with SuperSignal West pico ECL (Thermo Scientific, Waltham, MA) using LAS-3000 (Fujifilm, Tokyo, Japan). Densitometry analyses were done with Multi-gauge software (Fujifilm, Tokyo, Japan). Antibody information is listed in key resource table.
 
-## Vanadate elution assay
+### Vanadate elution assay
 
 TetOn V5-PTPRK or V5-PTPRK-DA H1703 cells (bait) were harvested after 48 hr of doxycycline (200 ng/ml) treatment and lysed in 400 μl lysis buffer A (20 mM Tris-Cl, pH 7.5, 100 mM NaCl, 10% Glycerol, 1% Triton) supplemented with complete protease inhibitor cocktail (Roche, Basel, Switzerland). One milligram of total cell lysate was pulled down with 300 ng anti-V5 antibody plus 10 μl protein A magnetic beads (88846; Thermo Scientific, Waltham, MA) overnight. Beads were washed twice with lysis buffer A and mixed with prey (see below).
 
@@ -127,31 +687,31 @@ TetOn ZNRF3-HA H1703 cells (prey) were harvested after treatment of 100 μM of f
 
 For the preparation of Na-pervanadate, 10 μl of 100 mM Na3VO4 was added to 50 μl of 20 mM HEPES (pH 7.5) containing 0.3% H2O2, followed by 940 μl H2O and 5 min incubation. 2 μg of catalase (C1345; Sigma Aldrich, St. Louis, MO) was added for 5 min to remove unreacted H2O2.
 
-## Subcellular fractionation
+### Subcellular fractionation
 
 H1703 cells were harvested in cold PBS 72 hr post siRNA transfection, and lysed with hypotonic buffer (5 mM HEPES, 1 mM MgCl2, 2 mM Na-orthovanadate) containing complete protease inhibitor cocktail (Roche, Basel, Switzerland). After 30 min of incubation on ice, cell membranes was disrupted by syringe pipetting with 26 gauge needles, followed by centrifugation at 800 x g for 5 min at 4°C. The supernatant was centrifuged at 5,000 rpm for 5 min at 4°C to remove the debris. After further centrifugation at 30,000 rpm for 20 min at 4°C using a Beckman TL-100 with TLA-55 rotor, the pellet contained the membrane fraction and the supernatant the cytosolic part. The membrane pellet was solubilized in Triton lysis buffer. Equal amounts of proteins were mixed with NuPAGE LDS Sample Buffer, heated at 70°C for 10 min, followed by SDS-PAGE and Western blot analysis.
 
-## In vitro ubiquitination assay
+### In vitro ubiquitination assay
 
 TetOn ZNRF3-HA H1703 cells were seeded in 10 cm dishes (4.3 × 105 cells per dish) and transfected with the indicated siRNAs. After 24 hours, cells were treated with doxycycline (200 ng/ml) to activate ZNRF3 expression. Three days post induction cells were harvested and lysed in 400 μl Triton lysis buffer (50 mM Tris-Cl, pH 7.5, 150 mM NaCl, 10% Glycerol, 1% Triton, 1 mM EDTA, pH 8.0, 5 mM Iodoacetamide, 1 mM Na-orthovanadate, 10 mM N-Ethylmaleimide and 10 mM NaF). After pre-clearing the lysates with A/G plus agarose for 1 hr at 4°C, they were pulled down with 150 ng anti-HA and 20 μl A/G plus agarose for 4 hr at 4°C followed by four washes with lysis buffer (20 mM Tris-Cl, pH 7.5, 100 mM NaCl, 10% Glycerol, 1% Triton) and once with PBS. The ZNRF3 IP-beads were resuspended in a volume of 10 μl containing reaction buffer (40 mM HEPES, pH 7.4, 50 mM NaCl, 8 mM magnesium acetate), 10 μM Ubiquitin, 30 μM ATP, 50 nM UBE1 (E1), 2 μM UbcH5b (E2) as indicated in the Figure. Samples were incubated for 5 hr at 37°C with gentle shaking before boiling in NuPAGE LDS Sample Buffer containing 50 mM DTT for 2 min at 95°C, followed by PAGE analysis.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Cells were grown on coverslips in 6-well plates and fixed in 4% PFA for 10 min. The immunofluorescence experiments were performed as published (Berger et al., 2017). Coverslips were mounted with Fluoromount G.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cells were harvested with Versane solution (Lonza, Basel, Switzerland) and washed with FACS buffer (PBS, 1% BSA, 0.1% Sodium Azide) followed by blocking with FACS buffer containing 20 μl of FcγR inhibitor (eBioscience, San Diego, CA) for 30 min. After blocking, samples were incubated with 2.5 μg/ml of pan-FZD or LRP6 antibody at 4°C for 3 hr followed by two washes with FACS buffer. Goat anti-human Alexa488 or goat anti-mouse Alexa488 with a dilution of 1:1000 was applied to the sample for 1 hr at 4°C. After two washes with FACS buffer, samples were incubated with 1 μg/ml of propidium iodide for 5 min before analysis on a FACScalibur. Ten thousand live cells per sample were acquired and analyzed with FlowJo (Tree Star Inc, Ashland, OR).
 
-## Cell surface biotinylation assay
+### Cell surface biotinylation assay
 
 H1703 cells were transfected with siRNA for 72 hr and the washed three times with cold PBS. Surface proteins were biotinylated with 0.25 mg/ml sulfo-NHS-LC-LC-Biotin (Thermo scientific, Waltham, MA) at 4°C for 30 min. For non-biotinylated control, PBS was added. The reaction was quenched by 3 washes with 10 mM Monoethanolamine and cells were harvested and lysed with Triton lysis buffer. 200–300 μg of lysate was incubated with 10 μl streptavidin agarose (Thermo scientific, Waltham, MA) to pull-down biotinylated surface proteins, and precipitated proteins were subjected to Western blot and detected with indicated antibodies.
 
-## Surface internalization assay with cleavable sulfo-NHS-SS-Biotin
+### Surface internalization assay with cleavable sulfo-NHS-SS-Biotin
 
 TetOn ZNRF3-HA H1703 cells were transfected with siRNA for 24 hr and then treated with doxycycline (200 μg/ml) for 48 hr. Surface proteins were biotinylated with 0.5 mg/ml sulfo-NHS-SS-Biotin (Thermo Scientific, Waltham, MA) at 4°C for 30 min. After quenching excessive biotin with 10 mM Monoethanolamine, pre-warmed culture medium was added for the indicated times at 37°C to induce internalization. At the indicated times, remaining surface-biotin was removed by 50 mM MesNa (2-mercaptoethanesulfonate, membrane impermeable reducing agent) in 100 mM Tris-HCl, pH 8.6, 100 mM NaCl and 2.5 mM CaCl2 at 4°C for 30 min and MesNa protected biotinylated proteins were analyzed. Cells were lysed with RIPA buffer (20 mM Tris-Cl, pH 7.4, 120 mM NaCl, 1% Triton X-100, 0.25% Na-deoxycholate, 0.05% SDS, 50 mM sodium fluoride, 5 mM EDTA, 2 mM Na-orthovanadate) supplemented with complete protease inhibitor cocktail (Roche, Basel, Switzerland). 200–300 μg lysate was incubated with 10 μl streptavidin agarose (Thermo Scientific, Waltham, MA) to pull down biotinylated protein, and precipitated proteins were subjected to Western blot and detected with indicated antibodies.
 
-## Xenopus methods
+### Xenopus methods
 
 Xenopus tropicalis frogs were obtained from Nasco, National Xenopus Resource (NXR) and European Xenopus Resource Centre (EXRC). In vitro fertilization, embryo culture, preparation of mRNA, and microinjection were carried out as described (Gawantka et al., 1995). For Xenopus tropicalis embryo injection, mRNA/DNA/Morpholino oligonucleotide (Mo) was injected animally between the 2- to 8 cell stage. Equal amounts of total mRNA/DNA or Mo were injected by adjustment with preprolactin (PPL) RNA/DNA or standard control Mo (GeneTools, Philomath, OR). Based on Xenopus tropicalis ptprk sequence (ENSXETG00000010633), an antisense Mo was designed: 5’-TTCTTACCTGCACACTTGGTTCTTG-3’. The sequence of the antisense Mo targeting Xenopus tropicalis znrf3 (ENSXETG00000019942) was: 5’-CCACTTACCTGCACGATCTCCCCCT-3’ (Mo1, splice-blocking Mo) and 5’-AACATAATTTCCCAGTCCTCAGTGG-3’ (Mo2, translation-blocking Mo). Injected amount (per embryo) of each Mo was as follows: 0.5 or 1 ng of lrp6 Mo, 1, 2, or 5 ng of β-catenin Mo, and 5 or 10 ng of ptprk Mo, 2 or 10 ng of znrf3 Mo1, 40 ng of znrf3 Mo2. The injected mRNA amounts were 1 pg Wnt3a, 500 pg PTPRK WT or mutants, and 30 pg ZNRF3.
 

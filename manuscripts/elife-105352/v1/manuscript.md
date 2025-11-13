@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01jty7g66 German Centre for Integrative Biodiversity Research (iDiv), Halle-Jena-Leipzig Leipzig Germany
-2. https://ror.org/03s7gtk40 Leipzig University Leipzig Germany
-3. https://ror.org/05gqaka33 Institute of Biology/Geobotany and Botanical Garden, Martin-Luther University Halle-Wittenberg Halle Germany
-4. https://ror.org/05nywn832 Evolutionary Genetics, Leibniz Institute for Zoo and Wildlife Research Berlin Germany
+1. German Centre for Integrative Biodiversity Research (iDiv), Halle-Jena-Leipzig Leipzig Germany ([ROR:01jty7g66](https://ror.org/01jty7g66))
+2. Leipzig University Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+3. Institute of Biology/Geobotany and Botanical Garden, Martin-Luther University Halle-Wittenberg Halle Germany ([ROR:05gqaka33](https://ror.org/05gqaka33))
+4. Evolutionary Genetics, Leibniz Institute for Zoo and Wildlife Research Berlin Germany ([ROR:05nywn832](https://ror.org/05nywn832))
 
 † Corresponding author
 
@@ -31,6 +31,86 @@ In this article, we share insights we gained from leading an initiative called �
 The workplace environment for academics includes the physical space where they work (Morgan, 2015), the administrative and technical support available in the workplace, and the institutional values that prevail in the workplace (which may be enshrined in a code of conduct or similar document). This environment can be supportive towards women, or unsupportive, or somewhere in between. Supportive environments are characterized by codes of conduct or similar documents outlining the behavioral norms in the workplace, gender equity training programs, an equal opportunities committee that ensures gender equity in hiring and decision-making processes, career development programs, and support for work-life balance. These elements are absent or only partly present in unsupportive environments (Spoon et al., 2023). Supplementary file 1 includes a proposed (as yet untested) questionnaire that institutions can use to assess how supportive their workplace environment is.
 
 In a supportive workplace environment, employees can adopt a “bottom-up” approach to foster a more inclusive workplace and promote gender balance in leadership roles. This approach can start with acknowledgement, followed by transparency and action. In contrast, unsupportive workplace environments tend to perpetuate the status quo of men in leadership positions by offering limited support to women. In such unsupportive environments, a “top-down” approach that starts with policymakers (such as government departments and funders) or whole institutions taking action is more likely to lead to change. Table 1 lists a range of specific steps in the areas of acknowledgement, transparency and action that can be undertaken by individual researchers, by universities and research institutions, and by policymakers.
+
+**Table 1.**
+ Guidelines of specific steps to achieve acknowledgement, transparency and action.At the level of individual researchers, the points in blue text indicate guidelines we performed and experienced within the iFS initiative; at the level of universities and research institutions, the points in blue text indicate topics in which the involvement of iFS resulted in improvements in equity at our institute; and at the level of policymakers, the points in blue text are topics we expect this paper can have an impact on. The points in black text are based on discussions we had with other women in science within iFS, on perspectives we see for the future, and on ideas we found in literature (such as Grogan, 2018 and Snickare et al., 2022).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Individual researchers</th>
+    </tr>
+    <tr>
+      <th>Acknowledgement</th>
+      <th>Transparency</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recognize the problem of gender inequity and become informed on how to tackle it:Learn about the leaky-pipeline and scissors effect problemsFamiliarize yourself with local initiatives addressing the problems, like equity committees</td>
+      <td>Increase collective awareness:Foster discussions and workshops about biases and gender inequitySpread information about local initiatives</td>
+      <td>Support women:Nominate and vote women for leadership positionsFoster inclusivity criteria in hiring processes</td>
+    </tr>
+    <tr>
+      <td>Become aware of your own biases:Attend unconscious bias workshopsQuantify gender bias among authors and author roles in your own manuscripts</td>
+      <td>Be open about your own biases:Critically reflect on your own biasesDiscuss biases with colleagues</td>
+      <td>Explicitly address biases:Invite more women peers to collaborateSuggest/ create a code of conduct” for your own group</td>
+    </tr>
+    <tr>
+      <td>Be attentive to your surroundings:Calculate the proportion of women in the institution, especially in leadership positionsBecome informed about regulations to handle discrimination and harassment complaints</td>
+      <td>Promote a friendlier environment:Adopt an active by-stander behaviorDemand transparency in handling discrimination/ harassment complaints</td>
+      <td>Ensure a safer environment:Adopt non-discriminatory language and practicesIntervene or report cases of discrimination/ harassment</td>
+    </tr>
+    <tr>
+      <td colspan="3">Universities and research institutions</td>
+    </tr>
+    <tr>
+      <td>Acknowledgement</td>
+      <td>Transparency</td>
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>Collect and acknowledge gender-disaggregated data:About infrastructure, and financial and human resources available to employeesOn staff productivity (funding, publication, career stage, career progression) in relation to the resources available to them</td>
+      <td>Increase awareness:Make gender-disaggregated data available for staff on intranet or internet portalsImplement mandatory workshops about unconscious bias for employees</td>
+      <td>Reduce inequity:Implement inclusive criteria for hiring women and adopt alternative metrics to evaluate their performance(Re-)distribute resources with equity as the guiding criteria</td>
+    </tr>
+    <tr>
+      <td>Collect data on discrimination and harassment complaints:Create periodic anonymous surveys for collecting data about discrimination/ harassmentStandardize the way data about discrimination/ harassment is collected at different sources, like departments and research groups</td>
+      <td>Share the data safely:Inform staff about the due process for dealing with discrimination/harassment complaintsReport the outcomes of the due process (i.e., number of complaints, type of outcome) without disclosing identities of victims</td>
+      <td>Implement measures against discrimination/ harassment:Establish a system of “checks and balances” to prevent power structures from interfering with the due process dealing with discrimination/ harassmentImplement a code of conduct establishing a clear and time-bound process in cases of discrimination/ harassment; preferably written together with people who are vulnerable to misconduct</td>
+    </tr>
+    <tr>
+      <td>Assess policies and plans towards equity:Critically evaluate what has been implemented and achievedGain inspiration from successful initiatives</td>
+      <td>Plan together with the community to achieve gender equity:Set up and publicize action plans with clear goals and milestonesSpecify a timeframe for evaluation and revisions of plans</td>
+      <td>Guarantee implementation of plans:Devote human and financial resources to implement and review the plans periodicallyReward departments who achieve the goals, and demand adaptation/ explanation from those who do not</td>
+    </tr>
+    <tr>
+      <td colspan="3">Policymakers</td>
+    </tr>
+    <tr>
+      <td>Acknowledgement</td>
+      <td>Transparency</td>
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>Gather and harmonize data about the problem:Compile and harmonize gender-disaggregated data at the federal and national level, leveraging the data already collected by institutions and international organizationsIdentify institutions and research fields in which actions towards equity are required</td>
+      <td>Create standards for data collection at institutions:Create guidelines for data collection and report, with standardized terminology of career positionsDemand annual reports from institutions containing gender-disaggregated data</td>
+      <td>Set actions and goals to be taken by institutions:Demand institutions to create plans and policies for gender equityMandate data sharing by institutions</td>
+    </tr>
+    <tr>
+      <td>Collect information about existing public policies targeted to gender inequity:Critically assess existing policies, including evaluation and recommendations by expertsAssess how institutions and countries are performing in comparison to international guidelines for gender equity</td>
+      <td>Create an agenda of inclusivity:Create plans for the development and implementation of regulations to deal with gender inequityEstablish a “reputation rank” for universities and institutions, ranking them regarding their support for women and equity initiatives</td>
+      <td>Establish regulations and legal frameworks to foster implementation of gender equity in science:Create legal security for women in science, for example, paid maternity leaveCreate support initiatives targeted to keep women in science, for example providing child-care spaces and allowing working flexibility to accommodate family-care duties</td>
+    </tr>
+    <tr>
+      <td>Inspect and review funding grants in relation to gender:Gather gender disaggregated data on grant awardees, preferably by research fields and institutionsInspect for biases in grant awards, including the type and amount of grants</td>
+      <td>Promote transparency in funding:Publicize the number of grant applicants/nominees and awardees by gender and knowledge fieldDisclose criteria used for grant awards, especially those preventing/ promoting gender equity</td>
+      <td>Create system of rewards and penalties for institutions:Constrain awarding of grants to the success of institutions to implement gender equity measuresCreate awards for gender equity initiatives</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Acknowledgement, transparency and action
 

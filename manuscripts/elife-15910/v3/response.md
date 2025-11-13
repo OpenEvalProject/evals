@@ -82,11 +82,7 @@ Alternate orientation #1: Author response image 1 shows the density and packing 
 
 Alternate orientation #2: Author response image 2 shows an alternate orientation with the TAR loop placed where the TAR ends were before, and vice versa. Again, the fit with the electron density is worse, and there are severe steric clashes in the crystal packing between the TAR loops. This orientation also would not agree with any of the published biochemical data nor with the SHAPE data in our paper. Only the orientation described in the manuscript results in good packing and good fit with the density.
 
-In summary, the orientation of TAR is defined by the unbiased crystallographic difference density beyond doubt. We added a statement to this effect to the Discussion. The crystallographic structure is fully consistent with the SHAPE data and the sum of the extensive biological data, and alternative 1 and 2 are not.10.7554/eLife.15910.020Author response image 1.Unbiased difference electron density contoured at 2.4 sigma.DOI: http://dx.doi.org/10.7554/eLife.15910.02010.7554/eLife.15910.021Author response image 2.Unbiased difference electron density contoured at 2.3 sigma.DOI: http://dx.doi.org/10.7554/eLife.15910.021
-
-DOI: http://dx.doi.org/10.7554/eLife.15910.020
-
-DOI: http://dx.doi.org/10.7554/eLife.15910.021
+In summary, the orientation of TAR is defined by the unbiased crystallographic difference density beyond doubt. We added a statement to this effect to the Discussion. The crystallographic structure is fully consistent with the SHAPE data and the sum of the extensive biological data, and alternative 1 and 2 are not.10.7554/eLife.15910.020Author response image 1.Unbiased difference electron density contoured at 2.4 sigma.10.7554/eLife.15910.021Author response image 2.Unbiased difference electron density contoured at 2.3 sigma.
 
 The absence of density of the TAT ARM region is worrisome. The model that the authors propose for the TAT ARM region (Figure 5) suggests multiple contacts between the TAT ARM region and the rest of the complex, so it is surprising that there would be no electron density for it.
 
@@ -112,11 +108,9 @@ It was shown in previous work that AFF4 helix α2 residues M62 and F65 are impor
 
 In the section "Modeling of Tat ARM and CycT1 TRM", the claim that SAXS data are consistent with the structure is underwhelming. The real question is, what structure would not be consistent with the SAXS data. For example, can they show that the EIAV structure is incompatible with the SAXS data?
 
-Our initial integrative model, built without crystallographic data, had a χ =1.4 and eventually proved to be wrong. Similarly, a model composed of human AFF4-P-TEFb with a chimeric HIV/EIAV-Tat (HIV-Tat 1-48, EIAV-Tat 49-57) and HIV-1 TAR positioned as in the Arnon et al structure (pdb 2W2H) resulted in χ =1.3 (Author response image 3). Our current model based on crystallographic data, HDX, SHAPE, and SAXS data has a χ value of 0.86, significantly lower than either of the above-mentioned models. The SAXS data taken alone are not proof of the correctness of the model, and we make no claim that they are. They are, as we state, consistent with the model. The SAXS data are substantially more consistent with the current model than with any of the alternatives tested, with a χ < 1, while the alternatives have χ > 1.10.7554/eLife.15910.022Author response image 3.Left panel: TAR-complex from the manuscript (Schulze-Gahmen et al; Figure 5—figure supplement 1).Right panel: Same protein complex with TAR orientated as in EIAV structure and HIV-Tat ARM replaced by EIAV ARM structure.DOI: http://dx.doi.org/10.7554/eLife.15910.022
+Our initial integrative model, built without crystallographic data, had a χ =1.4 and eventually proved to be wrong. Similarly, a model composed of human AFF4-P-TEFb with a chimeric HIV/EIAV-Tat (HIV-Tat 1-48, EIAV-Tat 49-57) and HIV-1 TAR positioned as in the Arnon et al structure (pdb 2W2H) resulted in χ =1.3 (Author response image 3). Our current model based on crystallographic data, HDX, SHAPE, and SAXS data has a χ value of 0.86, significantly lower than either of the above-mentioned models. The SAXS data taken alone are not proof of the correctness of the model, and we make no claim that they are. They are, as we state, consistent with the model. The SAXS data are substantially more consistent with the current model than with any of the alternatives tested, with a χ < 1, while the alternatives have χ > 1.10.7554/eLife.15910.022Author response image 3.Left panel: TAR-complex from the manuscript (Schulze-Gahmen et al; Figure 5—figure supplement 1).Right panel: Same protein complex with TAR orientated as in EIAV structure and HIV-Tat ARM replaced by EIAV ARM structure.
 
 Right panel: Same protein complex with TAR orientated as in EIAV structure and HIV-Tat ARM replaced by EIAV ARM structure.
-
-DOI: http://dx.doi.org/10.7554/eLife.15910.022
 
 In summary, this work could greatly benefit from improved crystals, improved diffraction data collection, and improved atomic model refinement. Improved data and model qualities would lend more confidence into the insights gleaned from this complex. Thus, authors are asked to make a good effort to collect improved diffraction data and to obtain a better atomic model. It is likely that the authors could improve the diffraction quality by optimization of the purification of the complex, crystallization and freezing conditions. Moreover, data collection at a microfocus beamline may improve the limiting resolution of the data.
 
@@ -156,9 +150,7 @@ The structure is not twinned. We inquired with the PDB and they stated that thei
 
 It is not unusual for the initial difference density for a large missing substructure to be imperfect just after molecular replacement and the first round of refinement. Many authors don’t show these maps for this reason, but we consider it the proper thing to do. The 2Fo-Fc map shown in the new Figure 4—figure supplement 1 shows an excellent fit for the TAR RNA. Of course, the 2Fo-Fc map is, like any such map, potentially subject to model bias. We showed the difference map as a main figure despite its aesthetic imperfection because it is completely unbiased and the TAR RNA is by far the largest feature in the difference map.
 
-There is in fact a density feature at the expected ARM position, however it is not possible to model it with confidence and so did not seem appropriate to speculate about it in the manuscript. The wording about the ARM density at the bottom of pg. 7 is slightly more hedged in the revised manuscript.10.7554/eLife.15910.023Author response image 4.Output of CTRUNCATEDOI: http://dx.doi.org/10.7554/eLife.15910.023
-
-DOI: http://dx.doi.org/10.7554/eLife.15910.023
+There is in fact a density feature at the expected ARM position, however it is not possible to model it with confidence and so did not seem appropriate to speculate about it in the manuscript. The wording about the ARM density at the bottom of pg. 7 is slightly more hedged in the revised manuscript.10.7554/eLife.15910.023Author response image 4.Output of CTRUNCATE
 
 Moreover, models derived from twinned diffraction data are much more prone to potential model bias than for data without twinning.
 

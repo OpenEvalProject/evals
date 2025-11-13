@@ -43,6 +43,168 @@ An earlier iteration of this study (https://arxiv.org/abs/2005.06303v2) based on
 
 To obtain a closer approximation of differences across research areas, we calculated the proportion of women authorships per journal specialty. As shown in Table 1, women are represented at lower rates across most specialty groupings in the COVID-19 sample as compared to the 2019 sample. The relative gap in women’s participation is most salient in infectious diseases, radiology, pathology, and public health. Importantly, none of these groups show extreme deviations from the overall trend. This suggests that the observed differences are not due to a journal-specialty bias, where specialties with a high representation of men produce the majority of COVID-19 research.
 
+**Table 1.**
+ Proportion of women authors on 2019 papers and COVID-19 papers by specialty.Number of observations, N, and proportion of women by author list position for journals grouped by their specialty. The grouped columns show results by journal specialty for COVID papers published in 2020 (four rightmost columns) in contrast to papers from the same journals in 2019. Only papers with a US-based first and/or last author and clear gender for first and last author are included.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Journal specialty</th>
+      <th colspan="4">2019 papers</th>
+      <th colspan="4">COVID-19 papers</th>
+    </tr>
+    <tr>
+      <th rowspan="2">N</th>
+      <th colspan="3">Proportion of women</th>
+      <th rowspan="2">N</th>
+      <th colspan="3">Proportion of women</th>
+    </tr>
+    <tr>
+      <th>First author</th>
+      <th>Full group</th>
+      <th>Last author</th>
+      <th>First author</th>
+      <th>Full group</th>
+      <th>Last author</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dermatology</td>
+      <td>1811</td>
+      <td>0.44</td>
+      <td>0.42</td>
+      <td>0.37</td>
+      <td>72</td>
+      <td>0.46</td>
+      <td>0.41</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Emergency medicine</td>
+      <td>1283</td>
+      <td>0.32</td>
+      <td>0.30</td>
+      <td>0.22</td>
+      <td>54</td>
+      <td>0.31</td>
+      <td>0.25</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>High impact general medicine</td>
+      <td>7142</td>
+      <td>0.41</td>
+      <td>0.42</td>
+      <td>0.39</td>
+      <td>194</td>
+      <td>0.31</td>
+      <td>0.37</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Infectious diseases</td>
+      <td>1404</td>
+      <td>0.45</td>
+      <td>0.42</td>
+      <td>0.34</td>
+      <td>44</td>
+      <td>0.20</td>
+      <td>0.32</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>Internal medicine</td>
+      <td>19,980</td>
+      <td>0.36</td>
+      <td>0.33</td>
+      <td>0.25</td>
+      <td>484</td>
+      <td>0.33</td>
+      <td>0.32</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Other basic sciences</td>
+      <td>6975</td>
+      <td>0.42</td>
+      <td>0.38</td>
+      <td>0.29</td>
+      <td>135</td>
+      <td>0.33</td>
+      <td>0.34</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Other clinical sciences</td>
+      <td>21,869</td>
+      <td>0.40</td>
+      <td>0.37</td>
+      <td>0.31</td>
+      <td>429</td>
+      <td>0.38</td>
+      <td>0.38</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Otolaryngology</td>
+      <td>1063</td>
+      <td>0.32</td>
+      <td>0.29</td>
+      <td>0.21</td>
+      <td>106</td>
+      <td>0.28</td>
+      <td>0.29</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Pathology</td>
+      <td>869</td>
+      <td>0.46</td>
+      <td>0.43</td>
+      <td>0.32</td>
+      <td>66</td>
+      <td>0.27</td>
+      <td>0.37</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Public health</td>
+      <td>11,015</td>
+      <td>0.47</td>
+      <td>0.41</td>
+      <td>0.35</td>
+      <td>99</td>
+      <td>0.33</td>
+      <td>0.41</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>Radiology</td>
+      <td>2262</td>
+      <td>0.37</td>
+      <td>0.33</td>
+      <td>0.27</td>
+      <td>60</td>
+      <td>0.25</td>
+      <td>0.28</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Surgery</td>
+      <td>9700</td>
+      <td>0.21</td>
+      <td>0.20</td>
+      <td>0.13</td>
+      <td>186</td>
+      <td>0.26</td>
+      <td>0.22</td>
+      <td>0.16</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 Prior research has raised concerns about women’s underrepresentation among authors of medical research, including both original research and commentaries (Clark et al., 2017; Hart and Perlis, 2019; Jagsi et al., 2006; Larson et al., 2019; Silver et al., 2018). Our study suggests that the COVID-19 pandemic might have amplified this gender gap in the medical literature. Specifically, we find that women constitute a lower share of first authors of articles on COVID-19, as compared to the proportion of women among first authors of all articles published in the same journals the previous year. However, our analysis also indicates that the first-author gender gap in COVID-19 research might have decreased during the past month of the pandemic. Our findings are consistent with a contemporaneous study of pre-prints (Vincent-Lamarre et al., 2020), which also found women to be under-represented.

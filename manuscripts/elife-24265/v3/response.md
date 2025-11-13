@@ -40,9 +40,7 @@ Next, we simplified the writing of the paper along with clarification of the dat
 
 We have expanded the section in the Discussion concerning medical settings in which IC and PC ratios might change.
 
-In addition, these studies are ongoing in our lab but the connection between different diseases of collecting ducts (obstruction, UTI, Renal Tubular Acidoses, Li exposure) and the underlying signaling pathways remains unexplored. We suspect a variety of signaling paradigms are recruited in different medical settings. In Author response image 1 we can see that PC cells have activated Wnt signaling (green), which most likely plays a role in Li exposure.10.7554/eLife.24265.030Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.24265.030
-
-DOI: http://dx.doi.org/10.7554/eLife.24265.030
+In addition, these studies are ongoing in our lab but the connection between different diseases of collecting ducts (obstruction, UTI, Renal Tubular Acidoses, Li exposure) and the underlying signaling pathways remains unexplored. We suspect a variety of signaling paradigms are recruited in different medical settings. In Author response image 1 we can see that PC cells have activated Wnt signaling (green), which most likely plays a role in Li exposure.10.7554/eLife.24265.030Author response image 1.
 
 Consequently, we comment on the few known physiological examples of perturbation of the IC-PC ratio, but there is much unknown.
 

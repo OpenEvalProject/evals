@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Social Neuroscience Laboratory, University of California, Los Angeles Los Angeles United States
+1. Social Neuroscience Laboratory, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 

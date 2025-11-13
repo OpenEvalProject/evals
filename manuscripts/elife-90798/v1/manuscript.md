@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05bxb3784 Institute of Biomedical Sciences, Academia Sinica Taipei Taiwan
-2. https://ror.org/00se2k293 Doctoral Degree Program of Translational Medicine, National Yang Ming Chiao Tung University and Academia Sinica Taipei Taiwan
-3. https://ror.org/05bqach95 Department of Chemistry, National Taiwan University Taipei Taiwan
+1. Institute of Biomedical Sciences, Academia Sinica Taipei Taiwan ([ROR:05bxb3784](https://ror.org/05bxb3784))
+2. Doctoral Degree Program of Translational Medicine, National Yang Ming Chiao Tung University and Academia Sinica Taipei Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
+3. Department of Chemistry, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
 
 † Corresponding author
 
 ## Abstract
 
-Certain bacteria demonstrate the ability to target and colonize the tumor microenvironment, a characteristic that positions them as innovative carriers for delivering various therapeutic agents in cancer therapy. Nevertheless, our understanding of how bacteria adapt their physiological condition to the tumor microenvironment remains elusive. In this work, we employed liquid chromatography-tandem mass spectrometry to examine the proteome of E. coli colonized in murine tumors. Compared to E. coli cultivated in the rich medium, we found that E. coli colonized in tumors notably upregulated the processes related to ferric ions, including the enterobactin biosynthesis and iron homeostasis. This finding indicated that the tumor is an iron-deficient environment to E. coli . We also found that the colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2), a host protein that can sequester the enterobactin. We therefore engineered E. coli in order to evade the nutritional immunity provided by LCN2. By introducing the IroA cluster, the E. coli synthesizes the glycosylated enterobactin, which creates steric hindrance to avoid the LCN2 sequestration. The IroA- E. coli showed enhanced resistance to LCN2 and significantly improved the anti-tumor activity in mice. Moreover, the mice cured by the IroA- E. coli treatment became resistant to the tumor re-challenge, indicating the establishment of immunological memory. Overall, our study underscores the crucial role of bacteria’s ability to acquire ferric ions within the tumor microenvironment for effective cancer therapy.
+Certain bacteria demonstrate the ability to target and colonize the tumor microenvironment, a characteristic that positions them as innovative carriers for delivering various therapeutic agents in cancer therapy. Nevertheless, our understanding of how bacteria adapt their physiological condition to the tumor microenvironment remains elusive. In this work, we employed liquid chromatography-tandem mass spectrometry to examine the proteome of E. coli colonized in murine tumors. Compared to E. coli cultivated in the rich medium, we found that E. coli colonized in tumors notably upregulated the processes related to ferric ions, including the enterobactin biosynthesis and iron homeostasis. This finding indicated that the tumor is an iron-deficient environment to E. coli. We also found that the colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2), a host protein that can sequester the enterobactin. We therefore engineered E. coli in order to evade the nutritional immunity provided by LCN2. By introducing the IroA cluster, the E. coli synthesizes the glycosylated enterobactin, which creates steric hindrance to avoid the LCN2 sequestration. The IroA-E. coli showed enhanced resistance to LCN2 and significantly improved the anti-tumor activity in mice. Moreover, the mice cured by the IroA-E. coli treatment became resistant to the tumor re-challenge, indicating the establishment of immunological memory. Overall, our study underscores the crucial role of bacteria’s ability to acquire ferric ions within the tumor microenvironment for effective cancer therapy.
 
 ## Introduction
 
@@ -33,43 +33,83 @@ In this work, we aimed to understand how bacteria modulate their physiological s
 
 ## Results
 
-## Tumor is an iron-deficient microenvironment for bacterial colonization
+### Tumor is an iron-deficient microenvironment for bacterial colonization
 
 While many bacteria are known to colonize and proliferate in the TME, it remains elusive how bacteria adapt to such a nutrition-limited environment as compared to a nutrition-rich one. To this end, we performed quantitative LC-MS/MS experiments to compare the proteome of E. coli colonized in the murine tumors or cultured in the rich medium (LB broth) (Figure 1—figure supplement 1). Not surprisingly, there are many more proteins enriched in the rich medium than in the tumor condition. The Venn diagram and the volcano blot revealed hundreds of protein IDs enriched in the rich medium condition (Figure 1a and b). The Gene Ontology (GO)-term analysis revealed that many of these proteins are associated with the machineries of biosynthetic processes, cell division, and energy production (Figure 1c), reflecting that the E. coli was under a highly proliferative state in the rich medium. Interestingly, there were also 71 proteins that were preferentially expressed in the tumor condition over the rich medium condition. The GO-term analysis and the hierarchical clustering revealed that many of these proteins are involved in the processes of enterobactin synthesis and iron ion homeostasis (Figure 1d and e, and Figure 1—figure supplement 2). Figure 1f showed that the individual proteins in these two processes were markedly up-regulated in the tumor condition. These proteins are known to be tightly controlled by the iron sensing system in E. coli, and only become up-regulated under the stress of iron deficiency (Seo et al., 2014). It is worth mentioning that while enterobactin facilitates the uptake of ferric ions into bacteria, the host immune cells can counteract by secreting a protein called LCN2, which possesses a specialized pocket to bind and sequester enterobactin (Fischbach et al., 2006). To investigate this possibility, we employed LC-MS/MS and analyzed the LCN2 expression in the tumors with or without E. coli colonization. Indeed, we observed a significant up-regulation of LCN2 expression in the tumors with E. coli inoculation (Figure 1g). Collectively, our data suggest that the tumor is an iron-deficient environment for E. coli colonization.
 
-## Cyclic-di-GMP-producing E. coli synergizes with iron chelators for cancer therapy
+![Figure 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-v1.jpg)
+
+**Figure 1.:** (a) The Venn diagram of the E. coli protein IDs identified in the rich medium and in the tumor microenvironment (TME). (b) The volcano plot of the E. coli protein IDs quantified in the rich medium and in the TME. (c) The Gene Ontology (GO)-term analysis of the protein IDs enriched in the rich medium condition. (d) The GO-term analysis of the protein IDs enriched in the tumor condition. (e) The hierarchical clustering analysis of the protein IDs identified in the rich medium and in the TME. Each column is a biological replicate. (f) Left: the fold changes of individual proteins in the iron ion homeostasis process. These proteins are involved in transporting or processing the iron ions. Right: the fold changes of individual proteins in the enterobactin biosynthesis process. (g) Label-free quantification of lipocalin 2 (LCN2) in the tumors with and without E. coli inoculation. The error bars represent mean ± SD. Statistical analyses were performed by Student’s t-test (**p<0.01).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The E. coli BL21(DE3) were harvested from rich medium and tumors, respectively, and subject to the liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The proteins involving enterobactin biosynthesis and iron ion homeostasis were enriched in the E. coli colonized in tumors. The STRING diagram was drawn for the representative proteins in these two processes. The node size represents the fold change (tumor/rich medium) of the protein determined by the label-free quantification method. The different interior colors of the nodes represent various biological processes defined by Gene Ontology (GO) terms. The lines indicate the existence of experimental evidence between the connected nodes.
+
+### Cyclic-di-GMP-producing E. coli synergizes with iron chelators for cancer therapy
 
 Based on the proteomic findings, we aimed to focus our therapeutic strategies on modulating the iron competition between bacteria and cancer cells in the tumor. First, we hypothesize that an iron chelator that lowers the effective pool concentration of iron may provide a selection pressure, which disfavors the growth of cancer cells over bacteria. We tested three iron chelators, deferoxamine, ciclopirox, and VLX600, which have been approved for clinical trials or medical applications (Lang et al., 2019; Qi et al., 2020; Fryknäs et al., 2016). All three chelators showed high cytotoxicity toward the cancer cells, suggesting the essential role of irons for the survival of mammalian cells (Figure 2a). On the other hand, E. coli can better tolerate these iron chelators at relatively high concentrations. Among them, VLX600 was the most potent drug against the cancer cells (IC50=0.33 μM) and provided the largest therapeutic window (280-fold difference) between the cancer cells and E. coli. In addition to the iron chelator, we also attempted to find approaches for counteracting the enterobactin sequestering function of LCN2. It has been reported that cyclic di-GMP (CDG) can block the binding between LCN2 and enterobactin, therefore, restoring the functionality of enterobactin (Li et al., 2015). In our bacterial culture study, we validated that the addition of CDG can enhance bacteria survival in the presence of LCN2 (Figure 2—figure supplement 1), thus prompting our effort to prepare CDG-expressing bacteria. We engineered the E. coli by introducing a plasmid that carries the gene of diguanylate cyclase (DGC), an enzyme responsible for catalyzing the biosynthesis of cyclic di-GMP (CDG) (Lv et al., 2019). We showed that the E. coli transformed with the DGC plasmid (hereafter referred to DGC-E. coli) actively synthesized CDG and secreted it into the supernatant as detected by the LC/MS-MS mass spectrometry (Figure 2b). It is worth noting that CDG is also a potent ligand for the STING pathway, which can stimulate anti-tumor immunity (Diner et al., 2013; Krasteva and Sondermann, 2017; Chattopadhyay et al., 2020). When applying the DGC-E. coli supernatant to the macrophages, the macrophages enhanced the IFN-β secretion, indicating the activation of the STING pathway by CDG (Figure 2c).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-v1.jpg)
+
+**Figure 2.:** (a) Toxicity profiles of various iron chelators against MC38 cancer cells and E. coli. (b) Identification of cyclic-di-GMP secretion from DGC-E. coli by liquid chromatography-tandem mass spectrometry (LC-MS/MS). The precursor ion and the fragmented product ions correspond to the correct molecule weights of cyclic di-GMP (CDG). (c) IFN-β secretion by RAW264.7 cells treated with the supernatants from wild-type E. coli or DGC-E. coli. (d) Schematic illustration of mouse treatments. The DGC-E. coli was intratumorally delivered on Day 0 and Day 9, whereas VLX600 was intravenously administrated every three days from Day 0 to Day 9. (e) Tumor growth curve for various treatment groups. The complete remission was only achieved in the CDG + VLX600 group (CR = 2/4). (f) The Kaplan-Meier analysis for different treatment groups. The mouse was considered dead when the tumor volume exceeded 1500 mm3. The error bars represent mean ± SD. Statistical analyses were performed by Student’s t-test (*p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** E. coli (1×104) were cultured in RPMI medium supplemented with LCN2 at 0.15 µM and Cyclic-di-GMP at 7.5 µM overnight. The number of survival bacteria were determined by plating the overnight culture on the LB agar plates. The survival rate was normalized to the no-treatment group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The mice cured by diguanylate cyclase (DGC)-E. coli and VLX600 combination therapy were re-challenged with the same cell line (MC38) subcutaneously at the opposite flank. No tumor growth was observed. The naïve mice were used as controls.
+
 We evaluated the anti-tumor activity of VLX600 and DGC-E. coli in a syngeneic mouse model. The MC38 tumor-bearing mice received VLX600 and/or DGC-E. coli as depicted in Figure 2d. The VLX600 monotherapy only marginally suppressed the tumor growth as compared to the PBS control (Figure 2e). The DGC-E. coli monotherapy, although inhibited the tumor progression to a certain degree, did not show superior efficacy than the wild-type E. coli without the DGC plasmid transformation. Strikingly, the combination of DGC-E. coli and VLX600 showed significantly improved efficacy as compared to the individual mono-therapies. The tumor sizes were greatly suppressed, and 2 out of 4 mice achieved complete remission (Figure 2e and f). Of note, the combination of the wild-type E. coli and VLX600 did not result in such an improved activity, indicating that the CDG expression contributed to bacteria’s synergism with the iron-chelating VLX600. The combination of CDG-expressing bacteria and VLX600 also established robust anticancer adaptive immunity as the mice cured by the combinatorial therapy showed no tumor development in a rechallenge study (Figure 2—figure supplement 2). These results highlight the benefit of enhancing anticancer bacterial therapy through nutritional immunity manipulation.
 
-## Salmochelin-secreting E. coli significantly impeded tumor growth
+### Salmochelin-secreting E. coli significantly impeded tumor growth
 
 Encouraged by the results shown above, we sought to engineer E. coli with a more specific iron-scavenging functionality to assess its benefit against nutritional immunity. In nature, bacteria have evolved a strategy to block LCN2 through the expression of glycosylated enterobactin or salmochelin (Fischbach et al., 2006). Some pathogenic E. coli strains carry a gene cluster called IroA, which consists of five genes to perform enterobactin glycosylation and processing. The sugars on the enterobactin create steric hindrance to the LCN2 pocket, thereby abolishing LCN2 binding. To investigate this effect, we cloned the IroA cluster into a plasmid and transformed it into a non-IroA-carrying E. coli strain BL21(DE3). A non-enterobactin-expressing △entE-E. coli strain, which is particularly susceptible to LCN2 binding, was employed for comparison. We incubated the E. coli with varying concentrations of LCN2 and measured their viability by colony formation assay. Figure 3a shows that the E. coli without the IroA plasmid transformation (referred as WT-E. coli) was sensitive to LCN2, whereas the E. coli transformed with the IroA plasmid (referred as IroA-E. coli) was significantly more resistant to LCN2. The IroA-E. coli also showed stronger potency in acquisition of the iron ions than the WT-E. coli while the LCN2 was presented in the environment (Figure 3b). In line with this observation, we found that the enterobactin (including the glycosylated form) extracted from the IroA-E. coli was more cytotoxic to the cancer cells than that extracted from the WT E. coli (Figure 3c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig3-v1.jpg)
+
+**Figure 3.:** (a) E. coli viability in varying concentrations of lipocalin 2 (LCN2) protein. The ΔentE strain, which could not generate enterobactin, was used as a negative control. (b) Iron-consuming ability of E. coli determined by the chrome azurol S (CAS) assay reagent. (c) Cytotoxicity of enterobactin on the MC38 colon cancer cells. The enterobactin was extracted from an equal supernatant volume of the wild-type (WT)-E. coli or the IroA-E. coli culture. The extraction buffer (DMSO) was used as a negative control. (d) Treatment schedule of IroA-E. coli in tumor-bearing mice. Two intratumoral injections were administered on Day 0 and Day 9. (e) Tumor growth curves across various treatment groups. (f) The Kaplan-Meier analysis for the mice in different treatment groups. (g) E0771 breast tumor growth curves for the different treatment groups. (h) Survival curves for mice in different treatment groups. (i) B16F10 melanoma tumor growth curves for the different treatment treatment groups. (j) Survival curves for mice in the different treatment groups. (k) The bacterial burden from the blood of mice on days 1, 3, and 7 following intravenous administration with different bacteria. (l) Whole blood cell analyses for the different treatment groups. The error bars represent mean ± SD. Statistical analyses were performed by one-way ANOVA (**p<0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The tumor growth curves of individual mice in MC38 tumor model (b) The tumor growth curves of individual mice in E0771 tumor model (c) The tumor growth curves of individual mice in B16F10 tumor model.
 
 In mouse models of colon, breast, and melanoma cancers, the IroA-E. coli was significantly more efficacious than the WT-E. coli. In a MC38 mouse colon cancer model, 6 out of 10 mice treated by IroA-E. coli achieved complete remission, whereas none of the mice treated by the WT-E. coli experienced a cure (Figure 3d–f, and Figure 3—figure supplement 1a). In two other mouse models of E0771 breast cancer and B16F10 melanoma, the IroA-E. coli demonstrated improved anti-tumor ability as compared to WT bacteria (Figure 3g–j, and Figure 3—figure supplement 1b–c). It should be pointed out LCN2 expression has been shown to elevate the aggressiveness of breast (Yang et al., 2009), melanoma (Adler et al., 2023), and colon cancers (Chaudhary et al., 2021), suggesting that WT bacteria may show reduced anticancer activity in more aggressive cancer types due to higher iron competition. Overall, we showed that the IroA cluster equips E. coli with an effective iron-scavenging capability, exerting a potent anti-tumor effect in the LCN2-rich tumor microenvironment.
 
 To evaluate the safety of IroA-E. coli in comparison to WT bacteria, we intravenously administered the bacteria and conducted serial whole blood analyses on days 1, 3, and 7 post-injection to assess bacterial burden and blood cell counts (Figure 3k–l). For both WT-E. coli and IroA-E. coli, bacterial burden was undetectable in the blood. Additionally, whole blood cell analysis indicated that IroA-E. coli did not adversely affect the immune system within the circulatory system compared to WT-E. coli. By day 7, all treatment groups had comparable blood cell counts to the untreated (UT) groups. These findings demonstrate that IroA-E. coli could enhance anti-tumor treatment without incurring additional risks of bacteremia or sepsis relative to WT-E. coli.
 
-## IroA-E. coli is less iron-deficient than WT-E. coli in the tumor microenvironment
+### IroA-E. coli is less iron-deficient than WT-E. coli in the tumor microenvironment
 
 Because the salmochelin secreted by IroA-E. coli is resistant to the sequestration of LCN2, we speculated that IroA-E. coli could have ameliorated the iron deficiency problem in the TME. To verify this speculation, we quantitatively compared the proteome of WT-E. coli and IroA-E. coli colonized in the tumors (Figure 4a). The GO-term analysis revealed that the many proteins enriched in WT-E. coli belong to the enterobactin biosynthesis process and the iron homeostasis. Figure 4b and Figure 4c showed the fold changes of the individual proteins in these two terms. Strikingly, all of these proteins were expressed at a much higher level in WT-E. coli than in IroA-E. coli. These results suggest that IroA-E. coli was less stressed by the iron-deficient environment in the TME, which is in accordance with IroA-E.coli’s superior iron-scavenging ability from the glycosylated enterobactin. Besides the proteome of E. coli, we also examined the proteome changes in the host cells. We found that two iron-related proteins in mice, transferrin and transferring receptor, were elevated in the IroA-E. coli treatment as compared to the WT-E. coli treatment (Figure 4d). These two proteins are known to be up-regulated when the cells sense a lack of iron in the environment (Ponka and Lok, 1999; Theil, 1990; Ponka et al., 2015). Our finding corroborates a competitive scenario between the host cells and E. coli where the potent acquisition of ferric ion by IroA-E. coli posed an iron-deficient stress to the host cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig4-v1.jpg)
 
-**Figure 4.:** -E. coli and wild-type (WT)-E. coli in the tumor microenvironment (TME).(a) Volcano plot analysis between the proteomes of WT-E. coli and IroA-E. coli in the mouse tumors. (b) Fold changes of the proteins involved in the iron ion homeostasis. All the fold changes are >1. (c) Fold changes of the proteins involved in the enterobactin biosynthetic process. All the fold changes are >1. (d) Fold changes of transferrin and transferring receptor in the tumor.
+**Figure 4.:** (a) Volcano plot analysis between the proteomes of WT-E. coli and IroA-E. coli in the mouse tumors. (b) Fold changes of the proteins involved in the iron ion homeostasis. All the fold changes are >1. (c) Fold changes of the proteins involved in the enterobactin biosynthetic process. All the fold changes are >1. (d) Fold changes of transferrin and transferring receptor in the tumor.
 
-## Tumor suppression by iron-scavenging IroA-E. coli establishes anticancer adaptive immunity
+### Tumor suppression by iron-scavenging IroA-E. coli establishes anticancer adaptive immunity
 
 Given that the IroA-E. coli treatment achieved complete tumor remission in multiple tumor models, we sought to investigate whether it also triggered adaptive immune responses against cancers. For the MC38-burdened mice that achieved complete tumor remission upon IroA-E. coli treatment, the mice were re-challenged with MC38 cancer cells 6 weeks following tumor eradication. The absence of tumor growth upon rechallenge indicates the establishment of robust anticancer adaptive immunity (Figure 5a), which led us to further analyze the tumor-infiltrating lymphocytes (TILs) in the mice treated by PBS, WT-E. coli, IroA-E. coli. We found that the TILs, especially the CD8+ T cells, were elevated in the IroA-E. coli group compared to the WT-E. coli group (Figure 5b), highlighting the superior capacity of IroA-E. coli treatment towards enhancing CD8+ T cell infiltration into the tumor microenvironment. The enhanced CD8+ T cell infiltration can be attributed to the prolonged intratumoral colonization by the IroA-E. coli (Figure 5—figure supplement 1), which can confer sustained immune stimulation for immune cell recruitment. We further performed a CD8+ T-cell depletion study, which showed that the anti-tumor activity of IroA-E. coli was partially weakened upon anti-CD8 depletion (Figure 5c). These results demonstrate that the robust tumor suppression by the IroA-E. coli therapy can be attributed in part to the elicitation of tumor-specific cytotoxicity T cells, which can in turn provide durable anticancer immunity following bacterial clearance.
 
-## Systemic delivery of IroA-E. coli and oxaliplatin show synergistic tumor suppression
+![Figure 5.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig5-v1.jpg)
+
+**Figure 5.:** (a) The mice cured by IroA-E. coli were re-challenged with a subcutaneous inoculation of 2.5×105 MC38 cells. No tumor formation was observed. The naïve mice were used as controls. (b) The proportions of tumor-infiltrating CD4+ and CD8+ T cells in different treatment groups. (c) The tumor-bearing mice were treated with IroA-E. coli in the presence or absence of the anti-CD8 depletion antibody. (d) Survival curves of mice in different treatment groups. The error bars represent mean ± SD. Statistical analyses were performed by one-way ANOVA (**p<0.01, ***p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The bacteria were intratumorally delivered to tumor-bearing mice for 15 days. The tumors were collected and homogenized for measuring the bacteria number. The number of survival bacteria was determined by plating the overnight culture on the LB agar plates.
+
+### Systemic delivery of IroA-E. coli and oxaliplatin show synergistic tumor suppression
 
 It has been reported that E. coli possesses great tumor-targeting ability following intravenous injection in mice due to the hypoxic and immune-suppressive tumor microenvironment. Our previous study has also shown that the combination of E. coli and oxaliplatin synergistically suppresses the tumor growth (Lim et al., 2024). We, therefore, attempted to apply IroA-E coli and oxaliplatin for cancer treatment using a systemic delivery approach as depicted in Figure 6a. All mice maintained over 90% of their weights and remained active and healthy during the course of the treatments (Figure 6b). Unlike the intratumoral injection, the intravenous injection of E. coli, either the wild-type or the IroA transformant, resulted in subdued anti-tumor efficacy (Figure 6c–e). Also, the monotherapy of oxaliplatin only slightly inhibited the tumor growth. The combination of oxaliplatin with the wild-type E. coli delayed the tumor progression but did not achieve complete remission. Remarkably, the combination of oxaliplatin and IroA-E. coli significantly suppressed the tumor growth and achieved complete remission in 1 out of 4 mice. Overall, our data revealed that the systemic delivery of IroA-E. coli was synergistic with the oxaliplatin chemotherapy in the mouse tumor models.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig6-v1.jpg)
 
-**Figure 6.:** -E.coli and oxaliplatin.(a) The scheme of the systemic delivery of IroA-E. coli and oxaliplatin in the tumor-bearing mice. (b) The alteration of mouse weights during the treatment course. (c) Survival curves of the mice in various treatment groups. (d) The average tumor growth curves of different treatment groups. (e) The tumor growth curves of individual mice in (d). The error bars represent mean ± SD. Statistical analyses were performed by one-way ANOVA (*p<0.05, **p<0.01, ****p<0.0001).
+**Figure 6.:** (a) The scheme of the systemic delivery of IroA-E. coli and oxaliplatin in the tumor-bearing mice. (b) The alteration of mouse weights during the treatment course. (c) Survival curves of the mice in various treatment groups. (d) The average tumor growth curves of different treatment groups. (e) The tumor growth curves of individual mice in (d). The error bars represent mean ± SD. Statistical analyses were performed by one-way ANOVA (*p<0.05, **p<0.01, ****p<0.0001).
 
 ## Discussion
 
@@ -81,52 +121,89 @@ Overall, our research revealed that the tug of war for iron plays a critical rol
 
 ## Materials and methods
 
-## Cancer cell strain and cultivation
+### Cancer cell strain and cultivation
 
 The MC38 murine colon cancer cells were cultured in DMEM supplemented with 10% FBS, 1% penicillin-streptomycin solution (100 U/ml), 1 mM sodium pyruvate, 10mM HEPES, and 1% MEM Non-Essential Amino Acids Solution (100X). RAW264.7 macrophage cells were cultured in DMEM supplemented with 10%FBS, and 1% penicillin-streptomycin solution (100 U/ml). All cell lines were maintained in a humidified incubator at 37°C and 5% CO2.
 
-## Mouse experiments
+### Mouse experiments
 
 All animal experiments were conducted under specific pathogen-free conditions according to the guidelines approved by the Animal Care and Usage Committee of Academia Sinica. Mice were housed at a temperature of 19–23°C with a 12-hr light-dark cycle and a humidity of 50–60%. A maximum of five mice were housed in a single individually ventilated cage with soft wood for nesting. Tumor dimensions were measured using a caliper, and tumor volume was calculated using the following formula: 0.52 x ((tumor length +tumor width)/2)3. Mice aged 6–10 weeks were subcutaneously injected with either 5×10⁵ MC38 murine colon cancer cells, 5×10⁵ E0771 breast cancer cells, or 1×10⁵ B16F10 melanoma cancer cells suspended in 100 µL PBS at the right flank. The Escherichia coli strain BL21(DE3) was cultured in LB medium at 37°C overnight. The overnight cultures were diluted 100-fold in fresh LB medium and incubated at 37°C for ~3 hr until the log phage. Prior to the intratumoral injection, the bacteria density was determined by measuring the OD600 (1 OD = 4×108 CFU/ml). For the proteomic experiment, the tumor-bearing mice were intratumorally injected with 4×108 BL21(DE3) in 50 µL PBS when the tumor volumes reached approximately 150 mm3. The tumors were harvested the following day for the LC-MS/MS analysis. For the intratumor-injection-based therapeutic experiment, the tumor-bearing mice were treated when the tumor volume reached ~150 mm3. The tumor-bearing mice were intratumorally injected with 4×108 BL21(DE3) on day 0 and day 9. VLX 600 (4.5 mg/kg) was administered via intravenous injection every three days for a total of four injections. For the intravenous-injection-based therapeutic experiment, the tumor-bearing mice were intravenously injected with 1×108 BL21(DE3) in 100 µL PBS every three days for four times. The Oxaliplatin (5 mg/kg) was administered intraperitoneally every three days for a total of five injections. For the CD8+ T cell depletion experiment, the mice received intraperitoneal injections of 100 µg anti-mouse CD8α antibodies (BioXCell, Cat# BE0061) on days −6,–2, 2, 6, and 10, along with the intratumoral injections of 4×10⁸ BL21(DE3) on days 0 and 9. For tumor re-challenge study, MC38-burdened mice following bacterial therapy were subcutaneously injected with 5×10⁵ MC38 murine colon cancer cells for monitoring. Naïve mice were challenged similarly as a control. Mice were considered dead and euthanized when the tumor reached a volume of 1500 mm3. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (Protocol#23-07-2027) of Academia Sinica.
 
-## Proteomics sample preparation
+### Proteomics sample preparation
 
 For the tumor-colonized bacteria, the tumors were excised, and homogenized, and processed to extract intratumoral bacteria cells. Red blood cells were removed using RBC lysis buffer. The mouse cells were removed through low-speed centrifugation at 1200 g for 2 min three times. The E coli was collected by centrifugation at 4500 g for 20 min. The samples were lysed using 4% SDS, 100 mM Tris-HCL (pH 9), and 1 x protease inhibitor cocktail set III. The cell lysates were heated at 95°C for 5 min and sonicated for 15 min using a Bioruptor Plus (Diagenode). The supernatant was collected after centrifugation at 18,000 g for 30 min at 4°C. Approximately 50 µL supernatant was mixed with 200 µL methanol, 50 µL chloroform, and 150 µL double-distilled water. The aqueous phase was removed after sitting the sample at room temperature for 10 min. Subsequently, the sample was mixed with another 150 µL methanol. The pellet was collected, dried for 20 min, and resuspended in 8 M urea and 50 mM triethylammonium bicarbonate buffer. The samples were reduced with 10 mM DTT, alkylated with 50 mM IAA, and digested using LysC and trypsin. Following acidification, the supernatant was loaded onto the SDB-XC StageTips (Rappsilber et al., 2007) and eluted by 80% ACN containing 0.1%TFA. The sample was lyophilized and stored at –20°C before further LC-MS/MS analysis. For the bacteria grown in the rich medium, the E. coli strain BL21(DE3) was cultured in LB medium at 37°C overnight. The overnight culture was diluted 100-fold in fresh LB medium and incubated at 37°C until the log phage (OD = 0.6). The bacteria were harvested by centrifugation and treated similarly to the bacteria harvested from tumors.
 
-## LC-MS/MS experiments
+### LC-MS/MS experiments
 
 The sample was loaded onto the trap column (2 cm ×75 μm i.d., Symmetry C18), and then separated on a nanoACQUITY UPLC System (Waters, USA) equipped with a 25 cm ×75 μm i.d. BEH130 C18 column (Waters, USA) using a 5–35% buffer B (buffer A: 0.1% formic acid; buffer B: 0.1% formic acid in acetonitrile) gradient as the separation phase and a flow rate of 300 nl/min. The total running time was 120 min. The mass spectrometric data were collected on a high-resolution Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific, Bremen, Germany) operating in the data-dependent mode. Full MS resolution was set to 60,000 at 200 m/z and the mass range was set to 350–1600. dd-MS2 resolution was set to 15,000 at 200 m/z. Isolation width was set to 1.3 m/z. Normalized collision energy was set to 28%. The LC-MS/MS data were matched with the human SwissProt database using the Mascot search engine v.2.6.1 (Matrix Science, UK) with the following parameters: the mass tolerance of precursor peptide was set to 10 ppm, and the tolerance for MS/MS fragments was 0.02 Da.
 
-## Proteomics data processing and statistical analysis
+### Proteomics data processing and statistical analysis
 
 Raw MS data were processed using MaxQuant version 2.0.1. Database search was performed with the Andromeda search engine through the Uniprot database (Cox et al., 2011). Both protein and peptide levels were filtered by a 1% false discovery rate (FDR). The variable modification setting included oxidation(M) and Acetyl (Protein N-term), and the fixed modification setting included carbamidomethyl(C). The ‘match between runs’ was set as 1 min, and the MaxQuant LFQ algorithm was employed for normalization. The statistical analysis was performed using Perseus version 1.6.15.0 and Prism version 8.0.2 (Tyanova et al., 2016). The proteinGroups output table from MaxQuant was utilized for proteomics analysis. The potential contaminant, reverse, and only-identified-by-site were filtered out. The LFQ intensity was log2-transformed and filtered for validity. NaN values were imputed, and bacterial cell LFQ intensity was normalized using a z-score. The LFQ intensity of bacterial cells was normalized using a z-score (n-average/standard deviation). A t-test with an FDR of 0.05 and S0 of 1 was performed to extract significantly different proteins. These proteins were uploaded to the DAVID database for biological interpretation, and the results were visualized in Prism. The raw data of LFQ intensity for significantly different proteins were averaged to calculate the difference in protein expression level.
 
-## Enterobactin extraction
+### Enterobactin extraction
 
 BL21(DE3) was cultured in the LB medium at 37℃ overnight. The overnight culture was 100-fold diluted to the M9 medium supplemented with 0.2% casamino acids, 0.2% glucose, 1 mM MgSO4, and 1 mg/mL vitamin B1 and grown for 20 hr. The bacteria were removed by centrifugation, and the supernatant was sterilized using a 0.22 μm filter. The cell-free supernatant was acidified to pH = 2 using 10 N HCl. An equal volume of ethyl acetate was added to the acidified supernatant and mixed using Intelli Mixer ERM-2L. The organic fraction was collected after 30 min incubation at room temperature and dried using a miVac centrifugal concentrator. All samples were resuspended in DMSO and stored at –20°C for further experiments.
 
-## Cytotoxicity assay of enterobactin
+### Cytotoxicity assay of enterobactin
 
 1×104 MC38 cells in a 96-well plate were treated with the enterobactin extracted from WT-E. coli or IroA-E. coli for 48 hr. The cell viability was measured using the Cell Counting Kit-8 (CCK-8) according to the manufacturer’s protocol. A cell-free mixture was used as a background reference, and the untreated cells were used as a control.
 
-## Characterization of cyclic-di-GMP (CDG) secreted from DGC-E. coli
+### Characterization of cyclic-di-GMP (CDG) secreted from DGC-E. coli
 
 The DGC plasmid carries the gene of the diguanylate cyclase fragment 82–248 residues from Thermotoga maritima with a single mutation of Arg158Ala. The BL21(DE3) bacteria transformed with the DGC plasmid were cultured in LB at 37°C overnight. The overnight cultures were 100-fold diluted to fresh LB supplemented with 0.1 mM IPTG and kanamycin (50 ug/ml) and cultured at 37°C for 20 hr. The bacteria were pelleted, and the supernatant was collected and filtered using a 0.22 µm strainer. The supernatant was analyzed by LC-MS/MS to identify the CDG.
 
-## Interferon-β quantification
+### Interferon-β quantification
 
 5×105 RAW264.7 cells in a 24-well plate were treated with the conditioned medium from DGC-E. coli or non-transformed E. coli for 18 hr. Subsequently, the cell culture medium was collected for IFN-β quantification. The IFN-β levels were measured using the Mouse IFN-beta ELISA kit (R&D, #P318019) following the manufacturer’s protocol.
 
-## Iron chelating assay
+### Iron chelating assay
 
 The iron uptake ability of bacteria was determined using chrome azurol S (CAS) assay (Louden et al., 2011). The BL21(DE3) cells with or without IroA transformation were cultured in the M9 medium at 37°C overnight. The bacteria were collected by centrifugation and washed twice with PBS. 108 bacteria were inoculated into fresh M9 medium with CAS reagent and different concentrations of Lcn2 protein and incubated at 37°C overnight. The A630 of the bacterial cultured medium was measured to quantify the iron-consuming ability of the bacteria.
 
-## Lipocalin 2 resistance assay
+### Lipocalin 2 resistance assay
 
 The IroA-E. coli or non-transformed E. coli was cultured overnight in the LB medium. Next day, the bacterial culture was diluted to fresh RPMI supplemented with 10% FBS by 100-fold and incubated at 37°C for 5 hr to reach the log phase. 105 bacteria were treated with different concentrations of LCN2 and incubated at 37°C for 20 hr. The live bacteria were quantified by serial tittering on LB agar plates.
 
-## Tumor-infiltrating lymphocyte (TIL) analysis
+### Tumor-infiltrating lymphocyte (TIL) analysis
 
 Tumor tissues were cut into small pieces in the digestion buffer (1 mL RPMI supplemented with 10% FBS, 0.33 mg collagenase type IV (Sigma, Cat#C5138), and 66 µg DNase I from bovine pancreas (Cyrusbiosicence, Cat#101-9003-98-9)) and transferred into a C tube followed by sample processing using gentleMACS. The cell suspensions were filtered through a 40 µm strainer. The RBC lysis buffer was added to the tumor suspension to remove red blood cells. The cells were then blocked using the CD16/32 Fc blocker for 5 min on ice. The T cells were stained with eFluor780 viability dye, PE-CD45, APC-CD4, and FITC-CD8a antibodies. The stained T cells were analyzed by flow cytometer (Attune NxT cytometer), and the data were processed using FlowJo software.
 
-## Antibodies
+### Antibodies
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Supplier</th>
+      <th>Catalog number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>anti-mouse CD16/32 Antibody</td>
+      <td>Biolegend</td>
+      <td>101301</td>
+    </tr>
+    <tr>
+      <td>PE anti-mouse CD45 Antibody</td>
+      <td>Biolegend</td>
+      <td>103105</td>
+    </tr>
+    <tr>
+      <td>APC anti-mouse CD4 Antibody</td>
+      <td>Biolegend</td>
+      <td>100516</td>
+    </tr>
+    <tr>
+      <td>FITC anti-mouse CD8a Antibody</td>
+      <td>Biolegend</td>
+      <td>100706</td>
+    </tr>
+    <tr>
+      <td>InVivoMAb anti-mouse CD8α</td>
+      <td>Bio X Cell</td>
+      <td>BE0061</td>
+    </tr>
+  </tbody>
+</table>

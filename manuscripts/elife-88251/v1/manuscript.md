@@ -23,23 +23,23 @@
 
 ### Affiliations
 
-1. https://ror.org/04zaypm56 Molecular Ecology Group (MEG), Water Research Institute (CNR-IRSA), National Research Council Verbania Italy
-2. https://ror.org/03tcx6c30 Laboratory for Integrative Biodiversity Research (LIBRe), Finnish Museum of Natural History (LUOMUS), University of Helsinki Helsinki Finland
+1. Molecular Ecology Group (MEG), Water Research Institute (CNR-IRSA), National Research Council Verbania Italy ([ROR:04zaypm56](https://ror.org/04zaypm56))
+2. Laboratory for Integrative Biodiversity Research (LIBRe), Finnish Museum of Natural History (LUOMUS), University of Helsinki Helsinki Finland ([ROR:03tcx6c30](https://ror.org/03tcx6c30))
 3. National Biodiversity Future Center Palermo Italy
-4. https://ror.org/048tbm396 Department of Life Sciences and Systems Biology, University of Turin Torino Italy
-5. https://ror.org/02qsmb048 University of Belgrade - Faculty of Biology Belgrade Serbia
-6. https://ror.org/00ynnr806 Royal Botanic Gardens London United Kingdom
-7. https://ror.org/02n415q13 School of Molecular and Life Sciences, Curtin University Perth Australia
-8. https://ror.org/02hmy9x20 Department of Aquaculture, Isparta University of Applied Sciences Isparta Turkey
-9. https://ror.org/05p7z7s64 CIIMAR, Interdisciplinary Centre of Marine and Environmental Research, University of Porto Matosinhos Portugal
-10. https://ror.org/02be6w209 Department of Biology and Biotechnologies “Charles Darwin”, Sapienza University of Rome Rome Italy
-11. https://ror.org/037wpkx04 CBMA – Centre of Molecular and Environmental Biology, Department of Biology, University of Minho Minho Portugal
-12. https://ror.org/01603fg59 Instituto de Investigaciones Marinas, CSIC, Eduardo Cabello Vigo Spain
-13. https://ror.org/02v6zg374 Department of Biodiversity and Evolutionary Biology, Museo Nacional de Ciencias Naturales Madrid Spain
-14. https://ror.org/040af2s02 Helsinki Lab of Interdisciplinary Conservation Science (HELICS), Department of Geosciences and Geography, University of Helsinki Helsinki Finland
-15. https://ror.org/040af2s02 Helsinki Institute of Sustainability Science (HELSUS), University of Helsinki Helsinki Finland
-16. https://ror.org/00nt41z93 CESAM – Centre for Environmental and Marine Studies, University of Aveiro Aveiro Portugal
-17. https://ror.org/05vghhr25 Biodiversity Unit, University of Turku Turku Finland
+4. Department of Life Sciences and Systems Biology, University of Turin Torino Italy ([ROR:048tbm396](https://ror.org/048tbm396))
+5. University of Belgrade - Faculty of Biology Belgrade Serbia ([ROR:02qsmb048](https://ror.org/02qsmb048))
+6. Royal Botanic Gardens London United Kingdom ([ROR:00ynnr806](https://ror.org/00ynnr806))
+7. School of Molecular and Life Sciences, Curtin University Perth Australia ([ROR:02n415q13](https://ror.org/02n415q13))
+8. Department of Aquaculture, Isparta University of Applied Sciences Isparta Turkey ([ROR:02hmy9x20](https://ror.org/02hmy9x20))
+9. CIIMAR, Interdisciplinary Centre of Marine and Environmental Research, University of Porto Matosinhos Portugal ([ROR:05p7z7s64](https://ror.org/05p7z7s64))
+10. Department of Biology and Biotechnologies “Charles Darwin”, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
+11. CBMA – Centre of Molecular and Environmental Biology, Department of Biology, University of Minho Minho Portugal ([ROR:037wpkx04](https://ror.org/037wpkx04))
+12. Instituto de Investigaciones Marinas, CSIC, Eduardo Cabello Vigo Spain ([ROR:01603fg59](https://ror.org/01603fg59))
+13. Department of Biodiversity and Evolutionary Biology, Museo Nacional de Ciencias Naturales Madrid Spain ([ROR:02v6zg374](https://ror.org/02v6zg374))
+14. Helsinki Lab of Interdisciplinary Conservation Science (HELICS), Department of Geosciences and Geography, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+15. Helsinki Institute of Sustainability Science (HELSUS), University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+16. CESAM – Centre for Environmental and Marine Studies, University of Aveiro Aveiro Portugal ([ROR:00nt41z93](https://ror.org/00nt41z93))
+17. Biodiversity Unit, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
 
 † Corresponding author
 
@@ -54,6 +54,18 @@ Human relationships with biodiversity trace back to our dawn as a species (Wilso
 Widespread evidence indicates that biodiversity research has concentrated on certain lineages, habitats, and geographic regions over others (Clark and May, 2002; García-Roselló et al., 2023; Hortal et al., 2015; Mammola et al., 2023; Šmíd, 2022; Troudet et al., 2017). At the species level, for example, research interests and conservation efforts are often skewed toward vertebrates rather than other animals (Cardoso et al., 2011a; Cardoso et al., 2011b; Leather, 2013), plants (Adamo et al., 2022; Balding and Williams, 2016), or fungi (Gonçalves et al., 2021; Oyanedel et al., 2022). Furthermore, scientific and societal attention towards species may correlate, to some degree, with aesthetic features (Adamo et al., 2021; Borgi et al., 2014; Ward et al., 1998), online popularity (Correia et al., 2016; Mammola et al., 2020), and phylogenetic proximity to humans (Miralles et al., 2019), although the relative importance of these factors is likely to vary across cultural settings and societal groups. Indeed, even the selection of model organisms is not always based on functional criteria (e.g., ease of growth under controlled conditions, cell size, genome size, ploidy level; Hedges, 2002) and instead may be driven by economic, affective, cultural, or other subjective attributes (Dietrich et al., 2020).
 
 Importantly, most attempts to quantify which features make species attractive to humans have focused on vertebrates—typically mammals and birds (Santangeli et al., 2023; Haukka et al., 2023; Miralles et al., 2019). This means we now possess a growing understanding of research biases for selected taxa (Guedes et al., 2023; Šmíd, 2022; Sumner et al., 2018; Zvaríková et al., 2021), but we still lack a comprehensive picture of cross-taxa features that could drive human interest in biodiversity. Here, we explored research and societal interest in organisms across the Tree of Life, asking two general questions: What are the species-level and cultural drivers of scientific interest throughout the Tree of Life? And, how do those drivers differ from those explaining societal interest? To this end, we randomly sampled 3019 species spanning 29 Phyla and Divisions (Figure 1; Figure 1—figure supplement 1). We sourced the number of scientific papers focusing on each species as a measure of scientific interest (Figure 1—figure supplement 2A), and the number of views of the Wikipedia page of each species as a measure of societal interest (Figure 1—figure supplement 2B). Furthermore, we collected species-level traits referring to morphology and ecology (size, coloration, range size, biome, and taxonomic uniqueness) and cultural factors reflecting how humans perceive and interact with biodiversity (usefulness and harmfulness for humans, presence of a common name in English, phylogenetic distance to humans, International Union for Conservation of Nature [IUCN] conservation status).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88251/elife-88251-fig1-v1.jpg)
+
+**Figure 1.:** (A) Relationship between number of views in Wikipedia (popular interest) and number of papers in the Web of Science (scientific interest) for each species. Both axes are log-scaled to ease visualization. Density functions are provided for both scientific (above scatter plot) and societal interests (right of scatter plot) to illustrate the distribution of values. Color coding refers to the three realms of Animalia, Fungi, and Plantae. The regression line is obtained by fitting a Gaussian generalized additive model through the data (F1,3017 = 2497.5; p<0.001). The farther away a dot is from the fitted line, the more the attention is unbalanced toward either scientific (negative residuals) or societal interest (positive residuals). (B) Distribution of negative and positive residuals (from the regression line in A) across the species sampled for each Phylum/Division. Phyla/Divisions with only one sampled species are represented with dots.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88251/elife-88251-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Maps are based on the centroid of the distribution of each species, hence only species for which distribution points were available in the Global Biodiversity Information Facility are depicted (89%, n = 2687). (A) Density of distribution centroids across all groups; (B) distribution of centroids for animals; (C) distribution of centroids for plants; and (D) distribution of centroids for fungi.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88251/elife-88251-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Jittered points are the actual values; boxplots summarize median and quantiles. Both axes are log-scaled to ease visualization.
 
 ## Results
 
@@ -77,7 +89,7 @@ We found that the strongest drivers of research and societal interest are utilit
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88251/elife-88251-fig4-v1.jpg)
 
-**Figure 4.:** A) and societal (B) interest for Arthopoda, Chordata, and Tracheophyta.Forest plots summarize the estimated parameters based on negative binomial generalized linear mixed models (Equation 2). Baseline levels for multilevel factor variables are: Domain (Multiple) and IUCN (Unknown). Error bars mark 95% confidence intervals. Variance explained is reported as marginal R2, that is, those explained by fixed factors. Asterisks (*) mark significant effects (α = 0.01). Estimated regression parameters and p-values are provided in Supplementary file 1b (A) and Supplementary file 1c (B).
+**Figure 4.:** Forest plots summarize the estimated parameters based on negative binomial generalized linear mixed models (Equation 2). Baseline levels for multilevel factor variables are: Domain (Multiple) and IUCN (Unknown). Error bars mark 95% confidence intervals. Variance explained is reported as marginal R2, that is, those explained by fixed factors. Asterisks (*) mark significant effects (α = 0.01). Estimated regression parameters and p-values are provided in Supplementary file 1b (A) and Supplementary file 1c (B).
 
 Species with a common name also attracted more scientific and popular interest, matching previous studies (e.g., Vardi et al., 2021). This result should be interpreted with caution, however, because we considered only whether a species possesses an English common name. While we recognize the limitations of this approach, English was selected due to the lack of a comprehensive list of common species names in multiple languages, and because most species that are relevant in other cultural and language settings are also likely to have been attributed English common names as part of legislative, scientific, and other societal processes. It must also be noted that this variable entails some circularity, given that humans tend to assign common names to popular species and/or those that are relevant to humans in some way. For example, a recent study showed that across nine local villages in Mozambique, species perceived as dangerous were more likely to have a local name (Farooq et al., 2021). Interestingly, this speaks about the possible existence of specific interactions among different cultural traits and cultural settings which our results do not capture and could be further explored with targeted studies.
 
@@ -95,7 +107,7 @@ Global biodiversity is disappearing at an accelerating pace, not only from the p
 
 ## Materials and methods
 
-## Species sampling
+### Species sampling
 
 We carried out random stratified sampling of the eukaryotic multicellular Tree of Life (Animalia, Fungi [restricted to Agaricomycetes], and Plantae [excluding unicellular Algae]) using the Global Biodiversity Information Facility (GBIF) backbone taxonomy. To our knowledge, GBIF is the only available backbone taxonomy covering all our target groups using a congruent classification. Note that we restricted our analyses to pluricellular organisms to bypass issues with the unstable taxonomic classification of protists (Ladle et al., 2019; Adl et al., 2012; Adl et al., 2019) and the challenge of extracting comparable traits between unicellular and multicellular eukaryotes.
 
@@ -103,7 +115,7 @@ Initially, we cleaned the GBIF backbone taxonomy by subselecting only accepted n
 
 This random sampling procedure yielded a database consisting of 3019 species (Figure 1—figure supplement 2C). Despite the initial cleaning procedure of the dataset, due to the fact that some taxonomic names were not properly labeled in GBIF, 129 of the sampled names were synonyms, doubtful (nomina dubia), or fossils. We therefore manually inspected all records and dealt with taxonomic issues. Each expert involved in the study made decisions for their focal organisms on the invalid taxonomic names, for example, reclassifying subspecies to the species rank, replacing eventual synonyms with the currently valid name, and substituting fossils with extant species.
 
-## Measures of scientific and societal interest
+### Measures of scientific and societal interest
 
 We collected data on two indicators of human attention toward species, pertaining to scientific and societal interest.
 
@@ -111,11 +123,11 @@ We measured scientific interest as the number of articles indexed in the Web of 
 
 We measured societal interest for each species as the total number of pageviews across the languages where the species is represented on Wikipedia. Wikipedia is one of the top 10 most visited websites in the world (https://www.similarweb.com/top-websites/, accessed on February 3, 2023) and is often visited as a source of information for wildlife enthusiasts, many species containing a page in this digital encyclopedia. Wikipedia data has been widely used to explore patterns of popular interest in biodiversity, and total pageviews may be a particularly useful metric in instances where some pages have very few visits overall (Vardi et al., 2021). To extract the number of pageviews for each species, we first obtained the identification number of each species from the Wikidata knowledge base using the R package ‘WikidataQueryServiceR’ version 1.0.0 (Popov, 2020). We then used each species’ identifier to compile a list of available Wikipedia pages for the species in any language using the same query service. Once we identified the full list of Wikipedia pages for the species, we used the R package ‘pageviews’ version 0.5.0 (Keyes and Lewis, 2020) to extract monthly user pageviews (i.e., excluding views by bots) for the period between January 1, 2016, and December 31, 2021.
 
-## Species-level traits and associated hypotheses
+### Species-level traits and associated hypotheses
 
 To investigate the relationship between species-level traits, cultural factors, and scientific and popular interest, we selected a set of candidate variables related to species morphology, ecology, and scientific and societal preferences of humans. Extracting comparable traits across distantly related taxa is challenging (Chichorro et al., 2022; Palacio et al., 2022; Weiss and Ray, 2019), thus we restricted the analysis to a small number of scalable traits and kept trait resolution low (i.e., we scored most traits as categorical variables rather than on continuous scales). Importantly, to ensure cross-taxon comparability of traits, we made specific decisions on how to score traits for the different organisms (details of decisions made and sources of traits are provided in Appendix 1).
 
-## Species-level traits
+### Species-level traits
 
 First, we extracted the average body size for each species (in mm). Size is among the most conspicuous and ubiquitous traits in ecology, relating to diverse body functions and ecological strategies (Calder, 1996; Peters, 1986). Furthermore, we expected an innate preference for large-sized species among scientists, the media, and the public alike (Berti et al., 2020; Hall et al., 2011; Mammola et al., 2017; McClain et al., 2015). We also extracted the average size of males and females to calculate sexual size dimorphism as a possible driver of interest. However, as sex-specific size values were available for <20% of species in the database, we ended up excluding this variable from analyses.
 
@@ -125,7 +137,7 @@ For each species, we calculated taxonomic uniqueness as the number of species in
 
 We marked the main domain inhabited by each species, namely ‘freshwater,’ ‘marine,’ ‘terrestrial,’ or ‘multiple.’ Finally, we used the R package ‘rgbif’ version 3.7.1 (Chamberlain et al., 2022) to extract distribution points for each species. As in Adamo et al., 2021, we expressed the geographic range size of each species as the average distance between occurrence points. This measure (dispersion) is less influenced by sampling effort than commonly used proxies of range size (e.g., minimum convex polygon or the area of occupancy). Hence, it should be better suited when dealing with opportunistically collected occurrence data such as in GBIF (Hughes et al., 2021). Geographic range size is not only a measure of ecological commonness (Gaston, 2011), but also reflects species’ accessibility and familiarity to scientists and the general public. Indeed, there is a tendency for humans to be more interested in wildlife species with which they have direct experience (Ladle et al., 2016), for example, common species that are available to us through direct experience (Adamo et al., 2021; Schuetz and Johnston, 2019). Using the GBIF coordinates, we also extracted the coordinate of the centroid of each species’ range, providing a rough indication of their geographic provenance (Figure 1—figure supplement 1). Using the FADA Faunistic Regions database (Balian et al., 2008) (available at https://www.marineregions.org/; accessed on November 1, 2022), we extracted the biogeographic region in which each species occurs (Afrotropical, Antarctic, Australasian, Nearctic, Neotropical, Oriental, Pacific, and Palaearctic) based on the centroid coordinates.
 
-## Cultural features
+### Cultural features
 
 To express cultural knowledge and relationships between humans and wildlife, we scored, as binary variables (Yes/No), whether (i) a species has a popular name in English (Common name); (ii) is an established scientific model organism beyond ecology and evolution (Model organism); (iii) is harmful to humans in some way—for example, crop pests, invasive non-native species, species potentially dangerous to humans (large carnivores, venomous snakes, etc.) (Harmful to human); (iv) has any commercial and/or cultural use (used as pets, as food, for pharmaceuticals, etc.) (Human use); and (v) whether it has been assessed by the IUCN. Although we acknowledge that for the variables Harmful to human and Human use further subcategories could be used (e.g., crop pests, invasive, and harmful to humans may elicit different reactions and interests from a scientific and societal perspective), we decided not to split them due to sample size limitations.
 
@@ -133,11 +145,15 @@ We obtained divergence time (in millions of years) between each organism and H. 
 
 Finally, we expressed the conservation status of each species as their IUCN extinction risk, which we extracted from the IUCN Red List of Threatened species using the R package ‘rredlist’ version 0.7.0 (Chamberlain, 2022). We assigned each species to one of the following categories: Extinct (EX), Extinct in the Wild (EW), Critically Endangered (CR), Endangered (EN), Vulnerable (VU), Near Threatened (NT), Least Concern (LC), Data Deficient (DD), and Not evaluated (NE). To balance the factor levels, we later re-grouped the different categories into three levels: ‘Threatened’ (EX, EW, CR, EN, and VU), ‘Non-Threatened’ (NT and LC), and ‘Unknown’ (DD and NE).
 
-## Data analysis
+### Data analysis
 
 We used regression analyses (Zuur et al., 2016) to test whether there were consistent relationships between scientific (number of scientific papers) and societal (number of views in Wikipedia) interest in an organism and species-level traits and cultural features. We carried out all analyses in R version 4.1.0 (R Development Core Team, 2021). We used the package ‘glmmTMB’ version 1.1.1 for modeling (Brooks et al., 2017) and ‘ggplot2’ version 3.3.4 (Wickham, 2016) for visualizations. In all analyses, we followed the general approach by Zuur et al., 2016 for data exploration, model fitting, and validation. For data exploration, we visually inspected variable distribution, the presence of outliers, collinearity among continuous predictors (using pairwise Pearson’s correlations), and the balance of factor levels (Zuur et al., 2010). For model validation, we used the suite of functions of the package ‘performance’ version 0.0.0.6 (Lüdecke et al., 2020) to visually inspect model residuals and evaluate overdispersion, zero-inflation, and multicollinearity. Given the large sample size of our dataset, we used a conservative approach in the identification of significance, setting an alpha level for significance at 0.01 instead of the usually accepted 0.05 (Benjamin et al., 2018). Furthermore, in interpreting and discussing results, we gave more relevance to explained variance and effect sizes rather than significance (Muff et al., 2022).
 
-In a first set of models, we explored the role of species-level and cultural traits in explaining scientific and popular interest (dependent variables). As a result of data exploration, we log-transformed the variables Organism size, Range size, Family uniqueness, and Phylogenetic distance to humans to homogenize their distribution and minimize the effect of a few outlying observations. We dropped the categorical variable Model organism because it was highly unbalanced—our random sample of species across the Tree of Life only captured 15 species classified as model organisms. Likewise, the variables blue colored and red colored were unbalanced and, to a certain extent, associated with the variable Colorful. We used only the latter in the analyses. Finally, we scaled continuous variables to a mean of zero and a standard deviation of 1 to facilitate model convergence and interpretation of the effect sizes. We fitted the initial models assuming a Poisson error structure (suitable for count data) and a log-link function (ensuring positive fitted data). The models had the formula (in R notation):(1)y∼OrganismSize+Colorful+Rangesize+Domain+Taxonomicuniqueness+Commonname+IUCN+Humanuse+Harmfultohuman+Phylogeneticdistancetohumans+(1|Phylum/Class/Order)+(1|Biogeographicregion)
+In a first set of models, we explored the role of species-level and cultural traits in explaining scientific and popular interest (dependent variables). As a result of data exploration, we log-transformed the variables Organism size, Range size, Family uniqueness, and Phylogenetic distance to humans to homogenize their distribution and minimize the effect of a few outlying observations. We dropped the categorical variable Model organism because it was highly unbalanced—our random sample of species across the Tree of Life only captured 15 species classified as model organisms. Likewise, the variables blue colored and red colored were unbalanced and, to a certain extent, associated with the variable Colorful. We used only the latter in the analyses. Finally, we scaled continuous variables to a mean of zero and a standard deviation of 1 to facilitate model convergence and interpretation of the effect sizes. We fitted the initial models assuming a Poisson error structure (suitable for count data) and a log-link function (ensuring positive fitted data). The models had the formula (in R notation):
+
+$$
+y∼OrganismSize+Colorful+Rangesize+Domain+Taxonomicuniqueness+Commonname+IUCN+Humanuse+Harmfultohuman+Phylogeneticdistancetohumans+(1|Phylum/Class/Order)+(1|Biogeographicregion)
+$$
 
 where y is either the number of articles in the Web of Science (Scientific interest) or the number of views in Wikipedia (Popular interest). We introduced random factors to take into account the non-independence of observations. We accounted for taxonomic relatedness among species with a nested random intercept structure (1 | Phylum / Class / Order), under the assumption that closely related species should share more similar traits than would be expected from a random sample of species. Likewise, we used the random intercept structure (1 | Biogeographic region) under the assumption that people from the same region, including researchers, might be geographically biased in their interests, that is, share common appreciation for similar species. Both models were overdispersed (scientific interest: dispersion ratio = 47.2; Pearson’s chi2=109874.8; p<0.001; popular interest: dispersion ratio = 632366.5; Pearson’s chi2=1471516950.1; p<0.001). Therefore, we fitted new models assuming a negative binomial distribution—that is, a generalization of Poisson distribution that loosens the assumption that the variance should be equal to the mean.
 
@@ -145,7 +161,11 @@ Model validation for the scientific interest model revealed the existence of a h
 
 Once the models were fitted and validated, we used variance partitioning analysis (Borcard et al., 1992) to estimate the relative contribution of species-level traits and cultural factors in determining the observed pattern of scientific and societal interest. We used variance explained (marginal R2) to evaluate the contribution of each variable and combination of variables to the research and societal attention each species receives by partitioning their explanatory power with the R package ‘modEvA’ version 2.0 (Barbosa et al., 2015).
 
-Next, we tested whether the importance of traits would change across the main groups of organisms by running three models within subsets of data corresponding to Arthropoda, Chordata, and Tracheophyta (i.e., the Phyla/Divisions with most observations). The structure of the models was(2)y∼OrganismSize+Colorful+Rangesize+Domain+Genusuniqueness+Commonname+IUCN+Humanuse+Harmfultohuman+(1|Class/Order)+(1|Biogeographicregion)
+Next, we tested whether the importance of traits would change across the main groups of organisms by running three models within subsets of data corresponding to Arthropoda, Chordata, and Tracheophyta (i.e., the Phyla/Divisions with most observations). The structure of the models was
+
+$$
+y∼OrganismSize+Colorful+Rangesize+Domain+Genusuniqueness+Commonname+IUCN+Humanuse+Harmfultohuman+(1|Class/Order)+(1|Biogeographicregion)
+$$
 
 The formula is essentially the same as Equation 1, but for the exclusion of Phylum from the random part (as we modeled at the Phylum/Division level) and Phylogenetic distance to humans from the fixed part (as we lacked enough resolution in the phylogenetic distance information within Phyla). We also used Genus uniqueness instead of Family uniqueness given that we modeled at the Phylum level. Also in this case, since Poisson models were overdispersed, we switched to a negative binomial distribution.
 

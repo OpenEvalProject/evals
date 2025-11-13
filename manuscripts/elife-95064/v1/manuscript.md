@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03gds6c39 MD Anderson Cancer Center UTHealth Graduate School of Biomedical Sciences Houston United States
-2. https://ror.org/03gds6c39 Department of Neurology, McGovern Medical School, University of Texas Houston United States
+1. MD Anderson Cancer Center UTHealth Graduate School of Biomedical Sciences Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
+2. Department of Neurology, McGovern Medical School, University of Texas Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
 
 † Corresponding author
 

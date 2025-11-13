@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.34550.001 To understand the brain, molecular details need to be overlaid onto neural wiring diagrams so that synaptic mode, neuromodulation and critical signaling operations can be considered. Single-cell transcriptomics provide a unique opportunity to collect this information. Here we present an initial analysis of thousands of individual cells from Drosophila midbrain, that were acquired using Drop-Seq. A number of approaches permitted the assignment of transcriptional profiles to several major brain regions and cell-types. Expression of biosynthetic enzymes and reuptake mechanisms allows all the neurons to be typed according to the neurotransmitter or neuromodulator that they produce and presumably release. Some neuropeptides are preferentially co-expressed in neurons using a particular fast-acting transmitter, or monoamine. Neuromodulatory and neurotransmitter receptor subunit expression illustrates the potential of these molecules in generating complexity in neural circuit function. This cell atlas dataset provides an important resource to link molecular operations to brain regions and complex neural processes.
+To understand the brain, molecular details need to be overlaid onto neural wiring diagrams so that synaptic mode, neuromodulation and critical signaling operations can be considered. Single-cell transcriptomics provide a unique opportunity to collect this information. Here we present an initial analysis of thousands of individual cells from Drosophila midbrain, that were acquired using Drop-Seq. A number of approaches permitted the assignment of transcriptional profiles to several major brain regions and cell-types. Expression of biosynthetic enzymes and reuptake mechanisms allows all the neurons to be typed according to the neurotransmitter or neuromodulator that they produce and presumably release. Some neuropeptides are preferentially co-expressed in neurons using a particular fast-acting transmitter, or monoamine. Neuromodulatory and neurotransmitter receptor subunit expression illustrates the potential of these molecules in generating complexity in neural circuit function. This cell atlas dataset provides an important resource to link molecular operations to brain regions and complex neural processes.
 
 ## Introduction
 
@@ -30,23 +30,51 @@ Here we report the application and an initial analysis of Drop-seq data to inves
 
 ## Results
 
-## Drop-seq analysis of the Drosophila midbrain
+### Drop-seq analysis of the Drosophila midbrain
 
 We first optimized the conditions required to effectively dissociate and capture individual Drosophila melanogaster cells with DNA bar-coded microparticles in aqueous droplets, using a commercially available apparatus. Drosophila neurons are about a tenth of the size of mammalian cells. We therefore first verified the efficiency of processing insect cells and of single-cell capture by generating single-cell transcriptomes attached to microparticles (STAMPs) from a cell suspension comprised of a 1:1 mixture of Drosophila S2 and Spodoptera frugiperda (fall armyworm) Sf9 cultured cells. We then sequenced these S2/Sf9 STAMPs (Figure 1—figure supplement 1A). This procedure retrieved 764 barcode-associated transcriptomes, of which 368 were identifiable as Drosophila and 384 as Spodoptera. Importantly, only 12 transcriptomes contained cDNA coming from both species (Figure 1—figure supplement 1B), indicating that only 3.2% of all sequenced transcriptomes resulted from capturing two cells together. This analysis suggested that the Drop-seq system and our chosen parameters are suitable for barcoding single insect cells and are optimized to minimize capture of cell doublets.
 
 We next used these same parameters and concentrations to collect STAMPs from thousands of cells from the Drosophila midbrain, in eight independent biological replicates, over eight different days. Each day we isolated single-cells from 80 to 100 dissected brains taken from an equal number of male and female flies. Brains were removed from the head capsule, optic lobes were manually dissected away and a single-cell suspension was prepared from the remaining fly midbrains. Larger tissue fragments were removed by filtration, and the eluant was inspected under a microscope to confirm the presence of single cells and the absence of clumps. Cells were individually paired with DNA barcoded beads and cDNA libraries were generated from bead-bound single-cell transcriptomes, and sequenced (Figure 1A) (Macosko et al., 2015). Pooling the data from the eight independent experiments resulted in a dataset of 19,260 cells, with each containing between 200 and 10,000 unique molecular identifiers (UMIs) and therefore, single mRNA molecules. We performed a Principal Component Analysis (PCA) on these transcriptomes and reduced the top 50 PCs into two dimensions using t-SNE (Van Der Maaten, 2014) (Figure 1—figure supplement 2A). We selected the cut-off for the optimal number of UMIs per cell to be included in our analyses by generating t-SNE plots from data with a variety of quality thresholds. These analyses revealed that discarding cells with less than 800 UMIs, resulted in a data set of 10,286 high quality cells, segregated with k-means clustering into 29 cell clusters, with several corresponding to most of the known iterative, or large populations of, cell types in the Drosophila brain (Figure 1—figure supplement 2B). More stringent criteria decreased the number of cells included without further improving the clustering (Figure 1—figure supplement 2C). A comparison between our eight individual replicate experiments revealed that all of them contributed equally to all but one cluster (Figure 1—figure supplement 3). We therefore chose to use the 10,286 cells that have ≥800 UMIs from our eight pooled replicates for our subsequent analyses.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental procedure. Drosophila brains were dissected and dissociated prior to Drop-seq. After sequencing and alignment, a digital expression matrix containing information about the number of UMIs found for each gene, in each cell, was generated and used for PCA and subsequent analyses. See Materials and methods section for details. (B) Two-dimensional representation (t-SNE) of 10,286 Drosophila brain cells, manually classified into 28 clusters. Based on the recovery of cell-types of known abundance in the brain, we estimate that there are 45,000 cells in the fly midbrain.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of a Drop-seq experiment that was run to analyze a mixture of Drosophila (S2; blue) and Spodoptera (Sf9; red) cells. (B) Scatter plot (Barnyard) indicating the number of transcripts from Drosophila or Spodoptera associated with each STAMP. Of 768 STAMPs analyzed, only 12 (1.56%) carried transcripts from both species (purple dots).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Left: histograms representing the distribution of numbers of UMIs per cell selected with cutoffs of 200 (A), 800 (B) and 1800 (C) UMIs per cell. Right: t-SNE plots of the same data set as in Figure 1B. obtained with these cutoffs to compare the impact of number of cells and UMI coverage on t-SNE clusters.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** t-SNE plot as in Figure 1B, with cells from each replicate in a different color.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Histogram showing the number of UMIs per neuron. The dashed line indicates the threshold that was chosen to separate roX1-positive and roX1-negative neurons. (B) t-SNE plot showing putative male and female cells, based on roX1 expression. Pie-chart shows the frequency of ‘male’ and ‘female’ neurons.
+
 We assessed the transcript drop-out rate by determining the number of neurons that express the male-specific long non-coding RNA on the X 1 (roX1) gene (Kelley and Kuroda, 2003; Amrein and Axel, 1997). For this analysis we excluded non-neuronal tissue, and Cluster M – see descriptions below. The distribution of neurons containing UMIs for rox1 was biphasic, with one peak at 0, and another at 9 UMIs (Figure 1—figure supplement 4A). Since our data were prepared from an equal number of male and female brains we reasoned that these two cell populations correspond to neurons from female and male flies, respectively. We used the median between the two peaks (4.5) as a cut-off to separate the two populations, which revealed that 55.9% of neurons are positive for roX1 (Figure 1—figure supplement 4B). Since this number is greater than 50%, this distribution suggests that drop-out of the roX1 transcript is low in our high-quality dataset. However, given that the drop-out rate for each gene is influenced by the expression level and other factors that influence the ability to capture transcripts from the cell bodies using the polyadenylated tail, it is not possible to determine a global drop-out rate. Nevertheless, the rate of roX1 drop-out provides a useful measure to compare data between different samples and preparation techniques. The neuronal Cluster J is almost exclusively comprised of roX1-negative cells. This could either mean that cells in this cluster are only present in the female brain, or that they represent a subset of roX1 negative neurons that are present in both male and female brains.
 
 We manually annotated 30 clusters in the t-SNE plot of 10,286 cells, with each containing between 9 and 7167 cells (Figure 1B). For each cluster, we identified a series of genes whose expression was significantly higher than in the rest of the brain (Figure 1—source data 2). We then used the published expression patterns for many of these genes to assign identity to several clusters (Figure 1—source data 2). This approach allowed us to identify the mushroom body Kenyon Cells (KCs), olfactory projection neurons (PNs), ellipsoid body ring neurons, monoaminergic neurons, astrocytes and other glia, and insulin producing cells (IPCs). We also identified a few cells from the ocelli, in addition to fat body tissue, some of which is present in the head capsule and therefore is also expected to be included in our dissected brain tissue. We also identified 13 additional cell clusters that we could not at this time assign to a particular neuronal type, and that we name with the letters A-M. Surprisingly, cluster G only contained cells obtained from a single replicate experiment (Figure 1—figure supplement 3). The largest cluster of all contains 7167 cells with a variety of expression profiles, that at this stage of analysis, we marked as ‘unannotated’, but that can nevertheless be segregated for example, based on their primary fast-acting neurotransmitter (see below, and Figure 5).
 
-## Identification of mushroom body Kenyon Cells
+### Identification of mushroom body Kenyon Cells
 
 The easiest and most certain way to assign a Drop-seq cluster to a specific cell-type is to track the expression of a transgenically expressed marker. For this reason, our single-cell expression dataset was generated from a genotype of flies that express an mCherry transgene specifically in the αβ subset of mushroom body KCs (Figure 2A). To our surprise, visualizing mCherry expression levels in our dataset revealed labeling of a very distinct group of cells (Figure 2B), that allowed us to assign this cluster to αβ KCs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig2-v2.jpg)
+
+**Figure 2.:** (A) mCherry labeling of MB008B neurons in the Drosophila brain. Neuropil, labeled by nc82 anti-Brp antibody, is shown in grey. (B) Expression of mCherry in the t-SNE-clustered brain cells shown in Figure 1B. mCherry-positive cells are labeled red and identify this cluster as αβ Kenyon Cells (KCs). Intensity of red (or other colors in the panels below) is proportional to the normalized expression level. (C) and (D) Expression of eyeless and Dop1R2 (damb), in t-SNE-clustered brain cells. The three numbered clusters containing indigo cells are KCs. (E) Expression of sNPF, Fas2 and trio in the three t-SNE clusters numbered in (C) and (D). Cells in light blue, orange and purple express each of these genes in αβ, γ, and α´β´ KCs, respectively. sNPF and Fas2 are mostly expressed in αβ and γ KCs, while trio is mostly detected in γ and α´β´ KCs. (F) Violin plots showing the main markers that distinguish KC subtypes from each other (pairwise comparisons for genes expressed in >50% of cells in either cluster; Log2 FC >1.5, Wilcoxon rank-sum test with Bonferroni-corrected p-value<0.01). The column on the right (grey) indicates the level of expression of these genes across all non-MB neurons in the brain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Relative difference of expression levels for some of the genes identified in Figure 2F. For each gene, in each replicate, expression values were normalized to the lowest ΔCt across the three lobes. n = 3, * Adjusted p-value<0.05 (Two-way ANOVA with Tukey's multiple comparisons test).
+
 The mushroom bodies are brain structures that are critical for olfactory learning and memory (de Belle and Heisenberg, 1994; Cognigni et al., 2018; Heisenberg, 2003) and they are comprised of three main classes of neurons, the αβ, α′β’ and γ neurons, that are morphologically unique and have dissociable roles in memory processing and expression (Crittenden et al., 1998; Krashes et al., 2007; Trannoy et al., 2011). We first identified the α′β’ and γ KC types, using the expression of the previously known general KC markers eyeless and Dop1R2 (also known as Dopamine receptor in mushroom bodies, damb) (Han et al., 1996; Kurusu et al., 2000). Cells expressing these two markers were contained within three distinct clusters, including the αβ cluster identified as expressing mCherry (Figure 2C–D). The αβ and γ KCs have previously been shown to be distinguishable from the α′β’ neurons using the expression of molecular markers. The αβ and γ KCs express short neuropeptide F precursor (sNPF) (Johard et al., 2008) and Fasciclin 2 (Fas2) (Cheng et al., 2001; Crittenden et al., 1998), whilst α′β’ and γ KCs express the rho guanyl-nucleotide exchange factor gene trio (Awasaki et al., 2000). The expression patterns of these three genes permitted us to assign each KC cluster to one of these KC subtypes (Figure 2E). By comparing gene expression profiles in these KC subsets, we identified 26 additional genes whose expression levels significantly differ between them (Figure 2F). Of these, eleven are involved in gene regulation (pros, Eip93F, Bx, bol, trv, Mef2, mamo, ab, Rbp6, Imp, fru), five in signal transduction (Ca-alpha1T, Pka-C3, CG8641, cmpy, norpA), and three in synapse function (Sytalpha, cmpy, DAT), indicating plausible mechanistic differences between these three major classes of KCs. We independently validated these differential expression patterns by purifying mRNA from the three KC subtypes labeled with mCherry driven by the MB008B (αβ), MB131B (γ) or MB461B (α′β′) GAL4 drivers (Aso et al., 2014) and isolated by Fluorescence Activated Cell Sorting (FACS). Bulk mRNA was extracted from groups of 500–2500 of each KC type and real-time qPCR analysis was used to compare the expression levels for the 29 genes in Figure 2F. Despite the low starting amounts of mRNA, we obtained consistent qPCR signal for thirteen of these genes (Figure 2—figure supplement 1). Importantly, the differences in expression measured by qPCR for these 13 genes precisely matched the profiles detected in the Drop-seq data. These data confirm the accuracy of our measurements of expression with Drop-seq.
 
-## Identification of olfactory projection neurons
+### Identification of olfactory projection neurons
 
 We assigned two cell clusters containing PNs (Figure 1B), based on the strong expression of previously described markers, including cut (ct) and abnormal chemosensory jump 6 (acj6). The ct gene encodes a homeobox transcription factor involved in dendrite targeting in PNs and is known to be expressed in a subset of the antero-dorsal (ad-), lateral (l-) and ventral (v-) PNs (Komiyama and Luo, 2007). The acj6 gene encodes a POU-domain transcription factor that is also necessary for PN development and has been described to label all adPNs and a subset of lPNs (Komiyama et al., 2003; Lai et al., 2008) (Figure 3C). Although, other cells that are not PNs might express ct and acj6 (Certel et al., 2000), these two putative PN clusters are the only ones strongly expressing, both of these genes. We therefore next focused analyses on these acj6/ct expressing cells and performed a new PCA and t-SNE analysis on the top six PCs. This segregated them into four distinct subclusters, each of which expresses a specific transcriptional signature (Figure 3A–B). Consistent with the expression patterns mentioned above, ct transcripts were found in all four clusters, whereas acj6 was only identified in three (Clusters 1, 2 and 4; Figure 3C). Interestingly, ventral veins lacking (vvl), another POU-domain transcription factor reported to be expressed in acj6-negative lPNs (Komiyama et al., 2003; Li et al., 2017) only labeled a small number of neurons, which were all part of the cluster that was negative for acj6 (Cluster 3; Figure 3C). Our data therefore confirm the non-overlapping expression patterns of acj6 and vvl, and support the assignment of the vvl expressing cluster to cells including the lPNs.
 
@@ -58,15 +86,23 @@ To identify putative ventral PNs (vPNs), we used expression of Lim1, which encod
 
 We also identified three to eight genes in each PN cluster that were significantly over-expressed, as compared to the expression in other PN clusters (Figure 3B). Of potential functional importance, we found that the acj6+/kn+ PNs strongly express the sNPF neuropeptide gene, whereas neurons encompassing the putative lPNs express Tachykinin (Tk). These data suggest that these two classes of otherwise cholinergic neurons might co-release different neuropeptides. Interestingly, the sNPF and Tk neuropeptides have previously been reported to have a modulatory role in the antennal lobe, although these studies concluded that the peptides were released from olfactory receptor neurons and local interneurons, respectively (Ignell et al., 2009; Nässel et al., 2008). More recently, others have also detected the expression of Tk in PNs (Li et al., 2017).
 
-## Identification of glia and astrocytes
+### Identification of glia and astrocytes
 
 The two known neuronal markers embryonic lethal abnormal vision (elav) and neuronal Synaptobrevin (nSyb) (DiAntonio et al., 1993; Robinow and White, 1988) were broadly expressed in most cells but were conspicuously absent from four clusters (Figure 4—figure supplement 1A–B), indicating that these cell populations were possibly not neuronal. One of these clusters expressed a series of genes previously associated with fat body, such as Secreted protein, acidic, cysteine-rich (SPARC), Metallothionein A (MtnA), I'm not dead yet (Indy) and pudgy (pdgy) (Catalán et al., 2016; Knauf et al., 2002; Shahab et al., 2015; Xu et al., 2012) (Figure 1—source data 2). We therefore expect these cells to represent residual fat body tissue that remains after brain dissection. The three other elav/nSyb negative clusters expressed two known glial markers: the homeobox transcription factor reversed polarity (repo) (Xiong et al., 1994) was found at variable levels, while the Na+/K+ transporting ATPase nervana 2 (nrv2) (Sun and Salvaterra, 1995) was broadly expressed in all cells in these clusters (Figure 4—figure supplement 1C–D). Interestingly, one of these three putative glial clusters also robustly expressed the astrocytic leucine-rich repeat molecule (alrm) and wunen-2 (wun2) genes (Figure 4—figure supplement 1E, Figure 1—source data 2), which are known to be specifically expressed in astrocytes (Doherty et al., 2009; Huang et al., 2015). We therefore define these three clusters ‘Glia 1’ and ‘Glia 2’ and astrocytes..
 
 Given the previous morphological subdivision of glia into cortex, neuropil, surface and astrocyte types (Freeman and Doherty, 2006), we also attempted to sub-cluster the glial cell populations, as described above for PNs. However, this analysis did not reveal additional obvious cluster substructure (Figure 4A), suggesting that at this sequencing depth and number of cells, these three glial populations may be fairly homogeneous. However, we identified a large number of genes that were differentially expressed between these three clusters (Figure 4B, Figure 1—source data 2). Importantly, several genes that are known to be glial- or astrocyte-specific are amongst the 37 genes we found with Drop-seq to be most differentially expressed between these glial clusters (DeSalvo et al., 2014; Huang et al., 2015). Unfortunately, these known markers do not permit us to assign Glial one and Glial two to a particular glial cell-type at this stage.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig4-v2.jpg)
+
+**Figure 4.:** (A) Re-clustering of the glial and astrocyte populations identified in Figure 1B. The same three sub-clusters are identified. (B) Violin plots showing the main markers that distinguish glial subtypes from each other (pairwise comparisons for genes expressed in >75% of cells in either cluster; Log2 FC >2, Wilcoxon rank-sum test with Bonferroni-corrected p-value<0.01). The column on the right (grey) indicates the level of expression of each gene across all neurons in the brain (excluding glia, astrocytes and fat body).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34550/elife-34550-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) tSNE plots showing the expression levels of the neuronal markers embryonic lethal abnormal vision (elav) and neuronal synaptobrevin (nSyb). (C–E) tSNE plots showing the expression levels of the glial markers reversed polarity (repo) and nervana 2 (nrv2), and the astrocyte marker astrocytic leucine-rich repeat molecule (alrm) (Doherty et al., 2009). (F) tSNE plots showing the expression levels of Insulin-like peptide 6 (Ilp6), confirming its expression in glia.
+
 Surprisingly, cells in Cluster M robustly express both the neuronal markers elav and nSyb and also the glial nrv2 and a number of other glial markers, although for the majority of them, in lesser amounts than in those clusters we assigned to glia above (Figure 1—source data 2). Since these cells are also notable for not expressing repo (Figure 4—figure supplement 1D), it seems plausible that they represent a novel hybrid cell type. However, we cannot exclude that they arose from fragments of cortex glia that remained attached to neuronal cell bodies.
 
-## Assigning fast-acting neurotransmitters
+### Assigning fast-acting neurotransmitters
 
 We next assessed the proportion and distribution of cells in our data set that express genes that would indicate they release a particular fast-acting neurotransmitter; acetylcholine (ACh), glutamate (Glu) and gamma-aminobutyric acid (GABA). We determined that cells were cholinergic, glutamatergic or GABA-ergic based on the expression of vesicular acetylcholine transporter (VAChT), vesicular glutamate transporter (VGlut) and glutamic acid decarboxylase 1 (Gad1), three key proteins that are either required for the vesicular loading, or metabolism, of ACh, Glu and GABA respectively. Consistent with our expectations, this analysis labelled the cell clusters that most likely represent KCs and PNs as being cholinergic (Barnstedt et al., 2016; Tanaka et al., 2012), while the ellipsoid body cluster is comprised of GABAergic cells (Figure 5A) (Kahsai et al., 2012). Reassuringly, we did not find significant neurotransmitter marker expression in glia, including astrocytes.
 
@@ -76,7 +112,7 @@ We next assessed the proportion and distribution of cells in our data set that e
 
 Cells expressing these neurotransmitter-specific marker genes were largely exclusive, although 8% of cells contained markers for ACh and GABA and 7% for ACh and Glu. It is therefore conceivable that some cells release excitatory and inhibitory neurotransmitters. A smaller percentage of cells expressed markers for Glu and GABA (3%), of which a third (1%) expressed all three neurotransmitter markers (although these possibly represent multiple cell captures) (Figure 5B).
 
-## Analysis of neuropeptide expression
+### Analysis of neuropeptide expression
 
 We also analyzed the expression of neuropeptides in our Drop-seq dataset. We first investigated whether individual neuropeptide-encoding genes were preferentially expressed in neurons that co-transmit/co-release a particular fast-acting neurotransmitter ACh, Glu or GABA (Figure 6A). sNPF, CCHamide-2 (CCHa2), Tk, space blanket (spab), jelly belly (jeb) and amnesiac (amn) showed a strong preference for expression in cholinergic neurons, whereas Diuretic hormone 31 (Dh31) is highly biased to GABA-ergic neurons. Neuropeptide-like precursor 1 (Nplp1) and Allatostatin A (AstA) were mainly expressed in glutamatergic cells.
 
@@ -94,7 +130,7 @@ Some neuropeptide expression patterns are highly specific to certain cell types.
 
 We also found transcripts for the Drosophila insulin-like peptides 2, 3, 5 and 6 (Figure 6B). The Ilp2, Ilp3 and Ilp5 peptides are exclusively expressed in IPCs in the brain, whilst Ilp6 is expressed in glia (Brogiolo et al., 2001; Okamoto et al., 2009). We found that Ilp2, 3 and 5 expression was only weakly correlated with that of neurotransmitters, whilst Ilp6 expression is strongly correlated with cells that do not express neurotransmitter markers, but that are positive for the glia-specific genes repo and nrv2 (Figure 4—figure supplement 1) (Freeman et al., 2003; Sun and Salvaterra, 1995; Xiong et al., 1994).
 
-## Assignment and subdivision of monoaminergic neurons
+### Assignment and subdivision of monoaminergic neurons
 
 We used expression of the vesicular monoamine transporter (Vmat) gene to identify monoaminergic neurons in our midbrain dataset (Figure 7A). Three discrete cell populations clearly expressed Vmat. We performed a new PCA and tSNE analysis on cells from these three clusters, guided by known markers for serotonin (5-HT), tyramine (TA), octopamine (OA) and dopamine (DA) releasing neurons. Dopa decarboxylase (Ddc) labels 5-HT and DA neurons, Serotonin transporter (SerT) and Tryptophan hydroxylase (Trh) mark 5-HT neurons, pale (ple; tyrosine hydroxylase) and Dopamine transporter (DAT) DA neurons, Tyrosine decarboxylase 2 (Tdc2) TA and OA neurons, Tyramine β-hydroxylase (Tbh) OA neurons. These labels allowed us to identify the neuronal clusters corresponding to each of these cell types (Figure 7B).
 
@@ -114,7 +150,7 @@ Prior work has shown that DANs are anatomically and functionally divisible based
 
 To corroborate the expression of these new markers in PAM neurons, we compared this data to a transcriptome profiling dataset that we acquired from sequencing mRNA extracted from populations of GFP labeled PAM DANs. We used R58E02-GAL4, a PAM-specific line (Liu et al., 2012; Pfeiffer et al., 2008) to express UAS-6xGFP (Shearin et al., 2014) specifically in PAM DANs, and purified the cells by FACS. We prepared mRNA from GFP + and GFP- neurons, which was subsequently reverse-transcribed and amplified using Smart-seq2, and sequenced. This analysis identified about 10 times more (143) genes that were significantly over-expressed in PAM neurons, as compared to the number retrieved with Drop-seq (Figure 7F). This return is consistent with previous reports showing a higher recovery rate with Smart-seq2 compared to Drop-seq, but also higher levels of noise, as Smart-seq2 does not employ UMIs (Ziegenhain et al., 2017). Of the 15 genes found to be over-expressed in PAM neurons in the Drop-seq experiment, 9 (ple, DAT, Fer2, JhI-21, scro, DIP-delta, CG10384, CG17193 and CG42817) were also retrieved in the Smart-seq2 data (Figure 7F). This confirms that these genes are specifically expressed in PAM neurons. Furthermore, with the exception of ple, DAT and Fer2, these genes have not been previously localized to PAM neurons, and therefore represent novel markers for this cell-type.
 
-## Dopamine receptors
+### Dopamine receptors
 
 Cells respond to DA using a variety of DA receptors in their cell membrane. Interestingly, our analysis shows that all four DA receptors (Dop1R1, Dop1R2, Dop2R and DopEcR) are found in KCs, which form numerous synapses with DA neurons in the mushroom body lobes (see above; Figure 8B). However, our analyses suggest that Dop2R is less abundant in KCs than the three other receptors. Many KCs appear to express multiple DA receptors but only 24% (250 of 1041) were found to co-express all four (Figure 8C). The data also suggest that,individual αβ KCs may express a combination of fewer types of DA receptors, than do α′β’ and γ KCs (Figure 8C). However, since we found 4.7% of KCs (49 of 1041) that do not express any DA receptors, we cannot exclude that low-level expression accounts for some of these apparent differences,
 
@@ -124,7 +160,7 @@ Cells respond to DA using a variety of DA receptors in their cell membrane. Inte
 
 Other cell types also express combinations of DA receptors, to varying degrees. In addition to KCs, Dop1R1 (dumb) and Dop1R2 (damb) are found in a few other clusters (Figure 8B), in particular in several of those that we could not attribute to any cell type. This information will be helpful for further characterizing these clusters. Consistent with evidence showing that Dop1R1 is expressed in the Central complex where it regulates arousal (Kahsai et al., 2012; Lebestky et al., 2009), we found limited expression of Dop1R1 in the ellipsoid body,suggesting that only a subset of these neurons are involved in this process. Dop1R1 also seems to be expressed in small numbers of monoaminergic neurons, suggesting that it may play a role in autocrine signaling. However, the main candidate receptor for DA autocrine signaling is Dop2R, which was found to be broadly expressed in DANs, and also in large numbers of other monoaminergic neuronal types (Figure 8B). Interestingly, Dop2R expression was also detected in some PNs and IPCs as well as a few non-attributed clusters, which indicates that the activity of these neurons is also subject to dopaminergic modulation. Finally, the Dopamine/Ecdysteroid receptor (DopEcR) was found in several cell types, including KCs, PNs, the ocelli, and many other non-attributed clusters (Figure 8B), suggesting a broad role for this receptor. Expression of this DopEcR in PNs corroborates previous data showing its involvement in pheromone sensitization in these neurons, both in flies and moths (Abrieux et al., 2014; Aranda et al., 2017).
 
-## Dopamine metabolism
+### Dopamine metabolism
 
 DA signaling is regulated by enzymatic degradation and reuptake through transporters. Recycled metabolites can then be used to resynthesize DA. These steps can occur in different cell types, that could be DA-releasing cells, post-synaptic neurons, or glia (Yamamoto and Seto, 2014) (Figure 8A). We therefore used our Drop-seq data to determine which cell types expressed components of the DA recycling and metabolic pathways.
 
@@ -134,7 +170,7 @@ Three enzymes have been described to play a role in DA degradation and recycling
 
 The vesicular monoamine transporter (encoded by Vmat) transports DA, 5-HT, OA and TA into synaptic vesicles (Martin and Krantz, 2014). As already mentioned, Vmat was detected in all these neuronal types. In addition, Vmat expression was evident in fat body cells. Although this has, to our knowledge, never been demonstrated in flies, perivascular adipose tissue in rats contains monoamines acting on the sympathetic nervous system, and is thus likely to express VMAT (Ayala-Lopez et al., 2014). The DAT-encoded DA transporter mediates DA reuptake by DANs. Unlike Vmat, DAT was specifically expressed in dopaminergic, but not other monoaminergic neurons. Surprisingly, we also found DAT expression in α′β’ KCs, suggesting that these neurons might tightly regulate the duration and magnitude of the DA signals that they receive.
 
-## Distribution of nicotinic neurotransmitter receptors
+### Distribution of nicotinic neurotransmitter receptors
 
 The response of a neuron to a particular neurotransmitter is determined by the types of receptors that that cell expresses. In addition, most ionotropic neurotransmitter receptors are oligomers comprised of combinations of subunits, variations of which can have very different functional characteristics (Sattelle et al., 2005). Acetylcholine is a major excitatory neurotransmitter in the insect brain and is the primary fast-acting neurotransmitter released from olfactory receptor neurons, olfactory PNs and mushroom body KCs. Nicotinic acetylcholine receptors (nAChR) are heteropentamers that can be comprised of 2 or three alpha and the corresponding 3 or two beta subunits. Flies have seven alpha subunit genes and 3 types of beta encoding genes. These receptors have mostly been studied at the vertebrate neuromuscular junction (Albuquerque et al., 2009) and very little is known about the composition of nAChR in neurons in a central nervous system. Although gene expression cannot explicitly inform of subunit composition, co-expression is a prerequisite that limits the potential complexity in any given neuron. We therefore analyzed the co-expression of nAChR subunits using all cells from our Drop-seq dataset. We detected the expression, at varying frequencies, of all seven known nAChR α-subunits, and two of the three known β-subunits in our samples (Figure 9A). α1, α5, α6 and α7 are expressed in considerably more cells than α2, α3 and α4, whereas β1 is expressed in more than twice as many cells as β2. Most subunits are broadly expressed across all cell types, although some exhibit very distinct expression patterns. Most notably, α3 is broadly expressed in the midbrain, but distinctly absent in KCs. We also tested for co-expression of different combinations of receptor subunits (Figure 9B). Expression of α5 most strongly correlated with expression of α6 and β1. In contrast α3 weakly correlated with expression of α6 and β2 and α2 weakly with α4. Some of the patterns of expression are consistent with previously published pharmacological studies that tested for co-assembly of receptors by co-immunoprecipitation using α-Bungarotoxin (Chamaon et al., 2002; Schulz et al., 2000). For example, cells that express nAChR-α1 most frequently also express α2, when compared to all other nAChR subunits and these two subunits have been shown to preferentially co-assemble into the same receptor complex (Chamaon et al., 2002; Schulz et al., 2000). Similarly, β1 is the most frequently co-expressed subunit in β2 expressing cells, again confirming previous co-immunoprecipitation experiments. We also detected high expression levels of the secreted protein quiver (qvr), a Ly-6/neurotoxin family member, in most neurons of our sample, with no preference for neurons using a particular transmitter (see Figure 1—source data 1). The mammalian homologue of quiver, lynx1, has been shown to bind and regulate nAChR in the mammalian nervous system (Miwa et al., 1999).
 
@@ -142,7 +178,7 @@ The response of a neuron to a particular neurotransmitter is determined by the t
 
 **Figure 9.:** (A) Prevalence of nicotinic receptor subunits. (B) Heatmap showing Pearson correlation coefficient Z-scores for each receptor subunit pair.
 
-## Co-expression of activity regulated genes
+### Co-expression of activity regulated genes
 
 A recent study identified a set of genes whose expression was upregulated in response to prolonged neuronal activation. These activity-regulated genes were identified using differential bulk transcription profiling following broad neuronal activation, using three different artificial stimulation paradigms (Chen et al., 2016). We plotted the expression patterns of the 11 most highly upregulated genes that were identified following pan-neuronal optogenetic neuronal activation and found that 10 of them were also robustly expressed in our dataset (see Figure 1—source data 1). Interestingly, the expression patterns of the most highly upregulated activity-regulated genes were strongly correlated (Figure 10). For example, cells that express the transcription factor stripe (sr) are more likely to also express Hormone receptor-like in 38 (Hr38, p-value<2.2×10−16, Pearson’s product-moment correlation) and CG14186 (p-value<2.2×10−16). These three genes were the most highly upregulated in Chen et al., 2016, following artificial optogenetic neuronal stimulation. Our data therefore demonstrate that they are also likely to be co-regulated in the brain, following ordinary levels of neuronal activity.
 
@@ -178,19 +214,316 @@ The fly brain cell atlas described here should also be a valuable resource to re
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>MB008B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_68291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB131B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_68265</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB461B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_68327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uas-mCherry (III)</td>
+      <td>other</td>
+      <td>uas-mCherry(III)</td>
+      <td>lab stock</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>Drosophila S2 Cells in Schneider's Medium</td>
+      <td>Gibco, Waltham, MA</td>
+      <td>R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells in Sf-900 III SFM</td>
+      <td>Gibco</td>
+      <td>12659–017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Template switch oligo</td>
+      <td>Sigma, St. Louis, MO</td>
+      <td></td>
+      <td>AAGCAGTGGTATCAACGCAGAGTGAATrGrGrG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Schneider's medium</td>
+      <td>Gibco</td>
+      <td>21720–001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Sigma</td>
+      <td>F0804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>penicillin-streptomycin</td>
+      <td>Gibco</td>
+      <td>15070–063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sf-900 III SFM</td>
+      <td>Gibco</td>
+      <td>12658019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DPBS (calcium and magnesium free)</td>
+      <td>Gibco</td>
+      <td>14190–086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Sigma</td>
+      <td>P4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase</td>
+      <td>Sigma</td>
+      <td>C2674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d(−)−2-amino-5-phosphonovaleric acid</td>
+      <td>Sigma</td>
+      <td>A8054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6,7-dinitroquinoxaline-2,3-dione</td>
+      <td>Sigma</td>
+      <td>D0540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tetrodotoxin</td>
+      <td>Abcam, UK</td>
+      <td>ab120054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10 µm CellTrix strainer</td>
+      <td>Sysmex, Japan</td>
+      <td>04-0042-2314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fuchs-Rosental hemocytometer</td>
+      <td>VWR, Radnor, PA</td>
+      <td>631–1096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Single Cell RNA-Seq system</td>
+      <td>Dolomite Bio, UK</td>
+      <td>3200537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Barcoded Beads SeqB</td>
+      <td>ChemGenes Corp., Wilmington, MA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ficoll PM-400</td>
+      <td>VWR</td>
+      <td>17-0300-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Lauroylsarcosine sodium salt solution</td>
+      <td>Sigma</td>
+      <td>L7414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX200 Droplet generation oil for EvaGreen</td>
+      <td>Biorad, Hercules, CA</td>
+      <td>1864006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Life Technologies, Carlsbad, CA</td>
+      <td>P2325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Maxima H Minus Reverse Transcriptase</td>
+      <td>Thermo Scientific, Waltham, MA</td>
+      <td>EP0753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Exonuclease I</td>
+      <td>NEB, Ipswich, MA</td>
+      <td>M0293L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SMART PCR primer</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>AAGCAGTGGTATCAACGCAGAGT</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hifi HotStart Readymix</td>
+      <td>Kappa Biosystems, Switzerland</td>
+      <td>KK2602, KK2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agencourt AMPure XP beads</td>
+      <td>Beckman-Coulter, Brea, CA</td>
+      <td>A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Bioanalyzer High-Sensitivity DNA kit</td>
+      <td>Agilent, Santa Clara, CA</td>
+      <td>5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Nextera XT DNA Sample Preparation Kit</td>
+      <td>Illumina, San Diego, CA</td>
+      <td>FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>New-P5-SMART PCR hybrid</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>AAT GAT ACG GCG ACC ACC GAG ATC TAC ACG CCT GTC CGC GGA AGC AGT GGT ATC AAC GCA GAG T*A*C</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PicoPure™ RNA Isolation Kit</td>
+      <td>Applied Biosystems, Foster City, CA</td>
+      <td>KIT0204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperScript III First-Strand Synthesis SuperMix</td>
+      <td>Invitrogen, Carlsbad, CA</td>
+      <td>18080400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>Qiagen, Germany</td>
+      <td>28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Universal Probe Library system</td>
+      <td>Roche, Switzerland</td>
+      <td>04683633001,04869877001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>LightCycler® 480 Probes Master</td>
+      <td>Roche</td>
+      <td>4887301001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing</td>
+      <td>Takara Clontech, Japan</td>
+      <td>634890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TruSeq RNA Library Prep Kit v2</td>
+      <td>Illumina</td>
+      <td>RS-122–2001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 The Drosophila strains used were MB008B, MB131B and MB461B (Aso et al., 2014), R58E02 (Pfeiffer et al., 2008), w-;+;20XUAS-6XGFP (Shearin et al., 2014) and w-; +; UAS-mCherry. Flies were raised at 25°C in 12 hr:12 hr day-night cycles on standard food at 40–50% humidity.
 
-## Cell culture
+### Cell culture
 
 S2 cells (Gibco, R69007) were grown in Schneider’s medium (Gibco 21720–001) supplemented with 10% FBS (Sigma, F0804) and 1% penicillin-streptomycin (Gibco, 15070–063). Sf9 cells (Gibco, 12659–017) were grown in Sf-900 III SFM (Gibco, 12658019). The Master Seed Bank for both Sf9 and S2 cells was tested for contamination of bacteria, yeast, mycoplasma and virus and characterized by isozyme and karyotype analysis by the supplier. All cells were incubated at 25°C. Cells were grown in adherent cultures to confluency. Vessels were gently tapped to detach cells, and supernatants were centrifuged for 10 min at 100 x g. Cells were washed once with 1 x PBS and resuspended in 1 x PBS and subsequently diluted to 200 cells/ul prior to pooling and Drop-seq.
 
-## Brain dissociation and cell collection
+### Brain dissociation and cell collection
 
 The brain dissociation protocol was adapted from previously described methods (Harzer et al., 2013; Nagoshi et al., 2010). For each day of experiments, 80–100 central brains were individually dissected in ice-cold calcium- and magnesium-free DPBS (Gibco, 14190–086) and immediately transferred into 1 mL toxin-supplemented Schneider’s medium (tSM: Gibco, 21720–001 + 50 µM d(−)−2-amino-5-phosphonovaleric acid, 20 µM 6,7-dinitroquinoxaline-2,3-dione and 0.1 µM tetrodotoxin) on ice. Brains were washed once with 1 mL tSM and incubated in tSM containing 1.11 mg/mL papain (Sigma, P4762) and 1.11 mg/mL collagenase I (Sigma, C2674). Brains were washed once more with tSM and subsequently triturated with flame-rounded 200 µL pipette tips. Dissociated brains were resuspended into 1 mL PBS + 0.01% BSA and filtered through a 10 µm CellTrix strainer (Sysmex, 04-0042-2314). Cell concentration was measured using a disposable Fuchs-Rosenthal hemocytometer (VWR, 631–1096) under a Leica DMIL LED Fluo microscope, that also allowed detecting mCherry fluorescence in dissociated KCs. Cells were diluted in PBS + 0.01% BSA up to a concentration of 200 cells/µL. Thus a typical preparation from 80 brains yielded ~2’000’000 single-cells in a volume of 10 mL.
 
-## Drop-seq procedure
+### Drop-seq procedure
 
 Drop-seq was performed as described (Macosko et al., 2015), using a Dolomite Bio (Royston, UK) Single Cell RNA-Seq system. Cells were diluted at a concentration of 200 cells/µL into PBS + 0.01% BSA. Barcoded Beads SeqB (ChemGenes Corp., Wilmington, MA, USA) were diluted at a concentration of 200 particles/µL into 200 mM Tris pH 7.5, 6% Ficoll PM-400, 0.2% Sarkosyl, 20 mM EDTA +50 mM DTT.
 
@@ -198,26 +531,26 @@ For each run, 700 µL of cells solution from dissociated brains were loaded into
 
 Droplets were subsequently broken and beads with captured mRNA were washed as described (Macosko et al., 2015). In brief, bead-bound mRNA was immediately reverse-transcribed using a Template Switch Oligo (5’ – AAG CAG TGG TAT CAA CGC AGA GTG AAT rGrGrG – 3’) and Maxima H Minus Reverse Transcriptase (Thermo Scientific, EP0753). cDNA was treated with Exonuclease I (NEB, M0293L) and amplified in multiple 50 µL PCR reactions performed on aliquots of ~2000 beads, using a SMART PCR primer (5’ – AAG CAG TGG TAT CAA CGC AGA GT – 3’) and Hifi HotStart Readymix (Kapa Biosystems, KK2602) for a total of 17 cycles. 10 µL from each PCR reaction were pooled, and amplified cDNA was purified twice, with 0.6X and 1.0X volumes of Agencourt AMPure XP beads (Beckman Coulter, A63880) and quantified on a Bioanalyzer, using a High-Sensitivity DNA kit (Agilent, 5067–4626). From each sample, 2 × 600 pg of amplified cDNA were tagmented using the Nextera XT DNA Sample Preparation Kit (Illumina, FC-131–1024) with New-P5-SMART PCR hybrid (5' – AAT GAT ACG GCG ACC ACC GAG ATC TAC ACG CCT GTC CGC GGA AGC AGT GGT ATC AAC GCA GAG T*A*C – 3') and one of Nextera N701 to N706 oligos. cDNA libraries were purified twice, with 0.6X and 1.0X volumes of Agencourt AMPure XP beads (Beckman Coulter, A63880) and quantified on a Bioanalyzer, using a High-Sensitivity DNA kit (Agilent, 5067–4626). Libraries were pooled together and sequenced on an Illumina HiSeq2500 sequencer using a Custom Read1 primer (5’ – GCC TGT CCG CGG AAG CAG TGG TAT CAA CGC AGA GTA C – 3’) and standard Illumina Read2 primers. All oligos were synthesized by Sigma, and HPLC purified. Samples from days 1 and 2 were sequenced together, on two separate lanes. Samples from days 3–8 were sequenced together, on three separate lanes.
 
-## Data processing and alignment
+### Data processing and alignment
 
 Sequencing data was processed as previously described (Macosko et al., 2015; Satija et al., 2015), following the Drop-seq Computational Protocol v.1.0.1 and using the Drop-seq software tools v.1.13 from the McCarroll lab. Barcodes were extracted and reads were aligned to a combination of the Drosophila melanogaster genome release 6.13 (from Flybase.org) and three reference sequences for mCherry and each split-GAL4 transgenes of the flies that were used in this study. For the species mix experiments, reads were also aligned to the Spodoptera frugiperda genome (Kakumani et al., 2014), available at NCBI GenBank, assembly ASM221328v1. The Flybase v.FB2016_05 September gene names were used for the creation of the Digital Gene Expression (DGE) Matrix.
 
-## t-SNE analysis on whole brain data
+### t-SNE analysis on whole brain data
 
 Analysis of DGEs was performed with the Seurat 2.1.0 R package (Macosko et al., 2015; Satija et al., 2015). Cells with less than 200 genes were discarded. Several thresholds for the number of UMIs per cell were tested (see Figure 1—figure supplement 2). All results presented here are based on 800 and 10,000 UMIs per cell as lower and higher threshold, respectively. Data was log-normalized and scaled using default options. Variation driven by individual batches was regressed out from the normalized, scaled data. PCA analysis was performed on the data as previously described (Macosko et al., 2015). To visualize the data, spectral t-SNE dimensionality reduction was performed, using the first 50 PCAs, as instructed by a Jack Straw resampling test (Satija et al., 2015; Van Der Maaten, 2014). Clusters were identified by a shared nearest neighbor modularity optimization (Waltman and van Eck, 2013), using a resolution of 2.5. Some of these clusters were subsequently manually modified (compare Figure 1—figure supplement 2B (unmodified) and Figure 1B (modified)). Main markers for each identified cluster were identified as genes with Log2 FC ≥1 and a p-value of p<0.01 (after Bonferroni correction).
 
-## Co-expression analysis
+### Co-expression analysis
 
 Gene co-expression was assessed by calculating the Pearson product-moment correlation of the log-normalized, scaled expression values using R. For the radar plots, the number of cells expressing each neuropeptide of interest and in addition either VACht (to identify cholinergic cells), VGlut (glutamatergic), Gad1 (GABA-ergic) or combinations of the three were calculated and normalized to the total number of cells expressing each neurotransmitter.
 
-## t-SNE analysis on PNs and monoaminergic neurons (re-clustering)
+### t-SNE analysis on PNs and monoaminergic neurons (re-clustering)
 
 DGE columns corresponding to cells belonging to either PN or monoaminergic clusters were used for PCA analyses. For re-clustering of monoaminergic neurons, a selection of known markers (ple, DAT, SerT, Trh, Vmat, Oamb, Ddc, Tdc2 and Tbh) was used as input for PCA analysis. In both cases, the first 6 PCAs were used for re-clustering, which was performed as above.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Midbrains were dissected from flies expressing mCherry under the control of the MB008B, MB131B or MB461B GAL4 drivers, dissociated and filtered as above. DAPI was added to the cell suspension as a marker for dead cells or cells with compromised membrane (Kubista et al., 1987), and only DAPI- cells were selected. Filtered cells were sorted with a MoFlo Astrios (Beckman Coulter) and mCherry +cells were collected from each genotype, in biological triplicates. Total RNA was extracted from these cells using the PicoPure RNA Isolation Kit (Applied Biosystems, KIT0204) according to manufacturer’s instructions. mRNA was then retrotranscribed using the SuperScript III First-Strand Synthesis SuperMix (Invitrogen, 18080400) according to manufacturer’s instructions. Obtained cDNA was pre-amplified with the KAPA HiFi HotStart ReadyMix (Kapa Biosystems, KK2611), using 0.4 μM of each primer (see primers list in Figure 2—source data 1). Pre-amplification protocol was as follows: 98°C, 2’; 18X [98°C, 20’; 60°C, 30’, 72°C, 30’]; 72°C, 2’. Pre-amplified cDNA was purified with the QIAquick PCR Purification Kit (Qiagen, 28106). qPCR was performed in a LightCycler 480 Instrument II (Roche, 05015243001) using the Universal Probe Library system (UPL; Roche, 04683633001 and 04869877001). Each 10 μL reaction contained 2.4 μL of pre-amplified cDNA, 0.4 μM of each primer (designed with Roche Assay Design Center), 0.2 μM of the corresponding UPL probe (Figure 2—source data 1), and 5 μL LightCycler 480 Probes Master (Roche, 4887301001). Cycles were as follows: 95°C, 10’; 45X [95°C, 10’; 60°C, 30’; Fluorescence acquisition; 72°C, 1’]. Quantification was performed with the comparative 2-ΔΔCt method (Livak and Schmittgen, 2001), using SdhA as a housekeeping gene (Ling and Salvaterra, 2011; Treiber and Waddell, 2017). For each biological replicate, expression levels of each gene were normalized to the KC population with the highest expression level, and subsequently averaged. Genes for which qPCR signal was not consistently observed across all samples and replicates were not included in the analysis.
 
-## RNA-sequencing of PAM-DA neurons
+### RNA-sequencing of PAM-DA neurons
 
 Central brains from flies expressing a brighter, hexameric GFP (20xUAS-6xGFP; [Shearin et al., 2014]) specifically in PAM-DA neurons under the control of the R58E02 GAL4 line (Pfeiffer et al., 2008) were dissected and dissociated as above. FACS was performed as above, and both GFP +and GFP- cells were collected. Cells were lysed, and their mRNA was retro-transcribed and amplified (17 cycles) using the SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing (Takara Clontech, 634890), according to manufacturer’s instructions. Biological triplicates were made for each sample. cDNA libraries were generated with TruSeq RNA Library Prep Kit v2 (Illumina, RS-122–2001), sequenced on an Illumina HiSeq4000 sequencer. Results were analyzed using the Tuxedo RNA-seq pipeline (Trapnell et al., 2012).

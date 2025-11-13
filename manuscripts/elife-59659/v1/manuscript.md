@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Bone remodeling involves a balance between bone resorption and formation. The mechanisms underlying bone remodeling are not well understood. DEF6 is recently identified as a novel loci associated with bone mineral density. However, it is unclear how Def6 impacts bone remodeling. We identify Def6 as a novel osteoblastic regulator that suppresses osteoblastogenesis and bone formation. Def6 deficiency enhances both bone resorption and osteogenesis. The enhanced bone resorption in Def6 -/- mice dominates, leading to osteoporosis. Mechanistically, Def6 inhibits the differentiation of both osteoclasts and osteoblasts via a common mechanism through endogenous type-I IFN-mediated feedback inhibition. RNAseq analysis shows expression of a group of IFN stimulated genes (ISGs) during osteoblastogenesis. Furthermore, we found that Def6 is a key upstream regulator of IFNβ and ISG expression in osteoblasts. Collectively, our results identify a novel immunoregulatory function of Def6 in bone remodeling, and shed insights into the interaction between immune system and bone.
+Bone remodeling involves a balance between bone resorption and formation. The mechanisms underlying bone remodeling are not well understood. DEF6 is recently identified as a novel loci associated with bone mineral density. However, it is unclear how Def6 impacts bone remodeling. We identify Def6 as a novel osteoblastic regulator that suppresses osteoblastogenesis and bone formation. Def6 deficiency enhances both bone resorption and osteogenesis. The enhanced bone resorption in Def6-/- mice dominates, leading to osteoporosis. Mechanistically, Def6 inhibits the differentiation of both osteoclasts and osteoblasts via a common mechanism through endogenous type-I IFN-mediated feedback inhibition. RNAseq analysis shows expression of a group of IFN stimulated genes (ISGs) during osteoblastogenesis. Furthermore, we found that Def6 is a key upstream regulator of IFNβ and ISG expression in osteoblasts. Collectively, our results identify a novel immunoregulatory function of Def6 in bone remodeling, and shed insights into the interaction between immune system and bone.
 
 ## Introduction
 
@@ -43,35 +43,81 @@ In the present study, we found that Def6 suppresses osteoblast differentiation a
 
 ## Results
 
-## Def6 functions as an inhibitory regulator in osteoblast differentiation
+### Def6 functions as an inhibitory regulator in osteoblast differentiation
 
 Def6 is known as an inhibitor in osteoclastogenesis and bone resorption. To study whether Def6 regulates bone remodeling, we investigated the role of Def6 in osteoblast differentiation and bone formation in the present study. Def6 is expressed in calvarial osteoblast cells and is further induced during osteoblast differentiation and maturation (Figure 1A,B). The expression of Def6 in osteoblasts was also identified in vivo in mice as well as in osteoblast cell lines (Figure 1—figure supplement 1). This suggests that Def6 may have a function in osteoblasts. We first examined osteoblast differentiation in vitro using calvarial osteoblastic precursors obtained from the calvaria of the wild-type (WT) and Def6-/- mice in the presence of osteogenic medium containing 10 mM β-glycerol phosphate and 100 μg/ml ascorbic acid. As shown in Figure 1C, Def6 deficiency significantly enhanced osteoblast differentiation and mineralization, evidenced by the marked increases in alkaline phosphate (ALP) activity (Figure 1C) and bone nodule formation determined by alizarin red staining (Figure 1D) in Def6-/- cells. In parallel with the increased osteoblast differentiation, the expression of osteoblast marker genes, such as Alpl (encoding ALP), Bglap (encoding Osteocalcin) and Bsp (encoding Bone Sialoprotein), was significantly up-regulated in the Def6-/- osteoblastic cultures compared to WT control cultures (Figure 1E). These results indicate that Def6 functions as a negative regulator in osteoblast differentiation.
 
-## Def6 inhibits osteogenesis and bone formation in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Expression of Def6 during osteoblast differentiation using WT and Def6-/- calvarial osteoblast cells at the indicated time points by quantitative real-time PCR (qPCR) analysis of mRNA expression (A) or immunoblot analysis of protein levels (B). (C) ALP staining and (D) Alizarin red staining (upper panel) and its quantification (lower panel) of WT and Def6-/- calvarial osteoblast differentiation at day 15 in osteogenic medium. (E) qPCR analysis of mRNA expression of Alpl, Bsp and Bglap during WT and Def6-/- calvarial osteoblast differentiation process. Data are mean ± SEM. **p<0.01. n.s., not statistically significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescence staining of Def6 (green) on the slices of femurs from 8-week-old WT and Def6-/- mice. Def6-/- mice were used as a negative control for Def6 staining. The slices were counterstained with DAPI (blue). White arrows point to osteoblasts on the bone surface. BM, bone marrow. Scale bar: 50 µm. (B–C) Immunoblot analysis of Def6 expression in ST2 cells (B) and MC3T3-E1 cells (C) during osteoblast differentiation. p38 or GAPDH were used as a loading control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** CD45 negative calvarial osteoblasts were selected using CD45 magnetic beads according to the manufacturer's instruction, and used to test osteoblast differentiation and gene expression. (A) ALP staining at day 9 and (B) Alizarin red staining at day 21 (left panel) and its quantification (right panel) of CD45 negative WT and Def6-/- calvarial osteoblast differentiation in osteogenic medium. (C, D) qPCR analysis of mRNA expression of osteoblast marker genes Alpl, Bsp and Bglap (C) and ISGs Mx1, Ifit1, Ifit2 and Eif2ak2 (D) during CD45 negative WT and Def6-/- calvarial osteoblast differentiation process. Data are mean ± SD. *p<0.05. **p<0.01.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) ALP staining at day 7 and (B) qPCR analysis of osteoblast marker gene expression at the indicated times. n.s., not statistically significant.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** p38 was used as a loading control.
+
+### Def6 inhibits osteogenesis and bone formation in vivo
 
 Def6-/- mice exhibit osteoporotic phenotype shown in long bones (Binder et al., 2017) and vertebra (Figure 2—figure supplement 1). We then performed bone dynamic histomorphometric analysis by calcein double labeling to examine osteoblastic bone formation activity in these mice. As shown in Figure 2A,B, Def6-/- mice displayed notably accelerated both mineral apposition rate (MAR) and bone formation rate (BFR/BS). Def6-/- osteoblasts polarized to bone surface show clear cuboidal shape with thick osteoid formation beneath (Figure 2C). Furthermore, osteoblast parameters, such as osteoblast surface and numbers, were significantly up-regulated in Def6-/- mice (Figure 2D). These results indicate that the lack of Def6 enhances osteogenesis and bone formation in mice. Therefore, both bone resorption and formation are enhanced by Def6 deficiency. The osteoporotic phenotype in Def6-/- mice accordingly demonstrates a high bone turn-over rate that results in excessive bone loss. Hence, Def6 absence leads to unbalanced osteoclastic and osteoblastic activities, which disrupts normal bone remodeling and bone homeostasis.
 
-## Def6 suppresses osteoblast differentiation via endogenous type-I IFN-mediated feedback inhibition
+![Figure 2.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig2-v1.jpg)
+
+**Figure 2.:** (A) Images of calcein double labeling of the tibiae of WT and Def6-/- littermate mice. (B) Bone morphometric analysis of mineral apposition rate (MAR) and bone formation rate per bone surface (BFR/BS) after calcein double labeling of the tibiae of WT and Def6-/- littermate male mice. n = 6. (C) Images of Masson-Goldner staining of tibiae of WT and Def6-/- littermate mice. The bones show green, osteoid matrix appears dark orange on the surface of the bone beneath the osteoblasts, osteoblasts (Ob) are stained orange lining on the bone surface, and bone marrow cells appear red in the photograph. (D) Bone morphometric analysis of osteoblast surface per bone surface (Ob.S/BS) and osteoblast number per bone perimeter (N.Ob/B.Pm) of the tibiae of WT and Def6-/- littermate male mice. n = 8. Scale bars = 50 µm. Data are mean ± SEM. *p<0.05, **p<0.01. n.s., not statistically significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Images of Von Kossa staining of lumbar from WT and Def6-/- mice. (B) Bone morphometric analysis of bone volume/tissue vol (BV/TV) of lumbar from WT and Def6-/- male mice. n = 6. Data are mean ± SEM. **p<0.01.
+
+### Def6 suppresses osteoblast differentiation via endogenous type-I IFN-mediated feedback inhibition
 
 We next sought out to investigate the mechanisms by which Def6 suppresses osteoblast differentiation. To address this question, we first performed gene expression profiling using high-throughput sequencing of RNAs (RNAseq) with the WT control and Def6-/- osteoblastic cells to identify genes regulated by Def6 during osteoblast differentiation. In this study, two biological RNAseq replicates were performed and analyzed for each condition. As shown in Figure 3A, Def6 deficiency significantly (p<0.05) up-regulated expression of 85 genes and down-regulated expression of 68 genes compared to WT cells during osteoblast differentiation (Figure 3A). Pathway analysis of the differentially expressed genes (DEGs) revealed that pathways most significantly activated in the WT and Def6-/- osteoblasts were substantially different (Figure 3B). In alignment with the enhanced osteoblast differentiation and bone formation phenotype in Def6-/- mice, the genes in pathways related to ossification and osteoblast were most significantly activated in Def6-/- osteoblasts (Figure 3B). Surprisingly, in contrast to the Def6-/- osteoblasts, the highly significant activation of genes in WT cells were involved in interferon signaling pathways, in particular type-I interferon signaling (Figure 3B). We further extracted the gene expression values of the most enriched type-I IFN response gene set from WT RNA-seq data and the osteoblast gene set from Def6-/- osteoblast RNA-seq data and displayed in the heatmaps in Figure 3C. Gene set enrichment analysis (GSEA) of the differentially expressed genes also revealed the most significantly enriched gene set to be type-I IFN response genes (p<0.0001 and FDR < 0.001) in WT osteoblasts compared to Def6-/- cells. Similarly, osteoblast genes were enriched (p<0.0001 and FDR < 0.001) in Def6-/- cells (Figure 3D). We further confirmed the elevated expression of osteoblast marker genes, such as Alpl, Bglap, and Bsp, in Def6-/- cells (Figure 1E), and type-I IFN response genes, such as Mx1, Ifit1, Ifit2, Cxcl10, Stat1 and Eif2ak2 (encoding Protein kinase RNA-activated (PKR)), in WT osteoblasts (Figure 3E). These results suggest that an interferon response as demonstrated by interferon stimulated gene (ISG) expression occurs during osteoblastogenesis, and this IFN response and ISG expression are positively regulated by Def6.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig3-v1.jpg)
 
-**Figure 3.:** (A) Volcano plot of RNA-seq analysis of differentially expressed genes using the mRNAs isolated from the WT and Def6 calvarial osteoblast cells stimulated with osteogenic medium for 12 days. Blue dots show genes more highly expressed in -/-Def6 osteoblasts than WT osteoblasts with significant (p<0.05) and greater than 1.2-fold changes. Red dots show genes more highly expressed in WT osteoblasts than -/-Def6 osteoblasts with significant (p<0.05) and greater than 1.2-fold changes. (-/-B) Pathway analysis of significantly differentially expressed genes. Upper panel shows enriched pathways in WT and lower panel shows enriched pathways in Def6 osteoblasts. (-/-C) RNAseq–based expression heatmaps of the interferon stimulated genes (left panel) and osteoblast genes (right panel) regulated by Def6 deficiency based on the differentially expressed genes from (A). Row z-scores of CPMs of genes were shown in the heatmap. #1, replicate 1. #2, replicate 2. (D) Gene set enrichment analysis (GSEA) of differentially expressed genes from WT and Def6 calvarial osteoblast cells stimulated with osteogenic medium for 12 days ranked by NES scores. Type-I IFN response genes and osteoblast genes are mostly enriched in WT and -/-Def6 osteoblast cells, respectively (p<0.0001 and FDR < 0.0001). The enrichment plots are shown. NES, normalized enrichment score. (-/-E) qPCR analysis of type-I IFN response gene expression during osteoblast cell differentiation. Data are mean ± SEM. **p<0.01. n.s., not statistically significant.Figure 3—source data 1.
+**Figure 3.:** (A) Volcano plot of RNA-seq analysis of differentially expressed genes using the mRNAs isolated from the WT and Def6-/- calvarial osteoblast cells stimulated with osteogenic medium for 12 days. Blue dots show genes more highly expressed in Def6-/- osteoblasts than WT osteoblasts with significant (p<0.05) and greater than 1.2-fold changes. Red dots show genes more highly expressed in WT osteoblasts than Def6-/- osteoblasts with significant (p<0.05) and greater than 1.2-fold changes. (B) Pathway analysis of significantly differentially expressed genes. Upper panel shows enriched pathways in WT and lower panel shows enriched pathways in Def6-/- osteoblasts. (C) RNAseq–based expression heatmaps of the interferon stimulated genes (left panel) and osteoblast genes (right panel) regulated by Def6 deficiency based on the differentially expressed genes from (A). Row z-scores of CPMs of genes were shown in the heatmap. #1, replicate 1. #2, replicate 2. (D) Gene set enrichment analysis (GSEA) of differentially expressed genes from WT and Def6-/- calvarial osteoblast cells stimulated with osteogenic medium for 12 days ranked by NES scores. Type-I IFN response genes and osteoblast genes are mostly enriched in WT and Def6-/- osteoblast cells, respectively (p<0.0001 and FDR < 0.0001). The enrichment plots are shown. NES, normalized enrichment score. (E) qPCR analysis of type-I IFN response gene expression during osteoblast cell differentiation. Data are mean ± SEM. **p<0.01. n.s., not statistically significant.
 
 Since type-I IFN signaling components are widely expressed, and most cells are competent to type-I IFN response (Ivashkiv and Donlin, 2014), we investigated whether the ISG gene expression was induced by endogenous IFNβ secreted by osteoblasts. The cellular type-I IFN activity, especially induced by low or undetectable level of type-I IFN, is usually reflected by ISG expression (Ivashkiv and Donlin, 2014). We blocked IFNβ activity using an IFN-β neutralizing antibody and found that the ISG gene expression was significantly decreased in both WT and Def6-/- cell cultures (Figure 4A). This data supports the idea that the ISG gene expression in osteoblasts is induced, at least partially, by endogenous IFNβ. Previous literature show that a small to undetectable magnitude of type-I IFN can have high potency of biological effects, such as the conditions that are involved in osteoclast inhibition and 'IFN signature' of ISG expression in systemic lupus erythematosus (SLE) (Binder et al., 2017; Ivashkiv and Donlin, 2014; Takayanagi et al., 2002; Inoue et al., 2018). Indeed, when the IFNβ activity was blocked, the expression of osteoblast differentiation marker genes, such as Bsp and Bglap, was significantly elevated in WT cultures (Figure 4B). This enhancement in WT cells is much higher than that in Def6-/- cell cultures (Figure 4B). For example, the Bsp gene expression in WT cells was enhanced to a similar level to that in Def6-/- cells by IFNβ blocking antibody. The enhancement of Bglap gene expression by IFNβ blocking antibody was 5.4 folds in WT cells vs 1.5 folds in Def6-/- cell cultures. These differences corroborate a lower IFNβ activity feature in Def6-/- cell cultures. In alignment with the osteoblast marker gene expression, blocking IFNβ activity enhanced osteoblast differentiation and enabled the differentiation in WT cells to reach to a similar level to that in Def6-/- cell cultures (Figure 4C). Therefore, the endogenous IFNβ activity plays an inhibitory feedback role in osteoblast differentiation. Taken together that the genome-wide data shows that the most differentially activated genes by Def6 are type-I IFN response genes (Figure 3), these results collectively indicate that the endogenous IFNβ-mediated response is a prominent mechanism by which Def6 inhibits osteoblast differentiation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig4-v1.jpg)
 
-**Figure 4.:** qPCR analysis of type-I IFN response gene expression (A) and osteoblast marker gene expression (B) during osteoblast cell differentiation in the absence or presence of IFNβ blocking antibody (10 U/ml). Control IgG, 10 U/ml. (C) Alizarin red staining (left panel) and its quantification (right panel) of WT and Def6 calvarial osteoblast differentiation at day 16 in the osteogenic medium in the absence or presence of IFNβ blocking antibody (10 U/ml). Control IgG, 10 U/ml. Data are mean ± SEM. *p<0.05. n.s., not statistically significant.-/-Figure 4—source data 1.
+**Figure 4.:** qPCR analysis of type-I IFN response gene expression (A) and osteoblast marker gene expression (B) during osteoblast cell differentiation in the absence or presence of IFNβ blocking antibody (10 U/ml). Control IgG, 10 U/ml. (C) Alizarin red staining (left panel) and its quantification (right panel) of WT and Def6-/- calvarial osteoblast differentiation at day 16 in the osteogenic medium in the absence or presence of IFNβ blocking antibody (10 U/ml). Control IgG, 10 U/ml. Data are mean ± SEM. *p<0.05. n.s., not statistically significant.
 
 WT and Def6-/- osteoblasts cells express comparable levels of interferon-α/β receptor (Figure 5A and Figure 5—figure supplement 1). We next tested the cellular response of osteoblasts to type-I IFN by adding IFNβ to the cell cultures. As shown in Figure 5B,C, IFNβ stimulation induced phosphorylation of Stat1 and Stat3 in WT osteoblastic cells. In contrast, Def6 deficiency dampened the activation levels of Stat1 and Stat3 in Def6-/- cells (Figure 5B,C). Stat1 is a type-I IFN inducible gene. The expression of Stat1 was reduced by Def6 absence (Figure 5D). These results indicate that Def6-/- osteoblastic cells exhibit attenuated IFN responsiveness, which was further corroborated by the decreased ISG expression, such as Mx1, Ifit2 and Irf7, in Def6-/- osteoblastic cell cultures (Figure 5E). To test whether the attenuated type-I IFN response contributes to cell differentiation, we treated osteoblasts with IFNβ, and found that the differentiation of WT cells was drastically inhibited by IFNβ, but the inhibitory effect of IFNβ on osteoblast differentiation in Def6-/- cells was much weaker (Figure 5F). These results indicate that Def6 deficiency attenuates cellular response to IFN-induced osteoblastic inhibition.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) Immunoblot analysis of type-I IFN receptor expression during osteoblast differentiation (A), the induction of p-STAT1 and 3 (B, C) and expression of STAT1 (D) in WT and Def6-/- osteoblast cells stimulated with mouse recombinant IFN-β (10 U/ml) at the indicated time points. p38 was used as a loading control. The relative density of each band to its corresponding loading control p38 band was calculated by Image J software, and then was normalized to the WT controls at time 0 (the 1st lanes). The relative density for p-STAT3 to total STAT3 was also calculated. (E) qPCR analysis of type-I IFN response gene expression after indicated time points of treatment with IFN-β (10 U/ml) in WT and Def6-/- osteoblast cells. (F) Osteoblast differentiation is induced by the osteogenic medium in the absence or presence of mouse recombinant IFN-β in the WT and Def6-/- osteoblast cells. Alizarin red staining at day 16 (left panel) and its quantification (right panel) were performed. Data are mean ± SEM. *p<0.05, **p<0.01. n.s., not statistically significant. (G) A model showing that the Def6-IFN axis regulates both osteoclast-mediated bone resorption (Binder et al., 2017) and osteoblast-mediated bone formation (current study) in bone homeostasis. Def6 deletion enhances both bone resorption (Binder et al., 2017) and formation (current study) via attenuated type-I IFN-mediated feedback inhibition of the differentiation of both cell types, leading to a high turn-over osteoporotic phenotype in Def6-/- mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig5-figsupp1-v1.jpg)
+
 Collectively, Def6 functions as an inhibitor that suppresses osteogenesis via endogenous type-I IFN-mediated feedback inhibition in physiological conditions (Figure 5G). Our results identify Def6 as an upstream regulator of type-I IFN response in both osteoclast (Binder et al., 2017) and osteoblast differentiation (present study). Thus, Def6-IFN-I axis is a common and key mechanism involved in both osteoclast and osteoblast differentiation to maintain physiological bone remodeling. Lack of Def6 leads to suppressed type-I IFN response, which in turn promotes the differentiation of osteoclasts and osteoblasts, resulting in a high turn-over osteoporosis (Figure 5G).
 
-## Def6-PKR/IFNβ axis plays an important role in feedback inhibition of osteoblastogenesis
+### Def6-PKR/IFNβ axis plays an important role in feedback inhibition of osteoblastogenesis
 
 We next examined the expression levels of IFNα and IFNβ in mice. The serum IFNβ level is significantly lower in Def6-/- mice than WT mice (Figure 6A). Importantly, Def6 deficiency significantly decreased IFNβ level in osteoblast cells (Figure 6—figure supplement 1) as well as in osteoblast culture medium (Figure 6B). IFNα level is nearly undetectable in the serum from WT or Def6-/- mice, and undetectable in osteoblast culture medium (Figure 6—figure supplement 2 and data not shown). These results demonstrate that osteoblasts produce IFNβ, and Def6 deficiency downregulates the endogenous IFNβ level secreted by osteoblasts. We have shown that exogenous IFNβ inhibits osteoblastogenesis (Figure 5F). Blocking endogenous IFNβ activity by IFNβ blocking antibody significantly enhances osteoblast differentiation (Figure 4). We further examined the effect of IFNβ on osteoblast differentiation using Ifnar1-/- cells, which do not activate downstream type-I IFN signaling. As shown in Figure 6C–E, deficiency of type-I IFN receptor significantly enhanced osteoblastogenesis, evidenced by the increases in ALP activity (Figure 6C), bone nodule formation (Figure 6D) and osteoblast marker gene expression, such as Alpl and Bglap (Figure 6E). As expected, the expression of ISG genes, such as Mx1, Ifit1 and Irf7, was markedly induced in the WT osteoblast cultures, but abolished in Ifnar1-/- osteoblasts (Figure 6E). These results collectively corroborate the presence of endogenous IFNβ and IFNβ response during osteoblastogenesis, which provides another example that underscores the significant biological role of low level of IFNβ. Our data also demonstrates that endogenous IFNβ plays an inhibitory role in osteoblast differentiation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) ELISA analysis of IFN-β level in mouse serum (A) and in CD45 negative calvarial osteoblast cell cultures (B) from WT and Def6-/- mice (n = 5). (C) ALP staining at day 7 and (D) Alizarin red staining at day 21 (left panel) and its quantification (right panel) of WT and Ifnar1-/- (IFNαβR KO) calvarial osteoblast differentiation in osteogenic medium. (E) qPCR analysis of mRNA relative expression of osteoblast marker genes and ISGs during WT and Ifnar1-/- (IFNαβR KO) calvarial osteoblast differentiation process. (F) Immunoblot analysis of PKR expression in WT and Def6-/- calvarial osteoblasts. p38 was used as a loading control. (G) Immunoblot analysis of PKR expression after knockdown of PKR by PKR-LNA induced gene silencing in ST2 cells. p38 was used as a loading control. (H–J) qPCR analysis of mRNA expression of Ifnb and ISGs (H), ALP staining, scale bar: 500 µm (I) and qPCR analysis of mRNA expression of osteoblastic genes (J) in ST2 cells with or without PKR knockdown. (K) Immunoblot analysis of PKR expression after overexpression of PKR by retroviral transduction for 24 hr. p38 was used as a loading control. (L) qPCR analysis of mRNA expression of Ifnb, ISGs and osteoblast markers. Data are mean ± SD. *p<0.05. **p<0.01. n.s., not statistically significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59659/elife-59659-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** n = 5.
 
 As Def6 deficiency significantly enhances osteoblastogenesis via attenuating IFNβ level and its osteoblastic inhibition, we then set off to investigate how Def6 regulates IFNβ expression and its downstream IFNβ response. We found that loss of Def6 decreased PKR expression in osteoblasts (Figures 3E and 6F). PKR (Protein kinase RNA-activated, gene name: Eif2ak2) is an ISG gene and also functions as an activator of IFN-β expression (Haller et al., 2006; Munir and Berg, 2013; Meurs et al., 1990; McAllister et al., 2012; Taghavi and Samuel, 2012). We knocked down PKR expression in ST2 cells (Figure 6G), an osteoblast cell line well-established for osteoblast differentiation and mechanistic studies. Similarly as calvarial osteoblasts, the expression of Ifnb and ISG genes was highly induced during osteoblast differentiation in ST2 cells (Figure 6H white bars). PKR deficiency resulted in a drastic decrease in the expression of Ifnb and ISG genes, such as Mx1, Ifit1, Stat1 and Irf7 (Figure 6H black bars), indicating that PKR is a key activator for IFN-β and downstream ISG gene induction in osteoblasts. In contrast, PKR deficiency significantly promoted osteoblast differentiation (Figure 6I) and the expression of osteoblastic genes, such as Runx2, Alpl, Bsp and Bglap (Figure 6J). Taken together, these findings indicate that PKR controls endogenous IFN-β production and response in osteoblasts, thereby contributing to the feedback inhibitory effects mediated by endogenous IFN-β. Def6 deficiency significantly downregulates PKR expression level (Figures 3E and 6F). Furthermore, overexpression of PKR in Def6 deficient osteoblasts enhances Ifnb and ISG expression but suppresses the expression of osteoblastic marker genes, such as Alpl and Bsp (Figure 6K–L). Thus, Def6 deficiency suppresses IFN-β expression, at least partially via downregulation of PKR expression. Therefore, our results unveiled a new pathway mediated by Def6-PKR/IFN-β axis that plays an important role in feedback inhibition of osteoblast differentiation.
 
@@ -89,48 +135,310 @@ Recent human genetic evidence, together with results obtained from animal models
 
 ## Materials and methods
 
-## Mice and analysis of bone phenotype
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Def6-/-</td>
+      <td>PMID:16470246</td>
+      <td>RRID:MGI:3628445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ifnar-/-</td>
+      <td>PMID:8009221</td>
+      <td>RRID:MGI:3765898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Platinum-E (Plat-E)</td>
+      <td>Cell Biolabs</td>
+      <td>Cat# RV-101 RRID:CVCL_B488</td>
+      <td>Has been authenticated by STR profiling and tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>ST2</td>
+      <td>DSMZ</td>
+      <td>Cat# ACC333 RRID:CVCL_2205</td>
+      <td>Has been authenticated by STR profiling and tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MC3T3-E1</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-2594 RRID:CVCL_5437</td>
+      <td>Has been authenticated by STR profiling and tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IBP/Def6 (rabbit polyclonal)</td>
+      <td>PMID:12923183</td>
+      <td></td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IFN-α/βRα (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7391 RRID:AB_2122749</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IFN Beta, neutralizing (rabbit polyclonal)</td>
+      <td>PBL Assay Science</td>
+      <td>Cat# 32400–1 RRID:AB_387872</td>
+      <td>10 U/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Stat1 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-346 RRID:AB_632435</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Stat3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12640 RRID:AB_2629499</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Phospho-Stat1 (Ser727) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9177 RRID:AB_2197983</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Phospho-Stat1 (Tyr701) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9171 RRID:AB_331591</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-Stat3 (Tyr705) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9131 RRID:AB_331586</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PKR (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-6282 RRID:AB_628150</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p38α (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-535 RRID:AB_632138</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Gapdh (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-25778 RRID:AB_10167668</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-IRES-GFP (plasmid)</td>
+      <td>Cell Biolabs</td>
+      <td>Cat# RTV-013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-mPKR-FLAG-IG (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 101792 RRID:Addgene_101792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siEif2ak2 LNA</td>
+      <td>Qiagen</td>
+      <td>Cat#300600</td>
+      <td>40 nM for knockdown</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse IFNβ</td>
+      <td>PBL Assay Science</td>
+      <td>Cat#12400–1</td>
+      <td>10 U/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Murine TNFα</td>
+      <td>Peprotech</td>
+      <td>Cat# 315-01A</td>
+      <td>40 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Murine M-CSF</td>
+      <td>Peprotech</td>
+      <td>Cat# 315–02</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VeriKine-HS Mouse IFN Beta Serum ELISA Kit</td>
+      <td>PBL Assay Science</td>
+      <td>Cat#42410–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IFN Alpha All Subtype ELISA Kit</td>
+      <td>PBL Assay Science</td>
+      <td>Cat#42115–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE 6 Transfection Reagent</td>
+      <td>Promega</td>
+      <td>Cat# E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TransIT-TKO Transfection Reagent</td>
+      <td>Mirus</td>
+      <td>Cat#MIR2150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>PMID:31375807</td>
+      <td>RRID:SCR_015530</td>
+      <td>http://daehwankimlab.github.io/hisat2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTseq</td>
+      <td>PMID:25260700</td>
+      <td>RRID:SCR_005514</td>
+      <td>https://htseq.readthedocs.io/en/master/#</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>PMID:19910308 PMID:22287627</td>
+      <td>RRID:SCR_012802</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/edgeR.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pheatmap</td>
+      <td>https://cran.r-project.org/web/packages/ pheatmap/index.html</td>
+      <td>RRID:SCR_016418</td>
+      <td>https://cran.r-project.org/web/packages/pheatmap/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>PMID:23586463 PMID:27141961</td>
+      <td>RRID:SCR_001575</td>
+      <td>https://maayanlab.cloud/Enrichr/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (v1.50i)</td>
+      <td>PMID:22930834</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Osteomeasure</td>
+      <td>OsteoMetrics, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold Antifade Mountant with DAPI</td>
+      <td>Thermo Fisher scientific</td>
+      <td>Cat#P36941</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and analysis of bone phenotype
 
 Def6-/- mice have been described previously (Fanzo et al., 2006). Def6-/- mice used in this study have been backcrossed with C57/BL6 mice for more than 10 times, and do not develop autoantibodies or spontaneous autoimmunity disease. We thus took advantage of the Def6-/- mice on the C57/BL6 background to study bone biology to avoid the complex impact of the autoimmune disease severity and pattern that occur in other mouse strains. Def6-/- newborn (0-d3 after birth) mice and the wild type (WT) littermate controls were used for in vitro experiments. Eight week old Def6-/- mice and littermate WT mice were used for the in vivo experiments. Ifnar1-/- mice (IFNαβR KO mice, JAX stock number 010830 and MMRRC stock #32045) were a gift from Dr. Shuibing Chen (Weill Cornell Medicine). All mouse experiments were approved by Institutional Animal Care and Use Committee of the Hospital for Special Surgery and Weill Cornell Medical College.
 
 For dynamic histomorphometric measures of bone formation, calcein (25 mg/kg, Sigma) was injected into mice intraperitoneally at 5 and 2 days before sacrifice to obtain double labeling of newly formed bones. The non-decalcified tibia bones were embedded in methyl methacrylate. 5 μm thick sections were sliced using a microtome (Leica RM2255, Leica Microsystems, Germany). For static histomorphometric measures of osteoblast parameters, non-decalcified sections of the tibiae were stained using Masson-Goldner staining kit (MilliporeSigma). The Osteomeasure software was used for bone histomorphometry using standard procedures according to the program's instruction.
 
-## Reagents
+### Reagents
 
 Murine TNF-α and M-CSF were purchased from Peprotech. Recombinant mouse IFN-β was from PBL Assay Science. The control IgG (rabbit) was obtained from Santa Cruz Biotechnology, and IFN-β neutralizing antibody (rabbit polyclonal antibody against mouse interferon-beta) was from PBL Assay Science. Mouse IFN Alpha All Subtype ELISA Kit and VeriKine-HS Mouse IFN Beta ELISA Kit were purchased from PBL Assay Science. MojoSort Mouse CD45 Nanobeads were obtained from Biolegend.
 
-## Cell culture
+### Cell culture
 
 In vitro osteoblast differentiation: primary osteoblastic cells were isolated from the calvaria of newborn (0-3d) mice by enzymatic digestion in α-MEM with 0.1% collagenase (Worthington) and 0.2% dispase (Gibco) as described (Ogata et al., 2000), and were cultured in α-MEM medium (ascorbic acid free, Gibco) with 10% FBS (Atlanta Biologicals) and penicillin-streptomycin (Gibco) to expand for 6 days. The calvarial osteoblasts, ST2 or MC3T3-E1 osteoblasts were plated (6 × 104 cells per well in a 24-well dish pre-coated with 0.1% Gelatin solution (ATCC)) and cultured in osteogenic medium containing α-MEM with 10% FBS supplemented with 100 μg/ml ascorbic acid (Sigma) and 10 mM β-glycerophosphate (Sigma) to induce osteoblast differentiation. The osteogenic media were exchanged every 3 days. After 7 or 9 d, ALP staining was performed as described (Zhao et al., 2006), and after 14 or 21 d, bone nodules formed and were stained by alizarin red staining as described (Gregory et al., 2004). Extracted alizarin red solution in 10% acetic acid was measured by the absorbance at 405 nm.
 
 Bone marrow harvested from WT and Def6-/- littermates was cultured in α-MEM with 10% FBS, penicillin-streptomycin and 2.4 mM L-glutamine (Gibco) in the presence of murine M-CSF (20 ng/ml) for 3 days to induce bone marrow derived macrophages (BMMs). BMMs were then replated and co-cultured in the upper chamber (2 × 104 cells per well in a 96-well transwell insert (Corning)) with calvarial osteoblasts plated in the bottom chamber (6 × 104 cells per well in a 24-well dish pre-coated with 0.1% Gelatin solution) in osteogenic medium as described above.
 
-## Cell lines: The platinum-E (Plat-E), ST2, and MC3T3-E1 cell lines have been authenticated by STR profiling and tested negative for mycoplasma
+### Cell lines: The platinum-E (Plat-E), ST2, and MC3T3-E1 cell lines have been authenticated by STR profiling and tested negative for mycoplasma
 
-## Retroviral gene transduction
+#### Retroviral gene transduction
 
 Retrovirus packaging was performed by transfecting the retroviral vectors pMX-control (Cell Biolabs) and pMX-mouse PKR (Addgene) into Plat-E cells (Cell Biolabs) using FuGENE6 (Promega), as reported previously (Zhao et al., 2009). Calvarial osteoblasts were infected with the retrovirus with 8 μg/ml polybrene for 24 hr. The media was changed to ascorbic acid free media for at least 5 hr before stimulating with osteogenic media.
 
-## Reverse transcription and real-time PCR
+### Reverse transcription and real-time PCR
 
 Reverse transcription and real-time PCR were performed as previously described (Li et al., 2014). The primers for real-time PCR were as follows: Alpl: 5’- CTTGACTGTGGTTACTGCTG -3’ and 5’- CTTGACTGTGGTTACTGCTG -3’; Bsp: 5’- AATGGAGACGGCGATAGTTCCG -3’ and 5’- GGAAAGTGTGGAGTTCTCTGCC -3’; Bglap: 5’- GCAATAAGGTAGTGAACAGACTCC -3’ and 5’- CCATAGATGCGTTTGTAGGCGG -3’; Runx2: 5’- taagaagagccaggcaggtg-3’ and 5’- tagtgcattcgtgggttgg-3’; Eif2ak2: 5’-AACCCGGTGCCTCTTTATTC-3’ and 5’-ACTCCGGTCACGATTTGTTC-3’; Mx1: 5’-GGCAGACACCACATACAACC-3’ and 5’- CCTCAGGCTAGATGGCAAG-3’; Ifit1: 5’-CTCCACTTTCAGAGCCTTCG-3’ and 5’-TGCTGAGATGGACTGTGAGG-3’; Ifit2: 5’- AAATGTCATGGGTACTGGAGTT -3’ and 5’- ATGGCAATTATCAAGTTTGTGG -3’; Stat1: 5’- CAGATATTATTCGCAACTACAA -3’ and 5’- TGGGGTACAGATACTTCAGG -3’; Cxcl10: 5’- ATTCTTTAAGGGCTGGTCTGA-3’ and 5’- CACCTCCACATAGCTTACAGT-3’; Ifnb: 5'-ttacactgcctttgccatcc-3' and 5'-agaaacactgtctgctggtg-3'; Irf7: 5'-CAGCGAGTGCTGTTTGGAGAC-3' and 5'-AAGTTCGTACACCTTATGCGG-3'; Ifnar1: 5'-acctgtgtcatgtgtgcttc-3' and 5'-tgaagcatctttccgtgtgc-3'; Ifnar2: 5'-agataagtggttggagggcatg -3' and 5'-tcaaattctggcggctcaag-3'; Gapdh: 5’-ATCAAGAAGGTGGTGAAGCA-3’ and 5’-AGACAACCTGGTCCTCAGTGT-3’.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Total cell extracts were obtained using lysis buffer containing 20 mM HEPES (pH 7.0), 300 mM NaCl, 10 mM KCl, 1 mM MgCl2, 0.1% Triton X-100, 0.5 mM DTT, 20% glycerol, and 1 x proteinase inhibitor cocktail (Roche). The cell membrane-permeable protease inhibitor Pefabloc (1 mM, Sigma-Aldrich) was added immediately before harvesting cells. The protein concentration of extracts was quantified using the BCA protein assay kit (Pierce). Cell lysates (10 μg/sample) were fractionated on 7.5% SDS-PAGE, transferred to Immobilon-P membranes (Millipore) and incubated with specific antibodies. Western Lightning plus-ECL (PerkinElmer) was used for detection. Densitometry was performed using ImageJ software (National Institutes of Health). Def6 antibody was produced by the Dr. Pernis lab (Gupta et al., 2003). p-STAT1 (Y701), p-STAT1 (S727), p-STAT3 (Y705) and STAT3 antibodies were purchased from Cell Signaling, and STAT1 antibody was purchased from Santa Cruz. Type-I interferon receptor (IFNαR), PKR, p38α, and Gapdh antibodies were from Santa Cruz. ImageJ was used to quantify the immunoblot band density that reflects the amount of proteins.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Femoral bones from WT mice and Def6-/- mice were collected and immediately fixed in 4% paraformaldehyde solution for overnight. Bones were decalcified with 0.5 M EDTA at 4°C. All samples were embedded in paraffin and sliced into 6-um-thick sections. After deparaffinized and hydrated, sections were treated with 0.1% trypsin for 30 min at 37°C. Subsequently, sections were blocked with 1% BSA in PBST at room temperature for 60 min and incubated overnight at 4°C with anti-Def6 antibody (1:100). Sections were incubated with anti-rabbit secondary antibody conjugated with Alexa Fluor 700 (1:500, Cell signaling). Nuclei were counterstained with DAPI.
 
-## In vitro gene silencing
+### In vitro gene silencing
 
 Antisense inhibition using locked nucleic acid (LNA) technology from QIAGEN was applied to silence gene expression in vitro. LNA oligonucleotides specifically targeting Eif2ak2 (PKR-LNA) and non-targeting control LNAs (Control-PKR) were from QIAGEN and were transfected into murine ST2 cells at concentrations of 40 nM using TransIT-TKO transfection reagent (Mirus) in accordance with the manufacturer’s instructions.
 
-## RNA-seq and Bioinformatics analysis
+### RNA-seq and Bioinformatics analysis
 
 Total RNA was extracted using RNeasy Mini Kit (QIAGEN) following the manufacturer’s instructions. NEBNext Ultra II RNA Library Prep Kit for Illumina (NEB) was used to purify poly-A+ transcripts and generate libraries with multiplexed barcode adaptors following the manufacturer’s instructions. All samples passed quality control analysis using a Bioanalyzer 2100 (Agilent). High-throughput sequencing was performed using the Illumina HiSeq 4000 in the Weill Cornell Medical College Genomics Resources Core Facility. RNA-seq reads were aligned to the mouse genome (mm10) using HISAT2. HTseq was subsequently used to count reads in features and then edgeR was used to estimate the transcript abundances as CPM (counts per million) values. Genes with low expression levels (<1 cpm) in all conditions were filtered from downstream analyses. Benjamini-Hochberg false discovery rate (FDR) procedure was used to correct for multiple testing. Genes with p<0.05 were identified as significantly differentially expressed genes (DEG) between conditions using the edgeR analysis of two RNA-seq biological replicates. Volcano plot was generated by ggplot2 package in R. Heatmaps were generated by the pheatmap package in R. Pathway analysis was performed using WikiPathways in Enrichr (Chen et al., 2013; Kuleshov et al., 2016), input with the genes that were more highly expressed in Def6-/- osteoblasts than WT osteoblasts (≥1.2 fold, p<0.05) or more highly expressed in WT osteoblasts than Def6-/- osteoblasts (≥1.2 fold, p<0.05). Enriched pathways were ranked based on the Combined Score calculated by the software. RNA-seq data (accession #GSE148455) have been deposited in NCBI’s Gene Expression Omnibus (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE148455).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Graphpad Prism software. Sample sizes were calculated on the assumption that a 20% difference in the parameters measured would be considered biologically significant with an estimate of sigma of 20% of the expected mean (α set at 0.05). For all in vivo experiments, at least five mice per genotype were used in each group, which provided a power of 0.92 to detect 20% differences in our studies (α set at 0.05). Student’s t-test was applied if there are only two groups of samples. In the case of more than two groups of samples with one condition, one-way ANOVA followed by Tukey's post hoc test was used to calculate difference between any groups of samples. In the case of more than 2 groups of samples with more than one condition/treatment, two-way ANOVA followed by Sidak's multiple comparisons were used. p value < 0.05 was taken as statistically significant; *p value < 0.05 and **p value < 0.01.
